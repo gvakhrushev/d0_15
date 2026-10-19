@@ -42,11 +42,11 @@ Fix the full real original CAR16 \(H_C=\Lambda^\bullet(\mathbb R^4)\) and any bo
 In the local rest-Hilbert chart where \(\|\log L_{uv}\|_2\le 1/10\) put
 
 \[
-C_{uv}=\tfrac12\Lambda(L_{uv}),\quad
+C_{uv}=p\,\Lambda(L_{uv}),\qquad p=\varphi^{-1},\quad
 F_{uv}=(I-C_{uv}^\dagger C_{uv})^{1/2}.
 \]
 
-The same original full-CAR Julia bound gives \(\|C_{uv}\|\le e^{.4}/2<1\). Every basis word \(u\to v\) receives its true Markov amplitude and both retained outcomes:
+The same original full-CAR Julia bound gives \(\|C_{uv}\|\le p e^{.4}<1\). Every basis word \(u\to v\) receives its true Markov amplitude and both retained outcomes:
 
 \[
 \boxed{
@@ -87,7 +87,7 @@ by successive completeness. On its single all-good outcome
 \[
 \boxed{
 K_{G^n}(\gamma)
-=2^{-n}\Lambda(L_{u_{n-1}u_n}\cdots L_{u_0u_1}).}\tag{6}
+=p^n\Lambda(L_{u_{n-1}u_n}\cdots L_{u_0u_1}).}\tag{6}
 \]
 
 In particular, matrix ORDER survives in the true retained outcome (even when the scalar Markov loop odds agree). All failures are recorded and contribute to normalization; this is exactly the two-fresh-flag composition requirement already proved in the native CAR Julia owner, extended to arbitrary fixed n.
@@ -133,7 +133,7 @@ This *does not mean that physical Book Cost−Info equals pointer Shannon*. Full
 
 ## 5. Complete finite information: P marginal, 6 Lorentz Lie scores conditional on the SAME edge
 
-The existing six-generator fixed complete CAR16 Julia/POVM witness on \(\|\log L\|\le 1/10\) has exact local Jacobian \((24\sqrt2)^{-1}I_6\). Append that SAME fixed effect test after the above conditional Julia success branch, recording all other outcomes. Conditioning on the observed edge label and preserving the entire failure branch yields six independent local Lorentz responses without altering (5). The combined statistical Jacobian is block triangular: marginal P sees zero Lorentz derivative, the conditional successful fixed POVM sees all six Lorentz generator directions.
+The existing six-generator fixed complete CAR16 Julia/POVM witness on \(\|\log L\|\le 1/10\) has exact local Jacobian \((24\sqrt2)^{-1}I_6\) for its original normalization \(1/2\). The SAME fixed 13-effect POVM with the native Golden normalization \(p\) has Jacobian \(p^2/(6\sqrt2)\,I_6\), since successful Choi-event probabilities are quadratic in the contraction amplitude. Append that SAME fixed effect test after the above conditional Julia success branch, recording all other outcomes. Conditioning on the observed edge label and preserving the entire failure branch yields six independent local Lorentz responses without altering (5). The combined statistical Jacobian is block triangular: marginal P sees zero Lorentz derivative, the conditional successful fixed POVM sees all six Lorentz generator directions.
 
 For 359 inverse-paired undirected links this gives local first-order distinguishability of \(685+359\cdot6\) scalar+link *representation variables* before graph-vertex local frame redundancy. Original 327 based non-Abelian triangle matrices then reconstruct the gauge class of all those links using the already-owned 960 exact ordered compatibility equations. This is **not** 4D metric provenance, nor an assertion that CAR16 endpoint observables derive the physical spacetime lattice coframe. Repeated settings/sample counts and complete costs must be included.
 
@@ -153,3 +153,57 @@ This full source map is the last physical binding, not yet proved by (1)–(8). 
 **Numerical original-support witness:** \`sources/d0_one_run_perron_lorentz_2026-10-19/check_one_run_scalar_lorentz_compilation.py\` validates all original 718 scalar edges, all 24 outgoing labels of original vertex0 with both flag outcomes, full CAR16 exterior and 3-fresh-flag complete 8-outcome noncommutative triangle, original one-sided moving Perron path ratio, and the true moving scalar/conditional source chain. The synthetic smooth \(SO^+(1,3)\) assignment on the scene edges is explicitly a *TEST*, NOT a physical typed Role→scene map. Check outcomes are stated in the source, not a symbolic proof of hardware/programme selection.
 
 **Status:** one-run native-*class* complete isometry and path/source theorem; finite checker executed; no new task, BOOK/CORE/claims/assembly promotion, raw #216 or GR closure.
+
+
+## 7. PRIMITIVE GOLDEN NORMALIZATION: exact native flat gate, not inserted 1/2
+
+The earlier exploratory operator used C=Λ(L)/2, a declared mathematical contraction normalization from the Julia owner. This is **unnecessary**: the LITERAL primitive native \(p=\varphi^{-1}\) gives a complete contractive dilation on a bounded real Lorentz chart
+
+\[
+\|X\|_2<\frac{\log\varphi}{4}=0.12030295626490087\ldots,\quad
+C_X=p\,\Lambda(e^X),\quad
+\|C_X\|\le p\,e^{4\|X\|}<1.
+\tag{9}
+\]
+
+At the EXACT FLAT link X=0, since 1−p²=p,
+
+\[
+C_0=pI_{16},\quad F_0=\sqrt p\,I_{16},\quad
+{\cal J}(pI_{16})
+=\begin{pmatrix}p&\sqrt p\\\sqrt p&-p\end{pmatrix}\otimes I_{16}.
+\]
+
+Let \(G=\bigl(\begin{smallmatrix}\sqrt p&-p\\p&\sqrt p\end{smallmatrix}\bigr)\) be the **ORIGINAL** D0 Golden gate and \(X_{\rm flip}=\bigl(\begin{smallmatrix}0&1\\1&0\end{smallmatrix}\bigr)\) the original reversible bit permutation. Then exactly,
+
+\[
+\boxed{{\cal J}(pI_{16})=(X_{\rm flip}G)\otimes I_{16}.}\tag{10}
+\]
+
+Its FULL TWO-BRANCH probabilities are (p²,p), with no new angle, normalization, cost constant or probability floor. The *deformed* \({\cal J}(p\Lambda(e^X))\) at nonzero X is a real orthogonal mathematical active operation in the previously owned generous grammar; this **does not** assert that original fixed D0 GoldenCoherentMemory.fullStep literally executes every such deformed gate, or provides its controller/copy/clock/work and field-derivative budget.
+
+**Necessity lemma (why a finite flat failure branch is not decorative).** If a smooth contraction family C(t), defined for positive and negative t, obeys C(0)=I, then I−C(t)†C(t)≽0 has a minimum at t=0; thus C'(0)+C'(0)†=0. The genuine noncompact proper-Lorentz null/boost generator on positive CAR16 has nonzero symmetric part, so it CANNOT be represented to first order by such a smoothly two-sided complete contraction with probability-one flat success. A nontrivial failure baseline is mathematically necessary. The **original Golden probability** p>0 supplies one without a new regularizing constant.
+
+**Positive Lorentz source with EXACT native Golden coefficients.** On the ORIGINAL grade1 positive input \(\psi=(|+\rangle+|2\rangle)/\sqrt2\) and ORIGINAL null generator \(N_2\), the complete two-outcome Golden/Julia law is \(q_G(t)=\|p\Lambda(e^{tN_2})\psi\|^2\), \(q_B(t)=1-q_G(t)\). Exact expansion gives
+\[
+\boxed{q_G(0)=p^2,\quad q_B(0)=p,\quad q_G'(0)=p^2.}
+\tag{11}
+\]
+For the full two-outcome **pointer Shannon READOUT** (not automatically the compulsory Book action),
+\[
+\boxed{D H_\varphi(q_G,q_B)|_0=p^2,\qquad
+I_{\rm Fisher}(0)=\frac{(q_G')^2}{q_Gq_B}=p.}\tag{12}
+\]
+Indeed \(D_{q_G}H_\varphi|_{p^2}=\log_\varphi(p/p^2)=1\).
+At the same baseline, KL to the *matched* Golden code (p²,p) has zero first derivative: do NOT call it the Shannon source.
+
+**Whole six-generator positive fixed Choi/Julia test (same existing 13-effect POVM).** The owned tester at 1/2 has six contrast first derivatives \(1/(24\sqrt2)\) and a positive 13-effect readout, retaining all failures. Replacing 1/2→p scales the **unnormalized successful POVM probability contrast** by \((2p)^2=4p^2\), so
+\[
+\boxed{D_\xi {\cal D}(0)=\frac{p^2}{6\sqrt2}I_6,\qquad
+\det D_\xi{\cal D}(0)=\bigl(\frac{p^2}{6\sqrt2}\bigr)^6>0.}\tag{13}
+\]
+All 12 positive labelled tester outcomes at flat are now exactly p²/24 each, positive success-rest probability p²/2, and the actual total failure probability p. No source direction is lost. This is a positive six-dimensional Lorentz chart whose sole normalization comes from the original Golden primitive, though the actual native programme still has to select the 13-effect readout and pay its whole cost.
+
+**Executable control:** The companion checker now uses C=pΛ(L), checks (10) at machine precision, the genuine full16 conditional Julia isometry, noncommuting three-step all-good amplitude \(p^3\Lambda(L_\gamma)\), full eight-flag normalization, and direct finite differences against (11)–(12). On the original 718-supported test it reports Golden Shannon source 0.381966011273 (analytic p²=0.381966011250), Golden Fisher 0.618033988824 (analytic p=0.618033988750), both within finite-difference tolerance.
+
+**GR interface is still one source-selection question.** This pins a previously free test normalization to the actual original Golden gate at zero connection, and constructs a finite positive Lorentz detector with genuine native flat amplitudes and no postselection. It does NOT prove that the full composed Book Cost−Info + H+J+R chooses this detector or that it has the exact Einstein–CAR first source. Any claim to GR still requires a genuine 4D Role→scene controller, compulsory price, complete oldRIGHT/clock/prep/copy costs and jointly refining all40 roots.
