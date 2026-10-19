@@ -121,6 +121,80 @@ let reversedError=0;for(let [a,b,c] of triples){
 }
 test(reversedError<5e-12,
  "all original 1287 based triangle orientation reversals preserve true noncommuting holonomy inverse");
+
+// One actual COMPLETE positive joint original 2/3 Book return history
+// × true 17-category two Golden fresh flags + original 64 Bell programme.
+// The loop-selected CAR controls are in a DECLARED common TREE-CALIBRATED
+// frame. This is a mathematically conditioned original native-type
+// experiment, NOT a selected G0 same physical controller.
+function bookK(t){
+ const K=Array.from({length:33},()=>Array(33).fill(0));
+ for(let u=0;u<33;u++)for(let v=0;v<33;v++)if(zone(u)!==zone(v)){
+  const cost=1.2+.002*((u*13+v*17)%19)
+          +t*Number((zone(u)===0&&zone(v)===1)||(zone(u)===1&&zone(v)===0));
+  const info=.003*((u%7)+(v%7))/2;
+  if(cost<1)throw Error("native ActionProtocol primitive Cost violation");
+  K[u][v]=Math.exp(-ell*(cost-info));
+ }
+ return K;
+}
+function originalFullClock(t){
+ const K=bookK(t),labels=[],a2=p,a3=p*p;
+ for(let [u,v] of pairs){
+  const w=a2*K[u][v]*K[v][u];
+  labels.push({word:[u,v,u],raw:w},{word:[v,u,v],raw:w});
+ }
+ for(let [a,b,c] of triples){
+  for(let word of [
+    [a,b,c,a],[b,c,a,b],[c,a,b,c],
+    [a,c,b,a],[c,b,a,c],[b,a,c,b]
+  ])labels.push({word,raw:a3*K[word[0]][word[1]]*
+                         K[word[1]][word[2]]*K[word[2]][word[3]]});
+ }
+ const S=labels.reduce((s,x)=>s+x.raw,0);
+ return {labels,S};
+}
+function fullJoint(t){
+ const {labels,S}=originalFullClock(t);
+ let prob=0,positive=true,minQ=1,maxMarg=0;
+ const stored=new Map();
+ for(const {word,raw} of labels){
+  const H=word.length===3?I():mul(mul(U[word[0]][word[1]],U[word[1]][word[2]]),U[word[2]][word[3]]);
+  const q=choinative(H),mass=raw/S;
+  let summarg=0;
+  for(let j=0;j<17;j++){let v=mass*q[j];prob+=v;summarg+=v;
+   if(!(v>0))positive=false;
+   minQ=Math.min(minQ,v);
+  }
+  maxMarg=Math.max(maxMarg,Math.abs(summarg-mass));
+  // Each actual full label is still stored; the key can be reused for
+  // conditional access without discarding the 17 Golden flags.
+  if(word[0]===0&&word[1]===9&&word[2]===20&&word.length===4)
+    stored.set("basis", {mass,q,H});
+ }
+ return {prob,positive,minQ,maxMarg,labels:labels.length,S,stored};
+}
+const full0=fullJoint(0),fullt=fullJoint(.04);
+for(const x of [full0,fullt]){
+ test(x.labels===8440&&x.labels*17===143480
+      &&x.positive&&Math.abs(x.prob-1)<3e-12&&x.minQ>0,
+      "ALL ORIGINAL 143480 complete 2/3 Book + 2-Golden-flag + Bell events are positive and normalized");
+ test(x.maxMarg<2e-18,
+      "ALL 8440 TRUE full Book clock marginals recovered after summing every Golden and Bell failure");
+}
+test(Math.abs(full0.S-fullt.S)>1e-6,
+ "moving true primitive AB Cost changes ABSOLUTE same-depth-unormalized Book clock pressure");
+const before=full0.stored.get("basis"),after=fullt.stored.get("basis");
+if(!before||!after)throw Error("basis conditioning unavailable");
+let conditionErr=0;
+for(let j=0;j<6;j++){
+ const get=x=>256*Math.sqrt(3)/p**2*
+  (Math.sqrt(x.q[2*j])-Math.sqrt(x.q[2*j+1]));
+ conditionErr=Math.max(conditionErr,Math.abs(get(before)-get(after)));
+}
+test(conditionErr<2e-15&&Math.abs(before.mass-after.mass)>1e-9,
+ "all six noncommuting observed Golden markers survive TRUE moving primitive Book Cost and normalization");
+
 console.log(JSON.stringify({
  original_graph:{vertices:33,undirected:359,directed:718,triangles:1287},
  input_connection:"327 independent noncommuting SO+(1,3) group matrices, all other tree edges identity",
