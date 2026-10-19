@@ -335,6 +335,28 @@ for(let h of [.02,.007,.003]){
   "complete original 12206 native positive history has 3+3 signed six-Lorentz pointer curvature");
 }
 
+
+// Strong same-Golden PROGRAMME information theorem. In the full 64d
+// two-fresh chronological programme Jtot(U)=J2(U)J1(I), left multiplication
+// by FIXED J1(I) does not change normalized Choi overlap; the spectator
+// first flag doubles trace and dimension. Hence its six-parameter input
+// QFI is EXACTLY the already-owned original 32d Golden CAR programme QFI
+// with eigenvalues 2p (3), 2p² (3); no hidden information loss from the
+// second fresh flag, only Bell herald probability changes.
+for(let h of [.17,.035,.005]){
+ const X=twoFlagOriginalJulia(0),Y=twoFlagOriginalJulia(h);
+ const overlap64=fs(X,Y)/64;
+ const overlap32=fs(JuliaRot(0),JuliaRot(h))/32;
+ assert(Math.abs(overlap64-overlap32)<8e-14,
+   "original TWO flag Golden64 Choi program has EXACT same state overlap as original Golden32 "+h);
+ const qfi64=4*(1-overlap64*overlap64)/(h*h);
+ const qfi32=4*(1-overlap32*overlap32)/(h*h);
+ assert(Math.abs(qfi64-qfi32)<2e-10,
+   "Gold-program full six-Lorentz QFI preserved by spectator/fixed first flag "+h);
+}
+assert(Math.abs(determinant-64*p**9)<3e-14,
+ "original six-direction movable-program full QFI det stays 64*p^9>0");
+
 console.log(JSON.stringify({
  status:"PASS_ORIGINAL_CAR16_GOLDEN_CHOI_HERALDED_FIXED_PROGRAM",
  originalGolden_p:p,
