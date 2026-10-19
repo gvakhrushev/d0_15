@@ -265,6 +265,76 @@ for(let t of [0,.02,.04]){
    "full recorded Bell/Golden positive native oriented marker cancels actual moving Perron weight t="+t);
 }
 
+
+// FULL ORIGINAL 718 directed Perron history × 17 complete heralded
+// Golden/CAR conditional outcomes. Each old path and Bell-failed record
+// remains a nonzero event. Original *mathematical* edge->Lorentz assignment
+// uses sign(u<v); NOT the 4D Role controller itself.
+function jointH(t,x){
+ const w=Perron(t),qPlus=qSource(x),qMinus=qSource(x.map(y=>-y));
+ let total=0,normalizer=0,positive=true;
+ for(let i=0;i<718;i++){
+  const q=edges[i][0]<edges[i][1]?qPlus:qMinus;
+  for(let j=0;j<17;j++){
+   const z=w[i]*q[j];if(!(z>0))positive=false;
+   normalizer+=z;total-=z*Math.log(z)/lnphi;
+  }
+ }
+ assert(positive&&Math.abs(normalizer-1)<6e-13,
+  "ALL 718x17=12206 complete Golden/Bell/Perron history outcomes positive and normalized");
+ return total;
+}
+const xZero=Array(6).fill(0),firstOriginalPerron=Perron(0);
+const trueBookH=entropy(firstOriginalPerron),wholeH=jointH(0,xZero);
+assert(Math.abs(wholeH-trueBookH-h0)<9e-12,
+ "exact true ORIGINAL single joint 12206-outcome Shannon chain with honest old one-sided prior");
+for(let t of [0,.02,.04]){
+ const w=Perron(t),gold=jointH(t,xZero);
+ assert(Math.abs(gold-entropy(w)-h0)<9e-12,
+  "true changing original native Book Cost/old preparation retained after Bell programme t="+t);
+}
+const originalBookSource=(Perron(.0001).map((x,i)=>
+ (x-firstOriginalPerron[i])/.0001));
+const score16=G4.map((G,k)=>{
+ const q0=qBase,dt=Array(17).fill(0);
+ dt[2*k]=herald*p**4/(12*Math.SQRT2);
+ dt[2*k+1]=-(herald*p**4)/(12*Math.SQRT2);
+ return dt;
+});
+const predictedFisher=herald*p**4/6;
+const scalarFirstStepFisher=firstOriginalPerron.reduce((s,w,i)=>
+ s+originalBookSource[i]*originalBookSource[i]/w,0);
+const tensor=Array.from({length:7},()=>Array(7).fill(0));
+for(let i=0;i<718;i++){
+ const w=firstOriginalPerron[i],dw=originalBookSource[i],
+       sgn=edges[i][0]<edges[i][1]?1:-1;
+ for(let k=0;k<17;k++){
+  const Q=w*qBase[k],dQ=[dw*qBase[k],
+      ...score16.map(row=>w*sgn*row[k])];
+  for(let a=0;a<7;a++)for(let b=0;b<7;b++)
+   tensor[a][b]+=dQ[a]*dQ[b]/Q;
+ }
+}
+assert(Math.abs(tensor[0][0]-scalarFirstStepFisher)<2e-12&&
+ scalarFirstStepFisher>.01,
+ "full 12206 one-run Perron preparation Fisher source remains nonzero");
+for(let i=1;i<7;i++){
+ assert(Math.abs(tensor[0][i])<1e-14,
+  "all-order conditional score Ward kills moving Book/Bell Lorentz Fisher cross");
+ for(let j=1;j<7;j++)
+  assert(Math.abs(tensor[i][j]-(i===j?predictedFisher:0))<1e-13,
+    "FULL 12206 one-run six-Lorentz Fisher = HERALD p^4/6 * I6");
+}
+for(let h of [.02,.007,.003]){
+ let xr=xZero.slice(),xb=xZero.slice();
+ xr[4]=h;xb[4]=-h;
+ let pr=(jointH(0,xr)+jointH(0,xb)-2*wholeH)/(h*h);
+ xr[4]=0;xb[4]=0;xr[5]=h;xb[5]=-h;
+ let pb=(jointH(0,xr)+jointH(0,xb)-2*wholeH)/(h*h);
+ assert(Math.abs(pr-expectNegative)<5e-6&&Math.abs(pb-expectPositive)<5e-6,
+  "complete original 12206 native positive history has 3+3 signed six-Lorentz pointer curvature");
+}
+
 console.log(JSON.stringify({
  status:"PASS_ORIGINAL_CAR16_GOLDEN_CHOI_HERALDED_FIXED_PROGRAM",
  originalGolden_p:p,
