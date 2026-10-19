@@ -146,6 +146,25 @@ Consequently there exists NO mapping from signed primitive counts alone to the c
 
 The depth-four appearance of the final boost F is **structurally aligned** with #334's genuinely nontrivial \`[a²b²]\` quartic Cartan work. These are different maps (Lie control-word filtration versus geometric Euler jet), and they must not be identified without a typed operator-to-field map.
 
+### 4.0. Stronger FIRST-ORDER lower bound on admissible geometric memory
+
+Even retaining continuous **signed totals** of the two primitive control amplitudes is insufficient. On the regular six-variable word, its abelianization is only
+
+\`\`\`
+Abelian(t)=(t1+t3+t5 - baseline_A,
+            t2+t4+t6 - baseline_B).
+\`\`\`
+
+The exact derivative has rank 2 and a four-dimensional kernel. Nevertheless the full Lorentz endpoint derivative has rank 6. Explicitly, the perturbation
+
+\`\`\`
+delta t = (1,0,-1,0,0,0)
+\`\`\`
+
+leaves BOTH primitive signed totals unchanged, but \`dW(t0)[delta t]\` is NONZERO: its row-major matrix entry indexed 11 is exactly \`1/40\` (not an asymptotic or floating tolerance). Thus FOUR independent geometric Lorentz tangent directions are necessarily lost by ANY differentiable statistic factoring only through signed additive generator totals. In symbols, \`rank D_t F(Abelian(t)) <= 2\`, whereas \`rank D_t W=6\`.
+
+This does not forbid Book histories with additional separately stored ordered holonomy, nor does it choose a compulsory physical price. It specifies a **necessary information capacity** for a purported sole observer of all six original Lorentz directions. The owned six-positive-POVM operator readout realizes the required capacity mathematically (next section).
+
 ## 4.1. Compose with the ALREADY-owned six-direction positive Julia information readout
 
 The existing #334 \`A4D_OPPOSITE_NULL_LIE_COMPLETE_JULIA_ORDER_MEMORY_BOOK_SOURCE_2026_10_19.md\` owns one fixed complete CAR16 × fresh-reference Julia/POVM instrument with genuine positive outcomes and **all failures retained**. On its registered six original Lorentz coordinates \`xi\` it proves
