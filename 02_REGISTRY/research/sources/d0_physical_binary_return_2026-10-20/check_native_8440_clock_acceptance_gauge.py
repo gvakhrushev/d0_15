@@ -80,3 +80,34 @@ for t in (0,.05,.1,.2):
  assert abs(root*p-(root*c)*ratio)<1e-12
 print('PASS native 2/3-clock ratio gauge leaves lambda*(alpha3/alpha2) invariant')
 print('FIREWALL: conditional acceptance physical G0/oldRIGHT/Kraft admission is OPEN')
+
+
+# STRONGER fully normalized positive finite instrument:
+# ALL original path success × FULL Bell17, plus one TERMINAL fail for
+# EACH actual 2/3 depth. EARLY clock and LATE path failures are coarsened
+# together, so original primitive Book Hessian remains unidentified.
+kappa=p**20
+Z=np.array([base[length==k].sum() for k in (2,3)])
+assert max(kappa*Z)<1
+B=p*p
+blank=np.array([p,p*p])
+for t in (0,.05,.1,.2):
+ c=p**(t*t)
+ beta0=np.array([B,B]);beta1=np.array([B*c**-2,B*c**-3])
+ assert max(beta1)<1
+ success0=attempt*B*kappa*base
+ success1=attempt*np.where(length==2,beta1[0],beta1[1])*kappa*(c**length)*base
+ assert max(abs(success0-success1))<1e-16
+ failures0=blank*(1-beta0*kappa*Z)
+ failures1=blank*(1-beta1*kappa*(Z*(c**np.array([2,3]))))
+ qfull0=np.r_[np.outer(success0,qcar).ravel(),failures0]
+ qfull1=np.r_[np.outer(success1,qcar).ravel(),failures1]
+ assert len(qfull0)==143482 and abs(qfull0.sum()-1)<2e-14
+ assert min(qfull0)>0
+ assert max(abs(qfull0-qfull1))<1e-16
+ # The EARLY rejection STAGE carries the missing physical source.
+ early0=blank*(1-beta0);early1=blank*(1-beta1)
+ if t:assert max(abs(early0-early1))>1e-6
+ print('PASS full 143482 including BOTH depth-labelled TERMINAL failures',
+       t,'max',max(abs(qfull0-qfull1)),
+       'DIFFERENT original EARLY-stage reject',early1-early0)
