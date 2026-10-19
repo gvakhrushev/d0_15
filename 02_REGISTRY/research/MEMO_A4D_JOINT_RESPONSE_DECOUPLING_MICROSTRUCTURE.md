@@ -8031,11 +8031,27 @@ The updated [two-null Cartan 2-jet check](sources/d0_two_null_crossing_2026-10-1
 exactly verifies the four opposite-null commutators and a rank-six pivot
 minor; it also passes its bounded torsion and crossed Ricci/Weyl fixtures.
 It verifies the continuum local coframe calculation; its own scope excludes
-the original finite 40-row action, physical D0 admission, and global GR. The
-algebraic commutator identity for a smooth scalar readout is valid, but the existing
-[positive-adjoint owner](A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md) does not
-add tomography or a commutator-only outcome law, and expressly leaves native
-gate generation and the complete Cost--Info price open. The next consuming
-test must therefore use the same actual full outcome map for both word orders
-and report its composition defect; a matrix-interface curvature check alone
-does not close the geometry-to-record arrow or select the physical source.
+the original finite 40-row action, physical D0 admission, and global GR.
+
+The separate [opposite-null Julia order-memory result](A4D_OPPOSITE_NULL_LIE_COMPLETE_JULIA_ORDER_MEMORY_BOOK_SOURCE_2026_10_19.md)
+now constructs the abstract readout step: one fixed complete 13-effect POVM
+on the original CAR16 grade-1 sector and a fresh four-dimensional test
+reference has an invertible six-generator response; two fresh Julia flags
+give the correct ordered product, while reuse has an explicit composition
+defect. Its finite order test distinguishes rotation and boost commutators,
+and a fully retained original Golden split yields a nonzero same-history
+Shannon source under the stated coarse-cut price hypothesis. The live
+[bounded checker](sources/d0_opposite_null_julia_order_memory_2026-10-19/check_lorentz_order_memory.py)
+passes these controls. This closes the
+positive order-readout construction only in the declared generous
+active-orthogonal / one-way fresh-registration class; the extra test
+preparation, actuation and Golden branch still need their actual native
+program and cost.
+
+Thus the first remaining physical bridge is no longer an abstract detector
+formula: the same compulsory D0 program must generate and price this full
+fresh-flag record, with its complete retained Book history and actual
+Cost--Info law. The double-null result also remains a continuum local Cartan
+2-jet; it has not yet been substituted into the original finite 40-row
+plaquette equations. Neither conditional result selects a physical source or
+closes general GR.
