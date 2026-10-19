@@ -117,18 +117,20 @@ function check(){
  };
  for(let d=1;d<=4;d++){
    for(let k of [0,4,8,12,15,20,23]){
+     const valpoly=point=>point[0]+2*point[1]+3*point[2]+5*point[3];
      const field=(point,axis)=>axis===Math.floor(k/6)?
-       sc(G[k%6],(point[2]+2*point[3])**d):Z();
-     for(let [dx,dy] of [[1,0],[0,1],[1,1],[1,2],[2,1]]){
+       sc(G[k%6],valpoly(point)**d):Z();
+     for(let direction of [[1,0,0,0],[0,1,0,0],
+       [0,0,1,0],[0,0,0,1],[1,1,1,1],[2,-1,3,1]]){
        let sum=Array(24).fill(0);
        for(let t=0;t<=d;t++){
-         let q=[0,0,dx*t,dy*t],val=linearLink(q,field);
-         const scalar=(q[2]+2*q[3])**d;
+         let q=direction.map(v=>v*t),val=linearLink(q,field);
+         const scalar=valpoly(q)**d;
          let sign=(-1)**(d-t)*choose(d,t);
          sum=sum.map((v,i)=>v+sign*(val[i]-M[i][k]*scalar));
        }
        assert(sum.every(v=>v===0),
-        "L-M failed to lower polynomial degree: "+d+"/"+k+"/"+dx+","+dy);
+        "L-M failed to lower polynomial degree: "+d+"/"+k+"/"+direction);
        tests.push(1);
      }
    }
@@ -139,6 +141,7 @@ function check(){
   matrix_polynomial:"M^4-5*M^2+4*I=0",
   explicit_inverse:"M^-1=(5*M-M^3)/4",
   degree_lowering_tests:tests.length,
+  tested_full_4D_role_polynomials:true,
   all_d_less_equal_4:true,
   polynomial_inverse:"(M+N)^-1=sum_(j=0)^d (-M^-1 N)^j M^-1 on polynomial degree <=d",
   scope:"original flat link-linear Euler on unwrapped interior polynomial carrier; no general boundary inverse, full nonlinear exact root, or native GR price"
