@@ -789,6 +789,55 @@
         }
       ],
       "reported_state": "The same selected finite branch passes a combined symbolic replay at 13 specified coefficients: pure cubic sources [a^3] and [b^3] vanish, and both asymmetric quartic coefficients [a^3*b] and [a*b^3] admit exact degree-at-most-five corrections. This extends the mixed [a^2*b^2] jet but remains scoped finite evidence and does not discharge native physical obligations."
+    },
+    {
+      "id": "complete-code-class-first-source-universality",
+      "owner": "complete-code-class research owner #334",
+      "statement": "For a fixed finite complete-history set, any fixed injective code satisfying the same-object competitive-cost bound has the declared normalized first-source estimate C_N*sqrt(I_N)/N; uniform first-source controls transfer a root only under the owner’s genuine full-system stationary-chart and stability hypotheses.",
+      "interface": "complete-history-code-source-v1",
+      "outcome": "positive",
+      "kind": "analytic",
+      "scope_level": "family",
+      "hypotheses": {
+        "fixed_complete_record": "The probability law is positive and C1 on one fixed finite set of complete distinguishable histories; the field-independent code is injective on that same set.",
+        "competitive_cost": "The actual code obeys L_N<=c_U+d_N for the same object, with the stated code-mass/tail and Fisher-score bounds; golden weighted cost is not inferred from the notation D_min.",
+        "correlated_scope": "The correlated extension is proved for the declared finite, time-homogeneous Markov-history class; it does not identify a general quantum D0 history with that class.",
+        "root_transfer": "Exact-root transfer requires uniform first-source control and an actual full-system stationary chart/inverse and root-stability hypotheses; an invertible Poisson subblock alone is insufficient.",
+        "physical_admission": "No same-object admitted native decoder, compulsory complete D0 Cost-Info, or full matter/clock/preparation source is selected or proved."
+      },
+      "evidence": [
+        {
+          "ref": "bd36badebdd2989f866c70eaaf49733d3f5ca0f1",
+          "path": "02_REGISTRY/research/A4D_COMPLETE_CODE_CLASS_SOURCE_UNIVERSALITY_2026_10_19.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_complete_code_source_2026-10-19/theorem.md",
+          "sha256": "843c71731fdfc6ea4291996793ed304ffc90372e2ccf9c5e3ee4bf3421c8c78b"
+        },
+        {
+          "ref": "bd36badebdd2989f866c70eaaf49733d3f5ca0f1",
+          "path": "02_REGISTRY/research/sources/d0_complete_code_source_2026-10-19/README.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_complete_code_source_2026-10-19/README.md",
+          "sha256": "4366d2a406e15099b2b78d69cfcea5647a61db2c25dd4ca33a2b29f07c4cd2ca"
+        },
+        {
+          "ref": "bd36badebdd2989f866c70eaaf49733d3f5ca0f1",
+          "path": "02_REGISTRY/research/sources/d0_complete_code_source_2026-10-19/RESULT.json",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_complete_code_source_2026-10-19/RESULT.json",
+          "sha256": "ca381fac000d1b91f81754e108592d20115534336c796e8245888db592d763b6"
+        },
+        {
+          "ref": "bd36badebdd2989f866c70eaaf49733d3f5ca0f1",
+          "path": "02_REGISTRY/research/sources/d0_complete_code_source_2026-10-19/VALIDATION.json",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_complete_code_source_2026-10-19/VALIDATION.json",
+          "sha256": "681f656b150e23b73fa1d103b804cecdcb5ee478e2475bacdfbefdbb566d0255"
+        },
+        {
+          "ref": "bd36badebdd2989f866c70eaaf49733d3f5ca0f1",
+          "path": "02_REGISTRY/research/sources/d0_complete_code_source_2026-10-19/check_code_source.py",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_complete_code_source_2026-10-19/check_code_source.py",
+          "sha256": "7c13c56a0b9b7761298a5ea960f9983082ccf3499a23d9325f13f9cc05f0673d"
+        }
+      ],
+      "reported_state": "Pinned result-only to #334 commit bd36badebdd2989f866c70eaaf49733d3f5ca0f1. The analytic theorem is in theorem.md; the bounded checker replays with exact Q(sqrt(5))/rational controls and floating logarithmic estimates. Local numeric output agrees with the pinned RESULT.json within 1e-12 (last-bit floating variation only). The owner’s read-only analytical reviews are not independent registry acceptance. No application to native-programme-v1 is registered; physical decoder/cost admission, full-price source equality, and genuine full-system recovery remain open."
     }
   ],
   "applications": [

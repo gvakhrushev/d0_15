@@ -244,6 +244,15 @@
       "normalization": "Exact rational coefficients. The simultaneous replay checks 13 named amplitude coefficients, including [a^2*b^2], [a^3*b] and [a*b^3].",
       "refinement": "One fixed finite lattice spacing h=1; no mesh-uniform or continuum statement.",
       "scope": "A selected finite crossed-null branch only. Pure fourth powers and the fifth- and sixth-order mixed coefficients are not checked; arbitrary slopes, global roots, sourced matter and physical D0 selection remain open."
+    },
+    "complete-history-code-source-v1": {
+      "carrier": "One fixed finite set of complete distinguishable histories with a positive C1 probability law.",
+      "action": "A fixed field-independent injective description code with a same-object competitive-cost bound; no native D0 price is selected.",
+      "variations": "Field variations of the same complete-history law, with the declared score and Fisher source bounds.",
+      "source": "Normalized expected description length minus Shannon information in the same golden cost unit; this is not the full native matter/Ward source.",
+      "normalization": "D[(E L_N-H_phi(P))/N] with the owner’s C_N*sqrt(I_N)/N estimate.",
+      "refinement": "The owner’s fixed finite-history families and stated uniform first-source/full-system root hypotheses; no general D0 refinement is inferred.",
+      "scope": "Analytical code/source result and conditional exact-root transfer; no admitted native decoder, compulsory full-price selection or GR closure."
     }
   },
   "obligations": [
