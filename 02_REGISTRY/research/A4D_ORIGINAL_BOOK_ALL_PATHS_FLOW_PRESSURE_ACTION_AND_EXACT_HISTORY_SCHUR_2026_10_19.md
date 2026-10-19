@@ -172,3 +172,8 @@ Thus the actual original scalar history rate already generates a second-order ph
 The result closes **one ORIGINAL path-to-action variational mechanism** and gives a two-outcome finite exact test for its physical gravity bridge, but it is NOT a claim that D0 has derived full general relativity. \`GR_closed=false\`.
 
 **Reproduce**: \`sources/d0_physical_binary_return_2026-10-19/check_native_book_flow_pressure_action.py\` (original 718-edge symmetric K(t), genuine π,P,f, exact cubic implicit derivatives, flow Hessian, double-precision finite difference hostile control). Does not run the expensive 16×16×128 full programme or full all40+CAR source.
+
+
+## 7. Consuming EXACT present/archive identification — no duplicate Hessian owner
+
+The companion [original native archive isometry and future-source selector](A4D_BOOK_FLOW_HESSIAN_EQUALS_ORIGINAL_ARCHIVE_METRIC_AND_FUTURE_SOURCE_SELECTOR_2026_10_19.md) now DISCHARGES the missing operator interpretation of (5),(6): the 685-dimensional true balanced-history tangent and the existing original physical archive \(\operatorname{im}Q_A\subset\mathbb R^{718}\) are canonically isometric after the forced scale \(1/\ln\varphi\), with explicit inverse through the unique original Markov fundamental matrix. The scalar history Schur correction of (6) is EXACTLY \(-\ln\varphi\langle G_V,G_W\rangle\) on that *already-owned* archive, and it agrees with the original \(K_9\leftrightarrow K_{11}\) cost probe to full718 numerical precision. Its rank-32 **future-readable** subspace is complete for primitive source \(Ds_{uv}=\alpha_u+\beta_v\) and incomplete for nonseparable original pair costs. No such theorem promotes the scalar sector to the FULL BOOK03 memory-class/CAR Einstein action.
