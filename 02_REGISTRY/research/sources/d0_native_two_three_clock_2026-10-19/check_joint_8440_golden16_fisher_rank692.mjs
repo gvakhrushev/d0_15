@@ -132,6 +132,23 @@ const CARrank=6,joint=nativeScalarRank+CARrank,
 require(joint===692&&jointOutcomes===135040,
   "wrong full original 8440-history x Golden16 recorded law dimensions");
 
+
+// ORIGINAL Golden exact-cost F/R native word support: no new alphabet
+// required to LABEL 135040 full loop×CAR outcomes. This is a finite
+// address-capacity fact, NOT a true physical detector/CAR instruction
+// or a zero-work readout.
+const fib=[0n,1n];
+for(let i=2;i<=32;i++)fib.push(fib[i-1]+fib[i-2]);
+const nativeGoldenCost=Array.from({length:30},(_,i)=>i)
+  .find(i=>fib[i+1]>=BigInt(jointOutcomes));
+require(nativeGoldenCost===26&&fib[27]===196418n,
+  "original Golden F/R native recording code insufficient at 26");
+const minimumFreshBinaryBits=Math.ceil(Math.log2(jointOutcomes));
+const fullGNSDimension=fib[27]**2n+fib[26]**2n;
+require(minimumFreshBinaryBits===18&&
+  fullGNSDimension===53316291173n,
+  "wrong exact original Golden recording carrier size");
+
 const summary={
   status:"PASS_ORIGINAL_BOOK_8440_CLOCK_FISHER686_PLUS_GOLDEN_CAR6_EQUALS692",
   actualGraph:{vertices:n,undirectedEdges:359,directedEdges:718,
@@ -153,6 +170,12 @@ const summary={
     sixLieSourceRank:CARrank},
   mathematicalJoinedRecord:{
     totalOutcomeLabels:jointOutcomes,
+    minimumFreshBinaryBits,
+    minimumOriginalGoldenExactCostWordDepth:nativeGoldenCost,
+    existingGoldenTypeAExactCost26Words:String(fib[27]),
+    existingGoldenTypeBPendingCost26Words:String(fib[26]),
+    fullAFGNSDimensionAtCost26:String(fullGNSDimension),
+    originalGoldenSourceCodeHasEnoughDistinctLabels:true,
     independentBookAndCARLocalFisherRank:joint,
     exactCrossFisherZero:true,
     originalScalarBookPerronPressureGaugeInvariantUnderEndpointCoboundary:true,
