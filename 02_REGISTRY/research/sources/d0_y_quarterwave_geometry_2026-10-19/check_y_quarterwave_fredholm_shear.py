@@ -70,6 +70,7 @@ C4 = s.Matrix([
 C8 = s.diag(C4, C4)
 assert C8.shape == (8,20) and C8.rank() == 8
 assert s.Matrix.vstack(R.T, C8).rank() == 8
+assert C8 * s.Matrix.hstack(*[s.Matrix.eye(20)[:,i] for i in range(20)]) == C8
 
 coords = [(a,b) for a in range(4) for b in range(a,4)]
 k = [1,1,1,1]
@@ -131,6 +132,29 @@ assert C4*pack(TTplus) != s.zeros(4,1)
 assert C4*pack(TTcross) != s.zeros(4,1)
 assert C4*pack(eta) != s.zeros(4,1)
 
+# Consume the actual designated #216 curved-warp first Gram jet from the
+# existing same-source slow-lift owner.  Along its varying coordinate,
+# g(y)=diag(1,1,f(y)^2,f(y)^2) with f'(0)=1/50, so g'(0) has 22=33=1/25.
+# Sampling y=p*h, p=0..3, and taking the normalized real period-four DFT
+# gives both quarter-wave coefficients exactly -h*g'(0)+O(h^2).
+y = s.symbols("y", real=True)
+f = 1 + s.sin(2*s.pi*y)/(100*s.pi)
+g22_prime = s.diff(f**2, y).subs(y, 0)
+assert s.diff(f, y).subs(y, 0) == s.Rational(1, 50)
+assert g22_prime == s.Rational(1, 25)
+warp_slope = s.zeros(10, 1)
+warp_slope[7] = warp_slope[9] = g22_prime
+step = s.symbols("h", real=True)
+phase_samples = [p*step*warp_slope for p in range(4)]
+cos_profile, sin_profile = profiles["quarter"]
+warp_cos = sum((cos_profile[p]*phase_samples[p] for p in range(4)), s.zeros(10,1))/2
+warp_sin = sum((sin_profile[p]*phase_samples[p] for p in range(4)), s.zeros(10,1))/2
+expected_warp_obstruction = s.Matrix([0,0,0,-s.Rational(2,25)*step])
+assert warp_cos == -step*warp_slope and warp_sin == -step*warp_slope
+assert C4*warp_slope == s.Matrix([0,0,0,s.Rational(2,25)])
+assert C4*warp_cos == expected_warp_obstruction
+assert C4*warp_sin == expected_warp_obstruction
+
 # A surviving shear can have zero on-restriction quadratic Einstein action
 # while the full Euler vector remains nonzero: zero action != on-shell.
 SHEAR = s.Matrix.hstack(pack(E1), pack(E2))
@@ -142,4 +166,5 @@ print("PASS: all 16 resonant connection nulls confined to quarter-wave")
 print("PASS: eight Fredholm forms = four per real quadrature")
 print("PASS: each 10D quarter-Gram compatible kernel = 4 formal gradients + 2 diagonal trace-free shears")
 print("PASS: C4 = P K_G(k) with explicitly integer coefficients at formal k=(1,1,1,1)")
+print("PASS: designated #216 warp has quarter-wave C4 residual (0,0,0,-2h/25)+O(h^2) in each quadrature")
 print("FIREWALL: flat finite symbol only; NOT finite gauge, TT propagation, native source, h-uniform or GR")

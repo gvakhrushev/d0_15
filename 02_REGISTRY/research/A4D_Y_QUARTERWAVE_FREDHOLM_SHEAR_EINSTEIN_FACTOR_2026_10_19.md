@@ -127,9 +127,16 @@ Thus the **quadratic Einstein action restricted to this shear plane is zero** wh
 3. **Couple real native sources:** any physically admitted preparation/clock/full128 source with quarter-wave variation must be included as the genuine same-action mixed Hessian contribution. Do not identify Y geometric invisibility with the full-history Cost-Info null class.
 4. **Try nonlinear crossed-Weyl:** compare these two shear directions with the original #334 quartic crossed-null family through a *typed* carrier and source map. They cannot be identified merely because both have two real amplitudes.
 5. **Decisive split:** if all admitted geometric slow jets lie in this horizontal class after genuine range+source completion, the resonance is not the remaining geometry obstruction; target physical Book source and uniform refinement. If an admitted fixed-background joint root has a nonzero normalized C4 remainder, it is a scoped counterexample to that horizontal transport assertion, not automatically to GR.
+6. **Consume the pinned curved #216 warp jet.** For the existing profile \(f(y)=1+\sin(2\pi y)/(100\pi)\), \(f(0)=1\), \(f'(0)=1/50\), and the Gram slope is \(g'(0)=\operatorname{diag}(0,0,1/25,1/25)\). On local four-phase samples \(y=ph\), \(p=0,1,2,3\), its normalized cosine and sine coefficients are each \(-h g'(0)+O(h^2)\). Hence both give
+   \[
+   C_4\widehat g_{c,s}= (0,0,0,-2h/25)+O(h^2),
+   \]
+   so this sampled slow warp is outside the flat Y horizontal class already at first order. This is a precise local cell-projection test, consistent with—but not a derivation of—the separate 136-by-98 finite-amplitude #232/#216 same-source obstruction. It is not by itself an action-source residual or a global refinement result; a true curved lift could only be claimed after the full source and range corrections are included.
 
 ## 6. Repro and status
 
 **Independent exact integer rebuild in the analysis environment:** from the existing owner six-based-plaquette formula, reconstructed 96×96 symmetric integral L2 and 40×96 integral M2, confirmed 80/88 total ranks and 24/24/32 three Fourier-block L-ranks, 0/9/18 M-ranks, quarter 16-null → (8 visible, 8 invisible), row-reduced exact C4 and its sym-gradient/shear kernel, plus direct Einstein 10×10 polynomial operator and \`C4=P K_G\`. All local SymPy assertions passed. The repository checker consumes the existing pinned owner JSON to avoid rebuilding it during repeated CI and rechecks these statements. Its remote execution/CI result is **not** claimed by this note.
+
+The same checker now also evaluates the first-Taylor four-phase projection of the pinned #216 warp profile using exact rationals and asserts the nonzero \(-2h/25\) Einstein-row factor in each quarter-wave quadrature.
 
 \`GR_closed=false\`; no native action admitted, no claimed full matter stress, Einstein–Λ source or propagation.
