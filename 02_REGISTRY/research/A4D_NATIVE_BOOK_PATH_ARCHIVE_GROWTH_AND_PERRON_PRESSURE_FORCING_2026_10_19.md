@@ -90,3 +90,47 @@ A possible rigorous physical completion must specify **one original same-run pro
 Only this typed programme can make the existing positive geometry and archive results into one D0→GR proof. No more spectrum/rank enumeration or fitted entropy is needed. **Negative terminal:** full unrestricted linear path memory cannot live faithfully on a fixed 33/718/16/4-dimensional Hilbert module. **Positive terminal:** a finite-depth ordered archive exists and pressure is a native original graph invariant. **Physical theorem still OPEN: compulsory apparatus/selector and the joint Einstein–CAR response.** \`GR_closed=false\`.
 
 Exact computational certificate: \`sources/d0_physical_binary_return_2026-10-19/check_full_history_archive_capacity.py\`. It verifies all word counts, path capacities, finite prefix-archive vacuum recovery and the original Perron cubic/numerical growth. The general algebraic inequalities are supplied in this memo; the script is a bounded control, not a Lean proof.
+
+
+## 6. Unique positive **native infinite cylinder measure** exists — and is exactly order-blind at equal endpoints/clock
+
+The divergence of the raw unconstrained all-depth sum (4) does NOT prevent a canonical positive, refinement-consistent **infinite cylinder probability** for the owned constant-primitive-cost scene. The original graph is connected with triangles, so its 33×33 symmetric adjacency \(A\) is primitive and has a unique positive Perron vector \(r\) up to scale. Let \(\rho\) be the forced positive Perron root in §4 and \(\pi_u=r_u^2/\sum_v r_v^2\). Define on EVERY ORIGINAL edge, with no adjustable parameter,
+\[
+P_{uv}:=\frac{A_{uv}r_v}{\rho r_u},\qquad
+\sum_vP_{uv}=1,\quad \pi P=\pi.
+\]
+For any real complete directed walk \(\gamma=(v_0,\ldots,v_n)\) one has, EXACTLY,
+\[
+\boxed{
+\Pr_{\rm native}(\gamma)
+=\pi_{v_0}\prod_{j=0}^{n-1}P_{v_j v_{j+1}}
+=\frac{r_{v_0}r_{v_n}}{\sum_v r_v^2}\,\rho^{-n}.
+}\tag{5}
+\]
+The Markov cylinder weights are consistent across ALL integer cutoffs: \(\sum_{v_{n+1}}\Pr(v_0,\ldots,v_{n+1})=\Pr(v_0,\ldots,v_n)\). Thus a positive probability measure on the whole infinite original path space DOES exist, fully fixed by existing Perron data. It must not be conflated with the divergent unnormalized measure \(\varphi^{-n}\) of §4.
+
+For our actual original rooted loop family \(\mathcal W_m\), **every one** of the 2^m different 3m-edge words has exactly the same original positive cylinder probability:
+\[
+\boxed{\Pr_{\rm native}(\gamma_w)=\pi_{a_0}\,\rho^{-3m},\quad w\in\{A,B\}^m.}\tag{6}
+\]
+Its entire scalar probability/Cost/Info response, including the pressure \(\log_\varphi(p\rho)\), is BLIND to the ordering of these equal-length/same-endpoint loops. The positive law is fully consistent and unique under its stated stationary reversible/Perron convention, **yet** the formal original Book03 memory classes are still linearly different. The difference is not a mathematical inconsistency; it proves that positive stochastic normalization and noncommutative history-memory representation solve distinct tasks.
+
+The forced normalized scalar surprisal for \(\gamma\) is
+\[
+-\log_\varphi\Pr_{\rm native}(\gamma)
+=n\log_\varphi\rho-\log_\varphi(r_{v_0}r_{v_n}/\|r\|_2^2).
+\]
+Hence the **original scalar branching pressure relative to primitive Cost=1** is precisely
+\[
+\boxed{\log_\varphi\rho-1=\log_\varphi(p\rho)
+\simeq 5.408037229516196\ {\rm golden\ code\ units/tick}.}\tag{7}
+\]
+The number is forced by the source graph, not a gravitational Newton coefficient. It is an accounting difference between the normalized stochastic code and the naive original one-step cost; whether BOOK03's genuinely selected absolute physical action charges this amount, and on which clock cut, is a separate already-owned source question (and cannot be solved by choosing \(\rho\) because it matches Einstein).
+
+**This is the central combined result:** finite path-level probability is uniquely normalized by the ORIGINAL Perron graph, ordered-history archival information demands growing memory or a justified quotient, and the actual Einstein response is not determined from either scalar normalization or the bare archive alone. A completed GR theorem must identify one compulsory original *noncommutative* physical representation/readout plus a single price, and prove its source. These are three distinct maps, not three numerical tuning knobs.
+
+## 7. Additional bound when complete histories are demanded as perfectly distinguishable quantum records
+
+Equation (2) concerns **algebra-linear faithfulness into matrix operators**, not orthogonality of each stored history. If, in addition, the **complete original detector specification** requires all 2^m distinct original history labels in \(\mathcal W_m\) to be perfectly distinguishable in one-shot quantum readout, the corresponding output density operators must have mutually orthogonal supports. Then the recording Hilbert dimension obeys the even stronger bound \(d_{\rm record}\ge 2^m\) (a d-dimensional Hilbert space has at most d mutually orthogonal nonzero supports). For the original 33-vertex space this fails for m=6 (depth18); for the original 718-edge space it fails for m=10 (depth30).
+
+This is a strictly conditional statement about **single-shot perfect classical event record distinguishability**, not an assertion that every pair of D0 formal histories must have orthogonal quantum amplitudes. The complete original archive may store histories in a later dynamic record, nonorthogonal codes plus joint references, or a response-preserving quotient. What is NOT permitted is to claim perfect full-history distinguishability in a fixed smaller register without an actual coding or archive enlargement. The native \(\Omega_8\to V_9\) clock, retained/reference and Book06 archive must pay and preserve that distinction whenever the physical verification contract actually demands it.
