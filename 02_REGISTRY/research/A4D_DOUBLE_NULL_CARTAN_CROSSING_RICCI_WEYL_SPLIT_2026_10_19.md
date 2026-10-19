@@ -107,3 +107,26 @@ q=g^{\mu\nu}D_\mu\Psi\cdot D_\nu\Psi
 Критическая граница: **полное Lorentz algebra closure и exact continuum Cartan не означают original finite all40 stationarity, native controller admission, Book cost source или GR closed.** Статус GR_closed=false.
 
 Checker: [check_two_null_cartan.mjs](sources/d0_two_null_crossing_2026-10-19/check_two_null_cartan.mjs), запуск node 02_REGISTRY/research/sources/d0_two_null_crossing_2026-10-19/check_two_null_cartan.mjs. Он проверяет 24 torsion slots на нескольких независимых nondegenerate fixtures, все Ricci slots, two oriented curvature slots и полный 256-component Kretschmann contraction в точке пересечения. Старые expensive/Lean/whole-price owners этим не перепроверены.
+
+
+## 7. Новая прямая проверка ИСХОДНЫХ 40 finite Euler: два канала действительно различимы, но trial ещё не root
+
+Independent bounded [six-plaquette first-source audit](sources/d0_two_null_crossing_2026-10-19/check_finite_all40_two_null.mjs) uses the ORIGINAL full based P_rs, odd R(P)=(P−P⁻¹)/2, original Lorentz-star pair, independently perturbs all 16 based-coframe entries and all 24 left proper-Lorentz links, retaining BOTH based adjacent faces for each varied link. It does NOT vary only H,J. Inputs are the two-null affine coframe (1), with the *trial* links U_mu=exp(h omega_mu) where omega is the continuum (5). Matrix exponentials are numerically controlled; no claim of exact arithmetic for arbitrary h.
+
+**Regression:** when either profile is absent and the surviving profile is affine, all original 16+24 first sources vanish to machine precision at h=1/8. This recovers the old genuine one-sided vacuum root, since its exact time-shifted K_i=h ∂_i H/2 agrees with the continuum-link sample for affine H.
+
+**Double-null crossing at z=(u,v,x,y)=0.** Take H=x,J=y versus H=x,J=x. Both have equal gradient norms. At h=1/8 the independent full40 sample returns:
+
+| Profile pair | max 16 solder source | proper-link rotation row (u,v) |
+| --- | ---: | ---: |
+| A⊥B: H=x,J=y | 0.0000076293660328 | (+0.0000610346517419, −0.0000610346517419) |
+| A∥B: H=x,J=x | 0.0004887590193903 | (0,0) |
+| A⊥B, h=1/16 | 0.0000004768370457 | (+0.00000381469286969, −0.00000381469286969) |
+
+The perpendicular profile has **vanishing continuum Ricci at the crossing** (§4), and accordingly its solder source is suppressed from the normal O(h³) to O(h⁴) in the two tested scales. Its **rotation link trial residual** instead has opposite signs on u/v links, tracking the nonzero oriented wedge curvature w, and is numerically within 10⁻⁴ relative error of ±w h⁴/4 at h=1/8 and h=1/16. For parallel profiles w=0 the two rotation rows vanish numerically while the leading solder source is approximately h³ d/4. This is a concrete original-action finite FIRST-SOURCE discriminator of the two continuum channels.
+
+**Crucial interpretation:** these are residuals of the continuum-Levi-Civita link *trial*, not physical source solutions. Their nonzero rotational link Euler show the naive replacement of actual finite Cartan variation by continuum ω is INVALID in the mixed sector. They do NOT prove that some other proper-Lorentz link configuration or corrected coframe cannot solve all 40 equations; they identify precisely the independent rotational rows that the next exact discrete Cartan correction must consume. Scaling is observed on two bounded h fixtures, NOT certified uniform refinement. The corresponding nonzero interior source for z=(0,0,0.2,0.3) is also printed and checks h³ solder/h⁴ link scaling.
+
+**Consumer order:** solve the original discrete link equations with genuinely free 24 link directions FIRST; only then substitute into solder equations and the genuine same native Book source. This repeats the successful reverse-logic from 40→3→1 without freezing a continuum connection or inventing a matter compensator.
+
+Script invocation: node 02_REGISTRY/research/sources/d0_two_null_crossing_2026-10-19/check_finite_all40_two_null.mjs. Bounded JavaScript execution passes independently with the original first variation formula. No original raw #216, Lean, historical native preparation or full-price CI was rerun or claimed.
