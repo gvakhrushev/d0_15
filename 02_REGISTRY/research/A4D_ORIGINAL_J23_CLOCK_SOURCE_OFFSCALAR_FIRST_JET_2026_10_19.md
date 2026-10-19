@@ -151,3 +151,77 @@ D_V{\rm Var}(K)=n(e-q)\dot q.
 On the original \(L=4,h=1/4,n=1024,J23\), these are \(-2.19539712850710\) and \(-2.17654963835603\). The logarithmic generating-source values at s=-1,0.3,1 are respectively \(1.39153141090419,-0.766927273628399,-3.74469117230556\), confirmed independently from the finite binomial coefficients. The first field derivative of *every* original count observable whose exponential moments exist is now determined by the one exact original 128-pointer J23 one-round jet.
 
 The full-count generating function (10) does NOT identify the original Book03 H+J+R Cost−Info action with a scalar count cumulant. The latter cannot replace the complete memory-algebra noncommutative holonomy, full field source, 128 fine code cost, clock/work/preparation or Einstein tensor. It is a strong same-instrument source interface and narrows the exact native physical selection test. GR_closed=false.
+
+
+## 6. Controlled refining first-source limit on the ORIGINAL count-clock interface
+
+Take a FAMILY of actual flat scalar BASE Fourier shells with the *same native*
+\(\epsilon_h=p^2h^2/64\to0\), \(\Delta_{h,0}=\lambda_h I\);
+choose the already owned original integer clock \(n_h\) satisfying
+\(n_h\epsilon_h=\beta_h\to\beta\in(0,\infty)\).
+For any homogeneous Lorentz variation V which preserves the shell as an
+invariant matrix subspace at first order, suppose only the **traced**
+first variation
+\(D_V\lambda_{h,\mathrm{tr}}\to \dot\lambda\) is controlled and nonzero,
+with \(\lambda_h\to\lambda>0\).
+There is NO assumption that the FULL \(D_V\Delta_h\) matrix is scalar.
+At each h the exact original 128 blank-port0 probability and its TRUE source are
+
+\[
+q_h=(1-\epsilon_h\lambda_h/2)^2,\qquad
+D_Vq_h=-\epsilon_h(1-\epsilon_h\lambda_h/2)
+D_V\lambda_{h,\mathrm{tr}}.
+\]
+
+The all-order-in-count-variable, first-order-in-physical-fields theorem
+(10) immediately yields, uniformly for s in compact real intervals,
+
+\[
+\boxed{
+Z_{n_h}(s,0)\to e^{\beta\lambda(e^s-1)},\qquad
+D_V\log Z_{n_h}(s)|_0
+\to\beta\dot\lambda(e^s-1).
+}\tag{12}
+\]
+
+The second formula is a genuine **SOURCE convergence theorem** for the
+native original count tilt, not only convergence of its values.
+It is Poisson's complete intensity-source hierarchy, with **NO** fitted
+count coefficient: the only intensity is the actual native
+\(\beta\lambda\), whose field derivative is
+\(\beta\dot\lambda\).
+The noncommuting internal 16x16 first variation does not change this
+result under the stated momentum-carrier scope.
+
+With the owned uniform compact first-shell moment estimates of the
+Book06 clock-position theorem, the same exact finite expression (6)
+also implies
+
+\[
+D_VH_\varphi(\mathrm{positions}|K)
+=\frac{\beta_h D_V\lambda_{h,\mathrm{tr}}}{\ln\varphi}
+\ln(1/\epsilon_h)+O(1)
+\tag{13}
+\]
+
+when \(\beta_h,\lambda_h,D_V\lambda_{h,\mathrm{tr}}\) are uniformly bounded
+on the stated compact family. This is the exact **leading original
+chronological-memory source** associated with native flat count
+refinement. The remainder \(O(1)\) is uniform under those conditions.
+Neither (12) nor (13) proves that the full original 128 label/port
+Mark source or coherent-history price has the same divergence on
+arbitrary Lorentz tangents; that additional operator C1 step remains
+open. No physical GR action or full-source cancellation is inferred.
+
+A dependency-free fixture using the original \(\epsilon_h\) and a
+**constant illustrative** \(\lambda_h=288/25,\dot\lambda=-144/25\)
+(not claiming those are exact native varying-mesh eigenvalues)
+checks h=1/2,1/4,1/8,1/16 with integer
+\(n_h=\beta/\epsilon_h=256,1024,4096,16384\), \(\beta=p^2\).
+At s=0.3 the exact source approaches
+\(\beta\dot\lambda(e^{0.3}-1)=-0.769732837807818\);
+the respective absolute errors are
+\(0.01115738,0.00280556,0.00070241,0.00017567\).
+This checks the analytic asymptotic without substituting the
+illustrative family for a verified original all128 curved/refinement
+root. GR_closed=false.
