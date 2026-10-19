@@ -102,6 +102,8 @@ The `C_Y` copy word and its conditional whole-record price are also already expl
 
 The refinement side is also sharper: the complete positive 52/53-event Julia owner gives a conditional spatial C² compiler subsequence, while the full128/Golden rare-clock composition preserves a nonzero six-Lorentz Fisher limit with O(h⁻²) marked ticks. The shell supplies the blank/exit event, not its CAR/Julia trigger or full price; ordered paths also cannot be collapsed to counts when their Lorentz words vary. Exact roots still need the stated nonzero-degree and uniform Euler-error hypotheses or another root argument.
 
+A new full-flag control shows that the ordered cyclic CAR phase survives GOOD/BAD flag dephasing: summing both retained unnormalized CAR branches gives normalized mixed-phase coefficients `1/72` and `11/504` on the two null probes, with exact gap `−1/126`. This removes cross-flag coherence as a required ingredient, while retaining within-CAR coherence and a physical cyclic-comparison operation plus its full price as explicit obligations.
+
 The new owner composes the corrected same two-tick AF×scene feedback, the
 original exact 40-row Lorentz-star table and full CAR16 Hodge matter into a
 nonempty finite Einstein+matter sector. It constructs a growing torus of
