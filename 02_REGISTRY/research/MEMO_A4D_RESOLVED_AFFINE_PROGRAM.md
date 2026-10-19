@@ -24,11 +24,12 @@ connection root alone establishes the full native gravitational law.
 ### Consuming strategic synthesis — 2026-10-19 checkpoint
 
 Current consumer:
-[strategic §§7.25–7.57](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md),
+[strategic §§7.25–7.58](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md),
 [microhistory Einstein quotient](A4D_MICROHISTORY_EINSTEIN_QUOTIENT_AND_PRICE_EULER_UNIVERSALITY_2026_10_18.md),
 [arbitrary Brinkmann 40→Poisson→Einstein owner](A4D_ARBITRARY_BRINKMANN_ALL40_CARTAN_DISCRETE_EINSTEIN_2026_10_19.md),
 [exact crossed-null quadratic all-40 bootstrap](A4D_DOUBLE_NULL_EXACT_FINITE_QUADRATIC_CARTAN_EINSTEIN_BOOTSTRAP_2026_10_19.md)
 and [cubic continuum Ricci/Poisson completion](sources/d0_two_null_crossing_2026-10-19/check_cubic_ricci_poisson.py),
+[quartic full continuum Ricci completion](sources/d0_two_null_crossing_2026-10-19/check_quartic_full_ricci.py),
 [full-source §§6.79–6.82](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
 and its separate finite-root continuation [§§8.29–8.36](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md).
 The new owner composes the corrected same two-tick AF×scene feedback, the
@@ -45,7 +46,7 @@ rows. A forced `h/8` Cartan correction solves every mixed link row; the
 remaining coframe rows are exactly the Einstein overlap. For orthogonal
 transverse gradients all 40 mixed rows vanish while the crossed Weyl
 curvature stays nonzero. This is an exact `[ab]` coefficient, not an
-all-amplitude spatial root: cubic mixed sources, global compatibility and
+all-amplitude spatial root: finite cubic mixed equations, global compatibility and
 the same-programme price/admission remain open.
 
 The next continuum Ricci order is now resolved in §7.56: source-forced
@@ -56,6 +57,13 @@ family of perpendicular gradients. The finite original 24-link/16-coframe
 cubic equations and their spatial compatibility remain open, so this does
 not upgrade the coefficientwise quadratic Cartan result to an all-order
 finite root.
+
+Strategic §7.58 now closes the local continuum geometry through degree 4:
+the required orbit-area mode and a transverse coframe scale cancel all 16
+Ricci components for the arbitrary orthogonal crossed-null family. This
+extends the degree-3 Ricci result, but the original finite 24+16 cubic and
+quartic Euler equations, spatial compatibility and native physical
+selection remain open.
 
 The [balanced native-address source seam](A4D_BALANCED_NATIVE_GOLDEN_EXACT_SOURCE_SEAM_LOCAL_TO_VOLUME_MEAN_2026_10_19.md),
 now consumed in strategic §7.38, is the main finite-to-continuum bridge. It
@@ -116,7 +124,7 @@ endpoint weight and generally a field-dependent source. The native
 same-programme binding must specify which branch event pays `Info`, whether
 initial/terminal records contribute, and how the endpoint term varies under
 admitted fields and refinement. This is a prerequisite of complete-price
-identification, not a new selector; see strategic §7.56.
+identification, not a new selector; see strategic §7.57.
 
 Strategic §7.49 closes one narrower mathematical seam: if the same complete
 two-block exterior POVM is applied conditionally on every retained original

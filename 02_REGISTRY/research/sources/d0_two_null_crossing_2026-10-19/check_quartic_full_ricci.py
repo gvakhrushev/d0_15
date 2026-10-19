@@ -32,6 +32,14 @@ def lap_h(F):
     return s.cancel((F.subs(x,x+h)+F.subs(x,x-h)
           +F.subs(y,y+h)+F.subs(y,y-h)-4*F)/h**2)
 
+def same_matrix(left,right):
+    return left.shape==right.shape and all(
+        s.simplify(s.expand(left[i,j]-right[i,j]))==0
+        for i in range(left.rows) for j in range(left.cols))
+
+def zero_matrix(matrix):
+    return same_matrix(matrix,s.zeros(*matrix.shape))
+
 def full_ricci(A,B,stage):
     """Stage 0: linear H/J; 1: cubic H/J; 2: +area sigma4; 3: +chi4."""
     AA=A[0]*x+A[1]*y
@@ -88,13 +96,14 @@ def check(A,B):
     R2,rho2=full_ricci(A,B,2)
     R3,rho3=full_ricci(A,B,3)
     # A cubic source-controlled H/J alone is NOT quartic vacuum.
-    assert R1!=s.zeros(4)
+    assert not zero_matrix(R1)
     # The orbit-area sigma4 removes ALL u,v orbit Ricci fourth-order.
-    assert R2[0,0]==R2[0,1]==R2[1,0]==R2[1,1]==0
+    assert all(s.simplify(s.expand(R2[i,j]))==0
+               for i in range(2) for j in range(2))
     expected=s.zeros(4)
     expected[2,2]=expected[3,3]=3*q*a*a*b*b*r2/64
-    assert R2==expected,(A,B,R2)
-    assert R3==s.zeros(4),(A,B,R3)
+    assert same_matrix(R2,expected),(A,B,R2)
+    assert zero_matrix(R3),(A,B,R3)
     assert coeff(rho2,2,2)==0
     assert coeff(rho3,2,2)==0
     print("PASS quartic complete Einstein Ricci 16/16, A=",A,"B=",B)
@@ -104,9 +113,12 @@ if __name__=="__main__":
                 ((1,1),(-1,1)),((1,2),(-2,1)),
                 ((2,0),(0,3))):
         check(A,B)
+    r,q,k=s.symbols("r q k",real=True)
+    check((r,q),(-k*q,k*r))
+    print("PASS symbolic arbitrary orthogonal family A=(r,q), B=k*(-q,r)")
     assert s.expand(lap_h(r2*r2)-16*r2-4*h*h)==0
     assert s.expand(lap_h(r2*r2-h*h*r2)-16*r2)==0
     assert s.expand(lap_h(lap_h(r2*r2))-64)==0
-    print("PASS exact native five-point quartic source: Δ_h(r⁴−h²r²)=16r²")
+    print("PASS exact five-point stencil quartic source: Δ_h(r⁴−h²r²)=16r²")
     print("SCOPE: exact continuum Ricci degree<=4; finite all40 link/coframe")
     print("cubics/quartics, full retained native price and GR_closed remain OPEN.")

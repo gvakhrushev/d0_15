@@ -122,7 +122,7 @@ if __name__=="__main__":
 
 
     # 2-Killing vacuum's EXACT orbit-current trace requires Δ rho = 0,
-    # with rho=sqrt(-det lambda)=det(e)>0. After the uniquely sourced
+    # with rho=sqrt(-det lambda)=det(e_orb)>0. After the uniquely sourced
     # cubic H/J particular solutions in the *minimal* double-null ansatz,
     # rho4 is inevitably bi-Laplacian-nonharmonic. Arbitrary cubic
     # harmonic additions do not change its nonzero bi-Laplacian.
@@ -141,16 +141,58 @@ if __name__=="__main__":
                 "nonzero quartic area biharmonic obstruction")
         sigma4=-expected
         require(s.expand(discrete_lap(expected+sigma4))==0,
-                "one existing null-coframe scale scalar restores area harmonicity")
+                "one algebraic area scalar restores harmonicity")
         print("PASS fourth-order area trace obstruction and sigma source",AV,BV)
+
+    ra,qa,sa=s.symbols("ra qa sa",real=True)
+    AV=(ra,qa)
+    BV=(-sa*qa,sa*ra)
+    normA=AV[0]**2+AV[1]**2
+    normB=BV[0]**2+BV[1]**2
+    HA=AV[0]*x+AV[1]*y
+    JB=BV[0]*x+BV[1]*y
+    rad=x*x+y*y
+    Hprofile=a*HA-a*a*b*normA*JB*rad/32
+    Jprofile=b*JB-a*b*b*normB*HA*rad/32
+    orbit=s.Matrix([[Hprofile,1+Hprofile*Jprofile/4],
+                    [1+Hprofile*Jprofile/4,Jprofile]])
+    require(s.expand(orbit.det()+(1-Hprofile*Jprofile/4)**2)==0,
+            "exact positive-branch Killing-area determinant")
+    rho=s.expand(1-Hprofile*Jprofile/4)
+    rho_poly=s.Poly(rho,a,b)
+    rho2=rho_poly.coeff_monomial(a*b)
+    rho4_from_metric=rho_poly.coeff_monomial(a*a*b*b)
+    rho4=(normA*JB*JB+normB*HA*HA)*rad/128
+    expected=normA*normB*rad**2/128
+    require(s.simplify(AV[0]*BV[0]+AV[1]*BV[1])==0,
+            "symbolic crossed gradients must be orthogonal")
+    require(s.expand(rho4-expected)==0,
+            "arbitrary orthogonal quartic area coefficient")
+    lap=lambda t:s.diff(t,x,2)+s.diff(t,y,2)
+    require(s.expand(rho4_from_metric-expected)==0,
+            "fourth-order orbit area from the exact metric determinant")
+    require(s.expand(lap(rho2))==0,
+            "quadratic orbit area is harmonic for perpendicular gradients")
+    require(s.expand(lap(lap(expected))-normA*normB/2)==0,
+            "arbitrary orthogonal continuum area biharmonic")
+    require(s.expand(discrete_lap(discrete_lap(expected))
+                     -normA*normB/2)==0,
+            "arbitrary orthogonal quartic area biharmonic")
+    amp4=a*a*b*b
+    scaled=1-amp4*expected/2
+    area=1+a*b*rho2+amp4*expected
+    scale_residual=s.Poly(s.expand(scaled**2*area-(1+a*b*rho2)),a,b)
+    require(all(i+j>4 for (i,j),_ in scale_residual.terms()),
+            "orbit-coframe scale cancels the area coefficient through degree 4")
+    print("PASS symbolic arbitrary orthogonal fourth-order area and coframe-scale cancellation")
 
     F=s.Function("F")(x,y)
     C=s.Function("C")(x,y)
-    lap=lambda t:s.diff(t,x,2)+s.diff(t,y,2)
-    for L,vec in ((F,(1,2)),(C,(3,4))):
-        linear=vec[0]*x+vec[1]*y
+    ux,uy=s.symbols("ux uy",real=True)
+    for L in (F,C):
+        linear=ux*x+uy*y
         ident=lap(lap(linear*L))-linear*lap(lap(L))-4*(
-            vec[0]*s.diff(lap(L),x)+vec[1]*s.diff(lap(L),y))
+            ux*s.diff(lap(L),x)+uy*s.diff(lap(L),y))
         require(s.simplify(ident)==0,
                 "arbitrary smooth harmonic cubic freedom cannot repair biharmonic volume")
     print("PASS general harmonic freedoms cannot remove the quartic area bi-Laplacian")

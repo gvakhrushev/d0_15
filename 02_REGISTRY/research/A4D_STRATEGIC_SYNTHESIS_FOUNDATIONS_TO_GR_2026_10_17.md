@@ -4514,60 +4514,45 @@ Cost−Info. Это prerequisite уже существующего consumer §7.
 остаются открыты.
 
 
-### 7.58. Четвёртый порядок: обязательный orbit-area/half-density source
+### 7.58. Четвёртый порядок: полная continuum Ricci-компенсация двумя исходными coframe-модами
 
-Новый [точный cubic-to-area consumer](A4D_DOUBLE_NULL_CUBIC_EINSTEIN_QUARTIC_AREA_WARD_2026_10_19.md)
-соединяет §7.56 (исправленный до степени3 полный continuum Ricci)
-с точным геометрическим 2-Killing orbit-current identity. При исходной
-поперечной метрике −dx²−dy² и двух независимых Killing u,v блок
-\(\mathcal G_{AB}\) с \(\rho=\sqrt{-\det\mathcal G}=\Omega=1-HJ/4\)
-удовлетворяет
+[Точный геометрический owner](A4D_DOUBLE_NULL_CUBIC_EINSTEIN_QUARTIC_AREA_WARD_2026_10_19.md)
+показывает, почему после кубической crossed-null поправки минимальная пара
+\(H,J\) уже не может продолжаться сама: для двух Killing-направлений
+\(\lambda\) и положительной площади орбиты
+\(\rho=\sqrt{-\det\lambda}\) vacuum equations требуют \(\Delta_\perp\rho=0\).
+При \(A\cdot B=0\) неизбежный коэффициент
 \[
-\partial_i(\rho\mathcal G^{-1}\partial_i\mathcal G)
-  =2\rho\mathcal G^{-1}{\rm Ric}_{AB},\qquad
-{\rm Ric}_{AB}=0\Longrightarrow\Delta_\perp\rho=0.
+[\rho]_{a^2b^2}=\frac{|A|^2|B|^2}{128}|x|^4,
+\qquad \Delta_\perp^2[\rho]_{a^2b^2}=\frac{|A|^2|B|^2}{2}\ne0
 \]
-Это точная геометрическая формула, НЕ Book/native Ward. Для кубически
-исправленных H,J при A·B=0, w≠0 неизбежно в исходном
-**строго двухпрофильном** coframe:
+не снимается кубическими harmonic freedoms. Это ограничение узкого
+двухфункционального chart, не no-go для полной coframe-системы.
+
+Новый [quartic full-Ricci checker](sources/d0_two_null_crossing_2026-10-19/check_quartic_full_ricci.py)
+продолжает ту же crossed-null метрику модами внутри исходного кофрейма.
+После source-forced поправок \(H,J\) степени3 используются две
+полиномиальные моды степени4:
 \[
-[\rho]_{a^2b^2}=\frac{|A|^2|B|^2}{128}(x^2+y^2)^2,\quad
-[\Delta\rho]_{a^2b^2}=\frac{|A|^2|B|^2}{8}(x^2+y^2),\quad
-[\Delta^2\rho]_{a^2b^2}=\frac{|A|^2|B|^2}{2}\ne0.
+\sigma=-\frac{|A|^2|B|^2}{128}a^2b^2|x|^4,\qquad
+\chi=\frac{3|A|^2|B|^2}{1024}a^2b^2|x|^4,
 \]
-Произвольные transverse-harmonic кубические additions к H,J
-не способны снять именно последнее biharmonic число, поскольку
-\(\Delta^2((V\cdot x)F_{\rm harm})=0\). Это scoped препятствие
-продолжению в *замороженном* двухфункциональном chart без других
-mixed coframe-компонент, НЕ NO-GO для двухсторонней ОТО.
+где \(e^+=(1+\sigma)du+Jdv/2\), а
+\(e^{2,3}=(1+\chi)dx^{2,3}\). Первая восстанавливает orbit-area trace;
+вторая зануляет оставшийся transverse-Ricci source. Прямой расчёт полного
+\(4\times4\) тензора подтверждает \(R_{\mu\nu}=0\) до полной степени4
+для произвольной ортогональной пары \(A=(r,q), B=k(-q,r)\), сохраняя
+ранее установленный ненулевой квадратичный crossed-Weyl коэффициент.
+Пятиузловой скалярный источник также точен:
+\(\Delta_h(|x|^4-h^2|x|^2)=16|x|^2\).
 
-Обратный стратегический ход использует **одну уже существующую из
-исходных 16 кофреймных компонент**, а не новое поле:
-\(e^+=(1+\sigma)du+Jdv/2\),
-\(
-[\sigma]_{a^2b^2}=
--|A|^2|B|^2(x^2+y^2)^2/128
-\).
-Тогда \(\rho=1+\sigma-HJ/4\) и необходимый area trace
-четвёртого порядка зануляется. Другие traceless-orbit,
-transverse-Ricci и ВСЕ original finite 24-link/16-coframe уравнения
-четвёртого порядка этим НЕ решены. Native PF/volume-quantile
-готов как условный математический читатель этого \(\rho\),
-но физический Cost−Info и подготовка должны быть выведены на
-том же ретентивном носителе.
-
-Finite stencil bonus: \(\Delta_h r^4=16r^2+4h^2\),
-\((\Delta_h)^2r^4=64\) точно, поэтому четвертичный area obstruction
-не исчезает при фиксированном h уже на пятиузловом следе, хотя
-точная конечная 2-Killing Palatini-Ward ещё НЕ установлена.
-[Exact checker](sources/d0_two_null_crossing_2026-10-19/check_cubic_ricci_poisson.py)
-сохраняет symbolic arbitrary-orthogonal cubic Ricci, scalar Poisson,
-quartic area, biharmonic and harmonic-freedom control.
-
-Parent next step: расширить оригинальный 40-Euler finite-jet расчёт
-сначала на a²b/ab² с реально независимыми link полями,
-затем на a²b² и эту intrinsic coframe degree σ.
-Параллельно проверить полный same-history Book/native input-output
-binding и endpoint-Info source (§7.57), а не объявлять обычный
-гравитационный orbit-Ward обязательным информационным законом.
-GR_closed=false; H/J/R, #216, physical refinement OPEN.
+Итак, формальный continuum metric jet этой локальной семьи решает
+\(R_{\mu\nu}=0\) по всем амплитудным коэффициентам до полной степени4.
+Это не решает конечные исходные 24 link + 16 coframe Euler на
+\([a^2b],[ab^2],[a^2b^2]\), не межузловая совместимость и не предел
+\(h\to0\). Это не доказывает, что D0 выбирает \(\sigma,\chi\): полный
+same-history Cost−Info, native admission/preparation/clock и физическое
+исполнение остаются отдельными открытыми воротами. Следующий решающий шаг —
+поднять эти две моды и cubic profiles в оригинальные конечные 40 уравнений
+и одновременно свести их к уже существующему same-programme price binding;
+не запускать независимый повтор continuum no-go. `GR_closed=false`.
