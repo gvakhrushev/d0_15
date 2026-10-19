@@ -3093,6 +3093,32 @@ inverse loss acts on the center gradient. The numerical mixed fields
 fail the necessary equations and are not joint witnesses.
 Neither task terminal follows.
 
+#### Exact diagonal #232 local jet update (19 October)
+
+The [diagonal microstructure slow-lift certificate](A4D_DIAGONAL_MICROSTRUCTURE_CONNECTION_STATIONARY_SLOW_LIFT.md)
+now tests the formerly connection-only \(h^2z^2\) correction against the
+complete constant-solder vacuum source. The identity-link control has zero
+metric Euler rows on this cell-constant metric; the full discrete #216
+comparator is not rebuilt in this coefficient calculation. Stacking all 96
+connection rows with all 40 metric rows gives a 136-by-96 rational system
+with matrix and augmented ranks 88; one correction supported on role 0 at
+phases 0 and 2 makes every row zero. Thus this coefficient also supplies no
+local joint obstruction.
+
+The same certificate records the first-amplitude slope lift through
+\(h^3zx_0\): the 388-by-288 system has rank 264 on both sides, leaving 24
+directions, and its ten metric coefficients at \(h^2x_0\) and \(h^3x_0\)
+are identically zero over the full affine solution family. These are exact
+finite-cell Taylor facts only. The solder is constant over the cell; there
+is no neighbor-dependent smooth curvature, finite-periodic root, prescribed
+same-source comparison, or raw \(h^{-2}\) refinement estimate. The continuum
+Einstein source is zero on this flat probe, but the designated discrete #216
+branch has not been recomputed here. This calculation does not establish
+response decoupling on a curved background. The next decisive step is to
+place the same carrier on actually sampled nonconstant
+\(g(hx)\), with nonzero curvature, and use the designated #216 branch on
+those exact samples while imposing all joint rows.
+
 ## Subsequence response law for small link-log deviations
 
 There is a useful conditional homogenized statement before the global

@@ -662,6 +662,92 @@ for p in range(4):
         ])
 metric_link_map = sp.Matrix(metric_link_rows)
 
+# Upgrade the already solved curvature-only h^2*z^2 connection correction to
+# the full joint coefficient.  The coframe metric_solder is constant across
+# the cell, and the identity-link flat control has zero metric Euler on every
+# row.  This calculation does not identify that control with the designated
+# discrete #216 comparator.  Keep every phase, role and Lorentz-link direction
+# available to the correction solve.
+identity_links = [[I4 for _ in range(4)] for _ in range(4)]
+check(
+    "CONSTANT_SOLDER_IDENTITY_COMPARATOR_METRIC_ZERO",
+    all(
+        metric_euler_full((p, 0, 0, 0), row, col, identity_links, metric_solder) == 0
+        for p in range(4)
+        for row, col in SYM
+    ),
+)
+curvature_metric_source = sp.Matrix([
+    coefficient_h2_z2(metric_euler_full(
+        (p, 0, 0, 0), row, col, full_order_h_links, metric_solder,
+    ))
+    for p in range(4)
+    for row, col in SYM
+])
+joint_curvature_matrix = full_jacobian.col_join(metric_link_map)
+joint_curvature_rhs = (-curvature_source).col_join(-curvature_metric_source)
+joint_curvature_rank = sp.polys.matrices.DomainMatrix.from_Matrix(
+    joint_curvature_matrix
+).rank()
+joint_curvature_augmented_rank = sp.polys.matrices.DomainMatrix.from_Matrix(
+    joint_curvature_matrix.row_join(joint_curvature_rhs)
+).rank()
+print(
+    "JOINT_H2_Z2_CONNECTION_METRIC_RANKS",
+    joint_curvature_rank,
+    joint_curvature_augmented_rank,
+)
+check(
+    "JOINT_H2_Z2_CONNECTION_METRIC_COMPATIBLE",
+    joint_curvature_rank == joint_curvature_augmented_rank,
+)
+joint_curvature_solution, joint_curvature_parameters = (
+    joint_curvature_matrix.gauss_jordan_solve(joint_curvature_rhs)
+)
+joint_curvature_solution = joint_curvature_solution.subs(
+    {parameter: 0 for parameter in joint_curvature_parameters}
+)
+check(
+    "JOINT_H2_Z2_CONNECTION_RESIDUAL_ZERO",
+    full_jacobian * joint_curvature_solution + curvature_source
+    == sp.zeros(96, 1),
+)
+check(
+    "JOINT_H2_Z2_ALL_40_METRIC_ROWS_ZERO",
+    metric_link_map * joint_curvature_solution + curvature_metric_source
+    == sp.zeros(40, 1),
+)
+joint_curvature_corrected_links = [list(row) for row in full_order_h_links]
+for (p, role, gi), coefficient in zip(full_rows, joint_curvature_solution):
+    joint_curvature_corrected_links[role][p] += (
+        h**2 * z**2 * coefficient * GENERATORS[gi]
+    )
+check(
+    "JOINT_H2_Z2_ALL_96_FINITE_CONNECTION_ROWS_ZERO",
+    all(
+        coefficient_h2_z2(edge_euler_full(
+            (p, 0, 0, 0), role, GENERATORS[gi],
+            joint_curvature_corrected_links, metric_solder,
+        )) == 0
+        for p, role, gi in full_rows
+    ),
+)
+check(
+    "JOINT_H2_Z2_ALL_40_FINITE_METRIC_ROWS_ZERO",
+    all(
+        coefficient_h2_z2(metric_euler_full(
+            (p, 0, 0, 0), row, col,
+            joint_curvature_corrected_links, metric_solder,
+        )) == 0
+        for p in range(4)
+        for row, col in SYM
+    ),
+)
+print(
+    "JOINT_H2_Z2_LINK_SUPPORT",
+    [(full_rows[i], str(value)) for i, value in enumerate(joint_curvature_solution) if value],
+)
+
 phase_difference_map = sp.zeros(30, 96)
 phase_difference_base = sp.zeros(30, 1)
 for p in (1, 2, 3):

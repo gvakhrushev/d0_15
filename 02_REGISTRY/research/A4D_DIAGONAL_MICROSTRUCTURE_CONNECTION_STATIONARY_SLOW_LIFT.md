@@ -123,6 +123,19 @@ The full-carrier correction is
 Exact substitution cancels all 96 coefficients. This is a second bidegree
 coefficient, separate from the \(h^2zx_0\) slope correction above.
 
+The same \(h^2z^2\) coefficient is now tested against the complete metric
+source. Here the solder is constant over the period-four cell; the identity-
+link flat control has zero in all ten metric Euler rows. Stack all 40 metric
+rows with the 96 connection rows, using
+the same complete phase × role × Lorentz-link correction carrier. The
+136-by-96 coefficient matrix and augmented matrix both have exact rational
+rank 88. The correction remains supported only on role 0 at phases 0 and 2,
+with coefficients \(+\tfrac18J_{12}\) and \(-\tfrac18J_{12}\). Direct
+substitution verifies all 96 finite connection rows and all 40 finite metric
+rows vanish at \(h^2z^2\). Thus this coefficient also gives no vacuum
+joint-lift obstruction. The calculation does not rebuild the full discrete
+#216 smooth comparator even on this flat profile.
+
 These are isolated formal Taylor coefficients, not an all-orders root. They
 do not show that the 16-dimensional Jacobian kernel is gauge, solve higher
 connection coefficients, or give a uniformly controlled correction on
@@ -153,8 +166,8 @@ not an obstruction to the #232 continuation. The exact replay is part of
 This is still only the first amplitude coefficient of one local slow jet. It
 does not test \(h^3zx_0\), finite \(z\), spatially varying neighboring
 solder data, exact periodic roots, or a normalized response gap. The separate
-\(h^2z^2\) connection correction above remains a connection-only coefficient;
-the ten metric equations at that bidegree have not been discharged here.
+\(h^2z^2\) coefficient now has its own full joint connection/metric check,
+but the constant-solder cell does not compare against a curved #216 branch.
 
 ### First-amplitude joint continuation through \(h^3zx_0\)
 
@@ -196,8 +209,12 @@ prescribed smooth comparator source.
 This remains a local formal jet: it omits the \(h^2\) value (non-slope)
 equations, higher amplitude powers, actual neighbor-dependent solder values,
 an exact periodic root, and the normalized same-source response comparison.
-It therefore removes a low-order compatibility obstruction but neither
-proves an exact continuation nor closes the #334 target.
+Along with the joint \(h^2z^2\) check above, it removes these low-order local
+compatibility obstructions but neither proves an exact continuation nor
+closes the #334 target. The next decisive test must put the same #232 carrier
+on an actually sampled nonconstant metric with nonzero curvature and compare
+its full joint/source equations with the designated #216 smooth branch; a
+cell-constant solder probe has a trivial flat comparator.
 
 ## 6. Validation
 
