@@ -197,6 +197,135 @@ def accepted_review(model: dict, record: dict, expected_digest: str) -> bool:
     return True
 
 
+def _validate_fork_pin(pin: object, label: str) -> None:
+    require(isinstance(pin, dict)
+            and set(pin) == {"number", "head", "base", "task_fields"},
+            f"{label}: invalid exact PR pin")
+    require(isinstance(pin["number"], int) and not isinstance(pin["number"], bool)
+            and pin["number"] > 0, f"{label}: invalid PR number")
+    for side in ("head", "base"):
+        ref = pin[side]
+        require(isinstance(ref, dict) and set(ref) == {"repository", "branch", "sha"},
+                f"{label}.{side}: invalid branch pin")
+        text_field(ref["repository"], f"{label}.{side}.repository", 200)
+        text_field(ref["branch"], f"{label}.{side}.branch", 300)
+        require(isinstance(ref["sha"], str) and SHA.fullmatch(ref["sha"]) is not None,
+                f"{label}.{side}: invalid Git SHA")
+    fields = string_list(pin["task_fields"], f"{label}.task_fields")
+    require(len(fields) <= 1, f"{label}: ambiguous Task metadata cannot be reconciled")
+
+
+def _validate_source_fork_reconciliations(model: dict) -> None:
+    rows = model["contract"].get("source_fork_reconciliations", [])
+    reconciliations = records(rows, "source_fork_reconciliations")
+    for rid, reconciliation in reconciliations.items():
+        require(set(reconciliation) == {"id", "parent", "children", "disposition", "reopen_when"},
+                f"{rid}: invalid source-fork reconciliation fields")
+        _validate_fork_pin(reconciliation["parent"], f"{rid}.parent")
+        parent_tasks = reconciliation["parent"]["task_fields"]
+        require(len(parent_tasks) == 1 and parent_tasks[0] in model["contract"]["task_bindings"],
+                f"{rid}: parent must pin one registered Task")
+        children = reconciliation["children"]
+        require(isinstance(children, list) and len(children) >= 2,
+                f"{rid}: source fork needs at least two children")
+        child_numbers = []
+        for index, child in enumerate(children):
+            label = f"{rid}.children[{index}]"
+            require(isinstance(child, dict)
+                    and set(child) == {"pin", "merge_base_sha", "child_only_delta", "result_ids"},
+                    f"{label}: invalid child reconciliation")
+            _validate_fork_pin(child["pin"], f"{label}.pin")
+            child_numbers.append(child["pin"]["number"])
+            require(child["pin"]["task_fields"] == [],
+                    f"{label}: a child with Task metadata needs ownership reconciliation")
+            require(isinstance(child["merge_base_sha"], str)
+                    and SHA.fullmatch(child["merge_base_sha"]) is not None,
+                    f"{label}: invalid merge-base SHA")
+            delta = child["child_only_delta"]
+            require(isinstance(delta, list) and bool(delta), f"{label}: child delta is required")
+            paths = []
+            for file in delta:
+                require(isinstance(file, dict)
+                        and set(file) == {"status", "path", "git_blob", "present_at_parent_head"},
+                        f"{label}: invalid child delta entry")
+                require(file["status"] in {"A", "M", "D", "R"}, f"{label}: invalid delta status")
+                path_in(model["root"], file["path"])
+                paths.append(file["path"])
+                require(file["present_at_parent_head"] is False,
+                        f"{label}: this reconciliation is only for child files absent from the parent")
+                if file["status"] == "D":
+                    require(file["git_blob"] is None, f"{label}: deleted path cannot pin a child blob")
+                else:
+                    require(isinstance(file["git_blob"], str) and SHA.fullmatch(file["git_blob"]) is not None,
+                            f"{label}: invalid child Git blob")
+            require(len(paths) == len(set(paths)), f"{label}: duplicate child delta path")
+            result_ids = string_list(child["result_ids"], f"{label}.result_ids")
+            require(bool(result_ids) and all(result_id in model["results"] for result_id in result_ids),
+                    f"{label}: source-fork results must resolve to indexed result-only evidence")
+        require(child_numbers == sorted(set(child_numbers)), f"{rid}: children must be unique and sorted by PR number")
+        require(reconciliation["disposition"] == "comparison-complete-result-only",
+                f"{rid}: source-fork comparison cannot accept child evidence")
+        string_list(reconciliation["reopen_when"], f"{rid}.reopen_when")
+        require(bool(reconciliation["reopen_when"]), f"{rid}: stale comparison triggers must be explicit")
+
+
+def _live_fork_pin(pr: dict) -> dict | None:
+    head = pr.get("head") or {}
+    base = pr.get("base") or {}
+    head_repo = head.get("repo") or {}
+    base_repo = base.get("repo") or {}
+    number = pr.get("number")
+    if (not isinstance(number, int) or isinstance(number, bool)
+            or not all(isinstance(value, str) and value for value in
+                       (head_repo.get("full_name"), head.get("ref"), head.get("sha"),
+                        base_repo.get("full_name"), base.get("ref"), base.get("sha")))):
+        return None
+    return {
+        "number": number,
+        "head": {"repository": head_repo["full_name"], "branch": head["ref"], "sha": head["sha"]},
+        "base": {"repository": base_repo["full_name"], "branch": base["ref"], "sha": base["sha"]},
+        "task_fields": metadata(pr.get("body") or "", "Task"),
+    }
+
+
+def matching_source_fork_reconciliation(model: dict, parent: dict, children: list[dict]) -> dict | None:
+    """Return only an exact live match; any changed head, base, Task or child set reopens comparison."""
+    parent_pin = _live_fork_pin(parent)
+    child_pins = [_live_fork_pin(child) for child in children]
+    if parent_pin is None or any(pin is None for pin in child_pins):
+        return None
+    child_pins = sorted(child_pins, key=lambda pin: pin["number"])
+    for reconciliation in model["contract"].get("source_fork_reconciliations", []):
+        if reconciliation["parent"] != parent_pin:
+            continue
+        recorded_children = [child["pin"] for child in reconciliation["children"]]
+        if recorded_children == child_pins:
+            return reconciliation
+    return None
+
+
+def source_fork_reconciliation_summary(reconciliation: dict, live_children: list[dict]) -> dict:
+    live_by_number = {child["number"]: child for child in live_children}
+    return {
+        "id": reconciliation["id"],
+        "parent_pr": reconciliation["parent"]["number"],
+        "parent_head_sha": reconciliation["parent"]["head"]["sha"],
+        "disposition": reconciliation["disposition"],
+        "children_remain_unaccepted": True,
+        "children": [{
+            "number": item["pin"]["number"],
+            "head_sha": item["pin"]["head"]["sha"],
+            "merge_base_sha": item["merge_base_sha"],
+            "changed_paths": [entry["path"] for entry in item["child_only_delta"]],
+            "result_ids": item["result_ids"],
+            "live_state": live_by_number[item["pin"]["number"]]["state"],
+            "live_lifecycle": live_by_number[item["pin"]["number"]]["lifecycle"],
+            "live_task": live_by_number[item["pin"]["number"]]["task"],
+        } for item in reconciliation["children"]],
+        "reopen_when": reconciliation["reopen_when"],
+    }
+
+
 def validate(model: dict) -> None:
     c, root = model["contract"], model["root"]
     interfaces, obs = c.get("interfaces"), model["obligations"]
@@ -261,6 +390,7 @@ def validate(model: dict) -> None:
         require(isinstance(result.get("evidence"), list) and bool(result["evidence"]), "result evidence is required")
         for ref in result["evidence"]:
             evidence_bytes(root, ref)
+    _validate_source_fork_reconciliations(model)
     for app in model["applications"].values():
         aid = app["id"]
         require(app.get("obligation") in obs and app.get("result") in model["results"], f"{aid}: dangling application")
@@ -601,6 +731,7 @@ def next_actions(model: dict, prs: list[dict] | None) -> list[dict]:
     queued = {t["id"]: t for t in queue["tasks"]}
     actions = []
     for tid, binding in model["contract"]["task_bindings"].items():
+        reconciled_source_forks = []
         live = [p for p in (prs or []) if task_for_pr(p) == tid]
         live_executions = []
         for pr in sorted(live, key=lambda item: item["number"]):
@@ -692,24 +823,28 @@ def next_actions(model: dict, prs: list[dict] | None) -> list[dict]:
                     })
                 affected = set().union(*(downstream(model, n) for n in binding["obligations"]))
                 if stack is None and len(related) > 1:
-                    actions.append({
-                        "task": tid,
-                        "action": "reconcile-source-fork",
-                        "reasons": [
-                            "multiple open same-repository PRs descend from the registered owner through separate "
-                            "source branches. Compare their exact scientific questions and child-only deltas; do not "
-                            "treat branch dependence alone as duplicate ownership or accept a child result"
-                        ],
-                        "consumer": binding["consumer"],
-                        "assumes": binding["assumes"],
-                        "reuse_results": binding.get("reuse_results", []),
-                        "live_executions": live_executions,
-                        "related_prs": related_prs,
-                        "potential_downstream": len(affected),
-                        "newly_ready_if_proved": 0,
-                    })
-                    continue
-                if stack is None:
+                    reconciliation = matching_source_fork_reconciliation(model, p, related)
+                    if reconciliation is None:
+                        actions.append({
+                            "task": tid,
+                            "action": "reconcile-source-fork",
+                            "reasons": [
+                                "multiple open same-repository PRs descend from the registered owner through separate "
+                                "source branches. Compare their exact scientific questions and child-only deltas; do not "
+                                "treat branch dependence alone as duplicate ownership or accept a child result"
+                            ],
+                            "consumer": binding["consumer"],
+                            "assumes": binding["assumes"],
+                            "reuse_results": binding.get("reuse_results", []),
+                            "live_executions": live_executions,
+                            "related_prs": related_prs,
+                            "potential_downstream": len(affected),
+                            "newly_ready_if_proved": 0,
+                        })
+                        continue
+                    reconciled_source_forks.append(
+                        source_fork_reconciliation_summary(reconciliation, related_prs))
+                elif stack is None:
                     actions.append({
                         "task": tid,
                         "action": "resolve-overlap",
@@ -726,37 +861,41 @@ def next_actions(model: dict, prs: list[dict] | None) -> list[dict]:
                         "newly_ready_if_proved": 0,
                     })
                     continue
-                details = []
-                for relation in stack:
-                    sha_state = ("child base SHA matches the current parent head" if relation["base_matches_parent_head"]
-                                 else "child base SHA differs from the current parent head")
-                    details.append(
-                        f"#{relation['child']} is based on #{relation['parent']}'s branch "
-                        f"({sha_state}; child base {relation['child_base_sha']}, "
-                        f"parent head {relation['parent_head_sha']}, child head {relation['child_head_sha']})"
-                    )
-                actions.append({
-                    "task": tid,
-                    "action": "reconcile-stacked-source",
-                    "reasons": [
-                        "open PR descendants are surfaced by their exact same-repository branch relation even when "
-                        "they omit or differ in Task metadata: " + "; ".join(details)
-                        + ". Compare each child-only delta with its parent and pin the consumed child head; "
-                        "the relation does not accept the result or authorize another execution"
-                    ],
-                    "consumer": binding["consumer"],
-                    "assumes": binding["assumes"],
-                    "reuse_results": binding.get("reuse_results", []),
-                    "live_executions": live_executions,
-                    "related_prs": related_prs,
-                    "stacked_relations": stack,
-                    "potential_downstream": len(affected),
-                    "newly_ready_if_proved": 0,
-                })
-                continue
+                if stack is not None:
+                    details = []
+                    for relation in stack:
+                        sha_state = ("child base SHA matches the current parent head" if relation["base_matches_parent_head"]
+                                     else "child base SHA differs from the current parent head")
+                        details.append(
+                            f"#{relation['child']} is based on #{relation['parent']}'s branch "
+                            f"({sha_state}; child base {relation['child_base_sha']}, "
+                            f"parent head {relation['parent_head_sha']}, child head {relation['child_head_sha']})"
+                        )
+                    actions.append({
+                        "task": tid,
+                        "action": "reconcile-stacked-source",
+                        "reasons": [
+                            "open PR descendants are surfaced by their exact same-repository branch relation even when "
+                            "they omit or differ in Task metadata: " + "; ".join(details)
+                            + ". Compare each child-only delta with its parent and pin the consumed child head; "
+                            "the relation does not accept the result or authorize another execution"
+                        ],
+                        "consumer": binding["consumer"],
+                        "assumes": binding["assumes"],
+                        "reuse_results": binding.get("reuse_results", []),
+                        "live_executions": live_executions,
+                        "related_prs": related_prs,
+                        "stacked_relations": stack,
+                        "potential_downstream": len(affected),
+                        "newly_ready_if_proved": 0,
+                    })
+                    continue
             lifecycle = metadata(p.get("body") or "", "Lifecycle")
             action = "resume" if p["draft"] and lifecycle == ["IN_PROGRESS"] else "resolve-blocker" if p["draft"] and lifecycle == ["BLOCKED"] else "review" if not p["draft"] and lifecycle == ["REVIEW"] else "reconcile-lifecycle"
             reasons = [f"existing #{p['number']}"]
+            if reconciled_source_forks:
+                reasons.append("exact source-fork comparison still matches its pinned PR heads and child set; "
+                               "child evidence remains result-only and unaccepted by the parent")
             for other in prs:
                 other_id = task_for_pr(other)
                 other_binding = model["contract"]["task_bindings"].get(other_id)
@@ -777,11 +916,14 @@ def next_actions(model: dict, prs: list[dict] | None) -> list[dict]:
         affected = set().union(*(downstream(model, n) for n in binding["obligations"]))
         after = evaluate(model, set(state["closed"]) | set(binding["obligations"]))["closed"]
         newly_ready = readiness(model, after) - before - set(binding["obligations"])
-        actions.append({"task": tid, "action": action, "reasons": reasons,
-                        "consumer": binding["consumer"], "assumes": binding["assumes"],
-                        "reuse_results": binding.get("reuse_results", []),
-                        "live_executions": live_executions,
-                        "potential_downstream": len(affected), "newly_ready_if_proved": len(newly_ready)})
+        row = {"task": tid, "action": action, "reasons": reasons,
+               "consumer": binding["consumer"], "assumes": binding["assumes"],
+               "reuse_results": binding.get("reuse_results", []),
+               "live_executions": live_executions,
+               "potential_downstream": len(affected), "newly_ready_if_proved": len(newly_ready)}
+        if reconciled_source_forks:
+            row["reconciled_source_forks"] = reconciled_source_forks
+        actions.append(row)
     priority = {"resolve-overlap": 0, "reconcile-stacked-source": 0, "reconcile-source-fork": 0,
                 "review": 1, "resolve-blocker": 2,
                 "resume": 3, "eligible-for-control": 4}
@@ -812,14 +954,19 @@ def ready_obligations(model: dict, actions: list[dict]) -> list[dict]:
             if name not in binding["obligations"] or task_id not in action_by_task:
                 continue
             action = action_by_task[task_id]
-            bindings.append({"task": task_id, "action": action["action"],
-                             "live_executions": action["live_executions"]})
+            row = {"task": task_id, "action": action["action"],
+                   "live_executions": action["live_executions"]}
+            if action.get("reconciled_source_forks"):
+                row["reconciled_source_forks"] = action["reconciled_source_forks"]
+            bindings.append(row)
 
         proposed = sorted(proposed_by_obligation.get(name, []))
         task_actions = {item["action"] for item in bindings}
         next_step = "register-or-reopen-through-control"
         if proposed:
             next_step = "independent-scoped-review"
+        elif any(item.get("reconciled_source_forks") for item in bindings):
+            next_step = "resume-parent-after-source-fork-comparison"
         elif "reconcile-stacked-source" in task_actions:
             next_step = "reconcile-stacked-source-through-control"
         elif "reconcile-source-fork" in task_actions:

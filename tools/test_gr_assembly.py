@@ -530,6 +530,94 @@ class AssemblyTests(unittest.TestCase):
         ready = next(item for item in gr.ready_obligations(self.model(), actions) if item["obligation"] == "A")
         self.assertEqual(ready["next_step"], "reconcile-source-fork-through-control")
 
+    def register_source_fork_reconciliation(self, parent, children):
+        result_id = self.add_result(f"source-fork-result-{len(self.intake['results'])}")
+        self.contract["source_fork_reconciliations"] = [{
+            "id": "fixture-source-fork-reconciliation",
+            "parent": gr._live_fork_pin(parent),
+            "children": [{
+                "pin": gr._live_fork_pin(child),
+                "merge_base_sha": "f" * 40,
+                "child_only_delta": [{
+                    "status": "A", "path": f"child-{child['number']}.md",
+                    "git_blob": "e" * 40, "present_at_parent_head": False,
+                }],
+                "result_ids": [result_id],
+            } for child in sorted(children, key=lambda item: item["number"])],
+            "disposition": "comparison-complete-result-only",
+            "reopen_when": ["parent/child identity or descendant set changes"],
+        }]
+
+    def source_fork_fixture(self):
+        parent = self.pr(branch="exp/gr-parent", head_sha="c" * 40)
+        children = [
+            self.pr(number=13, branch="research/gr-source-a", base_branch="exp/gr-parent",
+                    base_sha="b" * 40, head_sha="d" * 40),
+            self.pr(number=14, branch="research/gr-source-b", base_branch="exp/gr-parent",
+                    base_sha="b" * 40, head_sha="e" * 40),
+        ]
+        for child in children:
+            child["body"] = "Independent research-only source.\n"
+        return parent, children
+
+    def test_exact_source_fork_reconciliation_suppresses_only_the_repeated_comparison(self):
+        parent, children = self.source_fork_fixture()
+        self.register_source_fork_reconciliation(parent, children)
+        model = self.model()
+        actions = gr.next_actions(model, [parent, *children])
+        row = next(item for item in actions if item["task"] == TASK)
+        self.assertEqual(row["action"], "resume")
+        record = row["reconciled_source_forks"][0]
+        self.assertEqual(record["id"], "fixture-source-fork-reconciliation")
+        self.assertEqual([child["number"] for child in record["children"]], [13, 14])
+        self.assertTrue(record["children_remain_unaccepted"])
+        self.assertEqual(record["disposition"], "comparison-complete-result-only")
+        ready = next(item for item in gr.ready_obligations(model, actions) if item["obligation"] == "A")
+        self.assertEqual(ready["next_step"], "resume-parent-after-source-fork-comparison")
+
+    def test_source_fork_reconciliation_reopens_on_changed_parent_or_child_head(self):
+        for changed in ("parent", "child"):
+            with self.subTest(changed=changed):
+                parent, children = self.source_fork_fixture()
+                self.register_source_fork_reconciliation(parent, children)
+                if changed == "parent":
+                    parent["head"]["sha"] = "9" * 40
+                else:
+                    children[0]["head"]["sha"] = "8" * 40
+                model = self.model()
+                row = next(item for item in gr.next_actions(model, [parent, *children]) if item["task"] == TASK)
+                self.assertEqual(row["action"], "reconcile-source-fork")
+
+    def test_source_fork_reconciliation_reopens_on_child_base_or_task_change(self):
+        for changed in ("base", "task"):
+            with self.subTest(changed=changed):
+                parent, children = self.source_fork_fixture()
+                self.register_source_fork_reconciliation(parent, children)
+                if changed == "base":
+                    children[0]["base"]["sha"] = "7" * 40
+                else:
+                    children[0]["body"] = "Task: `WRK-A4D-TWO`\n"
+                model = self.model()
+                row = next(item for item in gr.next_actions(model, [parent, *children]) if item["task"] == TASK)
+                self.assertEqual(row["action"], "reconcile-source-fork")
+
+    def test_source_fork_reconciliation_reopens_when_a_new_descendant_appears(self):
+        parent, children = self.source_fork_fixture()
+        self.register_source_fork_reconciliation(parent, children)
+        new_child = self.pr(number=15, branch="research/gr-source-c", base_branch="exp/gr-parent",
+                            base_sha="b" * 40, head_sha="6" * 40)
+        new_child["body"] = "A new research-only source.\n"
+        model = self.model()
+        row = next(item for item in gr.next_actions(model, [parent, *children, new_child]) if item["task"] == TASK)
+        self.assertEqual(row["action"], "reconcile-source-fork")
+
+    def test_source_fork_record_cannot_promote_comparison_to_acceptance(self):
+        parent, children = self.source_fork_fixture()
+        self.register_source_fork_reconciliation(parent, children)
+        self.contract["source_fork_reconciliations"][0]["disposition"] = "accepted"
+        with self.assertRaisesRegex(gr.AssemblyError, "cannot accept child evidence"):
+            self.model()
+
     def test_unowned_ready_obligation_requires_control_registration(self):
         self.contract["task_bindings"].pop(TASK)
         self.queue["tasks"] = [task for task in self.queue["tasks"] if task["id"] != TASK]

@@ -951,5 +951,122 @@
       "right": "Two independently moving unknown filters kappa2 and kappa3",
       "reason": "The exact rescaling symmetry with independent filters preserves every stage-labelled probability while changing absolute scalar Book pressure."
     }
+  ],
+  "source_fork_reconciliations": [
+    {
+      "id": "joint-response-source-fork-2026-10-20",
+      "parent": {
+        "number": 334,
+        "head": {
+          "repository": "gvakhrushev/d0_15",
+          "branch": "exp/a4d-joint-response-continuation-2026-10-16",
+          "sha": "0e1849bd7bf6a87e9731801206fd5ccd1041bb63"
+        },
+        "base": {
+          "repository": "gvakhrushev/d0_15",
+          "branch": "main",
+          "sha": "5d23e90af703efee7f0deb24517d3ead4780fdfc"
+        },
+        "task_fields": [
+          "EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE"
+        ]
+      },
+      "children": [
+        {
+          "pin": {
+            "number": 363,
+            "head": {
+              "repository": "gvakhrushev/d0_15",
+              "branch": "research/a4d-conditional-gram-serial-source-20261017",
+              "sha": "33911defe1607b94a895b455d3357ad2f3039e12"
+            },
+            "base": {
+              "repository": "gvakhrushev/d0_15",
+              "branch": "exp/a4d-joint-response-continuation-2026-10-16",
+              "sha": "8050cefe2600972408a904c3004d85a0a7720c68"
+            },
+            "task_fields": []
+          },
+          "merge_base_sha": "ba055b63f01c43bf01118ef4d2f155e907dd912d",
+          "child_only_delta": [
+            {
+              "status": "A",
+              "path": "02_REGISTRY/research/A4D_NATIVE_CONDITIONAL_GRAM_SERIAL_SOURCE_RATIO_2026_10_17.md",
+              "git_blob": "2ac5708d0d70ea3362c2004ae93a825b4cb0765a",
+              "present_at_parent_head": false
+            },
+            {
+              "status": "A",
+              "path": "02_REGISTRY/research/A4D_NATIVE_ORTHOGONAL_EXIT_DOUBLE_CLOCK_EINSTEIN_SOURCE_2026_10_17.md",
+              "git_blob": "29b056c1d5adae7391c4acbe2f91f6a596231170",
+              "present_at_parent_head": false
+            },
+            {
+              "status": "A",
+              "path": "02_REGISTRY/research/sources/d0_native_conditional_gram_2026-10-17/check_orthogonal_exit.py",
+              "git_blob": "21f6d010ebc816b4ccc8a21169a732a25a532cd8",
+              "present_at_parent_head": false
+            },
+            {
+              "status": "A",
+              "path": "02_REGISTRY/research/sources/d0_native_conditional_gram_2026-10-17/check_serial_gram.py",
+              "git_blob": "76ff19513381d08788c5ed70ae682b5d986df2da",
+              "present_at_parent_head": false
+            }
+          ],
+          "result_ids": [
+            "serial-conditional-gram-source-ratio-obstruction",
+            "orthogonal-exit-conditional-gram-einstein-source-ratio"
+          ]
+        },
+        {
+          "pin": {
+            "number": 380,
+            "head": {
+              "repository": "gvakhrushev/d0_15",
+              "branch": "research/book-triangle-odds-gr-interface-2026-10-19",
+              "sha": "3ffff0fb76aa86132139c647c883baf240afe3a1"
+            },
+            "base": {
+              "repository": "gvakhrushev/d0_15",
+              "branch": "exp/a4d-joint-response-continuation-2026-10-16",
+              "sha": "518e620efa1ca1e516aa1b78592c87d61723f0b9"
+            },
+            "task_fields": []
+          },
+          "merge_base_sha": "03bd6fed84830e72e55341cc38215c880d287357",
+          "child_only_delta": [
+            {
+              "status": "A",
+              "path": "02_REGISTRY/research/A4D_BOOK_TRIANGLE_ODDS_960_COST_COMPATIBILITY_AND_CARTAN_HESSIAN_BOUNDARY_2026_10_19.md",
+              "git_blob": "bb5731054b56ff26e7c94ad3572581f2850cfc4b",
+              "present_at_parent_head": false
+            },
+            {
+              "status": "A",
+              "path": "02_REGISTRY/research/sources/d0_book_triangle_odds_2026-10-19/check_d0_triangle_cost_interface.py",
+              "git_blob": "d31fc257c2d8c62589f75d059a7fa5040b27ddcb",
+              "present_at_parent_head": false
+            },
+            {
+              "status": "A",
+              "path": "02_REGISTRY/research/sources/d0_book_triangle_odds_2026-10-19/check_saved_quartic_normal_form.py",
+              "git_blob": "e5d2f8315821943d6cf4fba3bfd75de3fdc2a44d",
+              "present_at_parent_head": false
+            }
+          ],
+          "result_ids": [
+            "original-book-triangle-odds-960-affine-pressure-no-go",
+            "stored-quartic-vector-literal-profile-mismatch"
+          ]
+        }
+      ],
+      "disposition": "comparison-complete-result-only",
+      "reopen_when": [
+        "The registered parent head or base branch/SHA changes.",
+        "Any recorded child head, base branch/SHA or Task metadata changes.",
+        "The open same-repository descendant set changes or a new child branch appears."
+      ]
+    }
   ]
 }
