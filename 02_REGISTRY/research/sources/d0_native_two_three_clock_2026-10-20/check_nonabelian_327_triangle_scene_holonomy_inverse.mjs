@@ -218,6 +218,24 @@ function runOne(prime){
     "original rooted 3/4 entire scene connection inverse failed");
   require(rooted3+rooted4===327,"did not cover every original chord");
 
+  // SHARP finite source-depth necessity, with a fixed ORIGINAL
+  // root-0 Lorentz reference and NO nonroot co-transport:
+  // all root 2-loops backtrack => I; all root 3-loops are
+  // 0 -> B -> C -> 0 (or reversed), so ONLY the 143 BC
+  // chord SO matrices are observable, rank≤143×6=858.
+  // The 104 AC and 80 AB group chord matrices (184×6=1104)
+  // are invisible even NONLINEARLY until a true root 4-loop
+  // (e.g. 0 -> 9 -> 1 -> 20 -> 0) is admitted. Take exactly
+  // one chord U_(1,20)=exp(r N2) and ALL other edges I:
+  // every root n≤3 holonomy equals I; that root n4 is
+  // genuinely nonidentity. No artificial new graph edge.
+  const rootShortMaxLie=143*6,rootMissing=184*6;
+  const hidden=EXP(0,times(1,inv(1024)));
+  require(!equal(hidden,I())&&rootShortMaxLie===858&&
+    rootMissing===1104&&rootShortMaxLie+rootMissing===327*6,
+    "sharp rooted depth-four nonabelian tomography theorem failed");
+
+
   const backtracks=originalEdges.reduce((n,[u,v])=>{
     require(equal(M(chords.get(u+","+v),chords.get(v+","+u)),I()),
       "original 2-step inverse-edge holonomy not identity");
@@ -255,6 +273,9 @@ function runOne(prime){
     independentRootedThreeStepLoopWords:rooted3,
     independentRootedFourStepLoopWords:rooted4,
     rootedHistoryGroupMismatches:rootedMismatch,
+    rootShortTwoThreeMaxLieDimensions:rootShortMaxLie,
+    exactlyMissingUntilFourStepLieDimensions:rootMissing,
+    fourStepThresholdSharpWithOriginalHiddenACExample:true,
     allGroupMultiplicationsExactModPrime:true,
     originalNullLorentzEtaPreserved:true
   };
