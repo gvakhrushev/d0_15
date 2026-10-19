@@ -6,7 +6,7 @@ Inputs: the original Book03 all-walks Cost−Info scalar macro-action and unique
 
 ## 1. One original 718-edge cost bias; exact cubic for every closed walk
 
-For every actual directed edge of the K(9,11,13) scene put d_uv=+1 along 9→11→13→9 and −1 in the reverse direction; s_uv(ε)=1+ε d_uv, Kε_uv=φ^(−s_uv). This is an existing primitive *cost-fiber probe*, **NOT YET** a proven full128/coframe/Lorentz variation. Let ℓ=lnφ, p=φ^−1, q=e^(−ℓε). On the constant-by-zone carrier the exact 3×3 transfer is
+For every actual directed edge of the K(9,11,13) scene put d_uv=+1 along 9→11→13→9 and −1 in the reverse direction; s_uv(ε)=1+ε d_uv, Kε_uv=φ^(−s_uv). Positive transfer weights exist for all real ε; strict nonnegative primitive edge Costs require |ε|<1. This is an existing primitive *cost-fiber probe*, **NOT YET** a proven full128/coframe/Lorentz variation. Let ℓ=lnφ, p=φ^−1, q=e^(−ℓε). On the constant-by-zone carrier the exact 3×3 transfer is
 
     p [[0,11q,13/q],[9/q,0,13q],[9q,11/q,0]].
 
