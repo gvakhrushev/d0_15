@@ -1490,6 +1490,67 @@
         }
       ],
       "reported_state": "Scoped incompatibility of one naive sum; actual D0 composition law remains open."
+    },
+    {
+      "id": "serial-conditional-gram-source-ratio-obstruction",
+      "owner": "conditional-Gram source research owner #363; unreviewed child fork",
+      "statement": "For the declared serial construction B1^n V4 B0^n, fixed positive clocks b,d and independent endpoint/bridge source jets, the leading endpoint and bridge curvature coefficients have ratio 1+d/(2b)>1, while the comparison target requires 1. At b=d=1 the coefficients are (3/4,3/4,-1/2), so a matched common static sum masks the independent-jet mismatch. This is an obstruction only to this serial factorization.",
+      "interface": "conditional-exit-gram-source-v1",
+      "outcome": "negative",
+      "kind": "analytic",
+      "scope_level": "family",
+      "hypotheses": {
+        "serial_factorization": "Use the owner’s two endpoint heat filters and one serial 4D no-mark middle factor B1^n V4 B0^n.",
+        "independent_jets": "The two endpoint and central 4D Hodge-source jets are varied independently in one common Hilbert chart.",
+        "clock": "The endpoint and bridge durations are fixed positive multiples b*beta and d*beta under the owner’s uniform C1 heat expansion.",
+        "comparison": "The target source comparison requires endpoint-to-bridge curvature coefficient ratio one."
+      },
+      "evidence": [
+        {
+          "ref": "33911defe1607b94a895b455d3357ad2f3039e12",
+          "path": "02_REGISTRY/research/A4D_NATIVE_CONDITIONAL_GRAM_SERIAL_SOURCE_RATIO_2026_10_17.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_conditional_exit_grams_2026-10-17/serial_source_ratio.md",
+          "sha256": "4d71ce9b0ac60533d04d4d67d91b3ff43fc249fa8b354aa71c9f92dd052784c8"
+        },
+        {
+          "ref": "33911defe1607b94a895b455d3357ad2f3039e12",
+          "path": "02_REGISTRY/research/sources/d0_native_conditional_gram_2026-10-17/check_serial_gram.py",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_conditional_exit_grams_2026-10-17/check_serial_gram.py",
+          "sha256": "cbf7e2fa30b4e5a95c7b0af75867c4e2f7b07b2c56ec275f4097429054f20cc4"
+        }
+      ],
+      "reported_state": "Conditional serial-architecture obstruction from #363; no all-programme or physical D0 no-go."
+    },
+    {
+      "id": "orthogonal-exit-conditional-gram-einstein-source-ratio",
+      "owner": "conditional-exit source research owner #363; unreviewed child fork",
+      "statement": "Under the declared orthogonally tagged complete-exit construction and fixed-window C1/macroscopic heat hypotheses, the mathematical logdet comparison has three independent leading curvature-source coefficients (1,1,-1), matching the stated conditional Einstein ratio; its separate vacuum-volume coefficient is 3/2. The owner’s analytic derivation uses the full exit rows, while the numerical companion checks the Gram identities with a positive square-root-complement proxy. No literal fullStep admission, compulsory Cost-Info selection or original raw #216 conclusion follows.",
+      "interface": "conditional-exit-gram-source-v1",
+      "outcome": "positive",
+      "kind": "analytic",
+      "scope_level": "family",
+      "hypotheses": {
+        "complete_exits": "All complementary exit labels are retained in the owner’s orthogonally tagged comparison; no failure branch is discarded.",
+        "golden_controller": "Use the stated original Golden amplitudes and field-independent z=p^2 controller split.",
+        "independent_jets": "Endpoint and 4D bridge Hodge-source jets are independent within the declared fixed Hilbert chart.",
+        "fixed_window": "Assume the owner’s uniform C1 heat expansion on the fixed invariant window and the separate macroscopic long-wave limit.",
+        "clock": "The shared central 4D no-mark duration is twice each endpoint duration."
+      },
+      "evidence": [
+        {
+          "ref": "33911defe1607b94a895b455d3357ad2f3039e12",
+          "path": "02_REGISTRY/research/A4D_NATIVE_ORTHOGONAL_EXIT_DOUBLE_CLOCK_EINSTEIN_SOURCE_2026_10_17.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_conditional_exit_grams_2026-10-17/orthogonal_exit_source.md",
+          "sha256": "74ac35440478b9a241797922c79c734b28986c64aa2835473fac02504fb820fa"
+        },
+        {
+          "ref": "33911defe1607b94a895b455d3357ad2f3039e12",
+          "path": "02_REGISTRY/research/sources/d0_native_conditional_gram_2026-10-17/check_orthogonal_exit.py",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_conditional_exit_grams_2026-10-17/check_orthogonal_exit.py",
+          "sha256": "7ca0d9d725d9f84ab18b12c307bc7d325cfd5a335f7ee20b1270fd559b04bb3e"
+        }
+      ],
+      "reported_state": "Conditional analytic source-ratio construction from open Draft #363. Its four child files are absent from current #334 head; PR guards currently fail at body metadata validation. Result-only."
     }
   ],
   "applications": [
