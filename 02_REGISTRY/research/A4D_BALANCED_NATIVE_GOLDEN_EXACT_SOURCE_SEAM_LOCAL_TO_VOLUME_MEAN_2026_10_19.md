@@ -188,6 +188,44 @@ for the admitted connection/source chart, with the real volume/clock source and 
 
 **Logical precision:** the same-source equality (11) is **EXACT at each finite h** and transfers the already proved exact finite Brinkmann roots of the SPECIFIED J2 instrument. The general full (15) is a smooth-source result for the SPECIFIED volume-quantile J2 instrument, conditional on the real native query/compiler and appropriate smooth convergence. Neither result asserts the historical D0 H+J+R+Book PREP/clock/full Cost−Info has chosen this instrument or that original raw all-site #216 has been proved. The available finite C¹ differential equality at f=q=0 does not imply global finite equality of the two actions, general finite roots away from null, or unconstrained original preparation stationarity.
 
+### 2.3. EXACT MIDPOINT quadrature with true native weights: O(h²) moving-volume C¹ source, not only weak golden equidistribution
+
+Balanced selection gives a stronger identity for ANY prescribed field-sensitive test values \(F_\vartheta(y)\), not only f/q at a root:
+\[
+\boxed{
+\frac1{\sigma_{n,N,L}}
+\sum_{x}\sum_{w\in S_{n,x}}\omega_{n,N}
+ F_\vartheta(T_\vartheta(c_{x(w)}))
+=\frac1{L^4}\sum_{x\in\Lambda_L}F_\vartheta(T_\vartheta(c_x)).
+}
+\tag{16}
+\]
+This is **literal finite original REGULAR-weight equality**: exactly m true original words per cell, all with weight \(\omega_{n,N}\), no invented probability or approximate address law. The unselected native histories remain original fixed-baseline outcomes; (16) concerns the activated source relative to its true mass. Thus the right side is the ordinary composite 4D MIDPOINT quadrature for \(F_\vartheta\circ T_\vartheta\) on the code cube, even though the underlying raw native F/R centres \(X_w\) are highly nonuniform.
+
+The already-owned triangular quantile obeys \((T_\vartheta)_*(du)=\rho_\vartheta(y)\,dy,\ \rho_\vartheta=J_\vartheta/V_\vartheta\). Hence its EXACT continuum integral is
+\[
+\int_{[0,1]^4}F_\vartheta(T_\vartheta(u))\,du
+=\frac1{V_\vartheta}\int J_\vartheta(y)F_\vartheta(y)\,dy.
+\tag{17}
+\]
+For the **genuine local query operands** \(F_\vartheta=r_\vartheta+\lambda_\sigma q_\vartheta\) with \(r_\vartheta={\cal P}_{\star,h}/J_\vartheta\) (finite Role star DENSITY with its original h⁻⁴ normalization), this is exactly \(\Gamma_h=A_h/V_\vartheta\), with \(A_h=\int[{\cal P}_{\star,h}+\lambda_\sigma J_\vartheta q_\vartheta]\). No source term is dropped: at generic off-shell θ the first derivative of the right side includes the physical volume \(D J\), denominator \(DV\), and transport \(DT_\vartheta\).
+
+If the real field chart has uniform \(C^2\) spatial bounds on \(F_\vartheta\circ T_\vartheta\), and the SAME bounds after one actual field derivative, the standard one-cell symmetric Taylor remainder proves
+\[
+\boxed{
+\left\|D_\vartheta\!
+ \left[
+ \frac1{L^4}\sum_x F_\vartheta(T_\vartheta(c_x))
+ -\frac1{V_\vartheta}\int J_\vartheta F_\vartheta
+ \right]\right\|
+\le C_{\cal K}\,h^2 .
+}
+\tag{18}
+\]
+**Proof:** on each cube centred at \(c_x\), the linear Taylor part integrates to zero; the second-order remainder is ≤\(C h²\) times cell volume, and summing L⁴ cells yields \(C h²\). Differentiate the composite \(F_\vartheta\circ T_\vartheta\) in θ first and repeat exactly the same argument; its derivative includes genuine \(DT,DJ,DV\) and is bounded by the hypothesis. This is a genuine \(C^1\)-in-FIELDS source estimate, not only equality of mean values. It needs no spatial strong equidistribution rate for the selected raw centres because their **canonical macroscopic query representative** is already the original site's midpoint and the native weights have been **balanced exactly**. The finite Role stencil→continuum Lorentz star itself can still contribute O(h), as can physical query/compiler and regular-multiplicity errors. Equation (18) is the sharper INDEPENDENT sampling contribution, not an unjustified O(h²) global GR error.
+
+For fixed source-chart bounds and the actual selected positive native mass (5), (18) composes with the owned old §6.48–6.52 determinant Taylor/source and CAR16/full-Cut compiler in ONE balanced volume-mean J₂ programme. At the common null locus the stronger exact source equality (10)–(13) applies for every finite h; away from it the moving-volume terms are real and converge to the full general nonlinear Einstein–scalar mean Euler with \(+\Gamma g_{\mu\nu}/2\), not to the old local inverse-PF pressure-deficient action. This is exactly why the two distinct offshell queries must NOT be globally equated.
+
 ## 3. Why the Fibonacci-divisibility trick is NOT the central step
 
 One COULD choose n so \(F_{n+1}\) is divisible by \(L^4\) (e.g. choose \(n+1\) to be a Pisano period modulo \(L^4\)), then reassign lexicographically ranked exact-cost words to macro cells in equal groups. This guarantees equal weights but **moves original microaddresses**: it would require a new readdressing/transport operation with its own physically derived price and source. Our construction uses neither that reassignment nor such a long divisibility depth. We activate exactly m of the words ALREADY INSIDE each native cell and preserve every inactive event, obtaining exact balance **and the original microaddress-to-cell map simultaneously**. The choice of which words to activate is fixed before varying the physical fields and is one legitimate finite old-LEFT diagonal effect; it is a new specified controller whose physical execution/selection still needs to be proved.
