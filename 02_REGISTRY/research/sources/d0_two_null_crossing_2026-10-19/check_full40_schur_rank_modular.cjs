@@ -54,9 +54,10 @@ function pairCo(a,mu,u,v,R){
 }
 const dot=(z,p)=>p.reduce((ans,x,j)=>muln(ans,pow(z[j],x)),1);
 const shift=(p,dir,k=1)=>p.map((v,i)=>i===dir?v+k:v);
-function linkLinear(z,axis,gindex){
+const binom=(k,n)=>{let x=1;for(let j=0;j<n;j++)x=muln(x,muln(md(k-j),inv(j+1)));return x;};
+function linkLinear(z,axis,gindex,order=null){
   const pt=[0,0,0,0],out=Array(24).fill(0);
-  const field=(p,k)=>k===axis?sc(gens[gindex],dot(z,p)):O();
+  const field=(p,k)=>k===axis?sc(gens[gindex],order===null?dot(z,p):binom(z.reduce((v,x,i)=>v+x*p[i],0),order)):O();
   for(let dir=0;dir<4;dir++)for(let j=0;j<6;j++){
     let val=0,X=gens[j];
     for(let [r,t] of pairs){
@@ -199,5 +200,40 @@ function audit(){
     limitations:"Finite field witness only on chosen z; no general exact characteristic variety equation, physical native Cost/Info, nonlinear complete root or periodic refinement."
   };
 }
-module.exports={audit,Ssymbol,matrices,gauss,prime};
+
+/* Exact Taylor coefficient on z_mu=(1+t)^k_mu in F1009[t]/t^(n+1).
+ * Uses the ORIGINAL all-40 six-based source, including both adjacent faces.
+ * This evaluator avoids root-of-unity sampling and permits arbitrary integer
+ * null-ray vectors without Laurent aliasing.
+ */
+function flatTaylorBlocks(k,d){
+  const L=Array.from({length:24},()=>Array(24).fill(0)),
+        B=Array.from({length:24},()=>Array(16).fill(0)),
+        C=Array.from({length:16},()=>Array(24).fill(0));
+  for(let j=0;j<24;j++){
+    let col=linkLinear(k,Math.floor(j/6),j%6,d);
+    for(let i=0;i<24;i++)L[i][j]=col[i];
+  }
+  if(!d)return {L,B,C};
+  for(let dir=0;dir<4;dir++)for(let j=0;j<6;j++)for(let [r,t]of pairs){
+    if(dir!==r&&dir!==t)continue;
+    const other=dir===r?t:r,[u,v]=[0,1,2,3].filter(x=>x!==r&&x!==t);
+    const fac=muln(muln(sign(r,t,u,v),dir===r?1:-1),md(-binom(-k[other],d)));
+    for(let a=0;a<4;a++)for(let mu=0;mu<4;mu++)
+      B[6*dir+j][4*a+mu]=addn(B[6*dir+j][4*a+mu],
+        muln(fac,pairCo(a,mu,u,v,gens[j])));
+  }
+  for(let [r,t]of pairs){
+    const [u,v]=[0,1,2,3].filter(x=>x!==r&&x!==t);
+    for(let dir of [r,t])for(let j=0;j<6;j++){
+      const fac=muln(sign(r,t,u,v),md(dir===r?-binom(k[t],d):binom(k[r],d)));
+      for(let a=0;a<4;a++)for(let mu=0;mu<4;mu++)
+        C[4*a+mu][6*dir+j]=addn(C[4*a+mu][6*dir+j],
+          muln(fac,pairCo(a,mu,u,v,gens[j])));
+    }
+  }
+  return {L,B,C};
+}
+
+module.exports={audit,Ssymbol,matrices,gauss,prime,flatTaylorBlocks};
 if(require.main===module)console.log(JSON.stringify(audit(),null,2));
