@@ -1,0 +1,9 @@
+PASS full Ricci cubic cancellation / native five-point Poisson (1, 0) (0, 1)
+PASS full Ricci cubic cancellation / native five-point Poisson (0, 1) (1, 0)
+PASS full Ricci cubic cancellation / native five-point Poisson (1, 1) (1, -1)
+PASS full Ricci cubic cancellation / native five-point Poisson (1, 2) (-2, 1)
+PASS symbolic arbitrary real p,q,kappa: A=(p,q), B=kappa*(-q,p)
+PASS general orthogonal cubic Ricci and source-forced metric corrections
+PASS exact five-point Laplacian identities for symbolic slopes and h
+SCOPE: continuum Einstein degree<=3 + finite scalar Poisson only;
+finite third-order 24 Cartan/16 solder and full native Cost-Info are OPEN.
