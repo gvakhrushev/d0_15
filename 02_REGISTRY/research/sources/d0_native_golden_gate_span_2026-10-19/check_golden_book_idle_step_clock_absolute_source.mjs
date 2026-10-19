@@ -109,7 +109,7 @@ for(let m of [2,3,4,5]){
     genuineMixedDepthDifference:change.odds-clock0.odds});
 }
 function flatExcess(t){return t===0?0:Math.exp(-1/(t*t))}
-const smooth=[.1,.2,.3].map(t=>({
+const smooth=[.2,.3,.4].map(t=>({
   t,flatExcess:flatExcess(t),
   clockOddsDifferent:clockOdds(flatExcess(t)).odds!==clock0.odds
 }));
