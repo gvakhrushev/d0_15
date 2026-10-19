@@ -468,12 +468,3 @@ ecdd31abb52c94e9f2a157a80c7c49a6f5ac31aa
 The checker reports exact operator identities only. It does not certify
 native field admission, the remaining \(S_{coeff},S_{heat},S_{terminal}\)
 terms, matter Ward identity, refinement, or a physical Einstein equation.
-
-## 8. Cost−Info junction convention
-
-The next exact G0 boundary is recorded in
-[A4D_NATIVE_COST_INFO_BOUNDARY.md](A4D_NATIVE_COST_INFO_BOUNDARY.md). It
-formalizes the shared-vertex defect under a literal vertex sum and the full
-endpoint-coboundary family under a transition-event allocation. This connects
-the Book 03 Cost−Info decomposition to this complete additive edge-action
-fiber; it does not identify the physical Info event or field variation.
