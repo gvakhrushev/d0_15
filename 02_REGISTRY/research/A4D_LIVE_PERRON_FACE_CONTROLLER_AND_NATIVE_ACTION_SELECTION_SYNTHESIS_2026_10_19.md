@@ -7,6 +7,14 @@
 **New replay:** \`sources/d0_native_streaming_face_controller_2026-10-19/check_streaming_face_address_and_endpoint_gauge.mjs\`.  
 **Status:** GR_closed=false; real Book/H+J+R price selection, original G0 live prefix/face decoder admission, true Role-to-scene physical apparatus, clock/work/prep and uniform stationary recovery OPEN.
 
+## ROUTE UPDATE / OWNER CORRECTION (after newer #334 Golden LEFT intake)
+
+This native K(9,11,13) scene-loop face-address construction is **OPTIONAL**, NOT a prerequisite for D0→GR. The real original Golden LEFT has already-owned 4D microaddresses X_w and site cells, complete same-cost balanced FR/RF READY suffixes, and a positive refining active mass \`2p^3 phi/sqrt(5)≈0.3416407865\`, vastly stronger than the optional rare scene-loop selected mass. The exact balanced Golden LEFT two-tick J₂ / moving-volume mean-J₂ theorem already identifies ALL 16 coframe + 24 proper Lorentz links + 2 matter field first source rows on the genuine nonflat common-null family, with no newly invented graph→Role label map. The exact Golden-AF radial coframe theorem gives the all-order same-action selected geometry on this REAL address carrier.
+
+Therefore the **critical physical G0 test uses Golden LEFT, NOT the extra scene based-walk address list**. The proof in §§1–4 remains a valid independent finite address-capacity/endpoint-gauge/oldRIGHT-commutator CONTROL, but its use as a mandatory four-dimensional address compiler would add a needless physical selector/cost problem. K(9,11,13) remains the separate full scene/Book Cost–Info register inside each native Golden-addressed cut. Any use of this OPTIONAL scene code must preserve the original correct Role/scene carrier separation and account for its tiny subcut mass.
+
+The surviving useful constructive concept is **LIVE ACTIVE prefix before immutable archive**, now to be applied to the EXISTING Golden LEFT F/R history and its real site map. That focused consuming result belongs to the next owner \`A4D_GOLDEN_LEFT_LIVE_PREFIX_BEFORE_OLD_RIGHT_G0_ACTUATION_2026_10_19.md\`; it must not be interpreted as proof literal fullStep generates a live duplicate or selects the complete paid action.
+
 ## 0. What has genuinely changed
 
 The 2026-10-19 native science eliminates TWO formerly suspected mathematical reasons for failure: the nonlinear geometric sector is no longer a perturbative Einstein-coefficient conjecture (for selected Golden-AF \`Phi\`, EXACT finite action equivalence to original star via an invertible sitewise coframe radial map), and a complete native-Golden-normalized CAR/Julia flag experiment can mathematically read all six original Lorentz directions at nonvanishing rare-clock Fisher strength.
