@@ -81,12 +81,12 @@ const Jmatrix=-choleskyLogdet(good);
 nearly(Jmatrix,Jexact,1e-12);
 const nullVector=pi.map(Math.sqrt),Fnull=F.map(row=>row.reduce((s,x,j)=>s+x*nullVector[j],0));
 if(Math.max(...Fnull.map(Math.abs))>1e-12)throw Error("stationary null mode is not preserved");
-function initialEffect(theta,t){
+function initialEffect(theta,t,commonShift=0){
  const K=Array.from({length:n},()=>new Float64Array(n));
  const info=Array.from({length:n},(_,v)=>.23*(v%5)+.07*Math.sin((v+1)*t*.34));
  for(const[u,v]of edges){
   const extra=(u===0&&v===9)?t:0;
-  const cost=2+extra;
+  const cost=2+commonShift+extra;
   K[u][v]=Math.exp(-ell*(cost-theta*info[u]-(1-theta)*info[v]));
  }
  function pf(trans){
@@ -109,9 +109,19 @@ function initialEffect(theta,t){
  const Fnow=identity();
  for(let i=0;i<n;i++)for(let j=0;j<n;j++)for(let k=0;k<n;k++)Fnow[i][j]-=Tnow[k][i]*Tnow[k][j];
  const goodNow=Fnow.map((row,i)=>Float64Array.from(row,(v,j)=>(i===j?1:0)-z*v));
- return{J:-choleskyLogdet(goodNow),stat,P:Pnow,F:Fnow};
+ return{J:-choleskyLogdet(goodNow),stat,P:Pnow,F:Fnow,lambda:rv.lambda};
 }
 const thetaList=[-.6,.25,1.3],sceneTheta=thetaList.map(theta=>initialEffect(theta,.15));
+const commonShift=.17,unshifted=initialEffect(.25,.15),shifted=initialEffect(.25,.15,commonShift);
+nearly(shifted.lambda/unshifted.lambda,Math.exp(-ell*commonShift),1e-13);
+nearly(shifted.J,unshifted.J,1e-12);
+for(let i=0;i<n;i++){
+ nearly(shifted.stat[i],unshifted.stat[i],1e-12);
+ for(let j=0;j<n;j++){
+  nearly(shifted.P[i][j],unshifted.P[i][j],1e-12);
+  nearly(shifted.F[i][j],unshifted.F[i][j],1e-12);
+ }
+}
 for(let i=1;i<sceneTheta.length;i++){
  nearly(sceneTheta[i].J,sceneTheta[0].J,1e-11);
  for(let u=0;u<n;u++){
@@ -129,6 +139,8 @@ console.log(JSON.stringify({
  feedback:{rank:32,archiveMultiplicity30:true,stationaryKernel:1,activeEigenvalues:feig,
     Jclosed:Jexact,Jmatrix,goodProbability:Math.exp(-Jexact)},
  genuineCostPerturbation:{t:.15,costBase:2,oneEdgePerturbationDerivative:derivative,
-    thetaConventionValues:thetaList,thetaFeedbackInvariant:true},
+    thetaConventionValues:thetaList,thetaFeedbackInvariant:true,uniformCostShift:commonShift,
+    pressureChange:Math.log(shifted.lambda/unshifted.lambda)/ell,
+    feedbackCostShiftChange:shifted.J-unshifted.J},
  boundary:"F_var is canonical for a specified Perron edge-record experiment; not yet identified with Book03 selected F_N, original 128 Kraus, CAR16 or physical GR."
 },null,2));
