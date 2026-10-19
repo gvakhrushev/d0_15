@@ -89,13 +89,15 @@ function transversePolarizations(k){
  }
  return out;
 }
-function oneRay(k){
+function oneRay(k,shiftDir=1){
+ if(![0,1].includes(shiftDir))throw Error("null exponent shift must be u or v");
  const [S2,S3,S4]=schurTaylor(k);
  if(gauss(S2).rank!==4)throw Error("continuum principal null rank is not4: "+k);
  // S2(k)=-C1(k) L0^(-1) B1(k) is EXACTLY quadratic in k.
  // Differentiate it directly; do not recompute two 24x24 complete
  // Schur series at k±e_v. This is algebraically the same derivative.
- const k1=flatTaylorBlocks(k,1),ev=flatTaylorBlocks([0,1,0,0],1);
+ const unit=Array.from({length:4},(_,i)=>+(i===shiftDir));
+ const k1=flatTaylorBlocks(k,1),ev=flatTaylorBlocks(unit,1);
  const L0=flatTaylorBlocks(k,0).L;
  const joined=k1.B.map((row,i)=>[...row,...ev.B[i]]);
  const solved=gauss(L0,joined);
@@ -123,7 +125,7 @@ function oneRay(k){
  }
  if(out[0].gamma_mod_p!==out[1].gamma_mod_p)
   throw Error("finite oblique polarization splitting at "+k);
- return {k,plus:out[0],cross:out[1]};
+ return {k,shiftDir,plus:out[0],cross:out[1]};
 }
 function audit(){
  const rays=[
