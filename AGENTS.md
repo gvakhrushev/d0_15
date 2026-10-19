@@ -22,7 +22,7 @@ Start by reading:
 If the task is absent from `main`, check open GitHub PRs before creating
 anything. It may already be executing. Do not create a duplicate execution.
 
-Use `python tools/task_dispatch.py TASK-ID` for live resolution, including when
+Use `python3 tools/task_dispatch.py TASK-ID` for live resolution, including when
 the task is absent locally. An offline printout is unverified planning, not
 authorization to create a competing execution. Read only the task's inputs and
 the relevant current route; do not begin every session by auditing the corpus.
@@ -55,7 +55,7 @@ task-status registry is needed. The [gravity assembly](02_REGISTRY/gr_assembly/R
 records the missing composition information: exact obligations, interface
 versions, applications and scoped prior attempts. For a named task, the normal
 dispatch command prints its interface and consumer; for route selection use
-`python tools/gr_assembly.py next`. Read only that result's relevant owners.
+`python3 tools/gr_assembly.py next`. Read only that result's relevant owners.
 A certificate is useful when it resolves that step;
 do not produce rank catalogues, audit memos or formalizations without a consumer.
 
@@ -75,7 +75,7 @@ acceptance; only `start_requires` constrain an otherwise independent conditional
 lemma's start. Live WIP and existing executions still apply. Lifecycle start
 and Ready checks enforce these boundaries.
 
-At a result checkpoint, use `python tools/gr_assembly.py template TASK-ID` and
+At a result checkpoint, use `python3 tools/gr_assembly.py template TASK-ID` and
 record the precise parent substitution. An independent pinned acceptance binds
 the result, target, all hypotheses, interface maps and proof method. A PASS,
 historical graph status, scoped no-go or copied pointer cannot close a positive
@@ -143,7 +143,7 @@ Task: TASK-ID
 Read 00_WORK/tasks/TASK-ID.md on main and execute GitHub-first.
 ```
 
-Use `python tools/task_dispatch.py TASK-ID` to print the canonical launch text.
+Use `python3 tools/task_dispatch.py TASK-ID` to print the canonical launch text.
 
 ## 4. Triage before creating a task
 
@@ -240,8 +240,8 @@ Preferred order:
 Do not formalize each candidate separately when a generic parameterized theorem
 can classify the whole family.
 
-Use `python tools/lean_task_build.py narrow ...` while iterating and one final
-`python tools/lean_task_build.py final` only after narrow targets are green.
+Use `python3 tools/lean_task_build.py narrow ...` while iterating and one final
+`python3 tools/lean_task_build.py final` only after narrow targets are green.
 
 ## 7. Scientific status discipline
 

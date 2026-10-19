@@ -660,8 +660,16 @@ class AssemblyTests(unittest.TestCase):
     def test_generated_view_mutation_is_detected(self):
         self.assertEqual(self.cli("render")[0], 0)
         self.assertEqual(self.cli("render", "--check")[0], 0)
+        view = (self.directory / "VIEW.md").read_text()
+        self.assertIn("python3 tools/gr_assembly.py next", view)
+        self.assertNotIn("python tools/", view)
         (self.directory / "VIEW.md").write_text("Fabricated closure\n")
         self.assertEqual(self.cli("render", "--check")[0], 2)
+
+    def test_dispatch_context_uses_available_python3_command(self):
+        context = gr.context(self.model(), TASK)
+        self.assertIn("Check intake: python3 tools/gr_assembly.py template", context)
+        self.assertNotIn("Check intake: python tools/", context)
 
     def test_query_commands_leave_all_source_bytes_unchanged(self):
         self.save()

@@ -11,15 +11,15 @@ existing authorities. No graph label by itself promotes a scientific claim.
 
 ```bash
 # A named task: existing execution, exact interface, assumptions and consumer.
-python tools/task_dispatch.py TASK-ID
+python3 tools/task_dispatch.py TASK-ID
 
 # Select work: live owners, scoped intake and conditional readiness.
-python tools/gr_assembly.py next
+python3 tools/gr_assembly.py next
 
 # Read only the relevant missing inputs and previous results.
-python tools/gr_assembly.py why positive_gr
-python tools/gr_assembly.py search source
-python tools/gr_assembly.py attempts volume
+python3 tools/gr_assembly.py why positive_gr
+python3 tools/gr_assembly.py search source
+python3 tools/gr_assembly.py attempts volume
 ```
 
 `next` and the dispatcher each obtain one live PR snapshot. Use the one that
@@ -110,9 +110,9 @@ task label or carrier/interface alone does not reopen the old question.
 ## Record a result and its actual use
 
 ```bash
-python tools/gr_assembly.py template TASK-ID
-python tools/gr_assembly.py check
-python tools/gr_assembly.py application-digest APPLICATION-ID
+python3 tools/gr_assembly.py template TASK-ID
+python3 tools/gr_assembly.py check
+python3 tools/gr_assembly.py application-digest APPLICATION-ID
 ```
 
 Use the template in the existing result/intake workflow; fill it into
@@ -189,7 +189,7 @@ include both in an attempt. A reviewed obstruction applies to that frozen
 question. Use `application-digest ATTEMPT-ID` to obtain its acceptance marker.
 
 ```bash
-python tools/gr_assembly.py impact --base origin/main --ref HEAD
+python3 tools/gr_assembly.py impact --base origin/main --ref HEAD
 ```
 
 `impact` reuses `research_input_closure.select` for changed scientific files,
@@ -209,11 +209,11 @@ with a named consumer; keep independent work moving.
 ## Verify a change
 
 ```bash
-python tools/test_gr_assembly.py
-python tools/gr_assembly.py check
-python tools/gr_assembly.py render
-python tools/gr_assembly.py render --check
-python tools/validate_agent_protocol.py
+python3 tools/test_gr_assembly.py
+python3 tools/gr_assembly.py check
+python3 tools/gr_assembly.py render
+python3 tools/gr_assembly.py render --check
+python3 tools/validate_agent_protocol.py
 ```
 
 The CI guard covers graph cycles, missing references, stale source/acceptance
