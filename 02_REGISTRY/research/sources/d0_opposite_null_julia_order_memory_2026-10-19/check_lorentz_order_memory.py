@@ -143,13 +143,13 @@ def signed(M,alpha):
     q,_,_=contrast(M,alpha)
     return [q[2*i]-q[2*i+1] for i in range(6)]
 
-def complete_book(M,alpha,splitting=True):
+def complete_book(M,alpha,splitting=True,split_index=4,split_plus=True):
     q,rest,fail=contrast(M,alpha)
     probs=q+[rest,fail]
     # Split ONLY the J+ event as an additional ORIGINAL Golden p/p²
     # operation; BOTH original F/R results are kept in the full history.
     if splitting:
-        idx=2*4
+        idx=2*split_index+(0 if split_plus else 1)
         probs=probs[:idx]+[P*probs[idx],P*P*probs[idx]]+probs[idx+1:]
     require(all(x>0 for x in probs),"Shannon full-support cut required")
     require(abs(sum(probs)-1)<1e-12,"full count/record not normalized")
@@ -237,12 +237,72 @@ def book_order_price():
     print("PASS full-support mean-Info price has nonzero original Golden order source")
     print("NOT a proof that the ORIGINAL compulsory fine D0 Book action selects this coarse cut")
 
+def epsilon4(z):
+    if len(set(z))<4:return 0
+    sign=1
+    for i in range(4):
+        for j in range(i+1,4):
+            if z[i]>z[j]:sign=-sign
+    return sign
+
+def palatini_pair(e,u,v,R):
+    C=mm(R,ETA);value=0.
+    for a in range(4):
+        for b in range(a+1,4):
+            c,d=[k for k in range(4) if k not in (a,b)]
+            value+=epsilon4((a,b,c,d))*(e[a][u]*e[b][v]-e[b][u]*e[a][v])*C[c][d]
+    return value
+
+def facewise_palatini_first_jet():
+    """Compare each flat-frame Palatini face jet to its unique split event.
+
+    This is only a candidate linearized source comparison. Its positive
+    field-independent h^2/c normalization is computed, not D0-derived.
+    """
+    h=.125;e=[[h if a==b else 0. for b in range(4)] for a in range(4)]
+    expected_generator={(0,1):5,(0,2):2,(0,3):3,
+                        (1,2):0,(1,3):1,(2,3):4}
+    scale=h*h/(H_GOLDEN/(48*sqrt(2)*ELL))
+    t=1e-5
+    for r,s in combinations(range(4),2):
+        u,v=[k for k in range(4) if k not in (r,s)]
+        sign=epsilon4((r,s,u,v))
+        target=[sign*palatini_pair(e,u,v,g) for g in G]
+        j=expected_generator[(r,s)]
+        near(target[j],-h*h,1e-12)
+        for b in range(6):
+            near(target[b],-h*h if b==j else 0.,1e-12)
+        # Split the negative outcome of the unique complementary generator.
+        # Its full complete mean-Shannon gradient is -c in exactly that mode.
+        price_gradient=[]
+        for g in G:
+            plus=complete_book(expm(g,t),.5,split_index=j,split_plus=False)
+            minus=complete_book(expm(g,-t),.5,split_index=j,split_plus=False)
+            price_gradient.append((plus-minus)/(2*t))
+        for b in range(6):
+            near(scale*price_gradient[b],target[b],1e-9)
+        # Among the twelve single-event Golden splits, only this one has the
+        # target direction and sign; all share the same positive scale.
+        for k in range(6):
+            for is_plus in (True,False):
+                if k==j and not is_plus:continue
+                wrong=[(complete_book(expm(g,t),.5,split_index=k,split_plus=is_plus)
+                        -complete_book(expm(g,-t),.5,split_index=k,split_plus=is_plus))/(2*t)
+                       for g in G]
+                mismatch=sum(abs(scale*wrong[b]-target[b]) for b in range(6))
+                require(mismatch>1e-6,
+                        "a second Golden event matches the Palatini face jet")
+    print("FACEWISE CANDIDATE: each of six flat Palatini face jets maps to one unique negative complementary POVM event")
+    print(f"FACEWISE CANDIDATE: common positive normalization h^2/c={scale:.12g}")
+    print("CONDITIONAL ONLY: native face-label selection, h^2/c price normalization, transported-frame cost and nonlinear full40 equality remain open")
+
 def main():
     algebra()
     six_direction_tomography()
     exact_order()
     original_golden_pointer()
     book_order_price()
+    facewise_palatini_first_jet()
     print("PASS mathematical positive full16 Lorentz-order memory, no new gravity action")
     print("SCOPE addressed active-Julia/Naimark readout; native compulsory actuation and GR OPEN")
 

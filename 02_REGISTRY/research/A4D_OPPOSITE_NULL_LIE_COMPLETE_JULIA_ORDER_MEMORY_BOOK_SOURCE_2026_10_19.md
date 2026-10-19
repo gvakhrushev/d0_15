@@ -305,6 +305,52 @@ The "one test" here means one 13-effect POVM **type** on each actual provided ba
 
 The full Lie closure from the four genuine opposite null flows is also a **constructive group-generation principle**: their generated Lie algebra is all \(\mathfrak{so}(1,3)\), so the subgroup reachable by finite products of their two-sided continuously parametrized flows has full connected Lie orbit \(SO^+(1,3)\). This does NOT supply a bounded native Golden/CNOT word length, smooth all-six source parameters at zero (commutator coordinates start at quadratic order), or an autonomous physical gate-selector; the exact positive Julia readout above supplies the missing **informational** six-direction inverse in one tested chart.
 
+### 5.2. A facewise Golden event matches the flat Palatini first jet, with an explicit missing scale
+
+There is a sharper candidate than using the same distinguished \(J+\) split on
+every plaquette. At the flat coframe \(e=hI_4\), each of the six original
+Palatini face densities has a first curvature jet in exactly one complementary
+generator of the six-element Lie basis. In basis order
+\((N_2,N_3,\bar N_2,\bar N_3,J,B)\), the exact map is
+\[
+\begin{array}{c|cccccc}
+\text{face }(r,t)&(0,1)&(0,2)&(0,3)&(1,2)&(1,3)&(2,3)\\
+\hline
+\text{generator}&B&\bar N_2&\bar N_3&N_2&N_3&J
+\end{array}
+\]
+and every nonzero coefficient is \(-h^2\). This follows directly by
+differentiating the original six-based-plaquette \(\star\)-density at
+\(P=I_4\), before any continuum limit.
+
+For the positive Julia tester, split the **negative** pointer of the mapped
+generator with the same original Golden \((p,p^2)\) coin, retaining both new
+labels and every other outcome. Its complete mean-Shannon first source is
+\(-c_{\rm Sh}\) in that generator, zero in the other five, where
+\[
+c_{\rm Sh}=\frac{h_2(p)}{48\sqrt2\,\log\varphi}>0.
+\]
+Thus, at this flat coframe and only at this first jet, all six face sources
+match exactly after the common positive per-face normalization
+\[
+\kappa_h=\frac{h^2}{c_{\rm Sh}}
+=\frac{48\sqrt2\,\log\varphi}{h_2(p)}h^2.
+\]
+At \(h=1/8\), \(\kappa_h=0.767500910403\). Among the twelve possible single
+Golden splits, the mapped negative pointer is the unique one with the required
+direction and sign on each face. The existing checker now verifies the six
+face/generator matches and that uniqueness.
+
+This is a concrete inverse-reconstruction candidate for the Palatini
+first-source covector, not a derivation of it from D0. The native programme
+must still force the face-to-pointer assignment and \(\kappa_h\), pay for
+preparation, observer transport and every retained record, and keep the same
+price under arbitrary coframe variations. The test establishes neither
+nonlinear equality of the full entropy price and the star action nor a
+uniform refinement estimate. Its next use is to test whether the actual native
+complete source supplies this exact six-face jet and scale without adding a
+selector from outside D0.
+
 ## 6. Finite compilation and the narrow remaining physics
 
 The exact all-grades contraction and complete real Julia/Naimark circuit belong to the owned mathematical **generous all-active orthogonal** class, with all new flags/4-dimensional Choi source actually declared and not deleted. The known addressed real Golden G/CNOT compiler approximates any such fixed real orthogonal finite-dimensional gate once its ACTUAL addressing/preparation/access interface is supplied; it retains ancilla leakage and has a whole-state error. The true group link data \(A,B\) must be computable from the same original finite Lorentz plaquette/coframe source and not supplied as a free geometric oracle.

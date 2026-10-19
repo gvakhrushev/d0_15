@@ -1524,7 +1524,7 @@ two-sided-null Cartan crossing with separate Ricci and Weyl channels. These
 are instrument and geometry candidates for the existing same-carrier
 source test. They do not identify the mandatory full Cost−Info price or solve
 the original 40 finite Euler rows; the integrated limits and next test are in
-[strategic synthesis](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md), §§7.52–7.53.
+[strategic synthesis](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md), §§7.52–7.54.
 
 For the execution rhythm, checks and handoff, use [00_WORK/README.md](../../00_WORK/README.md).
 The historical task lists below are **not launch instructions**.
