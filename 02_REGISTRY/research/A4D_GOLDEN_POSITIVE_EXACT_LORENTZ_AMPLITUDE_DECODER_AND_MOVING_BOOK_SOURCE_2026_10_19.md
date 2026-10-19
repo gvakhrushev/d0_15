@@ -146,3 +146,50 @@ with no freedom in p, six marker coefficients, choice of Born normalization, or 
 - **Resource:** a single original unconditioned 6-step scene loop is VERY rare (~3e−10); the canonical Golden LEFT balanced programme carries real macroscopic support ~0.2317 at n=20 L=4 but still needs a genuinely allowed addressed controller and all repeated sample/work/copy/clock costs. No infinite-refinement physical limit is asserted.
 
 **Reproduction:** [all six exact finite amplitude square-root markers, complete 16-outcome Golden p flags, true moving native 33-scene one-sided path sources, one-sided Cost>=1 tests](sources/d0_native_book_nonlinear_nonabelian_2026-10-19/check_exact_golden_choy_amplitude_decoder_all6.mjs). Independently executed 107 local positive groups. No new full16 matrix root eigensolver in this wrapper: it consumes the owned original complete CAR16 contraction/Choi theorem; trace-level GG/GB/BG/BB probabilities are independently computed on its invariant grade1×ref4 Choi input. GR_closed=false.
+
+
+## 7. FINALLY ONE COMPLETE positive experiment, not two unrelated sector calculations: 718 × 16 native Fisher Ward
+
+The same conditional native-class law (5) yields a sharper COMPLETE FULL-OUTCOME statement. On the original entire 33-state one-sided native Perron carrier, retain ALL 718 actual directed-edge labels and ALL 16 strictly positive original two-fresh Golden-p CAR Choi outcomes at each label. There are exactly
+\[
+\boxed{718\times16=11\,488}
+\]
+complete supported outcomes, all retained; the original path-state probability and conditional marked CAR probability have no independent fitted renormalizer.
+
+At the original flat Lorentz chart, in each native conditional CAR instrument the 12 signed marked outcomes have original probabilities \(p^4/24\), the success-rest has \(p^4/2\), the two single failures \(p^3\), and the double failure \(p^2\). Under original Lie control \(\xi_a G_a\), the ONLY nonzero FIRST conditional probabilities are the corresponding two marker events:
+\[
+\partial_{\xi_a}q_{a\pm}
+=\pm\frac{p^4}{12\sqrt2},\qquad
+\partial_{\xi_a}q_{\rm other}=0 .
+\]
+The exact native conditional Fisher is therefore
+\[
+\boxed{\mathcal I^{\rm CAR16}_{ab}
+=\frac{p^4}{6}\,\delta_{ab}
+=0.02431633895838592\ldots\,\delta_{ab}.}\tag{10}
+\]
+No success-postselection or missing failures are used; all sixteen events contribute their honest normalization.
+
+Now vary the ORIGINAL primitive Cost of every native AB edge by a one-sided nonnegative excess \(t\ge0\). The true ORIGINAL one-sided Perron \(\alpha_u(t)=r_u(t)/\sum_vr_v(t)\) and Markov \(P_{uv}(t)\) both move. Their complete native directed-edge probability is \(w_{uv}(t)=\alpha_u(t)P_{uv}(t)\), NOT the stationary bulk \(\pi_uP_{uv}\), and its genuinely moving preparation source is retained. Attach to every original directed edge the **mathematical** reversal-compatible local original proper-Lorentz marker \(U_{uv}(\xi)=\exp[\operatorname{sgn}(v-u)\sum_a\xi_aG_a]\), with actual reverse \(U_{vu}=U_{uv}^{-1}\); this is a test of the already existing full native Julia/Choi class, **NOT** a declaration that original 33-scene edges are original 4D Role links. The positive complete one-run law is
+\[
+Q_{uv,r}(t,\xi)=w_{uv}(t)\,q_r(U_{uv}(\xi)).
+\]
+The EXACT conditional score Ward \(\sum_rq_rD_\xi\ln q_r=0\) makes the first-source cross terms zero, *including* the original moving initial preparation \(D\alpha\). The full 7×7 Fisher tensor at \((t,\xi)=(0,0)\) is
+\[
+\boxed{
+\mathcal I^{(718\times16)}=
+\operatorname{diag}\left(
+\mathcal I_{\mathrm{one-sided\ Book\ history}},\;
+\frac{p^4}{6}I_6
+\right).
+}\tag{11}
+\]
+A one-sided physical Cost>=1 forward finite difference gives for this declared complete historical controller \(\mathcal I_{\mathrm{one-sided\ Book}}\approx0.06521827858366\) (the actual first-step whole one-sided prior+conditional transition Fisher, not the DIFFERENT stationary bulk 0.06242685 or the Hessian of a different history cut). Six CAR entries are \(0.024316338958386\), offdiagonal scalar/Lorentz cross **exactly zero** at the source. This is genuinely **ONE full 11,488-outcome positive recorded instrument**, rather than asserting a direct sum of mathematically unrelated archived and CAR Fisher matrices.
+
+It does NOT prove the physical Book03 action's Hessian equals this Fisher. Its rigorous significance is now precisely that D0's existing mathematical positive native scene+Golden memory can, in one complete joint distribution, distinguish a real primitive scalar Cost direction AND all six original noncompact proper Lorentz directions with no loss or distortion of either scalar marginal, and source separation is forced by TOTAL probability rather than a compensating term. The source-to-gravitational-action map remains compulsory, not defined by this statistical independence.
+
+**Independent exact full-support replay:** [entire 718×16 joint Golden/Book one-run Fisher](sources/d0_native_book_nonlinear_nonabelian_2026-10-19/check_one_run_718x16_full_fisher_source.mjs), 84 locally executed verification groups. The mathematical conditional edge-Lorentz map is explicitly TEST-ONLY and is not identified with 4D Role physical actuation.
+
+### Physical GR discriminator after this integration
+
+What remains open is now one **named factual input**, not lack of a native-class instrument: Does literal M1/G0 original GoldenCoherentMemory.fullStep plus true Book03 H+J+R compulsory Cost−Info supply the addressed conditional CAR/Choi reference/controller on the ALREADY EXISTING Golden LEFT four-dimensional Role site, paying its own preparation, flags, source-normalizer and clock WITHOUT oldRIGHT control? If yes, use (2),(6) and the already-owned exact all40 Palatini geometric change-of-variables to compare its entire native **FIRST Euler** with the true Golden AF/J₂+CAR first source. If no, native observability is not the missing piece; the primitive admissibility/cost selector is. No designed Einstein counterterm or fitted cosmological constant may fill the gap. GR_closed=false.
