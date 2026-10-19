@@ -5138,5 +5138,59 @@ link, CAR/matter, observer, preparation, clock, and work tangent with
 \(a_hD\sum_x\widehat f_x+b_hD\sum_x q_x\). Choosing labels or costs merely
 to make that equality true would be an external selector. Until this map,
 source identity, remaining Euler equations, and periodic recovery are proved,
-the finite lift is a conditional route to the composition, not D0\(\to\)GR;
+the finite lift is a conditional route to the composition, not D0 → GR;
 `GR_closed=false`.
+
+### 7.66. The original 24 link rows have an exact inverse on every polynomial degree
+
+The new [original-Cartan inverse checker](sources/d0_two_null_crossing_2026-10-19/check_polynomial_cartan_inverse.cjs)
+derives the flat linear link source from the original six based plaquettes,
+including both adjacent faces and the odd-curvature derivative. It verifies
+all 576 entries of the homogeneous (24\times24) block (M), the exact
+identity
+
+\[
+M^4-5M^2+4I=0,
+\qquad M^{-1}=\frac{5M-M^3}{4},
+\]
+
+and 140 degree-lowering controls through polynomial degree four. The
+all-degree conclusion follows from the stencil structure, not from those
+finite controls: on the unwrapped chart, write the link-linear operator as
+\(L=\sum_\delta A_\delta T_\delta\), where (A_\delta) are constant
+24-component matrices, (T_\delta f(x)=f(x+\delta)), and
+\(M=\sum_\delta A_\delta\). Then
+\(N=L-M=\sum_\delta A_\delta(T_\delta-I)\) lowers total polynomial degree
+by at least one, because every translation difference cancels the leading
+homogeneous term. On (P_d^{24}),
+\((M^{-1}N)^{d+1}=0\), so the exact inverse is the finite sum
+
+\[
+L^{-1}\big|_{P_d^{24}}
+=\sum_{j=0}^{d}(-M^{-1}N)^jM^{-1}.
+\]
+
+This yields a useful all-order formal consequence. Let the coframe be any
+prescribed formal deformation of the flat coframe whose coefficient fields
+are polynomials in (x), and let \(\mathcal F_{\rm link}(e,\omega)=0\) be
+the same analytic 24-row based-plaquette Lorentz-link Euler system near the
+flat point. At amplitude order (n), after the lower link coefficients
+\(\omega_1,\ldots,\omega_{n-1}) have been chosen, the remaining equation
+is \(L\omega_n=-R_n\), where (R_n) is a finite-degree polynomial source
+built from the prescribed coframe and those lower orders. The inverse above
+gives exactly one polynomial \(\omega_n\). Induction therefore produces a
+unique formal link-stationary series for every such prescribed polynomial
+coframe series. This is not an external connection ansatz or a fitted
+coefficient; it is inversion of the original link Euler operator.
+
+The positive result removes repeated low-order link-solvability searches on
+this unwrapped polynomial carrier. It does **not** solve the remaining 16
+coframe Euler rows, show that their reduced equation is Einstein to all
+orders, or give convergence of the formal series. The inverse norm is not
+bounded here uniformly in polynomial degree or mesh scale. Periodic fields
+are outside (P_d), so there is no periodic finite root or boundary-collar
+recovery in this result. Physical admission, complete Cost--Info selection,
+preparation/clock/work stationarity, and the original raw (h^{-2}) terminal
+remain open. The next mathematical target is therefore the reduced coframe
+source on this same formal branch; the next physical target remains the
+same-carrier source identity from §7.63. `GR_closed=false`.

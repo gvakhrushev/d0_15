@@ -33,7 +33,7 @@ and [cubic continuum Ricci/Poisson completion](sources/d0_two_null_crossing_2026
 [exact cubic finite link lift and coframe source](sources/d0_two_null_crossing_2026-10-19/check_cubic_finite_cartan_range.py),
 [full-source §§6.79–6.82](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
 and its separate finite-root continuation [§§8.29–8.36](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md).
-Continue from strategic [§§7.63–7.65](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md):
+Continue from strategic [§§7.63–7.66](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md):
 the scalar scene-Perron source is exact only after its complete history carrier
 is identified; a conditional 264-state K(9,11,13) × Q₈ lift can preserve
 terminal order memory. The original full128 instrument now has an exact
@@ -42,6 +42,12 @@ finite background (its one-round probability response has rank 6), but the
 physical field-to-link rule and compulsory Cost--Info selection remain open.
 The next composition is the actual memory-resolved native source against the
 existing full star/CAR covector, with preparation, clock and work included.
+Separately, the [original 24-link Cartan checker](sources/d0_two_null_crossing_2026-10-19/check_polynomial_cartan_inverse.cjs)
+verifies the exact constant block and finite degree controls; strategic §7.66
+uses its translation-stencil structure to solve the original 24 link equations
+formally at every finite polynomial degree for a prescribed polynomial
+coframe on an unwrapped chart. The 16 reduced coframe rows, periodic recovery,
+and convergence remain open.
 
 The new owner composes the corrected same two-tick AF×scene feedback, the
 original exact 40-row Lorentz-star table and full CAR16 Hodge matter into a
