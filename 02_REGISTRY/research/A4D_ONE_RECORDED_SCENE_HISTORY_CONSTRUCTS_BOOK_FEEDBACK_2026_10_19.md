@@ -160,6 +160,46 @@ Under the genuine original Perron process, the ergodic average of the complete o
 \]
 This provides a numerical falsifier of the wrong scene transition law using the exact same native alphabet and ONE continuing observation stream, instead of an untestable "choose the stationary prior" stipulation. No definite finite-N significance threshold is claimed without its sampling/confidence analysis.
 
+### 4.1. EXACT one-history Cost−Info score: a genuine finite physical first source, not a frozen empirical histogram
+
+There is an even sharper identity on the **literal original one-sided Perron cylinder**, before taking any stationary bulk limit. For ANY differentiable positive original scene Cost−Info edge transfer \(K_y(u,v)=\varphi^{-s_y(u,v)}\), with real Perron pair \(K_y r_y=\rho_y r_y,\ \sum_vr_y(v)=1\), its canonical one-sided complete path probability is
+\[
+\boxed{
+\mathbb P_y(\gamma=v_0\to\cdots\to v_N)
+=\rho_y^{-N}\Big(\prod_{t=0}^{N-1}K_y(v_t,v_{t+1})\Big)r_y(v_N).
+}\tag{15a}
+\]
+This is an exact **weighted extension of the already LEAN-owned original one-sided all-walks trace** \(\tau_N(\gamma)=\rho^{-N}r(v_N)\). There is no invented stationary initial distribution; it follows by telescoping the TRUE \(r(v_0)\) start and the TRUE Perron/Doob transitions.
+
+Differentiate the **entire probability of that same completed recorded path** in ANY real smooth native Cost/Info field direction V:
+\[
+\boxed{
+\mathscr S_N(\gamma)[V]
+:=D\log\mathbb P_y(\gamma)[V]
+=-\ell\sum_{e\in\gamma}D s_y(e)[V]
+ -N D\log\rho_y[V]
+ +D\log r_y(v_N)[V],
+\quad\ell=\log\varphi.
+}\tag{15b}
+\]
+The Perron eigenvalue and moving terminal record terms are physical SOURCE TERMS and cannot be suppressed by calling them normalization. With another smooth positive but unnormalized Perron-vector convention, the additional \(-D\log\sum_vr_y(v)\) term must be included; formula (15b) uses the explicitly normalized native owner \(\sum r=1\).
+
+Because (15a) is a COMPLETE normalized law over **ALL** original allowed length-N paths, \(\mathbb E_y\mathscr S_N=0\). Therefore for ANY fixed **field-independent function of ONE complete recorded path** \(O_N(\gamma)\), with all failed/terminal labels retained and finite N,
+\[
+\boxed{
+D_y\mathbb E_y O_N[V]
+=\mathbb E_y\!\left[
+ (O_N-\mathbb E_yO_N)\mathscr S_N[V]\right].
+}\tag{15c}
+\]
+This is exact at finite N with no independent run, no fitted π and no free Einstein tensor: it expresses the real statistical response as covariance with the SAME history's own Cost−Info score, including its entire Perron normalization/terminal contribution. One can take \(O_N\) to be a fixed baseline-calibrated innovation variance, an encoded return flag, a complete functional of the transition counts, or a finite deterministic feedback estimator with a convention for paths not visiting all vertices.
+
+**Crucial derivative discipline:** for fixed observed labels \(\widehat J_N(\gamma)\), its pointwise derivative with respect to y is zero; the physical first source is (15c), because the **probability of the path changes**. Neither a naive frozen empirical histogram derivative nor the identity \(\widehat F_N\to F\) by itself proves \(D_yJ_N\to D_yJ\). The genuine analytic operator derivative (16) remains the directly proven C¹ source of the canonical F/J; convergence of derivatives of expected finite-sample estimators requires a separate uniform smooth finite-state Markov mixing argument. The exact finite score identity is already useful for a direct operational self-verification test on the actual registered scene.
+
+**Direct full-scene 15,708-path control, not a toy graph:** perturb only the original 9–11 undirected edge-Cost class by y, keep all true native original vertices and all other edges. Enumerate every one of the **15,708** real length-two histories and observe a fixed baseline one-step prediction-error square
+\(O_2=(f(Y_2)-(P_0 f)(Y_1))^2\), \(f(v)=\sin(.3v)+.2\cos(.17v)\).
+At y=0, \(\mathbb E O_2=0.477342252922225\ldots\); direct differentiation of the FULL normalized path ensemble gives \(0.025259982340542\ldots\), while the independent exact score (15b) yields \(0.025259982425863\ldots\), agreeing to \(8.6\times10^{-11}\) with finite-difference step \(10^{-4}\). The score mean is \(<8\times10^{-11}\). This verifies a **NONZERO** field source of a genuine native distinction-loss observable without introducing an independently prepared stationary ensemble or cloning the next state.
+
 ## 5. Physical source, GR and actual status after inspecting the REAL registry
 
 The mathematically constructed **original native Perron path → classical innovation covariance → positive F → complete scalar logdet** is now one literal coherent set of statistical identities, with genuine full old/next labels and an endogenous rather than fitted scene transition/preparation.
