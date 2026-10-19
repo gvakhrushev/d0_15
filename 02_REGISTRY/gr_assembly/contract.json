@@ -343,6 +343,15 @@
       "normalization": "p=p0=phi^-1, a=sqrt(p), q=a^4+p^4=3-4p; the exact archive gap is positive and Delta/2 is approximately 0.03658.",
       "refinement": "The invariant and error floor hold for all finite generated word lengths and all faithful isometric record extensions; no infinite matrix or word class is numerically enumerated.",
       "scope": "A quantitative obstruction only for the stated one-way active-orthogonal plus additive-record class. The class does not exhaust D0; first-odd routing and coherent old-record actuation can leave it. No physical D0 no-go or GR closure is claimed."
+    },
+    "native-actionprotocol-book03-pullback-boundary-v1": {
+      "carrier": "The typed finite VerificationProtocol and ActionProtocol fiber, the original 33-state K(9,11,13) history carrier, and the constrained finite Book03 split Q=I-P with unitary U and fugacity z.",
+      "action": "ActionProtocol requires zero identity cost and a unit lower bound on nonidentity transitions. Book03 feedback is I_fb=-log det(I-z P U* (I-P) U P); its complete mathematical P/U/z variation is stated under the actual complement constraint.",
+      "variations": "All admissible transition-cost profiles are classified. The finite depth-two response varies one directed edge under the diagnostic identification Cost=ActionProtocol.action with fixed Info and memory. The Book03 source includes induced delta Q=-delta P and the fugacity leg.",
+      "source": "The protocol fiber admits nonscaling completions and need not attain its lower bound. Same-endpoint K(9,11,13) return histories have different coefficients under two completions, and a one-edge increase strictly lowers the complete fixed-memory class coefficient. At the operator level, identical base P,U,z,F admit complement-preserving mathematical field lifts with arbitrary real first source.",
+      "normalization": "Finite Book03 path coefficients use the original golden weight exp((Info-Cost)*log(phi)); the feedback uses the original determinant convention and fixed-rank split.",
+      "refinement": "The history response is the complete finite depth-two coefficient only. No all-depth or refining physical execution is established.",
+      "scope": "This identifies missing physical maps from native events/history to Cost, Info, memory and field variations, and from the common geometric/matter state to P,U,z. It is not a no-go for all D0, does not select the compulsory full price, and does not establish matter Ward, physical stationarity or GR."
     }
   },
   "obligations": [

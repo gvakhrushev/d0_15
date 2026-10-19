@@ -1273,6 +1273,79 @@
         }
       ],
       "reported_state": "Pinned to #334 head 0e1849bd7bf6a87e9731801206fd5ccd1041bb63. The exact checker passed with its pinned certificate: 296 controls. It is a restricted-class actuation boundary only; no physical D0 obstruction, accepted native application or positive GR closure is inferred."
+    },
+    {
+      "id": "native-actionprotocol-book03-pullback-boundary",
+      "owner": "CONTROL result from PR #375; indexed as a scoped G0/constitutive boundary",
+      "statement": "The typed ActionProtocol fiber allows arbitrary nonnegative excess above unit cost on every nonidentity transition, so it does not choose relative prices or a field-source map. Under the explicitly diagnostic Cost=ActionProtocol.action identification, two admissible profiles change the same-endpoint K(9,11,13) return coefficient by the exact factor phi, and increasing one edge strictly decreases the complete fixed-memory depth-two coefficient. Separately, the constrained Book03 feedback operator has a complete mathematical P/U/z source, but identical base operator data admit complement-preserving field lifts with arbitrary real first source. The missing physical history-to-price and geometry-to-operator pullbacks remain explicit.",
+      "interface": "native-actionprotocol-book03-pullback-boundary-v1",
+      "outcome": "negative",
+      "kind": "analytic",
+      "scope_level": "family",
+      "hypotheses": {
+        "action_protocol": "Only the owned axioms action(x,x)=0 and action(x,y)>=1 for x!=y are assumed; no additivity, symmetry, composition, refinement or field dependence is added.",
+        "finite_history_response": "The K(9,11,13) depth-two result identifies Cost with ActionProtocol.action only for this diagnostic, holding the path Info and memory assignment fixed. It does not establish physical admission of either completion.",
+        "book03_feedback": "The feedback component uses the literal constrained split Q=I-P and includes all mathematical P, U and z tangents; no physical map from the D0 state to these operators is assumed.",
+        "source_boundary": "Equal base P,Q,U,z,F and action value can have different field derivatives under distinct complement-preserving mathematical lifts. This proves non-identifiability from the operator law alone, not physical freedom of the native programme.",
+        "scope_fence": "No no-go for all D0, complete native price, matter Ward, physical stationarity, curved roots or GR is claimed."
+      },
+      "evidence": [
+        {
+          "ref": "34dc2ddd6cf40803b95cf8afe66f9dd87f0bf22a",
+          "path": "02_REGISTRY/research/A4D_NATIVE_BOOK03_OPERATOR_VARIATION_BOUNDARY.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_actionprotocol_book03_boundary_2026-10-19/owner.md",
+          "sha256": "ecdb60f750cebc10312ea0079973370920da754f08e64a4ad0cf5432768b8f02"
+        },
+        {
+          "ref": "34dc2ddd6cf40803b95cf8afe66f9dd87f0bf22a",
+          "path": "03_FORMALIZATION/D0/Foundation/EndogenousActionQuantum.lean",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_actionprotocol_book03_boundary_2026-10-19/EndogenousActionQuantum.lean",
+          "sha256": "5ca12d6190aca5f75a898e1e7a5c1296a71ed1ff04b963bd3df32f34e8569e94"
+        },
+        {
+          "ref": "34dc2ddd6cf40803b95cf8afe66f9dd87f0bf22a",
+          "path": "03_FORMALIZATION/D0/Research/NativeHistoryActionResponse.lean",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_actionprotocol_book03_boundary_2026-10-19/NativeHistoryActionResponse.lean",
+          "sha256": "fe2664a6815c685ea1477a6421bac433ce3b80e47bc739b266c3a1e29c34446d"
+        },
+        {
+          "ref": "34dc2ddd6cf40803b95cf8afe66f9dd87f0bf22a",
+          "path": "03_FORMALIZATION/D0/Research/GoldenCylinderOneStepBridge.lean",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_actionprotocol_book03_boundary_2026-10-19/GoldenCylinderOneStepBridge.lean",
+          "sha256": "9bb5a92ec6eea4957a0f207865eb3a20097b3709ff49f0d11620f6ca474cd9c0"
+        },
+        {
+          "ref": "34dc2ddd6cf40803b95cf8afe66f9dd87f0bf22a",
+          "path": "02_REGISTRY/research/certificates/a4d_book03_feedback_variation_check.py",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_actionprotocol_book03_boundary_2026-10-19/book03_feedback_variation_check.py",
+          "sha256": "4a801ee871d6a446bb382c10220e171f34e39b23df085e3abdc2afe10b0af952"
+        },
+        {
+          "ref": "34dc2ddd6cf40803b95cf8afe66f9dd87f0bf22a",
+          "path": "02_REGISTRY/research/certificates/a4d_book03_feedback_variation_result.json",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_actionprotocol_book03_boundary_2026-10-19/book03_feedback_variation_result.json",
+          "sha256": "fe61c021c00eaab2011d1a10221e81ac05c896b4ee05ced1ce31013b49c88900"
+        },
+        {
+          "ref": "34dc2ddd6cf40803b95cf8afe66f9dd87f0bf22a",
+          "path": "01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_actionprotocol_book03_boundary_2026-10-19/BOOK_01.md",
+          "sha256": "668fc904b0585cc7fd5175babead5225c22051422c9c64e197d7b0d42d225342"
+        },
+        {
+          "ref": "34dc2ddd6cf40803b95cf8afe66f9dd87f0bf22a",
+          "path": "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_actionprotocol_book03_boundary_2026-10-19/BOOK_03.md",
+          "sha256": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d"
+        },
+        {
+          "ref": "34dc2ddd6cf40803b95cf8afe66f9dd87f0bf22a",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_actionprotocol_book03_boundary_2026-10-19/SOURCE_PINS.json",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_actionprotocol_book03_boundary_2026-10-19/SOURCE_PINS.json",
+          "sha256": "275069941317b6e399d7a01573a61ead1cc9cf5313794388ba2d4f3f0bd13e04"
+        }
+      ],
+      "reported_state": "Pinned to exact open PR #375 head 34dc2ddd6cf40803b95cf8afe66f9dd87f0bf22a. Its guards and Lean build pass. The feedback checker reports PASS_SCOPED_BOOK03_CONSTRAINED_OPERATOR_VARIATION with 20 controls; the Lean path-response result is conditional on the diagnostic cost identification. No application to native-programme-v1 or positive_gr is accepted."
     }
   ],
   "applications": [
