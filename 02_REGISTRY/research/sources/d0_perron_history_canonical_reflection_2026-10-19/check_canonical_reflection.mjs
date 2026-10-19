@@ -65,6 +65,29 @@ const q=edge.map((_,i)=>Math.sin(.23*i)+.4*Math.cos(.71*i)),
 const involutionError=Math.max(...uu.map((v,i)=>Math.abs(v-q[i])));
 const normError=Math.abs(Math.hypot(...u)-Math.hypot(...q));
 if(involutionError>1e-11||normError>1e-11)throw Error("full718 canonical U not orthogonal involution");
+// Literal native depth-two adjacency history, not a chosen positive F.
+const A2=A.map(row=>A[0].map((_,j)=>row.reduce((sum,v,k)=>sum+v*A[k][j],0)));
+const degree=A.map(row=>row.reduce((sum,v)=>sum+v,0));
+const depth2=A2.map(row=>row.reduce((sum,v)=>sum+v,0));
+const totalDepth2=depth2.reduce((sum,v)=>sum+v,0);
+near(A2.reduce((sum,row,i)=>sum+row[i],0),718);
+near(totalDepth2,15708);
+for(let i=0;i<n;i++)near(depth2[i],[502,476,458][zone[i]]);
+// Positive two-successor ORIGINAL native collision observable, complete.
+const fObs=Array.from({length:n},(_,i)=>Math.sin(.11*(i+1))+.2*Math.cos(.37*i));
+const P=A.map((row,i)=>row.map((x,j)=>x*r[j]/(rho*r[i])));
+let conditional=0,pairwise=0;
+for(let i=0;i<n;i++){
+ let m=0,sq=0;
+ for(let j=0;j<n;j++){m+=P[i][j]*fObs[j];sq+=P[i][j]*fObs[j]*fObs[j];}
+ conditional+=pi[i]*(sq-m*m);
+ for(let j=0;j<n;j++)if(P[i][j]>0)for(let l=0;l<n;l++)if(P[i][l]>0)
+  pairwise+=.5*pi[i]*P[i][j]*P[i][l]*(fObs[j]-fObs[l])**2;
+}
+const euclid=pi.map((x,i)=>Math.sqrt(x)*fObs[i]);
+const F=T2.map((row,i)=>row.map((x,j)=>(i===j?1:0)-x));
+const fullQuadratic=euclid.reduce((sum,x,i)=>sum+x*F[i].reduce((s,v,j)=>s+v*euclid[j],0),0);
+near(conditional,pairwise,1e-12);near(pairwise,fullQuadratic,1e-12);
 const other=(-rho+Math.sqrt(rho*rho-4*2574/rho))/2;
 const other2=(-rho-Math.sqrt(rho*rho-4*2574/rho))/2;
 const active=[1-(other/rho)**2,1-(other2/rho)**2];
@@ -101,6 +124,9 @@ console.log(JSON.stringify({
                       full718MapError:maximumMapping,
                       completeOrthogonalInvolutionError:involutionError,
                       normError,changedDirections:32,unchangedDirections:686},
+ nativeHistoryDepth2:{walks:totalDepth2,vertexZones:depth2.filter((_,i)=>[0,9,20].includes(i)),traceAdjacencySq:718,
+                     pairwisePositiveDistinction:pairwise,conditionalVariance:conditional,
+                     fullOperatorQuadratic:fullQuadratic},
  nativeFeedback:{rank:32,positiveArchiveEigenvalue1Multiplicity:30,
                  activeEigenvalues:active,stationaryEigenvalue0Multiplicity:1,
                  fullBookCandidateFeedback:feedback,algebraicDeterminantError:feedback-algebraic},
