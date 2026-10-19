@@ -146,6 +146,25 @@ Consequently there exists NO mapping from signed primitive counts alone to the c
 
 The depth-four appearance of the final boost F is **structurally aligned** with #334's genuinely nontrivial \`[a²b²]\` quartic Cartan work. These are different maps (Lie control-word filtration versus geometric Euler jet), and they must not be identified without a typed operator-to-field map.
 
+## 4.1. Compose with the ALREADY-owned six-direction positive Julia information readout
+
+The existing #334 \`A4D_OPPOSITE_NULL_LIE_COMPLETE_JULIA_ORDER_MEMORY_BOOK_SOURCE_2026_10_19.md\` owns one fixed complete CAR16 × fresh-reference Julia/POVM instrument with genuine positive outcomes and **all failures retained**. On its registered six original Lorentz coordinates \`xi\` it proves
+
+\`\`\`
+D_xi (D1,...,D6)|_(xi=0) = (24 sqrt(2))^-1 I6.
+\`\`\`
+
+In the current narrower basis \`(A,B,C,D,E,F)\`, the six Lie-coordinate transformation differs from the original owner's \`(N2,N3,barN2,barN3,J,B_original)\` by only a signed permutation. Moreover the extraction of row-major matrix rows \`(0,2,3,6,7,11)\` from OUR six Lie basis has determinant +1 (verified independently), so the regular identity-word endpoint determinant in Lie coordinates is exactly the same \`1/26214400000000\` as the flattened minor.
+
+Therefore the mathematical composite \`t -> W(t) -> (single FINAL U Julia tester)\` has at t0 the genuine nonzero full six-source Jacobian
+
+\`\`\`
+|det D_t (D1,...,D6)| =
+     1 / [ 26214400000000 * (24 sqrt(2))^6 ] > 0.
+\`\`\`
+
+This is a full-rank **positive-measurement statistical distinguishability** statement for the final ordered holonomy, with no fitted detector coefficients and no new POVM. The existing #334 owner already proves the actual nonnegative POVM effects and six-direction coefficient; this memo adds the chain-rule composition with the regular two-primitive identity atlas. It does **not** equate a FINAL-U Julia operation to the native execution or cost of all twelve internal primitive gates. That exact process map, flags, oldRIGHT-preservation and resource accounting are the remaining physical question.
+
 ## 5. Whole-GR reverse assembly and one decisive physical gate
 
 A valid end-to-end route would now read:
