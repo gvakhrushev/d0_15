@@ -27,6 +27,7 @@ Current consumer:
 [strategic §§7.25–7.84](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md),
 [microhistory Einstein quotient](A4D_MICROHISTORY_EINSTEIN_QUOTIENT_AND_PRICE_EULER_UNIVERSALITY_2026_10_18.md),
 [arbitrary Brinkmann 40→Poisson→Einstein owner](A4D_ARBITRARY_BRINKMANN_ALL40_CARTAN_DISCRETE_EINSTEIN_2026_10_19.md),
+[two-null regular identity-word reverse synthesis](A4D_TWO_NULL_REGULAR_IDENTITY_WORD_REVERSE_GR_SYNTHESIS_2026_10_19.md),
 [exact crossed-null quadratic all-40 bootstrap](A4D_DOUBLE_NULL_EXACT_FINITE_QUADRATIC_CARTAN_EINSTEIN_BOOTSTRAP_2026_10_19.md)
 and [cubic continuum Ricci/Poisson completion](sources/d0_two_null_crossing_2026-10-19/check_cubic_ricci_poisson.py),
 [quartic full continuum Ricci completion](sources/d0_two_null_crossing_2026-10-19/check_quartic_full_ricci.py),
@@ -990,6 +991,31 @@ all-ten unweighted h^-2 terminal stays OPEN and unchanged. No weak limit
 retires it; no theorem currently makes it a prerequisite of every possible
 macroscopic GR derivation. New agent dispatch waits for a fixed shared
 native/source interface; the present work is the integrator's composition.
+
+The [two-null regular identity-word owner](A4D_TWO_NULL_REGULAR_IDENTITY_WORD_REVERSE_GR_SYNTHESIS_2026_10_19.md)
+now closes a separate kinematic gap. The original flows `A=N2` and
+`B=barN3` generate all of `so(1,3)` by bracket depth four, and a nonzero
+12-operation identity word has a six-rank endpoint Jacobian with exact minor
+`1/26214400000000`. Hence, on a sufficiently fine chart, each prescribed
+smooth Lorentz edge link is locally representable by six varied controls in
+that fixed word. Pulling back the existing `S_star` through this local
+diffeomorphism preserves its 24 link and 16 coframe Euler rows. The same
+owner proves that signed generator totals lose four of the six local
+directions; exact same-count ordered words can have different holonomy. Its
+composition with the existing six-positive Julia readout has a nonzero
+Jacobian, so the ordered geometric transport is locally distinguishable by
+positive outcomes.
+
+This is a representation and readout result, not the physical dynamics.
+The final-`U` tester after the composed word is not the same experiment as
+executing twelve sequential Julia gates. Native admission and pricing of the
+ordered word, all fresh-flag and oldRIGHT/reference branches, and the
+same-history Cost−Info source including coframe, matter, preparation, clock
+and work remain open. The 64-fold four-step normalization is explained by
+the chosen success attenuation, not selected by Book as the native action.
+The next physical gate is to evaluate that complete admitted history on the
+same full tangent and determine whether its source descends to the existing
+`S_star` and independently derived matter source. `GR_closed` remains false.
 
 ### Strategic context and preserved inputs
 
