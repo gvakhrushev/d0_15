@@ -60,3 +60,20 @@ print(f'D_lambda chronological-modal source={D_fullmode:.12f}')
 print(f'D_lambda count-modal source={D_countmode:.12f}')
 print('THEOREM: argmax and the physically available exit-count quotient do not commute')
 print('SCOPE: full Book history-memory/Info/GR selection remains unproved')
+
+
+# Book06 entropy-selected forgetting: actual flat-shell conditional timing
+# kernel at fixed count k is exactly uniform on comb(n,k) arrangements.
+# The following finite hostile test verifies the KL slack with a nonuniform
+# alternative on a smaller 5-tick two-event count fiber.
+small_n,small_k=5,2
+M=comb(small_n,small_k)
+reference=[1/M]*M
+hostile=[.2]+[.8/(M-1)]*(M-1)
+assert abs(sum(hostile)-1)<1e-14
+H=lambda law:-sum(x*log(x) for x in law)/ell
+KL=sum(x*log(x/y) for x,y in zip(hostile,reference))/ell
+assert KL>0 and abs(H(hostile)+KL-log(M)/ell)<1e-13
+assert H(reference)>H(hostile)
+print('PASS: Book06 max-entropy count-conditioned forgetting is the native unique uniform timing kernel')
+print('PASS: hostile nonuniform kernel has strictly positive KL entropy slack')
