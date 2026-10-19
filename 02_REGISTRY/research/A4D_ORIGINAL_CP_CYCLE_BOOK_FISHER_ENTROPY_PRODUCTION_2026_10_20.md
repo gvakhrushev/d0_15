@@ -88,3 +88,28 @@ No claim that this original scalar Book macro-action is the complete physical Bo
 **Single exact parent consumer:** derive an admitted, paid same-history full128/observer/CAR/clock/controller → original directed scene Cost/Info map for *one real* Lorentz/coframe tangent; verify whether its physically selected log-odds has a nonzero CP-cycle component, and if so preserve its already-known dark653 source in the complete joint Hessian. Compare all original 40 Euler rows and refinement only after this typing. Otherwise the CP-source result remains a finite scalar native theorem only; no GR/RAW-216 promotion.
 
 Validation: sources/d0_cp_book_fdt_2026-10-20/check_native_book_cp_fdt.py checks the exact 3×3 characteristic polynomial symbolically, all 718 native original directed edges, full positive stationary marginals, current/entropy relation, reverse-biased KL, all 33 endpoint-dark conditions, cubic-vs-resistance Hessian and 1287-cycle odds on a representative triangle. No original BOOK/CORE/claims/status edits.
+
+## 6. Stronger finite-length result: all original closed histories obey an exact reversal fluctuation theorem
+
+For EVERY original length-n closed directed walk γ=(v0,...,vn=v0), define Sγ=Σ_j d(vj,v(j+1)). Reversal γ^R is another legal original walk of the SAME length and based vertex, with S(γ^R)=−Sγ. Their original scalar Book costs are n±εSγ, so the exact Golden weights satisfy
+
+    wε(γ)/wε(γ^R) = exp(−2 lnφ ε Sγ).                       (10)
+
+This holds at EVERY finite n, before any Perron limit or time-continuum input. By the reversal bijection, the distribution of the oriented current among native **closed** scalar Book histories satisfies
+
+    Prε(Sn=S | closed)/Prε(Sn=−S | closed)
+      = exp(−2 lnφ ε S)                                  (11)
+
+whenever both sides exist. There are exactly 1287 unoriented ABC triangles, but **3861 rooted 3-step loops of each orientation** (3 possible starting vertices for each triangle); the latter is the correct trace multiplicity. Thus Pr(S3=+3|closed)=e^(−3lnφ ε)/(2cosh(3lnφ ε)) and the opposite probability uses the plus exponent.
+
+For the full ORIGINAL Doob chain, exponential tilting by k times the additive directed CP current is similar to the original K_(ε−k/lnφ) divided by λ(ε). Therefore its asymptotic cumulant generator is
+
+    Ψε(k)=ln[ρ(K_(ε−k/lnφ))/ρ(Kε)].
+
+Because K_−t=K_t^T, this satisfies the EXACT Gallavotti–Cohen symmetry
+
+    Ψε(k)=Ψε(2 lnφ ε − k).                               (12)
+
+The same identity holds already at the *finite closed-trace* level, before long-time limits, as Tr(K_t^n)=Tr(K_−t^n). In the smooth long-history rate-function regime it gives Iε(j)−Iε(−j)=2 lnφ ε j. This is a standard stochastic fluctuation-relation mechanism demonstrated **on the original D0 graph with the original Book scalar weights**, not proof that the physical full128/CAR detector supplies the comparison.
+
+Independent checker: sources/d0_cp_book_fdt_2026-10-20/check_native_book_closed_history_fluctuation.py, which enumerates original graph zone-coded legal closed words of lengths 2 through 6 with exact vertex multiplicities and verifies the exact n=3 rooted triangle factor. Longer n follow algebraically from the reversal involution. **Neither actual native physical clock nor alpha/neutrino amplitude is selected by this proof; GR_closed=false.**
