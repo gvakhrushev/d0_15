@@ -66,6 +66,34 @@ H_\theta(\gamma,e)
 \]
 The only \(\theta\)-DEPENDENT DATA are the true endpoint marginal weights \(\mathbb P_\theta(e)\); their derivatives, including BOTH terms in (7), are not zero in general. Moving Book normalizer, process preparation, correlated archive and path-dependent extra readouts can add independent sources; none is declared absent. A single complete programme that records end labels still has all its physical probabilities and endpoint cost; the theorem removes ambiguity only INSIDE each true endpoint-conditioned equivalence class.
 
+### 2.1. SHARP physical full-history criterion and a positive endpoint-information susceptibility
+
+The full support of retained endpoints is not arbitrary decoration. Set \(\Delta I_e=I_b-I_a\) for \(e=(a,b)\) and let the unnormalized positive old endpoint partition \(Z_\eta^e>0\) be field dependent. Equation (6) is a finite exponential tilt:
+\[
+Z_\theta=\sum_e Z_\eta^e
+      \exp[-(\theta-\eta)\ell\Delta I_e],\qquad
+\ell=\log\varphi>0.
+\]
+Differentiation in the ACCOUNTING parameter θ with genuine metric/preparation data held fixed gives the exact finite identities
+\[
+\boxed{
+\partial_\theta\log Z_\theta=-\ell\,\mathbb E_\theta[\Delta I_E],\qquad
+\partial_\theta^2\log Z_\theta
+=\ell^2\operatorname{Var}_{\mathbb P_\theta(E)}(\Delta I_E)\ge0.
+}\tag{7a}
+\]
+No inference about an Einstein tensor is inserted. The second derivative is the **positive endpoint-information susceptibility** of the complete original history ensemble, computable from its TRUE observed endpoint labels. It is ZERO iff every positively weighted endpoint pair has the SAME information jump \(\Delta I_E=c(\vartheta)\). Equivalently, for any two distinct \(\theta\ne\eta\) the WHOLE NORMALIZED unconditioned endpoint distribution \(\mathbb P_\theta(E)\) equals \(\mathbb P_\eta(E)\) **if and only if** \(\Delta I_E\) is constant on the common positive support. The conditional internal-history law (4) needs no such equality; it is always allocation-independent.
+
+If this common jump \(c(\vartheta)\) is ALSO field independent on the actual physical variation chart (e.g. genuinely fixed boundary information or a closed path \(c=0\)), even the full unconditioned log-partition FIELD SOURCE is unchanged between allocations:
+\[
+D_\vartheta\log Z_\theta
+=D_\vartheta\log Z_\eta-\ell(\theta-\eta)D_\vartheta c
+=D_\vartheta\log Z_\eta.\tag{7b}
+\]
+If c varies with fields, the full normalized outcome probabilities still agree but the unnormalized absolute partition action retains a genuine endpoint field source \(-\ell(\theta-\eta)Dc\). This distinction prevents falsely promoting a boundary change to an unobservable gauge.
+
+These identities yield a **one-shot native-record acceptance discriminator** rather than a new open-ended scalar experiment: on the SAME complete old code/cut, read the actual endpoint information jumps and compute their variance. A nonzero variance proves that θ changes the full unconditional endpoint outcome law; zero variance proves the WHOLE normalized law is allocation-independent, and one then checks the real endpoint field jets Dc to decide whether the actual bulk price source is too. This is a stronger, quantitatively exact resolution of the Book03 endpoint issue than merely saying "it is a boundary term"; it remains conditional on the selected information-event/weight binding itself.
+
 ## 3. EXACT nonperturbative gravitational holonomy independence on CLOSED histories
 
 The same endpoint coboundary induces one genuine scalar gauge relation on the **formal path-weighted transfer**, even for NONCOMMUTING original edge matrices \(U_e(\vartheta)\). Let
