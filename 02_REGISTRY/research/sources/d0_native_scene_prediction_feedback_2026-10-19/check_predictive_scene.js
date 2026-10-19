@@ -26,7 +26,9 @@ function scene(t=0,fugacity=z,gauge=false){
  const info=Array.from({length:n},(_,i)=>.18*Math.cos((i+1)*.37));
  const K=Array.from({length:n},(_,i)=>Array.from({length:n},(_,j)=>{
   if(zone[i]===zone[j])return 0;
-  const cost=1+(i===0&&j===9?t:0)+(gauge?.23+.07*(info[j]-info[i]):0);
+  const extra=(gauge===true ? .23+.07*(info[j]-info[i])
+   : gauge&&Number.isInteger(gauge.vertex) ? .07*((j===gauge.vertex?1:0)-(i===gauge.vertex?1:0)) : 0);
+  const cost=1+(i===0&&j===9?t:0)+extra;
   return Math.exp(-ell*cost);
  }));
  const R=pf(K),L=pf(K,true);let pi=R.a.map((v,i)=>v*L.a[i]);
@@ -78,6 +80,15 @@ function run(){
  for(let i=0;i<n;i++){maxPi=Math.max(maxPi,Math.abs(base.pi[i]-gauged.pi[i]));
   for(let j=0;j<n;j++)maxP=Math.max(maxP,Math.abs(base.P[i][j]-gauged.P[i][j]));}
  assert(maxP<1e-12&&maxPi<1e-12,"noncanonical Book endpoint gauge");
+ let maxAllVertexWard=0;
+ for(let vertex=0;vertex<n;vertex++){
+  const alt=scene(0,z,{vertex});
+  maxAllVertexWard=Math.max(maxAllVertexWard,
+   Math.abs(alt.J-base.J),
+   ...base.pi.map((x,i)=>Math.abs(x-alt.pi[i])),
+   ...base.P.flatMap((row,i)=>row.map((x,j)=>Math.abs(x-alt.P[i][j]))));
+ }
+ assert(maxAllVertexWard<1e-11,"native scene vertex Ward source not invariant");
  const mu=base.R.a.map(v=>v/base.R.a.reduce((s,x)=>s+x,0));
  const cylinder=mu[0]*base.P[0][9]*base.P[9][0];
  const owned=mu[0]/Math.pow(base.R.lambda/p,2);
@@ -118,7 +129,7 @@ function run(){
     outcomeTotal:base.good+base.fail,hostileWrongRandomWalkJ:wrongRandomWalk},
   originalEdgeSource:{edge:"0-to-9",derivativeActualZ:source,fullMovingPiSource:actual,
     derivativeDiagnosticZ001:sourceTest,diagnosticExactSource:analyticTest},
-  costGauge:{maxKernelError:maxP,maxPiError:maxPi},
+  costGauge:{maxKernelError:maxP,maxPiError:maxPi,all33VertexWardMaxError:maxAllVertexWard},
   boundary:"Explicit constructed full native-type record, not compulsory physical D0 Book F_N or GR."};
 }
 const output=run();
