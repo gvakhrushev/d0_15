@@ -147,6 +147,52 @@ for(const dh of [.01,.003,.001]){
  req(odd<-.0529&&odd>-.053 &&Math.abs(mixed)<5e-9,
      "reversal symmetry: odd-cycle Book Hessian negative, even/odd mixed zero h="+dh);
 }
+
+// STRONGER SAME-EXECUTION theorem: original Book minimizer's exact native
+// conditional score is -ln(phi) times the entire 685-dimensional martingale
+// archive. Full stationary prep is differentiated, not frozen.
+function doobAB(s){
+ const K=N.map((m,i)=>N.map((n,j)=>{
+  if(i===j)return 0;
+  const ab=((i===0&&j===1)||(i===1&&j===0));
+  return p*Math.sqrt(m*n)*Math.exp(-ell*(ab?s:0));
+ }));
+ let v=[1,1,1].map(x=>x/Math.sqrt(3));
+ for(let k=0;k<900;k++){
+  let y=mv(K,v),norm=Math.hypot(...y),w=y.map(x=>x/norm);
+  if(Math.max(...w.map((x,j)=>Math.abs(x-v[j])))<1e-15){v=w;break;}v=w;
+ }
+ const lambda=dot(v,mv(K,v));
+ const P=K.map((row,i)=>row.map((x,j)=>x*v[j]/(lambda*v[i])));
+ return {P,pi:v.map(x=>x*x),lambda};
+}
+let hScore=.0001,up=doobAB(hScore),dn=doobAB(-hScore);
+let fisher=0,dp=Q.map(row=>row.map(()=>0)),dpi=pi.map(()=>0);
+for(let i=0;i<3;i++){
+ dpi[i]=(up.pi[i]-dn.pi[i])/(2*hScore);
+ for(let j=0;j<3;j++)if(Q[i][j]>0){
+  const ds=(Math.log(up.P[i][j])-Math.log(dn.P[i][j]))/(2*hScore);
+  const wanted=-ell*owners[0].m[i][j];
+  req(Math.abs(ds-wanted)<2e-8,
+      "actual original Doob log-score=-ln(phi)*ARCHIVE martingale edge="+i+j);
+  fisher+=pi[i]*Q[i][j]*wanted*wanted;
+  dp[i][j]=(up.P[i][j]-dn.P[i][j])/(2*hScore);
+ }
+}
+req(Math.abs(fisher+ell*hessian[0][0])<1e-13 &&
+     Math.abs(fisher-.06242685237600396)<2e-13,
+     "FIRST PHYSICAL DETECTOR Fisher = -ln(phi) * native BOOK HESSIAN");
+for(let j=0;j<3;j++){
+ const lhs=dpi[j]-dpi.reduce((s,x,i)=>s+x*Q[i][j],0);
+ const rhs=pi.reduce((s,x,i)=>s+x*dp[i][j],0);
+ req(Math.abs(lhs-rhs)<2e-8,"genuine moving stationary preparation master equation j="+j);
+}
+req(Math.abs(dpi.reduce((s,x)=>s+x,0))<1e-11,
+     "native full stationary old-history prep source normalized, not frozen");
+const symCurrentZero=Q.every((row,i)=>
+ Math.abs(row.reduce((s,x,j)=>s+x*owners[0].m[i][j],0))<1e-12);
+req(symCurrentZero,"original all-current J0 detector projections of archive martingale vanish");
+
 console.log(JSON.stringify({
  scope:"original 718 native directed prices; ORIGINAL 3-orbit symmetric pressure source; NOT physical D0->GR",
  full_edges:718,undirected_edges:359,
