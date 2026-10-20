@@ -373,3 +373,40 @@ For one fixed L4 Fourier symbol \(k=(-1+i,-1+i,-2,-1-i)^T\), the REAL symmetric 
 A prior exploratory analysis additionally reported three positive original two-round history logarithmic jets at outcome pairs (0,17),(0,27),(0,59) and a nonzero screened 3×3 determinant. **That particular historical Q(sqrt5) replay has NOT been rerun on the CURRENT full128 source head**, so these numbers are intentionally marked REPLAY-REQUIRED in the new memo, rather than promoted as an owner. Once the same-head native Kraus derivatives, controller, all40 Ward and fixed preparation are verified, its true conditional Golden branch information source is \(D{\rm Info}_\gamma=D\log q_\gamma/\log\varphi\) IF the existing \`A4D_NATIVE_BRANCH_INFORMATION_COCYCLE\` physical weight identification \(w=q\) is proven. That hypothesis is not supplied by tomography.
 
 ONE consuming action test: reproduce the three directed history jets on the actual current #334 native Kraus (not Choi/Jones auxiliary), then evaluate ACTUAL original selected Book Cost−Info/clock/controller/oldRIGHT sources along the exact Qstar direction. If the full selected native source vanishes but literal S_star mixed coframe/connection source does not, report the same-source mismatch, not an invented Einstein correction. If the full paid source matches, only that one gate has progressed, not GR closure. The ongoing native full-action/accepted main intakes have priority over any stale exploratory coefficient. **GR_closed=false**.
+
+
+## 13. CLOSED finite SCALAR-BINDING NORMALIZER LEG: original BLANK-anchored native Book log odds resolve the THREE metric directions hidden from the primitive Golden port PRICE
+
+**NEW exact original full128 source**, with direct raw CAR16/32-Walsh/Julia/Jones checker (not optional Choi):
+[A4D_NATIVE_BLANK_ANCHORED_BOOK_PALATINI_SCREEN_2026_10_20.md](A4D_NATIVE_BLANK_ANCHORED_BOOK_PALATINI_SCREEN_2026_10_20.md). Reuses the certified SAME-Jones-preparation, SAME two-round actual full128 metric10+Lorentz24 rank34 carrier (§12). No new field/cut/readout/hardware/normalizer and no action-price selection. Does not import the local Palatini face target into the positive native probability computation.
+
+On one existing L4 Fourier character z=(i,i,-1,-i), let k=z−1, ||k||²=10, nu=3/5. The original coframe Dirac blank A=hD/16 satisfies A(F)^2=(nu²/256)||F^T k||² I16, and the literal original complete port1 effect is E_port1=4p³ A². For two genuine fresh rounds the primitive PORT-only expected Golden code cost therefore equals
+
+    C_port^(2)(F)=2+(p³nu²/32)||F^T k||².
+
+The real three-dimensional symmetric metric screen V={Q=Q^T∈Sym4(R):Q k=0} has DIM exactly3 (exact 8×10 real linear system rank7), contained in the first source kernel of this PORT price. For the explicit native integer Qstar=ell ell^T, ell=(0,1,-1,1), and genuine coframe F(t)=I+t eta Qstar, F^T k=k **FOR ALL t**. Hence the entire original A(F(t)), Delta, their heat/zeta/spectral readouts and the actual PORT-only two-tick cost are rigorously FROZEN while the metric changes g(t)=eta+(2t−3t²)Qstar. This is an exact scoped insufficiency of **port-only/Dirac-only** geometry recovery on the identity-link chart, NOT a no-go for native full K/Julia/Info/Book when proper-link variations are included.
+
+**New internal normalization construction**: take the genuinely executed blank two-round history gamma0=(0,0), K00=(1−9p²/320)I16. The normalized Jones probability is q0=(1−9p²/320)^4>0 and has D_V log q0=0 on the 3-screen, proved from the true Walsh/Sylvester blank A variation. Take THREE other already existing positive two-round outcomes gamma_i=(0,17),(0,27),(0,59). Their actual positive q's and direct exact 128-Kraus gradients give the native three BLANK-anchored odds R_i=ln(q_i/q_0), with Jacobian
+
+    J = [[0,−4/3,0],
+         [16/9,−125/18,5/36],
+         [−16a³/13−9/26, 32a³/13−1/2, −16a³/13−145/52]],
+    a²=p=phi^−1,
+    det J=−(1888a³+4595)/702 !=0.
+
+No externally supplied normalizing trace, Choi reference or postselection is needed. Even Qstar has nonzero source dR=(-4/3,-181/36,-189/52). Three positive native odds reconstruct the ENTIRE PORT-screened metric subspace. Their native Fisher lower bound J^T diag(q_i)J is strictly positive on that subspace (it is not a signed gravitational Hessian).
+
+**Direct consumption of existing conditional Book03 normalization theorem:** IF—and ONLY if—the compulsory original scalar history weights w_gamma=phi^(−S_gamma) on these SAME true 128² full-record histories are physically identified with measured q_gamma up to any common field-dependent partition N, then
+
+    D(S_i−S_0)=−D ln(q_i/q_0)/ln(phi)
+
+EXACTLY. The shared normalizer source cancels between the TWO ACTUAL histories; this removes only the common-normalizer gap for their RELATIVE price, NOT the underlying G0 choice of scalar versus algebra-valued memory weights or Info operator. This is a sharper G0 consumer than an absolute probability or arbitrary Golden additional amplitude. No field-dependence of fixed primitive port code lengths is introduced.
+
+**Link to the LITERAL geometric target on SAME three directions:** the already-owned G2/STAR local finite face Fourier symbol mixed with the 24 proper-Lorentz links has rank3 on V, with original link columns (0,1,5) having determinant −24+12i !=0. Since the J above is invertible, the old mixed geometric source admits the unique mathematical reconstruction in those genuine native odds: M_odds=J^(−T) M_face. This is a coordinate TRANSFER OF A PREEXISTING target, NOT a proof of physical selected Book action or an equality of full periodic Euler rows. Complex Fourier modes must be paired with conjugates for real physical fields. The parent G0 task now has a complete actual record interface, down to one internal BLANK normalizer and no arbitrary metric reconstruction basis.
+
+**Single next scientific source theorem:** the SAME mandatory full128+Jones/oldRIGHT+observer/clock/controller/Cost−Info programme must prove or falsify its genuinely selected Book RELATIVE price on these four actual histories, preserving all failed labels and preparation work, and then compare its SAME-ACTION coframe10+link24 Euler covector against original S_star. If its selected net Source differs, the mismatch is a real finite counterexample for that binding; do not repair by setting Info equal to J^(−T)M. Even a positive first-jet binding does not close full nonlinear joint stationary solutions/matter Ward/refinement #216. **GR_closed=false.**
+
+New executable original-carrier scripts, both local PASS:
+- sources/d0_native_blank_anchored_book_2026-10-20/check_native_full128_blank_odds.py
+- sources/d0_native_blank_anchored_book_2026-10-20/check_screen_dirac_port_palatinisymbol.py
+Remote CI and independent scientific acceptance are NOT asserted.
