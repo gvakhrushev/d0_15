@@ -303,4 +303,59 @@ theorem ProspectiveExecution.no_positive_redundant_detour
   linarith
 
 
+
+/-! ## Nontrivial D_min dynamics needs a REQUIRED verification task
+
+If the physical goal is already met at the initial complete state,
+the empty history is allowed and has zero execution price. When
+every actual primitive costs STRICTLY more than zero, any prospective
+global minimizer must choose this empty history. Therefore primitive
+Cost>=S_min=1 plus a prospective minimizing law, by themselves,
+CANNOT force a falling apple, any tick, or real change. The original
+M1/D_min must provide a genuinely obligatory test/closure condition,
+or the actual complete Cost-minus-Info objective must make idle
+nonoptimal. No external ad hoc physical destination is assumed here.
+-/
+
+theorem ProspectiveDynamics.totalPrice_nonneg
+    (D : ProspectiveDynamics) (hprice : ∀ s a, 0 ≤ D.price s a)
+    (s : D.State) (word : List D.Action) :
+    0 ≤ D.totalPrice s word := by
+  induction word generalizing s with
+  | nil => simp [ProspectiveDynamics.totalPrice]
+  | cons a tail ih =>
+      change 0 ≤ D.price s a + D.totalPrice (D.step s a) tail
+      exact add_nonneg (hprice s a) (ih (D.step s a))
+
+theorem ProspectiveExecution.no_motion_without_a_required_distinction
+    {D : ProspectiveDynamics} (E : ProspectiveExecution D)
+    (goal_already_met : E.goal E.initial)
+    (hpositive : ∀ s a, 0 < D.price s a) :
+    E.chosen = [] := by
+  cases hchosen : E.chosen with
+  | nil => rfl
+  | cons a tail =>
+      have hzeroLegal : D.executable E.initial
+          ([] : List D.Action) := by
+        simp [ProspectiveDynamics.executable]
+      have hzeroGoal : E.goal (D.run E.initial
+          ([] : List D.Action)) := by
+        simpa [ProspectiveDynamics.run] using goal_already_met
+      have hopt := E.optimal [] hzeroLegal hzeroGoal
+      rw [hchosen] at hopt
+      have htail := D.totalPrice_nonneg
+        (fun s a => le_of_lt (hpositive s a))
+        (D.step E.initial a) tail
+      have hbound : D.price E.initial a +
+          D.totalPrice (D.step E.initial a) tail ≤ 0 := by
+        simpa [ProspectiveDynamics.totalPrice] using hopt
+      linarith [hpositive E.initial a]
+
+theorem ProspectiveExecution.nonempty_forces_unsatisfied_initial_goal
+    {D : ProspectiveDynamics} (E : ProspectiveExecution D)
+    (hpositive : ∀ s a, 0 < D.price s a)
+    (hword : E.chosen ≠ []) : ¬ E.goal E.initial := by
+  intro hgoal
+  exact hword (E.no_motion_without_a_required_distinction hgoal hpositive)
+
 end D0.Foundation.EndogenousActionQuantum
