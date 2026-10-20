@@ -124,6 +124,40 @@ check(Math.abs(Hdiff)>1e-7,"full Golden pointer Shannon has a real moving source
 const oneFisher=bell*p**4/6;
 const dp=golden17(h).map((x,i)=>(x-golden17(-h)[i])/(2*h));
 const finiteFI=dp.reduce((s,x,i)=>s+x*x/q0[i],0);
+// STRICT Fisher/Petz loss alongside the ZERO scalar action source loss.
+// At t=0 the complete Book history score may move; every 3-tick
+// path has native Golden J23 score ±, two-tick paths have no angle.
+// Conditional score mean=0, so the cross-history Fisher term vanishes.
+const FIbase=nativeRun(y,0),bookPrice=FIbase.book,ZFI=FIbase.Z;
+let dLogRaw=[],meanLogRaw=0,threeStageMass=0;
+for(let i=0;i<histories.length;i++){
+ const vs=histories[i].verts,dep=vs.length-1;
+ let dc=0;
+ for(let j=0;j<dep;j++)
+   dc+=.008*(((11*vs[j]+7*vs[j+1])%13)-6)/6;
+ const dl=-ell*dc;
+ dLogRaw.push(dl);meanLogRaw+=(bookPrice[i]/ZFI)*dl;
+ if(histories[i].orient!==0)threeStageMass+=bookPrice[i]/ZFI;
+}
+let fisherBook=0,fisherJoint=0;
+for(let i=0;i<histories.length;i++){
+ const pr=bookPrice[i]/ZFI,scoreBook=dLogRaw[i]-meanLogRaw;
+ const sign=histories[i].orient,q=FIbase.goldenByOrient.get(sign);
+ let fiCond=0;
+ for(let j=0;j<17;j++){
+  const dq=(sign===0?0:sign*dp[j]);
+  const score=scoreBook+dq/q[j];
+  fisherJoint+=pr*q[j]*score*score;
+  fiCond+=dq*dq/q[j];
+ }
+ fisherBook+=pr*scoreBook*scoreBook;
+ if(sign!==0)check(Math.abs(fiCond-oneFisher)<2e-10,
+  "both original triangle orientations carry same complete native Golden17 Fisher");
+}
+const predictedFisherLost=threeStageMass*oneFisher;
+check(predictedFisherLost>0&&Math.abs(fisherJoint-fisherBook-predictedFisherLost)<2e-11,
+ "true all143480 positive labels have strictly more Fisher than Book alone, yet exact identical scalar log partition");
+
 check(Math.abs(finiteFI-oneFisher)<2e-10,
  "TRUE ALL17 conditional Fisher = Bell*p^4/6, only two native signed marks moving");
 
@@ -199,6 +233,10 @@ const source={bookZ:R.Z,fineZ:R.fineZ,pointerMoving:R.pointerMoving,
  conditionalStationaryEnvelopeHessian:relaxedH,
  fullJointOptimalObjective:exactObjective,
  trueBookObjective:targetObjective,strictAlternateCost:perturbedObjective,
+ all8440ThreeCycleProbability:threeStageMass,
+ pathOnlyFisher:fisherBook,full143480Fisher:fisherJoint,
+ strictlyPositiveLostFisher:fisherJoint-fisherBook,
+ exactPredictedLostFisher:predictedFisherLost,
  actualFull128PortMismatch:p**3,actualFull128PortMismatchChecked:portCode};
 console.log(JSON.stringify({
  status:"PASS_ORIGINAL_FULL143480_BOOK_GOLDEN_CONDITIONAL_COST_INFO_AND_SIGNED_SOURCE",
