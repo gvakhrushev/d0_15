@@ -145,3 +145,21 @@ The original J23 probe is **not a selected isolated lucky generator**: for stand
 Reproducible original all-six test:
     02_REGISTRY/research/sources/d0_book_geometry_double_schur_2026-10-19/check_car16_lorentz_area_trace.py
 It checks 256 CAR matrix-unit identities, all 36 Lorentz-basis pairings and the Hodge(e0∧e1)→J23 control. Locally PASS. **GR_closed=false**.
+
+
+### 8.1. Crucial correct native preparation: FIRST Lorentz phase vanishes at rho=I16/16; the TWO-SOURCE CAR correlation does not
+
+This is the strategic advantage of (8.1)–(8.3) over extrapolating one handpicked polarized CAR state. The actual original full128 flat first-shell source owner evaluates a physical diagnostic at unpolarized rho0=I16/16. For EVERY Lorentz X, Tr_4 X=0, so the same CAR trace formula implies
+
+    Tr_16(rho0 dΓ(X)) = (1/2) Tr_4 X = 0.
+    Tr_16(rho0 dΓ(X)dΓ(Y)) = (1/4) Tr_4(XY).          (8.4)
+
+For any two genuine proper-Lorentz directions (including boosts and spatial rotations), the native algebraic FIRST phase on this unpolarized state is zero, but the MIXED SECOND coherent response is nonzero and has the full Lorentz (3+,3−) bilinear. In particular C(J23,J23)=−1/2 in the real rotation generator convention; for the original flat coframe area e0∧e1 the Hodge-mapped generator is exactly J23. No specially selected pure helicity input is needed to obtain this nonzero signed CAR algebraic pairing.
+
+One exact algebraic generating function is
+    Z_(X,Y)(s,t)=Tr_16[rho0 exp(s dΓ(X)) exp(t dΓ(Y))].
+Then Z(0,0)=1, its individual first partial derivatives vanish, and
+    ∂_s ∂_t log Z_(X,Y)|0=(1/4)Tr_4(XY).                (8.5)
+This is a FINITE source-calculation identity; for boosts the exponentials are NOT unitary in the positive Fock norm, so Z is NOT hereby a probability or a selected Book action. A true physically paid original Julia/Choi coherent two-line comparison is required to read this bilinear without inserting a nonunitary detector. Its normalization/source must be computed from the actual full128 circuit, NOT inferred from the algebraic trace.
+
+This resolves a potential false target in §7: the earlier i h²/8 from the specially prepared grade-one pure CAR probe is not expected from the maximally mixed full128 first-shell input. The correct **unpolarized native test** is a coherent TWO-SOURCE/CONNECTED response preserving all flags and the old RIGHT reference, checked against the all-six area-curvature bilinear (8.3), not a nonzero first J23 phase. Passing that test would constitute a genuine common-preparation CAR-to-Palatini interface; the physical action and joint GR limit would still require separate proof.
