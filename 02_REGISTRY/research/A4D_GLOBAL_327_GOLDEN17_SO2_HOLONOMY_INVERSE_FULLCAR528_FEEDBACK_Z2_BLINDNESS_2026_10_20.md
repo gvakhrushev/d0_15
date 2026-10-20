@@ -175,3 +175,88 @@ The new statements show that **the information necessary to preserve signed geom
 But being able to POSITIVELY reconstruct a geometry is NOT the same as the full original Book03 H+J+R/Cost−Info **CHARGING it in precisely the Palatini action**. The real remaining M1/G0 theorem must physically select the signed pretrace readout, the original 4D Role→scene address/observer and genuine Spin reference, its entire Golden/CNOT coherent programmer/oldRIGHT failures/clock/prep/work price, AND its absolute source normalization. It must show the full selected first Euler covector is the previous OWNED 16+24+CAR Palatini source (or satisfies the squared-ideal/IR universality criterion) on real exact joint refining roots. The original #216 fixed source/regulator wall remains separate. This note does NOT announce GR_closed or imply torsionfree sourced Einstein–Dirac from spatial SO(2).
 
 **Research decision:** The problem of ***global mathematical reconstructibility of ALL compact oriented native Book-cycle phases*** is now solved, modulo fixed reference/gauge and strictly given observed q17. The physically fundamental remaining issue is the **endogenous cost/action selection and signed Spin/4D matter source**. The proper next decisive verification is on ONE actual G0 programme: whether two F-identical, Golden17-distinct (and genuine Q8-sign-distinct) original histories are charged differently by the real complete selected action with all their actual preparation/clock/work fields. If the selected full source is F-only, this test fails and cannot yield faithful signed Palatini history; if pretrace remains in the priced action, this exact inverse supplies its full 327 finite data without inventing another observable.
+
+
+## 6. ALL 327 PHASE DIRECTIONS HAVE A FULL NONDEGENERATE POSITIVE GOLDEN17 FISHER METRIC, EVEN UNDER MOVING NONUNIFORM BOOK WEIGHTS
+
+The exact global phase inverse in §4 does not alone imply a usable C¹ physical source on every chart. Around the ACTUAL flat original CAR observer, however, the EXISTING original complete 17-positive-label Golden distribution yields for the one spatial J23 angle:
+\[
+q_{J\pm}(0)=k,\quad
+D_\theta q_{J\pm}(0)=\pm\sqrt2k,\qquad
+\boxed{I_{\mathrm{one\ face}}(0)=
+\sum_{r=1}^{17}\frac{(D_\theta q_r)^2}{q_r}
+=4k=\frac{p^4}{6\cdot4096}.}\tag{10}
+\]
+Every GOOD/BAD/Bell failure is INCLUDED; their individual θ-source on this chart is zero, not missing. For an ORIGINAL 1287-row triangular phase-incidence matrix \(B_{\triangle,e}\in\{-1,0,+1\}\) on the original 359 oriented unoriented-edge representatives and any genuine positively accepted same-run face experiment with full moving observed face probabilities \(w_\triangle(y)>0\), the score chain rule has EXACT conditional+history orthogonality:
+\[
+\boxed{
+I_{\rm recorded}=
+I_{\rm triangle/history\ class}+
+\sum_\triangle w_\triangle I_{q_{17}(\Theta_\triangle)},
+\qquad
+I^{\rm cond}_{\rm edges}(0)
+=\frac{p^4}{6\cdot4096}\,
+B^\top\operatorname{diag}(w_\triangle(0))B.
+}\tag{11}
+\]
+If the true Book class acceptances \(w_\triangle\) MOVE with the original field, their score enters the FIRST term. Because \(\sum_r q_r D\ln q_r=0\), it cannot cancel the nonnegative conditional Fisher in the second term. Full original face incidence has rank327 with precisely the original 32 vertex U1 coboundaries as kernel. Thus whenever ALL original face class masses stay strictly positive, the full 327 observable phase-cycle Fisher is POSITIVE DEFINITE on the original quotient. NO special CP symmetry, common stage verifier or uniform face acceptance is required for RANK (but a uniform refining lower bound requires actual G0 clock/work evidence). For any w_min>0,
+\[
+I^{\rm cond}_{\rm edges}\succeq\frac{p^4w_{\min}}{6\cdot4096}B^\top B
+\]
+in the correct source norm. This is an independently checkable finite original scene information bound, NOT a gravitational Newton source.
+
+The independent checker constructs actual original 1287×359 incidence with its 327 tree-chord gauge coordinates, performs BOTH full327 Cholesky factorizations (uniform and genuine nonuniform original Book \(K_{uv}=\varphi^{-C_{uv}}\) three-return accepted weights), and checks the 32 original pure gauge gradients:
+- full rank=327/327, null=32; one-original-face FI=\(5.936606191012187\cdot10^{-6}\);
+- unweighted 327 Cholesky diagonal min=1.9838799904514781, max=3.605551275463989;
+- genuinely Book-nonuniform accepted three-path weights range [0.0007352243751616406,0.0008240128886556743]; weighted Cholesky diagonal min=0.05505603720510529, max=0.10179314826871873;
+- all original 1287 pure-gradient phase source residual ≤1.11e−16.
+
+**IMPORTANT physically distinguishing two 327 metric tensors rather than fitting one onto the other.** The native scalar ALL-WALKS Book pressure Fisher/Hodge has original \(Q_{327}(a)=2\sum\mu_e(a_e-\mathrm{grad}\,\chi)^2\), whereas the **original short triangle Golden17 READOUT** has \(I_{\rm face}(a)=4k\sum_\triangle w_\triangle(\delta a)^2\). They share the same 32 gauge kernel and positive 327 quotient but are NOT one universal scalar multiple. On the actual original CP direction \((Q,I_{\rm face})=(0.9899475173820651,\;5.3429455719109726\cdot10^{-5})\), ratio \(5.397200839535911\cdot10^{-5}\). On one original directed edge \((Q,I_{\rm face})=(0.0027127430952210672,\;5.9199659013892897\cdot10^{-8})\), ratio \(2.1822803316017136\cdot10^{-5}\). The exact difference is a genuine **native constitutive/observer channel relation**, not an error in the all327 Book↔CAR MAGNETIC phase-gap theorem or justification to impose an arbitrary Einstein coupling. Any proposed single complete fundamental price has to source its actual proper combination.
+
+## 7. NEW EXACT NONLINEAR SIGNED *COST–INFO* SOURCE FROM THE ORIGINAL GOLDEN \(p:p^2\) CODE, NOT ONLY A PROBABILITY DECODER
+
+The strongest positive constructive physics clue is that the ORIGINAL Golden binary code is already asymmetric: \(p=\varphi^{-1}, p^2=\varphi^{-2}\), \(p+p^2=1\). On the very SAME complete original 17-output distribution, define ONE mathematically legitimate full code reference \(\mu\) by retaining each signed-pair flat total \(m_a=q_{a+}(I)+q_{a-}(I)=2k\), and distributing that existing mass as
+\[
+\mu_{a+}=m_ap,\qquad
+\mu_{a-}=m_ap^2
+\]
+for ALL six original Lie pairs; keep ALL five remaining GGrest/GB/BG/BB/Bell-failure reference masses equal to their actual original flat positive q17. The reference is strictly positive and \(\sum_{r=1}^{17}\mu_r=1\). No fitted angle or extra Price coefficient enters.
+
+For actual ORIGINAL oriented triangle \(R_{23}(\theta)\) and its TRUE reverse \(R_{23}(-\theta)\), evaluate the complete phi-relative CODE price
+\[
+D_\varphi(q\Vert\mu)
+=\sum_{r=1}^{17}q_r\log_\varphi(q_r/\mu_r).
+\]
+ALL qlogq entropic terms cancel in the EXACT reverse-odd difference, and the original code ratio \(p/p^2=\varphi\) supplies the ONLY signed unit:
+\[
+\boxed{
+\begin{aligned}
+\Delta_{\rm code}(\theta)
+&=D_\varphi(q_{17}(\theta)\Vert\mu)
+-D_\varphi(q_{17}(-\theta)\Vert\mu)\\
+&=-(q_{J+}(\theta)-q_{J-}(\theta))\\
+&=-2\sqrt2\,k\,m(\theta)\sin\theta,
+\quad m(\theta)=\frac{1+\cos\theta}{2}.
+\end{aligned}}\tag{12}
+\]
+Thus the ACTUAL signed odd SO(2) proper-curvature component \((R_\theta-R_\theta^{-1})/2=J_{23}\sin\theta\) has an EXACT FINITE CODE-PRICE representation:
+\[
+\boxed{
+\sin\theta=
+-\frac{\Delta_{\rm code}(\theta)}{2\sqrt2\,k\,m(\theta)}
+\quad(m>0),\qquad
+\sin\pi=0\quad(m=0).
+}\tag{13}
+\]
+This is not a guessed scalar Einstein Lagrangian, nor does (13) independently tell us to pay the signed difference instead of the sum. It is a **positive original-code PRICE DIFFERENCE among TWO genuinely distinguishable full histories**, using the only original Golden unit. The full code price difference is an ANALYTIC odd function of θ even when individual qlogq terms have nonsmooth zero-support jets at θ=π. The division in (13) is algebraically removable as a function of θ but **numerically ill-conditioned near π**, exactly as the positive probability inverse in §3. On every GR smooth near-flat original Role plaquette with \(\theta=O(h^2)\), \(m=1+O(h^4)\) and the true signed FIRST source is regular:
+\[
+\boxed{\Delta_{\rm code}'(0)=-2\sqrt2\,k
+=-4.197814494898758\cdot10^{-6},\quad
+\left.D_\theta D_\varphi(q_{17}(\theta)\Vert\mu)\right|_0
+=-\sqrt2k=-2.098907247449379\cdot10^{-6}.}\tag{14}
+\]
+The odd *difference* source is twice a single forward programme's derivative, since the reverse programme varies with opposite θ. Do NOT accidentally halve/double the entire physical Book source.
+
+**Independent full-circle controlled test:** all 4097 angles including the exact π candidate, all 17 physically mathematical positive outcomes, all six original Golden pairs, all failure stages: maximum exact signed CODE difference residual 3.60e−20; reconstructed sin near π max floating discrepancy 1.623e−9 (a real numerical-conditioning issue, not an exact identity failure); original forward-code first-source finite-difference discrepancy <2e−12. With the source-normalized actual physical Role geometry and a retained \(\mu\), the native Code–Info data therefore have the exact ENTIRE signed SO2 geometry germ, not merely an abstract positive Fisher norm.
+
+**Genuine remaining physical source-selection obligation:** Fundamental M1/G0/Book03 has NOT yet required a frozen/co-transported \(p:p^2\) oriented reference code rather than an adaptively matched full code (whose full relative KL source can disappear after stationary prep). The original full Q8/Spin phase, genuine original observer/coframe and the price of OLD RIGHT/ref128/readout/clock/work must be included on ONE actual G0 programme, not fitted to (12). Only after demonstrating that this (or an actual equivalent) signed code price belongs to the physically selected full Book H+J+R first source may the already-owned six-face/Role all640 signed Palatini–CAR Euler and controlled uniform refinement be CONSUMED. The new result proves this exact signed code SOURCE IS AVAILABLE in the actual native Golden alphabet; it does not pretend it is physically compelled.
