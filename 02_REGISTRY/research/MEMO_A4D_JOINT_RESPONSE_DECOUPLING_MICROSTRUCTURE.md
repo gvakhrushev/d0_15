@@ -9054,3 +9054,43 @@ same *derived* native price, but do not define or fit one. The consuming
 `constitutive` step remains to derive its preparation/controller/clock/
 history/work source and admission from one execution, then evaluate the
 appropriate tests. `GR_closed=false`.
+
+
+## 20 October: the all-six CAR16 weld is a representation, not native price selection
+
+The dedicated [observer-covariant CAR16 weld](A4D_OBSERVER_COMPLETE_CAR16_JULIA_CHOI_STAR_DENSITY_WELD_2026_10_20.md)
+now gives a finite positive representation of the literal original
+Palatini-star face density. On the full 16-state exterior carrier, the exact
+CAR trace pairs all six proper-Lorentz generators with signature
+`(3+,3-)`; all 36 bivector/generator identities reproduce the original
+`G2/STAR` convention. A complete three-outcome Julia/Choi test retains the
+failure arms and has the moving observer-positive form. The original star
+face is exactly its mixed marked-event log jet, with no fitted gravitational
+coefficient. The already-owned Golden two-density six-phase chart has
+`det D Phi(I)=p^9/15552000 != 0`, so it locally recovers the full plaquette;
+the six signed marked gradients also recover the nonlinear Cayley curvature
+on the stated open chart. These results close finite representation and
+local observability questions for their declared instruments.
+The pinned local replays are the [all-six trace](sources/d0_book_geometry_double_schur_2026-10-19/check_car16_lorentz_area_trace.py),
+[literal star identity](sources/d0_book_geometry_double_schur_2026-10-19/check_car16_literal_star_density.py),
+[complete signed Julia event](sources/d0_book_geometry_double_schur_2026-10-19/check_car16_full_julia_choi_palatinisign.py),
+[moving-observer covariance](sources/d0_book_geometry_double_schur_2026-10-19/check_car16_observer_covariant_julia_choi.py),
+and [Golden curvature reconstruction](sources/d0_book_geometry_double_schur_2026-10-19/check_native_golden_six_phase_curvature_reconstruction.py).
+
+The Book boundary remains separate. The scalar marked event has nonzero
+identity code mass, is even under `P -> P^{-1}`, and is not multiplicative
+under serial holonomy composition. Products of independent comparison
+probabilities therefore do not establish the primitive additive cost of an
+ordered Book history. The operator-valued memory must compose first; the
+complete retained record and its actual Cost--Info price must then be derived
+on the same admitted run. See the [serial marked-event selection gate](A4D_REAL_PLAQUETTE_CAYLEY_BOOK_MARKED_EVENT_SELECTION_GATE_2026_10_20.md)
+for the exact controls.
+
+The next physical substitution is still one common full128/oldRIGHT/ref128,
+observer, Golden/CAR, controller, clock and work execution: derive its entire
+ordered-memory source, including return and failure terms, and compare it
+with the original geometric and matter sources on the same tangent while
+checking the remaining internal Euler and Ward rows. No new action or
+selector is introduced here. The existing GR assembly graph remains the
+route index; this representation does not fill `positive_gr` or promote
+`GR_closed`.
