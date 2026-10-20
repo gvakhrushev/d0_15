@@ -3185,3 +3185,59 @@ Perron jets versus the complete original718 Info source; literal P3
 Schur/source, normalized KL mixed jet and original502 suffix ratio.
 Independent reviews bind each proof and the final composition. Existing
 large rank, formalization and historical certificate suites are not rerun.
+
+
+## 20 October continuation: actual complete compiler price in the exact coframe theorem
+
+Phase: native realization / final composition; existing constitutive
+slot, native-programme-v1 and Draft #334. The concrete consumed premise
+is all-order scalar geometric equation equivalence of the actual full
+compiler valuation, not selection of a newly proposed action.
+
+The [complete-compiler application](../../02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/COMPLETE_COMPILER_COFRAME_EQUIVALENCE.md)
+combines FULL_PRICE_COMPOSITION blob b0d4483c with the original independent
+six-face star fb0d5d42 and the all-order coframe map 0b622609. With actual
+positive multiplicities and nonzero probe/readiness, its one-stage
+complete CQ slope is strictly negative. The explicit invertible map
+transports the full source, including shared links and moving internal
+data, to B plus the actual weighted Palatini star. DB=0 remains required.
+A nonconstant null material field is not the genuinely vacuum chart.
+
+The same actual two-band price has a positive balanced-direction second
+derivative where every positive radial-scale target is at most its
+tangent. This excludes that radial extension on the declared density
+curve, even nonsmoothly; its physical realizability and general joint
+coframe/matter maps remain separate. No new source compensator is added.
+
+The companion full scalar/CAR CP similarity consumes original718 owner
+da8bb08e; the finite price mark retains the true conditional, endpoint
+and stopped-clock terms and yields the complete compiler DB. The owned
+two-tick matrix e5b35dd6 supplies an exact local-real generator, its mixed
+endpoint saddle and the full source-graph cotangent transport. Actual
+Book-price/phase-record/time binding remains the explicit remaining test.
+
+Carrier/source: original 16-leg coframes and independent proper-Lorentz
+links with original weights; original nondensitized material density;
+finite complete retained records with pure-input/reference CQ convention.
+Alternate absolute Book normalization is not silently absorbed. Fixed
+collars are transported or retained on the shell. No universal norm or
+refinement inverse bound is asserted.
+
+Write surface: six proof/checker files plus review/receipt in existing
+book_source; append-only existing global/causal/memo/task/README routes.
+All twenty consumed original blobs match the input snapshot 24eebbda
+and inspected parent 6406ee7d. The review binds exact final contents.
+Smallest decisive checks: literal six-face full source pullback with
+off-shell links and density-boundary control; exact winding/polarization/
+history cotangent algebra; complete fixed/stopped CP/price first jets.
+Root ran those new standalone sources in V8. Old all40+2, full128,
+compiler and Lean suites are consumed unchanged. Shared filesystem
+executor was unavailable; no local shell/Lean or assembly-template pass
+is claimed.
+
+The primary exact nonvacuum Einstein family and full-field minimum
+exclusion remain. To consume all40+2, derive the actual compulsory
+same-execution complete Book valuation and genuine internal roots,
+then its admitted joint field/source or priced stationary relation,
+with physical clock and refinement. No lifecycle, registry, CORE/BOOK
+or assembly acceptance changes. GR_closed=false.

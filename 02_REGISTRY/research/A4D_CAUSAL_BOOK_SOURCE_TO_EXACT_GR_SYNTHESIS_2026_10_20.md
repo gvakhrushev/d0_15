@@ -832,3 +832,41 @@ The [pinned review](sources/d0_native_gr_completion_synthesis_2026-10-20/book_so
 records the independent analytical application and the narrow exact
 checker. No old geometric/Lean replay, new task, assembly acceptance,
 raw216 or physical-GR promotion is claimed.
+
+
+## 20 October: exact full-compiler coframe transport and the stationary price interface
+
+The [complete compiler application](sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/COMPLETE_COMPILER_COFRAME_EQUIVALENCE.md)
+now uses the existing all-launch Cost/complete-CQ-Info ledger in the old
+all-order coframe theorem. On its genuine vacuum chart, the one-stage
+local slope is nonzero without any estimate of net stage cost. The
+explicit invertible map transports every higher scalar geometric
+correction into the actual weighted Palatini star. All shared-link,
+preparation and clock derivatives remain; internal stationarity still
+requires the actual DB=0.
+
+The actual nondensitized matter density scales oppositely to the
+geometric density. Applying this SAME radial proposal to the true
+two-band complete price gives a strict one-sided AM-GM obstruction.
+This does not invalidate the primary nonvacuum first-source theorem;
+it prevents promoting the vacuum all-order map to that whole matter
+chart without a real joint field transformation.
+
+The [complete Perron/marked-source identity](sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/PERRON_COMPLETE_MARKED_SOURCE.md)
+keeps the genuine remaining DB, including fine-record occupation,
+moving preparation and the actual stopped clock. Its unmarked CP
+spectral radius equals the original scalar Perron value, but this is
+not an equality of full paid actions.
+
+The [canonical companion](sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/CANONICAL_GENERATOR_AND_PRICE_INTERFACE.md)
+uses the formal two-tick map to derive its generator, partial-Legendre
+saddle and the full cotangent lift of the coframe map. It gives a
+specific priced-primitive test for a native stationary route. The
+two-tick phase plane is not silently identified with physical spacetime,
+and the telescoping H-frame shear is not the independent normal coframe
+Euler row.
+
+The [review and exact-content receipt](sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/COMPILER_COFRAME_PERRON_CANONICAL_REVIEW.md)
+record new bounded V8 checks, with old inputs consumed unchanged.
+Compulsory Book Info/price, preparation roots, actual field writing and
+physical time remain unproved. No minimum, assembly or GR status changes.

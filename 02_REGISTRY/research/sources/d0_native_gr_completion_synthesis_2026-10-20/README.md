@@ -206,3 +206,31 @@ nonflat LEFT/PF/h/s normalization, omitted-overlap/PF negative controls,
 all16 coefficient identities, complete Fibonacci prefix partition and
 the nonzero eighth-harmonic certificate. Prior geometry, gate factories,
 all40+2 and Lean are consumed unchanged. GR_closed remains false.
+
+
+## Complete compiler price, exact coframe transport and the stationary interface
+
+[The exact full-price coframe application](book_source/COMPLETE_COMPILER_COFRAME_EQUIVALENCE.md)
+removes order-by-order matching of higher scalar vacuum coefficients.
+The actual complete one-stage CQ valuation is exactly related to its
+weighted Palatini target, with all original link and internal sources.
+The baseline DB remains. The same proof gives a sharp one-sided boundary
+for a single positive radial scale in the original two-density matter chart.
+
+[The full Perron/marked-price result](book_source/PERRON_COMPLETE_MARKED_SOURCE.md)
+and [the canonical generator](book_source/CANONICAL_GENERATOR_AND_PRICE_INTERFACE.md)
+supply the retained internal source and exact stationary source transport.
+They do not select compulsory Info, a physical clock or a native field map.
+
+See the [analytical review](book_source/COMPILER_COFRAME_PERRON_CANONICAL_REVIEW.md)
+and [execution receipt](book_source/COMPILER_COFRAME_PERRON_CANONICAL_CHECKS.json).
+Reproduce only the new finite compositions:
+
+    node 02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/check_complete_compiler_coframe_equivalence.mjs
+    node 02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/check_canonical_generator_and_price_interface.mjs
+    node 02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/check_perron_complete_marked_source.cjs
+
+The actual execution reported here used the V8 tool runtime. The
+canonical/Perron controls use exact rational arithmetic; coframe
+transcendental values are numerical diagnostics of the analytic identity.
+No old geometry, compiler or Lean suite was replayed. GR_closed=false.

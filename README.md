@@ -27,6 +27,14 @@ retained-clock/price packet is included unchanged. Selecting the compulsory
 Book Info algebra, task and complete work payment remains the physical
 premise before the all40+2 GR source can be applied; #334 stays open.
 
+The [complete-compiler/coframe synthesis](02_REGISTRY/research/A4D_GLOBAL_RESULT_COMPOSITION_2026_10_20.md)
+now proves exact all-order vacuum equation equivalence for the actual
+complete CQ compiler valuation, retaining the weighted Palatini target
+and every internal source. Its Perron and canonical companions connect
+the full price derivative to stationary source transport. The same
+radial map has a proved boundary for nondensitized matter; compulsory
+Book valuation, physical field/time binding and GR closure remain open.
+
 ## Current objective: close the D0 foundation through general relativity
 
 D0 starts from the **necessary operational structure of verifiability**:

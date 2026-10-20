@@ -822,3 +822,28 @@ Complete Info, compulsory continuation and physical clock, geometric source
 generation and the joint field-and-full-price graph or native stationary
 law remain the next composition. The exact proof, checker and independent
 review are linked from the causal synthesis; GR_closed remains false.
+
+
+## 20 October: full compiler valuation has an exact geometric normal form
+
+[The current global composition](A4D_GLOBAL_RESULT_COMPOSITION_2026_10_20.md)
+now substitutes the actual complete stopped compiler ledger into the
+previous all-order coframe theorem. On the genuine vacuum chart,
+higher scalar geometric coefficients no longer need individual matching:
+an explicit invertible map transports the complete source into the
+actual weighted Palatini star, with its independent baseline DB retained.
+
+This does not justify treating a nonconstant null material field as
+vacuum. The real two-band ledger and the nondensitized matter scaling
+give a strict boundary for the same radial extension. A joint matter/
+coframe source map is still needed for the primary nonvacuum consumer.
+
+The formal two-tick transfer supplies an exact generator and a saddle
+after partial Legendre transformation. Together with the full cotangent
+lift, it identifies a concrete stationary-price interface without
+requiring a full-field minimum. The complete CP Perron/finite marked-price
+identity computes the actual residual source; scalar normalization alone
+does not cancel it. These consume old owners, including their original
+Golden constants and actual record laws. Compulsory Book Info, physical
+time, admitted field writing and upstream stationarity remain open.
+The proof and bounded review are linked from the global composition.

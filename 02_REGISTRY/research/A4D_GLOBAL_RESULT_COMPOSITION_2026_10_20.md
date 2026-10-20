@@ -529,3 +529,117 @@ Thus two different full-price programmes with the SAME finite geometric readout 
 At that point the exact 34 native history-score chart gives a canonical numerical/symbolic coordinate system for testing (18), while the actual reachability Jacobian Dr from §8.2 determines whether stationary programme variations imply FULL field Euler or only restricted equations. This is the minimum noncircular positive completion route: (i) native selected programme and price, (ii) its own real causal/Schur internal stationary section, (iii) reachable geometric tangents, (iv) vanishing off-shell source defect on the original 34 chart, and independently (v) physical full all40+2/root/refinement or local natural Golden Ward for universal Einstein class.
 
 The mathematical lemma (22) is standard and already present in the existing same-action owner; the NEW contribution is its strict COMPOSITION with actual full128 score-saturation, the failed total-fibre price descent and the exact field-minimum exclusion. This route does not claim the actual native stationary section has already been physically admitted or solved. GR_closed=false.
+
+
+## 9. Complete compiler price: an exact geometric equivalence, with a sharp matter boundary
+
+This application uses two previously separate results: the complete stopped
+compiler ledger in [FULL_PRICE_COMPOSITION.md](sources/d0_global_result_composition_2026-10-20/FULL_PRICE_COMPOSITION.md)
+and the explicit all-order [coframe equivalence](sources/d0_relational_coherent_synthesis_2026-10-20/coframe_equivalence.md).
+The new [complete-compiler proof](sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/COMPLETE_COMPILER_COFRAME_EQUIVALENCE.md)
+performs their actual substitution. It is not another assumption that an
+unspecified action has a convenient normal form.
+
+On the declared vacuum chart, the matter kinetic density is identically
+zero on the whole chart. This is stronger than merely having zero scalar
+density at a nonvacuum null-matter configuration. At each original site,
+the six-face Palatini density f_x is exactly quadratic in that site's
+coframe, with every shared Lorentz link independent. Let F(f,zeta) be
+the actual field-dependent part of the complete finite compiler valuation,
+including all aborts, stage entropy and the stopped occupation E_N.
+The field-independent prefix is retained in the actual baseline. Its local
+slope c(zeta)=partial_f F(0,zeta) is required to be nonzero. The proof
+gives an unconditional nonzero slope for the one-stage CQ ledger;
+the more general finite-cap statement retains its explicit slope test.
+The positive entropy term of an absolute Book binding has its own
+nonzero slope, but this does not dispose of its independent absolute
+normalizer.
+
+The original positive trace multiplicities m_x are retained. Define
+
+\[
+ B(\zeta)=S_{\rm CQ}(f_x=0\text{ for all }x,\zeta),\qquad
+ r_x^2=\frac{F(f_x,\zeta)-F(0,\zeta)}
+                  {c(\zeta)f_x},\qquad r_x|_{f_x=0}=1.
+\]
+
+Any actual common prefix is included once in B according to the
+programme's original ledger, not once per site by convention. The
+quotient has a regular extension at f_x=0. With
+Theta(e_x)=r_x e_x, and with all links and history variables retained,
+
+\[
+ S_{\rm CQ}=S_0\circ\Theta,\qquad
+ S_0=B(\zeta)+c(\zeta)\sum_xm_xf_x,\qquad
+ DS_{\rm CQ}=D\Theta^T(DS_0)\circ\Theta .
+\]
+
+This is an exact finite identity on the stated chart. Its 16-component
+coframe Jacobian has determinant chi^7 (partial_f F)/c > 0 near f=0,
+where chi=r_x^2. Thus Theta is locally invertible without a nondegenerate
+internal Hessian or a submersion hypothesis on Df. Geometric critical
+fields and, at full roots, the complete Hessian inertia are transported. The weighted Palatini target is kept explicit:
+fixed nonuniform trace weights require the already-owned
+source-compatible operational coframe, and moving weights require
+their full derivative. The internal equations reduce to DB=0 on the
+geometric shell; they are not deleted.
+
+This removes an entire matching requirement: every higher scalar
+geometry correction in this actual complete compiler valuation need
+not equal the old J2 coefficients. The equations can be equivalent
+through one explicit coframe map. The result does not prove that the
+compulsory Book03 Info is CQ entropy, that a geometric input is natively
+written, or that the corresponding stationary fields minimize an open
+full-field price.
+
+### Why the same map does not yet close the primary nonvacuum family
+
+The configured original matter query has opposite coframe degree:
+under e -> r e, f -> r^2 f whereas q_m -> r^(-2) q_m.
+It is not the separately proposed densitized matter action.
+The complete-compiler proof tests the actual two-band determinant
+at the one-stage cap and proves a nonzero quadratic correction in
+the radially balanced density direction. In fact, the true valuation
+lies on the wrong side of the arithmetic-geometric-mean bound for
+any positive coframe scale along one side of that direction.
+Thus even this successful vacuum composition cannot be promoted to
+a joint nonvacuum equation equivalence by the same radial map.
+This is a boundary of that proposed map on the actual density chart,
+not a no-go for a joint coframe/matter/history transformation.
+
+### The two other cross-repository substitutions
+
+[The complete Perron/marked-source companion](sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/PERRON_COMPLETE_MARKED_SOURCE.md)
+proves an exact similarity between the full all-branch CAR CP transfer
+and a unital Doob transfer. Its unmarked spectral radius is the
+original scalar Perron eigenvalue; complete finite path weights are
+also unchanged for moving normalized CAR preparation. The paid
+source is instead the derivative of the genuinely price-marked
+transfer. This places the actual prefix, compiler occupation and
+clock terms of DB in one finite formula, rather than interpreting a
+telescoping endpoint term as cancellation of the whole price.
+
+[The canonical-generator companion](sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/CANONICAL_GENERATOR_AND_PRICE_INTERFACE.md)
+consumes the formal integer/rational two-tick owner. On a declared
+local real lift it integrates the existing update to its exact
+generating function and partial Legendre transform. The latter is
+a saddle for the same canonical relation. The full cotangent lift
+of Theta retains the history momenta as well. These are concrete
+ways to transport stationary equations without assuming that an
+Einstein action is a minimum in all fields. Their actual Book-price,
+phase-space readout and physical-time binding remains unproved.
+
+The remaining application is now narrower. Test the actual compulsory
+complete valuation on the same preparation, clock and field carrier:
+its source must include the displayed DB, and its nonvacuum part
+must pass a genuine joint equation-equivalence or stationary-law
+test. A conformal-only correction, unmarked Perron normalization,
+or a canonical generating function without its paid-price binding
+does not perform that substitution. The original primary positive
+family and GR_closed=false remain unchanged.
+
+The parallel score-saturation and strict f-divergence results in section 8
+are preserved. A positive distance and a saddle generating function have
+different boundary/data contracts. The current composition changes neither
+that conclusion nor the parallel Golden17 oriented-source/code-gain test.
+See the [integrated analytical review and execution receipt](sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/COMPILER_COFRAME_PERRON_CANONICAL_REVIEW.md).
