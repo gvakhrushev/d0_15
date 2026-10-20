@@ -3792,6 +3792,17 @@ with estimates uniform under refinement.  Only after those steps can the
 owner-topology `o(h^2)` response statement, or an admissible response-gap
 counterexample, be promoted to a task-level terminal.
 
+One exact slice of the interior part of that spectral route is now closed:
+at `rho=(1,x,y,-1)`, the four selected 68-by-68 minors have no common zero
+on `(C*)^2`, so the phase-1/2 interior block has row rank 68 throughout this
+fiber. The proof reconstructs the minors by bounded CRT and gives the exact
+resultant gcd `x^230`; see
+[`A4D_THREE_RATIO_FIBER_REDUCTION.md`](A4D_THREE_RATIO_FIBER_REDUCTION.md)
+and its linked certificate. This slice result leaves the 28-dimensional
+interior right kernel, the remaining boundary rows, the generic three-ratio
+locus, full-symbol compact-complement rank, and the nonlinear response gate
+open. It is not a task-level application or H_TORUS proof.
+
 The exact [designated-germ normalization and tower audit](A4D_DESIGNATED_GERM_SCHUR_NORMALIZATION_AUDIT.md)
 contracts #273's independent Schur/Einstein symbol with the **same** normal
 Hessian as this task's pinned #310 response. On that input the response is
