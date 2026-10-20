@@ -123,3 +123,20 @@ The standalone dependency-free checker in sources/d0_car16_hodge_palatinian_2026
 Independent JS integer tests were executed and passed on the same formulas. This document does not assert a remote CI or Lean build of the NEW checker; the consumed original Lean owners are separate.
 
 **GR_closed=false. No PR/BOOK/CORE promotion, no actual native Book trace selector, no full128 execution mapping, no moving physical input or raw #216 closure.**
+
+## 6. Direct positive complete detector reading of the CHIRALITY carrier (no new state)
+
+The original real CAR16 operator Gamma is a self-adjoint involution, with Tr Gamma=0. Therefore it has **already on the original 16-state carrier** the orthogonal resolution
+
+    E_plus=(I_16+Gamma)/2,       E_minus=(I_16−Gamma)/2,
+    E_plus²=E_plus, E_minus²=E_minus,
+    E_plus E_minus=0, E_plus+E_minus=I_16,
+    rank(E_plus)=rank(E_minus)=8.
+
+For any actual normalized CAR state rho, the TWO mathematical Born outcomes are both retained and obey p±=Tr(rho E±)≥0, p++p−=1, and p+−p−=Tr(rho Gamma). This is not an invented signed quasi-probability or a postselected success branch.
+
+On the unique grade-two sector, the same compressed Gamma=B gives rank-three +1 and rank-three −1 spectral eigenspaces. In the Lorentz signature the genuine Hodge is J=B M_eta and has J²=−I; after complexification, its two Hodge eigenspaces (eigenvalues ±i) likewise have dimension 3 each. These are two DIFFERENT splits: real CAR involution vs Lorentzian Hodge complex structure. Do not silently equate their individual eigenvectors or assign the two alpha canonizations to them.
+
+This positive PVM establishes that the **orientation word itself is recordable on the original CAR16 mathematical carrier with all outcomes present**. It does NOT establish that the complete foundational D0 Golden/Julia controller can implement the test with native paid clock and work, or that the proposed physical Book action takes its average or its coherent path-ordered interference with curvature. In particular, a single Gamma PVM does not measure Tr(Gamma W) for an arbitrary nonunitary Lorentz transport W without an additional, paid reference/comparison construction.
+
+**Sharpened physical consumer:** on one original executed full128/oldRIGHT/CAR/clock programme, determine whether its actually allowed measurement algebra and full original Cost−Info source retain this ordered chirality signal. If yes, use the EXACT J_CAR=J_owned realization to compare the SAME physical first Euler covector with all original 16+24+matter rows. If no, the algebraic Hodge realization alone supplies no Einstein action.
