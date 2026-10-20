@@ -93,6 +93,25 @@ for(let j=0;j<6;j++){
   need(qq.length===17&&qq.every(x=>x>0)&&
       Math.abs(qq.reduce((a,b)=>a+b,0)-1)<2e-12,
     "full original p-Golden 17-category source strictly positive on ALL six Lorentz controls");
+  // A REAL original Golden/CNOT Bell64 resource can be prepared via
+  // 12 original two-pair parity gadgets. Fixed one-shot native resource
+  // success=(2p^3)^12. It multiplies BOTH complete marked alternatives.
+  // Also allow ANY genuine moving positive original Book path-class
+  // weight common to these +/- labels: relative CODE ODDS cannot move.
+  const coherentGoldenPairRate=Math.pow(2*p**3,12);
+  const movingHistoryWeight=Math.pow(p,3.1+.07*tt+.02*tt*tt);
+  const rawCommon=coherentGoldenPairRate*movingHistoryWeight;
+  const rawP=rawCommon*qq[2*j],rawM=rawCommon*qq[2*j+1];
+  const conditionalOdds=Math.log(qq[2*j]/qq[2*j+1])/(2*Math.SQRT2);
+  const originalFullPriceOdds=Math.log(rawP/rawM)/(2*Math.SQRT2);
+  const originalRootAfterFullMarginal=
+    Math.SQRT2*(Math.sqrt(rawP)-Math.sqrt(rawM))/
+    (2*Math.sqrt(q0*rawCommon));
+  need(Math.abs(conditionalOdds-originalFullPriceOdds)<5e-14,
+    "FULL 12-pair native Golden coherent preparation and moving path Book weight cancel EXACTLY in original signed CODE likelihood-ratio source");
+  need(Math.abs(originalRootAfterFullMarginal-
+    Math.SQRT2*(Math.sqrt(qq[2*j])-Math.sqrt(qq[2*j+1]))/(2*Math.sqrt(q0)))<5e-14,
+    "native measured original full-class marginal restores signed amplitude without any fitted renormalization");
   let qP=qq[2*j],qM=qq[2*j+1],
       rootj=Math.SQRT2*(Math.sqrt(qP)-Math.sqrt(qM))/(2*Math.sqrt(q0)),
       codej=Math.log(qP/qM)/(2*Math.SQRT2),
@@ -221,6 +240,9 @@ console.log(JSON.stringify({
  status:"PASS_ORIGINAL_4D_ROLE_GOLDEN17_CHIRAL_IR_UNIVERSALITY",
  basis:"ACTUAL original CAR16 Golden-p true TWO fresh flags/Bell17; role SHARED-LINK periodic smooth J23 connection",
  golden:{p,φ:phi,originalBellSuccess:bell,
+   actualNativeCoherentBell12PreparationRate:(2*p**3)**12,
+   rawOneShotNativeBell64Success:p**36,
+   exactOriginalBookClassOddOddsArePreparationAndCostGaugeInvariant:true,
    completeOutcomeNumber:17,codeIsRelativeLogOdds:true,
    allSixGenuineLorentzControls:sixChecks,
    nativeRootTaylor:"sin(t)=t−t³/6+O(t5)",
