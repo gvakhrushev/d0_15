@@ -438,4 +438,65 @@ theorem nativeQ8PositiveCenterAllDarkCertain (n : ℕ) :
   simp
 
 
+/-! ## Existing reversible record makes BOTH programme and register necessary
+
+Even with only ONE native Q8 chronological programme bit, the already
+owned reversible \`FiniteProtocolClock.register\` preserves its previous
+record input.  On the full four-state (programme,record) carrier the
+current Golden port has only TWO possible probabilities, whereas the
+profile containing an optional ONE registered future comparison is
+faithful on all FOUR states. Thus the minimal retained whole-history
+memory is TWO bits, not merely its one visible port bit. This is the
+literal-native analogue of the general hiddenBitExecution theorem.
+-/
+
+/-- Current and one-future-step original Golden port probabilities
+together determine the entire original programme+record pair. -/
+theorem nativeQ8RecordedProgram_futureProfile_injective :
+    Function.Injective nativeQ8RecordedProgramFuture.profile := by
+  intro s t h
+  have h0 : nativeQ8ProgramPort s.2 = nativeQ8ProgramPort t.2 := by
+    simpa [nativeQ8RecordedProgramFuture,
+      D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.profile,
+      D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.run] using
+      (congrFun (congrFun h []) ())
+  have h1 : nativeQ8ProgramPort (Bool.xor s.1 s.2) =
+      nativeQ8ProgramPort (Bool.xor t.1 t.2) := by
+    simpa [nativeQ8RecordedProgramFuture,
+      D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.profile,
+      D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.run,
+      D0.Representation.FiniteProtocolClock.register] using
+      (congrFun (congrFun h [true]) ())
+  have e0 := nativeQ8ProgramPort_injective h0
+  have e1 := nativeQ8ProgramPort_injective h1
+  rcases s with ⟨sp,sr⟩
+  rcases t with ⟨tp,tr⟩
+  dsimp at e0 e1
+  cases sp <;> cases sr <;> cases tp <;> cases tr <;>
+    simp_all [Bool.xor]
+
+/-- The ORIGINAL existing Q8 programme bit and reversible retained
+record bit cost exactly TWO BITS of future-sufficient state. No third
+witness line, new Q8 physics, or free Born truth oracle is assumed. -/
+theorem nativeQ8RecordedProgram_futureMemoryAtLeastFour
+    {Code : Type} [Fintype Code]
+    (encode : nativeQ8RecordedProgramFuture.State → Code)
+    (decode : Code → List nativeQ8RecordedProgramFuture.Action →
+      nativeQ8RecordedProgramFuture.Test →
+        nativeQ8RecordedProgramFuture.Outcome)
+    (correct : ∀ s, decode (encode s) =
+      nativeQ8RecordedProgramFuture.profile s) :
+    4 ≤ Fintype.card Code := by
+  have hinj : Function.Injective encode := by
+    intro s t he
+    apply nativeQ8RecordedProgram_futureProfile_injective
+    calc
+      nativeQ8RecordedProgramFuture.profile s =
+          decode (encode s) := (correct s).symm
+      _ = decode (encode t) := by rw [he]
+      _ = nativeQ8RecordedProgramFuture.profile t := correct t
+  simpa [nativeQ8RecordedProgramFuture] using
+    (Fintype.card_le_of_injective encode hinj)
+
+
 end D0.Representation.OrderMemoryControl
