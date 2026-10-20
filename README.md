@@ -10,6 +10,14 @@ The [same-history price/source intake](02_REGISTRY/research/D0_SAME_HISTORY_PRIC
 
 The [whole-family CAR/Book/causal synthesis](02_REGISTRY/research/A4D_CAUSAL_BOOK_SOURCE_TO_EXACT_GR_SYNTHESIS_2026_10_20.md) now supplies the exact geometric first source on all 16+24 directions through a complete Golden reporting component on the entire spatial carrier. It resolves that component's input-preparation source and the generated execution-state equations, with its paid repetition count retained. The next application computes the **full** absolute Book Info/work effect and primitive admission on this same programme; the known reporting Cost is not substituted for that full price. The ordinary targeted certificate and independent analytical review accompany the proof.
 
+The [stopped native minimum and full J2 source](02_REGISTRY/research/A4D_NATIVE_STOPPED_MINIMUM_TO_J2_SOURCE_2026_10_20.md)
+now covers every fixed prefix price T >= 5 and Golden-call price ell >= 1.
+Every minimizing repeat protocol retains a nonzero multiplier of the original
+all40+2 source. A genuine local minimum of the actual optimized price in the
+full field space therefore requires DJ2 = 0, including at protocol ties.
+The required stopping task, Book Info and complete physical price binding
+remain explicit premises. All failures and conditional work are retained.
+
 The [complete-record information and price application](02_REGISTRY/research/A4D_NATIVE_COMPLETE_RECORD_INFO_PRICE_SELECTION_2026_10_20.md)
 identifies the original full128 coherent limit as one coherent mode, computes
 its whole pointer entropy source, and solves a specified fresh-record price

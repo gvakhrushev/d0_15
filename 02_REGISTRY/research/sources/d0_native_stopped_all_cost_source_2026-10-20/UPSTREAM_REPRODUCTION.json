@@ -1,0 +1,30 @@
+{
+  "correction": "Exactly one token-level factor correction: target=-D(2)/(pp**D(\"1.5\")) becomes target=-D(1)/(pp**D(\"1.5\")). No tolerance or assertion changed.",
+  "runs": {
+    "corrected": {
+      "checker_sha256": "e6f20aa5c9850635165cdaff08f7c4799cdd441aced84be2d64739ac771f901f",
+      "command": [
+        "python",
+        "corrected_check_stopped_source_minimum.py"
+      ],
+      "exit_code": 0,
+      "log_file": "CORRECTED_REPRODUCTION.log",
+      "log_sha256": "ae3868f90b3ace0dd3593de00e8b3831a65ca3330d1dcc0543afb6f5c9017d8d",
+      "status": "PASS"
+    },
+    "upstream": {
+      "checker_sha256": "e022977c672f9c64c9c3ee27d652b009508a2b584b46232ec88c270ff61bbe70",
+      "command": [
+        "python",
+        "upstream_check_stopped_source_minimum.py"
+      ],
+      "exit_code": 1,
+      "log_file": "UPSTREAM_REPRODUCTION.log",
+      "log_sha256": "1e58a8f76618a2d733facbeaa23135fc48539450b6157fbcaa48a3af1d2a596c",
+      "status": "FAILED"
+    }
+  },
+  "schema": 1,
+  "scope": "Normal Python reproduces the historical failure and corrected PASS. The independent new all-T checker uses active checks under -O.",
+  "source_commit": "f22c1864bd85e097166abd75dc048164d8d63c65"
+}

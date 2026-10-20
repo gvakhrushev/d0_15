@@ -2165,6 +2165,18 @@ full-field patch; compact C3 approximation is retained, while exact roots
 require actual constrained critical-family stability. Same write surfaces
 and one bounded helper; no old scientific replay.
 
+## Current stopped-minimum source extension — 20 October 2026
+
+The [all-cost native stopped theorem](../../02_REGISTRY/research/A4D_NATIVE_STOPPED_MINIMUM_TO_J2_SOURCE_2026_10_20.md)
+removes the upper bound on fixed prefix cost and the exact-unit Golden-cost
+condition: every T >= 5, ell >= 1 minimum retains a nonzero original DJ2
+multiplier. A genuine local minimum of actual complete-record branches in
+the full field space requires DJ2 = 0, including ties. Conditional work,
+failed attempts and the corrected upstream finite-cap source are retained.
+The compulsory task, Book Info and complete native price/admission remain
+open. This stays within the existing native-realization owner and does not
+promote lifecycle, assembly, physical GR or raw216.
+
 ## Current bounded complete-price application — 20 October 2026
 
 Continue the existing #334 execution through the
