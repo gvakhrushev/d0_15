@@ -1,6 +1,6 @@
 # D0 -> GR: a certified homogeneous metric Hessian gap at the EXACT full-HJR flat root
 
-20 October 2026. New bounded same-owner #334 mathematical consumer. Task: EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE. Research, not a new action, native selector, certificate promotion, or GR closure. Consumes the independently accepted full-CAR16/full4096-momentum/full128-Riesz Hessian already published in A4D_EXACT_CURVED_WHOLE_HJR_FIXED_COLLAR_ROOT_2026_10_20.md, §5, and its unchanged original COLLLAR source data.
+20 October 2026. New bounded same-owner #334 mathematical consumer. Task: EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE. Research, not a new action, native selector, certificate promotion, or GR closure. Consumes the independently accepted full-CAR16/full4096-momentum/full128-Riesz Hessian already published in A4D_EXACT_CURVED_WHOLE_HJR_FIXED_COLLAR_ROOT_2026_10_20.md, §5, and its unchanged original COLLAR source data.
 
 ## 1. Why this is the NEXT reverse-Einstein comparison
 
@@ -129,3 +129,54 @@ New checker (no new thermal replay):
 It consumes the precise original full-HJR q=0 Arb source bytes and verifies the five internal Gershgorin margins, the three physical metric midpoint-Schur eigenvalue bound by row margins, the coarse rigorous operator error, and original non-gauge metric generators. All arithmetic of the published decimals is exact Fraction arithmetic; the only estimates are fully explicit rational spectral norm bounds.
 
 Result status: original accepted Hessian CONSUMED; exact algebraic consequence computed in this turn, independently verified checker and scientific acceptance still required. No BOOK/claims/assembly goal is promoted.
+
+
+## 7. The ORIGINAL Book third-tick conformal solder CANNOT by itself remove this HJR zero-mode source
+
+This is an exact consumption of the independently constructed original
+Book third-tick weighted-star coframe mechanism, not a claim it is compulsory
+Book03 physics. Its genuine original scalar pressure is
+\(W_x=\operatorname{Tr}K_x^3/7722>0\); for the chosen homogeneous
+translation-covariant site chart, \(W_x=W\) at a constant coframe and identity
+proper links. The marked finite geometric **candidate** is
+\[
+ S_{\rm weighted}=\sum_x W_x(e,U,z)\,
+    P_{\star,x}(e_x,U),
+ \qquad \widetilde e_x=\sqrt{W_x}\,e_x.
+\]
+At any spatially/temporally homogeneous constant coframe and all
+\(U_r=I\), the original \(P_{\star,x}\) is identically ZERO at every site.
+For any coframe-only homogeneous curve, the weighted action therefore
+vanishes exactly, even if its Book weights vary with that coframe.
+For homogeneous link variations the first derivative of every original
+based face at \(U=I\) is zero, so each local
+\(D_U P_{\star,x}=0\) as well. Product differentiation then yields on the
+common homogeneous flat chart
+\[
+ \boxed{
+ D_e^2 S_{\rm weighted}=0,\qquad
+ D_eD_U S_{\rm weighted}=0
+ \quad\text{for the homogeneous coframe/link directions}.
+ }\tag{7}
+\]
+Thus ANY finite smooth field-dependent positive scalar \(W_x\) of this
+native third-tick form, under the declared homogeneous and
+translation-covariant source hypotheses, leaves the **homogeneous pure
+Palatini metric Schur block zero**. Even the *full* moving \(DW_x\) source
+cannot manufacture the strictly positive bare HJR metric block (4).
+An invertible local pressure dressing
+\(\widetilde e_x=\sqrt{W_x}e_x\) faithfully transports the zero-mode equations;
+it does NOT identify the different conditional HJR action with this
+weighted Palatini action.
+
+This is the precise strategic fork. One can pursue the physically paid
+Golden-AF / original Book weighted Palatini construction as a genuinely
+distinct **conditional** action candidate and prove its native selected
+Cost−Info source and operational metric; or one can show an actual further
+native component or constraint of the ORIGINAL full HJR cancels the
+strict \(q=0\) metric response. A positive scalar Book pressure multiplying
+a curvature-only star is not, by itself, that cancellation. Nonuniform
+site weights breaking the homogeneous/translation-equivariant premise,
+true matter/potential terms, alternate admitted field configurations,
+and the full source on their actual metric remain separately open.
+Do not silently rename these two conditional actions as the same run.
