@@ -128,3 +128,16 @@ The only non-arbitrary **based** comparison reference available without selectin
 Thus **choosing the intrinsic groupoid identity as a reference adds no arbitrary continuous Lorentz element**. That is a genuine M1 economy gain over choosing an external background holonomy. It does **not** prove that BOOK03's mandatory physical Cost−Info equals the signed relative void score (4), that the many UV loop intensities are actually paid or admitted future experiments, or that the identity word may be substituted for the positive Cost of the real comparator's execution. The distinction is exact: a canonical mathematical reference is not yet a compulsory, cost-complete physical *comparison action*.
 
 A potential forcing theorem has a now sharply defined premise: **IF** the foundational ActionProtocol requires a reference-normalized signed prediction score for closed futures, and its reference is the intrinsic based path unit, and it compiles the actual original feedback determinant on BOTH arms with all work/archive charges, THEN its scalar score is the unique matched cocycle (4), hence the unwanted flat pressure cancels without a fitted coefficient. The three bold premises are **not** yet certified. The original P25 10+24 mixed test (6) is still necessary to establish that the surviving curvature source is precisely the previously fixed Einstein/Palatini one. In particular M1 alone does not entail those premises by rhetoric; otherwise this would be the old unproved selection leap in new terminology.
+
+
+### Book03 code-base conversion is fixed, not a fit
+
+BOOK03 §03.3.0 already fixes the native exponential base \(w=\varphi^{-S_{\varphi}}\); it does NOT license choosing an extra coupling constant when reading the score of an admitted event. If, and only if, a specific closed-future void outcome with physical probability (2) is admitted as the actually charged code event, its ideal information surprisal in the **original Golden code units** is forced to be
+\[
+\boxed{
+S_\varphi^{\rm void}(A)
+=-\log_\varphi\Pr_A(\text{void})
+=\frac{\mathcal J(A)}{\ln\varphi}.
+}\tag{11}
+\]
+For a truly admitted **paired** reference outcome the comparative ideal surprisal is similarly \(\mathscr J_{\rm rel}/\ln\varphi\). This fixes the *unit conversion*, not a free gravitational normalization. Actual finite prefix code lengths are integer and may have their own termination/rounding/clock costs; ideal real surprisal is not a licence to discard those. In particular (11) does not force the physical *action* to be the ideal surprisal of the artificially constructed Poisson loop ensemble or show an original Golden primitive realizes its entire closed-future probability distribution. It is an exact **normalization constraint for any claimed physical admission**.
