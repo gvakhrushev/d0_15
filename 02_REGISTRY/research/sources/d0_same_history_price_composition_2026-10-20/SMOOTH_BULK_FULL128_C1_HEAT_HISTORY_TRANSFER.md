@@ -214,3 +214,41 @@ while the original star/Golden-J2 flat vacuum source is zero. At fixed full RIGH
 **Physical discriminatory conclusion:** on the SAME 16L⁴ site/fullCAR carrier with the SAME original normalized Riesz128 input and full128 tape, the *currently derived* one-preparation original port Cost and its classical pointer Shannon candidate are **subextensive**, while the bare HJR thermal/feedback source is extensive. No multiplication by the number of outcomes 128^m is legitimate: actual normalized full-history probabilities already sum to one. Therefore a full native Book03 completion that is genuinely Einstein-stationary must supply another **bulk-extensive, field-sensitive** Info/reference/work/clock/ensemble preparation source, or change the conditional physical action through a genuinely derived nonadditive binding. Simply lengthening the already-paid rank128 tape, adding a finite fixed number of such tapes, or ignoring Γ cannot work.
 
 This still does NOT refute D0: a compulsory per-site complete archive, a different admitted physical state/clock distribution, an explicitly proved extensive reference/Info accounting or a non-additive native operator law could alter the scaling. But this is a precise "one normalized oldRIGHT128 programme cannot pay for the bulk pressure" separator on the SAME flat physical-carrier root, not a philosophical missing-action remark.
+
+
+## 8. EVEN STRONGER: the ENTIRE coherent retained original full128 tape is operationally blind to the flat low-shell scale in the continuum
+
+The UV/IR mismatch is **not merely** a Shannon-vs-Cost normalization concern. On the same original flat periodic coframe \(v_r=h\nu\sqrt\rho\,e_r\), \(\rho\in[\rho_-,1]\) and unchanged original full rank128 Riesz-shell preparation \(|\Psi_{\rm in}\rangle\) with its **entire** oldRIGHT correlations, every one of the eight first-shell momenta has the same exact CAR16 energy
+\[
+\lambda_{\rho,L}=\rho\,4\nu^2\sin^2(\pi/L)\le 4\nu^2\pi^2/L^2 .
+\]
+The ORIGINAL **no-nonblank-output Kraus row** of each genuine full128 round is exactly \(K_{(b=0,k=0)}=B=I-\alpha\Delta\) (the original \`A4D_COMPLETE_RECORD_CHANNEL_AND_NATIVE_COST_SOURCE\` §2; do not confuse this output event with the OPTIONAL Golden-thinned port mark). Since \(B\) is the same scalar \(b_{\rho,L}=1-\alpha\lambda_{\rho,L}\) on the entire original shell, the exact \(m=256L^2\) step all-blank probability is
+\[
+\boxed{
+P_{\rho,L}(\text{every one of m labels blank})
+=(1-\alpha\lambda_{\rho,L})^{2m},
+\quad
+P_{\rho,L}(\text{any actual nonblank})
+\le2m\alpha\lambda_{\rho,L}
+=4p^2\lambda_{\rho,L}
+\le {16p^2\nu^2\pi^2\over L^2}.
+}\tag{26}
+\]
+Every original port, k-label, oldRIGHT state and chronological failure is retained; no stochastic independence of actual outputs has been assumed. Equation (26) follows from a SINGLE exact complete-word Kraus amplitude \(B^m|\Psi_{\rm in}\rangle\), not from multiplying guessed probabilities after ignoring back-action.
+
+Let \(|\mathcal V_{\rho,L}\rangle\) be the genuinely purified coherent result of composing the **original m complete full128 Stinespring rounds** on this input, with every historical register present. Let \(|{\bf blank}\rangle\otimes|\Psi_{\rm in}\rangle\) be the common identical all-blank record with unmodified initial data+oldRIGHT. Because every nonblank word is orthogonal in the record and the blank-branch amplitude is exactly \(b_{\rho,L}^{m}|\Psi_{\rm in}\rangle\),
+\[
+\begin{aligned}
+\bigl\||\mathcal V_{\rho,L}\rangle-
+ |{\bf blank}\rangle|\Psi_{\rm in}\rangle\bigr\|^2
+&=(1-b_{\rho,L}^m)^2+(1-b_{\rho,L}^{2m})\\
+&=2(1-b_{\rho,L}^m)
+\le2m\alpha\lambda_{\rho,L}\\
+&\le {8p^2\nu^2\pi^2\over L^2}.
+\end{aligned}\tag{27}
+\]
+Thus \(\||\mathcal V_{\rho,L}\rangle-|{\bf blank}\rangle|\Psi_{\rm in}\rangle\|\le\sqrt8\,p\nu\pi/L\). For any TWO constant scales \(\rho,\rho'\) in this fixed chart, their entire normalized final **coherent record+data+oldRIGHT** density matrices have trace distance \(O(1/L)\) (and the purely classical pointer-record distributions have total variation \(O(1/L^2)\) by (26)). In particular **every** norm-bounded subsequently admitted POVM effect on THIS SAME complete quantum tape, including any interference across all recorded outcomes, has an \(O(1/L)\) difference in event probability; measuring only the orthogonal pointer tape is even less informative, \(O(1/L^2)\). No subsequent bounded test on these retained registers alone restores finite local scale sensitivity at fixed one-programme input. A physical observer which independently reads/modifies the coframe, or a new prepared high-energy/local reference, is a DIFFERENT operation and must be explicitly admitted and paid.
+
+This is the sharpest **same-preparation quantitative obstruction** to reading the formal HJR bulk pressure as the Cost–Info response of one completed prepared Golden programme: the HJR feedback/coframe source is extensive \(+\Omega(L^4)\) even at the genuine physical flat scale, while every bounded measurement of the one original rank128 quantum execution loses all scale information as \(L\to\infty\). It does NOT follow that an action-gradient necessarily vanishes from total-variation convergence alone (a rapidly changing price can have a nonvanishing derivative), so the rigorous source mismatch remains separately certified in (23)–(25). Their combination, **both a derivative bound and a full-operational-norm bound**, makes the missing Book03 binding explicit.
+
+**Physical consequence:** any positive Einstein closure that keeps the original entire counting-trace HJR feedback MUST derive a genuinely **bulk-extensive** native state ensemble/operation, a nontrivial charged Info/relative-reference source, or a different justified operator/action semantics. Merely applying an infinite number of abstract bounded future readouts to the *same fixed completed tape* does not change (27), whereas running many independent physically paid preparations can change the distinguishability budget. This is not a general impossibility theorem for D0 or an arbitrary gravity observer; it is a rigorous **one fullRIGHT128 prepared programme versus entire HJR UV spectral trace** separation on the original identical flat carrier.
