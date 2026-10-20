@@ -16,7 +16,6 @@ beta_upper = 2*p2_upper
 assert beta_lower == F(3,4) and beta_upper == F(4,5)
 # p^2 = (3-sqrt(5))/2, sqrt(5) between 11/5 and 9/4.
 assert F(11,5)**2 < 5 < F(9,4)**2
-assert p2_lower < F(3,2)-F(5**0,1)  if False else True
 # The original exact spectrum satisfies mu<=16, average=8.
 mu_max, mu_average = 16, 8
 assert beta_upper*mu_max*F(80,79) < 13
