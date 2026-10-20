@@ -248,3 +248,49 @@ with all binding/gauge/quotient hypotheses retained. Its 45 propositions,
 The own history/preparation/action/refinement law remains the one G0 target;
 no alternative lift, gauge preparation, physical postulate, claim promotion,
 parent retirement or task registration is introduced. Lifecycle is REVIEW.
+
+## User-directed global result composition and README/main intake — 2026-10-20
+
+Phase: native realization / final composition. The user explicitly requested
+one synthesis using the accumulated results together and an update of main
+and README. Scientific ownership stays in Draft #334; reuse shared CONTROL
+#394 for the overlapping agent/README handoff. Preserve its TRIZ/Beatty
+content and the prior same-carrier field-minimum exclusion.
+
+The bounded new [global composition](../../02_REGISTRY/research/A4D_GLOBAL_RESULT_COMPOSITION_2026_10_20.md)
+connects actual future probabilities to primary curvature, original Julia
+odds to the entire soldered density, complete compiler/clock histories to
+explicit remaining price sources, and the fixed-Q writer image to an
+observable reachability gap. It consumes the parallel original all-jet
+result with provenance. The same-prefix two-ending prospective test retains
+equal continuation partition weights and actual Book anchoring. A sufficient
+field-and-price realization route and an independently derived stationary-law
+route remain distinct; the full ambient minimum obstruction is preserved.
+
+Inputs are 32 immutable raw snapshots at science 685cda16, main 90db3fe6,
+and parallel writer/Julia checkpoint f09e83e5; the packet's SOURCE_INPUTS
+contains full commits, original paths, Git blobs and SHA-256 values. Its
+same-carrier, sensitivity, calibration, full-price and variation assumptions
+are explicit. Mathematical review is independent of each contribution's
+author. The decisive new check is one read-only ordinary certificate with
+13 narrow groups; original geometry/Lean/full128 suites are not invoked by
+that wrapper. Final Ready CI follows the existing affected-input closure.
+
+Write scope: the new primary research note, its proof/input/review/check
+packet and ordinary certificate; bounded source-copy receipt; root README,
+AGENTS, this existing task brief, 00_WORK/README and the central route memo.
+No claims, BOOK text, formal theorem, registry acceptance or tooling change.
+The parent substitution is a controlled observation-to-geometry map plus
+exact full-price and writer-image composition tests. Full physical price,
+native admission/variation, universal descent/Ward/scale and GR closure
+remain open. Main intake does not merge or retire the scientific EXPENSIVE
+execution, create a duplicate task, or import unrelated source-branch work.
+
+The bounded follow-up also consumes the parallel source changes through
+24b158a6: the actual four-copy material response supplies the likelihood
+for the frozen operational inverse on its narrower finite-code/reference
+interface. Its same-readiness skeleton, gain, pulse calibration and copy
+payment are retained in a separately cross-reviewed analytical addendum.
+The new paired-price and preparation/source results keep their own scope.
+The 48-file frozen science packet and its thirteen-group evidence are
+unchanged; this further proof application has no additional science replay.

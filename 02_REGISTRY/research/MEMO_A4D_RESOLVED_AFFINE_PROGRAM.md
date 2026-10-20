@@ -7,6 +7,58 @@
 `dff7498b9071ad4d9fd1580b80829d91eb55f534`. Current research inputs retain their
 exact source pins in the [assembly](../gr_assembly/README.md#current-scientific-gate).
 
+## Global composition checkpoint: actual records, geometry, price and field image
+
+The [global result composition](A4D_GLOBAL_RESULT_COMPOSITION_2026_10_20.md)
+is now the canonical application map for the results below. It consumes
+the existing kernel/transfer, CAR, original Julia, all40/midpoint,
+compiler/Book, retained-clock, matched-reference, prospective and
+condensed/Golden-response owners in one argument. Its fifteen-family
+table assigns a consumer to each major result and retains all eighteen
+preserved leads with their actual roles.
+
+The new quantitative application reconstructs the primary metric and
+curvature from complete native future probabilities: five sites for the
+quadratic/cubic sector, nine for the whole owned common-harmonic polynomial
+space plus the independent radial source. Original Julia odds separately
+reconstruct the soldered density and all its jets through subdivision;
+this consumes the parallel original owner's all-jet result. Actual
+compiler occupation and paid repeat costs yield exact remaining source
+differences. The fixed-coordinate-pairing writer theorem then converts
+an observed profile difference into a distance from that writer's field
+image, with an explicit required moving-pairing escape.
+
+The current physical application is an admitted joint field-and-price
+step or independently derived native stationary law, joined to the
+same-prefix two-ending Julia/prospective valuation test. The latter
+requires equal full continuation partition weights and actual absolute
+Book anchoring. The complete Info/work source must satisfy the computed
+occupation/refinement differences before descending to the observable
+geometry. The prospective field-and-price graph is one sufficient
+realization route; it is not asserted necessary for every stationary-law
+derivation. The existing full-field minimum exclusion is retained.
+
+After that same source is physically selected and its internal equations
+solved, the original exact nonvacuum family and conditional universal
+Golden-response theorem consume it. No native admission, source descent,
+physical Ward/scale or GR completion is inferred merely from the new
+readout or thirteen finite checks. Continue #334; no new task or claim
+state is introduced. This checkpoint updates the next application of
+the historical sections below without relabelling their proof scope.
+
+The [parallel four-copy application](A4D_NATIVE_FOUR_COPY_TO_CURVATURE_APPLICATION_2026_10_20.md)
+adds a concrete positive substitution after that input freeze. The new
+exact LEFT-only response supplies the material likelihood of the
+operational inverse on its admitted finite geometry-code/reference
+interface, with a common paid logical skeleton and readiness. Its
+`1/(64 Lambda_h)` gain remains in the precision norm, and known pulse
+calibration or the explicit recorded preparation orbit remains required.
+The same companion incorporates the newer conditional paired-price,
+orientation, three-history source-span and actual HJR preparation results.
+These updates refine the current native application; they do not replace
+the frozen proofs, confer a continuous field writer on discrete codes,
+or identify a matched marginal with the entire original instrument.
+
 ## FIRST physical case — exact time-dependent NONVACUUM GR on each mesh
 
 This is now the **first positive application to read and consume** after
@@ -41,6 +93,66 @@ preserving equation-level transport, before broadening the
 nonlinear geometric class. If an alternate action produces an
 unremoved source on this shared carrier, it fails this candidate
 substitution unless that actual source is derived and controlled.
+
+## Next general-theory closure: one natural 2-jet source, TWO already exact witnesses
+
+Consume the [primary exact curved sector](D0_GR_PRIMARY_POSITIVE_CASE.md)
+and the [VSI/Lovelock two-witness theorem](A4D_VSI_LOVELOVK_TWO_WITNESS_UNIVERSAL_GR_SYNTHESIS_2026_10_20.md).
+The source-class theorem says: if the ONE full physically selected
+gravitational Euler response is metric-only, locally diffeomorphism-natural,
+symmetric, off-shell divergence-free and genuinely second-order, it is
+`aG+b g` in 4D. Its original genuinely vacuum Minkowski member
+forces `b=0`; one actually admitted sourced member then forces
+`kappa/a=-lambda_-`. A universal same-programme matter equation
+would therefore give the ENTIRE Einstein class, not only this
+Brinkmann sector. This uses existing E-ALLY/E-T4NAT, not a new
+external gravitational hypothesis.
+
+**Sharp firewall:** All Brinkmann metrics have `R=0`, while Ricci/Weyl
+can be nonzero; all polynomial curvature scalars/derivative contractions
+vanish (VSI). A full `R²` Euler correction is invisible even to all
+source rows on the exact family. Thus neither scalar-only detection
+nor matching more exact waves establishes physical GR. Derive the
+genuine source's metric-only `J²` descent, arbitrary local Diff
+naturality (not grid-only covariance), off-shell Ward and full
+Book/clock/Cost-Info/matter admission. Existing
+`positive_gr` and `raw216` are OPEN. This is a shortcut
+in PROOF ARCHITECTURE, not a shortcut that assumes those premises.
+
+## Stronger conditional gravitational universality: ONE Golden scale
+
+The [Golden blow-up + condensed metric-source theorem](A4D_GOLDEN_DISCRETE_BLOWUP_CONDENSED_GR_2026_10_20.md)
+provides a STRICTLY stronger structural route than the previously
+used second-jet Lovelock step. Let ONE fully paid, selected,
+internally stationary D0 gravitational Euler source genuinely descend
+to a metric-only, locally open-Diff-natural, off-shell conserved
+rank-(0,2) tensor differentiable at every flat Lorentz section.
+The ONE exact physical metric-scale identity
+`E[phi² g]=E[g]` then forces `E=aG` for ALL smooth metrics
+in its chart by Golden `phi^(-n)` normal-coordinate blow-up;
+it does not presuppose order-two response, continuous rescaling,
+a polynomial action or all-geometries coefficient matching.
+Alternatively, one local Diff-invariant, flat-smooth selected
+ACTION with `I[phi² g]=phi² I[g]+field-independent/boundary`
+supplies both Euler homogeneity and off-shell Ward, enough for
+the same conclusion. The positive exact Minkowski/nonvacuum
+Brinkmann witnesses fix `kappa/a=-lambda_-` only after they
+are proved genuine stationary solutions of that SAME complete
+native physical programme.
+
+The selected full Book03 H+J+R/Cost-Info/clock/preparation/source
+has NOT been proved to obey such a physical metric-scale law.
+The actual Golden archive step `Lambda_n=phi^n` is not a
+coframe/metric covariance theorem. Existing condensed-compatible
+heat has free price-visible new-block directions, so physical
+source descent requires the genuine full-history fibre-product
+equalizer and local test coverage; support-level profiniteness
+does not give smooth tangent operators. Bare HJR fails the
+one-step Golden scale test on the primary flat Brinkmann
+metric. The original second-jet/Lovelock route remains an
+alternative; `GR`, `positive_gr` and raw216 remain OPEN.
+This is a conditional proof architecture with one direct
+quantitative native test, NOT a promoted physical law.
 
 ## Architectural objective
 

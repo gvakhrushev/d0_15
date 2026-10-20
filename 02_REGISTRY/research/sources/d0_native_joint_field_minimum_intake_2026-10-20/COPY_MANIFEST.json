@@ -1,0 +1,398 @@
+{
+  "schema": 1,
+  "repository": "gvakhrushev/d0_15",
+  "source_pr": 334,
+  "source_commit": "ce3deb4a8d48f8057b9ee5fe6780adafb65aaa6a",
+  "main_base": "9498789c490143fcd46dfc61d7ef062db6846c19",
+  "scientific_files": [
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_JOINT_FIELD_MINIMUM_EXCLUSION_2026_10_20.md",
+      "source_commit": "ce3deb4a8d48f8057b9ee5fe6780adafb65aaa6a",
+      "git_blob": "bd0fe57263a8bb37cec51e60c56d28730def2646",
+      "mode": "100644",
+      "sha256": "3a13f82d4b1ef149328da05b62bd0485d1970db3ed4fb38aff044e98f2b6df1a",
+      "bytes": 14545
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_joint_field_minimum_check.py",
+      "source_commit": "ce3deb4a8d48f8057b9ee5fe6780adafb65aaa6a",
+      "git_blob": "e64f596644b2e9d876b38e9a0afcd43bab0f611b",
+      "mode": "100644",
+      "sha256": "f6a30356aa362d59034ef203f01799e43c962c7aaccf4a901145c429eeb07be8",
+      "bytes": 5137
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_joint_field_minimum_2026-10-20/COMPOSITION_REVIEW.md",
+      "source_commit": "ce3deb4a8d48f8057b9ee5fe6780adafb65aaa6a",
+      "git_blob": "fea8a03c76982120d8a8eb5e3721e7d45e896609",
+      "mode": "100644",
+      "sha256": "22f306e959c4b7e15866e0dc2ed4305657d058fae32943313ecda18cd6e30deb",
+      "bytes": 5770
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_joint_field_minimum_2026-10-20/CONDITIONAL_NOISE_SOURCE_NOTE.md",
+      "source_commit": "ce3deb4a8d48f8057b9ee5fe6780adafb65aaa6a",
+      "git_blob": "3595d47436e2efd41d5b03ec6ea6a36ced933b52",
+      "mode": "100644",
+      "sha256": "e74f07eb30b60acdc8d3d7f0865b0e0276869547f368fb001d67b0ca19f70c4b",
+      "bytes": 7572
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_joint_field_minimum_2026-10-20/FROZEN_REPLAY.json",
+      "source_commit": "ce3deb4a8d48f8057b9ee5fe6780adafb65aaa6a",
+      "git_blob": "c9de96aa2a923f24f5cfedfb3fba064513196433",
+      "mode": "100644",
+      "sha256": "adb10251dfebd439c4b50921d65b15b209aac1c375cc182ab41f9bd6e2d73c3b",
+      "bytes": 2644
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_joint_field_minimum_2026-10-20/INDEPENDENT_MINIMUM_REVIEW.md",
+      "source_commit": "ce3deb4a8d48f8057b9ee5fe6780adafb65aaa6a",
+      "git_blob": "dba03f7c146af052baefd10df3403397cd9685e7",
+      "mode": "100644",
+      "sha256": "c8a18c946697996934ee085bab05a9e87c8a4707f5c2ccb2821281b6f97224a8",
+      "bytes": 7622
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_joint_field_minimum_2026-10-20/INFO_CURRENT_RESULT.json",
+      "source_commit": "ce3deb4a8d48f8057b9ee5fe6780adafb65aaa6a",
+      "git_blob": "20a7a7d90e10f696c5052ad006d762b827ae2762",
+      "mode": "100644",
+      "sha256": "e6ffa47b1a18142eba3315e521f6d8e926621259970d849d054d78d12e1e8770",
+      "bytes": 974
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_joint_field_minimum_2026-10-20/INFO_INPUTS.json",
+      "source_commit": "ce3deb4a8d48f8057b9ee5fe6780adafb65aaa6a",
+      "git_blob": "34c93791806b5f4398932175e5dc062dd9113105",
+      "mode": "100644",
+      "sha256": "706a440e420f45e7dd4f76bb4ef253bb702acd5f7cd867529c2070cfc146970c",
+      "bytes": 1659
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_joint_field_minimum_2026-10-20/JOINT_FIELD_MINIMUM_OBSTRUCTION.md",
+      "source_commit": "ce3deb4a8d48f8057b9ee5fe6780adafb65aaa6a",
+      "git_blob": "aaaa7acdfb997eb0c530e13f974a1ae40ed9c98d",
+      "mode": "100644",
+      "sha256": "d14d72318229ac6102d38aa25f84e3617116257dea6a40fb4d3a6d1d3fe1fb54",
+      "bytes": 27060
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_joint_field_minimum_2026-10-20/JOINT_MINIMUM_AND_INFO_REVIEW.md",
+      "source_commit": "ce3deb4a8d48f8057b9ee5fe6780adafb65aaa6a",
+      "git_blob": "bb33789a14a68aa5184f91973535e50a714ffd22",
+      "mode": "100644",
+      "sha256": "edd9f13121dd354e3c122405461a1b3aa604c40f91ea63ef09a6516c1931e02b",
+      "bytes": 7048
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_joint_field_minimum_2026-10-20/PROSPECTIVE_FIELD_BRIDGE_RESULT.json",
+      "source_commit": "ce3deb4a8d48f8057b9ee5fe6780adafb65aaa6a",
+      "git_blob": "7c263f6320870ca140d9828782c802647a49b872",
+      "mode": "100644",
+      "sha256": "ee8b131d3e329f0c765b2802d46fe32d92a8b9638df33b74235d67b0efd77b06",
+      "bytes": 7028
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_joint_field_minimum_2026-10-20/PROSPECTIVE_FIELD_REALIZATION_BRIDGE.md",
+      "source_commit": "ce3deb4a8d48f8057b9ee5fe6780adafb65aaa6a",
+      "git_blob": "d9702cefb97f8da9f3435c5c88b26943ce64e838",
+      "mode": "100644",
+      "sha256": "26c9efbe6b6ffe3db57d0a7f43911cc4fa9defd387a11bb541d59cb4b0faffb1",
+      "bytes": 19366
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_joint_field_minimum_2026-10-20/README.md",
+      "source_commit": "ce3deb4a8d48f8057b9ee5fe6780adafb65aaa6a",
+      "git_blob": "419e61c4f6ac4c1ba0034fe9ca480e94e84d8b90",
+      "mode": "100644",
+      "sha256": "a059cee6e3782aded8df93f7fdc33b6ee95964c54c3f8314121bd13dc129d0c6",
+      "bytes": 3934
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_joint_field_minimum_2026-10-20/SHA256SUMS.json",
+      "source_commit": "ce3deb4a8d48f8057b9ee5fe6780adafb65aaa6a",
+      "git_blob": "c8c8d8a023630a5c3f7509cf6d90e7cb65cf1c65",
+      "mode": "100644",
+      "sha256": "ea02c359cd851512be63fb394c87c4052ff118dbaa1875b5b91c251150560b40",
+      "bytes": 4476
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_joint_field_minimum_2026-10-20/SOURCE_INPUTS.json",
+      "source_commit": "ce3deb4a8d48f8057b9ee5fe6780adafb65aaa6a",
+      "git_blob": "10cf2032dc6f232642a4acbcc714c793e913a9e3",
+      "mode": "100644",
+      "sha256": "0b04051306ec555046bc79bca2956736505c742b650b441cf0f43829ee3858c0",
+      "bytes": 7729
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_joint_field_minimum_2026-10-20/VALIDATION.json",
+      "source_commit": "ce3deb4a8d48f8057b9ee5fe6780adafb65aaa6a",
+      "git_blob": "04562fd59de1af7c06b4da071a261e8988e102ac",
+      "mode": "100644",
+      "sha256": "f7d6818f4047024cf7683c8230a7fda7b853020799e0806ba96eaeb796567749",
+      "bytes": 1615
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_joint_field_minimum_2026-10-20/WITNESS_RECEIPT.json",
+      "source_commit": "ce3deb4a8d48f8057b9ee5fe6780adafb65aaa6a",
+      "git_blob": "cd369ac477e59ec86d5be5b2dd121df7993a10ad",
+      "mode": "100644",
+      "sha256": "a8c7f832e739d19a6fa7c64508c1cae314d6c6b01a2ae019ce331029ba669519",
+      "bytes": 905
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_joint_field_minimum_2026-10-20/check_conditional_noise.py",
+      "source_commit": "ce3deb4a8d48f8057b9ee5fe6780adafb65aaa6a",
+      "git_blob": "a185f7b235225fbde69db1303b8fd348c61399ff",
+      "mode": "100644",
+      "sha256": "c9823463def089bceb8909cc6eda23cca7ddf746e7eeb39981b1c4f23f7bc6cd",
+      "bytes": 5791
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_joint_field_minimum_2026-10-20/check_joint_minimum_witness.py",
+      "source_commit": "ce3deb4a8d48f8057b9ee5fe6780adafb65aaa6a",
+      "git_blob": "251843ca7b4386c43aa55fe78db822bba55d4375",
+      "mode": "100644",
+      "sha256": "54cb7b124734eb60ed1fc3f84bcf27dc38e1f735804e032987d2b2f6b2d6327b",
+      "bytes": 9431
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_joint_field_minimum_2026-10-20/check_prospective_field_bridge.py",
+      "source_commit": "ce3deb4a8d48f8057b9ee5fe6780adafb65aaa6a",
+      "git_blob": "92347d83e6daaf992ae4cffa9644699816dafebf",
+      "mode": "100644",
+      "sha256": "44d0e9a6c0a2706e49a7b8c272fccc2d638ef0ae6485720746ea810a2f0bebda",
+      "bytes": 14044
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_joint_field_minimum_2026-10-20/inputs/A4D_GOLDEN_FULL_SOURCE_SELECTION_SYNTHESIS_2026_10_20.md",
+      "source_commit": "ce3deb4a8d48f8057b9ee5fe6780adafb65aaa6a",
+      "git_blob": "ed9b0c7ad723c9b3cd852cf0c0d1bccda6dbb56b",
+      "mode": "100644",
+      "sha256": "99551de2dcc8ae84a165a80631090952907aa1b46873160b7a0b648e94bf85e1",
+      "bytes": 32120
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_joint_field_minimum_2026-10-20/inputs/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md",
+      "source_commit": "ce3deb4a8d48f8057b9ee5fe6780adafb65aaa6a",
+      "git_blob": "ecdd31abb52c94e9f2a157a80c7c49a6f5ac31aa",
+      "mode": "100644",
+      "sha256": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d",
+      "bytes": 86193
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_joint_field_minimum_2026-10-20/inputs/FIXED_CLOCK_PREPARATION_BANK.md",
+      "source_commit": "ce3deb4a8d48f8057b9ee5fe6780adafb65aaa6a",
+      "git_blob": "b36d96cf1698ecafd2319ac697f3c8fa2bedefc2",
+      "mode": "100644",
+      "sha256": "a922a3aeaabe8dfb68dc28e4d788c708b496a1081a3a0ab8cf241fd91fbaf88e",
+      "bytes": 10425
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_joint_field_minimum_2026-10-20/inputs/FutureExecution.lean",
+      "source_commit": "ce3deb4a8d48f8057b9ee5fe6780adafb65aaa6a",
+      "git_blob": "c0cbf1d446f428e166ae30f90f9caba1ce60c091",
+      "mode": "100644",
+      "sha256": "15143b63f2bf1cc51493e3efb36c9da57c203d7e680e2f1370cf2311eb2e9ef1",
+      "bytes": 12331
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_joint_field_minimum_2026-10-20/inputs/FutureExecutionCompleteness.lean",
+      "source_commit": "ce3deb4a8d48f8057b9ee5fe6780adafb65aaa6a",
+      "git_blob": "693617f452342f9b3cb8324f124a912e0a4561e6",
+      "mode": "100644",
+      "sha256": "d202822470539f777e0f54df97d8bf9aaa983e032291195e9748036d7f00ec8c",
+      "bytes": 1656
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_joint_field_minimum_2026-10-20/inputs/GOLDEN_EXACT_DETECTOR.md",
+      "source_commit": "ce3deb4a8d48f8057b9ee5fe6780adafb65aaa6a",
+      "git_blob": "92b9003d783c24b1883a2a21f8b30625078afff7",
+      "mode": "100644",
+      "sha256": "d33c9c2cb2322e381723f481eb1fcf58058fd05ad88eda92c5597c026d02eb77",
+      "bytes": 16828
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_joint_field_minimum_2026-10-20/inputs/NATIVE_TASK_SEARCH_4867.md",
+      "source_commit": "ce3deb4a8d48f8057b9ee5fe6780adafb65aaa6a",
+      "git_blob": "0fe744c03d7badc91f626c41356021c3be44a6bb",
+      "mode": "100644",
+      "sha256": "59cbda439229c01fe38e181e68d136bc3e3006353e28a936f106de6187ed8d6e",
+      "bytes": 7632
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_joint_field_minimum_2026-10-20/inputs/PAID_RANDOM_CHOICE_MINIMUM.md",
+      "source_commit": "ce3deb4a8d48f8057b9ee5fe6780adafb65aaa6a",
+      "git_blob": "13fcdb25d2c2321d2550b566588ae12d6382b47e",
+      "mode": "100644",
+      "sha256": "30fe9fe6e48f6a978b6f5b7762bced2824ca3342043a566fc4e94723ae6d8df3",
+      "bytes": 10029
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_joint_field_minimum_2026-10-20/inputs/VerifiabilityNecessity.lean",
+      "source_commit": "ce3deb4a8d48f8057b9ee5fe6780adafb65aaa6a",
+      "git_blob": "f0dbfcf6e99a24346fa1d9407b4ed49cc784a2e1",
+      "mode": "100644",
+      "sha256": "e851960cf5ed7c3abdb488dc70a2ed098d9a6bfb2ca0a60d2cbecda9f93da48d",
+      "bytes": 28561
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_joint_field_minimum_2026-10-20/inputs/adaptive_all_cost_extension.md",
+      "source_commit": "ce3deb4a8d48f8057b9ee5fe6780adafb65aaa6a",
+      "git_blob": "62bd1f4b9186883f521e363d17f023c4ab4ac760",
+      "mode": "100644",
+      "sha256": "34e491c6f7aa74a1f2fe7e3ba942bd784bcb6ac6e4306dd5c1c5a1e7b86a9274",
+      "bytes": 10920
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_joint_field_minimum_2026-10-20/inputs/causal_boundary_completion.md",
+      "source_commit": "ce3deb4a8d48f8057b9ee5fe6780adafb65aaa6a",
+      "git_blob": "b378006fa38617ab7ec8e1cda4431336a0388a68",
+      "mode": "100644",
+      "sha256": "46c08c8295401cb42531ec3b974709638ec5f913dbd1b64c0210efa3b99953ba",
+      "bytes": 9424
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_joint_field_minimum_2026-10-20/inputs/minimal_golden_source.md",
+      "source_commit": "ce3deb4a8d48f8057b9ee5fe6780adafb65aaa6a",
+      "git_blob": "bce112de77a694809e0a9a7fa769731296148ca2",
+      "mode": "100644",
+      "sha256": "f6a5724e087c58b4294020a59532b7117f55247013181bcd4fd30d069a649330",
+      "bytes": 26294
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_joint_field_minimum_2026-10-20/inputs/original_all40.md",
+      "source_commit": "ce3deb4a8d48f8057b9ee5fe6780adafb65aaa6a",
+      "git_blob": "050ee972efa0f2ae37206b2ef9e3b4122dbac204",
+      "mode": "100644",
+      "sha256": "8dbca8ff9a4567a2baf216357b5d3ffa2d217281ced4e5d0e535257db2f5e83e",
+      "bytes": 25208
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_joint_field_minimum_2026-10-20/inputs/original_all40_checker.py",
+      "source_commit": "ce3deb4a8d48f8057b9ee5fe6780adafb65aaa6a",
+      "git_blob": "e502807955321465903d7ab1a248e0456ac69f60",
+      "mode": "100644",
+      "sha256": "d3d0b1bc92c25a0963a4ba851d9d587d2191f0bbd8cd8cd0ab58b664852b7026",
+      "bytes": 4795
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_joint_field_minimum_2026-10-20/inputs/original_car_j2_source.md",
+      "source_commit": "ce3deb4a8d48f8057b9ee5fe6780adafb65aaa6a",
+      "git_blob": "75c40d133a23973a36ba5b95d34b4eb36ca96663",
+      "mode": "100644",
+      "sha256": "828cba545e2c734741e7acf1509248c441de4451f9099cebee8d10c00230e35b",
+      "bytes": 17162
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_joint_field_minimum_2026-10-20/inputs/prospective_execution.lean",
+      "source_commit": "ce3deb4a8d48f8057b9ee5fe6780adafb65aaa6a",
+      "git_blob": "5bf153f4c74325366c8c57ce404dcdcb4fc87dc5",
+      "mode": "100644",
+      "sha256": "99db926c47864c53ecf8d43caf2518f86b96e42cdffccaaf26f6c93205155ed4",
+      "bytes": 12448
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_joint_field_minimum_2026-10-20/inputs/q8_conditional_info.md",
+      "source_commit": "ce3deb4a8d48f8057b9ee5fe6780adafb65aaa6a",
+      "git_blob": "6abac8f8dd05cc31badcb37aae233090ad61080a",
+      "mode": "100644",
+      "sha256": "157cac0e3254cfb9f5db59f1960955bb0a47bc2169c5a0094f0682ecd6a07283",
+      "bytes": 21007
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_joint_field_minimum_2026-10-20/inputs/schur_completion.md",
+      "source_commit": "ce3deb4a8d48f8057b9ee5fe6780adafb65aaa6a",
+      "git_blob": "eaf0e00830e1fed4e9c60adf878c8400fb3b3552",
+      "mode": "100644",
+      "sha256": "03371a42f4249ca187edea1bc05fa48d19c34d25be019fcbac861c25e277d988",
+      "bytes": 14533
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_joint_field_minimum_2026-10-20/inputs/stopped_all_cost_source.md",
+      "source_commit": "ce3deb4a8d48f8057b9ee5fe6780adafb65aaa6a",
+      "git_blob": "6af391cd0d98f09acbbc4b75fbfd0c24f4fb7733",
+      "mode": "100644",
+      "sha256": "ba7513a46fd7796ce6f5ae6d1ad389d66e51bbcaff3ca8866c0087dc41539eb3",
+      "bytes": 15392
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_joint_field_minimum_2026-10-20/inputs/stopped_minimum_overview.md",
+      "source_commit": "ce3deb4a8d48f8057b9ee5fe6780adafb65aaa6a",
+      "git_blob": "c96791ff6a768dc11f6860fe6ad82121fba95e3f",
+      "mode": "100644",
+      "sha256": "6e73ece4f1d4312e241e91860871019689bf28017088ef6431893a3286978b0b",
+      "bytes": 9548
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_joint_field_minimum_2026-10-20/inputs/stopped_retained_record_comparison.md",
+      "source_commit": "ce3deb4a8d48f8057b9ee5fe6780adafb65aaa6a",
+      "git_blob": "4167e1ed8050e550b042f861638f6477a5ac465a",
+      "mode": "100644",
+      "sha256": "a53e06653c8ef656bba32fc7f5e262acff5d5143c311a0d48003dc6b583e1463",
+      "bytes": 5491
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_joint_field_minimum_2026-10-20/inputs/support_safe_four_corner.md",
+      "source_commit": "ce3deb4a8d48f8057b9ee5fe6780adafb65aaa6a",
+      "git_blob": "1ff0132e6602170c9ec7d706d72f697969a9c328",
+      "mode": "100644",
+      "sha256": "23ce13478c718a327b406f5ba5ad30abafb2ee19ca310aabdf32013f22b46b2b",
+      "bytes": 17683
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_joint_field_minimum_2026-10-20/replay_packet.py",
+      "source_commit": "ce3deb4a8d48f8057b9ee5fe6780adafb65aaa6a",
+      "git_blob": "a440a65fecaa12ec6f12eade72886931800fa480",
+      "mode": "100644",
+      "sha256": "2ad14e69cdd16d26fb38a588af2d059ac6f697cdde478bbd55c65074230ad751",
+      "bytes": 4679
+    }
+  ],
+  "route_insertions": [
+    {
+      "path": "AGENTS.md",
+      "mode": "before",
+      "added_block_sha256": "a70d2948acb3ab8b4a11002016e557f556f6dd9963b20e147e2fefaea4d99516",
+      "main_before_sha256": "b6790a4862f5a7e9ccd3314c15431df6d396190166a6c89848a893cbfbdc83b0",
+      "main_after_sha256": "38180c19495e12a26393d29d374be4077b257ec5b2370ede073d2d034219d598"
+    },
+    {
+      "path": "02_REGISTRY/research/D0_GR_PRIMARY_POSITIVE_CASE.md",
+      "mode": "before",
+      "added_block_sha256": "406695dc28b13f5b08d3a5014868a5f0c97152d710c70d14de7f81e037eefc5e",
+      "main_before_sha256": "95eb9cec4c4ac4f0d2b72e5948fae58e26c39391112966e2803641ca680e1a04",
+      "main_after_sha256": "ecd666a53ee3735bea0335bae372925c84964fb24aaab4b81ef72ae8963c4129"
+    },
+    {
+      "path": "02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md",
+      "mode": "before",
+      "added_block_sha256": "f0bd285180bcbbda07d932c51b887b267e11e48a1a3a24510618c146fc389ca0",
+      "main_before_sha256": "020154b43390739a2518b7385af93b4ad16449e75ed0d01f362dfa086103504f",
+      "main_after_sha256": "217e88ec398ae55f0490d0b2ae8eb9120dc8807feaa16fde17b584f3da811017"
+    },
+    {
+      "path": "02_REGISTRY/research/README.md",
+      "mode": "after",
+      "added_block_sha256": "7047ddeee805967cc82868c883a223443115b826955954b79b85ff3f0dccd985",
+      "main_before_sha256": "952dda77cc8249cbf00158b70d23d762fe55947e982b235f881502923cb9c675",
+      "main_after_sha256": "934ea98d3d082f5100b170cc6b3b27ebb4a609aaf2c13dd6045b8088adadaf94"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_CAUSAL_BOOK_SOURCE_TO_EXACT_GR_SYNTHESIS_2026_10_20.md",
+      "mode": "append",
+      "added_block_sha256": "347e7cea79d2b574b48eef2ec5965f007ae1c01dcb6a1e573b7a71dd9f851c4f",
+      "main_before_sha256": "3389dcd4c171e5752098bf28c1d1962adff6bb21244a6b0e6b6fbcb2d0264a5b",
+      "main_after_sha256": "dbf550bd8238af67116516167e5cebc9361f47536d14a687d68ec2f8d622d12e"
+    },
+    {
+      "path": "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md",
+      "mode": "append",
+      "added_block_sha256": "0fdf493b73f03f511df4581c7d7948e2f44c076e6e9be593e3200a9e5952d354",
+      "main_before_sha256": "65e801538bce9f4ed9cc3c432dea26aa5649ad2b131e01fb976422f7d03ce84b",
+      "main_after_sha256": "d0e3a5f62c75a724426af2a7dbde0c74b8cd7d0f21fb7dbbb205ebbc334f636e"
+    }
+  ],
+  "scope": "43 byte-identical science files and six insertion-only route changes; no parallel scientific source files are imported by this intake."
+}

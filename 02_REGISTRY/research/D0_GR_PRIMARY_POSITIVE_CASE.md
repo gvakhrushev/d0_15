@@ -75,6 +75,82 @@ recovery for specified analytic Fourier-harmonic waves after source/clock
 synchronization; the polynomial subfamily above strengthens that to
 literal same-metric sampling on every mesh.
 
+## Full equation-class shortcut: two exact witnesses + Lovelock, with a sharp VSI control
+
+The [VSI and two-witness universal-GR synthesis](A4D_VSI_LOVELOVK_TWO_WITNESS_UNIVERSAL_GR_SYNTHESIS_2026_10_20.md)
+proves a NEW scoped result on **this exact positive family**:
+
+* Every local **polynomial scalar curvature invariant**, including complete
+  contractions of curvature derivatives, vanishes on these sourced and
+  vacuum Brinkmann metrics even when their Ricci/Weyl tensors are NONZERO.
+  A scalar-invariant-only archive cannot distinguish the flat member from
+  an actual vacuum Weyl wave. Faithful GR verification therefore requires
+  relational/holonomy information; the existing Golden/CAR six-phase atlas
+  is a *mathematically sufficient local candidate*, not a compulsory selected
+  physical test.
+* If the ONE full native D0 gravitational Euler source descends to a
+  metric-only, locally diffeomorphism-natural, symmetric, off-shell
+  conserved, genuinely second-order tensor on 4D Lorentz metrics,
+  Lovelock/Navarro gives \(\mathcal E=aG+bg\).
+  Actual full-PRICE admission of the flat vacuum and one sourced member
+  **then forces** \(b=0\) and \(\kappa/a=-\lambda_-\).
+  If the same universal matter equation is really selected, the **whole
+  field-equation class** is Einstein, not merely this wave family.
+* The second-order hypothesis CANNOT be inferred from exact agreement on
+  every Brinkmann solution: \(R\equiv0\), so the true fourth-order
+  Euler tensor from \(\int \sqrt{|g|}R^2\) vanishes on the entire
+  family for arbitrary coefficient. This is an explicit mathematical
+  countermodel. Prove the native *order bound and metric-only local
+  naturality* on its genuine full Price/Info carrier, not by assuming
+  that every extra correction is zero because it vanishes on a wave.
+
+This is the **highest-leverage structural alternative** to matching
+all microscopic source coefficients on every curved metric. It reuses
+the existing exact all40 source and midpoint witnesses; it is **conditional**
+on the same full Book03/H+J+R/clock/preparation/work action and has NOT
+promoted full GR or raw216. [Exact integer tensor verifier](sources/d0_vsi_lovelock_two_witness_2026-10-20/check_vsi_lovelock_calibration.mjs).
+
+## Stronger universal route: a single physical Golden metric-scale law
+
+The [Golden discrete blow-up + condensed descent theorem](A4D_GOLDEN_DISCRETE_BLOWUP_CONDENSED_GR_2026_10_20.md)
+strengthens the conditional Lovelock route above. For ONE full native
+metric-only local-Diff-natural gravitational Euler tensor, **flat-section
+Fréchet differentiability**, an **off-shell conserved source**, and just the
+ONE exact physical scale step
+
+```text
+E[phi² g] = E[g]        (covariant rank-two source)
+```
+
+already force `E=aG` on all smooth Lorentz metrics in that chart. The
+normal-coordinate `phi^(-n)` blow-up extracts the ENTIRE curved source
+from its second flat jet, so **no separate second-derivative-order axiom,
+continuous scale symmetry, or catalogue of curvature coefficients is
+necessary**. The fixed flat and nonvacuum CAR/Einstein witnesses then
+calibrate `kappa/a = -lambda_-` *if those witnesses are solutions of
+the SAME actually selected full native action*.
+
+There is an even shorter **conditional ACTION form**: one true selected,
+locally Diff-invariant and flat-smooth effective native metric action
+obeying `I[phi² g] = phi² I[g] + field-independent/boundary` yields both
+weight-zero Euler covariance and the off-shell Ward identity by variation
+and Noether. The Golden blow-up then forces Einstein's tensor.
+
+**Physical firewall:** D0's proven dimensionless Golden archive ratio
+`Lambda_(n+1)/Lambda_n=phi` is NOT an actual metric rescale. The
+already proved condensed native heat classification retains arbitrary
+source-visible complementary blocks even under Golden norm and
+trace-class conditions. A legitimate metric-only condensed/sheaf
+source also requires fibre-product descent of the FULL paid histories,
+actual open-Diff context coverage, and true smooth metric variations.
+The unchanged bare full-HJR source actually FAILS the necessary
+single-step physical-scale test on the same flat Brinkmann carrier.
+None of these missing physical bridges may be assumed or repaired by
+an unpaid subtraction. The prior two-jet Lovelock route remains a
+valid fallback. `positive_gr`, compulsory Book03 price and raw216 are OPEN.
+
+[Small bounded Golden scale/condensed controls](sources/d0_golden_blowup_condensed_2026-10-20/check_golden_blowup_scale.mjs).
+
 ## The one missing physical selection — not another geometry campaign
 
 The [whole-family CAR/Book/causal synthesis](A4D_CAUSAL_BOOK_SOURCE_TO_EXACT_GR_SYNTHESIS_2026_10_20.md)
