@@ -46,8 +46,36 @@ area = h**2 * nsites
 source_flux = nsites * (-h**2 * delta / 2).subs(delta, -4 * lam * energy)
 assert s.simplify(source_flux - 2 * lam * energy * area) == 0
 
+# The temporal source is evaluated one null step before the metric slice.
+# Thus Delta_h H(u+h)=-4*lambda*E(u) is solved by the quadratic source
+# H(u)=-lambda*E(u-h)*(x^2+y^2), up to a discrete-harmonic addition.
+u = s.symbols("u")
+E_time = s.Function("E")
+radial2 = x**2 + y**2
+H_unshifted = -lam * E_time(u) * radial2
+H_shifted = -lam * E_time(u - h) * radial2
+
+def lap_at_slice(expr):
+    return s.simplify(
+        (expr.subs(x, x + h) + expr.subs(x, x - h)
+         + expr.subs(y, y + h) + expr.subs(y, y - h) - 4 * expr) / h**2
+    )
+
+assert s.simplify(
+    lap_at_slice(H_unshifted.subs(u, u + h)) + 4 * lam * E_time(u + h)
+) == 0
+assert s.simplify(
+    lap_at_slice(H_shifted.subs(u, u + h)) + 4 * lam * E_time(u)
+) == 0
+assert s.simplify(
+    lap_at_slice(H_unshifted.subs(u, u + h)) + 4 * lam * E_time(u)
+    + 4 * lam * (E_time(u + h) - E_time(u))
+) == 0
+
 print("PASS: raw plaquette-log trace = -h/2 times the standard central Laplacian")
 print("PASS: area-normalized curvature gives the exact surviving Euler-row scaling")
 print("PASS: cubic discrete harmonic has zero trace and nonzero Weyl matrix")
 print("PASS: summed normalized trace has the stated area-scaled source")
+print("PASS: time-shifted quadratic profile solves the retarded discrete source")
+print("PASS: unshifted reverse profile has the exact E(u+h)-E(u) residual")
 print("SCOPE: normalization and stencil identities only; no full native readout or GR closure")

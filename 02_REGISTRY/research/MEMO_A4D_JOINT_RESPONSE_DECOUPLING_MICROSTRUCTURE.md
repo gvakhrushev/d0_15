@@ -8781,6 +8781,12 @@ E_{v_v^+}=h\operatorname{tr}C_{\rm area},\qquad
 \]
 and the finite Weyl limit and the summed boundary-flux formula use \(C_{\rm area}\). Thus the formulas in the proposal become consistent by defining its \(\mathcal C_h\) to be \(C_{\rm area}\). If it retains the displayed raw definition, the Euler row must use \(h^2\operatorname{tr}C_{\rm raw}\), while the Ricci, Weyl and flux formulas must use \(hC_{\rm raw}\). The exact [curvature-scaling checker](sources/d0_two_null_crossing_2026-10-19/check_discrete_curvature_scaling.py) passes the raw trace, area normalization, cubic Weyl witness and sourced flux identities.
 
+There is also a one-step index shift in the proposed inverse for a time-dependent source. The finite equation is \(\Delta_h H(u+h,x,y)=-4\lambda E(u)\), and \(\Delta_h(x^2+y^2)=4\). Hence the exact quadratic source profile is
+\[
+H(u,x,y)=-\lambda E(u-h)(x^2+y^2)+W_h(u,x,y),\qquad \Delta_h W_h(u,\cdot)=0.
+\]
+Equivalently, the target slice satisfies \(H(u+h)=-\lambda E(u)(x^2+y^2)+W_h(u+h)\). Using \(E(u)\) in the unshifted formula for \(H(u)\) instead leaves the exact residual \(-4\lambda(E(u+h)-E(u))\); it solves the stated equation only for a time-constant source (or zero coupling). The curvature-scaling checker replays both identities exactly. This is an indexing correction to the reverse map, not a change to the forward finite field equation.
+
 The four-harmonic uniqueness argument is valid only after assuming a translation-local linear five-point operator. Under that hypothesis, annihilating \(1,x,y,x^2-y^2\) fixes the stencil to a scalar multiple of \(h^2\Delta_h\); those tests do not establish that the compulsory full D0 source belongs to this operator class. The existing arbitrary-profile 40-to-3-to-1 certificate is the direct geometric result and does not need to be repeated with more profiles.
 
 The next parent substitution is therefore the physical one: derive, on one admitted common preparation, the actual full Cost–Info/Book/preparation/clock/work source and its LEFT/RIGHT/reference order jet, and compute the same-run composition defect on its observable quotient. It must either be paid and controlled by the selected native instrument or rule out that candidate. Then the same action still has to satisfy its matter source, internal Euler rows, Ward transfer and refinement/recovery obligations. GR_closed=false.
