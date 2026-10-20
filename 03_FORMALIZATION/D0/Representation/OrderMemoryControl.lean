@@ -596,4 +596,20 @@ theorem originalQ8EndpointCannotRecoverPaidHistoryLength :
   omega
 
 
+
+/-- The ACTUAL native FiniteProtocolClock records the time spent.
+The two-gate and eight-gate programmes have identical final Q8
+operator, but their ORIGINAL internal time registers are 2 and 8.
+This is already a retained future-readable distinction in the
+registered 16-stage protocol, not an invented witness or new gate. -/
+theorem originalQ8SameEndpointDifferentNativeClock
+    {S : Type} (U : D0.Representation.FiniteProtocolClock.Clock → S ≃ S)
+    (s : S) :
+    (D0.Representation.FiniteProtocolClock.run U s 2).1 ≠
+      (D0.Representation.FiniteProtocolClock.run U s 8).1 := by
+  rw [D0.Representation.FiniteProtocolClock.stage_is_internal,
+      D0.Representation.FiniteProtocolClock.stage_is_internal]
+  norm_num
+
+
 end D0.Representation.OrderMemoryControl
