@@ -9,7 +9,7 @@
   "output": "02_REGISTRY/research/certificates/a4d_native_history_field_coupling_output.txt",
   "output_sha256": "8467f5d720a0fd60682c7ce343dfed576a439c63d7d78ba044a8d6f5c25d0109",
   "checker": "02_REGISTRY/research/certificates/a4d_native_history_field_coupling_check.py",
-  "checker_sha256": "1c45ea9351076137ee0031b6d596a3fcc981b1297ec2bd398f53b559e0f32ebb",
+  "checker_sha256": "8e31983e28e68c2953ee0b867534de8bfbb484c79fbd0854fd557f3c7848ec0b",
   "printed_axiom_declarations": 15,
   "axioms": [
     "Classical.choice",
@@ -18,13 +18,14 @@
   ],
   "sorryAx": false,
   "source_sha256": {
-    "02_REGISTRY/research/A4D_NATIVE_HISTORY_ACTION_BOUNDARY.md": "f2e2f2e2db9e63047f9d85f6daa8a18e31b363b0ffe8df6a22bd66f617dfeb3f",
+    "02_REGISTRY/research/A4D_NATIVE_HISTORY_ACTION_BOUNDARY.md": "14abe479decbe831e2949cfd760df42946f5e00d554add5c83192711dbab0bc4",
     "03_FORMALIZATION/D0/Foundation/EndogenousActionQuantum.lean": "692f2b5929b001361a2f22d7dc224fba46a80738036f26a1ff7bdd5175fc80c4",
     "03_FORMALIZATION/D0/Foundation/VerifiabilityNecessity.lean": "e851960cf5ed7c3abdb488dc70a2ed098d9a6bfb2ca0a60d2cbecda9f93da48d",
     "03_FORMALIZATION/D0/VNext2/ScenePathHistoryCanonicity.lean": "2ed1da971417e0949b9f225ad768d80314fbafe0f930b0fcb8c0a662e0de66e0",
     "03_FORMALIZATION/D0/Geometry/ArchiveAffineExteriorLink.lean": "be8f2a58cc7c055b6db13b4846437e89d5cc5bc979cc2ebb9429bdf82f45b1a1",
     "03_FORMALIZATION/D0/Geometry/A4DNilpotentAffineMatterLift.lean": "643182331ff9ecddb031ea44d829ea3d0900d8e551166bab68706683ad245563",
-    "03_FORMALIZATION/D0/Geometry/ArchiveLaplacianRG.lean": "591b39b7c7f618c08ada52713f8ce490d4e7973a8f54a0991523c2f04d260108"
+    "03_FORMALIZATION/D0/Geometry/ArchiveLaplacianRG.lean": "591b39b7c7f618c08ada52713f8ce490d4e7973a8f54a0991523c2f04d260108",
+    "02_REGISTRY/research/A4D_NATIVE_HISTORY_FIELD_COUPLING_BOUNDARY.md": "595a255495ecde3c6f848bcfa808aa8501d0f91dc90e17f98eb6c0131674c396"
   },
   "toolchain_sha256": {
     "03_FORMALIZATION/lake-manifest.json": "4ed211000f753c64c6b1fc155970f6b28c9500763f1ad520d8762ae165ac24fa",
@@ -61,5 +62,17 @@
     "D0_readout_derived": false,
     "full_native_refinement_constructed": false,
     "physical_action_selected": false
+  },
+  "report_relocation": {
+    "source_head": "64cbac8d17028376ba2e5324da5014ebcfa053b1",
+    "original_report": "02_REGISTRY/research/A4D_NATIVE_HISTORY_ACTION_BOUNDARY.md",
+    "original_report_sha256": "f2e2f2e2db9e63047f9d85f6daa8a18e31b363b0ffe8df6a22bd66f617dfeb3f",
+    "original_checker_sha256": "1c45ea9351076137ee0031b6d596a3fcc981b1297ec2bd398f53b559e0f32ebb",
+    "restored_report_head": "e59050d347819d2bbbe9f1423bf109b9ed9f9440",
+    "relocated_report": "02_REGISTRY/research/A4D_NATIVE_HISTORY_FIELD_COUPLING_BOUNDARY.md",
+    "preserved_section_sha256": "65c164a21286d9784911ed6dbb8fae5624dc1847284a955b360b51b9a01bf08e",
+    "lean_capsule_and_compiler_output_unchanged": true,
+    "prior_expected_certificates_unchanged": true,
+    "reason": "Preserve the five immutable earlier report pins while retaining the new typed field/history section in its own owner."
   }
 }

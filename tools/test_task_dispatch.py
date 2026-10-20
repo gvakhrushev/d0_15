@@ -60,6 +60,24 @@ class DispatchTests(unittest.TestCase):
         self.assertEqual(command[command.index("--method") + 1], "GET")
         self.assertEqual(gh.call_args.kwargs["cwd"], self.root.resolve())
 
+    def test_programme_focus_survives_new_resume_review_and_offline_resolution(self):
+        scenarios = [
+            (None, (), "Open execution: none (GitHub checked)"),
+            ([[pr()]], (), "Resume this PR"),
+            ([[pr(draft=False, lifecycle="REVIEW")]], (), "Continue review"),
+            (None, ("--offline",), "no launch authorized"),
+        ]
+        for pages, extra, action in scenarios:
+            with self.subTest(action=action):
+                code, out, err, _ = self.run_dispatch(pages, extra=extra)
+                self.assertEqual((code, err), (0, ""))
+                self.assertIn(action, out)
+                self.assertEqual(out.count("#prospective-minimality-and-physical-execution"), 1)
+                self.assertIn("Reuse pinned proof owners", out)
+                self.assertIn("exact missing parent substitution", out)
+                self.assertIn("missing application/changed route", out)
+                self.assertNotIn("verdict/PASS-FAIL", out)
+
     def test_exact_metadata_resumes_pr_on_later_page_with_different_branch(self):
         unrelated = pr(task=TASK + "-OTHER", branch="exp/other")
         code, out, err, _ = self.run_dispatch([[unrelated], [pr(branch="exp/existing")]])

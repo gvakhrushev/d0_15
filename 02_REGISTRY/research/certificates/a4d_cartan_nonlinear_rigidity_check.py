@@ -248,4 +248,3 @@ for r, s in PAIRS:
         wedge_vec(vcols[u], vcols[v]).T
         * G2 * STAR * C0[(r, s)]
     )[0]
-H=¸ß^Ü…ªì¶»§q«^

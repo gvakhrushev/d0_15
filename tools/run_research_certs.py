@@ -4,6 +4,9 @@
 Local uncommitted edits are never copied. Each certificate gets a fresh detached
 worktree; generators may create untracked products but must not change tracked
 files or the checked commit. Logs are evidence, never a reusable result cache.
+
+Selection is research_input_closure.certificate_paths. An unresolved dependency
+stays selected; the filename diff must not narrow the replay.
 """
 from __future__ import annotations
 
@@ -21,6 +24,8 @@ import tempfile
 import threading
 import time
 import uuid
+
+import native_checkpoint_inputs
 
 ROOT = Path(__file__).resolve().parents[1]
 CERT_DIR = "02_REGISTRY/research/certificates"
@@ -96,6 +101,11 @@ def run_certificate(repo: Path, commit: str, cert: str, log_dir: Path,
                 result["timeout_seconds"] = seconds
                 if cancelled.is_set():
                     raise CancelledError()
+                historical = native_checkpoint_inputs.apply(sandbox, cert)
+                if historical is not None:
+                    result["historical_input"] = historical.provenance
+                    (logs / "historical-input.json").write_text(
+                        json.dumps(historical.provenance, indent=2) + "\n", encoding="utf-8")
                 with (logs / "stdout.log").open("wb") as stdout, (logs / "stderr.log").open("wb") as stderr:
                     process = subprocess.Popen(
                         [sys.executable, str(source)], cwd=sandbox,
@@ -121,6 +131,7 @@ def run_certificate(repo: Path, commit: str, cert: str, log_dir: Path,
                     finally:
                         stop_process_group(process)
 
+                overlay_mutation = historical.restore() if historical is not None else False
                 status = git(sandbox, "status", "--porcelain=v1", "--untracked-files=no")
                 head = git(sandbox, "rev-parse", "HEAD").decode().strip()
                 (logs / "tracked-status.txt").write_bytes(status)
@@ -129,7 +140,9 @@ def run_certificate(repo: Path, commit: str, cert: str, log_dir: Path,
                 (logs / "index.patch").write_bytes(
                     git(sandbox, "diff", "--no-ext-diff", "--binary", "--cached", commit, "--"))
                 result["head_after"] = head
-                result["tracked_mutation"] = bool(status or head != commit)
+                result["tracked_mutation"] = bool(status or head != commit or overlay_mutation)
+                if historical is not None:
+                    result["historical_input_mutation"] = overlay_mutation
                 if result["tracked_mutation"]:
                     result["execution_status"] = result["status"]
                     result["status"] = "MUTATION"
@@ -173,6 +186,15 @@ def replay(repo: Path, commit: str, certs: list[str], workers: int, log_dir: Pat
             result = future.result()
             results[result["certificate"]] = result
             print(f"::group::{result['status']}: {result['certificate']}", flush=True)
+            if result.get("historical_input"):
+                pin = result["historical_input"]
+                print("HISTORICAL_INPUT_REPLAY " + pin["target_path"] + " sha256=" +
+                      pin["historical_sha256"] + " source=" + pin["source_head"] +
+                      "; maintained-source compatibility is a separate Lean check", flush=True)
+                if pin.get("report_input"):
+                    report = pin["report_input"]
+                    print("HISTORICAL_REPORT_INPUT_NOT_CURRENT_ROUTE " + report["target_path"] +
+                          " sha256=" + report["historical_sha256"] + " source=" + report["source_head"], flush=True)
             for name, stream in (("stdout.log", sys.stdout), ("stderr.log", sys.stderr)):
                 path = Path(result["logs"]) / name
                 if path.exists():
@@ -226,7 +248,9 @@ def main() -> int:
                 if args.base else None)
         if git(args.repo, "status", "--porcelain=v1", "--untracked-files=no"):
             print("Tracked working edits are omitted; replay uses committed snapshot " + commit, flush=True)
-        certs = select_certificates(args.repo, commit, base)
+        # Filename diff remains select_certificates, used by the closure only to
+        # reject a narrower set. Unresolved dependencies stay in this replay.
+        certs = __import__("research_input_closure").certificate_paths(args.repo, commit, base)
         log_dir = args.log_dir or args.repo / ".build/research-certificates" / f"{commit[:12]}-{uuid.uuid4().hex[:8]}"
         results = replay(args.repo.resolve(), commit, certs, args.workers, log_dir.resolve())
     except ReplayCancelled as error:

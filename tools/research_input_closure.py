@@ -1158,6 +1158,7 @@ def provenance_status(repo: Path, commit: str, item: dict) -> dict:
 
 def select(repo: Path, commit: str, base: str | None) -> dict:
     """Conservative consumer selection. Does not execute certificates."""
+    import native_checkpoint_inputs as historical
     repo = Path(repo)
     commit = resolve_commit(repo, commit)
     base_commit = resolve_commit(repo, base) if base is not None else None
@@ -1174,6 +1175,10 @@ def select(repo: Path, commit: str, base: str | None) -> dict:
             reasons.append("full-snapshot")
         elif cert in changed_set:
             reasons.append("changed-entrypoint")
+        if cert in historical.ENTRYPOINTS and changed_set & historical.SELECTION_INPUTS:
+            reasons.append("historical-input-binding")
+        if cert in historical.REPORT_ENTRYPOINTS and changed_set & historical.REPORT_SELECTION_INPUTS:
+            reasons.append("historical-report-input-binding")
         inputs = info["transitive"]
         if any(item["path"] in changed_set for item in inputs):
             reasons.append("changed-input")

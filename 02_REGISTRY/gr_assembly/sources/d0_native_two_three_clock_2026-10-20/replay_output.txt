@@ -1,0 +1,54 @@
+PASS all original 718 directed & 7722 oriented native loops
+PASS all 8440 COMPLETE original Book based-return words
+PASS both original Golden fresh flags + 64 Bell failed branch ALL17 normalize
+PASS original physically allowed positive path verification stage
+PASS ALL 143484 full original 8440×Golden17 plus STAGED rejections positive/normalised
+PASS original physically allowed positive path verification stage
+PASS ALL 143484 full original 8440×Golden17 plus STAGED rejections positive/normalised
+PASS HOSTILE: every accepted original Book/Golden/Bell event AND BOTH terminal-depth failures are indistinguishable
+PASS TRUE internally archived CLOCK-STAGE labels reveal otherwise invisible absolute Book Cost
+PASS one COMPLETE stage-resolved record autonomously recovers original literal Golden depth attempts p,p²
+PASS early rejection labels recover TRUE two independent moving clock acceptances
+PASS FIVE real ORIGINAL 2/3 closed history outcomes self-calibrate UNKNOWN path-filter κ
+PASS ALL359 independent original symmetric scalar Book edge Costs fully recovered
+PASS ALL1287 original Book triangle absolute/oriented products recovered
+PASS FULL 718 original absolute Perron root selected by actual early/late stage records
+PASS one COMPLETE stage-resolved record autonomously recovers original literal Golden depth attempts p,p²
+PASS early rejection labels recover TRUE two independent moving clock acceptances
+PASS FIVE real ORIGINAL 2/3 closed history outcomes self-calibrate UNKNOWN path-filter κ
+PASS ALL359 independent original symmetric scalar Book edge Costs fully recovered
+PASS ALL1287 original Book triangle absolute/oriented products recovered
+PASS FULL 718 original absolute Perron root selected by actual early/late stage records
+PASS same accepted/final outcomes but FULL archive-stage inverse recovers exact t² absolute Book action source
+PASS COMPLETE native-stage source has genuine nonzero second derivative despite identical terminal-law jets
+PASS HOSTILE: depth-dependent verifier κ2,κ3 hides absolute Book Cost even with ALL full staged records
+PASS one shared unknown original verifier κ versus independently varying κ2/κ3 is the true physical selection boundary
+{
+  "status": "ORIGINAL 143484-OUTCOME COMPLETE STAGE-RESOLVED BOOK/GOLDEN SCALAR SELECTOR INVERSE",
+  "true_original_directed_edges": 718,
+  "true_original_clock_words": 8440,
+  "GoldenBell_categories_per_path": 17,
+  "early_and_late_reject_labels": 4,
+  "output_count": 143484,
+  "UNKNOWN_filter_calibrated_from_five_original_history_odds": 0.00006610696135191127,
+  "UNKNOWN_clock_acceptance_inferred": [
+    {
+      "2": 0.3819660112501043,
+      "3": 0.38196601125013097
+    },
+    {
+      "2": 0.3882294724145221,
+      "3": 0.39139961385729527
+    }
+  ],
+  "absolute_Book_primitive_cost_Hessian_gap_exact": 2,
+  "SAME_all_terminal_outcome_probability_difference": 2.7755575615628914e-16,
+  "genuine_stage_early_observable_gap": 0.0038710318868251936,
+  "stationary_scalar_Book_action_pair": [
+    -5.324308301651365,
+    -5.307408301651375
+  ],
+  "source_Jets_same_after_full_stage": false,
+  "actual_full_G0_HJR_admission": false,
+  "GR_closed": false
+}

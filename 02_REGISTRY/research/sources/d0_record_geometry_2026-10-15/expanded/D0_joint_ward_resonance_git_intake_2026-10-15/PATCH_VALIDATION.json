@@ -1,0 +1,9 @@
+{
+  "status": "PASS_NEW_ONLY_PATCH",
+  "new_repository_files": 20,
+  "previous_25_owner_files_not_duplicated": true,
+  "all_remote_capsule_bytes_preserved": true,
+  "applied_to_nonempty_repository": true,
+  "all_new_bytes_match": true,
+  "remote_commit_created": false
+}

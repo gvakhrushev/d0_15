@@ -16,6 +16,7 @@ import unittest
 from unittest.mock import patch
 
 import run_research_certs as runner
+import native_checkpoint_inputs as historical
 
 
 class ReplayTests(unittest.TestCase):
@@ -129,6 +130,201 @@ class ReplayTests(unittest.TestCase):
         result = runner.run_certificate(self.repo, commit, cert, logs)
         self.assertEqual(result["status"], "PASS")
         self.assertIn(b"committed snapshot", (Path(result["logs"]) / "stdout.log").read_bytes())
+
+    def historical_fixture(self, body: str) -> tuple[str, dict]:
+        real = Path(__file__).resolve().parents[1]
+        manifest = json.loads((real / historical.MANIFEST).read_text())
+        paths = ({historical.MANIFEST, historical.SNAPSHOT, historical.TARGET,
+                  historical.REPORT_SNAPSHOT, historical.REPORT_TARGET}
+                 | set(manifest["entrypoints"]) | set(manifest["receipts"])
+                 | set(manifest["compatibility_capsules"]) | historical.REPORT_RECEIPTS)
+        for name in paths:
+            target = self.repo / name
+            target.parent.mkdir(parents=True, exist_ok=True)
+            target.write_bytes((real / name).read_bytes())
+        name = "a4d_native_history_action_check.py"
+        entry = historical.CERT + name
+        (self.repo / entry).write_text(body)
+        manifest["entrypoints"][entry]["sha256"] = historical.sha(body.encode())
+        (self.repo / historical.MANIFEST).write_text(json.dumps(manifest))
+        return name, manifest
+
+    def historical_body(self) -> str:
+        return ("from pathlib import Path\nimport hashlib\n"
+                f"assert hashlib.sha256(Path({historical.TARGET!r}).read_bytes()).hexdigest() == {historical.SOURCE_SHA256!r}\n"
+                f"assert hashlib.sha256(Path({historical.REPORT_TARGET!r}).read_bytes()).hexdigest() == {historical.REPORT_SHA256!r}\n"
+                "print('executed declared historical input')\n")
+
+    def test_scoped_historical_input_is_logged_and_never_changes_main(self) -> None:
+        body = self.historical_body()
+        name, _ = self.historical_fixture(body)
+        maintained = (self.repo / historical.TARGET).read_bytes()
+        report_maintained = (self.repo / historical.REPORT_TARGET).read_bytes()
+        result, logs = self.run_one(name, body)
+        self.assertEqual(result["status"], "PASS", result)
+        self.assertFalse(result["tracked_mutation"])
+        self.assertFalse(result["historical_input_mutation"])
+        self.assertEqual((self.repo / historical.TARGET).read_bytes(), maintained)
+        self.assertEqual((self.repo / historical.REPORT_TARGET).read_bytes(), report_maintained)
+        evidence = json.loads((logs / "historical-input.json").read_text())
+        self.assertEqual(evidence["historical_sha256"], historical.SOURCE_SHA256)
+        self.assertEqual(evidence["maintained_sha256"], historical.sha(maintained))
+        self.assertIn("NOT_CURRENT_SOURCE_PROOF", evidence["mode"])
+        self.assertEqual(evidence["report_input"]["historical_sha256"], historical.REPORT_SHA256)
+        self.assertEqual(evidence["report_input"]["maintained_sha256"], historical.sha(report_maintained))
+        self.assertEqual(evidence["report_input"]["mode"], "HISTORICAL_REPORT_INPUT_NOT_CURRENT_ROUTE")
+
+    def test_historical_snapshot_corruption_fails_before_execution(self) -> None:
+        body = self.historical_body()
+        name, _ = self.historical_fixture(body)
+        (self.repo / historical.SNAPSHOT).write_text("wrong source\n")
+        result, logs = self.run_one(name, body)
+        self.assertEqual(result["status"], "ERROR")
+        self.assertIn("snapshot hash mismatch", result["error"])
+        self.assertFalse((logs / "stdout.log").exists())
+
+    def test_historical_undeclared_target_is_rejected(self) -> None:
+        body = self.historical_body()
+        name, manifest = self.historical_fixture(body)
+        manifest["target_path"] = "tracked.txt"
+        (self.repo / historical.MANIFEST).write_text(json.dumps(manifest))
+        result, _ = self.run_one(name, body)
+        self.assertEqual(result["status"], "ERROR")
+        self.assertIn("scope, source or path", result["error"])
+
+    def test_historical_entrypoint_mismatch_is_rejected(self) -> None:
+        body = self.historical_body()
+        name, _ = self.historical_fixture(body)
+        result, _ = self.run_one(name, body + "# altered entrypoint\n")
+        self.assertEqual(result["status"], "ERROR")
+        self.assertIn("entrypoint binding mismatch", result["error"])
+
+    def test_historical_receipt_mismatch_is_rejected(self) -> None:
+        body = self.historical_body()
+        name, _ = self.historical_fixture(body)
+        receipt = sorted(historical.RECEIPTS)[0]
+        (self.repo / receipt).write_text("{}\n")
+        result, _ = self.run_one(name, body)
+        self.assertEqual(result["status"], "ERROR")
+        self.assertIn("artifact binding mismatch", result["error"])
+
+    def test_historical_overlay_mutation_is_not_hidden_by_restoration(self) -> None:
+        body = self.historical_body() + f"Path({historical.TARGET!r}).write_text('mutated source\\n')\n"
+        name, _ = self.historical_fixture(body)
+        maintained = (self.repo / historical.TARGET).read_bytes()
+        report_maintained = (self.repo / historical.REPORT_TARGET).read_bytes()
+        result, logs = self.run_one(name, body)
+        self.assertEqual(result["status"], "MUTATION")
+        self.assertTrue(result["historical_input_mutation"])
+        self.assertIn(b"mutated source", (logs / "tracked.patch").read_bytes())
+        self.assertNotIn(historical.REPORT_TARGET.encode(), (logs / "tracked.patch").read_bytes())
+        self.assertEqual((self.repo / historical.TARGET).read_bytes(), maintained)
+        self.assertEqual((self.repo / historical.REPORT_TARGET).read_bytes(), report_maintained)
+
+    def test_historical_report_snapshot_corruption_fails_before_execution(self) -> None:
+        body = self.historical_body()
+        name, _ = self.historical_fixture(body)
+        (self.repo / historical.REPORT_SNAPSHOT).write_text("wrong report\n")
+        result, logs = self.run_one(name, body)
+        self.assertEqual(result["status"], "ERROR")
+        self.assertIn("report snapshot hash mismatch", result["error"])
+        self.assertFalse((logs / "stdout.log").exists())
+
+    def test_historical_report_extra_entrypoint_is_rejected(self) -> None:
+        body = self.historical_body()
+        name, manifest = self.historical_fixture(body)
+        manifest["report_input"]["entrypoints"][historical.CERT + "undeclared_check.py"] = sorted(historical.REPORT_RECEIPTS)[0]
+        (self.repo / historical.MANIFEST).write_text(json.dumps(manifest))
+        result, _ = self.run_one(name, body)
+        self.assertEqual(result["status"], "ERROR")
+        self.assertIn("report scope, source, path or entrypoint set", result["error"])
+
+    def test_historical_report_undeclared_target_is_rejected(self) -> None:
+        body = self.historical_body()
+        name, manifest = self.historical_fixture(body)
+        manifest["report_input"]["target_path"] = "tracked.txt"
+        (self.repo / historical.MANIFEST).write_text(json.dumps(manifest))
+        result, _ = self.run_one(name, body)
+        self.assertEqual(result["status"], "ERROR")
+        self.assertIn("report scope, source, path or entrypoint set", result["error"])
+
+    def test_historical_report_receipt_mismatch_is_rejected(self) -> None:
+        body = self.historical_body()
+        name, _ = self.historical_fixture(body)
+        (self.repo / sorted(historical.REPORT_RECEIPTS)[0]).write_text("{}\n")
+        result, _ = self.run_one(name, body)
+        self.assertEqual(result["status"], "ERROR")
+        self.assertIn("report receipt binding mismatch", result["error"])
+
+    def test_historical_report_overlay_mutation_is_not_hidden_by_restoration(self) -> None:
+        body = self.historical_body() + f"Path({historical.REPORT_TARGET!r}).write_text('mutated report\\n')\n"
+        name, _ = self.historical_fixture(body)
+        maintained = (self.repo / historical.TARGET).read_bytes()
+        report_maintained = (self.repo / historical.REPORT_TARGET).read_bytes()
+        result, logs = self.run_one(name, body)
+        self.assertEqual(result["status"], "MUTATION")
+        self.assertTrue(result["historical_input_mutation"])
+        self.assertIn(b"mutated report", (logs / "tracked.patch").read_bytes())
+        self.assertNotIn(historical.TARGET.encode(), (logs / "tracked.patch").read_bytes())
+        self.assertEqual((self.repo / historical.TARGET).read_bytes(), maintained)
+        self.assertEqual((self.repo / historical.REPORT_TARGET).read_bytes(), report_maintained)
+
+    def test_source_only_entry_does_not_receive_historical_report(self) -> None:
+        self.historical_fixture(self.historical_body())
+        name = "a4d_native_history_field_coupling_check.py"
+        entry = historical.CERT + name
+        current = historical.sha((self.repo / historical.REPORT_TARGET).read_bytes())
+        body = ("from pathlib import Path\nimport hashlib\n"
+                f"assert hashlib.sha256(Path({historical.TARGET!r}).read_bytes()).hexdigest() == {historical.SOURCE_SHA256!r}\n"
+                f"assert hashlib.sha256(Path({historical.REPORT_TARGET!r}).read_bytes()).hexdigest() == {current!r}\n")
+        manifest = json.loads((self.repo / historical.MANIFEST).read_text())
+        manifest["entrypoints"][entry]["sha256"] = historical.sha(body.encode())
+        (self.repo / historical.MANIFEST).write_text(json.dumps(manifest))
+        result, _ = self.run_one(name, body)
+        self.assertEqual(result["status"], "PASS", result)
+        self.assertNotIn("report_input", result["historical_input"])
+
+    def test_undeclared_consumer_uses_maintained_source(self) -> None:
+        self.historical_fixture(self.historical_body())
+        current = historical.sha((self.repo / historical.TARGET).read_bytes())
+        body = ("from pathlib import Path\nimport hashlib\n"
+                f"assert hashlib.sha256(Path({historical.TARGET!r}).read_bytes()).hexdigest() == {current!r}\n")
+        result, _ = self.run_one("undeclared_consumer.py", body)
+        self.assertEqual(result["status"], "PASS")
+        self.assertNotIn("historical_input", result)
+
+    def test_changed_action_floor_cannot_pass_as_current_compatibility(self) -> None:
+        body = self.historical_body()
+        name, _ = self.historical_fixture(body)
+        target = self.repo / historical.TARGET
+        target.write_text(target.read_text().replace("def S_min : ℝ := 1", "def S_min : ℝ := 2"))
+        result, _ = self.run_one(name, body)
+        self.assertEqual(result["status"], "ERROR")
+        self.assertIn("action interface changed", result["error"])
+
+    def test_historical_binding_change_adds_consumers_to_normal_selection(self) -> None:
+        import research_input_closure as closure
+        self.historical_fixture(self.historical_body())
+        base = self.commit()
+        snapshot = self.repo / historical.SNAPSHOT
+        snapshot.write_bytes(snapshot.read_bytes() + b"\n")
+        head = self.commit()
+        report = closure.select(self.repo, head, base)
+        selected = {row["certificate"]: row for row in report["selected"]}
+        for entry in historical.ENTRYPOINTS:
+            self.assertIn(entry, selected)
+            self.assertIn("historical-input-binding", selected[entry]["reasons"])
+
+    def test_report_binding_selection_reason_is_scoped_to_its_two_consumers(self) -> None:
+        import research_input_closure as closure
+        self.historical_fixture(self.historical_body())
+        base = self.commit()
+        snapshot = self.repo / historical.REPORT_SNAPSHOT
+        snapshot.write_bytes(snapshot.read_bytes() + b"\n")
+        report = closure.select(self.repo, self.commit(), base)
+        bound = {row["certificate"] for row in report["selected"]
+                 if "historical-report-input-binding" in row["reasons"]}
+        self.assertEqual(bound, historical.REPORT_ENTRYPOINTS)
 
     def test_cli_failure_is_nonzero_and_logs_the_checked_commit(self) -> None:
         self.certificate("failed.py", "raise SystemExit(9)\n")

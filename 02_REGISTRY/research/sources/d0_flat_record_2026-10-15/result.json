@@ -1,0 +1,54 @@
+{
+  "Riemann": "identically zero for this flat family",
+  "conditional_geometric_density": "alpha ||H||^2+beta ||b||^2 is intrinsic on isometric flat carriers only if alpha+beta=0",
+  "dimension_checks": {
+    "2": {
+      "diagonal_traceless_eigenvalue": 0,
+      "isotropic_traceless_response": false,
+      "offdiagonal_eigenvalue": 4
+    },
+    "3": {
+      "diagonal_traceless_eigenvalue": 2,
+      "isotropic_traceless_response": false,
+      "offdiagonal_eigenvalue": 4
+    },
+    "4": {
+      "diagonal_traceless_eigenvalue": 4,
+      "isotropic_traceless_response": true,
+      "offdiagonal_eigenvalue": 4
+    },
+    "5": {
+      "diagonal_traceless_eigenvalue": 6,
+      "isotropic_traceless_response": false,
+      "offdiagonal_eigenvalue": 4
+    },
+    "6": {
+      "diagonal_traceless_eigenvalue": 8,
+      "isotropic_traceless_response": false,
+      "offdiagonal_eigenvalue": 4
+    },
+    "7": {
+      "diagonal_traceless_eigenvalue": 10,
+      "isotropic_traceless_response": false,
+      "offdiagonal_eigenvalue": 4
+    }
+  },
+  "fixed_budget_metric_rank": 9,
+  "fixed_budget_not_nonlinear_fixed_volume": true,
+  "full_record_dimension": 24,
+  "internal_KL_cubic": "a*b*(a+b)/(6*p^3*log(phi))",
+  "internal_KL_quadratic": "(a^2+a*b+b^2)/(3*p^3*log(phi))",
+  "metric_kernel_dimension": 2,
+  "pair_channels": 12,
+  "q0": "p^3 I_4/2",
+  "right_inverse_norm": "6/p^3 (Frobenius to Euclidean)",
+  "scope": "exact kinematics and conditional invariant classification; NOT native admission or GR proof",
+  "source_moment_eigenvalues": {
+    "12": 1,
+    "4": 9
+  },
+  "source_rank": 10,
+  "squared_mean_curvature": "32 + 16*sqrt(5)",
+  "squared_second_form": "32 + 16*sqrt(5)",
+  "volume_code_tangent": "delta log sqrt(det q) = 2 delta(mean w)"
+}

@@ -1,0 +1,130 @@
+{
+  "schema": "d0-native-checkpoint-historical-input/1",
+  "scope": "HISTORICAL_COMPILED_INPUT_REPLAY_NOT_CURRENT_SOURCE_PROOF",
+  "source_head": "64cbac8d17028376ba2e5324da5014ebcfa053b1",
+  "source_blob": "dab5b67300a70768e0211159deb2ac6e53fa7b29",
+  "target_path": "03_FORMALIZATION/D0/Foundation/EndogenousActionQuantum.lean",
+  "snapshot_path": "02_REGISTRY/research/sources/d0_native_variational_checkpoint_2026-10-20/EndogenousActionQuantum.lean",
+  "snapshot_sha256": "692f2b5929b001361a2f22d7dc224fba46a80738036f26a1ff7bdd5175fc80c4",
+  "receipts": {
+    "02_REGISTRY/research/certificates/a4d_native_addressed_third_role_certificate.json": "cfbb4ef46e336a9ec5c70a044b57e72073da32170bf15f20cf4e989c7cb93c94",
+    "02_REGISTRY/research/certificates/a4d_native_addressed_third_role_results.json": "905afe23e06eb7f4c453aadfd26c3a69be176403107311795aedb9de05daa527",
+    "02_REGISTRY/research/certificates/a4d_native_archive_apparatus_realization_results.json": "9623b7c587704805b422532489e9ecfa31b86a14e53be350ab605bdbf64d75ef",
+    "02_REGISTRY/research/certificates/a4d_native_code_price_resolution_certificate.json": "b0381c29a1decabe34259649a83953a8aab9b5e945ed1809108390f7b78abc3e",
+    "02_REGISTRY/research/certificates/a4d_native_code_price_resolution_results.json": "51668d2ecc9aa1b41783f34b5a940123e4fe04e955e1a7c5fc0dd2ea187979ed",
+    "02_REGISTRY/research/certificates/a4d_native_dynamical_ownership_results.json": "405081f6453df4850f2dfd3766dcbb4615aa0ef80cd58ae00378d15e7f40c4f3",
+    "02_REGISTRY/research/certificates/a4d_native_history_action_results.json": "89f870c488168b3c0473bd29d5cc781cb5ead8caad2928afaf386873ad2c2f6b",
+    "02_REGISTRY/research/certificates/a4d_native_history_field_coupling_results.json": "857a102544b543953a5fe97ec89319a8e06eba2897f77338180c5b47d95d4f9e",
+    "02_REGISTRY/research/certificates/a4d_native_prepared_action_certificate.json": "58f6de320a59fedae0765ee6a5a183349cc2cb301862d6af94d5c559f60ee5cb",
+    "02_REGISTRY/research/certificates/a4d_native_prepared_action_results.json": "7195cb4e810a1696df1b01719fd994dc3b06f9c96c5d2c8ff1846db8c80dbf57",
+    "02_REGISTRY/research/certificates/a4d_native_retained_record_admission_certificate.json": "0bfbb02423f28dbbf1baaf014729e9e313cbadbae976f36dbf4ca4b2ed830dd1",
+    "02_REGISTRY/research/certificates/a4d_native_scene_payload_action_results.json": "635dc80afdc59bf532ce2dd9425685bd5098c6bb0ed92046456272b948a956e2",
+    "02_REGISTRY/research/certificates/a4d_native_uniform_memory_actuation_certificate.json": "beebee8d0b6460573d3ac54535369cf58ede5f2d4939cc7d7757372cb3aa3789",
+    "02_REGISTRY/research/certificates/a4d_native_uniform_memory_actuation_results.json": "2438f7b989b460f364bf55abfd4c456327c403bc0971fa88d86f4cdb758f462b",
+    "02_REGISTRY/research/certificates/a4d_native_verified_archive_actuation_certificate.json": "8d64a1c57dc4bc672d7e6c5ed315ffa47947b4b66d993f30833655cdeebbaabf",
+    "02_REGISTRY/research/certificates/a4d_native_verified_archive_actuation_results.json": "199645c781758766b1c4418a48519d7bbe66231aea1a2b6c153e874ae5e66b32",
+    "02_REGISTRY/research/certificates/d0_native_tangent_source_preflight_certificate.json": "ac7567259c1e610c4d5db3c092749cfdb669a417b066f0923f534db11d1e527c"
+  },
+  "entrypoints": {
+    "02_REGISTRY/research/certificates/a4d_native_addressed_third_role_check.py": {
+      "sha256": "4a1a62d713455ec055f1fe3f7a829be38861676a7e0d231e3748f9104ffbb72c",
+      "receipt_paths": [
+        "02_REGISTRY/research/certificates/a4d_native_addressed_third_role_certificate.json",
+        "02_REGISTRY/research/certificates/a4d_native_addressed_third_role_results.json"
+      ]
+    },
+    "02_REGISTRY/research/certificates/a4d_native_archive_apparatus_realization_check.py": {
+      "sha256": "2c6db908249c1b4bf055501df11f7974564303a88fb9deb39cf559c867daf827",
+      "receipt_paths": [
+        "02_REGISTRY/research/certificates/a4d_native_archive_apparatus_realization_results.json"
+      ]
+    },
+    "02_REGISTRY/research/certificates/a4d_native_code_price_resolution_check.py": {
+      "sha256": "7040f2f9b892e772f3f7bb240ddd44aa251a5834cb797be4c0923deff76cf809",
+      "receipt_paths": [
+        "02_REGISTRY/research/certificates/a4d_native_code_price_resolution_certificate.json",
+        "02_REGISTRY/research/certificates/a4d_native_code_price_resolution_results.json"
+      ]
+    },
+    "02_REGISTRY/research/certificates/a4d_native_dynamical_ownership_check.py": {
+      "sha256": "46fbae34008b1d84264e859d95a48ac5d7ae61e48c90c884f0c4dcd9446b0573",
+      "receipt_paths": [
+        "02_REGISTRY/research/certificates/a4d_native_dynamical_ownership_results.json"
+      ]
+    },
+    "02_REGISTRY/research/certificates/a4d_native_history_action_check.py": {
+      "sha256": "d32907315c585788bdf1e630587399ab9ab508cc93fb80777bb04b43c613a19f",
+      "receipt_paths": [
+        "02_REGISTRY/research/certificates/a4d_native_history_action_results.json"
+      ]
+    },
+    "02_REGISTRY/research/certificates/a4d_native_history_field_coupling_check.py": {
+      "sha256": "8e31983e28e68c2953ee0b867534de8bfbb484c79fbd0854fd557f3c7848ec0b",
+      "receipt_paths": [
+        "02_REGISTRY/research/certificates/a4d_native_history_field_coupling_results.json"
+      ]
+    },
+    "02_REGISTRY/research/certificates/a4d_native_prepared_action_check.py": {
+      "sha256": "326a567fab54cc0dadeb06ae09d7db8a2dae06c251cdc3f7c3e1d5207e8fa180",
+      "receipt_paths": [
+        "02_REGISTRY/research/certificates/a4d_native_prepared_action_certificate.json",
+        "02_REGISTRY/research/certificates/a4d_native_prepared_action_results.json"
+      ]
+    },
+    "02_REGISTRY/research/certificates/a4d_native_scene_payload_action_check.py": {
+      "sha256": "8be46ac5fd8c83dc2475b40bc0ba0376909057474ff481c22d559f9f2b72506f",
+      "receipt_paths": [
+        "02_REGISTRY/research/certificates/a4d_native_scene_payload_action_results.json"
+      ]
+    },
+    "02_REGISTRY/research/certificates/a4d_native_uniform_memory_actuation_check.py": {
+      "sha256": "a55d36eb4e1555bb0413e5995409cbd9a4986043d8fbe1c1abbbef4dee3dc85d",
+      "receipt_paths": [
+        "02_REGISTRY/research/certificates/a4d_native_uniform_memory_actuation_certificate.json",
+        "02_REGISTRY/research/certificates/a4d_native_uniform_memory_actuation_results.json"
+      ]
+    },
+    "02_REGISTRY/research/certificates/a4d_native_verified_archive_actuation_check.py": {
+      "sha256": "8580449540c77d4ac4edc1f7f275b47c5397705d8642a32aef624e361a725f98",
+      "receipt_paths": [
+        "02_REGISTRY/research/certificates/a4d_native_verified_archive_actuation_certificate.json",
+        "02_REGISTRY/research/certificates/a4d_native_verified_archive_actuation_results.json"
+      ]
+    },
+    "02_REGISTRY/research/certificates/d0_native_tangent_source_preflight_check.py": {
+      "sha256": "6310ba366438d5b31eb18f0792414ff5950dbf63507f616d827005414a2b6629",
+      "receipt_paths": [
+        "02_REGISTRY/research/certificates/d0_native_tangent_source_preflight_certificate.json"
+      ]
+    }
+  },
+  "compatibility_capsules": {
+    "02_REGISTRY/research/certificates/a4d_native_addressed_third_role.lean": "04e023b216c0da1886df6ce6f2db5e38cfda9ef7d01af46b91718dd08cd22774",
+    "02_REGISTRY/research/certificates/a4d_native_archive_apparatus_realization.lean": "079b464f33cf7f86c2879875e8c4c9abf1567d86f202e8d30838805221ebac73",
+    "02_REGISTRY/research/certificates/a4d_native_code_price_resolution.lean": "e02804a4b2e9884a3893f34fdd68f3e552b4d617cf0216311ba05438b86c3e63",
+    "02_REGISTRY/research/certificates/a4d_native_dynamical_ownership.lean": "cc456ee9318de3f55396b25bf0288573b0317f15f94ce08244ef593702575745",
+    "02_REGISTRY/research/certificates/a4d_native_history_action.lean": "c624347752b520164371bc26a6f86ff788189fa1a9bf44269122751dc3d36f13",
+    "02_REGISTRY/research/certificates/a4d_native_history_field_coupling.lean": "7c2e48b490cc19ddb2a637bc694dcf1f13eab3ab938378a29560e7db44b71ef8",
+    "02_REGISTRY/research/certificates/a4d_native_prepared_action.lean": "2e6731a70fe3b42da87acba14c78aaee23c6654a4738a46aded6a3c2850190d9",
+    "02_REGISTRY/research/certificates/a4d_native_scene_payload_action.lean": "b040f4e517c040af539a94d5ffa861d689504cfac1f6427a41419484ab178a2d",
+    "02_REGISTRY/research/certificates/a4d_native_uniform_memory_actuation.lean": "7e3a703c7e4babf4837b8b381565bcd3fc82a62f98ee0b8baff06339f7d4adf8",
+    "02_REGISTRY/research/certificates/a4d_native_verified_archive_actuation.lean": "9f331f625646e084c64a0f083eb8f943a36102e8b3f86fe692d8f36af6524ce9"
+  },
+  "current_compatibility": "python tools/check_native_checkpoint_compatibility.py; actual maintained sources, no overlay",
+  "report_input": {
+    "scope": "HISTORICAL_REPORT_INPUT_NOT_CURRENT_ROUTE",
+    "source_head": "64cbac8d17028376ba2e5324da5014ebcfa053b1",
+    "source_blob": "dc59c6cdcdd3d2d1d1e4460ec74e456918359abc",
+    "target_path": "02_REGISTRY/research/APARENT_FINITE_GRAVITY_COMMON_ACTION_SELECTOR.md",
+    "snapshot_path": "02_REGISTRY/research/sources/d0_native_variational_checkpoint_2026-10-20/APARENT_FINITE_GRAVITY_COMMON_ACTION_SELECTOR.md",
+    "snapshot_sha256": "b95d5f631fb9c5936fe61964e73c3f373ea3f9deefb0fae037c7a760d6535ff5",
+    "entrypoints": {
+      "02_REGISTRY/research/certificates/a4d_native_dynamical_ownership_check.py": "02_REGISTRY/research/certificates/a4d_native_dynamical_ownership_certificate.json",
+      "02_REGISTRY/research/certificates/a4d_native_history_action_check.py": "02_REGISTRY/research/certificates/a4d_native_history_action_certificate.json"
+    },
+    "receipts": {
+      "02_REGISTRY/research/certificates/a4d_native_dynamical_ownership_certificate.json": "cc6b3024f98e36694c3193229fa83cfd16cb7e0accb9427badf8971ecd5c113e",
+      "02_REGISTRY/research/certificates/a4d_native_history_action_certificate.json": "e8b9ad4edd5b010e35fc765043a77130263e02b86f0c2b7d4d8f96e9f8b9c2bc"
+    }
+  }
+}

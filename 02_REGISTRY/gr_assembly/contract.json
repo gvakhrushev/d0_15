@@ -1,0 +1,1711 @@
+{
+  "schema": "d0-gr-assembly/1",
+  "authority": "Composition only; scientific acceptance, claims and task lifecycle retain their existing owners.",
+  "route": "02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md",
+  "goals": [
+    {
+      "id": "D0-FOUNDATION",
+      "requires": [
+        "verification_core"
+      ],
+      "statement": "Compose the necessary operational verification kernel from the existing necessity, empirical-factorization and future-memory owners, with their exact hypotheses.",
+      "outcome": "positive"
+    },
+    {
+      "id": "THEORY-TRANSFER",
+      "requires": [
+        "theory_transfer"
+      ],
+      "statement": "Own generic conditional transfer of existing theory results through an explicit faithful operational interpretation. Each physical realization is a separate application.",
+      "outcome": "positive"
+    },
+    {
+      "id": "GR",
+      "requires": [
+        "gr_architectural_closure"
+      ],
+      "statement": "First complete physical specialization of the D0 foundation: faithful operational realization composed with the unchanged positive native GR theorem on the same admitted curved family, action and source.",
+      "outcome": "positive"
+    },
+    {
+      "id": "RAW-216",
+      "requires": [
+        "raw_response_terminal"
+      ],
+      "statement": "Original exact-source/raw-owner terminal, independently of the positive GR route.",
+      "outcome": "classification"
+    },
+    {
+      "id": "D0-CLOSURE",
+      "requires": [
+        "global_classification"
+      ],
+      "statement": "Existing global CORE/NO-GO/BRIDGE/PASSPORT/EMPIRICAL classification, not positive GR.",
+      "outcome": "classification"
+    }
+  ],
+  "interfaces": {
+    "native-programme-v1": {
+      "carrier": "Independent admitted Omega_h with (q,D,b,m,record) and all retained internal variables",
+      "action": "The same complete native Cost-Info with full history, weights, normalizer and retained terms",
+      "variations": "All independently admitted metric, link, shift, full exterior matter, preparation and clock variations",
+      "source": "Independently defined full matter source and declared smooth comparator; no output-fitted source",
+      "normalization": "Explicit conversion between estimator -2G and sheet -G/2 before composition",
+      "refinement": "One fixed smooth nondegenerate metric, actual interlevel maps, declared topology and uniform estimates",
+      "scope": "Positive nonlinear native dynamics on an explicit nonempty curved class; physical admission remains an obligation"
+    },
+    "raw-216-v1": {
+      "carrier": "Original fixed smooth Q_h, genuine Lorentz quotient and independently fixed smooth tau",
+      "action": "Original designated geometric Euler response and declared source equations",
+      "variations": "Exact joint connection and metric source equations, without dropping components",
+      "source": "Original #216 smooth comparator; Xi(Q_h,K_h)=h^2 tau(hx)",
+      "normalization": "h^-2 times the unweighted raw l1 sum over h^-4 sites",
+      "refinement": "Exact samples of the same g and tau on a refining sequence in the admitted log chart",
+      "scope": "Original response terminal; endpoint testing or a weaker norm cannot substitute"
+    },
+    "full-affine-v1": {
+      "carrier": "Selected four-channel full-affine nondegenerate coframe/link family",
+      "action": "The selected full-affine action of the original stationary task",
+      "variations": "All full-affine stationary rows of that task",
+      "source": "Its declared stationary/source convention",
+      "normalization": "The original task convention, not the naked-star replacement",
+      "refinement": "Finite witness or precisely scoped no-go; no continuum inference",
+      "scope": "Original full-affine stationarity obligation"
+    },
+    "resonance-divisor-v1": {
+      "carrier": "Owned holomorphic A(z) on (C*)^4",
+      "action": "Actual conjugate-polarized character Hessian owner",
+      "variations": "Full matrix and all higher-codimension strata",
+      "source": "No physical source assertion",
+      "normalization": "Exact Laurent/radical arithmetic in the declared coordinate convention",
+      "refinement": "Finite/exact algebraic classification; no continuum inference",
+      "scope": "Original full complex divisor classification; phase-count shortcut is refuted"
+    },
+    "word-jet-v1": {
+      "carrier": "Ordered primitive words with a possibly moving intertwiner",
+      "action": "Existing primitive maps; no new physical action",
+      "variations": "Exact telescoping residual and first jets",
+      "source": "Explicit branching/comparison hypotheses; no physical stress assertion",
+      "normalization": "Exact algebraic convention of the primitive composition brief",
+      "refinement": "Generic theorem with its stated hypotheses",
+      "scope": "Bounded formal premise consumed by native preparation/variation"
+    },
+    "mv-span-v1": {
+      "carrier": "Finite real matrix space with admissible traceless source-neutral tests",
+      "action": "No physical action is selected",
+      "variations": "All admissible real tangent tests",
+      "source": "The specified neutral span and trace pairing",
+      "normalization": "Exact real trace convention of the MV brief",
+      "refinement": "Generic finite-dimensional theorem",
+      "scope": "Bounded algebraic span premise; no physical operator inferred"
+    },
+    "endpoint-probe-v1": {
+      "carrier": "Literal naked-star T4 smooth nondegenerate metric pencils and log-O(h) endpoint preparations",
+      "action": "The literal naked-star action; complete native Cost-Info is not identified",
+      "variations": "The declared smooth metric pencils and endpoint contrasts",
+      "source": "The designated rho0 geometric response; no native matter source identified",
+      "normalization": "The analytic finite-probe contrast convention of its owner",
+      "refinement": "epsilon=h^(1/3) endpoint estimate, with native admission separate",
+      "scope": "Observable law only; it does not supply native state, action or joint recovery"
+    },
+    "star-metric-v1": {
+      "carrier": "Nondegenerate solder quotient Q=Theta eta Theta^T and dressed compatible links",
+      "action": "Selected literal naked star action, including its actual finite metric response",
+      "variations": "Genuine metric quotient tangents; complete coupled normal rescue remains separate",
+      "source": "Geometric Euler response and declared smooth comparator; no full native matter binding",
+      "normalization": "Sheet response -G/2 with the exact owner index/density convention",
+      "refinement": "Fixed smooth realization; parametrix is not an exact full joint refining solution",
+      "scope": "Accepted scoped geometry and partial smooth controls only"
+    },
+    "normal-chart-estimator-v1": {
+      "carrier": "Smooth Lorentz metric and a metric-normal chart with its stated orthonormal frame",
+      "action": "Owned centered-difference Lorentz ray, not an identified complete native action",
+      "variations": "Arbitrary symmetric metric Hessians at a normal center",
+      "source": "Geometric Einstein tensor; matter coupling remains outside this estimator",
+      "normalization": "R_resp E_eta=-2G+O(epsilon_N^2), literal radius-two centered stencil",
+      "refinement": "epsilon_N=(N+2)^-1 with the no-alias domain and fixed smooth metric",
+      "scope": "Analytic estimator theorem with external smooth geometry definitions; no native physical GR closure"
+    },
+    "brinkmann-j2-v1": {
+      "carrier": "Six-plaquette null Brinkmann coframe with independent site values H(u,x,y), proper u-links in span N2,N3, and a fixed transverse collar.",
+      "action": "The literal six-plaquette Lorentz-star geometry composed with the specifically corrected two-tick Golden AF×scene Book03 J2; this is a constructed programme, not the compulsory complete D0 price.",
+      "variations": "All 16 independent relative-solder and 24 proper-Lorentz link rows; the stated two scalar/top null CAR16 matter rows.",
+      "source": "The owned J2 null-source identity with E(u)=|D_u+Psi|^2 and its fixed lambda_-(2^-20); no fitted stress source.",
+      "normalization": "Geometric row E_vv+=-h^3 Delta_h H(u+h)/2; J2 composition yields Delta_h H(u+h)=-4 lambda_- E(u).",
+      "refinement": "Smooth local unwrapped-u family and bounded transverse Dirichlet rectangle; one-u-step lag O(h), harmonic recovery O(h^2).",
+      "scope": "Exact finite equations and smooth Einstein-scalar Brinkmann sector for this named instrument only; physical admission, full D0 selection, generic matter and raw #216 remain separate."
+    },
+    "opposite-null-order-memory-v1": {
+      "carrier": "The original proper-Lorentz null basis acting on the complete CAR16 exterior representation, on the declared small chart ||X||_2<=1/10.",
+      "action": "A constructed full16 positive Julia instrument with two distinct fresh retained flags and one fixed complete 13-outcome POVM; no compulsory native price is selected.",
+      "variations": "Exact six-generator first-response matrix and finite AB-versus-BA order contrasts at the identity; no nonlinear full40 Hessian match is asserted.",
+      "source": "Conditional complete mean-Shannon Cost-Info source after one registered original Golden p,p^2 branch split; all declared outcomes and Julia failures remain retained.",
+      "normalization": "T_X=Lambda(exp X)/2 with the declared finite witness normalization; source is in Golden logarithmic units and is not calibrated to an Einstein coupling.",
+      "refinement": "Fixed finite-dimensional test and local first/order jets; no uniform refinement or continuum estimate.",
+      "scope": "Exact finite order-sensitive Lorentz/CAR readout candidate. Literal fullStep selection, compulsory whole H+J+R price, physical admission, preparation/clock/controller equations and GR closure remain open."
+    },
+    "q8-spin-sheet-native-bridge-v1": {
+      "carrier": "The original 33-vertex K(9,11,13) graph, its 718 directed edges and 1287 filled ABC triangles, compared with the original Q8 center, CAR16 vector/exterior readout and current GoldenCoherentMemory.fullStep owner.",
+      "action": "Original Q8/group-algebra and graph topology under the actual allowed future action/test alphabet, compared with the current fullStep signature; no new D0 action or physical selection.",
+      "variations": "GF(2) triangle-boundary inverse, finite future-observational quotient/partition refinement, and Lean type/signature audit; no coframe or Lorentz-link Euler closure.",
+      "source": "No Einstein or matter-source equality. It tests whether the admitted future readout can carry the original Q8 central order-memory bit and records the conditional minimum predictive archive.",
+      "normalization": "Original Q8 central sign, GF(2) parity and binary archive capacity; no fitted coefficient or Einstein calibration.",
+      "refinement": "Exact finite future-action quotient, graph and current typed-owner audit only; no continuum spin-structure or refinement claim.",
+      "scope": "Finite representation and conditional archive boundary. The 327-bit lower bound applies only if future Spin tests are admitted; physical Q8 admission/payment, a typed fullStep path-memory bridge, complete H+J+R source, Ward identity, refinement and GR remain open; this is not a no-go for other D0 completions."
+    },
+    "golden17-vertical-source-descent-v1": {
+      "carrier": "The original periodic L=2 Role carrier with 16 sites, 64 shared proper-Lorentz links and 96 based six-star faces, with the original two-fresh CAR16/Julia Golden17 measurement.",
+      "action": "The complete positive Golden17 pointer Shannon H96 and its Fisher/KL as a mathematical source candidate; it is not selected as the compulsory Book03 action.",
+      "variations": "One true shared link U_(0,0)(t)=exp(t J23), all other links identity; all 16 geometric star densities f_x(t) stay zero while six original face readouts move.",
+      "source": "An exact non-descent witness for this candidate: H96''(0)<0 and H96'(.15) != 0 along Df=0; no physical Einstein source equality is asserted.",
+      "normalization": "Original p=phi^-1, log_phi entropy and all 17 Golden/Bell outcomes including Bell failure; no fitted gravitational coupling.",
+      "refinement": "Exact finite L=2 Role chart only; no continuum or refinement conclusion.",
+      "scope": "Disproves this full-pointer Shannon as a single-valued function of the star-density vector on the stated orbit. It is not a no-go for the compulsory D0 price, which could exclude or cancel the candidate through independently stationary terms; physical selection, full H+J+R, Ward, refinement and GR remain open."
+    },
+    "book-ordered-memory-readout-v1": {
+      "carrier": "Original K(9,11,13) with 33 vertices and 718 directed edges; two original closed 9-edge histories and a conditional SO+(1,3) edge-transport assignment.",
+      "action": "Original additive scalar Book03 Cost-Info path law alongside its algebra-valued memory class; no complete physical action is selected.",
+      "variations": "Permutation of the three original triangle loops and exact rational amplitudes a,b,c; primitive scalar edge Cost and vertex Info may depend arbitrarily on fields.",
+      "source": "Gauge-invariant Wilson-trace difference and a branch-complete positive Julia/Choi marked-event probability difference; no full Einstein source is asserted.",
+      "normalization": "At a=b=c=1/40: trace gap -1/32005, first a-source -8/6401, and marked-event gap -262144006401/67129837158400000.",
+      "refinement": "One finite original scene carrier; no refinement-uniform or continuum result.",
+      "scope": "Exact scalar order-blindness and conditional positive order readout; native scene-to-Lorentz admission, paid execution, complete 16+24+CAR source, Ward identity and GR remain open."
+    },
+    "book-cost-info-boundary-v1": {
+      "carrier": "The exact finite K(9,11,13) scene path carrier with 33 vertices, all 718 directed inter-zone edges and all 15,708 composable two-step paths.",
+      "action": "Book 03 Cost-Info path sum over either all listed vertices or a transition-event allocation; the theorem classifies the endpoint accounting only.",
+      "variations": "Universal exact path-composition identities for real edge costs and vertex information assignments on the declared finite carrier; no metric or field variation is included.",
+      "source": "Under the literal all-vertices convention, singleton identity and additive gluing force Info=0. Under transition-event allocation every real theta is additive, and changing theta is an endpoint coboundary.",
+      "normalization": "No probability-to-information, log base, branch probability, or field-dependent normalizer is selected by this result.",
+      "refinement": "Finite carrier only; no infinite-history, continuum, or uniform refinement conclusion.",
+      "scope": "Exact formal boundary classification for the displayed Cost-Info decomposition. Native branch-to-record-to-Info binding, complete physical price, Ward source and GR remain open."
+    },
+    "balanced-original-x-j2-v1": {
+      "carrier": "Original exact-cost Fibonacci F/R histories retained at their unchanged X_w microaddresses; a canonical-count balanced old-LEFT subset is coarsened to its original Role macro-cell representative, while every unselected history and old RIGHT outcome remains present.",
+      "action": "The unchanged corrected two-scene-tick AF×scene Book03 J2 price, compared as two distinct operand/query programmes: the local inverse-PF query and the moving physical-volume J/V mean query.",
+      "variations": "The theorem identifies the complete finite first jets in all declared 16 coframe, 24 Lorentz-link and 2 CAR scalar/top field directions at the common null/star backgrounds; the companion checker covers bounded L=4,8 controls.",
+      "source": "Exact finite full-price and first-source equality on the common f=q=0 null/star roots, including the genuine moving-volume quantile derivative; no off-shell action identity is asserted.",
+      "normalization": "The selected balanced subrecord uses its actual regular-LEFT trace weight and positive two-tick J2 source normalizer; the full-prefix AF coefficient is not substituted.",
+      "refinement": "Exact finite cell balance with the owner’s diagonal-depth and smooth mean-source transfer only under its cardinal-interpolation and true J2 work/return compilation hypotheses.",
+      "scope": "A constructed balanced programme preserving original X_w addresses; macroscopic cell labels are coarse observables. Native LEFT-gate admission and compulsory selection, full historical H+J+R and preparation/clock/controller price, generic CAR stress, and original raw #216 remain separate."
+    },
+    "original-golden-mean-j2-v1": {
+      "carrier": "The unchanged original four-dimensional nested golden-box addresses X_w and their true, generally unequal regular-LEFT multiplicities; no rank decoder or equal-count subset is imposed, and all unqueried, failed, pending and old RIGHT/reference histories remain retained.",
+      "action": "A specifically composed inverse-PF and field-dependent J/V quantile operand of the existing complete two-Golden-tick AF×scene Book03 J2; the actual off-node interpolation and its work/cost are part of the declared query assumptions.",
+      "variations": "At the common nonvacuum null/star roots, the complete finite first jets match the local query for all 16 coframe, 24 Lorentz-link and 2 CAR scalar/top directions; the off-null mean-source theorem retains its C2 query and compilation hypotheses and asserts no off-shell action identity.",
+      "source": "The null source is the existing unrestricted Brinkmann-J2 result; the composed query adds the inverse-PF-cancelled physical-volume mean Gamma=V^-1 integral(P_star+lambda J q), with the genuine volume pressure/transport jets off null.",
+      "normalization": "Uses actual positive native regular-LEFT weights, their fixed inverse-PF ratios and the moving physical-volume map T_{J/V}; no equal Born prior or fitted Einstein coefficient is introduced.",
+      "refinement": "The stated exact-cost schedule n(L)>=(16+gamma)log_phi(L)+C_gamma gives positive support on every original site and sup|rho-1|=O(L^(-gamma/16)); finite source roots transfer exactly, while the continuum mean retains the owner's smooth sampling and bounded-query assumptions.",
+      "scope": "A result for this specified mathematical operand on original golden addresses. It removes the need for the balanced subset/rank decoder on this route, but does not prove compulsory D0 selection, admission/costing of the query, the full H+J+R/controller/preparation/observer/clock equations, generic all-CAR dynamics, global causal recovery or original raw #216."
+    },
+    "balanced-rank-decoder-j2-v1": {
+      "carrier": "Original equal-cost Fibonacci F/R words with a deterministic rank/unrank LEFT decoder assigning them to L^4 Role cells for L=2^r; this changes the site assignment and is not the original X_w map.",
+      "action": "The unchanged corrected two-scene-tick AF×scene Book03 J2 price with distinct local and moving physical-volume mean operands; equality is established at the stated common roots, not off shell.",
+      "variations": "The exact source bridge is stated for all declared 16 coframe, 24 Lorentz-link and 2 CAR scalar/top finite field directions; the JavaScript checker independently exercises finite arithmetic and sampled moving-source controls.",
+      "source": "Exact per-cell Fibonacci divisibility and exact finite common-root first-source match; the owner’s smooth mean-source conclusion retains its bounded C2 query, compilation and decoder assumptions.",
+      "normalization": "The selected subrecord’s true regular-LEFT trace and actual two-tick J2 positive source normalization, not the distinct full-prefix AF coefficient.",
+      "refinement": "Exact route uses L=2^r and the stated Fibonacci divisibility sequence; the cheaper near-balanced route has a discrepancy bound and does not by itself certify exact roots or the raw #216 norm.",
+      "scope": "A mathematically specified decoder-selected AF×scene family with exact finite source roots and a conditional general Einstein-scalar mean source. Physical decoder admission/selection, the original X_w placement, complete D0 price, generic matter and raw #216 remain open."
+    },
+    "double-null-quadratic-cartan-v1": {
+      "carrier": "The original six based plaquettes on the two-affine-null family H=a(A_x x+A_y y), J=b(B_x x+B_y y), with the original Lorentz eta and full independent coframe/link variables.",
+      "action": "The unchanged finite six-plaquette Lorentz-star action with odd curvature and its original fixed star pairing; continuum Levi-Civita links are only a trial before the mixed Cartan repair.",
+      "variations": "All 16 independent coframe and all 24 proper-Lorentz left-link first variations are taken before substituting the mixed-order connection correction.",
+      "source": "Exact [a*b] coefficient in Q[a,b]/(a^2,b^2): a unique homogeneous h/8 Cartan correction cancels all 24 link rows, and the 16 coframe rows reduce to the Einstein dot-product overlap; perpendicular gradients retain nonzero mixed plaquette curvature while all 40 mixed Euler coefficients vanish.",
+      "normalization": "The stated original Euler normalization has mixed link source O(h^4), coframe overlap -h^3(A dot B)/4 in the two transverse diagonal rows, and correction coefficients h/8 from the exact flat Cartan Hessian inverse.",
+      "refinement": "Exact finite coefficientwise statement at order a*b, checked at symbolic x,y and four basis pairs; no uniform h-to-zero or higher-amplitude estimate is claimed.",
+      "scope": "A first nonlinear mixed-order finite Palatini bootstrap on the original field action. Higher orders, cross-site/global all-order roots, native physical price/admission, Ward transfer, refinement and GR closure remain separate."
+    },
+    "double-null-cubic-continuum-poisson-v1": {
+      "carrier": "The continuum crossed-null metric g_uv=1+HJ/4, g_uu=H, g_vv=J, g_xx=g_yy=-1 with H=a(A dot x), J=b(B dot x), and orthogonal real transverse gradients.",
+      "action": "Continuum Levi-Civita curvature and Ricci tensor through total amplitude degree three; the five-point transverse Laplacian is checked as an exact scalar identity for the cubic correction profiles.",
+      "variations": "Exact symbolic Ricci components in the stated two-null family; no finite link or coframe Euler rows are varied in this result.",
+      "source": "The cubic Ricci source has only uu and vv components. Profile corrections proportional to |A|^2(B dot x)(x^2+y^2) and |B|^2(A dot x)(x^2+y^2) cancel them; the central five-point Laplacian yields the same source exactly for every h.",
+      "normalization": "The verified coefficients are Ric_uu=a^2 b |A|^2(B dot x)/8 and Ric_vv=a b^2 |B|^2(A dot x)/8 before correction, with correction coefficient -1/32.",
+      "refinement": "The scalar stencil identity is exact for these cubic polynomials at every h; no general smooth-profile refinement estimate is included.",
+      "scope": "Continuum Einstein jet through degree three plus a finite scalar Poisson identity. The original finite 24 Cartan plus 16 coframe cubic equations and native complete price remain open."
+    },
+    "double-null-cubic-uniform-control-v1": {
+      "carrier": "The fixed affine crossed-null coframe H=a x, J=b y at h=1, with the exact order-ab Cartan correction from the original six-plaquette theorem.",
+      "action": "The original six-plaquette Lorentz-star field equations expanded through cubic amplitude coefficients using the continuum Levi-Civita links as a trial.",
+      "variations": "All 24 original proper-Lorentz link rows and all 16 original coframe rows are evaluated at the origin and one adjacent transverse node.",
+      "source": "At [a^2 b] and [a b^2], the flat homogeneous 24x24 Cartan block can cancel the 24 link rows at the origin with one site-independent correction, but coframe rows remain there and link rows remain at (x,y)=(1,0).",
+      "normalization": "Exact rational coefficients in Q[a,b]/(a^3,b^3) at h=1; the flat homogeneous Cartan Hessian has determinant 256.",
+      "refinement": "Finite exact coefficient test at two transverse nodes only; no uniform mesh or boundary limit.",
+      "scope": "A negative control for a spatially uniform cubic connection correction with the affine coframe fixed. It does not exclude spatially varying link corrections, coframe modes or a coupled lattice solve."
+    },
+    "double-null-cubic-polynomial-chart-v1": {
+      "carrier": "The perpendicular affine crossed-null family H=a*x, J=b*y on the original h=1 lattice, with the exact published order-a*b Cartan repair.",
+      "action": "The unchanged original six based plaquettes, odd Lorentz curvature and fixed Lorentz-star pairing.",
+      "variations": "All 24 independent proper-Lorentz link and all 16 independent coframe Euler rows at every symbolic transverse site are formed before the cubic corrections are solved.",
+      "source": "At [a^2 b], degree-at-most-two site-dependent corrections for all 40 fields yield a 240-equation rational system with coefficient rank 154 and augmented rank 155.",
+      "normalization": "Exact Q[a,b]/(a^3,b^3) coefficients at h=1; each correction has independent rational coefficients against 1,x,y,x^2,x*y,y^2.",
+      "refinement": "One fixed finite lattice spacing h=1; no mesh-uniform or continuum statement.",
+      "scope": "An obstruction only to this joint quadratic-polynomial correction chart for the selected crossed-null background. Arbitrary lattice corrections and native physical selection remain open."
+    },
+    "double-null-continuum-fourth-order-v1": {
+      "carrier": "The continuum crossed-null two-Killing metric with arbitrary real orthogonal transverse slopes A=(p,q), B=kappa*(-q,p), including the derived cubic H/J profile corrections.",
+      "action": "Continuum Levi-Civita Ricci tensor, truncated by total amplitude degree four; no finite plaquette action is varied.",
+      "variations": "All 16 Ricci matrix entries and the two-Killing area-radius Laplacian are evaluated exactly in the declared amplitude jet.",
+      "source": "A transverse conformal factor phi=k*(a*b)^2*|A|^2*|B|^2*(x^2+y^2)^2 leaves only equal transverse residuals proportional to 1024*k-3; k=3/1024 cancels all entries.",
+      "normalization": "Exact symbolic coefficients over Q[p,q,kappa] with rational k=3/1024.",
+      "refinement": "Continuum calculation only; no finite-mesh refinement estimate is asserted.",
+      "scope": "An exact continuum Einstein jet through degree four for the stated family, not a finite 40-row root or a native D0 source law."
+    },
+    "double-null-cubic-finite-jet-v1": {
+      "carrier": "The perpendicular crossed-null affine family H=a*x, J=b*y on the original h=1 lattice.",
+      "action": "The unchanged original six based plaquettes, odd Lorentz curvature and fixed Lorentz-star pairing; continuum Levi-Civita links are only the initial trial.",
+      "variations": "All 24 independent proper-Lorentz link and all 16 independent coframe Euler rows are expanded at symbolic transverse sites.",
+      "source": "Site-dependent degree-at-most-three corrections solve both [a^2*b] and [a*b^2]; a final simultaneous replay makes all 40 rows vanish identically through total amplitude degree three.",
+      "normalization": "Exact rational coefficients; each cubic coefficient system has 400 equations, rank 266 and augmented rank 266, with an explicit particular solution.",
+      "refinement": "One fixed spacing h=1; no mesh-uniform estimate or continuum limit is proved.",
+      "scope": "A finite perturbative vacuum jet on this crossed-null chart only. Higher amplitude orders, arbitrary slopes, global/boundary roots and physical D0 selection remain open."
+    },
+    "double-null-quartic-selected-cubic-branch-v1": {
+      "carrier": "The perpendicular crossed-null chart H=a*x, J=b*y on the original h=1 lattice, with the explicit degree-at-most-three particular corrections and all cubic free parameters set to zero.",
+      "action": "The unchanged original six based plaquettes, odd Lorentz curvature and fixed Lorentz-star pairing.",
+      "variations": "All 24 independent proper-Lorentz link and all 16 independent coframe Euler rows at symbolic transverse sites are expanded at [a^2*b^2].",
+      "source": "Independent degree-at-most-five spatial-polynomial corrections for all 40 fields give 840 exact rational equations with coefficient rank 580 and augmented rank 581.",
+      "normalization": "Exact rational quartic-amplitude coefficient at h=1; each correction has independent coefficients against all x^i*y^j with i+j<=5.",
+      "refinement": "One fixed finite lattice spacing h=1; no mesh-uniform or continuum statement.",
+      "scope": "An obstruction only around the selected zero-free-parameter cubic representative and this degree-at-most-five correction chart. Other cubic representatives, non-polynomial corrections and native physical selection remain open."
+    },
+    "double-null-cubic-free-mode-quartic-jet-v1": {
+      "carrier": "The perpendicular crossed-null profile H=a*x, J=b*y on the original h=1 lattice.",
+      "action": "The unchanged original six based plaquettes, odd Lorentz curvature and fixed Lorentz-star pairing, with the published order-a*b Cartan correction.",
+      "variations": "All 24 independent proper-Lorentz link and all 16 independent coframe Euler rows are expanded at symbolic transverse coordinates.",
+      "source": "The 840-equation [a^2*b^2] system jointly varies all 268 free cubic modes and all degree-at-most-five quartic corrections; exact rank 582 with no augmented RHS pivot gives a solution, followed by a combined all-40-row replay.",
+      "normalization": "Exact rational coefficients in Q[a,b]/(a^3,b^3); the selected solution uses two named [a^2*b] coframe modes and 166 nonzero quartic correction coefficients.",
+      "refinement": "One fixed finite lattice spacing h=1; no mesh-uniform or continuum statement.",
+      "scope": "A finite mixed-amplitude jet through [a^2*b^2] on one perpendicular-slope chart. Pure [a^3] and [b^3], higher orders, arbitrary slopes, global roots and physical D0 selection remain open."
+    },
+    "double-null-asymmetric-order4-v1": {
+      "carrier": "The selected perpendicular crossed-null chart H=a*x, J=b*y on the original h=1 lattice, with the registered mixed-quartic cubic representative.",
+      "action": "The unchanged original six based plaquettes, odd Lorentz curvature and fixed Lorentz-star pairing.",
+      "variations": "All 24 independent proper-Lorentz link and all 16 independent coframe Euler rows are expanded with amplitude cap three.",
+      "source": "The pure [a^3] and [b^3] sources vanish identically. For [a^3*b] and [a*b^3], each 840-variable correction system has exact rank 580 and a non-pivot augmented RHS; four nonzero correction coefficients are selected per order.",
+      "normalization": "Exact rational coefficients. The simultaneous replay checks 13 named amplitude coefficients, including [a^2*b^2], [a^3*b] and [a*b^3].",
+      "refinement": "One fixed finite lattice spacing h=1; no mesh-uniform or continuum statement.",
+      "scope": "A selected finite crossed-null branch only. Pure fourth powers and the fifth- and sixth-order mixed coefficients are not checked; arbitrary slopes, global roots, sourced matter and physical D0 selection remain open."
+    },
+    "complete-history-code-source-v1": {
+      "carrier": "One fixed finite set of complete distinguishable histories with a positive C1 probability law.",
+      "action": "A fixed field-independent injective description code with a same-object competitive-cost bound; no native D0 price is selected.",
+      "variations": "Field variations of the same complete-history law, with the declared score and Fisher source bounds.",
+      "source": "Normalized expected description length minus Shannon information in the same golden cost unit; this is not the full native matter/Ward source.",
+      "normalization": "D[(E L_N-H_phi(P))/N] with the owner’s C_N*sqrt(I_N)/N estimate.",
+      "refinement": "The owner’s fixed finite-history families and stated uniform first-source/full-system root hypotheses; no general D0 refinement is inferred.",
+      "scope": "Analytical code/source result and conditional exact-root transfer; no admitted native decoder, compulsory full-price selection or GR closure."
+    },
+    "two-line-full-julia-car-v1": {
+      "carrier": "The original CAR16 exterior representation with two specified normalized grade-one probe states; the response test is local to this preparation pair and does not restrict the underlying 16-dimensional carrier.",
+      "action": "The already-owned positive Julia dilation T=Lambda(U)/2 and its complete failure complement F=sqrt(I-T†T); this interface does not select a Cost-Info action.",
+      "variations": "Six original proper-Lorentz link directions at the identity in the sufficiently small contraction chart.",
+      "source": "Six unconditioned GOOD-event one-body CAR bilinear response values, with GOOD and BAD both retained; the exact six-by-six Jacobian determinant is 1/373248.",
+      "normalization": "Uses the pre-existing Julia scale 1/2 and normalized grade-one probes; the determinant is a local observability invariant, not an Einstein coupling.",
+      "refinement": "Finite local first-response theorem only; no refinement or continuum transfer is asserted.",
+      "scope": "Conditional response-capacity result. Physical selection and price of the preparations/readouts, oldRIGHT/reference, routing, work, clock, complete H+J+R source and original Einstein Euler equality remain open."
+    },
+    "original-scene-rooted-n4-lorentz-atlas-v1": {
+      "carrier": "The original K(9,11,13) scene: 33 vertices, 359 undirected/718 directed edges, with genuine SO+(1,3) transports and U_vu=U_uv^{-1}.",
+      "action": "Rooted parallel transport and ordered products of original based loops; no added group, curvature action, or physically selected nonroot reference.",
+      "variations": "327 original chord matrices after fixing a 32-edge spanning-tree gauge, with six real Lorentz coordinates per chord; one fixed root frame and no nonroot co-transport.",
+      "source": "Full matrix-valued rooted loop products, not Wilson traces or spectra; all independent chord data are recoverable only when the declared depth-four histories are included.",
+      "normalization": "A common root frame fixes endpoint gauge; the result is group reconstruction and has no probabilistic or Cost-Info normalization.",
+      "refinement": "One finite 33-vertex scene only; it is not the independent four-dimensional Role lattice and carries no refinement theorem.",
+      "scope": "Finite group-theoretic observability theorem. With root-only transport, 143 rooted depth-three loops see at most 858 of 1962 Lie directions; 184 root-based depth-four histories expose the remaining 1104. This is not a selected physical detector or GR closure."
+    },
+    "original-scene-234-book-lorentz-source-v1": {
+      "carrier": "The original 33-vertex, 718-directed-edge scene with all positive based closed Book histories of lengths 2, 3, and 4, together with rooted Lorentz loop labels and a complete 17-category Golden/Bell record.",
+      "action": "A finite mathematical Book transfer on the original scene with a common normalizer and declared depth-attempt factors p, p^2, p^3; the depth-four factor and path-conditioned CAR programme are not selected as compulsory G0.",
+      "variations": "718 directed scalar transfer weights modulo 32 endpoint gauges (686 coordinates), jointly with 327 rooted SO+(1,3) chord matrices (1962 local Lie coordinates).",
+      "source": "Complete positive Book × Golden/Bell17 path record, including the Bell failure outcome, on the declared common-root chart; the constructed inverse has combined input rank 2648.",
+      "normalization": "One mathematical common clock normalizer over 266202 original histories. The checker uses finite numerical reconstruction; the common 2/3/4 clock and physical attempt weights remain unselected inputs.",
+      "refinement": "Finite original scene and local source chart only; no map to the independently varied L=4 Role lattice is established.",
+      "scope": "Conditional finite source-atlas/observability result only. Physical root reference, field-dependent co-transport, complete Cost/Info/preparation/clock/work, native Role controls, same-action Einstein source, Ward, and refinement remain open."
+    },
+    "original-stage-resolved-book-selector-v1": {
+      "carrier": "The original 33-vertex, 718-directed-edge Book scene, all 8440 original depth-2/3 histories, all 17 Golden/Bell categories, and four explicitly labelled early/late rejection outcomes.",
+      "action": "A constructed positive finite event law with Golden attempt factors p and p^2 and one shared unknown path-verification factor across depths 2 and 3; this does not establish compulsory native G0 admission.",
+      "variations": "A moving positive directed Book transfer K, two depth acceptances beta_2/beta_3, Golden attempt weights g_2/g_3, and either one shared path-verification factor kappa or independent depth-specific factors.",
+      "source": "The complete 143484-outcome record includes all accepted Book × Golden/Bell17 outcomes and four typed early/late rejection labels; with one shared kappa it analytically recovers the scalar Book action and its smooth source jets.",
+      "normalization": "All accepted outcomes and early/late rejections are retained under the common event law. A hostile control shows that independently varying depth-specific verifiers destroys absolute-cost identifiability.",
+      "refinement": "Finite constructed 33-vertex scene and numerical source replay only; no continuum or all-history theorem is asserted.",
+      "scope": "Analytic source sufficiency on the strict-positive two-depth chart with one shared verifier, plus a depth-specific-verifier non-identifiability theorem. The finite checker replays constructed controls; physical full D0 price, H+J+R admission, and GR closure remain open."
+    },
+    "original-staged-234-book-lorentz-source-v1": {
+      "carrier": "The original 33-vertex K(9,11,13) graph, all positive based closed histories of lengths 2, 3, and 4, rooted proper-Lorentz loop marks, and the complete 17-outcome Golden/Bell conditional record.",
+      "action": "A constructed positive event law with depth weights (p^2,p^3,p^2), per-depth early acceptance beta_n, and one shared path-verification factor kappa; it is not an admitted compulsory G0 execution.",
+      "variations": "Directed positive edge transfers K_uv, three clock attempts and early acceptances, one common verifier kappa, and 327 rooted SO+(1,3) chord matrices.",
+      "source": "The complete staged record retains every accepted history/outcome and six early/late rejection labels; the finite control combines 686 scalar gauge-quotient coordinates and 1962 Lorentz coordinates.",
+      "normalization": "266202 original paths and 17 conditional labels per path give 4525440 positive event labels after adding six stage failures; probabilities are normalized under kappa*Z_n(K)<1 for every depth.",
+      "refinement": "One finite original scene and a constructed numerical event-law fixture only; no continuum or 4D Role-lattice transfer is established.",
+      "scope": "Finite staged-source observability control with a shared-verifier assumption. The script uses floating-point tolerances and does not establish physical G0/fullStep execution, selected H+J+R price, 4D Palatini/CAR source, Ward, refinement, or GR closure."
+    },
+    "original-role40-six-root-triangle-pullback-v1": {
+      "carrier": "The existing Golden LEFT addressed 4D Role lattice and a conditional copy of the original K(9,11,13) scene for each Role-site word execution; the 33-vertex scene is not identified with spacetime.",
+      "action": "The unchanged six-face original Palatini star observable pulled back through six rooted three-edge proper-Lorentz triangle words at each Role site. This is an observable functional map, not a selected Book03/G0 action and not an added independent scene variation.",
+      "variations": "All 16 original coframe components and 24 shared proper-Lorentz link tangents per Role site; each Role link is varied once through its adjacent based faces. Scene chord matrices are mapped inputs, not independent Euler coordinates.",
+      "source": "Exact off-shell equality of the original Role star functional and its rooted-scene pullback, so their coframe and globally shared link derivatives agree. The finite checker independently replays 640 source directions on its L=2 fixture.",
+      "normalization": "The unchanged original finite-h Palatini star with its original eta, Hodge, epsilon signs and coframe normalization.",
+      "refinement": "The functional identity is algebraic at finite h. The independent regression uses 16 Role sites, 64 links and 96 faces over three finite fields; no refinement family is asserted.",
+      "scope": "Does not establish physical Golden LEFT address-conditioned actuation, a common verifier, retained failure/oldRIGHT/ref128/full128/clock/work price, selected full H+J+R/Cost-Info action, independent matter/Ward source, physical stationarity, continuum recovery or GR closure."
+    },
+    "original-scene-book-triangle-odds-pressure-boundary-v1": {
+      "carrier": "The original K(9,11,13) scene with 33 vertices, 718 directed edges and all 1287 original tripartite triangles; the pressure comparison uses the original 24 independent Lorentz tangent directions.",
+      "action": "Original additive directed-edge Cost minus the theta-split vertex Info on complete opposite triangle histories; the scoped boundary compares this with positive scalar Perron pressure as the entire action.",
+      "variations": "All 718 directed edge Costs and 33 vertex Info values may vary. The pressure-only obstruction assumes an affine map from the 24 original Lorentz coordinates into the directed edge prices.",
+      "source": "Opposite complete triangle odds cancel every vertex Info term and isolate oriented edge-Cost differences. An additive 718-edge price image is characterized by 960 mixed triple contrasts. Under the affine pressure-only hypothesis, the scalar pressure Hessian is positive semidefinite and cannot equal the original Palatini Hessian of inertia (12,12).",
+      "normalization": "Original golden unit log_phi for complete-history weights and the positive scalar transfer pressure log_phi(rho(K)).",
+      "refinement": "Exact finite original scene and its 1287 triangle array only; no continuum or refining-family statement.",
+      "scope": "Scoped NO-GO only for affine edge-price maps followed by scalar positive Perron pressure as the entire Lorentz action. Nonlinear price maps, full H+J+R, CAR/memory, measurement, preparation, clock and work terms are outside this obstruction; no native field-to-price binding or GR conclusion is proved."
+    },
+    "full128-opposite-null-order-source-v1": {
+      "carrier": "Original CAR16/full128 128-outcome instrument and a fixed full-rank reference128 spectator; L=4, h=1/4, nu=3/5 and Fourier mode (0,0,0,1).",
+      "action": "Two assigned Lorentz increments N2 and Nbar3 are evaluated by the already-owned full128 matrix instrument, with a distinct fresh retained 128-outcome record on each round. This is not a physically admitted D0 step or the compulsory complete Book Cost-Info action.",
+      "variations": "Compare the endpoint orders exp(a*N2)exp(b*Nbar3) and exp(b*Nbar3)exp(a*N2), then the corresponding sequential two-round histories. The two-round law retains all 128^2 ordered outcome pairs.",
+      "source": "The original port-0/blank-label pointer has exact positive J23 order jet (42633-14157*sqrt(5))/5120000. The complete two-round Golden Shannon mixed-order difference lies in [8.0230437693961338, 8.0230437693961339]*10^-8; exact zero-support controls make this particular mixed derivative well-defined.",
+      "normalization": "Pointer probabilities use the original full128 instrument; the complete Shannon source is measured in Golden information units with log(phi).",
+      "refinement": "One finite L=4 Fourier fixture only; no uniform refinement or continuum statement.",
+      "scope": "Finite order-sensitive endpoint and assigned two-round readout only. Physical per-increment admission, Julia-dilation composition by the native program, the complete controller/work/preparation/clock/reference price, full Euler source, Ward transfer and GR closure remain open."
+    },
+    "native-retained-record-oneway-actuation-boundary-v1": {
+      "carrier": "The complete active carrier A tensored with a finite abelian retained-record group R, including the stated original golden raw record and all 33 common-record scene targets.",
+      "action": "Generated class consisting of every complete active orthogonal U_A tensor I_R, every controlled additive record translation C_f:(a,r)->(a,r+f(a)), arbitrary words and reversals, and faithful complete isometric extensions retaining the same old-record probe.",
+      "variations": "All finite word lengths and record sizes in that generated class; the actual fixed p0 initial state and complete first-unequal target states are compared without resetting, tracing, postselection or changing the initial preparation.",
+      "source": "Every generator commutes with the old-record translation probe X, so its quadratic charge is invariant. The actual target changes the charge by Delta=2*a*p*q^3/(1+q+q^2+q^3)>0, giving complete-state distance at least Delta/2; an epsilon-accurate full actuation requires operator commutator norm at least Delta-2*epsilon.",
+      "normalization": "p=p0=phi^-1, a=sqrt(p), q=a^4+p^4=3-4p; the exact archive gap is positive and Delta/2 is approximately 0.03658.",
+      "refinement": "The invariant and error floor hold for all finite generated word lengths and all faithful isometric record extensions; no infinite matrix or word class is numerically enumerated.",
+      "scope": "A quantitative obstruction only for the stated one-way active-orthogonal plus additive-record class. The class does not exhaust D0; first-odd routing and coherent old-record actuation can leave it. No physical D0 no-go or GR closure is claimed."
+    },
+    "native-actionprotocol-book03-pullback-boundary-v1": {
+      "carrier": "The typed finite VerificationProtocol and ActionProtocol fiber, the original 33-state K(9,11,13) history carrier, and the constrained finite Book03 split Q=I-P with unitary U and fugacity z.",
+      "action": "ActionProtocol requires zero identity cost and a unit lower bound on nonidentity transitions. Book03 feedback is I_fb=-log det(I-z P U* (I-P) U P); its complete mathematical P/U/z variation is stated under the actual complement constraint.",
+      "variations": "All admissible transition-cost profiles are classified. The finite depth-two response varies one directed edge under the diagnostic identification Cost=ActionProtocol.action with fixed Info and memory. The Book03 source includes induced delta Q=-delta P and the fugacity leg.",
+      "source": "The protocol fiber admits nonscaling completions and need not attain its lower bound. Same-endpoint K(9,11,13) return histories have different coefficients under two completions, and a one-edge increase strictly lowers the complete fixed-memory class coefficient. At the operator level, identical base P,U,z,F admit complement-preserving mathematical field lifts with arbitrary real first source.",
+      "normalization": "Finite Book03 path coefficients use the original golden weight exp((Info-Cost)*log(phi)); the feedback uses the original determinant convention and fixed-rank split.",
+      "refinement": "The history response is the complete finite depth-two coefficient only. No all-depth or refining physical execution is established.",
+      "scope": "This identifies missing physical maps from native events/history to Cost, Info, memory and field variations, and from the common geometric/matter state to P,U,z. It is not a no-go for all D0, does not select the compulsory full price, and does not establish matter Ward, physical stationarity or GR."
+    },
+    "physical-binary-source-gate-v1": {
+      "carrier": "The declared original Golden binary-return and full128 finite fixtures, with their actual oldRIGHT preparation and retained histories; no expanded physical carrier is selected.",
+      "action": "The individually tested binary mean, full128 modal/coherent source and second AF-record price; their sum is not identified with the complete compulsory D0 Cost-Info action.",
+      "variations": "Only the owner-declared common null/star geometry+CAR tangents, the original J23 source direction, and the specified AF whole-sector preparation tangent.",
+      "source": "Exact finite source derivatives and source-preserving ratios of the named instruments; preparation, clock, work, controller and complete Book normalizer remain outside the compared projections.",
+      "normalization": "The source owners’ original Golden-log and oldRIGHT conventions; no Einstein coefficient is fitted or inferred across distinct prices.",
+      "refinement": "Fixed finite full128/binary/AF fixtures, including the declared 1024-round modal path; no uniform refinement or continuum conclusion.",
+      "scope": "Conditional source diagnostics only. Physical admission, complete same-history H+J+R/Cost-Info, all preparation/clock/controller equations, full Ward and GR closure remain open."
+    },
+    "conditional-exit-gram-source-v1": {
+      "carrier": "The original full128 operator and a 16-grade positive Hodge family in the declared fixed invariant window; endpoint conditional Grams and the shared 4D no-mark bridge are mathematical comparison objects.",
+      "action": "A logdet comparison of tagged endpoint and bridge Grams. It is not identified with the compulsory complete Book03 Cost-Info action or selected physical readout.",
+      "variations": "Three independently varied noncommuting positive 16x16 Hodge-source jets with fixed beta, z and integer-depth convention, under the owner’s C1 expansion hypotheses.",
+      "source": "For the orthogonal-exit construction, leading curvature coefficients (1,1,-1); the separate vacuum-volume coefficient is 3/2. The serial factorization has endpoint/bridge ratio 1+d/(2b).",
+      "normalization": "Original Golden amplitude choice z=p^2 with p+p^2=1 and the owners’ logdet convention; no coefficient is fitted to Einstein.",
+      "refinement": "Conditional fixed-window C1 heat-source limit and the declared macroscopic long-wave limit; not the original unweighted all-ten h^-2 terminal.",
+      "scope": "Conditional mathematical source-comparison family only. Literal fullStep/compiler admission, compulsory event/Info/Cost selection, clock/work/preparation/controller price, matter/observer equations, Ward, nonempty physical roots and GR remain open."
+    },
+    "saved-quartic-representative-v1": {
+      "carrier": "The pinned #334 finite [a^2 b^2] 1008-coordinate quartic representative and the compact continuum sigma4/chi4 profile in the same untransformed coframe coordinates.",
+      "action": "Postprocessing of the saved finite quartic representative; the checker does not rerun the 840x1008 Euler system.",
+      "variations": "Exact rational extraction of the declared e+_u, e2_x and e3_y coefficient maps; no quotient by gauge, kernel or coordinate changes.",
+      "source": "The stored maps differ literally from the compact sigma4/chi4 maps, while the checker makes no assertion about their affine solution space or gauge orbit.",
+      "normalization": "Exact Q coefficients at [a^2 b^2], with 672 link entries followed by 336 coframe entries (1008 total).",
+      "refinement": "One pinned finite representative; no mesh-refinement or continuum estimate.",
+      "scope": "Disproves only literal coefficientwise identity of this representative with the compact ansatz; no gauge-aware range, all-40 root, physical D0 or GR no-go."
+    },
+    "stage-resolved-book-common-filter-source-v1": {
+      "carrier": "Original K(9,11,13) scene: 33 vertices, 718 directed edges, 8440 based two-/three-step return words, 17 Golden/Bell outcomes per accepted path and four early/late rejection labels.",
+      "action": "Mathematical complete two-stage scalar Book path law with literal Golden depth weights g2=p,g3=p^2 and one shared unknown path-verification filter kappa; not a selected G0/H+J+R action.",
+      "variations": "Positive moving directed-edge weights, moving depth acceptances beta2,beta3 and shared kappa, retaining all accepted paths and early/late rejection outcomes.",
+      "source": "The complete 143484-outcome record self-calibrates g,beta,kappa and reconstructs the 718-edge scalar Perron Book action/source modulo 32 endpoint gauges under the shared-filter assumption.",
+      "normalization": "p=phi^-1, p+p^2=1; all 17 Golden/Bell outcomes and four stage labels normalized; logarithms in base phi.",
+      "refinement": "One finite original scene carrier; no mesh-refinement or 4D Role limit.",
+      "scope": "Conditional scalar Book source-sufficiency theorem under one shared verification filter. Physical fullStep admission/payment, compulsory H+J+R, matter, Ward, refining roots and GR remain open."
+    },
+    "stage-resolved-book-depth-filter-countermodel-v1": {
+      "carrier": "Original K(9,11,13) scene: 33 vertices, 718 directed edges, 8440 based two-/three-step return words, 17 Golden/Bell outcomes per accepted path and four early/late rejection labels.",
+      "action": "The same complete stage-resolved scalar Book model, now allowing separate unknown path-verification filters kappa2 and kappa3.",
+      "variations": "A smooth positive uniform rescaling K->cK with compensating independent filters kappa_n->kappa_n c^-n and fixed beta_n.",
+      "source": "All 143484 stage-labelled probabilities remain invariant while the absolute scalar Perron Book action changes by -log_phi(c).",
+      "normalization": "The original p=phi^-1, p+p^2=1 depth weights and the full 143484-outcome normalization.",
+      "refinement": "Counterfamily on the fixed finite original scene; no continuum or refining-family claim.",
+      "scope": "Refutes unconditional absolute-source recovery when depth-specific filters may move independently; it does not refute the shared-filter theorem or physical D0."
+    },
+    "double-null-degree5-coframe-gradient-ward-v1": {
+      "carrier": "The selected perpendicular crossed-null profile H=a*x, J=b*y at h=1 on the original six-plaquette Lorentz-star action.",
+      "action": "The unchanged six based plaquettes, odd Lorentz curvature and fixed original star pairing; the continuum Levi-Civita links are the trial only.",
+      "variations": "All 16 original coframe Euler rows are evaluated after replaying the registered 40-row lower-order branch; the exact adjoint coframe-gradient Ward source is tested at amplitude orders [a^3*b^2] and [a^2*b^3].",
+      "source": "With the full Lorentz exponential through degree five, W^0_[3,2]=3*x/32-3/128 and W^1_[2,3]=-x/128+11*y/128+13/256; every other component in those orders is zero.",
+      "normalization": "Exact rational coefficients at h=1, with W^a=sum_mu(E_e[a,mu](x)-E_e[a,mu](x+e_mu)); the null-axis shifts vanish on this transverse carrier.",
+      "refinement": "One fixed lattice spacing h=1 only; no uniform refinement statement.",
+      "scope": "A non-extension result for one exact RREF-selected lower-order representative. It does not vary the remaining cubic, mixed-quartic or asymmetric-quartic homogeneous modes, and gives no general crossed-null or physical D0-to-GR obstruction."
+    },
+    "book-second-ideal-source-jet-v1": {
+      "carrier": "Original finite four-dimensional Role coframe/shared-link chart coupled to the K(9,11,13) Book graph and full retained 8440-history fixture; includes a separate 48-field/33-vertical sourced-root test, not the full 640-dimensional Role source.",
+      "action": "A conditionally internally reduced action with nonzero site-weighted Palatini first jet and residual in the squared ideal generated by the original site densities; a conformal-matter extension is conditional on a true sitewise Weyl Ward.",
+      "variations": "The original radial coframe Euler directions, all 16+24 geometric linearized directions, retained history fibers, and the true internal-history Schur Hessian at a sourced common root.",
+      "source": "Exact same nonlinear zero-density vacuum stationary set, identical raw linearized kernel, and identical response to scale-neutral sources under the squared-ideal assumptions; the finite sourced-root replay tests the vertical Hessian criterion.",
+      "normalization": "Original Book pressure and nonzero native site weights; no fitted Einstein coefficient.",
+      "refinement": "Finite original carriers and local charts only; no all-site, continuum or refinement-uniform result.",
+      "scope": "Conditional source-jet/ideal-squared theorem and finite 8440-history plus 48-field replays. The compulsory full G0/Book03 H+J+R first source, genuine internal Euler, full CAR/Spin stress, preparation/clock/work, Ward, refinement and GR remain open."
+    },
+    "lorentz-null-class-cost-boundary-v1": {
+      "carrier": "One original proper SO+(1,3) plaquette restricted to either commuting nilpotent null 2-plane exp(aN2+bN3) or exp(aNbar2+bNbar3).",
+      "action": "A continuous scalar depending only on the conjugacy class of that single plaquette; the Hessian strengthening assumes a smooth saturated local minimum and positive-semidefinite Hessian.",
+      "variations": "All real amplitudes in both original null planes, plus the six native Lorentz Lie directions for the conditional Hessian statement.",
+      "source": "Conjugacy invariance and proper boost rescaling force the scalar Cost to be constant on each null plane; at a smooth saturated positive minimum the invariant Hessian vanishes on all six Lie directions.",
+      "normalization": "Original eta-preserving proper/time-oriented Lorentz group and original null basis; no fitted coupling.",
+      "refinement": "Exact finite group and Lie-algebra result; no continuum or refinement statement.",
+      "scope": "Excludes only scalar single-plaquette conjugacy-class Costs as a null-curvature source. It does not exclude oriented pretrace/reference readouts, coframe/observer dependence, ordered memory, or the compulsory full Book/G0 action."
+    },
+    "verification-core-v1": {
+      "carrier": "A declared nontrivial operational verification protocol and its empirical states, with explicit outcomes, admissible tests and finite action continuations.",
+      "action": "Reading, writing, retaining, comparing and composing completed verification acts; no gravitational action is assumed.",
+      "variations": "All pairs and all admitted future continuations in the exact owner contracts; empirical equality retains every distinction available to that interface.",
+      "source": "Existing Lean necessity, record, comparison and provenance witnesses, with explicit maps to the book Sigma=(C,C*,D_min,Delta,R,O) roles. Finite coding, effective canonicalization and computable access use supplied representation witnesses or separately owned constructions of the coded interface.",
+      "normalization": "Explicit outcome encodings and Boolean decision predicates on completed records; at least two distinguishable states does not restrict an outcome alphabet to two values.",
+      "refinement": "Generic finite executions with sufficient retained memory and composition; physical clock calibration and smooth limits belong to the instantiated theory.",
+      "scope": "Necessary functional roles and empirical/future-process factorization under exact owner hypotheses. A semantic quotient alone does not supply effective finite coding or access; every such requirement of the coded realization has an explicit witness or premise."
+    },
+    "theory-transfer-v1": {
+      "carrier": "An explicitly presented theory T, its stated regime assumptions A_T, and an interpretation I_T into a declared operational process interface.",
+      "action": "A state map and translation of each T-action into a finite native program, with test/outcome maps and commuting execution, readout and composition; imported proof rules remain explicit.",
+      "variations": "All tests, operations and variations used by the imported theorem; preserve and reflect empirical distinctions on the declared common sector, keeping additional native tests explicit.",
+      "source": "Every premise A_T has a proof in D0 plus the stated regime H_T; physical source and action realization are obligations of the application, not supplied by syntax encoding.",
+      "normalization": "Declared readout, equality, clock and unit maps; approximate identifications include an explicit error bound in the target norm.",
+      "refinement": "Finite process composition and, when invoked, the declared uniform family, interlevel maps, topology and limiting hypotheses.",
+      "scope": "Generic conditional theorem reuse: A_T proves P and a proof-preserving I_T with D0+H_T proving I_T(A_T) gives D0+H_T proving I_T(P); GR is the first physical application."
+    },
+    "gr-operational-closure-v1": {
+      "carrier": "One explicit nonempty curved native family Omega_h and its GR interpretation, including preparation, retained history, admissible actions, tests and physical quotient.",
+      "action": "The same complete native action as in positive_gr, or a proved transport preserving the required action/source structure; the Einstein equation is not an admission premise.",
+      "variations": "The same independent metric, link, matter, preparation and clock variations consumed by positive_gr, with commuting operational and geometric maps.",
+      "source": "The same independently derived full source and Ward identity; exact witness identities or proved transports connect operational realization and positive_gr.",
+      "normalization": "Explicit conversion of geometric responses, source conventions, outcome readouts and physical clock units; event order is bound to the declared causal-time readout.",
+      "refinement": "The same refining family, interlevel maps, norms and uniform bounds as soundness and recovery; finite observations and retained future distinctions are preserved.",
+      "scope": "Full architectural GR closure on the declared curved class, with common witnesses for the foundation, theorem transfer, operational realization and unchanged positive_gr."
+    }
+  },
+  "obligations": [
+    {
+      "id": "verification_core",
+      "statement": "Compose the existing necessity, empirical-factorization and future-memory theorems at their exact scope: completed distinguishable outcomes, retained records, catalogue-independent rechecking and all admitted future distinctions. Interpret the book Sigma roles through explicit representation witnesses. Finite coding, effective canonicalization and computable access, where required, are explicit hypotheses or separately owned constructions of the coded interface; they are not inferred from the bare verification or execution contract. Preserve each owner hypothesis; the theorem has no GR premise.",
+      "interface": "verification-core-v1",
+      "outcome": "positive",
+      "group": "foundation",
+      "methods": [
+        {
+          "id": "direct",
+          "requires": []
+        }
+      ],
+      "consumer": "theory_transfer",
+      "scope_level": "family"
+    },
+    {
+      "id": "theory_transfer",
+      "statement": "Prove generic conditional theorem transfer between two operational systems through I_T: states, actions translated to finite programs, tests and outcomes commute with execution and composition, preserving and reflecting empirical distinctions on the declared common sector. Preserve the declared assertion/proof interface and map every imported premise to a proved statement or explicit regime hypothesis. Reuse existing T-proofs; establish each physical realization separately and keep additional native tests explicit. No GR conclusion is a premise of this generic theorem.",
+      "interface": "theory-transfer-v1",
+      "outcome": "positive",
+      "group": "foundation",
+      "methods": [
+        {
+          "id": "direct",
+          "requires": [
+            "verification_core"
+          ]
+        }
+      ],
+      "consumer": "gr_operational_realization",
+      "scope_level": "family"
+    },
+    {
+      "id": "constitutive",
+      "statement": "Derive the admitted complete action/constitutive law from unchanged native D0, including the actual Cost/Info and physical continuation or variational law on the same process. Identify native requirements and why nontrivial continuation is required or favoured; supply the needed selection premise rather than assuming optimality. A proved physical equation/source equivalence can suffice without uniqueness of the microscopic formula.",
+      "interface": "native-programme-v1",
+      "outcome": "positive",
+      "group": "native",
+      "methods": [
+        {
+          "id": "direct",
+          "requires": []
+        }
+      ],
+      "consumer": "positive_gr",
+      "scope_level": "family"
+    },
+    {
+      "id": "native_sector",
+      "statement": "Derive nonempty native states, preparation/readout and actual variations.",
+      "interface": "native-programme-v1",
+      "outcome": "positive",
+      "group": "native",
+      "methods": [
+        {
+          "id": "direct",
+          "requires": [
+            "constitutive"
+          ]
+        }
+      ],
+      "consumer": "positive_gr",
+      "scope_level": "family"
+    },
+    {
+      "id": "probe_law",
+      "statement": "Under the named endpoint hypotheses, the finite action contrast reconstructs the geometric Einstein observable with O(h/epsilon+epsilon^2), hence O(h^(2/3)) at epsilon=h^(1/3).",
+      "interface": "endpoint-probe-v1",
+      "outcome": "positive",
+      "group": "geometry",
+      "methods": [
+        {
+          "id": "direct",
+          "requires": []
+        }
+      ],
+      "consumer": "contrast_refinement_transfer",
+      "scope_level": "family",
+      "hypotheses": {
+        "metric_pencil": "One fixed smooth periodic oriented/time-oriented nondegenerate metric, smooth solder and smooth symmetric probe in a compact Gram section.",
+        "endpoint_domain": "h=1/L, L in 4N; endpoint log bounds Rh and all 24 physical Euler residual bounds Mh^2, for fixed R,M.",
+        "literal_action": "The unchanged literal naked-star counting action and the owner curvature/index/density convention."
+      }
+    },
+    {
+      "id": "contrast_refinement_transfer",
+      "statement": "Transfer the native contrast to the geometric observable with a refinement-uniform bound.",
+      "interface": "native-programme-v1",
+      "outcome": "positive",
+      "group": "native",
+      "methods": [
+        {
+          "id": "direct",
+          "requires": [
+            "native_sector",
+            "probe_law"
+          ]
+        }
+      ],
+      "consumer": "positive_gr",
+      "scope_level": "family"
+    },
+    {
+      "id": "matter_source_ward",
+      "statement": "Derive the full independent matter source and joint physical Ward identity.",
+      "interface": "native-programme-v1",
+      "outcome": "positive",
+      "group": "native",
+      "methods": [
+        {
+          "id": "direct",
+          "requires": [
+            "native_sector",
+            "constitutive"
+          ]
+        }
+      ],
+      "consumer": "positive_gr",
+      "scope_level": "family"
+    },
+    {
+      "id": "on_shell_stationarity",
+      "statement": "Show native on-shell equations cancel the source-subtracted contrast for all declared probes.",
+      "interface": "native-programme-v1",
+      "outcome": "positive",
+      "group": "native",
+      "methods": [
+        {
+          "id": "direct",
+          "requires": [
+            "contrast_refinement_transfer",
+            "matter_source_ward"
+          ]
+        }
+      ],
+      "consumer": "positive_gr",
+      "scope_level": "family"
+    },
+    {
+      "id": "gauge_range",
+      "statement": "Prove the necessary range/quotient estimate for the full joint system.",
+      "interface": "native-programme-v1",
+      "outcome": "positive",
+      "group": "refinement",
+      "methods": [
+        {
+          "id": "direct",
+          "requires": [
+            "native_sector",
+            "matter_source_ward"
+          ]
+        }
+      ],
+      "consumer": "positive_gr",
+      "scope_level": "family"
+    },
+    {
+      "id": "joint_nonlinear_solve",
+      "statement": "Construct nonempty exact joint solutions on a genuine refining family.",
+      "interface": "native-programme-v1",
+      "outcome": "positive",
+      "group": "refinement",
+      "methods": [
+        {
+          "id": "direct",
+          "requires": [
+            "gauge_range"
+          ]
+        }
+      ],
+      "consumer": "positive_gr",
+      "scope_level": "family"
+    },
+    {
+      "id": "soundness",
+      "statement": "Every admitted on-shell limit solves the stated nonlinear sourced Einstein system.",
+      "interface": "native-programme-v1",
+      "outcome": "positive",
+      "group": "composition",
+      "methods": [
+        {
+          "id": "direct",
+          "requires": [
+            "joint_nonlinear_solve",
+            "on_shell_stationarity"
+          ]
+        }
+      ],
+      "consumer": "positive_gr",
+      "scope_level": "family"
+    },
+    {
+      "id": "recovery",
+      "statement": "Recover each solution in the explicit nonempty curved continuum class by native on-shell states.",
+      "interface": "native-programme-v1",
+      "outcome": "positive",
+      "group": "composition",
+      "methods": [
+        {
+          "id": "direct",
+          "requires": [
+            "joint_nonlinear_solve",
+            "contrast_refinement_transfer"
+          ]
+        }
+      ],
+      "consumer": "positive_gr",
+      "scope_level": "family"
+    },
+    {
+      "id": "physical_constraints",
+      "statement": "Identify remaining physical constraints, observable modes and causal-time readout.",
+      "interface": "native-programme-v1",
+      "outcome": "positive",
+      "group": "composition",
+      "methods": [
+        {
+          "id": "direct",
+          "requires": [
+            "native_sector"
+          ]
+        }
+      ],
+      "consumer": "positive_gr",
+      "scope_level": "family"
+    },
+    {
+      "id": "positive_gr",
+      "statement": "Compose the same-source nonlinear native Einstein dynamics in the stated curved class.",
+      "interface": "native-programme-v1",
+      "outcome": "positive",
+      "group": "composition",
+      "methods": [
+        {
+          "id": "direct",
+          "requires": [
+            "soundness",
+            "recovery",
+            "matter_source_ward",
+            "physical_constraints"
+          ]
+        }
+      ],
+      "consumer": "GR",
+      "scope_level": "family"
+    },
+    {
+      "id": "gr_operational_realization",
+      "statement": "Instantiate the generic interpretation on one explicit admitted native GR family: preparation, states, retained histories, actions, tests, source, physical quotient and clock/readout maps preserve the declared finite continuations and empirical distinctions, with the required uniform refinement bounds. Prove the imported GR theorem premises from this native family and explicit regime assumptions, without assuming the desired Einstein equation in admission.",
+      "interface": "gr-operational-closure-v1",
+      "outcome": "positive",
+      "group": "composition",
+      "methods": [
+        {
+          "id": "direct",
+          "requires": [
+            "theory_transfer",
+            "native_sector",
+            "physical_constraints",
+            "matter_source_ward",
+            "contrast_refinement_transfer"
+          ]
+        }
+      ],
+      "consumer": "gr_architectural_closure",
+      "scope_level": "family"
+    },
+    {
+      "id": "gr_architectural_closure",
+      "statement": "Compose verification_core, theory_transfer, gr_operational_realization and unchanged positive_gr. Prove that their witnesses use the same admitted native family, complete action, independent source, actual variations, preparation/history, clock/readout maps, normalization and refinement maps, or supply a proved transport preserving each required structure. The final theorem retains the declared nonempty curved sector, soundness, recovery and physical constraints; separate existential witnesses or Boolean completion flags do not establish this composition.",
+      "interface": "gr-operational-closure-v1",
+      "outcome": "positive",
+      "group": "composition",
+      "methods": [
+        {
+          "id": "direct",
+          "requires": [
+            "verification_core",
+            "theory_transfer",
+            "gr_operational_realization",
+            "positive_gr"
+          ]
+        }
+      ],
+      "consumer": "GR",
+      "scope_level": "family"
+    },
+    {
+      "id": "raw_response_terminal",
+      "statement": "Resolve the original fixed-source raw response contract without changing its quantifiers.",
+      "interface": "raw-216-v1",
+      "outcome": "classification",
+      "group": "original",
+      "methods": [
+        {
+          "id": "direct",
+          "requires": []
+        }
+      ],
+      "consumer": "RAW-216",
+      "scope_level": "family"
+    },
+    {
+      "id": "full_affine_stationarity",
+      "statement": "Exact full-affine curved stationary witness or a separately typed scoped no-go.",
+      "interface": "full-affine-v1",
+      "outcome": "classification",
+      "group": "support",
+      "methods": [
+        {
+          "id": "direct",
+          "requires": []
+        }
+      ],
+      "consumer": "joint_nonlinear_solve",
+      "scope_level": "finite"
+    },
+    {
+      "id": "resonance_divisor",
+      "statement": "Resolve the registered full complex resonance divisor classification.",
+      "interface": "resonance-divisor-v1",
+      "outcome": "classification",
+      "group": "support",
+      "methods": [
+        {
+          "id": "direct",
+          "requires": []
+        }
+      ],
+      "consumer": "gauge_range",
+      "scope_level": "family"
+    },
+    {
+      "id": "primitive_jet_composition",
+      "statement": "Own the generic ordered-word residual and moving first-jet theorem.",
+      "interface": "word-jet-v1",
+      "outcome": "positive",
+      "group": "support",
+      "methods": [
+        {
+          "id": "direct",
+          "requires": []
+        }
+      ],
+      "consumer": "native_sector",
+      "scope_level": "family"
+    },
+    {
+      "id": "mv_tangent_span",
+      "statement": "Own the stated generic real tangent-span equivalence.",
+      "interface": "mv-span-v1",
+      "outcome": "positive",
+      "group": "support",
+      "methods": [
+        {
+          "id": "direct",
+          "requires": []
+        }
+      ],
+      "consumer": "matter_source_ward",
+      "scope_level": "family"
+    },
+    {
+      "id": "global_classification",
+      "statement": "Classify every load-bearing internal ambiguity under the existing global closure contract.",
+      "interface": "native-programme-v1",
+      "outcome": "classification",
+      "group": "separate",
+      "methods": [
+        {
+          "id": "direct",
+          "requires": []
+        }
+      ],
+      "consumer": "D0-CLOSURE",
+      "scope_level": "family"
+    }
+  ],
+  "task_bindings": {
+    "EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE": {
+      "obligations": [
+        "constitutive",
+        "native_sector",
+        "contrast_refinement_transfer",
+        "matter_source_ward",
+        "raw_response_terminal"
+      ],
+      "interface": "native-programme-v1",
+      "work_key": "native-same-programme-and-original-raw",
+      "mode": "research",
+      "start_requires": [],
+      "assumes": [
+        "Independent physical admission and complete-price identification remain open.",
+        "The original raw terminal remains separate from the positive GR route."
+      ],
+      "consumer": "positive_gr",
+      "write_paths": [
+        "02_REGISTRY/research/MEMO_A4D_JOINT_RESPONSE_DECOUPLING_MICROSTRUCTURE.md"
+      ],
+      "statement": "Prove normalized metric-response decoupling for exact joint-critical sequences including the #232 curved nongauge grid-scale family, with a precise topology and non-tautological source/comparator convention, or give a certified smooth-background joint-critical counterexample with a nonzero normalized response gap.",
+      "additional_interfaces": [
+        "raw-216-v1",
+        "endpoint-probe-v1"
+      ],
+      "completion_requires": [
+        "raw_response_terminal"
+      ],
+      "reuse_results": [
+        "endpoint-probe-law",
+        "metric-provenance",
+        "smooth-parametrix",
+        "book-second-ideal-vertical-hessian-source-test",
+        "original-golden17-shannon-vertical-no-descent",
+        "original-q8-spin-sheet-current-fullstep-boundary",
+        "brinkmann-j2-null-family",
+        "opposite-null-julia-order-memory",
+        "full128-opposite-null-two-round-shannon-order-source",
+        "lorentz-null-conjugacy-cost-blindness"
+      ],
+      "slot": "constitutive",
+      "carrier": "native-programme-v1",
+      "distinct_from": []
+    },
+    "EXP-A4D-RESOLVED-CURVED-STATIONARY-CLOSURE": {
+      "obligations": [
+        "full_affine_stationarity"
+      ],
+      "interface": "full-affine-v1",
+      "work_key": "full-affine-stationary",
+      "mode": "research",
+      "start_requires": [],
+      "assumes": [
+        "Only the original full-affine class is classified."
+      ],
+      "consumer": "joint_nonlinear_solve",
+      "write_paths": [
+        "02_REGISTRY/research/MEMO_A4D_RESOLVED_CURVED_STATIONARY_CLOSURE.md"
+      ],
+      "statement": "Either exactify a nondegenerate curved stationary witness for the selected four-channel full-affine family, or prove a precisely scoped no-go for the declared carrier; numerical E(2) scouts are not terminal.",
+      "completion_requires": [
+        "full_affine_stationarity"
+      ],
+      "reuse_results": [
+        "metric-provenance"
+      ],
+      "slot": "full_affine_stationarity",
+      "carrier": "full-affine-v1",
+      "distinct_from": []
+    },
+    "EXP-A4D-RESONANCE-DIVISOR-STRATIFICATION": {
+      "obligations": [
+        "resonance_divisor"
+      ],
+      "interface": "resonance-divisor-v1",
+      "work_key": "full-complex-resonance-divisor",
+      "mode": "research",
+      "start_requires": [],
+      "assumes": [
+        "A finite grid or diagonal germ is not the full complex stratification."
+      ],
+      "consumer": "gauge_range",
+      "write_paths": [
+        "02_REGISTRY/research/A4D_RESONANCE_DIVISOR_STRATIFICATION.md"
+      ],
+      "statement": "Derive the exact Laurent factorization of the owned holomorphic A(z), certify the generic kernel rank on every irreducible divisor component and the full higher-codimension rank/nullity strata on (C^×)^4, and explicitly reject the refuted phase-count law.",
+      "completion_requires": [
+        "resonance_divisor"
+      ],
+      "reuse_results": [
+        "phase-count-counterexample"
+      ],
+      "slot": "resonance_divisor",
+      "carrier": "resonance-divisor-v1",
+      "distinct_from": []
+    },
+    "WRK-A4D-LEAN-PRIMITIVE-JET-COMPOSITION": {
+      "obligations": [
+        "primitive_jet_composition"
+      ],
+      "interface": "word-jet-v1",
+      "work_key": "generic-word-first-jet",
+      "mode": "proof",
+      "start_requires": [],
+      "assumes": [
+        "Branching and comparison hypotheses remain explicit."
+      ],
+      "consumer": "native_sector",
+      "write_paths": [
+        "03_FORMALIZATION/D0/Research/PrimitiveJetComposition.lean",
+        "02_REGISTRY/research/sources/d0_w2_primitive_jet_lean_2026-10-16/"
+      ],
+      "statement": "Formalize ordered-word intertwining, its exact telescoping residual, and its first-jet version with a moving intertwiner; expose branching/comparison hypotheses explicitly and specialize only to already owned primitive maps.",
+      "completion_requires": [
+        "primitive_jet_composition"
+      ],
+      "reuse_results": [
+        "legacy:record_arrow"
+      ],
+      "slot": "primitive_jet_composition",
+      "carrier": "word-jet-v1",
+      "distinct_from": []
+    },
+    "WRK-A4D-LEAN-MV-TANGENT-SPAN": {
+      "obligations": [
+        "mv_tangent_span"
+      ],
+      "interface": "mv-span-v1",
+      "work_key": "generic-real-tangent-span",
+      "mode": "proof",
+      "start_requires": [],
+      "assumes": [
+        "No physical operator selection follows."
+      ],
+      "consumer": "matter_source_ward",
+      "write_paths": [
+        "03_FORMALIZATION/D0/Research/MemoryTangentSpan.lean",
+        "02_REGISTRY/research/sources/d0_rank_lean_mv_span_2026-10-16/"
+      ],
+      "statement": "Formalize that Tr(S M)=0 for every admissible traceless source-neutral S is equivalent to membership in the real span, with no physical operators.",
+      "completion_requires": [
+        "mv_tangent_span"
+      ],
+      "reuse_results": [
+        "legacy:mixed_parent_pointwise_source"
+      ],
+      "slot": "mv_tangent_span",
+      "carrier": "mv-span-v1",
+      "distinct_from": []
+    }
+  },
+  "legacy_import": {
+    "ref": "180ddd187b76035b83ba784ce3c0844f3192ba7d",
+    "path": "02_REGISTRY/research/A4D_NATIVE_GRAVITY_DEPENDENCIES.json",
+    "snapshot": "02_REGISTRY/gr_assembly/sources/native_gravity_dependencies.json",
+    "sha256": "937f5f01294785c787ebe71f1eb4121406f386630056e1bb06b0d6f46a4d58f2",
+    "node_count": 44,
+    "disposition": "historical research catalogue; no automatic scientific acceptance or task authorization"
+  },
+  "route_input": {
+    "ref": "77d3ab6059bd1a3ce48637b97b9f30aa8825fc5f",
+    "path": "02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md",
+    "sha256": "8eacd0480c5bbcf8694fcfd4c39155ce95e7ff62259abdde766f1efe21688ace"
+  },
+  "anti_substitutions": [
+    {
+      "id": "mode-vs-complete-price",
+      "left": "pointer mode",
+      "right": "mean entropy or complete H+J+R",
+      "reason": "Full native history, weights and normalizer sources require their own proof."
+    },
+    {
+      "id": "raw-vs-endpoint",
+      "left": "original raw-216-v1 response",
+      "right": "endpoint-probe-v1 testing",
+      "reason": "Norms, quantifiers and action admission differ."
+    },
+    {
+      "id": "scalar-vs-anisotropic",
+      "left": "lambda I scalar source",
+      "right": "anisotropic Q source",
+      "reason": "A tensor source transport is required."
+    },
+    {
+      "id": "finite-vs-global",
+      "left": "finite Schur or fixed-carrier obstruction",
+      "right": "whole-core D0 or physical GR no-go",
+      "reason": "Scope cannot be broadened from a finite class."
+    },
+    {
+      "id": "probable-vs-concentrated",
+      "left": "unique most probable filled-P",
+      "right": "concentration theorem",
+      "reason": "Mode uniqueness is not concentration."
+    },
+    {
+      "id": "even-vs-odd",
+      "left": "even exterior lift",
+      "right": "odd exterior lift",
+      "reason": "Grade/parity hypotheses must be preserved."
+    },
+    {
+      "id": "fixed-word-vs-family",
+      "left": "zero field derivative of one fixed word",
+      "right": "native C2 field family",
+      "reason": "The actual programme/input jets need a typed realization."
+    },
+    {
+      "id": "label-vs-stationarity",
+      "left": "maximum MDL label",
+      "right": "continuous-field stationarity",
+      "reason": "Actual full-price field variations remain obligations."
+    },
+    {
+      "id": "conditional-julia-source-vs-native-price",
+      "left": "conditional complete Julia/CAR16 mean-Shannon first-source with fresh flags",
+      "right": "literal GoldenCoherentMemory.fullStep and compulsory full H+J+R Cost-Info",
+      "reason": "The constructed positive instrument, branch binding, physical execution/admission and full retained price are separate premises; this result establishes none of their identity. The later same-path source-weld protects relative signed odds under a common moving positive factor, but does not remove the full factor, its retry/work/clock terms, or establish that the compulsory process selects this readout."
+    },
+    {
+      "id": "julia-observability-vs-native-source",
+      "left": "two-line complete Julia/CAR rank-six response observability on specified grade-one probes",
+      "right": "the compulsory same-history full H+J+R Cost-Info source and original 40-plus-matter Euler system",
+      "reason": "The nonzero Jacobian certifies local response capacity only. It does not select or price the preparations/readouts, bind oldRIGHT/reference, routing, controller, work or clock, or identify the response with stationary geometric and matter sources."
+    },
+    {
+      "id": "theta-boundary-vs-native-info",
+      "left": "the additive theta-family of transition-event Cost-Info allocations",
+      "right": "a uniquely selected physical D0 Info map",
+      "reason": "All theta values compose and differ only by endpoint coboundaries on open histories; the finite path theorem supplies no native readout binding or field-dependent source."
+    },
+    {
+      "id": "double-null-quadratic-vs-full-gr",
+      "left": "All 40 original field Euler coefficients vanish at mixed order a*b for orthogonal affine gradients after the exact h/8 Cartan correction, with nonzero mixed Lorentz plaquette curvature.",
+      "right": "An all-order finite nonzero double-null root or physical D0-to-GR closure.",
+      "reason": "The certificate works in Q[a,b]/(a^2,b^2); cubic and higher mixed sources, cross-site compatibility, compulsory native Cost-Info, complete matter/clock/preparation equations, global Ward and recovery are not established."
+    },
+    {
+      "id": "continuum-cubic-poisson-vs-finite-palatiniall40",
+      "left": "A continuum cubic Ricci correction with an exact five-point scalar Poisson identity.",
+      "right": "Third-order stationarity of the original six-plaquette 24+16 finite Euler system.",
+      "reason": "The finite scalar stencil only reproduces the cubic Poisson source; it does not solve finite link/coframe Cartan rows or bind the source to the complete native Cost-Info."
+    },
+    {
+      "id": "uniform-cubic-control-vs-global-no-go",
+      "left": "Failure of a spatially uniform cubic link correction with fixed affine coframe.",
+      "right": "A global obstruction to spatially varying link/coframe corrections or to finite D0 gravity.",
+      "reason": "The exact residual is confined to one correction chart at two nodes; the coupled lattice solve and coframe modes remain open."
+    },
+    {
+      "id": "literal-quartic-representative-vs-gauge-range",
+      "left": "Same-coordinate mismatch of one stored [a^2 b^2] 1008-vector and the compact continuum sigma4/chi4 profile",
+      "right": "Absence of a gauge/kernel lift, failure of the full finite quartic solution space, or a physical D0/GR no-go",
+      "reason": "The exact checker compares one representative only and does not test the affine solution space or an allowed gauge/kernel transformation."
+    },
+    {
+      "id": "stage-resolved-book-inverse-vs-physical-full-action",
+      "left": "Mathematical absolute scalar Book source inverse under a declared common verification filter",
+      "right": "Physical selection of literal fullStep, the common verifier, and compulsory full H+J+R/Cost-Info on the geometric carrier",
+      "reason": "The finite inverse assumes a complete two-stage event law and shared filter; it does not derive their admission, payment or field-to-link map from D0."
+    },
+    {
+      "id": "common-verifier-vs-depth-specific-verifiers",
+      "left": "One shared unknown path-verification filter kappa for depths 2 and 3",
+      "right": "Two independently moving unknown filters kappa2 and kappa3",
+      "reason": "The exact rescaling symmetry with independent filters preserves every stage-labelled probability while changing absolute scalar Book pressure."
+    },
+    {
+      "id": "degree5-selected-rref-ward-vs-global-crossed-null-no-go",
+      "left": "Nonzero fifth-order coframe-gradient Ward source for one exact selected RREF representative of H=a*x, J=b*y.",
+      "right": "No crossed-null finite solution for every lower-order kernel choice, or a physical D0-to-GR no-go.",
+      "reason": "The representative fixes one joint mixed-quartic solution and two zero-free-parameter asymmetric-quartic solutions. The remaining homogeneous modes, other carriers, refinement and native physical admission are not tested."
+    },
+    {
+      "id": "endpoint-holonomy-vs-paid-history",
+      "left": "same final Q8 operator and conditional Golden endpoint probabilities",
+      "right": "actual chronological source history with prefix states, internal clock and paid ActionProtocol jet",
+      "reason": "On the pinned original Q8 carrier, 2-step and 8-step histories have the same final operator and endpoint law but clocks 2 and 8; the canonical primitive prices differ, and the legal C(t)=1+t^2 profile gives a second-source gap of 12 on the Golden-prepared input. This is a scoped component result, not the complete H+J+R price or physical selector. Preserve history until same-programme internal stationarity proves a valid quotient. This is a retrospective provenance/price result for histories that actually execute; it does not refute a prospective minimum selector acting before execution."
+    },
+    {
+      "id": "separate-realizations-vs-common-gr-composition",
+      "left": "A necessary verification tuple, a generic theorem interpretation, and a positive GR result proved for independently named witnesses.",
+      "right": "One faithful operational and physical realization of GR from the D0 foundation.",
+      "reason": "The final application must prove common witnesses or structure-preserving transports for carrier, complete action, source, variations, history, clocks, readouts, normalization and refinement. Reuse of an imported theorem also requires its actual premise map."
+    },
+    {
+      "id": "odd-ir-universality-vs-even-native-price",
+      "left": "inversion-odd Golden ROOT/CODE universality under the declared h^-2 geometric normalization",
+      "right": "the compulsory complete even/absolute Book Cost-Info, clock and work scaling",
+      "reason": "The original smooth Role theorem gives equal odd first sources and O(h^4) differences, with centered even Shannon O(h^2), only under the stated geometric weight. The same complete even Golden17 statistic summed without h^2 has a nonzero R^2-type continuum source and absolute baseline. Derive the native weight or an actual source cancellation before claiming pure GR."
+    },
+    {
+      "id": "bell64-compiler-vs-native-program-admission",
+      "left": "fixed-U64 original Golden/CNOT compiler with exact p^18 Kraus, repeatable offline preparation and retained failures",
+      "right": "admitted field-dependent moving U64 preparation with oldRIGHT/reference, controller/work and compulsory full Book H+J+R price",
+      "reason": "The exact one-shot rate is p^36; after six repeatable offline programme-pair preparations the Bell-effect acceptance tends to (2p^3)^6/4096, while ideal 1/4096 projection is not physically implemented. This does not prepare the moving Choi state, select the complete Book source, or price all native auxiliaries. The all-718 p^36 signed-source replay gives a positive mathematical Role384 Fisher rank, but its Role-to-scene controller and complete physical price are still unselected."
+    },
+    {
+      "id": "opposite-null-algebra-vs-native-record",
+      "left": "opposite-null so(1,3) closure and a complete positive CAR16 Julia detector with nonzero J/B order-source jets",
+      "right": "physical admission and selection of one fully paid ordered-operation/composition law in original D0",
+      "reason": "The exact detector proves mathematical distinguishability and a conditional same-history Shannon source; its all-active/fresh-flag carrier is not yet compulsory GoldenCoherentMemory.fullStep/G0. Direct and sequential Julia implementations have a measured composition defect, so D0 must derive which action is executed and price its controller, clock, preparation, work and failures."
+    },
+    {
+      "id": "unipotent-spectrum-vs-oriented-curvature",
+      "left": "trace/eigenvalue-only readout of one-sided unipotent Lorentz plaquettes",
+      "right": "oriented off-diagonal plaquette information or a full coherent curvature record",
+      "reason": "For P_ua=exp(C2*N2+C3*N3), nilpotency gives det(I-z*P_ua)=(1-z)^4 and tr(P_ua^n)=4 even at nonzero curvature. Spectral data alone cannot see the Weyl channel; oriented matrix entries can, but their physical native readout remains to be proved."
+    },
+    {
+      "id": "prospective-mdl-premise-vs-native-selector",
+      "left": "formal Bellman/no-detour theorem under an explicit ProspectiveExecution global-optimality premise",
+      "right": "a physical D0 selector derived from the original Book03/M1/G0 Cost-Info process",
+      "reason": "The Lean theorem assumes optimality among feasible histories with the same complete initial state and goal; it then proves suffix optimality and rejects an avoidable positive-cost loop. Descriptive D_min does not itself impose that physical selection rule, resolve ties, or establish admission and the complete native price."
+    }
+  ],
+  "source_fork_reconciliations": [
+    {
+      "id": "joint-response-source-fork-2026-10-20",
+      "parent": {
+        "number": 334,
+        "head": {
+          "repository": "gvakhrushev/d0_15",
+          "branch": "exp/a4d-joint-response-continuation-2026-10-16",
+          "sha": "575010ad703e3c2c539549dfb198a4e3fb2d33a0"
+        },
+        "base": {
+          "repository": "gvakhrushev/d0_15",
+          "branch": "main",
+          "sha": "5d23e90af703efee7f0deb24517d3ead4780fdfc"
+        },
+        "task_fields": [
+          "EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE"
+        ]
+      },
+      "children": [
+        {
+          "pin": {
+            "number": 363,
+            "head": {
+              "repository": "gvakhrushev/d0_15",
+              "branch": "research/a4d-conditional-gram-serial-source-20261017",
+              "sha": "33911defe1607b94a895b455d3357ad2f3039e12"
+            },
+            "base": {
+              "repository": "gvakhrushev/d0_15",
+              "branch": "exp/a4d-joint-response-continuation-2026-10-16",
+              "sha": "8050cefe2600972408a904c3004d85a0a7720c68"
+            },
+            "task_fields": []
+          },
+          "merge_base_sha": "ba055b63f01c43bf01118ef4d2f155e907dd912d",
+          "child_only_delta": [
+            {
+              "status": "A",
+              "path": "02_REGISTRY/research/A4D_NATIVE_CONDITIONAL_GRAM_SERIAL_SOURCE_RATIO_2026_10_17.md",
+              "git_blob": "2ac5708d0d70ea3362c2004ae93a825b4cb0765a",
+              "parent_git_blob": null
+            },
+            {
+              "status": "A",
+              "path": "02_REGISTRY/research/A4D_NATIVE_ORTHOGONAL_EXIT_DOUBLE_CLOCK_EINSTEIN_SOURCE_2026_10_17.md",
+              "git_blob": "29b056c1d5adae7391c4acbe2f91f6a596231170",
+              "parent_git_blob": null
+            },
+            {
+              "status": "A",
+              "path": "02_REGISTRY/research/sources/d0_native_conditional_gram_2026-10-17/check_orthogonal_exit.py",
+              "git_blob": "21f6d010ebc816b4ccc8a21169a732a25a532cd8",
+              "parent_git_blob": null
+            },
+            {
+              "status": "A",
+              "path": "02_REGISTRY/research/sources/d0_native_conditional_gram_2026-10-17/check_serial_gram.py",
+              "git_blob": "76ff19513381d08788c5ed70ae682b5d986df2da",
+              "parent_git_blob": null
+            }
+          ],
+          "result_ids": [
+            "serial-conditional-gram-source-ratio-obstruction",
+            "orthogonal-exit-conditional-gram-einstein-source-ratio"
+          ]
+        },
+        {
+          "pin": {
+            "number": 380,
+            "head": {
+              "repository": "gvakhrushev/d0_15",
+              "branch": "research/book-triangle-odds-gr-interface-2026-10-19",
+              "sha": "3ffff0fb76aa86132139c647c883baf240afe3a1"
+            },
+            "base": {
+              "repository": "gvakhrushev/d0_15",
+              "branch": "exp/a4d-joint-response-continuation-2026-10-16",
+              "sha": "518e620efa1ca1e516aa1b78592c87d61723f0b9"
+            },
+            "task_fields": []
+          },
+          "merge_base_sha": "03bd6fed84830e72e55341cc38215c880d287357",
+          "child_only_delta": [
+            {
+              "status": "A",
+              "path": "02_REGISTRY/research/A4D_BOOK_TRIANGLE_ODDS_960_COST_COMPATIBILITY_AND_CARTAN_HESSIAN_BOUNDARY_2026_10_19.md",
+              "git_blob": "bb5731054b56ff26e7c94ad3572581f2850cfc4b",
+              "parent_git_blob": null
+            },
+            {
+              "status": "A",
+              "path": "02_REGISTRY/research/sources/d0_book_triangle_odds_2026-10-19/check_d0_triangle_cost_interface.py",
+              "git_blob": "d31fc257c2d8c62589f75d059a7fa5040b27ddcb",
+              "parent_git_blob": null
+            },
+            {
+              "status": "A",
+              "path": "02_REGISTRY/research/sources/d0_book_triangle_odds_2026-10-19/check_saved_quartic_normal_form.py",
+              "git_blob": "e5d2f8315821943d6cf4fba3bfd75de3fdc2a44d",
+              "parent_git_blob": null
+            }
+          ],
+          "result_ids": [
+            "original-book-triangle-odds-960-affine-pressure-no-go",
+            "stored-quartic-vector-literal-profile-mismatch"
+          ]
+        }
+      ],
+      "disposition": "comparison-complete-result-only",
+      "reopen_when": [
+        "Parent repository, branch, base SHA, or Task metadata changes.",
+        "The current parent blob at a child-delta path differs from its recorded SHA, or the bounded path query is unavailable or incomplete.",
+        "Any child head, base branch/SHA or Task metadata changes.",
+        "The same-repository descendant set changes."
+      ]
+    }
+  ],
+  "synthesis": [
+    {
+      "id": "verification-foundation",
+      "title": "Necessary verification kernel and retained future distinctions",
+      "contribution": "The kernel already has proof owners for necessary records/comparison, empirical factorization, process composition and future-stable memory. Consume those theorems in their exact scope and align their witnesses with the book Sigma roles; this is an assembly application, not a new campaign to reprove the foundation.",
+      "results": [],
+      "consumers": [
+        "verification_core",
+        "theory_transfer"
+      ],
+      "readings": [
+        {
+          "label": "Existing necessity, injective records and verification-theory representation owners",
+          "ref": "5d23e90af703efee7f0deb24517d3ead4780fdfc",
+          "path": "03_FORMALIZATION/D0/Foundation/VerifiabilityNecessity.lean"
+        },
+        {
+          "label": "Existing empirical factorization and process composition on main",
+          "ref": "5d23e90af703efee7f0deb24517d3ead4780fdfc",
+          "path": "03_FORMALIZATION/D0/Foundation/EmpiricalTheoryFactorization.lean"
+        },
+        {
+          "label": "FutureExecution: future-stable quotient and sufficient retained memory in pinned #334",
+          "ref": "a8cde85432d561c06b9fcb77b77bfe471b7c5031",
+          "path": "03_FORMALIZATION/D0/Foundation/EmpiricalTheoryFactorization.lean"
+        },
+        {
+          "label": "Existing distinction between class admissibility and unique forcing",
+          "ref": "5d23e90af703efee7f0deb24517d3ead4780fdfc",
+          "path": "03_FORMALIZATION/D0/Foundation/M1ClassAdmissibility.lean"
+        }
+      ],
+      "next_question": "Write the composed kernel statement with exact owner substitutions, derived roles and explicit representation witnesses. Keep finite coding, effective canonicalization and access requirements as named premises or owned constructions of the coded interface. Then state the general execution/proof transfer interface. Reuse existing proofs instead of reopening them because their assembly application is missing.",
+      "tags": [
+        "foundation",
+        "verification",
+        "Sigma",
+        "memory",
+        "time",
+        "interpretation",
+        "architecture"
+      ]
+    },
+    {
+      "id": "prospective-native-selection",
+      "title": "Минимальный генератор → родной закон физического исполнения",
+      "contribution": "Центральный переход уже имеет входы: необходимое ядро проверяемости, достаточная будущая память, условные Bellman/no-detour теоремы, исходная all327 current-rate минимизация и геометрические классы. В ProspectiveExecution.optimal оптимальность пока является предпосылкой. All327 доказывает минимальную conditional relative entropy при заданном stationary current; свободный current-rate минимум находится при нулевом токе, тогда как scalar Book action в сопряжённой price-координате имеет максимум. Нужны родные условия допустимости и фактические Cost/Info, объясняющие обязательное или предпочтительное продолжение. До исполнения альтернативы с одной полной начальной конфигурацией и задачей могут иметь разные будущие часы; после сохранения истории её требуемые различимости подлежат сохранению. Краткость генератора, длина записи, число гейтов и полное действие остаются разными величинами до доказанного связывания.",
+      "results": [],
+      "consumers": [
+        "constitutive",
+        "native_sector",
+        "gr_operational_realization"
+      ],
+      "readings": [
+        {
+          "label": "Native prospective owner: optimal is an input; reuse suffix/no-detour/no-motion consequences",
+          "ref": "bf82fb54c63bbe95aee5e459a30f17a27f576519",
+          "path": "03_FORMALIZATION/D0/Foundation/EndogenousActionQuantum.lean"
+        },
+        {
+          "label": "Original Book03 Cost-Info action and history weights; preserve operator and record context",
+          "ref": "5d23e90af703efee7f0deb24517d3ead4780fdfc",
+          "path": "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md"
+        },
+        {
+          "label": "Original all327 conditional-current variational identity; native constraint and complete-price identification remain open",
+          "ref": "bf82fb54c63bbe95aee5e459a30f17a27f576519",
+          "path": "02_REGISTRY/research/A4D_GLOBAL_327_BOOK_FISHER_CAR16_MAGNETIC_WICK_AND_DARK_REVIVAL_2026_10_20.md"
+        },
+        {
+          "label": "Typed Q8-to-Golden port; actual Book03 routing, Info and full payment remain open",
+          "ref": "fb5d6a57948d3469a4839be27ec45a7d763985ce",
+          "path": "02_REGISTRY/research/A4D_LITERAL_GOLDEN_M1_FUTURE_MDL_Q8_ORDER_PORT_TYPED_BRIDGE_2026_10_20.md"
+        },
+        {
+          "label": "Conditional endpoint/projective universality: use physical equivalence where proved; retain sourced matter and metric-identification assumptions",
+          "ref": "73bcbe9e9c826cf9e6868c04071e9d23f9cb0049",
+          "path": "02_REGISTRY/research/A4D_BOOK_CAR_HOLST_WEYL_BRANSDICKE_EINSTEIN_UNIVERSALITY_2026_10_20.md"
+        }
+      ],
+      "next_question": "Продолжить существующий constitutive/native_sector owner: на одном исходном branch/record процессе вывести полные Cost/Info и необходимые ограничения, затем доказать, почему физическое продолжение обязательно или idle не оптимален. Подставить уже имеющуюся all327/Bellman теорему только после установления её гипотез; использовать структурное неравенство, инвариант, вариационную идентичность или доказанную физическую эквивалентность. Сертификат нижней границы ещё требует родного достижения/выбора. Source-weld, P25, C2 и stationary-shell — готовые проверки предъявленного полного закона; не повторять их как самостоятельную кампанию. Цель — снять конкретную предпосылку общего GR-вывода, сохранив полный source/history/clock и исходный raw terminal. Условные независимые переносы и refinement продолжаются параллельно.",
+      "tags": [
+        "minimality",
+        "MDL",
+        "Dmin",
+        "prospective",
+        "optimal",
+        "selection",
+        "continuation",
+        "generator",
+        "Info",
+        "current",
+        "минимальность",
+        "закон",
+        "стратегия",
+        "roadmap"
+      ]
+    },
+    {
+      "id": "gr-architectural-composition",
+      "title": "One common realization for theorem reuse and physical GR",
+      "contribution": "The strong physical positive_gr chain remains intact. The architectural conclusion additionally identifies its witnesses with the operational realization and the generic theorem transfer, so every conclusion concerns the same action, source, history and refinement family.",
+      "results": [],
+      "consumers": [
+        "theory_transfer",
+        "gr_operational_realization",
+        "gr_architectural_closure"
+      ],
+      "readings": [],
+      "next_question": "Write the strongest complete conditional GR argument using the existing owners, name one common realization, and isolate its finite open premise boundary. Select the next useful parent substitution from that boundary. The present native selection/payment and uniform joint-refinement questions retain their existing owners and exact scope.",
+      "tags": [
+        "architecture",
+        "GR",
+        "composition",
+        "transfer",
+        "same-source",
+        "closure"
+      ]
+    },
+    {
+      "id": "source",
+      "title": "Полная история → тот же геометрический источник",
+      "contribution": "Полная 143484-запись восстанавливает абсолютный scalar Book source только при общем фильтре глубин. Result-only #334 точно отождествляет исходную шестиплакеточную S_star-плотность с отрицательным смешанным log-jet complete observer-covariant CAR16/Julia marked event; при оригинальной Golden p амплитуде base outcomes равны (p^2,0,p), а смена log-base даёт фиксированный множитель log(phi). Та же signed S_star face локально факторизуется через существующие шесть Golden-фазовых наблюдаемых только как представление readout-функции, не как физический выбор цены. На исходном гладком Role chart inversion-odd Golden ROOT/CODE с одинаковой ненулевой линейной частью имеют одну нормированную h^-2 continuum first source с C1-разностью O(h^4); centered even Shannon подавлен как O(h^2) при этой нормировке. Original full128 rare-clock даёт epsilon_h=p^2 h^2/64 и n_h=64 L^2, то есть n_h epsilon_h=p^2: исходный механизм обеспечивает h^-2 показатель для объявленного conditional marked response. All-order source-weld теперь показывает, что на одном original oriented Book path class общий положительный moving множитель Book-cost × Bell-preparation сокращается в signed log-odds при всех полевых производных; all-six replay проходит. Для разных forward/reverse classes каждая полная retained маргиналь нормируется отдельно. Это свойство относительного observable, не отмена этих множителей в полной Book цене: EXIT имеет вероятность epsilon_h lambda_h, скрытый Golden-port code даёт p^3 на событие, а unscaled complete even Shannon сохраняет ненулевой R^2-type continuum source и absolute baseline. Скорректированный Q8-анализ разделяет ретроспективную цену уже выполненной истории 2/8 от prospective D_min выбора до исполнения; первое не опровергает второе. Ни clock alignment, ни source-weld, ни endpoint-only observability не выбирают compulsory полный Cost-Info. Теорема P25 запрещает насыщенному положительному Cost с coframe-blind Info/attempt воспроизвести смешанный 2-jet Палатини (0,-1). Физический выбор полной цены, native веса и истинный stationary Schur открыты.Отдельный full-six CAR16 score-check на объявленном observer-free 3-outcome тесте требует равенства коэффициентов unmarked и failure для вращательной нейтральности; его raw full Shannon не C^2 на flat cell из-за нулевого unmarked baseline, а scalar Julia-failure feedback не видит compact rotation curvature. Это scoped score-control, не выбранная Book цена. Новый #334 finite checker на исходных 327 циклах задаёт candidate stationary-current cost как level-2.5 KL rate, Legendre-dual к scalar Perron pressure; Hessian rate равен Q327⁻¹, а лимитная pressure/Fisher форма Q327 совпадает с коэффициентом CAR16 magnetic return-gap; конечные проверки согласуются с максимальной разницей 2.7e−5. Это кандидат на Cost, не физический Info(v), не полный Book03 Cost−Info и не выбранный G0 controller. Глобальный отчет #334 формулирует точную границу применения: условная current-rate равна минимальной relative entropy среди original stationary flows при заданном токе, но свободный current-rate функционал имеет минимум при current=0; scalar Book action в сопряжённой price-координате имеет максимум. Обязательный будущий тест или полная Cost-Info цена ещё требуют родного вывода. CAR16 magnetic rate чётен при обращении и сам не задаёт signed Einstein source; Golden17 odd channel уже существует математически, однако его физическое допущение и полная оплата остаются открытыми.",
+      "consumers": [
+        "constitutive",
+        "native_sector",
+        "matter_source_ward"
+      ],
+      "results": [
+        "original-stage-resolved-book-selector-143484",
+        "original-role40-six-root-triangle-star-pullback",
+        "native-actionprotocol-book03-pullback-boundary",
+        "opposite-null-julia-order-memory",
+        "full128-opposite-null-two-round-shannon-order-source"
+      ],
+      "next_question": "Не выводить h^-2 показатель заново и не повторять signed-odds algebra: original rare-event clock и all-order source-weld уже дают эти result-only конструкции. Сначала установить, допускает ли один и тот же compulsory original Book path class signed +/- marker с общим moving Book/Bell множителем; если используются разные классы, нормировать каждую retained маргиналь отдельно. Затем вывести из исходного M1/D_min и Book03, а не постулировать, существует ли prospective физический выбор complete Cost-Info history до исполнения; проверять одинаковые полные начальные состояния, goals и future-verification constraints. Для нового 327-cycle KL-rate вывести из исходной branch/record map, является ли он primitive Cost, Info или только статистическим сопряжённым; не подменять им фактическую Info(v) или физическую цену. Глобальный отчет #334 уточняет: это минимальная relative entropy при фиксированном stationary current; в свободном current-rate функционале минимум достигается при current=0, тогда как scalar Book action в сопряжённой price-координате имеет максимум. Ненулевое продолжение требует родного обязательного future-test или полной Cost-Info цены, делающей idle неоптимальным. CAR16 magnetic statistic чётен при совместном обращении, поэтому один не даёт signed Einstein source; для этого нужен физически выбранный и оплаченный Golden17 odd channel. Для выбранной физической модели вычислить полный even/absolute/hidden-port p^3, preparation/work/clock source и проверить, входит ли он в квадрат исходного star-density ideal, сокращается либо остаётся. После выбора одного native веса вычислить исходный 16-site Role Hessian: для e_0(a)=diag(1,a,1,a^-1), U_{0,2}(t)=exp(t J23) геометрический target S_star даёт (∂_a²S, ∂_a∂_tS)=(0,-1), с фиксированным Golden log(phi) и без подгонки coupling. Сохранить все 16+24 вариации и реальные preparation/clock/work/oldRIGHT/observer/history rows. P25 даёт NO-GO только при насыщенных primitive Costs C_e≥1, coframe-blind Info/attempt и отсутствии истинного внутреннего stationary Schur; иначе вывести compensating source или Schur из native примитивов. Эта source gate не меняет действующие #334/#232 и не диспетчеризуется параллельно. У любого выбранного Hessian/readout отдельно проверить реальный положительный baseline и C^2-regularity: один уже проверенный raw Shannon-кандидат негладок на flat cell и потому не даёт заявленный второй jet без дополнительной допустимой структурной причины.",
+      "tags": [
+        "источник",
+        "история",
+        "history",
+        "source",
+        "cost",
+        "clock",
+        "143484",
+        "six faces",
+        "source-weld",
+        "prospective-Dmin",
+        "C2-baseline",
+        "observer-free-score"
+      ],
+      "readings": [
+        {
+          "label": "Result-only #334: native-Golden CAR16 star event factors through the owned six-phase atlas; full128 and price selection remain open",
+          "ref": "b307855df4a397e397cbf83e791026c9b79c75c6",
+          "path": "02_REGISTRY/research/A4D_OBSERVER_COMPLETE_CAR16_JULIA_CHOI_STAR_DENSITY_WELD_2026_10_20.md"
+        },
+        {
+          "label": "Result-only #334: exact saturated-Cost/coframe-blind-Info mixed-source NO-GO (P25)",
+          "ref": "37263957b5c3ea2477acbac8b86f4b69c87e8e02",
+          "path": "02_REGISTRY/research/A4D_P25_NATIVE_COST_FLOOR_PSD_MIXED_PALATINI_VACUUM_NO_GO_2026_10_20.md"
+        },
+        {
+          "label": "Result-only #334: identical Q8 endpoint, 2-vs-8 executed histories, and legal second-source gap 12",
+          "ref": "35c2f7efa6c41340e5f0384bcbe0c95588fdb61b",
+          "path": "02_REGISTRY/research/A4D_M1_Q8_FULL_HISTORY_VS_MINIMAL_ENDPOINT_PROGRAM_AND_PRICE_JET_NOGO_2026_10_20.md"
+        },
+        {
+          "label": "Result-only #334: original Golden17 odd readouts share the normalized IR first source; unscaled even cost can survive",
+          "ref": "8d55d0a95c63f1fd7c67e01b19828f54f16ce1ec",
+          "path": "02_REGISTRY/research/A4D_GLOBAL_CHIRAL_GOLDEN_IR_EINSTEIN_HOLST_UNIVERSALITY_2026_10_20.md"
+        },
+        {
+          "label": "Result-only #334: observer-free Golden score constraint and C2 failure of the raw flat-cell Shannon candidate; physical price not selected",
+          "ref": "8d55d0a95c63f1fd7c67e01b19828f54f16ce1ec",
+          "path": "02_REGISTRY/research/sources/d0_book_geometry_double_schur_2026-10-19/check_car16_golden_observer_score_selector.py"
+        },
+        {
+          "label": "Replay #334 d8013249: original 327-cycle stationary-current KL/Legendre rate and inverse-Fisher candidate; not selected as Book03 action or Info",
+          "ref": "d801324911219ae5d720a77ae3b4b5d9b6d8b40a",
+          "path": "02_REGISTRY/research/sources/d0_book_car327_fisher_2026-10-20/check_all327_native_book_hodge_CAR16_magnetic_gap.mjs"
+        },
+        {
+          "label": "Global #334 all-327 theorem: conditional stationary-current KL cost, exact inverse-Fisher Hessian, magnetic evenness and explicit physical-selection boundary; GR_closed=false",
+          "ref": "bf82fb54c63bbe95aee5e459a30f17a27f576519",
+          "path": "02_REGISTRY/research/A4D_GLOBAL_327_BOOK_FISHER_CAR16_MAGNETIC_WICK_AND_DARK_REVIVAL_2026_10_20.md"
+        }
+      ]
+    },
+    {
+      "id": "vacuum",
+      "title": "Стационарная память → универсальный вакуумный сектор",
+      "contribution": "При ненулевом sitewise первом источнике и остатке в квадрате идеала плотностей совпадают вакуумные стационарные множества и сырое геометрическое ядро даже при вертикальной зависимости памяти. Отдельные Golden17-контроли показывают вертикальное расхождение и слепоту scalar plaquette class Cost; ни одна из этих цен не выбрана compulsory full D0 action.",
+      "consumers": [
+        "constitutive",
+        "on_shell_stationarity",
+        "physical_constraints"
+      ],
+      "results": [
+        "book-second-ideal-vertical-hessian-source-test",
+        "original-golden17-shannon-vertical-no-descent",
+        "lorentz-null-conjugacy-cost-blindness"
+      ],
+      "next_question": "Для compulsory полного действия решить собственные Euler-уравнения подготовки, clock, work, oldRIGHT и внутренних историй. На истинной f=0 поверхности установить single-valued источник DS=Σw_i df_i с ненулевыми sitewise w_i и регулярный остаток I_f²; отдельно проверить sourced-root вертикальный Hessian. Golden17 и single-plaquette Cost — враждебные контроли: их нельзя просто удалить, но они также не выбирают полный action.",
+      "tags": [
+        "вакуум",
+        "память",
+        "vacuum",
+        "nonseparable",
+        "envelope",
+        "stationary",
+        "memory",
+        "Schur"
+      ]
+    },
+    {
+      "id": "roots",
+      "title": "Точные искривлённые решения → совместное решение",
+      "contribution": "На исходном шестиплакеточном Brinkmann/J2-носителе доказано точное unrestricted 40→3→1 сведение для независимых значений H(u,x,y): две исходные link-строки принудительно задают одноступенчатое по u staggering, последняя строка есть один transverse discrete Poisson источник. Это включает произвольный CAR16 null-поток и бесконечномерные дискретно-гармонические профили; для гладкой гармонической функции на ограниченной области получено точное Dirichlet-представление с O(h^2) восстановлением. Результат относится к объявленному математическому AF-star/Book J2 carrier и не выбирает compulsory D0 price. Для встречной null-ветви проверены полная алгебра so(1,3), локальное Ricci/Weyl-разделение и положительные two-order тесты. Один branch-resolved Julia/Golden кандидат точно совпадает с двумя выбранными J/B face first- и mixed-jet коэффициентами; refinement на каждом flag history вместо этого промахивается в 8 раз. Это не решает все исходные конечные coframe/link Euler: полный двухсторонний root, остальные строки и физический выбор цены открыты. На условном curved H+J+R owner protected reference128 preparation стационарна, но exact low-grade rank128 witness имеет строгий отрицательный LEFT-mode Hessian, равномерный при фиксированном физическом периоде; protected pp curvature R-source и mixed preparation-curvature block равны нулю. Значит, это не доказанная устойчивая выбранная preparation и R не выбирает pp-кривизну в этих направлениях. Размерностный воротник также важен: этот rank128 protected witness требует L_u≥65 и не есть исходный L=2/16-site carrier. Отдельно на исходном full-Lorentz CAR16-операторе доказан точный curved fixedRIGHT128 preparation block и вычислен настоящий R-covector [в том же Draft #334](https://github.com/gvakhrushev/d0_15/blob/4873b3c245a91bd8c9cb25bceeb82662e9f62944/02_REGISTRY/research/A4D_EXACT_CURVED_NATIVE_DIRAC_FIXED_RIGHT_PREPARATION_AND_SOURCE_2026_10_20.md). Это решает только объявленные preparation/source identities; полный физически допущенный H+J+R-корень и выбор цены остаются открыты.Новое simultaneous H+J+R Ward при независимых admitted coframe-scale и observer-boost вариациях требует две одинаковые ненулевые компенсации: d_sigma(H+J)=d_tau(H+J)=-2R0, равномерно ненулевые при fixed-period refinement. Observer/coframe/scale rows поэтому нельзя опускать при joint root. Последний закреплённый результат #334 даёт для positive C² W точное тождество Γ_raw−Γ_LC(ghat)=−δ^ρ_ν∂_μ(½ln W): это точный projective-gradient с нулевой добавкой к кривизне и ненулевое чисто-следовое raw torsion. Его независимый checker повторно пройден в assembly worktree: все 256 компонент кривизны и raw torsion дали нулевую ошибку на четырёх профилях W=1+x². Это уточняет отображение тетрад, но не доказывает выбор такого отображения фундаментальной D0, независимость Spin-CAR источника или обязательность Book-цены.",
+      "consumers": [
+        "joint_nonlinear_solve",
+        "recovery",
+        "full_affine_stationarity"
+      ],
+      "results": [
+        "brinkmann-j2-null-family",
+        "double-null-finite-cubic-euler-jet",
+        "double-null-finite-mixed-quartic-euler-jet",
+        "double-null-degree5-selected-rref-ward-obstruction"
+      ],
+      "next_question": "Не повторять уже проверенные односторонние 40→3→1, u-stagger, Ricci/Weyl-нормировку, fixedRIGHT identities, матричную so(1,3) алгебру или два выбранных J/B face jets. Внутри существующего #334 ближайший геометрический gate — решить исходные все 16+24 finite Euler на встречном H/J carrier свободными link-переменными; не подставлять continuum Levi-Civita связь до вариации. Проверить все coframe/link строки и cross-site compatibility; не переносить branch-resolved двухлицевый price match на все уравнения. Для curved reference128, отдельно сохранить exact pp-curvature R-flatness, отрицательный preparation mode, полный observer/coframe source и реальную L_u/rank-capacity: stationarity не означает stable physical selection. После same-carrier source/root остаются Ward, boundary/seam balance и refinement; построенный J2 источник не выбирает compulsory D0 price. Зарегистрированный #232 response terminal остаётся отдельным обязательством существующего #334: non-tautological normalized response theorem с grid-scale микроструктурой либо допустимый exact joint-critical counterexample на фиксированной кривой метрике. Не подменять эти работы друг другом и не начинать параллельный PR. При объявленном curved fixedRIGHT rank128 witness проверить обе admitted scale/observer строки и их boundary domain; любая совместная ветвь обязана дать указанные H+J-компенсации, тогда как pp-curvature R-source остаётся нулевым.",
+      "tags": [
+        "решения",
+        "корни",
+        "roots",
+        "Brinkmann",
+        "40",
+        "Cartan",
+        "crossed",
+        "quartic",
+        "Weyl",
+        "Lorentz",
+        "SO(1,3)",
+        "harmonic",
+        "finite-all40",
+        "preparation-saddle",
+        "R-flat",
+        "boundary-seam",
+        "observer-ward",
+        "scale-ward"
+      ],
+      "readings": [
+        {
+          "label": "Result-only #334: unrestricted original 40-to-3-to-1 for arbitrary H(u,x,y), CAR16 source, and discrete harmonic recovery",
+          "ref": "8d55d0a95c63f1fd7c67e01b19828f54f16ce1ec",
+          "path": "02_REGISTRY/research/A4D_ARBITRARY_BRINKMANN_ALL40_CARTAN_DISCRETE_EINSTEIN_2026_10_19.md"
+        },
+        {
+          "label": "Result-only #334: opposite-null so(1,3) closure and local Ricci/Weyl split; finite all40 mixed root remains open",
+          "ref": "8d55d0a95c63f1fd7c67e01b19828f54f16ce1ec",
+          "path": "02_REGISTRY/research/A4D_DOUBLE_NULL_CARTAN_CROSSING_RICCI_WEYL_SPLIT_2026_10_19.md"
+        },
+        {
+          "label": "Result-only #334: branch-resolved opposite-null Julia source matches two J/B face jets; the full finite all40 root remains open",
+          "ref": "8d55d0a95c63f1fd7c67e01b19828f54f16ce1ec",
+          "path": "02_REGISTRY/research/A4D_OPPOSITE_NULL_LIE_COMPLETE_JULIA_ORDER_MEMORY_BOOK_SOURCE_2026_10_19.md"
+        },
+        {
+          "label": "Result-only #334: protected pp curvature has zero R-source; the fixedRIGHT128 preparation is a strict saddle, not a stable selected vacuum",
+          "ref": "8d55d0a95c63f1fd7c67e01b19828f54f16ce1ec",
+          "path": "02_REGISTRY/research/A4D_CURVED_REFERENCE128_FULL_HJR_PROTECTED_SOURCE_AND_PREPARATION_SADDLE_GATE_2026_10_20.md"
+        },
+        {
+          "label": "Result-only #334 at 73bcbe9e: Book endpoint weight induces an exact projective-gradient connection shift; raw trace torsion remains and physical selection is open",
+          "ref": "73bcbe9e9c826cf9e6868c04071e9d23f9cb0049",
+          "path": "02_REGISTRY/research/A4D_BOOK_CAR_HOLST_WEYL_BRANSDICKE_EINSTEIN_UNIVERSALITY_2026_10_20.md"
+        },
+        {
+          "label": "Independent replay in this assembly turn: original CAR16/Holst checker, including 256 projective-curvature and raw-torsion entries",
+          "ref": "73bcbe9e9c826cf9e6868c04071e9d23f9cb0049",
+          "path": "02_REGISTRY/research/sources/d0_car_holst_universality_2026-10-20/check_original_car16_hodge_holst_torsion_bianchi.mjs"
+        }
+      ]
+    },
+    {
+      "id": "refinement",
+      "title": "Конечный геометрический отклик → контролируемый предел",
+      "contribution": "Есть scoped endpoint-probe law с ошибкой O(h/epsilon + epsilon^2), metric provenance и smooth/IR parametrix. У pinned локального Brinkmann Poisson-источника сумма следа конечной поперечной кривизны телескопируется в граничный поток; на полностью периодическом торе без потока ненулевой средний null-источник невозможен.",
+      "consumers": [
+        "contrast_refinement_transfer",
+        "soundness",
+        "raw_response_terminal"
+      ],
+      "results": [
+        "endpoint-probe-law",
+        "metric-provenance",
+        "smooth-parametrix",
+        "brinkmann-j2-null-family"
+      ],
+      "next_question": "Для одного выбранного источника записать дискретный граничный flux balance и явно выбрать физический boundary, chart-seam или compensating source; затем перенести отклик того же native процесса с равномерной оценкой на согласованном носителе. Не переносить nonvacuum-семейство на периодический тор без выполнения глобального баланса. RAW-216 сохраняет собственную норму и независимый фиксированный источник.",
+      "tags": [
+        "предел",
+        "refinement",
+        "limit",
+        "probe",
+        "raw",
+        "216",
+        "norm",
+        "оценка"
+      ]
+    },
+    {
+      "id": "matter",
+      "title": "Допущенные будущие тесты → достаточная память и материя",
+      "contribution": "На исходном full-CAR16/positive-Julia carrier построен один полный положительный tester с независимой first-response по всем шести so(1,3) генераторам; fresh flags измеряют AB/BA J- и B-коммутаторы, а retained Golden refinement даёт ненулевой same-history Shannon order jet. Сравнение прямой и последовательной Julia-дилатаций вычисляет точный композиционный defect; branch-resolved кандидат совпадает с двумя selected face jets. Это математическая complete memory construction, а не выбранная compulsory цена: history сохраняет failures/reference/work, и direct-vs-sequential actuation имеет разную цену. На оригинальном Q8 carrier новый минимальный IJI/JII-assay использует одинаковые counts 2 local-i + 1 common-j, даёт Golden bright odds 0 против 4p^3 и минимален среди слов длины ≤2 для этой заданной задачи. Один future-order bit необходим на этом конечном comparator. Но исправленная D_min-логика принципиально prospective: глобальная optimality до исполнения даёт Bellman/no-detour только как явная premise; Tome I D_min минимизирует описания, а не доказывает физический выбор траектории. Ретроспективные цена, clock и second-source gap 12 для реально исполненных историй остаются верны и не опровергают prospective гипотезу. Golden/CNOT compiler даёт точный trace-decreasing fixed-U64 Kraus operator p^18 U и one-shot probability p^36. После успешной offline-подготовки шести Bell programme pairs истинный Bell-effect acceptance rate равен (2p^3)^6/4096≈2.7042e-6; ideal projection 1/4096 аппаратно не реализована. Повторяемы лишь шесть offline preparations; ожидаемый Golden count ≤6/p^3+12. Отдельный archive/clock replay различает coherent Bell prep и dephased F/R extractor, показывая, что surprisal 36 и остановочный clock не равны полной H+J+R цене. All-order source-weld сохраняет signed relative odds при общем moving множителе одного path class; all-718 replay восстанавливает signed source при p^36 на 384 based links. Это не выбирает full Book03 price или original Role-to-scene moving programme. Curved fixedRIGHT reference128 имеет защищённый R-flat pp-блок, но конкретная stationary rank128 preparation — saddle; её устойчивость/приёмка также не доказаны. Literal GoldenCoherentMemory.fullStep/G0 admission, oldRIGHT/reference, controller/work/clock, полный Book H+J+R source и физический selector остаются открытыми.На объявленном K(9,11,13) mathematical Role test p^36 source имеет 12,206 полных положительных исходов и точный positive Fisher p^40/6 на каждом из шести Lie-каналов; исходный Role384 shared-link ранг остаётся 270 с теми же 114 gauge/Wilson nulls. Role-to-scene programme map, moving U64 и полная Cost-Info цена не выбраны. Шесть offline Bell preparations производят 12 known-|1> byproducts, но копирование stage-результата и active routing должны быть admitted и оплачены. Новый typed bridge Q8→Golden controlledSign, forward-only comparator и clock уже существуют как математические конструкции; физический допуск и оплата маршрута G0/Book03 не доказаны. Отдельный conditional selector показывает: одинаковые скалярные Book-закон и цена не выбирают Q8-лист; all-negative синдром следует только при явной модельной посылке, что полная условная Shannon-энтропия Golden-исхода входит в prospective Info с отрицательным знаком. Равенство этой энтропии фактической проверенной Info Book03 не доказано.",
+      "consumers": [
+        "native_sector",
+        "matter_source_ward",
+        "physical_constraints"
+      ],
+      "results": [
+        "q8-future-mdl-conditional-327-archive-bits",
+        "original-q8-spin-sheet-current-fullstep-boundary",
+        "full-history-binary-source-loss",
+        "opposite-null-julia-order-memory",
+        "full128-opposite-null-two-round-shannon-order-source"
+      ],
+      "next_question": "Не повторять exact full16 Julia/POVM Lie response, AB/BA J/B mixed jets, Golden/CNOT p^18 algebra, offline retry bounds, Q8 IJI/JII minimality или формальный Bellman вывод. Новый Q8→controlledSign bridge, forward-only comparator, clock и условный Shannon-selector существуют как математические результаты; физический допуск и оплата остаются открытыми. Сначала вывести фактическую M1 Info-функцию, отличив информацию о состоянии/источнике от условной энтропии выходов детектора; модельная Shannon-посылка этого не решает. Следующий decisive step — один actual retained Book03 q(γ) run: (1) показать, что G0 маршрутизирует центральный Q8 знак в существующий controlledSign/OrderMemoryControl, сохраняя oldRIGHT/reference и все исходы, с двумя независимыми M1-проверками и реальными reset/clock/preparation/work затратами; (2) на этом же run определить direct plaquette или sequential edge actuation и включить известный composition defect, moving U64 и полную нормировку Cost-Info; (3) вывести совпадение полной цены и её source с original 16+24 и matter/observer Euler rows, затем Ward и refinement. Если выбирается prospective D_min, его правило должно следовать из тех же полных начальных состояний, целей, допустимых future tests и native costs; Bellman-следствия не заменяют эту посылку. Работа остаётся в #334/#232 без параллельной задачи.",
+      "tags": [
+        "материя",
+        "память",
+        "matter",
+        "spin",
+        "Q8",
+        "future",
+        "archive",
+        "Ward",
+        "commutator",
+        "composition-defect",
+        "native-record",
+        "fullStep",
+        "prospective-selector",
+        "D_min",
+        "prospective-Dmin",
+        "Bellman",
+        "minimal-3-gate",
+        "all718-source",
+        "p36",
+        "Book-clock"
+      ],
+      "readings": [
+        {
+          "label": "Result-only #334: opposite-null complete positive Julia memory, J/B order source and measured composition defect; physical selection remains open",
+          "ref": "8d55d0a95c63f1fd7c67e01b19828f54f16ce1ec",
+          "path": "02_REGISTRY/research/A4D_OPPOSITE_NULL_LIE_COMPLETE_JULIA_ORDER_MEMORY_BOOK_SOURCE_2026_10_19.md"
+        },
+        {
+          "label": "Result-only #334: exact p^18 U64 Bell resource and honest Book work/clock budget",
+          "ref": "8d55d0a95c63f1fd7c67e01b19828f54f16ce1ec",
+          "path": "02_REGISTRY/research/A4D_NATIVE_GOLDEN_COHERENT_BELL64_EXACT_P18_PROGRAMME_AND_BOOK_WORK_2026_10_20.md"
+        },
+        {
+          "label": "Result-only #334: prospective D_min correction and minimal three-gate equal-inventory Q8 order test; physical selector premise remains open",
+          "ref": "8d55d0a95c63f1fd7c67e01b19828f54f16ce1ec",
+          "path": "02_REGISTRY/research/A4D_PROSPECTIVE_DMIN_PHYSICAL_SELECTION_BEFORE_EXECUTION_AND_Q8_MINIMAL_3_GATE_2026_10_20.md"
+        },
+        {
+          "label": "Replay: original 718-edge, 12,206-outcome native p^36 signed source; physical Role-to-scene map and complete action remain open",
+          "ref": "8d55d0a95c63f1fd7c67e01b19828f54f16ce1ec",
+          "path": "02_REGISTRY/research/sources/d0_golden_native_herald_2026-10-20/check_original_all718_nativep36_signed_source.mjs"
+        },
+        {
+          "label": "Result-only #334: typed original Q8-to-Golden sign port and forward-only comparator; actual Book03/G0 routing and payment remain open",
+          "ref": "fb5d6a57948d3469a4839be27ec45a7d763985ce",
+          "path": "02_REGISTRY/research/A4D_LITERAL_GOLDEN_M1_FUTURE_MDL_Q8_ORDER_PORT_TYPED_BRIDGE_2026_10_20.md"
+        }
+      ]
+    }
+  ],
+  "carrier_distinctions": [
+    {
+      "id": "constructed-j2-vs-compulsory-full-program",
+      "slot": "constitutive",
+      "left_interface": "native-programme-v1",
+      "right_interface": "brinkmann-j2-v1",
+      "type": "distinct-from",
+      "reason": "The constructed AF×scene J2 source is not the selected compulsory full G0/Book03 H+J+R action or its physical admission."
+    },
+    {
+      "id": "golden17-pointer-vs-compulsory-full-program",
+      "slot": "constitutive",
+      "left_interface": "native-programme-v1",
+      "right_interface": "golden17-vertical-source-descent-v1",
+      "type": "distinct-from",
+      "reason": "The complete Golden17 pointer-Shannon source is a scoped mathematical candidate, not the compulsory complete D0 price."
+    },
+    {
+      "id": "single-plaquette-class-cost-vs-oriented-native-source",
+      "slot": "constitutive",
+      "left_interface": "native-programme-v1",
+      "right_interface": "lorentz-null-class-cost-boundary-v1",
+      "type": "distinct-from",
+      "reason": "The class-cost theorem is blind to original null plaquette amplitudes and cannot substitute for the oriented, coframe-referenced full native source."
+    }
+  ],
+  "registry_budget": {
+    "max_active_results": 50
+  }
+}

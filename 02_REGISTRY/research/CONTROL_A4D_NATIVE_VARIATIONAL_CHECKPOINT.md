@@ -8,6 +8,18 @@ Source: [#310](https://github.com/gvakhrushev/d0_15/pull/310), published source
 Status: **review candidate**. Acceptance requires current-head CI and
 CONTROL review; this record does not announce a completed original parent.
 
+**Main integration and immutable inputs, 2026-10-20.** The
+[bounded historical-input binding](sources/d0_native_variational_checkpoint_2026-10-20/README.md)
+preserves the published #322 source and older receipts while retaining main
+#375's stronger action boundaries. Historical replay and compilation against
+maintained sources have separate required checks. The appended typed
+field/history section has its [own report](A4D_NATIVE_HISTORY_FIELD_COUPLING_BOUNDARY.md),
+so the earlier memo's five receipt pins remain intact. Two original certificate
+headers also retain their exact historical common-action report through the
+same bounded binding; the maintained report and its #375 boundaries remain
+current. This repair changes no
+physical action, acceptance claim or parent terminal.
+
 **Correlated-current CI portability repair, 2026-10-13.**
 The failed Linux guard attempted to load a temporary macOS Lean object.
 Default immutable replay now checks actual archived compiler output,

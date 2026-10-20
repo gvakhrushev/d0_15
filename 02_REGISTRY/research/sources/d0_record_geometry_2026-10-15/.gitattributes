@@ -1,0 +1,7 @@
+# Supplied source bytes are immutable, including historical whitespace/line endings.
+# Keep normal diff rendering; disable only whitespace errors and EOL conversion.
+original/** -text -whitespace
+expanded/** -text -whitespace
+previous_strategy/** -text -whitespace
+# Fresh captured stdout retains the program's intentional blank final line.
+validation/**/*.log -whitespace

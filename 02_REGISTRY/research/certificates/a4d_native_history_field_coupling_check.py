@@ -43,7 +43,7 @@ def main() -> None:
     assert all(sha256(root / path) == digest for path, digest in pins.items())
 
     capsule = (root / receipt["capsule"]).read_text()
-    report = (root / "02_REGISTRY/research/A4D_NATIVE_HISTORY_ACTION_BOUNDARY.md").read_text()
+    report = (root / "02_REGISTRY/research/A4D_NATIVE_HISTORY_FIELD_COUPLING_BOUNDARY.md").read_text()
     output = (root / receipt["output"]).read_text()
     assert re.search(r"\bsorry\b", capsule) is None
     assert all(token not in output for token in ("error:", "warning:", "sorryAx"))

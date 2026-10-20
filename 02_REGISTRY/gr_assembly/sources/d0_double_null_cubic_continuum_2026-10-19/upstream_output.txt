@@ -1,0 +1,10 @@
+PASS full Ricci cubic cancellation / native five-point Poisson (1, 0) (0, 1)
+PASS full Ricci cubic cancellation / native five-point Poisson (0, 1) (1, 0)
+Traceback (most recent call last):
+  File "/Users/grigorijvahrusev/.codex/worktrees/gr-assembly/d0_15/02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_continuum_2026-10-19/upstream_check_cubic_ricci_poisson.py", line 83, in <module>
+    require(ricci_cubic(A,B)==target,
+  File "/Users/grigorijvahrusev/.codex/worktrees/gr-assembly/d0_15/02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_continuum_2026-10-19/upstream_check_cubic_ricci_poisson.py", line 69, in require
+    raise ArithmeticError(label)
+ArithmeticError: complete uncorrected cubic Ricci tensor
+
+EXIT_CODE=1

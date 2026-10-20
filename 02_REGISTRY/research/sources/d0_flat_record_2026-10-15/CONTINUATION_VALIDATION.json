@@ -1,0 +1,25 @@
+{
+  "intake_parent": "b77e58923b61879a618eb41205572b31ae8fa107",
+  "mathematical_mutants_rejected": [
+    "half_metric",
+    "freeze_inverse",
+    "erase_internal",
+    "drop_gradient_term"
+  ],
+  "native_source_context": "34f4e68de0e7d917d80d6c139b39dcc44f010b70",
+  "ordinary_optimized_same": true,
+  "prior_original_output_reproduced": true,
+  "proof_integration_notation": {
+    "change": "one explicit multiplication character in 1-2*w0=s0; all other proof bytes unchanged",
+    "supplied_sha256": "102790104debda459b3d0dae8d84575233ab9bdbe99f689afb15f04d974154c6"
+  },
+  "python": "3.13.5",
+  "scope": "local exact-algebra and analytic continuation of the declared record model; not physical admission, repository-wide CI or independent scientific acceptance",
+  "sha256": {
+    "CONTINUATION_RU.md": "679877dfeadfb387de8d8ecd3f127ead761ba6f1ff06535df7dc5fabd5e909be",
+    "check_nonlinear_split.py": "0283e2e060d8a5662806f73a7cac13a5e11be228523d6c296a8aa93c3fb8e252",
+    "nonlinear_mutations.json": "463b21a0c54254ea27a3cdf2e88f2dd8220494e2fc976ddac75dd0db73275d61",
+    "nonlinear_result.json": "a87bad8b6b7c2ebc8a8add12a2ae07ddb2eca2f10d49b0e14d09ff36edd3fea6"
+  },
+  "sympy": "1.14.0"
+}

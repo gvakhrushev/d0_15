@@ -1,0 +1,86 @@
+{
+  "schema": "d0-gr-assembly-source-snapshot/v1",
+  "source_commit": "0e1849bd7bf6a87e9731801206fd5ccd1041bb63",
+  "source_pr": "https://github.com/gvakhrushev/d0_15/pull/334",
+  "files": [
+    {
+      "source_path": "02_REGISTRY/research/A4D_NATIVE_FULL128_GLOBAL_MODAL_HISTORY_MDLCLOCK_AND_SOURCE_2026_10_19.md",
+      "snapshot_path": "02_REGISTRY/gr_assembly/sources/d0_physical_binary_source_gate_2026-10-19/A4D_NATIVE_FULL128_GLOBAL_MODAL_HISTORY_MDLCLOCK_AND_SOURCE_2026_10_19.md",
+      "sha256": "21d5e9a289abd32aa955d80ce4a7909d99b7335048795de83a0b255ca4340811",
+      "bytes": 13153
+    },
+    {
+      "source_path": "02_REGISTRY/research/A4D_NATIVE_FULL128_J23_PORT_SOURCE_SPLIT_AND_PHYSICAL_COARSE_READOUT_2026_10_19.md",
+      "snapshot_path": "02_REGISTRY/gr_assembly/sources/d0_physical_binary_source_gate_2026-10-19/A4D_NATIVE_FULL128_J23_PORT_SOURCE_SPLIT_AND_PHYSICAL_COARSE_READOUT_2026_10_19.md",
+      "sha256": "b3c1290ce63bd6f700dc8dbdb8c3051a5ba7a67bb426bf6c7126b7c1c6c0c33a",
+      "bytes": 8386
+    },
+    {
+      "source_path": "02_REGISTRY/research/A4D_PHYSICAL_BINARY_RETURN_BOOK_PRICE_AND_EINSTEIN_SOURCE_GATE_2026_10_19.md",
+      "snapshot_path": "02_REGISTRY/gr_assembly/sources/d0_physical_binary_source_gate_2026-10-19/A4D_PHYSICAL_BINARY_RETURN_BOOK_PRICE_AND_EINSTEIN_SOURCE_GATE_2026_10_19.md",
+      "sha256": "8c02f6bd280dceb7323e7b590496a43e8950589664ee0358af2659ce8e725f0b",
+      "bytes": 9956
+    },
+    {
+      "source_path": "02_REGISTRY/research/A4D_PHYSICAL_FULL_HISTORY_COHERENCE_SOURCE_AND_BINARY_COMPRESSION_GATE_2026_10_19.md",
+      "snapshot_path": "02_REGISTRY/gr_assembly/sources/d0_physical_binary_source_gate_2026-10-19/A4D_PHYSICAL_FULL_HISTORY_COHERENCE_SOURCE_AND_BINARY_COMPRESSION_GATE_2026_10_19.md",
+      "sha256": "87e44b774107e714c3cc6f1cc0419bf9e78028f56117ed0a0d4b75da2244c0fd",
+      "bytes": 13318
+    },
+    {
+      "source_path": "02_REGISTRY/research/A4D_PHYSICAL_GOLDEN_PREPARATION_PRESSURE_AND_BOOK_SOURCE_BOUNDARY_2026_10_19.md",
+      "snapshot_path": "02_REGISTRY/gr_assembly/sources/d0_physical_binary_source_gate_2026-10-19/A4D_PHYSICAL_GOLDEN_PREPARATION_PRESSURE_AND_BOOK_SOURCE_BOUNDARY_2026_10_19.md",
+      "sha256": "a9fa5d31145aba5e02156f872c2ceaa53f684a11e1742e433f4c8000a0dac8de",
+      "bytes": 14108
+    },
+    {
+      "source_path": "02_REGISTRY/research/sources/d0_physical_binary_return_2026-10-19/check_binary_native_price_source.py",
+      "snapshot_path": "02_REGISTRY/gr_assembly/sources/d0_physical_binary_source_gate_2026-10-19/check_binary_native_price_source.py",
+      "sha256": "d9b71f9f82d8ea5f60ea5764476e3883def01072d0ec26a763099e76947e0b8f",
+      "bytes": 2498
+    },
+    {
+      "source_path": "02_REGISTRY/research/sources/d0_physical_binary_return_2026-10-19/check_d0_physical_golden_preparation_pressure.py",
+      "snapshot_path": "02_REGISTRY/gr_assembly/sources/d0_physical_binary_source_gate_2026-10-19/check_d0_physical_golden_preparation_pressure.py",
+      "sha256": "172ec9090de93ec80fe4f41d570aa9738e24084f384e3c701f94cf5cadae0e96",
+      "bytes": 5846
+    },
+    {
+      "source_path": "02_REGISTRY/research/sources/d0_physical_binary_return_2026-10-19/check_full128_global_map_native_history.py",
+      "snapshot_path": "02_REGISTRY/gr_assembly/sources/d0_physical_binary_source_gate_2026-10-19/check_full128_global_map_native_history.py",
+      "sha256": "7cbe15c11182cfec2ba35546d9e35cabca3fd47073e2328b952c91056afcfb83",
+      "bytes": 2133
+    },
+    {
+      "source_path": "02_REGISTRY/research/sources/d0_physical_binary_return_2026-10-19/check_full_history_binary_information_loss.py",
+      "snapshot_path": "02_REGISTRY/gr_assembly/sources/d0_physical_binary_source_gate_2026-10-19/check_full_history_binary_information_loss.py",
+      "sha256": "d6a93b00a65eb7ed140f093341ee57e2e001481878c6cd1b7ac84aa7b27af0f0",
+      "bytes": 2920
+    },
+    {
+      "source_path": "02_REGISTRY/research/sources/d0_physical_binary_return_2026-10-19/check_native_golden_port_hidden_source.py",
+      "snapshot_path": "02_REGISTRY/gr_assembly/sources/d0_physical_binary_source_gate_2026-10-19/check_native_golden_port_hidden_source.py",
+      "sha256": "645676c5c32902d3c6926a2643e6e503c8dfe0e06add189dc96a504527b82448",
+      "bytes": 1976
+    },
+    {
+      "source_path": "02_REGISTRY/research/sources/d0_physical_binary_return_2026-10-19/check_original_full128_J23_port_decomposition.py",
+      "snapshot_path": "02_REGISTRY/gr_assembly/sources/d0_physical_binary_source_gate_2026-10-19/check_original_full128_J23_port_decomposition.py",
+      "sha256": "a8b14c9fad5209b33a1b092f5f3675d505ad44b2ef1d18966c0d9aeea6a79590",
+      "bytes": 3385
+    },
+    {
+      "source_path": "02_REGISTRY/research/sources/d0_physical_binary_return_2026-10-19/INTAKE.json",
+      "snapshot_path": "02_REGISTRY/gr_assembly/sources/d0_physical_binary_source_gate_2026-10-19/INTAKE.json",
+      "sha256": "56b4b48c1b1f4083fc5dd6a8848cb3c07c4a853c5c02b8086e58dce9d5b09ca8",
+      "bytes": 3175
+    },
+    {
+      "source_path": "02_REGISTRY/research/sources/d0_native_full128_order_readout_2026-10-19/COMPLETE_SHANNON_SOURCE.json",
+      "snapshot_path": "02_REGISTRY/gr_assembly/sources/d0_native_full128_order_readout_2026-10-19/COMPLETE_SHANNON_SOURCE.json",
+      "sha256": "3111d22f61d3c03ae7ed34c114a53ef69f1c8a9fe5b6102e197dfe2cd9be5ddd",
+      "bytes": 5061
+    }
+  ],
+  "scope": "Six exact finite source checkers for the original binary event, full128 modal history, binary information loss and AF preparation price; no compulsory full-price identity or GR closure."
+}

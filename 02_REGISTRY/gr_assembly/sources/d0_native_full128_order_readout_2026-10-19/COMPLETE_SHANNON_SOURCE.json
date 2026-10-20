@@ -1,0 +1,139 @@
+{
+  "checks": 29,
+  "complete_pointer_shannon": {
+    "base": "-sum_j q_j log(q_j)/log(phi), all 128 outcomes retained",
+    "first_source_exact": "-sum_{q_j>0} q'_j log(q_j)/log(phi); q'_j=0 at every zero base outcome",
+    "first_source_numeric_70_digits": "-0.03154678431248573344043867502610650738702849483418430629246564007631269",
+    "first_source_rational_interval": {
+      "lower": "-0.031546784312485733440439",
+      "method": "rational atanh-series log bounds with exact Q(sqrt(5)) interval arithmetic",
+      "upper": "-0.031546784312485733440438"
+    }
+  },
+  "input": {
+    "fourier_mode": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "generator": "J23=[N2,Nbar3]",
+    "grid": "L=4, h=1/4",
+    "link_role": 2,
+    "outcomes": 128,
+    "state": "I16/16",
+    "strict_base_contraction_bound": "3/5 < 1"
+  },
+  "known_original_golden_port_code": {
+    "expected_cost": "1 + Pr(port1)",
+    "first_source_exact": "9/800 - 9*sqrt(5)/1600",
+    "first_source_numeric": "-0.001327882373436317042301601886613428824353",
+    "lengths": [
+      1,
+      2
+    ],
+    "port_code_source_minus_full_pointer_shannon_source_numeric": "0.03021890193904941639813707313949307856267",
+    "scope": "port-code contribution only; not the complete 128-label Book Cost-Info action"
+  },
+  "labels": [
+    "pin_a4d_native_curved_soldered_heat.py",
+    "pin_check_native_full128_order_readout.py",
+    "only_owned_CAR_creator_and_order_loaded",
+    "left_defect_root_exact_sylvester",
+    "right_defect_root_exact_sylvester",
+    "all_128_kraus_effects_complete",
+    "all_128_first_probability_derivatives_normalize",
+    "maximally_mixed_full16_probability_sum_one",
+    "maximally_mixed_full16_source_sum_zero",
+    "positive_base_probability_group_0",
+    "positive_base_probability_group_1",
+    "each_zero_base_probability_has_zero_first_jet",
+    "positive_base_probability_group_2",
+    "positive_base_probability_group_3",
+    "positive_base_probability_group_4",
+    "positive_base_probability_group_5",
+    "positive_base_probability_group_6",
+    "positive_base_probability_group_7",
+    "positive_base_probability_group_8",
+    "original_128_outcomes_retained",
+    "86_zero_base_outcomes_retained",
+    "zero_base_probability_means_zero_Kraus_operator",
+    "probability_groups_cover_all_outcomes",
+    "blank_pointer_source_matches_parent_certificate",
+    "two_golden_ports_complete",
+    "port1_probability_is_original_complete_instrument_marginal",
+    "rational_interval_proves_full_pointer_shannon_source_negative",
+    "full_pointer_shannon_source_nonzero",
+    "known_golden_port_code_has_nonzero_source"
+  ],
+  "nonclaims": [
+    "no complete event-label code-cost map for all 128 outputs",
+    "no selected full native Cost-Info action",
+    "no physical admission of the selected link variation",
+    "no smooth second jet of the Shannon functional at zero-probability branches",
+    "no physical GR source, refinement, or closure"
+  ],
+  "pins": {
+    "02_REGISTRY/research/certificates/a4d_native_curved_soldered_heat.py": "bf13f57c902da0005634ae6834c0b4e3ffd2df1aa196a61ebc0ff3dc0351c7da",
+    "02_REGISTRY/research/sources/d0_native_full128_order_readout_2026-10-19/check_native_full128_order_readout.py": "176739372e85d8cbd2ba48f7cc28cfe508395ae84007d8462a3f502d596a87a2"
+  },
+  "probability_law": {
+    "first_source_sum": "0",
+    "groups": [
+      {
+        "multiplicity": 1,
+        "probability": "28557*sqrt(5)/5120000 + 5034167/5120000",
+        "source_sum": "42633/5120000 - 14157*sqrt(5)/5120000"
+      },
+      {
+        "multiplicity": 8,
+        "probability": "-81/1280000 + 81*sqrt(5)/2560000",
+        "source_sum": "81/320000 - 81*sqrt(5)/640000"
+      },
+      {
+        "multiplicity": 86,
+        "probability": "0",
+        "source_sum": "0"
+      },
+      {
+        "multiplicity": 7,
+        "probability": "567/5120000 - 243*sqrt(5)/5120000",
+        "source_sum": "-1701/5120000 + 729*sqrt(5)/5120000"
+      },
+      {
+        "multiplicity": 8,
+        "probability": "3969/5120000 - 1701*sqrt(5)/5120000",
+        "source_sum": "-3969/1280000 + 1701*sqrt(5)/1280000"
+      },
+      {
+        "multiplicity": 8,
+        "probability": "-567/1280000 + 567*sqrt(5)/2560000",
+        "source_sum": "567/320000 - 567*sqrt(5)/640000"
+      },
+      {
+        "multiplicity": 1,
+        "probability": "5103/160000 - 2187*sqrt(5)/160000",
+        "source_sum": "-5103/320000 + 2187*sqrt(5)/320000"
+      },
+      {
+        "multiplicity": 1,
+        "probability": "-729/40000 + 729*sqrt(5)/80000",
+        "source_sum": "729/80000 - 729*sqrt(5)/160000"
+      },
+      {
+        "multiplicity": 4,
+        "probability": "63/640000 - 27*sqrt(5)/640000",
+        "source_sum": "-63/320000 + 27*sqrt(5)/320000"
+      },
+      {
+        "multiplicity": 4,
+        "probability": "-9/160000 + 9*sqrt(5)/320000",
+        "source_sum": "9/80000 - 9*sqrt(5)/160000"
+      }
+    ],
+    "positive_outcomes": 42,
+    "sum": "1",
+    "zero_outcomes": 86
+  },
+  "status": "PASS_SCOPED_COMPLETE_FULL128_SHANNON_FIRST_SOURCE"
+}

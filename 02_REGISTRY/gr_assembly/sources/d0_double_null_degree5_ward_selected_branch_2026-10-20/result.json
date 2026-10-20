@@ -1,0 +1,21 @@
+{
+  "schema": "d0-exact-research-result/v1",
+  "status": "EXACT_NONZERO_SELECTED_BRANCH_WARD_SOURCE",
+  "carrier": "H=a*x, J=b*y, h=1 on the original six-plaquette Lorentz-star action",
+  "selected_lower_order_branch": "The registered joint RREF mixed-quartic solution with two specified [a^2*b] coframe modes, followed by the registered zero-free-parameter RREF representatives at [a^3*b] and [a*b^3].",
+  "formal_ring_orders_checked": [[3, 2], [2, 3]],
+  "lorentz_exponential_degree": 5,
+  "ward_convention": "W^a = sum_mu (E_e[a,mu](x) - E_e[a,mu](x+e_mu)); null-axis shifts vanish on this transverse carrier",
+  "ward_components": {
+    "3,2": [
+      {"internal": 0, "polynomial": "3*x/32 - 3/128"}
+    ],
+    "2,3": [
+      {"internal": 1, "polynomial": "-x/128 + 11*y/128 + 13/256"}
+    ]
+  },
+  "all_other_components_zero": true,
+  "selected_branch_degree_five_extension": false,
+  "other_lower_order_kernel_choices_tested": false,
+  "physical_gr_closure": false
+}

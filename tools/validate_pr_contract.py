@@ -195,6 +195,14 @@ def validate_event(event: dict[str, Any], root: pathlib.Path) -> None:
             raise ContractError(
                 f"ready PR #{number} must delete task brief {brief_path.relative_to(root)} before merge"
             )
+        if (root / "02_REGISTRY/gr_assembly/contract.json").is_file():
+            import gr_assembly
+            try:
+                gr_assembly.retirement_check(gr_assembly.load(root), task_id)
+            except (ValueError, OSError, KeyError) as exc:
+                raise ContractError(f"gravity completion contract: {exc}") from exc
+        elif "A4D" in task_id:
+            raise ContractError("gravity assembly completion evidence is missing")
     elif task_class == "CONTROL":
         if task is None:
             raise ContractError(f"CONTROL PR task {task_id} must remain present in manifest")

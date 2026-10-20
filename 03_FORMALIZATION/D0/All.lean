@@ -623,6 +623,9 @@ import D0.Representation.SourcePortPreparation
 import D0.Representation.TypedRoleSceneAction
 import D0.Representation.VerifierSwapGradingNoGo
 import D0.Research.GoldenCurvatureKernel
+import D0.Research.GoldenCylinderOneStepBridge
+import D0.Research.NativeHistoryActionResponse
+import D0.Research.SchurStationaryTransfer
 import D0.Research.SourceReflectionKernel
 import D0.SelfReading.PrimitiveMinimalityFromRawFunctor
 import D0.SelfReading.RawCanonicalSelfReadingFunctor
