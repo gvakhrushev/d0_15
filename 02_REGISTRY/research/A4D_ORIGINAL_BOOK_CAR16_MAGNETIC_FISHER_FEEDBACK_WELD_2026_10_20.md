@@ -191,3 +191,25 @@ Companion dependency-free Node checker (literal 33×4 spatial-CAR-grade1 transfe
 Checks: original edge count 718 and 1287 triangles; real symmetric block operator; 33-vertex×4 direct cubic trace; full16 exterior helicity multiplicities; native isometry/feedback spectral normalization; rank jump16→8; Fisher-gap equality; exact sixth-even-moment and full logdet; three even-orbit mixed shear signs. Local JS V8 reimplementation verified central identities. Remote CI or independent reviewer acceptance not claimed.
 
 No change to AGENTS, registered task, Book03/Core/claims, CI expectations or other research owners.
+
+## 9. A sharper operational NO-GO: unselected quadratic feedback loses the CENTRAL half-turn while the coherent CAR comparison does not
+
+Let F=3ell chi be the oriented triangular CAR angle. The **magnetic adjacency** spectral cubic in (2) depends on cos F, but the ORIGINAL Book-style return \(F_\chi=I−T_\chi^2\) and all its scalar spectral feedback depend only on cos² F. Thus the scalar whole-CAR16 feedback has period π in F, while the faithful coherent CAR loop comparison has period 2π.
+
+This yields a particularly sharp exact original-representation control:
+
+At F=π, the twisted 3×3 cubic is \(x^3−359x+2574=0\), whose roots are the **negatives** of the untwisted cubic roots. In particular a magnetic eigenvalue −rho0 exists. Hence F_chi has eight extra ZERO eigenvalues again, despite the based CAR link loop being exp(−π J23) (rotation by π), **not identity**. Equivalently
+
+    det(I−zF_chi) = det(I−zF_0)   for EVERY admissible 0<z<1,
+    J_chi(z)−J_0(z)=0,
+
+but the already-owned grade-one coherent reference psi=(e0+h+)/sqrt2 gives
+
+    Z_triangle(chi)=(1+e^(−iπ))/2=0,
+    1−|Z_triangle|²=1.
+
+The scalar feedback is spectrally BLIND to this central half-turn although a coherent reference is perfectly sensitive to it. This is a representation-level instance of the Book03 Q8 message that quadratic scalar response need not retain the order/central sign of an algebra-valued path history.
+
+Globally, for the declared homogeneous zone-controlled rotation family, \(\dim\ker F_\chi=8\) when \(3ell\chi\notin\pi\mathbb Z\), and \(\dim\ker F_\chi=16\) when \(3ell\chi\in\pi\mathbb Z\). The returning zero mode at odd π belongs to the **negative** Perron branch of the twisted transfer, not the continuously positive branch rho_chi appearing in the near-zero gap (4). Thus no false claim that the same positive Perron eigenbranch reopens at π.
+
+**Decisive physical consumer:** the entire scalar full-F determinant, even one constructed canonically without a free F, cannot by itself retain a faithful order/phase readout. To promote the Book source to signed Palatini/CAR, preserve the original FULL memory-algebra comparator, two-arm coherence and all paid register/controller/clock costs on the same programme. This is NOT an obstruction to D0 as a whole; it identifies the exact source of information loss.
