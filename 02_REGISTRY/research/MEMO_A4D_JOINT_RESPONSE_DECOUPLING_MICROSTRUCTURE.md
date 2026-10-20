@@ -8703,3 +8703,51 @@ H+J+R/Book/preparation/clock/work source factors through these \(f_i\),
 with a common correctly signed coefficient, on a nonempty admitted chart.
 The fixture does not supply that selector, a matter source, refinement,
 Ward identity or physical recovery. `GR_closed=false`.
+
+
+## 20 October: exact curved original-Dirac fixedRIGHT128 preparation, actual source and native link square
+
+Inpute15c19f; latestf6fd07136 context consumed without changing the original
+spatial full-Lorentz interface. The new
+[exact curved native preparation theorem](A4D_EXACT_CURVED_NATIVE_DIRAC_FIXED_RIGHT_PREPARATION_AND_SOURCE_2026_10_20.md)
+closes a real positive part of the SAME whole-price problem. On the pp-wave
+coframe, original proper links fixing the null vector q=e_- and the TRUE
+shifted positive adjoint give an exact reducing block
+`span{1,q,i_q Omega,Omega} tensor ell2(u)`, inside the FULL CAR16/site carrier.
+It is two copies of the actual1D difference Dirac, at EVERY finite spacing,
+independent of the curved H(u,x,y) profile. No continuum surrogate, new
+spectral action or survival-reconstructed spatial operator is introduced.
+
+Combine this with the ALREADY owned fixedRIGHT Euler `[Delta,rho]=0`:
+several occupied energies are allowed. Explicit Schmidt pairing supplies
+ANY prescribed Gram of rank<=4Lu. The real16 cos/sin pairs×fourgrades give
+faithful reference128; real32pairs×onlygrades0,1 also give reference128 and
+zero first R force in ALL24 independent proper-link directions. Fixed
+finite modes have uniformly bounded energy under ell=h refinement and
+zero preparation residual exactly. This is a curved fixedRIGHT section of
+the original conditional H+J+R, not just a flat seed or approximate normal.
+Additional LEFT current/clock-grade14 constraints are not silently included.
+
+The actual Rayleigh term itself has a constructive nonlinear transport
+property: for a fixed lower grade1 plane state, R=lambda+the norm square
+of `sum_r z_r v_r wedge(U_r q-q)/ell`. Thus the curved null-parallel links
+minimize this original R over all proper links at fixed preparation; the
+fixed-prep link Hessian is nonnegative. No penalty is added, timelike
+parallel transport is not imposed, and nonzero pp curvature is retained.
+This does not assert uniqueLC or positivity after preparation Schur.
+
+All16 leg/24link/3observer first sources are computed on the entire
+quartet. Lower grades give only an explicit u-leg covector; high grades
+have generally nonzero link forces. Uniform observer boost gives exact
+R(t)=exp(2t)R, so the remaining observer equation is NOT omitted. Equally
+weighted real pairs match plane-mode densities; unequal weights need their
+cross-momentum entries. These exact sources now replace an unknown R term
+in the parent's actual H/J + matter field equations.
+
+Decisive checks:3072 exact full16 component identities on48sites; strict
+full16 forward Frobenius square6152/15625<1; actual nonidentity based face;
+48 exact low-grade link zeros and a positive nonlinear addition97/14055360;
+129 independent local full-source probes, rank128 Gram and low-energy real
+modes atLu65/129, including actual moving-observer whitening. Both bounded
+independent reviews passed with scope corrections applied. No H/J field,
+whole native action selection, full geometric root or raw216 closure.

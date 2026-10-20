@@ -6027,3 +6027,36 @@ There is even an EXPLICIT exact finite ALL-ORDER OFFSHELL coframe change for COM
 **ONE drastically smaller PHYSICAL gate:** Do NOT prove entire true Book H+J+R scalar equals Palatini. After ACTUAL G0/RIGHT/FRESH/CAR/PREP/CLOCK internal Euler, test the TRUE native geometric first covector \(E_{\rm native}(q)\) on f-invisible tangents \(V\in\ker Df(q)\). If \(E_{\rm native}(q)[V]=0\) on an OPEN regular nonflat field chart, the ordinary submersion theorem locally forces the FULL effective scalar to DESCEND as some F(f), even if the history contains arbitrary extra information. Prove smooth extension across the true f=0 vacuum plus nonzero CORRECT w_x, and the above all-order vacuum GR equivalence follows IMMEDIATELY, without selecting its micro F. Inverse proof depends on Df submersion and connected fibers, not automatically at flat. The §7.102 fixed-programme/preparation screening is essential here: TRUE post-internal-stationary w must survive the prep Schur, not the raw Golden pointer derivative. A zero w from free screening FAILS the theorem. If exact vertical source descent is false, residual R_h outside f obeys true radial estimate \(|f_x|\le|DR_h[e_x]|/(2m_h)\); control original raw #216 norm of this genuine vertical source rather than fake matching of total arbitrary action.
 
 **HARD scope:** full native factorization is not presently proved; D0 observable distinguishability does NOT automatically require the fundamental scalar action to collapse to this sufficient statistic; genuinely sourced CAR/matter dynamics and continuum GR/Λ/global causality remain separately OPEN. In particular an arbitrary field-dependent Cost unit saturating Cost≥1 has ZERO native first variation at its canonical minimum, so the nonzero first geometric source MUST come from moving Info/code gains, a nonminimal chosen Cost, true book normalizers or an internally surviving programme source (not from a forbidden linear perturbation of saturated primitive Cost). This precise unique SOURCE-DESCENT + NONZERO POST-PREP w is a much shorter theorem than full native physical Action=Einstein. GR_closed=false.
+
+
+### 7.104. Positive actual-operator closure: exact curved fixedRIGHT128 preparation and the native Rayleigh link minimum
+
+The [curved native Dirac theorem](A4D_EXACT_CURVED_NATIVE_DIRAC_FIXED_RIGHT_PREPARATION_AND_SOURCE_2026_10_20.md)
+uses the original FULL positive-adjoint spatial operator, not input-only
+encoding. On the common-null pp-wave chart its quartet0/1/3/4 has an exact
+finite1D reducing block despite nonorthogonal curved proper links. The
+whole prescribed fixedRIGHT preparation Euler is `[Delta,rho]=0`, not a
+common-energy requirement. Explicit Schmidt pairing therefore solves every
+preparation row of the conditional H+J+R with reference128 on genuinely
+curved backgrounds. Fixed real occupied modes give a bounded-energy exact
+section at refinement. Growing complete AF-RIGHT rank and additional
+P1/current/clock-grade14 marginals are not inferred from this construction.
+
+A stronger surviving source mechanism is already in original R: with a
+lower grade1 preparation, `R=lambda+||sum z_r v_r wedge(U_r q-q)||²/ell²`.
+The existing curved null-parallel links minimize it at FIXED preparation;
+its link Hessian is positive semidefinite. Lowergrades0/1 together permit
+rank128 with all24 first Rayleigh link rows0. This genuine price square
+allows null-parallel curvature and adds no independent stabilizer. It is
+not uniqueLC selection or the full jointly eliminated H+J+R Hessian.
+
+The remaining R source is known, rather than frozen: explicit u-coframe
+force and observer force, with exact uniform boost R(t)=exp(2t)R. Hodge
+partners3/4 generally contribute link force; coherences do not cancel it.
+Whole H/J and actual controller/history price still have their own rows.
+Consume the exact prep section and these sources directly in that joint
+problem, retaining the full spectral complement and global normalizer.
+The new paid-code/future-MDL/Spin owners are complementary source inputs;
+no SO-exterior/Spin or action-selection identification is made here.
+Exact full16 and full-source checks and two independent reviews pass.
+PhysicalGR/raw216 remain open.

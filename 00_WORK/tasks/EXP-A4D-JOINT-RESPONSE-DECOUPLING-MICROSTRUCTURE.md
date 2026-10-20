@@ -2188,3 +2188,22 @@ native price or structural operation supplies it. Smallest decisive check:
 original fullStep coherent output/Gram, zero prep Schur, and original33/718
 clock Info rows. PASS26, independent read-only review; full action selection,
 actual tangent admission, refining root and raw216 remain open.
+
+
+### 20 October: exact curved actual-Dirac preparation and complete Rayleigh source
+
+SameDraft334/native-programme-v1; positive continuation on actual original
+full-Lorentz d+d^dagger, inpute15c19f and contextbea09e331. No new task.
+Root owns `A4D_EXACT_CURVED_NATIVE_DIRAC_FIXED_RIGHT_PREPARATION_AND_SOURCE_2026_10_20.md`,
+`sources/d0_curved_native_preparation_2026-10-20/`, append-only primary/strategy.
+Consumer: curved whole-HJR preparation/source step after actual operator
+placement, then its remaining H/J coframe/link/observer equations. Exact
+null-block intertwining and fixed-complete-Gram Euler supply reference128
+at finite spacing; actual R has zero lower-grade link source and its own
+nonnegative link square. Carrier:full site×CAR16×reference128, counting
+positive Hilbert/whitened Gram; HS prep norm, independent16leg/24properlink/
+3observer source. Smallest decisive check:every full16 finite component,
+all proper-link source directions, prescribed Gram and real occupied
+bounded-energy modes. Read-only independent operator/source reviews are
+consumed. Retain physical admission/work, all H/J rows, actual clock/current
+constraints, complement/normalizer, and original raw216 as open premises.
