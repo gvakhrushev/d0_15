@@ -71,6 +71,58 @@ ok(zero===718+(7722-minusThree)&&positive===minusThree,
 const sameRawCostAllEdges=edges.every(([u,v])=>p===p);
 ok(sameRawCostAllEdges&&Math.abs(w2*718+w3*7722-1)<1e-12,
    "Spin center sheet does NOT alter original scalar Book Cost/Info/Perron source at all");
+
+// PROSPECTIVE physical TEST selection versus passive raw Book clock:
+// The two candidate ORIGINAL hypotheses (all+ Spin sheet vs one
+// central edge (A0,C0) flipped) are KNOWN in a Popperian contrast.
+// The shortest root ABC triangle [0,9,20,0] distinguishes them.
+// A passive randomly sampled 2/3 original raw Book history often
+// samples other paths; its unconditional true bright probability is
+// far smaller. This is an observational decision BEFORE sampling;
+// true native G0 task-conditioned path selection/price is NOT proved.
+//
+// Under HONEST independent reset/replay, the expected number of
+// complete attempted experiments to see an actual BRIGHT refutation
+// is 1/q for each scheme.  This is NOT a comparison of complete
+// physically PAID costs unless the original root-directed query
+// and random path sampler have equal true Cost/Info+preparation prices.
+const exactOriginalTriangle=hol([0,9,20,0],true);
+ok(equals(exactOriginalTriangle,minus),
+   "original shortest targeted ABC loop genuinely tests THE declared pair of distinct Spin sheet hypotheses");
+const targetedBright=4*p**3,passiveBright=bright,
+      expectedTargeted=1/targetedBright,
+      expectedPassive=1/passiveBright,
+      hazardRatio=targetedBright/passiveBright;
+ok(hazardRatio>140&&hazardRatio<150 &&
+   expectedPassive>150&&expectedTargeted<1.06,
+   "same original Golden comparator distinguishes known spin alternatives >140 times faster in candidate targeted-vs-passive loop ATTEMPTS");
+const requestedRiskLevels=[.1,.01,1e-6,1e-9];
+const originalProspectiveTestBudget=requestedRiskLevels.map(alpha=>{
+ const targetedN=Math.ceil(Math.log(alpha)/Math.log(1-targetedBright));
+ const passiveN=Math.ceil(Math.log(alpha)/Math.log(1-passiveBright));
+ ok(Math.pow(1-targetedBright,targetedN)<=alpha &&
+    Math.pow(1-passiveBright,passiveN)<=alpha &&
+    (targetedN===0||Math.pow(1-targetedBright,targetedN-1)>alpha) &&
+    (passiveN===0||Math.pow(1-passiveBright,passiveN-1)>alpha),
+    "true original 8440 Book random vs M1 targeted 3tick Golden hypothesis test exact least independent trials for risk "+alpha);
+ return {risk:alpha,targeted_ABC_independent_attempts:targetedN,
+         passive_all_Book_2_3_independent_attempts:passiveN};
+});
+console.log("PROSPECTIVE_TEST",JSON.stringify({
+  all_book_raw_golden_bright_probability:passiveBright,
+  shortest_ABC_directed_golden_bright_probability:targetedBright,
+  expected_passive_book_samples_to_bright:expectedPassive,
+  expected_targeted_ABC_samples_to_bright:expectedTargeted,
+  probability_hazard_ratio:hazardRatio,
+  risk_levels:originalProspectiveTestBudget,
+  critical_premises:[
+    "the two rival Spin-sheet hypotheses and a distinguishing ABC context are part of the ACTUAL original test task",
+    "G0 physically admits controlled preparation of that ABC path and its Q8/GOLDEN port",
+    "physical prices of passive random-path prep and targeted path prep cannot be compared by success probabilities alone",
+    "all independent retries and failure/clock resources are charged"
+  ],GR_closed:false
+}));
+
 console.log(JSON.stringify({
  original_graph_vertices:33,original_directed_edges:edges.length,
  true_native_backtracks:two.length,true_native_triangles:three.length,
