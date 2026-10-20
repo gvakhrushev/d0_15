@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "command": "PYTHONPATH=/tmp/d0_native_flag_deps python3 -O -B -W error check_null_first_source.py",
+  "replay_scope": "new first-source substitution and complete reporter only; no old all40 theorem replay",
+  "exact_checks": 768,
+  "files": {
+    "proof.md": "b1e7d9cdd81605e0b7d532ac8a3bfc682e42806367ad5e109324a5812d7d9e50",
+    "check_null_first_source.py": "2d35486c26415d2b667ebc61acded6d0889049d3d481f0c37f36f3601b478ef4",
+    "RESULT.json": "b762e1e4892bdd7a1895dac18ade765aa6e8c98111a4e5f43c47fc26865646a7",
+    "INPUTS.json": "1ef335c5b048bf01102f3fda9e43bbb2521d97be1567ea49f8bf3c8e965ea166"
+  }
+}

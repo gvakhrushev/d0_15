@@ -1,0 +1,80 @@
+{
+  "source_commit": "acfe3e19ecda5f2dbc678ec52e2f7cd0f3e639a1",
+  "files": [
+    {
+      "path": "01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md",
+      "snapshot": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/inputs/01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md",
+      "sha256": "668fc904b0585cc7fd5175babead5225c22051422c9c64e197d7b0d42d225342"
+    },
+    {
+      "path": "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md",
+      "snapshot": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/inputs/01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md",
+      "sha256": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d"
+    },
+    {
+      "path": "01_BOOKS/BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md",
+      "snapshot": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/inputs/01_BOOKS/BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md",
+      "sha256": "592bbbb1dae9cc599df2eef9cabf117b19f8566d755ad072b77beb04624271d7"
+    },
+    {
+      "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_quadratic_cartan_2026-10-19/arbitrary_brinkmann_all40.md",
+      "snapshot": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/inputs/02_REGISTRY/gr_assembly/sources/d0_double_null_quadratic_cartan_2026-10-19/arbitrary_brinkmann_all40.md",
+      "sha256": "8dbca8ff9a4567a2baf216357b5d3ffa2d217281ced4e5d0e535257db2f5e83e"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_COMPLETE_HISTORY_INFORMATION_SCALE.md",
+      "snapshot": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/inputs/02_REGISTRY/research/A4D_COMPLETE_HISTORY_INFORMATION_SCALE.md",
+      "sha256": "6a14686fcaab0b48b78b8ff4f784d989ea3ead1edf0ee28d48b7c20f76c4a7ed"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_COMPLETE_RECORD_CHANNEL_AND_NATIVE_COST_SOURCE.md",
+      "snapshot": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/inputs/02_REGISTRY/research/A4D_COMPLETE_RECORD_CHANNEL_AND_NATIVE_COST_SOURCE.md",
+      "sha256": "2128009802edff3e111a26961f050320fd878d7412ed93bfad5d5c9e4219db79"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_EXACT_GR_COMMON_CARRIER_HJR_SCALE_SOURCE_GAP_2026_10_20.md",
+      "snapshot": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/inputs/02_REGISTRY/research/A4D_EXACT_GR_COMMON_CARRIER_HJR_SCALE_SOURCE_GAP_2026_10_20.md",
+      "sha256": "c5b2f1021e8da573221f4327bacae67934470a368966456bf328b19fc51555fb"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_FULL128_PORT_SCORE_SUFFICIENCY_AND_CODE_SOURCE_RECOVERY_2026_10_19.md",
+      "snapshot": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/inputs/02_REGISTRY/research/A4D_NATIVE_FULL128_PORT_SCORE_SUFFICIENCY_AND_CODE_SOURCE_RECOVERY_2026_10_19.md",
+      "sha256": "f64e04fa9f3d27a604463561fa3d8c1c997e55d3c55badd91a6b4198ce0f9f4e"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md",
+      "snapshot": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/inputs/02_REGISTRY/research/A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md",
+      "sha256": "a0a8a0b7389c7a6120ebbe402d111bf55cd2a00730403a00ffceca73548e7915"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_PROSPECTIVE_BOOK_FINITE_FUTURE_LAW_Q8_VERIFICATION_2026_10_20.md",
+      "snapshot": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/inputs/02_REGISTRY/research/A4D_PROSPECTIVE_BOOK_FINITE_FUTURE_LAW_Q8_VERIFICATION_2026_10_20.md",
+      "sha256": "bd3f1ab51599b0efe17af03e40c59a606200cd1912f801e4bd57e0eb77a6b014"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_RETAINED_HISTORY_READOUT_AND_NORMALIZER.md",
+      "snapshot": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/inputs/02_REGISTRY/research/A4D_RETAINED_HISTORY_READOUT_AND_NORMALIZER.md",
+      "sha256": "98b02b22f8678be211f555c2ec0c1d8ac3d2cc43f7dd50b002b8e1424460407b"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_record_generated_heat_v8_2026-10-14/RESULT.md",
+      "snapshot": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/inputs/02_REGISTRY/research/sources/d0_record_generated_heat_v8_2026-10-14/RESULT.md",
+      "sha256": "f7ea30d997a58fa4e608d4403acae5f5e3d7e5da45116f9a7c3f62be5e99115c"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_same_history_price_composition_2026-10-20/clock_source_reduction.md",
+      "snapshot": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/inputs/02_REGISTRY/research/sources/d0_same_history_price_composition_2026-10-20/clock_source_reduction.md",
+      "sha256": "7ca9575697d5de7c78794bc5d2879f6c2292caadb4f75334d0e1479fd1287069"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_same_history_price_composition_2026-10-20/paid_port_history.md",
+      "snapshot": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/inputs/02_REGISTRY/research/sources/d0_same_history_price_composition_2026-10-20/paid_port_history.md",
+      "sha256": "ef69c2052237fbe8e916acf16691f9b14b4c1c2465a7837e838db2baeb95449d"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_same_history_price_composition_2026-10-20/prepared_price_feedback.md",
+      "snapshot": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/inputs/02_REGISTRY/research/sources/d0_same_history_price_composition_2026-10-20/prepared_price_feedback.md",
+      "sha256": "73bf64d8c05b2624e092d851cab5f11019fd886c74d6b332ed97f4d4f4d4d434"
+    }
+  ]
+}
