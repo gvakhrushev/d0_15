@@ -48,8 +48,8 @@ const codePair=(q,j)=>{
 const goldenMark=u=>Math.sqrt(u); // kept for independent original owner comparison
 const priceQuantum=herald*p**4/24;
 function oddMeasured(P,wp,wm){
- const q=outcomes(P),qm=outcomes(inv(P));
- const plusJoint=q.map(x=>wp*x),minusJoint=qm.map(x=>wm*x);
+ const q=outcomes(P),qReverse=outcomes(inv(P));
+ const plusJoint=q.map(x=>wp*x),minusJoint=qReverse.map(x=>wm*x);
  const plusMarginal=plusJoint.reduce((x,y)=>x+y,0),
        minusMarginal=minusJoint.reduce((x,y)=>x+y,0);
  const qp=plusJoint.map(x=>x/plusMarginal),
