@@ -42,6 +42,28 @@ assert four_rows_lower > F(1,4*100000000)
 print("ORIGINAL full-CAR16 H+J source: >= 3/128000000 -1280/(79L^4), all L>=256")
 print("Exact uniform normalized bound:",whole_lower, "=",float(whole_lower))
 print("All four independent leg-row bounds:",four_rows_lower, "=",float(four_rows_lower))
+# Fourier-free flat ORIGINAL full-CAR16 trace control with genuinely open
+# (truncated unilateral) site shifts. One role has CAR occupancy traces 8+8.
+# Tr_site((S-I)^*(S-I)) = 2N-N/L (open), or 2N (periodic).
+for L_test in (2,3,4,7):
+    shift=[[int(j==i+1) for j in range(L_test)] for i in range(L_test)]
+    gramtrace=sum((shift[k][j]-int(k==j))**2
+                  for k in range(L_test) for j in range(L_test))
+    assert gramtrace==2*L_test-1
+    # Full 4D site N=L^4, full16 CAR, four role blocks.
+    n_sites=L_test**4
+    full_trace_one_role=16*n_sites*(2-F(1,L_test))
+    assert full_trace_one_role == 16*(2*L_test-1)*L_test**3
+
+# Lower feedback in one leg from 16(2-1/L) original CAR trace:
+# J'_r/N >= 128 z (3/4) 16(2-1/L) /500000
+#          = (3/512000000)*(1-1/(2L)).
+open_role_lower=F(3,512000000)*(1-F(1,2*lmin))-F(320,79*lmin**4)
+assert open_role_lower == F(406303,4*20709376000000)
+assert open_role_lower > F(49,10**10)  # >4.9e-9
+assert 4*open_role_lower>F(196,10**10)  # >1.96e-8
+print("Four-role source lower bound on OPEN/MIXED shifted-adjoint CAR16 boxes:",
+      open_role_lower, "=",float(open_role_lower))
 print("All-stationary-preparation R envelope: nonnegative PSD Rayleigh source")
 print("By C1 continuity: no stationary punctured GR family through this flat prepared base")
 print("ALL EXACT RATIONAL / SOURCE GATES PASSED")
