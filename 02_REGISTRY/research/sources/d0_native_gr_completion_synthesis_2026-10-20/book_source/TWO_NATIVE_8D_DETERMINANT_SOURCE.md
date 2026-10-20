@@ -514,3 +514,44 @@ the paid detector's different Info law proves it. The
 [review receipt](PRIMARY_CAR_PAID_RETURN_PRICE_REVIEW.md) pins the
 bounded application. Native Book selection, actual reachability,
 absolute normalization and the original GR obligations remain open.
+
+## 16. Original stopped continuation: positive value, negative preparation source
+
+The [stopped RIGHT128 application](PRIMARY_STOPPED_RIGHT_CONDITIONAL_SOURCE.md)
+now removes §15's one-round source restriction for the actual cap2
+first-nonblank execution. All255 declared leaves, terminal abort,
+CAR16,256 sites and original RIGHT128 are retained. The actual blank
+amplitudes are propagated through the original complete instrument;
+their conditional RIGHT prior is not reset to uniform. Fresh faithful
+support certificates cover all64 new active leaves without a cutoff.
+
+The conditional-entropy angle coefficient lies between
+-1.267648514875822e-6 and-1.2676485137820654e-6. Its increment over the
+one-round coefficient is also negative. Thus constant outside-code
+work gives an actual finite Golden-return decrease for this cap2
+component, subject to the same supplied-controller and complete-price
+conditions. The new abort coefficient is positive, between8.844476767314231e-8
+and8.844476767331171e-8: the local decreasing tangent increases failure.
+A genuine active abort tolerance can therefore rule out that local
+alternative without recounting instruction code as work.
+
+Separately, the original blank dominates every outcome block on the
+conditional RIGHT support. For every finite stopped cap,
+A_(j+1)-A_j>=s_j log_phi(s_j/s_(j+1))>=(s_j-s_(j+1))/ln phi>0
+on this non-null primary input. This proves positive entropy price for
+extra queries under the matched-gain contract. With an actually supplied
+task tolerance and nondecreasing outside work, the earliest admissible
+cap is optimal within this ordered cap family. Neither that task nor
+the work/Info convention is physically selected by the theorem.
+
+These exact value and source applications are distinct. They supply
+no all-cap source sign, infinite-horizon derivative or uniform mesh
+bound, no compulsory continuation law and no same-initial controller
+admission. The review packet pins the changed calculation; full native
+Book/GR and raw216 remain open.
+
+The original stopped-task attainment theorem fixes the initial state
+and instrument and permits continuation of those rounds. CAR preactuation
+is outside that class; locally its nonzero abort source also prevents replacing
+the same designated stopped channel by the actuated one. A broader
+same-initial control task still needs its actual admission and valuation.

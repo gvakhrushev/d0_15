@@ -223,3 +223,14 @@ are not metric-source or refinement bounds. Original Book memory/
 Info/normalization, compulsory execution, field writing/stationarity,
 native GR and raw216 remain open. The [review receipt](PRIMARY_CAR_PAID_RETURN_PRICE_REVIEW.md)
 records the exact scope and evidence; no new task or acceptance is added.
+
+The [subsequent stopped-source application](PRIMARY_STOPPED_RIGHT_CONDITIONAL_SOURCE.md)
+now computes this decrease test also for the ORIGINAL first-nonblank cap2
+experiment with full RIGHT128. It retains the actual blank preparation,
+its moving conditional prior and terminal abort. The conditional price's
+leading source is negative, while the abort-probability source is positive;
+an actual task tolerance therefore remains part of the paid comparison.
+For every finite cap the same original blank additionally gives the
+strict continuation bound A_(j+1)-A_j>=(s_j-s_(j+1))/ln phi>0 when DC!=0.
+This is an entropy-component charge, not a primitive-letter work floor.
+The one-round and cap2 source results do not imply the sign for all caps.
