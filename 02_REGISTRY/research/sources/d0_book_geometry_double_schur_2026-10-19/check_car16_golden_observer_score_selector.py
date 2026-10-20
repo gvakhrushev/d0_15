@@ -63,3 +63,17 @@ print('PASS finite rational observer witness: mark invariant but total success v
 print('PASS zero-base unmarked opens ~p²t²/2; Shannon is NOT C² at the flat cell')
 print('PASS scalar minimal Julia feedback cannot read compact rotation curvature')
 print('FIREWALL: mathematical CAR16 Julia/Choi; Book03/full128 physical selection open; GR_closed=false')
+
+# Open-image proof of analytic observer-free event-score factorization:
+# let r=sinh(a)^2>=0, z=tan(theta/2) (finite rational rotation chart).
+r=s.symbols('observer_boost_squared',positive=True)
+mm=p*p/(1+z*z)**2
+gg=p*p*(1+2*r*z*z/(1+z*z))**2
+det_obs=s.factor(s.diff(mm,z)*s.diff(gg,r))
+assert s.simplify(det_obs+16*p**4*z**3*(1+2*r*z*z/(1+z*z))/(1+z*z)**4)==0
+assert det_obs.subs({z:s.Rational(1,5),r:s.Rational(9,16)})!=0
+# Additivity of independent marked weights + original Book Golden unit
+# fixes their UNIQUE continuous logarithmic score.
+assert s.simplify(-s.log(p*p)/s.log((1+s.sqrt(5))/2)-2)==0
+print('PASS finite observer (theta,boost) event image has nonzero Jacobian: analytic scores independent of observer locally factor through marked outcome')
+print('PASS independently multiplicative marked event Golden-log price has flat cost 2')
