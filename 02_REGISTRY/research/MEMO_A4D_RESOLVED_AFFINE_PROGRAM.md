@@ -112,6 +112,28 @@ D0/All. Direct literal Fin4 complex-amplitude/observable tests and
 real Q8-center-to-Golden-order tests are part of #334. No
 new action/counterterm/CAR spin lift or \`GR_closed\` claim.
 
+**Direct ORIGINAL Q8 forward-controller strengthening (20 Oct).**
+OrderMemoryControl.forward_order_word already closes the mathematical
+sign-actuation capability: its original 8-gate chronological word
+commonJQ^3 * localIQ^3 * commonJQ * localIQ equals the exact Q8
+relativeSignQ=diag(I4,-I4), while commonJQ^4 * localIQ^4=I8;
+both words use exactly FOUR local-i and FOUR common-j operations.
+New Lean originalQ8CenterForwardProgram_plus/minus and
+originalQ8CommutatorForwardProgram identify these two EXISTING operator
+words with the typed Omega8Center qONE/qNEG source. The original
+FiniteProtocolClock gives a reversible 16-stage internal clock and
+retained program label; the already-owned
+04_CERTIFICATES/order_memory_control_verify.py proves an autonomous
+two-program 512-real-coordinate model with 15 forward actions
+(14 comparator gates + registration), conditional on supplied local-i
+routing and blank record. An independent original8x8/Golden port
+replay proves zero versus 4p^3 response for each Spin basis vector.
+Therefore the mathematical Q8 CENTER SIGN GATE and finite programme
+clock were ALREADY native-owned; remaining G0 physics is exactly the
+admission/clock/work/Book-cost natural transfer of a REAL retained
+ABC scene central memory bit to its internal program selector, not
+construction of another free physical gate. No new GR theorem.
+
 ### Route update — nonlinear completion is no longer the open step
 
 For the already-built golden-AF geometric branch, the all-order nonlinear
