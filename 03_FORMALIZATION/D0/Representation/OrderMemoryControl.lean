@@ -738,4 +738,52 @@ theorem nativeQ8EightGateActualWorkAtLeastEight
   simpa [hl] using hb
 
 
+
+/-! ## An exact countermodel to endpoint-only Book Cost, even at S_min
+
+The already-defined canonical primitive rule from EndogenousActionQuantum
+prices each actual NONIDENTITY state change at exactly one unit.
+Apply that existing rule to the concrete Q8 gate-operator prefixes,
+retaining each executed step. No extra code price, clock rate or
+fitted coupling. The 2- and 8-gate words have the same final operator,
+but canonical ACTUAL executed-history costs 2 vs 8.
+
+This establishes that an endpoint-only scalar function of the final
+unitary is insufficient to recover even the most economical native
+primitive history Cost if the source history/provenance is among the
+admitted retained distinctions. Full Book03 Cost−Info, preparation,
+observer/clock, failure-work and matter terms remain different objects.
+-/
+
+/-- Canonical Cost=1 on every genuinely changed original Q8 operator
+prefix, identity Cost=0, in the already-established endogenous
+ActionProtocol convention. This is the exact native MINIMAL witness
+price, not the complete physical Book03 programme price. -/
+def nativeQ8CanonicalExecutedAction (word : List Bool) : ℕ :=
+  ((nativeQ8ExecutionPairs word).filter
+    (fun xy => xy.1 ≠ xy.2)).length
+
+theorem nativeQ8CanonicalPriceTwoVsEight :
+    nativeQ8CanonicalExecutedAction [true,true] = 2 ∧
+    nativeQ8CanonicalExecutedAction originalQ8OrderWord = 8 := by
+  native_decide
+
+/-- Same full final SO/Q8 operator, different exact canonical original
+executed-history primitive price; endpoint-only dynamics cannot
+recover both costs even under the simplest D0 minimal rule. -/
+theorem nativeQ8CanonicalActionCannotFactorThroughEndpoint :
+    ¬ ∃ f : M8Q → ℕ,
+        (∀ w : List Bool,
+          f (nativeQ8ChronologicalWord w) =
+            nativeQ8CanonicalExecutedAction w) := by
+  rintro ⟨f, hf⟩
+  have ha := hf [true,true]
+  have hb := hf originalQ8OrderWord
+  rw [originalQ8TwoForwardGatesEqualEightChronology] at ha
+  have hcost := nativeQ8CanonicalPriceTwoVsEight
+  rw [hcost.1] at ha
+  rw [hcost.2] at hb
+  omega
+
+
 end D0.Representation.OrderMemoryControl
