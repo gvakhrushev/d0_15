@@ -82,7 +82,7 @@
       "scope": "Original full complex divisor classification; phase-count shortcut is refuted"
     },
     "word-jet-v1": {
-      "carrier": "Ordered primitive words with a possibly moving intertwiner",
+      "carrier": "Finite ordered words in one ring with a possibly different intertwiner at each vertex; physical typed instantiation remains separate",
       "action": "Existing primitive maps; no new physical action",
       "variations": "Exact telescoping residual and first jets",
       "source": "Explicit branching/comparison hypotheses; no physical stress assertion",
@@ -833,7 +833,12 @@
         }
       ],
       "consumer": "native_sector",
-      "scope_level": "family"
+      "scope_level": "family",
+      "hypotheses": {
+        "algebraic_domain": "The exact identities quantify over a ring R, a finite ordered word of pairs (V,U), and an arbitrary intertwiner at each vertex. First jets are the defined noncommutative value/derivative ring Jet R.",
+        "supplied_norm_bounds": "Value estimates require NormedRing and NormOneClass, step contractions and supplied residual bounds. The derivative estimate additionally requires nonnegative M and epsilon, supplied step/residual derivative bounds, and one shared parameter-dependent intertwiner; no derivative bound for unequal vertex intertwiners is asserted.",
+        "branch_and_comparison": "Branched/comparison corollaries require separately supplied labels, preparations, tests and carrier/endpoint agreement propositions. No word residual proves those propositions, postselection normalization or physical primitive admission."
+      }
     },
     {
       "id": "mv_tangent_span",
