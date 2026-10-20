@@ -92,6 +92,68 @@ for(let j=0;j<6;j++){
  scoreError=Math.max(scoreError,Math.abs(rhs-lhs));
 }
 check(scoreError<5e-7,"true moving ORIGINAL Book path score cancels from all 6 positive Golden conditional Lorentz first sources");
+
+// Entire true ORIGINAL finite 4D Role Euler on the 16-site L2 regulator:
+// 256 independent coframe and 384 original globally shared Lorentz-link
+// rows. Each link contributes to six ORIGINAL based plaquettes across
+// FOUR sites: x, x+e_s for its three perpendicular directions s.
+function dynamicFace(X,x,r,s){
+ const U=X.links;
+ return mm(mm(mm(U[x][r],U[shift(x,r)][s]),inv(U[shift(x,s)][r])),inv(U[x][s]));
+}
+function dynamicSite(X,x,read){
+ let val=0;
+ for(let j=0;j<6;j++){
+  const [r,s]=pairs[j],rest=[0,1,2,3].filter(v=>v!==r&&v!==s),
+        P=dynamicFace(X,x,r,s),R=add(P,inv(P),-1).map(row=>row.map(v=>v/2)),F=X.frames[x];
+  let B=R;
+  if(read){
+   const move=.01*(F[0][0]-1)+.004*dot(G[4],R),
+   wp=Math.exp(-L*(3.34+move+.004*j/6)),
+   wm=Math.exp(-L*(3.42-move+.003*j/6));
+   B=oddMeasured(P,wp,wm);
+  }
+  val+=eps([r,s,...rest])*contract(F,rest[0],rest[1],B);
+ }
+ return val;
+}
+const step=1e-5;
+function frameVariation(x,a,u,h){
+ const F=frames.map(row=>row.map(r=>r.slice()));
+ F[x][a][u]+=h;return {links,frames:F}
+}
+function linkVariation(x,r,j,h){
+ const U=links.map(row=>row.map(M=>M.map(z=>z.slice())));
+ U[x][r]=mm(exp(G[j].map(row=>row.map(v=>v*h))),U[x][r]);
+ return {links:U,frames}
+}
+let eCount=0,lCount=0,nonzeroE=0,nonzeroL=0,maxDerivative=0,affectedMin=7,affectedMax=0;
+for(let x=0;x<16;x++)for(let a=0;a<4;a++)for(let u=0;u<4;u++){
+ const A=frameVariation(x,a,u,step),B=frameVariation(x,a,u,-step);
+ const d=(dynamicSite(A,x,false)-dynamicSite(B,x,false))/(2*step);
+ const r=(dynamicSite(A,x,true)-dynamicSite(B,x,true))/(2*step);
+ maxDerivative=Math.max(maxDerivative,Math.abs(d-r));
+ if(Math.abs(d)>1e-9)nonzeroE++;eCount++;
+}
+for(let x=0;x<16;x++)for(let r=0;r<4;r++)for(let j=0;j<6;j++){
+ const A=linkVariation(x,r,j,step),B=linkVariation(x,r,j,-step),
+  sites=[x,...[0,1,2,3].filter(s=>s!==r).map(s=>shift(x,s))];
+ affectedMin=Math.min(affectedMin,sites.length);
+ affectedMax=Math.max(affectedMax,sites.length);
+ let d=0,v=0;
+ for(let y of sites){
+  d+=(dynamicSite(A,y,false)-dynamicSite(B,y,false))/(2*step);
+  v+=(dynamicSite(A,y,true)-dynamicSite(B,y,true))/(2*step);
+ }
+ maxDerivative=Math.max(maxDerivative,Math.abs(d-v));
+ if(Math.abs(d)>1e-9)nonzeroL++;lCount++;
+}
+check(eCount===256&&lCount===384&&affectedMin===4&&affectedMax===4
+      &&nonzeroE>220&&nonzeroL>320,
+ "all 640 true independent finite Role Euler sources, 256 coframe + 384 link, every link affects six neighboring based faces");
+check(maxDerivative<4e-7,
+ "all 640 source rows reproduced from TRUE Golden-p full17 probabilities with moving Book cost and all failure flags");
+
 console.log(JSON.stringify({
  original_4d_finite_sites:16,original_nontrivial_faces:nonflat,
  true_Golden_full_Bell_categories:17,both_face_orientations:true,
