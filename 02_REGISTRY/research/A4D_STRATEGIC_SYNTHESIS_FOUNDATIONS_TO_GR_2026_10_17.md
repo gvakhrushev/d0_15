@@ -5970,3 +5970,41 @@ new owner. Its exact control gives a nonzero `-1` correction at fixed
 original coframe, but zero mixed block in the dressed coframe. Identifying
 the operationally fixed coframe is essential; the change of variables
 alone does not discharge the physical fixed-metric response theorem.
+
+
+### 7.102. Input encoding is not free constitutive dynamics: solve preparation before importing its geometric source
+
+The [fixed-programme screening theorem](A4D_NATIVE_PRICE_ENCODER_SCREENING_AND_CLOCK_COMPLETION_TEST_2026_10_20.md)
+removes a dangerous implication in the recent fixed-word/input-source route.
+On the complete pure fixed-jointRIGHT manifold every encoded tangent has
+an explicit LEFT skew lift. If that lift belongs to the actual free prep
+domain and the whole programme is fixed, `D_g F=D_p F B`. At TRUE prep
+stationarity the whole price S=A+F therefore has `D_g S=D_g A-D_p A B`.
+With no such independently derived preparation/work price, the apparent
+geometric source is screened; on a regular orbit chart all-order reduced
+action is constant and the genuine preparation Schur is zero. Fixing even
+the COMPLETE oldRIGHT/reference Gram does not prevent this compensation.
+
+The exact original Golden fullStep witness has all four positive pointer
+events, all coherent output coordinates and fixedRIGHT retained. Its
+Cost-minus-pointer-Info test price is a strict prep minimum, with nonzero
+unreduced Hessian4 but exactly zero reduced response. Pointer Info is not
+identified with the compulsory D0 law. Literal H+J+R with a structurally
+field-dependent Delta/SELECT/cut is outside the input-only hypothesis;
+its explicit operator sources must still be computed. Mathematical gate
+universality does not admit all LEFT tangents for free. Keep true physical
+constraints and the complete A; otherwise source transfer is circular.
+
+A second same-native-carrier check kills the tempting scalar completion
+`Book Perron + rooted 3/2 clock contrast`: at canonical Cost1 its nine
+root-zone Info derivatives remain exactly `-pi_j<0` everywhere. The full
+clock contrast's only stationary aggregate shapes a=b=c are maxima, with
+natural Hessian `-(4/9)(I-11^T/3)`. A correct uniform +1/-1 cancellation
+is therefore insufficient for full Euler or MDL selection. No upstream
+clock observable is promoted to a physical action.
+
+Consume this result in the one-run constitutive gate by computing the
+actual covector `D_g A-D_p A B` and explicit channel dependence; do not
+repeat tomography, Hodge realization, scalar coframe dressing or fixed-prep
+Einstein matching as substitutes. Exact PASS26 and independent derivations
+supply the scoped route correction. Full physical GR/raw216 remain open.

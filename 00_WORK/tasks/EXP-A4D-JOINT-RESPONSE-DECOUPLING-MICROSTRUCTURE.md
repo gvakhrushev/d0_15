@@ -2169,3 +2169,22 @@ Start from current `main`; run `python tools/task_lifecycle.py start EXP-A4D-JOI
 ## Chat handoff
 
 Return the execution PR number, the exact theorem/no-go verdict, the validated response norm and source convention, the certificate/guard results, and the single smallest remaining blocker if the target is not closed.
+
+
+### 20 October: fixed-programme preparation screening and full clock-source test
+
+Same Draft334, native-programme-v1, input94c5848d. Continue the physical
+constitutive-source obligation, not a new execution. Own new
+`A4D_NATIVE_PRICE_ENCODER_SCREENING_AND_CLOCK_COMPLETION_TEST_2026_10_20.md`,
+`sources/d0_native_price_screening_2026-10-20/`, and append-only primary/
+strategy intake. Two read-only independent premises are consumed: exact
+fixed-jointRIGHT LEFT tangent lift/native Golden Schur, and original718
+rooted/all-clock pressure Euler. The exact theorem retains the actual
+prep/work action, admitted tangent span, pure fixed-rank domain and fixed
+complete channel; no unconditional D0 no-go or new physical price. Parent
+substitution: fixed-word moving-input C2 transfer does not preserve a
+geometric force after unconstrained prep stationarity unless its real
+native price or structural operation supplies it. Smallest decisive check:
+original fullStep coherent output/Gram, zero prep Schur, and original33/718
+clock Info rows. PASS26, independent read-only review; full action selection,
+actual tangent admission, refining root and raw216 remain open.

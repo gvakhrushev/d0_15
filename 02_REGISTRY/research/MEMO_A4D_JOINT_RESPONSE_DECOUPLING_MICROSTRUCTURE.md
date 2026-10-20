@@ -8633,3 +8633,45 @@ This excludes only this candidate's regular first-slow lift. It is not a
 nonlinear no-go for #232, not a response-gap sequence, and not the task's
 `A4D-JOINT-MICROSTRUCTURE-METRIC-RESPONSE-NOGO` terminal. Higher-order or
 nonregular continuations and the normalized response terminal remain open.
+
+
+## 20 October: a fixed-word input source can disappear under its own preparation equation
+
+Input `94c5848d`; latest clock/Weyl carrier results retained. The new
+[encoder/price source theorem](A4D_NATIVE_PRICE_ENCODER_SCREENING_AND_CLOCK_COMPLETION_TEST_2026_10_20.md)
+changes the actual compiler-to-constitutive parent step, rather than adding
+another readout atlas. For a pure preparation with fixed COMPLETE jointRIGHT
+Gram, every smooth encoded tangent has an explicit skew LEFT lift, including
+singular support. If those tangents are physically free and geometry enters
+ONE fixed full programme only through this input, genuine prep stationarity
+forces `D_g S=D_g A-D_p A B`, where A is its independently charged native
+preparation/work/actuation price. Setting A constant gives ZERO reduced
+geometric source, at all orders on a regular preparation chart. A nonzero
+fixed-prep Palatini pullback therefore cannot be declared the full dynamics.
+
+The original literal Golden fullStep gives an exact strict-minimum witness:
+full retained Cost-minus-pointer-Info Hessian is `4[[1,1],[1,1]]` in natural
+units; the same preparation Schur is zero and the exact branch u=-x preserves
+EVERY coherent output coordinate. The complete RIGHT Gram is unchanged;
+a faithful reference128 extension exists algebraically. Real added prep work
+restores a response determined by its own price, as an explicitly unselected
+hostile control demonstrates. This is not a no-go for structural actual
+field-dependent SELECT/cut operators, nor proof the whole LEFT orbit is
+physically free. Approximate normals retain `||r_h|| ||B_h V|| / signal_h`.
+
+The fresh rooted two/three-depth Book clock cancels one uniform pressure
+cocycle but leaves NINE exact Info sources `-pi_j<0` for the root's original
+zone in the tempting pressure-plus-clock completion. There is no interior
+Info root of that truncated candidate; a zero-action Palatini product does
+not repair it. The all-root clock alternative has stationary aggregate
+shapes only at a=b=c, which are maxima, not unconstrained MDL minima. This
+consumes, rather than contradicts, the upstream statement that clock odds
+are an observable and have not been selected as an action term.
+
+Smallest parent substitution: calculate the ACTUAL admitted encoder lift
+and native covector `D_g A-D_p A B`, plus any explicit structural-channel
+source, on the SAME programme; check every clock/Info row. FixedRIGHT,
+compilation accuracy and a uniform scale Ward alone do not supply these
+sources. Exact saved checker PASS26 groups and two bounded independent
+reviews. No selected full D0 price, physical tangent admission, geometric
+root/refinement or raw216 conclusion is promoted; GR_closed=false.
