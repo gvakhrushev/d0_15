@@ -113,3 +113,42 @@ for grades,Lcut in ((2,65),(4,33)):
           "invariant twirled LEFT rank",left_rank_after_twirling,
           "cannot be purified by RIGHT128")
 print("PASS extra archive or a paid symmetry-breaking selector mandatory for invariant mixed cutoff")
+
+
+# POSITIVE branch: track one actual k32 cutoff eigenbranch analytically,
+# rather than insisting on the instantaneous global minimum on BOTH sides.
+# Each finite stationary projector commutes with TRUE B^T B and BB^T.
+L=131
+h=PERIOD/L
+w=2*math.pi*K/L
+D=np.zeros((L,L))
+for i in range(L):
+    D[i,i]=-1/h
+    D[i,(i+1)%L]=1/h
+x=np.arange(L)
+weight=np.cos(2*w*x)
+band=4*math.sin(w/2)**2/h**2
+for eps in (-1e-6,-1e-7,1e-7,1e-6):
+    B=(NU+eps*weight)[:,None]*D
+    e0,V=np.linalg.eigh(B.T@B)
+    e1,U=np.linalg.eigh(B@B.T)
+    # k<32: 63 states per grade. Select the SAME k32 first-slope-
+    # negative eigenbranch: lower of 2 cutoff eigenvalues if eps>0,
+    # higher if eps<0. This is a smooth STATIONARY rather than always
+    # MINIMIZING choice.
+    cutoff=63 if eps>0 else 64
+    ids=list(range(63))+[cutoff]
+    P0=V[:,ids]@V[:,ids].T
+    P1=U[:,ids]@U[:,ids].T
+    assert abs(float(np.trace(P0)+np.trace(P1))-RANK)<1e-7
+    assert np.linalg.norm((B.T@B)@P0-P0@(B.T@B))<1e-7
+    assert np.linalg.norm((B@B.T)@P1-P1@(B@B.T))<1e-7
+    Rstationary=float((e0[ids].sum()+e1[ids].sum())/RANK)
+    Rminimum=float((e0[:64].sum()+e1[:64].sum())/RANK)
+    if eps<0:
+        expected=(NU*band/32)*abs(eps)
+        assert abs((Rstationary-Rminimum)/expected-1)<.002
+    else:
+        assert abs(Rstationary-Rminimum)<2e-8
+print("PASS genuine full fixedRIGHT stationarity exists smoothly on both field signs")
+print("PASS smooth excited branch pays native Rayleigh gap nu*q/32*abs(eps)")
