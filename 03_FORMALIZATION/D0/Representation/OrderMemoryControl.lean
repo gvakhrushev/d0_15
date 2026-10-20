@@ -1155,4 +1155,53 @@ theorem nativeQ8UniformNegativeLoop_odd (n : ℕ) :
   rw [nativeQ8UniformNegativeLoop_even]
   native_decide
 
+
+/-! ## Exact observational gauge of the ex-ante minimal three-gate witness
+
+The six-gate matched-inventory words achieve literal full operator
+I8/R8, while the three-gate words differ from them by the SAME
+already owned block-common quaternion J. Whether that J matters
+depends on which genuine future readouts M1 admits. For a port-
+only observer invariant under the left action of commonJQ, the
+three-gate and six-gate implementations have IDENTICAL outcomes
+on the WHOLE complete two-arm carrier. This is the CORRECT
+prospective D_min question; there is no privileged external
+frame test unless one is actually physically executable/registered.
+
+A separate independent direct native-matrix certificate checks that
+the actual primitive Golden two-port POVM has this invariance
+for EVERY 8-dimensional real input vector. Other future Q8 frame-
+sensitive readouts could break it. Nothing here assumes that
+Book03 selects or pays either execution.
+-/
+
+/-- Strong original operator relation: the exact 3-gate native
+reference differs from the 6-gate full-reference ONLY by ONE
+globally common original j on both quaternion spin arms. -/
+theorem nativeQ8ThreeSixReferenceCommonFrame :
+    nativeQ8ChronologicalWord nativeQ8MinimalReferenceWord =
+      commonJQ * nativeQ8ChronologicalWord nativeQ8SixGateFullReferenceWord := by
+  native_decide
+
+theorem nativeQ8ThreeSixOrderCommonFrame :
+    nativeQ8ChronologicalWord nativeQ8MinimalOrderWord =
+      commonJQ * nativeQ8ChronologicalWord nativeQ8SixGateFullOrderWord := by
+  native_decide
+
+/-- Full source MATHEMATICAL gauge equivalence relative to ANY
+actual observer which cannot read an overall common-j rotation. -/
+theorem nativeQ8ThreeSixCommonFrameInvariant
+    {Obs : Type} (readout : M8Q → Obs)
+    (hinvariant : ∀ U : M8Q,
+      readout (commonJQ * U) = readout U) :
+    readout (nativeQ8ChronologicalWord nativeQ8MinimalReferenceWord) =
+      readout (nativeQ8ChronologicalWord nativeQ8SixGateFullReferenceWord) ∧
+    readout (nativeQ8ChronologicalWord nativeQ8MinimalOrderWord) =
+      readout (nativeQ8ChronologicalWord nativeQ8SixGateFullOrderWord) := by
+  constructor
+  · rw [nativeQ8ThreeSixReferenceCommonFrame]
+    exact hinvariant _
+  · rw [nativeQ8ThreeSixOrderCommonFrame]
+    exact hinvariant _
+
 end D0.Representation.OrderMemoryControl
