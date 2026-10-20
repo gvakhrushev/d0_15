@@ -1,0 +1,47 @@
+{
+  "status": "ALL_EXECUTED_MATHEMATICAL_MUTANTS_REJECTED",
+  "cases": [
+    {
+      "name": "wrong_forward_coframe",
+      "rejected": true,
+      "returncode": 1,
+      "last_line": "AssertionError: all_34_by_4_generic_Ward_coefficients"
+    },
+    {
+      "name": "wrong_compensation_sign",
+      "rejected": true,
+      "returncode": 1,
+      "last_line": "AssertionError: all_34_by_4_generic_Ward_coefficients"
+    },
+    {
+      "name": "wrong_offdiagonal_Gram",
+      "rejected": true,
+      "returncode": 1,
+      "last_line": "AssertionError: all_34_by_4_generic_Ward_coefficients"
+    },
+    {
+      "name": "wrong_dual_symbol",
+      "rejected": true,
+      "returncode": 1,
+      "last_line": "AssertionError: all_34_by_4_generic_Ward_coefficients"
+    },
+    {
+      "name": "kernel_not_retained_in_inverse",
+      "rejected": true,
+      "returncode": 1,
+      "last_line": "AssertionError: range_inverse_keeps_kernel_equations"
+    },
+    {
+      "name": "wrong_phase_second_derivative",
+      "rejected": true,
+      "returncode": 1,
+      "last_line": "AssertionError: tangent_second_pencil_all_coefficients"
+    },
+    {
+      "name": "missing_Schur_term",
+      "rejected": true,
+      "returncode": 1,
+      "last_line": "AssertionError: tangent_second_pencil_all_coefficients"
+    }
+  ]
+}

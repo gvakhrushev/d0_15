@@ -1,0 +1,33 @@
+{
+  "schema":"d0-handoff-input-preservation/1",
+  "scope":"21 byte-preserved UTF-8 inputs: 20 scientific Ward files plus original strategy audit. Not the entire outer ZIP and not independent theorem validation.",
+  "file_count":21,
+  "packed_sha256":"a4db16bad334bc7a6a5b28f3400adaba8ef6a718b54ce11451fc9dcf151c4f1d",
+  "json_sha256":"6fd4d7a179ba693a7985d86fa7aa331e47b5c38a8ab95b0d2fc7050a754058cf",
+  "files": {
+    "02_REGISTRY/research/A4D_JOINT_LATTICE_WARD_RESONANCE.md":"9dd70b269df401b155c146f660203e96c646d8533be1c7ecf94ce13d428e6d99",
+    "02_REGISTRY/research/certificates/a4d_joint_lattice_ward_resonance_check.py":"af944de482956abbc91cc8c6d9fc4fa64bb9663faeec84a17b885d91bfb555b5",
+    "02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/diagnostic_receipt.json":"5691eca0abf40f148f2be0d1df11ea7c1980af2a7539daa7a742b9a1b3beaddf",
+    "02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/INPUTS.json":"7a296662f1fcbcfadc894540f473ea3194ea9c30c94fdf0aefe8fee336a7bbde",
+    "02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/replay.log":"a6f54d1cd11d040f5da2a669693a25f21b0a4c3d682c0e1d770c360be8dea6da",
+    "02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/curved_metric_scout.log":"002ce630e7202a3d056995b4717c0ba83a68a69a47616612d306b149081fe8c4",
+    "02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/linear.py":"8a25e81936ef10346c41cdc9d9bea899f415cd6c55c847b604d94a4a48d01474",
+    "02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/MANIFEST.json":"6817bd0ef74cbf72193e2bfeef039910a175d5e80d3b0903e49c7c425a069235",
+    "02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/curved_metric_scout.json":"3c410d7322db08bb87c767255387a1356f5a5eb36b56a436fb62facf02d5605d",
+    "02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/CAPSULE_INTEGRATION.json":"79504b9876905400da678f4ca79ada23db2d4ebeee9492cf04ade613287623d9",
+    "02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/capsule_integration_replay.log":"a6f54d1cd11d040f5da2a669693a25f21b0a4c3d682c0e1d770c360be8dea6da",
+    "02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/verify.py":"1aeccf3a58b9fa80139802c8d6a877764be0d9b4e9756e39945868d27386696e",
+    "02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/diagnostic.py":"bac6b586f42d019851310b7d556f1a3ade7430a12a930c4e3272e4bb5c5e181f",
+    "02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/hostile_receipt.json":"8fff69ba6856aac5b95380635a0023dcfdf6630b28db81c66939d04a7126184f",
+    "02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/receipt.json":"1d26f77a186f979cfb5a00a2e171d95ee79e13c2957cf2cbc4dc176246c50e30",
+    "02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/RESULT_RU.md":"c84581dde5dc647e215c29253c63e1bf2355cef736c23ca731952bc4324a5d68",
+    "02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/upstream_full_replay.log":"447d763e36d1601d1c4ab2989995adacbeb7cedfaa35326c84b36963489050d9",
+    "02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/hostile.py":"68bb070c90c8c280b447ae060cd606a5240af3460c3eaaea3f232cd66189da7a",
+    "02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/VALIDATION.json":"92da7772f9726117fe6a833afea138c668f0d215a4fd9a91fdefde027b42f728",
+    "02_REGISTRY/research/sources/d0_joint_lattice_ward_resonance_2026-10-15/curved_metric_scout.py":"aa6a6f83240cddae2f2e431e9ad7230beac0ca1619479ced7e23e79b4916f934",
+    "02_REGISTRY/research/sources/d0_strategy_handoff_2026-10-15/STRATEGY_AUDIT_ORIGINAL_RU.md":"d258c771a2a3a0939e4203c3018bf651309e6b36bb4cdaa130cb5ab8b4ad61ff"
+  },
+  "upstream_for_mathematical_replay":{"repository":"gvakhrushev/d0_15","ref":"9fbc75db0a94707dc3105cdfb3f322a14e62a979","capsule_directory":"02_REGISTRY/research/sources/d0_full4d_intake_2026-10-15"},
+  "original_outer_zip_sha256":"441c5c503737c375600cd119ef5bf0d0c343b0445d425b1e755acd99ddd7b47f",
+  "original_strategy_sha256":"d258c771a2a3a0939e4203c3018bf651309e6b36bb4cdaa130cb5ab8b4ad61ff"
+}
