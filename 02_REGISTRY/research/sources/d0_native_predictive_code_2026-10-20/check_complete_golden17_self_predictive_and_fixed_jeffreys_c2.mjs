@@ -44,8 +44,9 @@ function golden17(t){
  const U=P(t),avg=tr(U)/4,norm=dot(U,U)/4;
  const q=G.flatMap(X=>{const s=dot(X,U)/(2*Math.SQRT2);
   return [h*p**4/24*(avg+s)**2,h*p**4/24*(avg-s)**2]});
- const gg=h*p**4*norm,gb=h*p*p*(1-p*p*norm),bg=h*p**3*norm;
+ const gg=p**4*norm,gb=p*p*(1-p*p*norm),bg=p**3*norm;
  q.push(gg-q.reduce((s,x)=>s+x,0),gb,bg,1-gg-gb-bg);
+ for(let k=0;k<16;k++)q[k]*=h;
  q.push(1-h);
  for(let v of q)check(v>0,"full Golden17 positivity (including failed Bell)");
  check(q.length===17&&Math.abs(q.reduce((s,v)=>s+v,0)-1)<1e-14,
