@@ -255,3 +255,88 @@ The flat CAR16 Julia marked event has m(I)=p², hence Psi(m(I))=2 exact Golden u
 This is a STRONG conditional reverse derivation inside a **narrow explicitly stated class**: analytic observer-blind THREE-OUTCOME scores of the constructed existing-Golden CAR16 Julia tester, and a genuinely admissible independent MARKED-event composition identified with Book03's original histories. It removes both the arbitrary functional of the three outcomes and the numeric normalization IF those constraints hold.
 
 **The sole missing G0/selection premise is NOT disguised:** the native Book action is defined over physical Cost-Info histories and algebra-valued memory classes; its primitive weights need NOT equal the Born marked probability m of this constructed auxiliary Choi/two-density comparison. Golden multiplicativity and M1 do not themselves say that the physically charged history event is THIS marked event, or that its actual multi-tick implementation factorizes, or that all real coframe/CAR/observer/controller preparation costs reduce to this one score. The native Golden six-phase atlas already proves geometric local observability but not this physical price binding. If the actual mandatory full128-G0 apparatus DOES select the same observer-independent marked multiplicative event and pays it coherently, (8.8–8.9) identify the mathematical scalar density without fitting an EH term; if not, this is only a conditional selector theorem and G0 and GR remain OPEN. Full 40 Euler matching, matter Ward, exact joint roots and #216/refinement remain separate obligations.
+
+
+## 9. NEW NONCIRCULAR finite source theorem: native marked-event LEFT variation reconstructs ALL original nonlinear curvature (not an auxiliary inserted curvature)
+
+The previous exact mixed identity §3 used an auxiliary two-source word \(\exp(sX_B)\exp(tC)\) in which the **already known physical curvature C** was inserted as one of the TEST GENERATORS. This is an exact representation, but by itself does not infer physical curvature from detector observations. There is now a mathematically stronger, entirely nonlinear original-holonomy *reconstruction* result.
+
+Keep the same original proper-Lorentz plaquette \(P\in SO^+(1,3)\) on the local open chart where \(I+P\) is invertible and the existing Golden \(p=\varphi^{-1}\) CAR16 Julia contraction is legal. Its positive, unconditional marked-event probability is
+\[
+m(P)=p^2 \frac{\det(I_4+P)^2}{256}.
+\]
+For any one of the SIX genuine original proper-Lorentz generator probes \(X\), WITHOUT inserting the unknown \(\mathcal R(P)\) into the probe,
+\[
+\boxed{
+d_X\log m(P):=
+\frac{d}{ds}\log m(e^{sX}P)|_{s=0}
+=\operatorname{Tr}_4[X\,C(P)],
+\quad C(P):=(P-I)(P+I)^{-1}.}\tag{9.1}
+\]
+PROOF: differentiate \(2\log\det(I+e^{sX}P)\), then use \(P(I+P)^{-1}=(I+C(P))/2\) and \(\operatorname{Tr}X=0\). The rational matrix \(C(P)\) is \(\eta\)-skew; the Lorentz trace Gram \(G_{ij}=\operatorname{Tr}(X_iX_j)\) is nondegenerate. Therefore SIX exact signed first-source readings \(r_i=d_{X_i}\log m(P)\) reconstruct
+\[
+\boxed{C(P)=\sum_{ij}X_i(G^{-1})_{ij}r_j,}\tag{9.2}
+\]
+and the literal OWNED finite star curvature is recovered with NO small-curvature approximation:
+\[
+\boxed{\mathcal R(P)=\frac12(P-P^{-1})
+        =2C(P)(I-C(P)^2)^{-1}.}\tag{9.3}
+\]
+This is gauge-covariant under simultaneous \(P\mapsto gPg^{-1}\), \(X_i\mapsto gX_ig^{-1}\). It includes the SIGN that the marked event value alone loses.
+
+The exact source can even be expressed as a SINGLE derivative of the same log-event probability (algebraic reconstruction, not a new selected action). For the original complement coframe area \(B\), put \(X_B=(*B)\eta\), \(M(P)=(I-C(P)^2)^{-1}\), and
+\[
+\widetilde X_B(P)=\frac12\big(X_BM(P)+M(P)X_B\big)\in\mathfrak{so}(\eta).
+\]
+The membership holds because \(X_B,C\) are \(\eta\)-skew while \(M\) is \(\eta\)-selfadjoint. Cyclicity of trace and (9.1–9.3) give EXACTLY
+\[
+\boxed{
+G_2\big(B,\star\,\mathfrak b(\mathcal R(P))\big)
+=-d_{\widetilde X_B(P)}\log m(P).
+}\tag{9.4}
+\]
+The coframe dependence and field-dependent probe \(\widetilde X_B(P)\) are EXPLICIT. It is NOT legitimate to erase them or call the single scalar \(m(P)\) itself a gravitational action. The fixed SIX directional scores (9.2) permit reconstructing \(C\), after which all nonlinear coframe/connection Euler derivatives of the already-owned geometrical \(S_\star\) are computable mathematically.
+
+Independent exact *rational* SymPy checks: one genuinely noncommuting original 4×4 rational proper-Lorentz word, all six gradient scores, Cayley inverse, all six coframe bivectors, ALL 36 original literal \(G_2\)/STAR cases with finite NONZERO generator curvatures, and inversion control. Source:
+\`sources/d0_book_geometry_double_schur_2026-10-19/check_car16_nonlinear_cayley_source.py\` (locally PASS).
+
+### 9.1. The **actual already-owned Golden GOOD+BAD six-phase atlas** recovers the SAME signed source with no NEW Choi laboratory query
+
+The #334 \`A4D_TWO_RECORD_PHASE_ATLAS_AND_AUTOMATIC_PREPARATION_SOURCE\` already derives SIX physically/mathematically specified scalar phase comparison coordinates \(\Phi_j(P)\) from TWO complete Golden-\(p\) dephased Julia output densities, TWO unchanged grade-one CAR preparations and SIX existing CAR anchor effects. Its field-dependent TRUE BAD square-root derivative is retained. Recomputing this six-by-six response INDEPENDENTLY from the original grade-one matrices (not copying its printed Jacobian) gives
+\[
+\boxed{\det D\Phi(I)=\frac{p^9}{15552000}\ne0.}\tag{9.5}
+\]
+Thus for sufficiently near-identity original \(P\), the six ORIGINAL Golden phase values \(\Phi(P)\) determine \(P\) by the analytic inverse-function theorem; composing their local inverse with the EXPLICIT (9.3) recovers the **whole nonlinear curvature** without requiring the constructed marked-Choi experiment to be separately performed.
+
+More concretely, in original null-generator order \(L=(N_2,N_3,\bar N_2,\bar N_3,J_{23},B)\), write \(G_{ij}=\operatorname{Tr}(L_iL_j)\) and \(D\Phi(I)\) for the actual original fixed-preparation GOOD+BAD phase Jacobian. The exact linear compiler from these six scalar readings to the six old signed coframe-dual star-curvature covectors is
+\[
+\boxed{
+\delta \mathcal L_{\star,i}
+=\sum_j W_{ij}\,\delta\Phi_j+O(\|\delta\Phi\|^2),
+\quad W=-\frac12\,G\,[D\Phi(I)]^{-1}.
+}\tag{9.6}
+\]
+Every entry of \(W\) belongs to \(\mathbb Q(\sqrt5)\) and is FIXED by the unchanged native \(p\), original six generators and original six preparation/effect anchors. Direct exact checker proves \(W D\Phi=-G/2\) entry by entry, independently deriving \(D\Phi\) from the FULL unconditional GOOD+BAD density source. The smallest singular value in this chosen null chart is approximately 0.00699 (not a free sensitivity scale); the inferred curvature coordinate has finite linear conditioning, although actual probe repetitions/work/reference remain unpaid until G0.
+
+Files:
+- \`sources/d0_book_geometry_double_schur_2026-10-19/check_native_golden_six_phase_curvature_reconstruction.py\`.
+- Existing owner \`A4D_TWO_RECORD_PHASE_ATLAS_AND_AUTOMATIC_PREPARATION_SOURCE_2026_10_19.md\` (its actual fixed native Golden pair process).
+
+### 9.2. Two decisive G0 **kill controls**: observable reconstruction is NOT Book action selection
+
+1. **INVERSE BLINDNESS OF ONE MARKED VALUE.** Since \(\det P=1\), \(m(P)=m(P^{-1})\) EXACTLY. For original genuine rotation \(P(t)=(I+tJ_{23})(I-tJ_{23})^{-1}\) and fixed complement area \(B=e_0\wedge e_1\),
+\[
+ m(P(t))=\frac{p^2}{(1+t^2)^2}\ \text{(EVEN)},\qquad
+ \mathcal L_\star(B,P(t))=\frac{2t}{1+t^2}\ \text{(ODD)}.
+\]
+Hence NO function of only one scalar marked probability \(m(P)\) can be the actual oriented finite Palatini cell action, irrespective of smoothness or a Golden log. The directed gradients (9.1), coframe insertion and/or already-owned six-phase atlas are indispensable. A smooth conjugacy-invariant scalar of ONE group holonomy has zero first Lie derivative at the identity as a general Lie-algebra consequence of the perfect \(\mathfrak{so}(1,3)\), whereas the individual literal star density has a nonzero curvature-linear derivative at fixed B.
+
+2. **SERIAL MARKED RECORD IS NOT A PRIMITIVE MULTIPLICATIVE PATH WEIGHT.** Even after removing its frozen base probability \(p^2\), the same marked test on a PRODUCT of two successive holonomies does not equal the product of the marked tests on the two separate holonomies. For the exact rational native spatial rotation with \(\cos\theta=3/5,\sin\theta=4/5\),
+\[
+m(R_\theta)=p^2\frac{16}{25},\quad
+m(R_\theta^2)=p^2\frac{81}{625},\quad
+\boxed{\frac{m(R_\theta^2)}{m(R_\theta)^2/p^2}=\frac{81}{256}\ne1.}
+\]
+So previous §8.2's Golden additive log-selector is conditional ONLY for *genuinely independent marked laboratory comparisons* whose JOINT event probability is a product. It does NOT establish Book03's additive primitive Cost for a SERIAL native history represented by one final holonomy: these are inequivalent operational protocols. Book03 already requires retaining the original ordered path labels, Code/Info, controller and clock. Multiplication of independent measurement probabilities cannot replace its noncommutative history composition.
+
+**Scientific terminal of THIS bounded theorem:** exact finite NONLINEAR curvature observability and explicit native six-phase Golden signed-source compiler = CHECKED representation/measurement mathematics. A scalar marked value is neither signed curvature nor serial primitive Book weight. The entire only load-bearing physical G0 action bridge remains: construct one actually COMPULSORY, PAID original full128/GOLDEN/CAR/observer/preparation/oldRIGHT/clock programme and derive that its selected full Cost−Info/ordered-history Euler covectors equal the original \(S_\star\) Euler (including real fail/return and coframe probes); separate genuine joint curved solutions and #216 refinement follow. **GR_closed=false**.
