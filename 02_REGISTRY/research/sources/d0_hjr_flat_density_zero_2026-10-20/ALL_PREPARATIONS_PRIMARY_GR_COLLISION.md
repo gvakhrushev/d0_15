@@ -88,6 +88,36 @@ This also excludes every genuine stationary preparation with additional occupanc
 
 No new finite-matrix census or expensive original HJR replay is needed: the only new step beyond the previously exact Fourier/rational owner is the *stationary-preparation envelope*, taking advantage of positivity of the unchanged original Rayleigh \(R\). The existing fixed-Riesz calculation is one strict special case. A checker independently verifies the rational strict bound and the logical uniform-preparation inequality.
 
+
+
+### 2.1. An even stronger **four-independent-leg** theorem: not merely one dilatation
+
+Do not restrict the original 16 coframe Euler coordinates to the uniform radial direction. On the same flat original fullCAR16 carrier, vary the four genuine orthogonal positive-observer leg scales **independently**,
+\[
+v_r=h\sqrt{\rho_r}\,e_r,\quad r=0,1,2,3,\qquad U=I.
+\]
+The exact original CAR adjoint and anticommutators give
+\[
+\Delta_{\boldsymbol\rho}=\sum_{r=0}^{3}\rho_r\Delta_r,\quad
+\Delta_r(q)=\omega_r(q)I_{16},\qquad \Delta_r\succeq0.
+\]
+At \(\rho_0=\cdots=\rho_3=1\), the COMPLETE original H and J trace is invariant under permutations of the four \(q_r\). Its four individual first derivatives are therefore equal to **one quarter** of the positive radial derivative in (6), even though the underlying internal Lorentz metric has a different signature:
+\[
+\left.\partial_{\rho_r}(H+J)\right|_{\boldsymbol\rho=1}
+=\tfrac14\partial_\rho(H+J)\big|_{\rho=1}.
+\]
+Every preparation-stationary Rayleigh response remains nonnegative in each independent leg:
+\(\partial_{\rho_r}R=\operatorname{Tr}(M^\dagger\Delta_rM)\ge0\).
+Thus for **every** genuine preparation-stationary normalized \(M\),
+\[
+\boxed{
+L^{-4}\partial_{\rho_r}S_L\big|_{\boldsymbol\rho=1}
+\ge c_*/4>2.5\times10^{-9},
+\qquad r=0,1,2,3,\ L\ge256.
+}\tag{7a}
+\]
+The original Palatini star has exactly **zero** source in each of these four independent coframe variations at flat links. This proves a **four-row tensorial obstruction on a genuine independent coframe chart**, not a one-direction numerical mismatch. It is conditional on the same positive-observer orthogonal leg chart as (1); it is NOT a claim that the complete physically covariant stress tensor equals a Lorentz cosmological-constant term. In particular no identification of positive-observer isotropy with Minkowski \(\eta\)-isotropy is made.
+
 ## 3. NEW local family theorem: no continuous direct same-action lift of ALL small Einstein waves
 
 The already accepted same-metric positive configured Golden-J2 theorem supplies a genuine **one-parameter subfamily of its infinite-dimensional exact NONVACUUM solutions**. For any sufficiently small fixed smooth \(\Psi_0\not\equiv\text{constant}\) and harmonic wave \(W_0(u,x,y)\not\equiv0\), let, for real small \(t\),
