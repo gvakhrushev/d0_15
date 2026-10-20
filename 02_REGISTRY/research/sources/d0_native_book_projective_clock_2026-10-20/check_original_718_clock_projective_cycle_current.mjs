@@ -134,7 +134,8 @@ function fourth(A){
   "4/3 native edge source is a divergence-free balanced current");
  return {J43,actual43,projective43,z4,t4};
 }
-const F4=fourth(K),fourthPlus=fourth(pert(dt)),fourthMinus=fourth(pert(-dt));
+const perturbedK=t=>K.map((row,u)=>row.map((v,j)=>v*Math.exp(-lnphi*t*perturb[u][j])));
+const F4=fourth(K),fourthPlus=fourth(perturbedK(dt)),fourthMinus=fourth(perturbedK(-dt));
 const secondSource=ssum(F4.J43,perturb),secondFD=(fourthPlus.actual43-fourthMinus.actual43)/(2*dt);
 assert(Math.abs(secondSource-secondFD)<9e-9,
  "original exact 4/3 clock SOURCE agrees with full scalar Book finite differences");
