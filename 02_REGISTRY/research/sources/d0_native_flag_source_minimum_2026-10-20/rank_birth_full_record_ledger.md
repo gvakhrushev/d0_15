@@ -294,3 +294,74 @@ More concretely the 18-dimensional \(\ker Dq\) is disjoint from \(\ker D\sigma=\
 **Interpretation and remaining physical application.** A purported faithful GR/native operational realization that factors the *whole retained output state and its admissible future tests* through the 128 classical pointer frequencies alone is impossible on this fixed chart. This does NOT imply that a scalar Book action is forbidden to depend only on \(q\), does NOT force the 24 distinguishing future effects to be physically admitted, and does NOT turn 24 frame/link parameters into 24 gauge-invariant gravitational observables. The untransported reference and gauge quotient must be handled by the original observer/coframe interface. A precise next experiment is not another Bloch census: select/compile and charge a **finite basis of these future distinguishing tests on the SAME original full128 history**, verify their admitted measurement and source derivatives, and consume their nonfactorizing channel in \`gr_operational_realization\`. Whether the compulsory full Book03 cost pays for this carrier is still open.
 
 This result connects the compact benchmark of §§7–9 (where all flag probabilities are blind but a future datum is responsive) to the *original* full128 program (where exactly 18 link tangents are first-order pointer-blind but not output-state-blind). It does not conflate their preparations or numerical Fisher coefficients.
+
+
+## 11. Stronger exact result: a SIGNED, regular three-outcome CAR16 readout saturates full-history QFI
+
+The binary Choi-return benchmark in §9 measures the magnitude of a small rotation but is even in \(F\) and does **not** distinguish \(+F\) from \(-F\). Its punctured-limit Fisher equality is therefore not by itself a first-order source or a signed curvature test. There is an exact positive, fixed, sign-sensitive repair using the **same original CAR16 Choi state** with **no extra generator**, as a mathematical measurement benchmark.
+
+Put \(u=|\Omega_{16}\rangle\), \(G=\Lambda_*(J_{23})\otimes I\). From the exact CAR16 overlap,
+\(\langle u|Gu\rangle=0\), \(\|Gu\|^2=1/2\). Set \(v=\sqrt2\,Gu\), so \(u,v\) are orthonormal. Define the fixed three-effect projective POVM on data+oldRIGHT:
+\[
+E_\pm=\tfrac12|u\pm v\rangle\langle u\pm v|,
+\qquad E_\perp=I-E_+-E_-\succeq0.
+\]
+For one branch \(|\psi(\theta)\rangle=e^{\theta G}u\), differentiate the exact overlap \(m(\theta)=\langle u|\psi(\theta)\rangle=\cos^2(\theta/2)\). Since
+\(\langle v|\psi(\theta)\rangle=-\sqrt2\,m'(\theta)=\sin\theta/\sqrt2\), **all three exact probabilities** are
+\[
+\boxed{
+q_\pm(\theta)=\tfrac12\left(\cos^2(\theta/2)\pm\frac{\sin\theta}{\sqrt2}\right)^2,
+\qquad
+q_\perp(\theta)=\sin^4(\theta/2).
+}\tag{S}
+\]
+They are positive and sum exactly to one. At \(\theta=0\):
+\[
+(q_+,q_-,q_\perp)=(1/2,1/2,0),\quad
+(q'_+,q'_-,q'_\perp)=(1/\sqrt2,-1/\sqrt2,0),\quad
+q''_+=q''_-=q''_\perp=0.
+\]
+Thus the *regular, signed* Fisher information at the base, computed from the positive-support \(\pm\) outcomes, is
+\[
+\mathcal I_{\rm signed}(0)=2
+\]
+for \(t=1\), which equals the original pure CAR16 Choi QFI. The third probability vanishes to **fourth** order \(O(\theta^4)\), so its entropy is \(O(\theta^4\log(1/|\theta|))\), which **is C2** at zero. All \(\pm\) probabilities are strictly positive there and have regular sources. Directly,
+\[
+H_\varphi(q(\theta))''\big|_{\theta=0}=-\frac{2}{\ln\varphi}.
+\tag{S2}
+\]
+This is a *specific C2 final readout* even though the *different coherent flag marginal* has a \(\theta^2\log(1/|\theta|)\) rank-birth term. It is not a proof that every part of the complete Book price is C2.
+
+For the same stopped tree of §9, each conditional angle is \(\theta_s=t_sF\), \(t_s=K_sh^2\). **Retain all history labels** and apply this single fixed measurement at the end. The joint classical source \(\{P(s,\pm),P(s,\perp)\}\), \(P(s,r;F)=w_s q_r(t_sF)\), has
+\[
+\boxed{
+\mathcal I_{\rm signed}^{\rm full}(0)=2\,\mathbb E[t_s^2]
+=\mathcal I_Q(0),\qquad
+D_F^2H_\varphi(S,R)\big|_0
+=-\frac{2\mathbb E[t_s^2]}{\ln\varphi}.
+}\tag{SR}
+\]
+The **sign** is detected at first order on each branch with \(t_s>0\), and every positive-baseline \((s,\pm)\) history contributes its genuine conditional information. The result is unaffected by dephasing the flag register in its actual pointer basis, since the joint classical law is the same. In the Book03 sign convention \(S=\mathrm{Cost}-\mathrm{Info}\), **if** this entire final Shannon entropy is proved to be an actual counted Info term and its other price components have zero second jet on this path, the corresponding \(-H_\varphi\) term supplies the positive quadratic variation \(+2\mathbb E[t_s^2]/\ln\varphi\) without an inserted stabilizer. This is a conditional implication, NOT a selected Book price or a numerical repair of the unrelated HJR saddle.
+
+An additional **exact record-value theorem** follows by ignoring the labels only for the *statistics* of the same final readout. Its marginal derivatives are proportional to \(\mathbb E[t_s]\), so
+\[
+\mathcal I_{\rm signed}^{\rm marginal}(0)=2(\mathbb E[t_s])^2,
+\qquad
+\boxed{\;
+\mathcal I_{\rm signed}^{\rm full}(0)-
+\mathcal I_{\rm signed}^{\rm marginal}(0)
+=2\,\operatorname{Var}(t_s).
+\;}
+\tag{V}
+\]
+Equivalently the difference between the joint and marginal Shannon second jets is \(-2\operatorname{Var}(t_s)/\ln\varphi\). The actual chronological record contributes exactly this *success-count clock-jitter information*. Because all completed paths have \(t_s=\tau_h\) and failures weigh only \(\varepsilon_h\),
+\[
+0\le\operatorname{Var}(t_s)\le
+\mathbb E[(t_s-\tau_h)^2]\le\varepsilon_h\tau_h^2.
+\]
+Thus both signed first-order information and its C2 readout source survive the \(h\to0\) limit, while the **incremental** price of retaining the random success-count in this particular Fisher comparison becomes exponentially small. This does not erase the actual attempt clock \(T_s\) or its nonzero prospective code/work charge.
+
+**Interface to the original D0 detector:** The functional shape in (S) is the unattenuated version of the already-owned fixed Golden17 *signed marks*
+\(q_\pm^{\rm Golden17}(\theta)=\kappa(\cos^2(\theta/2)\pm\sin\theta/\sqrt2)^2\) on its **different grade-one Choi preparation**. The Golden17 test retains other outcomes and a small factor \(\kappa\), whereas (S) has \(1/2\), so their Fisher scales and preparations are NOT identified. They share an exact mathematical sign-sensitive response mechanism. Physical access to the full CAR16 Choi reference, the actual rank-one effects and their native Cost−Info/measurement implementation must be supplied; gauge/observer transport and the complete full128 programme are separate.
+
+**Takeaway for \`gr_operational_realization\`:** There is no mathematical necessity to discard failures, use an unphysical infinitely sharp readout, introduce a fitted Hessian, or lose the *sign* of the compact field to obtain a smooth first and second operational source. A fixed complete positive future measurement exists and carries the exact stopped-history Fisher/entropy jets. The still-open physics is its **admission and mandatory price on the same full D0 carrier**, and its extension from this one compact direction to the physically gauge-quotiented complete Lorentz/coframe/matter response.
