@@ -16,6 +16,11 @@ G=[E(0,i)+E(i,0) for i in (1,2,3)]+[
     E(2,3)-E(3,2),E(3,1)-E(1,3),E(1,2)-E(2,1)]
 gram=s.Matrix([[s.trace(X*Y) for Y in G] for X in G])
 assert gram==s.diag(2,2,2,-2,-2,-2)
+# Universal no-go for any smooth Lorentz-conjugacy scalar near the identity:
+# the commutators span the entire six-dimensional perfect Lie algebra.
+comm=[X*Y-Y*X for X in G for Y in G]
+coords=s.Matrix(6,len(comm),lambda i,j:s.trace(G[i]*comm[j])/gram[i,i])
+assert coords.rank()==6
 def boost(i,c,sh):
     a=I.copy();a[0,0]=a[i,i]=c;a[0,i]=a[i,0]=sh;return a
 ROT=I.copy()
