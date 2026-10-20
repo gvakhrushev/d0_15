@@ -766,3 +766,33 @@ of that query; minimality must be applied to the actual required future
 instrument on neighbouring fields. The precise proofs and independent
 review are linked from that synthesis. No task, GR/raw216 terminal or
 assembly status is changed.
+
+
+## Native CAR access to the primary metric: a concrete removed premise
+
+The [current causal synthesis](A4D_CAUSAL_BOOK_SOURCE_TO_EXACT_GR_SYNTHESIS_2026_10_20.md)
+now contains an actual finite field operation, not only a prescribed
+Euler direction. The existing Golden/CAR retained-record word makes a
+small top-amplitude change and returns the normalized clock/scalar
+section. Through the supplied live material query its exact contrast
+is proportional to -(H_tilde-H)delta^2/h^2, with the true calibration
+and inverse-PF density retained. Original Q probabilities then separate
+the whole accessible H profile at fixed matter. This concretely
+consumes future-memory reflection and removes the need for an added
+geometric actuator inside that interface.
+
+The useful Golden property here is the infinite order of the original
+rotation and its finite small returns. It is not a Beatty average of
+an unspecified Book residual or a uniqueness theorem for physical
+action. The actual amplitude/code input, address, preparation and
+physical clock remain explicit. A frozen input code stays blind.
+
+The parallel C1 full-field-minimum exclusion is preserved. The active
+CAR context establishes finite access, not a price-preserving open
+field graph. The parallel absolute Book-mean theorem supplies a
+conditional source multiplier while retaining its absolute and
+preparation residual. The next native composition must determine the
+same-initial reachable fields with complete prices, or a genuine
+stationary/constraint law. The detailed proof, exact check and pinned
+independent review are linked from the causal synthesis; no task,
+assembly, raw216 or physical-GR acceptance is changed.

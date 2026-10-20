@@ -661,3 +661,62 @@ restricted tangent, changed native off-shell source or separately derived
 stationary field law remains to be supplied. The positive finite
 Einstein/CAR stationary source and fixed-field implementation optimum
 remain valid. No physical Book/GR/raw216 closure is asserted.
+
+
+## Original CAR actuation now separates the primary Brinkmann metric
+
+The [native CAR application](sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/NATIVE_CAR_ACTUATED_METRIC.md)
+replaces the additional small field-actuator premise by a finite word
+from the existing retained-record engine. Its six-letter compilation
+acts as identity on the low spatial CAR pairs and G^2 on the high pairs;
+the unchanged autonomous return realizes the same action in its prepared
+controller sector. Every controller sector and oldRIGHT are retained.
+
+At one addressed site w=z+hv, it changes the actual normalized top
+amplitude by delta!=0 while returning the clock/scalar section and
+keeping the positive complement. With the original live material-query
+binding and fixed calibration, the exact query difference is
+
+    q_tilde(z)-q(z) = -rho_z^(-1) s^2 (H_tilde(z)-H(z)) delta^2/h^2.
+
+All five affected cells and their true inverse-PF densities are included.
+The owned infinite-order Golden return gives a finite small word at
+every h; under the stated uniform chart bounds its word length is
+O(h^-2). This is not a signal, sampling-cost or physical-time bound.
+The original fixed Q readout is strictly monotone on the resulting
+chart. Consequently equality of the admitted active future profiles at
+fixed original matter implies equality of H at all accessible interior
+sites. This consumes the owned future-memory reflection concretely.
+The two opposite paid probes also give an exact inverse from probability
+profiles and held preparation data, without an unknown-amplitude oracle
+or finite-sample exact-estimation claim.
+
+The live query must use the changed field. A frozen old q-code remains
+blind. The [material-input information bound](sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/NATIVE_MATTER_QUERY_INFORMATION_BOUND.md)
+and actual address/preparation/clock hypotheses are unchanged. Thus the
+additional geometric actuator is no longer needed inside this supplied
+interface; its physical current-field input mechanism remains open.
+
+The [compiler/Info application](sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/NATIVE_COMPILER_INFO_AND_ABORT_SOURCE.md)
+distinguishes complete compiler noise from information about a tested
+alternative, including quantum oldRIGHT. It transports the nonzero
+Q8 full source through finite retained aborts under its stated clean
+query interface. The [query minimum](sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/COMPULSORY_QUERY_AND_COHERENT_MINIMUM.md)
+attains exactly four source calls in its declared coherent slot model,
+yet has zero full coherent-entropy price source; it does not identify
+that ledger with Book03.
+
+The concurrent [absolute Book mean](sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/GOLDEN_DETECTOR_BOOK_MEAN_SOURCE.md)
+already transports the exact Golden detector to theta H(P)-J under its
+explicit absolute-binding and mean-aggregation hypotheses. Its genuine
+normalizer and preparation source remain. The preceding same-carrier
+C1 minimum exclusion is also retained: the positive CAR operation does
+not supply an open-neighborhood price-preserving field graph or derive
+a field minimum. The remaining composition is the same-initial reachable
+field-and-full-price graph or a native stationary/constraint law, with
+actual input, absolute information, upstream and clock sources.
+
+The [pinned review](sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/NATIVE_CAR_ACTUATED_METRIC_REVIEW.md)
+records independent analytical acceptance and the exact full16/full64
+changed-composition check. Existing geometry, continuum and Lean owners
+are consumed unchanged. No physical GR or assembly status is promoted.

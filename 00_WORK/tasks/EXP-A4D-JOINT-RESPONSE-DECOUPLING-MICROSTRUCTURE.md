@@ -2979,3 +2979,46 @@ bounded quantum conditional-entropy controls, two independent analytical
 reviews and a read-only pinned replay entrypoint. Historical all40,
 continuum and Lean suites are consumed unchanged. Physical complete
 Book selection, reachable variations, refinement and raw216 stay open.
+
+
+### 20 October: the original CAR return separates the primary metric
+
+Phase: native realization / final composition; existing constitutive
+slot, native-programme-v1 and Draft #334. Reuse the original all40+2
+nonvacuum carrier, the actual REST/PF/reference preparation, autonomous
+record word, Golden infinite-order owner and future-memory reflection.
+Parallel field-minimum and absolute Book-mean results through 5d3ce23b
+are consumed; the duplicate saddle construction is not published.
+
+Precise parent substitution: within the existing addressed live
+material-query interface, the additional small geometric-actuator
+premise is removed. The original six-letter CAR return, or its
+eighteen-letter autonomous realization, changes only the scalar/top
+preparation's high pair at the completed query boundary. At every
+mesh a finite sufficiently small word keeps the positive chart.
+The exact source difference is
+-rho_z^(-1)s^2 delta^2(H_tilde-H)/h^2. The unchanged Q readout then
+separates every accessible H coordinate at fixed original matter,
+so the owned future quotient cannot identify those metrics.
+
+Primary write surface: book_source/NATIVE_CAR_ACTUATED_METRIC.md and
+its exact checker/review; bounded compiler/Info and query-price
+companions in the same existing packet. Four scientific parents
+receive append-only updates. No new task or lifecycle transition.
+
+Retained hypotheses: actual live-field code/query binding, physical
+address admission and paid controller preparation, complete absolute
+Book valuation and its upstream/clock sources. The source-preserving
+C1 minimum exclusion remains; finite reachability does not supply
+the same-initial field-and-price graph. The companion proves retained
+finite-abort source transport, not selection of physical Info.
+The tight four-call coherent minimum uses its explicitly different
+query ledger and is not a Book03 counterexample.
+
+Smallest decisive check: exact Q(a) full16/full64 word composition,
+finite calibrated uneven-PF source and Q contrast, retained failure,
+wrong-order and frozen-code controls. Author and independent reviewer
+ran the unchanged checker successfully; analytical acceptance binds
+the all-mesh chart and future-profile proof. Sparse assembly tooling
+cannot certify acceptance without applications.json; no such status,
+historical replay or Lean build is claimed. GR_closed remains false.

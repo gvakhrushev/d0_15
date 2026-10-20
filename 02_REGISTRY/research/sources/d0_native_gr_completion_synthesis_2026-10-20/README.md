@@ -144,3 +144,35 @@ proof/checker bytes. Run only the changed finite schedule/source check:
 
 The Q8 and paid-choice results have analytical independent review.
 No historical geometry, all-cost census or Lean replay is claimed.
+
+
+## A native CAR word makes the primary metric observable to future queries
+
+[NATIVE_CAR_ACTUATED_METRIC.md](book_source/NATIVE_CAR_ACTUATED_METRIC.md)
+applies the already owned Golden return to the real normalized CAR
+preparation. Six forward letters implement one high-pair G^2 return;
+eighteen letters use the original autonomous word. A finite sufficiently
+small return exists at every mesh. With the original updated-field
+query, the exact difference is
+-rho_z^(-1)s^2 delta^2(H_tilde-H)/h^2. The complete future response
+therefore separates H throughout the accessible fixed-matter fibre.
+All affected cells, full reference Gram, controller sectors, uneven
+weights, calibration and aborts are retained.
+
+The result removes an extra geometric-actuator premise within the
+supplied live-query interface. It does not construct that interface
+from unknown amplitudes, force execution, or choose the complete action.
+The concurrent C1 field-minimum owner and absolute Book-mean source
+application are consumed with their remaining hypotheses.
+
+The [compiler/Info companion](book_source/NATIVE_COMPILER_INFO_AND_ABORT_SOURCE.md)
+proves its finite-abort source transport; the
+[query-price companion](book_source/COMPULSORY_QUERY_AND_COHERENT_MINIMUM.md)
+keeps a tight four-call coherent minimum distinct from physical Book03.
+The [review](book_source/NATIVE_CAR_ACTUATED_METRIC_REVIEW.md) pins the
+accepted exact bytes and the smallest changed calculation:
+
+    python3 -O -B -W error 02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/check_native_car_actuated_metric.py
+
+This does not repeat the all40+2, continuum or Lean proofs, and does
+not change a task, assembly or physical-GR status.
