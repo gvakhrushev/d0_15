@@ -423,4 +423,52 @@ theorem FutureExecution.uncoupledCenter_profile_independent
   rw [F.uncoupledCenter_run, F.uncoupledCenter_run]
 
 
+
+/-! ## M1 physical-center dilemma: an invisible physical distinction is forbidden
+
+This is not a license to add a new Spin detector.  It proves the
+NECESSITY of some actually admitted future distinguishability if one
+insists that two Q8 center sectors are distinct PHYSICAL STATES under
+the strong complete-future M1 reading.
+
+Either (A) the two uncoupled center labels represent the SAME
+operational state in the future quotient, or (B) the physical allowed
+action/readout interface must differ from uncoupledCenter by a real,
+actually charged, center-sensitive context.  No third primitive
+independent witness line is logically required. The mathematical
+OrderMemoryControl sign port supplies a CANDIDATE existing interface,
+not the yet-unproved compulsory G0 actuation.
+-/
+
+/-- A purely uncoupled hidden Bool center cannot be FULLY M1-faithful
+on the enlarged raw state carrier.  All original future experiments
+see identical results from its two genuinely distinct raw labels. -/
+theorem FutureExecution.uncoupledCenter_not_future_complete
+    (F : FutureExecution) (s : F.State) :
+    ¬ Function.Injective (F.uncoupledCenter).profile := by
+  intro hinj
+  have he : (s, false) = (s, true) :=
+    hinj (F.uncoupledCenter_profile_independent s false true)
+  have hb : (false : Bool) = true := congrArg Prod.snd he
+  cases hb
+
+/-- A physically distinct pair in any complete-future verified
+execution MUST differ on at least ONE original future test word.
+All test words are finite words of the ALREADY SUPPLIED actions;
+the proof does not invent a new primitive witness. -/
+theorem FutureExecution.future_complete_forces_a_test
+    (F : FutureExecution)
+    (complete : Function.Injective F.profile)
+    {s t : F.State} (different : s ≠ t) :
+    ∃ w : List F.Action, ∃ q : F.Test,
+      F.observe (F.run w s) q ≠ F.observe (F.run w t) q := by
+  classical
+  by_contra hn
+  push_neg at hn
+  apply different
+  apply complete
+  funext w q
+  exact hn w q
+
+
 end D0.Foundation.EmpiricalTheoryFactorization
