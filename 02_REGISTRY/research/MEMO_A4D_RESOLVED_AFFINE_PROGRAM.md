@@ -109,7 +109,8 @@ meaning of prospective minimality in this programme:
 \text{physical continuation law}.
 \]
 
-The pinned [prospective formal owner](https://github.com/gvakhrushev/d0_15/blob/bf82fb54c63bbe95aee5e459a30f17a27f576519/03_FORMALIZATION/D0/Foundation/EndogenousActionQuantum.lean)
+The main [prospective formal owner](../../03_FORMALIZATION/D0/Foundation/ProspectiveExecution.lean),
+preserved with its [exact extraction provenance](D0_FOUNDATION_MAIN_INTAKE_2026_10_20.md),
 already proves Bellman suffix optimality and exclusion of dominated executions
 and positive redundant detours. Its `ProspectiveExecution.optimal` is an
 explicit **premise**. The central target is to derive that premise, or a precisely

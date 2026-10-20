@@ -1323,9 +1323,9 @@
           "path": "03_FORMALIZATION/D0/Foundation/EmpiricalTheoryFactorization.lean"
         },
         {
-          "label": "FutureExecution: future-stable quotient and sufficient retained memory in pinned #334",
-          "ref": "a8cde85432d561c06b9fcb77b77bfe471b7c5031",
-          "path": "03_FORMALIZATION/D0/Foundation/EmpiricalTheoryFactorization.lean"
+          "label": "Main future-memory owner: future-stable quotient and sufficient retained memory; exact source provenance in foundation intake",
+          "ref": "2ee0788868c895adcb679d8f29b27d6d8d0626d1",
+          "path": "03_FORMALIZATION/D0/Foundation/FutureExecution.lean"
         },
         {
           "label": "Existing distinction between class admissibility and unique forcing",
@@ -1356,9 +1356,9 @@
       ],
       "readings": [
         {
-          "label": "Native prospective owner: optimal is an input; reuse suffix/no-detour/no-motion consequences",
-          "ref": "bf82fb54c63bbe95aee5e459a30f17a27f576519",
-          "path": "03_FORMALIZATION/D0/Foundation/EndogenousActionQuantum.lean"
+          "label": "Main prospective owner: optimal is an input; reuse suffix/no-detour/no-motion consequences",
+          "ref": "2ee0788868c895adcb679d8f29b27d6d8d0626d1",
+          "path": "03_FORMALIZATION/D0/Foundation/ProspectiveExecution.lean"
         },
         {
           "label": "Original Book03 Cost-Info action and history weights; preserve operator and record context",

@@ -16,7 +16,7 @@ The kernel already has proof owners for necessary records/comparison, empirical 
 **Взять из уже опубликованного:**
 - [Existing necessity, injective records and verification-theory representation owners](https://github.com/gvakhrushev/d0_15/blob/5d23e90af703efee7f0deb24517d3ead4780fdfc/03_FORMALIZATION/D0/Foundation/VerifiabilityNecessity.lean) — опубликованный исследовательский вход
 - [Existing empirical factorization and process composition on main](https://github.com/gvakhrushev/d0_15/blob/5d23e90af703efee7f0deb24517d3ead4780fdfc/03_FORMALIZATION/D0/Foundation/EmpiricalTheoryFactorization.lean) — опубликованный исследовательский вход
-- [FutureExecution: future-stable quotient and sufficient retained memory in pinned #334](https://github.com/gvakhrushev/d0_15/blob/a8cde85432d561c06b9fcb77b77bfe471b7c5031/03_FORMALIZATION/D0/Foundation/EmpiricalTheoryFactorization.lean) — опубликованный исследовательский вход
+- [Main future-memory owner: future-stable quotient and sufficient retained memory; exact source provenance in foundation intake](https://github.com/gvakhrushev/d0_15/blob/2ee0788868c895adcb679d8f29b27d6d8d0626d1/03_FORMALIZATION/D0/Foundation/FutureExecution.lean) — опубликованный исследовательский вход
 - [Existing distinction between class admissibility and unique forcing](https://github.com/gvakhrushev/d0_15/blob/5d23e90af703efee7f0deb24517d3ead4780fdfc/03_FORMALIZATION/D0/Foundation/M1ClassAdmissibility.lean) — опубликованный исследовательский вход
 
 ## prospective-native-selection — Минимальный генератор → родной закон физического исполнения
@@ -28,7 +28,7 @@ The kernel already has proof owners for necessary records/comparison, empirical 
 **Куда подставляется:** `constitutive`, `native_sector`, `gr_operational_realization`
 
 **Взять из уже опубликованного:**
-- [Native prospective owner: optimal is an input; reuse suffix/no-detour/no-motion consequences](https://github.com/gvakhrushev/d0_15/blob/bf82fb54c63bbe95aee5e459a30f17a27f576519/03_FORMALIZATION/D0/Foundation/EndogenousActionQuantum.lean) — опубликованный исследовательский вход
+- [Main prospective owner: optimal is an input; reuse suffix/no-detour/no-motion consequences](https://github.com/gvakhrushev/d0_15/blob/2ee0788868c895adcb679d8f29b27d6d8d0626d1/03_FORMALIZATION/D0/Foundation/ProspectiveExecution.lean) — опубликованный исследовательский вход
 - [Original Book03 Cost-Info action and history weights; preserve operator and record context](https://github.com/gvakhrushev/d0_15/blob/5d23e90af703efee7f0deb24517d3ead4780fdfc/01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md) — опубликованный исследовательский вход
 - [Original all327 conditional-current variational identity; native constraint and complete-price identification remain open](https://github.com/gvakhrushev/d0_15/blob/bf82fb54c63bbe95aee5e459a30f17a27f576519/02_REGISTRY/research/A4D_GLOBAL_327_BOOK_FISHER_CAR16_MAGNETIC_WICK_AND_DARK_REVIVAL_2026_10_20.md) — опубликованный исследовательский вход
 - [Typed Q8-to-Golden port; actual Book03 routing, Info and full payment remain open](https://github.com/gvakhrushev/d0_15/blob/fb5d6a57948d3469a4839be27ec45a7d763985ce/02_REGISTRY/research/A4D_LITERAL_GOLDEN_M1_FUTURE_MDL_Q8_ORDER_PORT_TYPED_BRIDGE_2026_10_20.md) — опубликованный исследовательский вход
