@@ -720,3 +720,50 @@ The [pinned review](sources/d0_native_gr_completion_synthesis_2026-10-20/book_so
 records independent analytical acceptance and the exact full16/full64
 changed-composition check. Existing geometry, continuum and Lean owners
 are consumed unchanged. No physical GR or assembly status is promoted.
+
+
+## Same complete record, native CAR response, and the stationary execution bridge
+
+Continuation at `20d97664`, existing #334. The
+[stationary-information packet](sources/d0_native_gr_completion_synthesis_2026-10-20/stationary_information/README.md)
+computes, rather than assumes, the complete cleaned whole-J2 record's
+matched information. Its one-trial QFI is `16 dt tensor dt`; the fixed-k
+stopped tape has `(16/q) dt tensor dt`. Exact reverse CQ relative entropy
+is `8t²/(q ln phi)+O(t³)`, with all dirty work retained. At the stationary
+root Dt=0 it has no quadratic field form. Forward KL is infinite because
+actual dirty support is born. A finite capped task with explicit abort
+has the exact factor `E_N=(1-(1-q)^N)/q`, so the conclusion needs no
+unbounded execution. These are computed candidate valuations, not a
+physical identification of Book03 Info, R or W.
+
+The existing actual CAR return is then substituted into the original
+coframe/shared-link saddle slice. For its genuine top change delta!=0,
+`q_i(a)=s_cal² delta²(2/a-1-a²)/(rho_0 h²)` has nonzero derivative at a=1.
+The original fixed native minus rail transports this into a nonzero
+retained address/port response. Its coarse matched likelihood has
+`K_aa=r omega_0 B_a²/[ln(phi) L(1-L)]>0`, including normalized all-address
+weights, readiness abort, null-to-REST conventions and every unchanged
+remainder outcome. This proves an accessible first-order information
+direction on that same saddle slice. It neither selects this statistic
+as physical Info nor supplies a field minimum or all 42 equations.
+
+Scalar source equality is also not necessary for root equivalence. A
+sufficient local target is `dS=M dJ2` with invertible M and closed `M dJ2`
+on the actual neighborhood. An exact matrix countercontrol preserves an
+indefinite target's roots while making its price convex; it is explicitly
+not a native action. Revaluing this same cleaned final record smoothly
+cannot realize that escape: either the ridge saddle remains or additional
+non-Einstein roots appear on the supplied fixed-input chart. A freely
+matched reference cancels its own information penalty; an independently
+required comparison/reference and complete price remain necessary.
+
+The actual terminal condition must also survive causal elimination.
+Execution stationarity gives `s_y+C_y*lambda=0`, not automatically s_y=0.
+An actual feasible lift `C_z L=-C_y`, `s_z L=0` is a finite constructive
+sufficient condition for all original field equations. On the owned
+whole-J2 reporter logical-input variation fails this lift; a source-
+preserving live compensator pays the opposite missing source. A separately
+bound stationary stack would instead permit the ordinary chain-rule
+pullback without a field-minimum premise. The finite algebra, same-carrier
+controls and independent reviews support these precise parent obligations.
+No physical GR, refinement, raw216 or assembly status is promoted.

@@ -3022,3 +3022,37 @@ ran the unchanged checker successfully; analytical acceptance binds
 the all-mesh chart and future-profile proof. Sparse assembly tooling
 cannot certify acceptance without applications.json; no such status,
 historical replay or Lean build is claimed. GR_closed remains false.
+
+
+### 20 October: actual full-record information and paid stationary lift
+
+Phase: native realization / final composition, existing constitutive slot,
+native-programme-v1 and Draft #334. Input: 20d97664, original whole-J2
+cleanup, stopped saddle, prospective field-realization bridge and native
+CAR actuation. No new task, selector or field restriction.
+
+Parent application: compute the complete stopped CQ reverse entropy and
+Fisher form, including dirty support and finite-abort control. At Dt=0
+the candidate information is fourth order in fields, so it cannot supply
+the missing quadratic stabilizer. A fixed smooth revaluation either keeps
+the ridge saddle or cancels the source on non-Einstein members too.
+
+Positive same-carrier substitution: the already owned paid CAR return
+gives nonzero coframe response before querying on the original saddle
+slice. Retained normalized address/port/readiness probabilities give its
+exact positive information coefficient and conditional two-dimensional
+stability threshold. Full cost, actual Info and root-preserving reference
+are not inferred. The local equation-equivalence target is invertible
+closed `M dJ2`; no gradient-penalty control is added as a native action.
+
+Terminal application: exact causal-adjoint multiplier and finite priced
+compensation test `C_z L=-C_y`, `s_z L=0`. A complete original-record
+calibration control proves why constrained optimality alone cannot erase
+the terminal source. Full variation admission or separately bound stack
+stationarity remains open. All original 16+24+2 variations are retained.
+
+Write surface: stationary_information proof/check/review packet and the
+existing selection/causal parents. Four narrow exact algebra checks,
+independent analytical reviews and pinned sources; historical geometric
+and Lean evidence consumed unchanged. No acceptance/lifecycle transition
+or assembly application is asserted. GR_closed=false.
