@@ -1,0 +1,61 @@
+{
+  "environment": {
+    "python": "3.12.14",
+    "sympy": "1.14.0",
+    "flags": [
+      "-O",
+      "-B",
+      "-W",
+      "error"
+    ]
+  },
+  "runs": [
+    {
+      "checker": "check_clock_payment.py",
+      "arguments": [],
+      "receipt": "CLOCK_SOURCE_RESULT.json",
+      "seconds": 3.306,
+      "receipt_sha256": "14736514e03c3945e38e8766d8d06f544859ee2ef4a9a31ea3d1066a4f869a38",
+      "status": "PASS"
+    },
+    {
+      "checker": "check_connection_coframe_review.py",
+      "arguments": [],
+      "receipt": "CONNECTION_COFRAME_RESULT.json",
+      "seconds": 2.356,
+      "receipt_sha256": "7cf980c756e89cebeb0dfa2dbc6ed2584b8ec6888f69e50f0b304475579307e6",
+      "status": "PASS"
+    },
+    {
+      "checker": "check_paid_port_cost.py",
+      "arguments": [
+        "--root",
+        "inputs"
+      ],
+      "receipt": "PAID_PORT_RESULT.json",
+      "seconds": 9.451,
+      "receipt_sha256": "6a3bec240300bfc8345dd36f3a2bed7c75d09b18aafe21a3f5f29fc4f9711353",
+      "status": "PASS"
+    },
+    {
+      "checker": "check_prepared_price_feedback.py",
+      "arguments": [],
+      "receipt": "PREPARED_FEEDBACK_RESULT.json",
+      "seconds": 0.1,
+      "receipt_sha256": "795512cb89ca4412b3639714a3224cfa09918dcc7101193e4a85d33c36c8b2ad",
+      "status": "PASS"
+    },
+    {
+      "checker": "d0_sourced_connection_probe.py",
+      "arguments": [
+        "--root",
+        "inputs"
+      ],
+      "receipt": "CONNECTION_RESULT.json",
+      "seconds": 7.8,
+      "receipt_sha256": "c0385b4d59e97e0fe259a9b459452605f3d3dcf7c867c643c87885152f9d7178",
+      "status": "PASS"
+    }
+  ],
+  "scope": "Exact same-history cost/source composition and its conditional single-Fourier geometric consumer; not complete Book price or GR closure."
+}

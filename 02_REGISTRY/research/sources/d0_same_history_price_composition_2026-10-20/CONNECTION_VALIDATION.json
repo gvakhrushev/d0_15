@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "checks": 51,
+  "command": "PYTHONPATH=/tmp/d0_native_flag_deps python3 -O -B -W error /tmp/d0_sourced_connection_probe.py --root /workspace/scratch/b5496e41e653/d0_15_native_integration",
+  "repository_input_commit": "061b658a4fc9ea80e73364cf8ee8205565b71e66",
+  "files": {
+    "d0_sourced_connection_probe.py": "138e8f952b2f59af6ae600691295b6e34ec58200d83b899d0b93ba7dd96c9c48",
+    "d0_sourced_connection_probe.json": "c0385b4d59e97e0fe259a9b459452605f3d3dcf7c867c643c87885152f9d7178",
+    "d0_sourced_connection_proof.md": "b782f919536002c0099b5286290fcde7b2b2b819e9a185bb118a7f92b206dea3",
+    "d0_sourced_connection_inputs.json": "e221d5c739accc81d3c6e9919ee748f77a3001ffd45445a369cb832c3fd74e38"
+  },
+  "snapshot_root": "/tmp/d0_sourced_connection_inputs",
+  "scope": "Exact known initial-clock Gamma coefficient; actual fixed rank8 one-momentum preparation; all 24 Lorentz components of one transverse Fourier jet; Palatini plus known paid-component quadratic conditional on same-process coefficient binding. No full native price, preparation/observer solution, nonlinear all-field equations or fixed-positive-clock limit."
+}

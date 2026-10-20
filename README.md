@@ -6,6 +6,8 @@
 
 **Scope:** original compulsory full D0/Book03 Cost-Info/H+J+R action selection, full GR and raw216 remain OPEN. Source PR [#334](https://github.com/gvakhrushev/d0_15/pull/334) remains active; this main intake does not close it.
 
+The [same-history price/source intake](02_REGISTRY/research/D0_SAME_HISTORY_PRICE_SOURCE_MAIN_INTAKE_2026_10_20.md) now connects the original complete tape to its paid-port partition, clock sources, retained feedback correction and specified connection response. These native calculations feed the existing positive family's full-source identity; complete Book03 Cost−Info, physical admission and GR closure remain open in [#334](https://github.com/gvakhrushev/d0_15/pull/334).
+
 ## Current objective: close the D0 foundation through general relativity
 
 D0 starts from the **necessary operational structure of verifiability**:

@@ -1,0 +1,137 @@
+{
+  "status": "PASS",
+  "checks": 51,
+  "input_pins": {
+    "02_REGISTRY/research/A4D_COMPLETE_RECORD_CHANNEL_AND_NATIVE_COST_SOURCE.md": "2128009802edff3e111a26961f050320fd878d7412ed93bfad5d5c9e4219db79",
+    "02_REGISTRY/research/A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md": "a0a8a0b7389c7a6120ebbe402d111bf55cd2a00730403a00ffceca73548e7915",
+    "02_REGISTRY/research/sources/d0_native_price_source_synthesis_2026-10-20/original_record_source.md": "3e038dd9fae47bee12e9df6c27ed2b0816c577a47e0581cf6b9f84e976f3cc0c",
+    "02_REGISTRY/research/sources/d0_native_price_source_synthesis_2026-10-20/price_equivalence2_smooth.py": "393c459c5295e3e3af413f6c935b4eb4402cd4b8b714761548b7dbc7e8b0b0c8",
+    "02_REGISTRY/research/A4D_BOOK_CAR_HOLST_WEYL_BRANSDICKE_EINSTEIN_UNIVERSALITY_2026_10_20.md": "c7d1c5adb00ef5f6b17e9f23c5fffe4ec649ea2194bba6d6f5dbd93847a0c7de",
+    "02_REGISTRY/research/A4D_NATIVE_COFRAME_HEAT_SOURCE_BRIDGE.md": "f54810cf9cc16f2282eb602fa606381cdd9622c7f877fef5211e978c55e4956c",
+    "02_REGISTRY/research/sources/d0_native_price_source_synthesis_2026-10-20/coframe_oracle_transport.md": "28a2d3db0545f1bd0dd96e9394a8f350b403db75348df590d75d035db1cc8c65"
+  },
+  "nu": "3/5",
+  "b": "4/5",
+  "native_gamma_quadratic_constant": "81/100000",
+  "native_coframe_spatial_signs": [
+    -1,
+    -1
+  ],
+  "lc_null_ratio": "-1/2",
+  "owned_pp_slice": "729*r**2/250000 + 729*r/500000 + 81/100000",
+  "owned_pp_slice_expected": "729*r**2/250000 + 729*r/500000 + 81/100000",
+  "palatini_torsion_hessian_det": "4294967296",
+  "palatini_null_K_diagonal": "0",
+  "gamma_at_lc": "81/100000",
+  "native_full_connection_spin_at_lc": [
+    [
+      1,
+      "-729/500000"
+    ],
+    [
+      9,
+      "-81/500000"
+    ]
+  ],
+  "spin_Hg_inverse_spin": "-59049/250000000000",
+  "single_K_spin_Hg_inverse_spin": "0",
+  "source_component_indices": [
+    1,
+    9
+  ],
+  "source_block_geometric_hessian": [
+    [
+      "0",
+      "-2"
+    ],
+    [
+      "-2",
+      "0"
+    ]
+  ],
+  "source_block_native_hessian": [
+    [
+      "729/125000",
+      "0"
+    ],
+    [
+      "0",
+      "-2349/125000"
+    ]
+  ],
+  "source_block_det": "-(1712421*zeta**2 + 62500000000)/15625000000",
+  "spin_resolvent": "59049*(1053*zeta - 25000)/(100000*(1712421*zeta**2 + 62500000000))",
+  "combined_geometric_plus_paid_stationary_coefficient_per_paid_weight": "81*(531441*zeta**2 + 3645000*zeta + 25000000000)/(40000*(1712421*zeta**2 + 62500000000))",
+  "torsion_shift_per_zeta": [
+    [
+      1,
+      "81*(21141*zeta - 250000)/(4*(1712421*zeta**2 + 62500000000))"
+    ],
+    [
+      9,
+      "-729*(81*zeta + 250000)/(4*(1712421*zeta**2 + 62500000000))"
+    ]
+  ],
+  "induced_pp_lower_bound_strict": "1/2000",
+  "lower_bound_numerator": "8798301*zeta**2 + 295245000*zeta + 775000000000",
+  "lower_bound_denominator": "68496840000*zeta**2 + 2500000000000000",
+  "all_connection_block_determinants": [
+    {
+      "indices": [
+        0,
+        6,
+        13,
+        15,
+        20,
+        22
+      ],
+      "det": "-2*(59049*zeta**2 + 6250000000)/48828125"
+    },
+    {
+      "indices": [
+        1,
+        9
+      ],
+      "det": "-(1712421*zeta**2 + 62500000000)/15625000000"
+    },
+    {
+      "indices": [
+        2,
+        4,
+        8,
+        10,
+        17,
+        18
+      ],
+      "det": "(282429536481*zeta**5 - 19371024450000*zeta**4 - 156609019687500000*zeta**3 + 49207500000000000000*zeta**2 - 316406250000000000000*zeta - 976562500000000000000000)/3814697265625000000000"
+    },
+    {
+      "indices": [
+        3,
+        7,
+        12,
+        23
+      ],
+      "det": "(59049*zeta**2 + 10125000*zeta + 3125000000)/48828125"
+    },
+    {
+      "indices": [
+        5,
+        11,
+        14,
+        16,
+        19,
+        21
+      ],
+      "det": "16*(81*zeta - 12500)*(81*zeta + 12500)/9765625"
+    }
+  ],
+  "Hn_rank": 17,
+  "native_vs_Palatini_operator_infinity_bound": "81/6250",
+  "sufficient_full_connection_invertibility": "abs(zeta) < 6250/81",
+  "independent_forward_fourier_checks": [
+    "81/100000",
+    "34263/50000000"
+  ],
+  "scope": "initial clock coefficient at the homogeneous pp jet; actual fixed protected8 preparation; all 24 Lorentz connection components in the stated single transverse Fourier jet; no full native action identification or uniform fixed-clock limit"
+}
