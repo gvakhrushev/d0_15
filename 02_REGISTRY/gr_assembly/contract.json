@@ -1023,6 +1023,12 @@
       "left": "Nonzero fifth-order coframe-gradient Ward source for one exact selected RREF representative of H=a*x, J=b*y.",
       "right": "No crossed-null finite solution for every lower-order kernel choice, or a physical D0-to-GR no-go.",
       "reason": "The representative fixes one joint mixed-quartic solution and two zero-free-parameter asymmetric-quartic solutions. The remaining homogeneous modes, other carriers, refinement and native physical admission are not tested."
+    },
+    {
+      "id": "endpoint-holonomy-vs-paid-history",
+      "left": "same final Q8 operator and conditional Golden endpoint probabilities",
+      "right": "actual chronological source history with prefix states, internal clock and paid ActionProtocol jet",
+      "reason": "On the pinned original Q8 carrier, 2-step and 8-step histories have the same final operator and endpoint law but clocks 2 and 8; the canonical primitive prices differ, and the legal C(t)=1+t^2 profile gives a second-source gap of 12 on the Golden-prepared input. This is a scoped component result, not the complete H+J+R price or physical selector. Preserve history until same-programme internal stationarity proves a valid quotient."
     }
   ],
   "source_fork_reconciliations": [
@@ -1147,7 +1153,7 @@
     {
       "id": "source",
       "title": "Полная история → тот же геометрический источник",
-      "contribution": "Полная 143484-запись восстанавливает абсолютный scalar Book source только при общем фильтре глубин. Result-only #334 точно отождествляет исходную шестиплакеточную S_star-плотность с отрицательным смешанным log-jet complete observer-covariant CAR16/Julia marked event; при оригинальном Golden p амплитуде base outcomes равны (p^2,0,p), а смена log-base даёт фиксированный множитель log(phi). Это не отождествляет tester с per-label full128 Kraus и не выбирает его как полную цену. Теорема P25 запрещает насыщенному положительному Cost с coframe-blind Info/attempt воспроизвести смешанный 2-jet Палатини (0,-1). Физический выбор полной цены, coframe-area Info и истинный stationary Schur открыты.",
+      "contribution": "Полная 143484-запись восстанавливает абсолютный scalar Book source только при общем фильтре глубин. Result-only #334 точно отождествляет исходную шестиплакеточную S_star-плотность с отрицательным смешанным log-jet complete observer-covariant CAR16/Julia marked event; при оригинальной Golden p амплитуде base outcomes равны (p^2,0,p), а смена log-base даёт фиксированный множитель log(phi). Та же signed S_star face локально факторизуется через уже существующие шесть Golden-фазовых наблюдаемых, но только как представление readout-функции, не как физический выбор опыта или цены. Независимый Q8 результат показывает, что одинаковый конечный оператор и Golden endpoint law могут иметь разные clocks и оплаченные prefix histories; законная стоимость C(t)=1+t^2 даёт second-source gap 12. Это запрещает endpoint-only цену на указанном носителе, но не определяет полную H+J+R-цену. Tester не отождествлён с per-label full128 Kraus и не выбран как полная цена. Теорема P25 запрещает насыщенному положительному Cost с coframe-blind Info/attempt воспроизвести смешанный 2-jet Палатини (0,-1). Физический выбор полной цены, coframe-area Info и истинный stationary Schur открыты.",
       "consumers": [
         "constitutive",
         "native_sector",
@@ -1160,7 +1166,7 @@
         "opposite-null-julia-order-memory",
         "full128-opposite-null-two-round-shannon-order-source"
       ],
-      "next_question": "Не повторять геометрическую алгебру, event-jet или математическую AB/BA-проверку. На точном исходном 16-site Role witness e_0(a)=diag(1,a,1,a^-1), U_{0,2}(t)=exp(t J23) вычислить Hessian выбранной полной H+J+R-цены в общем flat root: геометрический target S_star даёт (∂_a²S, ∂_a∂_tS)=(0,-1); сравнить полный результат по native Golden log-base, включая фиксированный множитель log(phi), без подгонки coupling. Сохранить исходные 16+24 вариации и реальные preparation/clock/work/oldRIGHT/observer/history rows. Если все primitive Costs насыщены C_e≥1, а Info/attempt coframe-blind и нет истинного внутреннего stationary Schur, точный P25 результат запрещает нулевую диагональ с ненулевой смешанной строкой; классифицировать только этот класс как NO-GO. Иначе вывести coframe-area-dependent Info/preparation/work/clock source либо Schur из оригинальных native примитивов и показать полный оплаченный return/failure-normalized jet, включая moving observer. Native Golden p amplitude улучшает нормировку, но не доказывает тождество tester с исходными per-label full128 Kraus и не выбирает полную цену. Текущая задача #334/#232 не меняется; этот P0 source gate не диспетчеризуется параллельно.",
+      "next_question": "Не повторять геометрическую алгебру, event-jet или математическую AB/BA-проверку. Два result-only ограничения задают корректный следующий расчёт: signed S_star face уже представлена существующими шестью Golden-фазовыми наблюдаемыми в локальном chart, поэтому не нужен новый Choi-эксперимент для одной лишь observability; Q8 показывает одинаковый endpoint при 2/8 шагах, разных исходных clock/history и разрешённом second-source gap 12. Следовательно, в полном тесте надо сохранить actual path prefixes и clock; этот gap — компонентная граница, не вся выбранная H+J+R-цена. На точном исходном 16-site Role witness e_0(a)=diag(1,a,1,a^-1), U_{0,2}(t)=exp(t J23) вычислить Hessian выбранной полной H+J+R-цены в общем flat root: геометрический target S_star даёт (∂_a²S, ∂_a∂_tS)=(0,-1); сравнить полный результат по native Golden log-base, включая фиксированный множитель log(phi), без подгонки coupling. Сохранить исходные 16+24 вариации и реальные preparation/clock/work/oldRIGHT/observer/history rows. Если все primitive Costs насыщены C_e≥1, а Info/attempt coframe-blind и нет истинного внутреннего stationary Schur, точный P25 результат запрещает нулевую диагональ с ненулевой смешанной строкой; классифицировать только этот класс как NO-GO. Иначе вывести coframe-area-dependent Info/preparation/work/clock source либо Schur из оригинальных native примитивов и показать полный оплаченный return/failure-normalized jet, включая moving observer. Native Golden p amplitude улучшает нормировку, но не доказывает тождество tester с исходными per-label full128 Kraus и не выбирает полную цену. Текущая задача #334/#232 не меняется; этот P0 source gate не диспетчеризуется параллельно.",
       "tags": [
         "источник",
         "история",
@@ -1173,14 +1179,19 @@
       ],
       "readings": [
         {
-          "label": "Result-only #334: native-Golden CAR16 event-jet weld with explicit full128 nonidentification",
-          "ref": "d0db8544f1573a2a7502a1c704e0515a899cc0de",
+          "label": "Result-only #334: native-Golden CAR16 star event factors through the owned six-phase atlas; full128 and price selection remain open",
+          "ref": "b307855df4a397e397cbf83e791026c9b79c75c6",
           "path": "02_REGISTRY/research/A4D_OBSERVER_COMPLETE_CAR16_JULIA_CHOI_STAR_DENSITY_WELD_2026_10_20.md"
         },
         {
           "label": "Result-only #334: exact saturated-Cost/coframe-blind-Info mixed-source NO-GO (P25)",
           "ref": "37263957b5c3ea2477acbac8b86f4b69c87e8e02",
           "path": "02_REGISTRY/research/A4D_P25_NATIVE_COST_FLOOR_PSD_MIXED_PALATINI_VACUUM_NO_GO_2026_10_20.md"
+        },
+        {
+          "label": "Result-only #334: identical Q8 endpoint, 2-vs-8 executed histories, and legal second-source gap 12",
+          "ref": "35c2f7efa6c41340e5f0384bcbe0c95588fdb61b",
+          "path": "02_REGISTRY/research/A4D_M1_Q8_FULL_HISTORY_VS_MINIMAL_ENDPOINT_PROGRAM_AND_PRICE_JET_NOGO_2026_10_20.md"
         }
       ]
     },
@@ -1267,7 +1278,7 @@
     {
       "id": "matter",
       "title": "Допущенные будущие тесты → достаточная память и материя",
-      "contribution": "Есть условная граница Q8-памяти, примеры потери источника при бинарном укрупнении и положительный mixed-order readout для двухраундового full128-инструмента. Последний показывает различимость на назначенном опыте, но не доказывает физическую композиционную совместимость операций.",
+      "contribution": "Есть условная граница Q8-памяти, примеры потери источника при бинарном укрупнении и положительный mixed-order readout для двухраундового full128-инструмента. Новый result-only Q8-контроль дополнительно фиксирует: один endpoint не восстанавливает source history, clock или оплаченный primitive second jet. Положительный order readout остаётся результатом назначенного опыта; он не доказывает физическую композиционную совместимость операций. Локальное представление S_star через имеющийся шестипараметрический Golden atlas не выбирает физический readout или цену.",
       "consumers": [
         "native_sector",
         "matter_source_ward",
@@ -1280,7 +1291,7 @@
         "opposite-null-julia-order-memory",
         "full128-opposite-null-two-round-shannon-order-source"
       ],
-      "next_question": "Измерить AB−BA в одном полном оплачиваемом native опыте с теми же OLD LEFT/RIGHT/reference, включая два порядка, boost-контроль и все исходы; сравнить это с последовательной физической композицией fullStep и посчитать observable composition defect. Затем установить, какие Spin-тесты реально допущены, и связать их память и источник с настоящим matter/Ward. Размер архива сам по себе этого не делает.",
+      "next_question": "Не повторять самостоятельную математику AB−BA и не сводить её цену к конечной голономии. Result-only #334 уже показывает endpoint-эквивалентные Q8-истории с разными clock/cost jets; CAR16 star source локально факторизуется через существующие шесть Golden-фазовых readout, если именно этот atlas будет операционно допущен и оплачен. Оставшийся переход — доказать admission и цену actual ordered path prefixes в одном полном D0 опыте с теми же OLD LEFT/RIGHT/reference, retained clock, controller/work/preparation и всеми исходами; сравнить эту цену с последовательным physical fullStep и вычислить observable composition defect на полном quotient. Затем связать тот же выбранный record/source с CAR matter и Ward. Assigned Julia/full128 readout capacity, local six-phase factorization и Q8 endpoint/history theorem не выбирают compulsory H+J+R и не создают новую параллельную задачу.",
       "tags": [
         "материя",
         "память",
