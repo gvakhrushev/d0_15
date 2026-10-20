@@ -193,3 +193,38 @@ Algebraically the lift both preserves the indefinite Spin bilinear (13) and carr
 Finally, the native \(-I_{16}\) central Q8 acts as \(\psi\mapsto-\psi\), so this bilinear current \(J^a\) by itself is BLIND to central -1, just as any unconditioned bilinear measurement is. The **conditional two-line Golden coherent INTERFERENCE** in §4 is therefore genuinely necessary to distinguish relative central memory on this carrier. This pinpoints which physical observables detect matter transport versus matter spin-sheet memory; neither may be silently substituted for the other.
 
 New independent native certificate controls use 100 random existing Fock16 state vectors as examples but all structural identities and the causality bound are proved by the finite CAR algebra itself. \`GR_closed=false\`.
+
+
+## 8. NEW exact endogenous LORENTZ HODGE and complex structure on THE SAME REAL16 CAR state space
+
+The physical GR response already owns six proper-Lorentz bivector curvature components, the original Hodge dual and a sign-sensitive Cartan/Palatini star contraction. To join them to Spin-sensitive original CAR matter without importing an imaginary generator, define from the ALREADY constructed four genuine native CAR \(\Gamma^a\) the ORIENTED Clifford VOLUME operator
+\[
+\boxed{\Omega_{\rm CAR}:=\Gamma^0\Gamma^1\Gamma^2\Gamma^3\in\operatorname{End}_{\mathbb R}(\mathcal F_{16}).}\tag{18}
+\]
+The verified **EXACT INTEGER** native Clifford identities give
+\[
+\boxed{
+\Omega_{\rm CAR}^2=-I_{16},\quad
+\Omega_{\rm CAR}^T=-\Omega_{\rm CAR},\quad
+\Omega_{\rm CAR}\Gamma^a=-\Gamma^a\Omega_{\rm CAR},\quad
+[\Omega_{\rm CAR},\Sigma_{ab}]=0,\quad
+[\Omega_{\rm CAR},\Pi]=0.
+}\tag{19}
+\]
+Thus \(\Omega_{\rm CAR}\) is a canonical **real orthogonal complex structure** generated internally by the native four Role CAR matrices; it is invariant under the connected Spin(1,3) representation and preserves Fock parity. It is NOT an external complex amplitude/field and not the same as \(Q_8\)'s central \(-I\). In each actual invariant Fock parity sector \(\mathbb R^8\), it defines a complex vector space of dimension four. No chiral projection or new physical Weyl fermion content is declared by that simple counting statement.
+
+The same real operator implements the true 4D Lorentzian Hodge pairing on all six native spin bivectors \(B_{ab}=\Gamma^a\Gamma^b\):
+\[
+\boxed{
+\begin{aligned}
+\Omega_{\rm CAR}B_{01}&=B_{23},&
+\Omega_{\rm CAR}B_{23}&=-B_{01},\\
+\Omega_{\rm CAR}B_{02}&=B_{31},&
+\Omega_{\rm CAR}B_{31}&=-B_{02},\\
+\Omega_{\rm CAR}B_{03}&=B_{12},&
+\Omega_{\rm CAR}B_{12}&=-B_{03}.
+\end{aligned}}\tag{20}
+\]
+This is EXACTLY the algebraic Lorentzian six-bivector duality with \(*^2=-1\); signs follow the native ordered Role orientation \(A,B,C,D\). In particular it supplies the same correct compact-rotation/noncompact-boost dual pairs whose signed projection was already owned by the original all40 six-plaquette Palatini star. It is not a theorem that the compulsory Book/G0 action contracts its geometric faces with this CAR Hodge — that **intertwiner/physical source** must still be proved — but the needed Lorentz algebra/complex/dual structures now have one explicit SAME-CARRIER realization, not three independently nominated reference operators.
+
+All finite identities (18)–(20) were checked using literal original 16-state Jordan–Wigner **integer** CAR matrices, not floating fit or geometrical assumptions. This closes the *algebraic* CAR16→Q8→Spin(1,3)→\(\mathfrak{so}(1,3)\) six-bivector Hodge compatibility layer, while leaving actual physical native Book action and causal matter stress/refinement open. \`GR_closed=false\`.
