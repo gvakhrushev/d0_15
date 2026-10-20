@@ -131,7 +131,7 @@ function decode(Qp,Qm){
     "positive-record odd->group inverse lost original Lorentz class");
  return {P,Pinv,R};
 }
-function actualBookWeights(site,j){
+function declaredClassWeights(site,j){
  const w0=1e-5*(1.2+.18*Math.sin(site*0.47+j*.71)),
        w1=1e-5*(.9+.11*Math.cos(site*.29+j*.41));
  assert(w0>0&&w1>0,"invalid native positive Book test weights");
@@ -153,7 +153,7 @@ for(let site=0;site<V;site++){
      links[shift(site,r)][s]),
     invL(links[shift(site,s)][r])),invL(links[site][s])),
     Pinv=invL(P);
-  const [wp,wm]=actualBookWeights(site,j),
+  const [wp,wm]=declaredClassWeights(site,j),
       Qp=golden17(P).map(x=>x*wp),Qm=golden17(Pinv).map(x=>x*wm),
       val=decode(Qp,Qm);
   maxP=Math.max(maxP,diff(val.P,P));
@@ -188,7 +188,7 @@ for(let axis=0;axis<4;axis++){
  let P=eye(),site=0;
  for(let i=0;i<L;i++){P=M(P,links[site][axis]);site=shift(site,axis)}
  assert(site===0,"not original root periodic Role Wilson");
- const [wp,wm]=actualBookWeights(0,6+axis),
+ const [wp,wm]=declaredClassWeights(0,6+axis),
    qP=golden17(P).map(x=>x*wp),
    qM=golden17(invL(P)).map(x=>x*wm),
    recovered=decode(qP,qM);
@@ -212,7 +212,8 @@ const result={
   groupQueriesForwardBackward:queries,
   all17GoldenBellOutcomesPerQuery:17,
   allFailureChannelsRetained:true,
-  actualBookClassWeightsUnequalAndMoving:true},
+  declaredPositiveClassWeightsUnequal:true,
+  compulsoryOriginalBookWeightsNotDerived:true},
  actualPositiveGolden17Source:{
   maximumNonlinearOddMatrixError:maxPositiveOdd,
   maximumOriginalSOFaceRecoveryError:maxP,
