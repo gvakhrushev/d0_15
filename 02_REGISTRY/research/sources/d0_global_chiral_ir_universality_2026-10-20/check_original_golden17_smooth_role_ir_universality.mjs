@@ -55,6 +55,56 @@ function ShannonDeriv(t){
   derivative.push(-derivative.reduce((s,v)=>s+v,0),0,0,0,0);
   return -derivative.reduce((s,v,i)=>s+v*Math.log(q[i]),0)/ell;
 }
+// FULL original 6-dimensional native SO(1,3) control: not just
+// J23 compact subgroup. Use genuine η-null N2/N3/barN2/barN3,
+// J23 and B, and ALL 17 complete positive Golden categories.
+// The local CODE and ROOT first Fréchet source must agree on each.
+const zer4=()=>Array.from({length:4},()=>Array(4).fill(0));
+const eye4=()=>Array.from({length:4},(_,i)=>Array.from({length:4},(_,j)=>+(i===j)));
+const eij=(i,j)=>{const A=zer4();A[i][j]=1;return A};
+const add4=(A,B,k=1)=>A.map((r,i)=>r.map((v,j)=>v+k*B[i][j]));
+const mul4=(A,B)=>A.map(r=>B[0].map((_,j)=>r.reduce((q,v,k)=>q+v*B[k][j],0)));
+const tra=A=>A.reduce((q,r,i)=>q+r[i],0);
+const fro=(A,B)=>A.reduce((q,r,i)=>q+r.reduce((w,v,j)=>w+v*B[i][j],0),0);
+const G=[
+ add4(eij(1,2),eij(2,0)),add4(eij(1,3),eij(3,0)),
+ add4(eij(0,2),eij(2,1)),add4(eij(0,3),eij(3,1)),
+ add4(eij(2,3),eij(3,2),-1),add4(eij(1,1),eij(0,0),-1)
+];
+const eta=[[0,1,0,0],[1,0,0,0],[0,0,-1,0],[0,0,0,-1]];
+const tr4=A=>A[0].map((_,j)=>A.map(r=>r[j]));
+const err4=(A,B)=>Math.max(...A.flatMap((r,i)=>r.map((v,j)=>Math.abs(v-B[i][j]))));
+const exp4=(A,t)=>{
+ let out=eye4(),term=eye4();
+ for(let n=1;n<=18;n++){term=mul4(term,A).map(r=>r.map(v=>v*t/n));out=add4(out,term);}
+ return out;
+};
+const sixChecks=[];
+for(let j=0;j<6;j++){
+ let X=G[j],baseNorm=fro(X,X)/2;
+ need(err4(add4(mul4(tr4(X),eta),mul4(eta,X)),zer4())<1e-14,
+   "ALL six actual original null Lorentz Lie generators metric skew");
+ for(let tt of [.025,.05,.08]){
+  let U=exp4(X,tt),m=tra(U)/4,norm=fro(U,U)/4;
+  let qq=G.flatMap(A=>{let y=fro(A,U)/(2*Math.SQRT2);
+     return [q0*(m+y)**2,q0*(m-y)**2]});
+  let gg=bell*p**4*norm,gb=bell*p**2*(1-p*p*norm),bg=bell*p**3*norm;
+  qq=qq.concat([gg-qq.reduce((a,b)=>a+b,0),gb,bg,bell-gg-gb-bg,1-bell]);
+  need(qq.length===17&&qq.every(x=>x>0)&&
+      Math.abs(qq.reduce((a,b)=>a+b,0)-1)<2e-12,
+    "full original p-Golden 17-category source strictly positive on ALL six Lorentz controls");
+  let qP=qq[2*j],qM=qq[2*j+1],
+      rootj=Math.SQRT2*(Math.sqrt(qP)-Math.sqrt(qM))/(2*Math.sqrt(q0)),
+      codej=Math.log(qP/qM)/(2*Math.SQRT2),
+      want=tt*baseNorm;
+  need(Math.abs(rootj-want)<=4*tt**3 &&
+       Math.abs(codej-want)<=4*tt**3 &&
+       Math.abs(codej-rootj)<=4*tt**3,
+   "original Golden CODE and ROOT share all-six Fréchet Lorentz source, differ only O(t³)");
+  if(tt===.05)sixChecks.push({generator:j,root:rootj,code:codej,
+    linear:want,diffOverCubic:(codej-rootj)/(tt**3)});
+ }
+}
 const H0=Shannon(0),a=.61,amp=.23;
 need(Math.abs(root(.17)-Math.sin(.17))<4e-15,
   "literal p Golden amplitude ROOT exactly gives original J23 odd curvature");
@@ -172,6 +222,7 @@ console.log(JSON.stringify({
  basis:"ACTUAL original CAR16 Golden-p true TWO fresh flags/Bell17; role SHARED-LINK periodic smooth J23 connection",
  golden:{p,φ:phi,originalBellSuccess:bell,
    completeOutcomeNumber:17,codeIsRelativeLogOdds:true,
+   allSixGenuineLorentzControls:sixChecks,
    nativeRootTaylor:"sin(t)=t−t³/6+O(t5)",
    nativeCodeTaylor:"sqrt2*atanh(sqrt2*tan(t/2))=t+t³/4+O(t5)",
    differenceThirdDerivativeCoefficient:"5/12"},
