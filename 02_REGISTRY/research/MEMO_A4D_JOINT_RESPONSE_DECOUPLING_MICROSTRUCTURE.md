@@ -8524,3 +8524,34 @@ The physical gap is now more sharply located: active placement and complete paid
 Two independently owned source probes should now be evaluated on that same execution and price. Along the uniform vertex-Info shift, the normalized full law has zero derivative while the absolute source obeys `d(-log_phi lambda)[1] = -1`; this tests whether the compulsory recorder pays the missing scalar. Along the existing volume-preserving metric shear, the full heat-plus-chronology candidate has `dJ_chron=0`, `dVol=0`, and `dH=2(E1-E2)>1/10000` at every native `L>=2`; a constraint multiplier also vanishes on that tangent. Thus passing the absolute-Info test cannot close the independent trace-free geometric source. If the same complete admitted action is `H+J+R`, its own derived `R` must supply `dR=-dH` on this shear. Neither derivative may be fitted or assigned to a separate postulated term. These two source slots give a compact next test for the one-face, one-run comparison.
 
 The latest PR head adds two hostile controls to that same test. First, for arbitrary heterogeneous Info the original 718×718 canonical-Cost transfer has exact rank three and its absolute Perron scalar is the largest root of a cubic in the three existing zone sums. The dedicated [same-law second-source owner](A4D_ABSOLUTE_BOOK_COST_SECOND_JET_NONSELECTION_WITH_FULL_GOLDEN_GATE_2026_10_19.md) proves that two still-permitted ActionProtocol primitive-cost families have identical normalized fixed-depth histories and the same value and first pressure source at the vacuum while their absolute-pressure second derivatives differ (`0` versus `2`). So a compact formula for `lambda` is not a selection law: the actual primitive Cost and the physical payment of its absolute pressure must be fixed by the same admitted programme. Second, the [full16 signed-Shannon/face owner](A4D_NATIVE_GOLDEN_FULL16_SIGNED_SHANNON_HESSIAN_AND_PRETRACE_FACE_NOGO_2026_10_19.md) shows that the complete 718×16 pointer Shannon has a signed `(3+,3-)` flat link Hessian but loses the first oriented `[ab]` face source; the positive pretrace `J23` marker retains it. The raw ordered marks and failure branches therefore remain necessary inputs to the physical source comparison. This rules out replacing the full ordered record price by its one-run Shannon scalar, without ruling out every other complete native action.
+
+## 20 October: generic-amplitude first-slow obstruction on the designated #232 warp
+
+The exact same-source first-slow system has now been extended from the pinned
+Cayley amplitude `t=1` to the full real Cayley parameter. It retains the fixed
+curved profile `f(y)=1+sin(2*pi*y)/(100*pi)`, the same-profile #216 comparator,
+all 96 phase/role/generator link corrections, both allowed flat-center slopes,
+and all 136 connection and metric rows. The center-amplitude tangent is
+`(4/(4+3*t^2))*Y`; using `Y` as its column only rescales one unknown by a factor
+that is nonzero for every real `t`.
+
+Writing `D=4+3*t^2`, each row coefficient has denominator dividing `D^4` and
+numerator degree at most eight, because each local plaquette expression has at
+most four Cayley-link factors. Nine exact rational evaluations therefore
+reconstruct the polynomial system after row scaling by `D^4`; an independent
+tenth evaluation at `t=9` replays both the full matrix and the prescribed
+source. Exact rank over `QQ(t)` is 97 for the 136×98 correction matrix and 98
+after adjoining the source. Thus a regular first-slow lift is impossible for
+all real amplitudes outside a finite algebraic exceptional set. Exact
+specializations give ranks 90/90 at `t=0` (the zero-carrier compatible point)
+and 97/98 at `t=1` and `t=2`.
+
+The exceptional nonzero roots have not been isolated. This is a generic
+amplitude obstruction to this particular first-slow lift, not a nonlinear
+no-go for #232, not a response-gap sequence, and not the task's
+`A4D-JOINT-MICROSTRUCTURE-METRIC-RESPONSE-NOGO` terminal. The smallest remaining
+calculation on this route is exact real-root isolation of the augmented-minor
+exception set, followed by pointwise compatibility checks there. Higher-order
+continuations and the normalized response terminal remain open. The bounded
+replay is
+[`a4d_y232_designated_warp_amplitude_generic_check.py`](certificates/a4d_y232_designated_warp_amplitude_generic_check.py).
