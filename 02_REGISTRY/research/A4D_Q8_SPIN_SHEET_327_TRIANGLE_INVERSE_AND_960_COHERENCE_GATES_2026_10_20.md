@@ -142,3 +142,16 @@ The regular eight-dimensional Q8 group-algebra representation makes nontrivialit
 An explicit finite interference contrast: in the group algebra, \(X=[1]+[z]\) and \(Y=2[1]\) are distinct positive-coefficient path-memory sums. Both have IDENTICAL SO/exterior images \(2I\), but their spinor images are \(0\) and \(2I\) respectively; a genuine coherent spin-sensitive complete instrument could distinguish them. A *single* spinorial path with central \(-1\) differs only by a global sign and is **not** observable in a normalized single-path Born probability: the effect requires actual retained coherence/relative path memory (or a suitable spin-sensitive loop spectral observable such as §4). This avoids a false claim that \(-1\) is automatically a directly observable one-shot detector event.
 
 This strengthens the **scope** of the existing #334 2648-dimensional SO source atlas. It is mathematically complete for its declared SO/exterior and scalar Cost−Info carrier; it is NOT faithful to the existing Q8 center on the full original algebraic-memory carrier, unless the actual G0/Book programme selects a physical quotient that kills e_- or carries a faithful spin-sensitive complementary channel. The **positive** native reconstruction in §§2–3 uses precisely the already present ABC triangle histories and 960 octahedral checks to keep that existing central sheet if physically admitted. \`GR_closed=false\`.
+
+
+## 7. Read-only literal LEAN type check: the existing fullStep DOES NOT YET CONSUME this Q8 center
+
+To avoid accidentally turning the positive theorem into an invented apparatus, verify the ACTUAL current source declarations (not names in prose). In \`03_FORMALIZATION/D0/Foundation/Omega8Center.lean\`, the genuine original \(Q_8\) is represented by integral \`UQuat\`; \`qONE\`, \`qNEG\`, \`uqmul\`, \`omega8_center_collapse\` and \`commutator_ij_eq_neg\` are already compiled. The center/order-memory \(-1\) is thus a **real original typed owner**, not a new invented primitive.
+
+But the actual \`03_FORMALIZATION/D0/Representation/GoldenCoherentMemory.lean\` declares
+\[
+\texttt{fullStep (a p : ℝ) : Matrix (Fin 4) (Fin 4) ℝ}
+\]
+and its existing \`blank_record_evolution\`, \`joint_readouts_reconstruct\` theorems involve precisely the 4-dimensional two-qubit fullStep and real input/readout coordinates; NO \`UQuat\`, central sheet, original \(K(9,11,13)\) link, scene ABC face or associated \(\operatorname{Spin}\) representation appears in this function's input type. It CANNOT BY ITS CURRENT SIGNATURE ALONE be cited as an already-established execution of the 327 Q8 sheet input→archive→spinorial matter comparison. That would require an existing **typed** composition/controlled extension of original fullStep which consumes these real original \(Q_8\) and scene path memory owners, including actual oldRIGHT/reference/clock/work; any such composition must be proved and paid, not inferred merely because each component exists.
+
+This is a genuine read-only audit of the current native representation boundary, NOT a theorem that NO possible future D0 programme could couple an existing Q8 bit. It identifies the exact last physical/source connector without loosening the positive (6)–(7) native all-triangle inverse or inventing 327 new fields. \`GR_closed=false\`.
