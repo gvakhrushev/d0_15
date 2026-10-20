@@ -118,6 +118,51 @@ L^{-4}\partial_{\rho_r}S_L\big|_{\boldsymbol\rho=1}
 \]
 The original Palatini star has exactly **zero** source in each of these four independent coframe variations at flat links. This proves a **four-row tensorial obstruction on a genuine independent coframe chart**, not a one-direction numerical mismatch. It is conditional on the same positive-observer orthogonal leg chart as (1); it is NOT a claim that the complete physically covariant stress tensor equals a Lorentz cosmological-constant term. In particular no identification of positive-observer isotropy with Minkowski \(\eta\)-isotropy is made.
 
+
+
+### 2.2. NO SCALE ESCAPE: a universal no-stationary-flat **four-dimensional coframe box**, including the actual \(\nu=3/5\) map
+
+The same rational calculation in fact does **not require** \(\rho_r=1\), nor does it require the four flat legs to have equal lengths. At all original flat links \(U=I\), fix any four *independent* positive-observer scales
+\[
+0<\rho_0,\rho_1,\rho_2,\rho_3\le1,\qquad
+v_r=h\sqrt{\rho_r}\,e_r.
+\]
+The exact whole-CAR16 spectrum is still
+\[
+\mu_{\boldsymbol\rho}(q)=\sum_{s=0}^{3}\rho_s\omega_s(q),
+\quad0\le\mu_{\boldsymbol\rho}(q)\le16,
+\quad b_q=1-\alpha\mu_{\boldsymbol\rho}(q).
+\]
+As \(0<\rho_s\le1\), the same **pointwise** rational inequalities \(b_q>79/80,\ f_q=b_q^{256L^2}>1/500000\) hold uniformly on this entire four-dimensional box. When differentiating in \(\rho_r\), the score \(\mu\) in (4) is replaced by \(\omega_r(q)\), satisfying
+\[
+0\le\omega_r(q)\le4,\qquad\sum_q\omega_r(q)=2L^4.
+\]
+Therefore the exact thermal/feedback derivative in **each** coframe direction obeys, without invoking permutation symmetry,
+\[
+\partial_{\rho_r}H
+\ge-\frac{4}{79/80}=-\frac{320}{79},\qquad
+\partial_{\rho_r}J
+\ge 2048z\cdot\frac34\cdot
+  \frac{2L^4}{500000}
+=\frac{3L^4}{512000000}.
+\]
+With \(\partial_{\rho_r}R=\operatorname{Tr}(M^\dagger\Delta_rM)\ge0\) under true preparation stationarity:
+\[
+\boxed{
+L^{-4}\partial_{\rho_r}S^{\rm bare\,HJR}_L(\boldsymbol\rho,M)
+\ge \underbrace{\frac3{512000000}
+-\frac{320}{79L^4}}_{\ge c_*/4> 2.5\cdot10^{-9}},
+\quad r=0,1,2,3,\quad
+L\ge256,\quad0<\rho_s\le1.
+}\tag{7b}
+\]
+Thus the bare conditional full \(H+J+R\) has **no genuine stationary flat-link field configuration anywhere inside this whole nondegenerate box**, for ANY genuinely fixedRIGHT-stationary normalized preparation, rather than merely failing at one physical normalization. At every such flat configuration, the original star/Golden-J2 vacuum geometric coframe source is zero.
+
+This resolves an important **same-carrier normalization concern**. The already owned kinematic J2-to-positive-Dirac bridge in \`A4D_SAME_HISTORY_PRICE_AND_SOURCE_COMPOSITION_2026_10_20.md\` §7 uses
+\(e_N=\nu^{-1}S e_{J2}\), \(v_N=\nu S\eta e_{J2}^{-T}\), \(S=\operatorname{diag}(1,1,-1,-1)\) and \(\nu=3/5\). Since \(S\) is orthogonal for the observer's positive Hilbert pairing and the flat native creation legs have length \(\nu\), its **flat source** lies at the exact box point \(\rho_r=\nu^2=9/25\). The inequality (7b) therefore applies **at the mapped native flat point as well**, assuming the unchanged paid HJR scaling \(h\) and correctly transported observer/state. This is stronger than merely checking \(\nu=1\): no fixed choice of \(\nu\in(0,1]\) can turn these flat conditional field Euler rows into zero without a real additional physical price/source.
+
+Do **not** infer the finite-\(t\) J2\(\to\)HJR positive action identity from this constant coframe map: the full moving scene dressing, independent observer variations and complete oldRIGHT/clock/work are still missing. What is excluded is the attempt to repair the **already exact flat-source collision** by a mere constant change of the physically admissible coframe normalization.
+
 ## 3. NEW local family theorem: no continuous direct same-action lift of ALL small Einstein waves
 
 The already accepted same-metric positive configured Golden-J2 theorem supplies a genuine **one-parameter subfamily of its infinite-dimensional exact NONVACUUM solutions**. For any sufficiently small fixed smooth \(\Psi_0\not\equiv\text{constant}\) and harmonic wave \(W_0(u,x,y)\not\equiv0\), let, for real small \(t\),
