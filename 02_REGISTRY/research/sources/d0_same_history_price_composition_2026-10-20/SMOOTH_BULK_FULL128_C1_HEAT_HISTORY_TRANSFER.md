@@ -171,3 +171,46 @@ with no other field-dependent price/Info terms and the above actual fixed or tru
 Even after solving the **combined** internal/preparation Euler of a genuinely additive candidate (16), the envelope derivative is the partial field derivative with internals fixed; the Rayleigh energy and the new port term each have nonnegative \(\partial_{\rho_r}\) there. Hence no positive multiple of the KNOWN PAID PORT COST restores the flat Einstein Euler on that chart. Retaining additional mandatory port ticks simply increases m, not its sign. If an alternative source has field-dependent controller/label/clock/preparation **costs or negative Info**, the theorem does NOT exclude it: that is the exact remaining Book03 source obligation, which cannot be discharged by another return-port probability alone.
 
 **Strong synthesis:** The *original* same-history port cost already has a determined sign, and the original HJR flat bulk pressure has the SAME sign. Therefore the physical restoring source, if D0 admits one, must arise in its truly selected **nontrivial Info/reference/relative-history or genuinely additional internal price**, with a derived negative coframe first jet; it is not hidden in the previously-missing multistep Γ correction, since that correction vanishes in the flat full128 history and is O(h) in smooth periodic bulk. This does NOT identify Shannon entropy with compulsory Book03 Info or choose a fitted negative term. It is a sharp physical selection test.
+
+
+## 7. NEW UV/IR EXTENSIVITY SEPARATOR ON THE ACTUAL FULL rank128 RIESZ PREPARATION
+
+The source sign result in §6 is sharpened **without inventing another preparation**. On the original periodic flat *physically scaled* coframe \(v_r=h\nu e_r\), \(h=1/L\), the actual rank128 prepared RIGHT Gram \(I_{128}/128\) occupies the COMPLETE first positive Dirac shell: \(8\) momenta \(q=\pm\hat e_r\) times ALL16 CAR grades. Its eigenvalue is exactly
+\[
+\lambda_{1,L}=4\nu^2\sin^2(\pi/L)\le4\nu^2\pi^2 L^{-2}.
+\tag{22}
+\]
+The original all128 full-history port-cost owner, evaluated on the same normalized rank128 density (or its unchanged oldRIGHT purification), gives for EVERY \(m=256L^2\) and \(\varepsilon=p^2/(64L^2)\):
+\[
+\boxed{\ \mathbb E C_{\rm port,m}
+=m+4p^3\lambda_{1,L},\qquad
+\partial_{\rho_r}\mathbb E C_{\rm port,m}\Big|_{\rho_r=1}
+=4p^3\,\operatorname{Tr}(\rho_{\rm Riesz}\Delta_r)
+=p^3\lambda_{1,L}=O(L^{-2}),\quad r=0,1,2,3. \ }\tag{23}
+\]
+Here \(\rho_r\) scales the four creation-leg **squares** separately; each of the eight original selected momenta contributes one direction, and exactly two of them are in each r, so the \(1/4\) is an exact original rank128 multiplicity ratio. The full \(\rho_{\rm Riesz}\) is held fixed in the partial source; if the actual Riesz section moves, the total source at *true complete* internal stationarity is this partial derivative by the envelope identity. These equalities also hold for arbitrary fixed Riesz-shell weights with \(0\le\partial_{\rho_r}\mathbb E C_{\rm port,m}\le4p^3\lambda_{1,L}\), although the exact \(1/4\) then changes.
+
+The completely literal original *total nonblank output* probability is
+\(e_{L}=\varepsilon\lambda_{1,L}-(\varepsilon^2/4)\lambda_{1,L}^2=O(L^{-4})\).
+Expected total nonblank events over ALL \(m\) actual rounds are therefore
+\(m e_L=O(L^{-2})\), **not** order one. The unchanged full-record source owner
+\`A4D_COMPLETE_RECORD_CHANNEL_AND_NATIVE_COST_SOURCE\` §§6,12 has the exact
+conditional pointer entropy chain and the uniform strict-Julia fixed-shell mark jets. On this same low-energy shell it yields
+\[
+H_{\rm pointer}=O(L^{-2}\log L),\qquad
+\partial_{\rho_r}H_{\rm pointer}=O(L^{-2}\log L)
+\tag{24}
+\]
+in a uniformly bounded C1 coframe/observer chart with the specified fixed complete output labels. No "missing" exit labels or reduced-record postselection is used; the conditional 63-way mark entropy is bounded by each rare event's actual probability and controlled row jets. Equation (24) is a property of THIS pointer Shannon Info **candidate**, not an identification with the complete original Book03 operator Info. Coherent rank-birth entropy can have different C2 behavior, so do not infer a second-source bound from (24).
+
+By contrast, the previously exact SAME normalized physical coframe full-HJR first-source certificate proves
+\[
+\boxed{L^{-4}\partial_{\rho_r}(H+J+R)\ge c_r>4.9\times10^{-9}
+\quad\text{for EVERY}\ L\ge256,}
+\tag{25}
+\]
+while the original star/Golden-J2 flat vacuum source is zero. At fixed full RIGHT128 preparation, the port expected Cost first source is \(O(L^{-2})\) in **TOTAL** and \(O(L^{-6})\) after dividing by \(L^4\), and this pointer entropy candidate is \(O(L^{-2}\log L)\) total, \(O(L^{-6}\log L)\) in bulk units. Neither can cancel the extensive nonzero bare-HJR pressure; the signs of the actual port Cost and HJR source are moreover both nonnegative.
+
+**Physical discriminatory conclusion:** on the SAME 16L⁴ site/fullCAR carrier with the SAME original normalized Riesz128 input and full128 tape, the *currently derived* one-preparation original port Cost and its classical pointer Shannon candidate are **subextensive**, while the bare HJR thermal/feedback source is extensive. No multiplication by the number of outcomes 128^m is legitimate: actual normalized full-history probabilities already sum to one. Therefore a full native Book03 completion that is genuinely Einstein-stationary must supply another **bulk-extensive, field-sensitive** Info/reference/work/clock/ensemble preparation source, or change the conditional physical action through a genuinely derived nonadditive binding. Simply lengthening the already-paid rank128 tape, adding a finite fixed number of such tapes, or ignoring Γ cannot work.
+
+This still does NOT refute D0: a compulsory per-site complete archive, a different admitted physical state/clock distribution, an explicitly proved extensive reference/Info accounting or a non-additive native operator law could alter the scaling. But this is a precise "one normalized oldRIGHT128 programme cannot pay for the bulk pressure" separator on the SAME flat physical-carrier root, not a philosophical missing-action remark.
