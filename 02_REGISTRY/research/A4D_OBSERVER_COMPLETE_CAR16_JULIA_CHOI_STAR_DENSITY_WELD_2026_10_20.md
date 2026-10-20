@@ -104,3 +104,39 @@ Companion checks:
 - \`.../check_car16_literal_star_density.py\` (36 exact \`G_2\`/\`STAR\`/CAR16 slots).
 
 All local replays PASS. Remote CI/independent scientific acceptance and actual compulsory physical selection are NOT claimed.
+
+## 6. ORIGINAL native Golden completion: the exact star response needs NO Julia probability fitting
+
+The earlier analytic witness used c=1/2 as the existing original opposite-null Julia test control, but #334's later, stronger \`A4D_TWO_RECORD_PHASE_ATLAS_AND_AUTOMATIC_PREPARATION_SOURCE\` §5.2 identifies the ACTUAL native Golden contraction parameter \(c=p=\varphi^{-1}\), with initial GOOD probability \(c^2=p^2\) and BAD probability \(1-c^2=p\). We now re-run the *same* full-CAR16 complete positive three-label Choi construction with the ORIGINAL native Golden amplitude instead:
+
+\[
+T_c(U)=c\Lambda(U),\quad F_c(U)=\sqrt{I-c^2\Lambda(U)^{\dagger_n}\Lambda(U)},\quad
+q_{{\rm mark},c}(U)=\frac{c^2|\det(I+U)|^2}{256},\quad
+q_{{\rm good},c}(U)=\frac{c^2\det(I+U^{\dagger_n}U)}{16}. \tag{6.1}
+\]
+
+All original failed/unmarked branches are retained, \(q_{\rm fail}=1-q_{\rm good},\ q_{\rm good,unmark}=q_{\rm good}-q_{\rm mark}\). There is a strict common positive chart for every fixed \(0<c<1\) near the identity. At the native Golden \(c=p\), the three outcome masses at the flat identity are **EXACTLY**
+
+\[
+\boxed{(q_{\rm mark},q_{\rm good,unmark},q_{\rm fail})=(p^2,0,p),\qquad p+p^2=1.}
+\]
+
+The entire signed joint-event log Hessian of §2 is INDEPENDENT OF c: \(\log q_{{\rm mark},c}=\log c^2+2\log|\det(I+U)|-\log256\). Likewise the literal old geometric star face equality (4) remains EXACT for \(c=p\); neither the \((3+,3-)\) signature nor its \(-1\) cell normalization requires choosing \(1/2\) in place of the existing Golden coefficient. This upgrades the constructed positive apparatus from an arbitrary diagnostic amplitude to the **same Golden Julia amplitude already used in the owned six-phase CAR atlas**, without declaring its Choi mark physically compulsory.
+
+For each boost K, \(q_{\rm mark,p}(s)=p^2\cosh^4(s/2)\), \(q_{\rm good,p}(s)=p^2\cosh^2s\); for each rotation J, \(q_{\rm mark,p}(s)=p^2\cos^4(s/2)\), \(q_{\rm good,p}(s)=p^2\). Thus exactly the same unconditional/conditional Hessian distinction holds and no failure mass is omitted. The proper moving-observer adjoint of §4 makes ALL three completed probabilities Lorentz covariant.
+
+**Critical no-identification control:** the older literal original one-round full128 nonblank-label ports have \(K_{0,k}=pL_k,\ K_{1,k}=\sqrt p\,L_k\) with the SAME data map \(L_k\); their conditional port probabilities are frozen \((p^2,p)\) even under original J23 field perturbations. By contrast the constructed \(T_p(U)=p\Lambda(U)\) has nontrivial boost-dependent GOOD/BAD probabilities. Sharing the Golden base weights does **NOT** prove they are the same field-dependent instrument. The already-owned full two-density Golden atlas is the more plausible consuming experiment, but its implementation, selected Book price and field-to-coframe-area source are not forced. No full128/Einstein promotion.
+
+Finally, Book03's original Cost unit is the Golden logarithm \(-\log_\varphi q=-\log q/\log\varphi\). Equation (4) has a completely fixed change-of-base:
+
+\[
+\boxed{G_2(B,\star \mathfrak b(C))
+=(\log\varphi)\left.
+\partial_s\partial_t[-\log_\varphi q_{{\rm mark},p}(e^{sX_B}e^{tC})]\right|_0.}\tag{6.2}
+\]
+
+This is a MATHEMATICAL conversion of the same selected geometrical density into Golden information units, not proof that Book03 actually selects the marked-event surprisal or its two probe derivatives. The natural-log-to-Golden factor is forced if and when that binding exists; it is not a free gravity coupling.
+
+Native-Golden exact six-direction regression:
+\`sources/d0_book_geometry_double_schur_2026-10-19/check_car16_native_golden_julia_choi.py\`
+and independent full-Fock numerical three-label verifier \`d0_car16_complete_golden_julia_star_2026_10_20.py\` in the companion conversation artifact. Both local runs PASS.
