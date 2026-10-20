@@ -178,8 +178,8 @@ for(const [num,den] of [[25,9],[49,25]]){
  ok(sqN**2===num&&sqD**2===den,"nontrivial site weight is a perfect square rational");
  const ehatNumerator=scal(sampleE,sqN);
  const ehatAction=actionOnE(ehatNumerator,3,2);
- ok(ehatAction===num*orig && ehatAction/den===(num/den)*orig,
- "finite all-six-face two invariant geometric channels exact Book-Weyl dressing");
+ ok(ehatAction===num*orig && ehatAction*den===num*den*orig,
+ "finite all-six-face two invariant geometric channels exact Book-Weyl dressing by integer cross multiplication");
 }
 console.log(JSON.stringify({
  status:"PASS_ORIGINAL_CAR16_LORENTZ_HODGE_HOLST_TORSION_BIANCHI_BOOK_WEYL",
