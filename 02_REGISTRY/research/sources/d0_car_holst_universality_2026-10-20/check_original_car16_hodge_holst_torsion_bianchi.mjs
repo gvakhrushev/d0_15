@@ -263,6 +263,28 @@ for(const v of samples){
   "4D native Book-Weyl metric EH -> exact Brans-Dicke omega=-3/2 bulk + true boundary");
 }
 
+
+// EXACT native Book-Weyl metric-variable redundancy: ghat=W*g has ten
+// outputs from eleven raw (ten metric + one Book pressure) coordinates,
+// full rank 10 and ONE Weyl kernel for W>0, no numerical scalar mass fit.
+// At any root of an action depending ONLY on ghat, the raw Hessian has this
+// exact vertical gauge zero mode by chain rule and exact Weyl invariance.
+const Wjac=2,gvec=[2,1,0,-1,3,0,1,4,-2,5];
+const jac=Array.from({length:10},(_,i)=>
+ Array.from({length:11},(_,j)=>j<10?(i===j?Wjac:0):gvec[i]));
+const vweyl=[...gvec.map(z=>-z),Wjac];
+ok(rankMod(jac)===10 &&
+   jac.every(row=>row.reduce((sum,z,i)=>sum+z*vweyl[i],0)===0),
+ "original positive Book metric conformal map rank10/11 and exact single gauge mode");
+// Analogous ORIGINAL 16-component coframe/Book-ROOT map ehat=s e:
+// no 17th local physical graviton degree of freedom is introduced by
+// a pure geometric compensation direction.
+const evec=sampleE.flat(),sRoot=3;
+const ejac=Array.from({length:16},(_,i)=>
+ Array.from({length:17},(_,j)=>j<16?(i===j?sRoot:0):evec[i]));
+ok(rankMod(ejac)===16 &&
+   ejac.every(row=>row.reduce((sum,z,i)=>sum+z*([...evec.map(q=>-q),sRoot][i]),0)===0),
+ "native full16 coframe/root-Book map rank16/17 and exact radial gauge mode");
 // NEW BOOK ENDPOINT WEIGHT = EXACT PROJECTIVE GEOMETRY, not extra curvature.
 // Starting from hat e=e^sigma e, same ORIGINAL Lorentz spin connection
 // omega, the raw and dressed affine connections obey
@@ -338,7 +360,9 @@ console.log(JSON.stringify({
   actualNativeSceneW:[W0,W1],independentBookInfoShifts:[t0,t1],
   BookWeylSiteActionResidual:groupResidual,conformalRicci4DChecks:samples,
   projectiveBookEndpointCurvatureChecks:projectiveChecks,
-  BransDickeOmega:"-3/2",movingImmirziTorsionHostileControl:variableHolstTorsionFreeSource},
+  BransDickeOmega:"-3/2",
+  BookWeylMetricMap:{inputs:11,outputs:10,rank:rankMod(jac),singleGaugeKernel:true},
+  BookWeylCoframeMap:{inputs:17,outputs:16,rank:rankMod(ejac),singleGaugeKernel:true},movingImmirziTorsionHostileControl:variableHolstTorsionFreeSource},
  proofScope:"exact original finite CAR/so(1,3) algebra + mathematical continuum torsionfree Palatini-Holst theorem; no compulsory Book/G0, no native finite-torsionless/GR refinement",
  GR_closed:false
 },null,2));
