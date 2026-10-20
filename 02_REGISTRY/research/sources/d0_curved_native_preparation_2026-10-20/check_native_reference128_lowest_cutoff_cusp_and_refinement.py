@@ -1,0 +1,66 @@
+#!/usr/bin/env python3
+"""Original native Dirac protected 2-grade B=M_nu (S-I)/h, actual rank128
+fixedRIGHT spectral MINIMUM: exact fourfold cutoff derivative
+{-nu*q,-nu*q,+nu*q,+nu*q} for smooth Fourier coframe field.
+Original 65/131/257 full finite doubled singular spectra independently
+reproduce the non-C1 source kink with NONZERO fixed-period h->0 limit.
+NO physical G0 selected R-minimization or full16 boundary is asserted.
+"""
+import math
+import numpy as np
+
+RANK=128
+K=32
+NU=0.7
+PERIOD=1.3
+for L in (65,131,257):
+    h=PERIOD/L
+    w=2*math.pi*K/L
+    x=np.arange(L)
+    D=np.zeros((L,L))
+    for a in range(L):
+        D[a,a]=-1/h
+        D[a,(a+1)%L]=1/h
+    Q=D.T@D
+    band=4*math.sin(w/2)**2/h**2
+    F=np.column_stack((
+        np.sqrt(2/L)*np.cos(w*x),
+        np.sqrt(2/L)*np.sin(w*x)))
+    assert np.max(np.abs((Q-band*np.eye(L))@F))<1e-7
+    W=np.diag(np.cos(2*w*x))
+    # Actual original grade0 R=||M_nu D f||^2.
+    # Grade1 R=||D^T M_nu f||^2 (true positive shifted adjoint).
+    H0=F.T@(2*NU*D.T@W@D)@F
+    H1=F.T@(NU*(W@(D@D.T)+(D@D.T)@W))@F
+    slopes=np.sort(np.concatenate((np.linalg.eigvalsh(H0),
+                                     np.linalg.eigvalsh(H1))))
+    slopes_exact=np.array([-NU*band,-NU*band,NU*band,NU*band])
+    assert np.allclose(slopes,slopes_exact,atol=3e-7,rtol=1e-11)
+    assert 2+4*31+2==RANK
+    # Two grades have EXACT duplicate singular-value spectra at any
+    # nonconstant nu_x; count all original 2L spectral states honestly.
+    def min_rayleigh(eps):
+        profile=NU+eps*np.cos(2*w*x)
+        B=profile[:,None]*D
+        vals=np.linalg.eigvalsh(B.T@B)
+        all_e=np.sort(np.concatenate((vals,vals)))
+        return float(all_e[:RANK].sum()/RANK)
+    r0=min_rayleigh(0.)
+    expected_jump=4*NU*band/RANK
+    for eps in (1e-5,1e-6):
+        rp=min_rayleigh(eps);rm=min_rayleigh(-eps)
+        left=(r0-rm)/eps
+        right=(rp-r0)/eps
+        jump=left-right
+        assert abs(jump/expected_jump-1)<.006
+    print("PASS original L",L,"full",2*L,"states, rank",RANK,
+          "native pp Fourier q",band,
+          "exact derivative jump",expected_jump,
+          "measured",jump,
+          "cusp",NU*band/64)
+limit=NU*(2*math.pi*K/PERIOD)**2/64
+assert limit>0
+print("PASS fixed physical period limiting cusp coefficient",limit)
+print("PASS exact FOUR cutoff slopes +/-nu*q twice; full lowest-128 source NOT C1")
+print("FIREWALL original fully selected G0/M1 H+J+R/oldRIGHT or DIRICHLET boundary OPEN")
+print("GR_closed=false")
