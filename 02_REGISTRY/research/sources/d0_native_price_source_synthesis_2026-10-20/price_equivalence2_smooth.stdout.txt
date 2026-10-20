@@ -1,0 +1,15 @@
+LC= False continuum= 0.0029102550347111845
+{'L': 8, 'lambda_h': np.float64(3.3741298807309725), 'energy_generator_drift': np.float64(0.0026241583916828404), 'Q_generator_drift': np.float64(0.0026225360774052575)}
+{'L': 16, 'lambda_h': np.float64(3.5076311418799055), 'energy_generator_drift': np.float64(0.002836212532116633), 'Q_generator_drift': np.float64(0.002835756738122086)}
+{'L': 32, 'lambda_h': np.float64(3.5416571160765637), 'energy_generator_drift': np.float64(0.0028915828474467276), 'Q_generator_drift': np.float64(0.0028914655402818568)}
+{'L': 64, 'lambda_h': np.float64(3.5502047191226795), 'energy_generator_drift': np.float64(0.002905576823977185), 'Q_generator_drift': np.float64(0.002905547283670984)}
+{'L': 128, 'lambda_h': np.float64(3.5523441962019935), 'energy_generator_drift': np.float64(0.002909084845745369), 'Q_generator_drift': np.float64(0.0029090774472688707)}
+amplitude first source h64= 0.014542092063862809 continuum= 0.014565539174240213
+LC= True continuum= 0.008593132168200493
+{'L': 8, 'lambda_h': np.float64(3.3741298807309725), 'energy_generator_drift': np.float64(0.006467588932947521), 'Q_generator_drift': np.float64(0.006462507023337949)}
+{'L': 16, 'lambda_h': np.float64(3.5076311418799055), 'energy_generator_drift': np.float64(0.007969035187946005), 'Q_generator_drift': np.float64(0.007967448249670994)}
+{'L': 32, 'lambda_h': np.float64(3.5416571160765637), 'energy_generator_drift': np.float64(0.008430561429062067), 'Q_generator_drift': np.float64(0.008430140440625067)}
+{'L': 64, 'lambda_h': np.float64(3.5502047191226795), 'energy_generator_drift': np.float64(0.00855206758424032), 'Q_generator_drift': np.float64(0.008551960740552644)}
+{'L': 128, 'lambda_h': np.float64(3.5523441962019935), 'energy_generator_drift': np.float64(0.008582839450298252), 'Q_generator_drift': np.float64(0.008582812638282533)}
+amplitude first source h64= 0.04278434380111661 continuum= 0.042989832149589034
+PASS exact native identities, positive coefficients and converging first source
