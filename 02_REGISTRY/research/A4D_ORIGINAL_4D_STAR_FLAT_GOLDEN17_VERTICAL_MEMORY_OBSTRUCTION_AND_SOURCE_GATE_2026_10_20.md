@@ -73,6 +73,46 @@ Because f_x(t) is identically zero to ALL orders, for EVERY smooth scalar F one 
 
 while every Df_x/dt=0. This is the exact explicit FIRST SOURCE DESCENT FALSIFIER for the pointer-Shannon candidate. It does NOT falsify the compulsory D0 Book/G0 action because no theorem selects pointer Shannon as that action.
 
+## 4.1. NEW MATCHED POSITIVE RESULT: Shannon also LOSES the actual orientation-odd Palatini FIRST source — Golden signed marks do NOT
+
+The original J23 source audit above has a complementary ORIGINAL experiment, with **exactly the same original Lorentz generator, SAME full two-fresh Golden17 apparatus, same 16-site actual Role lattice and same true fixed coframes**. Move the ONE nonidentity original shared link to Role direction 2 instead of 0:
+
+    U_(site0, Role-dir2)(t)=exp(tJ23).
+
+Its six geometrically integrable affected real based faces now include the face (Role2,Role3), whose original coframe/Hodge pairing selects precisely J23. Direct exact original support/Hodge algebra, confirmed by the true 16×4 shared-link assembly, gives
+
+    f_(site0)(t)=−sin(t),
+    f_(site8)(t)=+sin(t),
+    f_x(t)=0 on all other original fourteen sites.
+
+In particular the two local site densities carry a GENUINE orientation-odd linear gravitational first source f'_0(0)=−1, f'_8(0)=+1. At t=.08 the two exact nonzero values are −0.0799146939691727,+0.0799146939691727; the full true site-density first-jet norm is 1.41270555055124 from centered finite difference (limit sqrt2).
+
+Yet the same original 17-way FULL pointer Shannon is EVEN under t↔−t. At every face the only original outcomes changing sign are the J23 + and − MARKS, which are interchanged. Since Shannon is invariant under permutation of outcome labels,
+
+    H_17(exp(tJ23))=H_17(exp(−tJ23))
+    and hence D_t H_96(0)=0,
+
+while D_t f_(site0)(0)=−1 and D_t f_(site8)(0)=+1. The saved complete 96-face readout reports EXACT equal Shannon for ±.08. Therefore ordinary full pointer Shannon fails as a **signed first-source decoder** even when the TRUE original geometric density is nonzero to first order. It loses the orientation the native six-face Palatini operator MUST retain.
+
+Crucially THE COMPLETE NATIVE GOLDEN RECORD DOES NOT LOSE THE SIGN. With h=1/4096, p=φ^-1, m(t)=(1+cos t)/2 and s(t)=sin(t)/sqrt2, its TRUE two J23 marker labels obey
+
+    q_(J23,+)(t)−q_(J23,−)(t)
+       = (h p^4/6) m(t) s(t),
+
+which is STRICTLY ODD. The same already-owned original square-root signed decoder gives exactly
+
+    (256sqrt3/p²)[sqrt(q_(J23,+))−sqrt(q_(J23,−))]
+      = Tr(J23^T exp(tJ23)) =2 sin t,
+
+on the original positive root chart. At t=.08, the observed finite Golden positive probability difference is 3.349305996062349e−7 versus analytically 3.3493059960623477e−7; exact signed Lie recovery is 0.15982938793834536 (=2sin .08) to machine precision. ALL 17 categories, including the Bell failure, remain present.
+
+This produces a STRONG **TWO-SIDED exact readout discrimination theorem on ONE original Regulator and SAME Golden16 instrument**:
+
+1. Move J23 along Role0: all 16 genuine Palatini f_x vanish for all t, but pointer Shannon H changes and full17 Fisher/KL is strictly positive (EXTRANEOUS internal memory price relative to f).
+2. Move J23 along Role2: true Palatini f_0/f_8 are nonzero ODD to first order, yet Shannon is even and has ZERO first derivative; the original retained signed GOLDEN mark gives the correct ODD first derivative (MISSING signed Einstein geometry in Shannon).
+
+Thus one may NOT use ordinary positive Shannon/normalized Born logpartition as the compulsory signed GR action just because their entire event alphabet is complete: the original positive outcome LABELS and their PRETRACE amplitude-root phase differences carry the correct source, while Shannon symmetrization forgets its SIGN and still charges unrelated Lorentz memory. This is a mathematical **selector no-go for Shannon as universal gravitational source**; it is NOT proof that the compulsory original G0 action chooses the signed root decoder. The latter has already been constructed as an observable on the same original carrier and reproduces the full 640 finite Euler in the independent owner. The unresolved task is REAL BOOK/M1 physical choice of this signed contraction, with actual Cost/Info/clock and internal stationarity.
+
 ## 5. A precise full-positive-data processing loss: Fisher, KL, and Petz source gate
 
 The original true 17-outcome classical Fisher information in the above geometric-scalar invisible J23 direction is
