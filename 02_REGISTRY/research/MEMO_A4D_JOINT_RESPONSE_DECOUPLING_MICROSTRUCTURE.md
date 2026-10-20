@@ -9118,3 +9118,65 @@ the zero-support mixed terms vanish; its exact replay and receipt are in
 This validates the commutator-specific order contrast for that assigned
 instrument at this second jet. Sequential physical admission and selection
 of this price by unchanged D0 remain open.
+
+
+## 20 October: all-refinements flat HJR source and minimum six-record information
+
+Two further bounded source/readout results are now published **inside this
+existing EXP execution**; neither changes the original raw216 or physical
+GR terminal. They make the next *one-programme* source test quantitative
+without selecting or fitting a missing action.
+
+1. **The original conditional full H+J+R has a uniform non-Palatini
+   flat-holonomy source on every integer L>=11.** On the actual full
+   CAR16 periodic carrier, U=I, invertible spatially constant coframes
+   v_r=s e_r/4 and the exact moving rank128 fixed-right Riesz
+   preparation, ALL original six-face Palatini densities are ZERO.
+   Nevertheless at s=1/4 the unchanged full scalar H/J/R action satisfies
+   dS/d(s²)>=lambda_first,L>=1, and dS/ds>=1/2, in every refining
+   L>=11. This uses an **all-L analytic** normalizer bound with an
+   exact-rational Taylor-11 Gaussian comparison; it is not a selected
+   root, numerical extrapolation, discarded thermal complement or
+   changed spectrum. In the original unscaled coefficient C1 dual the
+   source has norm >=2. Any claimed same-action off-shell
+   Palatini/source equivalence with o(1) error on this smooth family must
+   therefore derive an additional native first source of the required
+   nonzero size or restrict the actual physical admissible sector by
+   proved independent premises. The original fair Golden compact
+   all-identity flag code has expected code cost exactly equal to its
+   Shannon information and its complete flag marginal source zero,
+   including moving supplied data preparation; pure flag-only
+   Cost-Info cannot screen the HJR source on this configuration.
+   [Analytic theorem](sources/d0_hjr_flat_density_zero_2026-10-20/REFINING_UNIFORM_SOURCE.md),
+   [rational all-L checker](sources/d0_hjr_flat_density_zero_2026-10-20/check_refining_uniform_source.py).
+
+2. **The already-owned native Golden-p TWO-density six-phase atlas is
+   the minimal smooth full-Lorentz local readout.** From the actual
+   original CAR16 GOOD/BAD source differential its 6-by-6 Jacobian has
+   explicit exact inverse over Q(sqrt5), determinant p^9/15552000, and
+   ||A^-1||_infinity=90+42sqrt5<185. No smooth local inverse for ALL
+   six native Lorentz directions exists from fewer than six smooth
+   independent scalar statistics; this original atlas saturates that
+   minimum. On P_h=exp(h² F), its calibrated inverse yields uniform
+   curvature-estimation error <=370*phase_error/h² on a declared small
+   smooth chart. For a six-dimensional finite hypothesis grid with
+   curvature accuracy delta, complete future-distinguishing retained
+   records require 6log2(1/delta)+O(1) ideal bits (Kraft/packing; Fano
+   with noise). With an *independently established* at-most-b-ary actual
+   primitive output and paid nonidentity transitions, this becomes a
+   conditional execution-cost lower bound. The exact encoded-statistic
+   size does NOT equate to shot complexity, actual action/Info, native
+   readout admission or prospective optimality.
+   [Proof and native scope](sources/d0_lorentz_record_minimum_2026-10-20/RESULT.md),
+   [Q(sqrt5) exact checker](sources/d0_lorentz_record_minimum_2026-10-20/check_native_golden_minimal_readout.py).
+
+**Consumed next physical premise:** compute one actual fully paid
+preparation/controller/clock/history/measurement/observer programme with
+its real geometric and matter source. It must account for the NONVANISHING
+smooth flat-HJR source where that carrier is admitted, the independent
+curved HJR negative-minimum direction and wide-collar traction, while
+preserving original full16+24 variations and independent Ward/refinement
+requirements. Six readable phase coordinates and an information floor
+supply required distinctions; they do **not** select the compulsory Book
+Cost-Info or cause Einstein equations. The PR remains Draft/IN_PROGRESS.
+`GR_closed=false`.
