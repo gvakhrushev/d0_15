@@ -264,6 +264,67 @@ the mathematical comparison. An original G0 admission and full
 CAR/Palatini first-Euler source equality remain missing; this
 MDL/Popperian result is NOT \`GR_closed\`.
 
+### Prospective MDL full-state task and FIRST ORIGINAL Spin triangle (20 Oct)
+
+User-corrected D_min is **pre-execution optimization over ALLOWED
+histories with the SAME COMPLETE initial state and required future
+verification task**, not retrospective shortening of an already
+occurred paid path. A new independently exact original Q8 shortest
+PROGRAMME audit resolves a crucial ambiguity of the former matched
+eight-gate order test:
+
+- To implement exact \`relativeSignQ\` on native8Q, the existing
+  shortest source is \`II\` (two original local-i actions).
+- To distinguish the original Golden two-port response with same
+  primitive inventory, \`IJI\` versus \`JII\` uses **three** gates,
+  but its ACTUAL 8×8 results are \`J\` versus \`RJ\`, not
+  \`I8\` versus \`R8\`.
+- If exact **FULL** reference frame identity versus relative sign is
+  part of the task, \`IJIJJJ\` versus \`JIIJJJ\` uses **six**
+  native forward-only operations EACH with the same 2i+4j inventory,
+  outputs EXACT \`I8\` and \`R8\`; the previously demonstrated
+  8-gate alternatives were nonminimal for that task. NEW compiled
+  Lean in original \`OrderMemoryControl.lean\` verifies all six-letter
+  8×8 matrices and inventory. An independent executable
+  exhaustively checked all original 127 gate words of length<=6,
+  with NO shorter same-inventory exact \`I8/R8\` pair.
+
+The SAME native K(9,11,13) 718-edge Book scene has all718 two-step
+closed backtracks with trivial Q8 central sign, whereas first
+potential central \`qNEG\` is present on TRUE three-tick ABC
+triangles, e.g. original \`i*j*k=-1\`. New original Lean
+\`originalQ8TwoTickBacktrackAlwaysTrivial\` and
+\`originalQ8ThreeTickTriangleFirstClosedSpinDistinction\`
+certify it. A single explicit inverse-respecting projective-flat
+Q8 scene lift on all33 original vertices, with just one negative
+central edge sheet, gave EXACT 66 original center− based triangles
+out of7722, ZERO of718 two-tick negative returns. Both choices
+have IDENTICAL original scalar primitive Book K/2-3-clock
+marginals. One mathematical COMPLETE joint record over
+8440 true based Book histories × two native Golden dark/bright
+labels (16880 potential outcomes, including correct Born-zero
+bright events) has exact unconditional bright mass
+\`264*p^8/(718*p^3+7722*p^5)=0.00649068726217...\`
+at this sheet. Conditional on an actual negative triangle the
+native old Golden bright probability is \`4p^3>0\`, and on any
+two-tick backtrack it is identically zero.
+
+This is a **first closed-Spin-test / complete future MDL** theorem
+on existing math carriers, NOT a claim literal G0 already routes
+real ABC Book groupoid into a physical Spin-sensitive Q8 port.
+The decisive prospective forcing task now explicitly includes
+the same true initial Spin sheet, archive and future verification
+constraints. Bare scalar per-edge \`Cost>=1\` cannot choose the
+chiral outcome because both central sheets have identical
+scalar K histories. The actual full Book03 H+J+R, paid
+Spin/CAR transport, clock/readout and selected Einstein Euler
+still need physical original M1/G0 admission and source equality.
+No new primitive detector or fitted action has been introduced.
+
+Durable owner: [prospective full Q8 task and first K913 Spin triangle](A4D_PROSPECTIVE_DMIN_Q8_SIX_GATE_AND_FIRST_BOOK_THREE_TICK_SPIN_SOURCE_2026_10_20.md),
+plus original 127-word Q8 and all8440 2/3 Book×Golden conditional
+source scripts in its references. GR_closed=false.
+
 ### Route update — nonlinear completion is no longer the open step
 
 For the already-built golden-AF geometric branch, the all-order nonlinear
