@@ -1,0 +1,18 @@
+{
+  "drop_gradient_term": {
+    "last_error": "ArithmeticError: full inhomogeneous metric pullback",
+    "returncode": 1
+  },
+  "erase_internal": {
+    "last_error": "ArithmeticError: complete nonlinear source recovery",
+    "returncode": 1
+  },
+  "freeze_inverse": {
+    "last_error": "ArithmeticError: source chart keeps moving inverse",
+    "returncode": 1
+  },
+  "half_metric": {
+    "last_error": "ArithmeticError: finite 10+2 inverse",
+    "returncode": 1
+  }
+}

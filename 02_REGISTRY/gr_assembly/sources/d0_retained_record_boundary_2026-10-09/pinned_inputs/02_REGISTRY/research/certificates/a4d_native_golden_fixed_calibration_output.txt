@@ -1,0 +1,893 @@
+../02_REGISTRY/research/certificates/a4d_native_golden_fixed_calibration.lean:667:2: warning: 'push_cast' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+../02_REGISTRY/research/certificates/a4d_native_golden_fixed_calibration.lean:680:2: warning: 'push_cast' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+../02_REGISTRY/research/certificates/a4d_native_golden_fixed_calibration.lean:955:4: warning: 'change Complex.normSq (fullAmplify U z χ w i z) = _' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+../02_REGISTRY/research/certificates/a4d_native_golden_fixed_calibration.lean:1379:4: warning: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+../02_REGISTRY/research/certificates/a4d_native_golden_fixed_calibration.lean:1808:28: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+../02_REGISTRY/research/certificates/a4d_native_golden_fixed_calibration.lean:2306:10: warning: `tendsto_finset_sum` has been deprecated: Use `tendsto_finsetSum` instead
+../02_REGISTRY/research/certificates/a4d_native_golden_fixed_calibration.lean:2556:6: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+../02_REGISTRY/research/certificates/a4d_native_golden_fixed_calibration.lean:2556:6: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+D0.Research.GoldenFixedCalibration.complete_unit_phase_norm (w : ℂ) (hw : Complex.normSq w = 1) : ‖w‖ = 1
+'D0.Research.GoldenFixedCalibration.complete_unit_phase_norm' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.GoldenFixedCalibration.complete_unit_phase_star_product (w : ℂ) (hw : Complex.normSq w = 1) : star w * w = 1
+'D0.Research.GoldenFixedCalibration.complete_unit_phase_star_product' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenFixedCalibration.unitary_complete_column_coordinate_norm.{u_1} {ι : Type u_1} [Fintype ι]
+  [DecidableEq ι] (U : Matrix ι ι ℂ) (z i : ι) (hU : U.conjTranspose * U = 1) : ‖U i z‖ ≤ 1
+'D0.Research.GoldenFixedCalibration.unitary_complete_column_coordinate_norm' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenFixedCalibration.actual_unspun_coordinate_norm.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι]
+  (U : Matrix ι ι ℂ) (z i : ι) (χ : ι → Bool) (w : ℂ) (k : ℕ) (hU : U.conjTranspose * U = 1 ∧ U * U.conjTranspose = 1)
+  (hw : Complex.normSq w = 1) : ‖D0.Research.GoldenFixedCalibration.unspunColumn U z χ w k i‖ ≤ 1
+'D0.Research.GoldenFixedCalibration.actual_unspun_coordinate_norm' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenFixedCalibration.actual_unspun_weight_preserved.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι]
+  (U : Matrix ι ι ℂ) (z : ι) (χ : ι → Bool) (w : ℂ) (k : ℕ) (hw : Complex.normSq w = 1) :
+  D0.Research.GoldenCoherentAmplification.vectorWeight (D0.Research.GoldenFixedCalibration.unspunColumn U z χ w k) =
+    D0.Research.GoldenCoherentAmplification.vectorWeight fun i =>
+      D0.Research.GoldenCoherentAmplification.fullWord U z χ w k i z
+'D0.Research.GoldenFixedCalibration.actual_unspun_weight_preserved' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenFixedCalibration.all_unspun_full_columns_normalized.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι]
+  (U : Matrix ι ι ℂ) (z : ι) (χ : ι → Bool) (w : ℂ) (k : ℕ) (hU : U.conjTranspose * U = 1 ∧ U * U.conjTranspose = 1)
+  (hw : Complex.normSq w = 1) :
+  D0.Research.GoldenCoherentAmplification.vectorWeight (D0.Research.GoldenFixedCalibration.unspunColumn U z χ w k) = 1
+'D0.Research.GoldenFixedCalibration.all_unspun_full_columns_normalized' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenFixedCalibration.full_unspun_accepted_increment.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι]
+  (U : Matrix ι ι ℂ) (z i : ι) (χ : ι → Bool) (w : ℂ) (k : ℕ) (hi : χ i = true)
+  (hU : U.conjTranspose * U = 1 ∧ U * U.conjTranspose = 1) (hw : Complex.normSq w = 1) :
+  D0.Research.GoldenFixedCalibration.unspunColumn U z χ w (k + 1) i -
+      D0.Research.GoldenFixedCalibration.unspunColumn U z χ w k i =
+    -(star w ^ 2 * (w - 1) ^ 2 *
+          ↑(D0.Research.GoldenCoherentAmplification.rejectedWeight χ fun j =>
+              D0.Research.GoldenCoherentAmplification.fullWord U z χ w k j z) *
+        D0.Research.GoldenFixedCalibration.unspunColumn U z χ w k i)
+'D0.Research.GoldenFixedCalibration.full_unspun_accepted_increment' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenFixedCalibration.own_fast_phase_increment_factor_norm (a p : ℝ) (ha : a ^ 2 = p)
+  (hp : p + p ^ 2 = 1) :
+  ‖star (D0.Research.GoldenCoherentAmplification.fastGoldenPhase a p) ^ 2 *
+        (D0.Research.GoldenCoherentAmplification.fastGoldenPhase a p - 1) ^ 2‖ =
+    1 - D0.Research.GoldenCoherentAmplification.fastParameter p
+'D0.Research.GoldenFixedCalibration.own_fast_phase_increment_factor_norm' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenFixedCalibration.literal_unspun_good_coordinate_increment_bound.{u_1} {ι : Type u_1} [Fintype ι]
+  [DecidableEq ι] (a p : ℝ) (ha : a ^ 2 = p) (hp : p + p ^ 2 = 1) (hp0 : 0 < p) (U : Matrix ι ι ℂ) (z i : ι)
+  (χ : ι → Bool) (hi : χ i = true) (hU : U.conjTranspose * U = 1 ∧ U * U.conjTranspose = 1)
+  (he : (D0.Research.GoldenCoherentAmplification.rejectedWeight χ fun j => U j z) ≤ 11 / 16) (k : ℕ) :
+  dist
+      (D0.Research.GoldenFixedCalibration.unspunColumn U z χ
+        (D0.Research.GoldenCoherentAmplification.fastGoldenPhase a p) (k + 2) i)
+      (D0.Research.GoldenFixedCalibration.unspunColumn U z χ
+        (D0.Research.GoldenCoherentAmplification.fastGoldenPhase a p) (k + 1 + 2) i) ≤
+    (1 / 16) ^ k / 10
+'D0.Research.GoldenFixedCalibration.literal_unspun_good_coordinate_increment_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenFixedCalibration.literal_good_coordinate_has_fixed_calibration.{u_1} {ι : Type u_1} [Fintype ι]
+  [DecidableEq ι] (a p : ℝ) (ha : a ^ 2 = p) (hp : p + p ^ 2 = 1) (hp0 : 0 < p) (U : Matrix ι ι ℂ) (z i : ι)
+  (χ : ι → Bool) (hi : χ i = true) (hU : U.conjTranspose * U = 1 ∧ U * U.conjTranspose = 1)
+  (he : (D0.Research.GoldenCoherentAmplification.rejectedWeight χ fun j => U j z) ≤ 11 / 16) :
+  ∃ L,
+    Filter.Tendsto
+        (fun k =>
+          D0.Research.GoldenFixedCalibration.unspunColumn U z χ
+            (D0.Research.GoldenCoherentAmplification.fastGoldenPhase a p) (k + 2) i)
+        Filter.atTop (nhds L) ∧
+      ∀ (k : ℕ),
+        dist
+            (D0.Research.GoldenFixedCalibration.unspunColumn U z χ
+              (D0.Research.GoldenCoherentAmplification.fastGoldenPhase a p) (k + 2) i)
+            L ≤
+          8 / 75 * (1 / 16) ^ k
+'D0.Research.GoldenFixedCalibration.literal_good_coordinate_has_fixed_calibration' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenFixedCalibration.complete_accepted_mass_scalar.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι]
+  (χ : ι → Bool) (x : ι → ℂ) (c : ℂ) :
+  (D0.Research.GoldenCoherentAmplification.acceptedWeight χ fun i => c * x i) =
+    Complex.normSq c * D0.Research.GoldenCoherentAmplification.acceptedWeight χ x
+'D0.Research.GoldenFixedCalibration.complete_accepted_mass_scalar' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenFixedCalibration.pure_projection_scalar.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι] (c : ℂ)
+  (x : ι → ℂ) :
+  (D0.Research.GoldenFixedCalibration.pureProjection fun i => c * x i) =
+    ↑(Complex.normSq c) • D0.Research.GoldenFixedCalibration.pureProjection x
+'D0.Research.GoldenFixedCalibration.pure_projection_scalar' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.GoldenFixedCalibration.normalized_accepted_projection_phase_cancels.{u_1} {ι : Type u_1} [Fintype ι]
+  [DecidableEq ι] (χ : ι → Bool) (x : ι → ℂ) (c : ℂ) (hc : c ≠ 0) :
+  (D0.Research.GoldenFixedCalibration.normalizedAcceptedProjection χ fun i => c * x i) =
+    D0.Research.GoldenFixedCalibration.normalizedAcceptedProjection χ x
+'D0.Research.GoldenFixedCalibration.normalized_accepted_projection_phase_cancels' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenFixedCalibration.full_phase_aligned_target_projection.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι]
+  (χ : ι → Bool) (x : ι → ℂ) (hs : 0 < D0.Research.GoldenCoherentAmplification.acceptedWeight χ x) :
+  D0.Research.GoldenFixedCalibration.pureProjection
+      (D0.Research.GoldenCoherentAmplification.alignedAcceptedVector χ x) =
+    D0.Research.GoldenFixedCalibration.normalizedAcceptedProjection χ x
+'D0.Research.GoldenFixedCalibration.full_phase_aligned_target_projection' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenFixedCalibration.normalized_accepted_projection_depends_only_on_accepted.{u_1} {ι : Type u_1}
+  [Fintype ι] [DecidableEq ι] (χ : ι → Bool) (x y : ι → ℂ) (h : ∀ (i : ι), χ i = true → x i = y i) :
+  D0.Research.GoldenFixedCalibration.normalizedAcceptedProjection χ x =
+    D0.Research.GoldenFixedCalibration.normalizedAcceptedProjection χ y
+'D0.Research.GoldenFixedCalibration.normalized_accepted_projection_depends_only_on_accepted' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenFixedCalibration.full_fast_word_target_projection_is_fixed.{u_1} {ι : Type u_1} [Fintype ι]
+  [DecidableEq ι] (a p : ℝ) (U : Matrix ι ι ℂ) (z : ι) (χ : ι → Bool) (ha : a ^ 2 = p) (hp : p + p ^ 2 = 1)
+  (hU : U.conjTranspose * U = 1 ∧ U * U.conjTranspose = 1) (k : ℕ)
+  (hc :
+    D0.Research.GoldenCoherentAmplification.fastAcceptedCoefficient a p
+        (D0.Research.GoldenCoherentAmplification.rejectedWeight χ fun j => U j z) k ≠
+      0) :
+  (D0.Research.GoldenFixedCalibration.normalizedAcceptedProjection χ fun i =>
+      D0.Research.GoldenCoherentAmplification.fullWord U z χ
+        (D0.Research.GoldenCoherentAmplification.fastGoldenPhase a p) k i z) =
+    D0.Research.GoldenFixedCalibration.normalizedAcceptedProjection χ fun i => U i z
+'D0.Research.GoldenFixedCalibration.full_fast_word_target_projection_is_fixed' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenFixedCalibration.frobenius_weight_pure_projection.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι]
+  (x : ι → ℂ) :
+  D0.Research.GoldenFixedCalibration.frobeniusWeight (D0.Research.GoldenFixedCalibration.pureProjection x) =
+    D0.Research.GoldenCoherentAmplification.vectorWeight x ^ 2
+'D0.Research.GoldenFixedCalibration.frobenius_weight_pure_projection' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenFixedCalibration.full_projection_cross_sum.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι]
+  (x y : ι → ℂ) :
+  ∑ i,
+      ∑ j,
+        D0.Research.GoldenFixedCalibration.pureProjection x i j *
+          star (D0.Research.GoldenFixedCalibration.pureProjection y i j) =
+    ↑(Complex.normSq (star x ⬝ᵥ y))
+'D0.Research.GoldenFixedCalibration.full_projection_cross_sum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenFixedCalibration.frobenius_distance_pure_projections.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι]
+  (x y : ι → ℂ) :
+  D0.Research.GoldenFixedCalibration.frobeniusWeight
+      (D0.Research.GoldenFixedCalibration.pureProjection x - D0.Research.GoldenFixedCalibration.pureProjection y) =
+    D0.Research.GoldenCoherentAmplification.vectorWeight x ^ 2 +
+        D0.Research.GoldenCoherentAmplification.vectorWeight y ^ 2 -
+      2 * Complex.normSq (star x ⬝ᵥ y)
+'D0.Research.GoldenFixedCalibration.frobenius_distance_pure_projections' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenFixedCalibration.accepted_target_inner_product_squared.{u_1} {ι : Type u_1} [Fintype ι]
+  [DecidableEq ι] (χ : ι → Bool) (x : ι → ℂ) (hs : 0 < D0.Research.GoldenCoherentAmplification.acceptedWeight χ x) :
+  Complex.normSq (star x ⬝ᵥ D0.Research.GoldenCoherentAmplification.alignedAcceptedVector χ x) =
+    D0.Research.GoldenCoherentAmplification.acceptedWeight χ x
+'D0.Research.GoldenFixedCalibration.accepted_target_inner_product_squared' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenFixedCalibration.whole_unconditional_prepared_projection_error.{u_1} {ι : Type u_1} [Fintype ι]
+  [DecidableEq ι] (χ : ι → Bool) (x : ι → ℂ) (hn : D0.Research.GoldenCoherentAmplification.vectorWeight x = 1)
+  (hs : 0 < D0.Research.GoldenCoherentAmplification.acceptedWeight χ x) :
+  D0.Research.GoldenFixedCalibration.frobeniusWeight
+      (D0.Research.GoldenFixedCalibration.pureProjection x -
+        D0.Research.GoldenFixedCalibration.normalizedAcceptedProjection χ x) =
+    2 * D0.Research.GoldenCoherentAmplification.rejectedWeight χ x
+'D0.Research.GoldenFixedCalibration.whole_unconditional_prepared_projection_error' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenFixedCalibration.all_unspun_failed_coordinates_have_full_mass_bound.{u_1} {ι : Type u_1} [Fintype ι]
+  [DecidableEq ι] (U : Matrix ι ι ℂ) (z i : ι) (χ : ι → Bool) (w : ℂ) (k : ℕ) (hw : Complex.normSq w = 1)
+  (hi : χ i = false) :
+  Complex.normSq (D0.Research.GoldenFixedCalibration.unspunColumn U z χ w k i) ≤
+    D0.Research.GoldenCoherentAmplification.rejectedWeight χ fun j =>
+      D0.Research.GoldenCoherentAmplification.fullWord U z χ w k j z
+'D0.Research.GoldenFixedCalibration.all_unspun_failed_coordinates_have_full_mass_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenFixedCalibration.all_literal_unspun_failed_coordinate_rates.{u_1} {ι : Type u_1} [Fintype ι]
+  [DecidableEq ι] (a p : ℝ) (ha : a ^ 2 = p) (hp : p + p ^ 2 = 1) (hp0 : 0 < p) (U : Matrix ι ι ℂ) (z i : ι)
+  (χ : ι → Bool) (hi : χ i = false) (hU : U.conjTranspose * U = 1 ∧ U * U.conjTranspose = 1)
+  (he : (D0.Research.GoldenCoherentAmplification.rejectedWeight χ fun j => U j z) ≤ 11 / 16) (k : ℕ) :
+  Complex.normSq
+        (D0.Research.GoldenFixedCalibration.unspunColumn U z χ
+          (D0.Research.GoldenCoherentAmplification.fastGoldenPhase a p) (k + 2) i) ≤
+      (1 / 16) ^ k / 10 ∧
+    ‖D0.Research.GoldenFixedCalibration.unspunColumn U z χ (D0.Research.GoldenCoherentAmplification.fastGoldenPhase a p)
+          (k + 2) i‖ ≤
+      (1 / 4) ^ k
+'D0.Research.GoldenFixedCalibration.all_literal_unspun_failed_coordinate_rates' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenFixedCalibration.literal_unspun_failed_coordinate_tends_zero.{u_1} {ι : Type u_1} [Fintype ι]
+  [DecidableEq ι] (a p : ℝ) (ha : a ^ 2 = p) (hp : p + p ^ 2 = 1) (hp0 : 0 < p) (U : Matrix ι ι ℂ) (z i : ι)
+  (χ : ι → Bool) (hi : χ i = false) (hU : U.conjTranspose * U = 1 ∧ U * U.conjTranspose = 1)
+  (he : (D0.Research.GoldenCoherentAmplification.rejectedWeight χ fun j => U j z) ≤ 11 / 16) :
+  Filter.Tendsto
+    (fun k =>
+      D0.Research.GoldenFixedCalibration.unspunColumn U z χ
+        (D0.Research.GoldenCoherentAmplification.fastGoldenPhase a p) (k + 2) i)
+    Filter.atTop (nhds 0)
+'D0.Research.GoldenFixedCalibration.literal_unspun_failed_coordinate_tends_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenFixedCalibration.complete_literal_unspun_column_has_fixed_normalized_limit.{u_1} {ι : Type u_1}
+  [Fintype ι] [DecidableEq ι] (a p : ℝ) (ha : a ^ 2 = p) (hp : p + p ^ 2 = 1) (hp0 : 0 < p) (U : Matrix ι ι ℂ) (z : ι)
+  (χ : ι → Bool) (hU : U.conjTranspose * U = 1 ∧ U * U.conjTranspose = 1)
+  (he : (D0.Research.GoldenCoherentAmplification.rejectedWeight χ fun j => U j z) ≤ 11 / 16) :
+  ∃ L,
+    Filter.Tendsto
+        (fun k =>
+          D0.Research.GoldenFixedCalibration.unspunColumn U z χ
+            (D0.Research.GoldenCoherentAmplification.fastGoldenPhase a p) (k + 2))
+        Filter.atTop (nhds L) ∧
+      D0.Research.GoldenCoherentAmplification.vectorWeight L = 1 ∧ ∀ (i : ι), χ i = false → L i = 0
+'D0.Research.GoldenFixedCalibration.complete_literal_unspun_column_has_fixed_normalized_limit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenFixedCalibration.scalar_complex_projection_cannot_detect_unit_phase.{u_1} (w : ℂ)
+  (hw : Complex.normSq w = 1) :
+  (D0.Research.GoldenFixedCalibration.pureProjection fun x => w) =
+    D0.Research.GoldenFixedCalibration.pureProjection fun x => 1
+'D0.Research.GoldenFixedCalibration.scalar_complex_projection_cannot_detect_unit_phase' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenFixedCalibration.real_pointer_projection_detects_phase (w : ℂ) (hi : w.im ≠ 0) :
+  D0.Research.GoldenCoherentAmplification.phaseRealMatrix w * D0.Research.GoldenFixedCalibration.realPointerBlank *
+      (D0.Research.GoldenCoherentAmplification.phaseRealMatrix w).transpose ≠
+    D0.Research.GoldenFixedCalibration.realPointerBlank
+'D0.Research.GoldenFixedCalibration.real_pointer_projection_detects_phase' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenFixedCalibration.own_fast_phase_visible_to_real_pointer (a p : ℝ) (ha : a ^ 2 = p)
+  (hp : p + p ^ 2 = 1) (hp0 : 0 < p) :
+  D0.Research.GoldenCoherentAmplification.phaseRealMatrix
+          (D0.Research.GoldenCoherentAmplification.fastGoldenPhase a p) *
+        D0.Research.GoldenFixedCalibration.realPointerBlank *
+      (D0.Research.GoldenCoherentAmplification.phaseRealMatrix
+          (D0.Research.GoldenCoherentAmplification.fastGoldenPhase a p)).transpose ≠
+    D0.Research.GoldenFixedCalibration.realPointerBlank
+'D0.Research.GoldenFixedCalibration.own_fast_phase_visible_to_real_pointer' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenFixedCalibration.actual_scene_seed_is_in_fixed_limit_basin (a p : ℝ) (ha : a ^ 2 = p)
+  (hp : p + p ^ 2 = 1) (hp0 : 0 < p) (v : Fin 33) :
+  (D0.Research.GoldenCoherentAmplification.rejectedWeight
+      (D0.Research.GoldenCoherentAmplification.codeValidity 4 5
+        (D0.Research.GoldenCoherentAmplification.sceneAcceptedCodes v))
+      fun i =>
+      D0.Research.GoldenCoherentAmplification.routedGoldenSeed a p 4 5 i
+        (D0.Research.GoldenCoherentAmplification.completeBlank 4 5)) ≤
+    11 / 16
+'D0.Research.GoldenFixedCalibration.actual_scene_seed_is_in_fixed_limit_basin' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenFixedCalibration.actual_whole_scene_unspun_column_has_fixed_normalized_limit (a p : ℝ)
+  (ha : a ^ 2 = p) (hp : p + p ^ 2 = 1) (hp0 : 0 < p) (v : Fin 33) :
+  ∃ L,
+    Filter.Tendsto
+        (fun k =>
+          D0.Research.GoldenFixedCalibration.unspunColumn
+            (D0.Research.GoldenCoherentAmplification.routedGoldenSeed a p 4 5)
+            (D0.Research.GoldenCoherentAmplification.completeBlank 4 5)
+            (D0.Research.GoldenCoherentAmplification.codeValidity 4 5
+              (D0.Research.GoldenCoherentAmplification.sceneAcceptedCodes v))
+            (D0.Research.GoldenCoherentAmplification.fastGoldenPhase a p) (k + 2))
+        Filter.atTop (nhds L) ∧
+      D0.Research.GoldenCoherentAmplification.vectorWeight L = 1 ∧
+        ∀ (i : D0.Research.GoldenCoherentAmplification.CompleteSeedCarrier 4 5),
+          D0.Research.GoldenCoherentAmplification.codeValidity 4 5
+                (D0.Research.GoldenCoherentAmplification.sceneAcceptedCodes v) i =
+              false →
+            L i = 0
+'D0.Research.GoldenFixedCalibration.actual_whole_scene_unspun_column_has_fixed_normalized_limit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenFixedCalibration.actual_scene_complete_success_coefficient_nonzero (a p : ℝ) (ha : a ^ 2 = p)
+  (hp : p + p ^ 2 = 1) (hp0 : 0 < p) (v : Fin 33) (k : ℕ) :
+  D0.Research.GoldenCoherentAmplification.fastAcceptedCoefficient a p
+      (D0.Research.GoldenCoherentAmplification.rejectedWeight
+        (D0.Research.GoldenCoherentAmplification.codeValidity 4 5
+          (D0.Research.GoldenCoherentAmplification.sceneAcceptedCodes v))
+        fun i =>
+        D0.Research.GoldenCoherentAmplification.routedGoldenSeed a p 4 5 i
+          (D0.Research.GoldenCoherentAmplification.completeBlank 4 5))
+      (k + 2) ≠
+    0
+'D0.Research.GoldenFixedCalibration.actual_scene_complete_success_coefficient_nonzero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenFixedCalibration.actual_scene_complex_projection_only_preparation_error (a p : ℝ) (ha : a ^ 2 = p)
+  (hp : p + p ^ 2 = 1) (hp0 : 0 < p) (v : Fin 33) (k : ℕ) :
+  D0.Research.GoldenFixedCalibration.frobeniusWeight
+      ((D0.Research.GoldenFixedCalibration.pureProjection fun i =>
+          D0.Research.GoldenCoherentAmplification.fullWord
+            (D0.Research.GoldenCoherentAmplification.routedGoldenSeed a p 4 5)
+            (D0.Research.GoldenCoherentAmplification.completeBlank 4 5)
+            (D0.Research.GoldenCoherentAmplification.codeValidity 4 5
+              (D0.Research.GoldenCoherentAmplification.sceneAcceptedCodes v))
+            (D0.Research.GoldenCoherentAmplification.fastGoldenPhase a p) (k + 2) i
+            (D0.Research.GoldenCoherentAmplification.completeBlank 4 5)) -
+        D0.Research.GoldenFixedCalibration.normalizedAcceptedProjection
+          (D0.Research.GoldenCoherentAmplification.codeValidity 4 5
+            (D0.Research.GoldenCoherentAmplification.sceneAcceptedCodes v))
+          fun i =>
+          D0.Research.GoldenCoherentAmplification.routedGoldenSeed a p 4 5 i
+            (D0.Research.GoldenCoherentAmplification.completeBlank 4 5)) ≤
+    (1 / 16) ^ k / 5
+'D0.Research.GoldenFixedCalibration.actual_scene_complex_projection_only_preparation_error' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenFixedCalibration.actual_golden_inclusion_preserves_fixed_limit.{u_1} {ι : Type u_1} [Fintype ι]
+  [DecidableEq ι] {x : ℕ → ι → ℂ} {L : ι → ℂ} (a p : ℝ) (hL : Filter.Tendsto x Filter.atTop (nhds L)) :
+  Filter.Tendsto (fun k => D0.Research.GoldenCoherentAmplification.goldenComplexInclusion a p (x k)) Filter.atTop
+    (nhds (D0.Research.GoldenCoherentAmplification.goldenComplexInclusion a p L))
+'D0.Research.GoldenFixedCalibration.actual_golden_inclusion_preserves_fixed_limit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenFixedCalibration.actual_golden_fixed_limit_normalization.{u_1} {ι : Type u_1} [Fintype ι]
+  [DecidableEq ι] (a p : ℝ) (ha : a ^ 2 = p) (hp : p + p ^ 2 = 1) (L : ι → ℂ)
+  (hL : D0.Research.GoldenCoherentAmplification.vectorWeight L = 1) :
+  D0.Research.GoldenCoherentAmplification.vectorWeight
+      (D0.Research.GoldenCoherentAmplification.goldenComplexInclusion a p L) =
+    1
+'D0.Research.GoldenFixedCalibration.actual_golden_fixed_limit_normalization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenFixedCalibration.conjugate_phase_is_real_inverse_orientation (w : ℂ) :
+  D0.Research.GoldenCoherentAmplification.phaseRealMatrix (star w) =
+    (D0.Research.GoldenCoherentAmplification.phaseRealMatrix w).transpose
+'D0.Research.GoldenFixedCalibration.conjugate_phase_is_real_inverse_orientation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenFixedCalibration.actual_global_unspin_is_owned_golden_word (a p : ℝ) (ha : a ^ 2 = p) (k : ℕ) :
+  D0.Research.GoldenCoherentAmplification.phaseRealMatrix
+      (star (D0.Research.GoldenCoherentAmplification.fastGoldenPhase a p) ^ (2 * k)) =
+    (D0.Representation.GoldenOrderInterferometer.gate a p ^ (16 * k)).transpose
+'D0.Research.GoldenFixedCalibration.actual_global_unspin_is_owned_golden_word' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenFixedCalibration.all_native_real_matrix_casts_have_real_entries.{u_1} {ι : Type u_1} [Fintype ι]
+  [DecidableEq ι] (A : Matrix ι ι ℝ) : D0.Research.GoldenFixedCalibration.RealEntry (A.map fun x => ↑x)
+'D0.Research.GoldenFixedCalibration.all_native_real_matrix_casts_have_real_entries' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenFixedCalibration.all_real_entry_products_remain_real.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι]
+  (A B : Matrix ι ι ℂ) (hA : D0.Research.GoldenFixedCalibration.RealEntry A)
+  (hB : D0.Research.GoldenFixedCalibration.RealEntry B) : D0.Research.GoldenFixedCalibration.RealEntry (A * B)
+'D0.Research.GoldenFixedCalibration.all_real_entry_products_remain_real' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenFixedCalibration.all_real_entry_adjoints_remain_real.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι]
+  (A : Matrix ι ι ℂ) (hA : D0.Research.GoldenFixedCalibration.RealEntry A) :
+  D0.Research.GoldenFixedCalibration.RealEntry A.conjTranspose
+'D0.Research.GoldenFixedCalibration.all_real_entry_adjoints_remain_real' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenFixedCalibration.all_real_entry_words_preserve_real_columns.{u_1} {ι : Type u_1} [Fintype ι]
+  [DecidableEq ι] (A : Matrix ι ι ℂ) (hA : D0.Research.GoldenFixedCalibration.RealEntry A) (x : ι → ℂ)
+  (hx : ∀ (i : ι), (x i).im = 0) (i : ι) : (A.mulVec x i).im = 0
+'D0.Research.GoldenFixedCalibration.all_real_entry_words_preserve_real_columns' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenFixedCalibration.direct_nonreal_phase_oracle_outside_real_entry_class.{u_1} {ι : Type u_1} [Fintype ι]
+  [DecidableEq ι] (χ : ι → Bool) (w : ℂ) (hw : w.im ≠ 0) (i : ι) (hi : χ i = true) :
+  ¬D0.Research.GoldenFixedCalibration.RealEntry (D0.Research.GoldenCoherentAmplification.diagonalPhase χ w)
+'D0.Research.GoldenFixedCalibration.direct_nonreal_phase_oracle_outside_real_entry_class' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenFixedCalibration.actual_golden_fast_phase_oracle_outside_real_entry_class.{u_1} {ι : Type u_1}
+  [Fintype ι] [DecidableEq ι] (a p : ℝ) (ha : a ^ 2 = p) (hp : p + p ^ 2 = 1) (hp0 : 0 < p) (χ : ι → Bool) (i : ι)
+  (hi : χ i = true) :
+  ¬D0.Research.GoldenFixedCalibration.RealEntry
+      (D0.Research.GoldenCoherentAmplification.diagonalPhase χ
+        (D0.Research.GoldenCoherentAmplification.fastGoldenPhase a p))
+'D0.Research.GoldenFixedCalibration.actual_golden_fast_phase_oracle_outside_real_entry_class' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenFixedCalibration.actual_initial_accepted_mass_positive.{u_1} {ι : Type u_1} [Fintype ι]
+  [DecidableEq ι] (U : Matrix ι ι ℂ) (z : ι) (χ : ι → Bool) (hU : U.conjTranspose * U = 1)
+  (he : (D0.Research.GoldenCoherentAmplification.rejectedWeight χ fun i => U i z) ≤ 11 / 16) :
+  0 < D0.Research.GoldenCoherentAmplification.acceptedWeight χ fun i => U i z
+'D0.Research.GoldenFixedCalibration.actual_initial_accepted_mass_positive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenFixedCalibration.actual_normalized_success_factorization.{u_1} {ι : Type u_1} [Fintype ι]
+  [DecidableEq ι] (a p : ℝ) (U : Matrix ι ι ℂ) (z : ι) (χ : ι → Bool) (ha : a ^ 2 = p) (hp : p + p ^ 2 = 1)
+  (hU : U.conjTranspose * U = 1 ∧ U * U.conjTranspose = 1)
+  (hs : 0 < D0.Research.GoldenCoherentAmplification.acceptedWeight χ fun i => U i z) (k : ℕ) (i : ι) (hi : χ i = true) :
+  D0.Research.GoldenFixedCalibration.unspunColumn U z χ (D0.Research.GoldenCoherentAmplification.fastGoldenPhase a p) k
+      i =
+    D0.Research.GoldenFixedCalibration.normalizedSuccessScalar a p U z χ k *
+      D0.Research.GoldenCoherentAmplification.alignedAcceptedVector χ (fun i => U i z) i
+'D0.Research.GoldenFixedCalibration.actual_normalized_success_factorization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenFixedCalibration.normalized_success_scalar_full_balance.{u_1} {ι : Type u_1} [Fintype ι]
+  [DecidableEq ι] (a p : ℝ) (U : Matrix ι ι ℂ) (z : ι) (χ : ι → Bool) (ha : a ^ 2 = p) (hp : p + p ^ 2 = 1)
+  (hU : U.conjTranspose * U = 1 ∧ U * U.conjTranspose = 1)
+  (hs : 0 < D0.Research.GoldenCoherentAmplification.acceptedWeight χ fun i => U i z) (k : ℕ) :
+  (Complex.normSq (D0.Research.GoldenFixedCalibration.normalizedSuccessScalar a p U z χ k) +
+      D0.Research.GoldenCoherentAmplification.rejectedWeight χ fun i =>
+        D0.Research.GoldenCoherentAmplification.fullWord U z χ
+          (D0.Research.GoldenCoherentAmplification.fastGoldenPhase a p) k i z) =
+    1
+'D0.Research.GoldenFixedCalibration.normalized_success_scalar_full_balance' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenFixedCalibration.normalized_success_scalar_increment.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι]
+  (a p : ℝ) (U : Matrix ι ι ℂ) (z : ι) (χ : ι → Bool) (ha : a ^ 2 = p) (hp : p + p ^ 2 = 1) (k : ℕ) :
+  D0.Research.GoldenFixedCalibration.normalizedSuccessScalar a p U z χ (k + 1) -
+      D0.Research.GoldenFixedCalibration.normalizedSuccessScalar a p U z χ k =
+    -(star (D0.Research.GoldenCoherentAmplification.fastGoldenPhase a p) ^ 2 *
+            (D0.Research.GoldenCoherentAmplification.fastGoldenPhase a p - 1) ^ 2 *
+          ↑(D0.Research.GoldenCoherentAmplification.fastFailure
+              (D0.Research.GoldenCoherentAmplification.fastParameter p)
+              (D0.Research.GoldenCoherentAmplification.rejectedWeight χ fun i => U i z) k) *
+        D0.Research.GoldenFixedCalibration.normalizedSuccessScalar a p U z χ k)
+'D0.Research.GoldenFixedCalibration.normalized_success_scalar_increment' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenFixedCalibration.normalized_success_scalar_norm_le_one.{u_1} {ι : Type u_1} [Fintype ι]
+  [DecidableEq ι] (a p : ℝ) (U : Matrix ι ι ℂ) (z : ι) (χ : ι → Bool) (ha : a ^ 2 = p) (hp : p + p ^ 2 = 1)
+  (hU : U.conjTranspose * U = 1 ∧ U * U.conjTranspose = 1)
+  (hs : 0 < D0.Research.GoldenCoherentAmplification.acceptedWeight χ fun i => U i z) (k : ℕ) :
+  ‖D0.Research.GoldenFixedCalibration.normalizedSuccessScalar a p U z χ k‖ ≤ 1
+'D0.Research.GoldenFixedCalibration.normalized_success_scalar_norm_le_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenFixedCalibration.normalized_success_scalar_increment_bound.{u_1} {ι : Type u_1} [Fintype ι]
+  [DecidableEq ι] (a p : ℝ) (U : Matrix ι ι ℂ) (z : ι) (χ : ι → Bool) (ha : a ^ 2 = p) (hp : p + p ^ 2 = 1)
+  (hp0 : 0 < p) (hU : U.conjTranspose * U = 1 ∧ U * U.conjTranspose = 1)
+  (he : (D0.Research.GoldenCoherentAmplification.rejectedWeight χ fun i => U i z) ≤ 11 / 16) (k : ℕ) :
+  dist (D0.Research.GoldenFixedCalibration.normalizedSuccessScalar a p U z χ (k + 2))
+      (D0.Research.GoldenFixedCalibration.normalizedSuccessScalar a p U z χ (k + 1 + 2)) ≤
+    (1 / 16) ^ k / 10
+'D0.Research.GoldenFixedCalibration.normalized_success_scalar_increment_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenFixedCalibration.complete_literal_rejected_mass_tends_zero.{u_1} {ι : Type u_1} [Fintype ι]
+  [DecidableEq ι] (a p : ℝ) (U : Matrix ι ι ℂ) (z : ι) (χ : ι → Bool) (ha : a ^ 2 = p) (hp : p + p ^ 2 = 1)
+  (hp0 : 0 < p) (hU : U.conjTranspose * U = 1 ∧ U * U.conjTranspose = 1)
+  (he : (D0.Research.GoldenCoherentAmplification.rejectedWeight χ fun i => U i z) ≤ 11 / 16) :
+  Filter.Tendsto
+    (fun k =>
+      D0.Research.GoldenCoherentAmplification.rejectedWeight χ fun i =>
+        D0.Research.GoldenCoherentAmplification.fullWord U z χ
+          (D0.Research.GoldenCoherentAmplification.fastGoldenPhase a p) (k + 2) i z)
+    Filter.atTop (nhds 0)
+'D0.Research.GoldenFixedCalibration.complete_literal_rejected_mass_tends_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenFixedCalibration.complete_normalized_success_has_fixed_unit_calibration.{u_1} {ι : Type u_1}
+  [Fintype ι] [DecidableEq ι] (a p : ℝ) (U : Matrix ι ι ℂ) (z : ι) (χ : ι → Bool) (ha : a ^ 2 = p) (hp : p + p ^ 2 = 1)
+  (hp0 : 0 < p) (hU : U.conjTranspose * U = 1 ∧ U * U.conjTranspose = 1)
+  (he : (D0.Research.GoldenCoherentAmplification.rejectedWeight χ fun i => U i z) ≤ 11 / 16) :
+  ∃ γ,
+    Complex.normSq γ = 1 ∧
+      Filter.Tendsto (fun k => D0.Research.GoldenFixedCalibration.normalizedSuccessScalar a p U z χ (k + 2))
+          Filter.atTop (nhds γ) ∧
+        ∀ (k : ℕ),
+          dist (D0.Research.GoldenFixedCalibration.normalizedSuccessScalar a p U z χ (k + 2)) γ ≤ 8 / 75 * (1 / 16) ^ k
+'D0.Research.GoldenFixedCalibration.complete_normalized_success_has_fixed_unit_calibration' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenFixedCalibration.actual_unspun_rejected_weight_preserved.{u_1} {ι : Type u_1} [Fintype ι]
+  [DecidableEq ι] (U : Matrix ι ι ℂ) (z : ι) (χ : ι → Bool) (w : ℂ) (k : ℕ) (hw : Complex.normSq w = 1) :
+  D0.Research.GoldenCoherentAmplification.rejectedWeight χ (D0.Research.GoldenFixedCalibration.unspunColumn U z χ w k) =
+    D0.Research.GoldenCoherentAmplification.rejectedWeight χ fun i =>
+      D0.Research.GoldenCoherentAmplification.fullWord U z χ w k i z
+'D0.Research.GoldenFixedCalibration.actual_unspun_rejected_weight_preserved' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenFixedCalibration.aligned_accepted_vector_has_accepted_weight.{u_1} {ι : Type u_1} [Fintype ι]
+  [DecidableEq ι] (χ : ι → Bool) (x : ι → ℂ) (hs : 0 < D0.Research.GoldenCoherentAmplification.acceptedWeight χ x) :
+  D0.Research.GoldenCoherentAmplification.acceptedWeight χ
+      (D0.Research.GoldenCoherentAmplification.alignedAcceptedVector χ x) =
+    1
+'D0.Research.GoldenFixedCalibration.aligned_accepted_vector_has_accepted_weight' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenFixedCalibration.all_size_complete_fixed_target_distance_identity.{u_1} {ι : Type u_1} [Fintype ι]
+  [DecidableEq ι] (a p : ℝ) (U : Matrix ι ι ℂ) (z : ι) (χ : ι → Bool) (ha : a ^ 2 = p) (hp : p + p ^ 2 = 1)
+  (hU : U.conjTranspose * U = 1 ∧ U * U.conjTranspose = 1)
+  (hs : 0 < D0.Research.GoldenCoherentAmplification.acceptedWeight χ fun i => U i z) (k : ℕ) (γ : ℂ) :
+  (D0.Research.GoldenCoherentAmplification.vectorWeight fun i =>
+      D0.Research.GoldenFixedCalibration.unspunColumn U z χ
+          (D0.Research.GoldenCoherentAmplification.fastGoldenPhase a p) k i -
+        γ * D0.Research.GoldenCoherentAmplification.alignedAcceptedVector χ (fun j => U j z) i) =
+    Complex.normSq (D0.Research.GoldenFixedCalibration.normalizedSuccessScalar a p U z χ k - γ) +
+      D0.Research.GoldenCoherentAmplification.rejectedWeight χ fun i =>
+        D0.Research.GoldenCoherentAmplification.fullWord U z χ
+          (D0.Research.GoldenCoherentAmplification.fastGoldenPhase a p) k i z
+'D0.Research.GoldenFixedCalibration.all_size_complete_fixed_target_distance_identity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenFixedCalibration.vector_weight_scalar_factor.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι] (c : ℂ)
+  (x : ι → ℂ) :
+  (D0.Research.GoldenCoherentAmplification.vectorWeight fun i => c * x i) =
+    Complex.normSq c * D0.Research.GoldenCoherentAmplification.vectorWeight x
+'D0.Research.GoldenFixedCalibration.vector_weight_scalar_factor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenFixedCalibration.all_size_fixed_target_has_complete_unit_weight.{u_1} {ι : Type u_1} [Fintype ι]
+  [DecidableEq ι] (χ : ι → Bool) (x : ι → ℂ) (hs : 0 < D0.Research.GoldenCoherentAmplification.acceptedWeight χ x)
+  (γ : ℂ) (hγ : Complex.normSq γ = 1) :
+  (D0.Research.GoldenCoherentAmplification.vectorWeight fun i =>
+      γ * D0.Research.GoldenCoherentAmplification.alignedAcceptedVector χ x i) =
+    1
+'D0.Research.GoldenFixedCalibration.all_size_fixed_target_has_complete_unit_weight' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenFixedCalibration.all_size_complete_fixed_calibration_rate.{u_1} {ι : Type u_1} [Fintype ι]
+  [DecidableEq ι] (a p : ℝ) (U : Matrix ι ι ℂ) (z : ι) (χ : ι → Bool) (ha : a ^ 2 = p) (hp : p + p ^ 2 = 1)
+  (hp0 : 0 < p) (hU : U.conjTranspose * U = 1 ∧ U * U.conjTranspose = 1)
+  (he : (D0.Research.GoldenCoherentAmplification.rejectedWeight χ fun i => U i z) ≤ 11 / 16) :
+  ∃ γ,
+    Complex.normSq γ = 1 ∧
+      (D0.Research.GoldenCoherentAmplification.vectorWeight fun i =>
+            γ * D0.Research.GoldenCoherentAmplification.alignedAcceptedVector χ (fun j => U j z) i) =
+          1 ∧
+        ∀ (k : ℕ),
+          (D0.Research.GoldenCoherentAmplification.vectorWeight fun i =>
+              D0.Research.GoldenFixedCalibration.unspunColumn U z χ
+                  (D0.Research.GoldenCoherentAmplification.fastGoldenPhase a p) (k + 2) i -
+                γ * D0.Research.GoldenCoherentAmplification.alignedAcceptedVector χ (fun j => U j z) i) ≤
+            1 / 8 * (1 / 16) ^ k
+'D0.Research.GoldenFixedCalibration.all_size_complete_fixed_calibration_rate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenFixedCalibration.full_real_encoding_retains_complete_weight.{u_1} {ι : Type u_1} [Fintype ι]
+  [DecidableEq ι] (x : ι → ℂ) :
+  D0.Research.GoldenFixedCalibration.realVectorWeight (D0.Research.GoldenFixedCalibration.fullRealVector x) =
+    D0.Research.GoldenCoherentAmplification.vectorWeight x
+'D0.Research.GoldenFixedCalibration.full_real_encoding_retains_complete_weight' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenFixedCalibration.full_real_encoding_is_injective.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι] :
+  Function.Injective D0.Research.GoldenFixedCalibration.fullRealVector
+'D0.Research.GoldenFixedCalibration.full_real_encoding_is_injective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenFixedCalibration.full_real_encoding_subtracts.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι]
+  (x y : ι → ℂ) :
+  (D0.Research.GoldenFixedCalibration.fullRealVector fun i => x i - y i) = fun s =>
+    D0.Research.GoldenFixedCalibration.fullRealVector x s - D0.Research.GoldenFixedCalibration.fullRealVector y s
+'D0.Research.GoldenFixedCalibration.full_real_encoding_subtracts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenFixedCalibration.full_real_matrix_preserves_identity.{u_1} {ι : Type u_1} [Fintype ι]
+  [DecidableEq ι] : D0.Research.GoldenFixedCalibration.fullRealMatrix 1 = 1
+'D0.Research.GoldenFixedCalibration.full_real_matrix_preserves_identity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenFixedCalibration.full_real_matrix_preserves_product.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι]
+  (A B : Matrix ι ι ℂ) :
+  D0.Research.GoldenFixedCalibration.fullRealMatrix (A * B) =
+    D0.Research.GoldenFixedCalibration.fullRealMatrix A * D0.Research.GoldenFixedCalibration.fullRealMatrix B
+'D0.Research.GoldenFixedCalibration.full_real_matrix_preserves_product' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenFixedCalibration.full_real_matrix_preserves_adjoint.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι]
+  (A : Matrix ι ι ℂ) :
+  D0.Research.GoldenFixedCalibration.fullRealMatrix A.conjTranspose =
+    (D0.Research.GoldenFixedCalibration.fullRealMatrix A).transpose
+'D0.Research.GoldenFixedCalibration.full_real_matrix_preserves_adjoint' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenFixedCalibration.full_real_matrix_intertwines_every_state.{u_1} {ι : Type u_1} [Fintype ι]
+  [DecidableEq ι] (A : Matrix ι ι ℂ) (x : ι → ℂ) :
+  D0.Research.GoldenFixedCalibration.fullRealVector (A.mulVec x) =
+    (D0.Research.GoldenFixedCalibration.fullRealMatrix A).mulVec (D0.Research.GoldenFixedCalibration.fullRealVector x)
+'D0.Research.GoldenFixedCalibration.full_real_matrix_intertwines_every_state' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenFixedCalibration.every_full_real_unitary_word_is_orthogonal.{u_1} {ι : Type u_1} [Fintype ι]
+  [DecidableEq ι] (U : Matrix ι ι ℂ) (hU : U.conjTranspose * U = 1 ∧ U * U.conjTranspose = 1) :
+  (D0.Research.GoldenFixedCalibration.fullRealMatrix U).transpose *
+        D0.Research.GoldenFixedCalibration.fullRealMatrix U =
+      1 ∧
+    D0.Research.GoldenFixedCalibration.fullRealMatrix U *
+        (D0.Research.GoldenFixedCalibration.fullRealMatrix U).transpose =
+      1
+'D0.Research.GoldenFixedCalibration.every_full_real_unitary_word_is_orthogonal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenFixedCalibration.literal_full_real_recursive_word.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι]
+  (U : Matrix ι ι ℂ) (z : ι) (χ : ι → Bool) (w : ℂ) (k : ℕ) :
+  D0.Research.GoldenFixedCalibration.fullRealMatrix (D0.Research.GoldenCoherentAmplification.fullWord U z χ w (k + 1)) =
+    D0.Research.GoldenFixedCalibration.fullRealMatrix (D0.Research.GoldenCoherentAmplification.fullWord U z χ w k) *
+            D0.Research.GoldenFixedCalibration.fullRealMatrix (D0.Research.GoldenCoherentAmplification.blankPhase z w) *
+          (D0.Research.GoldenFixedCalibration.fullRealMatrix
+              (D0.Research.GoldenCoherentAmplification.fullWord U z χ w k)).transpose *
+        D0.Research.GoldenFixedCalibration.fullRealMatrix (D0.Research.GoldenCoherentAmplification.diagonalPhase χ w) *
+      D0.Research.GoldenFixedCalibration.fullRealMatrix (D0.Research.GoldenCoherentAmplification.fullWord U z χ w k)
+'D0.Research.GoldenFixedCalibration.literal_full_real_recursive_word' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenFixedCalibration.full_real_state_preserves_complete_fixed_limit_rate.{u_1} {ι : Type u_1} [Fintype ι]
+  [DecidableEq ι] (a p : ℝ) (U : Matrix ι ι ℂ) (z : ι) (χ : ι → Bool) (ha : a ^ 2 = p) (hp : p + p ^ 2 = 1)
+  (hp0 : 0 < p) (hU : U.conjTranspose * U = 1 ∧ U * U.conjTranspose = 1)
+  (he : (D0.Research.GoldenCoherentAmplification.rejectedWeight χ fun i => U i z) ≤ 11 / 16) :
+  ∃ γ,
+    Complex.normSq γ = 1 ∧
+      D0.Research.GoldenFixedCalibration.realVectorWeight
+            (D0.Research.GoldenFixedCalibration.fullRealVector fun i =>
+              γ * D0.Research.GoldenCoherentAmplification.alignedAcceptedVector χ (fun j => U j z) i) =
+          1 ∧
+        ∀ (k : ℕ),
+          (D0.Research.GoldenFixedCalibration.realVectorWeight fun s =>
+              D0.Research.GoldenFixedCalibration.fullRealVector
+                  (D0.Research.GoldenFixedCalibration.unspunColumn U z χ
+                    (D0.Research.GoldenCoherentAmplification.fastGoldenPhase a p) (k + 2))
+                  s -
+                D0.Research.GoldenFixedCalibration.fullRealVector
+                  (fun i => γ * D0.Research.GoldenCoherentAmplification.alignedAcceptedVector χ (fun j => U j z) i) s) ≤
+            1 / 8 * (1 / 16) ^ k
+'D0.Research.GoldenFixedCalibration.full_real_state_preserves_complete_fixed_limit_rate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenFixedCalibration.real_complete_weight_is_self_dot.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι]
+  (x : ι → ℝ) : D0.Research.GoldenFixedCalibration.realVectorWeight x = x ⬝ᵥ x
+'D0.Research.GoldenFixedCalibration.real_complete_weight_is_self_dot' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenFixedCalibration.real_complete_weight_nonnegative.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι]
+  (x : ι → ℝ) : 0 ≤ D0.Research.GoldenFixedCalibration.realVectorWeight x
+'D0.Research.GoldenFixedCalibration.real_complete_weight_nonnegative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenFixedCalibration.real_complete_weight_difference.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι]
+  (x y : ι → ℝ) :
+  D0.Research.GoldenFixedCalibration.realVectorWeight (x - y) =
+    D0.Research.GoldenFixedCalibration.realVectorWeight x + D0.Research.GoldenFixedCalibration.realVectorWeight y -
+      2 * x ⬝ᵥ y
+'D0.Research.GoldenFixedCalibration.real_complete_weight_difference' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenFixedCalibration.real_complete_weight_sum_bound.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι]
+  (x y : ι → ℝ) :
+  D0.Research.GoldenFixedCalibration.realVectorWeight (x + y) ≤
+    2 * D0.Research.GoldenFixedCalibration.realVectorWeight x +
+      2 * D0.Research.GoldenFixedCalibration.realVectorWeight y
+'D0.Research.GoldenFixedCalibration.real_complete_weight_sum_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenFixedCalibration.real_projector_image_weight.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι]
+  (P : Matrix ι ι ℝ) (hs : P.transpose = P) (hp : P * P = P) (x : ι → ℝ) :
+  D0.Research.GoldenFixedCalibration.realVectorWeight (P.mulVec x) =
+    D0.Research.GoldenFixedCalibration.realQuadraticReading P x
+'D0.Research.GoldenFixedCalibration.real_projector_image_weight' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenFixedCalibration.real_projector_contracts_every_complete_state.{u_1} {ι : Type u_1} [Fintype ι]
+  [DecidableEq ι] (P : Matrix ι ι ℝ) (hs : P.transpose = P) (hp : P * P = P) (x : ι → ℝ) :
+  D0.Research.GoldenFixedCalibration.realVectorWeight (P.mulVec x) ≤
+    D0.Research.GoldenFixedCalibration.realVectorWeight x
+'D0.Research.GoldenFixedCalibration.real_projector_contracts_every_complete_state' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenFixedCalibration.real_symmetric_quadratic_difference_identity.{u_1} {ι : Type u_1} [Fintype ι]
+  [DecidableEq ι] (P : Matrix ι ι ℝ) (hs : P.transpose = P) (x y : ι → ℝ) :
+  D0.Research.GoldenFixedCalibration.realQuadraticReading P x -
+      D0.Research.GoldenFixedCalibration.realQuadraticReading P y =
+    (x - y) ⬝ᵥ P.mulVec (x + y)
+'D0.Research.GoldenFixedCalibration.real_symmetric_quadratic_difference_identity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenFixedCalibration.all_real_projector_readout_squared_error.{u_1} {ι : Type u_1} [Fintype ι]
+  [DecidableEq ι] (P : Matrix ι ι ℝ) (hs : P.transpose = P) (hp : P * P = P) (x y : ι → ℝ)
+  (hx : D0.Research.GoldenFixedCalibration.realVectorWeight x = 1)
+  (hy : D0.Research.GoldenFixedCalibration.realVectorWeight y = 1) :
+  (D0.Research.GoldenFixedCalibration.realQuadraticReading P x -
+        D0.Research.GoldenFixedCalibration.realQuadraticReading P y) ^
+      2 ≤
+    4 * D0.Research.GoldenFixedCalibration.realVectorWeight (x - y)
+'D0.Research.GoldenFixedCalibration.all_real_projector_readout_squared_error' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenFixedCalibration.full_real_fixed_limit_all_projector_readings.{u_1} {ι : Type u_1} [Fintype ι]
+  [DecidableEq ι] (a p : ℝ) (U : Matrix ι ι ℂ) (z : ι) (χ : ι → Bool) (ha : a ^ 2 = p) (hp : p + p ^ 2 = 1)
+  (hp0 : 0 < p) (hU : U.conjTranspose * U = 1 ∧ U * U.conjTranspose = 1)
+  (he : (D0.Research.GoldenCoherentAmplification.rejectedWeight χ fun i => U i z) ≤ 11 / 16) :
+  ∃ γ,
+    Complex.normSq γ = 1 ∧
+      ∀ (P : Matrix (ι × Fin 2) (ι × Fin 2) ℝ),
+        P.transpose = P →
+          P * P = P →
+            ∀ (k : ℕ),
+              (D0.Research.GoldenFixedCalibration.realQuadraticReading P
+                      (D0.Research.GoldenFixedCalibration.fullRealVector
+                        (D0.Research.GoldenFixedCalibration.unspunColumn U z χ
+                          (D0.Research.GoldenCoherentAmplification.fastGoldenPhase a p) (k + 2))) -
+                    D0.Research.GoldenFixedCalibration.realQuadraticReading P
+                      (D0.Research.GoldenFixedCalibration.fullRealVector fun i =>
+                        γ * D0.Research.GoldenCoherentAmplification.alignedAcceptedVector χ (fun j => U j z) i)) ^
+                  2 ≤
+                1 / 2 * (1 / 16) ^ k
+'D0.Research.GoldenFixedCalibration.full_real_fixed_limit_all_projector_readings' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenFixedCalibration.fixed_success_calibration_is_unique.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι]
+  (a p : ℝ) (U : Matrix ι ι ℂ) (z : ι) (χ : ι → Bool) (γ δ : ℂ)
+  (hγ :
+    Filter.Tendsto (fun k => D0.Research.GoldenFixedCalibration.normalizedSuccessScalar a p U z χ (k + 2)) Filter.atTop
+      (nhds γ))
+  (hδ :
+    Filter.Tendsto (fun k => D0.Research.GoldenFixedCalibration.normalizedSuccessScalar a p U z χ (k + 2)) Filter.atTop
+      (nhds δ)) :
+  γ = δ
+'D0.Research.GoldenFixedCalibration.fixed_success_calibration_is_unique' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenFixedCalibration.actual_seed_forces_one_fixed_success_calibration.{u_1} {ι : Type u_1} [Fintype ι]
+  [DecidableEq ι] (a p : ℝ) (U : Matrix ι ι ℂ) (z : ι) (χ : ι → Bool) (ha : a ^ 2 = p) (hp : p + p ^ 2 = 1)
+  (hp0 : 0 < p) (hU : U.conjTranspose * U = 1 ∧ U * U.conjTranspose = 1)
+  (he : (D0.Research.GoldenCoherentAmplification.rejectedWeight χ fun i => U i z) ≤ 11 / 16) :
+  ∃! γ,
+    Filter.Tendsto (fun k => D0.Research.GoldenFixedCalibration.normalizedSuccessScalar a p U z χ (k + 2)) Filter.atTop
+      (nhds γ)
+'D0.Research.GoldenFixedCalibration.actual_seed_forces_one_fixed_success_calibration' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenFixedCalibration.every_golden_history_depth_preserves_complete_weight.{u_1} {ι : Type u_1} [Fintype ι]
+  [DecidableEq ι] (a p : ℝ) (ha : a ^ 2 = p) (hp : p + p ^ 2 = 1) (n : ℕ) (x : ι → ℂ) :
+  D0.Research.GoldenCoherentAmplification.vectorWeight
+      (D0.Research.GoldenFixedCalibration.historyCylinderInclusion a p n x) =
+    D0.Research.GoldenCoherentAmplification.vectorWeight x
+'D0.Research.GoldenFixedCalibration.every_golden_history_depth_preserves_complete_weight' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenFixedCalibration.all_golden_history_inclusions_subtract.{u_1} {ι : Type u_1} [Fintype ι]
+  [DecidableEq ι] (a p : ℝ) (n : ℕ) (x y : ι → ℂ) :
+  D0.Research.GoldenFixedCalibration.historyCylinderInclusion a p n (x - y) =
+    D0.Research.GoldenFixedCalibration.historyCylinderInclusion a p n x -
+      D0.Research.GoldenFixedCalibration.historyCylinderInclusion a p n y
+'D0.Research.GoldenFixedCalibration.all_golden_history_inclusions_subtract' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenFixedCalibration.every_golden_history_depth_intertwines_complete_operator.{u_1} {ι : Type u_1}
+  [Fintype ι] [DecidableEq ι] (A : Matrix ι ι ℂ) (a p : ℝ) (n : ℕ) (x : ι → ℂ) :
+  (D0.Research.GoldenCoherentAmplification.suffixLift A).mulVec
+      (D0.Research.GoldenFixedCalibration.historyCylinderInclusion a p n x) =
+    D0.Research.GoldenFixedCalibration.historyCylinderInclusion a p n (A.mulVec x)
+'D0.Research.GoldenFixedCalibration.every_golden_history_depth_intertwines_complete_operator' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenFixedCalibration.literal_complete_word_intertwines_every_golden_history_depth.{u_1} {ι : Type u_1}
+  [Fintype ι] [DecidableEq ι] (U : Matrix ι ι ℂ) (z : ι) (χ : ι → Bool) (w : ℂ) (k n : ℕ) (a p : ℝ) (x : ι → ℂ) :
+  (D0.Research.GoldenCoherentAmplification.recordedWord (D0.Research.GoldenCoherentAmplification.suffixLift U)
+          (D0.Research.GoldenCoherentAmplification.suffixLift (D0.Research.GoldenCoherentAmplification.blankPhase z w))
+          (D0.Research.GoldenCoherentAmplification.suffixLift
+            (D0.Research.GoldenCoherentAmplification.diagonalPhase χ w))
+          k).mulVec
+      (D0.Research.GoldenFixedCalibration.historyCylinderInclusion a p n x) =
+    D0.Research.GoldenFixedCalibration.historyCylinderInclusion a p n
+      ((D0.Research.GoldenCoherentAmplification.fullWord U z χ w k).mulVec x)
+'D0.Research.GoldenFixedCalibration.literal_complete_word_intertwines_every_golden_history_depth' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenFixedCalibration.complete_fixed_calibration_rate_uniform_at_every_history_depth.{u_1} {ι : Type u_1}
+  [Fintype ι] [DecidableEq ι] (a p : ℝ) (U : Matrix ι ι ℂ) (z : ι) (χ : ι → Bool) (ha : a ^ 2 = p) (hp : p + p ^ 2 = 1)
+  (hp0 : 0 < p) (hU : U.conjTranspose * U = 1 ∧ U * U.conjTranspose = 1)
+  (he : (D0.Research.GoldenCoherentAmplification.rejectedWeight χ fun i => U i z) ≤ 11 / 16) :
+  ∃ γ,
+    Complex.normSq γ = 1 ∧
+      ∀ (n : ℕ),
+        D0.Research.GoldenCoherentAmplification.vectorWeight
+              (D0.Research.GoldenFixedCalibration.historyCylinderInclusion a p n fun i =>
+                γ * D0.Research.GoldenCoherentAmplification.alignedAcceptedVector χ (fun j => U j z) i) =
+            1 ∧
+          ∀ (k : ℕ),
+            D0.Research.GoldenCoherentAmplification.vectorWeight
+                (D0.Research.GoldenFixedCalibration.historyCylinderInclusion a p n
+                    (D0.Research.GoldenFixedCalibration.unspunColumn U z χ
+                      (D0.Research.GoldenCoherentAmplification.fastGoldenPhase a p) (k + 2)) -
+                  D0.Research.GoldenFixedCalibration.historyCylinderInclusion a p n fun i =>
+                    γ * D0.Research.GoldenCoherentAmplification.alignedAcceptedVector χ (fun j => U j z) i) ≤
+              1 / 8 * (1 / 16) ^ k
+'D0.Research.GoldenFixedCalibration.complete_fixed_calibration_rate_uniform_at_every_history_depth' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenFixedCalibration.actual_all_scene_fixed_calibrations_and_all_real_readouts (a p : ℝ) (ha : a ^ 2 = p)
+  (hp : p + p ^ 2 = 1) (hp0 : 0 < p) :
+  ∃ γ,
+    ∀ (v : Fin 33),
+      Complex.normSq (γ v) = 1 ∧
+        ∀
+          (P :
+            Matrix (D0.Research.GoldenCoherentAmplification.CompleteSeedCarrier 4 5 × Fin 2)
+              (D0.Research.GoldenCoherentAmplification.CompleteSeedCarrier 4 5 × Fin 2) ℝ),
+          P.transpose = P →
+            P * P = P →
+              ∀ (k : ℕ),
+                (D0.Research.GoldenFixedCalibration.realQuadraticReading P
+                        (D0.Research.GoldenFixedCalibration.fullRealVector
+                          (D0.Research.GoldenFixedCalibration.unspunColumn
+                            (D0.Research.GoldenCoherentAmplification.routedGoldenSeed a p 4 5)
+                            (D0.Research.GoldenCoherentAmplification.completeBlank 4 5)
+                            (D0.Research.GoldenCoherentAmplification.codeValidity 4 5
+                              (D0.Research.GoldenCoherentAmplification.sceneAcceptedCodes v))
+                            (D0.Research.GoldenCoherentAmplification.fastGoldenPhase a p) (k + 2))) -
+                      D0.Research.GoldenFixedCalibration.realQuadraticReading P
+                        (D0.Research.GoldenFixedCalibration.fullRealVector fun i =>
+                          γ v *
+                            D0.Research.GoldenCoherentAmplification.alignedAcceptedVector
+                              (D0.Research.GoldenCoherentAmplification.codeValidity 4 5
+                                (D0.Research.GoldenCoherentAmplification.sceneAcceptedCodes v))
+                              (fun j =>
+                                D0.Research.GoldenCoherentAmplification.routedGoldenSeed a p 4 5 j
+                                  (D0.Research.GoldenCoherentAmplification.completeBlank 4 5))
+                              i)) ^
+                    2 ≤
+                  1 / 2 * (1 / 16) ^ k
+'D0.Research.GoldenFixedCalibration.actual_all_scene_fixed_calibrations_and_all_real_readouts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenFixedCalibration.literal_p0_all_scene_readouts_have_one_fixed_target_family :
+  ∃ γ,
+    ∀ (v : Fin 33),
+      Complex.normSq (γ v) = 1 ∧
+        ∀
+          (P :
+            Matrix (D0.Research.GoldenCoherentAmplification.CompleteSeedCarrier 4 5 × Fin 2)
+              (D0.Research.GoldenCoherentAmplification.CompleteSeedCarrier 4 5 × Fin 2) ℝ),
+          P.transpose = P →
+            P * P = P →
+              ∀ (k : ℕ),
+                (D0.Research.GoldenFixedCalibration.realQuadraticReading P
+                        (D0.Research.GoldenFixedCalibration.fullRealVector
+                          (D0.Research.GoldenFixedCalibration.actualSceneUnspunColumn v k)) -
+                      D0.Research.GoldenFixedCalibration.realQuadraticReading P
+                        (D0.Research.GoldenFixedCalibration.fullRealVector fun i =>
+                          γ v * D0.Research.GoldenFixedCalibration.actualSceneAlignedSeed v i)) ^
+                    2 ≤
+                  1 / 2 * (1 / 16) ^ k
+'D0.Research.GoldenFixedCalibration.literal_p0_all_scene_readouts_have_one_fixed_target_family' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenFixedCalibration.full_real_scalar_phase_is_global_pointer_rotation.{u_1} {ι : Type u_1} [Fintype ι]
+  [DecidableEq ι] (c : ℂ) (x : ι → ℂ) :
+  (D0.Research.GoldenFixedCalibration.fullRealVector fun i => c * x i) =
+    (Matrix.kroneckerMap (fun x1 x2 => x1 * x2) 1 (D0.Research.GoldenCoherentAmplification.phaseRealMatrix c)).mulVec
+      (D0.Research.GoldenFixedCalibration.fullRealVector x)
+'D0.Research.GoldenFixedCalibration.full_real_scalar_phase_is_global_pointer_rotation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenFixedCalibration.actual_complete_unspin_is_one_owned_pointer_word.{u_1} {ι : Type u_1} [Fintype ι]
+  [DecidableEq ι] (a p : ℝ) (ha : a ^ 2 = p) (U : Matrix ι ι ℂ) (z : ι) (χ : ι → Bool) (k : ℕ) :
+  D0.Research.GoldenFixedCalibration.fullRealVector
+      (D0.Research.GoldenFixedCalibration.unspunColumn U z χ
+        (D0.Research.GoldenCoherentAmplification.fastGoldenPhase a p) k) =
+    (Matrix.kroneckerMap (fun x1 x2 => x1 * x2) 1
+          (D0.Representation.GoldenOrderInterferometer.gate a p ^ (16 * k)).transpose).mulVec
+      (D0.Research.GoldenFixedCalibration.fullRealVector fun i =>
+        D0.Research.GoldenCoherentAmplification.fullWord U z χ
+          (D0.Research.GoldenCoherentAmplification.fastGoldenPhase a p) k i z)
+'D0.Research.GoldenFixedCalibration.actual_complete_unspin_is_one_owned_pointer_word' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

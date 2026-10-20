@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-15",
+  "remote_head_read": "bdbac63270a52b3da3e3348502682a8fc48459b8",
+  "uploaded_archive": "D0_full4d_exact_sheet_2026-10-15.zip",
+  "uploaded_archive_sha256": "9e7f840e4eddc8291f282e900b5d60dca9efa93c048baa46589aecca1665940c",
+  "previous_exact_metric_null_owner_blob": "8e8f8d2560e39ce4b1e8f5d991ee0a72ea268a17",
+  "new_ward_is_backward_compensated_not_old_forward_affine_lift": true,
+  "remote_write_available": false,
+  "terminal_git_probe": "Could not resolve host: github.com",
+  "no_new_remote_commit": true,
+  "last_remote_head_read": "9fbc75db0a94707dc3105cdfb3f322a14e62a979",
+  "prior_full4d_packet_now_published": true,
+  "native_input_capsule_restore_blob": "1512bf6d2907209a753c7291fc7a1a47df5f81a7",
+  "expanded_old_sources_not_required_in_repo": true,
+  "symbol_sha256": "37c2b21429c5e703068d2ac398160329e9728ffce480ec86fc57418813e90dab"
+}

@@ -1,0 +1,1214 @@
+../02_REGISTRY/research/certificates/a4d_native_golden_history_preparation.lean:666:2: warning: 'push_cast' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+../02_REGISTRY/research/certificates/a4d_native_golden_history_preparation.lean:679:2: warning: 'push_cast' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+../02_REGISTRY/research/certificates/a4d_native_golden_history_preparation.lean:954:4: warning: 'change Complex.normSq (fullAmplify U z χ w i z) = _' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+../02_REGISTRY/research/certificates/a4d_native_golden_history_preparation.lean:1378:4: warning: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+../02_REGISTRY/research/certificates/a4d_native_golden_history_preparation.lean:1807:28: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+D0.Research.GoldenHistoryPreparation.flipFirst_involutive (n : ℕ) :
+  Function.Involutive D0.Research.GoldenHistoryPreparation.flipFirst
+'D0.Research.GoldenHistoryPreparation.flipFirst_involutive' depends on axioms: [propext]
+D0.Research.GoldenHistoryPreparation.firstLabel_flipFirst (n : ℕ) (w : D0.Research.GoldenHistoryPreparation.Word n) :
+  D0.Research.GoldenHistoryPreparation.firstLabel (D0.Research.GoldenHistoryPreparation.flipFirst w) =
+    Option.map not (D0.Research.GoldenHistoryPreparation.firstLabel w)
+'D0.Research.GoldenHistoryPreparation.firstLabel_flipFirst' depends on axioms: [propext]
+D0.Research.GoldenHistoryPreparation.amplitude_flipFirst (a p : ℝ) (n : ℕ)
+  (w : D0.Research.GoldenHistoryPreparation.Word n) :
+  D0.Research.GoldenHistoryPreparation.amplitude a p (D0.Research.GoldenHistoryPreparation.flipFirst w) =
+    D0.Research.GoldenHistoryPreparation.amplitude a p w
+'D0.Research.GoldenHistoryPreparation.amplitude_flipFirst' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.GoldenHistoryPreparation.complete_mass (a p : ℝ) (h : a ^ 2 + p ^ 2 = 1) (n : ℕ) :
+  ∑ w, D0.Research.GoldenHistoryPreparation.amplitude a p w ^ 2 = 1
+'D0.Research.GoldenHistoryPreparation.complete_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.GoldenHistoryPreparation.failure_mass (a p : ℝ) (n : ℕ) :
+  (∑ w,
+      if D0.Research.GoldenHistoryPreparation.firstLabel w = none then
+        D0.Research.GoldenHistoryPreparation.amplitude a p w ^ 2
+      else 0) =
+    D0.Research.GoldenHistoryPreparation.q a p ^ n
+'D0.Research.GoldenHistoryPreparation.failure_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.GoldenHistoryPreparation.copyLabel_involutive (n : ℕ) :
+  Function.Involutive (D0.Research.GoldenHistoryPreparation.copyLabel n)
+'D0.Research.GoldenHistoryPreparation.copyLabel_involutive' depends on axioms: [propext]
+D0.Research.GoldenHistoryPreparation.controlledFlip_involutive (n : ℕ) :
+  Function.Involutive (D0.Research.GoldenHistoryPreparation.controlledFlip n)
+'D0.Research.GoldenHistoryPreparation.controlledFlip_involutive' depends on axioms: [propext]
+D0.Research.GoldenHistoryPreparation.full_retained_route_bijective (n : ℕ) :
+  Function.Bijective ⇑(D0.Research.GoldenHistoryPreparation.route n)
+'D0.Research.GoldenHistoryPreparation.full_retained_route_bijective' depends on axioms: [propext, Quot.sound]
+D0.Research.GoldenHistoryPreparation.full_retained_route_inverse (n : ℕ)
+  (s : D0.Research.GoldenHistoryPreparation.Word n × Bool) :
+  (Equiv.symm (D0.Research.GoldenHistoryPreparation.route n)) ((D0.Research.GoldenHistoryPreparation.route n) s) = s
+'D0.Research.GoldenHistoryPreparation.full_retained_route_inverse' depends on axioms: [propext, Quot.sound]
+D0.Research.GoldenHistoryPreparation.failed_record_unchanged (n : ℕ) (w : D0.Research.GoldenHistoryPreparation.Word n)
+  (h : D0.Research.GoldenHistoryPreparation.firstLabel w = none) :
+  (D0.Research.GoldenHistoryPreparation.route n) (w, false) = (w, false)
+'D0.Research.GoldenHistoryPreparation.failed_record_unchanged' depends on axioms: [propext, Quot.sound]
+D0.Research.GoldenHistoryPreparation.success_false_record (n : ℕ) (w : D0.Research.GoldenHistoryPreparation.Word n)
+  (h : D0.Research.GoldenHistoryPreparation.firstLabel w = some false) :
+  (D0.Research.GoldenHistoryPreparation.route n) (w, false) = (w, false)
+'D0.Research.GoldenHistoryPreparation.success_false_record' depends on axioms: [propext, Quot.sound]
+D0.Research.GoldenHistoryPreparation.success_true_record (n : ℕ) (w : D0.Research.GoldenHistoryPreparation.Word n)
+  (h : D0.Research.GoldenHistoryPreparation.firstLabel w = some true) :
+  (D0.Research.GoldenHistoryPreparation.route n) (w, false) = (D0.Research.GoldenHistoryPreparation.flipFirst w, true)
+'D0.Research.GoldenHistoryPreparation.success_true_record' depends on axioms: [propext, Quot.sound]
+D0.Research.GoldenHistoryPreparation.successful_coherent_twins (a p : ℝ) (n : ℕ)
+  (w : D0.Research.GoldenHistoryPreparation.Word n)
+  (h : D0.Research.GoldenHistoryPreparation.firstLabel w = some false) :
+  (D0.Research.GoldenHistoryPreparation.route n) (w, false) = (w, false) ∧
+    (D0.Research.GoldenHistoryPreparation.route n) (D0.Research.GoldenHistoryPreparation.flipFirst w, false) =
+        (w, true) ∧
+      D0.Research.GoldenHistoryPreparation.amplitude a p (D0.Research.GoldenHistoryPreparation.flipFirst w) =
+        D0.Research.GoldenHistoryPreparation.amplitude a p w
+'D0.Research.GoldenHistoryPreparation.successful_coherent_twins' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenHistoryPreparation.complete_coherent_success_symmetry (a p : ℝ) (n : ℕ) :
+  D0.Research.GoldenHistoryPreparation.successMass a p n false =
+    D0.Research.GoldenHistoryPreparation.successMass a p n true
+'D0.Research.GoldenHistoryPreparation.complete_coherent_success_symmetry' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenHistoryPreparation.complete_mass_partition (a p : ℝ) (n : ℕ) :
+  D0.Research.GoldenHistoryPreparation.successMass a p n false +
+        D0.Research.GoldenHistoryPreparation.successMass a p n true +
+      D0.Research.GoldenHistoryPreparation.q a p ^ n =
+    ∑ w, D0.Research.GoldenHistoryPreparation.amplitude a p w ^ 2
+'D0.Research.GoldenHistoryPreparation.complete_mass_partition' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenHistoryPreparation.exact_fair_success_weights (a p : ℝ) (h : a ^ 2 + p ^ 2 = 1) (n : ℕ) :
+  D0.Research.GoldenHistoryPreparation.successMass a p n false =
+      (1 - D0.Research.GoldenHistoryPreparation.q a p ^ n) / 2 ∧
+    D0.Research.GoldenHistoryPreparation.successMass a p n true =
+      (1 - D0.Research.GoldenHistoryPreparation.q a p ^ n) / 2
+'D0.Research.GoldenHistoryPreparation.exact_fair_success_weights' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenHistoryPreparation.actual_owned_golden_blank (a p : ℝ) :
+  (D0.Representation.GoldenOrderInterferometer.gate a p).mulVec ![1, 0] = ![a, p]
+'D0.Research.GoldenHistoryPreparation.actual_owned_golden_blank' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenHistoryPreparation.golden_factor_normalized (a p : ℝ) (ha : a ^ 2 = p) (hp : p + p ^ 2 = 1) :
+  a ^ 2 + p ^ 2 = 1
+'D0.Research.GoldenHistoryPreparation.golden_factor_normalized' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenHistoryPreparation.golden_failure_parameter (a p : ℝ) (ha : a ^ 2 = p) (hp : p + p ^ 2 = 1) :
+  D0.Research.GoldenHistoryPreparation.q a p = 3 - 4 * p
+'D0.Research.GoldenHistoryPreparation.golden_failure_parameter' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenHistoryPreparation.full_retained_route_preserves_all_norms (n : ℕ)
+  (f : D0.Research.GoldenHistoryPreparation.Word n × Bool → ℝ) :
+  ∑ s, f ((D0.Research.GoldenHistoryPreparation.route n) s) ^ 2 = ∑ s, f s ^ 2
+'D0.Research.GoldenHistoryPreparation.full_retained_route_preserves_all_norms' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenHistoryPreparation.golden_root_interval (p : ℝ) (hp : p + p ^ 2 = 1) (hp0 : 0 < p) :
+  617 / 1000 < p ∧ p < 1
+'D0.Research.GoldenHistoryPreparation.golden_root_interval' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.GoldenHistoryPreparation.golden_pair_success_balance (a p : ℝ) (ha : a ^ 2 = p) (hp : p + p ^ 2 = 1) :
+  D0.Research.GoldenHistoryPreparation.q a p + 2 * p ^ 3 = 1
+'D0.Research.GoldenHistoryPreparation.golden_pair_success_balance' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenHistoryPreparation.golden_pair_failure_bounds (a p : ℝ) (ha : a ^ 2 = p) (hp : p + p ^ 2 = 1)
+  (hp0 : 0 < p) :
+  0 ≤ D0.Research.GoldenHistoryPreparation.q a p ∧
+    D0.Research.GoldenHistoryPreparation.q a p ≤ 8 / 15 ∧ D0.Research.GoldenHistoryPreparation.q a p < 1
+'D0.Research.GoldenHistoryPreparation.golden_pair_failure_bounds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenHistoryPreparation.golden_four_pair_good_weight (a p : ℝ) (ha : a ^ 2 = p) (hp : p + p ^ 2 = 1)
+  (hp0 : 0 < p) :
+  919 / 1000 ≤ 1 - D0.Research.GoldenHistoryPreparation.q a p ^ 4 ∧
+    1 - D0.Research.GoldenHistoryPreparation.q a p ^ 4 ≤ 1
+'D0.Research.GoldenHistoryPreparation.golden_four_pair_good_weight' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenHistoryPreparation.golden_five_bit_good_bounds (a p : ℝ) (ha : a ^ 2 = p) (hp : p + p ^ 2 = 1)
+  (hp0 : 0 < p) :
+  (919 / 1000) ^ 5 ≤ D0.Research.GoldenHistoryPreparation.jointGoodWeight a p ∧
+    D0.Research.GoldenHistoryPreparation.jointGoodWeight a p ≤ 1
+'D0.Research.GoldenHistoryPreparation.golden_five_bit_good_bounds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenHistoryPreparation.native_degree_retained_preparation_rate (a p d : ℝ) (ha : a ^ 2 = p)
+  (hp : p + p ^ 2 = 1) (hp0 : 0 < p) (hd0 : 20 ≤ d) (hd1 : d ≤ 24) :
+  0 ≤ D0.Research.GoldenHistoryPreparation.historyFailure a p d ∧
+    D0.Research.GoldenHistoryPreparation.historyFailure a p d < p ∧
+      D0.Research.GoldenHistoryPreparation.historyFailure a p d < 1
+'D0.Research.GoldenHistoryPreparation.native_degree_retained_preparation_rate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenHistoryPreparation.native_degree_all_retained_retries_bound (a p d : ℝ) (ha : a ^ 2 = p)
+  (hp : p + p ^ 2 = 1) (hp0 : 0 < p) (hd0 : 20 ≤ d) (hd1 : d ≤ 24) (k : ℕ) :
+  D0.Research.GoldenHistoryPreparation.historyFailure a p d ^ k ≤ p ^ k
+'D0.Research.GoldenHistoryPreparation.native_degree_all_retained_retries_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenHistoryPreparation.frozen_native_golden_fair_history (n : ℕ) :
+  have p := D0.primitiveRoot;
+  have a := √p;
+  D0.Research.GoldenHistoryPreparation.successMass a p n false = (1 - (3 - 4 * p) ^ n) / 2 ∧
+    D0.Research.GoldenHistoryPreparation.successMass a p n true = (1 - (3 - 4 * p) ^ n) / 2
+'D0.Research.GoldenHistoryPreparation.frozen_native_golden_fair_history' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenHistoryPreparation.complete_rejected_record_gram.{u_1} {Ω : Type u_1} [Fintype Ω] [DecidableEq Ω]
+  (ψ : Ω → ℝ) (A B : Finset Ω) :
+  ∑ x,
+      D0.Research.GoldenHistoryPreparation.rejectedVector ψ A x *
+        D0.Research.GoldenHistoryPreparation.rejectedVector ψ B x =
+    ∑ x, D0.Research.GoldenHistoryPreparation.rejectedVector ψ (A ∪ B) x ^ 2
+'D0.Research.GoldenHistoryPreparation.complete_rejected_record_gram' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenHistoryPreparation.complete_rejected_record_overlap_bound.{u_1} {Ω : Type u_1} [Fintype Ω]
+  [DecidableEq Ω] (ψ : Ω → ℝ) (A B : Finset Ω) :
+  0 ≤
+      ∑ x,
+        D0.Research.GoldenHistoryPreparation.rejectedVector ψ A x *
+          D0.Research.GoldenHistoryPreparation.rejectedVector ψ B x ∧
+    ∑ x,
+        D0.Research.GoldenHistoryPreparation.rejectedVector ψ A x *
+          D0.Research.GoldenHistoryPreparation.rejectedVector ψ B x ≤
+      ∑ x, D0.Research.GoldenHistoryPreparation.rejectedVector ψ B x ^ 2
+'D0.Research.GoldenHistoryPreparation.complete_rejected_record_overlap_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenHistoryPreparation.sqrt_success_ratio_coefficient (small large : ℝ) (hs : 0 ≤ small)
+  (hl : 0 < large) : √small * √large = √(small / large) * large
+'D0.Research.GoldenHistoryPreparation.sqrt_success_ratio_coefficient' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenHistoryPreparation.exact_retained_retry_gram (small large : ℝ) (hs : 0 ≤ small) (hl : 0 < large)
+  (k : ℕ) :
+  D0.Research.GoldenHistoryPreparation.retainedRetryGram small large (1 - large) k =
+    √(small / large) * (1 - (1 - large) ^ k)
+'D0.Research.GoldenHistoryPreparation.exact_retained_retry_gram' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenHistoryPreparation.whole_retained_retry_coherence_bound (small large c : ℝ) (hs : 0 ≤ small)
+  (hl : 0 < large) (hl1 : large ≤ 1) (hc : 0 ≤ c) (hcl : c ≤ 1 - large) (k : ℕ) :
+  D0.Research.GoldenHistoryPreparation.retainedRetryGram small large c k ≤ √(small / large)
+'D0.Research.GoldenHistoryPreparation.whole_retained_retry_coherence_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenHistoryPreparation.actual_degree_twenty_twentyfour_ratio (α : ℝ) (h : 0 < α) :
+  20 / 32 * α / (24 / 32 * α) = 5 / 6
+'D0.Research.GoldenHistoryPreparation.actual_degree_twenty_twentyfour_ratio' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenHistoryPreparation.actual_degree_retained_retry_coherence_floor (α c : ℝ) (hα : 0 < α) (hα1 : α ≤ 1)
+  (hc : 0 ≤ c) (hcl : c ≤ 1 - 24 / 32 * α) (k : ℕ) :
+  D0.Research.GoldenHistoryPreparation.retainedRetryGram (20 / 32 * α) (24 / 32 * α) c k ≤ √(5 / 6) ∧ √(5 / 6) < 1
+'D0.Research.GoldenHistoryPreparation.actual_degree_retained_retry_coherence_floor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenHistoryPreparation.exact_retained_retry_gram_limit (small large : ℝ) (hs : 0 ≤ small) (hl : 0 < large)
+  (hl1 : large ≤ 1) :
+  Filter.Tendsto (fun k => D0.Research.GoldenHistoryPreparation.retainedRetryGram small large (1 - large) k)
+    Filter.atTop (nhds √(small / large))
+'D0.Research.GoldenHistoryPreparation.exact_retained_retry_gram_limit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenHistoryPreparation.complete_disjoint_record_code_mass (a p : ℝ) (n m : ℕ) (b : Fin m → Bool) :
+  D0.Research.GoldenHistoryPreparation.completeCodeMass a p n m b =
+    ∏ i, D0.Research.GoldenHistoryPreparation.successMass a p n (b i)
+'D0.Research.GoldenHistoryPreparation.complete_disjoint_record_code_mass' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenHistoryPreparation.whole_fair_code_mass (a p : ℝ) (h : a ^ 2 + p ^ 2 = 1) (n m : ℕ)
+  (b : Fin m → Bool) :
+  D0.Research.GoldenHistoryPreparation.completeCodeMass a p n m b =
+    ((1 - D0.Research.GoldenHistoryPreparation.q a p ^ n) / 2) ^ m
+'D0.Research.GoldenHistoryPreparation.whole_fair_code_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.GoldenHistoryPreparation.actual_five_bit_code_carrier : Fintype.card (Fin 5 → Bool) = 32
+'D0.Research.GoldenHistoryPreparation.actual_five_bit_code_carrier' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenHistoryPreparation.actual_five_bit_code_mass (a p : ℝ) (h : a ^ 2 + p ^ 2 = 1) (b : Fin 5 → Bool) :
+  D0.Research.GoldenHistoryPreparation.completeCodeMass a p 4 5 b =
+    D0.Research.GoldenHistoryPreparation.jointGoodWeight a p / 32
+'D0.Research.GoldenHistoryPreparation.actual_five_bit_code_mass' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenHistoryPreparation.full_retained_valid_code_mass (a p : ℝ) (h : a ^ 2 + p ^ 2 = 1)
+  (S : Finset (Fin 5 → Bool)) :
+  ∑ b ∈ S, D0.Research.GoldenHistoryPreparation.completeCodeMass a p 4 5 b =
+    D0.Research.GoldenHistoryPreparation.historySuccess a p ↑S.card
+'D0.Research.GoldenHistoryPreparation.full_retained_valid_code_mass' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenHistoryPreparation.all_disjoint_retained_records_reversible (n m : ℕ) :
+  Function.Bijective ⇑(D0.Research.GoldenHistoryPreparation.tensorRoute n m)
+'D0.Research.GoldenHistoryPreparation.all_disjoint_retained_records_reversible' depends on axioms: [propext, Quot.sound]
+D0.Research.GoldenHistoryPreparation.full_successful_code_keeps_same_record (n m : ℕ) (b : Fin m → Bool)
+  (w : Fin m → D0.Research.GoldenHistoryPreparation.Word n)
+  (hw : ∀ (i : Fin m), D0.Research.GoldenHistoryPreparation.firstLabel (w i) = some false) :
+  ((D0.Research.GoldenHistoryPreparation.tensorRoute n m) fun i =>
+      (D0.Research.GoldenHistoryPreparation.rawForCode n m b w i, false)) =
+    fun i => (w i, b i)
+'D0.Research.GoldenHistoryPreparation.full_successful_code_keeps_same_record' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenHistoryPreparation.full_code_coherent_amplitude_independence (a p : ℝ) (n m : ℕ) (b : Fin m → Bool)
+  (w : Fin m → D0.Research.GoldenHistoryPreparation.Word n) :
+  ∏ i, D0.Research.GoldenHistoryPreparation.amplitude a p (D0.Research.GoldenHistoryPreparation.rawForCode n m b w i) =
+    ∏ i, D0.Research.GoldenHistoryPreparation.amplitude a p (w i)
+'D0.Research.GoldenHistoryPreparation.full_code_coherent_amplitude_independence' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.copy_from_owned_record (a p : ℝ) (ha : a ^ 2 = p) (hp : p + p ^ 2 = 1) :
+  D0.Representation.GoldenCoherentMemory.fullStep a p *
+      (D0.Research.GoldenCoherentAmplification.goldenSystemGate a p).transpose =
+    D0.Research.GoldenCoherentAmplification.retainedCopy
+'D0.Research.GoldenCoherentAmplification.copy_from_owned_record' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.golden_controlled_square_word (a p : ℝ) (ha : a ^ 2 = p) (hp : p + p ^ 2 = 1) :
+  D0.Research.GoldenCoherentAmplification.goldenRecordGate a p * D0.Research.GoldenCoherentAmplification.retainedCopy *
+        (D0.Research.GoldenCoherentAmplification.goldenRecordGate a p).transpose *
+      D0.Research.GoldenCoherentAmplification.retainedCopy =
+    D0.Research.GoldenCoherentAmplification.controlledGoldenSquare a p
+'D0.Research.GoldenCoherentAmplification.golden_controlled_square_word' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.golden_phase_components (a p : ℝ) (ha : a ^ 2 = p) :
+  (D0.Research.GoldenCoherentAmplification.goldenPhase a p).re = p - p ^ 2 ∧
+    (D0.Research.GoldenCoherentAmplification.goldenPhase a p).im = 2 * a * p
+'D0.Research.GoldenCoherentAmplification.golden_phase_components' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.golden_phase_normSq (a p : ℝ) (ha : a ^ 2 = p) (hp : p + p ^ 2 = 1) :
+  Complex.normSq (D0.Research.GoldenCoherentAmplification.goldenPhase a p) = 1
+'D0.Research.GoldenCoherentAmplification.golden_phase_normSq' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.GoldenCoherentAmplification.unit_phase_quadratic (w : ℂ) (hw : Complex.normSq w = 1) :
+  w ^ 2 - ↑(2 * w.re) * w + 1 = 0
+'D0.Research.GoldenCoherentAmplification.unit_phase_quadratic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.coherent_bad_multiplier (w : ℂ) (e : ℝ) (hw : Complex.normSq w = 1) :
+  D0.Research.GoldenCoherentAmplification.badMultiplier w e = w * ↑(2 * w.re - 1 + 2 * (1 - w.re) * e)
+'D0.Research.GoldenCoherentAmplification.coherent_bad_multiplier' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.actual_golden_bad_multiplier (a p e : ℝ) (ha : a ^ 2 = p) (hp : p + p ^ 2 = 1) :
+  D0.Research.GoldenCoherentAmplification.badMultiplier (D0.Research.GoldenCoherentAmplification.goldenPhase a p) e =
+    D0.Research.GoldenCoherentAmplification.goldenPhase a p *
+      ↑(-D0.Research.GoldenCoherentAmplification.contractionParameter p +
+          (1 + D0.Research.GoldenCoherentAmplification.contractionParameter p) * e)
+'D0.Research.GoldenCoherentAmplification.actual_golden_bad_multiplier' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.golden_coherent_failure_law (a p e : ℝ) (ha : a ^ 2 = p) (hp : p + p ^ 2 = 1) :
+  Complex.normSq
+      (D0.Research.GoldenCoherentAmplification.badMultiplier (D0.Research.GoldenCoherentAmplification.goldenPhase a p)
+        e) =
+    (-D0.Research.GoldenCoherentAmplification.contractionParameter p +
+        (1 + D0.Research.GoldenCoherentAmplification.contractionParameter p) * e) ^
+      2
+'D0.Research.GoldenCoherentAmplification.golden_coherent_failure_law' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.generic_retained_contraction (q e : ℝ) (hq : 11 / 21 ≤ q) (hq1 : q < 1)
+  (he : 0 ≤ e) (he1 : e ≤ 11 / 16) :
+  0 ≤ D0.Research.GoldenCoherentAmplification.improveFailure q e ∧
+    D0.Research.GoldenCoherentAmplification.improveFailure q e ≤ q ^ 2 * e
+'D0.Research.GoldenCoherentAmplification.generic_retained_contraction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.all_retained_contraction (q e : ℝ) (hq : 11 / 21 ≤ q) (hq1 : q < 1) (he : 0 ≤ e)
+  (he1 : e ≤ 11 / 16) (k : ℕ) :
+  0 ≤ D0.Research.GoldenCoherentAmplification.retainedFailure q e k ∧
+    D0.Research.GoldenCoherentAmplification.retainedFailure q e k ≤ e ∧
+      D0.Research.GoldenCoherentAmplification.retainedFailure q e k ≤ (q ^ 2) ^ k * e
+'D0.Research.GoldenCoherentAmplification.all_retained_contraction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.frozen_golden_contraction_bounds (p : ℝ) (hp : p + p ^ 2 = 1) (hp0 : 0 < p) :
+  11 / 21 < D0.Research.GoldenCoherentAmplification.contractionParameter p ∧
+    D0.Research.GoldenCoherentAmplification.contractionParameter p < p ∧ p < 1
+'D0.Research.GoldenCoherentAmplification.frozen_golden_contraction_bounds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.preparedRotation_conjTranspose (g b : ℝ) :
+  (D0.Research.GoldenCoherentAmplification.preparedRotation g b).conjTranspose =
+    D0.Research.GoldenCoherentAmplification.preparedRotation g (-b)
+'D0.Research.GoldenCoherentAmplification.preparedRotation_conjTranspose' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.preparedRotation_unitary (g b : ℝ) (hn : g ^ 2 + b ^ 2 = 1) :
+  (D0.Research.GoldenCoherentAmplification.preparedRotation g b).conjTranspose *
+        D0.Research.GoldenCoherentAmplification.preparedRotation g b =
+      1 ∧
+    D0.Research.GoldenCoherentAmplification.preparedRotation g b *
+        (D0.Research.GoldenCoherentAmplification.preparedRotation g b).conjTranspose =
+      1
+'D0.Research.GoldenCoherentAmplification.preparedRotation_unitary' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.selectivePhase_unitary (w : ℂ) (hw : Complex.normSq w = 1) :
+  (D0.Research.GoldenCoherentAmplification.selectivePhase w).conjTranspose *
+        D0.Research.GoldenCoherentAmplification.selectivePhase w =
+      1 ∧
+    D0.Research.GoldenCoherentAmplification.selectivePhase w *
+        (D0.Research.GoldenCoherentAmplification.selectivePhase w).conjTranspose =
+      1
+'D0.Research.GoldenCoherentAmplification.selectivePhase_unitary' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.complete_word_unitary (g b : ℝ) (w : ℂ) (hn : g ^ 2 + b ^ 2 = 1)
+  (hw : Complex.normSq w = 1) :
+  (D0.Research.GoldenCoherentAmplification.completeAmplifiedWord g b w).conjTranspose *
+      D0.Research.GoldenCoherentAmplification.completeAmplifiedWord g b w =
+    1
+'D0.Research.GoldenCoherentAmplification.complete_word_unitary' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.complete_word_bad_component (g b : ℝ) (w : ℂ) (hn : g ^ 2 + b ^ 2 = 1) :
+  (D0.Research.GoldenCoherentAmplification.completeAmplifiedWord g b w).mulVec ![1, 0] 1 =
+    ↑b * D0.Research.GoldenCoherentAmplification.badMultiplier w (b ^ 2)
+'D0.Research.GoldenCoherentAmplification.complete_word_bad_component' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.complete_word_good_component (g b : ℝ) (w : ℂ) (hn : g ^ 2 + b ^ 2 = 1) :
+  (D0.Research.GoldenCoherentAmplification.completeAmplifiedWord g b w).mulVec ![1, 0] 0 =
+    ↑g * (w ^ 2 - (w - 1) ^ 2 * ↑(b ^ 2))
+'D0.Research.GoldenCoherentAmplification.complete_word_good_component' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.full_word_golden_failure_probability (a p g b : ℝ) (ha : a ^ 2 = p)
+  (hp : p + p ^ 2 = 1) (hn : g ^ 2 + b ^ 2 = 1) :
+  Complex.normSq
+      ((D0.Research.GoldenCoherentAmplification.completeAmplifiedWord g b
+            (D0.Research.GoldenCoherentAmplification.goldenPhase a p)).mulVec
+        ![1, 0] 1) =
+    D0.Research.GoldenCoherentAmplification.improveFailure
+      (D0.Research.GoldenCoherentAmplification.contractionParameter p) (b ^ 2)
+'D0.Research.GoldenCoherentAmplification.full_word_golden_failure_probability' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.golden_pair_realification (a p : ℝ) (ha : a ^ 2 = p) :
+  !![(D0.Research.GoldenCoherentAmplification.goldenPhase a p).re,
+        -(D0.Research.GoldenCoherentAmplification.goldenPhase a p).im;
+      (D0.Research.GoldenCoherentAmplification.goldenPhase a p).im,
+        (D0.Research.GoldenCoherentAmplification.goldenPhase a p).re] =
+    D0.Representation.GoldenOrderInterferometer.gate a p * D0.Representation.GoldenOrderInterferometer.gate a p
+'D0.Research.GoldenCoherentAmplification.golden_pair_realification' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.phase_aligned_complete_state_error (u v : ℂ)
+  (hn : Complex.normSq u + Complex.normSq v = 1) (hu : u ≠ 0) :
+  Complex.normSq (u - u / ↑‖u‖) + Complex.normSq v ≤ 2 * Complex.normSq v
+'D0.Research.GoldenCoherentAmplification.phase_aligned_complete_state_error' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.retained_golden_depth_rate (p e : ℝ) (hp : p + p ^ 2 = 1) (hp0 : 0 < p)
+  (he : 0 ≤ e) (he1 : e ≤ 11 / 16) (k : ℕ) :
+  D0.Research.GoldenCoherentAmplification.retainedFailure
+      (D0.Research.GoldenCoherentAmplification.contractionParameter p) e k ≤
+    p ^ (2 * k) * e
+'D0.Research.GoldenCoherentAmplification.retained_golden_depth_rate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.native_preparation_enters_retained_contraction (a p d : ℝ) (ha : a ^ 2 = p)
+  (hp : p + p ^ 2 = 1) (hp0 : 0 < p) (hd0 : 20 ≤ d) (hd1 : d ≤ 24) :
+  0 ≤ D0.Research.GoldenHistoryPreparation.historyFailure a p d ∧
+    D0.Research.GoldenHistoryPreparation.historyFailure a p d ≤ 11 / 16
+'D0.Research.GoldenCoherentAmplification.native_preparation_enters_retained_contraction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.native_preparation_coherent_failure_rate (a p d : ℝ) (ha : a ^ 2 = p)
+  (hp : p + p ^ 2 = 1) (hp0 : 0 < p) (hd0 : 20 ≤ d) (hd1 : d ≤ 24) (k : ℕ) :
+  D0.Research.GoldenCoherentAmplification.retainedFailure
+      (D0.Research.GoldenCoherentAmplification.contractionParameter p)
+      (D0.Research.GoldenHistoryPreparation.historyFailure a p d) k ≤
+    p ^ (2 * k)
+'D0.Research.GoldenCoherentAmplification.native_preparation_coherent_failure_rate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.frozen_three_native_degrees_coherent_failure_rate (d : ℝ)
+  (hd : d = 20 ∨ d = 22 ∨ d = 24) (k : ℕ) :
+  have p := D0.primitiveRoot;
+  have a := √p;
+  D0.Research.GoldenCoherentAmplification.retainedFailure
+      (D0.Research.GoldenCoherentAmplification.contractionParameter p)
+      (D0.Research.GoldenHistoryPreparation.historyFailure a p d) k ≤
+    p ^ (2 * k)
+'D0.Research.GoldenCoherentAmplification.frozen_three_native_degrees_coherent_failure_rate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.native_complete_state_error_after_declared_phase_alignment (a p d : ℝ)
+  (ha : a ^ 2 = p) (hp : p + p ^ 2 = 1) (hp0 : 0 < p) (hd0 : 20 ≤ d) (hd1 : d ≤ 24) (k : ℕ) (u v : ℂ)
+  (hn : Complex.normSq u + Complex.normSq v = 1) (hu : u ≠ 0)
+  (hv :
+    Complex.normSq v ≤
+      D0.Research.GoldenCoherentAmplification.retainedFailure
+        (D0.Research.GoldenCoherentAmplification.contractionParameter p)
+        (D0.Research.GoldenHistoryPreparation.historyFailure a p d) k) :
+  Complex.normSq (u - u / ↑‖u‖) + Complex.normSq v ≤ 2 * p ^ (2 * k)
+'D0.Research.GoldenCoherentAmplification.native_complete_state_error_after_declared_phase_alignment' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.complete_weight_partition.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι]
+  (χ : ι → Bool) (x : ι → ℂ) :
+  D0.Research.GoldenCoherentAmplification.acceptedWeight χ x +
+      D0.Research.GoldenCoherentAmplification.rejectedWeight χ x =
+    D0.Research.GoldenCoherentAmplification.vectorWeight x
+'D0.Research.GoldenCoherentAmplification.complete_weight_partition' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.rejected_weight_nonnegative.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι]
+  (χ : ι → Bool) (x : ι → ℂ) : 0 ≤ D0.Research.GoldenCoherentAmplification.rejectedWeight χ x
+'D0.Research.GoldenCoherentAmplification.rejected_weight_nonnegative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.diagonal_phase_unitary.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι]
+  (χ : ι → Bool) (w : ℂ) (hw : Complex.normSq w = 1) :
+  (D0.Research.GoldenCoherentAmplification.diagonalPhase χ w).conjTranspose *
+        D0.Research.GoldenCoherentAmplification.diagonalPhase χ w =
+      1 ∧
+    D0.Research.GoldenCoherentAmplification.diagonalPhase χ w *
+        (D0.Research.GoldenCoherentAmplification.diagonalPhase χ w).conjTranspose =
+      1
+'D0.Research.GoldenCoherentAmplification.diagonal_phase_unitary' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.blank_phase_complete_projector.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι]
+  (z : ι) (w : ℂ) :
+  D0.Research.GoldenCoherentAmplification.blankPhase z w =
+    1 +
+      (w - 1) •
+        Matrix.vecMulVec (D0.Research.GoldenCoherentAmplification.blankVector z)
+          (star (D0.Research.GoldenCoherentAmplification.blankVector z))
+'D0.Research.GoldenCoherentAmplification.blank_phase_complete_projector' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.unitary_column_has_complete_weight.{u_1} {ι : Type u_1} [Fintype ι]
+  [DecidableEq ι] (U : Matrix ι ι ℂ) (z : ι) (hu : U.conjTranspose * U = 1) :
+  (D0.Research.GoldenCoherentAmplification.vectorWeight fun i => U i z) = 1
+'D0.Research.GoldenCoherentAmplification.unitary_column_has_complete_weight' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.full_amplify_unitary.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι]
+  (U : Matrix ι ι ℂ) (z : ι) (χ : ι → Bool) (w : ℂ) (hU : U.conjTranspose * U = 1 ∧ U * U.conjTranspose = 1)
+  (hw : Complex.normSq w = 1) :
+  (D0.Research.GoldenCoherentAmplification.fullAmplify U z χ w).conjTranspose *
+        D0.Research.GoldenCoherentAmplification.fullAmplify U z χ w =
+      1 ∧
+    D0.Research.GoldenCoherentAmplification.fullAmplify U z χ w *
+        (D0.Research.GoldenCoherentAmplification.fullAmplify U z χ w).conjTranspose =
+      1
+'D0.Research.GoldenCoherentAmplification.full_amplify_unitary' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.full_prepared_phase_conjugation.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι]
+  (U : Matrix ι ι ℂ) (z : ι) (w : ℂ) (hu : U * U.conjTranspose = 1) :
+  U * D0.Research.GoldenCoherentAmplification.blankPhase z w * U.conjTranspose =
+    1 + (w - 1) • Matrix.vecMulVec (fun i => U i z) (star fun i => U i z)
+'D0.Research.GoldenCoherentAmplification.full_prepared_phase_conjugation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.complete_phase_expectation.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι]
+  (χ : ι → Bool) (x : ι → ℂ) (w : ℂ) (hn : D0.Research.GoldenCoherentAmplification.vectorWeight x = 1) :
+  star x ⬝ᵥ (D0.Research.GoldenCoherentAmplification.diagonalPhase χ w).mulVec x =
+    w * (1 - ↑(D0.Research.GoldenCoherentAmplification.rejectedWeight χ x)) +
+      ↑(D0.Research.GoldenCoherentAmplification.rejectedWeight χ x)
+'D0.Research.GoldenCoherentAmplification.complete_phase_expectation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.full_amplify_column.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι]
+  (U : Matrix ι ι ℂ) (z : ι) (χ : ι → Bool) (w : ℂ) (hU : U.conjTranspose * U = 1 ∧ U * U.conjTranspose = 1) (i : ι) :
+  D0.Research.GoldenCoherentAmplification.fullAmplify U z χ w i z =
+    U i z *
+      ((if χ i = true then w else 1) +
+        (w - 1) *
+          (w * (1 - ↑(D0.Research.GoldenCoherentAmplification.rejectedWeight χ fun j => U j z)) +
+            ↑(D0.Research.GoldenCoherentAmplification.rejectedWeight χ fun j => U j z)))
+'D0.Research.GoldenCoherentAmplification.full_amplify_column' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.GoldenCoherentAmplification.all_failed_coordinates_keep_original_record.{u_1} {ι : Type u_1} [Fintype ι]
+  [DecidableEq ι] (U : Matrix ι ι ℂ) (z : ι) (χ : ι → Bool) (w : ℂ)
+  (hU : U.conjTranspose * U = 1 ∧ U * U.conjTranspose = 1) (i : ι) (hi : χ i = false) :
+  D0.Research.GoldenCoherentAmplification.fullAmplify U z χ w i z =
+    U i z *
+      D0.Research.GoldenCoherentAmplification.badMultiplier w
+        (D0.Research.GoldenCoherentAmplification.rejectedWeight χ fun j => U j z)
+'D0.Research.GoldenCoherentAmplification.all_failed_coordinates_keep_original_record' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.complete_failed_weight_law.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι]
+  (U : Matrix ι ι ℂ) (z : ι) (χ : ι → Bool) (w : ℂ) (hU : U.conjTranspose * U = 1 ∧ U * U.conjTranspose = 1) :
+  (D0.Research.GoldenCoherentAmplification.rejectedWeight χ fun i =>
+      D0.Research.GoldenCoherentAmplification.fullAmplify U z χ w i z) =
+    (D0.Research.GoldenCoherentAmplification.rejectedWeight χ fun i => U i z) *
+      Complex.normSq
+        (D0.Research.GoldenCoherentAmplification.badMultiplier w
+          (D0.Research.GoldenCoherentAmplification.rejectedWeight χ fun i => U i z))
+'D0.Research.GoldenCoherentAmplification.complete_failed_weight_law' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.all_full_words_unitary.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι]
+  (U : Matrix ι ι ℂ) (z : ι) (χ : ι → Bool) (w : ℂ) (hU : U.conjTranspose * U = 1 ∧ U * U.conjTranspose = 1)
+  (hw : Complex.normSq w = 1) (k : ℕ) :
+  (D0.Research.GoldenCoherentAmplification.fullWord U z χ w k).conjTranspose *
+        D0.Research.GoldenCoherentAmplification.fullWord U z χ w k =
+      1 ∧
+    D0.Research.GoldenCoherentAmplification.fullWord U z χ w k *
+        (D0.Research.GoldenCoherentAmplification.fullWord U z χ w k).conjTranspose =
+      1
+'D0.Research.GoldenCoherentAmplification.all_full_words_unitary' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.actual_full_word_golden_failure.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι]
+  (a p : ℝ) (U : Matrix ι ι ℂ) (z : ι) (χ : ι → Bool) (ha : a ^ 2 = p) (hp : p + p ^ 2 = 1)
+  (hU : U.conjTranspose * U = 1 ∧ U * U.conjTranspose = 1) (k : ℕ) :
+  (D0.Research.GoldenCoherentAmplification.rejectedWeight χ fun i =>
+      D0.Research.GoldenCoherentAmplification.fullWord U z χ (D0.Research.GoldenCoherentAmplification.goldenPhase a p) k
+        i z) =
+    D0.Research.GoldenCoherentAmplification.retainedFailure
+      (D0.Research.GoldenCoherentAmplification.contractionParameter p)
+      (D0.Research.GoldenCoherentAmplification.rejectedWeight χ fun i => U i z) k
+'D0.Research.GoldenCoherentAmplification.actual_full_word_golden_failure' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.fourth_unit_phase_real (w : ℂ) (hw : Complex.normSq w = 1) :
+  (w ^ 4).re = 8 * w.re ^ 4 - 8 * w.re ^ 2 + 1
+'D0.Research.GoldenCoherentAmplification.fourth_unit_phase_real' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.fast_golden_phase_real (a p : ℝ) (ha : a ^ 2 = p) (hp : p + p ^ 2 = 1) :
+  (D0.Research.GoldenCoherentAmplification.fastGoldenPhase a p).re = 673 - 1088 * p
+'D0.Research.GoldenCoherentAmplification.fast_golden_phase_real' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.fast_golden_phase_normSq (a p : ℝ) (ha : a ^ 2 = p) (hp : p + p ^ 2 = 1) :
+  Complex.normSq (D0.Research.GoldenCoherentAmplification.fastGoldenPhase a p) = 1
+'D0.Research.GoldenCoherentAmplification.fast_golden_phase_normSq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.fast_parameter_native_bounds (p : ℝ) (hp : p + p ^ 2 = 1) (hp0 : 0 < p) :
+  0 < D0.Research.GoldenCoherentAmplification.fastParameter p ∧
+    D0.Research.GoldenCoherentAmplification.fastParameter p < 1 / 6
+'D0.Research.GoldenCoherentAmplification.fast_parameter_native_bounds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.fast_actual_bad_multiplier (a p e : ℝ) (ha : a ^ 2 = p) (hp : p + p ^ 2 = 1) :
+  D0.Research.GoldenCoherentAmplification.badMultiplier (D0.Research.GoldenCoherentAmplification.fastGoldenPhase a p)
+      e =
+    D0.Research.GoldenCoherentAmplification.fastGoldenPhase a p *
+      ↑(D0.Research.GoldenCoherentAmplification.fastParameter p +
+          (1 - D0.Research.GoldenCoherentAmplification.fastParameter p) * e)
+'D0.Research.GoldenCoherentAmplification.fast_actual_bad_multiplier' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.fast_actual_failure_law (a p e : ℝ) (ha : a ^ 2 = p) (hp : p + p ^ 2 = 1) :
+  e *
+      Complex.normSq
+        (D0.Research.GoldenCoherentAmplification.badMultiplier
+          (D0.Research.GoldenCoherentAmplification.fastGoldenPhase a p) e) =
+    D0.Research.GoldenCoherentAmplification.fastImprove (D0.Research.GoldenCoherentAmplification.fastParameter p) e
+'D0.Research.GoldenCoherentAmplification.fast_actual_failure_law' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.fast_burnin_first (r e : ℝ) (hr0 : 0 ≤ r) (hr1 : r ≤ 1 / 6) (he0 : 0 ≤ e)
+  (he1 : e ≤ 11 / 16) :
+  0 ≤ D0.Research.GoldenCoherentAmplification.fastImprove r e ∧
+    D0.Research.GoldenCoherentAmplification.fastImprove r e ≤ 2 / 5
+'D0.Research.GoldenCoherentAmplification.fast_burnin_first' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.GoldenCoherentAmplification.fast_burnin_second (r e : ℝ) (hr0 : 0 ≤ r) (hr1 : r ≤ 1 / 6) (he0 : 0 ≤ e)
+  (he1 : e ≤ 2 / 5) :
+  0 ≤ D0.Research.GoldenCoherentAmplification.fastImprove r e ∧
+    D0.Research.GoldenCoherentAmplification.fastImprove r e ≤ 1 / 10
+'D0.Research.GoldenCoherentAmplification.fast_burnin_second' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.GoldenCoherentAmplification.fast_small_error_contraction (r e : ℝ) (hr0 : 0 ≤ r) (hr1 : r ≤ 1 / 6)
+  (he0 : 0 ≤ e) (he1 : e ≤ 1 / 10) :
+  0 ≤ D0.Research.GoldenCoherentAmplification.fastImprove r e ∧
+    D0.Research.GoldenCoherentAmplification.fastImprove r e ≤ e / 16
+'D0.Research.GoldenCoherentAmplification.fast_small_error_contraction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.fast_two_stage_burnin (r e : ℝ) (hr0 : 0 ≤ r) (hr1 : r ≤ 1 / 6) (he0 : 0 ≤ e)
+  (he1 : e ≤ 11 / 16) :
+  0 ≤ D0.Research.GoldenCoherentAmplification.fastFailure r e 2 ∧
+    D0.Research.GoldenCoherentAmplification.fastFailure r e 2 ≤ 1 / 10
+'D0.Research.GoldenCoherentAmplification.fast_two_stage_burnin' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.fast_all_full_failure_rate (r e : ℝ) (hr0 : 0 ≤ r) (hr1 : r ≤ 1 / 6)
+  (he0 : 0 ≤ e) (he1 : e ≤ 11 / 16) (k : ℕ) :
+  0 ≤ D0.Research.GoldenCoherentAmplification.fastFailure r e (k + 2) ∧
+    D0.Research.GoldenCoherentAmplification.fastFailure r e (k + 2) ≤ 1 / 10 ∧
+      D0.Research.GoldenCoherentAmplification.fastFailure r e (k + 2) ≤ (1 / 16) ^ k / 10
+'D0.Research.GoldenCoherentAmplification.fast_all_full_failure_rate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.actual_full_word_fast_failure.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι]
+  (a p : ℝ) (U : Matrix ι ι ℂ) (z : ι) (χ : ι → Bool) (ha : a ^ 2 = p) (hp : p + p ^ 2 = 1)
+  (hU : U.conjTranspose * U = 1 ∧ U * U.conjTranspose = 1) (k : ℕ) :
+  (D0.Research.GoldenCoherentAmplification.rejectedWeight χ fun i =>
+      D0.Research.GoldenCoherentAmplification.fullWord U z χ
+        (D0.Research.GoldenCoherentAmplification.fastGoldenPhase a p) k i z) =
+    D0.Research.GoldenCoherentAmplification.fastFailure (D0.Research.GoldenCoherentAmplification.fastParameter p)
+      (D0.Research.GoldenCoherentAmplification.rejectedWeight χ fun i => U i z) k
+'D0.Research.GoldenCoherentAmplification.actual_full_word_fast_failure' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.actual_expanded_word_cost (seed phase k : ℕ) :
+  D0.Research.GoldenCoherentAmplification.expandedCost seed phase k + phase = 3 ^ k * (seed + phase)
+'D0.Research.GoldenCoherentAmplification.actual_expanded_word_cost' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.fast_failure_better_than_expanded_inverse_square (r e : ℝ) (hr0 : 0 ≤ r)
+  (hr1 : r ≤ 1 / 6) (he0 : 0 ≤ e) (he1 : e ≤ 11 / 16) (k : ℕ) :
+  D0.Research.GoldenCoherentAmplification.fastFailure r e (k + 2) * (3 ^ k) ^ 2 ≤ 1 / 10
+'D0.Research.GoldenCoherentAmplification.fast_failure_better_than_expanded_inverse_square' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.fast_failure_with_literal_word_cost (r e : ℝ) (seed phase k : ℕ) (hr0 : 0 ≤ r)
+  (hr1 : r ≤ 1 / 6) (he0 : 0 ≤ e) (he1 : e ≤ 11 / 16) :
+  D0.Research.GoldenCoherentAmplification.fastFailure r e (k + 2) *
+      ↑(D0.Research.GoldenCoherentAmplification.expandedCost seed phase (k + 2) + phase) ^ 2 ≤
+    81 / 10 * ↑(seed + phase) ^ 2
+'D0.Research.GoldenCoherentAmplification.fast_failure_with_literal_word_cost' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.golden_square_rate_does_not_bound_tripled_word_cost (p : ℝ) (hp : p + p ^ 2 = 1)
+  (hp0 : 0 < p) : 1 < 9 * D0.Research.GoldenCoherentAmplification.contractionParameter p ^ 2
+'D0.Research.GoldenCoherentAmplification.golden_square_rate_does_not_bound_tripled_word_cost' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.literal_bool_golden_gate_unitary (a p : ℝ) (ha : a ^ 2 = p)
+  (hp : p + p ^ 2 = 1) :
+  (D0.Research.GoldenCoherentAmplification.boolGoldenGate a p).conjTranspose *
+        D0.Research.GoldenCoherentAmplification.boolGoldenGate a p =
+      1 ∧
+    D0.Research.GoldenCoherentAmplification.boolGoldenGate a p *
+        (D0.Research.GoldenCoherentAmplification.boolGoldenGate a p).conjTranspose =
+      1
+'D0.Research.GoldenCoherentAmplification.literal_bool_golden_gate_unitary' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.kronecker_retains_all_unitarity.{u_1, u_2} {X : Type u_1} {Y : Type u_2}
+  [Fintype X] [DecidableEq X] [Fintype Y] [DecidableEq Y] (U : Matrix X X ℂ) (V : Matrix Y Y ℂ)
+  (hU : U.conjTranspose * U = 1 ∧ U * U.conjTranspose = 1) (hV : V.conjTranspose * V = 1 ∧ V * V.conjTranspose = 1) :
+  (Matrix.kroneckerMap (fun x1 x2 => x1 * x2) U V).conjTranspose * Matrix.kroneckerMap (fun x1 x2 => x1 * x2) U V = 1 ∧
+    Matrix.kroneckerMap (fun x1 x2 => x1 * x2) U V * (Matrix.kroneckerMap (fun x1 x2 => x1 * x2) U V).conjTranspose = 1
+'D0.Research.GoldenCoherentAmplification.kronecker_retains_all_unitarity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.actual_word_seed_unitary (a p : ℝ) (ha : a ^ 2 = p) (hp : p + p ^ 2 = 1)
+  (n : ℕ) :
+  (D0.Research.GoldenCoherentAmplification.wordGoldenSeed a p n).conjTranspose *
+        D0.Research.GoldenCoherentAmplification.wordGoldenSeed a p n =
+      1 ∧
+    D0.Research.GoldenCoherentAmplification.wordGoldenSeed a p n *
+        (D0.Research.GoldenCoherentAmplification.wordGoldenSeed a p n).conjTranspose =
+      1
+'D0.Research.GoldenCoherentAmplification.actual_word_seed_unitary' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.actual_word_seed_amplitudes (a p : ℝ) (n : ℕ)
+  (w : D0.Research.GoldenHistoryPreparation.Word n) :
+  D0.Research.GoldenCoherentAmplification.wordGoldenSeed a p n w (D0.Research.GoldenCoherentAmplification.wordBlank n) =
+    ↑(D0.Research.GoldenHistoryPreparation.amplitude a p w)
+'D0.Research.GoldenCoherentAmplification.actual_word_seed_amplitudes' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.pi_matrix_retains_all_unitarity.{u_1} {X : Type u_1} [Fintype X] [DecidableEq X]
+  (m : ℕ) (U : Matrix X X ℂ) (hU : U.conjTranspose * U = 1 ∧ U * U.conjTranspose = 1) :
+  (D0.Research.GoldenCoherentAmplification.piMatrix m U).conjTranspose *
+        D0.Research.GoldenCoherentAmplification.piMatrix m U =
+      1 ∧
+    D0.Research.GoldenCoherentAmplification.piMatrix m U *
+        (D0.Research.GoldenCoherentAmplification.piMatrix m U).conjTranspose =
+      1
+'D0.Research.GoldenCoherentAmplification.pi_matrix_retains_all_unitarity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.complete_golden_seed_unitary (a p : ℝ) (ha : a ^ 2 = p) (hp : p + p ^ 2 = 1)
+  (n m : ℕ) :
+  (D0.Research.GoldenCoherentAmplification.disjointGoldenSeed a p n m).conjTranspose *
+        D0.Research.GoldenCoherentAmplification.disjointGoldenSeed a p n m =
+      1 ∧
+    D0.Research.GoldenCoherentAmplification.disjointGoldenSeed a p n m *
+        (D0.Research.GoldenCoherentAmplification.disjointGoldenSeed a p n m).conjTranspose =
+      1
+'D0.Research.GoldenCoherentAmplification.complete_golden_seed_unitary' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.complete_golden_seed_blank_amplitudes (a p : ℝ) (n m : ℕ)
+  (w : Fin m → D0.Research.GoldenHistoryPreparation.Word n) :
+  D0.Research.GoldenCoherentAmplification.disjointGoldenSeed a p n m (fun i => (w i, false))
+      (D0.Research.GoldenCoherentAmplification.completeBlank n m) =
+    ↑(∏ i, D0.Research.GoldenHistoryPreparation.amplitude a p (w i))
+'D0.Research.GoldenCoherentAmplification.complete_golden_seed_blank_amplitudes' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.full_routing_permutation_unitary.{u_1} {X : Type u_1} [Fintype X]
+  [DecidableEq X] (σ : Equiv.Perm X) :
+  (Equiv.Perm.permMatrix ℂ σ).conjTranspose * Equiv.Perm.permMatrix ℂ σ = 1 ∧
+    Equiv.Perm.permMatrix ℂ σ * (Equiv.Perm.permMatrix ℂ σ).conjTranspose = 1
+'D0.Research.GoldenCoherentAmplification.full_routing_permutation_unitary' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.actual_retained_routed_seed_unitary (a p : ℝ) (ha : a ^ 2 = p)
+  (hp : p + p ^ 2 = 1) (n m : ℕ) :
+  (D0.Research.GoldenCoherentAmplification.routedGoldenSeed a p n m).conjTranspose *
+        D0.Research.GoldenCoherentAmplification.routedGoldenSeed a p n m =
+      1 ∧
+    D0.Research.GoldenCoherentAmplification.routedGoldenSeed a p n m *
+        (D0.Research.GoldenCoherentAmplification.routedGoldenSeed a p n m).conjTranspose =
+      1
+'D0.Research.GoldenCoherentAmplification.actual_retained_routed_seed_unitary' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.actual_routed_seed_successful_amplitude (a p : ℝ) (n m : ℕ) (b : Fin m → Bool)
+  (w : Fin m → D0.Research.GoldenHistoryPreparation.Word n)
+  (hw : ∀ (i : Fin m), D0.Research.GoldenHistoryPreparation.firstLabel (w i) = some false) :
+  D0.Research.GoldenCoherentAmplification.routedGoldenSeed a p n m (fun i => (w i, b i))
+      (D0.Research.GoldenCoherentAmplification.completeBlank n m) =
+    ↑(∏ i, D0.Research.GoldenHistoryPreparation.amplitude a p (w i))
+'D0.Research.GoldenCoherentAmplification.actual_routed_seed_successful_amplitude' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.complete_all_good_record_mass (a p : ℝ) (n m : ℕ) :
+  (∑ w,
+      if ∀ (i : Fin m), D0.Research.GoldenHistoryPreparation.firstLabel (w i) = some false then
+        (∏ i, D0.Research.GoldenHistoryPreparation.amplitude a p (w i)) ^ 2
+      else 0) =
+    D0.Research.GoldenHistoryPreparation.completeCodeMass a p n m fun x => false
+'D0.Research.GoldenCoherentAmplification.complete_all_good_record_mass' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.complete_retained_seed_valid_mass (a p : ℝ) (n m : ℕ)
+  (S : Finset (Fin m → Bool)) :
+  (D0.Research.GoldenCoherentAmplification.acceptedWeight (D0.Research.GoldenCoherentAmplification.codeValidity n m S)
+      fun s =>
+      D0.Research.GoldenCoherentAmplification.routedGoldenSeed a p n m s
+        (D0.Research.GoldenCoherentAmplification.completeBlank n m)) =
+    ↑S.card * D0.Research.GoldenHistoryPreparation.completeCodeMass a p n m fun x => false
+'D0.Research.GoldenCoherentAmplification.complete_retained_seed_valid_mass' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.literal_five_stream_seed_valid_mass (a p : ℝ) (ha : a ^ 2 = p)
+  (hp : p + p ^ 2 = 1) (S : Finset (Fin 5 → Bool)) :
+  (D0.Research.GoldenCoherentAmplification.acceptedWeight (D0.Research.GoldenCoherentAmplification.codeValidity 4 5 S)
+      fun s =>
+      D0.Research.GoldenCoherentAmplification.routedGoldenSeed a p 4 5 s
+        (D0.Research.GoldenCoherentAmplification.completeBlank 4 5)) =
+    D0.Research.GoldenHistoryPreparation.historySuccess a p ↑S.card
+'D0.Research.GoldenCoherentAmplification.literal_five_stream_seed_valid_mass' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.literal_five_stream_seed_failure (a p : ℝ) (ha : a ^ 2 = p) (hp : p + p ^ 2 = 1)
+  (S : Finset (Fin 5 → Bool)) :
+  (D0.Research.GoldenCoherentAmplification.rejectedWeight (D0.Research.GoldenCoherentAmplification.codeValidity 4 5 S)
+      fun s =>
+      D0.Research.GoldenCoherentAmplification.routedGoldenSeed a p 4 5 s
+        (D0.Research.GoldenCoherentAmplification.completeBlank 4 5)) =
+    D0.Research.GoldenHistoryPreparation.historyFailure a p ↑S.card
+'D0.Research.GoldenCoherentAmplification.literal_five_stream_seed_failure' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.native_literal_seed_fast_full_word_rate (a p : ℝ) (ha : a ^ 2 = p)
+  (hp : p + p ^ 2 = 1) (hp0 : 0 < p) (S : Finset (Fin 5 → Bool)) (hs : S.card = 20 ∨ S.card = 22 ∨ S.card = 24)
+  (k : ℕ) :
+  (D0.Research.GoldenCoherentAmplification.rejectedWeight (D0.Research.GoldenCoherentAmplification.codeValidity 4 5 S)
+      fun s =>
+      D0.Research.GoldenCoherentAmplification.fullWord
+        (D0.Research.GoldenCoherentAmplification.routedGoldenSeed a p 4 5)
+        (D0.Research.GoldenCoherentAmplification.completeBlank 4 5)
+        (D0.Research.GoldenCoherentAmplification.codeValidity 4 5 S)
+        (D0.Research.GoldenCoherentAmplification.fastGoldenPhase a p) (k + 2) s
+        (D0.Research.GoldenCoherentAmplification.completeBlank 4 5)) ≤
+    (1 / 16) ^ k / 10
+'D0.Research.GoldenCoherentAmplification.native_literal_seed_fast_full_word_rate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.full_word_is_recorded_word.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι]
+  (U : Matrix ι ι ℂ) (z : ι) (χ : ι → Bool) (w : ℂ) (k : ℕ) :
+  D0.Research.GoldenCoherentAmplification.fullWord U z χ w k =
+    D0.Research.GoldenCoherentAmplification.recordedWord U (D0.Research.GoldenCoherentAmplification.blankPhase z w)
+      (D0.Research.GoldenCoherentAmplification.diagonalPhase χ w) k
+'D0.Research.GoldenCoherentAmplification.full_word_is_recorded_word' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.suffix_lift_multiplication.{u_1, u_2} {ι : Type u_1} [Fintype ι] [DecidableEq ι]
+  {X : Type u_2} [Fintype X] [DecidableEq X] (A B : Matrix ι ι ℂ) :
+  D0.Research.GoldenCoherentAmplification.suffixLift (A * B) =
+    D0.Research.GoldenCoherentAmplification.suffixLift A * D0.Research.GoldenCoherentAmplification.suffixLift B
+'D0.Research.GoldenCoherentAmplification.suffix_lift_multiplication' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.suffix_lift_conjugation.{u_1, u_2} {ι : Type u_1} [Fintype ι] [DecidableEq ι]
+  {X : Type u_2} [Fintype X] [DecidableEq X] (A : Matrix ι ι ℂ) :
+  D0.Research.GoldenCoherentAmplification.suffixLift A.conjTranspose =
+    (D0.Research.GoldenCoherentAmplification.suffixLift A).conjTranspose
+'D0.Research.GoldenCoherentAmplification.suffix_lift_conjugation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.complete_recorded_word_suffix_natural.{u_1, u_2} {ι : Type u_1} [Fintype ι]
+  [DecidableEq ι] {X : Type u_2} [Fintype X] [DecidableEq X] (U B Q : Matrix ι ι ℂ) (k : ℕ) :
+  D0.Research.GoldenCoherentAmplification.recordedWord (D0.Research.GoldenCoherentAmplification.suffixLift U)
+      (D0.Research.GoldenCoherentAmplification.suffixLift B) (D0.Research.GoldenCoherentAmplification.suffixLift Q) k =
+    D0.Research.GoldenCoherentAmplification.suffixLift (D0.Research.GoldenCoherentAmplification.recordedWord U B Q k)
+'D0.Research.GoldenCoherentAmplification.complete_recorded_word_suffix_natural' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.golden_complex_operator_intertwines.{u_1} {ι : Type u_1} [Fintype ι]
+  [DecidableEq ι] (A : Matrix ι ι ℂ) (a p : ℝ) (x : ι → ℂ) :
+  (D0.Research.GoldenCoherentAmplification.suffixLift A).mulVec
+      (D0.Research.GoldenCoherentAmplification.goldenComplexInclusion a p x) =
+    D0.Research.GoldenCoherentAmplification.goldenComplexInclusion a p (A.mulVec x)
+'D0.Research.GoldenCoherentAmplification.golden_complex_operator_intertwines' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.golden_complex_inclusion_weight.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι]
+  (a p : ℝ) (ha : a ^ 2 = p) (hp : p + p ^ 2 = 1) (x : ι → ℂ) :
+  D0.Research.GoldenCoherentAmplification.vectorWeight
+      (D0.Research.GoldenCoherentAmplification.goldenComplexInclusion a p x) =
+    D0.Research.GoldenCoherentAmplification.vectorWeight x
+'D0.Research.GoldenCoherentAmplification.golden_complex_inclusion_weight' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.golden_complex_rejection_weight.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι]
+  (a p : ℝ) (ha : a ^ 2 = p) (hp : p + p ^ 2 = 1) (χ : ι → Bool) (x : ι → ℂ) :
+  D0.Research.GoldenCoherentAmplification.rejectedWeight (fun s => χ s.1)
+      (D0.Research.GoldenCoherentAmplification.goldenComplexInclusion a p x) =
+    D0.Research.GoldenCoherentAmplification.rejectedWeight χ x
+'D0.Research.GoldenCoherentAmplification.golden_complex_rejection_weight' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.complete_golden_word_refinement.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι]
+  (U : Matrix ι ι ℂ) (z : ι) (χ : ι → Bool) (w : ℂ) (k : ℕ) (a p : ℝ) (x : ι → ℂ) :
+  (D0.Research.GoldenCoherentAmplification.recordedWord (D0.Research.GoldenCoherentAmplification.suffixLift U)
+          (D0.Research.GoldenCoherentAmplification.suffixLift (D0.Research.GoldenCoherentAmplification.blankPhase z w))
+          (D0.Research.GoldenCoherentAmplification.suffixLift
+            (D0.Research.GoldenCoherentAmplification.diagonalPhase χ w))
+          k).mulVec
+      (D0.Research.GoldenCoherentAmplification.goldenComplexInclusion a p x) =
+    D0.Research.GoldenCoherentAmplification.goldenComplexInclusion a p
+      ((D0.Research.GoldenCoherentAmplification.fullWord U z χ w k).mulVec x)
+'D0.Research.GoldenCoherentAmplification.complete_golden_word_refinement' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.complete_golden_failure_refinement.{u_1} {ι : Type u_1} [Fintype ι]
+  [DecidableEq ι] (U : Matrix ι ι ℂ) (z : ι) (χ : ι → Bool) (w : ℂ) (k : ℕ) (a p : ℝ) (ha : a ^ 2 = p)
+  (hp : p + p ^ 2 = 1) (x : ι → ℂ) :
+  D0.Research.GoldenCoherentAmplification.rejectedWeight (fun s => χ s.1)
+      ((D0.Research.GoldenCoherentAmplification.recordedWord (D0.Research.GoldenCoherentAmplification.suffixLift U)
+            (D0.Research.GoldenCoherentAmplification.suffixLift
+              (D0.Research.GoldenCoherentAmplification.blankPhase z w))
+            (D0.Research.GoldenCoherentAmplification.suffixLift
+              (D0.Research.GoldenCoherentAmplification.diagonalPhase χ w))
+            k).mulVec
+        (D0.Research.GoldenCoherentAmplification.goldenComplexInclusion a p x)) =
+    D0.Research.GoldenCoherentAmplification.rejectedWeight χ
+      ((D0.Research.GoldenCoherentAmplification.fullWord U z χ w k).mulVec x)
+'D0.Research.GoldenCoherentAmplification.complete_golden_failure_refinement' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.single_fine_blank_is_not_cylinder_extension (w : ℂ) (hw : w ≠ 1) :
+  D0.Research.GoldenCoherentAmplification.blankPhase ((), false) w ≠
+    D0.Research.GoldenCoherentAmplification.suffixLift (D0.Research.GoldenCoherentAmplification.blankPhase () w)
+'D0.Research.GoldenCoherentAmplification.single_fine_blank_is_not_cylinder_extension' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.owned_condensed_cylinder_amplitudes (a : ℝ) (ha : a ^ 2 = Real.goldenRatio⁻¹) :
+  a ^ 2 = D0.CondensedAnchor.cylWeight [true] ∧ Real.goldenRatio⁻¹ ^ 2 = D0.CondensedAnchor.cylWeight [false]
+'D0.Research.GoldenCoherentAmplification.owned_condensed_cylinder_amplitudes' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.owned_primitive_root_is_condensed_weight : D0.primitiveRoot = Real.goldenRatio⁻¹
+'D0.Research.GoldenCoherentAmplification.owned_primitive_root_is_condensed_weight' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.actual_owned_golden_suffix_letter_weights (a : ℝ)
+  (ha : a ^ 2 = D0.primitiveRoot) (b : Bool) :
+  Complex.normSq (if b = true then ↑D0.primitiveRoot else ↑a) = D0.CondensedAnchor.cylWeight [!b]
+'D0.Research.GoldenCoherentAmplification.actual_owned_golden_suffix_letter_weights' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.all_accepted_coordinates_keep_original_record.{u_1} {ι : Type u_1} [Fintype ι]
+  [DecidableEq ι] (U : Matrix ι ι ℂ) (z : ι) (χ : ι → Bool) (w : ℂ)
+  (hU : U.conjTranspose * U = 1 ∧ U * U.conjTranspose = 1) (i : ι) (hi : χ i = true) :
+  D0.Research.GoldenCoherentAmplification.fullAmplify U z χ w i z =
+    U i z *
+      D0.Research.GoldenCoherentAmplification.goodMultiplier w
+        (D0.Research.GoldenCoherentAmplification.rejectedWeight χ fun j => U j z)
+'D0.Research.GoldenCoherentAmplification.all_accepted_coordinates_keep_original_record' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.complete_fast_word_all_record_coefficients.{u_1} {ι : Type u_1} [Fintype ι]
+  [DecidableEq ι] (a p : ℝ) (U : Matrix ι ι ℂ) (z : ι) (χ : ι → Bool) (ha : a ^ 2 = p) (hp : p + p ^ 2 = 1)
+  (hU : U.conjTranspose * U = 1 ∧ U * U.conjTranspose = 1) (k : ℕ) (i : ι) :
+  D0.Research.GoldenCoherentAmplification.fullWord U z χ (D0.Research.GoldenCoherentAmplification.fastGoldenPhase a p) k
+      i z =
+    U i z *
+      if χ i = true then
+        D0.Research.GoldenCoherentAmplification.fastAcceptedCoefficient a p
+          (D0.Research.GoldenCoherentAmplification.rejectedWeight χ fun j => U j z) k
+      else
+        D0.Research.GoldenCoherentAmplification.fastRejectedCoefficient a p
+          (D0.Research.GoldenCoherentAmplification.rejectedWeight χ fun j => U j z) k
+'D0.Research.GoldenCoherentAmplification.complete_fast_word_all_record_coefficients' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.actual_full_seed_successful_record_factorization (a p : ℝ) (ha : a ^ 2 = p)
+  (hp : p + p ^ 2 = 1) (n m : ℕ) (S : Finset (Fin m → Bool)) (b : Fin m → Bool) (hb : b ∈ S)
+  (w : Fin m → D0.Research.GoldenHistoryPreparation.Word n)
+  (hw : ∀ (i : Fin m), D0.Research.GoldenHistoryPreparation.firstLabel (w i) = some false) (k : ℕ) :
+  D0.Research.GoldenCoherentAmplification.fullWord (D0.Research.GoldenCoherentAmplification.routedGoldenSeed a p n m)
+      (D0.Research.GoldenCoherentAmplification.completeBlank n m)
+      (D0.Research.GoldenCoherentAmplification.codeValidity n m S)
+      (D0.Research.GoldenCoherentAmplification.fastGoldenPhase a p) k (fun i => (w i, b i))
+      (D0.Research.GoldenCoherentAmplification.completeBlank n m) =
+    ↑(∏ i, D0.Research.GoldenHistoryPreparation.amplitude a p (w i)) *
+      D0.Research.GoldenCoherentAmplification.fastAcceptedCoefficient a p
+        (D0.Research.GoldenCoherentAmplification.rejectedWeight
+          (D0.Research.GoldenCoherentAmplification.codeValidity n m S) fun s =>
+          D0.Research.GoldenCoherentAmplification.routedGoldenSeed a p n m s
+            (D0.Research.GoldenCoherentAmplification.completeBlank n m))
+        k
+'D0.Research.GoldenCoherentAmplification.actual_full_seed_successful_record_factorization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.phase_aligned_full_state_distance_identity.{u_1} {ι : Type u_1} [Fintype ι]
+  [DecidableEq ι] (χ : ι → Bool) (x : ι → ℂ) (hs : 0 < D0.Research.GoldenCoherentAmplification.acceptedWeight χ x) :
+  D0.Research.GoldenCoherentAmplification.vectorWeight
+      (x - D0.Research.GoldenCoherentAmplification.alignedAcceptedVector χ x) =
+    (1 - √(D0.Research.GoldenCoherentAmplification.acceptedWeight χ x)) ^ 2 +
+      D0.Research.GoldenCoherentAmplification.rejectedWeight χ x
+'D0.Research.GoldenCoherentAmplification.phase_aligned_full_state_distance_identity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.phase_aligned_full_vector_error.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι]
+  (χ : ι → Bool) (x : ι → ℂ) (hn : D0.Research.GoldenCoherentAmplification.vectorWeight x = 1)
+  (hs : 0 < D0.Research.GoldenCoherentAmplification.acceptedWeight χ x) :
+  D0.Research.GoldenCoherentAmplification.vectorWeight
+      (x - D0.Research.GoldenCoherentAmplification.alignedAcceptedVector χ x) ≤
+    2 * D0.Research.GoldenCoherentAmplification.rejectedWeight χ x
+'D0.Research.GoldenCoherentAmplification.phase_aligned_full_vector_error' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.aligned_accepted_vector_has_complete_weight.{u_1} {ι : Type u_1} [Fintype ι]
+  [DecidableEq ι] (χ : ι → Bool) (x : ι → ℂ) (hs : 0 < D0.Research.GoldenCoherentAmplification.acceptedWeight χ x) :
+  D0.Research.GoldenCoherentAmplification.vectorWeight
+      (D0.Research.GoldenCoherentAmplification.alignedAcceptedVector χ x) =
+    1
+'D0.Research.GoldenCoherentAmplification.aligned_accepted_vector_has_complete_weight' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.native_literal_full_vector_error (a p : ℝ) (ha : a ^ 2 = p) (hp : p + p ^ 2 = 1)
+  (hp0 : 0 < p) (S : Finset (Fin 5 → Bool)) (hs : S.card = 20 ∨ S.card = 22 ∨ S.card = 24) (k : ℕ) :
+  have x := fun s =>
+    D0.Research.GoldenCoherentAmplification.fullWord (D0.Research.GoldenCoherentAmplification.routedGoldenSeed a p 4 5)
+      (D0.Research.GoldenCoherentAmplification.completeBlank 4 5)
+      (D0.Research.GoldenCoherentAmplification.codeValidity 4 5 S)
+      (D0.Research.GoldenCoherentAmplification.fastGoldenPhase a p) (k + 2) s
+      (D0.Research.GoldenCoherentAmplification.completeBlank 4 5);
+  0 <
+      D0.Research.GoldenCoherentAmplification.acceptedWeight
+        (D0.Research.GoldenCoherentAmplification.codeValidity 4 5 S) x ∧
+    D0.Research.GoldenCoherentAmplification.vectorWeight
+          (D0.Research.GoldenCoherentAmplification.alignedAcceptedVector
+            (D0.Research.GoldenCoherentAmplification.codeValidity 4 5 S) x) =
+        1 ∧
+      D0.Research.GoldenCoherentAmplification.vectorWeight
+          (x -
+            D0.Research.GoldenCoherentAmplification.alignedAcceptedVector
+              (D0.Research.GoldenCoherentAmplification.codeValidity 4 5 S) x) ≤
+        (1 / 16) ^ k / 5
+'D0.Research.GoldenCoherentAmplification.native_literal_full_vector_error' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.phase_real_matrix_multiplication (w z : ℂ) :
+  D0.Research.GoldenCoherentAmplification.phaseRealMatrix (w * z) =
+    D0.Research.GoldenCoherentAmplification.phaseRealMatrix w *
+      D0.Research.GoldenCoherentAmplification.phaseRealMatrix z
+'D0.Research.GoldenCoherentAmplification.phase_real_matrix_multiplication' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.phase_real_matrix_powers (w : ℂ) (k : ℕ) :
+  D0.Research.GoldenCoherentAmplification.phaseRealMatrix (w ^ k) =
+    D0.Research.GoldenCoherentAmplification.phaseRealMatrix w ^ k
+'D0.Research.GoldenCoherentAmplification.phase_real_matrix_powers' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.fast_phase_is_owned_golden_eighth_power (a p : ℝ) (ha : a ^ 2 = p) :
+  D0.Research.GoldenCoherentAmplification.phaseRealMatrix
+      (D0.Research.GoldenCoherentAmplification.fastGoldenPhase a p) =
+    D0.Representation.GoldenOrderInterferometer.gate a p ^ 8
+'D0.Research.GoldenCoherentAmplification.fast_phase_is_owned_golden_eighth_power' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.actual_scene_incoming_cardinality (v : Fin 33) :
+  Fintype.card (D0.Research.GoldenCoherentAmplification.SceneIncoming v) = 20 ∨
+    Fintype.card (D0.Research.GoldenCoherentAmplification.SceneIncoming v) = 22 ∨
+      Fintype.card (D0.Research.GoldenCoherentAmplification.SceneIncoming v) = 24
+'D0.Research.GoldenCoherentAmplification.actual_scene_incoming_cardinality' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.actual_scene_incoming_cardinality_is_owned_degree (v : Fin 33) :
+  ↑(Fintype.card (D0.Research.GoldenCoherentAmplification.SceneIncoming v)) =
+    D0.Synthesis.SceneNormalizedQuotientDescent.fullDegreeValue v
+'D0.Research.GoldenCoherentAmplification.actual_scene_incoming_cardinality_is_owned_degree' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.actual_scene_incoming_fits_five_bits (v : Fin 33) :
+  Fintype.card (D0.Research.GoldenCoherentAmplification.SceneIncoming v) ≤ 32
+'D0.Research.GoldenCoherentAmplification.actual_scene_incoming_fits_five_bits' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.actual_scene_incoming_code_injective (v : Fin 33) :
+  Function.Injective (D0.Research.GoldenCoherentAmplification.sceneIncomingCode v)
+'D0.Research.GoldenCoherentAmplification.actual_scene_incoming_code_injective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.actual_scene_accepted_codes_cardinality (v : Fin 33) :
+  (D0.Research.GoldenCoherentAmplification.sceneAcceptedCodes v).card =
+    Fintype.card (D0.Research.GoldenCoherentAmplification.SceneIncoming v)
+'D0.Research.GoldenCoherentAmplification.actual_scene_accepted_codes_cardinality' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.actual_scene_accepted_codes_exact_degrees (v : Fin 33) :
+  (D0.Research.GoldenCoherentAmplification.sceneAcceptedCodes v).card = 20 ∨
+    (D0.Research.GoldenCoherentAmplification.sceneAcceptedCodes v).card = 22 ∨
+      (D0.Research.GoldenCoherentAmplification.sceneAcceptedCodes v).card = 24
+'D0.Research.GoldenCoherentAmplification.actual_scene_accepted_codes_exact_degrees' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.actual_scene_code_member (v : Fin 33)
+  (u : D0.Research.GoldenCoherentAmplification.SceneIncoming v) :
+  D0.Research.GoldenCoherentAmplification.sceneIncomingCode v u ∈
+    D0.Research.GoldenCoherentAmplification.sceneAcceptedCodes v
+'D0.Research.GoldenCoherentAmplification.actual_scene_code_member' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.actual_scene_all_incoming_histories_have_same_record_amplitude (a p : ℝ)
+  (ha : a ^ 2 = p) (hp : p + p ^ 2 = 1) (v : Fin 33) (u : D0.Research.GoldenCoherentAmplification.SceneIncoming v)
+  (w : Fin 5 → D0.Research.GoldenHistoryPreparation.Word 4)
+  (hw : ∀ (i : Fin 5), D0.Research.GoldenHistoryPreparation.firstLabel (w i) = some false) (k : ℕ) :
+  D0.Research.GoldenCoherentAmplification.fullWord (D0.Research.GoldenCoherentAmplification.routedGoldenSeed a p 4 5)
+      (D0.Research.GoldenCoherentAmplification.completeBlank 4 5)
+      (D0.Research.GoldenCoherentAmplification.codeValidity 4 5
+        (D0.Research.GoldenCoherentAmplification.sceneAcceptedCodes v))
+      (D0.Research.GoldenCoherentAmplification.fastGoldenPhase a p) k
+      (fun i => (w i, D0.Research.GoldenCoherentAmplification.sceneIncomingCode v u i))
+      (D0.Research.GoldenCoherentAmplification.completeBlank 4 5) =
+    ↑(∏ i, D0.Research.GoldenHistoryPreparation.amplitude a p (w i)) *
+      D0.Research.GoldenCoherentAmplification.fastAcceptedCoefficient a p
+        (D0.Research.GoldenHistoryPreparation.historyFailure a p
+          ↑(D0.Synthesis.SceneNormalizedQuotientDescent.fullDegreeValue v))
+        k
+'D0.Research.GoldenCoherentAmplification.actual_scene_all_incoming_histories_have_same_record_amplitude' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.actual_scene_full_word_failure_rate (a p : ℝ) (ha : a ^ 2 = p)
+  (hp : p + p ^ 2 = 1) (hp0 : 0 < p) (v : Fin 33) (k : ℕ) :
+  (D0.Research.GoldenCoherentAmplification.rejectedWeight
+      (D0.Research.GoldenCoherentAmplification.codeValidity 4 5
+        (D0.Research.GoldenCoherentAmplification.sceneAcceptedCodes v))
+      fun s =>
+      D0.Research.GoldenCoherentAmplification.fullWord
+        (D0.Research.GoldenCoherentAmplification.routedGoldenSeed a p 4 5)
+        (D0.Research.GoldenCoherentAmplification.completeBlank 4 5)
+        (D0.Research.GoldenCoherentAmplification.codeValidity 4 5
+          (D0.Research.GoldenCoherentAmplification.sceneAcceptedCodes v))
+        (D0.Research.GoldenCoherentAmplification.fastGoldenPhase a p) (k + 2) s
+        (D0.Research.GoldenCoherentAmplification.completeBlank 4 5)) ≤
+    (1 / 16) ^ k / 10
+'D0.Research.GoldenCoherentAmplification.actual_scene_full_word_failure_rate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.actual_scene_full_word_state_error (a p : ℝ) (ha : a ^ 2 = p)
+  (hp : p + p ^ 2 = 1) (hp0 : 0 < p) (v : Fin 33) (k : ℕ) :
+  have x := fun s =>
+    D0.Research.GoldenCoherentAmplification.fullWord (D0.Research.GoldenCoherentAmplification.routedGoldenSeed a p 4 5)
+      (D0.Research.GoldenCoherentAmplification.completeBlank 4 5)
+      (D0.Research.GoldenCoherentAmplification.codeValidity 4 5
+        (D0.Research.GoldenCoherentAmplification.sceneAcceptedCodes v))
+      (D0.Research.GoldenCoherentAmplification.fastGoldenPhase a p) (k + 2) s
+      (D0.Research.GoldenCoherentAmplification.completeBlank 4 5);
+  0 <
+      D0.Research.GoldenCoherentAmplification.acceptedWeight
+        (D0.Research.GoldenCoherentAmplification.codeValidity 4 5
+          (D0.Research.GoldenCoherentAmplification.sceneAcceptedCodes v))
+        x ∧
+    D0.Research.GoldenCoherentAmplification.vectorWeight
+          (D0.Research.GoldenCoherentAmplification.alignedAcceptedVector
+            (D0.Research.GoldenCoherentAmplification.codeValidity 4 5
+              (D0.Research.GoldenCoherentAmplification.sceneAcceptedCodes v))
+            x) =
+        1 ∧
+      D0.Research.GoldenCoherentAmplification.vectorWeight
+          (x -
+            D0.Research.GoldenCoherentAmplification.alignedAcceptedVector
+              (D0.Research.GoldenCoherentAmplification.codeValidity 4 5
+                (D0.Research.GoldenCoherentAmplification.sceneAcceptedCodes v))
+              x) ≤
+        (1 / 16) ^ k / 5
+'D0.Research.GoldenCoherentAmplification.actual_scene_full_word_state_error' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.good_multiplier_retains_complex_phase (w : ℂ) (e : ℝ)
+  (hw : Complex.normSq w = 1) :
+  D0.Research.GoldenCoherentAmplification.goodMultiplier w e = w * (w + ↑(2 - 2 * w.re) * ↑e)
+'D0.Research.GoldenCoherentAmplification.good_multiplier_retains_complex_phase' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.distinct_success_laws_have_relative_phase_area (w : ℂ) (e f : ℝ)
+  (hw : Complex.normSq w = 1) :
+  (D0.Research.GoldenCoherentAmplification.goodMultiplier w e *
+        star (D0.Research.GoldenCoherentAmplification.goodMultiplier w f)).im =
+    (2 - 2 * w.re) * (f - e) * w.im
+'D0.Research.GoldenCoherentAmplification.distinct_success_laws_have_relative_phase_area' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.nonzero_relative_phase_blocks_one_real_ray (w : ℂ) (e f : ℝ)
+  (hw : Complex.normSq w = 1) (hr : w.re ≠ 1) (hi : w.im ≠ 0) (he : e ≠ f) :
+  (D0.Research.GoldenCoherentAmplification.goodMultiplier w e *
+        star (D0.Research.GoldenCoherentAmplification.goodMultiplier w f)).im ≠
+    0
+'D0.Research.GoldenCoherentAmplification.nonzero_relative_phase_blocks_one_real_ray' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.own_fast_phase_has_nonzero_relative_area (a p e f : ℝ) (ha : a ^ 2 = p)
+  (hp : p + p ^ 2 = 1) (hp0 : 0 < p) (he : e ≠ f) :
+  (D0.Research.GoldenCoherentAmplification.goodMultiplier (D0.Research.GoldenCoherentAmplification.fastGoldenPhase a p)
+          e *
+        star
+          (D0.Research.GoldenCoherentAmplification.goodMultiplier
+            (D0.Research.GoldenCoherentAmplification.fastGoldenPhase a p) f)).im ≠
+    0
+'D0.Research.GoldenCoherentAmplification.own_fast_phase_has_nonzero_relative_area' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.GoldenCoherentAmplification.actual_degree_twenty_twentyfour_cannot_share_success_phase (a p : ℝ)
+  (ha : a ^ 2 = p) (hp : p + p ^ 2 = 1) (hp0 : 0 < p) :
+  (D0.Research.GoldenCoherentAmplification.goodMultiplier (D0.Research.GoldenCoherentAmplification.fastGoldenPhase a p)
+          (D0.Research.GoldenHistoryPreparation.historyFailure a p 20) *
+        star
+          (D0.Research.GoldenCoherentAmplification.goodMultiplier
+            (D0.Research.GoldenCoherentAmplification.fastGoldenPhase a p)
+            (D0.Research.GoldenHistoryPreparation.historyFailure a p 24))).im ≠
+    0
+'D0.Research.GoldenCoherentAmplification.actual_degree_twenty_twentyfour_cannot_share_success_phase' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

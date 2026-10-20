@@ -61,6 +61,23 @@ def transition(task_id: str, action: str) -> None:
     if action == "start":
         if state != "PLANNED":
             raise LifecycleError(f"start requires PLANNED, got {state}")
+        if "A4D" in task_id or (ROOT / "02_REGISTRY/gr_assembly/contract.json").is_file():
+            import gr_assembly
+            import task_dispatch
+            try:
+                model = gr_assembly.load(ROOT)
+                if task_id in model["contract"]["task_bindings"] or "A4D" in task_id:
+                    gr_assembly.brief_binding(ROOT, task, model)
+                    prs = task_dispatch.open_prs(ROOT)
+                    branch = task_dispatch.field((ROOT / task["brief"]).read_text(), "Branch")
+                    existing, _ = task_dispatch.existing_execution(prs, task_id, branch)
+                    if existing:
+                        raise LifecycleError(f"existing execution #{existing['number']}; resume its owner instead of starting")
+                    check = gr_assembly.launch_check(model, task_id, prs)
+                    if not check["allowed"]:
+                        raise LifecycleError("assembly start gate: " + "; ".join(check["reasons"]))
+            except (ValueError, KeyError, TypeError) as exc:
+                raise LifecycleError(str(exc)) from exc
         task["state"] = "IN_PROGRESS"
 
     elif action == "block":
@@ -76,6 +93,12 @@ def transition(task_id: str, action: str) -> None:
     elif action == "retire":
         if state != "IN_PROGRESS":
             raise LifecycleError(f"retire requires IN_PROGRESS after all blockers are cleared, got {state}")
+        if (ROOT / "02_REGISTRY/gr_assembly/contract.json").is_file() or "A4D" in task_id:
+            import gr_assembly
+            try:
+                gr_assembly.retirement_check(gr_assembly.load(ROOT), task_id)
+            except (ValueError, KeyError, TypeError) as exc:
+                raise LifecycleError(str(exc)) from exc
         brief = task.get("brief")
         if not isinstance(brief, str) or not brief:
             raise LifecycleError(f"{task_id} has no owned brief")

@@ -1,0 +1,14 @@
+{
+  "duplicate_tangent_generator": {
+    "last_error": "RuntimeError: first-jet metric",
+    "rejected": true
+  },
+  "remove_real_second_jet": {
+    "last_error": "RuntimeError: all ten metric directions",
+    "rejected": true
+  },
+  "wrong_signature_reflection": {
+    "last_error": "RuntimeError: observer reflection preserves source rank",
+    "rejected": true
+  }
+}

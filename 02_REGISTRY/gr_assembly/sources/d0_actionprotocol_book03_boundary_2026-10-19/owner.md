@@ -1,0 +1,168 @@
+# G0: complete variation of the Book 03 feedback component
+
+Date: 18 October 2026. Primary owners:
+
+- `01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md`, §01.0, Git blob `87f3dbd0e5e760d46a577a275aabc16623d3f09e`, SHA-256 `668fc904b0585cc7fd5175babead5225c22051422c9c64e197d7b0d42d225342`.
+- `01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md`, §§03.0 and 03.3.2, Git blob `ecdd31abb52c94e9f2a157a80c7c49a6f5ac31aa`, SHA-256 `dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d`.
+
+**Scope.** This closes the mathematical operator-variation problem for the isolated Book 03 feedback component under Book 01's retained/archive constraint. It does not identify its operator tangents with physical metric, record, or matter variations, and it is not the full preparation/action/source stack.
+
+## 1. Exact finite operator family and all its tangents
+
+Book 01 fixes orthogonal projections `P_N,Q_N` with `P_N+Q_N=I` and `P_N Q_N=0`; hence `Q_N=I-P_N`. Book 03 defines the finite feedback component by
+
+\[
+ F=P U^* Q U P=P U^*(I-P)U P,
+ \qquad I_{fb}=-\log\det(I-zF),\qquad 0<z<1.
+\]
+
+At fixed finite dimension and fixed projection rank, the complete mathematical operator family is therefore parameterized by a Grassmannian point `P` and a unitary `U`; `Q` is derived, not an independent projector. With `B=QUP`, `F=B^*B`, so `0\le F\le P\le I`. Thus `I-zF` is positive definite and the feedback action is smooth. The scalar fugacity `z` may be held fixed or varied as a separate input.
+
+Every differentiable path in this constrained family has
+
+\[
+ X=\dot P=X^*,\quad XP+PX=X,
+ \qquad \dot Q=-X,
+ \qquad \dot U=KU,\quad K^*=-K.
+\]
+
+These conditions are also sufficient. The projector equation implies `PXP=(I-P)X(I-P)=0`; `K_P=XP-PX` is skew-adjoint with `[K_P,P]=X`, and `P(t)=e^{tK_P}Pe^{-tK_P}` realizes every such `X`. Every skew-adjoint `K` is realized by `U(t)=e^{tK}U`. The constraint then forces `Q(t)=I-P(t)` and `\dot Q=-X`. There is no independent `Q` tangent in the literal Book 01 split.
+
+## 2. Full first source and constrained stationary equations
+
+Put `R=U^*QU` and `\Pi=z(I-zF)^{-1}`. Differentiating the actual constrained operator gives
+
+\[
+ \dot R=U^*(-X+[Q,K])U,
+ \qquad
+ \dot F=XRP+P U^*(-X+[Q,K])UP+PRX.
+\]
+
+For an additional field variation `v` with `X=DP[v]`, `K=DU[v]U^*`, and `\dot z=Dz[v]`, the complete pullback source is
+
+\[
+ DI_{fb}[v]=\operatorname{Tr}(\Pi\dot F)
+ +\operatorname{Tr}((I-zF)^{-1}F)\,\dot z.
+\]
+
+This includes the outer-`P` legs, the `Q=I-P` leg, the unitary leg, and the fugacity leg. For a compact stationary form define
+
+\[
+ G_P=RP\Pi+\Pi PR,
+ \qquad G_Q=UP\Pi PU^*.
+\]
+
+The source can then be written
+
+\[
+ DI_{fb}=\operatorname{Tr}((G_P-G_Q)X)
+       +\operatorname{Tr}(G_Q[Q,K])
+       +\operatorname{Tr}((I-zF)^{-1}F)\,\dot z.
+\]
+
+With `z` fixed and `P,U` varied independently over the complete mathematical tangent family, criticality is equivalent to
+
+\[
+ [P,G_P-G_Q]=0,
+ \qquad [Q,G_Q]=0.
+\]
+
+The first is the Grassmannian Euler equation after including the induced `Q` variation; the second is the unitary Euler equation. They are the equations for this isolated component, not the stationarity equations of the full D0 action. If `z` is also free, then
+
+\[
+ D_z I_{fb}=\operatorname{Tr}((I-zF)^{-1}F)>0 \quad (F\ne0),
+\]
+
+so a nonzero-return stationary point requires `z` to be fixed by another native constraint or balanced by other terms of the same full action.
+
+The exact representation redundancy within the constrained family is the left stabilizer of `Q`: if `V` is unitary and `VQ=QV`, then `U\mapsto VU` preserves `F` and `I_{fb}`. It is not automatically a gauge symmetry of the full D0 price, whose other components may read `U` separately.
+
+## 3. Same operator state, different field source
+
+The Book 01 complement constraint does not determine a field lift. On `\mathbb C^2`, take
+
+\[
+ P_0=\operatorname{diag}(1,0),\qquad
+ Q_0=I-P_0=\operatorname{diag}(0,1),
+\]
+
+and let `U_\theta` be the real rotation through `\theta`. Then
+
+\[
+ F_\theta=\sin^2\theta\,P_0,
+ \qquad I_{fb}(\theta)=-\log(1-z\sin^2\theta).
+\]
+
+At the same base `\theta=\pi/4`, the constant lift `\theta(s)=\pi/4` and the moving lift `\theta(s)=\pi/4+cs`, `c\in\mathbb R`, have identical base `P,Q,U(0),z,F(0)` and action value, and both preserve `Q(s)=I-P(s)` (here `P` is fixed). Their field derivatives are
+
+\[
+ \frac{d}{ds}I_{fb}\big|_{s=0}=0
+ \quad\hbox{and}\quad
+ \frac{d}{ds}I_{fb}\big|_{s=0}=\frac{cz}{1-z/2},
+\]
+
+respectively. Since `z/(1-z/2)>0`, the unspecified smooth lift can give any real first source at the same operator base point, even while retaining the exact Book 01 complement. This proves non-identifiability of the field derivative from the feedback operator law alone. These are mathematical lifts of the interface; neither is asserted to be physically admitted by D0.
+
+## 4. G0 disposition and exact boundary
+
+The primary books determine the finite support split and the feedback formula. For that constrained operator component, all mathematical tangents, its complete first source, its isolated stationary equations, and its exact representation redundancy are now explicit. A separate Lean bridge also identifies the blank one-tick `fullStep` branch masses with the owned golden cylinder weights. A positive normalized two-tick control with the same gate marginals but a different joint weight proves that this first tick does not determine the multi-tick law. What remains unowned is the pullback from the common geometric/matter state `(q,D,b,m)` and its retained history to the admitted `P,U,z` variation, together with the corresponding refinement/composition law. The operator law and one-tick gate alone cannot choose that pullback or transfer its derivative to the native metric/matter source.
+
+This is a scoped G0 boundary, not a completeness proof for every D0 primitive owner and not a no-go for all of D0. It does not establish the total cost, matter Ward identity, native stationarity, a coupled curved root, soundness/recovery, or GR. The existing parent obligations remain open.
+
+## 5. Reproducible controls
+
+`certificates/a4d_book03_feedback_variation_check.py` pins both primary books and checks the complement constraint and tangent, the full `P,U,z` product rule, the constrained source contraction, the `Q`-stabilizer redundancy, and the equal-base/different-source witness. The exact checker validates finite matrix controls only; the all-dimensions tangent characterization and Euler equivalence are proved analytically above. Ordinary and optimized runs must produce byte-identical output.
+
+## 6. One-tick golden gate and the two-tick boundary
+
+`D0.Research.GoldenCylinderOneStepBridge.blank_gate_matches_one_step_cylinders` proves that the two recorded squared amplitudes of the existing blank-input `fullStep` are exactly `cylWeight [true] = φ⁻¹` and `cylWeight [false] = φ⁻²`; `p = φ⁻¹` follows from the gate's owned equations `a²=p` and `p+p²=1`. No probability is fitted. The theorem only identifies the one-step marginal.
+
+The same module constructs a strictly positive normalized joint table on two readouts. Each coordinate has exactly the gate marginals `(p,p²)`, yet its `true,true` mass differs from the product cylinder by `p⁴/2`. Thus one-step agreement cannot establish independent repeated refinement or the full event-history law. The table is a mathematical counterexample to that inference, not a claim that this correlated completion is physically admitted by D0. A native multi-tick record/refinement map remains necessary.
+
+## 7. A finite path-history response of the abstract action fiber
+
+`D0.Research.NativeHistoryActionResponse` checks whether the endpoint-invisible freedom in the abstract `ActionProtocol` can affect an individual two-tick history coefficient. On the same 33-state carrier for `K(9,11,13)`, it constructs two protocols satisfying the owned axioms (`action(x,x)=0` and `action(x,y)≥1` for `x≠y`). For this finite diagnostic only, it identifies an edge's `Cost(x,y)` with `ActionProtocol.action x y` and fixes the history's total vertex `Info` independently of the chosen protocol.
+
+The admitted return walks `[0,9,0]` and `[0,20,0]` have the same endpoints and tick count. The uniform protocol assigns costs `4` and `4`; the second protocol assigns `5` and `4`. Therefore Book 03's coefficient `w(γ)=exp((Info(γ)−Cost(γ)) log φ)` for `[0,9,0]` changes by the exact factor `φ`: `w_uniform = φ · w_second`, for every fixed real `Info(γ)`. Lean also proves that the `[0,20,0]` control coefficient is unchanged. The module checks the two protocols, walk validity, exact costs, the strict weight change, the exact ratio, and the control.
+
+This per-path result alone did not evaluate the full group-algebra sum `Z_D`. Section 9 below now closes that finite depth-two response under a fixed memory map and fixed total-information assignment. Neither result proves that the diagnostic identification is physically admitted, that `Info` is fixed under a native preparation, or that a metric/matter variation maps to either protocol. The unresolved G0 arrow remains the owned map from a common native state and its admitted variations to the path-level `Cost`, `Info`, memory class, and refinement transitions. No metric source, stationarity, curved root, or GR result follows.
+
+## 8. Exact parameterization of the formal action-protocol family
+
+The new `actionProtocolExcessEquiv` theorem classifies **every** inhabitant of the typed `ActionProtocol P` interface, not only the earlier examples. There is an exact equivalence with `ActionExcessProfile P`: each ordered pair `(x,y)` with `x ≠ y` carries an independently chosen excess `e(x,y) ≥ 0`, while the diagonal excess is zero, and the action is exactly `0` on the diagonal and `1 + e(x,y)` off it. Conversely, every such excess profile reconstructs an `ActionProtocol`. The type imposes no symmetry, path-composition, refinement, or field-source condition on these excesses.
+
+The generic theorems `book03PathWeight_strictly_decreases_with_cost` and `book03PathWeight_eq_iff_cost_eq` show that, under the already explicit diagnostic identification `Cost(x,y) := ActionProtocol.action x y`, a fixed path's Book 03 coefficient with fixed `Info` changes strictly with its additive cost; equal coefficients are equivalent to equal path costs. The `[0,9,0]`/`[0,20,0]` witness is therefore one concrete response-visible slice of the exact formal family, rather than the basis for extrapolating to it.
+
+This closes the full **formal protocol fiber** and establishes response-visible free excess data both at a fixed path and in the finite depth-two `Z_D` coefficient of any fixed memory class. It still does not classify the full native D0 action family: `ActionProtocol` has no field identifying its transition cost with the Book 03 `Cost(e)`, nor does it include the native `Info(v)`, memory assignment, or refinement map. The next G0 theorem must construct these together from one admitted `Σ`/history/readout object and prove how its allowed variations act on `(q,D,b,m)`. M1 must be applied only after that readout map is built: if the native distinguishability test changes, the change must be recorded in `R`; if all distinctions remain fixed, `D_min` must canonize the representations. Until this map and quotient are derived, G1's matter source/Ward identity has no native action to differentiate.
+
+## 9. Full finite two-tick `Z_D` response has no cancellation loophole
+
+`D0.Research.NativeHistoryActionResponse.full_two_tick_ZD_response` evaluates the
+coefficient of a memory class in the complete finite sum over **all** valid two-edge
+walks on the actual `K(9,11,13)` carrier. Let `q(γ)` be any map of those walks into
+any discrete memory-class type, and let `Info(γ)` be any real total-information term
+held fixed between the two protocol completions. The coefficient is
+
+\[
+C_A(q_0)=\sum_{\substack{\gamma\in\Gamma_D(2)\\q(\gamma)=q_0}}
+\exp\!\left((\operatorname{Info}(\gamma)-\operatorname{Cost}_A(\gamma))\log\varphi\right),
+\qquad
+\operatorname{Cost}_A(u,v,w)=A(u,v)+A(v,w).
+\]
+
+The uniform protocol assigns cost 2 to each non-identity directed edge. The second
+admissible protocol raises only `0 → 9` to cost 3. It is pointwise no cheaper on any
+edge, and the admitted return walk `[0,9,0]` has cost 5 instead of 4. Therefore every
+path weight in every memory class is unchanged or decreases, while the class containing
+`[0,9,0]` contains at least one strictly decreased positive term. Its **complete**
+coefficient strictly decreases, for every choice of `q` and every fixed `Info`; no
+cancellation among other histories in that class can hide the response. This is stronger
+than the selected-path factor calculation in §7 and is a Lean theorem over the full finite
+`Depth2Walk` carrier.
+
+The hypotheses are still diagnostic: the theorem identifies `Cost(u,v)` with the
+abstract `ActionProtocol.action u v`, fixes `Info` and the memory map across completions,
+and uses the finite Book 03 weight. It does not prove that D0 admits either cost profile,
+that its native `Σ` selects these `q` and `Info` maps, or that the action variation pulls
+back to a physical field variation. The native history/readout-to-field map, completeness
+of its action family, and physical response visibility remain open G0 obligations.

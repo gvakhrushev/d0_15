@@ -1,0 +1,12 @@
+PASS exact replay of the registered free-mode mixed-quartic and asymmetric-quartic branch
+PASS all 40 original Euler rows vanish at the 13 previously registered amplitude coefficients
+PASS exact flat linearized coframe-gradient Ward certificate: 18 coefficientwise checks
+Lorentz exponential extended through amplitude degree five
+
+[a^3*b^2]
+  internal component 0: 3*x/32 - 3/128
+[a^2*b^3]
+  internal component 1: -x/128 + 11*y/128 + 13/256
+All other components at these two amplitude orders are zero.
+
+SCOPE: exact non-extension result for the one selected RREF representative; lower-order homogeneous kernel variations remain open.

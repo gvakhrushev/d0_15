@@ -1,6 +1,6 @@
 # Hermitian real-span trace test — algebraic iff (DRAFT, pre-skeptic)
 
-**Status:** DRAFT candidate. No registry row edited. Skeptic pass was not run, so this note does not accept the statement. Pre-flight keywords: `MemoryTangentSpan`, `mv_tangent_span`, `traceless source-neutral`, `span_R`. No owning row in `02_REGISTRY/claims.csv` or `02_REGISTRY/formal_support.csv`. `03_FORMALIZATION/D0/All.lean` does not import the module. Skill paths `03_THEORY_MAP/`, `09_LEAN_FORMALIZATION/`, and `05_CERTS/` are absent in this repository; the registry files above were searched instead.
+**Status:** DRAFT candidate. No registry row edited. Skeptic pass was not run, so this note does not accept the statement. Pre-flight keywords: `MemoryTangentSpan`, `mv_tangent_span`, `traceless source-neutral`, `span_R`. No owning row in `02_REGISTRY/claims.csv` or `02_REGISTRY/formal_support.csv`. `03_FORMALIZATION/D0/All.lean` does not import the module. Directory paths from another repository layout were absent; the registry files above were searched instead.
 
 ## Claim (DEF-0.2.2 form)
 

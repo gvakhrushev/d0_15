@@ -2,7 +2,7 @@
 
 Источник: `ec45c8cc4085e7bce888d97439251be9e578d4ff` в #334. Этот коммит регистрации источник не вливает.
 Десять WORKER добавлены как PLANNED. Публикация briefs не запускает исполнителей.
-Лимиты не меняются. В каждой ветке исполнителя ровно одна строка IN_PROGRESS.
+Лимит WORKER равен 10. EXPENSIVE остаётся 3, CONTROL остаётся 2. PLANNED слот не занимает. В каждой ветке исполнителя ровно одна строка IN_PROGRESS.
 
 - R01 `WRK-A4D-MV-FULL-RANK-SPAN` → `wrk/a4d-mv-full-rank`
 - R02 `WRK-A4D-MV-RANK8-WITNESS` → `wrk/a4d-mv-rank8`

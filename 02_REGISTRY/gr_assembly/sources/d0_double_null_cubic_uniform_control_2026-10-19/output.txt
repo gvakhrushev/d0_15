@@ -1,0 +1,11 @@
+PASS exact homogeneous flat Cartan block: rank=24 det=256
+PASS published order-ab correction: all 40 rows vanish at both exact control nodes
+PASS coefficient a^2 b^1: homogeneous correction solves 24 link rows at origin
+  origin coframe residual: [(3, -1/32), (13, -1/32)]
+  neighbor link residual: [(11, -3/16), (14, 1/32), (19, -1/32)]
+  neighbor coframe residual: [(3, -1/32), (13, -1/32)]
+PASS coefficient a^1 b^2: homogeneous correction solves 24 link rows at origin
+  origin coframe residual: [(6, -1/32), (8, -1/32)]
+  neighbor link residual: [(0, 1/16), (4, 1/16), (15, -3/32), (22, 1/32)]
+  neighbor coframe residual: [(4, -1/8), (6, -1/32), (8, -1/32)]
+SCOPE: fixed affine coframe and spatially uniform cubic correction only; no no-go for spatially varying corrections or coframe modes.

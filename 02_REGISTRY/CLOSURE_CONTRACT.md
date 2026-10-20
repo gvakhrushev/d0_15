@@ -1,6 +1,8 @@
 # D0 Claim Closure Contract
 
-`bridge` is not a positive closure status.
+`BRIDGE` is not a positive closure status. A proved mathematical bridge is a
+theorem in its declared scope; the status denotes a still-unproved or external
+connection required by a stronger claim.
 
 ## Conceptual Terminal Classes
 
@@ -13,6 +15,66 @@ A D0 question or proof-target is terminally classified when it belongs to one of
 
 These conceptual terminal classes are NOT values of claims.csv.release_status. CP1 leaves the existing registry status vocabulary unchanged; status normalization is a later control-plane task.
 
+## Foundation, interpretation and theorem transfer
+
+The [architectural objective](research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md#architectural-objective)
+uses the owned necessary verification kernel as the foundation for faithful
+interpretations of existing theories. Reuse its proofs with their exact
+hypotheses; an interpretation programme does not require re-proving the kernel
+or the target theory's internal mathematics.
+
+A proved interpretation, factorization or structure-preserving transport is a
+positive mathematical result. A generic theorem transferring `H_T => P_T`
+through a faithful interpretation can be complete while an intended physical
+application remains open. That application must establish the interpreted
+hypotheses on the actual D0 objects. Naming an external theorem, matching a
+tuple or encoding its equations does not establish them. An unproved connection
+assumption remains explicit; it cannot be hidden as physical admission or as
+the desired equation in the definition of the target regime.
+
+Necessary operational structure, faithful theory realization and unique
+physical dynamics are different conclusions. A faithful bridge need not select
+one microscopic action if the relevant physical equivalence is proved. This
+does not remove the complete native source, joint dynamics or refinement
+requirements of the existing positive GR contract.
+
+The assembly's `D0-FOUNDATION` and generic `THEORY-TRANSFER` goals are separate
+from `GR`. Its `gr_architectural_closure` must compose `verification_core`,
+`theory_transfer`, `gr_operational_realization` and the unchanged `positive_gr`
+on the same family, complete action, source, variations, preparation/history,
+clock/readout, normalization and refinement, or through a proved transport
+preserving those structures. A generic transfer theorem does not depend on GR;
+its GR application still requires the declared soundness and recovery theorem.
+These are scoped proof obligations, not new claim-status values.
+
+## Native minimality and continuation
+
+The [central programme](research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md#prospective-minimality-and-physical-execution)
+treats prospective minimality as a physical derivation target within existing
+`constitutive`/`native_sector` obligations. A theorem conditional on
+`ProspectiveExecution.optimal` owns its consequences; physical selection is
+closed only by deriving the needed native condition or a precise alternative
+continuation law from the same admitted D0 process and complete price.
+
+The application must identify native requirements, actual Cost and Info,
+preparation/work/history/clock terms, admissible variations and physical
+consumer. Nontrivial continuation needs a derived required distinction or a
+complete objective for which idle is not optimal. Conditional fixed-current
+minimization, detector-output entropy,
+gate-count optimality, a lower action bound and Book weights each retain their
+own scope. They cannot silently replace the full law or its source. A structural
+certificate needs a native attainment argument; a minimum of a weight functional
+does not by itself prove strict minimization of every executed history.
+
+Prospective alternatives need equal full initial conditions and task constraints,
+not equal future clocks unless the task fixes duration. A retained-process
+replacement preserves the distinctions required by its readout. Additional
+record symbols require provenance, not automatically new independent input.
+Physical equivalence or controlled source remainders may establish a bridge
+without uniqueness of the microscopic formula, when that equivalence is proved.
+These distinctions neither add a new status nor weaken positive GR or the
+original raw terminal; injecting an external selector is not native derivation.
+
 ## Global Stop Rule
 
 Research on a lane stops when its load-bearing ambiguity is terminally classified.
@@ -22,6 +84,12 @@ The global closure target is:
 > **zero unclassified load-bearing internal ambiguities, with every remaining interface explicitly CORE, NO-GO, BRIDGE/PASSPORT, or EMPIRICAL.**
 
 Progress is measured by the reduction of independent unclassified blocking choices, not by raw theorem counts or issue counts.
+
+For a positive target, classification of a missing connection does not discharge
+that connection. Stop repeating a scoped construction once its result is owned;
+reuse it, prove its missing parent application, or record the changed input and
+route that justify a genuinely different question. Splitting one interface into
+more lemmas does not by itself reduce the outstanding ambiguity.
 
 ## Forbidden
 
@@ -38,7 +106,9 @@ A claim is closed only if it is a theorem, a complete finite cert, an external
 theorem with all D0 hypotheses proved, an empirical passport within its declared
 data scope, or a no-go/boundary theorem.
 
-Any remaining bridge is a proof obligation.
+Any remaining unproved connection required by the claimed conclusion is a proof
+obligation. A conditional transfer theorem and its physical application retain
+their different scopes; the first cannot silently close the second.
 
 ## Existing Sector Guardrail: CVFT Operator Hardening (Outside Global DoD)
 
@@ -62,3 +132,13 @@ Previously proved theorems must be imported through stable interface modules whe
 Closure is monotonic only at the interface boundary: once a theorem is frozen, downstream active modules depend on its statement, not on rewriting its proof body.
 
 CP1 does not yet provide a machine-enforced claim impact graph; downstream invalidation requires explicit CONTROL review. Machine impact propagation belongs to future CP3.
+
+The [gravity assembly](gr_assembly/README.md) now checks the declared composition
+contracts for the current GR route, with a generated overview, exact evidence
+pins and scoped independent result applications. It keeps foundation/theory
+transfer, global classification, positive native GR and the original raw terminal
+separate. It is not the global claim impact graph: claims and their release
+vocabulary remain authoritative
+here. Its `impact` query reuses the research-certificate dependency selector and
+identifies applications for compatibility review; it never rewrites scientific
+evidence or turns a selected check into an executed replay.

@@ -1,0 +1,8 @@
+diff --git a/02_REGISTRY/research/sources/d0_one_coordinate_exact_curved_sheet_2026-10-15/intervals.py b/02_REGISTRY/research/sources/d0_one_coordinate_exact_curved_sheet_2026-10-15/intervals.py
+--- a/02_REGISTRY/research/sources/d0_one_coordinate_exact_curved_sheet_2026-10-15/intervals.py
++++ b/02_REGISTRY/research/sources/d0_one_coordinate_exact_curved_sheet_2026-10-15/intervals.py
+@@ -8 +8,3 @@
+- def __init__(self,l,h=None):self.l=np.asarray(l,dtype=float);self.h=np.asarray(l if h is None else h,dtype=float)
++ def __init__(self,l,h=None):
++  self.l=np.array(l,dtype=float,copy=True)
++  self.h=np.array(l if h is None else h,dtype=float,copy=True)
