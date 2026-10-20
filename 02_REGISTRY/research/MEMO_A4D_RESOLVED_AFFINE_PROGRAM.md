@@ -67,6 +67,41 @@ Book/clock/Cost-Info/matter admission. Existing
 `positive_gr` and `raw216` are OPEN. This is a shortcut
 in PROOF ARCHITECTURE, not a shortcut that assumes those premises.
 
+## Stronger conditional gravitational universality: ONE Golden scale
+
+The [Golden blow-up + condensed metric-source theorem](A4D_GOLDEN_DISCRETE_BLOWUP_CONDENSED_GR_2026_10_20.md)
+provides a STRICTLY stronger structural route than the previously
+used second-jet Lovelock step. Let ONE fully paid, selected,
+internally stationary D0 gravitational Euler source genuinely descend
+to a metric-only, locally open-Diff-natural, off-shell conserved
+rank-(0,2) tensor differentiable at every flat Lorentz section.
+The ONE exact physical metric-scale identity
+`E[phi² g]=E[g]` then forces `E=aG` for ALL smooth metrics
+in its chart by Golden `phi^(-n)` normal-coordinate blow-up;
+it does not presuppose order-two response, continuous rescaling,
+a polynomial action or all-geometries coefficient matching.
+Alternatively, one local Diff-invariant, flat-smooth selected
+ACTION with `I[phi² g]=phi² I[g]+field-independent/boundary`
+supplies both Euler homogeneity and off-shell Ward, enough for
+the same conclusion. The positive exact Minkowski/nonvacuum
+Brinkmann witnesses fix `kappa/a=-lambda_-` only after they
+are proved genuine stationary solutions of that SAME complete
+native physical programme.
+
+The selected full Book03 H+J+R/Cost-Info/clock/preparation/source
+has NOT been proved to obey such a physical metric-scale law.
+The actual Golden archive step `Lambda_n=phi^n` is not a
+coframe/metric covariance theorem. Existing condensed-compatible
+heat has free price-visible new-block directions, so physical
+source descent requires the genuine full-history fibre-product
+equalizer and local test coverage; support-level profiniteness
+does not give smooth tangent operators. Bare HJR fails the
+one-step Golden scale test on the primary flat Brinkmann
+metric. The original second-jet/Lovelock route remains an
+alternative; `GR`, `positive_gr` and raw216 remain OPEN.
+This is a conditional proof architecture with one direct
+quantitative native test, NOT a promoted physical law.
+
 ## Architectural objective
 
 D0 supplies the necessary operational structure `Sigma` (`Σ`) of verification
