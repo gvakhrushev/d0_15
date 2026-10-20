@@ -23,6 +23,16 @@ application is the work to finish. Independent conditional transfer/refinement
 work continues on its declared inputs. The dispatcher prints this focus for
 new, resumed, review and offline handoffs; it does not change launch authority.
 
+Before the next native application, consume the
+[global result composition](../02_REGISTRY/research/A4D_GLOBAL_RESULT_COMPOSITION_2026_10_20.md):
+operational geometry, Julia source, complete compiler/clock price and
+field-writer reachability now have explicit connecting maps. Its current
+application is the joint field-and-price/variation law and same-prefix
+two-ending valuation test. Keep its actual sensitivity, absolute Book
+anchor, continuation partition weights and source residuals. The global
+result-family map supplies the parent substitution for bounded work;
+this instruction creates no additional queue or scientific owner.
+
 ## Default GR execution: finish the exact positive nonlinear example
 
 Start from the [main-resident positive nonvacuum recovery](../02_REGISTRY/research/D0_GR_PRIMARY_POSITIVE_CASE.md)

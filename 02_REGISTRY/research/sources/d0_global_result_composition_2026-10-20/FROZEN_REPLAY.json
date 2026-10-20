@@ -1,0 +1,116 @@
+{
+  "results": {
+    "check_full_price.py": {
+      "fixed_absolute_tolerance": 2e-11,
+      "groups": [
+        {
+          "caps": [
+            2,
+            3
+          ],
+          "includes": "bank aborts, stage aborts, no-click, every continued click and cap; exact all-launch cost and occupation",
+          "leaf_inventory": {
+            "2": {
+              "coarse_leaves": 6,
+              "fine_leaves": 34
+            },
+            "3": {
+              "coarse_leaves": 8,
+              "fine_leaves": 74
+            }
+          },
+          "name": "complete_finite_renewal_and_entropy_chain",
+          "rational_click_probabilities": [
+            "1/5",
+            "3/7",
+            "2/3"
+          ],
+          "status": "PASS"
+        },
+        {
+          "mean_minus_path_expectation_gaps": {
+            "N=2,theta=1": -0.47319493847017563,
+            "N=2,theta=1/2": -0.23659746923508776,
+            "N=3,theta=1": -0.6248961828070725,
+            "N=3,theta=1/2": -0.31244809140353624
+          },
+          "name": "conditional_KL_and_two_paired_expectations",
+          "shared_conditional_kernel": "verified exactly as fractions on every fine leaf",
+          "status": "PASS",
+          "variable_length_KL": {
+            "2": 0.13043046297167527,
+            "3": 0.13210742606702539
+          }
+        },
+        {
+          "N2_paired_internal_net_price": -0.7762006120641373,
+          "N2_paired_refinement_entropy": -0.15286982526974846,
+          "interpretation": "computable residuals; no physical anchor or Info has been selected",
+          "name": "occupied_price_and_absolute_normalizer_negative_controls",
+          "same_normalized_law_absolute_price_source": -1.3999999999999995,
+          "status": "PASS"
+        },
+        {
+          "interpretation": "whole-plateau-neutral C2 residuals cannot repair the mixed block; root-only neutrality is weaker",
+          "mixed_determinant": "-4",
+          "name": "source_neutral_full_minimum_negative_control",
+          "normal_curvatures": [
+            "0",
+            "1",
+            "1000000"
+          ],
+          "status": "PASS"
+        }
+      ],
+      "log_base": "phi",
+      "maximum_observed_log_identity_error": 8.881784197001252e-16,
+      "read_only": true,
+      "scope": "Finite rational interface fixtures of analytic ledger identities; not a native-leaf replay or physical Info admission.",
+      "script_sha256": "759fc319bc5677eccd95c207608afd14249962ff69e121372f6cec7715e44eb9",
+      "status": "PASS"
+    },
+    "check_holonomy_source.py": {
+      "arithmetic": "exact_sympy",
+      "flat_second_derivative_direct_vs_four": -2040,
+      "flat_subtracted_direct_vs_four": "-1020*tanh(xi)**2",
+      "group_count": 5,
+      "groups": [
+        "literal_native_Lorentz_REST_basis_and_two_commutators",
+        "original_prepared_grade1_R4_block_and_13_effect_completeness",
+        "all_good_probabilities_exact_subdivision_odds_and_boost_mass",
+        "native_six_by_six_odds_first_jet_and_coarse_Fisher",
+        "retained_call_cost_exact_source_cocycle_and_minus_2040_witness"
+      ],
+      "odds_jacobian": "-2*sqrt(2)/log(phi) * I6",
+      "original_referenced_checker_replayed": false,
+      "primitive_call_cost": "n*4**n*sech(xi)**2",
+      "scope": "Finite original prepared Choi block and stated complete-trial stopping protocol only; analytic all-jet composition is a separate proof; no physical action selection or GR closure.",
+      "status": "PASS",
+      "success_mass": "4**(-n)*cosh(xi)**2"
+    },
+    "check_operational_curvature.py": {
+      "five_point_determinant_at_unit_scale": "-16",
+      "groups": [
+        "exact five/nine-profile inverse and scaled determinants",
+        "quartic hostile control and full-space recovery",
+        "abort-retaining probability and two-probe error norms",
+        "fixed-pairing observable reachability gap and moving-pairing escape"
+      ],
+      "nine_point_determinant_at_unit_scale": "3456",
+      "nine_point_inverse_row_l1": [
+        "1",
+        "2",
+        "2",
+        "2",
+        "1",
+        "6",
+        "4/3",
+        "4/3",
+        "2"
+      ],
+      "scope": "new algebra only; no native admission, price or GR closure",
+      "status": "PASS"
+    }
+  },
+  "schema": "d0-global-composition-frozen-replay-v1"
+}

@@ -1,132 +1,128 @@
 # D0 — Finite Verification Theory
 
-## First physical proof route: exact nonlinear nonvacuum GR
-
-**Every new GR agent starts with the [primary positive case](02_REGISTRY/research/D0_GR_PRIMARY_POSITIVE_CASE.md).** The [original full proof](02_REGISTRY/research/A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md) consumes the already-known [exact all40 Brinkmann theorem](02_REGISTRY/gr_assembly/sources/d0_double_null_quadratic_cartan_2026-10-19/arbitrary_brinkmann_all40.md): one fixed, genuinely curved Einstein-null-matter metric is represented by exact finite interior 16+24+2 Euler roots at **every mesh** of the configured Golden-J2 mathematical action, with real CAR history and second-order matter recovery. This is the default positive target for common-source, clock, preparation and refinement work; do not launch another rank/census exercise without a new parent-premise application.
-
-**Scope:** original compulsory full D0/Book03 Cost-Info/H+J+R action selection, full GR and raw216 remain OPEN. Source PR [#334](https://github.com/gvakhrushev/d0_15/pull/334) remains active; this main intake does not close it.
-
-The [same-history price/source intake](02_REGISTRY/research/D0_SAME_HISTORY_PRICE_SOURCE_MAIN_INTAKE_2026_10_20.md) now connects the original complete tape to its paid-port partition, clock sources, retained feedback correction and specified connection response. These native calculations feed the existing positive family's full-source identity; complete Book03 Cost−Info, physical admission and GR closure remain open in [#334](https://github.com/gvakhrushev/d0_15/pull/334).
-
-The [whole-family CAR/Book/causal synthesis](02_REGISTRY/research/A4D_CAUSAL_BOOK_SOURCE_TO_EXACT_GR_SYNTHESIS_2026_10_20.md) now supplies the exact geometric first source on all 16+24 directions through a complete Golden reporting component on the entire spatial carrier. It resolves that component's input-preparation source and the generated execution-state equations, with its paid repetition count retained. The next application computes the **full** absolute Book Info/work effect and primitive admission on this same programme; the known reporting Cost is not substituted for that full price. The ordinary targeted certificate and independent analytical review accompany the proof.
-
-
-The [stopped native minimum and full J2 source](02_REGISTRY/research/A4D_NATIVE_STOPPED_MINIMUM_TO_J2_SOURCE_2026_10_20.md)
-now covers every fixed prefix price T >= 5 and Golden-call price ell >= 1.
-Every minimizing repeat protocol retains a nonzero multiplier of the original
-all40+2 source. A genuine local minimum of the actual optimized price in the
-full field space therefore requires DJ2 = 0, including at protocol ties.
-The required stopping task, Book Info and complete physical price binding
-remain explicit premises. All failures and conditional work are retained.
-
-The [complete-record information and price application](02_REGISTRY/research/A4D_NATIVE_COMPLETE_RECORD_INFO_PRICE_SELECTION_2026_10_20.md)
-identifies the original full128 coherent limit as one coherent mode, computes
-its whole pointer entropy source, and solves a specified fresh-record price
-with a strict positive limiting minimum. It also gives the exact least paid
-fixed horizon for a supplied binary verification task. The recovered
-retained-clock/price packet is included unchanged. Selecting the compulsory
-Book Info algebra, task and complete work payment remains the physical
-premise before the all40+2 GR source can be applied; #334 stays open.
 ## Current objective: close the D0 foundation through general relativity
 
-D0 starts from the **necessary operational structure of verifiability**:
-distinguishable completed outcomes, retained records, access and independent
-comparison without an obligatory external catalogue. Reading, writing and
-checking a theory already require these functions. The functional tuple is the
-common foundation; the chosen scene, fields and geometry enter through the
-subsequent mathematical realizations.
+D0 begins with the operational functions required for verification:
+distinction, retained records, access and independent comparison without
+an obligatory external catalogue. The programme constructs mathematical
+realizations of that kernel, proves their interpretation and transfer
+maps, and composes them into physical theories. **General relativity is
+the first complete physical specialization to finish.** Its full native
+action, admissible variations and universal refinement remain open.
 
-**General relativity (ОТО) is the first complete physical specialization of
-that foundation.** The programme constructs a faithful operational
-interpretation, proves the premises of existing theory results, and imports
-those results into one composed D0 argument. The same transfer architecture
-can then serve other theories. The present GR target retains the **full
-nonlinear gravitational equation, its independently derived matter source,
-physical constraints, and controlled soundness and recovery on an explicit
-nonempty curved class**. This composed physical target remains open.
+**Current synthesis:** [one composed route from actual records to geometry,
+complete price and gravitational response](02_REGISTRY/research/A4D_GLOBAL_RESULT_COMPOSITION_2026_10_20.md).
+The results now do more than coexist: the native CAR readout reconstructs
+the primary metric and curvature; original Julia odds reconstruct its
+soldered geometric density; full compiler/clock histories determine
+explicit remaining price sources; and the field-writer invariant tests
+whether those observable fields are reachable by the proposed process.
+The synthesis states which output supplies each next premise and which
+physical identifications still require proof.
 
-The current central bridge is **prospective minimality**: derive the native
-continuation law from compulsory verification conditions and the same
-execution's complete Cost-Info. Existing memory, Bellman/no-detour,
-conditional-current and geometric theorems are inputs to this derivation. The
-physical optimum is still a premise in the prospective formal owner; the next
-work must supply its native origin or the precise native variational law.
-Read the [shared focus and closure roadmap](02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md#prospective-minimality-and-physical-execution)
-for goals, reusable results, proof tools and exact completion conditions.
+| Part of the same argument | Result already available | Application still to establish |
+|---|---|---|
+| Verification kernel and theory interpretation | [VerificationCore / TheoryTransfer composition](02_REGISTRY/research/D0_FOUNDATION_THEORY_TRANSFER_COMPOSITION_2026_10_20.md): admitted future distinctions, finite-word/readout commutation and faithful common empirical image | Supply the actual physical interpretation and any claimed all-native context coverage |
+| Operational geometry | [Quantitative native recovery](02_REGISTRY/research/sources/d0_global_result_composition_2026-10-20/OPERATIONAL_CURVATURE_RECOVERY.md): five macroscopic sites recover the quadratic/cubic primary sector; nine recover the entire owned common-harmonic polynomial class plus its radial coefficient | Retain actual readiness, preparation, sensitivity and observation precision; observation alone does not write a different field |
+| Original geometric and material source | [Whole-family CAR/Book/causal source](02_REGISTRY/research/A4D_CAUSAL_BOOK_SOURCE_TO_EXACT_GR_SYNTHESIS_2026_10_20.md) and [original Julia all-jet readout](02_REGISTRY/research/sources/d0_global_result_composition_2026-10-20/HOLONOMY_SOURCE_AND_REFINEMENT.md): the original all40 covector and geometric coframe weight are recoverable | Derive physical admission and full Book valuation on this same carrier; a classical decoder is not a free coherent compiler |
+| Complete retained execution and price | [Retained clock/complete known cost](02_REGISTRY/research/A4D_NATIVE_CLOCK_PRESSURE_AND_COMPLETE_PRICE_SYNTHESIS_2026_10_20.md), [same-history source](02_REGISTRY/research/A4D_SAME_HISTORY_PRICE_AND_SOURCE_COMPOSITION_2026_10_20.md), and [new price composition](02_REGISTRY/research/sources/d0_global_result_composition_2026-10-20/FULL_PRICE_COMPOSITION.md) include aborts, work, compiler occupation and moving-source terms | Anchor absolute Book normalization and derive the complete Info, preparation, clock and work valuation; matched reference and KL have different cancellation laws |
+| Prospective choice and genuine field variations | Existing Bellman/no-detour and [stopped implementation minima](02_REGISTRY/research/A4D_NATIVE_STOPPED_MINIMUM_TO_J2_SOURCE_2026_10_20.md), the [full-field minimum exclusion](02_REGISTRY/research/A4D_NATIVE_JOINT_FIELD_MINIMUM_EXCLUSION_2026_10_20.md), and [observable writer-image distance](02_REGISTRY/research/sources/d0_global_result_composition_2026-10-20/OPERATIONAL_CURVATURE_RECOVERY.md#5-observable-separation-from-the-fixed-pairing-writer-image) | Derive an admitted joint field-and-price realization or native stationary/constraint law; a fixed-field implementation optimum does not select the field |
+| Exact nonvacuum GR and recovery | [Primary positive case](02_REGISTRY/research/D0_GR_PRIMARY_POSITIVE_CASE.md): the configured original action has exact finite 16+24+2 roots for one fixed nonlinear sourced metric at every mesh | Identify the physically selected source with this source on the actual ambient directions, with all internal equations retained |
+| Universal gravitational response | [Golden single-step rigidity](02_REGISTRY/research/A4D_GOLDEN_DISCRETE_BLOWUP_CONDENSED_GR_2026_10_20.md), [VSI/Lovelock two-witness route](02_REGISTRY/research/A4D_VSI_LOVELOVK_TWO_WITNESS_UNIVERSAL_GR_SYNTHESIS_2026_10_20.md), and condensed source descent | Establish their metric-only, locality, physical weight, Ward and regularity hypotheses for the same complete selected source |
 
-| Architectural conclusion | Current result and next application |
-|---|---|
-| Necessary kernel: `D0-FOUNDATION` | [Composed kernel theorem](03_FORMALIZATION/D0/Foundation/VerificationCore.lean): the same retained record identifies exactly all admitted future distinctions; operations and finite executions commute. Explicit coded Sigma witnesses retain their stated assumptions. |
-| Generic transfer: `THEORY-TRANSFER` | [Proved conditional transfer](03_FORMALIZATION/D0/Foundation/TheoryTransfer.lean): primitive state/program/readout diagrams yield all finite executions, a faithful common empirical image and reuse of source proofs with every premise explicit. |
-| First physical closure: `GR` | Instantiate that interpretation on a native GR family and prove that it uses the **same action, source, history, clocks and refinement maps** as the unchanged positive GR theorem. |
+## First physical proof route: exact nonlinear nonvacuum GR
 
-Start with the [architectural objective and proof plan](02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md#architectural-objective),
-then its [GR specialization](02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md#current-route-to-general-relativity)
-and the [work and validation flow](00_WORK/README.md). One integrator owns the
-complete conditional argument and its remaining premise boundary. The next
-task supplies an exact missing substitution in that argument. Supporting
-results retain their scope until their application is proved; a scoped
-obstruction changes the applicable route without changing the final target.
+Read the [primary positive case](02_REGISTRY/research/D0_GR_PRIMARY_POSITIVE_CASE.md)
+and the [global composition](02_REGISTRY/research/A4D_GLOBAL_RESULT_COMPOSITION_2026_10_20.md)
+before proposing more gravity work. The [original all40 theorem](02_REGISTRY/gr_assembly/sources/d0_double_null_quadratic_cartan_2026-10-19/arbitrary_brinkmann_all40.md)
+and [midpoint recovery](02_REGISTRY/research/A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md)
+already give exact interior coframe, proper-link and matter Euler roots
+of the configured Golden-J2 action at every mesh. Their fixed continuum
+metric has nonzero Ricci and Weyl curvature, a real chronological CAR
+source and second-order matter recovery. They supply the nonempty
+curved test family for the remaining physical construction.
 
-The [foundation and transfer composition](02_REGISTRY/research/D0_FOUNDATION_THEORY_TRANSFER_COMPOSITION_2026_10_20.md)
-now consumes the existing necessity, empirical-process, future-memory and M1
-proof owners on one identified carrier. Its two scoped applications are
-recorded in the [assembly](02_REGISTRY/gr_assembly/VIEW.md). Translated
-observation assertions are proved equivalent to actual native readout.
-Additional native tests remain explicit: an all-native claim needs a coverage
-witness, with a formal counterexample showing why that condition matters.
-The next physical application joins the actual paid native process to the
-existing geometric readout. The active native/source and joint-refinement
-fronts retain their current owners and exact proof obligations.
+The new operational inverse uses the actual complete three-outcome law,
+including aborts. Its nine-point determinant is `3456 a^18`. On this
+stated polynomial class, curvature error is bounded by
+`(12/a² + 16R/a³ + 12R²/a⁴) E_H`, with
+`E_H <= 27 epsilon_h / (16 L_min,h)` and the actual native sensitivity
+`L_min,h` retained. It measures the radial source coefficient independently;
+the Einstein equation is not inserted into the decoder. The separate
+Julia reconstruction gives an identity of original geometric functions
+and all their existing jets. Neither result assumes that every ambient
+field variation is an admitted operation.
 
-For programme context, the integrator reads the full
-[preserved strategy](02_REGISTRY/research/D0_RESEARCH_STRATEGY_RU.md)
-once, then uses the [18 ideas and original guidance mapped to the current route](02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md#strategic-context-and-preserved-inputs).
-The strategy and source-preservation package were delivered to main by
-[#323](https://github.com/gvakhrushev/d0_15/pull/323). Bounded tasks read the
-relevant inputs from that context.
+A [further composition with the new four-copy native response](02_REGISTRY/research/A4D_NATIVE_FOUR_COPY_TO_CURVATURE_APPLICATION_2026_10_20.md)
+now supplies the live material likelihood used by this inverse on its
+declared finite-code/reference interface. It uses one fixed Golden
+programme with all aborts retained and actual gain `1/(64 Lambda_h)`.
+Known pulse calibration and the paid copy/code supply remain explicit;
+the new sensitivity is `L_h = r p² s² delta²/(64 Lambda_h rho h²)`.
+This joins a concrete amplitude-query implementation to the five/nine-site
+geometry inverse without assuming a mesh-independent signal or continuous
+physical variations of discrete geometry codes. The companion also
+consumes the newer conditional paired-price, full-record and preparation
+results, retaining their distinct source hypotheses.
 
-For a task, run `python3 tools/task_dispatch.py TASK-ID`: resolve an existing PR
-before launching another execution. Iterate with the smallest relevant check;
-run the affected integration checks at Ready. See the
-[validation matrix](00_WORK/README.md#validation-budget).
-
-The [D0 to GR assembly overview](02_REGISTRY/gr_assembly/VIEW.md) connects
-obligations, exact interfaces and accepted applications. Run
-`python3 tools/gr_assembly.py next` for live owners and the next consuming steps,
-or `why` / `search` / `attempts` for a bounded lookup. Historical research stays
-searchable with its original scope; it does not automatically close a premise.
-For the central bridge, `python3 tools/gr_assembly.py puzzle prospective-native-selection`
-opens its existing proof owners and missing physical application. This reading
-command does not register or launch another execution.
+The complete-price calculation is now equally concrete. Removing internal
+compiler records loses `zeta_pre + alpha zeta E_N(beta q)` of entropy;
+the occupied stage term survives a matched reference. Equal Julia odds
+under one versus four paid edges can leave a price difference
+`-1020 tanh²(xi)` after subtraction of the flat constant. These are tests
+for the true complete Info/work source, not prescribed counterterms.
+The specified fixed-coordinate-pairing writer has the independently
+measurable gap `dist_Q >= |Delta H|/4 >= TV/(8L)` on the primary chart.
+Its exact escape requires moving the coordinate pairing in a genuinely
+admitted joint step. This is a conditional result for that writer.
 
 ### Main integration and the next proof stage
 
-The programme, agent rules and assembly map are now part of the main work
-plane. Completed inputs are delivered as soon as their bounded integration is
-ready; an unfinished physical parent can continue in its existing research PR.
+Continue existing scientific [Draft #334](https://github.com/gvakhrushev/d0_15/pull/334).
+The global packet is a bounded main research intake with immutable source
+snapshots, independent mathematical reviews and one ordinary read-only
+certificate for thirteen new narrow groups. It preserves the prior
+[complete-price intake #395](https://github.com/gvakhrushev/d0_15/pull/395),
+[joint-field minimum intake #396](https://github.com/gvakhrushev/d0_15/pull/396),
+and parallel research. It does not close `positive_gr`, `GR_closed`,
+the original raw216 terminal, or the scientific parent.
 
-| Delivered input | Use in the next argument |
-|---|---|
-| [Architecture, roadmap and dispatch — #379](https://github.com/gvakhrushev/d0_15/pull/379) | Start from verification, compose existing proof owners, and assign only a named missing premise or application. |
-| [Strategy and preserved source package — #323](https://github.com/gvakhrushev/d0_15/pull/323) | Retain the original programme context and source history without asking the user to reconstruct it. |
-| [ActionProtocol boundary — #375](https://github.com/gvakhrushev/d0_15/pull/375) | Use the proved unit floor and excess-profile classification when identifying the complete native price; the floor alone does not select its shape or imply attainment. |
-| [Native source, AF metric and history checkpoints — #322](https://github.com/gvakhrushev/d0_15/pull/322) | Reuse the accumulated current, retained-memory, geometric and variation results at their declared hypotheses. Historical compiler inputs stay pinned; the maintained-source compatibility gate separately checks the unchanged Lean capsules. |
-| [Hermitian tangent-span theorem — #353](https://github.com/gvakhrushev/d0_15/pull/353) | The accepted `mv_tangent_span` application supplies the generic annihilator/span equivalence. The next source step identifies the actual native operators and admissible tangents. |
-| [Primitive-word and moving-jet theorem — #342](https://github.com/gvakhrushev/d0_15/pull/342) | The accepted `primitive_jet_composition` application supplies ordered residual composition and the exact moving-intertwiner identity. The numerical derivative bound retains its shared-intertwiner hypothesis. |
-| [Future-memory and prospective-execution proof intake](02_REGISTRY/research/D0_FOUNDATION_MAIN_INTAKE_2026_10_20.md) | Import the existing future-stable quotient, sufficient-memory, Bellman, no-detour and idle-boundary theorems directly from the main Lean closure. |
-| [Composed foundation and operational theory transfer — #386](https://github.com/gvakhrushev/d0_15/pull/386) | Reuse the exact record/future kernel, explicit Sigma coding and proved two-system finite-program/assertion transfer. The two generic architectural obligations have pinned independent acceptance; actual native action/source/clock realization remains open. |
-| [Complete retained flag source and native minimum test](02_REGISTRY/research/D0_NATIVE_FLAG_SOURCE_MINIMUM_MAIN_INTAKE_2026_10_20.md) | The compact execution's full coherent flag archive has a controlled first source, including failed histories and rank births. An exact decreasing direction in the finite whole-HJR roots specifies what the actual complete price or native constraints must resolve before those roots can supply strict prospective minimality. |
-| [Preserved Book-triangle results](02_REGISTRY/gr_assembly/sources/d0_book_triangle_odds_2026-10-19/owner.md) and [conditional exit-Gram results](02_REGISTRY/gr_assembly/sources/d0_conditional_exit_grams_2026-10-17/orthogonal_exit_source.md) | Reuse the actual source files and checks delivered by #379. Source PRs #380/#363 are closed as delivered through that intake; their conditional scope and downstream physical obligations remain unchanged. |
+The next application has two coupled physical inputs. First, derive an
+actual joint solder/pairing/link step and its complete field-and-price
+image, or an independently justified native stationary law. Second,
+test the original same-prefix Julia two-ending odds against the owned
+prospective continuation law, with **equal full continuation partition
+weights**, actual absolute price anchoring and all retained work/clock
+sources. Equal minimum continuation prices alone do not suffice.
+Use the already-computed compiler and repeat-cost differences to decide
+whether the proposed complete source descends. Once it does, the existing
+exact Einstein–matter and universal-response theorems become consumers;
+they need no new geometric census.
 
-The next stage applies the composed kernel and generic interpretation theorem.
-On the existing native front, derive the full Cost-Info and required
-continuation from one admitted process. Then establish
-the source, genuine variations and joint refinement estimates for that same
-process. The [closure roadmap](02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md#closure-roadmap-goals-reusable-inputs-and-tools)
-states the consuming premise and completion condition at each transition.
-An accepted generic theorem is reused directly; its still-missing physical
-instantiation is the next task, not a reason to repeat the theorem.
+The [shared TRIZ / Golden-Beatty handoff](02_REGISTRY/research/D0_TRIZ_PHI_AGENT_HANDOFF_2026_10_20.md)
+keeps the positive loop-void and matched-reference results, the exact
+failed uncentered Beatty residual test, and the properly typed paired
+return-time question visible. TRIZ locates the precise contradiction;
+Golden/Beatty/AF/Delone results retain their actual clock and history
+roles. The [fifteen-family dependency map and all eighteen preserved leads](02_REGISTRY/research/A4D_GLOBAL_RESULT_COMPOSITION_2026_10_20.md#6-where-every-major-result-enters-the-same-argument)
+show where each line is used, including leads that remain downstream or
+need their own missing map. The [full preserved strategy](02_REGISTRY/research/D0_RESEARCH_STRATEGY_RU.md)
+and [original-source intake #323](https://github.com/gvakhrushev/d0_15/pull/323)
+remain programme context.
+
+Use the [central roadmap](02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md#current-route-to-general-relativity),
+[AGENTS.md](AGENTS.md), [work/validation flow](00_WORK/README.md), and
+[assembly](02_REGISTRY/gr_assembly/VIEW.md). One integrator owns the common
+carrier, action, variation image, norms and refinement maps. Each next
+bounded task supplies a named missing substitution. Generic
+[primitive-word/moving-jet transfer](https://github.com/gvakhrushev/d0_15/pull/342),
+[tangent-span](https://github.com/gvakhrushev/d0_15/pull/353), and
+[foundation intake](02_REGISTRY/research/D0_FOUNDATION_MAIN_INTAKE_2026_10_20.md)
+are reusable at their stated hypotheses. Resolve existing owners with
+`python3 tools/task_dispatch.py TASK-ID`; use
+`python3 tools/gr_assembly.py puzzle prospective-native-selection`
+for the existing physical bridge. Reading these maps does not create a
+new execution or discharge a premise.
 
 ---
 

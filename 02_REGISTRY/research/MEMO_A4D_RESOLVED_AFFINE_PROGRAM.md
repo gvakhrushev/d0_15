@@ -7,6 +7,58 @@
 `dff7498b9071ad4d9fd1580b80829d91eb55f534`. Current research inputs retain their
 exact source pins in the [assembly](../gr_assembly/README.md#current-scientific-gate).
 
+## Global composition checkpoint: actual records, geometry, price and field image
+
+The [global result composition](A4D_GLOBAL_RESULT_COMPOSITION_2026_10_20.md)
+is now the canonical application map for the results below. It consumes
+the existing kernel/transfer, CAR, original Julia, all40/midpoint,
+compiler/Book, retained-clock, matched-reference, prospective and
+condensed/Golden-response owners in one argument. Its fifteen-family
+table assigns a consumer to each major result and retains all eighteen
+preserved leads with their actual roles.
+
+The new quantitative application reconstructs the primary metric and
+curvature from complete native future probabilities: five sites for the
+quadratic/cubic sector, nine for the whole owned common-harmonic polynomial
+space plus the independent radial source. Original Julia odds separately
+reconstruct the soldered density and all its jets through subdivision;
+this consumes the parallel original owner's all-jet result. Actual
+compiler occupation and paid repeat costs yield exact remaining source
+differences. The fixed-coordinate-pairing writer theorem then converts
+an observed profile difference into a distance from that writer's field
+image, with an explicit required moving-pairing escape.
+
+The current physical application is an admitted joint field-and-price
+step or independently derived native stationary law, joined to the
+same-prefix two-ending Julia/prospective valuation test. The latter
+requires equal full continuation partition weights and actual absolute
+Book anchoring. The complete Info/work source must satisfy the computed
+occupation/refinement differences before descending to the observable
+geometry. The prospective field-and-price graph is one sufficient
+realization route; it is not asserted necessary for every stationary-law
+derivation. The existing full-field minimum exclusion is retained.
+
+After that same source is physically selected and its internal equations
+solved, the original exact nonvacuum family and conditional universal
+Golden-response theorem consume it. No native admission, source descent,
+physical Ward/scale or GR completion is inferred merely from the new
+readout or thirteen finite checks. Continue #334; no new task or claim
+state is introduced. This checkpoint updates the next application of
+the historical sections below without relabelling their proof scope.
+
+The [parallel four-copy application](A4D_NATIVE_FOUR_COPY_TO_CURVATURE_APPLICATION_2026_10_20.md)
+adds a concrete positive substitution after that input freeze. The new
+exact LEFT-only response supplies the material likelihood of the
+operational inverse on its admitted finite geometry-code/reference
+interface, with a common paid logical skeleton and readiness. Its
+`1/(64 Lambda_h)` gain remains in the precision norm, and known pulse
+calibration or the explicit recorded preparation orbit remains required.
+The same companion incorporates the newer conditional paired-price,
+orientation, three-history source-span and actual HJR preparation results.
+These updates refine the current native application; they do not replace
+the frozen proofs, confer a continuous field writer on discrete codes,
+or identify a matched marginal with the entire original instrument.
+
 ## FIRST physical case — exact time-dependent NONVACUUM GR on each mesh
 
 This is now the **first positive application to read and consume** after

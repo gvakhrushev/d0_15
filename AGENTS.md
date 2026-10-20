@@ -92,6 +92,35 @@ reachable field-and-price graph or a native stationary/constraint law;
 another source-neutral completion or a restriction chosen to enforce
 Einstein does not supply it. This is scoped research, not physical closure.
 
+## Use the global composition before selecting the next native application
+
+The [global result composition](02_REGISTRY/research/A4D_GLOBAL_RESULT_COMPOSITION_2026_10_20.md)
+now gives the shared parent argument and consumers for fifteen result
+families and all eighteen preserved leads. Use its quantitative five/nine-site
+operational geometry inverse, original Julia all-jet density readout,
+complete compiler/clock price and conditional field-writer image together.
+Keep observation, ambient geometric differentiation and admitted field
+writing distinct. Preserve the actual error norm and full ambient covector;
+neutrality only along the primary family is not whole-source neutrality.
+
+The next application is the actual joint solder/pairing/link step and its
+full price, or an independently derived native stationary/constraint law,
+together with the same-prefix two-ending Julia/prospective valuation test.
+The latter needs equal continuation partition weights, not only equal
+minimum continuation prices. Test the actual complete valuation against
+the displayed compiler-occupation and repeat-cost source differences.
+Do not replace those maps by a fresh geometric root search or normalize
+away the absolute Book anchor. Reuse the existing #334 owner and shared
+CONTROL intake; the packet is scoped research, not physical GR closure.
+
+## MANDATORY TRIZ / Golden-Beatty native source checkpoint (20 October 2026)
+
+**Every agent touching physical GR selection, Book03 full Cost−Info, native residual `R`, prospective futures, phi/Beatty, references or full128 first-source MUST READ** the [shared TRIZ/phi exact integration handoff](02_REGISTRY/research/D0_TRIZ_PHI_AGENT_HANDOFF_2026_10_20.md) **after the primary positive GR case**. The bounded science proofs and exact checker live in **existing Draft PR [#334](https://github.com/gvakhrushev/d0_15/pull/334)**; this entry is routing, not a new theorem or task.
+
+The ORIGINAL feedback `J=-128 Tr log(I-z+zB^m)` has an exact positive loop-void/Poisson **mathematical** representation. Comparing TWO co-transported equally priced references algebraically cancels flat UV pressure while retaining the mixed coframe–Lorentz source. No physical mandatory paired programme, Info/work payment, or Einstein-source coefficient is thereby selected; do **not** add a hand-fitted negative counterterm or promote `GR_closed`.
+
+**Strict phi proposal checkpoint:** the owned residual `R=sum_omega xi_omega K_omega†K_omega` is an OPERATOR on an ACTUAL complete paid tape. The existing K913 prospective law gives no canonical Beatty numbering of alternative histories, and the neutral fixed-horizon `p^n` cancels. The one currently fully priced two-round full128 port-only control gives `xi=b1*b2` and **strictly positive** flat residual; a positive uncentered Beatty mean **cannot** equal a matched cocycle that is zero on the diagonal. Thus the literal proposed equation is FAIL/UNDEFINED, not an accepted φ-selection proof. The corrected scoped hypothesis is a **paired relative residual over canonically derived, actually paid return TIMES**, with all source jets and original stopping/clock/Info retained. Do not infer minimal discrepancy at every finite N solely from φ's golden continued fraction. No extra census, task or new selector before the same-programme finite test.
+
 ## 1. Never ask which project when a D0 task ID is provided
 
 If the user gives a task ID such as `EXP-...`, `WRK-...`, or `CTRL-...`,
