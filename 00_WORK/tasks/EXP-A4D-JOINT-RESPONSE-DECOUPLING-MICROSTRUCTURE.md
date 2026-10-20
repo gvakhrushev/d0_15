@@ -13,6 +13,37 @@ Assembly: `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`
 
 ## Strategic synthesis continuation — 2026-10-17
 
+### 20 October: complete flag first source and the strict native minimum gate
+
+Input 07f2f2b15b7050a612d0075aa73db8dc46087a95; continue the same
+Draft334/native-programme-v1. Phase: native realization. Consume the
+specified compact Golden-Julia stopped execution and exact whole-HJR
+fixed-collar root, retaining their distinct carriers and prices. The
+missing parent premise is the complete retained flag coherence FIRST
+source after source normalization; prove it directly from the amplitude
+matrix including rank births, actual prefix/preparation jets and real
+attempt clock. Independently test the stronger prospective-minimum use
+of the fixed-collar stationary root on its actual permitted ten-variable
+chart and full Riesz preparation. Use its existing rigorous Hessian
+instead of repeating the spectral computation.
+Consume the concurrent 5b5c600 bulk extension by the exact 10-to-64
+coordinate injection, retaining the fixed-L8 scope and the separate
+bounded-C1_h premise of its uniform preparation theorem.
+
+Write surface: A4D_COMPLETE_FLAG_SOURCE_AND_NATIVE_MINIMUM_GATE_2026_10_20.md,
+sources/d0_native_flag_source_minimum_2026-10-20/, and consuming appendices
+in the existing primary/strategy. Root integrates; bounded assistants
+supply analytic proof, exact rational check and independent review.
+Smallest decisive checks: original all-leaf Golden code/Gram source,
+actual CAR16 rank-birth control, one pinned rational negative Hessian
+direction with its literal coframe/incident-link map. The source estimate
+is C1; no smooth ideal or C2 substitution follows. Do not drop the nonzero
+code/work/clock value when comparing different programmes. The HJR test
+restricts one strict-minimum use, not its correct stationary theorem.
+Actual complete Book price/admission, final readout, full128, remaining
+work/preparation/clock, refinement and original raw216 stay open.
+
+
 ### 19 October: two-history phase integrability on the same CAR16 carrier
 
 Input `a95927fac939230a8e9d3e124c420fb2e3929a22`; resume existing Draft334,

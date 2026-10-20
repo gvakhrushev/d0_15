@@ -6126,3 +6126,32 @@ an exact2epsilon/h hostilecontrol. Movingobserver fields enter through
 uniform raw-to-whitened C1/log-link maps. This resolves the preparation
 radius caveat, not uniform jointcurved IFT, physicalsource selection or
 raw216; smooth/widecollar control stillhas to be proved for actual roots.
+
+### 7.108. Complete flag FIRST source without a floor; an explicit test for strict native minimization
+
+The [complete-source/minimum increment](A4D_COMPLETE_FLAG_SOURCE_AND_NATIVE_MINIMUM_GATE_2026_10_20.md)
+removes one actual missing quantitative premise from the compact retained
+execution: its WHOLE flag archive has C1 coherent relative-code source
+O(B epsilon log(255/epsilon)), including all unfinished histories, moving
+supplied preparation, and rank births. The existing exponentially small
+cap probability makes this source negligible after the stated polynomial
+refinement normalization. This is stronger than the preceding channel
+error estimate, which by itself did not control a singular entropy
+source. The initial physical Info/price and other charges stay explicit.
+
+An actual CAR16 rank-birth control rules out an automatic smooth C2 or
+squared-ideal conclusion. The price value of the retained code/clock is
+still charged in comparisons across programmes. Separately, the new
+fixed-collar whole-HJR branch has an explicitly allowed nongauge negative
+second variation below -0.0741404 at the base, continuing to small curved
+roots. The same path embeds exactly in the new 64-variable bulk chart
+through indices (0,1,2,3,4,5,6,7,8,63), with the same negative interval.
+Both conclusions are at fixed L8; this slice-localized direction does not
+supply a uniformly bounded C1_h refinement tangent. It is not a strict
+minimum on either chart. A genuine full-price
+completion must satisfy the stated lower bound on its correction or
+prove the path absent from native admission; field redefinition alone
+cannot repair the inertia. These two statements concern distinct
+instruments until their physical map is proved. Consume the positive
+flag estimate and the concrete collar selection test instead of assuming
+away either hidden memory source or minimization. Physical GR/raw216 open.

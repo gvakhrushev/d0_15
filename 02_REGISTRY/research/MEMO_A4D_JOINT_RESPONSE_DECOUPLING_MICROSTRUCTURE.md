@@ -8927,3 +8927,55 @@ thin collar jumps of fixedepsilon have C1 sizeepsilon/h. A smooth physical
 collar and an actual uniformly controlled joint source branch remain to
 be constructed. Native price/preparation/clock/current and Einstein source
 selection remainopen.
+
+## 20 October: complete coherent flag source and the precise native minimum test
+
+The [new source/minimum packet](A4D_COMPLETE_FLAG_SOURCE_AND_NATIVE_MINIMUM_GATE_2026_10_20.md)
+consumes the 07f2f2b native checkpoint and leaves both candidates on their
+actual carriers. For the specified compact finite-cap Julia execution,
+the complete flag Gram has rank at most256 independently of the number
+of histories and oldRIGHT size. All successful and failed chronological
+leaves retain their exact original weights p^(T+K), paid code T+K and
+attempt clock. A full-amplitude proof, with actual moving preparation and
+observer-fiber jet budgets, gives coherent flag entropy FIRST source
+O(B epsilon log(255/epsilon)) without a probability/spectral floor. The
+existing cap epsilon<=exp(-m/4), m~h^-2, now supplies the previously
+missing quantitative coherent-flag source bound after h^-2 normalization
+and the stated conservative raw summed norm. This is a proved component
+estimate if that relative-code component is in the selected price; full
+Book03 identification and all other native charges are not assumed.
+
+The SAME CAR16 J23 Choi example has a rank birth lambda_-~c theta^2:
+its entropy is C1 but not C2. Therefore this result cannot silently supply
+the smooth squared-ideal hypothesis of the previous exact coframe dressing.
+The nonzero code value remains when prospective alternatives change their
+programme or cap; zero field derivative at fixed clock does not mean free
+execution.
+
+Separately, the actual whole-HJR fixed-collar Hessian A/8 has the allowed
+nongauge direction v=(-1,-2,-1,0,-2,-1,0,0,0,1) with exact second variation
+in [-2372501681/32000000000,-2372493199/32000000000]. The path varies the
+interior coframe and BOTH incident time links, retaining all exterior data
+and the full reference128 Riesz section. Thus the exact stationary branch
+is a saddle on that declared family, also at sufficiently small nonzero
+curvature. To use it for strict prospective minimization, the actual
+native constraints or the actual missing full-price second source must
+resolve this named direction. An invertible source dressing preserves its
+negative inertia. This changes that proposed substitution, not the
+existing stationary-existence theorem or every possible native law.
+
+The subsequent seven-slice bulk extension retains exactly this path:
+the old incoming time link maps to index63 on the same periodic L8 grid.
+The 10-to-64 coordinate injection preserves the complete action, full
+Riesz section and normalization, hence the same negative interval and
+its continuation to small curved bulk roots. This is a fixed-L8 result;
+the slice-localized coframe tangent has C1_h size of order 1/h and does
+not contradict the new uniform preparation theorem on bounded C1_h balls.
+
+The remaining physical calculation is the same-programme full source and
+admission map, including final measurement, preparation/controller/work
+and clock. Compact flags are now quantitatively controlled; the full128
+and noncompact source cannot inherit that control without their own map.
+No new price, fitted correction, accepted goal or original raw216 terminal
+is introduced. Independent analytical review and two bounded checkers are
+pinned in the packet. GR_closed=false.

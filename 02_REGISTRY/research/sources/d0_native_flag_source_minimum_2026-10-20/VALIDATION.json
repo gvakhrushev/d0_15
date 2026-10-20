@@ -1,0 +1,87 @@
+{
+  "date": "2026-10-20",
+  "execution": "https://github.com/gvakhrushev/d0_15/pull/334",
+  "input_head": "07f2f2b15b7050a612d0075aa73db8dc46087a95",
+  "phase": "native realization",
+  "status": "SUPPORTING_SOURCE_THEOREM_AND_SCOPED_MINIMUM_GATE",
+  "environment": {
+    "python": "3.12.14",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0"
+  },
+  "inputs_sha256": {
+    "02_REGISTRY/research/A4D_RELATIONAL_COMPACT_EXECUTION_AND_EXACT_SOURCE_SYNTHESIS_2026_10_20.md": "e9aa39f1b4fa4660b0cd149a728e455ee2318b537745f96dc8a5f957df815e67",
+    "02_REGISTRY/research/sources/d0_relational_coherent_synthesis_2026-10-20/coherent_execution.md": "14f9b909779146eeff099029039d15137eea3761e9972b31ef63cfeec9ab8287",
+    "02_REGISTRY/research/A4D_COMPLETE_HISTORY_PETZ_SCORE_CODE_COHERENCE_SOURCE_GATE_2026_10_19.md": "2f8377d7907cb693fec7452014fd42f2a71991c104a09b44f5cd1a528cfab6f6",
+    "02_REGISTRY/research/sources/d0_native_flag_source_minimum_2026-10-20/inputs/fixed_collar_root_07f2.md": "60149e109412b7716384aca6e64091b8a67f3374c4dfa02b170df1182e58dd1d",
+    "02_REGISTRY/research/sources/d0_native_flag_source_minimum_2026-10-20/inputs/collar_hessian_07f2.json": "a38386a86af4be283631d42a890caf66c035c12a4f9d421037160550d36989f4",
+    "02_REGISTRY/research/sources/d0_native_flag_source_minimum_2026-10-20/inputs/wide_collar_root_5b5.md": "9d90121a775dac6bd1df49cea04d398b248ca118fcf871b00e166000dd5db735",
+    "02_REGISTRY/research/sources/d0_native_flag_source_minimum_2026-10-20/inputs/wide_collar_5b5.json": "dee20425e01aeba2f090a55e2b1d221d57160a667eff9240a1c58368cd87e305",
+    "02_REGISTRY/research/sources/d0_native_flag_source_minimum_2026-10-20/inputs/wide_collar_checker_5b5.txt": "1956aff0f6227a72c4afe3224db898b846581268794d41eab1170b581a72bf28"
+  },
+  "packet_sha256": {
+    "02_REGISTRY/research/A4D_COMPLETE_FLAG_SOURCE_AND_NATIVE_MINIMUM_GATE_2026_10_20.md": "424503e2694b49ac2f500afe86ddb12cf69fee1956c07fd3a3d365555148af67",
+    "02_REGISTRY/research/sources/d0_native_flag_source_minimum_2026-10-20/flag_source.md": "1dabc2596c64e4e3e789fc48a6a63c1a18657d17d44e4bab3f826caaa6d51b61",
+    "02_REGISTRY/research/sources/d0_native_flag_source_minimum_2026-10-20/collar_minimum.md": "3101eaef72eb741af8006171f32c26210ff2fc887a9c135d7b0722d7554fc23f",
+    "02_REGISTRY/research/sources/d0_native_flag_source_minimum_2026-10-20/check_flag_source.py": "ad7bf0a5984fa4632d1c2e00bc7a7cdb2817b8c4c6d8eccb3f437302a3f4827f",
+    "02_REGISTRY/research/sources/d0_native_flag_source_minimum_2026-10-20/check_collar_minimum.py": "ab26adddc3ce261a77644636c61bdc9dc9a9b3ca7bd88562dcc9d087bb933388",
+    "02_REGISTRY/research/sources/d0_native_flag_source_minimum_2026-10-20/FLAG_SOURCE_OUTPUT.txt": "430922ab58829a595064d94b03e588601b5379c16e6b9b330a7453fdaf0740d0",
+    "02_REGISTRY/research/sources/d0_native_flag_source_minimum_2026-10-20/COLLAR_MINIMUM.json": "dc5116220505fb991b50eab4c59a679c7271d8e15a172289af84680e9d775a60",
+    "02_REGISTRY/research/sources/d0_native_flag_source_minimum_2026-10-20/inputs/SOURCE_PINS.json": "196fa7bc5920084c1cbd88eb122b84e800751c8d9d7851009e8a31227357b59f"
+  },
+  "checks": [
+    {
+      "command": "PYTHONPATH=/tmp/d0_native_flag_deps python3 -W error 02_REGISTRY/research/sources/d0_native_flag_source_minimum_2026-10-20/check_flag_source.py",
+      "result": "PASS",
+      "output": "02_REGISTRY/research/sources/d0_native_flag_source_minimum_2026-10-20/FLAG_SOURCE_OUTPUT.txt",
+      "method": "Exact Q(sqrt(5)) stopped-tree/code and full CAR16 charges; 90-digit analytic entropy-source regression; actual CAR16 rank-birth hostile control. The universal derivative statement is proved analytically in flag_source.md.",
+      "independent_replay": "curved_joint_bridge, exact frozen output matched"
+    },
+    {
+      "command": "python3 02_REGISTRY/research/sources/d0_native_flag_source_minimum_2026-10-20/check_collar_minimum.py --root .",
+      "result": "PASS",
+      "output": "02_REGISTRY/research/sources/d0_native_flag_source_minimum_2026-10-20/COLLAR_MINIMUM.json",
+      "method": "Standard-library exact Fraction arithmetic on immutable07f2 proof/Hessian snapshots; literal nongauge/incident-link tangent; exact10-to-64 bulk embedding through all100 period-eight Fourier-kernel index triples using separate5b5 source pins. No spectral computation repeated.",
+      "independent_replay": "Original rational enclosure independently replayed by root before the embedding extension; updated bounded checker passes under its author. Final integration review of the extension remains separate."
+    }
+  ],
+  "parent_substitution": "Quantitative complete coherent-FLAG first-source bound for the specified compact stopped execution and declared relative-code component; original10-coordinate and later64-coordinate L8 conditional HJR stationary branches fail strict local minimization on the same respective admitted families.",
+  "retained_assumptions": [
+    "Native admission and compulsory complete Book03 price are not supplied.",
+    "Fixed m,N in field derivatives; code/clock value remains paid across programmes.",
+    "Actual prefix/purification/observer-fiber first-jet budgets and declared source norm.",
+    "Distinct compact flag and full-Lorentz HJR carriers require a proved physical map.",
+    "C1 source theorem does not give finite-h C2 or smooth squared-ideal membership.",
+    "Final readout, full128, noncompact source, preparation/controller/work/clock and uniform GR recovery remain separate.",
+    "Bulk embedding is at fixed L8; localized coframe C1_h and link-log K tangents scale as1/h, so no uniform refinement instability follows."
+  ],
+  "scientific_promotion": false,
+  "GR_closed": false,
+  "independent_review": {
+    "path": "02_REGISTRY/research/sources/d0_native_flag_source_minimum_2026-10-20/REVIEW.md",
+    "sha256": "56fe3044d7f6ed0096392218553b1ddc1abe682121c8223640b08d6420de4e11",
+    "scope": "Prior independently reviewed flag theorem/combined consumers and original root replay remain pinned; appended bulk reconciliation is authored evidence, with no false claim of independent self-review."
+  },
+  "input_snapshots": "02_REGISTRY/research/sources/d0_native_flag_source_minimum_2026-10-20/inputs/SOURCE_PINS.json",
+  "later_source_update": "Separate5b5c60047f1cfe518d4a8b42d9f71c6db033779c snapshots establish the exact finite10-to-64 chart embedding. Original07f2 theorem/Hessian snapshots and negative interval remain unchanged. Uniform-preparation section11 is not consumed as a uniform joint or instability theorem.",
+  "bulk_extension": {
+    "source_head": "5b5c60047f1cfe518d4a8b42d9f71c6db033779c",
+    "frozen_by": "curved_joint_bridge",
+    "status": "AUTHOR_EXACT_EMBEDDING_CHECK_PASS",
+    "spectral_replay": false,
+    "checked_kernel_entries": 100,
+    "old_to_wide_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      63
+    ],
+    "fixed_L": 8
+  }
+}
