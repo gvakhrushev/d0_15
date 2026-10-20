@@ -93,6 +93,37 @@ This scalar factor carries no closed-loop curvature. Nevertheless W changes the 
 
 The apparent raw pure-trace torsion from nonconstant Book W is a coframe representation effect; it is not a new dynamical torsion mode. Claiming raw T=0 despite moving W would be the WRONG physical equation for this dressed metric.
 
+### 4.1. NEW DEEPER LINK: original Book endpoint logarithmic jet is an EXACT PROJECTIVE connection with ZERO added curvature
+
+The native endpoint weight sqrt(W_x/W_y) previously appeared only as a coframe-dressing factor. The common original Lorentz connection omega and the TWO tetrad readouts e and ehat=e^sigma e (sigma=(1/2)ln W) induce TWO affine coordinate connections by the actual tetrad postulate:
+
+    partial_mu e^a_nu + omega_mu^a_b e^b_nu
+       = Gamma_raw^rho_(mu nu) e^a_rho,
+
+and the same equation with hats. Differentiating ehat=e^sigma e gives the exact ALL-FIELD relation
+
+    Gamma_raw^rho_(mu nu)
+       = Gamma_LC(ghat)^rho_(mu nu)
+           − delta^rho_nu partial_mu sigma.
+
+This is a pure PROJECTIVE trace shift by the EXACT one-form xi=d sigma. Its full curvature is UNCHANGED, because the generic projective curvature correction is the central tensor
+
+    Delta R^rho_(sigma mu nu)
+       = −delta^rho_sigma [partial_mu xi_nu−partial_nu xi_mu]
+       = 0   for xi=d sigma.
+
+But its raw torsion is NOT zero:
+
+    T_raw^rho_(mu nu)
+       = delta^rho_mu partial_nu sigma
+         −delta^rho_nu partial_mu sigma,
+
+the coordinate version of T_raw^a=−d sigma∧e^a. Thus the weighted original endpoint edge jet 1/2(d ln W_x−d ln W_y) is precisely the finite-logarithmic ancestor of a FLAT projective one-form. It does not manufacture a new geometric field strength, while W still changes the actual metric and the apparent raw torsion.
+
+**Independent direct 256-component negative-control test.** The new checker computes BOTH the actual dressed Levi-Civita and raw-tetrad affine connections, all spatial derivatives and all 4^4 R^rho_(sigma mu nu) curvature entries for W(x)=1+x² at x=0,.35,1,2. Every original/dressed curvature entry agrees EXACTLY in the evaluated arithmetic (max deviation0 at all four points), and the actual raw torsion agrees with the predicted projective trace torsion with max deviation0. This is stronger than observing only scalar curvature equivalence. The equality is analytically general for any positive C² W, not inferred from numerical values.
+
+**No extra projective-gauge axiom is being imposed on fundamental D0.** The shift follows from the same already-owned ehat=sqrt(W)e and SAME omega through the tetrad postulate. It is NOT evidence that the original finite 40-Euler action has independently accepted full metric-affine projective symmetry, nor that Spin-CAR matter sees no difference between raw and dressed connections. The physically correct operational coframe identification and paid Book Cost remain distinct.
+
 ## 5. Exact scalar-tensor identity: omega_Brans–Dicke = −3/2, not a fitted fifth force
 
 Once the real independent connection has been eliminated, beta drops out and the declared smooth geometric sector becomes Einstein–Hilbert for THE dressed operational metric ghat=Wg:
