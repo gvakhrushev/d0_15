@@ -247,6 +247,66 @@ physical price, prove an Einstein/LC/Palatini source, establish an
 interior + exterior global root, or discharge #216/#232, `GR`, or
 `raw_response_terminal`.
 
+### 4.1. Exact native Golden flag-only control: it CANNOT screen (2)
+
+Consume the already-owned complete
+[Golden flag code/source result](../../A4D_COMPLETE_FLAG_SOURCE_AND_NATIVE_MINIMUM_GATE_2026_10_20.md),
+§§2–4. In the **distinct specified compact** original Golden-p
+success-count instrument, each good attempt has probability
+`g=p²` and code length 2, each bad attempt probability `p`
+and code length 1, since `p²+p=1`.
+For any fixed finite fully recorded terminating/stopped flag tree,
+including every unfinished cap leaf,
+\[
+w_\gamma=p^{T_\gamma+K_\gamma}
+=\varphi^{-\ell_\gamma},
+\qquad \ell_\gamma=T_\gamma+K_\gamma,\qquad
+\sum_\gamma w_\gamma=1.
+\]
+Therefore the **literal classical complete-code** source has the
+exact identity
+\[
+\mathbb E_w\ell-H_\varphi(w)=0
+\quad\text{for every fixed stopped-tree shape}.
+\tag{G1}
+\]
+This is just the original Golden code, not an asserted definition of
+the compulsory native whole price.
+
+More strongly, if all ordered compact letters are the IDENTITY
+at the actual flat links `U=I`, their complete chronological isometry
+acts on an arbitrarily moving supplied preparation `\psi(s)` as
+\[
+|\Psi(s)\rangle
+=\left(\sum_\gamma\sqrt{w_\gamma}|\gamma\rangle\right)
+ \otimes|\psi(s)\rangle.
+\]
+Thus the **complete FLAG marginal is exactly pure**, independent of
+the coframe s, despite retaining all BAD/unfinished branches:
+\[
+\rho_F(s)=|\phi_w\rangle\langle\phi_w|,\qquad
+S(\rho_F)=0,\qquad
+\partial_s S(\rho_F)=0.
+\tag{G2}
+\]
+Both the classical code Cost−Info in (G1) and the specified coherent
+flag relative-code excess `H_phi(w)-S(rho_F)/log(phi)` have
+**zero coframe first source** on this class. A field-dependent
+preparation cost, moving structural SELECT, observer/reference/work
+action, a changing active gate or a newly admitted controller can
+produce a nonzero source, but NONE is inside the *flag-only* statement.
+
+Consequently a proposed physical completion consisting **only** of
+this fair original Golden flag code/source on the same flat family
+cannot cancel the uniform `D_s S_HJR>=1/2` of (2).
+This is a same-field **conditional class-comparison control**, not a
+declaration that the Golden instrument is actually the complete
+physically selected HJR programme. If the genuine native source uses
+coframe-sensitive translation/spectral states or an independently
+priced preparation, its source must be explicitly computed instead.
+The original Golden two-density six-phase atlas retains full Lorentz
+observability on NONTRIVIAL plaquettes; it is not rejected by (G2).
+
 ## 5. A well-defined continuum scalar limit (not a GR limit)
 
 For completeness, at fixed `u=1/16>0` the centered Fourier weights
