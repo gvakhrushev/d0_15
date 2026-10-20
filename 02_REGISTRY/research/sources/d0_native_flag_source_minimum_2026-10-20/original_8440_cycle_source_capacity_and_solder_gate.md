@@ -126,3 +126,51 @@ No new action, arbitrary coframe decoder, fitted coefficient or geometrical cens
 
 Bounded exact standard-library replay:
 \`sources/d0_native_flag_source_minimum_2026-10-20/check_8440_cycle_score_capacity.py\`.
+
+
+## 7. Exact no-go for **scalarizing before composition**: the proper Lorentz group has no positive characters
+
+This is the precise algebraic link to Book03's primitive multiplicative-weight rule, and stronger than one rational serial marked-event counterexample. Let
+\[
+w:SO^+(1,3)\longrightarrow\mathbb R_{>0}
+\]
+be any continuous scalar function of the *end-to-end Lorentz holonomy alone*, such that
+\[
+w(UV)=w(U)w(V)
+\]
+for all \(U,V\) in a group neighborhood of the identity, with its local products. Then \(w(I)=1\). Define \(s(U)=-\log_\varphi w(U)\). It obeys \(s(UV)=s(U)+s(V)\) wherever the local composition law is asserted. Smoothness at the identity follows from a \(C^1\) weight; for merely continuous homomorphisms, standard Lie-group continuity gives smoothness. The derivative \(\ell=Ds_I\) is a Lie-algebra homomorphism to the abelian real Lie algebra, hence
+\[
+\ell([X,Y])=0.
+\]
+Because the original real \(\mathfrak{so}(1,3)\) is **perfect**, \(\ell=0\). Every one-parameter subgroup consequently has constant scalar weight one. Products of these exponentials generate the connected \(SO^+(1,3)\). Therefore
+\[
+\boxed{\quad w(U)\equiv1,\qquad s(U)\equiv0.\quad}\tag{8}
+\]
+If the same multiplicative property is postulated for every fixed coframe/observer \(e\), even with an arbitrary smooth \(e\)-dependence \(w_e(U)\), apply the theorem at each fixed \(e\): \(w_e(U)\equiv1\). This excludes **every** nontrivial first, mixed or higher field source from such a scalar holonomy-character law.
+
+**Do not overextend:** Book03's primitive scalar weight \(p^{\mathrm{Cost}-\mathrm{Info}}\) can legitimately be multiplicative in **executed words** while being *not a function of the final SO holonomy alone*. For instance a nontrivial word may have holonomy identity but still requires recorded steps and nonzero clock/code price. The theorem does NOT trivialize those native path weights. Likewise a real matrix representation \(U\mapsto\Lambda(U)\) is nonabelian and nontrivial; its **scalar measured** probability \(m(U)\) need not be multiplicative, and in fact the existing original CAR16 owner already certifies \(m(R^2)\ne m(R)^2/m(I)\).
+
+The theorem therefore proves a mandatory **ordering of operations** for a source faithful to full Book03:
+\[
+\text{paid primitive word and full internal record}
+\ \xrightarrow{\text{noncommutative composition}}\ 
+\text{retained output/reference}
+\ \xrightarrow{\text{soldered/observer comparison}}\ 
+\text{scalar effects and complete eventual Cost-Info}.
+\]
+A purported derivation that first replaces every original word by its final proper-Lorentz matrix and then assigns to that matrix a multiplicative positive scalar cost cannot produce physical curvature. Changing from Lorentz proper links to a wider semisimple connected group does not evade the obstruction; one must retain native word data, operator-valued structure, a noncharacter score, or explicitly derived field-sensitive endpoints.
+
+### Consuming the **already owned**, original noncharacter signed-source theorem
+
+The existing #334 \`A4D_OBSERVER_COMPLETE_CAR16_JULIA_CHOI_STAR_DENSITY_WELD_2026_10_20.md\` §9 is a constructive *mathematical* response to this obstacle, not a physical selection theorem. On the actual original \(SO^+(1,3)\) plaquette \(P\), its complete positive Golden CAR16 Julia marked probability
+\[
+m(P)=p^2\det(I+P)^2/256
+\]
+is **not** a multiplicative scalar character. Instead its six signed directional score derivatives satisfy the exact Cayley reconstruction
+\[
+D_X\log m(e^{sX}P)|_{s=0}=
+\operatorname{Tr}\!\bigl[X (P-I)(P+I)^{-1}\bigr].
+\]
+The same owner's eqs (9.2)–(9.4) reconstruct all six components of \(C(P)=(P-I)(P+I)^{-1}\), then the *literal finite* curvature \(2C(I-C^2)^{-1}\), and its coframe-dual \(\star\)-Palatini cell density from the covariant inserted source. The second owner’s already constructed six-phase Golden GOOD+BAD atlas has a proven nonsingular 6×6 first response. These are sufficient mathematical readout mechanisms; **no new detector or Bloch census is needed**. However the original owner explicitly proves the serial marked scalar probability is not the primitive Book path weight and that neither instrument's complete physical preparation/work/clock/Info is selected by G0. All of these original admission, paid history and observer Ward questions remain.
+
+**True parent closure substitution:** the necessary native source is NOT one ad hoc \(\log m(P)\). It is a compulsory **full serial priced programme** whose order, retained reference, coframe insertion, and complete source derivatives implement the already checked \(\widetilde X_B(P)\)-signed response on the **same** connected curved family, before the existing nonlinear-refinement/positive_GR theorem may be consumed. The no-character theorem explains exactly why simply declaring the measured marked probability a multiplicative original history Cost cannot discharge that bridge.
