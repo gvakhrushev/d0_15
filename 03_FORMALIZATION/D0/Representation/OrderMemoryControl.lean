@@ -351,4 +351,91 @@ theorem nativeQ8RecordedProgram_separated_by_future :
   exact nativeQ8ProgramPort_grouped_ne_ordered hh
 
 
+/-! ## Direct word interpreter and exact finite-shot Popperian boundary
+
+The following fold EXECUTES the existing native Q8 forward-only gates
+in their original chronological order.  This strengthens merely
+writing a matrix expression chosen by the programme label: the
+actual gate-word itself produces the relative sign with no extra
+continuous action.  A truthful full observation, however, is Born-
+probabilistic. One bright event refutes the central +1 sign (whose
+bright probability is EXACT zero), but the central -1 sign has
+strictly positive all-dark probability for EVERY finite independent
+repeat count.  This is a one-sided Popperian falsifier, not a
+perfect finite-shot truth oracle. Physical independent reset/replay
+and its true full Book clock/work are still unselected in G0.
+-/
+
+/-- Run an actual finite chronological list of the two ALREADY OWNED
+forward native Q8 gate matrices. -/
+def nativeQ8ChronologicalWord (word : List Bool) : M8Q :=
+  word.foldl (fun U local =>
+    (if local then localIQ else commonJQ) * U) 1
+
+/-- The actual ordered SOURCE LIST itself evaluates to the original
+relative central sign, with no free sign matrix used as a gate. -/
+theorem nativeQ8OrderedWordEvaluates :
+    nativeQ8ChronologicalWord originalQ8OrderWord = relativeSignQ := by
+  native_decide
+
+theorem nativeQ8GroupedWordEvaluates :
+    nativeQ8ChronologicalWord originalQ8IdentityWord = 1 := by
+  native_decide
+
+/-- Zero false bright probability for original +1. -/
+theorem nativeQ8PositiveCenterBrightImpossible :
+    nativeQ8ProgramPort false = 0 :=
+  nativeQ8ProgramPort_grouped
+
+/-- Actual original negative Q8 center still sometimes yields dark:
+the exact probability is primitive p^6 > 0. -/
+theorem nativeQ8NegativeCenterDarkNonzero :
+    0 < D0.primitiveRoot^6 :=
+  pow_pos D0.Representation.GoldenOrderInterferometer.primitive_positive _
+
+/-- The complete original two-port Golden law really has a positive
+dark remainder under the Q8 -1 commutator sign. -/
+theorem nativeQ8NegativeCenterProbabilityComplete :
+    nativeQ8ProgramPort true + D0.primitiveRoot^6 = 1 := by
+  rw [nativeQ8ProgramPort_ordered]
+  have h := D0.Representation.GoldenOrderInterferometer.golden_response_closure
+    D0.primitiveRoot D0.primitive_root_satisfies
+  linarith
+
+/-- N independent freshly reset repetitions of this SAME original
+Golden port experiment: all-dark probability. Independence / ability
+to repeat are explicit execution premises, NOT consequences of one
+finite coherent 16-stage clock. -/
+def nativeQ8IndependentAllDarkProbability (n : ℕ) : ℝ :=
+  D0.primitiveRoot^(6*n)
+
+/-- The probability of NEVER witnessing an original Q8 -1 order
+signal after n independent trials is the exact p^(6n), positive
+for EVERY finite n. Thus finite dark records cannot certify +1 with
+logical certainty. -/
+theorem nativeQ8IndependentAllDarkFormula (n : ℕ) :
+    nativeQ8IndependentAllDarkProbability n =
+      (1 - nativeQ8ProgramPort true)^n := by
+  unfold nativeQ8IndependentAllDarkProbability
+  rw [pow_mul, nativeQ8ProgramPort_ordered]
+  congr 1
+  have h := D0.Representation.GoldenOrderInterferometer.golden_response_closure
+    D0.primitiveRoot D0.primitive_root_satisfies
+  linarith
+
+theorem nativeQ8IndependentAllDarkPositive (n : ℕ) :
+    0 < nativeQ8IndependentAllDarkProbability n := by
+  unfold nativeQ8IndependentAllDarkProbability
+  exact pow_pos D0.Representation.GoldenOrderInterferometer.primitive_positive _
+
+/-- All n-times-dark probability under +1 remains exactly 1 if
+each individual sample has dark probability 1. This is an algebraic
+statement on conditional IID repeated trials, NOT a D0 guaranteed
+source of free independent fresh records. -/
+theorem nativeQ8PositiveCenterAllDarkCertain (n : ℕ) :
+    (1-nativeQ8ProgramPort false)^n = 1 := by
+  rw [nativeQ8ProgramPort_grouped]
+  simp
+
+
 end D0.Representation.OrderMemoryControl
