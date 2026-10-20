@@ -156,33 +156,73 @@ const constantHarmonic=flatFaceSources.map(x=>
   x.sixLorentzFaceSource);
 assert(constantHarmonic.some(x=>x.some(y=>y!==0)),
   "flat six-star cannot distinguish independent scene chord");
-const roleLinks=(site,axis)=>site*D+axis,
-      shift=(site,axis)=>site^(1<<axis); // only for L2 test below
-// For general L4 coordinates use the actual positive periodic shift.
-function shiftL4(site,axis){
+// Literal periodic ORIGINAL based plaquette coboundary:
+// (d1 A)_(rs)(x) = A_r(x)+A_s(x+r)-A_r(x+s)-A_s(x).
+// Its exact adjoint is obtained by varying ONE SHARED Role link.
+function shiftL4(site,axis,delta=1){
  let c=[],v=site;
  for(let j=0;j<4;j++){c.push(v%L);v=Math.floor(v/L);}
- c[axis]=(c[axis]+1)%L;let ans=0,w=1;
- for(let j=0;j<4;j++){ans+=c[j]*w;w*=L;}return ans;
+ c[axis]=(c[axis]+delta+L)%L;
+ return c[0]+L*c[1]+L*L*c[2]+L*L*L*c[3];
 }
+const flatESite=()=>constantHarmonic.map(r=>r.slice());
+function adjointSource(F,x,axis,g,modulus=0){
+ let val=0;
+ for(let j=0;j<pairs.length;j++){
+  const [r,s]=pairs[j],A=site=>F[site][j][g];
+  if(axis===r)val+=A(x)-A(shiftL4(x,s,-1));
+  if(axis===s)val+=A(shiftL4(x,r,-1))-A(x);
+ }
+ return modulus?(val%modulus+modulus)%modulus:val;
+}
+const flatFaceFull=Array.from({length:V},flatESite);
 let linkSourceMax=0,linkSourceNonzero=0,checks=0;
-for(let site=0;site<V;site++)for(let axis=0;axis<4;axis++){
+for(let site=0;site<V;site++)for(let axis=0;axis<4;axis++)
  for(let g=0;g<6;g++){
-  // d1^* is the genuine Role based-face incidence, i.e. original
-  // link variation reaches both x and x-axis-negative based faces.
-  let val=0;
-  for(let f=0;f<pairs.length;f++){
-   const [r,s]=pairs[f],a=constantHarmonic[f][g];
-   if(axis===r){val-=a;val+=a;} // neighboring base cancels
-   if(axis===s){val+=a;val-=a;}
-  }
+  const val=adjointSource(flatFaceFull,site,axis,g);
   linkSourceMax=Math.max(linkSourceMax,Math.abs(val));
   if(val!==0)linkSourceNonzero++;
   checks++;
  }
-}
 assert(linkSourceMax===0&&linkSourceNonzero===0&&checks===24*V,
- "Role link source does not vanish at flat under d1 adjoint");
+ "TRUE Role flat link source from actual adjacent based faces not zero");
+// Independent exact PAIRING test, NOT assuming the adjoint formula
+// by name: random-looking field A and field F over the original L4
+// 4D Role lattice. All 4^4 sites, four links and six faces included.
+const pairingTests=[];
+for(const prime of [1009,2017,65537]){
+ const md=x=>(x%prime+prime)%prime;
+ const A=Array.from({length:V},(_,x)=>
+   Array.from({length:4},(_,r)=>
+     Array.from({length:6},(_,g)=>md(
+       11*x*x+(x+3)*(r+2)*17+g*g*19+7*x*r*g+23))));
+ const F=Array.from({length:V},(_,x)=>
+   Array.from({length:6},(_,j)=>
+     Array.from({length:6},(_,g)=>md(
+       5*x*x*x+13*(x+1)*(j+2)+g*g*31+11*x*j*g+41))));
+ let lhs=0,rhs=0,nonzero=0;
+ for(let x=0;x<V;x++){
+  for(let j=0;j<6;j++){
+   const [r,s]=pairs[j];
+   for(let g=0;g<6;g++){
+    const d1=md(A[x][r][g]+A[shiftL4(x,r)][s][g]
+      -A[shiftL4(x,s)][r][g]-A[x][s][g]);
+    lhs=md(lhs+F[x][j][g]*d1);
+   }
+  }
+  for(let r=0;r<4;r++)for(let g=0;g<6;g++){
+   const val=adjointSource(F,x,r,g,prime);
+   rhs=md(rhs+val*A[x][r][g]);
+   if(val)nonzero++;
+  }
+ }
+ assert(lhs===rhs&&nonzero>1000,
+   "original 4D Role face/link source pairing fails "+prime);
+ pairingTests.push({prime,identicalExactPairing:true,
+   leftSourceContraction:lhs,rightSharedLinkContraction:rhs,
+   nonzeroSharedLinkSourceDirections:nonzero,
+   actualFullRoleLinkEulerCoordinates:24*V});
+}
 const answer={
  status:"PASS_ORIGINAL_ROLE_FACE_BIANCHI_GAUGE_WILSON_SHARP_PULLBACK",
  grid:{L,V,linkComponentsOriginal:4*V,faceComponentsOriginal:6*V,
@@ -194,6 +234,7 @@ const answer={
  flatOriginalSharedRoleLinkStationary:true,
  testedIndependentRoleLinkEulerRows:checks,
  exactRoleLinkEulerMaxResidual:linkSourceMax,
+ exactFull4DRoleLinkFacePairingTests:pairingTests,
  faceLinkSourceImageDimension:6*3*(V-1),
  faceIndependentInputLieDimensions:6*6*V,
  fakeIndependentSceneFaceEulerDirections:6*(3*V+3),
