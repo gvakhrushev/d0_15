@@ -1,7 +1,8 @@
 """Historical source and report bindings for the reviewed #322 checkpoint.
 
-The source is restricted to eleven named entrypoints; the report to two of
-those entries. Neither binding relaxes checks or removes selected consumers.
+The source is restricted to eleven named entrypoints; the report to three
+entries, one of which receives only the report. Neither binding relaxes checks
+or removes selected consumers.
 """
 from __future__ import annotations
 
@@ -59,11 +60,20 @@ REPORT_BLOB = "dc59c6cdcdd3d2d1d1e4460ec74e456918359abc"
 REPORT_SHA256 = "b95d5f631fb9c5936fe61964e73c3f373ea3f9deefb0fae037c7a760d6535ff5"
 REPORT_BINDINGS = {
     CERT + name + "_check.py": CERT + name + "_certificate.json"
-    for name in ("a4d_native_history_action", "a4d_native_dynamical_ownership")
+    for name in ("a4d_native_history_action", "a4d_native_dynamical_ownership",
+                 "a4d_native_time_field_intertwiner")
 }
 REPORT_ENTRYPOINTS = set(REPORT_BINDINGS)
 REPORT_RECEIPTS = set(REPORT_BINDINGS.values())
-REPORT_SELECTION_INPUTS = REPORT_RECEIPTS | {REPORT_TARGET, REPORT_SNAPSHOT}
+REPORT_INPUT_FIELDS = {
+    CERT + "a4d_native_history_action_certificate.json": "inputs_sha256",
+    CERT + "a4d_native_dynamical_ownership_certificate.json": "inputs_sha256",
+    CERT + "a4d_native_time_field_intertwiner_certificate.json": "input_sha256",
+}
+REPORT_SELECTION_INPUTS = REPORT_ENTRYPOINTS | REPORT_RECEIPTS | {
+    MANIFEST, REPORT_TARGET, REPORT_SNAPSHOT, "tools/native_checkpoint_inputs.py",
+    "tools/run_research_certs.py",
+}
 SELECTION_INPUTS = (ENTRYPOINTS | CAPSULES | RECEIPTS | {
     MANIFEST, SNAPSHOT, TARGET, "tools/native_checkpoint_inputs.py",
     "tools/check_native_checkpoint_compatibility.py", "tools/run_research_certs.py",
@@ -95,6 +105,32 @@ def declarations(text: str) -> dict[str, str]:
     return result
 
 
+def validate_report(root: Path, data: dict) -> None:
+    """Validate the report binding without reading or assuming a Quantum source."""
+    report = data["report_input"]
+    report_required = {
+        "scope": "HISTORICAL_REPORT_INPUT_NOT_CURRENT_ROUTE",
+        "source_head": SOURCE_HEAD, "source_blob": REPORT_BLOB,
+        "target_path": REPORT_TARGET, "snapshot_path": REPORT_SNAPSHOT,
+        "snapshot_sha256": REPORT_SHA256, "entrypoints": REPORT_BINDINGS,
+    }
+    if any(report.get(key) != value for key, value in report_required.items()):
+        raise ValueError("Unexpected historical report scope, source, path or entrypoint set")
+    if set(report["receipts"]) != REPORT_RECEIPTS:
+        raise ValueError("Historical report binding must retain exactly three receipt headers")
+    if set(report["entrypoint_sha256"]) != REPORT_ENTRYPOINTS:
+        raise ValueError("Historical report binding must retain exactly three entrypoint hashes")
+    if sha(read(root, REPORT_SNAPSHOT)) != REPORT_SHA256:
+        raise ValueError("Historical report snapshot hash mismatch")
+    for entry, digest in report["entrypoint_sha256"].items():
+        if sha(read(root, entry)) != digest:
+            raise ValueError("Historical report entrypoint binding mismatch: " + entry)
+    for path, digest in report["receipts"].items():
+        receipt = read(root, path)
+        if sha(receipt) != digest or json.loads(receipt)[REPORT_INPUT_FIELDS[path]].get(REPORT_TARGET) != REPORT_SHA256:
+            raise ValueError("Historical report receipt binding mismatch: " + path)
+
+
 def validate(root: Path) -> tuple[dict, bytes, list[str]]:
     data = json.loads(read(root, MANIFEST))
     required = {
@@ -110,23 +146,7 @@ def validate(root: Path) -> tuple[dict, bytes, list[str]]:
         raise ValueError("Historical binding must retain exactly eleven entries and seventeen receipts")
     if set(data["compatibility_capsules"]) != CAPSULES:
         raise ValueError("Unexpected current compatibility capsule set")
-    report = data["report_input"]
-    report_required = {
-        "scope": "HISTORICAL_REPORT_INPUT_NOT_CURRENT_ROUTE",
-        "source_head": SOURCE_HEAD, "source_blob": REPORT_BLOB,
-        "target_path": REPORT_TARGET, "snapshot_path": REPORT_SNAPSHOT,
-        "snapshot_sha256": REPORT_SHA256, "entrypoints": REPORT_BINDINGS,
-    }
-    if any(report.get(key) != value for key, value in report_required.items()):
-        raise ValueError("Unexpected historical report scope, source, path or entrypoint set")
-    if set(report["receipts"]) != REPORT_RECEIPTS:
-        raise ValueError("Historical report binding must retain exactly two receipt headers")
-    if sha(read(root, REPORT_SNAPSHOT)) != REPORT_SHA256:
-        raise ValueError("Historical report snapshot hash mismatch")
-    for path, digest in report["receipts"].items():
-        receipt = read(root, path)
-        if sha(receipt) != digest or json.loads(receipt)["inputs_sha256"].get(REPORT_TARGET) != REPORT_SHA256:
-            raise ValueError("Historical report receipt binding mismatch: " + path)
+    validate_report(root, data)
     snapshot = read(root, SNAPSHOT)
     if sha(snapshot) != SOURCE_SHA256:
         raise ValueError("Historical source snapshot hash mismatch")
@@ -168,23 +188,34 @@ class Overlay:
 
 def apply(root: Path, entrypoint: str) -> Overlay | None:
     # Old committed snapshots and every unregistered consumer keep normal replay.
-    if entrypoint not in ENTRYPOINTS or not (root / MANIFEST).exists():
+    if entrypoint not in ENTRYPOINTS | REPORT_ENTRYPOINTS or not (root / MANIFEST).exists():
         return None
-    data, snapshot, preserved = validate(root)
-    maintained = read(root, TARGET)
+    if entrypoint in ENTRYPOINTS:
+        data, snapshot, preserved = validate(root)
+    else:
+        data = json.loads(read(root, MANIFEST))
+        validate_report(root, data)
     report_overlay = None
     if entrypoint in REPORT_ENTRYPOINTS:
         report_maintained = read(root, REPORT_TARGET)
         report_snapshot = read(root, REPORT_SNAPSHOT)
         report_provenance = {
             "mode": data["report_input"]["scope"],
+            "entrypoint": entrypoint, "manifest": MANIFEST,
+            "manifest_sha256": sha(read(root, MANIFEST)),
             "target_path": REPORT_TARGET, "snapshot_path": REPORT_SNAPSHOT,
             "source_head": SOURCE_HEAD, "source_blob": REPORT_BLOB,
             "historical_sha256": REPORT_SHA256,
             "maintained_sha256": sha(report_maintained),
+            "checker_sha256": data["report_input"]["entrypoint_sha256"][entrypoint],
             "receipt_path": REPORT_BINDINGS[entrypoint],
+            "receipt_sha256": data["report_input"]["receipts"][REPORT_BINDINGS[entrypoint]],
         }
         report_overlay = Overlay(root / REPORT_TARGET, report_maintained, report_snapshot, report_provenance)
+    if entrypoint not in ENTRYPOINTS:
+        report_overlay.target.write_bytes(report_overlay.snapshot)
+        return report_overlay
+    maintained = read(root, TARGET)
     provenance = {
         "mode": data["scope"], "entrypoint": entrypoint,
         "manifest": MANIFEST, "manifest_sha256": sha(read(root, MANIFEST)),

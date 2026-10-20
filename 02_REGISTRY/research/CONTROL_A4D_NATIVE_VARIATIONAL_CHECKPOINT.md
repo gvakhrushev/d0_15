@@ -14,11 +14,13 @@ preserves the published #322 source and older receipts while retaining main
 #375's stronger action boundaries. Historical replay and compilation against
 maintained sources have separate required checks. The appended typed
 field/history section has its [own report](A4D_NATIVE_HISTORY_FIELD_COUPLING_BOUNDARY.md),
-so the earlier memo's five receipt pins remain intact. Two original certificate
+so the earlier memo's five receipt pins remain intact. Three original certificate
 headers also retain their exact historical common-action report through the
-same bounded binding; the maintained report and its #375 boundaries remain
-current. This repair changes no
-physical action, acceptance claim or parent terminal.
+same bounded binding. History-action and dynamical-ownership replay combine
+that report with the historical source; time-field-intertwiner replay uses only
+the report and leaves its six other inputs unchanged. The maintained report and
+its #375 boundaries remain current. This repair changes no physical action,
+acceptance claim or parent terminal.
 
 The independent B2 integration review checked local commit
 `a8cf63967033ece8932994946f8ac101722f2d2b`, published as

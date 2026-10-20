@@ -23,10 +23,10 @@ The [snapshot](EndogenousActionQuantum.lean) is byte-identical to the published
 blob. Its source-time prose is historical; #375's narrower current interpretation
 remains in the maintained owner. The [manifest](HISTORICAL_INPUT.json) binds
 seventeen source receipts, eleven entrypoints, ten current-compatibility
-Lean capsules and the two report headers below. The only changed receipt is the new field-coupling relocation
+Lean capsules and the three report headers below. The only changed receipt is the new field-coupling relocation
 record described below; older receipts and checker bytes remain unchanged.
 
-Two receipts also pin the earlier
+Three receipts also pin the earlier
 [common-action report](APARENT_FINITE_GRAVITY_COMMON_ACTION_SELECTOR.md).
 This 1,767-byte snapshot has Git blob
 `dc59c6cdcdd3d2d1d1e4460ec74e456918359abc` at the same published #322 head and
@@ -34,11 +34,23 @@ SHA256 `b95d5f631fb9c5936fe61964e73c3f373ea3f9deefb0fae037c7a760d6535ff5`.
 It is a historical input, never the current scientific route. Main's maintained
 report (integration SHA256
 `645fb50cb991c1e590a752354837bc6db9d14db2c2c5168045c2da0bbf0844e3`)
-retains #375's clarified boundaries and its added owner references. Only
+retains #375's clarified boundaries and its added owner references.
 `a4d_native_history_action_check.py` and
-`a4d_native_dynamical_ownership_check.py` use this second overlay; their original
-`_certificate.json` headers remain byte-identical. The fixed report source,
-two-entry map and two receipt hashes are validated before either overlay.
+`a4d_native_dynamical_ownership_check.py` use this report with the source overlay.
+`a4d_native_time_field_intertwiner_check.py` uses only the report overlay: its
+binding does not read, validate or replace `EndogenousActionQuantum.lean` and
+adds no source premise. All three original `_certificate.json` headers remain
+byte-identical. The fixed report source, three-entry map, checker hashes and
+three receipt hashes are validated before the report overlay.
+
+The third binding addresses the one failure in Ready run
+[`39410232456`](https://github.com/gvakhrushev/d0_15/actions/runs/39410232456).
+The unchanged time-field checker passed all 163 controls on maintained inputs;
+its payload differed from the old ledger only at `input_sha256` for this report
+(`b95d5f...` versus maintained `645fb5...`). Its proof, checker, compiler receipt,
+remaining six input pins and all result/scope fields were unchanged. It reuses
+the exact existing report snapshot; neither the checker nor its expected ledger
+is rewritten.
 
 The last #322 commit also appended section 7 to a memo pinned by five earlier
 certificates. That section is now in
@@ -70,10 +82,13 @@ checks after #375. All seventeen recorded historical receipts remain bound.
 
 Before execution the runner verifies the snapshot, entrypoint, every bound
 receipt and capsule. It changes one source path inside a disposable worktree,
-plus the explicitly bound report only for the two entries just named. It
+plus the explicitly bound report for the two source consumers named above. It
 logs both source hashes and source commit in `historical-input.json`, and labels
 the run `HISTORICAL_COMPILED_INPUT_REPLAY_NOT_CURRENT_SOURCE_PROOF`; the report
-record is labelled `HISTORICAL_REPORT_INPUT_NOT_CURRENT_ROUTE`. It restores
+record is labelled `HISTORICAL_REPORT_INPUT_NOT_CURRENT_ROUTE`.
+The third consumer has a separate report-only path, validates only the report
+binding and logs that report mode directly. Its replay does not require the
+historical Quantum source or the ten compatibility capsules. The runner restores
 the maintained bytes before ordinary mutation checks. If the checker changes
 the overlay, that is a mutation failure; restoration cannot hide it. No main
 file or old expected receipt is overwritten.
@@ -83,7 +98,9 @@ or changed original action declaration fails the binding. Other consumers use
 normal replay. Other shared inputs retain their original checks. Binding
 changes add all eleven entries to normal changed-input selection and never
 remove existing selected consumers; report-only changes additionally select
-the two report consumers. Direct execution against a different
+the three report consumers. Manifest and helper changes also select the
+report-only consumer without adding it to the eleven source consumers.
+Direct execution against a different
 maintained source can still report the original mismatch; use declared
 isolated replay for historical receipts and the separate compilation below.
 

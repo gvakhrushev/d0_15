@@ -188,9 +188,13 @@ def replay(repo: Path, commit: str, certs: list[str], workers: int, log_dir: Pat
             print(f"::group::{result['status']}: {result['certificate']}", flush=True)
             if result.get("historical_input"):
                 pin = result["historical_input"]
-                print("HISTORICAL_INPUT_REPLAY " + pin["target_path"] + " sha256=" +
-                      pin["historical_sha256"] + " source=" + pin["source_head"] +
-                      "; maintained-source compatibility is a separate Lean check", flush=True)
+                if pin["mode"] == "HISTORICAL_REPORT_INPUT_NOT_CURRENT_ROUTE":
+                    print(pin["mode"] + " " + pin["target_path"] + " sha256=" +
+                          pin["historical_sha256"] + " source=" + pin["source_head"], flush=True)
+                else:
+                    print("HISTORICAL_INPUT_REPLAY " + pin["target_path"] + " sha256=" +
+                          pin["historical_sha256"] + " source=" + pin["source_head"] +
+                          "; maintained-source compatibility is a separate Lean check", flush=True)
                 if pin.get("report_input"):
                     report = pin["report_input"]
                     print("HISTORICAL_REPORT_INPUT_NOT_CURRENT_ROUTE " + report["target_path"] +

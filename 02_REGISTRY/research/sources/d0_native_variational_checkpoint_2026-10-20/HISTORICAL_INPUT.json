@@ -120,11 +120,18 @@
     "snapshot_sha256": "b95d5f631fb9c5936fe61964e73c3f373ea3f9deefb0fae037c7a760d6535ff5",
     "entrypoints": {
       "02_REGISTRY/research/certificates/a4d_native_dynamical_ownership_check.py": "02_REGISTRY/research/certificates/a4d_native_dynamical_ownership_certificate.json",
-      "02_REGISTRY/research/certificates/a4d_native_history_action_check.py": "02_REGISTRY/research/certificates/a4d_native_history_action_certificate.json"
+      "02_REGISTRY/research/certificates/a4d_native_history_action_check.py": "02_REGISTRY/research/certificates/a4d_native_history_action_certificate.json",
+      "02_REGISTRY/research/certificates/a4d_native_time_field_intertwiner_check.py": "02_REGISTRY/research/certificates/a4d_native_time_field_intertwiner_certificate.json"
+    },
+    "entrypoint_sha256": {
+      "02_REGISTRY/research/certificates/a4d_native_dynamical_ownership_check.py": "46fbae34008b1d84264e859d95a48ac5d7ae61e48c90c884f0c4dcd9446b0573",
+      "02_REGISTRY/research/certificates/a4d_native_history_action_check.py": "d32907315c585788bdf1e630587399ab9ab508cc93fb80777bb04b43c613a19f",
+      "02_REGISTRY/research/certificates/a4d_native_time_field_intertwiner_check.py": "28114a40266fc9ecb49320f76f7256c006c9f0475b6085f5c4294a10c96100be"
     },
     "receipts": {
       "02_REGISTRY/research/certificates/a4d_native_dynamical_ownership_certificate.json": "cc6b3024f98e36694c3193229fa83cfd16cb7e0accb9427badf8971ecd5c113e",
-      "02_REGISTRY/research/certificates/a4d_native_history_action_certificate.json": "e8b9ad4edd5b010e35fc765043a77130263e02b86f0c2b7d4d8f96e9f8b9c2bc"
+      "02_REGISTRY/research/certificates/a4d_native_history_action_certificate.json": "e8b9ad4edd5b010e35fc765043a77130263e02b86f0c2b7d4d8f96e9f8b9c2bc",
+      "02_REGISTRY/research/certificates/a4d_native_time_field_intertwiner_certificate.json": "3c20786ecbaf59c45a57a0e9194854ead70cc337398fdfdd9325eedfbb07a22b"
     }
   }
 }

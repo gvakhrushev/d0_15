@@ -137,7 +137,8 @@ class ReplayTests(unittest.TestCase):
         paths = ({historical.MANIFEST, historical.SNAPSHOT, historical.TARGET,
                   historical.REPORT_SNAPSHOT, historical.REPORT_TARGET}
                  | set(manifest["entrypoints"]) | set(manifest["receipts"])
-                 | set(manifest["compatibility_capsules"]) | historical.REPORT_RECEIPTS)
+                 | set(manifest["compatibility_capsules"]) | historical.REPORT_RECEIPTS
+                 | historical.REPORT_ENTRYPOINTS)
         for name in paths:
             target = self.repo / name
             target.parent.mkdir(parents=True, exist_ok=True)
@@ -146,6 +147,7 @@ class ReplayTests(unittest.TestCase):
         entry = historical.CERT + name
         (self.repo / entry).write_text(body)
         manifest["entrypoints"][entry]["sha256"] = historical.sha(body.encode())
+        manifest["report_input"]["entrypoint_sha256"][entry] = historical.sha(body.encode())
         (self.repo / historical.MANIFEST).write_text(json.dumps(manifest))
         return name, manifest
 
@@ -284,6 +286,77 @@ class ReplayTests(unittest.TestCase):
         self.assertEqual(result["status"], "PASS", result)
         self.assertNotIn("report_input", result["historical_input"])
 
+    def historical_report_only_fixture(self, tail: str = "") -> tuple[str, str]:
+        real = Path(__file__).resolve().parents[1]
+        manifest = json.loads((real / historical.MANIFEST).read_text())
+        paths = ({historical.MANIFEST, historical.REPORT_SNAPSHOT, historical.REPORT_TARGET}
+                 | historical.REPORT_RECEIPTS | historical.REPORT_ENTRYPOINTS)
+        for name in paths:
+            target = self.repo / name
+            target.parent.mkdir(parents=True, exist_ok=True)
+            target.write_bytes((real / name).read_bytes())
+        # No historical Quantum snapshot, capsules or action declarations exist.
+        maintained = self.repo / historical.TARGET
+        maintained.parent.mkdir(parents=True, exist_ok=True)
+        maintained.write_text("unrelated maintained Quantum fixture\n")
+        name = "a4d_native_time_field_intertwiner_check.py"
+        entry = historical.CERT + name
+        body = ("from pathlib import Path\nimport hashlib\n"
+                f"assert hashlib.sha256(Path({historical.REPORT_TARGET!r}).read_bytes()).hexdigest() == {historical.REPORT_SHA256!r}\n"
+                f"assert Path({historical.TARGET!r}).read_text() == 'unrelated maintained Quantum fixture\\n'\n"
+                "print('executed report-only input')\n" + tail)
+        (self.repo / entry).write_text(body)
+        manifest["report_input"]["entrypoint_sha256"][entry] = historical.sha(body.encode())
+        (self.repo / historical.MANIFEST).write_text(json.dumps(manifest))
+        return name, body
+
+    def test_report_only_entry_never_reads_or_overlays_quantum_inputs(self) -> None:
+        name, body = self.historical_report_only_fixture()
+        maintained = (self.repo / historical.REPORT_TARGET).read_bytes()
+        result, logs = self.run_one(name, body)
+        self.assertEqual(result["status"], "PASS", result)
+        self.assertFalse(result["tracked_mutation"])
+        self.assertFalse(result["historical_input_mutation"])
+        self.assertFalse((self.repo / historical.SNAPSHOT).exists())
+        self.assertEqual((self.repo / historical.REPORT_TARGET).read_bytes(), maintained)
+        evidence = json.loads((logs / "historical-input.json").read_text())
+        self.assertEqual(evidence["mode"], "HISTORICAL_REPORT_INPUT_NOT_CURRENT_ROUTE")
+        self.assertEqual(evidence["target_path"], historical.REPORT_TARGET)
+        self.assertEqual(evidence["historical_sha256"], historical.REPORT_SHA256)
+        self.assertNotIn("current_source_compilation", evidence)
+        self.assertNotIn("report_input", evidence)
+
+    def test_report_only_mutation_is_not_hidden_by_restoration(self) -> None:
+        name, body = self.historical_report_only_fixture(
+            f"Path({historical.REPORT_TARGET!r}).write_text('mutated report-only input\\n')\n")
+        result, logs = self.run_one(name, body)
+        self.assertEqual(result["status"], "MUTATION", result)
+        self.assertTrue(result["historical_input_mutation"])
+        self.assertIn(b"mutated report-only input", (logs / "tracked.patch").read_bytes())
+        self.assertNotIn(historical.TARGET.encode(), (logs / "tracked.patch").read_bytes())
+
+    def test_report_only_entrypoint_change_fails_before_execution(self) -> None:
+        name, body = self.historical_report_only_fixture()
+        result, logs = self.run_one(name, body + "# unbound change\n")
+        self.assertEqual(result["status"], "ERROR", result)
+        self.assertIn("report entrypoint binding mismatch", result["error"])
+        self.assertFalse((logs / "stdout.log").exists())
+
+    def test_report_only_ledger_change_fails_before_execution(self) -> None:
+        name, body = self.historical_report_only_fixture()
+        receipt = historical.REPORT_BINDINGS[historical.CERT + name]
+        (self.repo / receipt).write_text("{}\n")
+        result, logs = self.run_one(name, body)
+        self.assertEqual(result["status"], "ERROR", result)
+        self.assertIn("report receipt binding mismatch", result["error"])
+        self.assertFalse((logs / "stdout.log").exists())
+
+    def test_report_only_execution_failure_is_preserved(self) -> None:
+        name, body = self.historical_report_only_fixture("raise SystemExit(7)\n")
+        result, _ = self.run_one(name, body)
+        self.assertEqual((result["status"], result["returncode"]), ("FAIL", 7), result)
+        self.assertFalse(result["tracked_mutation"])
+
     def test_undeclared_consumer_uses_maintained_source(self) -> None:
         self.historical_fixture(self.historical_body())
         current = historical.sha((self.repo / historical.TARGET).read_bytes())
@@ -315,7 +388,7 @@ class ReplayTests(unittest.TestCase):
             self.assertIn(entry, selected)
             self.assertIn("historical-input-binding", selected[entry]["reasons"])
 
-    def test_report_binding_selection_reason_is_scoped_to_its_two_consumers(self) -> None:
+    def test_report_binding_selection_reason_is_scoped_to_its_three_consumers(self) -> None:
         import research_input_closure as closure
         self.historical_fixture(self.historical_body())
         base = self.commit()
@@ -325,6 +398,20 @@ class ReplayTests(unittest.TestCase):
         bound = {row["certificate"] for row in report["selected"]
                  if "historical-report-input-binding" in row["reasons"]}
         self.assertEqual(bound, historical.REPORT_ENTRYPOINTS)
+
+    def test_report_only_consumer_is_selected_when_binding_manifest_changes(self) -> None:
+        import research_input_closure as closure
+        name, _ = self.historical_report_only_fixture()
+        base = self.commit()
+        manifest = self.repo / historical.MANIFEST
+        manifest.write_bytes(manifest.read_bytes() + b"\n")
+        report = closure.select(self.repo, self.commit(), base)
+        selected = {row["certificate"]: row for row in report["selected"]}
+        entry = historical.CERT + name
+        self.assertIn("historical-report-input-binding", selected[entry]["reasons"])
+        self.assertNotIn("historical-input-binding", selected[entry]["reasons"])
+        self.assertNotIn(entry, historical.ENTRYPOINTS)
+        self.assertEqual(len(historical.ENTRYPOINTS), 11)
 
     def test_cli_failure_is_nonzero_and_logs_the_checked_commit(self) -> None:
         self.certificate("failed.py", "raise SystemExit(9)\n")
