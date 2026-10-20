@@ -295,3 +295,31 @@ This is an information-theoretic **necessary** execution-volume bound, not an ap
 **Nontrivial synthesis with the original HJR trace:** the full thermal/feedback HJR flat coframe derivative contains an extensive contribution \(+\Omega(L^4)\), while the original normalized low-shell right128 tape at its owned \(m=256L²=o(L^4)\) clock has vanishing complete future-test distinguishability and a vanishing known port Cost first jet \(O(L^{-2})\). The same \(L^4\) that counts original four-dimensional UV modes is an unavoidable MINIMUM number of raw physical channel rounds for this specified low-shell observable to yield an \(O(1)\) distinction. This matching exponent does NOT prove the D0 dimension, physical GR, statistical sufficiency at \(R\simeq L^4\), or the actual Book03 Cost–Info functional; it supplies a quantified missing **operational ensemble/resources** gate instead of an invented cosmological counterterm.
 
 **Single continuing physical test:** determine from Book03/G0 whether the actual compulsory physical history includes the necessary \(L^4\)-scale ensemble, a new paid high-energy probe or an operator-valued site trace/relative-comparison price; and calculate its full native Info/work source and coframe-link Euler. The oldRIGHT128 low-shell programme ALONE cannot produce a finite operational bulk Einstein source from one \(O(L^2)\) execution.
+
+
+### 9.1. The exponent FOUR is SHARP: a compulsory original pointer event recovers finite scale discrimination at \(R=\Theta(L^4)\)
+
+The resource condition (31) is also **sufficient in this same finite process** for a simple, physically recorded statistic, without inventing a POVM. Declare \(R_L=\lfloor\kappa L^4\rfloor\) with fixed \(\kappa>0\), and read only the already present binary event "at least one of the true original 128 labels was nonblank". The exact all-blank probability from (26) is
+\[
+P_{\rho,L}(\mathrm{blank}^{R_L})
+=\bigl(1-\alpha\rho\lambda_{1,L}\bigr)^{2R_L}.
+\]
+Since \(\lambda_{1,L}=4\nu^2\sin^2(\pi/L)\) and \(\alpha=p^2/(128L^2)\),
+\[
+R_L\alpha\rho\lambda_{1,L}\longrightarrow
+\frac{\kappa p^2\nu^2\pi^2}{32}\rho.
+\]
+It follows by the exact elementary exponential limit (no independently sampled exits assumed) that
+\[
+\boxed{
+\lim_{L\to\infty}P_{\rho,L}(\mathrm{at\ least\ one\ real\ nonblank})
+=1-\exp\!\left[-\frac{\kappa p^2\nu^2\pi^2}{16}\rho\right].
+}\tag{32}
+\]
+For **any** two distinct fixed scales \(\rho,\rho'>0\), the two right-hand probabilities are different. The **original recorded binary outcome** thus has strictly positive limiting total variation at \(R_L=\kappa L^4\). Combined with (31), this proves the **sharp operational distinction threshold**
+\[
+\boxed{\qquad R_{\rm critical}(L)=\Theta(L^4)\qquad}\tag{33}
+\]
+for this fixed original full128 low-shell experiment with declared repeated rounds. The complete oldRIGHT, CAR16 and every intermediate label remain present throughout, even though only a coarse already-measured event is used for this sufficient statistic.
+
+The interpretation is precise: the native coupling \(\varepsilon=O(L^{-2})\) times the prepared lowest-shell energy \(\lambda_1=O(L^{-2})\) sets the actual rare-event rate \(O(L^{-4})\); a four-dimensional number of complete actual rounds is **both necessary and sufficient** for finite recorded sensitivity. This is a real finite-protocol derivation of an \(L^4\) *resource exponent*, NOT a proof that the world has four dimensions, a replacement for the HJR feedback trace, or a proof that Book03 compels such an extremely long interrogation. Each original additional round has a genuine port-code clock price at least one, so this is also a lower-bound scaling for its already KNOWN primitive clock payment. A controller which accesses a different higher-energy state or changes the task is outside this exact experiment and must be evaluated separately.
