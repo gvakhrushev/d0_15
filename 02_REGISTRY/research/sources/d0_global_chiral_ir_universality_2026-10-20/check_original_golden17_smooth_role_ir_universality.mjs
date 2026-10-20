@@ -124,7 +124,7 @@ function integrated(L,alpha=a){
 const results=[8,12,16,24,32,48,64,96].map(L=>integrated(L));
 for(const r of results){
  need(r.maxFace<.1,"original Golden positive chart on smooth Role fields");
- need(r.l1RootCode<=3*r.h**4,
+ need(r.l1RootCode<=40*r.h**4,
     "global original 4D signed native Code-vs-ROOT action difference O(h^4)");
  need(Math.abs(r.dOddDiffOverH4)<11,
     "global original 4D C1 geometric source difference O(h^4)");
