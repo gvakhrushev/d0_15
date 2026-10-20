@@ -61,4 +61,25 @@ for L in (8,16,32,64,128,256):
     print("L=",L,"P(any)=","%.6g"%q,
           "full-tape norm-to-blank=","%.6g"%coh_dist,
           "per-site port source=","%.6g"%(port_source/L**4))
+
+# Sharp clock exponent: R_L=kappa L^4 actual rounds, no independent-event assumption.
+# Every original full128 word with no exit has the exact scalar Kraus B^R.
+from math import exp, log1p
+kappa=1
+rho1,rho2=F(1,4),F(1)
+limit_rate=float(((3-sqrt(5))/2)*nu**2*F(1,16))*pi*pi
+assert limit_rate>0
+for L in (16,32,64,128,256):
+    lam0=4*float(nu)**2*sin(pi/L)**2
+    alpha0=p*p/(128*L**2)
+    R_clock=kappa*L**4
+    blank1=exp(2*R_clock*log1p(-alpha0*float(rho1)*lam0))
+    blank2=exp(2*R_clock*log1p(-alpha0*float(rho2)*lam0))
+    assert blank1>blank2
+    print("SHARP R=L^4",L,"P_at_least_one(scale=1/4)",
+          "%.8g"%(1-blank1),"P_at_least_one(scale=1)",
+          "%.8g"%(1-blank2))
+assert abs((1-blank2)-(1-exp(-limit_rate*float(rho2))))<0.002
+print("SHARP ORIGINAL FULL128 actual pointer clock threshold Theta(L^4): PASS")
+
 print("ALL EXACT LOW-SHELL ONE-REAL-HISTORY / UV SOURCE GATES PASSED")
