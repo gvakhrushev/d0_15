@@ -110,3 +110,36 @@ A frozen field-independent `H_phi(w)` alone cannot generate a nonzero gravitatio
 **What changes for the parent:** rank-birth is not an unconditional reason to discard a native programme; the correlation ledger identifies an exact potential completion already inside its retained state. The only real missing step is **Book03 physical selection and admission of that ledger and its nonzero source-bearing complements**. Original `positive_gr`, raw216, complete full-price and nonlinear-refinement terminals remain OPEN.
 
 Reproduce the exact finite golden/quadratic controls with `check_rank_birth_full_record_ledger.py`. The entropy/Schmidt and operational-source arguments above are analytic; that checker is a bounded hostile-control replay, not the source of the general theorem.
+
+
+## 6. Exact normalizer identifiability obstruction: branch law fixes only action differences
+
+This is a separate, strictly finite consequence of the same stopped programme and directly addresses Book03 §03.3.0a. Let `y` range over any compact field chart, and suppose one proposes to recover its native history actions `S_s(y)` solely from the **normalized scalar flag law** using
+
+```math
+P_s(y)=\frac{\varphi^{-S_s(y)}}{Z(y)},\qquad
+Z(y)=\sum_t\varphi^{-S_t(y)},\qquad P_s(y)=w_s=\varphi^{-L_s}>0.
+```
+
+Taking base-`phi` logarithms on every finite positive branch gives the necessary and sufficient normal form
+
+```math
+\boxed{\quad S_s(y)=L_s+C(y)\quad(\forall s),\qquad
+C(y)=-\log_\varphi Z(y).\quad}
+\tag{N}
+```
+
+Conversely **every** common real function `C(y)` defines an action family with exactly these normalized probabilities, since `sum_s phi^{-L_s}=1`. Thus `S_s-S_t=L_s-L_t` is fixed, while the common field variation `D_y C(y)` is *not identifiable* from the flag probabilities alone. Equivalent score formulation:
+
+```math
+D_y\log P_s=-\ln\varphi\left(D_y S_s-
+\sum_tP_tD_y S_t\right)=0,
+\qquad D_yS_s=D_yC\ \text{for every }s.
+```
+
+There are two different physical claims that must not be conflated:
+
+- If Book03's exact `w(gamma)=phi^{-S(gamma)}` is asserted as the **already normalized full-history weight** of these branches, then `Z=1` is an additional equality and (N) fixes `C=0`. The branch-only price is precisely `L_s` and contributes **zero** compact-field source.
+- If it is an **unnormalized** weight whose Born probabilities are divided by `Z(y)`, the normalized branch law leaves `C(y)` unrestricted. This is a *non-identifiability*, **not** permission to insert a fitted source: the missing `C` must be derived from actual Book03 Cost−Info operations, controller/preparation/work/clock or the complete physical execution. A free common shift cannot be calibrated out of branch probabilities while simultaneously claimed as a uniquely predicted gravitational source.
+
+The extra future-test witness in §4 shows that the *complete* output is not field blind, even though this marginal law is. Hence neither (L) nor (N) determines the full dynamical source; they identify exactly the information missing in an attempted flag-only extraction. This is the parent `constitutive -> native_sector -> gr_operational_realization` substitution gate: demonstrate one common admitted full record, native price **and** physical normalization, not just a matched histogram or another stationary geometry.
