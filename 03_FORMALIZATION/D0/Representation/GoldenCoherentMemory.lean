@@ -86,4 +86,81 @@ theorem joint_readouts_reconstruct (a p x z : ℝ)
   constructor <;> nlinarith [congrArg (fun t : ℝ => t*x) hc,
     congrArg (fun t : ℝ => t*z) hc]
 
+
+/-! ## Genuine literal Golden readout: what is and is not redundant
+
+This uses the EXISTING Fin4 fullStep's already proved Bloch-correlation
+identities, not a guessed Q8 action or a new quantum gate.  The
+locally-visible Z contrast by itself is NOT faithful to the original
+Bloch input.  The EXISTING joint X⊗X and Y⊗X records restore the
+missing information.  It is MDL-unsound to throw them away when the
+joint Golden memory test is among admissible comparisons.
+
+The two witness LINES in M1 are not the three different Bloch
+readout COMPONENTS; a line may compare a complete vector signature.
+-/
+
+/-- Entire exact three-real-coordinate original Golden retained-readout
+signature: local Z, joint X⊗X, joint Y⊗X.  The third component records
+the existing imaginary coherence y, not a new third witness line. -/
+def goldenBlochSignature (a p x y z : ℝ) : ℝ × ℝ × ℝ :=
+  (retainedContrast a p x z, jointX a p x z, y)
+
+/-- The actual joint original Golden signature is faithful to its
+entire (x,y,z) Bloch source, without introducing an external detector
+family, provided the Golden gate satisfies its existing identity. -/
+theorem golden_complete_bloch_readout_injective (a p : ℝ)
+    (ha : a^2 = p) (hp : p+p^2=1)
+    (x y z x' y' z' : ℝ)
+    (h : goldenBlochSignature a p x y z =
+         goldenBlochSignature a p x' y' z') :
+    x = x' ∧ y = y' ∧ z = z' := by
+  have hr : retainedContrast a p x z =
+      retainedContrast a p x' z' := congrArg Prod.fst h
+  have hj : jointX a p x z = jointX a p x' z' :=
+    congrArg (fun q : ℝ × ℝ × ℝ => q.2.1) h
+  have hy : y = y' :=
+    congrArg (fun q : ℝ × ℝ × ℝ => q.2.2) h
+  have hx0 := (joint_readouts_reconstruct a p x z ha hp).1
+  have hx1 := (joint_readouts_reconstruct a p x' z' ha hp).1
+  have hz0 := (joint_readouts_reconstruct a p x z ha hp).2
+  have hz1 := (joint_readouts_reconstruct a p x' z' ha hp).2
+  constructor
+  · calc
+      x = contrastCoefficient p * jointX a p x z -
+          correlationCoefficient a p * retainedContrast a p x z := hx0.symm
+      _ = contrastCoefficient p * jointX a p x' z' -
+          correlationCoefficient a p * retainedContrast a p x' z' := by rw [hj, hr]
+      _ = x' := hx1
+  constructor
+  · exact hy
+  · calc
+      z = correlationCoefficient a p * jointX a p x z +
+          contrastCoefficient p * retainedContrast a p x z := hz0.symm
+      _ = correlationCoefficient a p * jointX a p x' z' +
+          contrastCoefficient p * retainedContrast a p x' z' := by rw [hj, hr]
+      _ = z' := hz1
+
+/-- A genuine ORIGINAL-channel counterexample: the pure Bloch direction
+(x,z)=(c,s), c=p-p², s=2ap, is completely invisible in the visible
+local-Z output relative to zero Bloch source, but differs in the
+already-owned recorded joint X⊗X correlation by exactly ONE. -/
+theorem golden_local_channel_hides_exact_joint_distinction (a p : ℝ)
+    (ha : a^2 = p) (hp : p+p^2=1) :
+    retainedContrast a p (contrastCoefficient p)
+       (correlationCoefficient a p) =
+       retainedContrast a p 0 0 ∧
+    jointX a p (contrastCoefficient p)
+       (correlationCoefficient a p) = 1 ∧
+    jointX a p 0 0 = 0 := by
+  have hc := coefficients_close a p ha hp
+  constructor
+  · unfold retainedContrast
+    ring
+  constructor
+  · unfold jointX
+    nlinarith
+  · simp [jointX]
+
+
 end D0.Representation.GoldenCoherentMemory
