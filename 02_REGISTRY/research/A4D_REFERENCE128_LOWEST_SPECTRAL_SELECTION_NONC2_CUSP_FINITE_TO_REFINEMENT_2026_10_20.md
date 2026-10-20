@@ -181,3 +181,30 @@ The very same original full quartet minimal capacity \(g=4,L=33\) has 124 fully 
 These are strict finite **right-reference capacity obstructions**, not claims that a new 130-/132-dimensional reference is allowed by the original D0. One may instead keep the rank128 pure programme and break symmetry using a proven physical selector/cutoff branch, or use an actual paid mixed archive. And merely averaging the cutoff states at nonzero ε would cease to be a strict pointwise R-minimum, so it would change the selected action in any event.
 
 **True selection trilemma on one same native carrier:** the convenient original all-nonzero occupation is an exact protected-energy MAXIMUM at the minimal-capacity grid (§6); the lowest occupation has a CUSP and discontinuous true LEFT density (§§2–5); the invariant smooth mixed cutoff repair has LEFT rank130/132 and cannot be purified on the ORIGINAL 128 RIGHT references (§7). Every mathematically simple shortcut is therefore separately classified. This is a sharp finite physical-action/memory provenance target, not a general impossibility theorem for physical D0→GR. \`GR_closed=false\`.
+
+
+## 8. POSITIVE counterpoint: a REAL-ANALYTIC full fixedRIGHT STATIONARY rank128 branch DOES exist, but it pays a computable excitation gap on one side
+
+The exact no-continuous-MINIMIZER theorems §§2–7 MUST NOT be misread as "no smooth fixedRIGHT stationary preparation can exist" or "a ten-variable curved stationary IFT is impossible". On the SAME original positive finite low2 Dirac and the SAME smooth coframe path (4), real-analytic one-parameter symmetric-matrix perturbation theory (Rellich's finite-dimensional theorem) actually constructs a source-faithful **stationary-but-not-minimal** reference128 branch.
+
+At ε=0 the cutoff is an eigenspace of dimension4, whose first perturbation has two eigenvalues \(-\nu q_h\) and two \(+\nu q_h\), by (5). Fix the *negative-slope* spectral 2-plane \(P_+\) once at the base; choose the analytic spectral eigenbranches through that plane for both positive AND negative ε, keeping the complete 126-dimensional lower-energy spectral subspace and full original RIGHT \(I_{128}/128\) fixed. For each sufficiently small nonzero ε the selected state projector \(P_{\rm stat}(ε)\) commutes EXACTLY with the original \(\Delta_{\rm protected}(ε)\), hence
+\[
+\boxed{[\Delta_{\rm protected}(ε),\rho_{\rm stat}(ε)]=0,\quad
+\rho_{\rm stat}(ε)=P_{\rm stat}(ε)/128,\quad
+M(ε)^\dagger M(ε)=I_{128}/128.}\tag{18}
+\]
+The choice can be real-analytic across ε=0 on this finite one-parameter chart. The original \(H+J\) is independent of M in the declared conditional action, so (18) solves the **COMPLETE preparation Euler of conditional \(H+J+R\)** at fixed external geometry/observer. It does NOT solve their coframe/link/observer Euler or select the physical preparation law.
+
+For ε>0 the branch agrees with the rank128 lowest-energy minimizer. For ε<0 the order of the two cutoff eigenbranches has reversed, and this SAME smooth preparation is still stationary but is NOT the lowest-energy one. Its exact first extra energy is
+\[
+\boxed{
+R_{\rm stat}(ε)-R_{\min}(ε)
+=\frac{4\nu q_h}{128}|\epsilon|+O(\epsilon^2)
+=\frac{\nu q_h}{32}|\epsilon|+O(\epsilon^2)\quad(\epsilon<0).
+}\tag{19}
+\]
+The excitation coefficient remains nonzero as \(h=T/L\to0\). This is a **real native-source cost gap** between a continuous stationary section and the global minimum; it is not a new manually added ActionProtocol cost.
+
+**Exact independent finite positive regression:** on the original L=131 protected two-grade block with genuine nonuniform inverse-u coframe, take each of the two shifted-adjoint full Dirac blocks \(B^\dagger B\), \(BB^\dagger\) separately and choose the k32 **negative-first-slope** eigenbranch on both signs. The resulting rank128 LEFT projector commutes with BOTH exact block Hamiltonians at ε=±10⁻⁶, ±10⁻⁷ (genuine full fixedRIGHT Euler), while retaining actual Gram I128/128. Its measured excitation excess for ε<0 is \(\nu q_h|\epsilon|/32\) to better than 1e-7 relative precision. The positive side attains the true minimum.
+
+**This explicitly preserves a legitimate route to the user's claimed fixed-boundary curved IFT:** a physical G0 programme may select a smooth EXCITED stationary preparation and use a full (possibly indefinite) coupled Hessian; its physical selection and accepted work must be proved. The strong no-go is for a *two-sided global minimum or symmetry-unpriced averaged fixedRIGHT state*, not for actual critical stationary solutions. The true h-uniform observer/coframe/Dirac completion, boundary preserving conditions, H+J curved stress and Einstein source remain OPEN. \`GR_closed=false\`.
