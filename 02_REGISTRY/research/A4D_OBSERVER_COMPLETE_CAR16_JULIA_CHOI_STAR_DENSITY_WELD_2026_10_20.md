@@ -225,3 +225,33 @@ Its second derivative diverges; it cannot be replaced silently by the smooth old
 **Decisive G0→G1 consumer, reduced to TWO conditions instead of another atlas:** IF one genuine, fully priced physical original full128+CAR/Golden/observer/clock/oldRIGHT programme is proved to admit THIS actual complete event quotient, determine the three FIRST derivatives c_m,c_u,c_f of its actual selected Cost-Info. The pure geometric contribution can equal the old unnormalized finite Palatini bilinear ONLY if c_u=c_f and the common coefficient obeys p²(c_m-c_f)=-1 in natural-log cell units (or the exact corresponding Golden base conversion). If not, a same-programme cancellation or a different readout is mandatory. No derivation of the fundamental three-label quotient, nonlinear Book selection, matter Ward, joint exact root or #216 refinement is claimed. GR_closed=false.
 
 Exact independent source: sources/d0_book_geometry_double_schur_2026-10-19/check_car16_golden_observer_score_selector.py (all-six CAR16 and finite rational observer, Shannon dark-jump and return-only feedback controls); a separate local SymPy/mpmath independent replay PASSED. No remote CI or accepted scientific promotion claimed.
+
+
+### 8.2. Nonlinear LOCAL selection from observer independence + Book03 Golden additivity (conditional theorem)
+
+The finite rational observer witness (8.4–8.5) yields more than just a quadratic tensor constraint. On the family U=R23(theta), n_a=g_an0, define the two independent scalar coordinates m=q_mark and g=q_good. For 0<theta<pi and a>0 small,
+
+  m(theta)=p² cos(theta/2)^4,
+  g(theta,a)=p²[1+sinh(a)²(1-cos theta)]².
+
+The Jacobian of the map (theta,a) → (m,g) is m'(theta)·∂_a g, STRICTLY nonzero for any such theta,a. Hence the accessible event pairs have nonempty OPEN interior in the original two-dimensional probability simplex. Let C(m,g-m,1-g) be a real-analytic score in a connected chart containing the native flat point, observer-INDEPENDENT at fixed geometric U under these observer changes. Then ∂_a C=(∂_g C) ∂_a g=0 on the above open set; analyticity and the real-analytic identity principle force ∂_g C=0 throughout the connected chart. Thus
+
+  C(m,u,f)=Psi(m)                                              (8.8)
+
+locally, for some analytic scalar Psi: the complete three-outcome pure-geometric score factors through the ORIGINAL marked-joint event and cannot truly depend on the observer-dependent successful-return/failure split. For merely differentiable, non-analytic scores the already proved quadratic selection (8.3) remains valid; do not assert analytic continuation for C-infinity scores.
+
+Now consume, as an EXPLICIT ADDITIONAL PHYSICAL HYPOTHESIS, the original Book03 §03.3.0 axioms of ADDITIVE COST for independent matched comparisons and MULTIPLICATIVE weight. If the genuine physically admitted marked events can be independently composed so that the same scalar score satisfies
+
+  m_12=m_1 m_2,    Psi(m_1 m_2)=Psi(m_1)+Psi(m_2),
+
+then continuity forces Psi(m)=a ln m. Requiring the original Golden primitive probability p=phi^(-1) to carry one native action unit, Psi(p)=1, fixes uniquely
+
+  Psi(m)= -log_phi m.                                         (8.9)
+
+The flat CAR16 Julia marked event has m(I)=p², hence Psi(m(I))=2 exact Golden units; no new numerical scale enters. Multiplying the mixed two-source Golden surprisal by the FORCED log base factor ln(phi) reproduces the literal original S_star density (4) for arbitrary coframe B and plaquette curvature C:
+
+  L_star(B,C) = (ln phi) D_s D_t Psi(q_mark,p(exp(sX_*B)exp(tC)))|0.
+
+This is a STRONG conditional reverse derivation inside a **narrow explicitly stated class**: analytic observer-blind THREE-OUTCOME scores of the constructed existing-Golden CAR16 Julia tester, and a genuinely admissible independent MARKED-event composition identified with Book03's original histories. It removes both the arbitrary functional of the three outcomes and the numeric normalization IF those constraints hold.
+
+**The sole missing G0/selection premise is NOT disguised:** the native Book action is defined over physical Cost-Info histories and algebra-valued memory classes; its primitive weights need NOT equal the Born marked probability m of this constructed auxiliary Choi/two-density comparison. Golden multiplicativity and M1 do not themselves say that the physically charged history event is THIS marked event, or that its actual multi-tick implementation factorizes, or that all real coframe/CAR/observer/controller preparation costs reduce to this one score. The native Golden six-phase atlas already proves geometric local observability but not this physical price binding. If the actual mandatory full128-G0 apparatus DOES select the same observer-independent marked multiplicative event and pays it coherently, (8.8–8.9) identify the mathematical scalar density without fitting an EH term; if not, this is only a conditional selector theorem and G0 and GR remain OPEN. Full 40 Euler matching, matter Ward, exact joint roots and #216/refinement remain separate obligations.
