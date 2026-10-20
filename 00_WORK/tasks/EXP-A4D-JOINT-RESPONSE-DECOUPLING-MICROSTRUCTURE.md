@@ -2659,3 +2659,41 @@ plus a controlled positive readout denominator. Physical Book valuation,
 Info/work and admission must be supplied independently. This records a
 bounded continuation lead inside the existing owner, not a new execution,
 completion theorem, physical selection or GR promotion.
+
+### 20 October: minimum nondegenerate Golden readout of the complete original J2 source
+
+Phase: native realization/source composition within existing #334.
+Exact parent: causal Book synthesis equations9-10, the complete terminal
+query-work source residual, consumed by original all40 section5.1 and
+the same midpoint representatives. Reuse the original local controlled
+J2 at blob75c40d133a23973a36ba5b95d34b4eb36ca96663, all40 at
+blob050ee972efa0f2ae37206b2ef9e3b4122dbac204, and existing causal/Book
+proofs. Full regular multiplicities, scene, zero complements, oldRIGHT,
+original z=2^-20, unequal native weights and operational metric remain.
+
+Result: an actual fixed coin coefficient and complete reference/query
+trace readout have Dt=(Q0 R0/(2N_h))DJ2. A three-query coherent cleanup
+retains all final work with non-clean probability4t^4(1-t^2). Original
+G^2 plus the real0/10 reporter therefore gives the SAME full42 source,
+up to a nonzero common factor, for either stated complete coherent or
+fine-pointer terminal entropy contract. FixedRIGHT logical-input rows
+vanish; generated states use the existing causal adjoint result.
+The original finite-z lambda_minus is preserved, not retuned.
+
+Minimality: k=2 is least within postrotationsG^k with k>=0 for nonzero
+source under both readings; k1 screens the pointer source. Stationarity
+is not claimed to be a minimum, and global D_min selection stays open.
+Primitive/source-bound query admission, the actual initial-work task,
+canonical paid prefix ledger, compulsory physical Book valuation and
+any separately paid upstream/intermediate sources are retained premises.
+Computational inverse operations advance the real paid clock.
+
+Write paths: new proof, one exact checker and pinned review under
+sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/;
+integrate in the existing synthesis/README and append this brief/memo.
+Smallest decisive check: complete rational matrix first jets with
+noncommuting vertical blocks, all output probabilities, Golden-square
+source, original finite coin weights and full J2 coupling. Exact run
+passes with -O -B -W error; independent review binds final file hashes.
+No historical lattice/geometry/Lean replay, duplicate task, lifecycle
+retirement, new claim or assembly/physical-GR promotion.

@@ -9566,3 +9566,41 @@ Proof, complete128 operator comparison, both omitted-complement
 controls, exact input pins and independent review live in the new
 packet. Existing all40+2, causal-state and geometric maps are reused.
 No new task, lifecycle/assembly promotion or GR closure. GR_closed=false.
+
+## 20 October: minimal Golden terminal readout preserves the WHOLE original J2 source
+
+Phase: native realization/source composition, existing #334. The
+[complete construction](sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/MINIMAL_GOLDEN_COMPLETE_SOURCE.md) supplies the missing terminal-work
+first-source calculation in the causal Book synthesis, on its stated
+coherent-query interface. It anchors the full original constant null
+operator F*, including scene/matter and all regular multiplicities.
+The fixed coefficient C=zR0 P_minus+zQ0 P_plus is realized with original
+p,z coins; fresh complete-probe trace scalarization gives
+Dt=(Q0 R0/(2N_h)) DJ2. No separately fitted matter coefficient is used.
+
+A complete reversible three-query computation has non-clean probability
+exactly4t^4(1-t^2). Hence differently priced fixed terminal failures give
+zero first source, and both full coherent-record and fine-pointer
+entropy corrections are controlled through rank birth. Actual final
+G^2 and the original0/10 reporter give D(C-I)=positive_constant DJ2 for
+either specified terminal Info reading. The same42 equations, old
+lambda_minus(2^-20), fixedRIGHT logical preparation rows and owned
+midpoint family are preserved. Generated causal rows use the existing
+adjoint theorem; extra genuine query-dependent internal sources survive.
+
+The minimum proved is k=2 within G^k, k>=0: k0 has no linear signal,
+k1 has exact Cost-minus-pointer-entropy cancellation. This is not
+global D_min selection or a minimum theorem for the Einstein roots.
+The physical clock remains forward and paid even during computational
+inverse queries. Actual native query/primitive admission, compulsory
+Book information/aggregation/absolute normalization, and any independent
+upstream/intermediate prices remain open.
+
+Parent substitution: compute the complete TERMINAL work/Info residual for
+these two admitted-interface contracts, instead of a mark-only source
+with uncomputed work. This is a new constructive application of the
+existing same-family proof, not a replacement action asserted compulsory.
+Independent analytical reviews and the adjacent exact rational/Golden
+matrix-jet checker are pinned in MINIMAL_GOLDEN_REVIEW.md. No unchanged
+geometry/continuum/Lean suite was replayed, no new task was opened,
+and no physical GR or assembly acceptance was promoted.

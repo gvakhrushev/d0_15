@@ -51,3 +51,25 @@ Independent analytical review is separate from execution and is pinned in
 `INTEGRATION_REVIEW.md`. Actual main intake and GitHub CI are recorded by
 the integrating PR. Neither a passing calculation nor main publication
 promotes `GR`, `positive_gr`, raw216 or the parent task's lifecycle.
+
+## Complete terminal source and the minimal Golden postrotation
+
+[MINIMAL_GOLDEN_COMPLETE_SOURCE.md](book_source/MINIMAL_GOLDEN_COMPLETE_SOURCE.md)
+extends the same consumer to the WHOLE original J2, including matter.
+A finite coherent cleanup makes every non-clean final amplitude O(t²);
+two original Golden rotations are the least G^k choice preserving a
+nonzero first source for both stated complete terminal information
+readings. Actual port cost, the fixed paid prefix clock, full work and
+fixedRIGHT input equations are included. The unchanged physical
+query/admission/Book-selection obligations remain explicit.
+
+The exact derivation and [independent review](book_source/MINIMAL_GOLDEN_REVIEW.md)
+are a new attachment, not a rewrite of the frozen evidence above.
+Reproduce only its changed calculation:
+
+```bash
+python3 -O -B -W error 02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/check_minimal_golden_complete_source.py
+```
+
+This checks the complete query first jet and whole finite-z source
+coefficient, without replaying the historical all40 or continuum suites.

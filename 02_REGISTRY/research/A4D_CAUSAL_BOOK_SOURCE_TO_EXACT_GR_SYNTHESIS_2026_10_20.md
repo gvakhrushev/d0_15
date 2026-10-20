@@ -5,6 +5,12 @@
 Input: `acfe3e19ecda5f2dbc678ec52e2f7cd0f3e639a1`, joining the reviewed
 main `257fd52f` and native `25bea5bd` without discarding either history.
 
+**20 October continuation.** The [complete terminal-source construction](sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/MINIMAL_GOLDEN_COMPLETE_SOURCE.md)
+now computes the whole original J2 source for two explicit terminal
+Cost-Info readings, using the least nondegenerate Golden postrotation
+in its declared class. See the final section below. Physical programme
+admission and prospective D_min selection remain unproved.
+
 ## Result and consuming theorem
 
 The new positive result is a **whole-family operator-to-source construction**
@@ -319,3 +325,77 @@ This quotient is geometrically exact: raw coframe F determines original Lorentz 
 **Physical/same-action firewall:** This is a certified finite kinematic reconstruction for an AVAILABLE original Jones input, NOT a proof that the compulsory G0/oldRIGHT/Book preparation at the exact nonvacuum Brinkmann mesh uses this Jones+ state, or even this fixed Fourier character, nor that fieldwise observation determines its Cost−Info, whole controller, clock acceptance, work and Book03 selected price. Our earlier mathematical reporter/source (6), all40+2 exact stationary nonvacuum family, and (9)'s full-price residual remain the ACTUAL GR consumers. Do NOT insert the local inverse of pointer probabilities into Book as a new external action. The only legitimate next transfer is: construct from the SAME ACTUAL Brinkmann coframe/Cartan links and midpoint CAR Ψ its complete real native prepared full128 record, including clock rejection stages and oldRIGHT reference, then compare the real source/Info/work to the configured Golden-J2 null \(E_j=|D_u^+\Psi|^2\). If admitted, new 13-quotient readout supplies enough LOCAL observer/metric information; the physical valuation is still entirely unowned and positive_gr/GR_closed remain OPEN.
 
 Independent exact finite-field source in sources/d0_native_full128_observer13_2026-10-20/check_golden_jones_two_tick_exact_ranks.py (rank16 and rank13, all 128^2 possible labels with 29 selected exact minors) and sources/d0_native_full128_observer13_2026-10-20/check_metric_observer_quotient.py (exact rational coframe quotient); all local checks PASS. Remote CI and independent acceptance not asserted.
+
+## 9. Minimal Golden readout computes the complete terminal source of the SAME J2
+
+The [new full proof](sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/MINIMAL_GOLDEN_COMPLETE_SOURCE.md) closes a specific part of (9): the
+terminal query-work residual can be computed on a finite coherent
+execution, instead of assuming that all its failure records have equal
+prices. This execution queries the WHOLE original local J2 operator,
+including matter; it does not merely add another geometric reporter.
+
+On the entire original common-null family the actual full matrix is
+F*=L P_minus+M P_plus, with L=1-p^6 and M=1-p^12 on fixed retained bands.
+Keep the original z=2^-20, every genuine integer multiplicity, fixed
+reference and all zero complements. With Q0=1-zL, R0=1-zM, the fixed
+positive C=zR0 P_minus+zQ0 P_plus has a finite retained coin realization
+using the original p,z. The real whole-trace signal is
+
+    t=Tr C(F-F*)/(2N_h),
+    Dt|Sigma=gamma_h DJ2,   gamma_h=Q0 R0/(2N_h)>0.
+
+Both active/reference queries are actually executed and paid; subtraction
+is coherent amplitude interference, not subtraction of their physical
+prices. A fresh complete probe supplies the trace while the actual
+oldRIGHT remains untouched. Its source-bound moving query and primitive
+admission remain hypotheses.
+
+For the clean compression J*WJ=t I, a three-query coherent computation has
+the EXACT complete output, up to a fixed global phase,
+
+    (1-2t^2)|0>J + 2t(1-t^2)|1>J - 2t^2|1>QWJ.
+
+Every work output remains. Its total non-clean probability is
+r=4t^4(1-t^2), and its full first jet at t=0 depends only on Dt. Every
+fixed finite non-clean terminal score therefore has zero first source.
+Complete fine-pointer conditional-work entropy and complete fresh
+coherent-record entropy have order O(t^4 |log|t||), with the oldRIGHT
+baseline fixed and rank births controlled analytically.
+
+Use G=[[sqrt(p),-p],[p,sqrt(p)]], the original Golden ROTATION.
+Two final rotations give baseline (p^6,4p^3) and
+Dq1=kappa Dt, kappa=8p^(9/2)>0. The actual reporter is still 0/10
+with costs1/2. For a genuinely admitted canonical fixed prefix of cost T,
+the two specified complete terminal prices satisfy
+
+    C=T+1+q1,
+    D(C-S_coh/log(phi)) = kappa gamma_h DJ2,
+    D(C-H_phi(full pointer))
+         = kappa (4+log_phi(4)) gamma_h DJ2.
+
+Thus both preserve the original 16+24+2 source, the same
+lambda_minus(2^-20), the same exact finite stationary family and its
+owned midpoint recovery. FixedRIGHT logical-input preparation rows
+vanish and the existing causal theorem resolves generated intermediate
+state rows. An original additional internal source carried by F is
+preserved, not made zero by this identity.
+
+Minimality is now an actual calculation: among postrotations G^k with
+k>=0, k=0 has zero first probability source; k=1 has baseline(p,p^2)
+and its pointer Cost-Info source cancels exactly; k=2 is the least
+nondegenerate choice for both readings. This is not global D_min
+attainment or a claim that the stationary Einstein points are minima.
+
+This replaces the uncomputed terminal-work/entropy part of the old
+residual FOR THESE declared execution/price contracts. It does not
+identify them with compulsory Book03 Info or the absolute Book amplitude,
+does not erase independently charged H/R/upstream or intermediate-state
+prices, and does not derive admission/selection of the physical
+programme. The full price and actual prospective minimum remain the
+physical continuation. No GR/lifecycle/assembly status is promoted.
+
+The [pinned independent review and exact run](sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/MINIMAL_GOLDEN_REVIEW.md)
+distinguishes algebraic acceptance from physical selection. The new
+checker tests complete matrix/jet outputs, noncommuting unseen-block
+variations, finite coin coefficients and the SAME finite-z matter ratio.
+Historical geometry and continuum suites were consumed, not rerun.
