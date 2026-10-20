@@ -199,3 +199,18 @@ Independent PASS checkers (all within this PR's existing research source directo
 - check_car16_literal_star_density.py
 
 Independent remote CI/physical acceptance NOT claimed.
+
+
+### 9.1. Exact original Golden native scale AND observable factorization (no new detector prerequisite)
+
+The dedicated CAR16 note now strengthens §9 from the older 1/2 Julia scale to the ORIGINAL native Golden two-density contraction T=p Lambda(U), p=phi^-1, with fully retained BAD probability at identity p (GOOD p²). For arbitrary locally admissible U, the complete constructed Julia/Choi marked JOINT event is
+
+    q_mark,p(U) = p² |det(I+U)|²/256,
+    q_good,p(U) = p² det(I+U^(dagger_n) U)/16,
+    q_bad,p(U)  = 1-q_good,p(U).
+
+The **literal original old star cell** remains exactly −D_sD_t log(q_mark,p(exp(s X_*B) exp(tC)))|0, independent of Julia success amplitude. In the original Book Golden-log action units this equality reads L_star=(ln phi)·D_sD_t[−log_phi q_mark,p]|0. Neither expression introduces a fitted gravitational scale. Matching the baseline Golden masses DOES NOT identify this constructed Choi experiment with the original same-label full128 port Kraus: in the latter K0,k=p Lk and K1,k=sqrt(p)Lk have the same common data Lk and their conditional port weights do not change with a J23 field tangent. The physical programme still has to select the correct *multirecord* comparison, with complete failure, observer, controller, preparation and code cost.
+
+**More decisive:** the already-owned original #334 native Golden TWO-output-density six-phase CAR atlas has exact Jacobian determinant p^9/15552000 !=0. Consequently its six measured scalar coordinates locally parametrise all six proper-Lorentz directions; by the analytic inverse-function theorem even the marked probability above (and the exact literal original star density) factors through those six EXISTING comparison scalar readouts. A separately executed Choi mark is therefore not a necessary NEW QUANTUM RESOURCE merely to make this finite geometrical scalar observable. This is a mathematical local **observable-factorization** result, not Book physical action selection: the real paid two-density atlas, its preparation/anchor/oldRIGHT reference and quantum clock remain to be enacted.
+
+The source obligation of §7.3 is now narrower and noncircular: prove that the mandatory complete native Golden/CAR16/full128 G0 Cost−Info action actually weights a scalar whose field derivative is the original star face source (using the already visible six comparison directions), or calculate the exact discrepancy. If and only if that same-action selection holds, the finite geometrical 16+24 Euler equality follows by the pointwise literal density identity; uniform curved joint roots, matter Ward and refinement remain independently OPEN. No claim of compulsory selected full128 Choi flag, no M1 uniqueness, GR_closed=false.
