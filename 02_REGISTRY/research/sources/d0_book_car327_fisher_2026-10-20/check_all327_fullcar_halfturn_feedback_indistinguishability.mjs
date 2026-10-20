@@ -465,6 +465,61 @@ const independentSourceRatios=[
 assert(Math.abs(independentSourceRatios[0].ratioOfTwoDifferentPhysicallyTypedMetrics-
                 independentSourceRatios[1].ratioOfTwoDifferentPhysicallyTypedMetrics)
        >1e-6,"full native 327 Book and Golden face metrics should not be blindly identified");
+
+// EXACT ORIGINAL Golden conditional p:p² CODE price, ALL 17 native
+// labels kept. For one original SO2 triangle and its TRUE reversal,
+// the complete relative-code excess has an EXACT signed difference:
+//
+//   Δ_code(θ):=D_phi(q17(θ)||mu)-D_phi(q17(-θ)||mu)
+//           = -[q_J+(θ)-q_J-(θ)]
+//           = -2sqrt2 k m(θ) sinθ,
+//
+// with m=(1+cosθ)/2 and k=p^4/(24*4096).
+// Its FIRST ODD-CONTRAST source is Δ'_code(0)=-2sqrt2 k;
+// the source of ONE forward code separately is half this:
+// D'_phi(q17(θ)||mu)|0=-sqrt2 k.
+// The ratio -Δ/(2sqrt2 k m) extends ANALYTICALLY to sinθ at
+// θ=pi, even though raw floating KL subtraction is ill-conditioned
+// there and individual qlogq terms need not be C2.
+// This is an actual mathematically admissible ORIGINAL fixed GOLDEN
+// code-reference, NOT proof that Book03/H+J+R selects its price.
+const fixedNativeGoldenP=(Math.sqrt(5)-1)/2,
+      loggold=Math.log(1/fixedNativeGoldenP);
+const fullReference=completeGolden17(0),goldenCode=fullReference.slice();
+for(let j=0;j<6;j++){
+ const mass=fullReference[2*j]+fullReference[2*j+1];
+ goldenCode[2*j]=mass*fixedNativeGoldenP;
+ goldenCode[2*j+1]=mass*fixedNativeGoldenP**2;
+}
+assert(Math.min(...goldenCode)>0&&
+       Math.abs(goldenCode.reduce((s,x)=>s+x,0)-1)<1e-14,
+ "actual original Golden17 p:p² code not faithful");
+const KLφ=(q,code)=>q.reduce((sum,v,i)=>
+ sum+(v>0?v*Math.log(v/code[i])/loggold:0),0);
+let maxOddGoldenSourceError=0,maxOddRecoveredCurvatureError=0;
+for(let j=0;j<=4096;j++){
+ const θ=2*Math.PI*j/4096,qr=completeGolden17(θ),
+       qback=completeGolden17(-θ);
+ const delta=KLφ(qr,goldenCode)-KLφ(qback,goldenCode);
+ const m=(1+Math.cos(θ))/2,
+       analytic=-2*Math.SQRT2*kGolden*m*Math.sin(θ);
+ maxOddGoldenSourceError=Math.max(maxOddGoldenSourceError,
+                                 Math.abs(delta-analytic));
+ if(m>1e-12){
+  const sinRecovered=-delta/(2*Math.SQRT2*kGolden*m);
+  maxOddRecoveredCurvatureError=Math.max(maxOddRecoveredCurvatureError,
+                            Math.abs(sinRecovered-Math.sin(θ)));
+ }
+}
+const hCode=.0015;
+const oneSource=(KLφ(completeGolden17(hCode),goldenCode)-
+                 KLφ(completeGolden17(-hCode),goldenCode))/(2*hCode);
+const singleAnalytic=-Math.SQRT2*kGolden,
+      contrastAnalytic=2*singleAnalytic;
+assert(maxOddGoldenSourceError<3e-14&&
+       maxOddRecoveredCurvatureError<3e-9&&
+       Math.abs(oneSource-singleAnalytic)<1e-10,
+ "original Golden signed relative CODE source did not recover nonlinear holonomy");
 console.log(JSON.stringify({
  result:"PASS_GLOBAL_ALL327_FULLCAR16_F_SQUARING_Z2_INDISTINGUISHABILITY",
  actualNativeCarrier:{sceneVertices:33,fullOriginalDirectedEdges:718,
@@ -491,6 +546,17 @@ console.log(JSON.stringify({
     positiveFisherWeightFloor:minConditionalFaceFisher,
     pureOriginalGaugeFisherSourceError:maxGradientFaceError,
     nativeBookVsGoldenTwoDistinctMetrics:independentSourceRatios,
+    exactGoldenNativeOddCodeSource:{
+       referenceAlphabet:"fixed original p:p² on six marked +- pairs, full17 other outcomes",
+       fullPhiRelativeCodeDifference:"-2sqrt2*k*m(theta)*sin(theta)",
+       fullPhaseContrastAnalyticSource:contrastAnalytic,
+       nativeSingleForwardCodeAnalyticSource:singleAnalytic,
+       nativeSingleForwardCodeFiniteSource:oneSource,
+       full4097AngleExactSourceDifferenceError:maxOddGoldenSourceError,
+       recoveredSinMaxAbsoluteErrorNearPi:maxOddRecoveredCurvatureError,
+       ratioHasAnalyticPhaseLimitAtPiButNumericallyIllConditioned:true,
+       originalPhysicalG0CodeSelectorStillMissing:true},
+
 
     movingBookWeightsCannotRemoveConditionalFisherIfPositive:true},
 
