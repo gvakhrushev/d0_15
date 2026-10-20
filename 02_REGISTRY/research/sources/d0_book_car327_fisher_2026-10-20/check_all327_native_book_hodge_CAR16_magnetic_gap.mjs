@@ -316,6 +316,105 @@ while(byZone.some(v=>v.length)){
 assert(matching.length===15&&
  new Set(triangle.concat(matching.flat())).size===33,
  "original 33 determinant triangle+15 disjoint pair monomial lacks proof");
+
+// FULL finite stationarity-constrained BOOK Cost–Info dual:
+/// I(nu)=sum_uv nu_uv ln[nu_uv/(nu_u P0_uv)] >=0,
+/// log(rho(P0 exp(eps a))) = sup_divfree_nu
+///    {eps sum(nu_uv a_uv)-I(nu)}.
+///
+/// It follows by taking conditional KL to the Doob-tilted transition
+/// P_eps; endpoint log r_eps cancels because nu is stationary.
+/// Hessian of the SUP-ensemble is Q327, while the MINIMAL required
+/// cycle-current cost is its Legendre dual with Hessian Q327^-1.
+/// This is a finite variational theorem on ACTUAL original path
+/// flow distributions, not a fitted gravitational action or claim
+/// that fundamental M1 forces a specified nonzero current.
+function transitionTilt(a,eps){
+ const B=A.map(row=>row.slice());
+ for(let e=0;e<M;e++){
+  let [i,j]=edges[e],q=Math.exp(eps*a[e]);
+  B[i][j]=q;B[j][i]=1/q;
+ }
+ let v=Array(N).fill(1/Math.sqrt(N)),lam=0;
+ for(let k=0;k<180;k++){
+  const w=matvec(B,v);lam=norm(w);v=w.map(x=>x/lam);
+ }
+ const PP=B.map((row,i)=>row.map((x,j)=>x*v[j]/(lam*v[i])));
+ let stationary=Array(N).fill(1/N);
+ for(let t=0;t<300;t++){
+  let q=Array(N).fill(0);
+  for(let i=0;i<N;i++)for(let j=0;j<N;j++)
+   if(A[i][j])q[j]+=stationary[i]*PP[i][j];
+  stationary=q;
+ }
+ const residual=Math.max(...stationary.map((x,j)=>
+  Math.abs(x-PP.reduce((sm,row,i)=>sm+stationary[i]*row[j],0))));
+ assert(residual<4e-13,"actual tilted Book Markov stationary flow");
+ let current=0,rate=0;
+ const flow=Array.from({length:N},(_,i)=>PP[i].map(x=>x*stationary[i]));
+ for(let e=0;e<M;e++){
+  let [i,j]=edges[e],v=flow[i][j],w=flow[j][i];
+  current+=(v-w)*a[e];
+  rate+=v*Math.log(PP[i][j]/P[i][j])+
+        w*Math.log(PP[j][i]/P[j][i]);
+ }
+ return {current,rate,press:Math.log(lam/rho),flow,pi:stationary};
+}
+let exactRateDualError=0,strictVariationalMargin=Infinity,dualTests=[];
+for(const [name,field] of [["CP",cp],["random",random],["singleEdge",sparse]]){
+ for(let eps of [.04,.1,.2]){
+  const tr=transitionTilt(field,eps);
+  const residual=Math.abs(tr.rate-(eps*tr.current-tr.press));
+  exactRateDualError=Math.max(exactRateDualError,residual);
+  assert(residual<2e-12,"original exact finite Markov level2.5 Legendre KL");
+  const flowMix=Array.from({length:N},(_,i)=>tr.flow[i].map(
+   (x,j)=>.72*x+.28*(pi[i]*P[i][j])));
+  const row=flowMix.map(v=>v.reduce((a,b)=>a+b,0));
+  let I=0,J=0,divErr=0;
+  for(let i=0;i<N;i++)for(let j=0;j<N;j++)if(A[i][j]){
+   const x=flowMix[i][j];
+   I+=x*Math.log(x/(row[i]*P[i][j]));
+   const sign=(i<j?1:-1),e=(i<j?edges.findIndex(q=>q[0]===i&&q[1]===j):
+                                      edges.findIndex(q=>q[0]===j&&q[1]===i));
+   J+=x*sign*field[e];
+  }
+  for(let i=0;i<N;i++){
+   let incoming=0;for(let j=0;j<N;j++)incoming+=flowMix[j][i];
+   divErr=Math.max(divErr,Math.abs(row[i]-incoming));
+  }
+  const gap=tr.press-(eps*J-I);
+  strictVariationalMargin=Math.min(strictVariationalMargin,gap);
+  assert(divErr<2e-12&&gap>1e-7,
+   "finite Book stationary current KL dual should be strict off optimum");
+  const q=Q(field,field);
+  dualTests.push({name,eps,current:tr.current,rate:tr.rate,
+   LegendreEqualityError:residual,
+   nonoptimalStationaryFlowStrictGap:gap,
+   localCurrentQuadraticExpected:tr.current**2/(2*q),
+   actualRateToLocalQuadratic:tr.rate/(tr.current**2/(2*q))});
+ }
+}
+const invCholesky=rhs=>{
+ const n=327,y=Array(n).fill(0),x=Array(n).fill(0);
+ for(let i=0;i<n;i++){
+  let s=rhs[i];for(let j=0;j<i;j++)s-=Chol[i][j]*y[j];
+  y[i]=s/Chol[i][i];
+ }
+ for(let i=n-1;i>=0;i--){
+  let s=y[i];for(let j=i+1;j<n;j++)s-=Chol[j][i]*x[j];
+  x[i]=s/Chol[i][i];
+ }
+ return x;
+};
+const currentGradient=Array.from({length:327},(_,i)=>Math.sin((i+1)*.113));
+const dualCovector=invCholesky(currentGradient);
+let inverseFisherMaxResidual=0;
+for(let i=0;i<327;i++){
+ const v=dot(Gram[i],dualCovector)-currentGradient[i];
+ inverseFisherMaxResidual=Math.max(inverseFisherMaxResidual,Math.abs(v));
+}
+assert(inverseFisherMaxResidual<2e-11,
+ "the exact native 327-dimensional current-rate Hessian inverse is not defined");
 const ell=Math.log((1+Math.sqrt(5))/2),interiorCost=3;
 let minAdmittedCost=Infinity,minNonGradientGlobalBookGap=Infinity;
 const globalComparisons=[];
@@ -374,6 +473,10 @@ console.log(JSON.stringify({
   minimumPositiveOffshellCyclicPressureGap:minNonGradientGlobalBookGap,
   fullPositiveDomainCyclicGlobalTests:globalComparisons,
   genericCARMixingAndDarkKernelRevival:genericTransferRanks,
+  exactBookCurrentRateLegendre:{maximumEqualityError:exactRateDualError,
+   nonoptimalStationaryFlowMinimumStrictGap:strictVariationalMargin,
+   full327CurrentHessianInverseMaxResidual:inverseFisherMaxResidual,
+   finiteOriginalCurrentTests:dualTests},
   determinantLaurentNonzeroMonomial:{nativeTriangle:triangle,
    reciprocalPerfectMatchingCount:matching.length,
    signedCoefficientNonzero:true}},
