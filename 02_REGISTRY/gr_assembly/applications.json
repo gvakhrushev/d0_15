@@ -1211,7 +1211,7 @@
           "sha256": "d58f481dcc57f0c98a841f09df885e21d144538a21b02e858528be9abad2250c"
         }
       ],
-      "reported_state": "Pinned to live Draft #334 head 0e1849bd7bf6a87e9731801206fd5ccd1041bb63; all 7 replayed source files match that exact head. The full128 pointer checker passes 326 exact controls and the complete two-round Shannon checker passes 1,803 controls, including all 16,384 ordered histories and zero-support mixed-derivative checks. This remains finite assigned-instrument evidence only: no physical per-increment admission or complete Cost-Info action is shown, and there is no accepted application to constitutive, native_sector, matter_source_ward or positive_gr and no scientific promotion."
+      "reported_state": "Historical evidence is pinned to #334 commit 0e1849bd7bf6a87e9731801206fd5ccd1041bb63, not its current head 63da786b4d4f8416bb0699305ab599794068de3f; the recorded source hashes identify that exact snapshot. At that snapshot the full128 pointer checker passed 326 exact controls and the complete two-round Shannon checker passed 1,803 controls, including all 16,384 ordered histories and zero-support mixed-derivative checks. This remains finite assigned-instrument evidence only: no physical per-increment admission or complete Cost-Info action is shown, and there is no accepted application to constitutive, native_sector, matter_source_ward or positive_gr and no scientific promotion."
     },
     {
       "id": "native-retained-record-oneway-actuation-gap",
