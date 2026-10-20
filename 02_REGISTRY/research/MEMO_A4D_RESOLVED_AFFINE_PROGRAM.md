@@ -420,6 +420,66 @@ primitive, but does NOT physically select signed Spin sheets,
 the native CAR/Dirac/Role 40-Euler or Einstein refining root.
 GR_closed=false.
 
+### Prospective D_min cannot uniquely select oriented Einstein source from a reversal-symmetric complete task (20 Oct)
+
+NEW compiled-target fundamental Lean owner:
+\`EndogenousActionQuantum.ProspectiveReversalSymmetry\`, including
+\`reverse_minimum\`, \`unique_minimum_signed_zero\`,
+\`nonzero_minimum_pair\` and \`unique_nonzero_impossible\`.
+If the ENTIRE actually selected full Book03/M1/G0 state/boundary/
+future-tests/allowed histories AND the real all-clock/work/Cost−Info
+price are invariant under original loop reversal, then every
+prospective minimum has an equally-priced reversed minimum.
+A nonzero reversal-odd signed source therefore cannot be selected
+as a UNIQUE physical minimum unless the actual initial state,
+observer/reference, physically required future check or COMPLETE
+paid historical source breaks reversal, or else a separately
+proved deterministic tie-selection law is available. This is
+NO coin-flip argument, and scalar Book reversal symmetry alone
+does NOT imply symmetry of the actual full physical M1/G0 action.
+
+NEW TRUE K(9,11,13) witness:
+[A4D_PROSPECTIVE_DMIN_REVERSAL_SYMMETRY_CHIRAL_EULER_SOURCE_AND_GOLDEN17_INFORMATION_COST_2026_10_20.md](A4D_PROSPECTIVE_DMIN_REVERSAL_SYMMETRY_CHIRAL_EULER_SOURCE_AND_GOLDEN17_INFORMATION_COST_2026_10_20.md).
+On ALL original 718 directed edges and 8440 based n2/n3 loops
+with honest heterogeneous symmetric primitive Cost>=1 and the
+EXISTING original full17 two-fresh Golden/Bell instrument,
+ALL 143480 actual possible labelled probabilities normalize.
+The real ABC pair [0,9,20,0] vs inverse [0,20,9,0]
+has EXACT identical scalar Book price 5.10 but opposite original
+Golden J23 curvature marks ±2 sin(.083)=±0.16580947.
+The current future task with a fixed physically validated
+positive-J23 sign requirement selects the correct orientation
+BEFORE execution without adding a new action coefficient; the
+native M1/G0 derivation of that orientation requirement remains OPEN.
+Over all 8440 scalar-reversal-symmetric Book paths the aggregate
+signed first source cancels, despite nonzero LOCAL oriented marks.
+This is exactly why scalar-only \`argmin\` is insufficient to
+deduce unique signed Palatini from one even source.
+
+NEW native statistical lower bound prevents cheap-detector fallacy:
+the full17 original per-face Golden marked-reversal Bhattacharyya
+coefficient is \(1-2k\sin^2\theta\), \(k=p^4/(24*4096)\).
+On the entire actual original Book-clock law the coefficient is
+\(1-w_{\rm touched}2k\sin^2\theta\), with
+\(w_{\rm touched}=0.00818847\). At θ=.083 the necessary
+IID sample count to achieve 10% equal-prior Bayes error is
+≥25,038,353 for preselected genuine ABC full17 queries and
+≥3,057,756,836 for passive 8440-clock full17 queries.
+These are rigorous information necessary (NOT sufficient) counts,
+not physical D0 ActionProtocol costs, and NOT the strong
+discrete Q8-center two-port experiment (a DIFFERENT exact task).
+The actual G0 selection/paid clock, preparation/reference and
+future observables must be derived before making any
+"MDL picks the cheaper apparatus" physical claim.
+
+The physical Einstein gate is therefore specifically:
+prove ONE admitted FULL future oriented M1 task and its paid
+complete original Book03 H+J+R/Cost−Info programme; compute the
+genuine signed first 16+24+CAR Euler across that SAME execution
+and show equality with the native original nonflat Palatini
+owner under the accepted observer and controlled h-refinement.
+GR_closed=false.
+
 ### Route update — nonlinear completion is no longer the open step
 
 For the already-built golden-AF geometric branch, the all-order nonlinear
