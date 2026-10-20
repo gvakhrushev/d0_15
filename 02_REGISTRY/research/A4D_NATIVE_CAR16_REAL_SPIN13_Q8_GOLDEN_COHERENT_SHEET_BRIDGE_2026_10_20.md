@@ -142,3 +142,54 @@ This strengthens the precise physical next step: the existing \`Omega8Center\`, 
 \`sources/d0_native_spin_q8_car16_2026-10-20/check_original_car16_clifford_spin_golden.py\` constructs the genuine all16 Jordan–Wigner \(c,c^\dagger\) integer matrices in original ABCD role order, checks all four-mode CAR and **all sixteen exact Cl(1,3) anticommutators**, six exact Lorentz conjugation commutators, true CAR parity commutation, exact faithful quaternion Q8 central commutator, all eight distinct sheet operators, finite proper Spin boost/rotation and 2π/4π, genuine literal \`fullStep\` 4×4 and the conditional sign-sensitive COMPLETE Golden positive probabilities, and the nonunitary CAR boost gate. Machine checks of source algebra are exact integer; only exponential group sanity checks use floating arithmetic. No physical G0 programme or new Lean compiler is claimed by this certificate.
 
 \`GR_closed=false\`.
+
+
+## 7. Even stronger native result: Spin-INVARIANT observer pairing and an automatically FUTURE-CAUSAL CAR16 current
+
+The non-orthogonality of a Lorentz boost in the positive Euclidean Fock norm (§5) has a precise **intrinsic** resolution at the level of the already-owned CAR16 *indefinite observer form*, without any new metric or mass scale. The SAME time generator \(\mathscr A=\Gamma^0\) is real symmetric with \(\mathscr A^2=I\) and exactly 8 positive plus 8 negative eigenvalues. From (3)–(5), for every original Spin Lie generator \(\Sigma_{ab}\) one has
+\[
+\boxed{\Sigma_{ab}^{T}\mathscr A+\mathscr A\Sigma_{ab}=0.}\tag{12}
+\]
+Therefore every connected Spin group element \(S\) constructed by exponentials of these **native six** generators preserves the original observer bilinear form:
+\[
+\boxed{S^T\Gamma^0S=\Gamma^0.}\tag{13}
+\]
+This is not ordinary real orthogonality \(S^TS=I\); boosts are indefinite-orthogonal. It matches the already-owned *moving observer-positive form* concern in \`MEMO_A4D_COMMON_CENTER_MATTER_GROUPOID_ACTION.md\`, but does NOT by itself construct its true finite located common-center action.
+
+For any **real** original CAR16 spin state \(\psi\in\mathbb R^{16}\) define, using NO new primitive observable,
+\[
+\boxed{
+J^a(\psi)=\psi^T\Gamma^0\Gamma^a\psi,\qquad
+J^0=\psi^T\psi\ge0.
+}\tag{14}
+\]
+Set \(\alpha_j=\Gamma^0\Gamma^j\). From the original CAR exactly
+\[
+\alpha_j^T=\alpha_j,\quad
+\alpha_j^2=I,\quad
+\alpha_i\alpha_j+\alpha_j\alpha_i=0\ (i\ne j).
+\tag{15}
+\]
+For any spatial Euclidean unit vector \(n\), the real symmetric matrix \(A_n=\sum_jn_j\alpha_j\) has \(A_n^2=I\), so its spectral norm is EXACTLY one and
+\(|\psi^T A_n\psi|\le\psi^T\psi\). Maximizing the left over \(\|n\|=1\) gives the **global exact future-causal quadratic current bound**
+\[
+\boxed{
+(J^0)^2-(J^1)^2-(J^2)^2-(J^3)^2\ge0,\quad
+J^0\ge0,
+\quad |\boldsymbol J|\le J^0.
+}\tag{16}
+\]
+No continuum approximation, freely chosen light-speed cap, detector threshold, Born assumption or fitted bilinear constant enters this elementary native CAR proof. Under a full connected native Spin transformation \(\psi\mapsto S\psi\), the current transforms as the vector of the associated proper Lorentz transformation (possibly with conventional active/passive sign for boost orientation). For \(S_{01}(t)=\exp(t\Gamma^0\Gamma^1/2)\) as in §2,
+\[
+\boxed{
+\begin{pmatrix}J'^0\\J'^1\end{pmatrix}
+=\begin{pmatrix}\cosh t&\sinh t\\\sinh t&\cosh t\end{pmatrix}
+\begin{pmatrix}J^0\\J^1\end{pmatrix},\quad
+J'^2=J^2,\ J'^3=J^3.
+}\tag{17}
+\]
+Algebraically the lift both preserves the indefinite Spin bilinear (13) and carries an observer-dependent **positive** density \(J^0=\|\psi\|^2\) satisfying the causal bound (16). Thus the noncompact boost is not an *algebraic positivity impossibility*: it requires the ACTUAL native preparation/detector to change the observer/positive norm correctly, rather than declaring a nonorthogonal \(S\) to be an unconditional fixed-norm Golden unitary. The true paid G0 total completely positive instrument, oldRIGHT/reference, matter kinetic action, real 4D coframe and divergence/conservation Ward have still NOT been constructed.
+
+Finally, the native \(-I_{16}\) central Q8 acts as \(\psi\mapsto-\psi\), so this bilinear current \(J^a\) by itself is BLIND to central -1, just as any unconditioned bilinear measurement is. The **conditional two-line Golden coherent INTERFERENCE** in §4 is therefore genuinely necessary to distinguish relative central memory on this carrier. This pinpoints which physical observables detect matter transport versus matter spin-sheet memory; neither may be silently substituted for the other.
+
+New independent native certificate controls use 100 random existing Fock16 state vectors as examples but all structural identities and the causality bound are proved by the finite CAR algebra itself. \`GR_closed=false\`.
