@@ -157,3 +157,138 @@ The \(A_{\mathrm{probe}}\) in this numerical checker is a nontrivial moving orig
 An independent exact-golden 33/718/1287 checker \`check_native_book_scale_ward_zero_shell.mjs\` verifies ORIGINAL arbitrary heterogeneous 718 K with moving vertex Info, the exact native \(W(se)=s^{3\beta}W(e)\) law, critical \(\beta=-2/3\) scaling resonance, and the exact on-shell all-three-variable Hessian block factorization \((e_1,e_2,z)\): \(W_*=0.20802402498244402\), \(H_{ee}=2W_*\left(\begin{smallmatrix}1&-1\\-1&1\end{smallmatrix}\right)\), \(H_{ez}=0\), \(H_{zz}=1.4\), max finite-difference error \(3.4\times10^{-9}\). This is a mathematical source normal form regression, not claimed to be the original whole GR action.
 
 **GR physical verdict:** (1)–(6) CLOSE the OBSERVATION and projective-normalization problem for the original six odd Palatini faces, even with fully moving Book absolute costs and depth-specific acceptance. (7)–(12) provide a strictly weaker on-shell same-action normal-form criterion that could close the common matter/metric source on actual nonflat Einstein roots WITHOUT equating all microscopic fields/actions offshell. But no current owner proves that the obligatory G0/Book03 full H+J+R with true Cost-vs-Info, early/late verifier, oldRIGHT/reference, full128 fine/coherent PREP, clock/work, and independent matter Euler has form (10) or its nonresonant scale law. No fabricated Newton/Λ coefficient, no silent 653-mode drop, no GR CLOSED or raw #216 promotion. The only admissible next P0 is to obtain this literal FULL action's native 2-jet on ONE nonflat Golden LEFT site and test (10) versus an explicitly measured genuine residual, then consume the already-owned all40 and controlled refinement.
+
+
+## 6. NEW GLOBAL MINIMAL-CLOCK THEOREM: the native Perron clock is a PROJECTIVE MARKOV CYCLE SHAPE, with no free verifier or pressure scale
+
+**Fresh 20-Oct consumption, stronger than the original fixed-stage-prior Ward.** The earlier owned \`A4D_BOOK_Z3_GOLDEN_AF_EXACT_WEYL_COMPENSATOR_AND_ONSHELL_GR_SOURCE_2026_10_20.md\` observes that original two-versus-three clock contrast has "+1" homogeneous Book pressure charge and cancels the "-1" Perron absolute pressure shift. The \`A4D_COMPLETE_STAGED_143484_BOOK_CLOCK_ABSOLUTE_SOURCE_SELF_CALIBRATION_2026_10_20.md\` owner recovers absolute K only when the original two depths share a verifier (or relative verifier costs are independently calibrated). The NEW statement separates their entire physical observable content, eliminates fixed moving-stage-preparation assumptions for the RELATIVE geometry, and produces an exact three-flow native Euler covector.
+
+### 6.1. A universal all-depth native identity, stronger than cancelling first derivatives
+
+Let K(y) be any original strictly positive-supported 33×33 \(\varphi^{-s}\) transfer on the EXACT 718 native directed K(9,11,13) edges, with arbitrary smooth asymmetric original Cost–Info source y. Let \(\lambda(y)>0,r(y)>0\) be its Perron pair and \(P_{uv}=K_{uv}r_v/(\lambda r_u)\), the ALREADY OWNED Doob transition. Then on the entire positive domain:
+\[
+ K=\lambda\,D_rP D_r^{-1},\qquad
+ \boxed{Z_n(K):=\operatorname{Tr}K^n=\lambda^n\tau_n(P),\quad
+ \tau_n(P):=\operatorname{Tr}P^n.}\tag{13}
+\]
+The proof is EXACT diagonal similarity and cyclicity of trace for every integer n, not flat-tangent algebra or a long-time limit.
+
+Since original K has ZERO diagonal, \(Z_1=0\). The genuine original two-cycles and three-cycles imply \(Z_2>0,Z_3>0\). Therefore (2,3) is the FIRST POSSIBLE pair of consecutive *positive* closed-time moments on this ACTUAL scene (not a tuned clock cut). The already owned compensated observed scalar reduces identically to
+\[
+\boxed{
+\Xi_{3,2}(K):=-\log_\varphi\lambda+
+ \log_\varphi\frac{Z_3}{Z_2}
+=\log_\varphi\frac{\tau_3(P)}{\tau_2(P)}.
+}\tag{14}
+\]
+This is a GLOBAL POSITIVE MARKOV-SHAPE observable. It neither requires a new absolute meter nor determines the absolute primitive Book price: all dependence on any uniform positive K scale is gone BY EXACT IDENTITY, not merely first-order cancellation. For every n with \(Z_n,Z_{n+1}>0\), the same theorem gives \(\Xi_{n+1,n}=\log_\varphi(\tau_{n+1}/\tau_n)\). No independent arbitrary clock/fugacity coefficient is added.
+
+**Book Weyl decomposition without inventing a new conformal field:**
+\[
+\boxed{
+W_3(K):=\frac{Z_3(K)}{7722}
+=\lambda^3\underbrace{\frac{\tau_3(P)}{7722}}_{H_3(P)>0},\quad
+\widetilde e_x
+=\lambda_x^{3/2}\sqrt{H_3(P_x)}\,e_x.
+}\tag{15}
+\]
+Thus original true Book coframe pressure consists of its ABSOLUTE Perron carrier \(\lambda^3\) and a **scale-free, purely normalized entire 718-transition return-shape** \(H_3(P)\). In an original 4D Role site-conditioned architecture this holds at EACH x for its actual K_x, not by assuming a universal 33-vertex scene is itself the 4D lattice.
+
+### 6.2. NEW EXACT THREE-NATIVE-FLOW SOURCE: true 2-tick, 3-tick and stationary archive in ONE divergence-free Ward
+
+For each supported original edge \(u\to v\) and each n with \(Z_n>0\), let
+\[
+f^{[n]}_{uv}=\frac{K_{uv}(K^{n-1})_{vu}}{Z_n},\qquad
+\mu_{uv}=\pi_uP_{uv}.
+\]
+For n=2 this is EXACT original two-tick return \(\frac{K_{uv}K_{vu}}{Z_2}\); n=3 is original 7722-word three-tick based closed-history frequency \(\frac{K_{uv}(K^2)_{vu}}{Z_3}\). ALL THREE distributions satisfy
+\[
+\sum_{uv}f^{[n]}_{uv}=\sum_{uv}\mu_{uv}=1,\qquad
+\sum_v f^{[n]}_{uv}=\sum_vf^{[n]}_{vu},\quad
+\sum_v\mu_{uv}=\sum_v\mu_{vu}.
+\]
+These are exactly the true conservation/record structure of the ORIGINAL complete path/tick archives; no independent signed current is defined by hand.
+
+The FULL moving original source equations are exact:
+\[
+D\ln Z_n=n\sum_{uv}f^{[n]}_{uv}\,D\ln K_{uv},\qquad
+D\ln\lambda=\sum_{uv}\mu_{uv}\,D\ln K_{uv}.
+\]
+Hence the new native CLOCK–PERRON–ARCHIVE source on ANY admitted Cost/Info field tangent V is
+\[
+\boxed{
+D_V\Xi_{3,2}
+=-\sum_{uv}
+\underbrace{\left(3f^{[3]}_{uv}-2f^{[2]}_{uv}-\mu_{uv}\right)}_{\mathcal J^{\mathrm{clock-archive}}_{uv}}
+D_V s_{uv}.
+}\tag{16}
+\]
+This is a **complete exact single scalar source**, not an added gravitational action, tuned coupling or a different stochastic history. Its true edge-current coefficient has
+\[
+\boxed{\sum_{uv}\mathcal J_{uv}=0,\qquad
+\partial_1\mathcal J=0.}\tag{17}
+\]
+Thus it annihilates EVERY original common Cost/Info edge shift and EVERY original endpoint-Info coboundary exactly. The genuine geometric SHAPE component satisfies
+\[
+\boxed{
+D_V\ln H_3(P)=-3\ln\varphi\sum_{uv}(f^{[3]}_{uv}-\mu_{uv})D_Vs_{uv},
+\quad
+D_V\ln W_3=3D_V\ln\lambda+D_V\ln H_3.
+}\tag{18}
+\]
+The shape source is a true *difference between short closed triangle history and long-run Perron archive current*. Both are divergence-free and normalised; no unknown 653-mode field is needed to compute it. On the original reversible fixed Cost base, its projections may be checked against the already owned \(32_{\rm future}\oplus326_{\rm evenDark}\oplus327_{\rm oddCycles}\) source Hodge; there is NO claim all geometric sources live in only 32 future modes for arbitrary primitive Cost motions.
+
+The earlier SITE-radial invertibility theorem is sharpened WITHOUT recomputing a 16L⁴ Jacobian. With \(W_x=\lambda_x^3H_3(P_x)\) its exact m×m native radial response on real Role sites \(m=L^4\) splits
+\[
+\boxed{
+\mathsf R_{xy}=\delta_{xy}
++\frac32D_{\mathrm{scale}_y}\ln\lambda_x
++\frac12D_{\mathrm{scale}_y}\ln\tau_3(P_x).
+}\tag{19}
+\]
+This separates the *absolute pressure source* from the *normalized archive-shape source* at every site. The actual physical smooth e→K map and real scale input must still be derived from original G0; this is an exact COMPUTABLE criterion if it is.
+
+### 6.3. STRONG NEW GLOBAL INVERSE: even INDEPENDENT unknown moving depth verifiers CANNOT hide projective geometry
+
+**THEOREM (verifier-blind entire-positive-sector inverse).** Suppose the entire original 718 based length-two and 7722 based length-three positive loop acceptances are read on ONE declared same-history mathematical native-type protocol, with all original Golden GOOD/BAD/Bell failure branches summed rather than dropped, but with **COMPLETELY UNKNOWN, FIELD-DEPENDENT AND INDEPENDENT** total depth factors \(\alpha_2(y)>0,\alpha_3(y)>0\):
+\[
+R_{uv}(y)=\alpha_2(y)K_{uv}(y)K_{vu}(y),\qquad
+T_{abc}(y)=\alpha_3(y)K_{ab}(y)K_{bc}(y)K_{ca}(y).
+\tag{20}
+\]
+Here \(\alpha_n=g_n\beta_n\kappa_n\) MAY include different unknown early-prep and different unknown late verification rules \(\kappa_2\ne\kappa_3\), with arbitrary real source jets. What is REQUIRED is only one COMMON acceptance factor for all true original paths of each FIXED depth (not a path-dependent hidden filter) and preservation of their actual full directed labels.
+
+Define for each native unoriented edge \(b_{uv}=\frac12\ln R_{uv}\), and for every ORIGINAL ABC triangle
+\[
+F_{abc}=\frac12\ln\frac{T_{abc}}{T_{acb}}.
+\]
+Its 1287 values obey the genuine 960 independent triple-contrast compatibility equations because they come from one original additive edge K. Construct the owned exact antisymmetric cochain right inverse:
+\[
+\omega_{ab}=F_{ab c_0},\quad
+\omega_{bc}=F_{a_0bc}-F_{a_0bc_0},\quad
+\omega_{ca}=F_{ab_0c}-F_{ab_0c_0}-F_{a_0b_0c}+F_{a_0b_0c_0}.
+\]
+Set \(\widetilde K_{uv}=\exp(b_{uv}+\omega_{uv})\) on all original directed supported edges. Its logarithmic symmetric part differs from that of actual K only by the COMMON \(\frac12\ln\alpha_2\); its triangle circulation classes agree EXACTLY with actual K. Since \(H_1\) of the ORIGINAL filled triangle complex vanishes, the remaining odd difference is a vertex coboundary. Consequently there exists a positive diagonal D such that
+\[
+\boxed{\widetilde K=\sqrt{\alpha_2}\,D K D^{-1},\qquad
+P(\widetilde K)=P(K),\quad\Xi_{3,2}(\widetilde K)=\Xi_{3,2}(K).}\tag{21}
+\]
+This is a **GLOBAL ANALYTIC BIJECTION TO THE COMPLETE 685-DIMENSIONAL NORMALIZED HISTORY DYNAMICS** from depth2/3 relative accepted loop rates. The unknown ratio \(\alpha_3/\alpha_2\) plays NO ROLE; \(\alpha_2\) vanishes in Perron normalization; its absolute/first/second/moving sources cannot contaminate the COMPLETE reconstructed P or \(\Xi\) on an open chart. No fixed Golden depth-prior assumption, common κ, long-clock limit or scalar Book meter is required for the **RELATIVE** source.
+
+The earlier stage-complete owner correctly says absolute \(\lambda\) is NOT identifiable if independent unknown \(\kappa_2,\kappa_3\) vary: the exact rescaling \(K\mapsto c(y)K,\ \kappa_n\mapsto c(y)^{-n}\kappa_n\) preserves ALL recorded positive stage-labelled probabilities while changing \(-\log_\varphi\lambda\). Equation (21) explains precisely WHAT SURVIVES the obstruction: the entire normalized transition P, every geometric ratio derived from it and ALL its local Cost/Info source jets. This is a mathematically sharper division of full native microphysics into **projective distinguishability** and **absolute charged history**. It does not pretend the absolute Book H+J+R price can be read from the relative archive.
+
+**Original BORN/BOOK carrier firewall:** A full physically compulsory \`GoldenCoherentMemory.fullStep\` must still execute/price the 2/3 based loops with genuinely path-independent within-depth verification and retain the actual full oldRIGHT/reference/clock/FAIL labels. A true unknown path-dependent \(v_{\gamma}(y)\) would break (20), and no normalised projective theorem could compensate. Even if the relative scene P is observed, this does not itself supply its 4D Role-face/Lorentz controller, CAR/Clifford Hodge contraction, coupled 16+24+matter Euler, or physical action selection.
+
+### 6.4. One REAL SCENE record can source the clock AND the conformal metric shape without another GR operator
+
+Combine the existing exact positive native Golden-p Bell17 odd-face square-root decoder (all coframe/link 40 original Euler sources with both face orientations) with (21). The full ACTUAL-TYPE conditional event normalizer factors \(Q_{\gamma,r}=\alpha_{|\gamma|}K_\gamma q_r(P_{\gamma})\) have TWO distinct types of field source:
+
+1. Geometric **relative** Lorentz orientation and shape: \(q_r=Q_{\gamma,r}/\sum_{r'}Q_{\gamma,r'}\), its full Golden root marks, exact odd \((P_{face}-P_{face}^{-1})/2\), and all 40 field/face Euler of the **existing** geometrical six-star. Class scale and every source jet cancel because this is a literal positive conditional observable, not a counterterm.
+2. Original Book scalar **projective** scene geometry: \(P(K)\) and its complete source, and the first minimal short/long triangle clock contrast (14)–(17). These survive INDEPENDENT moving 2/3 verifier scale.
+3. The **absolute** scalar Book pressure \(\lambda\), primitive split Cost vs Info, actual full programme H+J+R, CAR hidden coherence, prepared programme/clock/work, and physical coupling normalization. THESE DO NOT follow from (1)–(2) and must be selected as genuine physical source data.
+
+On a given nonflat original Palatini–CAR root of the ALREADY OWNED geometrical action A with \(A=DA=0\), any **actually selected** multiplicative same-run physical action \(S_{\rm full}=B(z)+\lambda(z)^3H_3(P(z))A(e,U,\Psi)\), where z is independent native history and B is its true charged absolute clock/prepare/work action, has ZERO mixed history/geometric Hessian and reduced \(H_{\rm geom}=\lambda^3H_3 H_A\) after genuine internal stationarity — the earlier owned §4 double-Schur theorem. This is a CONSEQUENCE conditional on the physical action's genuine selected factorization and actual roots, not permission to simply declare that multiplication to be Book03.
+
+**Decisive physical next test in EXISTING #334:** The observable and clock projects are now mathematically closed even under moving independent depth rules. Therefore use one literal original Golden LEFT 4D live-row/oldRIGHT controller and test whether its independently selected COMPLETE Book03 \(H+J+R+\mathrm{Cost}-\mathrm{Info}\) assigns a common face multiplier \(\lambda^3H_3(P)\) to the original degree2 Palatini+densitized CAR source, with its real actual absolute pressure/prep/work Euler and a realizable native internal root. If true, use the exact site-radial inverse and the original full nonlinear geometry/physical-volume/G0 soundness/refinement. If false, record the real residual and do NOT call another projective clock observable a law of gravity. \`GR_closed=false\`.
+
+**Reproduction:** \`sources/d0_native_projective_radial_2026-10-20/check_native_23_verifier_blind_book_shape_and_flow.mjs\`. Independent V8 whole-original 33/718/1287 numeric controls verified three heterogeneous asymmetric Cost/Info backgrounds with two completely unrelated moving positive stage filters: \(\|\widetilde P-P\|_\infty\le9.1\cdot10^{-17}\), clock shape error < 1e-15, exact additional scalar Perron scale \(\lambda(\widetilde K)/\lambda(K)=\sqrt{\alpha_2}\), and exact three-flow native derivative (16) vs finite differences error 7.3e-11 at a separate moving physical field. Prior original common-verifier/absolute Book pressure theorems are consumed, not re-claimed as physically selected here.
