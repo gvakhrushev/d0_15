@@ -973,4 +973,71 @@ theorem nativeQ8ThreeGateDistinctSourceOperators :
   native_decide
 
 
+
+/-! ## PROSPECTIVE MDL FOR THE COMPLETE ORIGINAL OPERATOR, NOT ONLY THE PORT
+
+The earlier 3-gate equal-inventory comparison IJI/JII is minimal
+for the COARSE native Golden bright-port distinction, but leaves a
+COMMON Q8 j-rotation on the entire spin/reference carrier.  If the
+full task specifies the EXACT reference identity and the EXACT
+relative-sign operator on ALL quaternion coordinates, those three
+gates do not solve the same task. Appending the three ALREADY OWNED
+common-j forward rotations (j^4=1) gives a SIX-gate matched-inventory
+comparison; the former EIGHT-gate one was not prospective-minimal.
+
+This is especially relevant to physical D_min: minimize over
+alternatives matching the SAME COMPLETE admitted future observable
+contract, not a coarser detector subtask or a history selected earlier.
+The exact six-word existence and full matrix identities are Lean;
+global <6 minimality is independently exhaustively checked on
+all 127 possible original gate words of lengths 0..6, and not
+advertised as a separately compiled Lean minimality theorem.
+-/
+
+/-- Fixed native positive Q8 source, all operators forward only:
+literal chronological IJIJJJ -> entire identity I8. -/
+def nativeQ8SixGateFullReferenceWord : List Bool :=
+  [true,false,true,false,false,false]
+
+/-- Same actual generator multiset, but JIIJJJ -> entire native
+relative sign R8, including the quaternion-reference subsystem. -/
+def nativeQ8SixGateFullOrderWord : List Bool :=
+  [false,true,true,false,false,false]
+
+theorem nativeQ8SixGateSamePrimitiveInventory :
+    nativeQ8SixGateFullReferenceWord.length = 6 ∧
+    nativeQ8SixGateFullOrderWord.length = 6 ∧
+    nativeQ8SixGateFullReferenceWord.count true = 2 ∧
+    nativeQ8SixGateFullOrderWord.count true = 2 ∧
+    nativeQ8SixGateFullReferenceWord.count false = 4 ∧
+    nativeQ8SixGateFullOrderWord.count false = 4 := by
+  decide
+
+theorem nativeQ8SixGateFullMatchedReference :
+    nativeQ8ChronologicalWord nativeQ8SixGateFullReferenceWord = 1 := by
+  native_decide
+
+theorem nativeQ8SixGateFullMatchedOrder :
+    nativeQ8ChronologicalWord nativeQ8SixGateFullOrderWord =
+       relativeSignQ := by
+  native_decide
+
+/-- The 3-gate assay is NOT a literal exact full-carrier replacement
+for the six- or eight-gate identity/sign end-point goal. -/
+theorem nativeQ8ThreeGateNotFullyNormalized :
+    nativeQ8ChronologicalWord nativeQ8MinimalReferenceWord ≠ 1 ∧
+    nativeQ8ChronologicalWord nativeQ8MinimalOrderWord ≠ relativeSignQ := by
+  native_decide
+
+/-- Both full-output-precise original six-gate words have the SAME
+terminal Q8 operators as the previous eight-gate source words. -/
+theorem nativeQ8SixAndEightSameCompleteOutcomes :
+    nativeQ8ChronologicalWord nativeQ8SixGateFullReferenceWord =
+      nativeQ8ChronologicalWord originalQ8IdentityWord ∧
+    nativeQ8ChronologicalWord nativeQ8SixGateFullOrderWord =
+      nativeQ8ChronologicalWord originalQ8OrderWord := by
+  constructor
+  · rw [nativeQ8SixGateFullMatchedReference, nativeQ8GroupedWordEvaluates]
+  · rw [nativeQ8SixGateFullMatchedOrder, nativeQ8OrderedWordEvaluates]
+
 end D0.Representation.OrderMemoryControl
