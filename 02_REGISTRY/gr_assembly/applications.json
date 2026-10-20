@@ -1728,6 +1728,44 @@
         }
       ],
       "reported_state": "The four exact adjoint coframe-gradient Ward directions are certified by 18 Laurent-symbol checks and the selected branch gives two nonzero fifth-order compatibility polynomials. This blocks only a fifth-order extension of that representative; the lower-order homogeneous kernel space remains untested."
+    },
+    {
+      "id": "original-q8-spin-sheet-current-fullstep-boundary",
+      "owner": "Open scientific integrator PR #334 at pinned head 8456cd4ba1228752ac1de80baf97050c240fdaba",
+      "statement": "On the original 33/359/718 scene graph, the exact 327-label triangle inverse and all 960 admissibility checks reconstruct the Q8 spin sheet, while an SO/vector-exterior CAR16 readout kills the central -1 and the current GoldenCoherentMemory.fullStep signature has no Q8 or scene-path input. This identifies a missing typed physical bridge, not a no-go for another admitted completion.",
+      "interface": "q8-spin-sheet-native-bridge-v1",
+      "outcome": "positive",
+      "kind": "exact-finite",
+      "scope_level": "finite",
+      "hypotheses": {
+        "original_scene": "The carrier is the original K(9,11,13) graph with 33 vertices, 359 undirected edges, 718 directed edges and 1287 filled ABC triangles.",
+        "so_detector": "The compared CAR16 detector factors through the SO/vector-exterior representation, under which the Q8 central -1 acts as identity.",
+        "current_fullStep": "The current Lean fullStep takes only real a,p inputs and returns a Matrix (Fin 4) (Fin 4) ℝ; its signature does not include UQuat, a scene face or a Spin representation.",
+        "scope": "The signature audit does not exclude a different physically admitted and paid extension, and it does not derive a 4D spin structure."
+      },
+      "evidence": [
+        {
+          "ref": "8456cd4ba1228752ac1de80baf97050c240fdaba",
+          "path": "02_REGISTRY/research/A4D_Q8_SPIN_SHEET_327_TRIANGLE_INVERSE_AND_960_COHERENCE_GATES_2026_10_20.md",
+          "sha256": "f41ee9b75ae2030ca213cd6fd31d906b26107cc7eb9de4a26fe51dfb2bc09074"
+        },
+        {
+          "ref": "8456cd4ba1228752ac1de80baf97050c240fdaba",
+          "path": "02_REGISTRY/research/sources/d0_native_two_three_clock_2026-10-20/check_q8_spin_sheet_triangle_inverse.py",
+          "sha256": "dbcb1ff5540c11cfe6d8eb525d2f817dfd5ff63026f42d5a8bae5c74cd47207f"
+        },
+        {
+          "ref": "8456cd4ba1228752ac1de80baf97050c240fdaba",
+          "path": "03_FORMALIZATION/D0/Foundation/Omega8Center.lean",
+          "sha256": "3adb5c0a3d1b3d352cd90debabd7be4009a168dd67e97f317161777b61f745f4"
+        },
+        {
+          "ref": "8456cd4ba1228752ac1de80baf97050c240fdaba",
+          "path": "03_FORMALIZATION/D0/Representation/GoldenCoherentMemory.lean",
+          "sha256": "6ea993e22c8b7d0b8a93b9537d51893cb4aff45af858d82ec7f9005ead96e2d7"
+        }
+      ],
+      "reported_state": "Result-only: the Q8 checker was rerun and passed its 327-triangle inverse, rank-327 and 960 parity controls. The exact type boundary is pinned to the current fullStep source. No application to constitutive, native_sector or positive_gr is accepted; GR_closed=false."
     }
   ],
   "applications": [

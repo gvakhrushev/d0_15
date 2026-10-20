@@ -128,6 +128,15 @@
       "refinement": "Fixed finite-dimensional test and local first/order jets; no uniform refinement or continuum estimate.",
       "scope": "Exact finite order-sensitive Lorentz/CAR readout candidate. Literal fullStep selection, compulsory whole H+J+R price, physical admission, preparation/clock/controller equations and GR closure remain open."
     },
+    "q8-spin-sheet-native-bridge-v1": {
+      "carrier": "The original 33-vertex K(9,11,13) graph, its 718 directed edges and 1287 filled ABC triangles, compared with the original Q8 center, CAR16 vector/exterior readout and current GoldenCoherentMemory.fullStep owner.",
+      "action": "Exact finite Q8/group-algebra and graph-topology comparison plus the declared fullStep operator signature; no new D0 action or physical selection.",
+      "variations": "GF(2) triangle-boundary inverse and finite Lean type/signature audit; no coframe or Lorentz-link Euler closure.",
+      "source": "No Einstein or matter-source equality. The result tests whether the declared readout can carry the original Q8 central order-memory bit.",
+      "normalization": "Original Q8 central sign and GF(2) parity; no fitted coefficient or Einstein calibration.",
+      "refinement": "Exact finite graph and current typed-owner audit only; no continuum spin-structure or refinement claim.",
+      "scope": "Finite representation boundary only. Physical Q8 admission/payment, a typed fullStep path-memory bridge, complete H+J+R source, Ward identity, refinement and GR remain open; this is not a no-go for other D0 completions."
+    },
     "book-ordered-memory-readout-v1": {
       "carrier": "Original K(9,11,13) with 33 vertices and 718 directed edges; two original closed 9-edge histories and a conditional SO+(1,3) edge-transport assignment.",
       "action": "Original additive scalar Book03 Cost-Info path law alongside its algebra-valued memory class; no complete physical action is selected.",
