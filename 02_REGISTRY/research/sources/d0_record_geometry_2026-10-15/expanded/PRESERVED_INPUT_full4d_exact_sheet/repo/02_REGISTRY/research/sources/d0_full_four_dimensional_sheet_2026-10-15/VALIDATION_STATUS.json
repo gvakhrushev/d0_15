@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-15",
+  "scientific_base": "61688727ab3273bf35318f10ca789937b0b8f9b3",
+  "scope": "FINITE_L4_FULL_4D_OPEN_CONNECTION_SHEET",
+  "normal_full_replay": "PASS",
+  "optimized_full_replay": "PASS",
+  "normal_plus_optimized_combined_command": "TIMEOUT_DURING_SECOND_RUN_THEN_SECOND_REPEATED_SEPARATELY_PASS",
+  "executed_mathematical_mutants_rejected": 4,
+  "independent_full_6144_row_jax_diagnostic": "PASS_NUMERICAL_ONLY",
+  "new_Lean_compilation": false,
+  "whole_repo_ci_executed": false,
+  "remote_publication_completed": false,
+  "git_terminal_failure": "Could not resolve host: raw.githubusercontent.com",
+  "connector_write_actions_exposed": false,
+  "upstream_interval_alias_reproduced": true,
+  "upstream_L8_corrected_replay_done": false,
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41"
+}

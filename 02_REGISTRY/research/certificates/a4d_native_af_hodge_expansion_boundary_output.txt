@@ -1,0 +1,26 @@
+theorem D0.Research.NativeAFHodgeExpansionBoundary.actual_hodge_scale_matches_phase_metric : ∀ (N : ℕ),
+  D0.Geometry.forwardDifferenceScale N ^ 2 * D0.Geometry.ArchivePhaseEdgeMetricScale.phaseEdgeMetricLength N ^ 2 = 1 :=
+fun N =>
+  Eq.mpr
+    (id
+      (congrArg
+        (fun _a =>
+          D0.Geometry.forwardDifferenceScale N ^ 2 *
+              D0.Geometry.ArchivePhaseEdgeMetricScale.phaseEdgeMetricLength N ^ 2 =
+            _a)
+        (Eq.symm (D0.Geometry.ArchivePhaseEdgeMetricScale.metric_scale_eq_inverse_square_edge_length N))))
+    (Eq.refl
+      (D0.Geometry.forwardDifferenceScale N ^ 2 * D0.Geometry.ArchivePhaseEdgeMetricScale.phaseEdgeMetricLength N ^ 2))
+'D0.Research.NativeAFHodgeExpansionBoundary.actual_hodge_scale_matches_phase_metric' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+theorem D0.Research.NativeAFHodgeExpansionBoundary.actual_hodge_square_is_owned_scaled_laplacian : ∀ (N : ℕ)
+  (ψ : D0.Geometry.ArchiveCochain N),
+  D0.Geometry.hodgeCarDirac N (D0.Geometry.hodgeCarDirac N ψ) = D0.Geometry.cochainDifferenceLaplacian N ψ :=
+fun N ψ => D0.Geometry.hodgeCarDirac_sq N ψ
+'D0.Research.NativeAFHodgeExpansionBoundary.actual_hodge_square_is_owned_scaled_laplacian' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ D0.Geometry.car_annihilate_anticommutator_int._native.native_decide.ax_1_1,
+ D0.Geometry.car_create_anticommutator_int._native.native_decide.ax_1_1,
+ D0.Geometry.car_mixed_anticommutator_int._native.native_decide.ax_1_1]

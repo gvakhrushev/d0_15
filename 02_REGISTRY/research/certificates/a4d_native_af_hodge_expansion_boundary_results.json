@@ -1,0 +1,583 @@
+{
+  "checker": "02_REGISTRY/research/certificates/a4d_native_af_hodge_expansion_boundary_check.py",
+  "checker_sha256": "789bc6a52ac77c4c3fbf1fc30f663e9561cb0e2eef319636717b826f18c00276",
+  "checks": {
+    "AF_capacity_formula": 1,
+    "AF_capacity_ratio_increment_identity": 35,
+    "AF_capacity_strictly_accelerates": 35,
+    "AF_capacity_witnesses": 1,
+    "AF_certificate_result_pass": 1,
+    "AF_does_not_claim_physical_expansion": 1,
+    "AF_inherited_metric_remains_fixed": 1,
+    "AF_owner_source_git_blob": 61,
+    "AF_owner_source_sha256": 61,
+    "AF_result_binds_Lean_capsule": 1,
+    "AF_result_binds_Lean_output": 1,
+    "AF_result_binds_checker": 1,
+    "AF_result_binds_note": 1,
+    "AF_three_inclusion_capacity_recurrence": 35,
+    "AF_tick_does_not_set_normalized_diameter": 35,
+    "Hodge_certificate_and_result_pass": 1,
+    "Hodge_certificate_binds_Lean_capsule": 1,
+    "Hodge_certificate_binds_checker": 1,
+    "Hodge_certificate_binds_note": 1,
+    "Hodge_certificate_binds_receipt": 1,
+    "Hodge_certificate_control_count": 1,
+    "Hodge_does_not_claim_GR": 1,
+    "Hodge_does_not_claim_physical_refinement": 1,
+    "Hodge_formula_is_all_size": 1,
+    "Hodge_result_binds_output": 1,
+    "Hodge_source_pin_primary_and_prior_input_sha256": 4,
+    "Hodge_source_pin_toolchain_input_sha256": 3,
+    "Hodge_source_pin_transitive_d0_source_sha256": 39,
+    "Lean_actual_square_declaration_compiled": 1,
+    "Lean_output_has_no_error_or_sorry": 1,
+    "Lean_scale_bridge_has_standard_axioms_only": 1,
+    "Lean_scale_declaration_compiled": 1,
+    "Lean_square_retains_imported_native_decide_boundary": 1,
+    "antipode_attains_coordinate_bound": 128,
+    "dropping_L_prefactor_mutates_diameter": 128,
+    "neighbor_resolution_is_inverse_L": 128,
+    "normalized_diameter_exactly_one": 128
+  },
+  "exact_control_count": 844,
+  "lean_axiom_boundary": {
+    "actual_hodge_scale_matches_phase_metric": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "actual_hodge_square_is_owned_scaled_laplacian": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound",
+      "D0.Geometry.car_annihilate_anticommutator_int._native.native_decide.ax_1_1",
+      "D0.Geometry.car_create_anticommutator_int._native.native_decide.ax_1_1",
+      "D0.Geometry.car_mixed_anticommutator_int._native.native_decide.ax_1_1"
+    ]
+  },
+  "lean_capsule": "02_REGISTRY/research/certificates/a4d_native_af_hodge_expansion_boundary.lean",
+  "lean_capsule_sha256": "d9faf6c837db8c158ddedca1bb9bb967523d9cdbddddaeefc20d003659207d74",
+  "lean_command": [
+    "lake",
+    "env",
+    "lean",
+    "../02_REGISTRY/research/certificates/a4d_native_af_hodge_expansion_boundary.lean"
+  ],
+  "lean_command_cwd": "03_FORMALIZATION",
+  "lean_compiler_exit_code": 0,
+  "lean_output": "02_REGISTRY/research/certificates/a4d_native_af_hodge_expansion_boundary_output.txt",
+  "lean_output_sha256": "bfb3ed3945fce86a452b830c601ac12407f698bd02dc785abc6ac280082d7756",
+  "proof": "02_REGISTRY/research/A4D_NATIVE_AF_HODGE_EXPANSION_BOUNDARY_2026-10-16.md",
+  "proof_sha256": "ac66e883fc4731ea6cdfb29c1e300ec46ac39085f3992a95029b727f86b549ce",
+  "scope": {
+    "AF_capacity_is_spatial_volume": false,
+    "AF_tick_to_Hodge_L_map_derived": false,
+    "Hodge_all_size_metric_theorem_fully_Lean_formalized": false,
+    "all_AF_to_physical_metric_couplings_excluded": false,
+    "changing_q_D_or_operator_scale_derived": false,
+    "direct_AF_capacity_to_owned_normalized_Hodge_metric_expansion": "SCOPED_NO_GO",
+    "physical_expansion_curvature_source_Ward_or_GR_derived": false
+  },
+  "source_pins": {
+    "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md": {
+      "git_blob": "ecdd31abb52c94e9f2a157a80c7c49a6f5ac31aa",
+      "sha256": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d"
+    },
+    "02_REGISTRY/research/A4D_NATIVE_AF_HODGE_EXPANSION_BOUNDARY_2026-10-16.md": {
+      "git_blob": "2314ebdeb37c991103a41923e880fe285f7cf349",
+      "sha256": "ac66e883fc4731ea6cdfb29c1e300ec46ac39085f3992a95029b727f86b549ce"
+    },
+    "02_REGISTRY/research/A4D_NATIVE_AF_TRACE_PREPARATION.md": {
+      "git_blob": "3cbb805fb72b501a0eb1d7d17b9f037dff115880",
+      "sha256": "9c7e4d582d5627bf5b926a6f8ad15743ff473e9bcc22e741c42309dabb854299"
+    },
+    "02_REGISTRY/research/A4D_NATIVE_CLOSED_RECORD_ENGINE.md": {
+      "git_blob": "e3101fe88797778f076c14b772dbaffaabe387d6",
+      "sha256": "36eaeb8617630acaeace297fa64e7b8c33b92fc4824133a2b8e3515c4c79520a"
+    },
+    "02_REGISTRY/research/A4D_NATIVE_CONSTRAINED_PRICE_SOURCE.md": {
+      "git_blob": "b6895f33cba6ea68ae9cb2d055ec0d830a3fc12e",
+      "sha256": "e2615abad73460950050ce529f45979b07c4ca5e011bfc203f9180a0f08674f6"
+    },
+    "02_REGISTRY/research/A4D_NATIVE_CORRELATED_CURRENT_TRANSITION.md": {
+      "git_blob": "abcfad24a9b2a6995fe9d8d3c08e6ce7b71a4ba8",
+      "sha256": "12a3922b4b0fb170f5451e32e6c5af9d8e341317d96883a1b63b348652eaa820"
+    },
+    "02_REGISTRY/research/A4D_NATIVE_ENGINE_CORRELATED_CURRENT_EXTENSION_2026-10-15.md": {
+      "git_blob": "6b9e609e2dbaa13c0e2d8149b30c44b35c3ec5d7",
+      "sha256": "c1e06f4e260613eeb17190df116831bf5cb2a7b9ac23a4772f8166956498b00f"
+    },
+    "02_REGISTRY/research/A4D_NATIVE_FIBONACCI_RECORD_ACTIVATION.md": {
+      "git_blob": "938cde2d3862ee329f2028bc738ad4704e9178b1",
+      "sha256": "012455bdd3845e1d95f5270bbdcf105c753013d6e0b2339e2c001332e1fe4ee6"
+    },
+    "02_REGISTRY/research/A4D_NATIVE_FOCK_RECORD_BINDING.md": {
+      "git_blob": "88c4a6c71f1e6e39d129552686c99bf42e01f95d",
+      "sha256": "d85e57979a61972e641eae24442a776133c429c8696d0948590f6d290a60b045"
+    },
+    "02_REGISTRY/research/A4D_NATIVE_GOLDEN_COST_REFINEMENT.md": {
+      "git_blob": "573e2d70c1d7cbefd35670431b1ab9b87624dbdd",
+      "sha256": "9971253d0ba13b9b66ff28a6bedf166b9de265821a9380b969ba6e23ec9ee0f3"
+    },
+    "02_REGISTRY/research/A4D_NATIVE_HODGE_CONNES_METRIC.md": {
+      "git_blob": "c0a43e17f3c5e72609e0880f2cebe1e628289c49",
+      "sha256": "6836cf4082a6dae3240a8e42ed7891a6bef654f540ed31c7e1a5700e9d5c4169"
+    },
+    "02_REGISTRY/research/A4D_NATIVE_JOINT_FIELD_QUOTIENT.md": {
+      "git_blob": "3ed86bd268808fbde867752a454c0c678b2a8a27",
+      "sha256": "991b42eac645bb7e5e4df55f9be439f8e873b9403b4ff2a6dc1061a49dfe3e2e"
+    },
+    "02_REGISTRY/research/A4D_NATIVE_RECORD_METRIC_CHRONOLOGY.md": {
+      "git_blob": "fda1294b8d9794a62b86faaa19e3cc1a459e031d",
+      "sha256": "601e5bb9203789a66ad2a945aad30da92b6233ac40417d54c6b47c95dc43536b"
+    },
+    "02_REGISTRY/research/A4D_NATIVE_SHARED_SCENE_PRICE_SOURCE.md": {
+      "git_blob": "c20afcb63f955bfcfb25c561fd853cf30a21af40",
+      "sha256": "9986e1afc9d7cbb8b47dafcd40e3f79d8dcb08fb3833c84db9adae3aa5126291"
+    },
+    "02_REGISTRY/research/A4D_NATIVE_SOLDERED_HEAT_SOURCE.md": {
+      "git_blob": "30697ffcfac273b4c7f5319e6cf8e4b31639c461",
+      "sha256": "be0c07f8636d051d7fe50cdbc6241a172c7148c694e93a0ba1b4140899c5321a"
+    },
+    "02_REGISTRY/research/A4D_NATIVE_WEIGHTED_DIRAC_BOUNDARY.md": {
+      "git_blob": "2de670c0e2f9a53104be8105a3554cdd9aaa85e7",
+      "sha256": "8c4c662f9f05430ef9f9ff91c670b15e6c678c9b2b1c0ced90e08c79f507e83c"
+    },
+    "02_REGISTRY/research/ATORUS_DIRECT_LORENTZ_CONTINUUM_REALIZATION.md": {
+      "git_blob": "34e63e51257807d5ba76a93a18536122f18321b6",
+      "sha256": "be345663fffd7c9df2f5160383d208bd108b31b933e0c6763963ba02a6fe2123"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_af_hodge_expansion_boundary.lean": {
+      "git_blob": "d65f176fbfff2587d83788c1f05e966d001d6698",
+      "sha256": "d9faf6c837db8c158ddedca1bb9bb967523d9cdbddddaeefc20d003659207d74"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_af_hodge_expansion_boundary_output.txt": {
+      "git_blob": "8ab6b0d2bcff1f8ad0f41bc88f397ccbde571828",
+      "sha256": "bfb3ed3945fce86a452b830c601ac12407f698bd02dc785abc6ac280082d7756"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_closed_record_engine.lean": {
+      "git_blob": "abddaf3adad6af4fe330fe90e1cfb1ca5ab42a85",
+      "sha256": "d8a8815866a829d026d3331aa75996563f796639e2026027cb63c7c0c30de096"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_closed_record_engine.py": {
+      "git_blob": "9dbc4d6f06ee1994fc775f57469cdb6a19d9f8ac",
+      "sha256": "7aead2716c7bf7899a134eedbf4b87dbe1ef9c85900189b5afc8cdfeed13f0f9"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_closed_record_engine_output.txt": {
+      "git_blob": "9b9356d95ff0de4053b04ab6ddcf0c56ddb6f6f2",
+      "sha256": "451a5901dd8b7b6b621f25ca97627d016a22de0c4661ef8b3c7f853f1bb611a2"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_closed_record_engine_results.json": {
+      "git_blob": "8f033dd935ee9d935370f2244ebeaa134274431b",
+      "sha256": "78ca33f8b840dbc97835ca92721a48a0f77c387cf401bae6406386ecef082101"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_constrained_price_source.lean": {
+      "git_blob": "c2844e4bb386c92238a5ff361c970d9bd54cd607",
+      "sha256": "34c377ccd3e99980feb1c7d032a11a4f4b17fa77245e3325ac8572dc55b5669e"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_constrained_price_source_certificate.json": {
+      "git_blob": "a27d5973ca9adab82333b2527a1af0d26fffb7dd",
+      "sha256": "aa2dbae962450fa1aa358553758ce22dfdc37947bb5878193ad895d4187f2614"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_constrained_price_source_check.py": {
+      "git_blob": "af5133077833e9feaa7b60a0eabfc7515510e803",
+      "sha256": "0eaa7e42d6623fcf5d3861209e93430f8ab39a694b07eeba570483ce935e9cb6"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_constrained_price_source_output.txt": {
+      "git_blob": "a4830f75f1bfd3d21d80a7977716271e2e79c84d",
+      "sha256": "407acffd08fc247f2aca7969936d7b9ad65018945784ff3f488683ef6a45dd8e"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_constrained_price_source_results.json": {
+      "git_blob": "2fd0bdef8467ceae71b18c0c500f409d7fca22b3",
+      "sha256": "e8bb8f7e777637034a9945a5ec7671dd872f5fa4c61f6ec7a5ad218088797f37"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_correlated_current_transition.lean": {
+      "git_blob": "abc1fbf8c85b58ee7e302aa40ac5a0b93ef5358a",
+      "sha256": "c382e6317b6d302e6b490ab91edcb7bcb88146fe4c10f90b0d4f614af4ff763d"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_correlated_current_transition.py": {
+      "git_blob": "b38c64dba84aac6d844d1dd719b39c18d7aeae8b",
+      "sha256": "e659733a8ab4fea30f46de56663dc344249420c7e0a3ea65b2aa1a2091b76e0d"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_correlated_current_transition_certificate.json": {
+      "git_blob": "167095aa730e20a49090ba45ebc42b3988581976",
+      "sha256": "fa609b9d112d688f1ee4a78586db5ed25fc435041ae055ae73da0afc93af2c0c"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_correlated_current_transition_check.py": {
+      "git_blob": "72c1954889e814b3be73e7aacb42dcbab69e2fa7",
+      "sha256": "4a6cf3c0b11b9221386b96269c1762b06fb4ac7911a8bc2bf6249f81e4f66ed8"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_correlated_current_transition_lean_output.txt": {
+      "git_blob": "c2dd5341f1720923aacd41ba5fa3a4b87f2ee85b",
+      "sha256": "8f9b4ae1e5270abfb93d1032d55bda73dfa3f8433722551385afa43aeccd555a"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_correlated_current_transition_lean_results.json": {
+      "git_blob": "a1aab6b46ea2ce98982b8f41c92d335ddbd9493c",
+      "sha256": "eb1343a64c5630fb3167eaa8b4f36595bd84f53e3a0b918e449af1bf5c76067e"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_engine_correlated_current_extension.lean": {
+      "git_blob": "06e327bc5aa20231b40831168c9f51202f20c4b7",
+      "sha256": "dd6a7d6afad8717176a1028403307a847fb1ca5c7695c0c24e1c36c0d40ae66d"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_engine_correlated_current_extension_check.py": {
+      "git_blob": "f134307e5ecd73621387adada0d796d97fb63ad0",
+      "sha256": "41799c23b455cf79e5641cc5ce61012c4fb821a9a1b54ed052a979d6d63beac2"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_engine_correlated_current_extension_lean_output.txt": {
+      "git_blob": "8be7f0243ff25051c0b49664708cd4c5e4cb1a14",
+      "sha256": "f5717fcf823999081c15cfdf24c10d0972078c09d903251d232bf4efc378c8e7"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_engine_correlated_current_extension_results.json": {
+      "git_blob": "b2db2ad02b1904e492100c41c9187ec371c8fcb7",
+      "sha256": "cb0f75f145a7f4b572a3ee59ce3e3cbf97b7d477f1baf810398ec5da5319b078"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_fibonacci_record_activation.lean": {
+      "git_blob": "dc80e07e8cb56aa79909ae4a58904af2bb219759",
+      "sha256": "7445b7c3827a372f4a90eaad5acfbd4523b7852e31778162fe17b155374cd30b"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_fibonacci_record_activation.py": {
+      "git_blob": "47761f34bfffb4fe104ca66e0e1b61a509b9bc7a",
+      "sha256": "9a016fa4b1a8261a29f626ed7450db7987727957e634799519aede0e3ab587ee"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_fibonacci_record_activation_certificate.json": {
+      "git_blob": "f004f8bb0c5fe10c055c0dddb007829ef3dac5c7",
+      "sha256": "c11c3a887761aa11fe7f54f3b8e88c49010726941128dff07e06eef2709c7df7"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_fibonacci_record_activation_check.py": {
+      "git_blob": "f40441d5d42088cc088f15b98d1b6659b6cbbf44",
+      "sha256": "a6d09cc3925b9a5acb415e1bac62a829bcef177f98fc2c0bd29a890cb6bafbf5"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_fibonacci_record_activation_output.txt": {
+      "git_blob": "b7e5d4078a5bee644788e95232e381f889c28ac2",
+      "sha256": "e49e126ebe18a1a26609fb02a19f8f008f30660e411670145caa0be0f1d904fa"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_fibonacci_record_activation_results.json": {
+      "git_blob": "efc709565c65e39793e8a717fcf79247ea19003d",
+      "sha256": "875200fb8337d1f4d9f1361bbc3f73c22c43b039c584371ea11be1a1710aea9c"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_fock_record_binding.lean": {
+      "git_blob": "0c31a2e2cc1c32c11a8a9680e10047a7cb3a097f",
+      "sha256": "77a9fbf29ebf1868bd3025873a1d9c35cb42c50b4699b239351f17b5b0ce3326"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_fock_record_binding_certificate.json": {
+      "git_blob": "d4c2b070c4bb6303671791bfa50c0cb5ca7137c6",
+      "sha256": "8cba34862bf6af48c8c49d75c5e3a5a2a80948f9f0bf2e1818c42f43b370a238"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_fock_record_binding_check.py": {
+      "git_blob": "73569597055f577d9819990de4c684365b87bd6c",
+      "sha256": "42e83e6f93b48ce4d4420f829d8e79c993a215d7b1a4c6a2f812bd45fd914078"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_fock_record_binding_output.txt": {
+      "git_blob": "ffc795f5093f34b9ad906392925277a08f3be333",
+      "sha256": "8b6526036286f72c1fce08a5682774723541090cce9ffe9af1d75d5580c597ca"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_fock_record_binding_results.json": {
+      "git_blob": "eb0c8c1b3df857b329c4c47204c2f77c7c6251f9",
+      "sha256": "4c28dd449b844e5a8332d56d457c2bbcd83853069563542dc12f0238439510a8"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_hodge_connes_metric.lean": {
+      "git_blob": "04e0c95671b9a2ed0082941eae19e4b32469a4c1",
+      "sha256": "b2a983084a6d212e4341c1a3d7078fcd37ed966a5d6aa12bc0d34fa9f22bebce"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_hodge_connes_metric_certificate.json": {
+      "git_blob": "84d855e6423c613536419cc1ece14b9cba255145",
+      "sha256": "7dd49e784d2f1c9247b3480393128b8c12824fb1fe9418ca839ca2db4db0fe2f"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_hodge_connes_metric_check.py": {
+      "git_blob": "76769c00b8022a5cacda3aab4848dfbf9b2da863",
+      "sha256": "2426fdaa24e19fd69aed9feb66507b32d6c52c433945b427ee3978f5bcc4ba23"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_hodge_connes_metric_output.txt": {
+      "git_blob": "a912d59f674f205609f1e4da5b8fb01fe000a403",
+      "sha256": "7de7b886fef9d3163ad45522fe3b30d6cce0edc132ecf6dcab646a48e6575408"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_hodge_connes_metric_results.json": {
+      "git_blob": "3c042cd386c81d45a20e869ed0318885f4f7221d",
+      "sha256": "01bf1f694ceaf8ccfff1f850067acb3a6a4989f4c2e7c9c10cb7e7bedf8d226f"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_joint_field_quotient.lean": {
+      "git_blob": "3ab9e3a5b2b4bdb9664ab154f7419ba6feb24252",
+      "sha256": "24a7428d143a1c8d2ae5f599f0faebc8f27b20671700c1dac9744bc54704d5b6"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_joint_field_quotient_certificate.json": {
+      "git_blob": "f27f8e182c1ae0d76f1b899cba99cba69dcf09d7",
+      "sha256": "8807a418e67a4b2ac89495b7f80ab7e2924349067dea3f1aab5b8addf5b29f89"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_joint_field_quotient_check.py": {
+      "git_blob": "f2085d29bbfc8a1300f8730e408b7c34b35096e0",
+      "sha256": "f2b62beb1b99b095e9e89ee9c328b71478589a04c61be2d00097f760420eae60"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_joint_field_quotient_output.txt": {
+      "git_blob": "0b67f76f995544fac7801ff02a576ef7e7f387fd",
+      "sha256": "9f4a0ae42975d4f4a4b4c78dba38195fe536b29eedfca158ed7d1046c8d6b489"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_joint_field_quotient_results.json": {
+      "git_blob": "7ed43d77e0fa4393eb6710870a69cc9f78a54e71",
+      "sha256": "069b454108cbccc42e33a31790e582579c47c5c3c8576c5f82463d39f0f698fc"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_jones_record_transport.py": {
+      "git_blob": "dce2d1cc09510ad2ac7449fc1eb4138cf23aabc7",
+      "sha256": "b19f6c864af7e75c2a48d9892692b4d94337d06c04a83013b180148a1752c53f"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_record_metric_chronology_certificate.json": {
+      "git_blob": "d3a5ef420916a11dd2a277d4c0563a51fb75d2a1",
+      "sha256": "0b91e13d823568898a006dd468f9963ffbbc1949f0976a21e8530af465ecfbbe"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_record_metric_chronology_check.py": {
+      "git_blob": "193589a342f4ae843eefdbf6c950d6cd8ef8faa7",
+      "sha256": "16929d026206ee69e126484ed2ac7b1dfd2537c1e50c0fc4c4293408caf58527"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_reference_memory_preparation.py": {
+      "git_blob": "2f1cf6f6122f5798ea883ad98bb9d52ad07300d7",
+      "sha256": "67e416c75cc213efca6040cea8cb796efbcff78037e09b31fb6a83acdcfd0e3a"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_shared_scene_price_source.lean": {
+      "git_blob": "4e7b0297e39f993d2745e4942e54a369dd643aa7",
+      "sha256": "748be767d4618af542c2945da61760cdc2d4c68afc25f189a72c5caa999a8f4a"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_shared_scene_price_source_certificate.json": {
+      "git_blob": "8aa800bfc5322bd27adcda01bb07cd1d24fb9c21",
+      "sha256": "0d6359327417ef73c0f70a00c6a9ddcfa7b08edf3ae893ecd8e244f493184965"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_shared_scene_price_source_check.py": {
+      "git_blob": "a3bba45a5eda12c5ebd5cbdd87e420ac8cdb7aea",
+      "sha256": "d586a4cd80b6ba39827b0d93cca6af60e4c87b7e5364a9cda23652e282ee3292"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_shared_scene_price_source_output.txt": {
+      "git_blob": "3063435e2f53f2df7f046b4ae01bd57e41033e65",
+      "sha256": "2e616cab2316a02cc919316af0efdc5b7c9a99057936abba0ae5f0478da6336f"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_shared_scene_price_source_results.json": {
+      "git_blob": "13bbca20cdfaa17a95f72e966d96f1b8f8f7aebd",
+      "sha256": "738752770242b434e8522dbf9f7c39c570d6852818c292f7c1ec88ed2a823818"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_soldered_heat_source.lean": {
+      "git_blob": "d6a7550a700c4eb6c28cb8abb54da60f434e3cf4",
+      "sha256": "29e0364e9008de9d4a084b7648579ae68507a5e42f1f2f2d28c21af5785a5425"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_soldered_heat_source.py": {
+      "git_blob": "8b3ae8c3a51879494677d58abfc1bd746b1697ae",
+      "sha256": "7794885c71088ec66963b96d1e949dd4c3c1af38322512d14434df1ec196dd26"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_soldered_heat_source_certificate.json": {
+      "git_blob": "26d2558532a71699ec3d85845c42cc672dfcda65",
+      "sha256": "1c1f7f1c55eaa16d4b200d3557ad5744f10fc5aa1345a2c98a8454e64348295a"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_soldered_heat_source_check.py": {
+      "git_blob": "d90101c0203ee8755c90aa0b2672113b6099483b",
+      "sha256": "d2d05b09242f3934bfb15e36990290f80e8374b038bbf2d7d2e654b8382f59f6"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_soldered_heat_source_lean_output.txt": {
+      "git_blob": "951e08b70eee2e780496c720fdcefd6f90a451ee",
+      "sha256": "bfa25ec65768f922b6770a0aa3d99b89fff9a07e789dfb8d1fe76a4958948206"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_soldered_heat_source_lean_results.json": {
+      "git_blob": "072fa8039243fb8d5373f411d22ae14929405901",
+      "sha256": "1c99019091bd543fb43d1e8aafea3c83f656a1a45b5d7b54793a908d7914dc40"
+    },
+    "03_FORMALIZATION/D0/Algebra/FibonacciAFTower.lean": {
+      "git_blob": "64dc8f9da911b1ff3427413c2efc40db0bcac043",
+      "sha256": "b923882386bc66998f4f3cf2ba7d73b0acf30938859d26680458420bafbd1db7"
+    },
+    "03_FORMALIZATION/D0/Algebra/RoleSignature.lean": {
+      "git_blob": "358d75cc8af42c87c13deba2356926fbb006ed7d",
+      "sha256": "5dfb03dc839b4c81d199ff053e57d4b9d54cd61812577078e6302bc710c4ffcf"
+    },
+    "03_FORMALIZATION/D0/Combinatorics/EulerPhi.lean": {
+      "git_blob": "0b7f98b364b48e426a918c47ca569e9b3a16bc8f",
+      "sha256": "83d9af2ead6462e454de1219cd1523d913221e5731114a5459982d25c0ff455a"
+    },
+    "03_FORMALIZATION/D0/Combinatorics/ForcedReturnWindows.lean": {
+      "git_blob": "8ce66fd2b4cc4f8680bce75f247c48401fd9e84c",
+      "sha256": "bcc743c895708e845e34c12d801925c5b9ac9d72dd3fa3d5e501fdcd6ff17ae2"
+    },
+    "03_FORMALIZATION/D0/Combinatorics/InfinitePhaseTower.lean": {
+      "git_blob": "28a79e72096e0243fa986ff035e7c44e005e2e23",
+      "sha256": "4f5b32b3b0ca7e682b8e197e10526370c553d1b5f11060a2f6e62862c0b36f05"
+    },
+    "03_FORMALIZATION/D0/Combinatorics/PhaseTower.lean": {
+      "git_blob": "deff52b959fa6ba6d3b5cc8330f60f0808250d21",
+      "sha256": "3aceb5bc63e7d23c0a4f9a065eea4be1af7bee38e7c5dd51391598641d54acb9"
+    },
+    "03_FORMALIZATION/D0/Combinatorics/PhaseTowerControls.lean": {
+      "git_blob": "465e4b116c2dec3530d5a2eccad7dd61a577758c",
+      "sha256": "f59f24f9ef8a2edf9c542cf8e06d97024ecb53ee7e5b3068da198979a74d87c1"
+    },
+    "03_FORMALIZATION/D0/Combinatorics/PhaseTowerMinimality.lean": {
+      "git_blob": "215d9127c82fd0eff9021c536139c7bc452b03e8",
+      "sha256": "5d56c525e9549764fee894d8a74f626ed5965123f5a013915c3c67ae18166e6a"
+    },
+    "03_FORMALIZATION/D0/Combinatorics/PhaseTowerRecursion.lean": {
+      "git_blob": "95306f0f87ceb613e8a0a8f3bc1e147bf9d85b2a",
+      "sha256": "cbaae0e2bfdeaa197f1557a29eb53bbea780cddf78f98d9e8928c6a09b5ec46c"
+    },
+    "03_FORMALIZATION/D0/Combinatorics/PhaseUnfolding.lean": {
+      "git_blob": "41e7cb0e2c3cbcb898f28212c8792bdeec89cd83",
+      "sha256": "4753d815c41f8df990ba45d7ab038d75decaa775dbfd72e5c4e61c0783ce1f66"
+    },
+    "03_FORMALIZATION/D0/Core/DyadABCD.lean": {
+      "git_blob": "a1d55541e869c1c549e9d629becd424d71816355",
+      "sha256": "9aa50c746c830a9c81270cecd773b7c5f00ba6b8d19451abeb4aeda4d1c9c358"
+    },
+    "03_FORMALIZATION/D0/Core/FiniteTypes.lean": {
+      "git_blob": "badf613e17306ecfab18eccedf5fe7dfcea0f455",
+      "sha256": "ced19b6714c8c9d1f687812c4bf9a19b572c02b689c5bf0881035b4f6bfc1108"
+    },
+    "03_FORMALIZATION/D0/Foundation/M1Predicate.lean": {
+      "git_blob": "8832a1ecac500c85422b3477e5888aee38876e61",
+      "sha256": "c9def19a8eff4db17acdfa0a89465b72809759698d81ef522f7aaa6ac2cd33c2"
+    },
+    "03_FORMALIZATION/D0/Foundation/ObservableCompletionCanonicity.lean": {
+      "git_blob": "b6125404e40ee6a1896444c4c44a909400babe6b",
+      "sha256": "e0e6cfc495135d052a1d40b6b1698b94d8b7df7eb9ab4b42d47231ef481ec634"
+    },
+    "03_FORMALIZATION/D0/Geometry/A4DObserverPositiveExterior.lean": {
+      "git_blob": "c4014d2dcf54f67fe9fbadaa25ff281beb1d289d",
+      "sha256": "3b6cc6b4d726af1ab33967d090b663ce1ae0236ba2953f43bd438c9a274a12b1"
+    },
+    "03_FORMALIZATION/D0/Geometry/A4DSymRoleCentralDifference.lean": {
+      "git_blob": "a75c24171dba3392d3877d2fb89fe7eb4e7c27f5",
+      "sha256": "b7f418b6de484f391d6270cb3f1140aa3e4e0007662c0f820e899d673480d46e"
+    },
+    "03_FORMALIZATION/D0/Geometry/ArchiveCARDirac.lean": {
+      "git_blob": "032cb37242abebee30f6a8715b90a61235bec348",
+      "sha256": "d12ee600d7976228ffcb88e5c40c08d66cd361664901594ea0379bf2b97a2388"
+    },
+    "03_FORMALIZATION/D0/Geometry/ArchiveCARFockCarrier.lean": {
+      "git_blob": "1acfaec4d7a41b50f50dd55cced7613b80852514",
+      "sha256": "5dc96be9c2ee5c874a617f3ebe80f0da9803973c1656112fe24f31e90c2f5eb1"
+    },
+    "03_FORMALIZATION/D0/Geometry/ArchiveCARRelations.lean": {
+      "git_blob": "8ff68576d92ff67532733a0ca2646de9d50105e2",
+      "sha256": "846fddef981b82357bab5b1a4de72d7f27bdfc6321ed41bfdc26e410cbd0178d"
+    },
+    "03_FORMALIZATION/D0/Geometry/ArchiveCanonicalDirichlet.lean": {
+      "git_blob": "3503787e5ca2d0b2accaeec6b830395574d9b785",
+      "sha256": "1311fb05b81e2131724f096428e177e9c61a97497b8dcec9843912faaaf7a9f6"
+    },
+    "03_FORMALIZATION/D0/Geometry/ArchiveCanonicalLaplacian.lean": {
+      "git_blob": "035714c7371428a3f0d737f432b5b94c9d10529e",
+      "sha256": "4aefdc0a4c547e22cb5ce0989d792bc8544ef471a1c08b2be91edc40c59d591e"
+    },
+    "03_FORMALIZATION/D0/Geometry/ArchiveCubicalCartan.lean": {
+      "git_blob": "2b0d487d2493e3ebae25b79d475c57f4b8f44624",
+      "sha256": "8c766bd7220764bda3393ec651b20084d9ee9f882da97ffb2c9a13f1be23489b"
+    },
+    "03_FORMALIZATION/D0/Geometry/ArchiveCubicalDifferential.lean": {
+      "git_blob": "ac5abb195286676382dfac48d9ec5737ef63dc3d",
+      "sha256": "f00844eb6a1e32925327c78e541b25a3471eb4a55bb36fde392f8885f98440a2"
+    },
+    "03_FORMALIZATION/D0/Geometry/ArchiveExteriorFrameLift.lean": {
+      "git_blob": "087afdd443ffc02701376e00728193c020da259d",
+      "sha256": "69e7a9a0290ee08c748db03c62d5e331e23efdeb84fb6ffefe4165267b14c967"
+    },
+    "03_FORMALIZATION/D0/Geometry/ArchiveHodgeCARDirac.lean": {
+      "git_blob": "5b6ee2265a9abec3eacfb8905cd45d4ef3c95b73",
+      "sha256": "7ab9550c7a25464131ec23a21e9eeac9f38eb651ee23c8d65296415aa593ab58"
+    },
+    "03_FORMALIZATION/D0/Geometry/ArchiveHodgeCARDiracSquare.lean": {
+      "git_blob": "3b8ddcaecf4c9aaac21594b79f644c8f88492927",
+      "sha256": "d004761e6326aae235d1a3488e397750409bc4c03f90c489a6dd18d9971e3e81"
+    },
+    "03_FORMALIZATION/D0/Geometry/ArchiveHodgeDiracMetricMismatchNoGo.lean": {
+      "git_blob": "e9b09edafa9968fe630ef4c7926887471d3b5302",
+      "sha256": "678ce9786e8b2f49a6ca81e8a1a788226dd7c0960ab933e98101cefc7126fd71"
+    },
+    "03_FORMALIZATION/D0/Geometry/ArchiveLorentzCompatibility.lean": {
+      "git_blob": "646e01144350f9a07301f952305a120b2cce5f73",
+      "sha256": "1ba5fa492c928b34392a07d54a6f81d8554e5898cd91c901430647b655e30c8f"
+    },
+    "03_FORMALIZATION/D0/Geometry/ArchiveModeExponent.lean": {
+      "git_blob": "d5f6963682860b0e7b4ab6385ac452fab12e9c93",
+      "sha256": "fb760656ca2b3ca785a44cb5a80729e0f856221696dd40b7dca8c85d8ff8f95c"
+    },
+    "03_FORMALIZATION/D0/Geometry/ArchivePhaseDistance.lean": {
+      "git_blob": "17a45a67cd4727374eec0e2f9e06e3ae40300721",
+      "sha256": "765ac251492ab51cca109ccf34d758fb3ebc3fbe86bdb1a790f5a827342c3707"
+    },
+    "03_FORMALIZATION/D0/Geometry/ArchivePhaseEdgeMetricScale.lean": {
+      "git_blob": "7062dbd794d717dc42dd14507dc7c3d583030c47",
+      "sha256": "4eee745390b6fd56fe7e542db30253dd857beb3853475960af6215db335506fd"
+    },
+    "03_FORMALIZATION/D0/Geometry/ArchiveProductLaplacian.lean": {
+      "git_blob": "00cb8fa1108f0c6d2c70892ff2a032a7a6e53627",
+      "sha256": "cef92ba4992610d1ebdc39a896204edadb31a79ea94b24367e513e49105ba77c"
+    },
+    "03_FORMALIZATION/D0/Geometry/ArchiveRefinementTower.lean": {
+      "git_blob": "312f7483dfa95cba67676e8afbf6a94b175575d0",
+      "sha256": "253342935b592df104629259341c2d3d6065cd0ba4ec55769f484f005e036673"
+    },
+    "03_FORMALIZATION/D0/Geometry/ArchiveRolePhaseGroup.lean": {
+      "git_blob": "d8d2e3fc0d1f8fbb12f24216e962a9d7c2867ae8",
+      "sha256": "8958fe3103039ce0ad5aa5aa6607578f9dfa3e4717b966b3dea916241aa68442"
+    },
+    "03_FORMALIZATION/D0/Geometry/ArchiveRolePhaseProductCarrier.lean": {
+      "git_blob": "ea0dd8c7441d1f907ef308f9f129c3dd8c85f5e5",
+      "sha256": "f307f30401d4110ab7bb2874e62f84e43e0e35eb7fb9fb7b7844c63f59b97d33"
+    },
+    "03_FORMALIZATION/D0/Geometry/ArchiveRoleProductLaplacian.lean": {
+      "git_blob": "0747cbbb3dec3513d7998338b89f17d41c76d324",
+      "sha256": "ac6b1a24b054c76609b5558f76e6f1adf3d8f170dfb4d6475adc8c5ec4414339"
+    },
+    "03_FORMALIZATION/D0/Geometry/ArchiveWeightedGraph.lean": {
+      "git_blob": "204c58c981ccd6a8eb6fea15c875e5148cbfeab5",
+      "sha256": "a25daa836eacf57042dd96793da6447098fc85895d464b10f0f1804d2249081d"
+    },
+    "03_FORMALIZATION/D0/Geometry/CovarianceTower.lean": {
+      "git_blob": "c3cdb3a2114c6aa19f228d547a08793a08c0117f",
+      "sha256": "3452400583b01f0dfddd6fa6e70078db073cd643c1cde243d861aff714080bde"
+    },
+    "03_FORMALIZATION/D0/Geometry/InfiniteSpectralTower.lean": {
+      "git_blob": "b84b67d934ef8466102e14b34f1ffa2ff45a4ea1",
+      "sha256": "a9b77520d350583f778123087c7b6db17b2284b72ef0c993ae671366e3eb475f"
+    },
+    "03_FORMALIZATION/D0/Geometry/SpectralTower.lean": {
+      "git_blob": "ee33b3ec954699bafd653574bd1248a90cb78175",
+      "sha256": "3d5e8e71e6bef1eeabf48fb63562e0d422c35f22b399f612179a3827485969ef"
+    },
+    "03_FORMALIZATION/D0/Matter/FiniteSelector.lean": {
+      "git_blob": "c63d3807bfeeacfa7e972e249b49c0dac1b204ad",
+      "sha256": "36376218a1c49a176b7427a2584b421109ffcaacea1707f44be92bcfa0c3d1a2"
+    },
+    "03_FORMALIZATION/D0/Phase.lean": {
+      "git_blob": "16efc63d3eb7e8c53a8915a654454795cabf4647",
+      "sha256": "dd710cf7f37874ac5f06a1a57ca19fa2d9544de6e1bfcf35fed7806ea2b56559"
+    },
+    "03_FORMALIZATION/lake-manifest.json": {
+      "git_blob": "4f78983abd890ef48912c16091957084095ab1d2",
+      "sha256": "4ed211000f753c64c6b1fc155970f6b28c9500763f1ad520d8762ae165ac24fa"
+    },
+    "03_FORMALIZATION/lakefile.lean": {
+      "git_blob": "a1565d0fb9620c5c3efcc5dad66ca6a41fe49103",
+      "sha256": "7a49cbade1c863e91b5cdc0dff0dddd8a272a3da94ef24200c6e3683276273e9"
+    },
+    "03_FORMALIZATION/lean-toolchain": {
+      "git_blob": "af9e5d339aeb37e4e6ba2603fb873e637678e304",
+      "sha256": "54727eec5cba149c18842e6deb5c41b369d66455c93ce135d7d5347c782b2325"
+    }
+  },
+  "status": "PASS",
+  "witnesses": {
+    "AF_dimension_law": "d_k=F_(6k+5)",
+    "AF_dimension_values": [
+      5,
+      89,
+      1597
+    ],
+    "L_values": [
+      4,
+      8,
+      12,
+      16,
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "diameter_squared": "1",
+    "mutated_operator_without_L_prefactor_diameter": "L",
+    "nearest_neighbor_distance": "1/L"
+  }
+}

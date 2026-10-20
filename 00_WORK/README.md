@@ -1,21 +1,40 @@
-# D0 work flow: compose the gravity derivation
+# D0 work flow: verification, theory transfer and composition
 
-Repository: `gvakhrushev/d0_15`. The [current scientific route](../02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md#current-route-to-general-relativity)
-defines the remaining transitions to general relativity. This file defines how
-to execute them. GitHub PRs hold durable work; `manifest.json` is the queue,
-not a live dashboard. Scientific acceptance and use in the parent derivation
-are separate from a passing check.
+Repository: `gvakhrushev/d0_15`. Start from the [architectural objective in the current scientific route](../02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md#architectural-objective).
+D0 begins with the functions required for verification: distinction, retained
+record and independent comparison without an obligatory external catalogue.
+Work connects theories to that kernel, proves the required transfers and
+composes compatible results within their declared assumptions. General
+relativity is the first full specialization to complete; the original native
+physical closure remains part of that objective.
+
+The [current GR route](../02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md#current-route-to-general-relativity)
+defines its remaining scientific transitions. This file defines execution.
+GitHub PRs hold durable work; `manifest.json` is the queue, not a live dashboard.
+Scientific acceptance and use in the parent argument are separate from a
+passing check.
+
+Every handoff carries the [shared prospective-minimality focus and closure roadmap](../02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md#prospective-minimality-and-physical-execution).
+The native front derives the complete Cost-Info/continuation law and why
+continuation is required or favoured; the existing `optimal` premise and
+conditional current/entropy assumptions must remain visible until discharged. Reuse the
+owned structural results and geometric tester. Their missing physical
+application is the work to finish. Independent conditional transfer/refinement
+work continues on its declared inputs. The dispatcher prints this focus for
+new, resumed, review and offline handoffs; it does not change launch authority.
 
 ## One integrator, parallel bounded work
 
-The scientific integrator owns the common carrier, full action, source,
-variation image, normalization and refinement maps. Executors prove independent
-premises of that same argument in separate branches/worktrees with disjoint
-write paths. Integrate a usable result immediately; do not wait for an entire
-wave to finish.
+The scientific integrator owns the kernel and theory interfaces, common carrier,
+full action, source, variation image, normalization and refinement maps.
+Before delegating, synthesize the existing argument and locate its exact missing
+parent premise or application. Executors prove independent premises of that
+argument in separate branches/worktrees with disjoint write paths. Integrate a
+usable result immediately; do not wait for an entire wave to finish.
 
-Use two scientific fronts: preparation/records → full action/source, and exact
-joint solutions → nonlinear refinement limit. A verification executor handles
+Within the GR specialization, use two linked scientific fronts:
+preparation/records → full action/source, and exact joint solutions → nonlinear
+refinement limit. A verification executor handles
 replay/CI when needed. An independent reviewer checks a frozen intake at
 acceptance. These are roles, not additional permanent task classes or slots.
 Read-only assistants and implementation subtasks inside an owned PR do not
@@ -27,18 +46,41 @@ This is composition data, not a second queue or claim-status registry:
 
 | Field | Required content |
 |---|---|
-| Statement | Exact conclusion, quantifiers and remaining assumptions |
-| Inputs | Owner paths and fixed refs; accepted vs research status |
+| Statement | Phase in the argument, exact conclusion, quantifiers and remaining assumptions |
+| Inputs | Owner paths and fixed refs; accepted vs research status; what is reused and which changed input would justify repeating a proof |
 | Common objects | Carrier, full action, norm, source/comparator and refinement maps used by the consumer |
-| Consumer | Parent lemma/equation; where this output is substituted and which premise it removes |
+| Consumer | Exact parent premise and substitution location; the premise removed, or the missing application/transport for a supporting result |
 | Write surface | Disjoint paths and one branch/worktree owner |
-| Decisive check | Smallest calculation/proof and negative control that can decide the claim |
+| Decisive check | Structural inequality, invariant, variational identity or other smallest proof/check that decides the missing step; negative control where relevant |
 | Assembly | One `Assembly: TASK-ID` line, a registered interface/work key and separate start/completion premises |
 
-If no parent consumer can be named, keep the idea out of the active wave.
+Use the phases **verification kernel → interpretation and generic transfer →
+native realization → final composition** to locate the work in the
+argument. Record that location in the existing brief or parent artifact; do not
+add forms, task classes, lifecycle states or status registries.
+
+For a minimality/continuation task, use that same proof-interface text to state
+the complete initial state, native goal/constraints, admissible alternatives,
+native generator, full price and selection conclusion. Future clocks may differ
+unless the goal fixes them; lossless replacement of retained history preserves
+its required distinctions. Keep code length, generated record, gate count and
+physical action separate until proved equivalent. An optimality certificate
+must be accompanied by the native attainment/selection argument needed by its
+consumer. Do not bulk-rewrite existing briefs for cosmetic compliance.
+
+If no exact parent premise and intended substitution can be named, keep the
+idea out of the active wave. A supporting theorem can name its intended use
+while the required application or transport remains open. Naming that consumer
+does not itself discharge a premise. Only an actual proved and accepted
+application changes the composed argument; do not add artificial prerequisites
+to make a supporting result appear consumed.
+
 If interfaces conflict, the integrator resolves them before dependent work
 starts. An exact obstruction changes the parent route; do not answer it with
 another exhaustive census unless that census is needed by a named estimate.
+Reuse existing owners. Repeating a proof or census requires a changed
+mathematical input that makes the owned result insufficient. Independent
+verification and affected replay retain their existing modes and budget.
 A free WIP slot alone does not establish prerequisites.
 
 For route selection run `python tools/gr_assembly.py next`; it resolves live
@@ -50,7 +92,10 @@ the number of newly ready consumers; neither is a probability of success.
 
 ## Start or resume once
 
-1. Read `AGENTS.md`, this file and the relevant current scientific route.
+1. Read `AGENTS.md`, this file and the architectural objective, shared
+   prospective-minimality focus and roadmap in the current scientific route,
+   then the part consumed by the assigned work. These contain the durable
+   programme intent; do not ask the user to reconstruct it again.
    For CONTROL entry/workflow changes, inspect open governance PRs and their
    changed paths once. Shared README/AGENTS, queue, dispatch or CI edits go to
    one existing owner/PR; contributors hand over disjoint content. Task-ID
@@ -98,8 +143,10 @@ actually revised, not a bulk cosmetic migration.
 
 ## Work in short scientific increments
 
-1. Work on the next missing transition; write the derivation in its primary
-   artifact. Use representation theory/classification before candidate searches.
+1. Synthesize the existing proof of the parent statement, retaining every open
+   assumption. Identify the next missing premise or application and its phase;
+   write the derivation in its primary artifact. Use representation theory and
+   classification before candidate searches.
 2. Apply KILL-FIRST only to unresolved gates:
    type → representation/Hom-space → symmetry → moduli → flat limit → variation
    → constraint quotient → exact finite spectrum → physical interpretation.
@@ -109,8 +156,10 @@ actually revised, not a bulk cosmetic migration.
    proof is not replaced by collecting more numerical ranks. Lean follows
    **classify once, specialize late**, after the mathematical interface stabilizes.
 4. At a useful checkpoint, commit/push the result and substitute it in the
-   parent argument. Local experiments do not need a remote commit each time.
-   Record either the discharged premise or the exact obstruction and route change.
+   parent argument when its hypotheses and maps are established. Local
+   experiments do not need a remote commit each time. Record the discharged
+   premise, the exact obstruction and route change, or the missing application
+   that still separates a supporting result from parent use.
 
    Record an application with `python tools/gr_assembly.py template TASK-ID`.
    Pin the result, map every hypothesis, name the parent location and obtain
@@ -138,6 +187,8 @@ or assume the desired Einstein equation in admission conditions.
 
 Choose by the changed surface. These are phase boundaries, not a checklist for
 every edit. Record command, checked inputs/ref, environment and result in the PR.
+The working order is synthesis of the available argument, targeted checks of
+the unresolved step, then affected final replay on the frozen inputs.
 Repeat an expensive run only after a relevant input/environment/mode changes,
 a failure, or a concrete unresolved concern. A prose/lifecycle edit alone does
 not invalidate unchanged mathematical evidence. An old green badge alone does
@@ -194,8 +245,10 @@ exact event selection.
 
 ## Accept an integrated result
 
-The handoff names the PR, exact conclusion, consumed parent step (or changed
-route), checks and smallest blocker. Keep detailed tables/derivations in Git.
+The handoff names the PR, phase, exact conclusion, consumed parent premise
+(or changed route), checks and smallest blocker. For a supporting result, name
+the intended premise and the still-missing application explicitly. Keep detailed
+tables/derivations in Git.
 The integrator checks applicability to the common objects; independent review
 checks assumptions, non-circularity and the frozen artifact scope.
 A useful research slice can be accepted without closing its broader parent.

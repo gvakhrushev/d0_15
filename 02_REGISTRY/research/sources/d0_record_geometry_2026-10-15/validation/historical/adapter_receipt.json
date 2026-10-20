@@ -1,0 +1,49 @@
+{
+  "schema": "d0-expanded-text-historical-replay/1",
+  "input_sha256": {
+    "synthesis": "aaa1d3890377128de7fcdffe3ae68afd2c092a49a222f6b0f239284a541dfbbe",
+    "identities": "55cd845e09d62147138b3faf04506895ec7bad75ac1f75a4c528e047dec964bb",
+    "linear": "8a25e81936ef10346c41cdc9d9bea899f415cd6c55c847b604d94a4a48d01474",
+    "symbol": "37c2b21429c5e703068d2ac398160329e9728ffce480ec86fc57418813e90dab",
+    "resonance_reference": "a9b37737c4b101eb0c84fa224eb98f8d922774ee606a046729651d549be9277c",
+    "identities_reference": "2dd9ab48310264a452c2e951cad7d796ae914c62a5e46abc7b1ca27d97081a32"
+  },
+  "historical_joint_archive_sha256": "441c5c503737c375600cd119ef5bf0d0c343b0445d425b1e755acd99ddd7b47f",
+  "input_archives_opened": false,
+  "compressed_capsules_used": false,
+  "importer_or_patch_executed": false,
+  "input_files_modified": false,
+  "temporary_synthesis_replacements": [
+    "ZIP/capsule staging -> plain hash-pinned linear.py and sibling symbol.py",
+    "computed input_zip_sha256 -> explicit historical_input_zip_sha256"
+  ],
+  "complete_synthesis_mathematical_body_unchanged": true,
+  "optimized": false,
+  "replays": {
+    "identities": {
+      "status": "NEW_EXACT_ALGEBRA_AND_GENERAL_ANALYTIC_DEDUCTIONS",
+      "matches_historical_math_and_scope": true,
+      "excluded_comparison_fields": [
+        "sympy"
+      ],
+      "result": "identities_result.json",
+      "log": "identities.log"
+    },
+    "resonance": {
+      "status": "EXACT_FINITE_SECOND_ORDER_COMPATIBILITY",
+      "matches_historical_math_and_scope": true,
+      "excluded_comparison_fields": [
+        "historical_input_zip_sha256",
+        "input_zip_sha256",
+        "sympy_version"
+      ],
+      "result": "resonance_result.json",
+      "log": "resonance.log"
+    }
+  },
+  "scope": "Historical exact identities and fixed four-phase finite cubic compatibility only",
+  "full4d_interval_replay": false,
+  "native_physical_admission": false,
+  "new_GR_closure": false,
+  "new_Lean_compilation": false
+}

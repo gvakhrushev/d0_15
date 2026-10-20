@@ -5,6 +5,7 @@ from __future__ import annotations
 import argparse
 import json
 import pathlib
+import posixpath
 import re
 import subprocess
 import sys
@@ -68,6 +69,61 @@ def open_prs(root: pathlib.Path) -> list[dict]:
         raise ValueError(f"Invalid GitHub PR response; no launch authorized: {exc}") from exc
 
 
+def commit_path_blobs(root: pathlib.Path, sha: str, paths: list[str]) -> dict[str, str | None]:
+    """Read a bounded set of exact path blobs at one immutable commit via GraphQL."""
+    if not re.fullmatch(r"[0-9a-f]{40}", sha):
+        raise ValueError("expected a full commit SHA for path snapshot")
+    if (not isinstance(paths, list) or len(paths) > 100
+            or any(not isinstance(path, str) for path in paths)
+            or len(paths) != len(set(paths))):
+        raise ValueError("path snapshot must contain at most 100 unique paths")
+    for path in paths:
+        if (not isinstance(path, str) or not path or path.startswith("/")
+                or "\\" in path or ".." in path.split("/") or posixpath.normpath(path) != path):
+            raise ValueError(f"unsafe repository path in path snapshot: {path!r}")
+    if not paths:
+        return {}
+
+    owner, repository = REPO.split("/", 1)
+    fields = " ".join(
+        f"p{index}: object(expression:{json.dumps(sha + ':' + path)}) "
+        "{ ... on Blob { oid } }"
+        for index, path in enumerate(paths)
+    )
+    query = (f'query {{ repository(owner:{json.dumps(owner)}, name:{json.dumps(repository)}) '
+             f'{{ {fields} }} }}')
+    try:
+        result = subprocess.run(
+            ["gh", "api", "graphql", "-f", f"query={query}"],
+            cwd=root, capture_output=True, text=True, check=True, timeout=30,
+        )
+    except (OSError, subprocess.SubprocessError) as exc:
+        detail = str(exc)
+        if isinstance(exc, subprocess.CalledProcessError) and exc.stderr:
+            detail = exc.stderr.strip().splitlines()[0]
+        raise ValueError(f"GitHub commit-path lookup unavailable: {detail[:200]}") from exc
+    try:
+        response = json.loads(result.stdout)
+        if not isinstance(response, dict) or response.get("errors"):
+            raise ValueError("GraphQL returned errors")
+        objects = response["data"]["repository"]
+        if not isinstance(objects, dict):
+            raise ValueError("GraphQL repository result is missing")
+        found = {}
+        for index, path in enumerate(paths):
+            value = objects.get(f"p{index}")
+            if value is None:
+                found[path] = None
+            elif (isinstance(value, dict) and isinstance(value.get("oid"), str)
+                  and re.fullmatch(r"[0-9a-f]{40}", value["oid"])):
+                found[path] = value["oid"]
+            else:
+                raise ValueError(f"GraphQL returned a non-blob object for {path}")
+        return found
+    except (KeyError, TypeError, json.JSONDecodeError) as exc:
+        raise ValueError(f"Invalid GitHub commit-path response: {exc}") from exc
+
+
 def existing_execution(prs: list[dict], task_id: str, branch: str | None) -> tuple[dict | None, str]:
     matches = [pr for pr in prs if task_id in metadata(pr.get("body") or "", "Task")]
     matched_by = "Task metadata"
@@ -102,6 +158,17 @@ def print_execution(pr: dict, matched_by: str) -> None:
         print("Action: Continue review in this PR; do not launch a new execution or self-merge.")
     else:
         print("Action: Inspect/fix this PR's lifecycle before continuing; do not create a new execution.")
+
+
+def print_programme_focus() -> None:
+    print("Read: AGENTS.md; 00_WORK/README.md; "
+          "02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md"
+          "#prospective-minimality-and-physical-execution")
+    print("Focus: Reuse pinned proof owners; identify the exact missing parent substitution "
+          "and remaining assumptions. Prefer structural certificates before enumerating histories.")
+    print("For minimality work: distinguish the generator, full Cost-Info price and physical selection.")
+    print("Handoff: PR + exact conclusion + consumed parent premise "
+          "(or missing application/changed route), checks, blocker.")
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -140,6 +207,7 @@ def main(argv: list[str] | None = None) -> int:
             if pr:
                 print(f"Repository: {REPO}\nTask: {args.task_id}")
                 print_execution(pr, matched_by)
+                print_programme_focus()
                 if assembly:
                     print(gr_assembly.context(assembly, args.task_id))
                     actions = gr_assembly.next_actions(assembly, prs)
@@ -157,6 +225,7 @@ def main(argv: list[str] | None = None) -> int:
         print(f"Class: {task['class']}; Queue state: {task['state']}")
         print(f"Base: {field(brief, 'Base')}")
         print(f"Brief: {task['brief']}\nBranch: {branch}\nPrimary artifact: {artifact}")
+        print_programme_focus()
         if assembly:
             print(gr_assembly.context(assembly, args.task_id))
         if args.offline:
@@ -171,7 +240,7 @@ def main(argv: list[str] | None = None) -> int:
                 raise ValueError("assembly launch gate: " + "; ".join(checked["reasons"]))
         print("Open execution: none (GitHub checked).")
         print("Execute GitHub-first: read the brief, start its lifecycle and open the Draft PR before substantive work.")
-        print("Write the durable result in that PR; return only PR + verdict/PASS-FAIL + blocker.")
+        print("Write the durable result and its exact parent application or remaining gap in that PR.")
         return 0
     except (OSError, ValueError, KeyError) as exc:
         print(f"ERROR: {exc}", file=sys.stderr)

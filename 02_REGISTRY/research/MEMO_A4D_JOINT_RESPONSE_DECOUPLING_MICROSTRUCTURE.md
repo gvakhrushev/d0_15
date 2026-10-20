@@ -9041,12 +9041,19 @@ its derived extra price to obey \(E'(u)=-S'_{HJR}(u)\) on the positive chart
 to a different physical target or to an equation-level transported
 equivalence.
 
-Separately, on the exact curved fixed-collar stationary branch, the existing
-full-Riesz calculation gives a nongauge bulk direction with
-\(D^2S_{HJR}[v,v]\le-2372493199/32000000000\). If that same point is to be
-a local minimum of \(S_{HJR}+E\), and that direction is admitted with a C2
-completion, then \(dE=0\) there and
-\(D^2E[v,v]\ge2372493199/32000000000\). The rational replay
+Separately, at the common HOMOGENEOUS base \(q_0\) of the fixed-collar
+branch, the full-Riesz calculation gives a nongauge bulk direction with
+\(D_x^2S_{HJR}(q_0)[v,v]\le-c\), where
+\(c=2372493199/32000000000\). At sufficiently nearby curved stationary
+points, continuity supplies the conservative bound \(-c/2\), with no
+explicit radius or exact base enclosure away from \(q_0\). If the SAME
+point remains a critical point and local minimum of \(S_{HJR}+E\) on the
+SAME physically admitted fixed-collar chart, with C2 pullback, then
+\(d_xE=0\) and \(D_x^2E[v,v]\ge c\) at \(q_0\), or at least \(c/2\)
+at those nearby curved points. If only the v-path is admitted, only its
+directional first derivative must vanish; the second-direction bounds
+still apply on that path. The actual carrier/source map and C2 hypotheses
+are required; the compact-FLAG C1 estimate does not supply them. The rational replay
 [`check_collar_minimum.py`](sources/d0_native_flag_source_minimum_2026-10-20/check_collar_minimum.py)
 and full-spectrum flat-source replay pass. These tests are at different
 configurations and under different hypotheses; together they constrain the
@@ -9247,3 +9254,15 @@ or the existing curved conditional root can be promoted to physical GR.
 The packet retains all outputs, complete preparations and the specified
 operational cuts. No accepted assembly result, task lifecycle, BOOK/CORE
 claim or original raw-response terminal is changed. `GR_closed=false`.
+
+## Maintained foundation and native interface extensions — 20 October 2026
+
+Main's accepted verification and generic theory-transfer owners are used
+without redefinition. The newer native future-completeness, binary-verification,
+reversal, Golden-Bloch and Q8-center lemmas now live in separate importing
+modules. The [additional action-interface arguments](A4D_NATIVE_ACTION_INTERFACE_EXTENSIONS_2026_10_20.md)
+and [29-declaration history-action snapshot](sources/d0_native_history_action_extension_2026-10-20/README.md)
+retain their exact original scopes. Canonical historical receipt inputs remain
+unchanged. For Book03 feedback use the complement-preserving operator owner,
+not an independent `P,Q` variation. None of this changes native action selection,
+the original raw-response terminal or physical GR status.

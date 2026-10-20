@@ -5,18 +5,24 @@ import D0.Foundation.PopperianBootstrap
 /-!
 # Endogenous action quantum: M1-forced discrete action scale S_min = 1
 
-Resolution of the metric underdetermination frontier (`D0-MASS-SECTOR-METRIC-UNDERDETERMINATION-001`
-and `D0-REDSHIFT-SI-TICK-CALIBRATION-NOGO-001`).
+Formalizes the abstract transition-action threshold and its remaining interface boundary for the
+metric underdetermination frontier (`D0-MASS-SECTOR-METRIC-UNDERDETERMINATION-001` and
+`D0-REDSHIFT-SI-TICK-CALIBRATION-NOGO-001`).
 
 Extrinsic continuous standards (seconds, meters, electron-volts) are arbitrary historical conventions.
-Inside an endogenous finite system, the physical action scale is not fitted by an external dimensional
-constant; it is fixed by the operational requirement that distinguishable physical transitions require
-at least one unit of information-distinguishability action.
+Inside the abstract verification protocol, the action threshold is fixed by the operational requirement
+that distinguishable state transitions require at least one unit of information-distinguishability
+action. Its realization on native D0 field histories remains a separate, unproved bridge.
 
 Theorems in this module:
 * `ActionProtocol` — an action assignment over an admissible verification protocol.
 * `endogenous_action_quantum_pos` — the endogenous action quantum is strictly positive.
-* `endogenous_action_quantum_minimal` — S_min = 1 is the minimal action of any non-trivial transition.
+* `endogenous_action_quantum_minimal` — S_min = 1 is the lower bound for every non-trivial transition
+  admitted by `ActionProtocol`.
+* `action_protocol_has_nonscaling_completions` — the protocol constraints do not determine a
+  transition-cost profile, even modulo one overall positive scale, on a three-state carrier.
+* `no_degree_two_homogeneous_action_protocol` — a degree-two homogeneous cost on any nontrivial
+  real vector carrier cannot obey the protocol's unit lower bound on every nonzero transition.
 * `subquantum_collapse` — an operational detector with unit distinguishability
   threshold cannot distinguish any sub-quantum transition (0 < S < 1) without losing record injectivity.
 * `relative_action_scale_invariant` — the ratio of two physical actions is strictly invariant under any
@@ -29,7 +35,11 @@ namespace D0.Foundation.EndogenousActionQuantum
 open D0.Foundation.VerifiabilityNecessity
 open D0.Foundation.PopperianBootstrap
 
+/-- The canonical endogenous action quantum is 1. -/
+def S_min : ℝ := 1
+
 /-- An action assignment over a verification protocol `P`. -/
+@[ext]
 structure ActionProtocol (P : VerificationProtocol) where
   /-- Action cost of a transition between two states. -/
   action : P.State → P.State → ℝ
@@ -38,8 +48,68 @@ structure ActionProtocol (P : VerificationProtocol) where
   /-- Non-trivial transitions cost at least the endogenous action quantum S_min = 1. -/
   action_nontrivial : ∀ x y, x ≠ y → 1 ≤ action x y
 
-/-- The canonical endogenous action quantum is 1. -/
-def S_min : ℝ := 1
+/-- The exact free data left by `ActionProtocol`: an independent nonnegative excess on
+each ordered non-identity transition. -/
+@[ext]
+structure ActionExcessProfile (P : VerificationProtocol) where
+  excess : P.State → P.State → ℝ
+  excess_refl : ∀ x, excess x x = 0
+  excess_nontrivial : ∀ x y, x ≠ y → 0 ≤ excess x y
+
+/-- Extract the amount above the forced unit floor on every non-identity transition. -/
+def actionExcessOf {P : VerificationProtocol} (A : ActionProtocol P) :
+    ActionExcessProfile P where
+  excess x y := if x = y then 0 else A.action x y - S_min
+  excess_refl := by intro x; simp
+  excess_nontrivial := by
+    intro x y hxy
+    simp [hxy]
+    have h := A.action_nontrivial x y hxy
+    unfold S_min at h ⊢
+    linarith
+
+/-- Reconstruct an action protocol from an arbitrary admissible excess profile. -/
+def actionProtocolOfExcess {P : VerificationProtocol} (E : ActionExcessProfile P) :
+    ActionProtocol P where
+  action x y := if x = y then 0 else S_min + E.excess x y
+  action_refl := by intro x; simp
+  action_nontrivial := by
+    intro x y hxy
+    simp [hxy, S_min]
+    exact E.excess_nontrivial x y hxy
+
+/-- Every protocol is exactly its unit floor plus its extracted excess profile. -/
+theorem actionProtocol_excess_reconstruction {P : VerificationProtocol}
+    (A : ActionProtocol P) (x y : P.State) :
+    (actionProtocolOfExcess (actionExcessOf A)).action x y = A.action x y := by
+  by_cases hxy : x = y
+  · subst y
+    simp [actionProtocolOfExcess, actionExcessOf, S_min, A.action_refl]
+  · simp [actionProtocolOfExcess, actionExcessOf, S_min, hxy]
+
+/-- Every admissible excess profile is recovered after reconstruction. -/
+theorem actionExcessOf_reconstruction {P : VerificationProtocol}
+    (E : ActionExcessProfile P) (x y : P.State) :
+    (actionExcessOf (actionProtocolOfExcess E)).excess x y = E.excess x y := by
+  by_cases hxy : x = y
+  · subst y
+    simp [actionExcessOf, actionProtocolOfExcess, E.excess_refl]
+  · simp [actionExcessOf, actionProtocolOfExcess, S_min, hxy]
+
+/-- Exact classification of the full `ActionProtocol` fiber. It has no symmetry,
+composition, refinement, or field-source constraint beyond the unit floor. -/
+def actionProtocolExcessEquiv {P : VerificationProtocol} :
+    ActionProtocol P ≃ ActionExcessProfile P where
+  toFun := actionExcessOf
+  invFun := actionProtocolOfExcess
+  left_inv := by
+    intro A
+    ext x y
+    exact actionProtocol_excess_reconstruction A x y
+  right_inv := by
+    intro E
+    ext x y
+    exact actionExcessOf_reconstruction E x y
 
 theorem S_min_pos : 0 < S_min := by unfold S_min; norm_num
 
@@ -56,6 +126,73 @@ theorem endogenous_action_quantum_minimal {P : VerificationProtocol}
     (A : ActionProtocol P) (x y : P.State) (hxy : x ≠ y) :
     S_min ≤ A.action x y := by
   exact A.action_nontrivial x y hxy
+
+/-- A second symmetric completion that raises the cost of every transition incident to `a`.
+The protocol itself has no axiom forbidding this state dependence. -/
+def markedActionProtocol (P : VerificationProtocol) (a : P.State) : ActionProtocol P where
+  action := fun x y => if x = y then 0 else if x = a ∨ y = a then 2 else 1
+  action_refl := by intro x; simp
+  action_nontrivial := by
+    intro x y hxy
+    by_cases hmark : x = a ∨ y = a <;> simp [hxy, hmark]
+
+/-- On any protocol with three distinct states, the two admissible costs above cannot be
+identified by an overall action-scale calibration. Thus the `ActionProtocol` fields alone do not
+determine transition-cost ratios uniquely; this is an interface result, not a physical admission
+theorem for a D0 carrier. -/
+theorem action_protocol_has_nonscaling_completions {P : VerificationProtocol}
+    (a b c : P.State) (hab : a ≠ b) (hac : a ≠ c) (hbc : b ≠ c) :
+    ¬ ∃ s : ℝ, 0 < s ∧
+      ∀ x y : P.State,
+        (markedActionProtocol P a).action x y = s * (canonicalActionProtocol P).action x y := by
+  rintro ⟨s, _hs, hsame⟩
+  have hbase : (1 : ℝ) = s := by
+    simpa [markedActionProtocol, canonicalActionProtocol, hbc,
+      Ne.symm hab, Ne.symm hac] using hsame b c
+  have hmarked : (2 : ℝ) = s := by
+    simpa [markedActionProtocol, canonicalActionProtocol, hab] using hsame a b
+  linarith
+
+/-- A uniformly doubled admissible completion shows that the lower bound `S_min = 1` need not
+be attained by every action protocol. Attainment is witnessed by `canonicalActionProtocol`, not
+forced for an arbitrary inhabitant of `ActionProtocol`. -/
+def doubledActionProtocol (P : VerificationProtocol) : ActionProtocol P where
+  action := fun x y => if x = y then 0 else 2
+  action_refl := by intro x; simp
+  action_nontrivial := by intro x y hxy; simp [hxy]
+
+theorem doubledActionProtocol_never_attains_S_min {P : VerificationProtocol}
+    (x y : P.State) (hxy : x ≠ y) :
+    (doubledActionProtocol P).action x y ≠ S_min := by
+  simp [doubledActionProtocol, S_min, hxy]
+
+/-- A degree-two homogeneous cost on a divisible real vector carrier cannot satisfy the unit
+lower bound on every nonzero transition. Starting from any nonzero direction `v`, the rescaling
+`v ↦ v / (Q(v) + 1)` remains nonzero and has cost below one. Thus the abstract `ActionProtocol`
+cannot be applied directly to all pointwise field variations with their quadratic action; a
+discrete event-to-field map is required. This is a scope theorem, not a no-go for discrete native
+histories. -/
+theorem no_degree_two_homogeneous_action_protocol
+    {V : Type*} [AddCommGroup V] [Module ℝ V]
+    (Q : V → ℝ) (hQ : ∀ t v, Q (t • v) = t ^ 2 * Q v)
+    (v₀ : V) (hv₀ : v₀ ≠ 0) :
+    ¬ ∀ v : V, v ≠ 0 → 1 ≤ Q v := by
+  intro hfloor
+  have hbase : 1 ≤ Q v₀ := hfloor v₀ hv₀
+  let t : ℝ := 1 / (Q v₀ + 1)
+  have htpos : 0 < t := by
+    dsimp [t]
+    positivity
+  have htne : t ≠ 0 := ne_of_gt htpos
+  have hscaled_ne : t • v₀ ≠ 0 := smul_ne_zero htne hv₀
+  have hsmall : Q (t • v₀) < 1 := by
+    rw [hQ]
+    dsimp [t]
+    have hden : Q v₀ + 1 ≠ 0 := by linarith
+    field_simp [hden]
+    nlinarith [sq_nonneg (Q v₀)]
+  have hlarge : 1 ≤ Q (t • v₀) := hfloor (t • v₀) hscaled_ne
+  linarith
 
 /-- A sub-quantum threshold detector that truncates actions below 1 to 0. -/
 noncomputable def thresholdObservation (s : ℝ) : Bool := decide (1 ≤ s)
@@ -95,366 +232,5 @@ theorem action_distinction_forcing {P : VerificationProtocol} (_K : KillingTest 
   intro x y hxy
   have h1 : 1 ≤ A.action x y := A.action_nontrivial x y hxy
   linarith
-
-
-/-! ## Fundamental M1/MDL source: paid reversible history is not endpoint cost
-
-The original endogenous action quantum forces every actually
-distinguishable nonidentity physical transition to cost at least one
-unit. A reversible two-transition RETURN to exactly the SAME
-registered state is therefore NOT equivalent, as a fully paid
-history, to the null-history identity transition. No gravitational
-action or arbitrary quantum coupling enters this theorem.
-
-The proof is purely foundational; it is conditional on a REAL
-source admitting both x→y and y→x, which the ActionProtocol
-price assignment by itself does not guarantee. One must never
-erase actual intermediate record/provenance on the basis of equal
-endpoints, nor claim the theorem selects complete Book03 work.
--/
-
-/-- One truly distinguishable forward transition AND its returning
-reverse pay at least two original endogenous action quanta. -/
-theorem original_roundtrip_forces_paid_history
-    {P : VerificationProtocol} (A : ActionProtocol P)
-    (x y : P.State) (h : x ≠ y) :
-    2 ≤ A.action x y + A.action y x := by
-  have hforward := A.action_nontrivial x y h
-  have hback := A.action_nontrivial y x h.symm
-  linarith
-
-/-- A complete source-path Cost that counts the two genuinely executed
-primitive transitions CANNOT be a function of the final state alone,
-with the original empty history assigned zero. The endpoint x is
-identical in both executions. -/
-theorem original_roundtrip_no_endpoint_only_paid_action
-    {P : VerificationProtocol} (A : ActionProtocol P)
-    (x y : P.State) (h : x ≠ y) :
-    ¬ ∃ costOfEndpoint : P.State → ℝ,
-        costOfEndpoint x = 0 ∧
-        costOfEndpoint x = A.action x y + A.action y x := by
-  rintro ⟨f, hblank, hpaid⟩
-  have hmin := original_roundtrip_forces_paid_history A x y h
-  rw [hblank] at hpaid
-  linarith
-
-
-
-/-! ## Research frontier: PROSPECTIVE MDL SELECTION, not after-the-fact compression
-
-The original Tome I definition of D_min compares equivalent DESCRIPTIONS;
-the existing ActionProtocol assigns a lower bound to actual transition
-COST. Neither definition alone states that the physical world SELECTS
-its next feasible execution by minimizing cumulative action. The
-following explicit separate DYNAMICAL SELECTION PREMISE formalizes the
-strong prospective-MDL hypothesis without smuggling it into M1.
-
-A prospective execution includes the COMPLETE state (including all
-currently relevant retained archive, clock, momentum and preparation),
-allowed actions, a goal/boundary predicate and full transition costs.
-If the selected whole trajectory really minimizes the given FULL price
-among all physically allowed alternatives with the SAME initial state
-and SAME goal, it cannot contain an avoidable positive-cost detour
-that returns to the SAME COMPLETE state. No retroactive rewriting is
-involved. Uniqueness under ties, actual Book H+J+R selection and GR
-do not follow from this structural principle-of-optimality theorem.
--/
-
-/-- Physical-type finite state machine with ORIGINAL enabled actions,
-full state-dependent execution price and NO extrinsic future oracle. -/
-structure ProspectiveDynamics where
-  State : Type
-  Action : Type
-  step : State → Action → State
-  allowed : State → Action → Prop
-  price : State → Action → ℝ
-
-/-- Execute a list of original admitted operations chronologically. -/
-def ProspectiveDynamics.run (D : ProspectiveDynamics) (s : D.State) :
-    List D.Action → D.State
-  | [] => s
-  | a :: tail => D.run (D.step s a) tail
-
-/-- Accumulate the FULL actual state-dependent step price. -/
-def ProspectiveDynamics.totalPrice (D : ProspectiveDynamics) (s : D.State) :
-    List D.Action → ℝ
-  | [] => 0
-  | a :: tail => D.price s a + D.totalPrice (D.step s a) tail
-
-/-- Admissibility is evaluated at EVERY actual intermediate state,
-not inferred from a mere shared endpoint. -/
-def ProspectiveDynamics.executable (D : ProspectiveDynamics) (s : D.State) :
-    List D.Action → Prop
-  | [] => True
-  | a :: tail => D.allowed s a ∧ D.executable (D.step s a) tail
-
-theorem ProspectiveDynamics.run_append (D : ProspectiveDynamics)
-    (s : D.State) (head tail : List D.Action) :
-    D.run s (head ++ tail) = D.run (D.run s head) tail := by
-  induction head generalizing s with
-  | nil => rfl
-  | cons a rest ih =>
-      exact ih (D.step s a)
-
-theorem ProspectiveDynamics.totalPrice_append (D : ProspectiveDynamics)
-    (s : D.State) (head tail : List D.Action) :
-    D.totalPrice s (head ++ tail) =
-      D.totalPrice s head + D.totalPrice (D.run s head) tail := by
-  induction head generalizing s with
-  | nil => simp [ProspectiveDynamics.totalPrice, ProspectiveDynamics.run]
-  | cons a rest ih =>
-      simp only [List.cons_append, ProspectiveDynamics.totalPrice,
-        ProspectiveDynamics.run]
-      rw [ih]
-      ring
-
-theorem ProspectiveDynamics.executable_append (D : ProspectiveDynamics)
-    (s : D.State) (head tail : List D.Action) :
-    D.executable s (head ++ tail) ↔
-      D.executable s head ∧ D.executable (D.run s head) tail := by
-  induction head generalizing s with
-  | nil =>
-      simp [ProspectiveDynamics.executable, ProspectiveDynamics.run]
-  | cons a rest ih =>
-      simp only [List.cons_append, ProspectiveDynamics.executable,
-        ProspectiveDynamics.run]
-      rw [ih]
-      tauto
-
-/-- An explicit PROSPECTIVE physical selection rule.
-Its optimality is a PREMISE to be DERIVED from full native M1/Book
-Cost-Info, NOT an already proved theorem of the original D_min definition. -/
-structure ProspectiveExecution (D : ProspectiveDynamics) where
-  initial : D.State
-  goal : D.State → Prop
-  chosen : List D.Action
-  chosen_executable : D.executable initial chosen
-  chosen_goal : goal (D.run initial chosen)
-  optimal : ∀ alternative : List D.Action,
-    D.executable initial alternative →
-    goal (D.run initial alternative) →
-    D.totalPrice initial chosen ≤ D.totalPrice initial alternative
-
-/-- Prospective, not retrospective: a strictly cheaper genuinely
-feasible alternative with the SAME initial FULL state and terminal
-goal excludes the selected history before it occurs. -/
-theorem ProspectiveExecution.reject_strictly_dominated
-    {D : ProspectiveDynamics} (E : ProspectiveExecution D)
-    (alternative : List D.Action)
-    (hvalid : D.executable E.initial alternative)
-    (hgoal : E.goal (D.run E.initial alternative)) :
-    ¬ D.totalPrice E.initial alternative <
-        D.totalPrice E.initial E.chosen := by
-  exact not_lt.mpr (E.optimal alternative hvalid hgoal)
-
-/-- The finite Bellman principle follows from prospective global
-choice, complete state and additive true history price. Replacing
-a selected suffix by an allowed cheaper suffix reaching the SAME
-goal is impossible. -/
-theorem ProspectiveExecution.optimal_suffix
-    {D : ProspectiveDynamics} (E : ProspectiveExecution D)
-    (prefix suffix alternative : List D.Action)
-    (hchosen : E.chosen = prefix ++ suffix)
-    (hprefix : D.executable E.initial prefix)
-    (halt : D.executable (D.run E.initial prefix) alternative)
-    (hgoal : E.goal (D.run (D.run E.initial prefix) alternative)) :
-    D.totalPrice (D.run E.initial prefix) suffix ≤
-      D.totalPrice (D.run E.initial prefix) alternative := by
-  have hwhole : D.executable E.initial (prefix ++ alternative) :=
-    (D.executable_append E.initial prefix alternative).2 ⟨hprefix, halt⟩
-  have hwholeGoal : E.goal (D.run E.initial (prefix ++ alternative)) := by
-    rw [D.run_append]
-    exact hgoal
-  have hopt := E.optimal (prefix ++ alternative) hwhole hwholeGoal
-  rw [hchosen, D.totalPrice_append, D.totalPrice_append] at hopt
-  linarith
-
-/-- No actual prospective optimum contains an unnecessary positive-
-cost cycle returning to the SAME full future-sufficient physical
-state when the shorter execution preserves all allowed constraints.
-This is a generated law of selection, NOT an ex-post rewriting rule. -/
-theorem ProspectiveExecution.no_positive_redundant_detour
-    {D : ProspectiveDynamics} (E : ProspectiveExecution D)
-    (prefix detour suffix : List D.Action)
-    (hchosen : E.chosen = prefix ++ (detour ++ suffix))
-    (hreturn : D.run (D.run E.initial prefix) detour =
-      D.run E.initial prefix)
-    (hcost : 0 < D.totalPrice (D.run E.initial prefix) detour) :
-    False := by
-  have hwhole : D.executable E.initial
-      (prefix ++ (detour ++ suffix)) := by
-    simpa [hchosen] using E.chosen_executable
-  have hp := (D.executable_append E.initial prefix
-    (detour ++ suffix)).1 hwhole
-  have htail0 := (D.executable_append (D.run E.initial prefix)
-    detour suffix).1 hp.2
-  have htail : D.executable (D.run E.initial prefix) suffix := by
-    rw [← hreturn]
-    exact htail0.2
-  have hgoal : E.goal (D.run (D.run E.initial prefix) suffix) := by
-    have hg : E.goal (D.run E.initial
-        (prefix ++ (detour ++ suffix))) := by
-      simpa [hchosen] using E.chosen_goal
-    rw [D.run_append, D.run_append, hreturn] at hg
-    exact hg
-  have hopt := E.optimal_suffix prefix (detour ++ suffix) suffix
-    hchosen hp.1 htail hgoal
-  rw [D.totalPrice_append, hreturn] at hopt
-  linarith
-
-
-
-/-! ## Nontrivial D_min dynamics needs a REQUIRED verification task
-
-If the physical goal is already met at the initial complete state,
-the empty history is allowed and has zero execution price. When
-every actual primitive costs STRICTLY more than zero, any prospective
-global minimizer must choose this empty history. Therefore primitive
-Cost>=S_min=1 plus a prospective minimizing law, by themselves,
-CANNOT force a falling apple, any tick, or real change. The original
-M1/D_min must provide a genuinely obligatory test/closure condition,
-or the actual complete Cost-minus-Info objective must make idle
-nonoptimal. No external ad hoc physical destination is assumed here.
--/
-
-theorem ProspectiveDynamics.totalPrice_nonneg
-    (D : ProspectiveDynamics) (hprice : ∀ s a, 0 ≤ D.price s a)
-    (s : D.State) (word : List D.Action) :
-    0 ≤ D.totalPrice s word := by
-  induction word generalizing s with
-  | nil => simp [ProspectiveDynamics.totalPrice]
-  | cons a tail ih =>
-      change 0 ≤ D.price s a + D.totalPrice (D.step s a) tail
-      exact add_nonneg (hprice s a) (ih (D.step s a))
-
-theorem ProspectiveExecution.no_motion_without_a_required_distinction
-    {D : ProspectiveDynamics} (E : ProspectiveExecution D)
-    (goal_already_met : E.goal E.initial)
-    (hpositive : ∀ s a, 0 < D.price s a) :
-    E.chosen = [] := by
-  cases hchosen : E.chosen with
-  | nil => rfl
-  | cons a tail =>
-      have hzeroLegal : D.executable E.initial
-          ([] : List D.Action) := by
-        simp [ProspectiveDynamics.executable]
-      have hzeroGoal : E.goal (D.run E.initial
-          ([] : List D.Action)) := by
-        simpa [ProspectiveDynamics.run] using goal_already_met
-      have hopt := E.optimal [] hzeroLegal hzeroGoal
-      rw [hchosen] at hopt
-      have htail := D.totalPrice_nonneg
-        (fun s a => le_of_lt (hpositive s a))
-        (D.step E.initial a) tail
-      have hbound : D.price E.initial a +
-          D.totalPrice (D.step E.initial a) tail ≤ 0 := by
-        simpa [ProspectiveDynamics.totalPrice] using hopt
-      linarith [hpositive E.initial a]
-
-theorem ProspectiveExecution.nonempty_forces_unsatisfied_initial_goal
-    {D : ProspectiveDynamics} (E : ProspectiveExecution D)
-    (hpositive : ∀ s a, 0 < D.price s a)
-    (hword : E.chosen ≠ []) : ¬ E.goal E.initial := by
-  intro hgoal
-  exact hword (E.no_motion_without_a_required_distinction hgoal hpositive)
-
-
-/-! ## Fundamental prospective-MDL orientation theorem
-
-An ex-ante minimizing law does NOT make a strictly unique oriented
-history out of two physically equivalent alternatives with identical
-full price, initial data, future-test feasibility and boundary goal.
-If reversing direction is a genuine admissible symmetry of the
-FULL selection problem, every minimizer has an equally inexpensive
-reversed minimizer. An anti-invariant signed source cannot then be
-nonzero at a UNIQUE minimizer. A deterministic oriented history must
-come from directional COMPLETE initial/boundary/future-test data,
-an honest orientation-sensitive native price, or an additional
-specified deterministic tie-selection law. No coin flip is entailed.
-This is a selection theorem, not a post-hoc history-compression rule.
--/
-
-/-- An actual prospective selection task with a genuine reversal
-symmetry of ALL its admissible histories and FULL physical cost.
-The symmetry assumptions are explicit obligations for a concrete
-M1/G0 application; a scalar Book reversal alone does not establish
-symmetry of the whole original Book03 H+J+R and CAR source. -/
-structure ProspectiveReversalSymmetry where
-  Candidate : Type
-  feasible : Candidate → Prop
-  fullPrice : Candidate → ℝ
-  reverse : Candidate → Candidate
-  reverse_reverse : ∀ x, reverse (reverse x) = x
-  reverse_feasible : ∀ x, feasible x → feasible (reverse x)
-  price_reversal : ∀ x, fullPrice (reverse x) = fullPrice x
-  signedSource : Candidate → ℝ
-  signed_reversal : ∀ x, signedSource (reverse x) = -signedSource x
-
-/-- Prospective physical optimum among all ACTUALLY admissible
-source histories at identical complete initial/boundary/test task. -/
-def ProspectiveReversalSymmetry.IsMinimum
-    (S : ProspectiveReversalSymmetry) (x : S.Candidate) : Prop :=
-  S.feasible x ∧ ∀ y, S.feasible y → S.fullPrice x ≤ S.fullPrice y
-
-/-- If ALL full-task and full-price reversal hypotheses hold,
-a minimum has an equally good actual reversed minimum. -/
-theorem ProspectiveReversalSymmetry.reverse_minimum
-    (S : ProspectiveReversalSymmetry) {x : S.Candidate}
-    (hx : S.IsMinimum x) :
-    S.IsMinimum (S.reverse x) := by
-  constructor
-  · exact S.reverse_feasible x hx.1
-  · intro y hy
-    rw [S.price_reversal]
-    exact hx.2 y hy
-
-/-- At a reversal-fixed genuinely admissible physical history,
-every honest orientation-ODD source is necessarily zero. -/
-theorem ProspectiveReversalSymmetry.fixed_point_signed_zero
-    (S : ProspectiveReversalSymmetry) {x : S.Candidate}
-    (h : S.reverse x = x) : S.signedSource x = 0 := by
-  have hh := S.signed_reversal x
-  rw [h] at hh
-  linarith
-
-/-- If prospective D_min really determines a UNIQUE history from
-fully symmetric constraints and full price, its signed chirality is
-zero. Unique oriented nonzero gravity needs a physical symmetry
-breaker in the actual initial data/required tests/paid native source,
-not an arbitrary external choice. -/
-theorem ProspectiveReversalSymmetry.unique_minimum_signed_zero
-    (S : ProspectiveReversalSymmetry) {x : S.Candidate}
-    (hx : S.IsMinimum x)
-    (hunique : ∀ y, S.IsMinimum y → y = x) :
-    S.signedSource x = 0 := by
-  have heq := hunique (S.reverse x) (S.reverse_minimum hx)
-  exact S.fixed_point_signed_zero heq
-
-/-- Conversely a nonzero oriented optimum NECESSARILY has a distinct
-equally-priced reversed optimum under complete symmetry. This is
-deterministic non-uniqueness, not a stochastic physical law. -/
-theorem ProspectiveReversalSymmetry.nonzero_minimum_pair
-    (S : ProspectiveReversalSymmetry) {x : S.Candidate}
-    (hx : S.IsMinimum x) (hodd : S.signedSource x ≠ 0) :
-    S.IsMinimum (S.reverse x) ∧ S.reverse x ≠ x ∧
-      S.fullPrice (S.reverse x) = S.fullPrice x := by
-  refine ⟨S.reverse_minimum hx, ?_, S.price_reversal x⟩
-  intro hfixed
-  exact hodd (S.fixed_point_signed_zero hfixed)
-
-/-- If a criterion does not permit the reversed candidate, it is
-NOT a reversal-symmetric FULL future task, even if its scalar
-primitive Book edge counts and costs are symmetric. This is where
-an original orientation-sensitive initial record/reference/target
-may enter WITHOUT postulating a random choice or fitted gravity. -/
-theorem ProspectiveReversalSymmetry.unique_nonzero_impossible
-    (S : ProspectiveReversalSymmetry)
-    (h : ∃ x, S.IsMinimum x ∧ S.signedSource x ≠ 0)
-    (hunique : ∀ x y, S.IsMinimum x → S.IsMinimum y → x = y) :
-    False := by
-  obtain ⟨x, hx, hodd⟩ := h
-  have heq : S.reverse x = x :=
-    hunique (S.reverse x) x (S.reverse_minimum hx) hx
-  exact hodd (S.fixed_point_signed_zero heq)
 
 end D0.Foundation.EndogenousActionQuantum

@@ -1,10 +1,11 @@
 import D0.Representation.OrderMemoryReadout
-import D0.Representation.GoldenOrderInterferometer
+import D0.Representation.GoldenQ8CenterReadout
 import D0.Foundation.Omega8Center
-import D0.Foundation.EmpiricalTheoryFactorization
-import D0.Foundation.EndogenousActionQuantum
+import D0.Foundation.FutureExecutionCompleteness
+import D0.Foundation.ProspectiveReversalSymmetry
 import D0.Representation.FiniteProtocolClock
 import Mathlib.Data.Matrix.Block
+import Init.Data.Vector.OfFn
 
 /-!
 # Forward-only control for the finite order-memory protocol
@@ -29,6 +30,63 @@ abbrev Axis := Fin 4 ⊕ Fin 4
 abbrev M4R := Matrix (Fin 4) (Fin 4) ℝ
 abbrev M8R := Matrix Axis Axis ℝ
 abbrev M8Q := Matrix Axis Axis ℚ
+
+/-- Concrete finite storage on ALL original eight axis labels. The matrix
+fold accumulates data, not function-valued caches which can be re-evaluated
+entry by entry. This changes proof evaluation only, not physical primitives. -/
+abbrev NativeQ8AxisData (α : Type) := Vector α 4 × Vector α 4
+
+def nativeQ8TabulateAxis {α : Type} (f : Axis → α) : NativeQ8AxisData α :=
+  (Vector.ofFn (fun i => f (Sum.inl i)),
+   Vector.ofFn (fun i => f (Sum.inr i)))
+
+def nativeQ8ViewAxis {α : Type} (a : NativeQ8AxisData α) : Axis → α
+  | .inl i => a.1.get i
+  | .inr i => a.2.get i
+
+theorem nativeQ8ViewAxis_tabulate {α : Type} (f : Axis → α) :
+    nativeQ8ViewAxis (nativeQ8TabulateAxis f) = f := by
+  funext i
+  cases i <;> simp [nativeQ8ViewAxis, nativeQ8TabulateAxis, Vector.get, Vector.ofFn]
+
+abbrev NativeQ8MatrixData := NativeQ8AxisData (NativeQ8AxisData ℚ)
+
+def nativeQ8TabulateMatrix (M : M8Q) : NativeQ8MatrixData :=
+  nativeQ8TabulateAxis (fun i => nativeQ8TabulateAxis (M i))
+
+def nativeQ8ViewMatrix (D : NativeQ8MatrixData) : M8Q :=
+  fun i j => nativeQ8ViewAxis (nativeQ8ViewAxis D i) j
+
+theorem nativeQ8ViewMatrix_tabulate (M : M8Q) :
+    nativeQ8ViewMatrix (nativeQ8TabulateMatrix M) = M := by
+  funext i j
+  simp only [nativeQ8ViewMatrix, nativeQ8TabulateMatrix, nativeQ8ViewAxis_tabulate]
+
+def nativeQ8MatrixStep (I J : M8Q) (U : M8Q) (b : Bool) : M8Q :=
+  (if b then I else J) * U
+
+def nativeQ8DataStep (I J : M8Q) (D : NativeQ8MatrixData) (b : Bool) : NativeQ8MatrixData :=
+  nativeQ8TabulateMatrix (nativeQ8MatrixStep I J (nativeQ8ViewMatrix D) b)
+
+theorem nativeQ8ViewDataStep (I J : M8Q) (D : NativeQ8MatrixData) (b : Bool) :
+    nativeQ8ViewMatrix (nativeQ8DataStep I J D b) = nativeQ8MatrixStep I J (nativeQ8ViewMatrix D) b := by
+  exact nativeQ8ViewMatrix_tabulate _
+
+theorem nativeQ8FoldlView (I J : M8Q) (word : List Bool) (D : NativeQ8MatrixData) :
+    nativeQ8ViewMatrix (word.foldl (nativeQ8DataStep I J) D) =
+      word.foldl (nativeQ8MatrixStep I J) (nativeQ8ViewMatrix D) := by
+  induction word generalizing D with
+  | nil => rfl
+  | cons b word ih =>
+      simp only [List.foldl_cons, ih, nativeQ8ViewDataStep]
+
+theorem nativeQ8ScanlView (I J : M8Q) (word : List Bool) (D : NativeQ8MatrixData) :
+    (word.scanl (nativeQ8DataStep I J) D).map nativeQ8ViewMatrix =
+      word.scanl (nativeQ8MatrixStep I J) (nativeQ8ViewMatrix D) := by
+  induction word generalizing D with
+  | nil => rfl
+  | cons b word ih =>
+      simp only [List.scanl_cons, List.map_cons, ih, nativeQ8ViewDataStep]
 
 def mixer (a p : ℝ) : M8R :=
   fromBlocks (a • (1 : M4R)) ((-p) • (1 : M4R))
@@ -103,10 +161,16 @@ theorem common_j_orthogonal : commonJQ.transpose * commonJQ = 1 := by native_dec
 Matrices act on column states, hence the reversed multiplication order here. -/
 theorem forward_order_word :
     commonJQ ^ 3 * localIQ ^ 3 * commonJQ * localIQ = relativeSignQ := by
-  native_decide
+  have h : nativeQ8ViewMatrix
+      (([true,false,true,true,true,false,false,false] : List Bool).foldl
+        (nativeQ8DataStep localIQ commonJQ) (nativeQ8TabulateMatrix 1)) =
+      relativeSignQ := by native_decide
+  rw [nativeQ8FoldlView, nativeQ8ViewMatrix_tabulate] at h
+  simpa [nativeQ8MatrixStep, pow_succ, mul_assoc] using h
 
 /-- Same cost and same generator multiplicities, with commuting runs grouped. -/
-theorem forward_identity_word : commonJQ ^ 4 * localIQ ^ 4 = 1 := by native_decide
+theorem forward_identity_word : commonJQ ^ 4 * localIQ ^ 4 = 1 := by
+  rw [common_j_fourth, local_i_fourth, one_mul]
 
 noncomputable def liftQ (M : M8Q) : M8R := M.map (Rat.castHom ℝ)
 
@@ -245,7 +309,7 @@ def nativeQ8ProgramClass (order : Bool) : D0.Foundation.UQuat :=
 
 /-- The existing literal Golden controlled-port probability for the
 original grouped vs ordered Q8 eight-gate word. -/
-def nativeQ8ProgramPort (order : Bool) : ℝ :=
+noncomputable def nativeQ8ProgramPort (order : Bool) : ℝ :=
   let p := D0.primitiveRoot
   let a := Real.sqrt p
   (D0.Representation.GoldenOrderInterferometer.output a p
@@ -265,8 +329,8 @@ theorem nativeQ8ProgramPort_ordered :
 theorem nativeQ8ProgramPort_grouped_ne_ordered :
     nativeQ8ProgramPort false ≠ nativeQ8ProgramPort true := by
   rw [nativeQ8ProgramPort_grouped, nativeQ8ProgramPort_ordered]
-  exact ne_of_lt
-    D0.Representation.GoldenOrderInterferometer.q8_center_order_golden_detectable.2.2
+  exact ne_of_lt (mul_pos (by norm_num)
+    (pow_pos D0.Representation.GoldenOrderInterferometer.primitive_positive _))
 
 /-- A genuinely sufficient predictor MUST distinguish the two source
 programmes, even though their original Q8 gate inventories coincide. -/
@@ -318,7 +382,7 @@ theorem nativeQ8ProgramDistinctionHasUnitCost
 /-- Existing internal reversible record-writing CNOT, with no new
 step primitive: a Bool source programme and an initially blank record.
 Actual Golden port outcomes above are the future output. -/
-def nativeQ8RecordedProgramFuture :
+noncomputable def nativeQ8RecordedProgramFuture :
     D0.Foundation.EmpiricalTheoryFactorization.FutureExecution where
   State := Bool × Bool
   Action := Bool
@@ -369,8 +433,22 @@ and its true full Book clock/work are still unselected in G0.
 /-- Run an actual finite chronological list of the two ALREADY OWNED
 forward native Q8 gate matrices. -/
 def nativeQ8ChronologicalWord (word : List Bool) : M8Q :=
-  word.foldl (fun U local =>
-    (if local then localIQ else commonJQ) * U) 1
+  word.foldl (fun U isLocal =>
+    (if isLocal then localIQ else commonJQ) * U) 1
+
+/-- Same chronological fold, retaining concrete data between products. -/
+def nativeQ8ChronologicalWordEager (word : List Bool) : M8Q :=
+  nativeQ8ViewMatrix
+    (word.foldl (nativeQ8DataStep localIQ commonJQ) (nativeQ8TabulateMatrix 1))
+
+/-- The compiler may use eager storage only through this proved equality.
+Every original word, gate order and endpoint operator is retained exactly. -/
+@[csimp] theorem nativeQ8ChronologicalWord_eq_eager :
+    nativeQ8ChronologicalWord = nativeQ8ChronologicalWordEager := by
+  funext word
+  simp only [nativeQ8ChronologicalWord, nativeQ8ChronologicalWordEager,
+    nativeQ8FoldlView, nativeQ8ViewMatrix_tabulate]
+  rfl
 
 /-- The actual ordered SOURCE LIST itself evaluates to the original
 relative central sign, with no free sign matrix used as a gate. -/
@@ -406,7 +484,7 @@ theorem nativeQ8NegativeCenterProbabilityComplete :
 Golden port experiment: all-dark probability. Independence / ability
 to repeat are explicit execution premises, NOT consequences of one
 finite coherent 16-stage clock. -/
-def nativeQ8IndependentAllDarkProbability (n : ℕ) : ℝ :=
+noncomputable def nativeQ8IndependentAllDarkProbability (n : ℕ) : ℝ :=
   D0.primitiveRoot^(6*n)
 
 /-- The probability of NEVER witnessing an original Q8 -1 order
@@ -495,6 +573,9 @@ theorem nativeQ8RecordedProgram_futureMemoryAtLeastFour
           decode (encode s) := (correct s).symm
       _ = decode (encode t) := by rw [he]
       _ = nativeQ8RecordedProgramFuture.profile t := correct t
+  letI : Fintype nativeQ8RecordedProgramFuture.State := by
+    change Fintype (Bool × Bool)
+    infer_instance
   simpa [nativeQ8RecordedProgramFuture] using
     (Fintype.card_le_of_injective encode hinj)
 
@@ -515,15 +596,15 @@ distinction, even after primitive input costs are fixed canonically.
 can reproduce both actual Golden order-response distributions. -/
 theorem originalQ8InventoryCannotPredictGolden :
     ¬ ∃ forecast : ℕ → ℕ → ℝ,
-      forecast originalQ8OrderWord.count_true
-          originalQ8OrderWord.count_false = nativeQ8ProgramPort true ∧
-      forecast originalQ8IdentityWord.count_true
-          originalQ8IdentityWord.count_false = nativeQ8ProgramPort false := by
+      forecast (originalQ8OrderWord.count true)
+          (originalQ8OrderWord.count false) = nativeQ8ProgramPort true ∧
+      forecast (originalQ8IdentityWord.count true)
+          (originalQ8IdentityWord.count false) = nativeQ8ProgramPort false := by
   rintro ⟨forecast,ordered,grouped⟩
-  have h1 : originalQ8OrderWord.count_true = 4 := by decide
-  have h2 : originalQ8OrderWord.count_false = 4 := by decide
-  have h3 : originalQ8IdentityWord.count_true = 4 := by decide
-  have h4 : originalQ8IdentityWord.count_false = 4 := by decide
+  have h1 : (originalQ8OrderWord.count true) = 4 := by decide
+  have h2 : (originalQ8OrderWord.count false) = 4 := by decide
+  have h3 : (originalQ8IdentityWord.count true) = 4 := by decide
+  have h4 : (originalQ8IdentityWord.count false) = 4 := by decide
   rw [h1,h2] at ordered
   rw [h3,h4] at grouped
   exact nativeQ8ProgramPort_grouped_ne_ordered (grouped.symm.trans ordered)
@@ -609,7 +690,8 @@ theorem originalQ8SameEndpointDifferentNativeClock
       (D0.Representation.FiniteProtocolClock.run U s 8).1 := by
   rw [D0.Representation.FiniteProtocolClock.stage_is_internal,
       D0.Representation.FiniteProtocolClock.stage_is_internal]
-  norm_num
+  change (2 : ZMod 16) ≠ 8
+  decide
 
 
 
@@ -638,8 +720,21 @@ replacement when the actual stage/provenance is future-readable.
 execution, including the original input identity prefix. -/
 def nativeQ8ExecutionPrefixes (word : List Bool) : List M8Q :=
   word.scanl
-    (fun U local => (if local then localIQ else commonJQ) * U)
+    (fun U isLocal => (if isLocal then localIQ else commonJQ) * U)
     1
+
+/-- Eager storage for the ENTIRE original prefix list, including identity. -/
+def nativeQ8ExecutionPrefixesEager (word : List Bool) : List M8Q :=
+  (word.scanl (nativeQ8DataStep localIQ commonJQ) (nativeQ8TabulateMatrix 1)).map
+    nativeQ8ViewMatrix
+
+/-- No prefix, comparison, primitive count or finite search case is removed. -/
+@[csimp] theorem nativeQ8ExecutionPrefixes_eq_eager :
+    nativeQ8ExecutionPrefixes = nativeQ8ExecutionPrefixesEager := by
+  funext word
+  simp only [nativeQ8ExecutionPrefixes, nativeQ8ExecutionPrefixesEager,
+    nativeQ8ScanlView, nativeQ8ViewMatrix_tabulate]
+  rfl
 
 /-- The actual successive active changes in a Q8 execution trace. -/
 def nativeQ8ExecutionPairs (word : List Bool) : List (M8Q × M8Q) :=
@@ -821,10 +916,9 @@ theorem nativeQ8CanonicalCostGapEqualsDarkLogWeight :
   have hbook : D0.primitiveRoot^8 /
       D0.primitiveRoot^2 = D0.primitiveRoot^6 := by
     field_simp
-    ring
   have hdark := nativeQ8NegativeCenterProbabilityComplete
   rw [nativeQ8ProgramPort_ordered] at hdark
-  rw [hbook]
+  rw [hbook, nativeQ8ProgramPort_ordered]
   linarith
 
 
@@ -917,7 +1011,8 @@ theorem nativeQ8FourStepCircleClockIsNotIdle
       (D0.Representation.FiniteProtocolClock.run U s 0).1 := by
   rw [D0.Representation.FiniteProtocolClock.stage_is_internal,
       D0.Representation.FiniteProtocolClock.stage_is_internal]
-  norm_num
+  change (4 : ZMod 16) ≠ 0
+  decide
 
 
 
@@ -1235,6 +1330,34 @@ def nativeQ8FullMatchedPairAtLength (n : ℕ) : Bool :=
       (w.count true == v.count true) &&
       decide (nativeQ8ChronologicalWord w = 1) &&
       decide (nativeQ8ChronologicalWord v = relativeSignQ)))
+
+/-- Cache the two ORIGINAL endpoint tests once per source word. The tuple
+stores values; its data fold is evaluated before any pairwise comparison. -/
+def nativeQ8WordSummary (word : List Bool) : ℕ × Bool × Bool :=
+  let data := word.foldl (nativeQ8DataStep localIQ commonJQ) (nativeQ8TabulateMatrix 1)
+  let U := nativeQ8ViewMatrix data
+  (word.count true, decide (U = 1), decide (U = relativeSignQ))
+
+theorem nativeQ8WordSummary_eq (word : List Bool) :
+    nativeQ8WordSummary word =
+      (word.count true, decide (nativeQ8ChronologicalWord word = 1),
+        decide (nativeQ8ChronologicalWord word = relativeSignQ)) := by
+  simp only [nativeQ8WordSummary, nativeQ8FoldlView, nativeQ8ViewMatrix_tabulate]
+  rfl
+
+/-- The original full ordered-pair search over ALL words, with only repeated
+endpoint evaluations cached. No endpoint quotient or deduplication is used. -/
+def nativeQ8FullMatchedPairAtLengthEager (n : ℕ) : Bool :=
+  let summaries := (nativeQ8AllWordsOfLength n).map nativeQ8WordSummary
+  summaries.any (fun w =>
+    summaries.any (fun v => (w.1 == v.1) && w.2.1 && v.2.2))
+
+/-- Exact equivalence for EVERY length, not just the finite certified range. -/
+@[csimp] theorem nativeQ8FullMatchedPairAtLength_eq_eager :
+    nativeQ8FullMatchedPairAtLength = nativeQ8FullMatchedPairAtLengthEager := by
+  funext n
+  simp only [nativeQ8FullMatchedPairAtLength, nativeQ8FullMatchedPairAtLengthEager,
+    List.any_map, Function.comp_def, nativeQ8WordSummary_eq]
 
 /-- ORIGINAL 0,1,2,3,4,5-gate equal-inventory Q8 source words
 cannot realize EXACT full I8 and relativeSignQ outputs at once.

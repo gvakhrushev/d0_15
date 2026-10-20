@@ -1,89 +1,105 @@
 # D0 — Finite Verification Theory
 
-## Current objective: derive general relativity (ОТО)
+## Current objective: close the D0 foundation through general relativity
 
-The working target is one derivation from operational admissibility to the
-**full nonlinear gravitational equation with its matter source and a controlled
-refinement limit**. This target remains open.
+D0 starts from the **necessary operational structure of verifiability**:
+distinguishable completed outcomes, retained records, access and independent
+comparison without an obligatory external catalogue. Reading, writing and
+checking a theory already require these functions. The functional tuple is the
+common foundation; the chosen scene, fields and geometry enter through the
+subsequent mathematical realizations.
 
-| Current result | What it establishes; what the derivation still needs |
+**General relativity (ОТО) is the first complete physical specialization of
+that foundation.** The programme constructs a faithful operational
+interpretation, proves the premises of existing theory results, and imports
+those results into one composed D0 argument. The same transfer architecture
+can then serve other theories. The present GR target retains the **full
+nonlinear gravitational equation, its independently derived matter source,
+physical constraints, and controlled soundness and recovery on an explicit
+nonempty curved class**. This composed physical target remains open.
+
+The current central bridge is **prospective minimality**: derive the native
+continuation law from compulsory verification conditions and the same
+execution's complete Cost-Info. Existing memory, Bellman/no-detour,
+conditional-current and geometric theorems are inputs to this derivation. The
+physical optimum is still a premise in the prospective formal owner; the next
+work must supply its native origin or the precise native variational law.
+Read the [shared focus and closure roadmap](02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md#prospective-minimality-and-physical-execution)
+for goals, reusable results, proof tools and exact completion conditions.
+
+| Architectural conclusion | Current result and next application |
 |---|---|
-| [Current priority: complete price and vacuum preparation, §§7.23–7.24](02_REGISTRY/research/A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md) | The specified full-prefix polynomial instrument forces an upper clock bound on its declared curved chart. The whole-polynomial vacuum preparation source is controlled on the original coherent input, with physical tangent and signal budgets explicit. Native execution/full history price, upstream H/J/R and joint recovery remain the next transition. |
-| [Complete labelled golden-record source — 18 October](02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md) | Derives the five-outcome same-history Cost−Info, solves the free preparation and full reference128 scene equations, and transfers the curved interior lattice family to this complete configured price. The operational metric is unchanged. Native selection/execution of the geometry-controlled programme, earlier-history sources, physical matter and global recovery remain open. |
-| [Operational CAR/clock metric](02_REGISTRY/research/sources/d0_operational_car_clock_readout_2026-10-17/RESULT_RU.md) and [regular natural source → Cartan](02_REGISTRY/research/A4D_REGULAR_NATURAL_SOURCE_TO_CARTAN_2026_10_17.md) | The retained CAR coefficients and clock recover all ten entries of the original Lorentz metric. The Cartan classifier finishes a nonzero regular, purely natural variational source once its hypotheses are established for the actual full price; it does not establish those hypotheses. |
-| [Foundations-to-GR synthesis — updated 18 October](02_REGISTRY/research/A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md) | Connects Books 00–03/06/07 to the geometric and complete-price results. Separates operational necessity, conditional GR derivation and the remaining native physical premises. |
-| [Operational necessity](03_FORMALIZATION/D0/Foundation/PopperianBootstrap.lean) | Any protocol satisfying the verification contract, including a test of GR, carries the functional tuple and retained distinctions. The [empirical factorization](03_FORMALIZATION/D0/Foundation/EmpiricalTheoryFactorization.lean) identifies what all admitted tests can distinguish. These foundations do not alone select the gravitational dynamics. |
-| [Positive AF → Palatini → nonlinear Einstein composition](02_REGISTRY/research/A4D_AF_STAR_PALATINI_NONLINEAR_EINSTEIN_COMPOSITION_2026_10_17.md) | One constructed golden AF Book record consumes the already selected Lorentz-star density. Its C² limit yields all ten vacuum Einstein equations with independent link/coframe variations and a nonzero coefficient. Native execution/full physical price remain unproved. |
-| [Exact full local lattice recovery](02_REGISTRY/research/A4D_AF_STAR_FULL_LATTICE_STATIONARY_FAMILY_2026_10_17.md) | A nonflat pp-wave family solves every interior 16-coframe/24-link row with actual golden weights and a smooth Ricci-flat limit. Its same periodic extension has scalar f=0 everywhere, supplying the new preparation theorem; exterior geometric Euler rows remain fixed and can be nonzero. |
-| [Full AF source normal form](02_REGISTRY/research/A4D_AF_FULL_SOURCE_EINSTEIN_NORMAL_FORM_2026_10_17.md) | Retains the off-shell action identity and complete stationary-set bijection for its distinct declared AF/scene price. Its changed metric and constraint stress need physical identification. The literal spectral H+J+R, open-Julia mean and new labelled price are different sources. |
-| [Common research / Draft #334](02_REGISTRY/research/MEMO_A4D_JOINT_RESPONSE_DECOUPLING_MICROSTRUCTURE.md) | Retains the full source, history, matter, preparation, geometry and joint-root results with their scopes. Scoped obstructions change the consuming arrow; they do not erase the positive construction or establish a general GR no-go. |
-| [Native price comparison, §§8.8–8.9](02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md) | Derives the coherent amplitude/Gram event source. An exact full finite H+J+R mixed variation is zero where the same star stencil is nonzero; direct source identification fails. Book03's remaining named stack blocks are not yet one defined geometric functional. |
-| [Full-Lorentz stationary reduction, §§8.10–8.12](02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md) | Solves observer, all24 link and full preparation equations above every nearby constant metric. The same finite price retains its flat-shape potential. One spatial mode lifts all ten metric slots, but another has an exact metric obstruction, so this faithful section cannot cover all nearby metric fields. |
-| [Full first metric lift, §§8.13–8.15](02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md) | The existing real vacuum-plus-top preparation lifts all ten metric components on every Fourier mode at the owned gapped root. Its homogeneous internal source is solved with full reference128 retained. |
-| [Section-independent source comparison, §§8.16–8.18](02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md) | Every C¹ full-internal stationary section through the same faithful or real-even root has the same constant-metric Hessian. Two exact first-source probes exclude EH+Lambda+the same matter term for this finite price, retaining all neutral modes and rank births. |
-| [Full native history mean and source, §§8.19–8.21](02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md) | Every nonblank preparation has a positive weak-strength source; each fixed finite history has a preparation-uniform weak window. For long histories on fixed data, the full entropy has a proved C¹ leading Rayleigh/count source. All outcomes and reference128 remain. Physical price binding, scale admission and spatial refinement are separate. |
-| [Executed tagged comparison and full price, §§8.22–8.25](02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md) | An explicit history-copy word realizes #363's exit tags. Its entire unfiltered golden outcome law is computed; the complete entropy mean and selected logdet have opposite endpoint strength sources. The positive conditional curvature ratio remains, with its volume term. Normalization and clock equations do not supply the missing physical binding. |
-| [Minimal-code history and full aggregation, §8.26](02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md) | The tagged programme's most probable outcome is a constant bypass. The original native long-history MAP has a finite survival-log source; its unique largest word does not concentrate total probability. Mean, MAP and scalar partition give different sources on the same full law. |
-| [Coherent source and a full conditional stationary solution, §§8.27–8.28](02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md) | Proves C¹ coherent-source convergence through rank births. For a supplied positive additive-code coefficient, a balanced native preparation solves every operator, preparation and clock first equation of the limiting code−coherent price. All reference128 and transverse variations remain. Physical price binding remains open; the finite continuation is developed in the following rows. |
-| [Finite geometric existence and remaining link source, §§8.29–8.33](02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md) | Proves exact finite preparation/coframe/observer solutions for a supplied complete code. Actual entropy birth excludes singular geometry; phase-only symmetry solves every coframe row without choosing isotropic prices. All nonzero-Fourier sources and reference128 variations remain solved. The Lorentz-aligned fixed family retains six link equations; an exact kernel rejects a uniform saddle shortcut. Uniform shape nondegeneracy is proved, while the actual metric scale shrinks in the history limit. |
-| Next consuming proof | Bind the actual preparation, queries, supplied copies and retained records to the same complete price and source; solve its joint equations with controlled refinement. Keep the original raw response and positive native GR obligations separate. |
-| Historical research [#310](https://github.com/gvakhrushev/d0_15/pull/310) and intake [#322](https://github.com/gvakhrushev/d0_15/pull/322) | Native record/action work and finite connection sheets are pinned research with different scopes. #310 closed without merge; resolve the registered task through the live dispatcher. The frozen intake does not close the parent scientific obligations. |
+| Necessary kernel: `D0-FOUNDATION` | [Composed kernel theorem](03_FORMALIZATION/D0/Foundation/VerificationCore.lean): the same retained record identifies exactly all admitted future distinctions; operations and finite executions commute. Explicit coded Sigma witnesses retain their stated assumptions. |
+| Generic transfer: `THEORY-TRANSFER` | [Proved conditional transfer](03_FORMALIZATION/D0/Foundation/TheoryTransfer.lean): primitive state/program/readout diagrams yield all finite executions, a faithful common empirical image and reuse of source proofs with every premise explicit. |
+| First physical closure: `GR` | Instantiate that interpretation on a native GR family and prove that it uses the **same action, source, history, clocks and refinement maps** as the unchanged positive GR theorem. |
 
-The latest composition recovers the full metric and Lorentz transport from
-the actual raising operators, including the null directions of the curved
-pp-wave family. On the supplied addressed full-Lorentz Julia interface it
-constructs a coherent geometric query and transfers its complete finite
-Shannon first source, retaining all work leakage. It needs no independent
-transport oracle or intermediate measurement. Physical admission and the
-reason D0 must execute this chiral programme remain unproved; compiling a
-configured GR experiment does not yet select the law of D0.
-The existing Role/site naturality theorem already selects the star type
-within its canonical insertion class. The remaining forcing question is
-whether the complete native price has a nonzero component of that type.
-The exact curvature probe prevents substituting the old H+J+R directly:
-its full mixed source vanishes on a matched coframe/link variation while
-the Palatini source does not. The subsequent full-Lorentz reduction now
-solves the actual internal equations for constant metrics, retaining the
-flat-shape source. An exact nonzero-mode preparation equation prevents
-extension of that faithful section to arbitrary metric fields. This
-locates a branch obstruction, not a general D0/GR no-go. The existing real
-vacuum-plus-top state now removes that first preparation obstruction on
-all Fourier modes at the owned root. The subsequent section-independence
-theorem now excludes an exact finite EH+Lambda+same-matter source through
-either root, even if a different nonlinear lift exists. The already proved
-scale balance also excludes controlled beta→0 with fixed positive feedback
-coupling. These scoped results direct the next work to the actual complete
-price/history and its admissible limit; physical GR remains open.
+Start with the [architectural objective and proof plan](02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md#architectural-objective),
+then its [GR specialization](02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md#current-route-to-general-relativity)
+and the [work and validation flow](00_WORK/README.md). One integrator owns the
+complete conditional argument and its remaining premise boundary. The next
+task supplies an exact missing substitution in that argument. Supporting
+results retain their scope until their application is proved; a scoped
+obstruction changes the applicable route without changing the final target.
 
-The original fixed-g/fixed-tau, all-ten unweighted raw h^-2/#216 task remains
-**OPEN with its exact terminal unchanged**. The [source-norm comparison](02_REGISTRY/research/A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md#5-точное-различие-двух-требований-к-пределу)
-distinguishes that stronger microscopic requirement from the separately stated
-macroscopic GR theorem. Neither result can be substituted for the other.
-
-Start with the [strategic synthesis](02_REGISTRY/research/A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md),
-use the [current gravity route](02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md#current-route-to-general-relativity),
-then the [parallel work and validation flow](00_WORK/README.md).
-One scientific integrator owns the composition; bounded executors work on
-independent interfaces. Progress means a proved transition used in that
-composition, or a counterexample that changes the route. Certificates and CI
-support those decisions.
+The [foundation and transfer composition](02_REGISTRY/research/D0_FOUNDATION_THEORY_TRANSFER_COMPOSITION_2026_10_20.md)
+now consumes the existing necessity, empirical-process, future-memory and M1
+proof owners on one identified carrier. Its two scoped applications are
+recorded in the [assembly](02_REGISTRY/gr_assembly/VIEW.md). Translated
+observation assertions are proved equivalent to actual native readout.
+Additional native tests remain explicit: an all-native claim needs a coverage
+witness, with a formal counterexample showing why that condition matters.
+The next physical application joins the actual paid native process to the
+existing geometric readout. The active native/source and joint-refinement
+fronts retain their current owners and exact proof obligations.
 
 For programme context, the integrator reads the full
-[preserved strategy](https://github.com/gvakhrushev/d0_15/blob/cd02a65de1c708eae113b03ca63392e1641c427c/02_REGISTRY/research/D0_RESEARCH_STRATEGY_RU.md)
+[preserved strategy](02_REGISTRY/research/D0_RESEARCH_STRATEGY_RU.md)
 once, then uses the [18 ideas and original guidance mapped to the current route](02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md#strategic-context-and-preserved-inputs).
-Their preservation intake [#323](https://github.com/gvakhrushev/d0_15/pull/323)
-awaits acceptance. Bounded tasks read the relevant inputs from that context.
+The strategy and source-preservation package were delivered to main by
+[#323](https://github.com/gvakhrushev/d0_15/pull/323). Bounded tasks read the
+relevant inputs from that context.
 
-For a task, run `python tools/task_dispatch.py TASK-ID`: resolve an existing PR
+For a task, run `python3 tools/task_dispatch.py TASK-ID`: resolve an existing PR
 before launching another execution. Iterate with the smallest relevant check;
 run the affected integration checks at Ready. See the
 [validation matrix](00_WORK/README.md#validation-budget).
 
 The [D0 to GR assembly overview](02_REGISTRY/gr_assembly/VIEW.md) connects
 obligations, exact interfaces and accepted applications. Run
-`python tools/gr_assembly.py next` for live owners and the next consuming steps,
+`python3 tools/gr_assembly.py next` for live owners and the next consuming steps,
 or `why` / `search` / `attempts` for a bounded lookup. Historical research stays
 searchable with its original scope; it does not automatically close a premise.
+For the central bridge, `python3 tools/gr_assembly.py puzzle prospective-native-selection`
+opens its existing proof owners and missing physical application. This reading
+command does not register or launch another execution.
+
+### Main integration and the next proof stage
+
+The programme, agent rules and assembly map are now part of the main work
+plane. Completed inputs are delivered as soon as their bounded integration is
+ready; an unfinished physical parent can continue in its existing research PR.
+
+| Delivered input | Use in the next argument |
+|---|---|
+| [Architecture, roadmap and dispatch — #379](https://github.com/gvakhrushev/d0_15/pull/379) | Start from verification, compose existing proof owners, and assign only a named missing premise or application. |
+| [Strategy and preserved source package — #323](https://github.com/gvakhrushev/d0_15/pull/323) | Retain the original programme context and source history without asking the user to reconstruct it. |
+| [ActionProtocol boundary — #375](https://github.com/gvakhrushev/d0_15/pull/375) | Use the proved unit floor and excess-profile classification when identifying the complete native price; the floor alone does not select its shape or imply attainment. |
+| [Native source, AF metric and history checkpoints — #322](https://github.com/gvakhrushev/d0_15/pull/322) | Reuse the accumulated current, retained-memory, geometric and variation results at their declared hypotheses. Historical compiler inputs stay pinned; the maintained-source compatibility gate separately checks the unchanged Lean capsules. |
+| [Hermitian tangent-span theorem — #353](https://github.com/gvakhrushev/d0_15/pull/353) | The accepted `mv_tangent_span` application supplies the generic annihilator/span equivalence. The next source step identifies the actual native operators and admissible tangents. |
+| [Primitive-word and moving-jet theorem — #342](https://github.com/gvakhrushev/d0_15/pull/342) | The accepted `primitive_jet_composition` application supplies ordered residual composition and the exact moving-intertwiner identity. The numerical derivative bound retains its shared-intertwiner hypothesis. |
+| [Future-memory and prospective-execution proof intake](02_REGISTRY/research/D0_FOUNDATION_MAIN_INTAKE_2026_10_20.md) | Import the existing future-stable quotient, sufficient-memory, Bellman, no-detour and idle-boundary theorems directly from the main Lean closure. |
+| [Composed foundation and operational theory transfer — #386](https://github.com/gvakhrushev/d0_15/pull/386) | Reuse the exact record/future kernel, explicit Sigma coding and proved two-system finite-program/assertion transfer. The two generic architectural obligations have pinned independent acceptance; actual native action/source/clock realization remains open. |
+| [Complete retained flag source and native minimum test](02_REGISTRY/research/D0_NATIVE_FLAG_SOURCE_MINIMUM_MAIN_INTAKE_2026_10_20.md) | The compact execution's full coherent flag archive has a controlled first source, including failed histories and rank births. An exact decreasing direction in the finite whole-HJR roots specifies what the actual complete price or native constraints must resolve before those roots can supply strict prospective minimality. |
+| [Preserved Book-triangle results](02_REGISTRY/gr_assembly/sources/d0_book_triangle_odds_2026-10-19/owner.md) and [conditional exit-Gram results](02_REGISTRY/gr_assembly/sources/d0_conditional_exit_grams_2026-10-17/orthogonal_exit_source.md) | Reuse the actual source files and checks delivered by #379. Source PRs #380/#363 are closed as delivered through that intake; their conditional scope and downstream physical obligations remain unchanged. |
+
+The next stage applies the composed kernel and generic interpretation theorem.
+On the existing native front, derive the full Cost-Info and required
+continuation from one admitted process. Then establish
+the source, genuine variations and joint refinement estimates for that same
+process. The [closure roadmap](02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md#closure-roadmap-goals-reusable-inputs-and-tools)
+states the consuming premise and completion condition at each transition.
+An accepted generic theorem is reused directly; its still-missing physical
+instantiation is the next task, not a reason to repeat the theorem.
 
 ---
 
@@ -99,7 +115,8 @@ Discrete scene structure, registration channels, and (conditionally) continuum l
 
 ## Table of Contents
 
-- [Current objective and scientific route](#current-objective-derive-general-relativity-ото)
+- [Current objective and scientific route](#current-objective-close-the-d0-foundation-through-general-relativity)
+- [Main integration and the next proof stage](#main-integration-and-the-next-proof-stage)
 - [Parallel execution and validation](00_WORK/README.md)
 - [Gravity assembly and result intake](02_REGISTRY/gr_assembly/README.md)
 - [1. The Core Inversion (Read This First)](#1-the-core-inversion-read-this-first)
@@ -117,7 +134,7 @@ Discrete scene structure, registration channels, and (conditionally) continuum l
   - [BOOK 08: Cosmology, Archive, and SDE Transfer](#book-08-cosmology-archive-and-sde-transfer)
   - [BOOK 09: Gravitational Waves and Quantum Interferometry](#book-09-gravitational-waves-and-quantum-interferometry)
 - [4. The Three Architecture Layers](#4-the-three-architecture-layers)
-- [5. Spectral Rigidity: The Golden Ratio φ and Zero-Parameter Mass Sectors](#5-spectral-rigidity-the-golden-ratio-varphi-and-zero-parameter-mass-sectors)
+- [5. Spectral Rigidity: The Golden Ratio φ and Mass-Sector Boundaries](#5-spectral-rigidity-the-golden-ratio-varphi-and-mass-sector-boundaries)
   - [Audited Mathematical Routes to φ](#audited-mathematical-routes-to-varphi)
   - [Scientific Falsifiability](#scientific-falsifiability)
 - [6. Non-Trivial Theorems in the Corpus](#6-non-trivial-theorems-in-the-corpus)
@@ -481,7 +498,7 @@ The full action/source binding and general joint nonlinear limit remain
 scientific obligations; relabelling them as an interface problem does not close them.
 
 1. **Alpha Dixmier Trace (`AlphaProfiniteTowerNoGo`):** Rather than seeking external Feshbach regulators to force continuous integration on profinite sets, the tower is resolved as an inductive limit of Fibonacci $AF$-algebras (`D0/VNext/FibonacciAFAlgebra.lean`, `PerronGNSTower.lean`), whose unique tracial state normalizes the Cesàro residue endogenously via Perron–Frobenius powers $\varphi^{-k}$.
-2. **Metric Scale Underdetermination (`MassSectorMetricUnderdetermination`):** Extrinsic SI units (meters, seconds, eV) are historically contingent artifacts. The fundamental action quantum is fixed endogenously at $S_{\mathrm{min}} = \frac{1}{2}\hbar_{\mathrm{endogenous}} \equiv 1$, grounding energy scales in the topological capacity saturation of the scene relative to archive dissipation (`PreparationMemoryBound.lean`).
+2. **Action threshold and remaining price (`EndogenousActionQuantum`):** The abstract `ActionProtocol` has the unit lower bound $S_{\mathrm{min}}=1$ for nonidentity transitions. Its exact excess-profile classification leaves independent nonnegative excess costs; attainment and relative prices are not fixed by that floor. The [formal owner](03_FORMALIZATION/D0/Foundation/EndogenousActionQuantum.lean) and [prospective owner](03_FORMALIZATION/D0/Foundation/ProspectiveExecution.lean) supply the reusable boundaries. The native full Cost-Info, field interpretation and continuation law remain the current physical bridge.
 3. **Finite-to-continuum quantum-metric boundary:** The internal Lean result is deliberately narrower than a quantum-propinquity theorem: a geometric stage-step bound $d(x_k,x_{k+1})\le C\delta_0^k$ implies Cauchyness in any pseudometric space, and convergence in a complete one. The repository does **not** currently construct Rieffel compact quantum metric spaces, tunnels/bridges, or a quantum Gromov–Hausdorff/propinquity distance for the D0 stages. Those objects and their convergence remain the explicit external bridge `ASSUMP-RIEFFEL-GHP` (`D0/Bridge/RieffelGHPBridge.lean`).
 4. **Cosmological SDE Smoothing (`CMBNsSmoothingUndeterminedNoGo`):** Spatial convolution with arbitrary continuous Gaussian kernels $\sigma$ is replaced by the canonical discrete spectral projector of the Hodge Laplacian onto the lowest non-trivial Fiedler eigenspace (`CMBFiedlerFreezeout.lean`), fixing $n_s$ through combinatorial projector ranks.
 
@@ -496,7 +513,7 @@ For full technical specifications, advanced mathematical integrations, and Lean 
 <!-- D0-WORK-STATUS:BEGIN -->
 ### Work Queue & Control Plane
 
-- **Tracked Queue/Control Tasks**: CONTROL: 1, EXPENSIVE: 3, WORKER: 2 (Total: 6)
+- **Tracked Queue/Control Tasks**: CONTROL: 1, EXPENSIVE: 3, WORKER: 0 (Total: 4)
 - **Runtime Execution**: see open GitHub pull requests; PR number = execution ID
 - **WIP Utilization**: CONTROL: 1/2, EXPENSIVE: 1/3, WORKER: 0/10
 - **Legacy Scaffolds Remaining**: 0

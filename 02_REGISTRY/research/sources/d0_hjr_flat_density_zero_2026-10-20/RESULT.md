@@ -198,28 +198,43 @@ flat-holonomy chart; `constitutive`, `native_sector`, `GR`, and the original
 ## Reverse-synthesis: one missing native price, two independent tests
 
 The new [complete-flag/native-minimum packet](../../A4D_COMPLETE_FLAG_SOURCE_AND_NATIVE_MINIMUM_GATE_2026_10_20.md),
-section 5, proves a *different* necessary condition on the exact curved fixed-
-collar critical family of the same conditional whole H+J+R. There, an
-admissible nongauge bulk tangent v has
+section 5, proves a *different* necessary condition for the same conditional
+whole H+J+R at fixed L8. At the common HOMOGENEOUS base
+\(q_0=(x,\epsilon)=(0,0)\) of the fixed-collar branch, the admissible nongauge
+bulk tangent v has the exact enclosure
 
 \[
-D^2 S_{\mathrm{HJR}}[v,v]\in
+D_x^2 S_{\mathrm{HJR}}(q_0)[v,v]\in
 [-2372501681/32000000000,\,-2372493199/32000000000]\subset(-.074141,-.074140).
 \tag{8}
 \]
 
-To keep that same critical point as a physical local minimum for an *actually
-derived* full-price completion `S_full=S_HJR+E`, **if** this same v is
-physically admitted and the new action is C2, it is necessary that
+To keep this SAME base as a critical point and local minimum of an *actually
+derived* full-price completion `S_full=S_HJR+E` on the SAME physically
+admitted fixed-collar chart, with C2 pullback, it is necessary that
 
 \[
-dE=0\ \text{at the original curved root},\qquad
-D^2E[v,v]\ge 2372493199/32000000000.
+d_xE(q_0)=0,\qquad
+D_x^2E(q_0)[v,v]\ge c,\qquad c=2372493199/32000000000.
 \tag{9}
 \]
 
-This condition is quoted at the exact scoped fixed-L8 critical point, not
-asserted uniformly in `h`, and it is distinct from the present flat test.
+For the nearby curved stationary points \(q_\epsilon=(x(\epsilon),\epsilon)\),
+continuity gives the stated conservative bound
+\(D_x^2S_{\mathrm{HJR}}(q_\epsilon)[v,v]\le-c/2\) after shrinking the
+neighborhood; no explicit radius or identical rational enclosure is proved.
+If the completed action keeps that SAME curved point as a local minimum,
+the corresponding necessary tests are \(d_xE(q_\epsilon)=0\) and
+\(D_x^2E(q_\epsilon)[v,v]\ge c/2\), not the exact base threshold c.
+All these derivatives hold the collar fixed and use the SAME coframe/link/
+full-Riesz chart. If only the v-path is physically admitted, stationarity
+requires only its directional first derivative to vanish; the displayed
+second-direction bounds still apply on that path. A physical source map to
+this family is required; the compact-FLAG theorem supplies neither this map
+nor C2. No limit of full-price Hessians is inferred without the relevant C2
+control/convergence under a common carrier and tangent identification.
+These are fixed-L8 tests, not uniform statements in `h`, and are distinct
+from the separate flat-holonomy first-source test below.
 On the separate flat-holonomy family, if one requires the *whole completed
 action itself* to be a function of Palatini densities only, the same extra
 price must instead obey the first-source cancellation

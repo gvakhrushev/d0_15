@@ -1,0 +1,13 @@
+{
+  "status": "PASS_COEFFICIENTWISE_LAURENT_WARDS",
+  "coefficientRing": "Z[z_u^±1,z_v^±1,z_x^±1,z_y^±1]",
+  "exactChecks": 18,
+  "backwardCoframeGradientWards": 4,
+  "localLorentzLinkAndCoframeWards": 6,
+  "variationalAdjointIdentities": [
+    "L(z)^T=L(z^-1)",
+    "C(z)=B(z^-1)^T"
+  ],
+  "linkHessianScale": "L2=2*L clears the only 1/2; B2=2*B in the Lorentz Ward",
+  "scope": "exact flat linearized Palatini symbol only; rank lower bound comes from the separate F_1009 witness; no native price or nonlinear/continuum closure"
+}

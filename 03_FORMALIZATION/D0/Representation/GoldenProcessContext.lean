@@ -1,5 +1,5 @@
-import D0.Representation.GoldenCoherentMemory
-import D0.Foundation.EmpiricalTheoryFactorization
+import D0.Representation.GoldenCoherentReadout
+import D0.Foundation.FutureExecutionCompleteness
 
 /-! Equal final channels need not be equivalent internal processes. The separating intervention
 is replacement of the retained system by a prepared zero-bit state; it has an internal reversible

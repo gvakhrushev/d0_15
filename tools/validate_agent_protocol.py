@@ -88,7 +88,9 @@ def validate(root: pathlib.Path) -> None:
         "Repository: `gvakhrushev/d0_15`",
         "KILL-FIRST",
         "classify once, specialize late",
-        "python tools/task_dispatch.py TASK-ID",
+        "python3 tools/task_dispatch.py TASK-ID",
+        "Assembly-Slot: OBLIGATION-ID",
+        "Assembly-Carrier: INTERFACE-ID",
     ]
     for marker in required_markers:
         if marker not in at:
@@ -120,7 +122,8 @@ def self_test() -> int:
         (root / "00_WORK" / "tasks").mkdir(parents=True)
         (root / "AGENTS.md").write_text(
             "Repository: `gvakhrushev/d0_15`\nKILL-FIRST\n"
-            "classify once, specialize late\npython tools/task_dispatch.py TASK-ID\n",
+            "classify once, specialize late\npython3 tools/task_dispatch.py TASK-ID\n"
+            "Assembly-Slot: OBLIGATION-ID\nAssembly-Carrier: INTERFACE-ID\n",
             encoding="utf-8",
         )
         task = {

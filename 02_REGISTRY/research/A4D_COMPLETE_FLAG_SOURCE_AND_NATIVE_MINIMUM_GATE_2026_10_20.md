@@ -25,7 +25,7 @@ controller, clock and work, with the genuine allowed variations.
 
 ## 2. All chronological flags, exact code and actual clock
 
-Consume the [existing compact Julia execution](sources/d0_relational_coherent_synthesis_2026-10-20/coherent_execution.md).
+Consume the [existing compact Julia execution](https://github.com/gvakhrushev/d0_15/blob/07f2f2b15b7050a612d0075aa73db8dc46087a95/02_REGISTRY/research/sources/d0_relational_coherent_synthesis_2026-10-20/coherent_execution.md).
 For p=phi^-1, g=p^2, the actual specified compact instrument is
 
 \[
@@ -159,7 +159,7 @@ whole-HJR collar model is made.
 
 ## 5. A genuine allowed decreasing direction in the whole-HJR root
 
-Consume the [exact fixed-collar theorem](A4D_EXACT_CURVED_WHOLE_HJR_FIXED_COLLAR_ROOT_2026_10_20.md)
+Consume the [exact fixed-collar theorem](https://github.com/gvakhrushev/d0_15/blob/07f2f2b15b7050a612d0075aa73db8dc46087a95/02_REGISTRY/research/A4D_EXACT_CURVED_WHOLE_HJR_FIXED_COLLAR_ROOT_2026_10_20.md)
 and its saved rigorous Arb enclosure, without repeating its full spectral
 calculation. In its ten-coordinate order, use
 

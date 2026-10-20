@@ -230,6 +230,8 @@ import D0.Foundation.DetectionCapabilityBoundary
 import D0.Foundation.EndogenousActionQuantum
 import D0.Foundation.EquivariantM1
 import D0.Foundation.FrobeniusDivision3D
+import D0.Foundation.FutureExecution
+import D0.Foundation.FutureExecutionCompleteness
 import D0.Foundation.GeneralComparisonGrammar
 import D0.Foundation.GraphSpaceNoIsometry
 import D0.Foundation.IndependentDetectionRepairGrammar
@@ -251,11 +253,16 @@ import D0.Foundation.Omega8Center
 import D0.Foundation.PartitionAlgebra
 import D0.Foundation.PhysicalComparisonRepresentation
 import D0.Foundation.PopperianBootstrap
+import D0.Foundation.ProspectiveExecution
+import D0.Foundation.ProspectiveReversalSymmetry
 import D0.Foundation.Q8Anisotropy
 import D0.Foundation.RelationalRepairClosure
 import D0.Foundation.SceneCountReduction
 import D0.Foundation.SceneStepParity
+import D0.Foundation.TheoryTransfer
 import D0.Foundation.VerifiabilityNecessity
+import D0.Foundation.VerificationBinaryCore
+import D0.Foundation.VerificationCore
 import D0.Foundation.ZoneConnectivity
 import D0.Frozen.ConservedStressProjection
 import D0.Gauge.AlbertSMProjection
@@ -606,8 +613,10 @@ import D0.Representation.FinitePathRepresentation
 import D0.Representation.FiniteProtocolClock
 import D0.Representation.GenerationGradingPresentCoreMaximality
 import D0.Representation.GoldenCoherentMemory
+import D0.Representation.GoldenCoherentReadout
 import D0.Representation.GoldenOrderInterferometer
 import D0.Representation.GoldenProcessContext
+import D0.Representation.GoldenQ8CenterReadout
 import D0.Representation.GoldenRelativeChannel
 import D0.Representation.Omega8OrientationDecomposition
 import D0.Representation.Omega8Q8TypedBridge
@@ -623,6 +632,10 @@ import D0.Representation.SourcePortPreparation
 import D0.Representation.TypedRoleSceneAction
 import D0.Representation.VerifierSwapGradingNoGo
 import D0.Research.GoldenCurvatureKernel
+import D0.Research.GoldenCylinderOneStepBridge
+import D0.Research.MemoryTangentSpan
+import D0.Research.NativeHistoryActionResponse
+import D0.Research.PrimitiveJetComposition
 import D0.Research.SchurStationaryTransfer
 import D0.Research.SourceReflectionKernel
 import D0.SelfReading.PrimitiveMinimalityFromRawFunctor

@@ -1,0 +1,77 @@
+Provenance reconciliation against the earlier #384 intake in this packet:
+- 10 of its 11 listed sources are unchanged at live #334 head 0e1849bd7bf6a87e9731801206fd5ccd1041bb63.
+- The modal-history owner changed from SHA-256 0ff7f65c59d8c341afd954b9d383754b312cd94bcba44976d7108ac3cefea728 to 21d5e9a289abd32aa955d80ce4a7909d99b7335048795de83a0b255ca4340811; this replay and registry use the live #334 text.
+- All six checker scripts remain byte-identical to the intake and live #334 head.
+- The current modal-owner text retains the flat J23 conditional source mismatch; this registry does not rely on the removed appendix.
+
+Current task replay against live PR #334 head 0e1849bd7bf6a87e9731801206fd5ccd1041bb63.
+The six checker files below were byte-verified against that head before execution.
+
+$ python3 02_REGISTRY/research/sources/d0_physical_binary_return_2026-10-19/check_binary_native_price_source.py
+exit=0
+PASS: full Golden binary task, actual fixed oldRIGHT and moving preparation
+PASS: 3 operator source readings, signed entropy, nonzero prep and Book N
+g10=0.759460770278, kappa=0.873171394907, lambda=23.416330696075
+OPEN: physical admission, full Book price/normalizer, clocks and GR
+
+$ python3 02_REGISTRY/research/sources/d0_physical_binary_return_2026-10-19/check_d0_physical_golden_preparation_pressure.py
+exit=0
+PASS: original oldRIGHT two-cost AF normalized probabilities and ratio phi
+PASS: normalized matched whole-sector GNS tangent entropy source -1
+PASS: tangent norm tends to sqrt(5)/2, unit-norm source -2/sqrt(5)
+PASS: H_phi-E(code) stationary only at original mu by Gibbs/KL identity
+PASS: task-pressure unique optimizer at mu and binary Einstein-CAR envelope
+PASS: complete normalized Born log-partition has zero source
+DEBUG: dmean=-1.000000000140, dcode=0.0000e+00, field=0.741260194425, envelope=0.741260194559
+SCOPE: NOT proof of native physical Book action, actuator, clock or GR closure
+PASS: second native AF f0=1.101848122743, f1=1.248281091337
+PASS: native AF-optimal READY source factor=1.018750574778>0
+PASS: source-bearing type0 Einstein/CAR ratio invariant under native optimized prep
+PASS: naive sum of second-AF full price and full pointer mean is linear, not stationary
+SCOPE: neither this naive sum nor F_task is claimed as full compulsory D0 action
+
+$ python3 02_REGISTRY/research/sources/d0_physical_binary_return_2026-10-19/check_full128_global_map_native_history.py
+exit=0
+PASS: original full128 q_blank0 and J23 source match pinned algebraic receipt
+PASS: exact rational certificate globally rules out all 128**1024 alternatives
+ q0^1024 = 0.01221632230238205
+ 1-q0    = 0.0042925013215895519
+ Unique modal word: full 1024 blank-label/port0 records
+ Conditional same-history modal Book code = 9.153936163646222
+ Actual J23 modal path first source       = -4.581893845052802
+PASS: native fixed-clock continuum modal action beta*lambda/ln(phi)
+SCOPE: original flat-shell record; physical Book/Born map remains OPEN
+
+$ python3 02_REGISTRY/research/sources/d0_physical_binary_return_2026-10-19/check_full_history_binary_information_loss.py
+exit=0
+PASS: 4 native Golden-history code weights sum to 1
+PASS: full classical KL = coarse binary KL + conditional fine KL
+PASS: binary statistics fixed, internal classical price source=-2.440420090455
+PASS: coherent operator KL = full classical KL + relative coherence
+PASS: binary probabilities fixed, coherent price source=1.173585686469
+PASS: coherent correction positive and first source nonzero
+OWNER CONSEQUENCE: actual flat-shell (H_ptr−S_coh)/ln(phi) has ln(1/eps) leading C1 source
+STATUS: actual channel replay, physically compulsory Info and GR remain open
+
+$ python3 02_REGISTRY/research/sources/d0_physical_binary_return_2026-10-19/check_native_golden_port_hidden_source.py
+exit=0
+PASS exact: native Golden (p²,p) vs code(p,p²) relative info = p³
+PASS exact: nonblank-label effect = epsilon Delta(1-h²Delta/256)
+PASS exact: first-shell info = p³ beta lambda(1-h²lambda/256)
+PASS exact: first source = p³ beta (1-h²lambda/128) Dlambda
+PASS exact: special blank/port1 retained
+PASS finite jet: hidden-price derivative=0.0559040534778
+SCOPE: conditional full-code KL, native 128-channel equations; no GR closure
+
+$ python3 02_REGISTRY/research/sources/d0_physical_binary_return_2026-10-19/check_original_full128_J23_port_decomposition.py
+exit=0
+PASS: pinned original full128 42 positive / 86 zero-outcome first jets
+PASS: exact blank and original port1 pin lambda=288/25, Tr(dDelta)/16=-144/25
+PASS: nonblank effect and field source checked in Q(sqrt5)
+ D P_nonblank          = -42957/5120000 + 14319*sqrt(5)/5120000
+ D H_full128           = -0.0315467843124857334404387
+ D H_reduced_labels    = -0.0285942510076572089583160
+ D H_hidden_port       = -0.00295253330482852448212269
+ D KL_hidden_port      = -0.000504352900214344397346638
+ D special blank port1 = -0.00000746933835057928336294651
+SCOPE: one-round J23 first jet; no arbitrary multi-round field or GR claim

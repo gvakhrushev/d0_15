@@ -10,6 +10,8 @@ Branch: `exp/a4d-joint-response-continuation-2026-10-16`
 Primary artifact: `02_REGISTRY/research/MEMO_A4D_JOINT_RESPONSE_DECOUPLING_MICROSTRUCTURE.md`  
 Execution: `GitHub-first`
 Assembly: `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`
+Assembly-Carrier: `native-programme-v1`
+Assembly-Slot: `constitutive`
 
 ## Strategic synthesis continuation — 2026-10-17
 

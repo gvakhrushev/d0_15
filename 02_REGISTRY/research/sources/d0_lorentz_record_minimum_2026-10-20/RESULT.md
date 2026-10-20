@@ -210,13 +210,18 @@ Any final retained record that reconstructs the original curvature
 to coordinate error at most `delta` with ZERO error on every grid
 candidate must distinguish all `M` hypotheses: two different points
 have separation `>=3delta>2delta`.
-Thus the final code has `>=M` distinguishable codewords, and its
-**worst** binary code length satisfies
+Thus the final code has `>=M` distinguishable codewords. For an arbitrary
+injective binary encoding, counting all strings of length at most
+`ell_max` gives `M <= 2^(ell_max+1)-1`, hence
 
 \[
-\ell_{\max}\ge\left\lceil\log_2 M\right\rceil.
+\ell_{\max}\ge\left\lceil\log_2(M+1)\right\rceil-1.
 \tag{14}
 \]
+
+For a fixed-width encoding or a prefix-free binary archive, the stronger
+bound `ell_max >= ceil(log2 M)` holds. The general bound differs by at
+most one bit, so the leading asymptotic in (16) is unchanged.
 
 For a prefix-free binary archive and a uniform grid prior, Kraft's
 inequality plus Jensen gives
@@ -225,7 +230,7 @@ inequality plus Jensen gives
 with no unpriced side channel, its expected number of such symbols
 is bounded below by `log_b M`. Variable stop times must themselves
 be retained as part of the code. For nonzero average classification
-error `epsilon`, the elementary Fano error-indicator argument yields
+error `epsilon` and `M>=2`, the elementary Fano error-indicator argument yields
 
 \[
 E[\text{record symbols}]\log_2 b\ \ge\
@@ -233,6 +238,8 @@ E[\text{record symbols}]\log_2 b\ \ge\
  -\epsilon\log_2(M-1).
 \tag{15}
 \]
+
+For `M=1` the distinction requirement and its lower bound are zero.
 
 This bound conditions on a common initially retained archive that
 does **not** already encode the particular unknown grid point.
@@ -246,12 +253,12 @@ symbol is produced by an original nonidentity complete-state transition
 and that *actual* transition is subject to the existing ActionProtocol
 unit floor (Cost >= 1), then on the same uniformly distributed grid
 
-\\[
- \\mathbb E\\sum_{\\text{executed primitives}}\\mathrm{Cost}
- \\ge\\mathbb E[\\text{emitted b-ary symbols}]
- \\ge\\log_b M.
-\\tag{15a}
-\\]
+\[
+ \mathbb E\sum_{\text{executed primitives}}\mathrm{Cost}
+ \ge\mathbb E[\text{emitted b-ary symbols}]
+ \ge\log_b M.
+\tag{15a}
+\]
 
 This is a **genuine but scoped prospective lower bound** from required
 future distinctions. It does not identify generator description length,
