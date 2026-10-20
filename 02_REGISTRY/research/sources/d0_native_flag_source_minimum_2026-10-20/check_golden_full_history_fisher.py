@@ -99,6 +99,29 @@ def check_stopped(m, N):
     assert pure_record_QFI == binary_FI_limit
     assert 2*return_second_jet + pure_record_QFI == 0
 
+    # Signed positive three-effect test:
+    # E_+ = |u+v><u+v|/2, E_- = |u-v><u-v|/2, E_0 = I-E_+-E_-;
+    # q_+/- (theta) = (cos²(theta/2) +/- sin(theta)/sqrt(2))² / 2.
+    # At zero: q_+/-=1/2, q'_+/-=+/-t/sqrt(2), all q''=0,
+    # q_0=O(theta^4), so its C2 Shannon contribution vanishes.
+    # Per-branch signed Fisher is 2*t² and the Shannon Hessian times ln(phi)
+    # is -2*t²; all complete and incomplete branches are retained.
+    signed_joint_fisher = 2*Et2
+    signed_entropy_second_times_lnphi = -2*Et2
+    assert signed_joint_fisher == pure_record_QFI
+    assert signed_entropy_second_times_lnphi == -pure_record_QFI
+
+    Et = sum((k*w for k, _, w in complete+incomplete), ZPhi())*h2
+    signed_marginal_fisher = 2*Et*Et
+    two_variance = 2*(Et2-Et*Et)
+    assert signed_joint_fisher-signed_marginal_fisher == two_variance
+    # The success count t_s is identical on completed words, whereas
+    # on incomplete words 0<=t_s<tau_h=m*h². Record-jitter loss is cap-small.
+    tau = m*h2
+    variance = Et2-Et*Et
+    assert variance.approx() >= -1e-12
+    assert (eps*tau*tau-variance).approx() >= -1e-12
+
     # Exact finite-cap sandwich: completed trees all have K=m.
     missing = m*m*h2*h2 - Et2
     assert missing == sum(
@@ -119,4 +142,4 @@ def check_stopped(m, N):
 if __name__ == "__main__":
     for m, N in [(1, 6), (2, 11), (3, 16), (4, 21)]:
         check_stopped(m, N)
-    print("ALL EXACT STOPPED GOLDEN / CAR16 FISHER-JET CHECKS PASSED")
+    print("ALL EXACT STOPPED GOLDEN / CAR16 SIGNED READOUT CHECKS PASSED")
