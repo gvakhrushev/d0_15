@@ -88,6 +88,30 @@ For genuinely crossed native opposite-null directions \(N_2,\bar N_3\), the base
 \]
 The same applies to the \(B\) commutator with \(\bar N_2\), with the original Lorentz group sign. This is an *observable of original based curvature*, not an arbitrary geometry-independent link fluctuation.
 
+### 3.1. EXPLICIT finite decoder: Golden paired odds are hyperbolic coordinates of actual Lorentz transport
+
+The exact event probabilities (3) yield a stronger, **closed algebraic** intermediate reconstruction before the analytic six-dimensional group inverse. Define the six true **normalized trace moments** \(\sigma_a(P)=\operatorname{tr}(G_a^TP)/\operatorname{tr}P\) near \(P=I\), with \(\operatorname{tr}P>0\) and both positive effects:
+\[
+\boxed{
+\frac{q_{a,-}^{(n)}(P)}{q_{a,+}^{(n)}(P)}
+=\left(\frac{1-\sqrt2\,\sigma_a(P)}{1+\sqrt2\,\sigma_a(P)}\right)^2,
+\qquad\text{for every original finite subdivision }n.
+}\tag{8a}
+\]
+Thus the SAME native *measured positive* event pair directly gives
+\[
+\boxed{
+\sigma_a(P)
+=\frac1{\sqrt2}\,
+\frac{\sqrt{q_{a,+}^{(n)}}-\sqrt{q_{a,-}^{(n)}}}
+{\sqrt{q_{a,+}^{(n)}}+\sqrt{q_{a,-}^{(n)}}}
+=-\frac1{\sqrt2}\tanh\!\left(\frac{\ln\varphi}{4}\mathcal O_a(P)\right).
+}\tag{8b}
+\]
+This is an EXACT ALL-ORDER formula on the strict positive chart: no Fourier approximation, no projector trace inversion, no fitted numeric coefficient, no 4-edge versus direct Julia convention. Every one of the six moments is a dimensionless measured coordinate of the ORIGINAL Lorentz group element, and the unknown n-dependent success amplitude cancels. Its first group derivative is \(D_{\xi_b}\sigma_a|_I=\tfrac12\delta_{ab}\). These six measured moments then define the local \(\mathcal U\) inverse of §3a.
+
+The \(\tanh\) is the exact algebra of **relative two-label odds**, and the factor \(\ln\varphi\) enters only because Book03 uses the native Golden log-base for information units. This is **not** a claim that φ's Diophantine irrationality selects the observer/programme or spacetime dimension. The physical task/selection and complete paid Cost−Info still require the original prospective law and archive.
+
 ### 3a. EXACT all-order original six-plaquette geometric action and full 16+24 Euler reconstruction FROM refinement-independent positive-event odds
 
 The result is stronger than the crossed-null mixed coefficient. Set \(\mathbf O(P)=(\mathcal O_1(P),\dots,\mathcal O_6(P))\) for the SAME fixed 13-effect native CAR16 tester. It is real analytic in a sufficiently small identity neighborhood because all 12 positive output probabilities are bounded strictly away from zero there. Its TRUE \(6\times6\) derivative from (6) is
