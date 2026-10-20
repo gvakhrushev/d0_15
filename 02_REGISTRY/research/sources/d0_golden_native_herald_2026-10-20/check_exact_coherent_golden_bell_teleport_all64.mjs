@@ -139,6 +139,31 @@ fail(maxQuantumTransport<1e-15&&
 fail(Math.abs(expectedProb-p**36)<3e-18,
  "12 native original fair coherent pair success must equal p^36");
 
+
+const nativeUnconditionalKrausScale=p**18;
+fail(Math.abs(normalizingAmplitude-nativeUnconditionalKrausScale)<3e-16,
+ "one-shot original 64d coherent Bell circuit Kraus != EXACT p^18 U");
+const fieldRotate=(v,y)=>{
+ const out=v.slice();
+ out[0]=Math.cos(y)*v[0]-Math.sin(y)*v[1];
+ out[1]=Math.sin(y)*v[0]+Math.cos(y)*v[1];
+ return out;
+};
+const transportField=y=>fieldRotate(wanted,y).map(x=>nativeUnconditionalKrausScale*x);
+const fldStep=.002;
+const fplus=transportField(fldStep),fminus=transportField(-fldStep),
+      fzero=transportField(0);
+let fieldFirstErr=0,fieldSecondErr=0;
+for(let i=0;i<d;i++){
+ const d1=(fplus[i]-fminus[i])/(2*fldStep);
+ const d2=(fplus[i]-2*fzero[i]+fminus[i])/(fldStep**2);
+ const analytic1=(i===0?-wanted[1]:i===1?wanted[0]:0)*nativeUnconditionalKrausScale;
+ const analytic2=(i===0?-wanted[0]:i===1?-wanted[1]:0)*nativeUnconditionalKrausScale;
+ fieldFirstErr=Math.max(fieldFirstErr,Math.abs(d1-analytic1));
+ fieldSecondErr=Math.max(fieldSecondErr,Math.abs(d2-analytic2));
+}
+fail(fieldFirstErr<2e-10&&fieldSecondErr<2e-10,
+ "complete native Bell64 conditioned arbitrary smooth input does not preserve C² source");
 const maxBellRawProb=1/4096;
 const table=[];
 for(const L of [4,8,16,32,64]){
@@ -168,6 +193,9 @@ console.log(JSON.stringify({
  fixed64OriginalProcessor:{CAR16andTwoFreshFlags:true,
   programmeDimension:d,actualOriginalGoldenCNOT_U64:true,
   maxProportionalArbitraryDataQuantumOutputError:maxQuantumTransport,
+  exactOneShotNativeKrausAmplitude:p**18,
+  inheritedFieldFirstSourceError:fieldFirstErr,
+  inheritedFieldSecondSourceError:fieldSecondErr,
   unconditionalExactNativeProbabilityWithOneTry:p**36,
   formula:"(2p³)^12/4096 = p^36",
   BellProbabilityGivenAll12NativePairsReady:1/4096,
