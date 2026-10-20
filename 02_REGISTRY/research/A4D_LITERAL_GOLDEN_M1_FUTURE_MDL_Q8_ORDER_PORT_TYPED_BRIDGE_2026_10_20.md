@@ -120,6 +120,44 @@ The precise conditional MDL claim therefore becomes
 \]
 Under strictly Spin-blind literal \`fullStep\`-only operations/test, no such future bound follows: the center stays unobserved. This is the first TRUE OWNER-TYPED candidate coupling between existing Q8 memory and existing Golden order measurements, and it reduces the physical problem to **ONE ACTUATOR CONTRACT**, not another detector or extra fundamental axiom.
 
+## 4B. Stronger actual ORIGINAL actuator owner: the Q8 sign port ALREADY has a forward-only native 8-gate compiler and retained 16-tick clock
+
+The preceding §4 source-output typed map was not the end of the story. A fresh audit located the previously OWNED native **\`D0.Representation.OrderMemoryControl\`**. It already constructs the exact Q8 operator word using only \`localIQ\` (original i acting on the signal arm) and \`commonJQ\` (original j on BOTH arms). Crucially it does NOT treat an arbitrary reflection/negative sign as an available free active gate.
+
+Existing original compiled theorem:
+\[
+\boxed{
+\underbrace{\mathrm{commonJQ}^3\,\mathrm{localIQ}^3
+ \,\mathrm{commonJQ}\,\mathrm{localIQ}}_{\rm eight\ real\ forward\ Q8\ gates}
+=\mathrm{relativeSignQ}
+=\operatorname{diag}(I_4,-I_4).
+}\tag{10}
+\]
+The comparison IDENTITY programme uses exactly the SAME two original primitive gate kinds and EXACTLY the SAME multiplicities:
+\[
+\boxed{
+\mathrm{commonJQ}^4\,\mathrm{localIQ}^4=I_8,
+\qquad
+\#(\mathrm{localIQ})=4,\quad
+\#(\mathrm{commonJQ})=4,\quad
+\text{length}=8
+}\tag{11}
+\]
+on BOTH words. The only distinction is the **chronological order**. This is particularly relevant to the user's original MDL argument: no new fundamental gate symbol is needed to generate the extra order bit, and primitive per-symbol counting cost is equal. The actual M1/Book work of SWITCHING word order, storing programme selection, preparing the Q8 carriers and recording the outcome is nevertheless NOT proved equal or zero merely by these counts.
+
+**NEW compiled native cross-source theorems** added to the ORIGINAL \`OrderMemoryControl.lean\` (not an isolated new formal module):
+- \`originalQ8ForwardWordsSamePrimitiveInventory\` (the exact two length-8 same-inventory lists);
+- \`originalQ8CenterForwardProgram_plus\` and \`originalQ8CenterForwardProgram_minus\` (the already-owned Q8 central \`qONE,qNEG\` choose the true compiled 8x8 ID or relative-sign WORD rather than an arbitrary real sign-matrix primitive);
+- \`originalQ8CommutatorForwardProgram\` (exact ORIGINAL quaternion \([i,j]=qNEG\) gives the native relativeSignQ using its actual existing forward operations).
+
+The pre-existing \`no_relativeSign_from_common\` theorem shows that only a mixer and globally identical arm operations CANNOT synthesize the relative sign: their full generated palette commutes with \`armTurn\`, whereas \`relativeSign\` does not. So the LOCAL i control is a TRUE necessary enabling resource, not an arbitrary tag.
+
+The original \`D0.Representation.FiniteProtocolClock\` is also already compiled: a reversible \`ZMod16\` stage register, \`programmedStep\` retaining an internal programme label, and reversible basis registration \`register\`. Its independent existing certificate \`04_CERTIFICATES/order_memory_control_verify.py\` composes 14 actual reversible comparison gates plus ONE CNOT-style record-write per programme (15 forward operations), and constructs a **fixed 512-real-coordinate autonomous clocked machine** accommodating BOTH programmes (2 programme labels ×16 clock stages ×2 arms ×4 quaternion coordinates ×2 record bits), all algebra checked in the real finite Golden/Q8 ring. Its own certificate rightly says this is **conditional on supplied local routing and blank preparation**, not unconditionally forced by M1. The stage register preserves protocol identity rather than allowing external per-tick control.
+
+New direct independent JS [original Q8 forward-order comparator](sources/d0_mdl_binary_generator_2026-10-20/check_original_q8_forward_comparator_autonomous_program.mjs) replays the original entire 8×8 integer product and true 8-dimensional Golden two-port mixer on EACH OF FOUR original quaternion basis preparations. Ordered word returns native bright-port \(4p^3\approx0.944271909999159\) and dark-port \(p^6\); identity word returns \((1,0)\) exactly. Both have four local-i and four common-j gates; the common-only generator obstruction and every output Born normalization pass. 14 PASS groups, no invented primitive.
+
+**This sharpens the remaining physical source interface again:** We already have an ORIGINAL fixed, finite, forward-only quantum comparator for the Q8 center AND a reversible internal clock/program memory, with exact primitive word inventory. It is NOT necessary to invent a new matrix gate or externally tune a Golden angle. What is still OPEN is the genuine \(\mathrm{Book03}\) three-tick original **retained scene Q8 sheet** \(\to\) ACTUAL allowed internal programme choice/control, with source provenance, physical oldRIGHT protection, two exact independent check lines and full clock/work/Cost–Info/registration fee. This is a concrete selection/actuation/price naturality theorem, not generic "missing a detector" language.
+
 ## 5. What this changes for the D0→GR endgame
 
 The new source results separate THREE genuinely different counts:
