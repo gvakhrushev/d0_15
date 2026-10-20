@@ -228,3 +228,31 @@ The same real operator implements the true 4D Lorentzian Hodge pairing on all si
 This is EXACTLY the algebraic Lorentzian six-bivector duality with \(*^2=-1\); signs follow the native ordered Role orientation \(A,B,C,D\). In particular it supplies the same correct compact-rotation/noncompact-boost dual pairs whose signed projection was already owned by the original all40 six-plaquette Palatini star. It is not a theorem that the compulsory Book/G0 action contracts its geometric faces with this CAR Hodge — that **intertwiner/physical source** must still be proved — but the needed Lorentz algebra/complex/dual structures now have one explicit SAME-CARRIER realization, not three independently nominated reference operators.
 
 All finite identities (18)–(20) were checked using literal original 16-state Jordan–Wigner **integer** CAR matrices, not floating fit or geometrical assumptions. This closes the *algebraic* CAR16→Q8→Spin(1,3)→\(\mathfrak{so}(1,3)\) six-bivector Hodge compatibility layer, while leaving actual physical native Book action and causal matter stress/refinement open. \`GR_closed=false\`.
+
+
+## 9. GLOBAL new all-Role source gate: local original scene Spin sheets do not select the 16 flat \(T^4\) spin boundary sectors
+
+The original Role-Phase product carrier is EXACTLY \(\mathrm{Role}\to\operatorname{Fin}(n+2)\), with four cyclic directions (\`ArchiveRolePhaseProductCarrier.lean\`). For \(L=n+2\ge2\), this finite regulator has a genuine periodic four-dimensional CW-lattice \(T_L^4\) underlying its difference/Role links. This is NOT the 33-vertex K(9,11,13) graph; the original scene is an **internal** Cost and Book memory carrier coupled sitewise to Golden LEFT Role addresses.
+
+For an identity \(SO^+(1,3)\) background on the 4-Role torus, a flat central \(\operatorname{Spin}\) lift can assign a sign \((-1)^{\varepsilon_r}\) across the seam of each of the four cyclic Role directions, \(\varepsilon\in\{0,1\}^4\). Every elementary spin plaquette has exactly +1 central holonomy, while the four noncontractible winding cycles have independent signs \((-1)^{\varepsilon_r}\). A local central vertex-gauge transformation cannot change these four winding holonomies. Conversely any flat ±1 link connection on the 4-torus is classified by its four windings. Thus the finite source topology already contains
+\[
+\boxed{H^1(T_L^4,\mathbb F_2)\cong(\mathbb F_2)^4,\quad
+\#\{\text{global flat Spin sectors}\}=16.}\tag{21}
+\]
+This is NOT \(2^{327}\): that is the unfilled graph *edge-lift fiber before triangle constraints*. The original ABC triangle-filled scene instead has \(H^1(\mathrm{Clique}_2(K913),\mathbb F_2)=0\), already proved in the scene spin-sheet owner. These two results are **perfectly compatible** because the scene and the genuine 4D Role torus are different mathematical complexes. Recovering all local Q8 sheets on the SCENE does NOT by itself choose the GLOBAL four independent Spin boundary signs of the 4D Role geometry.
+
+An independently reproduced exact original \(L=2\), \(2^4=16\) Role-site benchmark makes the difference physically operational. For each twist \(\varepsilon\), let \(T_r^\varepsilon\) be the signed unitary translation of lattice sites by one site along original Role r, multiplying by \((-1)^{\varepsilon_r}\) only across the cyclic seam. All four shifts commute, every elementary plaquette product is I, and \((T_r^\varepsilon)^L=(-1)^{\varepsilon_r}I\). On the ORIGINAL 16-state internal Fock spin carrier, the mathematically natural nonnegative twisted scalar-difference kinetic benchmark is
+\[
+\Delta_\varepsilon=\sum_{r=0}^3(2I-T_r^\varepsilon-(T_r^\varepsilon)^T)\otimes I_{16}.
+\]
+Its exact eigenvalues are
+\[
+\boxed{\lambda_\varepsilon(k)=4\sum_{r=0}^3
+\sin^2\!\left(\frac{\pi(k_r+\varepsilon_r/2)}L\right),\quad
+k\in\{0,\ldots,L-1\}^4.}\tag{22}
+\]
+All SO and all local Spin face flux observables are IDENTICAL for every \(\varepsilon\), but the **global spinor kinetic spectrum** is not. At original L=2, the fully periodic sector has ONE zero site mode, hence EXACTLY 16 zero modes including real CAR16 fiber; ANY \(\varepsilon\ne0\) has NO zero modes and gap \(2|\varepsilon|\) in this exact benchmark. The 16 possible winding sign vectors are distinct, proven directly by their \((T_r)^2\) native holonomies, with no floating eigenvalue-based identity inference.
+
+**Scope:** this is a finite CONDITIONAL central-Spin boundary/kinetic theorem, not a selection of physical spin structures from M1 or oldRIGHT, and \(\Delta_\varepsilon\) is a declared spin-twisted nearest-neighbor kinetic benchmark — it is NOT automatically the real original \`hodgeCarDirac\`/matter stress action. Nonetheless any full physical Einstein–DIRAC claim on the periodic Golden LEFT regulator MUST specify or derive which global winding signs are allowed by the original retained observer/oldRIGHT/Book/G0 preparation and how the nonlocal choice is recorded/priced, or prove that all allowed signs yield the same desired physical observables and uniform refinement. The original 327 local Q8 history bits and 960 clique identities do not silently discharge this GLOBAL 4-bit test.
+
+Companion exact 16-sector bounded source checker: \`sources/d0_native_spin_q8_car16_2026-10-20/check_original_role4_global_spin_twists.py\`. This augments rather than reopens original local scene Hodge. \`GR_closed=false\`.
