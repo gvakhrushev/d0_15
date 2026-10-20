@@ -159,5 +159,11 @@ console.log(JSON.stringify({
  true_Golden_full_Bell_categories:17,both_face_orientations:true,
  max_exact_odd_tensor_diff:maxTensor,max_coframe_Hodge_face_diff:maxSource,
  max_original_Book_moving_score_residual:scoreError,
+ actual_all_640_source_max_disagreement:maxDerivative,
+ genuine_original_coframe_Euler_rows:eCount,
+ genuine_original_shared_link_Euler_rows:lCount,
+ nonzero_original_coframe_Euler_rows:nonzeroE,
+ nonzero_original_link_Euler_rows:nonzeroL,
+ exact_number_of_affected_sites_per_link:[affectedMin,affectedMax],
  physical_Book_selected_action:false,GR_closed:false
 },null,2));
