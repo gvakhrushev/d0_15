@@ -67,6 +67,13 @@ function native(A){
  const stage=Math.log(beta3*Z3/(beta2*Z2))/lnphi;
  const shape=B+stage;
  const fromP=Math.log(beta3*T3/(beta2*T2))/lnphi;
+ // The actual TWO-stage acceptance odds PLUS the already observed native
+ // Doob P recover the absolute PF lambda with NO added free meter.
+ const stageOdds=beta3*Z3/(beta2*Z2);
+ const lambdaRecovered=stageOdds*(beta2/beta3)*(T2/T3);
+ assert(Math.abs(lambdaRecovered/lambda-1)<2e-12,
+   "original complete 2/3-stage ratio plus normalized P reconstructs EXACT absolute Book lambda");
+
  assert(Math.abs(shape-fromP)<2e-12,
    "FULL SCALAR pressure + 2/3 stage CLOCK = only Doob P-cycle ratio");
  assert(Math.abs(Z2/lambda**2-T2)<2e-12&&Math.abs(Z3/lambda**3-T3)<2e-12,
@@ -74,7 +81,7 @@ function native(A){
  const W=Z3/7722;
  assert(Math.abs(W-lambda**3*T3/7722)<2e-12,
    "native 7722 third-tick Weyl scale = absolute lambda^3 × Doob shape");
- return {lambda,P,pi,mu,f2,f3,C,Z2,Z3,T2,T3,B,stage,shape,fromP,W};
+ return {lambda,P,pi,mu,f2,f3,C,Z2,Z3,T2,T3,B,stage,shape,fromP,W,stageOdds,lambdaRecovered};
 }
 const old=native(K);
 const q=Math.pow(phi,.37),D=Array.from({length:N},(_,u)=>1+((u*u)%17)/23);
@@ -123,6 +130,11 @@ function fourth(A){
  const stage43=Math.log(beta4*z4/(beta3*b.Z3))/lnphi;
  const actual43=b.B+stage43;
  const projective43=Math.log(beta4*t4/(beta3*b.T3))/lnphi;
+ const odds43=beta4*z4/(beta3*b.Z3);
+ const recovered43=odds43*(beta3/beta4)*(b.T3/t4);
+ assert(Math.abs(recovered43/b.lambda-1)<3e-12,
+ "original complete 3/4-stage ratio independently reconstructs SAME absolute lambda");
+
  assert(Math.abs(actual43-projective43)<3e-12,
   "original 4/3 stage clock and absolute pressure reduce to Doob-only stage SHAPE");
  assert(Math.abs(z4/b.lambda**4-t4)<3e-12,
@@ -132,7 +144,7 @@ function fourth(A){
  assert(Math.max(...Array.from({length:N},(_,u)=>Math.abs(
    J43[u].reduce((s,x)=>s+x,0)-J43.reduce((s,row)=>s+row[u],0))))<3e-12,
   "4/3 native edge source is a divergence-free balanced current");
- return {J43,actual43,projective43,z4,t4};
+ return {J43,actual43,projective43,z4,t4,odds43,recovered43};
 }
 const perturbedK=t=>K.map((row,u)=>row.map((v,j)=>v*Math.exp(-lnphi*t*perturb[u][j])));
 const F4=fourth(K),fourthPlus=fourth(perturbedK(dt)),fourthMinus=fourth(perturbedK(-dt));
@@ -180,13 +192,14 @@ console.log(JSON.stringify({
   absoluteBookB:old.B,stageClockContrast:old.stage,
   projectiveShape:old.shape,normalizedDoobOnly:old.fromP,
   Z2:old.Z2,Z3:old.Z3,TrP2:old.T2,TrP3:old.T3,
-  nativeWeylW:old.W,nativeWeylFactorized:old.lambda**3*old.T3/7722},
+  nativeWeylW:old.W,nativeWeylFactorized:old.lambda**3*old.T3/7722,
+  originalStage32Odds:old.stageOdds,recoveredLambdaFrom32:old.lambdaRecovered},
  transformations:{positiveScale:q,lambdaRatio:now.lambda/old.lambda,
   maxDoobDeviation:Pmax,maxMuDeviation:muMax,maxShapeCurrentDeviation:Cmax,
   scalarShapeShift:now.shape-old.shape,
   BookWeylRatio:now.W/old.W},
  twoClockSource:{stage34: F4.actual43,DoobOnly34:F4.projective43,stage4Z:F4.z4,
-   stage4P:F4.t4,norm43,crossWith32:cross,positiveGramDet:gramDet,
+   stage4P:F4.t4,stage43Odds:F4.odds43,recoveredLambdaFrom43:F4.recovered43,norm43,crossWith32:cross,positiveGramDet:gramDet,
    exactCostSource43:secondSource,finiteCostSource43:secondFD},
  shapeFirstSource:{norm2:currentNorm,
   balancedMass:ssum(old.C,common),endpointGauge: ssum(old.C,cob),
