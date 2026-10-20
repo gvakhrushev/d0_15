@@ -54,3 +54,25 @@ BOTH time links incident to the interior slice vary. Exterior equations,
 global periodic stationarity, original clock/current constraints, physical
 native programme/action/preparation price, Levi-Civita/Einstein source
 identification and uniform refinement/raw216 remain OPEN. GR_closed=false.
+
+
+The stronger seven-slice bulk theorem is section10. Run
+`python check_wide_collar_arb.py` inside this packet (same NumPy/python-flint
+dependencies). It reads ONLY the saved final COLLAR_HESSIAN_ARB.json,
+pins that receipt, constructs the64variable principal compression and
+certifies every Neumann row<3/1000 and response error<1/100. It prints its result; `--output /tmp/wide-collar.json` saves an independent
+receipt without changing the pinned evidence. No full spectral replay is needed. Seven eighths of
+the sites are interior; one exterior slice remains. This is still finite
+conditional existence, not uniform refinement or physicalGR closure.
+
+
+Section11 is the analytic uniform first-order/Riesz preparation theorem.
+`python check_uniform_riesz_linf_control.py` (SymPy1.14) verifies the exact
+full16 hostile control: alternating coefficients keep Linf amplitude fixed
+but produce a2epsilon/h response on a constant top form. This establishes
+why discreteC1 is a real hypothesis. The analytic contour proof, not the
+small-grid control, supplies uniform rank128/Gram, first-source and Hessian bounds.
+No uniform whole-HJR root or raw216 claim follows.
+
+Both Arb checkers leave saved evidence unchanged by default. Use explicit
+`--output /tmp/name.json` to create a fresh receipt for comparison.

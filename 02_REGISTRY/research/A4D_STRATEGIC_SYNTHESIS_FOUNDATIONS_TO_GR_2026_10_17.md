@@ -6094,3 +6094,35 @@ boundary data, unsolved exterior Euler and lack of uniform refinement are
 explicit. It does not select the native physical programme/price, preserve
 extra current/clock marginals, derive Levi-Civita or the same Einstein
 source, or close raw216/GR. GR_closed=false.
+
+
+### 7.106. Whole-HJR finite existence now covers seven eighths of the bulk
+
+The same curvedwholeHJR owner section10 enlarges the interior from one to
+seven time slices onL8. The64variable Dirichlet principalcompression uses
+only the already-certified full4096momentum K9 balls; no spectralreplay.
+All64 rational-preconditioned rows are<3/1000, and the boundaryresponse
+error<1/100 preserves three nonzero transverse properlink coefficients.
+All3584interiorsites and14848incident properedges therefore solve their
+unrestricted coframe/link/observer Euler, with the whole movingreference128
+preparation stationary; actual basedfaces Ui^-1 are nonidentity. One fixed
+collarslice remains. This removes the isolated-cell concern for finite
+conditionalexistence, but supplies no uniform JOINT nonlinear radius or refining
+Einstein source. Fullphysicalaction/admission andraw216 remainopen.
+
+
+### 7.107. Uniform Riesz field radius follows from the original FIRST-order operator
+
+The curvedwholeHJR owner section11 now supplies an explicit uniform C1
+coefficient radius around the OWNED flatrefining root, preserving full
+rank128/RIGHT Gram and C2 preparation/Rayleigh action bounds (first source
+and Hessian).
+The relativebound uses the original D, including true shiftedadjoint
+coefficient commutators; ||deltaD|| maystillgrow ash^-1 but
+||deltaD(D0-z)^-1|| isuniformlysmall on isolated±shellcontours. The full
+complement stays. Finite-rank contour derivatives control the actual trace
+without a Hilbert-dimensionfactor. Linf-only alternatingcoefficients give
+an exact2epsilon/h hostilecontrol. Movingobserver fields enter through
+uniform raw-to-whitened C1/log-link maps. This resolves the preparation
+radius caveat, not uniform jointcurved IFT, physicalsource selection or
+raw216; smooth/widecollar control stillhas to be proved for actual roots.

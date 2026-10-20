@@ -2241,3 +2241,13 @@ Ward review and independent ball evaluation are bounded premises. A direct
 nonlinear fullD/Riesz source replay is diagnostic only. Physical admission,
 native clock/current/preparation work, all exterior boundary equations,
 uniform refinement and raw216 stay open. No BOOK/claim/lifecycle promotion.
+
+
+Same whole-HJR consumer strengthened in the same owner sections10-11:
+seven-slice bulk (3584sites/14848incidentedges),64variable principal
+compression certified from saved K9 balls, no new thermal replay. A separate
+first-order graph-resolvent estimate gives a uniform C1/O(h)-link radius
+for exact reference128 preparation and its C2 Rayleigh action (source/Hessian); it does
+NOT give a uniform full-joint inverse, original raw216 or physical action
+selection. Own packet additionally contains wide-collar Arb certificate
+and exact Linf-versus-C1 shifted-adjoint hostile control.

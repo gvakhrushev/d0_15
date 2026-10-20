@@ -5,7 +5,7 @@ import numpy as np
 from flint import arb,acb,arb_mat,acb_mat,ctx
 ctx.prec=128
 ROOT=Path(__file__).resolve().parents[4]
-OUT=Path(sys.argv[sys.argv.index('--output')+1]) if '--output' in sys.argv else Path(__file__).with_name('COLLAR_HESSIAN_ARB.json')
+OUT=Path(sys.argv[sys.argv.index('--output')+1]) if '--output' in sys.argv else None
 L=8;m=16384
 C=np.zeros((4,16,16),dtype=np.int64)
 for a in range(4):
@@ -171,4 +171,5 @@ row_bounds=[sum(abs(res[i,j]) for j in range(10)) for i in range(10)]
 assert all(bound<arb('0.0001') for bound in row_bounds)
 assert all(not response[j,0].contains(0) for j in (6,7,8))
 out={'status':'RIGOROUS_ARB_PASS','python_flint':'0.9.0','precision_bits':ctx.prec,'root_box':{'d':str(d),'o':str(o),'radius':'1e-12'},'L':8,'all_momenta':4096,'spatial_S3_orbits':960,'fullCAR':16,'fixedRIGHT':128,'calibrations':{'m':m,'alpha':str(alpha),'beta':str(beta),'z':'2^-20'},'A':[[str(A[i,j]) for j in range(10)] for i in range(10)],'boundary_covector':[str(Bv[i,0]) for i in range(10)],'response':[str(response[i,0]) for i in range(10)],'neumann_residual_inf_upper_bound':'1/10000','neumann_row_bounds':[str(bound) for bound in row_bounds],'rational_preconditioner':[[str(float(Rnum[i,j])) for j in range(10)] for i in range(10)],'transverse_response_nonzero':[6,7,8],'K9':[[[str(K[i,j]) for j in range(9)] for i in range(9)] for K in cases],'elapsed_seconds':time.perf_counter()-start,'scope':'Exact integer Q(sqrt2,i) feature traces and Arb enclosures over owned rootbox; encloses the true Hessian at its exact stationary root using owned moment cancellation, not an off-root Hessian identity; full HJR finite Hessian plus Riesz preparation Schur; no native admission, root replay or GR claim.'}
-OUT.write_text(json.dumps(out,indent=2)+'\n');print(json.dumps({k:out[k] for k in ['status','response','neumann_residual_inf_upper_bound','elapsed_seconds']},indent=2),flush=True)
+if OUT is not None: OUT.write_text(json.dumps(out,indent=2)+'\n')
+print(json.dumps({k:out[k] for k in ['status','response','neumann_residual_inf_upper_bound','elapsed_seconds']},indent=2),flush=True)

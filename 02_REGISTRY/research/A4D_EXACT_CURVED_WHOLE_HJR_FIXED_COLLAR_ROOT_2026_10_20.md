@@ -319,3 +319,367 @@ geometric source/normalization map and a uniform refining family retain
 their existing owners. Exterior fixed data and unsolved exterior Euler
 rows are explicit. No BOOK/CORE, claims, lifecycle or raw216 promotion.
 `GR_closed=false`.
+
+
+## 10. Bulk strengthening: seven interior slices, one prescribed collar
+
+The same packet now proves the stronger finite bulk version. Let the interior
+be t=0,...,6 and the sole exterior slice t=7. Prescribe V(7)=(I+epsilon Isp)V0
+and fix only its spatial links Ui(7)=I. Vary all five coframe coordinates and
+all four outgoing-link families on each interior slice, PLUS the incoming
+time-link family based at7. Thus all eight time-link layers vary. There are
+9*7+1=64 real invariant variables,3584 interior sites and14848 proper edges
+incident to the interior. Every six-component variation on each such edge
+is included in the unrestricted problem.
+
+No thermal calculation is repeated: the saved rigorous K9 interval matrices
+in the first certificate already determine the exact full Hessian. For the
+64 variable positions r and component labels c, use the SAME principal
+compression Aij=H(ri-rj)[ci,cj] and boundary column bi=H(ri-7)[ci,2]. Exterior
+fields are FIXED, not Schur-eliminated. The actual slice Hessian is again A/8.
+The new checker pins the original interval receipt by SHA-256 and performs
+outward-rounded Arb160 arithmetic on its saved enclosing matrices.
+
+An exact decimal rational preconditioner R satisfies, for EVERY64 rows,
+
+    ||I-R A||infinity <3/1000<1.
+
+Consequently A is invertible. A rational approximate response x0 and its
+preconditioned residual give
+
+    ||x'(0)-x0||infinity <1/100,
+    ||A^-1||infinity <6103000/997.
+
+In particular the three transverse-link response coefficients at the last
+interior slice t=6 belong respectively to
+
+    (-1.24,-1.21), (-.21,-.18), (.19,.22).
+
+Each excludes zero. The analytic IFT, finite symmetry averaging, whole128
+Riesz preparation and all-incident-link observer Ward proof above therefore
+give an EXACT finite nonflat family solving the complete conditional-HJR
+interior equations on SEVEN EIGHTHS of the carrier. At the boundary-adjacent
+face P0i(6)=Ui(6)^-1 exactly, so every sufficiently small nonzero boundary
+parameter gives nonidentity Lorentz transport. This is not confined to an
+isolated one-slice variable region.
+
+Only the stated L8 bulk domain is certified. Its inverse bound is finite,
+not uniform under refinement; neither its nonlinear radius nor the exterior
+Euler equations are supplied. The old soft-channel results explain why a
+finite Hessian certificate cannot be promoted to a refining theorem by
+continuity. Native action/price/clock/current and Einstein identification
+retain the scope of section9.
+
+
+## 11. Uniform preparation radius in the actual first-order coefficient norm
+
+This supplies the uniform-field-radius premise left open in full-source
+section6.34, on the controlled chart below. The existing flat refining
+root and its uniform spectral gap/ellipticity are consumed from v8 section7
+and full-source(13da),(13eh-i), without replay. This is a uniform preparation
+and Rayleigh-source theorem; it does not promote the finite Dirichlet
+joint branch to a uniform whole-HJR root.
+
+### 11.1. Inputs, actual norm and explicit uniform constants
+
+Let h≤h0 run through the already-owned flat refining v8 roots. Keep the
+actual full periodic site x CAR16 Hilbert space with its counting inner
+product; no Nyquist, thermal, vacuum, complementary CAR or reference mode
+is removed. In the rest-observer/whitened chart write
+
+ d_h=Σ_r C(u_r(x))[Λ(exp(hK_r(x)))S_r-I]/h,
+ D_h=d_h+d_h†,  ∇r=(S_r-I)/h,  r=0,1,2,3.
+
+K_r is in the actual Lorentz Lie algebra; every link is proper exactly.
+The flat base has constant u0_r(h), K=0, and
+
+ D0_h(k)^2 = h^-2 ζ(k)† G_h ζ(k) I16,
+ G_h=(u0_r·u0_s)_rs ≥ g0 I4,  max_r|u0_r|≤κ0<1.
+
+The owned refining root supplies positive constants independent of h:
+g0, κ0, and shell energies 0<λ-≤λh≤λ+, together with separation
+gpos>0 between λh and every other positive Δ0_h energy. Vacuum is at0.
+These are accepted inputs; no old root solve or spectral replay is used.
+The entire occupied Δ shell has rank128, uniform RIGHT I128/128.
+
+For a vector coefficient f define
+
+ Lip_h(f)=max_(x,r)|f(x)-f(x-hr)|/h.
+
+Use the ACTUAL coefficient norm
+
+ δ=max_r { ||u_r-u0_r||∞, Lip_h(u_r-u0_r), ||K_r||∞ }.
+
+Only each own-r difference is needed below, but this full C1 norm is
+convenient. No derivative of K is needed for the relative estimate; including
+it in a stronger smooth coefficient norm does no harm.
+
+Here is one nonsharp explicit choice preserving the original matrix domain.
+Put κ1=(1+κ0)/2 and choose
+
+ δ0=min{1, sqrt(g0)/4, (1-κ0)/4, log(1/κ1)/(8h0)},
+ U*=κ0+δ0,  E*=exp(4h0δ0),
+ a=4/sqrt(g0),
+ b=4+32 U* E*.
+
+Then δ≤δ0 preserves invertibility of the four legs: the four-column
+perturbation has operator norm≤2δ≤sqrt(g0)/2. Moreover
+
+ ||C(u_r)||≤κ1,
+ ||C(u_r)Λ(exp(hK_r))||≤U*E*≤sqrt(κ1)<1.
+
+Thus the same strict Julia domain, positive B and all original complement
+channels persist uniformly. In particular the original bound
+||hD||≤16sqrt(κ1) gives B=I-p²h²D²/128 >p³I at the same p.
+
+### 11.2. Relative FIRST-order estimate, including the true shifted adjoint
+
+On the full CAR16 representation ||C(v)||=|v| and
+||Γ(K)||≤4||K||. Exactly, with no continuum substitution,
+
+ T_r=(Λ(exp(hK_r))-I)/h,
+ ||T_r||∞≤4δ exp(4h0δ0)=4δE*,
+ d_h=Σ_r C(u_r)∇r + Σ_r C(u_r)T_r S_r.
+
+Set Ar=C(u_r-u0_r). Then
+
+ (D_h-D0_h)=Σ_r[Ar∇r+Ar†∇r†]
+            +Σ_r[∇r†,Ar†]+W+W†,
+ W=Σ_r C(u_r)T_r S_r.
+
+The commutator is the real finite endpoint term
+
+ [∇r†,Ar†]=[Ar(x-hr)†-Ar(x)†]S_r†/h,
+
+whose norm is at most δ. It must not be dropped. The exact flat scalar
+square and the whole Fourier band give
+
+ Σ_r||∇rψ||² = Σ_r||∇r†ψ||² ≤g0^-1||D0_hψ||².
+
+Consequently, for every full-carrier ψ,
+
+ ||(D_h-D0_h)ψ|| ≤aδ||D0_hψ||+bδ||ψ||.                 (U1)
+
+All constants are independent of h and of Hilbert-space dimension. The
+bound retains constant/zero modes via b||ψ||; no inverse D0 gap is used.
+The rough operator norm ||D_h-D0_h|| may still grow as h^-1. That growth
+does not enter the graph-resolvent budget.
+
+### 11.3. Uniform contours, exact rank128 and an explicit radius
+
+Set
+
+ g=min(gpos,λ-),
+ dD=g/(sqrt(λ++g)+sqrt(λ+)),
+ r=min{sqrt(λ-)/4,dD/4},
+ Z*=sqrt(λ+)+r,
+ Q=a(1+Z*/r)+b/r,
+ δ*=min{δ0,1/(16Q)}.
+
+For each h take two positively oriented circles Γh around ±sqrt(λh),
+each of radius r. Their common radius and all following bounds are uniform;
+their centers may depend on the owned base h. The Δ gap gives distance≥dD
+from the positive shell Dirac energy to every distinct same-sign energy.
+Opposite signs are separated by sqrt(λ-). Hence on the two contours
+
+ ||(z-D0_h)^-1||≤1/r,
+ ||D0_h(z-D0_h)^-1||≤1+Z*/r.
+
+Equation(U1) yields
+
+ ||(D_h-D0_h)(z-D0_h)^-1||≤Qδ≤1/16.                 (U2)
+
+A Neumann inverse therefore exists on both contours throughout the uniform
+C1 ball. Its norm is bounded by2/r. The contour projection P_h(q) has
+rank128 and commutes with D_h and Δ_h. Its difference satisfies
+
+ ||P_h(q)-P0_h||≤2Qδ/(1-Qδ)≤2/15<1/4.              (U3)
+
+Rank follows either by continuous interpolation (u_t,K_t)=(u0+t(u-u0),tK)
+inside the same budget, or by norm<1 of the two projections. In particular
+the entire cluster survives; internal splitting of its energies is allowed.
+No h-dependent inverse Δ gap or unrestricted Δ operator norm is used.
+
+### 11.4. Explicit uniform C2 parameter-jet bounds
+
+Let q=q(θ) be any twice differentiable coefficient family remaining in
+δ≤δ*. Suppose its actual jets obey, uniformly in h,
+
+ J_i=max_r {||u_(r,i)||∞,Lip_h(u_(r,i)),||K_(r,i)||∞},
+ J_ij=max_r {||u_(r,ij)||∞,Lip_h(u_(r,ij)),||K_(r,ij)||∞}.
+
+For operator-valued exponentials, the exact Duhamel derivatives give
+
+ ||T_(r,i)||≤4E* J_i,
+ ||T_(r,ij)||≤4E*J_ij+32h0 E*J_iJ_j.
+
+The deliberately conservative32 includes both ordered second derivatives.
+Product differentiation and the same shifted-adjoint commutator prove
+
+ ||D_iψ||≤a J_i||D0ψ||+b1 J_i||ψ||,
+ ||D_ijψ||≤a J_ij||D0ψ||+b1 J_ij||ψ||+b2 J_iJ_j||ψ||,
+ b1=4+32E*(U*+δ0),
+ b2=64E*+256h0U*E*.
+
+Define
+
+ Q1=a(1+Z*/r)+b1/r,
+ p1=8Q1,
+ p2=32Q1²+8b2/r.
+
+Using R=(z-D_h)^-1, the Neumann factorization gives
+||D_iR||≤2Q1J_i and
+||D_ijR||≤2Q1J_ij+2b2J_iJ_j/r. Differentiating the actual resolvent,
+
+ R_i=R D_i R,
+ R_ij=R D_ij R+R D_i R D_j R+R D_j R D_i R,
+
+and integrating over total contour length4πr yields the uniform estimates
+
+ ||P_i||≤p1 J_i,
+ ||P_ij||≤p1 J_ij+p2 J_iJ_j.                       (U4)
+
+These retain all noncommuting endpoint and link-exponential jets. They
+assume controlled C2 parameter jets in the stated coefficient norm, not
+mere scalar energy convergence.
+
+### 11.5. Exact common RIGHT frame and its C2 bounds
+
+Let Φ0_h be any original orthonormal frame of the complete128-column base
+shell. Put
+
+ S_h(q)=Φ0_h†P_h(q)Φ0_h,
+ M_h(q)=128^-1/2 P_h(q)Φ0_h S_h(q)^-1/2.            (U5)
+
+By(U3), S_h≥13/15 I>3/4 I. Thus the positive inverse square root is
+uniformly defined and analytic, and exactly
+
+ M_h†M_h=I128/128,
+ M_h M_h†=P_h/128,
+ [Δ_h,M_h M_h†]=0.
+
+Every full LEFT fixed-Gram preparation tangent is solved, including the
+complete complementary Hilbert space. The theorem concerns the uniform
+RIGHT I128/128 on the WHOLE cluster; arbitrary unequal weights on splitting
+energies are not asserted to admit this smooth stationary frame.
+
+The inverse-square-root integral gives
+
+ ||(S^-1/2)_i||≤||P_i||,
+ ||(S^-1/2)_ij||≤||P_ij||+2||P_i||||P_j||,
+ ||S^-1/2||≤2.
+
+Since the RIGHT has128 columns, the factor128^-1/2 cancels when bounding
+Hilbert-Schmidt frame jets. Therefore
+
+ ||M_h||HS=1,
+ ||M_i||HS≤3p1J_i,
+ ||M_ij||HS≤3p1J_ij+(3p2+4p1²)J_iJ_j.             (U6)
+
+These constants do not grow with refinement or full Hilbert dimension.
+
+### 11.6. Uniform Rayleigh value, first source and Hessian without a full-trace loss
+
+The genuine stationary Rayleigh envelope is
+
+ R_eff(q)=Tr[P_h(q)D_h(q)^2]/128.
+
+It has 0≤R_eff≤Z*². A naive bound using ||Δ_h|| would lose h^-2, and a
+naive full trace of a resolvent would lose the growing number of sites.
+Neither is necessary. Use the finite-rank spectral operator
+
+ A2(q)=(2πi)^-1 integral_(Γh) z²(z-D_h(q))^-1 dz
+      =P_h(q)D_h(q)^2.
+
+It has rank128. The same contour estimates as(U4) give
+
+ ||(A2)_i||≤Z*²p1J_i,
+ ||(A2)_ij||≤Z*²(p1J_ij+p2J_iJ_j).
+
+Each first difference of A2 has rank≤256 and each mixed second finite
+difference has rank≤512, because each summand has rank128. The sets of
+matrices with those rank bounds are closed (their larger minors vanish),
+so taking the derivative limits gives rank(A2_i)≤256 and
+rank(A2_ij)≤512 at each h. No growing ambient dimension enters.
+Thus |Tr T|≤rank(T)||T|| gives dimension-free ACTUAL source bounds
+
+ |(R_eff)_i|≤2Z*²p1J_i,
+ |(R_eff)_ij|≤4Z*²(p1J_ij+p2J_iJ_j).               (U7)
+
+The first derivative equals Tr(P_h Δ_i)/128 because Tr(Δ_h P_i)=0.
+The second includes the moving P response. Hence(U7) controls the real
+preparation-stationarized Rayleigh field covector, not a frozen-state
+substitute or a trace over a selected subset of thermal modes. The heat
+and feedback terms remain separate full-source consumers.
+
+### 11.7. Moving observer is covered, rather than frozen
+
+The above uses the exact rest-observer gauge already proved for the same
+full-Lorentz interface. It is a normed chart, not deletion of observer
+relative data. In original variables let n=(sqrt(1+|b|²),b), |b|≤1, with
+max{||b||∞,Lip_h(b),||v-v0||∞,Lip_h(v-v0),||Kraw||∞}≤δraw,
+and actual raw links exp(hKraw). The explicit L(n)=sqrt(h_n) obeys
+
+ ||L||,||L^-1||≤3,
+ ||L-I||≤5|b|,
+ Lip_h(L)≤5Lip_h(b).
+
+Whitening gives u=L v and M_xy=L_x exp(hKraw) L_y^-1. The elementary
+product difference implies
+
+ ||u-u0||C1_h≤(8+5κ0)δraw,
+ ||M_xy-I||/h≤CM δraw,
+ CM=15+9 exp(h0).
+
+When h0 CM δraw≤1/2, the principal matrix logarithm gives
+Keff=h^-1 log M in so(η) and ||Keff||≤2CM δraw. Thus the proved chart is
+reached with δ≤Craw δraw, Craw=max{8+5κ0,2CM}, and an explicit uniform
+raw radius min{1,1/(2h0CM),δ*/Craw}. Controlled raw C2 parameter jets in
+discrete C1 carry to the needed coefficient jets by these same analytic
+maps; cancellation M-I=O(h) persists after differentiation, avoiding a
+hidden1/h loss. Extra preferred nontransforming apparatus masks/costs
+would need their own native source and are not included by this gauge map.
+
+### 11.8. Exact scope change for the parent
+
+The old statement that a uniform shell gap alone does not imply a uniform
+field radius remains correct for unspecified or L∞ coefficient norms.
+(U1)-(U7) now supply the missing positive premise for the explicit discrete
+C1 / O(h)-proper-link chart: a uniform rank128 preparation neighborhood,
+exact RIGHT Gram, and uniform C2 preparation and Rayleigh ACTION budgets (first source and Hessian). These are functional
+bounds against C1-controlled directions. An individual delta-site coframe
+or observer direction can have Lip_h of order1/h; no uniform bound on
+unscaled pointwise Euler slots is inferred.
+
+This does NOT give a uniform inverse for the FULL HJR joint field Hessian,
+a nonshrinking nonlinear joint-IFT radius, a native physical preparation
+law, the original current/clock marginal, source equality with Einstein,
+or raw216. The previous one-time-slice collar input of amplitude epsilon
+has Lip_h about epsilon/h. It therefore lies in this uniform ball only
+when epsilon=O(h), unless the collar/profile is widened and smoothed on a
+fixed physical scale. That remaining wide-collar/full-source estimate must
+be supplied explicitly; this lemma does not silently reclassify a thin
+lattice jump as a uniformly smooth field.
+
+### 11.9. Decisive hostile control: L-infinity alone really is insufficient
+
+For every even periodic L, h=1/L, take U=I, all four constant baseline
+legs u0_r=e_r/4, and perturb only
+
+ u_0(t)=e0/4+epsilon(-1)^t e0.
+
+With |epsilon|<1/8 all legs remain invertible and strictly inside the
+original Julia window. Let psi be the spatially constant normalized
+full-CAR top form. Then D0 psi=0 and the raising part on psi is0. The
+actual shifted lowering row gives EXACTLY
+
+ (D-D0)psi(t)=[C(delta u0(t-h))†-C(delta u0(t))†]psi/h,
+ ||(D-D0)psi||=2|epsilon|/h.
+
+Thus no b independent of h can replace the C1 norm in(U1) by only
+||delta u||infinity=|epsilon|. The actual Lip_h norm is2|epsilon|/h,
+precisely the commutator retained in section2. This is a norm-domain
+control, not a D0/GR obstruction. The exact full16 helper
+`check_uniform_riesz_linf_control.py` verifies finite L4/L8 instances
+and their unchanged invertibility/strict-window hypotheses; the displayed
+formula proves the whole even-L family.

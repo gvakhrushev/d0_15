@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "full_CAR_components": 16,
+  "spatial_extension": "tensor constant profiles on the three transverse tori; ratio unchanged",
+  "cases": [
+    {
+      "L": 4,
+      "h": "1/4",
+      "coefficient_Linf": "1/100",
+      "coefficient_discrete_Lip": "2/25",
+      "true_E_on_constant_topform_norm_squared": "4/625",
+      "true_E_norm_over_Linf": "8"
+    },
+    {
+      "L": 8,
+      "h": "1/8",
+      "coefficient_Linf": "1/100",
+      "coefficient_discrete_Lip": "4/25",
+      "true_E_on_constant_topform_norm_squared": "16/625",
+      "true_E_norm_over_Linf": "16"
+    }
+  ],
+  "scope": "Linf-only failure and true shifted-adjoint commutator; analytic C1 relative bound is separately proved"
+}

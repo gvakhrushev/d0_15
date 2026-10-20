@@ -8889,3 +8889,41 @@ Explicit limits: no supplied nonlinear radius; no exterior Euler or global
 periodic stationarity, no original clock/current marginal preservation,
 physical full-price/primitive/preparation-work selection, LC/Einstein
 source identification, uniform refinement or raw216. GR_closed=false.
+
+
+### Same whole-HJR theorem strengthened to a seven-slice bulk interior
+
+The same [owner, section10](A4D_EXACT_CURVED_WHOLE_HJR_FIXED_COLLAR_ROOT_2026_10_20.md)
+now treats3584 of4096 sites as interior, with only t=7 fixed. All14848
+incident proper edges vary, including both boundary crossing time links;
+all interior coframes/observers and globalreference128 preparation solve
+their actual fullHJR Euler equations. The invariant interior Jacobian is64
+by64. Reusing the SAVED rigorous fullK9 balls, every Neumann row is
+<3/1000 and the boundary response error is<1/100. Three boundary-adjacent
+transverse-link responses exclude0, and the based face is exactly Ui^-1.
+Analytic IFT therefore gives a true nonflat BULK conditional-HJR family
+for every sufficiently small nonzero independent boundary parameter.
+No repeated thermal/root search, changedprice or fittedstress. Exterior
+Euler, native admission and uniformrefinement/Einstein/raw216 remainopen.
+
+
+### Uniform preparation-radius premise now proved in the controlled first-order chart
+
+The same owner section11 resolves the earlier full-source6.34 warning
+that a uniform shell gap alone does not give a uniform FIELD radius.
+On an explicit discreteC1/O(h)-proper-link ball, the ACTUAL original
+full16 operator obeys ||(D-D0)psi||<=a delta||D0psi||+b delta||psi||,
+with a,b independentofh and the genuine shifted-adjoint commutator retained.
+Uniform ±sqrt(shellenergy) contours then give exact rank128 stationary
+preparations with the SAME RIGHT Gram and dimension-free C2 frame/Rayleigh
+action bounds. Finite-rank derivative bounds avoid a growing full-trace
+factor; no complementary mode is deleted. Movingobserver whitening is
+included. The exact alternating-coefficient hostile control gives
+||deltaD psi_consttop||=2epsilon/h, proving why Linf-only control fails.
+
+This removes the uniform PREPARATION neighborhood premise, not the full
+joint-HJR inverse or the raw216 norm. The coefficient norm is explicit;
+thin collar jumps of fixedepsilon have C1 sizeepsilon/h. A smooth physical
+collar and an actual uniformly controlled joint source branch remain to
+be constructed. Native price/preparation/clock/current and Einstein source
+selection remainopen.
