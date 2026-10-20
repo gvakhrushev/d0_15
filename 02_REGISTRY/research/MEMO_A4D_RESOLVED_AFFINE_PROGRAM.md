@@ -109,7 +109,8 @@ meaning of prospective minimality in this programme:
 \text{physical continuation law}.
 \]
 
-The pinned [prospective formal owner](https://github.com/gvakhrushev/d0_15/blob/bf82fb54c63bbe95aee5e459a30f17a27f576519/03_FORMALIZATION/D0/Foundation/EndogenousActionQuantum.lean)
+The main [prospective formal owner](../../03_FORMALIZATION/D0/Foundation/ProspectiveExecution.lean),
+preserved with its [exact extraction provenance](D0_FOUNDATION_MAIN_INTAKE_2026_10_20.md),
 already proves Bellman suffix optimality and exclusion of dominated executions
 and positive redundant detours. Its `ProspectiveExecution.optimal` is an
 explicit **premise**. The central target is to derive that premise, or a precisely
@@ -207,6 +208,17 @@ argument and chooses a missing substitution from its boundary.
 | Physical source: existing `contrast_refinement_transfer`, `matter_source_ward`, `on_shell_stationarity`, `physical_constraints` | Owned six-face tester, source-weld, P25 obstruction, regularity and stationary-shell results | Apply those tests to the derived complete law; retain hidden/even/preparation/work/clock terms and genuine internal stationary elimination | The same action's source and physical equations meet the declared GR interface |
 | Joint dynamics and limit: `gauge_range`, `joint_nonlinear_solve`, `soundness`, `recovery` | Existing curved solutions, connection sheets, Ward and response/refinement estimates | Prove only missing joint rows, bounds or transports on one fixed smooth-metric refining family | Controlled soundness and recovery on the stated nonempty curved class |
 | Common realization: `gr_operational_realization`, `gr_architectural_closure` | The preceding exact applications and unchanged `positive_gr` | Identify concrete witnesses or prove structure-preserving transport | One complete native GR theorem; then reuse the same architecture for other theories |
+
+The accepted `mv_tangent_span` and `primitive_jet_composition` applications
+now supply two reusable generic inputs to this route. The first identifies
+the Hermitian annihilator/span equivalence; the second supplies ordered
+residual composition and the exact first-jet identity for moving intertwiners.
+Its numerical derivative bound keeps the shared-intertwiner hypothesis.
+Use their pinned applications in the [assembly](../gr_assembly/VIEW.md) and
+instantiate them on the actual native operators, admitted tangents and
+preparation/test maps. That physical identification belongs to the existing
+source/realization obligations; the two accepted generic statements are not
+new work for the next wave.
 
 ### Initial focus for the next agent wave
 
