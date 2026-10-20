@@ -35,7 +35,7 @@ const G=[
  add(E(0,2),E(2,1)),add(E(0,3),E(3,1)),
  add(E(2,3),E(3,2),-1),add(E(1,1),E(0,0),-1)
 ];
-assert(G.every((g,i)=>G.every((g2,j)=>Math.abs(dot(g,g2)-(i===j?2:0))<1e-14),
+assert(G.every((g,i)=>G.every((g2,j)=>Math.abs(dot(g,g2)-(i===j?2:0))<1e-14)),
  "all six ORIGINAL Lorentz generators Frobenius orthogonal norm²2");
 function LieExp(i,t){
  const A=G[i],A2=mm(A,A);
