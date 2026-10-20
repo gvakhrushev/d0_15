@@ -410,3 +410,22 @@ New executable original-carrier scripts, both local PASS:
 - sources/d0_native_blank_anchored_book_2026-10-20/check_native_full128_blank_odds.py
 - sources/d0_native_blank_anchored_book_2026-10-20/check_screen_dirac_port_palatinisymbol.py
 Remote CI and independent scientific acceptance are NOT asserted.
+
+
+## 13. ACTUAL 34-history carrier meets Book03 information: Golden PORT has a strong blind metric ray, while FULL original history recovers it
+
+New SAME native owner, saved in this PR:
+[A4D_NATIVE_GOLDEN_PORT_DARK_METRIC_INFORMATION_SOURCE_2026_10_20.md](A4D_NATIVE_GOLDEN_PORT_DARK_METRIC_INFORMATION_SOURCE_2026_10_20.md).
+Two standalone exact checkers under sources/d0_native_port_screen_2026-10-20, PLUS replay of the independent local original scripts, verify:
+
+On a single genuine legal L4 character z=(i,i,-1,-i), the original full128 complete Golden port1 code effect is Eport1=4p³ A² with A=hD_h/16, and actual two-tick PORT cost Cport(F)=2+(p³nu²/32)||F^T(z−1)||². In the ten real symmetric metric coframe lifts H=eta Q, the STRONG screen Q(z−1)=0 has real rank constraint7 and dimension3. It is NOT the entire scalar-price first kernel (dimension9); the distinction matters. In this 3D kernel the exceptional Qstar=ell ell^T, ell=(0,1,−1,1), also obeys Qstar eta(z−1)=0, so the actual Dirac symbol and entire actual native PORT code cost are EXACTLY constant on the finite nondegenerate F(t)=I+t eta Qstar ray, det F=1−3t.
+
+But three literal positive two-fresh-round full128 JONES+ histories (first outcome blank 0, second outcomes 17,27,59) vary with exact first LOG likelihoods on Qstar
+  (−4/3, −181/36, −189/52) .
+On the full 3D strong-screen basis their complete 3×3 exact Golden-field log Jacobian has det=−(1888 a³+4595)/702 !=0, a²=p. Their real classical Fisher lower bound from those three outcomes is positive definite, with det J² prod(q)>0. The independent literal old G2/STAR Palatini mixed coframe×24-link CELL-SYMBOL has rank3 on the same 3D screen and a concrete Qstar/link0/K2 slot −6. IMPORTANT: this is not the full periodic Euler or Einstein source.
+
+This is a SHARP ORIGINAL SAME-CARRIER observation: the native port-only scalar code price and the fixed Dirac symbol cannot reconstruct the full original historical law on Qstar; the retained WALSH labels/probabilities carry independent metric information that a port-only price omits. It is not by itself a no-go for the full metric-link mixed Hessian of port cost, whose honest mixed derivative must still be calculated before comparison with Palatini.
+
+A4D_NATIVE_BRANCH_INFORMATION_COCYCLE supplies the EXACT CONDITIONAL source bridge: IF the compulsory physical Book03 history weight is the genuine recorded q_gamma with fixed original Golden reference mu_gamma, then D Info_gamma=(D log q_gamma)/ln(phi); the above actual histories therefore contain nonzero information-source derivatives even where D PortCost=0. BUT the foundational selected Book action, its algebra-valued [q(gamma)] memory, moving normalizer, full labels, observer, controller, proper-time, preparation and actual action/readout binding are NOT established. This is a direct USE of existing action owners rather than an assumption that a Fisher metric or signed CAR reader is already Einstein.
+
+**New decisive parent gate:** calculate the actual FULL ORIGINAL Book03 selected Cost−Info/record/ordered-history first source on this already-local-tomographically-invertible 34-record chart, retaining ALL paid resources. Compare its metric10+Lorentz24 Euler covector with the literal original S_star covector ON THE SAME selected chart, not with an arbitrary CAR16 readout. Do not insert the target action in the definition of the price. A positive result would close one G0 native action-source bridge; matter Ward, actual joint nonlinear curved exact roots and #216/refinement remain independent. GR_closed=false.
