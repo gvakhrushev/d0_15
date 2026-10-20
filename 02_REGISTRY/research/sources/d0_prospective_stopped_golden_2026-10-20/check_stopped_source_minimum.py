@@ -26,7 +26,7 @@ plo=Q("0.61803398874989")
 phi=Q("0.61803398874990")
 assert (2*plo+1)**2<5<(2*phi+1)**2
 p=(plo,phi)
-x=minus(scale(p,2),bounds(-1))
+x=minus(scale(p,2),bounds(1))
 tk=[bounds(1),x]
 for k in range(2,7):
     tk.append(minus(scale(times(x,tk[-1]),2),tk[-2]))
