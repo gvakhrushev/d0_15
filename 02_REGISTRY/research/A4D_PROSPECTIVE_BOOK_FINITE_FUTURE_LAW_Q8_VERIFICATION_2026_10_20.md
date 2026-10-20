@@ -104,6 +104,23 @@ V_N(s)=N-\log_\varphi C_N(s).
 
 **Operational consequence:** the scalar counting-Info contribution and its native source are fully fixed, at every declared finite Book clock cut, by the very same path enumeration and complete code law. There is no arbitrary information coefficient or extra pressure calibration to choose **inside this specified scalar record ensemble**. However the existence of the positive \(\Pr^N\) does not identify its Shannon information with the ORIGINAL full **algebra-valued** Book03 \`Info\`/work, and the full record may distinguish chronology even when the scalar count does not. That is exactly the next physical constitutive map, not a gap to hide.
 
+### 2.2. Important native D_min distinction: modal complete history is NOT the next-step majority
+
+On any fixed finite complete original history task with positive terminal weights,
+\[
+\arg\max_\gamma\Pr_s^N(\gamma)
+=\arg\min_\gamma\bigl[S_{\rm edges}(\gamma)-\log_\varphi\chi(s_N)\bigr].
+\tag{P4e}
+\]
+This follows exactly from P2 because all histories share the same positive \(Z_N(s)\). It is an **ex ante identity between the modal PATH and the minimum complete scalar price**. It neither says the random realized native history is modal nor that \`ProspectiveExecution.optimal\` has been forced as deterministic physical selection. The true clock, distinct terminal requirements and source-dependent \(\chi\) belong in the expression.
+
+A decisive ORIGINAL K913 two-tick control rules out conflating next-step branch probability with the minimum individual history. From an original \(K_9\) root, there are exactly **502** equal-cost complete two-step paths; **242** start via a \(K_{11}\) vertex and **260** via a \(K_{13}\) vertex (the actual counts \(11\cdot22\) and \(13\cdot20\)). Hence:
+\[
+ Q_2(K_9\to K_{13})=260/502 > 242/502
+ =Q_2(K_9\to K_{11}),
+\]
+although **each of all 502 individual complete two-step histories** has precisely the SAME native scalar Cost 2, hence identical modal probability \(1/502\). The next-zone majority is an entropy-of-completions effect, not a cheaper privileged path. This is exactly why the physical law of a verified *distribution* must be distinguished from a claim of compulsory single-history minimization.
+
 ## 3. Proposition P2 — the complete finite SOURCE follows recursively and includes the moving normalization
 
 For any field tangent \(\partial\) with fixed transition support and smooth positive \(\chi_y\) on its terminal support, put \(a_e=s_y(e)+V_{n-1}(t)\). Differentiate the **actual** finite \(Z_n\), not just a frozen path/argmin. The full first source is
