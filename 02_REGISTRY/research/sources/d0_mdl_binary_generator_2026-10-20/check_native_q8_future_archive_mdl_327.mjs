@@ -166,9 +166,38 @@ check(chords.length===327 &&Math.abs(minResponse-4*goldenP**3)<1e-13 &&
  Math.abs(maxResponse-4*goldenP**3)<1e-13,
  "EACH original 327 SO-blind Q8 gauge-invariant sheet directions has a positive-distribution Golden order-port future witness");
 
+
+// Exact re-use of ONE native Q8/Golden TYPE of detector for all 327
+// independent original sheet syndromes. If a same physical history
+// preserves the Q8 central sign and permits independent fresh
+// repeat measurements, N repeated order-port trials per basis bit
+// have a one-sided false-negative probability p^(6N).
+// There are NO false bright responses for Q8=+1 in the ideal owner.
+// Boole union bound over all327 requires NO independence BETWEEN
+// different basis bits (only repeats conditional on each unchanged
+// bit). This is a mathematical resource bound, NOT G0 free work.
+const allSheetAssayTargets=[.1,.01,.001,1e-6,1e-9],assayBudgets=[];
+for(const risk of allSheetAssayTargets){
+ const repeats=Math.ceil(Math.log(risk/327)/(6*Math.log(goldenP)));
+ const failurePerBit=goldenP**(6*repeats),
+       unionUpper=327*failurePerBit;
+ check(unionUpper<=risk &&
+       (repeats===0 || 327*goldenP**(6*(repeats-1))>risk),
+       "EXACT minimal independent repeated Golden order tests per each 327 Q8 bits for full archive failure union bound "+risk);
+ assayBudgets.push({target_overall_error:risk,repeats_per_basis_spin_bit:repeats,
+   total_independent_conditional_assays:327*repeats,
+   original_forward_clock_transitions_at_15_per_assay:327*repeats*15,
+   familywise_false_negative_upper_bound:unionUpper});
+}
+check(assayBudgets[1].repeats_per_basis_spin_bit===4 &&
+      assayBudgets[3].repeats_per_basis_spin_bit===7 &&
+      assayBudgets[3].familywise_false_negative_upper_bound<1e-6,
+      "ONE native Q8/Golden comparator species suffices conditional on actual 327-bit replay control; ~2289 trials for 1e-6 error");
+
 console.log(JSON.stringify({
  original_source:"native Q8 Spin central sheets on original K9/K11/K13 graph, not arbitrary generic encoding",
  full_edges:359,original_based_triangles:1287,
+ native_Golden_assay_error_budgets:assayBudgets,
  full_central_syndrome_rank:rank,
  independent_sheet_bits:minimalMemoryBits,
  spin_sheet_classes_over_fixed_SO:"2^327",
