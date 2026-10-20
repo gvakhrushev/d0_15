@@ -299,3 +299,31 @@ amplitudes, or for the amplitude log-normalizer aggregate, the source
 is instead `-D J`; the positive entropy multiplier does not apply.
 Native material access, physical gain/common normalization and the
 compulsory complete programme remain the open application boundary.
+
+## 10. Actual field writing: endpoint preservation cannot supply the bridge
+
+The [primary field-writing application](NATIVE_FIELD_WRITER_BRIDGE.md)
+tests the existing endpoint-isometric CAR chronology as the missing
+same-initial field generator. It declares the inverse-coframe dictionary
+`q=kappa g_H^-1`, with the actual primary `kappa=sigma^2 rho`, rational
+null-to-rest map and clock. Under the chronology's fixed **coordinate**
+positive pairing `Q`, every regular history and every endpoint limit
+obey `Tr(Q^-1 q)=-2`. A primary profile change has
+`delta q=-kappa delta H e_v e_v^T`; its distance from this reachable set
+is at least `kappa |delta H|(Q^-1)_vv/2` in the stated whitened Frobenius
+norm. For the actual rest clock this is `|delta H|/4`. Ordinary inherited
+copies preserve the bound with the owner's conditional weights.
+
+Thus this particular engine/inheritance substitution cannot even supply
+the field coordinate of the prospective paid-graph closure. Increasing
+the archive or gluing these same sections does not repair it. The proof
+also retains the explicit moving-solder countercontrol: keeping the
+internal observer metric fixed while changing the solder changes the
+coordinate `Q`, and escapes the hypothesis. No universal D0 obstruction
+or physical selection of the proposed metric dictionary is inferred.
+
+The [review receipt](NATIVE_FIELD_WRITER_BRIDGE_REVIEW.md) pins the bounded
+application. The next step needs an admitted joint solder/pairing/link
+transition and its complete price, or the separate native stationary-law
+route. This does not replace the existing full-source, material-access
+or physical-admission obligations, and does not close a positive GR premise.
