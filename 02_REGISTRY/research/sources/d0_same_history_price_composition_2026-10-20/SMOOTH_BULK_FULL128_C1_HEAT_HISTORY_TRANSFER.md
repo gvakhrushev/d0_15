@@ -252,3 +252,46 @@ Thus \(\||\mathcal V_{\rho,L}\rangle-|{\bf blank}\rangle|\Psi_{\rm in}\rangle\|\
 This is the sharpest **same-preparation quantitative obstruction** to reading the formal HJR bulk pressure as the Cost–Info response of one completed prepared Golden programme: the HJR feedback/coframe source is extensive \(+\Omega(L^4)\) even at the genuine physical flat scale, while every bounded measurement of the one original rank128 quantum execution loses all scale information as \(L\to\infty\). It does NOT follow that an action-gradient necessarily vanishes from total-variation convergence alone (a rapidly changing price can have a nonvanishing derivative), so the rigorous source mismatch remains separately certified in (23)–(25). Their combination, **both a derivative bound and a full-operational-norm bound**, makes the missing Book03 binding explicit.
 
 **Physical consequence:** any positive Einstein closure that keeps the original entire counting-trace HJR feedback MUST derive a genuinely **bulk-extensive** native state ensemble/operation, a nontrivial charged Info/relative-reference source, or a different justified operator/action semantics. Merely applying an infinite number of abstract bounded future readouts to the *same fixed completed tape* does not change (27), whereas running many independent physically paid preparations can change the distinguishability budget. This is not a general impossibility theorem for D0 or an arbitrary gravity observer; it is a rigorous **one fullRIGHT128 prepared programme versus entire HJR UV spectral trace** separation on the original identical flat carrier.
+
+
+## 9. Genuine 4D **resource lower bound**: Ω(L⁴) ORIGINAL full128 rounds required to distinguish low-shell coframe scales
+
+Section 8 considered the owned finite clock \(m=256L²\), but the proof yields a stronger **all-clock resource theorem**. On the SAME homogeneous proper-flat carrier, fix two positive constant isotropic coframe scales \(\rho\ne\rho'\) in a bounded compact interval, the exact common original normalized fullRIGHT128 first-shell input \(|\Psi_{\rm in}\rangle\), the unchanged oldRIGHT/reference and the same original 128-output Kraus round.
+
+On every one of the eight lowest positive momentum shells, the entire actual full16/RIGHT input has the exact \(\Delta_\rho=\rho\lambda_{1,L}I\), and the complete original **single** blank-record Kraus operator is
+\(B_\rho=I-\alpha\Delta_\rho=(1-\alpha\rho\lambda_{1,L})I\).
+The original nonblank effect is
+\[
+E_{\rm exit}(\rho)=I-B_\rho^2=
+(2\alpha\rho\lambda_{1,L}-\alpha^2\rho^2\lambda_{1,L}^2)I
+=O(L^{-4})I.
+\tag{28}
+\]
+
+**THEOREM (arbitrary chronological depth R).** Append \(R\) of the **same full original 128-outcome rounds**, always retaining ALL data, labels, ports, other work and oldRIGHT. Let \(|V_{\rho,R}\rangle\) be the resulting FULL purified record from the fixed common input. For every integer \(R\ge1\),
+\[
+\boxed{
+\||V_{\rho,R}\rangle-|{\bf blank}_R\rangle|\Psi_{\rm in}\rangle\|^2
+=2[1-(1-\alpha\rho\lambda_{1,L})^R]
+\le2R\alpha\rho\lambda_{1,L}
+\le{p^2\nu^2\pi^2\over 16}\,{R\over L^4}\,
+}\tag{29}
+\]
+using \(\lambda_{1,L}\le4\nu²\pi²/L²\) and \(\alpha=p²/(128L²)\). (The last displayed coefficient is \(2\cdot(1/128)\cdot4=1/16\).) The common all-blank branch is the exact ORIGINAL event, not a normalized success-postselected state; **all nonblank branches remain present and orthogonal** in the tape.
+
+By triangle inequality, the two entire coherent outputs \(|V_{\rho,R}\rangle\) and \(|V_{\rho',R}\rangle\) differ in Hilbert norm by at most
+\[
+\frac{p\nu\pi}{4}\,(\sqrt\rho+\sqrt{\rho'})\,\frac{\sqrt R}{L^2}.
+\tag{30}
+\]
+Consequently their trace distance and all downstream bounded measurement statistics, including globally coherent joint POVMs that read the complete oldRIGHT and full chronological tape, are \(O(\sqrt R/L²)\). If \(R_L=o(L^4)\), the trace distance tends to zero. Therefore
+\[
+\boxed{\quad
+\text{constant limiting distinguishability by THIS full128 low-shell process}
+\Longrightarrow R_L=\Omega(L^4).\quad}\tag{31}
+\]
+This is an information-theoretic **necessary** execution-volume bound, not an appeal to independent Bernoulli attempts; the complete quantum Stinespring isometry and its true all-blank word supply the proof. The classical pointer tape has a still sharper bound \(O(R/L^4)\) for \(R\ll L^4\). The bound survives multiple fresh SAME-shell preparations with a total of \(R\) actual rounds and no inserted high-energy/field-sensitive state reset: their common all-blank amplitude factorizes to the same scalar, and (29) uses only total clock exposure. An admitted extra active controller that moves states into high-energy shells or directly observes the coframe is a **different** field-sensitive operation and must be priced separately.
+
+**Nontrivial synthesis with the original HJR trace:** the full thermal/feedback HJR flat coframe derivative contains an extensive contribution \(+\Omega(L^4)\), while the original normalized low-shell right128 tape at its owned \(m=256L²=o(L^4)\) clock has vanishing complete future-test distinguishability and a vanishing known port Cost first jet \(O(L^{-2})\). The same \(L^4\) that counts original four-dimensional UV modes is an unavoidable MINIMUM number of raw physical channel rounds for this specified low-shell observable to yield an \(O(1)\) distinction. This matching exponent does NOT prove the D0 dimension, physical GR, statistical sufficiency at \(R\simeq L^4\), or the actual Book03 Cost–Info functional; it supplies a quantified missing **operational ensemble/resources** gate instead of an invented cosmological counterterm.
+
+**Single continuing physical test:** determine from Book03/G0 whether the actual compulsory physical history includes the necessary \(L^4\)-scale ensemble, a new paid high-energy probe or an operator-valued site trace/relative-comparison price; and calculate its full native Info/work source and coframe-link Euler. The oldRIGHT128 low-shell programme ALONE cannot produce a finite operational bulk Einstein source from one \(O(L^2)\) execution.
