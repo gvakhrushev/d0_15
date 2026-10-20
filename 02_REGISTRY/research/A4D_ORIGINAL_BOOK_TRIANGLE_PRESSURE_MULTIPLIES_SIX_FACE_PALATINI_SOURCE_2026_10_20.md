@@ -128,3 +128,79 @@ for the explicitly declared naive weighted conditional marked source. On any ind
 All original weights, orbit symmetries, Golden \(p\), and source coefficients in these identities are fixed by ORIGINAL D0 carriers, not tuned. The actual scalar Cost–Info split, G0 actual native site+orbit controller, oldRIGHT/ref128, stage/clock/work, and physical joint stationary/refinement roots remain OPEN. \`GR_closed=false\`.
 
 Exact replay: \`sources/d0_native_two_three_clock_2026-10-20/check_original_triangle_book_pressure_pal_source.py\` uses the original all718 directed positive rational primitive Book transfer, ALL1287 actual ABC triangles and all6 original positive SO null boost face matrices, and checks the exact \(\eta\)-skew weighted odd source and full \(Z_3/7722\) identity without enumerating 122million orbit permutations. It independently checks canonical p³ and the nonuniform vertex-Info Golden face-factor counterprobe. No physical full G0 compiler or Einstein coefficient is implemented.
+
+
+## 5. STRONGER SAME-BOOK SOURCE WARD: \(D\log W\) is a native NORMALIZED three-tick balanced flow, with the exact fluctuation Hessian
+
+The multiplier \(W_{\rm Book}=Z_3/7722\) is not an unknown new scalar coefficient. It has a universal true original closed-path **source covector** determined by the positive directed Book transfer K itself. Define for EVERY one of the ORIGINAL 718 native directed edges e=(u,v)
+\[
+\boxed{
+f^{[3]}_{uv}:=\frac{K_{uv}(K^2)_{vu}}{\operatorname{Tr}K^3}>0.
+}\tag{12}
+\]
+This quantity is the expected number of uses of edge \(u\to v\) per **one step** of the actual complete stationary ensemble of positive three-edge CLOSED Book walks, after normalizing by their TRUE original \(Z_3\). It is not a fitted Perron \(n\to\infty\) surrogate. Indeed
+\[
+\boxed{\sum_{uv} f^{[3]}_{uv}=1,\qquad
+\sum_v f^{[3]}_{uv}=\sum_vf^{[3]}_{vu}
+=\frac{(K^3)_{uu}}{\operatorname{Tr}K^3}.}\tag{13}
+\]
+Thus it is a strictly positive normalized **balanced flow** in exactly the original already-owned 685-dimensional Book flow polytope, without another archive carrier. The identities are simply matrix multiplication; every directed K9/11/13 edge is contained in original ABC triangles, so the edge source is positive.
+
+By the original Book rule \(K_{uv}=\varphi^{-s_{uv}}\), for ANY real moving original net scalar primitive Cost–Info \(s_e(y)\) and its real first field tangent V,
+\[
+\boxed{
+D_V \ln W_{\rm Book}
+=3\sum_{uv}f^{[3]}_{uv}D_V\ln K_{uv}
+=-3\ln\varphi\sum_{uv} f^{[3]}_{uv} D_V s_{uv}.}\tag{14}
+\]
+Every coefficient is fixed by the SAME original 7722 closed triangular paths. The exact mixed Book–geometric first Euler source of the conditional weighted marked six-star (5) can now be written WITH NO HIDDEN scalar coefficient:
+\[
+\boxed{
+D_V\overline F_{\star,w}
+=W_{\rm Book}\left[
+D_VF_\star
+-3\ln\varphi\,F_\star
+\sum_{uv}f^{[3]}_{uv}D_Vs_{uv}
+\right].
+}\tag{15}
+\]
+It is a genuinely **same-native-history** source identity of the DECLARED conditional weighted SO-marked probe; it is not a proof that the compulsory H+J+R action selects this probe. But unlike a symbolic unspecified \(DW\) it explicitly joins the original Book cost derivative to its finite triangle distribution, and can be replayed against physical G0 preparation/clock conditions.
+
+The SECOND SOURCE is also exact and needs NO independent inverse or infinite history limit. Let \(N_e(\gamma)\) count edge e in a COMPLETE 3-edge closed native word \(\gamma\). Put \(Q_3(\gamma)=\prod_{e\in\gamma}K_e/Z_3\), keeping all 7722 based oriented genuine original triangles. For a field variation V set \(S'_V(\gamma)=\sum_eN_e(\gamma)D_Vs_e\) and \(S''_{VV}(\gamma)=\sum_eN_e(\gamma)D^2_{VV}s_e\). Finite logarithmic differentiation of the same real positive \(Z_3\) yields the exact fluctuation identity
+\[
+\boxed{
+D^2_{VV}\ln W_{\rm Book}
+=-3\ln\varphi\sum_e f_e^{[3]}D^2_{VV}s_e
++(\ln\varphi)^2
+\operatorname{Var}_{Q_3}(S'_V(\gamma)).
+}\tag{16}
+\]
+The variance is nonnegative and is computed on the SAME 7722 primitive scene clock histories; no new action, Gaussian approximation, Grassmann trick, or entropy functional has been introduced. At affine primitive Cost, the entire log-pressure second variation is a NONNEGATIVE full registered Cost variance. The scalar effective \(-\log_\varphi W\) Hessian is its negative rescaled by \(1/\ln\varphi\).
+
+### Exact canonical equal THREE-PAIR source, even though 9,11,13 are unequal
+
+At the original native saturated primitive Cost=1 and Info=0, \(K=p A\) and \(Z_3=7722 p^3\). For each actual directed edge u→v, \((K^2)_{vu}=p^2 n_{\rm third\ zone}\). Thus
+\[
+\boxed{
+f_{uv}^{[3]}=
+\begin{cases}
+13/7722,&\text{u,v in zones 9 and 11, either direction},\\
+11/7722,&\text{u,v in zones 9 and 13, either direction},\\
+9/7722,&\text{u,v in zones 11 and 13, either direction}.
+\end{cases}}\tag{17}
+\]
+Despite the distinct edge multiplicities (198,234,286), the TOTAL native THIRD-TICK source mass in each UNDIRECTED zone pair is exactly
+\[
+198\cdot13/7722=234\cdot11/7722
+=286\cdot9/7722=\boxed{1/3}.
+\tag{18}
+\]
+Each of the six oriented zone-pairs has mass exactly \(1/6\). Therefore any exact original zone-pair symmetric uniform Cost tangent d has
+\[
+D\ln W_{\rm Book}=-\ln\varphi\,[d_{AB}+d_{AC}+d_{BC}]
+\]
+when \(d_{AB}\) denotes the shared forward/reverse price change on that pair, and any orientation-antisymmetric zone-cycle Cost tangent has zero FIRST \(W\) source at canonical equilibrium. Its nonzero second source is the explicitly owned variance (16), NOT a sign-carrying first Lorentz/Einstein force.
+
+This equal-three-pair result is NOT the Lorentzian spacetime metric, nor the earlier 3+1 four-coordinate proof. It is an exact ORIGINAL Book clock-source sharing law, showing a natural common normalization for the six rooted Role face observations at the symmetric source reference. A physical Einstein coefficient still requires native selected H+J+R/oldRIGHT/Cost–Info/clock and signed noncommutative memory to match (15) on the actual field tangent domain.
+
+**Bounded native replay** of (12)–(18) extends the sibling all718/1287-triple checker, including independent first/second Cost finite differences and exact Fraction 9/11/13 zone-pair masses. The full formal identities follow from the finite matrix trace, not numerical inference.
