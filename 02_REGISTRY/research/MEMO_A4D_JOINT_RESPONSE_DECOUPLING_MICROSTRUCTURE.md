@@ -9025,3 +9025,32 @@ minimum test in `A4D_COMPLETE_FLAG_SOURCE_AND_NATIVE_MINIMUM_GATE_2026_10_20.md`
 remains binding: derive the actual remaining price/admission on the SAME
 execution and its named direction, rather than seeking another conditional
 root as a substitute for physical selection.
+
+## 20 October: one native completion price faces separate flat and curved tests
+
+The [combined source result](sources/d0_hjr_flat_density_zero_2026-10-20/RESULT.md)
+now gives two independent necessary tests for the missing physical price,
+without identifying either conditional carrier with the compulsory D0 action.
+On the positive flat-holonomy coframe family, every Palatini face density is
+zero, while the one-sided analytic limit of the unchanged full H+J+R source
+is \(dS_{HJR}/du\to744-256\sqrt5-4\sqrt2>162\). The endpoint \(u=0\) is
+only a computational limit, not an admitted coframe. Therefore a claim that
+the *whole completed action itself* depends only on those densities requires
+its derived extra price to obey \(E'(u)=-S'_{HJR}(u)\) on the positive chart
+(and the corresponding limit if it exists). This condition does not apply
+to a different physical target or to an equation-level transported
+equivalence.
+
+Separately, on the exact curved fixed-collar stationary branch, the existing
+full-Riesz calculation gives a nongauge bulk direction with
+\(D^2S_{HJR}[v,v]\le-2372493199/32000000000\). If that same point is to be
+a local minimum of \(S_{HJR}+E\), and that direction is admitted with a C2
+completion, then \(dE=0\) there and
+\(D^2E[v,v]\ge2372493199/32000000000\). The rational replay
+[`check_collar_minimum.py`](sources/d0_native_flag_source_minimum_2026-10-20/check_collar_minimum.py)
+and full-spectrum flat-source replay pass. These tests are at different
+configurations and under different hypotheses; together they constrain the
+same *derived* native price, but do not define or fit one. The consuming
+`constitutive` step remains to derive its preparation/controller/clock/
+history/work source and admission from one execution, then evaluate the
+appropriate tests. `GR_closed=false`.
