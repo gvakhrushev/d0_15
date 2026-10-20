@@ -130,6 +130,64 @@ geometric extensions beyond Brinkmann are welcome only when an exact
 parent premise demands them; an additional local rank, resonant census,
 or single Taylor coefficient is not programme-level progress.
 
+## Integrated complete-source recovery: retain the actual gain (21 October)
+
+The [normal-row theorem](A4D_PRIMARY_NORMAL_SOURCE_RECOVERY_SYNTHESIS_2026_10_21.md)
+and its [source-composition packet](sources/d0_primary_normal_source_recovery_2026-10-21/README.md)
+now give a quantitative consumer for this same family. This is conditional
+support, not proof of the remaining physical valuation or an arbitrary
+full-40 inverse.
+
+The [existing complete terminal execution](sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/MINIMAL_GOLDEN_COMPLETE_SOURCE.md)
+already supplies, under its stated fixed-query/clock/admission and information
+cuts, two nonzero whole-source gains:
+
+```text
+D S_terminal,coh = g_coh,h DJ2,
+D S_terminal,ptr = g_ptr,h DJ2,
+g_coh,h = [Q0 R0/(2 N_h)] * 8 p^(9/2),
+g_ptr,h = g_coh,h * (4 + log_phi 4).
+```
+
+These are existing constructed source identities, not new price choices.
+Each gain multiplies geometry and matter together, preserving the original
+ratio `b_J,h/a_J,h=lambda_-`. The known terminal contribution need not be
+small and must not be confused with the uncomputed upstream remainder.
+
+For the ACTUAL selected complete price define
+`R_rest,h = D S_full,h - g_h DJ2`, retaining every extra Info/work,
+preparation, clock, code and reference derivative. If all its non-normal
+ambient and independent internal rows vanish on the SAME admitted closed
+field ball, let `r_h` be its normal coframe row. The unchanged primary
+Cartan lift and Dirichlet stencil then give
+
+```text
+v = -(-Delta_h^perp)^(-1) [2h r_h(H0+v)/(g_h a_J,h)],
+||(-Delta_h^perp)^(-1)||_(inf->inf) <= 1/8,
+||v||_inf <= h sup||r_h||_inf/(4 |a_J,h| g_min,h).
+```
+
+Here the transverse square has unit side, `|g_h|>=g_min,h>0`, and the
+continuous right-hand side must map that ball into itself. The old Brouwer
+source-transfer argument then gives an exact finite stationary correction
+without a C2 entropy hypothesis. This supplies a normal-row application,
+not automatic vanishing of the other 41 field rows. A small non-normal
+source still requires the complete coupled system.
+
+The query dimension `N_h` is retained: omitting the `1/N_h` source gain
+would underestimate the physical residual amplification. A zero-source
+least-price readout cannot be inverted; the existing prospective minimum
+obstruction is unchanged. A field-dependent coefficient or information-cut
+choice has its real chain-rule source and is not a free rescaling.
+
+The [previous receipt](sources/d0_primary_normal_source_recovery_2026-10-21/RESULT.json)
+was replayed unchanged. The [new gain-composition receipt](sources/d0_primary_normal_source_recovery_2026-10-21/INTEGRATION_RESULT.json)
+checks exact Golden normalization, the same gravity/matter ratio, the actual
+signal denominator and moving-source/zero-gain negative controls. The full
+native upstream remainder and its support are NOT computed by those tests.
+`GR_closed=false`; exact joint roots on an admitted physical execution,
+prospective selection, generic recovery and raw216 remain open.
+
 ## The source-preserving field minimum is now excluded on this very carrier
 
 The [new exact application](A4D_NATIVE_JOINT_FIELD_MINIMUM_EXCLUSION_2026_10_20.md)
