@@ -187,6 +187,52 @@ for(const [name,a] of [["CP",cp],["random",random],["gradient",gradient],["edge0
  assert(realerr<.002&&magerr<.002,
    "GLOBAL all-cycle Book Fischer vs CAR magnetic gap quadratic law");
 }
+
+// ORIGINAL genuine K(9,11,13) CP cyclic three-zone orientation is an
+// ALL-ORDER complex-analytic identity, not just a coincident Hessian:
+// rho_real(eps)^3-359 rho_real(eps)-2574 cosh(3eps)=0,
+// rho_magnetic(theta)^3-359 rho_magnetic(theta)-2574 cos(3theta)=0.
+// Both are the SAME polynomial under analytic continuation eps=i theta.
+// This is the exact original 33-site finite controlled operator, not
+// a new CP coupling. ALL 327 directions have a locally holomorphic
+// Perron root, but their characteristic polynomial is less simple.
+function cubicroot(trig){
+ let x=rho;
+ for(let j=0;j<20;j++)x-=(x*x*x-359*x-2574*trig)/(3*x*x-359);
+ return x;
+}
+let maxCPFiniteGap=0, maxCPBook=0;
+for(const theta of [.07,.13,.21]){
+ const actual=lambdaMag(cp,theta)*rho,
+       exact=cubicroot(Math.cos(3*theta));
+ const err=Math.abs(actual-exact);
+ maxCPFiniteGap=Math.max(maxCPFiniteGap,err);
+ assert(err<1e-11,"original CP ALL ORDER complex analytic 33-char gap");
+ const scalar=lambdaReal(cp,theta),right=cubicroot(Math.cosh(3*theta));
+ maxCPBook=Math.max(maxCPBook,Math.abs(scalar-right));
+ assert(Math.abs(scalar-right)<1e-11,
+   "real Book pressure CP original cubic not exact");
+}
+let maxMixedError=0,mixedResults=[];
+const qXY=Q(cp,random);
+for(const hh of [.016,.009]){
+ const aplus=cp.map((v,i)=>v+random[i]),
+       aminus=cp.map((v,i)=>v-random[i]);
+ const f=(a,v)=>Math.log(lambdaReal(a,v));
+ const hessMix=(f(aplus,hh)-f(aminus,hh)
+                 -f(aminus,-hh)+f(aplus,-hh))/(4*hh*hh);
+ // f(h(a+b)) - f(h(a-b)) - f(-h(a-b)) + f(-h(a+b)):
+ // each is even for anti-symmetric cycle a; divide 4h² -> Q(a,b).
+ const gm=a=>1-lambdaMag(a,hh)**2;
+ const magMix=(gm(aplus)-gm(aminus))/(4*hh*hh);
+ const er=Math.abs(hessMix-qXY),em=Math.abs(magMix-qXY);
+ maxMixedError=Math.max(maxMixedError,er,em);
+ assert(er<.001&&em<.001,
+  "entire all327 Book/quantum multivariate polarization failed");
+ mixedResults.push({h:hh,analyticMixedCycleCovariance:qXY,
+  realBookMixedHessian:hessMix,magneticCycleMixedGap:magMix,
+  errors:[er,em]});
+}
 assert(Q(gradient,gradient)<1e-10,
  "true original Coboundary PRICE must have exactly zero cycle response");
 let maxLaplacianProjector=0;
@@ -210,7 +256,11 @@ console.log(JSON.stringify({
   minimumPositiveCholeskyDiagonal:minChol,
   maxCholeskyDiagonal:maxChol,
   maxOffDiagonal:maxCholOff,
-  fullWeightedProjectorIdempotence:maxLaplacianProjector},
+  fullWeightedProjectorIdempotence:maxLaplacianProjector,
+  exactCPAllOrderRealCubicMaxError:maxCPBook,
+  exactCPAllOrderMagneticCubicMaxError:maxCPFiniteGap,
+  multivariateCrossFisherTests:mixedResults,
+  maxMixedCycleSourceError:maxMixedError},
  uniqueCanonicalLaw:{
   residualCycleCovariance:"Q(a,b)=2 sum_undirected mu_uv [a_uv-chi_u+chi_v][b_uv-chi_u+chi_v]",
   MarkovPoisson:"L_mu chi=div_mu a",
