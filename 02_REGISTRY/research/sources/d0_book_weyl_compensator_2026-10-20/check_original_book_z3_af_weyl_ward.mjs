@@ -180,7 +180,7 @@ must(Math.abs(Wshift*gammaScaled-W*Gamma)<2e-12,
 // native Cost+Info score rather than an arbitrary Weyl gauge field.
 const tSites=[-.12,.17,.32];
 const Ksites=tSites.map((ti,i)=>K.map((row,u)=>row.map((v,j)=>
-   row[j]*Math.exp(((((u+2*j+i)%7)-3)*.037)+(i===0?0:.019*ti))));
+   row[j]*Math.exp(((((u+2*j+i)%7)-3)*.037)+.019*ti)));
 const dSites=Ksites.map((_,i)=>K.map((row,u)=>row.map((val,v)=>
    part(u)===part(v)?0:(((u*u+3*v+5*i)%13)-6)/17));
 function closed3Source(Ka,ds){
