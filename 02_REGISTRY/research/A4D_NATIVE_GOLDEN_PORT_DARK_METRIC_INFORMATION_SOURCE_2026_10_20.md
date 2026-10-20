@@ -100,3 +100,60 @@ This is not a theorem that the full Book03 physical action has chosen w=q: it ha
 - Independent local source files from the preceding research session were executed and PASS. These two repository checkers are in the same PR and their build must be confirmed separately by CI.
 
 Original source owners: A4D_COMPLETE_RECORD_CHANNEL_AND_NATIVE_COST_SOURCE, A4D_NATIVE_BRANCH_INFORMATION_COCYCLE, a4d_star_density_variation_pressure_check.py, A4D_ORIGINAL_FULL128_COMMON_METRIC10_LINK24_JONES_TOMOGRAPHY_2026_10_20.md. No separate PR, BOOK edit, CORE promotion, physical neutrino claim or GR closure.
+
+
+## 7. NEW SAME-CARRIER ACTION-SOURCE DISCRIMINATOR: metric tomography via THREE histories is strictly insufficient to generate the literal Palatini mixed source
+
+This stronger theorem distinguishes **RECONSTRUCTION OF FIELDS** from **SELECTION OF THEIR DYNAMICS**, using ONLY the original 3×24 real same-field first link derivative, the original 3×24 literal STAR cell source, and the SAME three genuine positive full128 outcomes. The rank check is now integrated into the ALREADY owned actual native two-round 40-column checker:
+
+  sources/d0_native_joint_34_2026-10-20/check_native_full128_jones_metric10_link24_modular.py
+
+so there is no new guessed historical derivative, no truncated detector, and no new PR. The true all40 first-order Kraus Ward is still checked in that same program.
+
+### 7.1. Necessary mixed-Hessian range condition for ANY score of only the three q's
+
+Let x∈R³ be the above strongly-screened REAL metric tangent and y∈R²⁴ the existing four-link real proper-Lorentz tangent, both at the flat originally selected geometry. Write the strictly positive REAL original two-round record chart q(x,y)=(q_0,17,q_0,27,q_0,59). Let A=D_x q|0 be its native 3×3 metric Jacobian and B=D_y q|0 its native 3×24 link Jacobian. Section3 proves det A !=0 (since A=diag(q0) J and det J !=0).
+
+Suppose a proposed PHYSICAL score S(x,y)=C(q(x,y)) depends ONLY on these THREE outcomes, with C a C² real function in a neighborhood of q0. The OLD literal Palatini cell has zero coframe first derivative at identity links because P_S=I and R(P_S)=0 for EVERY coframe. To reproduce that flat metric Euler under this S, the full 3-vector condition D_x S|0=A^T ∇C(q0)=0 forces
+
+  ∇C(q0)=0.                                                 (7.1)
+
+Thus even when C is highly nonlinear and has an arbitrary symmetric Hessian H=Hess C(q0), the mixed metric×link Hessian is REQUIRED to have the form
+
+  D_x D_y S|0=A^T H B.                                     (7.2)
+
+Every row of this 3×24 source must therefore lie in rowspace(B). Its MAXIMAL source rowspace is bounded by B, regardless of the values chosen for H.
+
+### 7.2. EXACT incompatible rowspaces on the literal original full128 and G2/STAR carriers
+
+Take the actual original non-postselected history link derivatives B from the existing native all40 checker, and take the 3×24 REAL part of the old original Fourier-phase G2/STAR mixed finite CELL-SYMBOL, Mstar, evaluated on exactly the SAME x_j strong-screen basis and ordered original six proper Lorentz generator coordinates per link. Both have real rank3, but the stacked original-carrier 6×24 matrix has rank SIX:
+
+  rank(B)=3,
+  rank(Re Mstar)=3,
+  rank([B; Re Mstar])=6.                                 (7.3)
+
+This was independently checked against all16+24 original Walsh/Julia/Jones source derivatives (not merely a hand-coded B). More sharply, the SAME six columns corresponding to ALL six proper-Lorentz generators of the FIRST original link already form a nonzero 6×6 determinant in exact admissible modular reductions:
+
+| characteristic q | det of 6×6 [B ; Re Mstar] on link0 |
+| 101 | 45 |
+| 1009 | 302 |
+| 4001 | 2509 |
+
+The primes admit the exact original Golden a-root and L4 Fourier i-root, so the nonzero determinants are characteristic-zero NONVANISHING certificates of the indicated algebraic matrix. Re Mstar is independently reconstructed from unchanged original epsilon_S, six-face G2, STAR_MAP and coframe/plaquette jets; its complete 3×24 integer rows are asserted in the separate analytic screen checker and consumed by the true native all40 checker. Both OLD 34-history and 37-history pinned determinant tests remain unchanged.
+
+Since rowspace(Re Mstar) is NOT a subspace of rowspace(B), there is **NO** local C² scalar score C(q_0,17,q_0,27,q_0,59) that can satisfy simultaneously:
+  (i) the flat vacuum pure-metric coframe Euler inherited from old Sstar,
+  (ii) the literal real local mixed 3×24 Palatini cell symbol,
+  (iii) score dependence ONLY on these three q's.
+
+This is stronger than saying the three histories merely fail a favorite surprisal choice: it holds for EVERY smooth nonlinear scalar function of their positive probabilities, under the explicitly stated first-source and local cell-comparison hypotheses. No coefficient fitting or arbitrary Hessian helps.
+
+### 7.3. Scope and positive strategy
+
+This finite algebraic SOURCE obstruction is intentionally narrow:
+- It is on ONE original L4 complex Fourier background, with the REAL part of ONE original local G2/STAR cell symbol. It is NOT yet the period-summed full physical Einstein/Palatini Euler comparator with the inverse-frequency real-mode pairing and source Ward. Do not promote (7.3) to a global GR no-go.
+- It concerns THREE selected positive history probabilities only, not the already-certified complete 34-record local metric+Lorentz atlas, not all 16,384 native ordered outcomes, and not full recorded CAR densities.
+- It holds for a single scalar C² function of those three q's with the required flat pure-metric stationarity; an actual Book03 price includes potentially MANY more outcomes, ordered role-algebra memory, moving Info/Cost, Jones/observer/reference/controller/clock sources, and genuine connection/history stationary Schur elimination.
+- A STAR cell source was used only as a target for the above no-go, not inserted into an invented G0 score.
+
+**Positive consequence:** Three histories can reconstruct the 3 hidden metric variables, but need EXTRA independent readout channels for the desired 24-link mixed source. The full original 34-history/two-tick atlas already supplies those additional measured directions. The remaining actual research problem is to derive the compulsory native physical Cost−Info weight and its full first/second variation on THAT existing sufficiently rich 34+ history atlas, then compare with the old FULL PERIOD-SUMMED Sstar including the exact joint Ward and Schur. No additional quantum Hilbert carrier or artificial Choi apparatus is needed for local observability. GR_closed=false.
