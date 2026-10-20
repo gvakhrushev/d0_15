@@ -58,8 +58,8 @@ def test_native_two_round_residual():
     D=Matrix.diag(1,2)
     Delta=D*D
     op=simplify((p*eps)**2*D*Delta*D)
-    assert op == (p*eps)**2 * Delta**2
-    assert all(float(op[i,i].subs(eps:1/512))>0 for i in range(2))
+    assert simplify(op - (p*eps)**2 * Delta**2) == Matrix.zeros(2)
+    assert all(float(op[i,i].subs({eps:1/512}))>0 for i in range(2))
     print("Literal 2-round residual xi=b1*b2 and R2=(p epsilon)^2 "
           "D T*(Delta) D >=0, positive on original flat shell: PASS")
 
