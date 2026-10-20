@@ -140,6 +140,78 @@ The original feedback factor \(F=1-z+zB^m,\ z=2^{-20}\), is also a **complete** 
 
 **Critical action-versus-probability distinction.** The complete event law realizes **the spectral \(H+J\) factors** as recorded complete probabilities/codes on an original flat admissible carrier. It does **NOT** imply Book03 compels this challenge, selects all no-alarm outcomes as a terminal task, or equates \(-\log P(\mathrm{no\ alarm})\) with the full expected Cost−Info over all outcomes. Those are genuine original-G0 physical selection and resource questions. The original full128 port code cost used in (9) is already owned and genuinely paid; the new fair extractor/controller/extra challenges are an explicitly declared possible, not compulsory, native programme.
 
+
+## 3a. TWO actual recycling moments control the entire original full128 curved heat/history transfer
+
+This is a nonperturbative all-h and all-depth theorem on the actual field-dependent FULL original Hilbert space. The adjoint T* of the accepted original trace-preserving Kraus recycling is UNITAL CP. Define its two genuine original operator-moment defects
+\[
+\delta_1=\|T^*(\Delta)-\Delta\|,\quad
+V_\Delta=T^*(\Delta^2)-T^*(\Delta)^2\succeq0,\quad
+\delta_2=\|V_\Delta\|.
+\tag{17}
+\]
+The positivity of the variance is the Kadison inequality for unital CP maps, not a new cost choice.
+
+**Theorem.** Assume the original positive window \(0\le\Delta\le\Lambda I\) and \(B=I-\alpha\Delta\ge0\). For the actual curved no-accepted-event transition \(\mathcal N^*\) from (4), **all** integers m satisfy
+\[
+\boxed{\ \|(\mathcal N^*)^m(I)-B^m\|
+\le \frac{m(m-1)}2\alpha^2\Lambda(\delta_1+\sqrt{\delta_2})
+\le2p^4\Lambda(\delta_1+\sqrt{\delta_2}),\
+m=256h^{-2},\quad m\alpha=2p^2.\ }\tag{18}
+\]
+No flat Fourier shell, commuting D and T, spectral truncation or new fitted coupling is required.
+
+**Proof.** Let \(T^*(Y)=V^\dagger(Y\otimes I)V\), with V an isometry (Stinespring). With \(\Delta_{\rm out}=\Delta\otimes I\), \(A=T^*(\Delta)\) and \(P=VV^\dagger\),
+\[
+V_\Delta=V^\dagger\Delta_{\rm out}(I-P)\Delta_{\rm out}V,\quad
+\|(I-P)\Delta_{\rm out}V\|=\sqrt{\delta_2}.
+\]
+Decomposing \(\Delta_{\rm out}V-V\Delta=
+V(A-\Delta)+(I-P)\Delta_{\rm out}V\) gives norm at most
+\(\delta:=\delta_1+\sqrt{\delta_2}\). Since both
+\(B_{\rm out}=I-\alpha\Delta_{\rm out}\) and B are contractions, telescoping their jth powers gives
+\[
+\|T^*(B^j)-B^j\|
+\le\|B_{\rm out}^jV-VB^j\|\le j\alpha\delta.
+\]
+Apply the exact original recurrence (12), \(\|D\|^2=\|\Delta\|\le\Lambda\) and \(\|\mathcal N^*\|_{\infty\to\infty}=\|\mathcal N^*(I)\|=\|B\|\le1\) to get
+\[
+\|E_{j+1}-B^{j+1}\|
+\le\|E_j-B^j\|+j\alpha^2\Lambda\delta.
+\]
+Summing proves (18). The last coefficient is EXACTLY the original mα=2p², so no scaling assumption was added.
+
+**TWO-MOMENT EXACT CLOSURE.** If \(T^*(\Delta)=\Delta\) and \(T^*(\Delta^2)=\Delta^2\), then both defects vanish, so \((\mathcal N^*)^m(I)=B^m\) for ALL finite m, including curved fields. Equality in Kadison places Δ in the multiplicative domain of T*, automatically giving every higher polynomial moment. A refining physical class with \(\delta_1(h)+\sqrt{\delta_2(h)}\to0\) and bounded Λ thus has a *uniform value-level* full-history-to-heat transfer. To promote to **Euler/source** transfer one must additionally bound the ACTUAL first field derivatives of the intertwining data, D, T and preparation. No such smallness is asserted for the already constructed Einstein-Brinkmann solution family.
+
+**HOSTILE THREE-LEVEL CONTROL.** Take \(\Delta=\operatorname{diag}(0,1,2)\), \(D=\sqrt\Delta\), and the legitimate unital CP measure/reprepare channel
+\(T^*(\operatorname{diag}(a,b,c))=\operatorname{diag}(a,(a+c)/2,c)\), annihilating off-diagonals. It fixes Δ, so the first energy mismatch \(\mathcal G=0\), and the second-round effects exactly agree \(E_2=B^2\). But \(T^*(\Delta^2)-\Delta^2=\operatorname{diag}(0,1,0)\ne0\), and
+\[
+\boxed{E_3-B^3=\alpha^3\operatorname{diag}(0,1,0)\ne0.}\tag{19}
+\]
+Thus checking Γ alone is NOT enough for the whole m-round history. The two-moment theorem is a genuine finite closure of the moment hierarchy, not a misleading two-step Taylor approximation.
+
+## 4a. Uniform finite-cap Golden controller bound on NONCOMMUTING curved full histories
+
+The capped native-Golden acceptance c_M from (6) gives a real CP subunital full-carrier transition \(\mathcal N_M^*=\Phi^*-c_M\Phi_1^*\). The original physical port1 CP effect satisfies
+\(\|\Phi_1^*\|=\|\Phi_1^*(I)\|=p\varepsilon\|\Delta\|\).
+The m-fold telescoping identity for two CP subunital maps (both norm ≤1) gives **even on arbitrary curved noncommuting fields**
+\[
+\boxed{\ 
+\|(\mathcal N_M^*)^m(I)-(\mathcal N^*)^m(I)\|
+\le m(c_M-c)p\varepsilon\Lambda
+=2p^5\Lambda q^M .
+\ }\tag{20}
+\]
+Combine with (18) to obtain the single original-programme noncommutative bridge:
+\[
+\boxed{
+\|(\mathcal N_M^*)^m(I)-B^m\|
+\le 2p^5\Lambda q^M+
+2p^4\Lambda(\delta_1+\sqrt{\delta_2}).
+}\tag{21}
+\]
+This is a TRUE bounded finite native-Golden controller approximation plus only TWO independently computable original quantum-recycling defects, not an extra geometric Hessian census. Its field derivative and native cost remain open precisely where the physically admitted programme has not been established.
+
 ## 4. Controlled FINITE controller; no hidden infinite-time step at each mesh
 
 Let \(M=M_h\) be a capped extraction depth as in (6). On any flat invariant eigen-shell \(0\le\lambda\le\Lambda\), where the original \(B\ge0\), one actual kept-event hazard is
