@@ -325,6 +325,48 @@ Durable owner: [prospective full Q8 task and first K913 Spin triangle](A4D_PROSP
 plus original 127-word Q8 and all8440 2/3 Book×Golden conditional
 source scripts in its references. GR_closed=false.
 
+### Conditional native Spin-selection through FULL Book-Golden Info (20 Oct)
+
+New [exact original 8440 Book×Golden Spin Info source owner](A4D_CONDITIONAL_BOOK_GOLDEN_INFO_Q8_SPIN_SHEET_SOURCE_SELECTOR_2026_10_20.md).
+The TRUE original canonical K(9,11,13) scene admits inverse-respecting
+projective-flat Q8 edge lifts differing in ONE or MANY central sheets
+without changing a SINGLE scalar primitive Cost=1 edge weight or any
+of the 8440 full 2/3-tick Book path probabilities. Yet the complete
+native Golden dark/bright port records distinguish central−
+three-step triangles (bright=4p³) from central+ (bright=0);
+all718 two-tick returns necessarily have + central sign.
+
+There is an instructive TRUE finite conditional selection theorem.
+IF the actually physical negative Info term is the COMPLETE
+conditional native Golden dark/bright Shannon recording code for
+a single 8440-path joint clock, its exact Shannon chain rule adds
+\`6*(p^5/Z)*h_phi(4p³)\` per negative original undirected triangle.
+All 1287 ABC triangles may simultaneously be negative (take every
+undirected central edge sign−); the original rank327 triangle
+incidence and rooted 32-gauge tree prove this is UNIQUE up to
+vertex gauge. Thus the proposed \`Cost−H_completeGolden\`
+has a mathematically unique all-negative Spin gauge minimum
+without fitted numerical coefficients, and native full information
+gain over scalar-only Book law is ~0.3593999264 φ-code units per
+one mathematical joint experiment. The one-edge negative Spin
+sheet gives ~0.0030717942 φ-code units; actual full16880 event
+probabilities and their 8440 scalar marginals were checked.
+
+**CRITICAL G0 firewall:** no actual original Book03 theorem says its
+physically valuable \`Info\` is this Golden Shannon conditional
+entropy. Detector-generated stochastic output NOISE is not by
+itself usable information about an unknown native Spin source.
+Actual verified-source information, prospective mandatory test,
+reference, work, failure, oldRIGHT and CAR matter must be
+derived on a SAME admissible G0 execution. Therefore DO NOT
+promote all-negative central sheets to a physical vacuum, parity
+law, dark matter or Einstein source. The **rigorous takeaway**:
+equal scalar Book Cost histories can have distinct future-verifiable
+noncommutative records, so any true prospective D_min forcing law
+must optimize full signed original Cost−Info/test capability
+rather than just primitive shortest path length or scalar K.
+\`GR_closed=false\`.
+
 ### Route update — nonlinear completion is no longer the open step
 
 For the already-built golden-AF geometric branch, the all-order nonlinear
