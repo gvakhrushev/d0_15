@@ -37,6 +37,23 @@ for L in (65,131,257):
     slopes_exact=np.array([-NU*band,-NU*band,NU*band,NU*band])
     assert np.allclose(slopes,slopes_exact,atol=3e-7,rtol=1e-11)
     assert 2+4*31+2==RANK
+
+    # Four true cutoff slopes split into two orthogonal rank2 minimizers
+    # for +/- smooth coframe perturbation. The full LEFT density has a
+    # gauge-independent trace-NORM jump 4/128=1/32 at fixed RIGHT Gram.
+    plus=np.zeros((4,4))
+    minus=np.zeros((4,4))
+    for j,blk in enumerate((H0,H1)):
+        vals,vecs=np.linalg.eigh(blk)
+        plus[2*j:2*j+2,2*j:2*j+2]=np.outer(vecs[:,0],vecs[:,0])
+        minus[2*j:2*j+2,2*j:2*j+2]=np.outer(vecs[:,1],vecs[:,1])
+    assert np.max(np.abs(plus@minus))<1e-10
+    assert np.max(np.abs(plus+minus-np.eye(4)))<1e-10
+    trace_norm=float(np.linalg.svd((plus-minus)/RANK,compute_uv=False).sum())
+    assert abs(trace_norm-1/32)<1e-12
+    print("PASS LEFT reference128 trace norm jump",trace_norm,
+          "trace-distance",trace_norm/2,
+          "no continuous two-sided lowest-R selector")
     # Two grades have EXACT duplicate singular-value spectra at any
     # nonconstant nu_x; count all original 2L spectral states honestly.
     def min_rayleigh(eps):
