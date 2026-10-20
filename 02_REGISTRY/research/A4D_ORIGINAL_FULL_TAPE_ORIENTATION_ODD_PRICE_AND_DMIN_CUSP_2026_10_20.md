@@ -164,3 +164,19 @@ The concurrently independently sourced [original six-odds based-plaquette theore
 Decisive check for this appendix:
 [sources/d0_native_four_arm_curvature_2026-10-20/check_original_basedface_dualsource.py](sources/d0_native_four_arm_curvature_2026-10-20/check_original_basedface_dualsource.py).
 It uses the original proper \(SO^+(1,3)\) rest generators, the actual four-edge formula, flat gauge coboundary and noncommuting second jet, then applies the already exact M determinants solely through the identity differential of the selected routed primitive edges. This does not compile the new composite effective-link query into the original foundation's paid G0 operations. No scheme fitting and no GR closure.
+
+
+## 6. EXACT SAME-CARRIER SIX-ROW firewall: the three-source witness is NOT the missing full Palatini action
+
+The concurrent original \`A4D_NATIVE_GOLDEN_PORT_DARK_METRIC_INFORMATION_SOURCE_2026_10_20.md\` §7 proves an important SHARP source-space distinction that strengthens the interpretation of this work. At the SAME original native L=4 Jones/Fourier fixture, the three selected full128 probabilities \(q_1,q_2,q_3\) have invertible 3×3 real screened-metric Jacobian \(A=D_xq\) and a 3×24 real link Jacobian \(B=D_yq\). The genuine old original \(G_2/\star\) Palatini LOCAL 3×24 mixed face tensor \(M_\star\) has rank3 too, BUT
+\[
+\boxed{\operatorname{rank}\begin{bmatrix}B\\\Re M_\star\end{bmatrix}=6,}
+\tag{14}
+\]
+certified by exact ORIGINAL modular nonzero 6×6 determinants \(45\bmod101,\ 302\bmod1009,\ 2509\bmod4001\). Consequently, for **ANY** \(C^2\) scalar function \(C(q_1,q_2,q_3)\) whose flat pure metric first Euler source vanishes, invertible A forces \(\nabla_q C=0\). Its mixed Hessian is necessarily \(A^T H_C B\), whose source rows lie in rowspace(B). It CANNOT equal \(M_\star\) on the FULL 24 link directions, even if H_C is chosen after the target geometry.
+
+Our new dual-code odd source depends on only ONE of these probabilities; its 3×3 nonzero restricted determinant does NOT evade this exact 6×24 tensor exclusion. **The curvature-route chain rule (13) removes the independently proven homogeneous-flat Ward defect for a DIFFERENT composite based-face query; it does NOT prove the tensor has become the literal Palatini source on all original links.** Different composition inputs need their own complete matrix-source equality and physical price.
+
+This firewall fixes the consuming direction: use the ALREADY-OWNED ORIGINAL FULL 34-history metric10+link24 register or the ALREADY-OWNED six native 13-effect based-plaquette paired-positive Julia odds as the actual **source-rich** record. Those odds now have exact subdivision-independent local inversion to the full \(SO^+(1,3)\) group and reconstruct original \(\mathcal S_{\star,h}\) as a **mathematical observable**, not as compulsory physical Price. Our dual-output relative code theorem supplies a reusable **orientation-odd/full-Info-invariant source-accounting lemma** for a physically selected comparative value, not an alternative proof of complete 16+24 Einstein–CAR equality.
+
+The decisive next test remains **Book03's same-prefix physical two-terminal Cost−Info and continuation binding** for the TRUE all-six curvature/observer/solder instrument. A local rank three witness, a local inverse atlas, an even price, or a fitted scalar inverse cannot remove that last constitutive hypothesis. \`GR_closed=false\`.
