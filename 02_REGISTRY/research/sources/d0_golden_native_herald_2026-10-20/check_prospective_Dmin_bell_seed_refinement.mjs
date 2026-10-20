@@ -24,21 +24,22 @@
 */
 const p=(Math.sqrt(5)-1)/2,ell=Math.log(1/p),s=2*p**3,r=1-s;
 const fail=(ok,msg)=>{if(!ok)throw Error("FAIL "+msg)};
-function ready(K){return (1-r**K)**6}
+function ready(K){return Math.exp(6*Math.log1p(-(r**K)));}
+function failReady(K){return -Math.expm1(6*Math.log1p(-(r**K)));}
 function kOptimal(L){let delta=L**(-7);return Math.ceil(
- Math.log(1-(1-delta)**(1/6))/Math.log(r));}
+ Math.log(-Math.expm1(Math.log1p(-delta)/6))/Math.log(r));}
 const rows=[];
 for(const L of [4,8,16,32,64,128]){
- const K=kOptimal(L),target=L**(-7),B=ready(K);
- fail(K>=1&&1-B<=target+1e-14,"prospective exact Dmin Bell-prep task not met");
- fail(K===1||1-ready(K-1)>target-1e-14,
+ const K=kOptimal(L),target=L**(-7),B=ready(K),qFail=failReady(K);
+ fail(K>=1&&qFail<=target+1e-15,"prospective exact Dmin Bell-prep task not met");
+ fail(K===1||failReady(K-1)>target-1e-15,
  "prospective shorter K already meets native source task");
- const sourceError=6*L**6*(1-B);
+ const sourceError=6*L**6*qFail;
  const usedG=12*(1-r**K)/(1-r)+12;
  const usedCNOT=4*6*(1-r**K)/(1-r)+24;
  fail(sourceError<=6/L+1e-11&&
    usedG<=6/p**3+12+1e-10,"native work not bounded/refining");
- rows.push({L,K,ready:B,notReady:1-B,
+ rows.push({L,K,ready:B,notReady:qFail,
   sourceScaledAllOriginalFacesErrorUpperBound:sourceError,
   expectedUsedGoldenGates:usedG,expectedUsedCNOTs:usedCNOT,
   maximumGoldenGateCalls:12*K+12,
