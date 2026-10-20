@@ -1,0 +1,343 @@
+{
+  "status": "PASS",
+  "date": "2026-10-20",
+  "main_base": "257fd52fe37889be3e020b3bc1a002330ae67539",
+  "existing_research_pr": "https://github.com/gvakhrushev/d0_15/pull/334",
+  "source_publication_commit": "1bf2a74b1c97db7e77ba1a0b6b1ce38fe15b577e",
+  "source_publication_tree": "dde349e968c49fd0546f496aab9715f6b8532a40",
+  "source_local_scientific_commit": "00ba40744b377c30eb2c03d03bb2106fc121ff02",
+  "preserved_native_through": "fdd7867c92f0149b96629335aadfea74dd343790",
+  "published_exact_input_tree_alias": "110546f4d895160a23e49c8017b51f5e78362681",
+  "copied_scientific_file_count": 43,
+  "copied_files": [
+    {
+      "path": "02_REGISTRY/research/A4D_CAUSAL_BOOK_SOURCE_TO_EXACT_GR_SYNTHESIS_2026_10_20.md",
+      "source_git_blob": "cb81a8feba55b8d9f767eff55e4a76113d3b42a4",
+      "source_sha256": "3389dcd4c171e5752098bf28c1d1962adff6bb21244a6b0e6b6fbcb2d0264a5b",
+      "destination_sha256": "3389dcd4c171e5752098bf28c1d1962adff6bb21244a6b0e6b6fbcb2d0264a5b",
+      "bytes": 16258
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_gr_completion_synthesis_check.py",
+      "source_git_blob": "3cb3892a6bbf3d185795577e964b5c4d5ba0cfa5",
+      "source_sha256": "8eefe3ce5116b2b84256118457e0b7eedfb90887f1e998d75ba1209d0903772d",
+      "destination_sha256": "8eefe3ce5116b2b84256118457e0b7eedfb90887f1e998d75ba1209d0903772d",
+      "bytes": 14842
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/COMPANION_REVIEW.md",
+      "source_git_blob": "fe865481ef2034b46d6103fa89b2103fa1f76b31",
+      "source_sha256": "3e7d734e6dacab82485f756005ad3850f9c44e0ad81a440047bfecd2b21ee31d",
+      "destination_sha256": "3e7d734e6dacab82485f756005ad3850f9c44e0ad81a440047bfecd2b21ee31d",
+      "bytes": 3728
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/FINAL_REPLAY.json",
+      "source_git_blob": "7abd7f08fad20bd2ad9bae7ad4da67ec2c84eca9",
+      "source_sha256": "b1e154cfaa88d96d7384b392de1db2f1f1bc6d56217fdc17da6653ca2141e523",
+      "destination_sha256": "b1e154cfaa88d96d7384b392de1db2f1f1bc6d56217fdc17da6653ca2141e523",
+      "bytes": 2211
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/INPUT_COMMIT_ALIAS.json",
+      "source_git_blob": "164798fb955d373a4c9abcaa24ebba2f77612c89",
+      "source_sha256": "60830938e1e1f3e9b6f57be110ca803bc68ffec726f0285d0e4fbdb9d0b47bed",
+      "destination_sha256": "60830938e1e1f3e9b6f57be110ca803bc68ffec726f0285d0e4fbdb9d0b47bed",
+      "bytes": 662
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/INPUT_SNAPSHOTS.json",
+      "source_git_blob": "0e618b010b8c2c410723e32d8ea184148a6b44d0",
+      "source_sha256": "208f577fccbc68bfbda78d453888394b0a4b128abefd39580dba1ed72622abca",
+      "destination_sha256": "208f577fccbc68bfbda78d453888394b0a4b128abefd39580dba1ed72622abca",
+      "bytes": 5696
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/INTEGRATION_REVIEW.md",
+      "source_git_blob": "3fc41e0795818a25728e6af910b55ad131deae7a",
+      "source_sha256": "be25de9d37c1b68c34bdfaf77179a48271b6f21dfd316dac1c710842c41d7d00",
+      "destination_sha256": "be25de9d37c1b68c34bdfaf77179a48271b6f21dfd316dac1c710842c41d7d00",
+      "bytes": 17305
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/README.md",
+      "source_git_blob": "fdc9f24501a77a8ce090d87511a7d5ba2cc41ea1",
+      "source_sha256": "1a336685b9e4cd9a5e9a1304418431e486b471c64182748fa0c6529e2d4a663e",
+      "destination_sha256": "1a336685b9e4cd9a5e9a1304418431e486b471c64182748fa0c6529e2d4a663e",
+      "bytes": 3628
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/REFERENCE_COMPOSITION_REVIEW.md",
+      "source_git_blob": "ae8a0bc49580ff7ca5c6dfa80e2da6e1bc8e42a0",
+      "source_sha256": "8066afa814454731b460e0b92be4902c69b3b692336a7ad216dca876cd3b81e9",
+      "destination_sha256": "8066afa814454731b460e0b92be4902c69b3b692336a7ad216dca876cd3b81e9",
+      "bytes": 6122
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/BOOK_SOURCE_BINDING.md",
+      "source_git_blob": "0fc40d94bf6db0d0be49c783c902274821af5b92",
+      "source_sha256": "2b26bf2f4c1b128731ccf14a17437ba654c046e82b5e42e55113a8b6053494ea",
+      "destination_sha256": "2b26bf2f4c1b128731ccf14a17437ba654c046e82b5e42e55113a8b6053494ea",
+      "bytes": 21593
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/INPUTS.json",
+      "source_git_blob": "b950fa3f7c90abecbe470110438c8f59e917e31c",
+      "source_sha256": "f9ab82645f61ba354628debb36d7eacbc58a9a1731ccce98e5d68d8cc5b5f607",
+      "destination_sha256": "f9ab82645f61ba354628debb36d7eacbc58a9a1731ccce98e5d68d8cc5b5f607",
+      "bytes": 1387
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/RESULT.json",
+      "source_git_blob": "276698470e5e4dedf72da64750be2dc6e0a18c75",
+      "source_sha256": "0db66abfabb8cd5aeae03c14c23a0cb5184816233b0f57c0ba842eb1aaeb7ed2",
+      "destination_sha256": "0db66abfabb8cd5aeae03c14c23a0cb5184816233b0f57c0ba842eb1aaeb7ed2",
+      "bytes": 5183
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/check_book_source_binding.py",
+      "source_git_blob": "86fb15dd28023c3d45c6867e119c92b188feb398",
+      "source_sha256": "a6a34c63b1d2f3259be8bb5572f78d86a4034dd6c99a57544d2fa0f004f4e665",
+      "destination_sha256": "a6a34c63b1d2f3259be8bb5572f78d86a4034dd6c99a57544d2fa0f004f4e665",
+      "bytes": 11311
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/causal_boundary_completion.md",
+      "source_git_blob": "b378006fa38617ab7ec8e1cda4431336a0388a68",
+      "source_sha256": "46c08c8295401cb42531ec3b974709638ec5f913dbd1b64c0210efa3b99953ba",
+      "destination_sha256": "46c08c8295401cb42531ec3b974709638ec5f913dbd1b64c0210efa3b99953ba",
+      "bytes": 9424
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/execution/INPUTS.json",
+      "source_git_blob": "561f175140b888d53913a5f73183c8d0731d1e97",
+      "source_sha256": "7b4317c4760d6811de8dc0a9e50e9fa32a221dc377e6acd80a68322877a931e1",
+      "destination_sha256": "7b4317c4760d6811de8dc0a9e50e9fa32a221dc377e6acd80a68322877a931e1",
+      "bytes": 1695
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/execution/RESULT.json",
+      "source_git_blob": "af5d8375545a5e6882a0672dedad3ad9e87b30f8",
+      "source_sha256": "7c83ec07af7fe21921dc7bf635516aba7a0157e8a38c1ca648a6300bd8b851eb",
+      "destination_sha256": "7c83ec07af7fe21921dc7bf635516aba7a0157e8a38c1ca648a6300bd8b851eb",
+      "bytes": 3961
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/execution/check_return_cost_and_stopping.py",
+      "source_git_blob": "862f5aa57af65fbf61e17b2adf25f46e76536f2b",
+      "source_sha256": "b06b10c069f4a713dac1888a543ebe5b90a1427d3401f4ee86994c7922561dfb",
+      "destination_sha256": "b06b10c069f4a713dac1888a543ebe5b90a1427d3401f4ee86994c7922561dfb",
+      "bytes": 10995
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/execution/return_cost_and_stopping.md",
+      "source_git_blob": "25c27847c8bff56f6d0c92af277db1bcea3789ee",
+      "source_sha256": "29e30b35170c8ab1d4d324dd0f7aaa6e588cb1a32f023ad529947dc8639b9faa",
+      "destination_sha256": "29e30b35170c8ab1d4d324dd0f7aaa6e588cb1a32f023ad529947dc8639b9faa",
+      "bytes": 19743
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/geometric_source/INPUTS.json",
+      "source_git_blob": "e1b5b0f7b137d3708159146e2f84bb3fe1fbba7c",
+      "source_sha256": "1ef335c5b048bf01102f3fda9e43bbb2521d97be1567ea49f8bf3c8e965ea166",
+      "destination_sha256": "1ef335c5b048bf01102f3fda9e43bbb2521d97be1567ea49f8bf3c8e965ea166",
+      "bytes": 1337
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/geometric_source/RESULT.json",
+      "source_git_blob": "3818143491b14f5649d5a6e4dc32be43edafee57",
+      "source_sha256": "b762e1e4892bdd7a1895dac18ade765aa6e8c98111a4e5f43c47fc26865646a7",
+      "destination_sha256": "b762e1e4892bdd7a1895dac18ade765aa6e8c98111a4e5f43c47fc26865646a7",
+      "bytes": 2247
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/geometric_source/VALIDATION.json",
+      "source_git_blob": "d9f95a6e75c28c9451fdb2f4c0071980c8b376f2",
+      "source_sha256": "a5eec36b0b3cb0219e183765efff42e9e42166c078cbe1419e6c7e8092ccc9f5",
+      "destination_sha256": "a5eec36b0b3cb0219e183765efff42e9e42166c078cbe1419e6c7e8092ccc9f5",
+      "bytes": 632
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/geometric_source/check_null_first_source.py",
+      "source_git_blob": "f82d47180f990be98f59883faee1af3c0edfdb38",
+      "source_sha256": "2d35486c26415d2b667ebc61acded6d0889049d3d481f0c37f36f3601b478ef4",
+      "destination_sha256": "2d35486c26415d2b667ebc61acded6d0889049d3d481f0c37f36f3601b478ef4",
+      "bytes": 12115
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/geometric_source/inputs/arbitrary_brinkmann_all40.md",
+      "source_git_blob": "050ee972efa0f2ae37206b2ef9e3b4122dbac204",
+      "source_sha256": "8dbca8ff9a4567a2baf216357b5d3ffa2d217281ced4e5d0e535257db2f5e83e",
+      "destination_sha256": "8dbca8ff9a4567a2baf216357b5d3ffa2d217281ced4e5d0e535257db2f5e83e",
+      "bytes": 25208
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/geometric_source/inputs/coframe_oracle_transport.md",
+      "source_git_blob": "bde56967e654d95efd000ff585ab246f284b1e08",
+      "source_sha256": "28a2d3db0545f1bd0dd96e9394a8f350b403db75348df590d75d035db1cc8c65",
+      "destination_sha256": "28a2d3db0545f1bd0dd96e9394a8f350b403db75348df590d75d035db1cc8c65",
+      "bytes": 12409
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/geometric_source/inputs/literal_null_all40.py",
+      "source_git_blob": "e502807955321465903d7ab1a248e0456ac69f60",
+      "source_sha256": "d3d0b1bc92c25a0963a4ba851d9d587d2191f0bbd8cd8cd0ab58b664852b7026",
+      "destination_sha256": "d3d0b1bc92c25a0963a4ba851d9d587d2191f0bbd8cd8cd0ab58b664852b7026",
+      "bytes": 4795
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/geometric_source/inputs/native_full128_area.py",
+      "source_git_blob": "85a2f6a5ab2a8f2563182286f7fd8c848fa3b15c",
+      "source_sha256": "371855a3967c08f82974328bfddd1346cf1b2c62d167cba4748b34a0c33e47f8",
+      "destination_sha256": "371855a3967c08f82974328bfddd1346cf1b2c62d167cba4748b34a0c33e47f8",
+      "bytes": 3270
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/geometric_source/inputs/paid_port_history.md",
+      "source_git_blob": "c93f54125d161edc6a3775922c477a3d73db1681",
+      "source_sha256": "ef69c2052237fbe8e916acf16691f9b14b4c1c2465a7837e838db2baeb95449d",
+      "destination_sha256": "ef69c2052237fbe8e916acf16691f9b14b4c1c2465a7837e838db2baeb95449d",
+      "bytes": 11127
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/geometric_source/proof.md",
+      "source_git_blob": "15c7a93949cae297b28f5da0e19ade92e63dfa1f",
+      "source_sha256": "b1e7d9cdd81605e0b7d532ac8a3bfc682e42806367ad5e109324a5812d7d9e50",
+      "destination_sha256": "b1e7d9cdd81605e0b7d532ac8a3bfc682e42806367ad5e109324a5812d7d9e50",
+      "bytes": 23662
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/inputs/01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md",
+      "source_git_blob": "87f3dbd0e5e760d46a577a275aabc16623d3f09e",
+      "source_sha256": "668fc904b0585cc7fd5175babead5225c22051422c9c64e197d7b0d42d225342",
+      "destination_sha256": "668fc904b0585cc7fd5175babead5225c22051422c9c64e197d7b0d42d225342",
+      "bytes": 191652
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/inputs/01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md",
+      "source_git_blob": "ecdd31abb52c94e9f2a157a80c7c49a6f5ac31aa",
+      "source_sha256": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d",
+      "destination_sha256": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d",
+      "bytes": 86193
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/inputs/01_BOOKS/BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md",
+      "source_git_blob": "99721fb50de66688564638f5f2b449a38675d7bd",
+      "source_sha256": "592bbbb1dae9cc599df2eef9cabf117b19f8566d755ad072b77beb04624271d7",
+      "destination_sha256": "592bbbb1dae9cc599df2eef9cabf117b19f8566d755ad072b77beb04624271d7",
+      "bytes": 141578
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/inputs/02_REGISTRY/gr_assembly/sources/d0_double_null_quadratic_cartan_2026-10-19/arbitrary_brinkmann_all40.md",
+      "source_git_blob": "050ee972efa0f2ae37206b2ef9e3b4122dbac204",
+      "source_sha256": "8dbca8ff9a4567a2baf216357b5d3ffa2d217281ced4e5d0e535257db2f5e83e",
+      "destination_sha256": "8dbca8ff9a4567a2baf216357b5d3ffa2d217281ced4e5d0e535257db2f5e83e",
+      "bytes": 25208
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/inputs/02_REGISTRY/research/A4D_COMPLETE_HISTORY_INFORMATION_SCALE.md",
+      "source_git_blob": "7b6cdacf4c923526593be2aa0eb20b3274da0a9c",
+      "source_sha256": "6a14686fcaab0b48b78b8ff4f784d989ea3ead1edf0ee28d48b7c20f76c4a7ed",
+      "destination_sha256": "6a14686fcaab0b48b78b8ff4f784d989ea3ead1edf0ee28d48b7c20f76c4a7ed",
+      "bytes": 12422
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/inputs/02_REGISTRY/research/A4D_COMPLETE_RECORD_CHANNEL_AND_NATIVE_COST_SOURCE.md",
+      "source_git_blob": "df8611c7fa37fa71e883831b3f01f434532d99ce",
+      "source_sha256": "2128009802edff3e111a26961f050320fd878d7412ed93bfad5d5c9e4219db79",
+      "destination_sha256": "2128009802edff3e111a26961f050320fd878d7412ed93bfad5d5c9e4219db79",
+      "bytes": 42834
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/inputs/02_REGISTRY/research/A4D_EXACT_GR_COMMON_CARRIER_HJR_SCALE_SOURCE_GAP_2026_10_20.md",
+      "source_git_blob": "8bd287e415c071c8e69ac0606ea76da85365cac2",
+      "source_sha256": "c5b2f1021e8da573221f4327bacae67934470a368966456bf328b19fc51555fb",
+      "destination_sha256": "c5b2f1021e8da573221f4327bacae67934470a368966456bf328b19fc51555fb",
+      "bytes": 13796
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/inputs/02_REGISTRY/research/A4D_NATIVE_FULL128_PORT_SCORE_SUFFICIENCY_AND_CODE_SOURCE_RECOVERY_2026_10_19.md",
+      "source_git_blob": "506618ec23b71903dd8ba378fe4014f675683dac",
+      "source_sha256": "f64e04fa9f3d27a604463561fa3d8c1c997e55d3c55badd91a6b4198ce0f9f4e",
+      "destination_sha256": "f64e04fa9f3d27a604463561fa3d8c1c997e55d3c55badd91a6b4198ce0f9f4e",
+      "bytes": 10145
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/inputs/02_REGISTRY/research/A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md",
+      "source_git_blob": "2c9e30fc7ae5518aa958d0ee29c08ae071150c69",
+      "source_sha256": "a0a8a0b7389c7a6120ebbe402d111bf55cd2a00730403a00ffceca73548e7915",
+      "destination_sha256": "a0a8a0b7389c7a6120ebbe402d111bf55cd2a00730403a00ffceca73548e7915",
+      "bytes": 28004
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/inputs/02_REGISTRY/research/A4D_PROSPECTIVE_BOOK_FINITE_FUTURE_LAW_Q8_VERIFICATION_2026_10_20.md",
+      "source_git_blob": "de8341a8b33d53bd4b26e044a1560c47c51e2745",
+      "source_sha256": "bd3f1ab51599b0efe17af03e40c59a606200cd1912f801e4bd57e0eb77a6b014",
+      "destination_sha256": "bd3f1ab51599b0efe17af03e40c59a606200cd1912f801e4bd57e0eb77a6b014",
+      "bytes": 26033
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/inputs/02_REGISTRY/research/A4D_RETAINED_HISTORY_READOUT_AND_NORMALIZER.md",
+      "source_git_blob": "efe9023de8f9b06fc69dbafd88eeb71962524fcf",
+      "source_sha256": "98b02b22f8678be211f555c2ec0c1d8ac3d2cc43f7dd50b002b8e1424460407b",
+      "destination_sha256": "98b02b22f8678be211f555c2ec0c1d8ac3d2cc43f7dd50b002b8e1424460407b",
+      "bytes": 12945
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/inputs/02_REGISTRY/research/sources/d0_record_generated_heat_v8_2026-10-14/RESULT.md",
+      "source_git_blob": "e5b08043d3156fb30248a482e3c72342ff13add9",
+      "source_sha256": "f7ea30d997a58fa4e608d4403acae5f5e3d7e5da45116f9a7c3f62be5e99115c",
+      "destination_sha256": "f7ea30d997a58fa4e608d4403acae5f5e3d7e5da45116f9a7c3f62be5e99115c",
+      "bytes": 12522
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/inputs/02_REGISTRY/research/sources/d0_same_history_price_composition_2026-10-20/clock_source_reduction.md",
+      "source_git_blob": "66832efd582d0d826dc77bfa754ac389b0fd0451",
+      "source_sha256": "7ca9575697d5de7c78794bc5d2879f6c2292caadb4f75334d0e1479fd1287069",
+      "destination_sha256": "7ca9575697d5de7c78794bc5d2879f6c2292caadb4f75334d0e1479fd1287069",
+      "bytes": 12944
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/inputs/02_REGISTRY/research/sources/d0_same_history_price_composition_2026-10-20/paid_port_history.md",
+      "source_git_blob": "c93f54125d161edc6a3775922c477a3d73db1681",
+      "source_sha256": "ef69c2052237fbe8e916acf16691f9b14b4c1c2465a7837e838db2baeb95449d",
+      "destination_sha256": "ef69c2052237fbe8e916acf16691f9b14b4c1c2465a7837e838db2baeb95449d",
+      "bytes": 11127
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/inputs/02_REGISTRY/research/sources/d0_same_history_price_composition_2026-10-20/prepared_price_feedback.md",
+      "source_git_blob": "e2c5673ffab73b997b9e5dcdebb1ed916fffcff3",
+      "source_sha256": "73bf64d8c05b2624e092d851cab5f11019fd886c74d6b332ed97f4d4f4d4d434",
+      "destination_sha256": "73bf64d8c05b2624e092d851cab5f11019fd886c74d6b332ed97f4d4f4d4d434",
+      "bytes": 11925
+    }
+  ],
+  "entrypoint_insertion_lines": {
+    "AGENTS.md": 10,
+    "README.md": 2,
+    "02_REGISTRY/research/D0_GR_PRIMARY_POSITIVE_CASE.md": 12,
+    "02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md": 28
+  },
+  "entrypoint_sha256": {
+    "AGENTS.md": "28eec03c33416c8e3131cfeff12f305915b0f3f04e98357e75a7c9e7bff55e78",
+    "README.md": "f7836bc0f87e0bc977a79892ddcbdf596f904a54bcec9c07f182519332c79bf3",
+    "02_REGISTRY/research/D0_GR_PRIMARY_POSITIVE_CASE.md": "726766cfc197bfeb7b008e3becdacc35174382a1fcc8a78f0a80590079aacf25",
+    "02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md": "04bba0c0eea75aaf8b85e90395f085ce987a228b63af99391bca6a58f2d303ba"
+  },
+  "main_intake_review": {
+    "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/MAIN_INTEGRATION_REVIEW.md",
+    "sha256": "ad245157bb7ef6df34fe049b2467bcd2a0ec538c28f9b16399b13d97d89c8658"
+  },
+  "source_only_review_scope": "Concurrent canonical reference-cocycle note remains in native #334; copied synthesis section 7 retains the exact qualification. Concurrent full128 information and later native results are preserved, not imported or independently accepted by this intake.",
+  "validation": {
+    "copied_bytes_match_both_scientific_commit_and_published_native": true,
+    "frozen_source_replay": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/FINAL_REPLAY.json",
+    "intake_math_replay": false,
+    "ready_ci_required_before_merge": true,
+    "fresh_lean_build": false
+  },
+  "GR_closed": false,
+  "full_physical_price_proved": false,
+  "scientific_claim_or_assembly_promotion": false,
+  "parent_research_retired": false
+}

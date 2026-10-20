@@ -1,0 +1,11 @@
+{
+  "local_input_commit": "acfe3e19ecda5f2dbc678ec52e2f7cd0f3e639a1",
+  "published_equivalent_commit": "110546f4d895160a23e49c8017b51f5e78362681",
+  "exact_common_tree": "67ee5c5aae97e789d86f69b7aa53a6ec6de5cef9",
+  "parents": [
+    "25bea5bddd54988e32363c1968cdec8f6e4b7801",
+    "257fd52fe37889be3e020b3bc1a002330ae67539"
+  ],
+  "reason": "The local merged input commit and its API-published equivalent have identical complete Git trees; commit metadata differ. Published proof/checker receipts retain their original local input ID. Immutable input blobs and SHA256 snapshots bind the actual scientific content.",
+  "tree_verified_against_local_input": true
+}

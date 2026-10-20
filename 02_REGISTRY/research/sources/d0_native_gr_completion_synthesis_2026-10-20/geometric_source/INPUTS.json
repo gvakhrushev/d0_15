@@ -1,0 +1,25 @@
+{
+  "source_commit": "acfe3e19ecda5f2dbc678ec52e2f7cd0f3e639a1",
+  "inputs": {
+    "literal_null_all40.py": {
+      "original_path": "02_REGISTRY/research/sources/d0_arbitrary_brinkmann_all40_2026-10-19/check_all40_arbitrary_brinkmann.py",
+      "sha256": "d3d0b1bc92c25a0963a4ba851d9d587d2191f0bbd8cd8cd0ab58b664852b7026"
+    },
+    "coframe_oracle_transport.md": {
+      "original_path": "02_REGISTRY/research/sources/d0_native_price_source_synthesis_2026-10-20/coframe_oracle_transport.md",
+      "sha256": "28a2d3db0545f1bd0dd96e9394a8f350b403db75348df590d75d035db1cc8c65"
+    },
+    "native_full128_area.py": {
+      "original_path": "02_REGISTRY/research/sources/d0_native_full128_area_2026-10-20/check_complete_128x128_native_area.py",
+      "sha256": "371855a3967c08f82974328bfddd1346cf1b2c62d167cba4748b34a0c33e47f8"
+    },
+    "paid_port_history.md": {
+      "original_path": "02_REGISTRY/research/sources/d0_same_history_price_composition_2026-10-20/paid_port_history.md",
+      "sha256": "ef69c2052237fbe8e916acf16691f9b14b4c1c2465a7837e838db2baeb95449d"
+    },
+    "arbitrary_brinkmann_all40.md": {
+      "original_path": "02_REGISTRY/gr_assembly/sources/d0_double_null_quadratic_cartan_2026-10-19/arbitrary_brinkmann_all40.md",
+      "sha256": "8dbca8ff9a4567a2baf216357b5d3ffa2d217281ced4e5d0e535257db2f5e83e"
+    }
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "status": "PASS",
+  "checks": 34,
+  "seconds": 3.4,
+  "input_commit": "acfe3e19ecda5f2dbc678ec52e2f7cd0f3e639a1",
+  "scope": "Exact original full128 CAR16 two-round return/cost composition on the physical coframe scale family; all 128^2 histories via full transfer. Generic all-n and all-L conclusions are analytic proof, not finite extrapolation.",
+  "fixture": {
+    "h": "1/4",
+    "rho": "144/25",
+    "mu": "2",
+    "lambda": "288/25",
+    "d_lambda": "2",
+    "n": 2,
+    "oldRIGHT": "Generic unchanged identity factor, dimension128 retained analytically; no full-site replay"
+  },
+  "source_sha256": {
+    "02_REGISTRY/research/A4D_COMPLETE_RECORD_CHANNEL_AND_NATIVE_COST_SOURCE.md": "2128009802edff3e111a26961f050320fd878d7412ed93bfad5d5c9e4219db79",
+    "02_REGISTRY/research/A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md": "a0a8a0b7389c7a6120ebbe402d111bf55cd2a00730403a00ffceca73548e7915",
+    "02_REGISTRY/research/A4D_EXACT_GR_COMMON_CARRIER_HJR_SCALE_SOURCE_GAP_2026_10_20.md": "c5b2f1021e8da573221f4327bacae67934470a368966456bf328b19fc51555fb",
+    "02_REGISTRY/research/sources/d0_same_history_price_composition_2026-10-20/paid_port_history.md": "ef69c2052237fbe8e916acf16691f9b14b4c1c2465a7837e838db2baeb95449d"
+  },
+  "proof_sha256": "29e30b35170c8ab1d4d324dd0f7aaa6e588cb1a32f023ad529947dc8639b9faa",
+  "checker_sha256": "b06b10c069f4a713dac1888a543ebe5b90a1427d3401f4ee86994c7922561dfb",
+  "exact_marked_return": {
+    "unmarked": {
+      "F2_Qp": [
+        "144990922707/6553600000000",
+        "-143760707019/6553600000000"
+      ],
+      "dF2_Qp": [
+        "3959694523/1048576000000",
+        "-3891735091/1048576000000"
+      ]
+    },
+    "half_mark": {
+      "F2_Qp": [
+        "219755722707/26214400000000",
+        "-292875587019/26214400000000"
+      ],
+      "dF2_Qp": [
+        "6065294523/4194304000000",
+        "-8079895091/4194304000000"
+      ]
+    },
+    "golden_mark": {
+      "F2_Qp": [
+        "771109894863/3276800000000",
+        "-493775939349/1310720000000"
+      ],
+      "dF2_Qp": [
+        "22360274807/524288000000",
+        "-14325336941/209715200000"
+      ]
+    }
+  },
+  "labels": [
+    "input_sha256:02_REGISTRY/research/A4D_COMPLETE_RECORD_CHANNEL_AND_NATIVE_COST_SOURCE.md",
+    "input_sha256:02_REGISTRY/research/A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md",
+    "input_sha256:02_REGISTRY/research/A4D_EXACT_GR_COMMON_CARRIER_HJR_SCALE_SOURCE_GAP_2026_10_20.md",
+    "input_sha256:02_REGISTRY/research/sources/d0_same_history_price_composition_2026-10-20/paid_port_history.md",
+    "all64_original_label_coefficient_rows",
+    "row_completeness",
+    "row_completeness_scale_jet",
+    "same_family_Delta_equals_rho_mu_I16",
+    "same_family_dDelta_equals_mu_I16",
+    "all128_original_Kraus_rows",
+    "full128_Kraus_completeness",
+    "full128_Kraus_scale_jet_completeness",
+    "literal_blank_port0_B",
+    "literal_blank_port0_scale_jet",
+    "unmarked:full128_squared_cost_partition",
+    "unmarked:same_return_cost_formula",
+    "unmarked:genuine_scale_source",
+    "half_mark:full128_squared_cost_partition",
+    "half_mark:same_return_cost_formula",
+    "half_mark:genuine_scale_source",
+    "half_mark:reject_scalar_clock_substitution",
+    "golden_mark:full128_squared_cost_partition",
+    "golden_mark:same_return_cost_formula",
+    "golden_mark:genuine_scale_source",
+    "golden_mark:reject_scalar_clock_substitution",
+    "complete_two_round_known_cost",
+    "complete_two_round_known_cost_scale_source",
+    "all_exit_histories_cost_insertion",
+    "all_exit_histories_cost_mixed_source",
+    "actual_port1_scalar_effect",
+    "reject_port1_as_complete_nonblank_cut",
+    "reject_wrong_clock_n_equals_m",
+    "finite_horizon_full_first_event_partition",
+    "capped_first_event_actual_cost_including_final_port"
+  ],
+  "not_proved": [
+    "native physical admission",
+    "Book amplitude/Info binding",
+    "complete physical price",
+    "D_min task or clock selection",
+    "GR closure"
+  ]
+}

@@ -8,6 +8,8 @@
 
 The [same-history price/source intake](02_REGISTRY/research/D0_SAME_HISTORY_PRICE_SOURCE_MAIN_INTAKE_2026_10_20.md) now connects the original complete tape to its paid-port partition, clock sources, retained feedback correction and specified connection response. These native calculations feed the existing positive family's full-source identity; complete Book03 Cost−Info, physical admission and GR closure remain open in [#334](https://github.com/gvakhrushev/d0_15/pull/334).
 
+The [whole-family CAR/Book/causal synthesis](02_REGISTRY/research/A4D_CAUSAL_BOOK_SOURCE_TO_EXACT_GR_SYNTHESIS_2026_10_20.md) now supplies the exact geometric first source on all 16+24 directions through a complete Golden reporting component on the entire spatial carrier. It resolves that component's input-preparation source and the generated execution-state equations, with its paid repetition count retained. The next application computes the **full** absolute Book Info/work effect and primitive admission on this same programme; the known reporting Cost is not substituted for that full price. The ordinary targeted certificate and independent analytical review accompany the proof.
+
 ## Current objective: close the D0 foundation through general relativity
 
 D0 starts from the **necessary operational structure of verifiability**:
