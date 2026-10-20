@@ -139,4 +139,168 @@ theorem original_roundtrip_no_endpoint_only_paid_action
   linarith
 
 
+
+/-! ## Research frontier: PROSPECTIVE MDL SELECTION, not after-the-fact compression
+
+The original Tome I definition of D_min compares equivalent DESCRIPTIONS;
+the existing ActionProtocol assigns a lower bound to actual transition
+COST. Neither definition alone states that the physical world SELECTS
+its next feasible execution by minimizing cumulative action. The
+following explicit separate DYNAMICAL SELECTION PREMISE formalizes the
+strong prospective-MDL hypothesis without smuggling it into M1.
+
+A prospective execution includes the COMPLETE state (including all
+currently relevant retained archive, clock, momentum and preparation),
+allowed actions, a goal/boundary predicate and full transition costs.
+If the selected whole trajectory really minimizes the given FULL price
+among all physically allowed alternatives with the SAME initial state
+and SAME goal, it cannot contain an avoidable positive-cost detour
+that returns to the SAME COMPLETE state. No retroactive rewriting is
+involved. Uniqueness under ties, actual Book H+J+R selection and GR
+do not follow from this structural principle-of-optimality theorem.
+-/
+
+/-- Physical-type finite state machine with ORIGINAL enabled actions,
+full state-dependent execution price and NO extrinsic future oracle. -/
+structure ProspectiveDynamics where
+  State : Type
+  Action : Type
+  step : State → Action → State
+  allowed : State → Action → Prop
+  price : State → Action → ℝ
+
+/-- Execute a list of original admitted operations chronologically. -/
+def ProspectiveDynamics.run (D : ProspectiveDynamics) (s : D.State) :
+    List D.Action → D.State
+  | [] => s
+  | a :: tail => D.run (D.step s a) tail
+
+/-- Accumulate the FULL actual state-dependent step price. -/
+def ProspectiveDynamics.totalPrice (D : ProspectiveDynamics) (s : D.State) :
+    List D.Action → ℝ
+  | [] => 0
+  | a :: tail => D.price s a + D.totalPrice (D.step s a) tail
+
+/-- Admissibility is evaluated at EVERY actual intermediate state,
+not inferred from a mere shared endpoint. -/
+def ProspectiveDynamics.executable (D : ProspectiveDynamics) (s : D.State) :
+    List D.Action → Prop
+  | [] => True
+  | a :: tail => D.allowed s a ∧ D.executable (D.step s a) tail
+
+theorem ProspectiveDynamics.run_append (D : ProspectiveDynamics)
+    (s : D.State) (head tail : List D.Action) :
+    D.run s (head ++ tail) = D.run (D.run s head) tail := by
+  induction head generalizing s with
+  | nil => rfl
+  | cons a rest ih =>
+      exact ih (D.step s a)
+
+theorem ProspectiveDynamics.totalPrice_append (D : ProspectiveDynamics)
+    (s : D.State) (head tail : List D.Action) :
+    D.totalPrice s (head ++ tail) =
+      D.totalPrice s head + D.totalPrice (D.run s head) tail := by
+  induction head generalizing s with
+  | nil => simp [ProspectiveDynamics.totalPrice, ProspectiveDynamics.run]
+  | cons a rest ih =>
+      simp only [List.cons_append, ProspectiveDynamics.totalPrice,
+        ProspectiveDynamics.run]
+      rw [ih]
+      ring
+
+theorem ProspectiveDynamics.executable_append (D : ProspectiveDynamics)
+    (s : D.State) (head tail : List D.Action) :
+    D.executable s (head ++ tail) ↔
+      D.executable s head ∧ D.executable (D.run s head) tail := by
+  induction head generalizing s with
+  | nil =>
+      simp [ProspectiveDynamics.executable, ProspectiveDynamics.run]
+  | cons a rest ih =>
+      simp only [List.cons_append, ProspectiveDynamics.executable,
+        ProspectiveDynamics.run]
+      rw [ih]
+      tauto
+
+/-- An explicit PROSPECTIVE physical selection rule.
+Its optimality is a PREMISE to be DERIVED from full native M1/Book
+Cost-Info, NOT an already proved theorem of the original D_min definition. -/
+structure ProspectiveExecution (D : ProspectiveDynamics) where
+  initial : D.State
+  goal : D.State → Prop
+  chosen : List D.Action
+  chosen_executable : D.executable initial chosen
+  chosen_goal : goal (D.run initial chosen)
+  optimal : ∀ alternative : List D.Action,
+    D.executable initial alternative →
+    goal (D.run initial alternative) →
+    D.totalPrice initial chosen ≤ D.totalPrice initial alternative
+
+/-- Prospective, not retrospective: a strictly cheaper genuinely
+feasible alternative with the SAME initial FULL state and terminal
+goal excludes the selected history before it occurs. -/
+theorem ProspectiveExecution.reject_strictly_dominated
+    {D : ProspectiveDynamics} (E : ProspectiveExecution D)
+    (alternative : List D.Action)
+    (hvalid : D.executable E.initial alternative)
+    (hgoal : E.goal (D.run E.initial alternative)) :
+    ¬ D.totalPrice E.initial alternative <
+        D.totalPrice E.initial E.chosen := by
+  exact not_lt.mpr (E.optimal alternative hvalid hgoal)
+
+/-- The finite Bellman principle follows from prospective global
+choice, complete state and additive true history price. Replacing
+a selected suffix by an allowed cheaper suffix reaching the SAME
+goal is impossible. -/
+theorem ProspectiveExecution.optimal_suffix
+    {D : ProspectiveDynamics} (E : ProspectiveExecution D)
+    (prefix suffix alternative : List D.Action)
+    (hchosen : E.chosen = prefix ++ suffix)
+    (hprefix : D.executable E.initial prefix)
+    (halt : D.executable (D.run E.initial prefix) alternative)
+    (hgoal : E.goal (D.run (D.run E.initial prefix) alternative)) :
+    D.totalPrice (D.run E.initial prefix) suffix ≤
+      D.totalPrice (D.run E.initial prefix) alternative := by
+  have hwhole : D.executable E.initial (prefix ++ alternative) :=
+    (D.executable_append E.initial prefix alternative).2 ⟨hprefix, halt⟩
+  have hwholeGoal : E.goal (D.run E.initial (prefix ++ alternative)) := by
+    rw [D.run_append]
+    exact hgoal
+  have hopt := E.optimal (prefix ++ alternative) hwhole hwholeGoal
+  rw [hchosen, D.totalPrice_append, D.totalPrice_append] at hopt
+  linarith
+
+/-- No actual prospective optimum contains an unnecessary positive-
+cost cycle returning to the SAME full future-sufficient physical
+state when the shorter execution preserves all allowed constraints.
+This is a generated law of selection, NOT an ex-post rewriting rule. -/
+theorem ProspectiveExecution.no_positive_redundant_detour
+    {D : ProspectiveDynamics} (E : ProspectiveExecution D)
+    (prefix detour suffix : List D.Action)
+    (hchosen : E.chosen = prefix ++ (detour ++ suffix))
+    (hreturn : D.run (D.run E.initial prefix) detour =
+      D.run E.initial prefix)
+    (hcost : 0 < D.totalPrice (D.run E.initial prefix) detour) :
+    False := by
+  have hwhole : D.executable E.initial
+      (prefix ++ (detour ++ suffix)) := by
+    simpa [hchosen] using E.chosen_executable
+  have hp := (D.executable_append E.initial prefix
+    (detour ++ suffix)).1 hwhole
+  have htail0 := (D.executable_append (D.run E.initial prefix)
+    detour suffix).1 hp.2
+  have htail : D.executable (D.run E.initial prefix) suffix := by
+    rw [← hreturn]
+    exact htail0.2
+  have hgoal : E.goal (D.run (D.run E.initial prefix) suffix) := by
+    have hg : E.goal (D.run E.initial
+        (prefix ++ (detour ++ suffix))) := by
+      simpa [hchosen] using E.chosen_goal
+    rw [D.run_append, D.run_append, hreturn] at hg
+    exact hg
+  have hopt := E.optimal_suffix prefix (detour ++ suffix) suffix
+    hchosen hp.1 htail hgoal
+  rw [D.totalPrice_append, hreturn] at hopt
+  linarith
+
+
 end D0.Foundation.EndogenousActionQuantum
