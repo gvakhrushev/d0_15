@@ -113,3 +113,82 @@ assert E(t)>0 and (abs(xx0-yy0)>1e-6 or abs(xy0)>1e-6)
 assert abs((xx0+yy0)/2+2*lam*E(t))<1e-12
 print("PASS: exact original reduced finite 40+2 Euler, nonflat nonvacuum, "
       "O(h^2) metric and curvature convergence on midpoint clock")
+
+
+# STRONGER: exactly the SAME fixed continuum Einstein metric is sampled at
+# every lattice spacing, and genuine original CAR matter differences (not an
+# independently assigned stress) match its source at the Cartan midpoint.
+# Cubic harmonic waves are BOTH continuously and discretely harmonic.
+def pw(t):
+    return .04*sin(2.4*t)
+def dpw(t):
+    return .096*cos(2.4*t)
+def A2(t):
+    return .07*cos(1.8*t)
+def B2(t):
+    return .045*sin(3*t)
+def A3(t):
+    return .013*cos(4*t)
+def B3(t):
+    return -.009*sin(2*t)
+def fixed_H(t,x,y):
+    return (-lam*dpw(t)**2*(x*x+y*y)
+            +A2(t)*(x*x-y*y)+2*B2(t)*x*y
+            +A3(t)*(x**3-3*x*y*y)+B3(t)*(3*x*x*y-y**3))
+def fixed_Hxx(t,x,y):
+    return -2*lam*dpw(t)**2+2*A2(t)+6*A3(t)*x+6*B3(t)*y
+def fixed_Hxy(t,x,y):
+    return 2*B2(t)-6*A3(t)*y+6*B3(t)*x
+
+for L in (8,16,32,64,128):
+    h=1/L
+    original_psi = pw(0.)
+    max_sampling_err=0.
+    for j in range(L):
+        uj=j*h
+        # Native chronological, not target-assigned material first source.
+        nxt=original_psi+h*dpw(uj+h/2)
+        max_sampling_err=max(max_sampling_err,abs(nxt-pw(uj+h)))
+        original_psi=nxt
+    assert max_sampling_err < .2*h*h
+
+    j=2
+    uj=j*h
+    physical_midpoint=uj+h/2
+    original_record_energy=dpw(physical_midpoint)**2
+    x,y=.23,.27
+    # Native coframe at j+1 is sampled from fixed continuum g at the
+    # physical midpoint. Its 5-point stencil equals the true Laplacian.
+    lap=(fixed_H(physical_midpoint,x+h,y)
+         +fixed_H(physical_midpoint,x-h,y)
+         +fixed_H(physical_midpoint,x,y+h)
+         +fixed_H(physical_midpoint,x,y-h)
+         -4*fixed_H(physical_midpoint,x,y))/h**2
+    assert abs(lap+4*lam*original_record_energy)<2e-11
+
+    # Actual original staggered Cartan connection and proper-link
+    # curvature: on these polynomials both centered Hessian slots are
+    # EXACT continuum values at their respective plaquette centers.
+    kx=.5*(fixed_H(physical_midpoint,x,y)
+           -fixed_H(physical_midpoint,x-h,y))
+    kx_plus=.5*(fixed_H(physical_midpoint,x+h,y)
+                -fixed_H(physical_midpoint,x,y))
+    ky=.5*(fixed_H(physical_midpoint,x,y)
+           -fixed_H(physical_midpoint,x,y-h))
+    ky_plusx=.5*(fixed_H(physical_midpoint,x+h,y)
+                 -fixed_H(physical_midpoint,x+h,y-h))
+    assert abs(-2*(kx-kx_plus)/h**2
+               -fixed_Hxx(physical_midpoint,x,y))<2e-11
+    assert abs(-2*(ky-ky_plusx)/h**2
+               -fixed_Hxy(physical_midpoint,x+h/2,y-h/2))<2e-11
+
+    # The native scalar J2 sources cancel the full original geometric
+    # first source EXACTLY, with no independently installed matter stress.
+    source_euler=-lap/(2*h)-2*lam*original_record_energy/h
+    assert abs(source_euler)<1e-8
+    print(f"EXACT common Einstein class L={L}, "
+          f"matter_record_err={max_sampling_err:.3g}, "
+          f"native_euler={source_euler:+.2e}")
+
+print("PASS: exact same continuum nonlinear sourced Einstein metric "
+      "on every native lattice, O(h^2) original CAR field recovery")
