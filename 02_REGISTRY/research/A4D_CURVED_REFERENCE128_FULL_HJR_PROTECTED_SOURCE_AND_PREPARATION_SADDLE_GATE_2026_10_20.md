@@ -97,3 +97,55 @@ An interval-certified finite IFT for ten internal variables with fixed boundary 
 **Stronger conclusion than 'need solve everything':** the protected pp curvature block of R is **exactly flat at all orders** and its mixed stationary-preparation cross block is identically zero, while the explicit often-used low-grade rank128 preparation has a **strict negative LEFT-mode** Rayleigh Hessian, uniformly away from zero on a fixed physical period. These are two concrete, independent compatibility facts which a valid finite curved joint IFT must respect. They remove false routes to crediting Dirac preparation with curvature selection or treating its fixedGram stationary state as a proven stable physical vacuum.
 
 **Checker**: \`02_REGISTRY/research/sources/d0_curved_native_preparation_2026-10-20/check_native_reference128_preparation_saddle_and_protected_ward.py\` replays the actual original periodic u Fourier block on \(L_u=65\), full rank128 gram, exact occupied/unoccupied interpolation, negative curvature and uniform period bound (finite arithmetic up to floating Fourier eigenvalues, formula (6) algebraically exact). The all-order Ward follows directly from the existing exact operator intertwiner, not from this small numerical demonstration. No exact ten-variable interval data were used or silently assumed. \`GR_closed=false\`.
+
+
+## IV. NEW EXACT JOINT NECESSARY WARD PAIR: actual H+J must cancel **TWO** independent strictly positive R sources
+
+There is a stronger and directly executable joint-critical source restriction than the profile-flat Ward of §I. At fixed n, M and native proper links, uniform positive rescaling of ALL original inverse coframe legs \(v_r\mapsto e^\sigma v_r\) scales the *actual full16 Dirac* linearly, so
+\[
+\boxed{D_\ell(\sigma)=e^\sigma D_\ell(0),\
+ \Delta_\ell(\sigma)=e^{2\sigma}\Delta_\ell(0),\
+ R(\sigma)=e^{2\sigma}R_0.}\tag{9}
+\]
+This holds exactly on the existing normalized fixedRIGHT Hilbert chart with its **counting site measure** and observer unchanged. It is not an assertion that some independently normalized physical volume-bearing action scales this way; any such extra native volume/observer term must be differentiated separately.
+
+Independently the ORIGINAL owner eq (16) already pins for the admissible uniform moving observer \(n(\tau)=(e^\tau e_++e^{-\tau}e_-)/\sqrt2\) on the same normalized quartet mode:
+\[
+\boxed{R(n(\tau))=e^{2\tau}R_0,\qquad
+ \partial_\tau R|_0=2R_0.}\tag{10}
+\]
+For any positive fixedRIGHT Gram mixture of these original prepared quartet modes with the same (owner-stated) observer-positive normalization law, this applies by linearity of the spectral expectation. Their \(\lambda_k>0\) make \(R_0>0\).
+
+Thus if \(\sigma,\tau\) are both **independent admitted physical variations**, a genuine stationary root of ONE fixed conditional \(S=H+J+R\) MUST obey the simultaneous source Ward:
+\[
+\boxed{
+\partial_\sigma(H+J)=-2R_0,\quad
+\partial_\tau(H+J)=-2R_0,\quad
+\partial_\sigma(H+J)-\partial_\tau(H+J)=0.
+}\tag{11}
+\]
+The last is a parameter-free equality between TWO distinct native \(H+J\) covector rows; the first two fix their absolute sizes from existing matter preparation without assigning an Einstein stress by hand. If a proposed ten-variable curved IFT solved only curvature/link equations, or its heat/feedback operator happens to be blind to one of these admitted directions, it cannot be the full original observer/coframe stationary solution for \(R_0>0\). These source rows must be replayed with actual \(H+J\) values and any original fixed external pressure/sources charged before selection. A boundary-frozen \(\sigma\) or \(\tau\) changes the tangent domain and is not automatically a counterexample: report the actual physical boundary conditions.
+
+For the especially transparent rank128 low-grade preparation of §II with all 32 nonzero real u Fourier cosine/sine pairs in each of the TWO low grades, its actual original fixedRIGHT Gram \(I_{128}/128\) gives the exact finite positive Rayleigh amount
+\[
+\boxed{
+R_0(L)=\frac{4}{128}\sum_{k=1}^{32}
+ \frac{4\nu^2}{h^2}\sin^2(\pi k/L)
+=\frac{\nu^2}{8h^2}\sum_{k=1}^{32}\sin^2(\pi k/L)
+\quad (L\ge65).}\tag{12}
+\]
+At \(L=65\), \(\sum_{k=1}^{32}\sin^2(\pi k/65)=65/4\), hence
+\[
+\boxed{R_0(65)=\frac{65\nu^2}{32h^2}>0,\qquad
+\partial_\sigma R_0=\partial_\tau R_0=\frac{65\nu^2}{16h^2}.}\tag{13}
+\]
+Holding true physical \(u\)-period \(T=Lh\) fixed while refining and keeping this SAME 128-state mode set:
+\[
+\boxed{
+R_0(L)\longrightarrow\frac{\nu^2\pi^2}{8T^2}
+ \sum_{k=1}^{32}k^2
+=\frac{1430\,\pi^2\nu^2}{T^2}>0.}\tag{14}
+\]
+Therefore the **two required actual H+J cancellation rows remain nonzero uniformly in the refining spectral preparation limit**; a finite ten-variable IFT does not make them negligible by letting \(h\to0\).
+
+This is an EXACT **necessary compatibility theorem on an explicitly stated conditional original Dirac/observer chart**, not a derivation that actual G0 physically selects the H+J+R action or that all ten numerical rows were certified. The observer normalization and variation must be the TRUE existing whitened fixedGram law (not raw M†M under an untransported observer), and both coframe and observer tangents must be admitted. The signed physical Einstein–CAR right-hand side, actual full-clock/source/Cost price and uniform raw216 remain OPEN. \`GR_closed=false\`.
