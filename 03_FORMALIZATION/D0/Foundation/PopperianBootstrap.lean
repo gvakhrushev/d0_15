@@ -319,4 +319,36 @@ theorem killingTest_has_minimal_binary_generator {P : VerificationProtocol}
     exact ⟨l₀, l₁, h, twoLineImageProtocol_killingTest K l₀ l₁ h⟩
   · exact fun l => oneLineProjection_not_killingTest P l
 
+
+/-! ## Cross-level bridge: two-line core over ANY SHARED future operation
+
+This is the exact point where the MDL argument meets the endorsed future
+contextual quotient.  A third correct verification line may be removed
+as a primitive witness while retaining the outcomes of ALL FUTURE words,
+provided the actions are the same original admissible operations on
+the recorded state regardless of which witness line is used.
+
+This does NOT delete a third source of a novel, line-specific operation.
+Such a deletion would change the future TEST family, rather than merely
+compress an observationally equivalent representation. -/
+
+/-- The pair of existing witnesses generates the same exact verdict even
+after any future sequence of the SAME admitted state operations. -/
+theorem binary_core_preserves_all_shared_action_histories
+    {P : VerificationProtocol} (K : KillingTest P)
+    {Action : Type} (step : Action → P.State → P.State)
+    (word : List Action) (l l₀ l₁ : P.Line) (b : Bool)
+    (c : P.Catalogue) (x y : P.State) :
+    P.compare l c
+      (P.record (word.foldl (fun s a => step a s) x))
+      (P.record (word.foldl (fun s a => step a s) y)) =
+    (twoLineImageProtocol P l₀ l₁).compare b c
+      ((twoLineImageProtocol P l₀ l₁).record
+        (word.foldl (fun s a => step a s) x))
+      ((twoLineImageProtocol P l₀ l₁).record
+        (word.foldl (fun s a => step a s) y)) := by
+  exact extra_line_verdict_redundant K l l₀ l₁ b c
+    (word.foldl (fun s a => step a s) x)
+    (word.foldl (fun s a => step a s) y)
+
 end D0.Foundation.PopperianBootstrap
