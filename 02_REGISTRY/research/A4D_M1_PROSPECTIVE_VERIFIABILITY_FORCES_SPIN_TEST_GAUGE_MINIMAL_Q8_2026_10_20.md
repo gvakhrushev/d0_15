@@ -110,3 +110,58 @@ The fact scalar Book pressure ignores a pure central sheet while the Golden cond
 **Physical GR status:** full Q8/Spin scene→actual Golden CNOT/control/oldRIGHT/reference routed execution, actual complete Book03 H+J+R/Cost−Info selection, 4D Role/coframe/Dirac matter first Euler equality and controlled nonempty Einstein refinement remain OPEN. The next real breakthrough is a SAME physical execution theorem, not another matched-gate inventory coincidence. GR_closed=false.
 
 **Durable owned files:** original formal \`EmpiricalTheoryFactorization.lean\` (new uncoupledCenter_non_future_complete + completeness witness), \`OrderMemoryControl.lean\` (3→6 global-j equivalence, exact n<6/n6 native matched word decision, Q8 real 2backtrack/3triangle theorem), independent \`check_three_vs_six_golden_gauge_port_observational_equivalence.mjs\`, \`check_original_q8_six_gate_full_operator_minimum.mjs\`, \`check_original_book_8440_two_three_spin_first_triangle.mjs\`, and the living source route \`MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md\`. No changes to physical BOOK/CORE/claims are requested.
+
+
+## 6. Exact native full physical-price threshold — an ex ante D_min decision without equating probability with action
+
+The expected number of independent honest attempts until the first
+Golden bright response is \(1/q\) for success probability \(q\). With
+a constant full genuine paid Cost per ATTEMPT \(\mathcal C_{\rm passive}\)
+and \(\mathcal C_{\rm targeted}\), including native preparation, oldRIGHT,
+Book clock/Info, controller, failures, reference and fresh reset, the
+prospective expected TOTAL costs are
+\[
+ E[C_{\rm passive}]=\mathcal C_{\rm passive}/q_{\rm passive},\qquad
+ E[C_{\rm targeted}]=\mathcal C_{\rm targeted}/q_{\rm targeted}.
+\]
+From exact ORIGINAL K913 geometry and original p-Golden probabilities
+of §4, their ratio has a particularly clean analytic form:
+\[
+\boxed{
+\frac{q_{\rm targeted}}{q_{\rm passive}}
+=\frac{4p^3}{264p^8/(718p^3+7722p^5)}
+=\frac{718p^3+7722p^5}{66p^5}
+=\underbrace{117}_{7722/66}
++\underbrace{\frac{359}{33}}_{718/66}\varphi^2
+=145.481036423067\ldots .
+}\tag{10}
+\]
+Thus for THIS exact original two-hypothesis experiment only,
+\[
+\boxed{
+E[C_{\rm targeted}]<E[C_{\rm passive}]
+\quad\Longleftrightarrow\quad
+\frac{\mathcal C_{\rm targeted}}
+     {\mathcal C_{\rm passive}}
+<117+\frac{359}{33}\varphi^2 .
+}\tag{11}
+\]
+This is an exact native-graph/Golden numerical BREAK-EVEN CONSTRAINT
+on the still-open compulsory physical preparation/clock/action price,
+not a postulated equality between information and work. It remains
+valid if physically targeted preparation is more costly than passive
+sampling; it can tolerate up to ~145.48x the full per-attempt Cost
+under the stated idealized independent-repeat / fixed-pay-per-trial
+model. At equality the two programmes tie and \`D_min\` does NOT
+force a UNIQUE history without some further true physical tie rule.
+
+The updated original 8440 Book/Golden script verifies this identity
+and tests eight explicit actual candidate price ratios. The
+calculation supplies a concrete prospective G0 source benchmark:
+derive the two ACTUAL paid prices from the SAME permissible
+Book03 history and check (11), rather than assume a minimum from
+a shorter geometric path or Golden Born success alone. This does
+not determine that the initial central sheet is negative, does not
+select which unknown of 327 sheets is to be tested without a real
+M1 distinction task, and does not prove \(\mathcal C\) is constant
+during independent retries. GR_closed=false.
