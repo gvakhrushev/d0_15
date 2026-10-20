@@ -124,6 +124,25 @@ fail(Math.abs(two.completePointerShannonChange)>1e-7,
 // Hence qrest/qmark=12 and:
 // H_one''= -herald*p^4/lnphi*(5 ln(12)/12+1/6), strictly NEGATIVE.
 // Six independently addressed affected faces give SIX copies.
+
+// STRICT native complete-record INFORMATION that is discarded by only
+// preserving the scalar Palatini densities f_i.
+// Only the J23 marked +/- original true positive Golden labels have
+// first derivative at t=0, both with magnitude
+// sqrt2 * (herald*p^4/24), giving EXACT full17 FI = herald*p^4/6.
+// For the six genuine adjacent shared-link faces the FI sum is p^4/4096.
+const nativeFisherOne=herald*p**4/6,nativeFisherSix=6*nativeFisherOne;
+const KLG=(q,v)=>q.reduce((sum,x,i)=>sum+x*Math.log(x/v[i])/ell,0);
+const KLoriginalFull17=.15;
+const KLone=KLG(actualGolden17(expJ(KLoriginalFull17)),actualGolden17(I()));
+const KLsix=6*KLone;
+fail(KLone>0&&KLsix>0,"actual original Golden17 record distinguishes star-identical Lorentz links");
+const KLsmall=6*KLG(actualGolden17(expJ(.002)),actualGolden17(I()));
+const KLexpected=nativeFisherSix*.002**2/(2*ell);
+fail(Math.abs(KLsmall-KLexpected)<3e-11,
+ "original full17 KL has exact positive Fisher quadratic while all star-density records are CONSTANT");
+// Important: this q is conditional on a fully retained original face/path
+// and includes the Bell fail category, not an illegitimate postselection.
 const hOne2=-(herald*p**4/ell)*((5/12)*Math.log(12)+1/6);
 const hAll2=6*hOne2;
 const h=0.002;
@@ -150,6 +169,10 @@ console.log(JSON.stringify({
  full17ShannonChange:two.completePointerShannonChange,
  exactAnalyticSingleFaceHessian:hOne2,
  exactAnalyticSixFaceHessian:hAll2,
+ trueGolden17FisherPerFace:nativeFisherOne,
+ trueGolden17FisherSixFaces:nativeFisherSix,
+ trueGolden17KLForSixStarIdenticalFaces:KLsix,
+ KLsmallCoefficientActual:KLsmall,KLsmallCoefficientExpected:KLexpected,
  independentFiniteDifferenceHessian:numerical2,
  actualVerticalFirstSourceAtTheta015:first,
  phiMinusOne:p,
