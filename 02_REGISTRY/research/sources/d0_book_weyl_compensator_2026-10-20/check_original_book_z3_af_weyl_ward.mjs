@@ -187,7 +187,10 @@ must(Math.abs(wardDerivative)<2e-15,"original exact 3:2 finite Book/Palatini inf
 console.log(JSON.stringify({
  status:"PASS_ORIGINAL_BOOK_3TICK_GOLDEN_AF_WEYL_FINITE_NONLINEAR",
  original:"K(9,11,13), positive all718 asymmetric native-type Book, actual Golden p",
- Z3_original:Z3(K),triangleBasedWords:7722,
+ Z3_original:Z3(K),triangleBasedWords:7722,originalTwoStepWords:718,completeTwoThreeClockLabels:8440,
+ clockOddsLogGolden_original:c0,clockOddsLogGolden_shifted:c1,
+ clockOddsSource:c1-c0,absolutePressurePlusClockSource:(Bshift+c1)-(B+c0),
+ rootedClockOddsSource:cc1-cc0,
  W_original:W,W_shifted:Wshift,lambda_original:lambda,
  uniformInfoShift:t,absoluteBookPressureAffineDifference:Bshift-B,
  trueNullFaceWedge:f,
