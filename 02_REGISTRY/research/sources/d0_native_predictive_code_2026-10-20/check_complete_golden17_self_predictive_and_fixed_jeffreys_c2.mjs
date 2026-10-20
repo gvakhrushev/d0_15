@@ -146,6 +146,18 @@ check(KT[4].first<KT[0].first/200&&
 check(Math.abs(KT[4].first-KT[4].leadingFirst)<2e-8 &&
  Math.abs(KT[4].second-KT[4].leadingSecond)<2e-7,
  "exact finite binomial sources match analytic 1/N Jeffreys regret first/second asymptotics");
+
+// ABSOLUTE SOURCE HOSTILE CONTROL: a FIXED universal Jeffreys code has
+// expected regret ~(k-1)/2 log N, a genuine positive work/code price.
+// If this complete charged redundancy is multiplied by a moving original
+// Book-third-tick pressure W(t), a NONZERO first source survives EVEN when
+// the data distribution is held CONSTANT. The source is D W * regret;
+// no code universality theorem deletes original clock/absolute pressure.
+const dBookW=(nativeBookW(1e-3)-nativeBookW(-1e-3))/(2e-3);
+const fixedUniversalOverheadGolden=KT[4].regret/ell;
+const fullNativeWeightedCodeSource=dBookW*fixedUniversalOverheadGolden;
+check(Math.abs(dBookW)>1e-5&&Math.abs(fullNativeWeightedCodeSource)>1e-5,
+ "original moving Book-third-tick absolute source survives canonically coded but paid redundancy");
 const qOriginalMark=q0[8]/(q0[8]+q0[9]);
 check(Math.abs(qOriginalMark-.5)<1e-14,
  "literal original J23 positive mark pair is unbiased at true flat");
@@ -178,7 +190,10 @@ console.log(JSON.stringify({
    finiteDifferenceVerticalHessian:dd},
  fixedReferenceJeffreys:{prior:"intrinsic Fisher volume Dirichlet(1/2), NOT a physical Book-selected code",
     binomialSourceTable:KT,
-    full17OriginalGoldenAsymptoticSecondSourceCoefficientPerAttempt:full17AsymptoticCoefficient},
+    full17OriginalGoldenAsymptoticSecondSourceCoefficientPerAttempt:full17AsymptoticCoefficient,
+    fullyPaidGoldenCodeOverheadAt16384:fixedUniversalOverheadGolden,
+    movingOriginalBookWeightDerivative:dBookW,
+    NONZEROAbsoluteWeightedCodeFirstSource:fullNativeWeightedCodeSource},
  honestBoundaries:"all retained Golden positive records/code regret, but no native G0 exact encoder/preparation/clock/work, Book absolute selection or GR proof",
  GR_closed:false
 },null,2));
