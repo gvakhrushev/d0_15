@@ -205,6 +205,50 @@ There is now a clean fully typed division:
 - **Gauge covariance is typed:** the tester vectors/positive observer must be co-transported with the basepoint under local Lorentz gauge; a frozen external Choi/POVM frame at every basepoint is not gauge-invariant. This theorem makes no unsupported claim that basepoint transport costs zero.
 - **No false composition functor:** the path-independent odds are a *projective observable of the SAME group product P*, not an additive character of arbitrary concatenations; a nontrivial continuous additive scalar character on connected semisimple \(SO^+(1,3)\) would vanish. Native noncommutative order and true based plaquettes remain essential.
 
+### 6. Book03 prospective bridge: a TWO-OUTCOME NATIVE PRICE EQUATION, not a free action
+
+The original admitted finite prospective law (owned P1–P12, consumed in \`D0_TRIZ_PHI_AGENT_HANDOFF_2026_10_20.md\`) has EXACT transition weights for one real complete future task:
+\[
+Q_N(e\mid s)=\frac{K(e)Z_{N-1}(t_e)}{Z_N(s)},\qquad K(e)>0.
+\tag{17}
+\]
+For two original **positive physical** alternatives \(e_+\) and \(e_-\) out of the **SAME** retained prefix s, their normalizer \(Z_N(s)\) cancels:
+\[
+\boxed{
+\log_\varphi\frac{Q_N(e_-\mid s)}{Q_N(e_+\mid s)}
+=\log_\varphi\frac{K(e_-)}{K(e_+)}
++\log_\varphi\frac{Z_{N-1}(t_-)}{Z_{N-1}(t_+)}.
+}\tag{18}
+\]
+This is a theorem on the **original** finite prospective law, without interpreting \(Q\) as Born probability and without altering the native path weights. If both are physically terminal with **identical priced continuation** (\(Z_{N-1}(t_-)=Z_{N-1}(t_+)\)), then
+\[
+\boxed{\log_\varphi(Q_-/Q_+)=-(S_--S_+),
+\quad K(e_\pm)=\varphi^{-S_\pm}.}\tag{19}
+\]
+Thus the ORIGINAL Golden code weight already contains the correct **mathematical type** of a signed paired terminal-history price: the difference of the ACTUAL Cost−Info assignments, not an invented scalar detector penalty. But the **physical task/cut, terminal cost equality and exact event weights** must be established, not assumed.
+
+There is now a **single sharp 2-event physical gate** to close the geometry-to-Book gap for this probe, rather than rerunning 128×128 spectral catalogues. On the SAME original all-good prefix and fixed positive labels \(a^\pm\), prove from the compulsory literal G0/Book03 preparation, work, task and complete archive that
+\[
+\boxed{
+\frac{K(e_-)}{K(e_+)}
+=\frac{q_{a,-}^{(n)}(P)}{q_{a,+}^{(n)}(P)}
+\quad\text{for all small original }P
+}
+\tag{20}
+\]
+with **equal terminal continuation**. Equivalently the full native two-history Price difference must satisfy
+\[
+\boxed{
+S_--S_+=-\mathcal O_a(P),\qquad
+D_{\xi_b}(S_--S_+)|_{I}
+=+\frac{2\sqrt2}{\ln\varphi}\delta_{ab}.
+}
+\tag{21}
+\]
+The plus sign in (21) is forced by \(K=\varphi^{-S}\). Equation (20) is **NOT proved** by the mere existence of positive Born/Julia probabilities; it is the exact native Born-to-Book *relative weight binding* to test. In particular the two conditional quantum work states need not carry the same full Book Info, and if their continuation partition functions differ they produce the extra explicit term in (18), not a conveniently dropped correction.
+
+Even after (20) holds, it would show the task's **relative** prospective score equals the measured odds; it does NOT by itself prove that Book's compulsory variational scalar is this difference (rather than the full expected complete Cost−Info), or that its coframe solder/Hodge star and actual all40+matter Euler have the required signs. Those are separate necessary forcing steps. This is the smallest mathematically typed question one can ask the real programme, not a claim that it is already answered.
+
 **New decisive physics task:** derive from the unchanged G0/Book03 prospective law which complete, actually priced paired native future question (if any) forces the SAME two positive events, all flags, observer transport, and local soldered \(\star\) pairing. Reject the proposal if it is not selected by the native Cost−Info. Do not use any after-the-fact \(\kappa_h\), new fractional weight or spectral subtraction. Existing P25/full nonlinear GR roots are not altered; \`GR_closed=false\`.
 
 **Exact independent checker:** \`02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/check_original_julia_plaquette_odds_refinement.py\`.
