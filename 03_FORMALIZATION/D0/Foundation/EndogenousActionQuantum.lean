@@ -96,4 +96,47 @@ theorem action_distinction_forcing {P : VerificationProtocol} (_K : KillingTest 
   have h1 : 1 ≤ A.action x y := A.action_nontrivial x y hxy
   linarith
 
+
+/-! ## Fundamental M1/MDL source: paid reversible history is not endpoint cost
+
+The original endogenous action quantum forces every actually
+distinguishable nonidentity physical transition to cost at least one
+unit. A reversible two-transition RETURN to exactly the SAME
+registered state is therefore NOT equivalent, as a fully paid
+history, to the null-history identity transition. No gravitational
+action or arbitrary quantum coupling enters this theorem.
+
+The proof is purely foundational; it is conditional on a REAL
+source admitting both x→y and y→x, which the ActionProtocol
+price assignment by itself does not guarantee. One must never
+erase actual intermediate record/provenance on the basis of equal
+endpoints, nor claim the theorem selects complete Book03 work.
+-/
+
+/-- One truly distinguishable forward transition AND its returning
+reverse pay at least two original endogenous action quanta. -/
+theorem original_roundtrip_forces_paid_history
+    {P : VerificationProtocol} (A : ActionProtocol P)
+    (x y : P.State) (h : x ≠ y) :
+    2 ≤ A.action x y + A.action y x := by
+  have hforward := A.action_nontrivial x y h
+  have hback := A.action_nontrivial y x h.symm
+  linarith
+
+/-- A complete source-path Cost that counts the two genuinely executed
+primitive transitions CANNOT be a function of the final state alone,
+with the original empty history assigned zero. The endpoint x is
+identical in both executions. -/
+theorem original_roundtrip_no_endpoint_only_paid_action
+    {P : VerificationProtocol} (A : ActionProtocol P)
+    (x y : P.State) (h : x ≠ y) :
+    ¬ ∃ costOfEndpoint : P.State → ℝ,
+        costOfEndpoint x = 0 ∧
+        costOfEndpoint x = A.action x y + A.action y x := by
+  rintro ⟨f, hblank, hpaid⟩
+  have hmin := original_roundtrip_forces_paid_history A x y h
+  rw [hblank] at hpaid
+  linarith
+
+
 end D0.Foundation.EndogenousActionQuantum
