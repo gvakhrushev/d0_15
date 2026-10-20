@@ -149,11 +149,22 @@ memory question: scalar single-plaquette class Costs erase null amplitude,
 while an oriented retained-history readout can detect order, but literal
 `fullStep` admission and payment remain open.
 
+The same #334 now also contains an exact curved fixedRIGHT128 preparation
+block for the original full-Lorentz CAR16 operator, with the complete R
+coframe/link/observer covector
+([proof](https://github.com/gvakhrushev/d0_15/blob/4873b3c245a91bd8c9cb25bceeb82662e9f62944/02_REGISTRY/research/A4D_EXACT_CURVED_NATIVE_DIRAC_FIXED_RIGHT_PREPARATION_AND_SOURCE_2026_10_20.md)).
+This solves the declared fixedRIGHT preparation rows, not the full joint
+H+J+R field equations. The actual remaining rows on that candidate are
+`E_U^(H+J)=0`, `E_e^(H+J)+E_e^R=0` and `E_n^(H+J)+E_n^R=0`; the full clock,
+current, work, complementary operator and physical-selection conditions stay
+open. This input is linked from the generated roots card without adding an
+active result node or implying an accepted application.
+
 The shortest vacuum gate is now sharper than full off-shell price matching:
-after solving the actual preparation, clock, work, oldRIGHT and internal
-history Euler equations, check on the true zero-density shell that the selected
-source has one value and `DS = Σ w_i df_i` with nonzero site weights. In a
-regular chart, a locally bounded squared-ideal remainder then protects the exact
+after solving the remaining physical preparation, clock, work, oldRIGHT and
+internal-history Euler equations, check on the true zero-density shell that the
+selected source has one value and `DS = Σ w_i df_i` with nonzero site weights.
+In a regular chart, a locally bounded squared-ideal remainder then protects the exact
 nonlinear vacuum stationary set and the raw 16+24 linearized kernel even when
 the Book price has vertical history dependence away from the shell. The
 48-field sourced-root Hessian test remains a separate check for the nonvacuum
