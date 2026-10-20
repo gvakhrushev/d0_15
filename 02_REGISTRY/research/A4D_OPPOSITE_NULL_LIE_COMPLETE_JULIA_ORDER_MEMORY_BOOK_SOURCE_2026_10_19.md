@@ -522,6 +522,19 @@ sequence of paid edge operations, and supply the associated Cost−Info source.
 The exact audit is included in
 [check_four_gate_commutator_c2.py](sources/d0_opposite_null_julia_order_memory_2026-10-19/check_four_gate_commutator_c2.py).
 
+An independent check now finds both order channels in the **original full128
+outcome instrument**, without the 13-effect tester. With its fixed
+`I16/16` preparation, reference128 spectator, `L=4`, `h=1/4`, and role-2
+Fourier background, the two-round `(17,49)` history has a strictly positive
+baseline and exact nonzero AB−BA mixed probability jet for
+`[N2,barN2]=B`; `(0,19)` is an exact zero control for that boost commutator.
+The separate `(0,19)` J witness for `[N2,barN3]=J` remains nonzero. The exact
+values and replay are in the [original full128 result](sources/d0_native_full128_order_readout_2026-10-19/RESULT.md).
+This upgrades the detector evidence to both J and B channels on the existing
+128-outcome record. The assigned repeated matrix steps remain unadmitted as
+physical D0 execution, and this probability readout is not the selected full
+Cost−Info price.
+
 ## 6. Finite compilation and the narrow remaining physics
 
 The exact all-grades contraction and complete real Julia/Naimark circuit belong to the owned mathematical **generous all-active orthogonal** class, with all new flags/4-dimensional Choi source actually declared and not deleted. The known addressed real Golden G/CNOT compiler approximates any such fixed real orthogonal finite-dimensional gate once its ACTUAL addressing/preparation/access interface is supplied; it retains ancilla leakage and has a whole-state error. The true group link data \(A,B\) must be computable from the same original finite Lorentz plaquette/coframe source and not supplied as a free geometric oracle.

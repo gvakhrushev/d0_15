@@ -1,4 +1,4 @@
-# Original full128 pointer detects an opposite-null order jet
+# Original full128 pointer detects opposite-null order jets
 
 Date: 19 October 2026. This is a finite exact extension of the existing
 full128 record instrument in the same Draft #334. It tests whether an
@@ -323,3 +323,56 @@ operations, that the Julia dilations compose physically, or that this Shannon
 term is selected by the complete Book Cost-Info law. Controller/work,
 preparation, normalization and physical event binding remain outside the
 calculation; `GR_closed=false`.
+
+## The original full128 record also reads the boost commutator
+
+The same two-round full128 instrument has a positive-probability history that
+distinguishes the second opposite-null commutator
+
+\[
+[N_2,\bar N_2]=B=E_{--}-E_{++}.
+\]
+
+Keep the exact fixture above: all16 CAR grades, the original128 outcomes,
+reference128 as an untouched spectator, the fixed `I16/16` system marginal,
+`L=4`, `h=1/4`, phases `(1,1,1,i)`, and only role2 varied. Apply the assigned
+matrix steps in either order and retain every two-round outcome. For the
+ordered history with first-round outcome17 (label4, coefficient0, port1) and
+second-round outcome49 (label12, coefficient0, port1), the exact baseline
+probability is
+
+\[
+q_{17,49}(0,0)=\frac{2893401}{6553600000000}
+ -\frac{321489\sqrt5}{1638400000000}>0.
+\]
+
+Its exact mixed jets and their order contrast are
+
+\[
+\begin{aligned}
+\partial_{ab}q^{AB}_{17,49}(0,0)
+ &=\frac{59049}{3276800000000}
+   -\frac{6561\sqrt5}{819200000000},\\
+\partial_{ab}q^{BA}_{17,49}(0,0)
+ &=-\frac{59049}{3276800000000}
+   +\frac{6561\sqrt5}{819200000000},\\
+\partial_{ab}(q^{AB}_{17,49}-q^{BA}_{17,49})(0,0)
+ &=\frac{59049}{1638400000000}
+   -\frac{6561\sqrt5}{409600000000}
+   \approx 2.231640615817378\times10^{-10}>0.
+\end{aligned}
+\]
+
+The J-sensitive pair `(0,19)` is an exact zero control for this B
+commutator. Thus the existing full128 record has separate positive-history
+witnesses for the J and B order channels; the boost witness is not visible in
+that single selected J event. The complete two-round instrument remains
+normalized with all 16,384 histories retained. Exact replay is part of
+`check_native_full128_order_readout.py` and checks the positive baseline, both
+mixed jets, the strict sign, and the zero control.
+
+This closes only the finite readout experiment for both commutators. The
+assigned per-increment applications are still a matrix program: native D0 has
+not admitted sequential Lorentz-word execution here, and neither the full
+physical Cost-Info selection nor the accompanying price-source/Euler matching
+has been established. `GR_closed=false`.

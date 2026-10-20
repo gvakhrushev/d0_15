@@ -311,16 +311,21 @@ def run(repo=None):
 
     seq_kraus, dseq_N2 = full128_kraus_and_tangent(N2)
     seq_kraus_bar, dseq_Nbar3 = full128_kraus_and_tangent(Nbar3)
+    seq_kraus_bar2, dseq_Nbar2 = full128_kraus_and_tangent(Nbar2)
     for index, (left, right) in enumerate(zip(seq_kraus, seq_kraus_bar)):
         eq(left, right, "sequential_shared_base_kraus_" + str(index))
+    for index, (left, right) in enumerate(zip(seq_kraus, seq_kraus_bar2)):
+        eq(left, right, "boost_shared_base_kraus_" + str(index))
 
-    def selected_history_mixed_jet(first_tangent, second_tangent):
+    def selected_history_mixed_jet(first_tangent, second_tangent,
+                                   first_event=0, second_event=19):
         # Event 0 = blank-label/coefficient-0/port-0. Event 19 is
-        # label-4/coefficient-1/port-1 in the original 128-output round.
-        first_base = seq_kraus[0]
-        second_base = seq_kraus[19]
-        first_derivative = first_tangent[0]
-        second_derivative = second_tangent[19]
+        # label-4/coefficient-1/port-1. Other indices use the same original
+        # label/coefficient/port ordering.
+        first_base = seq_kraus[first_event]
+        second_base = seq_kraus[second_event]
+        first_derivative = first_tangent[first_event]
+        second_derivative = second_tangent[second_event]
         total = second_base * first_base
         total_a = second_base * first_derivative
         total_b = second_derivative * first_base
@@ -354,6 +359,51 @@ def run(repo=None):
        "fresh_record_selected_history_order_jet")
     require(sequential_order_jet.is_zero is False,
             "fresh_record_selected_history_reads_increment_order")
+
+    # The same full128 matrix instrument also reads the boost commutator
+    # [N2,barN2]=B, but at a different retained outcome pair. Event 17 is
+    # label 4/coefficient 0/port 1 and event 49 is label 12/coefficient
+    # 0/port 1. The original (0,19) J-sensitive history is an exact zero
+    # control for this B commutator on the same background.
+    boost_AB_jet = selected_history_mixed_jet(
+        dseq_N2, dseq_Nbar2, first_event=17, second_event=49
+    )
+    boost_BA_jet = selected_history_mixed_jet(
+        dseq_Nbar2, dseq_N2, first_event=17, second_event=49
+    )
+    boost_order_jet = s.simplify(boost_AB_jet - boost_BA_jet)
+    expected_boost_BA = (
+        -s.Rational(59049, 3276800000000)
+        + s.Rational(6561, 819200000000) * s.sqrt(5)
+    )
+    expected_boost_order = (
+        s.Rational(59049, 1638400000000)
+        - s.Rational(6561, 409600000000) * s.sqrt(5)
+    )
+    eq(boost_AB_jet, -expected_boost_BA,
+       "fresh_record_boost_selected_history_AB_mixed_jet")
+    eq(boost_BA_jet, expected_boost_BA,
+       "fresh_record_boost_selected_history_BA_mixed_jet")
+    eq(boost_order_jet, expected_boost_order,
+       "fresh_record_boost_selected_history_order_jet")
+    require(boost_order_jet.is_positive is True,
+            "fresh_record_boost_selected_history_strictly_positive")
+    boost_history = seq_kraus[49] * seq_kraus[17]
+    boost_history_probability = s.simplify(
+        s.trace(boost_history.H * boost_history) / 16
+    )
+    require(boost_history_probability.is_positive is True,
+            "fresh_record_boost_selected_history_has_positive_baseline")
+    boost_zero_control = s.simplify(
+        selected_history_mixed_jet(
+            dseq_N2, dseq_Nbar2, first_event=0, second_event=19
+        )
+        - selected_history_mixed_jet(
+            dseq_Nbar2, dseq_N2, first_event=0, second_event=19
+        )
+    )
+    eq(boost_zero_control, 0,
+       "fresh_record_J_selected_history_is_B_commutator_zero_control")
 
     # Use every original full128 outcome as a probability readout and vary all
     # four links independently along a full proper-Lorentz basis.  The matrix
@@ -541,6 +591,18 @@ def run(repo=None):
             "BA_mixed_jet": str(sequential_BA_jet),
             "AB_minus_BA_mixed_jet": str(sequential_order_jet),
             "AB_minus_BA_decimal": str(s.N(sequential_order_jet, 16)),
+        },
+        "fresh_record_boost_history": {
+            "commutator": "[N2,barN2]=B",
+            "round_1_outcome_index": 17,
+            "round_2_outcome_index": 49,
+            "AB_mixed_jet": str(boost_AB_jet),
+            "BA_mixed_jet": str(boost_BA_jet),
+            "AB_minus_BA_mixed_jet": str(boost_order_jet),
+            "AB_minus_BA_decimal": str(s.N(boost_order_jet, 16)),
+            "baseline_probability": str(boost_history_probability),
+            "zero_control_outcome_pair": [0, 19],
+            "zero_control_AB_minus_BA_mixed_jet": str(boost_zero_control),
         },
         "all24_link_probability_jacobian": {
             "directions": "four independent links times six proper-Lorentz generators",
