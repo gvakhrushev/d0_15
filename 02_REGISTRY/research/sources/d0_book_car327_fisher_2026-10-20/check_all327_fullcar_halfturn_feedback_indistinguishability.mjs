@@ -520,6 +520,52 @@ assert(maxOddGoldenSourceError<3e-14&&
        maxOddRecoveredCurvatureError<3e-9&&
        Math.abs(oneSource-singleAnalytic)<1e-10,
  "original Golden signed relative CODE source did not recover nonlinear holonomy");
+
+// PROSPECTIVE M1/D_min NATIVE OBSERVER-CODE RELABEL CUSP.
+// With BOTH reversed Golden p:p² conditional code label assignments
+// FREE at the same fully specified initial state, minimizing over
+// them creates a REVERSAL-EVEN, NOT C1 signed-source:
+//   min(D_plus,D_minus)=(D_plus+D_minus)/2
+//                      -|q_J+−q_J−|/2.
+// Its original-flat left/right derivatives are ±sqrt2*k.
+// Without an ORIENTED, PREPARED and actually retained native code
+// reference there is no smooth signed Einstein primitive.
+// Conversely: IF flipping the physically stored orientation requires
+// one actually source-changing ActionProtocol transition Cost>=1,
+// and nothing else in the real future test benefits from flipping,
+// its maximum Golden relative-code saving for ONE full 1287-face
+// original cycle experiment is strictly <.00351 and cannot pay for
+// the flip. The requisite G0 task, reference, cost/work are premises,
+// never inferred from a free combinatorial code relabeling.
+const reversedGoldenCode=goldenCode.slice();
+for(let j=0;j<6;j++)
+ [reversedGoldenCode[2*j],reversedGoldenCode[2*j+1]]=
+ [goldenCode[2*j+1],goldenCode[2*j]];
+let maxCodeSelectorDifferenceError=0,maxOriginalCodeRelabelGain=0;
+const minimumCodeValue=theta=>{
+ const q=completeGolden17(theta);
+ return Math.min(KLφ(q,goldenCode),KLφ(q,reversedGoldenCode));
+};
+for(let j=0;j<=4096;j++){
+ const theta=2*Math.PI*j/4096,q=completeGolden17(theta),
+       pos=KLφ(q,goldenCode),neg=KLφ(q,reversedGoldenCode);
+ const m=(1+Math.cos(theta))/2;
+ const analytic=-2*Math.SQRT2*kGolden*m*Math.sin(theta);
+ maxCodeSelectorDifferenceError=Math.max(maxCodeSelectorDifferenceError,
+                              Math.abs(pos-neg-analytic));
+ maxOriginalCodeRelabelGain=Math.max(maxOriginalCodeRelabelGain,Math.abs(pos-neg));
+}
+const codeBound=3*Math.sqrt(6)*kGolden/4;
+const hMDL=.0001,
+      codeAtFlat=minimumCodeValue(0),
+      leftMDL=(codeAtFlat-minimumCodeValue(-hMDL))/hMDL,
+      rightMDL=(minimumCodeValue(hMDL)-codeAtFlat)/hMDL;
+assert(maxCodeSelectorDifferenceError<3e-14&&
+       Math.abs(maxOriginalCodeRelabelGain-codeBound)<6e-12&&
+       Math.abs(leftMDL-Math.SQRT2*kGolden)<1e-9&&
+       Math.abs(rightMDL+Math.SQRT2*kGolden)<1e-9&&
+       1287*codeBound<1,
+ "full original free-code Dmin cusp or genuine paid-reference Cost margin invalid");
 console.log(JSON.stringify({
  result:"PASS_GLOBAL_ALL327_FULLCAR16_F_SQUARING_Z2_INDISTINGUISHABILITY",
  actualNativeCarrier:{sceneVertices:33,fullOriginalDirectedEdges:718,
@@ -556,6 +602,19 @@ console.log(JSON.stringify({
        recoveredSinMaxAbsoluteErrorNearPi:maxOddRecoveredCurvatureError,
        ratioHasAnalyticPhaseLimitAtPiButNumericallyIllConditioned:true,
        originalPhysicalG0CodeSelectorStillMissing:true},
+    prospectiveMDLObserverReferenceTest:{
+      actualCodePairAssignmentsBothNativeP_P2:true,
+      exactFreeRelabelCodeDifference:"D_plus-D_minus=-2sqrt2*k*m*sin(theta)",
+      full4097AngleCodeChoiceDifferenceError:maxCodeSelectorDifferenceError,
+      leftOptimalCodeDerivative:leftMDL,
+      rightOptimalCodeDerivative:rightMDL,
+      exactNondifferentiableCuspJump:2*Math.SQRT2*kGolden,
+      maximalOneTriangleReassignmentGain:codeBound,
+      maximumAll1287OriginalTriangleCodeGain:1287*codeBound,
+      nativePrimitiveSourceChangingTransitionFloor:1,
+      paidReferenceFlipNeverPaysWithinOneFull1287AssayIfNoOtherBenefits:true,
+      referenceFlipPhysicalAdmissionAndFutureTaskNotProved:true},
+
 
 
     movingBookWeightsCannotRemoveConditionalFisherIfPositive:true},
