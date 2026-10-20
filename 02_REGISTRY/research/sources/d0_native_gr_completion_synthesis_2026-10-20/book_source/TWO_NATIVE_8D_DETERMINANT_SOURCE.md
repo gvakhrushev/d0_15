@@ -214,3 +214,44 @@ Its [independent review](GOLDEN_EXACT_DETECTOR_REVIEW.md) pins the proof,
 checker and retained assumptions. Physical admission of the addressed
 interface, moving 8D queries and matter input, compulsory task selection,
 Book03 valuation and additional upstream sources remain open.
+
+## 8. Material-input application: the cost of replacing a supplied query
+
+The [local material-query information bound](NATIVE_MATTER_QUERY_INFORMATION_BOUND.md)
+tests the remaining material-input premise on the original normalized
+CAR/site/RIGHT128 preparation. If only n independent copies carry the
+varied matter amplitude, while all ancillas, programme and operations
+are matter independent, any complete implementation reproducing this
+local no-click probability and its first matter jet must satisfy
+
+```text
+n >= beta Cq^2 rho_x^(-2) v_x^2 S /
+     [h^2 d_0(1-d_0)(1+psi_y^2/slack_y^2)],
+Cq = 8z p^6 eta^2(R+p^6 Q).
+```
+
+Here beta is actual readiness, including retained aborts; v_x is the
+actual calibrated null flux, and S is the size of the normalized global
+preparation. The proof uses the complete instrument and the actual
+singleton tangent at y=x+v. It grants the full128 reference and keeps
+the inverse-PF density factor. For fixed positive query strength,
+readiness and flux, with uniform density/slack bounds, it requires
+Omega(S/h^2) copies, hence Omega(h^(-6)) on a fixed four-dimensional
+site region. The explicit formula governs all other parameter scalings.
+The [review receipt](NATIVE_MATTER_QUERY_INFORMATION_BOUND_REVIEW.md)
+pins this scoped application and its narrow exact checker.
+
+This rules out a uniformly bounded global-copy-only replacement for
+the supplied local query along refinement. The next input construction
+must provide and price actual material-code/local access, growing
+independent preparations, or another material-dependent resource.
+The exact Golden detector remains valid with its supplied moving
+queries; its field-independent 128N bank does not provide that access.
+
+This bound is for each local likelihood and its jet, before neighboring
+Euler terms are summed. It does not exclude a different programme
+preserving only the summed physical equations, or an independently
+admitted material-dependent oracle or programme. It also does not
+identify a copy cap with expected Cost. The positive native material
+query, its preparation and clock, compulsory task/Book03 price and
+complete upstream sources remain open.
