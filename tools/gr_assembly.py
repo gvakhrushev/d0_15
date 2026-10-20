@@ -1179,6 +1179,24 @@ def ready_obligations(model: dict, actions: list[dict]) -> list[dict]:
                                          -row["potential_downstream"], row["obligation"]))
 
 
+def result_registry_budget(model: dict) -> dict:
+    """Expose the bounded active-result registry capacity in planning output."""
+    active = len(model["intake"]["results"])
+    limit = model["contract"]["registry_budget"]["max_active_results"]
+    remaining = max(0, limit - active)
+    return {
+        "active_results": active,
+        "max_active_results": limit,
+        "remaining": remaining,
+        "state": "at-capacity" if remaining == 0 else "available",
+        "guidance": (
+            "Reuse or strengthen an existing result node; consolidate only through CONTROL with provenance, and change the limit only explicitly."
+            if remaining == 0 else
+            "Reuse an existing result node when it covers the same scoped result."
+        ),
+    }
+
+
 def diagram(model: dict) -> str:
     names = {n: "o" + str(i) for i, n in enumerate(model["obligations"])}
     lines = ["flowchart TD"]
@@ -1434,6 +1452,7 @@ def main(argv=None) -> int:
                 prepare_source_fork_path_snapshots(model, prs, args.repo_root, commit_path_blobs)
             actions = next_actions(model, prs)
             data = {"live_verified": prs is not None, "actions": actions,
+                    "registry_budget": result_registry_budget(model),
                     "ready_obligations": ready_obligations(model, actions),
                     "readiness_scope": "Declared dependency inputs only; not proof, physical admission, proof success or launch authorization.",
                     "intakes": [{"application": a["id"], "obligation": a["obligation"],

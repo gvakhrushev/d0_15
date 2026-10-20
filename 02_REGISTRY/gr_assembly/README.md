@@ -178,6 +178,10 @@ unowned obligation points to CONTROL registration or reopening; a proposed
 application points to independent scoped review. This readiness is only a
 dependency calculation. It does not assert evidence, physical admission, proof
 success or launch permission, and unlock counts do not estimate proof success.
+The same output includes `registry_budget`, showing active result nodes, the
+limit and remaining capacity. At capacity, reuse or strengthen a scoped node;
+consolidation requires provenance, while raising the limit requires an explicit
+contract change.
 
 The goals have distinct conclusions: `D0-FOUNDATION` composes the necessary
 kernel; `THEORY-TRANSFER` owns the generic conditional transfer; `GR` requires

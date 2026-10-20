@@ -559,6 +559,25 @@ class AssemblyTests(unittest.TestCase):
         self.assertEqual(row["registered_tasks"][0]["task"], TASK)
         self.assertEqual(row["registered_tasks"][0]["action"], "eligible-for-control")
 
+    def test_registry_budget_reports_remaining_capacity_and_safe_at_capacity_guidance(self):
+        model = self.model()
+        budget = gr.result_registry_budget(model)
+        self.assertEqual(budget["active_results"], 0)
+        self.assertEqual(budget["max_active_results"], 10)
+        self.assertEqual(budget["remaining"], 10)
+        self.assertEqual(budget["state"], "available")
+
+        for index in range(10):
+            self.add_result(name=f"r{index}")
+        budget = gr.result_registry_budget(self.model())
+        self.assertEqual(budget["remaining"], 0)
+        self.assertEqual(budget["state"], "at-capacity")
+        self.assertIn("Reuse or strengthen", budget["guidance"])
+        self.assertIn("provenance", budget["guidance"])
+        code, stdout, stderr = self.cli("--json", "next", "--offline")
+        self.assertEqual(code, 0, stderr)
+        self.assertEqual(json.loads(stdout)["registry_budget"], budget)
+
     def test_ready_obligation_surfaces_overlap_as_its_next_process_step(self):
         model = self.model()
         actions = gr.next_actions(model, [self.pr(), self.pr(number=13)])
