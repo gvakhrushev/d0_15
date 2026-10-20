@@ -1,0 +1,58 @@
+PASS exact complete stopped-tree Golden/Kraft equality and real clock budget
+PASS full CAR16 compact Choi charges (0,+1,-1) with weights (1/2,1/4,1/4)
+PASS all retained stopped leaves: exact Born diagonal and full coherent Gram reduction
+PASS analytic full coherent code source and no-floor bound for every retained cap prefix
+{
+  "refinement": [
+    {
+      "m": 4,
+      "N": 21,
+      "epsilon": "0.016676008560209",
+      "max_tested_code_source": "0.027100960267277",
+      "normalized_code_source": "0.10840384106911",
+      "uniform_normalized_CAR16_bound": "1.8889639999721"
+    },
+    {
+      "m": 8,
+      "N": 42,
+      "epsilon": "0.0021994293419406",
+      "max_tested_code_source": "0.001776657596267",
+      "normalized_code_source": "0.014213260770136",
+      "uniform_normalized_CAR16_bound": "0.60299171545586"
+    },
+    {
+      "m": 16,
+      "N": 84,
+      "epsilon": "4.5409267845412e-5",
+      "max_tested_code_source": "1.6868925630921e-5",
+      "normalized_code_source": "0.00026990281009473",
+      "uniform_normalized_CAR16_bound": "0.033183623553126"
+    },
+    {
+      "m": 32,
+      "N": 168,
+      "epsilon": "2.453779012664e-8",
+      "max_tested_code_source": "4.0686104724442e-9",
+      "normalized_code_source": "1.3019553511821e-7",
+      "uniform_normalized_CAR16_bound": "5.3223654786814e-5"
+    },
+    {
+      "m": 64,
+      "N": 336,
+      "epsilon": "9.5064480866372e-15",
+      "max_tested_code_source": "7.0645752909144e-16",
+      "normalized_code_source": "4.5213281861852e-14",
+      "uniform_normalized_CAR16_bound": "6.7638059826417e-11"
+    }
+  ]
+}
+PASS actual CAR16 rank birth: C1 entropy but unbounded second difference at the common-output base
+{
+  "rank_birth_entropy_over_theta_squared": [
+    "0.36435441541075",
+    "0.60669603205734",
+    "0.84903146300827",
+    "1.0913668928996"
+  ]
+}
+SCOPE: one coherent compact stopped FLAG archive. Final readout, full128, physical admission and compulsory full Book03 action remain separate.

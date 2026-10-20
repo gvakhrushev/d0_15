@@ -1,0 +1,174 @@
+{
+  "status": "EXACT_RATIONAL_NEGATIVE_DIRECTION_PASS",
+  "source_commit": "07f2f2b15b7050a612d0075aa73db8dc46087a95",
+  "input_sha256": {
+    "02_REGISTRY/research/sources/d0_native_flag_source_minimum_2026-10-20/inputs/fixed_collar_root_07f2.md": "60149e109412b7716384aca6e64091b8a67f3374c4dfa02b170df1182e58dd1d",
+    "02_REGISTRY/research/sources/d0_native_flag_source_minimum_2026-10-20/inputs/collar_hessian_07f2.json": "a38386a86af4be283631d42a890caf66c035c12a4f9d421037160550d36989f4",
+    "02_REGISTRY/research/sources/d0_native_flag_source_minimum_2026-10-20/inputs/wide_collar_root_5b5.md": "9d90121a775dac6bd1df49cea04d398b248ca118fcf871b00e166000dd5db735",
+    "02_REGISTRY/research/sources/d0_native_flag_source_minimum_2026-10-20/inputs/wide_collar_5b5.json": "dee20425e01aeba2f090a55e2b1d221d57160a667eff9240a1c58368cd87e305",
+    "02_REGISTRY/research/sources/d0_native_flag_source_minimum_2026-10-20/inputs/wide_collar_checker_5b5.txt": "1956aff0f6227a72c4afe3224db898b846581268794d41eab1170b581a72bf28"
+  },
+  "chart_direction": [
+    -1,
+    -2,
+    -1,
+    0,
+    -2,
+    -1,
+    0,
+    0,
+    0,
+    1
+  ],
+  "chart_euclidean_norm_squared": 12,
+  "v_A_v_interval": [
+    "-2372501681/4000000000",
+    "-2372493199/4000000000"
+  ],
+  "actual_second_variation_interval": [
+    "-2372501681/32000000000",
+    "-2372493199/32000000000"
+  ],
+  "necessary_correction_second_variation_lower_bound": "2372493199/32000000000",
+  "normalized_necessary_operator_bound": "2372493199/384000000000",
+  "coframe_left_generator": [
+    [
+      -1,
+      -4,
+      -4,
+      -4
+    ],
+    [
+      0,
+      -1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      -1,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      -1
+    ]
+  ],
+  "metric_generator_nonzero": [
+    [
+      -2,
+      -4,
+      -4,
+      -4
+    ],
+    [
+      -4,
+      2,
+      0,
+      0
+    ],
+    [
+      -4,
+      0,
+      2,
+      0
+    ],
+    [
+      -4,
+      0,
+      0,
+      2
+    ]
+  ],
+  "incoming_time_link_generator": [
+    [
+      0,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      0
+    ]
+  ],
+  "outgoing_time_link_generator": [
+    [
+      0,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      -1,
+      0,
+      0,
+      0
+    ]
+  ],
+  "diagonal_only_false_minimum_control": "2167327926583/100000000000",
+  "bulk_embedding": {
+    "status": "EXACT_10_TO_64_KERNEL_INDEX_EMBEDDING_PASS",
+    "source_commit": "5b5c60047f1cfe518d4a8b42d9f71c6db033779c",
+    "fixed_L": 8,
+    "old_to_wide_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      63
+    ],
+    "embedded_direction_nonzero": {
+      "0": -1,
+      "1": -2,
+      "2": -1,
+      "4": -2,
+      "5": -1,
+      "63": 1
+    },
+    "chart_euclidean_norm_squared": 12,
+    "matched_principal_compression_entries": 100,
+    "actual_second_variation_interval": [
+      "-2372501681/32000000000",
+      "-2372493199/32000000000"
+    ],
+    "normalization": "A/8 in both charts at the same homogeneous root",
+    "method": "Same full action and Riesz section; exact period-eight Fourier kernel index identity. No wide spectral/Hessian replay.",
+    "scope": "Fixed L8 bulk chart and its sufficiently small curved branch by continuity. The delta-slice coframe C1_h tangent and link-log K=log(U)/h tangent have size of order 1/h; no uniform refinement instability or uniform-preparation theorem is inferred."
+  },
+  "scope": "Strict local minimization of the declared conditional whole HJR on its fixed-collar/full-Riesz fixedRIGHT128 family. Not a refutation of its exact stationary roots, of weighted laws or stationary GR, and not a derivation of native admission or complete D0 price."
+}

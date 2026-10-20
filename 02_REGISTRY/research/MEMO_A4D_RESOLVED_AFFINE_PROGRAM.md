@@ -253,6 +253,46 @@ new work for the next wave.
    only for a demonstrated changed input/method. Validate the changed argument
    narrowly during work and the affected composed inputs at acceptance.
 
+### Complete flag source and the next native selection step
+
+The [reviewed source/minimum intake](D0_NATIVE_FLAG_SOURCE_MINIMUM_MAIN_INTAKE_2026_10_20.md)
+supplies two exact results for the existing `constitutive` / `native_sector`
+front. Their carriers remain distinct until the physical map is proved.
+
+For the specified compact Golden-Julia execution, the whole chronological flag
+archive, including unfinished histories, obeys a C1 entropy-source bound
+`O(B epsilon log(255/epsilon))`. The owned exponentially small cap probability
+makes this component vanish after the declared polynomial normalization, with
+the actual prefix, preparation and observer-fiber jet budgets. This resolves
+the previously uncontrolled coherent-flag first source in that construction.
+Apply this estimate to the actual Book information algebra and retain the
+final readout, controller, preparation, work and clock charges. The nonzero code
+value remains in comparisons between programmes. A rank-birth counterexample
+prevents using this C1 result as an unproved smooth C2 or squared-ideal bound.
+
+For the different conditional whole-HJR roots, a nongauge allowed direction
+has second variation below `-2372493199/32000000000` at the base. The same
+direction embeds exactly from the ten-variable collar chart into the
+64-variable bulk chart; continuity preserves its negativity on sufficiently
+small curved branches. Both statements concern fixed L8. They supply no
+uniform refinement instability: the slice-localized tangent has C1_h size
+of order 1/h.
+
+The strict-minimum application now has a concrete necessary test. If the same
+root and variations are to minimize a C2 full price `S_HJR + E`, derive the
+missing component from the same admitted execution and prove `dE = 0` there
+and `D2E[v,v] >= 2372493199/32000000000`. Alternatively, derive the native
+constraint that genuinely excludes that path, or analyze the actual shifted
+root. This bound is a test of the derived price, never a prescription for a
+fitted correction. An invertible field redefinition preserves the negative
+inertia. Re-proving stationary existence or enumerating more paths cannot
+substitute for this missing physical step.
+
+These component theorems and the declared route change are available in main;
+the full source/admission map, joint refinement and original GR/raw-216
+terminals remain with the existing scientific owners. No accepted assembly
+goal changes merely from importing this packet.
+
 ## Current route to general relativity
 
 State the strongest complete conditional argument first: the owned verification
