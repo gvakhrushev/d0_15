@@ -115,6 +115,67 @@ assert(qCost.every(v=>Math.abs(v-minScalar)<1e-14),
 const frameCost=0.5;
 assert(frameCost>0&&forwardMark>0,
  "any actual charged observer/reference/semantic orientation in full task is a physical datum, not a random tie-breaker");
+
+// ACTUAL statistical price of signed original J23 readout in the
+// entire primitive 17-category Golden/Bell apparatus on original
+// K913 support.  Distinguish TWO hypotheses theta versus -theta,
+// both having EXACTLY identical native Book 8440 scalar history law.
+// Unlike the distinct Q8 two-port experiment, the full17 Julia
+// apparatus heralds only 1/4096 and the signed SO2 contrast is
+// small for genuine weak curvature. Never claim these have equal
+// Cost/Info/physics simply because both use p=phi^-1.
+//
+// Given original positive-root chart, for a touched triangle only
+// qJ+/qJ- exchange under reversal:
+//   B_local=sum sqrt(q_theta*r_reverse) =1−2k sin²theta
+//   k=p^4/(24*4096).
+// Whole Book mixture:
+//   B_total =1−massTouched*(1−B_local).
+// On iid N replays, Bhattacharyya B^N; total variation <=sqrt(1−B^(2N)).
+// For equal priors, Bayes error≥(1−TV)/2; achieving error<=epsilon
+// requires N>=log(4eps(1-eps))/(2log B). This is NECESSARY only.
+const touchedMass=all.reduce((s,w)=>s+
+  (Math.abs(hol(w))>1e-9?raw(w):0),0)/partition;
+const nativeSignedMarkK=sBell*p**4/24;
+const localOverlapLoss=2*nativeSignedMarkK*Math.sin(theta)**2,
+      wholeOverlapLoss=touchedMass*localOverlapLoss;
+function directBH(selected){
+ let sum=0,mass=0;
+ for(const w of all){
+  if(selected&&Math.abs(hol(w))<1e-9)continue;
+  const wi=raw(w),q=golden17(hol(w)),r=golden17(-hol(w));
+  mass+=wi;
+  for(let j=0;j<17;j++)sum+=wi*Math.sqrt(q[j]*r[j]);
+ }
+ return sum/mass;
+}
+assert(Math.abs(directBH(false)-(1-wholeOverlapLoss))<7e-13&&
+       Math.abs(directBH(true)-(1-localOverlapLoss))<7e-13,
+ "all original FULL 143480 labelled Golden/Book probabilities produce EXACT Hellinger reversal overlap from TWO true marked effects");
+const originalFullGoldenStatisticalLowerBounds=[];
+for(const epsilon of [.25,.1,.01,.001]){
+ const cutoff=4*epsilon*(1-epsilon);
+ const nWhole=Math.ceil(Math.log(cutoff)/
+    (2*Math.log1p(-wholeOverlapLoss)));
+ const nTargeted=Math.ceil(Math.log(cutoff)/
+    (2*Math.log1p(-localOverlapLoss)));
+ assert(nWhole>100*nTargeted&&nTargeted>1000000,
+   "ideal 17-output Golden/Julia statistically costly signed SO2 source: true necessary sample count for Bayesian error "+epsilon);
+ originalFullGoldenStatisticalLowerBounds.push({
+  equal_prior_Bayes_error_target:epsilon,
+  full_original_Book_8440_blind_path_trials_at_least:nWhole,
+  targeted_true_ABC_J23_Golden17_trials_at_least:nTargeted
+ });
+}
+console.log("FULL_GOLDEN17_SIGNED_INFORMATION_COST",JSON.stringify({
+ original_full17_signed_mark_constant:nativeSignedMarkK,
+ true_original_Book_probability_mass_touched:touchedMass,
+ whole_hellinger_overlap_loss:wholeOverlapLoss,
+ conditional_hellinger_overlap_loss:localOverlapLoss,
+ exact_information_theoretic_necessary_iid_trial_bounds:originalFullGoldenStatisticalLowerBounds,
+ physical_scope:"not an execution price, not a full G0 selected experiment; differs from native 2-port Q8 discrete ± central test"
+}));
+
 console.log(JSON.stringify({
  original_carrier:"K(9,11,13) all718 edges, all8440 based 2/3 histories and full143480 Golden17 labelled outcomes",
  original_native_cost:"nonuniform reciprocal primitive Cost>=1; scalar Book path law reversal-invariant",
