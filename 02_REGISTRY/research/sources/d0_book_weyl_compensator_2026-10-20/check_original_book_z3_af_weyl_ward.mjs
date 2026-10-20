@@ -51,6 +51,32 @@ must(Math.abs(lambdashift/lambda-q)<2e-13,"Book absolute PF pressure scales q");
 const B=-Math.log(lambda)/ell,Bshift=-Math.log(lambdashift)/ell;
 must(Math.abs(Bshift-B+t)<1e-12,"absolute native pressure B -> B-t, exact affine cocycle");
 
+// NEW exact original two-depth CLOCK/BOOK 3:2 affine cocycle cancellation.
+// On the true native supported paths, Z2=Tr K^2 and Z3=Tr K^3.
+// For any fixed real stage priors beta2,beta3, normalized true stage odds
+// are (beta3 Z3)/(beta2 Z2). Under uniform ORIGINAL Info shift t,
+// odds gain exactly phi^t, cancelling B=-log_phi(PF root)'s -t.
+// This is an observed clock-code contrast, NOT an extra physical action.
+function Z2(k){let a=0;for(let i=0;i<N;i++)for(let j=0;j<N;j++)a+=k[i][j]*k[j][i];return a;}
+function rootedZ2(k){let a=0;for(let j=0;j<N;j++)a+=k[0][j]*k[j][0];return a;}
+function rootedZ3(k){let a=0;for(let j=0;j<N;j++)for(let v=0;v<N;v++)
+ a+=k[0][j]*k[j][v]*k[v][0];return a;}
+const z20=Z2(K),z2t=Z2(Ks),root20=rootedZ2(K),root2t=rootedZ2(Ks),
+      root30=rootedZ3(K),root3t=rootedZ3(Ks);
+must(Math.abs(z2t/z20-q*q)<4e-13 && Math.abs(root2t/root20-q*q)<4e-13,
+ "original FULL/rooted 2-tick Book pressure shifts q²");
+must(Math.abs(root3t/root30-q**3)<4e-13,
+ "original TRUE a0-rooted native 3-tick loops shift q³");
+const beta2=p,beta3=p*p; // test-only positive fixed Golden reference weights
+const clockCode=(z2,z3)=>Math.log((beta3*z3)/(beta2*z2))/ell;
+const c0=clockCode(z20,Z3(K)),c1=clockCode(z2t,Z3(Ks));
+const cc0=clockCode(root20,root30),cc1=clockCode(root2t,root3t);
+must(Math.abs(c1-c0-t)<2e-12 && Math.abs(cc1-cc0-t)<2e-12,
+ "ACTUAL complete-stage 3-vs-2 clock odds carry +1 GOLDEN source");
+must(Math.abs((Bshift+c1)-(B+c0))<2e-12,
+ "original ABSOLUTE Perron -1 cocycle cancelled EXACT by adjacent Book stage odds +1");
+
+
 const I=n=>Array.from({length:n},(_,i)=>Array.from({length:n},(_,j)=>+(i===j)));
 const M=(A,B)=>A.map(row=>B[0].map((_,j)=>row.reduce((s,v,k)=>s+v*B[k][j],0)));
 const add=(A,B,c=1)=>A.map((row,i)=>row.map((v,j)=>v+c*B[i][j]));
