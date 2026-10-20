@@ -153,3 +153,33 @@ normalizer, genuine upstream equations and actual readout/admission.
 The larger loop dictionary, later rounds, refinement and raw216 remain
 open. No new task, price selector, fitted correction, registry promotion
 or physical GR acceptance is introduced.
+
+## 5. Published integration validation
+
+Scientific checkpoint `7c48dd91016e069c4b08b2b65b3748933859b74c`
+was published on the existing Draft334 branch. GitHub reads at that
+immutable commit verified all four file contents and exact Git blobs;
+the live branch and PR head both matched it at verification time.
+Eight remote preflight checks also matched the seven consumed runtime/
+analytical input blobs and unchanged parent before its appended §12.
+
+On that published integrated checkout, Python3.11.9 passed once:
+
+```text
+python tools/validate_repo.py
+python tools/validate_work.py
+python tools/validate_agent_protocol.py
+python tools/gr_assembly.py check
+python tools/gr_assembly.py render --check
+python tools/render_work_status.py --check
+python tools/generate_lean_views.py --check
+```
+
+All exited0 with empty stderr. Repository warnings0; assembly valid,
+`scientific_promotion=false`; work/Lean generated views were current.
+The new proof/review relative links and all five unchanged runtime source
+hashes were checked separately. No mathematical input changed during
+integration, so the isolated normal/optimized certificate was reused.
+The verification worktree was archived after its clean final review.
+This final section records validation only; the three scientific artifact
+hashes in §1 remain unchanged.
