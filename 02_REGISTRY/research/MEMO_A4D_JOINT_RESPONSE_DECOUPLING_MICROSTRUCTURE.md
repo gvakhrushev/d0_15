@@ -8751,3 +8751,36 @@ full16 forward Frobenius square6152/15625<1; actual nonidentity based face;
 modes atLu65/129, including actual moving-observer whitening. Both bounded
 independent reviews passed with scope corrections applied. No H/J field,
 whole native action selection, full geometric root or raw216 closure.
+
+
+## 20 October: reverse-synthesis audit, exact order jet and curvature normalization
+
+For a \(C^2\) scalar readout \(\mathcal O\) on the Lorentz group, the proposed mixed-order identity is exact when both paths use the same base preparation and readout:
+\[
+\left.\partial_a\partial_b\{\mathcal O(e^{aN_2}e^{b\bar N_3})-
+\mathcal O(e^{b\bar N_3}e^{aN_2})\}\right|_{0}
+=D\mathcal O_I([N_2,\bar N_3])=D\mathcal O_I(J).
+\]
+The readout Hessians cancel; this identity by itself does not prove that a native D0 history realizes either product or that its compulsory price selects this readout.
+
+The proposed finite experiment is already present in this PR. The [Lorentz-order checker](sources/d0_opposite_null_julia_order_memory_2026-10-19/check_lorentz_order_memory.py) passes the six-generator Lorentz algebra, all-grade exterior unipotent trace, and a specified positive full-support tester with nonzero rotation/boost order contrasts and a nonzero Golden-refined Shannon source. The companion [four-gate C2 checker](sources/d0_opposite_null_julia_order_memory_2026-10-19/check_four_gate_commutator_c2.py) separately checks the exact mixed jet on a grade-one Choi probe with all 16 fresh-flag histories and all 13 pointer outcomes retained; it reports a nonzero Golden-refined source. It also measures a nonzero direct-versus-sequential Julia composition defect: the all-success probability defect has value \(3/16\) at the flat point, and the four-edge defect has value \(63/256\). The [strict-margin checker](sources/d0_opposite_null_julia_order_memory_2026-10-19/check_full_tester_positive_margin.py) confirms positivity on its stated local chart. These are existence and regularity results for the named mathematical instruments, not a physical D0 selection theorem; in particular the checker does not promote the grade-one probe to an admitted full-CAR16 native readout.
+
+There is a factor-of-\(h\) mismatch in the proposed curvature notation. If
+\[
+(C_{\rm raw})_{ab}=K_b(z)-K_b(z+\hat a),
+\]
+then the exact stencil identity is
+\[
+\operatorname{tr}C_{\rm raw}=-\frac h2\Delta_h H,\qquad
+E_{v_v^+}=h^2\operatorname{tr}C_{\rm raw}=-\frac{h^3}{2}\Delta_h H.
+\]
+The area-normalized matrix is \(C_{\rm area}=hC_{\rm raw}\). In that convention,
+\[
+E_{v_v^+}=h\operatorname{tr}C_{\rm area},\qquad
+-\frac{\operatorname{tr}C_{\rm area}}{h^2}=\frac12\Delta_h H,
+\]
+and the finite Weyl limit and the summed boundary-flux formula use \(C_{\rm area}\). Thus the formulas in the proposal become consistent by defining its \(\mathcal C_h\) to be \(C_{\rm area}\). If it retains the displayed raw definition, the Euler row must use \(h^2\operatorname{tr}C_{\rm raw}\), while the Ricci, Weyl and flux formulas must use \(hC_{\rm raw}\). The exact [curvature-scaling checker](sources/d0_two_null_crossing_2026-10-19/check_discrete_curvature_scaling.py) passes the raw trace, area normalization, cubic Weyl witness and sourced flux identities.
+
+The four-harmonic uniqueness argument is valid only after assuming a translation-local linear five-point operator. Under that hypothesis, annihilating \(1,x,y,x^2-y^2\) fixes the stencil to a scalar multiple of \(h^2\Delta_h\); those tests do not establish that the compulsory full D0 source belongs to this operator class. The existing arbitrary-profile 40-to-3-to-1 certificate is the direct geometric result and does not need to be repeated with more profiles.
+
+The next parent substitution is therefore the physical one: derive, on one admitted common preparation, the actual full Cost–Info/Book/preparation/clock/work source and its LEFT/RIGHT/reference order jet, and compute the same-run composition defect on its observable quotient. It must either be paid and controlled by the selected native instrument or rule out that candidate. Then the same action still has to satisfy its matter source, internal Euler rows, Ward transfer and refinement/recovery obligations. GR_closed=false.
