@@ -113,3 +113,34 @@ and tests the Fisher/Beatty/refinement proposals with complete source
 accounting. It consumes the separately supplied stopped Golden task and
 preserves its actual task, compiler and information hypotheses. All
 original frozen packet evidence above remains unchanged.
+
+
+## Q8 information, paid random choice and fixed preparation duration
+
+Three bounded extensions now consume the same source without repeating
+the concurrent adaptive theorem or finite Golden resource construction.
+
+- [Q8 conditional information](book_source/Q8_CONDITIONAL_INFO_SOURCE.md):
+  the native relative comparator supplies G^2; complete information about
+  the tested sign, including quantum oldRIGHT, gives a strictly nonzero
+  full J2 source for every N>=2 and paid prefix T>=1. Its accuracy minimum
+  is within a fixed deterministic comparison class.
+- [Paid monitored choices](book_source/PAID_RANDOM_CHOICE_MINIMUM.md):
+  the complete native prefix code pays for its own mixing entropy, so
+  the existing all-cost adaptive first-order envelope extends to actual
+  paid classical random controllers.
+- [Fixed preparation clock](book_source/FIXED_CLOCK_PREPARATION_BANK.md):
+  the owned42N Golden bank has an all-trials, fully retained schedule
+  with one preparation duration under the stated primitive-clock map.
+  Its original source bound greater than0.195 survives every abort.
+
+Their Info cuts and physical hypotheses are distinct and remain explicit.
+The compulsory continuous field query and actual complete Book action
+are not supplied by combining conditional statements. The
+[review](book_source/Q8_RANDOM_CHOICE_FIXED_CLOCK_REVIEW.md) pins exact
+proof/checker bytes. Run only the changed finite schedule/source check:
+
+    python3 -O -B -W error 02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/check_fixed_clock_preparation_bank.py
+
+The Q8 and paid-choice results have analytical independent review.
+No historical geometry, all-cost census or Lean replay is claimed.

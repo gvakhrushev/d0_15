@@ -708,3 +708,25 @@ The wave is successful when:
 - the nonlinear J2 Einstein-class bridge is closed or has one exact named obstruction;
 - the discrete Palatini target span is classified on the actual full-affine quotient;
 - the five stable finite theorem packets are hardened in Lean without freezing provisional physics.
+
+
+## Scoped complete-source continuation: information, programme choice and clock
+
+The current [causal synthesis](A4D_CAUSAL_BOOK_SOURCE_TO_EXACT_GR_SYNTHESIS_2026_10_20.md)
+now applies the original Q8 comparator to the complete conditional
+information about its tested sign, proving a nonzero whole J2 source
+for every finite N>=2 and paid prefix T>=1. A separate native prefix-code
+lemma extends the already-owned all-cost stopped envelope to paid
+monitored random controllers. The concurrent Golden bank also admits
+an all-trials fixed-duration preparation schedule, retaining all failures
+and the original source bound under its declared clock interface.
+
+These results remove specified conditional Info/control/preparation
+premises. Their information cuts remain distinct. The missing physical
+application is still the compulsory continuous field query and its
+same-execution Book03 valuation/admission, with genuine upstream and
+clock sources retained. A discrete sign objective alone allows removal
+of that query; minimality must be applied to the actual required future
+instrument on neighbouring fields. The precise proofs and independent
+review are linked from that synthesis. No task, GR/raw216 terminal or
+assembly status is changed.

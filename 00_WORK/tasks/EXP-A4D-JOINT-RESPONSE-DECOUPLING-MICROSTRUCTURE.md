@@ -2860,3 +2860,46 @@ Validation: exact source/algebra/endpoint controls, rational native path
 counts, source-score derivative check, original interval Schur input and
 analytical independent review. Reuse unchanged all40/continuum/Lean
 owners. No new task, raw terminal, assembly acceptance or lifecycle claim.
+
+
+### 20 October: Q8 conditional Info, paid choices, fixed preparation duration
+
+Phase: native realization / same-execution complete source. Same existing
+constitutive slot and native-programme-v1 carrier; no new task or runtime.
+Inputs are pinned in the three book_source proofs. Consume the clean
+joint J2 query, concurrent all-cost adaptive blob62bd1f4 and finite
+Golden preparation-bank blobe7b92fae, preserving their distinct contracts.
+
+Precise parent applications: (1) the original Q8 relative comparator
+supplies G^2; complete conditional information about the tested sign,
+including fixed quantum oldRIGHT and fresh work, gives a nonzero full
+16+24+2 source for every N>=2,T>=1 and a fixed-instrument deterministic
+accuracy minimum; (2) the actual paid prefix of each fresh monitored
+random choice costs at least its entropy, extending the existing
+adaptive first-order envelope without claiming equality of off-stratum
+complete infima; (3) an all-trials bank and fixed reverse routing remove
+READY-dependent preparation delay while retaining alpha c_N DJ2 and
+its bound greater than0.195 under a held operational-to-physical clock.
+
+Source convention: natural-log original J2, base-phi information and
+actual retained primitive/report clocks. These are separate Info
+contracts, not a newly selected common Book03 valuation. The Q8 sign
+task alone does not force the added continuous geometric query; its
+deletion is still a cheaper on-stratum competitor. Other task classes,
+coherent program superpositions, full physical price/admission,
+upstream preparation, clock/refinement and H+J+R terms remain open.
+
+Write paths: existing book_source/Q8_CONDITIONAL_INFO_SOURCE.md,
+PAID_RANDOM_CHOICE_MINIMUM.md, FIXED_CLOCK_PREPARATION_BANK.md,
+check_fixed_clock_preparation_bank.py and their combined pinned review;
+append-only applications in the existing causal synthesis, packet README
+and scientific-route memo. No duplicate all-cost/factory proof is added.
+
+Smallest decisive check: exact complete finite schedule/leaf enumeration,
+three-CNOT reverse routing, failed-seed continuation, genuine00 padding,
+whole entropy and unconditional source factor. Root and independent
+reviewer execute the new checker; the Q8 monotonicity and paid-choice
+Kraft/KL application are independently reviewed analytically. Original
+geometry, continuum, formal modules and historical receipts are reused.
+This is supporting native-source work with retained physical hypotheses,
+not CONTROL assembly acceptance, raw216 closure or GR_closed.

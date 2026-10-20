@@ -514,3 +514,67 @@ replay. The optional terminal bit-price window remains a different task.
 Physical obligation, actual complete field-independent price ledger and
 Book Info remain premises; no existence or stability of a field minimum,
 unrestricted physical-programme minimum or GR closure is inferred.
+
+
+### Complete Q8 information, paid programme choice, and a fixed preparation clock
+
+The [Q8 conditional-information extension](sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/Q8_CONDITIONAL_INFO_SOURCE.md)
+uses the actual relative comparator G^-1 Z G = Z G^2. Its second Golden
+rotation is part of that independent comparison. For fixed tested sign X,
+prior pi=P(X=-)>0 and arbitrary fixed quantum oldRIGHT R, the complete
+fresh-record gain is I_phi(X:new record | R). The full finite stopped
+record, quantum work and actual clock give, for every N>=2 and actual
+per-attempt prefix T>=1,
+
+    S_N'(4p^3) <= -pi[(T+1)-2p^6] < 0,
+    D S_N = gamma_h 8p^(9/2) S_N'(4p^3) D J2.
+
+The comparison source therefore preserves every original16+24+2 row
+and lambda_minus under the owned clean full-query interface. Success
+thinning proves monotonicity even with quantum side information.
+For a strict accuracy budget the least admissible deterministic cutoff
+is an actual minimum within that same comparison/stopping class.
+Average-error randomized cutoffs and other instruments are not optimized.
+The sign task alone admits deletion of the added geometric query W;
+the required future task must exclude that cheaper implementation by
+requiring the actual field-dependent instrument in a neighbourhood.
+
+The separate [paid random-choice extension](sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/PAID_RANDOM_CHOICE_MINIMUM.md)
+consumes the concurrent all-cost adaptive owner, without repeating it.
+For every complete monitored native choice leaf w, actual C(w)>=L(w)
+and the original Golden prefix law give Z=sum_w p^C(w)<=1. Thus
+
+    E C - H_phi(W | history)
+       = D_phi(pi || p^C/Z) - log_phi Z >= 0.
+
+Old retained seeds receive no second fresh entropy credit. The enlarged
+paid classical-control class retains the owner's full-work first-order
+envelope, including ties. In its T>=5,ell>=1 domain a genuine full-field
+local minimum still requires D J2=0. Existence/stability, coherent
+superpositions of programmes and arbitrary unpriced randomizers are not
+asserted. This theorem uses the owner's complete monitored-entropy cut.
+
+The [fixed-clock extension](sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/FIXED_CLOCK_PREPARATION_BANK.md)
+consumes the concurrent finite Golden bank e7b92fae. Execute all K trials
+of all42N resources, retain every failure, use paid equal-duration00/10
+reports and reverse-scan three-CNOT routing. Seed-failure branches still
+execute every inverse echo. Under the declared equal-duration addressed
+controller/primitive clock, every branch has one preparation duration.
+The full expected prefix price may vary with the transcript but remains
+field independent. The READY probability is alpha=(1-r^K)^(42N), and
+
+    S_total = S_pre + alpha S_N,
+    D S_total = alpha c_N D J2,   |alpha c_N| > 0.195.
+
+This removes transcript-dependent preparation delay for the stated
+addressed query. It does not derive the physical clock map or replace
+later same-field retries by queries at evolving physical times.
+
+These are three scoped applications with explicitly different information
+contracts; they are not silently identified as one selected Book03 action.
+The compulsory continuous field query, actual primitive/Info admission,
+genuine upstream preparations, global clock and full H+J+R sources remain
+the required physical composition. The
+[independent review](sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/Q8_RANDOM_CHOICE_FIXED_CLOCK_REVIEW.md)
+pins the proofs and the narrow exact scheduling/complete-leaf check.
+No historical geometric or Lean proof is rerun or promoted.
