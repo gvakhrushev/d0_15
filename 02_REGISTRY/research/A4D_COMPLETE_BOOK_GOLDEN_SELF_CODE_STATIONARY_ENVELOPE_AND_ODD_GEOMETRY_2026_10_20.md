@@ -127,6 +127,62 @@ Thus the exact full-flag scalar cancellation of extra conditional self-informati
 
 **Do not identify** this test one-dimensional scene-triangle-to-J23 mark with the complete independent actual 4D Role first-order Palatini action: a genuine G0/Golden LEFT address/face map and original CAR16 Γ four-Role chirality with its full6 SO source are required. Those were separately constructed as mathematical observables; their native paid physical action selection is an unproved statement, not hidden by this scalar identity.
 
+## 4.1. NEW FUNDAMENTAL M1 SELECTOR THEOREM: probability-only \(D_{\min}\) can NEVER produce signed Palatini, and may not even be differentiable
+
+The latest exact native Golden17 reversal-owner establishes \(q_{17}(P^{-1})=\mathscr R q_{17}(P)\), with \(\mathscr R\) a PERMUTATION of the six original \(+/-\) pairs leaving all other five true outcomes including Bell failure fixed. This gives a theorem applying to **EVERY** full-label code-selection algorithm that sees ONLY probabilities and whose admissible codebook class is closed under full outcome relabeling.
+
+Let \(\mathscr C\subset\mathbb R_{\ge0}^{17}\) be the set of allowed output code-length vectors (e.g. genuine original F/R prefix/injective codes, with costs \(\#F+2\#R\)), closed under relabeling. The actually optimal **probability-only** expected code reading is
+
+\[
+  V(q):=\inf_{\mathbf L\in\mathscr C}\sum_rq_rL_r.
+\]
+
+For ANY permutation R, relabeling allowed lengths in the infimum gives EXACTLY
+
+\[
+\boxed{V(Rq)=V(q),\qquad V(q(P^{-1}))=V(q(P)).}
+\]
+
+No Taylor expansion, near-flat assumption or finite sample is used. At a compact Lie curve \(P(t)=\exp(tX)\), \(V(t)=V(-t)\). Whenever differentiable at t=0 its first derivative is ZERO. Therefore a cost-selection process based ONLY on the unordered present Golden probability multiset cannot produce the signed Einstein–Palatini first source no matter how near-optimal its compressor is. This is a strong no-go specifically for **probability-only** \(D_{\min}\), NOT for original \(D_{\min}\) on future-distinguishability classes.
+
+**Concrete true F/R CODE counterexample to even smooth Euler.** Construct 17 genuinely ORIGINAL prefix-free words over F (true cost1) and R (true cost2) by preserving the simple F leaf and repeatedly expanding the shortest weighted R-branch leaf; their actual sorted costs are
+
+\[
+(1,7,7,7,7,7,\underbrace{8,\ldots,8}_{8},
+ 9,9,9).
+\]
+
+An admissible label-assignment chooses the actual shorter code for the more probable outcomes. This minimizes average length for this fixed true prefix-codebook by the ordinary rearrangement inequality. At original native p-Golden J23 flat P=I, all twelve signed marks have equal probability \(\kappa=p^4/(24\cdot4096)\). Along original \(P(t)=\exp(tJ23)\),
+
+\[
+q_{J+}'(0)=+\sqrt2\kappa,\quad
+q_{J-}'(0)=-\sqrt2\kappa.
+\]
+
+For t>0 the growing true J+ mark receives genuine F/R cost7 while the shrinking J- receives cost9; for t<0 the assignments exchange. Hence there is an EXACT one-sided asymptotic:
+
+\[
+\boxed{V(t)=V(0)-2\sqrt2\,\kappa\,|t|+O(t^2)
+      =V(0)-\frac{\sqrt2p^4}{12\cdot4096}|t|+O(t^2).}
+\]
+
+The native finite codebook is VALID and the optimized expected length is not differentiable at the flat ORIGINAL Lorentz identity. The checker confirms original \(V(0)=1.001485621871668\), right slope \(-4.1978144949\cdot10^{-6}\) and left slope with opposite sign; direct t=±1e−5 sampling agrees within \(4\cdot10^{-11}\). The original full entropy at flat is only \(H_\varphi(q)=0.00554532683634...\), so exact finite primitive F/R code length is NOT equal to ideal Shannon self-information, as expected from the real endogenous action unit and coding overhead. This does not prove the GLOBAL original \(D_{\min}\) chooses this codebook or is necessarily nonsmooth; it proves that *smooth Golden statistics + native optimal CODE* do NOT logically imply a smooth field action.
+
+**Conversely, a semantically FIXED original \(+/-\) code can have an ODD field source** if the actual future physical verification genuinely distinguishes the two oriented histories. For arbitrary genuine fixed code costs \(\ell_{J+},\ell_{J-}\) with all other outcome costs field independent:
+
+\[
+\boxed{
+  D_{J23}\mathbb E\ell\big|_{P=I}
+    =\sqrt2\,\kappa(\ell_{J+}-\ell_{J-}).
+}
+\]
+
+This is necessary and sufficient in the full17 J23 linear signed source channel. For a VALID original Golden F/R cost difference \(1-2=-1\), the actual finite coefficient is \(-2.0989072474493777\cdot10^{-6}\), independently finite-differenced from the REAL positive original Golden probabilities to \(9\cdot10^{-15}\). An \(R\)-symmetric code has zero odd source. The source sign and magnitude are thus determined by **real future semantic/operational relative price**, not probability entropy alone.
+
+The newly Lean-formalized \`D0.Foundation.EmpiricalTheoryFactorization.futureSetoid\` and \`D0.Representation.GoldenProcessContext.golden_context_processes_different_future\` supply exactly the missing CLASS of operational structure: two original Golden histories can share their CURRENT endpoint readout yet become distinguishable after ONE generated native mathematical intervention. The already-owned CAR16 \(\Gamma\) four-Role oriented trace and Golden17 signed positive-root representation supply a mathematical orientation-sensitive future test. None of these facts yet proves the **real compulsory M1/G0 price difference or paid implementation**; the new theorem tells that proof exactly what it must preserve.
+
+**Scientific consequence:** the microscopic relative Cost/Info selector is not just a nuisance normalization: a non-self-referential orientation-sensitive semantic source is physically indispensable to get signed gravity out of real history codes. The exact self-code/entropy compensation of §§1–3 neutralizes the EVEN spontaneous pointer-charge, while it would also neutralize an ODD source if the proposed price is solely an endogenous \(-\log q\) of that same complete record. Therefore the signed Einstein source must be carried separately by the actual noncommutative \([q(\gamma)]\) Book/CAR/\(\Gamma\) feedback with a paid coframe reference (or by an independently forced future-context Cost asymmetry). This separates **normalization and source selection** without smuggling a fitted Holst/Einstein term into scalar Book pressure.
+
 ## 5. Why this is a real strategic reduction and one sharp operational proof target
 
 Previous route demanded too much: \`S_full=F(f)\` OFF SHELL or full Golden17 Petz recovery before any action-source equality. That incorrectly elevates the standalone pointer Shannon source \`DH\` to the original Book stationary action. The new theorem gives a **provably complete, minimum internal KL envelope** in which Golden pointer Shannon source cancels against its *own* moving conditional code length exactly, while the ordered signed geometric CAR channel and original Book absolute pressure/Cost+Info remain unaffected.
