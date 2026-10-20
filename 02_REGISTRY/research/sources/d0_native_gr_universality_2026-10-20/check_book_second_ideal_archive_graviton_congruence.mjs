@@ -140,6 +140,27 @@ function rank(X,tol=1e-7){
  }
  return rr;
 }
+// NECESSARY AND SUFFICIENT vertical second-source test on the
+// ORIGINAL 48-field shared-link tangent. L has rank N-1, so its
+// row-space projector is zero on all 32 coframe entries and
+// I - 11^T/N on the 16 true periodic shared-link coordinates.
+const Pi=mat(D,D);
+for(let i=0;i<N;i++)for(let j=0;j<N;j++)
+  Pi[coframe+i][coframe+j]=(i===j?1:0)-1/N;
+const Delta=mat(D,D),PD=mat(D,D);
+for(let i=0;i<D;i++)for(let j=0;j<D;j++)
+  Delta[i][j]=E[i][j]-HP[i][j];
+for(let i=0;i<D;i++)for(let j=0;j<D;j++){
+  let total=0;
+  for(let k=0;k<D;k++)if(Pi[i][k])
+    for(let l=0;l<D;l++)if(Pi[l][j])
+      total+=Pi[i][k]*Delta[k][l]*Pi[l][j];
+  PD[i][j]=total;
+}
+const verticalSourceError=Math.max(...Delta.flatMap((row,i)=>
+  row.map((x,j)=>Math.abs(x-PD[i][j]))));
+assert(verticalSourceError<1e-13,
+ "TRUE second-source residual does not factor through actual Df");
 const kernel=[];
 for(let i=0;i<N;i++){
  const v=Array(D).fill(0);v[2*i]=1;v[2*i+1]=-1;kernel.push(v);
@@ -183,6 +204,7 @@ console.log("PASS actual scalar Book Perron internal B''(0)",Bzz);
 console.log("PASS sixteen true native w_i",wMin,wMax);
 console.log("PASS nonzero MOVING heterogeneous original Book history->geometry mixed Hessian",Math.min(...dw),Math.max(...dw));
 console.log("PASS full history double Schur Hessian extra ||M||max",Math.max(...M.flat().map(Math.abs)));
+console.log("PASS complete source iff VERTICAL Hessian test on all 33 density-kernel directions",verticalSourceError);
 console.log("PASS exact 48x48 Hessian conjugacy max discrepancy",maxErr);
 console.log("PASS full geometric Hessian rank 30 BEFORE and AFTER original Book history reduction",rankOriginal,rankReduced);
 console.log("PASS all 18 exact common kernel modes are protected",kerErr);
