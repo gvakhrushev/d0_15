@@ -357,3 +357,26 @@ No full old heat/feedback, all40 geometric Cartan, Lean, native compiler
 or raw216 replay is claimed. The generic proof above supplies the
 arbitrary-spacing and refining statements; a small periodic fixture is
 not presented as a global Einstein solution.
+
+
+## 8. 20 October independent joint-critical audit — exact pp-profile SOURCE-FLATNESS and a STRICT rank128 preparation saddle
+
+Independent extension [\`A4D_CURVED_REFERENCE128_FULL_HJR_PROTECTED_SOURCE_AND_PREPARATION_SADDLE_GATE_2026_10_20.md\`](A4D_CURVED_REFERENCE128_FULL_HJR_PROTECTED_SOURCE_AND_PREPARATION_SADDLE_GATE_2026_10_20.md), with replay [\`check_native_reference128_preparation_saddle_and_protected_ward.py\`](sources/d0_curved_native_preparation_2026-10-20/check_native_reference128_preparation_saddle_and_protected_ward.py), strengthens precisely what the preceding positive theorem does—and does NOT—prove.
+
+Because the exact full16 reducing embedding \(J\) and \(\Delta_\parallel\) in (7) are independent of \(H\) and all common-null profile connections, selfadjoint differentiation gives \((D_{H,K}\Delta)J=0=J^\dagger(D_{H,K}\Delta)\) for **every** such variation at fixed observer \(\nu,\ell\). Hence for ANY protected fixedRIGHT preparation \(M=JB\), the genuine Rayleigh source and the entire preparation cross source are exactly zero on those restricted pp-profile directions:
+\[
+\boxed{D_{H,K}R=0,\quad D_{H,K}D_MR=0,\quad
+R(H,K,JB)=\operatorname{Tr}(B^\dagger\Delta_\parallel B),}
+\]
+constant to ALL orders in \(H,K\) at fixed B. This is NOT a statement that the true R coframe/observer sources of (13) and (16) vanish: the latter remain and must be solved jointly. A valid 10×10 internal IFT/Schur containing only protected pp-profile link variables cannot attribute its curvature selection to R or its preparation cross block; actual H+J must provide that block.
+
+More importantly, a particular **explicit offered** full-rank reference128 preparation from §3 (32 nonzero cosine/sine pairs × low grades b0,b1, \(L_u\ge65\)) is exact preparation-STATIONARY but NOT a full fixedRIGHT **local minimum**. Two native unoccupied k=0 zero-energy modes remain in the same protected sector. Rotating any occupied positive-energy Fourier vector \(\phi_k\) into such an unoccupied \(\phi_0\) with one actual LEFT-unitary yields a full-Hilbert valid preparation with SAME \(\Sigma_R=I_{128}/128\) and
+\[
+\boxed{R(\theta)=R(0)-\tfrac{\lambda_k}{128}\sin^2\theta,\qquad
+R''(0)=-\lambda_k/64<0.}
+\]
+With \(h=T_u/L_u\), the negative direction remains bounded away from zero in the fixed physical-period refinement: \(R''(0)\le-\nu^2/(4T_u^2)\) for k=1. H+J is independent of M on the conditional owner, so this is a genuine preparation **saddle direction** of the full conditional H+J+R when there is NO separately selected M-dependent work/constraint. It does not invalidate stationarity or an IFT with an **indefinite** genuinely invertible internal block; it invalidates claims of a positive-minimum \(H_{MM}\) / stable Schur for this particular preparation without actually paying a selector.
+
+The same reasoning applies to the §3 nonzero-only quartet rank128 option with four unoccupied zero modes when \(L_u\ge33\), but **NOT** automatically to the fully occupied \(L_u=32\) quartet block (where no unused protected k0 exists and the full complement must be checked). At \(L_u=2\), the protected quartet carries only 8 dimensions, low grades only 4: neither is the same 128-rank protected execution as the original \(L=2\) 16-site/640-Euler Golden fixture. A curved rank128 finite joint solution must supply its actual \(L_u\), complete reference rank, other grades, boundary collar and admissible full preparation orbit; numerical 10-variable roots may still exist but do not bypass this exact capacity requirement.
+
+Therefore this owner is a robust constructive **stationary preparation** theorem, not a selected stable curved Einstein root. Real physics continues to require: chosen full Book H+J+R+oldRIGHT/clock/Cost-price action, all observer/coframe/link Euler, full z critical quotient, fixed source before candidate and h-uniform raw216 refinement. \`GR_closed=false\`.
