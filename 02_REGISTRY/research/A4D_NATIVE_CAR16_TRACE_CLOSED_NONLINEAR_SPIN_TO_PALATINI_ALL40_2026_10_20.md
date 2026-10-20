@@ -91,3 +91,26 @@ This is an exact finite same-carrier adversarial witness. It does NOT refute loc
 **Not solved:** exact selection of the physical 4D time/observer Role; a paid **original** Golden LEFT/oldRIGHT/G0 full-step controlled Q8/Spin composition on actual scene edges and site-conditioned shared Role links; compulsory H+J+R/Cost−Info/clock selection of the reconstructed Palatini functional; true parity-sensitive Dirac kinetic term, full invariant stress and matter Ward; joint microstructure selector (#310/RAW-216 etc), allowed global 16 Role-torus Spin twists, Einstein solution existence and uniform refinement. A trace **identity** does not force a native physical \`ActionProtocol\` to optimize or charge that contraction.
 
 **Exact independent certificate:** \`sources/d0_native_spin_q8_car16_2026-10-20/check_native_car16_spin_to_exact_palatini_trace.py\`. Executed on actual original integer Jordan–Wigner matrices and rational finite real Spin boost/rotation links; covers all 256 ε components, all six truly shared-link face commutators, nontrivial invertible coframe, Hodge, group center, and half-angle counterprobe. No Lean theorem for these new trace identities is claimed; promotion requires explicit formalized proof and full native G0 typing. \`GR_closed=false\`.
+
+
+## 6. EXACT full nonlinear local Spin frame Ward — no frozen coframe or fixed link independence
+
+The same intrinsic trace Spin→SO map gives an **all-order gauge-covariant** original six-shared-link construction. Let \(G\) be ANY proper Spin change of local tangent frame, and \(Q=\Lambda(G)\) in the row-index convention of equation (2). For four TRUE shared Spin link matrices \(S_r\), under the same constant local frame change at the tested Role site,
+\[
+S_r'=G S_r G^{-1},\qquad
+S_{rs}'=G S_{rs}G^{-1},\qquad
+\boxed{\Lambda(S_{rs}')=Q^{-1}\Lambda(S_{rs})Q.}\tag{9}
+\]
+Put \(L=Q^{-1}\). The original coframe columns transform as \(e_r'=L e_r\) (equivalently, the row-stored coframe matrix \(E'=E L^T\)). Then the intrinsic trace \(\eta,\epsilon\) from (1) give their exact Lorentz covariance, and for **every** finite six-face curvature \(\mathscr F_{rs}\):
+\[
+\mathscr F'_{rs}=L\mathscr F_{rs}L^{-1},\qquad
+\boxed{\sum_{r<s}\epsilon_{abcd}
+e_r^{\prime a}e_s^{\prime b}\mathscr F_{rs}^{\prime cd}
+=\sum_{r<s}\epsilon_{abcd}
+e_r^a e_s^b\mathscr F_{rs}^{cd}.}\tag{10}
+\]
+This is an algebraic identity of the original metric+orientation traces under a proper Spin frame gauge, not a gauge fixing, a choice of preferred six face labels or an assumption that the four genuine Role links vary independently for each plaquette. It is also invariant under the central flip \(G\mapsto-G\), while a fully coherent Spinor reference can still see relative central winding.
+
+**Exact nontrivial rational regression added:** use the same genuine NONCOMMUTING \(G=(5/4+3/4\,\Gamma^{01})(3/5+4/5\,\Gamma^{12})\), conjugate all FOUR previously selected Spin links and their inverses, recompute all SIX shared commutator face holonomies and their native \(\Lambda\), and transform the entire NON-DIAGONAL original coframe. Every face satisfies \(\Lambda'_{rs}=L\Lambda_{rs}L^{-1}\), and the exact complete contracted original site source remains the *same* rational \(3325188579/200000000\) before and after changing the Spin frame. No approximate numerical tolerance or external coefficient is used.
+
+**Scope:** this establishes local gauge consistency of the **geometric representation** at finite fields. It still does not derive a physical globally controlled original G0 Golded LEFT site-dependent Spin gauge compiler/oldRIGHT observer, nor does it prove the 4D Spinor kinetic source \(\nabla_aJ^a\), the compulsory Book Einstein–CAR action or uniform refinement. \`GR_closed=false\`.
