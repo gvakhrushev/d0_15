@@ -327,3 +327,37 @@ application. The next step needs an admitted joint solder/pairing/link
 transition and its complete price, or the separate native stationary-law
 route. This does not replace the existing full-source, material-access
 or physical-admission obligations, and does not close a positive GR premise.
+
+## 11. Native stationarity: an actual independent preparation source
+
+The [primary CAR preparation application](PRIMARY_CAR_PREPARATION_SOURCE.md)
+tests the existing full positive-adjoint, closed-history H+J+R on the
+original local nonvacuum primary chart. Its physical waveform is
+Psi=sigma²(0,t u(u-1/4)), sigma=p³; midpoint increments are exact.
+The finite L4 regulator retains the actual cost20 density, full16 CAR,
+all128 RIGHT columns and original true shifted adjoint. It does not
+turn the unwrapped polynomial history into a periodic all42 solution.
+
+At w=(1,1,2,2), the actual six-letter CAR return rotates the original
+14/15 pair while preserving the completed current, geometry and full
+RIGHT Gram. Its preparation source for the specified HJR is
+
+```text
+dS/dtheta=-7p sigma² sqrt(rho_w rho_(w+u)) t/2048+O(t³)<0
+```
+
+for all sufficiently small positive t. The proof composes the complete
+Dirac before projecting and retains the off-diagonal Fourier kernel
+7/4096. Parity and even analytic geometry establish the nonempty interval;
+no floating extrapolation or new arbitrary-angle primitive is used.
+An actual finite Golden word also lowers the declared state functional.
+
+Thus this mathematical HJR cannot itself provide the joint stationary
+law at these representatives merely by matching their geometric rows.
+The next same-execution source derivation must also account for this
+independent preparation equation. The word's6k letters, controller,
+address, preparation and ticks remain additional price terms: the
+result does not prove a decrease of complete paid Cost-Info. Other
+profiles, a derived native constraint or a fully derived additional
+price may change the conclusion. The [review receipt](PRIMARY_CAR_PREPARATION_SOURCE_REVIEW.md)
+pins the scoped application; no positive GR premise is closed.
