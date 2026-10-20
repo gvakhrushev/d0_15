@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "scope": "read-only integration hashes, ten published snapshot comparisons, receipt bindings, and wrapper literal dependency inventory; no mathematical replay",
+  "wrapper_input_count": 25,
+  "published_input": "b8574656b0613fac8e4ff65e2292d6b180cbd8d0",
+  "published_snapshots_checked": 10,
+  "saved_final_replay_receipts_checked": 5,
+  "hashes": {
+    "02_REGISTRY/research/A4D_SAME_HISTORY_PRICE_AND_SOURCE_COMPOSITION_2026_10_20.md": "1318f8a3719bffd11c8d319a04beede4bd2c872365fc87960a1110c01a2274a7",
+    "02_REGISTRY/research/certificates/a4d_same_history_price_composition_check.py": "5cac9c8df250546a2abd177f2ac3b5bfdf895388b02f7bffc82d6d501db995a2",
+    "02_REGISTRY/research/sources/d0_same_history_price_composition_2026-10-20/paid_port_history.md": "ef69c2052237fbe8e916acf16691f9b14b4c1c2465a7837e838db2baeb95449d",
+    "02_REGISTRY/research/sources/d0_same_history_price_composition_2026-10-20/clock_source_reduction.md": "7ca9575697d5de7c78794bc5d2879f6c2292caadb4f75334d0e1479fd1287069",
+    "02_REGISTRY/research/sources/d0_same_history_price_composition_2026-10-20/prepared_price_feedback.md": "73bf64d8c05b2624e092d851cab5f11019fd886c74d6b332ed97f4d4f4d4d434",
+    "02_REGISTRY/research/sources/d0_same_history_price_composition_2026-10-20/d0_sourced_connection_proof.md": "b782f919536002c0099b5286290fcde7b2b2b819e9a185bb118a7f92b206dea3",
+    "02_REGISTRY/research/sources/d0_same_history_price_composition_2026-10-20/check_paid_port_cost.py": "36a091aff2dc826aeabfac0c60a453a80c5bbfc23ecdaf0fd554b17cd8dd1bf3",
+    "02_REGISTRY/research/sources/d0_same_history_price_composition_2026-10-20/check_clock_payment.py": "2cd1c74b41685606128291001c72b3b4b576a91755b818e2b60475fe2f8ca0a5",
+    "02_REGISTRY/research/sources/d0_same_history_price_composition_2026-10-20/check_prepared_price_feedback.py": "9a33002a28f4ea52dc0f35a0417a110c2a40e2b43ed290dfa0670ae57befb619",
+    "02_REGISTRY/research/sources/d0_same_history_price_composition_2026-10-20/d0_sourced_connection_probe.py": "138e8f952b2f59af6ae600691295b6e34ec58200d83b899d0b93ba7dd96c9c48",
+    "02_REGISTRY/research/sources/d0_same_history_price_composition_2026-10-20/check_connection_coframe_review.py": "5a9b815788f0caa1d793685ef54e0a07dd34d48c19a06a0af9899b6fc86861ce",
+    "02_REGISTRY/research/sources/d0_same_history_price_composition_2026-10-20/SOURCE_PINS.json": "33a3f178c5e49561ab145de649e429ee021be3a90fd6d6b6bc64d6b144a4beb3",
+    "02_REGISTRY/research/sources/d0_same_history_price_composition_2026-10-20/FINAL_REPLAY.json": "7e03883cd29b1de06ae0c9d0eeb7b12fea7227327f7ed68c9302878096bd7abf",
+    "02_REGISTRY/research/sources/d0_same_history_price_composition_2026-10-20/README.md": "746a48e9295fbcebe877f7a0359401547dbcffdc415ca90619b720fe1e1b2557",
+    "02_REGISTRY/research/sources/d0_same_history_price_composition_2026-10-20/FUTURE_LAW_APPLICATION_REVIEW.md": "eb31d4536ec090361c772a36e810fa84b1f3742dc159c08dab6a8fd9c652f141",
+    "02_REGISTRY/research/sources/d0_native_price_source_synthesis_2026-10-20/original_record_source.md": "09afa052d41011683e8adcf47f99829dff54379888ae08640a80fbf7a36c43cd",
+    "02_REGISTRY/research/A4D_NATIVE_PAID_SOURCE_AND_PAIRED_FEEDBACK_SYNTHESIS_2026_10_20.md": "75e40ee862d843c4661068200d4e12115a7f63098fb5df5015d7e1541bdd82a8",
+    "02_REGISTRY/research/sources/d0_same_history_price_composition_2026-10-20/POSITIVE_GR_APPLICATION_REVIEW.md": "c1db03d2788edfe4cd3fd193193447fd9279471d0d8cac241658a10c687fdcc5",
+    "02_REGISTRY/research/sources/d0_same_history_price_composition_2026-10-20/POSITIVE_GR_APPLICATION_INPUTS.json": "219d9a9e98d93058db7d71a8eb7d04b4179e03d399ea4a9d6a8afab8840e1a44"
+  },
+  "final_memo_sections_reviewed": "1\u20137; \u00a77 source-identity scope consumes the existing all40 theorem without mathematical replay"
+}

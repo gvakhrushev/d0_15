@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "checks": 23,
+  "native_coframe_spatial_signs": [
+    1,
+    1,
+    -1,
+    -1
+  ],
+  "native_lc_coefficient": "-Hprime/2",
+  "palatini_volume_times_scalar_prefactor": "nu^(-2)",
+  "moving_coframe_linear": [
+    [
+      9,
+      "-1/2"
+    ]
+  ],
+  "palatini_full_hessian_determinant": "4294967296",
+  "driven_geometric_block": [
+    [
+      "0",
+      "-2"
+    ],
+    [
+      "-2",
+      "0"
+    ]
+  ],
+  "scope": "Independent exact coframe, torsion, and scalar-curvature contraction only; no CAR replay."
+}

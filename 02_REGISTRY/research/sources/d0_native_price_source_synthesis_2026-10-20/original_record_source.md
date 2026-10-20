@@ -1,6 +1,33 @@
-# Actual original full128 conditional price generates positive LC gradient pressure
+# Actual original full128 conditional price generates positive null-link gradient pressure
 
 Scientific contribution within PR334, input snapshot ccd230bd5765b47d82bd1a4d83e9472c77fa590d. This is a computation of an already owned component of the original price, not a new action or a claim about the unspecified complete Book price.
+
+## 20 October composition correction: the physical LC sign
+
+The subsequent [same-history source composition](../../A4D_SAME_HISTORY_PRICE_AND_SOURCE_COMPOSITION_2026_10_20.md)
+checks the literal coframe map before coupling this component to geometry.
+For the positive spatial native legs printed in §2, `V=eta e^(-T)` gives
+`e^+=du/nu`, `e^-=(dv+Hdu/2)/nu`, `e^x=-dx/nu`, `e^y=-dy/nu`.
+With the original PLUS connection in the link, Cartan torsion vanishes at
+`K=-H'/2`. The original `K=+H'/2` label as LC was incorrect.
+
+The original positive-sign G(H), compressed coefficients, gap, numerical
+receipts and cubic-symbol fixtures below are retained for their literal
+positive-sign null-link family; the separately stated K_* gap and repair
+retain their own stationary-link scope. All literal operators are preserved. Their values have not been relabelled as
+true-LC evidence. The unrestricted Gamma(H,K), independent K_* and its
+positive lower bound remain unchanged. For the true LC substitution use
+
+    G_LC,true(H)=A(H)-C(H)/2+L(H)/4 >= nu²/8,
+    G_LC,true(0)=A(0)=(1-b0)/2.
+
+The lower bound is the same actual Kraus square of §3a, valid for every K.
+The new packet independently checks the actual inverse-coframe identity,
+all six Cartan torsion pairs, all24 connection source components and their
+finite-jet transfer at the corrected LC point. It does not retroactively
+turn the old positive-sign numerical or spectral fixtures into LC tests.
+The pre-correction source bytes are preserved with their original SHA256
+in that packet's input snapshots.
 
 ## 1. Exact finite price and full source
 
@@ -39,7 +66,7 @@ F_n=beta Q + (beta²−beta epsilon)L*Q/2
 
 Thus the next actual clock coefficient is computable. Conservation would require T(Delta)=Delta on the relevant support. Bistochasticity does not imply that.
 
-## 2. Original smooth pp family and true LC links
+## 2. Original smooth pp family and the specified positive-sign null links
 
 Use the existing observer-positive null basis (+,−,x,y), actual CAR16 creators c_a and annihilators a_a=c_a*. Work in the invariant u Fourier sector k≠0 and v,y constant modes. All CAR16 grades remain. Let
 
@@ -49,7 +76,7 @@ The native proper null-preserving link is
 
 U_u(x)=exp([(H(x)−H(x−h))/2] N_x), N_x=E_{−,x}+E_{x,+}; U_v=U_x=U_y=I.
 
-This is the existing half-backward-difference LC/null link. It tends to omega_u=(H'/2)N_x. It is not the earlier trivial-link torsionful fixture. A generic periodic sine profile is curved but not vacuum Einstein.
+This is the existing positive half-backward-difference null link. It tends to omega_u=(H'/2)N_x. It is a torsionful family for the literal coframe specified in the correction above, distinct from the earlier trivial-link fixture. A generic periodic sine profile is curved but not vacuum Einstein.
 
 The exact native D_h on the protected low2 state (vacuum and e_−, equal weights) has eigenvalue
 
@@ -104,7 +131,7 @@ in the successive h→0, initial-clock-coefficient sense, with the explicit fini
 
 ## 3a. The independent null-link source and an actual positive Schur reduction
 
-The LC substitution is not silently used as an independent-link equation. Keep the true continuum link U_u=exp(h K(x)N_x), with K independent of H. Protected states still solve the original R preparation equation for every K. The actual squares now give
+The specified K=+H'/2 substitution is not silently used as an independent-link equation. Keep the true continuum link U_u=exp(h K(x)N_x), with K independent of H. Protected states still solve the original R preparation equation for every K. The actual squares now give
 
 Gamma(H,K)=(lambda nu²/8) integral [A(H) H′²+C(H) H′K+L(H)K²],
 
@@ -117,7 +144,7 @@ C=2(b−1)[−H⁴b−H⁴+4H²b²−24H²b+4H²−16b²−16b]
 
 L=8(1−b)(H²+2b+2)/(H²+4)² >0.
 
-These same three coefficients hold for the whole equal-weight protected8 preparation; an exact polynomial/radical check verifies that statement, not just the LC specialization.
+These same three coefficients hold for the whole equal-weight protected8 preparation; an exact polynomial/radical check verifies that statement, not just the positive-sign specialization.
 
 The independent null-link source is (lambda nu²/8)[C H′+2LK]. Thus the genuine stationary link for this component is
 
@@ -129,7 +156,7 @@ G_eff >=nu²/8.
 
 Proof uses one actual Kraus factor, not a general positivity assumption. W=C_v* maps the q input to −nu H/2 times the vacuum. Q_x W q=0, but ||J_x partial_H W q||²=nu²/4. Its half weight in the normalized low2 preparation gives nu²/8 times H′², independently of K. Every other factor contributes a nonnegative square. Equality of low2/protected8 coefficients transfers the same bound to the whole protected block.
 
-At H=0, C=nu²/2 and L=nu², hence K*=−H′/4. The LC value K=+H′/2 instead has independent-link source coefficient 3nu²H′/2. Accordingly this particular paid/code component does NOT itself select the Einstein LC connection. It still produces a positive gradient pressure after its own actual null-link stationarity, with harmonic coordinate integral sqrt(G_eff). Other 23 link directions, other coframe/observer equations, and the complete Book action remain separate.
+At H=0, C=nu²/2 and L=nu², hence K*=−H′/4. The true LC value is K=−H′/2 and has independent-link source coefficient −nu²H′/2. The older K=+H′/2 family has coefficient 3nu²H′/2, but is not LC for the literal native legs. Accordingly this particular paid/code component does NOT itself select the Einstein LC connection. It still produces a positive gradient pressure after its own actual null-link stationarity, with harmonic coordinate integral sqrt(G_eff). Other 23 link directions, other coframe/observer equations, and the complete Book action remain separate.
 
 This is a Schur reduction of the INITIAL clock coefficient. It is not a claim that eliminating all full-price link/preparation fields at fixed positive beta equals eliminating this coefficient alone; that requires the full uniform expansion discussed above.
 
@@ -164,7 +191,7 @@ where P_bad is the complementary rank8 projector. Proof: in nu=q=1 units put v=Q
 
 The eight good states remain EXACTLY at lambda at every a. Since the other eight move below them, this protected cluster is an excited stationary preparation branch; this proof does not select a global minimum or remove its possible preparation descent directions. Bounded analytic perturbation of D and the fixed gap to nonzero transverse Fourier modes imply that, for every sufficiently small fixed a≠0, the other eight depart below lambda and the rank8 good cluster is isolated. The native finite-h perturbation and its first three a derivatives are uniformly bounded (the exp(h a K)/h derivatives have the required h powers); its second-order matrix converges to the one above. Therefore this isolated cluster and a gap c a² lambda persist for small h. This is a family-specific gap argument, not a global gap claim on arbitrary curved fields.
 
-The SAME nonempty gap construction also applies to the actual null-link-stationary family of §3a, not merely to the LC substitution. The ratio K*/H′=−C(H)/(2L(H)) is analytic and even in H, with value −1/4 at H=0. For H=a sin(qx), K*=−a q cos(qx)/4+O(a³), so the linear D perturbation is minus one half of the LC one and there is no order-a² direct D term. The exact second-order Schur matrix is therefore
+The SAME nonempty gap construction also applies to the actual null-link-stationary family of §3a, not merely to the specified positive-sign substitution. The ratio K*/H′=−C(H)/(2L(H)) is analytic and even in H, with value −1/4 at H=0. For H=a sin(qx), K*=−a q cos(qx)/4+O(a³), so the linear D perturbation is minus one half of the positive-sign one and there is no order-a² direct D term. The exact second-order Schur matrix is therefore
 
 −(nu² k² a²/32) P_bad.
 
@@ -180,7 +207,7 @@ Companion evidence:
 
 - price_equivalence2_symbolic.py: exact all16 CAR computation of G, positivity-ready polynomial, zero transverse cross term, protected8 equality and diagonal compression.
 - price_equivalence2_gap.py: exact rank8 splitting coefficient, no numerical fitting.
-- price_equivalence2_smooth.py: literal original 32 paired Julia terms with exact native D_h, square roots, LC links and retained full16 carrier; h=1/L, fixed physical profiles.
+- price_equivalence2_smooth.py: literal original 32 paired Julia terms with exact native D_h, square roots, specified positive-sign links and retained full16 carrier; h=1/L, fixed physical profiles.
 - price_equivalence2_cluster.py: full finite Delta spectra and full A=L*Delta compression; actual TWO-round H_eff spectral repair (no changed price or free coefficient).
 
 For nu=.3, k=q=2pi, H=.4 sin(2pi x):
@@ -191,7 +218,7 @@ L=64: Gamma_h=.008552067584240, Q version=.008551960740553.
 L=128: Gamma_h=.008582839450298, Q version=.008582812638283.
 Continuum exact-coefficient quadrature=.00859313216820049.
 
-Actual amplitude first source at L64=.0427843438; continuum=.04298983215. The trivial-link fixture instead gives .00291025503; retaining the LC link is materially important.
+Actual amplitude first source at L64=.0427843438; continuum=.04298983215. The trivial-link fixture instead gives .00291025503; retaining the specified positive-sign link changes the result materially.
 
 At L16 the WHOLE lambda eigenspace has multiplicity8, Delta gap .0676656320; A compression eigenvalues are .00567311396, .00567345927, .01026495641, .01065432162, each doubled. At L32 the minimum is .00578418237 and Delta gap .0683173296. These finite numerical gaps are controls, not interval certificates; the small-a analytic gap argument above is independent.
 
@@ -199,13 +226,13 @@ The actual two-round H_eff corrected rank8 projector has full preparation commut
 
 ## 6. What is now discharged, and what remains
 
-Discharged: the actual native repeated full128 conditional-code term is not an unspecified price. Its next clock coefficient is an explicit positive local LC gradient pressure, with an exact nonzero physical source, a surviving smooth-refinement limit, and a concrete nonempty preparation-stationary cluster repair. This is beyond the previously owned flat p³ beta R source.
+Discharged: the actual native repeated full128 conditional-code term is not an unspecified price. Its next clock coefficient is an explicit positive local null-link gradient pressure, with an exact nonzero physical source, a surviving smooth-refinement limit, and a concrete nonempty preparation-stationary cluster repair. This is beyond the previously owned flat p³ beta R source.
 
 Not discharged: selection of this code component as the whole compulsory Book action; cancellation/addition by full coherent/history/preparation work; the complete 16+24+observer source; a fixed-positive-beta uniform source limit; raw216 strong refinement; physical equality of original H and harmonic u(H). No full GR claim follows from this component alone.
 
 ## 7. Why a uniform finite-clock remainder is not claimed
 
-I tested the most direct missing estimate on the same actual LC family, rather than invoking finite dimensionality. Write the continuum full16 D=nu(J_x partial_x+B), B=i k J_q+(H'/2)Q_x, and A1={J_x,B}. For the true sixteen local Julia factors, define
+I tested the most direct missing estimate on the same specified positive-sign family, rather than invoking finite dimensionality. Write the continuum full16 D=nu(J_x partial_x+B), B=i k J_q+(H'/2)Q_x, and A1={J_x,B}. For the true sixteen local Julia factors, define
 
 S1=(1/8)sum_W W* partial_x W,
 M1=−2 S1+T(A1)−A1.

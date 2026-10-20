@@ -97,7 +97,10 @@ One actual Kraus contribution proves the lower bound: it sends the null
 one-particle input to a variable multiple of the vacuum, whose spatial
 derivative cannot be cancelled by any `K`. This is not merely positivity
 before connection variation. At `H=0`, however, `K_*=-H'/4`, whereas the
-Levi-Civita substitution is `K=+H'/2`. This price component therefore does
+Levi-Civita substitution is `K=-H'/2`. The literal inverse-coframe map
+fixes this sign; the previous `+H'/2` LC label was incorrect. At the true
+LC value the independent-link source has coefficient `-nu² H'/2`,
+so it remains nonzero. This price component therefore does
 not select Levi-Civita by itself. Its connection source must be combined
 with the other actual sources.
 
@@ -107,7 +110,7 @@ for the stated finite paid/code component; it changes its stationary value
 only at fourth clock order. A nonempty smooth family with an isolated
 eight-state cluster follows from the exact degenerate splitting
 `-(nu²k²a²/32) P_bad` on the actual link-stationary family (the separately
-checked Levi-Civita family has coefficient `/8`). The paid-cost preparation
+checked positive-sign null-link family has coefficient `/8`). The paid-cost preparation
 uses `Delta+p F_n^cost`; the conditional-code preparation uses
 `Delta+p³ F_n`. The same spectral repair applies to both, with their actual
 coefficients retained. This is an excited stationary branch, not a proof
@@ -142,6 +145,21 @@ symbol exactly and yields a positive quadratic symbol after a bounded
 constant addition. The full native discrete, uniform-in-`h` propagation
 estimate remains to be proved; it now has an explicit internal corrector
 and gap instead of an assumed conservation law.
+
+### Composed continuation and corrected LC interpretation
+
+The [same-history price/source composition](A4D_SAME_HISTORY_PRICE_AND_SOURCE_COMPOSITION_2026_10_20.md)
+now derives the complete marked transfer for the original paid cost,
+retains its clock boundary source under Schur elimination, and carries
+this Gamma coefficient into all24 connection components of a declared
+Fourier jet. Its independent review found the coframe sign error above.
+For the literal positive spatial creation legs, the physical spatial
+coframe has negative signs and true LC is `K=-H'/2`. The older explicit
+G(H), spectral and cubic-symbol fixtures retain their positive-sign
+family scope. The unchanged general Gamma(H,K) gives the positive true-LC
+coefficient `A-C/2+L/4>=nu²/8`; the new proof supplies the all24 source and
+corrected Palatini contraction. It does not turn the fixed protected8 jet
+into a full preparation/observer or fixed-positive-clock solution.
 
 ## 3. An inverse pair repairs the reference-price scaling obstruction
 

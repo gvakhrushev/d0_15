@@ -1,0 +1,26 @@
+{
+  "native_midpoint": {
+    "commit": "5a511e9a79ca952f06d044b524a91d230d198a2d",
+    "path": "02_REGISTRY/research/A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md",
+    "blob": "63c36b18af67fc1f113f9e33deb13cf43ddf4556",
+    "sha256": "16850557ba85a3cf648a3a425a4b41ac9c9658982bb1ac55336e3939b1b1f896"
+  },
+  "main_midpoint": {
+    "commit": "0bf309b6260cf5b63e54d6ccabdcdae6734b950a",
+    "path": "02_REGISTRY/research/A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md",
+    "blob": "63c36b18af67fc1f113f9e33deb13cf43ddf4556",
+    "sha256": "16850557ba85a3cf648a3a425a4b41ac9c9658982bb1ac55336e3939b1b1f896"
+  },
+  "native_all40": {
+    "commit": "5a511e9a79ca952f06d044b524a91d230d198a2d",
+    "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_quadratic_cartan_2026-10-19/arbitrary_brinkmann_all40.md",
+    "blob": "050ee972efa0f2ae37206b2ef9e3b4122dbac204",
+    "sha256": "8dbca8ff9a4567a2baf216357b5d3ffa2d217281ced4e5d0e535257db2f5e83e"
+  },
+  "native_p25_gate": {
+    "commit": "5a511e9a79ca952f06d044b524a91d230d198a2d",
+    "path": "02_REGISTRY/research/sources/d0_native_flag_source_minimum_2026-10-20/p25_prospective_gibbs_field_saddle_gate.md",
+    "blob": "d9d05195ccea128ac42d9411f626540094ab0b8d",
+    "sha256": "4289540f343f678c7cce9e64761afe7967a61b96993bb4755d27fda996dd30d8"
+  }
+}

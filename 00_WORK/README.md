@@ -23,6 +23,40 @@ application is the work to finish. Independent conditional transfer/refinement
 work continues on its declared inputs. The dispatcher prints this focus for
 new, resumed, review and offline handoffs; it does not change launch authority.
 
+## Default GR execution: finish the exact positive nonlinear example
+
+Start from the [main-resident positive nonvacuum recovery](../02_REGISTRY/research/D0_GR_PRIMARY_POSITIVE_CASE.md)
+and its [complete mathematical proof](../02_REGISTRY/research/A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md).
+On the configured original Golden-J2/Cartan carrier the existing
+16+24+2 independent interior Euler equations admit exact nonflat
+sourced Einstein solutions on **every** mesh, with actual CAR
+midpoint history and a common metric readout. This is the **default
+physical application and acceptance test** for the native GR route.
+
+For an existing or proposed gravity execution:
+
+1. Identify which actual complete **same-programme** source,
+   preparation/clock/controller/work/oldRIGHT/readout or refinement
+   premise is missing to turn that positive example into a physical
+   D0-selected result.
+2. Reuse the published all40, exact finite sourced family and
+   O(h²)/exact-polynomial recovery. Do NOT repeat root searches,
+   arbitrary rank surveys or single-profile Taylor calculations
+   unless the mathematical input genuinely changes.
+3. Test the exact same original coframe, proper links, CAR fields,
+   preparation, source and time alignment. Prove a source transport
+   or identify a scoped contradiction rather than fitting a
+   compensating stress or assigning a different action.
+4. Keep full D0/Book03 H+J+R compulsory selection, actual clocks,
+   all-GR soundness/recovery and raw216 explicitly OPEN.
+   This priority does not override queue, independent review,
+   verification rules, task ownership or scientific claim scope.
+
+A completed conditional theorem is a **usable mathematical input**;
+this result is an imported research slice, not an accepted complete
+physical GR application. Continue [#334](https://github.com/gvakhrushev/d0_15/pull/334)
+for physical realization; no duplicate work item.
+
 ## One integrator, parallel bounded work
 
 The scientific integrator owns the kernel and theory interfaces, common carrier,

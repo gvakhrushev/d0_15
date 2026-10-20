@@ -1,5 +1,12 @@
 # A4D joint response on fixed smooth sources: PARTIAL / OPEN
 
+Latest composed continuation: [same-history paid source, clock reduction and
+full connection response](A4D_SAME_HISTORY_PRICE_AND_SOURCE_COMPOSITION_2026_10_20.md).
+It corrects the former positive-sign LC interpretation in the paid-gradient
+owner before coupling that actual source to geometry. Historical numerical
+fixtures keep their literal operators; the original full-action/GR terminal
+remains open.
+
 ## 19 October 2026 — REAL SCENE PHYSICS: 718-edge complete instrument plus absolute Cost−Info pressure from ONE retained history
 
 **New positive direct physical-source consumers on the SAME #334:** [A4D_NATIVE_SCENE_718_EDGE_COMPLETE_REGISTER_DETERMINANT_BOOK_2026_10_19.md](A4D_NATIVE_SCENE_718_EDGE_COMPLETE_REGISTER_DETERMINANT_BOOK_2026_10_19.md) with [independently executed full edge checker](sources/d0_scene_edge_complete_book_2026-10-19/check_scene_edge_register.py); and [A4D_ONE_HISTORY_SCENE_ABSOLUTE_PRESSURE_FEEDBACK_COMPLETENESS_2026_10_19.md](A4D_ONE_HISTORY_SCENE_ABSOLUTE_PRESSURE_FEEDBACK_COMPLETENESS_2026_10_19.md) with [one actual 220k-original-transition-history source test](sources/d0_one_scene_history_absolute_pressure_2026-10-19/check_one_history_pressure.py). These COMPATIBLY strengthen the existing [one-real-Perron-history feedback readout](A4D_ONE_RECORDED_SCENE_HISTORY_CONSTRUCTS_BOOK_FEEDBACK_2026_10_19.md) rather than claiming it is a mandatory coherent measurement.
@@ -9266,6 +9273,68 @@ retain their exact original scopes. Canonical historical receipt inputs remain
 unchanged. For Book03 feedback use the complement-preserving operator owner,
 not an independent `P,Q` variation. None of this changes native action selection,
 the original raw-response terminal or physical GR status.
+
+## 20 October: composed same-history price/source and corrected geometric application
+
+Consume the [complete derivation and reproducible packet](A4D_SAME_HISTORY_PRICE_AND_SOURCE_COMPOSITION_2026_10_20.md)
+on the unchanged original128-outcome chronological process. This advances
+its actual source composition; it does not dispatch a new execution or repeat
+the owned verification, HJR or Einstein/Holst proofs.
+
+The literal costs `1+b` derive one marked map
+`Phi_t(X)=x[X+epsilon((p²+px)T(DXD)-{Delta,X}/2)]`, `x=exp(-t)`.
+The full retained-history transform is exactly `Z_n=Tr Phi_t^n(rho)`.
+Its full field/preparation source and cost moments follow by differentiation
+of this same map. Joint open-history/closed-loop Schur elimination retains
+both boundary maps, the direct term and every clock derivative: a unit
+internal determinant cannot erase an actually paid acyclic execution.
+
+The actual prepared-input feedback for a declared price-marker test is
+`F_in=G+L`, where `G=V*EV` and
+`L=V*sqrt(I-E)(I-VV*)sqrt(I-E)V>=0`. Its first source is not generally G's
+source. For the original Golden round the correction is exactly
+`(sqrt(p)-p)²(R-R²)`, `R=p epsilon Delta`. On the specified uniform strict
+chart the repeated actual isometries give a controlled absolute source
+transport `O(n³p^n)` after the stated `p^-n` comparison normalization.
+Physical compilation/payment and nonzero geometric signal remain required.
+
+The same two-round paid value contains
+`p epsilon² Gamma_h`, `Gamma_h=Tr rho L*Delta`. The actual finite jet now
+feeds all24 connection components of a fixed protected8 Fourier family.
+Independent composition review found a real old-interface error: positive
+spatial native legs and `V=eta e^(-T)` force negative spatial coframe legs;
+true LC is `K=-H'/2`. The old Gamma(H,K) algebra remains valid, but its
+positive-sign LC label and dependent interpretation have been corrected.
+At the true LC point the native source has
+`j_1=-729/500000`, `j_9=-81/500000`. Both components enter the genuine
+Palatini inverse form. Its contraction is
+`-59049/250000000000`, whereas a one-link restriction gives zero.
+The exact coupled quadratic system satisfies all24 rows, and its reduced
+coefficient per paid weight exceeds `1/2000` for every real coefficient
+ratio. This is a conditional binding of two identified components,
+stationarity on the specified Fourier jet, and a finite-jet limit. It is
+not full connection/preparation/observer stationarity at fixed positive
+clock, a native minimum, or the complete Book action.
+
+Parent substitution: original history -> actual marked cost -> complete
+clock/source reduction -> native Gamma covector -> exact geometric response.
+The remaining compulsory physical map is the complete Book03 Cost-Info and
+admission of this same process, followed by its same-action source/refinement
+comparison. The memory-algebra amplitude law cannot be replaced by the Born
+cost transform or a chosen entropy without proof. The sourced connection
+also prevents importing a vacuum LC/Holst conclusion into a matter sector
+without its actual torsion equation. No new fitted stress, acceptance row,
+CORE claim or GR/raw216 closure is introduced.
+
+The concurrent main #389 exact nonvacuum midpoint case is now the concrete
+geometric consumer. Its original all40 §5.1 first-source identity is
+`DS_full,h|_(f=q=0)=a_h D(sum fhat)+b_h D(sum q)` after genuine internal
+stationarity. The same-history packet §7 and pinned application review give
+the exact S/nu coframe-link map and retained preparation/normalization/clock
+obligations. Our Fourier Gamma witness is not one of that family's midpoint
+representatives; its nonzero link source excludes only a naive general
+Gamma=q identification, not the complete native realization. Continue by
+applying the complete admitted price to those actual representatives.
 
 ## 20 October: terminal readout preserves the controlled stopped-source limit
 

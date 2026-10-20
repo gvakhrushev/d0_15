@@ -1,0 +1,16 @@
+{
+  "commit": "061b658a4fc9ea80e73364cf8ee8205565b71e66",
+  "repository": "gvakhrushev/d0_15",
+  "files": {
+    "02_REGISTRY/research/A4D_COMPLETE_RECORD_CHANNEL_AND_NATIVE_COST_SOURCE.md": "2128009802edff3e111a26961f050320fd878d7412ed93bfad5d5c9e4219db79",
+    "02_REGISTRY/research/A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md": "a0a8a0b7389c7a6120ebbe402d111bf55cd2a00730403a00ffceca73548e7915",
+    "02_REGISTRY/research/sources/d0_native_price_source_synthesis_2026-10-20/original_record_source.md": "3e038dd9fae47bee12e9df6c27ed2b0816c577a47e0581cf6b9f84e976f3cc0c",
+    "02_REGISTRY/research/sources/d0_native_price_source_synthesis_2026-10-20/price_equivalence2_smooth.py": "393c459c5295e3e3af413f6c935b4eb4402cd4b8b714761548b7dbc7e8b0b0c8",
+    "02_REGISTRY/research/A4D_BOOK_CAR_HOLST_WEYL_BRANSDICKE_EINSTEIN_UNIVERSALITY_2026_10_20.md": "c7d1c5adb00ef5f6b17e9f23c5fffe4ec649ea2194bba6d6f5dbd93847a0c7de",
+    "02_REGISTRY/research/A4D_RELATIONAL_COMPACT_EXECUTION_AND_EXACT_SOURCE_SYNTHESIS_2026_10_20.md": "e9aa39f1b4fa4660b0cd149a728e455ee2318b537745f96dc8a5f957df815e67",
+    "02_REGISTRY/research/A4D_NATIVE_PRICE_EXACT_VARIATIONAL_UNFOLDING.md": "d92aabf2d46d9ac7d8d9aa3bf5ed66a58f25bb83ca4460d66d25648c62f7e10b",
+    "02_REGISTRY/research/A4D_NATIVE_COFRAME_HEAT_SOURCE_BRIDGE.md": "f54810cf9cc16f2282eb602fa606381cdd9622c7f877fef5211e978c55e4956c",
+    "02_REGISTRY/research/sources/d0_native_price_source_synthesis_2026-10-20/coframe_oracle_transport.md": "28a2d3db0545f1bd0dd96e9394a8f350b403db75348df590d75d035db1cc8c65"
+  },
+  "interpretation_correction": "Original positive-spatial native legs force negative spatial coframe and LC K=-Hprime/2. The source owner old +LC label is corrected explicitly; its Gamma(H,K) algebra is retained."
+}

@@ -7,6 +7,28 @@ owns the argument. [VIEW.md](VIEW.md) is a generated composition overview.
 Claims, proof owners, the work queue and live GitHub execution keep their
 existing authorities. No graph label by itself promotes a scientific claim.
 
+## Primary positive GR consumer, before the obligation DAG
+
+Read the [main primary exact nonvacuum Einstein recovery case](../research/D0_GR_PRIMARY_POSITIVE_CASE.md),
+its [proof](../research/A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md)
+and its [original 40→3→1 all-Euler owner](sources/d0_double_null_quadratic_cartan_2026-10-19/arbitrary_brinkmann_all40.md)
+**before** expanding a GR obligation or proposing a new research execution.
+The configured Golden-J2 source has an explicit infinite-dimensional
+nonzero Ricci/Weyl + CAR matter solution family; 16 coframe, 24 link,
+two matter interior Euler equations hold exactly on EVERY mesh.
+The same fixed continuum metric is read at its natural midpoint;
+material histories converge at O(h²).
+
+Treat this as a **concrete research evidence carrier** for
+`constitutive`, `native_sector`, `matter_source_ward`,
+`joint_nonlinear_solve`, `recovery` and
+`gr_operational_realization`. It does **not** discharge any of those
+physical obligations just by providing a pointer; the compulsory
+full D0/Book03 price/admission/clock and all-native source maps
+remain unproved. The existing `#334` owns that scientific
+application. Only a proved/independently accepted exact application
+may change `VIEW.md` or `positive_gr` status.
+
 For scientific synthesis, start with the short [working map](SYNTHESIS.md):
 
 ```bash

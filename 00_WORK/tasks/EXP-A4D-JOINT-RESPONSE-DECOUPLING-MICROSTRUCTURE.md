@@ -15,6 +15,29 @@ Assembly-Slot: `constitutive`
 
 ## Strategic synthesis continuation — 2026-10-17
 
+### 20 October: same-history price, clock elimination and full connection composition
+
+Continue the same Draft334/native-programme-v1 after the reviewed main/native
+integration, consuming published `b8574656b0613fac8e4ff65e2292d6b180cbd8d0`.
+Phase: native realization and final source composition. The missing parent map
+is from one actual retained execution and its complete price to the source used
+by the geometric argument. Reuse the original full128 instrument, paid-gradient
+owner, inverse-paired comparison, whole-HJR roots and Einstein/Holst endpoint.
+Do not repeat the generic Gibbs theorem, root search or unchanged Lean build.
+
+Root owns `A4D_SAME_HISTORY_PRICE_AND_SOURCE_COMPOSITION_2026_10_20.md`,
+`sources/d0_same_history_price_composition_2026-10-20/`, and append-only intake
+in the primary argument. Read-only assistants derive the actual paid-port
+transfer and its complete source, the joint closed-loop/open-history Schur
+identity, and the full24 connection response of the already owned native
+gradient term. The decisive checks are operator identities on the same
+128-outcome process, the actual work-complement correction under prepared-cut
+feedback, and all independent connection rows. A determinant-one internal
+block does not establish zero execution cost. A responsive prepared test does
+not establish equality with the full-work determinant. The native complete
+Info/admission map, same-action refinement and original raw216 remain explicit
+until supplied; neither a new chosen action nor a fitted stress is permitted.
+
 ### 20 October: complete flag first source and the strict native minimum gate
 
 Input 07f2f2b15b7050a612d0075aa73db8dc46087a95; continue the same

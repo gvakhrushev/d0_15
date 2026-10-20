@@ -1,5 +1,11 @@
 # D0 — Finite Verification Theory
 
+## First physical proof route: exact nonlinear nonvacuum GR
+
+**Every new GR agent starts with the [primary positive case](02_REGISTRY/research/D0_GR_PRIMARY_POSITIVE_CASE.md).** The [original full proof](02_REGISTRY/research/A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md) consumes the already-known [exact all40 Brinkmann theorem](02_REGISTRY/gr_assembly/sources/d0_double_null_quadratic_cartan_2026-10-19/arbitrary_brinkmann_all40.md): one fixed, genuinely curved Einstein-null-matter metric is represented by exact finite interior 16+24+2 Euler roots at **every mesh** of the configured Golden-J2 mathematical action, with real CAR history and second-order matter recovery. This is the default positive target for common-source, clock, preparation and refinement work; do not launch another rank/census exercise without a new parent-premise application.
+
+**Scope:** original compulsory full D0/Book03 Cost-Info/H+J+R action selection, full GR and raw216 remain OPEN. Source PR [#334](https://github.com/gvakhrushev/d0_15/pull/334) remains active; this main intake does not close it.
+
 ## Current objective: close the D0 foundation through general relativity
 
 D0 starts from the **necessary operational structure of verifiability**:

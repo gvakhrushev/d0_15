@@ -1,0 +1,47 @@
+{
+  "repository": "gvakhrushev/d0_15",
+  "published_input": "b8574656b0613fac8e4ff65e2292d6b180cbd8d0",
+  "snapshots": {
+    "02_REGISTRY/research/A4D_BOOK_CAR_HOLST_WEYL_BRANSDICKE_EINSTEIN_UNIVERSALITY_2026_10_20.md": {
+      "sha256": "c7d1c5adb00ef5f6b17e9f23c5fffe4ec649ea2194bba6d6f5dbd93847a0c7de",
+      "git_blob": "73dc87c864b608dcbc4a60bd398ccc82ebb4cee7"
+    },
+    "02_REGISTRY/research/A4D_COMPLETE_RECORD_CHANNEL_AND_NATIVE_COST_SOURCE.md": {
+      "sha256": "2128009802edff3e111a26961f050320fd878d7412ed93bfad5d5c9e4219db79",
+      "git_blob": "df8611c7fa37fa71e883831b3f01f434532d99ce"
+    },
+    "02_REGISTRY/research/A4D_NATIVE_COFRAME_HEAT_SOURCE_BRIDGE.md": {
+      "sha256": "f54810cf9cc16f2282eb602fa606381cdd9622c7f877fef5211e978c55e4956c",
+      "git_blob": "2e8a4b791e1d7adb472acf24c729d42583874a68"
+    },
+    "02_REGISTRY/research/A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md": {
+      "sha256": "a0a8a0b7389c7a6120ebbe402d111bf55cd2a00730403a00ffceca73548e7915",
+      "git_blob": "2c9e30fc7ae5518aa958d0ee29c08ae071150c69"
+    },
+    "02_REGISTRY/research/A4D_NATIVE_PRICE_EXACT_VARIATIONAL_UNFOLDING.md": {
+      "sha256": "d92aabf2d46d9ac7d8d9aa3bf5ed66a58f25bb83ca4460d66d25648c62f7e10b",
+      "git_blob": "9ebd9b691d25ef6144e6aa4fe1851f7b026cc24e"
+    },
+    "02_REGISTRY/research/A4D_RELATIONAL_COMPACT_EXECUTION_AND_EXACT_SOURCE_SYNTHESIS_2026_10_20.md": {
+      "sha256": "e9aa39f1b4fa4660b0cd149a728e455ee2318b537745f96dc8a5f957df815e67",
+      "git_blob": "9ae49a69092722738e22ea44b24dcf20a2d662fb"
+    },
+    "02_REGISTRY/research/sources/d0_native_full128_order_readout_2026-10-19/check_two_round_complete_shannon_order_source.py": {
+      "sha256": "72ade8304bd29471115ebb9961df5225307229004c07ddc35d7f31221e566bf4",
+      "git_blob": "90c54d96df70f0cf9626c9d71348c599b42e0630"
+    },
+    "02_REGISTRY/research/sources/d0_native_price_source_synthesis_2026-10-20/coframe_oracle_transport.md": {
+      "sha256": "28a2d3db0545f1bd0dd96e9394a8f350b403db75348df590d75d035db1cc8c65",
+      "git_blob": "bde56967e654d95efd000ff585ab246f284b1e08"
+    },
+    "02_REGISTRY/research/sources/d0_native_price_source_synthesis_2026-10-20/original_record_source.md": {
+      "sha256": "3e038dd9fae47bee12e9df6c27ed2b0816c577a47e0581cf6b9f84e976f3cc0c",
+      "git_blob": "b22ea42a3e219c085a536f3e58f1be3e4e4a2efa"
+    },
+    "02_REGISTRY/research/sources/d0_native_price_source_synthesis_2026-10-20/price_equivalence2_smooth.py": {
+      "sha256": "393c459c5295e3e3af413f6c935b4eb4402cd4b8b714761548b7dbc7e8b0b0c8",
+      "git_blob": "81bccbe1191a3543cc047e985a4729a38836d4f1"
+    }
+  },
+  "note": "Inputs are original immutable source bytes. original_record_source.md retains its then-incorrect positive-sign LC label; d0_sourced_connection_proof.md explicitly corrects that interpretation before using the native Gamma algebra."
+}
