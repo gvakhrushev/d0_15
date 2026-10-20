@@ -2019,6 +2019,66 @@
         }
       ],
       "reported_state": "Original bounded ordered-word/jet Lean terminal submitted for CONTROL acceptance; physical instantiation remains open."
+    },
+    {
+      "id": "lean-verification-core-composition",
+      "owner": "PR #386 / WRK-A4D-LEAN-FOUNDATION-THEORY-TRANSFER (composition executor)",
+      "statement": "For every declared FutureExecution F and supplied TheoryVerification of its future empirical theory, construct the owned future/empirical quotient equivalence and the same verified state, record, comparison and finite execution maps. Record equality is exactly equality of all admitted future profiles, finite runs/readout commute, and the owned forced functional tuple and catalogue independence apply to that same carrier. With explicit SigmaWitness coding premises, canonical/minimal state codes and provenance archives preserve this exact kernel; positional access is proved computable. A finite protocol has a constructed singleton-code consistency witness. No physical admission, causal independence, cost, optimum or GR claim is derived.",
+      "interface": "verification-core-v1",
+      "outcome": "positive",
+      "kind": "lean",
+      "scope_level": "family",
+      "hypotheses": {
+        "execution_interface": "A declared FutureExecution F with its complete finite action words, tests and outcomes. The theorem quantifies over this supplied total operational interface; actual physical admission and clock calibration are later realization obligations.",
+        "verification_representation": "A supplied TheoryVerification F.futureEmpiricalTheory, retaining every hypothesis of the existing VerificationContract and its represented empirical states. No claim that every arbitrary execution already admits this witness is made.",
+        "coded_representation": "Only the coded Sigma realization requires SigmaWitness E: finite ordered Primcodable alphabet, code round trip and shortlex-minimal valid representatives, and genuine Computable canon/comparison witnesses. Archive access is constructed and proved computable. A finite protocol supplies a concrete singleton witness; arbitrary raw-state encoding is not inferred."
+      },
+      "evidence": [
+        {
+          "ref": "7cb104eddfa6fa2479b3c7ee296a1be14df30b6b",
+          "path": "03_FORMALIZATION/D0/Foundation/VerificationCore.lean",
+          "sha256": "382b2b506e17c6422623b6a2581756468e157def9ea783445f0943bd124a19d7"
+        },
+        {
+          "ref": "7cb104eddfa6fa2479b3c7ee296a1be14df30b6b",
+          "path": "02_REGISTRY/research/D0_VERIFICATION_CORE_COMPOSITION_2026_10_20.md",
+          "sha256": "3f3cb2ec4410125d5fe932614e8dd61d14e226d22c23e7375687be51bf592791"
+        }
+      ],
+      "reported_state": "Lean generic family theorem with explicit representation/regime scope; physical realization remains a separate obligation."
+    },
+    {
+      "id": "lean-operational-theory-transfer",
+      "owner": "PR #386 / WRK-A4D-LEAN-FOUNDATION-THEORY-TRANSFER (composition executor)",
+      "statement": "For declared execution systems F and G, primitive commuting state/action-to-finite-word/test maps and injective outcome encoding derive every finite run/readout diagram, composition and preservation/reflection of future distinctions on the common empirical image. Construct a faithful semantic assertion interpretation, tie translated observations to actual native readout, and reuse existing source implication proofs with every translated premise explicit. The constructed verified-state/run map consumes the same foundation carrier. Full-native faithfulness additionally requires concrete context coverage, whose necessity is witnessed by an extra-test counterexample. Physical action, admission, source, clocks and refinement remain application obligations.",
+      "interface": "theory-transfer-v1",
+      "outcome": "positive",
+      "kind": "lean",
+      "scope_level": "family",
+      "hypotheses": {
+        "operational_interpretation": "Declared FutureExecution systems F and G and primitive Interpretation maps: states, source actions to finite native words, tests, injective outcome encoding, primitive run/readout commutation. All-word commutation, common-sector faithfulness and theorem preservation are derived, not fields.",
+        "foundation_representation": "The same supplied TheoryVerification F.futureEmpiricalTheory when identifying the verified carrier with the common native empirical image; the verification_core prerequisite supplies the constructed quotient/record/action bridge.",
+        "assertion_regime": "Assertions are predicates on future empirical classes; derivability is semantic entailment under an explicit regime H. A source Lean proof of H implies P, or an indexed premise implication, is supplied and every translated premise remains proved or an explicit regime hypothesis. An arbitrary external proof calculus is not implicitly implemented.",
+        "additional_native_contexts": "The unconditional common-sector theorem uses precisely the compiled source experiments on the full native state carrier. Only the stronger all-native equivalence requires NativeContextCoverage with a source experiment and correct readout map for each native context; the extra-test counterexample proves that this upgrade cannot be inferred without coverage."
+      },
+      "evidence": [
+        {
+          "ref": "7cb104eddfa6fa2479b3c7ee296a1be14df30b6b",
+          "path": "03_FORMALIZATION/D0/Foundation/TheoryTransfer.lean",
+          "sha256": "c164818dc50de94afad690946d4c209309350340b5cb1586ddc9f91f74bcb203"
+        },
+        {
+          "ref": "7cb104eddfa6fa2479b3c7ee296a1be14df30b6b",
+          "path": "03_FORMALIZATION/D0/Foundation/VerificationCore.lean",
+          "sha256": "382b2b506e17c6422623b6a2581756468e157def9ea783445f0943bd124a19d7"
+        },
+        {
+          "ref": "7cb104eddfa6fa2479b3c7ee296a1be14df30b6b",
+          "path": "02_REGISTRY/research/D0_THEORY_TRANSFER_2026_10_20.md",
+          "sha256": "4e47964de7f334ebc9c0d69be28004b1235f7a113ee8006d85c2d56648af1482"
+        }
+      ],
+      "reported_state": "Lean generic family theorem with explicit representation/regime scope; physical realization remains a separate obligation."
     }
   ],
   "applications": [
@@ -2101,6 +2161,51 @@
           "path": "02_REGISTRY/gr_assembly/reviews/lean-primitive-jet-composition-to-word-slot.md",
           "sha256": "99deb37f1f922938bc1928ef65eb5262521e17bd7be9356679f49e3604a2565f"
         }
+      }
+    },
+    {
+      "id": "lean-verification-core-to-foundation",
+      "result": "lean-verification-core-composition",
+      "obligation": "verification_core",
+      "method": "direct",
+      "consumer_location": "03_FORMALIZATION/D0/Foundation/TheoryTransfer.lean",
+      "hypothesis_map": {
+        "execution_interface": {
+          "target_hypothesis": "execution_interface"
+        },
+        "verification_representation": {
+          "target_hypothesis": "verification_representation"
+        },
+        "coded_representation": {
+          "target_hypothesis": "coded_representation"
+        }
+      },
+      "review": {
+        "state": "proposed"
+      }
+    },
+    {
+      "id": "lean-operational-transfer-to-theory-transfer",
+      "result": "lean-operational-theory-transfer",
+      "obligation": "theory_transfer",
+      "method": "direct",
+      "consumer_location": "02_REGISTRY/research/D0_FOUNDATION_THEORY_TRANSFER_COMPOSITION_2026_10_20.md#7-next-physical-substitution-one-admitted-process-and-complete-price",
+      "hypothesis_map": {
+        "operational_interpretation": {
+          "target_hypothesis": "operational_interpretation"
+        },
+        "foundation_representation": {
+          "target_hypothesis": "foundation_representation"
+        },
+        "assertion_regime": {
+          "target_hypothesis": "assertion_regime"
+        },
+        "additional_native_contexts": {
+          "target_hypothesis": "additional_native_contexts"
+        }
+      },
+      "review": {
+        "state": "proposed"
       }
     }
   ],
