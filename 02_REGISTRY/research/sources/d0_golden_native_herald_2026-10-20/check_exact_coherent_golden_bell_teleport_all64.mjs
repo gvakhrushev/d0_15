@@ -15,9 +15,11 @@
   unconditioned 64d teleportation probability s^12/4096=p^36,
   conditioned after full preparation readiness EXACT 1/4096. The
   conditional output IS the original arbitrary fixed SO64 U|psi>.
-  K-capped fresh parity attempts yield success (1-r^K)^12/4096 with
+  K-capped OFFLINE preparations of SIX programme Bell pairs yield total
+  success (1-r^K)^6*s^6/4096 with
   all failed earlier Bell ancillas retained; expected G source count is
-  bounded by 12/p^3 despite K=O(log L) worst-case for refinement.
+  bounded by 6/p^3+12 (including SIX non-repeatable inverse Bell
+  comparisons); K=O(log L) worst-case for OFFLINE prep refinement.
 
   THIS proves mathematical coherent Bell-resource and effect compilation
   in native active Golden/CNOT + parity measurement vocabulary, NOT
@@ -167,20 +169,21 @@ fail(fieldFirstErr<2e-10&&fieldSecondErr<2e-10,
 const maxBellRawProb=1/4096;
 const table=[];
 for(const L of [4,8,16,32,64]){
- const K=Math.ceil((7*Math.log(L)+Math.log(12))/(-Math.log(r)));
- const tau=1-r**K,ready=tau**12;
- const rawProb=ready/4096;
- const expectedGoldenCalls=24*tau/(1-r);
- fail(expectedGoldenCalls<=12/p**3+1e-12,
-  "unbounded expectation of native Golden coherent parity gadget");
- fail(12*r**K*L**6<=1/L+1e-12,
+ const K=Math.ceil((7*Math.log(L)+Math.log(6))/(-Math.log(r)));
+ const tau=1-r**K,ready=tau**6;
+ const rawProb=ready*s**6/4096;
+ const expectedGoldenCalls=12*tau/(1-r)+12;
+ fail(expectedGoldenCalls<=6/p**3+12+1e-12,
+  "unbounded expectation of native OFFLINE Golden coherent parity prep");
+ fail(6*r**K*L**6<=1/L+1e-12,
   "required h^-2 complete six-face/L4 source convergence no longer holds");
  table.push({L,K,all12BellCoherentSeedsReady:ready,
   fullUnconditionalNativeBellProb:rawProb,
-  exactConditionalBellProb:maxBellRawProb,
-  worstCaseGoldenGateCalls:24*K,
+  exactBellEffectProbGivenPreparedProgramme:s**6/4096,
+  idealBellProjectionProbNotPhysicallyImplemented:maxBellRawProb,
+  worstCaseGoldenGateCalls:12*K+12,
   expectedGoldenGateCalls:expectedGoldenCalls,
-  sourceSixFacesHminus2Bound:6*12*r**K*L**6});
+  sourceSixFacesHminus2Bound:6*6*r**K*L**6});
 }
 console.log(JSON.stringify({
  result:"PASS_ORIGINAL_GOLDEN_CNOT_COHERENT_BELL64_TELEPORTATION",
@@ -201,9 +204,9 @@ console.log(JSON.stringify({
   BellProbabilityGivenAll12NativePairsReady:1/4096,
   completeOtherOutcomesKept:true},
  genuineFinite4DScaling:{sites:"L^4",facesPerSite:6,
-  expectedNativeGoldenGateCallsLimit:12/p**3,
+  expectedNativeGoldenGateCallsLimit:6/p**3+12,
   nativeFeedforwardAndComparisonWorkUnpriced:true,
-  conservativeBellFailureSourceBound:"h^-2*6L^4*12*r^K <=6/L",
+  conservativeBellFailureSourceBound:"h^-2*6L^4*6*r^K <=6/L (OFFLINE preparation error only)",
   table},
  fullMovingU64ProgrammeStatePreparationNotForced:true,
  actualOldRightReferenceFiniteControllerAndWorkNotProved:true,
