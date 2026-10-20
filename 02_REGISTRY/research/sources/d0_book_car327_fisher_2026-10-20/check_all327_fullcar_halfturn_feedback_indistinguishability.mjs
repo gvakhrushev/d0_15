@@ -220,6 +220,88 @@ assert(maxGoldenTVExact<4e-15&&
 // The chosen composite observer/coframe reference must transform
 // covariantly under local physical Lorentz frame changes; its raw
 // positive marker is not an observer-free new fundamental postulate.
+
+// STRONGER GLOBAL POSITIVE QUANTUM TOMOGRAPHY: the SAME original 17
+// full Golden/Bell probabilities identify EVERY oriented SO(2) face
+// holonomy, including the pi sheet invisible to the exact FULL F.
+// q_nonJ,+ = k m², m=(1+cos θ)/2≥0.
+// q_J,+ - q_J,- = 2 sqrt2 k m sin θ.
+// Thus cosθ=2 sqrt(q_nonJ,+/k)−1 and
+// sinθ=(qJ+−qJ−)/(2sqrt2 k m), with θ=pi at m=0.
+// This inverse is globally exact on U(1) BUT has a genuine non-C1
+// inverse chart at theta=pi; smooth 4D refining near-flat plaquettes
+// lie in a C1-regular chart, full Spin central sheets remain separate.
+function decodeFull17SO2(qq){
+ const m=Math.sqrt(Math.max(0,qq[0]/kGolden));
+ const co=2*m-1;
+ const si=m>1e-14?(qq[8]-qq[9])/(2*Math.SQRT2*kGolden*m):0;
+ const rr=Math.hypot(co,si);
+ assert(Math.abs(rr-1)<4e-10,
+  "actual positive Golden17 outcome is not on full SO2 holonomy circle");
+ return {cos:co/rr,sin:si/rr,angle:Math.atan2(si,co)};
+}
+let maxSO2Tomography=0,maxSO2TriangleSource=0,
+    maxGaugeReconstruction=0,zeroFullCAROrientResidual=0;
+const phaseFields=[phi,twisted,pureGauge];
+for(const field of phaseFields){
+ const F=Array.from({length:9},()=>Array.from({length:11},
+               ()=>Array(13).fill(0)));
+ for(let a=0;a<9;a++)for(let b=9;b<20;b++)for(let c=20;c<N;c++){
+  const θ=field[a][b]+field[b][c]+field[c][a],
+    qq=completeGolden17(θ),rec=decodeFull17SO2(qq);
+  maxSO2Tomography=Math.max(maxSO2Tomography,
+    Math.abs(Math.cos(θ)-rec.cos),Math.abs(Math.sin(θ)-rec.sin));
+  F[a][b-9][c-20]=rec.angle;
+ }
+ // Exact U(1) right inverse: all original 1287 triangle labels give
+ // one arbitrary 359-edge phase representative, whose 327 physical
+ // closed holonomies agree. 32 endpoint gradients remain gauge.
+ const omega=Array.from({length:N},()=>Array(N).fill(0));
+ for(let a=0;a<9;a++)for(let b=9;b<20;b++){
+  omega[a][b]=F[a][b-9][0];omega[b][a]=-omega[a][b];
+ }
+ for(let b=9;b<20;b++)for(let c=20;c<N;c++){
+  omega[b][c]=F[0][b-9][c-20]-F[0][b-9][0];
+  omega[c][b]=-omega[b][c];
+ }
+ for(let c=20;c<N;c++)for(let a=0;a<9;a++){
+  omega[c][a]=F[a][0][c-20]-F[a][0][0]
+     -F[0][0][c-20]+F[0][0][0];
+  omega[a][c]=-omega[c][a];
+ }
+ for(let a=0;a<9;a++)for(let b=9;b<20;b++)for(let c=20;c<N;c++){
+  const actual=omega[a][b]+omega[b][c]+omega[c][a],
+        got=F[a][b-9][c-20],e=actual-got;
+  maxSO2TriangleSource=Math.max(maxSO2TriangleSource,
+       Math.abs(Math.sin(e)),Math.abs(1-Math.cos(e)));
+ }
+ // Entire 718-edge gauge relation recovered on native support via
+ // one ORIGINAL 32-edge rooted spanning tree, no matrix fit or phase prior.
+ const gauge=Array(N).fill(null),queue=[0];gauge[0]=0;
+ while(queue.length){
+  const i=queue.shift();
+  for(let j=0;j<N;j++)if(adj[i][j]&&gauge[j]===null){
+   gauge[j]=gauge[i]-field[i][j]+omega[i][j];
+   queue.push(j);
+  }
+ }
+ assert(gauge.every(v=>v!==null),"native complete K913 phase gauge disconnected");
+ for(const [i,j] of edges){
+  const δ=(field[i][j]-omega[i][j])-(gauge[i]-gauge[j]);
+  maxGaugeReconstruction=Math.max(maxGaugeReconstruction,
+    Math.abs(Math.sin(δ)),Math.abs(1-Math.cos(δ)));
+ }
+}
+// The actual near-flat source is uniformly regular on any
+// true physical plaquette chart |theta|<=delta<pi.
+const θsmall=.003;
+const qPlus=completeGolden17(θsmall),qMinus=completeGolden17(-θsmall);
+const dSigned=((qPlus[8]-qPlus[9])-(qMinus[8]-qMinus[9]))/(2*θsmall);
+const sourceExpected=2*Math.SQRT2*kGolden;
+const sourceError=Math.abs(dSigned-sourceExpected);
+assert(maxSO2Tomography<3e-12&&maxSO2TriangleSource<3e-12&&
+ maxGaugeReconstruction<3e-12&&sourceError<4e-11,
+ "GLOBAL original 327-cycle Golden17 SO2 tomography or smooth source failed");
 console.log(JSON.stringify({
  result:"PASS_GLOBAL_ALL327_FULLCAR16_F_SQUARING_Z2_INDISTINGUISHABILITY",
  actualNativeCarrier:{sceneVertices:33,fullOriginalDirectedEdges:718,
@@ -231,6 +313,14 @@ console.log(JSON.stringify({
   completeGolden17Detector:{labels:17,includesAllBellAndGoodBadFailures:true,
    exactFullTV_formula:"k(11|cosθ|+max(|cosθ|,√2|sinθ|)), k=p^4/(24*4096)",
    SHARP_global_minimumTV:Math.SQRT2*kGolden,
+   exactGlobalSO2FaceTomography:true,
+   maxRecoveredActual1287FaceHolonomyError:maxSO2Tomography,
+   maxOriginal1287TriangleCochainRightInverseError:maxSO2TriangleSource,
+   maxOriginal718EdgePhaseGaugeReconstructionError:maxGaugeReconstruction,
+   nearFlatSignedLorentzLinearCoefficient:sourceExpected,
+   nearFlatSignedLorentzSourceError:sourceError,
+   globalDecoderSmoothExceptAtCompactPiHalfturn:true,
+
    observedMinimumTV:minObservedTV,
    maximumTV:maxGoldenTVDiff,
    exactFormulaMaxError:maxGoldenTVExact,
