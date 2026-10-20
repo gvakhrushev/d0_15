@@ -2465,3 +2465,14 @@ The wave is successful when:
 - the nonlinear J2 Einstein-class bridge is closed or has one exact named obstruction;
 - the discrete Palatini target span is classified on the actual full-affine quotient;
 - the five stable finite theorem packets are hardened in Lean without freezing provisional physics.
+
+
+## APPENDIX — NATIVE BOOK-CAR-HOLST-WEYL VACUUM UNIVERSALITY (20 OCT 2026)
+
+CONSUME, do not silently promote: [A4D_BOOK_CAR_HOLST_WEYL_BRANSDICKE_EINSTEIN_UNIVERSALITY_2026_10_20.md](A4D_BOOK_CAR_HOLST_WEYL_BRANSDICKE_EINSTEIN_UNIVERSALITY_2026_10_20.md) and its actually executed exact original-carrier JS. This is a NEW **COMPLEMENTARY CONTINUUM IR universality class** to the selected finite Golden-AF radial theorem above, not proof all native Book/Cost sources are members.
+
+The ORIGINAL CAR16 degree2 commutant of so(1,3) has exactly two real curvature-linear insertions Q=alpha Hodge+beta I. On an independently varied metric-compatible Lorentz connection the REAL Lorentz Hodge squares to -I, Q is invertible for (alpha,beta) not both zero, and the FULL 24-component Cartan equation D(ehat wedge ehat)=0 has exact integer determinant16. Therefore ehat=sqrt(W_B)e is torsionfree in that geometric class. The beta Holst channel is 8 times the sole four-dimensional Riemann algebraic first-Bianchi pseudoscalar and vanishes identically on the resulting torsionfree metric, leaving the alpha!=0 Einstein–Hilbert vacuum dynamics for every real constant beta.
+
+Original genuine scene 3-tick W_B=Tr K^3/7722>0 may be spatially inhomogeneous if one separately typed K_x lives at each Role site. Both local invariant channels absorb the SAME W into ehat with exact native 3:2 Info/coframe transformation. In the raw frame the dressed EH action has the forced scalar-tensor form W R+(3/(2W))(dW)^2, i.e. omega_BD=-3/2; the W mode is a conformal compensator of this PURE geometric sector, not automatically a propagating new graviton or an M1-selected physical scalar. The native endpoint jet d ln sqrt(W_x/W_y) is the exact projective gradient of the coframe change; curvature of the induced raw and dressed affine connections coincides all256 components, while raw torsion equals -0.5 d ln W wedge e. This removes the need to demand raw torsionfree in a variable-Book-density chart.
+
+KILL boundary: alpha=0 yields no Einstein tetrad dynamics; changing beta/alpha or genuine spin torsion CAN change sourced connection equations; an independently priced G0 H+J+R/clock/Cost source can break Weyl; physical operational metric and exact finite-h torsionfree refinement must be separately shown. The standard continuum Palatini–Holst/Nieh–Yan/Brans–Dicke identities are not claimed as new mathematics; the novel D0 synthesis is their exact original CAR16 Hodge and original 718/7722 Book source instantiation. GR_closed=false.
