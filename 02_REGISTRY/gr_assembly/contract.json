@@ -501,7 +501,12 @@
         }
       ],
       "consumer": "theory_transfer",
-      "scope_level": "family"
+      "scope_level": "family",
+      "hypotheses": {
+        "execution_interface": "A declared FutureExecution F with its complete finite action words, tests and outcomes. The theorem quantifies over this supplied total operational interface; actual physical admission and clock calibration are later realization obligations.",
+        "verification_representation": "A supplied TheoryVerification F.futureEmpiricalTheory, retaining every hypothesis of the existing VerificationContract and its represented empirical states. No claim that every arbitrary execution already admits this witness is made.",
+        "coded_representation": "Only the coded Sigma realization requires SigmaWitness E: finite ordered Primcodable alphabet, code round trip and shortlex-minimal valid representatives, and genuine Computable canon/comparison witnesses. Archive access is constructed and proved computable. A finite protocol supplies a concrete singleton witness; arbitrary raw-state encoding is not inferred."
+      }
     },
     {
       "id": "theory_transfer",
@@ -518,7 +523,13 @@
         }
       ],
       "consumer": "gr_operational_realization",
-      "scope_level": "family"
+      "scope_level": "family",
+      "hypotheses": {
+        "operational_interpretation": "Declared FutureExecution systems F and G and primitive Interpretation maps: states, source actions to finite native words, tests, injective outcome encoding, primitive run/readout commutation. All-word commutation, common-sector faithfulness and theorem preservation are derived, not fields.",
+        "foundation_representation": "The same supplied TheoryVerification F.futureEmpiricalTheory when identifying the verified carrier with the common native empirical image; the verification_core prerequisite supplies the constructed quotient/record/action bridge.",
+        "assertion_regime": "Assertions are predicates on future empirical classes; derivability is semantic entailment under an explicit regime H. A source Lean proof of H implies P, or an indexed premise implication, is supplied and every translated premise remains proved or an explicit regime hypothesis. An arbitrary external proof calculus is not implicitly implemented.",
+        "additional_native_contexts": "The unconditional common-sector theorem uses precisely the compiled source experiments on the full native state carrier. Only the stronger all-native equivalence requires NativeContextCoverage with a source experiment and correct readout map for each native context; the extra-test counterexample proves that this upgrade cannot be inferred without coverage."
+      }
     },
     {
       "id": "constitutive",
@@ -1350,13 +1361,26 @@
     {
       "id": "verification-foundation",
       "title": "Necessary verification kernel and retained future distinctions",
-      "contribution": "The kernel already has proof owners for necessary records/comparison, empirical factorization, process composition and future-stable memory. Consume those theorems in their exact scope and align their witnesses with the book Sigma roles; this is an assembly application, not a new campaign to reprove the foundation.",
-      "results": [],
+      "contribution": "VerificationCore composes the owned necessity, empirical and future-memory theorems on one verified carrier: records agree exactly when all admitted future profiles agree, finite execution/readout commute, and explicit Sigma witnesses supply the coded realization. TheoryTransfer consumes that same carrier and derives common-image faithfulness and reuse of source proofs from primitive operational diagrams. The two scoped generic applications are supplied; physical realization remains their next consumer.",
+      "results": [
+        "lean-verification-core-composition",
+        "lean-operational-theory-transfer"
+      ],
       "consumers": [
         "verification_core",
         "theory_transfer"
       ],
       "readings": [
+        {
+          "label": "Composed verification record/future kernel, explicit Sigma codes and computable archive access",
+          "ref": "7cb104eddfa6fa2479b3c7ee296a1be14df30b6b",
+          "path": "03_FORMALIZATION/D0/Foundation/VerificationCore.lean"
+        },
+        {
+          "label": "Finite-program and semantic-assertion transfer on the same verified carrier, with actual native readout bridge",
+          "ref": "7cb104eddfa6fa2479b3c7ee296a1be14df30b6b",
+          "path": "03_FORMALIZATION/D0/Foundation/TheoryTransfer.lean"
+        },
         {
           "label": "Existing necessity, injective records and verification-theory representation owners",
           "ref": "5d23e90af703efee7f0deb24517d3ead4780fdfc",
@@ -1378,7 +1402,7 @@
           "path": "03_FORMALIZATION/D0/Foundation/M1ClassAdmissibility.lean"
         }
       ],
-      "next_question": "Write the composed kernel statement with exact owner substitutions, derived roles and explicit representation witnesses. Keep finite coding, effective canonicalization and access requirements as named premises or owned constructions of the coded interface. Then state the general execution/proof transfer interface. Reuse existing proofs instead of reopening them because their assembly application is missing.",
+      "next_question": "Apply the existing composed kernel and transfer theorem to the chosen native GR family. Supply its actual verification/coding witnesses, primitive state/program/test/outcome diagrams, every imported regime premise and any required additional-native-context coverage. The full physical price, source, clock, variations and refinement remain the realization owners' obligations. Do not repeat the closed generic proof.",
       "tags": [
         "foundation",
         "verification",
@@ -1392,7 +1416,7 @@
     {
       "id": "prospective-native-selection",
       "title": "Минимальный генератор → родной закон физического исполнения",
-      "contribution": "Центральный переход уже имеет входы: необходимое ядро проверяемости, достаточная будущая память, условные Bellman/no-detour теоремы, исходная all327 current-rate минимизация и геометрические классы. В ProspectiveExecution.optimal оптимальность пока является предпосылкой. All327 доказывает минимальную conditional relative entropy при заданном stationary current; свободный current-rate минимум находится при нулевом токе, тогда как scalar Book action в сопряжённой price-координате имеет максимум. Нужны родные условия допустимости и фактические Cost/Info, объясняющие обязательное или предпочтительное продолжение. До исполнения альтернативы с одной полной начальной конфигурацией и задачей могут иметь разные будущие часы; после сохранения истории её требуемые различимости подлежат сохранению. Краткость генератора, длина записи, число гейтов и полное действие остаются разными величинами до доказанного связывания.",
+      "contribution": "Центральный переход уже имеет входы: необходимое ядро проверяемости, достаточная будущая память, условные Bellman/no-detour теоремы, исходная all327 current-rate минимизация и геометрические классы. В ProspectiveExecution.optimal оптимальность пока является предпосылкой. All327 доказывает минимальную conditional relative entropy при заданном stationary current; свободный current-rate минимум находится при нулевом токе, тогда как scalar Book action в сопряжённой price-координате имеет максимум. Нужны родные условия допустимости и фактические Cost/Info, объясняющие обязательное или предпочтительное продолжение. До исполнения альтернативы с одной полной начальной конфигурацией и задачей могут иметь разные будущие часы; после сохранения истории её требуемые различимости подлежат сохранению. Краткость генератора, длина записи, число гейтов и полное действие остаются разными величинами до доказанного связывания. Нулевой ориентированный ток не означает idle: нормированный Perron-процесс может иметь симметричный положительный поток и единичную активность на завершённый шаг. Сама нормировка ещё не доказывает физическое осуществление шага.",
       "results": [],
       "consumers": [
         "constitutive",
@@ -1424,6 +1448,11 @@
           "label": "Conditional endpoint/projective universality: use physical equivalence where proved; retain sourced matter and metric-identification assumptions",
           "ref": "73bcbe9e9c826cf9e6868c04071e9d23f9cb0049",
           "path": "02_REGISTRY/research/A4D_BOOK_CAR_HOLST_WEYL_BRANSDICKE_EINSTEIN_UNIVERSALITY_2026_10_20.md"
+        },
+        {
+          "label": "Current/activity distinction and exact next physical substitution after the composed generic transfer",
+          "ref": "7cb104eddfa6fa2479b3c7ee296a1be14df30b6b",
+          "path": "02_REGISTRY/research/D0_FOUNDATION_THEORY_TRANSFER_COMPOSITION_2026_10_20.md"
         }
       ],
       "next_question": "Продолжить существующий constitutive/native_sector owner: на одном исходном branch/record процессе вывести полные Cost/Info и необходимые ограничения, затем доказать, почему физическое продолжение обязательно или idle не оптимален. Подставить уже имеющуюся all327/Bellman теорему только после установления её гипотез; использовать структурное неравенство, инвариант, вариационную идентичность или доказанную физическую эквивалентность. Сертификат нижней границы ещё требует родного достижения/выбора. Source-weld, P25, C2 и stationary-shell — готовые проверки предъявленного полного закона; не повторять их как самостоятельную кампанию. Цель — снять конкретную предпосылку общего GR-вывода, сохранив полный source/history/clock и исходный raw terminal. Условные независимые переносы и refinement продолжаются параллельно.",
@@ -1447,15 +1476,18 @@
     {
       "id": "gr-architectural-composition",
       "title": "One common realization for theorem reuse and physical GR",
-      "contribution": "The strong physical positive_gr chain remains intact. The architectural conclusion additionally identifies its witnesses with the operational realization and the generic theorem transfer, so every conclusion concerns the same action, source, history and refinement family.",
-      "results": [],
+      "contribution": "The verification kernel and generic operational transfer are composed and have direct scoped applications. The strong physical positive_gr chain remains intact. Its architectural application must identify the same physical action, source, preparation/history, clocks, variations and refinement witnesses with the concrete operational interpretation.",
+      "results": [
+        "lean-verification-core-composition",
+        "lean-operational-theory-transfer"
+      ],
       "consumers": [
         "theory_transfer",
         "gr_operational_realization",
         "gr_architectural_closure"
       ],
       "readings": [],
-      "next_question": "Write the strongest complete conditional GR argument using the existing owners, name one common realization, and isolate its finite open premise boundary. Select the next useful parent substitution from that boundary. The present native selection/payment and uniform joint-refinement questions retain their existing owners and exact scope.",
+      "next_question": "Instantiate gr_operational_realization using the proved generic transfer; first supply the missing native full-price/continuation and source maps from the existing physical owner. Complete the unchanged positive_gr chain on the same nonempty curved refining family, then prove the common-witness compatibility. Existing native and joint-refinement tasks retain their owners and exact scope.",
       "tags": [
         "architecture",
         "GR",
@@ -1751,6 +1783,6 @@
     }
   ],
   "registry_budget": {
-    "max_active_results": 52
+    "max_active_results": 54
   }
 }

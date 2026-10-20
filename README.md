@@ -27,10 +27,10 @@ work must supply its native origin or the precise native variational law.
 Read the [shared focus and closure roadmap](02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md#prospective-minimality-and-physical-execution)
 for goals, reusable results, proof tools and exact completion conditions.
 
-| Architectural conclusion | Required mathematical output |
+| Architectural conclusion | Current result and next application |
 |---|---|
-| Necessary kernel: `D0-FOUNDATION` | Compose the existing necessity, empirical-factorization and retained-future-memory proofs with their exact assumptions and book-to-formal witness maps. |
-| Generic transfer: `THEORY-TRANSFER` | A conditional theorem for transferring states, actions, tests, outcomes and existing proofs through a faithful operational interpretation. |
+| Necessary kernel: `D0-FOUNDATION` | [Composed kernel theorem](03_FORMALIZATION/D0/Foundation/VerificationCore.lean): the same retained record identifies exactly all admitted future distinctions; operations and finite executions commute. Explicit coded Sigma witnesses retain their stated assumptions. |
+| Generic transfer: `THEORY-TRANSFER` | [Proved conditional transfer](03_FORMALIZATION/D0/Foundation/TheoryTransfer.lean): primitive state/program/readout diagrams yield all finite executions, a faithful common empirical image and reuse of source proofs with every premise explicit. |
 | First physical closure: `GR` | Instantiate that interpretation on a native GR family and prove that it uses the **same action, source, history, clocks and refinement maps** as the unchanged positive GR theorem. |
 
 Start with the [architectural objective and proof plan](02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md#architectural-objective),
@@ -41,17 +41,16 @@ task supplies an exact missing substitution in that argument. Supporting
 results retain their scope until their application is proved; a scoped
 obstruction changes the applicable route without changing the final target.
 
-The first bounded foundation step consumes the existing
-[necessity owner](03_FORMALIZATION/D0/Foundation/VerifiabilityNecessity.lean)
-and [empirical-process owner](03_FORMALIZATION/D0/Foundation/EmpiricalTheoryFactorization.lean),
-together with the directly importable
-[future-memory owner](03_FORMALIZATION/D0/Foundation/FutureExecution.lean)
-linked in the [assembly working map](02_REGISTRY/gr_assembly/SYNTHESIS.md).
-The next general interface translates actions of one operational system into
-finite programs of another and preserves their tests, composition and future
-distinctions. Its GR application joins the actual paid native process to the
+The [foundation and transfer composition](02_REGISTRY/research/D0_FOUNDATION_THEORY_TRANSFER_COMPOSITION_2026_10_20.md)
+now consumes the existing necessity, empirical-process, future-memory and M1
+proof owners on one identified carrier. Its two scoped applications are
+recorded in the [assembly](02_REGISTRY/gr_assembly/VIEW.md). Translated
+observation assertions are proved equivalent to actual native readout.
+Additional native tests remain explicit: an all-native claim needs a coverage
+witness, with a formal counterexample showing why that condition matters.
+The next physical application joins the actual paid native process to the
 existing geometric readout. The active native/source and joint-refinement
-fronts keep their current owners and exact proof obligations.
+fronts retain their current owners and exact proof obligations.
 
 For programme context, the integrator reads the full
 [preserved strategy](02_REGISTRY/research/D0_RESEARCH_STRATEGY_RU.md)
@@ -89,11 +88,12 @@ ready; an unfinished physical parent can continue in its existing research PR.
 | [Hermitian tangent-span theorem — #353](https://github.com/gvakhrushev/d0_15/pull/353) | The accepted `mv_tangent_span` application supplies the generic annihilator/span equivalence. The next source step identifies the actual native operators and admissible tangents. |
 | [Primitive-word and moving-jet theorem — #342](https://github.com/gvakhrushev/d0_15/pull/342) | The accepted `primitive_jet_composition` application supplies ordered residual composition and the exact moving-intertwiner identity. The numerical derivative bound retains its shared-intertwiner hypothesis. |
 | [Future-memory and prospective-execution proof intake](02_REGISTRY/research/D0_FOUNDATION_MAIN_INTAKE_2026_10_20.md) | Import the existing future-stable quotient, sufficient-memory, Bellman, no-detour and idle-boundary theorems directly from the main Lean closure. |
+| [Composed foundation and operational theory transfer — #386](https://github.com/gvakhrushev/d0_15/pull/386) | Reuse the exact record/future kernel, explicit Sigma coding and proved two-system finite-program/assertion transfer. The two generic architectural obligations have pinned independent acceptance; actual native action/source/clock realization remains open. |
 | [Preserved Book-triangle results](02_REGISTRY/gr_assembly/sources/d0_book_triangle_odds_2026-10-19/owner.md) and [conditional exit-Gram results](02_REGISTRY/gr_assembly/sources/d0_conditional_exit_grams_2026-10-17/orthogonal_exit_source.md) | Reuse the actual source files and checks delivered by #379. Source PRs #380/#363 are closed as delivered through that intake; their conditional scope and downstream physical obligations remain unchanged. |
 
-The next stage applies these inputs. Compose the verification kernel and its
-generic interpretation maps; on the existing native front, derive the full
-Cost-Info and required continuation from one admitted process. Then establish
+The next stage applies the composed kernel and generic interpretation theorem.
+On the existing native front, derive the full Cost-Info and required
+continuation from one admitted process. Then establish
 the source, genuine variations and joint refinement estimates for that same
 process. The [closure roadmap](02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md#closure-roadmap-goals-reusable-inputs-and-tools)
 states the consuming premise and completion condition at each transition.
@@ -512,7 +512,7 @@ For full technical specifications, advanced mathematical integrations, and Lean 
 <!-- D0-WORK-STATUS:BEGIN -->
 ### Work Queue & Control Plane
 
-- **Tracked Queue/Control Tasks**: CONTROL: 1, EXPENSIVE: 3, WORKER: 1 (Total: 5)
+- **Tracked Queue/Control Tasks**: CONTROL: 1, EXPENSIVE: 3, WORKER: 0 (Total: 4)
 - **Runtime Execution**: see open GitHub pull requests; PR number = execution ID
 - **WIP Utilization**: CONTROL: 1/2, EXPENSIVE: 0/3, WORKER: 0/10
 - **Legacy Scaffolds Remaining**: 0

@@ -6,8 +6,8 @@ Scientific acceptance and live execution are separate. Historical research does 
 
 | Goal | Composition |
 |---|---|
-| D0-FOUNDATION | OPEN |
-| THEORY-TRANSFER | OPEN |
+| D0-FOUNDATION | DISCHARGED |
+| THEORY-TRANSFER | DISCHARGED |
 | GR | OPEN |
 | RAW-216 | OPEN |
 | D0-CLOSURE | OPEN |
@@ -16,8 +16,8 @@ For the short working composition and next scientific questions, use [SYNTHESIS.
 
 | Obligation | Group | Missing logical inputs | Accepted application |
 |---|---|---|---|
-| verification_core | foundation | none; conclusion still needs accepted evidence | none |
-| theory_transfer | foundation | verification_core | none |
+| verification_core | foundation | none; conclusion still needs accepted evidence | lean-verification-core-to-foundation |
+| theory_transfer | foundation | none; conclusion still needs accepted evidence | lean-operational-transfer-to-theory-transfer |
 | constitutive | native | none; conclusion still needs accepted evidence | none |
 | native_sector | native | constitutive | none |
 | probe_law | geometry | none; conclusion still needs accepted evidence | endpoint-probe-to-geometric-law |
@@ -30,8 +30,8 @@ For the short working composition and next scientific questions, use [SYNTHESIS.
 | recovery | composition | joint_nonlinear_solve, contrast_refinement_transfer | none |
 | physical_constraints | composition | native_sector | none |
 | positive_gr | composition | soundness, recovery, matter_source_ward, physical_constraints | none |
-| gr_operational_realization | composition | theory_transfer, native_sector, physical_constraints, matter_source_ward, contrast_refinement_transfer | none |
-| gr_architectural_closure | composition | verification_core, theory_transfer, gr_operational_realization, positive_gr | none |
+| gr_operational_realization | composition | native_sector, physical_constraints, matter_source_ward, contrast_refinement_transfer | none |
+| gr_architectural_closure | composition | gr_operational_realization, positive_gr | none |
 | raw_response_terminal | original | none; conclusion still needs accepted evidence | none |
 | full_affine_stationarity | support | none; conclusion still needs accepted evidence | none |
 | resonance_divisor | support | none; conclusion still needs accepted evidence | none |

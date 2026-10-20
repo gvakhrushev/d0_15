@@ -2,8 +2,9 @@
 
 **Control:** `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`  
 **Status:** working scientific route / not a theorem or task registration
-**Architecture snapshot:** 2026-10-20; foundation baseline `main`
-`5d23e90af703efee7f0deb24517d3ead4780fdfc`. Current research inputs retain their
+**Architecture snapshot:** 2026-10-20; composed foundation/transfer proof
+`7cb104eddfa6fa2479b3c7ee296a1be14df30b6b`, consuming main inputs
+`dff7498b9071ad4d9fd1580b80829d91eb55f534`. Current research inputs retain their
 exact source pins in the [assembly](../gr_assembly/README.md#current-scientific-gate).
 
 ## Architectural objective
@@ -12,9 +13,11 @@ D0 supplies the necessary operational structure `Sigma` (`Σ`) of verification
 without an obligatory external catalogue. Readable and writable distinctions,
 retained records, independent comparison, distinctions stable under admitted
 future comparisons, and operational order/time are used with the exact
-hypotheses of their existing proof owners. The `verification_core` obligation
-assembles that common foundation; it does not request a new proof of the owned
-kernel or a corpus audit. Preserve each owner's quantifiers and scope when
+hypotheses of their existing proof owners. The
+[composed `verification_core` result](D0_FOUNDATION_THEORY_TRANSFER_COMPOSITION_2026_10_20.md#2-one-record-kernel-for-every-admitted-future)
+assembles that common foundation on one verified record/process carrier.
+Its exact scope and independent acceptance are recorded in the assembly.
+Reuse this result and preserve its representation and coding hypotheses when
 stating necessity for the declared class of verifiable theories.
 
 Map the book tuple to explicit representation witnesses. Where a coded
@@ -55,15 +58,22 @@ hypotheses on its actual D0 objects. A target equation may occur in the theory
 being interpreted; assuming it as native admission cannot prove that D0
 realizes its dynamics.
 
-The first uncomposed general interface is between **two execution systems**.
+The [general transfer interface](../../03_FORMALIZATION/D0/Foundation/TheoryTransfer.lean)
+now connects **two execution systems** through a proved common empirical image.
 The owned [`OperationalProcess`](../../03_FORMALIZATION/D0/Foundation/EmpiricalTheoryFactorization.lean)
 preserves contextual equivalence within one empirical theory;
 [`TheoryVerification`](../../03_FORMALIZATION/D0/Foundation/VerifiabilityNecessity.lean)
-represents its empirical states. Reuse both. The additional transfer supplies a
+represents its empirical states. The composed transfer reuses both and supplies a
 state map, an action-to-finite-native-word map, test/outcome maps, commuting run
 and readout, and preservation/reflection of future distinctions on an explicit
 common sector. Additional native tests remain recorded; restricting the common
 sector cannot silently erase distinctions or their source contributions.
+`verifiedRun_image` connects the actual foundation run to the actual compiled
+native run, and `translate_future_observation` identifies transferred
+observational assertions with native readout. The generic assertion interface
+is semantic entailment on empirical classes; every source premise remains a
+proved input or explicit regime hypothesis. Physical realization is the next
+consumer of this theorem.
 
 General relativity is the first full specialization. `gr_operational_realization`
 connects its geometric and matter objects to an admitted native family, while
@@ -202,8 +212,8 @@ argument and chooses a missing substitution from its boundary.
 
 | Goal / existing owner | Reuse now | Missing output and method | Closure / next use |
 |---|---|---|---|
-| Verification foundation: `verification_core` | Necessity, empirical factorization, future-stable memory and book tuple witnesses | Compose the exact interfaces; supply only missing witness/coding maps | One scoped kernel theorem consumed by `theory_transfer`; no new foundation campaign |
-| Generic theorem reuse: `theory_transfer` | Existing state/process owners and target-theory proofs | Commuting state, finite-program, test/outcome and proof maps | Transfer theorem with explicit premises; native GR application may still be conditional |
+| Verification foundation: `verification_core` | Accepted composed record/future kernel in `VerificationCore.lean`, with explicit Sigma witnesses | Apply the proved carrier and coding interface to the chosen native realization; no new generic kernel proof | The generic premise is supplied and consumed by `TheoryTransfer.lean`; physical representation hypotheses remain explicit |
+| Generic theorem reuse: `theory_transfer` | Accepted finite-program and semantic-assertion transfer in `TheoryTransfer.lean`, with actual run/readout bridges | Supply GR's concrete interpretation maps, every imported regime premise and any required native-test coverage | The generic premise is supplied; `gr_operational_realization` still owns the physical application |
 | Native continuation: `constitutive`, `native_sector` | Prospective no-detour/Bellman, all327 conditional-current law, minimal-memory and typed Golden results | Derive actual full Cost/Info and native requirements, including why continuation is required or idle is not optimal; use structural bounds/variational identities or physical equivalence | Supply the previously assumed selection/admission premise, with complete price, clocks, history and real variations; no fitted selector |
 | Physical source: existing `contrast_refinement_transfer`, `matter_source_ward`, `on_shell_stationarity`, `physical_constraints` | Owned six-face tester, source-weld, P25 obstruction, regularity and stationary-shell results | Apply those tests to the derived complete law; retain hidden/even/preparation/work/clock terms and genuine internal stationary elimination | The same action's source and physical equations meet the declared GR interface |
 | Joint dynamics and limit: `gauge_range`, `joint_nonlinear_solve`, `soundness`, `recovery` | Existing curved solutions, connection sheets, Ward and response/refinement estimates | Prove only missing joint rows, bounds or transports on one fixed smooth-metric refining family | Controlled soundness and recovery on the stated nonempty curved class |

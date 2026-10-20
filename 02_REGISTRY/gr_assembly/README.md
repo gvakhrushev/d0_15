@@ -61,6 +61,14 @@ applications; they do not change the status of their existing proof owners.
 | `gr_operational_realization` | An instance on actual admitted native states and operations, binding complete histories, preparations, source, variations, physical quotient and clocks to the GR-facing readout, with the declared refinement estimates. |
 | `gr_architectural_closure` | A common-witness composition of the preceding results with **unchanged `positive_gr`**, including its soundness, recovery, full source and physical constraints. |
 
+The two generic applications are supplied by the
+[composed foundation and transfer proof](../research/D0_FOUNDATION_THEORY_TRANSFER_COMPOSITION_2026_10_20.md).
+`representedRecord_eq_iff` identifies the actual record kernel;
+`verifiedRun_image` and `translate_future_observation` connect that foundation
+to actual interpreted execution and readout. Their independent acceptance is
+stored in this assembly. The next proof work instantiates the physical
+realization and retains every representation/regime premise.
+
 The kernel application names its representation witnesses. Required finite
 coding, effective canonicalization and computable access are supplied by the
 specific coded interface's premises or owned constructions; generic necessity
@@ -87,18 +95,17 @@ existing scientific route/parent owner, keeping the original quantifiers and
 all remaining premises visible. Work then contracts that finite premise
 boundary:
 
-1. **Compose existing kernel owners.** Use `record_injective`,
-   `verifiability_forces_functional_tuple`, the provenance/archive theorem,
-   `universal_factorization`, and the pinned `FutureExecution` process and
-   sufficient-memory theorems. Map state, record and observation witnesses
-   explicitly. The working map links their exact commits; their absence from
-   an assembly application is not a reason to reprove them.
-2. **Supply the general transfer interface.** Existing `OperationalProcess`
-   acts within one empirical theory, while `TheoryVerification` presents
-   states. The next interface joins two execution systems: an action may
-   compile to a finite native word, and execution, tests and all declared
-   future distinctions must commute. Native tests outside the imported sector
-   remain explicit. Physical duration is bound by the concrete clock map.
+1. **Reuse the composed kernel.** `VerificationCore.lean` consumes the original
+   necessity, empirical and future-memory owners on the same protocol. Its
+   exact record kernel, represented executions and coded Sigma witnesses
+   supply the generic foundation application. Physical representation and
+   effective coding hypotheses must still be met by the concrete realization.
+2. **Reuse the general transfer theorem.** `TheoryTransfer.lean` compiles
+   source actions to finite native words and derives execution, readout,
+   composition and faithful common-image assertion transfer from primitive
+   diagrams. It directly consumes the foundation carrier. Native tests outside
+   the imported sector need explicit coverage for a full-native claim.
+   Physical duration is bound by the concrete clock map.
 3. **Instantiate on the current GR front.** Connect the complete paid native
    history/process to the already constructed geometric tester. This uses the
    existing `constitutive`, `native_sector`, `matter_source_ward`,
