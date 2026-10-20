@@ -19,6 +19,8 @@ The kernel already has proof owners for necessary records/comparison, empirical 
 - [Main future-memory owner: future-stable quotient and sufficient retained memory; exact source provenance in foundation intake](https://github.com/gvakhrushev/d0_15/blob/9dabfa0f3782d51496d26784415d7896b8a7652a/03_FORMALIZATION/D0/Foundation/FutureExecution.lean) — опубликованный исследовательский вход
 - [Existing distinction between class admissibility and unique forcing](https://github.com/gvakhrushev/d0_15/blob/5d23e90af703efee7f0deb24517d3ead4780fdfc/03_FORMALIZATION/D0/Foundation/M1ClassAdmissibility.lean) — опубликованный исследовательский вход
 
+**Связанные существующие задачи:** `WRK-A4D-LEAN-FOUNDATION-THEORY-TRANSFER`
+
 ## prospective-native-selection — Минимальный генератор → родной закон физического исполнения
 
 Центральный переход уже имеет входы: необходимое ядро проверяемости, достаточная будущая память, условные Bellman/no-detour теоремы, исходная all327 current-rate минимизация и геометрические классы. В ProspectiveExecution.optimal оптимальность пока является предпосылкой. All327 доказывает минимальную conditional relative entropy при заданном stationary current; свободный current-rate минимум находится при нулевом токе, тогда как scalar Book action в сопряжённой price-координате имеет максимум. Нужны родные условия допустимости и фактические Cost/Info, объясняющие обязательное или предпочтительное продолжение. До исполнения альтернативы с одной полной начальной конфигурацией и задачей могут иметь разные будущие часы; после сохранения истории её требуемые различимости подлежат сохранению. Краткость генератора, длина записи, число гейтов и полное действие остаются разными величинами до доказанного связывания.
@@ -34,7 +36,7 @@ The kernel already has proof owners for necessary records/comparison, empirical 
 - [Typed Q8-to-Golden port; actual Book03 routing, Info and full payment remain open](https://github.com/gvakhrushev/d0_15/blob/fb5d6a57948d3469a4839be27ec45a7d763985ce/02_REGISTRY/research/A4D_LITERAL_GOLDEN_M1_FUTURE_MDL_Q8_ORDER_PORT_TYPED_BRIDGE_2026_10_20.md) — опубликованный исследовательский вход
 - [Conditional endpoint/projective universality: use physical equivalence where proved; retain sourced matter and metric-identification assumptions](https://github.com/gvakhrushev/d0_15/blob/73bcbe9e9c826cf9e6868c04071e9d23f9cb0049/02_REGISTRY/research/A4D_BOOK_CAR_HOLST_WEYL_BRANSDICKE_EINSTEIN_UNIVERSALITY_2026_10_20.md) — опубликованный исследовательский вход
 
-**Связанные существующие задачи:** `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`, `WRK-A4D-LEAN-PRIMITIVE-JET-COMPOSITION`
+**Связанные существующие задачи:** `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`, `WRK-A4D-LEAN-PRIMITIVE-JET-COMPOSITION`, `WRK-A4D-LEAN-FOUNDATION-THEORY-TRANSFER`
 
 ## gr-architectural-composition — One common realization for theorem reuse and physical GR
 
@@ -45,6 +47,8 @@ The strong physical positive_gr chain remains intact. The architectural conclusi
 **Куда подставляется:** `theory_transfer`, `gr_operational_realization`, `gr_architectural_closure`
 
 **Взять из уже опубликованного:**
+
+**Связанные существующие задачи:** `WRK-A4D-LEAN-FOUNDATION-THEORY-TRANSFER`
 
 ## source — Полная история → тот же геометрический источник
 
