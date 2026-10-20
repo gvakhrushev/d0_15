@@ -163,6 +163,84 @@ assert(expectedGammaDim===342.5&&
  "native 685/2 logarithmic Fisher volume and 32-vertex preparation factor");
 
 
+
+// Strongest ORIGINAL source constructive step: stationary pi is recovered
+// from 33 TRUE directed spanning-tree cofactors of I−P^T, with NO
+// separately postulated vertex source. This recovers the missing 32
+// Jeffreys preparation coordinates as explicit native transition
+// polynomials (the Markov-chain tree theorem, not an Einstein postulate).
+function stationaryFromRootedTrees(P){
+ const Lap=Array.from({length:N},(_,u)=>Array.from({length:N},(_,v)=>
+   (u===v?1:0)-P[v][u]));
+ const logWeights=[];
+ for(let root=0;root<N;root++){
+  const S=Lap.filter((_,u)=>u!==root).map(row=>row.filter((_,v)=>v!==root));
+  const m=N-1;let lg=0,sgn=1;
+  for(let k=0;k<m;k++){
+   let r=k;for(let i=k+1;i<m;i++)if(Math.abs(S[i][k])>Math.abs(S[r][k]))r=i;
+   assert(Math.abs(S[r][k])>1e-15,
+    "TRUE original directed tree minor is nonsingular at every vertex");
+   if(r!==k){[S[r],S[k]]=[S[k],S[r]];sgn=-sgn;}
+   const piv=S[k][k];sgn*=Math.sign(piv);lg+=Math.log(Math.abs(piv));
+   for(let i=k+1;i<m;i++){
+    const scale=S[i][k]/piv;
+    for(let j=k+1;j<m;j++)S[i][j]-=scale*S[k][j];
+   }
+  }
+  assert(sgn>0,"original irreducible Markov rooted arborescence cofactor POSITIVE");
+  logWeights.push(lg);
+ }
+ const m=Math.max(...logWeights),tau=logWeights.map(x=>Math.exp(x-m)),
+   total=tau.reduce((a,b)=>a+b,0);
+ return tau.map(x=>x/total);
+}
+const piTrees=stationaryFromRootedTrees(native0.P),
+      piTreesPlus=stationaryFromRootedTrees(plus.P),
+      piTreesMinus=stationaryFromRootedTrees(minus.P);
+const treePiErr=Math.max(...piTrees.map((x,u)=>Math.abs(x-native0.pi[u])));
+const treeScoreErr=Math.max(...dpi.map((x,u)=>
+ Math.abs(x-(piTreesPlus[u]-piTreesMinus[u])/(2*dt))));
+assert(treePiErr<3e-12&&treeScoreErr<5e-9,
+ "all 33 original stationary probabilities and their MOVING source recovered from original rooted spanning tree sums");
+const treeVertexSource=native0.pi.reduce((acc,_,u)=>acc+
+ .5*(degrees[u]-1)*
+  (Math.log(piTreesPlus[u])-Math.log(piTreesMinus[u]))/(2*dt),0);
+assert(Math.abs(treeVertexSource-dVertex)<2e-7,
+ "the TRUE native 32-mode vertex Jeffreys first source is a finite original transition TREE current, no separate pi oracle");
+
+// FULL FORWARD-ONLY original supported Markov KT prediction: a fixed,
+// integer-count online decoder for genuine 718 native allowed transitions.
+// This ROW independent online baseline is a valid complete Markov code
+// but is NOT the proper Markov Jeffreys joint prior: latter has extra
+// moving rooted-tree factor pi^((degree−1)/2), certified above.
+const liveCount=Array.from({length:N},()=>Array(N).fill(0));
+const rowTotal=Array(N).fill(0),testEdges=512;let place=0,onlineMarkovLog=0;
+for(let step=0;step<testEdges;step++){
+ const next=neighbors[place][(step*7+place)%degrees[place]];
+ const prob=(liveCount[place][next]+.5)/
+            (rowTotal[place]+degrees[place]/2);
+ assert(prob>0&&prob<1,"real original Book supported edge KT prediction strictly positive");
+ onlineMarkovLog+=Math.log(prob);
+ liveCount[place][next]++;rowTotal[place]++;place=next;
+}
+const LF=[0],LH=[.5*Math.log(Math.PI)];
+for(let k=1;k<testEdges+15;k++){
+ LF[k]=LF[k-1]+Math.log(k);
+ LH[k]=LH[k-1]+Math.log(k-.5);
+}
+let markovMixtureLog=0;
+for(let u=0;u<N;u++){
+ const a=degrees[u]/2; // native d_u=24/22/20, so a=12/11/10 INTEGER
+ markovMixtureLog+=LF[a-1]-LF[a+rowTotal[u]-1];
+ for(const v of neighbors[u])markovMixtureLog+=LH[liveCount[u][v]]-LH[0];
+}
+assert(Math.abs(onlineMarkovLog-markovMixtureLog)<2e-9,
+ "TRUE all718 supported Book Markov forward KT path code EXACT equals fixed independent-row Dirichlet half-mixture");
+const onlineOriginalBook={
+ steps:testEdges,initialOriginalVertex:0,finalOriginalVertex:place,
+ fullyRetainedOriginalRowCounts:rowTotal,
+ completeForwardGoldenUnitCode:-onlineMarkovLog/Math.log(1/p),
+ onlineMixtureResidual:onlineMarkovLog-markovMixtureLog};
 // THE TRUE 718×17 = 12,206 full mathematical single-transition native
 // BOOK+GOLDEN complete event labels. Here one scalar geometric source moves
 // BOTH genuine original Book Cost and ORIGINAL native Golden J23 mark.
@@ -226,6 +304,10 @@ console.log(JSON.stringify({
   missingRowwiseMovingVertexFirstSource:dVertex,
   naiveRowwiseMovingFirstSource:dRow,correctMovingFirstSource:dFull,
   gaugeCovariantLogPriorDifference:Jg.logPriorHalf-J.logPriorHalf,
+  all33RootedTreeStationaryProbabilityError:treePiErr,
+  all33RootedTreeDerivativeError:treeScoreErr,
+  rootedTreeVertexJeffreysFirstSource:treeVertexSource,
+  realOriginalBookOnlineKTPredictor:onlineOriginalBook,
   universalCodingLogNSlope:expectedGammaDim},
  note:"per-step Fisher exact. Markov Jeffreys prior canonical volume, asymptotic coding source C2 requires independently controlled uniform Markov mixture approximation; not compulsory native G0/Book selected action",
  GR_closed:false
