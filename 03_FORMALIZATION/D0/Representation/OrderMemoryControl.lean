@@ -828,4 +828,58 @@ theorem nativeQ8CanonicalCostGapEqualsDarkLogWeight :
   linarith
 
 
+
+/-! ## Same Born histories, different admissible absolute SECOND Book sources
+
+The original primitive gate ActionProtocol admits ANY nonnegative excess
+above the endogenous nonidentity floor one. The two otherwise identical
+native Q8 terminal operators can be executed by two or eight distinct
+physical transitions. For the perfectly admissible source-controlled
+primitive Cost C(t)=1+t^2 on EVERY changed source state, the full
+chronological additive primitive cost of an executed path is
+(# actual transitions)*(1+t²), never just the final matrix cost.
+
+Its centred second finite difference differs by EXACTLY 12*t² between
+the two histories, while all endpoint-only positive Golden Born laws
+remain identical for EVERY t. Thus a full action's SECOND field source
+cannot be reconstructed from the final unitary/detector alone, even
+though its instantaneous output and first derivative coincide at t=0.
+
+This constructs a legal PRICE FIBRE counterexample. It does not
+prove that physical Book03 selects the field dependence 1+t², and
+does not assert the entire H+J+R action equals this primitive sum.
+-/
+
+/-- An explicitly admissible primitive nonidentity price family. -/
+def nativeQ8LegalPrimitiveCost (t : ℝ) : ℝ := 1 + t^2
+
+theorem nativeQ8LegalPrimitiveCost_floor (t : ℝ) :
+    1 ≤ nativeQ8LegalPrimitiveCost t := by
+  unfold nativeQ8LegalPrimitiveCost
+  nlinarith [sq_nonneg t]
+
+/-- Exact original minimal additive price of the FULL observed
+execution at a declared legal primitive cost chart. -/
+def nativeQ8LegalWholeHistoryPrice
+    (word : List Bool) (t : ℝ) : ℝ :=
+  (nativeQ8CanonicalExecutedAction word : ℝ) *
+    nativeQ8LegalPrimitiveCost t
+
+/-- Positive admissible field variation changes the absolute Book
+history second source even when endpoint matrix and Born effects are
+IDENTICAL: the exact centered SECOND jet contrast is 12 t². -/
+theorem nativeQ8SameEndBookSecondSourceGap (t : ℝ) :
+    ((nativeQ8LegalWholeHistoryPrice originalQ8OrderWord t +
+       nativeQ8LegalWholeHistoryPrice originalQ8OrderWord (-t) -
+       2 * nativeQ8LegalWholeHistoryPrice originalQ8OrderWord 0) -
+      (nativeQ8LegalWholeHistoryPrice [true,true] t +
+       nativeQ8LegalWholeHistoryPrice [true,true] (-t) -
+       2 * nativeQ8LegalWholeHistoryPrice [true,true] 0)) =
+     12 * t^2 := by
+  have hh := nativeQ8CanonicalPriceTwoVsEight
+  simp [nativeQ8LegalWholeHistoryPrice,
+    nativeQ8LegalPrimitiveCost, hh.1, hh.2]
+  ring
+
+
 end D0.Representation.OrderMemoryControl
