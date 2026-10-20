@@ -882,4 +882,42 @@ theorem nativeQ8SameEndBookSecondSourceGap (t : ℝ) :
   ring
 
 
+
+/-! ## Direct ORIGINAL Q8 finite-order return: a four-tick circle IS NOT idle
+
+This is a concrete witness of the new FOUNDATION theorem
+original_roundtrip_forces_paid_history, now using one actual
+native Q8 finite-order primitive. Four local-i forward operations
+return the exact full two-arm operator to I8, just like the empty
+history, but all four intermediate operator-prefix states differ
+and the native clock has reached stage FOUR (rather than ZERO).
+Canonical per-primitive S_min=1 cost gives FOUR paid units.
+This is a strict no-go for identifying time or history work with
+net endpoint change. No actual Book/CAR matter law is assumed.
+-/
+
+theorem nativeQ8FourLocalGatesReturnIdentity :
+    nativeQ8ChronologicalWord [true,true,true,true] = 1 := by
+  native_decide
+
+theorem nativeQ8FourLocalGatesNoIdle :
+    ∀ xy ∈ nativeQ8ExecutionPairs [true,true,true,true],
+      xy.1 ≠ xy.2 := by
+  native_decide
+
+theorem nativeQ8FourStepIdentityHasNonzeroPaidHistory :
+    nativeQ8CanonicalExecutedAction [true,true,true,true] = 4 ∧
+    nativeQ8CanonicalExecutedAction [] = 0 := by
+  native_decide
+
+theorem nativeQ8FourStepCircleClockIsNotIdle
+    {S : Type} (U : D0.Representation.FiniteProtocolClock.Clock → S ≃ S)
+    (s : S) :
+    (D0.Representation.FiniteProtocolClock.run U s 4).1 ≠
+      (D0.Representation.FiniteProtocolClock.run U s 0).1 := by
+  rw [D0.Representation.FiniteProtocolClock.stage_is_internal,
+      D0.Representation.FiniteProtocolClock.stage_is_internal]
+  norm_num
+
+
 end D0.Representation.OrderMemoryControl
