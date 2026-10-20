@@ -94,6 +94,40 @@ for(const word of choices)
  test(JSON.stringify(nativeFutureSignature(base,+1,word))===
       JSON.stringify(nativeFutureSignature(base,-1,word)),
       "literal Golden Fin4/Bloch declared future actions NEVER read unattached Q8 central sign word="+word.join(":"));
+
+// IMPORTANT POSITIVE COUNTERPOINT to literal Fin4 spin blindness:
+// The EXISTING Q8 commutator group and EXISTING GoldenOrderInterferometer
+// controlledSign(s) compose into a purely MATHEMATICAL center-sensitive
+// comparison. This is not a claim literal fullStep or the paid G0 clock
+// already supplies a physical controller from Q8 memory into that port.
+const q8Product=(x,y)=>[
+ x[0]*y[0]-x[1]*y[1]-x[2]*y[2]-x[3]*y[3],
+ x[0]*y[1]+x[1]*y[0]+x[2]*y[3]-x[3]*y[2],
+ x[0]*y[2]-x[1]*y[3]+x[2]*y[0]+x[3]*y[1],
+ x[0]*y[3]+x[1]*y[2]-x[2]*y[1]+x[3]*y[0]
+];
+const q8Inv=x=>[x[0],-x[1],-x[2],-x[3]],
+      iQ8=[0,1,0,0],jQ8=[0,0,1,0],oneQ8=[1,0,0,0],negQ8=[-1,0,0,0],
+      center=q8Product(q8Product(iQ8,jQ8),q8Product(q8Inv(iQ8),q8Inv(jQ8)));
+test(JSON.stringify(center)===JSON.stringify(negQ8),
+     "ACTUAL original Omega8Center unit quaternion commutator [i,j]=qNEG");
+const centerSign=x=>JSON.stringify(x)===JSON.stringify(negQ8)?-1:1;
+test(centerSign(oneQ8)===1&&centerSign(center)===-1,
+     "existing Q8 central +1/-1 mathematically feeds existing Golden controlledSign(s) parameter");
+const goldenOrderPort=sign=>{
+ const afterGolden=[a,p],afterSign=[afterGolden[0],sign*afterGolden[1]];
+ return [a*afterSign[0]+p*afterSign[1],
+        -p*afterSign[0]+a*afterSign[1]];
+};
+const plus=goldenOrderPort(centerSign(oneQ8)),minus=goldenOrderPort(centerSign(center));
+test(Math.abs(plus[0]-1)<1e-15&&Math.abs(plus[1])<1e-15,
+     "original Golden interferometer +Q8 center leaves second port exactly dark");
+test(Math.abs(minus[0]-p**3)<1e-15&&Math.abs(minus[1]+2*a*p)<1e-15,
+     "original Golden interferometer true Q8 commutator -center outputs native [p^3,-2ap]");
+test(Math.abs(minus[1]**2-4*p**3)<1e-14&&4*p**3>0&&
+     Math.abs(minus[0]**2+minus[1]**2-1)<1e-14,
+     "original center-sensitive GOLDEN BORN second-port probability exact 4p^3 vs 0, full normalization");
+
 console.log(JSON.stringify({
  original_Lean_signatures:{
   coherentGate:"D0.Representation.GoldenCoherentMemory.fullStep(a,p): Real Fin4->Fin4",
