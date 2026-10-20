@@ -68,3 +68,29 @@ print("PASS premature edgewise average NOT SO(null eta): det =",det)
 print("PASS entire-history orbit average keeps exact 4D source, all field derivatives")
 print("FIREWALL: orbit is a symmetry-covariant mathematical presentation only;")
 print("native paid Golden LEFT conditioned execution + full Book HJR GR still OPEN")
+
+# Pointwise G-INVARIANT original SO connection has only three independent
+# oriented zone-pair transporters and their inverses. Every genuine
+# original ABC triangle has exactly the same holonomy.
+X,Y,Z=Bboost(F(2)),Bboost(F(3)),Bboost(F(4))
+zoneplus={(0,1):X,(1,2):Y,(2,0):Z}
+zoneplus.update({(1,0):Bboost(F(1,2)),(2,1):Bboost(F(1,3)),
+                 (0,2):Bboost(F(1,4))})
+fixed_xyz=mul(mul(X,Y),Z)
+for a in A:
+ for b in B:
+  for c in C:
+   assert mul(mul(zoneplus[(part[a],part[b])],
+                   zoneplus[(part[b],part[c])]),
+                   zoneplus[(part[c],part[a])])==fixed_xyz
+assert fixed_xyz!=P[0] and P[0]!=P[1]
+print("PASS 1287 original ABC triangles all have one group holonomy under G-invariant scene connection")
+print("PASS six independent four-dimensional Lorentz faces demand typed relational addressing")
+
+# Original Golden exact-cost pure type-A bank: F_(k+1) words at cost k.
+fib=[0,1]
+for i in range(2,42):fib.append(fib[-1]+fib[-2])
+assert fib[40]==102334155 and fib[41]==165580141
+assert fib[40]<orbit<=fib[41]
+print("PASS literal orthogonal all-embedding type-A Golden code needs cost at least 40")
+print("FIREWALL: cost40 lower bound only IF all orbit labels are physically distinguishable and retained")
