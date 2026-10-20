@@ -552,3 +552,48 @@ The fixed finite order experiment need not rely on differentiating an approximat
 is now mathematically constructed, rather than left as a free phrase. The exact original geometric full40→3→1 Cartan/sourced Einstein and nine-null/Bianchi owners can consume such a test **only after** a SAME physical native programme connects this probe to the actual field/source for each local link and the whole retained Ward/Price+Matter. Six-component informational completeness alone does NOT force the Einstein action or guarantee the full geometry source coefficient, full observer/ref/source equation, programme CODE or compulsory decoder. One positive test of the **real composed Book price**, not more tensor coefficient catalogues, is the next directly identified consumer.
 
 **Scientific status:** exact finite operator algebra, single complete positive detector with 6×6 invertible Lie response, two-fresh-flag order composition (with explicit failed reused-flag control), exact finite opposite-null order probabilities, and nonzero conditional Book same-history Shannon order jet. No new BOOK/CORE/Lean promotion, original whole D0→GR remains OPEN; no original raw #216 or global spacetime solution is silently claimed.
+
+## 7. Full original plaquette stencil: commutator match and a commuting hostile control
+
+The [direct-plaquette C2 checker](sources/d0_opposite_null_julia_order_memory_2026-10-19/check_direct_plaquette_full_c2.py)
+extends the preceding order experiment to every original based face affected by
+four links. For each face it uses the same complete $T(P)=P/2$ Julia
+success/failure instrument and all 13 positive pointer effects; the designated
+negative pointer is Golden-refined while all other labels and failure branches
+remain present. The finite periodic $L=3$ stencil includes all 21 faces
+affected by each four-link word.
+
+For both $[N_2,\bar N_3]=J$ and $[N_2,\bar N_2]=B$, the exact original
+Palatini-face geometry has zero first $a,b$ jets and mixed coefficient
+$-h^2$. The complete direct-per-face Shannon candidate has zero first jets
+and mixed coefficient $-C_{\rm Sh}$, where
+$$
+C_{\rm Sh}=\frac{\sqrt2(5-\sqrt5)}{192}>0.
+$$
+Thus the same positive scale $h^2/C_{\rm Sh}$ matches these two tested
+commutator coefficients, including all affected faces rather than just the
+distinguished face.
+
+The hostile control uses adjacent $+J,-J$ links in the same commuting
+one-parameter subgroup. All 11 affected original faces have identically zero
+geometric jets, but the complete candidate price has zero first jets and the
+following nonzero mixed coefficient after the same calibration:
+$$
+\alpha_{\rm comm}(h)=
+\frac{\sqrt2 h^2}{(5-\sqrt5)\log p}
+\left(4+10\log 12+\frac{\sqrt5-5}{2}\log p\right),
+\qquad p=\frac{\sqrt5-1}{2}.
+$$
+Because $0<p<1$, this coefficient is strictly negative. The fixed
+direct-per-plaquette Julia/Golden price therefore responds at second order to
+this zero-curvature control and is **not** a universal source map for the
+original geometric plaquette action, despite its exact match on the two
+opposite-null commutators. This rejects this specific readout assignment; it
+is not a no-go for the compulsory native D0 price or another admitted
+instrument. The checker reports the exact formulas and scope on replay.
+
+**Remaining physical boundary:** the checker is an exact finite candidate
+calculation, not the native selected Cost--Info law, not the full 40-row
+Euler system on this two-sided ansatz, and not a refinement or GR closure
+result. The next useful step is to derive the actual admitted full-price
+pullback and test the same commuting control on that one run.

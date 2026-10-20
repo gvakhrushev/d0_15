@@ -9094,3 +9094,17 @@ checking the remaining internal Euler and Ward rows. No new action or
 selector is introduced here. The existing GR assembly graph remains the
 route index; this representation does not fill `positive_gr` or promote
 `GR_closed`.
+
+**Full-stencil hostile source control.** The new
+[direct plaquette C2 replay](sources/d0_opposite_null_julia_order_memory_2026-10-19/check_direct_plaquette_full_c2.py)
+tests one explicit complete per-face Julia/Golden price across every affected
+original based face. A common scale matches both opposite-null commutator
+mixed jets, but the same calibrated price has a nonzero mixed jet on the
+adjacent commuting (+J,-J) control, whose full geometric jet is zero. This
+rules out that specific candidate readout as a universal geometric source
+map; it is not a no-go for the compulsory native D0 price. The exact result
+and hypotheses are recorded in
+[the candidate result note](sources/d0_opposite_null_julia_order_memory_2026-10-19/RESULT_DIRECT_PLAQUETTE_C2.md)
+and §7 of the [opposite-null memory report](A4D_OPPOSITE_NULL_LIE_COMPLETE_JULIA_ORDER_MEMORY_BOOK_SOURCE_2026_10_19.md).
+The physical target remains the same admitted full-price pullback and its
+internal/matter/Ward/refinement equations.
