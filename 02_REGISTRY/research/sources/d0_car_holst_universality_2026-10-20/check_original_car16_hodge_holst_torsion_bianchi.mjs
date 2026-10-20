@@ -262,6 +262,62 @@ for(const v of samples){
  ok(Math.abs(v.EHdensity-(v.BransDickeBulk+v.boundaryMinus3BoxW))<4e-13,
   "4D native Book-Weyl metric EH -> exact Brans-Dicke omega=-3/2 bulk + true boundary");
 }
+
+// NEW BOOK ENDPOINT WEIGHT = EXACT PROJECTIVE GEOMETRY, not extra curvature.
+// Starting from hat e=e^sigma e, same ORIGINAL Lorentz spin connection
+// omega, the raw and dressed affine connections obey
+// Gamma_raw^rho_(mu nu)=Gamma_LC(ghat)^rho_(mu nu)
+//                            -delta^rho_nu (partial_mu sigma).
+// sigma=0.5 ln W, thus xi=d sigma is EXACT and has zero curvature.
+// Check all 4^4 true curvature slots DIRECTLY, not just scalar Ricci.
+function projectiveSceneConnection(x){
+ const W=1+x*x,wP=2*x,wPP=2;
+ const a=wP/(2*W),ap=(wPP*W-wP*wP)/(2*W*W),sig=[1,-1,-1,-1];
+ const hc=Array.from({length:4},()=>Array.from({length:4},()=>Array(4).fill(0)));
+ const hd=Array.from({length:4},()=>Array.from({length:4},()=>Array(4).fill(0)));
+ const rc=Array.from({length:4},()=>Array.from({length:4},()=>Array(4).fill(0)));
+ const rd=Array.from({length:4},()=>Array.from({length:4},()=>Array(4).fill(0)));
+ for(let rho=0;rho<4;rho++)for(let mu=0;mu<4;mu++)for(let nu=0;nu<4;nu++){
+  const C=(rho===mu&&nu===1?1:0)+(rho===nu&&mu===1?1:0)
+           +(rho===1&&mu===nu?sig[mu]:0);
+  const P=(rho===nu&&mu===1?1:0);
+  hc[rho][mu][nu]=a*C;hd[rho][mu][nu]=ap*C;
+  rc[rho][mu][nu]=a*(C-P);rd[rho][mu][nu]=ap*(C-P);
+ }
+ return {hc,hd,rc,rd,W,sigmaDeriv:a};
+}
+function fourCurvature(g,d){
+ const out=Array.from({length:4},()=>Array.from({length:4},()=>zero(4)));
+ for(let rho=0;rho<4;rho++)for(let sigma=0;sigma<4;sigma++)
+ for(let mu=0;mu<4;mu++)for(let nu=0;nu<4;nu++){
+   let q=(mu===1?d[rho][nu][sigma]:0)
+        -(nu===1?d[rho][mu][sigma]:0);
+   for(let lam=0;lam<4;lam++)
+    q+=g[rho][mu][lam]*g[lam][nu][sigma]
+      -g[rho][nu][lam]*g[lam][mu][sigma];
+   out[rho][sigma][mu][nu]=q;
+ }
+ return out;
+}
+const projectiveChecks=[];
+for(const x of [0,.35,1,2]){
+ const c=projectiveSceneConnection(x);
+ const Rh=fourCurvature(c.hc,c.hd),Rr=fourCurvature(c.rc,c.rd);
+ let err=0,torsionErr=0,xiCurl=0;
+ for(let rho=0;rho<4;rho++)for(let sig=0;sig<4;sig++)
+ for(let mu=0;mu<4;mu++)for(let nu=0;nu<4;nu++)
+   err=Math.max(err,Math.abs(Rh[rho][sig][mu][nu]-Rr[rho][sig][mu][nu]));
+ for(let rho=0;rho<4;rho++)for(let mu=0;mu<4;mu++)for(let nu=0;nu<4;nu++){
+  const actual=c.rc[rho][mu][nu]-c.rc[rho][nu][mu];
+  const predicted=c.sigmaDeriv*((rho===mu&&nu===1?1:0)
+                                 -(rho===nu&&mu===1?1:0));
+  torsionErr=Math.max(torsionErr,Math.abs(actual-predicted));
+ }
+ ok(err<3e-14 && torsionErr<3e-14,
+  "ALL 256 CURVATURE ENTRIES unchanged under exact native Book endpoint projective shift, predicted raw trace torsion");
+ projectiveChecks.push({x,curvatureMaxError:err,rawTorsionMaxError:torsionErr,
+  compensatorSigmaDerivative:c.sigmaDeriv});
+}
 // A local independent Immirzi ratio is NOT a pure coframe Weyl gauge:
 // beta(x)=x0, constant alpha, torsionless e=dx gives
 // d beta wedge e2 wedge e3 = dx0 wedge dx2 wedge dx3 != 0.
@@ -281,6 +337,7 @@ console.log(JSON.stringify({
   independentExactSiteWeights:["25/9","49/25"],allSixFaceSource:orig,
   actualNativeSceneW:[W0,W1],independentBookInfoShifts:[t0,t1],
   BookWeylSiteActionResidual:groupResidual,conformalRicci4DChecks:samples,
+  projectiveBookEndpointCurvatureChecks:projectiveChecks,
   BransDickeOmega:"-3/2",movingImmirziTorsionHostileControl:variableHolstTorsionFreeSource},
  proofScope:"exact original finite CAR/so(1,3) algebra + mathematical continuum torsionfree Palatini-Holst theorem; no compulsory Book/G0, no native finite-torsionless/GR refinement",
  GR_closed:false
