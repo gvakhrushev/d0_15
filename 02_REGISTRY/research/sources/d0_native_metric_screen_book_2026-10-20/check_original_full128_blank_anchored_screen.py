@@ -44,7 +44,7 @@ def words(variation=None):
                 out[0].append(x);out[1].append(y)
     return out
 def row(W,label,component):
-    return sum(((-1)**((label&j).bit_count())*W[component][j]
+    return sum(((-1)**bin(label&j).count("1")*W[component][j]
                 for j in range(32)),Z.copy())/32
 W=words(); A=row(W,0,0)
 assert A==A.H
@@ -73,7 +73,7 @@ def symmetric(coordinates):
     return Q
 k=s.Matrix([z-1 for z in phase])
 for t in range(3):
-    assert s.simplify(symmetric(N[:,t])*k)==s.zeros(4)
+    assert s.simplify(symmetric(N[:,t])*k)==s.zeros(4,1)
 jets=[]
 for t in range(3):
     Q=symmetric(N[:,t]); dW=words(Q); dA=row(dW,0,0)
@@ -99,7 +99,7 @@ det=- (1888*T**3+4595)/702
 assert s.simplify(J.det()-det)==0
 ell=s.Matrix([0,1,-1,1]);Qstar=ell*ell.T
 assert Qstar==sum((symmetric(N[:,t]) for t in range(3)),s.zeros(4))
-assert s.simplify(Qstar*eta*k)==s.zeros(4)
+assert s.simplify(Qstar*eta*k)==s.zeros(4,1)
 assert J*s.ones(3,1)==s.Matrix([-s.Rational(4,3),
                                 -s.Rational(181,36),-s.Rational(189,52)])
 # Genuine normalized Jones initial state psi/sqrt2 and two TRUE Kraus
