@@ -9266,3 +9266,28 @@ retain their exact original scopes. Canonical historical receipt inputs remain
 unchanged. For Book03 feedback use the complement-preserving operator owner,
 not an independent `P,Q` variation. None of this changes native action selection,
 the original raw-response terminal or physical GR status.
+
+## 20 October: terminal readout preserves the controlled stopped-source limit
+
+The [complete terminal-source packet](A4D_STOPPED_TERMINAL_READOUT_COMPLETE_SOURCE_2026_10_20.md)
+continues the owned compact stopped Golden/CAR16 execution through its
+fixed final Golden17 test. The complete joint classical law has terminal
+entropy-source error at most `8 epsilon B sqrt(17)/e`; its coherent
+flags-plus-pointer archive has complementary density
+`(1-epsilon)C(tau_m)+sum_failed w_s C(tau_Ks)` and a no-floor source
+error `O(B sqrt(d) epsilon^(1/3))`, with d=256 on the declared full-CAR16
+Choi square-root instrument. All failure words, terminal labels and CAR
+grades remain. Exact fixed-code and coherent relative-code identities
+retain the nonzero full Golden flag-code value. Moving observer/instrument
+isometry jets enter B when supplied on the actual trivialized fibers.
+
+The existing exponential cap suppresses these terminal rare-failure errors
+under the declared polynomial source budgets and normalization. This
+removes the separately uncontrolled final-readout cap component from the
+compact source calculation. It does not remove the ideal successful
+terminal source: pointer Shannon, coherent reduced entropy and original
+fixed-code price generally differ. The compulsory Info/price/instrument
+map, actual paid work/preparation/controller/clock, different full128 and
+noncompact carrier, physical selection and joint nonlinear refinement
+remain open. This component application does not identify the compact
+protocol with the whole-HJR root or alter its minimum gate. `GR_closed=false`.

@@ -2339,3 +2339,30 @@ remain bounded within this execution. The packet must identify the actual
 admission/accounting map still needed; a useful source component or compiler
 lemma does not alone discharge `constitutive` or `native_sector`. No new
 task, lifecycle change or physical GR promotion.
+
+### 20 October: terminal source of the same stopped compact programme
+
+Phase: native realization, bounded component application inside this Draft.
+Consume `6e86ccbe2d0df83b920bc9307b5f82cb686b5010`'s stopped compact
+CAR16 flag theorem and fixed full-CAR16 Golden17 POVM. The missing parent
+premise is the rare unfinished-prefix contribution AFTER final readout,
+including the reduced coherent flags-plus-pointer relative-code source.
+For fixed m,N and original Golden leaf weights, prove a no-floor first-source
+comparison to the ideal successful terminal instrument in the same field
+dual norm. Retain its nonzero ideal source and full flag-code value.
+The coherent statement uses the declared square-root instrument, d=256;
+it does not identify effects with an arbitrary historical instrument or
+replace full128/reference128. A moving instrument is covered only with
+its actual isometry/fiber first-jet bound. Sum actual local bounds before
+normalization. Existing exponential cap plus polynomial budgets supplies
+the terminal rare-failure source limit; no new physical price is selected.
+
+Write paths: `A4D_STOPPED_TERMINAL_READOUT_COMPLETE_SOURCE_2026_10_20.md`,
+`sources/d0_stopped_terminal_readout_2026-10-20/`, its ordinary certificate
+entrypoint, and this append-only primary/brief intake. Smallest decisive
+checks: the complete stopped joint law, full-CAR16 instrument/complement
+source, exact dark marked outcome, and retained nonzero successful fixed-code
+source. Independent analytical/checker review pins the application. This
+supplies only the terminal cap-error component of `constitutive`/`native_sector`;
+actual Book Info/price, paid admission, work/clock, full128/noncompact and
+joint/refinement obligations remain. No assembly goal or lifecycle promotion.

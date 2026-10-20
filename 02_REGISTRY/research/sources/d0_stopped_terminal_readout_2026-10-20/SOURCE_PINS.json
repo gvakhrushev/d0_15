@@ -1,0 +1,41 @@
+{
+  "source_ref": "6e86ccbe2d0df83b920bc9307b5f82cb686b5010",
+  "owner": "existing Draft PR #334",
+  "phase": "native realization; terminal cap-error component",
+  "owned_inputs": [
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_flag_source_minimum_2026-10-20/flag_source.md",
+      "ref": "6e86ccbe2d0df83b920bc9307b5f82cb686b5010",
+      "sha256": "1dabc2596c64e4e3e789fc48a6a63c1a18657d17d44e4bab3f826caaa6d51b61"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_relational_coherent_synthesis_2026-10-20/fixed_readout.md",
+      "ref": "6e86ccbe2d0df83b920bc9307b5f82cb686b5010",
+      "sha256": "60793e84ce625d826724af39d7e62da5b787ed3c19f098c0274d48fad867572d"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_relational_coherent_synthesis_2026-10-20/coherent_execution.md",
+      "ref": "6e86ccbe2d0df83b920bc9307b5f82cb686b5010",
+      "sha256": "14f9b909779146eeff099029039d15137eea3761e9972b31ef63cfeec9ab8287"
+    }
+  ],
+  "frozen_artifacts": [
+    {
+      "path": "02_REGISTRY/research/sources/d0_stopped_terminal_readout_2026-10-20/RESULT.md",
+      "sha256": "84826e6ad1951513e3c9fed93db8d4b47ce3d23f135a4efe48fcddd43803984a"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_stopped_terminal_readout_2026-10-20/check_terminal_readout.py",
+      "sha256": "96656ced0f60a5f05943dfc7c71c1d7153bf7c3334e69e7ae5aa7d95f662ef5d"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_stopped_terminal_readout_2026-10-20/TERMINAL_READOUT.json",
+      "sha256": "0dd8fd7811ee046d22288b8cedc0709992a9675d9cf63289c730a426cb577d11"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_STOPPED_TERMINAL_READOUT_COMPLETE_SOURCE_2026_10_20.md",
+      "sha256": "2464060733949f0c1f1f1b1aaa4edb43c6b2714749624469d0509bae1ef0ca04"
+    }
+  ],
+  "scope": "No accepted assembly goal or physical Info/price/admission identification."
+}
