@@ -160,6 +160,17 @@ def print_execution(pr: dict, matched_by: str) -> None:
         print("Action: Inspect/fix this PR's lifecycle before continuing; do not create a new execution.")
 
 
+def print_programme_focus() -> None:
+    print("Read: AGENTS.md; 00_WORK/README.md; "
+          "02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md"
+          "#prospective-minimality-and-physical-execution")
+    print("Focus: Reuse pinned proof owners; identify the exact missing parent substitution "
+          "and remaining assumptions. Prefer structural certificates before enumerating histories.")
+    print("For minimality work: distinguish the generator, full Cost-Info price and physical selection.")
+    print("Handoff: PR + exact conclusion + consumed parent premise "
+          "(or missing application/changed route), checks, blocker.")
+
+
 def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("task_id")
@@ -196,6 +207,7 @@ def main(argv: list[str] | None = None) -> int:
             if pr:
                 print(f"Repository: {REPO}\nTask: {args.task_id}")
                 print_execution(pr, matched_by)
+                print_programme_focus()
                 if assembly:
                     print(gr_assembly.context(assembly, args.task_id))
                     actions = gr_assembly.next_actions(assembly, prs)
@@ -213,6 +225,7 @@ def main(argv: list[str] | None = None) -> int:
         print(f"Class: {task['class']}; Queue state: {task['state']}")
         print(f"Base: {field(brief, 'Base')}")
         print(f"Brief: {task['brief']}\nBranch: {branch}\nPrimary artifact: {artifact}")
+        print_programme_focus()
         if assembly:
             print(gr_assembly.context(assembly, args.task_id))
         if args.offline:
@@ -227,7 +240,7 @@ def main(argv: list[str] | None = None) -> int:
                 raise ValueError("assembly launch gate: " + "; ".join(checked["reasons"]))
         print("Open execution: none (GitHub checked).")
         print("Execute GitHub-first: read the brief, start its lifecycle and open the Draft PR before substantive work.")
-        print("Write the durable result in that PR; return only PR + verdict/PASS-FAIL + blocker.")
+        print("Write the durable result and its exact parent application or remaining gap in that PR.")
         return 0
     except (OSError, ValueError, KeyError) as exc:
         print(f"ERROR: {exc}", file=sys.stderr)

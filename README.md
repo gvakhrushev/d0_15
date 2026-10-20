@@ -18,6 +18,15 @@ nonlinear gravitational equation, its independently derived matter source,
 physical constraints, and controlled soundness and recovery on an explicit
 nonempty curved class**. This composed physical target remains open.
 
+The current central bridge is **prospective minimality**: derive the native
+continuation law from compulsory verification conditions and the same
+execution's complete Cost-Info. Existing memory, Bellman/no-detour,
+conditional-current and geometric theorems are inputs to this derivation. The
+physical optimum is still a premise in the prospective formal owner; the next
+work must supply its native origin or the precise native variational law.
+Read the [shared focus and closure roadmap](02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md#prospective-minimality-and-physical-execution)
+for goals, reusable results, proof tools and exact completion conditions.
+
 | Architectural conclusion | Required mathematical output |
 |---|---|
 | Necessary kernel: `D0-FOUNDATION` | Compose the existing necessity, empirical-factorization and retained-future-memory proofs with their exact assumptions and book-to-formal witness maps. |
@@ -59,6 +68,9 @@ obligations, exact interfaces and accepted applications. Run
 `python3 tools/gr_assembly.py next` for live owners and the next consuming steps,
 or `why` / `search` / `attempts` for a bounded lookup. Historical research stays
 searchable with its original scope; it does not automatically close a premise.
+For the central bridge, `python3 tools/gr_assembly.py puzzle prospective-native-selection`
+opens its existing proof owners and missing physical application. This reading
+command does not register or launch another execution.
 
 ---
 

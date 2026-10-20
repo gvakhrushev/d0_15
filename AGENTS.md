@@ -16,7 +16,7 @@ Start by reading:
 
 1. `AGENTS.md`;
 2. `00_WORK/README.md`;
-3. the [architectural objective in the current scientific route](02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md#architectural-objective);
+3. the [architectural objective](02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md#architectural-objective), [prospective-minimality focus](02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md#prospective-minimality-and-physical-execution) and closure roadmap in the current scientific route;
 4. `00_WORK/manifest.json`;
 5. the task brief named by the manifest.
 
@@ -114,6 +114,46 @@ existence premise. A scoped negative changes only its declared route; retained
 physical assumptions remain open. Check `search`, `attempts` and `why` before
 repeating a construction; use `impact --base REF` for changed inputs. Claims,
 scientific evidence and the original raw terminal retain their existing scope.
+
+## Shared scientific focus at every handoff
+
+The programme starts from verification and its forced functional roles. Its
+current physical bridge is to derive the native continuation law and complete
+Cost-Info from the same admitted process, then consume existing theory results.
+GR is the first full specialization. This intent is durable in the
+[central programme and roadmap](02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md#prospective-minimality-and-physical-execution);
+do not ask the user to restate it or restart the foundation/geometry programme.
+
+- Reuse the owned kernel, future-memory, Bellman/no-detour, conditional-current
+  and geometric results at their exact hypotheses. When the parent argument
+  needs an owned result, its missing application calls for composition or
+  transport, not re-proving that result.
+- Treat prospective minimality as a physical derivation target. In the pinned
+  `ProspectiveExecution`, `optimal` is still an input premise. Derive the native
+  requirements and full objective/continuation law, including why nontrivial
+  continuation is required or favoured in the claimed regime;
+  repeating a consequence of `optimal` does not supply that premise.
+- Compare prospective alternatives at the same complete initial state and
+  task/constraints. Their future clocks may differ unless duration is fixed by
+  the task. A retained-history replacement must preserve its required readable
+  distinctions. The retrospective Q8 2/8 gap does not refute prospective choice.
+- Account for extra information: redundant encoding, generated history, or an
+  independently sourced distinction. Keep generator description, record length,
+  executed steps and full physical action separate until a theorem binds them.
+- Prefer a structural certificate, invariant, variational identity or proved
+  physical equivalence over another catalogue of paths. A lower-bound
+  certificate still needs a native proof that actual execution attains it.
+  A weighted law, its classical limit, stationarity and strict path minimization
+  retain their distinct conclusions.
+- Work on the exact missing parent substitution. State the owned input, the
+  missing hypothesis/map and the intended structural method in the existing
+  brief. Report the substituted premise, a scoped route change, or the remaining
+  application. PASS counts alone are not progress in the composed argument.
+
+This focus belongs to existing `constitutive`/`native_sector` and realization
+owners. It adds no task class, form, status or start prerequisite. Deriving an
+original native law does not authorize inserting a new selector into the
+unchanged raw-response problem. Independent conditional work keeps moving.
 
 ## Validation budget
 

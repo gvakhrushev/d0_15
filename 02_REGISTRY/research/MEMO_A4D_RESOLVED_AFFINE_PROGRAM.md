@@ -82,6 +82,155 @@ same family. The original raw terminal and global ambiguity classification
 remain separate goals. This page specifies the argument; it does not promote
 any goal or existing research result to proved status.
 
+## Prospective minimality and physical execution
+
+**Working intent, fixed at the 2026-10-20 programme handoff:** verification is
+the foundation; GR is its first full physical application; existing proofs are
+inputs to finish that application. Minimality is investigated as the law of
+physical generation before execution. The purpose of the next work is to
+derive the missing native law and compose the already constructed pieces.
+Agents inherit this intent from this page and `AGENTS.md`; it does not depend
+on the user repeating the discussion or on a new audit of every book.
+
+### Central transition and exact proof boundary
+
+The `constitutive`/`native_sector` front must derive, from the admitted D0
+branch/record process, the native verification/admissibility requirements and
+complete objective/continuation law, including why nontrivial continuation is
+required or favoured in the claimed regime. Its output must feed the same native
+source, variations and clock into `gr_operational_realization`. This is the
+meaning of prospective minimality in this programme:
+
+\[
+\text{D0 verification and admitted operations}
+\Longrightarrow
+\text{required future distinctions and complete native price}
+\Longrightarrow
+\text{physical continuation law}.
+\]
+
+The pinned [prospective formal owner](https://github.com/gvakhrushev/d0_15/blob/bf82fb54c63bbe95aee5e459a30f17a27f576519/03_FORMALIZATION/D0/Foundation/EndogenousActionQuantum.lean)
+already proves Bellman suffix optimality and exclusion of dominated executions
+and positive redundant detours. Its `ProspectiveExecution.optimal` is an
+explicit **premise**. The central target is to derive that premise, or a precisely
+stated native variational law with its physical consequences, from the same
+complete D0 construction. Re-proving the consequences of an assumed optimum
+does not discharge this target. State existence, ties/physical equivalence and
+the actual scope of selection; an abstract `allowed`, `goal` or `price` field
+does not by itself provide its native interpretation.
+
+Two comparisons must remain distinct. Before execution, alternatives have the
+same complete initial conditions, goal and required constraints. They may
+produce different final clock readings unless duration itself is constrained.
+Thus the Q8 two-step alternative can be preferred prospectively even though
+the eight-step alternative would retain a different clock. After a history is
+retained, a claimed lossless replacement must preserve its required observable
+distinctions, including readable clock/history and their source contributions.
+The existing retrospective 2/8 result is an accounting boundary, not a
+refutation of a prospective minimum principle.
+
+The extra-bits argument becomes an information-provenance rule. Additional
+symbols are either redundant encoding, history generated from the admitted
+rule/state and accounted execution, or new independent distinguishable input
+with an admitted source. A short generator may produce a long record. Generator
+description, record length, gate count and full Cost-Info must therefore retain
+separate definitions until their relationship is proved. A mismatch must be
+resolved by a demonstrated omitted condition, an incorrect model or a precise
+boundary theorem; an unnamed hidden influence is not a repair.
+
+The same formal owner proves `no_motion_without_a_required_distinction`: if the
+initial goal is already satisfied and every step has positive price, the
+optimum is empty. The native law must therefore supply an obligatory future
+distinction or a complete Cost-Info objective for which idle is not optimal.
+An externally chosen destination or current cannot stand in for that proof.
+
+### Reuse before new derivation
+
+The original [all327 conditional-current theorem](https://github.com/gvakhrushev/d0_15/blob/bf82fb54c63bbe95aee5e459a30f17a27f576519/02_REGISTRY/research/A4D_GLOBAL_327_BOOK_FISHER_CAR16_MAGNETIC_WICK_AND_DARK_REVIVAL_2026_10_20.md)
+already supplies stationary-flow relative entropy, a moving-Doob variational
+identity and the minimum rate at a specified current. Its unconstrained
+current-rate functional is minimized at the native zero-current law; this is
+distinct from the strict maximum of the scalar Book action in the conjugate
+price coordinate. Mandatory nonzero future tests and identity
+with the actual complete Book03 action remain open. Consume this conditional
+result. The next question is the native origin of the constraint and actual
+Cost/Info, not another derivation of generic Gibbs or Bellman algebra.
+
+The [literal Q8/Golden port](https://github.com/gvakhrushev/d0_15/blob/fb5d6a57948d3469a4839be27ec45a7d763985ce/02_REGISTRY/research/A4D_LITERAL_GOLDEN_M1_FUTURE_MDL_Q8_ORDER_PORT_TYPED_BRIDGE_2026_10_20.md)
+and the [Book endpoint/projective theorem](https://github.com/gvakhrushev/d0_15/blob/73bcbe9e9c826cf9e6868c04071e9d23f9cb0049/02_REGISTRY/research/A4D_BOOK_CAR_HOLST_WEYL_BRANSDICKE_EINSTEIN_UNIVERSALITY_2026_10_20.md)
+are further owned inputs. Their physical admission, complete payment and
+source hypotheses stay explicit. A detector-output Shannon selector is
+conditional until that entropy is identified with actual native Info.
+An equation-level equivalence may avoid selecting a unique microscopic formula;
+the endpoint theorem does not by itself supply arbitrary sourced matter or
+identify the physical dressed metric. The synthesis cards retain these scopes.
+
+### Structural methods and their consumers
+
+Use a universal structural argument before considering an exhaustive path
+catalogue. For example, on a declared finite horizon with terminal price `g`,
+if every allowed transition obeys
+
+\[
+V_n(x)\le c_n(x,y)+V_{n+1}(y),\qquad V_N=g,
+\]
+
+then telescoping gives `V_0(x_0) <= totalPrice + g` for every admissible history.
+Equality along the proposed execution certifies its optimum. This is a
+sufficient proof method, not an added D0 law: the price, continuation constraint
+and native attainment of equality still need owners. Invariants, dominance,
+existing variational identities and proved source/equation equivalences are
+alternative methods when they reach the same declared conclusion.
+
+Book03's `S = sum Cost - sum Info` and `w = phi^(-S)` retain their actual
+operator/record context. Positive scalar weights suppress more costly histories
+without excluding them. For finite scalar histories, the identity
+`E_q S - H_phi(q) = -log_phi Z + D_phi(q || q*)`,
+`q* = phi^(-S)/Z`, is a candidate variational representation, not a new selected
+physical price. Its entropy cannot silently replace or double-count native
+Info. A scalar reduction of an operator sum, concentration to a classical law,
+stationarity of action and strict minimization of each history are separate
+claims. Use the existing all327 result where it applies; prove only the missing
+physical identification or limit needed by the consumer.
+
+### Closure roadmap: goals, reusable inputs and tools
+
+These rows refine the existing obligations; they add no task registrations or
+logical/start dependencies. The integrator maintains the complete conditional
+argument and chooses a missing substitution from its boundary.
+
+| Goal / existing owner | Reuse now | Missing output and method | Closure / next use |
+|---|---|---|---|
+| Verification foundation: `verification_core` | Necessity, empirical factorization, future-stable memory and book tuple witnesses | Compose the exact interfaces; supply only missing witness/coding maps | One scoped kernel theorem consumed by `theory_transfer`; no new foundation campaign |
+| Generic theorem reuse: `theory_transfer` | Existing state/process owners and target-theory proofs | Commuting state, finite-program, test/outcome and proof maps | Transfer theorem with explicit premises; native GR application may still be conditional |
+| Native continuation: `constitutive`, `native_sector` | Prospective no-detour/Bellman, all327 conditional-current law, minimal-memory and typed Golden results | Derive actual full Cost/Info and native requirements, including why continuation is required or idle is not optimal; use structural bounds/variational identities or physical equivalence | Supply the previously assumed selection/admission premise, with complete price, clocks, history and real variations; no fitted selector |
+| Physical source: existing `contrast_refinement_transfer`, `matter_source_ward`, `on_shell_stationarity`, `physical_constraints` | Owned six-face tester, source-weld, P25 obstruction, regularity and stationary-shell results | Apply those tests to the derived complete law; retain hidden/even/preparation/work/clock terms and genuine internal stationary elimination | The same action's source and physical equations meet the declared GR interface |
+| Joint dynamics and limit: `gauge_range`, `joint_nonlinear_solve`, `soundness`, `recovery` | Existing curved solutions, connection sheets, Ward and response/refinement estimates | Prove only missing joint rows, bounds or transports on one fixed smooth-metric refining family | Controlled soundness and recovery on the stated nonempty curved class |
+| Common realization: `gr_operational_realization`, `gr_architectural_closure` | The preceding exact applications and unchanged `positive_gr` | Identify concrete witnesses or prove structure-preserving transport | One complete native GR theorem; then reuse the same architecture for other theories |
+
+### Initial focus for the next agent wave
+
+1. The integrator starts from the existing conditional argument and substitutes
+   all already applicable owners. A useful result lacking an application stays
+   visible with its exact missing map; it is not discarded or re-proved.
+2. On the native front, resolve actual Info/complete-price identification and
+   why continuation is required or favoured on one declared programme. Use
+   `python3 tools/gr_assembly.py puzzle prospective-native-selection` to find
+   the scoped inputs and consuming obligations, then live dispatch to resume
+   the existing owner. An unspecified price is not a reason to tune more
+   geometric examples to the desired output.
+3. Use source-weld, P25, baseline/C2 and stationary-shell tests as subordinate
+   checks of that same proposed law. A scoped failure changes that proposal;
+   it does not demand a new geometry campaign or refute every D0 realization.
+4. Continue independent conditional transfer and joint/refinement lemmas in
+   parallel where their inputs are available. No new selector may be inserted
+   into the unchanged raw #216/#232 response problem. The existing task work
+   keys, WIP, start/completion requirements and positive GR terminal remain.
+5. At each mathematical checkpoint, record the exact parent substitution or
+   scoped route change and the smallest remaining gap. Reopen an owned question
+   only for a demonstrated changed input/method. Validate the changed argument
+   narrowly during work and the affected composed inputs at acceptance.
+
 ## Current route to general relativity
 
 State the strongest complete conditional argument first: the owned verification

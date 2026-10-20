@@ -12,6 +12,7 @@ For scientific synthesis, start with the short [working map](SYNTHESIS.md):
 ```bash
 python3 tools/gr_assembly.py puzzle
 python3 tools/gr_assembly.py puzzle verification-foundation
+python3 tools/gr_assembly.py puzzle prospective-native-selection
 python3 tools/gr_assembly.py puzzle gr-architectural-composition
 python3 tools/gr_assembly.py puzzle vacuum
 python3 tools/gr_assembly.py puzzle source
@@ -40,6 +41,12 @@ and applications. Shared evidence alone never merges different theorems.
 rewritten to keep the short map current.
 
 ## Architectural closure plan
+
+Read the [shared prospective-minimality focus and closure roadmap](../research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md#prospective-minimality-and-physical-execution)
+for the current goals, reusable inputs, structural proof tools and completion
+conditions. The `prospective-native-selection` card makes the central native
+continuation/Info/price gap visible without creating another result, obligation
+or execution. It belongs to existing `constitutive`/`native_sector` owners.
 
 The programme's common foundation is the necessary functional structure of
 verification. GR is its first complete physical specialization. The plan
@@ -220,6 +227,15 @@ result on its own interface when it does not yet transport to
 
 ## Current scientific gate
 
+The immediate strategic gate is the native origin of the actual complete
+Cost-Info/continuation law and why continuation is required or favoured. The
+original all327
+conditional-current theorem and prospective Bellman/no-detour proofs are ready
+to reuse; their physical constraint/Info/selection premises remain open. Begin
+with `puzzle prospective-native-selection` and the central roadmap. The source
+and geometric tests below decide compatibility of a specified native law; they
+do not replace the derivation of that law or justify a new fixture campaign.
+
 The geometric side is no longer the immediate bottleneck: the pinned #334
 `brinkmann-j2-null-family` result has the exact unrestricted 40→3→1 reduction,
 the forced one-step null-link stagger, and a constructed two-tick J2 source
@@ -268,7 +284,7 @@ later recovery gate still needs a same-metric null system, full Ward transfer,
 boundary/seam flux balance and refinement. These are decision criteria for the
 existing route, not extra result nodes or permission to start a parallel task.
 
-The four-profile stencil argument remains conditional: only after independently establishing linearity and five-site support do `1`, `x`, `y`, and `x²−y²` fix the central-Laplacian stencil. The new P25 boundary makes the next decisive constitutive check smaller and sharper: on its exact common flat root, compute the selected full H+J+R action Hessian pair `(∂_a²S, ∂_a∂_tS)` for the volume-preserving coframe/link witness, together with all original field, preparation, clock, work, oldRIGHT, observer, and history variations. The geometric target is `(0,−1)`; compare under the already declared native Golden normalization, including the forced log(phi) change of base, with no fitted coupling. The key pattern is a zero coframe diagonal and a nonzero mixed source. If the selected action satisfies the saturated positive Cost and coframe-blind Info hypotheses, the finite cone theorem gives a scoped NO-GO; otherwise the nonzero mixed source must come from a native coframe-area-dependent Info/preparation/work/clock term or a genuine stationary hidden Schur. Compare the complete paid return/failure-normalized source to the CAR16 marked-event identity, including moving-observer derivatives. Keep AB/BA, boost, and direct-versus-sequential composition as controls; do not repeat them as independent mathematical tests. The active #334/#232 response task remains unchanged, and this is not a parallel dispatch. Opposite-branch plaquette Euler equations, same-metric Ward transfer, global boundary balance, and refinement remain open.
+The four-profile stencil argument remains conditional: only after independently establishing linearity and five-site support do `1`, `x`, `y`, and `x²−y²` fix the central-Laplacian stencil. Once an actual native law and complete price have been specified, the P25 boundary gives a small decisive compatibility check: on its exact common flat root, compute that full H+J+R action Hessian pair `(∂_a²S, ∂_a∂_tS)` for the volume-preserving coframe/link witness, together with all original field, preparation, clock, work, oldRIGHT, observer, and history variations. The geometric target is `(0,−1)`; compare under the already declared native Golden normalization, including the forced log(phi) change of base, with no fitted coupling. The key pattern is a zero coframe diagonal and a nonzero mixed source. If the selected action satisfies the saturated positive Cost and coframe-blind Info hypotheses, the finite cone theorem gives a scoped NO-GO; otherwise the nonzero mixed source must come from a native coframe-area-dependent Info/preparation/work/clock term or a genuine stationary hidden Schur. Compare the complete paid return/failure-normalized source to the CAR16 marked-event identity, including moving-observer derivatives. Keep AB/BA, boost, and direct-versus-sequential composition as controls; do not repeat them as independent mathematical tests. The active #334/#232 response task remains unchanged, and this is not a parallel dispatch. Opposite-branch plaquette Euler equations, same-metric Ward transfer, global boundary balance, and refinement remain open.
 Keep the connection normalization fixed when checking the proposed finite
 Ricci/Weyl matrix. In the pinned #334 plaquette convention,
 `K_link(u,x,y) = ½[H(u+h,x,y)−H(u+h,x−h,y)] = h K_u(u+h,x,y)`, where

@@ -47,6 +47,34 @@ preserving those structures. A generic transfer theorem does not depend on GR;
 its GR application still requires the declared soundness and recovery theorem.
 These are scoped proof obligations, not new claim-status values.
 
+## Native minimality and continuation
+
+The [central programme](research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md#prospective-minimality-and-physical-execution)
+treats prospective minimality as a physical derivation target within existing
+`constitutive`/`native_sector` obligations. A theorem conditional on
+`ProspectiveExecution.optimal` owns its consequences; physical selection is
+closed only by deriving the needed native condition or a precise alternative
+continuation law from the same admitted D0 process and complete price.
+
+The application must identify native requirements, actual Cost and Info,
+preparation/work/history/clock terms, admissible variations and physical
+consumer. Nontrivial continuation needs a derived required distinction or a
+complete objective for which idle is not optimal. Conditional fixed-current
+minimization, detector-output entropy,
+gate-count optimality, a lower action bound and Book weights each retain their
+own scope. They cannot silently replace the full law or its source. A structural
+certificate needs a native attainment argument; a minimum of a weight functional
+does not by itself prove strict minimization of every executed history.
+
+Prospective alternatives need equal full initial conditions and task constraints,
+not equal future clocks unless the task fixes duration. A retained-process
+replacement preserves the distinctions required by its readout. Additional
+record symbols require provenance, not automatically new independent input.
+Physical equivalence or controlled source remainders may establish a bridge
+without uniqueness of the microscopic formula, when that equivalence is proved.
+These distinctions neither add a new status nor weaken positive GR or the
+original raw terminal; injecting an external selector is not native derivation.
+
 ## Global Stop Rule
 
 Research on a lane stops when its load-bearing ambiguity is terminally classified.

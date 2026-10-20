@@ -14,6 +14,15 @@ GitHub PRs hold durable work; `manifest.json` is the queue, not a live dashboard
 Scientific acceptance and use in the parent argument are separate from a
 passing check.
 
+Every handoff carries the [shared prospective-minimality focus and closure roadmap](../02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md#prospective-minimality-and-physical-execution).
+The native front derives the complete Cost-Info/continuation law and why
+continuation is required or favoured; the existing `optimal` premise and
+conditional current/entropy assumptions must remain visible until discharged. Reuse the
+owned structural results and geometric tester. Their missing physical
+application is the work to finish. Independent conditional transfer/refinement
+work continues on its declared inputs. The dispatcher prints this focus for
+new, resumed, review and offline handoffs; it does not change launch authority.
+
 ## One integrator, parallel bounded work
 
 The scientific integrator owns the kernel and theory interfaces, common carrier,
@@ -38,17 +47,26 @@ This is composition data, not a second queue or claim-status registry:
 | Field | Required content |
 |---|---|
 | Statement | Phase in the argument, exact conclusion, quantifiers and remaining assumptions |
-| Inputs | Owner paths and fixed refs; accepted vs research status |
+| Inputs | Owner paths and fixed refs; accepted vs research status; what is reused and which changed input would justify repeating a proof |
 | Common objects | Carrier, full action, norm, source/comparator and refinement maps used by the consumer |
 | Consumer | Exact parent premise and substitution location; the premise removed, or the missing application/transport for a supporting result |
 | Write surface | Disjoint paths and one branch/worktree owner |
-| Decisive check | Smallest calculation/proof and negative control that can decide the claim |
+| Decisive check | Structural inequality, invariant, variational identity or other smallest proof/check that decides the missing step; negative control where relevant |
 | Assembly | One `Assembly: TASK-ID` line, a registered interface/work key and separate start/completion premises |
 
 Use the phases **verification kernel → interpretation and generic transfer →
 native realization → final composition** to locate the work in the
 argument. Record that location in the existing brief or parent artifact; do not
 add forms, task classes, lifecycle states or status registries.
+
+For a minimality/continuation task, use that same proof-interface text to state
+the complete initial state, native goal/constraints, admissible alternatives,
+native generator, full price and selection conclusion. Future clocks may differ
+unless the goal fixes them; lossless replacement of retained history preserves
+its required distinctions. Keep code length, generated record, gate count and
+physical action separate until proved equivalent. An optimality certificate
+must be accompanied by the native attainment/selection argument needed by its
+consumer. Do not bulk-rewrite existing briefs for cosmetic compliance.
 
 If no exact parent premise and intended substitution can be named, keep the
 idea out of the active wave. A supporting theorem can name its intended use
@@ -74,8 +92,10 @@ the number of newly ready consumers; neither is a probability of success.
 
 ## Start or resume once
 
-1. Read `AGENTS.md`, this file and the architectural objective in the current
-   scientific route, then the part consumed by the assigned work.
+1. Read `AGENTS.md`, this file and the architectural objective, shared
+   prospective-minimality focus and roadmap in the current scientific route,
+   then the part consumed by the assigned work. These contain the durable
+   programme intent; do not ask the user to reconstruct it again.
    For CONTROL entry/workflow changes, inspect open governance PRs and their
    changed paths once. Shared README/AGENTS, queue, dispatch or CI edits go to
    one existing owner/PR; contributors hand over disjoint content. Task-ID
