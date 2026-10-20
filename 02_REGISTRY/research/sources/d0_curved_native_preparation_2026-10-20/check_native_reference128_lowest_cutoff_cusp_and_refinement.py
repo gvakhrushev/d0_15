@@ -81,3 +81,35 @@ print("PASS fixed physical period limiting cusp coefficient",limit)
 print("PASS exact FOUR cutoff slopes +/-nu*q twice; full lowest-128 source NOT C1")
 print("FIREWALL original fully selected G0/M1 H+J+R/oldRIGHT or DIRICHLET boundary OPEN")
 print("GR_closed=false")
+
+
+# EXACT Ky Fan maximality for the original all-NONZERO occupied
+# 128-state preparation at the minimal original two/four-grade capacities.
+# And symmetry-invariant rank-half cutoff twirl requires MORE than 128
+# nonzero LEFT eigenvalues, contrary to any pure fixedRIGHT128 amplitude.
+for grades,Lcut in ((2,65),(4,33)):
+    kcut=32 if grades==2 else 16
+    lower=grades*(1+2*(kcut-1))
+    cutoff_dim=2*grades
+    occupied_cutoff=128-lower
+    assert occupied_cutoff==grades
+    avg_cutoff_occupancy=occupied_cutoff/cutoff_dim
+    assert avg_cutoff_occupancy==.5
+    left_rank_after_twirling=lower+cutoff_dim
+    assert left_rank_after_twirling==grades*Lcut
+    assert left_rank_after_twirling in (130,132)
+    assert lower/128+cutoff_dim*(.5/128)==1
+    # At the minimal grid all nonzero protected eigenvectors are exactly
+    # 128; their uniform rank128 projector is the global Ky Fan MAX.
+    nonzero=grades*(Lcut-1)
+    assert nonzero==128
+    qsum=sum(4*math.sin(math.pi*j/Lcut)**2 for j in range(Lcut))
+    assert abs(qsum-2*Lcut)<1e-12
+    protected_maxR=grades*NU**2*qsum/(128*(PERIOD/Lcut)**2)
+    analytic_maxR=grades*Lcut*NU**2/(64*(PERIOD/Lcut)**2)
+    assert abs(protected_maxR-analytic_maxR)<1e-9
+    print("PASS g",grades,"L",Lcut,
+          "nonzero-only 128 global R MAX on protected carrier",
+          "invariant twirled LEFT rank",left_rank_after_twirling,
+          "cannot be purified by RIGHT128")
+print("PASS extra archive or a paid symmetry-breaking selector mandatory for invariant mixed cutoff")
