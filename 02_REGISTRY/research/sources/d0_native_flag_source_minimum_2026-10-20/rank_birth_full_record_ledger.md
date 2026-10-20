@@ -143,3 +143,136 @@ There are two different physical claims that must not be conflated:
 - If it is an **unnormalized** weight whose Born probabilities are divided by `Z(y)`, the normalized branch law leaves `C(y)` unrestricted. This is a *non-identifiability*, **not** permission to insert a fitted source: the missing `C` must be derived from actual Book03 Cost−Info operations, controller/preparation/work/clock or the complete physical execution. A free common shift cannot be calibrated out of branch probabilities while simultaneously claimed as a uniquely predicted gravitational source.
 
 The extra future-test witness in §4 shows that the *complete* output is not field blind, even though this marginal law is. Hence neither (L) nor (N) determines the full dynamical source; they identify exactly the information missing in an attempted flag-only extraction. This is the parent `constitutive -> native_sector -> gr_operational_realization` substitution gate: demonstrate one common admitted full record, native price **and** physical normalization, not just a matched histogram or another stationary geometry.
+
+
+## 7. Classicalizing the actual flag pointer: a stronger Holevo ledger
+
+The pure coherent tape and the classically readable tape must not be silently equated. Define the physical *candidate* pinching of the chronological flag register (when the controller actually registers orthogonal labels):
+\[
+\mathcal D_F(|\Psi\rangle\langle\Psi|)
+ =\omega_{FD}
+ =\sum_s w_s |s\rangle\langle s|\otimes
+ |\psi_s\rangle\langle\psi_s|.
+\]
+This map does **not** remove failed leaves, data, oldRIGHT or the attempt clock. The data marginal is unchanged: \(\rho_D=\sum_s w_s|\psi_s\rangle\langle\psi_s|\). The classical flag marginal becomes \(\operatorname{diag}w\).
+
+For pure conditional states, the Holevo quantity of that *existing* classical-quantum history ensemble is
+\[
+\chi(F{:}D)=S(\rho_D)-\sum_s w_s S(|\psi_s\rangle\langle\psi_s|)
+ =S(\rho_D)=S(\rho_F).
+\]
+Thus the previously proved coherent-flag relative code has the **exact alternative form**
+\[
+\boxed{\quad \mathcal A_F+\frac{\chi(F{:}D)}{\ln\varphi}=H_\varphi(w).\quad}\tag{H}
+\]
+Equivalently \( \mathcal A_F=H_\varphi(F|D)_{\omega}\), the *quantum conditional entropy of the already classicalized flag labels*, in base-\(\varphi\) units. This explains precisely how a record may have a large raw code \(H_\varphi(w)\) but a smaller conditional code when some branch information is already reflected in the retained data. The Holevo quantity is a bound on obtainable classical information, **not** an assertion that every admitted one-shot D0 readout reaches it.
+
+The pure-tape quantum mutual information is \(I(F{:}D)_{|\Psi\rangle}=2\chi\); after flag pinching it is \(\chi\). Flag pinching produces entropy \(S(\omega_{FD})-S(|\Psi\rangle)=H(w)\). Its marginal entropy change is \(H(w)-S(\rho_F)\); the remaining \(S(\rho_F)\) accounts for the drop in mutual information. These equalities are exact entropy bookkeeping, not an additional physical price or a license to count \(\mathcal A_F\) and \(\chi\) independently. To identify the actual Book03 Info one must show whether the controller writes a coherent or classical flag, which tests are retained and how the Cost−Info ledger pays for its operations.
+
+## 8. Full stopped history -> final readout: exact source transfer without an outcome floor
+
+Retain **every** stopped history \(s\), with fixed field-independent Golden probability \(w_s\), attempted ticks \(T_s\), and success count \(K_s\in\{0,\ldots,m\}\). Append a single fixed, finite, complete physical-*candidate* POVM at the **end** of the programme. Let its Kraus amplitudes on the conditional normalized data+oldRIGHT state be
+\[
+a_{k,r}(y)=L_r(y)|\psi_k(y)\rangle,\quad
+q_{k,r}(y)=\|a_{k,r}(y)\|^2,\quad \sum_{r=1}^{R}q_{k,r}=1.
+\]
+For the stopped joint *classical* record,
+\[
+P(s,r;y)=w_s q_{K_s,r}(y).
+\]
+No success-only renormalization is made. The Shannon chain rule, with actual attempt clocks already inside \(s\), gives
+\[
+H_\varphi(S,R;y)=H_\varphi(w)+\sum_s w_sH_\varphi(q_{K_s}(y)).
+\]
+All \(K_s=m\) completed words share **exactly** the same \(\psi_m\). Writing
+\(\varepsilon=\sum_{s:K_s<m}w_s\),
+\[
+\boxed{
+D_y H_\varphi(S,R)-D_yH_\varphi(q_m)
+=\sum_{s:K_s<m}w_s\bigl(D_yH_\varphi(q_{K_s})-D_yH_\varphi(q_m)\bigr).
+}\tag{T}
+\]
+This is valid for any finite cap \(N\), all failures and all final outcomes, including zero-probability outcomes.
+
+Here is a **uniform C1 bound without any outcome-probability floor**. Suppose for all \(0\le k\le m\) and unit field tangents \(v\),
+\[
+\left(\sum_{r=1}^{R}\|D_v a_{k,r}\|^2\right)^{1/2}\le B.
+\]
+Every \(q_{k,r}=\|a_{k,r}\|^2\) has a C1 Shannon term even at amplitude zeros. Indeed
+\[
+|D_vH_\varphi(q_k)|
+\le\frac2{\ln\varphi}
+\left(\sum_rq_{k,r}(\ln q_{k,r})^2\right)^{1/2}
+\left(\sum_r\|D_v a_{k,r}\|^2\right)^{1/2}
+\le\frac{4\sqrt R}{e\ln\varphi}B,
+\]
+using \(\sup_{0\le x\le1}x(\ln x)^2=4/e^2\). Thus (T) implies
+\[
+\boxed{\quad
+\|D_y H_\varphi(S,R)-D_yH_\varphi(q_m)\|_*
+\le \frac{8\sqrt R}{e\ln\varphi}\,\varepsilon B.
+\quad}\tag{U}
+\]
+For a *fixed* POVM, completeness gives \(\sum_r\|D_v(L_r\psi_k)\|^2=\|D_v\psi_k\|^2\). For moving POVM or preparation, their **actual** operator/amplitude jets must instead enter \(B\); this estimate does not delete those sources.
+
+In the existing compact success-count protocol take \(m_h=\lfloor\tau/h^2\rfloor\), \(N_h=\lceil 2m_h/g\rceil\), \(g=p^2\), and \(\psi_k(y)=\exp(kh^2X(y))\psi_0(y)\), with \(X(y)\) skew-adjoint and bounded first jets. Duhamel's formula gives for \(k\le m_h\):
+\[
+\|D_y\psi_k\|\le\|D_y\psi_0\|+\tau\|D_yX\|.
+\]
+Therefore for an actually fixed admitted finite POVM, \(B=O(1)\) on the declared bounded chart, whereas the owned \(\varepsilon_h\le e^{-m_h/4}\). In particular
+\[
+h^{-2}\|D_yH_\varphi(S,R)-D_yH_\varphi(q_{m_h})\|_*\to0.
+\]
+The same holds for an \(O(h^{-4})\) raw site sum followed by \(h^{-2}\), subject to the actual local-support/overlap map and a polynomial \(B_h\); its conservative right-hand bound is \(O(h^{-6}\sqrt{R_h}B_h e^{-m_h/4})\). The final readout source \(D H_\varphi(q_{m_h})\) is **not** forced to vanish. This is a precise transfer of the full-history *classical Shannon component*, not an equality with the complete native Book03 Cost−Info source.
+
+## 9. Exact CAR16 local Fisher saturation on the whole retained archive
+
+There is a sharper operational test of why the final source remains relevant. Let the **original** CAR16 Choi state \(|\Omega_{16}\rangle\) and compact generator \(J_{23}\) be as in §3. For any finite stopped success-count tree with the actual weights \(w_s\), put \(t_s=K_s h^2\) and
+\[
+|\Psi(F)\rangle=
+\sum_s\sqrt{w_s}\,|s\rangle\otimes
+(\Lambda(e^{t_s FJ_{23}})\otimes I)|\Omega_{16}\rangle.
+\]
+Its original branch distribution \(w_s\) is independent of \(F\); hence its **classical flag-only Fisher information is identically zero**.
+
+The exact CAR16 Choi overlap is
+\[
+\langle\Omega_{16}|(\Lambda(e^{tFJ_{23}})\otimes I)|\Omega_{16}\rangle
+=\cos^2(tF/2).
+\]
+Differentiating at \(F=0\) gives the mean generator \(0\) and squared derivative norm \(t^2/2\). The entire pure flag+data+oldRIGHT record therefore has exact single-parameter quantum Fisher information
+\[
+\boxed{\quad \mathcal I_Q(0)=2\sum_s w_s t_s^2
+=2h^4\mathbb E[K^2].\quad}\tag{Q}
+\]
+The classically pinched flag+conditional-pure-state record has the **same** quantum Fisher information: the weights are fixed and the pure-branch QFI values add. Thus in this exact one-axis model, the full local parameter information is not lost merely by the controller classically registering the flags, although its coherence entropy ledger changes.
+
+For an explicit *mathematical* future effect on the supplied CAR16 data+oldRIGHT, take
+\(P_\Omega=|\Omega_{16}\rangle\langle\Omega_{16}|\), ignoring flags. Its binary return law is
+\[
+q_{\Omega,h}(F)=\sum_sw_s\cos^4(t_sF/2)
+=1-\tfrac12\mathbb E[t_s^2]F^2+O(F^4).
+\]
+The other event has probability \(1-q_\Omega=\frac12\mathbb E[t_s^2]F^2+O(F^4)\). Its classical Fisher information **in the punctured limit**, not the support-restricted Fisher sum at the rank-deficient point, is exactly
+\[
+\boxed{\quad
+\lim_{F\to0,\;F\ne0}\mathcal I_{\{P_\Omega,I-P_\Omega\}}(F)
+=2\mathbb E[t_s^2]=\mathcal I_Q(0).
+\quad}\tag{F}
+\]
+Thus this positive two-effect test locally attains the full pure-record quantum Fisher value along the one compact angle, although the flag histogram itself is perfectly blind. The positive effect is a *mathematical Choi-reference benchmark*, not a newly asserted native-admitted measurement; a physical implementation and its price, including access to oldRIGHT, remain open. The equal limit is nonregular because the rejected event is zero at \(F=0\); the full detector Shannon has a rank-birth \(F^2\ln(1/|F|)\) term and is only C1 there.
+
+With the existing cap rule, \(\tau_h=m_hh^2\), every completed history has \(t_s=\tau_h\) and every incomplete history has \(0\le t_s<\tau_h\). Hence the **uniform finite-cap sandwich**
+\[
+2(1-\varepsilon_h)\tau_h^2
+\le\mathcal I_Q(0)=2\mathbb E[t_s^2]\le2\tau_h^2,
+\]
+and in the exact success-count refinement
+\[
+\boxed{\mathcal I_Q(0)\longrightarrow 2\tau^2}
+\]
+as \(h\to0\), with the missing-cap contribution at most \(2\varepsilon_h\tau_h^2\). The actual attempt time \(T_s\), code \(L_s=T_s+K_s\), real preparation and controller charges remain retained/paid; \(t_s\) is the accumulated **success** angle, not a replacement of that clock.
+
+This is a concrete source-vs-information separation under refinement. It does **not** yield an Einstein tensor, select a metric action, or identify a local Lorentz-frame angle with physical curvature. The Choi probe fixes a relational reference, and its native permission, gauge/observer transport, full128 substitution and physical Cost−Info must be established before any gravitational use. The whole-HJR saddle and raw216 original terminal remain separate.
+
+The bounded exact \(\mathbb Q[p]\) replay for finite caps is \`check_golden_full_history_fisher.py\`. The general (T),(U),(Q),(F) are analytic identities; the checker verifies the original stopped Golden combinatorics and second-jet coefficients without numerical differentiation.
