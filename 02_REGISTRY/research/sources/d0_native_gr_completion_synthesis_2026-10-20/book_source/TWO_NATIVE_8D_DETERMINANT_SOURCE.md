@@ -120,6 +120,39 @@ The discrepancy is **quadratic in off-diagonal leakage** \(z^2|c|^2\). Since (8)
 
 This means one does NOT need to establish invariance of the fixed ± eigenvectors under arbitrary independent **off-chart** first variations to transport all 16+24+2 root equations: diagonal feedback at the original root suffices. The derivative identity holds for the genuine full block variation before imposing the rank-two chart, because the determinant and two-query law have first-order contact there.
 
+
+
+## 4a. Native φ cost: exact finite-Golden-only fair coin NO-GO and its FULL information-source warning
+
+The two-query theorem assumes an actually admitted **coherent efficiency bit** of fixed probability \(z=2^{-20}\). This is not automatically a fixed-clock composition of the original **classically registered** Golden direct/return primitives \((p,p^2)\).
+
+**Finite Golden-only stochastic impossibility.** In any finite bounded-depth adaptive classical decision tree whose only random branches have original fixed probabilities \(p\) or \(p^2=1-p\), each leaf probability is a monomial \(p^a(p^2)^b=p^{a+2b}\) and every event probability is a finite integer sum of such monomials. It therefore belongs to the ring of algebraic integers
+\(\mathbb Z[p]=\{a+bp:a,b\in\mathbb Z\}\). Since \(p\) is irrational, \(\mathbb Z[p]\cap\mathbb Q=\mathbb Z\). Hence
+\[
+\boxed{\ \Pr(\text{any fixed finite Golden-only classical event})\ne2^{-20}\ }
+\tag{13}
+\]
+(and it cannot equal \(1/2\), either). This no-go is strictly for bounded-depth classical Golden branching with deterministic processing; a physically admitted Walsh/Hadamard coherent unitary, a separately supplied dyadic coin, or unbounded genuine Golden stopping is NOT excluded.
+
+**Endogenous variable-length fair bit exists, but changes the ledger.** Two independent original Golden draws (p and p² branches) yield ordered AB/BA with equal probability \(p^3\); repeat such pairs until the first mismatch and map AB/BA to 0/1. This produces a perfectly fair bit with expected \(1/p^3=2+\sqrt5\) original primitive Golden draws, all failed pairs retained. Twenty independent such fair bits give an exact classical event of probability \(z=2^{-20}\), but their actual variable-length work/time histories are not the fixed-stage integer-\(\tau\) circuit used in §3. Coherent purification of a variable-length clock needs its own physical causal implementation, not an uncharged reset.
+
+**The critical ORIGINAL Info SOURCE difference for a prematurely observed coin.** Let \(0<z,\lambda<1\) and a single native query have \(Q\)-click probability \(\lambda\) upon an enabled challenge. A **coherent-unmeasured** efficiency coin followed by a final *single* measured click flag has CQ binary entropy \(h_\varphi(z\lambda)\) when its complete conditional work remains pure, as required by (8). But if the stochastic challenge coin itself is **measured and retained as a classical record before the query**, the *complete* joint classical coin/click record has entropy
+\[
+\boxed{H_\varphi(C,\mathrm{click})=h_\varphi(z)+z\,h_\varphi(\lambda),}
+\tag{14}
+\]
+since the C=0 branch never clicks. Subtracting its field-independent \(h_\varphi(z)\), the two first sources still differ:
+\[
+\boxed{
+\frac{d}{d\lambda}\Big[
+h_\varphi(z\lambda)-z\,h_\varphi(\lambda)\Big]
+=z\log_\varphi\frac{1-z\lambda}{z(1-\lambda)}>0.
+}\tag{15}
+\]
+The inequality is exact for \(0<z,\lambda<1\). Thus an exactly fair but **classically observed** Golden extractor does NOT reproduce the same full-info source merely because its final two-outcome success probability matches \(z\lambda\). A field-dependent source is lost in the measured internal controller archive; neither paid Cost nor native Info may be silently replaced by binary \(h_\varphi(z\lambda)\). This is a genuine same-execution countercontrol.
+
+**Two honest forward routes:** (i) an already-admitted **coherent** native Walsh/dyadic coin and fixed-stage paid reversible OR; (ii) a physical Golden stopping compiler with its *actual* timed classical/full CQ archives and a NEW complete source check, which must match the original J2 Euler jet without assigning Info by hand. This further narrows, rather than settles, the remaining physical-admission premise. It also shows why φ's diophantine properties should be used to derive a physical stopping/resource law, **not** to reindex abstract histories and announce an unearned Einstein selector.
+
 ## 5. EXACT parent substitution, actual missing obligations
 
 This theorem **removes the external fermionic exterior-lift from the mandatory apparatus list for the configured nonlinear Einstein family and all its first Euler equations**, conditional on truly admitting and paying ordinary native 8D matrix queries and coherent reversible classical reporting on their work registers.
