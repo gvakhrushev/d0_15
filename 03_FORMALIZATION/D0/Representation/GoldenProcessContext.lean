@@ -118,4 +118,45 @@ theorem golden_context_processes_different_future (a p : ℝ)
   nlinarith
 
 
+
+/-! ## Actual repeated REDUCED Golden channel cannot restore discarded joint memory
+
+This sharpens the M1 future criterion on the original mathematical
+Fin4 Golden channel itself: a locally reduced output has already
+discarded its system/record correlations. Repeating that REDUCED
+channel any number of times cannot recreate the lost information.
+This no-go is distinct from the positive FUTURE-INTERVENTION result
+above: that result retains process-stage memory and an allowed
+reset context, rather than repeatedly applying only channel.
+-/
+
+/-- The original pure Bloch input (c,0,s) and maximally mixed
+input (0,0,0) have EXACTLY identical local-channel output, but
+the same original coherent fullStep retains a JOINT-X difference 1. -/
+theorem golden_local_reduced_channel_joint_archive_nogo (a p : ℝ)
+    (ha : a^2=p) (hp : p+p^2=1) :
+    channel a p (contrastCoefficient p, 0, correlationCoefficient a p) =
+      channel a p (0,0,0) ∧
+    jointX a p (contrastCoefficient p)
+        (correlationCoefficient a p) = 1 ∧
+    jointX a p 0 0 = 0 := by
+  have h := golden_local_channel_hides_exact_joint_distinction a p ha hp
+  constructor
+  · change (0, 0, retainedContrast a p (contrastCoefficient p)
+       (correlationCoefficient a p)) =
+      (0, 0, retainedContrast a p 0 0)
+    rw [h.1]
+  · exact h.2
+
+/-- No number of further permitted repetitions of ONLY the same
+REDUCED channel can recover this lost original joint distinction.
+It was not lost in the original coherent Fin4 joint record. -/
+theorem golden_local_reduced_channel_repetitions_blind (a p : ℝ)
+    (ha : a^2=p) (hp : p+p^2=1) (n : ℕ) :
+    (channel a p)^[n]
+      (channel a p (contrastCoefficient p, 0, correlationCoefficient a p)) =
+    (channel a p)^[n] (channel a p (0,0,0)) := by
+  exact congrArg ((channel a p)^[n])
+    (golden_local_reduced_channel_joint_archive_nogo a p ha hp).1
+
 end D0.Representation.GoldenProcessContext
