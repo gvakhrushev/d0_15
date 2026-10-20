@@ -21,6 +21,42 @@ counterexample that changes it. Publication, replay, acceptance and use in the
 parent argument are distinct. Neither a green certificate nor an exact
 connection root alone establishes the full native gravitational law.
 
+### Upstream M1/D_min future-context source: no third primitive line, no erased future archive
+
+The original exact M1 verification contract now has a genuinely COMPILED generative
+MDL refinement: every correctly verified raw protocol, including the prior
+\`Fin3\` counterexample, retracts onto TWO of its actual independent witness
+lines, with the SAME verified verdicts for ALL catalogues and any finite
+history of shared allowed state operations. This does **not** make all physical
+hardware carriers isomorphic or derive causal independence of two lines from
+bare nontriviality; see [binary generator](A4D_M1_MDL_GENERATIVE_BINARY_CORE_RETRACT_AND_ROBUSTNESS_2026_10_20.md).
+
+More importantly, minimize the ORIGINAL **all-future observational profile**,
+not the current detector output. The new Lean owner
+\`D0.Foundation.EmpiricalTheoryFactorization.FutureExecution\` proves the
+future-quotient is the LARGEST current-readout- and action-compatible state
+identification; ALL original operations descend to it without a separately
+assumed \`pullTest\`. Any sufficient retained memory must distinguish its
+classes. Finite n-state dynamics yield the exact future quotient through
+\`n-k\` endogenous partition refinements at most (k current readout classes,
+nontrivial k≥2 gives n-2 sharp), not by an infinite external test catalogue.
+See [future contextual MDL + Q8 source](A4D_M1_MINIMAL_GENERATOR_FUTURE_CONTEXT_ARCHIVE_Q8_SPIN_UNIVERSALITY_2026_10_20.md)
+and the two independent exact finite checkers it consumes.
+
+This changes the physical-carrier criterion: IF genuine native future tests
+can interrogate the already-owned Q8 center (Spin, unlike SO/exterior CAR16),
+the ORIGINAL K(9,11,13) 359 edge sheets modulo32 local central gauges require
+EXACTLY327 independent stored bits, recoverable from the current1287 true
+3-tick ABC triangle memories with 960 parity consistency tests. A third
+perfect witness line is redundant to verify one verdict, but those 327 future
+Spin distinctions CANNOT be removed by MDL; if Spin-sensitive tests are not
+actually admitted in native G0, the bound is conditional and not a physical
+matter claim. The 327 discrete sheets are NOT the 685 real Book archive
+Hessian directions. The hard consumer remains the SAME native fullStep /
+Book03 admitted and PAID actual future action/test alphabet (including
+oldRIGHT, reference, CAR spinor and proper clock), then the true all40+matter
+first source and controlled Einstein refinement. \`GR_closed=false\`.
+
 ### Route update — nonlinear completion is no longer the open step
 
 For the already-built golden-AF geometric branch, the all-order nonlinear
