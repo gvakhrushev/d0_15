@@ -129,6 +129,31 @@ for(let t of [.02,.10,.17]){
  fail(Math.abs(KL(-t,0)-KL(t,0))<1e-13,"same real 6-plaquette signed KL");
  fail(Math.abs(KL(t,t))<1e-13,"matching full-code reference must attain KL minimum");
 }
+// Genuine BOOK-TYPE complete relative COST minus the entire INFO of
+// the SAME actual Golden17 probability record (all Bell/Golden failures).
+// The optimal full code mu=q is UNIQUE on the full 17-simplex, by KL>=0.
+const expectedCodeLength=(real,code)=>real.reduce((z,q,i)=>
+ z-q*Math.log(code[i])/ell,0);
+const actualInfo=real=>expectedCodeLength(real,real);
+let costInfoError=0,adaptiveSourceError=0,adaptivePrepError=0;
+for(const t of [-.19,-.11,0,.05,.12,.19]){
+ const qt=golden17(t),ref0=golden17(0);
+ const cost0=expectedCodeLength(qt,ref0),info=actualInfo(qt);
+ const costAdaptive=expectedCodeLength(qt,qt);
+ costInfoError=Math.max(costInfoError,
+   Math.abs(cost0-info-KL(t,0)),Math.abs(costAdaptive-info));
+ const step=1e-5,qtp=golden17(t+step),qtm=golden17(t-step);
+ const dCost=(expectedCodeLength(qtp,qtp)-
+              expectedCodeLength(qtm,qtm))/(2*step);
+ const dInfo=(actualInfo(qtp)-actualInfo(qtm))/(2*step);
+ adaptiveSourceError=Math.max(adaptiveSourceError,Math.abs(dCost-dInfo));
+ const near=KL(t,t+step),other=KL(t,t-step);
+ adaptivePrepError=Math.max(adaptivePrepError,Math.abs((near-other)/(2*step)));
+ fail(KL(t,t)<2e-13&&near>=-1e-12&&other>=-1e-12,
+   "real complete Golden future-code minimum not positive and stationary");
+}
+fail(costInfoError<1e-13&&adaptiveSourceError<2e-10&&adaptivePrepError<2e-8,
+ "exact Golden17 cross-code Cost−Info source not compensated at adaptive minimum");
 const fullOneLink=(theta,refAngle)=>6*KL(theta,refAngle),h=.012;
 const HH=fullOneLink(h,0)+fullOneLink(-h,0)-2*fullOneLink(0,0);
 const RR=fullOneLink(0,h)+fullOneLink(0,-h)-2*fullOneLink(0,0);
@@ -160,6 +185,9 @@ console.log(JSON.stringify({
   candidateFullSixFaceFixedCodeKL:fullOneLink(.1,0),
   candidateFullSixFaceMatchedMovingCodeKL:fullOneLink(.1,.1)},
  localSharedLinkStiffness:{sourceExpected:expected,
+  complete17CostInfoIdentityError:costInfoError,
+  movingSourceCancellation:adaptiveSourceError,
+  referencePreparationEulerError:adaptivePrepError,
   observedGeometry:d2geometry,observedReference:d2reference,
   observedCross:d2mixed,exactStationarySchur:exactSchur},
  full384SourceStructure:"(c/lnphi) [[D'D,-D'D],[-D'D,D'D]] tensor I6; genuine shared-link incidence D with rank45",
