@@ -161,6 +161,19 @@ check(Math.abs(dBookW)>1e-5&&Math.abs(fullNativeWeightedCodeSource)>1e-5,
 const qOriginalMark=q0[8]/(q0[8]+q0[9]);
 check(Math.abs(qOriginalMark-.5)<1e-14,
  "literal original J23 positive mark pair is unbiased at true flat");
+// The fixed universal-code experiment above at q=.30 is a generic
+// hostile interior-Bernoulli control. The SAME exact KT code also works
+// on the ACTUAL conditioned original J23 Golden +/- marker pair at t=.15,
+// while the other 15 original Golden/Bell categories are STILL PRESENT
+// and must retain their separate physical decoding/code expenses.
+const qNative=.15,nativeGold=golden17(qNative);
+const actualSignedConditioned=nativeGold[8]/(nativeGold[8]+nativeGold[9]);
+const KTnative=[64,256,1024,4096,16384].map(n=>kTbern(n,actualSignedConditioned));
+check(actualSignedConditioned>.5&&actualSignedConditioned<.7,
+ "true original Golden signed + / - conditional label is proper nontrivial Bernoulli");
+check(Math.abs(KTnative[4].first)<Math.abs(KTnative[0].first)/200&&
+ Math.abs(KTnative[4].second)<Math.abs(KTnative[0].second)/200,
+ "N^-1 true native J23 conditional code first/second response from fixed reference");
 const k2=kTbern(1024,qOriginalMark);
 check(Math.abs(k2.first)<2e-9,"fixed symmetric Jeffreys code is source-blind under exact reversal at flat");
 const originalQFI=FIsix, goldenShellHess=wt0*FIsix/ell;
@@ -190,6 +203,8 @@ console.log(JSON.stringify({
    finiteDifferenceVerticalHessian:dd},
  fixedReferenceJeffreys:{prior:"intrinsic Fisher volume Dirichlet(1/2), NOT a physical Book-selected code",
     binomialSourceTable:KT,
+    nativeGoldenConditionedJ23Probability:actualSignedConditioned,
+    nativeGoldenConditionedJ23KTSourceTable:KTnative,
     full17OriginalGoldenAsymptoticSecondSourceCoefficientPerAttempt:full17AsymptoticCoefficient,
     fullyPaidGoldenCodeOverheadAt16384:fixedUniversalOverheadGolden,
     movingOriginalBookWeightDerivative:dBookW,
