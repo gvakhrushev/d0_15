@@ -95,3 +95,26 @@ print("PASS intrinsic Lorentzian Hodge *^2=-1 on actual finite face curvature")
 print("PASS exact half-angle boost 5/2, rotation 6/5")
 print("PASS Q8 180-degree SO odd=0 but Spin odd!=0; Q8 center faithful")
 print("FIREWALL: compulsory paid G0/Book H+J+R, matter stress, refinement OPEN")
+
+
+# ALL SIX SHARED Spin faces and FULL NONLINEAR Palatini coframe contraction
+# under ONE proper local Spin frame change, with NO extra tensors/couplings.
+G=Sb*Sr;Gi=Sri*Sbi
+Q=vector(G,Gi);T=Q.inv()
+coframe_new=coframe*T.T
+trans_links=[G*x*Gi for x in L]
+trans_inv=[G*x*Gi for x in Lin]
+source_new=0
+for r,s in combinations(range(4),2):
+    Snew=trans_links[r]*trans_links[s]*trans_inv[r]*trans_inv[s]
+    Snew_inv=trans_links[s]*trans_links[r]*trans_inv[s]*trans_inv[r]
+    Pnew=vector(Snew,Snew_inv)
+    Sbase=L[r]*L[s]*Lin[r]*Lin[s]
+    Sbase_inv=L[s]*L[r]*Lin[s]*Lin[r]
+    assert Pnew==T*vector(Sbase,Sbase_inv)*T.inv()
+    newF=(Pnew-Pnew.inv())/2
+    for a,b,c,d in product(range(4),repeat=4):
+        source_new+=coframe_new[r,a]*coframe_new[s,b]*eta[a,a]*eta[b,b]*eta[c,c]*eta[d,d]*(newF*eta)[c,d]*eps(a,b,c,d)
+assert source_new==trace_total
+print("PASS full finite Spin frame Ward: all FOUR links, SIX shared faces, coframe")
+print("PASS exact Palatini site source invariant under noncommuting Spin boost+rotation")
