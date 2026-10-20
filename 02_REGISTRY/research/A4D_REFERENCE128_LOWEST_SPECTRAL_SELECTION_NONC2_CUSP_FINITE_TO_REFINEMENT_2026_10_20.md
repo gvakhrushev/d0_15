@@ -150,3 +150,34 @@ Similarly for the full original four-grade quartet on L_u=33, the protected carr
 \]
 
 **Thus a complete two-sided spectral selection fork is now exact on the original carrier:** the previously offered conveniently stationary nonzero-only preparations at minimal capacity are energy MAXIMIZERS, while the natural "replace by lowest128" preparations are MINIMIZERS with fourfold/eightfold fractional cutoff, genuine Grassmann-flat states and, in the rigorously tested low2 family, a NONCONTINUOUS selected LEFT density and a non-C¹ energy at an admitted smooth coframe variation. Neither alternative becomes a unique smooth stable physical H+J+R/Einstein branch by merely calling \([\Delta,\rho]=0\) an Euler equation. A selected paid G0/oldRIGHT/clock/source programme has to determine the correct stationary set, occupation and treatment of the cutoff source on the actual full16 field/observer/boundary tangent. \`GR_closed=false\`.
+
+
+## 7. NEW EXACT REFERENCE CAPACITY NO-GO: Haar/max-entropy twirling of the degenerate cutoff CANNOT remain a PURE reference128 fixedGram preparation
+
+One might try to avoid choosing a discontinuous \(P_+\) or \(P_-\) by using the **unique symmetry-invariant average** of all rank-2 occupied subspaces in the original 4-dimensional k32 cutoff. On the original \(\mathrm{Gr}_{\mathbb R}(2,4)\), Schur-invariance and trace2 force
+\[
+\boxed{\mathbb E_{\rm orbit} P_{\mathrm{cut}}=\tfrac12 I_4.}\tag{14}
+\]
+This is a valid, well-defined MIXED LEFT ensemble in abstract state space; it is NOT a rank-2 projector. At the actual minimal native low-two-grade \(L=65\), the 126 fully filled lower eigenstates and the averaged 4 cutoff modes give the truly normalized LEFT density
+\[
+\boxed{
+\bar\rho_L=\frac1{128}\left(P_{<126}\oplus\frac12 I_4\right),\quad
+\mathrm{rank}(\bar\rho_L)=126+4=\mathbf{130},\quad
+\mathrm{Tr}\bar\rho_L=1.}\tag{15}
+\]
+But the genuine ORIGINAL fixedRIGHT pure joint-amplitude carrier has only \(\dim\mathcal H_R=128\), a rectangular \(M:\mathbb R^{128}\to\mathcal H_L\), \(\Sigma_R=M^\dagger M=I_{128}/128\) and \(\rho_L=MM^\dagger\). Linear algebra gives
+\[
+\boxed{\mathrm{rank}(MM^\dagger)=\mathrm{rank}M=\mathrm{rank}\Sigma_R=\mathbf{128}.}\tag{16}
+\]
+Thus \(\bar\rho_L\) is **IMPOSSIBLE on the same pure fixedRIGHT reference128 amplitude**. Any physical interpretation as a twirled native preparation would require an ACTUALLY admitted mixed state/extra retained archive/extended reference rank at least 130 in a pure purification. It is not supplied for free by Book "forgetting", by the Golden history or by an unpriced gauge average.
+
+The very same original full quartet minimal capacity \(g=4,L=33\) has 124 fully occupied states and a half-occupied eightfold cutoff \(\mathrm{Gr}_{\mathbb R}(4,8)\). Its invariant density has
+\[
+\boxed{
+\bar\rho_{\rm quartet}=\frac1{128}
+(P_{<124}\oplus\tfrac12 I_8),\qquad
+\mathrm{rank}\bar\rho_{\rm quartet}=\mathbf{132}>128.}\tag{17}
+\]
+These are strict finite **right-reference capacity obstructions**, not claims that a new 130-/132-dimensional reference is allowed by the original D0. One may instead keep the rank128 pure programme and break symmetry using a proven physical selector/cutoff branch, or use an actual paid mixed archive. And merely averaging the cutoff states at nonzero ε would cease to be a strict pointwise R-minimum, so it would change the selected action in any event.
+
+**True selection trilemma on one same native carrier:** the convenient original all-nonzero occupation is an exact protected-energy MAXIMUM at the minimal-capacity grid (§6); the lowest occupation has a CUSP and discontinuous true LEFT density (§§2–5); the invariant smooth mixed cutoff repair has LEFT rank130/132 and cannot be purified on the ORIGINAL 128 RIGHT references (§7). Every mathematically simple shortcut is therefore separately classified. This is a sharp finite physical-action/memory provenance target, not a general impossibility theorem for physical D0→GR. \`GR_closed=false\`.
