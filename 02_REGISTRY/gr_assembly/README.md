@@ -147,7 +147,17 @@ full D0 action selects it. The `lorentz-null-conjugacy-cost-blindness` and
 `full128-opposite-null-two-round-shannon-order-source` results narrow the
 memory question: scalar single-plaquette class Costs erase null amplitude,
 while an oriented retained-history readout can detect order, but literal
-`fullStep` admission and payment remain open.
+`fullStep` admission and payment remain open. A result-only proof at pinned
+[#334 commit 9eb5e053](https://github.com/gvakhrushev/d0_15/blob/9eb5e0534fb0f5986e133215899259d04773addd/02_REGISTRY/research/A4D_OBSERVER_COMPLETE_CAR16_JULIA_CHOI_STAR_DENSITY_WELD_2026_10_20.md)
+now identifies the literal six-face S_star density pointwise with the
+negative marked-event mixed log jet of a constructed complete observer-covariant
+CAR16/Julia tester; all 36 basis slots replay exactly. This is a top-down
+representation, not a derivation of that tester or its price from compulsory
+full128 D0. The decisive source gate is whether the same fully paid native
+programme selects that jet with its complete return/failure normalization and
+moving-observer variations. A separate Golden p² weight check preserves the log jet but explicitly does not identify the tester with the original per-label full128 Kraus map; matching a base success probability is not gate admission.
+
+A second result-only #334 theorem gives an exact 16-site, 64-shared-link Role witness: [the P25 mixed-source boundary](https://github.com/gvakhrushev/d0_15/blob/37263957b5c3ea2477acbac8b86f4b69c87e8e02/02_REGISTRY/research/A4D_P25_NATIVE_COST_FLOOR_PSD_MIXED_PALATINI_VACUUM_NO_GO_2026_10_20.md) has S_star=(1-a)sin(t), hence the Palatini Hessian pair (∂_a²S, ∂_a∂_tS)=(0,-1). For the declared complete scalar Book class with every primitive C_e≥1 saturated at that root and coframe-blind Info/attempt factors, positivity forces ∂_a²S=0 ⇒ ∂_a∂_tS=0, so that class cannot match the geometric source. This is a scoped class NO-GO only: an original coframe-area-dependent Info/preparation/clock/work term or a true internally stationary Schur remains possible but must be derived from native primitives.
 
 The same #334 now also contains an exact curved fixedRIGHT128 preparation
 block for the original full-Lorentz CAR16 operator, with the complete R
@@ -176,22 +186,7 @@ later recovery gate still needs a same-metric null system, full Ward transfer,
 boundary/seam flux balance and refinement. These are decision criteria for the
 existing route, not extra result nodes or permission to start a parallel task.
 
-The four-profile stencil argument is a conditional identification lemma, not a
-result about the compulsory action: after independently establishing linearity
-and five-site support, testing `1`, `x`, `y`, and `x²−y²` fixes the coefficients
-to a multiple of the central Laplacian; one nonzero matter source then fixes
-the remaining ratio. It says nothing about a nonlocal or nonlinear native
-operator. The assigned positive Julia model already composes `AB` and `BA`
-exactly when it uses distinct fresh flag banks; reusing a flag has a known
-identity-point defect. What remains open is whether the literal native
-`fullStep` admits and pays those two operations and realizes the same ordered
-readout. The next discriminating observation is one full old
-LEFT/RIGHT/reference experiment for `AB` and `BA`, with both orders, all
-outcomes, a boost control, and the observable composition defect between that
-physical execution and the assigned Julia model. The opposite-branch
-plaquette Euler equations must still be derived from the original action
-before calling this a nonlinear gravitational completion.
-
+The four-profile stencil argument remains conditional: only after independently establishing linearity and five-site support do `1`, `x`, `y`, and `x²−y²` fix the central-Laplacian stencil. The new P25 boundary makes the next decisive constitutive check smaller and sharper: on its exact common flat root, compute the selected full H+J+R action Hessian pair `(∂_a²S, ∂_a∂_tS)` for the volume-preserving coframe/link witness, together with all original field, preparation, clock, work, oldRIGHT, observer, and history variations. The geometric target is `(0,−1)`; compare under the already declared native normalization, with no fitted coupling. The key pattern is a zero coframe diagonal and a nonzero mixed source. If the selected action satisfies the saturated positive Cost and coframe-blind Info hypotheses, the finite cone theorem gives a scoped NO-GO; otherwise the nonzero mixed source must come from a native coframe-area-dependent Info/preparation/work/clock term or a genuine stationary hidden Schur. Compare the complete paid return/failure-normalized source to the CAR16 marked-event identity, including moving-observer derivatives. Keep AB/BA, boost, and direct-versus-sequential composition as controls; do not repeat them as independent mathematical tests. The active #334/#232 response task remains unchanged, and this is not a parallel dispatch. Opposite-branch plaquette Euler equations, same-metric Ward transfer, global boundary balance, and refinement remain open.
 Keep the connection normalization fixed when checking the proposed finite
 Ricci/Weyl matrix. In the pinned #334 plaquette convention,
 `K_link(u,x,y) = ½[H(u+h,x,y)−H(u+h,x−h,y)] = h K_u(u+h,x,y)`, where
