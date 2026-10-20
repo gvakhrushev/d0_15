@@ -134,6 +134,34 @@ A fully native physical programme could instead carry these additional labels as
 
 **Newest independent Spin side-gate:** A4D_Q8_SPIN_SHEET_327_TRIANGLE_INVERSE_AND_960_COHERENCE_GATES_2026_10_20.md proves a SECOND, DISCRETE sufficiency limitation: existing SO/exterior CAR16 pointer may be blind to 327 relative Q8 central sheets, reconstructible from original 1287 ABC triangle parities with 960 checks only on a suitably Spin-sensitive retained Book representation. It is not the same as this CONTINUOUS J23 tangent, and it is not proof of the compulsory native Spin apparatus. Do not conflate them or infer Einstein–Dirac without the actual spin source.
 
+## 6.1. NEWEST 20-Oct quadratic-ideal Einstein–CAR theorem makes this one-link SECOND JET decisive
+
+The concurrent original #334 owner A4D_BOOK_SECOND_IDEAL_EINSTEIN_CAR_GRAVITON_CONGRUENCE_2026_10_20.md proves a STRONGER nonlinear vacuum/massless-matter universality mechanism. Its physical input need NOT depend on Role geometry only through t_i=f_i+lambda_native M_i off shell. Instead, after genuine internal history reduction it may have general form
+
+    S_compulsory(q,z) =
+       B(z) + sum_i w_i(z) t_i(q)
+            + sum_ij t_i(q)t_j(q) R_ij(q,z),
+
+where R may have arbitrary nonlocal and vertical/shape dependence. At actual t=0 and true B-internal stationary roots the complete nonlinear Einstein–CAR stationary set and kernel/inertia of the full linearized operator are protected by a nontrivial exact unimodular shear congruence. The important burden is that the true full native action has **NO independent residual of degree ZERO or ONE in the original field-equation-value ideal**, with genuine B(z) independent of q in the chosen physical coordinate splitting.
+
+Our original one-link witness tests exactly THIS WEAKER AND MORE POWERFUL criterion. Set the source-owned massless CAR matter to its literal zero state on this valid pure vacuum path. Its original matter density M_i is zero, so
+
+    t_i(q(t))=f_i(q(t))+lambda_native M_i(q(t))
+             =0 identically for ALL sites and ALL t.
+
+Thus EVERY mathematical action of the specific second-ideal form above at fixed original internal stationary z has
+
+    S_compulsory(q(t),z)=B(z),  D_t^k S_compulsory(q(t),z)=0
+    for every k>=1.
+
+Yet for the actual complete Golden17 pointer Shannon with fixed full reference and all failures retained, H96''(0)=−0.000533857... and H96'(.15)=−0.0000798287... NOT zero. Therefore even the dramatically WEAKER quadratic-ideal Einstein–CAR normal form is **NOT AUTOMATIC** for a raw full pointer-Shannon source, and passing flat FIRST-Euler source alone would fail to detect the real SECOND-order obstruction. Any physically selected full Cost−Info contribution proportional to that pointer Shannon MUST be canceled by actual independent Book/CAR/clock/preparation/work terms, constrained by native Euler, or absent from the geometry-sector normal form. The cancellation cannot be asserted from detector information alone.
+
+The mathematically defined true full Golden **relative code** of §5.1 offers one explicit strictly positive internal vertical Hessian that might allow proper stationary elimination before invoking the quadratic-ideal theorem. But one LINK mode is not all Role/internal modes; nothing here proves the compulsory G0 action makes its physical fibre Hessian regular, its true B independent, its original massless CAR kinetic term selected or its full source/clock physical. The new optimal P0 proof is the native 2-jet IDEAL membership test at one admitted true common null root, NOT full offshell F(f) descent.
+
+### Concurrent Spin carrier update
+
+The other latest #334 theorem A4D_NATIVE_CAR16_REAL_SPIN13_Q8_GOLDEN_COHERENT_SHEET_BRIDGE_2026_10_20.md has now constructed an exact faithful parity-even real Spin(1,3)/Q8 algebra inside the SAME original CAR16 via the genuine creation/annihilation Clifford algebra. It CORRECTS any implication that a new spinor Hilbert carrier is necessary. The **exterior** CAR16 readout used for these Golden17 face markers still factors through SO and remains blind to Q8 center; the **separate** newly constructed parity-even Clifford Spin representation can see that center. The actual paid native G0 fullStep/controlled coherent Spin-sheet/observer/oldRIGHT execution and real sourced Dirac stress remain OPEN. This continuous J23 geometric-scalar-flat orbit is independent of the discrete Spin parity ambiguity; both must be distinguished when testing full physical source sufficiency.
+
 ## 7. Validation, integration and firewall
 
 Exact analytic support/Hodge argument and closed H'' and Fisher formulas are independently checked by a replay of the already owned ORIGINAL null eta, J23 generator, 16 true Role sites, 64 shared Role links, 96 actual based faces, all 17 Golden probabilities including Bell fail, both face orientations and actual moving native-type Book conditional weights. The committed checker was fetched from GitHub and run in current fresh V8; terminal was PASS_ORIGINAL_L2_SHARED_LINK_HODGE_FLAT_GOLDEN17_SHANNON_VERTICAL. No expensive full128 Kraus/root or compulsory whole Book H+J+R actuation was claimed, and no new fundamental selector, tensor, coupling or counterterm was installed.
