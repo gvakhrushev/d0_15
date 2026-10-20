@@ -119,6 +119,8 @@ function integrated(L,alpha=a){
   dOddDiffOverH4:(values.dCode-values.dRoot)/h**4,
   evenOverH2:values.even/h**2,
   dEvenOverH2:values.dEven/h**2,
+  evenUNSCALEDnativeBookHypothesis:values.even/h**2,
+  dEvenUNSCALEDnativeBookHypothesis:values.dEven/h**2,
   bianchiError:checkBianchi};
 }
 const results=[8,12,16,24,32,48,64,96].map(L=>integrated(L));
@@ -144,6 +146,22 @@ for(const key of ["root","code","even"]){
  need(Math.abs(numeric-analytical)<1e-8,
   "native "+key+" TRUE moving C1 field-source differentiation");
 }
+// GLOBAL hostile control: actual full Golden17 even Shannon per FACE with
+// NO original h^-2*GoldenLEFT weight multiplier is a mathematically
+// different SOURCE law. Its SUM does NOT vanish: since H17(t)-H17(0)
+// =H2*t²/2+O(t4), and t/h²→−2πa cos(2πx3), true 4D sum
+// → H2 π² a² (NONZERO). Its first field source survives as
+// 2 H2 π² a. Thus native work/Cost scaling must be PROVED before
+// declaring the even memory IR-irrelevant.
+const H2=-(p**4/(4096*ell))*((5/12)*Math.log(12)+1/6);
+const evenLimit=H2*Math.PI**2*a*a;
+const evenDerivativeLimit=2*H2*Math.PI**2*a;
+const finest=results.at(-1);
+need(Math.abs(finest.evenUNSCALEDnativeBookHypothesis-evenLimit)<2e-7 &&
+     Math.abs(finest.dEvenUNSCALEDnativeBookHypothesis-evenDerivativeLimit)<1e-6,
+ "unscaled original complete Golden17 even historical price has NONZERO continuum curvature-square source");
+need(Math.abs(evenLimit)>.0003 && Math.abs(evenDerivativeLimit)>.001,
+ "even native Cost if per-face unscaled can survive continuum; geometric weight not free");
 const ratios=results.slice(1).map((r,i)=>
  (Math.abs(results[i].oddDiff)/Math.abs(r.oddDiff))/
  (results[i].h/r.h)**4);
@@ -159,6 +177,10 @@ console.log(JSON.stringify({
    differenceThirdDerivativeCoefficient:"5/12"},
  rigorousResult:"For smooth X_face=O(h²), inversion-odd analytic native Golden ROOT vs CODE have equal first Lie source; after original h^-2 weighted Role volume geometric source, action & C1 difference O(h^4). Complete even Shannon differences O(h²) on same declared scaling.",
  roleLattice:results,
+ hostileActualNativeEvenCost:{
+  note:"Without the geometric h^2 multiplier, per-face Golden17 Shannon retains a NONZERO R²-type continuum source",
+  analyticLimit:evenLimit,measuredAtL96:finest.evenUNSCALEDnativeBookHypothesis,
+  analyticFirstSourceLimit:evenDerivativeLimit,measuredFirstAtL96:finest.dEvenUNSCALEDnativeBookHypothesis},
  counterwarning:"Any independently unscaled complete Book Cost/Info, physical clock/work, code reference, nonlocal historical correlations or field-dependent coefficient can remain relevant; no full compulsory G0/EH theorem",
  GR_closed:false
 },null,2));
