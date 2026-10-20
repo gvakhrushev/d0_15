@@ -19,9 +19,11 @@ assert s.simplify(X.T*eta+eta*X)==s.zeros(4)
 assert s.simplify(Y.T*eta+eta*Y)==s.zeros(4)
 assert X*Y-Y*X!=s.zeros(4)
 # Evaluate finite exact first-jet identity with inverse true matrices,
-# using a rational locally invertible parametrization of a proper link.
-Ur=I+t*X
-Us=I+t*Y
+# using an EXACT proper-Lorentz Cayley parametrization of both links.
+Ur=(I+t*X/2)*(I-t*X/2).inv()
+Us=(I+t*Y/2)*(I-t*Y/2).inv()
+assert (Ur.T*eta*Ur-eta).applyfunc(s.simplify)==s.zeros(4)
+assert (Us.T*eta*Us-eta).applyfunc(s.simplify)==s.zeros(4)
 P=s.simplify(Ur*Us*Ur.inv()*Us.inv())
 dP=s.diff(P,t).subs(t,0).applyfunc(s.simplify)
 assert dP==s.zeros(4)
