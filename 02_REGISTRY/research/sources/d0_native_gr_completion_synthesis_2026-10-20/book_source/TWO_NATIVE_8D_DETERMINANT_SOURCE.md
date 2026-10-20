@@ -555,3 +555,40 @@ and instrument and permits continuation of those rounds. CAR preactuation
 is outside that class; locally its nonzero abort source also prevents replacing
 the same designated stopped channel by the actuated one. A broader
 same-initial control task still needs its actual admission and valuation.
+
+## 17. One common-blank monitored dispatcher and its retained-choice price
+
+The [retained-choice application](NATIVE_RETAINED_CHOICE_DISPATCH.md)
+clarifies the remaining controller premise. The original autonomous W
+already generates every finite return from the same c=1,f=0 boundary;
+it needs no new iteration/programme input. Physical continue/query
+dispatch and its complete price are still separate.
+
+On the owned CONDITIONAL paid classical-feedback interface, one fresh
+Golden flag chooses between the literal six-letter padding S6 and the
+actual six-letter return, then the original complete query. Both use
+2K+2C_cN+2G_N; S6 is identity on c=1 with its true G_N² c=0 block retained. The full
+c/f/CAR64 complement is retained. This is a complete same-blank-input
+mixture with branch probabilities p,p² and unchanged original RIGHT128.
+Its matched-code net component is
+H(P,Y|RIGHT)=(2-p)+p A_0+p² A_L, with no postselection of a desired word.
+
+The actual cap2 baseline now has the sharper value bound A_0<2/15
+on a nonempty small-primary chart, from its pinned survival probabilities
+and an exact integer logarithm bound. The literal dispatcher has
+Delta A>53/40. It cannot improve total A+W if the genuine outside-ledger
+increment is at least-53/40. This is an actual generated-record price;
+it is not a second charge for the matching instruction code.
+
+The literal fixed-clock preparation bank also retains42NK independent
+parity bits with h_phi(2p³)>1. Any proposed use of THAT complete bank
+in the same classical-price cut must retain entropy>42NK, compared with
+the old cap-n_0 baseline bound<3n_0. Unexecuted sequential-bank trials
+and unmeasured coherent efficiency bits are not included in this count.
+
+Already retained initial selector entropy instead cancels between common
+baselines. An unmeasured coherent flag also cannot inherit the classical
+mixture price. These boundaries, actual clock/task transport, controller
+admission and the physical choice of Book Info/work remain explicit.
+The bounded proof/checker/review provides this candidate test, not a
+universal randomized-control no-go or closure of native GR/raw216.
