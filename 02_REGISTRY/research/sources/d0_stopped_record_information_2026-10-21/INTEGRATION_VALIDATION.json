@@ -1,0 +1,25 @@
+{
+  "scope": "Research integration; no physical Info selection, no GR/assembly promotion.",
+  "guards": {
+    "validate_repo.py": "PASS; claims=889 assumptions=31 aliases=58 formal_support=183 lean_closure=918; warnings=0",
+    "validate_work.py": "PASS work_validation: active work plane clean and enforced",
+    "validate_agent_protocol.py": "PASS agent_protocol: cold-start task metadata enforced"
+  },
+  "source_integrity": "13 historical pins verified against immutable commits; current sole changed input is the declared append-only existing-parts parent pointer.",
+  "links": "12 local proof/README/integration links checked after rebase; two subsequently added review links target files in this packet.",
+  "independent_reviews": {
+    "core": "INDEPENDENT_REVIEW.md",
+    "primary_application": "INTEGRATION_REVIEW.md"
+  },
+  "numeric_validation": "Final checker ae1cf6e6...9a3d8 run once on final bytes, PASS, 2.052s; VALIDATION.json. No old interval/rank/Lean suite repeated.",
+  "artifact_sha256": {
+    "02_REGISTRY/research/A4D_ORIGINAL_STOPPED_RECORD_INFORMATION_SOURCE_2026_10_21.md": "c6f85eba8205db743f3f5b11115af5f48bb6ef36923129fbf07dab6d7cd72b27",
+    "02_REGISTRY/research/sources/d0_stopped_record_information_2026-10-21/INDEPENDENT_REVIEW.md": "fe8cfbe167d2de2192e09b322fde1756845db14e4ebc7ea6b5f04b35241bb72b",
+    "02_REGISTRY/research/sources/d0_stopped_record_information_2026-10-21/INTEGRATION.md": "77d79f6a3b5bc13377497e48630b36307a8bcdae651402dbb525ead548e6c78d",
+    "02_REGISTRY/research/sources/d0_stopped_record_information_2026-10-21/INTEGRATION_REVIEW.md": "f402ad8d502ba52b2861fd268a768f5a4022fc023d668239c5d3ac82e7869678",
+    "02_REGISTRY/research/sources/d0_stopped_record_information_2026-10-21/README.md": "640ca985ecb4a6601c888f604b835cbb338dbcfce6c83c0d999c354a0e97adc1",
+    "02_REGISTRY/research/sources/d0_stopped_record_information_2026-10-21/SOURCE_PINS.json": "f4ad3f165f26eb9ffa33d985143301bc33db91df405186c6b6ece644a46e2686",
+    "02_REGISTRY/research/sources/d0_stopped_record_information_2026-10-21/VALIDATION.json": "039b6590b7e1d49bcc3bede495d7b62305f964a62443182fc9febf31f8af6a69",
+    "02_REGISTRY/research/sources/d0_stopped_record_information_2026-10-21/check_stopped_info.py": "ae1cf6e60cfe6bf94893e91ac777dfc52f2afcccc0f4e72516338b82de59a3d8"
+  }
+}

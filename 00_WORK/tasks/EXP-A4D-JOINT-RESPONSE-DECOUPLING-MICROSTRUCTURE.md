@@ -3241,3 +3241,35 @@ same-execution complete Book valuation and genuine internal roots,
 then its admitted joint field/source or priced stationary relation,
 with physical clock and refinement. No lifecycle, registry, CORE/BOOK
 or assembly acceptance changes. GR_closed=false.
+
+## 21 October continuation: actual stopped all128 information-source application
+
+Phase: native realization / composition; same constitutive/native_sector
+consumer and native-programme-v1 interface, existing #334.
+[The stopped-record Info source](../../02_REGISTRY/research/A4D_ORIGINAL_STOPPED_RECORD_INFORMATION_SOURCE_2026_10_21.md)
+applies the old finite-memory Gram spectral recurrence to the original
+all128 first-nonblank/capped instrument. This changes the mathematical input
+from the older Fibonacci ready/pending and fixed-horizon cuts; their
+theorems/builders are consumed rather than re-proved.
+
+Parent substitution: the full coherent flag entropy and its nonlinear
+causal adjoint are explicit on the same stopped Kraus and complete initial
+H x oldRIGHT; the full pointer entropy/source has the matching survival
+chain. Both old entropy-Info and relative-gain readings retain their correct
+coherence signs. Noncentral-reference quantum relative entropy is not
+automatically an attainable measured maximum; physical test/admission is
+retained. Actual coherent padding/work is not replaced by monitored
+expected stopping time. The chosen physical Info/work/clock and the
+primary full-site source equality remain open.
+
+Inputs: f1618c2d, old operational-gain spectral algorithm (2026-10-15),
+old coherent AF Cost-Info (2026-10-14), local-gain projectivity, original
+128 stopped-clock/paid-port owners and primary preparation source.
+Write surface: the linked result, sources/d0_stopped_record_information_2026-10-21,
+and the previous existing-parts parent pointer. Narrow decisive check:
+actual original128/255 leaves at cap2 versus the finite CP map, direct and
+adjoint field+preparation jets, normalized conditional pointer chain,
+genuine link/preparation finite differences. The fixture remains rank16
+Fourier with 16 RIGHT columns, not primary full-site RIGHT128.
+No old large suite, rank scan or Lean build is rerun; no lifecycle, Book,
+CORE or physical-GR acceptance is promoted.
