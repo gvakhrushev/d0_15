@@ -18,11 +18,13 @@ python3 tools/gr_assembly.py puzzle source
 ```
 
 Each piece names reusable published inputs, its consuming steps and the next
-mathematical question. Exact piece IDs select one card; other queries search
-the indexed statements and hypotheses. `--json puzzle QUERY` includes those
-hypotheses and display aliases. The map reads local metadata only, so it works
-without fetching historical branches, checking every receipt or running any
-calculation. It proposes uses; it neither accepts a proof nor authorizes launch.
+mathematical question. An exact piece ID prints the full route card. A free-text
+query searches the indexed statements and hypotheses, then prints only matching
+result pointers and reading links with their consumers; use the exact ID to
+open the complete route. `--json puzzle QUERY` includes matched hypotheses and
+display aliases. The map reads local metadata only, so it works without fetching
+historical branches, checking every receipt or running any calculation. It
+proposes uses; it neither accepts a proof nor authorizes launch.
 
 Synthesis is the working loop: use a result, write the next argument, run the
 changed calculation or narrow tool test when it helps decide that argument.

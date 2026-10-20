@@ -58,6 +58,45 @@ class SynthesisTests(unittest.TestCase):
         self.save()
         self.assertEqual([p["id"] for p in synthesis.read(self.root, "vacuum")["pieces"]], ["vacuum"])
 
+    def test_free_text_query_returns_only_matching_results_and_readings(self):
+        other = {**self.result, "id": "other", "statement": "A different curved connection result",
+                 "evidence": [{"ref": "c" * 40, "path": "other.md", "sha256": "d" * 64}]}
+        self.intake["results"].append(other)
+        self.piece["results"].append("other")
+        self.piece["readings"] = [
+            {"label": "Conditional vacuum source", "ref": "a" * 40, "path": "vacuum.md"},
+            {"label": "Curved connection", "ref": "c" * 40, "path": "other.md"},
+        ]
+        self.save()
+
+        data = synthesis.read(self.root, "vacuum source")
+        self.assertEqual(data["view"], "matches")
+        self.assertNotIn("contribution", data["pieces"][0])
+        self.assertNotIn("next_question", data["pieces"][0])
+        self.assertEqual(data["pieces"][0]["results"], ["r"])
+        self.assertEqual([use["id"] for use in data["pieces"][0]["uses"]], ["r"])
+        self.assertEqual([row["label"] for row in data["pieces"][0]["readings"]],
+                         ["Conditional vacuum source"])
+        rendered = synthesis.render(data)
+        self.assertIn("Conditional vacuum source theorem", rendered)
+        self.assertNotIn("A different curved connection result", rendered)
+        self.assertNotIn("Curved connection", rendered)
+        self.assertIn("puzzle vacuum", rendered)
+
+    def test_exact_piece_and_unfiltered_views_remain_complete(self):
+        other = {**self.result, "id": "other", "statement": "A different curved connection result"}
+        self.intake["results"].append(other)
+        self.piece["results"].append("other")
+        self.save()
+
+        exact = synthesis.read(self.root, "vacuum")
+        unfiltered = synthesis.read(self.root)
+        self.assertEqual(exact["view"], "full")
+        self.assertEqual(unfiltered["view"], "full")
+        self.assertIn("contribution", exact["pieces"][0])
+        self.assertEqual([use["id"] for use in exact["pieces"][0]["uses"]], ["r", "other"])
+        self.assertEqual([use["id"] for use in unfiltered["pieces"][0]["uses"]], ["r", "other"])
+
     def test_russian_query_and_hypothesis_are_searchable(self):
         self.save()
         self.assertEqual(len(synthesis.read(self.root, "источник")["pieces"]), 1)
