@@ -42,7 +42,9 @@ for X in G:
     odd_score=-(det_derivative-reverse_derivative)/2
     star=-s.trace(X*curv)/2
     assert s.simplify(star-odd_score+s.trace(X*T**3*(I-T*T).inv()))==0
-reconstructed=sum((s.trace(X*T)/a)*X for X,a in zip(G,[2,2,2,-2,-2,-2]),s.zeros(4))
+reconstructed=s.zeros(4)
+for X,a in zip(G,[2,2,2,-2,-2,-2]):
+    reconstructed+=(s.trace(X*T)/a)*X
 assert s.simplify(reconstructed-T)==s.zeros(4)
 assert s.simplify(2*reconstructed*(I-reconstructed**2).inv()-curv)==s.zeros(4)
 # Explicit original J23 old face changes sign even though marked mass doesn't.
