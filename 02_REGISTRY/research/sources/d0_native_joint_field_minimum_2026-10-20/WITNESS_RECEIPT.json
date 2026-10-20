@@ -1,0 +1,27 @@
+{
+  "cartan_changed_components": 32,
+  "direct_fhat": "2*r*(epsilon**2*h**2*lambda + s)/h**3",
+  "direct_q": "-2*epsilon**2*r/h",
+  "dirichlet_dimension": 9,
+  "dirichlet_integer_determinant": "-100352",
+  "fixed_collar": [
+    0,
+    1,
+    6,
+    7
+  ],
+  "mesh_h": "1/8",
+  "mixed_gravity": "2/h**3",
+  "mixed_gravity_at_mesh": "1024",
+  "mixed_matter": "0",
+  "normal_support_sites": 1,
+  "omitted_normal_control": "detected: restricted source has zero mixed row",
+  "original_all40_theorem_replayed": false,
+  "original_based_faces": 6,
+  "original_source_unchanged": true,
+  "profile_support_sites": 8,
+  "scope": "Exact finite original mixed-source witness and algebraic controls; C1 plateau proof is analytical; physical admission remains unproved.",
+  "source_combination": "2*r*s/h**3",
+  "source_sha256": "d3d0b1bc92c25a0963a4ba851d9d587d2191f0bbd8cd8cd0ab58b664852b7026",
+  "status": "PASS"
+}

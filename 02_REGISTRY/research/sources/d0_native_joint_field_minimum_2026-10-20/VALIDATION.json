@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "date": "2026-10-20",
+  "python": "3.12.14",
+  "sympy": "1.14.0",
+  "command": "PYTHONPATH=/tmp/d0_native_validation_deps python3 -B 02_REGISTRY/research/certificates/a4d_native_joint_field_minimum_check.py",
+  "initial_environment_attempt": {
+    "status": "dependency unavailable before scientific execution",
+    "detail": "Default python3 had no sympy; existing validation dependencies were then supplied through PYTHONPATH. No theorem or expected result was changed."
+  },
+  "scientific_run": "FROZEN_REPLAY.json",
+  "input_snapshot_commit": "63221d4f5eadceaf7a03c5b647e64165216cd532",
+  "publication_base": "972ce692a84b5b23bdf91e93a047b1882ad582d4",
+  "checks": [
+    "Original six-face mixed witness exactly matches immutable WITNESS_RECEIPT.json",
+    "72 exact prospective controls exactly match immutable producer result",
+    "36 conditional quantum examples satisfy declared entropy/source tolerances; arbitrary-state and all-N assertions are analytic",
+    "All 39 proof/source/receipt pins present at the scientific replay stayed unchanged",
+    "git diff --check passes",
+    "validate_agent_protocol.py passes",
+    "validate_repo.py passes with no warnings"
+  ],
+  "independent_reviews": [
+    "INDEPENDENT_MINIMUM_REVIEW.md",
+    "JOINT_MINIMUM_AND_INFO_REVIEW.md"
+  ],
+  "integrator_review": "COMPOSITION_REVIEW.md",
+  "not_replayed": [
+    "historical all40 theorem",
+    "historical continuum recovery",
+    "Lean suite"
+  ],
+  "scope": "Configured full-field-minimum exclusion and sufficient prospective price-graph bridge, not physical D0 admission or GR closure."
+}

@@ -1,0 +1,60 @@
+{
+  "conditional_noise": {
+    "active_require_calls": 2174,
+    "checks": [
+      "Golden algebraic and logarithmic bounds, numerical consistency",
+      "Exact finite polynomial coefficients for E <= (1+s) E'",
+      "Direct terminal-word entropy and independent finite-difference noise source",
+      "Conditional entropy defect and T=14 paid source for explicit cq oldRIGHT states"
+    ],
+    "cq_examples": 36,
+    "max_conditional_defect_error": 5.551115123125783e-16,
+    "max_direct_noise_entropy_error": 1.6653345369377348e-16,
+    "max_noise_derivative_error": 3.083364674694167e-10,
+    "max_pointer_q_derivative_at_T14": -1.646617566963826,
+    "note_sha256": "e74f07eb30b60acdc8d3d7f0865b0e0276869547f368fb001d67b0ca19f70c4b",
+    "output_policy": "Read-only checker; stdout receipt only; no expected result is written",
+    "scope": "New finite conditional-noise support only; general proofs are analytic",
+    "script_sha256": "c9823463def089bceb8909cc6eda23cca7ddf746e7eeb39981b1c4f23f7bc6cd",
+    "status": "PASS"
+  },
+  "direct_original_mixed_witness": {
+    "cartan_changed_components": 32,
+    "direct_fhat": "2*r*(epsilon**2*h**2*lambda + s)/h**3",
+    "direct_q": "-2*epsilon**2*r/h",
+    "dirichlet_dimension": 9,
+    "dirichlet_integer_determinant": "-100352",
+    "fixed_collar": [
+      0,
+      1,
+      6,
+      7
+    ],
+    "mesh_h": "1/8",
+    "mixed_gravity": "2/h**3",
+    "mixed_gravity_at_mesh": "1024",
+    "mixed_matter": "0",
+    "normal_support_sites": 1,
+    "omitted_normal_control": "detected: restricted source has zero mixed row",
+    "original_all40_theorem_replayed": false,
+    "original_based_faces": 6,
+    "original_source_unchanged": true,
+    "profile_support_sites": 8,
+    "scope": "Exact finite original mixed-source witness and algebraic controls; C1 plateau proof is analytical; physical admission remains unproved.",
+    "source_combination": "2*r*s/h**3",
+    "source_sha256": "d3d0b1bc92c25a0963a4ba851d9d587d2191f0bbd8cd8cd0ab58b664852b7026",
+    "status": "PASS"
+  },
+  "frozen_packet_pins": 39,
+  "historical_snapshots": 22,
+  "original_all40_theorem_replayed": false,
+  "prospective_bridge": {
+    "checks": 72,
+    "exact_frozen_result_match": true,
+    "status": "PASS"
+  },
+  "scope": "Exact finite mixed witness, analytical constant-family exclusion, prospective price-graph bridge and stated Info comparison. The analytical quantified theorems are independently reviewed; these controls do not establish physical native admission or GR closure.",
+  "source_commit": "63221d4f5eadceaf7a03c5b647e64165216cd532",
+  "status": "PASS",
+  "tracked_expected_results_written": false
+}
