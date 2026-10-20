@@ -420,3 +420,66 @@ compulsory native valuation/continuation, its actual variation image,
 and the full physical specialization required by gr_architectural_closure.
 Those precise missing maps now have the existing positive geometry and
 the complete retained-record calculations as simultaneous consumers.
+
+
+## 8. JOINT SCORE-SATURATION / ACTUATION THEOREM: the native 34-score basis and the two remaining PHYSICAL gates
+
+New COMPOSITION of existing owners, NOT a re-claim of their numerical/rank calculations:
+(1) A4D_ORIGINAL_FULL128_COMMON_METRIC10_LINK24_JONES_TOMOGRAPHY_2026_10_20: ONE literal two-tick full128 Jones+ instrument, one L4 chart, 34 distinct positive registered histories with invertible metric10+Lorentz24 probability Jacobian, and exact 37/40 observer/gauge classification;
+(2) A4D_NATIVE_BRANCH_INFORMATION_COCYCLE and Book03: Golden-cost history weights versus complete Born normalizer and the unresolved absolute Info/Cost selection;
+(3) A4D_NATIVE_JOINT_FIELD_MINIMUM_EXCLUSION and the physical field-writer obstruction in Global Result Composition §5;
+(4) the already-owned finite all40+2 Einstein/CAR root and, separately, A4D_GOLDEN_DISCRETE_BLOWUP_CONDENSED_GR.
+
+### 8.1. Exact COTANGENT SATURATION by the 34 REAL Golden history surprisals
+
+Let x be the 34-dimensional real geometric coordinate on the ORIGINAL fixed open metric10 × Lorentz24 chart. Let the 34 FIXED event IDs be exactly PIN34 of the accepted original two-round Jones/full128 owner and write q(x)=(q_1(x),...,q_34(x)), J=D_x q. The owner proves det J(x0) != 0. Every selected q_i(x0) is STRICTLY POSITIVE: if a differentiable nonnegative real probability vanishes at an interior field point, its first derivative is zero, hence J would have a zero row. This contradicts det J != 0. Thus Golden surprisals s_i(x)=-log_phi q_i(x) are legal on a common neighborhood, and their full 34×34 Jacobian is
+
+    Ds(x)=-(1/ln phi) diag(1/q_i(x)) J(x),
+    det Ds(x)=det J(x)/[(-ln phi)^34 product_i q_i(x)] != 0.     (14)
+
+Therefore the differentials ds_1,...,ds_34 of ACTUAL recorded native two-tick histories are a BASIS of the metric10+Lorentz24 cotangent fibre on this declared ORIGINAL scene chart. For any prescribed Euler covector E(x), there is exactly one coefficient vector
+
+    lambda_E(x) = Ds(x)^(-T) E(x),
+    E(x) = sum_i lambda_E,i(x) ds_i(x).                         (15)
+
+This gives a positive operational representation theorem with NO new detector or geometry variable. It also yields the decisive ANTI-FIT theorem: if lambda_E is chosen AFTER inspecting the target Einstein–Palatini E_star, any arbitrary dynamical covector whatsoever can be represented, so its agreement proves NO physical D0 dynamics. Native Book03 must independently SELECT the complete Cost−Info / continuation / algebra-valued memory / absolute price before the 34 coefficients are calculated.
+
+For exactly the full complete normalized 128^2 Born histories, sum_gamma q_gamma(x)=1. Substituting those SAME normalized q into a scalar complete partition gives -log_phi(sum_gamma q_gamma) = 0 identically, with zero Euler. This is not the operator-valued Book Z_D or native H+J+R feedback. It prohibits promoting a normalized scalar Born partition to a gravitational action merely because individual Golden log scores span all cotangents.
+
+### 8.2. ACTUATION is mathematically independent of complete observability
+
+Let P be the full SAME-INITIAL admitted native programme/control/preparation/oldRIGHT/clock/work space and r:P->U the physically ALLOWED field-realization map into this native 34-dimensional geometric chart. If the map is differentiable on the claimed chart,
+
+    rank D(q∘r) = rank Dr,                                     (16)
+
+because J=Dq is invertible. Full readout rank34 therefore does NOT imply that a real same-initial native execution can move all 34 physical field directions.
+
+At an actually stationary native execution the proper chain rule is
+
+    D S_execution = (Dr)^T E_red + E_upstream,                 (17)
+
+where E_red is the true internally reduced field source of the SAME selected complete action, and E_upstream contains all real independent preparation, observer, full work, clock, Info and old-record/source variables that have NOT been solved by their own internal Euler. Even if those upstream equations truly vanish, (Dr)^T E_red=0 implies ALL34 E_red=0 only when Dr is surjective. A restricted writer yields only restricted equations. The original fixed-Q native writer in §5 has a strict curved-field obstruction, despite full operational curvature observability. This is the first explicit positive/negative source combination on the SAME research route.
+
+Also consume the already accepted full-field-minimum exclusion: the configured nonzero-multiplier J2 source on the open Brinkmann family has an exact Einstein STATIONARY branch but NO local minimum over a full neighborhood. Minimizing a Golden implementation at fixed field does NOT turn it into a minimum over arbitrary metric/Lorentz fields. A native constrained stationary/saddle law, a genuinely restricted attainable image, or an independently derived different residual-source law remains necessary. One must not fit a stabilizing penalty to Einstein after the fact.
+
+### 8.3. The ONE pre-registered native-source defect to evaluate, not another observable census
+
+Suppose the native programme has been admitted and ONE complete native physical price S_phys(x,internal) selected independently of S_star; solve its TRUE internal/history stationary equations to obtain a reduced 34-component field covector E_phys,red. Let E_star denote the ALREADY-OWNED ORIGINAL finite star/Palatini covector on the EXACT SAME coframe-metric+link chart. Let c_h !=0 be the INDEPENDENTLY native-forced field normalization. Define the comparison vector in the already fixed native score basis:
+
+    DELTA_record(x) := [Ds(x)]^(-T) (E_phys,red(x)-c_h E_star(x)). (18)
+
+It vanishes IF AND ONLY IF the actual complete native Euler source matches the geometric source in EVERY one of the 34 directions. This is a test DEFINITON, never an added counterterm. The 34 lambda coefficients are to be calculated from the ACTUAL source, including all failed records, absolute normalizer, actual Book Cost/Info, compiler occupation, retained work, moving preparation/observer/clock, two-tick continuation, oldRIGHT and joint connection/history Schur. Only then compare with E_star.
+
+Test (18) on an OPEN off-shell region, not only on roots where every chosen source can separately vanish. If E_phys,red and E_star are genuine differentials of scalar reduced actions on one connected chart and DELTA_record vanishes throughout, their action difference is locally constant (up to separately proved boundary terms). That would be a real same-action source identification; one-point equality is merely an accidental first-jet match. The full coframe16+link24+matter2 and physical observer sources MUST still be checked: 34 observed directions do not silently discharge all original 40+2 Euler rows.
+
+### 8.4. Two GR routes, one common G0 burden, different additional hypotheses
+
+FINITE nonvacuum route: the original full ambient 16+24+2 source equality on the actual common-null family with genuine internal stationary equations and original J2 normalization implies the already-owned exact finite Einstein/CAR Brinkmann solutions and midpoint recovery. A fixed L4 Jones score chart is NOT itself the nonflat physically admitted curved programme or the full all40+2 source.
+
+UNIVERSAL equation-class route: the ONE physically selected complete native tensor must descend to one metric, be locally diffeomorphism-natural, differentiable at flat, obey off-shell Ward and have the ACTUAL metric weight-zero Golden scaling. The separately proved single-step Golden blow-up then yields E=a G without an externally assumed second-order differential law. These premises are not supplied by tomography, a geometric star identity or one Golden gate. Matter Ward and the same native nonvacuum calibration are still independent.
+
+Thus the cumulative result is strategically sharper than a certificate inventory. On the already-identified finite local carrier, REPRESENTATION is essentially saturated. Only two independent PHYSICAL tests now dominate: obtain one pre-selected complete native price/source and compute the exact defect (18), and prove the SAME-INITIAL attainable-field image and all upstream stationarity/price transports in (16)–(17). Neither an invented 34-weight sum nor a field-independent normalized Born partition nor a fixed-field compiler optimum can substitute for those tests. full_D0_price_selected=false, generic_joint_recovery=false, GR_closed=false.
+
+### 8.5. Exact arithmetic provenance
+
+The source document's originally exploratory Jones-UNNORMALIZED 34/37 minor residues were subsequently corrected to properly normalized physical-Born residues. Actual normalized mod101/mod1009/mod4001 34×34 determinants are 52/746/2021 and 37×37 are 33/250/794. These equal the historical exploratory residues (4/684/1449 for rank34; 98/676/3208 for rank37) multiplied by 2^(-34) and 2^(-37), respectively, modulo each prime. This small modular conversion was independently checked in exact integer arithmetic in the present integration. The original expensive exact full128 34×34 source/minor and all40 Kraus Ward owner was CONSUMED, not rerun. Equations (14)–(18) follow by elementary exact differentiation and invertible linear algebra on that owner. This is research-level composition with existing scientific terminals unchanged; it is not CI promotion or physical GR closure.
