@@ -1765,7 +1765,45 @@
           "sha256": "6ea993e22c8b7d0b8a93b9537d51893cb4aff45af858d82ec7f9005ead96e2d7"
         }
       ],
-      "reported_state": "Result-only: the Q8 checker was rerun and passed its 327-triangle inverse, rank-327 and 960 parity controls. The exact type boundary is pinned to the current fullStep source. No application to constitutive, native_sector or positive_gr is accepted; GR_closed=false."
+      "reported_state": "Result-only: the Q8 checker was rerun and passed its 327-triangle inverse, rank-327 and 960 parity controls. The exact type boundary is pinned to fullStep at #334 head 8456cd4ba1228752ac1de80baf97050c240fdaba. No application to constitutive, native_sector or positive_gr is accepted; GR_closed=false."
+    },
+    {
+      "id": "q8-future-mdl-conditional-327-archive-bits",
+      "owner": "Open scientific integrator PR #334 at pinned head cc64f5aae20809cf4e6b4ba2506ff749a1efffa3",
+      "statement": "For the original K(9,11,13) Q8 Spin sheets, the complete future-profile quotient is the coarsest sound action-stable identification. If admitted future Spin tests distinguish all 2^327 relative sheets modulo 32 vertex gauges, every future-sufficient binary archive needs at least 327 bits; the original 327 independent ABC triangle labels achieve it and 960 parity checks constrain consistency. Current fullStep/G0 does not establish admission of those probes.",
+      "interface": "q8-spin-sheet-native-bridge-v1",
+      "outcome": "positive",
+      "kind": "exact-finite",
+      "scope_level": "finite",
+      "hypotheses": {
+        "original_q8_carrier": "The finite source is the original 359-edge Spin lift over the fixed SO connection, modulo 32 local central vertex gauges, with 1287 original ABC triangle histories.",
+        "future_spin_tests": "The 327 relative Spin-sheet classes are distinguished only under the explicit conditional premise that a faithful native future Spin-test family is admitted.",
+        "minimal_archive": "The archive preserves the complete future observational profile under the actual admitted action/test alphabet; no outside catalogue of tests is added.",
+        "physical_boundary": "The current GoldenCoherentMemory.fullStep type does not itself license these Spin tests or select their physical cost; no full H+J+R or Einstein source is proved."
+      },
+      "evidence": [
+        {
+          "ref": "cc64f5aae20809cf4e6b4ba2506ff749a1efffa3",
+          "path": "02_REGISTRY/research/A4D_M1_MINIMAL_GENERATOR_FUTURE_CONTEXT_ARCHIVE_Q8_SPIN_UNIVERSALITY_2026_10_20.md",
+          "sha256": "ce7180fce26e4d7fc5ef19c89e725c65fdb2a87d6c531825f7273a5211e78842"
+        },
+        {
+          "ref": "cc64f5aae20809cf4e6b4ba2506ff749a1efffa3",
+          "path": "02_REGISTRY/research/sources/d0_mdl_binary_generator_2026-10-20/check_native_q8_future_archive_mdl_327.mjs",
+          "sha256": "c3e1edd4ba2cf082aacccf6257519bff5abac59a3138c7b09cf7dbadc4666a6b"
+        },
+        {
+          "ref": "cc64f5aae20809cf4e6b4ba2506ff749a1efffa3",
+          "path": "02_REGISTRY/research/sources/d0_mdl_binary_generator_2026-10-20/check_finite_future_contextual_mdl_partition.mjs",
+          "sha256": "07a2dfbb0ae305a58b8f676ed9753db7ab9403bbf97a20e8ee45a74ef2efd53a"
+        },
+        {
+          "ref": "cc64f5aae20809cf4e6b4ba2506ff749a1efffa3",
+          "path": "03_FORMALIZATION/D0/Foundation/EmpiricalTheoryFactorization.lean",
+          "sha256": "8f23e47a09092947dfa6cbeb848d920ff841896730fa1611214906b4b98e3ed3"
+        }
+      ],
+      "reported_state": "Result-only: both independent finite Node checkers were rerun and passed; the Lean build passed at the pinned #334 head. The 327-bit memory bound is conditional on native future Spin-test admission. No application to constitutive, native_sector or positive_gr is accepted; physical source selection and GR_closed remain open."
     }
   ],
   "applications": [
