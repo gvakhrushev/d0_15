@@ -9476,3 +9476,41 @@ sources/d0_native_price_source_synthesis_2026-10-20/ owner; the application
 is A4D_SAME_HISTORY_PRICE_AND_SOURCE_COMPOSITION_2026_10_20.md section8.
 Independent review checks the frozen application and uniform-weakening
 argument. No unchanged geometric/Lean proof is replayed. GR_closed=false.
+
+
+### 20 October: actual full128 common-record information source on the same primary preparation
+
+The [full128 application](A4D_PRIMARY_FULL128_COMMON_RECORD_INFORMATION_SOURCE_2026_10_20.md)
+derives an exact field-independent128-by33 isometry for the original
+duplicated Walsh SELECT and both Golden ports. The complete pointer
+probabilities and coherent record spectrum follow from33 amplitude
+vectors; all original labels, CAR16 and oldRIGHT128 remain. This supplies
+the missing computation map for these two specific information observables
+on the previous strict inverse-leg primary preparation and actual unequal
+n20 F/R density. It reuses the existing all40+2 geometry.
+
+The source test retains true shifted positive adjoints, both Julia defects
+and their Sylvester jets. Direct literal128 Kraus probabilities check the
+compression and the independently known paid-port source
+`dCost_port=p epsilon dR` at fixed clock. Explicit eta regularization has
+an analytic source error at most `4 sqrt(d eta)||V'||_HS`; floating
+arithmetic remains a numerical diagnostic, not interval certification.
+
+The flat whole-periodic coframe scale and the two previously owned
+nonvacuum interior-link tangents supply the same-process candidate
+Cost-minus-information comparison. The sources of Shannon pointer
+entropy and coherent record entropy are nonzero and distinct; their
+reported simple port-price residuals do not cancel on these tests.
+They replace an assertion that common-record information is absent by
+an actual source computation. They do not establish which information
+algebra is compulsory Book03 Info.
+
+Parent use: `constitutive` / `native_sector` must now supply the actual
+remaining physical contribution
+`d(Cost_extra-Info_extra)=-d(Cost_port-I_candidate)` if it selects either
+candidate. This is a necessary interface, not a fitted source subtraction.
+Complete physical payment, admission, internal preparation/observer/
+controller stationarity, execution clock and refining source equivalence
+remain open. One round does not close finite-time or GR obligations.
+The sampling-leg bareHJR coefficients remain on their own carrier.
+No task, lifecycle, assembly or public-claim promotion. `GR_closed=false`.

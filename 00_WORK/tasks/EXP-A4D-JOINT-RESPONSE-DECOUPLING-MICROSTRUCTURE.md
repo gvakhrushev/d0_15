@@ -2509,3 +2509,42 @@ directory; append this brief and the primary memo. Decisive check: exact
 finite trace plus strict second-source inequality, independently reviewed;
 full-matrix native-z replay checks the declared operator, not physical
 admission. No new task, action, claim, lifecycle or assembly promotion.
+
+
+### 20 October: actual full128 common-record information source on the primary family
+
+Phase: native realization; bounded implementation and independent review
+inside the same #334 owner. Consumer: the remaining common-history Info
+and paid-source map after the primary strict-domain application1e850b0f.
+The flat HJR and diagonal-comparison results rule out treating an unpaid
+reference subtraction or zero contrast information as that map. Compute
+the common retained record source itself on the same primary preparation.
+
+Exact target: derive a FIELD-INDEPENDENT isometric compression of the
+original single-round128 Kraus words to33 Gram vectors using the literal
+duplicated Walsh SELECT and both Golden ports. Reconstruct all128 pointer
+probabilities; compute coherent record entropy from the same full record
+Gram. Carry the true shifted adjoint, both Julia defects and their jets,
+all16CAR grades, all128 reference columns, actual n20 unequal density and
+the actual supplied primary m(Psi/s^2) preparation. The existing paid-port
+identity supplies its cost source. Compare candidate retained-record
+Shannon/coherent sources on that SAME process; do not declare either one
+to be Book03 Info without the missing physical algebra/readout binding.
+
+Inputs: complete-record native instrument and paid_port_history at8b96e8ca;
+original full128 order-source checker for literal top-row Walsh convention;
+accepted research application1e850b0f and its frozen primary fixture.
+Write surface: sources/d0_primary_full128_information_source_2026-10-20/
+and a new summary/certificate, with append-only existing primary intake.
+Bounded checker implementation is delegated; the integrator owns the
+isometry/source proof and all interpretation. No new execution/task row.
+
+Smallest decisive check: exact B*B=I33 for the128-by33 reconstruction,
+complete pointer sum and source normalization, direct true native port
+cost identity, Gram/pointer jets against an independent first variation.
+First test the common periodic flat coframe scale with fixed clock; then use the
+already-owned nonvacuum primary representatives and independent link
+source with fixed collar. Rank births and numerical spectral resolution require explicit
+scope/error controls. This supplies an actual information-source test of
+the missing price map, not a fitted selector, new physical action, repeated
+history census, lifecycle/assembly promotion or GR closure.
