@@ -1093,5 +1093,146 @@
         "The same-repository descendant set changes."
       ]
     }
+  ],
+  "synthesis": [
+    {
+      "id": "source",
+      "title": "Полная история → тот же геометрический источник",
+      "contribution": "Есть обратная задача для полной поэтапной записи и точное кодирование шести граней исходными треугольниками сцены. Они дают короткий интерфейс к источнику, при своих условиях допуска и общего фильтра.",
+      "consumers": [
+        "constitutive",
+        "native_sector",
+        "matter_source_ward"
+      ],
+      "results": [
+        "original-stage-resolved-book-selector-143484",
+        "original-role40-six-root-triangle-star-pullback",
+        "native-actionprotocol-book03-pullback-boundary"
+      ],
+      "next_question": "На одном действительно допущенном и полностью оплаченном процессе получить общий фильтр глубин и отображение Cost/Info/подготовки/часов в тот же полный полевой источник. Начать с конкретной недостающей операции или производной.",
+      "tags": [
+        "источник",
+        "история",
+        "history",
+        "source",
+        "cost",
+        "clock",
+        "143484",
+        "six faces"
+      ]
+    },
+    {
+      "id": "vacuum",
+      "title": "Стационарная память → универсальный вакуумный сектор",
+      "contribution": "Опубликованная условная теорема допускает произвольное несепарабельное F(f): при ненулевых первых коэффициентах совпадают вакуумные стационарные множества и ядра линеаризованных уравнений. Полное совпадение микроскопических действий не требуется.",
+      "consumers": [
+        "constitutive",
+        "on_shell_stationarity",
+        "physical_constraints"
+      ],
+      "results": [],
+      "readings": [
+        {
+          "ref": "2a55f56519473ecf8833dba13df4a8ff82d8595f",
+          "path": "02_REGISTRY/research/A4D_ARBITRARY_NONSEPARABLE_BOOK_COST_FINITE_EINSTEIN_VACUUM_UNIVERSALITY_2026_10_20.md",
+          "label": "Несепарабельная редукция и оценка остаточного источника"
+        },
+        {
+          "ref": "2a55f56519473ecf8833dba13df4a8ff82d8595f",
+          "path": "02_REGISTRY/research/A4D_ORIGINAL_4D_STAR_FLAT_GOLDEN17_VERTICAL_MEMORY_OBSTRUCTION_AND_SOURCE_GATE_2026_10_20.md",
+          "label": "Вертикальный Golden17-контроль и стационарный envelope"
+        }
+      ],
+      "next_question": "Для фактического полного действия решить собственные внутренние Euler-уравнения и проверить зависимость стационарного источника от f. Контроль: геометрически невидимое J23-направление имеет ненулевой источник у pointer Shannon; его нельзя просто удалить.",
+      "tags": [
+        "вакуум",
+        "память",
+        "vacuum",
+        "nonseparable",
+        "envelope",
+        "stationary",
+        "memory",
+        "Schur"
+      ]
+    },
+    {
+      "id": "roots",
+      "title": "Точные искривлённые решения → совместное решение",
+      "contribution": "Есть точное 40→3→1 сведение в заявленном Brinkmann-классе, конечные crossed-null jets и точные ограничения отдельных продолжений. Использовать эти разные области действия в соответствующих шагах.",
+      "consumers": [
+        "joint_nonlinear_solve",
+        "recovery",
+        "full_affine_stationarity"
+      ],
+      "results": [
+        "brinkmann-j2-null-family",
+        "double-null-finite-cubic-euler-jet",
+        "double-null-finite-mixed-quartic-euler-jet",
+        "double-null-degree5-selected-rref-ward-obstruction"
+      ],
+      "next_question": "Состыковать пригодное семейство с тем же выбранным источником и всеми собственными уравнениями; для продолжения менять именно опровергнутую предпосылку выбранного представителя. Сохранить исходную full-affine задачу отдельно.",
+      "tags": [
+        "решения",
+        "корни",
+        "roots",
+        "Brinkmann",
+        "40",
+        "Cartan",
+        "crossed",
+        "quartic"
+      ]
+    },
+    {
+      "id": "refinement",
+      "title": "Конечный геометрический отклик → контролируемый предел",
+      "contribution": "Принят scoped endpoint-probe law с ошибкой O(h/epsilon + epsilon^2); есть metric provenance и smooth/IR parametrix. Это разные входы к совместной предельной оценке.",
+      "consumers": [
+        "contrast_refinement_transfer",
+        "soundness",
+        "raw_response_terminal"
+      ],
+      "results": [
+        "endpoint-probe-law",
+        "metric-provenance",
+        "smooth-parametrix"
+      ],
+      "next_question": "Перенести отклик того же native процесса в принятую геометрическую наблюдаемую с равномерной оценкой на согласованном носителе. RAW-216 требует своей исходной нормы и независимого фиксированного источника.",
+      "tags": [
+        "предел",
+        "refinement",
+        "limit",
+        "probe",
+        "raw",
+        "216",
+        "norm",
+        "оценка"
+      ]
+    },
+    {
+      "id": "matter",
+      "title": "Допущенные будущие тесты → достаточная память и материя",
+      "contribution": "Есть точная условная граница Q8-памяти и явные примеры потери источника при бинарном укрупнении. Они уточняют, какую полную запись необходимо сохранить для выбранных будущих наблюдений.",
+      "consumers": [
+        "native_sector",
+        "matter_source_ward",
+        "physical_constraints"
+      ],
+      "results": [
+        "q8-future-mdl-conditional-327-archive-bits",
+        "original-q8-spin-sheet-current-fullstep-boundary",
+        "full-history-binary-source-loss"
+      ],
+      "next_question": "Определить реально исполнимые будущие тесты того же оплаченного процесса. Если доступны Spin-тесты, перенести соответствующую память и её источник; затем состыковать настоящий matter/Ward. Размер архива сам по себе этого не делает.",
+      "tags": [
+        "материя",
+        "память",
+        "matter",
+        "spin",
+        "Q8",
+        "future",
+        "archive",
+        "Ward"
+      ]
+    }
   ]
 }

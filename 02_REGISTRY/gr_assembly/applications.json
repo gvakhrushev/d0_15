@@ -1628,7 +1628,8 @@
           "sha256": "219efdeda0310cfa63d8e1f36f35fbe661fe61c2c59fbda017c77a90aee0ca4f"
         }
       ],
-      "reported_state": "The #334 owner gives the analytic inverse and its hypotheses. The self-contained checker was replayed with Node v24.19.0: all printed controls pass, including full 143484-event normalization, 718-edge reconstruction, all 1287 triangle products and absolute Perron recovery. Its output explicitly records actual_full_G0_HJR_admission=false and GR_closed=false. Result-only; no positive-GR application."
+      "reported_state": "The #334 owner gives the analytic inverse and its hypotheses. The self-contained checker was replayed with Node v24.19.0: all printed controls pass, including full 143484-event normalization, 718-edge reconstruction, all 1287 triangle products and absolute Perron recovery. Its output explicitly records actual_full_G0_HJR_admission=false and GR_closed=false. Result-only; no positive-GR application.",
+      "navigation_alias_of": "original-stage-resolved-book-selector-143484"
     },
     {
       "id": "depth-specific-filter-book-source-nonidentifiability",
@@ -1664,7 +1665,8 @@
           "sha256": "219efdeda0310cfa63d8e1f36f35fbe661fe61c2c59fbda017c77a90aee0ca4f"
         }
       ],
-      "reported_state": "The exact scaling symmetry is derived in the #334 owner; the pinned checker reproduces the hidden-source control with all stage-labelled outcomes retained. This is a scoped failure of unconditional scalar Book identifiability, not a physical D0 or GR no-go."
+      "reported_state": "The exact scaling symmetry is derived in the #334 owner; the pinned checker reproduces the hidden-source control with all stage-labelled outcomes retained. This is a scoped failure of unconditional scalar Book identifiability, not a physical D0 or GR no-go.",
+      "navigation_alias_of": "original-stage-depth-specific-verifier-source-nonidentifiability"
     },
     {
       "id": "double-null-degree5-selected-rref-ward-obstruction",

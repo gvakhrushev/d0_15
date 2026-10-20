@@ -15,6 +15,8 @@ import re
 import subprocess
 import sys
 
+import gr_synthesis
+
 ROOT = Path(__file__).resolve().parents[1]
 DIRECTORY = "02_REGISTRY/gr_assembly"
 INTERFACE_FIELDS = {"carrier", "action", "variations", "source", "normalization", "refinement", "scope"}
@@ -407,6 +409,10 @@ def source_fork_reconciliation_summary(reconciliation: dict, parent: dict,
 
 def validate(model: dict) -> None:
     c, root = model["contract"], model["root"]
+    try:
+        gr_synthesis.validate_navigation(c, model["intake"])
+    except ValueError as exc:
+        raise AssemblyError(str(exc)) from exc
     interfaces, obs = c.get("interfaces"), model["obligations"]
     require(isinstance(interfaces, dict) and bool(interfaces), "interfaces are required")
     for name, value in interfaces.items():
@@ -1122,6 +1128,8 @@ def overview(model: dict) -> str:
              "| Goal | Composition |", "|---|---|"]
     for goal in c["goals"]:
         lines.append(f"| {goal['id']} | {'DISCHARGED' if state['goals'][goal['id']] else 'OPEN'} |")
+    if c.get("synthesis"):
+        lines += ["", "For the short working composition and next scientific questions, use [SYNTHESIS.md](SYNTHESIS.md) or `python3 tools/gr_assembly.py puzzle`."]
     lines += ["", "| Obligation | Group | Missing logical inputs | Accepted application |", "|---|---|---|---|"]
     for name, ob in model["obligations"].items():
         missing = [", ".join(d for d in m["requires"] if d not in state["closed"]) or "none; conclusion still needs accepted evidence" for m in ob["methods"]]
@@ -1209,16 +1217,24 @@ def search(model: dict, query: str) -> list[dict]:
     words = query.casefold().split()
     require(bool(words), "search query cannot be empty")
     found = []
-    for result in model["results"].values():
-        evidence_paths = result_evidence_paths(result)
-        fields = [result["id"], result["statement"], result.get("owner", ""),
-                  *result.get("owners", []), *result.get("hypotheses", {}).values(), *evidence_paths]
+    for name, aliases in gr_synthesis.result_groups(model["results"]).items():
+        result = model["results"][name]
+        evidence_paths = set().union(*(result_evidence_paths(model["results"][alias]) for alias in aliases))
+        fields = []
+        for alias in aliases:
+            indexed = model["results"][alias]
+            fields += [alias, indexed["statement"], indexed.get("owner", ""),
+                       *indexed.get("owners", []), *indexed.get("hypotheses", {}).values()]
+        fields += sorted(evidence_paths)
         hay = " ".join(fields).casefold()
         if query_matches(hay, words):
             item = {k: result.get(k) for k in ["id", "statement", "outcome", "reported_state"]}
             item["owner"] = result.get("owner")
             item["owners"] = result.get("owners", [])[:5]
             item["evidence_paths"] = sorted(evidence_paths)
+            if len(aliases) > 1:
+                item["also_indexed_as"] = [alias for alias in aliases if alias != name]
+                item["indexed_interfaces"] = sorted({model["results"][alias]["interface"] for alias in aliases})
             found.append(item)
     return found[:20]
 
@@ -1286,6 +1302,8 @@ def main(argv=None) -> int:
     sub.add_parser("check")
     sub.add_parser("show")
     sub.add_parser("dag")
+    p = sub.add_parser("puzzle", help="fast local composition reading; no replay or live lookup")
+    p.add_argument("query", nargs="*", default=[])
     p = sub.add_parser("render"); p.add_argument("--check", action="store_true")
     p = sub.add_parser("next"); p.add_argument("--offline", action="store_true")
     p = sub.add_parser("why"); p.add_argument("obligation")
@@ -1296,6 +1314,10 @@ def main(argv=None) -> int:
     p = sub.add_parser("impact"); p.add_argument("--base", required=True); p.add_argument("--ref", default="HEAD")
     args = ap.parse_args(argv)
     try:
+        if args.command == "puzzle":
+            data = gr_synthesis.read(args.repo_root, " ".join(args.query))
+            print(json.dumps(data, ensure_ascii=False, indent=2) if args.json else gr_synthesis.render(data), end="\n")
+            return 0
         model = load(args.repo_root)
         if args.command == "check":
             validate_queue(args.repo_root, model)
@@ -1308,6 +1330,14 @@ def main(argv=None) -> int:
                 require(target.is_file() and target.read_text() == text, "assembly view is stale; run render")
             else:
                 target.write_text(text)
+            if model["contract"].get("synthesis"):
+                synthesis = args.repo_root / DIRECTORY / "SYNTHESIS.md"
+                reading = gr_synthesis.render(gr_synthesis.read(args.repo_root))
+                if args.check:
+                    require(synthesis.is_file() and synthesis.read_text() == reading,
+                            "synthesis view is stale; run render")
+                else:
+                    synthesis.write_text(reading)
             data = {"view": str(target), "checked": args.check}
         elif args.command == "show":
             if not args.json:

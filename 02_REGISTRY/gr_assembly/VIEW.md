@@ -10,6 +10,8 @@ Scientific acceptance and live execution are separate. Historical research does 
 | RAW-216 | OPEN |
 | D0-CLOSURE | OPEN |
 
+For the short working composition and next scientific questions, use [SYNTHESIS.md](SYNTHESIS.md) or `python3 tools/gr_assembly.py puzzle`.
+
 | Obligation | Group | Missing logical inputs | Accepted application |
 |---|---|---|---|
 | constitutive | native | none; conclusion still needs accepted evidence | none |

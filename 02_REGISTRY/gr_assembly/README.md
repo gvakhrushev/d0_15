@@ -7,6 +7,34 @@ owns the argument. [VIEW.md](VIEW.md) is a generated composition overview.
 Claims, proof owners, the work queue and live GitHub execution keep their
 existing authorities. No graph label by itself promotes a scientific claim.
 
+For scientific synthesis, start with the short [working map](SYNTHESIS.md):
+
+```bash
+python3 tools/gr_assembly.py puzzle
+python3 tools/gr_assembly.py puzzle vacuum
+python3 tools/gr_assembly.py puzzle source
+```
+
+Each piece names reusable published inputs, its consuming steps and the next
+mathematical question. Exact piece IDs select one card; other queries search
+the indexed statements and hypotheses. `--json puzzle QUERY` includes those
+hypotheses and display aliases. The map reads local metadata only, so it works
+without fetching historical branches, checking every receipt or running any
+calculation. It proposes uses; it neither accepts a proof nor authorizes launch.
+
+Synthesis is the working loop: use a result, write the next argument, run the
+changed calculation or narrow tool test when it helps decide that argument.
+Final affected replay and independent acceptance stay at the existing Ready
+boundary. Reading and combining inputs requires no new task, receipt, status
+row or scientific registration form.
+
+The optional `synthesis` links live in the existing `contract.json`; add a link
+when it helps a concrete consumer. `navigation_alias_of` groups explicitly
+duplicated result entries for display, retaining both IDs, interfaces, evidence
+and applications. Shared evidence alone never merges different theorems.
+`render` regenerates both views; no long research owner needs to be moved or
+rewritten to keep the short map current.
+
 ## Enter with one relevant query
 
 ```bash

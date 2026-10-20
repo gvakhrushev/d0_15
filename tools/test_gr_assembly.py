@@ -22,6 +22,9 @@ import task_dispatch
 import task_lifecycle
 import validate_pr_contract
 
+# Keep the existing fast CI entrypoint; navigation adds no new workflow gate.
+from test_gr_synthesis import SynthesisTests
+
 TASK = "WRK-A4D-ONE"
 OTHER = "WRK-A4D-TWO"
 
@@ -345,6 +348,31 @@ class AssemblyTests(unittest.TestCase):
         self.assertEqual([row["id"] for row in rows], ["source-result"])
         self.assertEqual(rows[0]["evidence_paths"],
                          ["02_REGISTRY/gr_assembly/sources/proof.md", "proof.md"])
+
+    def test_search_groups_only_explicit_navigation_aliases(self):
+        self.add_result(name="canonical")
+        self.add_result(name="older-index")
+        self.intake["results"][-1]["navigation_alias_of"] = "canonical"
+        model = self.model()
+        before = gr.evaluate(model)
+        result = gr.search(model, "older-index")
+        self.assertEqual([r["id"] for r in result], ["canonical"])
+        self.assertEqual(result[0]["also_indexed_as"], ["older-index"])
+        self.assertEqual(gr.evaluate(model), before)
+        self.assertEqual(len(model["intake"]["results"]), 2)
+
+    def test_generated_synthesis_drift_is_detected_at_existing_render_gate(self):
+        self.add_result()
+        self.contract["synthesis"] = [{"id": "source", "title": "Source", "contribution": "Conditional input",
+                                       "next_question": "Supply the physical map", "consumers": ["A"], "results": ["r"]}]
+        self.save()
+        with contextlib.redirect_stdout(io.StringIO()):
+            self.assertEqual(gr.main(["--repo-root", str(self.root), "render"]), 0)
+        view = self.directory / "SYNTHESIS.md"
+        view.write_text(view.read_text() + "Stale edit\n")
+        with contextlib.redirect_stderr(io.StringIO()) as error:
+            self.assertEqual(gr.main(["--repo-root", str(self.root), "render", "--check"]), 2)
+        self.assertIn("synthesis view is stale", error.getvalue())
 
     def test_changed_hypothesis_reopens_only_with_explicit_delta(self):
         self.add_result(outcome="negative")
