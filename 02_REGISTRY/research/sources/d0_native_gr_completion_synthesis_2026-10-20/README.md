@@ -176,3 +176,33 @@ accepted exact bytes and the smallest changed calculation:
 
 This does not repeat the all40+2, continuum or Lean proofs, and does
 not change a task, assembly or physical-GR status.
+
+## LEFT-only four-copy response and the paid paired Book consumer
+
+[The finite material query](book_source/NATIVE_FOUR_COPY_MATTER_RESPONSE.md)
+replaces the supplied amplitude-query premise on an explicitly admitted
+original Fourier128 subfamily and finite geometry-code range. Its exact
+inverse-overlap LEFT observable retains every RIGHT, PF and calibration
+factor. A coherent Fibonacci prefix compiler and four independent unknown
+inputs produce the original B polynomial at eta_h^2=1/(64 Lambda_h).
+Four is minimal in that copy-only access class; arbitrary fixed-strength
+refinement and full programme-price optimality are not inferred.
+
+[The single paired experiment](book_source/PAID_PAIRED_CAR_BOOK_CONTRAST.md)
+then cancels the common absolute Book normalizer and common compiler/setup
+entropy from a complete signed price contrast, with all abort/readiness
+factors retained. It uses its own new resource ledger; the old detector's
+130-resource count and all42 source are not transferred to it.
+Copies/code supply, absolute binding, geometry generation, physical time
+and compulsory action selection remain explicit.
+
+[The review](book_source/NATIVE_FOUR_COPY_MATTER_RESPONSE_REVIEW.md)
+pins both proofs and the new changed-composition calculation:
+
+    python3 -O -B -W error 02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/check_native_four_copy_matter_response.py
+
+The checker covers the full Fourier128 Gram, ten exact overlaps,
+nonflat LEFT/PF/h/s normalization, omitted-overlap/PF negative controls,
+all16 coefficient identities, complete Fibonacci prefix partition and
+the nonzero eighth-harmonic certificate. Prior geometry, gate factories,
+all40+2 and Lean are consumed unchanged. GR_closed remains false.

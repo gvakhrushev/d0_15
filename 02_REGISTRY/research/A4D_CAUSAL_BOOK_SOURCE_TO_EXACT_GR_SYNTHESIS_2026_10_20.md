@@ -767,3 +767,68 @@ bound stationary stack would instead permit the ordinary chain-rule
 pullback without a field-minimum premise. The finite algebra, same-carrier
 controls and independent reviews support these precise parent obligations.
 No physical GR, refinement, raw216 or assembly status is promoted.
+
+## 20 October: a LEFT-only four-copy material query and one paid Book contrast
+
+The [finite material response](sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/NATIVE_FOUR_COPY_MATTER_RESPONSE.md)
+now supplies the live q likelihood required by the preceding CAR actuator
+on an explicit original Fourier128 subfamily. Choose the scored 64
+order-four Fourier pairs inside the original allowed preparation theorem.
+Their ten stencil overlaps are (20,10,10,9,8,8,6,9,5,5)/64. Dividing each
+LEFT stencil coefficient by its known nonzero reference overlap gives
+an exact Hermitian observable with expectation q, including the original
+inverse-PF density, h and coframe calibration. No old or fresh RIGHT is
+operated on; full16 and all128 reference columns remain.
+
+At each fixed dyadic mesh, a supplied finite geometry-code range in Q(p)
+admits one common signed-involution normalization Lambda_h. Four independent
+unknown complete preparations then give exactly B(q)=4r^2(1-r^2), with
+r=p+sigma p^2 eta_h^2 q and eta_h^2=1/(64 Lambda_h). The code is held
+fixed and the circuit is the same for every continuous matter input:
+no unknown-amplitude decoder, inverse preparation or moving square-root
+rotation is used. Copies and geometry code are paid supplied resources;
+a bounded recorded Golden-return orbit also gives explicit repeatable
+nonvacuum inputs. This does not compile arbitrary continuum field data.
+
+The useful phi property is constructive here: multiplication by phi sends
+integer coefficients (A,B) to (A+B,A), and sufficiently deep Fibonacci
+prefix cuts realize every positive finite partition in Z[p,1/2] once
+the actual paid coherent fair bank is included. The ordered degree-four
+postprocessor has an explicit seven-Golden/22-fair-coin implementation.
+All intermediate selectors stay coherent; all native compiler failures
+and the final finite-cap abort remain. The complete response entropy is
+H(T)+alpha h_phi(B). Four copies are also necessary in the stated
+unknown-copy interface: the target has a nonzero eighth harmonic while
+an n-copy event has degree at most 2n. This is a tight copy bound at the
+displayed response strength, not a full-price minimum or a replacement
+for the fixed-strength information bound.
+
+The [single paid paired experiment](sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/PAID_PAIRED_CAR_BOOK_CONTRAST.md)
+consumes that response. Its +, -, and identity words each use six native
+letters per return. Four fair arm labels occur inside ONE complete
+programme. Under either owned absolute Book binding, its actual signed
+price contrast is alpha theta beta [h_phi(B_a)-h_phi(B_0)]/4.
+The arbitrary common normalization J, its full moving-probability
+derivative, common preparation entropy and compiler entropy cancel.
+Every readiness factor and failure price remains in the whole experiment.
+The nonzero monotone response feeds the already proved two-pulse
+finite metric identity at held executable preparation data.
+The full absolute mean still contains -J; the contrast is not declared
+a new action or the price difference of separately optimized programmes.
+
+This exact composition is compatible with the concurrent
+[field-writer restriction](sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/NATIVE_FIELD_WRITER_BRIDGE.md):
+the geometry is a supplied code, not a field written by these CAR words.
+It also differs from the concurrent
+[geometric positive-odds reconstruction](sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/ORIGINAL_JULIA_FACE_ODDS_REFINEMENT_COCYCLE.md):
+here one averages a signed complete Book price, not an unpriced
+conditional log-ratio. Neither comparison selects physical Info or
+compulsory execution. The common eta_h weakening, geometric f input,
+same-initial joint field-and-full-price graph, physical clock and any
+stationary/constraint law still require their actual native construction.
+The existing all40+2 roots and C1 full-field-minimum exclusion are unchanged.
+
+The [pinned review](sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/NATIVE_FOUR_COPY_MATTER_RESPONSE_REVIEW.md)
+records the independent analytical application and the narrow exact
+checker. No old geometric/Lean replay, new task, assembly acceptance,
+raw216 or physical-GR promotion is claimed.

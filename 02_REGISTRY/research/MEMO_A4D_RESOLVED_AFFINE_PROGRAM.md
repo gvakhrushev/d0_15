@@ -796,3 +796,29 @@ same-initial reachable fields with complete prices, or a genuine
 stationary/constraint law. The detailed proof, exact check and pinned
 independent review are linked from the causal synthesis; no task,
 assembly, raw216 or physical-GR acceptance is changed.
+
+## 20 October: phi supplies an exact material compiler and a tight copy minimum
+
+The [current causal synthesis](A4D_CAUSAL_BOOK_SOURCE_TO_EXACT_GR_SYNTHESIS_2026_10_20.md)
+now replaces a concrete live-query premise. On a permitted original
+Fourier128 subfamily, known nonzero reference overlaps give a LEFT-only
+observable of the actual material q, preserving every RIGHT. The
+Fibonacci positive-coefficient recurrence then compiles its coherent
+polynomial response from four independent unknown preparations, without
+reading their amplitudes. Four is both sufficient and necessary at the
+explicitly normalized query strength; it is not a global D_min theorem.
+
+This is an algebraic use of phi and the paid coherent fair bank, not an
+unproved Beatty average of a Book residual. A single finite paired CAR
+experiment also removes its arbitrary common Book normalization from a
+relative full-price observable, with actual readiness and failures retained.
+The geometry code and copies remain priced inputs, and the weakened
+eta_h cannot be silently replaced by a fixed strength.
+
+The concurrent field-writer result still requires a real transition of the
+coordinate pairing/solder. Sensitivity to a supplied metric, even with this
+new actual material query, does not write that metric or select an action.
+Complete Info, compulsory continuation and physical clock, geometric source
+generation and the joint field-and-full-price graph or native stationary
+law remain the next composition. The exact proof, checker and independent
+review are linked from the causal synthesis; GR_closed remains false.

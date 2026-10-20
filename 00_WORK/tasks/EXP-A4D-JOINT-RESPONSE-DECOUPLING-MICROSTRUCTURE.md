@@ -3056,3 +3056,59 @@ existing selection/causal parents. Four narrow exact algebra checks,
 independent analytical reviews and pinned sources; historical geometric
 and Lean evidence consumed unchanged. No acceptance/lifecycle transition
 or assembly application is asserted. GR_closed=false.
+
+## 20 October continuation: exact finite material-query substitution and relative Book price
+
+Phase: native realization / constitutive, unchanged native-programme-v1.
+The parent premise is the supplied live q query in
+NATIVE_CAR_ACTUATED_METRIC.md, followed by the full-price ambiguity of
+the owned absolute Book mean. On the explicit original order-four
+Fourier128 subfamily, the new response replaces the unknown-amplitude
+oracle by a fixed LEFT-only instrument using four independent complete
+preparations and a supplied finite geometry code. Its coefficientwise
+inverse reference overlap gives exactly q with actual S, rho, h and s.
+Every old/fresh RIGHT remains a spectator. The common finite-code
+normalization is Lambda_h and the actual strength is
+eta_h^2=1/(64 Lambda_h), not the old fixed-strength oracle.
+
+The coherent Golden/Fibonacci compiler supplies the ordered B polynomial
+exactly, including a seven-Golden/22-fair postprocessor. The eighth-harmonic
+argument proves four copies necessary in the declared access class.
+Retained compiler and preparation failures give the complete entropy
+H(T)+alpha h_phi(B), not the entropy of prematurely measured selectors.
+Known finite u-only return words give a repeatable nonvacuum input
+subfamily; arbitrary supplied unknown copies still have their own input cost.
+
+The paired consumer selects +,-,0a,0b inside one complete finite programme.
+Under the owned conditional absolute Book binding, a signed expectation
+of its actual full prices cancels the single arbitrary J and its
+moving-probability derivative, as well as common setup/compiler entropy.
+This is a relative observable, not a selected variational action.
+Actuation uses 24k letters on four query inputs, or 30k when the original
+live field is also changed; every preparation, code and additional gate
+remains paid. No cloning or source-free preparation is inferred.
+
+Write surface: the same book_source directory, with
+NATIVE_FOUR_COPY_MATTER_RESPONSE.md,
+PAID_PAIRED_CAR_BOOK_CONTRAST.md,
+check_native_four_copy_matter_response.py and
+NATIVE_FOUR_COPY_MATTER_RESPONSE_REVIEW.md; four existing scientific
+parents receive append-only substitutions. No new task/lifecycle state.
+
+Inputs include the prior actuator fa48c930, absolute Book mean bbf3d78f,
+the original Fourier128 owner 44e9fb42, exact logical factory 92b9003d,
+and fixed-strength information boundary 3beb6238. The concurrent
+field-writer obstruction fa59e9f5 is consumed: holding supplied geometry
+does not write the needed moving solder. Geometric f generation, uniform
+response/refinement, compulsory Info/continuation/clock and the same-initial
+joint field-and-price graph or native stationary law remain open.
+The full-field minimum exclusion is not reversed.
+
+Smallest decisive check: exact full128 Fourier Gram and all10 stencil
+overlaps; one nonflat overlap-corrected material fixture with PF/h/s and
+hostile omitted-factor controls; complete prefix capacities/all16
+coefficient identities; four-copy polynomial and nonzero eighth harmonic.
+Author and independent reviewer validate this changed checker only.
+The analytical review binds the universal and full-record statements.
+The earlier sparse assembly-template limitation is unchanged; no assembly
+acceptance, old replay, Lean build or GR/raw216 promotion is asserted.
