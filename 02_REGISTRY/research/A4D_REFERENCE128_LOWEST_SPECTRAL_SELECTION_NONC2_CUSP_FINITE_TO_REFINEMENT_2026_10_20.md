@@ -99,3 +99,29 @@ Thus the nondifferentiable \(-|\epsilon|\) term **survives with a strictly posit
 **Exactly requested next physical gate:** within ONE selected original H+J+R at fixedRIGHT rank128 and genuine oldRIGHT/programme price, write the ACTUAL projector/state occupation at the k32 band edge and test its true mixed Euler response to the smooth coframe perturbation (4). If it claims a positive/minimizing Schur, the source must remove or physically resolve (5) with real measured work. If it claims a saddle/conditional IFT, show the full Fredholm projection and constraint tangent instead of treating a singular prep-only block as invertible. Then, independently, include all 16 coframe/24 links/observer stress, actual Einstein source and uniform #216/RAW refinement. GR_closed=false.
 
 **Exact finite source derivation + independent full spectral checks:** \`sources/d0_curved_native_preparation_2026-10-20/check_native_reference128_lowest_cutoff_cusp_and_refinement.py\`. It replays the original periodic \(B=M_\nu(S_u-I)/h\) and 2×2+2×2 compressed cutoff matrices with all finite positive energies; finite-difference CUSP is used only to witness the already exact algebraic source jump. No new Lean owner for this theorem yet.
+
+
+## 5. STRONGER ORIGINAL RIGHT-REFERENCE RESULT: the physically distinguishable LEFT density has a FIXED JUMP, not merely a cusp in energy
+
+The exact four-dimensional cutoff source matrix in (5) has NO zero first slopes: it contains two strictly negative and two strictly positive slopes. Let \(P_+\) denote the unique rank-2 spectral projector onto its negative eigenvectors and \(P_-\) the rank-2 projector onto its positive eigenvectors. Because the cutoff derivative is real self-adjoint,
+\[
+\boxed{P_+P_-=0,\quad P_++P_-=I_{4},\quad
+\operatorname{spec}(P_+-P_-)=\{1,1,-1,-1\}.}\tag{9}
+\]
+All 126 strictly lower energy occupied states have a common continuous limiting projector \(P_<\). Thus the TRUE rank128 minimizing LEFT projectors on the two sides of the exact uniform coframe have different gauge-invariant limits:
+\[
+\boxed{P_{\mathrm{LEFT}}(0^+)=P_<\oplus P_+,\quad
+P_{\mathrm{LEFT}}(0^-)=P_<\oplus P_-,\quad
+\|P_{\mathrm{LEFT}}(0^+)-P_{\mathrm{LEFT}}(0^-)\|_{\mathrm{op}}=1.}\tag{10}
+\]
+For the original full fixedRIGHT \(\Sigma_R=I_{128}/128\), the true retained LEFT density is \(\rho=P_{\rm LEFT}/128\). Therefore the SAME physically prepared reference rank and Gram have the exact discontinuity
+\[
+\boxed{\|\rho(0^+)-\rho(0^-)\|_1
+=\frac4{128}=\frac1{32},\qquad
+\frac12\|\rho(0^+)-\rho(0^-)\|_1=\frac1{64}.}\tag{11}
+\]
+The second number is the conventional trace distance. These numbers survive all fixed-period refinements because the occupied rank128 and the rank-2 versus rank-2 cutoff switch do not change. They cannot be erased by a RIGHT basis rotation: \(\rho=MM^\dagger\) is the original LEFT state density observable.
+
+Consequently **NO continuous selection of globally R-minimizing fixedRIGHT rank128 preparation** exists across both signs of the smooth macroscopic perturbation (4) in the declared protected two-grade native programme. This is a stronger, gauge-invariant impossibility than applying the ordinary C²-Schur to an energy with a \(|\epsilon|\) cusp. It does NOT exclude all physically stationary critical preparations, whole16 selections, one-sided admitted cones, extra selected M-dependent work or the user-reported fixed-boundary ten-variable solution; it excludes only the precisely defined smooth LOWEST-R selector here.
+
+Independent checked 4×4 native compressed-source eigenspaces yield \(P_+P_-=0\) to machine precision and true \(\|\rho_+-\rho_-\|_1=1/32\); the projection identity itself follows exactly from (5), so these numerics are a replay, not the proof. \`GR_closed=false\`.
