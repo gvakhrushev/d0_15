@@ -127,3 +127,40 @@ We now have a SHARP complete finite physical decision experiment rather than a v
 - \`sources/d0_native_gr_universality_2026-10-20/check_role96_golden17_stationary_reference_fisher_schur.mjs\` — actual ORIGINAL 16/64/96/64 Role cochain, integer cube Bianchi, true all384 Golden Fisher, moving complete q code Schur and positive full17 Cost−Info, blob \`24615d1a5fe0cc5cb94e7ae096b915daa8df30ef\`.
 
 Existing ORIGINAL full96 physical-link \(f\equiv0\) and Golden17 Shannon failure owner independently fetched/executed and PASSed, \`A4D_ORIGINAL_4D_STAR_FLAT_GOLDEN17_VERTICAL_MEMORY_OBSTRUCTION_AND_SOURCE_GATE_2026_10_20.md\`. These are mathematically complete scoped experiments, not the real compulsory full M1/G0 Book03 action or rigorous h-refinement. \`GR_closed=false\`.
+
+
+## 2.1. THE KEY SIGNED PHYSICAL INSIGHT: full-optimal moving coding also KILLS gravity; original p:p² ODD code must remain distinguished
+
+The new positive code-envelope mechanism of §2 is **an internal archive/preparation screening rule, NOT a way to get a nonzero signed Einstein source by itself**. Optimising EVERY Golden code label all the way to \(\mu=q(\xi)\) makes its entire Cost−Info excess identically ZERO: it can eliminate a spurious vertical source but cannot generate the oriented original Hodge/Palatini term. This is essential for not turning the successful stationarity mechanism into another GR no-go.
+
+There is a second exact original-carrier positive finite fact, verified on the SAME COMPLETE 17-outcome experimental \(q_{17}\) and native p:
+
+For each of the SIX genuine Lie marker pairs \((a+),(a-)\), let \(s_a=q_{a+}(I)+q_{a-}(I)=2r\), \(r=p^4/(24\cdot4096)\). Keep the other five Golden17 category baseline code masses equal to the actual q17(I) (GGrest, GB, BG, BB, Bell failure), but distribute each existing pair mass by the **already-defined original Golden conditional code**:
+\[
+\boxed{
+\mu_{a+}=s_a p,\quad
+\mu_{a-}=s_a p^2,\quad
+p+p^2=1.
+}\tag{9}
+\]
+Every \(\mu_r\) is strictly positive; the WHOLE code is exactly normalized (with no new probabilities or scales). This is a declared frozen **original-Golden-type asymmetric CODE CHOICE**, not a proof the G0/Book03 orientation necessarily chooses '+' as its p-branch. Reversing the coframe/Q8 center swaps + and −.
+
+Along the actual proper Lorentz \(J_{23}\) one-link variation, the real original complete pointer has \(q_{J+}(0)=q_{J-}(0)=r\), \(\partial_\theta q_{J\pm}(0)=\pm\sqrt2 r\). Therefore the genuine complete-pair relative-code source obeys
+\[
+\boxed{
+\partial_\theta D_\varphi(q_{17}(\theta)\Vert\mu)\big|_0
+=\sqrt2 r\,\log_\varphi\frac{\mu_{J-}}{\mu_{J+}}
+=\boxed{-\sqrt2 r=-\frac{p^4}{12\sqrt2\cdot4096}}
+=-2.09890724744938\cdot10^{-6}.
+}\tag{10}
+\]
+Swapping the ORIGINAL p,p² positive code assignments flips the source sign EXACTLY. On the same native complete17 law the full pointer Shannon is REVERSAL EVEN and has \(\partial_\theta H_\varphi(q)|_0=0\). This separates **three real mathematical source classes on ONE original positive physical-type Golden record**:
+1. pointer Shannon: no ODD first J23 source, but a potentially spurious vertical second source;
+2. *fully moving matched code*: no Cost−Info first OR second source once its own internal reference is stationary;
+3. *fixed native Golden p:p² ODD code*: exact nonzero SIGNED original Lie first source whose sign is exchanged by the Q8/coframe orientation.
+
+The entire original zero-free-parameter data (p, two fresh flags, fixed Bell probability 1/4096, 12 marked q±, all failure categories) already determine the coefficient (10). No independently fitted parity-angle or gravitational coupling is used. But **SOURCE LOCATION matters**: the physical action must determine which channels are permitted to adapt with future information and which original oriented Q8/chirality code reference is retained as a true material/geometry source. Merely having 270 measurable Lie scores, a 327 Q8 sheet archive, a positive Golden pair and M1's minimum description language does NOT pick that split without actual G0 oldRIGHT/reference/clock+Book03 memory coupling.
+
+**Important distinction:** (10) proves a NONZERO code-information ODD FIRST LIE SOURCE in one properly referenced marker. It does NOT establish proportionality of the same program's ENTIRE 16+24+matter Euler to the ORIGINAL full Hodge six-face source, nor a surviving raw Role-link Euler (which can cancel between adjacent original shared faces by the true incidence adjoint). That physical coframe/Hodge-address selection is still the exact already-owned type of complete positive signed witness in \`A4D_EXACT_GOLDEN_POSITIVE_BOOK_SCORE_ALL40_ORIGINAL_STAR_SOURCE_2026_10_20.md\`. The canonical two-port code's sector assignment and genuine physical preparation price must be tested rather than set to yield Einstein.
+
+**Independent replay:** the updated original full384 checker now tests ALL17-code normalization, moving Cost–Info cancellation to <3e−19, exact Golden frozen-source value \(-2.098907\cdot10^{-6}\), sign reversal +2.098907e−6, zero whole-pointer Shannon odd jet, original 270 positive Role Fisher modes, and genuine 114 gauge/Wilson nulls. Actual finite difference of the signed jet differs from its exact formula by less than \(2\cdot10^{-12}\) at the test step; every Golden/Bell failure is present. Updated checker blob \`d7d87e90d27f472e34d4df720fb093a9a2a29ead\` was independently executed in fresh V8 and PASSed.
