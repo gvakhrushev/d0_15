@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "date": "2026-10-20",
+  "source_base_commit": "04988901985534dd729d34286aadc4fa6401adec",
+  "command": [
+    "python3",
+    "-B",
+    "02_REGISTRY/research/certificates/a4d_native_complete_price_selection_check.py"
+  ],
+  "environment_override": {
+    "PYTHONPATH": "/tmp/d0_native_validation_deps",
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1"
+  },
+  "certificate_sha256": "a9c3772ce43710248d43a893501fe04721c7879895eefd29e6dad29dd1d58c2a",
+  "immutable_inputs": 65,
+  "inputs_match_after_run": true,
+  "receipt_comparison": "Every key, shape, integer, boolean, string and hash exact; all float diagnostics compared at declared per-checker tolerances; original active inequalities independently executed.",
+  "returncode": 0,
+  "stdout_sha256": "c2e1c0d3db8aecf36674f21e469f47ce6dd8e11d461fdf5ecc45a2ddd8aeb9df",
+  "stdout_path": "02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/FROZEN_REPLAY.log",
+  "recovered_437_replay": "Separate RECOVERED_REPLAY.json/log; byte-identical historical output; not recomputed by this new wrapper.",
+  "compulsory_full_D0_price_selected": false,
+  "GR_closed": false
+}

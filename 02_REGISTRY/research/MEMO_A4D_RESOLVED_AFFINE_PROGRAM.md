@@ -425,6 +425,49 @@ the admitted complete price on this existing positive family; do not
 replace it with another root search or identify the known Gamma spin
 source with the link-independent J2 scalar without proof.
 
+### Stopped minimality now preserves the full source for all fixed prices
+
+Consume the [all-cost stopped minimum/source theorem](A4D_NATIVE_STOPPED_MINIMUM_TO_J2_SOURCE_2026_10_20.md)
+in the same #334 owner. For every fixed real T >= 5 and ell >= 1, the
+original retained Golden repeat protocol has an attained minimum over k;
+every minimizing branch has B_k >= 2 and a nonzero coefficient of the
+original DJ2. The all-k proof uses its quadratic integer norm and paid
+candidate bound, without a compiler-cost upper cutoff. A genuine joint
+local field minimum necessarily satisfies DJ2 = 0 even at branch ties;
+no differentiability of the optimized envelope is needed.
+
+The actual work-entropy residual is retained off Sigma and has zero first
+jet on Sigma. This supplies a conditional minimality-to-source bridge to
+the owned all40+2 Euler consumer. Deriving the compulsory stopping task,
+Book information cut and full fixed-price/native work ledger remains the
+physical application. The 275-control exact certificate, corrected upstream
+finite-cap replay and independent analytical reviews are frozen separately;
+the prior complete-record packet and historical evidence are unchanged.
+
+### Complete native information and solved specified minima
+
+Consume the [complete-record information/price synthesis](A4D_NATIVE_COMPLETE_RECORD_INFO_PRICE_SELECTION_2026_10_20.md)
+in existing #334. The original physical full128 history limit is a fixed
+isometric image of one coherent mode, with oldRIGHT retained. This supplies
+an explicit full pointer entropy/source, two coherent information algebras,
+a strict nonzero limiting minimum for the specified fresh-record
+Cost-minus-entropy, and an exact least paid fixed horizon for a supplied
+minimax binary verification task. The earlier stopped-clock operator/source
+inversion and all-launch versus conditioned-price packet are recovered
+byte-identically and independently replayed.
+
+The remaining physical application is now specific: derive which Book
+memory/Info algebra, fixed evidence or future task and complete actual
+charges apply on the same nonuniform carrier. Including oldRIGHT in Info
+removes the fresh-entropy minimum on the same execution. Completing the
+matched loop/void contrast to expected relative information cancels its
+coframe-link mixed source; a genuine paid mismatch or independently fixed
+evidence defines a different problem. The required regular maximal-Fisher
+scalar reporter is already cheapest at G, with zero first source, so that
+task does not force G squared. These scoped results guide the native
+selection step and do not discharge the all40+2 source identity, physical
+GR, the open parent or raw216.
+
 ## Current route to general relativity
 
 ### Current composition: exact CAR source and the remaining full Book valuation

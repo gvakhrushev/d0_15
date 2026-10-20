@@ -1,0 +1,491 @@
+{
+  "check_count": 1579,
+  "check_groups": {
+    "coherent_poisson_cat_controls": 90,
+    "exact_original_walsh_car": 95,
+    "finite_event_clock_entropy": 25,
+    "literal_full128_eight_blocks": 1340,
+    "provenance": 8,
+    "strict_coherent_price_minimum": 21
+  },
+  "checker_sha256": "60f70c32d9f67c09eee8cccb160b3ebc2299735a0fd7b471d1bb712af9e8a03c",
+  "coherent_limit_controls": {
+    "controls": [
+      {
+        "Lambda": 0.1,
+        "cat_entropies": [
+          {
+            "entropy": -0.0,
+            "r": -1.0
+          },
+          {
+            "entropy": 0.2828355647,
+            "r": -0.3
+          },
+          {
+            "entropy": 0.3040036565,
+            "r": 0.0
+          },
+          {
+            "entropy": 0.2154498971,
+            "r": 0.6
+          },
+          {
+            "entropy": -0.0,
+            "r": 1.0
+          }
+        ],
+        "coherent_QFI": 120.6353096224,
+        "count_Fisher": 120.6353096224,
+        "count_Shannon": 0.3336769965,
+        "even": 0.9093653765,
+        "fresh_coherent_entropy": 0.3040036565,
+        "odd": 0.0906346235
+      },
+      {
+        "Lambda": 0.48902733391562236,
+        "cat_entropies": [
+          {
+            "entropy": -0.0,
+            "r": -1.0
+          },
+          {
+            "entropy": 0.5794256823,
+            "r": -0.3
+          },
+          {
+            "entropy": 0.6206749903,
+            "r": 0.0
+          },
+          {
+            "entropy": 0.44689981,
+            "r": 0.6
+          },
+          {
+            "entropy": -0.0,
+            "r": 1.0
+          }
+        ],
+        "coherent_QFI": 120.6353096224,
+        "count_Fisher": 120.6353096224,
+        "count_Shannon": 0.9165007705,
+        "even": 0.6880209571,
+        "fresh_coherent_entropy": 0.6206749903,
+        "odd": 0.3119790429
+      },
+      {
+        "Lambda": 2.0,
+        "cat_entropies": [
+          {
+            "entropy": -0.0,
+            "r": -1.0
+          },
+          {
+            "entropy": 0.6472891514,
+            "r": -0.3
+          },
+          {
+            "entropy": 0.6929794399,
+            "r": 0.0
+          },
+          {
+            "entropy": 0.5002784037,
+            "r": 0.6
+          },
+          {
+            "entropy": -0.0,
+            "r": 1.0
+          }
+        ],
+        "coherent_QFI": 120.6353096224,
+        "count_Fisher": 120.6353096224,
+        "count_Shannon": 1.7048826439,
+        "even": 0.5091578194,
+        "fresh_coherent_entropy": 0.6929794399,
+        "odd": 0.4908421806
+      },
+      {
+        "Lambda": 6.0,
+        "cat_entropies": [
+          {
+            "entropy": 0.0,
+            "r": -1.0
+          },
+          {
+            "entropy": 0.647446639,
+            "r": -0.3
+          },
+          {
+            "entropy": 0.6931471805,
+            "r": 0.0
+          },
+          {
+            "entropy": 0.5004024235,
+            "r": 0.6
+          },
+          {
+            "entropy": 0.0,
+            "r": 1.0
+          }
+        ],
+        "coherent_QFI": 120.6353096224,
+        "count_Fisher": 120.6353096224,
+        "count_Shannon": 2.2992995632,
+        "even": 0.5000030721,
+        "fresh_coherent_entropy": 0.6931471805,
+        "odd": 0.4999969279
+      }
+    ],
+    "number_cutoff": 119,
+    "pointer_count_is_only_classically_sufficient": true,
+    "record_only_entropy_is_not_global_pure_output_entropy": true
+  },
+  "exact_walsh_car": {
+    "eight_Q_block_traces": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "flattened_SELECT_index": 9,
+    "full_DATA_dimension": 128,
+    "limiting_physical_Kraus_indices": [
+      18,
+      19
+    ],
+    "oldRIGHT_dimension": 128,
+    "walsh_character": 4
+  },
+  "finite_clock_entropy": {
+    "asymptotic_full_pointer_price_log_slope": -125.3453295827,
+    "controls": [
+      {
+        "Cost_minus_event_Info_log_slope": -175.8806877885,
+        "L": 8,
+        "Lambda_h": 1.7900025444,
+        "count_entropy": 1.6414135399,
+        "event_entropy": 24.3217986229,
+        "finite_time_density_entropy": 0.2658239378,
+        "finite_time_density_entropy_derivative": -12.1934428905,
+        "occupied_clock_entropy": 22.680385083,
+        "paid_excess_derivative": 8.850266853
+      },
+      {
+        "Cost_minus_event_Info_log_slope": -167.6326871547,
+        "L": 16,
+        "Lambda_h": 1.8608275026,
+        "count_entropy": 1.6636749437,
+        "event_entropy": 30.3712425638,
+        "finite_time_density_entropy": 0.2041367533,
+        "finite_time_density_entropy_derivative": -13.2535269105,
+        "occupied_clock_entropy": 28.7075676201,
+        "paid_excess_derivative": 9.2004376609
+      },
+      {
+        "Cost_minus_event_Info_log_slope": -160.3086907127,
+        "L": 32,
+        "Lambda_h": 1.8788786627,
+        "count_entropy": 1.6692036363,
+        "event_entropy": 35.8570816666,
+        "finite_time_density_entropy": 0.1879787675,
+        "finite_time_density_entropy_derivative": -13.5271992189,
+        "occupied_clock_entropy": 34.1878780303,
+        "paid_excess_derivative": 9.2896870266
+      },
+      {
+        "Cost_minus_event_Info_log_slope": -154.7689563274,
+        "L": 64,
+        "Lambda_h": 1.8834132436,
+        "count_entropy": 1.6705835166,
+        "event_entropy": 41.1610112462,
+        "finite_time_density_entropy": 0.1838924088,
+        "finite_time_density_entropy_derivative": -13.5961666819,
+        "occupied_clock_entropy": 39.4904277296,
+        "paid_excess_derivative": 9.3121071973
+      },
+      {
+        "Cost_minus_event_Info_log_slope": -150.638040747,
+        "L": 128,
+        "Lambda_h": 1.8845482544,
+        "count_entropy": 1.6709283434,
+        "event_entropy": 46.4097581991,
+        "finite_time_density_entropy": 0.1828678768,
+        "finite_time_density_entropy_derivative": -13.613443021,
+        "occupied_clock_entropy": 44.7388298558,
+        "paid_excess_derivative": 9.3177189976
+      },
+      {
+        "Cost_minus_event_Info_log_slope": -147.4946663999,
+        "L": 256,
+        "Lambda_h": 1.8848320926,
+        "count_entropy": 1.6710145411,
+        "event_entropy": 51.6423284718,
+        "finite_time_density_entropy": 0.1826115597,
+        "finite_time_density_entropy_derivative": -13.6177642626,
+        "occupied_clock_entropy": 49.9713139307,
+        "paid_excess_derivative": 9.3191223703
+      }
+    ],
+    "exact_remaining_mark_term_not_numerically_replaced": true,
+    "fixed_a": 0.25,
+    "physical_timestamp_counterterm_admitted": false
+  },
+  "frozen_source_sha256": {
+    "02_REGISTRY/research/A4D_NATIVE_FULL128_RELATIVE_TRANSFER_AND_CONDENSED_DESCENT.md": "577cbc909f766468fbef8ab38a5986ae761d348b075c2f38b2e1a88b704d4b3e",
+    "02_REGISTRY/research/sources/d0_native_relative_history_first_jet_2026-10-20/RESULT.md": "d1c3cff174b2e4d03481ca6b3d18a1da2d3b65baba1f2dbf886324d8ce7f607d",
+    "02_REGISTRY/research/sources/d0_native_relative_history_first_jet_2026-10-20/check_relative_history_first_jet.py": "0c69dc21fd66e06eefacf9ab047f186ff1e4e93818aff38aca4187968a70b468",
+    "02_REGISTRY/research/sources/d0_native_relative_transfer_2026-10-17/check_native_relative_transfer.py": "dfa8fffb08d421f2a2a0fa91a3044492ab94bfd6bd7d1e86b110b52c2e0ff065"
+  },
+  "literal_finite_instruments": {
+    "actual_paid_clock": [
+      {
+        "L": 4,
+        "a": 0.25,
+        "nonblank_mean": 1.5278462352,
+        "nonblank_mean_derivative": 12.2226274029,
+        "paid_port_excess": 0.94427191,
+        "paid_port_excess_derivative": 7.55417528,
+        "rounds": 32768
+      },
+      {
+        "L": 4,
+        "a": 0.5,
+        "nonblank_mean": 6.1111712229,
+        "nonblank_mean_derivative": 24.4435450632,
+        "paid_port_excess": 3.77708764,
+        "paid_port_excess_derivative": 15.10835056,
+        "rounds": 32768
+      },
+      {
+        "L": 4,
+        "a": 0.75,
+        "nonblank_mean": 13.7493338097,
+        "nonblank_mean_derivative": 36.6610432384,
+        "paid_port_excess": 8.49844719,
+        "paid_port_excess_derivative": 22.66252584,
+        "rounds": 32768
+      },
+      {
+        "L": 8,
+        "a": 0.25,
+        "nonblank_mean": 1.7900025444,
+        "nonblank_mean_derivative": 14.3200081321,
+        "paid_port_excess": 1.1062833566,
+        "paid_port_excess_derivative": 8.850266853,
+        "rounds": 524288
+      },
+      {
+        "L": 8,
+        "a": 0.5,
+        "nonblank_mean": 7.1599918433,
+        "nonblank_mean_derivative": 28.6398695915,
+        "paid_port_excess": 4.4251334265,
+        "paid_port_excess_derivative": 17.7005337059,
+        "rounds": 524288
+      },
+      {
+        "L": 8,
+        "a": 0.75,
+        "nonblank_mean": 16.1099128947,
+        "nonblank_mean_derivative": 42.9594377055,
+        "paid_port_excess": 9.9565502096,
+        "paid_port_excess_derivative": 26.5508005589,
+        "rounds": 524288
+      },
+      {
+        "L": 16,
+        "a": 0.25,
+        "nonblank_mean": 1.8608275026,
+        "nonblank_mean_derivative": 14.8866191955,
+        "paid_port_excess": 1.1500547076,
+        "paid_port_excess_derivative": 9.2004376609,
+        "rounds": 8388608
+      },
+      {
+        "L": 16,
+        "a": 0.5,
+        "nonblank_mean": 7.4433087722,
+        "nonblank_mean_derivative": 29.7732284843,
+        "paid_port_excess": 4.6002188304,
+        "paid_port_excess_derivative": 18.4008753218,
+        "rounds": 8388608
+      },
+      {
+        "L": 16,
+        "a": 0.75,
+        "nonblank_mean": 16.7474400936,
+        "nonblank_mean_derivative": 44.6598179594,
+        "paid_port_excess": 10.3504923685,
+        "paid_port_excess_derivative": 27.6013129826,
+        "rounds": 8388608
+      },
+      {
+        "L": 32,
+        "a": 0.25,
+        "nonblank_mean": 1.8788786627,
+        "nonblank_mean_derivative": 15.0310292486,
+        "paid_port_excess": 1.1612108783,
+        "paid_port_excess_derivative": 9.2896870266,
+        "rounds": 134217728
+      },
+      {
+        "L": 32,
+        "a": 0.5,
+        "nonblank_mean": 7.5155145717,
+        "nonblank_mean_derivative": 30.062057866,
+        "paid_port_excess": 4.6448435133,
+        "paid_port_excess_derivative": 18.5793740531,
+        "rounds": 134217728
+      },
+      {
+        "L": 32,
+        "a": 0.75,
+        "nonblank_mean": 16.9099074904,
+        "nonblank_mean_derivative": 45.0930852208,
+        "paid_port_excess": 10.4508979049,
+        "paid_port_excess_derivative": 27.8690610797,
+        "rounds": 134217728
+      },
+      {
+        "L": 64,
+        "a": 0.25,
+        "nonblank_mean": 1.8834132436,
+        "nonblank_mean_derivative": 15.0673059454,
+        "paid_port_excess": 1.1640133997,
+        "paid_port_excess_derivative": 9.3121071973,
+        "rounds": 2147483648
+      },
+      {
+        "L": 64,
+        "a": 0.5,
+        "nonblank_mean": 7.5336529694,
+        "nonblank_mean_derivative": 30.1346118512,
+        "paid_port_excess": 4.6560535986,
+        "paid_port_excess_derivative": 18.6242143945,
+        "rounds": 2147483648
+      },
+      {
+        "L": 64,
+        "a": 0.75,
+        "nonblank_mean": 16.9507191626,
+        "nonblank_mean_derivative": 45.2019176778,
+        "paid_port_excess": 10.4761205969,
+        "paid_port_excess_derivative": 27.9363215918,
+        "rounds": 2147483648
+      }
+    ],
+    "all128_outcomes_per_block": true,
+    "convergence": {
+      "L": [
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "jump_jet_error": [
+        3.6173991046,
+        1.9062815966,
+        0.9656694315,
+        0.4844112502,
+        0.2424030195
+      ],
+      "jump_value_error": [
+        2.7079671571,
+        1.4290349473,
+        0.7241662437,
+        0.3632976682,
+        0.1818009172
+      ],
+      "normalized_jump_error": [
+        0.6014022976,
+        0.3067037208,
+        0.1541079259,
+        0.0771486519,
+        0.0385861678
+      ],
+      "normalized_jump_jet": [
+        0.0245710971,
+        0.0122837568,
+        0.0061418122,
+        0.003070904,
+        0.0015354519
+      ]
+    },
+    "evaluated_block_instruments": 120,
+    "hostile_dropped_port1_blank": {
+      "direct_physical_a_derivative_error": 0.0,
+      "n_round_missing_expected_returns": 0.0004610703,
+      "one_round_missing_probability": 1.41e-08,
+      "wrong_native_nu_source_factor": 4.0
+    },
+    "max_identity_errors": {
+      "TP": 0.0,
+      "TP_jet": 0.0,
+      "blank": 0.0,
+      "blank_jet": 0.0,
+      "normalized_jump_TP": 0.0,
+      "return_price_effect": 0.0,
+      "return_price_jet": 0.0,
+      "unital": 0.0,
+      "unital_jet": 0.0
+    },
+    "maximally_mixed_full128_DATA_entropy_exact": "log(128), by proved literal unitality",
+    "meshes": [
+      4,
+      8,
+      16,
+      32,
+      64
+    ],
+    "physical_amplitudes": [
+      0.25,
+      0.5,
+      0.75
+    ]
+  },
+  "proof_sha256": "755fb3b181bfdc989235f54c518372404e72c008a70fbe9071a400da389b2530",
+  "receipt_comparison": {
+    "active_direct_derivative_absolute_tolerance": 2e-10,
+    "active_literal_identity_absolute_tolerance": 8e-13,
+    "active_normalized_jump_absolute_tolerance": 2e-12,
+    "comparison_tolerances_do_not_replace_active_scientific_checks": true,
+    "diagnostic_absolute_decimal_places": 10,
+    "floats_compare_absolute_tolerance": 1e-09,
+    "floats_compare_relative_tolerance": 1e-10,
+    "integers_booleans_strings_and_hashes_compare_exactly": true,
+    "rounded_zero_diagnostic_is_not_exact_algebraic_zero": true
+  },
+  "schema": "d0-native-full128-coherent-info-price/1",
+  "scope": {
+    "GR_closed": false,
+    "actual_physical_a_derivatives_checked": true,
+    "all_eight_first_shell_CAR16_blocks_checked": true,
+    "all_original128_outcomes_checked": true,
+    "coherent_limit_is_fixed_isometric_image_not_free_decoder": true,
+    "compulsory_Book03_Info_selected": false,
+    "fresh_record_and_record_plus_oldRIGHT_are_distinct_Info_algebras": true,
+    "full_D0_price_selected": false,
+    "general_C1_convergence_is_analytical_input": true,
+    "long_history_words_enumerated": false
+  },
+  "source_commit": "c7a2e7c39fab6b60fa70a553998e9aa2ccc89f3f",
+  "status": "PASS",
+  "strict_minimum": {
+    "Lambda_star": "0.4890273339156223744000893821684385141945092093281437530125735010947066",
+    "a_star": "0.1273383861053319756906974022726901096341185513289993824839297320319744",
+    "finite_h_minimizer_uniqueness_asserted": false,
+    "g_at_minimum": "-0.9875810658610383928790758751204775897626956289971657104794186195680207",
+    "g_second_derivative_at_minimum": "2.605085888728707065397293565639932491063772997929238627409326956913571",
+    "g_with_oldRIGHT_slope": "0.6180339887498948482045868343656381177203091798057628621354486227052605",
+    "root_bracket_width": "6.1363668e-92",
+    "root_equation": "2*x*atanh(x)=p*log(phi)",
+    "root_residual_absolute": "6.1363668e-92",
+    "working_decimal_digits": 90,
+    "x_star": "0.3760419142141335711900960067697006289534696441815388407583829646822134"
+  }
+}

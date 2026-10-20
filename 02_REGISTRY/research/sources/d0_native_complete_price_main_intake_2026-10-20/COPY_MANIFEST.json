@@ -1,0 +1,1260 @@
+{
+  "schema": 1,
+  "status": "PASS_SCOPED_MAIN_INTAKE_COPY_AND_HASH_CLOSURE",
+  "repository": "gvakhrushev/d0_15",
+  "task": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
+  "class": "CONTROL",
+  "main_baseline": "c33217eb11f37e09fb80ce82fb93480bcd56267a",
+  "source_owner": "EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE",
+  "source_pr": 334,
+  "published_sources": [
+    {
+      "commit": "511e012b31522d2a1fdb9d3fff51328c0694e4ee",
+      "tree": "e4dc587bcf6bb5da4d816d4563eb236a4592b856",
+      "scientific_paths": 70
+    },
+    {
+      "commit": "45372df30740f4e75c8b58013652a7665bf833cd",
+      "tree": "7c99fabeb299a02ec3bc695f9d3f2fe0e5b71c05",
+      "scientific_paths": 27
+    },
+    {
+      "commit": "1cb164de3753f9dbaf214ea140eb9ea21a7b9d90",
+      "scientific_paths": 4,
+      "purpose": "Exactly the declared unchanged stopped-source dependencies"
+    }
+  ],
+  "copied_scientific_paths": 101,
+  "source_bytes_identical": true,
+  "files": [
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_CLOCK_PRESSURE_AND_COMPLETE_PRICE_SYNTHESIS_2026_10_20.md",
+      "source_commit": "511e012b31522d2a1fdb9d3fff51328c0694e4ee",
+      "source_blob": "fdcb94fa0d3eb93af0345fff1982ca0d6a19a6ea",
+      "source_mode": "100644",
+      "sha256": "823d527dbe61050a9c3f81109691839e1bc9de0855e5435e08259049db1a06ed",
+      "bytes": 10800,
+      "packet": "complete_record_and_recovered_clock",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_COMPLETE_RECORD_INFO_PRICE_SELECTION_2026_10_20.md",
+      "source_commit": "511e012b31522d2a1fdb9d3fff51328c0694e4ee",
+      "source_blob": "63e6e79bbbe2b6f69069e423c0fdf306e3e28d73",
+      "source_mode": "100644",
+      "sha256": "93d530eaa84df942bafb174006210047adb6588ec017d14d22bfa91ce800eaeb",
+      "bytes": 13631,
+      "packet": "complete_record_and_recovered_clock",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_STOPPED_MINIMUM_TO_J2_SOURCE_2026_10_20.md",
+      "source_commit": "45372df30740f4e75c8b58013652a7665bf833cd",
+      "source_blob": "c96791ff6a768dc11f6860fe6ad82121fba95e3f",
+      "source_mode": "100644",
+      "sha256": "6e73ece4f1d4312e241e91860871019689bf28017088ef6431893a3286978b0b",
+      "bytes": 9548,
+      "packet": "stopped_all_cost_source",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_PROSPECTIVE_STOPPED_GOLDEN_MINIMUM_SOURCE_REVERSAL_2026_10_20.md",
+      "source_commit": "1cb164de3753f9dbaf214ea140eb9ea21a7b9d90",
+      "source_blob": "b3acbdc5bb9e9dc4e4d27504d97fafbad5279642",
+      "source_mode": "100644",
+      "sha256": "ea2016810eb5b7bbc3e41941faf66900d7c0c0b4d97c064f098275102aafc34e",
+      "bytes": 24199,
+      "packet": "unchanged_stopped_upstream_dependency",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_clock_price_source_check.py",
+      "source_commit": "511e012b31522d2a1fdb9d3fff51328c0694e4ee",
+      "source_blob": "0cbd16a01d7bd11c3f1d5890e130e3a35b353e20",
+      "source_mode": "100644",
+      "sha256": "7c6715937ab4ab5e0f9efff54ce42e8d8fbce2005e8c07242c76f87fd871407f",
+      "bytes": 14898,
+      "packet": "complete_record_and_recovered_clock",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_complete_price_selection_check.py",
+      "source_commit": "511e012b31522d2a1fdb9d3fff51328c0694e4ee",
+      "source_blob": "52e62ebd9cd87953e9b3dab16fb41e63c7cbd12f",
+      "source_mode": "100644",
+      "sha256": "a9c3772ce43710248d43a893501fe04721c7879895eefd29e6dad29dd1d58c2a",
+      "bytes": 25442,
+      "packet": "complete_record_and_recovered_clock",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_stopped_all_cost_source_check.py",
+      "source_commit": "45372df30740f4e75c8b58013652a7665bf833cd",
+      "source_blob": "0818336a647ad37fcce8ef227f526099af1b31df",
+      "source_mode": "100644",
+      "sha256": "5a5baccd4c59d0fe9f7e10a5b7e6407db1cd688707fb341a9b139b2049222bb1",
+      "bytes": 11446,
+      "packet": "stopped_all_cost_source",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/FROZEN_INTEGRATION_REVIEW.md",
+      "source_commit": "511e012b31522d2a1fdb9d3fff51328c0694e4ee",
+      "source_blob": "6d9d525ea7e8ca1d0df9b6b32f43403b66eb2a1e",
+      "source_mode": "100644",
+      "sha256": "9c1eb1aef04ddd6bc60b9ac6226ac29cf3b505ee9eaf9bf03d584e9dcfe9bc14",
+      "bytes": 25735,
+      "packet": "complete_record_and_recovered_clock",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/FROZEN_INTEGRITY_AUDIT.json",
+      "source_commit": "511e012b31522d2a1fdb9d3fff51328c0694e4ee",
+      "source_blob": "2a3db8125326c0c95b08cda63b03e0ab87c2d3e9",
+      "source_mode": "100644",
+      "sha256": "585cf908e7fb31ca986dcf59aab5565e06f15656023b9a68c5cd783896a60055",
+      "bytes": 38157,
+      "packet": "complete_record_and_recovered_clock",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/FROZEN_REPLAY.json",
+      "source_commit": "511e012b31522d2a1fdb9d3fff51328c0694e4ee",
+      "source_blob": "e22177ba399ef443cdae8fd88381b5c4863d3d20",
+      "source_mode": "100644",
+      "sha256": "df418a158a17ddee9d43c618e5e330fc048274c844410b12938cd777d1bffd1d",
+      "bytes": 1170,
+      "packet": "complete_record_and_recovered_clock",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/FROZEN_REPLAY.log",
+      "source_commit": "511e012b31522d2a1fdb9d3fff51328c0694e4ee",
+      "source_blob": "eb01aa3aa53ceed4d32dbcd07485ffeb5621f85e",
+      "source_mode": "100644",
+      "sha256": "c2e1c0d3db8aecf36674f21e469f47ce6dd8e11d461fdf5ecc45a2ddd8aeb9df",
+      "bytes": 628,
+      "packet": "complete_record_and_recovered_clock",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/FULL128_COHERENT_LIMIT_AND_INFO_PRICE.md",
+      "source_commit": "511e012b31522d2a1fdb9d3fff51328c0694e4ee",
+      "source_blob": "d31408e87c3c39b1517d3b7c989400a7c03e0714",
+      "source_mode": "100644",
+      "sha256": "755fb3b181bfdc989235f54c518372404e72c008a70fbe9071a400da389b2530",
+      "bytes": 16169,
+      "packet": "complete_record_and_recovered_clock",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/FULL128_COHERENT_RESULT.json",
+      "source_commit": "511e012b31522d2a1fdb9d3fff51328c0694e4ee",
+      "source_blob": "7d33f43bf241ac54ddbdd2c1ab9bcb9598b5b0ba",
+      "source_mode": "100644",
+      "sha256": "90e1883afd6227f76fc48bdec9249c6c279e5c6e09e4fd9a466c065cbb771833",
+      "bytes": 14895,
+      "packet": "complete_record_and_recovered_clock",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/INDEPENDENT_ANALYTICAL_REVIEW.md",
+      "source_commit": "511e012b31522d2a1fdb9d3fff51328c0694e4ee",
+      "source_blob": "ffb4dc09aa292500ea991a1c757d05276722448b",
+      "source_mode": "100644",
+      "sha256": "57169a1c0b09e4c3dfe79872114335c55742e7ae6934c92a4c7fbc2fdb62dded",
+      "bytes": 13544,
+      "packet": "complete_record_and_recovered_clock",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/MATCHED_COMPLETE_LIKELIHOOD_SOURCE.md",
+      "source_commit": "511e012b31522d2a1fdb9d3fff51328c0694e4ee",
+      "source_blob": "92414208f47b896d33b34cdb4b65e4e5d2721a8b",
+      "source_mode": "100644",
+      "sha256": "4b08d0786a8a8ac39676e4912e00708548412cdacfaa96cf369b921e485d8c4d",
+      "bytes": 12103,
+      "packet": "complete_record_and_recovered_clock",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/MATCHED_LIKELIHOOD_RESULT.json",
+      "source_commit": "511e012b31522d2a1fdb9d3fff51328c0694e4ee",
+      "source_blob": "3d56459d901af8ccefc3bcbcf322e0fb2ed015f8",
+      "source_mode": "100644",
+      "sha256": "2c139731204d5708a11853e606fd93a18c7ea5d024d2966e851d49ce30dcec66",
+      "bytes": 3487,
+      "packet": "complete_record_and_recovered_clock",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/NATIVE_BINARY_RESULT.json",
+      "source_commit": "511e012b31522d2a1fdb9d3fff51328c0694e4ee",
+      "source_blob": "a0462763e4ab4b908c1f180f067abd23ec937561",
+      "source_mode": "100644",
+      "sha256": "2c141eeddf6bf830df57d10f939efbc3f641e4368c91888ad193a501201c6773",
+      "bytes": 2059,
+      "packet": "complete_record_and_recovered_clock",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/NATIVE_BINARY_TASK_MINIMUM.md",
+      "source_commit": "511e012b31522d2a1fdb9d3fff51328c0694e4ee",
+      "source_blob": "26acfd965fb595b4c98dcf7a9fa5517c76f24dfe",
+      "source_mode": "100644",
+      "sha256": "fe1bd6a907ad13ff454de7e22b323b0065b7eecf75c127f74243df26ea435284",
+      "bytes": 7588,
+      "packet": "complete_record_and_recovered_clock",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/README.md",
+      "source_commit": "511e012b31522d2a1fdb9d3fff51328c0694e4ee",
+      "source_blob": "f5e46b628136cbe92b15b745c288bce1ac6f2a5d",
+      "source_mode": "100644",
+      "sha256": "3bc62334dcd9661527112a8a8a404dea1cce3373ddf026bbc81f48f21741d9bf",
+      "bytes": 2990,
+      "packet": "complete_record_and_recovered_clock",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/RECOVERED_PACKET.json",
+      "source_commit": "511e012b31522d2a1fdb9d3fff51328c0694e4ee",
+      "source_blob": "7c7d5ee0939b910dbe6098df9ebc82c6fa30a6ce",
+      "source_mode": "100644",
+      "sha256": "06bd4041db9ce0273136c3854ac05ca389afeba903aee1a54ab9484e94a77797",
+      "bytes": 12522,
+      "packet": "complete_record_and_recovered_clock",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/RECOVERED_REPLAY.json",
+      "source_commit": "511e012b31522d2a1fdb9d3fff51328c0694e4ee",
+      "source_blob": "ca28752969a28871d6098e476457e61f9bbc6cdb",
+      "source_mode": "100644",
+      "sha256": "6f2c752d2b1d779c4c34a623a04a1397bf8df80fb920d1b20a639822dfac03be",
+      "bytes": 858,
+      "packet": "complete_record_and_recovered_clock",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/RECOVERED_REPLAY.log",
+      "source_commit": "511e012b31522d2a1fdb9d3fff51328c0694e4ee",
+      "source_blob": "9aa0298c1a49785f96a9a4bb81cbd31f3b2e4cb2",
+      "source_mode": "100644",
+      "sha256": "6f4c9e7152d2d14c2840904a3398f16e305d9aefa9119944fba89ca0a015a307",
+      "bytes": 2060,
+      "packet": "complete_record_and_recovered_clock",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/SOURCE_INPUTS.json",
+      "source_commit": "511e012b31522d2a1fdb9d3fff51328c0694e4ee",
+      "source_blob": "29ed82b9515d1904f34075a29bdbfc019084d6f6",
+      "source_mode": "100644",
+      "sha256": "e83d6b96345a79e3f7040fee39a5625efd40f47f646e53cbf4dc9ed120d168e0",
+      "bytes": 4298,
+      "packet": "complete_record_and_recovered_clock",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/TASK_INVARIANCE_AND_TERMINAL_MINIMUM.md",
+      "source_commit": "511e012b31522d2a1fdb9d3fff51328c0694e4ee",
+      "source_blob": "07532a17cc64c687735d4c30b1b9bbeef54e86c3",
+      "source_mode": "100644",
+      "sha256": "59ad221195a386b037a615c8275989d4b3d9782009b14179c2c324a3159e9949",
+      "bytes": 11202,
+      "packet": "complete_record_and_recovered_clock",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/TASK_INVARIANCE_RESULT.json",
+      "source_commit": "511e012b31522d2a1fdb9d3fff51328c0694e4ee",
+      "source_blob": "3009fcff8d48ca079d9a9073c075be363b4aefe0",
+      "source_mode": "100644",
+      "sha256": "7613c8240c47d818041cc2643d2b1511000baea2e6ea37a186ee612bf6e60e6d",
+      "bytes": 228,
+      "packet": "complete_record_and_recovered_clock",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/check_full128_coherent_info_price.py",
+      "source_commit": "511e012b31522d2a1fdb9d3fff51328c0694e4ee",
+      "source_blob": "22c84bd0244e52699ceccd2327567ac613d8955b",
+      "source_mode": "100644",
+      "sha256": "60f70c32d9f67c09eee8cccb160b3ebc2299735a0fd7b471d1bb712af9e8a03c",
+      "bytes": 24542,
+      "packet": "complete_record_and_recovered_clock",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/check_matched_complete_likelihood_source.py",
+      "source_commit": "511e012b31522d2a1fdb9d3fff51328c0694e4ee",
+      "source_blob": "dd1333c6f133dd76c90ee5e2c50fd698e123551f",
+      "source_mode": "100644",
+      "sha256": "4fd9ab1258cd0bef67e3236a8c46f206d944c6737ae6b07d949bbf2bc1129901",
+      "bytes": 9546,
+      "packet": "complete_record_and_recovered_clock",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/check_native_binary_task.py",
+      "source_commit": "511e012b31522d2a1fdb9d3fff51328c0694e4ee",
+      "source_blob": "febb475755f8946158be299b8dbdd18614c4f33b",
+      "source_mode": "100644",
+      "sha256": "ba4a4c069dba2d13a3740c0f1b8d7ee44d5fc9226d4118a8ff1b3dbb55856171",
+      "bytes": 3237,
+      "packet": "complete_record_and_recovered_clock",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/check_task_invariance.py",
+      "source_commit": "511e012b31522d2a1fdb9d3fff51328c0694e4ee",
+      "source_blob": "58444321a7667a3a3f14a61c6902d2c04deda1b4",
+      "source_mode": "100644",
+      "sha256": "da839c7947989b7d2637bbb3d6fceb9b2aef3b7906341502dc7af7a44e580322",
+      "bytes": 5306,
+      "packet": "complete_record_and_recovered_clock",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/inputs/02_REGISTRY/research/A4D_NATIVE_FULL128_RELATIVE_TRANSFER_AND_CONDENSED_DESCENT.md",
+      "source_commit": "511e012b31522d2a1fdb9d3fff51328c0694e4ee",
+      "source_blob": "a88f8b84a5214414bce672bd96a11ac9d205d3fa",
+      "source_mode": "100644",
+      "sha256": "577cbc909f766468fbef8ab38a5986ae761d348b075c2f38b2e1a88b704d4b3e",
+      "bytes": 16547,
+      "packet": "complete_record_and_recovered_clock",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/inputs/02_REGISTRY/research/A4D_P25_NATIVE_COST_FLOOR_PSD_MIXED_PALATINI_VACUUM_NO_GO_2026_10_20.md",
+      "source_commit": "511e012b31522d2a1fdb9d3fff51328c0694e4ee",
+      "source_blob": "030b4d4db2fe2bacd80dffbeedfdf0b268e75d70",
+      "source_mode": "100644",
+      "sha256": "1a2e52a67f6e707aa49f51c85d1af124eeee915f586687e683bec3214bd12131",
+      "bytes": 15606,
+      "packet": "complete_record_and_recovered_clock",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/inputs/02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/MINIMAL_GOLDEN_COMPLETE_SOURCE.md",
+      "source_commit": "511e012b31522d2a1fdb9d3fff51328c0694e4ee",
+      "source_blob": "bce112de77a694809e0a9a7fa769731296148ca2",
+      "source_mode": "100644",
+      "sha256": "f6a5724e087c58b4294020a59532b7117f55247013181bcd4fd30d069a649330",
+      "bytes": 26294,
+      "packet": "complete_record_and_recovered_clock",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/inputs/02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/execution/return_cost_and_stopping.md",
+      "source_commit": "511e012b31522d2a1fdb9d3fff51328c0694e4ee",
+      "source_blob": "25c27847c8bff56f6d0c92af277db1bcea3789ee",
+      "source_mode": "100644",
+      "sha256": "29e30b35170c8ab1d4d324dd0f7aaa6e588cb1a32f023ad529947dc8639b9faa",
+      "bytes": 19743,
+      "packet": "complete_record_and_recovered_clock",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/inputs/02_REGISTRY/research/sources/d0_native_relative_history_first_jet_2026-10-20/RESULT.md",
+      "source_commit": "511e012b31522d2a1fdb9d3fff51328c0694e4ee",
+      "source_blob": "08b1765c44759e6d3d7198a0d43b8f9f8aa80e90",
+      "source_mode": "100644",
+      "sha256": "d1c3cff174b2e4d03481ca6b3d18a1da2d3b65baba1f2dbf886324d8ce7f607d",
+      "bytes": 26087,
+      "packet": "complete_record_and_recovered_clock",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/inputs/02_REGISTRY/research/sources/d0_native_relative_history_first_jet_2026-10-20/check_relative_history_first_jet.py",
+      "source_commit": "511e012b31522d2a1fdb9d3fff51328c0694e4ee",
+      "source_blob": "df173b0a08f4fa4dc4c3eccb9c2f4c2623d7aa53",
+      "source_mode": "100644",
+      "sha256": "0c69dc21fd66e06eefacf9ab047f186ff1e4e93818aff38aca4187968a70b468",
+      "bytes": 24593,
+      "packet": "complete_record_and_recovered_clock",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/inputs/02_REGISTRY/research/sources/d0_native_relative_transfer_2026-10-17/check_native_relative_transfer.py",
+      "source_commit": "511e012b31522d2a1fdb9d3fff51328c0694e4ee",
+      "source_blob": "86e2e630c87c2e754290cef7b9f9a2b6de482d75",
+      "source_mode": "100644",
+      "sha256": "dfa8fffb08d421f2a2a0fa91a3044492ab94bfd6bd7d1e86b110b52c2e0ff065",
+      "bytes": 5315,
+      "packet": "complete_record_and_recovered_clock",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/inputs/02_REGISTRY/research/sources/d0_native_triz_reference_2026-10-20/TRIZ_MATCHED_LOOP_VOID_SOURCE.md",
+      "source_commit": "511e012b31522d2a1fdb9d3fff51328c0694e4ee",
+      "source_blob": "5207da4aa6a08c993e86f79944c5ced627332c71",
+      "source_mode": "100644",
+      "sha256": "360e05c5f4825ea197d19e33669b2df1eb7017e11999d5f1f460eb88e982b477",
+      "bytes": 11436,
+      "packet": "complete_record_and_recovered_clock",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/inputs/02_REGISTRY/research/sources/d0_native_triz_reference_2026-10-20/check_matched_feedback_poisson.py",
+      "source_commit": "511e012b31522d2a1fdb9d3fff51328c0694e4ee",
+      "source_blob": "1b004df209840e49b25b989d821cb37171a0d0c5",
+      "source_mode": "100644",
+      "sha256": "403ed4a5b68dbe4be56fd72a16a5c45d8ccdc5ca13eb5e2249d2722f68957b66",
+      "bytes": 3002,
+      "packet": "complete_record_and_recovered_clock",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/inputs/02_REGISTRY/research/sources/d0_same_history_price_composition_2026-10-20/paid_port_history.md",
+      "source_commit": "511e012b31522d2a1fdb9d3fff51328c0694e4ee",
+      "source_blob": "c93f54125d161edc6a3775922c477a3d73db1681",
+      "source_mode": "100644",
+      "sha256": "ef69c2052237fbe8e916acf16691f9b14b4c1c2465a7837e838db2baeb95449d",
+      "bytes": 11127,
+      "packet": "complete_record_and_recovered_clock",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/MINIMAL_GOLDEN_COMPLETE_SOURCE.md",
+      "source_commit": "1cb164de3753f9dbaf214ea140eb9ea21a7b9d90",
+      "source_blob": "bce112de77a694809e0a9a7fa769731296148ca2",
+      "source_mode": "100644",
+      "sha256": "f6a5724e087c58b4294020a59532b7117f55247013181bcd4fd30d069a649330",
+      "bytes": 26294,
+      "packet": "unchanged_stopped_upstream_dependency",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/INPUT_SNAPSHOTS.json",
+      "source_commit": "511e012b31522d2a1fdb9d3fff51328c0694e4ee",
+      "source_blob": "12c744b864937398047e14819fabfd88fe4d3af5",
+      "source_mode": "100644",
+      "sha256": "c3bd0f9a64d7bc2a0dfc912de6411f515b680574fa132add5a4056356ecc4b46",
+      "bytes": 4524,
+      "packet": "complete_record_and_recovered_clock",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/README.md",
+      "source_commit": "511e012b31522d2a1fdb9d3fff51328c0694e4ee",
+      "source_blob": "e7acec68df138421c0768983fd3a544e1418186e",
+      "source_mode": "100644",
+      "sha256": "70b05ec1b04c8b4f71d46dcc1b9c99dd76abaf006c3942384796ce0165ee298b",
+      "bytes": 4055,
+      "packet": "complete_record_and_recovered_clock",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/VALIDATION.json",
+      "source_commit": "511e012b31522d2a1fdb9d3fff51328c0694e4ee",
+      "source_blob": "88064c593fd8a0ed8768bb62a18c1bf1c27b3730",
+      "source_mode": "100644",
+      "sha256": "755622e853fc480259c07f5fb92537e23ce925db21b301aa1130a0cb4ab4cec3",
+      "bytes": 1038,
+      "packet": "complete_record_and_recovered_clock",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/VALIDATION.log",
+      "source_commit": "511e012b31522d2a1fdb9d3fff51328c0694e4ee",
+      "source_blob": "9aa0298c1a49785f96a9a4bb81cbd31f3b2e4cb2",
+      "source_mode": "100644",
+      "sha256": "6f4c9e7152d2d14c2840904a3398f16e305d9aefa9119944fba89ca0a015a307",
+      "bytes": 2060,
+      "packet": "complete_record_and_recovered_clock",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/book_price/COHERENT_RETURN_PRESSURE_AND_PAID_MOMENTS.md",
+      "source_commit": "511e012b31522d2a1fdb9d3fff51328c0694e4ee",
+      "source_blob": "d3baf6f3e0dd81eb50f8d00b087d0d119d1c51ed",
+      "source_mode": "100644",
+      "sha256": "8001997f869a2ed86e78b6222e881d9ed67014ac0dc18573808df12b3592b7de",
+      "bytes": 23025,
+      "packet": "complete_record_and_recovered_clock",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/book_price/GEOMETRY_REVIEW.md",
+      "source_commit": "511e012b31522d2a1fdb9d3fff51328c0694e4ee",
+      "source_blob": "df2f3c2fefda8c1154022cb466e3657a3b75ae77",
+      "source_mode": "100644",
+      "sha256": "de105b644d2e5a7458587eddac49393c486d5f14b0c584d534141dd1db75d13e",
+      "bytes": 5065,
+      "packet": "complete_record_and_recovered_clock",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/book_price/INPUTS.json",
+      "source_commit": "511e012b31522d2a1fdb9d3fff51328c0694e4ee",
+      "source_blob": "9e9b11376ab42d0f7b764c0dc5339ca778e36458",
+      "source_mode": "100644",
+      "sha256": "26674fa2e66b3534fe0361c2acdae0994d6d03d2f732210fb92719d6ef7782ae",
+      "bytes": 862,
+      "packet": "complete_record_and_recovered_clock",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/book_price/RESULT.json",
+      "source_commit": "511e012b31522d2a1fdb9d3fff51328c0694e4ee",
+      "source_blob": "448787420665486bf37c63f253422ef0856d5752",
+      "source_mode": "100644",
+      "sha256": "163bb6d85e7b7deb626cf56486e0117da9e126d4fcdbf8dbf021c449c8b1f138",
+      "bytes": 7742,
+      "packet": "complete_record_and_recovered_clock",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/book_price/STOPPED_CLOCK_REVIEW.md",
+      "source_commit": "511e012b31522d2a1fdb9d3fff51328c0694e4ee",
+      "source_blob": "8fca0da2f5d024c4173cabdfc098df397afa5357",
+      "source_mode": "100644",
+      "sha256": "5f8f459577450c4959fd16b1a460805a394827f80244585dbf38578ca5d56f6a",
+      "bytes": 5292,
+      "packet": "complete_record_and_recovered_clock",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/book_price/check_coherent_return_pressure.py",
+      "source_commit": "511e012b31522d2a1fdb9d3fff51328c0694e4ee",
+      "source_blob": "71eae0f879288de92c90957ecca195b08f190f29",
+      "source_mode": "100644",
+      "sha256": "e3388349e9c6cbba37a05ac3a05b607ad34d2135aaca958e1265c3cca16e8db1",
+      "bytes": 13135,
+      "packet": "complete_record_and_recovered_clock",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/check_finite_closed_record.py",
+      "source_commit": "511e012b31522d2a1fdb9d3fff51328c0694e4ee",
+      "source_blob": "8d0c526a29468e5266d5b2af93c21af3b72fb1f1",
+      "source_mode": "100644",
+      "sha256": "aa6d603038129139e0d944610d722123b776f01e52d72b3c8178636df4bd7b19",
+      "bytes": 7188,
+      "packet": "complete_record_and_recovered_clock",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/finite_closed_record.md",
+      "source_commit": "511e012b31522d2a1fdb9d3fff51328c0694e4ee",
+      "source_blob": "0f3ff8b1b802a3548f68b248a8f58cdcfbab70dc",
+      "source_mode": "100644",
+      "sha256": "44e3f7844dc40c99c5218c7223fabc485e63fc251517c53f1d424dab222bfe28",
+      "bytes": 12085,
+      "packet": "complete_record_and_recovered_clock",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/geometry/BOOK_PRICE_REVIEW.md",
+      "source_commit": "511e012b31522d2a1fdb9d3fff51328c0694e4ee",
+      "source_blob": "6b5c3db42d88ded55be780ad291128e0eb106c71",
+      "source_mode": "100644",
+      "sha256": "862099aac7349fa31e30546141537420fa817e809b3c636f23b13a92555442a7",
+      "bytes": 4327,
+      "packet": "complete_record_and_recovered_clock",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/geometry/CENTRAL_GEOMETRY_REVIEW.md",
+      "source_commit": "511e012b31522d2a1fdb9d3fff51328c0694e4ee",
+      "source_blob": "b904266c13efb7a358aa112a5fa2668ac53664b2",
+      "source_mode": "100644",
+      "sha256": "841683dbcbed32f75ed36a415f91b2c8c511f8bece57da328c2c0605d4d030ae",
+      "bytes": 4383,
+      "packet": "complete_record_and_recovered_clock",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/geometry/SOURCE_MOMENT_RESULT.json",
+      "source_commit": "511e012b31522d2a1fdb9d3fff51328c0694e4ee",
+      "source_blob": "8a3d5395d10f5b2dcb513457bbbd8dcb185e0b35",
+      "source_mode": "100644",
+      "sha256": "283d3f92890644469482f1f4de0c9885d380e9dff2ef8825fea40796400f7c08",
+      "bytes": 12871,
+      "packet": "complete_record_and_recovered_clock",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/geometry/check_source_moment_collapse.py",
+      "source_commit": "511e012b31522d2a1fdb9d3fff51328c0694e4ee",
+      "source_blob": "15b0bb6f0a0c6f820d86e61c97f4ceb5a597d28e",
+      "source_mode": "100644",
+      "sha256": "fd4edf0649492910eecf649fb1c133dafd2eb1b3d4b8df801a6e62a0f30691b8",
+      "bytes": 9793,
+      "packet": "complete_record_and_recovered_clock",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/geometry/source_moment_collapse.md",
+      "source_commit": "511e012b31522d2a1fdb9d3fff51328c0694e4ee",
+      "source_blob": "ef2acf0897b47a5a03c1934ba9ab2943934133fd",
+      "source_mode": "100644",
+      "sha256": "9bfb61897324d438bff3458209f3fda321b2876af41b6178b96fdf04490773c4",
+      "bytes": 16548,
+      "packet": "complete_record_and_recovered_clock",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/inputs/01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md",
+      "source_commit": "511e012b31522d2a1fdb9d3fff51328c0694e4ee",
+      "source_blob": "ecdd31abb52c94e9f2a157a80c7c49a6f5ac31aa",
+      "source_mode": "100644",
+      "sha256": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d",
+      "bytes": 86193,
+      "packet": "complete_record_and_recovered_clock",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/inputs/02_REGISTRY/research/A4D_COMPLETE_EXIT_ACTION_AND_SECOND_SOURCE.md",
+      "source_commit": "511e012b31522d2a1fdb9d3fff51328c0694e4ee",
+      "source_blob": "ee8514b36b4d33f221a1b3c9c71d9cd5d6a066b9",
+      "source_mode": "100644",
+      "sha256": "482cf99f280620e7aa6120432cd7b9764671c5ef3fb1c0c3b50d7228d66e08b3",
+      "bytes": 15872,
+      "packet": "complete_record_and_recovered_clock",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/inputs/02_REGISTRY/research/A4D_COMPLETE_RECORD_CHANNEL_AND_NATIVE_COST_SOURCE.md",
+      "source_commit": "511e012b31522d2a1fdb9d3fff51328c0694e4ee",
+      "source_blob": "df8611c7fa37fa71e883831b3f01f434532d99ce",
+      "source_mode": "100644",
+      "sha256": "2128009802edff3e111a26961f050320fd878d7412ed93bfad5d5c9e4219db79",
+      "bytes": 42834,
+      "packet": "complete_record_and_recovered_clock",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/inputs/02_REGISTRY/research/A4D_EXACT_GR_COMMON_CARRIER_HJR_SCALE_SOURCE_GAP_2026_10_20.md",
+      "source_commit": "511e012b31522d2a1fdb9d3fff51328c0694e4ee",
+      "source_blob": "8bd287e415c071c8e69ac0606ea76da85365cac2",
+      "source_mode": "100644",
+      "sha256": "c5b2f1021e8da573221f4327bacae67934470a368966456bf328b19fc51555fb",
+      "bytes": 13796,
+      "packet": "complete_record_and_recovered_clock",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/inputs/02_REGISTRY/research/A4D_NATIVE_FULL128_JONES_OBSERVER_SO3_QUOTIENT_2026_10_20.md",
+      "source_commit": "511e012b31522d2a1fdb9d3fff51328c0694e4ee",
+      "source_blob": "3427141c4203c0282e6afe182f92f8110e881343",
+      "source_mode": "100644",
+      "sha256": "610a6688f8f1ea91c93462d4cedf716eec321dd5032ba35a0d2ffb7262ffca61",
+      "bytes": 5673,
+      "packet": "complete_record_and_recovered_clock",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/inputs/02_REGISTRY/research/A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md",
+      "source_commit": "511e012b31522d2a1fdb9d3fff51328c0694e4ee",
+      "source_blob": "2c9e30fc7ae5518aa958d0ee29c08ae071150c69",
+      "source_mode": "100644",
+      "sha256": "a0a8a0b7389c7a6120ebbe402d111bf55cd2a00730403a00ffceca73548e7915",
+      "bytes": 28004,
+      "packet": "complete_record_and_recovered_clock",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/inputs/02_REGISTRY/research/A4D_NATIVE_PRICE_EXACT_VARIATIONAL_UNFOLDING.md",
+      "source_commit": "511e012b31522d2a1fdb9d3fff51328c0694e4ee",
+      "source_blob": "9ebd9b691d25ef6144e6aa4fe1851f7b026cc24e",
+      "source_mode": "100644",
+      "sha256": "d92aabf2d46d9ac7d8d9aa3bf5ed66a58f25bb83ca4460d66d25648c62f7e10b",
+      "bytes": 27486,
+      "packet": "complete_record_and_recovered_clock",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/inputs/02_REGISTRY/research/A4D_PROSPECTIVE_BOOK_FINITE_FUTURE_LAW_Q8_VERIFICATION_2026_10_20.md",
+      "source_commit": "511e012b31522d2a1fdb9d3fff51328c0694e4ee",
+      "source_blob": "de8341a8b33d53bd4b26e044a1560c47c51e2745",
+      "source_mode": "100644",
+      "sha256": "bd3f1ab51599b0efe17af03e40c59a606200cd1912f801e4bd57e0eb77a6b014",
+      "bytes": 26033,
+      "packet": "complete_record_and_recovered_clock",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/inputs/02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/execution/return_cost_and_stopping.md",
+      "source_commit": "511e012b31522d2a1fdb9d3fff51328c0694e4ee",
+      "source_blob": "25c27847c8bff56f6d0c92af277db1bcea3789ee",
+      "source_mode": "100644",
+      "sha256": "29e30b35170c8ab1d4d324dd0f7aaa6e588cb1a32f023ad529947dc8639b9faa",
+      "bytes": 19743,
+      "packet": "complete_record_and_recovered_clock",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/inputs/02_REGISTRY/research/sources/d0_same_history_price_composition_2026-10-20/FULL128_HEAT_PRICE_RECYCLING_BRIDGE.md",
+      "source_commit": "511e012b31522d2a1fdb9d3fff51328c0694e4ee",
+      "source_blob": "b943c946add3d34bce425f6d0e1b1015054fdc7d",
+      "source_mode": "100644",
+      "sha256": "a8cdbd52e52275cb7e41aa84b8bd69e9fb36170f75d8481c6568fb3ea1a2bce0",
+      "bytes": 21471,
+      "packet": "complete_record_and_recovered_clock",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/inputs/02_REGISTRY/research/sources/d0_same_history_price_composition_2026-10-20/paid_port_history.md",
+      "source_commit": "511e012b31522d2a1fdb9d3fff51328c0694e4ee",
+      "source_blob": "c93f54125d161edc6a3775922c477a3d73db1681",
+      "source_mode": "100644",
+      "sha256": "ef69c2052237fbe8e916acf16691f9b14b4c1c2465a7837e838db2baeb95449d",
+      "bytes": 11127,
+      "packet": "complete_record_and_recovered_clock",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/prospective/CENTRAL_COMPOSITION_REVIEW.md",
+      "source_commit": "511e012b31522d2a1fdb9d3fff51328c0694e4ee",
+      "source_blob": "05777b0ca1f688401b36e6e74e27a520b53ad31c",
+      "source_mode": "100644",
+      "sha256": "73cef0764bf733a340df15835d6add01df6740545acae5d7ec4b3d11778c32dd",
+      "bytes": 4571,
+      "packet": "complete_record_and_recovered_clock",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/prospective/FINITE_CUT_REVIEW.md",
+      "source_commit": "511e012b31522d2a1fdb9d3fff51328c0694e4ee",
+      "source_blob": "7cea7c826501fe03c5c3b664057b7d2f39e28153",
+      "source_mode": "100644",
+      "sha256": "e70dae15cbc0ead0565b16464818bc21fabee8583a705d98cf889e39e5142e85",
+      "bytes": 4521,
+      "packet": "complete_record_and_recovered_clock",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/prospective/INPUTS.json",
+      "source_commit": "511e012b31522d2a1fdb9d3fff51328c0694e4ee",
+      "source_blob": "45f4ad487c205e04b2907d1b0445e623774e6884",
+      "source_mode": "100644",
+      "sha256": "8de593a2da6afe859e86f5b42a212b53705dcf5ce3def77ae15c22c02c4ea733",
+      "bytes": 1162,
+      "packet": "complete_record_and_recovered_clock",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/prospective/RESULT.json",
+      "source_commit": "511e012b31522d2a1fdb9d3fff51328c0694e4ee",
+      "source_blob": "aea351bbb5d1ce6caedc9a0cc4c7772fa85d509b",
+      "source_mode": "100644",
+      "sha256": "b226373c813903af983ac1f438c4b7d6485d81dda32f13f2225284d20d0ee35f",
+      "bytes": 6548,
+      "packet": "complete_record_and_recovered_clock",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/prospective/STOPPED_CLOCK_SOURCE.md",
+      "source_commit": "511e012b31522d2a1fdb9d3fff51328c0694e4ee",
+      "source_blob": "21031109172282833a938a79cef2ff7dec889266",
+      "source_mode": "100644",
+      "sha256": "75845813d20ecf7b585fb7b7a7bef8b8170a711e94a56bb0df0cc3546622a036",
+      "bytes": 15686,
+      "packet": "complete_record_and_recovered_clock",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/prospective/check_stopped_clock_source.py",
+      "source_commit": "511e012b31522d2a1fdb9d3fff51328c0694e4ee",
+      "source_blob": "9c6bda9ea2e86dc8833eda44afc7de3c8233235a",
+      "source_mode": "100644",
+      "sha256": "bdab1158efc863a8d631c50ae7f30f7c3780df744e74441a88ed298bc059f0c9",
+      "bytes": 17654,
+      "packet": "complete_record_and_recovered_clock",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_stopped_all_cost_source_2026-10-20/CORRECTED_REPRODUCTION.log",
+      "source_commit": "45372df30740f4e75c8b58013652a7665bf833cd",
+      "source_blob": "7f7a9a6953ade22c46f3a37e62fa4b9f9ac5f843",
+      "source_mode": "100644",
+      "sha256": "ae3868f90b3ace0dd3593de00e8b3831a65ca3330d1dcc0543afb6f5c9017d8d",
+      "bytes": 682,
+      "packet": "stopped_all_cost_source",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_stopped_all_cost_source_2026-10-20/FINAL_STOPPED_OVERVIEW_ACCEPTANCE.md",
+      "source_commit": "45372df30740f4e75c8b58013652a7665bf833cd",
+      "source_blob": "5a99e2de1f2a842a34869eac79569c1eb1b68b15",
+      "source_mode": "100644",
+      "sha256": "298042606edc05c91cb0f25fe86f693b8dc7856632a88db33ebeccdc376333ec",
+      "bytes": 2858,
+      "packet": "stopped_all_cost_source",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_stopped_all_cost_source_2026-10-20/FROZEN_REPLAY.json",
+      "source_commit": "45372df30740f4e75c8b58013652a7665bf833cd",
+      "source_blob": "0f281b866019025f1d69234a26821ce14ac13440",
+      "source_mode": "100644",
+      "sha256": "ea056c4b44650de7b97d8205c6d89b6c168e5182dbf3901c784c71923007bd21",
+      "bytes": 613,
+      "packet": "stopped_all_cost_source",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_stopped_all_cost_source_2026-10-20/FROZEN_REPLAY.log",
+      "source_commit": "45372df30740f4e75c8b58013652a7665bf833cd",
+      "source_blob": "579373794e09435d3cb0fa8352493825a2d242e1",
+      "source_mode": "100644",
+      "sha256": "a817b0330633f0c66c7fb4fbc5b5208e8fc9ea5b2968302302c12b601128fa48",
+      "bytes": 439,
+      "packet": "stopped_all_cost_source",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_stopped_all_cost_source_2026-10-20/PROVENANCE.md",
+      "source_commit": "45372df30740f4e75c8b58013652a7665bf833cd",
+      "source_blob": "f97dd327ade16ab89082717002ea4a11b3153c69",
+      "source_mode": "100644",
+      "sha256": "d06f00e709af5a420252f32d3abd72684f0f9bfce90023867dccd2d992781d62",
+      "bytes": 6516,
+      "packet": "stopped_all_cost_source",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_stopped_all_cost_source_2026-10-20/README.md",
+      "source_commit": "45372df30740f4e75c8b58013652a7665bf833cd",
+      "source_blob": "7d71dbbe02180be925922cc830980eb3b2b0b057",
+      "source_mode": "100644",
+      "sha256": "59f4d91ed1643bf3aedbcfb0bd5af854f2b82eddfa6982c4bb037a6176ac5fe9",
+      "bytes": 4020,
+      "packet": "stopped_all_cost_source",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_stopped_all_cost_source_2026-10-20/SHA256SUMS.json",
+      "source_commit": "45372df30740f4e75c8b58013652a7665bf833cd",
+      "source_blob": "4d91895637f0c741a445513bd8e01bf28368c34c",
+      "source_mode": "100644",
+      "sha256": "d480afa570f8f7a525228b5c9772083aad98a341aee82095c6df2e3ee16285c3",
+      "bytes": 1328,
+      "packet": "stopped_all_cost_source",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_stopped_all_cost_source_2026-10-20/SOURCE_INPUTS.json",
+      "source_commit": "45372df30740f4e75c8b58013652a7665bf833cd",
+      "source_blob": "29f49438a3366a9dd0b375cbfc36e440f97a8d62",
+      "source_mode": "100644",
+      "sha256": "e2cb97fa3380a3c0dfa633ca393f3c4c1a8a970b4dcbdd24ae02d45479253564",
+      "bytes": 2637,
+      "packet": "stopped_all_cost_source",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_stopped_all_cost_source_2026-10-20/STOPPED_1CB_RETAINED_RECORD_COMPARISON.md",
+      "source_commit": "45372df30740f4e75c8b58013652a7665bf833cd",
+      "source_blob": "4167e1ed8050e550b042f861638f6477a5ac465a",
+      "source_mode": "100644",
+      "sha256": "a53e06653c8ef656bba32fc7f5e262acff5d5143c311a0d48003dc6b583e1463",
+      "bytes": 5491,
+      "packet": "stopped_all_cost_source",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_stopped_all_cost_source_2026-10-20/STOPPED_ALL_COST_RESULT.json",
+      "source_commit": "45372df30740f4e75c8b58013652a7665bf833cd",
+      "source_blob": "3eada2fb7d8afb2769c0af25e67f4adc36acc487",
+      "source_mode": "100644",
+      "sha256": "b972503e95f0329700e3cc3544e6246cc8c896c5a9ebc3aef41c02ff06b71c6d",
+      "bytes": 3464,
+      "packet": "stopped_all_cost_source",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_stopped_all_cost_source_2026-10-20/STOPPED_ALL_COST_SOURCE.md",
+      "source_commit": "45372df30740f4e75c8b58013652a7665bf833cd",
+      "source_blob": "6af391cd0d98f09acbbc4b75fbfd0c24f4fb7733",
+      "source_mode": "100644",
+      "sha256": "ba7513a46fd7796ce6f5ae6d1ad389d66e51bbcaff3ca8866c0087dc41539eb3",
+      "bytes": 15392,
+      "packet": "stopped_all_cost_source",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_stopped_all_cost_source_2026-10-20/STOPPED_ALL_PREFIX_REVIEW_ADDENDUM.md",
+      "source_commit": "45372df30740f4e75c8b58013652a7665bf833cd",
+      "source_blob": "dbcecab638ea010a603be68954100f295104d515",
+      "source_mode": "100644",
+      "sha256": "d1ed274cf2696fd65094b4ac398d93b8ba4f8af7f8b7cb4844695d9b7d341979",
+      "bytes": 5692,
+      "packet": "stopped_all_cost_source",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_stopped_all_cost_source_2026-10-20/STOPPED_ALL_PREFIX_SECOND_REVIEW.md",
+      "source_commit": "45372df30740f4e75c8b58013652a7665bf833cd",
+      "source_blob": "653275f007f45dadfd913cfd81b0c18cb9af2d05",
+      "source_mode": "100644",
+      "sha256": "c9734b128e631226e37e1208adaa930ae8c2d96d28c0b35285c21b32f74c5ea0",
+      "bytes": 6711,
+      "packet": "stopped_all_cost_source",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_stopped_all_cost_source_2026-10-20/STOPPED_GENERAL_GATE_PRICE_REVIEW_ADDENDUM.md",
+      "source_commit": "45372df30740f4e75c8b58013652a7665bf833cd",
+      "source_blob": "40e6b764d917a0a5514ac1beb14c82dbc26cda67",
+      "source_mode": "100644",
+      "sha256": "ce9b85e07d45f5a9c683c0d219c9cc96106e9b5863bb6bbe066c21661128537d",
+      "bytes": 4172,
+      "packet": "stopped_all_cost_source",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_stopped_all_cost_source_2026-10-20/UPSTREAM_CURRENT_REPLAY.json",
+      "source_commit": "45372df30740f4e75c8b58013652a7665bf833cd",
+      "source_blob": "f4f4a4881ec8c3a5a670b482e257dd760121dad3",
+      "source_mode": "100644",
+      "sha256": "4da4e9b9efceb6ce7028dc1333db0e10ab0ea42af9239e51e156651c7956ad22",
+      "bytes": 842,
+      "packet": "stopped_all_cost_source",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_stopped_all_cost_source_2026-10-20/UPSTREAM_CURRENT_REPLAY.log",
+      "source_commit": "45372df30740f4e75c8b58013652a7665bf833cd",
+      "source_blob": "4b5fba4b0923e75d95cb8a476b910cee45a8f88c",
+      "source_mode": "100644",
+      "sha256": "bf0ae04a772374a8683e261d3daaa1749da6d2541940351973926963dda890b1",
+      "bytes": 759,
+      "packet": "stopped_all_cost_source",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_stopped_all_cost_source_2026-10-20/UPSTREAM_REPRODUCTION.json",
+      "source_commit": "45372df30740f4e75c8b58013652a7665bf833cd",
+      "source_blob": "850509a1e55cc672602c6f47b99c32951e331074",
+      "source_mode": "100644",
+      "sha256": "4eb5320f7ce8fc4e57010ad9933212d337135ffad408c63b47bdd1292a754e90",
+      "bytes": 1201,
+      "packet": "stopped_all_cost_source",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_stopped_all_cost_source_2026-10-20/UPSTREAM_REPRODUCTION.log",
+      "source_commit": "45372df30740f4e75c8b58013652a7665bf833cd",
+      "source_blob": "9ef5b7bcfd18121c71775704783c64daffdfe6ec",
+      "source_mode": "100644",
+      "sha256": "1e58a8f76618a2d733facbeaa23135fc48539450b6157fbcaa48a3af1d2a596c",
+      "bytes": 786,
+      "packet": "stopped_all_cost_source",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_stopped_all_cost_source_2026-10-20/UPSTREAM_TARGET_CORRECTION.patch",
+      "source_commit": "45372df30740f4e75c8b58013652a7665bf833cd",
+      "source_blob": "e33c285ead3351f250b7eef647b5287557e2266f",
+      "source_mode": "100644",
+      "sha256": "c08c7806059a61e3cab0372d236882317c7ffe838d9eaf3eaaaf9f9b83257026",
+      "bytes": 638,
+      "packet": "stopped_all_cost_source",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_stopped_all_cost_source_2026-10-20/VALIDATION.json",
+      "source_commit": "45372df30740f4e75c8b58013652a7665bf833cd",
+      "source_blob": "18673c927e1fcdea7d3d9f52b0f8fa1d61df9fb0",
+      "source_mode": "100644",
+      "sha256": "4e57ada85f482ae6203fa676bd717faecc2aeffa7f31fbf08a37d985ce02b822",
+      "bytes": 823,
+      "packet": "stopped_all_cost_source",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_stopped_all_cost_source_2026-10-20/check_stopped_all_cost_source.py",
+      "source_commit": "45372df30740f4e75c8b58013652a7665bf833cd",
+      "source_blob": "75ac2746c04412d4e55ba30b23bffec695e29f27",
+      "source_mode": "100644",
+      "sha256": "281d67f5668c6ee01d5a6c0e647d6a4806154fa7a20676be871053cca9309dc9",
+      "bytes": 12444,
+      "packet": "stopped_all_cost_source",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_stopped_all_cost_source_2026-10-20/corrected_check_stopped_source_minimum.py",
+      "source_commit": "45372df30740f4e75c8b58013652a7665bf833cd",
+      "source_blob": "135c9f0f33772995bccdaf8c9140605c3db0da20",
+      "source_mode": "100644",
+      "sha256": "e6f20aa5c9850635165cdaff08f7c4799cdd441aced84be2d64739ac771f901f",
+      "bytes": 3894,
+      "packet": "stopped_all_cost_source",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_stopped_all_cost_source_2026-10-20/upstream_check_stopped_source_minimum.py",
+      "source_commit": "45372df30740f4e75c8b58013652a7665bf833cd",
+      "source_blob": "51dece5e5f6cf5fa2c0b66d455fe5cdbd7b4c093",
+      "source_mode": "100644",
+      "sha256": "e022977c672f9c64c9c3ee27d652b009508a2b584b46232ec88c270ff61bbe70",
+      "bytes": 3894,
+      "packet": "stopped_all_cost_source",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_stopped_all_cost_source_2026-10-20/upstream_reviewed_stopped_proof.md",
+      "source_commit": "45372df30740f4e75c8b58013652a7665bf833cd",
+      "source_blob": "b3acbdc5bb9e9dc4e4d27504d97fafbad5279642",
+      "source_mode": "100644",
+      "sha256": "ea2016810eb5b7bbc3e41941faf66900d7c0c0b4d97c064f098275102aafc34e",
+      "bytes": 24199,
+      "packet": "stopped_all_cost_source",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_stopped_all_cost_source_2026-10-20/upstream_stopped_proof.md",
+      "source_commit": "45372df30740f4e75c8b58013652a7665bf833cd",
+      "source_blob": "a0caf318769e2388857a5041395034b788da159d",
+      "source_mode": "100644",
+      "sha256": "1e2815efc4daab717a7b84069607e287330360093d5a6eaedcfb55c080f9681a",
+      "bytes": 19949,
+      "packet": "stopped_all_cost_source",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_prospective_stopped_golden_2026-10-20/REVIEW.md",
+      "source_commit": "1cb164de3753f9dbaf214ea140eb9ea21a7b9d90",
+      "source_blob": "46ab0cace8d61d7cdbbb8f3cb6e1c203ea1d1db7",
+      "source_mode": "100644",
+      "sha256": "c199ff1607f7047180b51810543902927adef4ada4bc96eda496641b5546fa25",
+      "bytes": 4893,
+      "packet": "unchanged_stopped_upstream_dependency",
+      "byte_identical": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_prospective_stopped_golden_2026-10-20/check_stopped_source_minimum.py",
+      "source_commit": "1cb164de3753f9dbaf214ea140eb9ea21a7b9d90",
+      "source_blob": "cbf0139ff143f33eaa378f34d5021c27640a96e9",
+      "source_mode": "100644",
+      "sha256": "a8997f58d3af738a2cf70f4a1d20dd6c9c509274c8e9b2393157a50038e2729d",
+      "bytes": 6982,
+      "packet": "unchanged_stopped_upstream_dependency",
+      "byte_identical": true
+    }
+  ],
+  "routing": [
+    {
+      "path": "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md",
+      "first_packet_inserted_lines": 12,
+      "extension_inserted_lines": 12,
+      "total_inserted_lines": 24,
+      "deleted_lines": 0,
+      "first_block_sha256": "9abaa1b0676b11ee41dd949d61e9c1dacfac5f69677c6bf916cddc324682b7f8",
+      "extension_block_sha256": "994349c3f26f95339094c5c0f26851a1c07a6cdd1203ecfae0f76c3cb2e22ce8",
+      "main_before_sha256": "2dca78aa0daf426656f245f680eaa5de156d87f75d9924e1e5066c19409ff806",
+      "main_after_sha256": "65e801538bce9f4ed9cc3c432dea26aa5649ad2b131e01fb976422f7d03ce84b",
+      "whole_source_document_copied": false,
+      "extension_block_exactly_from_published_source_diff": true
+    },
+    {
+      "path": "02_REGISTRY/research/MEMO_A4D_JOINT_RESPONSE_DECOUPLING_MICROSTRUCTURE.md",
+      "first_packet_inserted_lines": 10,
+      "extension_inserted_lines": 10,
+      "total_inserted_lines": 20,
+      "deleted_lines": 0,
+      "first_block_sha256": "81efaba7bc70a299a5d49f269610f8527aae595e69e1b4787d457167ca7eab70",
+      "extension_block_sha256": "0a1e96737fcd063b02018e3614015983d200140f8170c52ab9cac8dc02587b7f",
+      "main_before_sha256": "04206fd5098b5985e2ecc93c28fccce6234af53e18882c2b9f4f98b75461a4d9",
+      "main_after_sha256": "dc1f754fce6ab193f379577434eccc0c0b33d518a0aff380eb29885a91e8a46a",
+      "whole_source_document_copied": false,
+      "extension_block_exactly_from_published_source_diff": true
+    },
+    {
+      "path": "02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md",
+      "first_packet_inserted_lines": 24,
+      "extension_inserted_lines": 19,
+      "total_inserted_lines": 43,
+      "deleted_lines": 0,
+      "first_block_sha256": "97dee10ae62d80e00fdec8355e0d568664a5ae7aab4cc8ebf62e355c2fab7331",
+      "extension_block_sha256": "51f8ce63f21416dad969cdae897e574bd4a222d8197523962ec2052447c0b933",
+      "main_before_sha256": "5ec69659d7304bad64d981f888f05789673cc476df69f373145988b78d392ad5",
+      "main_after_sha256": "020154b43390739a2518b7385af93b4ad16449e75ed0d01f362dfa086103504f",
+      "whole_source_document_copied": false,
+      "extension_block_exactly_from_published_source_diff": true
+    },
+    {
+      "path": "README.md",
+      "first_packet_inserted_lines": 9,
+      "extension_inserted_lines": 8,
+      "total_inserted_lines": 17,
+      "deleted_lines": 0,
+      "first_block_sha256": "85431ac9b614555edbc1cfa857e12746eceed31b868e062e17e384f4c538fda9",
+      "extension_block_sha256": "193f907cf764457cc2488dfd62fe04df7dbe5f72360cf331299ade64c6c0cf29",
+      "main_before_sha256": "f7836bc0f87e0bc977a79892ddcbdf596f904a54bcec9c07f182519332c79bf3",
+      "main_after_sha256": "7482f52909e4b39d14ad6f18b3849d5714b5609290127dd7fab5f71f0ccef44b",
+      "whole_source_document_copied": false,
+      "extension_block_exactly_from_published_source_diff": true
+    }
+  ],
+  "routing_inserted_lines": 104,
+  "routing_deleted_lines": 0,
+  "extension_wrapper_pins_verified": 28,
+  "extension_producer_and_independent_review_pins_verified": true,
+  "extension_wrapper_has_optimization_active_checks": true,
+  "extension_active_checkers_have_no_python_asserts": true,
+  "extension_frozen_replay": {
+    "command": [
+      "python3",
+      "-O",
+      "-B",
+      "-W",
+      "error",
+      "02_REGISTRY/research/certificates/a4d_native_stopped_all_cost_source_check.py"
+    ],
+    "exit_code": 0,
+    "immutable_expected_receipts": true,
+    "schema": 1,
+    "scientific_scope": "New 275-control all-cost certificate plus corrected 1cb complete finite-cap/source replay; no historical geometry or full128 rerun.",
+    "status": "PASS",
+    "stderr_empty": true,
+    "stdout_sha256": "a817b0330633f0c66c7fb4fbc5b5208e8fc9ea5b2968302302c12b601128fa48",
+    "wrapper_sha256": "5a5baccd4c59d0fe9f7e10a5b7e6407db1cd688707fb341a9b139b2049222bb1"
+  },
+  "scientific_replay_repeated_during_intake": false,
+  "expected_evidence_modified": false,
+  "historical_failed_upstream_replay_preserved": true,
+  "historical_target_patch_applied_to_current_upstream": false,
+  "physical_D0_selection_closed": false,
+  "GR_closed": false,
+  "raw216_closed": false,
+  "source_owner_retired_or_relabelled": false,
+  "claim_BOOK_assembly_or_formalization_promoted": false,
+  "wrapper_hash_closure": [
+    {
+      "wrapper": "02_REGISTRY/research/certificates/a4d_native_clock_price_source_check.py",
+      "sha256": "7c6715937ab4ab5e0f9efff54ce42e8d8fbce2005e8c07242c76f87fd871407f",
+      "pins_verified": 33,
+      "status": "PASS_STATIC_HASH_CLOSURE",
+      "scientific_execution": false
+    },
+    {
+      "wrapper": "02_REGISTRY/research/certificates/a4d_native_complete_price_selection_check.py",
+      "sha256": "a9c3772ce43710248d43a893501fe04721c7879895eefd29e6dad29dd1d58c2a",
+      "pins_verified": 65,
+      "status": "PASS_STATIC_HASH_CLOSURE",
+      "scientific_execution": false
+    },
+    {
+      "wrapper": "02_REGISTRY/research/certificates/a4d_native_stopped_all_cost_source_check.py",
+      "sha256": "5a5baccd4c59d0fe9f7e10a5b7e6407db1cd688707fb341a9b139b2049222bb1",
+      "pins_verified": 28,
+      "status": "PASS_STATIC_HASH_CLOSURE",
+      "scientific_execution": false
+    }
+  ],
+  "whitespace": {
+    "scientific_files_checked": 101,
+    "route_whitespace_status": "PASS",
+    "historical_exceptions": [
+      {
+        "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/inputs/02_REGISTRY/research/sources/d0_same_history_price_composition_2026-10-20/FULL128_HEAT_PRICE_RECYCLING_BRIDGE.md",
+        "sha256": "a8cdbd52e52275cb7e41aa84b8bd69e9fb36170f75d8481c6568fb3ea1a2bce0",
+        "source_commit": "511e012b31522d2a1fdb9d3fff51328c0694e4ee",
+        "source_blob": "b943c946add3d34bce425f6d0e1b1015054fdc7d",
+        "exit_code": 3,
+        "output": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/inputs/02_REGISTRY/research/sources/d0_same_history_price_composition_2026-10-20/FULL128_HEAT_PRICE_RECYCLING_BRIDGE.md:199: trailing whitespace.\n+\\boxed{\\ \n"
+      }
+    ],
+    "source_bytes_preserved": true
+  },
+  "initial_structural_guards": {
+    "scope": "First 70 scientific files and initial 55 routing insertions, before the separately published stopped extension; current-head CI remains required.",
+    "status": "PASS",
+    "guards": [
+      {
+        "name": "render_work_status",
+        "command": [
+          "python3",
+          "-B",
+          "tools/render_work_status.py",
+          "--check"
+        ],
+        "returncode": 0,
+        "log_sha256": "afc909e44dd689bc6a4d432053162cb4cd82066c276a9a07116cf1b297022667"
+      },
+      {
+        "name": "validate_agent_protocol",
+        "command": [
+          "python3",
+          "-B",
+          "tools/validate_agent_protocol.py"
+        ],
+        "returncode": 0,
+        "log_sha256": "3c583fcec6b5dc0cde02d7b2d663ae665d49b771896c1abf671dcb82759810e1"
+      },
+      {
+        "name": "validate_repo",
+        "command": [
+          "python3",
+          "-B",
+          "tools/validate_repo.py"
+        ],
+        "returncode": 0,
+        "log_sha256": "5d93e36dda5050748a5d6312ea5285e7c38f9462d93dfcff70ea4b0d1fdf73e9"
+      },
+      {
+        "name": "validate_work",
+        "command": [
+          "python3",
+          "-B",
+          "tools/validate_work.py"
+        ],
+        "returncode": 0,
+        "log_sha256": "4cf236a95f272f8dbd397b516ca238a72dfd0c71a0ebaf01aa801fa4079c43a4"
+      }
+    ],
+    "agent_protocol_availability_note": "The unchanged agent guard passed after permitted read-only lazy fetching of published historical Git objects. Two initial missing-object attempts are preserved in the preparation receipt. No validator or pin was edited."
+  },
+  "independent_intake_review": {
+    "reviewer": "checkpoint_integration",
+    "decision": "ACCEPT_SCOPED_RESEARCH_CHECKPOINT_FOR_MAIN_INTAKE",
+    "method": "Pinned Git blob/byte transfer, literal AST input-pin inspection, frozen evidence/review consistency and declared source-scope review; no numerical replay.",
+    "mathematical_scope": "Every fixed finite real T>=5 and ell>=1 has an attained stopped implementation minimum. Every minimizing branch has B_k>=2 and preserves a nonzero multiplier of the original DJ2. A genuine joint local field minimum on Sigma requires DJ2=0 when an active branch remains admissible in the full field neighborhood.",
+    "retained_hypotheses": [
+      "Required native stopping task",
+      "Complete pointer Shannon information in Golden units",
+      "Actual field-independent prefix and Golden-call prices in the declared range",
+      "All paid failures and conditional work retained",
+      "Full admissible field neighborhood for the local-minimum implication",
+      "Additional moving native cost and information sources still require their own derivatives"
+    ],
+    "not_accepted": [
+      "Compulsory physical D0 task or Info selection",
+      "Complete original H+J+R action identification",
+      "Existence, sufficiency or stability of a physical minimum",
+      "Finite-cap optimum transfer or mesh-uniform coefficient bound",
+      "Unconditional GR or raw216 closure"
+    ],
+    "publication_gate": "Root integrator owns the bounded CONTROL commit, affected-input selection, Ready PR and current-head CI."
+  },
+  "concurrent_governance": {
+    "pr": 394,
+    "observed_head_from_integrator": "c05a3516",
+    "state": "Open; CI in progress at handoff",
+    "preservation": "Retain its adjacent README navigation and AGENTS changes if merged before this intake."
+  },
+  "preparation_state": {
+    "committed": false,
+    "published_as_main_intake": false
+  },
+  "control_note": "02_REGISTRY/research/D0_NATIVE_COMPLETE_PRICE_SELECTION_MAIN_INTAKE_2026_10_20.md",
+  "control_note_sha256_at_review": "06ec5a42e602348efeaa0e1bdaf12031f5fd0bcc59e34f34d7421da42e971b59",
+  "intake_only_evidence": [
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_price_main_intake_2026-10-20/STOPPED_WRAPPER_REVIEW.md",
+      "sha256": "227626c164058af2b024376af2cbe0d359c75e5f806934ed2535c9e110e6e97d",
+      "bytes": 4010,
+      "reviewer": "native_task_selector",
+      "reviewed_source_commit": "45372df30740f4e75c8b58013652a7665bf833cd",
+      "method": "Independent read-only source, AST, Git blob, hash, immutability and portability review; no replay",
+      "part_of_101_copied_scientific_paths": false,
+      "byte_identical_to_received_review": true
+    }
+  ]
+}

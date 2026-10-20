@@ -1,0 +1,11 @@
+--- a/02_REGISTRY/research/sources/d0_prospective_stopped_golden_2026-10-20/check_stopped_source_minimum.py
++++ b/02_REGISTRY/research/sources/d0_prospective_stopped_golden_2026-10-20/check_stopped_source_minimum.py
+@@ -102,7 +102,7 @@
+     assert abs(q2n-4*pp**3)<D("1e-60")
+     assert abs(qp-8*pp**D("4.5"))<D("1e-59")
+     source=-(qp/(q2n*q2n))*(D(7)+((1-q2n)/pp).ln()/ll)
+-    target=-D(2)/(pp**D("1.5"))
++    target=-D(1)/(pp**D("1.5"))
+     assert abs(source-target)<D("1e-57")
+     print("G2 stopped-source coefficient at T0=5:",round(source,16))
+     print("PASS: original Golden prospective first source and exact 0/10 code.")

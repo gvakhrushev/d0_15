@@ -1,0 +1,4 @@
+PASS stopped all-cost source: 275 active exact controls; immutable receipt agrees byte-for-byte
+PASS corrected 1cb stopped source: complete finite-cap and first-jet output agrees
+PASS 28 immutable proof/input/review/checker/receipt pins before and after
+SCOPE: all fixed T>=5 and ell>=1; every minimizing branch preserves DJ2; actual joint local minimum implies DJ2=0 under the declared task, Info, fixed-price and full-field assumptions.

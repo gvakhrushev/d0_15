@@ -1,0 +1,6 @@
+PASS check_full128_coherent_info_price.py: 1579 active controls; every scientific receipt field agrees
+PASS check_matched_complete_likelihood_source.py: exact symbolic source groups; every scientific receipt field agrees
+PASS check_task_invariance.py: 70 active controls; every scientific receipt field agrees
+PASS check_native_binary_task.py: 78 active controls; every scientific receipt field agrees
+PASS 65 immutable input/proof/checker/review/receipt pins before and after
+SCOPE: original complete record; specified limiting entropy-price and paid binary-task minima; compulsory full Book price and physical GR remain open.

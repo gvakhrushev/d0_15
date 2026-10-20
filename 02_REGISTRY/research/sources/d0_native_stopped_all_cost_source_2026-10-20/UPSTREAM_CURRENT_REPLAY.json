@@ -1,0 +1,20 @@
+{
+  "checker": "02_REGISTRY/research/sources/d0_prospective_stopped_golden_2026-10-20/check_stopped_source_minimum.py",
+  "checker_sha256": "a8997f58d3af738a2cf70f4a1d20dd6c9c509274c8e9b2393157a50038e2729d",
+  "command": [
+    "python3",
+    "-O",
+    "-B",
+    "-W",
+    "error",
+    "02_REGISTRY/research/sources/d0_prospective_stopped_golden_2026-10-20/check_stopped_source_minimum.py"
+  ],
+  "exit_code": 0,
+  "schema": 1,
+  "scope": "Corrected original stopped Golden finite-window, complete finite-cap clock/entropy/first-source controls; historical f22 failure remains recorded separately.",
+  "source_commit": "1cb164de3753f9dbaf214ea140eb9ea21a7b9d90",
+  "status": "PASS",
+  "stderr_empty": true,
+  "stdout_file": "UPSTREAM_CURRENT_REPLAY.log",
+  "stdout_sha256": "bf0ae04a772374a8683e261d3daaa1749da6d2541940351973926963dda890b1"
+}

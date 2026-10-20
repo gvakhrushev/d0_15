@@ -1,0 +1,15 @@
+RATIONAL_INTERVAL_PROOF: G^2 strictly minimizes the stopped
+actual 0/10-pointer Cost-minus-Info among every k>=1 for 5<=T0<=50.
+RATIONAL_INTERVAL_PROOF: 1.497 < D_phi(q2||p^2) < 1.498
+RATIONAL_INTERVAL_PROOF: k>=7 excluded without truncating k search
+EXACT ALGEBRA: q2=4p^3, 1-q2=p^6, q2'(0)=8p^(9/2)
+EXACT FIRST SOURCE: D S_stop(G^2)=-(T0-3)/(2p^(3/2)) * Dt
+T0 5 winner among 150: 2 score: 8.998874169575
+T0 30 winner among 150: 2 score: 35.474299028949
+T0 50 winner among 150: 2 score: 56.654638916448
+T0 100 winner among 150: 7 score: 109.221898192601
+Traceback (most recent call last):
+  File "/tmp/d0_stopped_extension/upstream_check_stopped_source_minimum.py", line 106, in <module>
+    assert abs(source-target)<D("1e-57")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

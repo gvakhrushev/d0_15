@@ -1,0 +1,10 @@
+{
+  "input_sha256": {
+    "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d",
+    "02_REGISTRY/research/A4D_NATIVE_PRICE_EXACT_VARIATIONAL_UNFOLDING.md": "d92aabf2d46d9ac7d8d9aa3bf5ed66a58f25bb83ca4460d66d25648c62f7e10b",
+    "02_REGISTRY/research/A4D_PROSPECTIVE_BOOK_FINITE_FUTURE_LAW_Q8_VERIFICATION_2026_10_20.md": "bd3f1ab51599b0efe17af03e40c59a606200cd1912f801e4bd57e0eb77a6b014",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/execution/return_cost_and_stopping.md": "29e30b35170c8ab1d4d324dd0f7aaa6e588cb1a32f023ad529947dc8639b9faa",
+    "02_REGISTRY/research/sources/d0_same_history_price_composition_2026-10-20/paid_port_history.md": "ef69c2052237fbe8e916acf16691f9b14b4c1c2465a7837e838db2baeb95449d"
+  },
+  "source_commit": "f569c786"
+}

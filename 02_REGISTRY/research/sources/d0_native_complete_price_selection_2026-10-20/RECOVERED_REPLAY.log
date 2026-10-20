@@ -1,0 +1,14 @@
+PASS geometry/check_source_moment_collapse.py: 251 exact checks; immutable result agrees
+PASS book_price/check_coherent_return_pressure.py: 119 exact checks; immutable result agrees
+PASS prospective/check_stopped_clock_source.py: 67 exact checks; immutable result agrees
+exact complete-symmetric derivative identity, through degree 7: PASS
+finite positive-occupation value/source cut with dark mode and noncommuting jet: PASS
+exact original shell exit-cost insertion, including n paid blank ticks: PASS
+original full site x CAR16 x reference128 CONDITIONAL source separation: PASS
+complete finite apparatus retains failures and has its own exact source: PASS
+finite cap preserves h^-2-normalized closed-pressure source: PASS
+{'L': 4, 'occupation_cap': 17, 'cost_per_L6': 0.1692880576714224, 'cost_source_per_L6': 0.4195292736396257, 'pressure_source_per_L4': 0.003273968216712118, 'coherent_info_source_per_L4': 0.09710697039592942, 'complete_port_source_per_L4': 0.0073771313322491105, 'finite_complete_port_source_per_L4': 0.0073771313322491105, 'h_minus2_source_tail_bound': 0.00011531266472994563}
+{'L': 8, 'occupation_cap': 36, 'cost_per_L6': 0.16922399589548667, 'cost_source_per_L6': 0.41936372764069474, 'pressure_source_per_L4': 0.003275376476981114, 'coherent_info_source_per_L4': 0.09716676316571289, 'complete_port_source_per_L4': 0.0073771313322491105, 'finite_complete_port_source_per_L4': 0.007377131332246952, 'h_minus2_source_tail_bound': 2.5450576033041885e-05}
+{'L': 16, 'occupation_cap': 217, 'cost_per_L6': 0.16920438064070586, 'cost_source_per_L6': 0.4192696663050478, 'pressure_source_per_L4': 0.0032753170194454654, 'coherent_info_source_per_L4': 0.09716525271653081, 'complete_port_source_per_L4': 0.0073771313322491105, 'finite_complete_port_source_per_L4': 0.007377131332247505, 'h_minus2_source_tail_bound': 6.932034984798417e-06}
+PASS all immutable input/proof/checker/review/receipt pins before and after replay
+SCOPE: exact retained-clock/pressure/known-price/source composition; full Book selection and physical GR remain open.

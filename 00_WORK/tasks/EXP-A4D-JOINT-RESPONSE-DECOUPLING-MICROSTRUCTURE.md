@@ -21,6 +21,30 @@ The exact curved nongauge joint-vacuum family in merged #232 destroys connection
 
 Before starting, use current `main`, confirm this row is still `PLANNED`, and search open PRs for this exact task ID. Continue an existing execution if one exists; do not create a duplicate. Pin the launch SHA and the current merged/live state and head of every cited input. Do not recompute delegated results except for narrow consistency checks that the response argument needs.
 
+## Current stopped-minimum source extension — 20 October 2026
+
+The [all-cost native stopped theorem](../../02_REGISTRY/research/A4D_NATIVE_STOPPED_MINIMUM_TO_J2_SOURCE_2026_10_20.md)
+removes the upper bound on fixed prefix cost and the exact-unit Golden-cost
+condition: every T >= 5, ell >= 1 minimum retains a nonzero original DJ2
+multiplier. A genuine local minimum of actual complete-record branches in
+the full field space requires DJ2 = 0, including ties. Conditional work,
+failed attempts and the corrected upstream finite-cap source are retained.
+The compulsory task, Book Info and complete native price/admission remain
+open. This stays within the existing native-realization owner and does not
+promote lifecycle, assembly, physical GR or raw216.
+
+## Current bounded complete-price application — 20 October 2026
+
+Continue the existing #334 execution through the
+[complete-record Info/price synthesis](../../02_REGISTRY/research/A4D_NATIVE_COMPLETE_RECORD_INFO_PRICE_SELECTION_2026_10_20.md).
+It consumes the owned full128 C1 history and recovered clock/source packet,
+solves the specified coherent-record limiting price and supplied binary-task
+paid horizon, and isolates the actual missing Info/task/payment definition.
+Independent analytical review and immutable targeted replay accompany the
+result. This native-realization application retains the all40+2 source,
+nonuniform carrier, full-price/admission and common-refinement premises;
+it does not retire this owner or promote physical GR/raw216.
+
 ## Objective
 
 For mesh size `h=1/L`, a fixed smooth nondegenerate background sampled as `Q_h`, the designated smooth comparison branch `K_h^sm` from #216, and exact joint-critical sequences `K_h` satisfying the task's declared connection and metric source equations, determine whether
