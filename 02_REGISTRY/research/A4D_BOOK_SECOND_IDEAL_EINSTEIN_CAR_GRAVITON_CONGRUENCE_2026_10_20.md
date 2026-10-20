@@ -162,3 +162,38 @@ All 16 local opposite-coframe-shape modes, one uniform coframe radial mode, and 
 A SECOND hostile primitive cost completion adds a genuine independent local coframe-shape excess to one original directed edge already at t=0. This is permitted by Cost>=1 but induces nonzero Book pressure first source in a true vertical coframe direction at the Einstein root, hence fails (4) and destroys the joint root. Therefore the *physics selection* question is REAL and falsifiable; the two admissible Cost completions cannot be silently identified.
 
 **Owner result:** conditional ALL-ORDER nonlinear original Einstein–CAR stationary-set universality **beyond exact sufficient statistics** and EXACT archive Schur unit-determinant congruence; independent 718/16/48 replay passed. Physical compulsory G0 full-price source, Spin-sensitive matter, normal form proof, full all640 and RAW-216 refining curvature still OPEN. \`GR_closed=false\`.
+
+
+## 6. A FINITE NECESSARY-AND-SUFFICIENT "VERTICAL HESSIAN" TEST — NO microscopic \(R_{ij}\) reconstruction
+
+The conditional physical normal form (4) is a sufficient **all-order nonlinear root** hypothesis. For JUST the originally requested **same-branch first root + second geometric source (linearized graviton)**, there is an even SHARPER test that does not require declaring the native action to be a function of t or fitting ANY of its quadratic coefficients.
+
+Let the selected actual internally stationary Book full action have a genuine C² geometric Hessian \(H_{\rm native}^{\rm reduced}\) at ONE existing exactly sourced Einstein–CAR root \(q_*\). Suppose its ACTUAL complete first-source (with oldRIGHT/clock/work/Spin held or varied correctly) vanishes there, and its actual w_i are independently measured by the original Golden return-source owner. Define
+\[
+ \Delta H:=H_{\rm native}^{\rm reduced}-H_{P_w},\qquad L:=Dt(q_*).
+\]
+Then for any symmetric \(\Delta H\), the following are EXACTLY equivalent finite linear algebra statements:
+\[
+\boxed{
+\begin{aligned}
+&\Delta H[V,-]=0\quad\text{for EVERY actual }V\in\ker L,\\
+&\Delta H=\Pi\Delta H\Pi,\quad \Pi:=L^+L,\\
+&\exists M=M^\top:\quad \Delta H=L^\top M L.
+\end{aligned}}\tag{12}
+\]
+Here \(L^+\) is the Moore–Penrose inverse on the ACTUAL fixed finite source tangent/metric, including all independent original 16 coframe, true SHARED 24 link, scalar CAR/matter, gauge-fixed old-memory motions as appropriate. The first line is a **vertical source-Hessian test**, not a claim that the true physical action is \(F(t)\). To prove equivalence: \(\Pi\) is the orthogonal projection onto \((\ker L)^\perp=\operatorname{im}L^\top\); a symmetric bilinear form annihilating \(\ker L\) in either slot obeys \(\Pi\Delta H\Pi=\Delta H\). Choose explicitly
+\[
+\boxed{M=(L^+)^\top\Delta H L^+.}\tag{13}
+\]
+Then \(L^\top M L=\Pi\Delta H\Pi=\Delta H\). The converse is immediate. This construction remains valid **AT THE EINSTEIN ROOT WHERE RANK L≤N−1**, so there is no illicit regular submersion or division by a vanishing \(t_i\). Choice of Hilbert chart for the pseudoinverse affects M, not the truth of the kernel-anihilation assertion or final congruence.
+
+If the vertical test passes, the earlier exact radial Ward (3) supplies
+\[
+\boxed{H_{\rm native}^{\rm reduced}=T^\top H_{P_w}T,\quad
+T=I+\tfrac14 ZW^{-1}(L^+)^\top\Delta H L^+ L,\quad\det T=1.}\tag{14}
+\]
+Equivalently use the simpler (10) with M from (13). Thus the **complete linearized source GR signature and its ACTUAL kernel** are guaranteed with no assumption on offshell microscopic action values, current absolute Book pressure or dense historical Hessian. One can test just the genuine vertical first and second sources of the uncompromised actual D0 full programme. A more subtle source anomaly which preserves only the *rank* but violates (12) does NOT count as source-fiber GR universality: preserving a single integer rank without the covector and gauge structure is not sufficient.
+
+For the independent original K(9,11,13) 16-site/48-field replay, \(L\) is the ORIGINAL periodic shared-link first-difference in the 16 link directions, and its source rank is EXACTLY15. The projection \(\Pi\) vanishes on all 32 local coframe entries and is \(I_{16}-\mathbf 1\mathbf 1^\top/16\) on the genuine link coordinates. It follows the vertical space of this scoped live-Hodge model is 33-dimensional (all 32 coframe tangent directions plus constant link); the native historical Schur correction annihilates that space coefficientwise. The upgraded checker now verifies \(\|\Delta H-\Pi\Delta H\Pi\|_{\max}<10^{-14}\) and the explicit shear independently. The 18 COMMON Hessian kernel modes are not confused with the 33 vertical density-kernel modes: these are distinct mathematical spaces.
+
+**Scope reduction:** For exact nonlinear GR *stationary sets*, use the all-order ideal theorem in §§1–2 and genuinely stationary internal B. For *the exact sourced linearized gravity source about an already-owned real nonflat Einstein–CAR root*, only the actual full native FIRST EULER root and vertical second-source test (12) are needed. This is the SHORTEST literal physical PASS/FAIL barrier currently supported by the mathematical owners. Neither is yet proved for the compulsory original M1/G0 action; its full sourced external coupling, spin-central \(\mathbb Z_2\), operational metric, controlled h-refinement and RAW-216 remain open.
