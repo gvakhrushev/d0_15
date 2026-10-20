@@ -4,7 +4,7 @@ Scope only: algebraic screening of port COST, not unrerun full128 history jets.
 """
 import sympy as s
 k=s.Matrix([-1+s.I,-1+s.I,-2,-1-s.I])
-x=s.symbols('x0:10')
+x=s.symbols('x0:10', real=True)
 pairs=[(i,j) for i in range(4) for j in range(i,4)]
 Q=s.zeros(4)
 for y,(i,j) in zip(x,pairs):Q[i,j]=Q[j,i]=y
