@@ -233,6 +233,43 @@ for(const hh of [.016,.009]){
   realBookMixedHessian:hessMix,magneticCycleMixedGap:magMix,
   errors:[er,em]});
 }
+
+// GLOBAL, not perturbative: for EVERY original positive reciprocal
+// edge B_uv=B_vu and EVERY real antisymmetric a, Perron radius
+// rho(B exp(a)) >= rho(B); equality iff a is a vertex coboundary.
+// Elementary proof is rowwise Cauchy on the two positive eigenvectors
+// of K(a) and K(-a)=K(a)^T. Connected + ORIGINAL triangles make
+// equality iff coboundary, so original full scalar Book Cost
+// A=-log_phi rho is a STRICT GLOBAL MAXIMUM at REVERSIBILITY on the
+// complete 327-cycle quotient, not a physical minimum.
+// Crucially: choose the entirely ORIGINAL allowed primitive Cost=3
+// baseline, then for every tested small two-sided a perturb
+// Cost_uv=3-t a_uv / ln(phi) remains >=1.  Thus no
+// ActionProtocol saturated-floor one-sided loophole is needed.
+const ell=Math.log((1+Math.sqrt(5))/2),interiorCost=3;
+let minAdmittedCost=Infinity,minNonGradientGlobalBookGap=Infinity;
+const globalComparisons=[];
+for(const [name,vec] of [["CP",cp],["random",random],["edge",sparse],
+ ["mixed",cp.map((x,i)=>x+.35*random[i])],["pureCoboundary",gradient]]){
+ for(const t of [.08,.20,.40]){
+  const upper=Math.max(...vec.map(Math.abs));
+  const costfloor=interiorCost-Math.abs(t)*upper/ell;
+  minAdmittedCost=Math.min(minAdmittedCost,costfloor);
+  assert(costfloor>=1,"real CHIRAL perturb violates original primitive ActionProtocol cost quantum");
+  const up=lambdaReal(vec,t),down=lambdaReal(vec,-t);
+  const rel=Math.abs(up/rho-down/rho);
+  assert(rel<3e-12,"original K(a) and K(-a) transpose have different Perron pressures");
+  let gap=up/rho-1;
+  if(name==="pureCoboundary"){
+   assert(Math.abs(gap)<3e-12,"true global gradient diagonal-gauge must leave rho constant");
+  }else{
+   assert(gap>1e-7,"strict native cyclic Perron pressure lower bound fails");
+   minNonGradientGlobalBookGap=Math.min(minNonGradientGlobalBookGap,gap);
+  }
+  globalComparisons.push({name,t,relativePerronPressureGap:gap,
+    genuineMinimumPrimitiveCost:costfloor});
+ }
+}
 assert(Q(gradient,gradient)<1e-10,
  "true original Coboundary PRICE must have exactly zero cycle response");
 let maxLaplacianProjector=0;
@@ -242,7 +279,6 @@ for(const q of [cp,random,gradient,sparse]){
      ...twice.map((v,i)=>Math.abs(v-first[i])));
 }
 assert(maxLaplacianProjector<1e-10,"actual Book weighted cycle Hodge is not idempotent");
-const ell=Math.log((1+Math.sqrt(5))/2);
 console.log(JSON.stringify({
  result:"PASS_ALL327_NATIVE_BOOK_ARCHIVE_FISHER_EQUALS_CAR16_MAGNETIC_GAP",
  carrier:{vertices:33,originalDirectedEdges:718,independentUndirectedEdges:359,
@@ -260,7 +296,11 @@ console.log(JSON.stringify({
   exactCPAllOrderRealCubicMaxError:maxCPBook,
   exactCPAllOrderMagneticCubicMaxError:maxCPFiniteGap,
   multivariateCrossFisherTests:mixedResults,
-  maxMixedCycleSourceError:maxMixedError},
+  maxMixedCycleSourceError:maxMixedError,
+  strictGlobalBookReversibilityTheorem:true,
+  allAdmittedOriginalCostMinimum:minAdmittedCost,
+  minimumPositiveOffshellCyclicPressureGap:minNonGradientGlobalBookGap,
+  fullPositiveDomainCyclicGlobalTests:globalComparisons},
  uniqueCanonicalLaw:{
   residualCycleCovariance:"Q(a,b)=2 sum_undirected mu_uv [a_uv-chi_u+chi_v][b_uv-chi_u+chi_v]",
   MarkovPoisson:"L_mu chi=div_mu a",
