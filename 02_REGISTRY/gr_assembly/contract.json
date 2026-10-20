@@ -1008,25 +1008,25 @@
               "status": "A",
               "path": "02_REGISTRY/research/A4D_NATIVE_CONDITIONAL_GRAM_SERIAL_SOURCE_RATIO_2026_10_17.md",
               "git_blob": "2ac5708d0d70ea3362c2004ae93a825b4cb0765a",
-              "present_at_parent_head": false
+              "parent_git_blob": null
             },
             {
               "status": "A",
               "path": "02_REGISTRY/research/A4D_NATIVE_ORTHOGONAL_EXIT_DOUBLE_CLOCK_EINSTEIN_SOURCE_2026_10_17.md",
               "git_blob": "29b056c1d5adae7391c4acbe2f91f6a596231170",
-              "present_at_parent_head": false
+              "parent_git_blob": null
             },
             {
               "status": "A",
               "path": "02_REGISTRY/research/sources/d0_native_conditional_gram_2026-10-17/check_orthogonal_exit.py",
               "git_blob": "21f6d010ebc816b4ccc8a21169a732a25a532cd8",
-              "present_at_parent_head": false
+              "parent_git_blob": null
             },
             {
               "status": "A",
               "path": "02_REGISTRY/research/sources/d0_native_conditional_gram_2026-10-17/check_serial_gram.py",
               "git_blob": "76ff19513381d08788c5ed70ae682b5d986df2da",
-              "present_at_parent_head": false
+              "parent_git_blob": null
             }
           ],
           "result_ids": [
@@ -1055,19 +1055,19 @@
               "status": "A",
               "path": "02_REGISTRY/research/A4D_BOOK_TRIANGLE_ODDS_960_COST_COMPATIBILITY_AND_CARTAN_HESSIAN_BOUNDARY_2026_10_19.md",
               "git_blob": "bb5731054b56ff26e7c94ad3572581f2850cfc4b",
-              "present_at_parent_head": false
+              "parent_git_blob": null
             },
             {
               "status": "A",
               "path": "02_REGISTRY/research/sources/d0_book_triangle_odds_2026-10-19/check_d0_triangle_cost_interface.py",
               "git_blob": "d31fc257c2d8c62589f75d059a7fa5040b27ddcb",
-              "present_at_parent_head": false
+              "parent_git_blob": null
             },
             {
               "status": "A",
               "path": "02_REGISTRY/research/sources/d0_book_triangle_odds_2026-10-19/check_saved_quartic_normal_form.py",
               "git_blob": "e5d2f8315821943d6cf4fba3bfd75de3fdc2a44d",
-              "present_at_parent_head": false
+              "parent_git_blob": null
             }
           ],
           "result_ids": [
@@ -1078,9 +1078,10 @@
       ],
       "disposition": "comparison-complete-result-only",
       "reopen_when": [
-        "The registered parent head or base branch/SHA changes.",
-        "Any recorded child head, base branch/SHA or Task metadata changes.",
-        "The open same-repository descendant set changes or a new child branch appears."
+        "Parent repository, branch, base SHA, or Task metadata changes.",
+        "The current parent blob at a child-delta path differs from its recorded SHA, or the bounded path query is unavailable or incomplete.",
+        "Any child head, base branch/SHA or Task metadata changes.",
+        "The same-repository descendant set changes."
       ]
     }
   ]

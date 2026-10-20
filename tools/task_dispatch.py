@@ -5,6 +5,7 @@ from __future__ import annotations
 import argparse
 import json
 import pathlib
+import posixpath
 import re
 import subprocess
 import sys
@@ -66,6 +67,61 @@ def open_prs(root: pathlib.Path) -> list[dict]:
         return prs
     except (TypeError, ValueError) as exc:
         raise ValueError(f"Invalid GitHub PR response; no launch authorized: {exc}") from exc
+
+
+def commit_path_blobs(root: pathlib.Path, sha: str, paths: list[str]) -> dict[str, str | None]:
+    """Read a bounded set of exact path blobs at one immutable commit via GraphQL."""
+    if not re.fullmatch(r"[0-9a-f]{40}", sha):
+        raise ValueError("expected a full commit SHA for path snapshot")
+    if (not isinstance(paths, list) or len(paths) > 100
+            or any(not isinstance(path, str) for path in paths)
+            or len(paths) != len(set(paths))):
+        raise ValueError("path snapshot must contain at most 100 unique paths")
+    for path in paths:
+        if (not isinstance(path, str) or not path or path.startswith("/")
+                or "\\" in path or ".." in path.split("/") or posixpath.normpath(path) != path):
+            raise ValueError(f"unsafe repository path in path snapshot: {path!r}")
+    if not paths:
+        return {}
+
+    owner, repository = REPO.split("/", 1)
+    fields = " ".join(
+        f"p{index}: object(expression:{json.dumps(sha + ':' + path)}) "
+        "{ ... on Blob { oid } }"
+        for index, path in enumerate(paths)
+    )
+    query = (f'query {{ repository(owner:{json.dumps(owner)}, name:{json.dumps(repository)}) '
+             f'{{ {fields} }} }}')
+    try:
+        result = subprocess.run(
+            ["gh", "api", "graphql", "-f", f"query={query}"],
+            cwd=root, capture_output=True, text=True, check=True, timeout=30,
+        )
+    except (OSError, subprocess.SubprocessError) as exc:
+        detail = str(exc)
+        if isinstance(exc, subprocess.CalledProcessError) and exc.stderr:
+            detail = exc.stderr.strip().splitlines()[0]
+        raise ValueError(f"GitHub commit-path lookup unavailable: {detail[:200]}") from exc
+    try:
+        response = json.loads(result.stdout)
+        if not isinstance(response, dict) or response.get("errors"):
+            raise ValueError("GraphQL returned errors")
+        objects = response["data"]["repository"]
+        if not isinstance(objects, dict):
+            raise ValueError("GraphQL repository result is missing")
+        found = {}
+        for index, path in enumerate(paths):
+            value = objects.get(f"p{index}")
+            if value is None:
+                found[path] = None
+            elif (isinstance(value, dict) and isinstance(value.get("oid"), str)
+                  and re.fullmatch(r"[0-9a-f]{40}", value["oid"])):
+                found[path] = value["oid"]
+            else:
+                raise ValueError(f"GraphQL returned a non-blob object for {path}")
+        return found
+    except (KeyError, TypeError, json.JSONDecodeError) as exc:
+        raise ValueError(f"Invalid GitHub commit-path response: {exc}") from exc
 
 
 def existing_execution(prs: list[dict], task_id: str, branch: str | None) -> tuple[dict | None, str]:

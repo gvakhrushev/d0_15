@@ -246,18 +246,20 @@ def _validate_source_fork_reconciliations(model: dict) -> None:
             paths = []
             for file in delta:
                 require(isinstance(file, dict)
-                        and set(file) == {"status", "path", "git_blob", "present_at_parent_head"},
+                        and set(file) == {"status", "path", "git_blob", "parent_git_blob"},
                         f"{label}: invalid child delta entry")
                 require(file["status"] in {"A", "M", "D", "R"}, f"{label}: invalid delta status")
                 path_in(model["root"], file["path"])
                 paths.append(file["path"])
-                require(file["present_at_parent_head"] is False,
-                        f"{label}: this reconciliation is only for child files absent from the parent")
                 if file["status"] == "D":
                     require(file["git_blob"] is None, f"{label}: deleted path cannot pin a child blob")
                 else:
                     require(isinstance(file["git_blob"], str) and SHA.fullmatch(file["git_blob"]) is not None,
                             f"{label}: invalid child Git blob")
+                require(file["parent_git_blob"] is None
+                        or isinstance(file["parent_git_blob"], str)
+                        and SHA.fullmatch(file["parent_git_blob"]) is not None,
+                        f"{label}: invalid parent Git blob")
             require(len(paths) == len(set(paths)), f"{label}: duplicate child delta path")
             result_ids = string_list(child["result_ids"], f"{label}.result_ids")
             require(bool(result_ids) and all(result_id in model["results"] for result_id in result_ids),
@@ -289,27 +291,104 @@ def _live_fork_pin(pr: dict) -> dict | None:
 
 
 def matching_source_fork_reconciliation(model: dict, parent: dict, children: list[dict]) -> dict | None:
-    """Return only an exact live match; any changed head, base, Task or child set reopens comparison."""
+    """Match a reviewed fork while its exact child-delta paths remain unchanged."""
     parent_pin = _live_fork_pin(parent)
     child_pins = [_live_fork_pin(child) for child in children]
     if parent_pin is None or any(pin is None for pin in child_pins):
         return None
     child_pins = sorted(child_pins, key=lambda pin: pin["number"])
     for reconciliation in model["contract"].get("source_fork_reconciliations", []):
-        if reconciliation["parent"] != parent_pin:
+        recorded_parent = reconciliation["parent"]
+        same_parent_except_head = (
+            recorded_parent["number"] == parent_pin["number"]
+            and recorded_parent["head"]["repository"] == parent_pin["head"]["repository"]
+            and recorded_parent["head"]["branch"] == parent_pin["head"]["branch"]
+            and recorded_parent["base"] == parent_pin["base"]
+            and recorded_parent["task_fields"] == parent_pin["task_fields"]
+        )
+        if not same_parent_except_head:
             continue
         recorded_children = [child["pin"] for child in reconciliation["children"]]
-        if recorded_children == child_pins:
-            return reconciliation
+        if recorded_children != child_pins:
+            continue
+        if recorded_parent["head"]["sha"] != parent_pin["head"]["sha"]:
+            if parent.get("_assembly_source_path_blobs_complete") is not True:
+                continue
+            expected = {
+                item["path"]: item["parent_git_blob"]
+                for child in reconciliation["children"]
+                for item in child["child_only_delta"]
+            }
+            if parent.get("_assembly_source_path_blobs") != expected:
+                continue
+        return reconciliation
     return None
 
 
-def source_fork_reconciliation_summary(reconciliation: dict, live_children: list[dict]) -> dict:
+def prepare_source_fork_path_snapshots(model: dict, prs: list[dict], root: Path, lookup) -> None:
+    """Refresh only child-delta path blobs when a reviewed parent head advances."""
+    by_number = {pr.get("number"): pr for pr in prs}
+    checked = set()
+    for reconciliation in model["contract"].get("source_fork_reconciliations", []):
+        recorded_parent = reconciliation["parent"]
+        number = recorded_parent["number"]
+        parent = by_number.get(number)
+        if parent is None or number in checked:
+            continue
+        checked.add(number)
+        live_pin = _live_fork_pin(parent)
+        if live_pin is None or live_pin["head"]["sha"] == recorded_parent["head"]["sha"]:
+            continue
+        same_parent_except_head = (
+            recorded_parent["head"]["repository"] == live_pin["head"]["repository"]
+            and recorded_parent["head"]["branch"] == live_pin["head"]["branch"]
+            and recorded_parent["base"] == live_pin["base"]
+            and recorded_parent["task_fields"] == live_pin["task_fields"]
+        )
+        if not same_parent_except_head:
+            continue
+        related = stacked_descendants(parent, prs)
+        child_pins = [_live_fork_pin(child) for child in related]
+        if any(pin is None for pin in child_pins):
+            continue
+        child_pins = sorted(child_pins, key=lambda pin: pin["number"])
+        recorded_children = [child["pin"] for child in reconciliation["children"]]
+        if child_pins != recorded_children:
+            continue
+        paths = sorted({
+            item["path"]
+            for child in reconciliation["children"]
+            for item in child["child_only_delta"]
+        })
+        try:
+            path_blobs = lookup(root, live_pin["head"]["sha"], paths)
+            require(isinstance(path_blobs, dict) and set(path_blobs) == set(paths),
+                    "incomplete child-delta path snapshot")
+            require(all(blob is None or isinstance(blob, str) and SHA.fullmatch(blob) is not None
+                        for blob in path_blobs.values()),
+                    "invalid child-delta path blob snapshot")
+            parent["_assembly_source_path_blobs"] = path_blobs
+            parent["_assembly_source_path_blobs_complete"] = True
+        except (OSError, ValueError, subprocess.SubprocessError) as exc:
+            parent["_assembly_source_path_blobs"] = None
+            parent["_assembly_source_path_blobs_complete"] = False
+            parent["_assembly_source_path_blobs_error"] = str(exc)[:240]
+
+
+def source_fork_reconciliation_summary(reconciliation: dict, parent: dict,
+                                       live_children: list[dict]) -> dict:
     live_by_number = {child["number"]: child for child in live_children}
+    live_parent = _live_fork_pin(parent)
     return {
         "id": reconciliation["id"],
         "parent_pr": reconciliation["parent"]["number"],
-        "parent_head_sha": reconciliation["parent"]["head"]["sha"],
+        "comparison_head_sha": reconciliation["parent"]["head"]["sha"],
+        "current_parent_head_sha": live_parent["head"]["sha"] if live_parent else None,
+        "parent_head_advanced_with_child_paths_unchanged": bool(
+            live_parent
+            and live_parent["head"]["sha"] != reconciliation["parent"]["head"]["sha"]
+            and parent.get("_assembly_source_path_blobs_complete") is True
+        ),
         "disposition": reconciliation["disposition"],
         "children_remain_unaccepted": True,
         "children": [{
@@ -825,14 +904,32 @@ def next_actions(model: dict, prs: list[dict] | None) -> list[dict]:
                 if stack is None and len(related) > 1:
                     reconciliation = matching_source_fork_reconciliation(model, p, related)
                     if reconciliation is None:
+                        reason = (
+                            "multiple open same-repository PRs descend from the registered owner through separate "
+                            "source branches. Compare their exact scientific questions and child-only deltas; do not "
+                            "treat branch dependence alone as duplicate ownership or accept a child result"
+                        )
+                        path_error = p.get("_assembly_source_path_blobs_error")
+                        if path_error:
+                            reason += "; exact current parent path lookup unavailable, so the prior comparison cannot be reused"
+                        elif p.get("_assembly_source_path_blobs_complete") is True:
+                            for record in model["contract"].get("source_fork_reconciliations", []):
+                                if record["parent"]["number"] != p["number"]:
+                                    continue
+                                expected = {
+                                    item["path"]: item["parent_git_blob"]
+                                    for child in record["children"]
+                                    for item in child["child_only_delta"]
+                                }
+                                current = p.get("_assembly_source_path_blobs") or {}
+                                changed_paths = sorted(path for path in expected if current.get(path) != expected[path])
+                                if changed_paths:
+                                    reason += "; parent version changed for child-delta paths: " + ", ".join(changed_paths[:8])
+                                break
                         actions.append({
                             "task": tid,
                             "action": "reconcile-source-fork",
-                            "reasons": [
-                                "multiple open same-repository PRs descend from the registered owner through separate "
-                                "source branches. Compare their exact scientific questions and child-only deltas; do not "
-                                "treat branch dependence alone as duplicate ownership or accept a child result"
-                            ],
+                            "reasons": [reason],
                             "consumer": binding["consumer"],
                             "assumes": binding["assumes"],
                             "reuse_results": binding.get("reuse_results", []),
@@ -843,7 +940,7 @@ def next_actions(model: dict, prs: list[dict] | None) -> list[dict]:
                         })
                         continue
                     reconciled_source_forks.append(
-                        source_fork_reconciliation_summary(reconciliation, related_prs))
+                        source_fork_reconciliation_summary(reconciliation, p, related_prs))
                 elif stack is None:
                     actions.append({
                         "task": tid,
@@ -1219,8 +1316,10 @@ def main(argv=None) -> int:
         elif args.command == "dag":
             print(diagram(model)); return 0
         elif args.command == "next":
-            from task_dispatch import open_prs
+            from task_dispatch import commit_path_blobs, open_prs
             prs = None if args.offline else open_prs(args.repo_root)
+            if prs is not None:
+                prepare_source_fork_path_snapshots(model, prs, args.repo_root, commit_path_blobs)
             actions = next_actions(model, prs)
             data = {"live_verified": prs is not None, "actions": actions,
                     "ready_obligations": ready_obligations(model, actions),

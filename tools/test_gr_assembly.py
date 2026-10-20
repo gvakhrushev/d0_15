@@ -540,12 +540,12 @@ class AssemblyTests(unittest.TestCase):
                 "merge_base_sha": "f" * 40,
                 "child_only_delta": [{
                     "status": "A", "path": f"child-{child['number']}.md",
-                    "git_blob": "e" * 40, "present_at_parent_head": False,
+                    "git_blob": "e" * 40, "parent_git_blob": None,
                 }],
                 "result_ids": [result_id],
             } for child in sorted(children, key=lambda item: item["number"])],
             "disposition": "comparison-complete-result-only",
-            "reopen_when": ["parent/child identity or descendant set changes"],
+            "reopen_when": ["Parent identity changes or child-delta path blobs change"],
         }]
 
     def source_fork_fixture(self):
@@ -575,7 +575,7 @@ class AssemblyTests(unittest.TestCase):
         ready = next(item for item in gr.ready_obligations(model, actions) if item["obligation"] == "A")
         self.assertEqual(ready["next_step"], "resume-parent-after-source-fork-comparison")
 
-    def test_source_fork_reconciliation_reopens_on_changed_parent_or_child_head(self):
+    def test_source_fork_reconciliation_reopens_on_unchecked_parent_or_changed_child_head(self):
         for changed in ("parent", "child"):
             with self.subTest(changed=changed):
                 parent, children = self.source_fork_fixture()
@@ -587,6 +587,64 @@ class AssemblyTests(unittest.TestCase):
                 model = self.model()
                 row = next(item for item in gr.next_actions(model, [parent, *children]) if item["task"] == TASK)
                 self.assertEqual(row["action"], "reconcile-source-fork")
+
+    def test_source_fork_reconciliation_survives_unrelated_parent_head_advance(self):
+        parent, children = self.source_fork_fixture()
+        self.register_source_fork_reconciliation(parent, children)
+        parent["head"]["sha"] = "9" * 40
+        parent["_assembly_source_path_blobs_complete"] = True
+        parent["_assembly_source_path_blobs"] = {"child-13.md": None, "child-14.md": None}
+        row = next(item for item in gr.next_actions(self.model(), [parent, *children]) if item["task"] == TASK)
+        self.assertEqual(row["action"], "resume")
+        record = row["reconciled_source_forks"][0]
+        self.assertEqual(record["comparison_head_sha"], "c" * 40)
+        self.assertEqual(record["current_parent_head_sha"], "9" * 40)
+        self.assertTrue(record["parent_head_advanced_with_child_paths_unchanged"])
+
+    def test_source_fork_reconciliation_reopens_when_parent_delta_path_changes(self):
+        parent, children = self.source_fork_fixture()
+        self.register_source_fork_reconciliation(parent, children)
+        parent["head"]["sha"] = "9" * 40
+        parent["_assembly_source_path_blobs_complete"] = True
+        parent["_assembly_source_path_blobs"] = {"child-13.md": "f" * 40, "child-14.md": None}
+        row = next(item for item in gr.next_actions(self.model(), [parent, *children]) if item["task"] == TASK)
+        self.assertEqual(row["action"], "reconcile-source-fork")
+        self.assertIn("child-13.md", " ".join(row["reasons"]))
+
+    def test_source_fork_reconciliation_fails_closed_on_incomplete_path_snapshot(self):
+        parent, children = self.source_fork_fixture()
+        self.register_source_fork_reconciliation(parent, children)
+        parent["head"]["sha"] = "9" * 40
+        parent["_assembly_source_path_blobs_complete"] = False
+        row = next(item for item in gr.next_actions(self.model(), [parent, *children]) if item["task"] == TASK)
+        self.assertEqual(row["action"], "reconcile-source-fork")
+
+    def test_prepare_source_fork_path_snapshots_queries_only_matching_advanced_parent(self):
+        parent, children = self.source_fork_fixture()
+        self.register_source_fork_reconciliation(parent, children)
+        parent["head"]["sha"] = "9" * 40
+        calls = []
+
+        def lookup(root, sha, paths):
+            calls.append((root, sha, paths))
+            return {path: None for path in paths}
+
+        model = self.model()
+        gr.prepare_source_fork_path_snapshots(model, [parent, *children], self.root, lookup)
+        self.assertEqual(len(calls), 1)
+        self.assertEqual(calls[0][1], "9" * 40)
+        self.assertEqual(calls[0][2], ["child-13.md", "child-14.md"])
+        self.assertTrue(parent["_assembly_source_path_blobs_complete"])
+
+    def test_prepare_source_fork_path_snapshots_fails_closed_on_partial_lookup(self):
+        parent, children = self.source_fork_fixture()
+        self.register_source_fork_reconciliation(parent, children)
+        parent["head"]["sha"] = "9" * 40
+        gr.prepare_source_fork_path_snapshots(
+            self.model(), [parent, *children], self.root, lambda *_: {"child-13.md": None})
+        self.assertFalse(parent["_assembly_source_path_blobs_complete"])
+        row = next(item for item in gr.next_actions(self.model(), [parent, *children]) if item["task"] == TASK)
+        self.assertEqual(row["action"], "reconcile-source-fork")
 
     def test_source_fork_reconciliation_reopens_on_child_base_or_task_change(self):
         for changed in ("base", "task"):
@@ -656,6 +714,28 @@ class AssemblyTests(unittest.TestCase):
         self.assertEqual((code, err), (0, ""))
         gh.assert_not_called()
         self.assertIn("no launch authorized", out)
+
+    def test_commit_path_blobs_reads_exact_objects_with_one_graphql_request(self):
+        commit = "a" * 40
+        paths = ["README.md", "02_REGISTRY/gr_assembly/contract.json"]
+        stdout = json.dumps({"data": {"repository": {
+            "p0": {"oid": "b" * 40}, "p1": None,
+        }}})
+        completed = subprocess.CompletedProcess(args=["gh"], returncode=0, stdout=stdout, stderr="")
+        with patch.object(task_dispatch.subprocess, "run", return_value=completed) as gh:
+            result = task_dispatch.commit_path_blobs(self.root, commit, paths)
+        self.assertEqual(result, {paths[0]: "b" * 40, paths[1]: None})
+        argv = gh.call_args.args[0]
+        self.assertEqual(argv[:3], ["gh", "api", "graphql"])
+        query = argv[4].removeprefix("query=")
+        self.assertIn(f"{commit}:{paths[0]}", query)
+        self.assertIn(f"{commit}:{paths[1]}", query)
+
+    def test_commit_path_blobs_rejects_unsafe_paths_without_network_access(self):
+        with patch.object(task_dispatch.subprocess, "run") as gh:
+            with self.assertRaisesRegex(ValueError, "unsafe repository path"):
+                task_dispatch.commit_path_blobs(self.root, "a" * 40, ["../outside"])
+        gh.assert_not_called()
 
     def test_failed_live_lookup_is_not_an_empty_queue(self):
         with patch.object(task_dispatch, "open_prs", side_effect=ValueError("GitHub unavailable")):

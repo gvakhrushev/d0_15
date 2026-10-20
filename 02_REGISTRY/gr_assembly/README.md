@@ -46,13 +46,16 @@ Related PRs appear under `related_prs`. Branch relations do not register a child
 as an owner, accept its result, or authorize another execution.
 
 After CONTROL records an exact source-fork comparison in `contract.json`,
-`next` suppresses only that repeated comparison while the parent and complete
-child set still match the pinned PR numbers, branch refs, head/base SHAs and
-Task metadata. The completed comparison appears under
-`reconciled_source_forks`; its child results remain result-only and unaccepted.
-A changed pin, Task field or open descendant set reopens the comparison. This
-lets the registered parent resume without treating branch ancestry as
-scientific acceptance.
+`next` suppresses only that repeated comparison while the parent identity, base
+SHA and Task metadata and the complete child PR set still match. If the parent
+head advances, it checks only the recorded child-delta paths at that exact
+commit through one bounded GraphQL query. Unchanged path blobs keep the source
+comparison valid; a changed path, changed child pin, new descendant, or
+unavailable path check reopens it. The current and comparison head SHAs remain
+visible in `reconciled_source_forks`. Child results stay result-only and
+unaccepted, regardless of whether their source files later appear in the
+parent. This avoids repeating a full fork review for unrelated parent commits
+without treating branch ancestry as scientific acceptance.
 
 `next` also lists `ready_obligations`: open obligations whose declared logical
 inputs are already accepted, the downstream obligations that would become
