@@ -27,6 +27,8 @@ fixed horizon for a supplied binary verification task. The recovered
 retained-clock/price packet is included unchanged. Selecting the compulsory
 Book Info algebra, task and complete work payment remains the physical
 premise before the all40+2 GR source can be applied; #334 stays open.
+**New cross-agent native GR source checkpoint (TRIZ + φ, 20 October 2026):** read the [shared exact TRIZ/Beatty handoff](02_REGISTRY/research/D0_TRIZ_PHI_AGENT_HANDOFF_2026_10_20.md) before attempting to identify the selected full Book03 Cost−Info source. Existing [#334](https://github.com/gvakhrushev/d0_15/pull/334) proves the mathematical positive loop-void expansion of full HJR feedback and the matched-reference zero-flat-pressure identity, **not** native selection. The φ/Beatty residual proposal has an exact full128 two-round negative control and currently lacks a canonical history-to-Beatty map; the corrected physically paired return-clock version is a typed OPEN test. This is an agent-routing/research-intake result, not a GR or `positive_gr` completion.
+
 ## Current objective: close the D0 foundation through general relativity
 
 D0 starts from the **necessary operational structure of verifiability**:

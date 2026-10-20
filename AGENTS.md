@@ -83,14 +83,13 @@ Continue existing research owner [#334](https://github.com/gvakhrushev/d0_15/pul
 without duplicating or retiring it. Main contains the proof as a
 research intake, not an independently accepted physical GR claim.
 
-The [same-carrier field-minimum exclusion](02_REGISTRY/research/A4D_NATIVE_JOINT_FIELD_MINIMUM_EXCLUSION_2026_10_20.md)
-now changes the prospective application: the configured source-preserving
-stopped price has no full-open-field minimum at this primary family.
-The genuine implementation optimum exists even at nearby non-Einstein
-fields. Preserve both results. The next bridge is the actual same-initial
-reachable field-and-price graph or a native stationary/constraint law;
-another source-neutral completion or a restriction chosen to enforce
-Einstein does not supply it. This is scoped research, not physical closure.
+## MANDATORY TRIZ / Golden-Beatty native source checkpoint (20 October 2026)
+
+**Every agent touching physical GR selection, Book03 full Cost−Info, native residual `R`, prospective futures, phi/Beatty, references or full128 first-source MUST READ** the [shared TRIZ/phi exact integration handoff](02_REGISTRY/research/D0_TRIZ_PHI_AGENT_HANDOFF_2026_10_20.md) **after the primary positive GR case**. The bounded science proofs and exact checker live in **existing Draft PR [#334](https://github.com/gvakhrushev/d0_15/pull/334)**; this entry is routing, not a new theorem or task.
+
+The ORIGINAL feedback `J=-128 Tr log(I-z+zB^m)` has an exact positive loop-void/Poisson **mathematical** representation. Comparing TWO co-transported equally priced references algebraically cancels flat UV pressure while retaining the mixed coframe–Lorentz source. No physical mandatory paired programme, Info/work payment, or Einstein-source coefficient is thereby selected; do **not** add a hand-fitted negative counterterm or promote `GR_closed`.
+
+**Strict phi proposal checkpoint:** the owned residual `R=sum_omega xi_omega K_omega†K_omega` is an OPERATOR on an ACTUAL complete paid tape. The existing K913 prospective law gives no canonical Beatty numbering of alternative histories, and the neutral fixed-horizon `p^n` cancels. The one currently fully priced two-round full128 port-only control gives `xi=b1*b2` and **strictly positive** flat residual; a positive uncentered Beatty mean **cannot** equal a matched cocycle that is zero on the diagonal. Thus the literal proposed equation is FAIL/UNDEFINED, not an accepted φ-selection proof. The corrected scoped hypothesis is a **paired relative residual over canonically derived, actually paid return TIMES**, with all source jets and original stopping/clock/Info retained. Do not infer minimal discrepancy at every finite N solely from φ's golden continued fraction. No extra census, task or new selector before the same-programme finite test.
 
 ## 1. Never ask which project when a D0 task ID is provided
 
