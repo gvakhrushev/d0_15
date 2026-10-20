@@ -57,6 +57,61 @@ Book03 admitted and PAID actual future action/test alphabet (including
 oldRIGHT, reference, CAR spinor and proper clock), then the true all40+matter
 first source and controlled Einstein refinement. \`GR_closed=false\`.
 
+### Literal Golden Fin4 future-test and Q8 sign-port owner — M1/MDL now consumed by a REAL native apparatus
+
+The fundamental M1 future-context MDL theorem is now applied directly to
+unchanged ORIGINAL source definitions, not a hypothetical large detector.
+See [the dedicated literal-Golden/Q8 typed bridge](A4D_LITERAL_GOLDEN_M1_FUTURE_MDL_Q8_ORDER_PORT_TYPED_BRIDGE_2026_10_20.md)
+and its two native exact scripts. Actual \`GoldenCoherentMemory.fullStep(a,p)\`
+is a 4×4 REAL orthogonal matrix on the system and recorded bit.
+Its complete original local Z + joint XX + joint YX signature EXACTLY
+reconstructs the entire input Bloch (x,y,z), while reducing to local Z
+alone identifies a PURE (c,0,s), c=p−p², s=2ap, c²+s²=1, with the fully
+mixed 0 state. Their actual joint XX signals are 1 and 0. The new
+Lean \`golden_local_reduced_channel_repetitions_blind\` proves NO number
+of repeat steps on ONLY the existing REDUCED channel recreates the
+discarded original joint memory. This is a mathematically strict
+EXISTING-CARRIER archival necessity when the original joint readout
+remains a valid M1 future test, not a new postulated memory field.
+
+The already registered GoldenProcessContext has two ORDER-distinct
+process programmes with identical current endpoint channels. Its
+original \`resetRetained\` intervention distinguishes them after one
+future operation by EXACT \`c\` versus \`c²\`; the new compiled
+\`goldenContextFutureExecution\` factors this EXISTING mathematical
+operation through the official future-MDL quotient, with no additional
+external test catalogue. Native G0's actual work/placement/admissibility
+of that retained-reset physical intervention is NOT yet established.
+
+Important Q8 negative+positive pair: \`GoldenCoherentMemory.fullStep\`
+has NO typed original \`UQuat\` / Spin center input, so the Lean
+\`FutureExecution.uncoupledCenter_profile_independent\` proves any
+center sheet not coupled to current actions/readouts remains invisible
+to EVERY future test of that existing interface. The 327 Q8 scene
+Spin sheet bits are NOT yet mandatory under literal Fin4-only operations.
+But the ORIGINAL \`Omega8Center.commutator_ij_eq_neg\` and ORIGINAL
+\`GoldenOrderInterferometer.controlledSign(s)\` now have a TYPED
+mathematical center-to-port bridge:
+\`q8_center_sign(qONE)=+1,\ q8_center_sign([i,j])=−1\`, yielding
+Golden bright-port Born probability EXACTLY \`0\` vs \`4p³>0\`.
+No new Golden angle, Spin generator or independent witness line.
+The TRUE remaining physical premise is **control and paid execution**
+of the existing Golden sign port by the retained original Q8/Book
+algebra class before SO/exterior projection; original fullStep alone
+does NOT do this. IF native G0/Book physically admits those repeated
+controlled Q8 comparisons on the 1287 ORIGINAL ABC loops, the
+existing rank327/960 consistency theorem plus the new future-MDL
+necessity gives **327 minimal future Q8 syndrome bits**, independent
+of the TWO minimal fault-free M1 verifying lines. Without that
+type/price bridge, the lower bound remains conditional.
+
+Lean source owners: \`GoldenCoherentMemory.lean\`,
+\`GoldenProcessContext.lean\`, \`GoldenOrderInterferometer.lean\`,
+\`EmpiricalTheoryFactorization.lean\`, all already imported into
+D0/All. Direct literal Fin4 complex-amplitude/observable tests and
+real Q8-center-to-Golden-order tests are part of #334. No
+new action/counterterm/CAR spin lift or \`GR_closed\` claim.
+
 ### Route update — nonlinear completion is no longer the open step
 
 For the already-built golden-AF geometric branch, the all-order nonlinear
