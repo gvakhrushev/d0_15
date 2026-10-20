@@ -123,3 +123,24 @@ A genuine D0→GR completion MUST therefore show at least ONE physical escape ba
 The shortest same-run test now checks just TWO exact numbers on one actual native programme: the signed Role2 source \(D_{V_2}S_{\rm selected}\) and the Role0 vertical Hessian \(D_{V_0}^2S_{\rm selected}\), with the full physically recorded stage/oldRIGHT/Spin/cost source. They must match \(-9/16\) times original Einstein normalization and \(0\), respectively, before one may invoke squared-ideal/Schur universality for all remaining original 40 equations and physical refinement. \`GR_closed=false\`.
 
 **Reproduce:** the independent Python checker \`sources/d0_native_gr_universality_2026-10-20/check_native_role_8440_shannon_cost_floor_double_ward.py\`, original genuine 16-site Role 4x4 matrices and all 96 shared plaquettes, full 8440 actual K913 paths, all17 Golden categories and exact analytic six-face Hessian coefficient. The theorem is analytic; floating controls independently verify original finite values. No new Lean/formalized claim.
+
+
+## 6. STRONGER critical-point statement: the mismatch survives at a COMMON flat stationary vacuum
+
+The role-nonconstant coframe example in §§1–4 is needed to exhibit the missing **nonzero fully integrated first** Palatini source without a cancellation between opposite sites. The critical-Hessian obstruction does NOT depend on that offshell nonconstant coframe at all.
+
+Repeat the \(V_0\) native J23 test on the ACTUAL original uniform flat vacuum \(e_x=I_4,\ U_{x,r}=I_4\) for all Role sites/links. The original all-six-face Palatini action is stationary in EVERY interior coframe and shared-link direction: coframe source vanishes because every face curvature is zero; link source vanishes by exact periodic first-difference telescoping against the constant flat coframe (already-owned original flat first Palatini vacuum).
+
+The full original Golden17 Shannon first derivative at ANY original Lie link tangent out of the identity is ALSO zero: every original marked ± pair has identical positive base probabilities and opposite first jets, hence their Shannon first derivatives cancel, while the GG,GB,BG,BB and retained Bell-failure base effects have zero first derivatives because the Lorentz generators have zero trace and \(\mathrm{d}\operatorname{Tr}(P^TP)|_{P=I}=2\operatorname{Tr}J=0\). Info is independent of coframe. Every original primitive Cost stays at a local smooth interior MINIMUM 1 so has zero first derivative on the entire Role tangent. Thus the literal complete Book8440 scalar action and Palatini action have a **COMMON exact fully stationary flat 4D Role root**, not merely coincident directional first jets.
+
+Yet along the genuine original shared-link \(V_0\), the geometric star is identically zero for all parameter values so \(D^2_{V_0V_0}P_{\star}=0\), while the fully internally non-Schur-completed finite Book scalar action still obeys
+\[
+\boxed{
+D^2_{V_0V_0}S_{\rm Book}
+\ge -3H_{96}''(0)
+=+0.0016015711176623857\ldots>0.
+}\tag{11}
+\]
+Hence the **SAME flat stationary root can have DIFFERENT exact native Hessian quadratic forms/linearized field sources**. In particular the actual microscopic correction is **NOT in the squared Palatini density ideal \(I_f^2\)** at this root: for any \(R\in I_f^2\), \(D^2R[V_0,V_0]\) vanishes because every original \(D_{V_0}f_i=0\), while the scalar Book difference above is strictly positive. This directly consumes the same-source Hessian gate in \`A4D_VACUUM_EINSTEIN_SQUARED_IDEAL_UNIVERSALITY_WITH_VERTICAL_HISTORY_2026_10_20.md\`.
+
+Do not overstate this as a proof \(V_0\) is in the ENTIRE Palatini Hessian KERNEL; a vanishing diagonal quadratic value alone is not a full \(H V_0=0\) statement because mixed coframe/source blocks might be nonzero. The rigorous conclusion is **failure of the complete quadratic-ideal/Hessian congruence condition**, already enough to refute the desired full linearized source identification for the specified scalar Cost–Shannon class. A genuine internally stationary oldRIGHT/clock/Spin archive could supply a different negative Schur, but no such physically mandatory extra source is derived here. \`GR_closed=false\`.
