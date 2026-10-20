@@ -102,7 +102,40 @@ for(const excess of [0,.1,.25]){
 check(2*testedShort.transitions===4&&2*testedEight.transitions===16,
  "original admissible primitive Cost=1+t² has SOURCE-HESSIAN contrast 12 on identical terminal native Golden output");
 
+
+const exAnteMinimalOrderWitness={reference:[local,common,local],order:[common,local,local]};
+const IJI=run(exAnteMinimalOrderWitness.reference),JII=run(exAnteMinimalOrderWitness.order);
+check(err(IJI,common)===0&&err(JII,product(sign,common))===0,
+ "EXACT native THREE-GATE IJI=J, JII=relativeSign*J with SAME original 2 local-i,1 common-j");
+for(let k=0;k<4;k++){
+ const first=port(IJI,k),second=port(JII,k);
+ check(Math.abs(first[1])<1e-15&&Math.abs(second[1]-4*p**3)<1e-14&&
+       Math.abs(second[0]-p**6)<1e-14,
+       "ORIGINAL 3-gate equal-inventory words Golden bright 0 vs4p³ on each Q8 spin state "+k);
+}
+const allWordsNative=(n)=>n===0?[[]]:
+ allWordsNative(n-1).flatMap(w=>[w.concat([local]),w.concat([common])]);
+for(let length=0;length<3;length++){
+ const groups=new Map();
+ for(const word of allWordsNative(length)){
+  const localNum=word.filter(g=>g===local).length,
+        key=localNum+":"+(length-localNum),q=port(run(word),0)[1];
+  if(!groups.has(key))groups.set(key,[]);
+  groups.get(key).push(q);
+ }
+ for(const [counts,qs] of groups)
+  check(Math.max(...qs)-Math.min(...qs)<1e-14,
+    "exhaustive ORIGINAL all same-inventory words length "+length+" -> no Golden order contrast for "+counts);
+}
+const threeWords=allWordsNative(3).filter(w=>w.filter(g=>g===local).length===2);
+check(threeWords.length===3 &&
+      Math.max(...threeWords.map(w=>port(run(w),0)[1]))-
+      Math.min(...threeWords.map(w=>port(run(w),0)[1]))>0.94,
+      "native FIRST matched-inventory order-sensitive Golden instrument uses THREE primitive actions, not eight");
+
 console.log(JSON.stringify({
+ ex_ante_shortest_matched_inventory_order_test_steps:3,
+ matched_shortest_words:["IJI","JII"],
  native_same_endpoint_source_cost_two_vs_eight:[2,8],
  optional_legal_excess_primitive_hessians:[4,16],
  full_original_Q8_source:"OrderMemoryControl.localIQ/commonJQ",
