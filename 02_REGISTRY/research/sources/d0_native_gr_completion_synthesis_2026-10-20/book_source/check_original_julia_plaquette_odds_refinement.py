@@ -116,6 +116,21 @@ for n in (1,4):
     check("complete conditional native Fisher",s.simplify(
           fisher/(s.Rational(1,4)**n)-s.Rational(1,6))==0)
 
+# Exact all-order algebraic decoder from TWO genuine positive native
+# outcome probabilities. Positive branch fixed near SO(1,3) identity.
+z=s.symbols("z",real=True)
+up=1+s.sqrt(2)*z
+down=1-s.sqrt(2)*z
+decoded=(up-down)/(s.sqrt(2)*(up+down))
+check("explicit normalized Lorentz trace-coordinate decoder",
+      s.simplify(decoded-z)==0)
+# Native-log odds = -4 atanh(sqrt2 z)/ln(phi), with no free angle scale.
+coded=-4*s.atanh(s.sqrt(2)*z)/s.log(phi)
+check("exact Golden base odds hyperbolic inverse",
+      s.simplify(-s.tanh(s.log(phi)*coded/4)/s.sqrt(2)-z)==0)
+check("six moment first-group derivative",
+      s.simplify(s.diff(decoded,z).subs(z,0)-1)==0)
+
 # The ORIGINAL SO(1,3) Lie algebra is PERFECT: commutators span
 # all 6 generators. No C² additive scalar character of net holonomy
 # can have a nonzero first Lorentz/plaquette curvature derivative.
