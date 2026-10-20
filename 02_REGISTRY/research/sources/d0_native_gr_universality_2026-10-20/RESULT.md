@@ -96,7 +96,21 @@ D^2 A_F(y)=D\Phi(y)^T D^2 A_w(y)D\Phi(y).
 \tag{3}
 \]
 
-Thus the Hessians are congruent, and \(D\Phi\) maps one Hessian kernel isomorphically onto the other.  The kernels need not be the same subspace in raw coordinates: although \(\Phi(y)=y\) at the root, \(D\Phi(y)\) need not be the identity.  This distinction matters for any later identification of linearized physical modes.
+Thus the Hessians are congruent, and \(D\Phi\) maps their kernels isomorphically.  **Sharpening from independent site-radial variations:** in fact their null kernels are the **SAME subspace even in original raw coframe/link coordinates at every genuine common stationary vacuum**, although the Hessian matrices themselves need not agree.
+
+To prove the stronger assertion, let \(Z_i\) be the moving radial vector field that scales coframe \(e_i\) and leaves every other coframe/link fixed.  The original degree-two identity gives \(d A_F[Z_i]=2s_i\,\partial_iF(s)\) and \(d A_w[Z_i]=2w_is_i\).  At a common stationary root \(s=0\), differentiate along any original tangent \(V\): all terms involving \(d A[ D_V Z_i]\) vanish by stationarity, so
+\[
+D^2 A_F[V,Z_i]=D^2 A_w[V,Z_i]=2w_i\,ds_i[V].
+\]
+Moreover at this same root the exact chain rule gives
+\[
+D^2A_F=D^2A_w+\sum_{i,j}\partial_i\partial_jF(0)\,ds_i\otimes ds_j.
+\]
+If \(V\in\ker D^2A_F\), the first identity forces \(ds_i[V]=0\) for every \(i\), making the extra term vanish, so \(V\in\ker D^2 A_w\).  The converse follows by identical reasoning using \(D^2 A_w[V,Z_i]=2w_i ds_i[V]\).  Hence
+\[
+\boxed{\ker D^2 A_F(y)=\ker D^2 A_w(y)}
+\]
+at every genuine common stationary point, **not merely congruent kernel dimensions**.  The distinction is relevant: arbitrary nonlocal Book mixed Hessian entries may modify offshell propagation/source residues but cannot change the full homogeneous linearized Euler nullspace under the theorem's radial and factorization premises.  This sharpened argument is developed in [the full arbitrary nonseparable vacuum universality owner](../../A4D_ARBITRARY_NONSEPARABLE_BOOK_COST_FINITE_EINSTEIN_VACUUM_UNIVERSALITY_2026_10_20.md).
 
 ## What this result buys the GR route
 
