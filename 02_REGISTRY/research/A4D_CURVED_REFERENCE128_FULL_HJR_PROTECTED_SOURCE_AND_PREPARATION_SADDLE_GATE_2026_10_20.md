@@ -188,3 +188,45 @@ This is a strict \(\ge4/\ge16\) NULLITY bound on the R-preparation fixedRIGHT **
 ## VI. Fixed-boundary IFT FIREWALL: the preserved Fourier subspace is a BOUNDARY HYPOTHESIS, not automatic
 
 The original reducing-intertwiner proof explicitly assumes periodic shifts OR boundary operators which preserve constant transverse profiles and the stated true positive-adjoint identities. A fixed-collar Dirichlet boundary condition can couple transverse-constant modes to the collar and break \(\Delta\mathcal J=\mathcal J\Delta_\parallel\). The whole all-order pp-profile source-null and Fourier band-degeneracy theorems above apply to the user's reported fixed-boundary 10-variable interval-IFT **ONLY IF** its exact boundary operator satisfies those same hypotheses (or a new invariant-subspace calculation is supplied). If it does not, the positive exact curved reference128 owner itself cannot be imported unchanged into that fixed-boundary problem; one must replay the ACTUAL complete full16 boundary operator to decide the spectral Euler, Gram and observer source. This is an essential provenance guard, not a disproof of the reported curved branch. The actual boundary/10-equation interval data were not provided in this GitHub owner during this review and therefore their claimed full-system exactification has NOT been independently audited here. \`GR_closed=false\`.
+
+
+## VII. NEW EXACT REAL-NATIVE **FREDHOLM OBSTRUCTION**: a local coframe source CAN COUPLE the preparation cutoff zero mode
+
+The all-order pp-curvature \(H,K\) source-null and protected spectral band moduli do NOT mean the full local 16-leg coframe equation is also blind to those reference128 occupations. On the TRUE native original low-grade grade0, the full positive-adjoint Dirac acts as \(D(fb_0)=\nu_x \delta f\,b_1\) for transverse-constant f and varying *local* inverse-u coframe leg \(v_u(x)=\nu_x q\). Its exact native Rayleigh contribution is the actual original quadratic form
+\[
+R_{b_0}(f;\nu_x)=\sum_x\nu_x^2 |(f(x+1)-f(x))/h|^2.
+\tag{17}
+\]
+No extra source was invented; this is the grade0 projection of the SAME full \((d+d^\dagger)^2\) from the owner. The other occupied reference columns are held fixed.
+
+Use the original exact periodic \(L_u=65\) cutoff frequency \(k=32\), two orthonormal REAL Fourier modes
+\(f_c(x)=\sqrt{2/L}\cos(2\pi kx/L),\ 
+f_s(x)=\sqrt{2/L}\sin(2\pi kx/L)\).
+They are members of the same exact \(\lambda_k\) eigenband; choose a lowest-energy rank128 preparation occupying \(f_c b_0\) but not \(f_s b_0\) (other cutoff states chosen as in §V). Rotate this ONE occupied RIGHT column as \(f_\theta=\cos\theta f_c+\sin\theta f_s\). Its fixedRIGHT \(\mu=1/128\) and all occupied-state Gram conditions are unchanged. On the uniform coframe \(\nu_x=\nu\), the full native R is **independent of θ at every order**.
+
+Now vary ONE true original coframe leg locally, \(\nu_x(\epsilon)=\nu+\epsilon\,\mathbf1_{x=0}\), preserving positive invertible coframe for small ε. The full finite positive Dirac first mixed source has the EXACT analytic nonzero coefficient
+\[
+\boxed{
+\partial_\epsilon\partial_\theta R(0,0)
+=4\mu\nu\,\delta f_c(0)\delta f_s(0)
+=\frac{\nu}{16Lh^2}
+\bigl(\cos(2\pi k/L)-1\bigr)\sin(2\pi k/L)\ne0.
+}\tag{18}
+\]
+At the explicit legitimate source-control fixture \(L=65,k=32,\nu=0.7,T=1.3,h=T/L\), this is \(-0.16249816824022978\ldots\). The formula is exact for any admissible \(L,k,\nu,h\); decimal evaluation is merely a witness.
+
+For a putative **C¹ continuation through this SPECIFIC prescribed lowest-energy projector** \(\theta=\theta(\epsilon)\) satisfying the COMPLETE fixedRIGHT preparation Euler \(\partial_\theta R(\theta(\epsilon),\epsilon)=0\), differentiation at zero would require
+\[
+0=R_{\theta\theta}(0,0)\theta'(0)+R_{\theta\epsilon}(0,0)
+=0+\underbrace{R_{\theta\epsilon}(0,0)}_{\ne0}.
+\tag{19}
+\]
+Contradiction. This is the exact finite **Fredholm compatibility test**: for the actual full symmetric preparation Hessian \(E=D_{MM}^2R\) with kernel vector z and prescribed local coframe perturbation v, a smooth stationary preparation branch requires
+\[
+\boxed{\langle z,D_{Me}^2R\,v\rangle=0.}\tag{20}
+\]
+The exhibited original coframe/source v violates it. It follows that a 10×10 interval-certified **GEOMETRIC** IFT on fixed boundary data cannot, by itself, be promoted to a smooth full preparation+observer+coframe IFT through this chosen reference128 spectral minimizer under arbitrary local coframe boundary changes. It CAN be repaired by allowing the degenerate occupied projector to reorient already at the base, imposing a truly physical extra preparation constraint/price, treating the kernel with Lyapunov–Schmidt and compatibility conditions, or restricting admitted external coframe variations. But none may be silently assumed selected by G0.
+
+This is not a global contradiction to the user-reported finite curved stationary solution, which could occupy a *different* quartet/full16 preparation, constrain the coframe boundary, or have a nonzero external prepared-state source. The exact statement is **one strict counterexample to automatic IFT continuation of the specific native stable rank128 low-grade projector under an explicitly admitted local coframe variation**. The pp-profile \(H,K\) tangent remains unobstructed by THIS mechanism because \(D_{H,K}D_MR=0\) (§I), illustrating why real source type matters.
+
+**Independent original-stencil replay:** \`sources/d0_curved_native_preparation_2026-10-20/check_native_coframe_reference128_fredholm_failure.py\`. Checks exact equal Fourier eigenenergy on the native periodic scalar-grade0 component, fixedRIGHT rank-one spin of an occupied Fourier column, θ-flat R on uniform coframe and the exact mixed coefficient (18). No numerical ten-variable Jacobian or undocumented physical action selection is claimed. \`GR_closed=false\`.
