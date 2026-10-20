@@ -7,6 +7,16 @@ Research: exact original-CAR16 identities, scoped obstruction to a source
 substitution, and a conditional small-face limit. No physical action is
 selected; full D0=>GR and original raw-216 remain open.
 
+**Positive continuation / scope of the criterion:** the subsequent
+[two-record phase atlas](A4D_TWO_RECORD_PHASE_ATLAS_AND_AUTOMATIC_PREPARATION_SOURCE_2026_10_19.md)
+constructs the complete closed-comparison differential on this same CAR16.
+It supplies the preparation component automatically and gives six locally
+independent scalar Lorentz phase coordinates even after full Julia flag
+dephasing. Thus the curvature test below remains a valid obstruction to
+the specific one-arm substitution `alpha=dS`; it is NOT a general necessary
+condition for a physical D0 history action or its closed comparison. The
+new parent consumer compares the full observable/price differential.
+
 ## 1. The missing composition test after the large update
 
 The [two-history owner](A4D_TWO_HISTORY_ARCHIVE_CAR_PHASE_GR_SOURCE_SYNTHESIS_2026_10_19.md)

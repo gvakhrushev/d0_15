@@ -10,7 +10,7 @@
     "02_REGISTRY/research/A4D_TWO_LINE_CAR_PROJECTIVE_LORENTZ_BARGMANN_GAUGE_FREE_2026_10_19.md": "584cc078382d7f8b6ccdc3017119bfe4617e8138f0177ce2e2c5fa66118e65a7"
   },
   "artifact_sha256": {
-    "02_REGISTRY/research/A4D_TWO_HISTORY_PHASE_HELMHOLTZ_AND_NATIVE_ACTION_GATE_2026_10_19.md": "e2fefc4b92a0e61e5e48cd2f3db47934a87b62ee0696042aa918ba6dc5a6bbb1",
+    "02_REGISTRY/research/A4D_TWO_HISTORY_PHASE_HELMHOLTZ_AND_NATIVE_ACTION_GATE_2026_10_19.md": "36f7b0e5d7a479caeae43bafc598ea0b743079bb298d0c8d01fa5c4da9e665d7",
     "02_REGISTRY/research/sources/d0_two_history_phase_integrability_2026-10-19/check_phase_integrability.py": "ed844fb9f7c801220c9a6b6e3535b9e2f72295a8cabe6c3cf69529bc1a4660bc",
     "02_REGISTRY/research/sources/d0_two_history_phase_integrability_2026-10-19/RESULT.json": "0d62262e749b57169a1e40919f98caae35cb4490c0631d49b5b4d9ca9ba515c7"
   },
@@ -36,5 +36,10 @@
     "validate_agent_protocol": "PASS",
     "git_diff_check": "PASS"
   },
-  "integrated_full_instrument_readout": "Latest two-line owner \u00a75: unconditional GOOD-and-CAR determinant 1/373248 with BAD retained; not identified with a scalar source. The new exact checker concerns the compact unitary restriction, not the full Julia phase source."
+  "integrated_full_instrument_readout": "Latest two-line owner \u00a75: unconditional GOOD-and-CAR determinant 1/373248 with BAD retained; not identified with a scalar source. The new exact checker concerns the compact unitary restriction, not the full Julia phase source.",
+  "later_scope_annotation": {
+    "input_ref": "90fc38d972cc8538ce6fff2912906a496733c097",
+    "date": "2026-10-20",
+    "change": "Added positive-continuation notice; mathematical formulas/checker unchanged."
+  }
 }

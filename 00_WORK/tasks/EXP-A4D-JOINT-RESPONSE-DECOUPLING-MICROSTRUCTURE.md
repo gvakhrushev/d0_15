@@ -2080,6 +2080,55 @@ and one bounded helper; no old scientific replay.
 
 ## Objective
 
+### 19 October continuation: test the phase criterion on the complete closed comparison
+
+Input `90fc38d972cc8538ce6fff2912906a496733c097`, same Draft #334 and
+`native-programme-v1`. The phase-integrability theorem excludes identifying
+the diagonal one-arm Berry covector with an instantaneous scalar gradient;
+it does not exclude the differential of an actual closed comparison or a
+history action. Derive, before further rejection of the phase route, the
+complete moving-preparation first source of the existing three-ray Bargmann
+comparison on the original CAR16 with the original Julia GOOD/BAD scale
+`T=Lambda(U)/2`. Preserve both branches, grade/parity, gauge invariance and
+all reference/preparation jets. Determine whether the apparent missing
+preparation term is supplied by this very observable, without a counterterm.
+Consumer: the phase-to-same-action interface of the full geometric/history
+Schur, not a new gravitational action or GR closure. Remaining hypotheses:
+native comparison admission, its actual Cost-Info binding, full Lorentz/
+coframe source and stationary/refinement recovery. Write surfaces: existing
+task/primary/strategic memos, a bounded complete-comparison proof and its
+exact checker/receipt. Read-only independent review checks the source typing
+against Book03 and independently verifies the retained-flag calculation.
+Smallest decisive check: exact Bargmann product and its full two-variable
+source, compared with the old one-arm covector at the same positive scale.
+The positive construction is extended to two DEPHASED complete output
+densities, with the already-owned six CAR anchors. The bounded exact
+consumer now includes the all-six Lorentz scalar-phase Jacobian, its
+nonzero determinant, and unconditional CAR-tomographic/two-copy readout.
+Owner: `A4D_TWO_RECORD_PHASE_ATLAS_AND_AUTOMATIC_PREPARATION_SOURCE_2026_10_19.md`;
+packet: `sources/d0_two_record_phase_atlas_2026-10-19/`. No compulsory
+whole-history phase coherence is inferred from the two-line premise.
+
+20 October intake: consume `d533539ba87aaddb567efa84beba765f608af296`,
+especially the already-published literal-Golden-p three-density phase
+atlas and its endogenous preparation source, the six-root-triangle
+offshell all40 identity, and Aut(K913) orbit naturality. Do not re-report
+those results as new. Derive the TWO-density fixed-effect variant at a
+general GOOD probability gamma, then specialize to original gamma=p²;
+identify any balanced-flag information loss exactly. A read-only premise
+review also checks whether the orbit's vertex names are a gauge choice
+requiring no physical random orbit preparation, while preserving the real
+site-conditioned word execution/price obligation. Consumer: the shortest
+same-programme geometric/source interface, not a new independent action.
+Latest same-day intake `960da9344e1893888d85d41fc57bdca9bade259e`
+adds the exact Book factor `W=Tr(K³)/7722` multiplying the six-star and
+positive Golden17 all40 reconstruction. Consume both, and test whether
+the reported `F_star DW` residual actually survives the FULL joint Euler
+on an independent common-K chart. Apply the already-owned coframe degree2
+and same-action Schur rather than requiring offshell bare-source equality
+before reduction. Distinguish one global W from site-dependent W_x and
+preserve the physical metric/matter/refinement obligation.
+
 For mesh size `h=1/L`, a fixed smooth nondegenerate background sampled as `Q_h`, the designated smooth comparison branch `K_h^sm` from #216, and exact joint-critical sequences `K_h` satisfying the task's declared connection and metric source equations, determine whether
 
 \[

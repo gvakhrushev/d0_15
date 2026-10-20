@@ -1,0 +1,63 @@
+{
+  "input_ref": "960da9344e1893888d85d41fc57bdca9bade259e",
+  "publication_base": "916880f9565340618b3bf0d0bae850bf8d6b3fff",
+  "command": "python 02_REGISTRY/research/sources/d0_book_triangle_joint_reduction_2026-10-20/check_joint_reduction.py",
+  "environment": "Python3.12.14, SymPy1.14.0 in isolated check-env",
+  "input_source_sha256": {
+    "02_REGISTRY/research/A4D_ORIGINAL_BOOK_TRIANGLE_PRESSURE_MULTIPLIES_SIX_FACE_PALATINI_SOURCE_2026_10_20.md": "b97700d0ea02acae72f6f4f67fea66cdf74553f87de9f97472052db21a742593",
+    "02_REGISTRY/research/A4D_EXACT_GOLDEN_POSITIVE_BOOK_SCORE_ALL40_ORIGINAL_STAR_SOURCE_2026_10_20.md": "c490086cc843c35c7f805e07b36d13ed36bc60fd772658d087cc99bc971da66d",
+    "02_REGISTRY/research/A4D_EXACT_AF_RADIAL_COFRAME_EQUIVALENCE_NONLINEAR_SPIN2_2026_10_18.md": "7a08b20421a84ce993954baed35e61132bbe8157f958b9884fde7bcb84aa3f46",
+    "02_REGISTRY/research/A4D_DIRECT_DENSITIZED_LEFT_FEEDBACK_EINSTEIN_SCALAR_SOURCE_2026_10_18.md": "a48ff3bb7e88e3b2dde8252029e69d31f1ee8a7de4577415bb13136554c65efa",
+    "02_REGISTRY/research/sources/d0_native_two_three_clock_2026-10-20/check_original_triangle_book_pressure_pal_source.py": "033f2f0e18481059c8fedee4a88851e09a09ade41f244a57634b0c53184ad732",
+    "02_REGISTRY/research/sources/d0_native_two_three_clock_2026-10-20/check_all_role40_from_original_golden_positive_book_scores.mjs": "617dc675ecbf7862778b840057bd124ba1ee16201197b3e04c64bc24eed20e9c"
+  },
+  "artifact_sha256": {
+    "02_REGISTRY/research/A4D_BOOK_TRIANGLE_PRESSURE_JOINT_EULER_COFRAME_REDUCTION_2026_10_20.md": "79dd7d745bcd5b55099e45697c843460028a952b0b2ba73b3c3e1e03eb3336ff",
+    "02_REGISTRY/research/sources/d0_book_triangle_joint_reduction_2026-10-20/check_joint_reduction.py": "87c033c907591edcd1044b5b10533ade951e505987a5f26205674eccce71c998",
+    "02_REGISTRY/research/sources/d0_book_triangle_joint_reduction_2026-10-20/RESULT.json": "a18d4aa719e081785d4149fd3276d1ddb13dde334bcbc29ed42a9bab8a48cbb9",
+    "02_REGISTRY/research/sources/d0_book_triangle_joint_reduction_2026-10-20/README.md": "c3fe1d017460d9520aa9723839b9ec6f83088932c4681e138a3ebf1af1b466db"
+  },
+  "exact_symbolic_control": "PASS; saved stdout byte-identical",
+  "control_is_native_action_or_GR_root": false,
+  "independent_analytical_review": {
+    "joint_critical_set_and_radial_hypothesis": "PASS",
+    "full_Hessian_and_zero_history_Schur_block": "PASS",
+    "coframe_coordinate_identity": "PASS",
+    "four_dimensional_densitized_massless_scalar_extension": "PASS",
+    "boundary_local_weight_higher_vertex_and_empty_internal_root_limits": "PASS"
+  },
+  "consumed_latest_replays": {
+    "original_all718_triangle_pressure": "PASS",
+    "original_full_Golden17_all640_Euler_source": "PASS; max disagreement 4.206704429243757e-11; observational source identity"
+  },
+  "structural_checks": {
+    "validate_repo": "PASS warnings=0",
+    "validate_work": "PASS",
+    "validate_agent_protocol": "PASS",
+    "git_diff_check": "PASS"
+  },
+  "review_is_registry_acceptance": false,
+  "full_Lean_replay": false,
+  "whole_research_replay": false,
+  "GR_closed": false,
+  "raw216_closed": false,
+  "later_consumed_source_ref": "44159549a7b0b70e76f4ed02b846facfce4e8f5a",
+  "latest_balanced_triangle_Ward_input": {
+    "ref": "44159549a7b0b70e76f4ed02b846facfce4e8f5a",
+    "path": "02_REGISTRY/research/A4D_ORIGINAL_BOOK_TRIANGLE_PRESSURE_MULTIPLIES_SIX_FACE_PALATINI_SOURCE_2026_10_20.md",
+    "sha256": "06859a76055887dc1ab20a8face1e96fbd9a241344f688e9aa85a1077a788cf8",
+    "scope": "Exact nonzero DW and variance kept; multiplied by DP=0 and P=0 at the stated common-factor joint root."
+  },
+  "latest_site_locality_input": {
+    "ref": "f236d61f5a6536f18f412784e02af8197bf7415b",
+    "path": "02_REGISTRY/research/A4D_ORIGINAL_BOOK_TRIANGLE_PRESSURE_MULTIPLIES_SIX_FACE_PALATINI_SOURCE_2026_10_20.md",
+    "sha256": "05a920509900571036d8dfa07827fdbb1df27ee8a2ec8b80aa3307c444227653"
+  },
+  "local_fixed_original_coframe_Schur_control": "PASS correction=-1; coframe change and fixed-metric history elimination distinguished.",
+  "concurrent_native_coframe_source_regression": {
+    "ref": "916880f9565340618b3bf0d0bae850bf8d6b3fff",
+    "path": "02_REGISTRY/research/sources/d0_native_two_three_clock_2026-10-20/check_native_book_third_tick_conformal_solder_all40.mjs",
+    "sha256": "f0e75d5d18553f43ba400839deb881df7d3831b346674a6bb73eba7c13b31c31",
+    "result": "PASS all640 original moving Book sources; consumed independent regression."
+  }
+}

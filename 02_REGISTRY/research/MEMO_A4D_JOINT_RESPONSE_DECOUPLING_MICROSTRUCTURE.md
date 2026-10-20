@@ -8555,3 +8555,63 @@ exception set, followed by pointwise compatibility checks there. Higher-order
 continuations and the normalized response terminal remain open. The bounded
 replay is
 [`a4d_y232_designated_warp_amplitude_generic_check.py`](certificates/a4d_y232_designated_warp_amplitude_generic_check.py).
+
+## 20 October: native two-record source, balanced-flag loss and the shortest six-face consumer
+
+The [positive two-record synthesis](A4D_TWO_RECORD_PHASE_ATLAS_AND_AUTOMATIC_PREPARATION_SOURCE_2026_10_19.md)
+consumes the newer Golden-p three-density theorem, native six-triangle
+all40 source and orbit/Bianchi controls at `d533539b`. Its new variant
+uses two dephased full Julia densities and six fixed CAR effects:
+`det DS_g=g^9(1-2g)^3/[124416(g²+(1-g)²)^6]`.
+At the original `g=p²`, determinant `p^9/15552000` is nonzero; at
+balanced `g=1/2`, all three boost phase derivatives cancel and rank drops
+to3. The full density does not lose those boost directions. A calibration
+failure of this scalar phase statistic cannot reject the whole carrier.
+
+The native compact preparation example gives the complete source
+`h^-2 d arg Z2=d(kappa w theta)+O_C1(h⁴)`,
+`kappa=(5-sqrt5)/10`, without inserting a preparation counterterm.
+The old1/4-scale controls remain explicitly separate from primitive p.
+Unconditional flag/CAR tomography or two-copy Hermitian readout suffices;
+no coherent whole-history comparison or third prepared density is needed.
+The prior nonclosed one-arm connection is a different source object.
+
+The same synthesis sharpens the current all40 consumer: any moving
+normalized distribution of pointwise equivalent geometric embeddings
+has exactly the same source as F_star; physical uniform gauge-orbit
+preparation is unnecessary for this descent. Full-scene gauge requires
+all Cost/Info and records to be relabeled, and actual controller/label
+prices are retained. Scene face matrices must remain functions of shared
+Role links, as the newest Bianchi/Wilson guard proves. Exact full32
+checker and independent formula reviews pass; strategic §7.100 consumes
+the result. Actual full Book selection, independent internal stationarity,
+same-action recovery and the distinct raw216 terminal remain open.
+
+## 20 October: exact joint reduction of the newly identified Book triangle factor
+
+The [common-pressure reduction](A4D_BOOK_TRIANGLE_PRESSURE_JOINT_EULER_COFRAME_REDUCTION_2026_10_20.md)
+consumes the latest `W=Tr(K³)/7722` six-face marked observable and positive
+Golden17 all40 source reconstruction. Offshell `d(WP)=W dP+P dW` is
+correct, but its second term need not survive the FULL geometric Euler.
+For an actually derived action `A(r)+W(r)P(y)` on the stated independent
+radial coframe chart, quadratic homogeneity forces P=0 at geometric
+stationarity. Thus the joint critical set factorizes in original fields,
+and the history/geometric Hessian mixed block is zero exactly. No W^-1
+term, constant-W assumption or erased source is needed in this class.
+
+The all-order coordinate identity `E=sqrt W e` and the real densitized
+massless-matter extension follow from the same existing degree2 owner.
+Higher effective original-coordinate vertices, local W_x metric changes,
+forbidden radial boundary directions and actual geometry-dependent
+remaining prices are explicitly retained. Strategic §7.101 states the
+consumer: test true native full-price membership and an actual internal
+root before judging a pressure cross-source. This is a positive exact
+composition theorem with independent review, not selection of the full
+Book action, a new root, or GR/raw216 closure.
+
+Latest `f236d61f` preserves site-conditioned K_x/W_x, so the common-K
+zero-Schur theorem is only a stated subcase. For local weights the exact
+full block pullback and a nonzero fixed-original-coframe Schur control
+are retained. The physical source must specify whether the observed
+metric is e or the derived E; coordinate equivalence alone cannot change
+the raw fixed-metric question.

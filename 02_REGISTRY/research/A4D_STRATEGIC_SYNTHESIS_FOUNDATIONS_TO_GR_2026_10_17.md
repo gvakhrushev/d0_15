@@ -5872,3 +5872,101 @@ A wholly independent *genuinely ORIGINAL 4D Role link* regression [full offshell
 follows because \(S=(P+P^{-1})/2\) has \(S^2=I+R^2\), \(S\sim I\). Hence the original 13-vertex C-zone has enough EXISTING native root-ABC triangle TYPES to encode six actual Role plaquettes via \(0→9→C_{20..25}→0\) at EACH Golden LEFT site AND four actual global Role Wilson holonomies via \(0→9→C_{26..29}→0\) at ONE Role root. **TOTAL TEN original triangle TYPES**, none new; all scene chord values must be actual deterministic functions of genuine SHARED Role links, not free auxiliary Euler. Positive Golden17 L4 256-site control reconstructs 1536 nontrivial Role faces and 4 Wilsons to ≤4.5e−16 and replays ALL1024 actual nonlinear 3-cube Bianchi with error ≤1.4e−15, every real Golden/Bell failure retained; this is algebraically exact near-flat (matrix principal sqrt) plus a bounded floating regression, NOT exact numerics beyond that.
 
 [Exact three-prime original cochain/source check](sources/d0_native_role_face_integrability_2026-10-20/check_six_scene_triangles_role_bianchi_harmonic_wilson.mjs), [exact nonabelian 1536 based face/1024 cube check](sources/d0_native_role_face_integrability_2026-10-20/check_exact_nonabelian_role_cube_and_global_wilson.mjs), [255-mode exact explicit face/Wilson inverse](sources/d0_native_role_face_integrability_2026-10-20/check_exact_role_face_to_link_four_wilson_inverse.mjs), [actual positive Golden17 local full-group inverse](sources/d0_native_role_face_integrability_2026-10-20/check_positive_golden17_role_face_wilson_local_inverse.mjs) all PASS. This now CLOSES mathematical OBSERVABILITY/INTEGRABILITY of original 4D Role connection in the declared near-flat finite chart. Does NOT SELECT compulsory native G0 Book03 full H+J+R/Cost−Info action: actual Golden LEFT actual four link/coframe PREPARATION, scene root controller, full good/bad/oldRIGHT/ref128/clock/work, independent native auxiliary Euler and signed coframe/Hodge first SOURCE still must all be derived from ONE admitted same-history programme, not attached as Einstein-like free action. Flat + Wilson observations do not resolve physical source selector, full curved root or original RAW-216. GR_closed=false.
+
+### 7.100. Shortest native comparison: two Golden records, exact imbalance gate and no random gauge-orbit prerequisite
+
+The [complete two-record comparison](A4D_TWO_RECORD_PHASE_ATLAS_AND_AUTOMATIC_PREPARATION_SOURCE_2026_10_19.md)
+consumes the already-published native-p THREE-density phase/preparation
+owner, the six-root-triangle all40 identity and scene-orbit naturality at
+`d533539ba87aaddb567efa84beba765f608af296`; it does not repeat their
+discovery. Its new exact variant uses TWO fully flag-dephased output
+densities and a fixed original CAR effect. The primitive Golden probability
+`g=p²`, `1-g=p` is retained. On the same original two probe preparations
+and six positive CAR effects, the six SCALAR phase coordinates have
+`det DS=p^9/15552000>0`, without a third prepared density or
+interhistory coherence. This is a different observable from the already
+owned three-density atlas with determinant `p^9/1152`.
+
+The decisive general identity is
+`det DS_g=g^9(1-2g)^3/[124416(g²+(1-g)²)^6]`.
+At balanced `g=1/2`, GOOD/BAD cancel ALL three boost phase derivatives and
+the rank is exactly3. The full output density still carries boost data:
+the failure belongs to this statistic, not to D0 or Lorentz kinematics.
+Every unbalanced `0<g<1` has rank6; this does not uniquely select Golden.
+At native p, the exact rotating-preparation source is
+`h^-2 d arg Z2=d(kappa w theta)+O_C1(h⁴)`,
+`kappa=(5-sqrt5)/10`, with visibility at least `delta p³` on
+`w≤1-delta`. The preparation term arises inside the same observable.
+
+The latest six-triangle source satisfies `F_iota=F_star` for each
+embedding. Consequently even arbitrary MOVING normalized weights obey
+`sum_iota q_iota(y)F_iota(y)=F_star(y)` with ALL source jets equal;
+uniform orbit preparation is not needed for this geometric descent.
+Geometric connections have a canonical quotient class without a fixed
+numbered root. Full Book gauge equivalence, however, requires simultaneous
+relabeling of Cost/Info, preparation, records and reference. Moving only
+SO placements on a fixed nonuniform Cost can change the actual price.
+The existing naturality owner already treats the122M orbit as a count,
+not a proposed register; this supplies the sharper source consumer.
+
+The 4D Bianchi/Wilson replay is consumed as a VARIATIONAL-DOMAIN guard:
+six scene chords are the actual shared-link plaquette functions, not six
+extra independent Euler inputs. The shortest test uses original Golden
+LEFT Role addressing, retains labels through genuine four-link word
+composition, quotients coordinate relabelings afterwards, and compares
+the paid full Book source of those same native-p records. It needs no
+all327 tomography, coherent history superposition, random gauge orbit or
+vanishing constituent Berry curvature. It DOES still need the genuine
+field/preparation/readout programme, full Cost-Info/H+J+R price, independent
+internal stationarity and recovery. A fitted scalar in an invertible
+observable atlas is not physical selection. Exact checker and independent
+derivations pass; no GR/raw216 closure is asserted.
+
+### 7.101. The new Book multiplier is not automatically a history defect: joint Euler removes it in the common-factor class
+
+The [joint pressure/coframe reduction](A4D_BOOK_TRIANGLE_PRESSURE_JOINT_EULER_COFRAME_REDUCTION_2026_10_20.md)
+consumes the latest exact `W=Tr(K³)/7722` marked-source owner and positive
+Golden17 all40 score reconstruction at `960da934`. Their observable
+identities are preserved; neither is promoted to the selected physical
+price. The new exact conditional application uses the original star's
+coframe degree2 BEFORE treating `P DW` as an independent GR obstruction.
+
+For a genuinely derived full action `S=A(r)+W(r)P(e,U,Psi)`, with one
+COMMON positive W, independent internal r and A independent of geometry,
+an admissible radial coframe tangent gives `e·S_e=2WP`. Hence full
+geometric stationarity forces P=0, and exactly
+`Crit S=Crit A × Crit P` in the ORIGINAL field coordinates. At the joint
+root, `H_ry=DW tensor DP=0`, `H_rr=H_A`, `H_yy=W H_P`.
+The same-action history Schur correction is therefore ZERO, without a
+chosen W^-1 compensator, W=1, or freezing DW. A singular internal centre
+does not invalidate this zero-block identity; existence remains open.
+
+At all orders `E=sqrt W e` gives the exact same-action identity
+`S=A+P(E,U,Psi)` and an explicit triangular inverse. In original e,
+higher effective vertices can still contain
+`-(1/2)(DW)^T H_A^-1(DW) P²`; do not erase them or identify raw source
+normalizations. A local W_x admits sitewise coframe dressing but need
+not preserve original-e link equations or metric. Common weighting of
+the genuine four-dimensional VOLUME-DENSITIZED massless scalar kinetic
+density extends the degree2 theorem; undensitized q, independently
+weighted matter, degree4 potential and the rest of full H+J+R do not
+automatically meet it.
+
+**Important domain boundary:** a fixed coframe collar may forbid the
+radial tangent. Then P=0 must be established on the actual family; the
+owned common-null curved sector is a sufficient constructive case, not
+a proof for every boundary problem. The actual action must belong to
+the stated class, its internal root must exist, and its operational
+metric/source/refinement must be identified. These are physical inputs,
+not conclusions of multiplying an observed star by W. The positive
+result removes the overly strong demand that offshell bare covectors
+already coincide BEFORE joint Euler elimination. Exact symbolic and
+independent analytical checks pass; GR/raw216 remain open.
+
+The latest locality intake `f236d61f` explicitly allows independent K_x.
+It does NOT supply a common W. The local reduction therefore retains
+the full original-coordinate Hessian (6a) and history Schur (6b) of the
+new owner. Its exact control gives a nonzero `-1` correction at fixed
+original coframe, but zero mixed block in the dressed coframe. Identifying
+the operationally fixed coframe is essential; the change of variables
+alone does not discharge the physical fixed-metric response theorem.
