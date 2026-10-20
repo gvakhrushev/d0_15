@@ -134,6 +134,68 @@ admission/clock/work/Book-cost natural transfer of a REAL retained
 ABC scene central memory bit to its internal program selector, not
 construction of another free physical gate. No new GR theorem.
 
+### Future-MDL Q8 programme bit, finite Popperian trials, and actual native programme price (20 Oct 2026)
+
+New integrated original native owner:
+[A4D_M1_NATIVE_Q8_ORDER_MDL_COST_FINITE_POPPERIAN_SPIN_ASSAY_2026_10_20.md](A4D_M1_NATIVE_Q8_ORDER_MDL_COST_FINITE_POPPERIAN_SPIN_ASSAY_2026_10_20.md).
+
+Stronger than the older typed Q8 sign-port comparison: compiled ORIGINAL Lean
+\`OrderMemoryControl.nativeQ8ChronologicalWord\` EXECUTES the actual
+ordered 8-gate Q8 lists directly and proves \`J³I³JI=relativeSignQ\`
+versus \`J⁴I⁴=I\` with the SAME exactly four local-i and four common-j
+primitive counts. Golden bright-port Born probabilities differ
+EXACTLY 4p³ versus 0, p=φ^-1. Therefore a scalar count-only
+MDL/Book predictor provably CANNOT preserve BOTH true future
+outcomes (\`originalQ8InventoryCannotPredictGolden\`), even if
+the same primitive gate costs are paid. One programme-order
+memory bit is NECESSARY and SUFFICIENT on this two-programme
+source; \`nativeQ8ProgramFutureMemoryAtLeastTwo\` formalizes
+the capacity lower bound. Conditional on an ACTUAL native
+\`ActionProtocol\` with these two states and an admissible real
+switch, \`nativeQ8ProgramDistinctionHasUnitCost\` forces the
+original nontrivial transition Cost≥S_min=1. It does NOT prove
+the actual physical G0 chooses or pays for the switch.
+
+Stronger native future archive: the already-owned
+\`FiniteProtocolClock.register\` CNOT, with the two original
+programme/record bits, distinguishes all FOUR state combinations
+using only their CURRENT and ONE FUTURE Golden-port response.
+Lean \`nativeQ8RecordedProgram_futureProfile_injective\` and
+\`nativeQ8RecordedProgram_futureMemoryAtLeastFour\` prove the
+full future-minimal memory capacity exactly TWO bits although
+the current detector has TWO possible bright probabilities.
+The two fault-free INDEPENDENT M1 verifier lines are not the
+two archive bits and a THIRD perfect checking line is not required.
+
+Popperian ONE-SIDED falsification with actual native Golden Born
+law: grouped +1 has exactly zero bright chance; Q8 ordered−
+has bright=4p³ and still strictly positive dark=p⁶. Thus
+one observed bright can refute the ideal grouped source but
+NO finite number of independent DARK trials logically excludes
+the ordered source: \`P_dark_all(n)=p^(6n)=φ^(-6n)>0\`,
+compiled Lean owner. The exact log_φ likelihood evidence for
++1 after n all-dark samples is **6n Golden information-code
+units**, which are NOT physical ActionProtocol work quanta.
+Independent fresh reset/repeat has NOT been derived from one
+16-stage Golden machine. On the original 327 Q8 central-sheet
+basis (actual 359/32/1287/960 source) one reusable mathematical
+existing Golden detector TYPE can test all327 bits if G0 physically
+routes and stabilizes each original ABC syndrome, with
+full-family false-negative <=327p^(6n) (Boole bound).
+At target 10^-6, n=7 independent assays per bit =2289 full
+comparisons/34335 existing 15-stage forward clock operations,
+before actual reset/reference/work fees. The new exact native
+checker certifies the 327 responses and all code/repeat budgets.
+
+The GR physical selection burden is now a concrete **HISTORY-WORD →
+RETAINED PROGRAMME STATE → original forward eight-gate comparator /
+already-owned 16-clock RECORD → correctly paid full Book03
+H+J+R/Cost−Info action**. No separate Spin detector, third
+primitive checker or fitted Golden angle is required to CONSTRUCT
+the mathematical comparison. An original G0 admission and full
+CAR/Palatini first-Euler source equality remain missing; this
+MDL/Popperian result is NOT \`GR_closed\`.
+
 ### Route update — nonlinear completion is no longer the open step
 
 For the already-built golden-AF geometric branch, the all-order nonlinear
