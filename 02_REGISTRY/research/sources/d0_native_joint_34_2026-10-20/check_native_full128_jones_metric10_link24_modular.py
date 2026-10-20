@@ -220,6 +220,25 @@ def check(q,a,i,want34,want37):
     assert (r34,d34)==(34,want34),(q,r34,d34,want34)
     assert (r37,d37)==(37,want37),(q,r37,d37,want37)
     assert rankdet(J,q)[0]==37
+    # SAME actual three historical outputs vs the LITERAL G2/STAR finite
+    # Palatini 3x24 REAL local face-mixed source on the strong metric screen.
+    # The analytic screen checker independently constructs these rows from
+    # old epsilon_S, STAR_MAP, G2, coframe and plaquette Fourier jets.
+    star_real=np.array([
+        [0,-2,-1,2,1,0,0,-2,-1,2,1,0,0,2,0,-2,0,0,0,0,2,0,-2,0],
+        [-1,-1,1,-1,-2,-3,-1,3,0,-5,-1,-3,2,0,1,2,-1,0,-2,-2,-3,2,5,6],
+        [-2,-3,-3,-1,1,3,3,0,0,0,-3,0,-1,0,0,0,1,0,1,3,3,1,0,-3]
+    ],dtype=np.int64)%q
+    three_history_link=J[[records.index(k) for k in (17,27,59)],16:]%q
+    assert rankdet(three_history_link,q)[0]==3
+    assert rankdet(star_real,q)[0]==3
+    combined=np.vstack((three_history_link,star_real))%q
+    assert rankdet(combined,q)[0]==6
+    six_col_det=rankdet(combined[:,:6],q)
+    assert six_col_det==(6,{101:45,1009:302,4001:2509}[q]),(q,six_col_det)
+    print('PASS SCREENED_SOURCE_SPAN',q,
+          'history-link rank3 star-cell rank3 stack rank6',
+          'first6 mixed-source determinant',six_col_det[1])
     print('PASS field',q,'metric10+link24 det',d34,
           'coframe16+link24 rank37, 3 SO3 gauge, 37-minor det',d37)
     return d34,d37
