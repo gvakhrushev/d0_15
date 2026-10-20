@@ -123,6 +123,32 @@ console.log("PROSPECTIVE_TEST",JSON.stringify({
   ],GR_closed:false
 }));
 
+
+// Even if the TARGETED shortest ABC experiment costs MORE physical
+// preparation/clock work per attempt, ex-ante MDL prefers it in
+// expected *total* Cost (under declared constant-cost fresh-trial
+// geometric stopping) whenever the relative true native paid cost
+// is below the exact ORIGINAL K913/phi threshold.  No equality of
+// event probability and real ActionProtocol work is assumed.
+const exactNativePhysicalCostBreakEven=
+  117+(359/33)/(p*p);
+const originalRatio=targetedBright/passiveBright;
+ok(Math.abs(exactNativePhysicalCostBreakEven-originalRatio)<2e-13,
+ "EXACT original native 33/359/7722 graph-and-phi break-even price ratio: 117+(359/33)*phi²");
+const costExamples=[1,5,10,50,100,145,150,200];
+for(const costRatio of costExamples){
+ const expectedCostRatio=costRatio/originalRatio;
+ ok((expectedCostRatio<1)===(costRatio<exactNativePhysicalCostBreakEven),
+ "physical-work threshold: directed Q8 test optimal in expected actual Cost iff C_directed/C_passive < 145.481 when cost ratio "+costRatio);
+}
+console.log("BOOK_SPIN_TRUE_COST_THRESHOLD",JSON.stringify({
+ exact_original_K913_graph_phi_cost_break_even:"117+(359/33)*phi^2",
+ evaluated_cost_ratio:exactNativePhysicalCostBreakEven,
+ physical_decision_under_complete_constant_per_attempt_cost:
+  "targeted minimizes expected accumulated real action before first native Golden bright iff full native C_targeted/C_passive is < 117+(359/33)phi^2",
+ why_not_physical_proof:"actual G0 target preparation, oldRIGHT, active Spin routing, clock, full Book H+J+R costs and retry independence not yet derived"
+}));
+
 console.log(JSON.stringify({
  original_graph_vertices:33,original_directed_edges:edges.length,
  true_native_backtracks:two.length,true_native_triangles:three.length,
