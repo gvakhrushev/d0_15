@@ -116,3 +116,32 @@ with all real coframe16, proper Lorentz24, CAR, prep, clock, all archive/history
 **Stop criteria, in order:** (a) no compulsory paid same-history two-line reference → no physical phase provenance; (b) no admissible ordered Lorentz/CAR phase → do not claim scalar Book recovers signed gravity; (c) physical native source fails the actual flat J23 Ward, even after the independently derived full paid terms → cannot identify it with the flat stationary Palatini action; (d) no exact uniform joint refinement → remain conditional geometric GR, never a full closure. Conversely, passing a CAR mixed phase alone is ONLY a positive G0→G1 interface result, not a shortcut to full 40 Euler/Einstein.
 
 **Route decision:** freeze CP-α/359/653/6-step/31:-35:4 source expansion as accomplished finite scalar sub-sector work unless a newly derived ACTUAL native phase/cost map consumes it in (7.1). This leaves a named, falsifiable coherent G0 selector and the original nonlinear critical-refinement gate. No other graph invariant is an adequate substitute. GR_closed=false.
+
+
+## 8. FULL SIX-GENERATOR REVERSE WELD: the existing Palatini area-curvature bilinear has an EXACT native CAR16 trace representation
+
+This is a **new general all-six Lorentz representation theorem**, not another scalar graph coefficient or a claim about the selected G0 action. It makes the top-down direction precise: given the finite S_star plaquette term, identify its signed coframe×Lorentz-curvature algebra DIRECTLY on the original CAR16 carrier, without trying to obtain indefinite gravity from a positive 718-scalar Perron Hessian.
+
+Take the already-owned one-particle V=C^4 with η=diag(1,−1,−1,−1), and the original CAR16 Fock ΛV. For ANY X∈End(V), let
+    dΓ(X)=Σ_(a,b=0..3) X_ab c_a† c_b.
+The CAR relations and the **exact 16-state Fock trace** give for ALL 4×4 complex X,Y:
+    Tr_16[dΓ(X)dΓ(Y)]=4(Tr_4(XY)+Tr_4(X)Tr_4(Y)).       (8.1)
+This is verified on all 256 4×4 matrix-unit pairs, so no sampling/generalization inference is needed; the all-X,Y theorem follows by bilinearity. Every X∈so(1,3) is traceless, so
+    (1/4)Tr_16[dΓ(X)dΓ(Y)]=Tr_4(XY), X,Y∈so(1,3).       (8.2)
+
+For the three real boost and three real rotation basis generators, the 6×6 Gram of (8.2) is exactly diag(+2,+2,+2,−2,−2,−2), signature (3+,3−). Thus the original CAR16 DOES contain the **correct indefinite signed proper-Lorentz bilinear for ALL six directions**, not merely an isolated J23 expectation. Four sets of six can of course carry the dimension/signature (12+,12−) of the old 24-link Hessian, but equality with the *actual full link Hessian M* is NOT implied: the spatial cross-couplings and true Euler rows remain independent.
+
+Now for any TWO coframe legs u,v define their bivector B^{ab}=u^a v^b−v^a u^b, internal Lorentz Hodge dual (*B)^{ab}=(1/2)ε^{ab cd}(η B η)_cd, and η-skew endomorphism X_( *B )=(*B)η. For ANY original Lorentz plaquette curvature F= (P−P^−1)/2 ∈ so(η), the exact identity is
+    −(1/4)Tr_16[dΓ(X_( *B )) dΓ(F)]
+       =(*B)^{ab}(ηF)_{ab}.                               (8.3)
+The RHS is the signed Lorentz-invariant Palatini algebraic AREA×CURVATURE contraction (matching the density TYPE of the existing S_star; the old G2, epsilon_rsuv and Hodge convention normalization must be mapped explicitly before claiming the literal finite action equality). There is no new action coefficient: 1/4 is fixed by CAR16 dimension (2^(4−2)).
+
+The original J23 probe is **not a selected isolated lucky generator**: for standard u=e0,v=e1, exact Hodge gives X_( *(e0∧e1) )=J23 and Tr_16[dΓ(J23)^2]=−8. This checks the same signed bivector direction as the existing original two-null Weyl plaquette and CAR16 probe of §5; the other five independent generators obey the very same universal algebraic identity.
+
+**What this actually changes strategically:** the correct signed target for native coherent history selection is the CAR16 area/plaquette pairing (8.3) within a COMPULSORY, paid, retained two-line process. Prove one fixed field-to-record/holonomy amplitude map whose genuinely selected full Cost−Info/source reads THIS particular matrix pairing (and all other full native code/preparation/clock terms), then compare its same-action Euler covectors with the owned S_star on all 16+24 directions, rather than inventing more scalar Book-invariant 'gravity' models. The positive classical Fisher/Hodge source may contribute archive backreaction to that same action, but cannot replace the signed CAR bridge. 
+
+**Crucial firewall:** the algebraic trace in (8.3) is NOT automatically a positive operational probability or a physically compulsory Book source. Real proper Lorentz boosts are nonunitary in the standard positive Fock Hilbert norm. Their original Julia/Choi completion, reference state, event flags, phase comparison and work/Cost remain to be physically admitted. Uniqueness of a Lorentz-invariant bilinear is not uniqueness of the full action. Neither finite physical phase provenance, normalizing c_h in (7.1), matter Ward, exact curved stationary solutions nor uniform #216 refinement follows from the CAR trace identity.
+
+Reproducible original all-six test:
+    02_REGISTRY/research/sources/d0_book_geometry_double_schur_2026-10-19/check_car16_lorentz_area_trace.py
+It checks 256 CAR matrix-unit identities, all 36 Lorentz-basis pairings and the Hodge(e0∧e1)→J23 control. Locally PASS. **GR_closed=false**.
