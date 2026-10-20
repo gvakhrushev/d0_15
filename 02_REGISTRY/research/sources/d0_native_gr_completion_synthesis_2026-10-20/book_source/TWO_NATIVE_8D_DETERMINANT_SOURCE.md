@@ -477,3 +477,40 @@ pins these substitutions. The next physical input is the actual complete
 code/Cost, event-level Info and memory/readout binding, together with
 all work, normalization and upstream equations. This result does not
 select a Book action, supply a field generator or close native GR.
+
+## 15. Actual finite-return comparison: entropy budget and the work receipt
+
+The [paid-return application](PRIMARY_CAR_PAID_RETURN_PRICE.md)
+replaces a free-angle argument by an explicit finite-programme test.
+On the original complete L4/CAR16 carrier, exact role norms and the
+actual cost20 density give epsilon||D_0||²<342732/2068373<1/6.
+The strict gap persists on a nonempty small-t primary chart, uniformly
+over preparations at each frozen geometry, including actual returns.
+The complete128 pointer has H_phi(Y|RIGHT)<3; the full repeated tape
+has entropy<3n, and a complete deterministic finite-cap stop has
+entropy<3 ET when ET>0. All aborts and the actual stop time remain.
+Pre-query factory records contribute their separate H(F|RIGHT).
+These are value budgets, not source or refinement bounds.
+
+Within the supplied matched-code gain contract, the known deterministic
+instruction tape's code cost cancels its corresponding relative gain.
+The6|k| literal letters cannot be added again as uncancelled work.
+The detector's kappa>53 belongs to another declared entropy-Info
+contract and supplies no such work lower bound here.
+
+For the same declared conditional price P_k=A_k+W_k, a genuine
+increment W_k-W_0>=3 excludes every nonzero return as a better
+one-round programme because A_0<3 and every competitor's complete
+classical-tape A_k>=0. Its clock and extra records need not match the
+baseline. Longer baselines use3n or3 ET_0, with actual baseline factory
+entropy added. Conversely, constantW and the certified ONE-ROUND
+negative source give some finite Golden return with smaller price;
+this decrease is not asserted for the longer tape without its source.
+
+Thus the next physical receipt must decide the incremental outside-code
+work term, controlling every other charge on the same complete initial
+state/controller. Neither the abstract protocol floor, word count nor
+the paid detector's different Info law proves it. The
+[review receipt](PRIMARY_CAR_PAID_RETURN_PRICE_REVIEW.md) pins the
+bounded application. Native Book selection, actual reachability,
+absolute normalization and the original GR obligations remain open.
