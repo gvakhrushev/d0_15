@@ -196,6 +196,18 @@ This is exact at finite N with no independent run, no fitted π and no free Eins
 
 **Crucial derivative discipline:** for fixed observed labels \(\widehat J_N(\gamma)\), its pointwise derivative with respect to y is zero; the physical first source is (15c), because the **probability of the path changes**. Neither a naive frozen empirical histogram derivative nor the identity \(\widehat F_N\to F\) by itself proves \(D_yJ_N\to D_yJ\). The genuine analytic operator derivative (16) remains the directly proven C¹ source of the canonical F/J; convergence of derivatives of expected finite-sample estimators requires a separate uniform smooth finite-state Markov mixing argument. The exact finite score identity is already useful for a direct operational self-verification test on the actual registered scene.
 
+**20 October source-recovery application.** That separate argument is now
+supplied by the [uniform complete-path theorem](sources/d0_native_gr_completion_synthesis_2026-10-20/source_selection/history/C1_SOURCE_RECOVERY_THEOREM.md).
+For every compact strictly positive original-edge chart, a fixed bounded
+safe convention for the empirical innovation logdet, retaining its failure
+flag, gives \(\mathbb E_yO_N=J_y+O(N^{-1})\) and
+\(D_y\mathbb E_yO_N=D_yJ_y+O(N^{-1/2})\), uniformly on the chart.
+The moving initial law, terminal score and exact finite-count endpoint
+correction are retained. This removes the stated expectation/derivative
+interchange premise for that statistic. It does not differentiate a
+frozen record, bound a one-realization source estimator, select Book's
+physical price, or supply a spatial continuum limit.
+
 **Direct full-scene 15,708-path control, not a toy graph:** perturb only the original 9–11 undirected edge-Cost class by y, keep all true native original vertices and all other edges. Enumerate every one of the **15,708** real length-two histories and observe a fixed baseline one-step prediction-error square
 \(O_2=(f(Y_2)-(P_0 f)(Y_1))^2\), \(f(v)=\sin(.3v)+.2\cos(.17v)\).
 At y=0, \(\mathbb E O_2=0.477342252922225\ldots\). The exhaustive checker now differentiates the three-zone Perron cubic and normalized Perron vector analytically. The full product-rule derivative of the 15,708 path probabilities and the independent covariance with (15b) both give \(0.0252599823924456\ldots\), with score mean \(1.1\times10^{-15}\). A central difference with step \(10^{-4}\) gives \(0.0252599823441502\ldots\), within \(4.9\times10^{-11}\), as expected from its second-order truncation. Omitting either the Perron pressure or moving terminal-record term changes the source to \(-0.1101554\ldots\) or \(0.0329993\ldots\). This verifies a **NONZERO** field source of the declared original-path distinction-loss observable without an independently prepared stationary ensemble or cloning the next state.

@@ -1,0 +1,169 @@
+{
+  "schema": "d0-source-selection-targeted-checks/1",
+  "baseline": "45372df30740f4e75c8b58013652a7665bf833cd",
+  "python": "3.9.6 (default, Apr 17 2026, 18:15:52) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+  "node": "v24.19.0",
+  "checker_sha256": {
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/source_selection/check_residual_transport.py": "36e09651a338446dd6abf1c5e92cd683110f97a1dc8f89b153e6f0c115d61d17",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/source_selection/records/check_record_algebras.py": "305622349111c78c0bd322e8422de99c51d240e5e1572ff53412137f681e4a7d",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/source_selection/records/check_prospective_selection.py": "547f8969c2f219638b67d9c05012b4203cd03a49f5032950a66b20ea7751177a",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/source_selection/metric/check_compiler_ticks.py": "03cde6258c2e65f5076679f5e413b261f774ec31515b9bd54dbed577e6c10605",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/source_selection/metric/check_schur_completion.py": "74f7a8a89c0c3ce94c4f499460b55d3c13b3e5916b1146d6beab17ad60a57e2c",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/source_selection/metric/check_refinement_schur.py": "3e8b9c448c60ef0f626ebe90a4240ac8c66fb96f034079695a1554b4fd41e8d2",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/source_selection/history/check_empirical_endpoint.py": "b9a8edb6f3501d7eeec843661d08dd07747bb8b1e30f6c5885809cc65950224d",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/source_selection/history/check_empirical_c1_source.mjs": "e126f50c04dbd4f1f71ec6abca9dd284f2ea4fb85473f71b3eae19daa2fa83c4",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/source_selection/history/check_native_fisher_horizon.mjs": "8e10d7e50c6fbf0c84980c179912906b131f835fe8aed09994824e217656c31b",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/source_selection/history/check_native_beatty_boundary.mjs": "d5cd9079e72e06631c7783af93534ff6b97da6621e8e661aea202953cc8f685c",
+    "02_REGISTRY/research/sources/d0_native_triz_reference_2026-10-20/check_phi_beatty_owned_residual.py": "4d9e73b848fdc1fc57967927102dca5434d463c12854a20145d320fa06582f2e",
+    "02_REGISTRY/research/sources/d0_prospective_stopped_golden_2026-10-20/check_stopped_source_minimum.py": "a8997f58d3af738a2cf70f4a1d20dd6c9c509274c8e9b2393157a50038e2729d",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/source_selection/records/check_adaptive_stopping.py": "0bdb656577f437afcf49f86688915ebff62ea541882872bdc8117cbee3d5be9c",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/source_selection/records/check_adaptive_all_cost.py": "7c379f5b15d5edd7d8aaf97ef6e9dc668c3a2dd4e97faa72bac3e19844a514fd",
+    "02_REGISTRY/research/certificates/a4d_native_stopped_all_cost_source_check.py": "5a5baccd4c59d0fe9f7e10a5b7e6407db1cd688707fb341a9b139b2049222bb1"
+  },
+  "results": [
+    {
+      "name": "residual_transport",
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/source_selection/check_residual_transport.py",
+      "exit_code": 0,
+      "seconds": 0.514597,
+      "stdout": "PASS exact full residual differential under moving split and preparation\nPASS Golden conditional-projection kernel and moving-weight source controls\nPASS invertible covector transport and normalized relative-entropy first jet\nPASS finite discrepancy counterexample; no physical R, price, or Beatty map fitted\n",
+      "stderr": ""
+    },
+    {
+      "name": "record_algebras",
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/source_selection/records/check_record_algebras.py",
+      "exit_code": 0,
+      "seconds": 1.119314,
+      "stdout": "ABCD        ratio=1                      kappa=-0.472135955000 S0=-0.000000000\nABC|D       ratio=1                      kappa=-0.472135955000 S0=1.135684945\nABD|C       ratio=1 + sqrt(5)            kappa=+0.680074114988 S0=1.135684945\nAB|CD       ratio=sqrt(5)/2              kappa=-0.362668472890 S0=1.437191544\nAB|C|D      ratio=sqrt(5)                kappa=+0.317405642098 S0=2.117265659\nACD|B       ratio=1                      kappa=-0.472135955000 S0=1.381966011\nAC|BD       ratio=1                      kappa=-0.472135955000 S0=1.381966011\nAC|B|D      ratio=1                      kappa=-0.472135955000 S0=2.236067977\nAD|BC       ratio=-1/2 + sqrt(5)/2       kappa=-0.944271909999 S0=1.381966011\nA|BCD       ratio=-1/2 + 3*sqrt(5)/10    kappa=-2.205949462096 S0=0.863501901\nA|BC|D      ratio=-2 + sqrt(5)           kappa=-1.888543819998 S0=1.909830056\nAD|B|C      ratio=1/2 + sqrt(5)/2        kappa=+0.000000000000 S0=2.236067977\nA|BD|C      ratio=-1/2 + sqrt(5)/2       kappa=-0.944271909999 S0=1.909830056\nA|B|CD      ratio=-1/4 + sqrt(5)/4       kappa=-1.624346024987 S0=2.083857908\nA|B|C|D     ratio=-1/2 + sqrt(5)/2       kappa=-0.944271909999 S0=2.763932023\n{\"counts\": {\"partitions\": 15, \"zero\": 1, \"positive\": 2, \"negative\": 12}, \"full_eight_leaf_partition_counts\": {\"zero\": 372, \"positive\": 523, \"negative\": 3245}, \"smooth_zero_source_algebra\": {\"blocks\": [[0, 5, 2, 6, 3, 7], [1], [4]], \"hessian\": 2.7028983343410404, \"hessian_finite_difference\": 2.7028974169951425, \"exact_formula\": \"4*p**2/log(phi)-2*p**3\", \"price_at_zero\": \"4*p-1\"}, \"max_coherent_tape_spectrum_error\": 6.661338147750939e-16}\n",
+      "stderr": ""
+    },
+    {
+      "name": "prospective_selection",
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/source_selection/records/check_prospective_selection.py",
+      "exit_code": 0,
+      "seconds": 0.477091,
+      "stdout": "{\n  \"baseline\": \"4867b6d4\",\n  \"primitive_G_ticks\": 1,\n  \"q1\": 0.38196601125010515,\n  \"q2\": 0.9442719099991588,\n  \"D2\": 1.4973840999466868,\n  \"terminal_gaps\": {\n    \"coherent_20\": 2.9442719099991588,\n    \"coherent_21\": 1.5623058987490537,\n    \"pointer_20\": 2.4973840999466868,\n    \"pointer_21\": 2.4973840999466868\n  },\n  \"sharp_pointer_positive_source_window\": {\n    \"lower_open\": 4.441326519075378,\n    \"upper_open\": 6.880840180825113,\n    \"integer_differences\": [\n      5,\n      6\n    ]\n  },\n  \"pointer_controls\": [\n    {\n      \"delta\": 5,\n      \"all_k_ge_3_gap_lower_bound\": 0.9409636214598285,\n      \"source_factor_relative_to_kappa\": 1.8808401808251132,\n      \"prices_k0_through_k8\": [\n        6.0,\n        4.090169943749474,\n        3.7760245499508924,\n        4.7342220192879685,\n        8.088646555675698,\n        10.539055983265035,\n        8.299285348085025,\n        8.974780212520608,\n        10.015561802596945\n      ]\n    },\n    {\n      \"delta\": 6,\n      \"all_k_ge_3_gap_lower_bound\": 0.9888386437845726,\n      \"source_factor_relative_to_kappa\": 0.8808401808251132,\n      \"prices_k0_through_k8\": [\n        7.0,\n        4.7082039324993685,\n        3.831752639951734,\n        4.906431288031134,\n        8.8781566757329,\n        11.50353485153712,\n        8.729072402076588,\n        8.977151287931497,\n        10.350826241059089\n      ]\n    }\n  ],\n  \"coherent_delta4\": {\n    \"source_factor_relative_to_kappa\": -3,\n    \"all_k_ge_3_gap_lower_bound\": 0.8328157299974763,\n    \"prices_k0_through_k8\": [\n      5.0,\n      4.854101966249685,\n      4.167184270002524,\n      5.516627806229495,\n      8.368530360171608,\n      9.893436604816255,\n      9.289361161974686,\n      9.007113226232663,\n      11.00579331538643\n    ]\n  },\n  \"full_window_all_k_ge_3_margin_strictly_greater_than\": 0.5,\n  \"runtime_seconds\": 0.28564975,\n  \"scope\": \"Conditional on actual same bit-dependent field-independent continuation prices. No native compulsory task or global comparison beyond G^k asserted.\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "name": "compiler_ticks",
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/source_selection/metric/check_compiler_ticks.py",
+      "exit_code": 0,
+      "seconds": 0.263247,
+      "stdout": "PASS exact compiler-threshold Golden identities\nPASS exact power inequalities imply log_phi(4)>11/4 and 6<A<7\nPASS integer compiler ell_G>=2 has no positive-source integer opportunity\nScope: conditional fixed-prefix G^k family; actual unit-G compiler and task admission remain premises\n",
+      "stderr": ""
+    },
+    {
+      "name": "schur_completion",
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/source_selection/metric/check_schur_completion.py",
+      "exit_code": 0,
+      "seconds": 0.271426,
+      "stdout": "PASS pinned original L8 interval source: metric Schur >2489/1000 I\nPASS exact moving-KL neutral Schur, PSD monotonic witness, missing-direct-block hostile control\nPASS sharp three-negative-direction compensation and rank-two insufficiency controls\nPASS exact four-class Gibbs score identity: mean first source zero, negative rank-three covariance\nScope: generic stationary-Hessian theorem + original fixed L8 gap; not full price selection or continuum GR\n",
+      "stderr": ""
+    },
+    {
+      "name": "refinement_transport",
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/source_selection/metric/check_refinement_schur.py",
+      "exit_code": 0,
+      "seconds": 0.211795,
+      "stdout": "PASS exact stationary Schur associativity including saddle internal blocks\nPASS boundary pullback congruence and noninvariance-of-matrix hostile control\nPASS nonlinear boundary map traction term cannot be dropped away from stationarity\nPASS midpoint common-target recovery differs from literal finite-level restriction\nScope: algebraic transport criterion, not construction of actual native HJR refinement\n",
+      "stderr": ""
+    },
+    {
+      "name": "empirical_endpoint",
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/source_selection/history/check_empirical_endpoint.py",
+      "exit_code": 0,
+      "seconds": 0.313535,
+      "stdout": "{\n  \"status\": \"PASS\",\n  \"originalVertices\": 33,\n  \"pathTransitions\": 101,\n  \"allOutgoingVerticesVisited\": true,\n  \"initialVertex\": 0,\n  \"terminalVertex\": 27,\n  \"all1089ExactEndpointMatrixEqualities\": true,\n  \"all33ExactCovarianceConstantModeEqualities\": true,\n  \"omittedEndpointDestroysConstantMode\": true,\n  \"nonzeroNaiveRowSums\": {\n    \"0\": \"1/101\",\n    \"27\": \"-1/101\"\n  }\n}\n",
+      "stderr": ""
+    },
+    {
+      "name": "empirical_source",
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/source_selection/history/check_empirical_c1_source.mjs",
+      "exit_code": 0,
+      "seconds": 1.088407,
+      "stdout": "{\n  \"status\": \"PASS\",\n  \"originalVertices\": 33,\n  \"originalDirectedEdges\": 718,\n  \"nativeZoneSizes\": [\n    9,\n    11,\n    13\n  ],\n  \"full33TargetJ\": 0.000030035369315228315,\n  \"analyticTargetSource\": -2.6251653530423123e-8,\n  \"fixedZoneMassCutoff\": 0.1,\n  \"results\": [\n    {\n      \"N\": 4,\n      \"zoneHistories\": 48,\n      \"normalizedMass\": 0.9999999999999997,\n      \"failedMass\": 0.5028864339009824,\n      \"empiricalMean\": 4.7408466638697437e-7,\n      \"targetJ3\": 0.000001425126180611618,\n      \"valueError\": -9.510415142246436e-7,\n      \"scoreSource\": -1.4012889171914537e-8,\n      \"independentProductSource\": -1.4012889171914514e-8,\n      \"centralDifference\": -1.4012889083004413e-8,\n      \"targetAnalyticSource\": -2.6251653530423123e-8,\n      \"sourceError\": 1.2238764358508586e-8,\n      \"omittedTerminalSource\": -1.3463339383239681e-8,\n      \"omittedPressureSource\": -2.8299538311771044e-7,\n      \"scoreMean\": -1.5265566588595902e-16\n    },\n    {\n      \"N\": 8,\n      \"zoneHistories\": 768,\n      \"normalizedMass\": 0.9999999999999977,\n      \"failedMass\": 0.03364533969829811,\n      \"empiricalMean\": 0.0000010726835549839192,\n      \"targetJ3\": 0.000001425126180611618,\n      \"valueError\": -3.524426256276988e-7,\n      \"scoreSource\": -2.1695231896678684e-8,\n      \"independentProductSource\": -2.169523189667863e-8,\n      \"centralDifference\": -2.1695231757562023e-8,\n      \"targetAnalyticSource\": -2.6251653530423123e-8,\n      \"sourceError\": 4.556421633744439e-9,\n      \"omittedTerminalSource\": -1.7115399833714373e-8,\n      \"omittedPressureSource\": -0.0000012389170418031045,\n      \"scoreMean\": -1.730386667286865e-16\n    },\n    {\n      \"N\": 12,\n      \"zoneHistories\": 12288,\n      \"normalizedMass\": 1.0000000000000207,\n      \"failedMass\": 0.027209455801423525,\n      \"empiricalMean\": 0.0000011659387525064858,\n      \"targetJ3\": 0.000001425126180611618,\n      \"valueError\": -2.5918742810513216e-7,\n      \"scoreSource\": -3.5666420182800296e-8,\n      \"independentProductSource\": -3.566642018279918e-8,\n      \"centralDifference\": -3.566642014146476e-8,\n      \"targetAnalyticSource\": -2.6251653530423123e-8,\n      \"sourceError\": -9.414766652377173e-9,\n      \"omittedTerminalSource\": -3.138413501481763e-8,\n      \"omittedPressureSource\": -0.0000020202303747229032,\n      \"scoreMean\": -4.1598668953923834e-15\n    },\n    {\n      \"N\": 16,\n      \"zoneHistories\": 196608,\n      \"normalizedMass\": 0.9999999999991201,\n      \"failedMass\": 0.0027797560768724385,\n      \"empiricalMean\": 0.0000012491345528255848,\n      \"targetJ3\": 0.000001425126180611618,\n      \"valueError\": -1.7599162778603313e-7,\n      \"scoreSource\": -2.242931915228783e-8,\n      \"independentProductSource\": -2.242931915228783e-8,\n      \"centralDifference\": -2.2429317620566334e-8,\n      \"targetAnalyticSource\": -2.6251653530423123e-8,\n      \"sourceError\": 3.822334378135294e-9,\n      \"omittedTerminalSource\": -1.7831374518425453e-8,\n      \"omittedPressureSource\": -0.0000028573265526235707,\n      \"scoreMean\": 8.713446224316648e-14\n    },\n    {\n      \"N\": 20,\n      \"zoneHistories\": 3145728,\n      \"normalizedMass\": 1.0000000000053058,\n      \"failedMass\": 0.0002802729778308975,\n      \"empiricalMean\": 0.0000012856093094098261,\n      \"targetJ3\": 0.000001425126180611618,\n      \"valueError\": -1.3951687120179184e-7,\n      \"scoreSource\": -2.058091392962355e-8,\n      \"independentProductSource\": -2.0580913929623444e-8,\n      \"centralDifference\": -2.058092250200371e-8,\n      \"targetAnalyticSource\": -2.6251653530423123e-8,\n      \"sourceError\": 5.670739600799574e-9,\n      \"omittedTerminalSource\": -1.6000774362415914e-8,\n      \"omittedPressureSource\": -0.0000036676762832118706,\n      \"scoreMean\": -5.190485170711518e-14\n    }\n  ],\n  \"scope\": \"Exact native zone-lumped complete path source controls. Universal full33 C1 recovery is proved separately; empirical convergence rates are not inferred from this finite table.\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "name": "fisher_horizon",
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/source_selection/history/check_native_fisher_horizon.mjs",
+      "exit_code": 0,
+      "seconds": 0.024689,
+      "stdout": "{\n  \"status\": \"PASS\",\n  \"originalVertices\": 33,\n  \"originalDirectedEdges\": 718,\n  \"completeDepth2Paths\": 502,\n  \"equalPathCost\": 2,\n  \"equalPathProbability\": \"1/502\",\n  \"nextZoneMass\": {\n    \"K11\": \"242/502\",\n    \"K13\": \"260/502\"\n  },\n  \"eachNextVertexMass\": {\n    \"K11\": \"22/502\",\n    \"K13\": \"20/502\"\n  },\n  \"exactFirstThreeZone11Probabilities\": [\n    \"11/24\",\n    \"121/251\",\n    \"2618/5595\"\n  ],\n  \"exactInequality\": \"11/24 < 2618/5595 < 121/251\",\n  \"progression\": [\n    {\n      \"horizon\": 1,\n      \"probabilityZone11\": \"11/24\",\n      \"b\": 0.4583333333333333,\n      \"theta\": 0.8271132067027559\n    },\n    {\n      \"horizon\": 2,\n      \"probabilityZone11\": \"121/251\",\n      \"b\": 0.4820717131474104,\n      \"theta\": 0.803330294189186\n    },\n    {\n      \"horizon\": 3,\n      \"probabilityZone11\": \"2618/5595\",\n      \"b\": 0.4679177837354781,\n      \"theta\": 0.8175024346926667\n    },\n    {\n      \"horizon\": 4,\n      \"probabilityZone11\": \"57596/120997\",\n      \"b\": 0.4760118019455028,\n      \"theta\": 0.8093955734075469\n    },\n    {\n      \"horizon\": 5,\n      \"probabilityZone11\": \"1251316/2654679\",\n      \"b\": 0.4713624509780655,\n      \"theta\": 0.8140513928563826\n    },\n    {\n      \"horizon\": 6,\n      \"probabilityZone11\": \"559504/1180397\",\n      \"b\": 0.4739964605128614,\n      \"theta\": 0.8114134392943292\n    },\n    {\n      \"horizon\": 8,\n      \"probabilityZone11\": \"13063122248/27597507373\",\n      \"b\": 0.4733442796641952,\n      \"theta\": 0.8120665263227521\n    },\n    {\n      \"horizon\": 16,\n      \"probabilityZone11\": \"675240033187018573736/1427429163140647419565\",\n      \"b\": 0.4730462643073279,\n      \"theta\": 0.8123649708535363\n    },\n    {\n      \"horizon\": 32,\n      \"probabilityZone11\": \"1805782192160985208030164592877529254656232/3817370244236112960114107770317696297167533\",\n      \"b\": 0.47304350288986363,\n      \"theta\": 0.8123677362925407\n    }\n  ],\n  \"squareRootPlaneResidual\": 2.7755575615628914e-17,\n  \"squareRootNormResidual\": 8.881784197001252e-16,\n  \"fisherLengthHorizon1to2to3\": 0.0759101060341012,\n  \"fisherDistanceHorizon1to3\": 0.019221544020178394,\n  \"excess\": 0.056688562013922805,\n  \"scope\": \"Image lies in a Fisher great circle by two-zone symmetry; ordered horizon progression reverses and is not a minimizing geodesic. Neither fact selects an individual history.\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "name": "beatty_law",
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/source_selection/history/check_native_beatty_boundary.mjs",
+      "exit_code": 0,
+      "seconds": 0.023176,
+      "stdout": "{\n  \"status\": \"PASS\",\n  \"originalVertices\": 33,\n  \"originalDirectedEdges\": 718,\n  \"exactRationalCommonWeightInvarianceChecks\": 48,\n  \"symbolicInvariance\": \"For EVERY c>0: K=cA gives identical fixed-horizon Q_N and Perron-Doob P\",\n  \"rootedReturns\": {\n    \"length2\": 24,\n    \"length3\": 286\n  },\n  \"firstReturnWitnesses\": [\n    {\n      \"N\": 2,\n      \"path\": [\n        0,\n        9,\n        0\n      ]\n    },\n    {\n      \"N\": 3,\n      \"path\": [\n        0,\n        9,\n        20,\n        0\n      ]\n    },\n    {\n      \"N\": 4,\n      \"path\": [\n        0,\n        9,\n        20,\n        9,\n        0\n      ]\n    },\n    {\n      \"N\": 5,\n      \"path\": [\n        0,\n        9,\n        20,\n        9,\n        20,\n        0\n      ]\n    },\n    {\n      \"N\": 6,\n      \"path\": [\n        0,\n        9,\n        20,\n        9,\n        20,\n        9,\n        0\n      ]\n    },\n    {\n      \"N\": 7,\n      \"path\": [\n        0,\n        9,\n        20,\n        9,\n        20,\n        9,\n        20,\n        0\n      ]\n    },\n    {\n      \"N\": 8,\n      \"path\": [\n        0,\n        9,\n        20,\n        9,\n        20,\n        9,\n        20,\n        9,\n        0\n      ]\n    },\n    {\n      \"N\": 9,\n      \"path\": [\n        0,\n        9,\n        20,\n        9,\n        20,\n        9,\n        20,\n        9,\n        20,\n        0\n      ]\n    },\n    {\n      \"N\": 10,\n      \"path\": [\n        0,\n        9,\n        20,\n        9,\n        20,\n        9,\n        20,\n        9,\n        20,\n        9,\n        0\n      ]\n    },\n    {\n      \"N\": 11,\n      \"path\": [\n        0,\n        9,\n        20,\n        9,\n        20,\n        9,\n        20,\n        9,\n        20,\n        9,\n        20,\n        0\n      ]\n    },\n    {\n      \"N\": 12,\n      \"path\": [\n        0,\n        9,\n        20,\n        9,\n        20,\n        9,\n        20,\n        9,\n        20,\n        9,\n        20,\n        9,\n        0\n      ]\n    }\n  ],\n  \"rootedLanguageGrowth\": [\n    {\n      \"N\": 1,\n      \"rootedCompletePaths\": \"24\",\n      \"sturmianBinaryLengthNComplexity\": 2,\n      \"nativeLowerBound\": \"20\"\n    },\n    {\n      \"N\": 2,\n      \"rootedCompletePaths\": \"502\",\n      \"sturmianBinaryLengthNComplexity\": 3,\n      \"nativeLowerBound\": \"400\"\n    },\n    {\n      \"N\": 3,\n      \"rootedCompletePaths\": \"11190\",\n      \"sturmianBinaryLengthNComplexity\": 4,\n      \"nativeLowerBound\": \"8000\"\n    },\n    {\n      \"N\": 4,\n      \"rootedCompletePaths\": \"241994\",\n      \"sturmianBinaryLengthNComplexity\": 5,\n      \"nativeLowerBound\": \"160000\"\n    },\n    {\n      \"N\": 8,\n      \"rootedCompletePaths\": \"55195014746\",\n      \"sturmianBinaryLengthNComplexity\": 9,\n      \"nativeLowerBound\": \"25600000000\"\n    },\n    {\n      \"N\": 12,\n      \"rootedCompletePaths\": \"12553853772706778\",\n      \"sturmianBinaryLengthNComplexity\": 13,\n      \"nativeLowerBound\": \"4096000000000000\"\n    }\n  ],\n  \"perronRho\": 21.837382401125154,\n  \"fullNativeMetricEntropyNats\": 3.083623290265373,\n  \"logRho\": 3.083623290265373,\n  \"scope\": \"Current neutral-terminal unit-cost law cannot force a phi-specific Beatty coding. Positive-entropy full law cannot be a stationary finite-alphabet factor of an irrational rotation. Arbitrary auxiliary couplings are not excluded.\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "name": "owned_beatty_residual",
+      "path": "02_REGISTRY/research/sources/d0_native_triz_reference_2026-10-20/check_phi_beatty_owned_residual.py",
+      "exit_code": 0,
+      "seconds": 0.260981,
+      "stdout": "Beatty mask size=310; K11-first selectors=150 or 149 for TWO reorderings of IDENTICAL original 502 histories: PASS\nLiteral 2-round residual xi=b1*b2 and R2=(p epsilon)^2 D T*(Delta) D >=0, positive on original flat shell: PASS\nOriginal prospective Q_n is a rational count ratio independent of phi at every neutral fixed horizon: PASS\nALL EXACT PHI BEATTY / OWNED RESIDUAL KILL-FIRST CHECKS PASSED\n",
+      "stderr": ""
+    },
+    {
+      "name": "stopped_source",
+      "path": "02_REGISTRY/research/sources/d0_prospective_stopped_golden_2026-10-20/check_stopped_source_minimum.py",
+      "exit_code": 0,
+      "seconds": 0.092862,
+      "stdout": "RATIONAL_INTERVAL_PROOF: G^2 strictly minimizes the stopped\nactual 0/10-pointer Cost-minus-Info among every k>=1 for 5<=T0<=50.\nRATIONAL_INTERVAL_PROOF: 1.497 < D_phi(q2||p^2) < 1.498\nRATIONAL_INTERVAL_PROOF: k>=7 excluded without truncating k search\nEXACT ALGEBRA: q2=4p^3, 1-q2=p^6, q2'(0)=8p^(9/2)\nEXACT FIRST SOURCE: D S_stop(G^2)=-(T0-3)/(2p^(3/2)) * Dt\nEXACT RATIONAL CHECK: finite-cutoff clock, entropy coefficients and cost jet\nT0 5 winner among 150: 2 score: 8.998874169575\nT0 30 winner among 150: 2 score: 35.474299028949\nT0 50 winner among 150: 2 score: 56.654638916448\nT0 100 winner among 150: 7 score: 109.221898192601\nG2 stopped-source coefficient at T0=5: -2.0581710272714923\nPASS: original Golden prospective first source and exact 0/10 code.\n",
+      "stderr": ""
+    },
+    {
+      "name": "adaptive_stopping",
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/source_selection/records/check_adaptive_stopping.py",
+      "exit_code": 0,
+      "seconds": 0.366809,
+      "stdout": "{\n  \"exact_symbolic_scalar_effects\": true,\n  \"late_deviation_excesses\": [\n    2.562735927705832,\n    0.14281637842757888,\n    0.007958883990603738,\n    0.00044353340333280755,\n    2.4717269416996146e-05\n  ],\n  \"T0_5_source\": {\n    \"analytic\": -2.058171027271492,\n    \"central_difference\": -2.0581710273859244\n  },\n  \"runtime_seconds\": 0.10324595800000003\n}\n",
+      "stderr": ""
+    },
+    {
+      "name": "adaptive_all_cost",
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/source_selection/records/check_adaptive_all_cost.py",
+      "exit_code": 0,
+      "seconds": 0.475765,
+      "stdout": "{\n  \"status\": \"PASS\",\n  \"general_cost_derivative\": true,\n  \"finite_candidate_bound\": \"k>(C-T)/ell implies score>C\",\n  \"zero_action_divergence\": true,\n  \"multiplicative_entropy_bound\": true,\n  \"exact_positive_cost_zero_source_unique_optimizer\": {\n    \"T\": 3,\n    \"ell\": 1,\n    \"optimizer\": 2,\n    \"all_k_proof\": \"Gibbs inequality in companion section 5\"\n  },\n  \"abstract_deterministic_hull_control\": {\n    \"negative_upper\": \"-4/5\",\n    \"positive_lower\": \"4/5\",\n    \"not_claimed_as_Golden_tie\": true\n  },\n  \"scope\": \"Narrow symbolic controls; no physical task/price selection.\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "name": "stopped_all_cost",
+      "path": "02_REGISTRY/research/certificates/a4d_native_stopped_all_cost_source_check.py",
+      "exit_code": 0,
+      "seconds": 0.19606,
+      "stdout": "PASS stopped all-cost source: 275 active exact controls; immutable receipt agrees byte-for-byte\nPASS corrected 1cb stopped source: complete finite-cap and first-jet output agrees\nPASS 28 immutable proof/input/review/checker/receipt pins before and after\nSCOPE: all fixed T>=5 and ell>=1; every minimizing branch preserves DJ2; actual joint local minimum implies DJ2=0 under the declared task, Info, fixed-price and full-field assumptions.\n",
+      "stderr": ""
+    }
+  ],
+  "passed": true,
+  "scope": "Targeted finite checks plus analytical proofs; no physical Book selection or GR closure",
+  "execution_note": "Twelve checks followed by the newly completed adaptive check; unchanged checks were not rerun.",
+  "original_baseline": "f22c1864bd85e097166abd75dc048164d8d63c65",
+  "integration_rechecks": [
+    {
+      "baseline": "ac5dd8832749c5ab20da0a933173dd1c3119b3d1",
+      "checks": [
+        "stopped_source"
+      ],
+      "python": "3.9.6 (default, Apr 17 2026, 18:15:52) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+      "node": "v24.19.0"
+    },
+    {
+      "baseline": "ac5dd8832749c5ab20da0a933173dd1c3119b3d1",
+      "checks": [
+        "adaptive_all_cost",
+        "stopped_all_cost"
+      ],
+      "python": "3.9.6 (default, Apr 17 2026, 18:15:52) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+      "node": "v24.19.0"
+    }
+  ],
+  "integration_note": "Original executed checks retained; unchanged checker hashes reverified after rebase. Current stopped checker kept byte-identical to45372df3; changed integration and two new checks replayed. All-cost immutable certificate also passed optimized execution. No full Lean or unchanged geometry rebuild."
+}

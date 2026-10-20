@@ -1,0 +1,73 @@
+{
+  "baseline": "4867b6d4",
+  "primitive_G_ticks": 1,
+  "q1": 0.38196601125010515,
+  "q2": 0.9442719099991588,
+  "D2": 1.4973840999466868,
+  "terminal_gaps": {
+    "coherent_20": 2.9442719099991588,
+    "coherent_21": 1.5623058987490537,
+    "pointer_20": 2.4973840999466868,
+    "pointer_21": 2.4973840999466868
+  },
+  "sharp_pointer_positive_source_window": {
+    "lower_open": 4.441326519075378,
+    "upper_open": 6.880840180825113,
+    "integer_differences": [
+      5,
+      6
+    ]
+  },
+  "pointer_controls": [
+    {
+      "delta": 5,
+      "all_k_ge_3_gap_lower_bound": 0.9409636214598285,
+      "source_factor_relative_to_kappa": 1.8808401808251132,
+      "prices_k0_through_k8": [
+        6.0,
+        4.090169943749474,
+        3.7760245499508924,
+        4.7342220192879685,
+        8.088646555675698,
+        10.539055983265035,
+        8.299285348085025,
+        8.974780212520608,
+        10.015561802596945
+      ]
+    },
+    {
+      "delta": 6,
+      "all_k_ge_3_gap_lower_bound": 0.9888386437845726,
+      "source_factor_relative_to_kappa": 0.8808401808251132,
+      "prices_k0_through_k8": [
+        7.0,
+        4.7082039324993685,
+        3.831752639951734,
+        4.906431288031134,
+        8.8781566757329,
+        11.50353485153712,
+        8.729072402076588,
+        8.977151287931497,
+        10.350826241059089
+      ]
+    }
+  ],
+  "coherent_delta4": {
+    "source_factor_relative_to_kappa": -3,
+    "all_k_ge_3_gap_lower_bound": 0.8328157299974763,
+    "prices_k0_through_k8": [
+      5.0,
+      4.854101966249685,
+      4.167184270002524,
+      5.516627806229495,
+      8.368530360171608,
+      9.893436604816255,
+      9.289361161974686,
+      9.007113226232663,
+      11.00579331538643
+    ]
+  },
+  "full_window_all_k_ge_3_margin_strictly_greater_than": 0.5,
+  "runtime_seconds": 0.214363542,
+  "scope": "Conditional on actual same bit-dependent field-independent continuation prices. No native compulsory task or global comparison beyond G^k asserted."
+}

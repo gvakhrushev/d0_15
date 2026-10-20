@@ -451,3 +451,66 @@ The actual residual is R=sum xi_omega K_omega* K_omega, whose record function xi
 Parent continuation: derive the compulsory complete future task and its actual native query/exterior, Info, clock, preparation and prior-work binding. Within the declared admitted monitored class, source cancellation by implementation minimality is now excluded. The actual Book price table, native admission and physical task selection remain open, as do independent upstream rows and the original raw216 target. No lifecycle/assembly/GR promotion.
 
 [Independent final acceptance](sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/FINITE_FUTURE_DETERMINANT_REVIEW.md) pins the proof and exact checker. Only the changed determinant/price/history controls were run; the historical geometry and Lean suites were consumed unchanged.
+
+## 10. Complete prospective selection and the Golden refinement tests
+
+The [source-selection synthesis](A4D_GOLDEN_FULL_SOURCE_SELECTION_SYNTHESIS_2026_10_20.md)
+consumes section 9 rather than rebuilding its joint J2 signal. For an
+actual unit-cost G primitive and a genuine deterministic bit-conditional
+continuation with field-independent prices, the pointer objective selects
+G² uniquely among every G^k and retains a positive original first source
+iff \(4.441326519< v_0-v_1 <6.880840181\). With integer conditional
+prices these are exactly differences 5 or 6. The continuation contributes
+its own source: \(dS=\kappa(4+\log_\varphi4-(v_0-v_1))\,dt\).
+An actual such obligation and its primitive ledger remain to be derived;
+this interval is not a fitted future charge. The existing stopped-task
+owner supplies a different explicit conditional selection with its real
+random-clock source. Neither discrete programme minimum alone proves a
+minimum over the physical fields.
+
+The new [adaptive stopped extension](sources/d0_native_gr_completion_synthesis_2026-10-20/source_selection/records/STOPPED_ADAPTIVE_EXTENSION.md)
+proves exact scalar port effects off Sigma. For the same supplied
+stop-on-first-1 task, unit G and \(5\le T_0\le50\), no deterministic
+history-adaptive k-policy improves the fixed G² minimum. Its complete
+optimized value obeys a uniform \(O(t^4|\log|t||)\) bound against that
+fixed policy, retaining all fine work and the protected reference.
+Consequently \(dV|_\Sigma=-(T_0-3)\gamma_h\,dJ_2/(2p^{3/2})\), without
+a false uniform gap between adaptive policies. This is conditional
+selection within the declared task/price family; the coefficient is
+negative, and actual physical task/primitive/Info admission remains open.
+
+The same packet checks the proposed seven substitutions and Golden
+Beatty extension against equation (9). R is an operator with an actual
+valuation and split; moving averaging weights contribute their score.
+The neutral K913 path law cancels a common Golden step factor, Fisher
+horizon probabilities backtrack, and genuine Jones algebra refinement
+does not by itself transport the seven-slice physical HJR Schur.
+All complete source and preparation terms remain.
+
+A positive additional substitution closes the independent one-record
+feedback derivative seam: on compact strictly positive native-edge
+charts, the expected safe empirical logdet converges with its first
+source at rates \(O(N^{-1})\), \(O(N^{-1/2})\). This is the fixed-scene
+statistical limit with moving Perron start and terminal record, distinct
+from the existing coherent h-refinement theorem. The source equality
+with compulsory Book03 and its all40+matter application remain open.
+
+### General-cost adaptive continuation and ties
+
+The concurrent fixed-branch result at45372df3 removes the upper prefix bound:
+for every real T>=5 and ell>=1 each minimizing fixed branch has a nonzero
+full DJ2 multiplier. The [general adaptive extension](sources/d0_native_gr_completion_synthesis_2026-10-20/source_selection/records/ADAPTIVE_ALL_COST_EXTENSION.md)
+proves that, for every T>0 and ell>0, the complete deterministic-adaptive
+infimum differs from the finite active fixed-branch lower envelope by
+O(t^4|log|t||). At ties it has the directional first jet of that envelope;
+ordinary differentiability or nonzero source for every adaptive policy is
+not asserted. A genuine local minimum of this complete adaptive infimum
+in the full open field space nevertheless forces DJ2=0 on the T>=5,ell>=1
+domain, by domination of every active fixed branch. A global exact T=3,
+ell=1 control has unique G2 minimum with zero first source.
+
+These conclusions consume the concurrent all-cost theorem and its immutable
+replay. The optional terminal bit-price window remains a different task.
+Physical obligation, actual complete field-independent price ledger and
+Book Info remain premises; no existence or stability of a field minimum,
+unrestricted physical-programme minimum or GR closure is inferred.

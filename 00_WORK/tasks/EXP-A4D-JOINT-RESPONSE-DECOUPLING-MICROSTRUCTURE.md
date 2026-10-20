@@ -2825,3 +2825,38 @@ Remaining hypotheses: native exact query/exterior/fixed detector admission; a co
 User-directed Beatty check: canonical fixed-N K913 weights cancel p^N; the native full Golden cost-cut and Fibonacci/Sturmian language differ at positive depth3 cylinder000. The actual operator R requires its full physical record-price table; any complete conditional average preserves its scalar expectation and full source. A map to the separately paid matched-reference cocycle is not already in those owners. Do not treat bad approximability or a new cylinder ordering as that missing physical map.
 
 Write paths: existing book_source/FINITE_FUTURE_DETERMINANT_MINIMUM.md, check_determinant_future_minimum.py and FINITE_FUTURE_DETERMINANT_REVIEW.md; append-only intake in this brief, current causal synthesis, packet README and memo. Smallest decisive check: complete exterior outcome/first-jet identities, full stopped entropy/clock coefficients, exact quadratic arithmetic and rational uniform gap; original K913 enumeration and exact depth3 language countercontrol. These changed controls pass. The all-N and compiler-envelope assertions are analytic proofs with independent review, not extrapolation from finite controls. Historical geometry, formal modules and receipts remain unchanged. No new task, Ready/assembly promotion or GR_closed claim.
+
+### 20 October continuation: Golden full source and actual future selection
+
+Phase: native realization and final composition, same #334/native-programme-v1
+constitutive owner. Inputs: user-specified4867b6d4 and concurrent stopped
+selection/Beatty controls throughf22c1864 and all-cost strengthening at45372df3. Reuse the joint full-J2 scalar
+query, quartic work cleanup, all16+24+2 stationary source and midpoint
+recovery. Do not rebuild the geometric reporter or change the physical
+Info by decree.
+
+Write surface: `A4D_GOLDEN_FULL_SOURCE_SELECTION_SYNTHESIS_2026_10_20.md`,
+the disjoint `source_selection/` extension of
+`sources/d0_native_gr_completion_synthesis_2026-10-20/`, a consuming
+section in the existing causal synthesis, and the scoped application in
+the one-record feedback owner. The concurrent 1cb164de stopped
+checker correction and immutable all-cost inputs are preserved; independent
+new controls include the global T=3 zero-source minimum.
+
+Parent substitutions: prove uniform C1 recovery of the expected empirical
+feedback on compact strictly positive original718-edge charts; compute
+the actual whole-source consequence of a specified future price; test the
+proposed seven identities and Golden averaging without crossing operator,
+scalar, information-algebra or refinement types. The exact bit-conditioned
+price window selectsG2 among allGk under unit actual compiler cost; the
+already owned stopped task has its different complete random-clock price.
+The general adaptive envelope consumes the fixed-branch theorem for all
+T>=5,ell>=1, including ties; a true full-field minimum requires DJ2=0.
+Required goal/admission, actual prefix/compiler work, physical Info and
+full independent upstream source remain premises. A programme minimum at
+fixed fields does not establish a field minimum.
+
+Validation: exact source/algebra/endpoint controls, rational native path
+counts, source-score derivative check, original interval Schur input and
+analytical independent review. Reuse unchanged all40/continuum/Lean
+owners. No new task, raw terminal, assembly acceptance or lifecycle claim.

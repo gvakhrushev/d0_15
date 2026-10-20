@@ -103,3 +103,13 @@ python3 -O -B -W error 02_REGISTRY/research/sources/d0_native_gr_completion_synt
 ```
 
 The [final independent acceptance](book_source/FINITE_FUTURE_DETERMINANT_REVIEW.md) pins the integrated proof and checker. No historical receipt is rewritten, no full Lean rerun is claimed, and this remains a conditional native-source result inside the existing Draft.
+
+## Full future selection and the Golden residual proposal
+
+The [source-selection extension](source_selection/README.md) closes the
+fixed-scene expected-feedback C1 recovery seam, gives the exact global
+bit-conditioned continuation window for the existing joint J2 reporter,
+and tests the Fisher/Beatty/refinement proposals with complete source
+accounting. It consumes the separately supplied stopped Golden task and
+preserves its actual task, compiler and information hypotheses. All
+original frozen packet evidence above remains unchanged.
