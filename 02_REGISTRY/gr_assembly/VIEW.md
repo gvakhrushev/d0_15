@@ -36,7 +36,7 @@ For the short working composition and next scientific questions, use [SYNTHESIS.
 | full_affine_stationarity | support | none; conclusion still needs accepted evidence | none |
 | resonance_divisor | support | none; conclusion still needs accepted evidence | none |
 | primitive_jet_composition | support | none; conclusion still needs accepted evidence | none |
-| mv_tangent_span | support | none; conclusion still needs accepted evidence | none |
+| mv_tangent_span | support | none; conclusion still needs accepted evidence | lean-memory-tangent-span-to-mv-slot |
 | global_classification | separate | none; conclusion still needs accepted evidence | none |
 
 ## Declared dependency DAG

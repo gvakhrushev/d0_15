@@ -208,7 +208,7 @@ In this schema, an obligation is the assembly slot; do not create a parallel
 readiness or a material substitution decision. New evidence should point to
 the existing research owner by commit/path/SHA. Copy source bytes only when
 they are otherwise unavailable at the pinned Git commit. Active result nodes
-are capped at 50; strengthen an existing node when new evidence supports the
+are capped at 52; strengthen an existing node when new evidence supports the
 same scoped result.
 
 The frozen gravity graph preserves all 44 IDs and its complete source bytes.
