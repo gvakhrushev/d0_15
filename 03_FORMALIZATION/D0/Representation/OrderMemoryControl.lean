@@ -529,4 +529,71 @@ theorem originalQ8InventoryCannotPredictGolden :
   exact nativeQ8ProgramPort_grouped_ne_ordered (grouped.symm.trans ordered)
 
 
+
+/-! ## MDL HOSTILE TEST: two gates make SAME OUTPUT as eight actual gates
+
+The existing native local_i_squared already implements the relative
+sign with TWO localIQ primitives. Thus the eight-gate ordered history
+is NOT the shortest gate WORD to implement its final operator. It is
+a fixed-inventory SOURCE-HISTORY comparison. An endpoint-only Golden
+measurement cannot identify the SOURCE path length/work/provenance:
+the 2-gate and 8-gate programmes have the same exact operator on all
+eight real coordinates and identical full Born response.
+
+This is the precise extra source rule needed for FULL D0 MDL: compress
+away raw history ONLY if all actually admitted FUTURE TESTS including
+the previously retained clock/provenance/paid Book price still agree.
+No free eight-step physical cost theorem follows merely from the
+operator equality; charging each executed nonidentity primitive is
+conditional on its genuine admitted state-transition cost.
+-/
+
+/-- Minimal primitive executable word for the SAME original relative
+sign gate: just two already-owned LOCAL quaternion-i gates. -/
+theorem originalQ8TwoLocalForwardGates :
+    nativeQ8ChronologicalWord [true,true] = relativeSignQ := by
+  native_decide
+
+/-- Exactly the same completed matrix (and hence any endpoint-only
+Golden/Born readout) is obtained from a 2-gate and 8-gate original
+execution. Their HISTORIES and paid sequence lengths are different. -/
+theorem originalQ8TwoForwardGatesEqualEightChronology :
+    nativeQ8ChronologicalWord [true,true] =
+      nativeQ8ChronologicalWord originalQ8OrderWord := by
+  rw [originalQ8TwoLocalForwardGates, nativeQ8OrderedWordEvaluates]
+
+theorem originalQ8IdentityNeedsNoForwardGates :
+    nativeQ8ChronologicalWord [] = 1 := rfl
+
+/-- No original word of zero or one primitive forward action can
+synthesize the relative sign. Thus 2 is the MINIMAL GATE COUNT
+on the native {localIQ,commonJQ} alphabet, whereas 8 is a
+chronological provenance-conditioned source history. -/
+theorem originalQ8RelativeSignCannotUseLessThanTwoGates
+    (w : List Bool) (h : w.length < 2) :
+    nativeQ8ChronologicalWord w ≠ relativeSignQ := by
+  cases w with
+  | nil =>
+      native_decide
+  | cons b ws =>
+      cases ws with
+      | nil =>
+          cases b <;> native_decide
+      | cons b' rest =>
+          simp at h
+
+/-- The original chronological 8-gate Book source CANNOT be recovered
+from its completed operator alone: two distinct histories have
+identical final matrix but different paid step count. This is
+a FULL-HISTORY information obstruction even before Q8 Spin source
+or Golden control is addressed in physical G0. -/
+theorem originalQ8EndpointCannotRecoverPaidHistoryLength :
+    ¬ ∃ decoder : M8Q → ℕ,
+       decoder (nativeQ8ChronologicalWord [true,true]) = 2 ∧
+       decoder (nativeQ8ChronologicalWord originalQ8OrderWord) = 8 := by
+  rintro ⟨decoder, htwo, height⟩
+  rw [originalQ8TwoForwardGatesEqualEightChronology] at htwo
+  omega
+
+
 end D0.Representation.OrderMemoryControl
