@@ -1,0 +1,156 @@
+{
+  "commit": "972ce692a84b5b23bdf91e93a047b1882ad582d4",
+  "scope": "Original read inputs, including pre-update causal parent. Unchanged owner proofs reused, not certified anew.",
+  "inputs": [
+    {
+      "path": "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md",
+      "git_blob": "ecdd31abb52c94e9f2a157a80c7c49a6f5ac31aa",
+      "sha256": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d",
+      "bytes": 86193
+    },
+    {
+      "path": "01_BOOKS/BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md",
+      "git_blob": "99721fb50de66688564638f5f2b449a38675d7bd",
+      "sha256": "592bbbb1dae9cc599df2eef9cabf117b19f8566d755ad072b77beb04624271d7",
+      "bytes": 141578
+    },
+    {
+      "path": "03_FORMALIZATION/D0/Representation/GoldenCoherentMemory.lean",
+      "git_blob": "a3860d148f86bcda52882459468089303cd5be5c",
+      "sha256": "6ea993e22c8b7d0b8a93b9537d51893cb4aff45af858d82ec7f9005ead96e2d7",
+      "bytes": 3966
+    },
+    {
+      "path": "03_FORMALIZATION/D0/Representation/GoldenCoherentReadout.lean",
+      "git_blob": "ba775a9472b5ce7a8d0a13ad0e66ff8500bf5042",
+      "sha256": "2a480d0678524bf8cbcfe3e17a49a410d069e4894e16a5f0efdc44b7df3628c1",
+      "bytes": 3180
+    },
+    {
+      "path": "03_FORMALIZATION/D0/Foundation/FutureExecution.lean",
+      "git_blob": "c0cbf1d446f428e166ae30f90f9caba1ce60c091",
+      "sha256": "15143b63f2bf1cc51493e3efb36c9da57c203d7e680e2f1370cf2311eb2e9ef1",
+      "bytes": 12331
+    },
+    {
+      "path": "03_FORMALIZATION/D0/Foundation/ProspectiveExecution.lean",
+      "git_blob": "5bf153f4c74325366c8c57ce404dcdcb4fc87dc5",
+      "sha256": "99db926c47864c53ecf8d43caf2518f86b96e42cdffccaaf26f6c93205155ed4",
+      "bytes": 12448
+    },
+    {
+      "path": "03_FORMALIZATION/D0/Foundation/EndogenousActionQuantum.lean",
+      "git_blob": "605d451b74d5f76ad9a087f08cdd0af9acf4d9b1",
+      "sha256": "5ca12d6190aca5f75a898e1e7a5c1296a71ed1ff04b963bd3df32f34e8569e94",
+      "bytes": 11219
+    },
+    {
+      "path": "03_FORMALIZATION/D0/Evolution/StaticToDynamicsOwner.lean",
+      "git_blob": "7c8d020c62870a2576646d7a104f8461e54c7567",
+      "sha256": "db06301fb8d6f904af840ff8271efca3fdd85b50e6fe1206ee6f665d10f37f32",
+      "bytes": 3208
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_BRANCH_INFORMATION_COCYCLE.md",
+      "git_blob": "841795793134245e2beb67ea2b59b0e2a1bd730e",
+      "sha256": "cf77a70da503c0a58725e1470ed9b73a493ee01a82293058d49dfd6758ae735a",
+      "bytes": 7744
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_PARTITION_CORRECTED_BRANCH_INFORMATION.md",
+      "git_blob": "dd325fed87dc1284dd8ee64e86e34587be31e7d3",
+      "sha256": "a4e8c15de4d736366e85f0bd19a2a394f6372295426b830d8a21bd25fbb3190c",
+      "bytes": 6024
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_LOCAL_LEFT_CODED_CAR_NULL_MATTER_EINSTEIN_2026_10_18.md",
+      "git_blob": "75c40d133a23973a36ba5b95d34b4eb36ca96663",
+      "sha256": "828cba545e2c734741e7acf1509248c441de4451f9099cebee8d10c00230e35b",
+      "bytes": 17162
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_P25_NATIVE_COST_FLOOR_PSD_MIXED_PALATINI_VACUUM_NO_GO_2026_10_20.md",
+      "git_blob": "030b4d4db2fe2bacd80dffbeedfdf0b268e75d70",
+      "sha256": "1a2e52a67f6e707aa49f51c85d1af124eeee915f586687e683bec3214bd12131",
+      "bytes": 15606
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_universality_2026-10-20/check_native_palatini_unimodular_cost_floor_mixed_cone.py",
+      "git_blob": "f88b4bb787228328d2bf34c1818996192d8b90a9",
+      "sha256": "9e31c7e1a61ea4222672d6ab567b9c60510f49adf5dec7f3b5104a6cacda03fb",
+      "bytes": 4171
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_ARBITRARY_BRINKMANN_ALL40_CARTAN_DISCRETE_EINSTEIN_2026_10_19.md",
+      "git_blob": "050ee972efa0f2ae37206b2ef9e3b4122dbac204",
+      "sha256": "8dbca8ff9a4567a2baf216357b5d3ffa2d217281ced4e5d0e535257db2f5e83e",
+      "bytes": 25208
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_STOPPED_MINIMUM_TO_J2_SOURCE_2026_10_20.md",
+      "git_blob": "c96791ff6a768dc11f6860fe6ad82121fba95e3f",
+      "sha256": "6e73ece4f1d4312e241e91860871019689bf28017088ef6431893a3286978b0b",
+      "bytes": 9548
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_CAUSAL_BOOK_SOURCE_TO_EXACT_GR_SYNTHESIS_2026_10_20.md",
+      "git_blob": "fbfe7fc9d478c327f07687959852c822158e6a28",
+      "sha256": "c7972016fb5064cb711d65009d8056af286a49c7e47db854c4ed4e8485bd72a5",
+      "bytes": 37512
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_stopped_all_cost_source_2026-10-20/STOPPED_ALL_COST_SOURCE.md",
+      "git_blob": "6af391cd0d98f09acbbc4b75fbfd0c24f4fb7733",
+      "sha256": "ba7513a46fd7796ce6f5ae6d1ad389d66e51bbcaff3ca8866c0087dc41539eb3",
+      "bytes": 15392
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/MINIMAL_GOLDEN_COMPLETE_SOURCE.md",
+      "git_blob": "bce112de77a694809e0a9a7fa769731296148ca2",
+      "sha256": "f6a5724e087c58b4294020a59532b7117f55247013181bcd4fd30d069a649330",
+      "bytes": 26294
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/check_two_query_native8d_no_exterior.py",
+      "git_blob": "caf7f24801464f448fd3cae9e20399d13ec76754",
+      "sha256": "f6474e9dee226968f252c13b6732c6c6067b9f3813478fd06a81884748c21e38",
+      "bytes": 7678
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/Q8_CONDITIONAL_INFO_SOURCE.md",
+      "git_blob": "6abac8f8dd05cc31badcb37aae233090ad61080a",
+      "sha256": "157cac0e3254cfb9f5db59f1960955bb0a47bc2169c5a0094f0682ecd6a07283",
+      "bytes": 21007
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/BOOK_SOURCE_BINDING.md",
+      "git_blob": "0fc40d94bf6db0d0be49c783c902274821af5b92",
+      "sha256": "2b26bf2f4c1b128731ccf14a17437ba654c046e82b5e42e55113a8b6053494ea",
+      "bytes": 21593
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/source_selection/records/STOPPED_ADAPTIVE_EXTENSION.md",
+      "git_blob": "b9f2776e280a75e1e66aa70c608e5090a720575c",
+      "sha256": "b63198714ca89df194ff0effe7b821ce402c886a4def2fb0342ffe7d4ab17d9e",
+      "bytes": 11647
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/source_selection/records/ADAPTIVE_ALL_COST_EXTENSION.md",
+      "git_blob": "62bd1f4b9186883f521e363d17f023c4ab4ac760",
+      "sha256": "34e491c6f7aa74a1f2fe7e3ba942bd784bcb6ac6e4306dd5c1c5a1e7b86a9274",
+      "bytes": 10920
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/source_selection/history/NATIVE_TASK_SEARCH_4867.md",
+      "git_blob": "0fe744c03d7badc91f626c41356021c3be44a6bb",
+      "sha256": "59cbda439229c01fe38e181e68d136bc3e3006353e28a936f106de6187ed8d6e",
+      "bytes": 7632
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/source_selection/RESIDUAL_AND_AVERAGING.md",
+      "git_blob": "9cd5096917e2cb9727fccd493b8f4b4b3a90a763",
+      "sha256": "124adf757ba7879b2f3569ecad68011096e79b663744a7f776ae547db4e9387f",
+      "bytes": 6726
+    }
+  ]
+}

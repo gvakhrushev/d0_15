@@ -578,3 +578,57 @@ the required physical composition. The
 [independent review](sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/Q8_RANDOM_CHOICE_FIXED_CLOCK_REVIEW.md)
 pins the proofs and the narrow exact scheduling/complete-leaf check.
 No historical geometric or Lean proof is rerun or promoted.
+
+
+### Actual stopped field saddle and absolute normalization: continuation at972ce692
+
+The [new native calculation](sources/d0_native_gr_completion_synthesis_2026-10-20/continuation_selection/STOPPED_FIELD_SADDLE.md)
+substitutes the original fixed full-operator anchor, actual trace
+multiplicities, positive density ratios and one genuine shared Lorentz link.
+At the flat Einstein–CAR root its admissible coframe/link signal form is
+
+    H_t = [[0,-g],[-g,-2gD]],  g,D>0,  det H_t = -g^2.
+
+It is not inferred from H_J2: the correct relation is
+H_t=gamma_h(H_J2-Q_F). Complete retained-work entropy is o(||v||²)
+at the stationary root. Each nonzero active stopped branch has an
+admissible strict descent, and the optimized adaptive value inherits it
+by V<=F_k with equality at the root. Nearby normalized nonvacuum roots
+have the same obstruction on every fixed mesh, without a uniform
+continuum-neighborhood claim. The earlier minimum-implies-DJ2 theorem
+remains correct, but its minimum hypothesis fails on these representatives.
+
+The [residual lemma](sources/d0_native_gr_completion_synthesis_2026-10-20/continuation_selection/CORRECTION_SECOND_JET.md)
+strengthens this: preserving the full nonzero proportional first source
+on the whole neighboring null curve is incompatible with a local field
+minimum. Constant price along the curve and a nonzero transverse derivative
+at nearby points suffice; C2 entropy is not assumed. The actual correction
+S_full-F_k must retain all terms of (9), not just Tr(rho R)+W. At the root
+it needs zero first derivative for stationarity; its second form, if it
+exists, must satisfy the stated PSD inequalities. A zero full first source
+along the entire curve cannot cure the saddle.
+
+The [same-tape normalization theorem](sources/d0_native_gr_completion_synthesis_2026-10-20/continuation_selection/STOPPED_INFORMATION_NORMALIZATION.md)
+shows that identical fixed-programme sources do not select an absolute
+minimum. Under the conditional w=P binding, E(C-Info)=H_geo(q_k) has an
+unattained zero infimum over unbounded k. Under the conditional w=Z_k P
+binding, with the SAME actual costs, E(C-Info)=H_geo(q_k)-log_phi Z_k
+is coercive. For T>0 its winner is k2 at ell1 and k1 at ell>=4. A fixed
+finite classical target instead bounds conditional information and prevents
+an unbounded execution-cost refund. No candidate is selected as native Info.
+
+Exact original Golden future readouts force the full M2 code algebra under
+conditional-expectation compression; they do not force a scalar gain.
+A retention-preserving countermodel proves that mandatory next record,
+noncommutativity and complete future tests do not imply the compulsory
+execution of a particular unresolved query. Book Info is scalar; Z is
+algebra-valued. The [packet](sources/d0_native_gr_completion_synthesis_2026-10-20/continuation_selection/README.md)
+contains proofs, separate reviews, five narrow runs and input pins.
+
+Consumer change: bind the already stated Book03 finite stationary stack
+to the same actual complete execution and all 42 variations, or compute
+a genuinely additional residual source. Do not equate a saddle with a
+minimum, insert a stabilizing counterterm, or remove original variations.
+Stationary Einstein–CAR recovery remains; compulsory physical realization
+and GR_closed are not promoted. Concurrent material-input information
+bounds atdec8b42a are preserved as a separate native-query premise.

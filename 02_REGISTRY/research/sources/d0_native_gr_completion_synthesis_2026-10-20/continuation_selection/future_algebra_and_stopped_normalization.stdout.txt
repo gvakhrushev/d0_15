@@ -1,0 +1,7 @@
+PASS exact Golden complete-readout algebra and dephasing control
+PASS symbolic stopped-cocycle mean and derivative
+PASS raw/subnormalized/normalized-reference sums with preparation B=3
+k=1 q=0.38196601125 raw=3.61803398875 normalized=16.5905140517 source=-13.3207627071
+k=2 q=0.944271909999 raw=0.473261785425 normalized=14.4562965903 source=-6.17451308181
+k=3 q=0.827790731257 raw=1.15320819579 normalized=16.1427394869 source=8.056530186
+k=7 q=0.997628924589 raw=0.0347865707054 normalized=19.0332624886 source=-2.45525650579

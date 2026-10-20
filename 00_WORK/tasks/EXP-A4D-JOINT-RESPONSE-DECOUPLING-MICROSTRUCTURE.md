@@ -2903,3 +2903,38 @@ Kraft/KL application are independently reviewed analytically. Original
 geometry, continuum, formal modules and historical receipts are reused.
 This is supporting native-source work with retained physical hypotheses,
 not CONTROL assembly acceptance, raw216 closure or GR_closed.
+
+
+### 20 October: actual stopped field saddle and absolute Book normalization
+
+Continuation within existing #334, native-programme-v1; phase: native
+realization / full-price variational binding. Research input972ce692,
+integration over dec8b42a. Reuse the exact all40+matter Einstein–CAR roots,
+whole-J2 scalar query, complete stopped/work and adaptive all-cost owners.
+No new task, scientific lifecycle transition or CORE claim.
+
+Parent premise removed: a genuine full-field minimum of this stopped price
+cannot be assumed at its flat or sufficiently nearby nonvacuum stationary
+roots. The original anchor and true shared-link/coframe stencil give the
+exact negative 2x2 determinant; actual full work is higher order there.
+An active fixed competitor transports descent to the adaptive infimum even
+at ties. Fixed-mesh nonvacuum persistence keeps the normalized full CAR
+section. A stronger first-derivative ridge theorem excludes stabilization
+by any residual with zero full source along the neighboring null curve.
+The explicit necessary second-form correction includes every term of (9).
+
+The same actual complete stopped tape also separates absolute bindings:
+w=P has no attained minimum over unbounded k; w=Z_k P is coercive despite
+identical fixed-k sources. Exact winners and a finite-target information
+bound are proved without scanning all programmes. Future-complete Golden
+algebra is M2 but does not select scalar Info; an exact retention-preserving
+countermodel separates obligatory next record from a particular query.
+
+Write surface: continuation_selection proof/check/review packet, existing
+Russian selection synthesis and causal parent. Historical receipts are
+unchanged. Validation: five narrow final-input runs, two original independent
+reviews and integration review; pinned Git/SHA inputs. No full geometry or
+Lean replay is needed for unchanged owners. Source/normalizer/task hypotheses,
+physical input admission and genuine stationary-stack binding remain open.
+GR_closed=false; these scoped results do not assert a no-go for every
+compulsory H+J+R price or a mesh-uniform stability theorem.
