@@ -206,6 +206,48 @@ At a **fixed** original anchor \(y_0\) each term is \(C^2\) even if \(q_{\gamma0
 
 As with the former comparison, construct the signed four-corner interaction from FOUR fully normalized, nonnegative complete-history Hellinger comparisons to the **same fixed reference** \((e_0,U_0)\). Its local mixed source equals (21), while pure-coframe and pure-link terms cancel identically. A signed four-arm score with saddle mixed Hessian is *mathematically* possible; an admitted/paid Book03 selection of this particular four-arm execution remains **UNPROVED**.
 
+### 6.1. NEW exact characteristic-zero certificate: the FULL support-safe Hellinger mixed source has RANK TEN
+
+This supersedes the earlier numerical-only status for the **full** mixed rank, but it does **not** show equality to Palatini. The standalone [exact algebraic replay](check_native_full128_hellinger_exact_rank.py) embeds the original **unchanged** Jones34 native constructor and its 40 FIRST Kraus derivative rows (adding only derivative-capture hooks), retaining both Golden ports and the complete two-round 128² history.
+
+**Exact original support, independently of numerical thresholds.** Introduce \(a^2=p,\ a^4+a^2-1=0,\ i^2=-1\), and write the actual original Fourier/Walsh field \(Q_j=Q_j^{\rm num}/160\), where every entry of \(Q_j^{\rm num}\) is a Gaussian integer. For original retained two-port Kraus rows,
+\[
+K_{2j}=\delta_{j0}I-\frac{(1-a^2)M_j}{12800},\qquad
+K_{2j+1}=-\frac{a^3M_j}{12800},\qquad
+M_j=(Q_j^{\rm num})^\dagger Q_0^{\rm num}.
+\]
+The initial original Jones vector, before its common normalization \(1/\sqrt2\), has entries \(-a\) at positions 0 and 14, and \(a^2\) at positions 1 and 15. The checker constructs **every** \(128^2\times16\) two-round amplitude as a Gaussian-integer polynomial of degree at most 8, reduces by the **exact monic** \(a^4+a^2-1=0\), and tests all four real and imaginary coefficient slots for exact zero. Its maximum pre-reduction coefficient is \(154753600\) (imaginary \(10748160\)), well within signed-int64. This proves **exactly 1764 nonzero and 14620 zero original amplitudes in \(\mathbb Q(a,i)\)**, with no invented epsilon floor.
+
+For three legal original number-field reductions \((q,a,i)=(1009,226,469),(4001,842,899),(101,27,10)\), it independently reconstructs the complete true 128² amplitudes from the full original Kraus matrices and confirms ALL entries equal the reduced char-zero amplitudes times the exact denominator \(12800^{-2}\). None of the 1764 physically nonzero baseline probabilities vanishes accidentally in these three fields. All 40 original full-Kraus first-differential Wards and the already-certified Jones34/37 minor checks remain in the run.
+
+With the **exact** support mask, use the previously proved support-safe source formula (21), retaining the original complex-dual amplitude derivatives for all dark histories. Project original coframe16 to the genuine metric10 tangent using the original Jones34 \(\eta\)-solder map, and retain all original proper Lorentz24 link columns. Let \(\mathcal H_{eU}\in\mathbb Q(a,i)^{10\times24}\) denote the entire mixed Hellinger source. The FIXED **first ten Lorentz columns** give:
+\[
+\boxed{
+\begin{array}{c|rr}
+q & \det \mathcal H_{eU}[\mathrm{metric}\ 0{:}9,\ \mathrm{link}\ 0{:}9]
+& \det \mathcal H^{\rm dark}_{eU}[\mathrm{metric}\ \{0,4,7\},\mathrm{link}\ \{0,6,12\}]\\
+\hline
+1009&259&306\\
+4001&2109&822\\
+101&13&17
+\end{array}}
+\tag{22}
+\]
+Every entry is a **nonzero** prime-field image of one fixed original algebraic-number-field minor, not a floating SVD. Since a nonzero reduction implies the original minor is nonzero in characteristic zero, and there are just ten metric rows, the exact result is
+\[
+\boxed{\operatorname{rank}_{\mathbb Q(a,i)}\mathcal H_{eU}=10.}\tag{23}
+\]
+The dark component has a nonzero \(3\times3\) minor, so
+\[
+\boxed{\operatorname{rank}_{\mathbb Q(a,i)}\mathcal H_{eU}^{\rm dark}\ge3.}\tag{24}
+\]
+Its numerical rank 3 and rank 3 in each of these reductions do **not**, without a proved characteristic-zero vanishing of every \(4\times4\) minor, establish the reverse inequality. Therefore the present rigorously certified dark statement is **rank at least 3**, not rank exactly 3.
+
+This is a genuine first-principles **exact FULL original finite metric-to-Lorentz interaction** certificate and fixes the previous numerical-rank ambiguity. It is also an **original dark-history contribution** certificate: replacing the full source by the bright-only probability Fisher block is invalid, even though that bright-only block also has rank ten in these reductions.
+
+**Still NOT proved:** equality (including its individual 240 entries, signs, normalizations, gauge/observer Ward and full Cost−Info source) of (23) to the finite original Palatini cross source. A rank-ten interaction is necessary for some reconstructions but far from sufficient to identify the Einstein action. Neither the four physical comparison-arm preparation/work/Info costs nor G0 compulsory task selection follows from a finite-rank determinant. The exact support/Hellinger source theorem can be used by other D0 agents; \`GR_closed=false\`.
+
+
 **Actual native FIRST-JET diagnostic, recomputed from literal full128 matrices:** independent floating CAR16/Julia/Jones code reproduces 1,764 bright and 14,620 dark ordered histories, exact full first-derivative Ward to \(2.1\times10^{-17}\), and evaluates (21) on the genuine **metric10 × Lorentz24** chart (same as the original Jones34). The support-safe cross block has numerical rank 10 (singular values approximately \(9.6891\times10^{-3}, 3.2277\times10^{-4},\dots,3.89\times10^{-10}\)); the dark contribution alone has numerical rank 3 and Frobenius norm \(4.815\times10^{-5}\), changing the signed mixed response nontrivially. This is numerical **evidence, NOT an exact number-field rank certificate or an Einstein coefficient equality**. Dark first probability jets vanish (numerical Ward \(8.8\times10^{-21}\)), while their FIRST AMPLITUDE jets do not. The true screen \(Qk=0\) is dimension 3; this dark mixed block has numerical rank 2 upon restriction to its screen, consistent with an informative but NOT YET proven two-directional substructure.
 
 **Decisive remaining native test:** certify the full (21) mixed block EXACTLY in the original \(\mathbb Q(a,i)\) native algebra on the same 10+24 chart, compare its signs, tensor rank, gauge/observer Ward and Golden code normalization to the **actual independently owned finite Palatini mixed source**, and separately prove a Book03 G0 compulsory FOUR-ARM Hellinger/score task with all work, oldRIGHT, clocks and Info retained. No finite local rank, Hellinger algebra or output completeness can replace the *physical action-selection* step.
