@@ -8784,3 +8784,52 @@ and the finite Weyl limit and the summed boundary-flux formula use \(C_{\rm area
 The four-harmonic uniqueness argument is valid only after assuming a translation-local linear five-point operator. Under that hypothesis, annihilating \(1,x,y,x^2-y^2\) fixes the stencil to a scalar multiple of \(h^2\Delta_h\); those tests do not establish that the compulsory full D0 source belongs to this operator class. The existing arbitrary-profile 40-to-3-to-1 certificate is the direct geometric result and does not need to be repeated with more profiles.
 
 The next parent substitution is therefore the physical one: derive, on one admitted common preparation, the actual full Cost–Info/Book/preparation/clock/work source and its LEFT/RIGHT/reference order jet, and compute the same-run composition defect on its observable quotient. It must either be paid and controlled by the selected native instrument or rule out that candidate. Then the same action still has to satisfy its matter source, internal Euler rows, Ward transfer and refinement/recovery obligations. GR_closed=false.
+
+## 20 October: relational compact execution and explicit exact source equivalence
+
+The [composed synthesis](A4D_RELATIONAL_COMPACT_EXECUTION_AND_EXACT_SOURCE_SYNTHESIS_2026_10_20.md)
+consumes this execution at `0e4c9d6ca8b44574100338b04c27204cde7062dc`
+and the updated foundation/transfer owner #386 at
+`9ff766bfe9be5bf67ec1fb22b8ff2419a0d7fe4d`. It replaces three unnecessary
+demands in the native-sector/constitutive/contrast-refinement route.
+
+1. The original Palatini source is relational: passive face reversal changes
+   both its holonomy and its coframe insertion. The density and all 16+24
+   original shared-field source rows are invariant. A time arrow, an odd
+   total price or a unique microscopic curvature-component sign is therefore
+   not a prerequisite of this coupling. Active reversal at a fixed reference
+   remains distinct; no future-distinguishable history is identified.
+2. The specified compact CAR16 Golden-Julia failure is a scalar identity.
+   A finite controller retains every failed flag while repeating each desired
+   ordered letter until success. At cap `ceil(2m/p²)`, failure mass is at most
+   `exp(-m/4)`; all completed branches implement the exact ordered word and
+   retain their supplied oldRIGHT Gram. For weak compact letters with bounded
+   C2 field jets, the entire flagged-channel source error is exponentially
+   small at the actual success-count clock, with real attempt-clock/work
+   records still charged. A fixed complete 17-outcome POVM is constructed
+   both on grade-one Choi states and on the full CAR16 Choi state retaining
+   every grade. It gives `O(h^-2)` coherent-query discrimination in the stated
+   separated compact regime, compared with the existing independent-readout
+   `Omega(h^-4)` law. Actual preparation, controller and gate admission/price
+   remain inputs; a genuine noncompact boost is an explicit failed control.
+3. For the already-owned smooth full action
+   `S=B(z)+w(z)·t(q)+t(q)^T H(q,z)t(q)`, independently degree-two radial site
+   densities and nonzero weights give the explicit local map
+   `e_i -> sqrt(1+(Ht)_i/w_i) e_i`. Exactly `S=S0∘Theta` and
+   `dS=DTheta^T(dS0∘Theta)`, including all matter/history/clock derivatives.
+   On `t=0`, `DTheta=I+N`, `N²=0`, `det DTheta=1`. Singular density maps and
+   degenerate internal Hessians are allowed. This strengthens the squared-ideal
+   owner's critical-set result to exact nonlinear full-source equivalence;
+   neither higher-history coefficient matching nor a preparation Schur inverse
+   is required once the actual squared-ideal membership has been proved.
+
+These are concrete parent substitutions, not acceptance of an unsupplied
+native price. The next calculation is the actual admitted full price's value
+and first jet on the density-zero shell, with smooth ideal membership checked
+where that shell is singular. A real shell-dependent extra term survives.
+The compact instrument supplies an exact enlarged flagged process and a
+quantitative map to the ideal evolution, not a false exact `Interpretation`
+that drops cap failures. This respects #386's common-sector and extra-native-test
+boundary. The four bounded checkers and independent mathematical reviews are
+recorded in the synthesis packet. No original terminal, accepted assembly
+application, task lifecycle or GR closure is changed.
