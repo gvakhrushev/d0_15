@@ -1,0 +1,18 @@
+{
+  "command": [
+    "python3",
+    "-O",
+    "-B",
+    "-W",
+    "error",
+    "02_REGISTRY/research/certificates/a4d_native_stopped_all_cost_source_check.py"
+  ],
+  "exit_code": 0,
+  "immutable_expected_receipts": true,
+  "schema": 1,
+  "scientific_scope": "New 275-control all-cost certificate plus corrected 1cb complete finite-cap/source replay; no historical geometry or full128 rerun.",
+  "status": "PASS",
+  "stderr_empty": true,
+  "stdout_sha256": "a817b0330633f0c66c7fb4fbc5b5208e8fc9ea5b2968302302c12b601128fa48",
+  "wrapper_sha256": "5a5baccd4c59d0fe9f7e10a5b7e6407db1cd688707fb341a9b139b2049222bb1"
+}

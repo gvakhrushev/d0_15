@@ -1,0 +1,260 @@
+{
+  "status": "recovered byte-identical from unfinished local publication",
+  "source_local_commit": "a0a460bb290f2377255fe0588451b3e51e962860",
+  "files": [
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_CLOCK_PRESSURE_AND_COMPLETE_PRICE_SYNTHESIS_2026_10_20.md",
+      "git_mode": "100644",
+      "git_blob": "fdcb94fa0d3eb93af0345fff1982ca0d6a19a6ea",
+      "sha256": "823d527dbe61050a9c3f81109691839e1bc9de0855e5435e08259049db1a06ed",
+      "bytes": 10800
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_clock_price_source_check.py",
+      "git_mode": "100644",
+      "git_blob": "0cbd16a01d7bd11c3f1d5890e130e3a35b353e20",
+      "sha256": "7c6715937ab4ab5e0f9efff54ce42e8d8fbce2005e8c07242c76f87fd871407f",
+      "bytes": 14898
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/INPUT_SNAPSHOTS.json",
+      "git_mode": "100644",
+      "git_blob": "12c744b864937398047e14819fabfd88fe4d3af5",
+      "sha256": "c3bd0f9a64d7bc2a0dfc912de6411f515b680574fa132add5a4056356ecc4b46",
+      "bytes": 4524
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/README.md",
+      "git_mode": "100644",
+      "git_blob": "e7acec68df138421c0768983fd3a544e1418186e",
+      "sha256": "70b05ec1b04c8b4f71d46dcc1b9c99dd76abaf006c3942384796ce0165ee298b",
+      "bytes": 4055
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/VALIDATION.json",
+      "git_mode": "100644",
+      "git_blob": "88064c593fd8a0ed8768bb62a18c1bf1c27b3730",
+      "sha256": "755622e853fc480259c07f5fb92537e23ce925db21b301aa1130a0cb4ab4cec3",
+      "bytes": 1038
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/VALIDATION.log",
+      "git_mode": "100644",
+      "git_blob": "9aa0298c1a49785f96a9a4bb81cbd31f3b2e4cb2",
+      "sha256": "6f4c9e7152d2d14c2840904a3398f16e305d9aefa9119944fba89ca0a015a307",
+      "bytes": 2060
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/book_price/COHERENT_RETURN_PRESSURE_AND_PAID_MOMENTS.md",
+      "git_mode": "100644",
+      "git_blob": "d3baf6f3e0dd81eb50f8d00b087d0d119d1c51ed",
+      "sha256": "8001997f869a2ed86e78b6222e881d9ed67014ac0dc18573808df12b3592b7de",
+      "bytes": 23025
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/book_price/GEOMETRY_REVIEW.md",
+      "git_mode": "100644",
+      "git_blob": "df2f3c2fefda8c1154022cb466e3657a3b75ae77",
+      "sha256": "de105b644d2e5a7458587eddac49393c486d5f14b0c584d534141dd1db75d13e",
+      "bytes": 5065
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/book_price/INPUTS.json",
+      "git_mode": "100644",
+      "git_blob": "9e9b11376ab42d0f7b764c0dc5339ca778e36458",
+      "sha256": "26674fa2e66b3534fe0361c2acdae0994d6d03d2f732210fb92719d6ef7782ae",
+      "bytes": 862
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/book_price/RESULT.json",
+      "git_mode": "100644",
+      "git_blob": "448787420665486bf37c63f253422ef0856d5752",
+      "sha256": "163bb6d85e7b7deb626cf56486e0117da9e126d4fcdbf8dbf021c449c8b1f138",
+      "bytes": 7742
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/book_price/STOPPED_CLOCK_REVIEW.md",
+      "git_mode": "100644",
+      "git_blob": "8fca0da2f5d024c4173cabdfc098df397afa5357",
+      "sha256": "5f8f459577450c4959fd16b1a460805a394827f80244585dbf38578ca5d56f6a",
+      "bytes": 5292
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/book_price/check_coherent_return_pressure.py",
+      "git_mode": "100644",
+      "git_blob": "71eae0f879288de92c90957ecca195b08f190f29",
+      "sha256": "e3388349e9c6cbba37a05ac3a05b607ad34d2135aaca958e1265c3cca16e8db1",
+      "bytes": 13135
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/check_finite_closed_record.py",
+      "git_mode": "100644",
+      "git_blob": "8d0c526a29468e5266d5b2af93c21af3b72fb1f1",
+      "sha256": "aa6d603038129139e0d944610d722123b776f01e52d72b3c8178636df4bd7b19",
+      "bytes": 7188
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/finite_closed_record.md",
+      "git_mode": "100644",
+      "git_blob": "0f3ff8b1b802a3548f68b248a8f58cdcfbab70dc",
+      "sha256": "44e3f7844dc40c99c5218c7223fabc485e63fc251517c53f1d424dab222bfe28",
+      "bytes": 12085
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/geometry/BOOK_PRICE_REVIEW.md",
+      "git_mode": "100644",
+      "git_blob": "6b5c3db42d88ded55be780ad291128e0eb106c71",
+      "sha256": "862099aac7349fa31e30546141537420fa817e809b3c636f23b13a92555442a7",
+      "bytes": 4327
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/geometry/CENTRAL_GEOMETRY_REVIEW.md",
+      "git_mode": "100644",
+      "git_blob": "b904266c13efb7a358aa112a5fa2668ac53664b2",
+      "sha256": "841683dbcbed32f75ed36a415f91b2c8c511f8bece57da328c2c0605d4d030ae",
+      "bytes": 4383
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/geometry/SOURCE_MOMENT_RESULT.json",
+      "git_mode": "100644",
+      "git_blob": "8a3d5395d10f5b2dcb513457bbbd8dcb185e0b35",
+      "sha256": "283d3f92890644469482f1f4de0c9885d380e9dff2ef8825fea40796400f7c08",
+      "bytes": 12871
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/geometry/check_source_moment_collapse.py",
+      "git_mode": "100644",
+      "git_blob": "15b0bb6f0a0c6f820d86e61c97f4ceb5a597d28e",
+      "sha256": "fd4edf0649492910eecf649fb1c133dafd2eb1b3d4b8df801a6e62a0f30691b8",
+      "bytes": 9793
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/geometry/source_moment_collapse.md",
+      "git_mode": "100644",
+      "git_blob": "ef2acf0897b47a5a03c1934ba9ab2943934133fd",
+      "sha256": "9bfb61897324d438bff3458209f3fda321b2876af41b6178b96fdf04490773c4",
+      "bytes": 16548
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/inputs/01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md",
+      "git_mode": "100644",
+      "git_blob": "ecdd31abb52c94e9f2a157a80c7c49a6f5ac31aa",
+      "sha256": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d",
+      "bytes": 86193
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/inputs/02_REGISTRY/research/A4D_COMPLETE_EXIT_ACTION_AND_SECOND_SOURCE.md",
+      "git_mode": "100644",
+      "git_blob": "ee8514b36b4d33f221a1b3c9c71d9cd5d6a066b9",
+      "sha256": "482cf99f280620e7aa6120432cd7b9764671c5ef3fb1c0c3b50d7228d66e08b3",
+      "bytes": 15872
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/inputs/02_REGISTRY/research/A4D_COMPLETE_RECORD_CHANNEL_AND_NATIVE_COST_SOURCE.md",
+      "git_mode": "100644",
+      "git_blob": "df8611c7fa37fa71e883831b3f01f434532d99ce",
+      "sha256": "2128009802edff3e111a26961f050320fd878d7412ed93bfad5d5c9e4219db79",
+      "bytes": 42834
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/inputs/02_REGISTRY/research/A4D_EXACT_GR_COMMON_CARRIER_HJR_SCALE_SOURCE_GAP_2026_10_20.md",
+      "git_mode": "100644",
+      "git_blob": "8bd287e415c071c8e69ac0606ea76da85365cac2",
+      "sha256": "c5b2f1021e8da573221f4327bacae67934470a368966456bf328b19fc51555fb",
+      "bytes": 13796
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/inputs/02_REGISTRY/research/A4D_NATIVE_FULL128_JONES_OBSERVER_SO3_QUOTIENT_2026_10_20.md",
+      "git_mode": "100644",
+      "git_blob": "3427141c4203c0282e6afe182f92f8110e881343",
+      "sha256": "610a6688f8f1ea91c93462d4cedf716eec321dd5032ba35a0d2ffb7262ffca61",
+      "bytes": 5673
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/inputs/02_REGISTRY/research/A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md",
+      "git_mode": "100644",
+      "git_blob": "2c9e30fc7ae5518aa958d0ee29c08ae071150c69",
+      "sha256": "a0a8a0b7389c7a6120ebbe402d111bf55cd2a00730403a00ffceca73548e7915",
+      "bytes": 28004
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/inputs/02_REGISTRY/research/A4D_NATIVE_PRICE_EXACT_VARIATIONAL_UNFOLDING.md",
+      "git_mode": "100644",
+      "git_blob": "9ebd9b691d25ef6144e6aa4fe1851f7b026cc24e",
+      "sha256": "d92aabf2d46d9ac7d8d9aa3bf5ed66a58f25bb83ca4460d66d25648c62f7e10b",
+      "bytes": 27486
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/inputs/02_REGISTRY/research/A4D_PROSPECTIVE_BOOK_FINITE_FUTURE_LAW_Q8_VERIFICATION_2026_10_20.md",
+      "git_mode": "100644",
+      "git_blob": "de8341a8b33d53bd4b26e044a1560c47c51e2745",
+      "sha256": "bd3f1ab51599b0efe17af03e40c59a606200cd1912f801e4bd57e0eb77a6b014",
+      "bytes": 26033
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/inputs/02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/execution/return_cost_and_stopping.md",
+      "git_mode": "100644",
+      "git_blob": "25c27847c8bff56f6d0c92af277db1bcea3789ee",
+      "sha256": "29e30b35170c8ab1d4d324dd0f7aaa6e588cb1a32f023ad529947dc8639b9faa",
+      "bytes": 19743
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/inputs/02_REGISTRY/research/sources/d0_same_history_price_composition_2026-10-20/FULL128_HEAT_PRICE_RECYCLING_BRIDGE.md",
+      "git_mode": "100644",
+      "git_blob": "b943c946add3d34bce425f6d0e1b1015054fdc7d",
+      "sha256": "a8cdbd52e52275cb7e41aa84b8bd69e9fb36170f75d8481c6568fb3ea1a2bce0",
+      "bytes": 21471
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/inputs/02_REGISTRY/research/sources/d0_same_history_price_composition_2026-10-20/paid_port_history.md",
+      "git_mode": "100644",
+      "git_blob": "c93f54125d161edc6a3775922c477a3d73db1681",
+      "sha256": "ef69c2052237fbe8e916acf16691f9b14b4c1c2465a7837e838db2baeb95449d",
+      "bytes": 11127
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/prospective/CENTRAL_COMPOSITION_REVIEW.md",
+      "git_mode": "100644",
+      "git_blob": "05777b0ca1f688401b36e6e74e27a520b53ad31c",
+      "sha256": "73cef0764bf733a340df15835d6add01df6740545acae5d7ec4b3d11778c32dd",
+      "bytes": 4571
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/prospective/FINITE_CUT_REVIEW.md",
+      "git_mode": "100644",
+      "git_blob": "7cea7c826501fe03c5c3b664057b7d2f39e28153",
+      "sha256": "e70dae15cbc0ead0565b16464818bc21fabee8583a705d98cf889e39e5142e85",
+      "bytes": 4521
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/prospective/INPUTS.json",
+      "git_mode": "100644",
+      "git_blob": "45f4ad487c205e04b2907d1b0445e623774e6884",
+      "sha256": "8de593a2da6afe859e86f5b42a212b53705dcf5ce3def77ae15c22c02c4ea733",
+      "bytes": 1162
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/prospective/RESULT.json",
+      "git_mode": "100644",
+      "git_blob": "aea351bbb5d1ce6caedc9a0cc4c7772fa85d509b",
+      "sha256": "b226373c813903af983ac1f438c4b7d6485d81dda32f13f2225284d20d0ee35f",
+      "bytes": 6548
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/prospective/STOPPED_CLOCK_SOURCE.md",
+      "git_mode": "100644",
+      "git_blob": "21031109172282833a938a79cef2ff7dec889266",
+      "sha256": "75845813d20ecf7b585fb7b7a7bef8b8170a711e94a56bb0df0cc3546622a036",
+      "bytes": 15686
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/prospective/check_stopped_clock_source.py",
+      "git_mode": "100644",
+      "git_blob": "9c6bda9ea2e86dc8833eda44afc7de3c8233235a",
+      "sha256": "bdab1158efc863a8d631c50ae7f30f7c3780df744e74441a88ed298bc059f0c9",
+      "bytes": 17654
+    }
+  ],
+  "copied_file_count": 36,
+  "source_was_published_at_recovery": false
+}

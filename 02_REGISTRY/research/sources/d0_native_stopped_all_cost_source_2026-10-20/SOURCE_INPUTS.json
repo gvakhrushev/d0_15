@@ -1,0 +1,48 @@
+{
+  "historical_failure_preserved": true,
+  "historical_patch_applied_to_current_upstream": false,
+  "independent_reviews": {
+    "FINAL_STOPPED_OVERVIEW_ACCEPTANCE.md": "298042606edc05c91cb0f25fe86f693b8dc7856632a88db33ebeccdc376333ec",
+    "STOPPED_1CB_RETAINED_RECORD_COMPARISON.md": "a53e06653c8ef656bba32fc7f5e262acff5d5143c311a0d48003dc6b583e1463",
+    "STOPPED_ALL_PREFIX_REVIEW_ADDENDUM.md": "d1ed274cf2696fd65094b4ac398d93b8ba4f8af7f8b7cb4844695d9b7d341979",
+    "STOPPED_ALL_PREFIX_SECOND_REVIEW.md": "c9734b128e631226e37e1208adaa930ae8c2d96d28c0b35285c21b32f74c5ea0",
+    "STOPPED_GENERAL_GATE_PRICE_REVIEW_ADDENDUM.md": "ce9b85e07d45f5a9c683c0d219c9cc96106e9b5863bb6bbe066c21661128537d"
+  },
+  "owner": "EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE",
+  "primary_overview": "02_REGISTRY/research/A4D_NATIVE_STOPPED_MINIMUM_TO_J2_SOURCE_2026_10_20.md",
+  "primary_overview_sha256": "6e73ece4f1d4312e241e91860871019689bf28017088ef6431893a3286978b0b",
+  "producer_manifest": "SHA256SUMS.json",
+  "producer_manifest_sha256": "d480afa570f8f7a525228b5c9772083aad98a341aee82095c6df2e3ee16285c3",
+  "published_prior_packet": "511e012b31522d2a1fdb9d3fff51328c0694e4ee",
+  "schema": 1,
+  "upstream_inputs": [
+    {
+      "bytes": 24199,
+      "commit": "1cb164de3753f9dbaf214ea140eb9ea21a7b9d90",
+      "git_blob": "b3acbdc5bb9e9dc4e4d27504d97fafbad5279642",
+      "path": "02_REGISTRY/research/A4D_PROSPECTIVE_STOPPED_GOLDEN_MINIMUM_SOURCE_REVERSAL_2026_10_20.md",
+      "sha256": "ea2016810eb5b7bbc3e41941faf66900d7c0c0b4d97c064f098275102aafc34e"
+    },
+    {
+      "bytes": 4893,
+      "commit": "1cb164de3753f9dbaf214ea140eb9ea21a7b9d90",
+      "git_blob": "46ab0cace8d61d7cdbbb8f3cb6e1c203ea1d1db7",
+      "path": "02_REGISTRY/research/sources/d0_prospective_stopped_golden_2026-10-20/REVIEW.md",
+      "sha256": "c199ff1607f7047180b51810543902927adef4ada4bc96eda496641b5546fa25"
+    },
+    {
+      "bytes": 6982,
+      "commit": "1cb164de3753f9dbaf214ea140eb9ea21a7b9d90",
+      "git_blob": "cbf0139ff143f33eaa378f34d5021c27640a96e9",
+      "path": "02_REGISTRY/research/sources/d0_prospective_stopped_golden_2026-10-20/check_stopped_source_minimum.py",
+      "sha256": "a8997f58d3af738a2cf70f4a1d20dd6c9c509274c8e9b2393157a50038e2729d"
+    },
+    {
+      "bytes": 26294,
+      "commit": "1cb164de3753f9dbaf214ea140eb9ea21a7b9d90",
+      "git_blob": "bce112de77a694809e0a9a7fa769731296148ca2",
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/MINIMAL_GOLDEN_COMPLETE_SOURCE.md",
+      "sha256": "f6a5724e087c58b4294020a59532b7117f55247013181bcd4fd30d069a649330"
+    }
+  ]
+}

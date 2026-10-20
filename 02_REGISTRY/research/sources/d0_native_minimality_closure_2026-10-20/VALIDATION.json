@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "command": [
+    "python3",
+    "-B",
+    "-W",
+    "error",
+    "02_REGISTRY/research/certificates/a4d_native_clock_price_source_check.py"
+  ],
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.5.4",
+    "sympy": "1.14.0"
+  },
+  "certificate_sha256": "7c6715937ab4ab5e0f9efff54ce42e8d8fbce2005e8c07242c76f87fd871407f",
+  "elapsed_seconds": 9.334334,
+  "returncode": 0,
+  "log_sha256": "6f4c9e7152d2d14c2840904a3398f16e305d9aefa9119944fba89ca0a015a307",
+  "exact_receipt_checks": {
+    "geometry": 251,
+    "book_price": 119,
+    "prospective": 67
+  },
+  "finite_cut_control_groups": 6,
+  "finite_cut_meshes": [
+    4,
+    8,
+    16
+  ],
+  "method": "One integration replay of the four new frozen checkers against immutable snapshots; complete scientific JSON comparison. Independent reviews were analytical, not replays.",
+  "scope": "Exact retained-clock/pressure/known-port-price/source composition. Complete Book selection, physical admission, full GR, raw216 and Lean/CORE promotion remain open."
+}

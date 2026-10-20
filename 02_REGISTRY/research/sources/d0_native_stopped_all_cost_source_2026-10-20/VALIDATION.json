@@ -1,0 +1,31 @@
+{
+  "assert_ast_nodes": 0,
+  "comparison": "Exact byte comparison: deterministic integer/string/bool JSON; no floating diagnostics, timestamps, cwd or platform fields",
+  "receipt_file": "STOPPED_ALL_COST_RESULT.json",
+  "receipt_sha256": "b972503e95f0329700e3cc3544e6246cc8c896c5a9ebc3aef41c02ff06b71c6d",
+  "runs": [
+    {
+      "active_exact_checks": 275,
+      "command": [
+        "python",
+        "-O",
+        "check_stopped_all_cost_source.py",
+        "--output",
+        "STOPPED_ALL_COST_RESULT.json"
+      ],
+      "exit_code": 0,
+      "receipt_byte_identical": true
+    },
+    {
+      "active_exact_checks": 275,
+      "command": [
+        "python",
+        "check_stopped_all_cost_source.py"
+      ],
+      "exit_code": 0,
+      "receipt_byte_identical": true
+    }
+  ],
+  "schema": 1,
+  "status": "PASS"
+}

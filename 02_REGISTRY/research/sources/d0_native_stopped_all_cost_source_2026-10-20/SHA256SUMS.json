@@ -1,0 +1,15 @@
+{
+  "CORRECTED_REPRODUCTION.log": "ae3868f90b3ace0dd3593de00e8b3831a65ca3330d1dcc0543afb6f5c9017d8d",
+  "PROVENANCE.md": "d06f00e709af5a420252f32d3abd72684f0f9bfce90023867dccd2d992781d62",
+  "STOPPED_ALL_COST_RESULT.json": "b972503e95f0329700e3cc3544e6246cc8c896c5a9ebc3aef41c02ff06b71c6d",
+  "STOPPED_ALL_COST_SOURCE.md": "ba7513a46fd7796ce6f5ae6d1ad389d66e51bbcaff3ca8866c0087dc41539eb3",
+  "UPSTREAM_REPRODUCTION.json": "4eb5320f7ce8fc4e57010ad9933212d337135ffad408c63b47bdd1292a754e90",
+  "UPSTREAM_REPRODUCTION.log": "1e58a8f76618a2d733facbeaa23135fc48539450b6157fbcaa48a3af1d2a596c",
+  "UPSTREAM_TARGET_CORRECTION.patch": "c08c7806059a61e3cab0372d236882317c7ffe838d9eaf3eaaaf9f9b83257026",
+  "VALIDATION.json": "4e57ada85f482ae6203fa676bd717faecc2aeffa7f31fbf08a37d985ce02b822",
+  "check_stopped_all_cost_source.py": "281d67f5668c6ee01d5a6c0e647d6a4806154fa7a20676be871053cca9309dc9",
+  "corrected_check_stopped_source_minimum.py": "e6f20aa5c9850635165cdaff08f7c4799cdd441aced84be2d64739ac771f901f",
+  "upstream_check_stopped_source_minimum.py": "e022977c672f9c64c9c3ee27d652b009508a2b584b46232ec88c270ff61bbe70",
+  "upstream_reviewed_stopped_proof.md": "ea2016810eb5b7bbc3e41941faf66900d7c0c0b4d97c064f098275102aafc34e",
+  "upstream_stopped_proof.md": "1e2815efc4daab717a7b84069607e287330360093d5a6eaedcfb55c080f9681a"
+}

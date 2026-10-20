@@ -1,0 +1,64 @@
+{
+  "GR_closed": false,
+  "active_exact_checks": 275,
+  "actual_score_scope": "S_actual=S_scalar_ports-E_k with E_k>=0, E_k=DE_k=0 on Sigma and E_k=O(t^4*abs(log(abs(t)))); the full-work bound is reused from the pinned reviewed upstream proof, not retested here. With oldRIGHT in Info, use the corresponding conditional classical-work entropy and fixed oldRIGHT baseline.",
+  "all_cost_theorem": {
+    "T_domain": "every real T>=5, fixed during field variation",
+    "branch_source_coefficient": "-B_k*q_k_prime/q_k^2 is nonzero",
+    "each_minimizer_B_lower_bound": "B_k(T,ell)>=2",
+    "each_minimizer_candidate_bound": "k<T/12+13/3",
+    "minimizer_exists": true,
+    "rotation_price_comparison": "Rk=k/qk has unique minimum k=2; R1-R2=1/2 and Rk>3>R2 for k>=3",
+    "rotation_price_domain": "every real ell>=1, fixed during field variation",
+    "selected_unit_price_sublevel": "S_k(T,1)<=S_2(T,1); k need not minimize the unit-price score",
+    "tail_T_ge_50_bound": "B_k(T,ell)>(2T-49)/3>=17",
+    "true_local_minimum_necessary_condition": "DJ2=0 if fixed-k scores are admissible near the background across the full two-sided allowed field space and Dt=gamma_h DJ2, gamma_h>0"
+  },
+  "analytic_proof_scope": "Unbounded-k algebraic norm/separation, irrationality/nondegeneracy, convex KL bound, existence of discrete minimum and local-minimum implication are proved analytically in STOPPED_ALL_COST_SOURCE.md. Finite k=1..24 controls do not stand in for these proofs.",
+  "arithmetic": "fractions.Fraction; exact Q[p]; certified rational logarithm bounds; no floating point",
+  "finite_window": {
+    "D2_strict_interval": [
+      "1497/1000",
+      "1498/1000"
+    ],
+    "T_closed_interval": [
+      5,
+      50
+    ],
+    "rotation_price_domain": "every real ell>=1",
+    "unique_minimizer": 2
+  },
+  "full_D0_price_selected": false,
+  "input_commit": "f22c1864bd85e097166abd75dc048164d8d63c65",
+  "input_sha256": {
+    "UPSTREAM_TARGET_CORRECTION.patch": "c08c7806059a61e3cab0372d236882317c7ffe838d9eaf3eaaaf9f9b83257026",
+    "corrected_check_stopped_source_minimum.py": "e6f20aa5c9850635165cdaff08f7c4799cdd441aced84be2d64739ac771f901f",
+    "upstream_check_stopped_source_minimum.py": "e022977c672f9c64c9c3ee27d652b009508a2b584b46232ec88c270ff61bbe70",
+    "upstream_reviewed_stopped_proof.md": "ea2016810eb5b7bbc3e41941faf66900d7c0c0b4d97c064f098275102aafc34e",
+    "upstream_stopped_proof.md": "1e2815efc4daab717a7b84069607e287330360093d5a6eaedcfb55c080f9681a"
+  },
+  "not_claimed": [
+    "D0 forces this task or this Info cut",
+    "Differentiability of the optimized envelope at ties",
+    "Every Clarke stationary point satisfies DJ2=0",
+    "DJ2=0 is sufficient for a local minimum",
+    "Existence of a physical local minimum"
+  ],
+  "remaining_assumptions": [
+    "Declared actual first-port1 stopping task",
+    "Whole-pointer Shannon Info with the original 0/10 code",
+    "Fixed per-G price ell>=1 and fixed per-attempt T>=5",
+    "All additional moving physical cost/Info sources retained separately",
+    "Admissibility near y0 across all claimed field directions"
+  ],
+  "reviewed_work_entropy_input_commit": "1cb164de3753f9dbaf214ea140eb9ea21a7b9d90",
+  "schema": 1,
+  "status": "PASS",
+  "upstream_control": {
+    "T3_source_cancels": true,
+    "T5_source_times_p_to_3_over_2": "-1",
+    "corrected_normal_run": "PASS with target -1 only",
+    "original_normal_run": "FAILED at factor-2 target",
+    "wrong_target_rejected": "-2"
+  }
+}

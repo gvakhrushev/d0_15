@@ -1,5 +1,25 @@
 # A4D joint response on fixed smooth sources: PARTIAL / OPEN
 
+
+**Stopped minimality/source extension, 20 October 2026:**
+[every fixed T >= 5 and ell >= 1](A4D_NATIVE_STOPPED_MINIMUM_TO_J2_SOURCE_2026_10_20.md)
+now preserves a nonzero multiplier of the original full DJ2 at every
+minimizing Golden repeat branch. A genuine joint local field minimum of
+the actual retained-record score therefore requires DJ2 = 0, even at ties.
+The proof includes conditional work entropy, a quadratic-norm all-k bound
+and active exact controls. The compulsory stopping task, Book Info and
+complete physical price remain explicit; the existing Euler consumer and
+historical results keep their original scopes.
+
+**Current native application, 20 October 2026:**
+[complete-record information and price selection](A4D_NATIVE_COMPLETE_RECORD_INFO_PRICE_SELECTION_2026_10_20.md),
+continuing #334, now gives the actual full128 coherent-mode limit, the whole
+fine-pointer entropy source, a strict positive limiting minimum for one
+specified coherent Info algebra, and the exact least paid fixed horizon
+for a supplied binary task. The earlier clock/pressure/price packet is
+recovered unchanged. Complete physical Info/task/work selection and the
+same nonuniform all40+2 source remain the next application; the historical
+results below keep their original scopes.
 Task: `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`, Draft PR #310.
 Lifecycle: `IN_PROGRESS`. The parent NO-GO/retirement announced at `530a5132`
 is withdrawn: it closed a weaker source convention, not the theory target.
