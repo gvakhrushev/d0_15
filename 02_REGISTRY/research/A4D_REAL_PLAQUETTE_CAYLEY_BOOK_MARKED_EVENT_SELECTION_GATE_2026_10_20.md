@@ -96,3 +96,14 @@ For a controlled smooth original lattice plaquette P_h=I+h²F+O(h³), the true s
 whose order-h² coefficient is NONZERO for every F!=0 by the rank6 owner. In contrast the class function m_p(P_h) has derivative zero at I and therefore m_p(P_h)-m_p(I)=O(h^4), while m_p(P_h)=m_p(P_h^(-1)) exactly. This explains the **two-derivative observational delay** of scalar holonomy statistics without claiming literal physical time delay: signed curvature is a native order-sensitive CAR observable at O(h²), scalar marked probability is inversion-even and O(h^4).
 
 This is a strict local mathematical observable-factorization theorem using an EXISTING #334 readout; physical original full128 admission, its reference/preparation/work/clock/code price, and which all40 Euler covector it selects remain independently unproved. No new quantum device must be postulated solely for local informational sufficiency. The constructed six log-gradient Cayley tester above remains an exact independent analytic alternative to the already-owned Golden phase atlas, not evidence that it is the compulsory original experiment.
+
+
+### 1.1. UNIVERSAL no-go: ANY scalar conjugacy-class holonomy readout has zero flat first Lorentz jet
+
+This is not particular to the marked determinant and is the strongest strategic reason a coframe/instrument insertion is necessary. Let f:SO+(1,3)→R be C¹ and invariant under gPg^(-1). Then l=Df_I∈so(1,3)^* is Ad-invariant, so l([X,Y])=0 for all X,Y. The original six generators obey [Ki,Kj] proportional to spatial Jk and [Ji,Kj] proportional to boost Kk; thus so(1,3)=[so(1,3),so(1,3)]. Therefore l=0 and
+
+  f(exp(tF))=f(I)+o(t) for EVERY Lorentz curvature F.
+
+In the actual original smooth lattice chart t=h² this means any single observer-free conjugacy-class scalar of one based plaquette is blind to the leading O(h²) curvature, regardless of how one refines the scalar spectral functional. The original finite S_star is linearly curvature-sensitive precisely because it also supplies a covariantly transforming coframe area bivector B: G2(B,star b(F)) is a genuine two-input invariant. The positive odd comparison in §2 reads this extra input X_B and the real P (rather than pre-inserting F itself). The already-owned six Golden phase atlas supplies a different sufficient relational readout.
+
+The companion checker verifies that the 36 original Lorentz basis commutators span all six directions exactly (rank6) before testing the scalar inversion-even control. This is a scoped representation-theoretic first-jet no-go for loop-only CLASS functions, not for Book03 path-memory operators, observer-indexed comparisons, non-class-scalar fields, or full joint Einstein dynamics. No claim of GR closure.
