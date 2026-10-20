@@ -136,4 +136,28 @@ This strengthens the nonlinear Golden-AF/Palatini work: the correct scalar norma
 
 **One experimental native source discriminator is now sufficient for this scalar piece:** on ONE original balanced Golden LEFT Role cell take its actual complete 2/3/4 early/late stage-labelled clock, the actual full 718 edge marginal μ and original Golden17 signed face mark, invert λ via both adjacent stages, derive W_B and C currents, and compare its ENTIRE compulsorily priced H+J+R/Cost−Info source (including absolute stage code/work/prep/oldRIGHT) with the existing independent full40+CAR matter Palatini source on the true original role fields. The equality of this actual full selected action on an open chart and its actual Ward/recovery would be a genuine D0→GR theorem; neither a normalized history alone nor the scalar mathematical inverse forces that selection.
 
+## 7. DIRECT CONSUMER of the newest #334 arbitrary NONSEPARABLE Einstein-vacuum universality theorem
+
+The concurrently added original owner A4D_ARBITRARY_NONSEPARABLE_BOOK_COST_FINITE_EINSTEIN_VACUUM_UNIVERSALITY_2026_10_20.md proves that even an unknown spatially nonlocal, nonseparable FULL history scalar F(f_1,...,f_N), provided actual nonzero w_i=∂_iF(0), has the EXACT SAME vacuum finite Palatini critical solutions and SAME kernel of its complete linearized 16+24 Euler at those curved roots. No independent microscopic F curvature coefficient is needed. Its sharply smaller PHYSICAL requirement is vertical source descent:
+
+    DS_native(q)[V]=0 whenever Df(q)[V]=0
+
+on an admissible regular OPEN field chart, after actual full Book/CAR/clock internal stationarity. On connected f-fibers this is the standard constant-rank necessary/sufficient condition for S_native to be some F(f). This is mathematically STRONGER as a conclusion and WEAKER as a physical premise than demanding complete offshell S_native equal a prescribed Einstein action.
+
+**Our exact stage source supplies an immediate ORIGINAL falsifiable vertical test, for ONE true selectable term, not a speculative new action.** If a selected full G0 scalar action includes the mathematical 2/3 clock-projective component J_32, then for every original physical vertical tangent V with Df_i[V]=0 its actual contribution is
+
+    DJ_32[V] = sum_(718) (mu+2f2−3f3)_e Ds_e[V]
+               + D_V log_phi(beta3/beta2).
+
+The corresponding 4/3 component uses (mu+3f3−4f4)_e and beta4/beta3. If these are NOT annihilated by actual field-to-Cost/Info constraints and internal stationarity, the remaining compulsorily selected H+J+R/preparation/clock/CAR source MUST cancel them, otherwise the exact nonseparable F(f) geometry-universality hypothesis fails for that selected action. This is a short executable SOURCE-DESCENT/COMPENSATION test, not a demand to reconstruct the full 718×718 microscopic Lagrangian.
+
+On the current actual original nonreversible strictly Cost>1 edge fixture, hold all Role coframes and links FIXED (so every original Df_i[V]=0) and vary only honest two-sided primitive Cost along the supported real 718-edge test perturbation. The independent exact clock shape first source is NONZERO:
+
+    DJ_32[V] = −0.002480575775829938,
+    DJ_43[V] = +0.003638735005858437.
+
+So J_32 or J_43 ALONE does NOT automatically descend to a function of the geometric six-star density f. A complete physical G0 must demonstrate actual elimination, cancellation or inadmissibility of these independent Cost directions. This scoped adversarial witness precisely separates a real source obligation from the ALREADY PROVED Einstein universality theorem; it neither refutes the true D0 model nor declares the primitive Cost test physically compelled.
+
+The positive strategic target becomes singular and measurable: derive the REAL compulsory full source (including native stage beta scores) on any one actual nonflat Golden LEFT carrier, and verify it vanishes on the complete admissible kernel Df after actual internal Euler. If yes, the new arbitrary nonseparable radial-homotopy theorem immediately consumes it to restore all nonlinear vacuum Palatini stationary equations and their exact linearized zero-mode kernel, without needing any polynomial Taylor catalogue of the fundamental history action. Matter/Λ source normalization and raw full Einstein refinement still have their independently owned gates.
+
 GR_closed=false. No Book/CORE/claims/manifest changes.
