@@ -64,7 +64,7 @@ Ecost=s.simplify(2*I+Port1_star(I)+Phi_star(Port1_star(I)))
 target_cost=2*I+4*p*A*Delta+4*p*A**2*G
 assert eq(Ecost,target_cost)
 assert eq(Ecost-2*I,
-          4*p*A*(I-B)-4*p*(E2-B**2))
+          4*p*(I-B)-4*p*(E2-B**2))
 # The moving-field source includes ALL dD and dT; this test directly
 # differentiates an exact nontrivial D(y) full preparation-side operator.
 assert eq(s.diff(Ecost,y),
