@@ -155,6 +155,27 @@ Independent DIRECT validation: without using this conformal scalar formula, cons
 
 IMPORTANT: independent native Book H+J+R/absolute Perron/clock/prep work may depend on W and can BREAK the full physical Weyl symmetry; then W has a genuine separate constraint/source. If Book W depends directly on e rather than independent scene variables, the joint change must pass the actual nontrivial radial Jacobian (already owned AF paper), not merely W^8. The metric ghat is the geometric target; identifying it with what native matter/observers operationally measure still needs source ownership.
 
+### 5.1. Exact finite-dimensional gauge kernel: why omega_BD=-3/2 cannot secretly add a local graviton
+
+This is stronger than labelling −3/2 a familiar Brans–Dicke degeneracy. On the SAME original mathematical field chart the geometry map itself has a one-dimensional exact kernel:
+
+    Phi:(g_munu,W) -> ghat_munu =W*g_munu,
+    D Phi=(W I10 | g_10) : R^11 -> R^10.
+
+For W>0 this has rank10, and its unique one-dimensional null direction is
+
+    delta g_munu=−2sigma g_munu,  delta W=2sigma W.
+
+On the original 16-coframe field the analogous ehat=s e map (s=sqrt W) has rank16 of 17 and a single null vector (delta e=−sigma e,delta s=sigma s). The independent checker evaluates two exact integer test matrices: metric rank10/11 and native coframe rank16/17; the explicit Weyl null vectors are annihilated coefficientwise.
+
+At any genuine stationary root of a selected geometric functional which depends on these variables ONLY via ghat, the full raw Hessian satisfies
+
+    H_raw = D Phi^T H_ghat D Phi,
+
+because the additional D S_ghat * D² Phi term VANISHES AT STATIONARITY. Hence the Weyl vertical direction is an EXACT zero mode of the stationary geometric Hessian, not a propagating new physical scalar with an independent stability sign. The same identity holds on the original full16 coframe chart after actual link stationary reduction. There is no independent scalar dynamical equation in this pure geometric sector.
+
+But if the TRUE full priced Book history adds B(K), clock/preparation/observer or independently charged Cost terms, it can break this gauge direction and produce an actual W equation. The above full-rank quotient is NOT proof that those mandatory prices are stationary or absent. Nor may the original operational choice of raw g versus ghat be erased as an arbitrary gauge unless the measuring matter/clock reference shares the compensation.
+
 ## 6. What this genuinely changes in the GR route
 
 Before, the strategy tried to SELECT A UNIQUE physical Einstein-looking price among a huge family of Cost–Info histories. That is not mathematically necessary within the explicit continuum local first-order, coframe²-curvature¹ invariant class:
