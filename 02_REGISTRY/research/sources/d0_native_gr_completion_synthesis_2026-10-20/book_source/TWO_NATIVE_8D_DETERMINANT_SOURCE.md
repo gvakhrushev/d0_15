@@ -361,3 +361,36 @@ result does not prove a decrease of complete paid Cost-Info. Other
 profiles, a derived native constraint or a fully derived additional
 price may change the conclusion. The [review receipt](PRIMARY_CAR_PREPARATION_SOURCE_REVIEW.md)
 pins the scoped application; no positive GR premise is closed.
+
+## 12. Actual record price and the energy-transport boundary
+
+The [same-preparation full-record application](PRIMARY_CAR_RECORD_PRICE_SOURCE.md)
+now computes the original one-round full128 pointer entropy source on that local
+primary family. All16 grades, actual cost20 density and RIGHT128 remain.
+For small positive t its angle-source linear coefficient is between
+-6.338e-7 and-6.337e-7 in Golden units. The conditional known component
+Cost_port-H_pointer has coefficient between6.062e-7 and6.064e-7,
+opposing the Rayleigh source. This is a certified actual record response,
+not a choice of physical Book information or a full label-price binding.
+The original port marginal does not include the conditional-label source.
+Under the separate absolute Book-mean binding its entropy contribution
+instead has negative source; the actual common-normalizer derivative
+remains. The one-round test does not determine later-round sources.
+
+The actual fixed CAR word has a deterministic external instruction/control
+tape. Its scalar letter/clock marks and the stated independent untouched-
+material factory have zero preparation derivative; their values and aborts
+remain. The original QND full-tape energy transports the nonzero R source
+unchanged. Alternatively conjugating Delta with the CAR word cancels the
+state source algebraically, but creates a nonzero odd-CAR DATA matrix
+entry. Its distance from every original fixed-grading geometric Dirac
+square is at least sigma²sqrt(rho_w rho_(w+u))|sin(theta)|/(4h²)
+on a sufficiently small chart. This is a data-dictionary type gate;
+the enlarged v10 loop theorem remains valid in its own space.
+
+The remaining full-price derivation must bind actual material information,
+all nonuniform code/Book gains and free upstream equations, or supply a
+different admitted loop/constraint/readout map. An output of a fixed word
+from a fixed complete input is not automatically an independent Euler
+variable. The [review receipt](PRIMARY_CAR_RECORD_PRICE_SOURCE_REVIEW.md)
+pins these applications. Native full-price selection and GR remain open.
