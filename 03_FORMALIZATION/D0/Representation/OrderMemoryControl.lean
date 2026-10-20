@@ -612,4 +612,130 @@ theorem originalQ8SameEndpointDifferentNativeClock
   norm_num
 
 
+
+/-! ## ORIGINAL full-prefix physically priced history — NOT only endpoint unitary
+
+The original ActionProtocol charges transitions between faithfully
+represented states. This conditional theorem does not assign prices
+to letter NAMES, invent a new Cost functional, or claim the original
+M1/G0 actually chooses this representation. If actual native physical
+states faithfully distinguish the 8-gate executed-prefix OPERATORS,
+then every gate in that 8-gate history changes such a state and the
+whole-history executed action costs AT LEAST 8 native units. The
+shortest 2-gate representative costs AT LEAST 2 units on its own
+actual executed history. These are independent LOWER BOUNDS, NOT a
+claim the actual two-gate execution is physically cheaper for every
+admissible ActionProtocol.
+
+The two histories have identical final relativeSignQ matrix and
+Golden outcome distribution but DIFFER in their full temporal
+register (native FiniteProtocolClock stage 2 vs stage 8). Thus
+minimization using only the final unitary would be an invalid
+replacement when the actual stage/provenance is future-readable.
+-/
+
+/-- All actual native Q8 prefix operators along chronological
+execution, including the original input identity prefix. -/
+def nativeQ8ExecutionPrefixes (word : List Bool) : List M8Q :=
+  word.scanl
+    (fun U local => (if local then localIQ else commonJQ) * U)
+    1
+
+/-- The actual successive active changes in a Q8 execution trace. -/
+def nativeQ8ExecutionPairs (word : List Bool) : List (M8Q × M8Q) :=
+  let prefixes := nativeQ8ExecutionPrefixes word
+  prefixes.zip prefixes.tail
+
+/-- Every one of the two short native sign-gate actions changes
+the entire existing 8×8 operator prefix. -/
+theorem nativeQ8TwoExecutionNoIdle :
+    ∀ xy ∈ nativeQ8ExecutionPairs [true,true], xy.1 ≠ xy.2 := by
+  native_decide
+
+/-- Every one of the eight original based chronological actions is
+nontrivial on the existing complete 8×8 Q8 operator register. -/
+theorem nativeQ8EightExecutionNoIdle :
+    ∀ xy ∈ nativeQ8ExecutionPairs originalQ8OrderWord,
+      xy.1 ≠ xy.2 := by
+  native_decide
+
+/-- Price a FULL actual chronological list of state changes with
+the ALREADY EXISTING physical ActionProtocol, once the source
+state interpretation is supplied. No new cost or weight assigned. -/
+def nativeQ8WholeWordPaidCost
+    {P : D0.Foundation.VerifiabilityNecessity.VerificationProtocol}
+    (A : D0.Foundation.EndogenousActionQuantum.ActionProtocol P)
+    (source : M8Q → P.State)
+    (word : List Bool) : ℝ :=
+  ((nativeQ8ExecutionPairs word).map
+    (fun xy => A.action (source xy.1) (source xy.2))).sum
+
+/-- Any genuine ActionProtocol which retains different states at
+every actual chronological step pays at least one ORIGINAL quantum
+for every actual executed step. No stationarity/canonical price
+is supplied by this conditional universal lower bound. -/
+theorem nativeQ8WordPaidCostGePrimitiveCount
+    {P : D0.Foundation.VerifiabilityNecessity.VerificationProtocol}
+    (A : D0.Foundation.EndogenousActionQuantum.ActionProtocol P)
+    (source : M8Q → P.State) (word : List Bool)
+    (h : ∀ xy ∈ nativeQ8ExecutionPairs word,
+       source xy.1 ≠ source xy.2) :
+    ((nativeQ8ExecutionPairs word).length : ℝ) ≤
+       nativeQ8WholeWordPaidCost A source word := by
+  have aux : ∀ xs : List (M8Q × M8Q),
+      (∀ xy ∈ xs, source xy.1 ≠ source xy.2) →
+      (xs.length : ℝ) ≤
+      (xs.map (fun xy => A.action (source xy.1) (source xy.2))).sum := by
+    intro xs
+    induction xs with
+    | nil =>
+        intro _
+        simp
+    | cons xy xs ih =>
+        intro hfull
+        have hx : source xy.1 ≠ source xy.2 :=
+          hfull xy (by simp)
+        have ht : ∀ yz ∈ xs, source yz.1 ≠ source yz.2 := by
+          intro yz hy
+          exact hfull yz (by simp [hy])
+        have hsum := ih ht
+        have ha := A.action_nontrivial (source xy.1) (source xy.2) hx
+        simp only [List.length_cons, Nat.cast_add, Nat.cast_one,
+          List.map_cons, List.sum_cons]
+        linarith
+  exact aux (nativeQ8ExecutionPairs word) h
+
+theorem nativeQ8TwoGateActualWorkAtLeastTwo
+    {P : D0.Foundation.VerifiabilityNecessity.VerificationProtocol}
+    (A : D0.Foundation.EndogenousActionQuantum.ActionProtocol P)
+    (source : M8Q → P.State)
+    (hfaithful : Function.Injective source) :
+    2 ≤ nativeQ8WholeWordPaidCost A source [true,true] := by
+  have hall : ∀ xy ∈ nativeQ8ExecutionPairs [true,true],
+      source xy.1 ≠ source xy.2 := by
+    intro xy hm
+    exact hfaithful.ne (nativeQ8TwoExecutionNoIdle xy hm)
+  have hb := nativeQ8WordPaidCostGePrimitiveCount A source
+    [true,true] hall
+  have hl : (nativeQ8ExecutionPairs [true,true]).length = 2 := by
+    native_decide
+  simpa [hl] using hb
+
+theorem nativeQ8EightGateActualWorkAtLeastEight
+    {P : D0.Foundation.VerifiabilityNecessity.VerificationProtocol}
+    (A : D0.Foundation.EndogenousActionQuantum.ActionProtocol P)
+    (source : M8Q → P.State)
+    (hfaithful : Function.Injective source) :
+    8 ≤ nativeQ8WholeWordPaidCost A source originalQ8OrderWord := by
+  have hall : ∀ xy ∈ nativeQ8ExecutionPairs originalQ8OrderWord,
+      source xy.1 ≠ source xy.2 := by
+    intro xy hm
+    exact hfaithful.ne (nativeQ8EightExecutionNoIdle xy hm)
+  have hb := nativeQ8WordPaidCostGePrimitiveCount A source
+    originalQ8OrderWord hall
+  have hl : (nativeQ8ExecutionPairs originalQ8OrderWord).length = 8 := by
+    native_decide
+  simpa [hl] using hb
+
+
 end D0.Representation.OrderMemoryControl
