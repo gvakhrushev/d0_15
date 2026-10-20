@@ -291,3 +291,193 @@ all-h infinite-dimensional result. Use the original
 `check_all40_arbitrary_brinkmann.py` only if its original mathematical
 source changes; the full40 certificate has already been owned and
 does not need another expensive replay for this analytic continuation.
+
+
+## 7. STRONGER TERMINAL: one exact nonvacuum Einstein solution is a native root at EVERY mesh
+
+The previous sections give O(h²) curvature recovery for arbitrary
+bandlimited analytic harmonic waves. There is a **strictly stronger,
+nonempty infinite-dimensional common-solution class** where no
+asymptotic Einstein residual, approximate metric value or
+post-hoc matter source is needed at all.
+
+### 7.1. Fixed continuum solution, arbitrary time-dependent genuine matter
+
+Choose smooth original real scalar/top matter \(\Psi:I\to\mathbb R^2\)
+of sufficiently small amplitude to stay in the unchanged normalized
+CAR16 preparation chart, with \(\Psi'\not\equiv0\).
+Choose *four arbitrary smooth functions* \(A_2,B_2,A_3,B_3\)
+on the same original unwrapped null interval. Write the REAL
+two-dimensional harmonic polynomial
+\[
+\begin{split}
+W(u,x,y)={}&A_2(u)(x^2-y^2)+2B_2(u)xy\\
+ &+A_3(u)(x^3-3xy^2)
+   +B_3(u)(3x^2y-y^3).
+\end{split}
+\tag{17}
+\]
+Its coefficients vary independently and arbitrarily in null time:
+this is an **infinite-dimensional family**, not four constant polarizations.
+Every term is harmonic for the ordinary Laplacian AND for the original
+centered five-point transverse \(\Delta_h^\perp\), at *every h*, because
+central second differences are EXACT on all polynomials of degree ≤3.
+
+Use the one fixed, h-INDEPENDENT metric and source
+\[
+H(u,x,y)=-\lambda\|\Psi'(u)\|^2(x^2+y^2)+W(u,x,y),
+\quad
+g=2du\,dv+H\,du^2-dx^2-dy^2.
+\tag{18}
+\]
+The full exact nonlinear continuum equation is
+\[
+G_{\mu\nu}(g)=-\lambda\,
+  2\|\Psi'(u)\|^2 (du)_\mu(du)_\nu,\qquad
+\Box_g\Psi=0,\qquad \nabla^\mu T_{\mu\nu}=0.
+\tag{19}
+\]
+Both Ricci source and tracefree Weyl are generically NONZERO.
+No weak-field expansion, linearized Einstein equation or physical
+Newton-constant fit is used here.
+
+### 7.2. Explicit native RIGHT INVERSE without any source mismatch
+
+For EACH h=1/L, write the native original coframe time labels
+`u_j=jh`. The exactly known native Cartan staggering assigns
+the coframe at site j to **its declared physical site readout**
+\(\tau_j=u_j-h/2\). Populate its ORIGINAL sixteen coframe slots
+with the exact values of the SAME fixed metric (18):
+\[
+H_h^{\rm site}(u_j,x,y)=H(\tau_j,x,y).
+\tag{20}
+\]
+This is a fixed half-step relabeling of the existing discrete record
+on a local unwrapped time chart, not a physical selected clock axiom.
+Every proper Lorentz link is then the ORIGINAL Cartan-determined
+\(K_a(u_j)\) in (2), without freezing the other originally varied links
+when calculating Euler equations.
+
+Now construct the actual **native finite scalar/top record**, not a
+separately fitted stress tensor. Fix
+\(\Psi_0^{(h)}=\Psi(u_0)\) and set the original chronological CAR
+amplitude increments by the explicit MIDPOINT quadrature
+\[
+\boxed{\quad
+\Psi^{(h)}_{j+1}
+ =\Psi^{(h)}_j
+   +h\,\Psi'(u_j+h/2).
+\quad}
+\tag{21}
+\]
+Thus the genuine original finite field gradient is **EXACTLY**
+\[
+D_u^+\Psi_j^{(h)}=\Psi'(u_j+h/2),\qquad
+E_j^{(h)}=\|D_u^+\Psi_j^{(h)}\|^2
+            =\|\Psi'(\tau_{j+1})\|^2.
+\tag{22}
+\]
+No energy `E_j` was installed independently of the material record.
+Since (17) is discrete harmonic EXACTLY and the quadratic radial term
+has discrete Laplacian 4, the NATIVE independent-variation source is
+\[
+\boxed{\quad
+\Delta_h^\perp H_h^{\rm site}(u_{j+1})
+=-4\lambda E_j^{(h)}
+\quad\text{at EVERY original free site, EVERY h.}
+\quad}
+\tag{23}
+\]
+Substituting this into the already-owned exact 40→3→1 Cartan
+classification and the same Golden-J2 original scalar/top Euler
+gives **all 16 coframe, 24 proper-Lorentz link and two scalar/top
+matter Euler rows equal to ZERO exactly at every free interior
+site**. No exterior/free boundary Euler or compulsory full Book
+selection is asserted.
+
+Unlike sampling \(\Psi(u_j)\) naively, the native midpoint
+preparation (21) gives the exact source **on the same interval at
+which the connection/link curvature is actually evaluated**.
+It is also a genuine refining approximation to the SINGLE fixed
+continuum matter field:
+\[
+\max_{u_j\in I}|\Psi_j^{(h)}-\Psi(u_j)|
+ \le\frac{|I|}{24}\,
+ \sup_I|\Psi'''|\,h^2
+\tag{24}
+\]
+by the compound midpoint quadrature rule for the integral of
+\(\Psi'\). Fixed small normalized CAR slack survives for all
+sufficiently fine h. The metric itself has **ZERO sampling error**
+in (20); no h-dependent continuum target is being substituted.
+This is an EXACT, mesh-independent right inverse from the same
+fixed nonlinear Einstein-null-scalar family to the original
+configured finite D0/Golden-J2 mathematical field equations.
+
+### 7.3. Even the original finite curvature reads the continuum wave exactly
+
+The original null generators commute, and for their span
+\(X^3=0\). Since \(U_u=e^K\) and \(U_x=U_y=I\), the original
+based-face holonomy has
+\[
+P_{ux}=\exp(X_{ux}),\quad
+X_{ux}=K(u_j,x,y)-K(u_j,x+h,y),\quad
+\mathcal R(P_{ux})=\frac12(P_{ux}-P_{ux}^{-1})=X_{ux}.
+\tag{25}
+\]
+No discarded cubic/exponential curvature terms occur:
+the *original nonlinear odd plaquette curvature* is EXACTLY its
+Lie exponent on this nilpotent subfamily.
+
+For the polynomial (18), every central second difference and every
+appropriately centered mixed spatial difference is EXACT, not merely
+consistent:
+\[
+\begin{aligned}
+-\frac2{h^2}\,[X_{ux}]_{N_2}
+ &=H_{xx}(\tau_{j+1},x,y),\\
+-\frac2{h^2}\,[X_{ux}]_{N_3}
+ &=H_{xy}(\tau_{j+1},x+h/2,y-h/2).
+\end{aligned}
+\tag{26}
+\]
+Analogous formulas hold for the other original u-y face;
+its component centers are their **actual plaquette centers**, not
+one guessed common unstaggered coordinate. Thus the native finite
+curvature reads the SAME continuum Ricci and Weyl profile exactly,
+at the appropriate locations, at every mesh. Equation (23) is its
+trace contraction; the tracefree harmonic part remains visible.
+
+### 7.4. Actual mathematical completion scope
+
+The exact fixed continuum solution (19), the entire original
+finite 40+2 source (23) and its genuinely recorded time-dependent
+scalar/top input (21) now form a COMMUTING CONSTRUCTIVE recovery
+diagram on the nonempty class (17)–(18): every mesh already solves
+the configured nonlinear field equations, the metric is exactly
+sampled and the matter history converges at second order.
+
+This is **stronger** than a finite root, a formal action probe,
+a rank certificate, a local Taylor Einstein germ or ordinary
+continuum consistency: the source is genuinely nonzero, the
+Weyl curvature is genuinely nonzero and no limit is necessary to
+make the finite equations vanish. Four independently moving
+harmonic amplitudes plus arbitrary small matter waveforms
+make the family infinite-dimensional.
+
+**Not a claim of universal D0⇒GR:** the original full compulsory
+Book03 `H+J+R`/clock/preparation/controller/work action has NOT
+been proved to select this separately configured Golden-J2
+geometric operand/source. The physical admission of the shifted
+coframe clock is also still conditional. This theorem completes
+a positive SAME-CONFIGURED-ACTION sourced nonlinear sector with
+exact mesh-by-mesh recovery; it does NOT close generic metric
+recovery, the original raw216 response, or the programme's
+full `GR` obligation.
+
+An independent direct numerical check of (20)–(26), using smooth
+varying \(\Psi,A_2,B_2,A_3\) rather than a tuned constant source,
+finds original Euler and normalized curvature/source residuals
+at floating-point roundoff for L=8,16,32,64,128. Its conclusion
+is the analytical exact-polynomial identity above, not a
+numerical extrapolation.
