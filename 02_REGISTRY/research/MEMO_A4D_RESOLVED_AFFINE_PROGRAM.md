@@ -21,6 +21,58 @@ counterexample that changes it. Publication, replay, acceptance and use in the
 parent argument are distinct. Neither a green certificate nor an exact
 connection root alone establishes the full native gravitational law.
 
+### Corrected prospective D_min physics selector — ex ante law, not a retroactive compressor (20 Oct 2026)
+
+The user exposed an actual fundamental interpretation error: an already
+EXECUTED long, paid Q8 history cannot be retroactively rewritten; but that
+true statement cannot refute the much stronger D0 HYPOTHESIS that physical
+\(D_{\min}\) SELECTS the minimum admissible complete programme BEFORE any
+history happens. The original Tome I §2.2 formally proves a MINIMUM
+DESCRIPTION among observationally equivalent descriptions; it does
+NOT yet formally prove the DYNAMICAL step \`D_min(description) =>
+prospective argmin native full H+J+R action across physical histories\`.
+Do not silently promote that missing implication as proven M1 physics,
+and do not claim the old retrospective Q8 cost no-go refutes it.
+
+NEW actual compiled source: \`D0.Foundation.EndogenousActionQuantum.ProspectiveDynamics\`
+and \`ProspectiveExecution\` explicitly type the true FULL initial
+state (including momentum/archive/clock/preparation), admitted action
+alphabet and boundary/goal, full additive dynamic source price and
+prospective optimality premise. Their Lean \`reject_strictly_dominated\`,
+\`optimal_suffix\` (finite Bellman principle), and
+\`no_positive_redundant_detour\` prove that a prospective law CANNOT
+select a more expensive path if a cheaper actually allowed alternative
+has the same COMPLETE initial state and goal, nor a gratuitous positive
+loop returning to the SAME complete future-sufficient state. This
+does NOT prove physical G0 chooses such a minimizer or the original
+full Book03 Cost−Info action obeys additive Bellman consistency.
+
+EVEN STRONGER native Q8 test: the old 8-gate equal-inventory order
+comparison was a valid demonstration, not a minimum. ORIGINAL native
+3-step \`IJI\` and \`JII\`, each using two local-i and one common-j,
+already produce \`commonJQ\` versus \`relativeSignQ*commonJQ\`
+and original Golden bright probabilities 0 versus **4p³**.
+Exhaustive direct original 8x8 gate words at lengths0/1/2 show
+NO matched-inventory Golden bright contrast, so 3 steps is minimal
+for that exact task under the fixed native gate/comparator alphabet.
+For the DIFFERENT goal "prepare only relativeSignQ" exactly two
+\`localIQ\` gates suffice. For goal "reproduce the true prior
+eight-step history with registered timestamp" the short word does
+NOT satisfy the same full-future test task, so it cannot replace the
+source provenance.
+
+Permanent scientific correction and mathematical scope:
+[A4D_PROSPECTIVE_DMIN_PHYSICAL_SELECTION_BEFORE_EXECUTION_AND_Q8_MINIMAL_3_GATE_2026_10_20.md](A4D_PROSPECTIVE_DMIN_PHYSICAL_SELECTION_BEFORE_EXECUTION_AND_Q8_MINIMAL_3_GATE_2026_10_20.md).
+Previous retrospective owner
+[A4D_M1_Q8_FULL_HISTORY_VS_MINIMAL_ENDPOINT_PROGRAM_AND_PRICE_JET_NOGO_2026_10_20.md](A4D_M1_Q8_FULL_HISTORY_VS_MINIMAL_ENDPOINT_PROGRAM_AND_PRICE_JET_NOGO_2026_10_20.md)
+now starts with a binding correction; its Price/Hessian facts remain
+correct only as audit of truly executed and recorded histories.
+Correct physical selection remains to be derived from original
+M1/D_min + genuinely admitted/paid native Book03 H+J+R and same
+future-test clock/matter constraints. Its output Einstein 16+24+CAR
+source, quantal Born interpretation and controlled refinement still
+OPEN; \`GR_closed=false\`.
+
 ### Upstream M1/D_min future-context source: no third primitive line, no erased future archive
 
 The original exact M1 verification contract now has a genuinely COMPILED generative
