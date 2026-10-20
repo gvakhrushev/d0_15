@@ -64,6 +64,8 @@ and, on a common positive chart with uniform C³ constants,
 
 These estimates are analytic Taylor inequalities derived from the genuine original probabilities; they do NOT assume Book03 selects any \`L_a\` as its action.
 
+**All-six original Lorentz control (subsequent exact replay):** the actual six generators \`(N2,N3,barN2,barN3,J23,B)\` are checked through \`exp(tG)\` and ALL true complete 17 probabilities. At t=.05 every root and Code first-source slope is1, but their genuine nonlinear cubic deviations are distinct: four null modes have (Code−root)/t³≈0.166792, J23 has≈0.416896 and boost B has≈−0.0833125. No extra continuous primitive was added. At finite amplitude the componentwise Code mark need not be conjugation-invariant unless its original observer/reference basis is physically transported; the general universality theorem expressly assumes the declared properly covariant source.
+
 **New exact one-parameter closed formula.** On original J23 subgroup \`P(t)=exp(t J23)\`:
 
     R_J23(t)=sin t,
@@ -158,6 +160,12 @@ The coframe modulation integrates out of (4) by the cosine-cube average. The act
 
 Hence **locality+parity+observability alone do NOT force pure GR.** The only remaining IR-relevant original scalar memory conditions to check are: what weight/clock normalization ACTUAL selected Book assigns to the even/code/absolute sector, and whether its unsuppressed curvature² or vacuum-energy sources vanish, fall into the independently proved squared Palatini ideal on actual roots, or survive as genuine additional physical fields. This is a measurable scaling/source question, not another 640-row rank search.
 
+### 4.1. Native h^-2 rare-event clock: an available ORIGINAL scaling, not an automatic selected action
+
+The already owned ORIGINAL full128 first-shell/marked positive experiment has \`epsilon_h=p²h²/64\` and a declared \`n_h=64L²\` schedule, so \`n_h epsilon_h=p²\` exactly. Thus the **same exponent h^-2** used by the accepted geometric-source scaling is achievable by a genuine D0 Golden event-clock mechanism: for a DECLARED fixed conditional marked response, n_h times an inversion-odd face amplitude O(h²) is O(1), while n_h times a centered inversion-even amplitude O(h⁴) is O(h²). This is a viable physically native *clock exponent*, not an invented continuous renormalization.
+
+But these are two DIFFERENT owners: the actual full128 physical EXIT happens with probability epsilon_h λ_h, and its true hidden Golden-port code contributes p³ per event. That event rate can leave a NONZERO limiting even/code source \`n_h p³ epsilon_h λ_h→p³ β λ\`, exactly as already certified by the full-history owner. Therefore do NOT infer from the matched exponent that full Book even/absolute/prep/clock sources vanish. The only valid shortcut is: prove the compulsory SAME history pays its signed Golden17 face readout on this rate, and independently compute its full uncentered-even/hidden-port/work/clock source. The global chiral O(h⁴) theorem then removes all local smooth ODD nonlinear code ambiguity *without* resolving the entire microscopic codebook.
+
 ## 5. SECOND GLOBAL THEOREM: original CAR16 Lorentz commutant leaves only HOLST ambiguity, which disappears in vacuum GR
 
 The owned exact ORIGINAL CAR16 grade2 Lorentz commutant is
@@ -190,7 +198,7 @@ pointwise (the Holst density). The metric/coframe variation of that term also va
 
     vacuum S_(a,b)  ->  R_{μν}=0   (or Einstein–Lambda if an independent admitted volume term is included).
 
-This is the standard continuum Palatini–Holst vacuum equivalence, now connected constructively to D0's EXACT ORIGINAL 2-dimensional CAR16 operator commutant and its inversion-odd Golden17 source; it is not a newly invented physical law or a claim of exact finite-lattice Bianchi zero. If b=0, pure Holst carries no Einstein metric equation; the nonzero Palatini/chiral projection is ESSENTIAL. Fermionic/Spin matter may source torsion and make the Holst parameter a physically relevant coupling; the bosonic vacuum theorem does NOT fix the full Einstein–Dirac theory. Position-dependent a(x),b(x) require additional derivative/torsion analysis and are not covered by the constant-coefficient statement.
+This is the standard continuum Palatini–Holst vacuum equivalence (see Barbero G. et al., Phys. Rev. D 105, 064066 (2022), DOI 10.1103/PhysRevD.105.064066), now connected constructively to D0's EXACT ORIGINAL 2-dimensional CAR16 operator commutant and its inversion-odd Golden17 source; it is not a newly invented physical law or a claim of exact finite-lattice Bianchi zero. If b=0, pure Holst carries no Einstein metric equation; the nonzero Palatini/chiral projection is ESSENTIAL. Fermionic/Spin matter may source torsion and make the Holst parameter a physically relevant coupling; the bosonic vacuum theorem does NOT fix the full Einstein–Dirac theory. Position-dependent a(x),b(x) require additional derivative/torsion analysis and are not covered by the constant-coefficient statement.
 
 **Independent exact integer data:** the new original-CAR16 checker copies the already-owned six Hodge matrix and finds \`J²=−I6\`, \`det(aI+bJ)=(a²+b²)^3\` for six nontrivial test pairs, including \`(a,b)=(2,3)\` giving determinant 2197. It also constructs a genuine algebraic 4D Riemann curvature satisfying FIRST BIANCHI from two symmetric matrices; \`ε^{abcd}R_abcd=0\` EXACTLY while its ordinary Einstein-scalar contraction is \`−34≠0\`. An artificial non-Bianchi curvature has nonzero ε contraction 24, confirming torsionfree/Bianchi is essential. The general geometric argument above proves the theorem, not just the six test pairs.
 
@@ -212,7 +220,7 @@ The decisive remaining question is now *whether the COMPULSORY original process 
 ## 7. Reproduction / status
 
 1. \`node 02_REGISTRY/research/sources/d0_global_chiral_ir_universality_2026-10-20/check_original_golden17_smooth_role_ir_universality.mjs\`
-   - Actually fetched live GitHub source and executed in current V8; terminal \`PASS_ORIGINAL_4D_ROLE_GOLDEN17_CHIRAL_IR_UNIVERSALITY\`. Original L=8→96 smooth Role shared links, 17 fully retained native positive outputs, exact signed odds/root source and full Shannon, real all-site source/derivative normalization, true 4D field derivatives, order-h4 and order-h2 empirical bounds, and the nonzero UNWEIGHTED even-code counterexample all PASS. Closed formulae (1)–(5) supply analytic proof.
+   - Actually fetched live GitHub source and executed in current V8; terminal \`PASS_ORIGINAL_4D_ROLE_GOLDEN17_CHIRAL_IR_UNIVERSALITY\`. Original L=8→96 smooth Role shared links, 17 fully retained native positive outputs, exact signed odds/root source and full Shannon, real all-site source/derivative normalization, true 4D field derivatives, order-h4 and order-h2 empirical bounds, the nonzero UNWEIGHTED even-code counterexample and **six actual native Lorentz generator 17-outcome positivity/source tests** all PASS. Closed formulae (1)–(5) supply analytic proof.
 2. \`node 02_REGISTRY/research/sources/d0_global_chiral_ir_universality_2026-10-20/check_original_car16_hodge_holst_vacuum_class.mjs\`
    - Actually fetched live GitHub source and executed in current V8; terminal \`PASS_ORIGINAL_CAR16_HODGE_HOLST_VACUUM_UNIVERSALITY\`. Original six-bivector Hodge, its exact aI+bJ inverse/determinant, first Bianchi/ε Holst negative control with genuine nonzero scalar curvature, all PASS.
 3. This combined theorem is **research mathematics / scoped continuum universality**, not a newly accepted scientific closure or production formal Lean proof. None of the actual full G0 H+J+R, compulsory original Cost-floor+Shannon selection, 128/oldRIGHT, normalizing clock, matter source Ward, uniform exact periodic Einstein root or raw216 were rerun/claimed.
