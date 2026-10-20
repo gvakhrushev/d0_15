@@ -42,6 +42,31 @@ nonlinear geometric class. If an alternate action produces an
 unremoved source on this shared carrier, it fails this candidate
 substitution unless that actual source is derived and controlled.
 
+## Next general-theory closure: one natural 2-jet source, TWO already exact witnesses
+
+Consume the [primary exact curved sector](D0_GR_PRIMARY_POSITIVE_CASE.md)
+and the [VSI/Lovelock two-witness theorem](A4D_VSI_LOVELOVK_TWO_WITNESS_UNIVERSAL_GR_SYNTHESIS_2026_10_20.md).
+The source-class theorem says: if the ONE full physically selected
+gravitational Euler response is metric-only, locally diffeomorphism-natural,
+symmetric, off-shell divergence-free and genuinely second-order, it is
+`aG+b g` in 4D. Its original genuinely vacuum Minkowski member
+forces `b=0`; one actually admitted sourced member then forces
+`kappa/a=-lambda_-`. A universal same-programme matter equation
+would therefore give the ENTIRE Einstein class, not only this
+Brinkmann sector. This uses existing E-ALLY/E-T4NAT, not a new
+external gravitational hypothesis.
+
+**Sharp firewall:** All Brinkmann metrics have `R=0`, while Ricci/Weyl
+can be nonzero; all polynomial curvature scalars/derivative contractions
+vanish (VSI). A full `R²` Euler correction is invisible even to all
+source rows on the exact family. Thus neither scalar-only detection
+nor matching more exact waves establishes physical GR. Derive the
+genuine source's metric-only `J²` descent, arbitrary local Diff
+naturality (not grid-only covariance), off-shell Ward and full
+Book/clock/Cost-Info/matter admission. Existing
+`positive_gr` and `raw216` are OPEN. This is a shortcut
+in PROOF ARCHITECTURE, not a shortcut that assumes those premises.
+
 ## Architectural objective
 
 D0 supplies the necessary operational structure `Sigma` (`Σ`) of verification
