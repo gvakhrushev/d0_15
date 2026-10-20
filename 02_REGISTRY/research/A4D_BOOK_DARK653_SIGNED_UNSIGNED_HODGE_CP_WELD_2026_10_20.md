@@ -113,3 +113,38 @@ This reproduces the already accepted value −0.4763744515526456... and directly
 **Decisive implication for the physical target:** the original **orientation cycle class**, rather than any particular endpoint allocation of primitive edge Costs, is the invariant input to the true scalar Book first/second source. A proposed original CAR/physical-record→718 Cost compiler MUST preserve this gauge-covariant class and account for the changing endpoint records. It cannot infer Δα as the amplitude from the index-one pairing: Δα is an independently canonized Q(φ) scalar and the actual field-to-Cost variation remains physically unowned.
 
 Companion executable checker: sources/d0_book_dark_hodge_2026-10-20/check_cp_harmonic_gauge.py. It verifies on ALL 718 native transitions the exact coboundary, similarity for six distinct ε, identical stationary Perron edge laws, and the native row harmonic condition; max finite-ε flow difference was under 7×10^−18 in the independent local check. Source code changes reside in the already active research PR #384, no parallel scientific task or promotion.
+
+## 7. FULL original scalar Book Schur SOURCE selection: a three-channel orthogonal decomposition, not just a carrier inventory
+
+At the SAME original reversible Book equilibrium and its unique original current/history Euler root, #384 defines the genuine Fisher-archive force G_V on 718 full directed edges for any primitive affine Cost tangent d_V:
+    G_V = sqrt(μ)·[d_V−c_V−ξ_V(source)+ξ_V(target)],
+    (I−P)ξ_V = E_P[d_V | source]−c_V,   π·ξ_V=0.
+In particular J0^T G_V=0, and for affine costs the negative history-Schur contribution to the SAME native scalar Book effective action is −lnφ ||G_V||². We now have **EXACT mutually orthogonal projectors** onto three nonoverlapping subspaces of im Q_A:
+    Q_A=I−J0J0^T,    X=Q_A J1,    F=X^T X (rank32);
+    P_32=X F^+ X^T (genuine stationary-zero-mode quotient);
+    P_dark=Q_A−P_32,  reversal R η_(uv)=η_(vu);
+    P_326=(I+R)P_dark/2,  P_327=(I−R)P_dark/2.
+Because the *original baseline is REVERSIBLE*, R commutes with P_dark and both parity components are orthogonal. Thus
+    −D² A_eff[V,W] = lnφ( <P_32 G_V,P_32 G_W>
+                              +<P_326 G_V,P_326 G_W>
+                              +<P_327 G_V,P_327 G_W> )      (12)
+when the primitive costs are affine in the supplied V,W; retain E_μ[D²s] otherwise.
+
+**Sharp exact parity selection:**
+- If d_uv=d_vu (any reversal-EVEN native primitive Cost first jet), then P_327 G_d=0 identically. Its genuine history source can have 32 and/or 326 contributions; future32 alone is NOT always sufficient.
+- If d_uv=−d_vu (any reversal-ODD native primitive Cost first jet), then P_32 G_d=P_326 G_d=0 identically. ALL its native scalar history-Schur contribution lies in the exact triangle-boundary D_327. In particular the physical first source of the scalar bulk pressure at a reversible reference is zero, but its negative second source is not generally zero.
+- For any even d_e and odd d_o, the native scalar history-Schur bilinear <G_de,G_do>=0. Hence no mixed even/odd scalar Hessian at the reversible baseline.
+
+**Three exact-original-Cost hostile controls, direct numerical full718 rerun (same original μ,J0,J1,P,Poisson):**
+
+| original d_e | lnφ||P_32G||² | lnφ||P_326G||² | lnφ||P_327G||² |
+|---|---:|---:|---:|
+| reversal-even ALL 99 undirected AB edges | 0.129728425456446 | <1e−28 | <1e−28 |
+| reversal-even SINGLE original undirected edge {0,9} | 0.000249801082145 | 0.001300003535963 | <1e−30 |
+| reversal-odd original zone CP cycle (all 359 bidirectional pairs) | <1e−29 | <1e−29 | 0.476374451552646 |
+
+The independent Schur closure error is <2.4e−15. The originally observed 83.8817% dark source on a single reversal-even edge is thereby identified specifically as **signless326**, while the CP source belongs specifically to **signed327**. This resolves the parity assignment which neither the 32/653 split of #384 nor the standalone Lean 326/327 ranks supplied.
+
+**Physical use:** after any ACTUAL original fully priced full128/CAR/Lorentz→718 Cost/Info tangent is established, (12) is the exact parent-compatible scalar historical part of the same-action source. No physical mapping is silently selected here. The Lorentz Hessian and its separate ordered-history memories must remain present. A scalar-only pressure still cannot reproduce the full original Palatini 12+/12− block, and GR_closed remains false.
+
+New executable numerical regression: sources/d0_book_dark_hodge_2026-10-20/check_book_source_three_channel_parity.py (a bounded full718 original native-source Poisson replay, no eigenrank census beyond the already owned F rank32).
