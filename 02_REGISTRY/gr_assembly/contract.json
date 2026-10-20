@@ -1191,7 +1191,7 @@
         "head": {
           "repository": "gvakhrushev/d0_15",
           "branch": "exp/a4d-joint-response-continuation-2026-10-16",
-          "sha": "28f3b47c7f5e3627654266dba631cfa4436bcb5b"
+          "sha": "575010ad703e3c2c539549dfb198a4e3fb2d33a0"
         },
         "base": {
           "repository": "gvakhrushev/d0_15",
