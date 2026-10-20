@@ -90,3 +90,62 @@ assert abs(second-9*ell*ell*float(W))<1e-7
 print("PASS ALL 7722 genuine weighted loop sums: D W = -3 ln(phi)*W, D2W=9 ln(phi)^2 W")
 print("FIREWALL: weighted marked conditional observable is NOT proven")
 print("          compulsory selected original H+J+R Einstein-CAR action")
+
+
+# Full EXACT native 3-tick BOOK balanced flow on all original 718 directed
+# edges. It gives the correct first field source of the SINGLE W=Z3/7722
+# multiplier, not a fitted per-face Einstein coefficient.
+third={ (i,j):[x for x in range(33) if part[x] not in (i,j)]
+        for i in range(3) for j in range(3) if i!=j }
+f3={(u,v):K[u,v]*sum((K[v,w]*K[w,u] for w in third[part[u],part[v]]),Q(0))/Z3
+    for u,v in E}
+assert sum(f3.values(),Q(0))==one
+out={u:sum((f3[u,v] for v in range(33) if (u,v) in f3),Q(0)) for u in range(33)}
+incoming={v:sum((f3[u,v] for u in range(33) if (u,v) in f3),Q(0)) for v in range(33)}
+assert out==incoming and min(f3.values())>0
+print("PASS ALL718 three-tick source f_e=K_e*(K²)_reverse/TrK³ is POSITIVE BALANCED")
+
+# Golden canonical reference has EXACT 1/3 of the THIRD-TICK source on
+# each of the three unordered zone-pairs, 1/6 per oriented zone pair.
+nc={ (0,1):13,(1,0):13,(0,2):11,(2,0):11,(1,2):9,(2,1):9 }
+for i,j in ((0,1),(0,2),(1,2)):
+ total=Q(0)
+ for u,v in E:
+  if {part[u],part[v]}=={i,j}:total+=Q(nc[part[u],part[v]],7722)
+ assert total==Q(1,3)
+ directional=sum((Q(nc[i,j],7722) for u,v in E
+                 if part[u]==i and part[v]==j),Q(0))
+ assert directional==Q(1,6)
+print("PASS ORIGINAL canonical K9/11/13 all three unordered zone-pairs have mass EXACTLY 1/3")
+
+# Reproduce the exact native source Ward and second log-pressure variance
+# with arbitrary directed affine primitive Cost variations ds_e.
+d={(u,v):Q((2*u+3*v)%11-5,7) for u,v in E}
+mean1=3*sum((f3[e]*d[e] for e in E),Q(0))
+z_second=Q(0)
+for a in A:
+ for b in B:
+  for c in C:
+   wp,wm=Wpair(a,b,c)
+   xp=d[a,b]+d[b,c]+d[c,a]
+   xm=d[a,c]+d[c,b]+d[b,a]
+   z_second+=3*(wp*xp*xp+wm*xm*xm)
+variance=z_second/Z3-mean1*mean1
+assert variance>0
+def logclock(t):
+ z=0.
+ for a in A:
+  for b in B:
+   for c in C:
+    wp,wm=Wpair(a,b,c)
+    xp=float(d[a,b]+d[b,c]+d[c,a])
+    xm=float(d[a,c]+d[c,b]+d[b,a])
+    z+=3*(float(wp)*exp(-ell*t*xp)+float(wm)*exp(-ell*t*xm))
+ return log(z/7722)
+h=0.0002
+fd1=(logclock(h)-logclock(-h))/(2*h)
+fd2=(logclock(h)-2*logclock(0)+logclock(-h))/(h*h)
+assert abs(fd1+ell*float(mean1))<2e-7
+assert abs(fd2-ell*ell*float(variance))<2e-7
+print("PASS native true 3-tick Cost Ward: DlnW=-3ln(phi)*sum(f3*Ds)")
+print("PASS second Book third-tick source = ln(phi)^2*Var_true7722(Cost)")
