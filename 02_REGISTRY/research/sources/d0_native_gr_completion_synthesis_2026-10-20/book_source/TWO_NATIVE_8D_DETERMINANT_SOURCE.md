@@ -434,3 +434,46 @@ preparation equations. This one-round application supplies no later
 history/refinement theorem or compulsory physical selection. The
 [review receipt](PRIMARY_RIGHT_POSTERIOR_GAIN_SOURCE_REVIEW.md) records
 the frozen evidence; the original native GR obligations remain open.
+
+## 14. Complete code-relative gain and actual coherent branch transport
+
+The [same-programme complete-code application](PRIMARY_RIGHT_COMPLETE_CODE_SOURCE.md)
+supplies the actual RIGHT likelihood M_gamma=N B_gamma/mu_gamma on
+the original reference, for a genuinely supplied complete leaf reference
+mu. It retains the polar factor K_gamma E=W_gamma sqrt(mu_gamma M_gamma)
+and, on the certified faithful chart, its full Sylvester first jet.
+Thus the direct Book source can use the actual coherent branches and
+preparation jets; posterior expectations do not replace them.
+
+On the declared classical-pointer/quantum-RIGHT algebra, the owned
+central gain theorem gives exactly D_phi(q||mu)+I_phi(RIGHT:pointer).
+Matching LABEL code cost minus that full gain is H_phi(pointer|RIGHT).
+Its source is independent of matching nonuniform code derivatives;
+the complete operator reference cost additionally includes the fixed
+log_phi128 capacity. Actual preparation/work is not thereby free.
+The existing full-fine certificate gives this conditional price's
+angle coefficient between -6.359268283219129e-7 and-6.35926827829028e-7,
+with every active/zero outcome retained and no new spectral run.
+
+This also decides the previous simplest physical binding: paired
+nonblank ports have the SAME RIGHT posterior but different cost and
+probability. Standalone posterior gain plus the known port cost fails
+the owned amplitude/scalar binding. The actual extra ledger must
+supply respectively3/2 or2 units of gain-minus-extra-cost difference.
+Averaging a spectral gain before exponentiating also tilts the coarse
+law. Actual refined spectral leaves fix the scalar binding under a
+matching full code; absolute amplitudes require their separate half
+binding and phases. No one of those choices is selected here.
+
+Fixed spectral projectors at the flat primary centre already reproduce
+the certified LEADING source, so a moving eigensolver/controller is
+not required for that limited target. Its admitted paid placement on
+protected oldRIGHT remains missing. The full coherent Y–RIGHT cut
+also retains offdiagonal blocks and cannot inherit the direct-sum
+central theorem by relabeling.
+
+The [review receipt](PRIMARY_RIGHT_COMPLETE_CODE_SOURCE_REVIEW.md)
+pins these substitutions. The next physical input is the actual complete
+code/Cost, event-level Info and memory/readout binding, together with
+all work, normalization and upstream equations. This result does not
+select a Book action, supply a field generator or close native GR.

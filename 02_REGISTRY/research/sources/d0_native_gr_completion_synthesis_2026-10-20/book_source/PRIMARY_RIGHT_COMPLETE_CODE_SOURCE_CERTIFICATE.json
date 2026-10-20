@@ -1,0 +1,199 @@
+{
+  "Book_absolute_amplitude_binding_proved": false,
+  "actual_primary_source_transport": {
+    "conditional_net_interval_phi": [
+      -6.359268283219129e-07,
+      -6.35926827829028e-07
+    ],
+    "exact_dyadic_endpoints": [
+      "-6006159079250001/9444732965739290427392",
+      "-6006159074594835/9444732965739290427392"
+    ],
+    "formula": "h1-i1=-(i1-h1)",
+    "inherited_arithmetic_premise": "IEEE binary64 nearest arithmetic without FTZ/overflow; optimize=False direct einsum is a sum of k binary64 products and at most k-1 additions in any order, optionally FMA; no eigensolver accuracy premise",
+    "matrix_replay_performed": false,
+    "prior_wrong_unconditional_interval_phi": [
+      6.35926827829028e-07,
+      6.359268283219129e-07
+    ]
+  },
+  "arithmetic": "stdlib Fraction matrices and exact rational prime-log coefficient identities",
+  "complete_code_selected": false,
+  "decimal_supplement_phi_not_used_for_proof": {
+    "conditional_entropy": "2.1037453444794684003566161334455605343950546441060161028197810269",
+    "cost": "2.4822879460012239196557174025156728052240382932690263344357770377",
+    "dconditional_entropy": "-0.083860789108683379329967759556926609772469523033349335008679718798",
+    "dcost": "0.034352342523468425109604916781738817572936069460388540072842463976",
+    "dfull_gain": "0.11821313163215180443957267633866542734540559249373787508152218277",
+    "dposterior_gain": "0.083860789108683379329967759556926609772469523033349335008679718798",
+    "full_gain": "0.37854260152175551929910126907011227082898364916301023161599601083",
+    "posterior_gain": "0.17926648410981100010940847074008487098239865311346731718844280013"
+  },
+  "fixture_scope": "small noncommuting quantum ledger, not a native replacement instrument or selected code",
+  "identities": [
+    "D(Omega||M_mu)=D(q||mu)+I(R:Y)",
+    "E[-log_phi mu]-D_phi(Omega||M_mu)=H_phi(Y|R)",
+    "E[-log_phi M_mu]-D_phi(Omega||M_mu)=S_phi(Omega)",
+    "-log_phi M_mu=-log_phi mu+log_phi RIGHT_dimension"
+  ],
+  "mean_inside_exponential_counterexample": {
+    "correct_fine_eigenleaf_weights": [
+      [
+        "1/4",
+        "1/4"
+      ],
+      [
+        "1/4",
+        "0"
+      ],
+      [
+        "0",
+        "1/4"
+      ]
+    ],
+    "label_only_fine_weight_sum": "2",
+    "q_equals_mu": [
+      "1/2",
+      "1/4",
+      "1/4"
+    ],
+    "wrong_normalized_pointer_law": [
+      "1/3",
+      "1/3",
+      "1/3"
+    ],
+    "wrong_unnormalized_weights": [
+      "1/2",
+      "1/2",
+      "1/2"
+    ]
+  },
+  "mutation_hooks": [
+    "--mutate omit-moving-reference",
+    "--mutate omit-log-dimension"
+  ],
+  "negative_controls": [
+    "omitting either moving-code term changes the net source by nonzero 1/(15 ln(phi))",
+    "conditional mean gain inside a branch exponential changes the actual probabilities",
+    "full operator reference cost includes the RIGHT-dimension constant"
+  ],
+  "noncommuting_fixture": {
+    "blocks": [
+      [
+        [
+          "13/60",
+          "0"
+        ],
+        [
+          "0",
+          "7/60"
+        ]
+      ],
+      [
+        [
+          "1/6",
+          "1/15"
+        ],
+        [
+          "1/15",
+          "1/6"
+        ]
+      ],
+      [
+        [
+          "7/60",
+          "-1/15"
+        ],
+        [
+          "-1/15",
+          "13/60"
+        ]
+      ]
+    ],
+    "code_motion_in_each_natural_jet": "1/15",
+    "dmu": [
+      "1/10",
+      "-1/15",
+      "-1/30"
+    ],
+    "dq": [
+      "1/15",
+      "-1/30",
+      "-1/30"
+    ],
+    "eigenjets": [
+      [
+        "13/300",
+        "7/300"
+      ],
+      [
+        "-1/300",
+        "-3/100"
+      ],
+      [
+        "0",
+        "-1/30"
+      ]
+    ],
+    "eigenvalues": [
+      [
+        "13/60",
+        "7/60"
+      ],
+      [
+        "7/30",
+        "1/10"
+      ],
+      [
+        "1/4",
+        "1/12"
+      ]
+    ],
+    "exact_value_and_first_jet_checks": true,
+    "minimum_size": "three blocks on RIGHT2; two blocks summing to I2/2 necessarily commute",
+    "mu": [
+      "1/2",
+      "1/3",
+      "1/6"
+    ],
+    "nonzero_commutator": [
+      [
+        "0",
+        "1/150"
+      ],
+      [
+        "-1/150",
+        "0"
+      ]
+    ],
+    "q": [
+      "1/3",
+      "1/3",
+      "1/3"
+    ]
+  },
+  "original_Golden_pair_control": {
+    "Delta_Cost": "1",
+    "Delta_conditional_RIGHT_gain": "0",
+    "actual_scalar_port_log_likelihood_Delta": "2",
+    "log_phi_q1_over_q0": "1",
+    "required_Delta_Info_amplitude": "3/2",
+    "required_Delta_Info_minus_Cost_amplitude": "1/2",
+    "required_Delta_Info_minus_Cost_scalar": "1",
+    "required_Delta_Info_scalar": "2",
+    "required_extra_Delta_Info_minus_Cost_amplitude": "3/2",
+    "required_extra_Delta_Info_minus_Cost_marker": "1",
+    "required_extra_Delta_Info_minus_Cost_scalar": "2",
+    "standalone_Delta_RIGHT_gain_minus_port_Cost": "-1"
+  },
+  "source_sha256": {
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/BOOK_SOURCE_BINDING.md": "2b26bf2f4c1b128731ccf14a17437ba654c046e82b5e42e55113a8b6053494ea",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/PRIMARY_RIGHT_POSTERIOR_GAIN_SOURCE.md": "3e177e614fb2b30d202f13af65d9896211afeebd68bcb2b497800a7ed0edaba5",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/PRIMARY_RIGHT_POSTERIOR_GAIN_SOURCE_CERTIFICATE.json": "3fc747be8d27a7b581cfa7a2e9b58da5ff87058a4e3b76199dd2e9483a674b6a",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/check_primary_right_posterior_gain.py": "2985ab0b4fb007c424c75d2bd57369b781ad1b1653ec3b8b8c68d4d30780367d",
+    "02_REGISTRY/research/sources/d0_operational_gain_2026-10-15/RESULT.md": "428bdda31e27ea6e7bf18ac93528fa4bc21c28677026341af2e86a36ac67ff52"
+  },
+  "spectral_RIGHT_read_admitted": false,
+  "status": "PASS",
+  "work_or_preparation_cost_removed": false
+}
