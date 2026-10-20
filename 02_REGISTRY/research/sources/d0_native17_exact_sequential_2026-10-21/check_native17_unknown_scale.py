@@ -169,5 +169,5 @@ out={'status':'AUTHOR_REPLAY_PASS','source_scope':'original Golden17 u/v; generi
  'c':float(cn),'phi':float(PHI),'checks':checks,'finite_exact_risks':risks,
  'raw_trial_bounds':bounds,'physical_Book_Info_selected':False,'GR_closed':False,
  'controller_gate_cost_optimality_claimed':False}
-Path(__file__).with_name('RESULT.json').write_text(json.dumps(out,indent=2)+'\n',encoding='utf-8')
+Path(__file__).with_name('UNKNOWN_SCALE_RESULT.json').write_text(json.dumps(out,indent=2)+'\n',encoding='utf-8')
 print(json.dumps(out,indent=2))
