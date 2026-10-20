@@ -13,17 +13,18 @@ by this integration, without rewriting the original report.
 Original published worker head:
 `9e3073851e9fa59d3564caeb02a8a5cb4d6d936b`.
 
-Prepared integration dependency: the published #353 checkpoint
-`16b8b0b749dc49554ee521ca0aa97c6bc06bb5c4`, which contains main
-`e9d81e07deff2c51c17a312332fa5260a0a833b3`. This is an explicitly prepared
-dependency while #353 awaits final acceptance/merge. CONTROL permits this
-prepared branch to reach Ready against actual main
-`e9d81e07deff2c51c17a312332fa5260a0a833b3` so its combined formal closure can
-compile independently while #353 is reviewed. This does not permit merging
-#342 before #353: before merge, refresh with final main containing #353's
-acceptance and update the PR baseline. The original formal inputs are already
-present through the prepared dependency; acceptance/provenance updates alone
-do not assert a new mathematical build result.
+Initial prepared dependency: the published #353 checkpoint
+`16b8b0b749dc49554ee521ca0aa97c6bc06bb5c4`, containing then-main
+`e9d81e07deff2c51c17a312332fa5260a0a833b3`. CONTROL allowed the combined
+formal closure to compile while #353 awaited acceptance and merge.
+
+Actual main integration parent:
+`cf25e1dd18d3de5f259b7b9041bf778b8254e96a`, after #353 was accepted and
+merged. The refresh preserves that accepted application and its independent
+decision. All formal inputs, including the generated `D0.All`, are unchanged
+from the published Ready build head
+`7dad5382aff9a80d3fea2daa293739679034f8c4`; the refreshed assembly and
+provenance metadata do not introduce a new mathematical build result.
 
 The Lean owner is
 `03_FORMALIZATION/D0/Research/PrimitiveJetComposition.lean`, SHA-256
@@ -79,15 +80,19 @@ the actual typed native maps, their physical admission and their instrument
 agreement must still be supplied and applied. No v8 primitive, native action,
 physical source or GR closure is obtained by this intake.
 
-The application is submitted as `proposed`. The original bounded task can be
-self-retired as a complete scoped submission; independent pinned acceptance
-of this exact application remains necessary for scientific delivery. Neither
-a green build nor the task's retirement accepts a physical parent premise.
+The application is now `accepted` for `primitive_jet_composition` only. The
+independent [decision](../../../gr_assembly/reviews/lean-primitive-jet-composition-to-word-slot.md)
+is pinned at `8a49edff2a32810d6fc16379f1efba2ea85b3998` and binds the exact
+application digest
+`2fd27f22e6d5da240a116a56a372d01d9605bc03fcd070654fbeacceebe74e2d`.
+Activation followed the separate successful actual Lean integration build
+recorded below. Queue retirement and this accepted substitution complete the
+original bounded worker; the physical consumer and its native maps remain open.
 
 ## CONTROL changes and validation boundary
 
 - Register the unchanged module as `EXPLICIT_SUPPORT` and regenerate `D0.All`.
-- Preserve the prepared dependency's strategy and queue; retire only the
+- Preserve current main's strategy and queue; retire only the
   original #342 task through the lifecycle helper and regenerate work views.
 - Add one typed result and its scoped application pinned to the original
   published source. Use the second of the two capacity places explicitly
@@ -97,11 +102,25 @@ a green build nor the task's retirement accepts a physical parent premise.
 The original published report records a narrow Lean build with 1475 jobs and
 standard axioms, without `sorryAx`. This integration environment has neither
 `lake` nor `lean` nor a populated `.lake` cache; no new local Lean success is
-claimed and no toolchain is installed. Exact-head Ready GitHub CI must check
-the imported `D0.All` closure before merge. Local validation covers the
-affected structural, assembly, lifecycle and generated-view gates.
+claimed and no toolchain is installed.
 
-Local checks passed on this prepared integration tree:
+The actual Ready GitHub CI build passed in
+[run 39408876490](https://github.com/gvakhrushev/d0_15/actions/runs/39408876490),
+associated with published head
+`7dad5382aff9a80d3fea2daa293739679034f8c4`. The completed log records
+compilation of `D0.Research.PrimitiveJetComposition` and a successful `D0.All`
+build with 4552 jobs. Job `118581429089` and its actual
+`Build release proof closure` step both succeeded; the build step completed
+at 2026-10-20 11:18:17 UTC and the run at 11:18:20 UTC.
+
+The full `03_FORMALIZATION` tree, formal-support registration and Lean build
+workflow are byte-identical to that Ready head. The subsequent changes are
+assembly acceptance, independent review and integration provenance only.
+This records actual compilation on unchanged formal inputs; a skipped metadata
+check is not used as build evidence. Local validation covers the affected
+structural, assembly, lifecycle and generated-view gates.
+
+Local checks passed on the initial prepared integration tree:
 
 - `python3 tools/validate_repo.py` — 889 claims, 174 formal-support entries,
   909-module closure, zero errors and warnings.
@@ -113,3 +132,9 @@ Local checks passed on this prepared integration tree:
   `python3 tools/generate_lean_views.py --check`.
 - `git diff --check` against the prepared dependency, and exact byte comparison
   of the module, original RESULT and candidate note with the worker head.
+
+After the actual-main refresh and scoped acceptance, the affected repository,
+work, agent, assembly and generated-view checks passed again. The assembly
+contains 52/52 active results and three discharged scoped obligations; this
+activation adds only `primitive_jet_composition`. The exact application digest
+is unchanged. `native_sector` and all physical GR obligations remain open.

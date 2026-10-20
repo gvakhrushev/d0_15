@@ -2065,7 +2065,14 @@
         }
       },
       "review": {
-        "state": "proposed"
+        "state": "accepted",
+        "by": "Codex CONTROL independent reviewer (merge_research_intake, 2026-10-20)",
+        "digest": "6a6ee2276dd51bf6cae7f9bfa552b5e55167d3e24fe846d86b44ec0cff884d8e",
+        "decision": {
+          "ref": "16b07f9fb6abae4369e2457e28f9a0e20254b992",
+          "path": "02_REGISTRY/gr_assembly/reviews/lean-memory-tangent-span-to-mv-slot.md",
+          "sha256": "3a0a189ae64e5527334890f06ac8d559c2dd1491af568544afd2a56bde0b3533"
+        }
       }
     },
     {
@@ -2086,7 +2093,14 @@
         }
       },
       "review": {
-        "state": "proposed"
+        "state": "accepted",
+        "by": "Codex CONTROL independent reviewer (merge_research_intake, 2026-10-20)",
+        "digest": "2fd27f22e6d5da240a116a56a372d01d9605bc03fcd070654fbeacceebe74e2d",
+        "decision": {
+          "ref": "8a49edff2a32810d6fc16379f1efba2ea85b3998",
+          "path": "02_REGISTRY/gr_assembly/reviews/lean-primitive-jet-composition-to-word-slot.md",
+          "sha256": "99deb37f1f922938bc1928ef65eb5262521e17bd7be9356679f49e3604a2565f"
+        }
       }
     }
   ],

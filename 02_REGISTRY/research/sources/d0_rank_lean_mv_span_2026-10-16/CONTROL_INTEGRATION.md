@@ -62,10 +62,12 @@ establishing the physical tangent class and proving the source/Ward map remain
 separate work. This application does not discharge `matter_source_ward`,
 `native_sector`, the original raw terminal or GR.
 
-The application is submitted as `proposed`. Queue retirement records a complete
-scoped submission for review; scientific acceptance still requires an
-independent pinned decision on its exact digest. A passing build alone does
-not mark the application accepted.
+The application is now `accepted` for `mv_tangent_span` only. The independent
+[decision](../../../gr_assembly/reviews/lean-memory-tangent-span-to-mv-slot.md)
+is pinned at `16b07f9fb6abae4369e2457e28f9a0e20254b992` and binds the exact
+application digest. The separate actual Lean integration build also passed,
+as recorded below. Queue retirement and this accepted substitution complete
+the original bounded worker; physical instantiation remains open.
 
 ## CONTROL changes
 
@@ -106,3 +108,18 @@ Local checks passed on the integration tree:
 The first repository check exposed obsolete-directory prose in the candidate
 note; the one-sentence editorial repair above resolved it without changing the
 validator or any mathematical assertion.
+
+## Final integration acceptance
+
+Actual GitHub Ready run [39407194430](https://github.com/gvakhrushev/d0_15/actions/runs/39407194430/job/118575884394)
+compiled the release closure on published head
+`16b8b0b749dc49554ee521ca0aa97c6bc06bb5c4`. The build step completed
+successfully on 2026-10-20 at 10:51:50 UTC; its log records `D0.All`
+and `Build completed successfully (4551 jobs)`. This was an executed build,
+not a skipped workflow step. Ready guards on that head also passed.
+
+The later acceptance commit changes only the pinned review, application review
+block and generated/documentation views; all formalization inputs remain
+byte-identical to that compiled head. The accepted application discharges
+`mv_tangent_span`; the previously accepted C2 obligation stays accepted.
+`matter_source_ward`, native dynamics and GR retain their existing open scope.
