@@ -133,3 +133,33 @@ This is NOT only a Taylor ratio. The complete observable probability trajectory 
 Independent exact high-precision controls at epsilon=0.1, 0.3, 0.8 and epsilon=|Delta_alpha| (used as a conditional mathematical value only) verify (13)–(14) at 60+ digits, including normalization sum q=1 and monotonicity theta(epsilon)<theta(0). If one ASSUMES epsilon=|Delta_alpha|, the predicted purely scalar Book pair-mass shift is (+2.03507744e−9, −2.29766808e−9, +2.62590637e−10), in native stationary probabilities. This does NOT establish that the physical native cost bias equals Delta_alpha, or predict a measured neutrino or GR source.
 
 The original 718-edge source is therefore simultaneously (i) an exact FDT resistor/Hessian, (ii) the first nonzero mixed 6-step connected historical cumulant, and (iii) an ALL-amplitude visible probability redistribution with a canonical trace-free 31:-35:4 selection. What is missing remains precisely the typed fully paid full128/16+24 Lorentz/CAR/clock→718 directed Cost/Info plus ordered history map of parent #334. The scalar-only Palatini Hessian no-go remains.
+
+
+## 8. FULL ORIGINAL 718 directed Cost tangent -> ONE scalar CP²-to-even source (no orbit ansatz required)
+
+This strengthens every preceding zonal formula to a necessary-and-sufficient linear response functional on ALL actual native directed primitive edge Costs, even when the perturbation breaks all within-zone symmetries.
+
+At the equal-native-Cost baseline let d=(d_uv) be ANY real first jet of all 718 original primitive directed Cost prices (the candidate field V need not itself be zone-invariant). Define its reversal-even original interface averages for unordered orbit i={zone A,zone B}, etc.:
+
+    avg_AB(d)=(1/(2·99)) Σ_(u∈A,v∈B) (d_uv+d_vu),
+    avg_BC(d)=(1/(2·143)) Σ_(u∈B,v∈C) (d_uv+d_vu),
+    avg_CA(d)=(1/(2·117)) Σ_(u∈C,v∈A) (d_uv+d_vu).
+
+Let C_CP be the native ±1 directed CP Cost tangent and A(s) the SAME original scalar Book all-history Perron pressure. Its exact full-carrier third derivative is the linear functional
+
+    L(d):= D_d D_(C_CP)^2 A(s)|equal-cost.
+
+The native Aut-group G=S9×S11×S13 acts transitively on all edges of each original interface while fixing the zone-directed CP pattern. Perron pressure is invariant under the induced conjugations. Also K(s^T)=K(s)^T gives A(s^T)=A(s) and reverses C_CP; since L contains TWO CP derivatives, L(d)=L(d^T). Thus L is a reversal-even, G-invariant linear functional on the ORIGINAL 718-dimensional Cost fibre; it is determined COMPLETELY by its values on the THREE native interface orbit-constant basis vectors. §4 calculated precisely these three values, so **for any original d**:
+
+    L(d)=kappa[31 avg_AB(d)−35 avg_BC(d)+4 avg_CA(d)],    (15)
+    kappa=185328(lnφ)^2 rho_0/(3rho_0²−359)^3 >0.
+
+No free functional or fitted coefficient remains. This is the exact 718→3→1 compression of the *specific* CP²→even scalar Book source; it does NOT compress the full original 685 historical Hessian or the entire field action.
+
+Three independent full33 finite-difference controls with genuinely non-zone-invariant field perturbations:
+- symmetric single original undirected AB edge {0,9}: predicted L=Gamma_AB/99=0.0002384656302323..., observed 0.0002383244 at numerical step0.03;
+- symmetric difference between two AB edges: exact L=0; observed −4.7×10^-11;
+- antisymmetric directed change of one AB edge, exact L=0; observed −4.1×10^-11.
+All-edge uniform change gives zero (observed −1.8×10^-11); single BC edge gives negative L=Gamma_BC/143=−0.0001863937308268... and agrees to O(h²). These independent controls use the original 33×33 matrix with all 718 allowed directed entries, NOT a three-zone-reduced perturbation.
+
+**Parent #334 source gate reduced to ONE number per admitted physical direction V:** IF (and ONLY IF) the fundamental paid 16-coframe+24-Lorentz+CAR/clock/observer native programme supplies a genuine first Cost/Info derivative d_V on its same original 718 labels, its scalar historical CP² response is precisely (15). To decide whether its existing J23 and nine other metric directions excite this particular backreaction, evaluate a single native three-average combination for EACH direction, without replaying an unbounded tensor/rank census. If that one number is zero, this CP² **scalar** Book mechanism decouples from V at the evaluated reversible origin; if nonzero, it is a real required sub-sector of any fully selected SAME action (unless a proven same-program cancellation exists). This is not a construction of d_V, a Ward identity for the true full128 Book, or GR_closed. All noncommutative and continuum obligations remain.
