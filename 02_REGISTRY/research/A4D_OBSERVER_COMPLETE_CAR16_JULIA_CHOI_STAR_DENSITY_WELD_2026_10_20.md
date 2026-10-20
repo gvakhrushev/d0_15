@@ -140,3 +140,38 @@ This is a MATHEMATICAL conversion of the same selected geometrical density into 
 Native-Golden exact six-direction regression:
 \`sources/d0_book_geometry_double_schur_2026-10-19/check_car16_native_golden_julia_choi.py\`
 and independent full-Fock numerical three-label verifier \`d0_car16_complete_golden_julia_star_2026_10_20.py\` in the companion conversation artifact. Both local runs PASS.
+
+
+## 7. No need to impose a new Choi quantum experiment for LOCAL observability: consume the OWNED six-Golden-scalar atlas
+
+The original parent #334 \`A4D_TWO_RECORD_PHASE_ATLAS_AND_AUTOMATIC_PREPARATION_SOURCE\` §§5–5.2 already owns two complete native-Golden-p Julia output densities and six fixed CAR-preparation/effect comparison scalar phases \(\Phi_j(U)\) in a proper-Lorentz chart. Its complete regular Jacobian has
+
+\[
+\det D\Phi(0) = \frac{p^9}{15552000}\ne0,\qquad p=\varphi^{-1}.
+\]
+
+Hence by the real-analytic inverse-function theorem there are **fixed** open neighborhoods \(\mathcal U\ni I\) and \(\mathcal V\ni\Phi(I)\) and a unique local analytic inverse \(\Psi=\Phi^{-1}:\mathcal V\to\mathcal U\). This yields a mathematical observable-factorization theorem that is stronger than merely proposing the Choi marked experiment:
+
+\[
+\boxed{
+q_{\mathrm{mark},p}(U)=
+\widehat q_{\mathrm{mark},p}(\Phi(U)),
+\quad
+\widehat q_{\mathrm{mark},p}(v):=
+p^2\frac{|\det(I_4+\Psi(v))|^2}{256}
+\quad(U\in\mathcal U).}
+\tag{7.1}
+\]
+
+For any sufficiently small original coframe/curvature auxiliary two-source word \(U(s,t)=\exp(sX_B)\exp(tC)\), the **exact literal S_star face (4)** can equally be written
+
+\[
+G_2(B,\star\mathfrak b(C))
+=-\partial_s\partial_t\log
+ \widehat q_{\mathrm{mark},p}(\Phi(U(s,t)))|_{0}.
+\tag{7.2}
+\]
+
+Thus, once the existing **two-density Golden six-phase atlas itself** is operationally admitted and paid for, the signed Palatini face is mathematically accessible as a **derived scalar function of six existing CAR comparison readouts**; an additionally physically executed entangled Choi-mark apparatus is not a logically necessary new experimental primitive. This is a LOCAL analytical representation theorem only. It does NOT say the original primitive full128 pointer magically implements the six two-density preparations/anchors; #334 explicitly treats them as conditional complete readouts with work, preparation and reference costs. Nor does reconstructability choose \(\widehat q\), its two auxiliary probes, or the full Book Cost−Info source as the physically selected law. Frame/observer transport of preparations and anchors must be retained; local chart coordinates are not automatically globally gauge invariant.
+
+This substantially narrows the remaining G0 task: no new **Hilbert carrier**, no new **Lorentz generator**, no new **positive tester class**, and not even an extra Choi laboratory operation are needed merely to REPRESENT every local finite Palatini scalar; the actual native programme must prove the readout/price **selection** and the same-action Euler/Clock/Ward/refinement, with this six-phase atlas as its already-owned field-visible source rather than an invented scalar graph potential. The earlier conditional/failure log-source and observer covariance remain mandatory.
