@@ -83,6 +83,36 @@ Continue existing research owner [#334](https://github.com/gvakhrushev/d0_15/pul
 without duplicating or retiring it. Main contains the proof as a
 research intake, not an independently accepted physical GR claim.
 
+The [same-carrier field-minimum exclusion](02_REGISTRY/research/A4D_NATIVE_JOINT_FIELD_MINIMUM_EXCLUSION_2026_10_20.md)
+now changes the prospective application: the configured source-preserving
+stopped price has no full-open-field minimum at this primary family.
+The genuine implementation optimum exists even at nearby non-Einstein
+fields. Preserve both results. The next bridge is the actual same-initial
+reachable field-and-price graph or a native stationary/constraint law;
+another source-neutral completion or a restriction chosen to enforce
+Einstein does not supply it. This is scoped research, not physical closure.
+
+## Use the global composition before selecting the next native application
+
+The [global result composition](02_REGISTRY/research/A4D_GLOBAL_RESULT_COMPOSITION_2026_10_20.md)
+now gives the shared parent argument and consumers for fifteen result
+families and all eighteen preserved leads. Use its quantitative five/nine-site
+operational geometry inverse, original Julia all-jet density readout,
+complete compiler/clock price and conditional field-writer image together.
+Keep observation, ambient geometric differentiation and admitted field
+writing distinct. Preserve the actual error norm and full ambient covector;
+neutrality only along the primary family is not whole-source neutrality.
+
+The next application is the actual joint solder/pairing/link step and its
+full price, or an independently derived native stationary/constraint law,
+together with the same-prefix two-ending Julia/prospective valuation test.
+The latter needs equal continuation partition weights, not only equal
+minimum continuation prices. Test the actual complete valuation against
+the displayed compiler-occupation and repeat-cost source differences.
+Do not replace those maps by a fresh geometric root search or normalize
+away the absolute Book anchor. Reuse the existing #334 owner and shared
+CONTROL intake; the packet is scoped research, not physical GR closure.
+
 ## MANDATORY TRIZ / Golden-Beatty native source checkpoint (20 October 2026)
 
 **Every agent touching physical GR selection, Book03 full Cost−Info, native residual `R`, prospective futures, phi/Beatty, references or full128 first-source MUST READ** the [shared TRIZ/phi exact integration handoff](02_REGISTRY/research/D0_TRIZ_PHI_AGENT_HANDOFF_2026_10_20.md) **after the primary positive GR case**. The bounded science proofs and exact checker live in **existing Draft PR [#334](https://github.com/gvakhrushev/d0_15/pull/334)**; this entry is routing, not a new theorem or task.

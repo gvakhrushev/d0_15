@@ -1,0 +1,266 @@
+{
+  "schema": "d0-global-result-composition-inputs-v1",
+  "scope": "Raw immutable analytical inputs; consumed original theorems are not newly certified by finite replay.",
+  "scientific_owner": "#334",
+  "primary_input_commit": "685cda165e905e29e37b55abd54dad17ea0f274c",
+  "main_input_commit": "90db3fe60c9b543b30e83008e3607899e8574738",
+  "concurrent_input_commit": "f09e83e5fefc1d5840a516d2038b3791b45fb31e",
+  "files": [
+    {
+      "source_commit": "685cda165e905e29e37b55abd54dad17ea0f274c",
+      "source_path": "03_FORMALIZATION/D0/Foundation/VerificationCore.lean",
+      "git_blob": "01b02ebbe81a62464e81d5c397c101fd60fff4f9",
+      "sha256": "382b2b506e17c6422623b6a2581756468e157def9ea783445f0943bd124a19d7",
+      "bytes": 21760,
+      "snapshot": "inputs/VerificationCore.lean"
+    },
+    {
+      "source_commit": "685cda165e905e29e37b55abd54dad17ea0f274c",
+      "source_path": "03_FORMALIZATION/D0/Foundation/TheoryTransfer.lean",
+      "git_blob": "a882f38aa1caf4d619c6e1f84c73ebe97e4b127a",
+      "sha256": "c164818dc50de94afad690946d4c209309350340b5cb1586ddc9f91f74bcb203",
+      "bytes": 22584,
+      "snapshot": "inputs/TheoryTransfer.lean"
+    },
+    {
+      "source_commit": "685cda165e905e29e37b55abd54dad17ea0f274c",
+      "source_path": "03_FORMALIZATION/D0/Foundation/ProspectiveExecution.lean",
+      "git_blob": "5bf153f4c74325366c8c57ce404dcdcb4fc87dc5",
+      "sha256": "99db926c47864c53ecf8d43caf2518f86b96e42cdffccaaf26f6c93205155ed4",
+      "bytes": 12448,
+      "snapshot": "inputs/ProspectiveExecution.lean"
+    },
+    {
+      "source_commit": "685cda165e905e29e37b55abd54dad17ea0f274c",
+      "source_path": "03_FORMALIZATION/D0/Foundation/FutureExecution.lean",
+      "git_blob": "c0cbf1d446f428e166ae30f90f9caba1ce60c091",
+      "sha256": "15143b63f2bf1cc51493e3efb36c9da57c203d7e680e2f1370cf2311eb2e9ef1",
+      "bytes": 12331,
+      "snapshot": "inputs/FutureExecution.lean"
+    },
+    {
+      "source_commit": "685cda165e905e29e37b55abd54dad17ea0f274c",
+      "source_path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/NATIVE_CAR_ACTUATED_METRIC.md",
+      "git_blob": "601f4a6aeb093ab547692015b31a92be48b41c61",
+      "sha256": "b9dd63f0888a062941c1744d800120e47d20777f429f892f5a98c504a3c0a4be",
+      "bytes": 21159,
+      "snapshot": "inputs/native_car_actuation.md"
+    },
+    {
+      "source_commit": "685cda165e905e29e37b55abd54dad17ea0f274c",
+      "source_path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/NATIVE_CAR_ACTUATED_METRIC_REVIEW.md",
+      "git_blob": "d662026cd9d45c622d2ea501d8552d27a2036d6b",
+      "sha256": "2a9f9363aa50a9782170e75b1a0c9ed48f97f85f20fc67ed6af549b4b6bd55da",
+      "bytes": 6531,
+      "snapshot": "inputs/native_car_actuation_review.md"
+    },
+    {
+      "source_commit": "685cda165e905e29e37b55abd54dad17ea0f274c",
+      "source_path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/GOLDEN_EXACT_DETECTOR.md",
+      "git_blob": "92b9003d783c24b1883a2a21f8b30625078afff7",
+      "sha256": "d33c9c2cb2322e381723f481eb1fcf58058fd05ad88eda92c5597c026d02eb77",
+      "bytes": 16828,
+      "snapshot": "inputs/golden_detector.md"
+    },
+    {
+      "source_commit": "685cda165e905e29e37b55abd54dad17ea0f274c",
+      "source_path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/GOLDEN_DETECTOR_BOOK_MEAN_SOURCE.md",
+      "git_blob": "bbf3d78f742112587e8935bf795d9e72ef093f40",
+      "sha256": "4f7d5376318793beca791bc013622f0d5d3571b09728cab950dcfef6cfeb7191",
+      "bytes": 12384,
+      "snapshot": "inputs/golden_book_mean.md"
+    },
+    {
+      "source_commit": "685cda165e905e29e37b55abd54dad17ea0f274c",
+      "source_path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/GOLDEN_DETECTOR_BOOK_MEAN_SOURCE_REVIEW.md",
+      "git_blob": "759e584526629b2031ed83fd1a8ff014a7984ddb",
+      "sha256": "232ed4e829def4a91b2cb57915a4b2fe32492133b59e45417d0fa0c23e406655",
+      "bytes": 8401,
+      "snapshot": "inputs/golden_book_mean_review.md"
+    },
+    {
+      "source_commit": "685cda165e905e29e37b55abd54dad17ea0f274c",
+      "source_path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/NATIVE_COMPILER_INFO_AND_ABORT_SOURCE.md",
+      "git_blob": "9bbade75dcddc44bf5fc8edf0020aec59a12beb3",
+      "sha256": "b57c2d1a652ee057fa77a55026f29b5880506dadacfa31994120b4168cf59396",
+      "bytes": 20435,
+      "snapshot": "inputs/native_compiler_info.md"
+    },
+    {
+      "source_commit": "685cda165e905e29e37b55abd54dad17ea0f274c",
+      "source_path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/COMPULSORY_QUERY_AND_COHERENT_MINIMUM.md",
+      "git_blob": "d55deaa712f6b6850b5b5278f0c81a1b8dfffaf1",
+      "sha256": "0bf3f3bf6e75eb95e96b4c390ae137593794e5adb24ba31d375219e8ad0b2f5c",
+      "bytes": 16609,
+      "snapshot": "inputs/query_minimum.md"
+    },
+    {
+      "source_commit": "685cda165e905e29e37b55abd54dad17ea0f274c",
+      "source_path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/BOOK_SOURCE_BINDING.md",
+      "git_blob": "0fc40d94bf6db0d0be49c783c902274821af5b92",
+      "sha256": "2b26bf2f4c1b128731ccf14a17437ba654c046e82b5e42e55113a8b6053494ea",
+      "bytes": 21593,
+      "snapshot": "inputs/full_price_binding.md"
+    },
+    {
+      "source_commit": "685cda165e905e29e37b55abd54dad17ea0f274c",
+      "source_path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/ORIGINAL_JULIA_FACE_ODDS_REFINEMENT_COCYCLE.md",
+      "git_blob": "412e1a0ba4c4560a4cd79ceced21b333224c89a2",
+      "sha256": "0bd1af45054dd25abb0630ccb6d2f7f0cbae1c1649fced4d8a9a3fceb30abaea",
+      "bytes": 10851,
+      "snapshot": "inputs/julia_odds_historical.md"
+    },
+    {
+      "source_commit": "685cda165e905e29e37b55abd54dad17ea0f274c",
+      "source_path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/SCREEN_RECORD_PROPER_SCORE_MIXED_SOURCE_GATE.md",
+      "git_blob": "56c5dc2a546496d84018c20ccdb4f23e419931ae",
+      "sha256": "5de67bf2814437054b0a8b56db3d6eaeeb0f130f0516313d911c0f7557790995",
+      "bytes": 26411,
+      "snapshot": "inputs/screen_mixed_gate.md"
+    },
+    {
+      "source_commit": "685cda165e905e29e37b55abd54dad17ea0f274c",
+      "source_path": "02_REGISTRY/research/A4D_NATIVE_CLOCK_PRESSURE_AND_COMPLETE_PRICE_SYNTHESIS_2026_10_20.md",
+      "git_blob": "fdcb94fa0d3eb93af0345fff1982ca0d6a19a6ea",
+      "sha256": "823d527dbe61050a9c3f81109691839e1bc9de0855e5435e08259049db1a06ed",
+      "bytes": 10800,
+      "snapshot": "inputs/retained_clock_price.md"
+    },
+    {
+      "source_commit": "685cda165e905e29e37b55abd54dad17ea0f274c",
+      "source_path": "02_REGISTRY/research/A4D_BRINKMANN_REFERENCE_COCYCLE_GR_BREAKTHROUGH_SYNTHESIS_2026_10_20.md",
+      "git_blob": "46ea5addd1e76fb4d214a4a3ebe28baf6229c157",
+      "sha256": "f49691471854079535c36b74857eb646890aa305bd13238b6a8bd8e81450f1fb",
+      "bytes": 16214,
+      "snapshot": "inputs/reference_cocycle.md"
+    },
+    {
+      "source_commit": "685cda165e905e29e37b55abd54dad17ea0f274c",
+      "source_path": "02_REGISTRY/research/A4D_NATIVE_PAID_SOURCE_AND_PAIRED_FEEDBACK_SYNTHESIS_2026_10_20.md",
+      "git_blob": "ef9d9e5ed1287faaee67e1f69da820cdefc1581d",
+      "sha256": "75e40ee862d843c4661068200d4e12115a7f63098fb5df5015d7e1541bdd82a8",
+      "bytes": 15755,
+      "snapshot": "inputs/paid_paired_source.md"
+    },
+    {
+      "source_commit": "685cda165e905e29e37b55abd54dad17ea0f274c",
+      "source_path": "02_REGISTRY/research/A4D_NATIVE_GOLDEN_BOOK_CLOCK_ABSOLUTE_SOURCE_IDENTIFIABILITY_2026_10_19.md",
+      "git_blob": "46c47113a21a9e1f541f7557fe4cba7e3fc47ccb",
+      "sha256": "3cbe44c8ecfbe2c6fd31b3f95e0fc1d59bc85cfeb86ccefb9b6b0bef1a2d4ea8",
+      "bytes": 19925,
+      "snapshot": "inputs/book_clock_anchor.md"
+    },
+    {
+      "source_commit": "685cda165e905e29e37b55abd54dad17ea0f274c",
+      "source_path": "02_REGISTRY/research/A4D_NATIVE_JOINT_FIELD_MINIMUM_EXCLUSION_2026_10_20.md",
+      "git_blob": "bd0fe57263a8bb37cec51e60c56d28730def2646",
+      "sha256": "3a13f82d4b1ef149328da05b62bd0485d1970db3ed4fb38aff044e98f2b6df1a",
+      "bytes": 14545,
+      "snapshot": "inputs/joint_minimum.md"
+    },
+    {
+      "source_commit": "685cda165e905e29e37b55abd54dad17ea0f274c",
+      "source_path": "02_REGISTRY/research/A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md",
+      "git_blob": "67531a343a0ae707ff0a3830c0e2c9cf2bbc8213",
+      "sha256": "71497086dfad667831c77d69201aea3890909d0cf772791f7df32b8b8c3c07d4",
+      "bytes": 59540,
+      "snapshot": "inputs/midpoint_recovery.md"
+    },
+    {
+      "source_commit": "685cda165e905e29e37b55abd54dad17ea0f274c",
+      "source_path": "02_REGISTRY/research/A4D_SAME_HISTORY_PRICE_AND_SOURCE_COMPOSITION_2026_10_20.md",
+      "git_blob": "038061d0ae52323bd655dc07943b5b175536f61f",
+      "sha256": "d2afefcc9470052b0e21bd730c80fa799dd6d67e32a3e8e88836110ff0f99b01",
+      "bytes": 19707,
+      "snapshot": "inputs/same_history_price.md"
+    },
+    {
+      "source_commit": "685cda165e905e29e37b55abd54dad17ea0f274c",
+      "source_path": "02_REGISTRY/research/D0_FOUNDATION_THEORY_TRANSFER_COMPOSITION_2026_10_20.md",
+      "git_blob": "ce8f2c2a86837493e91fc0fad74b4a1e52b014f3",
+      "sha256": "ea220267a9ddf3926420a7a798be9908bcfcd63af63c384d202ed751b3741d10",
+      "bytes": 13068,
+      "snapshot": "inputs/foundation_transfer.md"
+    },
+    {
+      "source_commit": "685cda165e905e29e37b55abd54dad17ea0f274c",
+      "source_path": "02_REGISTRY/research/sources/d0_native_joint_field_minimum_2026-10-20/PROSPECTIVE_FIELD_REALIZATION_BRIDGE.md",
+      "git_blob": "d9702cefb97f8da9f3435c5c88b26943ce64e838",
+      "sha256": "26c9efbe6b6ffe3db57d0a7f43911cc4fa9defd387a11bb541d59cb4b0faffb1",
+      "bytes": 19366,
+      "snapshot": "inputs/field_price_bridge.md"
+    },
+    {
+      "source_commit": "685cda165e905e29e37b55abd54dad17ea0f274c",
+      "source_path": "02_REGISTRY/research/sources/d0_native_joint_field_minimum_2026-10-20/JOINT_FIELD_MINIMUM_OBSTRUCTION.md",
+      "git_blob": "aaaa7acdfb997eb0c530e13f974a1ae40ed9c98d",
+      "sha256": "d14d72318229ac6102d38aa25f84e3617116257dea6a40fb4d3a6d1d3fe1fb54",
+      "bytes": 27060,
+      "snapshot": "inputs/joint_minimum_proof.md"
+    },
+    {
+      "source_commit": "685cda165e905e29e37b55abd54dad17ea0f274c",
+      "source_path": "02_REGISTRY/gr_assembly/sources/d0_double_null_quadratic_cartan_2026-10-19/arbitrary_brinkmann_all40.md",
+      "git_blob": "050ee972efa0f2ae37206b2ef9e3b4122dbac204",
+      "sha256": "8dbca8ff9a4567a2baf216357b5d3ffa2d217281ced4e5d0e535257db2f5e83e",
+      "bytes": 25208,
+      "snapshot": "inputs/original_all40.md"
+    },
+    {
+      "source_commit": "685cda165e905e29e37b55abd54dad17ea0f274c",
+      "source_path": "02_REGISTRY/gr_assembly/sources/d0_full128_order_memory_2026-10-19/owner.md",
+      "git_blob": "9c1f511543f1ef26a001ffc19b30986decf87590",
+      "sha256": "4f32d226dcf38284cae32ec78937915ae6f149271097107f3078efc0ba5545f0",
+      "bytes": 38994,
+      "snapshot": "inputs/original_julia_owner.md"
+    },
+    {
+      "source_commit": "90db3fe60c9b543b30e83008e3607899e8574738",
+      "source_path": "02_REGISTRY/research/A4D_GOLDEN_DISCRETE_BLOWUP_CONDENSED_GR_2026_10_20.md",
+      "git_blob": "bae5a11d0c14d6730d8b7a6191f828f1cace603d",
+      "sha256": "68ba2d4dbbf5a055b852755fcf1c811824743c096ddcf722086c4da993fd179d",
+      "bytes": 22726,
+      "snapshot": "inputs/golden_blowup.md"
+    },
+    {
+      "source_commit": "90db3fe60c9b543b30e83008e3607899e8574738",
+      "source_path": "02_REGISTRY/research/A4D_VSI_LOVELOVK_TWO_WITNESS_UNIVERSAL_GR_SYNTHESIS_2026_10_20.md",
+      "git_blob": "85033ef1350a380770cd604e318a56dc0ab6fae3",
+      "sha256": "b5c96ef1d01ce6b53a30a1564dea2905f55624074afbc3a1a370bf45a4b8492d",
+      "bytes": 17588,
+      "snapshot": "inputs/vsi_lovelock.md"
+    },
+    {
+      "source_commit": "90db3fe60c9b543b30e83008e3607899e8574738",
+      "source_path": "02_REGISTRY/research/A4D_NATIVE_CONDENSED_PRICE_NATURALITY.md",
+      "git_blob": "5386f17c8b6f3ff53efc8384561ecbeefafeb38c",
+      "sha256": "4d90266d5f471ba3cac621e3ea3a32545b4622a16d7c0227bc771694ad851a08",
+      "bytes": 17942,
+      "snapshot": "inputs/condensed_naturality.md"
+    },
+    {
+      "source_commit": "f09e83e5fefc1d5840a516d2038b3791b45fb31e",
+      "source_path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/NATIVE_FIELD_WRITER_BRIDGE.md",
+      "git_blob": "fa59e9f59e061e6bcda0f05f29abed1e641f8ebb",
+      "sha256": "89406be7d000892ba4ac062f19bb03dd86d8c9d3f04bc8a7b8de39dd07b66a2a",
+      "bytes": 12805,
+      "snapshot": "inputs/native_field_writer.md"
+    },
+    {
+      "source_commit": "f09e83e5fefc1d5840a516d2038b3791b45fb31e",
+      "source_path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/NATIVE_FIELD_WRITER_BRIDGE_REVIEW.md",
+      "git_blob": "72655e61d99c68edeb3635383eefd4088af9eddb",
+      "sha256": "4391eb6c105af077d306454791e8abaf32a5207fb04a2e0b8b442ec7c0853e8e",
+      "bytes": 7025,
+      "snapshot": "inputs/native_field_writer_review.md"
+    },
+    {
+      "source_commit": "f09e83e5fefc1d5840a516d2038b3791b45fb31e",
+      "source_path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/ORIGINAL_JULIA_FACE_ODDS_REFINEMENT_COCYCLE.md",
+      "git_blob": "c0264a870f0268dc4a0da170c216824539178089",
+      "sha256": "adf886cc490e1cfaab62a18d693063d3287c44ba6396a6f026ce8e357b0ce48c",
+      "bytes": 22848,
+      "snapshot": "inputs/julia_odds_current.md"
+    }
+  ]
+}
