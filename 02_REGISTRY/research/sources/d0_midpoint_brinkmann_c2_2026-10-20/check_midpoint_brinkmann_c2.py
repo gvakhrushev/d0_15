@@ -83,7 +83,9 @@ for L in (8,16,32,64,128):
     # source and advanced coframe at same actual time midpoint.
     Kx=.5*(H(h,tmid,x,y)-H(h,tmid,x-h,y))
     Ky=.5*(H(h,tmid,x,y)-H(h,tmid,x,y-h))
-    ex=-h/2*lap
+    # The normalized central Laplacian carries h^-2; the native link
+    # variation is therefore -h^3/2 times lap, as in the all40 theorem.
+    ex=-h**3/2*lap
     source=h*(Kx-.5*(H(h,tmid,x+h,y)-H(h,tmid,x,y))
          +Ky-.5*(H(h,tmid,x,y+h)-H(h,tmid,x,y)))
     assert abs(source-ex)<3e-13
