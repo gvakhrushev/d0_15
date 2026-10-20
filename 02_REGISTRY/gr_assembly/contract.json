@@ -960,7 +960,7 @@
         "head": {
           "repository": "gvakhrushev/d0_15",
           "branch": "exp/a4d-joint-response-continuation-2026-10-16",
-          "sha": "0e1849bd7bf6a87e9731801206fd5ccd1041bb63"
+          "sha": "5af4f33bcbe900108a27583a32acf6c1f4a9437f"
         },
         "base": {
           "repository": "gvakhrushev/d0_15",
