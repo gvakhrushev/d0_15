@@ -236,7 +236,7 @@ while(leaves.length<17){
  const picked=candidates[0];leaves.splice(picked.i,1,picked.w+"F",picked.w+"R");
 }
 check(leaves.length===17&&new Set(leaves).size===17&&
- leaves.every((w,i)=>leaves.every((v,j)=>i===j||!v.startsWith(w)),
+ leaves.every((w,i)=>leaves.every((v,j)=>i===j||!v.startsWith(w))),
  "17 true prefix-free original F/R codewords, no extra letter primitive");
 const costs=leaves.map(wordCost).sort((a,b)=>a-b);
 const optimalCodeValue=q=>q.slice().sort((a,b)=>b-a)
