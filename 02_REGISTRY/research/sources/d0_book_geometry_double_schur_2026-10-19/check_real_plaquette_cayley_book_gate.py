@@ -50,8 +50,8 @@ X=G[3]
 assert s.simplify(mark(ROT)-mark(ROT.inv()))==0
 assert s.simplify(-s.trace(X*(ROT-ROT.inv()))/4)==s.Rational(3,5)
 w=lambda U:s.factor(mark(U)/(p*p))
-assert w(ROT)==s.Rational(81,100)
-assert w(ROT**2)==s.Rational(256,625)
+assert s.simplify(w(ROT)-s.Rational(81,100))==0
+assert s.simplify(w(ROT**2)-s.Rational(256,625))==0
 assert s.simplify(w(ROT**2)-w(ROT)**2)!=0
 h=s.symbols("h",real=True)
 assert s.limit((s.sin(h)-2*s.tan(h/2))/h**3,h,0)==-s.Rational(1,4)
