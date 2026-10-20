@@ -786,4 +786,46 @@ theorem nativeQ8CanonicalActionCannotFactorThroughEndpoint :
   omega
 
 
+
+/-! ## Unexpected exact common GOLDEN quantum in time-Cost and darkness
+
+For the ACTUAL original canonical primitive action Cost=1 per
+successfully changed Q8 prefix, the eight-gate provenance history
+costs six more quanta than the two-gate same-endpoint implementation.
+Its raw φ-Book cost weight ratio is therefore φ^(-6)=p^6.
+The SAME primitive p^6 is the exact DARK conditional Born probability
+of the nontrivial Q8 order interferometer. This is an exact algebraic
+identity on the existing native primitives, NOT a theorem that the
+COMPLETE original Book03 Cost−Info/Info/clock history weight equals
+that Bernoulli probability; no cross-carrier physical cost selection
+is inserted.
+-/
+
+/-- Canonical original executed-prefix Book weight of the exact two-
+versus-eight Q8 source: six additional action units, already counted
+by nativeQ8CanonicalPriceTwoVsEight. -/
+theorem nativeQ8CanonicalCostGapSix :
+    nativeQ8CanonicalExecutedAction originalQ8OrderWord -
+      nativeQ8CanonicalExecutedAction [true,true] = 6 := by
+  native_decide
+
+/-- Identically, the primitive Book weight ratio of these SOURCE
+histories at the canonical physical unit quantum is p^6, and
+precisely matches the dark port in the ACTUAL original Q8- Golden
+sign comparison. All Info/preparation/clock extras remain OPEN. -/
+theorem nativeQ8CanonicalCostGapEqualsDarkLogWeight :
+    D0.primitiveRoot^8 / D0.primitiveRoot^2 =
+      1 - nativeQ8ProgramPort true := by
+  have hp0 : D0.primitiveRoot ≠ 0 :=
+    ne_of_gt D0.Representation.GoldenOrderInterferometer.primitive_positive
+  have hbook : D0.primitiveRoot^8 /
+      D0.primitiveRoot^2 = D0.primitiveRoot^6 := by
+    field_simp
+    ring
+  have hdark := nativeQ8NegativeCenterProbabilityComplete
+  rw [nativeQ8ProgramPort_ordered] at hdark
+  rw [hbook]
+  linarith
+
+
 end D0.Representation.OrderMemoryControl
