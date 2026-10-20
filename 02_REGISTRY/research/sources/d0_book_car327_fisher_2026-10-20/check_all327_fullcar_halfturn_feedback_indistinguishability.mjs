@@ -174,6 +174,52 @@ assert(flatPlus===1287&&flatMinus===1287&&notFlat>1000,
 const psiFlat=overlap(0)**2,psiTwisted=overlap(Math.PI)**2;
 assert(Math.abs(psiFlat-1)<1e-15&&Math.abs(psiTwisted)<1e-30,
  "native grade1 CAR coherence cannot distinguish original triangle sheets");
+
+// FULL NATIVE Golden-p 17-outcome Choi/Julia/Bell READOUT distinguishes
+// the two F-identical global pi sheets UNIFORMLY at ALL phase angles.
+// This is an actually owned *mathematical conditional observer*,
+// not its physical G0/controller PREP or selected Book03 price.
+const goldp=(Math.sqrt(5)-1)/2,herald=1/4096,
+      kGolden=goldp**4/(24*4096);
+function completeGolden17(θ){
+ const c=Math.cos(θ),sn=Math.sin(θ),
+       m=(1+c)/2, q=[];
+ for(let a=0;a<6;a++){
+  const v=a===4?sn/Math.SQRT2:0;
+  q.push(kGolden*(m+v)**2,kGolden*(m-v)**2);
+ }
+ const GG=goldp**4*herald,
+       GB=goldp**3*herald,BG=goldp**3*herald,
+       BB=goldp**2*herald;
+ q.push(GG-q.reduce((s,x)=>s+x,0),GB,BG,BB,1-herald);
+ assert(q.length===17&&Math.min(...q)>-1e-15&&
+       Math.abs(q.reduce((s,x)=>s+x,0)-1)<1e-13,
+  "true ORIGINAL Golden17 positivity and all failure branches");
+ return q;
+}
+let maxGoldenTVExact=0,minObservedTV=Infinity,maxGoldenTVDiff=0;
+for(let m=0;m<=4096;m++){
+ const θ=2*Math.PI*m/4096,c=Math.cos(θ),ss=Math.sin(θ);
+ const q=completeGolden17(θ),qp=completeGolden17(θ+Math.PI);
+ const TV=.5*q.reduce((acc,v,i)=>acc+Math.abs(v-qp[i]),0);
+ const formula=kGolden*(11*Math.abs(c)+
+                  Math.max(Math.abs(c),Math.SQRT2*Math.abs(ss)));
+ maxGoldenTVExact=Math.max(maxGoldenTVExact,Math.abs(TV-formula));
+ minObservedTV=Math.min(minObservedTV,TV);
+ maxGoldenTVDiff=Math.max(maxGoldenTVDiff,TV);
+ assert(TV+2e-14>=Math.SQRT2*kGolden,
+  "native positive full17 cannot distinguish global half-turn pi memory");
+}
+assert(maxGoldenTVExact<4e-15&&
+ Math.abs(minObservedTV-Math.SQRT2*kGolden)<3e-15,
+ "native global Golden17 sheet separation bound not exact");
+// The TRUE full17 two-branch total-variation distinguishability is
+// 1/2*(10k|cos| + k|cos+sqrt2 sin| +k|cos-sqrt2 sin|
+//      +12k|cos|) = k[11|cos|+max(|cos|,sqrt2|sin|)].
+// Thus the uniform bound is SHARP at a pi/2 orientation.
+// The chosen composite observer/coframe reference must transform
+// covariantly under local physical Lorentz frame changes; its raw
+// positive marker is not an observer-free new fundamental postulate.
 console.log(JSON.stringify({
  result:"PASS_GLOBAL_ALL327_FULLCAR16_F_SQUARING_Z2_INDISTINGUISHABILITY",
  actualNativeCarrier:{sceneVertices:33,fullOriginalDirectedEdges:718,
@@ -182,6 +228,14 @@ console.log(JSON.stringify({
   exactSimulatedFullFeedbackOperatorDimension:528},
  exactAllOrderOperator:{matrixEquality:"F(phi+pi on every original edge)=F(phi)",
   maxFull528SquaredReturnDifference:maxFullCARF,
+  completeGolden17Detector:{labels:17,includesAllBellAndGoodBadFailures:true,
+   exactFullTV_formula:"k(11|cosθ|+max(|cosθ|,√2|sinθ|)), k=p^4/(24*4096)",
+   SHARP_global_minimumTV:Math.SQRT2*kGolden,
+   observedMinimumTV:minObservedTV,
+   maximumTV:maxGoldenTVDiff,
+   exactFormulaMaxError:maxGoldenTVExact,
+   fullCAR16PretraceReadoutNeeded:true},
+
   maxEdge16x16HalfTurnIdentity:maxHalfTurnOperator,
   CAR16ExactRotationGroupError:maxCARGroup,
   appliesAtArbitraryOriginal359OrientationInputs:true,
