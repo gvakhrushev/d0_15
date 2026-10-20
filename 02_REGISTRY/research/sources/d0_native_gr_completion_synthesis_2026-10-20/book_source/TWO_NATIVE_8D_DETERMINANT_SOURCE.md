@@ -394,3 +394,43 @@ different admitted loop/constraint/readout map. An output of a fixed word
 from a fixed complete input is not automatically an independent Euler
 variable. The [review receipt](PRIMARY_CAR_RECORD_PRICE_SOURCE_REVIEW.md)
 pins these applications. Native full-price selection and GR remain open.
+
+## 13. An actual reference on oldRIGHT and its posterior-gain source
+
+The [RIGHT posterior application](PRIMARY_RIGHT_POSTERIOR_GAIN_SOURCE.md)
+now supplies an intrinsic reference on the original material experiment:
+the actual primary preparation obeys C_t* C_t=I_128/128. Its original
+full instrument supplies B_gamma=(K_gamma C_t)*(K_gamma C_t), with
+sum B_gamma=I_128/128 and posterior (B_gamma/q_gamma)^T. No ensemble
+over material fields is needed on this reference cut. The owned central
+operational-gain theorem applies to each posterior and gives
+
+```text
+I_phi(RIGHT:pointer)=log_phi128-sum_gamma q_gamma S_phi(B_gamma/q_gamma).
+```
+
+This is an actual correlation on the declared pointer cut. Attaining
+its maximum measured gain requires physically admitted adaptive
+spectral tests on RIGHT; compulsory Book Info selection remains open.
+An exact unequal-density Fourier-pair witness proves positive port
+and full-pointer gain on a small nonvacuum primary chart.
+
+The full-fine angle-source coefficient is certified between
+2.1910472674029542e-9 and2.1910477557180062e-9. All64 active posterior
+matrices are faithful, with certified unnormalized minimum eigenvalue
+greater than1.8599583513003547e-13; the64 structural zeros remain.
+This controls matrix-log differentiation and makes the source expansion
+i_1 t+O(t³) valid on the declared complete finite L4 fixture. Its
+posterior logarithms can depend on the fixture's exterior completion.
+It is a different observable from §12's entropy:
+its positive source makes the conditionally assigned known component
+Cost_port-I_phi(RIGHT:pointer) negative along that preparation tangent.
+
+Thus the missing reference/posterior application is supplied on this
+cut, and its source is calculated on the same original carrier.
+The full native price must still bind Book Info, complete nonuniform
+code prices, absolute normalization, required work and genuine upstream
+preparation equations. This one-round application supplies no later
+history/refinement theorem or compulsory physical selection. The
+[review receipt](PRIMARY_RIGHT_POSTERIOR_GAIN_SOURCE_REVIEW.md) records
+the frozen evidence; the original native GR obligations remain open.
