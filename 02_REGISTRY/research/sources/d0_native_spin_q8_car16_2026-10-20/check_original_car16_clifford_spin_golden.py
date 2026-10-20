@@ -113,3 +113,36 @@ print("PASS literal original orthogonal Golden fullStep complete 4-port")
 print("PASS conditional two-line Q8 sign: plus=0 alternate, minus=4p^3")
 print("FAILURE TYPE: paid Q8-controlled Book/G0 operation and boost dilation NOT owned")
 print("GR_closed=false")
+
+
+# An intrinsically already-owned CAR16 INDEFINITE observer pairing and
+# its exact future-causal positive spinor current; no imported spin field.
+Adj=L[0]
+for a in range(4):
+ for b in range(a+1,4):
+  H=L[a]@L[b]
+  assert np.array_equal(H.T@Adj+Adj@H,Z)
+assert np.max(abs(S.T@Adj@S-Adj))<3e-14
+alpha=[Adj@L[j] for j in (1,2,3)]
+for j in range(3):
+ assert np.array_equal(alpha[j].T,alpha[j])
+ assert np.array_equal(alpha[j]@alpha[j],I)
+ for k in range(j+1,3):
+  assert np.array_equal(alpha[j]@alpha[k]+alpha[k]@alpha[j],Z)
+rng=np.random.default_rng(20261020)
+for ntest in range(100):
+ psi=rng.normal(size=16)
+ jold=np.array([psi@psi]+[psi@X@psi for X in alpha])
+ assert jold[0]>=np.linalg.norm(jold[1:])-2e-12
+ newpsi=S@psi
+ jnew=np.array([newpsi@newpsi]+[newpsi@X@newpsi for X in alpha])
+ t=0.47
+ target=np.array([math.cosh(t)*jold[0]+math.sinh(t)*jold[1],
+                  math.sinh(t)*jold[0]+math.cosh(t)*jold[1],
+                  jold[2],jold[3]])
+ assert max(abs(jnew-target))<2e-11
+assert np.array_equal(Parity@Adj,-Adj@Parity)
+print("PASS native CAR16 Spin invariant Gamma0 observer indefinite bilinear")
+print("PASS native positive J0=norm², future-causal J0>=sqrt(Ji²) for all real spinors")
+print("PASS native Spin boost exact Lorentz-vector current Ward (100 random tests)")
+print("OPEN: actual paid native G0 spin-sensitive matter action and kinetic stress")
