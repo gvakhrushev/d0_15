@@ -74,6 +74,6 @@ assert s.simplify(det_obs+16*p**4*z**3*(1+2*r*z*z/(1+z*z))/(1+z*z)**4)==0
 assert det_obs.subs({z:s.Rational(1,5),r:s.Rational(9,16)})!=0
 # Additivity of independent marked weights + original Book Golden unit
 # fixes their UNIQUE continuous logarithmic score.
-assert s.simplify(-s.log(p*p)/s.log((1+s.sqrt(5))/2)-2)==0
+assert s.simplify(p*p*((1+s.sqrt(5))/2)**2-1)==0  # p²=phi^-2, hence exact Golden code length 2
 print('PASS finite observer (theta,boost) event image has nonzero Jacobian: analytic scores independent of observer locally factor through marked outcome')
 print('PASS independently multiplicative marked event Golden-log price has flat cost 2')
