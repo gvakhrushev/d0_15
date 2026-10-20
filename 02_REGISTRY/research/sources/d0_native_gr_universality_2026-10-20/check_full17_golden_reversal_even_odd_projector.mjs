@@ -100,9 +100,9 @@ for(let j=0;j<18;j++){
  const rDirect=sc(add(P,pinv,-1),.5),
   rRead=G.reduce((A,X,i)=>{
     const bp=(Math.sqrt(q[2*i])-Math.sqrt(q[2*i+1]))*
-                  256*Math.sqrt(3)/(p*p*Math.sqrt(herald)),
+                  256*Math.sqrt(3)/(p*p),
           bm=(Math.sqrt(qi[2*i])-Math.sqrt(qi[2*i+1]))*
-                  256*Math.sqrt(3)/(p*p*Math.sqrt(herald));
+                  256*Math.sqrt(3)/(p*p);
     return add(A,X,(bp-bm)/4);
   },Z());
  // q includes Bell prefactor. Since original signed sqrt CONTRAST
