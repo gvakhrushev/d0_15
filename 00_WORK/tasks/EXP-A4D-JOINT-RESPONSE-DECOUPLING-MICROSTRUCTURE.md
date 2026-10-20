@@ -2310,3 +2310,30 @@ Integrated concurrent7efec3733 complete-flag/minimum gate: retain its
 negative HJR field direction and C1-but-not-C2 flag boundary. This uniform
 conditional source lemma neither supplies physical minimum selection nor
 changes that native completion test. Do not launch a replacement root hunt.
+### 20 October: actual paid-source and inverse-paired feedback continuation
+
+Phase: native realization and source composition. Consume this execution at
+`ccd230bd5765b47d82bd1a4d83e9472c77fa590d` and the subsequently published
+`07f2f2b15b7050a612d0075aa73db8dc46087a95` whole-HJR fixed-collar result.
+The latter owns the curved conditional joint branch and homogeneous u-only
+seed exclusion; do not repeat them. The current missing application is the
+actual complete-price/source map, before squared-density source equivalence
+or physical transfer of that branch.
+
+Within the same PR, derive the original full128 paid port's curved initial
+clock coefficient and retain genuine preparation and independent-link
+variation. Separately test the original whole-word feedback on the specified
+inverse-paired Golden/coframe-reference process. Preserve the full CAR16,
+oldRIGHT, all output flags, operational observer pairing and fixed versus
+varied clocks. Use controlled smooth physical C1/C2 charts; do not infer
+raw216 norms or a fixed-positive-clock limit from a finite Taylor identity.
+The smallest checks are the exact CAR coefficient/source, the original
+finite-channel spectral repair, and the whole-word determinant cancellation.
+
+Write paths: `A4D_NATIVE_PAID_SOURCE_AND_PAIRED_FEEDBACK_SYNTHESIS_2026_10_20.md`,
+`sources/d0_native_price_source_synthesis_2026-10-20/` under
+`02_REGISTRY/research/`, and append-only primary intake. Read-only reviewers
+remain bounded within this execution. The packet must identify the actual
+admission/accounting map still needed; a useful source component or compiler
+lemma does not alone discharge `constitutive` or `native_sector`. No new
+task, lifecycle change or physical GR promotion.
