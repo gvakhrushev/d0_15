@@ -1,0 +1,97 @@
+{
+  "input_ref": "b6b8c78015cb73845160c8d526de97691913fbb7",
+  "integrated_context_ref": "5a57d331c55a9c88d3accb67f0bcb67fb691d322",
+  "consumer": "Draft334 / native-programme-v1 / positive finite curved whole-HJR interior existence",
+  "proof_method": "Owned exact flat root + full Riesz stationary preparation + outward-rounded finite derivative + analytic IFT + symmetry averaging + exact Ward + exact plaquette",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "sympy": "1.14.0",
+    "python-flint": "0.9.0",
+    "Arb_precision_bits": 128
+  },
+  "commands": [
+    "python 02_REGISTRY/research/sources/d0_curved_whole_hjr_collar_2026-10-20/check_exact_ward.py",
+    "python 02_REGISTRY/research/sources/d0_curved_whole_hjr_collar_2026-10-20/check_exact_collar_symmetry.py",
+    "python 02_REGISTRY/research/sources/d0_curved_whole_hjr_collar_2026-10-20/check_exact_seed_balance.py",
+    "python 02_REGISTRY/research/sources/d0_curved_whole_hjr_collar_2026-10-20/check_collar_hessian_arb.py",
+    "python 02_REGISTRY/research/sources/d0_curved_whole_hjr_collar_2026-10-20/check_nonlinear_full_source.py --output /tmp/collar-diagnostic.json"
+  ],
+  "input_sha256": {
+    "02_REGISTRY/research/A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md": "a0a8a0b7389c7a6120ebbe402d111bf55cd2a00730403a00ffceca73548e7915",
+    "02_REGISTRY/research/A4D_NATIVE_COMPLETE_FIELD_SOURCE_AND_TRANSPORT.md": "7b82d30d0d8ec451f768bf0b92aa0e4daaad1f2600497ae7d855bf370c96a338",
+    "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md": "748f723516dead3a713f31dd5a49dcbde7805ef0a15e7450f3026790abefa5e2",
+    "02_REGISTRY/research/sources/d0_record_generated_heat_v8_2026-10-14/RESULT.md": "f7ea30d997a58fa4e608d4403acae5f5e3d7e5da45116f9a7c3f62be5e99115c",
+    "02_REGISTRY/research/sources/d0_record_generated_heat_v8_2026-10-14/verify.py": "d1ec656da2af8b7ea362acba4c952c2a92a83d58376abbd70192601c6a6ba8ac",
+    "02_REGISTRY/research/sources/d0_record_generated_heat_v8_2026-10-14/receipt.json": "da44c7393b1164ce4babcab2ea13707958364d273d2c3fa1d86d514a9ac83ae9",
+    "02_REGISTRY/research/sources/d0_af_star_full_lattice_2026-10-17/explore_native_scalar_hessian.py": "de7c4c6a81af43363fc9afe7468cd171dddc3215f796fe12c993ab7b7a515393",
+    "02_REGISTRY/research/sources/d0_af_star_full_lattice_2026-10-17/check_native_scalar_link_block.py": "0659c67027949d9f05f18ec691bf5d4255de25041e5a4f565588d1d71505db32",
+    "02_REGISTRY/research/sources/d0_af_star_full_lattice_2026-10-17/NATIVE_SCALAR_FINITE_EXPLORATION.json": "b04fb7b180f19ecdb6c2a7d1b07c6bfb87f19ac19307215ab591d8c982fdb070"
+  },
+  "artifact_sha256": {
+    "02_REGISTRY/research/A4D_EXACT_CURVED_WHOLE_HJR_FIXED_COLLAR_ROOT_2026_10_20.md": "60149e109412b7716384aca6e64091b8a67f3374c4dfa02b170df1182e58dd1d",
+    "02_REGISTRY/research/sources/d0_curved_whole_hjr_collar_2026-10-20/COLLAR_HESSIAN_ARB.json": "a38386a86af4be283631d42a890caf66c035c12a4f9d421037160550d36989f4",
+    "02_REGISTRY/research/sources/d0_curved_whole_hjr_collar_2026-10-20/EXACT_COLLAR_SYMMETRY.json": "bf0c6a842caf7b7b7ad0468ad2e97c2f01345a364767de40ea332ba08d271fd3",
+    "02_REGISTRY/research/sources/d0_curved_whole_hjr_collar_2026-10-20/EXACT_SEED_BALANCE.json": "bf5b7c4887f53954aea47b895b10aafd70bec43ac60bbbfb8d8fcbc1e2cecbee",
+    "02_REGISTRY/research/sources/d0_curved_whole_hjr_collar_2026-10-20/EXACT_WARD.json": "dfacd4ebb38b7931ba32dbf79400f5d15858e56566adcee75ce4b7c629f38152",
+    "02_REGISTRY/research/sources/d0_curved_whole_hjr_collar_2026-10-20/NONLINEAR_DIAGNOSTIC.json": "19bf9de24372334257abb682b0c15dd0b10dffaa49d7afbc7c0b1203626684fa",
+    "02_REGISTRY/research/sources/d0_curved_whole_hjr_collar_2026-10-20/README.md": "457bdd998f07245a945a3b3b1586323bf26fe80402d8884dc5f3d80d001a50bd",
+    "02_REGISTRY/research/sources/d0_curved_whole_hjr_collar_2026-10-20/REVIEW.md": "0bc23035696f4996d02884873a8c4440115469a7d4b35927f7277ff6d2667f8a",
+    "02_REGISTRY/research/sources/d0_curved_whole_hjr_collar_2026-10-20/check_collar_hessian_arb.py": "ddda0402c0e61df8d2c43d95e9f68a5cebe9e553ea80b1669c11ba6f87b9dd94",
+    "02_REGISTRY/research/sources/d0_curved_whole_hjr_collar_2026-10-20/check_exact_collar_symmetry.py": "f09a8ef4a23f348ebdb0160de862bbf238e39f4a5de52a8ec49e9b6f1a2da968",
+    "02_REGISTRY/research/sources/d0_curved_whole_hjr_collar_2026-10-20/check_exact_seed_balance.py": "8d14a3b01e9d6285c27353fb4992b536375ef41a9cad27a27afb8e96f185f4c3",
+    "02_REGISTRY/research/sources/d0_curved_whole_hjr_collar_2026-10-20/check_exact_ward.py": "568531062481735939a22bb67c7fd545ff3a1d955c4790a2a8c3f23b6e3e3c6d",
+    "02_REGISTRY/research/sources/d0_curved_whole_hjr_collar_2026-10-20/check_nonlinear_full_source.py": "d985a7ba71925982c4a0c10ae7bc5e0263ad6c34a93786530069b013922d1396"
+  },
+  "rigorous_result": {
+    "status": "PASS",
+    "all_momenta": 4096,
+    "full_CAR": 16,
+    "reference_Gram": "I128/128",
+    "interior": "t=0 spatial slice",
+    "all_incident_links_varied": true,
+    "unknowns": 10,
+    "root_rectangle_radius": "1e-12",
+    "every_Neumann_row_bound": "1/10000",
+    "saved_rounded_matrix_row_bounds": [
+      "[+/- 9.26e-7]",
+      "[+/- 1.14e-5]",
+      "[+/- 1.09e-6]",
+      "[+/- 1.51e-7]",
+      "[+/- 2.46e-6]",
+      "[+/- 1.25e-5]",
+      "[+/- 4.07e-7]",
+      "[+/- 5.76e-8]",
+      "[+/- 9.81e-8]",
+      "[+/- 1.23e-5]"
+    ],
+    "curvature_response8_interval": [
+      ".0809",
+      ".0811"
+    ],
+    "exact_family_exists_for_all_sufficiently_small_boundary_parameters": true,
+    "explicit_nonlinear_radius_provided": false
+  },
+  "failed_iteration_correction": "A too-small all-row assertion rejected the selected-ball maximum; final proof checks each row against1/10000 on unchanged mathematical inputs. No <1e-4 failure is ignored.",
+  "independent_reviewers": [
+    "ward_joint_consumer",
+    "spectral_joint_curved_consumer"
+  ],
+  "scope": {
+    "all_interior_coframe_link_observer_and_fixed_Gram_rows_solved": true,
+    "exterior_Euler_solved": false,
+    "periodic_global_root": false,
+    "original_clock_current_marginal_preserved": false,
+    "physical_native_action_and_preparation_price_selected": false,
+    "Levi_Civita_or_Einstein_source_identified": false,
+    "uniform_refinement": false,
+    "raw216_closed": false,
+    "GR_closed": false
+  },
+  "validation": [
+    "validate_repo PASS warnings0",
+    "validate_work PASS",
+    "validate_agent_protocol PASS"
+  ]
+}

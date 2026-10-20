@@ -2216,3 +2216,28 @@ Consumes the POSITIVE existing \`A4D_EXACT_CURVED_NATIVE_DIRAC_FIXED_RIGHT_PREPA
 **Exact load-bearing new results:** (i) On the original pp family with boundary preserving the owner quartet, \((D_{H,K}\Delta)J=0\), and \(R(H,K,JB)=\mathrm{Tr}(B^\dagger\Delta_\parallel B)\): **ALL** pp-profile curvature derivatives and preparation×pp curvature mixed Hessian are zero. Thus curvature selection comes from H+J on that restricted family; R still has NONZERO coframe/observer sources and could affect curvature INDIRECTLY if those fields are eliminated. (ii) The positive fullRIGHT128 low-grade nonzero-only preparation (32 Fourier sine/cos pairs×two grades) is STATIONARY but strict SADDLE: rotation into unoccupied k0 gives \(R''=-\lambda_k/64<0\), uniformly away from0 at fixed physical u period. (iii) Filling 128 LOWEST instead does not give isolated stable preparation: with 2 protected grades at L_u=65, the cutoff k32/33 band is partially occupied 2/4, giving \(\dim\mathrm{Gr}(2,4)=4\) flat preparation modes; with four grades at L_u=33 it is partially occupied 4/8, \(\dim\mathrm{Gr}(4,8)=16\). No positive invertible preparation-only Schur follows. Full mixed coframe/observer Hessian could still be invertible and MUST be computed rather than ruled out. (iv) The literal grade0 full positive Dirac supplies one NONZERO coframe×preparation Fredholm source at this cutoff: local inverse-u-leg tangent at site0 has \(\partial_e\partial_\theta R=\nu(\cos(64\pi/65)-1)\sin(64\pi/65)/(16\cdot65h^2)\ne0\) while \(\partial_\theta^2R=0\). A C¹ stationary continuation THROUGH that prepared occupied projector under the prescribed local coframe change is therefore obstructed unless true other selected terms/constraints alter the preparation equation. Pure pp H,K tangents have zero such mixed source. (v) On the same fixed observer/scale chart uniform inverse-coframe homothety and the owner observer boost each yield \(D_\sigma R=D_\tau R=2R>0\); full conditional H+J must compensate BOTH \(-2R\) source rows if both independently physically admitted. For L_u=65 rank128, \(R=65\nu^2/(32h^2)\); at fixed T and fixed mode set \(R\to1430\pi^2\nu^2/T^2\), so the required source does not vanish under refinement.
 
 **Specific two-outcome consumer of the reported finite 10×10 branch:** publish the PINNED ACTUAL operator/interval file/commit, its 10×10 Jacobian invertibility and curvature derivative, then check it against the FULL 16-grade fixedRIGHT128 on the exact boundary/collar. Either (PASS) its allowed preparation subspace, all hidden source rows, full mixed Fredholm solvability and both nonzero observer/scale H+J compensation Wards are proved from unchanged action with retained signed clock/prep/work; then pursue h-uniform same-source raw216 Einstein stress, or (FAIL) exhibit a concrete missing physical row/negative or zero preparation sector/source and label the branch \`CONDITIONAL FINITE SADDLE\`, not selected stable Einstein. The original 10-variable interval details were not in this current PR review input; no claim of their validation is made by these spectral replays. GR_closed=false.
+
+
+### 20 October: exact fixed-collar whole-HJR curved-root continuation
+
+Same Draft334/native-programme-v1; inputb6b8c780, existing v8 exact flat
+root, full-source(13cz2,13da-dc), complete Riesz preparation and full9 scalar
+Fourier symbol. Root owns
+`A4D_EXACT_CURVED_WHOLE_HJR_FIXED_COLLAR_ROOT_2026_10_20.md` and
+`sources/d0_curved_whole_hjr_collar_2026-10-20/`, append-only primary/strategy.
+Consumer: positive nonempty curved joint-solution premise for the SAME
+conditional full-Lorentz spatial H+J+R, before physical selection/refinement.
+Statement to decide: for every sufficiently small real nonzero boundary
+coframe parameter, an analytic finite L8 fixed-collar family solves all
+interior16coframe, all24incident proper-link, observer and fixedreference128
+preparation rows, with a nonidentity actual based plaquette. Interior is the
+whole t=0 spatial slice; both crossing u-links are varied. No replacement
+price, no profile-only stationarity, no periodic global-root claim.
+Smallest decisive check: interval nonsingularity of the actual Riesz-reduced
+10variable Dirichlet Hessian over the owned flat-root rectangle, including
+all4096momenta, fullCAR16, true global normalizer and preparation Schur;
+nonzero transverse-link derivative certifies curvature. Independent symmetry/
+Ward review and independent ball evaluation are bounded premises. A direct
+nonlinear fullD/Riesz source replay is diagnostic only. Physical admission,
+native clock/current/preparation work, all exterior boundary equations,
+uniform refinement and raw216 stay open. No BOOK/claim/lifecycle promotion.

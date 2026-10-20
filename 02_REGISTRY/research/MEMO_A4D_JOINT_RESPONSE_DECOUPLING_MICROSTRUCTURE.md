@@ -8841,3 +8841,51 @@ that drops cap failures. This respects #386's common-sector and extra-native-tes
 boundary. The four bounded checkers and independent mathematical reviews are
 recorded in the synthesis packet. No original terminal, accepted assembly
 application, task lifecycle or GR closure is changed.
+
+
+## 20 October: exact nonflat WHOLE-HJR interior roots, not only preparation
+
+The [fixed-collar whole-source theorem](A4D_EXACT_CURVED_WHOLE_HJR_FIXED_COLLAR_ROOT_2026_10_20.md)
+now supplies an exact finite curved family of the SAME original conditional
+full-Lorentz positive-adjoint H+J+R. Starting from the OWNED all-role v8
+root, it uses its actual full128 Riesz preparation, including the genuine
+preparation Schur, and prescribes an independent small boundary Isp coframe
+change. All65536 site/CAR modes, the feedback multiplicity, retained
+workspace and global normalizer remain. No price term or fitted stress is
+added.
+
+On the L8 carrier, the interior is the full t=0 spatial slice. The invariant
+problem has five coframe and four outgoing-link variables PLUS the incoming
+time link at t=-1. All links incident to the interior are therefore varied.
+Spatial-translation/S3 averaging proves that ten vanishing restricted Euler
+rows give ALL16 interior coframe and all incident proper-link source rows;
+this is stronger than stationarity within a chosen profile alone. Exact
+observer whitening gives a K=0 Lorentz lift, so every interior observer
+source follows from those rows without being frozen. Reference128 Gram
+I128/128 and every preparation tangent are solved by the whole moving
+spectral projector.
+
+Independent Arb128 evaluation over the original certified1e-12 root box
+proves the actual Riesz-reduced interior Jacobian invertible, using a
+rational preconditioner with EVERY Neumann row <1/10^4. A transverse
+rotation-link response satisfies .0809<x8'(0)<.0811. Analytic IFT gives an
+eta>0 and an exact analytic solution for every |epsilon|<eta. The based
+face is EXACTLY Ui(0)^-1, hence nonidentity for every sufficiently small
+nonzero epsilon. This closes a positive finite INTERIOR joint-existence
+premise, not a numerical scout or a conditional heat-coefficient argument.
+
+A separately built nonlinear full D/Riesz replay corroborates the branch:
+epsilon1e-4 reaches10source residual1.35e-12, unchanged RIGHT Gram to3.1e-16,
+prep commutator4.2e-17 and a genuinely MOVING projector. These numbers are
+diagnostics; the proof uses interval nonsingularity and analytic IFT.
+
+The earlier u-only protected preparation is retained, but full-price
+balance rules it out as the proposed Lu33 homogeneous seed: energy-weighted
+Hodge balance is required, and A<=4z/(1-z) conflicts with A=33/16. This is
+why the successful continuation uses the existing all-role faithful seed.
+Its global-scale seed bounds are not imposed on the fixed-collar branch.
+
+Explicit limits: no supplied nonlinear radius; no exterior Euler or global
+periodic stationarity, no original clock/current marginal preservation,
+physical full-price/primitive/preparation-work selection, LC/Einstein
+source identification, uniform refinement or raw216. GR_closed=false.

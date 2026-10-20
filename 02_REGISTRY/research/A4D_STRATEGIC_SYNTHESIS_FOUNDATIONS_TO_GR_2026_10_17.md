@@ -6060,3 +6060,37 @@ The new paid-code/future-MDL/Spin owners are complementary source inputs;
 no SO-exterior/Spin or action-selection identification is made here.
 Exact full16 and full-source checks and two independent reviews pass.
 PhysicalGR/raw216 remain open.
+
+
+### 7.105. Exact curved whole-price interior existence via the actual Riesz/Dirichlet Jacobian
+
+The [whole-HJR fixed-collar theorem](A4D_EXACT_CURVED_WHOLE_HJR_FIXED_COLLAR_ROOT_2026_10_20.md)
+advances from exact preparation to an actual joint curved solution family.
+It consumes the already-owned all-role v8 root, original full-Lorentz D,
+complete reference128 Riesz section and its true preparation Schur. On the
+L8 grid, an independently specified boundary Isp coframe parameter forces
+an analytic nonflat family solving every interior coframe, every incident
+proper-link, observer and fixed-Gram preparation row of the SAME H+J+R.
+
+The decisive object is ten-dimensional: five invariant coframes, four
+outgoing-link families and the incoming time link. Finite spatial/S3
+symmetry lifts these ten Euler equations to all unrestricted field rows.
+The canonical whitening lift has K=0, so observer rows follow exactly while
+relative orientation remains in the coframe. Both crossing links vary.
+Arb128 encloses the full finite-B/Riesz Hessian at the certified original
+root; every rational-preconditioner Neumann row is <1/10^4. The certified
+nonzero transverse response and exact face Ui^-1 give real Lorentz
+curvature, not a coordinate-profile test. Analytic IFT supplies exact local
+roots for every sufficiently small boundary parameter; direct nonlinear
+full-D sources provide independent floating diagnostics only.
+
+The protected u-only block is not used as an invalid seed: whole-price
+Euler imposes energy-weighted Hodge balance and, with neutral transverse
+rows, A<=4z/(1-z). Native diagnosticz2^-20 excludes its Lu33 reference128.
+Those homogeneous GLOBAL-scale tests do not apply to the new fixed collar.
+
+This proves a positive finite DIRICHLET INTERIOR existence premise. The
+boundary data, unsolved exterior Euler and lack of uniform refinement are
+explicit. It does not select the native physical programme/price, preserve
+extra current/clock marginals, derive Levi-Civita or the same Einstein
+source, or close raw216/GR. GR_closed=false.
