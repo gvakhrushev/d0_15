@@ -88,6 +88,37 @@ For genuinely crossed native opposite-null directions \(N_2,\bar N_3\), the base
 \]
 The same applies to the \(B\) commutator with \(\bar N_2\), with the original Lorentz group sign. This is an *observable of original based curvature*, not an arbitrary geometry-independent link fluctuation.
 
+### 3a. EXACT all-order original six-plaquette geometric action and full 16+24 Euler reconstruction FROM refinement-independent positive-event odds
+
+The result is stronger than the crossed-null mixed coefficient. Set \(\mathbf O(P)=(\mathcal O_1(P),\dots,\mathcal O_6(P))\) for the SAME fixed 13-effect native CAR16 tester. It is real analytic in a sufficiently small identity neighborhood because all 12 positive output probabilities are bounded strictly away from zero there. Its TRUE \(6\times6\) derivative from (6) is
+\[
+\boxed{D\mathbf O(I)=-\frac{2\sqrt2}{\ln\varphi}I_6,\qquad
+\det D\mathbf O(I)=\left(-\frac{2\sqrt2}{\ln\varphi}\right)^6\ne0.}\tag{9a}
+\]
+The ordinary real-analytic inverse-function theorem therefore constructs an *actual analytic local inverse* \(\mathcal U(\mathbf o)\in SO^+(1,3)\) on a nonempty strictly positive chart, uniquely calibrated by the ORIGINAL group identity \(\mathcal U(0)=I\) and \(\mathbf O(\mathcal U(\mathbf o))=\mathbf o\). This inverse uses a native **measured ratio of positive outcomes**, not a guessed matrix eigenvalue or a choice of extra spectral mode.
+
+At every original site and every of the SIX original based face plaquettes \(P_{rs}(z)\), the SAME six measured odds determine the ENTIRE actual Lorentz matrix exactly:
+\[
+\boxed{P_{rs}(z)=\mathcal U\big(\mathbf O(P_{rs}(z))\big),}\tag{9b}
+\]
+independently of whether the original plaquette was probed by a direct positive Julia or ANY finite sequential all-success Julia refinement, provided the SAME complete physical ordered word and same transported observer/Choi input are held.
+
+Therefore the ORIGINAL pre-existing finite \(\star\)-Palatini action, with **all** original coframe and link variables unchanged and original based faces, has the exact measured-odds **identity**
+\[
+\boxed{
+\mathcal S_{\star,h}[e,U]=
+\sum_{z}\sum_{r<s}\epsilon_{rsuv}\,
+G_2\left(v_u(z)\wedge v_v(z),\
+\star\mathfrak b\left[
+\frac{\mathcal U(\mathbf O_{rs,z})-
+\mathcal U(\mathbf O_{rs,z})^{-1}}{2}
+\right]\right).
+}\tag{9c}
+\]
+This is a statement of equality of finite mathematical functions on the shared strictly admitted chart, NOT an introduced action, fitted \(\kappa_h\), derivative-only match, or claim that the absolute value of this geometrical expression equals the real Price of the tester. Consequently **EVERY** original independent 16-coframe+24-proper-link first Euler row and all higher field variations of the existing geometric action follow by differentiating the right-hand side through the ORIGINAL six positive paired output probabilities and the original area/Hodge-star solder. The identity works for nonhomogeneous curved plaquettes and retains the nonabelian order, with no extra information rank census.
+
+This closes the **mathematical observable reconstruction** bottleneck more tightly than the owner's older contrast-\(\mathcal D\) inversion (§5.1): the new measured coordinates are independent of how many success attenuations the SAME original path is subdivided into. It does NOT close the physical constitutive bottleneck. In particular (9c) computes original \(\mathcal S_{\star,h}\) as a NONLINEAR function of observed odds and the old geometric coframe; it is NOT automatically the compulsory native scalar \(S_{\rm Book}=\sum Cost-\sum Info\) of the actual complete chronological tape. The latter retains all failure costs, true preparation and clock, and its mean-Shannon first source demonstrably scales as \(4^{-n}\) (§4a). Real physical observer/gauge transport is still a separate admission and price condition.
+
 ### 4. The price cannot be divided away: SHARP NATIVE operational resource identity
 
 For the ORIGINAL n-link flag history, at \(P=I\) the complete all-good success probability on this fixed normalized grade-one Choi preparation is EXACTLY
