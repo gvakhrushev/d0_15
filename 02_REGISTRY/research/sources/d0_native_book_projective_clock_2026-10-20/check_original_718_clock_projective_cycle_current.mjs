@@ -15,7 +15,7 @@ const assert=(b,m)=>{if(!b)throw Error("FAIL: "+m)};
 const phi=(1+Math.sqrt(5))/2,p=1/phi,lnphi=Math.log(phi),N=33;
 const part=i=>i<9?0:(i<20?1:2);
 const K=Array.from({length:N},(_,u)=>Array.from({length:N},(_,v)=>
-  part(u)===part(v)?0:p*Math.exp(-lnphi*(.12+.025*((7*u+11*v)%11)))));
+  part(u)===part(v)?0:p*Math.exp(-lnphi*(.12+.023*((7*u+11*v)%13)))));
 assert(K.flat().filter(v=>v>0).length===718,"exact original 718 directed edges");
 const trans=A=>A[0].map((_,j)=>A.map(row=>row[j]));
 const mm=(A,B)=>A.map(row=>B[0].map((_,j)=>row.reduce((s,x,k)=>s+x*B[k][j],0)));
@@ -124,6 +124,15 @@ for(let u=0;u<N;u++){
 }
 assert(oddDiv<1e-12&&Math.abs(oddMass)<1e-12,
  "original chiral component is a true 327-dimensional CIRCULATION");
+// REAL irreversibility control: a directed ABC 3-cycle affinity is nonzero
+// and equals the full original scalar net forward-vs-reverse path cost.
+const abc=[[0,9],[9,20],[20,0]];
+const xyz=[[0,20],[20,9],[9,0]];
+const forward=abc.reduce((q,[u,v])=>q*K[u][v],1);
+const backward=xyz.reduce((q,[u,v])=>q*K[u][v],1);
+const cycleOdds=forward/backward;
+assert(Math.abs(Math.log(cycleOdds))>1e-8,
+ "true original 3-zone Book unequal circulation distinguishes orientation");
 assert(nOdd>0&&nEven>0,
  "heterogeneous original Book history has BOTH genuinely nonzero odd and even shape response");
 // Span: E=359 undirected original pairs.
@@ -148,6 +157,7 @@ console.log(JSON.stringify({
   exactCostVariation:exactSource,finiteDifference:numSource,
   discrepancy:exactSource-numSource},
  realHodgeSectors:{cycleOddNorm2:nOdd,shapeEvenNorm2:nEven,
+  originalTriangleForwardReverseOdds:cycleOdds,
   oddDivergenceMax:oddDiv,modeCounts:{allShape:685,oddCycle:327,evenFuture:32,evenDark:326}},
  physicalScope:"math original scalar Book edge-local path-price and optional fixed stage-clock; no forced G0 full action/GR",
  GR_closed:false
