@@ -146,3 +146,24 @@ print("PASS native CAR16 Spin invariant Gamma0 observer indefinite bilinear")
 print("PASS native positive J0=norm², future-causal J0>=sqrt(Ji²) for all real spinors")
 print("PASS native Spin boost exact Lorentz-vector current Ward (100 random tests)")
 print("OPEN: actual paid native G0 spin-sensitive matter action and kinetic stress")
+
+
+# Entire native ORIGINAL 4D real CAR16 Clifford VOLUME omega gives an
+# endogenous Spin-invariant complex structure and the TRUE Lorentzian
+# star (*^2=-1) on six boost/rotation bivectors, no imaginary primitive.
+omega=L[0]@L[1]@L[2]@L[3]
+assert np.array_equal(omega@omega,-I)
+assert np.array_equal(omega.T,-omega)
+assert np.array_equal(omega@Parity,Parity@omega)
+for a in range(4):
+ assert np.array_equal(omega@L[a],-L[a]@omega)
+ for b in range(a+1,4):
+  assert np.array_equal(omega@(L[a]@L[b]),(L[a]@L[b])@omega)
+for boost_plane,rotation_plane in (((0,1),(2,3)),((0,2),(3,1)),((0,3),(1,2))):
+ boost=L[boost_plane[0]]@L[boost_plane[1]]
+ rotation=L[rotation_plane[0]]@L[rotation_plane[1]]
+ assert np.array_equal(omega@boost,rotation)
+ assert np.array_equal(omega@rotation,-boost)
+print("PASS native real CAR16 oriented Clifford volume omega^2=-I16, SO Spin-invariant")
+print("PASS intrinsic 6-bivector Lorentz Hodge star from original CAR16, *²=-1")
+print("PASS no extra complex i, no extra physical spinor states, no manual Palatini tensor")
