@@ -22,6 +22,9 @@ import task_dispatch
 import task_lifecycle
 import validate_pr_contract
 
+# Keep the existing fast CI entrypoint; navigation adds no new workflow gate.
+from test_gr_synthesis import SynthesisTests
+
 TASK = "WRK-A4D-ONE"
 OTHER = "WRK-A4D-TWO"
 
@@ -48,6 +51,8 @@ class AssemblyTests(unittest.TestCase):
                          "goals": [{"id": "GR", "requires": ["D"], "outcome": "positive"}],
                          "obligations": [self.obligation(n, deps) for n, deps in
                                          [("A", []), ("B", ["A"]), ("C", ["A"]), ("D", ["B", "C"])]],
+                         "carrier_distinctions": [],
+                         "registry_budget": {"max_active_results": 10},
                          "task_bindings": {TASK: self.binding("A", "question-a"), OTHER: self.binding("B", "question-b")}}
         self.intake = {"schema": "d0-gr-applications/1", "results": [], "applications": [], "attempts": [],
                        "migration": {"old": {"result": "legacy:old", "obligation": None}}}
@@ -56,7 +61,9 @@ class AssemblyTests(unittest.TestCase):
             brief = f"00_WORK/tasks/{tid}.md"
             self.queue["tasks"].append({"id": tid, "class": "WORKER", "state": "PLANNED", "brief": brief})
             (self.root / brief).write_text(f"# {tid}\nBase: `main`\nBranch: `wrk/{tid.lower()}`\n"
-                                         f"Primary artifact: `proof.md`\nAssembly: `{tid}`\n")
+                                         f"Primary artifact: `proof.md`\nAssembly: `{tid}`\n"
+                                         f"Assembly-Slot: `{self.binding('A' if tid == TASK else 'B', '')['slot']}`\n"
+                                         f"Assembly-Carrier: `native`\n")
         self.save()
 
     def snapshot(self, name, data):
@@ -70,7 +77,8 @@ class AssemblyTests(unittest.TestCase):
                 "methods": [{"id": "direct", "requires": list(deps)}]}
 
     def binding(self, ob, key):
-        return {"obligations": [ob], "interface": "native", "work_key": key, "statement": "Prove " + ob,
+        return {"obligations": [ob], "slot": ob, "carrier": "native", "distinct_from": [],
+                "interface": "native", "work_key": key, "statement": "Prove " + ob,
                 "consumer": "D", "mode": "proof", "assumes": [], "write_paths": ["proof.md"],
                 "start_requires": [], "completion_requires": [ob]}
 
@@ -124,10 +132,14 @@ class AssemblyTests(unittest.TestCase):
     def git(self, *args):
         return subprocess.check_output(["git", *args], cwd=self.root, stderr=subprocess.PIPE, text=True)
 
-    def pr(self, task=TASK, number=12, draft=True, lifecycle="IN_PROGRESS"):
+    def pr(self, task=TASK, number=12, draft=True, lifecycle="IN_PROGRESS", *,
+           branch=None, base_branch="main", head_sha="a" * 40, base_sha="b" * 40,
+           head_repo="gvakhrushev/d0_15", base_repo="gvakhrushev/d0_15"):
+        branch = branch or "wrk/" + task.lower()
         return {"number": number, "state": "open", "draft": draft,
                 "html_url": f"https://github.com/gvakhrushev/d0_15/pull/{number}",
-                "head": {"ref": "wrk/" + task.lower(), "sha": "a" * 40},
+                "head": {"ref": branch, "sha": head_sha, "repo": {"full_name": head_repo}},
+                "base": {"ref": base_branch, "sha": base_sha, "repo": {"full_name": base_repo}},
                 "body": f"Task: `{task}`\nClass: `WORKER`\nLifecycle: `{lifecycle}`\n"}
 
     def cli(self, *args):
@@ -175,10 +187,23 @@ class AssemblyTests(unittest.TestCase):
         with self.assertRaisesRegex(gr.AssemblyError, "finite certificate"):
             self.model()
 
+    def test_active_result_budget_is_enforced(self):
+        self.contract["registry_budget"]["max_active_results"] = 2
+        for name in ["r1", "r2", "r3"]:
+            self.add_result(name=name)
+        with self.assertRaisesRegex(gr.AssemblyError, "active result registry budget exceeded: 3/2"):
+            self.model()
+
     def test_finite_result_does_not_fill_family_premise(self):
         self.add_result(kind="exact-finite", scope="finite")
         self.add_app()
         with self.assertRaisesRegex(gr.AssemblyError, "finite scope"):
+            self.model()
+
+    def test_application_cannot_switch_carrier_without_typed_edge(self):
+        self.add_result(interface="other")
+        self.add_app()
+        with self.assertRaisesRegex(gr.AssemblyError, "different carrier needs an explicit distinct-from edge"):
             self.model()
 
     def test_passport_does_not_close_internal_goal(self):
@@ -191,13 +216,21 @@ class AssemblyTests(unittest.TestCase):
         self.contract["interfaces"]["other"] = copy.deepcopy(self.contract["interfaces"]["native"])
         self.contract["interfaces"]["other"]["action"] = "A different complete action"
         self.add_result(interface="other")
-        self.add_app()
+        app = self.add_app()
+        self.contract["carrier_distinctions"].append({
+            "id": "A-native-other", "slot": "A", "left_interface": "native",
+            "right_interface": "other", "type": "distinct-from", "reason": "Fixture carrier distinction."})
+        app["distinct_from"] = ["A-native-other"]
         with self.assertRaisesRegex(gr.AssemblyError, "every transport map"):
             self.model()
 
     def test_complete_proved_transport_can_be_accepted(self):
         self.add_result(interface="other")
         app = self.add_app()
+        self.contract["carrier_distinctions"].append({
+            "id": "A-native-other", "slot": "A", "left_interface": "native",
+            "right_interface": "other", "type": "distinct-from", "reason": "Fixture carrier distinction."})
+        app["distinct_from"] = ["A-native-other"]
         app["transport"] = {"proof": self.proof, "maps": {k: "Proved fixture map for " + k for k in gr.INTERFACE_FIELDS}}
         self.sign(app)
         self.assertIn("A", gr.evaluate(self.model())["closed"])
@@ -276,6 +309,13 @@ class AssemblyTests(unittest.TestCase):
         with self.assertRaisesRegex(gr.AssemblyError, "positive goal"):
             self.model()
 
+    def test_repository_global_closure_is_classification_not_positive_gr(self):
+        root = Path(__file__).resolve().parents[1]
+        model = gr.load(root)
+        d0_goal = next(g for g in model["contract"]["goals"] if g["id"] == "D0-CLOSURE")
+        self.assertEqual(d0_goal["outcome"], "classification")
+        self.assertEqual(model["obligations"]["global_classification"]["outcome"], "classification")
+
     def test_reviewed_no_go_stops_only_its_scoped_attempt(self):
         self.add_result(outcome="negative")
         attempt = {"id": "dead-a", "result": "r", "interface": "native", "work_key": "question-a",
@@ -302,6 +342,63 @@ class AssemblyTests(unittest.TestCase):
         code, out, err = self.cli("application-digest", "dead")
         self.assertEqual((code, err), (0, ""))
         self.assertIn("Assembly-Acceptance: dead", out)
+
+    def test_attempt_search_includes_exact_question_and_assumptions(self):
+        self.add_result(outcome="negative")
+        self.add_result(name="unrelated-zero-mode", outcome="negative")
+        self.intake["results"][-1]["statement"] = "For every zero mode, the synthetic source vanishes."
+        question = {"statement": "For every z in the declared carrier, nullity A(z)=2.",
+                    "assumes": ["The full complex torus domain is retained."]}
+        binding = {"interface": "native", "work_key": "question-z",
+                   "statement": question["statement"], "assumes": question["assumes"]}
+        attempt = {"id": "nullity-counterexample", "result": "r", "interface": "native",
+                   "work_key": "question-z", "scope": "A finite exact obstruction",
+                   "reopen_when": "The domain excludes the witness", "question": question,
+                   "question_digest": gr.work_digest(self.model(), binding),
+                   "review": {"state": "proposed"}}
+        self.intake["attempts"].append(attempt)
+        model = self.model()
+
+        by_question = gr.attempts(model, "For every z")
+        by_assumption = gr.attempts(model, "complex torus domain")
+
+        self.assertEqual([row["id"] for row in by_question], ["nullity-counterexample"])
+        self.assertEqual([row["id"] for row in by_assumption], ["nullity-counterexample"])
+
+    def test_search_includes_pinned_evidence_and_snapshot_paths(self):
+        self.add_result(name="source-result")
+        model = self.model()
+
+        rows = gr.search(model, "sources/proof.md")
+
+        self.assertEqual([row["id"] for row in rows], ["source-result"])
+        self.assertEqual(rows[0]["evidence_paths"],
+                         ["02_REGISTRY/gr_assembly/sources/proof.md", "proof.md"])
+
+    def test_search_groups_only_explicit_navigation_aliases(self):
+        self.add_result(name="canonical")
+        self.add_result(name="older-index")
+        self.intake["results"][-1]["navigation_alias_of"] = "canonical"
+        model = self.model()
+        before = gr.evaluate(model)
+        result = gr.search(model, "older-index")
+        self.assertEqual([r["id"] for r in result], ["canonical"])
+        self.assertEqual(result[0]["also_indexed_as"], ["older-index"])
+        self.assertEqual(gr.evaluate(model), before)
+        self.assertEqual(len(model["intake"]["results"]), 2)
+
+    def test_generated_synthesis_drift_is_detected_at_existing_render_gate(self):
+        self.add_result()
+        self.contract["synthesis"] = [{"id": "source", "title": "Source", "contribution": "Conditional input",
+                                       "next_question": "Supply the physical map", "consumers": ["A"], "results": ["r"]}]
+        self.save()
+        with contextlib.redirect_stdout(io.StringIO()):
+            self.assertEqual(gr.main(["--repo-root", str(self.root), "render"]), 0)
+        view = self.directory / "SYNTHESIS.md"
+        view.write_text(view.read_text() + "Stale edit\n")
+        with contextlib.redirect_stderr(io.StringIO()) as error:
+            self.assertEqual(gr.main(["--repo-root", str(self.root), "render", "--check"]), 2)
+        self.assertIn("synthesis view is stale", error.getvalue())
 
     def test_changed_hypothesis_reopens_only_with_explicit_delta(self):
         self.add_result(outcome="negative")
@@ -364,8 +461,71 @@ class AssemblyTests(unittest.TestCase):
         self.contract["task_bindings"][OTHER]["start_requires"] = ["A"]
         self.assertIn("unproved start prerequisites", " ".join(gr.launch_check(self.model(), OTHER, [])["reasons"]))
 
+    def test_brief_requires_exact_slot_and_carrier_before_dispatch(self):
+        model = self.model()
+        task = next(t for t in self.queue["tasks"] if t["id"] == TASK)
+        path = self.root / task["brief"]
+        path.write_text(path.read_text().replace("Assembly-Slot: `A`", "Assembly-Slot: `B`"))
+        with self.assertRaisesRegex(gr.AssemblyError, "Assembly-Slot"):
+            gr.brief_binding(self.root, task, model)
+
+    def test_different_carrier_requires_a_typed_distinct_from_edge(self):
+        binding = self.contract["task_bindings"][OTHER]
+        binding.update({"interface": "other", "carrier": "other"})
+        with self.assertRaisesRegex(gr.AssemblyError, "matching distinct-from edge"):
+            self.model()
+
+        edge = {"id": "B-native-other", "slot": "B", "left_interface": "native",
+                "right_interface": "other", "type": "distinct-from", "reason": "Fixture carrier distinction."}
+        self.contract["carrier_distinctions"].append(edge)
+        binding["distinct_from"] = [edge["id"]]
+        brief = self.root / "00_WORK/tasks" / f"{OTHER}.md"
+        body = brief.read_text().replace("Assembly-Carrier: `native`", "Assembly-Carrier: `other`")
+        body += "Assembly-Distinct-From: `B-native-other`\n"
+        brief.write_text(body)
+        model = self.model()
+        task = next(t for t in self.queue["tasks"] if t["id"] == OTHER)
+        self.assertEqual(gr.brief_binding(self.root, task, model)["distinct_from"], [edge["id"]])
+
+    def test_same_filled_slot_and_carrier_cannot_start_again(self):
+        self.add_result()
+        self.sign(self.add_app())
+        check = gr.launch_check(self.model(), TASK, [])
+        self.assertFalse(check["allowed"])
+        self.assertIn("already filled with the same carrier", " ".join(check["reasons"]))
+
+    def test_filled_slot_different_carrier_requires_and_uses_distinct_edge(self):
+        self.add_result()
+        self.sign(self.add_app())
+        binding = self.contract["task_bindings"][OTHER]
+        binding.update({"obligations": ["A"], "slot": "A", "completion_requires": ["A"],
+                        "interface": "other", "carrier": "other"})
+        edge = {"id": "A-native-other", "slot": "A", "left_interface": "native",
+                "right_interface": "other", "type": "distinct-from", "reason": "Fixture carrier distinction."}
+        self.contract["carrier_distinctions"].append(edge)
+        binding["distinct_from"] = [edge["id"]]
+        brief = self.root / "00_WORK/tasks" / f"{OTHER}.md"
+        text = brief.read_text().replace("Assembly-Slot: `B`", "Assembly-Slot: `A`")
+        text = text.replace("Assembly-Carrier: `native`", "Assembly-Carrier: `other`")
+        text += "Assembly-Distinct-From: `A-native-other`\n"
+        brief.write_text(text)
+        check = gr.launch_check(self.model(), OTHER, [])
+        self.assertTrue(check["allowed"], check["reasons"])
+
     def test_different_task_label_does_not_avoid_duplicate_gate(self):
         self.contract["task_bindings"][OTHER]["work_key"] = "question-a"
+        check = gr.launch_check(self.model(), OTHER, [self.pr()])
+        self.assertFalse(check["allowed"])
+        self.assertIn("same scientific work", check["reasons"][0])
+
+    def test_different_interface_does_not_avoid_duplicate_gate(self):
+        self.contract["task_bindings"][OTHER]["work_key"] = "question-a"
+        self.contract["task_bindings"][OTHER]["interface"] = "other"
+        self.contract["task_bindings"][OTHER]["carrier"] = "other"
+        self.contract["carrier_distinctions"].append({
+            "id": "B-native-other", "slot": "B", "left_interface": "native",
+            "right_interface": "other", "type": "distinct-from", "reason": "Fixture carrier distinction."})
+        self.contract["task_bindings"][OTHER]["distinct_from"] = ["B-native-other"]
         check = gr.launch_check(self.model(), OTHER, [self.pr()])
         self.assertFalse(check["allowed"])
         self.assertIn("same scientific work", check["reasons"][0])
@@ -386,12 +546,288 @@ class AssemblyTests(unittest.TestCase):
         row = next(a for a in actions if a["task"] == TASK)
         self.assertEqual(row["action"], "resume")
         self.assertIn("#12", row["reasons"][0])
+        self.assertEqual(row["live_executions"][0]["url"], "https://github.com/gvakhrushev/d0_15/pull/12")
 
-    def test_ready_pr_is_review_and_ambiguous_execution_fails(self):
+    def test_ready_obligations_report_unlock_and_current_registered_owner(self):
+        model = self.model()
+        actions = gr.next_actions(model, [])
+        row = next(item for item in gr.ready_obligations(model, actions) if item["obligation"] == "A")
+        self.assertEqual(row["newly_ready"], ["B", "C"])
+        self.assertEqual(row["newly_ready_if_proved"], 2)
+        self.assertEqual(row["potential_downstream"], 3)
+        self.assertEqual(row["next_step"], "control-launch-review")
+        self.assertEqual(row["registered_tasks"][0]["task"], TASK)
+        self.assertEqual(row["registered_tasks"][0]["action"], "eligible-for-control")
+
+    def test_registry_budget_reports_remaining_capacity_and_safe_at_capacity_guidance(self):
+        model = self.model()
+        budget = gr.result_registry_budget(model)
+        self.assertEqual(budget["active_results"], 0)
+        self.assertEqual(budget["max_active_results"], 10)
+        self.assertEqual(budget["remaining"], 10)
+        self.assertEqual(budget["state"], "available")
+
+        for index in range(10):
+            self.add_result(name=f"r{index}")
+        budget = gr.result_registry_budget(self.model())
+        self.assertEqual(budget["remaining"], 0)
+        self.assertEqual(budget["state"], "at-capacity")
+        self.assertIn("Reuse or strengthen", budget["guidance"])
+        self.assertIn("provenance", budget["guidance"])
+        code, stdout, stderr = self.cli("--json", "next", "--offline")
+        self.assertEqual(code, 0, stderr)
+        self.assertEqual(json.loads(stdout)["registry_budget"], budget)
+
+    def test_ready_obligation_surfaces_overlap_as_its_next_process_step(self):
+        model = self.model()
+        actions = gr.next_actions(model, [self.pr(), self.pr(number=13)])
+        row = next(item for item in gr.ready_obligations(model, actions) if item["obligation"] == "A")
+        self.assertEqual(row["next_step"], "resolve-overlap-through-control")
+        self.assertEqual(row["registered_tasks"][0]["action"], "resolve-overlap")
+        self.assertEqual([pr["number"] for pr in row["registered_tasks"][0]["live_executions"]], [12, 13])
+
+    def test_stacked_pr_is_routed_for_source_reconciliation_not_called_a_competing_owner(self):
+        parent = self.pr(branch="exp/gr-parent", head_sha="c" * 40)
+        child = self.pr(number=13, branch="exp/gr-child", base_branch="exp/gr-parent",
+                        base_sha="b" * 40, head_sha="d" * 40)
+        actions = gr.next_actions(self.model(), [parent, child])
+        row = next(item for item in actions if item["task"] == TASK)
+        self.assertEqual(row["action"], "reconcile-stacked-source")
+        self.assertEqual(row["stacked_relations"], [{
+            "parent": 12, "child": 13,
+            "parent_branch": "exp/gr-parent", "child_branch": "exp/gr-child",
+            "parent_head_sha": "c" * 40, "child_base_sha": "b" * 40,
+            "child_head_sha": "d" * 40, "base_matches_parent_head": False,
+        }])
+        reason = " ".join(row["reasons"])
+        self.assertIn("child base SHA differs", reason)
+        self.assertIn("no new execution is authorized", reason)
+        ready = next(item for item in gr.ready_obligations(self.model(), actions) if item["obligation"] == "A")
+        self.assertEqual(ready["next_step"], "reconcile-stacked-source-through-control")
+
+    def test_stacked_pr_detection_requires_same_repository_and_single_chain(self):
+        parent = self.pr(branch="exp/gr-parent")
+        foreign_base = self.pr(number=13, branch="exp/gr-child", base_branch="exp/gr-parent",
+                               base_repo="someone-else/d0_15")
+        row = next(item for item in gr.next_actions(self.model(), [parent, foreign_base]) if item["task"] == TASK)
+        self.assertEqual(row["action"], "resolve-overlap")
+
+        sibling = self.pr(number=14, branch="exp/gr-sibling", base_branch="exp/gr-parent")
+        row = next(item for item in gr.next_actions(self.model(), [parent, foreign_base, sibling]) if item["task"] == TASK)
+        self.assertEqual(row["action"], "resolve-overlap")
+
+    def test_unregistered_child_pr_is_surfaced_by_exact_branch_relation(self):
+        parent = self.pr(branch="exp/gr-parent", head_sha="c" * 40)
+        child = self.pr(number=13, task="", branch="research/gr-child", base_branch="exp/gr-parent",
+                        base_sha="b" * 40, head_sha="d" * 40)
+        child["body"] = "Repository: `gvakhrushev/d0_15`\nA research-only source without Task metadata.\n"
+        actions = gr.next_actions(self.model(), [parent, child])
+        row = next(item for item in actions if item["task"] == TASK)
+        self.assertEqual(row["action"], "reconcile-stacked-source")
+        self.assertEqual([item["number"] for item in row["live_executions"]], [12])
+        self.assertEqual(row["related_prs"][0]["task"], None)
+        self.assertEqual(row["related_prs"][0]["head_sha"], "d" * 40)
+        self.assertEqual(row["stacked_relations"][0]["child_base_sha"], "b" * 40)
+        self.assertFalse(row["stacked_relations"][0]["base_matches_parent_head"])
+        self.assertIn("omit or differ in Task metadata", " ".join(row["reasons"]))
+        ready = next(item for item in gr.ready_obligations(self.model(), actions) if item["obligation"] == "A")
+        self.assertEqual(ready["next_step"], "reconcile-stacked-source-through-control")
+
+    def test_unregistered_child_on_foreign_repository_is_not_attributed_to_owner(self):
+        parent = self.pr(branch="exp/gr-parent")
+        child = self.pr(number=13, branch="research/gr-child", base_branch="exp/gr-parent",
+                        base_repo="someone-else/d0_15")
+        child["body"] = "Research-only source without Task metadata.\n"
+        row = next(item for item in gr.next_actions(self.model(), [parent, child]) if item["task"] == TASK)
+        self.assertEqual(row["action"], "resume")
+        self.assertNotIn("related_prs", row)
+
+    def test_distinct_unregistered_children_are_a_source_fork_not_duplicate_owners(self):
+        parent = self.pr(branch="exp/gr-parent", head_sha="c" * 40)
+        child_a = self.pr(number=13, branch="research/gr-source-a", base_branch="exp/gr-parent",
+                          base_sha="b" * 40, head_sha="d" * 40)
+        child_b = self.pr(number=14, branch="research/gr-source-b", base_branch="exp/gr-parent",
+                          base_sha="b" * 40, head_sha="e" * 40)
+        child_a["body"] = "A separately scoped source.\n"
+        child_b["body"] = "A different separately scoped source.\n"
+        actions = gr.next_actions(self.model(), [parent, child_a, child_b])
+        row = next(item for item in actions if item["task"] == TASK)
+        self.assertEqual(row["action"], "reconcile-source-fork")
+        self.assertEqual([item["number"] for item in row["related_prs"]], [13, 14])
+        self.assertEqual([item["number"] for item in row["live_executions"]], [12])
+        self.assertIn("do not treat branch dependence alone as duplicate ownership", " ".join(row["reasons"]))
+        ready = next(item for item in gr.ready_obligations(self.model(), actions) if item["obligation"] == "A")
+        self.assertEqual(ready["next_step"], "reconcile-source-fork-through-control")
+
+    def register_source_fork_reconciliation(self, parent, children):
+        result_id = self.add_result(f"source-fork-result-{len(self.intake['results'])}")
+        self.contract["source_fork_reconciliations"] = [{
+            "id": "fixture-source-fork-reconciliation",
+            "parent": gr._live_fork_pin(parent),
+            "children": [{
+                "pin": gr._live_fork_pin(child),
+                "merge_base_sha": "f" * 40,
+                "child_only_delta": [{
+                    "status": "A", "path": f"child-{child['number']}.md",
+                    "git_blob": "e" * 40, "parent_git_blob": None,
+                }],
+                "result_ids": [result_id],
+            } for child in sorted(children, key=lambda item: item["number"])],
+            "disposition": "comparison-complete-result-only",
+            "reopen_when": ["Parent identity changes or child-delta path blobs change"],
+        }]
+
+    def source_fork_fixture(self):
+        parent = self.pr(branch="exp/gr-parent", head_sha="c" * 40)
+        children = [
+            self.pr(number=13, branch="research/gr-source-a", base_branch="exp/gr-parent",
+                    base_sha="b" * 40, head_sha="d" * 40),
+            self.pr(number=14, branch="research/gr-source-b", base_branch="exp/gr-parent",
+                    base_sha="b" * 40, head_sha="e" * 40),
+        ]
+        for child in children:
+            child["body"] = "Independent research-only source.\n"
+        return parent, children
+
+    def test_exact_source_fork_reconciliation_suppresses_only_the_repeated_comparison(self):
+        parent, children = self.source_fork_fixture()
+        self.register_source_fork_reconciliation(parent, children)
+        model = self.model()
+        actions = gr.next_actions(model, [parent, *children])
+        row = next(item for item in actions if item["task"] == TASK)
+        self.assertEqual(row["action"], "resume")
+        record = row["reconciled_source_forks"][0]
+        self.assertEqual(record["id"], "fixture-source-fork-reconciliation")
+        self.assertEqual([child["number"] for child in record["children"]], [13, 14])
+        self.assertTrue(record["children_remain_unaccepted"])
+        self.assertEqual(record["disposition"], "comparison-complete-result-only")
+        ready = next(item for item in gr.ready_obligations(model, actions) if item["obligation"] == "A")
+        self.assertEqual(ready["next_step"], "resume-parent-after-source-fork-comparison")
+
+    def test_source_fork_reconciliation_reopens_on_unchecked_parent_or_changed_child_head(self):
+        for changed in ("parent", "child"):
+            with self.subTest(changed=changed):
+                parent, children = self.source_fork_fixture()
+                self.register_source_fork_reconciliation(parent, children)
+                if changed == "parent":
+                    parent["head"]["sha"] = "9" * 40
+                else:
+                    children[0]["head"]["sha"] = "8" * 40
+                model = self.model()
+                row = next(item for item in gr.next_actions(model, [parent, *children]) if item["task"] == TASK)
+                self.assertEqual(row["action"], "reconcile-source-fork")
+
+    def test_source_fork_reconciliation_survives_unrelated_parent_head_advance(self):
+        parent, children = self.source_fork_fixture()
+        self.register_source_fork_reconciliation(parent, children)
+        parent["head"]["sha"] = "9" * 40
+        parent["_assembly_source_path_blobs_complete"] = True
+        parent["_assembly_source_path_blobs"] = {"child-13.md": None, "child-14.md": None}
+        row = next(item for item in gr.next_actions(self.model(), [parent, *children]) if item["task"] == TASK)
+        self.assertEqual(row["action"], "resume")
+        record = row["reconciled_source_forks"][0]
+        self.assertEqual(record["comparison_head_sha"], "c" * 40)
+        self.assertEqual(record["current_parent_head_sha"], "9" * 40)
+        self.assertTrue(record["parent_head_advanced_with_child_paths_unchanged"])
+
+    def test_source_fork_reconciliation_reopens_when_parent_delta_path_changes(self):
+        parent, children = self.source_fork_fixture()
+        self.register_source_fork_reconciliation(parent, children)
+        parent["head"]["sha"] = "9" * 40
+        parent["_assembly_source_path_blobs_complete"] = True
+        parent["_assembly_source_path_blobs"] = {"child-13.md": "f" * 40, "child-14.md": None}
+        row = next(item for item in gr.next_actions(self.model(), [parent, *children]) if item["task"] == TASK)
+        self.assertEqual(row["action"], "reconcile-source-fork")
+        self.assertIn("child-13.md", " ".join(row["reasons"]))
+
+    def test_source_fork_reconciliation_fails_closed_on_incomplete_path_snapshot(self):
+        parent, children = self.source_fork_fixture()
+        self.register_source_fork_reconciliation(parent, children)
+        parent["head"]["sha"] = "9" * 40
+        parent["_assembly_source_path_blobs_complete"] = False
+        row = next(item for item in gr.next_actions(self.model(), [parent, *children]) if item["task"] == TASK)
+        self.assertEqual(row["action"], "reconcile-source-fork")
+
+    def test_prepare_source_fork_path_snapshots_queries_only_matching_advanced_parent(self):
+        parent, children = self.source_fork_fixture()
+        self.register_source_fork_reconciliation(parent, children)
+        parent["head"]["sha"] = "9" * 40
+        calls = []
+
+        def lookup(root, sha, paths):
+            calls.append((root, sha, paths))
+            return {path: None for path in paths}
+
+        model = self.model()
+        gr.prepare_source_fork_path_snapshots(model, [parent, *children], self.root, lookup)
+        self.assertEqual(len(calls), 1)
+        self.assertEqual(calls[0][1], "9" * 40)
+        self.assertEqual(calls[0][2], ["child-13.md", "child-14.md"])
+        self.assertTrue(parent["_assembly_source_path_blobs_complete"])
+
+    def test_prepare_source_fork_path_snapshots_fails_closed_on_partial_lookup(self):
+        parent, children = self.source_fork_fixture()
+        self.register_source_fork_reconciliation(parent, children)
+        parent["head"]["sha"] = "9" * 40
+        gr.prepare_source_fork_path_snapshots(
+            self.model(), [parent, *children], self.root, lambda *_: {"child-13.md": None})
+        self.assertFalse(parent["_assembly_source_path_blobs_complete"])
+        row = next(item for item in gr.next_actions(self.model(), [parent, *children]) if item["task"] == TASK)
+        self.assertEqual(row["action"], "reconcile-source-fork")
+
+    def test_source_fork_reconciliation_reopens_on_child_base_or_task_change(self):
+        for changed in ("base", "task"):
+            with self.subTest(changed=changed):
+                parent, children = self.source_fork_fixture()
+                self.register_source_fork_reconciliation(parent, children)
+                if changed == "base":
+                    children[0]["base"]["sha"] = "7" * 40
+                else:
+                    children[0]["body"] = "Task: `WRK-A4D-TWO`\n"
+                model = self.model()
+                row = next(item for item in gr.next_actions(model, [parent, *children]) if item["task"] == TASK)
+                self.assertEqual(row["action"], "reconcile-source-fork")
+
+    def test_source_fork_reconciliation_reopens_when_a_new_descendant_appears(self):
+        parent, children = self.source_fork_fixture()
+        self.register_source_fork_reconciliation(parent, children)
+        new_child = self.pr(number=15, branch="research/gr-source-c", base_branch="exp/gr-parent",
+                            base_sha="b" * 40, head_sha="6" * 40)
+        new_child["body"] = "A new research-only source.\n"
+        model = self.model()
+        row = next(item for item in gr.next_actions(model, [parent, *children, new_child]) if item["task"] == TASK)
+        self.assertEqual(row["action"], "reconcile-source-fork")
+
+    def test_source_fork_record_cannot_promote_comparison_to_acceptance(self):
+        parent, children = self.source_fork_fixture()
+        self.register_source_fork_reconciliation(parent, children)
+        self.contract["source_fork_reconciliations"][0]["disposition"] = "accepted"
+        with self.assertRaisesRegex(gr.AssemblyError, "cannot accept child evidence"):
+            self.model()
+
+    def test_unowned_ready_obligation_requires_control_registration(self):
+        self.contract["task_bindings"].pop(TASK)
+        self.queue["tasks"] = [task for task in self.queue["tasks"] if task["id"] != TASK]
+        model = self.model()
+        actions = gr.next_actions(model, [])
+        row = next(item for item in gr.ready_obligations(model, actions) if item["obligation"] == "A")
+        self.assertEqual(row["next_step"], "register-or-reopen-through-control")
+        self.assertEqual(row["registered_tasks"], [])
+        self.assertEqual(row["newly_ready_if_proved"], 2)
+
+    def test_ready_pr_is_review_and_duplicate_owners_are_reported(self):
         row = next(a for a in gr.next_actions(self.model(), [self.pr(draft=False, lifecycle="REVIEW")]) if a["task"] == TASK)
         self.assertEqual(row["action"], "review")
-        with self.assertRaisesRegex(gr.AssemblyError, "ambiguous"):
-            gr.next_actions(self.model(), [self.pr(), self.pr(number=13)])
+        actions = gr.next_actions(self.model(), [self.pr(), self.pr(number=13)])
+        row = next(a for a in actions if a["task"] == TASK)
+        self.assertEqual(row["action"], "resolve-overlap")
+        self.assertEqual(actions[0]["action"], "resolve-overlap")
+        reason = " ".join(row["reasons"])
+        self.assertIn("#12", reason)
+        self.assertIn("#13", reason)
+        self.assertEqual([pr["number"] for pr in row["live_executions"]], [12, 13])
+        self.assertEqual(row["live_executions"][0]["lifecycle"], "IN_PROGRESS")
+        self.assertIn(OTHER, {a["task"] for a in actions})
 
     def test_retired_binding_does_not_reappear_as_unfinished_work(self):
         self.queue["tasks"] = [t for t in self.queue["tasks"] if t["id"] != TASK]
@@ -407,6 +843,28 @@ class AssemblyTests(unittest.TestCase):
         self.assertEqual((code, err), (0, ""))
         gh.assert_not_called()
         self.assertIn("no launch authorized", out)
+
+    def test_commit_path_blobs_reads_exact_objects_with_one_graphql_request(self):
+        commit = "a" * 40
+        paths = ["README.md", "02_REGISTRY/gr_assembly/contract.json"]
+        stdout = json.dumps({"data": {"repository": {
+            "p0": {"oid": "b" * 40}, "p1": None,
+        }}})
+        completed = subprocess.CompletedProcess(args=["gh"], returncode=0, stdout=stdout, stderr="")
+        with patch.object(task_dispatch.subprocess, "run", return_value=completed) as gh:
+            result = task_dispatch.commit_path_blobs(self.root, commit, paths)
+        self.assertEqual(result, {paths[0]: "b" * 40, paths[1]: None})
+        argv = gh.call_args.args[0]
+        self.assertEqual(argv[:3], ["gh", "api", "graphql"])
+        query = argv[4].removeprefix("query=")
+        self.assertIn(f"{commit}:{paths[0]}", query)
+        self.assertIn(f"{commit}:{paths[1]}", query)
+
+    def test_commit_path_blobs_rejects_unsafe_paths_without_network_access(self):
+        with patch.object(task_dispatch.subprocess, "run") as gh:
+            with self.assertRaisesRegex(ValueError, "unsafe repository path"):
+                task_dispatch.commit_path_blobs(self.root, "a" * 40, ["../outside"])
+        gh.assert_not_called()
 
     def test_failed_live_lookup_is_not_an_empty_queue(self):
         with patch.object(task_dispatch, "open_prs", side_effect=ValueError("GitHub unavailable")):
@@ -538,11 +996,54 @@ class AssemblyTests(unittest.TestCase):
         self.assertEqual(report["certificate_selection"][0]["path"], "consumer.py")
         self.assertFalse(report["ran"])
 
+    def test_impact_marks_snapshot_and_parent_consumer_changes(self):
+        import research_input_closure
+        self.add_result()
+        app = self.add_app()
+        model = self.model()
+        changes = [self.proof["path"], self.proof["snapshot"], "route.md",
+                   self.contract["route_input"]["snapshot"]]
+        for path in changes:
+            with self.subTest(path=path), patch.object(
+                    research_input_closure, "select",
+                    return_value={"changed": [path], "selected": [], "provenance_ok": True}):
+                report = gr.impact(model, "base", "head")
+            self.assertEqual([row["application"] for row in report["applications_to_review"]], [app["id"]])
+            row = report["applications_to_review"][0]
+            self.assertEqual(row["changed_paths"], [path])
+            if path == "route.md":
+                self.assertEqual(row["change_kinds"][path],
+                                 ["named parent consumer", "pinned route input"])
+            if path == self.contract["route_input"]["snapshot"]:
+                self.assertEqual(row["change_kinds"][path], ["pinned route input"])
+
+    def test_impact_marks_pinned_acceptance_decision_changes(self):
+        import research_input_closure
+        self.add_result()
+        app = self.add_app()
+        self.sign(app)
+        model = self.model()
+        path = "decisions.md"
+        with patch.object(research_input_closure, "select", return_value={
+                "changed": [path], "selected": [], "provenance_ok": True}):
+            report = gr.impact(model, "base", "head")
+        self.assertEqual([row["application"] for row in report["applications_to_review"]], [app["id"]])
+        self.assertEqual(report["applications_to_review"][0]["change_kinds"][path],
+                         ["pinned acceptance decision"])
+
     def test_generated_view_mutation_is_detected(self):
         self.assertEqual(self.cli("render")[0], 0)
         self.assertEqual(self.cli("render", "--check")[0], 0)
+        view = (self.directory / "VIEW.md").read_text()
+        self.assertIn("python3 tools/gr_assembly.py next", view)
+        self.assertNotIn("python tools/", view)
         (self.directory / "VIEW.md").write_text("Fabricated closure\n")
         self.assertEqual(self.cli("render", "--check")[0], 2)
+
+    def test_dispatch_context_uses_available_python3_command(self):
+        context = gr.context(self.model(), TASK)
+        self.assertIn("Check intake: python3 tools/gr_assembly.py template", context)
+        self.assertNotIn("Check intake: python tools/", context)
 
     def test_query_commands_leave_all_source_bytes_unchanged(self):
         self.save()

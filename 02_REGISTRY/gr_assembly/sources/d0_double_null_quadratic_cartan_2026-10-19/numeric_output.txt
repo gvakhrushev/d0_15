@@ -1,0 +1,51 @@
+PASS: exact crossing isolates h^3 Ricci overlap from h^4 rotation link defect
+{
+  "crossing": {
+    "h": 0.125,
+    "maxS": 0.00000762936603280194,
+    "uRot": 0.00006103465174192008,
+    "vRot": -0.00006103465174192008,
+    "halfMaxS": 4.768370456996e-7,
+    "halfURot": 0.0000038146928696932337,
+    "parallelMaxS": 0.0004887590193902724,
+    "parallelURot": 0
+  }
+}
+PASS: each one-sided affine pp geometry is an exact 16+24 finite root
+PASS: crossed continuum-LC trial is NOT finite stationary
+{
+  "h": 0.125,
+  "orthogonal": {
+    "maxS": 0.00007571279563836376,
+    "maxL": 0.000060784560897933195,
+    "uRot": 0.000059186956022658586,
+    "vRot": -0.000060784560897933195
+  },
+  "half": {
+    "maxS": 0.000009424458256870073,
+    "maxL": 0.000003798028294200204,
+    "uRot": 0.0000036996888785913417,
+    "vRot": -0.000003798028294200204
+  },
+  "parallel": {
+    "maxS": 0.0004887590193902724,
+    "maxL": 0.00006103515625,
+    "uRot": 0,
+    "vRot": 0
+  }
+}
+SCOPE: bounded original six-plaquette numeric first sources; NOT finite exact solution.
+PASS: explicit h/8 mixed Cartan repair reduces both link residuals by >100x at slope=0.1
+{
+  "amplitude": 0.1,
+  "perpendicular": {
+    "link_before": 6.103515564075979e-7,
+    "link_after": 1.913308893835254e-9,
+    "solder_after": 7.653234598508209e-9
+  },
+  "parallel": {
+    "link_before": 6.103515624994449e-7,
+    "link_after": 1.9173200515183167e-9,
+    "solder_after": 0.000004882908265744401
+  }
+}

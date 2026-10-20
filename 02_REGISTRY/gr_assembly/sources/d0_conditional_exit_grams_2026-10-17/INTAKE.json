@@ -1,0 +1,65 @@
+{
+  "schema": "d0-gr-assembly-source-intake/v1",
+  "source_pr": "https://github.com/gvakhrushev/d0_15/pull/363",
+  "source_status": {
+    "state": "OPEN",
+    "is_draft": true,
+    "head": "33911defe1607b94a895b455d3357ad2f3039e12",
+    "base_branch": "exp/a4d-joint-response-continuation-2026-10-16",
+    "base_ref_oid": "8050cefe2600972408a904c3004d85a0a7720c68",
+    "task_metadata": null,
+    "pr_contract_check": "FAIL: PR body must contain exactly one Repository: ... line"
+  },
+  "reconciliation": {
+    "current_parent_head": "0e1849bd7bf6a87e9731801206fd5ccd1041bb63",
+    "common_ancestor_with_current_parent": "ba055b63f01c43bf01118ef4d2f155e907dd912d",
+    "files_added_by_child": [
+      "02_REGISTRY/research/A4D_NATIVE_CONDITIONAL_GRAM_SERIAL_SOURCE_RATIO_2026_10_17.md",
+      "02_REGISTRY/research/A4D_NATIVE_ORTHOGONAL_EXIT_DOUBLE_CLOCK_EINSTEIN_SOURCE_2026_10_17.md",
+      "02_REGISTRY/research/sources/d0_native_conditional_gram_2026-10-17/check_serial_gram.py",
+      "02_REGISTRY/research/sources/d0_native_conditional_gram_2026-10-17/check_orthogonal_exit.py"
+    ],
+    "all_child_files_absent_at_current_parent": true
+  },
+  "local_replay": {
+    "mode": "normal Python execution; optimized mode not counted because these checkers use assert, which Python -O disables",
+    "runtime": "Python 3.9.6, NumPy 2.0.2, SciPy 1.13.1",
+    "checkers": [
+      {
+        "source_path": "02_REGISTRY/research/sources/d0_native_conditional_gram_2026-10-17/check_serial_gram.py",
+        "exit_code": 0,
+        "stdout": "PASS: noncommuting 16x16 complete source tangent check, max error 1.0358204224902856e-10\nPASS: comparator singular values in (0,1], interval 0.9439872051043273 0.969606467897114\nPASS: exact IR jet weights b=1,d=1: endpoints=3/4 each, bridge=-1/2; ratio=3/2\nPASS: exact static IR coefficient b=1,d=1/2: 2/3 target",
+        "warning_count": 30,
+        "warning_categories": [
+          "divide by zero encountered in matmul",
+          "invalid value encountered in matmul",
+          "overflow encountered in matmul"
+        ]
+      },
+      {
+        "source_path": "02_REGISTRY/research/sources/d0_native_conditional_gram_2026-10-17/check_orthogonal_exit.py",
+        "exit_code": 0,
+        "stdout": "PASS: complete-exit tagged 16x16 Gram and cross, singular values 0.428133963..0.461085474\nPASS: independent noncommuting first source max abs error 1.72e-10\nPASS: IR Einstein a2 weights (spatial0,spatial1,4D)=(1,1,-1)\nPASS: volume a0 total=3/2 (separate source, not hidden)",
+        "warning_count": 42,
+        "warning_categories": [
+          "divide by zero encountered in matmul",
+          "invalid value encountered in matmul",
+          "overflow encountered in matmul"
+        ]
+      }
+    ]
+  },
+  "scope_boundary": "The serial result rejects only the stated serial factorization under independent source jets. The orthogonal-exit result is conditional on the stated fixed-window C1 and macroscopic heat hypotheses. The positive checker uses a PSD square-root complement stand-in for the actual full exit rows; the owner document supplies the analytic all-exit derivation. Neither result proves literal fullStep synthesis/admission, compulsory Cost-Info selection, complete preparation/clock/work source, raw #216, Ward, or GR.",
+  "registry_disposition": "Index as result-only evidence. No application to positive_gr or other obligation; no scientific promotion.",
+  "snapshot_normalizations": [
+    {
+      "source_path": "02_REGISTRY/research/A4D_NATIVE_ORTHOGONAL_EXIT_DOUBLE_CLOCK_EINSTEIN_SOURCE_2026_10_17.md",
+      "source_sha256": "58abc6aadd9ec45703f194b91417e582d5a323b911623c2ff50380f506dd092b",
+      "snapshot_sha256": "74ac35440478b9a241797922c79c734b28986c64aa2835473fac02504fb820fa",
+      "lines": [
+        150
+      ],
+      "operation": "strip trailing spaces and tabs; preserve line endings"
+    }
+  ]
+}

@@ -1,0 +1,235 @@
+{
+  "schema": "d0-gr-assembly-source-snapshot/v1",
+  "source_commit": "0e1849bd7bf6a87e9731801206fd5ccd1041bb63",
+  "source_pr": "https://github.com/gvakhrushev/d0_15/pull/334",
+  "checker_command": "python3 02_REGISTRY/research/certificates/a4d_native_retained_record_admission_check.py --expect 02_REGISTRY/research/certificates/a4d_native_retained_record_admission_certificate.json",
+  "replayed_in_current_task": true,
+  "replay_result": "PASS 296 EXACT_RETAINED_RECORD_ADMISSION_CONTROLS",
+  "files": [
+    {
+      "source_path": "02_REGISTRY/research/A4D_NATIVE_RETAINED_RECORD_ADMISSION.md",
+      "snapshot_path": "02_REGISTRY/gr_assembly/sources/d0_retained_record_boundary_2026-10-09/owner.md",
+      "sha256": "05c50904b149fcffcc93d8d52ffa66da260654cf9bfc47b80354d59fef4fe336",
+      "bytes": 9984,
+      "pinned_sha256": null
+    },
+    {
+      "source_path": "02_REGISTRY/research/certificates/a4d_native_retained_record_admission.lean",
+      "snapshot_path": "02_REGISTRY/gr_assembly/sources/d0_retained_record_boundary_2026-10-09/retained_record_admission.lean",
+      "sha256": "60315f9b6069e4e10fabd9db5b230d241e6b13e53054d7c492fd722c95000123",
+      "bytes": 234551,
+      "pinned_sha256": null
+    },
+    {
+      "source_path": "02_REGISTRY/research/certificates/a4d_native_retained_record_admission_check.py",
+      "snapshot_path": "02_REGISTRY/gr_assembly/sources/d0_retained_record_boundary_2026-10-09/check_retained_record_admission.py",
+      "sha256": "0fedfee8a287a0bfa70b842b064ae49d56bc3456073c3957a4412202e5bd3f4a",
+      "bytes": 11489,
+      "pinned_sha256": null
+    },
+    {
+      "source_path": "02_REGISTRY/research/certificates/a4d_native_retained_record_admission_certificate.json",
+      "snapshot_path": "02_REGISTRY/gr_assembly/sources/d0_retained_record_boundary_2026-10-09/certificate.json",
+      "sha256": "0bfbb02423f28dbbf1baaf014729e9e313cbadbae976f36dbf4ca4b2ed830dd1",
+      "bytes": 26801,
+      "pinned_sha256": null
+    },
+    {
+      "source_path": "02_REGISTRY/research/certificates/a4d_native_retained_record_admission_results.json",
+      "snapshot_path": "02_REGISTRY/gr_assembly/sources/d0_retained_record_boundary_2026-10-09/results.json",
+      "sha256": "8aca3f581f68326310b6edf5539aa92d595457ce36a7a2fd9458198b5e9fa8c6",
+      "bytes": 10217,
+      "pinned_sha256": null
+    },
+    {
+      "source_path": "02_REGISTRY/research/certificates/a4d_native_retained_record_admission_output.txt",
+      "snapshot_path": "02_REGISTRY/gr_assembly/sources/d0_retained_record_boundary_2026-10-09/lean_output.txt",
+      "sha256": "ca6cc9098256c4abfe8869723ed44372e278e76d90e907c033c72a1122a0ca6c",
+      "bytes": 33279,
+      "pinned_sha256": null
+    },
+    {
+      "source_path": "03_FORMALIZATION/D0/Claims/Signature31Split.lean",
+      "snapshot_path": "02_REGISTRY/gr_assembly/sources/d0_retained_record_boundary_2026-10-09/pinned_inputs/03_FORMALIZATION/D0/Claims/Signature31Split.lean",
+      "sha256": "2963905269d09c3fd88a79e4a1e082558403b3b2433899e54e8c95b2c186990c",
+      "bytes": 6560,
+      "pinned_sha256": "2963905269d09c3fd88a79e4a1e082558403b3b2433899e54e8c95b2c186990c"
+    },
+    {
+      "source_path": "03_FORMALIZATION/D0/CondensedAnchor/DetectorSupportGoldenWeight.lean",
+      "snapshot_path": "02_REGISTRY/gr_assembly/sources/d0_retained_record_boundary_2026-10-09/pinned_inputs/03_FORMALIZATION/D0/CondensedAnchor/DetectorSupportGoldenWeight.lean",
+      "sha256": "643d0a1ec2c71e15bc3254211e3e24cf6b99fdf48f6ddd43a38848cd28c23307",
+      "bytes": 7046,
+      "pinned_sha256": "643d0a1ec2c71e15bc3254211e3e24cf6b99fdf48f6ddd43a38848cd28c23307"
+    },
+    {
+      "source_path": "03_FORMALIZATION/D0/Core/Phi.lean",
+      "snapshot_path": "02_REGISTRY/gr_assembly/sources/d0_retained_record_boundary_2026-10-09/pinned_inputs/03_FORMALIZATION/D0/Core/Phi.lean",
+      "sha256": "661871661e23ea971e5d50de5c63772db22ecbb5e461640b1f597bb3b6c5e38a",
+      "bytes": 1788,
+      "pinned_sha256": "661871661e23ea971e5d50de5c63772db22ecbb5e461640b1f597bb3b6c5e38a"
+    },
+    {
+      "source_path": "03_FORMALIZATION/D0/Dynamics/PisotContraction.lean",
+      "snapshot_path": "02_REGISTRY/gr_assembly/sources/d0_retained_record_boundary_2026-10-09/pinned_inputs/03_FORMALIZATION/D0/Dynamics/PisotContraction.lean",
+      "sha256": "53554051aca78f69378a76b4a2adbbf78d4404caeff76dba72a8a87522bdcea4",
+      "bytes": 2071,
+      "pinned_sha256": "53554051aca78f69378a76b4a2adbbf78d4404caeff76dba72a8a87522bdcea4"
+    },
+    {
+      "source_path": "03_FORMALIZATION/D0/Dynamics/ToralAutomorphism.lean",
+      "snapshot_path": "02_REGISTRY/gr_assembly/sources/d0_retained_record_boundary_2026-10-09/pinned_inputs/03_FORMALIZATION/D0/Dynamics/ToralAutomorphism.lean",
+      "sha256": "c54784e5be5c24c2472fd3df3dbe37e3f7317e57a722ea22534639af693190cf",
+      "bytes": 4160,
+      "pinned_sha256": "c54784e5be5c24c2472fd3df3dbe37e3f7317e57a722ea22534639af693190cf"
+    },
+    {
+      "source_path": "03_FORMALIZATION/D0/Geometry/SceneActiveEigenvalues.lean",
+      "snapshot_path": "02_REGISTRY/gr_assembly/sources/d0_retained_record_boundary_2026-10-09/pinned_inputs/03_FORMALIZATION/D0/Geometry/SceneActiveEigenvalues.lean",
+      "sha256": "45a1b372724855afdf165432f81c1741bf65ee153e1a51ba27903e89b58d8128",
+      "bytes": 2013,
+      "pinned_sha256": "45a1b372724855afdf165432f81c1741bf65ee153e1a51ba27903e89b58d8128"
+    },
+    {
+      "source_path": "03_FORMALIZATION/D0/Integration/V15/RawZone.lean",
+      "snapshot_path": "02_REGISTRY/gr_assembly/sources/d0_retained_record_boundary_2026-10-09/pinned_inputs/03_FORMALIZATION/D0/Integration/V15/RawZone.lean",
+      "sha256": "3b8f7c5b60432085131aa0d491a6a42853bc1788dc697a4757549b074e5a4b8f",
+      "bytes": 7965,
+      "pinned_sha256": "3b8f7c5b60432085131aa0d491a6a42853bc1788dc697a4757549b074e5a4b8f"
+    },
+    {
+      "source_path": "03_FORMALIZATION/D0/Representation/GoldenCoherentMemory.lean",
+      "snapshot_path": "02_REGISTRY/gr_assembly/sources/d0_retained_record_boundary_2026-10-09/pinned_inputs/03_FORMALIZATION/D0/Representation/GoldenCoherentMemory.lean",
+      "sha256": "6ea993e22c8b7d0b8a93b9537d51893cb4aff45af858d82ec7f9005ead96e2d7",
+      "bytes": 3966,
+      "pinned_sha256": "6ea993e22c8b7d0b8a93b9537d51893cb4aff45af858d82ec7f9005ead96e2d7"
+    },
+    {
+      "source_path": "03_FORMALIZATION/D0/Representation/GoldenOrderInterferometer.lean",
+      "snapshot_path": "02_REGISTRY/gr_assembly/sources/d0_retained_record_boundary_2026-10-09/pinned_inputs/03_FORMALIZATION/D0/Representation/GoldenOrderInterferometer.lean",
+      "sha256": "76c7082b4f600f7b178579b8a2a859d6f692c96ce5a769920fb3ff427532292c",
+      "bytes": 3623,
+      "pinned_sha256": "76c7082b4f600f7b178579b8a2a859d6f692c96ce5a769920fb3ff427532292c"
+    },
+    {
+      "source_path": "03_FORMALIZATION/D0/Representation/GoldenRelativeChannel.lean",
+      "snapshot_path": "02_REGISTRY/gr_assembly/sources/d0_retained_record_boundary_2026-10-09/pinned_inputs/03_FORMALIZATION/D0/Representation/GoldenRelativeChannel.lean",
+      "sha256": "5f18b847f156d890aefa45f35ab385dc60c930a23781500b2e38926c05c4c782",
+      "bytes": 2083,
+      "pinned_sha256": "5f18b847f156d890aefa45f35ab385dc60c930a23781500b2e38926c05c4c782"
+    },
+    {
+      "source_path": "03_FORMALIZATION/D0/Spectral/ZoneMatrixSpectrum.lean",
+      "snapshot_path": "02_REGISTRY/gr_assembly/sources/d0_retained_record_boundary_2026-10-09/pinned_inputs/03_FORMALIZATION/D0/Spectral/ZoneMatrixSpectrum.lean",
+      "sha256": "f0a78684a777749843e581ab90aeb8afe1932cffac07bee90c56eeeda5edcb75",
+      "bytes": 7772,
+      "pinned_sha256": "f0a78684a777749843e581ab90aeb8afe1932cffac07bee90c56eeeda5edcb75"
+    },
+    {
+      "source_path": "03_FORMALIZATION/D0/Synthesis/SceneNormalizedQuotientDescent.lean",
+      "snapshot_path": "02_REGISTRY/gr_assembly/sources/d0_retained_record_boundary_2026-10-09/pinned_inputs/03_FORMALIZATION/D0/Synthesis/SceneNormalizedQuotientDescent.lean",
+      "sha256": "46e110999c270db39532dfc937988934ba732a2cd40f7e20ebcb9c57948fb849",
+      "bytes": 13701,
+      "pinned_sha256": "46e110999c270db39532dfc937988934ba732a2cd40f7e20ebcb9c57948fb849"
+    },
+    {
+      "source_path": "03_FORMALIZATION/lake-manifest.json",
+      "snapshot_path": "02_REGISTRY/gr_assembly/sources/d0_retained_record_boundary_2026-10-09/pinned_inputs/03_FORMALIZATION/lake-manifest.json",
+      "sha256": "4ed211000f753c64c6b1fc155970f6b28c9500763f1ad520d8762ae165ac24fa",
+      "bytes": 3139,
+      "pinned_sha256": "4ed211000f753c64c6b1fc155970f6b28c9500763f1ad520d8762ae165ac24fa"
+    },
+    {
+      "source_path": "03_FORMALIZATION/lean-toolchain",
+      "snapshot_path": "02_REGISTRY/gr_assembly/sources/d0_retained_record_boundary_2026-10-09/pinned_inputs/03_FORMALIZATION/lean-toolchain",
+      "sha256": "54727eec5cba149c18842e6deb5c41b369d66455c93ce135d7d5347c782b2325",
+      "bytes": 25,
+      "pinned_sha256": "54727eec5cba149c18842e6deb5c41b369d66455c93ce135d7d5347c782b2325"
+    },
+    {
+      "source_path": "02_REGISTRY/research/certificates/a4d_native_golden_fixed_calibration.lean",
+      "snapshot_path": "02_REGISTRY/gr_assembly/sources/d0_retained_record_boundary_2026-10-09/pinned_inputs/02_REGISTRY/research/certificates/a4d_native_golden_fixed_calibration.lean",
+      "sha256": "696a06c93ef4cbdb6ad22056bf300928c61f12ebdcb3f7cd0b74ecd36abef604",
+      "bytes": 159865,
+      "pinned_sha256": "696a06c93ef4cbdb6ad22056bf300928c61f12ebdcb3f7cd0b74ecd36abef604"
+    },
+    {
+      "source_path": "02_REGISTRY/research/certificates/a4d_native_golden_fixed_calibration_output.txt",
+      "snapshot_path": "02_REGISTRY/gr_assembly/sources/d0_retained_record_boundary_2026-10-09/pinned_inputs/02_REGISTRY/research/certificates/a4d_native_golden_fixed_calibration_output.txt",
+      "sha256": "cfe2440251ef37c6d06eff33f3578ce6b693db2699903e32c6275d5a0dc2dc3f",
+      "bytes": 59900,
+      "pinned_sha256": "cfe2440251ef37c6d06eff33f3578ce6b693db2699903e32c6275d5a0dc2dc3f"
+    },
+    {
+      "source_path": "02_REGISTRY/research/certificates/a4d_native_golden_fixed_calibration_results.json",
+      "snapshot_path": "02_REGISTRY/gr_assembly/sources/d0_retained_record_boundary_2026-10-09/pinned_inputs/02_REGISTRY/research/certificates/a4d_native_golden_fixed_calibration_results.json",
+      "sha256": "2bb3c415e3d46d6a8fbe332ddd9b491a12eab91b5808d47389a0e0ce5d577277",
+      "bytes": 10374,
+      "pinned_sha256": "2bb3c415e3d46d6a8fbe332ddd9b491a12eab91b5808d47389a0e0ce5d577277"
+    },
+    {
+      "source_path": "02_REGISTRY/research/certificates/a4d_native_golden_history_preparation.lean",
+      "snapshot_path": "02_REGISTRY/gr_assembly/sources/d0_retained_record_boundary_2026-10-09/pinned_inputs/02_REGISTRY/research/certificates/a4d_native_golden_history_preparation.lean",
+      "sha256": "c9a07f7402eb7da9fa8eb4c795e7f3195c2d5050b7246cfc4c9e845567e30525",
+      "bytes": 109939,
+      "pinned_sha256": "c9a07f7402eb7da9fa8eb4c795e7f3195c2d5050b7246cfc4c9e845567e30525"
+    },
+    {
+      "source_path": "02_REGISTRY/research/certificates/a4d_native_golden_history_preparation_output.txt",
+      "snapshot_path": "02_REGISTRY/gr_assembly/sources/d0_retained_record_boundary_2026-10-09/pinned_inputs/02_REGISTRY/research/certificates/a4d_native_golden_history_preparation_output.txt",
+      "sha256": "2fee4c695c9421226728c5f9ba2d30c22d9f413f00a234ebea529b184aaa2fd9",
+      "bytes": 79245,
+      "pinned_sha256": "2fee4c695c9421226728c5f9ba2d30c22d9f413f00a234ebea529b184aaa2fd9"
+    },
+    {
+      "source_path": "02_REGISTRY/research/certificates/a4d_native_golden_history_preparation_results.json",
+      "snapshot_path": "02_REGISTRY/gr_assembly/sources/d0_retained_record_boundary_2026-10-09/pinned_inputs/02_REGISTRY/research/certificates/a4d_native_golden_history_preparation_results.json",
+      "sha256": "71e22640f12d44d8205b2b55b285f87e6db92426e26e7243cbc07022dc331716",
+      "bytes": 14445,
+      "pinned_sha256": "71e22640f12d44d8205b2b55b285f87e6db92426e26e7243cbc07022dc331716"
+    },
+    {
+      "source_path": "02_REGISTRY/research/certificates/a4d_native_golden_program_compilation.lean",
+      "snapshot_path": "02_REGISTRY/gr_assembly/sources/d0_retained_record_boundary_2026-10-09/pinned_inputs/02_REGISTRY/research/certificates/a4d_native_golden_program_compilation.lean",
+      "sha256": "a845d2eba29cdd5efc5b78afce4d276a7fcad0c1f560019d42ca32277322fe85",
+      "bytes": 201715,
+      "pinned_sha256": "a845d2eba29cdd5efc5b78afce4d276a7fcad0c1f560019d42ca32277322fe85"
+    },
+    {
+      "source_path": "02_REGISTRY/research/certificates/a4d_native_golden_program_compilation_output.txt",
+      "snapshot_path": "02_REGISTRY/gr_assembly/sources/d0_retained_record_boundary_2026-10-09/pinned_inputs/02_REGISTRY/research/certificates/a4d_native_golden_program_compilation_output.txt",
+      "sha256": "3b83c49870be080dd7c9a064d9d5591fd05ed59ee2b79af2379003e8724be273",
+      "bytes": 46681,
+      "pinned_sha256": "3b83c49870be080dd7c9a064d9d5591fd05ed59ee2b79af2379003e8724be273"
+    },
+    {
+      "source_path": "02_REGISTRY/research/certificates/a4d_native_golden_program_compilation_results.json",
+      "snapshot_path": "02_REGISTRY/gr_assembly/sources/d0_retained_record_boundary_2026-10-09/pinned_inputs/02_REGISTRY/research/certificates/a4d_native_golden_program_compilation_results.json",
+      "sha256": "799fa458563bed214b95ec4efe2e7c920e7030c4178884ef54846ad343014dce",
+      "bytes": 10941,
+      "pinned_sha256": "799fa458563bed214b95ec4efe2e7c920e7030c4178884ef54846ad343014dce"
+    },
+    {
+      "source_path": "02_REGISTRY/research/certificates/a4d_native_scene_history_feedback.lean",
+      "snapshot_path": "02_REGISTRY/gr_assembly/sources/d0_retained_record_boundary_2026-10-09/pinned_inputs/02_REGISTRY/research/certificates/a4d_native_scene_history_feedback.lean",
+      "sha256": "a721e8f66de248eb97830ccc0fed3f1bc7c61a2a2d4e8c6d4ce43e77b6d33cbb",
+      "bytes": 35860,
+      "pinned_sha256": "a721e8f66de248eb97830ccc0fed3f1bc7c61a2a2d4e8c6d4ce43e77b6d33cbb"
+    },
+    {
+      "source_path": "02_REGISTRY/research/certificates/a4d_native_scene_history_feedback_output.txt",
+      "snapshot_path": "02_REGISTRY/gr_assembly/sources/d0_retained_record_boundary_2026-10-09/pinned_inputs/02_REGISTRY/research/certificates/a4d_native_scene_history_feedback_output.txt",
+      "sha256": "5c665a786f631d56b2b7c759b2ec12fcb87309015cb9b1cdd40a8dd65139e68a",
+      "bytes": 31408,
+      "pinned_sha256": "5c665a786f631d56b2b7c759b2ec12fcb87309015cb9b1cdd40a8dd65139e68a"
+    },
+    {
+      "source_path": "02_REGISTRY/research/certificates/a4d_native_scene_history_feedback_results.json",
+      "snapshot_path": "02_REGISTRY/gr_assembly/sources/d0_retained_record_boundary_2026-10-09/pinned_inputs/02_REGISTRY/research/certificates/a4d_native_scene_history_feedback_results.json",
+      "sha256": "6b2d3c6c5fdfbd96850211a593c004e31570dd368f11499ecde19dc097eb49dd",
+      "bytes": 8090,
+      "pinned_sha256": "6b2d3c6c5fdfbd96850211a593c004e31570dd368f11499ecde19dc097eb49dd"
+    }
+  ],
+  "scope": "Exact obstruction for the generated one-way active-orthogonal plus controlled additive-record class only; it does not exhaust D0."
+}

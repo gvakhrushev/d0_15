@@ -1,0 +1,62 @@
+{
+  "checks": 1803,
+  "complete_two_round_shannon": {
+    "AB": {
+      "exact_grouped_expression_sha256": "e627412a33ccd2c864162907b11139fc17dd9fc7fadb13aaefd0bec68b92e1cb",
+      "formula": "-sum_{q>0}(q_ab*log(q)+q_a*q_b/q)/log(phi)",
+      "nonlog_term": "0",
+      "nonzero_log_groups": 25,
+      "positive_histories": 1764
+    },
+    "AB_minus_BA": {
+      "exact_grouped_expression_sha256": "f3d4a2a71ce49b5e9ed1acfbcedbfffdad913eaa246839930dcc3e4fc6cd9cb6",
+      "interval_24_digits": [
+        "0.000000080230437693961338",
+        "0.000000080230437693961339"
+      ],
+      "nonlog_term": "0",
+      "nonzero_log_groups": 12
+    },
+    "BA": {
+      "exact_grouped_expression_sha256": "b6be791b501e4cae56438689975c031dae639fe2ad7ba8153e3f001d968196b5",
+      "formula": "-sum_{q>0}(q_ab*log(q)+q_a*q_b/q)/log(phi)",
+      "nonlog_term": "0",
+      "nonzero_log_groups": 19,
+      "positive_histories": 1764
+    }
+  },
+  "history_support": {
+    "all_histories": 16384,
+    "positive_histories_per_order": 1764,
+    "zero_base_mechanism": "at least one one-round Kraus operator is exactly zero",
+    "zero_histories_per_order": 14620,
+    "zero_support_mixed_entropy_derivative": "0; each branch probability factors by its zero-round increment(s), so q log q has zero mixed derivative"
+  },
+  "input": {
+    "carrier": "original 16-component CAR and 128 outcomes per fresh round",
+    "commutator": "J23=[N2,Nbar3]",
+    "first_generator": "N2",
+    "fourier_mode": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "grid": "L=4, h=1/4",
+    "preparation": "I16/16",
+    "reference128": "fixed full-rank spectator; no reference-state variation",
+    "second_generator": "Nbar3"
+  },
+  "nonclaims": [
+    "the assigned two-round matrix instrument is not thereby a physically admitted D0 memory word",
+    "this Shannon derivative is not the compulsory full Book Cost-Info action",
+    "no controller, work, preparation, normalization, or native event-binding source is selected",
+    "no physical gravity coupling or GR closure is established"
+  ],
+  "pins": {
+    "02_REGISTRY/research/certificates/a4d_native_curved_soldered_heat.py": "bf13f57c902da0005634ae6834c0b4e3ffd2df1aa196a61ebc0ff3dc0351c7da",
+    "02_REGISTRY/research/sources/d0_native_full128_order_readout_2026-10-19/check_complete_shannon_order_source.py": "26424be5c2278828af81d331b8edc110dd8c4eefad4fc97e2c2e5fa813de178a",
+    "02_REGISTRY/research/sources/d0_native_full128_order_readout_2026-10-19/check_native_full128_order_readout.py": "176739372e85d8cbd2ba48f7cc28cfe508395ae84007d8462a3f502d596a87a2"
+  },
+  "status": "PASS_SCOPED_COMPLETE_TWO_ROUND_FULL128_SHANNON_ORDER_SOURCE"
+}

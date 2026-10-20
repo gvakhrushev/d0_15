@@ -1,0 +1,34 @@
+{
+  "schema": "d0-gr-assembly-source-snapshot/v1",
+  "source_commit": "33911defe1607b94a895b455d3357ad2f3039e12",
+  "source_pr": "https://github.com/gvakhrushev/d0_15/pull/363",
+  "files": [
+    {
+      "source_path": "02_REGISTRY/research/A4D_NATIVE_CONDITIONAL_GRAM_SERIAL_SOURCE_RATIO_2026_10_17.md",
+      "snapshot_path": "02_REGISTRY/gr_assembly/sources/d0_conditional_exit_grams_2026-10-17/serial_source_ratio.md",
+      "sha256": "4d71ce9b0ac60533d04d4d67d91b3ff43fc249fa8b354aa71c9f92dd052784c8",
+      "bytes": 11941
+    },
+    {
+      "source_path": "02_REGISTRY/research/A4D_NATIVE_ORTHOGONAL_EXIT_DOUBLE_CLOCK_EINSTEIN_SOURCE_2026_10_17.md",
+      "snapshot_path": "02_REGISTRY/gr_assembly/sources/d0_conditional_exit_grams_2026-10-17/orthogonal_exit_source.md",
+      "sha256": "74ac35440478b9a241797922c79c734b28986c64aa2835473fac02504fb820fa",
+      "bytes": 15037,
+      "source_sha256": "58abc6aadd9ec45703f194b91417e582d5a323b911623c2ff50380f506dd092b",
+      "normalization": "Removed trailing whitespace from source line 150 only; original source blob SHA-256 is source_sha256."
+    },
+    {
+      "source_path": "02_REGISTRY/research/sources/d0_native_conditional_gram_2026-10-17/check_serial_gram.py",
+      "snapshot_path": "02_REGISTRY/gr_assembly/sources/d0_conditional_exit_grams_2026-10-17/check_serial_gram.py",
+      "sha256": "cbf7e2fa30b4e5a95c7b0af75867c4e2f7b07b2c56ec275f4097429054f20cc4",
+      "bytes": 3666
+    },
+    {
+      "source_path": "02_REGISTRY/research/sources/d0_native_conditional_gram_2026-10-17/check_orthogonal_exit.py",
+      "snapshot_path": "02_REGISTRY/gr_assembly/sources/d0_conditional_exit_grams_2026-10-17/check_orthogonal_exit.py",
+      "sha256": "7ca0d9d725d9f84ab18b12c307bc7d325cfd5a335f7ee20b1270fd559b04bb3e",
+      "bytes": 3728
+    }
+  ],
+  "scope": "Two conditional 16-grade Gram/source results on an open Draft child fork of #334; no native physical admission or GR closure."
+}

@@ -16,24 +16,35 @@ Start by reading:
 
 1. `AGENTS.md`;
 2. `00_WORK/README.md`;
-3. `00_WORK/manifest.json`;
-4. the task brief named by the manifest.
+3. the [architectural objective](02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md#architectural-objective), [prospective-minimality focus](02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md#prospective-minimality-and-physical-execution) and closure roadmap in the current scientific route;
+4. `00_WORK/manifest.json`;
+5. the task brief named by the manifest.
 
 If the task is absent from `main`, check open GitHub PRs before creating
 anything. It may already be executing. Do not create a duplicate execution.
 
-Use `python tools/task_dispatch.py TASK-ID` for live resolution, including when
+Use `python3 tools/task_dispatch.py TASK-ID` for live resolution, including when
 the task is absent locally. An offline printout is unverified planning, not
 authorization to create a competing execution. Read only the task's inputs and
 the relevant current route; do not begin every session by auditing the corpus.
 
 ## Scientific priority and parallel execution
 
-The [current gravity route](02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md#current-route-to-general-relativity)
-is the working scientific entry point. One integrator owns its end-to-end
-argument, definitions, norms and source conventions. Delegate independent
-premises with a named consumer in that argument; integrate each result as it
-arrives. Do not wait for every research lane to finish before composing results.
+D0's primary object is the verification kernel: distinction, retained record
+and independent comparison without an obligatory external catalogue. The
+programme constructs theory interpretations over that kernel and proves their
+compatible transfer and composition within declared assumptions. General
+relativity is the first full specialization to complete. Its original native
+physical action/source, joint dynamics and refinement obligations remain.
+
+Read the [architectural objective](02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md#architectural-objective)
+before selecting work; the [current GR route](02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md#current-route-to-general-relativity)
+specifies that specialization. One integrator owns the complete argument,
+kernel and theory interfaces, definitions, norms and source conventions.
+Synthesize the existing argument before assigning new work. Delegate only a
+named missing parent premise or the explicit map needed to use an existing
+result; integrate each usable result as it arrives. Do not wait for every
+research lane to finish before composing results.
 
 At programme handoff, the integrator reads the full preserved strategy once;
 the [strategy, 18 leads and original guidance](02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md#strategic-context-and-preserved-inputs)
@@ -48,32 +59,55 @@ through CONTROL when it owns an independent research/proof obligation. Existing
 prerequisites and WIP limits still apply, including live PRs whose queue rows on
 main remain PLANNED. A free slot alone does not establish mathematical inputs.
 
-Each new or revised scientific brief records, in its existing text: exact
-statement and remaining assumptions; input refs; carrier/norm/source convention;
-write paths; the consuming parent step; the smallest decisive check. No new
-task-status registry is needed. The [gravity assembly](02_REGISTRY/gr_assembly/README.md)
+Each new or revised scientific brief records, in its existing text: its phase
+in the argument (verification kernel, interpretation and generic transfer,
+native realization or final composition); exact statement and remaining assumptions;
+input refs; carrier/norm/source convention; write paths; exact parent premise
+and intended substitution; the smallest decisive check. These phases describe
+the argument; use the existing brief without new forms, lifecycle states or
+status registries. The [gravity assembly](02_REGISTRY/gr_assembly/README.md)
 records the missing composition information: exact obligations, interface
 versions, applications and scoped prior attempts. For a named task, the normal
 dispatch command prints its interface and consumer; for route selection use
-`python tools/gr_assembly.py next`. Read only that result's relevant owners.
+`python3 tools/gr_assembly.py next`. Read only that result's relevant owners.
 A certificate is useful when it resolves that step;
 do not produce rank catalogues, audit memos or formalizations without a consumer.
+
+Naming a consumer does not establish a substitution. A supporting result names
+its intended parent premise and the remaining application or transport; it
+does not discharge that premise until the application is proved and accepted.
+Do not invent dependency edges to turn a useful result into a prerequisite.
+Reuse owned proofs. Before repeating a proof or census, identify the changed
+mathematical input that makes the existing result insufficient; verification
+replay remains governed by its explicit mode and the validation budget.
 
 When an interface does not type-check, the integrator resolves that mismatch
 before dispatching dependent work. A scoped no-go must change the parent route,
 not trigger an unbounded new census. Keep independent work moving.
 
 Every queued gravity execution has one `Assembly: TASK-ID` line and a semantic
-binding in `02_REGISTRY/gr_assembly/contract.json`. CONTROL records the exact
-statement, interface, work key, start prerequisites, retained assumptions,
-consumer and completion premises. Different task names do not authorize the
-same scientific work. Independent verification is an explicit mode. Logical
-dependencies constrain acceptance; only `start_requires` constrain an otherwise
-independent conditional lemma's start. Live WIP and existing executions still
-apply. Lifecycle start and Ready checks enforce these boundaries.
+binding in `02_REGISTRY/gr_assembly/contract.json`. Its brief also names one
+`Assembly-Slot: OBLIGATION-ID` and one `Assembly-Carrier: INTERFACE-ID`; the
+obligation is the primary slot and the interface points to its full
+carrier/action/source contract. The dispatcher rejects missing or mismatched
+slot/carrier labels before a new branch starts. A slot already accepted on the
+same carrier is not dispatched again. A different carrier requires a typed
+`distinct-from` edge in `carrier_distinctions` and its edge ID in the binding
+and brief; any transport still needs its own reviewed proof. CONTROL records
+the exact statement, interface, work key, start prerequisites, retained
+assumptions, consumer and completion premises. Different task names or
+carrier/interfaces do not authorize the same scientific work: the duplicate gate uses the
+scientific work key. A new key requires a genuinely different exact question and
+named consumer; a changed carrier alone does not establish that difference.
+Independent verification is an explicit mode. Logical dependencies constrain
+acceptance; only `start_requires` constrain an otherwise independent conditional
+lemma's start. Live WIP and existing executions still apply. Lifecycle start
+and Ready checks enforce these boundaries.
 
-At a result checkpoint, use `python tools/gr_assembly.py template TASK-ID` and
-record the precise parent substitution. An independent pinned acceptance binds
+At a result checkpoint, use `python3 tools/gr_assembly.py template TASK-ID` and
+record the phase, precise parent substitution and remaining assumptions. If the
+result is still supporting work, identify its missing application instead of
+reporting a removed premise. An independent pinned acceptance binds
 the result, target, all hypotheses, interface maps and proof method. A PASS,
 historical graph status, scoped no-go or copied pointer cannot close a positive
 existence premise. A scoped negative changes only its declared route; retained
@@ -81,9 +115,51 @@ physical assumptions remain open. Check `search`, `attempts` and `why` before
 repeating a construction; use `impact --base REF` for changed inputs. Claims,
 scientific evidence and the original raw terminal retain their existing scope.
 
+## Shared scientific focus at every handoff
+
+The programme starts from verification and its forced functional roles. Its
+current physical bridge is to derive the native continuation law and complete
+Cost-Info from the same admitted process, then consume existing theory results.
+GR is the first full specialization. This intent is durable in the
+[central programme and roadmap](02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md#prospective-minimality-and-physical-execution);
+do not ask the user to restate it or restart the foundation/geometry programme.
+
+- Reuse the owned kernel, future-memory, Bellman/no-detour, conditional-current
+  and geometric results at their exact hypotheses. When the parent argument
+  needs an owned result, its missing application calls for composition or
+  transport, not re-proving that result.
+- Treat prospective minimality as a physical derivation target. In the pinned
+  `ProspectiveExecution`, `optimal` is still an input premise. Derive the native
+  requirements and full objective/continuation law, including why nontrivial
+  continuation is required or favoured in the claimed regime;
+  repeating a consequence of `optimal` does not supply that premise.
+- Compare prospective alternatives at the same complete initial state and
+  task/constraints. Their future clocks may differ unless duration is fixed by
+  the task. A retained-history replacement must preserve its required readable
+  distinctions. The retrospective Q8 2/8 gap does not refute prospective choice.
+- Account for extra information: redundant encoding, generated history, or an
+  independently sourced distinction. Keep generator description, record length,
+  executed steps and full physical action separate until a theorem binds them.
+- Prefer a structural certificate, invariant, variational identity or proved
+  physical equivalence over another catalogue of paths. A lower-bound
+  certificate still needs a native proof that actual execution attains it.
+  A weighted law, its classical limit, stationarity and strict path minimization
+  retain their distinct conclusions.
+- Work on the exact missing parent substitution. State the owned input, the
+  missing hypothesis/map and the intended structural method in the existing
+  brief. Report the substituted premise, a scoped route change, or the remaining
+  application. PASS counts alone are not progress in the composed argument.
+
+This focus belongs to existing `constitutive`/`native_sector` and realization
+owners. It adds no task class, form, status or start prerequisite. Deriving an
+original native law does not authorize inserting a new selector into the
+unchanged raw-response problem. Independent conditional work keeps moving.
+
 ## Validation budget
 
 Follow the [change-based matrix](00_WORK/README.md#validation-budget).
+Synthesize the available proof first, check the unresolved step with the
+smallest decisive test, then replay the affected integration on final inputs.
 During iteration run the changed calculation, targeted tool test or narrow Lean
 module. Documentation/process edits do not call for a full mathematical replay.
 At Ready, run the affected integration gates once on the final inputs; broaden
@@ -140,7 +216,7 @@ Task: TASK-ID
 Read 00_WORK/tasks/TASK-ID.md on main and execute GitHub-first.
 ```
 
-Use `python tools/task_dispatch.py TASK-ID` to print the canonical launch text.
+Use `python3 tools/task_dispatch.py TASK-ID` to print the canonical launch text.
 
 ## 4. Triage before creating a task
 
@@ -237,8 +313,8 @@ Preferred order:
 Do not formalize each candidate separately when a generic parameterized theorem
 can classify the whole family.
 
-Use `python tools/lean_task_build.py narrow ...` while iterating and one final
-`python tools/lean_task_build.py final` only after narrow targets are green.
+Use `python3 tools/lean_task_build.py narrow ...` while iterating and one final
+`python3 tools/lean_task_build.py final` only after narrow targets are green.
 
 ## 7. Scientific status discipline
 
