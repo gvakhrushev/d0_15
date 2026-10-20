@@ -245,6 +245,41 @@ Its numerical rank 3 and rank 3 in each of these reductions do **not**, without 
 
 This is a genuine first-principles **exact FULL original finite metric-to-Lorentz interaction** certificate and fixes the previous numerical-rank ambiguity. It is also an **original dark-history contribution** certificate: replacing the full source by the bright-only probability Fisher block is invalid, even though that bright-only block also has rank ten in these reductions.
 
+
+### 6.2. SHARP HOMOGENEOUS-LINK NO-GO: this exact native Fisher/Hellinger mixed source is NOT the original plaquette Palatini mixed source on the SAME Jones chart
+
+The original Jones34 certificate fixes a single Fourier character on a **spatially homogeneous** scene: all four physical coframe entries \(F\) and all four proper SO(1,3) links \(U_r\) are constants in the lattice-site variable, and the 24 Lorentz columns are independent constant variations of the physical link matrices \(U_r=\exp(tX_r)\). This is precisely the same finite chart on which the genuine based-plaquette Palatini action \(\mathcal S_\star\) can be evaluated; no external mode or gauge choice is needed.
+
+For EVERY pair of original coordinate roles \(r,s\), its actual based plaquette on a homogeneous scene is
+\[
+P_{rs}(t)=U_r(t)U_s(t)U_r(t)^{-1}U_s(t)^{-1}
+=I+O(t^2).
+\]
+The first-order identity is completely exact at finite mesh, since
+\[
+\left.\partial_tP_{rs}\right|_{t=0}
+=X_r+X_s-X_r-X_s=0
+\]
+for any of the 24 original link basis generators. The genuine original Palatini curvature is the *odd* based-plaquette part \(\mathcal R(P)=(P-P^{-1})/2\), hence \(\mathcal R(P_{rs}(0))=0\) and \(\partial_t\mathcal R(P_{rs})|_0=0\). The coframe enters only in the original soldered area contractions multiplying this curvature. Therefore at the same homogeneous flat background and for EVERY ten original metric directions,
+\[
+\boxed{\ D_{g_i}D_{X_{r,\alpha}}\mathcal S_\star\big|_{(F=I,U_r=I)\text{ homogeneous}}=0,\qquad i=0,\dots,9,\ r=0,\dots,3,\ \alpha=0,\dots,5.\ }\tag{25}
+\]
+This is a zero **entire 10×24 mixed Palatini block**, before any continuum limit, gauge fixing or secondary stationary substitution. It does NOT claim the inhomogeneous/nonconstant-link Cartan response vanishes; indeed the existing original P25 and double-null certificates exhibit such nonzero mixed responses. The difference between **homogeneous and inhomogeneous link variations** is essential.
+
+But (22)–(23) prove that the full original four-corner Hellinger information score has a **nonzero rank-ten 10×24 metric-to-link mixed block on EXACTLY these homogeneous original Jones variables**:
+\[
+\boxed{
+D_gD_U\mathcal P_{\rm Hell}\ne0
+\quad\text{while}\quad
+D_gD_U\mathcal S_\star=0.
+}\tag{26}
+\]
+Consequently **NO nonzero scalar normalization** (Golden surprisal base, counting-volume multiplier, changed fixed task price) can make the *isolated* four-arm Hellinger score equal the original six-based-plaquette Palatini star action even to mixed first-response order at this original flat homogeneous reference. This is a **strict scoped negative terminal for the “full128 four-arm Hellinger = Palatini action” hypothesis** on the one finite carrier already used to propose it. Its nonzero cross-block is a finite data-coupling/memory interaction, NOT automatically geometric curvature/torsion.
+
+A physically selected COMPLETE Book03 action can contain additional other paid coframe–link terms whose homogeneous mixed source cancels the Hellinger cross matrix. Such a cancellation is mathematically possible but MUST be derived with native operator/clock/Info prices; it cannot be inferred from two-arm reference symmetry or fitted to the desired Palatini block after seeing (26). An inhomogeneous full first-jet experiment is also a DIFFERENT finite tested geometry and must be separately proved. Therefore the previously contemplated next job “compute the full 10×24 and hope it is proportional to Palatini” is ALREADY answered NEGATIVELY on the common homogeneous Jones chart; do not start another Bloch census or try to tune a scalar.
+
+The one-line coframe-independent group commutator proof is independently replayed by \`check_homogeneous_plaquette_mixed_zero.py\` and, paired with the exact native full128 number-field rank certificate above, supplies the stated complete **homogeneous mismatch proof**. \`GR_closed=false\`.
+
 **Still NOT proved:** equality (including its individual 240 entries, signs, normalizations, gauge/observer Ward and full Cost−Info source) of (23) to the finite original Palatini cross source. A rank-ten interaction is necessary for some reconstructions but far from sufficient to identify the Einstein action. Neither the four physical comparison-arm preparation/work/Info costs nor G0 compulsory task selection follows from a finite-rank determinant. The exact support/Hellinger source theorem can be used by other D0 agents; \`GR_closed=false\`.
 
 
