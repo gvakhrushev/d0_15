@@ -110,6 +110,38 @@ const xi=Array.from({length:N},(_,u)=>u*u/137),cob=K.map((row,u)=>row.map((x,v)=
 assert(Math.abs(ssum(old.C,common))<1e-12,"original uniform Cost/Info scalar null source");
 assert(Math.abs(ssum(old.C,cob))<1e-12,"original endpoint Cost/Info gradient null source");
 
+
+// ORIGINAL 2/3/4 stage archive: second independent, 4-vs-3 projective
+// moment-ratio SOURCE on the SAME 718 complete original Book edges.
+function fourth(A){
+ const b=native(A),A2=mm(A,A),A3=mm(A2,A),A4=mm(A3,A);
+ const P3=mm(mm(b.P,b.P),b.P),P4=mm(P3,b.P);
+ let z4=0,t4=0;for(let u=0;u<N;u++){z4+=A4[u][u];t4+=P4[u][u];}
+ const f4=A.map((row,u)=>row.map((v,j)=>v*A3[j][u]/z4));
+ const J43=A.map((row,u)=>row.map((_,v)=>b.mu[u][v]+3*b.f3[u][v]-4*f4[u][v]));
+ const beta3=p*p,beta4=p**3;
+ const stage43=Math.log(beta4*z4/(beta3*b.Z3))/lnphi;
+ const actual43=b.B+stage43;
+ const projective43=Math.log(beta4*t4/(beta3*b.T3))/lnphi;
+ assert(Math.abs(actual43-projective43)<3e-12,
+  "original 4/3 stage clock and absolute pressure reduce to Doob-only stage SHAPE");
+ assert(Math.abs(z4/b.lambda**4-t4)<3e-12,
+  "original 4-tick full trace matches lambda^4 normalized Doob trace");
+ assert(Math.abs(ssum(J43,common))<3e-12&&Math.abs(ssum(J43,cob))<3e-12,
+  "all 718 native 4/3 pressure-compensated current has zero total and endpoint gauge");
+ assert(Math.max(...Array.from({length:N},(_,u)=>Math.abs(
+   J43[u].reduce((s,x)=>s+x,0)-J43.reduce((s,row)=>s+row[u],0))))<3e-12,
+  "4/3 native edge source is a divergence-free balanced current");
+ return {J43,actual43,projective43,z4,t4};
+}
+const F4=fourth(K),fourthPlus=fourth(pert(dt)),fourthMinus=fourth(pert(-dt));
+const secondSource=ssum(F4.J43,perturb),secondFD=(fourthPlus.actual43-fourthMinus.actual43)/(2*dt);
+assert(Math.abs(secondSource-secondFD)<9e-9,
+ "original exact 4/3 clock SOURCE agrees with full scalar Book finite differences");
+const cross=ssum(old.C,F4.J43),norm43=ssum(F4.J43,F4.J43);
+const gramDet=ssum(old.C,old.C)*norm43-cross**2;
+assert(gramDet>1e-12,
+ "two ORIGINAL clock-shape source rows 3/2 and 4/3 are LINEARLY INDEPENDENT");
 const currentNorm=ssum(old.C,old.C);
 const odd=K.map((row,u)=>row.map((_,v)=>(old.C[u][v]-old.C[v][u])/2));
 const even=K.map((row,u)=>row.map((_,v)=>(old.C[u][v]+old.C[v][u])/2));
@@ -152,6 +184,9 @@ console.log(JSON.stringify({
   maxDoobDeviation:Pmax,maxMuDeviation:muMax,maxShapeCurrentDeviation:Cmax,
   scalarShapeShift:now.shape-old.shape,
   BookWeylRatio:now.W/old.W},
+ twoClockSource:{stage34: F4.actual43,DoobOnly34:F4.projective43,stage4Z:F4.z4,
+   stage4P:F4.t4,norm43,crossWith32:cross,positiveGramDet:gramDet,
+   exactCostSource43:secondSource,finiteCostSource43:secondFD},
  shapeFirstSource:{norm2:currentNorm,
   balancedMass:ssum(old.C,common),endpointGauge: ssum(old.C,cob),
   exactCostVariation:exactSource,finiteDifference:numSource,
