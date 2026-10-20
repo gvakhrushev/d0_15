@@ -126,8 +126,8 @@ assert(oddDiv<1e-12&&Math.abs(oddMass)<1e-12,
  "original chiral component is a true 327-dimensional CIRCULATION");
 // REAL irreversibility control: a directed ABC 3-cycle affinity is nonzero
 // and equals the full original scalar net forward-vs-reverse path cost.
-const abc=[[0,9],[9,20],[20,0]];
-const xyz=[[0,20],[20,9],[9,0]];
+const abc=[[1,15],[15,32],[32,1]];
+const xyz=[[1,32],[32,15],[15,1]];
 const forward=abc.reduce((q,[u,v])=>q*K[u][v],1);
 const backward=xyz.reduce((q,[u,v])=>q*K[u][v],1);
 const cycleOdds=forward/backward;
