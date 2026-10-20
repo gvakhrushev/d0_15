@@ -67,9 +67,9 @@ function contract(F,u,v,R){
  }
  return sum;
 }
-function solve(theta){
+function solve(theta,linkRole=0){
  const links=Array.from({length:16},()=>Array.from({length:4},I));
- links[0][0]=expJ(theta);
+ links[0][linkRole]=expJ(theta);
  const frames=Array.from({length:16},I);
  const shift=(x,r)=>x^(1<<r);
  let touched=0,fullH=0,goldH=0,maxObserved=0,nonzeroStar=0;
@@ -100,7 +100,7 @@ function solve(theta){
   const h=entropy(actualGolden17(P));
   goldH+=h;fullH+=h-base;
  }
- fail(Math.max(...sites.map(Math.abs))<2e-12&&nonzeroStar===0,
+ if(linkRole===0)fail(Math.max(...sites.map(Math.abs))<2e-12&&nonzeroStar===0,
   "all SIX based original 4D Role densities remain EXACT ZERO on shared-link J23 orbit");
  fail(maxObserved<3e-12,"original Golden positive data preserve odd tensors, all moving Book weights cancel");
  return {theta,all16OriginalStar:sites,originalStarMax:Math.max(...sites.map(Math.abs)),
@@ -143,6 +143,26 @@ fail(Math.abs(KLsmall-KLexpected)<3e-11,
  "original full17 KL has exact positive Fisher quadratic while all star-density records are CONSTANT");
 // Important: this q is conditional on a fully retained original face/path
 // and includes the Bell fail category, not an illegitimate postselection.
+
+// Complementary ORIGINAL genuinely shared Role-link control: move the SAME
+// J23 Lorentz group element to TRUE link Role direction2 instead of0.
+// This now excites actual (2,3) Palatini faces. Original local star f_x
+// is ORIENTATION-ODD (sin t), but complete Golden17 Shannon is EVEN (t).
+// So whole pointer entropy misses the true signed FIRST gravitational
+// density jet while also carrying spurious VERTICAL Hessian in dir0.
+const alignedPlus=solve(.08,2),alignedMinus=solve(-.08,2),
+      alignedZero=solve(0,2);
+const gFirst=alignedPlus.all16OriginalStar.map((x,i)=>
+  (x-alignedMinus.all16OriginalStar[i])/(2*.08));
+const gNorm=Math.hypot(...gFirst);
+fail(gNorm>.7,"same original Lorentz generator excites NONZERO genuine Hodge-paired star jet when placed on role2 link");
+fail(Math.max(...alignedPlus.all16OriginalStar.map((x,i)=>
+ Math.abs(x+alignedMinus.all16OriginalStar[i])))<1e-12,
+ "original finite coframe/Hodge star density is ODD under opposite oriented J23 rotation");
+fail(Math.abs(alignedPlus.completePointerShannon96-alignedMinus.completePointerShannon96)<5e-14,
+ "complete native Golden17 pointer Shannon is EVEN on the genuinely curvature-active Role2 source");
+fail(Math.abs(alignedPlus.completePointerShannonChange)<1e-14?false:true,
+ "genuine signed source is not a trivial constant pointer readout");
 const hOne2=-(herald*p**4/ell)*((5/12)*Math.log(12)+1/6);
 const hAll2=6*hOne2;
 const h=0.002;
@@ -175,6 +195,9 @@ console.log(JSON.stringify({
  KLsmallCoefficientActual:KLsmall,KLsmallCoefficientExpected:KLexpected,
  independentFiniteDifferenceHessian:numerical2,
  actualVerticalFirstSourceAtTheta015:first,
+ secondOriginalRoleLinkControl:{roleDirection:2,
+   fullStarJetNorm:gNorm,nonzeroPalatiniSiteDensities:alignedPlus.all16OriginalStar.filter(x=>Math.abs(x)>1e-12),
+   ShannonEvenDifference:alignedPlus.completePointerShannon96-alignedMinus.completePointerShannon96},
  phiMinusOne:p,
  scope:"mathematical full positive Golden17 POINTER SHANNON countermodel on genuine role-shared 4D link; not compulsory physical Book03 action",
  GR_closed:false
