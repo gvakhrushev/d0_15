@@ -181,13 +181,22 @@ assert(rankOriginal===30&&rankReduced===30&&
   kernel.length===18&&kerErr<1e-9,"true graviton/gauge kernel altered");
 // Gauge-independent failure of exact descent off shell at identical
 // t(q) due to genuine shape-dependent O(t^2) primitive native Book COST.
-let links=Array.from({length:N},(_,i)=>.18*Math.sin(2*Math.PI*i/N));
+let links=Array.from({length:N},(_,i)=>.08*Math.sin(2*Math.PI*i/N));
 const e=flatE(),f=siteDensities(e,links);
 const eDifferent=e.map(v=>v.slice());
 eDifferent[0][0]*=1.6;eDifferent[0][1]/=1.6;
 const fDifferent=siteDensities(eDifferent,links);
 let verticalErr=Math.max(...f.map((v,i)=>Math.abs(v-fDifferent[i])));
-const verticalCost=book(.13,f,eDifferent)-book(.13,f,e);
+const verticalCost=book(.02,f,eDifferent)-book(.02,f,e);
+const minActualCost=K=>Math.min(...K.flat().filter(x=>x>0)
+                                 .map(x=>-Math.log(x)/logphi));
+const minC=Math.min(
+ minActualCost(nativeK(.02,f,e)),
+ minActualCost(nativeK(.02,f,eDifferent)),
+ minActualCost(nativeK(step,zeros(),flatE())),
+ minActualCost(nativeK(-step,zeros(),flatE())));
+assert(minC>1.0,"original exact primitive action quantum violated in offshell fixture");
+
 assert(verticalErr<1e-13&&Math.abs(verticalCost)>1e-8,
  "hostile: action unexpectedly descends exactly to the t_i");
 // Independent genuine allowed cost-completion with a first-source
@@ -208,6 +217,7 @@ console.log("PASS complete source iff VERTICAL Hessian test on all 33 density-ke
 console.log("PASS exact 48x48 Hessian conjugacy max discrepancy",maxErr);
 console.log("PASS full geometric Hessian rank 30 BEFORE and AFTER original Book history reduction",rankOriginal,rankReduced);
 console.log("PASS all 18 exact common kernel modes are protected",kerErr);
+console.log("PASS minimum actual primitive ActionProtocol cost across OFFSHELL fixture",minC);
 console.log("PASS real complete Book action NOT F(t) offshell; same t and different retained shape price",verticalCost);
 console.log("PASS hostile permitted Cost>=1 has NONZERO vertical first source at root",hostile);
 console.log("FIREWALL: actual G0/Book full H+J+R normal form, true full640 Role and sourced CAR, Spin, clock/work & physical GR remain OPEN");
