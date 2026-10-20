@@ -255,3 +255,47 @@ admitted material-dependent oracle or programme. It also does not
 identify a copy cap with expected Cost. The positive native material
 query, its preparation and clock, compulsory task/Book03 price and
 complete upstream sources remain open.
+
+## 9. Absolute Book mean: the same record preserves the source conditionally
+
+The [absolute Book mean application](GOLDEN_DETECTOR_BOOK_MEAN_SOURCE.md)
+computes the complete entropy of one local existing capped Golden programme,
+including the preparation bank, internal retries, gate aborts and horizon:
+
+```text
+H_full=H_pre+alpha[H_T+beta h_phi(q)]E_N(beta q).
+```
+
+The owned absolute-amplitude and scalar-probability bindings give
+`S_mean=theta H_full-J`, respectively with theta=1/2 and theta=1,
+IF the physical aggregate is the expected per-history Book action.
+Here J is the actual common amplitude term or log_phi N_raw. These
+bindings are not inferred from the detector's normalized probabilities.
+Their exact first-source application at the original null family is
+
+```text
+D S_mean,total=theta alpha c_H DJ2
+                         +D(theta H_pre,total-J_total),
+c_H=d_0 beta[h'_phi(q_0)E_N(beta q_0)
+               +(H_T+beta h_phi(q_0))E'_N(beta q_0)]>0.
+```
+
+With the owned preparation/stage readiness bounds, the amplitude-binding
+multiplier exceeds 3 and the scalar-binding multiplier exceeds 6 for
+every N>=1. Thus zero total residual preserves all original 16+24+2
+Euler equations and their finite-z ratio without requiring literal
+equality of Book price with the specified `E Cost-H_phi(record)` price.
+The actual common marker/preparation derivative and any other priced
+source must still be derived. Independent preparation equations are
+not removed by a field-section identity.
+The total entropy sums the independent local programmes with their
+original integer multiplicities; J_total belongs to that complete
+product history and is not assumed to factor across blocks.
+
+The [review receipt](GOLDEN_DETECTOR_BOOK_MEAN_SOURCE_REVIEW.md) pins
+this conditional application. It does not select either binding or
+mean aggregation. For an extra marker on already executed Kraus
+amplitudes, or for the amplitude log-normalizer aggregate, the source
+is instead `-D J`; the positive entropy multiplier does not apply.
+Native material access, physical gain/common normalization and the
+compulsory complete programme remain the open application boundary.
