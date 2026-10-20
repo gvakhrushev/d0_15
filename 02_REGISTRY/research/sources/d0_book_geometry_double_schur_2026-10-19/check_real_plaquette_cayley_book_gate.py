@@ -66,7 +66,7 @@ def exterior(M):
         M.extract(blades[i],blades[j]).det() if blades[i] else 1)
 for U in (P,P.inv(),ROT,ROT.inv()):
     z=np.array(exterior(U),dtype=float)*float(p)
-    assert 1-np.linalg.eigvalsh(z.T@z).max()>0.02
+    assert 1-np.linalg.svd(z,compute_uv=False)[0]**2>0.02
 print("PASS original real plaquette: inversion-even scalar marked mass, nonmultiplicative Book path weight")
 print("PASS all six native SO(1,3) odd marked gradients reconstruct full EXACT Cayley and old finite curvature")
 print("PASS O(h^6) per-cell star/Cayley discrepancy for smooth P=I+O(h^2)")
