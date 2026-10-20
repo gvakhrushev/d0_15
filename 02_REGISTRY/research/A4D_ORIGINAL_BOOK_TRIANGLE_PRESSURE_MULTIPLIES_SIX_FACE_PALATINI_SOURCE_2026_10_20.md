@@ -204,3 +204,22 @@ when \(d_{AB}\) denotes the shared forward/reverse price change on that pair, an
 This equal-three-pair result is NOT the Lorentzian spacetime metric, nor the earlier 3+1 four-coordinate proof. It is an exact ORIGINAL Book clock-source sharing law, showing a natural common normalization for the six rooted Role face observations at the symmetric source reference. A physical Einstein coefficient still requires native selected H+J+R/oldRIGHT/Cost–Info/clock and signed noncommutative memory to match (15) on the actual field tangent domain.
 
 **Bounded native replay** of (12)–(18) extends the sibling all718/1287-triple checker, including independent first/second Cost finite differences and exact Fraction 9/11/13 zone-pair masses. The full formal identities follow from the finite matrix trace, not numerical inference.
+
+
+## 6. Important GOLDEN LEFT locality firewall: if scalar Book weights are SITE-CONDITIONED, do NOT factor ONE global W
+
+Equations (5)–(7), (15) use a **single original scalar K common across the six-faced Role sites** (or an explicit physically proved equality of their third-tick pressure values). This is the correct mathematical domain for the stated global factor \(W_{\rm Book}F_\star\). The original geometric six-face embedding itself permits a DIFFERENT conditional scene connection at every Golden LEFT 4D address x. The actual paid original scalar Book Cost/Info could likewise depend on that address. If it does, the accurate original no-fitted-coefficient theorem is **LOCAL**:
+
+For each original Role site x and its actual supplied scene transfer \(K_x\) let \(W_x=\operatorname{Tr}K_x^3/7722\), and write the exact original local six-based coframe/curvature star density \(f_{\star,x}(e,U)\) with site weight \(w_x\). Then the same independent Aut orbit proof yields
+\[
+\boxed{
+\overline F_{\star,w}
+=\sum_xw_x W_x f_{\star,x}(e,U),
+\qquad
+D\overline F_{\star,w}
+=\sum_x D[w_xW_xf_{\star,x}].
+}\tag{19}
+\]
+For fixed original site volume weights w_x, the new mixed scalar/geometry term is \(\sum_xw_xf_{\star,x}D W_x\), with each native \(D\ln W_x=-3\ln\varphi\sum_e f_{e,x}^{[3]}Ds_{e,x}\). If Golden site weights themselves vary, their honest derivatives \(Dw_x\) must also be retained. One global pressure factor and the compact residual (11) are permissible ONLY with an actually common K/W; imposing a common K by hand when native source costs vary with site would repeat the original "averaging removes physical source" error already identified on nonconstant cofames.
+
+This fixes the theorem's literal scope without weakening the true result: the source identity is valid **site by site with all six plaquettes and all original 718 edges**, and a global action source follows by exactly the same native site-volume sum, with no new adjustable coefficient. Full physical G0 selection, actual site Cost/Info work and signed Einstein/CAR equality remain OPEN.
