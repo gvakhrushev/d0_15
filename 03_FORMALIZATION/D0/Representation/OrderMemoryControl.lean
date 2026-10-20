@@ -920,4 +920,57 @@ theorem nativeQ8FourStepCircleClockIsNotIdle
   norm_num
 
 
+
+/-! ## Ex-ante MDL CORRECTION: even the 8-step matched-inventory assay is NOT shortest
+
+The existing 8-step words are mathematically correct source records,
+but a THREE-step matched-inventory pair already distinguishes the
+chronological central Q8 sign with the SAME original gates:
+chronological I,J,I returns the global common J (the two-arm
+interference cancels), while J,I,I returns relativeSignQ*commonJQ.
+Both use two local-i and one common-j; their original Golden
+bright responses differ by 4p^3 in the existing comparator.
+No new gate symbol or externally tuned angle is introduced.
+
+This is a proof that the source-test optimization MUST happen BEFORE
+execution if D_min is intended as a PHYSICAL GENERATION LAW, not a
+retrospective text compressor. It is NOT a proof native G0 actually
+selects the shortest test, or that the three-gate assay preserves the
+same full Book clock/provenance as the 8-gate original history.
+-/
+
+/-- The shorter ACTUAL chronological Q8 control WORDS, using only
+the original localIQ and commonJQ primitives. -/
+def nativeQ8MinimalReferenceWord : List Bool := [true,false,true]
+def nativeQ8MinimalOrderWord : List Bool := [false,true,true]
+
+theorem nativeQ8ThreeWordSamePrimitiveInventory :
+    nativeQ8MinimalReferenceWord.length = 3 ∧
+    nativeQ8MinimalOrderWord.length = 3 ∧
+    nativeQ8MinimalReferenceWord.count true = 2 ∧
+    nativeQ8MinimalOrderWord.count true = 2 ∧
+    nativeQ8MinimalReferenceWord.count false = 1 ∧
+    nativeQ8MinimalOrderWord.count false = 1 := by
+  decide
+
+/-- Native chronological I,J,I equals the old global common-j gate:
+no relative sign is present at the Golden comparison. -/
+theorem nativeQ8ThreeGateIJIEqualsCommonJ :
+    nativeQ8ChronologicalWord nativeQ8MinimalReferenceWord =
+      commonJQ := by
+  native_decide
+
+/-- Native chronological J,I,I differs solely by the ALREADY
+OWNED Q8 relativeSignQ central element. -/
+theorem nativeQ8ThreeGateJIIEqualsRelativeCommonJ :
+    nativeQ8ChronologicalWord nativeQ8MinimalOrderWord =
+      relativeSignQ * commonJQ := by
+  native_decide
+
+theorem nativeQ8ThreeGateDistinctSourceOperators :
+    nativeQ8ChronologicalWord nativeQ8MinimalReferenceWord ≠
+      nativeQ8ChronologicalWord nativeQ8MinimalOrderWord := by
+  native_decide
+
+
 end D0.Representation.OrderMemoryControl
