@@ -1,0 +1,1179 @@
+D0.Research.NativeSceneHistoryFeedback.sum_over_actual_edges.{u_1} {v : Type u_1} [Fintype v] [DecidableEq v]
+  (r : v → v → Prop) [DecidableRel r] (f : v × v → ℚ) : ∑ e, f ↑e = ∑ a, ∑ b, if r a b then f (a, b) else 0
+'D0.Research.NativeSceneHistoryFeedback.sum_over_actual_edges' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.endpoint_lift_gram.{u_1} {v : Type u_1} [Fintype v] [DecidableEq v]
+  (r : v → v → Prop) [DecidableRel r] :
+  (D0.Research.NativeSceneHistoryFeedback.endpointLift r).transpose *
+      D0.Research.NativeSceneHistoryFeedback.endpointLift r =
+    Matrix.diagonal (D0.Research.NativeSceneHistoryFeedback.edgeDegree r)
+'D0.Research.NativeSceneHistoryFeedback.endpoint_lift_gram' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.endpoint_average_is_weighted_adjoint.{u_1} {v : Type u_1} [Fintype v]
+  [DecidableEq v] (r : v → v → Prop) [DecidableRel r] :
+  D0.Research.NativeSceneHistoryFeedback.endpointAverage r =
+    (Matrix.diagonal fun b => (D0.Research.NativeSceneHistoryFeedback.edgeDegree r b)⁻¹) *
+      (D0.Research.NativeSceneHistoryFeedback.endpointLift r).transpose
+'D0.Research.NativeSceneHistoryFeedback.endpoint_average_is_weighted_adjoint' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.endpoint_average_exact_left_inverse.{u_1} {v : Type u_1} [Fintype v]
+  [DecidableEq v] (r : v → v → Prop) [DecidableRel r]
+  (hn : ∀ (b : v), D0.Research.NativeSceneHistoryFeedback.edgeDegree r b ≠ 0) :
+  D0.Research.NativeSceneHistoryFeedback.endpointAverage r * D0.Research.NativeSceneHistoryFeedback.endpointLift r = 1
+'D0.Research.NativeSceneHistoryFeedback.endpoint_average_exact_left_inverse' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.endpoint_reynolds_is_selfadjoint.{u_1} {v : Type u_1} [Fintype v] [DecidableEq v]
+  (r : v → v → Prop) [DecidableRel r] :
+  (D0.Research.NativeSceneHistoryFeedback.endpointLift r *
+        D0.Research.NativeSceneHistoryFeedback.endpointAverage r).transpose =
+    D0.Research.NativeSceneHistoryFeedback.endpointLift r * D0.Research.NativeSceneHistoryFeedback.endpointAverage r
+'D0.Research.NativeSceneHistoryFeedback.endpoint_reynolds_is_selfadjoint' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.endpoint_source_average.{u_1} {v : Type u_1} [Fintype v] [DecidableEq v]
+  (r : v → v → Prop) [DecidableRel r] (hs : ∀ (a b : v), r a b ↔ r b a) :
+  D0.Research.NativeSceneHistoryFeedback.endpointAverage r * D0.Research.NativeSceneHistoryFeedback.sourceLift r =
+    D0.Research.NativeSceneHistoryFeedback.graphTransport r
+'D0.Research.NativeSceneHistoryFeedback.endpoint_source_average' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.history_reverse_is_involution.{u_1} {v : Type u_1} [Fintype v] [DecidableEq v]
+  (r : v → v → Prop) [DecidableRel r] (hs : ∀ (a b : v), r a b ↔ r b a) :
+  D0.Research.NativeSceneHistoryFeedback.reverseOperator r hs *
+      D0.Research.NativeSceneHistoryFeedback.reverseOperator r hs =
+    1
+'D0.Research.NativeSceneHistoryFeedback.history_reverse_is_involution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.history_reverse_is_selfadjoint.{u_1} {v : Type u_1} [Fintype v] [DecidableEq v]
+  (r : v → v → Prop) [DecidableRel r] (hs : ∀ (a b : v), r a b ↔ r b a) :
+  (D0.Research.NativeSceneHistoryFeedback.reverseOperator r hs).transpose =
+    D0.Research.NativeSceneHistoryFeedback.reverseOperator r hs
+'D0.Research.NativeSceneHistoryFeedback.history_reverse_is_selfadjoint' depends on axioms: [propext, Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.history_reverse_is_orthogonal.{u_1} {v : Type u_1} [Fintype v] [DecidableEq v]
+  (r : v → v → Prop) [DecidableRel r] (hs : ∀ (a b : v), r a b ↔ r b a) :
+  (D0.Research.NativeSceneHistoryFeedback.reverseOperator r hs).transpose *
+      D0.Research.NativeSceneHistoryFeedback.reverseOperator r hs =
+    1
+'D0.Research.NativeSceneHistoryFeedback.history_reverse_is_orthogonal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.history_reverse_recovers_source.{u_1} {v : Type u_1} [Fintype v] [DecidableEq v]
+  (r : v → v → Prop) [DecidableRel r] (hs : ∀ (a b : v), r a b ↔ r b a) :
+  D0.Research.NativeSceneHistoryFeedback.reverseOperator r hs * D0.Research.NativeSceneHistoryFeedback.endpointLift r =
+    D0.Research.NativeSceneHistoryFeedback.sourceLift r
+'D0.Research.NativeSceneHistoryFeedback.history_reverse_recovers_source' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.complete_history_relabel_reverse_naturality.{u_1} {v : Type u_1} [Fintype v]
+  [DecidableEq v] (r : v → v → Prop) [DecidableRel r] (hs : ∀ (a b : v), r a b ↔ r b a) (σ : Equiv.Perm v)
+  (hp : ∀ (a b : v), r (σ a) (σ b) ↔ r a b) (e : D0.Research.NativeSceneHistoryFeedback.Edge r) :
+  (D0.Research.NativeSceneHistoryFeedback.reverseEquiv r hs)
+      ((D0.Research.NativeSceneHistoryFeedback.historyRelabel r σ hp) e) =
+    (D0.Research.NativeSceneHistoryFeedback.historyRelabel r σ hp)
+      ((D0.Research.NativeSceneHistoryFeedback.reverseEquiv r hs) e)
+'D0.Research.NativeSceneHistoryFeedback.complete_history_relabel_reverse_naturality' depends on axioms: [propext,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.complete_history_relabel_keeps_both_readouts.{u_1} {v : Type u_1} [Fintype v]
+  [DecidableEq v] (r : v → v → Prop) [DecidableRel r] (σ : Equiv.Perm v) (hp : ∀ (a b : v), r (σ a) (σ b) ↔ r a b)
+  (e : D0.Research.NativeSceneHistoryFeedback.Edge r) :
+  (↑((D0.Research.NativeSceneHistoryFeedback.historyRelabel r σ hp) e)).1 = σ (↑e).1 ∧
+    (↑((D0.Research.NativeSceneHistoryFeedback.historyRelabel r σ hp) e)).2 = σ (↑e).2
+'D0.Research.NativeSceneHistoryFeedback.complete_history_relabel_keeps_both_readouts' depends on axioms: [propext,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.complete_history_projection_idempotent.{u_1, u_2} {v : Type u_1} {e : Type u_2}
+  [Fintype v] [Fintype e] [DecidableEq v] [DecidableEq e] (J : Matrix e v ℚ) (C : Matrix v e ℚ) (hc : C * J = 1) :
+  D0.Research.NativeSceneHistoryFeedback.historyProjection J C *
+      D0.Research.NativeSceneHistoryFeedback.historyProjection J C =
+    D0.Research.NativeSceneHistoryFeedback.historyProjection J C
+'D0.Research.NativeSceneHistoryFeedback.complete_history_projection_idempotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.involutive_history_exact_feedback.{u_1, u_2} {v : Type u_1} {e : Type u_2}
+  [Fintype v] [Fintype e] [DecidableEq v] [DecidableEq e] (J : Matrix e v ℚ) (C : Matrix v e ℚ) (U : Matrix e e ℚ)
+  (hc : C * J = 1) (hu : U * U = 1) (ht : U.transpose = U) :
+  D0.Research.NativeSceneHistoryFeedback.historyFeedback (D0.Research.NativeSceneHistoryFeedback.historyProjection J C)
+      U =
+    J *
+        (1 -
+          D0.Research.NativeSceneHistoryFeedback.historyCompression J C U *
+            D0.Research.NativeSceneHistoryFeedback.historyCompression J C U) *
+      C
+'D0.Research.NativeSceneHistoryFeedback.involutive_history_exact_feedback' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.history_feedback_retains_whole_vertex_response.{u_1, u_2} {v : Type u_1}
+  {e : Type u_2} [Fintype v] [Fintype e] [DecidableEq v] [DecidableEq e] (J : Matrix e v ℚ) (C : Matrix v e ℚ)
+  (U : Matrix e e ℚ) (hc : C * J = 1) (hu : U * U = 1) (ht : U.transpose = U) :
+  C *
+        D0.Research.NativeSceneHistoryFeedback.historyFeedback
+          (D0.Research.NativeSceneHistoryFeedback.historyProjection J C) U *
+      J =
+    1 -
+      D0.Research.NativeSceneHistoryFeedback.historyCompression J C U *
+        D0.Research.NativeSceneHistoryFeedback.historyCompression J C U
+'D0.Research.NativeSceneHistoryFeedback.history_feedback_retains_whole_vertex_response' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.history_feedback_determinant_exact.{u_1, u_2} {v : Type u_1} {e : Type u_2}
+  [Fintype v] [Fintype e] [DecidableEq v] [DecidableEq e] (J : Matrix e v ℚ) (C : Matrix v e ℚ) (U : Matrix e e ℚ)
+  (z : ℚ) (hc : C * J = 1) (hu : U * U = 1) (ht : U.transpose = U) :
+  (1 -
+        z •
+          D0.Research.NativeSceneHistoryFeedback.historyFeedback
+            (D0.Research.NativeSceneHistoryFeedback.historyProjection J C) U).det =
+    (1 -
+        z •
+          (1 -
+            D0.Research.NativeSceneHistoryFeedback.historyCompression J C U *
+              D0.Research.NativeSceneHistoryFeedback.historyCompression J C U)).det
+'D0.Research.NativeSceneHistoryFeedback.history_feedback_determinant_exact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.every_native_even_history_returns.{u_1, u_2} {v : Type u_1} {e : Type u_2}
+  [Fintype v] [Fintype e] [DecidableEq v] [DecidableEq e] (J : Matrix e v ℚ) (C : Matrix v e ℚ) (U : Matrix e e ℚ)
+  (k : ℕ) (hc : C * J = 1) (hu : U * U = 1) :
+  D0.Research.NativeSceneHistoryFeedback.historyCompression J C (U ^ (2 * k)) = 1
+'D0.Research.NativeSceneHistoryFeedback.every_native_even_history_returns' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.every_native_odd_history_returns.{u_1, u_2} {v : Type u_1} {e : Type u_2}
+  [Fintype v] [Fintype e] [DecidableEq v] [DecidableEq e] (J : Matrix e v ℚ) (C : Matrix v e ℚ) (U : Matrix e e ℚ)
+  (k : ℕ) (hu : U * U = 1) :
+  D0.Research.NativeSceneHistoryFeedback.historyCompression J C (U ^ (2 * k + 1)) =
+    D0.Research.NativeSceneHistoryFeedback.historyCompression J C U
+'D0.Research.NativeSceneHistoryFeedback.every_native_odd_history_returns' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.every_even_history_feedback_zero.{u_1, u_2} {v : Type u_1} {e : Type u_2}
+  [Fintype v] [Fintype e] [DecidableEq v] [DecidableEq e] (J : Matrix e v ℚ) (C : Matrix v e ℚ) (U : Matrix e e ℚ)
+  (k : ℕ) (hc : C * J = 1) (hu : U * U = 1) :
+  D0.Research.NativeSceneHistoryFeedback.historyFeedback (D0.Research.NativeSceneHistoryFeedback.historyProjection J C)
+      (U ^ (2 * k)) =
+    0
+'D0.Research.NativeSceneHistoryFeedback.every_even_history_feedback_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.history_kernel_is_fully_retained.{u_1, u_2} {v : Type u_1} {e : Type u_2}
+  [Fintype v] [Fintype e] [DecidableEq v] [DecidableEq e] (J : Matrix e v ℚ) (C : Matrix v e ℚ) (U : Matrix e e ℚ)
+  (x : v → ℚ) (hc : C * J = 1) (hu : U * U = 1) (ht : U.transpose = U)
+  (hx : (D0.Research.NativeSceneHistoryFeedback.historyCompression J C U).mulVec x = 0) :
+  (D0.Research.NativeSceneHistoryFeedback.historyFeedback (D0.Research.NativeSceneHistoryFeedback.historyProjection J C)
+            U *
+          J).mulVec
+      x =
+    J.mulVec x
+'D0.Research.NativeSceneHistoryFeedback.history_kernel_is_fully_retained' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.exact_full_history_resolvent.{u_2} {e : Type u_2} [Fintype e] [DecidableEq e]
+  (U : Matrix e e ℚ) (z : ℚ) (hu : U * U = 1) (hz : 1 - z ^ 2 ≠ 0) :
+  (1 - z • U) * (1 - z ^ 2)⁻¹ • (1 + z • U) = 1 ∧ (1 - z ^ 2)⁻¹ • (1 + z • U) * (1 - z • U) = 1
+'D0.Research.NativeSceneHistoryFeedback.exact_full_history_resolvent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.exact_full_history_resolvent_compression.{u_1, u_2} {v : Type u_1} {e : Type u_2}
+  [Fintype v] [Fintype e] [DecidableEq v] [DecidableEq e] (J : Matrix e v ℚ) (C : Matrix v e ℚ) (U : Matrix e e ℚ)
+  (z : ℚ) (hc : C * J = 1) :
+  C * (1 - z ^ 2)⁻¹ • (1 + z • U) * J =
+    (1 - z ^ 2)⁻¹ • (1 + z • D0.Research.NativeSceneHistoryFeedback.historyCompression J C U)
+'D0.Research.NativeSceneHistoryFeedback.exact_full_history_resolvent_compression' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.full_history_complement_idempotent.{u_1, u_2} {v : Type u_1} {e : Type u_2}
+  [Fintype v] [Fintype e] [DecidableEq v] [DecidableEq e] (J : Matrix e v ℚ) (C : Matrix v e ℚ) (hc : C * J = 1) :
+  D0.Research.NativeSceneHistoryFeedback.historyComplement J C *
+      D0.Research.NativeSceneHistoryFeedback.historyComplement J C =
+    D0.Research.NativeSceneHistoryFeedback.historyComplement J C
+'D0.Research.NativeSceneHistoryFeedback.full_history_complement_idempotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.full_history_incoming_delay.{u_1, u_2} {v : Type u_1} {e : Type u_2} [Fintype v]
+  [Fintype e] [DecidableEq v] [DecidableEq e] (J : Matrix e v ℚ) (C : Matrix v e ℚ) (U : Matrix e e ℚ) (hc : C * J = 1)
+  (hu : U * U = 1) :
+  D0.Research.NativeSceneHistoryFeedback.historyArchive J C U *
+      D0.Research.NativeSceneHistoryFeedback.historyIncoming J C U =
+    -(D0.Research.NativeSceneHistoryFeedback.historyIncoming J C U *
+        D0.Research.NativeSceneHistoryFeedback.historyCompression J C U)
+'D0.Research.NativeSceneHistoryFeedback.full_history_incoming_delay' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.all_native_archive_delays_reconstructed.{u_1, u_2} {v : Type u_1} {e : Type u_2}
+  [Fintype v] [Fintype e] [DecidableEq v] [DecidableEq e] (J : Matrix e v ℚ) (C : Matrix v e ℚ) (U : Matrix e e ℚ)
+  (k : ℕ) (hc : C * J = 1) (hu : U * U = 1) :
+  D0.Research.NativeSceneHistoryFeedback.historyArchive J C U ^ k *
+      D0.Research.NativeSceneHistoryFeedback.historyIncoming J C U =
+    D0.Research.NativeSceneHistoryFeedback.historyIncoming J C U *
+      (-D0.Research.NativeSceneHistoryFeedback.historyCompression J C U) ^ k
+'D0.Research.NativeSceneHistoryFeedback.all_native_archive_delays_reconstructed' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.full_history_outgoing_incoming.{u_1, u_2} {v : Type u_1} {e : Type u_2}
+  [Fintype v] [Fintype e] [DecidableEq v] [DecidableEq e] (J : Matrix e v ℚ) (C : Matrix v e ℚ) (U : Matrix e e ℚ)
+  (hc : C * J = 1) (hu : U * U = 1) :
+  D0.Research.NativeSceneHistoryFeedback.historyOutgoing J C U *
+      D0.Research.NativeSceneHistoryFeedback.historyIncoming J C U =
+    1 -
+      D0.Research.NativeSceneHistoryFeedback.historyCompression J C U *
+        D0.Research.NativeSceneHistoryFeedback.historyCompression J C U
+'D0.Research.NativeSceneHistoryFeedback.full_history_outgoing_incoming' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.complete_native_archive_return_kernel.{u_1, u_2} {v : Type u_1} {e : Type u_2}
+  [Fintype v] [Fintype e] [DecidableEq v] [DecidableEq e] (J : Matrix e v ℚ) (C : Matrix v e ℚ) (U : Matrix e e ℚ)
+  (k : ℕ) (hc : C * J = 1) (hu : U * U = 1) :
+  D0.Research.NativeSceneHistoryFeedback.historyOutgoing J C U *
+        D0.Research.NativeSceneHistoryFeedback.historyArchive J C U ^ k *
+      D0.Research.NativeSceneHistoryFeedback.historyIncoming J C U =
+    (1 -
+        D0.Research.NativeSceneHistoryFeedback.historyCompression J C U *
+          D0.Research.NativeSceneHistoryFeedback.historyCompression J C U) *
+      (-D0.Research.NativeSceneHistoryFeedback.historyCompression J C U) ^ k
+'D0.Research.NativeSceneHistoryFeedback.complete_native_archive_return_kernel' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.actual_scene_relation_symmetric (a b : Fin 33) :
+  D0.VNext2.ScenePathHistoryCanonicity.SceneStep a b ↔ D0.VNext2.ScenePathHistoryCanonicity.SceneStep b a
+'D0.Research.NativeSceneHistoryFeedback.actual_scene_relation_symmetric' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.actual_scene_relation_iff (a b : Fin 33) :
+  D0.VNext2.ScenePathHistoryCanonicity.SceneStep a b ↔ D0.Claims.zone31 a ≠ D0.Claims.zone31 b
+'D0.Research.NativeSceneHistoryFeedback.actual_scene_relation_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.actual_scene_adjacency_binding :
+  D0.Research.NativeSceneHistoryFeedback.graphAdjacency D0.VNext2.ScenePathHistoryCanonicity.SceneStep = D0.Claims.Adj31
+'D0.Research.NativeSceneHistoryFeedback.actual_scene_adjacency_binding' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.actual_endpoint_degree_binding (b : Fin 33) :
+  D0.Research.NativeSceneHistoryFeedback.edgeDegree D0.VNext2.ScenePathHistoryCanonicity.SceneStep b =
+    D0.Synthesis.SceneNormalizedQuotientDescent.fullDegreeValue b
+'D0.Research.NativeSceneHistoryFeedback.actual_endpoint_degree_binding' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.graph_endpoint_degree_nonzero.{u_1} {v : Type u_1} [Fintype v] [DecidableEq v]
+  (r : v → v → Prop) [DecidableRel r] (b : v) (hn : ∃ a, r a b) :
+  D0.Research.NativeSceneHistoryFeedback.edgeDegree r b ≠ 0
+'D0.Research.NativeSceneHistoryFeedback.graph_endpoint_degree_nonzero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.actual_endpoint_degree_nonzero (b : Fin 33) :
+  D0.Research.NativeSceneHistoryFeedback.edgeDegree D0.VNext2.ScenePathHistoryCanonicity.SceneStep b ≠ 0
+'D0.Research.NativeSceneHistoryFeedback.actual_endpoint_degree_nonzero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.actual_endpoint_lift_binding :
+  D0.Research.NativeSceneHistoryFeedback.endpointLift D0.VNext2.ScenePathHistoryCanonicity.SceneStep =
+    D0.VNext2.SceneEndpointReynoldsExpectation.Jt
+'D0.Research.NativeSceneHistoryFeedback.actual_endpoint_lift_binding' depends on axioms: [propext, Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.actual_source_lift_binding :
+  D0.Research.NativeSceneHistoryFeedback.sourceLift D0.VNext2.ScenePathHistoryCanonicity.SceneStep =
+    D0.VNext2.SceneEndpointReynoldsExpectation.Js
+'D0.Research.NativeSceneHistoryFeedback.actual_source_lift_binding' depends on axioms: [propext, Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.actual_endpoint_average_binding :
+  D0.Research.NativeSceneHistoryFeedback.endpointAverage D0.VNext2.ScenePathHistoryCanonicity.SceneStep =
+    D0.VNext2.SceneEndpointReynoldsExpectation.C1
+'D0.Research.NativeSceneHistoryFeedback.actual_endpoint_average_binding' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.actual_transport_binding :
+  D0.Research.NativeSceneHistoryFeedback.graphTransport D0.VNext2.ScenePathHistoryCanonicity.SceneStep =
+    D0.Synthesis.SceneNormalizedQuotientDescent.fullTransport
+'D0.Research.NativeSceneHistoryFeedback.actual_transport_binding' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.actual_history_average_left_inverse :
+  D0.VNext2.SceneEndpointReynoldsExpectation.C1 * D0.VNext2.SceneEndpointReynoldsExpectation.Jt = 1
+'D0.Research.NativeSceneHistoryFeedback.actual_history_average_left_inverse' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.actual_history_average_source :
+  D0.VNext2.SceneEndpointReynoldsExpectation.C1 * D0.VNext2.SceneEndpointReynoldsExpectation.Js =
+    D0.Synthesis.SceneNormalizedQuotientDescent.fullTransport
+'D0.Research.NativeSceneHistoryFeedback.actual_history_average_source' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.actual_history_reverse_owner_binding
+  (e : D0.VNext2.ScenePathHistoryCanonicity.LevelOneSceneHistory) :
+  (D0.Research.NativeSceneHistoryFeedback.reverseEquiv D0.VNext2.ScenePathHistoryCanonicity.SceneStep
+        D0.Research.NativeSceneHistoryFeedback.actual_scene_relation_symmetric)
+      e =
+    D0.VNext2.SceneEndpointReynoldsExpectation.reverseEdge e
+'D0.Research.NativeSceneHistoryFeedback.actual_history_reverse_owner_binding' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.actual_native_history_reverse_involution :
+  D0.Research.NativeSceneHistoryFeedback.nativeHistoryReverse *
+      D0.Research.NativeSceneHistoryFeedback.nativeHistoryReverse =
+    1
+'D0.Research.NativeSceneHistoryFeedback.actual_native_history_reverse_involution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.actual_native_history_reverse_selfadjoint :
+  D0.Research.NativeSceneHistoryFeedback.nativeHistoryReverse.transpose =
+    D0.Research.NativeSceneHistoryFeedback.nativeHistoryReverse
+'D0.Research.NativeSceneHistoryFeedback.actual_native_history_reverse_selfadjoint' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.actual_native_history_projection_selfadjoint :
+  (D0.Research.NativeSceneHistoryFeedback.historyProjection D0.VNext2.SceneEndpointReynoldsExpectation.Jt
+        D0.VNext2.SceneEndpointReynoldsExpectation.C1).transpose =
+    D0.Research.NativeSceneHistoryFeedback.historyProjection D0.VNext2.SceneEndpointReynoldsExpectation.Jt
+      D0.VNext2.SceneEndpointReynoldsExpectation.C1
+'D0.Research.NativeSceneHistoryFeedback.actual_native_history_projection_selfadjoint' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.actual_native_history_reverse_reads_source :
+  D0.Research.NativeSceneHistoryFeedback.nativeHistoryReverse * D0.VNext2.SceneEndpointReynoldsExpectation.Jt =
+    D0.VNext2.SceneEndpointReynoldsExpectation.Js
+'D0.Research.NativeSceneHistoryFeedback.actual_native_history_reverse_reads_source' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.actual_native_history_compression :
+  D0.Research.NativeSceneHistoryFeedback.historyCompression D0.VNext2.SceneEndpointReynoldsExpectation.Jt
+      D0.VNext2.SceneEndpointReynoldsExpectation.C1 D0.Research.NativeSceneHistoryFeedback.nativeHistoryReverse =
+    D0.Synthesis.SceneNormalizedQuotientDescent.fullTransport
+'D0.Research.NativeSceneHistoryFeedback.actual_native_history_compression' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.normalized_scene_return_feedback_polynomial :
+  1 -
+      D0.Synthesis.SceneNormalizedQuotientDescent.fullTransport *
+        D0.Synthesis.SceneNormalizedQuotientDescent.fullTransport =
+    2 • D0.Synthesis.SceneNormalizedQuotientDescent.fullNormalizedLaplacian -
+      D0.Synthesis.SceneNormalizedQuotientDescent.fullNormalizedLaplacian *
+        D0.Synthesis.SceneNormalizedQuotientDescent.fullNormalizedLaplacian
+'D0.Research.NativeSceneHistoryFeedback.normalized_scene_return_feedback_polynomial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.actual_native_history_feedback :
+  D0.Research.NativeSceneHistoryFeedback.historyFeedback
+      (D0.Research.NativeSceneHistoryFeedback.historyProjection D0.VNext2.SceneEndpointReynoldsExpectation.Jt
+        D0.VNext2.SceneEndpointReynoldsExpectation.C1)
+      D0.Research.NativeSceneHistoryFeedback.nativeHistoryReverse =
+    D0.VNext2.SceneEndpointReynoldsExpectation.Jt *
+        (1 -
+          D0.Synthesis.SceneNormalizedQuotientDescent.fullTransport *
+            D0.Synthesis.SceneNormalizedQuotientDescent.fullTransport) *
+      D0.VNext2.SceneEndpointReynoldsExpectation.C1
+'D0.Research.NativeSceneHistoryFeedback.actual_native_history_feedback' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.actual_native_history_feedback_determinant (z : ℚ) :
+  (1 -
+        z •
+          D0.Research.NativeSceneHistoryFeedback.historyFeedback
+            (D0.Research.NativeSceneHistoryFeedback.historyProjection D0.VNext2.SceneEndpointReynoldsExpectation.Jt
+              D0.VNext2.SceneEndpointReynoldsExpectation.C1)
+            D0.Research.NativeSceneHistoryFeedback.nativeHistoryReverse).det =
+    (1 -
+        z •
+          (1 -
+            D0.Synthesis.SceneNormalizedQuotientDescent.fullTransport *
+              D0.Synthesis.SceneNormalizedQuotientDescent.fullTransport)).det
+'D0.Research.NativeSceneHistoryFeedback.actual_native_history_feedback_determinant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.actual_native_all_archive_return_kernels (k : ℕ) :
+  D0.Research.NativeSceneHistoryFeedback.historyOutgoing D0.VNext2.SceneEndpointReynoldsExpectation.Jt
+          D0.VNext2.SceneEndpointReynoldsExpectation.C1 D0.Research.NativeSceneHistoryFeedback.nativeHistoryReverse *
+        D0.Research.NativeSceneHistoryFeedback.historyArchive D0.VNext2.SceneEndpointReynoldsExpectation.Jt
+            D0.VNext2.SceneEndpointReynoldsExpectation.C1 D0.Research.NativeSceneHistoryFeedback.nativeHistoryReverse ^
+          k *
+      D0.Research.NativeSceneHistoryFeedback.historyIncoming D0.VNext2.SceneEndpointReynoldsExpectation.Jt
+        D0.VNext2.SceneEndpointReynoldsExpectation.C1 D0.Research.NativeSceneHistoryFeedback.nativeHistoryReverse =
+    (1 -
+        D0.Synthesis.SceneNormalizedQuotientDescent.fullTransport *
+          D0.Synthesis.SceneNormalizedQuotientDescent.fullTransport) *
+      (-D0.Synthesis.SceneNormalizedQuotientDescent.fullTransport) ^ k
+'D0.Research.NativeSceneHistoryFeedback.actual_native_all_archive_return_kernels' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.actual_native_full_resolvent_compression (z : ℚ) :
+  D0.VNext2.SceneEndpointReynoldsExpectation.C1 *
+        (1 - z ^ 2)⁻¹ • (1 + z • D0.Research.NativeSceneHistoryFeedback.nativeHistoryReverse) *
+      D0.VNext2.SceneEndpointReynoldsExpectation.Jt =
+    (1 - z ^ 2)⁻¹ • (1 + z • D0.Synthesis.SceneNormalizedQuotientDescent.fullTransport)
+'D0.Research.NativeSceneHistoryFeedback.actual_native_full_resolvent_compression' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.actual_native_two_returns_recover_all_vertices :
+  D0.Research.NativeSceneHistoryFeedback.historyCompression D0.VNext2.SceneEndpointReynoldsExpectation.Jt
+      D0.VNext2.SceneEndpointReynoldsExpectation.C1 (D0.Research.NativeSceneHistoryFeedback.nativeHistoryReverse ^ 2) =
+    1
+'D0.Research.NativeSceneHistoryFeedback.actual_native_two_returns_recover_all_vertices' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.actual_native_two_return_feedback_zero :
+  D0.Research.NativeSceneHistoryFeedback.historyFeedback
+      (D0.Research.NativeSceneHistoryFeedback.historyProjection D0.VNext2.SceneEndpointReynoldsExpectation.Jt
+        D0.VNext2.SceneEndpointReynoldsExpectation.C1)
+      (D0.Research.NativeSceneHistoryFeedback.nativeHistoryReverse ^ 2) =
+    0
+'D0.Research.NativeSceneHistoryFeedback.actual_native_two_return_feedback_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.actual_archive_adjacency_binding :
+  D0.Claims.Adj31 = D0.Spectral.DarkArchiveStructure.adj
+'D0.Research.NativeSceneHistoryFeedback.actual_archive_adjacency_binding' depends on axioms: [propext, Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.actual_balanced_archive_transport_zero (x : Fin 33 → ℚ)
+  (hx : ∀ (z : Fin 3), D0.Spectral.DarkArchiveStructure.zoneSum x z = 0) :
+  D0.Synthesis.SceneNormalizedQuotientDescent.fullTransport.mulVec x = 0
+'D0.Research.NativeSceneHistoryFeedback.actual_balanced_archive_transport_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.actual_balanced_archive_full_history_feedback (x : Fin 33 → ℚ)
+  (hx : ∀ (z : Fin 3), D0.Spectral.DarkArchiveStructure.zoneSum x z = 0) :
+  (D0.Research.NativeSceneHistoryFeedback.historyFeedback
+            (D0.Research.NativeSceneHistoryFeedback.historyProjection D0.VNext2.SceneEndpointReynoldsExpectation.Jt
+              D0.VNext2.SceneEndpointReynoldsExpectation.C1)
+            D0.Research.NativeSceneHistoryFeedback.nativeHistoryReverse *
+          D0.VNext2.SceneEndpointReynoldsExpectation.Jt).mulVec
+      x =
+    D0.VNext2.SceneEndpointReynoldsExpectation.Jt.mulVec x
+'D0.Research.NativeSceneHistoryFeedback.actual_balanced_archive_full_history_feedback' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.actual_balanced_archive_two_history_return (x : Fin 33 → ℚ)
+  (hx : ∀ (z : Fin 3), D0.Spectral.DarkArchiveStructure.zoneSum x z = 0) :
+  (D0.VNext2.SceneEndpointReynoldsExpectation.C1 * D0.Research.NativeSceneHistoryFeedback.nativeHistoryReverse *
+            D0.VNext2.SceneEndpointReynoldsExpectation.Jt).mulVec
+        x =
+      0 ∧
+    (D0.VNext2.SceneEndpointReynoldsExpectation.C1 * D0.Research.NativeSceneHistoryFeedback.nativeHistoryReverse ^ 2 *
+            D0.VNext2.SceneEndpointReynoldsExpectation.Jt).mulVec
+        x =
+      x
+'D0.Research.NativeSceneHistoryFeedback.actual_balanced_archive_two_history_return' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.actual_archive_witness_balanced (z : Fin 3) :
+  D0.Spectral.DarkArchiveStructure.zoneSum D0.Research.NativeSceneHistoryFeedback.archiveWitness z = 0
+'D0.Research.NativeSceneHistoryFeedback.actual_archive_witness_balanced' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.actual_archive_witness_nonzero :
+  D0.Research.NativeSceneHistoryFeedback.archiveWitness ≠ 0
+'D0.Research.NativeSceneHistoryFeedback.actual_archive_witness_nonzero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.actual_native_history_feedback_nonzero :
+  D0.Research.NativeSceneHistoryFeedback.historyFeedback
+      (D0.Research.NativeSceneHistoryFeedback.historyProjection D0.VNext2.SceneEndpointReynoldsExpectation.Jt
+        D0.VNext2.SceneEndpointReynoldsExpectation.C1)
+      D0.Research.NativeSceneHistoryFeedback.nativeHistoryReverse ≠
+    0
+'D0.Research.NativeSceneHistoryFeedback.actual_native_history_feedback_nonzero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.actual_no_repeated_forgetting_return :
+  D0.Research.NativeSceneHistoryFeedback.historyCompression D0.VNext2.SceneEndpointReynoldsExpectation.Jt
+      D0.VNext2.SceneEndpointReynoldsExpectation.C1 (D0.Research.NativeSceneHistoryFeedback.nativeHistoryReverse ^ 2) ≠
+    D0.Synthesis.SceneNormalizedQuotientDescent.fullTransport *
+      D0.Synthesis.SceneNormalizedQuotientDescent.fullTransport
+'D0.Research.NativeSceneHistoryFeedback.actual_no_repeated_forgetting_return' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.full_constant_inverse.{u_2} {v : Type u_2} [Fintype v] [DecidableEq v]
+  (H HI Pc : Matrix v v ℚ) (h : HI * H = 1) (hc : H * Pc = Pc) : HI * Pc = Pc
+'D0.Research.NativeSceneHistoryFeedback.full_constant_inverse' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.full_spectral_projection_endpoint.{u_1, u_2} {e : Type u_1} {v : Type u_2}
+  [Fintype e] [Fintype v] [DecidableEq e] [DecidableEq v] (J E : Matrix e v ℚ) (C B : Matrix v e ℚ) (HI : Matrix v v ℚ)
+  (hc : C * J = 1) (hb : B * J = 0) : D0.Research.NativeSceneHistoryFeedback.fullHistoryProjection J E C B HI * J = J
+'D0.Research.NativeSceneHistoryFeedback.full_spectral_projection_endpoint' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.full_spectral_projection_incoming.{u_1, u_2} {e : Type u_1} {v : Type u_2}
+  [Fintype e] [Fintype v] [DecidableEq e] [DecidableEq v] (J E : Matrix e v ℚ) (C B : Matrix v e ℚ)
+  (H HI Pc : Matrix v v ℚ) (hc : C * E = 0) (hb : B * E = H - Pc) (hi : HI * H = 1) (hip : HI * Pc = Pc)
+  (he : E * Pc = 0) : D0.Research.NativeSceneHistoryFeedback.fullHistoryProjection J E C B HI * E = E
+'D0.Research.NativeSceneHistoryFeedback.full_spectral_projection_incoming' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.full_spectral_projection_idempotent.{u_1, u_2} {e : Type u_1} {v : Type u_2}
+  [Fintype e] [Fintype v] [DecidableEq e] [DecidableEq v] (J E : Matrix e v ℚ) (C B : Matrix v e ℚ) (HI : Matrix v v ℚ)
+  (hj : D0.Research.NativeSceneHistoryFeedback.fullHistoryProjection J E C B HI * J = J)
+  (he : D0.Research.NativeSceneHistoryFeedback.fullHistoryProjection J E C B HI * E = E) :
+  D0.Research.NativeSceneHistoryFeedback.fullHistoryProjection J E C B HI *
+      D0.Research.NativeSceneHistoryFeedback.fullHistoryProjection J E C B HI =
+    D0.Research.NativeSceneHistoryFeedback.fullHistoryProjection J E C B HI
+'D0.Research.NativeSceneHistoryFeedback.full_spectral_projection_idempotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.generated_spectral_endpoint.{u_1, u_2} {e : Type u_1} {v : Type u_2} [Fintype e]
+  [Fintype v] [DecidableEq e] [DecidableEq v] (J E : Matrix e v ℚ) (C B : Matrix v e ℚ) (HI delta : Matrix v v ℚ)
+  (hc : C * J = 1) (hb : B * J = 0) :
+  D0.Research.NativeSceneHistoryFeedback.generatedHistoryHeat J E C B HI delta * J = J * delta
+'D0.Research.NativeSceneHistoryFeedback.generated_spectral_endpoint' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.generated_spectral_incoming.{u_1, u_2} {e : Type u_1} {v : Type u_2} [Fintype e]
+  [Fintype v] [DecidableEq e] [DecidableEq v] (J E : Matrix e v ℚ) (C B : Matrix v e ℚ) (H HI Pc delta : Matrix v v ℚ)
+  (hc : C * E = 0) (hb : B * E = H - Pc) (hi : HI * H = 1) (hip : HI * Pc = Pc) (hd : delta * Pc = 0) :
+  D0.Research.NativeSceneHistoryFeedback.generatedHistoryHeat J E C B HI delta * E = E * delta
+'D0.Research.NativeSceneHistoryFeedback.generated_spectral_incoming' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.two_retained_readouts_determine_generated_block.{u_1, u_2} {e : Type u_1}
+  {v : Type u_2} [Fintype e] [Fintype v] [DecidableEq e] [DecidableEq v] (A : Matrix e e ℚ) (J E : Matrix e v ℚ)
+  (C B : Matrix v e ℚ) (HI delta : Matrix v v ℚ) (hj : A * J = J * delta) (he : A * E = E * delta) :
+  A * D0.Research.NativeSceneHistoryFeedback.fullHistoryProjection J E C B HI =
+    D0.Research.NativeSceneHistoryFeedback.generatedHistoryHeat J E C B HI delta
+'D0.Research.NativeSceneHistoryFeedback.two_retained_readouts_determine_generated_block' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.full_projector_selfadjoint.{u_1, u_2} {e : Type u_1} {v : Type u_2} [Fintype e]
+  [Fintype v] [DecidableEq e] [DecidableEq v] (J E : Matrix e v ℚ) (C B : Matrix v e ℚ) (HI : Matrix v v ℚ)
+  (hp : (J * C).transpose = J * C) (hq : (E * HI * B).transpose = E * HI * B) :
+  (D0.Research.NativeSceneHistoryFeedback.fullHistoryProjection J E C B HI).transpose =
+    D0.Research.NativeSceneHistoryFeedback.fullHistoryProjection J E C B HI
+'D0.Research.NativeSceneHistoryFeedback.full_projector_selfadjoint' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.complete_symmetric_history_extension.{u_1} {e : Type u_1} [Fintype e]
+  [DecidableEq e] (A K W : Matrix e e ℚ) (hA : A.transpose = A) (hK : K.transpose = K) (hW : W.transpose = W) :
+  (D0.Research.NativeSceneHistoryFeedback.completeHistoryHeat A K W).transpose =
+    D0.Research.NativeSceneHistoryFeedback.completeHistoryHeat A K W
+'D0.Research.NativeSceneHistoryFeedback.complete_symmetric_history_extension' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.complete_history_readout_extension.{u_1, u_2} {e : Type u_1} {v : Type u_2}
+  [Fintype e] [Fintype v] [DecidableEq e] [DecidableEq v] (A K W : Matrix e e ℚ) (J : Matrix e v ℚ)
+  (delta : Matrix v v ℚ) (hk : K * J = J) (ha : A * J = J * delta) :
+  D0.Research.NativeSceneHistoryFeedback.completeHistoryHeat A K W * J = J * delta
+'D0.Research.NativeSceneHistoryFeedback.complete_history_readout_extension' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.all_symmetric_history_extensions.{u_1} {e : Type u_1} [Fintype e] [DecidableEq e]
+  (A A0 K : Matrix e e ℚ) (ha : A.transpose = A) (h0 : A0.transpose = A0) (hk : K.transpose = K) (hkk : K * K = K)
+  (h : A * K = A0) : A = D0.Research.NativeSceneHistoryFeedback.completeHistoryHeat A0 K A
+'D0.Research.NativeSceneHistoryFeedback.all_symmetric_history_extensions' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.complete_supported_symmetric_extension_iff.{u_1} {e : Type u_1} [Fintype e]
+  [DecidableEq e] (A A0 K : Matrix e e ℚ) (h0 : A0.transpose = A0) (hk : K.transpose = K) (h0k : A0 * K = A0) :
+  A.transpose = A ∧ A * K = A0 ↔ ∃ B, B.transpose = B ∧ B * K = 0 ∧ K * B = 0 ∧ A = A0 + B
+'D0.Research.NativeSceneHistoryFeedback.complete_supported_symmetric_extension_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.complete_supported_extension_parameter_unique.{u_1} {e : Type u_1} [Fintype e]
+  [DecidableEq e] (A0 B1 B2 : Matrix e e ℚ) : A0 + B1 = A0 + B2 ↔ B1 = B2
+'D0.Research.NativeSceneHistoryFeedback.complete_supported_extension_parameter_unique' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.complete_extension_endpoint_invisible.{u_1, u_2} {e : Type u_1} {v : Type u_2}
+  [Fintype e] [Fintype v] [DecidableEq e] [DecidableEq v] (K : Matrix e e ℚ) (J : Matrix e v ℚ) (B : Matrix e e ℚ)
+  (hk : K * J = J) (hb : B * K = 0) : B * J = 0
+'D0.Research.NativeSceneHistoryFeedback.complete_extension_endpoint_invisible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.exact_zone_inverse_lift.{u_1, u_2} {v : Type u_1} {z : Type u_2} [Fintype v]
+  [Fintype z] [DecidableEq v] [DecidableEq z] (L : Matrix v z ℚ) (C : Matrix z v ℚ) (H HI : Matrix z z ℚ)
+  (hc : C * L = 1) (h : H * HI = 1) : (1 + L * (H - 1) * C) * (1 + L * (HI - 1) * C) = 1
+'D0.Research.NativeSceneHistoryFeedback.exact_zone_inverse_lift' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.weighted_commuting_product_selfadjoint.{u_1} {v : Type u_1} [Fintype v]
+  [DecidableEq v] (X Y D : Matrix v v ℚ) (hd : D.transpose = D) (hx : (X * D).transpose = X * D)
+  (hy : (Y * D).transpose = Y * D) (hc : X * Y = Y * X) : (X * Y * D).transpose = X * Y * D
+'D0.Research.NativeSceneHistoryFeedback.weighted_commuting_product_selfadjoint' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.weighted_inverse_selfadjoint.{u_1} {v : Type u_1} [Fintype v] [DecidableEq v]
+  (H HI D : Matrix v v ℚ) (hd : D.transpose = D) (hh : (H * D).transpose = H * D) (hil : HI * H = 1) :
+  (HI * D).transpose = HI * D
+'D0.Research.NativeSceneHistoryFeedback.weighted_inverse_selfadjoint' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.paired_block_selfadjoint.{u_1, u_2} {v : Type u_1} {e : Type u_2} [Fintype v]
+  [Fintype e] [DecidableEq v] [DecidableEq e] (E : Matrix e v ℚ) (B : Matrix v e ℚ) (X D : Matrix v v ℚ)
+  (hb : B = D * E.transpose) (hx : (X * D).transpose = X * D) : (E * X * B).transpose = E * X * B
+'D0.Research.NativeSceneHistoryFeedback.paired_block_selfadjoint' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.generated_projector_commutes_preserving_reverse.{u_1, u_2} {v : Type u_1}
+  {e : Type u_2} [Fintype v] [Fintype e] [DecidableEq v] [DecidableEq e] (J E : Matrix e v ℚ) (C B : Matrix v e ℚ)
+  (HI : Matrix v v ℚ) (R : Matrix e e ℚ)
+  (hk :
+    (D0.Research.NativeSceneHistoryFeedback.fullHistoryProjection J E C B HI).transpose =
+      D0.Research.NativeSceneHistoryFeedback.fullHistoryProjection J E C B HI)
+  (hr : R.transpose = R)
+  (hj : D0.Research.NativeSceneHistoryFeedback.fullHistoryProjection J E C B HI * (R * J) = R * J)
+  (he : D0.Research.NativeSceneHistoryFeedback.fullHistoryProjection J E C B HI * (R * E) = R * E) :
+  D0.Research.NativeSceneHistoryFeedback.fullHistoryProjection J E C B HI * R =
+    R * D0.Research.NativeSceneHistoryFeedback.fullHistoryProjection J E C B HI
+'D0.Research.NativeSceneHistoryFeedback.generated_projector_commutes_preserving_reverse' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.native_zone_counts_kernel (z : Fin 3) :
+  ∑ i, D0.Claims.Cind31 i z = D0.Research.NativeSceneHistoryFeedback.nativeZoneSize z
+'D0.Research.NativeSceneHistoryFeedback.native_zone_counts_kernel' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.native_zone_size_nonzero (z : Fin 3) :
+  D0.Research.NativeSceneHistoryFeedback.nativeZoneSize z ≠ 0
+'D0.Research.NativeSceneHistoryFeedback.native_zone_size_nonzero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.native_zone_average_left_inverse :
+  D0.Research.NativeSceneHistoryFeedback.nativeZoneAverage * D0.Claims.Cind31 = 1
+'D0.Research.NativeSceneHistoryFeedback.native_zone_average_left_inverse' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.native_full_degree_by_zone (i : Fin 33) :
+  D0.Synthesis.SceneNormalizedQuotientDescent.fullDegreeValue i =
+    D0.Research.NativeSceneHistoryFeedback.nativeZoneDegree (D0.Claims.zone31 i)
+'D0.Research.NativeSceneHistoryFeedback.native_full_degree_by_zone' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.native_transport_entry (i j : Fin 33) :
+  D0.Synthesis.SceneNormalizedQuotientDescent.fullTransport i j =
+    if D0.Claims.zone31 i = D0.Claims.zone31 j then 0
+    else (D0.Research.NativeSceneHistoryFeedback.nativeZoneDegree (D0.Claims.zone31 i))⁻¹
+'D0.Research.NativeSceneHistoryFeedback.native_transport_entry' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.native_transport_zone_factorization :
+  D0.Synthesis.SceneNormalizedQuotientDescent.fullTransport =
+    D0.Claims.Cind31 * D0.Research.NativeSceneHistoryFeedback.nativeZoneTransport *
+      D0.Research.NativeSceneHistoryFeedback.nativeZoneAverage
+'D0.Research.NativeSceneHistoryFeedback.native_transport_zone_factorization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.native_constant_zone_factorization :
+  D0.Research.NativeSceneHistoryFeedback.nativeConstant =
+    D0.Claims.Cind31 * D0.Research.NativeSceneHistoryFeedback.nativeZoneConstant *
+      D0.Research.NativeSceneHistoryFeedback.nativeZoneAverage
+'D0.Research.NativeSceneHistoryFeedback.native_constant_zone_factorization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.native_zone_constant_transport_left :
+  D0.Research.NativeSceneHistoryFeedback.nativeZoneTransport *
+      D0.Research.NativeSceneHistoryFeedback.nativeZoneConstant =
+    D0.Research.NativeSceneHistoryFeedback.nativeZoneConstant
+'D0.Research.NativeSceneHistoryFeedback.native_zone_constant_transport_left' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.native_zone_constant_transport_right :
+  D0.Research.NativeSceneHistoryFeedback.nativeZoneConstant *
+      D0.Research.NativeSceneHistoryFeedback.nativeZoneTransport =
+    D0.Research.NativeSceneHistoryFeedback.nativeZoneConstant
+'D0.Research.NativeSceneHistoryFeedback.native_zone_constant_transport_right' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.native_zone_constant_idempotent :
+  D0.Research.NativeSceneHistoryFeedback.nativeZoneConstant *
+      D0.Research.NativeSceneHistoryFeedback.nativeZoneConstant =
+    D0.Research.NativeSceneHistoryFeedback.nativeZoneConstant
+'D0.Research.NativeSceneHistoryFeedback.native_zone_constant_idempotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.native_zone_inverse_exact :
+  D0.Research.NativeSceneHistoryFeedback.nativeZoneH * D0.Research.NativeSceneHistoryFeedback.nativeZoneHI = 1 ∧
+    D0.Research.NativeSceneHistoryFeedback.nativeZoneHI * D0.Research.NativeSceneHistoryFeedback.nativeZoneH = 1
+'D0.Research.NativeSceneHistoryFeedback.native_zone_inverse_exact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.native_coarse_h_zone_lift :
+  D0.Research.NativeSceneHistoryFeedback.nativeCoarseH =
+    1 +
+      D0.Claims.Cind31 * (D0.Research.NativeSceneHistoryFeedback.nativeZoneH - 1) *
+        D0.Research.NativeSceneHistoryFeedback.nativeZoneAverage
+'D0.Research.NativeSceneHistoryFeedback.native_coarse_h_zone_lift' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.native_coarse_inverse_exact :
+  D0.Research.NativeSceneHistoryFeedback.nativeCoarseH * D0.Research.NativeSceneHistoryFeedback.nativeCoarseHI = 1 ∧
+    D0.Research.NativeSceneHistoryFeedback.nativeCoarseHI * D0.Research.NativeSceneHistoryFeedback.nativeCoarseH = 1
+'D0.Research.NativeSceneHistoryFeedback.native_coarse_inverse_exact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.native_constant_transport_left :
+  D0.Synthesis.SceneNormalizedQuotientDescent.fullTransport * D0.Research.NativeSceneHistoryFeedback.nativeConstant =
+    D0.Research.NativeSceneHistoryFeedback.nativeConstant
+'D0.Research.NativeSceneHistoryFeedback.native_constant_transport_left' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.native_constant_transport_right :
+  D0.Research.NativeSceneHistoryFeedback.nativeConstant * D0.Synthesis.SceneNormalizedQuotientDescent.fullTransport =
+    D0.Research.NativeSceneHistoryFeedback.nativeConstant
+'D0.Research.NativeSceneHistoryFeedback.native_constant_transport_right' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.native_constant_idempotent :
+  D0.Research.NativeSceneHistoryFeedback.nativeConstant * D0.Research.NativeSceneHistoryFeedback.nativeConstant =
+    D0.Research.NativeSceneHistoryFeedback.nativeConstant
+'D0.Research.NativeSceneHistoryFeedback.native_constant_idempotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.native_constant_h_fixed :
+  D0.Research.NativeSceneHistoryFeedback.nativeCoarseH * D0.Research.NativeSceneHistoryFeedback.nativeConstant =
+    D0.Research.NativeSceneHistoryFeedback.nativeConstant
+'D0.Research.NativeSceneHistoryFeedback.native_constant_h_fixed' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.native_constant_hi_fixed :
+  D0.Research.NativeSceneHistoryFeedback.nativeCoarseHI * D0.Research.NativeSceneHistoryFeedback.nativeConstant =
+    D0.Research.NativeSceneHistoryFeedback.nativeConstant
+'D0.Research.NativeSceneHistoryFeedback.native_constant_hi_fixed' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.native_normalized_constant_zero :
+  D0.Synthesis.SceneNormalizedQuotientDescent.fullNormalizedLaplacian *
+      D0.Research.NativeSceneHistoryFeedback.nativeConstant =
+    0
+'D0.Research.NativeSceneHistoryFeedback.native_normalized_constant_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.native_incoming_from_both_readouts :
+  D0.Research.NativeSceneHistoryFeedback.nativeIncoming =
+    D0.VNext2.SceneEndpointReynoldsExpectation.Js -
+      D0.VNext2.SceneEndpointReynoldsExpectation.Jt * D0.Synthesis.SceneNormalizedQuotientDescent.fullTransport
+'D0.Research.NativeSceneHistoryFeedback.native_incoming_from_both_readouts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.native_endpoint_average_incoming_zero :
+  D0.VNext2.SceneEndpointReynoldsExpectation.C1 * D0.Research.NativeSceneHistoryFeedback.nativeIncoming = 0
+'D0.Research.NativeSceneHistoryFeedback.native_endpoint_average_incoming_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.native_outgoing_endpoint_zero :
+  D0.Research.NativeSceneHistoryFeedback.nativeOutgoing * D0.VNext2.SceneEndpointReynoldsExpectation.Jt = 0
+'D0.Research.NativeSceneHistoryFeedback.native_outgoing_endpoint_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.native_outgoing_incoming_h :
+  D0.Research.NativeSceneHistoryFeedback.nativeOutgoing * D0.Research.NativeSceneHistoryFeedback.nativeIncoming =
+    D0.Research.NativeSceneHistoryFeedback.nativeCoarseH - D0.Research.NativeSceneHistoryFeedback.nativeConstant
+'D0.Research.NativeSceneHistoryFeedback.native_outgoing_incoming_h' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.native_two_constant_readouts :
+  D0.VNext2.SceneEndpointReynoldsExpectation.Js * D0.Research.NativeSceneHistoryFeedback.nativeConstant =
+    D0.VNext2.SceneEndpointReynoldsExpectation.Jt * D0.Research.NativeSceneHistoryFeedback.nativeConstant
+'D0.Research.NativeSceneHistoryFeedback.native_two_constant_readouts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.native_incoming_constant_zero :
+  D0.Research.NativeSceneHistoryFeedback.nativeIncoming * D0.Research.NativeSceneHistoryFeedback.nativeConstant = 0
+'D0.Research.NativeSceneHistoryFeedback.native_incoming_constant_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.native_full_projector_endpoint :
+  D0.Research.NativeSceneHistoryFeedback.nativeFullProjection * D0.VNext2.SceneEndpointReynoldsExpectation.Jt =
+    D0.VNext2.SceneEndpointReynoldsExpectation.Jt
+'D0.Research.NativeSceneHistoryFeedback.native_full_projector_endpoint' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.native_full_projector_incoming :
+  D0.Research.NativeSceneHistoryFeedback.nativeFullProjection * D0.Research.NativeSceneHistoryFeedback.nativeIncoming =
+    D0.Research.NativeSceneHistoryFeedback.nativeIncoming
+'D0.Research.NativeSceneHistoryFeedback.native_full_projector_incoming' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.native_full_projector_idempotent :
+  D0.Research.NativeSceneHistoryFeedback.nativeFullProjection *
+      D0.Research.NativeSceneHistoryFeedback.nativeFullProjection =
+    D0.Research.NativeSceneHistoryFeedback.nativeFullProjection
+'D0.Research.NativeSceneHistoryFeedback.native_full_projector_idempotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.native_generated_endpoint :
+  D0.Research.NativeSceneHistoryFeedback.nativeGeneratedHeat * D0.VNext2.SceneEndpointReynoldsExpectation.Jt =
+    D0.VNext2.SceneEndpointReynoldsExpectation.Jt * D0.Synthesis.SceneNormalizedQuotientDescent.fullNormalizedLaplacian
+'D0.Research.NativeSceneHistoryFeedback.native_generated_endpoint' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.native_generated_incoming :
+  D0.Research.NativeSceneHistoryFeedback.nativeGeneratedHeat * D0.Research.NativeSceneHistoryFeedback.nativeIncoming =
+    D0.Research.NativeSceneHistoryFeedback.nativeIncoming *
+      D0.Synthesis.SceneNormalizedQuotientDescent.fullNormalizedLaplacian
+'D0.Research.NativeSceneHistoryFeedback.native_generated_incoming' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.native_transport_normalized_commute :
+  D0.Synthesis.SceneNormalizedQuotientDescent.fullTransport *
+      D0.Synthesis.SceneNormalizedQuotientDescent.fullNormalizedLaplacian =
+    D0.Synthesis.SceneNormalizedQuotientDescent.fullNormalizedLaplacian *
+      D0.Synthesis.SceneNormalizedQuotientDescent.fullTransport
+'D0.Research.NativeSceneHistoryFeedback.native_transport_normalized_commute' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.native_both_readouts_determine_incoming
+  (A :
+    Matrix D0.VNext2.ScenePathHistoryCanonicity.LevelOneSceneHistory
+      D0.VNext2.ScenePathHistoryCanonicity.LevelOneSceneHistory ℚ)
+  (ht :
+    A * D0.VNext2.SceneEndpointReynoldsExpectation.Jt =
+      D0.VNext2.SceneEndpointReynoldsExpectation.Jt *
+        D0.Synthesis.SceneNormalizedQuotientDescent.fullNormalizedLaplacian)
+  (hs :
+    A * D0.VNext2.SceneEndpointReynoldsExpectation.Js =
+      D0.VNext2.SceneEndpointReynoldsExpectation.Js *
+        D0.Synthesis.SceneNormalizedQuotientDescent.fullNormalizedLaplacian) :
+  A * D0.Research.NativeSceneHistoryFeedback.nativeIncoming =
+    D0.Research.NativeSceneHistoryFeedback.nativeIncoming *
+      D0.Synthesis.SceneNormalizedQuotientDescent.fullNormalizedLaplacian
+'D0.Research.NativeSceneHistoryFeedback.native_both_readouts_determine_incoming' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.native_generated_source :
+  D0.Research.NativeSceneHistoryFeedback.nativeGeneratedHeat * D0.VNext2.SceneEndpointReynoldsExpectation.Js =
+    D0.VNext2.SceneEndpointReynoldsExpectation.Js * D0.Synthesis.SceneNormalizedQuotientDescent.fullNormalizedLaplacian
+'D0.Research.NativeSceneHistoryFeedback.native_generated_source' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.native_full_projector_source :
+  D0.Research.NativeSceneHistoryFeedback.nativeFullProjection * D0.VNext2.SceneEndpointReynoldsExpectation.Js =
+    D0.VNext2.SceneEndpointReynoldsExpectation.Js
+'D0.Research.NativeSceneHistoryFeedback.native_full_projector_source' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.native_all_joint_readouts_determine_generated_heat
+  (A :
+    Matrix D0.VNext2.ScenePathHistoryCanonicity.LevelOneSceneHistory
+      D0.VNext2.ScenePathHistoryCanonicity.LevelOneSceneHistory ℚ)
+  (ht :
+    A * D0.VNext2.SceneEndpointReynoldsExpectation.Jt =
+      D0.VNext2.SceneEndpointReynoldsExpectation.Jt *
+        D0.Synthesis.SceneNormalizedQuotientDescent.fullNormalizedLaplacian)
+  (hs :
+    A * D0.VNext2.SceneEndpointReynoldsExpectation.Js =
+      D0.VNext2.SceneEndpointReynoldsExpectation.Js *
+        D0.Synthesis.SceneNormalizedQuotientDescent.fullNormalizedLaplacian) :
+  A * D0.Research.NativeSceneHistoryFeedback.nativeFullProjection =
+    D0.Research.NativeSceneHistoryFeedback.nativeGeneratedHeat
+'D0.Research.NativeSceneHistoryFeedback.native_all_joint_readouts_determine_generated_heat' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.native_degree_inverse_selfadjoint :
+  D0.Synthesis.SceneNormalizedQuotientDescent.fullDegreeInv.transpose =
+    D0.Synthesis.SceneNormalizedQuotientDescent.fullDegreeInv
+'D0.Research.NativeSceneHistoryFeedback.native_degree_inverse_selfadjoint' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.native_adjacency_selfadjoint : D0.Claims.Adj31.transpose = D0.Claims.Adj31
+'D0.Research.NativeSceneHistoryFeedback.native_adjacency_selfadjoint' depends on axioms: [propext, Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.native_transport_weighted_selfadjoint :
+  (D0.Synthesis.SceneNormalizedQuotientDescent.fullTransport *
+        D0.Synthesis.SceneNormalizedQuotientDescent.fullDegreeInv).transpose =
+    D0.Synthesis.SceneNormalizedQuotientDescent.fullTransport *
+      D0.Synthesis.SceneNormalizedQuotientDescent.fullDegreeInv
+'D0.Research.NativeSceneHistoryFeedback.native_transport_weighted_selfadjoint' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.native_constant_weighted_entry (i j : Fin 33) :
+  (D0.Research.NativeSceneHistoryFeedback.nativeConstant * D0.Synthesis.SceneNormalizedQuotientDescent.fullDegreeInv) i
+      j =
+    1 / 718
+'D0.Research.NativeSceneHistoryFeedback.native_constant_weighted_entry' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.native_constant_weighted_selfadjoint :
+  (D0.Research.NativeSceneHistoryFeedback.nativeConstant *
+        D0.Synthesis.SceneNormalizedQuotientDescent.fullDegreeInv).transpose =
+    D0.Research.NativeSceneHistoryFeedback.nativeConstant * D0.Synthesis.SceneNormalizedQuotientDescent.fullDegreeInv
+'D0.Research.NativeSceneHistoryFeedback.native_constant_weighted_selfadjoint' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.native_coarse_h_weighted_selfadjoint :
+  (D0.Research.NativeSceneHistoryFeedback.nativeCoarseH *
+        D0.Synthesis.SceneNormalizedQuotientDescent.fullDegreeInv).transpose =
+    D0.Research.NativeSceneHistoryFeedback.nativeCoarseH * D0.Synthesis.SceneNormalizedQuotientDescent.fullDegreeInv
+'D0.Research.NativeSceneHistoryFeedback.native_coarse_h_weighted_selfadjoint' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.native_coarse_hi_weighted_selfadjoint :
+  (D0.Research.NativeSceneHistoryFeedback.nativeCoarseHI *
+        D0.Synthesis.SceneNormalizedQuotientDescent.fullDegreeInv).transpose =
+    D0.Research.NativeSceneHistoryFeedback.nativeCoarseHI * D0.Synthesis.SceneNormalizedQuotientDescent.fullDegreeInv
+'D0.Research.NativeSceneHistoryFeedback.native_coarse_hi_weighted_selfadjoint' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.native_normalized_weighted_selfadjoint :
+  (D0.Synthesis.SceneNormalizedQuotientDescent.fullNormalizedLaplacian *
+        D0.Synthesis.SceneNormalizedQuotientDescent.fullDegreeInv).transpose =
+    D0.Synthesis.SceneNormalizedQuotientDescent.fullNormalizedLaplacian *
+      D0.Synthesis.SceneNormalizedQuotientDescent.fullDegreeInv
+'D0.Research.NativeSceneHistoryFeedback.native_normalized_weighted_selfadjoint' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.native_h_normalized_commute :
+  D0.Research.NativeSceneHistoryFeedback.nativeCoarseH *
+      D0.Synthesis.SceneNormalizedQuotientDescent.fullNormalizedLaplacian =
+    D0.Synthesis.SceneNormalizedQuotientDescent.fullNormalizedLaplacian *
+      D0.Research.NativeSceneHistoryFeedback.nativeCoarseH
+'D0.Research.NativeSceneHistoryFeedback.native_h_normalized_commute' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.native_hi_normalized_commute :
+  D0.Research.NativeSceneHistoryFeedback.nativeCoarseHI *
+      D0.Synthesis.SceneNormalizedQuotientDescent.fullNormalizedLaplacian =
+    D0.Synthesis.SceneNormalizedQuotientDescent.fullNormalizedLaplacian *
+      D0.Research.NativeSceneHistoryFeedback.nativeCoarseHI
+'D0.Research.NativeSceneHistoryFeedback.native_hi_normalized_commute' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.native_history_average_weighted_adjoint :
+  D0.VNext2.SceneEndpointReynoldsExpectation.C1 =
+    D0.Synthesis.SceneNormalizedQuotientDescent.fullDegreeInv * D0.VNext2.SceneEndpointReynoldsExpectation.Jt.transpose
+'D0.Research.NativeSceneHistoryFeedback.native_history_average_weighted_adjoint' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.native_history_complement_selfadjoint :
+  (D0.Research.NativeSceneHistoryFeedback.historyComplement D0.VNext2.SceneEndpointReynoldsExpectation.Jt
+        D0.VNext2.SceneEndpointReynoldsExpectation.C1).transpose =
+    D0.Research.NativeSceneHistoryFeedback.historyComplement D0.VNext2.SceneEndpointReynoldsExpectation.Jt
+      D0.VNext2.SceneEndpointReynoldsExpectation.C1
+'D0.Research.NativeSceneHistoryFeedback.native_history_complement_selfadjoint' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.native_outgoing_weighted_adjoint :
+  D0.Research.NativeSceneHistoryFeedback.nativeOutgoing =
+    D0.Synthesis.SceneNormalizedQuotientDescent.fullDegreeInv *
+      D0.Research.NativeSceneHistoryFeedback.nativeIncoming.transpose
+'D0.Research.NativeSceneHistoryFeedback.native_outgoing_weighted_adjoint' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.native_full_projector_selfadjoint :
+  D0.Research.NativeSceneHistoryFeedback.nativeFullProjection.transpose =
+    D0.Research.NativeSceneHistoryFeedback.nativeFullProjection
+'D0.Research.NativeSceneHistoryFeedback.native_full_projector_selfadjoint' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.native_generated_heat_selfadjoint :
+  D0.Research.NativeSceneHistoryFeedback.nativeGeneratedHeat.transpose =
+    D0.Research.NativeSceneHistoryFeedback.nativeGeneratedHeat
+'D0.Research.NativeSceneHistoryFeedback.native_generated_heat_selfadjoint' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.native_generated_heat_supported :
+  D0.Research.NativeSceneHistoryFeedback.nativeGeneratedHeat *
+      D0.Research.NativeSceneHistoryFeedback.nativeFullProjection =
+    D0.Research.NativeSceneHistoryFeedback.nativeGeneratedHeat
+'D0.Research.NativeSceneHistoryFeedback.native_generated_heat_supported' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.native_complete_symmetric_joint_history_extensions
+  (A :
+    Matrix D0.VNext2.ScenePathHistoryCanonicity.LevelOneSceneHistory
+      D0.VNext2.ScenePathHistoryCanonicity.LevelOneSceneHistory ℚ) :
+  A.transpose = A ∧
+      A * D0.VNext2.SceneEndpointReynoldsExpectation.Jt =
+          D0.VNext2.SceneEndpointReynoldsExpectation.Jt *
+            D0.Synthesis.SceneNormalizedQuotientDescent.fullNormalizedLaplacian ∧
+        A * D0.VNext2.SceneEndpointReynoldsExpectation.Js =
+          D0.VNext2.SceneEndpointReynoldsExpectation.Js *
+            D0.Synthesis.SceneNormalizedQuotientDescent.fullNormalizedLaplacian ↔
+    ∃ B,
+      B.transpose = B ∧
+        B * D0.Research.NativeSceneHistoryFeedback.nativeFullProjection = 0 ∧
+          D0.Research.NativeSceneHistoryFeedback.nativeFullProjection * B = 0 ∧
+            A = D0.Research.NativeSceneHistoryFeedback.nativeGeneratedHeat + B
+'D0.Research.NativeSceneHistoryFeedback.native_complete_symmetric_joint_history_extensions' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.native_complete_joint_parameter_unique
+  (B1 B2 :
+    Matrix D0.VNext2.ScenePathHistoryCanonicity.LevelOneSceneHistory
+      D0.VNext2.ScenePathHistoryCanonicity.LevelOneSceneHistory ℚ) :
+  D0.Research.NativeSceneHistoryFeedback.nativeGeneratedHeat + B1 =
+      D0.Research.NativeSceneHistoryFeedback.nativeGeneratedHeat + B2 ↔
+    B1 = B2
+'D0.Research.NativeSceneHistoryFeedback.native_complete_joint_parameter_unique' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.native_full_complement_supported :
+  (1 - D0.Research.NativeSceneHistoryFeedback.nativeFullProjection) *
+        D0.Research.NativeSceneHistoryFeedback.nativeFullProjection =
+      0 ∧
+    D0.Research.NativeSceneHistoryFeedback.nativeFullProjection *
+        (1 - D0.Research.NativeSceneHistoryFeedback.nativeFullProjection) =
+      0
+'D0.Research.NativeSceneHistoryFeedback.native_full_complement_supported' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.native_scalar_complement_keeps_both_readouts (s : ℚ) :
+  (D0.Research.NativeSceneHistoryFeedback.nativeGeneratedHeat +
+          s • (1 - D0.Research.NativeSceneHistoryFeedback.nativeFullProjection)).transpose =
+      D0.Research.NativeSceneHistoryFeedback.nativeGeneratedHeat +
+        s • (1 - D0.Research.NativeSceneHistoryFeedback.nativeFullProjection) ∧
+    (D0.Research.NativeSceneHistoryFeedback.nativeGeneratedHeat +
+            s • (1 - D0.Research.NativeSceneHistoryFeedback.nativeFullProjection)) *
+          D0.VNext2.SceneEndpointReynoldsExpectation.Jt =
+        D0.VNext2.SceneEndpointReynoldsExpectation.Jt *
+          D0.Synthesis.SceneNormalizedQuotientDescent.fullNormalizedLaplacian ∧
+      (D0.Research.NativeSceneHistoryFeedback.nativeGeneratedHeat +
+            s • (1 - D0.Research.NativeSceneHistoryFeedback.nativeFullProjection)) *
+          D0.VNext2.SceneEndpointReynoldsExpectation.Js =
+        D0.VNext2.SceneEndpointReynoldsExpectation.Js *
+          D0.Synthesis.SceneNormalizedQuotientDescent.fullNormalizedLaplacian
+'D0.Research.NativeSceneHistoryFeedback.native_scalar_complement_keeps_both_readouts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.native_archive_rectangle_endpoint_zero :
+  D0.VNext2.SceneEndpointReynoldsExpectation.C1.mulVec D0.Research.NativeSceneHistoryFeedback.nativeArchiveRectangle = 0
+'D0.Research.NativeSceneHistoryFeedback.native_archive_rectangle_endpoint_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.native_archive_rectangle_reversed_endpoint_zero :
+  (D0.VNext2.SceneEndpointReynoldsExpectation.C1 * D0.Research.NativeSceneHistoryFeedback.nativeHistoryReverse).mulVec
+      D0.Research.NativeSceneHistoryFeedback.nativeArchiveRectangle =
+    0
+'D0.Research.NativeSceneHistoryFeedback.native_archive_rectangle_reversed_endpoint_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.native_archive_rectangle_outgoing_zero :
+  D0.Research.NativeSceneHistoryFeedback.nativeOutgoing.mulVec
+      D0.Research.NativeSceneHistoryFeedback.nativeArchiveRectangle =
+    0
+'D0.Research.NativeSceneHistoryFeedback.native_archive_rectangle_outgoing_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.native_archive_rectangle_projected_zero :
+  D0.Research.NativeSceneHistoryFeedback.nativeFullProjection.mulVec
+      D0.Research.NativeSceneHistoryFeedback.nativeArchiveRectangle =
+    0
+'D0.Research.NativeSceneHistoryFeedback.native_archive_rectangle_projected_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.native_archive_rectangle_nonzero :
+  D0.Research.NativeSceneHistoryFeedback.nativeArchiveRectangle ≠ 0
+'D0.Research.NativeSceneHistoryFeedback.native_archive_rectangle_nonzero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.native_full_complement_nonzero :
+  1 - D0.Research.NativeSceneHistoryFeedback.nativeFullProjection ≠ 0
+'D0.Research.NativeSceneHistoryFeedback.native_full_complement_nonzero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.native_zone_constant_trace :
+  D0.Research.NativeSceneHistoryFeedback.nativeZoneConstant.trace = 1
+'D0.Research.NativeSceneHistoryFeedback.native_zone_constant_trace' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.native_constant_trace :
+  D0.Research.NativeSceneHistoryFeedback.nativeConstant.trace = 1
+'D0.Research.NativeSceneHistoryFeedback.native_constant_trace' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.native_full_projector_trace :
+  D0.Research.NativeSceneHistoryFeedback.nativeFullProjection.trace = 65
+'D0.Research.NativeSceneHistoryFeedback.native_full_projector_trace' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.native_history_cardinality_in_kernel :
+  ↑(Fintype.card D0.VNext2.ScenePathHistoryCanonicity.LevelOneSceneHistory) = 718
+'D0.Research.NativeSceneHistoryFeedback.native_history_cardinality_in_kernel' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.native_full_complement_trace :
+  (1 - D0.Research.NativeSceneHistoryFeedback.nativeFullProjection).trace = 653
+'D0.Research.NativeSceneHistoryFeedback.native_full_complement_trace' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.native_reverse_reads_endpoint :
+  D0.Research.NativeSceneHistoryFeedback.nativeHistoryReverse * D0.VNext2.SceneEndpointReynoldsExpectation.Js =
+    D0.VNext2.SceneEndpointReynoldsExpectation.Jt
+'D0.Research.NativeSceneHistoryFeedback.native_reverse_reads_endpoint' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.native_reverse_incoming :
+  D0.Research.NativeSceneHistoryFeedback.nativeHistoryReverse * D0.Research.NativeSceneHistoryFeedback.nativeIncoming =
+    D0.VNext2.SceneEndpointReynoldsExpectation.Jt -
+      D0.VNext2.SceneEndpointReynoldsExpectation.Js * D0.Synthesis.SceneNormalizedQuotientDescent.fullTransport
+'D0.Research.NativeSceneHistoryFeedback.native_reverse_incoming' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.native_full_projector_preserves_reversed_incoming :
+  D0.Research.NativeSceneHistoryFeedback.nativeFullProjection *
+      (D0.Research.NativeSceneHistoryFeedback.nativeHistoryReverse *
+        D0.Research.NativeSceneHistoryFeedback.nativeIncoming) =
+    D0.Research.NativeSceneHistoryFeedback.nativeHistoryReverse * D0.Research.NativeSceneHistoryFeedback.nativeIncoming
+'D0.Research.NativeSceneHistoryFeedback.native_full_projector_preserves_reversed_incoming' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.native_full_projector_reverse_commute :
+  D0.Research.NativeSceneHistoryFeedback.nativeFullProjection *
+      D0.Research.NativeSceneHistoryFeedback.nativeHistoryReverse =
+    D0.Research.NativeSceneHistoryFeedback.nativeHistoryReverse *
+      D0.Research.NativeSceneHistoryFeedback.nativeFullProjection
+'D0.Research.NativeSceneHistoryFeedback.native_full_projector_reverse_commute' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.native_generated_reverse_joint_readouts :
+  D0.Research.NativeSceneHistoryFeedback.nativeGeneratedHeat *
+          D0.Research.NativeSceneHistoryFeedback.nativeHistoryReverse *
+        D0.VNext2.SceneEndpointReynoldsExpectation.Jt =
+      D0.Research.NativeSceneHistoryFeedback.nativeHistoryReverse *
+          D0.Research.NativeSceneHistoryFeedback.nativeGeneratedHeat *
+        D0.VNext2.SceneEndpointReynoldsExpectation.Jt ∧
+    D0.Research.NativeSceneHistoryFeedback.nativeGeneratedHeat *
+          D0.Research.NativeSceneHistoryFeedback.nativeHistoryReverse *
+        D0.Research.NativeSceneHistoryFeedback.nativeIncoming =
+      D0.Research.NativeSceneHistoryFeedback.nativeHistoryReverse *
+          D0.Research.NativeSceneHistoryFeedback.nativeGeneratedHeat *
+        D0.Research.NativeSceneHistoryFeedback.nativeIncoming
+'D0.Research.NativeSceneHistoryFeedback.native_generated_reverse_joint_readouts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.native_generated_reverse_commute :
+  D0.Research.NativeSceneHistoryFeedback.nativeGeneratedHeat *
+      D0.Research.NativeSceneHistoryFeedback.nativeHistoryReverse =
+    D0.Research.NativeSceneHistoryFeedback.nativeHistoryReverse *
+      D0.Research.NativeSceneHistoryFeedback.nativeGeneratedHeat
+'D0.Research.NativeSceneHistoryFeedback.native_generated_reverse_commute' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.native_scalar_complement_reverse_commute (s : ℚ) :
+  (D0.Research.NativeSceneHistoryFeedback.nativeGeneratedHeat +
+        s • (1 - D0.Research.NativeSceneHistoryFeedback.nativeFullProjection)) *
+      D0.Research.NativeSceneHistoryFeedback.nativeHistoryReverse =
+    D0.Research.NativeSceneHistoryFeedback.nativeHistoryReverse *
+      (D0.Research.NativeSceneHistoryFeedback.nativeGeneratedHeat +
+        s • (1 - D0.Research.NativeSceneHistoryFeedback.nativeFullProjection))
+'D0.Research.NativeSceneHistoryFeedback.native_scalar_complement_reverse_commute' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.native_scalar_complement_parameter_distinct (s t : ℚ) :
+  D0.Research.NativeSceneHistoryFeedback.nativeGeneratedHeat +
+        s • (1 - D0.Research.NativeSceneHistoryFeedback.nativeFullProjection) =
+      D0.Research.NativeSceneHistoryFeedback.nativeGeneratedHeat +
+        t • (1 - D0.Research.NativeSceneHistoryFeedback.nativeFullProjection) ↔
+    s = t
+'D0.Research.NativeSceneHistoryFeedback.native_scalar_complement_parameter_distinct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.scalar_completed_heat_positive (g beta s : ℝ) (hg : 0 < g) :
+  0 < D0.Research.NativeSceneHistoryFeedback.scalarCompletedHeat g beta s
+'D0.Research.NativeSceneHistoryFeedback.scalar_completed_heat_positive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.scalar_completed_heat_genuine_derivative (g beta s : ℝ) :
+  HasDerivAt (D0.Research.NativeSceneHistoryFeedback.scalarCompletedHeat g beta) (-653 * beta * Real.exp (-beta * s)) s
+'D0.Research.NativeSceneHistoryFeedback.scalar_completed_heat_genuine_derivative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.scalar_completed_action_genuine_derivative (g beta f s : ℝ) (hg : 0 < g)
+  (hb : beta ≠ 0) :
+  HasDerivAt (D0.Research.NativeSceneHistoryFeedback.scalarCompletedAction g beta f)
+    (-653 * Real.exp (-beta * s) / D0.Research.NativeSceneHistoryFeedback.scalarCompletedHeat g beta s) s
+'D0.Research.NativeSceneHistoryFeedback.scalar_completed_action_genuine_derivative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.scalar_completed_action_derivative_nonzero (g beta f s : ℝ) (hg : 0 < g)
+  (hb : beta ≠ 0) : deriv (D0.Research.NativeSceneHistoryFeedback.scalarCompletedAction g beta f) s ≠ 0
+'D0.Research.NativeSceneHistoryFeedback.scalar_completed_action_derivative_nonzero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeSceneHistoryFeedback.full_and_scene_heat_source_agree_iff (x y xp yp : ℝ) (hx : x ≠ 0)
+  (ht : 2 * x - 1 + y ≠ 0) : (2 * xp + yp) / (2 * x - 1 + y) = xp / x ↔ x * yp = (y - 1) * xp
+'D0.Research.NativeSceneHistoryFeedback.full_and_scene_heat_source_agree_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

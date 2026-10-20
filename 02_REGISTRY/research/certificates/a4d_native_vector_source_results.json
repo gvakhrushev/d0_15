@@ -1,0 +1,35 @@
+{
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "capsule": "02_REGISTRY/research/certificates/a4d_native_vector_source.lean",
+  "capsule_sha256": "9d61a29f93d017285b9d9d7a7baf476d9099ec9e38e3c59d4ab95b68c55cb280",
+  "command": "lake env lean ../02_REGISTRY/research/certificates/a4d_native_vector_source.lean",
+  "command_cwd": "03_FORMALIZATION",
+  "compiler_exit_code": 0,
+  "output": "02_REGISTRY/research/certificates/a4d_native_vector_source_output.txt",
+  "output_sha256": "237492c60cd80b93416be781ed1aeec47dc8c2bb76ae425babd26d9c8508fa3d",
+  "owner_input_head": "a4a0ee1ce0a48fe07da0da036e122262e8cc7d44",
+  "printed_axiom_dependencies": 20,
+  "scope": "Literal real-skew matrix kinetic action: exact first variations, full free gate, supplied-source Fredholm alternative and actual simultaneous-conjugation Ward; no physical metric/source/refinement selection.",
+  "sorryAx": false,
+  "status": "PASS",
+  "toolchain_input_sha256": {
+    "03_FORMALIZATION/lake-manifest.json": "4ed211000f753c64c6b1fc155970f6b28c9500763f1ad520d8762ae165ac24fa",
+    "03_FORMALIZATION/lakefile.lean": "7a49cbade1c863e91b5cdc0dff0dddd8a272a3da94ef24200c6e3683276273e9",
+    "03_FORMALIZATION/lean-toolchain": "54727eec5cba149c18842e6deb5c41b369d66455c93ce135d7d5347c782b2325"
+  },
+  "transitive_d0_source_sha256": {
+    "03_FORMALIZATION/D0/Algebra/ArchiveCommutatorOperators.lean": "93544b08223a52e13fd1d11c3813c97f05a63f1f368baa29c5844d3df751cf4b",
+    "03_FORMALIZATION/D0/Algebra/GaugeActionSignBridge.lean": "2d09a85c253c72c457af5cbb6981613ca3218f6d4da24cb9512d9cfc51cf86e9",
+    "03_FORMALIZATION/D0/Algebra/GaugeKineticPositivity.lean": "ffb571ed280b40aa343119a7f561346a64bb0e08570aad6a5c775ab23e7b9c1b",
+    "03_FORMALIZATION/D0/Gauge/MatrixRepGaugeTransform.lean": "780dec878df5a5b102faeae48fd35fb3b781a3b1011884e19620b88adccd3a43",
+    "03_FORMALIZATION/D0/Gauge/NonAbelianDiscreteCurvature.lean": "bb9ee02ab9467b7df5e9f1dd7730bcd09b2b2ba8d0a1cc3ab65f3bd11df7b352",
+    "03_FORMALIZATION/D0/Gauge/NonAbelianSeamObstructionGap.lean": "f3ea4fa4a4a0f4c2291f1439066083e1d5a07d84100897f5ce2a9d07ecb19772",
+    "03_FORMALIZATION/D0/Matter/GaugeCurvatureOrigin.lean": "681f43843a2b85849f85d5a766247a02d0cde1b9438a463a5826c1d2fe46628d",
+    "03_FORMALIZATION/D0/Matter/VectorFieldEquation.lean": "cd7331e964a14d850f23ae0c2cb8582125a6391762b02779cf03d03f8938f153",
+    "03_FORMALIZATION/D0/Matter/VectorOperatorOrigin.lean": "bc7c01820e8da975d3ae073d047ef41a6976efdcf0bdae8f8edfec8f605ecf63"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "type": "ANALYTIC_EXISTENCE_FROM_OUTWARD_INTERVAL_CONTRACTION",
+  "L": 8,
+  "beta": "log(2)",
+  "number_of_modes": 4096,
+  "Fock_dimension": 16,
+  "grouped_exact_feature_pairs": 119,
+  "center_decimal_rationals": [
+    "0.0703479800732546633051613991632074837936297771",
+    "0.00442423969312599701411586507917412808276994365"
+  ],
+  "coordinate_radius": "1e-12",
+  "contraction_infinity_norm_upper": "1e-6",
+  "self_mapping_verified": true,
+  "SPD_transverse_lower": ".065",
+  "SPD_longitudinal_lower": ".083",
+  "next_shell_gap_lower": "1",
+  "selected_momentum_modes": 8,
+  "selected_Fock_modes": 128,
+  "zero_Fock_modes": 16,
+  "row_contraction_interval": [
+    "[0.0, 0.000000000738664704808630036682573018083852792685499010951846216165293]",
+    "[0.0, 0.000000000382191122592360421826257332003647384138331488436762067741063]"
+  ],
+  "preconditioned_center_residual_interval": [
+    "[1.52972755823682292236116661832242361129857827016876888080481e-47, 1.52972757494631951502492323766133254052981394630971167921135e-47]",
+    "[4.39241869164273545693947988208472531576291293540471913532587e-48, 4.39241870659964885996320931667954557271873577442540789436808e-48]"
+  ],
+  "preconditioner_decimal_rationals": [
+    [
+      "-0.00122945354007158138881611254236981281095447504",
+      "0.0000233104120505659799857915913455873977248833275"
+    ],
+    [
+      "0.0000233104120505659799857915913455873977248833275",
+      "-0.00121774996257520468494771603866337900446393662"
+    ]
+  ],
+  "matter_admission_from_D0_pi0": false,
+  "curved_GR_derived": false,
+  "proof_boundary": "Analytic translation/Fock-trace identities extend this homogeneous root to all local metric and specified linear-link first variations; other D0 action terms are not included."
+}

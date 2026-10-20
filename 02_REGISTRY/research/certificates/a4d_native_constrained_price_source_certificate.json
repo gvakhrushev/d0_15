@@ -1,0 +1,79 @@
+{
+  "check_count": 528,
+  "checker_sha256": "0eaa7e42d6623fcf5d3861209e93430f8ab39a694b07eeba570483ce935e9cb6",
+  "checks": {
+    "actual_full_U_jet_orthogonal": 34,
+    "actual_full_feedback_jet": 34,
+    "actual_propositions_and_axioms": 1,
+    "actual_retained_jet": 34,
+    "all_archive_feedback_rows_retained": 3,
+    "all_pinned_inputs": 26,
+    "all_ten_packed_metric_weights": 10,
+    "ambient_non_tangent_is_detected": 1,
+    "complete_isometry_tangent_equations": 34,
+    "conormal_center_cotangent_unchanged": 1,
+    "conormal_link_skew_cotangent_unchanged": 4,
+    "conormal_target_cotangent_unchanged": 4,
+    "full_archive_jacobi_source_zero": 34,
+    "full_archive_owned_orthogonal_operator": 3,
+    "full_conormal_restriction_all_74": 74,
+    "full_joint_tangent_all_50_plus_24": 74,
+    "full_two_step_active_block": 3,
+    "genuine_resolvent_domain": 3,
+    "golden_involution_feedback": 3,
+    "intrinsic_source_normal_form_all_74": 74,
+    "kernel_exit_and_declared_input": 1,
+    "no_nonstandard_axioms_or_compiler_diagnostics": 1,
+    "nonconstant_parameter_gap_sensitivity_retained": 1,
+    "noninvolutive_exception_is_admitted_orthogonal_curve": 1,
+    "noninvolutive_exception_preserved": 1,
+    "off_shell_link_lift_ambiguity_retained": 1,
+    "operator_jet_can_be_nonzero_while_price_jet_zero": 1,
+    "relative_first_jet_orthogonal": 34,
+    "resolved_proposition_and_transitive_axioms": 33
+  },
+  "compiled_propositions": 33,
+  "golden_archive_fixtures": [
+    {
+      "active": 2,
+      "archive": 2,
+      "independent_frame_generator_tests": 2
+    },
+    {
+      "active": 2,
+      "archive": 4,
+      "independent_frame_generator_tests": 12
+    },
+    {
+      "active": 4,
+      "archive": 5,
+      "independent_frame_generator_tests": 20
+    }
+  ],
+  "input_head": "0545eaf95ac3857b30c43f266311c80c1d751d01",
+  "joint_connection_probes": 24,
+  "joint_metric_probes": 50,
+  "lean_receipt_sha256": "e8bb8f7e777637034a9945a5ec7671dd872f5fa4c61f6ec7a5ad218088797f37",
+  "proof_sha256": "e2615abad73460950050ce529f45979b07c4ca5e011bfc203f9180a0f08674f6",
+  "schema": "d0-constrained-price-source/1",
+  "scope": {
+    "G0_or_T0_T1_T2_T3_fully_closed": false,
+    "actual_recorded_fullStep_block_binding": "COMPILED_LEAN",
+    "all_archive_delays_metric_response_zero": false,
+    "analytic_logdet_derivative": "ANALYTIC_FINITE_DIMENSIONAL_JACOBI_PROOF_IN_MEMO",
+    "curved_roots_soundness_recovery_positive_GR_or_global_closure": false,
+    "fixed_golden_compression_class_exhaustive_for_all_core_variations": false,
+    "generic_logdet_HasDerivAt_compiled": false,
+    "golden_full_archive_two_tick_jacobi_contraction": "GENERIC_LEAN_ZERO_AT_SYMMETRIC_INVOLUTIONS",
+    "intrinsic_joint_source_normal_form": "GENERIC_LEAN_IDENTITY_AND_ANALYTIC_COMPLETE_TANGENT_CHART",
+    "metric_lift_independence_without_link_equations": false,
+    "native_Gamma_or_its_first_jet_constructed": false,
+    "new_action_selector_temperature_or_postulate": false,
+    "own_heat_metric_link_matter_source_or_Ward_constructed": false,
+    "parent_terminals_changed": false,
+    "source_equals_rho0": false,
+    "zero_feedback_first_jet_means_zero_feedback_operator_jet": false,
+    "zero_feedback_first_jet_means_zero_whole_bootstrap_source": false
+  },
+  "transitive_d0_source_pins": 4
+}

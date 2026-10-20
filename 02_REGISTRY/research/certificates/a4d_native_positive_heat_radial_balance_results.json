@@ -1,0 +1,305 @@
+{
+  "axioms": {
+    "D0.Geometry.dConn_raises_degree": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound",
+      "D0.Geometry.carCreateInt_degree_raise._native.native_decide.ax_1_1"
+    ],
+    "D0.Research.NativeComposedFeedbackDynamics.genuine_thermal_source": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.NativePositiveHeatRadialBalance.actual_covariant_d_raises_degree": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.NativePositiveHeatRadialBalance.actual_heat_radial_derivative": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.NativePositiveHeatRadialBalance.actual_shape_heat_derivative": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.NativePositiveHeatRadialBalance.actual_weighted_dirac_square": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.NativePositiveHeatRadialBalance.all_retained_zero_modes_keep_strict_sign": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.NativePositiveHeatRadialBalance.complete_radial_balance": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.NativePositiveHeatRadialBalance.full_joint_radial_tangent": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.NativePositiveHeatRadialBalance.full_price_radial_derivative": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.NativePositiveHeatRadialBalance.kernel_create_degree_raise": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.NativePositiveHeatRadialBalance.kernel_create_degree_raise_int": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.NativePositiveHeatRadialBalance.nonzero_calibration_retains_radial_source": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.NativePositiveHeatRadialBalance.radialSpectrum_derivative": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.NativePositiveHeatRadialBalance.radialSpectrum_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.NativePositiveHeatRadialBalance.radial_thermal_source": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.NativePositiveHeatRadialBalance.retained_zero_modes_partition": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.NativePositiveHeatRadialBalance.scale_stationary_remainder_excludes_stationarity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.NativePositiveHeatRadialBalance.scaled_square_similarity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.NativePositiveHeatRadialBalance.shapeSpectrum_derivative": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.NativePositiveHeatRadialBalance.shapeSpectrum_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.NativePositiveHeatRadialBalance.shape_thermal_source": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.NativePositiveHeatRadialBalance.thermalEnergy_nonnegative": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.NativePositiveHeatRadialBalance.thermalEnergy_positive": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.NativePositiveHeatRadialBalance.zero_operator_control": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.NativeWeightedDiracBoundary.identity_weight_binding": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "capsule": "02_REGISTRY/research/certificates/a4d_native_positive_heat_radial_balance.lean",
+  "capsule_sha256": "e212da4164e5aadb47a969982cbf6089c52b6ab22b7ecb44c55fe5c877520543",
+  "command": [
+    "python3",
+    "02_REGISTRY/research/certificates/a4d_native_positive_heat_radial_balance_check.py",
+    "--compile"
+  ],
+  "compiler_exit_code": 0,
+  "compiler_procedure": "Use lake env to resolve the pinned Lean executable and dependency path. Copy the two unchanged research capsules and this capsule into a fresh temporary root; compile each in dependency order with --root and -o. Only then compile and audit this capsule.",
+  "declarations": [
+    "D0.Research.NativePositiveHeatRadialBalance.radialSpectrum_zero",
+    "D0.Research.NativePositiveHeatRadialBalance.radialSpectrum_derivative",
+    "D0.Research.NativePositiveHeatRadialBalance.radial_thermal_source",
+    "D0.Research.NativePositiveHeatRadialBalance.actual_heat_radial_derivative",
+    "D0.Research.NativePositiveHeatRadialBalance.thermalEnergy_nonnegative",
+    "D0.Research.NativePositiveHeatRadialBalance.thermalEnergy_positive",
+    "D0.Research.NativePositiveHeatRadialBalance.full_price_radial_derivative",
+    "D0.Research.NativePositiveHeatRadialBalance.complete_radial_balance",
+    "D0.Research.NativePositiveHeatRadialBalance.scale_stationary_remainder_excludes_stationarity",
+    "D0.Research.NativePositiveHeatRadialBalance.nonzero_calibration_retains_radial_source",
+    "D0.Research.NativePositiveHeatRadialBalance.zero_operator_control",
+    "D0.Research.NativePositiveHeatRadialBalance.retained_zero_modes_partition",
+    "D0.Research.NativePositiveHeatRadialBalance.all_retained_zero_modes_keep_strict_sign",
+    "D0.Research.NativePositiveHeatRadialBalance.full_joint_radial_tangent",
+    "D0.Research.NativePositiveHeatRadialBalance.scaled_square_similarity",
+    "D0.Research.NativePositiveHeatRadialBalance.actual_weighted_dirac_square",
+    "D0.Research.NativePositiveHeatRadialBalance.kernel_create_degree_raise_int",
+    "D0.Research.NativePositiveHeatRadialBalance.kernel_create_degree_raise",
+    "D0.Research.NativePositiveHeatRadialBalance.actual_covariant_d_raises_degree",
+    "D0.Research.NativePositiveHeatRadialBalance.shapeSpectrum_zero",
+    "D0.Research.NativePositiveHeatRadialBalance.shapeSpectrum_derivative",
+    "D0.Research.NativePositiveHeatRadialBalance.shape_thermal_source",
+    "D0.Research.NativePositiveHeatRadialBalance.actual_shape_heat_derivative"
+  ],
+  "full_graded_spectral_and_uniform_L_bound_kernel_formalized": false,
+  "inherited_primary_degree_axioms": [
+    "D0.Geometry.carCreateInt_degree_raise._native.native_decide.ax_1_1"
+  ],
+  "input_head": "2d3a678ef308735c9c6fbcc3c5af94e45c0ba23c",
+  "native_preparation_source_or_GR_derived": false,
+  "output": "02_REGISTRY/research/certificates/a4d_native_positive_heat_radial_balance_output.txt",
+  "output_sha256": "2d74685d786f3465cacb6243ed6b53fa7f706071c2761db3255a7ac5f9efd514",
+  "primary_and_prior_input_sha256": {
+    "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d",
+    "02_REGISTRY/research/A4D_NATIVE_COMPOSED_FEEDBACK_DYNAMICS.md": "32442eac8d018cb764f6b47ee41f5fc7f1579e12f401491863ffc9d1162501bd",
+    "02_REGISTRY/research/A4D_NATIVE_CONSTRAINED_PRICE_SOURCE.md": "e2615abad73460950050ce529f45979b07c4ca5e011bfc203f9180a0f08674f6",
+    "02_REGISTRY/research/A4D_NATIVE_HODGE_CONNES_METRIC.md": "6836cf4082a6dae3240a8e42ed7891a6bef654f540ed31c7e1a5700e9d5c4169",
+    "02_REGISTRY/research/A4D_NATIVE_WEIGHTED_DIRAC_BOUNDARY.md": "8c4c662f9f05430ef9f9ff91c670b15e6c678c9b2b1c0ced90e08c79f507e83c",
+    "02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean": "ad8176fa236ae59110bf6df96d7263f4902dfb84d0f177dc59e917a2a81c78c9",
+    "02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics_output.txt": "8ccd18d67235cf7bcd0f9bd7857f91668eaa10c3e16e57392521388f2388da18",
+    "02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics_results.json": "18b05faaab91a40e89b982f6e0d759a66dc2d30e8bec24e7dbd5285cc4f501c8",
+    "02_REGISTRY/research/certificates/a4d_native_weighted_dirac_boundary.lean": "211f43dc97b9c809156bcb87939596757a7143b3e393d4dc4f3215c18d14cff6",
+    "02_REGISTRY/research/certificates/a4d_native_weighted_dirac_boundary_output.txt": "d47da6b47d6af962cf42548f4f52eb61a2610e081e06f466749a9858929a4dd4",
+    "02_REGISTRY/research/certificates/a4d_native_weighted_dirac_boundary_results.json": "435118c0f272430d1cfb1954f39e17148b9ea8e4c0be97caa6a86f514eacd195"
+  },
+  "primary_owner_propositions": [
+    "D0.Geometry.dConn_raises_degree",
+    "D0.Research.NativeComposedFeedbackDynamics.genuine_thermal_source",
+    "D0.Research.NativeWeightedDiracBoundary.identity_weight_binding"
+  ],
+  "printed_primary_owner_propositions": {
+    "D0.Geometry.dConn_raises_degree": "D0.Geometry.dConn_raises_degree.{u_1} {N : \u2115} {V : Type u_1} [AddCommGroup V] [Module \u211d V]\n  (U : D0.Geometry.LinkConnection N \u211d V) (k : \u2115) (\u03c8 : D0.Geometry.CoeffCochain N V)\n  (h\u03c8 : D0.Geometry.CoeffHomogeneous k \u03c8) : D0.Geometry.CoeffHomogeneous (k + 1) (D0.Geometry.dConn U \u03c8)",
+    "D0.Research.NativeComposedFeedbackDynamics.genuine_thermal_source": "D0.Research.NativeComposedFeedbackDynamics.genuine_thermal_source.{u_1} {n : Type u_1} [Fintype n] [DecidableEq n]\n  [Nonempty n] (beta t : \u211d) (lambda : \u211d \u2192 n \u2192 \u211d) (v : n \u2192 \u211d) (hb : beta \u2260 0)\n  (h : \u2200 (i : n), HasDerivAt (fun s => lambda s i) (v i) t) :\n  HasDerivAt (fun s => D0.Research.NativeComposedFeedbackDynamics.heatContribution beta (lambda s))\n    (D0.Research.NativeComposedFeedbackDynamics.thermalSource beta (lambda t) v) t",
+    "D0.Research.NativeWeightedDiracBoundary.identity_weight_binding": "D0.Research.NativeWeightedDiracBoundary.identity_weight_binding (N : \u2115) (u : D0.Geometry.ArchiveCochain N) :\n  D0.Research.NativeWeightedDiracBoundary.weightedDirac N (LinearEquiv.refl \u211d (D0.Geometry.ArchiveCochain N)) u =\n    D0.Geometry.hodgeCarDirac N u"
+  },
+  "printed_propositions": {
+    "D0.Research.NativePositiveHeatRadialBalance.actual_covariant_d_raises_degree": "D0.Research.NativePositiveHeatRadialBalance.actual_covariant_d_raises_degree.{u_1} {N : \u2115} {V : Type u_1}\n  [AddCommGroup V] [Module \u211d V] (U : D0.Geometry.LinkConnection N \u211d V) (k : \u2115) (\u03c8 : D0.Geometry.CoeffCochain N V)\n  (h\u03c8 : D0.Geometry.CoeffHomogeneous k \u03c8) : D0.Geometry.CoeffHomogeneous (k + 1) (D0.Geometry.dConn U \u03c8)",
+    "D0.Research.NativePositiveHeatRadialBalance.actual_heat_radial_derivative": "D0.Research.NativePositiveHeatRadialBalance.actual_heat_radial_derivative.{u_1} {\u03b9 : Type u_1} [Fintype \u03b9]\n  [DecidableEq \u03b9] [Nonempty \u03b9] (beta : \u211d) (lambda : \u03b9 \u2192 \u211d) (hb : beta \u2260 0) :\n  HasDerivAt\n    (fun t =>\n      D0.Research.NativeComposedFeedbackDynamics.heatContribution beta\n        (D0.Research.NativePositiveHeatRadialBalance.radialSpectrum lambda t))\n    (2 * D0.Research.NativePositiveHeatRadialBalance.thermalEnergy beta lambda) 0",
+    "D0.Research.NativePositiveHeatRadialBalance.actual_shape_heat_derivative": "D0.Research.NativePositiveHeatRadialBalance.actual_shape_heat_derivative.{u_1} {\u03b9 : Type u_1} [Fintype \u03b9]\n  [DecidableEq \u03b9] [Nonempty \u03b9] (beta : \u211d) (a b c : \u03b9 \u2192 \u211d) (hb : beta \u2260 0) :\n  HasDerivAt\n    (fun t =>\n      D0.Research.NativeComposedFeedbackDynamics.heatContribution beta\n        (D0.Research.NativePositiveHeatRadialBalance.shapeSpectrum a b c t))\n    (D0.Research.NativePositiveHeatRadialBalance.modeMean beta (fun i => a i + b i + c i) a -\n      D0.Research.NativePositiveHeatRadialBalance.modeMean beta (fun i => a i + b i + c i) b)\n    0",
+    "D0.Research.NativePositiveHeatRadialBalance.actual_weighted_dirac_square": "D0.Research.NativePositiveHeatRadialBalance.actual_weighted_dirac_square (N : \u2115)\n  (W : D0.Geometry.ArchiveCochain N \u2243\u2097[\u211d] D0.Geometry.ArchiveCochain N) (u : D0.Geometry.ArchiveCochain N) :\n  D0.Research.NativeWeightedDiracBoundary.weightedDirac N W\n      (D0.Research.NativeWeightedDiracBoundary.weightedDirac N W u) =\n    D0.Geometry.dForward N (D0.Research.NativeWeightedDiracBoundary.weightedCodiff N W u) +\n      D0.Research.NativeWeightedDiracBoundary.weightedCodiff N W (D0.Geometry.dForward N u)",
+    "D0.Research.NativePositiveHeatRadialBalance.all_retained_zero_modes_keep_strict_sign": "D0.Research.NativePositiveHeatRadialBalance.all_retained_zero_modes_keep_strict_sign.{u_1, u_2} {\u03b9 : Type u_1}\n  [Fintype \u03b9] [DecidableEq \u03b9] [Nonempty \u03b9] {\u03ba : Type u_2} [Fintype \u03ba] [DecidableEq \u03ba] (beta : \u211d) (lambda : \u03b9 \u2192 \u211d)\n  (hl : \u2200 (i : \u03b9), 0 \u2264 lambda i) (hp : \u2203 i, 0 < lambda i) :\n  0 <\n    D0.Research.NativePositiveHeatRadialBalance.thermalEnergy beta\n      (D0.Research.NativePositiveHeatRadialBalance.retainZeroModes lambda)",
+    "D0.Research.NativePositiveHeatRadialBalance.complete_radial_balance": "D0.Research.NativePositiveHeatRadialBalance.complete_radial_balance.{u_1} {\u03b9 : Type u_1} [Fintype \u03b9] (beta : \u211d)\n  (lambda : \u03b9 \u2192 \u211d) (r : \u211d) :\n  2 * D0.Research.NativePositiveHeatRadialBalance.thermalEnergy beta lambda + r = 0 \u2194\n    r = -2 * D0.Research.NativePositiveHeatRadialBalance.thermalEnergy beta lambda",
+    "D0.Research.NativePositiveHeatRadialBalance.full_joint_radial_tangent": "D0.Research.NativePositiveHeatRadialBalance.full_joint_radial_tangent.{u_1} {\u03b9 : Type u_1} [Fintype \u03b9] [DecidableEq \u03b9]\n  (qS qT D : Matrix \u03b9 \u03b9 \u211d) (h : D * qT * D.transpose = qS) :\n  D * 2 \u2022 qT * D.transpose + 0 * qT * D.transpose + D * qT * Matrix.transpose 0 = 2 \u2022 qS",
+    "D0.Research.NativePositiveHeatRadialBalance.full_price_radial_derivative": "D0.Research.NativePositiveHeatRadialBalance.full_price_radial_derivative.{u_1} {\u03b9 : Type u_1} [Fintype \u03b9]\n  [DecidableEq \u03b9] [Nonempty \u03b9] (beta : \u211d) (lambda : \u03b9 \u2192 \u211d) (hb : beta \u2260 0) (remainder : \u211d \u2192 \u211d) (r : \u211d)\n  (hr : HasDerivAt remainder r 0) :\n  HasDerivAt\n    (fun t =>\n      D0.Research.NativeComposedFeedbackDynamics.heatContribution beta\n          (D0.Research.NativePositiveHeatRadialBalance.radialSpectrum lambda t) +\n        remainder t)\n    (2 * D0.Research.NativePositiveHeatRadialBalance.thermalEnergy beta lambda + r) 0",
+    "D0.Research.NativePositiveHeatRadialBalance.kernel_create_degree_raise": "D0.Research.NativePositiveHeatRadialBalance.kernel_create_degree_raise_int (r : D0.Role)\n  (bra ket : D0.Geometry.ArchiveFockState) :\n  D0.Geometry.carCreateInt r bra ket \u2260 0 \u2192 D0.Geometry.fockDegree bra = D0.Geometry.fockDegree ket + 1\n'D0.Research.NativePositiveHeatRadialBalance.kernel_create_degree_raise_int' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\nD0.Research.NativePositiveHeatRadialBalance.kernel_create_degree_raise (r : D0.Role)\n  (bra ket : D0.Geometry.ArchiveFockState) (h : D0.Geometry.carCreate r bra ket \u2260 0) :\n  D0.Geometry.fockDegree bra = D0.Geometry.fockDegree ket + 1",
+    "D0.Research.NativePositiveHeatRadialBalance.kernel_create_degree_raise_int": "D0.Research.NativePositiveHeatRadialBalance.kernel_create_degree_raise_int (r : D0.Role)\n  (bra ket : D0.Geometry.ArchiveFockState) :\n  D0.Geometry.carCreateInt r bra ket \u2260 0 \u2192 D0.Geometry.fockDegree bra = D0.Geometry.fockDegree ket + 1",
+    "D0.Research.NativePositiveHeatRadialBalance.nonzero_calibration_retains_radial_source": "D0.Research.NativePositiveHeatRadialBalance.nonzero_calibration_retains_radial_source.{u_1} {\u03b9 : Type u_1} [Fintype \u03b9]\n  [DecidableEq \u03b9] [Nonempty \u03b9] (beta a : \u211d) (lambda : \u03b9 \u2192 \u211d) (ha : a \u2260 0) (hl : \u2200 (i : \u03b9), 0 \u2264 lambda i)\n  (hp : \u2203 i, 0 < lambda i) : a\u207b\u00b9 * (2 * D0.Research.NativePositiveHeatRadialBalance.thermalEnergy beta lambda) \u2260 0",
+    "D0.Research.NativePositiveHeatRadialBalance.radialSpectrum_derivative": "D0.Research.NativePositiveHeatRadialBalance.radialSpectrum_derivative.{u_1} {\u03b9 : Type u_1} (lambda : \u03b9 \u2192 \u211d) (i : \u03b9) :\n  HasDerivAt (fun t => D0.Research.NativePositiveHeatRadialBalance.radialSpectrum lambda t i) (-2 * lambda i) 0",
+    "D0.Research.NativePositiveHeatRadialBalance.radialSpectrum_zero": "D0.Research.NativePositiveHeatRadialBalance.radialSpectrum_zero.{u_1} {\u03b9 : Type u_1} (lambda : \u03b9 \u2192 \u211d) :\n  D0.Research.NativePositiveHeatRadialBalance.radialSpectrum lambda 0 = lambda",
+    "D0.Research.NativePositiveHeatRadialBalance.radial_thermal_source": "D0.Research.NativePositiveHeatRadialBalance.radial_thermal_source.{u_1} {\u03b9 : Type u_1} [Fintype \u03b9] (beta : \u211d)\n  (lambda : \u03b9 \u2192 \u211d) :\n  (D0.Research.NativeComposedFeedbackDynamics.thermalSource beta lambda fun i => -2 * lambda i) =\n    2 * D0.Research.NativePositiveHeatRadialBalance.thermalEnergy beta lambda",
+    "D0.Research.NativePositiveHeatRadialBalance.retained_zero_modes_partition": "D0.Research.NativePositiveHeatRadialBalance.retained_zero_modes_partition.{u_1, u_2} {\u03b9 : Type u_1} [Fintype \u03b9]\n  {\u03ba : Type u_2} [Fintype \u03ba] [DecidableEq \u03ba] (beta : \u211d) (lambda : \u03b9 \u2192 \u211d) :\n  D0.Research.NativeComposedFeedbackDynamics.thermalPartition beta\n      (D0.Research.NativePositiveHeatRadialBalance.retainZeroModes lambda) =\n    D0.Research.NativeComposedFeedbackDynamics.thermalPartition beta lambda + \u2191(Fintype.card \u03ba)",
+    "D0.Research.NativePositiveHeatRadialBalance.scale_stationary_remainder_excludes_stationarity": "D0.Research.NativePositiveHeatRadialBalance.scale_stationary_remainder_excludes_stationarity.{u_1} {\u03b9 : Type u_1}\n  [Fintype \u03b9] [DecidableEq \u03b9] [Nonempty \u03b9] (beta : \u211d) (lambda : \u03b9 \u2192 \u211d) (hb : beta \u2260 0) (hl : \u2200 (i : \u03b9), 0 \u2264 lambda i)\n  (hp : \u2203 i, 0 < lambda i) (remainder : \u211d \u2192 \u211d) (hr : HasDerivAt remainder 0 0) :\n  \u00acHasDerivAt\n      (fun t =>\n        D0.Research.NativeComposedFeedbackDynamics.heatContribution beta\n            (D0.Research.NativePositiveHeatRadialBalance.radialSpectrum lambda t) +\n          remainder t)\n      0 0",
+    "D0.Research.NativePositiveHeatRadialBalance.scaled_square_similarity": "D0.Research.NativePositiveHeatRadialBalance.scaled_square_similarity.{u_1} {\u03b9 : Type u_1} [Fintype \u03b9] [DecidableEq \u03b9]\n  (A J JI : Matrix \u03b9 \u03b9 \u211d) (r : \u211d) (h : JI * J = 1) : r \u2022 (J * A * JI) * r \u2022 (J * A * JI) = r ^ 2 \u2022 (J * (A * A) * JI)",
+    "D0.Research.NativePositiveHeatRadialBalance.shapeSpectrum_derivative": "D0.Research.NativePositiveHeatRadialBalance.shapeSpectrum_derivative.{u_1} {\u03b9 : Type u_1} (a b c : \u03b9 \u2192 \u211d) (i : \u03b9) :\n  HasDerivAt (fun t => D0.Research.NativePositiveHeatRadialBalance.shapeSpectrum a b c t i) (-a i + b i) 0",
+    "D0.Research.NativePositiveHeatRadialBalance.shapeSpectrum_zero": "D0.Research.NativePositiveHeatRadialBalance.shapeSpectrum_zero.{u_1} {\u03b9 : Type u_1} (a b c : \u03b9 \u2192 \u211d) :\n  D0.Research.NativePositiveHeatRadialBalance.shapeSpectrum a b c 0 = fun i => a i + b i + c i",
+    "D0.Research.NativePositiveHeatRadialBalance.shape_thermal_source": "D0.Research.NativePositiveHeatRadialBalance.shape_thermal_source.{u_1} {\u03b9 : Type u_1} [Fintype \u03b9] (beta : \u211d)\n  (lambda a b : \u03b9 \u2192 \u211d) :\n  (D0.Research.NativeComposedFeedbackDynamics.thermalSource beta lambda fun i => -a i + b i) =\n    D0.Research.NativePositiveHeatRadialBalance.modeMean beta lambda a -\n      D0.Research.NativePositiveHeatRadialBalance.modeMean beta lambda b",
+    "D0.Research.NativePositiveHeatRadialBalance.thermalEnergy_nonnegative": "D0.Research.NativePositiveHeatRadialBalance.thermalEnergy_nonnegative.{u_1} {\u03b9 : Type u_1} [Fintype \u03b9] [DecidableEq \u03b9]\n  [Nonempty \u03b9] (beta : \u211d) (lambda : \u03b9 \u2192 \u211d) (hl : \u2200 (i : \u03b9), 0 \u2264 lambda i) :\n  0 \u2264 D0.Research.NativePositiveHeatRadialBalance.thermalEnergy beta lambda",
+    "D0.Research.NativePositiveHeatRadialBalance.thermalEnergy_positive": "D0.Research.NativePositiveHeatRadialBalance.thermalEnergy_positive.{u_1} {\u03b9 : Type u_1} [Fintype \u03b9] [DecidableEq \u03b9]\n  [Nonempty \u03b9] (beta : \u211d) (lambda : \u03b9 \u2192 \u211d) (hl : \u2200 (i : \u03b9), 0 \u2264 lambda i) (hp : \u2203 i, 0 < lambda i) :\n  0 < D0.Research.NativePositiveHeatRadialBalance.thermalEnergy beta lambda",
+    "D0.Research.NativePositiveHeatRadialBalance.zero_operator_control": "D0.Research.NativePositiveHeatRadialBalance.zero_operator_control.{u_1} {\u03b9 : Type u_1} [Fintype \u03b9] (beta : \u211d) :\n  (D0.Research.NativePositiveHeatRadialBalance.thermalEnergy beta fun x => 0) = 0"
+  },
+  "status": "PASS",
+  "supported_D0_tree": "fd8dfc359d23c9bd79ca23eeed7c045ce9c68c6b",
+  "toolchain_input_sha256": {
+    "03_FORMALIZATION/lake-manifest.json": "4ed211000f753c64c6b1fc155970f6b28c9500763f1ad520d8762ae165ac24fa",
+    "03_FORMALIZATION/lakefile.lean": "7a49cbade1c863e91b5cdc0dff0dddd8a272a3da94ef24200c6e3683276273e9",
+    "03_FORMALIZATION/lean-toolchain": "54727eec5cba149c18842e6deb5c41b369d66455c93ce135d7d5347c782b2325"
+  },
+  "transitive_d0_source_sha256": {
+    "03_FORMALIZATION/D0/Algebra/RoleSignature.lean": "5dfb03dc839b4c81d199ff053e57d4b9d54cd61812577078e6302bc710c4ffcf",
+    "03_FORMALIZATION/D0/Claims/Q8DedekindMinimality.lean": "12904a3bdd35e25730a3988f6682667e8702b632cd152eb3185bd553c8e56a87",
+    "03_FORMALIZATION/D0/Combinatorics/EulerPhi.lean": "83d9af2ead6462e454de1219cd1523d913221e5731114a5459982d25c0ff455a",
+    "03_FORMALIZATION/D0/Combinatorics/ForcedReturnWindows.lean": "bcc743c895708e845e34c12d801925c5b9ac9d72dd3fa3d5e501fdcd6ff17ae2",
+    "03_FORMALIZATION/D0/Combinatorics/InfinitePhaseTower.lean": "4f5b32b3b0ca7e682b8e197e10526370c553d1b5f11060a2f6e62862c0b36f05",
+    "03_FORMALIZATION/D0/Combinatorics/PhaseTower.lean": "3aceb5bc63e7d23c0a4f9a065eea4be1af7bee38e7c5dd51391598641d54acb9",
+    "03_FORMALIZATION/D0/Combinatorics/PhaseTowerControls.lean": "f59f24f9ef8a2edf9c542cf8e06d97024ecb53ee7e5b3068da198979a74d87c1",
+    "03_FORMALIZATION/D0/Combinatorics/PhaseTowerMinimality.lean": "5d56c525e9549764fee894d8a74f626ed5965123f5a013915c3c67ae18166e6a",
+    "03_FORMALIZATION/D0/Combinatorics/PhaseTowerRecursion.lean": "cbaae0e2bfdeaa197f1557a29eb53bbea780cddf78f98d9e8928c6a09b5ec46c",
+    "03_FORMALIZATION/D0/Combinatorics/PhaseUnfolding.lean": "4753d815c41f8df990ba45d7ab038d75decaa775dbfd72e5c4e61c0783ce1f66",
+    "03_FORMALIZATION/D0/Core/BornFinite.lean": "5fe9a40a3d0bc5528ba146192dbca72c782d502a83233e7430630ea648f75332",
+    "03_FORMALIZATION/D0/Core/BornFiniteEffects.lean": "0d4fdcb7b7233191b19eb07ccab61ff1901eb26bff4147fccc4a03ab13cdf66f",
+    "03_FORMALIZATION/D0/Core/BornQuadraticOrigin.lean": "8f32214f018417c6e8f3e701a381256093dd612f770277cfcb7babe1a2ac95c0",
+    "03_FORMALIZATION/D0/Core/BornQuadraticResponse.lean": "d5e9785c6dad2fa928d27ad1791ed7ee63148a1890a99af8b5a38b40b2ca8d83",
+    "03_FORMALIZATION/D0/Core/DyadABCD.lean": "9aa50c746c830a9c81270cecd773b7c5f00ba6b8d19451abeb4aeda4d1c9c358",
+    "03_FORMALIZATION/D0/Core/FiniteTypes.lean": "ced19b6714c8c9d1f687812c4bf9a19b572c02b689c5bf0881035b4f6bfc1108",
+    "03_FORMALIZATION/D0/Core/MatrixResponse.lean": "27036ab4020580f200932eb302d2cd63a8c07b9deee0dbf2a172fd6f62a54af4",
+    "03_FORMALIZATION/D0/Core/Phi.lean": "661871661e23ea971e5d50de5c63772db22ecbb5e461640b1f597bb3b6c5e38a",
+    "03_FORMALIZATION/D0/Cosmology/ArchiveHomogeneousState.lean": "71fad2f5fbf00fecd44fd2674b3aacfc322f6b4a7803c6e893a83b61be25cde6",
+    "03_FORMALIZATION/D0/Cosmology/EntropyArchiveFlow.lean": "91273c1b031d295510161fff1d115e9a00613daa8636da76e314afdc6bee918f",
+    "03_FORMALIZATION/D0/Foundation/M1Predicate.lean": "c9def19a8eff4db17acdfa0a89465b72809759698d81ef522f7aaa6ac2cd33c2",
+    "03_FORMALIZATION/D0/Foundation/ObservableCompletionCanonicity.lean": "e0e6cfc495135d052a1d40b6b1698b94d8b7df7eb9ab4b42d47231ef481ec634",
+    "03_FORMALIZATION/D0/Geometry/A4DRolePairMetricCarrier.lean": "67485d08b195590aa9a9910c281b459c1898474a9223d5cbe26fec2c1734e201",
+    "03_FORMALIZATION/D0/Geometry/A4DSymRoleCentralDifference.lean": "b7f418b6de484f391d6270cb3f1140aa3e4e0007662c0f820e899d673480d46e",
+    "03_FORMALIZATION/D0/Geometry/ArchiveCARDirac.lean": "d12ee600d7976228ffcb88e5c40c08d66cd361664901594ea0379bf2b97a2388",
+    "03_FORMALIZATION/D0/Geometry/ArchiveCARFockCarrier.lean": "5dc96be9c2ee5c874a617f3ebe80f0da9803973c1656112fe24f31e90c2f5eb1",
+    "03_FORMALIZATION/D0/Geometry/ArchiveCARRelations.lean": "846fddef981b82357bab5b1a4de72d7f27bdfc6321ed41bfdc26e410cbd0178d",
+    "03_FORMALIZATION/D0/Geometry/ArchiveCanonicalDirichlet.lean": "1311fb05b81e2131724f096428e177e9c61a97497b8dcec9843912faaaf7a9f6",
+    "03_FORMALIZATION/D0/Geometry/ArchiveCanonicalLaplacian.lean": "4aefdc0a4c547e22cb5ce0989d792bc8544ef471a1c08b2be91edc40c59d591e",
+    "03_FORMALIZATION/D0/Geometry/ArchiveChainConnection.lean": "01bb413eefe4b1d485be1b6f4d297e7a3672d2d6db0c676e1689186e7f0729e6",
+    "03_FORMALIZATION/D0/Geometry/ArchiveChainCurvature.lean": "d21e4d2fbd34ff96c0cd67426a9684f32f81901ea72026530f331a741cbe4882",
+    "03_FORMALIZATION/D0/Geometry/ArchiveCovariantCubicalDifferential.lean": "ff5143280c866915341b227d6869cfc979a81e66c160c8c5842e445b0511ead0",
+    "03_FORMALIZATION/D0/Geometry/ArchiveCubicalCartan.lean": "8c766bd7220764bda3393ec651b20084d9ee9f882da97ffb2c9a13f1be23489b",
+    "03_FORMALIZATION/D0/Geometry/ArchiveCubicalCoboundary.lean": "c3a5e0cc7e48a5e46eb6c7f46f5af50787d302d87f1fe71449b8643ff8ccc6d0",
+    "03_FORMALIZATION/D0/Geometry/ArchiveCubicalCochainCarrier.lean": "ccfda1cb587c23dc98837c6a78490046e26dc606c0777804a4d7a10b0eddda5a",
+    "03_FORMALIZATION/D0/Geometry/ArchiveCubicalDifferential.lean": "f00844eb6a1e32925327c78e541b25a3471eb4a55bb36fde392f8885f98440a2",
+    "03_FORMALIZATION/D0/Geometry/ArchiveHodgeCARDirac.lean": "7ab9550c7a25464131ec23a21e9eeac9f38eb651ee23c8d65296415aa593ab58",
+    "03_FORMALIZATION/D0/Geometry/ArchiveHodgeCARDiracKernel.lean": "2a49ae65a897ada35d868d7eb71533c1c76fbe7534053f70beb431afa93b5b4a",
+    "03_FORMALIZATION/D0/Geometry/ArchiveHodgeCARDiracSquare.lean": "d004761e6326aae235d1a3488e397750409bc4c03f90c489a6dd18d9971e3e81",
+    "03_FORMALIZATION/D0/Geometry/ArchiveLorentzCompatibility.lean": "1ba5fa492c928b34392a07d54a6f81d8554e5898cd91c901430647b655e30c8f",
+    "03_FORMALIZATION/D0/Geometry/ArchiveMetricMeasureHodgeLift.lean": "e1f4fc672a8f9f39b389e0a907082ddd82871f582a6d31c666010f764b0ce9bd",
+    "03_FORMALIZATION/D0/Geometry/ArchiveModeExponent.lean": "fb760656ca2b3ca785a44cb5a80729e0f856221696dd40b7dca8c85d8ff8f95c",
+    "03_FORMALIZATION/D0/Geometry/ArchivePhaseDistance.lean": "765ac251492ab51cca109ccf34d758fb3ebc3fbe86bdb1a790f5a827342c3707",
+    "03_FORMALIZATION/D0/Geometry/ArchivePhaseEdgeMetricScale.lean": "4eee745390b6fd56fe7e542db30253dd857beb3853475960af6215db335506fd",
+    "03_FORMALIZATION/D0/Geometry/ArchiveProductLaplacian.lean": "cef92ba4992610d1ebdc39a896204edadb31a79ea94b24367e513e49105ba77c",
+    "03_FORMALIZATION/D0/Geometry/ArchiveRefinementTower.lean": "253342935b592df104629259341c2d3d6065cd0ba4ec55769f484f005e036673",
+    "03_FORMALIZATION/D0/Geometry/ArchiveRolePhaseGroup.lean": "8958fe3103039ce0ad5aa5aa6607578f9dfa3e4717b966b3dea916241aa68442",
+    "03_FORMALIZATION/D0/Geometry/ArchiveRolePhaseProductCarrier.lean": "f307f30401d4110ab7bb2874e62f84e43e0e35eb7fb9fb7b7844c63f59b97d33",
+    "03_FORMALIZATION/D0/Geometry/ArchiveRoleProductLaplacian.lean": "ac6b1a24b054c76609b5558f76e6f1adf3d8f170dfb4d6475adc8c5ec4414339",
+    "03_FORMALIZATION/D0/Geometry/ArchiveTwistedRoleDifference.lean": "589207adc7ca9be9aeb94a4d12e9e605306256f08a271554ec067469728dc3d4",
+    "03_FORMALIZATION/D0/Geometry/ArchiveWeightedGraph.lean": "a25daa836eacf57042dd96793da6447098fc85895d464b10f0f1804d2249081d",
+    "03_FORMALIZATION/D0/Geometry/ArchiveWeightedHodgeDirac.lean": "cbb1563817e81f686962be2337b1eec52646a5c342c0348da3bacbf5e5dc1296",
+    "03_FORMALIZATION/D0/Geometry/ConformalLaplacianTrace.lean": "3030b73c15449a76d8dc89e0e1bad95e3c5bb950b7c20135396dbbef0fdb5ba6",
+    "03_FORMALIZATION/D0/Geometry/CovarianceTower.lean": "3452400583b01f0dfddd6fa6e70078db073cd643c1cde243d861aff714080bde",
+    "03_FORMALIZATION/D0/Geometry/HeatTraceA2Decomposition.lean": "0e0a5b5241d3955d8e23515f006ab89f2270f81a6ee56e4a6aee203a8abb1e74",
+    "03_FORMALIZATION/D0/Geometry/HeatTraceEHProxy.lean": "dafa6b61a736ad40a5abadaf4e18aea0167a3569534b64def12af9f15b7d8c9e",
+    "03_FORMALIZATION/D0/Geometry/InfiniteSpectralTower.lean": "a9b77520d350583f778123087c7b6db17b2284b72ef0c993ae671366e3eb475f",
+    "03_FORMALIZATION/D0/Geometry/SpectralActionLadder.lean": "855b4d79f99008aebd8bc64a06652cf1f1f5e04fc5df0d16333d409a27a4864a",
+    "03_FORMALIZATION/D0/Geometry/SpectralTower.lean": "3d5e8e71e6bef1eeabf48fb63562e0d422c35f22b399f612179a3827485969ef",
+    "03_FORMALIZATION/D0/Integration/V15/RawZone.lean": "3b8f7c5b60432085131aa0d491a6a42853bc1788dc697a4757549b074e5a4b8f",
+    "03_FORMALIZATION/D0/Matter/FiniteSelector.lean": "36376218a1c49a176b7427a2584b421109ffcaacea1707f44be92bcfa0c3d1a2",
+    "03_FORMALIZATION/D0/Phase.lean": "dd710cf7f37874ac5f06a1a57ca19fa2d9544de6e1bfcf35fed7806ea2b56559",
+    "03_FORMALIZATION/D0/Representation/FiniteProtocolClock.lean": "955bcffc5b927faf039cb15aae13e250b71c5e7b26fa811c30c61df423c005cc",
+    "03_FORMALIZATION/D0/Representation/GoldenCoherentMemory.lean": "6ea993e22c8b7d0b8a93b9537d51893cb4aff45af858d82ec7f9005ead96e2d7",
+    "03_FORMALIZATION/D0/Representation/GoldenOrderInterferometer.lean": "76c7082b4f600f7b178579b8a2a859d6f692c96ce5a769920fb3ff427532292c",
+    "03_FORMALIZATION/D0/Representation/GoldenRelativeChannel.lean": "5f18b847f156d890aefa45f35ab385dc60c930a23781500b2e38926c05c4c782",
+    "03_FORMALIZATION/D0/Representation/OrderMemoryReadout.lean": "c350ead450996bfb7da20a987454b57da94dc098d17efeafc85a56b751664aa4",
+    "03_FORMALIZATION/D0/Representation/SourcePortPreparation.lean": "b2e7105cab1680b569e08258c540823cb287afea541a7ac76c9b1cc28b785266",
+    "03_FORMALIZATION/D0/Spectral/DarkArchiveStructure.lean": "ebc172839e7f64a84bf2162eee9c8a2d3da5e4e70faf4a1acfc2daca6945b4ed",
+    "03_FORMALIZATION/D0/Synthesis/SceneHeatKernel.lean": "eed58247de51e158b1b088869329c5bee32ed8eea7ede1274393fed440412813",
+    "03_FORMALIZATION/D0/UnifiedFiniteCore/Q8Terminal.lean": "21d12f38c3f34e158bdae228b0fcc01edbafc6d616126c73df66fb144c703af6"
+  }
+}

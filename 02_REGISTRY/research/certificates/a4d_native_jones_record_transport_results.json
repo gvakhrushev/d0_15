@@ -1,0 +1,158 @@
+{
+  "actual_command": [
+    "/Users/grigorijvahrusev/.elan/bin/lake",
+    "env",
+    "lean",
+    "/Users/grigorijvahrusev/.codex/worktrees/d0-native-source/d0_15/02_REGISTRY/research/certificates/a4d_native_jones_record_transport.lean"
+  ],
+  "actual_cwd": "/Users/grigorijvahrusev/Downloads/d0_15/03_FORMALIZATION",
+  "axioms": {
+    "D0.Representation.GoldenCoherentMemory.fullStep_orthogonal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Representation.GoldenOrderInterferometer.gate_orthogonal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.JonesRecordTransport.all_frame_outcomes": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.JonesRecordTransport.complement_pointwise_fixed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.JonesRecordTransport.conditioned_state_covariance": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.JonesRecordTransport.conjugate_complement": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.JonesRecordTransport.conjugate_multiplication": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.JonesRecordTransport.conjugate_trace": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.JonesRecordTransport.conjugate_transpose": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.JonesRecordTransport.conjugated_refinement": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.JonesRecordTransport.cross_transpose": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.JonesRecordTransport.golden_coefficients": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.JonesRecordTransport.owned_gate_square": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.JonesRecordTransport.owned_plane_square": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.JonesRecordTransport.owned_square_transport": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.JonesRecordTransport.plane_composition": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.JonesRecordTransport.plane_on_frames": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.JonesRecordTransport.plane_orthogonal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.JonesRecordTransport.plane_transpose": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.JonesRecordTransport.residual_frame": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.JonesRecordTransport.residual_transport": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "capsule_sha256": "9526769a4834427f02cf5e812ca684924d8448c76043bc9a44f020e9f2cf2933",
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "../02_REGISTRY/research/certificates/a4d_native_jones_record_transport.lean"
+  ],
+  "compiler_exit_code": 0,
+  "declarations": [
+    "D0.Research.JonesRecordTransport.owned_gate_square",
+    "D0.Research.JonesRecordTransport.golden_coefficients",
+    "D0.Research.JonesRecordTransport.residual_frame",
+    "D0.Research.JonesRecordTransport.cross_transpose",
+    "D0.Research.JonesRecordTransport.plane_on_frames",
+    "D0.Research.JonesRecordTransport.complement_pointwise_fixed",
+    "D0.Research.JonesRecordTransport.plane_transpose",
+    "D0.Research.JonesRecordTransport.plane_composition",
+    "D0.Research.JonesRecordTransport.plane_orthogonal",
+    "D0.Research.JonesRecordTransport.owned_plane_square",
+    "D0.Research.JonesRecordTransport.residual_transport",
+    "D0.Research.JonesRecordTransport.owned_square_transport",
+    "D0.Research.JonesRecordTransport.all_frame_outcomes",
+    "D0.Research.JonesRecordTransport.conjugate_multiplication",
+    "D0.Research.JonesRecordTransport.conjugate_transpose",
+    "D0.Research.JonesRecordTransport.conjugate_complement",
+    "D0.Research.JonesRecordTransport.conjugate_trace",
+    "D0.Research.JonesRecordTransport.conditioned_state_covariance",
+    "D0.Research.JonesRecordTransport.conjugated_refinement",
+    "D0.Representation.GoldenOrderInterferometer.gate_orthogonal",
+    "D0.Representation.GoldenCoherentMemory.fullStep_orthogonal"
+  ],
+  "input_sha256": {
+    "03_FORMALIZATION/D0/Core/Phi.lean": "661871661e23ea971e5d50de5c63772db22ecbb5e461640b1f597bb3b6c5e38a",
+    "03_FORMALIZATION/D0/Representation/GoldenCoherentMemory.lean": "6ea993e22c8b7d0b8a93b9537d51893cb4aff45af858d82ec7f9005ead96e2d7",
+    "03_FORMALIZATION/D0/Representation/GoldenOrderInterferometer.lean": "76c7082b4f600f7b178579b8a2a859d6f692c96ce5a769920fb3ff427532292c",
+    "03_FORMALIZATION/D0/Representation/GoldenRelativeChannel.lean": "5f18b847f156d890aefa45f35ab385dc60c930a23781500b2e38926c05c4c782",
+    "03_FORMALIZATION/lake-manifest.json": "4ed211000f753c64c6b1fc155970f6b28c9500763f1ad520d8762ae165ac24fa",
+    "03_FORMALIZATION/lean-toolchain": "54727eec5cba149c18842e6deb5c41b369d66455c93ce135d7d5347c782b2325"
+  },
+  "output_sha256": "2fdbbc1bc3ee907ce5ffc32a10dff2441eef049e3f5ec8252feddf15b743ac12",
+  "scope": "19 generic research kernel propositions over real rectangular frames and full real matrix operators, plus two actual golden-gate owner declarations. Complex extension and the all-level native Jones/AF path binding have separate analytic/exact-certificate status. Physical actuation, refinement selection, metric stationarity and supported CORE remain open. No D0.All claim.",
+  "status": "PASS"
+}

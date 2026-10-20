@@ -1,0 +1,2 @@
+PASS_MOVING_PREPARATION_EXACT 169 controls; 5 negative controls
+SCOPE: actual diagonal jet, not full polynomial family, physical admission open

@@ -1,0 +1,74 @@
+'D0.Research.NativeParentLaw.literal_owner_binding' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeParentLaw.every_visible_pair_is_an_owner_input' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeParentLaw.visible_coefficients_identifiable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeParentLaw.field_exact_variation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeParentLaw.auxiliary_exact_variation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeParentLaw.multiplier_exact_variation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeParentLaw.field_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeParentLaw.auxiliary_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeParentLaw.multiplier_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeParentLaw.genuine_gate_equations' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeParentLaw.source_exact_variation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeParentLaw.source_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeParentLaw.diagonal_iff_full_restriction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeParentLaw.kernel_and_source_comparison' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeParentLaw.full_joint_block_classification' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeParentLaw.full_joint_gate_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeParentLaw.zero_parameter_gate_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeParentLaw.decode_encode_primal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeParentLaw.decode_encode_dual' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeParentLaw.decode_encode_star0' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeParentLaw.decode_encode_star1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeParentLaw.encoded_visible_composition' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeParentLaw.auxiliary_equivalence_action' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.NativeParentLaw.literal_owner_binding.{u_1, u_2, u_3, u_4} {n : Type u_1} [Fintype n] {p : Type u_2}
+  {q : Type u_3} {r : Type u_4} [Fintype p] [Fintype q] [Fintype r] (A : D0.Geometry.FinitePrimalDualHodgeData n p q r)
+  (R : (r → ℝ) →ₗ[ℝ] n → ℝ) (ψ χ lm : n → ℝ) :
+  D0.Geometry.mixedPrimalDualAction (fun x y => pair x (R y)) A ψ χ lm =
+    action (R ∘ₗ A.star0) (R ∘ₗ A.dD ∘ₗ A.star1 ∘ₗ A.dP) ψ χ lm
+D0.Research.NativeParentLaw.every_visible_pair_is_an_owner_input.{u_1} {n : Type u_1} [Fintype n] (M K : End n)
+  (p c l : n → ℝ) : D0.Geometry.mixedPrimalDualAction pair (data M K) p c l = action M K p c l
+D0.Research.NativeParentLaw.visible_coefficients_identifiable.{u_1} {n : Type u_1} [Fintype n] (M K A B : End n) :
+  (∀ (p c l : n → ℝ), action M K p c l = action A B p c l) ↔ M = A ∧ K = B
+D0.Research.NativeParentLaw.genuine_gate_equations.{u_1} {n : Type u_1} [Fintype n] (M K : End n) (p c l : n → ℝ) :
+  FullFieldGate M K p c l ↔
+    (∀ (v : n → ℝ), pair l (K v) = 0) ∧ (∀ (v : n → ℝ), auxiliaryVariation M c l v = 0) ∧ M c = K p
+D0.Research.NativeParentLaw.field_hasDerivAt.{u_1} {n : Type u_1} [Fintype n] (M K : End n) (p c l v : n → ℝ) :
+  HasDerivAt (fun t => action M K (p + t • v) c l) (fieldVariation K l v) 0
+D0.Research.NativeParentLaw.auxiliary_hasDerivAt.{u_1} {n : Type u_1} [Fintype n] (M K : End n) (p c l v : n → ℝ) :
+  HasDerivAt (fun t => action M K p (c + t • v) l) (auxiliaryVariation M c l v) 0
+D0.Research.NativeParentLaw.multiplier_hasDerivAt.{u_1} {n : Type u_1} [Fintype n] (M K : End n) (p c l v : n → ℝ) :
+  HasDerivAt (fun t => action M K p c (l + t • v)) (multiplierVariation M K p c v) 0
+D0.Research.NativeParentLaw.source_hasDerivAt.{u_1} {n : Type u_1} [Fintype n] (M K U V : End n) (p c l : n → ℝ) :
+  HasDerivAt (fun t => action (M + t • U) (K + t • V) p c l) (response U V p c l) 0
+D0.Research.NativeParentLaw.kernel_and_source_comparison.{u_1} {n : Type u_1} [Fintype n] (H1 H2 W1 W2 : End n)
+  (hW : D0.Research.NativeParentLaw.Symmetric (W2 - W1)) :
+  ((∀ (z : n → ℝ), H1 z = 0 ↔ H2 z = 0) ∧ ∀ (z : n → ℝ), H1 z = 0 → pair z (W2 z) = pair z (W1 z)) ↔
+    LinearMap.ker H1 = LinearMap.ker H2 ∧ ∀ x ∈ LinearMap.ker H1, ∀ y ∈ LinearMap.ker H1, pair x ((W2 - W1) y) = 0
+D0.Research.NativeParentLaw.full_joint_block_classification.{u_1} {n : Type u_1} [Fintype n] (a theta : ℝ)
+  (ht : theta ≠ 0) (x y u v p : n → ℝ) (hl : u + v = 0) (hx : a • (x + u) = 0) (hy : y + v = 0) (hp : a • x = p)
+  (hpy : -y = p) (hs : theta * (1 / 2 * pair x x + pair u x) = 0) : x = 0 ∧ y = 0 ∧ u = 0 ∧ v = 0 ∧ p = 0
+D0.Research.NativeParentLaw.full_joint_gate_iff.{u_1} {n : Type u_1} [Fintype n] (a theta : ℝ) (ht : theta ≠ 0)
+  (x y u v p : n → ℝ) : PairedJointGate a theta x y u v p ↔ x = 0 ∧ y = 0 ∧ u = 0 ∧ v = 0 ∧ p = 0
+D0.Research.NativeParentLaw.zero_parameter_gate_iff.{u_1} {n : Type u_1} [Fintype n] (x y u v p : n → ℝ) :
+  PairedJointGate 1 0 x y u v p ↔ x = p ∧ y = -p ∧ u = -p ∧ v = p
+D0.Research.NativeParentLaw.decode_encode_primal.{u_1, u_2} {n : Type u_1} [Fintype n] {m : Type u_2} [Fintype m]
+  [DecidableEq n] [DecidableEq m] (G0 : Mat n n) (G1 : Mat m m) (P : Mat m n) (h0 : IsUnit (Matrix.det G0))
+  (h1 : IsUnit (Matrix.det G1)) : G1 * encodeP G0 G1 P * G0⁻¹ = P
+D0.Research.NativeParentLaw.encoded_visible_composition.{u_1, u_2} {n : Type u_1} [Fintype n] {m : Type u_2} [Fintype m]
+  [DecidableEq n] [DecidableEq m] (G0 : Mat n n) (G1 : Mat m m) (P : Mat m n) (B : Mat n m) (H : Mat m m)
+  (h1 : IsUnit (Matrix.det G1)) : encodeB G0 G1 B * encodeH G1 H * encodeP G0 G1 P = encodeM G0 (B * H * P)
+D0.Research.NativeParentLaw.auxiliary_equivalence_action.{u_1} {n : Type u_1} [Fintype n] [DecidableEq n]
+  (M K T : Mat n n) (p c l : n → ℝ) :
+  matrixAction M K p (Matrix.mulVec T c) (Matrix.mulVec T l) =
+    matrixAction (Matrix.transpose T * M * T) (Matrix.transpose T * K) p c l
+D0.Geometry.archiveExteriorFrameLift_comp (L M : D0.Geometry.RoleSpace ≃ₗ[ℝ] D0.Geometry.RoleSpace) :
+  D0.Geometry.archiveExteriorFrameLift L ∘ₗ D0.Geometry.archiveExteriorFrameLift M =
+    D0.Geometry.archiveExteriorFrameLift (M ≪≫ₗ L)
+D0.Geometry.archiveExteriorFrameLift_inverse (L : D0.Geometry.RoleSpace ≃ₗ[ℝ] D0.Geometry.RoleSpace) :
+  D0.Geometry.archiveExteriorFrameLift L ∘ₗ D0.Geometry.archiveExteriorFrameLift L.symm = LinearMap.id ∧
+    D0.Geometry.archiveExteriorFrameLift L.symm ∘ₗ D0.Geometry.archiveExteriorFrameLift L = LinearMap.id

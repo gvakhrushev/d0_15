@@ -1,0 +1,54 @@
+{
+  "input_head": "123d9e969ec56705b4b485adb59a36c19f5a8797",
+  "command": "lake env lean ../02_REGISTRY/research/certificates/a4d_native_golden_cost_refinement.lean",
+  "returncode": 0,
+  "completed_exec_session": 73448,
+  "captured_utc": "2026-10-10T18:01:16.027074+00:00",
+  "capsule_sha256": "3e47588629ce3ed51ff165643090a697ecc5d39e64be2019bfa856e024014bd4",
+  "output_sha256": "0b464394cc80156722959ea72fda186347f272793a1ea0cd18fb12504fc6654d",
+  "declarations": [
+    "D0.Research.GoldenCostRefinement.code_length",
+    "D0.Research.GoldenCostRefinement.code_append",
+    "D0.Research.GoldenCostRefinement.counts_bind_owner",
+    "D0.Research.GoldenCostRefinement.mass_one",
+    "D0.Research.GoldenCostRefinement.owner_trace_normalized",
+    "D0.Research.GoldenCostRefinement.diagInclude_mul",
+    "D0.Research.GoldenCostRefinement.diagInclude_transpose",
+    "D0.Research.GoldenCostRefinement.diagInclude_one",
+    "D0.Research.GoldenCostRefinement.trace_diagInclude",
+    "D0.Research.GoldenCostRefinement.trace_full_blocks",
+    "D0.Research.GoldenCostRefinement.actual_trace_preservation",
+    "D0.Research.GoldenCostRefinement.actual_gns_isometry",
+    "D0.Research.GoldenCostRefinement.actual_conditional_adjoint",
+    "D0.Research.GoldenCostRefinement.complete_pair_residual",
+    "D0.Research.GoldenCostRefinement.full_entry_pythagoras",
+    "D0.Research.GoldenCostRefinement.conditional_adjoint_entry",
+    "D0.Research.GoldenCostRefinement.conditional_retraction_entry",
+    "D0.Research.GoldenCostRefinement.expect_retraction",
+    "D0.Research.GoldenCostRefinement.cross_blocks_not_removed_from_carrier",
+    "D0.Research.GoldenCostRefinement.golden_orthogonal",
+    "D0.Research.GoldenCostRefinement.refined_projection",
+    "D0.Research.GoldenCostRefinement.normalized_GNS_column",
+    "D0.Research.GoldenCostRefinement.recorded_gate_same_column",
+    "D0.Research.GoldenCostRefinement.total_block_dimensions"
+  ],
+  "new_declarations": 24,
+  "axiom_union": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "axiom_free_declarations": [
+    "D0.Research.GoldenCostRefinement.counts_bind_owner"
+  ],
+  "transitive_d0_source_sha256": {
+    "03_FORMALIZATION/D0/Algebra/FibonacciAFTower.lean": "b923882386bc66998f4f3cf2ba7d73b0acf30938859d26680458420bafbd1db7",
+    "03_FORMALIZATION/D0/CondensedAnchor/DetectorSupportGoldenWeight.lean": "643d0a1ec2c71e15bc3254211e3e24cf6b99fdf48f6ddd43a38848cd28c23307",
+    "03_FORMALIZATION/D0/Core/Phi.lean": "661871661e23ea971e5d50de5c63772db22ecbb5e461640b1f597bb3b6c5e38a",
+    "03_FORMALIZATION/D0/Representation/GoldenCoherentMemory.lean": "6ea993e22c8b7d0b8a93b9537d51893cb4aff45af858d82ec7f9005ead96e2d7",
+    "03_FORMALIZATION/D0/Representation/GoldenOrderInterferometer.lean": "76c7082b4f600f7b178579b8a2a859d6f692c96ce5a769920fb3ff427532292c",
+    "03_FORMALIZATION/D0/Representation/GoldenRelativeChannel.lean": "5f18b847f156d890aefa45f35ab385dc60c930a23781500b2e38926c05c4c782"
+  },
+  "supported_D0_sources_changed": false,
+  "complex_prefix_cofinality_and_all_physical_preparation_not_claimed_Lean": true
+}

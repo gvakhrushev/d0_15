@@ -1,0 +1,252 @@
+{
+ "controls": [
+  {
+   "tag": "S1a  Rm*Rb - Rs = st X + st^2 A + st^3 E + s^2 t B + s^2 t^2 C  (символьные 3x3 матрицы)  [T1]",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "tag": "S1b  матрица коэффициентов 5x5 невырождена: det = -96  =>  необходимость X=A=E=B=C=0  [T1]",
+   "ok": true,
+   "detail": "det=-96"
+  },
+  {
+   "tag": "S1c  Rm*Rb - H - Rs = s t (G^2 + Dg - K)   <=>   K = G^2 + Dg  (условие второго порядка)  [T1]",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "tag": "S1d  (U - U^-1)^3[0,1]: n>=5 -> -3, n=4 -> -4, n=3 -> -3 (точные значения по модулю n)",
+   "ok": true,
+   "detail": "[(3, -3), (4, -4), (5, -3), (6, -3), (7, -3), (8, -3), (9, -3), (10, -3), (11, -3), (12, -3)]"
+  },
+  {
+   "tag": "S1e  замкнутая форма (G^3)[0,1] = -3n^3/8 (n != 4), = -n^3/2 (n = 4); никогда не 0, n = 3..24  [T3]",
+   "ok": true,
+   "detail": "n=4: [-32]"
+  },
+  {
+   "tag": "S2a  shear: R(e,xi) = I + dxi*N (не зависит от e) => D^2_e R(e,xi)|_0 = 0",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "tag": "S2b  нескалярный контроль U(e)=exp(e*M), M^2=I: R(e,xi)=exp(dxi*M), D^2_e R|_0 = 0",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "tag": "S2c  K_xi = d^2/dt^2 R(0,t*xi)|_0 = dxi^2 * I  != 0  (второй порядок НЕ исчезает)  [T4]",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "tag": "S2d  отождествление K_xi = D^2_e R(e,xi)|_0[dxi,dxi] ОТВЕРГАЕТСЯ (0 против dxi^2*I)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "tag": "S2e  (12): (D_e g_zeta)_0[h] = S(h,dzeta) + (1/2)[A(h),A(dzeta)] + [A(h),C(c_zeta)]  [T4]",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "tag": "S2f  (13): K_xi = G(xi)^2 + (D_e g_xi)_0[dxi] = A(dxi)^2 + 2A(dxi)C(c_xi) + C(c_xi)^2 + S(dxi,dxi)  [T4]",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "tag": "S3a  над R (char 0) отображение S |-> (h |-> S(h,h)) ИНЪЕКТИВНО: поляризация восстанавливает S  [T6]",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "tag": "S3b  одиночная проба h0=e1: S=diag(0,1,0) != 0 лежит в ядре, но S(h0,h0)=0 (dim X >= 2)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "tag": "S3c  одиночная проба СЮРЪЕКТИВНА: для любого m найдётся S с S(h0,h0) = m",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "tag": "S3d  dim X = 1: одиночная проба инъективна (контроль направления)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "tag": "S3e  следствие: вся S восстанавливается только по ВСЕМ диагональным пробам {h |-> S(h,h)}, h in X",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "tag": "S4a  H = 0 => rho(H) = {1}: требование ковариантности по rho(H) вакуумно; J != 1 меняет readout",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "tag": "S4b  постоянный readout R = c: R(U psi) != U R(psi) при U != 1, но dR/dU = 0",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "tag": "S4c  => ни ковариантность, ни её нарушение не влекут различие значений: прежняя T16 отозвана  [T7]",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "tag": "S5a  символьный ранг блока R_k равен 10 - z(z+1)/2 = 10,9,7,4,0 при z=0..4 (независимое воспроизведение (5) опубликованного A4D_NATIVE_CENTERED_METRIC_LIFT)",
+   "ok": true,
+   "detail": "{'()': 10, '(0,)': 9, '(1,)': 9, '(2,)': 9, '(3,)': 9, '(0, 1)': 7, '(0, 2)': 7, '(0, 3)': 7, '(1, 2)': 7, '(1, 3)': 7, '(2, 3)': 7, '(0, 1, 2)': 4, '(0, 1, 3)': 4, '(0, 2, 3)': 4, '(1, 2, 3)': 4, '(0, 1, 2, 3)': 0}"
+  },
+  {
+   "tag": "S5b  СИМВОЛЬНО: sum_z C(4,z)(L-1)^(4-z)(16-rank_z) = 6L^4 + 4L^3 + 6L^2",
+   "ok": true,
+   "detail": "=6*L**4 + 4*L**3 + 6*L**2"
+  },
+  {
+   "tag": "S5c  то же численно для L = 2..40 (чётные) совпадает с 6L^4+4L^3+6L^2",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "tag": "S5d  dim im d = 4(L^4 - 1)  (modаль: при k != 0 столбцы s_r v_a независимы; при k = 0 образ нулевой)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "tag": "S5e  суммарная кратность мод с k in {0,L/2}^4: sum_z C(4,z) z = 32; но dim im(d)_k = 4 лишь при k != 0, поэтому dim(ker R ∩ im d) = 15*4 = 60 (см. S5f)",
+   "ok": true,
+   "detail": "sum_z C(4,z) z = 32"
+  },
+  {
+   "tag": "S5f  dim im(d)_k = 4 при k != 0 (столбцы (s_r)_{r} ненулевые) => dim(ker R ∩ im d) = 15*4 = 60 (L чётно), 0 (L нечётно)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "tag": "S5g  плотная ТОЧНАЯ проверка L=2 ((Z/2)^4): rank R = 104, dim ker R = 152 (= 6*16+4*8+6*4), rank D = 60 = 4(2^4-1), rank(R D) = 0 => im d ⊆ ker R, dim(ker R ∩ im d) = 60",
+   "ok": true,
+   "detail": "shape=(160, 256), rank R=104, rank D=60, rank(RD)=0"
+  },
+  {
+   "tag": "S5h  ЯВНЫЙ свидетель e(x,r,c) = delta_{(r,c)=(0,1)}(-1)^(x_0+x_1): R(e) = 0 ТОЧНО (L=4, 2560 проверок)",
+   "ok": true,
+   "detail": "нарушений 0"
+  },
+  {
+   "tag": "S5i  инвариант кривизны C_{s,r,c} = D_s e(.,r,c) - D_r e(.,s,c) тождественно 0 на im d (25 случайных xi)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "tag": "S5j  для свидетеля C_{0,1,1}(0,0,0,0) = 8 != 0  =>  свидетель НЕ лежит в im d (не gauge)  [T8]",
+   "ok": true,
+   "detail": "C = 8"
+  },
+  {
+   "tag": "S5k  dim(ker R \\ im d) = 6L^4+4L^3+6L^2-60 (L чётно), 6L^4 (L нечётно); >= 2L^4+4L^3+6L^2+4 (чётно), >= 2L^4+4 (нечётно) > 0 для всех L >= 2",
+   "ok": true,
+   "detail": "L=4: 1828"
+  },
+  {
+   "tag": "S6a  C_1 J_t = I  (owner: endpoint_average_left_inverse)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "tag": "S6b  (J_t C_1)^2 = J_t C_1  (owner: endpoint_reynolds_idempotent)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "tag": "S6c  (J_t C_1) J_t = J_t  (owner: endpoint_reynolds_fixes_endpoint_functions)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "tag": "S6d  rank(J_t C_1) = |V|, dim ker(J_t C_1) = 2|E_und| - |V|  (общая теорема)",
+   "ok": true,
+   "detail": "rank=5, 2|E_und|-|V|=7"
+  },
+  {
+   "tag": "S6e  C_1 J_s = T с T[v,u] = A(u,v)/deg(v)  (owner: one_step_history_forgetting_eq_fullTransport)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "tag": "S6f  подробный баланс deg(v) T[v,u] = deg(u) T[u,v]  (owner: edge_reversal_detailed_balance)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "tag": "S6g  J_t != J_s на несогласованном графе: источник и конец не склеиваются",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "tag": "S6h  числа владельца: deg-суммы по зонам 216+242+260 = 718 = 2*359; 718 - 33 = 685",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "tag": "S6i  аддитивный функционал на историях: dim = |LevelOneSceneHistory| = 718; видимая через endpoint readout C_1 часть = 33 (rank C_1 = 33); невидимая = 685",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "tag": "S6j  ни один владелец не задаёт скалярный функционал: F=0 и F=delta_{gamma_0} оба аддитивны, оба дают 0 на всех матричных тождествах владельца, но различаются как функционалы",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "tag": "S7a  j -- правая обратная: d j = I_2",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "tag": "S7b  T(z,dxi)=T(xi,dz) тождественно выполняется при T = d^T Q, Q симметричной  [T10]",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "tag": "S7c  ранг системы condA=0 равен 5 => размерность решения 3 = dim Sym(2) (полнота волокна)",
+   "ok": true,
+   "detail": "rank=5, dim=3"
+  },
+  {
+   "tag": "S7d  отрицательный контроль: антисимметричная Q нарушает T(z,dxi)=T(xi,dz)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "tag": "S7e  dim ker d = 2 и T(c,h) = Q(dc,h) = 0 для всех c in ker d",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "tag": "S8a  nu(x)=(-1)^x: centeredDifference*nu = 0, forwardDifference*nu != 0, backwardAverage*nu = 0 (L=4,8,12,16,20)  [T11]",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "tag": "S8b  dim ker(centred) = 2 = span{1,nu}, dim ker(forward) = 1 = span{1} (L чётно)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "tag": "S8c  точное тождество владельца: backwardAverage o forwardDifference = centeredDifference",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "tag": "S8d  следствие: forwardGaugeCoframe (forward-разность) видит nu, coframeMetricReadout (backwardAverage) -- нет",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "pass": 49,
+ "fail": 0,
+ "note": "точная арифметика sympy; безусловных True нет; S5a/S5b/S5c переиспользуют уже опубликованные rank-результаты владельца"
+}

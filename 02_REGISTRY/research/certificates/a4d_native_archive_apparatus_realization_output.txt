@@ -1,0 +1,1031 @@
+../02_REGISTRY/research/certificates/a4d_native_archive_apparatus_realization.lean:689:2: warning: 'push_cast' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+../02_REGISTRY/research/certificates/a4d_native_archive_apparatus_realization.lean:702:2: warning: 'push_cast' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+../02_REGISTRY/research/certificates/a4d_native_archive_apparatus_realization.lean:977:4: warning: 'change Complex.normSq (fullAmplify U z χ w i z) = _' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+../02_REGISTRY/research/certificates/a4d_native_archive_apparatus_realization.lean:1401:4: warning: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+../02_REGISTRY/research/certificates/a4d_native_archive_apparatus_realization.lean:1830:28: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+../02_REGISTRY/research/certificates/a4d_native_archive_apparatus_realization.lean:2328:10: warning: `tendsto_finset_sum` has been deprecated: Use `tendsto_finsetSum` instead
+../02_REGISTRY/research/certificates/a4d_native_archive_apparatus_realization.lean:2578:6: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+../02_REGISTRY/research/certificates/a4d_native_archive_apparatus_realization.lean:2578:6: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+../02_REGISTRY/research/certificates/a4d_native_archive_apparatus_realization.lean:4086:4: warning: unused variable `n`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+../02_REGISTRY/research/certificates/a4d_native_archive_apparatus_realization.lean:5708:34: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+../02_REGISTRY/research/certificates/a4d_native_archive_apparatus_realization.lean:5708:34: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+../02_REGISTRY/research/certificates/a4d_native_archive_apparatus_realization.lean:6395:2: warning: 'change
+  conjugate (lift01 (signedComparison c))
+      (conjugate (lift02 (signedRecording e))
+        (conjugate (lift01 (signedRecording d))
+          (conjugate (lift01 (signedComparison c)) (conjugate (lift02 (signedRecording e)) (tensor J 1 1))))) =
+    _' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+../02_REGISTRY/research/certificates/a4d_native_archive_apparatus_realization.lean:8713:52: warning: unused variable `hfe`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+D0.Research.NativeArchiveApparatus.actual_Q8_identity_column_and_left_cancellation :
+  (∀ (g : Fin 8), D0.Claims.Q8.mul g 0 = g) ∧ ∀ (g b : Fin 8), D0.Claims.Q8.mul g b = g ↔ b = 0
+'D0.Research.NativeArchiveApparatus.actual_Q8_identity_column_and_left_cancellation' depends on axioms: [propext]
+D0.Research.NativeArchiveApparatus.every_actual_regular_action_retains_the_constant_record (g : Fin 8) :
+  Matrix.mulVec (D0.Research.NativeArchiveApparatus.regularR g) D0.Research.NativeArchiveApparatus.constantRecord =
+    D0.Research.NativeArchiveApparatus.constantRecord
+'D0.Research.NativeArchiveApparatus.every_actual_regular_action_retains_the_constant_record' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.actual_regular_action_reads_the_identity_coefficient (g : Fin 8)
+  (x : D0.Research.NativeArchiveApparatus.V8) : Matrix.mulVec (D0.Research.NativeArchiveApparatus.regularR g) x g = x 0
+'D0.Research.NativeArchiveApparatus.actual_regular_action_reads_the_identity_coefficient' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.the_complete_regular_fixed_space_is_the_constant_line
+  (x : D0.Research.NativeArchiveApparatus.V8)
+  (hx : ∀ (g : Fin 8), Matrix.mulVec (D0.Research.NativeArchiveApparatus.regularR g) x = x) :
+  x = x 0 • D0.Research.NativeArchiveApparatus.constantRecord
+'D0.Research.NativeArchiveApparatus.the_complete_regular_fixed_space_is_the_constant_line' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.every_complete_regular_commutant_retains_its_constant_line
+  (U : D0.Research.NativeArchiveApparatus.M8)
+  (hu :
+    ∀ (g : Fin 8),
+      U * D0.Research.NativeArchiveApparatus.regularR g = D0.Research.NativeArchiveApparatus.regularR g * U) :
+  ∃ c,
+    Matrix.mulVec U D0.Research.NativeArchiveApparatus.constantRecord =
+      c • D0.Research.NativeArchiveApparatus.constantRecord
+'D0.Research.NativeArchiveApparatus.every_complete_regular_commutant_retains_its_constant_line' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.a_full_regular_orthogonal_commutant_has_only_a_sign_on_the_constant_line
+  (U : D0.Research.NativeArchiveApparatus.M8) (hu : Matrix.transpose U * U = 1)
+  (hc :
+    ∀ (g : Fin 8),
+      U * D0.Research.NativeArchiveApparatus.regularR g = D0.Research.NativeArchiveApparatus.regularR g * U) :
+  ∃ c,
+    c ^ 2 = 1 ∧
+      Matrix.mulVec U D0.Research.NativeArchiveApparatus.constantRecord =
+        c • D0.Research.NativeArchiveApparatus.constantRecord
+'D0.Research.NativeArchiveApparatus.a_full_regular_orthogonal_commutant_has_only_a_sign_on_the_constant_line' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.no_full_regular_Q8_commutant_is_a_nontrivial_pure_golden_spin_pair
+  (U : D0.Research.NativeArchiveApparatus.M8) (a : ℝ) (ha : -1 < a ∧ a < 1) (hu : Matrix.transpose U * U = 1)
+  (hc :
+    ∀ (g : Fin 8),
+      U * D0.Research.NativeArchiveApparatus.regularR g = D0.Research.NativeArchiveApparatus.regularR g * U) :
+  U * U - (2 * a) • U + 1 ≠ 0
+'D0.Research.NativeArchiveApparatus.no_full_regular_Q8_commutant_is_a_nontrivial_pure_golden_spin_pair' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.the_three_archives_are_disjoint_and_each_retains_all_Omega8_labels (z w : Fin 3)
+  (x y : D0.Omega8) :
+  D0.Research.NativeArchiveApparatus.archive z x = D0.Research.NativeArchiveApparatus.archive w y ↔ z = w ∧ x = y
+'D0.Research.NativeArchiveApparatus.the_three_archives_are_disjoint_and_each_retains_all_Omega8_labels' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.each_owned_archive_has_its_original_zone (z : Fin 3) (x : D0.Omega8) :
+  D0.SelfReading.TypedCapacityRawScene.typedZone (D0.Research.NativeArchiveApparatus.archive z x) = z
+'D0.Research.NativeArchiveApparatus.each_owned_archive_has_its_original_zone' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.native_degree_profile_reproved_in_the_kernel
+  (v : D0.Research.NativeArchiveApparatus.Vertex) :
+  D0.SelfReading.TypedCapacityRawScene.typedDegree v =
+    if D0.SelfReading.TypedCapacityRawScene.typedZone v = 0 then 24
+    else if D0.SelfReading.TypedCapacityRawScene.typedZone v = 1 then 22 else 20
+'D0.Research.NativeArchiveApparatus.native_degree_profile_reproved_in_the_kernel' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.native_degree_equals_actual_real_zone_weight
+  (v : D0.Research.NativeArchiveApparatus.Vertex) :
+  ↑(D0.SelfReading.TypedCapacityRawScene.typedDegree v) =
+    D0.Research.NativeArchiveApparatus.zoneDegree (D0.SelfReading.TypedCapacityRawScene.typedZone v)
+'D0.Research.NativeArchiveApparatus.native_degree_equals_actual_real_zone_weight' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.every_native_zone_degree_is_positive (z : Fin 3) :
+  0 < D0.Research.NativeArchiveApparatus.zoneDegree z
+'D0.Research.NativeArchiveApparatus.every_native_zone_degree_is_positive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.the_two_archive_addresses_are_injective
+  (p : D0.Research.NativeArchiveApparatus.ArchivePair) :
+  Function.Injective (D0.Research.NativeArchiveApparatus.addresses p)
+'D0.Research.NativeArchiveApparatus.the_two_archive_addresses_are_injective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.paired_orientation_labels_are_jointly_injective
+  (p : D0.Research.NativeArchiveApparatus.ArchivePair) (i j : D0.Research.NativeArchiveApparatus.Coordinates)
+  (o q : Bool) :
+  D0.Research.NativeArchiveApparatus.label p i o = D0.Research.NativeArchiveApparatus.label p j q ↔ i = j ∧ o = q
+'D0.Research.NativeArchiveApparatus.paired_orientation_labels_are_jointly_injective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.both_orientation_labels_have_the_same_native_zone
+  (p : D0.Research.NativeArchiveApparatus.ArchivePair) (i : D0.Research.NativeArchiveApparatus.Coordinates) (o : Bool) :
+  D0.SelfReading.TypedCapacityRawScene.typedZone (D0.Research.NativeArchiveApparatus.label p i o) =
+    D0.Research.NativeArchiveApparatus.addresses p i.1
+'D0.Research.NativeArchiveApparatus.both_orientation_labels_have_the_same_native_zone' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.block_lift_is_additive.{u_1, u_2} {h : Type u_1} {k : Type u_2} [Fintype h]
+  [Fintype k] [DecidableEq h] [DecidableEq k] (E : Matrix h k ℝ) (A B : Matrix k k ℝ) :
+  D0.Research.NativeArchiveApparatus.archiveBlock E (A + B) =
+    D0.Research.NativeArchiveApparatus.archiveBlock E A + D0.Research.NativeArchiveApparatus.archiveBlock E B
+'D0.Research.NativeArchiveApparatus.block_lift_is_additive' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.NativeArchiveApparatus.block_lift_is_multiplicative_on_an_isometry.{u_1, u_2} {h : Type u_1} {k : Type u_2}
+  [Fintype h] [Fintype k] [DecidableEq h] [DecidableEq k] (E : Matrix h k ℝ) (he : E.transpose * E = 1)
+  (A B : Matrix k k ℝ) :
+  D0.Research.NativeArchiveApparatus.archiveBlock E A * D0.Research.NativeArchiveApparatus.archiveBlock E B =
+    D0.Research.NativeArchiveApparatus.archiveBlock E (A * B)
+'D0.Research.NativeArchiveApparatus.block_lift_is_multiplicative_on_an_isometry' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.mutually_orthogonal_blocks_have_zero_cross_product.{u_1, u_2} {h : Type u_1}
+  {k : Type u_2} [Fintype h] [Fintype k] [DecidableEq h] [DecidableEq k] (E F : Matrix h k ℝ)
+  (hef : E.transpose * F = 0) (A B : Matrix k k ℝ) :
+  D0.Research.NativeArchiveApparatus.archiveBlock E A * D0.Research.NativeArchiveApparatus.archiveBlock F B = 0
+'D0.Research.NativeArchiveApparatus.mutually_orthogonal_blocks_have_zero_cross_product' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.paired_full_history_extension_retains_identity.{u_1, u_2} {h : Type u_1}
+  {k : Type u_2} [Fintype h] [Fintype k] [DecidableEq h] [DecidableEq k] (E F : Matrix h k ℝ) :
+  D0.Research.NativeArchiveApparatus.pairedExtension E F 1 = 1
+'D0.Research.NativeArchiveApparatus.paired_full_history_extension_retains_identity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.paired_full_history_extension_retains_transpose.{u_1, u_2} {h : Type u_1}
+  {k : Type u_2} [Fintype h] [Fintype k] [DecidableEq h] [DecidableEq k] (E F : Matrix h k ℝ) (A : Matrix k k ℝ) :
+  (D0.Research.NativeArchiveApparatus.pairedExtension E F A).transpose =
+    D0.Research.NativeArchiveApparatus.pairedExtension E F A.transpose
+'D0.Research.NativeArchiveApparatus.paired_full_history_extension_retains_transpose' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.paired_full_history_extension_retains_all_compositions.{u_1, u_2} {h : Type u_1}
+  {k : Type u_2} [Fintype h] [Fintype k] [DecidableEq h] [DecidableEq k] (E F : Matrix h k ℝ) (he : E.transpose * E = 1)
+  (hf : F.transpose * F = 1) (hef : E.transpose * F = 0) (hfe : F.transpose * E = 0) (A B : Matrix k k ℝ) :
+  D0.Research.NativeArchiveApparatus.pairedExtension E F A * D0.Research.NativeArchiveApparatus.pairedExtension E F B =
+    D0.Research.NativeArchiveApparatus.pairedExtension E F (A * B)
+'D0.Research.NativeArchiveApparatus.paired_full_history_extension_retains_all_compositions' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.paired_full_history_extension_is_orthogonal.{u_1, u_2} {h : Type u_1} {k : Type u_2}
+  [Fintype h] [Fintype k] [DecidableEq h] [DecidableEq k] (E F : Matrix h k ℝ) (he : E.transpose * E = 1)
+  (hf : F.transpose * F = 1) (hef : E.transpose * F = 0) (hfe : F.transpose * E = 0) (A : Matrix k k ℝ)
+  (ha : A.transpose * A = 1) :
+  (D0.Research.NativeArchiveApparatus.pairedExtension E F A).transpose *
+      D0.Research.NativeArchiveApparatus.pairedExtension E F A =
+    1
+'D0.Research.NativeArchiveApparatus.paired_full_history_extension_is_orthogonal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.complete_history_extension_reads_back_the_original_operation.{u_1, u_2}
+  {h : Type u_1} {k : Type u_2} [Fintype h] [Fintype k] [DecidableEq h] [DecidableEq k] (E F : Matrix h k ℝ)
+  (he : E.transpose * E = 1) (hef : E.transpose * F = 0) (hfe : F.transpose * E = 0) (A : Matrix k k ℝ) :
+  E.transpose * D0.Research.NativeArchiveApparatus.pairedExtension E F A * E = A
+'D0.Research.NativeArchiveApparatus.complete_history_extension_reads_back_the_original_operation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.complete_history_extension_is_faithful.{u_1, u_2} {h : Type u_1} {k : Type u_2}
+  [Fintype h] [Fintype k] [DecidableEq h] [DecidableEq k] (E F : Matrix h k ℝ) (he : E.transpose * E = 1)
+  (hef : E.transpose * F = 0) (hfe : F.transpose * E = 0) :
+  Function.Injective (D0.Research.NativeArchiveApparatus.pairedExtension E F)
+'D0.Research.NativeArchiveApparatus.complete_history_extension_is_faithful' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.paired_full_history_extension_acts_on_the_endpoint_embedding.{u_1, u_2}
+  {h : Type u_1} {k : Type u_2} [Fintype h] [Fintype k] [DecidableEq h] [DecidableEq k] (E F : Matrix h k ℝ)
+  (he : E.transpose * E = 1) (hfe : F.transpose * E = 0) (A : Matrix k k ℝ) :
+  D0.Research.NativeArchiveApparatus.pairedExtension E F A * E = E * A
+'D0.Research.NativeArchiveApparatus.paired_full_history_extension_acts_on_the_endpoint_embedding' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.paired_full_history_extension_acts_on_the_source_embedding.{u_1, u_2} {h : Type u_1}
+  {k : Type u_2} [Fintype h] [Fintype k] [DecidableEq h] [DecidableEq k] (E F : Matrix h k ℝ) (hf : F.transpose * F = 1)
+  (hef : E.transpose * F = 0) (A : Matrix k k ℝ) : D0.Research.NativeArchiveApparatus.pairedExtension E F A * F = F * A
+'D0.Research.NativeArchiveApparatus.paired_full_history_extension_acts_on_the_source_embedding' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.every_joint_orthogonal_history_record_is_retained.{u_1, u_2} {h : Type u_1}
+  {k : Type u_2} [Fintype h] [Fintype k] [DecidableEq h] [DecidableEq k] (E F : Matrix h k ℝ) (A : Matrix k k ℝ)
+  (x : h → ℝ) (he : E.transpose.mulVec x = 0) (hf : F.transpose.mulVec x = 0) :
+  (D0.Research.NativeArchiveApparatus.pairedExtension E F A).mulVec x = x
+'D0.Research.NativeArchiveApparatus.every_joint_orthogonal_history_record_is_retained' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.endpoint_projection_compatibility_of_the_complete_extension.{u_1, u_2} {h : Type u_1}
+  {k : Type u_2} [Fintype h] [Fintype k] [DecidableEq h] [DecidableEq k] (E F : Matrix h k ℝ) (P : Matrix h h ℝ)
+  (hp : P.transpose = P) (he : P * E = E) (hf : P * F = 0) (A : Matrix k k ℝ) :
+  P * D0.Research.NativeArchiveApparatus.pairedExtension E F A =
+    D0.Research.NativeArchiveApparatus.pairedExtension E F A * P
+'D0.Research.NativeArchiveApparatus.endpoint_projection_compatibility_of_the_complete_extension' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.complete_history_reversal_compatibility_of_the_extension.{u_1, u_2} {h : Type u_1}
+  {k : Type u_2} [Fintype h] [Fintype k] [DecidableEq h] [DecidableEq k] (E F : Matrix h k ℝ) (R : Matrix h h ℝ)
+  (hr : R.transpose = R) (he : R * E = F) (hf : R * F = E) (A : Matrix k k ℝ) :
+  R * D0.Research.NativeArchiveApparatus.pairedExtension E F A =
+    D0.Research.NativeArchiveApparatus.pairedExtension E F A * R
+'D0.Research.NativeArchiveApparatus.complete_history_reversal_compatibility_of_the_extension' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveGraph.sum_over_actual_edges.{u_1} {v : Type u_1} [Fintype v] [DecidableEq v] (r : v → v → Prop)
+  [DecidableRel r] (f : v × v → ℝ) : ∑ e, f ↑e = ∑ a, ∑ b, if r a b then f (a, b) else 0
+'D0.Research.NativeArchiveGraph.sum_over_actual_edges' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.NativeArchiveGraph.endpoint_lift_gram.{u_1} {v : Type u_1} [Fintype v] [DecidableEq v] (r : v → v → Prop)
+  [DecidableRel r] :
+  (D0.Research.NativeArchiveGraph.endpointLift r).transpose * D0.Research.NativeArchiveGraph.endpointLift r =
+    Matrix.diagonal (D0.Research.NativeArchiveGraph.edgeDegree r)
+'D0.Research.NativeArchiveGraph.endpoint_lift_gram' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.NativeArchiveGraph.endpoint_average_is_weighted_adjoint.{u_1} {v : Type u_1} [Fintype v] [DecidableEq v]
+  (r : v → v → Prop) [DecidableRel r] :
+  D0.Research.NativeArchiveGraph.endpointAverage r =
+    (Matrix.diagonal fun b => (D0.Research.NativeArchiveGraph.edgeDegree r b)⁻¹) *
+      (D0.Research.NativeArchiveGraph.endpointLift r).transpose
+'D0.Research.NativeArchiveGraph.endpoint_average_is_weighted_adjoint' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveGraph.endpoint_average_exact_left_inverse.{u_1} {v : Type u_1} [Fintype v] [DecidableEq v]
+  (r : v → v → Prop) [DecidableRel r] (hn : ∀ (b : v), D0.Research.NativeArchiveGraph.edgeDegree r b ≠ 0) :
+  D0.Research.NativeArchiveGraph.endpointAverage r * D0.Research.NativeArchiveGraph.endpointLift r = 1
+'D0.Research.NativeArchiveGraph.endpoint_average_exact_left_inverse' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveGraph.endpoint_reynolds_is_selfadjoint.{u_1} {v : Type u_1} [Fintype v] [DecidableEq v]
+  (r : v → v → Prop) [DecidableRel r] :
+  (D0.Research.NativeArchiveGraph.endpointLift r * D0.Research.NativeArchiveGraph.endpointAverage r).transpose =
+    D0.Research.NativeArchiveGraph.endpointLift r * D0.Research.NativeArchiveGraph.endpointAverage r
+'D0.Research.NativeArchiveGraph.endpoint_reynolds_is_selfadjoint' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveGraph.endpoint_source_average.{u_1} {v : Type u_1} [Fintype v] [DecidableEq v]
+  (r : v → v → Prop) [DecidableRel r] (hs : ∀ (a b : v), r a b ↔ r b a) :
+  D0.Research.NativeArchiveGraph.endpointAverage r * D0.Research.NativeArchiveGraph.sourceLift r =
+    D0.Research.NativeArchiveGraph.graphTransport r
+'D0.Research.NativeArchiveGraph.endpoint_source_average' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.NativeArchiveGraph.endpoint_source_gram.{u_1} {v : Type u_1} [Fintype v] [DecidableEq v] (r : v → v → Prop)
+  [DecidableRel r] (hs : ∀ (a b : v), r a b ↔ r b a) :
+  (D0.Research.NativeArchiveGraph.endpointLift r).transpose * D0.Research.NativeArchiveGraph.sourceLift r =
+    D0.Research.NativeArchiveGraph.graphAdjacency r
+'D0.Research.NativeArchiveGraph.endpoint_source_gram' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.NativeArchiveGraph.history_reverse_is_involution.{u_1} {v : Type u_1} [Fintype v] [DecidableEq v]
+  (r : v → v → Prop) [DecidableRel r] (hs : ∀ (a b : v), r a b ↔ r b a) :
+  D0.Research.NativeArchiveGraph.reverseOperator r hs * D0.Research.NativeArchiveGraph.reverseOperator r hs = 1
+'D0.Research.NativeArchiveGraph.history_reverse_is_involution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveGraph.history_reverse_is_selfadjoint.{u_1} {v : Type u_1} [Fintype v] [DecidableEq v]
+  (r : v → v → Prop) [DecidableRel r] (hs : ∀ (a b : v), r a b ↔ r b a) :
+  (D0.Research.NativeArchiveGraph.reverseOperator r hs).transpose = D0.Research.NativeArchiveGraph.reverseOperator r hs
+'D0.Research.NativeArchiveGraph.history_reverse_is_selfadjoint' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveGraph.history_reverse_is_orthogonal.{u_1} {v : Type u_1} [Fintype v] [DecidableEq v]
+  (r : v → v → Prop) [DecidableRel r] (hs : ∀ (a b : v), r a b ↔ r b a) :
+  (D0.Research.NativeArchiveGraph.reverseOperator r hs).transpose *
+      D0.Research.NativeArchiveGraph.reverseOperator r hs =
+    1
+'D0.Research.NativeArchiveGraph.history_reverse_is_orthogonal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveGraph.history_reverse_recovers_source.{u_1} {v : Type u_1} [Fintype v] [DecidableEq v]
+  (r : v → v → Prop) [DecidableRel r] (hs : ∀ (a b : v), r a b ↔ r b a) :
+  D0.Research.NativeArchiveGraph.reverseOperator r hs * D0.Research.NativeArchiveGraph.endpointLift r =
+    D0.Research.NativeArchiveGraph.sourceLift r
+'D0.Research.NativeArchiveGraph.history_reverse_recovers_source' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveGraph.complete_history_relabel_reverse_naturality.{u_1} {v : Type u_1} [Fintype v]
+  [DecidableEq v] (r : v → v → Prop) [DecidableRel r] (hs : ∀ (a b : v), r a b ↔ r b a) (σ : Equiv.Perm v)
+  (hp : ∀ (a b : v), r (σ a) (σ b) ↔ r a b) (e : D0.Research.NativeArchiveGraph.Edge r) :
+  (D0.Research.NativeArchiveGraph.reverseEquiv r hs) ((D0.Research.NativeArchiveGraph.historyRelabel r σ hp) e) =
+    (D0.Research.NativeArchiveGraph.historyRelabel r σ hp) ((D0.Research.NativeArchiveGraph.reverseEquiv r hs) e)
+'D0.Research.NativeArchiveGraph.complete_history_relabel_reverse_naturality' depends on axioms: [propext, Quot.sound]
+D0.Research.NativeArchiveGraph.complete_history_relabel_keeps_both_readouts.{u_1} {v : Type u_1} [Fintype v]
+  [DecidableEq v] (r : v → v → Prop) [DecidableRel r] (σ : Equiv.Perm v) (hp : ∀ (a b : v), r (σ a) (σ b) ↔ r a b)
+  (e : D0.Research.NativeArchiveGraph.Edge r) :
+  (↑((D0.Research.NativeArchiveGraph.historyRelabel r σ hp) e)).1 = σ (↑e).1 ∧
+    (↑((D0.Research.NativeArchiveGraph.historyRelabel r σ hp) e)).2 = σ (↑e).2
+'D0.Research.NativeArchiveGraph.complete_history_relabel_keeps_both_readouts' depends on axioms: [propext, Quot.sound]
+D0.Research.NativeArchiveGraph.actual_scene_relation_symmetric (a b : Fin 33) :
+  D0.VNext2.ScenePathHistoryCanonicity.SceneStep a b ↔ D0.VNext2.ScenePathHistoryCanonicity.SceneStep b a
+'D0.Research.NativeArchiveGraph.actual_scene_relation_symmetric' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveGraph.actual_scene_relation_iff (a b : Fin 33) :
+  D0.VNext2.ScenePathHistoryCanonicity.SceneStep a b ↔ D0.Claims.zone31 a ≠ D0.Claims.zone31 b
+'D0.Research.NativeArchiveGraph.actual_scene_relation_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.NativeArchiveGraph.real_actual_endpoint_lift_binding :
+  D0.Research.NativeArchiveGraph.endpointLift D0.VNext2.ScenePathHistoryCanonicity.SceneStep =
+    D0.Research.NativeArchiveGraph.Jr
+'D0.Research.NativeArchiveGraph.real_actual_endpoint_lift_binding' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveGraph.real_actual_source_lift_binding :
+  D0.Research.NativeArchiveGraph.sourceLift D0.VNext2.ScenePathHistoryCanonicity.SceneStep =
+    D0.Research.NativeArchiveGraph.Sr
+'D0.Research.NativeArchiveGraph.real_actual_source_lift_binding' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveGraph.real_actual_degree_cast_binding (b : Fin 33) :
+  D0.Research.NativeArchiveGraph.edgeDegree D0.VNext2.ScenePathHistoryCanonicity.SceneStep b =
+    (algebraMap ℚ ℝ) (D0.Synthesis.SceneNormalizedQuotientDescent.fullDegreeValue b)
+'D0.Research.NativeArchiveGraph.real_actual_degree_cast_binding' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveGraph.real_actual_endpoint_average_binding :
+  D0.Research.NativeArchiveGraph.endpointAverage D0.VNext2.ScenePathHistoryCanonicity.SceneStep =
+    D0.Research.NativeArchiveGraph.Cr
+'D0.Research.NativeArchiveGraph.real_actual_endpoint_average_binding' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveGraph.actual_real_zone_counts (z : Fin 3) :
+  (∑ i, if D0.Claims.zone31 i = z then 1 else 0) = D0.Research.NativeArchiveGraph.realZoneSize z
+'D0.Research.NativeArchiveGraph.actual_real_zone_counts' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.NativeArchiveGraph.actual_real_endpoint_degree_by_zone (b : Fin 33) :
+  D0.Research.NativeArchiveGraph.edgeDegree D0.VNext2.ScenePathHistoryCanonicity.SceneStep b =
+    D0.Research.NativeArchiveApparatus.zoneDegree (D0.Claims.zone31 b)
+'D0.Research.NativeArchiveGraph.actual_real_endpoint_degree_by_zone' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveGraph.real_native_endpoint_degrees_are_nonzero (b : Fin 33) :
+  D0.Research.NativeArchiveGraph.edgeDegree D0.VNext2.ScenePathHistoryCanonicity.SceneStep b ≠ 0
+'D0.Research.NativeArchiveGraph.real_native_endpoint_degrees_are_nonzero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveGraph.real_native_endpoint_gram_is_actual_degree :
+  D0.Research.NativeArchiveGraph.Jr.transpose * D0.Research.NativeArchiveGraph.Jr =
+    Matrix.diagonal (D0.Research.NativeArchiveGraph.edgeDegree D0.VNext2.ScenePathHistoryCanonicity.SceneStep)
+'D0.Research.NativeArchiveGraph.real_native_endpoint_gram_is_actual_degree' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveGraph.real_native_endpoint_average_is_a_left_inverse :
+  D0.Research.NativeArchiveGraph.Cr * D0.Research.NativeArchiveGraph.Jr = 1
+'D0.Research.NativeArchiveGraph.real_native_endpoint_average_is_a_left_inverse' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveGraph.real_native_endpoint_projection_is_selfadjoint :
+  (D0.Research.NativeArchiveGraph.Jr * D0.Research.NativeArchiveGraph.Cr).transpose =
+    D0.Research.NativeArchiveGraph.Jr * D0.Research.NativeArchiveGraph.Cr
+'D0.Research.NativeArchiveGraph.real_native_endpoint_projection_is_selfadjoint' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveGraph.real_native_reversal_is_exactly_the_owned_history_reversal
+  (e : D0.VNext2.ScenePathHistoryCanonicity.LevelOneSceneHistory) :
+  (D0.Research.NativeArchiveGraph.reverseEquiv D0.VNext2.ScenePathHistoryCanonicity.SceneStep
+        D0.Research.NativeArchiveGraph.actual_scene_relation_symmetric)
+      e =
+    D0.VNext2.SceneEndpointReynoldsExpectation.reverseEdge e
+'D0.Research.NativeArchiveGraph.real_native_reversal_is_exactly_the_owned_history_reversal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveGraph.real_native_reversal_is_involutive :
+  D0.Research.NativeArchiveGraph.Rr * D0.Research.NativeArchiveGraph.Rr = 1
+'D0.Research.NativeArchiveGraph.real_native_reversal_is_involutive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveGraph.real_native_reversal_is_selfadjoint :
+  D0.Research.NativeArchiveGraph.Rr.transpose = D0.Research.NativeArchiveGraph.Rr
+'D0.Research.NativeArchiveGraph.real_native_reversal_is_selfadjoint' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveGraph.real_native_reversal_recovers_source :
+  D0.Research.NativeArchiveGraph.Rr * D0.Research.NativeArchiveGraph.Jr = D0.Research.NativeArchiveGraph.Sr
+'D0.Research.NativeArchiveGraph.real_native_reversal_recovers_source' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveGraph.real_native_reversal_recovers_endpoint :
+  D0.Research.NativeArchiveGraph.Rr * D0.Research.NativeArchiveGraph.Sr = D0.Research.NativeArchiveGraph.Jr
+'D0.Research.NativeArchiveGraph.real_native_reversal_recovers_endpoint' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.the_actual_raw_scene_retains_both_archive_labels
+  (p : D0.Research.NativeArchiveApparatus.ArchivePair) (i j : D0.Research.NativeArchiveApparatus.Coordinates)
+  (o q : Bool) :
+  D0.Research.NativeArchiveApparatus.rawLabel p i o = D0.Research.NativeArchiveApparatus.rawLabel p j q ↔ i = j ∧ o = q
+'D0.Research.NativeArchiveApparatus.the_actual_raw_scene_retains_both_archive_labels' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.the_two_canonical_raw_zone_names_agree (v : Fin 33) :
+  D0.Claims.zone31 v = D0.SelfReading.RawSceneGraph.lab v
+'D0.Research.NativeArchiveApparatus.the_two_canonical_raw_zone_names_agree' depends on axioms: [propext]
+D0.Research.NativeArchiveApparatus.every_raw_archive_label_keeps_its_owned_zone
+  (p : D0.Research.NativeArchiveApparatus.ArchivePair) (i : D0.Research.NativeArchiveApparatus.Coordinates) (o : Bool) :
+  D0.Claims.zone31 (D0.Research.NativeArchiveApparatus.rawLabel p i o) =
+    D0.Research.NativeArchiveApparatus.addresses p i.1
+'D0.Research.NativeArchiveApparatus.every_raw_archive_label_keeps_its_owned_zone' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.native_archive_normalization_is_the_actual_degree_normalization
+  (p : D0.Research.NativeArchiveApparatus.ArchivePair) (i : D0.Research.NativeArchiveApparatus.Coordinates) :
+  2 * D0.Research.NativeArchiveApparatus.zoneDegree (D0.Research.NativeArchiveApparatus.addresses p i.1) *
+      D0.Research.NativeArchiveApparatus.archiveNormalization p i ^ 2 =
+    1
+'D0.Research.NativeArchiveApparatus.native_archive_normalization_is_the_actual_degree_normalization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.sparse_weighted_delta_overlap (d : Fin 33 → ℝ) (x y : Fin 33) :
+  ∑ v, D0.Research.NativeArchiveApparatus.delta x v * d v * D0.Research.NativeArchiveApparatus.delta y v =
+    if x = y then d x else 0
+'D0.Research.NativeArchiveApparatus.sparse_weighted_delta_overlap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.actual_archive_degree_agrees_on_both_orientation_labels
+  (p : D0.Research.NativeArchiveApparatus.ArchivePair) (i : D0.Research.NativeArchiveApparatus.Coordinates) (o : Bool) :
+  D0.Research.NativeArchiveGraph.edgeDegree D0.VNext2.ScenePathHistoryCanonicity.SceneStep
+      (D0.Research.NativeArchiveApparatus.rawLabel p i o) =
+    D0.Research.NativeArchiveApparatus.zoneDegree (D0.Research.NativeArchiveApparatus.addresses p i.1)
+'D0.Research.NativeArchiveApparatus.actual_archive_degree_agrees_on_both_orientation_labels' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.two_retained_archive_sectors_form_an_exact_weighted_isometry
+  (p : D0.Research.NativeArchiveApparatus.ArchivePair) :
+  (D0.Research.NativeArchiveApparatus.nativeB p).transpose *
+        Matrix.diagonal (D0.Research.NativeArchiveGraph.edgeDegree D0.VNext2.ScenePathHistoryCanonicity.SceneStep) *
+      D0.Research.NativeArchiveApparatus.nativeB p =
+    1
+'D0.Research.NativeArchiveApparatus.two_retained_archive_sectors_form_an_exact_weighted_isometry' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.arbitrary_scene_rows_read_a_sparse_archive_coordinate (f : Fin 33 → ℝ) (x : Fin 33) :
+  ∑ v, f v * D0.Research.NativeArchiveApparatus.delta x v = f x
+'D0.Research.NativeArchiveApparatus.arbitrary_scene_rows_read_a_sparse_archive_coordinate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.all_native_archive_columns_are_balanced_in_each_owned_zone
+  (p : D0.Research.NativeArchiveApparatus.ArchivePair) :
+  D0.Research.NativeArchiveGraph.graphAdjacency D0.VNext2.ScenePathHistoryCanonicity.SceneStep *
+      D0.Research.NativeArchiveApparatus.nativeB p =
+    0
+'D0.Research.NativeArchiveApparatus.all_native_archive_columns_are_balanced_in_each_owned_zone' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.native_transport_does_not_forget_the_balanced_archive_condition
+  (p : D0.Research.NativeArchiveApparatus.ArchivePair) :
+  D0.Research.NativeArchiveGraph.graphTransport D0.VNext2.ScenePathHistoryCanonicity.SceneStep *
+      D0.Research.NativeArchiveApparatus.nativeB p =
+    0
+'D0.Research.NativeArchiveApparatus.native_transport_does_not_forget_the_balanced_archive_condition' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.full_endpoint_histories_embed_the_apparatus_isometrically
+  (p : D0.Research.NativeArchiveApparatus.ArchivePair) :
+  (D0.Research.NativeArchiveApparatus.endpointApparatus p).transpose *
+      D0.Research.NativeArchiveApparatus.endpointApparatus p =
+    1
+'D0.Research.NativeArchiveApparatus.full_endpoint_histories_embed_the_apparatus_isometrically' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.full_history_reversal_exchanges_the_two_apparatus_embeddings
+  (p : D0.Research.NativeArchiveApparatus.ArchivePair) :
+  D0.Research.NativeArchiveGraph.Rr * D0.Research.NativeArchiveApparatus.endpointApparatus p =
+      D0.Research.NativeArchiveApparatus.sourceApparatus p ∧
+    D0.Research.NativeArchiveGraph.Rr * D0.Research.NativeArchiveApparatus.sourceApparatus p =
+      D0.Research.NativeArchiveApparatus.endpointApparatus p
+'D0.Research.NativeArchiveApparatus.full_history_reversal_exchanges_the_two_apparatus_embeddings' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.endpoint_readout_recovers_every_apparatus_state
+  (p : D0.Research.NativeArchiveApparatus.ArchivePair) :
+  D0.Research.NativeArchiveGraph.Cr * D0.Research.NativeArchiveApparatus.endpointApparatus p =
+    D0.Research.NativeArchiveApparatus.nativeB p
+'D0.Research.NativeArchiveApparatus.endpoint_readout_recovers_every_apparatus_state' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.the_opposite_readout_of_each_apparatus_state_is_zero
+  (p : D0.Research.NativeArchiveApparatus.ArchivePair) :
+  D0.Research.NativeArchiveGraph.Cr * D0.Research.NativeArchiveApparatus.sourceApparatus p = 0
+'D0.Research.NativeArchiveApparatus.the_opposite_readout_of_each_apparatus_state_is_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.full_source_histories_embed_the_same_apparatus_isometrically
+  (p : D0.Research.NativeArchiveApparatus.ArchivePair) :
+  (D0.Research.NativeArchiveApparatus.sourceApparatus p).transpose *
+      D0.Research.NativeArchiveApparatus.sourceApparatus p =
+    1
+'D0.Research.NativeArchiveApparatus.full_source_histories_embed_the_same_apparatus_isometrically' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.both_complete_apparatus_histories_are_mutually_orthogonal
+  (p : D0.Research.NativeArchiveApparatus.ArchivePair) :
+  (D0.Research.NativeArchiveApparatus.endpointApparatus p).transpose *
+      D0.Research.NativeArchiveApparatus.sourceApparatus p =
+    0
+'D0.Research.NativeArchiveApparatus.both_complete_apparatus_histories_are_mutually_orthogonal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.both_complete_apparatus_histories_are_orthogonal_in_reverse_order
+  (p : D0.Research.NativeArchiveApparatus.ArchivePair) :
+  (D0.Research.NativeArchiveApparatus.sourceApparatus p).transpose *
+      D0.Research.NativeArchiveApparatus.endpointApparatus p =
+    0
+'D0.Research.NativeArchiveApparatus.both_complete_apparatus_histories_are_orthogonal_in_reverse_order' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.the_full_native_history_extension_preserves_identity
+  (p : D0.Research.NativeArchiveApparatus.ArchivePair) : D0.Research.NativeArchiveApparatus.nativeExtension p 1 = 1
+'D0.Research.NativeArchiveApparatus.the_full_native_history_extension_preserves_identity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.the_full_native_history_extension_preserves_transpose
+  (p : D0.Research.NativeArchiveApparatus.ArchivePair)
+  (A : Matrix D0.Research.NativeArchiveApparatus.Coordinates D0.Research.NativeArchiveApparatus.Coordinates ℝ) :
+  (D0.Research.NativeArchiveApparatus.nativeExtension p A).transpose =
+    D0.Research.NativeArchiveApparatus.nativeExtension p A.transpose
+'D0.Research.NativeArchiveApparatus.the_full_native_history_extension_preserves_transpose' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.the_full_native_history_extension_preserves_all_compositions
+  (p : D0.Research.NativeArchiveApparatus.ArchivePair)
+  (A B : Matrix D0.Research.NativeArchiveApparatus.Coordinates D0.Research.NativeArchiveApparatus.Coordinates ℝ) :
+  D0.Research.NativeArchiveApparatus.nativeExtension p A * D0.Research.NativeArchiveApparatus.nativeExtension p B =
+    D0.Research.NativeArchiveApparatus.nativeExtension p (A * B)
+'D0.Research.NativeArchiveApparatus.the_full_native_history_extension_preserves_all_compositions' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.full_native_extension_preserves_orthogonality
+  (p : D0.Research.NativeArchiveApparatus.ArchivePair)
+  (A : Matrix D0.Research.NativeArchiveApparatus.Coordinates D0.Research.NativeArchiveApparatus.Coordinates ℝ)
+  (ha : A.transpose * A = 1) :
+  (D0.Research.NativeArchiveApparatus.nativeExtension p A).transpose *
+      D0.Research.NativeArchiveApparatus.nativeExtension p A =
+    1
+'D0.Research.NativeArchiveApparatus.full_native_extension_preserves_orthogonality' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.full_native_extension_retains_all_endpoint_states
+  (p : D0.Research.NativeArchiveApparatus.ArchivePair)
+  (A : Matrix D0.Research.NativeArchiveApparatus.Coordinates D0.Research.NativeArchiveApparatus.Coordinates ℝ) :
+  D0.Research.NativeArchiveApparatus.nativeExtension p A * D0.Research.NativeArchiveApparatus.endpointApparatus p =
+    D0.Research.NativeArchiveApparatus.endpointApparatus p * A
+'D0.Research.NativeArchiveApparatus.full_native_extension_retains_all_endpoint_states' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.full_native_extension_retains_all_source_states
+  (p : D0.Research.NativeArchiveApparatus.ArchivePair)
+  (A : Matrix D0.Research.NativeArchiveApparatus.Coordinates D0.Research.NativeArchiveApparatus.Coordinates ℝ) :
+  D0.Research.NativeArchiveApparatus.nativeExtension p A * D0.Research.NativeArchiveApparatus.sourceApparatus p =
+    D0.Research.NativeArchiveApparatus.sourceApparatus p * A
+'D0.Research.NativeArchiveApparatus.full_native_extension_retains_all_source_states' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.no_complete_apparatus_operation_is_lost_in_the_native_embedding
+  (p : D0.Research.NativeArchiveApparatus.ArchivePair) :
+  Function.Injective (D0.Research.NativeArchiveApparatus.nativeExtension p)
+'D0.Research.NativeArchiveApparatus.no_complete_apparatus_operation_is_lost_in_the_native_embedding' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.full_native_history_extension_commutes_with_owned_history_reversal
+  (p : D0.Research.NativeArchiveApparatus.ArchivePair)
+  (A : Matrix D0.Research.NativeArchiveApparatus.Coordinates D0.Research.NativeArchiveApparatus.Coordinates ℝ) :
+  D0.Research.NativeArchiveGraph.Rr * D0.Research.NativeArchiveApparatus.nativeExtension p A =
+    D0.Research.NativeArchiveApparatus.nativeExtension p A * D0.Research.NativeArchiveGraph.Rr
+'D0.Research.NativeArchiveApparatus.full_native_history_extension_commutes_with_owned_history_reversal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.native_endpoint_projection_retains_the_first_apparatus_embedding
+  (p : D0.Research.NativeArchiveApparatus.ArchivePair) :
+  D0.Research.NativeArchiveGraph.Jr * D0.Research.NativeArchiveGraph.Cr *
+      D0.Research.NativeArchiveApparatus.endpointApparatus p =
+    D0.Research.NativeArchiveApparatus.endpointApparatus p
+'D0.Research.NativeArchiveApparatus.native_endpoint_projection_retains_the_first_apparatus_embedding' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.native_endpoint_projection_annihilates_the_opposite_embedding
+  (p : D0.Research.NativeArchiveApparatus.ArchivePair) :
+  D0.Research.NativeArchiveGraph.Jr * D0.Research.NativeArchiveGraph.Cr *
+      D0.Research.NativeArchiveApparatus.sourceApparatus p =
+    0
+'D0.Research.NativeArchiveApparatus.native_endpoint_projection_annihilates_the_opposite_embedding' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.full_native_history_extension_commutes_with_owned_endpoint_projection
+  (p : D0.Research.NativeArchiveApparatus.ArchivePair)
+  (A : Matrix D0.Research.NativeArchiveApparatus.Coordinates D0.Research.NativeArchiveApparatus.Coordinates ℝ) :
+  D0.Research.NativeArchiveGraph.Jr * D0.Research.NativeArchiveGraph.Cr *
+      D0.Research.NativeArchiveApparatus.nativeExtension p A =
+    D0.Research.NativeArchiveApparatus.nativeExtension p A *
+      (D0.Research.NativeArchiveGraph.Jr * D0.Research.NativeArchiveGraph.Cr)
+'D0.Research.NativeArchiveApparatus.full_native_history_extension_commutes_with_owned_endpoint_projection' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.actual_history_degree_recovers_the_endpoint_adjoint :
+  Matrix.diagonal (D0.Research.NativeArchiveGraph.edgeDegree D0.VNext2.ScenePathHistoryCanonicity.SceneStep) *
+      D0.Research.NativeArchiveGraph.Cr =
+    D0.Research.NativeArchiveGraph.Jr.transpose
+'D0.Research.NativeArchiveApparatus.actual_history_degree_recovers_the_endpoint_adjoint' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.every_endpoint_invisible_history_is_orthogonal_to_the_apparatus
+  (p : D0.Research.NativeArchiveApparatus.ArchivePair)
+  (x : D0.VNext2.ScenePathHistoryCanonicity.LevelOneSceneHistory → ℝ)
+  (hx : D0.Research.NativeArchiveGraph.Cr.mulVec x = 0) :
+  (D0.Research.NativeArchiveApparatus.endpointApparatus p).transpose.mulVec x = 0
+'D0.Research.NativeArchiveApparatus.every_endpoint_invisible_history_is_orthogonal_to_the_apparatus' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.every_source_invisible_history_is_orthogonal_to_the_other_apparatus
+  (p : D0.Research.NativeArchiveApparatus.ArchivePair)
+  (x : D0.VNext2.ScenePathHistoryCanonicity.LevelOneSceneHistory → ℝ)
+  (hx : (D0.Research.NativeArchiveGraph.Cr * D0.Research.NativeArchiveGraph.Rr).mulVec x = 0) :
+  (D0.Research.NativeArchiveApparatus.sourceApparatus p).transpose.mulVec x = 0
+'D0.Research.NativeArchiveApparatus.every_source_invisible_history_is_orthogonal_to_the_other_apparatus' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.every_joint_readout_invisible_native_history_is_retained_exactly
+  (p : D0.Research.NativeArchiveApparatus.ArchivePair)
+  (A : Matrix D0.Research.NativeArchiveApparatus.Coordinates D0.Research.NativeArchiveApparatus.Coordinates ℝ)
+  (x : D0.VNext2.ScenePathHistoryCanonicity.LevelOneSceneHistory → ℝ)
+  (hx : D0.Research.NativeArchiveGraph.Cr.mulVec x = 0)
+  (hrx : (D0.Research.NativeArchiveGraph.Cr * D0.Research.NativeArchiveGraph.Rr).mulVec x = 0) :
+  (D0.Research.NativeArchiveApparatus.nativeExtension p A).mulVec x = x
+'D0.Research.NativeArchiveApparatus.every_joint_readout_invisible_native_history_is_retained_exactly' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.the_owned_normalized_scene_law_is_identity_on_the_archive_embedding
+  (p : D0.Research.NativeArchiveApparatus.ArchivePair) :
+  D0.Research.NativeArchiveApparatus.sceneDelta * D0.Research.NativeArchiveApparatus.nativeB p =
+    D0.Research.NativeArchiveApparatus.nativeB p
+'D0.Research.NativeArchiveApparatus.the_owned_normalized_scene_law_is_identity_on_the_archive_embedding' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.every_joint_history_extension_has_the_same_endpoint_archive_action
+  (p : D0.Research.NativeArchiveApparatus.ArchivePair)
+  (H :
+    Matrix D0.VNext2.ScenePathHistoryCanonicity.LevelOneSceneHistory
+      D0.VNext2.ScenePathHistoryCanonicity.LevelOneSceneHistory ℝ)
+  (hh :
+    H * D0.Research.NativeArchiveGraph.Jr =
+      D0.Research.NativeArchiveGraph.Jr * D0.Research.NativeArchiveApparatus.sceneDelta) :
+  H * D0.Research.NativeArchiveApparatus.endpointApparatus p = D0.Research.NativeArchiveApparatus.endpointApparatus p
+'D0.Research.NativeArchiveApparatus.every_joint_history_extension_has_the_same_endpoint_archive_action' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.every_joint_history_extension_has_the_same_source_archive_action
+  (p : D0.Research.NativeArchiveApparatus.ArchivePair)
+  (H :
+    Matrix D0.VNext2.ScenePathHistoryCanonicity.LevelOneSceneHistory
+      D0.VNext2.ScenePathHistoryCanonicity.LevelOneSceneHistory ℝ)
+  (hh :
+    H * D0.Research.NativeArchiveGraph.Sr =
+      D0.Research.NativeArchiveGraph.Sr * D0.Research.NativeArchiveApparatus.sceneDelta) :
+  H * D0.Research.NativeArchiveApparatus.sourceApparatus p = D0.Research.NativeArchiveApparatus.sourceApparatus p
+'D0.Research.NativeArchiveApparatus.every_joint_history_extension_has_the_same_source_archive_action' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.a_complete_symmetric_operator_fixing_both_arms_commutes_with_the_extension.{u_1, u_2}
+  {h : Type u_1} {k : Type u_2} [Fintype h] [Fintype k] [DecidableEq h] [DecidableEq k] (E F : Matrix h k ℝ)
+  (H : Matrix h h ℝ) (hs : H.transpose = H) (he : H * E = E) (hf : H * F = F) (A : Matrix k k ℝ) :
+  H * D0.Research.NativeArchiveApparatus.pairedExtension E F A =
+    D0.Research.NativeArchiveApparatus.pairedExtension E F A * H
+'D0.Research.NativeArchiveApparatus.a_complete_symmetric_operator_fixing_both_arms_commutes_with_the_extension' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.every_complete_joint_symmetric_native_history_law_commutes_with_the_apparatus
+  (p : D0.Research.NativeArchiveApparatus.ArchivePair)
+  (H :
+    Matrix D0.VNext2.ScenePathHistoryCanonicity.LevelOneSceneHistory
+      D0.VNext2.ScenePathHistoryCanonicity.LevelOneSceneHistory ℝ)
+  (hs : H.transpose = H)
+  (he :
+    H * D0.Research.NativeArchiveGraph.Jr =
+      D0.Research.NativeArchiveGraph.Jr * D0.Research.NativeArchiveApparatus.sceneDelta)
+  (hf :
+    H * D0.Research.NativeArchiveGraph.Sr =
+      D0.Research.NativeArchiveGraph.Sr * D0.Research.NativeArchiveApparatus.sceneDelta)
+  (A : Matrix D0.Research.NativeArchiveApparatus.Coordinates D0.Research.NativeArchiveApparatus.Coordinates ℝ) :
+  H * D0.Research.NativeArchiveApparatus.nativeExtension p A =
+    D0.Research.NativeArchiveApparatus.nativeExtension p A * H
+'D0.Research.NativeArchiveApparatus.every_complete_joint_symmetric_native_history_law_commutes_with_the_apparatus' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.the_native_embedding_keeps_every_finite_programme_and_its_full_order
+  (p : D0.Research.NativeArchiveApparatus.ArchivePair)
+  (w : List (Matrix D0.Research.NativeArchiveApparatus.Coordinates D0.Research.NativeArchiveApparatus.Coordinates ℝ)) :
+  D0.Research.NativeArchiveApparatus.historyWord (List.map (D0.Research.NativeArchiveApparatus.nativeExtension p) w) =
+    D0.Research.NativeArchiveApparatus.nativeExtension p (D0.Research.AddressedThirdRole.word8 w)
+'D0.Research.NativeArchiveApparatus.the_native_embedding_keeps_every_finite_programme_and_its_full_order' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.every_classified_addressed_golden_programme_has_a_faithful_full_native_carrier
+  (addresses : D0.Research.NativeArchiveApparatus.ArchivePair) (c d e f : Fin 4 → ℝ) (hc : ∀ (i : Fin 4), c i ^ 2 = 1)
+  (hd : ∀ (i : Fin 4), d i ^ 2 = 1) (he : ∀ (i : Fin 4), e i ^ 2 = 1) (hf : ∀ (i : Fin 4), f i ^ 2 = 1) (a p : ℝ) :
+  ∃ code σ,
+    code.length ≤ 29 ∧
+      σ ^ 2 = 1 ∧
+        (∀ A ∈ code,
+            ∃ B,
+              A = D0.Research.NativeArchiveApparatus.nativeExtension addresses B ∧
+                (D0.Research.AddressedThirdRole.AddressedPrimitive c d e f B ∨
+                  B = D0.Research.AddressedThirdRole.activeTurn a p)) ∧
+          D0.Research.NativeArchiveApparatus.historyWord code =
+            D0.Research.NativeArchiveApparatus.nativeExtension addresses
+              (D0.Research.AddressedThirdRole.oldTurn a (σ * p))
+'D0.Research.NativeArchiveApparatus.every_classified_addressed_golden_programme_has_a_faithful_full_native_carrier' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.identity_has_only_uniform_arm_action.{u_1, u_2} {h : Type u_1} {k : Type u_2}
+  [Fintype h] [Fintype k] [DecidableEq h] [DecidableEq k] (E F : Matrix h k ℝ) :
+  D0.Research.NativeArchiveApparatus.UniformArms E F 1
+'D0.Research.NativeArchiveApparatus.identity_has_only_uniform_arm_action' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.uniform_arm_operations_are_closed_under_every_composition.{u_1, u_2} {h : Type u_1}
+  {k : Type u_2} [Fintype h] [Fintype k] [DecidableEq h] [DecidableEq k] (E F : Matrix h k ℝ) (M N : Matrix h h ℝ)
+  (hm : D0.Research.NativeArchiveApparatus.UniformArms E F M)
+  (hn : D0.Research.NativeArchiveApparatus.UniformArms E F N) :
+  D0.Research.NativeArchiveApparatus.UniformArms E F (M * N)
+'D0.Research.NativeArchiveApparatus.uniform_arm_operations_are_closed_under_every_composition' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.uniform_arm_operations_are_closed_under_all_real_linear_combinations.{u_1, u_2}
+  {h : Type u_1} {k : Type u_2} [Fintype h] [Fintype k] [DecidableEq h] [DecidableEq k] (E F : Matrix h k ℝ)
+  (M N : Matrix h h ℝ) (hm : D0.Research.NativeArchiveApparatus.UniformArms E F M)
+  (hn : D0.Research.NativeArchiveApparatus.UniformArms E F N) (s t : ℝ) :
+  D0.Research.NativeArchiveApparatus.UniformArms E F (s • M + t • N)
+'D0.Research.NativeArchiveApparatus.uniform_arm_operations_are_closed_under_all_real_linear_combinations' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.a_uniform_arm_operation_cannot_realize_a_nonscalar_complete_coordinate_action.{u_1,
+    u_2}
+  {h : Type u_1} {k : Type u_2} [Fintype h] [Fintype k] [DecidableEq h] [DecidableEq k] (E F : Matrix h k ℝ)
+  (he : E.transpose * E = 1) (hef : E.transpose * F = 0) (hfe : F.transpose * E = 0) (A : Matrix k k ℝ)
+  (ha : D0.Research.NativeArchiveApparatus.UniformArms E F (D0.Research.NativeArchiveApparatus.pairedExtension E F A)) :
+  ∃ a, A = a • 1
+'D0.Research.NativeArchiveApparatus.a_uniform_arm_operation_cannot_realize_a_nonscalar_complete_coordinate_action' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.every_complete_joint_scene_law_has_uniform_identity_action_on_the_apparatus
+  (p : D0.Research.NativeArchiveApparatus.ArchivePair) (H : D0.Research.NativeArchiveApparatus.HM)
+  (hh : D0.Research.NativeArchiveApparatus.CompleteJointSceneLaw H) :
+  D0.Research.NativeArchiveApparatus.UniformArms (D0.Research.NativeArchiveApparatus.endpointApparatus p)
+    (D0.Research.NativeArchiveApparatus.sourceApparatus p) H
+'D0.Research.NativeArchiveApparatus.every_complete_joint_scene_law_has_uniform_identity_action_on_the_apparatus' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.every_native_history_flow_primitive_has_only_uniform_arm_action
+  (p : D0.Research.NativeArchiveApparatus.ArchivePair) (M : D0.Research.NativeArchiveApparatus.HM)
+  (hm : D0.Research.NativeArchiveApparatus.NativeHistoryFlowPalette M) :
+  D0.Research.NativeArchiveApparatus.UniformArms (D0.Research.NativeArchiveApparatus.endpointApparatus p)
+    (D0.Research.NativeArchiveApparatus.sourceApparatus p) M
+'D0.Research.NativeArchiveApparatus.every_native_history_flow_primitive_has_only_uniform_arm_action' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.every_finite_word_in_the_complete_declared_native_flow_palette_is_uniform
+  (p : D0.Research.NativeArchiveApparatus.ArchivePair) (w : List D0.Research.NativeArchiveApparatus.HM)
+  (hw : ∀ M ∈ w, D0.Research.NativeArchiveApparatus.NativeHistoryFlowPalette M) :
+  D0.Research.NativeArchiveApparatus.UniformArms (D0.Research.NativeArchiveApparatus.endpointApparatus p)
+    (D0.Research.NativeArchiveApparatus.sourceApparatus p) (D0.Research.NativeArchiveApparatus.historyWord w)
+'D0.Research.NativeArchiveApparatus.every_finite_word_in_the_complete_declared_native_flow_palette_is_uniform' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.a_nontrivial_old_memory_turn_is_never_a_scalar_workspace_operation (a p : ℝ)
+  (hp : p ≠ 0) : ¬∃ c, D0.Research.AddressedThirdRole.oldTurn a p = c • 1
+'D0.Research.NativeArchiveApparatus.a_nontrivial_old_memory_turn_is_never_a_scalar_workspace_operation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.the_three_role_tensor_is_the_complete_nested_matrix_product
+  (A B C : D0.Research.AddressedThirdRole.M2) :
+  D0.Research.AddressedThirdRole.tensor A B C =
+    Matrix.kroneckerMap (fun x1 x2 => x1 * x2) A (Matrix.kroneckerMap (fun x1 x2 => x1 * x2) B C)
+'D0.Research.NativeArchiveApparatus.the_three_role_tensor_is_the_complete_nested_matrix_product' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.complete_three_role_tensor_operations_preserve_all_products
+  (A B C D E F : D0.Research.AddressedThirdRole.M2) :
+  D0.Research.AddressedThirdRole.tensor A B C * D0.Research.AddressedThirdRole.tensor D E F =
+    D0.Research.AddressedThirdRole.tensor (A * D) (B * E) (C * F)
+'D0.Research.NativeArchiveApparatus.complete_three_role_tensor_operations_preserve_all_products' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.every_active_role_linear_operation_retains_the_old_role_parity
+  (A : D0.Research.AddressedThirdRole.M2) :
+  D0.Research.AddressedThirdRole.tensor A 1 1 * D0.Research.NativeArchiveApparatus.oldParity =
+    D0.Research.NativeArchiveApparatus.oldParity * D0.Research.AddressedThirdRole.tensor A 1 1
+'D0.Research.NativeArchiveApparatus.every_active_role_linear_operation_retains_the_old_role_parity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.a_nontrivial_old_turn_changes_the_old_role_parity (a p : ℝ) (hp : p ≠ 0) :
+  D0.Research.AddressedThirdRole.oldTurn a p * D0.Research.NativeArchiveApparatus.oldParity ≠
+    D0.Research.NativeArchiveApparatus.oldParity * D0.Research.AddressedThirdRole.oldTurn a p
+'D0.Research.NativeArchiveApparatus.a_nontrivial_old_turn_changes_the_old_role_parity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.all_owned_flow_and_all_active_role_operations_preserve_old_parity
+  (p : D0.Research.NativeArchiveApparatus.ArchivePair) (M : D0.Research.NativeArchiveApparatus.HM)
+  (hm : D0.Research.NativeArchiveApparatus.NativeFlowWithAllActiveRoleOperations p M) :
+  M * D0.Research.NativeArchiveApparatus.nativeExtension p D0.Research.NativeArchiveApparatus.oldParity =
+    D0.Research.NativeArchiveApparatus.nativeExtension p D0.Research.NativeArchiveApparatus.oldParity * M
+'D0.Research.NativeArchiveApparatus.all_owned_flow_and_all_active_role_operations_preserve_old_parity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.real_transport_is_the_cast_of_the_actual_full_native_transport :
+  D0.Research.NativeArchiveGraph.graphTransport D0.VNext2.ScenePathHistoryCanonicity.SceneStep =
+    D0.Synthesis.SceneNormalizedQuotientDescent.fullTransport.map ⇑(algebraMap ℚ ℝ)
+'D0.Research.NativeArchiveApparatus.real_transport_is_the_cast_of_the_actual_full_native_transport' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.real_scene_delta_is_the_actual_full_native_normalized_operator :
+  D0.Research.NativeArchiveApparatus.sceneDelta =
+    D0.Synthesis.SceneNormalizedQuotientDescent.fullNormalizedLaplacian.map ⇑(algebraMap ℚ ℝ)
+'D0.Research.NativeArchiveApparatus.real_scene_delta_is_the_actual_full_native_normalized_operator' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.the_complete_joint_native_history_law_class_is_constructively_nonempty :
+  D0.Research.NativeArchiveApparatus.CompleteJointSceneLaw D0.Research.NativeArchiveApparatus.actualGeneratedHistoryLaw
+'D0.Research.NativeArchiveApparatus.the_complete_joint_native_history_law_class_is_constructively_nonempty' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.every_word_of_native_joint_flow_and_all_active_role_operations_preserves_old_parity
+  (p : D0.Research.NativeArchiveApparatus.ArchivePair) (w : List D0.Research.NativeArchiveApparatus.HM)
+  (hw : ∀ M ∈ w, D0.Research.NativeArchiveApparatus.NativeFlowWithAllActiveRoleOperations p M) :
+  D0.Research.NativeArchiveApparatus.historyWord w *
+      D0.Research.NativeArchiveApparatus.nativeExtension p D0.Research.NativeArchiveApparatus.oldParity =
+    D0.Research.NativeArchiveApparatus.nativeExtension p D0.Research.NativeArchiveApparatus.oldParity *
+      D0.Research.NativeArchiveApparatus.historyWord w
+'D0.Research.NativeArchiveApparatus.every_word_of_native_joint_flow_and_all_active_role_operations_preserves_old_parity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.a_nontrivial_old_memory_turn_changes_parity_on_the_full_native_history_carrier
+  (p : D0.Research.NativeArchiveApparatus.ArchivePair) (a q : ℝ) (hq : q ≠ 0) :
+  D0.Research.NativeArchiveApparatus.nativeExtension p (D0.Research.AddressedThirdRole.oldTurn a q) *
+      D0.Research.NativeArchiveApparatus.nativeExtension p D0.Research.NativeArchiveApparatus.oldParity ≠
+    D0.Research.NativeArchiveApparatus.nativeExtension p D0.Research.NativeArchiveApparatus.oldParity *
+      D0.Research.NativeArchiveApparatus.nativeExtension p (D0.Research.AddressedThirdRole.oldTurn a q)
+'D0.Research.NativeArchiveApparatus.a_nontrivial_old_memory_turn_changes_parity_on_the_full_native_history_carrier' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.no_word_in_the_complete_declared_native_flow_palette_actuates_old_memory
+  (p : D0.Research.NativeArchiveApparatus.ArchivePair) (w : List D0.Research.NativeArchiveApparatus.HM)
+  (hw : ∀ M ∈ w, D0.Research.NativeArchiveApparatus.NativeFlowWithAllActiveRoleOperations p M) (a q : ℝ) (hq : q ≠ 0) :
+  D0.Research.NativeArchiveApparatus.historyWord w ≠
+    D0.Research.NativeArchiveApparatus.nativeExtension p (D0.Research.AddressedThirdRole.oldTurn a q)
+'D0.Research.NativeArchiveApparatus.no_word_in_the_complete_declared_native_flow_palette_actuates_old_memory' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.the_full_history_old_parity_commutant_is_closed
+  (p : D0.Research.NativeArchiveApparatus.ArchivePair) :
+  IsClosed
+    {M |
+      M * D0.Research.NativeArchiveApparatus.nativeExtension p D0.Research.NativeArchiveApparatus.oldParity =
+        D0.Research.NativeArchiveApparatus.nativeExtension p D0.Research.NativeArchiveApparatus.oldParity * M}
+'D0.Research.NativeArchiveApparatus.the_full_history_old_parity_commutant_is_closed' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.no_sequence_of_declared_native_flow_words_converges_to_nontrivial_old_memory_actuation
+  (p : D0.Research.NativeArchiveApparatus.ArchivePair) (w : ℕ → List D0.Research.NativeArchiveApparatus.HM)
+  (hw : ∀ (n : ℕ), ∀ M ∈ w n, D0.Research.NativeArchiveApparatus.NativeFlowWithAllActiveRoleOperations p M) (a q : ℝ)
+  (hq : q ≠ 0) :
+  ¬Filter.Tendsto (fun n => D0.Research.NativeArchiveApparatus.historyWord (w n)) Filter.atTop
+      (nhds (D0.Research.NativeArchiveApparatus.nativeExtension p (D0.Research.AddressedThirdRole.oldTurn a q)))
+'D0.Research.NativeArchiveApparatus.no_sequence_of_declared_native_flow_words_converges_to_nontrivial_old_memory_actuation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.the_existing_typed_scene_constructively_contains_a_faithful_complete_apparatus_carrier :
+  ∃ p,
+    Function.Injective (D0.Research.NativeArchiveApparatus.nativeExtension p) ∧
+      (D0.Research.NativeArchiveApparatus.endpointApparatus p).transpose *
+            D0.Research.NativeArchiveApparatus.endpointApparatus p =
+          1 ∧
+        (D0.Research.NativeArchiveApparatus.sourceApparatus p).transpose *
+              D0.Research.NativeArchiveApparatus.sourceApparatus p =
+            1 ∧
+          (D0.Research.NativeArchiveApparatus.endpointApparatus p).transpose *
+              D0.Research.NativeArchiveApparatus.sourceApparatus p =
+            0
+'D0.Research.NativeArchiveApparatus.the_existing_typed_scene_constructively_contains_a_faithful_complete_apparatus_carrier' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.every_classified_actual_p0_golden_programme_has_a_complete_native_history_carrier
+  (addresses : D0.Research.NativeArchiveApparatus.ArchivePair) (c d e f : Fin 4 → ℝ) (hc : ∀ (i : Fin 4), c i ^ 2 = 1)
+  (hd : ∀ (i : Fin 4), d i ^ 2 = 1) (he : ∀ (i : Fin 4), e i ^ 2 = 1) (hf : ∀ (i : Fin 4), f i ^ 2 = 1) :
+  ∃ code σ,
+    code.length ≤ 29 ∧
+      σ ^ 2 = 1 ∧
+        (∀ A ∈ code,
+            ∃ B,
+              A = D0.Research.NativeArchiveApparatus.nativeExtension addresses B ∧
+                (D0.Research.AddressedThirdRole.AddressedPrimitive c d e f B ∨
+                  B = D0.Research.AddressedThirdRole.activeTurn (√D0.primitiveRoot) D0.primitiveRoot)) ∧
+          D0.Research.NativeArchiveApparatus.historyWord code =
+            D0.Research.NativeArchiveApparatus.nativeExtension addresses
+              (D0.Research.AddressedThirdRole.oldTurn (√D0.primitiveRoot) (σ * D0.primitiveRoot))
+'D0.Research.NativeArchiveApparatus.every_classified_actual_p0_golden_programme_has_a_complete_native_history_carrier' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.every_retained_orientation_of_the_owned_p0_turn_exits_the_complete_declared_flow_palette
+  (p : D0.Research.NativeArchiveApparatus.ArchivePair) (w : List D0.Research.NativeArchiveApparatus.HM)
+  (hw : ∀ M ∈ w, D0.Research.NativeArchiveApparatus.NativeFlowWithAllActiveRoleOperations p M) (σ : ℝ)
+  (hs : σ ^ 2 = 1) :
+  D0.Research.NativeArchiveApparatus.historyWord w ≠
+    D0.Research.NativeArchiveApparatus.nativeExtension p
+      (D0.Research.AddressedThirdRole.oldTurn (√D0.primitiveRoot) (σ * D0.primitiveRoot))
+'D0.Research.NativeArchiveApparatus.every_retained_orientation_of_the_owned_p0_turn_exits_the_complete_declared_flow_palette' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.the_declared_flow_cannot_approach_the_owned_p0_old_memory_turn_by_longer_programmes
+  (p : D0.Research.NativeArchiveApparatus.ArchivePair) (w : ℕ → List D0.Research.NativeArchiveApparatus.HM)
+  (hw : ∀ (n : ℕ), ∀ M ∈ w n, D0.Research.NativeArchiveApparatus.NativeFlowWithAllActiveRoleOperations p M) (σ : ℝ)
+  (hs : σ ^ 2 = 1) :
+  ¬Filter.Tendsto (fun n => D0.Research.NativeArchiveApparatus.historyWord (w n)) Filter.atTop
+      (nhds
+        (D0.Research.NativeArchiveApparatus.nativeExtension p
+          (D0.Research.AddressedThirdRole.oldTurn (√D0.primitiveRoot) (σ * D0.primitiveRoot))))
+'D0.Research.NativeArchiveApparatus.the_declared_flow_cannot_approach_the_owned_p0_old_memory_turn_by_longer_programmes' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.the_full_history_cardinality_is_still_the_owned_718 :
+  ↑(Fintype.card D0.VNext2.ScenePathHistoryCanonicity.LevelOneSceneHistory) = 718
+'D0.Research.NativeArchiveApparatus.the_full_history_cardinality_is_still_the_owned_718' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.the_paired_native_apparatus_has_sixteen_orthogonal_history_coordinates
+  (p : D0.Research.NativeArchiveApparatus.ArchivePair) :
+  Matrix.trace (D0.Research.NativeArchiveApparatus.apparatusProjector p) = 16
+'D0.Research.NativeArchiveApparatus.the_paired_native_apparatus_has_sixteen_orthogonal_history_coordinates' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.the_native_apparatus_retains_a_history_complement_of_trace_702
+  (p : D0.Research.NativeArchiveApparatus.ArchivePair) :
+  Matrix.trace (1 - D0.Research.NativeArchiveApparatus.apparatusProjector p) = 702
+'D0.Research.NativeArchiveApparatus.the_native_apparatus_retains_a_history_complement_of_trace_702' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.the_actual_joint_readout_null_archive_keeps_trace_653 :
+  Matrix.trace D0.Research.NativeArchiveApparatus.actualArchiveComplement = 653
+'D0.Research.NativeArchiveApparatus.the_actual_joint_readout_null_archive_keeps_trace_653' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.the_actual_joint_readout_null_archive_is_selfadjoint :
+  Matrix.transpose D0.Research.NativeArchiveApparatus.actualArchiveComplement =
+    D0.Research.NativeArchiveApparatus.actualArchiveComplement
+'D0.Research.NativeArchiveApparatus.the_actual_joint_readout_null_archive_is_selfadjoint' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.the_actual_archive_complement_annihilates_endpoint_histories :
+  D0.Research.NativeArchiveApparatus.actualArchiveComplement * D0.Research.NativeArchiveGraph.Jr = 0
+'D0.Research.NativeArchiveApparatus.the_actual_archive_complement_annihilates_endpoint_histories' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.the_actual_archive_complement_annihilates_source_histories :
+  D0.Research.NativeArchiveApparatus.actualArchiveComplement * D0.Research.NativeArchiveGraph.Sr = 0
+'D0.Research.NativeArchiveApparatus.the_actual_archive_complement_annihilates_source_histories' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.both_apparatus_arms_are_orthogonal_to_the_actual_653_archive_complement
+  (p : D0.Research.NativeArchiveApparatus.ArchivePair) :
+  (D0.Research.NativeArchiveApparatus.endpointApparatus p).transpose *
+        D0.Research.NativeArchiveApparatus.actualArchiveComplement =
+      0 ∧
+    (D0.Research.NativeArchiveApparatus.sourceApparatus p).transpose *
+        D0.Research.NativeArchiveApparatus.actualArchiveComplement =
+      0
+'D0.Research.NativeArchiveApparatus.both_apparatus_arms_are_orthogonal_to_the_actual_653_archive_complement' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.every_native_apparatus_operation_retains_the_entire_actual_653_archive
+  (p : D0.Research.NativeArchiveApparatus.ArchivePair)
+  (A : Matrix D0.Research.NativeArchiveApparatus.Coordinates D0.Research.NativeArchiveApparatus.Coordinates ℝ) :
+  D0.Research.NativeArchiveApparatus.nativeExtension p A * D0.Research.NativeArchiveApparatus.actualArchiveComplement =
+    D0.Research.NativeArchiveApparatus.actualArchiveComplement
+'D0.Research.NativeArchiveApparatus.every_native_apparatus_operation_retains_the_entire_actual_653_archive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.the_paired_apparatus_support_is_a_selfadjoint_projector
+  (p : D0.Research.NativeArchiveApparatus.ArchivePair) :
+  Matrix.transpose (D0.Research.NativeArchiveApparatus.apparatusProjector p) =
+      D0.Research.NativeArchiveApparatus.apparatusProjector p ∧
+    D0.Research.NativeArchiveApparatus.apparatusProjector p * D0.Research.NativeArchiveApparatus.apparatusProjector p =
+      D0.Research.NativeArchiveApparatus.apparatusProjector p
+'D0.Research.NativeArchiveApparatus.the_paired_apparatus_support_is_a_selfadjoint_projector' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeArchiveApparatus.the_constant_record_obstruction_applies_to_the_actual_owned_p0_angle
+  (U : D0.Research.NativeArchiveApparatus.M8) (hu : Matrix.transpose U * U = 1)
+  (hc :
+    ∀ (g : Fin 8),
+      U * D0.Research.NativeArchiveApparatus.regularR g = D0.Research.NativeArchiveApparatus.regularR g * U) :
+  U * U - (2 * √D0.primitiveRoot) • U + 1 ≠ 0
+'D0.Research.NativeArchiveApparatus.the_constant_record_obstruction_applies_to_the_actual_owned_p0_angle' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

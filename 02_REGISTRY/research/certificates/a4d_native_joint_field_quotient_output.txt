@@ -1,0 +1,35 @@
+'D0.Research.NativeJointFieldQuotient.same_gram_relative_frame' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeJointFieldQuotient.frame_reconstructs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeJointFieldQuotient.unique_relative_frame' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeJointFieldQuotient.dressed_reconstruct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeJointFieldQuotient.dressed_metric_compatibility' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeJointFieldQuotient.same_dressed_group_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeJointFieldQuotient.same_vector_reading_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeJointFieldQuotient.exterior_matter_complete' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeJointFieldQuotient.exterior_comp_is_native' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeJointFieldQuotient.dressed_times_target' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeJointFieldQuotient.transported_center_factorization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeJointFieldQuotient.transported_gram_factorization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeJointFieldQuotient.ambient_source_derivative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeJointFieldQuotient.constrained_extension_identically_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeJointFieldQuotient.constrained_source_derivative_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

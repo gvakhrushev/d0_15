@@ -1,0 +1,151 @@
+{
+  "actual_all_level_growing_collapsed_fiber_kernel_formalized": true,
+  "all_size_Connes_distance_packing_and_rate_kernel_formalized": false,
+  "axioms": {
+    "D0.Research.NativeHodgeArchiveMetricRefinement.actual_long_zero_fiber_card_ge": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.NativeHodgeArchiveMetricRefinement.actual_projection_val": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.NativeHodgeArchiveMetricRefinement.birthLabel_injective": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.NativeHodgeArchiveMetricRefinement.birthLabel_ne_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.NativeHodgeArchiveMetricRefinement.birthWitness_card": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.NativeHodgeArchiveMetricRefinement.birthWitness_maps_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.NativeHodgeArchiveMetricRefinement.longProjection_birth_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.NativeHodgeArchiveMetricRefinement.longProjection_val": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.NativeHodgeArchiveMetricRefinement.longProjection_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.NativeHodgeArchiveMetricRefinement.rawForget_birth": [
+      "propext",
+      "Quot.sound"
+    ],
+    "D0.Research.NativeHodgeArchiveMetricRefinement.rawForget_zero": [
+      "propext"
+    ],
+    "D0.archiveFintypeDiagram_succ": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.archive_projection_surjective": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.archive_record_kernel_projectively_compatible": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "capsule": "02_REGISTRY/research/certificates/a4d_native_hodge_archive_metric_refinement.lean",
+  "capsule_sha256": "de8e14ccb614f6dbad70a8b42c03b58171a563040d73a7f4dfd3747d2ec90e39",
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "../02_REGISTRY/research/certificates/a4d_native_hodge_archive_metric_refinement.lean"
+  ],
+  "command_cwd": "03_FORMALIZATION",
+  "compiler_exit_code": 0,
+  "declarations": [
+    "D0.Research.NativeHodgeArchiveMetricRefinement.actual_projection_val",
+    "D0.Research.NativeHodgeArchiveMetricRefinement.rawForget_zero",
+    "D0.Research.NativeHodgeArchiveMetricRefinement.longProjection_val",
+    "D0.Research.NativeHodgeArchiveMetricRefinement.rawForget_birth",
+    "D0.Research.NativeHodgeArchiveMetricRefinement.birthLabel_injective",
+    "D0.Research.NativeHodgeArchiveMetricRefinement.birthLabel_ne_zero",
+    "D0.Research.NativeHodgeArchiveMetricRefinement.longProjection_birth_zero",
+    "D0.Research.NativeHodgeArchiveMetricRefinement.longProjection_zero",
+    "D0.Research.NativeHodgeArchiveMetricRefinement.birthWitness_card",
+    "D0.Research.NativeHodgeArchiveMetricRefinement.birthWitness_maps_zero",
+    "D0.Research.NativeHodgeArchiveMetricRefinement.actual_long_zero_fiber_card_ge"
+  ],
+  "input_head": "025bf30c3d7c2cfba1a1d57676d65e536453b66b",
+  "output": "02_REGISTRY/research/certificates/a4d_native_hodge_archive_metric_refinement_output.txt",
+  "output_sha256": "0d81bff07321bde281e9d0d84a3edc360ef57b38334b59da0cfc0f1a053ccfd0",
+  "physical_observable_algebra_or_Gamma_F_GR_derived": false,
+  "primary_and_prior_input_sha256": {
+    "02_REGISTRY/research/A4D_NATIVE_CONDENSED_PRICE_NATURALITY.md": "4d90266d5f471ba3cac621e3ea3a32545b4622a16d7c0227bc771694ad851a08",
+    "02_REGISTRY/research/A4D_NATIVE_HODGE_CONNES_METRIC.md": "6836cf4082a6dae3240a8e42ed7891a6bef654f540ed31c7e1a5700e9d5c4169",
+    "02_REGISTRY/research/certificates/a4d_native_hodge_connes_metric.lean": "b2a983084a6d212e4341c1a3d7078fcd37ed966a5d6aa12bc0d34fa9f22bebce",
+    "02_REGISTRY/research/certificates/a4d_native_hodge_connes_metric_certificate.json": "7dd49e784d2f1c9247b3480393128b8c12824fb1fe9418ca839ca2db4db0fe2f",
+    "02_REGISTRY/research/certificates/a4d_native_hodge_connes_metric_check.py": "2426fdaa24e19fd69aed9feb66507b32d6c52c433945b427ee3978f5bcc4ba23",
+    "02_REGISTRY/research/certificates/a4d_native_hodge_connes_metric_output.txt": "7de7b886fef9d3163ad45522fe3b30d6cce0edc132ecf6dcab646a48e6575408",
+    "02_REGISTRY/research/certificates/a4d_native_hodge_connes_metric_results.json": "01bf1f694ceaf8ccfff1f850067acb3a6a4989f4c2e7c9c10cb7e7bedf8d226f"
+  },
+  "primary_owner_propositions": [
+    "D0.archive_record_kernel_projectively_compatible",
+    "D0.archive_projection_surjective",
+    "D0.archiveFintypeDiagram_succ"
+  ],
+  "printed_primary_owner_propositions": {
+    "D0.archiveFintypeDiagram_succ": "D0.archiveFintypeDiagram_succ (n : \u2115) :\n  D0.archiveFintypeDiagram.map (CategoryTheory.homOfLE \u22ef).op = FintypeCat.homMk (D0.archiveProjection n)",
+    "D0.archive_projection_surjective": "D0.archive_projection_surjective (n : \u2115) : Function.Surjective (D0.archiveProjection n)",
+    "D0.archive_record_kernel_projectively_compatible": "D0.archive_record_kernel_projectively_compatible (n : \u2115) (x y : D0.ArchivePoints (n + 1)) :\n  (D0.archiveSpectralStage (n + 1)).Delta x y =\n    (D0.archiveSpectralStage n).Delta ((D0.archiveSpectralProjection n).map x) ((D0.archiveSpectralProjection n).map y)"
+  },
+  "printed_propositions": {
+    "D0.Research.NativeHodgeArchiveMetricRefinement.actual_long_zero_fiber_card_ge": "D0.Research.NativeHodgeArchiveMetricRefinement.actual_long_zero_fiber_card_ge (n k : \u2115) :\n  k + 1 \u2264\n    {x |\n        D0.Research.NativeHodgeArchiveMetricRefinement.longProjection n k x =\n          D0.Research.NativeHodgeArchiveMetricRefinement.archiveZero n}.card",
+    "D0.Research.NativeHodgeArchiveMetricRefinement.actual_projection_val": "D0.Research.NativeHodgeArchiveMetricRefinement.actual_projection_val (n : \u2115) (x : D0.ArchivePoints (n + 1)) :\n  \u2191(D0.archiveProjection n x) = \u2191x % (n + 2) ^ 4",
+    "D0.Research.NativeHodgeArchiveMetricRefinement.birthLabel_injective": "D0.Research.NativeHodgeArchiveMetricRefinement.birthLabel_injective (n k : \u2115) :\n  Function.Injective (D0.Research.NativeHodgeArchiveMetricRefinement.birthLabel n k)",
+    "D0.Research.NativeHodgeArchiveMetricRefinement.birthLabel_ne_zero": "D0.Research.NativeHodgeArchiveMetricRefinement.birthLabel_ne_zero (n k : \u2115) (j : Fin k) :\n  D0.Research.NativeHodgeArchiveMetricRefinement.birthLabel n k j \u2260\n    D0.Research.NativeHodgeArchiveMetricRefinement.archiveZero (n + k)",
+    "D0.Research.NativeHodgeArchiveMetricRefinement.birthWitness_card": "D0.Research.NativeHodgeArchiveMetricRefinement.birthWitness_card (n k : \u2115) :\n  (D0.Research.NativeHodgeArchiveMetricRefinement.birthWitness n k).card = k + 1",
+    "D0.Research.NativeHodgeArchiveMetricRefinement.birthWitness_maps_zero": "D0.Research.NativeHodgeArchiveMetricRefinement.birthWitness_maps_zero (n k : \u2115) (x : D0.ArchivePoints (n + k))\n  (hx : x \u2208 D0.Research.NativeHodgeArchiveMetricRefinement.birthWitness n k) :\n  D0.Research.NativeHodgeArchiveMetricRefinement.longProjection n k x =\n    D0.Research.NativeHodgeArchiveMetricRefinement.archiveZero n",
+    "D0.Research.NativeHodgeArchiveMetricRefinement.longProjection_birth_zero": "D0.Research.NativeHodgeArchiveMetricRefinement.longProjection_birth_zero (n k : \u2115) (j : Fin k) :\n  D0.Research.NativeHodgeArchiveMetricRefinement.longProjection n k\n      (D0.Research.NativeHodgeArchiveMetricRefinement.birthLabel n k j) =\n    D0.Research.NativeHodgeArchiveMetricRefinement.archiveZero n",
+    "D0.Research.NativeHodgeArchiveMetricRefinement.longProjection_val": "D0.Research.NativeHodgeArchiveMetricRefinement.longProjection_val (n k : \u2115) (x : D0.ArchivePoints (n + k)) :\n  \u2191(D0.Research.NativeHodgeArchiveMetricRefinement.longProjection n k x) =\n    D0.Research.NativeHodgeArchiveMetricRefinement.rawForget n k \u2191x",
+    "D0.Research.NativeHodgeArchiveMetricRefinement.longProjection_zero": "D0.Research.NativeHodgeArchiveMetricRefinement.longProjection_zero (n k : \u2115) :\n  D0.Research.NativeHodgeArchiveMetricRefinement.longProjection n k\n      (D0.Research.NativeHodgeArchiveMetricRefinement.archiveZero (n + k)) =\n    D0.Research.NativeHodgeArchiveMetricRefinement.archiveZero n",
+    "D0.Research.NativeHodgeArchiveMetricRefinement.rawForget_birth": "D0.Research.NativeHodgeArchiveMetricRefinement.rawForget_birth (n k j : \u2115) (hj : j < k) :\n  D0.Research.NativeHodgeArchiveMetricRefinement.rawForget n k ((n + j + 2) ^ 4) = 0",
+    "D0.Research.NativeHodgeArchiveMetricRefinement.rawForget_zero": "D0.Research.NativeHodgeArchiveMetricRefinement.rawForget_zero (n k : \u2115) :\n  D0.Research.NativeHodgeArchiveMetricRefinement.rawForget n k 0 = 0"
+  },
+  "status": "PASS",
+  "supported_D0_tree": "fd8dfc359d23c9bd79ca23eeed7c045ce9c68c6b",
+  "toolchain_input_sha256": {
+    "03_FORMALIZATION/lake-manifest.json": "4ed211000f753c64c6b1fc155970f6b28c9500763f1ad520d8762ae165ac24fa",
+    "03_FORMALIZATION/lakefile.lean": "7a49cbade1c863e91b5cdc0dff0dddd8a272a3da94ef24200c6e3683276273e9",
+    "03_FORMALIZATION/lean-toolchain": "54727eec5cba149c18842e6deb5c41b369d66455c93ce135d7d5347c782b2325"
+  },
+  "transitive_d0_source_sha256": {
+    "03_FORMALIZATION/D0/Combinatorics/InfinitePhaseTower.lean": "4f5b32b3b0ca7e682b8e197e10526370c553d1b5f11060a2f6e62862c0b36f05",
+    "03_FORMALIZATION/D0/Combinatorics/PhaseTower.lean": "3aceb5bc63e7d23c0a4f9a065eea4be1af7bee38e7c5dd51391598641d54acb9",
+    "03_FORMALIZATION/D0/Combinatorics/PhaseTowerControls.lean": "f59f24f9ef8a2edf9c542cf8e06d97024ecb53ee7e5b3068da198979a74d87c1",
+    "03_FORMALIZATION/D0/Combinatorics/PhaseTowerMinimality.lean": "5d56c525e9549764fee894d8a74f626ed5965123f5a013915c3c67ae18166e6a",
+    "03_FORMALIZATION/D0/Combinatorics/PhaseTowerRecursion.lean": "cbaae0e2bfdeaa197f1557a29eb53bbea780cddf78f98d9e8928c6a09b5ec46c",
+    "03_FORMALIZATION/D0/Geometry/ArchiveLightProfinite.lean": "50955c47df5d2f8f5e7975e01768672e9e806aab6a4f31607e673893afb3885a",
+    "03_FORMALIZATION/D0/Geometry/ArchiveRefinementTower.lean": "253342935b592df104629259341c2d3d6065cd0ba4ec55769f484f005e036673",
+    "03_FORMALIZATION/D0/Geometry/CovarianceTower.lean": "3452400583b01f0dfddd6fa6e70078db073cd643c1cde243d861aff714080bde",
+    "03_FORMALIZATION/D0/Geometry/InfiniteSpectralTower.lean": "a9b77520d350583f778123087c7b6db17b2284b72ef0c993ae671366e3eb475f",
+    "03_FORMALIZATION/D0/Geometry/SpectralTower.lean": "3d5e8e71e6bef1eeabf48fb63562e0d422c35f22b399f612179a3827485969ef"
+  }
+}

@@ -1,0 +1,75 @@
+D0.Research.NativeHodgeConnesMetric.actual_commutator_eq_literal (N : ℕ) (f : D0.Geometry.ArchiveRolePhaseGroup N → ℝ)
+  (ψ : D0.Geometry.ArchiveCochain N) :
+  D0.Research.NativeHodgeConnesMetric.actualCommutator N f ψ =
+    D0.Research.NativeHodgeConnesMetric.literalCommutator N f ψ
+'D0.Research.NativeHodgeConnesMetric.actual_commutator_eq_literal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeHodgeConnesMetric.actual_commutator_constant (N : ℕ) (c : ℝ) (ψ : D0.Geometry.ArchiveCochain N) :
+  D0.Research.NativeHodgeConnesMetric.actualCommutator N (fun x => c) ψ = 0
+'D0.Research.NativeHodgeConnesMetric.actual_commutator_constant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeHodgeConnesMetric.actual_fock_columns_orthogonal_int (r s : D0.Role)
+  (ket : D0.Geometry.ArchiveFockState) :
+  ∑ bra,
+      D0.Research.NativeHodgeConnesMetric.columnGammaInt r bra ket *
+        D0.Research.NativeHodgeConnesMetric.columnGammaInt s bra ket =
+    if r = s then 1 else 0
+'D0.Research.NativeHodgeConnesMetric.actual_fock_columns_orthogonal_int' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeHodgeConnesMetric.columnGamma_eq_cast (r : D0.Role) (bra ket : D0.Geometry.ArchiveFockState) :
+  D0.Research.NativeHodgeConnesMetric.columnGamma r bra ket =
+    ↑(D0.Research.NativeHodgeConnesMetric.columnGammaInt r bra ket)
+'D0.Research.NativeHodgeConnesMetric.columnGamma_eq_cast' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.NativeHodgeConnesMetric.actual_fock_columns_orthogonal (r s : D0.Role)
+  (ket : D0.Geometry.ArchiveFockState) :
+  ∑ bra,
+      D0.Research.NativeHodgeConnesMetric.columnGamma r bra ket *
+        D0.Research.NativeHodgeConnesMetric.columnGamma s bra ket =
+    if r = s then 1 else 0
+'D0.Research.NativeHodgeConnesMetric.actual_fock_columns_orthogonal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeHodgeConnesMetric.actual_fock_column_parseval (v : D0.Role → ℝ) (ket : D0.Geometry.ArchiveFockState) :
+  ∑ bra, (∑ r, D0.Research.NativeHodgeConnesMetric.columnGamma r bra ket * v r) ^ 2 = ∑ r, v r ^ 2
+'D0.Research.NativeHodgeConnesMetric.actual_fock_column_parseval' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeHodgeConnesMetric.same_operator_heat_square (N : ℕ) (ψ : D0.Geometry.ArchiveCochain N) :
+  D0.Geometry.hodgeCarDirac N (D0.Geometry.hodgeCarDirac N ψ) = D0.Geometry.cochainDifferenceLaplacian N ψ
+'D0.Research.NativeHodgeConnesMetric.same_operator_heat_square' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ D0.Geometry.car_annihilate_anticommutator_int._native.native_decide.ax_1_1,
+ D0.Geometry.car_create_anticommutator_int._native.native_decide.ax_1_1,
+ D0.Geometry.car_mixed_anticommutator_int._native.native_decide.ax_1_1]
+D0.Research.NativeHodgeConnesMetric.same_operator_self_adjoint (N : ℕ) (ψ φ : D0.Geometry.ArchiveCochain N) :
+  D0.Geometry.cochainPairing N (D0.Geometry.hodgeCarDirac N ψ) φ =
+    D0.Geometry.cochainPairing N ψ (D0.Geometry.hodgeCarDirac N φ)
+'D0.Research.NativeHodgeConnesMetric.same_operator_self_adjoint' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Geometry.hodgeCarDirac_sq (N : ℕ) (ψ : D0.Geometry.ArchiveCochain N) :
+  D0.Geometry.hodgeCarDirac N (D0.Geometry.hodgeCarDirac N ψ) = D0.Geometry.cochainDifferenceLaplacian N ψ
+'D0.Geometry.hodgeCarDirac_sq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ D0.Geometry.car_annihilate_anticommutator_int._native.native_decide.ax_1_1,
+ D0.Geometry.car_create_anticommutator_int._native.native_decide.ax_1_1,
+ D0.Geometry.car_mixed_anticommutator_int._native.native_decide.ax_1_1]
+D0.Geometry.hodgeCarDirac_self_adjoint (N : ℕ) (ψ φ : D0.Geometry.ArchiveCochain N) :
+  D0.Geometry.cochainPairing N (D0.Geometry.hodgeCarDirac N ψ) φ =
+    D0.Geometry.cochainPairing N ψ (D0.Geometry.hodgeCarDirac N φ)
+'D0.Geometry.hodgeCarDirac_self_adjoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Geometry.ArchiveHodgeDiracMetricMismatchNoGo.archive_hodge_dirac_euclidean_metric_mismatch_nogo_owner :
+  D0.Geometry.ArchiveHodgeDiracMetricMismatchNoGo.d1_diagonal = 1 / 2 ∧
+    D0.Geometry.ArchiveHodgeDiracMetricMismatchNoGo.d2_sq_diagonal = 1 / 8 ∧
+      D0.Geometry.ArchiveHodgeDiracMetricMismatchNoGo.d1_diagonal ^ 2 ≠
+          D0.Geometry.ArchiveHodgeDiracMetricMismatchNoGo.d2_sq_diagonal ∧
+        D0.Geometry.ArchiveHodgeDiracMetricMismatchNoGo.d1_diagonal ^ 2 =
+          2 * D0.Geometry.ArchiveHodgeDiracMetricMismatchNoGo.d2_sq_diagonal
+'D0.Geometry.ArchiveHodgeDiracMetricMismatchNoGo.archive_hodge_dirac_euclidean_metric_mismatch_nogo_owner' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

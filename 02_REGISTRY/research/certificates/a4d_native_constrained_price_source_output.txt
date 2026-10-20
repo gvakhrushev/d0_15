@@ -1,0 +1,240 @@
+D0.Research.NativeConstrainedPriceSource.fp_add_left.{u_1} {n : Type u_1} [Fintype n] [DecidableEq n]
+  (A B C : D0.Research.NativeConstrainedPriceSource.Mat n) :
+  D0.Research.NativeConstrainedPriceSource.fp (A + B) C =
+    D0.Research.NativeConstrainedPriceSource.fp A C + D0.Research.NativeConstrainedPriceSource.fp B C
+'D0.Research.NativeConstrainedPriceSource.fp_add_left' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.NativeConstrainedPriceSource.fp_add_right.{u_1} {n : Type u_1} [Fintype n] [DecidableEq n]
+  (A B C : D0.Research.NativeConstrainedPriceSource.Mat n) :
+  D0.Research.NativeConstrainedPriceSource.fp A (B + C) =
+    D0.Research.NativeConstrainedPriceSource.fp A B + D0.Research.NativeConstrainedPriceSource.fp A C
+'D0.Research.NativeConstrainedPriceSource.fp_add_right' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.NativeConstrainedPriceSource.fp_sub_left.{u_1} {n : Type u_1} [Fintype n] [DecidableEq n]
+  (A B C : D0.Research.NativeConstrainedPriceSource.Mat n) :
+  D0.Research.NativeConstrainedPriceSource.fp (A - B) C =
+    D0.Research.NativeConstrainedPriceSource.fp A C - D0.Research.NativeConstrainedPriceSource.fp B C
+'D0.Research.NativeConstrainedPriceSource.fp_sub_left' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.NativeConstrainedPriceSource.fp_sub_right.{u_1} {n : Type u_1} [Fintype n] [DecidableEq n]
+  (A B C : D0.Research.NativeConstrainedPriceSource.Mat n) :
+  D0.Research.NativeConstrainedPriceSource.fp A (B - C) =
+    D0.Research.NativeConstrainedPriceSource.fp A B - D0.Research.NativeConstrainedPriceSource.fp A C
+'D0.Research.NativeConstrainedPriceSource.fp_sub_right' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.NativeConstrainedPriceSource.fp_smul_left.{u_1} {n : Type u_1} [Fintype n] [DecidableEq n] (c : ℝ)
+  (A B : D0.Research.NativeConstrainedPriceSource.Mat n) :
+  D0.Research.NativeConstrainedPriceSource.fp (c • A) B = c * D0.Research.NativeConstrainedPriceSource.fp A B
+'D0.Research.NativeConstrainedPriceSource.fp_smul_left' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.NativeConstrainedPriceSource.fp_smul_right.{u_1} {n : Type u_1} [Fintype n] [DecidableEq n] (c : ℝ)
+  (A B : D0.Research.NativeConstrainedPriceSource.Mat n) :
+  D0.Research.NativeConstrainedPriceSource.fp A (c • B) = c * D0.Research.NativeConstrainedPriceSource.fp A B
+'D0.Research.NativeConstrainedPriceSource.fp_smul_right' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.NativeConstrainedPriceSource.trace_skew_zero.{u_1} {n : Type u_1} [Fintype n] [DecidableEq n]
+  (K : D0.Research.NativeConstrainedPriceSource.Mat n) (hK : Matrix.transpose K = -K) : Matrix.trace K = 0
+'D0.Research.NativeConstrainedPriceSource.trace_skew_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.NativeConstrainedPriceSource.trace_symmetric_skew_zero.{u_1} {n : Type u_1} [Fintype n] [DecidableEq n]
+  (A K : D0.Research.NativeConstrainedPriceSource.Mat n) (hA : Matrix.transpose A = A) (hK : Matrix.transpose K = -K) :
+  (A * K).trace = 0
+'D0.Research.NativeConstrainedPriceSource.trace_symmetric_skew_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeConstrainedPriceSource.fp_symmetric_probe.{u_1} {n : Type u_1} [Fintype n] [DecidableEq n]
+  (A V : D0.Research.NativeConstrainedPriceSource.Mat n) (hV : Matrix.transpose V = V) :
+  D0.Research.NativeConstrainedPriceSource.fp A V =
+    D0.Research.NativeConstrainedPriceSource.fp (D0.Research.NativeConstrainedPriceSource.sym A) V
+'D0.Research.NativeConstrainedPriceSource.fp_symmetric_probe' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.NativeConstrainedPriceSource.symmetric_involution_tangent_is_skew.{u_1} {n : Type u_1} [Fintype n]
+  [DecidableEq n] (H dH : D0.Research.NativeConstrainedPriceSource.Mat n) (hH : Matrix.transpose H = H)
+  (hj : Matrix.transpose dH * H + Matrix.transpose H * dH = 0) : (H * dH).transpose = -(H * dH)
+'D0.Research.NativeConstrainedPriceSource.symmetric_involution_tangent_is_skew' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeConstrainedPriceSource.involution_tangent_trace_zero.{u_1} {n : Type u_1} [Fintype n] [DecidableEq n]
+  (H dH : D0.Research.NativeConstrainedPriceSource.Mat n) (hH : Matrix.transpose H = H) (hHH : H * H = 1)
+  (hj : Matrix.transpose dH * H + Matrix.transpose H * dH = 0) : Matrix.trace dH = 0 ∧ (H * dH).trace = 0
+'D0.Research.NativeConstrainedPriceSource.involution_tangent_trace_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeConstrainedPriceSource.two_tick_resolvent_pairing_zero.{u_1} {n : Type u_1} [Fintype n]
+  [DecidableEq n] (H dH : D0.Research.NativeConstrainedPriceSource.Mat n) (a b : ℝ) (hH : Matrix.transpose H = H)
+  (hHH : H * H = 1) (hj : Matrix.transpose dH * H + Matrix.transpose H * dH = 0) :
+  ((a • 1 + b • H) * (dH + Matrix.transpose dH)).trace = 0
+'D0.Research.NativeConstrainedPriceSource.two_tick_resolvent_pairing_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeConstrainedPriceSource.involution_polynomial_mul.{u_1} {n : Type u_1} [Fintype n] [DecidableEq n]
+  (H : D0.Research.NativeConstrainedPriceSource.Mat n) (a b c d : ℝ) (hH : H * H = 1) :
+  (a • 1 + b • H) * (c • 1 + d • H) = (a * c + b * d) • 1 + (a * d + b * c) • H
+'D0.Research.NativeConstrainedPriceSource.involution_polynomial_mul' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeConstrainedPriceSource.involution_resolvent_inverse.{u_1} {n : Type u_1} [Fintype n] [DecidableEq n]
+  (H : D0.Research.NativeConstrainedPriceSource.Mat n) (c : ℝ) (hH : H * H = 1) (hc : 1 - 2 * c ≠ 0) :
+  ((1 - c) • 1 + -c • H) * D0.Research.NativeConstrainedPriceSource.involutionResolvent H c = 1
+'D0.Research.NativeConstrainedPriceSource.involution_resolvent_inverse' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeConstrainedPriceSource.relative_isometry_first_jet.{u_1, u_2} {n : Type u_1} [Fintype n]
+  [DecidableEq n] {m : Type u_2} [Fintype m] [DecidableEq m] (R dR dS : Matrix m n ℝ)
+  (H : D0.Research.NativeConstrainedPriceSource.Mat n) (hR : dR.transpose * R + R.transpose * dR = 0)
+  (hS : dS.transpose * (R * H) + (R * H).transpose * dS = 0) :
+  (dR.transpose * (R * H) + R.transpose * dS).transpose * H +
+      Matrix.transpose H * (dR.transpose * (R * H) + R.transpose * dS) =
+    0
+'D0.Research.NativeConstrainedPriceSource.relative_isometry_first_jet' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeConstrainedPriceSource.feedback_jet_expansion.{u_1} {n : Type u_1} [Fintype n] [DecidableEq n]
+  (a p : ℝ) (H dH : D0.Research.NativeConstrainedPriceSource.Mat n) :
+  D0.Research.NativeConstrainedPriceSource.feedbackJet (D0.Research.NativeConstrainedPriceSource.retained a p H)
+      (D0.Research.NativeConstrainedPriceSource.retainedJet p dH) =
+    (a ^ 2 * p ^ 2) • (dH + Matrix.transpose dH) - p ^ 4 • (Matrix.transpose dH * H + Matrix.transpose H * dH)
+'D0.Research.NativeConstrainedPriceSource.feedback_jet_expansion' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeConstrainedPriceSource.golden_feedback_jet.{u_1} {n : Type u_1} [Fintype n] [DecidableEq n] (a p : ℝ)
+  (H dH : D0.Research.NativeConstrainedPriceSource.Mat n) (ha : a ^ 2 = p)
+  (hj : Matrix.transpose dH * H + Matrix.transpose H * dH = 0) :
+  D0.Research.NativeConstrainedPriceSource.feedbackJet (D0.Research.NativeConstrainedPriceSource.retained a p H)
+      (D0.Research.NativeConstrainedPriceSource.retainedJet p dH) =
+    p ^ 3 • (dH + Matrix.transpose dH)
+'D0.Research.NativeConstrainedPriceSource.golden_feedback_jet' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeConstrainedPriceSource.golden_involution_feedback.{u_1} {n : Type u_1} [Fintype n] [DecidableEq n]
+  (a p : ℝ) (H : D0.Research.NativeConstrainedPriceSource.Mat n) (ha : a ^ 2 = p) (hp : p + p ^ 2 = 1)
+  (hH : Matrix.transpose H = H) (hHH : H * H = 1) :
+  1 -
+      Matrix.transpose (D0.Research.NativeConstrainedPriceSource.retained a p H) *
+        D0.Research.NativeConstrainedPriceSource.retained a p H =
+    (2 * p ^ 3) • (1 + H)
+'D0.Research.NativeConstrainedPriceSource.golden_involution_feedback' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeConstrainedPriceSource.full_archive_two_tick_jacobi_zero.{u_1, u_2} {n : Type u_1} [Fintype n]
+  [DecidableEq n] {m : Type u_2} [Fintype m] [DecidableEq m] (R dR dS : Matrix m n ℝ)
+  (H : D0.Research.NativeConstrainedPriceSource.Mat n) (a p z : ℝ) (hR : dR.transpose * R + R.transpose * dR = 0)
+  (hS : dS.transpose * (R * H) + (R * H).transpose * dS = 0) (hH : Matrix.transpose H = H) (hHH : H * H = 1)
+  (ha : a ^ 2 = p) :
+  z *
+      (D0.Research.NativeConstrainedPriceSource.involutionResolvent H (2 * z * p ^ 3) *
+          D0.Research.NativeConstrainedPriceSource.feedbackJet (D0.Research.NativeConstrainedPriceSource.retained a p H)
+            (D0.Research.NativeConstrainedPriceSource.retainedJet p
+              (dR.transpose * (R * H) + R.transpose * dS))).trace =
+    0
+'D0.Research.NativeConstrainedPriceSource.full_archive_two_tick_jacobi_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeConstrainedPriceSource.zero_differential_pullback.{u_3, u_4} {E : Type u_3} {F : Type u_4}
+  [AddCommGroup E] [Module ℝ E] [AddCommGroup F] [Module ℝ F] (L : F →ₗ[ℝ] ℝ) (J : E →ₗ[ℝ] F) (h : ∀ (w : F), L w = 0)
+  (v : E) : L (J v) = 0
+'D0.Research.NativeConstrainedPriceSource.zero_differential_pullback' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeConstrainedPriceSource.fp_right_product.{u_1} {n : Type u_1} [Fintype n] [DecidableEq n]
+  (A Z R : D0.Research.NativeConstrainedPriceSource.Mat n) :
+  D0.Research.NativeConstrainedPriceSource.fp A (Z * R) =
+    D0.Research.NativeConstrainedPriceSource.fp (A * Matrix.transpose R) Z
+'D0.Research.NativeConstrainedPriceSource.fp_right_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.NativeConstrainedPriceSource.fp_congruence.{u_1} {n : Type u_1} [Fintype n] [DecidableEq n]
+  (A D V : D0.Research.NativeConstrainedPriceSource.Mat n) :
+  D0.Research.NativeConstrainedPriceSource.fp A (D * V * Matrix.transpose D) =
+    D0.Research.NativeConstrainedPriceSource.fp (Matrix.transpose D * A * D) V
+'D0.Research.NativeConstrainedPriceSource.fp_congruence' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.NativeConstrainedPriceSource.intrinsic_source_normal_form.{u_1} {n : Type u_1} [Fintype n] [DecidableEq n]
+  (As At B D R Vs Vt K : D0.Research.NativeConstrainedPriceSource.Mat n) :
+  D0.Research.NativeConstrainedPriceSource.fp As Vs + D0.Research.NativeConstrainedPriceSource.fp At Vt +
+      D0.Research.NativeConstrainedPriceSource.fp B (D0.Research.NativeConstrainedPriceSource.jointLift D R Vs Vt K) =
+    D0.Research.NativeConstrainedPriceSource.fp (As + (1 / 2) • (B * Matrix.transpose R)) Vs +
+        D0.Research.NativeConstrainedPriceSource.fp (At - (1 / 2) • (Matrix.transpose D * (B * Matrix.transpose R) * D))
+          Vt +
+      D0.Research.NativeConstrainedPriceSource.fp (B * Matrix.transpose R) K
+'D0.Research.NativeConstrainedPriceSource.intrinsic_source_normal_form' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeConstrainedPriceSource.conormal_restriction_zero.{u_1} {n : Type u_1} [Fintype n] [DecidableEq n]
+  (Λ qt D Vs Vt W : D0.Research.NativeConstrainedPriceSource.Mat n)
+  (hj : D * Vt * Matrix.transpose D + W * qt * Matrix.transpose D + D * qt * Matrix.transpose W - Vs = 0) :
+  D0.Research.NativeConstrainedPriceSource.fp Λ
+      (D * Vt * Matrix.transpose D + W * qt * Matrix.transpose D + D * qt * Matrix.transpose W - Vs) =
+    0
+'D0.Research.NativeConstrainedPriceSource.conormal_restriction_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeConstrainedPriceSource.swapBit_symmetric :
+  Matrix.transpose D0.Research.NativeConstrainedPriceSource.swapBit = D0.Research.NativeConstrainedPriceSource.swapBit
+'D0.Research.NativeConstrainedPriceSource.swapBit_symmetric' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.NativeConstrainedPriceSource.swapBit_involution :
+  D0.Research.NativeConstrainedPriceSource.swapBit * D0.Research.NativeConstrainedPriceSource.swapBit = 1
+'D0.Research.NativeConstrainedPriceSource.swapBit_involution' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.NativeConstrainedPriceSource.full_archive_retained_binding.{u_1, u_2} {n : Type u_1} [Fintype n]
+  [DecidableEq n] {m : Type u_2} [Fintype m] [DecidableEq m] (a p : ℝ) (R S : Matrix m n ℝ)
+  (V : D0.Research.NativeConstrainedPriceSource.Mat m) :
+  (D0.Research.NativeConstrainedPriceSource.jointStep a p R S V *
+        D0.Research.NativeConstrainedPriceSource.jointStep a p R S V).toBlocks₁₁ =
+    D0.Research.NativeConstrainedPriceSource.retained a p (R.transpose * S)
+'D0.Research.NativeConstrainedPriceSource.full_archive_retained_binding' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeConstrainedPriceSource.recorded_gate_owned_binding (a p : ℝ) :
+  (D0.Representation.GoldenCoherentMemory.fullStep a p).submatrix ⇑finSumFinEquiv ⇑finSumFinEquiv =
+    D0.Research.NativeConstrainedPriceSource.jointStep a p 1 D0.Research.NativeConstrainedPriceSource.swapBit 0
+'D0.Research.NativeConstrainedPriceSource.recorded_gate_owned_binding' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeConstrainedPriceSource.recorded_full_archive_jacobi_zero.{u_2} {m : Type u_2} [Fintype m]
+  [DecidableEq m] (R dR dS : Matrix m (Fin 2) ℝ) (a p z : ℝ) (ha : a ^ 2 = p)
+  (hR : dR.transpose * R + R.transpose * dR = 0)
+  (hS :
+    dS.transpose * (R * D0.Research.NativeConstrainedPriceSource.swapBit) +
+        (R * D0.Research.NativeConstrainedPriceSource.swapBit).transpose * dS =
+      0) :
+  z *
+      (D0.Research.NativeConstrainedPriceSource.involutionResolvent D0.Research.NativeConstrainedPriceSource.swapBit
+            (2 * z * p ^ 3) *
+          D0.Research.NativeConstrainedPriceSource.feedbackJet
+            (D0.Research.NativeConstrainedPriceSource.retained a p D0.Research.NativeConstrainedPriceSource.swapBit)
+            (D0.Research.NativeConstrainedPriceSource.retainedJet p
+              (dR.transpose * (R * D0.Research.NativeConstrainedPriceSource.swapBit) + R.transpose * dS))).trace =
+    0
+'D0.Research.NativeConstrainedPriceSource.recorded_full_archive_jacobi_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeConstrainedPriceSource.direct_full_archive_jacobi_zero.{u_1, u_2} {n : Type u_1} [Fintype n]
+  [DecidableEq n] {m : Type u_2} [Fintype m] [DecidableEq m] (R dR dS : Matrix m n ℝ) (a p z : ℝ) (ha : a ^ 2 = p)
+  (hR : dR.transpose * R + R.transpose * dR = 0) (hS : dS.transpose * R + R.transpose * dS = 0) :
+  z *
+      (D0.Research.NativeConstrainedPriceSource.involutionResolvent 1 (2 * z * p ^ 3) *
+          D0.Research.NativeConstrainedPriceSource.feedbackJet (D0.Research.NativeConstrainedPriceSource.retained a p 1)
+            (D0.Research.NativeConstrainedPriceSource.retainedJet p (dR.transpose * R + R.transpose * dS))).trace =
+    0
+'D0.Research.NativeConstrainedPriceSource.direct_full_archive_jacobi_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeConstrainedPriceSource.orthogonal_feedback_retained_identity.{u_1, u_2} {n : Type u_1} [Fintype n]
+  [DecidableEq n] {m : Type u_2} [Fintype m] [DecidableEq m] (U : D0.Research.NativeConstrainedPriceSource.Mat (n ⊕ m))
+  (hU : Matrix.transpose U * U = 1) :
+  (Matrix.toBlocks₂₁ U).transpose * Matrix.toBlocks₂₁ U = 1 - (Matrix.toBlocks₁₁ U).transpose * Matrix.toBlocks₁₁ U
+'D0.Research.NativeConstrainedPriceSource.orthogonal_feedback_retained_identity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeConstrainedPriceSource.orthogonal_composition_self.{u_1} {n : Type u_1} [Fintype n] [DecidableEq n]
+  (U : D0.Research.NativeConstrainedPriceSource.Mat n) (hU : Matrix.transpose U * U = 1) :
+  (U * U).transpose * (U * U) = 1
+'D0.Research.NativeConstrainedPriceSource.orthogonal_composition_self' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeConstrainedPriceSource.full_archive_feedback_binding.{u_1, u_2} {n : Type u_1} [Fintype n]
+  [DecidableEq n] {m : Type u_2} [Fintype m] [DecidableEq m] (a p : ℝ) (R S : Matrix m n ℝ)
+  (V : D0.Research.NativeConstrainedPriceSource.Mat m)
+  (hU :
+    Matrix.transpose (D0.Research.NativeConstrainedPriceSource.jointStep a p R S V) *
+        D0.Research.NativeConstrainedPriceSource.jointStep a p R S V =
+      1) :
+  (D0.Research.NativeConstrainedPriceSource.jointStep a p R S V *
+            D0.Research.NativeConstrainedPriceSource.jointStep a p R S V).toBlocks₂₁.transpose *
+      (D0.Research.NativeConstrainedPriceSource.jointStep a p R S V *
+          D0.Research.NativeConstrainedPriceSource.jointStep a p R S V).toBlocks₂₁ =
+    1 -
+      Matrix.transpose (D0.Research.NativeConstrainedPriceSource.retained a p (R.transpose * S)) *
+        D0.Research.NativeConstrainedPriceSource.retained a p (R.transpose * S)
+'D0.Research.NativeConstrainedPriceSource.full_archive_feedback_binding' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

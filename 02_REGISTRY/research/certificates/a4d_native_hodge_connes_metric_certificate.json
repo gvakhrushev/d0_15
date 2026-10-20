@@ -1,0 +1,117 @@
+{
+  "capsule_sha256": "b2a983084a6d212e4341c1a3d7078fcd37ed966a5d6aa12bc0d34fa9f22bebce",
+  "checker_sha256": "2426fdaa24e19fd69aed9feb66507b32d6c52c433945b427ee3978f5bcc4ba23",
+  "checks": {
+    "actual_commutator_skew": 6,
+    "actual_prior_no_go_type_is_arithmetic": 1,
+    "all_corner_occupation_choices_retained": 64,
+    "all_endpoint_readouts": 145,
+    "all_exact_metric_squared": 145,
+    "all_quarter_diagonal_exact_squared_witness": 16,
+    "all_quarter_l1_wrong_for_this_triple": 16,
+    "all_role_permutations_bind_actual_CAR": 96,
+    "all_role_permutations_unitary": 24,
+    "all_separable_Gram_off_diagonal_zero": 145,
+    "all_separable_witness_full_norm": 145,
+    "all_sites_all_16_mixed_column_bounds": 101920,
+    "capsule_hash": 1,
+    "compiled_real_capsule": 1,
+    "even_L_entire_Gram_identity": 5376000,
+    "every_fock_column_orthogonal": 256,
+    "exact_common_weights_all_corner_gradients": 4,
+    "formal_metric_boundary": 1,
+    "full_carrier_no_sector_dropped": 6,
+    "full_native_column_row_transcriptions": 6,
+    "full_native_self_adjoint": 6,
+    "hostile_column_gate_not_operator_gate": 1,
+    "imported_square_exact_native_decide_leaves": 2,
+    "literal_all_CAR": 16,
+    "literal_all_mixed_CAR": 16,
+    "new_metric_algebra_standard_axioms_only": 9,
+    "no_failed_or_sorry_capsule": 1,
+    "output_hash": 1,
+    "real_resolved_declarations": 11,
+    "role_reflection_swaps_only_one_CAR": 16,
+    "role_reflection_unitary": 4,
+    "same_actual_operator_square_is_full_difference_heat": 6,
+    "source_hash_primary_and_prior_input_sha256": 4,
+    "source_hash_toolchain_input_sha256": 3,
+    "source_hash_transitive_d0_source_sha256": 39,
+    "symbolic_partition_of_unity": 1
+  },
+  "exact_control_count": 5479134,
+  "input_head": "569abdc48795b161aa5fe6d2a1c12ecdd05f66b0",
+  "proof_sha256": "6836cf4082a6dae3240a8e42ed7891a6bef654f540ed31c7e1a5700e9d5c4169",
+  "receipt_sha256": "01bf1f694ceaf8ccfff1f850067acb3a6a4989f4c2e7c9c10cb7e7bedf8d226f",
+  "scope": {
+    "G0_G1_G2_G3_G4_or_original_parent_terminals_closed": false,
+    "absence_of_F_for_the_whole_core_proved": false,
+    "actual_D_H_not_hopping_CAR_operator": true,
+    "actual_operator_metric_and_heat_square_share_one_native_operator": true,
+    "all_scalar_readouts_physically_admitted_by_native_apparatus": false,
+    "all_sixteen_fock_components_and_every_site_retained": true,
+    "all_size_exact_product_circle_Connes_distance": "ANALYTIC_PROOF_NOT_FULL_LEAN_FORMALIZATION",
+    "arithmetic_l1_l2_mismatch_owner_propositions_remain_valid": true,
+    "class": "ACTUAL_FIXED_COUNTING_HODGE_CAR_AND_SCALAR_POINT_ALGEBRA_ALL_PERIODIC_L_GE_2",
+    "curved_Lorentz_metric_source_Ward_or_GR_derived": false,
+    "eigenvalues_alone_determine_the_metric": false,
+    "flat_metric_net_bound_implies_native_action_contrast_transfer": false,
+    "full_coupled_preparation_Gamma_or_F_derived": false,
+    "full_operator_norm_gate_replaced_by_column_norms": false,
+    "native_archive_RG_is_physical_metric_refinement": false,
+    "nontrivial_twist_necessary_for_this_operator_flat_metric": false,
+    "represented_scalar_algebra_is_full_noncommutative_scene_path_algebra": false,
+    "that_owner_proves_l1_Connes_metric_for_actual_hodge_CAR": false
+  },
+  "status": "PASS",
+  "witnesses": {
+    "full_operator_cases": [
+      {
+        "L": 2,
+        "all_distance_orbit_representatives": 5,
+        "native_dimension": 256
+      },
+      {
+        "L": 3,
+        "all_distance_orbit_representatives": 5,
+        "native_dimension": 1296
+      },
+      {
+        "L": 4,
+        "all_distance_orbit_representatives": 15,
+        "native_dimension": 4096
+      },
+      {
+        "L": 5,
+        "all_distance_orbit_representatives": 15,
+        "native_dimension": 10000
+      },
+      {
+        "L": 6,
+        "all_distance_orbit_representatives": 35,
+        "native_dimension": 20736
+      },
+      {
+        "L": 8,
+        "all_distance_orbit_representatives": 70,
+        "native_dimension": 65536
+      }
+    ],
+    "hostile_column_gate": {
+      "L": 2,
+      "Rayleigh_numerator": 3458824,
+      "basis_indices": [
+        192,
+        3
+      ],
+      "column_gate_denominator_product": 3329800,
+      "integer_coefficients": [
+        125,
+        32
+      ],
+      "max_column_norm_squared": 200
+    },
+    "quarter_diagonal_distance_squared": "1/8",
+    "quarter_path_distance_squared": "1/4"
+  }
+}

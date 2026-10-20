@@ -1,0 +1,85 @@
+'D0.Research.NativeVerificationRefinement.equalityProtocolVerified' does not depend on any axioms
+'D0.Research.NativeVerificationRefinement.verifiable_iff_nontrivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeVerificationRefinement.operational_point_fiber' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeVerificationRefinement.operational_run_bijective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeVerificationRefinement.operational_lift_iff_bijective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeVerificationRefinement.invariant_all_verified_processes_iff_constant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeVerificationRefinement.arbitrary_predicate_run' does not depend on any axioms
+'D0.Research.NativeVerificationRefinement.phase_projection_zero_fiber' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeVerificationRefinement.phase_projection_nonzero_injective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeVerificationRefinement.commuting_phase_permutations_fix_coarse_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeVerificationRefinement.coherent_phase_permutations_identity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeVerificationRefinement.phase_preparation_radial_contrast' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeVerificationRefinement.verified_flip_changes_owned_energy' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeVerificationRefinement.constant_run_fails_point_test_lift' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeVerificationRefinement.verifiable_iff_nontrivial
+  (T : D0.Foundation.EmpiricalTheoryFactorization.EmpiricalTheory) :
+  D0.Foundation.VerifiabilityNecessity.OperationallyVerifiable T ↔
+    Nontrivial (D0.Foundation.EmpiricalTheoryFactorization.EmpiricalState T)
+D0.Research.NativeVerificationRefinement.operational_lift_iff_bijective
+  {P : D0.Foundation.VerifiabilityNecessity.VerificationProtocol}
+  (V : D0.Foundation.VerifiabilityNecessity.VerificationContract P) (f : P.State → P.State) :
+  D0.Research.NativeVerificationRefinement.HasOperationalLift P f ↔ Function.Bijective f
+D0.Research.NativeVerificationRefinement.coherent_phase_permutations_identity
+  (σ : (n : ℕ) → Equiv.Perm (D0.archivePhaseIndex n))
+  (hc :
+    ∀ (n : ℕ) (i : D0.archivePhaseIndex (n + 1)),
+      D0.archiveRGPhaseProjection n ((σ (n + 1)) i) = (σ n) (D0.archiveRGPhaseProjection n i))
+  (n : ℕ) (i : D0.archivePhaseIndex n) : (σ n) i = i
+'D0.Synthesis.ConcretePhysicalDetectorRepresentation.concrete_physical_detector_representation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Synthesis.ConcretePhysicalDetectorRepresentation.concrete_physical_detector_representation :
+  (∀ (cmp : D0.Foundation.DetectionCapabilityBoundary.Comparison),
+      D0.Synthesis.ConcretePhysicalDetectorRepresentation.concretePhysicalRepresentation.admissible cmp ↔
+        D0.Foundation.M1ClassAdmissibility.M1ClassAdmissible
+          D0.Synthesis.ConcretePhysicalDetectorRepresentation.concreteDetectorSystem cmp) ∧
+    Nonempty
+        (D0.Synthesis.ConcretePhysicalDetectorRepresentation.ConcreteAdmissible ↪
+          D0.Foundation.M1ClassAdmissibility.M1AdmissibleCarrier
+            D0.Synthesis.ConcretePhysicalDetectorRepresentation.concreteDetectorSystem) ∧
+      Nonempty
+          (D0.Synthesis.ConcretePhysicalDetectorRepresentation.ConcreteAdmissible ↪
+            { cmp // D0.Foundation.CurrentDataFactorization.HistoryInvariant (Bool × Bool) Bool cmp }) ∧
+        (∀ (p : D0.Synthesis.ConcretePhysicalDetectorRepresentation.ConcreteAdmissible),
+            D0.Synthesis.ConcretePhysicalDetectorRepresentation.FactorsThroughBothCurrentData ↑p) ∧
+          (∀ (p : D0.Synthesis.ConcretePhysicalDetectorRepresentation.ConcreteAdmissible),
+              D0.Foundation.GeneralComparisonGrammar.Primitive
+                  (D0.Foundation.DetectionCapabilityBoundary.capabilityVector ↑p) →
+                D0.Foundation.DetectionCapabilityBoundary.capabilityVector ↑p =
+                    D0.Foundation.GeneralComparisonGrammar.atomicOf 0 ∨
+                  D0.Foundation.DetectionCapabilityBoundary.capabilityVector ↑p =
+                    D0.Foundation.GeneralComparisonGrammar.atomicOf 1) ∧
+            D0.Synthesis.ConcretePhysicalDetectorRepresentation.concretePhysicalRepresentation.admissible
+                D0.Foundation.DetectionCapabilityBoundary.membershipComparison ∧
+              D0.Synthesis.ConcretePhysicalDetectorRepresentation.concretePhysicalRepresentation.admissible
+                  D0.Foundation.DetectionCapabilityBoundary.valueComparison ∧
+                ¬D0.Synthesis.ConcretePhysicalDetectorRepresentation.concretePhysicalRepresentation.admissible
+                    D0.Foundation.DetectionCapabilityBoundary.historyComparison
+'D0.Foundation.M1ClassAdmissibility.non_singleton_class_not_M1Forced' does not depend on any axioms
+D0.Foundation.M1ClassAdmissibility.non_singleton_class_not_M1Forced {α : Type} (Allowed : α → Prop) {x y : α}
+  (hx : Allowed x) (hy : Allowed y) (hne : x ≠ y) : ¬∃ a, D0.Foundation.M1Forced Allowed a

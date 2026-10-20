@@ -1,0 +1,88 @@
+D0.Geometry.archiveSolderedDirac {N : ℕ} (A : D0.Geometry.AffineCartanConnection N ℝ D0.Geometry.RoleSpace)
+  (e : D0.Geometry.LocalCoframeField N) (n : D0.Geometry.ArchiveRolePhaseGroup N → D0.Geometry.RoleVector)
+  (ψ : D0.Geometry.ArchiveCochain N) : D0.Geometry.ArchiveCochain N
+D0.Geometry.solderLegVector (N : ℕ) (e : D0.Geometry.LocalCoframeField N) (x : D0.Geometry.ArchiveRolePhaseGroup N)
+  (r : D0.Role) : D0.Geometry.RoleSpace
+D0.Geometry.observerMetric_posDef (n : D0.Geometry.RoleVector) (hn : D0.Geometry.lorentzUnitObserver n) :
+  (D0.Geometry.observerMetric n).PosDef
+D0.Geometry.observer_contraction_adjoint_covariant (L : D0.Geometry.RoleSpace ≃ₗ[ℝ] D0.Geometry.RoleSpace)
+  (n : D0.Geometry.RoleVector) (hL : D0.Geometry.preservesObserverForm L n) (v : D0.Geometry.RoleSpace)
+  (ψ : D0.Geometry.ArchiveFockState → ℝ) :
+  (D0.Geometry.archiveExteriorContraction (D0.Geometry.observerFlat n v)) ψ =
+    (D0.Geometry.archiveExteriorFrameLift L.symm)
+      ((D0.Geometry.archiveExteriorContraction (D0.Geometry.observerFlat (L n) (L v)))
+        ((D0.Geometry.archiveExteriorFrameLift L) ψ))
+D0.Geometry.archiveExterior_contraction_creator_car (α : Module.Dual ℝ D0.Geometry.RoleSpace)
+  (v : D0.Geometry.RoleSpace) (ψ : D0.Geometry.ArchiveFockState → ℝ) :
+  (D0.Geometry.archiveExteriorContraction α) (D0.Geometry.archiveExteriorCreator v ψ) +
+      D0.Geometry.archiveExteriorCreator v ((D0.Geometry.archiveExteriorContraction α) ψ) =
+    α v • ψ
+def D0.Geometry.solderLegVector : (N : ℕ) →
+  D0.Geometry.LocalCoframeField N → D0.Geometry.ArchiveRolePhaseGroup N → D0.Role → D0.Geometry.RoleSpace :=
+fun N e x r => D0.Geometry.roleLorentzMetric.mulVec fun a => D0.Geometry.rawSolderMatrix N e x r a
+def D0.Geometry.archiveSolderedCreateDirection : {N : ℕ} →
+  D0.Geometry.AffineCartanConnection N ℝ D0.Geometry.RoleSpace →
+    D0.Geometry.LocalCoframeField N → D0.Role → D0.Geometry.ArchiveCochain N → D0.Geometry.ArchiveCochain N :=
+fun {N} A e r ψ p =>
+  D0.Geometry.archiveExteriorCreator (D0.Geometry.solderLegVector N e p.1 r)
+    (fun s => D0.Geometry.forwardDifferenceScale N * (D0.Geometry.archiveAffinePullFiber A r ψ p.1 s - ψ (p.1, s))) p.2
+def D0.Geometry.archiveSolderedAnnihilateDirection : {N : ℕ} →
+  D0.Geometry.AffineCartanConnection N ℝ D0.Geometry.RoleSpace →
+    D0.Geometry.LocalCoframeField N →
+      (D0.Geometry.ArchiveRolePhaseGroup N → D0.Geometry.RoleVector) →
+        D0.Role → D0.Geometry.ArchiveCochain N → D0.Geometry.ArchiveCochain N :=
+fun {N} A e n r ψ p =>
+  (D0.Geometry.archiveExteriorContraction (D0.Geometry.observerFlat (n p.1) (D0.Geometry.solderLegVector N e p.1 r)))
+    (fun s =>
+      D0.Geometry.forwardDifferenceScale N * (ψ (p.1, s) - D0.Geometry.archiveAffinePullPreviousFiber A r ψ p.1 s))
+    p.2
+def D0.Geometry.archiveSolderedCodifferential : {N : ℕ} →
+  D0.Geometry.AffineCartanConnection N ℝ D0.Geometry.RoleSpace →
+    D0.Geometry.LocalCoframeField N →
+      (D0.Geometry.ArchiveRolePhaseGroup N → D0.Geometry.RoleVector) →
+        D0.Geometry.ArchiveCochain N → D0.Geometry.ArchiveCochain N :=
+fun {N} A e n ψ p => ∑ r, -D0.Geometry.archiveSolderedAnnihilateDirection A e n r ψ p
+def D0.Geometry.archiveSolderedDirac : {N : ℕ} →
+  D0.Geometry.AffineCartanConnection N ℝ D0.Geometry.RoleSpace →
+    D0.Geometry.LocalCoframeField N →
+      (D0.Geometry.ArchiveRolePhaseGroup N → D0.Geometry.RoleVector) →
+        D0.Geometry.ArchiveCochain N → D0.Geometry.ArchiveCochain N :=
+fun {N} A e n ψ =>
+  D0.Geometry.archiveSolderedForwardDifferential A e ψ + D0.Geometry.archiveSolderedCodifferential A e n ψ
+def D0.Geometry.observerMetric : D0.Geometry.RoleVector → Matrix D0.Role D0.Role ℝ :=
+fun n r s =>
+  -D0.Geometry.roleLorentzMetric r s + 2 * D0.Geometry.observerCovector n r * D0.Geometry.observerCovector n s
+'D0.Research.SolderedHeatSource.metricMatrix_symmetric' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.SolderedHeatSource.restPullback_formula' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.SolderedHeatSource.restPullback_involutive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.SolderedHeatSource.all_ten_rest_pullback' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.SolderedHeatSource.metricMatrix_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.SolderedHeatSource.trace_packed_weights' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.SolderedHeatSource.rest_trace_pullback' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.SolderedHeatSource.homogeneous_constraint_tangent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.SolderedHeatSource.homogeneous_constraint_curve' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.SolderedHeatSource.rawTwoSite_factorization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.SolderedHeatSource.rawTwoSite_adjoint_defect' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.SolderedHeatSource.rawTwoSite_symmetric_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.SolderedHeatSource.exact_variable_solder_defect' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.SolderedHeatSource.actual_creator_square_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.SolderedHeatSource.actual_contraction_square_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.SolderedHeatSource.actual_constant_CAR_square' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.SolderedHeatSource.actual_flat_links_kill_constants' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.SolderedHeatSource.joint_rest_packed_contraction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.SolderedHeatSource.joint_rest_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.SolderedHeatSource.joint_rest_observer_rescale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Geometry.archiveExteriorCreator_anticommute' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Geometry.archiveExteriorContraction_anticommute' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Geometry.archiveExterior_contraction_creator_car' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Geometry.observerMetric_posDef' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Geometry.observer_contraction_adjoint_covariant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Geometry.archiveExteriorFrameLift_id' depends on axioms: [propext, Classical.choice, Quot.sound]

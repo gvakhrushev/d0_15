@@ -1,0 +1,743 @@
+{
+  "status": "PASS",
+  "dimension": 256,
+  "metric_checks": 10,
+  "linear_link_checks": 64,
+  "numerical_tolerance": 1e-12,
+  "underlying_control": "integer CAR/shift matrices and rational Gibbs probabilities",
+  "full_heat_partition_Z": 81.0,
+  "thermal_mean_energy": 21.333333333333332,
+  "this_point_is_stationary": false,
+  "checks": [
+    {
+      "kind": "metric",
+      "index": [
+        0,
+        0
+      ],
+      "actual": -0.08333333333333331,
+      "expected": -0.08333333333333331
+    },
+    {
+      "kind": "metric",
+      "index": [
+        0,
+        1
+      ],
+      "actual": -0.2222222222222222,
+      "expected": -0.2222222222222222
+    },
+    {
+      "kind": "metric",
+      "index": [
+        0,
+        2
+      ],
+      "actual": -0.2222222222222222,
+      "expected": -0.2222222222222222
+    },
+    {
+      "kind": "metric",
+      "index": [
+        0,
+        3
+      ],
+      "actual": -0.2222222222222222,
+      "expected": -0.2222222222222222
+    },
+    {
+      "kind": "metric",
+      "index": [
+        1,
+        1
+      ],
+      "actual": -0.08333333333333333,
+      "expected": -0.08333333333333331
+    },
+    {
+      "kind": "metric",
+      "index": [
+        1,
+        2
+      ],
+      "actual": -0.2222222222222222,
+      "expected": -0.2222222222222222
+    },
+    {
+      "kind": "metric",
+      "index": [
+        1,
+        3
+      ],
+      "actual": -0.22222222222222218,
+      "expected": -0.2222222222222222
+    },
+    {
+      "kind": "metric",
+      "index": [
+        2,
+        2
+      ],
+      "actual": -0.08333333333333333,
+      "expected": -0.08333333333333331
+    },
+    {
+      "kind": "metric",
+      "index": [
+        2,
+        3
+      ],
+      "actual": -0.22222222222222218,
+      "expected": -0.2222222222222222
+    },
+    {
+      "kind": "metric",
+      "index": [
+        3,
+        3
+      ],
+      "actual": -0.08333333333333331,
+      "expected": -0.08333333333333331
+    },
+    {
+      "kind": "linear_link",
+      "index": [
+        0,
+        0,
+        0
+      ],
+      "actual": 0.0,
+      "expected": 0.0
+    },
+    {
+      "kind": "linear_link",
+      "index": [
+        0,
+        0,
+        1
+      ],
+      "actual": 0.0,
+      "expected": 0.0
+    },
+    {
+      "kind": "linear_link",
+      "index": [
+        0,
+        0,
+        2
+      ],
+      "actual": 0.0,
+      "expected": 0.0
+    },
+    {
+      "kind": "linear_link",
+      "index": [
+        0,
+        0,
+        3
+      ],
+      "actual": 0.0,
+      "expected": 0.0
+    },
+    {
+      "kind": "linear_link",
+      "index": [
+        0,
+        1,
+        0
+      ],
+      "actual": 0.06944444444444445,
+      "expected": 0.06944444444444445
+    },
+    {
+      "kind": "linear_link",
+      "index": [
+        0,
+        1,
+        1
+      ],
+      "actual": -0.04166666666666666,
+      "expected": -0.04166666666666666
+    },
+    {
+      "kind": "linear_link",
+      "index": [
+        0,
+        1,
+        2
+      ],
+      "actual": 0.0,
+      "expected": 0.0
+    },
+    {
+      "kind": "linear_link",
+      "index": [
+        0,
+        1,
+        3
+      ],
+      "actual": 0.0,
+      "expected": 0.0
+    },
+    {
+      "kind": "linear_link",
+      "index": [
+        0,
+        2,
+        0
+      ],
+      "actual": 0.06944444444444445,
+      "expected": 0.06944444444444445
+    },
+    {
+      "kind": "linear_link",
+      "index": [
+        0,
+        2,
+        1
+      ],
+      "actual": 0.0,
+      "expected": 0.0
+    },
+    {
+      "kind": "linear_link",
+      "index": [
+        0,
+        2,
+        2
+      ],
+      "actual": -0.04166666666666666,
+      "expected": -0.04166666666666666
+    },
+    {
+      "kind": "linear_link",
+      "index": [
+        0,
+        2,
+        3
+      ],
+      "actual": 0.0,
+      "expected": 0.0
+    },
+    {
+      "kind": "linear_link",
+      "index": [
+        0,
+        3,
+        0
+      ],
+      "actual": 0.06944444444444445,
+      "expected": 0.06944444444444445
+    },
+    {
+      "kind": "linear_link",
+      "index": [
+        0,
+        3,
+        1
+      ],
+      "actual": 0.0,
+      "expected": 0.0
+    },
+    {
+      "kind": "linear_link",
+      "index": [
+        0,
+        3,
+        2
+      ],
+      "actual": 0.0,
+      "expected": 0.0
+    },
+    {
+      "kind": "linear_link",
+      "index": [
+        0,
+        3,
+        3
+      ],
+      "actual": -0.04166666666666666,
+      "expected": -0.04166666666666666
+    },
+    {
+      "kind": "linear_link",
+      "index": [
+        1,
+        0,
+        0
+      ],
+      "actual": -0.04166666666666666,
+      "expected": -0.04166666666666666
+    },
+    {
+      "kind": "linear_link",
+      "index": [
+        1,
+        0,
+        1
+      ],
+      "actual": 0.06944444444444445,
+      "expected": 0.06944444444444445
+    },
+    {
+      "kind": "linear_link",
+      "index": [
+        1,
+        0,
+        2
+      ],
+      "actual": 0.0,
+      "expected": 0.0
+    },
+    {
+      "kind": "linear_link",
+      "index": [
+        1,
+        0,
+        3
+      ],
+      "actual": 0.0,
+      "expected": 0.0
+    },
+    {
+      "kind": "linear_link",
+      "index": [
+        1,
+        1,
+        0
+      ],
+      "actual": 0.0,
+      "expected": 0.0
+    },
+    {
+      "kind": "linear_link",
+      "index": [
+        1,
+        1,
+        1
+      ],
+      "actual": 0.0,
+      "expected": 0.0
+    },
+    {
+      "kind": "linear_link",
+      "index": [
+        1,
+        1,
+        2
+      ],
+      "actual": 0.0,
+      "expected": 0.0
+    },
+    {
+      "kind": "linear_link",
+      "index": [
+        1,
+        1,
+        3
+      ],
+      "actual": 0.0,
+      "expected": 0.0
+    },
+    {
+      "kind": "linear_link",
+      "index": [
+        1,
+        2,
+        0
+      ],
+      "actual": 0.0,
+      "expected": 0.0
+    },
+    {
+      "kind": "linear_link",
+      "index": [
+        1,
+        2,
+        1
+      ],
+      "actual": 0.06944444444444445,
+      "expected": 0.06944444444444445
+    },
+    {
+      "kind": "linear_link",
+      "index": [
+        1,
+        2,
+        2
+      ],
+      "actual": -0.04166666666666666,
+      "expected": -0.04166666666666666
+    },
+    {
+      "kind": "linear_link",
+      "index": [
+        1,
+        2,
+        3
+      ],
+      "actual": 0.0,
+      "expected": 0.0
+    },
+    {
+      "kind": "linear_link",
+      "index": [
+        1,
+        3,
+        0
+      ],
+      "actual": 0.0,
+      "expected": 0.0
+    },
+    {
+      "kind": "linear_link",
+      "index": [
+        1,
+        3,
+        1
+      ],
+      "actual": 0.06944444444444445,
+      "expected": 0.06944444444444445
+    },
+    {
+      "kind": "linear_link",
+      "index": [
+        1,
+        3,
+        2
+      ],
+      "actual": 0.0,
+      "expected": 0.0
+    },
+    {
+      "kind": "linear_link",
+      "index": [
+        1,
+        3,
+        3
+      ],
+      "actual": -0.04166666666666666,
+      "expected": -0.04166666666666666
+    },
+    {
+      "kind": "linear_link",
+      "index": [
+        2,
+        0,
+        0
+      ],
+      "actual": -0.04166666666666666,
+      "expected": -0.04166666666666666
+    },
+    {
+      "kind": "linear_link",
+      "index": [
+        2,
+        0,
+        1
+      ],
+      "actual": 0.0,
+      "expected": 0.0
+    },
+    {
+      "kind": "linear_link",
+      "index": [
+        2,
+        0,
+        2
+      ],
+      "actual": 0.06944444444444445,
+      "expected": 0.06944444444444445
+    },
+    {
+      "kind": "linear_link",
+      "index": [
+        2,
+        0,
+        3
+      ],
+      "actual": 0.0,
+      "expected": 0.0
+    },
+    {
+      "kind": "linear_link",
+      "index": [
+        2,
+        1,
+        0
+      ],
+      "actual": 0.0,
+      "expected": 0.0
+    },
+    {
+      "kind": "linear_link",
+      "index": [
+        2,
+        1,
+        1
+      ],
+      "actual": -0.04166666666666666,
+      "expected": -0.04166666666666666
+    },
+    {
+      "kind": "linear_link",
+      "index": [
+        2,
+        1,
+        2
+      ],
+      "actual": 0.06944444444444445,
+      "expected": 0.06944444444444445
+    },
+    {
+      "kind": "linear_link",
+      "index": [
+        2,
+        1,
+        3
+      ],
+      "actual": 0.0,
+      "expected": 0.0
+    },
+    {
+      "kind": "linear_link",
+      "index": [
+        2,
+        2,
+        0
+      ],
+      "actual": 0.0,
+      "expected": 0.0
+    },
+    {
+      "kind": "linear_link",
+      "index": [
+        2,
+        2,
+        1
+      ],
+      "actual": 0.0,
+      "expected": 0.0
+    },
+    {
+      "kind": "linear_link",
+      "index": [
+        2,
+        2,
+        2
+      ],
+      "actual": 0.0,
+      "expected": 0.0
+    },
+    {
+      "kind": "linear_link",
+      "index": [
+        2,
+        2,
+        3
+      ],
+      "actual": 0.0,
+      "expected": 0.0
+    },
+    {
+      "kind": "linear_link",
+      "index": [
+        2,
+        3,
+        0
+      ],
+      "actual": 0.0,
+      "expected": 0.0
+    },
+    {
+      "kind": "linear_link",
+      "index": [
+        2,
+        3,
+        1
+      ],
+      "actual": 0.0,
+      "expected": 0.0
+    },
+    {
+      "kind": "linear_link",
+      "index": [
+        2,
+        3,
+        2
+      ],
+      "actual": 0.06944444444444445,
+      "expected": 0.06944444444444445
+    },
+    {
+      "kind": "linear_link",
+      "index": [
+        2,
+        3,
+        3
+      ],
+      "actual": -0.04166666666666666,
+      "expected": -0.04166666666666666
+    },
+    {
+      "kind": "linear_link",
+      "index": [
+        3,
+        0,
+        0
+      ],
+      "actual": -0.04166666666666666,
+      "expected": -0.04166666666666666
+    },
+    {
+      "kind": "linear_link",
+      "index": [
+        3,
+        0,
+        1
+      ],
+      "actual": 0.0,
+      "expected": 0.0
+    },
+    {
+      "kind": "linear_link",
+      "index": [
+        3,
+        0,
+        2
+      ],
+      "actual": 0.0,
+      "expected": 0.0
+    },
+    {
+      "kind": "linear_link",
+      "index": [
+        3,
+        0,
+        3
+      ],
+      "actual": 0.06944444444444445,
+      "expected": 0.06944444444444445
+    },
+    {
+      "kind": "linear_link",
+      "index": [
+        3,
+        1,
+        0
+      ],
+      "actual": 0.0,
+      "expected": 0.0
+    },
+    {
+      "kind": "linear_link",
+      "index": [
+        3,
+        1,
+        1
+      ],
+      "actual": -0.04166666666666666,
+      "expected": -0.04166666666666666
+    },
+    {
+      "kind": "linear_link",
+      "index": [
+        3,
+        1,
+        2
+      ],
+      "actual": 0.0,
+      "expected": 0.0
+    },
+    {
+      "kind": "linear_link",
+      "index": [
+        3,
+        1,
+        3
+      ],
+      "actual": 0.06944444444444445,
+      "expected": 0.06944444444444445
+    },
+    {
+      "kind": "linear_link",
+      "index": [
+        3,
+        2,
+        0
+      ],
+      "actual": 0.0,
+      "expected": 0.0
+    },
+    {
+      "kind": "linear_link",
+      "index": [
+        3,
+        2,
+        1
+      ],
+      "actual": 0.0,
+      "expected": 0.0
+    },
+    {
+      "kind": "linear_link",
+      "index": [
+        3,
+        2,
+        2
+      ],
+      "actual": -0.04166666666666666,
+      "expected": -0.04166666666666666
+    },
+    {
+      "kind": "linear_link",
+      "index": [
+        3,
+        2,
+        3
+      ],
+      "actual": 0.06944444444444445,
+      "expected": 0.06944444444444445
+    },
+    {
+      "kind": "linear_link",
+      "index": [
+        3,
+        3,
+        0
+      ],
+      "actual": 0.0,
+      "expected": 0.0
+    },
+    {
+      "kind": "linear_link",
+      "index": [
+        3,
+        3,
+        1
+      ],
+      "actual": 0.0,
+      "expected": 0.0
+    },
+    {
+      "kind": "linear_link",
+      "index": [
+        3,
+        3,
+        2
+      ],
+      "actual": 0.0,
+      "expected": 0.0
+    },
+    {
+      "kind": "linear_link",
+      "index": [
+        3,
+        3,
+        3
+      ],
+      "actual": 0.0,
+      "expected": 0.0
+    }
+  ]
+}
