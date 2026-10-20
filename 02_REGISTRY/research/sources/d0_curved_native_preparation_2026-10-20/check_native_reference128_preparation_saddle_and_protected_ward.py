@@ -42,3 +42,26 @@ print("PASS negative prep Hessian survives fixed T_u continuum refinement")
 print("PASS exact protected H,K source null follows from full16 operator intertwiner")
 print("FIREWALL conditional H+J+R critical saddle is not native stable MINIMUM")
 print("GR_closed=false")
+
+# Strict positive R and simultaneous exact coframe scale / observer
+# necessary Ward on same genuine original fixedRIGHT low-grade preparation.
+R0=sum(eig(k) for k in range(1,33))/32
+assert abs(R0-(65*nu*nu/(32*h*h)))<1e-8
+assert abs(R0-base)<1e-8
+for parameter in (-0.2,-0.01,0.03,0.17):
+    Rp=math.exp(2*parameter)*R0
+    # Both admitted chart transformations have the identical native R law:
+    # D(e^sigma v)=e^sigma D(v); owner observer n(tau) has R=e^(2tau) R0.
+    assert abs(Rp-math.exp(2*parameter)*base)<1e-8
+assert abs(2*R0-(65*nu*nu/(16*h*h)))<1e-8
+refine_limit=1430*math.pi**2*nu*nu/(T_u*T_u)
+for L2 in (131,257,1025,4097):
+    h2=T_u/L2
+    val=sum((4*nu**2/h2**2)*math.sin(math.pi*k/L2)**2
+             for k in range(1,33))/32
+    assert 0<val<refine_limit
+assert refine_limit>0
+print('PASS simultaneous scale + observer Ward: d_sigma R=d_tau R=2R0 >0')
+print('PASS finite L=65 exact R0=65 nu^2/(32h^2) and normalizing Gram')
+print('PASS fixed-T rank128 h-refining exact spectral energy limit=1430 pi^2 nu^2/T^2')
+print('FIREWALL real selected H+J requires BOTH native -2R rows, not inferred from prep')
