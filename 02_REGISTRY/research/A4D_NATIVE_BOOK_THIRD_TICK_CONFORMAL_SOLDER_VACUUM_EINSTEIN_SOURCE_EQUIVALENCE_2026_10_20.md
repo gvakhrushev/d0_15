@@ -151,3 +151,65 @@ This newly disposes of the previous argument that the *unavoidable* original nat
 It DOES NOT justify assigning the complete compulsory D0 full physical action to \(W S_\star\). This is a CONDITIONAL BUT PRECISE source compatibility theorem for the already constructed original orbit-twirled, raw Book-weighted, properly marked six-face positive candidate. No genuine Book M1/G0 physical execution or pretrace H+J+R action selector yet forces that candidate; the original stage-verifier and separate Cost-vs-Info/clock-work fiber still matter. CAR matter stress and Λ likewise require a SAME-EXECUTION constitutive transformation. The accepted raw216/Einstein global refinement and full all-source Ward remain open.
 
 **GR_closed=false. Do not promote to BOOK/CORE/claims or assert the weight is a universal physically selected conformal gravity theory.** Use this conditional exact theorem to focus future actual G0 Book selector on a NONSINGULAR source chart, not hunt spurious tensor counterterms for the scalar Book W pressure.
+
+
+## 6. CONDITIONAL physical-selection opportunity: original Book history frequencies are exactly the KKT multipliers enforcing the native cost quantum
+
+This is a SECOND exact possible reduction of the original physical-source selection gap, but must not be confused with a theorem that the current foundational G0 ACTUALLY makes this selection. The original [complete primitive ActionProtocol fibre](A4D_NATIVE_DYNAMICAL_OWNERSHIP.md) establishes, and Lean compiles, that all nonidentity transitions have Cost \(C_{uv}\ge1\), with otherwise independent real nonnegative excess \(c_{uv}\). The same owner proves canonical \(C_{uv}=1\) is uniquely pointwise least, yet CORRECTLY refuses to say a physical M1 agent is compelled to pick it. BOOK03's Information Economy Principle selects a lowest-code HISTORY inside a given rule; there is not yet an ownership theorem making that a lowest-Cost rule over the WHOLE protocol fibre.
+
+**Exact finite optimization theorem under one NAMED additional premise:** Fix the actual original scene, actual admissible original vertex Info, actual \(p=\varphi^{-1}\), and suppose the physically selected scalar macro-action is THE EXISTING minimized Book history pressure
+\[
+A(C;I)=-\log_\varphi\rho\!\left(K_{uv}(C,I)\right),
+\quad
+K_{uv}=\varphi^{-C_{uv}+\theta I_u+(1-\theta)I_v}
+\quad(u\to v\text{ any of the ORIGINAL 718 edges}),
+\tag{12}
+\]
+with ALL 718 primitive cost constraints \(C_{uv}\ge1\). Let true left/right Perron eigenvectors \(\ell,r>0\) be normalized \(\ell^\top r=1\), and \(P_{uv}=K_{uv}r_v/(\rho r_u)\), \(\pi_u=\ell_ur_u\).
+
+Then exact native spectral differentiation gives, for every actual primitive directed edge,
+\[
+\boxed{
+\frac{\partial A}{\partial C_{uv}}
+=\frac{\ell_uK_{uv}r_v}{\rho}
+=\pi_uP_{uv}=:\mu_{uv}>0,\qquad
+\sum_{uv}\mu_{uv}=1.
+}\tag{13}
+\]
+These \(\mu\)'s are the EXACT native positive frequencies of ORIGINAL retained histories; they are also the genuine Karush–Kuhn–Tucker multipliers for the inequality constraints \(C_{uv}\ge1\) at the minimizing boundary. Crucially not one is fitted or zeroed.
+
+Because the Perron root is strictly monotone under a decrease of ANY ONE original supported positive edge weight and \(A=-\log_\varphi\rho\), strict coordinatewise increase of Cost **strictly increases** A. Thus
+\[
+\boxed{
+\arg\min_{\substack{C_{uv}\ge1\ \forall718\\ I\ {\rm fixed}}}
+A(C;I)=\{C_{uv}\equiv1\}.
+}\tag{14}
+\]
+This is a GLOBAL uniqueness theorem, not a small variational Hessian or merely a linearized claim. All identity transitions remain truly zero-Cost as required by the original ActionProtocol. A uniform excess \(\delta\) gives \(A(C+\delta;I)=A(C;I)+\delta\) EXACTLY; a positive heterogeneous excess gives a strict higher scalar action.
+
+**Interpretation for the already-real archive:** The same positive stationary edge frequencies \(\mu\) that generated the complete Book Hessian/conditional Fisher archive are mathematically dual to the ACTIVE primitive cost quantum: they are the actual cost-constraint KKT forces. This links archive histories to a unique boundary representative of the primitive fibre IF, and ONLY IF, the real physical native information economy minimizes the selected \(\mathcal A(C;I)\) **ACROSS different allowed primitive action completions at fixed Info**, rather than merely comparing histories WITHIN an already-chosen completion. That named additional premise is NOT proved in the current G0/M1/core and cannot be claimed by pointing to the fact canonical C=1 is available.
+
+With this premise, the original Cost quantum would remove all718 independent excesses WITHOUT adding a gravity counterterm. The remaining original vertex Info/CAR/preparation/clock/ordered memory and same-run signed Book source STILL require independent closure. At a genuinely smooth two-sided field chart where a primitive \(C_{uv}(y)\ge1\) saturates its floor at an interior point, every \(DC_{uv}[V]=0\) at that point by elementary constrained differentiability, but \(D I\) need not vanish. The previous conformal source theorem does not require \(DI=0\): it works for ANY positive native W with nonsingular radial coframe response.
+
+**Executable original complete positive check:** [all 718 original Book history frequencies as exact cost KKT multipliers, canonical Cost=1 unique global minimum at fixed Info](sources/d0_native_two_three_clock_2026-10-20/check_original_book_boundary_kkt_canonical_cost.mjs) independently computes heterogeneous actual LEFT+RIGHT Perron/Doob law, all 718 positive transition KKT slopes, six independent cost finite differences and the uniform exact absolute price shift; 12 PASS groups. It does not replay a literal fundamental minimization over programme laws, and does not promote GR.
+
+### Final conditional synthesis
+
+The two new mathematically genuine seams are now compact:
+
+\[
+\boxed{
+\begin{aligned}
+\text{actual original retained native Book histories}
+&\xrightarrow{\;\mu_{uv}>0\;\text{KKT}\;}
+\text{unique canonical primitive Cost boundary}\\
+\text{(only IF cross-protocol economy is a physically selected rule)},\\
+W_{\rm Book}=\mathrm{Tr}K^3/7722
+&\xrightarrow{\;\widetilde e=\sqrt W e\;}
+\text{EXACT SAME original VACUUM Palatini critical set}
+\\[-2pt]
+&\qquad\text{if }2+D_e\ln W[e]\ne0 .
+\end{aligned}}\tag{15}
+\]
+
+Neither line is a full GR derivation: the first needs ONE previously UNPROVED physical selection premise, the second needs the native whole-H+J+R action to actually contain the weighted pretrace six-star as its selected gravitational sector, and the original CAR/matter/clock/raw216 refinements remain open. But the potential primitive Cost nonselection is now a sharply formulable and finitely certified **constrained-optimization gate**, not a request to invent 718 cost constants.
