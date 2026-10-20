@@ -101,6 +101,28 @@ On ONE genuine complete originally admissible M1/G0 carrier, find two histories 
 
 No extra invisible "third attractor" should be posited without evidence. Hidden conditions are possible, but not guaranteed; the whole input state and execution law must make them testable.
 
+
+## 4B. The idle-history test: positive Cost alone would SELECT the empty physical history
+
+The original quantum ActionProtocol assigns strictly positive price to each truly distinguishable transition, but the EMPTY history has zero executed primitive action Cost. Therefore a PROSPECTIVE physical minimizer with no required new test or other terminal constraint and ALL strictly positive primitive transition prices chooses NOTHING, not a falling apple. This is the key missing endogenous FORCE needed for the user's D_min to be an actual dynamics rather than a description preference.
+
+**NEW COMPILED Lean:** ProspectiveDynamics.totalPrice_nonneg, ProspectiveExecution.no_motion_without_a_required_distinction and ProspectiveExecution.nonempty_forces_unsatisfied_initial_goal prove:
+
+\[
+\boxed{
+\operatorname{goal}(\sigma_0)=\mathrm{true},\quad
+c(\sigma,a)>0\;\forall(\sigma,a)
+\ \Longrightarrow\ 
+\gamma_{\min}=[].
+}\tag{5}
+\]
+
+Consequently a nonempty selected history requires an initially UNSATISFIED genuine mandatory future verification/physical task, or a FULL native Cost-minus-Info source which makes empty nonoptimal. Neither is automatically supplied by the primitive Cost quantum alone. The missing physics theorem must DERIVE the obligatory test/goal/endogenous source from M1, and derive prospective minimization of actually selected Book03 complete Cost-Info from D_min's existing shorter-description principle. Do not invent the destination or a fitted gravitational coefficient.
+
+The black-hole atom example confirms the importance of COMPLETE initial state: outward radial velocity and inward radial gravity naturally produce outward-then-inward motion even without a third attractor. An immediately inward trajectory with different initial momentum is NOT a feasible alternative at the same state. Geometric spatial path length also need not be the true Einstein/Palatini variational action. All comparisons must hold source momentum, interactions, boundary and permitted future tests fixed.
+
+This is an exact semantic/dynamical forcing boundary, not a claim the original M1 has already proved selection. GR_closed=false.
+
 ## 5. Implemented in the SAME repo; previous negative controls kept but scope-corrected
 
 The prior compiled original \`original_roundtrip_no_endpoint_only_paid_action\`, \`nativeQ8CanonicalActionCannotFactorThroughEndpoint\` and \`nativeQ8SameEndBookSecondSourceGap\` are mathematically sound as *retrospective price/provenance statements for executions which ACTUALLY occur*. They **DO NOT** imply the prospective physical minimal selector ever chooses those overlong executions. This is now an explicit correction to their prior interpretative framing. Do not promote an action-ambiguity theorem as a no-go against prospective MDL.
