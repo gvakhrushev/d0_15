@@ -139,6 +139,36 @@ check(maxTrials(qPassive,1e-6)===2122
   && maxTrials(qAnchor,1e-6)===184
   && maxTrials(qTarget,1e-6)===5,"1e-6 complete-attempt cap");
 
+// Complete ORIGINAL finite future Cost–Info ledger and its local stage cocycle.
+// Each equal-cost canonical path has probability 1/count under a fixed cut.
+const count4 = Number(futureCounts[4][0]);
+check(count4 === 241994, "exact original A0 depth-4 future count");
+const canonicalCodeEntropy = Math.log(count4)/ell;
+const canonicalValue = 4-canonicalCodeEntropy;
+near(canonicalValue,-Math.log(p**4*count4)/ell,1e-11,
+  "canonical entire-history code/Cost equality");
+const pathRecord = [0,9,0,20,0];
+let pathCode = 0, pathCost = 0, pathBorn = 1, pathRaw = 1;
+for (let i=0; i<depth; i++) {
+  const u=pathRecord[i], v=pathRecord[i+1], remaining=depth-i;
+  check(edge[u][v]===1, "chronological actual K913 path allowed");
+  const weight = phi**-base(u,v);
+  const stage = weight*R[remaining-1].Z[v]/R[remaining].Z[u];
+  const stageSurprisal = -Math.log(stage)/ell;
+  const stagePotentialChange = -Math.log(R[remaining-1].Z[v])/ell
+    + Math.log(R[remaining].Z[u])/ell;
+  near(stageSurprisal,base(u,v)+stagePotentialChange,1e-11,
+    "complete future source/cost coboundary at native stage");
+  pathBorn *= stage;
+  pathRaw *= weight;
+  pathCode += stageSurprisal;
+  pathCost += base(u,v);
+}
+near(pathBorn,pathRaw/Z,1e-13,"true complete cylinder exact telescope");
+near(pathCost-pathCode,V,1e-11,"all-history exact Cost-minus-counting-Info");
+check(canonicalCodeEntropy>4 && canonicalValue<0,
+  "real native multiplicity price, no blanket positive path entropy claim");
+
 console.log("PASS ORIGINAL 33 / 718 / 8440 / Q8 exact integer counts");
 console.log("PASS genuine finite future-history soft-Bellman / KL / positive scores");
 console.log("PASS horizon-change and wrong degree-walk hostile controls");
