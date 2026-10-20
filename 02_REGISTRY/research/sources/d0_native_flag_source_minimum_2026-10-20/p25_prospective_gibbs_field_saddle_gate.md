@@ -153,3 +153,34 @@ and compare the \((xx,xt)\) entries with the independently pinned P25 target \((
 - If selecting actual histories does not mean minimizing over (x,t), retain the stationary Einstein saddle rather than trying to add a positive stabilizer or forbidden field constraint.
 
 This is the smallest parent proof cut: **complete actual history-source covariance (or actual operator analog) on the true P25 tangent**, while preserving the physical distinction between distribution selection and field variation. No new Bloch census, decoder, independent continuum action or strengthened claim status. \`GR_closed=false\`, raw216 open.
+
+
+## 4b. DECISIVE ORIGINAL-24 CARTAN TEST: at least TWELVE independent paid score-fluctuation directions
+
+The original, independently derived finite Lorentz-star Cartan owner
+\`02_REGISTRY/gr_assembly/sources/d0_book_triangle_odds_2026-10-19/original_palatinistar_hessian_owner.md\`,
+§2, on accepted main \`0f41beb04a1d19df62dc5097fa89a0a599467506\`, contains a stronger **exact original-action** input. At the original flat coframe and for the 24 homogeneous proper-link coefficients \(\omega_{r,ij}\), the original six-based-face quadratic action has symmetric Hessian \(M\) satisfying
+\[
+\boxed{\operatorname{rank}M=24,\quad\det M=256,\quad
+\operatorname{spec}M=\{2^{[4]},(-2)^{[4]},1^{[8]},(-1)^{[8]}\}.}\tag{8}
+\]
+In particular \(n_-(M)=n_+(M)=12\). Its fixed-\(h\) field-source Jacobian is \(h^3M\), so multiplying by any nonzero physical normalization and positive power of \(h\) does not change this \((12,12)\) inertia.
+
+**Native scalar-source capacity theorem.**
+Suppose on THIS SAME 24-component original homogeneous-Lorentz chart a proposed scalar complete Book history law really has a positive scalar Gibbs representation (3), with its genuine source/normalizer and no omitted \(U\)-dependent coefficients, and let \(A=\mathbb E_\pi D_\omega^2s_\gamma\succeq0\) at the flat point. If it reproduces the original entire 24-link source Hessian to second order,
+\[
+D_\omega^2 F(0)=c M \quad\text{for some }c\ne0
+\]
+(with the actual nonzero lattice factors absorbed in \(c\)), then
+\[
+\boxed{\operatorname{rank}\operatorname{Cov}_\pi(D_\omega s_\gamma)
+\ge12,\qquad
+\#\{\text{distinct complete paid first-score jets}\}\ge13.}\tag{9}
+\]
+Proof: \(cM\) has 12 negative eigenvalues for EITHER sign of \(c\); the inertia lemma (7) bounds this number by the covariance rank. The covariance of \(r\) distinct centered history-gradient vectors has rank at most \(r-1\).
+
+**An exact new class NO-GO, without a new spectrum run:** If the original 8440 complete history scores depend on the fields through only their two length/clock classes \(n=2,3\) at first order—regardless of arbitrary \(C^2\) nonlinear field dependence at higher order—and if the average single-history second source \(A\succeq0\), then \(\operatorname{rank} C\le1\). Such a selected scalar law CANNOT reproduce the original 24-component Cartan Hessian (8) for any nonzero normalization: \(1<12\). The same conclusion holds whenever the actual first-score-jet span has rank \(\le11\).
+
+This is stronger than merely noting that one pointer is field-blind or matching one nonzero commutator: matching 24 independent *first-source rows* near the root requires the full Jacobian, which carries twelve negative directions. The 8440 history COUNT, all327 scalar current theorem, full128 *quantum-state* tangent rank24 and 128 pointer labels are not substitutes for twelve linearly independent **paid score fluctuations**. If the complete physical Info/clock/work has enough actual independent first jets, or the native action is algebra-valued/noncommutative, or the average microscopic Hessian \(A\) is indefinite, the theorem does not exclude it. No new imposed selector, coefficient or Einstein tensor is inferred.
+
+**Immediate execution gate:** on the SAME original 24-link chart, compute the actual 8440 (or actually different native complete) paid score-jet *Gram/covariance matrix*, INCLUDING preparations, clock, normalization, controller and oldRIGHT charges. First check whether its **exact rank is at least 12**; this is an inexpensive KILL-FIRST discriminator. Only if it passes should one compare all source coefficients and physical Ward/GR refinement. Where the true complete price is operator-valued, derive an operator-source counterpart rather than treating classical covariance as mandatory. This result reuses the already-owned exact original Cartan spectrum; it is NOT a replay or physical admission of the proposed scalar source.
