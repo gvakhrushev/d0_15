@@ -144,7 +144,13 @@ where \(E_L\) denotes **only actually derived and paid** additional native prepa
 \[
 \boxed{L^{-4}D_\rho E_L\big|_{\rho=1}\le-c_*<-10^{-8}\qquad(L\ge256).}\tag{9}
 \]
-If the actual internally stationary section is changed by E, it must be solved in the COMPLETE physical Euler; the inequality still follows at any such physical solution provided \(H,J\) are as (2) and \(R_\rho\ge0\) at its full preparation-stationary point *only when the bare Rayleigh preparation envelope hypothesis holds*. Do NOT reuse (9) blindly when physical stationarity of M is not bare-R stationarity; instead calculate the complete derivative and use \(\partial_\rho R\ge0\) at fixed M plus the actual internal source.
+**Stronger FULL-stationary-envelope theorem (no bare-R preparation premise).** Suppose \(M,z\) satisfy the true **complete** internal Euler equations \(D_{M,z}S^{\rm physical}=0\) with the physical fixedRIGHT Gram held fixed, even when \(E\) changes those internal equations. Along any smooth locally stationary section, the full chain rule eliminates **the combined** internal derivative:
+\[
+\frac d{d\rho}S^{\rm physical}(\rho,M(\rho),z(\rho))
+=\partial_\rho(H+J)+\underbrace{\operatorname{Tr}(M^\dagger\Delta_1 M)}_{\ge0}
++\left.\partial_\rho E\right|_{M,z\ {\rm fixed}}.
+\]
+Thus (9) still holds at a physical stationary flat solution **without requiring \(M\) to be stationary for the bare \(R\) alone**. The true necessary compensating price is the **explicit coframe derivative of the complete paid remainder at fixed internal state**, evaluated on that true full-stationary state. The all-4-leg analogue requires \(\partial_{\rho_r}E/L^4\le-c_*/4\) for each original independent scale, because each \(\Delta_r\succeq0\). If E instead changes the operator \(D\), thermal normalization, physical Hilbert chart or carries a non-additive source, this additive comparison must be rederived for the actual model; no such source equivalence is assumed.
 
 In particular any proposed E whose **entire** normalised first source is \(o(1)\) as \(L\to\infty\) CANNOT restore even the flat Einstein endpoint. The already owned compact equal-weight stopped Golden *flag-only* first source is zero on the identity-link tree, and it cannot compensate (7) by itself on a genuinely proven shared carrier. A previously discovered p/clock transformation, observational positivity, a match of all40 configured J2 equations, or a finite-curvature readout does not cancel the actual nonzero scalar source. One full paid physical programme must provide a bulk counterpressure of the required size, or a non-additive source-selection mechanism that truly changes the conditional action.
 
