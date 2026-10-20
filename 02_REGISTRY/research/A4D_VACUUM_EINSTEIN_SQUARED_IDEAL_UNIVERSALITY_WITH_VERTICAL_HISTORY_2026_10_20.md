@@ -138,3 +138,19 @@ Instead of either impossible full microscopic coefficient matching or the unnece
 But (10) is NOT forced by the original M1 observer/Cost quantum alone, as the true complete Golden17 Shannon-vertical source demonstrates. The mathematical no-go for pure conjugacy-class Cost plus the original positive signed marker tell us which source channel is REQUIRED: ordered/coframe-referenced pretrace FULL RECORD or genuine Info moving into a scale-neutral action, not a scalar unmarked holonomy price.
 
 **No full native selected Euler/Cost–Info/actual CAR matter/hyperbolic physical refinement nor raw #216 is closed. GR_closed=false.**
+
+
+## 5. Consuming a NEW EXACT physical source CONE terminal: fixed full17-Shannon-as-Info CANNOT BE HEALED by ANY Cost>=1 smooth saturation repair
+
+The [original all8440 two-Ward theorem](A4D_GOLDEN17_COST_FLOOR_DOUBLE_WARD_NOGO_ON_REAL_ROLE4_BOOK8440_2026_10_20.md) now strengthens the negative #334 physical-selection evidence dramatically, without pretending full compulsory H+J+R is selected. On the GENUINE original 16-site Role4 L2 with 64 SHARED proper SO link operators, 96 true based plaquettes, original Golden full17 COMPLETE conditional marks including Bell fail 4095/4096, and ALL native K(9,11,13) 8440 complete 2/3 rooted histories (including the repeated closing Book root Info), take ONE fixed background with all links I and a single nonconstant coframe \(e_0=(5/4)I\). Two directions \(V_0,V_2\) perturb the true same-site J23 link in different Role directions.
+
+\[
+\begin{array}{c|c|c}
+&\text{genuine Palatini}&\text{all8440 Book, Cost>=1 saturated, Info=full17 Shannon}\\
+V_0 & f_i(t)\equiv0\ \forall 16\text{ sites} & S''(0)\ge -3H_{96}''(0)=+0.00160157111\ldots>0\\
+V_2 & D\sum_xf_x=-9/16\ne0 & DS(0)=0
+\end{array}
+\]
+The complete original six-face full17 positive Shannon has the **exact** \(\displaystyle H_{96}''(0)=-\frac{6p^4}{4096\ln\varphi}(\frac5{12}\ln12+\frac16)<0\) in both Role directions. ALL 718 primitive Cost functions smooth on a true two-sided chart with \(C_e\ge1,C_e(0)=1\) have first jets zero and second jets nonnegative; Info evenness kills each vertex Info first jet. Therefore every primitive Book path first derivative is 0 and the whole-path log-sum-exp first-score variance vanishes EXACTLY; its second derivative equals the positive expectation of \(\sum C_e''-\sum I_v''\) (no hidden Perron averaging). In the uniform full96 Shannon Info coding subclass with fixed Golden native attempts \(g_2=p,g_3=p^2\), the exact minimum over all cost-floor curvatures is \(+0.0020507888725507617\ldots\), and any COST ONLY admissible smooth repair makes it larger. A fully independent heterogeneous original positive-cost fixture gives Book Hessian \(+0.018755264902546726\ldots\). The signed geometric \(V_2\) first source is genuine global \(-9/16\), rather than two cancellation-prone sitewise values, thanks to one site-local \((5/4)I\) coframe.
+
+This is a **strong complete-class two-direction NO-GO** for naive scalar positive Shannon Info / Cost floor encoders: it FAILS the on-shell quadratic-ideal vertical Hessian gate and cannot recover the offshell signed first Palatini Euler regardless of permitted primitive Cost second derivatives. It does NOT preclude the true ORIGINAL algebra-valued \([q(\gamma)]\) pretrace Book ordered memory, signed Golden17 contrasts, an independently stationarized archive/clock/oldRIGHT Schur, interior Cost excess, or an actually compelled DIFFERENT Info code. Those must be selected and paid from the unchanged literal original G0 M1/Book axioms, not inserted as a compensating Einstein tensor. **This means merely increasing the primitive Cost class and repeating Golden Shannon cannot solve the main open problem.** Full physical GR still open.
