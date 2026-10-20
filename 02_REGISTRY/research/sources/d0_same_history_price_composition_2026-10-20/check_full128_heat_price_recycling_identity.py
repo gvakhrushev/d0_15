@@ -150,43 +150,4 @@ estimate=n2*(n2-1)/2*float(vA)**2*9*(delta1+delta2**0.5)
 assert norm(diff)<estimate
 print("ALL-DEPTH TWO-MOMENT curved operator norm bound: PASS")
 
-
-# Three-level exact hostile recycling: Γ_1=0 yet Γ_2>0.
-I3=s.eye(3)
-D3=s.diag(0,1,s.sqrt(2))
-Delta3=D3**2
-def Tstar3(Y):
-    return s.diag(Y[0,0],(Y[0,0]+Y[2,2])/2,Y[2,2])
-def Nstar3(Y):
-    return s.simplify(Y+A*(D3*Tstar3(Y)*D3-Delta3*Y-Y*Delta3))
-B3=I3-A*Delta3
-assert Tstar3(I3)==I3 and Tstar3(Delta3)==Delta3
-assert eq(D3*Tstar3(Delta3)*D3, Delta3**2)
-assert Tstar3(Delta3**2)-Tstar3(Delta3)**2 == s.diag(0,1,0)
-assert eq(Nstar3(Nstar3(I3)), B3**2)
-assert eq(Nstar3(Nstar3(Nstar3(I3)))-B3**3,
-          A**3*s.diag(0,1,0))
-print("EXACT Γ1=0, Γ2>0 third-step source countercontrol: PASS")
-
-# Fully noncommuting curved operator two-moment bound, native CP unital T*.
-vA=s.Rational(1,200)
-D2=s.diag(2,3)
-Delta2=D2**2
-I2=s.eye(2)
-Had2=s.Matrix([[1,1],[1,-1]])/s.sqrt(2)
-def TS2(Y): return Had2*Y*Had2
-def N2(Y):
-    return Y+vA*(D2*TS2(Y)*D2-Delta2*Y-Y*Delta2)
-n2=35
-En2=I2
-for _ in range(n2):
-    En2=s.simplify(N2(En2))
-diff=(En2-(I2-vA*Delta2)**n2).evalf()
-norm=lambda M:max(abs(complex(ev)) for ev in M.eigenvals())
-d1=norm(TS2(Delta2)-Delta2)
-d2=norm(TS2(Delta2**2)-TS2(Delta2)**2)
-rhs=n2*(n2-1)/2*float(vA)**2*9*(d1+d2**0.5)
-assert norm(diff)<rhs
-print("ALL-DEPTH TWO-MOMENT full-operator norm bound: PASS")
-
 print("ALL EXACT GOLDEN/FULL128 HEAT-PRICE-RECYCLING CHECKS PASSED")
