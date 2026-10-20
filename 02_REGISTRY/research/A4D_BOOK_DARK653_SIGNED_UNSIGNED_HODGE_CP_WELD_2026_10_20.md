@@ -82,3 +82,34 @@ What is NOT proved: that the physically compulsory original full128/Julia/cofram
 **One decisive parent source check, no new census:** compute the ACTUAL admitted 16+24+matter field→all-718 directed primitive Cost tangent and its ordered memory/record companion on ONE paid programme. Project its SOURCE by the **native** endpoint maps J0,J1 and the reversible parity maps of (1). Any odd projection onto I_−(ker B−) is necessarily a triangle-boundary history source and must enter the full same-action Schur. In particular its omega_scene coefficient is canonically determined and cannot be discarded as generic noise. Use this decomposition in #334's R=H_νg−H_νK H_KK^−1 H_Kg (proper quotient if singular), not as a replacement for an Einstein operator.
 
 **Validation:** companion full718 local checker runs original Perron stationary μ, 33×359 integer B±, the exact summed 1287 boundaries/omega norm, both original 718×33 isometries, rank66−1 endpoint comparison, accepted U-map on the omega-orthogonal signed cycle, native weighted isometry, and direct CP-source differentiation (max error 1.29e−13). Numeric checks PASS; accepted Lean owners reused, not freshly re-proved.
+
+## 6. Stronger exact finite-amplitude theorem: the canonical harmonic CP Cost gauge is FORCED by original stationarity
+
+In §3 the original CP primitive Cost d_uv was +1 around 9→11→13→9 and −1 in reverse. Let q_AB,q_BC,q_CA be the actual *native* reversible stationary masses at ε=0 and R_cyc=1/q_AB+1/q_BC+1/q_CA. Define the harmonic cyclic representative on all **718 ORIGINAL directed edges**, no new field,
+    d_h(u,v) = sign_CP(u,v) · 3/(R_cyc q_{zone-pair(u,v)}).     (7)
+The three positive oriented-zone values are exactly
+    d_h(9→11)=1.1194870943788364...,
+    d_h(11→13)=0.8755606960665653...,
+    d_h(13→9)=1.0049522095545984... .
+Their sum is 3. Every native vertex has zero *weighted* outgoing and incoming Cost-source for this representative:
+    Σ_v μ0_uv d_h(u,v)=Σ_u μ0_uv d_h(u,v)=0.                (8)
+Among zone-symmetric reversal-odd costs with fixed sum around the one cycle, this uniquely fixes the harmonic representative: the three divergence constraints have rank2; the one circulation constraint fixes the remaining scalar.
+
+**The exact gauge theorem is stronger than equal first jets.** Put
+    ξ_9=0,
+    ξ_11=−[1−3/(R_cyc q_AB)],
+    ξ_13=1−3/(R_cyc q_CA).
+Then on every original directed edge
+    d_uv−d_h(u,v)=ξ_zone(u)−ξ_zone(v).                      (9)
+For any Cost amplitude ε in the common strict-positive-Cost chart, let K_d and K_h be the two native scalar Book transfers K_uv=p exp(−ε lnφ d_uv). With Dξ(ε)_uu=exp(−ε lnφ ξ_zone(u)),
+    K_d(ε)=Dξ(ε) K_h(ε) Dξ(ε)^−1.                          (10)
+Thus their entire characteristic polynomials, Perron roots, all stationary Doob transitions and stationary edge flows, all closed-walk scalar Book weights, and all derivatives agree **at finite nonzero ε**, not just infinitesimally. Their individual OPEN historical cylinder weights DO differ by an explicitly known endpoint factor; they are not unconditionally the same physical full-record programme unless Book's endpoint Info/cost is transformed consistently.
+
+At ε=0, the genuine scalar Book history Schur norm is the native harmonic norm, no fitted coefficient:
+    Σ_uv μ0_uv d_h(u,v)^2=9/R_cyc,
+    A_Book''(0)=−lnφ Σ_uv μ0_uv d_h^2=−9 lnφ/R_cyc.        (11)
+This reproduces the already accepted value −0.4763744515526456... and directly shows why its CP current direction is exactly the Hodge harmonic representative of the original Lean omega_scene.
+
+**Decisive implication for the physical target:** the original **orientation cycle class**, rather than any particular endpoint allocation of primitive edge Costs, is the invariant input to the true scalar Book first/second source. A proposed original CAR/physical-record→718 Cost compiler MUST preserve this gauge-covariant class and account for the changing endpoint records. It cannot infer Δα as the amplitude from the index-one pairing: Δα is an independently canonized Q(φ) scalar and the actual field-to-Cost variation remains physically unowned.
+
+Companion executable checker: sources/d0_book_dark_hodge_2026-10-20/check_cp_harmonic_gauge.py. It verifies on ALL 718 native transitions the exact coboundary, similarity for six distinct ε, identical stationary Perron edge laws, and the native row harmonic condition; max finite-ε flow difference was under 7×10^−18 in the independent local check. Source code changes reside in the already active research PR #384, no parallel scientific task or promotion.
