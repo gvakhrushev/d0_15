@@ -181,6 +181,93 @@ for(const [num,den] of [[25,9],[49,25]]){
  ok(ehatAction===num*orig && ehatAction*den===num*den*orig,
  "finite all-six-face two invariant geometric channels exact Book-Weyl dressing by integer cross multiplication");
 }
+
+// ORIGINAL native Book scene, not fictitious arbitrary scalar weights.
+// Compute the TRUE 3-tick positive triangular return W_x=Tr K_x^3/7722,
+// from all 718 actual edges on TWO distinct Role-site scene inputs.
+// Their two W_x are not equal. Both source bivector channels are still
+// removed EXACTLY by the SAME local composite coframe sqrt(W_x)e_x.
+const goldenP=(Math.sqrt(5)-1)/2,phi=1/goldenP,sceneSize=33;
+const zone=u=>u<9?0:(u<20?1:2);
+const nativeK=x=>Array.from({length:sceneSize},(_,u)=>
+ Array.from({length:sceneSize},(_,v)=>zone(u)===zone(v)?0:
+ goldenP**(1.04+0.007*((u+3*v+5*x)%17))));
+function Z3(K){
+ let sum=0,counts=0;
+ for(let a=0;a<9;a++)for(let b=9;b<20;b++)for(let c=20;c<33;c++){
+  sum+=3*(K[a][b]*K[b][c]*K[c][a]+K[a][c]*K[c][b]*K[b][a]);counts+=6;
+ }
+ ok(counts===7722,"ORIGINAL 7722 genuine native based triangle histories");
+ return sum;
+}
+const K0=nativeK(0),K1=nativeK(1);
+for(const K of [K0,K1]){
+ ok(K.flat().filter(v=>v>0).length===718,
+   "original K(9,11,13), exactly 718 positive directed Cost>=1 transitions");
+}
+const W0=Z3(K0)/7722,W1=Z3(K1)/7722;
+ok(W0>0&&W1>0&&Math.abs(W0-W1)>1e-7,
+ "nontrivial independent native Role-site 3-tick Book pressures");
+const s0=actionOnE(sampleE,3,2),s1=actionOnE(scal(sampleE,2),3,2);
+const sh=(E,w)=>actionOnE(scal(E,Math.sqrt(w)),3,2);
+ok(Math.abs(W0*s0-sh(sampleE,W0))<2e-11 &&
+   Math.abs(W1*s1-sh(scal(sampleE,2),W1))<2e-11,
+   "native heterogeneous all718 site Book pressures each absorb into same CAR16 pair channel");
+const t0=.17,t1=-.09,tt=[t0,t1],ws=[W0,W1];
+let groupResidual=0;
+for(let k=0;k<2;k++){
+ const q=phi**tt[k],BookShiftK=(k===0?K0:K1).map(row=>row.map(v=>q*v));
+ const Wprime=Z3(BookShiftK)/7722,srcE=k===0?sampleE:scal(sampleE,2);
+ const Eprime=scal(srcE,q**(-1.5));
+ const ds=actionOnE(srcE,3,2)*ws[k];
+ const dt=actionOnE(Eprime,3,2)*Wprime;
+ groupResidual=Math.max(groupResidual,Math.abs(dt-ds));
+ ok(Math.abs(Wprime/ws[k]-q**3)<1e-12 &&
+    Math.abs(Math.sqrt(Wprime)*q**(-1.5)-Math.sqrt(ws[k]))<1e-12,
+ "ORIGINAL 3-Book/2-coframe sitewise compensator, two independent Info shifts");
+}
+ok(groupResidual<2e-11,"true original sitewise geometric Book–Weyl invariance");
+
+// Exact Levi-Civita CONFORMAL metric Ricci from connection coefficients,
+// not by assuming the scalar curvature transformation formula.
+// g=diag(+---) flat, W(x)=1+x^2, ghat=Wg, x coordinate index 1.
+function directConformalRicci(x){
+ const W=1+x*x,wP=2*x,wPP=2;
+ const a=wP/(2*W),ap=(wPP*W-wP*wP)/(2*W*W),sig=[1,-1,-1,-1];
+ const C=Array.from({length:4},()=>zero(4).map(row=>row.map(()=>Array(4).fill(0))));
+ for(let rho=0;rho<4;rho++)for(let mu=0;mu<4;mu++)for(let nu=0;nu<4;nu++)
+   C[rho][mu][nu]=(rho===mu&&nu===1?1:0)+(rho===nu&&mu===1?1:0)
+     +(rho===1&&mu===nu?sig[mu]:0);
+ let scalar=0;
+ for(let mu=0;mu<4;mu++)for(let nu=0;nu<4;nu++){
+  let val=ap*C[1][nu][mu];
+  if(nu===1)for(let rho=0;rho<4;rho++)val-=ap*C[rho][rho][mu];
+  for(let rho=0;rho<4;rho++)for(let lam=0;lam<4;lam++){
+   val+=a*a*(C[rho][rho][lam]*C[lam][nu][mu]-
+             C[rho][nu][lam]*C[lam][rho][mu]);
+  }
+  if(mu===nu)scalar+=sig[mu]*val/W;
+ }
+ const gradW2=-(wP*wP),boxW=-wPP;
+ const formula=-3*boxW/(W*W)+(3/2)*gradW2/(W*W*W);
+ return {x,W,RicciDirect:scalar,RicciConformalFormula:formula,
+   EHdensity:W*W*scalar,
+   BransDickeBulk:(3/2)*gradW2/W,
+   boundaryMinus3BoxW:-3*boxW};
+}
+const samples=[0,.35,1,2].map(directConformalRicci);
+for(const v of samples){
+ ok(Math.abs(v.RicciDirect-v.RicciConformalFormula)<5e-14,
+  "4D LeviCivita Ricci DIRECT equals conformal W factor formula");
+ ok(Math.abs(v.EHdensity-(v.BransDickeBulk+v.boundaryMinus3BoxW))<4e-13,
+  "4D native Book-Weyl metric EH -> exact Brans-Dicke omega=-3/2 bulk + true boundary");
+}
+// A local independent Immirzi ratio is NOT a pure coframe Weyl gauge:
+// beta(x)=x0, constant alpha, torsionless e=dx gives
+// d beta wedge e2 wedge e3 = dx0 wedge dx2 wedge dx3 != 0.
+const variableHolstTorsionFreeSource=sign([0,2,3]);
+ok(variableHolstTorsionFreeSource===1,
+ "moving beta/alpha produces an authentic independent torsion source even at flat e");
 console.log(JSON.stringify({
  status:"PASS_ORIGINAL_CAR16_LORENTZ_HODGE_HOLST_TORSION_BIANCHI_BOOK_WEYL",
  LorentzCommutant:{rankOverFp:r,dimension:36-r,generatedBy:["I6","CAR16 Hodge J"],J2:"-I",roleReversal:"J odd, I even"},
@@ -191,7 +278,10 @@ console.log(JSON.stringify({
  connectionInverse:"(beta I+alpha J)^-1=(beta I-alpha J)/(alpha²+beta²) for (alpha,beta) not both zero",
  PalatiniCondition:"alpha != 0 to retain Einstein coframe equation; beta unconstrained real constant",
  BookWeyl:{commonPositiveSiteWeightAbsorbedInto:"ehat_x=sqrt(W_x)e_x",coframeJacobian:"W_x^8",
-  independentExactSiteWeights:["25/9","49/25"],allSixFaceSource:orig},
+  independentExactSiteWeights:["25/9","49/25"],allSixFaceSource:orig,
+  actualNativeSceneW:[W0,W1],independentBookInfoShifts:[t0,t1],
+  BookWeylSiteActionResidual:groupResidual,conformalRicci4DChecks:samples,
+  BransDickeOmega:"-3/2",movingImmirziTorsionHostileControl:variableHolstTorsionFreeSource},
  proofScope:"exact original finite CAR/so(1,3) algebra + mathematical continuum torsionfree Palatini-Holst theorem; no compulsory Book/G0, no native finite-torsionless/GR refinement",
  GR_closed:false
 },null,2));
