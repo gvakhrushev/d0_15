@@ -58,7 +58,7 @@ def check(q,a,i,want34,want37):
         C.append(m)
     left=[mm(c,c.T) for c in C]
     right=[mm(c.T,c) for c in C]
-    had=np.array([[(-1)**((lab&j).bit_count()) for j in range(32)]
+    had=np.array([[(-1)**bin(lab&j).count("1") for j in range(32)]
                    for lab in range(32)],dtype=np.int64)
     weight=[(-2*p*p)%q,(-2*a*p)%q]
     psi=np.zeros(16,dtype=np.int64)
@@ -210,9 +210,11 @@ def check(q,a,i,want34,want37):
     def unit(i,j):
         B=np.zeros((4,4),dtype=np.int64);B[i,j]=1;return B
     metric=[]
-    for i in range(4):
-        for j in range(i,4):
-            symmetric=unit(i,j)+(unit(j,i) if i!=j
+    # Do not shadow the algebraic unit i=sqrt(-1) used by the exact
+    # Gaussian-integer Kraus replay below.
+    for mu in range(4):
+        for j in range(mu,4):
+            symmetric=unit(mu,j)+(unit(j,mu) if mu!=j
                                  else np.zeros((4,4),dtype=np.int64))
             metric.append((H@symmetric).reshape(16)%q)
     boosts=[(unit(0,j)+unit(j,0)).reshape(16)%q for j in (1,2,3)]
@@ -255,7 +257,7 @@ def exact_support():
         L=5*eye-c@c.T;R=5*eye-c.T@c
         for x,y in ((P,L),(Pd,R),(-3*c,-L),(-3*c.T,-R)):
             for _ in range(2):words[0].append(x);words[1].append(y)
-    had=np.array([[(-1)**((j&k).bit_count()) for k in range(32)]
+    had=np.array([[(-1)**bin(j&k).count("1") for k in range(32)]
                   for j in range(32)],dtype=np.int64)
     qn=np.empty((64,16,16),dtype=complex)
     for comp in (0,1):
