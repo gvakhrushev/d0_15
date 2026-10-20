@@ -62,6 +62,48 @@ All statements apply on states with \(Z_n>0\); edges with zero completed suffix 
 
 This is a **soft** prospective optimum of distributions. It does NOT force a unique realized trajectory or a deterministic minimizer of each total path Cost. Replacing (P3) by \(\min_e a_e\) at the original fixed Golden \(\varphi\) would improperly discard the multiplicity of alternative verified continuations.
 
+### 2.1. NEW finite-horizon Cost–Info coboundary: no invented per-tick information subtraction
+
+The same P1 actually gives an exact **stagewise original price identity**, more useful for the physical Book03 \`Info\` weld than only the global KL minimizer. Whenever the completed edge has positive \(Q_n\),
+
+\[
+\boxed{
+-\log_\varphi Q_n(e\mid s)
+=s_y(e)+V_{n-1}(t)-V_n(s).
+}\tag{P4a}
+\]
+
+This is simply the logarithm of the TRUE full future-completion ratio, not a newly chosen entropy. Summing the ACTUAL chronological conditional probabilities over the complete retained path telescopes EVERY intermediate potential:
+
+\[
+\boxed{
+-\log_\varphi\Pr^N_s(\gamma)
+=S_{\rm edges}(\gamma)+V_0(s_N)-V_N(s).
+}\tag{P4b}
+\]
+
+Here the fixed task's original terminal fee is \(V_0=-\log_\varphi\chi\), and a moving \(\chi\) keeps its own source. For the explicit complete neutral terminal task \(\chi=1\), the terminal contribution is zero. Taking the entropy of **all actual complete path records** gives the finite exact identity
+
+\[
+\boxed{
+\mathbb E_{\Pr^N_s}S_{\rm edges}
+-H_\varphi(\Pr^N_s)
+=V_N(s)-\mathbb E_{\Pr^N_s}V_0(s_N).
+}\tag{P4c}
+\]
+
+In the original canonical unit-edge-Cost and neutral-terminal case, each of the true
+\(C_N(s)=(A^N\mathbf1)_s\) future paths has probability exactly \(1/C_N(s)\). Therefore
+\[
+\boxed{
+\mathbb E S_{\rm edges}=N,\quad
+H_\varphi(\Pr^N_s)=\log_\varphi C_N(s),\quad
+V_N(s)=N-\log_\varphi C_N(s).
+}\tag{P4d}
+\]
+
+**Operational consequence:** the scalar counting-Info contribution and its native source are fully fixed, at every declared finite Book clock cut, by the very same path enumeration and complete code law. There is no arbitrary information coefficient or extra pressure calibration to choose **inside this specified scalar record ensemble**. However the existence of the positive \(\Pr^N\) does not identify its Shannon information with the ORIGINAL full **algebra-valued** Book03 \`Info\`/work, and the full record may distinguish chronology even when the scalar count does not. That is exactly the next physical constitutive map, not a gap to hide.
+
 ## 3. Proposition P2 — the complete finite SOURCE follows recursively and includes the moving normalization
 
 For any field tangent \(\partial\) with fixed transition support and smooth positive \(\chi_y\) on its terminal support, put \(a_e=s_y(e)+V_{n-1}(t)\). Differentiate the **actual** finite \(Z_n\), not just a frozen path/argmin. The full first source is
