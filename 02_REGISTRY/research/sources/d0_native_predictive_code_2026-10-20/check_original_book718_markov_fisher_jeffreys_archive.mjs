@@ -162,6 +162,52 @@ assert(expectedGammaDim===342.5&&
  Math.abs(J.logPriorHalf-(J.vertexHalf+J.rowHalf))<1e-12,
  "native 685/2 logarithmic Fisher volume and 32-vertex preparation factor");
 
+
+// THE TRUE 718×17 = 12,206 full mathematical single-transition native
+// BOOK+GOLDEN complete event labels. Here one scalar geometric source moves
+// BOTH genuine original Book Cost and ORIGINAL native Golden J23 mark.
+// Conditional Born law retains ALL Bell failures and signed +/- metadata.
+// Fisher splits exactly into vertex-π + transition-P + Golden-CAR channels;
+// this does NOT pick a compulsory G0 Book H+J+R action or erase Q8 spin.
+const golden=(t)=>{
+ const p=(Math.sqrt(5)-1)/2,h=1/4096;
+ const avg=(1+Math.cos(t))/2,ss=Math.sin(t)/Math.SQRT2;
+ const marks=[];
+ for(let axis=0;axis<6;axis++){
+  const s=axis===4?ss:0;
+  marks.push(h*p**4/24*(avg+s)**2,h*p**4/24*(avg-s)**2);
+ }
+ const norm=p**4,gb=p*p*(1-p*p),bg=p**3;
+ marks.push(h*(norm-marks.reduce((a,b)=>a+b,0)/h),h*gb,h*bg,
+            h*(1-norm-gb-bg),1-h);
+ assert(marks.length===17&&marks.every(x=>x>0)&&
+    Math.abs(marks.reduce((a,b)=>a+b,0)-1)<1e-13,
+    "full original native Golden17 records include every Bell FAILURE category");
+ return marks;
+};
+const gold0=golden(0),goldP=golden(dt),goldM=golden(-dt),
+ dGolden=gold0.map((q,i)=>(goldP[i]-goldM[i])/(2*dt));
+const IGolden=gold0.reduce((sum,q,i)=>sum+dGolden[i]**2/q,0);
+const exactGoldenOne=p**4/(4096*6);
+assert(Math.abs(IGolden-exactGoldenOne)<1e-11,
+ "original complete two-fresh Golden17 finite score Fisher equals true p^4/(6*4096)");
+let full12206Fisher=0,full12206Mass=0,full12206MeanScore=0,positiveFull=0;
+for(let u=0;u<N;u++)for(let v of neighbors[u]){
+ const history=native0.pi[u]*native0.P[u][v];
+ const sHistory=dpi[u]/native0.pi[u]+dP[u][v]/native0.P[u][v];
+ for(let k=0;k<17;k++){
+  const Q=history*gold0[k],source=sHistory+dGolden[k]/gold0[k];
+  full12206Fisher+=Q*source**2;
+  full12206Mass+=Q;
+  full12206MeanScore+=Q*source;
+  positiveFull++;
+ }
+}
+assert(positiveFull===12206&&Math.abs(full12206Mass-1)<2e-12&&
+ Math.abs(full12206MeanScore)<2e-10,
+ "ALL original 718x17 native-type joint positive labels have unit total mass and zero score mean");
+assert(Math.abs(full12206Fisher-(Ipi+Icond+IGolden))<3e-8,
+ "TRIPLE ORIGINAL 12206-source FISHER CHAIN: vertex32 + Doob685 + Golden17 exactly");
 console.log(JSON.stringify({
  status:"PASS_ORIGINAL_718_MARKOV_FISHER_JEFFREYS_SOURCE_GEOMETRY",
  native:{vertices:33,directedEdges:718,parameterDimension:dimension,
@@ -169,7 +215,11 @@ console.log(JSON.stringify({
   normalizedTwoStepPathMass:positiveMass,absolutePerronLambda:native0.lambda},
  exactFisher:{movingStationaryVertex32:Ipi,conditionalTransition685:Icond,
   wholeStationaryEdge685:Iedge,originalCompleteTwoStepHistory:FI2,
-  exactPathDifference:FI2-(Ipi+2*Icond),exactOneStepDifference:Iedge-Ipi-Icond},
+  exactPathDifference:FI2-(Ipi+2*Icond),exactOneStepDifference:Iedge-Ipi-Icond,
+  completeOriginalBookGoldenLabels:positiveFull,
+  fullBookGoldenJointFisher:full12206Fisher,
+  trueGolden17ConditionalFisher:IGolden,
+  fullTripleSourceDefect:full12206Fisher-Ipi-Icond-IGolden},
  Jeffreys:{halfLogDetNative685:J.logPriorHalf,explicitRowDetSumHalf:logDet/2,
   stationaryVertexFisherLogPrior:J.vertexHalf,
   naiveIndependentKTrowLogPrior:J.rowHalf,
