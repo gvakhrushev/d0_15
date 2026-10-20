@@ -9527,3 +9527,42 @@ controller stationarity, execution clock and refining source equivalence
 remain open. One round does not close finite-time or GR obligations.
 The sampling-leg bareHJR coefficients remain on their own carrier.
 No task, lifecycle, assembly or public-claim promotion. `GR_closed=false`.
+
+
+### 20 October: actual primary prepared-cut feedback source with full oldRIGHT
+
+The [prepared-cut application](A4D_PRIMARY_PREPARED_CUT_PAID_FEEDBACK_SOURCE_2026_10_20.md)
+consumes the existing price-feedback theorem on the same primary
+Fourier128/n20/CAR16 preparation and original complete128 instrument.
+Its supplied cut EE* tensor I_oldRIGHT has counting rank16384. The
+entire marker-zero work complement and nonzero leakage outside E are
+retained; simply compressing the older full-DATA feedback loses the
+latter source. This echo's physical admission/payment is still open.
+
+For R_E=p epsilon (DE)*(DE), the exact full-RIGHT Book component is
+J_phi=-(128/log(phi)) Tr log(I-2^-20 F_E),
+F_E=pI-2p(sqrt(p)-p)R_E-(sqrt(p)-p)^2 R_E^2.
+On the global periodic coframe scale with fixed actual preparation,
+R_E'=-2R_E. Actual transverse Fourier characters prove R_E nonzero.
+The exact operator inequality gives 0<J_phi'/(-Cost_port')<1/4.
+The finite diagnostic ratio is0.00675086108; for the plus-sign sum,
+the remaining opposite source is approximately+0.00314002678242.
+Neither sign of this particular feedback alone cancels the port source.
+
+Parent substitution: consume BOOK_SOURCE_BINDING Theorem2 and the
+whole-family CAR/Book/causal synthesis at d333307d. This component must
+be retained in its actual residual if physically admitted. The bound
+removes its proposed standalone sufficiency; it does not obstruct the
+distinct whole-address geometric reporter or replace the residual with
+a fitted counterterm. The complete effect/scalarity/first-jet test,
+explicit upstream preparation terms, absolute Book amplitude and actual
+Info/work valuation remain. The supplied image cut is also distinct
+from the original closed full-history return I-B^(2n).
+
+The owned scalar-likelihood binding gives (H_pointer'-dlogNormalizer)/
+log(phi), not Cost_port'-H_pointer'/log(phi). Its raw-weight hypothesis
+is explicit; no Info is inferred merely from normalized probabilities.
+Proof, complete128 operator comparison, both omitted-complement
+controls, exact input pins and independent review live in the new
+packet. Existing all40+2, causal-state and geometric maps are reused.
+No new task, lifecycle/assembly promotion or GR closure. GR_closed=false.

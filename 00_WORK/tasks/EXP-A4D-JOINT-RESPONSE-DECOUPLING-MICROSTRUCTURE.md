@@ -2579,3 +2579,83 @@ source with fixed collar. Rank births and numerical spectral resolution require 
 scope/error controls. This supplies an actual information-source test of
 the missing price map, not a fitted selector, new physical action, repeated
 history census, lifecycle/assembly promotion or GR closure.
+
+
+### 20 October: actual primary prepared cut and full-RIGHT paid-feedback source
+
+Phase: native realization, bounded application inside existing #334.
+Consume the original complete-history likelihood binding, the prepared
+price-feedback operator theorem and the published primary full128 map
+at9ad345ca. The exact missing application is the actual primary
+Schmidt-image cut, with its full oldRIGHT counting multiplicity and
+work complement. No new independent execution or generic proof census.
+
+For E=sqrt(128)C with E*E=I128, use the oldRIGHT-commuting active cut
+EE* tensor I_RIGHT tensor the blank/marker input. The physical preparation
+is the same normalized E-Bell vector. The original complete128 round
+and original costs1/2 give R_E=p epsilon E*Delta E and genuine feedback
+F_E=pI-2p(sqrt(p)-p)R_E-(sqrt(p)-p)^2 R_E^2. Ordinary Book counting trace
+retains chi_RIGHT=128; it is not the rank-one prepared expectation.
+
+Target: transport the owned exact feedback identity to this cut, including
+leakage outside E, then prove a strict source bound on the common
+coframe-scale tangent with E,links,observer,density,ell fixed. At z=2^-20
+and N=chi_RIGHT=128, 0<J_feedback,phi'/(-Cost_port')<1/4 when R_E nonzero.
+Thus this specified feedback component cannot supply the missing
+counterpressure by itself. Other physical prices, actual apparatus
+admission/payment, moving preparation and the raw Book history binding
+remain open. The flat primary preparation has R_E nonzero by its actual
+transverse Fourier characters; no new root search is needed.
+
+Consumer: `constitutive`/`native_sector` same-process source composition.
+Replace a proposed use of the paid marker feedback as the missing
+standalone balancing source by the exact required residual. Separately
+apply the owned complete-code cancellation to the already computed
+pointer source: under the SAME-history likelihood binding the net source
+is (H_pointer'-dlogNormalizer)/log(phi), not Cost_port'-H_pointer'/log(phi).
+Do not select that physical binding or a code by this algebra.
+
+Write paths: new d0_primary_paid_feedback_source_2026-10-20 packet,
+summary/certificate and append-only primary intake. Bounded implementation
+checks the complete128 reference operator, original port identity, full
+RIGHT multiplier, prepared complement and the scale source against direct
+variation. Decisive proof is the operator inequality with exact rational
+constant1/4; numerical application is a diagnostic, not its sign proof.
+No new action, task row, lifecycle or assembly promotion. GR_closed=false.
+
+Integration at d333307d: the consuming parent is now the whole-family
+CAR/Book/causal synthesis, specifically BOOK_SOURCE_BINDING Theorem2's
+complete priced-effect scalarity and first-jet criterion. Reuse its
+geometric reporter and causal-state maps. This application contributes
+one declared echo component to its remaining physical residual; it does
+not identify that echo with the new reporter or original closed-history
+return. Absolute-amplitude and scalar-likelihood bindings keep their
+distinct source formulas and unproved physical selection.
+
+### 20 October: bounded condensed-mathematics lead from user steering
+
+Reuse the existing condensed-history obstruction, native price-naturality,
+variable-record C1 limit and full128 relative-transfer owners. The named
+remaining application is extension of BOOK_SOURCE_BINDING section2's
+finite complete coherent first source, including Q,dQ,E,dE and the raw
+normalizer, through the actual physical history/mesh/clock refinement.
+Its carrier and required all10 source norm remain the original
+`h^-2 raw l1`, not only finite-cylinder or smooth-tangent convergence.
+
+For real/complex amplitudes, inspect Archimedean analytic/liquid modules:
+ordinary derived solidification of usual R is zero (Scholze, Lectures on
+Condensed Mathematics, Corollary0.6.1(iii), arXiv:2605.03658v1).
+Analytic Geometry Proposition0.3.4 and Theorem0.6.5 (arXiv:2605.03655v1)
+supply integration/completion under their actual continuity hypotheses;
+Complex Geometry Proposition0.8.19 (arXiv:2605.11731v1) requires nuclearity
+for its tensor/internal-Hom identification. Finite matrices alone do not
+establish the limit hypothesis.
+
+Smallest decisive applicability check: the owned complete cylinder system
+on one actual adjacent refinement, including the true clock, derivative
+of its normalization, preparation and all retained records. Establish
+first-jet compatibility and a summable bound in the required source norm,
+plus a controlled positive readout denominator. Physical Book valuation,
+Info/work and admission must be supplied independently. This records a
+bounded continuation lead inside the existing owner, not a new execution,
+completion theorem, physical selection or GR promotion.

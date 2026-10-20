@@ -1,0 +1,59 @@
+{
+  "schema": "d0-primary-paid-feedback-source-validation/1",
+  "date": "2026-10-20",
+  "mathematical_snapshot": "4d25c7e9d30effb93a5f27b3d2bbe6500cf31b86",
+  "snapshot_is_local_verification_not_publication": true,
+  "integration_base": "d333307d031123aedf7a49b35a12ce5f7c17fc04",
+  "environment": {
+    "python": "3.11.9",
+    "numpy": "2.2.6",
+    "sympy": "1.12.1",
+    "platform": "Windows-10-10.0.26200-SP0"
+  },
+  "isolated_replay": {
+    "worktree": "C:\\Users\\kmeze\\.codex\\worktrees\\primary-feedback-verify\\d0_15",
+    "head": "4d25c7e9d30effb93a5f27b3d2bbe6500cf31b86",
+    "clean_before": true,
+    "clean_after": true,
+    "exit_code": 0,
+    "stdout": [
+      "PASS actual primary prepared cut, all128 port operator Grams and full oldRIGHT counting",
+      "PASS complete work complement, outside-E leakage and common-scale source",
+      "PASS frozen provenance and exact ratio-bound/carrier/scope interface",
+      "SCOPE: supplied echo/cut source obstruction; full physical Book price and GR remain open."
+    ],
+    "stderr": "",
+    "environment": {
+      "python": "3.11.9",
+      "numpy": "2.2.6",
+      "sympy": "1.12.1",
+      "platform": "Windows-10-10.0.26200-SP0"
+    },
+    "command": "python -B -W error 02_REGISTRY/research/certificates/a4d_primary_paid_feedback_source_check.py"
+  },
+  "repository_gates": {
+    "git_diff_cached_check": "PASS",
+    "validate_repo": "claims=889 assumptions=31 aliases=58 formal_support=183 lean_closure=918\r\nPASS warnings=0",
+    "validate_work": "PASS work_validation: active work plane clean and enforced",
+    "validate_agent_protocol": "BASELINE_FAILURE: FAIL_AGENT_PROTOCOL: gravity assembly: attempt question digest does not match its scope/assumptions"
+  },
+  "review": "REVIEW.md binds independent acceptance to the exact proof, summary, checker, receipt, pins and wrapper.",
+  "validation_budget": "One changed prepared-cut application in a clean isolated worktree and affected repository guards. No unchanged all40, entropy, Lean or unrelated heavy replay.",
+  "scope": {
+    "exact_source_sign_proof": true,
+    "numerical_values_interval_certified": false,
+    "physical_echo_admission": false,
+    "complete_physical_Book_price": false,
+    "GR_closed": false
+  },
+  "publication_provenance_transport": {
+    "reason": "Concurrent append to mutable parent synthesis; retain reviewed input bytes as a snapshot.",
+    "snapshot": "inputs/CAUSAL_BOOK_SOURCE_AT_D333307D.md",
+    "source_ref": "d333307d031123aedf7a49b35a12ce5f7c17fc04",
+    "snapshot_sha256": "3389dcd4c171e5752098bf28c1d1962adff6bb21244a6b0e6b6fbcb2d0264a5b",
+    "all_mathematical_input_bytes_unchanged": true,
+    "wrapper_change": "One declared input path only",
+    "final_pin_closure": "PASS verify_inputs()",
+    "independently_accepted": true
+  }
+}
