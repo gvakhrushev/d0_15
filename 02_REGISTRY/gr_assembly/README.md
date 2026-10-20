@@ -166,9 +166,11 @@ python3 tools/gr_assembly.py attempts volume
 ```
 
 `next` and the dispatcher each obtain one live PR snapshot. Use the one that
-answers the current question. An existing Draft is resumed; a Ready PR awaits
-review. Offline mode prints **unverified planning** and never authorizes a new
-execution. An unavailable live lookup fails closed. These commands do not
+answers the current question. A Draft is resumable only after its merge state
+is known: `dirty` or `behind` requires base reconciliation first, and `unknown`
+fails closed pending a fresh status check. A Ready PR awaits review. Offline
+mode prints **unverified planning** and never authorizes a new execution. An
+unavailable live lookup fails closed. These commands do not
 reserve a task, create branches, message other agents or change statuses.
 If several open PRs claim one task, `next` checks whether they form one direct,
 same-repository branch stack. A stack is reported as
@@ -236,9 +238,11 @@ In this schema, an obligation is the assembly slot; do not create a parallel
 `slots.json`. Add a result node only when it changes an open slot's route,
 readiness or a material substitution decision. New evidence should point to
 the existing research owner by commit/path/SHA. Copy source bytes only when
-they are otherwise unavailable at the pinned Git commit. Active result nodes
-are capped at 52; strengthen an existing node when new evidence supports the
-same scoped result.
+they are otherwise unavailable at the pinned Git commit. The active result
+limit has one source of truth in `contract.json` under
+`registry_budget.max_active_results`; `next` prints the current count and
+remaining capacity. Strengthen an existing node when new evidence supports
+the same scoped result.
 
 The frozen gravity graph preserves all 44 IDs and its complete source bytes.
 `migration` maps each original ID to a searchable `legacy:ID`; unresolved

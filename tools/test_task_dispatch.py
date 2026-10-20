@@ -21,7 +21,7 @@ def pr(number=12, task=TASK, lifecycle="IN_PROGRESS", draft=True, branch=BRANCH)
     return {
         "number": number, "state": "open", "html_url": f"https://github.com/{dispatch.REPO}/pull/{number}",
         "body": (f"Task: `{task}`\n" if task else "") + f"Lifecycle: `{lifecycle}`\n",
-        "draft": draft, "head": {"ref": branch, "sha": "a" * 40},
+        "draft": draft, "mergeable_state": "clean", "head": {"ref": branch, "sha": "a" * 40},
     }
 
 
@@ -77,6 +77,47 @@ class DispatchTests(unittest.TestCase):
                 self.assertIn("exact missing parent substitution", out)
                 self.assertIn("missing application/changed route", out)
                 self.assertNotIn("verdict/PASS-FAIL", out)
+
+    def test_dirty_or_behind_pr_is_reconciled_before_resume(self):
+        for state in ("dirty", "behind"):
+            candidate = pr()
+            candidate["mergeable_state"] = state
+            code, out, err, _ = self.run_dispatch([[candidate]])
+            with self.subTest(state=state):
+                self.assertEqual((code, err), (0, ""))
+                self.assertIn(f"Merge state: {state.upper()}", out)
+                self.assertIn("Update this PR against its base", out)
+                self.assertNotIn("Resume this PR", out)
+
+    def test_unknown_merge_state_is_refreshed_or_fails_closed(self):
+        listing = pr()
+        listing["mergeable_state"] = None
+        detail = {"number": listing["number"], "state": "open", "mergeable_state": "dirty"}
+        results = [
+            subprocess.CompletedProcess([], 0, stdout=json.dumps([[listing]]), stderr=""),
+            subprocess.CompletedProcess([], 0, stdout=json.dumps(detail), stderr=""),
+        ]
+        out, err = io.StringIO(), io.StringIO()
+        with patch.object(dispatch.subprocess, "run", side_effect=results) as gh:
+            with contextlib.redirect_stdout(out), contextlib.redirect_stderr(err):
+                code = dispatch.main([TASK, "--repo-root", str(self.root)])
+        self.assertEqual((code, err.getvalue()), (0, ""))
+        self.assertIn("Merge state: DIRTY", out.getvalue())
+        self.assertNotIn("Resume this PR", out.getvalue())
+        self.assertEqual(gh.call_count, 2)
+
+    def test_unavailable_merge_state_refresh_never_offers_resume(self):
+        listing = pr()
+        listing["mergeable_state"] = None
+        first = subprocess.CompletedProcess([], 0, stdout=json.dumps([[listing]]), stderr="")
+        out, err = io.StringIO(), io.StringIO()
+        with patch.object(dispatch.subprocess, "run", side_effect=[first, FileNotFoundError("gh unavailable")]):
+            with contextlib.redirect_stdout(out), contextlib.redirect_stderr(err):
+                code = dispatch.main([TASK, "--repo-root", str(self.root)])
+        self.assertEqual(code, 2)
+        self.assertIn("merge-state lookup", err.getvalue())
+        self.assertIn("No resume or launch authorized", err.getvalue())
+        self.assertNotIn("Resume this PR", out.getvalue())
 
     def test_exact_metadata_resumes_pr_on_later_page_with_different_branch(self):
         unrelated = pr(task=TASK + "-OTHER", branch="exp/other")
