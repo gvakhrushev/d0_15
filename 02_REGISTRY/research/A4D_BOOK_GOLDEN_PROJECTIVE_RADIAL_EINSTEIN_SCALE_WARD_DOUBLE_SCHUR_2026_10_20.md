@@ -292,3 +292,29 @@ On a given nonflat original Palatini–CAR root of the ALREADY OWNED geometrical
 **Decisive physical next test in EXISTING #334:** The observable and clock projects are now mathematically closed even under moving independent depth rules. Therefore use one literal original Golden LEFT 4D live-row/oldRIGHT controller and test whether its independently selected COMPLETE Book03 \(H+J+R+\mathrm{Cost}-\mathrm{Info}\) assigns a common face multiplier \(\lambda^3H_3(P)\) to the original degree2 Palatini+densitized CAR source, with its real actual absolute pressure/prep/work Euler and a realizable native internal root. If true, use the exact site-radial inverse and the original full nonlinear geometry/physical-volume/G0 soundness/refinement. If false, record the real residual and do NOT call another projective clock observable a law of gravity. \`GR_closed=false\`.
 
 **Reproduction:** \`sources/d0_native_projective_radial_2026-10-20/check_native_23_verifier_blind_book_shape_and_flow.mjs\`. Independent V8 whole-original 33/718/1287 numeric controls verified three heterogeneous asymmetric Cost/Info backgrounds with two completely unrelated moving positive stage filters: \(\|\widetilde P-P\|_\infty\le9.1\cdot10^{-17}\), clock shape error < 1e-15, exact additional scalar Perron scale \(\lambda(\widetilde K)/\lambda(K)=\sqrt{\alpha_2}\), and exact three-flow native derivative (16) vs finite differences error 7.3e-11 at a separate moving physical field. Prior original common-verifier/absolute Book pressure theorems are consumed, not re-claimed as physically selected here.
+
+
+### 6.5. Sharp original *nontrivial* Info-source witness — why the compensated clock is NOT a constant or a fake stress cancellation
+
+At the literal canonical original scene K=pA with ALL primitive Cost=1 and original vertex Info=0, the Perron positive \(\rho_A\) is the positive root of \(\rho^3-359\rho-2574=0\). The stationary original Doob vertex probability is exactly
+\[
+\pi_u=\frac{(\rho_A+n_{z(u)})^{-2}}{\sum_{z\in\{A,B,C\}}n_z(\rho_A+n_z)^{-2}},
+\quad(n_A,n_B,n_C)=(9,11,13).
+\]
+For ORIGINAL native rooted 2-cycle/3-cycle counts, the outdegrees are \((24,22,20)\) and the length-three based closed words at each root are \((286,234,198)\). Therefore the vertex marginals of the TRUE native clock-archive current (16), not any invented field, are
+\[
+\boxed{
+m_{z}:=\sum_{v}\mathcal J^{\rm clock-archive}_{uv}
+=\frac{3(286,234,198)_z}{7722}
+-\frac{2(24,22,20)_z}{718}-\pi_z.
+}\tag{22}
+\]
+Numerically \((\pi_A,\pi_B,\pi_C)=(0.03461770222870017,\;0.03052925381757609,\;0.02712452984218166)\), and
+\[
+\boxed{
+(m_A,m_B,m_C)=(+0.00964104119438865,\,-0.00090149995583893,\,-0.00591175932578996).
+}
+\]
+The fully original weighted scalar total \(9m_A+11m_B+13m_C=0\) exactly, as the common Info/scale Ward requires. But the individual 33 original Info rows are STRICTLY NONZERO in the three genuine vertex zones. This is a rigorous actual original finite countercontrol: the compensated 2/3 clock **removes only absolute scale**, while retaining physical mathematical response to relative distinguishability Info. It cannot be replaced by a zero functional, and it remains an optional OBSERVABLE until the full M1/G0/Book clock selects and prices it.
+
+**Numerical status distinction.** The V8 independent whole-33/718 asymmetric Cost/Info executions of (13)–(21) and the 3-flow derivative independently PASS. The new committed \`.mjs\` is a self-contained replay of these derivations and checks all original path/stage counts; no claim is made here that current GitHub CI has individually executed THAT newly committed script. Neither experiment is evidence of compulsory G0 native actuation or Einstein stationary recovery.
