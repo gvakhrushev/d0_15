@@ -132,28 +132,6 @@ For a scalar Book candidate in which every actual one of the original 8440 close
 
 This is an exact **source-capacity** statement; it does not equate the number of outcome labels or the 24 rank of retained conditional quantum states with the number of genuinely distinct **physical paid score jets**. In particular, a full128 detector can be informationally complete on a tangent space while its proposed scalar Cost−Info pays only one effective field-sensitive score direction.
 
-## 5. The one original physical calculation that decides the remaining hypothesis
-
-Reuse original P25 e(a),U(t) on the **actual admitted programme** and actually paid complete original G0/Book03 history, *not* a new tester. Before freezing preparation/internal modes, compute
-\[
-\partial_x s_\gamma(0),\quad
-\partial_t s_\gamma(0),\quad
-D^2s_\gamma(0),\quad
-\pi_\gamma(0)
-\]
-for **all paid full-history outcomes** (including failures, oldRIGHT, real clocks/work, and an observed-only vs coherent-record normalization as appropriate). If that execution really has a positive scalar Gibbs reduction with the stated regularity, evaluate the one exact tensor
-\[
-A-\beta C
-\]
-and compare the \((xx,xt)\) entries with the independently pinned P25 target \((0,-c)\) under an **already derived** normalization \(c\). Do not choose \(c\) by matching the output.
-
-- If history coframe-score dispersion is zero and all conditional history Hessians PSD, the whole proposed scalar route fails this necessary mixed-source test.
-- If it is nonzero, the exact equality (4) and quantitative constraint (5) are a test, **not** a sufficient Einstein proof; next compare all original 16+24 rows, observer, CAR matter, source Ward and nonlinear uniform refinement.
-- If the native price is genuinely algebra-valued/noncommutative with no proved positive scalar reduction, derive its own operator first/second source. Do not import Gibbs covariance as a physical identity.
-- If selecting actual histories does not mean minimizing over (x,t), retain the stationary Einstein saddle rather than trying to add a positive stabilizer or forbidden field constraint.
-
-This is the smallest parent proof cut: **complete actual history-source covariance (or actual operator analog) on the true P25 tangent**, while preserving the physical distinction between distribution selection and field variation. No new Bloch census, decoder, independent continuum action or strengthened claim status. \`GR_closed=false\`, raw216 open.
-
 
 ## 4b. DECISIVE ORIGINAL-24 CARTAN TEST: at least TWELVE independent paid score-fluctuation directions
 
@@ -184,3 +162,27 @@ Proof: \(cM\) has 12 negative eigenvalues for EITHER sign of \(c\); the inertia 
 This is stronger than merely noting that one pointer is field-blind or matching one nonzero commutator: matching 24 independent *first-source rows* near the root requires the full Jacobian, which carries twelve negative directions. The 8440 history COUNT, all327 scalar current theorem, full128 *quantum-state* tangent rank24 and 128 pointer labels are not substitutes for twelve linearly independent **paid score fluctuations**. If the complete physical Info/clock/work has enough actual independent first jets, or the native action is algebra-valued/noncommutative, or the average microscopic Hessian \(A\) is indefinite, the theorem does not exclude it. No new imposed selector, coefficient or Einstein tensor is inferred.
 
 **Immediate execution gate:** on the SAME original 24-link chart, compute the actual 8440 (or actually different native complete) paid score-jet *Gram/covariance matrix*, INCLUDING preparations, clock, normalization, controller and oldRIGHT charges. First check whether its **exact rank is at least 12**; this is an inexpensive KILL-FIRST discriminator. Only if it passes should one compare all source coefficients and physical Ward/GR refinement. Where the true complete price is operator-valued, derive an operator-source counterpart rather than treating classical covariance as mandatory. This result reuses the already-owned exact original Cartan spectrum; it is NOT a replay or physical admission of the proposed scalar source.
+
+
+## 5. The one original physical calculation that decides the remaining hypothesis
+
+Reuse original P25 e(a),U(t) on the **actual admitted programme** and actually paid complete original G0/Book03 history, *not* a new tester. Before freezing preparation/internal modes, compute
+\[
+\partial_x s_\gamma(0),\quad
+\partial_t s_\gamma(0),\quad
+D^2s_\gamma(0),\quad
+\pi_\gamma(0)
+\]
+for **all paid full-history outcomes** (including failures, oldRIGHT, real clocks/work, and an observed-only vs coherent-record normalization as appropriate). If that execution really has a positive scalar Gibbs reduction with the stated regularity, evaluate the one exact tensor
+\[
+A-\beta C
+\]
+and compare the \((xx,xt)\) entries with the independently pinned P25 target \((0,-c)\) under an **already derived** normalization \(c\). Do not choose \(c\) by matching the output.
+
+- If history coframe-score dispersion is zero and all conditional history Hessians PSD, the whole proposed scalar route fails this necessary mixed-source test.
+- If it is nonzero, the exact equality (4) and quantitative constraint (5) are a test, **not** a sufficient Einstein proof; next compare all original 16+24 rows, observer, CAR matter, source Ward and nonlinear uniform refinement.
+- If the native price is genuinely algebra-valued/noncommutative with no proved positive scalar reduction, derive its own operator first/second source. Do not import Gibbs covariance as a physical identity.
+- If selecting actual histories does not mean minimizing over (x,t), retain the stationary Einstein saddle rather than trying to add a positive stabilizer or forbidden field constraint.
+
+This is the smallest parent proof cut: **complete actual history-source covariance (or actual operator analog) on the true P25 tangent**, while preserving the physical distinction between distribution selection and field variation. No new Bloch census, decoder, independent continuum action or strengthened claim status. \`GR_closed=false\`, raw216 open.
+
