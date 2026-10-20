@@ -1,6 +1,9 @@
 import D0.Representation.OrderMemoryReadout
 import D0.Representation.GoldenOrderInterferometer
 import D0.Foundation.Omega8Center
+import D0.Foundation.EmpiricalTheoryFactorization
+import D0.Foundation.EndogenousActionQuantum
+import D0.Representation.FiniteProtocolClock
 import Mathlib.Data.Matrix.Block
 
 /-!
@@ -217,6 +220,135 @@ theorem originalQ8SameGateInventoryButDifferentMeasuredHistory :
     have bright := hz.2.2
     rw [dark] at h
     exact (ne_of_gt bright) h.symm
+
+
+/-! ## Future-MDL: a single ORIGINAL Q8 chronological bit is irreducible
+
+The two eight-letter native Q8 words have IDENTICAL action multiset
+and length.  The existing Golden order port gives distinct exact
+Born response probabilities. Therefore no encoder that merely stores
+the unordered generator counts can predict the complete future
+comparison. At least TWO future memory classes (one binary bit) are
+necessary; retaining the chronological choice is sufficient.
+
+The original existing finite reversible basis \`register\` explicitly
+makes the stored program label visible at one later comparison. This
+is a typed endogenous future-context witness on the previously-owned
+mathematical action repertoire. Its ACTUAL full G0/Book real-control
+permission and Cost−Info selection remain open.
+-/
+
+/-- Encode the two already-owned native Q8 center programmes, NOT a
+new physical primitive or a third independent M1 checking line. -/
+def nativeQ8ProgramClass (order : Bool) : D0.Foundation.UQuat :=
+  if order then D0.Foundation.qNEG else D0.Foundation.qONE
+
+/-- The existing literal Golden controlled-port probability for the
+original grouped vs ordered Q8 eight-gate word. -/
+def nativeQ8ProgramPort (order : Bool) : ℝ :=
+  let p := D0.primitiveRoot
+  let a := Real.sqrt p
+  (D0.Representation.GoldenOrderInterferometer.output a p
+    (D0.Representation.GoldenOrderInterferometer.q8_center_sign
+      (nativeQ8ProgramClass order)) 1)^2
+
+theorem nativeQ8ProgramPort_grouped :
+    nativeQ8ProgramPort false = 0 := by
+  simpa [nativeQ8ProgramPort, nativeQ8ProgramClass] using
+    D0.Representation.GoldenOrderInterferometer.q8_center_order_golden_detectable.1
+
+theorem nativeQ8ProgramPort_ordered :
+    nativeQ8ProgramPort true = 4*D0.primitiveRoot^3 := by
+  simpa [nativeQ8ProgramPort, nativeQ8ProgramClass] using
+    D0.Representation.GoldenOrderInterferometer.q8_center_order_golden_detectable.2.1
+
+theorem nativeQ8ProgramPort_grouped_ne_ordered :
+    nativeQ8ProgramPort false ≠ nativeQ8ProgramPort true := by
+  rw [nativeQ8ProgramPort_grouped, nativeQ8ProgramPort_ordered]
+  exact ne_of_lt
+    D0.Representation.GoldenOrderInterferometer.q8_center_order_golden_detectable.2.2
+
+/-- A genuinely sufficient predictor MUST distinguish the two source
+programmes, even though their original Q8 gate inventories coincide. -/
+theorem nativeQ8ProgramPort_injective :
+    Function.Injective nativeQ8ProgramPort := by
+  intro x y h
+  cases x <;> cases y
+  · rfl
+  · exact False.elim (nativeQ8ProgramPort_grouped_ne_ordered h)
+  · exact False.elim (nativeQ8ProgramPort_grouped_ne_ordered h.symm)
+  · rfl
+
+/-- Minimal exact outcome-predictive order MEMORY requires at least
+two possible states. This does NOT charge any arbitrary work/clock
+price and does NOT posit a new physical readout primitive. -/
+theorem nativeQ8ProgramFutureMemoryAtLeastTwo {Code : Type}
+    [Fintype Code] (encode : Bool → Code) (decode : Code → ℝ)
+    (correct : ∀ b, decode (encode b) = nativeQ8ProgramPort b) :
+    2 ≤ Fintype.card Code := by
+  have hinj : Function.Injective encode := by
+    intro x y he
+    apply nativeQ8ProgramPort_injective
+    calc
+      nativeQ8ProgramPort x = decode (encode x) := (correct x).symm
+      _ = decode (encode y) := by rw [he]
+      _ = nativeQ8ProgramPort y := correct y
+  simpa using (Fintype.card_le_of_injective encode hinj)
+
+/-- Original endogenous ActionProtocol quantization charges at least
+ONE action unit for changing between the two distinguishable actual
+programme states, IF both states and the change are admitted as the
+physical ActionProtocol carrier. This does NOT select that programme
+or force its preparation in G0. -/
+theorem nativeQ8ProgramDistinctionHasUnitCost
+    {P : D0.Foundation.VerifiabilityNecessity.VerificationProtocol}
+    (A : D0.Foundation.EndogenousActionQuantum.ActionProtocol P)
+    (source : Bool → P.State) (record : P.State → ℝ)
+    (correct : ∀ b, record (source b) = nativeQ8ProgramPort b) :
+    1 ≤ A.action (source false) (source true) := by
+  have hne : source false ≠ source true := by
+    intro eq
+    apply nativeQ8ProgramPort_grouped_ne_ordered
+    calc
+      nativeQ8ProgramPort false = record (source false) := (correct false).symm
+      _ = record (source true) := by rw [eq]
+      _ = nativeQ8ProgramPort true := correct true
+  exact A.action_nontrivial _ _ hne
+
+/-- Existing internal reversible record-writing CNOT, with no new
+step primitive: a Bool source programme and an initially blank record.
+Actual Golden port outcomes above are the future output. -/
+def nativeQ8RecordedProgramFuture :
+    D0.Foundation.EmpiricalTheoryFactorization.FutureExecution where
+  State := Bool × Bool
+  Action := Bool
+  Test := Unit
+  Outcome := ℝ
+  step := fun execute s =>
+    if execute then D0.Representation.FiniteProtocolClock.register s else s
+  observe := fun s _ => nativeQ8ProgramPort s.2
+
+/-- Without the native reversible registration, both original
+programme states have exactly the same CURRENT blank output. -/
+theorem nativeQ8RecordedProgram_same_now :
+    nativeQ8RecordedProgramFuture.observe (false,false) () =
+    nativeQ8RecordedProgramFuture.observe (true,false) () := rfl
+
+/-- After ONE existing reversible record operation, the original
+Q8 chronology choices have distinct native Golden positive output
+laws. Thus present-outcome MDL is unsound but ALL-FUTURE MDL
+provably retains their source-order bit. -/
+theorem nativeQ8RecordedProgram_separated_by_future :
+    nativeQ8RecordedProgramFuture.profile (false,false) ≠
+    nativeQ8RecordedProgramFuture.profile (true,false) := by
+  intro h
+  have hh : nativeQ8ProgramPort false = nativeQ8ProgramPort true := by
+    simpa [nativeQ8RecordedProgramFuture,
+      D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.profile,
+      D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.run,
+      D0.Representation.FiniteProtocolClock.register] using
+      (congrFun (congrFun h [true]) ())
+  exact nativeQ8ProgramPort_grouped_ne_ordered hh
 
 
 end D0.Representation.OrderMemoryControl
