@@ -1,0 +1,38 @@
+[
+  {
+    "L": 8,
+    "iterations": 6,
+    "full_connection_residual_max": 1.3988810110276972e-14,
+    "max_cayley_parameter_over_h": 0.0567706786531076,
+    "nonlinear_Einstein_source_sup_error": 0.02035421576193641,
+    "Lorentz_error": 6.661338147750939e-16,
+    "residual_nonzero_rows_over_threshold": 0
+  },
+  {
+    "L": 16,
+    "iterations": 6,
+    "full_connection_residual_max": 6.978792543854695e-15,
+    "max_cayley_parameter_over_h": 0.06134718154028956,
+    "nonlinear_Einstein_source_sup_error": 0.005544434180902225,
+    "Lorentz_error": 4.440892098500626e-16,
+    "residual_nonzero_rows_over_threshold": 0
+  },
+  {
+    "L": 32,
+    "iterations": 6,
+    "full_connection_residual_max": 2.8818291590757594e-15,
+    "max_cayley_parameter_over_h": 0.06248997797165015,
+    "nonlinear_Einstein_source_sup_error": 0.0016002855865742682,
+    "Lorentz_error": 4.440892098500626e-16,
+    "residual_nonzero_rows_over_threshold": 0
+  },
+  {
+    "L": 64,
+    "iterations": 6,
+    "full_connection_residual_max": 1.891282269683714e-15,
+    "max_cayley_parameter_over_h": 0.06276175860756386,
+    "nonlinear_Einstein_source_sup_error": 0.0005347995141855022,
+    "Lorentz_error": 4.440892098500626e-16,
+    "residual_nonzero_rows_over_threshold": 0
+  }
+]

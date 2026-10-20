@@ -1,0 +1,97 @@
+D0.Geometry.archiveExteriorFrameLift_creator_covariant (L : D0.Geometry.RoleSpace ≃ₗ[ℝ] D0.Geometry.RoleSpace)
+  (v : D0.Geometry.RoleSpace) (ψ : D0.Geometry.ArchiveFockState → ℝ) :
+  (D0.Geometry.archiveExteriorFrameLift L) (D0.Geometry.archiveExteriorCreator v ψ) =
+    D0.Geometry.archiveExteriorCreator (L v) ((D0.Geometry.archiveExteriorFrameLift L) ψ)
+D0.Geometry.archiveExteriorFrameLift_contraction_covariant (L : D0.Geometry.RoleSpace ≃ₗ[ℝ] D0.Geometry.RoleSpace)
+  (α : Module.Dual ℝ D0.Geometry.RoleSpace) (ψ : D0.Geometry.ArchiveFockState → ℝ) :
+  (D0.Geometry.archiveExteriorFrameLift L) ((D0.Geometry.archiveExteriorContraction α) ψ) =
+    (D0.Geometry.archiveExteriorContraction (α ∘ₗ ↑L.symm)) ((D0.Geometry.archiveExteriorFrameLift L) ψ)
+D0.Geometry.archiveExterior_contraction_creator_car (α : Module.Dual ℝ D0.Geometry.RoleSpace)
+  (v : D0.Geometry.RoleSpace) (ψ : D0.Geometry.ArchiveFockState → ℝ) :
+  (D0.Geometry.archiveExteriorContraction α) (D0.Geometry.archiveExteriorCreator v ψ) +
+      D0.Geometry.archiveExteriorCreator v ((D0.Geometry.archiveExteriorContraction α) ψ) =
+    α v • ψ
+D0.Geometry.observerMetric_posDef (n : D0.Geometry.RoleVector) (hn : D0.Geometry.lorentzUnitObserver n) :
+  (D0.Geometry.observerMetric n).PosDef
+D0.Research.CorrelatedCurrentTransition.spectator_gram_retained.{u_1, u_2, u_3} {ι : Type u_1} {ν : Type u_2}
+  {κ : Type u_3} [Fintype ι] [Fintype ν] [Fintype κ] [DecidableEq ι] [DecidableEq ν] [DecidableEq κ] (X : Matrix ι ν ℝ)
+  (V : Matrix κ ν ℝ) (hV : V.transpose * V = 1) : X * V.transpose * (X * V.transpose).transpose = X * X.transpose
+D0.Research.CorrelatedCurrentTransition.alpha_selfadjoint.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι]
+  (B C : Matrix ι ι ℝ) (hB : B.transpose = B) (hC : C.transpose = -C) (hCB : C * B = -(B * C)) :
+  (B * C).transpose = B * C
+D0.Research.CorrelatedCurrentTransition.alpha_square.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι]
+  (B C : Matrix ι ι ℝ) (hB : B * B = 1) (hC : C * C = -1) (hCB : C * B = -(B * C)) : B * C * (B * C) = 1
+D0.Research.CorrelatedCurrentTransition.current_causal_from_Clifford_Gram.{u_4} {E : Type u_4} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] (x y : E) (k : ℝ) (hx : 0 < inner ℝ x x) (hxy : inner ℝ x y = k * inner ℝ x x)
+  (hyy : inner ℝ y y = k * inner ℝ x x) : k ≤ 1
+D0.Research.CorrelatedCurrentTransition.golden_current_norm (a p : ℝ) (ha : a ^ 2 = p) (hp : p + p ^ 2 = 1) :
+  1 - (2 * a * p) ^ 2 = p ^ 6
+D0.Research.CorrelatedCurrentTransition.positive_chart_recurrence_impossible (p h0 h2 h4 h6 h8 : ℝ) (hp : p + p ^ 2 = 1)
+  (hp0 : 0 < p) (h0n : 0 ≤ h0) (h2n : 0 ≤ h2) (h4n : 0 ≤ h4) (h6n : 0 ≤ h6) (h8n : 0 ≤ h8) (hstrict : 0 < h0 ∨ 0 < h2)
+  (hrec : h8 + (164 - 264 * p) * h6 + (1366 - 2208 * p) * h4 + (164 - 264 * p) * h2 + h0 = 0) : False
+D0.Research.CorrelatedCurrentTransition.full_current_curve_derivative (a p : ℝ) (ha : a ^ 2 = p) (hp : p + p ^ 2 = 1) :
+  HasDerivAt (D0.Research.CorrelatedCurrentTransition.currentR a p) (4 * p ^ 3) 0
+D0.Research.CorrelatedCurrentTransition.uniform_heat_source_normalization (Kprime N Z : ℝ) (hK : 0 < Kprime)
+  (hN : N < -1 / 3000) (hZ : 0 < Z) (hZ81 : Z < 81) : Kprime / 486000 < -(Kprime / 2) * (N / Z)
+theorem D0.Research.CorrelatedCurrentTransition.product_current_norm : ∀ (x y : ℝ),
+  x ^ 2 + y ^ 2 = 1 → 1 - (2 * x * y) ^ 2 = (x ^ 2 - y ^ 2) ^ 2 :=
+⋯
+theorem D0.Research.CorrelatedCurrentTransition.golden_chart_coefficients_positive : ∀ (p : ℝ),
+  p + p ^ 2 = 1 → 0 < p → 0 < 164 - 264 * p ∧ 0 < 1366 - 2208 * p :=
+⋯
+theorem D0.Research.CorrelatedCurrentTransition.inputU_derivative : HasDerivAt
+  D0.Research.CorrelatedCurrentTransition.inputU 0 0 :=
+⋯
+theorem D0.Research.CorrelatedCurrentTransition.inputV_derivative : HasDerivAt
+  D0.Research.CorrelatedCurrentTransition.inputV 2 0 :=
+⋯
+theorem D0.Research.CorrelatedCurrentTransition.currentR_at_golden : ∀ (a p : ℝ),
+  D0.Research.CorrelatedCurrentTransition.currentR a p 0 = 2 * a * p :=
+⋯
+theorem D0.Research.CorrelatedCurrentTransition.uniform_heat_rational_margin : 16896 / 2 ^ 30 < 1 / 2700 - 1 / 3000 :=
+⋯
+def D0.Research.CorrelatedCurrentTransition.inputU : ℝ → ℝ :=
+fun t => (1 - t ^ 2) / (1 + t ^ 2)
+def D0.Research.CorrelatedCurrentTransition.inputV : ℝ → ℝ :=
+fun t => 2 * t / (1 + t ^ 2)
+def D0.Research.CorrelatedCurrentTransition.outputX : ℝ → ℝ → ℝ → ℝ :=
+fun a p t => a * D0.Research.CorrelatedCurrentTransition.inputU t - p * D0.Research.CorrelatedCurrentTransition.inputV t
+def D0.Research.CorrelatedCurrentTransition.outputY : ℝ → ℝ → ℝ → ℝ :=
+fun a p t => p * D0.Research.CorrelatedCurrentTransition.inputU t + a * D0.Research.CorrelatedCurrentTransition.inputV t
+def D0.Research.CorrelatedCurrentTransition.currentR : ℝ → ℝ → ℝ → ℝ :=
+fun a p t =>
+  2 * D0.Research.CorrelatedCurrentTransition.outputX a p t * D0.Research.CorrelatedCurrentTransition.outputY a p t
+'D0.Research.CorrelatedCurrentTransition.spectator_gram_retained' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.CorrelatedCurrentTransition.alpha_selfadjoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.CorrelatedCurrentTransition.alpha_square' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.CorrelatedCurrentTransition.current_causal_from_Clifford_Gram' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.CorrelatedCurrentTransition.product_current_norm' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.CorrelatedCurrentTransition.golden_current_norm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.CorrelatedCurrentTransition.golden_chart_coefficients_positive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.CorrelatedCurrentTransition.positive_chart_recurrence_impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.CorrelatedCurrentTransition.inputU_derivative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.CorrelatedCurrentTransition.inputV_derivative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.CorrelatedCurrentTransition.full_current_curve_derivative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.CorrelatedCurrentTransition.currentR_at_golden' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.CorrelatedCurrentTransition.uniform_heat_rational_margin' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.CorrelatedCurrentTransition.uniform_heat_source_normalization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Geometry.archiveExteriorFrameLift_creator_covariant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Geometry.archiveExteriorFrameLift_contraction_covariant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Geometry.archiveExterior_contraction_creator_car' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Geometry.observerMetric_posDef' depends on axioms: [propext, Classical.choice, Quot.sound]

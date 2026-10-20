@@ -1,0 +1,55 @@
+{
+  "axioms": {
+    "D0.Representation.GoldenCoherentMemory.blank_record_evolution": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Representation.GoldenCoherentMemory.fullStep_orthogonal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.FockRecordBinding.golden_full_gate_spacelike_first_grade": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.FockRecordBinding.golden_root_gt_half": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.FockRecordBinding.literal_apparatus_commutant_scalar": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "capsule_sha256": "77a9fbf29ebf1868bd3025873a1d9c35cb42c50b4699b239351f17b5b0ce3326",
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "../02_REGISTRY/research/certificates/a4d_native_fock_record_binding.lean"
+  ],
+  "compiler_exit_code": 0,
+  "declarations": [
+    "D0.Research.FockRecordBinding.literal_apparatus_commutant_scalar",
+    "D0.Research.FockRecordBinding.golden_root_gt_half",
+    "D0.Research.FockRecordBinding.golden_full_gate_spacelike_first_grade",
+    "D0.Representation.GoldenCoherentMemory.fullStep_orthogonal",
+    "D0.Representation.GoldenCoherentMemory.blank_record_evolution"
+  ],
+  "input_sha256": {
+    "03_FORMALIZATION/D0/Core/Phi.lean": "661871661e23ea971e5d50de5c63772db22ecbb5e461640b1f597bb3b6c5e38a",
+    "03_FORMALIZATION/D0/Representation/GoldenCoherentMemory.lean": "6ea993e22c8b7d0b8a93b9537d51893cb4aff45af858d82ec7f9005ead96e2d7",
+    "03_FORMALIZATION/D0/Representation/GoldenOrderInterferometer.lean": "76c7082b4f600f7b178579b8a2a859d6f692c96ce5a769920fb3ff427532292c",
+    "03_FORMALIZATION/D0/Representation/GoldenRelativeChannel.lean": "5f18b847f156d890aefa45f35ab385dc60c930a23781500b2e38926c05c4c782",
+    "03_FORMALIZATION/lake-manifest.json": "4ed211000f753c64c6b1fc155970f6b28c9500763f1ad520d8762ae165ac24fa",
+    "03_FORMALIZATION/lean-toolchain": "54727eec5cba149c18842e6deb5c41b369d66455c93ce135d7d5347c782b2325"
+  },
+  "output_sha256": "8b6526036286f72c1fce08a5682774723541090cce9ffe9af1d75d5580c597ca",
+  "scope": "3 generic research propositions and 2 consumed actual core-gate owners; no supported CORE registration or D0.All claim",
+  "status": "PASS"
+}

@@ -1,0 +1,37 @@
+{
+  "analytic_inputs": {
+    "all_L_heat_source": "A4D_NATIVE_FACTOR_IMBALANCE_REMAINDER.md, (13)-(17), beta=log(2), L>=2",
+    "chronological_frame_covariance": {
+      "equation": "A4D_NATIVE_CHRONOLOGICAL_JOINT_REDUCTION.md (2), (4), (19)",
+      "source_blob": "c7819ef4a5a532b2c3c1da6c9b6c69bf22c049a3",
+      "source_commit": "dfaf7c8df509d5abd83fa60a185ad530feadc9b5"
+    },
+    "flat_einstein_source": "A4D_NATIVE_FACTOR_IMBALANCE_REMAINDER.md, homogeneous identity-link probe; all ten packed slots are zero",
+    "two_step_record_regularity": "A4D_NATIVE_CHRONOLOGICAL_STATIONARY_DESCENT.md, complete c in [-1,1] family"
+  },
+  "check_count": 18,
+  "checks": {
+    "BOTH_VOLUME_FACTORS_ONE": true,
+    "CLOCK_K_CONSTANT_POSITIVE": true,
+    "CLOCK_SEED_NONZERO": true,
+    "DERIVED_POSITIVE_METRIC": true,
+    "EMPTY_MATTER_IS_OUTSIDE_CHRONOLOGY_DOMAIN": true,
+    "FIRST_GRADE_FRAME_LIFT": true,
+    "FROZEN_CONTROL_MATCHES_BASE_NORMALIZATION": true,
+    "FROZEN_MATTER_IS_NOT_THE_FRAME_LIFT": true,
+    "FULL_16_MASK_SEED_UNIT_NORM": true,
+    "GOLDEN_IDENTITIES": true,
+    "LORENTZ_METRIC_FRAME_LIFT": true,
+    "LORENTZ_SHEAR_TRACE_FREE": true,
+    "NORMALIZATION_PRESERVED_ON_ALL_16_GRADES": true,
+    "OBSERVER_N_FRAME_LIFT": true,
+    "POSITIVE_DETERMINANT_FRAME": true,
+    "POSITIVE_METRIC_SHEAR_TRACE_FREE": true,
+    "TWO_RECORDED_FIRST_GRADES_NONZERO": true,
+    "WHITENED_FACTOR_TANGENT": true
+  },
+  "conclusion": "H_PLUS_CHRONOLOGY_HAS_STRICT_POSITIVE_SHEAR_SOURCE; ADDITIONAL_FULL_ACTION_TERMS_REMAIN_OPEN",
+  "global_gr_closure": "OPEN",
+  "physical_admission": "OPEN",
+  "schema": "d0-a4d-shear-chronology-common-lift/1"
+}

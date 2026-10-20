@@ -1997,6 +1997,28 @@
         }
       ],
       "reported_state": "Original bounded Lean terminal submitted for CONTROL acceptance; physical instantiation remains open."
+    },
+    {
+      "id": "lean-primitive-jet-composition",
+      "owner": "PR #342 / WRK-A4D-LEAN-PRIMITIVE-JET-COMPOSITION (original worker)",
+      "statement": "For every finite ordered word in one ring, the endpoint intertwining residual is the exact ordered sum of one-step residuals. The identity holds for a distinct intertwiner at each vertex and in the first-jet ring, retaining both adjacent dI terms. Supplied norm bounds give the word-value estimate; the numerical derivative estimate is proved only for a shared parameter-dependent intertwiner. Branching, comparison and physical primitive admission remain separate supplied hypotheses.",
+      "interface": "word-jet-v1",
+      "outcome": "positive",
+      "kind": "lean",
+      "scope_level": "family",
+      "hypotheses": {
+        "algebraic_domain": "The exact identities quantify over a ring R, a finite ordered word of pairs (V,U), and an arbitrary intertwiner at each vertex. First jets are the defined noncommutative value/derivative ring Jet R.",
+        "supplied_norm_bounds": "Value estimates require NormedRing and NormOneClass, step contractions and supplied residual bounds. The derivative estimate additionally requires nonnegative M and epsilon, supplied step/residual derivative bounds, and one shared parameter-dependent intertwiner; no derivative bound for unequal vertex intertwiners is asserted.",
+        "branch_and_comparison": "Branched/comparison corollaries require separately supplied labels, preparations, tests and carrier/endpoint agreement propositions. No word residual proves those propositions, postselection normalization or physical primitive admission."
+      },
+      "evidence": [
+        {
+          "ref": "9e3073851e9fa59d3564caeb02a8a5cb4d6d936b",
+          "path": "03_FORMALIZATION/D0/Research/PrimitiveJetComposition.lean",
+          "sha256": "4e93661bd8d4f4a8402b9f177fbe0e1e2f8e635adb9622f541ad84abe1499731"
+        }
+      ],
+      "reported_state": "Original bounded ordered-word/jet Lean terminal submitted for CONTROL acceptance; physical instantiation remains open."
     }
   ],
   "applications": [
@@ -2050,6 +2072,34 @@
           "ref": "16b07f9fb6abae4369e2457e28f9a0e20254b992",
           "path": "02_REGISTRY/gr_assembly/reviews/lean-memory-tangent-span-to-mv-slot.md",
           "sha256": "3a0a189ae64e5527334890f06ac8d559c2dd1491af568544afd2a56bde0b3533"
+        }
+      }
+    },
+    {
+      "id": "lean-primitive-jet-composition-to-word-slot",
+      "result": "lean-primitive-jet-composition",
+      "obligation": "primitive_jet_composition",
+      "method": "direct",
+      "consumer_location": "02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md#current-route-to-general-relativity",
+      "hypothesis_map": {
+        "algebraic_domain": {
+          "target_hypothesis": "algebraic_domain"
+        },
+        "supplied_norm_bounds": {
+          "target_hypothesis": "supplied_norm_bounds"
+        },
+        "branch_and_comparison": {
+          "target_hypothesis": "branch_and_comparison"
+        }
+      },
+      "review": {
+        "state": "accepted",
+        "by": "Codex CONTROL independent reviewer (merge_research_intake, 2026-10-20)",
+        "digest": "2fd27f22e6d5da240a116a56a372d01d9605bc03fcd070654fbeacceebe74e2d",
+        "decision": {
+          "ref": "8a49edff2a32810d6fc16379f1efba2ea85b3998",
+          "path": "02_REGISTRY/gr_assembly/reviews/lean-primitive-jet-composition-to-word-slot.md",
+          "sha256": "99deb37f1f922938bc1928ef65eb5262521e17bd7be9356679f49e3604a2565f"
         }
       }
     }

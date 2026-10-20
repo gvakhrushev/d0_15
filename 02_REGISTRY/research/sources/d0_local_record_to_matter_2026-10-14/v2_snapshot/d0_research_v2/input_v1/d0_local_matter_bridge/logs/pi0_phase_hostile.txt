@@ -1,0 +1,3 @@
+PASS_PI0_HOSTILE_PHASE_TEST 330 orbits cover 4096 modes; finite-root shortcut rejected
+
+--- STDERR ---

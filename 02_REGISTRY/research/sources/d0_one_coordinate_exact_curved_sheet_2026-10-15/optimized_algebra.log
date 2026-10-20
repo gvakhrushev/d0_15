@@ -1,0 +1,12 @@
+{
+  "algebra": {
+    "determinant": "(14+z^2+z^-2)^2",
+    "exact_named_conditions": 61,
+    "full_D0_action_closed": false,
+    "inverse_norm": "35/6",
+    "kernel_numerator_nonzeros": 964,
+    "unrestricted_4D_microstructure_closed": false
+  },
+  "scope": "EXACT_NONLINEAR_ONE_COORDINATE_CONNECTION_SHEET_NOT_FULL_D0_OR_FULL_4D_TERMINAL"
+}
+PASS_ONE_COORDINATE_EXACT_CURVED_CONNECTION

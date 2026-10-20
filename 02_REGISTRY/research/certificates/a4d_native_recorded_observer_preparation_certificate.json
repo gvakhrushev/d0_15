@@ -1,0 +1,159 @@
+{
+  "checker_sha256": "e438fd5160de890a6a7d27eac8c1a78efbecc8403a7f1df824f1215eaf658028",
+  "checks": {
+    "actual_curve_complete_normalization": 1,
+    "actual_curve_no_output_dropped": 1,
+    "actual_density_derivative": 1,
+    "actual_tensor_reduction": 1,
+    "all_L_mean_identity": 1,
+    "all_exterior_blade_gram_minors": 16,
+    "all_exterior_modes_remain": 1,
+    "all_sixteen_pairing_derivative_entries": 1,
+    "complete_generic_normalization_derivative": 1,
+    "complete_positive_observer_eigenbasis": 4,
+    "complex_coordinate_identity_only": 1,
+    "declared_role_order_current": 1,
+    "diagonal_and_mixed_coefficients": 1,
+    "entire_curve_has_constant_determinant": 1,
+    "entire_input_curve_normalized": 1,
+    "exact_observer_volume": 1,
+    "exact_state_derived_observer_form": 1,
+    "explicit_interval_lower_bounds": 1,
+    "full_fourier_nonnegative_spectrum": 256,
+    "full_heat_mean_derivative": 1,
+    "generic_full_real_state_determinant": 1,
+    "golden_relations": 1,
+    "literal_full_gate": 1,
+    "nonzero_volume_preserving_shape": 1,
+    "pairing_trace_not_coordinate_trace": 1,
+    "quantitative_faithful_sector_brackets": 1,
+    "quantitative_high_temperature_lower_bound": 1,
+    "rank_one_has_no_timelike_normalization": 1,
+    "reciprocal_faithful_shape_eigenvalue": 1,
+    "retained_record_null_directions": 1,
+    "same_gate_rank_one_boundary": 1,
+    "spectral_norm_bound": 1,
+    "spectral_norm_is_maximum_absolute_eigenvalue": 1,
+    "unbounded_faithful_shape_eigenvalue": 1
+  },
+  "exact_control_count": 307,
+  "executed_false_ledgers": [
+    {
+      "name": "explicit_density_readout_full_real_faithful_sector",
+      "rejected_before_mathematical_replay": true
+    },
+    {
+      "name": "actual_retained_state_sets_existing_observer_argument",
+      "rejected_before_mathematical_replay": true
+    },
+    {
+      "name": "normalized_actual_gate_curve_and_nonzero_pairing_derivative",
+      "rejected_before_mathematical_replay": true
+    },
+    {
+      "name": "full_sixteen_grade_heat_binding_test_analytic",
+      "rejected_before_mathematical_replay": true
+    },
+    {
+      "name": "finite_high_temperature_nonstationarity_with_zero_remainder",
+      "rejected_before_mathematical_replay": true
+    },
+    {
+      "name": "whole_gate_interface_faithful_or_uniformly_elliptic",
+      "rejected_before_mathematical_replay": true
+    },
+    {
+      "name": "readout_null_archive_directions_discarded_or_declared_gauge",
+      "rejected_before_mathematical_replay": true
+    },
+    {
+      "name": "Pauli_role_readout_or_heat_pairing_physically_admitted",
+      "rejected_before_mathematical_replay": true
+    },
+    {
+      "name": "all_ten_metric_components_or_24_link_equations_solved",
+      "rejected_before_mathematical_replay": true
+    },
+    {
+      "name": "high_temperature_bound_is_fixed_beta_refinement_theorem",
+      "rejected_before_mathematical_replay": true
+    },
+    {
+      "name": "native_F_source_Ward_joint_stationarity_or_GR_derived",
+      "rejected_before_mathematical_replay": true
+    },
+    {
+      "name": "T0_T3_44_nodes_or_original_parent_terminal_closed",
+      "rejected_before_mathematical_replay": true
+    },
+    {
+      "name": "proof_sha256",
+      "rejected_before_mathematical_replay": true
+    },
+    {
+      "name": "checker_sha256",
+      "rejected_before_mathematical_replay": true
+    },
+    {
+      "name": "lean_receipt_sha256",
+      "rejected_before_mathematical_replay": true
+    },
+    {
+      "name": "input_head",
+      "rejected_before_mathematical_replay": true
+    }
+  ],
+  "executed_mathematical_mutations": [
+    {
+      "name": "lost_tensor_mixing",
+      "rejected_by_mathematical_assertion": true
+    },
+    {
+      "name": "wrong_observer_normalization",
+      "rejected_by_mathematical_assertion": true
+    },
+    {
+      "name": "normalizer_derivative_missing",
+      "rejected_by_mathematical_assertion": true
+    },
+    {
+      "name": "wrong_off_diagonal_weight",
+      "rejected_by_mathematical_assertion": true
+    },
+    {
+      "name": "forgot_record_and_used_pure_state",
+      "rejected_by_mathematical_assertion": true
+    },
+    {
+      "name": "wrong_same_gate_input_curve",
+      "rejected_by_mathematical_assertion": true
+    }
+  ],
+  "finite_Fourier_L": 4,
+  "heat_estimate_analytic_not_Lean": true,
+  "input_head": "80462afde4668fc822a01a70c2e571ce36ecd64e",
+  "lean": {
+    "axiom_reports": 25,
+    "compiled_propositions": 22,
+    "physical_scope_open": true,
+    "source_pins": 14
+  },
+  "lean_receipt_sha256": "62feb6c9536351481e990921ac5cd7931c4ee5bcfa347ecb297c5b4c1f3344fd",
+  "proof_sha256": "d045c5980c99539e647eff71ff792fe20ae2c98931fb6f012de998a3c538ca12",
+  "retained_mode_count": 4096,
+  "schema": "d0-native-recorded-observer-preparation/1",
+  "scope": {
+    "Pauli_role_readout_or_heat_pairing_physically_admitted": false,
+    "T0_T3_44_nodes_or_original_parent_terminal_closed": false,
+    "actual_retained_state_sets_existing_observer_argument": true,
+    "all_ten_metric_components_or_24_link_equations_solved": false,
+    "explicit_density_readout_full_real_faithful_sector": true,
+    "finite_high_temperature_nonstationarity_with_zero_remainder": true,
+    "full_sixteen_grade_heat_binding_test_analytic": true,
+    "high_temperature_bound_is_fixed_beta_refinement_theorem": false,
+    "native_F_source_Ward_joint_stationarity_or_GR_derived": false,
+    "normalized_actual_gate_curve_and_nonzero_pairing_derivative": true,
+    "readout_null_archive_directions_discarded_or_declared_gauge": false,
+    "whole_gate_interface_faithful_or_uniformly_elliptic": false
+  }
+}

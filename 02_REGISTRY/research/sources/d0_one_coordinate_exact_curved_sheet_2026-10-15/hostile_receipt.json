@@ -1,0 +1,26 @@
+{
+  "status": "PASS_EXECUTED_OPERATOR_MUTATIONS",
+  "results": [
+    {
+      "mutation": "flip_native_star_sign",
+      "rejected_by": "literal_star_square"
+    },
+    {
+      "mutation": "remove_inverse_edge_sign",
+      "rejected_by": "physical_placement_is_transposed_owner_symbol"
+    },
+    {
+      "mutation": "wrong_shared_link_polarization",
+      "rejected_by": "physical_placement_is_transposed_owner_symbol"
+    },
+    {
+      "mutation": "invert_wrong_transpose",
+      "rejected_by": "left_inverse_every_Laurent_coefficient"
+    },
+    {
+      "mutation": "wrong_scalar_resolvent",
+      "rejected_by": "not a Laurent numerator"
+    }
+  ],
+  "scope": "No interval-existence or full physical claim is obtained merely from rejecting mutants."
+}

@@ -1,0 +1,8 @@
+REJECTED_ACTUAL_MUTANT wrong_pi0_normalization
+REJECTED_ACTUAL_MUTANT omit_density_normalization
+REJECTED_ACTUAL_MUTANT wrong_metric_horizontal_scale
+REJECTED_ACTUAL_MUTANT discard_half_the_Fock_trace
+REJECTED_ACTUAL_MUTANT omit_archive_phase
+REJECTED_ACTUAL_MUTANT reverse_thermal_variance_sign
+
+--- STDERR ---

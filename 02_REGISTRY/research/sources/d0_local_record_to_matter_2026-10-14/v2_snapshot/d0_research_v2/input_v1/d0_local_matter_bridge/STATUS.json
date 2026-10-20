@@ -1,0 +1,52 @@
+{
+  "schema": "d0-local-research-status/1",
+  "date": "2026-10-14",
+  "version": 1,
+  "execution_mode": "LOCAL_USER_AUTHORIZED",
+  "archive_is_current_repository_snapshot": false,
+  "historical_remote_head_not_verified_now": "6e1662d4840c58fae118a35c344dfedddea3e3b2",
+  "GitHub_reads_in_this_work_session": false,
+  "GitHub_writes": false,
+  "CI_claimed": false,
+  "Lean_compilation": false,
+  "exact_algebra_checks": 1048,
+  "named_negative_controls": 7,
+  "actual_mutated_programs_rejected": 6,
+  "full_local_operator_derivatives": {
+    "metric": 10,
+    "linear_link": 64,
+    "carrier_dimension": 256
+  },
+  "interval_existence": {
+    "L": 8,
+    "box_radius": "1e-12",
+    "contraction_bound": "1e-6",
+    "positive_metric": true,
+    "spectral_shell_gap": true
+  },
+  "mathematical_results": [
+    "Zero one-point CAR current does not imply zero kinetic metric source.",
+    "For the specified H+normalized-quadratic-R functional, all local metric and stated linear-link Euler rows vanish at a certified L=8 root, and the normalized pure field is an eigenstate.",
+    "The positive G chart has an explicit ten-dimensional retained-observer Lorentz readout.",
+    "Finite sources depend on modal second moments, not equality to a full Gibbs state.",
+    "The fixed-occupation homogeneous moment equation is strictly convex and has the stated moment-polytope criterion.",
+    "A stationary family exists for all sufficiently large L in the stated flat Hodge class, with g_limit and O(L^-2) corrections.",
+    "The full normalized-matter critical point is not promoted to a stable joint minimum.",
+    "The horizontal Euler row transformation has nonzero curvature; it is not automatic action elimination.",
+    "The diagnostic equal-pi0 first-winding shell is an exposed moment face; its floating near-roots are not finite Gibbs roots."
+  ],
+  "unproved": {
+    "native_pi0_minimal_closure_to_quadratic_R_admission": true,
+    "native_occupation_or_purification_preparation": true,
+    "shared_state_with_actual_chronological_record_J": true,
+    "other_D0_action_terms_and_affine_shift_sources": true,
+    "physical_Ward_Noether_identity": true,
+    "native_ArchiveProjection_AF_refinement_compatibility": true,
+    "curved_stationary_solutions_and_Einstein_response": true,
+    "soundness_recovery_and_empirical_matter_identification": true
+  },
+  "retired_tasks": [],
+  "claims_promoted": [],
+  "validation_summary": "PASS",
+  "source_provenance": "User-supplied pi0 statements, mathematical definitions quoted in this conversation, and locally mounted early tomes. Not a live owner audit."
+}

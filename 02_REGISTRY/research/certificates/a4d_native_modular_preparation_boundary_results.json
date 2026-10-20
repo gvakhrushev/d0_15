@@ -1,0 +1,75 @@
+{
+  "axioms": {
+    "D0.Bridge.tomita_modular_flow_conditional": [],
+    "D0.Representation.GoldenCoherentMemory.blank_record_evolution": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.ModularPreparationBoundary.blank_zero_output": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.ModularPreparationBoundary.golden_columns_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.ModularPreparationBoundary.isometric_eigenvector_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.ModularPreparationBoundary.separating_input_output": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "capsule": "02_REGISTRY/research/certificates/a4d_native_modular_preparation_boundary.lean",
+  "capsule_sha256": "d7332cf68db580c1a6513491f84faaf0aeead22ca352bcd1cab6b098aa22326b",
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "../02_REGISTRY/research/certificates/a4d_native_modular_preparation_boundary.lean"
+  ],
+  "command_cwd": "03_FORMALIZATION",
+  "common_native_preparation_or_GR_derived": false,
+  "compiler_exit_code": 0,
+  "declarations": [
+    "D0.Research.ModularPreparationBoundary.isometric_eigenvector_zero",
+    "D0.Research.ModularPreparationBoundary.golden_columns_zero",
+    "D0.Research.ModularPreparationBoundary.blank_zero_output",
+    "D0.Research.ModularPreparationBoundary.separating_input_output"
+  ],
+  "input_head": "8207558224ee7c419d58f1f468d01b1187e21951",
+  "matrix_logarithm_Gibbs_reconstruction_formalized": false,
+  "output": "02_REGISTRY/research/certificates/a4d_native_modular_preparation_boundary_output.txt",
+  "output_sha256": "05bcf829389c0addaa59eea0ee972174cbc9a8c1d4a6bf2804f6a80c93d6f5a3",
+  "printed_owner_declarations": [
+    "D0.Bridge.BridgeAssumption.TomitaModularFlow",
+    "D0.Bridge.tomita_modular_flow_conditional",
+    "D0.Dynamics.T",
+    "D0.Representation.GoldenCoherentMemory.blank_record_evolution"
+  ],
+  "source_sha256": {
+    "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d",
+    "01_BOOKS/BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md": "592bbbb1dae9cc599df2eef9cabf117b19f8566d755ad072b77beb04624271d7",
+    "02_REGISTRY/research/A4D_NATIVE_CONSTRAINED_PRICE_SOURCE.md": "e2615abad73460950050ce529f45979b07c4ca5e011bfc203f9180a0f08674f6",
+    "03_FORMALIZATION/D0/Bridge/TomitaTakesakiBridge.lean": "ade7c029d9a289d0be5b76e1ae90ca3fac06ee5cbe18cc184f492e355ed2d6b7",
+    "03_FORMALIZATION/D0/Core/Phi.lean": "661871661e23ea971e5d50de5c63772db22ecbb5e461640b1f597bb3b6c5e38a",
+    "03_FORMALIZATION/D0/Dynamics/ToralAutomorphism.lean": "c54784e5be5c24c2472fd3df3dbe37e3f7317e57a722ea22534639af693190cf",
+    "03_FORMALIZATION/D0/Representation/GoldenCoherentMemory.lean": "6ea993e22c8b7d0b8a93b9537d51893cb4aff45af858d82ec7f9005ead96e2d7",
+    "03_FORMALIZATION/D0/Representation/GoldenOrderInterferometer.lean": "76c7082b4f600f7b178579b8a2a859d6f692c96ce5a769920fb3ff427532292c",
+    "03_FORMALIZATION/D0/Representation/GoldenRelativeChannel.lean": "5f18b847f156d890aefa45f35ab385dc60c930a23781500b2e38926c05c4c782"
+  },
+  "status": "PASS",
+  "supported_D0_tree": "fd8dfc359d23c9bd79ca23eeed7c045ce9c68c6b",
+  "toolchain_sha256": {
+    "03_FORMALIZATION/lake-manifest.json": "4ed211000f753c64c6b1fc155970f6b28c9500763f1ad520d8762ae165ac24fa",
+    "03_FORMALIZATION/lakefile.lean": "7a49cbade1c863e91b5cdc0dff0dddd8a272a3da94ef24200c6e3683276273e9",
+    "03_FORMALIZATION/lean-toolchain": "54727eec5cba149c18842e6deb5c41b369d66455c93ce135d7d5347c782b2325"
+  }
+}

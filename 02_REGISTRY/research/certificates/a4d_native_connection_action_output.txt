@@ -1,0 +1,56 @@
+D0.Gauge.discreteYangMillsAction {ι κidx g : Type} [Fintype ι] [Fintype κidx] (Killing : g → g → ℝ)
+  (K : Matrix ι κidx g) : ℝ
+D0.Gauge.discreteYangMillsAction_nonnegative_of_killing_nonpos {ι κidx g : Type} [Fintype ι] [Fintype κidx]
+  (Killing : g → g → ℝ) (K : Matrix ι κidx g) (hKilling : ∀ (x : g), Killing x x ≤ 0) :
+  discreteYangMillsAction Killing K ≥ 0
+D0.Gauge.matrix_rep_yang_mills_action_nonnegative_of_skew {i j k : Type} [Fintype i] [Fintype j] [Fintype k]
+  [DecidableEq k] (K : Matrix i j (Matrix k k ℝ)) (hK : ∀ (a : i) (b : j), Matter.isSkew (K a b)) :
+  matrixRepYangMillsAction K ≥ 0
+D0.Gauge.exact_bianchi_identity_replaced_by_graded_incidence_closure :
+  exactBianchiIdentityReplacedByGradedIncidenceClosure
+def D0.Gauge.exactBianchiIdentityReplacedByGradedIncidenceClosure : Prop :=
+∀ {k : Type} [inst : Fintype k] [DecidableEq k] (D A : Matrix k k ℝ),
+  Matter.isSkew D → Matter.isSkew A → Matter.isSkew (matrixRepCurvature D A)
+D0.Gauge.FiniteSeamMap (n : Type) [Fintype n] : Type
+'D0.Research.NativeConnectionAction.matrix_action_is_trace_instance' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeConnectionAction.matrix_action_smul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeConnectionAction.matrix_action_singleton' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeConnectionAction.matrix_action_polarization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeConnectionAction.matrix_action_first_variation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeConnectionAction.seam_action_smul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeConnectionAction.zero_curvature_path_stationary' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeConnectionAction.actual_transport_smul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeConnectionAction.actual_transport_gram_smul' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeConnectionAction.coframe_blind_contrast' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeConnectionAction.coframe_blind_variation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeConnectionAction.coframe_blind_stationary_value_set' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeConnectionAction.homothetic_physical_contrast' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeConnectionAction.calibrated_contrast_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeConnectionAction.lorentzSix_is_tangent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeConnectionAction.lorentzSix_trace_action' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeConnectionAction.euclidean_skew_loses_boosts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeConnectionAction.lorentz_null_value_not_stationary' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeConnectionAction.invariant_quadratic_positive_only_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeConnectionAction.continuous_orbit_contraction_value' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

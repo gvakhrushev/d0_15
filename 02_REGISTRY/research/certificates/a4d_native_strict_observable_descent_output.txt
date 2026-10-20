@@ -1,0 +1,124 @@
+D0.Research.NativeStrictObservableDescent.toBase_surjective (n : ℕ) :
+  Function.Surjective (D0.Research.NativeStrictObservableDescent.toBase n)
+'D0.Research.NativeStrictObservableDescent.toBase_surjective' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.NativeStrictObservableDescent.fromBase_compatible.{u_1} {α : Type u_1} (f : D0.ArchivePoints 0 → α) :
+  D0.Research.NativeStrictObservableDescent.Compatible (D0.Research.NativeStrictObservableDescent.fromBase f)
+'D0.Research.NativeStrictObservableDescent.fromBase_compatible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeStrictObservableDescent.compatible_factors_through_base.{u_1} {α : Type u_1}
+  (F : (n : ℕ) → D0.ArchivePoints n → α) (hF : D0.Research.NativeStrictObservableDescent.Compatible F) (n : ℕ)
+  (x : D0.ArchivePoints n) : F n x = F 0 (D0.Research.NativeStrictObservableDescent.toBase n x)
+'D0.Research.NativeStrictObservableDescent.compatible_factors_through_base' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeStrictObservableDescent.compatible_iff_base_pullback.{u_1} {α : Type u_1}
+  (F : (n : ℕ) → D0.ArchivePoints n → α) :
+  D0.Research.NativeStrictObservableDescent.Compatible F ↔ ∃ f, F = D0.Research.NativeStrictObservableDescent.fromBase f
+'D0.Research.NativeStrictObservableDescent.compatible_iff_base_pullback' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeStrictObservableDescent.compatible_same_base_ext.{u_1} {α : Type u_1}
+  (F G : (n : ℕ) → D0.ArchivePoints n → α) (hF : D0.Research.NativeStrictObservableDescent.Compatible F)
+  (hG : D0.Research.NativeStrictObservableDescent.Compatible G) (h0 : F 0 = G 0) : F = G
+'D0.Research.NativeStrictObservableDescent.compatible_same_base_ext' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeStrictObservableDescent.fromBase_injective.{u_1} {α : Type u_1} :
+  Function.Injective D0.Research.NativeStrictObservableDescent.fromBase
+'D0.Research.NativeStrictObservableDescent.fromBase_injective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeStrictObservableDescent.same_base_fiber_indistinguishable.{u_1} {α : Type u_1}
+  (F : (n : ℕ) → D0.ArchivePoints n → α) (hF : D0.Research.NativeStrictObservableDescent.Compatible F) (n : ℕ)
+  (x y : D0.ArchivePoints n)
+  (hxy : D0.Research.NativeStrictObservableDescent.toBase n x = D0.Research.NativeStrictObservableDescent.toBase n y) :
+  F n x = F n y
+'D0.Research.NativeStrictObservableDescent.same_base_fiber_indistinguishable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeStrictObservableDescent.base_has_sixteen_points : Fintype.card (D0.ArchivePoints 0) = 16
+'D0.Research.NativeStrictObservableDescent.base_has_sixteen_points' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeStrictObservableDescent.compatible_boolean_family_count :
+  Fintype.card (D0.ArchivePoints 0 → Bool) = 65536
+'D0.Research.NativeStrictObservableDescent.compatible_boolean_family_count' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeStrictObservableDescent.first_birth_and_zero_same_actual_parent :
+  D0.archiveProjection 0 D0.Research.NativeStrictObservableDescent.birthOne =
+    D0.archiveProjection 0 (D0.Research.NativeStrictObservableDescent.zeroAt 1)
+'D0.Research.NativeStrictObservableDescent.first_birth_and_zero_same_actual_parent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeStrictObservableDescent.fresh_test_distinguishes_actual_birth :
+  D0.Research.NativeStrictObservableDescent.freshTest D0.Research.NativeStrictObservableDescent.birthOne = true ∧
+    D0.Research.NativeStrictObservableDescent.freshTest (D0.Research.NativeStrictObservableDescent.zeroAt 1) = false
+'D0.Research.NativeStrictObservableDescent.fresh_test_distinguishes_actual_birth' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeStrictObservableDescent.fresh_test_has_no_base_pullback :
+  ¬∃ f, D0.Research.NativeStrictObservableDescent.freshTest = fun x => f (D0.archiveProjection 0 x)
+'D0.Research.NativeStrictObservableDescent.fresh_test_has_no_base_pullback' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeStrictObservableDescent.fresh_test_has_no_strict_family :
+  ¬∃ F,
+      D0.Research.NativeStrictObservableDescent.Compatible F ∧ F 1 = D0.Research.NativeStrictObservableDescent.freshTest
+'D0.Research.NativeStrictObservableDescent.fresh_test_has_no_strict_family' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeStrictObservableDescent.birthThread_coherent (n : ℕ) :
+  D0.archiveProjection n (D0.Research.NativeStrictObservableDescent.birthThread (n + 1)) =
+    D0.Research.NativeStrictObservableDescent.birthThread n
+'D0.Research.NativeStrictObservableDescent.birthThread_coherent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeStrictObservableDescent.zeroThread_coherent (n : ℕ) :
+  D0.archiveProjection n (D0.Research.NativeStrictObservableDescent.zeroAt (n + 1)) =
+    D0.Research.NativeStrictObservableDescent.zeroAt n
+'D0.Research.NativeStrictObservableDescent.zeroThread_coherent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeStrictObservableDescent.two_actual_records_same_base_distinct :
+  ↑D0.Research.NativeStrictObservableDescent.actualBirthRecord 0 =
+      ↑D0.Research.NativeStrictObservableDescent.actualZeroRecord 0 ∧
+    D0.Research.NativeStrictObservableDescent.actualBirthRecord ≠
+      D0.Research.NativeStrictObservableDescent.actualZeroRecord
+'D0.Research.NativeStrictObservableDescent.two_actual_records_same_base_distinct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeStrictObservableDescent.all_strict_readings_miss_actual_record_difference.{u_1} {α : Type u_1}
+  (F : (n : ℕ) → D0.ArchivePoints n → α) (hF : D0.Research.NativeStrictObservableDescent.Compatible F) (n : ℕ) :
+  F n (↑D0.Research.NativeStrictObservableDescent.actualBirthRecord n) =
+    F n (↑D0.Research.NativeStrictObservableDescent.actualZeroRecord n)
+'D0.Research.NativeStrictObservableDescent.all_strict_readings_miss_actual_record_difference' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.archive_projection_surjective (n : ℕ) : Function.Surjective (D0.archiveProjection n)
+'D0.archive_projection_surjective' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.archiveFintypeDiagram_succ (n : ℕ) :
+  D0.archiveFintypeDiagram.map (CategoryTheory.homOfLE ⋯).op = FintypeCat.homMk (D0.archiveProjection n)
+'D0.archiveFintypeDiagram_succ' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.CondensedAnchor.readout_factors_through_finite_level.{u_1, u_2} (S : Profinite) {α : Type u_1}
+  (f : LocallyConstant (↑S.toTop) α) : ∃ j g, f = LocallyConstant.comap (TopCat.Hom.hom (S.asLimitCone.π.app j).hom) g
+'D0.CondensedAnchor.readout_factors_through_finite_level' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.Research.NativeStrictObservableDescent.compatible_ext_of_equal_at_any_level.{u_1} {α : Type u_1}
+  (F G : (n : ℕ) → D0.ArchivePoints n → α) (hF : D0.Research.NativeStrictObservableDescent.Compatible F)
+  (hG : D0.Research.NativeStrictObservableDescent.Compatible G) (n : ℕ) (hn : F n = G n) : F = G
+'D0.Research.NativeStrictObservableDescent.compatible_ext_of_equal_at_any_level' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeStrictObservableDescent.fresh_tail_persists_from_its_birth (k : ℕ)
+  (x : D0.ArchivePoints (k + 1 + 1)) :
+  D0.Research.NativeStrictObservableDescent.freshTail (k + 1) x =
+    D0.Research.NativeStrictObservableDescent.freshTail k (D0.archiveProjection (k + 1) x)
+'D0.Research.NativeStrictObservableDescent.fresh_tail_persists_from_its_birth' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeStrictObservableDescent.fresh_tail_starts_with_new_test :
+  D0.Research.NativeStrictObservableDescent.freshTail 0 = D0.Research.NativeStrictObservableDescent.freshTest
+'D0.Research.NativeStrictObservableDescent.fresh_tail_starts_with_new_test' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

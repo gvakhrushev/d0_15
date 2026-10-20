@@ -1,0 +1,133 @@
+/Users/grigorijvahrusev/.codex/worktrees/d0-native-source/d0_15/02_REGISTRY/research/certificates/a4d_native_joint_adjoint_source.lean:117:0: warning: automatically included section variable(s) unused in theorem `D0.Research.JointAdjointSource.projection_tangent_diagonal_zero`:
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/Users/grigorijvahrusev/.codex/worktrees/d0-native-source/d0_15/02_REGISTRY/research/certificates/a4d_native_joint_adjoint_source.lean:161:0: warning: automatically included section variable(s) unused in theorem `D0.Research.JointAdjointSource.projection_tangent_generator_skew`:
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/Users/grigorijvahrusev/.codex/worktrees/d0-native-source/d0_15/02_REGISTRY/research/certificates/a4d_native_joint_adjoint_source.lean:183:0: warning: automatically included section variable(s) unused in theorem `D0.Research.JointAdjointSource.trace_commutator_zero`:
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/Users/grigorijvahrusev/.codex/worktrees/d0-native-source/d0_15/02_REGISTRY/research/certificates/a4d_native_joint_adjoint_source.lean:187:0: warning: automatically included section variable(s) unused in theorem `D0.Research.JointAdjointSource.trace_commutator_pairing`:
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/Users/grigorijvahrusev/.codex/worktrees/d0-native-source/d0_15/02_REGISTRY/research/certificates/a4d_native_joint_adjoint_source.lean:202:0: warning: automatically included section variable(s) unused in theorem `D0.Research.JointAdjointSource.gram_stress_two_forms`:
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/Users/grigorijvahrusev/.codex/worktrees/d0-native-source/d0_15/02_REGISTRY/research/certificates/a4d_native_joint_adjoint_source.lean:217:0: warning: automatically included section variable(s) unused in theorem `D0.Research.JointAdjointSource.trace_projector_sandwich`:
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/Users/grigorijvahrusev/.codex/worktrees/d0-native-source/d0_15/02_REGISTRY/research/certificates/a4d_native_joint_adjoint_source.lean:256:0: warning: automatically included section variable(s) unused in theorem `D0.Research.JointAdjointSource.feedback_resolvent_support_balance`:
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+theorem D0.Geometry.archive_weighted_hodge_dirac_owner : D0.Geometry.formDegreeCount4D = 5 ∧
+  Fintype.card D0.Geometry.CubicalCellType = 16 ∧
+    D0.Geometry.DegreePreservingLaplacian true ∧ Fintype.card D0.Role = 4 :=
+⟨rfl, ⟨D0.Geometry.card_archive_fock_state, ⟨rfl, D0.card_role⟩⟩⟩
+theorem D0.Cosmology.feedback_variation_universal_source : ∀ (S : D0.Cosmology.FeedbackVariationSource),
+  S.resolventFinite = true →
+    S.sourceFinite = true →
+      S.sourceFromInternalFeedback = true →
+        (S.resolventFinite && S.sourceFinite && decide (S.sourceFromInternalFeedback = true)) = true :=
+fun S hres hsrc hint =>
+  of_eq_true
+    (Eq.trans
+      (congrFun'
+        (congrArg Eq
+          (Eq.trans
+            (congr (congrArg and (Eq.trans (congr (congrArg and hres) hsrc) (Bool.and_self true)))
+              (Eq.trans
+                (Decidable.decide.congr_simp (S.sourceFromInternalFeedback = true) True
+                  (Eq.trans (congrFun' (congrArg Eq hint) true) (eq_self true)))
+                (decide_true instDecidableTrue)))
+            (Bool.and_self true)))
+        true)
+      (eq_self true))
+def D0.Geometry.archiveSolderedCodifferential : {N : ℕ} →
+  D0.Geometry.AffineCartanConnection N ℝ D0.Geometry.RoleSpace →
+    D0.Geometry.LocalCoframeField N →
+      (D0.Geometry.ArchiveRolePhaseGroup N → D0.Geometry.RoleVector) →
+        D0.Geometry.ArchiveCochain N → D0.Geometry.ArchiveCochain N :=
+fun {N} A e n ψ p => ∑ r, -D0.Geometry.archiveSolderedAnnihilateDirection A e n r ψ p
+D0.Geometry.archiveSolderedForwardDifferential_frame {N : ℕ} (h : D0.Geometry.AffineNodeGauge N ℝ D0.Geometry.RoleSpace)
+  (A : D0.Geometry.AffineCartanConnection N ℝ D0.Geometry.RoleSpace) (e e' : D0.Geometry.LocalCoframeField N)
+  (ψ : D0.Geometry.ArchiveCochain N)
+  (hleg :
+    ∀ (r : D0.Role) (x : D0.Geometry.ArchiveRolePhaseGroup N),
+      D0.Geometry.solderLegVector N e' x r = (h x).lin (D0.Geometry.solderLegVector N e x r)) :
+  D0.Geometry.archiveSolderedForwardDifferential (D0.Geometry.affineGauge h A) e'
+      (D0.Geometry.archiveAffineCoChainGauge h ψ) =
+    D0.Geometry.archiveAffineCoChainGauge h (D0.Geometry.archiveSolderedForwardDifferential A e ψ)
+D0.Geometry.observerExteriorPairing_congruence (L : D0.Geometry.RoleSpace ≃ₗ[ℝ] D0.Geometry.RoleSpace)
+  (n : D0.Geometry.RoleVector) (hL : D0.Geometry.preservesObserverForm L n) (k : ℕ)
+  (z w : ↥(⋀[ℝ]^k D0.Geometry.RoleSpace)) :
+  D0.Geometry.observerExteriorPairing (L n) k ((exteriorPower.map k ↑L) z) ((exteriorPower.map k ↑L) w) =
+    D0.Geometry.observerExteriorPairing n k z w
+'D0.Geometry.archive_weighted_hodge_dirac_owner' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Cosmology.feedback_variation_universal_source' depends on axioms: [propext]
+'D0.Geometry.archiveSolderedForwardDifferential_frame' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Geometry.observerExteriorPairing_congruence' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.JointAdjointSource.weighted_adjoint_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.JointAdjointSource.weighted_adjoint_first_jet' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.JointAdjointSource.inverse_gram_first_jet' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.JointAdjointSource.weighted_adjoint_basis_covariance' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.JointAdjointSource.weighted_adjoint_twice_balanced' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.JointAdjointSource.weighted_projection_balanced_adjoint' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.JointAdjointSource.weighted_unitary_balanced_tangent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.JointAdjointSource.projection_tangent_diagonal_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.JointAdjointSource.projection_tangent_offdiagonal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.JointAdjointSource.projection_offdiagonal_tangent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.JointAdjointSource.projection_tangent_generator' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.JointAdjointSource.projection_tangent_generator_skew' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.JointAdjointSource.orthogonal_tangent_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.JointAdjointSource.unitary_inverse_first_jet' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.JointAdjointSource.trace_commutator_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.JointAdjointSource.trace_commutator_pairing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.JointAdjointSource.trace_internal_ward' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.JointAdjointSource.gram_stress_two_forms' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.JointAdjointSource.gram_stress_trace_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.JointAdjointSource.trace_projector_sandwich' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.JointAdjointSource.feedback_first_jet_covector' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.JointAdjointSource.feedback_resolvent_support_balance' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.JointAdjointSource.feedback_noether_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.JointAdjointSource.feedback_inverse_intertwiners' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

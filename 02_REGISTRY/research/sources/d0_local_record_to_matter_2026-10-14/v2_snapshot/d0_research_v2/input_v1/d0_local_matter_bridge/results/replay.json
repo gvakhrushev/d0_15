@@ -1,0 +1,79 @@
+{
+  "schema": "d0-local-replay/1",
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "exact_algebra",
+      "command": [
+        "src/exact_algebra.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.831
+    },
+    {
+      "name": "exact_algebra_optimized",
+      "command": [
+        "-O",
+        "src/exact_algebra.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.827
+    },
+    {
+      "name": "full_local_operator",
+      "command": [
+        "src/full_local_operator_check.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.752
+    },
+    {
+      "name": "interval_L8",
+      "command": [
+        "src/interval_l8.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.793
+    },
+    {
+      "name": "interval_L8_optimized",
+      "command": [
+        "-O",
+        "src/interval_l8.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.803
+    },
+    {
+      "name": "pi0_phase_hostile",
+      "command": [
+        "src/pi0_phase_boundary.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.688
+    },
+    {
+      "name": "actual_code_mutations",
+      "command": [
+        "src/hostile_mutations.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 8.567
+    },
+    {
+      "name": "finite_refinement_diagnostics",
+      "command": [
+        "src/continuum_and_sources.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.644
+    }
+  ],
+  "python": "3.13.5",
+  "network_used_by_this_runner": false,
+  "GitHub_published": false,
+  "CI_run": false,
+  "Lean_compilation": false,
+  "all_D0_action_terms_tested": false,
+  "native_pi0_matter_preparation_proved": false
+}

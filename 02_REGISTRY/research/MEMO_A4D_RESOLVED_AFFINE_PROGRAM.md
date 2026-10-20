@@ -209,6 +209,17 @@ argument and chooses a missing substitution from its boundary.
 | Joint dynamics and limit: `gauge_range`, `joint_nonlinear_solve`, `soundness`, `recovery` | Existing curved solutions, connection sheets, Ward and response/refinement estimates | Prove only missing joint rows, bounds or transports on one fixed smooth-metric refining family | Controlled soundness and recovery on the stated nonempty curved class |
 | Common realization: `gr_operational_realization`, `gr_architectural_closure` | The preceding exact applications and unchanged `positive_gr` | Identify concrete witnesses or prove structure-preserving transport | One complete native GR theorem; then reuse the same architecture for other theories |
 
+The accepted `mv_tangent_span` and `primitive_jet_composition` applications
+now supply two reusable generic inputs to this route. The first identifies
+the Hermitian annihilator/span equivalence; the second supplies ordered
+residual composition and the exact first-jet identity for moving intertwiners.
+Its numerical derivative bound keeps the shared-intertwiner hypothesis.
+Use their pinned applications in the [assembly](../gr_assembly/VIEW.md) and
+instantiate them on the actual native operators, admitted tangents and
+preparation/test maps. That physical identification belongs to the existing
+source/realization obligations; the two accepted generic statements are not
+new work for the next wave.
+
 ### Initial focus for the next agent wave
 
 1. The integrator starts from the existing conditional argument and substitutes

@@ -1,0 +1,626 @@
+'D0.Research.NativeDynamicalOwnership.native_full_translation_kernel' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.native_centered_translation_entry' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.native_centered_translation_curl_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.native_metric_translation_tangent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.native_translation_annihilator_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.native_constant_metric_probe_has_coframe_lift' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.native_constant_metric_divergence_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.native_constant_metric_self_pairing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.native_translation_tests_not_all_metric_tests' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.metric_translation_symbol_injective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.action_gap_eventually_constant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.action_gap_continuity_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.action_gap_hasDerivAt_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.nonconstant_germ_no_primitive_derivative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.affine_field_germ_not_locally_constant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.faithful_affine_field_cost_not_differentiable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.faithful_native_coframe_cost_not_differentiable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.calibrated_gap_continuity_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.primitive_nondifferentiable_deriv_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.shrinking_gap_exact_error' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.shrinking_gap_uniform_error' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.canonical_centered_probe_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.squared_reading_centered_value' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.every_centered_readout_has_primitive_completion' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeDynamicalOwnership.action_gap_eventually_constant {P : VerificationProtocol} (A : ActionProtocol P)
+  (x : ℝ → P.State) (t0 : ℝ) (h : ContinuousAt (fun t => A.action (x t0) (x t)) t0) : ∀ᶠ (t : ℝ) in nhds t0, x t = x t0
+D0.Research.NativeDynamicalOwnership.action_gap_continuity_iff {P : VerificationProtocol} (A : ActionProtocol P)
+  (x : ℝ → P.State) (t0 : ℝ) : ContinuousAt (fun t => A.action (x t0) (x t)) t0 ↔ ∀ᶠ (t : ℝ) in nhds t0, x t = x t0
+D0.Research.NativeDynamicalOwnership.action_gap_hasDerivAt_zero {P : VerificationProtocol} (A : ActionProtocol P)
+  (x : ℝ → P.State) (t0 a : ℝ) (h : HasDerivAt (fun t => A.action (x t0) (x t)) a t0) : a = 0
+D0.Research.NativeDynamicalOwnership.nonconstant_germ_no_primitive_derivative {P : VerificationProtocol}
+  (A : ActionProtocol P) (x : ℝ → P.State) (t0 : ℝ) (hx : ¬∀ᶠ (t : ℝ) in nhds t0, x t = x t0) :
+  ¬DifferentiableAt ℝ (fun t => A.action (x t0) (x t)) t0
+D0.Research.NativeDynamicalOwnership.affine_field_germ_not_locally_constant.{u_1} {V : Type u_1} [AddCommGroup V]
+  [Module ℝ V] (u v : V) (hv : v ≠ 0) : ¬∀ᶠ (t : ℝ) in nhds 0, u + t • v = u
+D0.Research.NativeDynamicalOwnership.faithful_affine_field_cost_not_differentiable.{u_1} {P : VerificationProtocol}
+  (A : ActionProtocol P) {V : Type u_1} [AddCommGroup V] [Module ℝ V] (encode : V → P.State)
+  (he : Function.Injective encode) (u v : V) (hv : v ≠ 0) :
+  ¬DifferentiableAt ℝ (fun t => A.action (encode u) (encode (u + t • v))) 0
+D0.Research.NativeDynamicalOwnership.faithful_native_coframe_cost_not_differentiable {P : VerificationProtocol}
+  (A : ActionProtocol P) (N : ℕ) (encode : LocalCoframeField N → P.State) (he : Function.Injective encode)
+  (e v : LocalCoframeField N) (hv : v ≠ 0) : ¬DifferentiableAt ℝ (fun t => A.action (encode e) (encode (e + t • v))) 0
+D0.Research.NativeDynamicalOwnership.calibrated_gap_continuity_iff {P : VerificationProtocol} (A : ActionProtocol P)
+  (x : ℝ → P.State) (t0 a : ℝ) (ha : a ≠ 0) :
+  ContinuousAt (fun t => a * A.action (x t0) (x t)) t0 ↔ ∀ᶠ (t : ℝ) in nhds t0, x t = x t0
+D0.Research.NativeDynamicalOwnership.primitive_nondifferentiable_deriv_zero {P : VerificationProtocol}
+  (A : ActionProtocol P) (x : ℝ → P.State) (t0 : ℝ) (hx : ¬∀ᶠ (t : ℝ) in nhds t0, x t = x t0) :
+  deriv (fun t => A.action (x t0) (x t)) t0 = 0
+D0.Research.NativeDynamicalOwnership.shrinking_gap_exact_error (P : VerificationProtocol) (epsilon : ℝ)
+  (he : 0 < epsilon) (F : P.State → P.State → ℝ) (hF : ∀ (x y : P.State), 0 ≤ F x y)
+  (hdiag : ∀ (x : P.State), F x x = 0) (x y : P.State) :
+  epsilon * (shrinkingGapAction P epsilon he F hF).action x y - F x y = if x = y then 0 else epsilon
+D0.Research.NativeDynamicalOwnership.shrinking_gap_uniform_error (P : VerificationProtocol) (epsilon : ℝ)
+  (he : 0 < epsilon) (F : P.State → P.State → ℝ) (hF : ∀ (x y : P.State), 0 ≤ F x y)
+  (hdiag : ∀ (x : P.State), F x x = 0) (x y : P.State) :
+  |epsilon * (shrinkingGapAction P epsilon he F hF).action x y - F x y| ≤ epsilon
+D0.Research.NativeDynamicalOwnership.canonical_centered_probe_zero (P : VerificationProtocol)
+  (center plus minus : P.State) (hp : center ≠ plus) (hm : center ≠ minus) (epsilon : ℝ) :
+  ((canonicalActionProtocol P).action center plus - (canonicalActionProtocol P).action center minus) / (2 * epsilon) = 0
+D0.Research.NativeDynamicalOwnership.squared_reading_centered_value (P : VerificationProtocol) (q : P.State → ℝ)
+  (k epsilon : ℝ) (he : epsilon ≠ 0) (center plus minus : P.State) (hp : q plus - q center = epsilon)
+  (hm : q minus - q center = -epsilon) :
+  ((squaredReadingAction P q k).action center plus - (squaredReadingAction P q k).action center minus) / (2 * epsilon) =
+    2 * k
+D0.Research.NativeDynamicalOwnership.every_centered_readout_has_primitive_completion (P : VerificationProtocol)
+  (q : P.State → ℝ) (c epsilon : ℝ) (he : epsilon ≠ 0) (center plus minus : P.State) (hp : q plus - q center = epsilon)
+  (hm : q minus - q center = -epsilon) : ∃ A, (A.action center plus - A.action center minus) / (2 * epsilon) = c
+structure D0.Foundation.EndogenousActionQuantum.ActionProtocol (P : VerificationProtocol) : Type
+number of parameters: 1
+fields:
+  D0.Foundation.EndogenousActionQuantum.ActionProtocol.action : P.State → P.State → ℝ
+  D0.Foundation.EndogenousActionQuantum.ActionProtocol.action_refl : ∀ (x : P.State), self.action x x = 0
+  D0.Foundation.EndogenousActionQuantum.ActionProtocol.action_nontrivial : ∀ (x y : P.State),
+      x ≠ y → 1 ≤ self.action x y
+constructor:
+  D0.Foundation.EndogenousActionQuantum.ActionProtocol.mk {P : VerificationProtocol} (action : P.State → P.State → ℝ)
+    (action_refl : ∀ (x : P.State), action x x = 0) (action_nontrivial : ∀ (x y : P.State), x ≠ y → 1 ≤ action x y) :
+    ActionProtocol P
+structure D0.Foundation.VerifiabilityNecessity.VerificationContract (P : VerificationProtocol) : Prop
+number of parameters: 1
+fields:
+  D0.Foundation.VerifiabilityNecessity.VerificationContract.state_nontrivial : Nontrivial P.State
+  D0.Foundation.VerifiabilityNecessity.VerificationContract.line_nontrivial : Nontrivial P.Line
+  D0.Foundation.VerifiabilityNecessity.VerificationContract.catalogue_nonempty : Nonempty P.Catalogue
+  D0.Foundation.VerifiabilityNecessity.VerificationContract.correct : ∀ (l : P.Line) (c : P.Catalogue) (x y : P.State),
+      P.compare l c (P.record x) (P.record y) = decide (x ≠ y)
+constructor:
+  D0.Foundation.VerifiabilityNecessity.VerificationContract.mk {P : VerificationProtocol}
+    (state_nontrivial : Nontrivial P.State) (line_nontrivial : Nontrivial P.Line)
+    (catalogue_nonempty : Nonempty P.Catalogue)
+    (correct :
+      ∀ (l : P.Line) (c : P.Catalogue) (x y : P.State), P.compare l c (P.record x) (P.record y) = decide (x ≠ y)) :
+    VerificationContract P
+theorem D0.Geometry.physicalMovingWard_of_constitutiveAction.{u_1, u_2, u_3, u_4, u_5} : ∀ {P0 : Type u_1}
+  {P1 : Type u_2} {D3 : Type u_3} {D4 : Type u_4} [inst : Fintype P0] [inst_1 : Fintype P1] [inst_2 : Fintype D3]
+  [inst_3 : Fintype D4] [DecidableEq P0] [DecidableEq P1] [DecidableEq D3] [DecidableEq D4] {Background : Type u_5}
+  (geometryAction : Background → ℝ) (symmetry : Background → Background) (b : Background)
+  (e0 : FiniteRealCarrier P0 ≃ₗ[ℝ] Module.Dual ℝ (FiniteRealCarrier D4))
+  (e1 : FiniteRealCarrier P1 ≃ₗ[ℝ] Module.Dual ℝ (FiniteRealCarrier D3))
+  (Q0 : FiniteRealCarrier P0 ≃ₗ[ℝ] FiniteRealCarrier P0) (Q1 : FiniteRealCarrier P1 ≃ₗ[ℝ] FiniteRealCarrier P1)
+  (dPof : Background → FiniteRealCarrier P0 →ₗ[ℝ] FiniteRealCarrier P1)
+  (dDof : Background → FiniteRealCarrier D3 →ₗ[ℝ] FiniteRealCarrier D4)
+  (S0of : Background → FiniteRealCarrier P0 →ₗ[ℝ] FiniteRealCarrier D4)
+  (S1of : Background → FiniteRealCarrier P1 →ₗ[ℝ] FiniteRealCarrier D3) (psi chi lambda : FiniteRealCarrier P0),
+  geometryAction (symmetry b) = geometryAction b ∧
+      dPof (symmetry b) = movedPrimalDifferential Q0 Q1 (dPof b) ∧
+        dDof (symmetry b) = movedDualDifferential (dualAction e1 Q1) (dualAction e0 Q0) (dDof b) ∧
+          S0of (symmetry b) = movedStar (dualAction e0 Q0) Q0 (S0of b) ∧
+            S1of (symmetry b) = movedStar (dualAction e1 Q1) Q1 (S1of b) →
+    have pairing := fun p d => (e0 p) d;
+    have A := { dP := dPof b, dD := dDof b, star0 := S0of b, star1 := S1of b };
+    have A' :=
+      { dP := dPof (symmetry b), dD := dDof (symmetry b), star0 := S0of (symmetry b), star1 := S1of (symmetry b) };
+    mixedPrimalDualAction pairing A' (Q0 psi) (Q0 chi) (Q0 lambda) = mixedPrimalDualAction pairing A psi chi lambda :=
+fun {P0} {P1} {D3} {D4} [Fintype P0] [Fintype P1] [Fintype D3] [Fintype D4] [DecidableEq P0] [DecidableEq P1]
+    [DecidableEq D3] [DecidableEq D4] {Background} geometryAction symmetry b e0 e1 Q0 Q1 dPof dDof S0of S1of psi chi
+    lambda hDerived =>
+  let pairing := fun p d => (e0 p) d;
+  let A := { dP := dPof b, dD := dDof b, star0 := S0of b, star1 := S1of b };
+  let A' :=
+    { dP := dPof (symmetry b), dD := dDof (symmetry b), star0 := S0of (symmetry b), star1 := S1of (symmetry b) };
+  And.casesOn hDerived fun left right =>
+    And.casesOn right fun hdP right =>
+      And.casesOn right fun hdD right =>
+        And.casesOn right fun hS0 hS1 =>
+          have hdata :=
+            of_eq_true
+              (Eq.trans
+                (congrFun' (congrArg Eq (congr (congr (congr (congrArg FinitePrimalDualHodgeData.mk hdP) hdD) hS0) hS1))
+                  { dP := movedPrimalDifferential Q0 Q1 (dPof b),
+                    dD := movedDualDifferential (dualAction e1 Q1) (dualAction e0 Q0) (dDof b),
+                    star0 := movedStar (dualAction e0 Q0) Q0 (S0of b),
+                    star1 := movedStar (dualAction e1 Q1) Q1 (S1of b) })
+                (eq_self
+                  { dP := movedPrimalDifferential Q0 Q1 (dPof b),
+                    dD := movedDualDifferential (dualAction e1 Q1) (dualAction e0 Q0) (dDof b),
+                    star0 := movedStar (dualAction e0 Q0) Q0 (S0of b),
+                    star1 := movedStar (dualAction e1 Q1) Q1 (S1of b) }));
+          Eq.mpr
+            (id
+              (congrFun'
+                (congrArg Eq
+                  (congrFun'
+                    (congrFun' (congrFun' (congrArg (mixedPrimalDualAction fun p d => (e0 p) d) hdata) (Q0 psi))
+                      (Q0 chi))
+                    (Q0 lambda)))
+                (mixedPrimalDualAction (fun p d => (e0 p) d) A psi chi lambda)))
+            (mixedAction_transform e0 e1 Q0 Q1 A psi chi lambda)
+D0.Geometry.mixedAction_transform.{u_1, u_2, u_3, u_4} {P0 : Type u_1} {P1 : Type u_2} {D3 : Type u_3} {D4 : Type u_4}
+  [Fintype P0] [Fintype P1] [Fintype D3] [Fintype D4] [DecidableEq P0] [DecidableEq P1] [DecidableEq D3]
+  [DecidableEq D4] (e0 : FiniteRealCarrier P0 ≃ₗ[ℝ] Module.Dual ℝ (FiniteRealCarrier D4))
+  (e1 : FiniteRealCarrier P1 ≃ₗ[ℝ] Module.Dual ℝ (FiniteRealCarrier D3))
+  (Q0 : FiniteRealCarrier P0 ≃ₗ[ℝ] FiniteRealCarrier P0) (Q1 : FiniteRealCarrier P1 ≃ₗ[ℝ] FiniteRealCarrier P1)
+  (A : FinitePrimalDualHodgeData P0 P1 D3 D4) (psi chi lambda : FiniteRealCarrier P0) :
+  have R4 := dualAction e0 Q0;
+  have R3 := dualAction e1 Q1;
+  have A' :=
+    { dP := movedPrimalDifferential Q0 Q1 A.dP, dD := movedDualDifferential R3 R4 A.dD,
+      star0 := movedStar R4 Q0 A.star0, star1 := movedStar R3 Q1 A.star1 };
+  have pairing := fun p d => (e0 p) d;
+  mixedPrimalDualAction pairing A' (Q0 psi) (Q0 chi) (Q0 lambda) = mixedPrimalDualAction pairing A psi chi lambda
+D0.Geometry.movingHodge_comp.{u_1, u_2, u_3} {K : Type u_1} {P : Type u_2} {D : Type u_3} [Field K] [AddCommGroup P]
+  [Module K P] [AddCommGroup D] [Module K D] (QD RD : D ≃ₗ[K] D) (QP RP : P ≃ₗ[K] P) (S : P →ₗ[K] D) :
+  movingHodge (QD ≪≫ₗ RD) S (QP ≪≫ₗ RP) = movingHodge RD (movingHodge QD S QP) RP
+'D0.Research.NativeDynamicalOwnership.action_ext' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeDynamicalOwnership.excess_action_left_inverse' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.excess_action_right_inverse' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.completeActionFiber' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeDynamicalOwnership.canonical_action_has_zero_excess' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.canonical_action_is_least' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.least_action_iff_canonical' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.threeState_killing_test' depends on axioms: [propext]
+'D0.Research.NativeDynamicalOwnership.canonical_normalized_metric' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.second_normalized_metric' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.distinct_normalized_action_ratios' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.action_ratio_not_m1_forced' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.action_cost_difference_survives_calibration' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.action_cost_difference_survives_all_relabelings' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.completeInvariantActionFiber' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.invariant_iff_constant_on_symmetry_orbits' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.arbitrary_profile_of_invariant_observable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.two_profiles_same_nontrivial_symmetry' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.invariant_profiles_different_variations' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.passive_hodge_recovers_seed' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.passive_hodge_seed_injective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.actual_ward_needs_only_map_covariance' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+theorem D0.Geometry.actionGroupoid_secondJet.{u_1} : ∀ {ι : Type u_1} [inst : Fintype ι] [inst_1 : DecidableEq ι]
+  (G Dg K : Matrix ι ι ℚ),
+  (∀ (s t : ℚ), groupoidMoved G Dg K s t * groupoidBase G K t = groupoidSum G K s t) → K = G * G + Dg :=
+fun {ι} [Fintype ι] [DecidableEq ι] G Dg K hcomp =>
+  have hdiff := fun s t =>
+    let R :=
+      (s * t) • (G * G + Dg - K) + (s * t ^ 2) • ((1 / 2) • (G * K) + Dg * G) + (s * t ^ 3) • (1 / 2) • (Dg * K) +
+          (s ^ 2 * t) • (1 / 2) • (K * G) +
+        (s ^ 2 * t ^ 2) • (1 / 4) • (K * K);
+    have hexp := groupoidProduct_expansion G Dg K s t;
+    have hgoal :=
+      Eq.mpr
+        (id
+          (congrArg (Eq (groupoidSum G K s t))
+            (Eq.trans
+              (Eq.trans
+                (congrArg (HAdd.hAdd (groupoidSum G K s t))
+                  (Eq.trans
+                    (add_assoc
+                      ((s * t) • (G * G + Dg - K) + (s * t ^ 2) • ((1 / 2) • (G * K) + Dg * G) +
+                        (s * t ^ 3) • (1 / 2) • (Dg * K))
+                      ((s ^ 2 * t) • (1 / 2) • (K * G)) ((s ^ 2 * t ^ 2) • (1 / 4) • (K * K)))
+                    (Eq.trans
+                      (Eq.trans
+                        (congr
+                          (congrArg HAdd.hAdd
+                            (Eq.trans
+                              (Eq.trans
+                                (congr
+                                  (congrArg HAdd.hAdd
+                                    (congr
+                                      (congrArg HAdd.hAdd
+                                        (congrArg (HSMul.hSMul (s * t))
+                                          (congrFun' (congrArg HSub.hSub (add_comm (G * G) Dg)) K)))
+                                      (Eq.trans
+                                        (congrArg (HSMul.hSMul (s * t ^ 2))
+                                          (Eq.trans
+                                            (congrFun'
+                                              (congrArg HAdd.hAdd
+                                                (congrFun' (congrArg HSMul.hSMul (one_div 2)) (G * K)))
+                                              (Dg * G))
+                                            (add_comm (2⁻¹ • (G * K)) (Dg * G))))
+                                        (smul_add (s * t ^ 2) (Dg * G) (2⁻¹ • (G * K))))))
+                                  (congrArg (HSMul.hSMul (s * t ^ 3))
+                                    (congrFun' (congrArg HSMul.hSMul (one_div 2)) (Dg * K))))
+                                (add_assoc ((s * t) • (Dg + G * G - K))
+                                  ((s * t ^ 2) • (Dg * G) + (s * t ^ 2) • 2⁻¹ • (G * K))
+                                  ((s * t ^ 3) • 2⁻¹ • (Dg * K))))
+                              (congrArg (HAdd.hAdd ((s * t) • (Dg + G * G - K)))
+                                (add_assoc ((s * t ^ 2) • (Dg * G)) ((s * t ^ 2) • 2⁻¹ • (G * K))
+                                  ((s * t ^ 3) • 2⁻¹ • (Dg * K))))))
+                          (congr
+                            (congrArg HAdd.hAdd
+                              (congrArg (HSMul.hSMul (s ^ 2 * t))
+                                (congrFun' (congrArg HSMul.hSMul (one_div 2)) (K * G))))
+                            (congrArg (HSMul.hSMul (s ^ 2 * t ^ 2))
+                              (congrFun' (congrArg HSMul.hSMul (one_div 4)) (K * K)))))
+                        (add_assoc ((s * t) • (Dg + G * G - K))
+                          ((s * t ^ 2) • (Dg * G) + ((s * t ^ 2) • 2⁻¹ • (G * K) + (s * t ^ 3) • 2⁻¹ • (Dg * K)))
+                          ((s ^ 2 * t) • 2⁻¹ • (K * G) + (s ^ 2 * t ^ 2) • 4⁻¹ • (K * K))))
+                      (congrArg (HAdd.hAdd ((s * t) • (Dg + G * G - K)))
+                        (Eq.trans
+                          (add_assoc ((s * t ^ 2) • (Dg * G))
+                            ((s * t ^ 2) • 2⁻¹ • (G * K) + (s * t ^ 3) • 2⁻¹ • (Dg * K))
+                            ((s ^ 2 * t) • 2⁻¹ • (K * G) + (s ^ 2 * t ^ 2) • 4⁻¹ • (K * K)))
+                          (congrArg (HAdd.hAdd ((s * t ^ 2) • (Dg * G)))
+                            (add_assoc ((s * t ^ 2) • 2⁻¹ • (G * K)) ((s * t ^ 3) • 2⁻¹ • (Dg * K))
+                              ((s ^ 2 * t) • 2⁻¹ • (K * G) + (s ^ 2 * t ^ 2) • 4⁻¹ • (K * K)))))))))
+                (add_comm (groupoidSum G K s t)
+                  ((s * t) • (Dg + G * G - K) +
+                    ((s * t ^ 2) • (Dg * G) +
+                      ((s * t ^ 2) • 2⁻¹ • (G * K) +
+                        ((s * t ^ 3) • 2⁻¹ • (Dg * K) +
+                          ((s ^ 2 * t) • 2⁻¹ • (K * G) + (s ^ 2 * t ^ 2) • 4⁻¹ • (K * K))))))))
+              (Eq.trans
+                (add_assoc ((s * t) • (Dg + G * G - K))
+                  ((s * t ^ 2) • (Dg * G) +
+                    ((s * t ^ 2) • 2⁻¹ • (G * K) +
+                      ((s * t ^ 3) • 2⁻¹ • (Dg * K) + ((s ^ 2 * t) • 2⁻¹ • (K * G) + (s ^ 2 * t ^ 2) • 4⁻¹ • (K * K)))))
+                  (groupoidSum G K s t))
+                (congrArg (HAdd.hAdd ((s * t) • (Dg + G * G - K)))
+                  (Eq.trans
+                    (add_assoc ((s * t ^ 2) • (Dg * G))
+                      ((s * t ^ 2) • 2⁻¹ • (G * K) +
+                        ((s * t ^ 3) • 2⁻¹ • (Dg * K) +
+                          ((s ^ 2 * t) • 2⁻¹ • (K * G) + (s ^ 2 * t ^ 2) • 4⁻¹ • (K * K))))
+                      (groupoidSum G K s t))
+                    (congrArg (HAdd.hAdd ((s * t ^ 2) • (Dg * G)))
+                      (Eq.trans
+                        (add_assoc ((s * t ^ 2) • 2⁻¹ • (G * K))
+                          ((s * t ^ 3) • 2⁻¹ • (Dg * K) +
+                            ((s ^ 2 * t) • 2⁻¹ • (K * G) + (s ^ 2 * t ^ 2) • 4⁻¹ • (K * K)))
+                          (groupoidSum G K s t))
+                        (congrArg (HAdd.hAdd ((s * t ^ 2) • 2⁻¹ • (G * K)))
+                          (Eq.trans
+                            (add_assoc ((s * t ^ 3) • 2⁻¹ • (Dg * K))
+                              ((s ^ 2 * t) • 2⁻¹ • (K * G) + (s ^ 2 * t ^ 2) • 4⁻¹ • (K * K)) (groupoidSum G K s t))
+                            (congrArg (HAdd.hAdd ((s * t ^ 3) • 2⁻¹ • (Dg * K)))
+                              (add_assoc ((s ^ 2 * t) • 2⁻¹ • (K * G)) ((s ^ 2 * t ^ 2) • 4⁻¹ • (K * K))
+                                (groupoidSum G K s t)))))))))))))
+        (Eq.mp
+          (congrArg (Eq (groupoidSum G K s t))
+            (Eq.trans
+              (Eq.trans
+                (congr
+                  (congrArg HAdd.hAdd
+                    (Eq.trans
+                      (Eq.trans
+                        (congr
+                          (congrArg HAdd.hAdd
+                            (Eq.trans
+                              (Eq.trans
+                                (congr
+                                  (congrArg HAdd.hAdd
+                                    (Eq.trans
+                                      (Eq.trans
+                                        (congr
+                                          (congrArg HAdd.hAdd
+                                            (Eq.trans
+                                              (congrArg (HAdd.hAdd (groupoidSum G K s t))
+                                                (congrArg (HSMul.hSMul (s * t))
+                                                  (congrFun' (congrArg HSub.hSub (add_comm (G * G) Dg)) K)))
+                                              (add_comm (groupoidSum G K s t) ((s * t) • (Dg + G * G - K)))))
+                                          (Eq.trans
+                                            (congrArg (HSMul.hSMul (s * t ^ 2))
+                                              (Eq.trans
+                                                (congrFun'
+                                                  (congrArg HAdd.hAdd
+                                                    (congrFun' (congrArg HSMul.hSMul (one_div 2)) (G * K)))
+                                                  (Dg * G))
+                                                (add_comm (2⁻¹ • (G * K)) (Dg * G))))
+                                            (smul_add (s * t ^ 2) (Dg * G) (2⁻¹ • (G * K)))))
+                                        (add_comm ((s * t) • (Dg + G * G - K) + groupoidSum G K s t)
+                                          ((s * t ^ 2) • (Dg * G) + (s * t ^ 2) • 2⁻¹ • (G * K))))
+                                      (Eq.trans
+                                        (add_left_comm ((s * t ^ 2) • (Dg * G) + (s * t ^ 2) • 2⁻¹ • (G * K))
+                                          ((s * t) • (Dg + G * G - K)) (groupoidSum G K s t))
+                                        (congrArg (HAdd.hAdd ((s * t) • (Dg + G * G - K)))
+                                          (add_assoc ((s * t ^ 2) • (Dg * G)) ((s * t ^ 2) • 2⁻¹ • (G * K))
+                                            (groupoidSum G K s t))))))
+                                  (congrArg (HSMul.hSMul (s * t ^ 3))
+                                    (congrFun' (congrArg HSMul.hSMul (one_div 2)) (Dg * K))))
+                                (add_comm
+                                  ((s * t) • (Dg + G * G - K) +
+                                    ((s * t ^ 2) • (Dg * G) + ((s * t ^ 2) • 2⁻¹ • (G * K) + groupoidSum G K s t)))
+                                  ((s * t ^ 3) • 2⁻¹ • (Dg * K))))
+                              (Eq.trans
+                                (add_left_comm ((s * t ^ 3) • 2⁻¹ • (Dg * K)) ((s * t) • (Dg + G * G - K))
+                                  ((s * t ^ 2) • (Dg * G) + ((s * t ^ 2) • 2⁻¹ • (G * K) + groupoidSum G K s t)))
+                                (congrArg (HAdd.hAdd ((s * t) • (Dg + G * G - K)))
+                                  (Eq.trans
+                                    (add_left_comm ((s * t ^ 3) • 2⁻¹ • (Dg * K)) ((s * t ^ 2) • (Dg * G))
+                                      ((s * t ^ 2) • 2⁻¹ • (G * K) + groupoidSum G K s t))
+                                    (congrArg (HAdd.hAdd ((s * t ^ 2) • (Dg * G)))
+                                      (add_left_comm ((s * t ^ 3) • 2⁻¹ • (Dg * K)) ((s * t ^ 2) • 2⁻¹ • (G * K))
+                                        (groupoidSum G K s t))))))))
+                          (congrArg (HSMul.hSMul (s ^ 2 * t)) (congrFun' (congrArg HSMul.hSMul (one_div 2)) (K * G))))
+                        (add_comm
+                          ((s * t) • (Dg + G * G - K) +
+                            ((s * t ^ 2) • (Dg * G) +
+                              ((s * t ^ 2) • 2⁻¹ • (G * K) + ((s * t ^ 3) • 2⁻¹ • (Dg * K) + groupoidSum G K s t))))
+                          ((s ^ 2 * t) • 2⁻¹ • (K * G))))
+                      (Eq.trans
+                        (add_left_comm ((s ^ 2 * t) • 2⁻¹ • (K * G)) ((s * t) • (Dg + G * G - K))
+                          ((s * t ^ 2) • (Dg * G) +
+                            ((s * t ^ 2) • 2⁻¹ • (G * K) + ((s * t ^ 3) • 2⁻¹ • (Dg * K) + groupoidSum G K s t))))
+                        (congrArg (HAdd.hAdd ((s * t) • (Dg + G * G - K)))
+                          (Eq.trans
+                            (add_left_comm ((s ^ 2 * t) • 2⁻¹ • (K * G)) ((s * t ^ 2) • (Dg * G))
+                              ((s * t ^ 2) • 2⁻¹ • (G * K) + ((s * t ^ 3) • 2⁻¹ • (Dg * K) + groupoidSum G K s t)))
+                            (congrArg (HAdd.hAdd ((s * t ^ 2) • (Dg * G)))
+                              (Eq.trans
+                                (add_left_comm ((s ^ 2 * t) • 2⁻¹ • (K * G)) ((s * t ^ 2) • 2⁻¹ • (G * K))
+                                  ((s * t ^ 3) • 2⁻¹ • (Dg * K) + groupoidSum G K s t))
+                                (congrArg (HAdd.hAdd ((s * t ^ 2) • 2⁻¹ • (G * K)))
+                                  (add_left_comm ((s ^ 2 * t) • 2⁻¹ • (K * G)) ((s * t ^ 3) • 2⁻¹ • (Dg * K))
+                                    (groupoidSum G K s t))))))))))
+                  (congrArg (HSMul.hSMul (s ^ 2 * t ^ 2)) (congrFun' (congrArg HSMul.hSMul (one_div 4)) (K * K))))
+                (add_comm
+                  ((s * t) • (Dg + G * G - K) +
+                    ((s * t ^ 2) • (Dg * G) +
+                      ((s * t ^ 2) • 2⁻¹ • (G * K) +
+                        ((s * t ^ 3) • 2⁻¹ • (Dg * K) + ((s ^ 2 * t) • 2⁻¹ • (K * G) + groupoidSum G K s t)))))
+                  ((s ^ 2 * t ^ 2) • 4⁻¹ • (K * K))))
+              (Eq.trans
+                (add_left_comm ((s ^ 2 * t ^ 2) • 4⁻¹ • (K * K)) ((s * t) • (Dg + G * G - K))
+                  ((s * t ^ 2) • (Dg * G) +
+                    ((s * t ^ 2) • 2⁻¹ • (G * K) +
+                      ((s * t ^ 3) • 2⁻¹ • (Dg * K) + ((s ^ 2 * t) • 2⁻¹ • (K * G) + groupoidSum G K s t)))))
+                (congrArg (HAdd.hAdd ((s * t) • (Dg + G * G - K)))
+                  (Eq.trans
+                    (add_left_comm ((s ^ 2 * t ^ 2) • 4⁻¹ • (K * K)) ((s * t ^ 2) • (Dg * G))
+                      ((s * t ^ 2) • 2⁻¹ • (G * K) +
+                        ((s * t ^ 3) • 2⁻¹ • (Dg * K) + ((s ^ 2 * t) • 2⁻¹ • (K * G) + groupoidSum G K s t))))
+                    (congrArg (HAdd.hAdd ((s * t ^ 2) • (Dg * G)))
+                      (Eq.trans
+                        (add_left_comm ((s ^ 2 * t ^ 2) • 4⁻¹ • (K * K)) ((s * t ^ 2) • 2⁻¹ • (G * K))
+                          ((s * t ^ 3) • 2⁻¹ • (Dg * K) + ((s ^ 2 * t) • 2⁻¹ • (K * G) + groupoidSum G K s t)))
+                        (congrArg (HAdd.hAdd ((s * t ^ 2) • 2⁻¹ • (G * K)))
+                          (Eq.trans
+                            (add_left_comm ((s ^ 2 * t ^ 2) • 4⁻¹ • (K * K)) ((s * t ^ 3) • 2⁻¹ • (Dg * K))
+                              ((s ^ 2 * t) • 2⁻¹ • (K * G) + groupoidSum G K s t))
+                            (congrArg (HAdd.hAdd ((s * t ^ 3) • 2⁻¹ • (Dg * K)))
+                              (add_left_comm ((s ^ 2 * t ^ 2) • 4⁻¹ • (K * K)) ((s ^ 2 * t) • 2⁻¹ • (K * G))
+                                (groupoidSum G K s t))))))))))))
+          (Eq.mp
+            (congrArg
+              (fun _a =>
+                _a =
+                  groupoidSum G K s t + (s * t) • (G * G + Dg - K) + (s * t ^ 2) • ((1 / 2) • (G * K) + Dg * G) +
+                        (s * t ^ 3) • (1 / 2) • (Dg * K) +
+                      (s ^ 2 * t) • (1 / 2) • (K * G) +
+                    (s ^ 2 * t ^ 2) • (1 / 4) • (K * K))
+              (hcomp s t))
+            hexp));
+    have hsub := congrArg (fun M => M - groupoidSum G K s t) hgoal;
+    Eq.mpr
+      (id
+        (congrFun'
+          (congrArg Eq
+            (congr
+              (congrArg HAdd.hAdd
+                (congr
+                  (congrArg HAdd.hAdd
+                    (congr
+                      (congrArg HAdd.hAdd
+                        (congrArg (HAdd.hAdd ((s * t) • (G * G + Dg - K)))
+                          (Eq.trans
+                            (congrArg (HSMul.hSMul (s * t ^ 2))
+                              (congrFun' (congrArg HAdd.hAdd (congrFun' (congrArg HSMul.hSMul (one_div 2)) (G * K)))
+                                (Dg * G)))
+                            (smul_add (s * t ^ 2) (2⁻¹ • (G * K)) (Dg * G)))))
+                      (congrArg (HSMul.hSMul (s * t ^ 3)) (congrFun' (congrArg HSMul.hSMul (one_div 2)) (Dg * K)))))
+                  (congrArg (HSMul.hSMul (s ^ 2 * t)) (congrFun' (congrArg HSMul.hSMul (one_div 2)) (K * G)))))
+              (congrArg (HSMul.hSMul (s ^ 2 * t ^ 2)) (congrFun' (congrArg HSMul.hSMul (one_div 4)) (K * K)))))
+          0))
+      (Eq.mp
+        (congr
+          (congrArg Eq
+            (Eq.trans
+              (congrFun'
+                (congrArg HSub.hSub
+                  (congrArg (HAdd.hAdd (groupoidSum G K s t))
+                    (congr
+                      (congrArg HAdd.hAdd
+                        (congr
+                          (congrArg HAdd.hAdd
+                            (congr
+                              (congrArg HAdd.hAdd
+                                (congrArg (HAdd.hAdd ((s * t) • (G * G + Dg - K)))
+                                  (Eq.trans
+                                    (congrArg (HSMul.hSMul (s * t ^ 2))
+                                      (congrFun'
+                                        (congrArg HAdd.hAdd (congrFun' (congrArg HSMul.hSMul (one_div 2)) (G * K)))
+                                        (Dg * G)))
+                                    (smul_add (s * t ^ 2) (2⁻¹ • (G * K)) (Dg * G)))))
+                              (congrArg (HSMul.hSMul (s * t ^ 3))
+                                (congrFun' (congrArg HSMul.hSMul (one_div 2)) (Dg * K)))))
+                          (congrArg (HSMul.hSMul (s ^ 2 * t)) (congrFun' (congrArg HSMul.hSMul (one_div 2)) (K * G)))))
+                      (congrArg (HSMul.hSMul (s ^ 2 * t ^ 2)) (congrFun' (congrArg HSMul.hSMul (one_div 4)) (K * K))))))
+                (groupoidSum G K s t))
+              (add_sub_cancel_left (groupoidSum G K s t)
+                ((s * t) • (G * G + Dg - K) + ((s * t ^ 2) • 2⁻¹ • (G * K) + (s * t ^ 2) • (Dg * G)) +
+                      (s * t ^ 3) • 2⁻¹ • (Dg * K) +
+                    (s ^ 2 * t) • 2⁻¹ • (K * G) +
+                  (s ^ 2 * t ^ 2) • 4⁻¹ • (K * K)))))
+          (sub_self (groupoidSum G K s t)))
+        (Eq.symm hsub));
+  let X := G * G + Dg - K;
+  let A := (1 / 2) • (G * K) + Dg * G;
+  let E := (1 / 2) • (Dg * K);
+  let B := (1 / 2) • (K * G);
+  let C := (1 / 4) • (K * K);
+  have hX :=
+    Matrix.ext fun i j =>
+      D0.Geometry.isolate_cross_entry✝ (X i j) (A i j) (E i j) (B i j) (C i j) fun s t =>
+        have h0 := congr_fun (congr_fun (hdiff s t) i) j;
+        h0;
+  Eq.symm (sub_eq_zero.mp hX)
+'D0.Research.NativeDynamicalOwnership.exact_polynomial_composition_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.frozen_exact_composition_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.product_with_exact_remainder' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.order_two_composition_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.order_two_fiber_nonempty' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.native_constant_displacement_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.native_cycle4_generator_cube' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.native_cycle4_exact_quadratic_premise_empty' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.native_cycle4_order_two_premise_nonempty' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.real_flow_composes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeDynamicalOwnership.real_flow_first_two_derivatives' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.splitTransport_ext' depends on axioms: [propext, Quot.sound]
+'D0.Research.NativeDynamicalOwnership.split_transport_factorization' depends on axioms: [propext]
+'D0.Research.NativeDynamicalOwnership.completeSplitTransportFiber' depends on axioms: [propext, Quot.sound]
+'D0.Research.NativeDynamicalOwnership.split_transport_intertwiner' depends on axioms: [propext, Quot.sound]
+'D0.Research.NativeDynamicalOwnership.transported_section_covariant_iff' depends on axioms: [propext]
+'D0.Research.NativeDynamicalOwnership.native_scalar_displacement_kernel' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.native_scalar_centered_same_displacement' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.native_scalar_mean_centered_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.native_scalar_centered_unique' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.split_mixed_integrability' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.split_diagonal_second_jet' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.native_mixed_fiber_iff_symmetric' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.native_symmetric_correction_is_mixed_cocycle' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.native_car_mixed_kernel' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.native_cartan_expansion_kernel' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.native_flat_orbit_binding' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.native_a4d_constant_tangent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeDynamicalOwnership.native_a4d_constant_tangents_commute' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

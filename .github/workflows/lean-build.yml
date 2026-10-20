@@ -5,10 +5,18 @@ on:
     branches: ["main"]
     paths:
       - "03_FORMALIZATION/**"
+      - "tools/native_checkpoint_inputs.py"
+      - "tools/check_native_checkpoint_compatibility.py"
+      - "02_REGISTRY/research/sources/d0_native_variational_checkpoint_2026-10-20/**"
+      - "02_REGISTRY/research/certificates/*.lean"
   pull_request:
     types: [opened, synchronize, reopened, ready_for_review]
     paths:
       - "03_FORMALIZATION/**"
+      - "tools/native_checkpoint_inputs.py"
+      - "tools/check_native_checkpoint_compatibility.py"
+      - "02_REGISTRY/research/sources/d0_native_variational_checkpoint_2026-10-20/**"
+      - "02_REGISTRY/research/certificates/*.lean"
       - ".github/workflows/lean-build.yml"
   workflow_dispatch:
 
@@ -31,6 +39,12 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
+          inputs=(03_FORMALIZATION .github/workflows/lean-build.yml
+            tools/native_checkpoint_inputs.py tools/check_native_checkpoint_compatibility.py
+            02_REGISTRY/research/sources/d0_native_variational_checkpoint_2026-10-20)
+          for name in addressed_third_role archive_apparatus_realization code_price_resolution dynamical_ownership history_action history_field_coupling prepared_action scene_payload_action uniform_memory_actuation verified_archive_actuation; do
+            inputs+=("02_REGISTRY/research/certificates/a4d_native_${name}.lean")
+          done
 
           if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
             echo "changed=true" >> "$GITHUB_OUTPUT"
@@ -46,7 +60,7 @@ jobs:
 
             action="${{ github.event.action }}"
             if [[ "$action" == "opened" || "$action" == "reopened" || "$action" == "ready_for_review" ]]; then
-              if git diff --quiet HEAD^1 HEAD -- 03_FORMALIZATION; then
+              if git diff --quiet HEAD^1 HEAD -- "${inputs[@]}"; then
                 echo "changed=false" >> "$GITHUB_OUTPUT"
                 echo "Ready/open PR has no D0 formalization diff."
               else
@@ -59,7 +73,7 @@ jobs:
             head="${{ github.event.pull_request.head.sha }}"
             git fetch --no-tags --depth=2 origin "$head"
             parent="$(git rev-parse "$head^")"
-            if git diff --quiet "$parent" "$head" -- 03_FORMALIZATION; then
+            if git diff --quiet "$parent" "$head" -- "${inputs[@]}"; then
               echo "changed=false" >> "$GITHUB_OUTPUT"
               echo "Latest Ready PR commit does not change D0 formalization."
             else
@@ -72,7 +86,7 @@ jobs:
           after="${{ github.sha }}"
           if [[ -z "$before" || "$before" =~ ^0+$ ]]; then
             echo "changed=true" >> "$GITHUB_OUTPUT"
-          elif git diff --quiet "$before" "$after" -- 03_FORMALIZATION; then
+          elif git diff --quiet "$before" "$after" -- "${inputs[@]}"; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
             echo "Push does not change D0 formalization."
           else
@@ -89,3 +103,7 @@ jobs:
           use-github-cache: "true"
           test: "false"
           lint: "false"
+
+      - name: Compile native checkpoint capsules against maintained sources
+        if: steps.d0-formalization.outputs.changed == 'true' && hashFiles('02_REGISTRY/research/sources/d0_native_variational_checkpoint_2026-10-20/HISTORICAL_INPUT.json') != ''
+        run: python tools/check_native_checkpoint_compatibility.py

@@ -1,0 +1,65 @@
+'D0.Research.NativeLogdet.scalarLogdet_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeLogdet.scalarLogdet_stationary_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeLogdet.realProfile_cast' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeLogdet.realProfile_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeLogdet.profileEncoding_domain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeLogdet.profileEncoding_positive_domain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeLogdet.arbitrary_profile_exact_encoding' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeLogdet.profile_encoding_is_not_selection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeLogdet.determinant_similarity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeLogdet.logdet_similarity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeLogdet.rank_two_scalar_reduction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeLogdet.conjugation_ward' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeLogdet.edgeVector_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeLogdet.edge_quadratic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeLogdet.positive_definite_edge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeLogdet.actual_edge_readout_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeLogdet.inverse_edge_source_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeLogdet.full_edge_gate_impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeLogdet.nonzero_coupling_edge_gate_impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeLogdet.actual_role_edge_source_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeLogdet.mixed_profile_neighbor_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeLogdet.actual_local_matrix_mixed_probe_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeLogdet.actual_conductance_mixed_probe_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Matter.higgs_logdet_scalar_sector_stationary :
+  (∀ (D z fprime : ℚ), D ≠ 0 → D0.Matter.FirstVariationRel D z fprime (2 * z * fprime / D)) ∧
+    (∀ (D z fprime : ℚ), D ≠ 0 → z ≠ 0 → (2 * z * fprime / D = 0 ↔ fprime = 0)) ∧
+      D0.Matter.fProfileDeriv 1 = 0 ∧ D0.Matter.fProfileDeriv 0 ≠ 0
+D0.Matter.HiggsRadialInstabilityBoundary.higgs_radial_dynamics_maximality_nogo_owner :
+  (D0.Matter.HiggsRadialInstabilityBoundary.P0 * D0.Matter.HiggsRadialInstabilityBoundary.P0 =
+        D0.Matter.HiggsRadialInstabilityBoundary.P0 ∧
+      Matrix.trace D0.Matter.HiggsRadialInstabilityBoundary.P0 = 1) ∧
+    (D0.Matter.HiggsRadialInstabilityBoundary.P1 * D0.Matter.HiggsRadialInstabilityBoundary.P1 =
+          D0.Matter.HiggsRadialInstabilityBoundary.P1 ∧
+        Matrix.trace D0.Matter.HiggsRadialInstabilityBoundary.P1 = 1) ∧
+      (D0.Matter.HiggsRadialInstabilityBoundary.X * D0.Matter.HiggsRadialInstabilityBoundary.P0 *
+              D0.Matter.HiggsRadialInstabilityBoundary.X =
+            D0.Matter.HiggsRadialInstabilityBoundary.P1 ∧
+          D0.Matter.HiggsRadialInstabilityBoundary.X * D0.Matter.HiggsRadialInstabilityBoundary.P1 *
+              D0.Matter.HiggsRadialInstabilityBoundary.X =
+            D0.Matter.HiggsRadialInstabilityBoundary.P0) ∧
+        (D0.Matter.HiggsRadialInstabilityBoundary.Tq * D0.Matter.HiggsRadialInstabilityBoundary.P0 ≠
+              D0.Matter.HiggsRadialInstabilityBoundary.P0 * D0.Matter.HiggsRadialInstabilityBoundary.Tq ∧
+            D0.Matter.HiggsRadialInstabilityBoundary.Tq * D0.Matter.HiggsRadialInstabilityBoundary.P1 ≠
+              D0.Matter.HiggsRadialInstabilityBoundary.P1 * D0.Matter.HiggsRadialInstabilityBoundary.Tq) ∧
+          Matrix.trace 1 = 2
+D0.Cosmology.feedback_variation_universal_source (S : D0.Cosmology.FeedbackVariationSource) :
+  S.resolventFinite = true →
+    S.sourceFinite = true →
+      S.sourceFromInternalFeedback = true →
+        (S.resolventFinite && S.sourceFinite && decide (S.sourceFromInternalFeedback = true)) = true
+D0.Research.NativeLogdet.scalarLogdet_hasDerivAt (f : ℝ → ℝ) (z x fp : ℝ) (hf : HasDerivAt f fp x)
+  (hD : 1 - z * f x ≠ 0) : HasDerivAt (D0.Research.NativeLogdet.scalarLogdet z f) (2 * z * fp / (1 - z * f x)) x
+D0.Research.NativeLogdet.inverse_edge_source_positive {I : Type} [Fintype I] [DecidableEq I] (H : Matrix I I ℝ)
+  (hH : H.PosDef) (i j : I) (hij : i ≠ j) (z c : ℝ) (hz : 0 < z) (hc : 0 < c) :
+  0 < z * D0.Geometry.edgeStressReadout c (H⁻¹ i i) (H⁻¹ j j) (H⁻¹ i j)
+D0.Research.NativeLogdet.actual_conductance_mixed_probe_zero (n : ℕ) (w : D0.Geometry.EdgeConductanceVariation n)
+  (r s : D0.Role) (hrs : r ≠ s) (x : D0.Geometry.ArchiveRolePhaseProductCarrier.ArchiveRolePhasePoint n)
+  (f g : D0.archivePhaseIndex n → ℝ) (hf : f (x r) = 0) (hg : g (x s) = 0) :
+  (D0.Geometry.forwardMatrix n w).mulVec (fun y => f (y r) * g (y s)) x = 0

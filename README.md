@@ -85,8 +85,11 @@ ready; an unfinished physical parent can continue in its existing research PR.
 | [Architecture, roadmap and dispatch — #379](https://github.com/gvakhrushev/d0_15/pull/379) | Start from verification, compose existing proof owners, and assign only a named missing premise or application. |
 | [Strategy and preserved source package — #323](https://github.com/gvakhrushev/d0_15/pull/323) | Retain the original programme context and source history without asking the user to reconstruct it. |
 | [ActionProtocol boundary — #375](https://github.com/gvakhrushev/d0_15/pull/375) | Use the proved unit floor and excess-profile classification when identifying the complete native price; the floor alone does not select its shape or imply attainment. |
+| [Native source, AF metric and history checkpoints — #322](https://github.com/gvakhrushev/d0_15/pull/322) | Reuse the accumulated current, retained-memory, geometric and variation results at their declared hypotheses. Historical compiler inputs stay pinned; the maintained-source compatibility gate separately checks the unchanged Lean capsules. |
+| [Hermitian tangent-span theorem — #353](https://github.com/gvakhrushev/d0_15/pull/353) | The accepted `mv_tangent_span` application supplies the generic annihilator/span equivalence. The next source step identifies the actual native operators and admissible tangents. |
+| [Primitive-word and moving-jet theorem — #342](https://github.com/gvakhrushev/d0_15/pull/342) | The accepted `primitive_jet_composition` application supplies ordered residual composition and the exact moving-intertwiner identity. The numerical derivative bound retains its shared-intertwiner hypothesis. |
 | [Future-memory and prospective-execution proof intake](02_REGISTRY/research/D0_FOUNDATION_MAIN_INTAKE_2026_10_20.md) | Import the existing future-stable quotient, sufficient-memory, Bellman, no-detour and idle-boundary theorems directly from the main Lean closure. |
-| [Preserved Book-triangle results](02_REGISTRY/gr_assembly/sources/d0_book_triangle_odds_2026-10-19/owner.md) and [conditional exit-Gram results](02_REGISTRY/gr_assembly/sources/d0_conditional_exit_grams_2026-10-17/orthogonal_exit_source.md) | Reuse the actual source files and checks already delivered from #380/#363 by #379, with their conditional scope. |
+| [Preserved Book-triangle results](02_REGISTRY/gr_assembly/sources/d0_book_triangle_odds_2026-10-19/owner.md) and [conditional exit-Gram results](02_REGISTRY/gr_assembly/sources/d0_conditional_exit_grams_2026-10-17/orthogonal_exit_source.md) | Reuse the actual source files and checks delivered by #379. Source PRs #380/#363 are closed as delivered through that intake; their conditional scope and downstream physical obligations remain unchanged. |
 
 The next stage applies these inputs. Compose the verification kernel and its
 generic interpretation maps; on the existing native front, derive the full
@@ -509,7 +512,7 @@ For full technical specifications, advanced mathematical integrations, and Lean 
 <!-- D0-WORK-STATUS:BEGIN -->
 ### Work Queue & Control Plane
 
-- **Tracked Queue/Control Tasks**: CONTROL: 1, EXPENSIVE: 3, WORKER: 1 (Total: 5)
+- **Tracked Queue/Control Tasks**: CONTROL: 1, EXPENSIVE: 3, WORKER: 0 (Total: 4)
 - **Runtime Execution**: see open GitHub pull requests; PR number = execution ID
 - **WIP Utilization**: CONTROL: 1/2, EXPENSIVE: 0/3, WORKER: 0/10
 - **Legacy Scaffolds Remaining**: 0

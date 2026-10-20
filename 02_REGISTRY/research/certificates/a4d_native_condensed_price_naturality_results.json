@@ -1,0 +1,483 @@
+{
+  "actual_record_matrix_and_counting_operator_defect_compiled": true,
+  "all_level_matrix_naturality_algebra_compiled": true,
+  "axioms": {
+    "D0.CompatibleOperatorFamily": [
+      "propext",
+      "Quot.sound"
+    ],
+    "D0.Research.CondensedPrice.actual_archive_hidden_dimension_positive": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.CondensedPrice.actual_archive_hidden_trace": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.CondensedPrice.actual_archive_initial_dimensions": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.CondensedPrice.actual_archive_root_hidden_positive": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.CondensedPrice.actual_archive_split": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.CondensedPrice.actual_phi_gt_one": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.CondensedPrice.actual_phi_scale_ratio": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.CondensedPrice.actual_record_matrix_first_arrow": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.CondensedPrice.actual_record_operator_naturality_fails": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.CondensedPrice.affine_state_gap_source": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.CondensedPrice.average_complement_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.CondensedPrice.average_lift": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.CondensedPrice.complement_keeps_symmetry": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.CondensedPrice.complement_lift_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.CondensedPrice.complement_trace": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.CondensedPrice.complete_scalar_price_jet_fibre": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.CondensedPrice.completion_is_natural": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.CondensedPrice.fibreCard_pos": [
+      "propext",
+      "Quot.sound"
+    ],
+    "D0.Research.CondensedPrice.fibre_count_real": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.CondensedPrice.fixed_budget_mode_equality": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.CondensedPrice.fixed_budget_mode_minimum": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.CondensedPrice.fixed_budget_partition_equality": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.CondensedPrice.fixed_budget_partition_minimum": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.CondensedPrice.fixed_phi_shape_source": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.CondensedPrice.fixed_phi_shape_source_nonzero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.CondensedPrice.gap_shift_trace": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.CondensedPrice.genuine_full_price_source": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.CondensedPrice.genuine_hidden_heat_source": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.CondensedPrice.hidden_heat_source_error": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.CondensedPrice.hidden_heat_source_lower": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.CondensedPrice.hidden_heat_source_neg": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.CondensedPrice.lift_gram_is_point_kernel": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.CondensedPrice.natural_composites": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.CondensedPrice.natural_extension_complete": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.CondensedPrice.no_independent_hidden_heat_stationarity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.CondensedPrice.normalized_heat_error_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.CondensedPrice.normalized_heat_identity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.CondensedPrice.partition_factor": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.CondensedPrice.partition_pos": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.CondensedPrice.record_kernel_operator_readout": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.CondensedPrice.scalar_complement_is_natural": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.CondensedPrice.source_tail_error_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.CondensedPrice.source_tail_form": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.CondensedPrice.split_projection": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.CondensedPrice.uniform_gap_all_level_compatibility": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.CondensedPrice.uniform_gap_completion": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Spectral.CanonicalRefinementScaleFlow.scale_ratio_forced": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.archiveDiagram_transition_surjective": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.archiveFintypeDiagram_succ": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.archiveLightProfinite": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.archive_projection_surjective": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.archive_record_kernel_projectively_compatible": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.archive_tower_defines_profinite_object": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.inducedLimitOperator": [
+      "propext",
+      "Quot.sound"
+    ]
+  },
+  "capsule": "02_REGISTRY/research/certificates/a4d_native_condensed_price_naturality.lean",
+  "capsule_sha256": "d8774976d45d25d2947f9497821a0296feba1f9d5496f3601fa31ddd94c5e512",
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "../02_REGISTRY/research/certificates/a4d_native_condensed_price_naturality.lean"
+  ],
+  "command_cwd": "03_FORMALIZATION",
+  "compiler_exit_code": 0,
+  "declarations": [
+    "D0.Research.CondensedPrice.fibreCard_pos",
+    "D0.Research.CondensedPrice.fibre_count_real",
+    "D0.Research.CondensedPrice.average_lift",
+    "D0.Research.CondensedPrice.lift_gram_is_point_kernel",
+    "D0.Research.CondensedPrice.record_kernel_operator_readout",
+    "D0.Research.CondensedPrice.split_projection",
+    "D0.Research.CondensedPrice.complement_lift_zero",
+    "D0.Research.CondensedPrice.average_complement_zero",
+    "D0.Research.CondensedPrice.natural_extension_complete",
+    "D0.Research.CondensedPrice.completion_is_natural",
+    "D0.Research.CondensedPrice.scalar_complement_is_natural",
+    "D0.Research.CondensedPrice.natural_composites",
+    "D0.Research.CondensedPrice.complement_trace",
+    "D0.Research.CondensedPrice.complement_keeps_symmetry",
+    "D0.Research.CondensedPrice.uniform_gap_completion",
+    "D0.Research.CondensedPrice.uniform_gap_all_level_compatibility",
+    "D0.Research.CondensedPrice.gap_shift_trace",
+    "D0.Research.CondensedPrice.actual_archive_split",
+    "D0.Research.CondensedPrice.actual_archive_hidden_dimension_positive",
+    "D0.Research.CondensedPrice.actual_archive_initial_dimensions",
+    "D0.Research.CondensedPrice.actual_archive_hidden_trace",
+    "D0.Research.CondensedPrice.actual_archive_root_hidden_positive",
+    "D0.Research.CondensedPrice.actual_record_matrix_first_arrow",
+    "D0.Research.CondensedPrice.actual_record_operator_naturality_fails",
+    "D0.Research.CondensedPrice.partition_pos",
+    "D0.Research.CondensedPrice.genuine_hidden_heat_source",
+    "D0.Research.CondensedPrice.hidden_heat_source_neg",
+    "D0.Research.CondensedPrice.hidden_heat_source_error",
+    "D0.Research.CondensedPrice.hidden_heat_source_lower",
+    "D0.Research.CondensedPrice.genuine_full_price_source",
+    "D0.Research.CondensedPrice.no_independent_hidden_heat_stationarity",
+    "D0.Research.CondensedPrice.partition_factor",
+    "D0.Research.CondensedPrice.source_tail_form",
+    "D0.Research.CondensedPrice.source_tail_error_bounds",
+    "D0.Research.CondensedPrice.normalized_heat_identity",
+    "D0.Research.CondensedPrice.normalized_heat_error_bounds",
+    "D0.Research.CondensedPrice.affine_state_gap_source",
+    "D0.Research.CondensedPrice.complete_scalar_price_jet_fibre",
+    "D0.Research.CondensedPrice.actual_phi_scale_ratio",
+    "D0.Research.CondensedPrice.actual_phi_gt_one",
+    "D0.Research.CondensedPrice.fixed_phi_shape_source",
+    "D0.Research.CondensedPrice.fixed_phi_shape_source_nonzero",
+    "D0.Research.CondensedPrice.fixed_budget_mode_minimum",
+    "D0.Research.CondensedPrice.fixed_budget_mode_equality",
+    "D0.Research.CondensedPrice.fixed_budget_partition_minimum",
+    "D0.Research.CondensedPrice.fixed_budget_partition_equality"
+  ],
+  "fixed_budget_finite_profile_minimum_equality_compiled": true,
+  "input_head": "1f9a1e8c1417e28823ce1646422a3f915eee9e86",
+  "matrix_to_scalar_heat_trace_and_Hilbert_limit_analytic": true,
+  "native_field_preparation_source_or_physical_on_shell_admission_derived": false,
+  "output": "02_REGISTRY/research/certificates/a4d_native_condensed_price_naturality_output.txt",
+  "output_sha256": "810a4a4d68477f2b36cc5f39fe71c0c16847dde3f46898cf1e82886489fb845c",
+  "owned_phi_scale_is_thermal_norm_or_budget_derived": false,
+  "positive_GR_or_global_closure": false,
+  "primary_and_prior_input_sha256": {
+    "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d",
+    "02_REGISTRY/research/A4D_NATIVE_COMPOSED_FEEDBACK_DYNAMICS.md": "32442eac8d018cb764f6b47ee41f5fc7f1579e12f401491863ffc9d1162501bd",
+    "02_REGISTRY/research/A4D_NATIVE_CONSTRAINED_PRICE_SOURCE.md": "e2615abad73460950050ce529f45979b07c4ca5e011bfc203f9180a0f08674f6",
+    "02_REGISTRY/research/A4D_NATIVE_JOINT_FIELD_QUOTIENT.md": "991b42eac645bb7e5e4df55f9be439f8e873b9403b4ff2a6dc1061a49dfe3e2e",
+    "02_REGISTRY/research/A4D_NATIVE_OWNER_BINDING_AUDIT.md": "39610e4eb6c3a12c1e9517a7fe29d42ae44dfc6315bcfa5f104da8eb682b1bd5",
+    "02_REGISTRY/research/A4D_NATIVE_SHARED_SCENE_PRICE_SOURCE.md": "9986e1afc9d7cbb8b47dafcd40e3f79d8dcb08fb3833c84db9adae3aa5126291",
+    "02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics.lean": "ad8176fa236ae59110bf6df96d7263f4902dfb84d0f177dc59e917a2a81c78c9",
+    "02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics_certificate.json": "7cc78c0960799fdedc4effb8da18f30f533af5170094f6c0d7295bc7ce9abf96",
+    "02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics_check.py": "4fe026c66efa509b75c85bcccc8640b986f1c3ea0948ed732ecad3575476b4b8",
+    "02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics_output.txt": "8ccd18d67235cf7bcd0f9bd7857f91668eaa10c3e16e57392521388f2388da18",
+    "02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics_results.json": "18b05faaab91a40e89b982f6e0d759a66dc2d30e8bec24e7dbd5285cc4f501c8",
+    "02_REGISTRY/research/certificates/a4d_native_constrained_price_source.lean": "34c377ccd3e99980feb1c7d032a11a4f4b17fa77245e3325ac8572dc55b5669e",
+    "02_REGISTRY/research/certificates/a4d_native_constrained_price_source_certificate.json": "aa2dbae962450fa1aa358553758ce22dfdc37947bb5878193ad895d4187f2614",
+    "02_REGISTRY/research/certificates/a4d_native_constrained_price_source_check.py": "0eaa7e42d6623fcf5d3861209e93430f8ab39a694b07eeba570483ce935e9cb6",
+    "02_REGISTRY/research/certificates/a4d_native_constrained_price_source_output.txt": "407acffd08fc247f2aca7969936d7b9ad65018945784ff3f488683ef6a45dd8e",
+    "02_REGISTRY/research/certificates/a4d_native_constrained_price_source_results.json": "e8bb8f7e777637034a9945a5ec7671dd872f5fa4c61f6ec7a5ad218088797f37",
+    "02_REGISTRY/research/certificates/a4d_native_owner_diagnostics_results.json": "47f9a8cc2bbcd13fd377a4c8a7f8ab5189f3f7675e446cc4b513bbaab496eb57",
+    "02_REGISTRY/research/certificates/a4d_native_shared_scene_price_source.lean": "748be767d4618af542c2945da61760cdc2d4c68afc25f189a72c5caa999a8f4a",
+    "02_REGISTRY/research/certificates/a4d_native_shared_scene_price_source_certificate.json": "0d6359327417ef73c0f70a00c6a9ddcfa7b08edf3ae893ecd8e244f493184965",
+    "02_REGISTRY/research/certificates/a4d_native_shared_scene_price_source_check.py": "d586a4cd80b6ba39827b0d93cca6af60e4c87b7e5364a9cda23652e282ee3292",
+    "02_REGISTRY/research/certificates/a4d_native_shared_scene_price_source_output.txt": "2e616cab2316a02cc919316af0efdc5b7c9a99057936abba0ae5f0478da6336f",
+    "02_REGISTRY/research/certificates/a4d_native_shared_scene_price_source_results.json": "738752770242b434e8522dbf9f7c39c570d6852818c292f7c1ec88ed2a823818",
+    "03_FORMALIZATION/D0/Combinatorics/InfinitePhaseTower.lean": "4f5b32b3b0ca7e682b8e197e10526370c553d1b5f11060a2f6e62862c0b36f05",
+    "03_FORMALIZATION/D0/Combinatorics/PhaseTower.lean": "3aceb5bc63e7d23c0a4f9a065eea4be1af7bee38e7c5dd51391598641d54acb9",
+    "03_FORMALIZATION/D0/Combinatorics/PhaseTowerControls.lean": "f59f24f9ef8a2edf9c542cf8e06d97024ecb53ee7e5b3068da198979a74d87c1",
+    "03_FORMALIZATION/D0/Combinatorics/PhaseTowerMinimality.lean": "5d56c525e9549764fee894d8a74f626ed5965123f5a013915c3c67ae18166e6a",
+    "03_FORMALIZATION/D0/Combinatorics/PhaseTowerRecursion.lean": "cbaae0e2bfdeaa197f1557a29eb53bbea780cddf78f98d9e8928c6a09b5ec46c",
+    "03_FORMALIZATION/D0/Condensed/OperatorNaturality.lean": "8a6be8638cd52e75b612db2416eca350f487c2bdcb2368fc969f854acd774666",
+    "03_FORMALIZATION/D0/Condensed/ProfiniteSupport.lean": "19c41f5658ed122f083e86d9af4667054aed0082606802c1c1462baf689cded3",
+    "03_FORMALIZATION/D0/Condensed/ProjectiveSystem.lean": "3a590e098ef9f50262b4b6ea3b542a08a6b2d536fb3d18dfa3e6bd8522d74158",
+    "03_FORMALIZATION/D0/Core/Phi.lean": "661871661e23ea971e5d50de5c63772db22ecbb5e461640b1f597bb3b6c5e38a",
+    "03_FORMALIZATION/D0/Cosmology/FeedbackPartitionFunction.lean": "8408c562f0dade7a4732ca4e99054e4f1c6019fb7574751010a564464a425c55",
+    "03_FORMALIZATION/D0/Geometry/ArchiveLightProfinite.lean": "50955c47df5d2f8f5e7975e01768672e9e806aab6a4f31607e673893afb3885a",
+    "03_FORMALIZATION/D0/Geometry/ArchiveRefinementTower.lean": "253342935b592df104629259341c2d3d6065cd0ba4ec55769f484f005e036673",
+    "03_FORMALIZATION/D0/Geometry/CovarianceTower.lean": "3452400583b01f0dfddd6fa6e70078db073cd643c1cde243d861aff714080bde",
+    "03_FORMALIZATION/D0/Geometry/InfiniteSpectralTower.lean": "a9b77520d350583f778123087c7b6db17b2284b72ef0c993ae671366e3eb475f",
+    "03_FORMALIZATION/D0/Geometry/SpectralTower.lean": "3d5e8e71e6bef1eeabf48fb63562e0d422c35f22b399f612179a3827485969ef",
+    "03_FORMALIZATION/D0/Spectral/CanonicalRefinementScaleFlow.lean": "c8637b7cd3eaf13f1463e5273f08a2e887d3b8016d2d4b3663ec8ee36dc74f09"
+  },
+  "primary_owner_propositions": [
+    "D0.archive_record_kernel_projectively_compatible",
+    "D0.archive_projection_surjective",
+    "D0.archive_tower_defines_profinite_object",
+    "D0.archiveFintypeDiagram_succ",
+    "D0.archiveDiagram_transition_surjective",
+    "D0.Spectral.CanonicalRefinementScaleFlow.scale_ratio_forced"
+  ],
+  "printed_primary_owner_propositions": {
+    "D0.Spectral.CanonicalRefinementScaleFlow.scale_ratio_forced": "D0.Spectral.CanonicalRefinementScaleFlow.scale_ratio_forced (N : \u2115) :\n  D0.Spectral.CanonicalRefinementScaleFlow.Lambda (N + 1) / D0.Spectral.CanonicalRefinementScaleFlow.Lambda N = D0.phi",
+    "D0.archiveDiagram_transition_surjective": "D0.archiveDiagram_transition_surjective (n : \u2115) :\n  Function.Surjective\n    \u21d1(CategoryTheory.ConcreteCategory.hom (D0.archiveFintypeDiagram.map (CategoryTheory.homOfLE \u22ef).op))",
+    "D0.archiveFintypeDiagram_succ": "D0.archiveFintypeDiagram_succ (n : \u2115) :\n  D0.archiveFintypeDiagram.map (CategoryTheory.homOfLE \u22ef).op = FintypeCat.homMk (D0.archiveProjection n)",
+    "D0.archive_projection_surjective": "D0.archive_projection_surjective (n : \u2115) : Function.Surjective (D0.archiveProjection n)",
+    "D0.archive_record_kernel_projectively_compatible": "D0.archive_record_kernel_projectively_compatible (n : \u2115) (x y : D0.ArchivePoints (n + 1)) :\n  (D0.archiveSpectralStage (n + 1)).Delta x y =\n    (D0.archiveSpectralStage n).Delta ((D0.archiveSpectralProjection n).map x) ((D0.archiveSpectralProjection n).map y)",
+    "D0.archive_tower_defines_profinite_object": "D0.archive_tower_defines_profinite_object : D0.DefinesProfiniteObject D0.archiveProfiniteSystem"
+  },
+  "printed_propositions": {
+    "D0.Research.CondensedPrice.actual_archive_hidden_dimension_positive": "D0.Research.CondensedPrice.actual_archive_hidden_dimension_positive (n : \u2115) :\n  0 < Fintype.card (D0.ArchivePoints (n + 1)) - Fintype.card (D0.ArchivePoints n)",
+    "D0.Research.CondensedPrice.actual_archive_hidden_trace": "D0.Research.CondensedPrice.actual_archive_hidden_trace (n : \u2115) :\n  (1 -\n        D0.Research.CondensedPrice.lift (D0.archiveProjection n) *\n          D0.Research.CondensedPrice.average (D0.archiveProjection n)).trace =\n    \u2191(Fintype.card (D0.ArchivePoints (n + 1))) - \u2191(Fintype.card (D0.ArchivePoints n))",
+    "D0.Research.CondensedPrice.actual_archive_initial_dimensions": "D0.Research.CondensedPrice.actual_archive_initial_dimensions :\n  Fintype.card (D0.ArchivePoints 0) = 16 \u2227\n    Fintype.card (D0.ArchivePoints 1) = 81 \u2227 Fintype.card (D0.ArchivePoints 2) = 256",
+    "D0.Research.CondensedPrice.actual_archive_root_hidden_positive": "D0.Research.CondensedPrice.actual_archive_root_hidden_positive (n : \u2115) (hn : 1 \u2264 n) :\n  0 < Fintype.card (D0.ArchivePoints n) - Fintype.card (D0.ArchivePoints 0)",
+    "D0.Research.CondensedPrice.actual_archive_split": "D0.Research.CondensedPrice.actual_archive_split (n : \u2115) :\n  D0.Research.CondensedPrice.average (D0.archiveProjection n) *\n      D0.Research.CondensedPrice.lift (D0.archiveProjection n) =\n    1",
+    "D0.Research.CondensedPrice.actual_phi_gt_one": "D0.Research.CondensedPrice.actual_phi_gt_one : 1 < D0.phi",
+    "D0.Research.CondensedPrice.actual_phi_scale_ratio": "D0.Research.CondensedPrice.actual_phi_scale_ratio (n : \u2115) :\n  D0.Spectral.CanonicalRefinementScaleFlow.Lambda (n + 1) / D0.Spectral.CanonicalRefinementScaleFlow.Lambda n = D0.phi",
+    "D0.Research.CondensedPrice.actual_record_matrix_first_arrow": "D0.Research.CondensedPrice.actual_record_matrix_first_arrow :\n  D0.Research.CondensedPrice.lift (D0.archiveProjection 0) *\n      (D0.Research.CondensedPrice.lift (D0.archiveProjection 0)).transpose =\n    fun i j => D0.archiveDelta 1 i j",
+    "D0.Research.CondensedPrice.actual_record_operator_naturality_fails": "D0.Research.CondensedPrice.actual_record_operator_naturality_fails :\n  D0.Research.CondensedPrice.average (D0.archiveProjection 0) *\n      (D0.Research.CondensedPrice.lift (D0.archiveProjection 0) *\n        (D0.Research.CondensedPrice.lift (D0.archiveProjection 0)).transpose) \u2260\n    1 * D0.Research.CondensedPrice.average (D0.archiveProjection 0)",
+    "D0.Research.CondensedPrice.affine_state_gap_source": "D0.Research.CondensedPrice.affine_state_gap_source (Z r beta s v feedback : \u211d) (hZ : 0 < Z) (hr : 0 < r)\n  (hb : beta \u2260 0) :\n  HasDerivAt (fun x => D0.Research.CondensedPrice.heat Z r beta (s + v * x) + feedback)\n    (D0.Research.CondensedPrice.heatSource Z r beta s * v) 0",
+    "D0.Research.CondensedPrice.average_complement_zero": "D0.Research.CondensedPrice.average_complement_zero.{u_1, u_2} {c : Type u_1} {f : Type u_2} [Fintype c] [Fintype f]\n  [DecidableEq c] [DecidableEq f] (J : Matrix f c \u211d) (C : Matrix c f \u211d) (hCJ : C * J = 1) : C * (1 - J * C) = 0",
+    "D0.Research.CondensedPrice.average_lift": "D0.Research.CondensedPrice.average_lift.{u_1, u_2} {c : Type u_1} {f : Type u_2} [Fintype c] [Fintype f] [DecidableEq c]\n  [DecidableEq f] (pi : f \u2192 c) (hp : Function.Surjective pi) :\n  D0.Research.CondensedPrice.average pi * D0.Research.CondensedPrice.lift pi = 1",
+    "D0.Research.CondensedPrice.complement_keeps_symmetry": "D0.Research.CondensedPrice.complement_keeps_symmetry.{u_2} {f : Type u_2} [Fintype f] [DecidableEq f]\n  (R P : D0.Research.CondensedPrice.Mat f) (hRP : R * P = P * R) : R * (1 - P) = (1 - P) * R",
+    "D0.Research.CondensedPrice.complement_lift_zero": "D0.Research.CondensedPrice.complement_lift_zero.{u_1, u_2} {c : Type u_1} {f : Type u_2} [Fintype c] [Fintype f]\n  [DecidableEq c] [DecidableEq f] (J : Matrix f c \u211d) (C : Matrix c f \u211d) (hCJ : C * J = 1) : (1 - J * C) * J = 0",
+    "D0.Research.CondensedPrice.complement_trace": "D0.Research.CondensedPrice.complement_trace.{u_1, u_2} {c : Type u_1} {f : Type u_2} [Fintype c] [Fintype f]\n  [DecidableEq c] [DecidableEq f] (J : Matrix f c \u211d) (C : Matrix c f \u211d) (hCJ : C * J = 1) :\n  (1 - J * C).trace = \u2191(Fintype.card f) - \u2191(Fintype.card c)",
+    "D0.Research.CondensedPrice.complete_scalar_price_jet_fibre": "D0.Research.CondensedPrice.complete_scalar_price_jet_fibre (Z r beta s feedback a : \u211d) (hZ : 0 < Z) (hr : 0 < r)\n  (hb : beta \u2260 0) : \u2203 v, HasDerivAt (fun x => D0.Research.CondensedPrice.heat Z r beta (s + v * x) + feedback) a 0",
+    "D0.Research.CondensedPrice.completion_is_natural": "D0.Research.CondensedPrice.completion_is_natural.{u_1, u_2} {c : Type u_1} {f : Type u_2} [Fintype c] [Fintype f]\n  [DecidableEq c] [DecidableEq f] (J : Matrix f c \u211d) (C : Matrix c f \u211d) (A : D0.Research.CondensedPrice.Mat c)\n  (B : D0.Research.CondensedPrice.Mat f) (hCJ : C * J = 1) (hBJ : B * J = 0) (hCB : C * B = 0) :\n  (J * A * C + B) * J = J * A \u2227 C * (J * A * C + B) = A * C",
+    "D0.Research.CondensedPrice.fibreCard_pos": "D0.Research.CondensedPrice.fibreCard_pos.{u_1, u_2} {c : Type u_1} {f : Type u_2} [Fintype c] [Fintype f]\n  [DecidableEq c] [DecidableEq f] (pi : f \u2192 c) (hp : Function.Surjective pi) (a : c) :\n  0 < D0.Research.CondensedPrice.fibreCard pi a",
+    "D0.Research.CondensedPrice.fibre_count_real": "D0.Research.CondensedPrice.fibre_count_real.{u_1, u_2} {c : Type u_1} {f : Type u_2} [Fintype c] [Fintype f]\n  [DecidableEq c] [DecidableEq f] (pi : f \u2192 c) (a : c) :\n  (\u2211 i, if pi i = a then 1 else 0) = \u2191(D0.Research.CondensedPrice.fibreCard pi a)",
+    "D0.Research.CondensedPrice.fixed_budget_mode_equality": "D0.Research.CondensedPrice.fixed_budget_mode_equality (beta lam ceiling : \u211d) (hb : 0 < beta) :\n  Real.exp (-beta * lam) = Real.exp (-beta * ceiling) \u2194 lam = ceiling",
+    "D0.Research.CondensedPrice.fixed_budget_mode_minimum": "D0.Research.CondensedPrice.fixed_budget_mode_minimum (beta lam ceiling : \u211d) (hb : 0 < beta) (hl : lam \u2264 ceiling) :\n  Real.exp (-beta * ceiling) \u2264 Real.exp (-beta * lam)",
+    "D0.Research.CondensedPrice.fixed_budget_partition_equality": "D0.Research.CondensedPrice.fixed_budget_partition_equality.{u_1} {c : Type u_1} [Fintype c] [DecidableEq c]\n  (beta ceiling : \u211d) (lam : c \u2192 \u211d) (hb : 0 < beta) (hl : \u2200 (i : c), lam i \u2264 ceiling) :\n  \u2211 i, Real.exp (-beta * lam i) = \u2191(Fintype.card c) * Real.exp (-beta * ceiling) \u2194 \u2200 (i : c), lam i = ceiling",
+    "D0.Research.CondensedPrice.fixed_budget_partition_minimum": "D0.Research.CondensedPrice.fixed_budget_partition_minimum.{u_1} {c : Type u_1} [Fintype c] [DecidableEq c]\n  (beta ceiling : \u211d) (lam : c \u2192 \u211d) (hb : 0 < beta) (hl : \u2200 (i : c), lam i \u2264 ceiling) :\n  \u2191(Fintype.card c) * Real.exp (-beta * ceiling) \u2264 \u2211 i, Real.exp (-beta * lam i)",
+    "D0.Research.CondensedPrice.fixed_phi_shape_source": "D0.Research.CondensedPrice.fixed_phi_shape_source (Z beta s feedback : \u211d) (hZ : 0 < Z) (hb : beta \u2260 0) :\n  HasDerivAt\n    (fun x => D0.Research.CondensedPrice.heat (Z + 5 * Real.exp (-beta * D0.phi)) 60 beta (D0.phi * x) + feedback)\n    (D0.phi * D0.Research.CondensedPrice.heatSource (Z + 5 * Real.exp (-beta * D0.phi)) 60 beta (D0.phi * s)) s",
+    "D0.Research.CondensedPrice.fixed_phi_shape_source_nonzero": "D0.Research.CondensedPrice.fixed_phi_shape_source_nonzero (Z beta s : \u211d) (hZ : 0 < Z) :\n  D0.phi * D0.Research.CondensedPrice.heatSource (Z + 5 * Real.exp (-beta * D0.phi)) 60 beta (D0.phi * s) \u2260 0",
+    "D0.Research.CondensedPrice.gap_shift_trace": "D0.Research.CondensedPrice.gap_shift_trace.{u_1, u_2} {c : Type u_1} {f : Type u_2} [Fintype c] [Fintype f]\n  [DecidableEq c] [DecidableEq f] (J : Matrix f c \u211d) (C : Matrix c f \u211d) (A : D0.Research.CondensedPrice.Mat c) (s t : \u211d)\n  (hCJ : C * J = 1) :\n  (J * A * C + s \u2022 (1 - J * C) - (J * A * C + t \u2022 (1 - J * C))).trace =\n    (s - t) * (\u2191(Fintype.card f) - \u2191(Fintype.card c))",
+    "D0.Research.CondensedPrice.genuine_full_price_source": "D0.Research.CondensedPrice.genuine_full_price_source (Z r beta s feedback : \u211d) (hZ : 0 < Z) (hr : 0 < r)\n  (hb : beta \u2260 0) :\n  HasDerivAt (fun x => D0.Research.CondensedPrice.heat Z r beta x + feedback)\n    (D0.Research.CondensedPrice.heatSource Z r beta s) s",
+    "D0.Research.CondensedPrice.genuine_hidden_heat_source": "D0.Research.CondensedPrice.genuine_hidden_heat_source (Z r beta s : \u211d) (hZ : 0 < Z) (hr : 0 < r) (hb : beta \u2260 0) :\n  HasDerivAt (D0.Research.CondensedPrice.heat Z r beta) (D0.Research.CondensedPrice.heatSource Z r beta s) s",
+    "D0.Research.CondensedPrice.hidden_heat_source_error": "D0.Research.CondensedPrice.hidden_heat_source_error (Z r beta s : \u211d) (hZ : 0 < Z) (hr : 0 < r) :\n  D0.Research.CondensedPrice.heatSource Z r beta s + 1 = Z / D0.Research.CondensedPrice.partition Z r beta s",
+    "D0.Research.CondensedPrice.hidden_heat_source_lower": "D0.Research.CondensedPrice.hidden_heat_source_lower (Z r beta s : \u211d) (hZ : 0 < Z) (hr : 0 < r) :\n  -1 < D0.Research.CondensedPrice.heatSource Z r beta s",
+    "D0.Research.CondensedPrice.hidden_heat_source_neg": "D0.Research.CondensedPrice.hidden_heat_source_neg (Z r beta s : \u211d) (hZ : 0 < Z) (hr : 0 < r) :\n  D0.Research.CondensedPrice.heatSource Z r beta s < 0",
+    "D0.Research.CondensedPrice.lift_gram_is_point_kernel": "D0.Research.CondensedPrice.lift_gram_is_point_kernel.{u_1, u_2} {c : Type u_1} {f : Type u_2} [Fintype c] [Fintype f]\n  [DecidableEq c] [DecidableEq f] (pi : f \u2192 c) :\n  D0.Research.CondensedPrice.lift pi * (D0.Research.CondensedPrice.lift pi).transpose = fun i j =>\n    if pi i = pi j then 1 else 0",
+    "D0.Research.CondensedPrice.natural_composites": "D0.Research.CondensedPrice.natural_composites.{u_1, u_2, u_3} {c : Type u_1} {f : Type u_2} [Fintype c] [Fintype f]\n  [DecidableEq c] [DecidableEq f] {b : Type u_3} [Fintype b] [DecidableEq b] (J : Matrix f c \u211d) (C : Matrix c f \u211d)\n  (K : Matrix c b \u211d) (D : Matrix b c \u211d) (hCJ : C * J = 1) (hDK : D * K = 1) : D * C * (J * K) = 1",
+    "D0.Research.CondensedPrice.natural_extension_complete": "D0.Research.CondensedPrice.natural_extension_complete.{u_1, u_2} {c : Type u_1} {f : Type u_2} [Fintype c] [Fintype f]\n  [DecidableEq c] [DecidableEq f] (J : Matrix f c \u211d) (C : Matrix c f \u211d) (A : D0.Research.CondensedPrice.Mat c)\n  (L : D0.Research.CondensedPrice.Mat f) (hCJ : C * J = 1) (hL : L * J = J * A) (hC : C * L = A * C) :\n  L = J * A * C + (1 - J * C) * L * (1 - J * C)",
+    "D0.Research.CondensedPrice.no_independent_hidden_heat_stationarity": "D0.Research.CondensedPrice.no_independent_hidden_heat_stationarity (Z r beta s feedback : \u211d) (hZ : 0 < Z) (hr : 0 < r)\n  (hb : beta \u2260 0) : deriv (fun x => D0.Research.CondensedPrice.heat Z r beta x + feedback) s \u2260 0",
+    "D0.Research.CondensedPrice.normalized_heat_error_bounds": "D0.Research.CondensedPrice.normalized_heat_error_bounds (Z r beta s : \u211d) (hZ : 0 < Z) (hr : 0 < r) (hb : 0 < beta) :\n  0 < D0.Research.CondensedPrice.heat Z r beta s - beta\u207b\u00b9 * Real.log r + s \u2227\n    D0.Research.CondensedPrice.heat Z r beta s - beta\u207b\u00b9 * Real.log r + s \u2264\n      beta\u207b\u00b9 * D0.Research.CondensedPrice.tailRatio Z r beta s",
+    "D0.Research.CondensedPrice.normalized_heat_identity": "D0.Research.CondensedPrice.normalized_heat_identity (Z r beta s : \u211d) (hZ : 0 < Z) (hr : 0 < r) (hb : beta \u2260 0) :\n  D0.Research.CondensedPrice.heat Z r beta s - beta\u207b\u00b9 * Real.log r =\n    -s + beta\u207b\u00b9 * Real.log (1 + D0.Research.CondensedPrice.tailRatio Z r beta s)",
+    "D0.Research.CondensedPrice.partition_factor": "D0.Research.CondensedPrice.partition_factor (Z r beta s : \u211d) (hr : r \u2260 0) :\n  D0.Research.CondensedPrice.partition Z r beta s =\n    r * Real.exp (-beta * s) * (1 + D0.Research.CondensedPrice.tailRatio Z r beta s)",
+    "D0.Research.CondensedPrice.partition_pos": "D0.Research.CondensedPrice.partition_pos (Z r beta s : \u211d) (hZ : 0 < Z) (hr : 0 < r) :\n  0 < D0.Research.CondensedPrice.partition Z r beta s",
+    "D0.Research.CondensedPrice.record_kernel_operator_readout": "D0.Research.CondensedPrice.record_kernel_operator_readout.{u_1, u_2} {c : Type u_1} {f : Type u_2} [Fintype c]\n  [Fintype f] [DecidableEq c] [DecidableEq f] (pi : f \u2192 c) (hp : Function.Surjective pi) :\n  D0.Research.CondensedPrice.average pi *\n      (D0.Research.CondensedPrice.lift pi * (D0.Research.CondensedPrice.lift pi).transpose) =\n    (D0.Research.CondensedPrice.lift pi).transpose",
+    "D0.Research.CondensedPrice.scalar_complement_is_natural": "D0.Research.CondensedPrice.scalar_complement_is_natural.{u_1, u_2} {c : Type u_1} {f : Type u_2} [Fintype c] [Fintype f]\n  [DecidableEq c] [DecidableEq f] (J : Matrix f c \u211d) (C : Matrix c f \u211d) (A : D0.Research.CondensedPrice.Mat c) (s : \u211d)\n  (hCJ : C * J = 1) : (J * A * C + s \u2022 (1 - J * C)) * J = J * A \u2227 C * (J * A * C + s \u2022 (1 - J * C)) = A * C",
+    "D0.Research.CondensedPrice.source_tail_error_bounds": "D0.Research.CondensedPrice.source_tail_error_bounds (Z r beta s : \u211d) (hZ : 0 < Z) (hr : 0 < r) :\n  0 < D0.Research.CondensedPrice.heatSource Z r beta s + 1 \u2227\n    D0.Research.CondensedPrice.heatSource Z r beta s + 1 \u2264 D0.Research.CondensedPrice.tailRatio Z r beta s",
+    "D0.Research.CondensedPrice.source_tail_form": "D0.Research.CondensedPrice.source_tail_form (Z r beta s : \u211d) (hZ : 0 < Z) (hr : 0 < r) :\n  D0.Research.CondensedPrice.heatSource Z r beta s = -1 / (1 + D0.Research.CondensedPrice.tailRatio Z r beta s)",
+    "D0.Research.CondensedPrice.split_projection": "D0.Research.CondensedPrice.split_projection.{u_1, u_2} {c : Type u_1} {f : Type u_2} [Fintype c] [Fintype f]\n  [DecidableEq c] [DecidableEq f] (J : Matrix f c \u211d) (C : Matrix c f \u211d) (hCJ : C * J = 1) : J * C * (J * C) = J * C",
+    "D0.Research.CondensedPrice.uniform_gap_all_level_compatibility": "D0.Research.CondensedPrice.uniform_gap_all_level_compatibility.{u_1, u_2, u_3} {c : Type u_1} {f : Type u_2} [Fintype c]\n  [Fintype f] [DecidableEq c] [DecidableEq f] {b : Type u_3} [Fintype b] [DecidableEq b] (J : Matrix f c \u211d)\n  (C : Matrix c f \u211d) (K : Matrix c b \u211d) (D : Matrix b c \u211d) (A : D0.Research.CondensedPrice.Mat b) (s : \u211d)\n  (hCJ : C * J = 1) :\n  (J * K * A * (D * C) + s \u2022 (1 - J * K * (D * C))) * J = J * (K * A * D + s \u2022 (1 - K * D)) \u2227\n    C * (J * K * A * (D * C) + s \u2022 (1 - J * K * (D * C))) = (K * A * D + s \u2022 (1 - K * D)) * C",
+    "D0.Research.CondensedPrice.uniform_gap_completion": "D0.Research.CondensedPrice.uniform_gap_completion.{u_1, u_2, u_3} {c : Type u_1} {f : Type u_2} [Fintype c] [Fintype f]\n  [DecidableEq c] [DecidableEq f] {b : Type u_3} [Fintype b] [DecidableEq b] (J : Matrix f c \u211d) (C : Matrix c f \u211d)\n  (K : Matrix c b \u211d) (D : Matrix b c \u211d) (A : D0.Research.CondensedPrice.Mat b) (s : \u211d) :\n  J * (K * A * D + s \u2022 (1 - K * D)) * C + s \u2022 (1 - J * C) = J * K * A * (D * C) + s \u2022 (1 - J * K * (D * C))"
+  },
+  "printed_typed_owner_definitions": {
+    "D0.CompatibleOperatorFamily": "D0.CompatibleOperatorFamily (S : D0.ProjectiveSystem) : Type",
+    "D0.archiveLightProfinite": "D0.archiveLightProfinite : LightProfinite",
+    "D0.inducedLimitOperator": "D0.inducedLimitOperator {S : D0.ProjectiveSystem} (F : D0.CompatibleOperatorFamily S) (x : D0.ProfinitePoint S) :\n  D0.ProfinitePoint S"
+  },
+  "scalar_HasDerivAt_and_source_error_bounds_compiled": true,
+  "status": "PASS",
+  "supported_D0_tree": "fd8dfc359d23c9bd79ca23eeed7c045ce9c68c6b",
+  "toolchain_input_sha256": {
+    "03_FORMALIZATION/lake-manifest.json": "4ed211000f753c64c6b1fc155970f6b28c9500763f1ad520d8762ae165ac24fa",
+    "03_FORMALIZATION/lakefile.lean": "7a49cbade1c863e91b5cdc0dff0dddd8a272a3da94ef24200c6e3683276273e9",
+    "03_FORMALIZATION/lean-toolchain": "54727eec5cba149c18842e6deb5c41b369d66455c93ce135d7d5347c782b2325"
+  },
+  "transitive_d0_source_sha256": {
+    "03_FORMALIZATION/D0/Combinatorics/InfinitePhaseTower.lean": "4f5b32b3b0ca7e682b8e197e10526370c553d1b5f11060a2f6e62862c0b36f05",
+    "03_FORMALIZATION/D0/Combinatorics/PhaseTower.lean": "3aceb5bc63e7d23c0a4f9a065eea4be1af7bee38e7c5dd51391598641d54acb9",
+    "03_FORMALIZATION/D0/Combinatorics/PhaseTowerControls.lean": "f59f24f9ef8a2edf9c542cf8e06d97024ecb53ee7e5b3068da198979a74d87c1",
+    "03_FORMALIZATION/D0/Combinatorics/PhaseTowerMinimality.lean": "5d56c525e9549764fee894d8a74f626ed5965123f5a013915c3c67ae18166e6a",
+    "03_FORMALIZATION/D0/Combinatorics/PhaseTowerRecursion.lean": "cbaae0e2bfdeaa197f1557a29eb53bbea780cddf78f98d9e8928c6a09b5ec46c",
+    "03_FORMALIZATION/D0/Condensed/OperatorNaturality.lean": "8a6be8638cd52e75b612db2416eca350f487c2bdcb2368fc969f854acd774666",
+    "03_FORMALIZATION/D0/Condensed/ProfiniteSupport.lean": "19c41f5658ed122f083e86d9af4667054aed0082606802c1c1462baf689cded3",
+    "03_FORMALIZATION/D0/Condensed/ProjectiveSystem.lean": "3a590e098ef9f50262b4b6ea3b542a08a6b2d536fb3d18dfa3e6bd8522d74158",
+    "03_FORMALIZATION/D0/Core/Phi.lean": "661871661e23ea971e5d50de5c63772db22ecbb5e461640b1f597bb3b6c5e38a",
+    "03_FORMALIZATION/D0/Geometry/ArchiveLightProfinite.lean": "50955c47df5d2f8f5e7975e01768672e9e806aab6a4f31607e673893afb3885a",
+    "03_FORMALIZATION/D0/Geometry/ArchiveRefinementTower.lean": "253342935b592df104629259341c2d3d6065cd0ba4ec55769f484f005e036673",
+    "03_FORMALIZATION/D0/Geometry/CovarianceTower.lean": "3452400583b01f0dfddd6fa6e70078db073cd643c1cde243d861aff714080bde",
+    "03_FORMALIZATION/D0/Geometry/InfiniteSpectralTower.lean": "a9b77520d350583f778123087c7b6db17b2284b72ef0c993ae671366e3eb475f",
+    "03_FORMALIZATION/D0/Geometry/SpectralTower.lean": "3d5e8e71e6bef1eeabf48fb63562e0d422c35f22b399f612179a3827485969ef",
+    "03_FORMALIZATION/D0/Spectral/CanonicalRefinementScaleFlow.lean": "c8637b7cd3eaf13f1463e5273f08a2e887d3b8016d2d4b3663ec8ee36dc74f09"
+  },
+  "typed_owner_definitions": [
+    "D0.CompatibleOperatorFamily",
+    "D0.inducedLimitOperator",
+    "D0.archiveLightProfinite"
+  ]
+}

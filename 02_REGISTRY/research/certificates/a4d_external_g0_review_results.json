@@ -1,0 +1,28 @@
+{
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "capsule": "02_REGISTRY/research/certificates/a4d_external_g0_review.lean",
+  "capsule_sha256": "1bc7f359923b68fb45a2e0d71ddb3c4da723edd867ee7a81430287e52495acd3",
+  "command": "lake env lean ../02_REGISTRY/research/certificates/a4d_external_g0_review.lean",
+  "command_cwd": "03_FORMALIZATION",
+  "compiler_exit_code": 0,
+  "output": "02_REGISTRY/research/certificates/a4d_external_g0_review_output.txt",
+  "output_sha256": "7dd777076f9d01b525a694c000245ada11fc399eaa7000c8023a2cb919fc2106",
+  "owner_input_head": "a2a2ccae43ec4812ade33db7b0610245e173f4b9",
+  "printed_axiom_dependencies": 20,
+  "scope": "Independent report review: literal all-size scalar-cycle cube obstruction, corrected jet observations, and abstract countermodels to the asserted isotropy/readout dichotomy. No native physical action or G0 closure.",
+  "sorryAx": false,
+  "status": "PASS",
+  "toolchain_input_sha256": {
+    "03_FORMALIZATION/lake-manifest.json": "4ed211000f753c64c6b1fc155970f6b28c9500763f1ad520d8762ae165ac24fa",
+    "03_FORMALIZATION/lakefile.lean": "7a49cbade1c863e91b5cdc0dff0dddd8a272a3da94ef24200c6e3683276273e9",
+    "03_FORMALIZATION/lean-toolchain": "54727eec5cba149c18842e6deb5c41b369d66455c93ce135d7d5347c782b2325"
+  },
+  "transitive_d0_source_sha256": {
+    "03_FORMALIZATION/D0/Geometry/A4DScalarDeltaSecondJet.lean": "cd0713e30c13dee7d2ce034de0ce5c6ab042afd6fb61d0708663b5043ad12d34",
+    "03_FORMALIZATION/D0/Geometry/A4DSecondOrderCartanCongruence.lean": "2a2b44a96ea6836fe2afbdd7f6795d4198f8d0f9165994c8bf916ff69d53866d"
+  }
+}

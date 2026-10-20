@@ -1,0 +1,18 @@
+'D0.Research.NativeSpectralFrame.actual_flux_scalar_eigen' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeSpectralFrame.kernel_eigen' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeSpectralFrame.owned_energy_eigen' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeSpectralFrame.actual_flux_symmetric' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeSpectralFrame.owned_energy_square_form' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeSpectralFrame.paired_positive_coefficients_defect' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeSpectralFrame.boost_lorentz' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeSpectralFrame.boost_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeSpectralFrame.thetaMinus_det' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeSpectralFrame.thetaPlus_det' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeSpectralFrame.negative_ray' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeSpectralFrame.positive_ray' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeSpectralFrame.scalar_descent_forces_constant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeSpectralFrame.quadratic_uniform_defect' depends on axioms: [propext, Classical.choice, Quot.sound]

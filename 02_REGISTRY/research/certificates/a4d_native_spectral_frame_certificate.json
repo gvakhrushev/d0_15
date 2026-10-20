@@ -1,0 +1,108 @@
+{
+  "checks": [
+    "COMPILED_ACTUAL_OPERATOR_AND_EXTERIOR_BINDINGS",
+    "GENERAL_CONNECTED_BOOST_LORENTZ",
+    "GENERAL_CONNECTED_BOOST_PROPER",
+    "FIXED_RATIONAL_BOOST_PROPER_TIME_ORIENTED",
+    "ALL_16_LITERAL_CAR_ENDS_KILL_SCALAR",
+    "ALL_TEN_PACKED_METRIC_WEIGHTS",
+    "NONDEGENERATE_ORIENTED_minus",
+    "ENTIRE_RAW_GRAM_ORBIT_minus",
+    "EXACT_SCALAR_RAY_minus",
+    "FULL_CONSTANT_FOCK_OPERATOR_SCALAR_minus",
+    "LITERAL_QUADRATIC_KERNEL_AND_ACTION_minus",
+    "FIXED_DEFECT_minus",
+    "ALL_TEN_GRAM_ROWS_AND_VERTICAL_KERNEL_minus",
+    "LITERAL_VERTICAL_RESPONSE_minus",
+    "NO_METRIC_COVECTOR_FIT_minus",
+    "NONDEGENERATE_ORIENTED_plus",
+    "ENTIRE_RAW_GRAM_ORBIT_plus",
+    "EXACT_SCALAR_RAY_plus",
+    "FULL_CONSTANT_FOCK_OPERATOR_SCALAR_plus",
+    "LITERAL_QUADRATIC_KERNEL_AND_ACTION_plus",
+    "FIXED_DEFECT_plus",
+    "ALL_TEN_GRAM_ROWS_AND_VERTICAL_KERNEL_plus",
+    "LITERAL_VERTICAL_RESPONSE_plus",
+    "NO_METRIC_COVECTOR_FIT_plus",
+    "SHARP_ALL_COEFFICIENT_OPERATOR_GAP",
+    "SHARP_NORMALIZED_OWNED_ACTION_GAP",
+    "COEFFICIENT_INDEPENDENT_VERTICAL_DEFECT",
+    "NORMALIZED_CONSTANT_FIELD_ALL_SITES_4",
+    "NORMALIZED_CONSTANT_FIELD_ALL_SITES_8",
+    "NORMALIZED_CONSTANT_FIELD_ALL_SITES_12",
+    "NEGATIVE_RAY_INVERSE",
+    "POSITIVE_RAY_INVERSE",
+    "ARBITRARILY_NEAR_FLAT_DEFECT",
+    "OWNED_POSITIVE_POLYNOMIAL_SQUARE",
+    "FIELD_ONLY_ROOT_NOT_JOINT_GATE",
+    "TWO_PROBES_INSUFFICIENT_FOR_GENERAL_NONLINEAR_FUNCTION",
+    "ACTUAL_EXTERIOR_SCALAR_FIXED",
+    "CONSTANT_SPECTRAL_READOUT_NOT_FULL_COUNTING_ACTION_COVARIANCE",
+    "FIXED_FIRST_JET_DOES_NOT_PREVENT_SPECTRAL_COLLAPSE",
+    "CURVED_ALL_SIZE_QUADRATIC_COEFFICIENTS",
+    "CURVED_UNIFORM_POSITIVE_COEFFICIENT_BOUNDS",
+    "CURVED_EXACT_SAMPLING_MOMENTS_4",
+    "CURVED_LITERAL_ACTION_DEFECT_minus_4",
+    "CURVED_LITERAL_ACTION_DEFECT_plus_4",
+    "CURVED_EXACT_SAMPLING_MOMENTS_8",
+    "CURVED_LITERAL_ACTION_DEFECT_minus_8",
+    "CURVED_LITERAL_ACTION_DEFECT_plus_8",
+    "CURVED_EXACT_SAMPLING_MOMENTS_12",
+    "CURVED_LITERAL_ACTION_DEFECT_minus_12",
+    "CURVED_LITERAL_ACTION_DEFECT_plus_12",
+    "CURVED_EXACT_SAMPLING_MOMENTS_16",
+    "CURVED_LITERAL_ACTION_DEFECT_minus_16",
+    "CURVED_LITERAL_ACTION_DEFECT_plus_16",
+    "CURVED_ALL_64_CHRISTOFFEL_AND_16_RICCI_minus",
+    "GENUINELY_CURVED_BACKGROUND_minus",
+    "CURVED_ALL_64_CHRISTOFFEL_AND_16_RICCI_plus",
+    "GENUINELY_CURVED_BACKGROUND_plus"
+  ],
+  "curved_operator_quadratic_coefficients": {
+    "minus": "qcos/1600 + 43/640",
+    "plus": "191/3200 - 3*qcos/1600"
+  },
+  "curved_scalar_curvatures_at_zero": {
+    "minus": "-9600*pi**2/1331",
+    "plus": "-3200*pi**2/3993"
+  },
+  "input_head": "080cb15ceb6b273f1f4bb5ccaae50251307d257b",
+  "inputs_sha256": {
+    "02_REGISTRY/research/certificates/a4d_native_reference_weight.lean": "9be03c6a0fcb7a80f63ef57f468cbe616e27158094ec792bf755fc1a2778679c",
+    "02_REGISTRY/research/certificates/a4d_native_reference_weight_results.json": "ccb329ad17a23c7ee19b7cea465fb7e42d83bfa872931d2c96741c31487c69cf",
+    "03_FORMALIZATION/D0/Geometry/A4DConstitutiveKernelClassification.lean": "082efa73eb5bc4cd11039e637c899114309ebf7c2656ccd4abe075ddb4c80aa4",
+    "03_FORMALIZATION/D0/Geometry/A4DDiscreteEnergyKernel.lean": "e5adf60c7d97b700cc276aab736667bc1d8eac078f15fa84206feb6c04c4f9a6",
+    "03_FORMALIZATION/D0/Geometry/A4DRawSolderFrameAction.lean": "4096e0a3b132841a60907f71bb48b726399c789231b804b869708249f7087438",
+    "03_FORMALIZATION/D0/Geometry/A4DSolderMetricCompletion.lean": "43e2e55c79edae8f17e891c7ad600a7a0609e2d51ef0953d7abd11bcfecc16fa",
+    "03_FORMALIZATION/D0/Geometry/ArchiveExteriorFrameLift.lean": "69e7a9a0290ee08c748db03c62d5e331e23efdeb84fb6ffefe4165267b14c967"
+  },
+  "normalized_action_defects": {
+    "minus": "alpha/32 - 1/8",
+    "plus": "alpha/32 + 1/8"
+  },
+  "operator_defects": {
+    "minus": "alpha/16 - 1/4",
+    "plus": "alpha/16 + 1/4"
+  },
+  "protected_exception": "The admitted class must include the two full frame orbits and the scalar sector with its actual exterior lift. Constant scalar functions pass only this necessary test; different readouts, pairings or restricted sectors require separate owners.",
+  "rays": {
+    "minus": {
+      "base_argument": "0",
+      "scalar_argument": "1 - a",
+      "theta_det": "-1/2"
+    },
+    "plus": {
+      "base_argument": "0",
+      "scalar_argument": "a - 1",
+      "theta_det": "-9/2"
+    }
+  },
+  "scope": "Necessary scalar frame descent for spectral functions of the literal flux operator; owned kernelPoly/squaredFluxEnergy candidate binding only, no new native action or physical gate.",
+  "sharp_normalized_action_gap": "1/8",
+  "sharp_operator_gap": "1/4",
+  "status": "PASS",
+  "vertical_defects": {
+    "minus": "3*alpha/8 - 3/4",
+    "plus": "3*alpha/8 + 3/4"
+  }
+}

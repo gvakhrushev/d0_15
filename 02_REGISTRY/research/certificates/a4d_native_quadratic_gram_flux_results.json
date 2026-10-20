@@ -1,0 +1,259 @@
+{
+  "checks": [
+    "INDEFINITE_FULL_AUXILIARY_GATE",
+    "ALL_KERNEL_PREPARATIONS_SHARE_PROFILE",
+    "SIGNED_PROFILE_IS_QUADRATIC",
+    "CENTERED_SECANT_EXACTLY_AFFINE",
+    "GENERIC_STATIONARY_VALUE_DIFFERENCE_IDENTITY",
+    "MISSING_AUXILIARY_GATE_IS_NOT_COVERED",
+    "NONQUADRATIC_NATIVE_ACTION_IS_NOT_COVERED",
+    "GRAM_ALL_TEN_SLOTS_RANK",
+    "SIX_LORENTZ_FRAME_DIRECTIONS_ARE_EXACT_KERNEL",
+    "GRAM_RIGHT_INVERSE_AND_PACKED_WEIGHT_00",
+    "GRAM_RIGHT_INVERSE_AND_PACKED_WEIGHT_01",
+    "GRAM_RIGHT_INVERSE_AND_PACKED_WEIGHT_02",
+    "GRAM_RIGHT_INVERSE_AND_PACKED_WEIGHT_03",
+    "GRAM_RIGHT_INVERSE_AND_PACKED_WEIGHT_11",
+    "GRAM_RIGHT_INVERSE_AND_PACKED_WEIGHT_12",
+    "GRAM_RIGHT_INVERSE_AND_PACKED_WEIGHT_13",
+    "GRAM_RIGHT_INVERSE_AND_PACKED_WEIGHT_22",
+    "GRAM_RIGHT_INVERSE_AND_PACKED_WEIGHT_23",
+    "GRAM_RIGHT_INVERSE_AND_PACKED_WEIGHT_33",
+    "NULL_RANK_ONE_GRAM_TERM_VANISHES",
+    "COFRAME_AND_METRIC_PENCIL_BOTH_AFFINE",
+    "ACTUAL_STRAIGHT_METRIC_ENDPOINTS",
+    "GRAM_PENCIL_DETERMINANT",
+    "PHYSICAL_SOLDER_FIXED_ORIENTATION_CONVERSION",
+    "NON_NULL_GRAM_DIRECTION_HAS_QUADRATIC_TERM",
+    "ALL_RICCI_COMPONENTS_SYMMETRIC",
+    "GRAM_PENCIL_LITERAL_RICCI_SCALAR",
+    "INDEPENDENT_CONFORMAL_SIGN_AT_BASE",
+    "PERIODIC_INTEGRATION_BY_PARTS_ALL_COEFFICIENTS",
+    "NONZERO_THIRD_VARIATION",
+    "CURVED_PENCIL_STRICT_THIRD_BOUND",
+    "CURVED_BASE_IS_NONFLAT",
+    "ZERO_FIELD_CURVED_GATE_HAS_NONZERO_EINSTEIN_VARIATION",
+    "FIXED_AFFINE_METRIC_SOURCE_CANNOT_REPAIR_THIRD_VARIATION",
+    "GENERIC_FIELD_EULER_ALL_COMPONENTS",
+    "GENERIC_LOCAL_GEOMETRY_EULER_ALL_COMPONENTS",
+    "GENERIC_FULL_JOINT_ZERO_FIELD_IDENTITY",
+    "ZERO_FIELD_SOLVES_EVERY_FIELD_AND_GEOMETRY_ROW",
+    "ZERO_FIELD_FULL_JOINT_FIRST_VARIATION_VANISHES",
+    "POLYNOMIAL_KERNEL_EXACT_COERCIVE_SQUARE",
+    "QUARTER_KERNEL_IS_A_SQUARE",
+    "QUARTER_NONZERO_KERNEL_SOURCE_ZERO_0",
+    "QUARTER_NONZERO_KERNEL_SOURCE_ZERO_1",
+    "QUARTER_NONZERO_KERNEL_SOURCE_ZERO_2",
+    "QUARTER_NONZERO_KERNEL_SOURCE_ZERO_3",
+    "QUARTER_NONZERO_KERNEL_SOURCE_ZERO_4",
+    "QUARTER_NONZERO_KERNEL_SOURCE_ZERO_5",
+    "NONZERO_FIXED_FORCING_CHANGES_GATE",
+    "NORMALIZED_FIELD_VARIATIONS_DO_NOT_INCLUDE_RADIAL_DIRECTION",
+    "ACTUAL_16_STATE_CAR_ALL_RELATIONS",
+    "ALL_SIXTEEN_CAR_BILINEARS_KILL_VACUUM",
+    "LITERAL_CONSTANT_FOCK_SCALAR_ACTION",
+    "LITERAL_LOCAL_SIXTEEN_SLOT_SOURCE",
+    "NONDEGENERATE_ACTUAL_FIELD_ONLY_ROOT",
+    "PROPER_TIME_ORIENTED_RATIONAL_BOOST",
+    "BOOST_PRESERVES_ACTUAL_RAW_GRAM",
+    "OWNED_EXTERIOR_LIFT_FIXES_SCALAR_SECTOR",
+    "FLUX_ACTION_FAILS_NONLINEAR_LORENTZ_DESCENT",
+    "FIELD_GATE_FAILS_NONLINEAR_LORENTZ_DESCENT",
+    "FIELD_ONLY_ROOT_METRIC_SOURCE_NONZERO"
+  ],
+  "consumed_published_probe": {
+    "path": "02_REGISTRY/research/certificates/a4d_finite_probe_palatini_check.py",
+    "sha256": "7f2d1c58fa4d4a8c52b2b3c76b9ca1369297f3c169d4216cbc5b7434ac787d6d",
+    "source_head": "af221e2fed92821c52afc88a5500774de8cd9a93"
+  },
+  "flux_gate": {
+    "boosted_energy_per_site": "-1/8",
+    "boosted_field_residual": [
+      [
+        "-1/4"
+      ],
+      [
+        "0"
+      ],
+      [
+        "0"
+      ],
+      [
+        "0"
+      ],
+      [
+        "0"
+      ],
+      [
+        "0"
+      ],
+      [
+        "0"
+      ],
+      [
+        "0"
+      ],
+      [
+        "0"
+      ],
+      [
+        "0"
+      ],
+      [
+        "0"
+      ],
+      [
+        "0"
+      ],
+      [
+        "0"
+      ],
+      [
+        "0"
+      ],
+      [
+        "0"
+      ],
+      [
+        "0"
+      ]
+    ],
+    "constant_root_gram": [
+      [
+        "1",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "-4",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "-1"
+      ]
+    ],
+    "constant_root_local_coframe_source": [
+      [
+        "1/2",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "1/2",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1/2",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "1/2"
+      ]
+    ],
+    "joint_solution_set": "psi=0; coframe arbitrary",
+    "polynomial_positive_regime": "alpha>1/4: only psi=0; no coefficient selected",
+    "zero_field_curved_Einstein_derivative": "6*pi**2/5"
+  },
+  "gram_pencil": {
+    "curved_base_owner_scalar_at_peak": "2400*pi**2/1331",
+    "frame_kernel_dimension": 6,
+    "full_metric_differential_rank": 10,
+    "gram": [
+      [
+        "w*(2*s + w)",
+        "s*w",
+        "0",
+        "0"
+      ],
+      [
+        "s*w",
+        "-w**2",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "-w**2",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "-w**2"
+      ]
+    ],
+    "owner_density": "(5*p**2*s**2 + 4*p**2*s*w - 8*q*s**2*w - 20*q*s*w**2 - 12*q*w**3)/(4*w*(s + w))",
+    "periodic_coefficient": "(s + 2*w)*(5*s + 6*w)/(4*w*(s + w))",
+    "ricci": [
+      [
+        "(3*p**2*s**2 + 6*p**2*s*w + 2*p**2*w**2 + 2*q*s**3 + 6*q*s**2*w + 6*q*s*w**2 + 2*q*w**3)/(2*w**2*(s + w)**2)",
+        "s*(p**2*s + 2*p**2*w + q*s**2 + 2*q*s*w + q*w**2)/(2*w**2*(s + w)**2)",
+        "0",
+        "0"
+      ],
+      [
+        "s*(p**2*s + 2*p**2*w + q*s**2 + 2*q*s*w + q*w**2)/(2*w**2*(s + w)**2)",
+        "-(p**2*s**2 + 2*p**2*s*w + 2*p**2*w**2 + 2*q*s**2*w + 4*q*s*w**2 + 2*q*w**3)/(2*w**2*(s + w)**2)",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "(5*p**2*s**2 + 10*p**2*s*w + 6*p**2*w**2 - 4*q*s**2*w - 10*q*s*w**2 - 6*q*w**3)/(2*w**2*(s + w)**2)",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "-(p**2 + q*s + q*w)/(w*(s + w))"
+      ]
+    ],
+    "standard_scalar": "-(5*p**2*s**2 + 4*p**2*s*w - 8*q*s**2*w - 20*q*s*w**2 - 12*q*w**3)/(2*w**4*(s + w)**2)",
+    "strict_third_upper_bound": "-30*pi**2/1331",
+    "third_integrand_coefficient_at_zero": "-3/(2*w**3)"
+  },
+  "input_head": "a30408721a3804e3d0c97fe2a210a556dbff4b67",
+  "input_sha256": {
+    "03_FORMALIZATION/D0/Geometry/A4DConstitutiveKernelClassification.lean": "082efa73eb5bc4cd11039e637c899114309ebf7c2656ccd4abe075ddb4c80aa4",
+    "03_FORMALIZATION/D0/Geometry/A4DDiscreteEnergyKernel.lean": "e5adf60c7d97b700cc276aab736667bc1d8eac078f15fa84206feb6c04c4f9a6",
+    "03_FORMALIZATION/D0/Geometry/A4DRawSolderFrameAction.lean": "4096e0a3b132841a60907f71bb48b726399c789231b804b869708249f7087438",
+    "03_FORMALIZATION/D0/Geometry/A4DSolderMetricCompletion.lean": "43e2e55c79edae8f17e891c7ad600a7a0609e2d51ef0953d7abd11bcfecc16fa",
+    "03_FORMALIZATION/D0/Geometry/A4DStarFiniteLorentzQuotient.lean": "12e9eb554f7535da65f1289894fbd91d2e5dbdf83a741873eedf092f13b72b0f",
+    "03_FORMALIZATION/D0/Geometry/ArchiveCARDegreePreserving.lean": "8e5a7d06e6cdbc0df08df1c7277ed22ed32271b2e4c8db6af4b6f915b7259c0f",
+    "03_FORMALIZATION/D0/Geometry/ArchiveCARRelations.lean": "846fddef981b82357bab5b1a4de72d7f27bdfc6321ed41bfdc26e410cbd0178d",
+    "03_FORMALIZATION/D0/Geometry/ArchiveExteriorFrameLift.lean": "69e7a9a0290ee08c748db03c62d5e331e23efdeb84fb6ffefe4165267b14c967",
+    "03_FORMALIZATION/D0/Gravity/A4DLinearizedMetricResponse.lean": "99361600de2c524a46ba92e7022739274e971954599626abf55aa38cfa5ff4c0"
+  },
+  "lean_capsule_receipt_sha256": "a8c1efd9ecce9ccfd3865522df4e61ce96cb31c2c79dedd23d0b69e2b8fb8172",
+  "scope": "Analytic arbitrary-stage signed-quadratic profile and literal standalone flux-gate obstructions; no full-core completeness, combined-action or native-refinement closure assertion.",
+  "signed_profile": {
+    "auxiliary_kernel_dimension": 1,
+    "secant": "37*s/3 + 3",
+    "value": "(74*s**2 + 36*s + 147)/12"
+  },
+  "status": "PASS"
+}

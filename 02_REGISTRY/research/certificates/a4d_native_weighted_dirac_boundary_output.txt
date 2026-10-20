@@ -1,0 +1,96 @@
+theorem D0.Geometry.archive_weighted_hodge_dirac_owner : formDegreeCount4D = 5 ∧
+  Fintype.card CubicalCellType = 16 ∧ DegreePreservingLaplacian true ∧ Fintype.card Role = 4 :=
+⟨rfl, ⟨card_archive_fock_state, ⟨rfl, card_role⟩⟩⟩
+theorem D0.Geometry.archive_metric_measure_hodge_lift_owner : ∀ (mu c_r : ℝ),
+  hodgeMetricMeasureWeight 0 mu 1 = mu ∧
+    hodgeMetricMeasureWeight 1 mu c_r = c_r ∧ Fintype.card CubicalCellType = 16 ∧ Fintype.card Role = 4 :=
+fun mu c_r => ⟨hodge_weight_0_eq_mu mu, ⟨hodge_weight_1_eq_conductance mu c_r, ⟨card_archive_fock_state, card_role⟩⟩⟩
+D0.Geometry.dForward_degree_raise (N k : ℕ) (ψ : ArchiveCochain N) (hψ : HomogeneousCochain N k ψ) :
+  HomogeneousCochain N (k + 1) (dForward N ψ)
+D0.Geometry.dForward_sq_zero (N : ℕ) (ψ : ArchiveCochain N) : dForward N (dForward N ψ) = 0
+D0.Geometry.hodgeCodifferential_sq (N : ℕ) (ψ : ArchiveCochain N) : hodgeCodifferential N (hodgeCodifferential N ψ) = 0
+D0.Geometry.hodgeCarDirac_kernel_finrank (N : ℕ) : Module.finrank ℝ ↥(hodgeCarDiracₗ N).ker = 16
+'D0.Research.NativeWeightedDiracBoundary.kernel_annihilate_int' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeWeightedDiracBoundary.kernel_create_int' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeWeightedDiracBoundary.kernel_annihilate_car' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeWeightedDiracBoundary.kernel_create_car' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeWeightedDiracBoundary.kernel_create_action_anticommute' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeWeightedDiracBoundary.kernel_forward_direction_anticommute' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeWeightedDiracBoundary.kernel_d_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeWeightedDiracBoundary.kernel_annihilate_action_anticommute' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeWeightedDiracBoundary.kernel_backward_direction_anticommute' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeWeightedDiracBoundary.kernel_codiff_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeWeightedDiracBoundary.null_mode_kernel_eq_range' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeWeightedDiracBoundary.null_mode_kernel_half_dimension' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeWeightedDiracBoundary.weighted_codiff_add' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeWeightedDiracBoundary.weighted_codiff_smul' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeWeightedDiracBoundary.weighted_codiff_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeWeightedDiracBoundary.weighted_dirac_square' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeWeightedDiracBoundary.weighted_d_adjoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeWeightedDiracBoundary.weighted_pairing_symm' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeWeightedDiracBoundary.weighted_codiff_adjoint' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeWeightedDiracBoundary.weighted_pairing_add_left' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeWeightedDiracBoundary.weighted_pairing_add_right' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeWeightedDiracBoundary.weighted_dirac_symmetric' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeWeightedDiracBoundary.identity_weight_binding' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeWeightedDiracBoundary.inverse_weight_derivative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeWeightedDiracBoundary.spatial_block_square' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeWeightedDiracBoundary.spatial_block_has_no_positive_metric' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeWeightedDiracBoundary.exp_cubic_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeWeightedDiracBoundary.normalized_heat_lower' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeWeightedDiracBoundary.scaled_codiff_square' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeWeightedDiracBoundary.actual_spectral_trace_binding' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeWeightedDiracBoundary.scalar_matrix_power' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeWeightedDiracBoundary.trace_power_homogeneity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeWeightedDiracBoundary.finite_moment_annihilator' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeWeightedDiracBoundary.finite_annihilator_error_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

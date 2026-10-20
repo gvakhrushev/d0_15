@@ -1,0 +1,43 @@
+D0.Research.NativeCodePriceResolution.code_half_contrast_lattice (a nu : ℝ) (np nm : ℕ) :
+  (nu * ↑np - nu * ↑nm) / (2 * a) = nu / (2 * a) * ↑(↑np - ↑nm)
+'D0.Research.NativeCodePriceResolution.code_half_contrast_lattice' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeCodePriceResolution.nonzero_integer_abs_at_least_one (k : ℤ) (hk : k ≠ 0) : 1 ≤ |↑k|
+'D0.Research.NativeCodePriceResolution.nonzero_integer_abs_at_least_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeCodePriceResolution.fixed_lattice_nearest_zero (s b : ℝ) (k : ℤ) (hgap : 2 * |b| ≤ |s|) :
+  |b| ≤ |s * ↑k - b|
+'D0.Research.NativeCodePriceResolution.fixed_lattice_nearest_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeCodePriceResolution.recording_error_keeps_gap (s b r e : ℝ) (k : ℤ) (hgap : 2 * |b| ≤ |s|)
+  (hrecord : |r - s * ↑k| ≤ e) : |b| - e ≤ |r - b|
+'D0.Research.NativeCodePriceResolution.recording_error_keeps_gap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeCodePriceResolution.integer_endpoint_recording_gap (a nu b r e : ℝ) (np nm : ℕ)
+  (hgap : 2 * |b| ≤ |nu / (2 * a)|) (hrecord : |r - (nu * ↑np - nu * ↑nm) / (2 * a)| ≤ e) : |b| - e ≤ |r - b|
+'D0.Research.NativeCodePriceResolution.integer_endpoint_recording_gap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeCodePriceResolution.lattice_rounding_sufficient (s b : ℝ) (hs : 0 < s) : ∃ k, |s * ↑k - b| ≤ s / 2
+'D0.Research.NativeCodePriceResolution.lattice_rounding_sufficient' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeCodePriceResolution.action_lower_bound_not_difference_quantization (e : ℝ) (he0 : 0 < e)
+  (he1 : e < 1) : 1 ≤ 1 + e ∧ 1 ≤ 1 ∧ 1 + e - 1 = e ∧ 0 < |1 + e - 1| ∧ |1 + e - 1| < 1
+'D0.Research.NativeCodePriceResolution.action_lower_bound_not_difference_quantization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeCodePriceResolution.owned_golden_binary_partition (n : ℕ) : (phi⁻¹ + phi⁻¹ ^ 2) ^ n = 1
+'D0.Research.NativeCodePriceResolution.owned_golden_binary_partition' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeCodePriceResolution.golden_two_tick_event_mass : phi⁻¹ ^ 2 + 2 * phi⁻¹ ^ 3 = 1 - phi⁻¹ ^ 4
+'D0.Research.NativeCodePriceResolution.golden_two_tick_event_mass' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.phi_inv_satisfies_primitive : phi⁻¹ + phi⁻¹ ^ 2 = 1
+'D0.phi_inv_satisfies_primitive' depends on axioms: [propext, Classical.choice, Quot.sound]

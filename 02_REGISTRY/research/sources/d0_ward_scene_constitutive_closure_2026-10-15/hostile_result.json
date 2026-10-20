@@ -1,0 +1,30 @@
+{
+  "status": "PASS_EXECUTED_MUTANTS",
+  "mathematical_mutations": [
+    {
+      "mutation": "omit_time_derivative_family",
+      "rejected_at": "RuntimeError: FAILED_MATH: constitutive_rank_99"
+    },
+    {
+      "mutation": "replace_scalar_kernel_by_trace_reverse",
+      "rejected_at": "RuntimeError: FAILED_MATH: unique_linearization_is_scalar"
+    },
+    {
+      "mutation": "overstate_quantitative_bound",
+      "rejected_at": "RuntimeError: FAILED_MATH: Ward_coercivity_exact_factorization"
+    },
+    {
+      "mutation": "freeze_state_in_material_source",
+      "rejected_at": "RuntimeError: FAILED_MATH: moving_preparation_jet"
+    },
+    {
+      "mutation": "replace_sector_measure_by_raw_sizes",
+      "rejected_at": "RuntimeError: FAILED_MATH: transverse_form_follows_from_scene"
+    },
+    {
+      "mutation": "drop_transverse_plane_weight",
+      "rejected_at": "RuntimeError: FAILED_MATH: unique_three_plane_weights"
+    }
+  ],
+  "false_GR_receipt_rejected": true
+}

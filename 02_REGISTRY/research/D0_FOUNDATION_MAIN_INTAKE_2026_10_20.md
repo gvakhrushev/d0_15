@@ -116,9 +116,27 @@ byte-exact extraction at `2ee0788868c895adcb679d8f29b27d6d8d0626d1`.
 
 The local correction check verifies exactly these body transformations and
 preserves both base modules, the source pins, imports and namespaces. The local
-environment has no Lean toolchain. These structural corrections are not claimed
-as a successful compilation; acceptance still requires the corrected exact-head
-Ready build of `D0.All`.
+environment has no Lean toolchain; actual compilation is supplied by the
+completed Ready build below.
+
+### Corrected proof validation
+
+The corrected head `9dabfa0f3782d51496d26784415d7896b8a7652a`
+(tree `a9b3399f4df0d9416522d841fc50a71a0451b148`) passed the actual
+[Ready Lean run 39412127211](https://github.com/gvakhrushev/d0_15/actions/runs/39412127211/job/118592203857).
+Its release-build step completed on 2026-10-20, 11:02:29–11:04:51 UTC.
+The log records successful builds of `D0.Foundation.FutureExecution`,
+`D0.Foundation.ProspectiveExecution` and `D0.All`, followed by
+`Build completed successfully (4553 jobs)`. This is execution evidence for
+the corrected proofs, not the earlier skipped Draft jobs.
+
+The same head passed
+[Ready guards 39412127312](https://github.com/gvakhrushev/d0_15/actions/runs/39412127312/job/118592204588),
+including the PR contract, formal/assembly views, isolated research replay,
+and artifact freshness and semantic-mutation controls. Registered and long
+certificate steps were outside that selected scope and were skipped.
+Subsequent documentation or assembly-link changes reuse this exact proof
+input; the final combined integration retains its own release-closure check.
 
 The subsequent physical work follows the existing
 [central roadmap](MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md#closure-roadmap-goals-reusable-inputs-and-tools).

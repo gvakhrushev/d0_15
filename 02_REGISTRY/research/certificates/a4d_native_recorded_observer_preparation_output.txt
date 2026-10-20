@@ -1,0 +1,149 @@
+D0.Representation.GoldenCoherentMemory.blank_record_evolution (a p u v : ℝ) :
+  (D0.Representation.GoldenCoherentMemory.fullStep a p).mulVec ![u, 0, v, 0] = ![a * u - p * v, 0, 0, p * u + a * v]
+D0.Geometry.observerMetric_posDef (n : D0.Geometry.RoleVector) (hn : D0.Geometry.lorentzUnitObserver n) :
+  (D0.Geometry.observerMetric n).PosDef
+D0.Geometry.observerExteriorBladeGram_pos (n : D0.Geometry.RoleVector) (hn : D0.Geometry.lorentzUnitObserver n) (k : ℕ)
+  (S : ↑(Set.powersetCard D0.Role k)) :
+  0 <
+    ((D0.Geometry.observerMetric n).submatrix ⇑(Set.powersetCard.ofFinEmbEquiv.symm S)
+        ⇑(Set.powersetCard.ofFinEmbEquiv.symm S)).det
+D0.Research.RecordedObserverPreparation.currentSquare_coords (a b c d : ℝ) :
+  D0.Research.RecordedObserverPreparation.currentSquare (D0.Research.RecordedObserverPreparation.roleCoords a b c d) =
+    a ^ 2 - b ^ 2 - c ^ 2 - d ^ 2
+D0.Research.RecordedObserverPreparation.density_current_square (x y z w : ℝ) :
+  D0.Research.RecordedObserverPreparation.currentSquare
+      (D0.Research.RecordedObserverPreparation.densityCurrent x y z w) =
+    4 * (x * y - z ^ 2 - w ^ 2)
+D0.Research.RecordedObserverPreparation.retained_current_square (a b c d : ℝ) :
+  D0.Research.RecordedObserverPreparation.currentSquare
+      (D0.Research.RecordedObserverPreparation.retainedCurrent a b c d) =
+    4 * (a * d - b * c) ^ 2
+D0.Research.RecordedObserverPreparation.observerFromCurrent_unit (j : D0.Geometry.RoleVector)
+  (hk : 0 < D0.Research.RecordedObserverPreparation.currentSquare j) :
+  D0.Geometry.lorentzUnitObserver (D0.Research.RecordedObserverPreparation.observerFromCurrent j)
+D0.Research.RecordedObserverPreparation.metricFromCurrent_eq_observer (j : D0.Geometry.RoleVector)
+  (hk : 0 < D0.Research.RecordedObserverPreparation.currentSquare j) :
+  D0.Research.RecordedObserverPreparation.metricFromCurrent j =
+    D0.Geometry.observerMetric (D0.Research.RecordedObserverPreparation.observerFromCurrent j)
+D0.Research.RecordedObserverPreparation.retained_metric_positive (a b c d : ℝ) (hd : a * d - b * c ≠ 0) :
+  (D0.Research.RecordedObserverPreparation.metricFromCurrent
+      (D0.Research.RecordedObserverPreparation.retainedCurrent a b c d)).PosDef
+D0.Research.RecordedObserverPreparation.actual_blank_record_current (a p u v : ℝ) :
+  (D0.Representation.GoldenCoherentMemory.fullStep a p).mulVec ![u, 0, v, 0] = ![a * u - p * v, 0, 0, p * u + a * v]
+D0.Research.RecordedObserverPreparation.golden_record_current (a p : ℝ) (ha : a ^ 2 = p) (hp : p + p ^ 2 = 1) :
+  D0.Research.RecordedObserverPreparation.retainedCurrent a 0 0 p =
+    D0.Research.RecordedObserverPreparation.roleCoords 1 0 0 (p - p ^ 2)
+D0.Research.RecordedObserverPreparation.golden_record_faithful (a p : ℝ) (ha : a ^ 2 = p) (hp0 : 0 < p) :
+  0 <
+    D0.Research.RecordedObserverPreparation.currentSquare
+      (D0.Research.RecordedObserverPreparation.retainedCurrent a 0 0 p)
+D0.Research.RecordedObserverPreparation.pure_record_singular (a b c d : ℝ) (hd : a * d - b * c = 0) :
+  D0.Research.RecordedObserverPreparation.currentSquare
+      (D0.Research.RecordedObserverPreparation.retainedCurrent a b c d) =
+    0
+D0.Research.RecordedObserverPreparation.input_curve_normalized (t : ℝ) :
+  D0.Research.RecordedObserverPreparation.inputU t ^ 2 + D0.Research.RecordedObserverPreparation.inputV t ^ 2 = 1
+D0.Research.RecordedObserverPreparation.inputU_derivative :
+  HasDerivAt D0.Research.RecordedObserverPreparation.inputU 0 0
+D0.Research.RecordedObserverPreparation.inputV_derivative :
+  HasDerivAt D0.Research.RecordedObserverPreparation.inputV 2 0
+D0.Research.RecordedObserverPreparation.outputA_derivative (a p : ℝ) :
+  HasDerivAt (D0.Research.RecordedObserverPreparation.outputA a p) (-2 * p) 0
+D0.Research.RecordedObserverPreparation.outputB_derivative (a p : ℝ) :
+  HasDerivAt (D0.Research.RecordedObserverPreparation.outputB a p) (2 * a) 0
+D0.Research.RecordedObserverPreparation.actual_recorded_shape_derivative (a p : ℝ) :
+  HasDerivAt
+    (fun t =>
+      D0.Research.RecordedObserverPreparation.outputA a p t ^ 2 -
+        D0.Research.RecordedObserverPreparation.outputB a p t ^ 2)
+    (-8 * a * p) 0
+D0.Research.RecordedObserverPreparation.diagonal_density_metric (x : ℝ) (hx : x ≠ 0) (hx1 : 1 - x ≠ 0) :
+  D0.Research.RecordedObserverPreparation.metricFromCurrent
+      (D0.Research.RecordedObserverPreparation.densityCurrent x (1 - x) 0 0) D0.A D0.A =
+    D0.Research.RecordedObserverPreparation.diagonalMetricCoefficient x
+D0.Research.RecordedObserverPreparation.mixed_density_metric (x : ℝ) (hx : x ≠ 0) (hx1 : 1 - x ≠ 0) :
+  D0.Research.RecordedObserverPreparation.metricFromCurrent
+      (D0.Research.RecordedObserverPreparation.densityCurrent x (1 - x) 0 0) D0.A D0.D =
+    D0.Research.RecordedObserverPreparation.mixedMetricCoefficient x
+D0.Research.RecordedObserverPreparation.diagonalMetricCoefficient_derivative (x : ℝ) (hx : x ≠ 0) (hx1 : 1 - x ≠ 0) :
+  HasDerivAt D0.Research.RecordedObserverPreparation.diagonalMetricCoefficient (2 * (2 * x - 1) / (2 * x * (1 - x)) ^ 2)
+    x
+D0.Research.RecordedObserverPreparation.mixedMetricCoefficient_derivative (x : ℝ) (hx : x ≠ 0) (hx1 : 1 - x ≠ 0) :
+  HasDerivAt D0.Research.RecordedObserverPreparation.mixedMetricCoefficient
+    (-(4 * x * (1 - x) + 2 * (2 * x - 1) ^ 2) / (2 * x * (1 - x)) ^ 2) x
+D0.Research.RecordedObserverPreparation.actual_diagonal_pairing_derivative (a p : ℝ) (ha : a ≠ 0)
+  (ha1 : 1 - a ^ 2 ≠ 0) :
+  HasDerivAt
+    (fun t =>
+      D0.Research.RecordedObserverPreparation.diagonalMetricCoefficient
+        (D0.Research.RecordedObserverPreparation.outputA a p t ^ 2))
+    (2 * (2 * a ^ 2 - 1) / (2 * a ^ 2 * (1 - a ^ 2)) ^ 2 * (-4 * a * p)) 0
+D0.Research.RecordedObserverPreparation.actual_mixed_pairing_derivative (a p : ℝ) (ha : a ≠ 0) (ha1 : 1 - a ^ 2 ≠ 0) :
+  HasDerivAt
+    (fun t =>
+      D0.Research.RecordedObserverPreparation.mixedMetricCoefficient
+        (D0.Research.RecordedObserverPreparation.outputA a p t ^ 2))
+    (-(4 * a ^ 2 * (1 - a ^ 2) + 2 * (2 * a ^ 2 - 1) ^ 2) / (2 * a ^ 2 * (1 - a ^ 2)) ^ 2 * (-4 * a * p)) 0
+'D0.Research.RecordedObserverPreparation.currentSquare_coords' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.RecordedObserverPreparation.density_current_square' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.RecordedObserverPreparation.retained_current_square' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.RecordedObserverPreparation.observerFromCurrent_unit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.RecordedObserverPreparation.metricFromCurrent_eq_observer' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.RecordedObserverPreparation.retained_metric_positive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.RecordedObserverPreparation.actual_blank_record_current' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.RecordedObserverPreparation.golden_record_current' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.RecordedObserverPreparation.golden_record_faithful' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.RecordedObserverPreparation.pure_record_singular' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.RecordedObserverPreparation.input_curve_normalized' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.RecordedObserverPreparation.inputU_derivative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.RecordedObserverPreparation.inputV_derivative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.RecordedObserverPreparation.outputA_derivative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.RecordedObserverPreparation.outputB_derivative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.RecordedObserverPreparation.actual_recorded_shape_derivative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.RecordedObserverPreparation.diagonal_density_metric' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.RecordedObserverPreparation.mixed_density_metric' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.RecordedObserverPreparation.diagonalMetricCoefficient_derivative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.RecordedObserverPreparation.mixedMetricCoefficient_derivative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.RecordedObserverPreparation.actual_diagonal_pairing_derivative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.RecordedObserverPreparation.actual_mixed_pairing_derivative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Representation.GoldenCoherentMemory.blank_record_evolution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Geometry.observerMetric_posDef' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Geometry.observerExteriorBladeGram_pos' depends on axioms: [propext, Classical.choice, Quot.sound]

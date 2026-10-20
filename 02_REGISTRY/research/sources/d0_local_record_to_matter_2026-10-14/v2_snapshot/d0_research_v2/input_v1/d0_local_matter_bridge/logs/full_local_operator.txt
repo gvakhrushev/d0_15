@@ -1,0 +1,3 @@
+PASS_FULL_LOCAL_OPERATOR 10 metric 64 link derivatives; full 256x256 D and Delta
+
+--- STDERR ---

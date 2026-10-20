@@ -1,0 +1,13 @@
+'D0.Research.NativeWeightedGate.proxy_inverse_volume' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeWeightedGate.archive_volume_inverse_coordinate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeWeightedGate.proxy_affine_volume_profile' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeWeightedGate.full_edge_gate_iff_residual_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeWeightedGate.full_edge_gate_action_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeWeightedGate.full_edge_gate_diagonal_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeWeightedGate.residual_zero_weight_variation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

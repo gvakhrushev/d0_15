@@ -1,0 +1,69 @@
+'D0.Research.NativeMeasureRefinement.cap_comp' depends on axioms: [propext, Quot.sound]
+'D0.Research.NativeMeasureRefinement.doubled_coordinate_readout' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeMeasureRefinement.smooth_peak_recurrence_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeMeasureRefinement.actual_projection_cap' depends on axioms: [propext, Quot.sound]
+'D0.Research.NativeMeasureRefinement.history_composite' depends on axioms: [propext, Quot.sound]
+'D0.Research.NativeMeasureRefinement.history_nonzero_persists' depends on axioms: [propext, Quot.sound]
+'D0.Research.NativeMeasureRefinement.every_history_has_birth_code' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeMeasureRefinement.historyOfCode_injective' depends on axioms: [propext, Quot.sound]
+'D0.Research.NativeMeasureRefinement.historyOfCode_surjective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeMeasureRefinement.phase_histories_countable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeMeasureRefinement.actual_role_histories_countable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeMeasureRefinement.linear_state_has_weights' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeMeasureRefinement.positive_state_weights_nonnegative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeMeasureRefinement.normalized_state_weights_sum_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeMeasureRefinement.pushWeights_duality' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeMeasureRefinement.pushWeights_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeMeasureRefinement.pushWeights_nonnegative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeMeasureRefinement.state_compatibility_iff_weights' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeMeasureRefinement.quadratic_pullback_isometry_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeMeasureRefinement.actual_scalar_mass_compatibility' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeMeasureRefinement.actual_uniform_zero_push' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeMeasureRefinement.actual_uniform_zero_defect' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeMeasureRefinement.actual_uniform_zero_defect_positive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeMeasureRefinement.literal_eight_atom_stage_is_constant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeMeasureRefinement.literal_eight_atom_stage_cardinality' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.archiveRGPhaseProjection (n : ℕ) (x : archivePhaseIndex (n + 1)) : archivePhaseIndex n
+D0.Geometry.ArchiveRolePhaseProductCarrier.archive_role_phase_product_carrier_owner (n : ℕ) :
+  Fintype.card (ArchiveRolePhasePoint n) = archiveModes n ∧
+    Fintype.card Role = 4 ∧ Fintype.card (archivePhaseIndex n) = archiveFibers n ∧ Nonempty (ArchiveRolePhasePoint n)
+D0.archiveStageMeasure (_n : ℕ) : FiniteArchiveMeasure
+D0.Research.NativeMeasureRefinement.actual_role_histories_countable : Countable RoleHistory
+D0.Research.NativeMeasureRefinement.actual_scalar_mass_compatibility (n : ℕ) (w : archivePhaseIndex (n + 1) → ℝ)
+  (v : archivePhaseIndex n → ℝ) :
+  (∀ (f : archivePhaseIndex n → ℝ), ∑ j, w j * f (archiveRGPhaseProjection n j) ^ 2 = ∑ i, v i * f i ^ 2) ↔
+    pushWeights (archiveRGPhaseProjection n) w = v

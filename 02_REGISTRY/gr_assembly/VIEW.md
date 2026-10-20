@@ -35,7 +35,7 @@ For the short working composition and next scientific questions, use [SYNTHESIS.
 | raw_response_terminal | original | none; conclusion still needs accepted evidence | none |
 | full_affine_stationarity | support | none; conclusion still needs accepted evidence | none |
 | resonance_divisor | support | none; conclusion still needs accepted evidence | none |
-| primitive_jet_composition | support | none; conclusion still needs accepted evidence | none |
+| primitive_jet_composition | support | none; conclusion still needs accepted evidence | lean-primitive-jet-composition-to-word-slot |
 | mv_tangent_span | support | none; conclusion still needs accepted evidence | lean-memory-tangent-span-to-mv-slot |
 | global_classification | separate | none; conclusion still needs accepted evidence | none |
 

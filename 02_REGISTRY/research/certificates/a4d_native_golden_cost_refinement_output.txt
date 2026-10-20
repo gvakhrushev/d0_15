@@ -1,0 +1,101 @@
+D0.Research.GoldenCostRefinement.code_length (w : List Bool) :
+  (D0.Research.GoldenCostRefinement.code w).length = D0.CondensedAnchor.weightExp w
+D0.Research.GoldenCostRefinement.code_append (u v : List Bool) :
+  D0.Research.GoldenCostRefinement.code (u ++ v) =
+    D0.Research.GoldenCostRefinement.code u ++ D0.Research.GoldenCostRefinement.code v
+D0.Research.GoldenCostRefinement.counts_bind_owner (n : ℕ) :
+  D0.Research.GoldenCostRefinement.counts (n + 1) = D0.Algebra.FibonacciAFTower.pathCount n
+D0.Research.GoldenCostRefinement.mass_one (p : ℝ) (hp : p + p ^ 2 = 1) (n : ℕ) :
+  ↑(D0.Research.GoldenCostRefinement.counts n).1 * p ^ n +
+      ↑(D0.Research.GoldenCostRefinement.counts n).2 * p ^ (n + 1) =
+    1
+D0.Research.GoldenCostRefinement.owner_trace_normalized (p : ℝ) (hp : p + p ^ 2 = 1) (n : ℕ) :
+  ↑(D0.Algebra.FibonacciAFTower.pathCount n).1 * p ^ (n + 1) +
+      ↑(D0.Algebra.FibonacciAFTower.pathCount n).2 * p ^ (n + 2) =
+    1
+D0.Research.GoldenCostRefinement.diagInclude_mul.{u_1, u_2} {I : Type u_1} {J : Type u_2} [Fintype I] [Fintype J]
+  [DecidableEq I] [DecidableEq J] (A C : Matrix I I ℝ) (B D : Matrix J J ℝ) :
+  D0.Research.GoldenCostRefinement.diagInclude A B * D0.Research.GoldenCostRefinement.diagInclude C D =
+    D0.Research.GoldenCostRefinement.diagInclude (A * C) (B * D)
+D0.Research.GoldenCostRefinement.diagInclude_transpose.{u_1, u_2} {I : Type u_1} {J : Type u_2} [Fintype I] [Fintype J]
+  [DecidableEq I] [DecidableEq J] (A : Matrix I I ℝ) (B : Matrix J J ℝ) :
+  (D0.Research.GoldenCostRefinement.diagInclude A B).transpose =
+    D0.Research.GoldenCostRefinement.diagInclude A.transpose B.transpose
+D0.Research.GoldenCostRefinement.diagInclude_one.{u_1, u_2} {I : Type u_1} {J : Type u_2} [Fintype I] [Fintype J]
+  [DecidableEq I] [DecidableEq J] : D0.Research.GoldenCostRefinement.diagInclude 1 1 = 1
+D0.Research.GoldenCostRefinement.trace_diagInclude.{u_1, u_2} {I : Type u_1} {J : Type u_2} [Fintype I] [Fintype J]
+  [DecidableEq I] [DecidableEq J] (A : Matrix I I ℝ) (B : Matrix J J ℝ) :
+  (D0.Research.GoldenCostRefinement.diagInclude A B).trace = A.trace + B.trace
+D0.Research.GoldenCostRefinement.trace_full_blocks.{u_1, u_2} {I : Type u_1} {J : Type u_2} [Fintype I] [Fintype J]
+  [DecidableEq I] [DecidableEq J] (X : Matrix I I ℝ) (Y : Matrix J J ℝ) (U : Matrix I J ℝ) (V : Matrix J I ℝ) :
+  (Matrix.fromBlocks X U V Y).trace = X.trace + Y.trace
+D0.Research.GoldenCostRefinement.actual_trace_preservation.{u_1, u_2} {I : Type u_1} {J : Type u_2} [Fintype I]
+  [Fintype J] [DecidableEq I] [DecidableEq J] (p t : ℝ) (hp : p + p ^ 2 = 1) (A : Matrix I I ℝ) (B : Matrix J J ℝ) :
+  D0.Research.GoldenCostRefinement.fineTrace p t (D0.Research.GoldenCostRefinement.diagInclude A B) A =
+    D0.Research.GoldenCostRefinement.coarseTrace p t A B
+D0.Research.GoldenCostRefinement.actual_gns_isometry.{u_1, u_2} {I : Type u_1} {J : Type u_2} [Fintype I] [Fintype J]
+  [DecidableEq I] [DecidableEq J] (p t : ℝ) (hp : p + p ^ 2 = 1) (A C : Matrix I I ℝ) (B D : Matrix J J ℝ) :
+  D0.Research.GoldenCostRefinement.fineTrace p t
+      ((D0.Research.GoldenCostRefinement.diagInclude C D).transpose * D0.Research.GoldenCostRefinement.diagInclude A B)
+      (C.transpose * A) =
+    D0.Research.GoldenCostRefinement.coarseTrace p t (C.transpose * A) (D.transpose * B)
+D0.Research.GoldenCostRefinement.actual_conditional_adjoint.{u_1, u_2} {I : Type u_1} {J : Type u_2} [Fintype I]
+  [Fintype J] [DecidableEq I] [DecidableEq J] (p t : ℝ) (A X W : Matrix I I ℝ) (B Y : Matrix J J ℝ) (U : Matrix I J ℝ)
+  (V : Matrix J I ℝ) :
+  D0.Research.GoldenCostRefinement.fineTrace p t
+      ((D0.Research.GoldenCostRefinement.diagInclude A B).transpose * Matrix.fromBlocks X U V Y) (A.transpose * W) =
+    D0.Research.GoldenCostRefinement.coarseTrace p t (A.transpose * (p • X + p ^ 2 • W)) (B.transpose * Y)
+D0.Research.GoldenCostRefinement.complete_pair_residual (p x w : ℝ) (hp : p + p ^ 2 = 1) :
+  p * x ^ 2 + p ^ 2 * w ^ 2 - (p * x + p ^ 2 * w) ^ 2 = p ^ 3 * (x - w) ^ 2
+D0.Research.GoldenCostRefinement.full_entry_pythagoras (p t x y w u v : ℝ) (hp : p + p ^ 2 = 1) :
+  t * (p * (x ^ 2 + y ^ 2 + u ^ 2 + v ^ 2) + p ^ 2 * w ^ 2) - t * ((p * x + p ^ 2 * w) ^ 2 + p * y ^ 2) =
+    t * (p ^ 3 * (x - w) ^ 2 + p * (u ^ 2 + v ^ 2))
+D0.Research.GoldenCostRefinement.conditional_adjoint_entry (p t a b x y w : ℝ) :
+  t * (p * (a * x + b * y) + p ^ 2 * a * w) = t * (a * (p * x + p ^ 2 * w) + p * b * y)
+D0.Research.GoldenCostRefinement.conditional_retraction_entry (p x : ℝ) (hp : p + p ^ 2 = 1) : p * x + p ^ 2 * x = x
+D0.Research.GoldenCostRefinement.expect_retraction.{u_1, u_2} {I : Type u_1} {J : Type u_2} [Fintype I] [Fintype J]
+  [DecidableEq I] [DecidableEq J] (p : ℝ) (hp : p + p ^ 2 = 1) (A : Matrix I I ℝ) (B : Matrix J J ℝ) :
+  D0.Research.GoldenCostRefinement.expect p A B A = (A, B)
+D0.Research.GoldenCostRefinement.cross_blocks_not_removed_from_carrier.{u_1, u_2} {I : Type u_1} {J : Type u_2}
+  [Fintype I] [Fintype J] [DecidableEq I] [DecidableEq J] (X : Matrix I I ℝ) (Y : Matrix J J ℝ) (U : Matrix I J ℝ)
+  (V : Matrix J I ℝ) : (Matrix.fromBlocks X U V Y).toBlocks₁₂ = U ∧ (Matrix.fromBlocks X U V Y).toBlocks₂₁ = V
+D0.Research.GoldenCostRefinement.golden_orthogonal (a p : ℝ) (ha : a ^ 2 = p) (hp : p + p ^ 2 = 1) :
+  (D0.Research.GoldenCostRefinement.golden a p).transpose * D0.Research.GoldenCostRefinement.golden a p = 1
+D0.Research.GoldenCostRefinement.refined_projection (a p : ℝ) :
+  D0.Research.GoldenCostRefinement.golden a p * D0.Research.GoldenCostRefinement.blank *
+      (D0.Research.GoldenCostRefinement.golden a p).transpose =
+    D0.Research.GoldenCostRefinement.retained a p
+D0.Research.GoldenCostRefinement.normalized_GNS_column (a p x : ℝ) :
+  (D0.Research.GoldenCostRefinement.golden a p).mulVec ![x, 0] = ![a * x, p * x]
+D0.Research.GoldenCostRefinement.recorded_gate_same_column (a p x : ℝ) :
+  (D0.Representation.GoldenCoherentMemory.fullStep a p).mulVec ![x, 0, 0, 0] = ![a * x, 0, 0, p * x]
+D0.Research.GoldenCostRefinement.total_block_dimensions (a b : ℕ) :
+  (a + b) ^ 2 + a ^ 2 = a ^ 2 + b ^ 2 + (a ^ 2 + 2 * a * b)
+'D0.Research.GoldenCostRefinement.code_length' depends on axioms: [propext, Quot.sound]
+'D0.Research.GoldenCostRefinement.code_append' depends on axioms: [propext]
+'D0.Research.GoldenCostRefinement.counts_bind_owner' does not depend on any axioms
+'D0.Research.GoldenCostRefinement.mass_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.GoldenCostRefinement.owner_trace_normalized' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.GoldenCostRefinement.diagInclude_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.GoldenCostRefinement.diagInclude_transpose' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.GoldenCostRefinement.diagInclude_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.GoldenCostRefinement.trace_diagInclude' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.GoldenCostRefinement.trace_full_blocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.GoldenCostRefinement.actual_trace_preservation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.GoldenCostRefinement.actual_gns_isometry' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.GoldenCostRefinement.actual_conditional_adjoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.GoldenCostRefinement.complete_pair_residual' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.GoldenCostRefinement.full_entry_pythagoras' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.GoldenCostRefinement.conditional_adjoint_entry' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.GoldenCostRefinement.conditional_retraction_entry' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.GoldenCostRefinement.expect_retraction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.GoldenCostRefinement.cross_blocks_not_removed_from_carrier' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.GoldenCostRefinement.golden_orthogonal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.GoldenCostRefinement.refined_projection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.GoldenCostRefinement.normalized_GNS_column' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.GoldenCostRefinement.recorded_gate_same_column' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.GoldenCostRefinement.total_block_dimensions' depends on axioms: [propext]

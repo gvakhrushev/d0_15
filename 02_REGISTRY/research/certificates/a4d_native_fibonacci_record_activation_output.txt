@@ -1,0 +1,29 @@
+'D0.Research.FibonacciRecordActivation.lift_on_frame' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.FibonacciRecordActivation.lift_composition' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.FibonacciRecordActivation.whole_lift_orthogonal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.FibonacciRecordActivation.full_cut_idempotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.FibonacciRecordActivation.passive_has_no_detail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.FibonacciRecordActivation.fixed_space_obstruction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.FibonacciRecordActivation.actual_first_fixed_dimensions' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.FibonacciRecordActivation.inherited_frame_norms' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.FibonacciRecordActivation.regular_multiplicities' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.FibonacciRecordActivation.vieta_implies_both_quadratics' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.FibonacciRecordActivation.delta_corner_and_feedback' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.FibonacciRecordActivation.cube_normalization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.FibonacciRecordActivation.tensor_feedback_scalar' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.FibonacciRecordActivation.tracial_corner_unchanged' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Representation.GoldenCoherentMemory.fullStep_orthogonal' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,71 @@
+D0.Research.NativeHodgeArchiveMetricRefinement.actual_projection_val (n : ℕ) (x : D0.ArchivePoints (n + 1)) :
+  ↑(D0.archiveProjection n x) = ↑x % (n + 2) ^ 4
+'D0.Research.NativeHodgeArchiveMetricRefinement.actual_projection_val' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeHodgeArchiveMetricRefinement.rawForget_zero (n k : ℕ) :
+  D0.Research.NativeHodgeArchiveMetricRefinement.rawForget n k 0 = 0
+'D0.Research.NativeHodgeArchiveMetricRefinement.rawForget_zero' depends on axioms: [propext]
+D0.Research.NativeHodgeArchiveMetricRefinement.longProjection_val (n k : ℕ) (x : D0.ArchivePoints (n + k)) :
+  ↑(D0.Research.NativeHodgeArchiveMetricRefinement.longProjection n k x) =
+    D0.Research.NativeHodgeArchiveMetricRefinement.rawForget n k ↑x
+'D0.Research.NativeHodgeArchiveMetricRefinement.longProjection_val' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeHodgeArchiveMetricRefinement.rawForget_birth (n k j : ℕ) (hj : j < k) :
+  D0.Research.NativeHodgeArchiveMetricRefinement.rawForget n k ((n + j + 2) ^ 4) = 0
+'D0.Research.NativeHodgeArchiveMetricRefinement.rawForget_birth' depends on axioms: [propext, Quot.sound]
+D0.Research.NativeHodgeArchiveMetricRefinement.birthLabel_injective (n k : ℕ) :
+  Function.Injective (D0.Research.NativeHodgeArchiveMetricRefinement.birthLabel n k)
+'D0.Research.NativeHodgeArchiveMetricRefinement.birthLabel_injective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeHodgeArchiveMetricRefinement.birthLabel_ne_zero (n k : ℕ) (j : Fin k) :
+  D0.Research.NativeHodgeArchiveMetricRefinement.birthLabel n k j ≠
+    D0.Research.NativeHodgeArchiveMetricRefinement.archiveZero (n + k)
+'D0.Research.NativeHodgeArchiveMetricRefinement.birthLabel_ne_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeHodgeArchiveMetricRefinement.longProjection_birth_zero (n k : ℕ) (j : Fin k) :
+  D0.Research.NativeHodgeArchiveMetricRefinement.longProjection n k
+      (D0.Research.NativeHodgeArchiveMetricRefinement.birthLabel n k j) =
+    D0.Research.NativeHodgeArchiveMetricRefinement.archiveZero n
+'D0.Research.NativeHodgeArchiveMetricRefinement.longProjection_birth_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeHodgeArchiveMetricRefinement.longProjection_zero (n k : ℕ) :
+  D0.Research.NativeHodgeArchiveMetricRefinement.longProjection n k
+      (D0.Research.NativeHodgeArchiveMetricRefinement.archiveZero (n + k)) =
+    D0.Research.NativeHodgeArchiveMetricRefinement.archiveZero n
+'D0.Research.NativeHodgeArchiveMetricRefinement.longProjection_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeHodgeArchiveMetricRefinement.birthWitness_card (n k : ℕ) :
+  (D0.Research.NativeHodgeArchiveMetricRefinement.birthWitness n k).card = k + 1
+'D0.Research.NativeHodgeArchiveMetricRefinement.birthWitness_card' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeHodgeArchiveMetricRefinement.birthWitness_maps_zero (n k : ℕ) (x : D0.ArchivePoints (n + k))
+  (hx : x ∈ D0.Research.NativeHodgeArchiveMetricRefinement.birthWitness n k) :
+  D0.Research.NativeHodgeArchiveMetricRefinement.longProjection n k x =
+    D0.Research.NativeHodgeArchiveMetricRefinement.archiveZero n
+'D0.Research.NativeHodgeArchiveMetricRefinement.birthWitness_maps_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativeHodgeArchiveMetricRefinement.actual_long_zero_fiber_card_ge (n k : ℕ) :
+  k + 1 ≤
+    {x |
+        D0.Research.NativeHodgeArchiveMetricRefinement.longProjection n k x =
+          D0.Research.NativeHodgeArchiveMetricRefinement.archiveZero n}.card
+'D0.Research.NativeHodgeArchiveMetricRefinement.actual_long_zero_fiber_card_ge' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.archive_record_kernel_projectively_compatible (n : ℕ) (x y : D0.ArchivePoints (n + 1)) :
+  (D0.archiveSpectralStage (n + 1)).Delta x y =
+    (D0.archiveSpectralStage n).Delta ((D0.archiveSpectralProjection n).map x) ((D0.archiveSpectralProjection n).map y)
+'D0.archive_record_kernel_projectively_compatible' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.archive_projection_surjective (n : ℕ) : Function.Surjective (D0.archiveProjection n)
+'D0.archive_projection_surjective' depends on axioms: [propext, Classical.choice, Quot.sound]
+D0.archiveFintypeDiagram_succ (n : ℕ) :
+  D0.archiveFintypeDiagram.map (CategoryTheory.homOfLE ⋯).op = FintypeCat.homMk (D0.archiveProjection n)
+'D0.archiveFintypeDiagram_succ' depends on axioms: [propext, Classical.choice, Quot.sound]

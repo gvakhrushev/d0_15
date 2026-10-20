@@ -8,8 +8,8 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 |---|---|---|---|---|---|---|
 | CONTROL | 0 | 0 | 0 | 1 | 1 | 1 / 2 |
 | EXPENSIVE | 3 | 0 | 0 | 0 | 3 | 0 / 3 |
-| WORKER | 1 | 0 | 0 | 0 | 1 | 0 / 10 |
-| **Total** | **4** | **0** | **0** | **1** | **5** | **1 / 15** |
+| WORKER | 0 | 0 | 0 | 0 | 0 | 0 / 10 |
+| **Total** | **3** | **0** | **0** | **1** | **4** | **1 / 15** |
 
 ## Repository Queue / Control Tasks
 
@@ -19,7 +19,6 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 | EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE | EXPENSIVE | PLANNED | CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE | D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001 |
 | EXP-A4D-RESOLVED-CURVED-STATIONARY-CLOSURE | EXPENSIVE | PLANNED | CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE | D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001, D0-AFFINE-CARTAN-PATH-CLOSURE-001 |
 | EXP-A4D-RESONANCE-DIVISOR-STRATIFICATION | EXPENSIVE | PLANNED | CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE | D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001 |
-| WRK-A4D-LEAN-PRIMITIVE-JET-COMPOSITION | WORKER | PLANNED | CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE | D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001 |
 
 ## Registry Health & Metrics
 
@@ -33,9 +32,9 @@ Runtime execution status lives in GitHub pull requests; the PR number is the exe
 | BRIDGE-ASSUMPTIONS-EXPLICIT | 30 |
 | BRIDGE-CALIBRATION | 3 |
 | CERT-CLOSED | 193 |
-| CORE-FORMALIZED | 390 |
+| CORE-FORMALIZED | 389 |
 | CORE_BRIDGE_SPLIT | 17 |
-| DEPRECATED | 5 |
+| DEPRECATED | 6 |
 | EMPIRICAL-PASSPORT | 13 |
 | EXTERNAL-BACKGROUND | 1 |
 | FORMALISM | 4 |

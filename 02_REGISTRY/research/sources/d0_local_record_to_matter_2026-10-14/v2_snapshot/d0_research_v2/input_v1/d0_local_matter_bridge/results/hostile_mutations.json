@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "executed_mutants": [
+    {
+      "mutation": "wrong_pi0_normalization",
+      "exit_code": 1,
+      "expected_failed_check_prefix": "pi0_exact_seam_identity",
+      "last_error_line": "AssertionError: pi0_exact_seam_identity"
+    },
+    {
+      "mutation": "omit_density_normalization",
+      "exit_code": 1,
+      "expected_failed_check_prefix": "full_density_pairing_normalization",
+      "last_error_line": "AssertionError: full_density_pairing_normalization_00"
+    },
+    {
+      "mutation": "wrong_metric_horizontal_scale",
+      "exit_code": 1,
+      "expected_failed_check_prefix": "metric_lift",
+      "last_error_line": "AssertionError: metric_lift_00"
+    },
+    {
+      "mutation": "discard_half_the_Fock_trace",
+      "exit_code": 1,
+      "expected_failed_check_prefix": "full_Fock_link_trace",
+      "last_error_line": "AssertionError: full_Fock_link_trace_00_01"
+    },
+    {
+      "mutation": "omit_archive_phase",
+      "exit_code": 1,
+      "expected_failed_check_prefix": "seam_full_feedback",
+      "last_error_line": "AssertionError: seam_full_feedback_0_0"
+    },
+    {
+      "mutation": "reverse_thermal_variance_sign",
+      "exit_code": 1,
+      "expected_failed_check_prefix": "radial_second_derivative_at_balance",
+      "last_error_line": "AssertionError: radial_second_derivative_at_balance"
+    }
+  ]
+}

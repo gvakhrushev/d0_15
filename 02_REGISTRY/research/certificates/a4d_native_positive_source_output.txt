@@ -1,0 +1,65 @@
+'D0.Research.NativePositiveSource.homogeneous_radial_derivative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativePositiveSource.homogeneous_full_root_value_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativePositiveSource.zero_value_nonnegative_source' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativePositiveSource.homogeneous_nonnegative_full_root_source' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativePositiveSource.literal_squared_flux_binding' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativePositiveSource.quad_smul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativePositiveSource.quad_field_exact_variation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativePositiveSource.quad_field_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativePositiveSource.quad_full_field_gate_iff_kernel' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativePositiveSource.arbitrary_positive_quadratic_source_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativePositiveSource.owned_square_form' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativePositiveSource.owned_completed_square' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativePositiveSource.owned_nonnegative_at_and_above_quarter' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativePositiveSource.owned_source_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativePositiveSource.first_jet_reconstruction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativePositiveSource.two_sided_positive_source_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativePositiveSource.one_point_positive_control_field' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativePositiveSource.one_point_positive_control_source' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Research.NativePositiveSource.homogeneous_nonnegative_full_root_source.{u_1} {V : Type u_1} [AddCommGroup V]
+  [Module ℝ V] (E : ℝ → V → ℝ) (z : V) (p : ℕ) (hp : p ≠ 0) (sigma : ℝ) (hhom : ∀ (t : ℝ), E 0 (t • z) = t ^ p * E 0 z)
+  (hgate : D0.Research.NativePositiveSource.FullFieldGate (E 0) z) (hnonneg : ∀ᶠ (t : ℝ) in nhds 0, 0 ≤ E t z)
+  (hderiv : HasDerivAt (fun t => E t z) sigma 0) : sigma = 0
+D0.Research.NativePositiveSource.quad_full_field_gate_iff_kernel.{u_2} {n : Type u_2} [Fintype n] [DecidableEq n]
+  (M : D0.Research.NativePositiveSource.Mat n) (hM : Matrix.transpose M = M) (z : n → ℝ) :
+  D0.Research.NativePositiveSource.FullFieldGate (D0.Research.NativePositiveSource.quad M) z ↔ Matrix.mulVec M z = 0
+D0.Research.NativePositiveSource.arbitrary_positive_quadratic_source_zero.{u_2} {n : Type u_2} [Fintype n]
+  [DecidableEq n] (M : ℝ → D0.Research.NativePositiveSource.Mat n) (z : n → ℝ) (hM : Matrix.transpose (M 0) = M 0)
+  (hroot : Matrix.mulVec (M 0) z = 0) (sigma : ℝ)
+  (hpos : ∀ᶠ (t : ℝ) in nhds 0, ∀ (v : n → ℝ), 0 ≤ D0.Research.NativePositiveSource.quad (M t) v)
+  (hderiv : HasDerivAt (fun t => D0.Research.NativePositiveSource.quad (M t) z) sigma 0) : sigma = 0
+D0.Research.NativePositiveSource.owned_source_zero.{u_2} {n : Type u_2} [Fintype n] [DecidableEq n] (alpha : ℝ → ℝ)
+  (H : ℝ → D0.Research.NativePositiveSource.Mat n) (z : n → ℝ) (sigma : ℝ)
+  (hgate : D0.Research.NativePositiveSource.FullFieldGate (D0.Geometry.squaredFluxEnergy (alpha 0) (H 0)) z)
+  (hpos : ∀ᶠ (t : ℝ) in nhds 0, 1 / 4 ≤ alpha t ∧ Matrix.transpose (H t) = H t)
+  (hderiv : HasDerivAt (fun t => D0.Geometry.squaredFluxEnergy (alpha t) (H t) z) sigma 0) : sigma = 0
+D0.Research.NativePositiveSource.first_jet_reconstruction.{u_2} {n : Type u_2} [Fintype n] [DecidableEq n]
+  (A G P B : D0.Research.NativePositiveSource.Mat n) (hAG : A * G = P) (hGA : G * A = P) (hG : Matrix.transpose G = G)
+  (hP : Matrix.transpose P = P) (hB : Matrix.transpose B = B) (hker : (1 - P) * B * (1 - P) = 0) :
+  A * D0.Research.NativePositiveSource.firstJetLift G B P +
+      Matrix.transpose (D0.Research.NativePositiveSource.firstJetLift G B P) * A =
+    B
+D0.Research.NativePositiveSource.two_sided_positive_source_bound (E sigma M s : ℝ) (hs : 0 < s)
+  (hp : 0 ≤ E + s * sigma + M * s ^ 2 / 2) (hm : 0 ≤ E - s * sigma + M * s ^ 2 / 2) : |sigma| ≤ E / s + M * s / 2

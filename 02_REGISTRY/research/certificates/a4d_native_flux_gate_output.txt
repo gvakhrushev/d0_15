@@ -1,0 +1,22 @@
+D0.Research.NativeFluxGate.full_joint_gate_iff_zero_field (N : ℕ) (e : LocalCoframeField N) (ψ : ArchiveCochain N) :
+  Research.NativeFluxGate.FieldGate N e ψ ∧ Research.NativeFluxGate.CoframeGate N ψ ↔ ψ = 0
+D0.Research.NativeFluxGate.energy_coframe_first_variation (N : ℕ) (e v : LocalCoframeField N) (ψ : ArchiveCochain N)
+  (t : ℝ) : fluxEnergy N (e + t • v) ψ = fluxEnergy N e ψ + t / 2 * cochainPairing N ψ (flatStaggeredH N v ψ)
+D0.Research.NativeFluxGate.energy_field_first_variation (N : ℕ) (e : LocalCoframeField N) (ψ φ : ArchiveCochain N)
+  (t : ℝ) :
+  fluxEnergy N e (ψ + t • φ) =
+    fluxEnergy N e ψ + t * cochainPairing N φ (ψ + flatStaggeredH N e ψ) + t ^ 2 * fluxEnergy N e φ
+D0.Research.NativeFluxGate.small_coframe_field_gate_forces_zero (N : ℕ) (e : LocalCoframeField N) (ψ : ArchiveCochain N)
+  (hsmall : 8196 * ‖e‖ < 1) (hf : Research.NativeFluxGate.FieldGate N e ψ) : ψ = 0
+D0.Research.NativeFluxGate.polynomial_positive_gate_forces_zero.{u_1} {n : Type u_1} [Fintype n] [DecidableEq n] (α : ℝ)
+  (hα : 1 / 4 < α) (H : Matrix n n ℝ) (hH : H.transpose = H) (ψ : n → ℝ) (hf : (kernelPoly α H).mulVec ψ = 0) : ψ = 0
+'D0.Research.NativeFluxGate.full_joint_gate_iff_zero_field' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeFluxGate.energy_coframe_first_variation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeFluxGate.energy_field_first_variation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeFluxGate.exterior_frame_fixes_scalar_unit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.NativeFluxGate.small_coframe_field_gate_forces_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeFluxGate.polynomial_positive_gate_forces_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
