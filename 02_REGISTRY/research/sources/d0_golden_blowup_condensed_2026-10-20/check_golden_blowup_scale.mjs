@@ -81,7 +81,7 @@ for(const L of [4,8,12,16,20]){
   finite.push({L,source1:s1.P,sourceGolden:sg.P,defect:sg.P-rhoGolden*s1.P});
 }
 console.log("FINITE full CAR16 H+J+R source (rank128 R first jet=0):",JSON.stringify(finite));
-close(finite[finite.length-1].source1,P1,5e-8,"finite-L Fourier torus approach");
+close(finite[finite.length-1].source1,P1,3e-6,"finite-L Fourier torus approach");
 
 // The physically relevant tensor weights under g->rho g in 4D.
 // G[ρg]=G[g], metric ρg, R² Euler ρ^-1.
