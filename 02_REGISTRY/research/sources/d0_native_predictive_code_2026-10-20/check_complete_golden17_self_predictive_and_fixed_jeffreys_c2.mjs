@@ -43,7 +43,7 @@ const P=t=>add(add(I(),J,Math.sin(t)),J2,1-Math.cos(t));
 function golden17(t){
  const U=P(t),avg=tr(U)/4,norm=dot(U,U)/4;
  const q=G.flatMap(X=>{const s=dot(X,U)/(2*Math.SQRT2);
-  return [h*p**4/24*(avg+s)**2,h*p**4/24*(avg-s)**2]});
+  return [p**4/24*(avg+s)**2,p**4/24*(avg-s)**2]});
  const gg=p**4*norm,gb=p*p*(1-p*p*norm),bg=p**3*norm;
  q.push(gg-q.reduce((s,x)=>s+x,0),gb,bg,1-gg-gb-bg);
  for(let k=0;k<16;k++)q[k]*=h;
