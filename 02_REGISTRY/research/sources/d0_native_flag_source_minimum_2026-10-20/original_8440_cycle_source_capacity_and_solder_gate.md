@@ -174,3 +174,46 @@ D_X\log m(e^{sX}P)|_{s=0}=
 The same owner's eqs (9.2)–(9.4) reconstruct all six components of \(C(P)=(P-I)(P+I)^{-1}\), then the *literal finite* curvature \(2C(I-C^2)^{-1}\), and its coframe-dual \(\star\)-Palatini cell density from the covariant inserted source. The second owner’s already constructed six-phase Golden GOOD+BAD atlas has a proven nonsingular 6×6 first response. These are sufficient mathematical readout mechanisms; **no new detector or Bloch census is needed**. However the original owner explicitly proves the serial marked scalar probability is not the primitive Book path weight and that neither instrument's complete physical preparation/work/clock/Info is selected by G0. All of these original admission, paid history and observer Ward questions remain.
 
 **True parent closure substitution:** the necessary native source is NOT one ad hoc \(\log m(P)\). It is a compulsory **full serial priced programme** whose order, retained reference, coframe insertion, and complete source derivatives implement the already checked \(\widetilde X_B(P)\)-signed response on the **same** connected curved family, before the existing nonlinear-refinement/positive_GR theorem may be consumed. The no-character theorem explains exactly why simply declaring the measured marked probability a multiplicative original history Cost cannot discharge that bridge.
+
+
+## 8. Exact weld to the **already owned** original future-completion soft Bellman law: the 32 potentials are a boundary/Doob gauge, not disposable physical clock data
+
+The exact path-potential kernel (1–2) must be combined with the current #334 prospective owner
+\`A4D_PROSPECTIVE_BOOK_FINITE_FUTURE_LAW_Q8_VERIFICATION_2026_10_20.md\` P1–P7. That owner's finite transition weights are
+\[
+K_y(u,v)=\varphi^{-c_{uv}(y)},\qquad
+Z_n=K_y^n\chi_y,\qquad
+Q_n(u,v)=K_y(u,v)\frac{Z_{n-1}(v)}{Z_n(u)}
+\]
+on the **actual** state/prefix carrier, with terminal future-test weight \(\chi\). The following identity is elementary but physically decisive for the Book03 interface and uses NO newly selected transition law.
+
+For any vertex potential \(f:V\to\mathbb R\), transform every ORIGINAL directed edge Cost by a path coboundary:
+\[
+c'_{uv}=c_{uv}+f(v)-f(u).
+\]
+Set \(D=\operatorname{diag}(\varphi^{-f(v)})\). Then
+\[
+\boxed{K'=D^{-1}KD.}\tag{9}
+\]
+Therefore every **closed** original path weight and the full two-/three-cycle scalar partition are exactly invariant. Also, the Perron eigenvalue/spectral pressure is unchanged under this diagonal similarity.
+
+For a physically coherent change of **terminal reference price**, take
+\[
+\boxed{\chi'(v)=\varphi^{f(v)}\chi(v)=D^{-1}(v)\chi(v).}\tag{10}
+\]
+Then \(Z'_n=D^{-1}Z_n\), and the ENTIRE prospective finite-horizon normalized transition law is **pointwise exactly invariant**:
+\[
+\boxed{Q'_n(u,v)=Q_n(u,v),\qquad
+V'_n(u)=V_n(u)-f(u).}\tag{11}
+\]
+Every intermediate potential cancels **with the actual paid terminal code**. The full logged programme Cost changes only by the initial boundary contribution \(-f(u_0)\), not by a spurious local source. The stationary Perron/Doob bulk law is likewise invariant because its right Perron vector transforms \(r'=D^{-1}r\).
+
+**Crucial reverse control: holding the future terminal test fixed can make the same edge shift observable.** At the original \(K_9\) root, the actual canonical \(K(9,11,13)\) has 24 unit-cost outgoing edges (11 toward K11 and 13 toward K13), all with weight \(p=\varphi^{-1}\). Put \(f(v)=1\) at ONE actual neighbor \(v\in K_{11}\) and zero at every other vertex. With original neutral \(\chi=1\) and one-step horizon, the old probability for that exact branch is \(1/24\). After coboundary edge-cost shift but with \(\chi\) **not** transformed it is
+\[
+\boxed{Q'_1(u,v)=\frac{p^2}{23p+p^2}=\frac p{23+p}\ne\frac1{24}.}\tag{12}
+\]
+If instead the actual terminal code is transformed as (10), \(\chi'(v)=p^{-1}\) at that destination and 1 elsewhere, every effective first-step weight is restored to \(p\) and \(Q'_1(u,v)=1/24\) exactly.
+
+Thus the 32-dimensional exact edge-potential kernel is a **closed-loop / terminal-covariant gauge**, NOT an unconditional claim that the complete physically admitted D0 future record may erase those 32 distinctions. Existing \`theory_transfer\` correctly requires preserving *all admitted future observations*. The true terminal programme/oldRIGHT/clock and the G0 admission determine whether a purported potential is physically redundant or a distinct future-test cost. The finite native soft Bellman theorem already supports this identity; this note proves the exact original graph application.
+
+**Physical implication:** a proof of Einstein from only the 8440 *closed* scalar loop weights necessarily misses boundary-normalizer/terminal information that may contribute physical source; conversely a choice of terminal potential made after inspecting Einstein would violate Book03's fixed-protocol rule. The correct next full-source comparison must hold initial preparation, genuinely required future test, and its already paid terminal price fixed before varying coframe or Lorentz links.
