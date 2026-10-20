@@ -55,8 +55,8 @@
   ],
   "pins": {
     "02_REGISTRY/research/certificates/a4d_native_curved_soldered_heat.py": "bf13f57c902da0005634ae6834c0b4e3ffd2df1aa196a61ebc0ff3dc0351c7da",
-    "02_REGISTRY/research/sources/d0_native_full128_order_readout_2026-10-19/check_complete_shannon_order_source.py": "26424be5c2278828af81d331b8edc110dd8c4eefad4fc97e2c2e5fa813de178a",
-    "02_REGISTRY/research/sources/d0_native_full128_order_readout_2026-10-19/check_native_full128_order_readout.py": "176739372e85d8cbd2ba48f7cc28cfe508395ae84007d8462a3f502d596a87a2"
+    "02_REGISTRY/research/sources/d0_native_full128_order_readout_2026-10-19/check_complete_shannon_order_source.py": "5dc12695dbdac1f68290d8bf0c8f9687c233d69f1bdc6aec20689365ec4e6d40",
+    "02_REGISTRY/research/sources/d0_native_full128_order_readout_2026-10-19/check_native_full128_order_readout.py": "51289e121e0582614989e467965d1913667e045fcf791665a853e158a84ed721"
   },
   "status": "PASS_SCOPED_COMPLETE_TWO_ROUND_FULL128_SHANNON_ORDER_SOURCE"
 }

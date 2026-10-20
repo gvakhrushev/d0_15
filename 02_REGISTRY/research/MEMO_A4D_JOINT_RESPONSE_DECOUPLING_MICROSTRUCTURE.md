@@ -9108,3 +9108,13 @@ and hypotheses are recorded in
 and §7 of the [opposite-null memory report](A4D_OPPOSITE_NULL_LIE_COMPLETE_JULIA_ORDER_MEMORY_BOOK_SOURCE_2026_10_19.md).
 The physical target remains the same admitted full-price pullback and its
 internal/matter/Ward/refinement equations.
+
+**Original full128 order-source control.** On the same CAR16/full128
+two-round history instrument used for the noncommuting \(J\) source, the
+complete mixed Shannon source difference is exactly zero for commuting
+\(+J,-J\). The checker retains all \(16{,}384\) histories per order and proves
+the zero-support mixed terms vanish; its exact replay and receipt are in
+[the full128 result](sources/d0_native_full128_order_readout_2026-10-19/RESULT.md).
+This validates the commutator-specific order contrast for that assigned
+instrument at this second jet. Sequential physical admission and selection
+of this price by unchanged D0 remain open.

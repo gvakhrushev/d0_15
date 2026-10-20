@@ -376,3 +376,43 @@ assigned per-increment applications are still a matrix program: native D0 has
 not admitted sequential Lorentz-word execution here, and neither the full
 physical Cost-Info selection nor the accompanying price-source/Euler matching
 has been established. `GR_closed=false`.
+
+## Exact commuting control for the complete two-round Shannon source
+
+Use the same original 128-outcome instrument, CAR16 input \(I_{16}/16\),
+fixed full-rank reference128 spectator, role-2 link, Fourier mode
+\(k=(0,0,0,1)\), and two fresh retained records. The control increments are
+\[
+A(a)=\exp(aJ_{23}),\qquad B(b)=\exp(-bJ_{23}),
+\]
+so the Lorentz increments commute and their group commutator is exactly zero.
+The full 128-by-128 history law is recomputed in both orders, with all
+16,384 histories included.
+
+Exactly 1,764 histories per order have positive probability at the base and
+14,620 have zero probability. The exact factorization check establishes zero
+mixed-derivative contribution from every zero-support \(q\log q\) term. On the
+positive support the complete mixed Shannon source is well-defined, and the
+checker gives
+\[
+\partial_{ab}\bigl(H_\varphi^{AB}-H_\varphi^{BA}\bigr)\big|_{0}=0
+\]
+exactly: the AB and BA sources have the same 39 nonzero grouped-log classes,
+the same grouped-expression SHA-256, and identical nonlog terms. The
+difference has no nonzero log groups and no nonlog contribution. This
+commuting control contrasts with the strictly positive exact interval for the
+same complete full128 source on the noncommuting
+\([N_2,\bar N_3]=J_{23}\) pair above.
+
+Replay the [commuting-control checker](check_two_round_commuting_j_control.py);
+its machine-readable receipt is
+[TWO_ROUND_COMMUTING_J_CONTROL.json](TWO_ROUND_COMMUTING_J_CONTROL.json).
+The existing complete two-round result and both source receipts were also
+replayed after updating their SHA pins to the current full128 owner, whose
+latest exact addition is the boost commutator witness.
+
+This is an exact control for the assigned two-round full128 matrix
+instrument's complete Shannon mixed-order source. It does not establish that
+native D0 admits these sequential operations or selects this Shannon term as
+its compulsory full Cost-Info price; the total controller/work/preparation
+source, geometric Euler matching and GR closure remain open.

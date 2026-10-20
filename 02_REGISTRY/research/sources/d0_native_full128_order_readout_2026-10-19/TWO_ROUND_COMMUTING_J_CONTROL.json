@@ -1,0 +1,62 @@
+{
+  "checks": 1803,
+  "complete_two_round_shannon": {
+    "AB": {
+      "exact_grouped_expression_sha256": "598ba8f67d99d17e903bfbee0957abc844b0577f949f097520721081c02ece8e",
+      "formula": "-sum_{q>0}(q_ab*log(q)+q_a*q_b/q)/log(phi)",
+      "nonlog_term": "-603555381*sqrt(5)/13107200000000 - 8716841870625229390047/(942150169519718400000000*sqrt(5) + 83056770728375091200000000) + 3723227067717719308827*sqrt(5)/(942150169519718400000000*sqrt(5) + 83056770728375091200000000) + 1409837967/13107200000000",
+      "nonzero_log_groups": 39,
+      "positive_histories": 1764
+    },
+    "AB_minus_BA": {
+      "exact_grouped_expression_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "interval_24_digits": [
+        "0.000000000000000000000000",
+        "0.000000000000000000000000"
+      ],
+      "nonlog_term": "0",
+      "nonzero_log_groups": 0
+    },
+    "BA": {
+      "exact_grouped_expression_sha256": "598ba8f67d99d17e903bfbee0957abc844b0577f949f097520721081c02ece8e",
+      "formula": "-sum_{q>0}(q_ab*log(q)+q_a*q_b/q)/log(phi)",
+      "nonlog_term": "-603555381*sqrt(5)/13107200000000 - 8716841870625229390047/(942150169519718400000000*sqrt(5) + 83056770728375091200000000) + 3723227067717719308827*sqrt(5)/(942150169519718400000000*sqrt(5) + 83056770728375091200000000) + 1409837967/13107200000000",
+      "nonzero_log_groups": 39,
+      "positive_histories": 1764
+    }
+  },
+  "history_support": {
+    "all_histories": 16384,
+    "positive_histories_per_order": 1764,
+    "zero_base_mechanism": "at least one one-round Kraus operator is exactly zero",
+    "zero_histories_per_order": 14620,
+    "zero_support_mixed_entropy_derivative": "0; each branch probability factors by its zero-round increment(s), so q log q has zero mixed derivative"
+  },
+  "input": {
+    "carrier": "original 16-component CAR and 128 outcomes per fresh round",
+    "commutator": "0; same one-parameter subgroup",
+    "first_generator": "J23",
+    "fourier_mode": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "grid": "L=4, h=1/4",
+    "preparation": "I16/16",
+    "reference128": "fixed full-rank spectator; no reference-state variation",
+    "second_generator": "-J23"
+  },
+  "nonclaims": [
+    "the assigned two-round matrix instrument is not thereby a physically admitted D0 memory word",
+    "this Shannon derivative is not the compulsory full Book Cost-Info action",
+    "no controller, work, preparation, normalization, or native event-binding source is selected",
+    "no physical gravity coupling or GR closure is established"
+  ],
+  "pins": {
+    "02_REGISTRY/research/certificates/a4d_native_curved_soldered_heat.py": "bf13f57c902da0005634ae6834c0b4e3ffd2df1aa196a61ebc0ff3dc0351c7da",
+    "02_REGISTRY/research/sources/d0_native_full128_order_readout_2026-10-19/check_complete_shannon_order_source.py": "5dc12695dbdac1f68290d8bf0c8f9687c233d69f1bdc6aec20689365ec4e6d40",
+    "02_REGISTRY/research/sources/d0_native_full128_order_readout_2026-10-19/check_native_full128_order_readout.py": "51289e121e0582614989e467965d1913667e045fcf791665a853e158a84ed721"
+  },
+  "status": "PASS_SCOPED_COMPLETE_TWO_ROUND_FULL128_COMMUTING_J_CONTROL"
+}

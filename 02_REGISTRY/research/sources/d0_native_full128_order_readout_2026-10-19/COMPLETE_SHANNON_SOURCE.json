@@ -75,7 +75,7 @@
   ],
   "pins": {
     "02_REGISTRY/research/certificates/a4d_native_curved_soldered_heat.py": "bf13f57c902da0005634ae6834c0b4e3ffd2df1aa196a61ebc0ff3dc0351c7da",
-    "02_REGISTRY/research/sources/d0_native_full128_order_readout_2026-10-19/check_native_full128_order_readout.py": "176739372e85d8cbd2ba48f7cc28cfe508395ae84007d8462a3f502d596a87a2"
+    "02_REGISTRY/research/sources/d0_native_full128_order_readout_2026-10-19/check_native_full128_order_readout.py": "51289e121e0582614989e467965d1913667e045fcf791665a853e158a84ed721"
   },
   "probability_law": {
     "first_source_sum": "0",

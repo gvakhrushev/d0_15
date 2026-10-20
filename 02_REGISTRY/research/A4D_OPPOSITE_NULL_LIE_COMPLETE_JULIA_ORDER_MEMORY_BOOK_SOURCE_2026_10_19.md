@@ -597,3 +597,11 @@ calculation, not the native selected Cost--Info law, not the full 40-row
 Euler system on this two-sided ansatz, and not a refinement or GR closure
 result. The next useful step is to derive the actual admitted full-price
 pullback and test the same commuting control on that one run.
+
+The direct-per-face false positive is specific to that candidate assignment.
+The separate complete full128 two-round Shannon control in
+[A4D native full128 result](sources/d0_native_full128_order_readout_2026-10-19/RESULT.md)
+has an exactly zero AB-minus-BA mixed source for commuting \(+J,-J\), while
+the same complete-history instrument has a strictly nonzero source on
+\([N_2,\bar N_3]=J\). This narrows the instrument comparison but still uses
+assigned matrix steps rather than a physically admitted D0 memory program.
