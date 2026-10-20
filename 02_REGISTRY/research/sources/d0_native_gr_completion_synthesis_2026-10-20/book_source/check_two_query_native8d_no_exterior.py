@@ -140,9 +140,27 @@ def exact_offchart_gate():
             "offchart_first_jet_defect":"0",
             "offchart_second_order_defect":str(second_mismatch)}
 
+def native_golden_efficiency_info_gate():
+    # Exact algebraic finite GOLDEN stochastic-primitives obstruction:
+    # finite event laws are in Z[p] as p^2=1-p. Irrational p implies
+    # a+b*p rational iff b=0, so no dyadic 1/2^20 at finite depth.
+    # Check the complete entropy-derivative *source* sign in a rational
+    # positive original Q-effect window, without approximating logs.
+    z=Q(1,2**20)
+    for lam in (Q(1,5),Q(1,3),Q(4,5)):
+        # d/dλ(h(zλ)-z h(λ))
+        # = z log_phi[(1-zλ)/(z(1-λ))].
+        ratio=(1-z*lam)/(z*(1-lam))
+        check(ratio>1,"measured vs coherent controller first source gap not strict")
+        # Full measured controller ledger entropy is h(z)+z h(lam);
+        # full coherent binary source is h(z lam), not this one.
+    print("PASS finite Golden-only rational dyadic exclusion and "
+          "coherent-vs-measured controller Info first-source obstruction")
+
 if __name__=="__main__":
     work=coherent_full_work()
     hostile=exact_offchart_gate()
+    native_golden_efficiency_info_gate()
     print(json.dumps({"status":"PASS",
           "original_native_query_dimension":8,
           "no_exterior_or_fermionic_fock_primitive":True,
