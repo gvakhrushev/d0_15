@@ -4,11 +4,27 @@
   "route": "02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md",
   "goals": [
     {
+      "id": "D0-FOUNDATION",
+      "requires": [
+        "verification_core"
+      ],
+      "statement": "Compose the necessary operational verification kernel from the existing necessity, empirical-factorization and future-memory owners, with their exact hypotheses.",
+      "outcome": "positive"
+    },
+    {
+      "id": "THEORY-TRANSFER",
+      "requires": [
+        "theory_transfer"
+      ],
+      "statement": "Own generic conditional transfer of existing theory results through an explicit faithful operational interpretation. Each physical realization is a separate application.",
+      "outcome": "positive"
+    },
+    {
       "id": "GR",
       "requires": [
-        "positive_gr"
+        "gr_architectural_closure"
       ],
-      "statement": "Positive native GR in an explicit nonempty curved class; soundness and recovery have their declared scope.",
+      "statement": "First complete physical specialization of the D0 foundation: faithful operational realization composed with the unchanged positive native GR theorem on the same admitted curved family, action and source.",
       "outcome": "positive"
     },
     {
@@ -442,9 +458,68 @@
       "normalization": "Original eta-preserving proper/time-oriented Lorentz group and original null basis; no fitted coupling.",
       "refinement": "Exact finite group and Lie-algebra result; no continuum or refinement statement.",
       "scope": "Excludes only scalar single-plaquette conjugacy-class Costs as a null-curvature source. It does not exclude oriented pretrace/reference readouts, coframe/observer dependence, ordered memory, or the compulsory full Book/G0 action."
+    },
+    "verification-core-v1": {
+      "carrier": "A declared nontrivial operational verification protocol and its empirical states, with explicit outcomes, admissible tests and finite action continuations.",
+      "action": "Reading, writing, retaining, comparing and composing completed verification acts; no gravitational action is assumed.",
+      "variations": "All pairs and all admitted future continuations in the exact owner contracts; empirical equality retains every distinction available to that interface.",
+      "source": "Existing Lean necessity, record, comparison and provenance witnesses, with explicit maps to the book Sigma=(C,C*,D_min,Delta,R,O) roles. Finite coding, effective canonicalization and computable access use supplied representation witnesses or separately owned constructions of the coded interface.",
+      "normalization": "Explicit outcome encodings and Boolean decision predicates on completed records; at least two distinguishable states does not restrict an outcome alphabet to two values.",
+      "refinement": "Generic finite executions with sufficient retained memory and composition; physical clock calibration and smooth limits belong to the instantiated theory.",
+      "scope": "Necessary functional roles and empirical/future-process factorization under exact owner hypotheses. A semantic quotient alone does not supply effective finite coding or access; every such requirement of the coded realization has an explicit witness or premise."
+    },
+    "theory-transfer-v1": {
+      "carrier": "An explicitly presented theory T, its stated regime assumptions A_T, and an interpretation I_T into a declared operational process interface.",
+      "action": "A state map and translation of each T-action into a finite native program, with test/outcome maps and commuting execution, readout and composition; imported proof rules remain explicit.",
+      "variations": "All tests, operations and variations used by the imported theorem; preserve and reflect empirical distinctions on the declared common sector, keeping additional native tests explicit.",
+      "source": "Every premise A_T has a proof in D0 plus the stated regime H_T; physical source and action realization are obligations of the application, not supplied by syntax encoding.",
+      "normalization": "Declared readout, equality, clock and unit maps; approximate identifications include an explicit error bound in the target norm.",
+      "refinement": "Finite process composition and, when invoked, the declared uniform family, interlevel maps, topology and limiting hypotheses.",
+      "scope": "Generic conditional theorem reuse: A_T proves P and a proof-preserving I_T with D0+H_T proving I_T(A_T) gives D0+H_T proving I_T(P); GR is the first physical application."
+    },
+    "gr-operational-closure-v1": {
+      "carrier": "One explicit nonempty curved native family Omega_h and its GR interpretation, including preparation, retained history, admissible actions, tests and physical quotient.",
+      "action": "The same complete native action as in positive_gr, or a proved transport preserving the required action/source structure; the Einstein equation is not an admission premise.",
+      "variations": "The same independent metric, link, matter, preparation and clock variations consumed by positive_gr, with commuting operational and geometric maps.",
+      "source": "The same independently derived full source and Ward identity; exact witness identities or proved transports connect operational realization and positive_gr.",
+      "normalization": "Explicit conversion of geometric responses, source conventions, outcome readouts and physical clock units; event order is bound to the declared causal-time readout.",
+      "refinement": "The same refining family, interlevel maps, norms and uniform bounds as soundness and recovery; finite observations and retained future distinctions are preserved.",
+      "scope": "Full architectural GR closure on the declared curved class, with common witnesses for the foundation, theorem transfer, operational realization and unchanged positive_gr."
     }
   },
   "obligations": [
+    {
+      "id": "verification_core",
+      "statement": "Compose the existing necessity, empirical-factorization and future-memory theorems at their exact scope: completed distinguishable outcomes, retained records, catalogue-independent rechecking and all admitted future distinctions. Interpret the book Sigma roles through explicit representation witnesses. Finite coding, effective canonicalization and computable access, where required, are explicit hypotheses or separately owned constructions of the coded interface; they are not inferred from the bare verification or execution contract. Preserve each owner hypothesis; the theorem has no GR premise.",
+      "interface": "verification-core-v1",
+      "outcome": "positive",
+      "group": "foundation",
+      "methods": [
+        {
+          "id": "direct",
+          "requires": []
+        }
+      ],
+      "consumer": "theory_transfer",
+      "scope_level": "family"
+    },
+    {
+      "id": "theory_transfer",
+      "statement": "Prove generic conditional theorem transfer between two operational systems through I_T: states, actions translated to finite programs, tests and outcomes commute with execution and composition, preserving and reflecting empirical distinctions on the declared common sector. Preserve the declared assertion/proof interface and map every imported premise to a proved statement or explicit regime hypothesis. Reuse existing T-proofs; establish each physical realization separately and keep additional native tests explicit. No GR conclusion is a premise of this generic theorem.",
+      "interface": "theory-transfer-v1",
+      "outcome": "positive",
+      "group": "foundation",
+      "methods": [
+        {
+          "id": "direct",
+          "requires": [
+            "verification_core"
+          ]
+        }
+      ],
+      "consumer": "gr_operational_realization",
+      "scope_level": "family"
+    },
     {
       "id": "constitutive",
       "statement": "Derive the admitted complete action/constitutive law from unchanged native D0.",
@@ -653,6 +728,47 @@
             "recovery",
             "matter_source_ward",
             "physical_constraints"
+          ]
+        }
+      ],
+      "consumer": "GR",
+      "scope_level": "family"
+    },
+    {
+      "id": "gr_operational_realization",
+      "statement": "Instantiate the generic interpretation on one explicit admitted native GR family: preparation, states, retained histories, actions, tests, source, physical quotient and clock/readout maps preserve the declared finite continuations and empirical distinctions, with the required uniform refinement bounds. Prove the imported GR theorem premises from this native family and explicit regime assumptions, without assuming the desired Einstein equation in admission.",
+      "interface": "gr-operational-closure-v1",
+      "outcome": "positive",
+      "group": "composition",
+      "methods": [
+        {
+          "id": "direct",
+          "requires": [
+            "theory_transfer",
+            "native_sector",
+            "physical_constraints",
+            "matter_source_ward",
+            "contrast_refinement_transfer"
+          ]
+        }
+      ],
+      "consumer": "gr_architectural_closure",
+      "scope_level": "family"
+    },
+    {
+      "id": "gr_architectural_closure",
+      "statement": "Compose verification_core, theory_transfer, gr_operational_realization and unchanged positive_gr. Prove that their witnesses use the same admitted native family, complete action, independent source, actual variations, preparation/history, clock/readout maps, normalization and refinement maps, or supply a proved transport preserving each required structure. The final theorem retains the declared nonempty curved sector, soundness, recovery and physical constraints; separate existential witnesses or Boolean completion flags do not establish this composition.",
+      "interface": "gr-operational-closure-v1",
+      "outcome": "positive",
+      "group": "composition",
+      "methods": [
+        {
+          "id": "direct",
+          "requires": [
+            "verification_core",
+            "theory_transfer",
+            "gr_operational_realization",
+            "positive_gr"
           ]
         }
       ],
@@ -1029,6 +1145,12 @@
       "left": "same final Q8 operator and conditional Golden endpoint probabilities",
       "right": "actual chronological source history with prefix states, internal clock and paid ActionProtocol jet",
       "reason": "On the pinned original Q8 carrier, 2-step and 8-step histories have the same final operator and endpoint law but clocks 2 and 8; the canonical primitive prices differ, and the legal C(t)=1+t^2 profile gives a second-source gap of 12 on the Golden-prepared input. This is a scoped component result, not the complete H+J+R price or physical selector. Preserve history until same-programme internal stationarity proves a valid quotient."
+    },
+    {
+      "id": "separate-realizations-vs-common-gr-composition",
+      "left": "A necessary verification tuple, a generic theorem interpretation, and a positive GR result proved for independently named witnesses.",
+      "right": "One faithful operational and physical realization of GR from the D0 foundation.",
+      "reason": "The final application must prove common witnesses or structure-preserving transports for carrier, complete action, source, variations, history, clocks, readouts, normalization and refinement. Reuse of an imported theorem also requires its actual premise map."
     }
   ],
   "source_fork_reconciliations": [
@@ -1150,6 +1272,69 @@
     }
   ],
   "synthesis": [
+    {
+      "id": "verification-foundation",
+      "title": "Necessary verification kernel and retained future distinctions",
+      "contribution": "The kernel already has proof owners for necessary records/comparison, empirical factorization, process composition and future-stable memory. Consume those theorems in their exact scope and align their witnesses with the book Sigma roles; this is an assembly application, not a new campaign to reprove the foundation.",
+      "results": [],
+      "consumers": [
+        "verification_core",
+        "theory_transfer"
+      ],
+      "readings": [
+        {
+          "label": "Existing necessity, injective records and verification-theory representation owners",
+          "ref": "5d23e90af703efee7f0deb24517d3ead4780fdfc",
+          "path": "03_FORMALIZATION/D0/Foundation/VerifiabilityNecessity.lean"
+        },
+        {
+          "label": "Existing empirical factorization and process composition on main",
+          "ref": "5d23e90af703efee7f0deb24517d3ead4780fdfc",
+          "path": "03_FORMALIZATION/D0/Foundation/EmpiricalTheoryFactorization.lean"
+        },
+        {
+          "label": "FutureExecution: future-stable quotient and sufficient retained memory in pinned #334",
+          "ref": "a8cde85432d561c06b9fcb77b77bfe471b7c5031",
+          "path": "03_FORMALIZATION/D0/Foundation/EmpiricalTheoryFactorization.lean"
+        },
+        {
+          "label": "Existing distinction between class admissibility and unique forcing",
+          "ref": "5d23e90af703efee7f0deb24517d3ead4780fdfc",
+          "path": "03_FORMALIZATION/D0/Foundation/M1ClassAdmissibility.lean"
+        }
+      ],
+      "next_question": "Write the composed kernel statement with exact owner substitutions, derived roles and explicit representation witnesses. Keep finite coding, effective canonicalization and access requirements as named premises or owned constructions of the coded interface. Then state the general execution/proof transfer interface. Reuse existing proofs instead of reopening them because their assembly application is missing.",
+      "tags": [
+        "foundation",
+        "verification",
+        "Sigma",
+        "memory",
+        "time",
+        "interpretation",
+        "architecture"
+      ]
+    },
+    {
+      "id": "gr-architectural-composition",
+      "title": "One common realization for theorem reuse and physical GR",
+      "contribution": "The strong physical positive_gr chain remains intact. The architectural conclusion additionally identifies its witnesses with the operational realization and the generic theorem transfer, so every conclusion concerns the same action, source, history and refinement family.",
+      "results": [],
+      "consumers": [
+        "theory_transfer",
+        "gr_operational_realization",
+        "gr_architectural_closure"
+      ],
+      "readings": [],
+      "next_question": "Write the strongest complete conditional GR argument using the existing owners, name one common realization, and isolate its finite open premise boundary. Select the next useful parent substitution from that boundary. The present native selection/payment and uniform joint-refinement questions retain their existing owners and exact scope.",
+      "tags": [
+        "architecture",
+        "GR",
+        "composition",
+        "transfer",
+        "same-source",
+        "closure"
+      ]
+    },
     {
       "id": "source",
       "title": "Полная история → тот же геометрический источник",

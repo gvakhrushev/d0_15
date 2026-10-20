@@ -2,7 +2,7 @@
 
 Use this layer to find the next missing transition, its current owner and the
 results that can actually be substituted into the derivation. The
-[scientific route](../research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md#current-route-to-general-relativity)
+[architectural route](../research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md#architectural-objective)
 owns the argument. [VIEW.md](VIEW.md) is a generated composition overview.
 Claims, proof owners, the work queue and live GitHub execution keep their
 existing authorities. No graph label by itself promotes a scientific claim.
@@ -11,6 +11,8 @@ For scientific synthesis, start with the short [working map](SYNTHESIS.md):
 
 ```bash
 python3 tools/gr_assembly.py puzzle
+python3 tools/gr_assembly.py puzzle verification-foundation
+python3 tools/gr_assembly.py puzzle gr-architectural-composition
 python3 tools/gr_assembly.py puzzle vacuum
 python3 tools/gr_assembly.py puzzle source
 ```
@@ -35,6 +37,79 @@ and applications. Shared evidence alone never merges different theorems.
 `render` regenerates both views; no long research owner needs to be moved or
 rewritten to keep the short map current.
 
+## Architectural closure plan
+
+The programme's common foundation is the necessary functional structure of
+verification. GR is its first complete physical specialization. The plan
+reuses existing theory proofs by establishing their premises and a faithful
+interpretation into D0. The new composition obligations name the required
+applications; they do not change the status of their existing proof owners.
+
+| Obligation | Concrete output and next consumer |
+|---|---|
+| `verification_core` | One composed kernel contract: the existing verification contract forces its functional roles; the declared tests and finite continuations define empirical states; sufficient records retain those distinctions; actions descend to that factor. Explicit witness maps make this an input of `theory_transfer`. |
+| `theory_transfer` | A general conditional transfer between two operational systems: state map, action-to-finite-program translation, test/outcome maps and commuting execution/readout/composition. State the common empirical sector, any additional native tests and the proof interface used to import a theorem. |
+| `gr_operational_realization` | An instance on actual admitted native states and operations, binding complete histories, preparations, source, variations, physical quotient and clocks to the GR-facing readout, with the declared refinement estimates. |
+| `gr_architectural_closure` | A common-witness composition of the preceding results with **unchanged `positive_gr`**, including its soundness, recovery, full source and physical constraints. |
+
+The kernel application names its representation witnesses. Required finite
+coding, effective canonicalization and computable access are supplied by the
+specific coded interface's premises or owned constructions; generic necessity
+and a semantic quotient alone do not construct those algorithms.
+
+For an imported result `A_T proves P`, the transfer obligation supplies a
+proof-preserving interpretation `I_T` and proves `I_T(A_T)` from D0 plus the
+explicit regime hypotheses `H_T`. Its conclusion is `D0 + H_T proves I_T(P)`.
+This permits direct reuse of GR theorems. Constructing and verifying the
+physical interpretation remains the responsibility of the GR application.
+
+The final composition proves that the operational and physical results use
+the **same witnesses**: carrier/family, complete action, independent source,
+actual variations, preparation/history, clocks/readouts, normalization and
+refinement. Different witnesses require a proved transport preserving those
+structures. The existing interface name classifies a contract; it cannot by
+itself identify two concrete realizations. The final accepted application owns
+this compatibility proof even when every prerequisite has already been accepted.
+
+### First complete argument and its open boundary
+
+The integrator first writes the strongest complete conditional argument in the
+existing scientific route/parent owner, keeping the original quantifiers and
+all remaining premises visible. Work then contracts that finite premise
+boundary:
+
+1. **Compose existing kernel owners.** Use `record_injective`,
+   `verifiability_forces_functional_tuple`, the provenance/archive theorem,
+   `universal_factorization`, and the pinned `FutureExecution` process and
+   sufficient-memory theorems. Map state, record and observation witnesses
+   explicitly. The working map links their exact commits; their absence from
+   an assembly application is not a reason to reprove them.
+2. **Supply the general transfer interface.** Existing `OperationalProcess`
+   acts within one empirical theory, while `TheoryVerification` presents
+   states. The next interface joins two execution systems: an action may
+   compile to a finite native word, and execution, tests and all declared
+   future distinctions must commute. Native tests outside the imported sector
+   remain explicit. Physical duration is bound by the concrete clock map.
+3. **Instantiate on the current GR front.** Connect the complete paid native
+   history/process to the already constructed geometric tester. This uses the
+   existing `constitutive`, `native_sector`, `matter_source_ward`,
+   `contrast_refinement_transfer` and `physical_constraints` outputs. The
+   actual source and its variations, including preparation and clock terms,
+   must travel through the map. The current physical questions and pins are
+   maintained in [Current scientific gate](#current-scientific-gate).
+4. **Compose on one family.** Complete the unchanged native nonlinear and
+   refinement chain, then apply `gr_architectural_closure` to the common
+   witnesses. Check the affected composition on its pinned inputs and accept
+   the exact application.
+
+This is a logical order of consumption. Conditional transfer work and the two
+existing physical fronts may proceed in parallel with their assumptions
+retained. It creates no additional queue, lifecycle or recurring corpus audit.
+A proposed local result must specify its exact parent substitution or the
+missing transport that keeps it supporting evidence. Repeat a closed attempt
+only after a changed mathematical input or method addresses its recorded
+obstacle; changing labels or collecting another fixture does not do so.
+
 ## Enter with one relevant query
 
 ```bash
@@ -45,6 +120,8 @@ python3 tools/task_dispatch.py TASK-ID
 python3 tools/gr_assembly.py next
 
 # Read only the relevant missing inputs and previous results.
+python3 tools/gr_assembly.py why gr_architectural_closure
+python3 tools/gr_assembly.py why theory_transfer
 python3 tools/gr_assembly.py why positive_gr
 python3 tools/gr_assembly.py search source
 python3 tools/gr_assembly.py attempts volume
@@ -93,10 +170,13 @@ application points to independent scoped review. This readiness is only a
 dependency calculation. It does not assert evidence, physical admission, proof
 success or launch permission, and unlock counts do not estimate proof success.
 
-The three goals remain separate: positive native `GR`, the original `RAW-216`
-contract, and global `D0-CLOSURE` classification. A classification or typed
-passport is not positive internal GR. The two scientific fronts can prove
-independent conditional premises in parallel, with their assumptions retained.
+The goals have distinct conclusions: `D0-FOUNDATION` composes the necessary
+kernel; `THEORY-TRANSFER` owns the generic conditional transfer; `GR` requires
+their physical common-witness composition with unchanged positive native GR.
+The original `RAW-216` contract and global `D0-CLOSURE` classification remain
+separate. A classification or typed passport cannot discharge a positive
+physical goal. The two scientific fronts can prove independent conditional
+premises in parallel, with their assumptions retained.
 
 ## Data and ownership
 

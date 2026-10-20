@@ -16,8 +16,9 @@ Start by reading:
 
 1. `AGENTS.md`;
 2. `00_WORK/README.md`;
-3. `00_WORK/manifest.json`;
-4. the task brief named by the manifest.
+3. the [architectural objective in the current scientific route](02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md#architectural-objective);
+4. `00_WORK/manifest.json`;
+5. the task brief named by the manifest.
 
 If the task is absent from `main`, check open GitHub PRs before creating
 anything. It may already be executing. Do not create a duplicate execution.
@@ -29,11 +30,21 @@ the relevant current route; do not begin every session by auditing the corpus.
 
 ## Scientific priority and parallel execution
 
-The [current gravity route](02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md#current-route-to-general-relativity)
-is the working scientific entry point. One integrator owns its end-to-end
-argument, definitions, norms and source conventions. Delegate independent
-premises with a named consumer in that argument; integrate each result as it
-arrives. Do not wait for every research lane to finish before composing results.
+D0's primary object is the verification kernel: distinction, retained record
+and independent comparison without an obligatory external catalogue. The
+programme constructs theory interpretations over that kernel and proves their
+compatible transfer and composition within declared assumptions. General
+relativity is the first full specialization to complete. Its original native
+physical action/source, joint dynamics and refinement obligations remain.
+
+Read the [architectural objective](02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md#architectural-objective)
+before selecting work; the [current GR route](02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md#current-route-to-general-relativity)
+specifies that specialization. One integrator owns the complete argument,
+kernel and theory interfaces, definitions, norms and source conventions.
+Synthesize the existing argument before assigning new work. Delegate only a
+named missing parent premise or the explicit map needed to use an existing
+result; integrate each usable result as it arrives. Do not wait for every
+research lane to finish before composing results.
 
 At programme handoff, the integrator reads the full preserved strategy once;
 the [strategy, 18 leads and original guidance](02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md#strategic-context-and-preserved-inputs)
@@ -48,16 +59,27 @@ through CONTROL when it owns an independent research/proof obligation. Existing
 prerequisites and WIP limits still apply, including live PRs whose queue rows on
 main remain PLANNED. A free slot alone does not establish mathematical inputs.
 
-Each new or revised scientific brief records, in its existing text: exact
-statement and remaining assumptions; input refs; carrier/norm/source convention;
-write paths; the consuming parent step; the smallest decisive check. No new
-task-status registry is needed. The [gravity assembly](02_REGISTRY/gr_assembly/README.md)
+Each new or revised scientific brief records, in its existing text: its phase
+in the argument (verification kernel, interpretation and generic transfer,
+native realization or final composition); exact statement and remaining assumptions;
+input refs; carrier/norm/source convention; write paths; exact parent premise
+and intended substitution; the smallest decisive check. These phases describe
+the argument; use the existing brief without new forms, lifecycle states or
+status registries. The [gravity assembly](02_REGISTRY/gr_assembly/README.md)
 records the missing composition information: exact obligations, interface
 versions, applications and scoped prior attempts. For a named task, the normal
 dispatch command prints its interface and consumer; for route selection use
 `python3 tools/gr_assembly.py next`. Read only that result's relevant owners.
 A certificate is useful when it resolves that step;
 do not produce rank catalogues, audit memos or formalizations without a consumer.
+
+Naming a consumer does not establish a substitution. A supporting result names
+its intended parent premise and the remaining application or transport; it
+does not discharge that premise until the application is proved and accepted.
+Do not invent dependency edges to turn a useful result into a prerequisite.
+Reuse owned proofs. Before repeating a proof or census, identify the changed
+mathematical input that makes the existing result insufficient; verification
+replay remains governed by its explicit mode and the validation budget.
 
 When an interface does not type-check, the integrator resolves that mismatch
 before dispatching dependent work. A scoped no-go must change the parent route,
@@ -83,7 +105,9 @@ lemma's start. Live WIP and existing executions still apply. Lifecycle start
 and Ready checks enforce these boundaries.
 
 At a result checkpoint, use `python3 tools/gr_assembly.py template TASK-ID` and
-record the precise parent substitution. An independent pinned acceptance binds
+record the phase, precise parent substitution and remaining assumptions. If the
+result is still supporting work, identify its missing application instead of
+reporting a removed premise. An independent pinned acceptance binds
 the result, target, all hypotheses, interface maps and proof method. A PASS,
 historical graph status, scoped no-go or copied pointer cannot close a positive
 existence premise. A scoped negative changes only its declared route; retained
@@ -94,6 +118,8 @@ scientific evidence and the original raw terminal retain their existing scope.
 ## Validation budget
 
 Follow the [change-based matrix](00_WORK/README.md#validation-budget).
+Synthesize the available proof first, check the unresolved step with the
+smallest decisive test, then replay the affected integration on final inputs.
 During iteration run the changed calculation, targeted tool test or narrow Lean
 module. Documentation/process edits do not call for a full mathematical replay.
 At Ready, run the affected integration gates once on the final inputs; broaden

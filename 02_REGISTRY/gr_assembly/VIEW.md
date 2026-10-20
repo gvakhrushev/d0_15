@@ -6,6 +6,8 @@ Scientific acceptance and live execution are separate. Historical research does 
 
 | Goal | Composition |
 |---|---|
+| D0-FOUNDATION | OPEN |
+| THEORY-TRANSFER | OPEN |
 | GR | OPEN |
 | RAW-216 | OPEN |
 | D0-CLOSURE | OPEN |
@@ -14,6 +16,8 @@ For the short working composition and next scientific questions, use [SYNTHESIS.
 
 | Obligation | Group | Missing logical inputs | Accepted application |
 |---|---|---|---|
+| verification_core | foundation | none; conclusion still needs accepted evidence | none |
+| theory_transfer | foundation | verification_core | none |
 | constitutive | native | none; conclusion still needs accepted evidence | none |
 | native_sector | native | constitutive | none |
 | probe_law | geometry | none; conclusion still needs accepted evidence | endpoint-probe-to-geometric-law |
@@ -26,6 +30,8 @@ For the short working composition and next scientific questions, use [SYNTHESIS.
 | recovery | composition | joint_nonlinear_solve, contrast_refinement_transfer | none |
 | physical_constraints | composition | native_sector | none |
 | positive_gr | composition | soundness, recovery, matter_source_ward, physical_constraints | none |
+| gr_operational_realization | composition | theory_transfer, native_sector, physical_constraints, matter_source_ward, contrast_refinement_transfer | none |
+| gr_architectural_closure | composition | verification_core, theory_transfer, gr_operational_realization, positive_gr | none |
 | raw_response_terminal | original | none; conclusion still needs accepted evidence | none |
 | full_affine_stationarity | support | none; conclusion still needs accepted evidence | none |
 | resonance_divisor | support | none; conclusion still needs accepted evidence | none |
@@ -40,49 +46,67 @@ The diagram is a proof plan, not evidence that any transition is closed.
 
 ```mermaid
 flowchart TD
-    o0["constitutive"]
-    o1["native_sector"]
-    o2["probe_law"]
-    o3["contrast_refinement_transfer"]
-    o4["matter_source_ward"]
-    o5["on_shell_stationarity"]
-    o6["gauge_range"]
-    o7["joint_nonlinear_solve"]
-    o8["soundness"]
-    o9["recovery"]
-    o10["physical_constraints"]
-    o11["positive_gr"]
-    o12["raw_response_terminal"]
-    o13["full_affine_stationarity"]
-    o14["resonance_divisor"]
-    o15["primitive_jet_composition"]
-    o16["mv_tangent_span"]
-    o17["global_classification"]
+    o0["verification_core"]
+    o1["theory_transfer"]
+    o2["constitutive"]
+    o3["native_sector"]
+    o4["probe_law"]
+    o5["contrast_refinement_transfer"]
+    o6["matter_source_ward"]
+    o7["on_shell_stationarity"]
+    o8["gauge_range"]
+    o9["joint_nonlinear_solve"]
+    o10["soundness"]
+    o11["recovery"]
+    o12["physical_constraints"]
+    o13["positive_gr"]
+    o14["gr_operational_realization"]
+    o15["gr_architectural_closure"]
+    o16["raw_response_terminal"]
+    o17["full_affine_stationarity"]
+    o18["resonance_divisor"]
+    o19["primitive_jet_composition"]
+    o20["mv_tangent_span"]
+    o21["global_classification"]
     o0 --> o1
-    o1 --> o3
     o2 --> o3
-    o1 --> o4
-    o0 --> o4
     o3 --> o5
     o4 --> o5
-    o1 --> o6
-    o4 --> o6
+    o3 --> o6
+    o2 --> o6
+    o5 --> o7
     o6 --> o7
-    o7 --> o8
-    o5 --> o8
-    o7 --> o9
-    o3 --> o9
-    o1 --> o10
-    o8 --> o11
+    o3 --> o8
+    o6 --> o8
+    o8 --> o9
+    o9 --> o10
+    o7 --> o10
     o9 --> o11
-    o4 --> o11
-    o10 --> o11
-    g0[["GR"]]
-    o11 --> g0
-    g1[["RAW-216"]]
-    o12 --> g1
-    g2[["D0-CLOSURE"]]
-    o17 --> g2
+    o5 --> o11
+    o3 --> o12
+    o10 --> o13
+    o11 --> o13
+    o6 --> o13
+    o12 --> o13
+    o1 --> o14
+    o3 --> o14
+    o12 --> o14
+    o6 --> o14
+    o5 --> o14
+    o0 --> o15
+    o1 --> o15
+    o14 --> o15
+    o13 --> o15
+    g0[["D0-FOUNDATION"]]
+    o0 --> g0
+    g1[["THEORY-TRANSFER"]]
+    o1 --> g1
+    g2[["GR"]]
+    o15 --> g2
+    g3[["RAW-216"]]
+    o16 --> g3
+    g4[["D0-CLOSURE"]]
+    o21 --> g4
 ```
 
 Historical catalogue: 44 preserved IDs; 38 indexed scoped negative results including typed input.

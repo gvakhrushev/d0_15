@@ -2,24 +2,147 @@
 
 **Control:** `CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE`  
 **Status:** working scientific route / not a theorem or task registration
-**Snapshot:** 2026-10-15; accepted `main` `fa2b04b9c8aae5a0b8470322d6091712ce56567a`
+**Architecture snapshot:** 2026-10-20; foundation baseline `main`
+`5d23e90af703efee7f0deb24517d3ead4780fdfc`. Current research inputs retain their
+exact source pins in the [assembly](../gr_assembly/README.md#current-scientific-gate).
+
+## Architectural objective
+
+D0 supplies the necessary operational structure `Sigma` (`Σ`) of verification
+without an obligatory external catalogue. Readable and writable distinctions,
+retained records, independent comparison, distinctions stable under admitted
+future comparisons, and operational order/time are used with the exact
+hypotheses of their existing proof owners. The `verification_core` obligation
+assembles that common foundation; it does not request a new proof of the owned
+kernel or a corpus audit. Preserve each owner's quantifiers and scope when
+stating necessity for the declared class of verifiable theories.
+
+Map the book tuple to explicit representation witnesses. Where a coded
+interface requires finite encoding, effective canonicalization or computable
+access, identify its supplied hypotheses or owned constructions. Generic
+necessity and semantic factorization theorems retain their original scope;
+their abstract quotients do not supply those algorithms by themselves.
+
+A completed distinguishable record is an input to comparison and statistics.
+The outcome alphabet is declared by the protocol; a definite Boolean check
+does not restrict it to two physical outcomes. For the stated execution/test
+interface, empirical equality means equality of every available future profile:
+
+\[
+x\sim y\quad\Longleftrightarrow\quad
+\forall w,q,\ \operatorname{read}(\operatorname{run}(w,x),q)
+=\operatorname{read}(\operatorname{run}(w,y),q).
+\]
+
+Retained memory must preserve those distinctions. Operational time at this
+level is the order of registered distinguishable changes. Its relation to a
+theory's duration and causal-time observable is supplied by the concrete clock
+map in that theory's realization.
+
+The programme places existing theories over this foundation through faithful
+interpretations. It reuses their proved mathematics. A theory interpretation
+specifies states, operations, composition, observations and physical equivalence;
+its D0 realization preserves the declared preparation, records, clock, cost and
+source semantics. Sharing a necessary tuple or encoding equations in a carrier
+does not by itself establish this preservation.
+
+`theory_transfer` is a generic conditional theorem: for any declared theory `T`,
+a faithful interpretation satisfying its explicit interface carries theorems
+`H_T => P_T` to the corresponding D0 statements. It does not depend on GR, assert
+that every interpretation has already been constructed, or require re-proving
+the internal mathematics of `T`. An application must establish the interpreted
+hypotheses on its actual D0 objects. A target equation may occur in the theory
+being interpreted; assuming it as native admission cannot prove that D0
+realizes its dynamics.
+
+The first uncomposed general interface is between **two execution systems**.
+The owned [`OperationalProcess`](../../03_FORMALIZATION/D0/Foundation/EmpiricalTheoryFactorization.lean)
+preserves contextual equivalence within one empirical theory;
+[`TheoryVerification`](../../03_FORMALIZATION/D0/Foundation/VerifiabilityNecessity.lean)
+represents its empirical states. Reuse both. The additional transfer supplies a
+state map, an action-to-finite-native-word map, test/outcome maps, commuting run
+and readout, and preservation/reflection of future distinctions on an explicit
+common sector. Additional native tests remain recorded; restricting the common
+sector cannot silently erase distinctions or their source contributions.
+
+General relativity is the first full specialization. `gr_operational_realization`
+connects its geometric and matter objects to an admitted native family, while
+the existing `positive_gr` contract retains the full physical source, joint
+dynamics, soundness and recovery requirements. Uniqueness of the entire
+microscopic action is not necessary for a faithful bridge: a proved equivalence
+of physical equations/observations or a controlled remainder can suffice. Such
+an equivalence is a proof obligation, not permission to choose the price,
+decoder or source after inspecting the desired Einstein answer.
+
+The [assembly contract](../gr_assembly/contract.json) distinguishes
+`D0-FOUNDATION` (`verification_core`), `THEORY-TRANSFER` (`theory_transfer`) and
+`GR` (`gr_architectural_closure`). The last requires the first two obligations,
+`gr_operational_realization` and the unchanged `positive_gr`, composed on the
+same family. The original raw terminal and global ambiguity classification
+remain separate goals. This page specifies the argument; it does not promote
+any goal or existing research result to proved status.
 
 ## Current route to general relativity
 
-The target is one noncircular derivation:
+State the strongest complete conditional argument first: the owned verification
+kernel supports a faithful GR interpretation; its admitted native realization
+preserves the physical source and variations; the existing geometric theorems
+then transfer to the same joint solutions with controlled refinement. Expose the
+finite, named boundary of premises that still prevents this composition.
 
-```text
-operational admissibility and retained records
-  → admitted states/comparisons and complete action
-  → genuine joint link/metric/matter variations and source
-  → nonempty exact solutions with controlled refinement
-  → universal nonlinear geometric equation with that same source
-```
+Fix the target before selecting more lemmas: a nonempty curved regime, metric
+regularity, matter class, boundary/initial data, time domain, gauge quotient,
+normalization and convergence topology. Distinguish a theorem's mathematical
+domain from physical admission. Nonempty admission, source selection or the
+Einstein equation cannot be hidden in a convenient definition of that regime.
+
+The two load-bearing interfaces are (1) faithful native realization with its
+actual complete source, and (2) the passage from that same joint dynamics to a
+sufficiently rich controlled GR limit. Their current obligations are:
+
+| Part of the argument | Existing obligations and their role |
+|---|---|
+| Native realization of the theory interface | `constitutive`, `native_sector`: complete action, admitted states, preparation/readout and real variations; `primitive_jet_composition` supplies a reusable composition lemma |
+| Source and dynamical compatibility | `contrast_refinement_transfer`, `matter_source_ward`, `on_shell_stationarity`, `physical_constraints`; `probe_law` and `mv_tangent_span` retain their narrower hypotheses |
+| Controlled family and GR transfer | `gauge_range`, `joint_nonlinear_solve`, `soundness`, `recovery`; `full_affine_stationarity` and `resonance_divisor` are support inputs only where the chosen method needs them |
+| Final composition | `gr_architectural_closure` consumes `verification_core`, `theory_transfer`, `gr_operational_realization` and `positive_gr` with the compatibility proof below |
+
+This is a dependency cut, not a demand to repeat all support work. A finite
+geometric embedding, an exact special solution or a broader action-universality
+theorem is used through its actual hypotheses. Exact action equality, a squared
+ideal normal form and a particular refinement construction are sufficient
+methods where proved; none is the universal definition of a faithful bridge.
+Alternative methods must reach the same declared conclusion through reviewed
+interfaces, without weakening the original source or raw-response contracts.
 
 Progress means a transition proved and used in this chain, or a scoped
 counterexample that changes it. Publication, replay, acceptance and use in the
 parent argument are distinct. Neither a green certificate nor an exact
 connection root alone establishes the full native gravitational law.
+
+### Closure deliverable
+
+The final parent argument states one theorem with its exact quantifiers and
+maps, then supplies accepted applications for every consumed premise. In
+particular, `gr_operational_realization` and `positive_gr` must concern **one
+family, complete action, source, variations, preparation/history, clock/readout,
+normalization and refinement**, or be connected by a proved transport preserving
+all of these structures. Four unrelated positive results do not close
+`gr_architectural_closure`.
+
+Soundness covers every admitted on-shell limit in the stated regime; recovery
+realizes each continuum solution in the declared curved class by native
+on-shell states. Nonemptiness, physical constraints and the independent matter
+source are part of this conclusion. The reading of states, evolution and
+observations must commute exactly or with the proved refinement error. State
+all uniform bounds and connection assumptions; an unresolved physical
+assumption keeps this final application conditional. The generic transfer
+theorem can already be complete without closing its GR application.
+
+The programme reaches its positive GR terminal when this composition is proved
+and independently accepted. Further classifications or extensions do not move
+that terminal. A scoped no-go may close an alternative route or classify a
+separate question; it cannot replace this positive realization theorem.
 
 ### Strategic context and preserved inputs
 
@@ -44,7 +167,14 @@ The G0–G4 common contract under review in [#323](https://github.com/gvakhrushe
 provides a supporting proof decomposition. This page owns the current route;
 execution uses the existing `00_WORK` manifest, briefs and dispatch flow.
 
-### Available inputs and their boundaries
+### Preserved geometry inputs and their boundaries
+
+These earlier geometry/intake snapshots remain reusable inputs. The foundation
+owners and first general transfer interface are identified above; the
+[current scientific gate](../gr_assembly/README.md#current-scientific-gate)
+and generated [working map](../gr_assembly/SYNTHESIS.md) carry the later pinned
+native, source, memory and refinement results. Their scoped uses determine the
+next substitution; the older table is not a new dispatch plan.
 
 | Input snapshot | Available content | Still missing for the target |
 |---|---|---|
@@ -62,11 +192,23 @@ obligations and reviewed applications. It does not import historical statuses
 as accepted premises or task authorization. This page remains the scientific
 route; `00_WORK` and live PRs remain the execution authorities.
 
-### Two linked scientific fronts
+## Two linked scientific fronts
+
+These fronts execute the physical specialization of the architecture above.
+Their outputs must meet the same `gr_operational_realization` interface; neither
+the necessary kernel nor generic theorem transfer supplies a missing physical
+source or refining solution by itself.
+
+The immediate GR application is the transfer from the full native history and
+paid full128 process to the already constructed CAR16/Julia six-face `S_star`
+tester. Retain complete outcomes, clock/history, variations and source on both
+sides. This belongs to the existing constitutive/contrast front: use the owned
+geometric tester, rather than starting another geometry campaign. A faithful
+test readout still needs its same-programme source/dynamics application.
 
 | Front | Next bounded output | Where it is consumed |
 |---|---|---|
-| A — native preparation → full action/source | Derive a nonempty admitted common preparation `Omega_h -> (A_h,R_h)`, carrying both the actual price arguments and the native readout `(q,D,b,m,record)`, with genuine variations, refinement and the scene `(w,rho)` map needed by the consumer. Do not assume the readout is complete: retain independently admitted internal variables and their own equations | Differentiate the **same complete Cost−Info action**, including the normalizer and all retained terms; compare all ten metric slots with `rho0`, and carry link/matter equations into the physical Ward/source step. See the [latest intake contract](https://github.com/gvakhrushev/d0_15/blob/8db39cbbe5efe45d279f207f6470d5ef882d89fd/02_REGISTRY/research/CONTROL_A4D_NATIVE_GRAVITY_PACKET_INTAKE_2026-10-15.json) |
+| A — native preparation → full action/source | Derive a nonempty admitted common preparation `Omega_h -> (A_h,R_h)`, carrying both the actual price arguments and the native readout `(q,D,b,m,record)`, with genuine variations, refinement and the scene `(w,rho)` map needed by the consumer. Do not assume the readout is complete: retain independently admitted internal variables and their own equations | Differentiate the **same complete Cost−Info action**, including the normalizer and all retained terms; compare all ten metric slots with `rho0`, and carry link/matter equations into the physical Ward/source step. See the [preserved intake contract](https://github.com/gvakhrushev/d0_15/blob/8db39cbbe5efe45d279f207f6470d5ef882d89fd/02_REGISTRY/research/CONTROL_A4D_NATIVE_GRAVITY_PACKET_INTAKE_2026-10-15.json) |
 | B — exact geometric sheet → nonlinear refinement limit | Bound the complete Bloch/resonant family needed by the fixed-cell connection sheet, or give its precise obstruction; then supply the dependence required for refinement of one fixed smooth metric | Exact `E_K=0` sheet → reconstructed normalized `h^-2 E_Q` response against the #216 comparator → the geometric Einstein response (the sheet convention uses `-G/2`), in the declared norm with a refinement-uniform estimate |
 
 One scientific integrator fixes the shared carrier, complete action, admitted
@@ -83,24 +225,33 @@ not supply an independently fixed-source joint metric/matter solution.
 
 ### Next execution and integration
 
-1. The integrator writes the common interface in the existing parent artifact
-   and assigns a consuming lemma to each bounded output above.
-2. CONTROL reviews #322 as its frozen intake. Verification work localizes
-   reproducibility failures; it does not change expected results or hold up
-   independent mathematical work on declared inputs.
-3. Executors work in isolated branches/worktrees; the integrator substitutes
-   each usable result immediately and records the remaining premise in the
-   existing parent memo/PR. Its assembly application names the exact substitution,
-   carries every remaining hypothesis and pins independent acceptance. The
-   generated overview derives composition state from those applications; it
-   does not create another task queue or demand a new census.
+1. Compose the strongest complete conditional proof in the existing parent
+   artifact, importing known results once at their exact interfaces. Identify
+   which named boundary premise prevents final composition, rather than starting
+   another local search from the beginning.
+2. Reuse an existing result whenever its hypotheses can be established. Delegate
+   only a missing premise or the transport needed for its actual parent use,
+   with the smallest decisive check. A new fixture or census needs a changed
+   mathematical input or a specific unresolved step that the owned result does
+   not settle. Independent verification remains an explicit separate mode.
+3. Substitute each usable result immediately and record the remaining premises.
+   A supporting result names its missing application; it is not reported as a
+   discharged parent premise. A scoped obstruction changes the parent method
+   with its scope and reopening condition. Do not repeat the same question under
+   a new label or weaken the target to make a route appear closed.
+4. On the final composed inputs, perform the affected replay and independent
+   acceptance. Verification localizes failures without changing expected
+   evidence. Unchanged accepted mathematics does not need repeated expensive
+   replay for another prose checkpoint.
 
-Use `python tools/gr_assembly.py next` for live owners and pending scoped intake,
-`why positive_gr` for the missing composition premises, and `search QUERY` or
-`attempts QUERY` for existing scoped work. An input mismatch is resolved before
-dependent execution; it does not stop an independent conditional lemma on the
-declared interface. The original raw contract has its own goal and completion
-premise. Neither its classification nor a bridge/passport is positive native GR.
+Use `python3 tools/gr_assembly.py next` for live owners and scoped intake,
+`why gr_architectural_closure` for the full composition and `why positive_gr` for
+the preserved native physical terminal. `search QUERY` and `attempts QUERY`
+locate reusable work. The existing applications carry hypotheses, precise
+parent substitutions and pinned acceptance; no additional memo, queue or status
+registry is needed. An interface mismatch blocks dependent use, not independent
+conditional work on a declared contract. Neither the raw classification nor a
+bridge/passport closes positive GR.
 
 Resolve `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE` with the live dispatcher
 and continue its existing execution. Historical #310 closed without merge;

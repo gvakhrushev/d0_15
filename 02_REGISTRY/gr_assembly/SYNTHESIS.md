@@ -5,6 +5,30 @@
 Карта чтения и научного синтеза. Связи показывают возможное использование результатов;
 приёмка доказательств и живое исполнение остаются в существующем workflow.
 
+## verification-foundation — Necessary verification kernel and retained future distinctions
+
+The kernel already has proof owners for necessary records/comparison, empirical factorization, process composition and future-stable memory. Consume those theorems in their exact scope and align their witnesses with the book Sigma roles; this is an assembly application, not a new campaign to reprove the foundation.
+
+**Следующий переход:** Write the composed kernel statement with exact owner substitutions, derived roles and explicit representation witnesses. Keep finite coding, effective canonicalization and access requirements as named premises or owned constructions of the coded interface. Then state the general execution/proof transfer interface. Reuse existing proofs instead of reopening them because their assembly application is missing.
+
+**Куда подставляется:** `verification_core`, `theory_transfer`
+
+**Взять из уже опубликованного:**
+- [Existing necessity, injective records and verification-theory representation owners](https://github.com/gvakhrushev/d0_15/blob/5d23e90af703efee7f0deb24517d3ead4780fdfc/03_FORMALIZATION/D0/Foundation/VerifiabilityNecessity.lean) — опубликованный исследовательский вход
+- [Existing empirical factorization and process composition on main](https://github.com/gvakhrushev/d0_15/blob/5d23e90af703efee7f0deb24517d3ead4780fdfc/03_FORMALIZATION/D0/Foundation/EmpiricalTheoryFactorization.lean) — опубликованный исследовательский вход
+- [FutureExecution: future-stable quotient and sufficient retained memory in pinned #334](https://github.com/gvakhrushev/d0_15/blob/a8cde85432d561c06b9fcb77b77bfe471b7c5031/03_FORMALIZATION/D0/Foundation/EmpiricalTheoryFactorization.lean) — опубликованный исследовательский вход
+- [Existing distinction between class admissibility and unique forcing](https://github.com/gvakhrushev/d0_15/blob/5d23e90af703efee7f0deb24517d3ead4780fdfc/03_FORMALIZATION/D0/Foundation/M1ClassAdmissibility.lean) — опубликованный исследовательский вход
+
+## gr-architectural-composition — One common realization for theorem reuse and physical GR
+
+The strong physical positive_gr chain remains intact. The architectural conclusion additionally identifies its witnesses with the operational realization and the generic theorem transfer, so every conclusion concerns the same action, source, history and refinement family.
+
+**Следующий переход:** Write the strongest complete conditional GR argument using the existing owners, name one common realization, and isolate its finite open premise boundary. Select the next useful parent substitution from that boundary. The present native selection/payment and uniform joint-refinement questions retain their existing owners and exact scope.
+
+**Куда подставляется:** `theory_transfer`, `gr_operational_realization`, `gr_architectural_closure`
+
+**Взять из уже опубликованного:**
+
 ## source — Полная история → тот же геометрический источник
 
 Полная 143484-запись восстанавливает абсолютный scalar Book source только при общем фильтре глубин. Result-only #334 точно отождествляет исходную шестиплакеточную S_star-плотность с отрицательным смешанным log-jet complete observer-covariant CAR16/Julia marked event; при оригинальной Golden p амплитуде base outcomes равны (p^2,0,p), а смена log-base даёт фиксированный множитель log(phi). Та же signed S_star face локально факторизуется через уже существующие шесть Golden-фазовых наблюдаемых, но только как представление readout-функции, не как физический выбор опыта или цены. Независимый Q8 результат показывает, что одинаковый конечный оператор и Golden endpoint law могут иметь разные clocks и оплаченные prefix histories; законная стоимость C(t)=1+t^2 даёт second-source gap 12. Это запрещает endpoint-only цену на указанном носителе, но не определяет полную H+J+R-цену. Tester не отождествлён с per-label full128 Kraus и не выбран как полная цена. Теорема P25 запрещает насыщенному положительному Cost с coframe-blind Info/attempt воспроизвести смешанный 2-jet Палатини (0,-1). Физический выбор полной цены, coframe-area Info и истинный stationary Schur открыты.

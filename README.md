@@ -1,23 +1,47 @@
 # D0 — Finite Verification Theory
 
-## Current objective: derive general relativity (ОТО)
+## Current objective: close the D0 foundation through general relativity
 
-The working target is one derivation from operational admissibility to the
-**full nonlinear gravitational equation with its matter source and a controlled
-refinement limit**. This target remains open.
+D0 starts from the **necessary operational structure of verifiability**:
+distinguishable completed outcomes, retained records, access and independent
+comparison without an obligatory external catalogue. Reading, writing and
+checking a theory already require these functions. The functional tuple is the
+common foundation; the chosen scene, fields and geometry enter through the
+subsequent mathematical realizations.
 
-| Evidence boundary (snapshot: 2026-10-15) | What it means for the next step |
+**General relativity (ОТО) is the first complete physical specialization of
+that foundation.** The programme constructs a faithful operational
+interpretation, proves the premises of existing theory results, and imports
+those results into one composed D0 argument. The same transfer architecture
+can then serve other theories. The present GR target retains the **full
+nonlinear gravitational equation, its independently derived matter source,
+physical constraints, and controlled soundness and recovery on an explicit
+nonempty curved class**. This composed physical target remains open.
+
+| Architectural conclusion | Required mathematical output |
 |---|---|
-| Accepted `main` at `fa2b04b9` | Finite geometry, metric provenance, an Einstein flat tangent and conditional smooth-limit estimates are available inputs. They do not yet supply the complete native action/source or a general joint nonlinear limit. |
-| Historical research [#310](https://github.com/gvakhrushev/d0_15/pull/310) and intake [#322](https://github.com/gvakhrushev/d0_15/pull/322) | Native record/action work and finite connection sheets are pinned research with different scopes. #310 closed without merge; resolve the registered task through the live dispatcher. The frozen intake does not close the parent scientific obligations. |
-| Next scientific work | Bind preparation/retained records to the **same complete action and its source**, while a second lane proves the **joint nonlinear/refinement estimate** on the agreed carrier. Each output must discharge a named premise of the parent derivation. |
+| Necessary kernel: `D0-FOUNDATION` | Compose the existing necessity, empirical-factorization and retained-future-memory proofs with their exact assumptions and book-to-formal witness maps. |
+| Generic transfer: `THEORY-TRANSFER` | A conditional theorem for transferring states, actions, tests, outcomes and existing proofs through a faithful operational interpretation. |
+| First physical closure: `GR` | Instantiate that interpretation on a native GR family and prove that it uses the **same action, source, history, clocks and refinement maps** as the unchanged positive GR theorem. |
 
-Start with the [current gravity route](02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md#current-route-to-general-relativity),
-then the [parallel work and validation flow](00_WORK/README.md).
-One scientific integrator owns the composition; bounded executors work on
-independent interfaces. Progress means a proved transition used in that
-composition, or a counterexample that changes the route. Certificates and CI
-support those decisions.
+Start with the [architectural objective and proof plan](02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md#architectural-objective),
+then its [GR specialization](02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md#current-route-to-general-relativity)
+and the [work and validation flow](00_WORK/README.md). One integrator owns the
+complete conditional argument and its remaining premise boundary. The next
+task supplies an exact missing substitution in that argument. Supporting
+results retain their scope until their application is proved; a scoped
+obstruction changes the applicable route without changing the final target.
+
+The first bounded foundation step consumes the existing
+[necessity owner](03_FORMALIZATION/D0/Foundation/VerifiabilityNecessity.lean)
+and [empirical-process owner](03_FORMALIZATION/D0/Foundation/EmpiricalTheoryFactorization.lean),
+together with the pinned future-memory owner linked in the
+[assembly working map](02_REGISTRY/gr_assembly/SYNTHESIS.md).
+The next general interface translates actions of one operational system into
+finite programs of another and preserves their tests, composition and future
+distinctions. Its GR application joins the actual paid native process to the
+existing geometric readout. The active native/source and joint-refinement
+fronts keep their current owners and exact proof obligations.
 
 For programme context, the integrator reads the full
 [preserved strategy](https://github.com/gvakhrushev/d0_15/blob/cd02a65de1c708eae113b03ca63392e1641c427c/02_REGISTRY/research/D0_RESEARCH_STRATEGY_RU.md)
@@ -25,14 +49,14 @@ once, then uses the [18 ideas and original guidance mapped to the current route]
 Their preservation intake [#323](https://github.com/gvakhrushev/d0_15/pull/323)
 awaits acceptance. Bounded tasks read the relevant inputs from that context.
 
-For a task, run `python tools/task_dispatch.py TASK-ID`: resolve an existing PR
+For a task, run `python3 tools/task_dispatch.py TASK-ID`: resolve an existing PR
 before launching another execution. Iterate with the smallest relevant check;
 run the affected integration checks at Ready. See the
 [validation matrix](00_WORK/README.md#validation-budget).
 
 The [D0 to GR assembly overview](02_REGISTRY/gr_assembly/VIEW.md) connects
 obligations, exact interfaces and accepted applications. Run
-`python tools/gr_assembly.py next` for live owners and the next consuming steps,
+`python3 tools/gr_assembly.py next` for live owners and the next consuming steps,
 or `why` / `search` / `attempts` for a bounded lookup. Historical research stays
 searchable with its original scope; it does not automatically close a premise.
 
@@ -50,7 +74,7 @@ Discrete scene structure, registration channels, and (conditionally) continuum l
 
 ## Table of Contents
 
-- [Current objective and scientific route](#current-objective-derive-general-relativity-ото)
+- [Current objective and scientific route](#current-objective-close-the-d0-foundation-through-general-relativity)
 - [Parallel execution and validation](00_WORK/README.md)
 - [Gravity assembly and result intake](02_REGISTRY/gr_assembly/README.md)
 - [1. The Core Inversion (Read This First)](#1-the-core-inversion-read-this-first)
