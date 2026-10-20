@@ -102,6 +102,41 @@ Every failure-flag probability has zero FIRST derivative in the controlled \(\xi
 
 With independent real n-edge programme repetitions, first all-success waiting time is geometric with EXACT expectation \(4^n\) **complete executions**, hence at least \(n4^n\) actual primitive edge-Julia calls per observed all-good event. At n=4 this is 256 full four-edge experiments, i.e. 1024 charged edge-Julia calls, versus 4 attempts / 4 charged calls for a direct n=1 joint-plaquette dilation. This is the exact cost of extracting subdivision-invariant odds: normalizing success probabilities eliminates spurious geometric attenuation, **not** physical work. A finer full history may yield other information or cheaper decisions, but the specified all-good odds protocol cannot evade this bound.
 
+
+### 4a. EXACT price separation: the SAME full-record Golden information price does NOT share the odds invariance
+
+There is a necessary no-go that prevents promoting the projective odds (4) into the original Book03 action without additional physical work. Take the **already owned** actual fixed extra original Golden \((p,p^2)\) split on the negative pointer \(q_{a,-}^{(n)}\) **ONLY in the actual n-fold all-success retained flag history**, keeping EVERY Julia failure and all other 13-effect outcomes. Its entropy increment is exactly
+\[
+\Delta H_\varphi^{(n)}=q_{a,-}^{(n)}\frac{h_2(p)}{\ln\varphi},
+\quad h_2(p)=-p\ln p-p^2\ln p^2>0.
+\tag{12}
+\]
+There is no inferred detector, entropy cut or discarded output in this algebraic identity; the extra coherent-Golden physical admission remains the prior owner's explicit condition. Differentiating the true positive probability (3) along the original generator \(P=\exp(\xi_aG_a)\) yields
+\[
+\boxed{
+\left.D_{\xi_a}\Delta H_\varphi^{(n)}\right|_0
+=-\frac{4^{-n}h_2(p)}{12\sqrt2\ln\varphi}
+=-4^{1-n}c_{\rm Sh},
+\qquad c_{\rm Sh}=\frac{h_2(p)}{48\sqrt2\ln\varphi}.
+}\tag{13}
+\]
+For the ORIGINAL crossed-null based commutator of (9), the same formula holds for \(\partial_a\partial_b\Delta H_\varphi\). At n=1, the coefficient is \(-c_{\rm Sh}\), and at n=4 it is \(-c_{\rm Sh}/64\) — **exactly the originally certified §5.5 factor64**, now a universal all-n theorem for the charged event split. No counterterm was chosen to make it fit.
+
+In the specific original **symmetric** Choi/13-effect tester, the unsplit full complete pointer coarse Shannon has zero linear Lie source at identity (already proved by the owner), and the fixed-duration \(n\)-edge Cost \(n\) has no field derivative. Thus the actual complete mean-Shannon plus fixed-stage integer-cost source on THIS declared programme inherits precisely the same \(4^{-n}\) attenuation (unless further genuine field-dependent clock, preparation or finer failure-label prices are proved). Formally,
+\[
+\boxed{
+D S_{\rm mean}^{(n)}|_0
+\ne D S_{\rm mean}^{(1)}|_0\quad
+(n>1),\qquad
+D\mathcal O_a^{(n)}|_0=D\mathcal O_a^{(1)}|_0\ne0.
+}\tag{14}
+\]
+This is a **scoped EXACT NO-GO for deriving subdivision-invariant geometric Euler directly from the unchanged naive marked complete mean-Shannon**. It does not rule out a true Book03 programme with a physically selected prospective conditional score or an independently justified, paid stopping/clock normalization.
+
+Crucial physical accounting: obtaining a conditional pointer probability as the RATIO of positive complete event probabilities does NOT automatically make the Book score a ratio of their ideal codes. The difference
+\(\log_\varphi q_-^{(n)}-\log_\varphi q_+^{(n)}\)
+cancels the same n-link success Cost **algebraically**, but the physical complete Cost and the expensive failures remain. Therefore using (4) as an action is a NEW task-selection assumption until the original Book03 prospective law explicitly picks that paired reference. This result separates a real exact curvature observable from a still-unproved gravitational physical Price.
+
 ### 5. The new honest physical completion criterion — and no false GR claim
 
 There is now a clean fully typed division:
