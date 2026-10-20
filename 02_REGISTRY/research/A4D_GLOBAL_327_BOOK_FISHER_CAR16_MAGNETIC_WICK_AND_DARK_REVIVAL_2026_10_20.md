@@ -182,3 +182,76 @@ The one fundamental physics step remains a single-run ORIGINAL M1/G0 native sele
 ## 7. Reproduction
 
 \`sources/d0_book_car327_fisher_2026-10-20/check_all327_native_book_hodge_CAR16_magnetic_gap.mjs\` is an independent dependency-free V8 checker executed against the CURRENT committed GitHub blob. It constructs all original 327 harmonic basis vectors, full327 positive Cholesky, genuine random/coboundary/CP/single-edge Book and CAR spectral source, original 3-zone exact cosh/cos cubic, arbitrary polarization mixed sources, the global strictly-admissible Cost3 real Perron comparison, and full generic magnetic rank revival plus triangle-perfect-matching witness. All checks PASS. Mathematical global statements proved in §§1–5 do not depend on accepting floating-point results.
+
+
+## 8. NEW GLOBAL DUAL PRINCIPLE: minimizing the cost of a REQUIRED future cycle current is a theorem of the SAME Book path law
+
+The global strict **maximum** in §4 for the scalar action at fixed *price* is NOT a no-go for all native minimum-cost currents. In original complete-history terms, fixing the price (canonical/generating-function ensemble) and fixing the actually verified cyclic **CURRENT** (conditional-flow ensemble) are different experiments. The latter has a uniquely generated nonnegative rate functional, not an added stabilizing gravity term.
+
+On the ACTUAL original K913 source support let \(\mathscr F\) be ALL strictly positive or boundary-allowed normalized stationary 718-edge flows \(\nu_{uv}\ge0\) satisfying \(\sum_{uv}\nu_{uv}=1\) and \(\sum_v\nu_{uv}=\sum_v\nu_{vu}=:\nu_u\). Its honest original \emph{conditional description gap} relative to the native original Perron path law is
+\[
+\boxed{
+I_{\rm Book}(\nu\Vert P)
+:=\sum_{uv}\nu_{uv}
+ \ln\frac{\nu_{uv}}{\nu_uP_{uv}}\ge0.
+}\tag{13}
+\]
+At the unique original natural law \(\nu_{uv}=\pi_uP_{uv}=\mu_{uv}\) it vanishes exactly. This is a mathematical finite conditional relative entropy of retained path **flows**, not a claim the actual selected Book03/H+J+R equals it. In native Golden units use \(I_\varphi=I_{\rm Book}/\ell\); do NOT silently equate natural and Golden entropy units.
+
+For ANY antisymmetric true original edge Cost source a and any real eps, let \(K_\epsilon=B\odot e^{\epsilon a}\), with Perron root \(\rho_\epsilon\), and let \(P_\epsilon\) be its own **genuine moving Doob transition**, \(P_{\epsilon,uv}=K_{\epsilon,uv}r_{\epsilon,v}/(\rho_\epsilon r_{\epsilon,u})\). For EVERY arbitrary stationary \(\nu\in\mathscr F\), the elementary KL to \(P_\epsilon\) satisfies the EXACT identity
+\[
+\boxed{
+\sum_{uv}\nu_{uv}\ln\frac{\nu_{uv}}{\nu_uP_{\epsilon,uv}}
+= I_{\rm Book}(\nu\Vert P)
+-\epsilon\sum_{uv}\nu_{uv}a_{uv}
++\ln\frac{\rho_\epsilon}{\rho_0}.
+}\tag{14}
+\]
+Proof: insert \(\ln(P_\epsilon/P_0)=\epsilon a-\ln(\rho_\epsilon/\rho_0)+\ln(r_{\epsilon,v}/r_{0,v})-\ln(r_{\epsilon,u}/r_{0,u})\); the ENTIRE field-moving endpoint source telescopes to zero against the real stationary flow divergence. The LHS is nonnegative, with EQUALITY iff \(\nu_uP_{\epsilon,uv}=\nu_{uv}\). Perron positivity/irreducibility gives the UNIQUE optimizer \(\nu=\pi^\epsilon_u P_{\epsilon,uv}\). Therefore
+\[
+\boxed{
+\Lambda(\epsilon):=\ln\frac{\rho(B e^{\epsilon a})}{\rho(B)}
+=\sup_{\nu\in\mathscr F}
+\left(\epsilon\sum_{uv}\nu_{uv}a_{uv}
+-I_{\rm Book}(\nu\Vert P)\right).
+}\tag{15}
+\]
+This is a fully finite positive Book history PRESSURE--FLOW variational identity, not an asymptotic external thermodynamic ansatz. The large-n empirical transition-frequency interpretation requires ordinary ergodicity but the finite algebra of (14)–(15) does NOT.
+
+For ALL original 327 independent chord-cycle observables \(a^\alpha\), define the actually retained cycle-current vector \(j_\alpha=\sum\nu_{uv}a^\alpha_{uv}\). The minimum native information cost of a GIVEN feasible current is the equally canonical contraction
+\[
+\boxed{
+\mathcal I_{\rm current}(\mathbf j)
+:=\inf_{\nu\in\mathscr F:\,\langle\nu,a^\alpha\rangle=j_\alpha\;\forall\alpha}
+ I_{\rm Book}(\nu\Vert P)
+=\sup_{\boldsymbol\epsilon}
+ \left(\boldsymbol\epsilon\cdot\mathbf j-
+       \ln\frac{\rho(B e^{\sum\epsilon_\alpha a^\alpha})}{\rho(B)}
+ \right).
+}\tag{16}
+\]
+The second equality follows finite convex duality on the relative interior of attainable original stationary currents (globally use the closed convex envelope at boundary). Since §1 proved \(D^2\Lambda(0)=\mathcal Q_{327}\succ0\), the normal current chart is nondegenerate, and its rate has the exact **INVERSE Hessian**
+\[
+\boxed{
+D^2_{\mathbf j}\mathcal I_{\rm current}(0)
+=(\mathcal Q_{327})^{-1}\succ0,\qquad
+D^2_{\mathbf j}(\mathcal I_{\rm current}/\ell)(0)
+=(\ell\,\mathcal Q_{327})^{-1}.
+}\tag{17}
+\]
+Thus there is a mathematically unique, dynamically stable **minimum** for the stationary observable current at j=0, even though the scalar Book Cost-source rate \(-\log_\varphi\rho(B e^{-\ell t a})\) has a strict **maximum** in the conjugate price coordinate t. No stabilizing scalar coupling or extra gravity term is required to change ensemble; both come directly from the SAME positive native Markov history probability. Its quantum CAR16 magnetic return sees precisely its *susceptibility* \(\mathcal Q\), while the minimal conditional current cost sees \(\mathcal Q^{-1}\).
+
+**Strategic prospective M1/Dmin reading, STRICTLY CONDITIONAL:** if the physical fundamental experiment is compelled to satisfy a particular independently verified future current \(\mathbf j\) from the ORIGINAL complete retained archive, then \(\mathcal I_{\rm current}(\mathbf j)\) is not an arbitrary new current action: it is the exact native Book conditional description gap for the least-cost stationary distribution realizing that constraint. But the current original M1/Dmin and prospective execution owner does **NOT** prove that a nonzero \(\mathbf j\), or a particular 4D gravitational coframe response, is such an obligatory future test. The Cost floor alone would choose the idle/no-current history absent a genuine terminal distinction. Nor is the conditional KL rate automatically equal to the full fundamental Book03 \(H+J+R\). Thus the new exact dual action resolves the *mathematical ensemble sign* but not the whole physical-selection problem.
+
+**Original full numerical and analytic checks:** a committed independent replay constructs the TRUE tilted Perron preparation, actual stationary directed ν and all 718 original edge costs, then computes BOTH sides of (14)–(15) for 9 nontrivial CP/random/single-edge currents. Max equality error **1.34e−15** with strict positive variational gap >=1.70e−7 for a deliberately nonoptimal mixture of two stationary original flows. The same TRUE full327 Cholesky gives the explicit inverse-Hessian solve to max residual **8.51e−14**. For the original CP source at eps=.1, actual current j=.09868242660596019 and real conditional KL rate .004926321984809277; the dual \(\epsilon j-\Lambda\) agrees to 1.35e−15. This is the positive whole-native-current response, not a created SI Newton coupling.
+
+## 9. Corrected physical root and source criterion
+
+The complete NEW mathematical answer to "why did all 327 pieces previously fail to make GR?" is now:
+- Original REAL scalar Book macro-history contains the FULL true 327 positive covariances, but its NEGATIVE rate-Hessian cannot by itself select a stable-minimum nonzero orientation in a free price ensemble;
+- The exact SAME native path law in a genuinely retained/current-constrained ensemble produces a stable positive CURRENT rate with inverse covariance, without new action coefficients. The missing ingredient is deriving the physical mandatory future distinction/current constraint from M1, not postulating it;
+- The EXISTING real CAR16 magnetic phase generically sees all327 Book cycle susceptibilities as 8 charged return gaps, AND revives 240 older zero transfer states; but it remains EVEN under joint reversal, so cannot provide signed Einstein source alone;
+- The EXISTING original Golden17 p:p² code reversal/complete observer Hodge with all640 original finite Role Euler is a mathematically exact SIGNED-odd channel. It must be physically selected and paid as the true original pretrace Book/CAR action rather than inferred from Fisher magnitudes;
+- A genuine full M1/G0 same-run full128/oldRIGHT/Spin/clock/work action, with all independent 16+24+matter Euler, metric identification, stationarity and raw216 refining-family control, is STILL missing. The new positive global path-cycle duality reduces the required SOURCE NORMALIZATION to ONE already-owned \(\ell\) and actual Markov transition, but does not bridge the remaining independent G0→GR action-choice inference.
+
+**No GR_closed promotion.** All results on the mathematical history/CAR16 *represented* carriers are new exact standalone D0 scientific claims with explicitly pinned assumptions and a complete executable; physical endogeneity of the edge-conditioned magnetic CAR phase and original future-test selector remains an openly falsifiable theorem target.
