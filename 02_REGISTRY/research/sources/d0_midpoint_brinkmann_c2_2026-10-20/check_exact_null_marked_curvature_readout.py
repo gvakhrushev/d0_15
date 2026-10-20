@@ -67,6 +67,25 @@ def exact():
     assert S.simplify(-(ux + uy) / h**2 - 2*c) == 0
     assert S.simplify((uy - ux) / (2*h**2) - A) == 0
     assert S.simplify((P - P.inv()) / 2 - X) == S.zeros(4)
+    # Arbitrary five independent transverse field values:
+    # This is NOT confined to any polynomial H or chosen matter source.
+    H0, Hxp, Hxm, Hyp, Hym, lam, Ej = S.symbols(
+        "H0 Hxp Hxm Hyp Hym lam Ej", real=True
+    )
+    z_x = S.expand(((H0 - Hxm) - (Hxp - H0)) / 2)
+    z_y = S.expand(((H0 - Hym) - (Hyp - H0)) / 2)
+    rho_x = 1 + s*z_x/4
+    rho_y = 1 + s*z_y/4
+    lap = (Hxp + Hxm + Hyp + Hym - 4*H0) / h**2
+    assert S.expand(rho_x + rho_y - 2 + s*h*h*lap/8) == 0
+    assert S.expand(rho_y - rho_x - s*(z_y-z_x)/4) == 0
+    # Native already-owned independent Euler: lap = -4*lam*Ej,
+    # using same shifted time label and actual CAR forward difference.
+    assert S.expand((rho_x + rho_y - 2).subs(
+        Hyp, -4*lam*Ej*h*h - Hxp - Hxm - Hym + 4*H0
+    ) - s*lam*h*h*Ej/2) == 0
+    print("Arbitrary-five-site exact operational Einstein-null identity: PASS")
+
     print("Same-metric finite-h Ricci and Weyl amplitude inversion: PASS")
 
     # Fisher coefficient: m=p^2(1+s*f*h^2/4)^4,
