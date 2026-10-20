@@ -116,6 +116,82 @@ a(-\lambda_-T)=\kappa T,\qquad T\ne0
 provided \(a,\kappa\ne0\).
 This fixes the **dimensionless ratio** for the configured witness; measured Newton units and the actual compulsory native source are not supplied by this conditional calibration. The absence of a purely geometric \(b g\) in (G4) does not exclude cosmological/archive vacuum stress on the MATTER side.
 
+### Corollary: the exact native action needs just ONE Golden weight law
+
+There is an even shorter **action-level** sufficient interface in FOUR
+dimensions. Let the actually selected full internally stationary
+physical programme, after legitimately eliminating physical
+oldRIGHT/preparation/clock/controller/observer/work, produce one
+metric-only, local and open-diffeomorphism-invariant action
+\(I[g]\), with a well-defined smooth flat FIRST Euler derivative
+and all compactly supported variations. Suppose for a single
+\(\rho=\varphi^2\)
+\[
+\boxed{I[\rho g]=\rho I[g]+K_\rho}
+\tag{G12a}
+\]
+on the same admitted metric domain, where \(K_\rho\) is
+FIELD-INDEPENDENT (or a local boundary term with no interior
+Euler source). This is the physical action's correct global unit
+weight in four dimensions, **not** a rule for the raw number of
+Golden gates or an assertion that the dimensionless Book history
+price already obeys it.
+
+If
+\(\delta I[g;h]=\int\sqrt{|g|}\,E^{ab}[g]h_{ab}\),
+then differentiating (G12a) gives exactly
+\(\delta I[\rho g;h]=\delta I[g;h]\).
+Since \(\sqrt{|\rho g|}=\rho^2\sqrt{|g|}\),
+\[
+ E^{ab}[\rho g]=\rho^{-2}E^{ab}[g],
+ \qquad E_{ab}[\rho g]=E_{ab}[g].
+\tag{G12b}
+\]
+Local Diff invariance of this METRIC-ONLY action, tested with
+arbitrary compactly supported vector-field Lie derivatives
+\(\delta g_{ab}=2\nabla_{(a}\xi_{b)}\),
+integrating by parts, supplies its off-shell Ward identity
+\(\nabla_aE^{ab}=0\).
+Theorem G now proves \(E=aG\), with NO separate postulate
+about second-order dynamics, off-shell conservation or
+all-positive-real scale invariance.
+
+**Thus a SINGLE selected real action with a genuine condensed
+metric descent, local Diff invariance, flat smooth source and
+ONE physically interpreted Golden \(\rho\)-homogeneity would
+ALREADY FORCE Einstein.** The missing physical law has been
+compressed to an exact native ACTION/RECORD composition and
+ONE scale/metric-descending test, not an all-curved
+40-row matching campaign. No law meeting these assumptions
+has yet been constructed from compulsory D0 history.
+
+### Finite refinement application: asymptotic Golden-step test suffices
+
+It is also unnecessary for every FINITE mesh to have (G2)
+exactly. Suppose \(\mathcal E_n[g]\) are the ACTUAL
+source-normalized native Euler tensors on one typed common
+metric domain, and the same already owned field/clock/readout
+transport proves
+\[
+\mathcal E_n[g]\to\mathcal E[g],\quad
+\mathcal E_{n+1}[\varphi^2g]\to\mathcal E[\varphi^2g],
+\quad
+\|\mathcal E_{n+1}[\varphi^2g]-\mathcal E_n[g]\|\to0
+\tag{G12c}
+\]
+for every controlled metric g in the source topology.
+Then (G2) follows IMMEDIATELY by the triangle inequality.
+Actual uniform flat differentiability and local Diff/Ward
+must still survive that limit. The existing \(\varphi^n\)
+Bratteli scale by itself does NOT supply a physical
+metric interpretation \(\mathcal E_n\) or any of the
+comparisons (G12c); the physical mesh \((n+2)^{-1}\)
+and the archive Golden ratio are **different input types**.
+
+This is a concrete quantitative **sufficient** source bridge
+for any already admitted refinement, not a chosen microscopic
+rescaling/temperature/clock or a new task.
+
 ## 2. Three hard negative controls — exactly why each theorem hypothesis matters
 
 **(A) Bare whole-HJR fails the actual Golden physical scaling test.** The [same ORIGINAL flat null-Brinkmann shear](A4D_BRINKMANN_REFERENCE_COCYCLE_GR_BREAKTHROUGH_SYNTHESIS_2026_10_20.md) has all Palatini Euler rows zero but a full-CAR16/whole-thermal/feedback/true-Z HJR directional source. Retain its physical coframe \(v=h\sqrt\rho\,e_H\), with \(\rho>0\), H=2t. Its complete per-site null-shear FIRST derivative has the continuum limit
