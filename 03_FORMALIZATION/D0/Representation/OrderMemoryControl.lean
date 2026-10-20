@@ -1,5 +1,6 @@
 import D0.Representation.OrderMemoryReadout
 import D0.Representation.GoldenOrderInterferometer
+import D0.Foundation.Omega8Center
 import Mathlib.Data.Matrix.Block
 
 /-!
@@ -124,5 +125,67 @@ theorem local_i_not_from_common : ¬ CommonGenerated (liftQ localIQ) := by
   have hs := CommonGenerated.compose h h
   rw [local_i_squared_real] at hs
   exact no_relativeSign_from_common hs
+
+/-! ## EXACT native-Q8 central controller compiled from EXISTING forward gates
+
+No extra primitive gate is needed to PRODUCE the relative sign:
+the already-owned local i and common j words give either identity or
+relativeSignQ with precisely four occurrences of EACH source gate.
+This is a TYPED actuator-capacity bridge from the already-owned
+Q8 central qONE/qNEG labels. The if branch is a mathematical
+PROGRAM SELECTION dependent on a retained Q8 label; literal physical
+Book/G0 still must transport that label into a clocked controlled
+programme and pay its actual work. Do not infer such physical
+selection or a Spin-sensitive Dirac detector from these identities.
+-/
+
+/-- Both original forward sequences use four local-i actions and
+four common-j actions, differing ONLY in chronological order. -/
+def originalQ8OrderWord : List Bool :=
+  [true,false,true,true,true,false,false,false]
+
+def originalQ8IdentityWord : List Bool :=
+  [true,true,true,true,false,false,false,false]
+
+theorem originalQ8ForwardWordsSamePrimitiveInventory :
+    originalQ8OrderWord.length = 8 ∧
+    originalQ8IdentityWord.length = 8 ∧
+    originalQ8OrderWord.count true = 4 ∧
+    originalQ8IdentityWord.count true = 4 ∧
+    originalQ8OrderWord.count false = 4 ∧
+    originalQ8IdentityWord.count false = 4 := by
+  decide
+
+/-- Use the original two finite Q8 forward words; NO new allowed
+operator or continuously variable active matrix is installed. -/
+def originalQ8CenterForwardProgram (q : D0.Foundation.UQuat) : M8Q :=
+  if q = D0.Foundation.qNEG
+  then commonJQ ^ 3 * localIQ ^ 3 * commonJQ * localIQ
+  else commonJQ ^ 4 * localIQ ^ 4
+
+theorem originalQ8CenterForwardProgram_plus :
+    originalQ8CenterForwardProgram D0.Foundation.qONE = 1 := by
+  simp [originalQ8CenterForwardProgram,
+    D0.Foundation.qONE, D0.Foundation.qNEG, forward_identity_word]
+
+theorem originalQ8CenterForwardProgram_minus :
+    originalQ8CenterForwardProgram D0.Foundation.qNEG =
+      relativeSignQ := by
+  simp [originalQ8CenterForwardProgram, forward_order_word]
+
+/-- The very same actual original i,j Q8 commutator is realized
+by an EXISTING chronological eight-gate program as the native
+relative sign operator, not merely an unimplemented abstract s=-1. -/
+theorem originalQ8CommutatorForwardProgram :
+    originalQ8CenterForwardProgram
+      (D0.Foundation.uqmul
+        (D0.Foundation.uqmul (0,1,0,0) (0,0,1,0))
+        (D0.Foundation.uqmul
+          (D0.Foundation.uqinv (0,1,0,0))
+          (D0.Foundation.uqinv (0,0,1,0)))) =
+      relativeSignQ := by
+  rw [D0.Foundation.commutator_ij_eq_neg]
+  exact originalQ8CenterForwardProgram_minus
+
 
 end D0.Representation.OrderMemoryControl
