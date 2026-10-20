@@ -9180,3 +9180,70 @@ requirements. Six readable phase coordinates and an information floor
 supply required distinctions; they do **not** select the compulsory Book
 Cost-Info or cause Einstein equations. The PR remains Draft/IN_PROGRESS.
 `GR_closed=false`.
+
+
+## 20 October: actual paid gradient source and inverse-paired feedback synthesis
+
+The [native paid-source synthesis](A4D_NATIVE_PAID_SOURCE_AND_PAIRED_FEEDBACK_SYNTHESIS_2026_10_20.md)
+starts from `ccd230bd5765b47d82bd1a4d83e9472c77fa590d` and consumes the
+subsequent whole-HJR fixed-collar theorem at
+`07f2f2b15b7050a612d0075aa73db8dc46087a95`. The latter already owns the
+curved conditional joint branch and the homogeneous u-only seed exclusion;
+this packet does not repeat or promote them. Phase: native realization and
+source composition, before applying the previous squared-density equivalence.
+
+The ORIGINAL full128 expected primitive port cost is exactly
+`n+p epsilon sum_r Tr[rho (Phi*)^r Delta]`. Its next finite native-clock
+coefficient is `p(beta²-beta epsilon) Gamma_h/2`. On the actual pp/null-link
+family, full-CAR computation gives
+`Gamma=lambda nu²/8 int[A(H)Hprime²+C(H)Hprime K+L(H)K²]`, with `L>0`.
+The independent link source selects `K*=-C Hprime/(2L)` and leaves the
+strict bound `G_eff=A-C²/(4L)>=nu²/8`. Thus real link variation does not
+erase this component's gradient pressure. It also does not select LC by
+itself: at H=0 its stationary link is `-Hprime/4`, compared with LC's
+`+Hprime/2`. The actual complete action must supply the other source terms.
+
+Scalar weights on the entire protected8 cluster permit an actual fixedRIGHT
+preparation repair for the stated finite cost/code combination. Its value
+correction begins at fourth clock order. The SAME link-stationary family has
+exact complementary splitting `-nu²k²a² P_bad/32`, so the gap hypothesis is
+nonempty; this is an excited stationary branch, not a minimum claim.
+The next uniform-clock estimate has a real internal obstruction: uncorrected
+energy has a cubic UV symbol. The exact CAR Dirichlet gap
+`delta=nu² sigma_min(B_H)²/8` closes its finite matrix Poisson corrector,
+cancelling that cubic term. Uniform native difference-operator propagation
+at fixed positive beta remains required; two rounds are not that limit.
+
+For the specified relational comparison, the ACTUAL original whole-word
+feedback on `V(P) direct-sum V(P)^T` with a coframe quarter-turn reference
+has leakage `F=2p³I` at zero reference strength for EVERY holonomy. This
+exactly removes the one-arm curvature-only noise. Its full six-direction
+CAR16/coframe first source is
+`c_pair df`, `c_pair=-32 sigma z p^5/(1-2zp³)`, with controlled physical
+small-face remainder `O_C²(sigma h⁴+sigma²h⁴)`. A separately charged natural-cut
+reference has `O(sigma²)` code/feedback source; pointer Shannon adds a log.
+For a fixed faithful block-diagonal quantum reference, the complete coherent
+relative-price source is EXACTLY quadratic and C2. A faithful off-block
+reference gives a genuine linear hostile source, so the accounting
+hypothesis is retained. At `h=p^k,sigma=p^(3k)`, the stated reference terms
+are small relative to the actual paired signal, with real clocks and
+constant flat prices still charged.
+
+The coframe-reference map is also explicit on the owned coherent Julia
+interface: `B_rs=(u_r wedge u_s)eta/det V`, with its full inverse-determinant
+source. Full-CAR bilinears and the actual four-creator determinant amplitude
+supply a fixed polynomial approximation; the already-owned skew compiler
+then acts on the declared clean scalar-work cut. The exact conjugated
+quarter turn with `sinh S,cosh S` replaces a matrix-root oracle and changes
+the paired source only by `O_C1(sigma³ h²)`. All six faces and 96 coframe
+first jets are checked. Coherent primitive admission, direct-face versus
+sequential-edge transport and full work/complement payment remain explicit.
+
+These are supporting results for the original native price/source map,
+with a constructive repair to the comparison route. The full compulsory
+Cost-Info/work action, actual operation admission and fixed-clock/refinement
+map still have to be supplied before either the exact source-equivalence
+or the existing curved conditional root can be promoted to physical GR.
+The packet retains all outputs, complete preparations and the specified
+operational cuts. No accepted assembly result, task lifecycle, BOOK/CORE
+claim or original raw-response terminal is changed. `GR_closed=false`.
