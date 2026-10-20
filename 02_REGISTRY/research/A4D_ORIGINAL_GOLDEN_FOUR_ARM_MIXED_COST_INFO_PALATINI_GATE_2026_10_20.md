@@ -195,3 +195,104 @@ One original complete admitted G0/Book execution must make the following SAME-CA
 This makes the constructive strategy sharper: the original native finite Golden grammar ALREADY supports a mathematically positive, genuinely complete-at-the-flag-level one-programme **double mixed difference**, with exact 3+3 indefinite Cost−Info geometry. The last barrier is the physical valuation of the **complete retained instrument**, not the mathematical availability of a signed source or a new curvature equation.
 
 **Reproduction:** \`sources/d0_native_four_arm_curvature_2026-10-20/check_native_four_arm_exact.py\` (the EXACT native CAR16/Walsh/Julia mixed matrix and four equal Golden weights; four finite-field reductions) and its real original \(SO(1,3)\) root/finite-difference control. All proofs in §§2–3 about four-arm completion, diagonal cancellation and entropy follow algebraically from the original \(p+p^2=1\) and finite normalized Kraus probabilities. This is author research replay, not independent acceptance or book promotion. \`GR_closed=false\`.
+
+
+## 6. NEW coherent pretrace composition: from an ACTUAL native Kraus event to a FULL-WORK mixed source
+
+The preceding classical four-arm reporter has the correct positive signed Cost source, but its FULL classically registered coin/tape Shannon does not automatically cancel (§4). A DISTINCT prospective COHERENT implementation uses the already-owned finite scalar-recovery theorem, preserving every orthogonal final output without pretending that intermediate classical protected tape can be erased.
+
+### 6.1. Real unitary reflection from one original complete two-tick event
+
+For each of the four genuinely original field pairs \(s=(F,U),(F,U_0),(F_0,U),(F_0,U_0)\), let \(K_h(s)\), \(h=0,\ldots,16383\), be the actual 128×128 chronological Kraus words acting on a known normalized Jones+ probe. The full original isometry is
+\[
+V_s|\psi\rangle=\sum_h|h\rangle K_h(s)|\psi\rangle,\qquad V_s^*V_s=I.
+\]
+Take a PHYSICALLY ADMITTED coherent unitary completion \(W_s\), its inverse, a fixed probe preparation \(B\), and the original event projector \(P_E=|0,17\rangle\langle0,17|\) on the FULL retained label space. The reflection
+\[
+R_s=B^*W_s^*(I-2P_E)W_sB
+\]
+is unitary and has the EXACT clean amplitude
+\[
+\boxed{\langle0|R_s|0\rangle=1-2q_E(s).}\tag{17}
+\]
+The whole complement of E is present in \(I-2P_E\); no selected successful trace or quadratic scalar curvature oracle enters. To obtain a scalar compression on unknown logical data, implement this query on a FRESH known Jones+ probe tensored with the identity on logical data and oldRIGHT. Controllable fields/references, query reversal, probe/work preparation and payment are **application premises**, not automatically granted by Stinespring's mathematical existence.
+
+### 6.2. Four ORIGINAL Golden strings produce the double-mixed amplitude, no fair coin
+
+Prepare four fresh coherent Golden gates in the exact product
+\[
+(\sqrt p\,|A\rangle+p|B\rangle)^{\otimes4}.
+\]
+The four strings ABAB, ABBA, BAAB, BABA all have **unconditional** weight \(p^6\). On them run respectively \(+R_{F,U},-R_{F,U_0},-R_{F_0,U},+R_{F_0,U_0}\). For ALL OTHER twelve strings run a fixed Pauli-X on an extra clean work bit, whose clean return amplitude is zero. All sixteen branches, their offblank outputs and the actual executed-clock/work obligations remain.
+
+Unprepare the SAME coherent four-coin input to form the clean BLOCK of this entire controlled unitary:
+\[
+\begin{split}
+t_{\rm coh}(F,U)
+ &=p^6[(1-2q_{11})-(1-2q_{10})
+                  -(1-2q_{01})+(1-2q_{00})]\\
+ &=\boxed{-2p^6(q_{11}-q_{10}-q_{01}+q_{00})}\\
+ &=\boxed{-2[Q(F,U)-2p^6]} .
+\end{split}\tag{18}
+\]
+No output is postselected in defining the unitary. Since all \(q\in[0,1]\), \(|t_{\rm coh}|\le4p^6<1\), and hence the existing scalar-recovery chart is strictly regular. At the double reference
+\[
+\boxed{D_Ft_{\rm coh}=D_Ut_{\rm coh}=0,\qquad
+D_{t_i}D_{u_j}t_{\rm coh}=-2p^6M_{ij}.}\tag{19}
+\]
+
+**Early-measurement hostile control:** register the four Golden coin outcomes CLASSICALLY before coherent unpreparation, and amplitude cancellation (18) is LOST. On the matched reference, the coherent clean amplitude is 0 while the measured-coin clean probability from just the four marked arms is
+\(4p^{12}(1-2q_E)^2>0\) for genuine \(q_E\ne1/2\). A dephased controller cannot be cited as the coherent one, and a protected registered history cannot be undone for free. This directly exposes the physical Info-admission gate.
+
+### 6.3. The previously proved TWO-recovery rule becomes an exact MIXED-jet repair
+
+Consume the existing complete finite scalar source-recovery theorem
+[A4D_FINITE_SCALAR_RECOVERY_COMPLETE_CODE_INFO_SOURCE_2026_10_20.md](A4D_FINITE_SCALAR_RECOVERY_COMPLETE_CODE_INFO_SOURCE_2026_10_20.md).
+Its two-recovery output isometry \(\mathcal V_2\), with all flags/work and unresolved outcomes still present, obeys at \(t=0\)
+\[
+\mathcal V_2=|r_0\rangle i,\qquad
+D\mathcal V_2=|r_1\rangle i\,Dt.
+\]
+After ONE recovery, an unknown nonclean amplitude survives at order \(tJ_-\); after TWO it is \(O(t^2)J_-\). Here \(t=t_{\rm coh}=O(\delta F\,\delta U)\). Therefore one recovery would still carry an UNKNOWN mixed \(D_FD_U(tJ_-)\) source. Two make its mixed derivative vanish because \(D_FD_U(t^2J_-)=0\) at the double reference. The actual mixed FULL OUTPUT jet is consequently
+\[
+\boxed{
+D_F\mathcal V_2=D_U\mathcal V_2=0,\qquad
+D_{t_i}D_{u_j}\mathcal V_2
+=-2p^6M_{ij}|r_1\rangle i .
+}\tag{20}
+\]
+This is a structural reason for precisely TWO reversible work recoveries in the mixed Palatini source problem, NOT a claim about minimal native primitive gate count or an inverse operation on a registered past. The original clock advances during every inverse query and must be paid.
+
+### 6.4. The existing complete terminal Info sources and stopped D_min inherit the nonzero mixed rank
+
+The old completed Golden \(G^2\) reporter on any scalar source \(tI\) has its exact full-final-work first source, with \(\kappa_G=8p^{9/2}>0\):
+\[
+D S_{\rm coh}=\kappa_G\,Dt,\qquad
+D S_{\rm ptr}=\kappa_G(4+\log_\varphi4)\,Dt.
+\]
+The first refers to the prescribed FULL fresh COHERENT terminal-output algebra, the second to its explicitly specified COMPLETE final pointer/flag algebra; neither is asserted to equal unprovided ORIGINAL Book03 Info of all executed intermediates. By (19)–(20), both pure metric and pure link source blocks vanish, but their second MIXED field responses satisfy
+\[
+\boxed{
+D_{t_i}D_{u_j}S_{\rm coh}=-2p^6\kappa_GM_{ij},\qquad
+D_{t_i}D_{u_j}S_{\rm ptr}
+=-2p^6\kappa_G(4+\log_\varphi4)M_{ij}.
+}\tag{21}
+\]
+Both again have **rank3 and inertia (3+,3-)** on the declared six physical tangent coordinates. Regularity only at the required mixed second FIELD jet is inherited from the old \(t\)-first-jet result and \(t_{\rm coh}=O(\delta F\delta U)\); this does not promote a global C2 entropy theorem at generic rank births.
+
+The old **unconstrained terminal** Golden G^k price minimizes at k=0 or1 and DOES NOT select the source-preserving G². A separately owned theorem [A4D_NATIVE_STOPPED_MINIMUM_TO_J2_SOURCE_2026_10_20.md](A4D_NATIVE_STOPPED_MINIMUM_TO_J2_SOURCE_2026_10_20.md) proves that under the DECLARED future task of stopping at first 10, actual full retention and fixed-prefix prices \(T\ge5,\ell_G\ge1\), every minimizing k has a NONZERO coefficient \(dS_{\rm stop}/dt\) at t=0. It therefore transports the same rank3 mixed source:
+\[
+D_{t_i}D_{u_j}S_{\rm stop}
+=-2p^6(S_{\rm stop}'(0))\,M_{ij}\ne0. \tag{22}
+\]
+That theorem does not prove the universe must execute this task, or that a concrete native compiler's COMPLETE price has the assumed fixed-prefix form.
+
+### 6.5. What is now composed and still open
+
+A REAL original full128 event, FOUR original Golden finite coherent controller strings, genuine full-outcome Stinespring reflections and the ALREADY owned two-query coherent recovery jointly produce one **strict positive, same-carrier mathematical** mixed-jet source with no flat first Euler source, and keep the full terminal work Info under control. This is a concrete alternative to adding a fitted Palatini counterterm or assuming a negative cost. Its construction is conditional on coherent PRETRACE admission, reversible fresh work, field/reference routing and true query implementation.
+
+The complete earlier-dephased original 8440/128² tape CANNOT simply be reinterpreted as this unmeasured coherent programme; the external chronological M1 record and its actual Info/price have their own source. The same physical G0/Book03 must still bind the FULL completed execution, controlling all preparation, clock, oldRIGHT, controller and work sources. Exact equality to original Palatini's full 16+24 mixed tensor and matter ratio, selected prospective global programme, stationary nonlinear physical roots and refinement remain OPEN. \`GR_closed=false\`.
+
+Targeted algebraic checker:
+[sources/d0_native_four_arm_curvature_2026-10-20/check_coherent_golden_four_arm.py](sources/d0_native_four_arm_curvature_2026-10-20/check_coherent_golden_four_arm.py).
+It checks all sixteen native Golden path weights and the exact LCU amplitude, strict positive unitary 2×2 reflection examples and the hostile measured-coin versus coherent contrast. This universal small matrix check does NOT replace the original full128 event calculation (5).
