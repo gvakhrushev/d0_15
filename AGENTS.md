@@ -34,6 +34,28 @@ and actual matter/clock selection the priority proof**, not another
 micro-curvature expansion. Do not report the conditional implication
 as physical D0 selection or completed GR.
 
+**New strongest CONDITIONAL universality shortcut:** first consume
+[Golden single-step Einstein rigidity and condensed metric/source descent](02_REGISTRY/research/A4D_GOLDEN_DISCRETE_BLOWUP_CONDENSED_GR_2026_10_20.md).
+ONE selected metric-only, locally Diff-natural, off-shell conserved
+gravitational source differentiable at flat fields, with ONE actual
+physical metric step `E[phi² g]=E[g]`, must equal `aG` for every
+Lorentz metric in the common chart. The `phi^(-n)` normal-coordinate
+blow-up proves this **without assuming second differential order or
+continuous scale invariance**. More powerfully, one full selected local
+Diff-invariant action with `I[phi² g]=phi² I[g]+constant/boundary`
+provides scale-weight and off-shell Ward automatically via Noether.
+
+**Mandatory anti-shortcut:** an internal Bratteli scale ratio
+`Lambda_(n+1)/Lambda_n=phi` is *not* a physical metric rescaling;
+condensed/profinite naturality alone does not select the native heat
+source or physical frame/clock, and bare HJR fails the requisite
+Golden source homogeneity on the original flat Brinkmann carrier.
+Do not claim full D0→GR until the actual selected full
+Book03/oldRIGHT/CAR/controller/clock/Info/work execution supplies
+physical metric descent, smoothness, open-Diff coverage and the
+single Golden weight law. Preserve the prior J² Lovelock route as a
+legitimate independent fallback.
+
 **Default work:** keep this exact solution carrier and reproduce its
 actual geometry/readout/source maps; establish the ONE missing
 same-execution native Cost−Info/Book03/preparation/clock/controller/work
