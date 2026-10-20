@@ -157,3 +157,12 @@ The multiplier is entirely original Book THIRD-TICK pressure, not a fitted Einst
 On the canonical unit primitive price \(W_{\rm Book}=p^3\), which is not automatically one. On a genuine moving-cost direction \(D W_{\rm Book}\) contributes unless physically excluded or canceled by a **derived actual normalization**. On a fixed chosen six-chord embedding, nonuniform original vertex Info can furthermore give different weights to individual faces by the EXACT Golden ratio phi, even at the unit primitive Cost floor. The Aut orbit removes that arbitrary FACE anisotropy but not the common absolute pressure.
 
 Thus any future full native G0 H+J+R/Euler proof must **explicitly decide from the existing executed action** whether the six-face observable is inserted unweighted, with raw Book weights, or with a truly compelled normalized/paid factor (and include the variation of whichever rule actually applies). The original six-face geometric 40-row equality remains completely correct under its stated map; a Book-source equality needs this extra physical theorem, not a second geometry computation. \`GR_closed=false\`.
+
+
+**The source multiplier itself is now an original Book EULER, not an arbitrary symbolic \(DW\).** The enhanced same-research source memo proves and replays on all718 genuine edges that \(f^{[3]}_{uv}=K_{uv}(K^2)_{vu}/\operatorname{Tr}K^3\) is a real positive normalized BALANCED original flow. Therefore on any original scalar Cost–Info tangent \(V\), \(D_V\ln W_{\rm Book}=-3\ln\varphi\sum_{uv}f^{[3]}_{uv}D_Vs_{uv}\), and
+\[
+\boxed{D_VF_{\rm weighed}^{\rm twirled}
+=W_{\rm Book}\left[ D_VF_\star
+-3\ln\varphi\,F_\star\sum_{uv}f^{[3]}_{uv}D_Vs_{uv}\right].}
+\]
+Its log-Hessian is EXACTLY the full true 7722-word native three-tick Cost variance plus genuine direct Cost second derivatives. At canonical K=pA the ORIGINAL K9-K11, K9-K13, K11-K13 UNORIENTED zone pairs each carry EXACTLY \(1/3\) of this source, despite their unequal 198/234/286 arc counts; each of six oriented zone-pairs has \(1/6\). This is a genuine original finite scene 3-tick source Ward, not a physical Lorentz signature or Einstein coefficient. It provides a fully computable simultaneous scalar–signed Euler residual for any proposed actual native complete G0 action using the conditional raw Book-weighted six-face rule; original compulsory action selection remains OPEN.
