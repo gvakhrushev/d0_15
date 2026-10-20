@@ -163,3 +163,39 @@ Then Z(0,0)=1, its individual first partial derivatives vanish, and
 This is a FINITE source-calculation identity; for boosts the exponentials are NOT unitary in the positive Fock norm, so Z is NOT hereby a probability or a selected Book action. A true physically paid original Julia/Choi coherent two-line comparison is required to read this bilinear without inserting a nonunitary detector. Its normalization/source must be computed from the actual full128 circuit, NOT inferred from the algebraic trace.
 
 This resolves a potential false target in §7: the earlier i h²/8 from the specially prepared grade-one pure CAR probe is not expected from the maximally mixed full128 first-shell input. The correct **unpolarized native test** is a coherent TWO-SOURCE/CONNECTED response preserving all flags and the old RIGHT reference, checked against the all-six area-curvature bilinear (8.3), not a nonzero first J23 phase. Passing that test would constitute a genuine common-preparation CAR-to-Palatini interface; the physical action and joint GR limit would still require separate proof.
+
+
+## 9. DECISIVE REVERSE-CARRIER WELD: original S_star as an observer-covariant COMPLETE positive CAR16 event mixed jet
+
+NEW exact mathematical representation (not a selected Book action): [the dedicated full CAR16 operational theorem](A4D_OBSERVER_COMPLETE_CAR16_JULIA_CHOI_STAR_DENSITY_WELD_2026_10_20.md). Reuses the unchanged original G2/STAR/b(F) star action, the already-existing exterior CAR16 transport, original locally legal Julia contraction Λ(U)/2, and the ACCEPTED Lean owner D0.Geometry.A4DObserverPositiveExterior for the positive moving observer form. No new fundamental field/action/scale/geometry operator is imported.
+
+On ANY original finite cell (not merely on its flat quadratic jet), take its real coframe complement area B=v_u∧v_v and true extracted Lorentz plaquette curvature C=(P−P^−1)/2. Set X_B=(*B)η. In the mathematical Choi16 purification of the real full16 mixed CAR input, keep ALL Julia outcomes: marked good, unmarked good, failed. The unconditional **positive marked-joint event** has exact probability
+
+    q_mark(U)=|det(I_4+U)|²/1024, U∈SO+(1,3) near I.
+
+For the actual literal original star conventions, the crucial all-six theorem is
+
+    G2(B,STAR b(C))
+      = −(1/8)Tr_16[dGamma(X_B)dGamma(C)]
+      = −D_s D_t log q_mark( exp(s X_B)exp(t C)) |_(s=t=0).  (9.1)
+
+Exact rational checks cover ALL 36 original bivector × proper-Lorentz generator pairs, reproducing the original G2/STAR_MAP of a4d_star_density_variation_pressure_check.py: e0∧e1 gives X_B=J23 and both sides +1. By bilinearity (9.1) is an exact algebraic face identity at arbitrary finite original field values; when the SAME original face sum is merely rewritten through this mixed log-event jet, its full nonlinear Euler/Hessian derivatives are IDENTICAL as mathematical functions. This is a top-down observable REPRESENTATION of S_star, not a G0 derivation/physical selection of Einstein's action.
+
+The complete CAR16 Julia readout has strict positive joint probabilities and fixed exactly three-label normalization. But the operational source shape depends CRITICALLY on whether failure records are retained and whether the marked event is postselected. On all six Lorentz directions,
+
+    Hess(log q_mark)       = diag(+1,+1,+1,−1,−1,−1);
+    Hess(log q_allgood)    = diag(+2,+2,+2,0,0,0);
+    Hess(log(q_mark/q_good))= −I_6.
+
+A prematurely CONDITIONAL/Fisher-like reading loses precisely the original Lorentz indefinite signature. This is not a violation of positivity: log of a SINGLE positive joint event need not be a positive information metric. Original native full128 Golden ports and BAD/return costs must not be removed from a prospective same-action source. The existing independent Golden two-density six-phase atlas already gives a LOCAL invertible six-Lorentz observability chart, but not the physical native selection of the event source.
+
+ALL-three outcome Lorentz covariance also works mathematically **on an already-owned moving observer-positive CAR16 Hilbert bundle**: h_n=−η+2nflat⊗nflat, observer n→gn, h_gn=g^(−T)h_n g^(−1), the induced exterior Gram satisfies Λ(g)^T B_gn Λ(g)=B_n. With that observer-relative adjoint, the entire Julia good/fail law is invariant under (U,n)→(gUg^−1,gn). A fixed counting metric is not covariant under a boost: a direct two-noncommuting-boost full16 test shows q_good changes by ~5.08e−4 if n is incorrectly frozen, whereas all three proper co-moving outcome probabilities match to ~1e−13. The selected native observer Euler/physical record compiler is still missing.
+
+**ONE ACCEPTANCE TEST, not more scalar-invariant hunting:** Show the ACTUAL compulsorily selected, fully paid original full128+oldRIGHT/ref128+CAR+Golden+observer+clock programme's Cost−Info/ordered-memory source has the exact unconditioned event-jet (9.1) on the admitted 16 coframe+24 Lorentz+matter field tangents, or give the precise same-programme discrepancy. If yes, the EXISTING geometric action's full finite first variation is represented by that source with no new EH insertion; then the independent matter Ward, exact joint nonlinear root, original #216/refinement and physical normalizations must still close. If not, a positive optional Julia/Choi tester does not determine native GR. GR_closed=false.
+
+Independent PASS checkers (all within this PR's existing research source directory):
+- check_car16_full_julia_choi_palatinisign.py
+- check_car16_observer_covariant_julia_choi.py
+- check_car16_literal_star_density.py
+
+Independent remote CI/physical acceptance NOT claimed.
