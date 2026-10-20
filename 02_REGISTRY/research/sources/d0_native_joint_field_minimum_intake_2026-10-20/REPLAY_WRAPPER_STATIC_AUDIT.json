@@ -1,0 +1,72 @@
+{
+  "publication_commit": "83a4740021fbc552c75ecbd3cd888c408e5b4757",
+  "working_tree_clean": true,
+  "python_executable": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+  "python_version": "3.12.14",
+  "sympy_version": "1.14.0",
+  "packet_pin_count": 41,
+  "bad_packet_pins": [],
+  "historical_snapshots": 22,
+  "bad_source_pins": [],
+  "unsafe_temp_tree_paths": [],
+  "wrapper_inputs": 42,
+  "wrapper_missing_inputs": [],
+  "wrapper_extra_inputs": [],
+  "bridge_input_pins": 9,
+  "bad_bridge_bindings": [],
+  "info_input_pins": 7,
+  "bad_info_bindings": [],
+  "replay_sha256": "2ad14e69cdd16d26fb38a588af2d059ac6f697cdde478bbd55c65074230ad751",
+  "wrapper_sha256": "f6a30356aa362d59034ef203f01799e43c962c7aaccf4a901145c429eeb07be8",
+  "pin_manifest_sha256": "ea02c359cd851512be63fb394c87c4052ff118dbaa1875b5b91c251150560b40",
+  "added_receipts": {
+    "FROZEN_REPLAY.json": "adb10251dfebd439c4b50921d65b15b209aac1c375cc182ab41f9bd6e2d73c3b",
+    "VALIDATION.json": "f7d6818f4047024cf7683c8230a7fda7b853020799e0806ba96eaeb796567749"
+  },
+  "prior_39_pin_manifest_reconstructed_sha256": "4a49b6812cc961385603e4b1d4c6578627fead6346a99115a638b16afa65eaf8",
+  "prior_manifest_byte_identity": true,
+  "prior_40_input_wrapper_reconstructed_sha256": "529f3bd28803512f459cf57a8dee9c70d8aeb5b79b77f00da1ada38b4441670b",
+  "prior_wrapper_byte_identity": true,
+  "frozen_replay_historical_pin_count": 39,
+  "science_replayed_by_this_audit": false,
+  "repo_mutations": false,
+  "source_parent": "972ce692a84b5b23bdf91e93a047b1882ad582d4",
+  "observed_worktree_head": "a656d5992f7f8230b25dafd81a6d7521762c442d",
+  "source_commit_scientific_files": 43,
+  "source_commit_scientific_blob_mismatches": [],
+  "source_route_insertions": [
+    {
+      "path": "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md",
+      "insertions": 41,
+      "deletions": 0
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_CAUSAL_BOOK_SOURCE_TO_EXACT_GR_SYNTHESIS_2026_10_20.md",
+      "insertions": 29,
+      "deletions": 0
+    },
+    {
+      "path": "02_REGISTRY/research/D0_GR_PRIMARY_POSITIVE_CASE.md",
+      "insertions": 24,
+      "deletions": 0
+    },
+    {
+      "path": "02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md",
+      "insertions": 36,
+      "deletions": 0
+    },
+    {
+      "path": "02_REGISTRY/research/README.md",
+      "insertions": 9,
+      "deletions": 0
+    },
+    {
+      "path": "AGENTS.md",
+      "insertions": 9,
+      "deletions": 0
+    }
+  ],
+  "source_route_inserted_lines": 148,
+  "source_route_deleted_lines": 0,
+  "source_route_patch_sha256": "c6e1f5939b30591f018ca1a452e85ed4fbd6b497e335b8719ff0d59a71ffb266"
+}

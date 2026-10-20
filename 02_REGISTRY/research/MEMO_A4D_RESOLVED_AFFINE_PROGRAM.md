@@ -444,6 +444,42 @@ physical application. The 275-control exact certificate, corrected upstream
 finite-cap replay and independent analytical reviews are frozen separately;
 the prior complete-record packet and historical evidence are unchanged.
 
+### The full-field minimum premise is excluded on the primary source carrier
+
+The [joint-field-minimum theorem](A4D_NATIVE_JOINT_FIELD_MINIMUM_EXCLUSION_2026_10_20.md)
+now resolves the existence question left by the preceding necessary
+implication. On the exact primary nonvacuum carrier, the actual stopped
+price is constant along an off-shell H/Cartan family while its full
+normal coframe source changes by 2 a_J,h s/h^3. A buffered same-boundary
+two-parameter path decreases the complete price by a strict cubic term.
+Every active implementation, and the owned adaptive infimum, therefore
+fails to have a full-open-field minimum there.
+
+This is stronger than an unproved stability premise: a C1 completion
+preserving the nonzero whole-family J2 source cannot repair that
+minimum. The fixed-coefficient all40 a_h,b_h target has the same
+obstruction at any ratio. Source-neutral internal additions and
+legitimate source-preserving elimination inherit it. The exact source,
+Einstein/CAR stationarity and implementation minimum at fixed fields
+remain valid; no envelope Hessian at ties is assumed.
+
+The original ProspectiveExecution compares words at fixed dynamics,
+full initial state and goal. A sufficient bridge to field minimization
+requires a local graph of fields AND their fully paid prices to be
+approximated by those same admissible executions. Field reachability
+alone is insufficient, and the explicit descent excludes a faithful
+full-neighborhood identification with this price at the primary roots.
+Derive the actual attainable tangent and residual ledger, or a native
+stationary field law. Do not solve this mismatch by selecting an Info
+table or assuming the desired solution constraint.
+
+A separate exact Q8 comparison shows that conditional task information
+and complete conditional-pointer information have different first jets,
+but both preserve the same source zero set for the literal paid
+implementation. This supports stationarity, not existence of the
+excluded field minimum. Full physical Book selection and raw216 remain
+open within the existing #334 owner.
+
 ### Complete native information and solved specified minima
 
 Consume the [complete-record information/price synthesis](A4D_NATIVE_COMPLETE_RECORD_INFO_PRICE_SELECTION_2026_10_20.md)

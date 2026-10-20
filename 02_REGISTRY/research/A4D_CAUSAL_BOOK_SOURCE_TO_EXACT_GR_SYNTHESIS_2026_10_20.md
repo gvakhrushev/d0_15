@@ -308,3 +308,32 @@ consumed at their pinned hypotheses rather than replayed unchanged.
 Continue the same #334 owner at the complete price and primitive-admission
 interface. This is a reviewed research composition; publication in main
 does not retire the parent task or assert physical GR closure.
+
+
+## Joint-field-minimum application: the assumed minimum is now excluded
+
+The [original-carrier theorem](A4D_NATIVE_JOINT_FIELD_MINIMUM_EXCLUSION_2026_10_20.md)
+consumes this same full J2 query, retained cleanup and the all-cost
+stopped/adaptive owners. On a compactly perturbed off-shell Brinkmann
+family, f=q=t=0 and the complete configured stopped price is constant,
+while the original independent coframe row changes by 2 a_J,h s/h^3.
+A second original coframe variation yields an arbitrarily small actual
+price decrease with every failed attempt and conditional-work entropy
+retained.
+
+Consequently the earlier implication “genuine full-field minimum implies
+DJ2=0” is necessary but has no such minimum at the primary representatives
+in the declared open chart. Any C1 completed price preserving that
+nonzero full source throughout the nearby family inherits the obstruction.
+The exact second Taylor form retains the resolvent Gram correction;
+it is not inferred by identifying full Hessians from first-source equality.
+
+Causal elimination of executed states preserves the paid values and
+does not make the externally supplied field an admitted control. The
+new prospective bridge explicitly compares reachable fields together
+with complete prices from the same initial record and goal. Its full
+neighborhood identification is excluded for this price; a legitimate
+restricted tangent, changed native off-shell source or separately derived
+stationary field law remains to be supplied. The positive finite
+Einstein/CAR stationary source and fixed-field implementation optimum
+remain valid. No physical Book/GR/raw216 closure is asserted.

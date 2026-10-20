@@ -87,3 +87,44 @@ Start from current `main`; run `python tools/task_lifecycle.py start EXP-A4D-JOI
 ## Chat handoff
 
 Return the execution PR number, the exact theorem/no-go verdict, the validated response norm and source convention, the certificate/guard results, and the single smallest remaining blocker if the target is not closed.
+
+
+### 20 October: actual primary-carrier field-minimum exclusion and prospective price graph
+
+Phase: native realization / final composition, existing constitutive slot,
+native-programme-v1 and Draft #334. Input: published63221d4f, original
+all40+2 Brinkmann/CAR proof, whole-J2 cleanup, immutable all-cost stopped
+source, adaptive envelope and ProspectiveExecution. No new task or
+physical GR claim.
+
+Precise parent substitution: the field-minimum premise left by the
+stopped-minimality-to-source theorem is excluded on the actual primary
+open carrier. A buffered off-shell H/Cartan family keeps the complete
+configured stopped record and price constant, but its full normal
+coframe row changes by 2 a_J,h s/h^3. An original coframe variation
+produces a strict cubic decrease of the all-launch price. The same
+constant-family argument excludes every C1 completion preserving a
+nonzero whole-family DJ2 source and the fixed a_h,b_h all40 source target.
+Every active implementation is nonetheless optimal at nearby
+non-Einstein fields, for all fixed T>=5,ell>=1.
+
+The primary artifact is A4D_NATIVE_JOINT_FIELD_MINIMUM_EXCLUSION_2026_10_20.md;
+the disjoint packet is sources/d0_native_joint_field_minimum_2026-10-20.
+Its source convention retains every original16+24+2 variation, true
+weights, oldRIGHT, reference, failed attempts, work and fixed paid clocks.
+The positive stationary family is unchanged. Actual D0 field-writing
+admission is not inferred from fixed boundary field data.
+
+Corrected consumer: derive the same-initial-state reachable field-and-price
+graph or native stationary/constraint law. A sufficient exact/limiting
+price-graph bridge and its restricted tangent/source equation are proved.
+A finite Q8 Info comparison supplies a distinct exact detector-noise
+first jet; both stated readings preserve the stationary source for the
+literal paid implementation, without selecting physical Book03 Info.
+
+Validation: direct original six-face mixed witness and inverse-metric
+matter calculation, exact compact-support/Golden/price-graph controls,
+bounded quantum conditional-entropy controls, two independent analytical
+reviews and a read-only pinned replay entrypoint. Historical all40,
+continuum and Lean suites are consumed unchanged. Physical complete
+Book selection, reachable variations, refinement and raw216 stay open.

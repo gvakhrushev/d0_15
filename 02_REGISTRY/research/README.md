@@ -2,6 +2,15 @@
 
 This directory contains CONTROL-curated research packets that materially affect D0 roadmap decisions but are not yet proof owners.
 
+Latest same-carrier route correction:
+[the original joint-field-minimum exclusion](A4D_NATIVE_JOINT_FIELD_MINIMUM_EXCLUSION_2026_10_20.md).
+The configured full source and Einstein/CAR stationary family are preserved,
+but the source-preserving stopped price has a strict same-boundary descent.
+Implementation optimality also holds on nearby non-Einstein fields.
+The next prospective bridge is the actual reachable field-and-price graph
+or a native stationary/constraint law. This is a reviewed research
+application in #334, with physical admission and GR closure still open.
+
 Rules:
 
 - A research packet is not a substitute for Lean, a finite certificate, a registered external theorem, or an empirical passport.
