@@ -13,8 +13,8 @@ PIN34=[0,27,91,123,1211,49,15674,65,19,2235,89,72,105,25,251,
 PIN37=[0,27,91,123,1211,49,15674,65,19,2235,89,105,11771,185,
        1049,25,251,1184,17,1241,2057,2120,2523,248,2491,2145,
        73,2280,2448,6267,2536,2544,3096,3355,7419,3387,3513]
-PRIMES=[(1009,226,469,684,676),(4001,842,899,1449,3208),
-        (101,27,10,4,98)]
+PRIMES=[(1009,226,469,746,250),(4001,842,899,2021,794),
+        (101,27,10,52,33)]
 
 def rankdet(A,q):
     B=A.copy()%q
@@ -195,7 +195,7 @@ def check(q,a,i,want34,want37):
             value=bras[j]@(deff[k]@states[j])
             value+=db[j]@(effects[k]@states[j])
             value+=bras[j]@(effects[k]@ds[j])
-            J[row,column]=int(value%q)
+            J[row,column]=int(value*inv(2)%q)  # actual normalized Jones pure-state density
 
     H=np.diag([1,-1,-1,-1]).astype(np.int64)
     def unit(i,j):
