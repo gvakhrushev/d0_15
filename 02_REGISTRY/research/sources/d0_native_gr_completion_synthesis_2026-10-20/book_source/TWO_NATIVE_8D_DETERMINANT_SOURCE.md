@@ -188,3 +188,29 @@ abort outputs, not a deterministic implementation with aborts erased.
 The moving8D query, exact coherent detector, native task/Info/clock
 binding and separately priced upstream sources remain open as specified
 in that proof and its [independent review](DETERMINANT_PREPARATION_BANK_REVIEW.md).
+
+## 7. Exact retained-retry detector application
+
+The [exact Golden detector](GOLDEN_EXACT_DETECTOR.md) supplies the
+remaining coherent Boolean logic inside the addressed Golden/CNOT,
+fresh-parity-reading and measured-feedforward interface. Its controlled
+phase and X-measurement Kraus identities implement H and Toffoli exactly
+on successful histories, retaining every failure and finite-cap abort.
+The original two 8D queries use 43 Toffolis, six other CNOTs and
+128 prepared fair resources per possible stage, including H resources.
+
+The complete experiment has a new, derived stopping law:
+`S_total=S_pre+alpha[kappa-beta h_phi(q)]E_N(beta q)`.
+Internal gate records are independent of the data; the efficient coins
+and Boolean scratch remain coherent until the final report. The literal
+expanded word and all internal record entropy give `kappa>53`, while
+finite caps give `alpha>=1/2` and `beta>1/2`. Consequently the same
+original all42 source is `alpha c_N DJ2`, with `alpha c_N>6`.
+This uses the actual capped price, not the old integer-stage minimum.
+
+The conditional exact AND/OR implementation premise is thereby replaced
+by an explicit finite programme and its first-source application.
+Its [independent review](GOLDEN_EXACT_DETECTOR_REVIEW.md) pins the proof,
+checker and retained assumptions. Physical admission of the addressed
+interface, moving 8D queries and matter input, compulsory task selection,
+Book03 valuation and additional upstream sources remain open.
