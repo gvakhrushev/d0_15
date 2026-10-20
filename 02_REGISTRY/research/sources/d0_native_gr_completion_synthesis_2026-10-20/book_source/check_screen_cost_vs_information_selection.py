@@ -51,6 +51,20 @@ require(s.simplify(s.diff(KL,x,y).subs(y,0))==0,"KL mixed metric-link no-go")
 require(s.simplify(s.diff(KL,y,2).subs({x:0,y:0}))==s.Rational(9,242),
         "positive Fisher curvature for nonconstant-record KL")
 
+# The four-corner of individually proper FULLY normalized fixed-anchor KL
+# produces a signed mixed Fisher interaction without second q derivatives.
+# This is a mathematical four-ARM comparator, not yet an admitted Book price.
+q0=q.subs({x:0,y:0})
+Dfixed=q*s.log(q/q0)+(1-q)*s.log((1-q)/(1-q0))
+Four=s.simplify(Dfixed-Dfixed.subs(y,0)-Dfixed.subs(x,0)+
+                Dfixed.subs({x:0,y:0}))
+require(s.simplify(s.diff(Four,x,y).subs({x:0,y:0}))==s.Rational(9,440),
+        "four-corner KL cross-fisher source")
+require(s.hessian(Four,(x,y)).subs({x:0,y:0}).applyfunc(s.simplify)
+        ==s.Matrix([[0,s.Rational(9,440)],
+                    [s.Rational(9,440),0]]),
+        "signed indefinite mixed Hessian from four proper positive arms")
+
 # Original exact P25 Palatini finite mixed saddle (not a fitted action).
 u,v=s.symbols("u v",real=True)
 Palatini=(1-u)*s.sin(v)
