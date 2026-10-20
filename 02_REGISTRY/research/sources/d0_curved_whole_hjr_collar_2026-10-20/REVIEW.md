@@ -69,3 +69,46 @@ exact decimal candidate plus rational error9142279/997000000. Broadened
 pretty-printed Arb response strings alone were not used for that check.
 The finite collar, discreteC1 preparation norm and absence of a uniform
 whole-joint/refining/physicalGR claim remain explicit in both acceptances.
+
+
+## Accepted whole-price first-source/Hessian extension
+
+Frozen owner sections1-12 SHA-256:
+`b37b0eaa18356cf53989558231f76a76897785fca83be88fafc4944c3dec8127`.
+Input published sections1-11 at5b5c60047; those bytes are unchanged.
+
+`ward_joint_consumer` independently proved the whole-band minmax trace
+bound and positive16-mode Z floor, then checked the complete T1-T14
+composition. It accepted the frozen owner and EXACT parent application:
+uniform first-source/Hessian of the unchanged conditional HJR on its C1
+coefficient ball, plus the actual X_h-dual Lipschitz source comparison.
+The convex affine coefficient segment does not freeze the nonlinear proper
+exponential or Riesz preparation; their true mixed jets are already present.
+
+`spectral_joint_curved_consumer` independently verified the two-endpoint
+divided-difference estimate and ordered noncommuting trace identity.
+Row/column Cauchy-Schwarz uses OPERATOR norms and the summable weight
+Tr H(D), avoiding an ambient-dimension factor without discarding modes.
+It also checked minmax, scalar finite-B constants, true global normalizer
+and moving-preparation contribution, and accepted T14's actual dual norm.
+
+The field-independent original full-dimension feedback offset is retained,
+not subtracted from the price or called bounded. The conclusion gives no
+uniform field inverse/coercivity, Hessian continuity modulus, joint-root
+radius, refinement/Einstein identity, pointwise/raw216 bound or native
+complete-price/preparation/clock/work admission. Those boundaries are part
+of both independent acceptances.
+
+
+Final independent replay by `spectral_joint_curved_consumer` accepts the
+frozen owner/application above and checker SHA-256
+`a22b7bee55dbdb4f50641e9d1b58e6b319a83608dd188df54b901799d6631c94`.
+Its captured stdout JSON equals WHOLE_PRICE_MIXED_JETS.json EXACTLY,
+including source hash. It reviewed all three independent exact derivations:
+literal B-power/Jacobi, full-Delta spectral divided differences, and the
+NEW Dirac-functional polynomial Frechet trace calculus. Correct noncommuting
+F^-1 Lf F^-1 f' order, proper Dst/Dtt terms, and separate global-Z response
+are present. Both first derivatives and ss/st/tt Hessians agree exactly;
+all deletion controls are nonzero. No unchanged prior expensive replay
+was performed. Depth3 remains a finite identity check; the analytic proof
+supplies the uniform native schedule, with all stated scope boundaries.

@@ -6155,3 +6155,35 @@ cannot repair the inertia. These two statements concern distinct
 instruments until their physical map is proved. Consume the positive
 flag estimate and the concrete collar selection test instead of assuming
 away either hidden memory source or minimization. Physical GR/raw216 open.
+
+
+### 7.109. Whole conditional HJR source, not only preparation, has a uniform first-order budget
+
+The same curvedwholeHJR owner section12 now proves explicit uniform
+first-source/Hessian bounds for the unchanged ENTIRE finite-B action on
+the discreteC1/O(h)-link neighborhood of section11. Minmax with the actual
+full-band symbol controls thermal moments and the true global Z floor;
+a two-endpoint divided-difference estimate and row/column Cauchy-Schwarz
+retain noncommuting field response without a dimension factor. All modes,
+normalizer, true proper-link jets and moving reference128 are present.
+The growing field-independent feedback offset is kept, not erased from
+the price. T14 gives an actual C1-dual Lipschitz SOURCE ERROR bound from
+a first-order coefficient error. Exact full256-dimensional periodic
+four-role/CAR16 finite-B mixed jets independently match direct product
+and determinant differentiation and detect missing normalizer/proper
+second jets; depth3 is only a small identity control. This discharges
+whole-price regularity on the declared ball, not uniform field-inverse,
+Hessian-continuity modulus, refining curved roots or physical action/source
+selection. The old soft-channel obstruction remains; GR_closed=false.
+
+
+Concurrent input7efec3733 is consumed without replay: the complete compact
+flag archive has a controlled C1 source, but its rank-birth entropy need
+not be C2. The same update proves a strict negative HJR field direction,
+including its seven-slice bulk embedding. Section12's positive uniform
+regularity does not turn those stationary roots into prospective minima
+or extend C2 to the additional physical flag action. The exact native
+minimum test in `A4D_COMPLETE_FLAG_SOURCE_AND_NATIVE_MINIMUM_GATE_2026_10_20.md`
+remains binding: derive the actual remaining price/admission on the SAME
+execution and its named direction, rather than seeking another conditional
+root as a substitute for physical selection.

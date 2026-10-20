@@ -683,3 +683,240 @@ control, not a D0/GR obstruction. The exact full16 helper
 `check_uniform_riesz_linf_control.py` verifies finite L4/L8 instances
 and their unchanged invertibility/strict-window hypotheses; the displayed
 formula proves the whole even-L family.
+
+
+## 12. Uniform FIRST source and Hessian of the ENTIRE finite-B H+J+R price
+
+Section11 controls preparation and its Rayleigh action. The remaining
+full-trace thermal/feedback terms can now be controlled on the SAME ball,
+without a growing Hilbert-dimension factor. This is regularity of the
+unchanged conditional action, not uniform invertibility of its field Hessian.
+Input is the published sections1-11 at commit5b5c60047 and the actual
+refining flat roots already consumed there. No root/heat-time solve is added.
+
+### 12.1. Exact statement and retained constants
+
+Keep every site and CAR16 component, counting positive Hilbert space,
+actual shifted adjoint and complete reference128 preparation. For each
+native integer L use h=1/L, alpha=p^2 h^2/128, m=256L^2 and beta=m alpha=2p^2.
+All these quantities, z=2^-20 and workspace C_h are FIELD-INDEPENDENT
+within this experiment. No clock/depth/work derivative is declared absent
+from the physical D0 action; those are separate admission obligations.
+
+On the coefficient ball delta<=delta* of section11 set b0=p^3. The original
+strict Julia domain gives B=1-alpha D^2>b0 I. Write n_h=16L^4 and c=z/(1-z).
+Exactly, not asymptotically,
+
+ f_h(x)=(1-alpha x^2)^m,
+ ell_h(x)=log(1+c f_h(x)),
+ Z_h=Tr f_h(D_h),
+ S_red=K_h+beta^-1 log Z_h-128 Tr ell_h(D_h)+R_eff,
+ K_h=beta^-1 log C_h-128 n_h log(1-z).                 (T1)
+
+K_h is the ACTUAL field-independent offset in the original price; it is
+retained. In particular a uniform bound on S_red itself is NOT claimed.
+Its field-dependent part S_red-K_h has bounded value, first derivative and
+Hessian, uniformly in h and n_h, on the stated ball and against its controlled
+C1 coefficient directions. The Hessian includes the global normalizer,
+noncommuting eigenvector response and moving rank128 preparation.
+
+### 12.2. Full-band spectral counting from the already proved graph estimate
+
+Put c1=b delta*, c0=(1-a delta*)^2/2. Since Q>=a and
+delta*<=1/(16Q), a delta*<=1/16, so c0>=225/512>0. Equation(U1) implies
+
+ (1-a delta*)||D0 psi|| <= ||D psi||+c1||psi||,
+ D^2 >= c0 D0^2-c1^2 I                                  (T2)
+
+as quadratic forms. This uses (u+v)^2<=2u^2+2v^2, not an operator
+monotonicity claim for the square. Finite minmax orders every eigenvalue
+of these positive matrices. At the flat base, the EXACT full-band symbol
+and G_h>=g0 I give, for a centered Brillouin representative k in Z^4,
+
+ E0_h(k)>=g0 h^-2 sum_r |exp(2pi i h k_r)-1|^2
+          >=16g0 |k|^2.                                (T3)
+
+The second inequality uses sin(pi h |k_r|)>=2h|k_r| for |h k_r|<=1/2.
+The endpoint at Nyquist remains included, once per physical momentum.
+All16 CAR eigenvalues at every momentum remain counted. Thus for t>0,
+
+ Tr exp(-t D^2) <= T(t),
+ T(t)=16 exp(t c1^2) [1+sqrt(pi/(16t c0 g0))]^4.          (T4)
+
+Indeed minmax gives the first comparison with the flat trace; enlarging
+the finite Brillouin sum to Z^4 and the elementary Gaussian integral test
+give the displayed theta bound. No continuum approximation is used.
+Polynomial moments follow with explicit slack. Define
+
+ P2(t)=1+2[2/(e t)]+[4/(e t)]^2,
+ Tr(1+D^2)^2 exp(-t D^2) <= P2(t) T(t/2).               (T5)
+
+This follows by maximizing lambda^j exp(-t lambda/2), j=0,1,2.
+In particular H(x)=(1+x^2)^2 exp(-beta x^2/9) satisfies
+
+ Tr H(D) <= Hstar=P2(beta/9) T(beta/18).                (T6)
+
+There is also a positive uniform LOWER normalizer. On the original16
+constant zero modes of D0, (U1) gives ||D psi||<=c1||psi||. Minmax
+therefore supplies16 eigenvalues E_j(D^2)<=c1^2. Each obeys
+log(1-alpha E_j)>=-alpha E_j/b0 because its B is at least b0. Consequently
+
+ 0<Zmin=16 exp(-beta c1^2/b0) <= Z_h <= T(beta).         (T7)
+
+The floor does not assume perturbed zero modes survive. The upper bound
+uses the actual finite B^m<=exp(-beta D^2) only as an inequality.
+
+### 12.3. Scalar divided-difference bound that retains both spectral endpoints
+
+For a real scalar function phi on the whole spectral interval suppose
+
+ |phi'(x)|<=A |x| exp(-beta x^2),
+ |phi''(x)|<=Bphi (1+x^2) exp(-beta x^2).
+
+Let w_x=sqrt(1+x^2), and use phi'^[1](x,x)=phi''(x). Then
+
+ |phi'^[1](x,y)| w_x w_y <= Cphi [H(x)+H(y)],
+ Cphi=4A+5 exp(beta) Bphi.                              (T8)
+
+Here is a proof valid also for arbitrarily separated/negative Dirac
+energies and repeated eigenvalues. If |x-y|>=(w_x+w_y)/4, division
+and the two endpoint first-derivative bounds give
+4A[w_x|x|exp(-beta x^2)+w_y|y|exp(-beta y^2)], at most the stated bound.
+Otherwise |w_x-w_y|<=|x-y| implies max(w_x,w_y)/min(w_x,w_y)<5/3.
+For every xi between x,y, the triangle inequality gives w_x<=3w_xi,
+whereas w_xi<=max(w_x,w_y)<=(5/3)w_x. Thus
+
+ w_x w_y(1+xi^2) <= (125/27)(1+x^2)^2,
+ xi^2 >= (x^2-8)/9.
+
+The real mean-value theorem for phi' now gives at most
+5 exp(beta) Bphi H(x). The repeated-energy case follows directly or by
+continuity. This two-endpoint bound is crucial: coupling a fixed low mode
+to a very high mode need not have Gaussian decay at BOTH endpoints.
+
+The exact finite-B functions satisfy these hypotheses uniformly. Define
+
+ A_f=2beta/b0,
+ B_f=2beta/b0+4beta^2/b0^2,
+ A_ell=c A_f,
+ B_ell=c B_f+c^2 A_f^2.
+
+For f, differentiate the actual integer power:
+f'=-2beta x B^(m-1) and
+f''=-2beta B^(m-1)+4beta(beta-alpha)x^2 B^(m-2).
+Since m>=2, B>=b0 and B^m<=exp(-beta x^2), the bounds follow.
+For ell, differentiate log(1+c f); its denominator is at least1,
+and |f'|^2<=A_f^2 x^2 exp(-beta x^2). No heat action replaces f.
+The interval between any two Dirac eigenvalues also has B>=b0, so the
+mean-value argument never evaluates outside the original positive domain.
+
+### 12.4. Noncommuting matrix trace jets without Hilbert-dimension loss
+
+For the genuine C2 coefficient family in section11.4 set
+
+ W=(1+D^2)^(1/2),
+ Gstar=(1+c1)/(1-a delta*),
+ K1=a Gstar+b1.
+
+The graph comparison(T2) before squaring and the actual operator jets give
+
+ ||D0 W^-1||<=Gstar,
+ ||D_i W^-1||<=K1 J_i,
+ ||D_ij W^-1||<=K1 J_ij+b2 J_i J_j.                   (T9)
+
+Write A_i=D_i W^-1. In an orthonormal eigenbasis of the ACTUAL D,
+
+ d_i Tr phi(D)=Tr phi'(D)D_i,
+ d_ij Tr phi(D)=Tr phi'(D)D_ij
+     +sum_(a,b) phi'^[1](lambda_a,lambda_b)(D_i)_ab(D_j)_ba. (T10)
+
+These are exact finite-matrix identities; the second sum is over ordered
+pairs, with no additional factor2. Repeated eigenvalues take phi''.
+Moving noncommuting eigenspaces have not been frozen. The first term is
+bounded using |phi'(x)|w_x<=A H(x) and(T9). For the second, exactly
+(D_i)_ab(D_j)_ba=w_a w_b(A_i)_ab(A_j)_ba. For each a,
+
+ sum_b |(A_i)_ab(A_j)_ba| <= ||A_i|| ||A_j||.
+
+The same estimate with b fixed handles the other endpoint in(T8).
+It is row/column Cauchy-Schwarz in OPERATOR norm, not a Hilbert-Schmidt
+bound on a matrix of growing rank. Consequently
+
+ |d_i Tr phi(D)| <= A Hstar K1 J_i,
+ |d_ij Tr phi(D)| <= Hstar [A K1 J_ij
+                  +(A b2+2Cphi K1^2)J_i J_j].         (T11)
+
+All full-carrier modes occur in the trace. Only their proven summable
+spectral weights, not a discarded thermal complement, remove n_h.
+
+### 12.5. Full H, full feedback, global normalizer and moving preparation
+
+For phi=f and phi=ell use their constants above and Cphi from(T8). Define
+
+ Z1=A_f Hstar K1,
+ Z2=Hstar(A_f b2+2C_f K1^2),
+ L1=A_ell Hstar K1,
+ L2=Hstar(A_ell b2+2C_ell K1^2).
+
+Equations(T7),(T11) give the actual global-normalizer derivatives
+
+ |d_i log Z| <= (Z1/Zmin) J_i,
+ |d_ij log Z| <= (Z1/Zmin) J_ij
+                 +(Z2/Zmin+Z1^2/Zmin^2)J_i J_j.      (T12)
+
+The last square comes from -Z_i Z_j/Z^2 and is NOT deleted. For feedback,
+the original n_h log(1-z) has exactly zero field derivatives, while
+Tr ell has bounds L1 J_i and L1 J_ij+L2 J_i J_j. Its magnitude is at most
+c T(beta), because 0<=ell<=c f. Together with(T7) and 0<=R_eff<=Zstar^2
+from section11, this proves the uniform bound on S_red-K_h in(T1).
+
+Finally the original moving-preparation bounds(U7), not a frozen state,
+give the full action-source estimates
+
+ |(S_red)_i| <= C1 J_i,
+ |(S_red)_ij| <= C2a J_ij+C2b J_i J_j,                (T13)
+
+ C1=Z1/(beta Zmin)+128 L1+2 Zstar^2 p1,
+ C2a=Z1/(beta Zmin)+128 L1+4 Zstar^2 p1,
+ C2b=(Z2/Zmin+Z1^2/Zmin^2)/beta+128 L2+4 Zstar^2 p2.
+
+These deliberately nonsharp constants depend only on the accepted base
+gaps/ellipticity, h0 and unchanged calibrations. They are independent of
+h, Hilbert dimension and the chosen controlled field directions.
+In affine coefficient coordinates J_ij=0; nonlinear proper-link/observer
+charts carry their true jets as in section11. The raw moving-observer map
+of section11.7 transfers the estimate to its controlled raw C1 chart.
+
+There is a useful quantitative consequence for the parent source comparison.
+Let X_h be the actual coefficient space with the delta norm of section11,
+and q0,q1 two points of its convex delta* ball. With eta=q1-q0, use the
+affine two-parameter family q0+s eta+t xi. Its J_st=0. Integration of the
+mixed Hessian bound along the segment gives, in the ACTUAL dual norm,
+
+ ||dS_red(q1)-dS_red(q0)||_(X_h*) <= C2b ||eta||_X_h,
+ |S_red(q1)-S_red(q0)-dS_red(q0)[eta]|
+                  <= (C2b/2)||eta||_X_h^2.             (T14)
+
+Thus a source error can be bounded uniformly from a genuine first-order
+coefficient error, including the moving preparation and every H+J term.
+The offset K_h cancels exactly in this comparison; the price is unchanged.
+
+### 12.6. Exact parent substitution and boundary
+
+The entire conditional source now has a uniformly bounded functional
+first variation and Hessian on one explicit, nonshrinking first-order
+coefficient ball. The parent no longer needs an assumed growing-dimension
+thermal/feedback remainder to combine section11's Riesz source with H+J.
+It can use(T13) in a same-programme C2 comparison or a future genuine
+joint-field recovery estimate. The normalizer, original finite B, full
+CAR16, complete reference128 and complementary modes all remain present.
+
+This does NOT prove convergence of these sources to Einstein, a uniform
+inverse or coercivity of the full field Hessian, a uniform nonlinear joint
+root radius, or physical selection/admission of this conditional price.
+Uniform second derivatives of an action are C1 bounds on its source;
+they are not second source derivatives or a uniform Hessian continuity
+modulus. The existing soft normal obstruction in full-source section6.49
+is preserved. Unscaled delta-site rows need not have bounded C1 norm;
+thin collars and original raw216 are not reclassified. The genuine native
+clock/current/preparation/work and independent matter source remain open.

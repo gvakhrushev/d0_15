@@ -2282,3 +2282,31 @@ for exact reference128 preparation and its C2 Rayleigh action (source/Hessian); 
 NOT give a uniform full-joint inverse, original raw216 or physical action
 selection. Own packet additionally contains wide-collar Arb certificate
 and exact Linf-versus-C1 shifted-adjoint hostile control.
+
+
+### 20 October: whole finite-B HJR source control on the uniform first-order chart
+
+Same Draft334/native-programme-v1, input5b5c60047; continue the same
+positive curved-root/refinement consumer, not a new execution. Extend
+`A4D_EXACT_CURVED_WHOLE_HJR_FIXED_COLLAR_ROOT_2026_10_20.md` section12
+and its existing source packet, append-only primary/strategy. Statement:
+on section11's discreteC1/O(h)-proper-link ball, prove dimension-independent
+first and second variations of the ENTIRE unchanged finite-B H+J+R price,
+including full thermal complement, global Z derivative and true moving128
+preparation. Calibration is field-independent, beta=2p^2, m=256L^2 integer.
+Retain explicitly the field-independent full-dimension feedback constant;
+do not assert a bounded full action value or change the physical price.
+Consumer: whole-source regularity premise before any uniform joint-field
+inverse/root argument or fixed-programme C2 source comparison. Existing
+soft normal obstruction is not reopened or declared solved. Read-only
+independent premises: whole-band minmax/trace and scalar divided-difference
+source bounds, followed by a pinned application review. Smallest decisive
+check: exact noncommuting finite-B fullCAR16 mixed jets against direct
+power/determinant differentiation; hostile global-normalizer deletion.
+No full-joint inverse, uniform curved roots, unscaled point-slot/raw216
+norm, native complete-price/clock/work admission or Einstein claim follows.
+
+Integrated concurrent7efec3733 complete-flag/minimum gate: retain its
+negative HJR field direction and C1-but-not-C2 flag boundary. This uniform
+conditional source lemma neither supplies physical minimum selection nor
+changes that native completion test. Do not launch a replacement root hunt.

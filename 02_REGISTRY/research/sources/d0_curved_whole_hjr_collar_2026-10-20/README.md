@@ -76,3 +76,26 @@ No uniform whole-HJR root or raw216 claim follows.
 
 Both Arb checkers leave saved evidence unchanged by default. Use explicit
 `--output /tmp/name.json` to create a fresh receipt for comparison.
+
+
+Section12 completes the uniform first-source/Hessian estimate for the
+ENTIRE unchanged conditional finite-B H+J+R action on the same C1 chart.
+Minmax spectral counting controls full traces; two-endpoint divided
+differences and row/column operator-norm bounds retain noncommuting jets
+without ambient-dimension loss. The true global normalizer and moving
+preparation remain. The full-dimension FIELD-INDEPENDENT feedback offset
+is kept explicitly; no bounded total price or physical GR is inferred.
+T14 gives a uniform Lipschitz source comparison in the ACTUAL C1 dual norm.
+
+`python check_whole_price_mixed_jets.py` needs only python-flint0.9.0. It
+builds the actual four-role periodic L2 operator with ALL16 sites and
+ALL16 CAR fibers (256 dimensions), true shifted adjoint and genuine
+coframe/proper-boost jets. Exact rational differentiation of the literal
+finite-B power and log determinant agrees with both independent full spectral
+divided differences and DIRAC-functional polynomial Frechet calculus for
+both first sources and all three mixed Hessians.
+Deleting the global normalizer or the proper mixed second jet gives
+nonzero exact defects. Its depth3/calibration is a SMALL IDENTITY CONTROL,
+not a native-depth root or a numerical proof of uniform refinement.
+`--output /tmp/whole-price.json` writes a fresh receipt; default is read-only.
+The analytic section12 proves the full native m=256L^2 family.

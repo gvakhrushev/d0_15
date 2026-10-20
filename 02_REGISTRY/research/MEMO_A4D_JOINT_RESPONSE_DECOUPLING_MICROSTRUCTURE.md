@@ -8990,3 +8990,38 @@ and noncompact source cannot inherit that control without their own map.
 No new price, fitted correction, accepted goal or original raw216 terminal
 is introduced. Independent analytical review and two bounded checkers are
 pinned in the packet. GR_closed=false.
+
+
+### 20 October: complete finite-B HJR source is uniformly controlled on the first-order chart
+
+The exactcurvedwholeHJR owner section12 now consumes its section11 graph
+ball to prove UNIFORM FIRST SOURCE AND HESSIAN for the ENTIRE unchanged
+conditional H+J+R action. Full-band minmax gives explicit thermal moment
+bounds and a16-mode positive Z floor; genuine two-endpoint divided
+differences and row/column operator-norm estimates prevent a growing
+Hilbert-dimension factor. All thermal/CAR16/complement modes, global
+-Z_i Z_j/Z^2, proper link jets and moving fullreference128 preparation stay.
+The actual field-independent n_h log(1-z) offset is explicitly retained;
+only the field-dependent value is bounded. T14 gives a uniform Lipschitz
+source comparison in the ACTUAL discreteC1 dual norm, with no replacement
+of raw216 or of individual unscaled site Euler slots. This removes an
+uncontrolled whole-price source-budget premise before any genuine joint
+field inverse, rather than presuming that inverse. A new exact256-dimensional
+noncommuting actual four-role/CAR16 control compares direct power/Jacobi
+with spectral mixed jets and detects normalizer/proper-jet deletion. Its
+small depth3 is an identity check; the analytic theorem handles native
+m=256L^2. Independent bounded reviews accept the mathematical composition.
+The existing soft normal obstruction and physicalprice/clock/work/matter
+admission remain; no uniformjointroot, Einstein identity or GR closure.
+
+
+Concurrent input7efec3733 is consumed without replay: the complete compact
+flag archive has a controlled C1 source, but its rank-birth entropy need
+not be C2. The same update proves a strict negative HJR field direction,
+including its seven-slice bulk embedding. Section12's positive uniform
+regularity does not turn those stationary roots into prospective minima
+or extend C2 to the additional physical flag action. The exact native
+minimum test in `A4D_COMPLETE_FLAG_SOURCE_AND_NATIVE_MINIMUM_GATE_2026_10_20.md`
+remains binding: derive the actual remaining price/admission on the SAME
+execution and its named direction, rather than seeking another conditional
+root as a substitute for physical selection.
