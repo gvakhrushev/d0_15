@@ -148,3 +148,48 @@ The one parent YES/NO test is now sharper: on the ACTUAL original paid full128 p
 **Proven scope:** finite analytic monotonicity/tangent-cone/gauge identities plus the pinned original full128 coarse probability first jet. **Unproved:** physical scene↔full128 source map, compulsory action selection, on-shell Lorentz/matter Ward, uniform nonlinear geometry refinement, RAW-216 and GR. No BOOK/CORE/claims promotion. \`GR_closed=false\`.
 
 **Validation:** independent literal JavaScript source \`sources/d0_book_cost_floor_2026-10-20/check_cost_floor_cp_source.mjs\` was evaluated in a V8 tool runtime before GitHub publication; validates original Perron cubic, unit-floor families, CP source sign, 718 edge gradients, endpoint Info diagonal similarity and exact full128 J23 port1 relative source. Numeric tests do NOT establish physical action admission.
+
+## 7. Independent Lorentz-group selection rule: a scalar of a BARE link has zero first J23 source at the identity
+
+There is a second, independent representation-theoretic reason NOT to search for a nonzero original J23 scalar edge-Cost first jet in a bare, isotropic Lorentz-link price.
+
+Let \(f:SO^+(1,3)\to\mathbb R\) be \(C^1\) near the identity, and assume it is invariant under **conjugation by every proper orthochronous Lorentz frame change**, \(f(gUg^{-1})=f(U)\). In the standard \(\eta=\operatorname{diag}(1,-1,-1,-1)\) basis let \(J_{23}=E_{23}-E_{32}\) and
+
+\[
+P=\operatorname{diag}(1,-1,-1,1)\in SO^+(1,3).
+\]
+
+The true **exact finite** relations are
+
+\[
+P J_{23}P^{-1}=-J_{23},\quad
+P e^{tJ_{23}}P^{-1}=e^{-tJ_{23}},\quad
+\det P=1,\ P^T\eta P=\eta,\ P_{00}=1.
+\]
+
+Hence every such \(f\) satisfies \(f(e^{tJ_{23}})=f(e^{-tJ_{23}})\), and
+
+\[
+\boxed{D_{J23}f(I)=0.}\tag{8}
+\]
+
+Analogous proper spatial half-turns flip each elementary rotation and boost generator, so the same conclusion holds for the entire six-dimensional Lie algebra at the identity. This is a **bare-link, conjugation-invariant scalar** no-go; the actual native geometric action also contains coframes, observers, endpoints, faces, and ordered history, so none of its physical field derivatives is asserted to vanish by (8).
+
+The escape has a precise geometric **type**, without introducing a new physical action: an oriented bivector \(B_{ab}\) built from the SAME native coframe/face can transform together with \(X\) under \(g\), permitting the gauge-covariant bilinear first jet
+
+\[
+j_B(X):=-\frac12\operatorname{Tr}(BX),\qquad
+j_{gBg^{-1}}(gXg^{-1})=j_B(X).
+\]
+
+For \(B=J_{23}\), \(\operatorname{Tr}(J_{23}^2)=-2\), so \(j_B(J_{23})=1\). This is a **normalized algebraic comparator**, NOT a physically selected Cost coefficient. Importantly, the EXISTING original crossed-null six-face geometric owner in #334 already gives a coframe-oriented wedge \(w=A_xB_y-A_yB_x\) multiplying the same \(J_{23}\) in \([ab]P_{uv}=(h_{\rm lattice}^2/4)(d\,\mathsf B+wJ_{23})\). Thus the missing reference bivector is available in the **geometric** language of the SAME project; what is still unproved is the typed, paid physical Book/record map selecting this comparator.
+
+Combining (1), (5) and (8) gives the actual source-search restriction:
+
+1. No two-sided first Cost jet exists at a saturated action floor if that Cost is an \`ActionProtocol\` action.
+2. No conjugacy-invariant scalar of one **bare** Lorentz link has first J23 jet at an identity link, even at an interior Cost.
+3. Yet the **original full128 registered port1 event** has the exact nonzero first J23 probability jet (7).
+
+Therefore a genuine source-carrying field→Book compiler must use actual **full record/conditional Info and covariantly carried coframe/face/observer/ordered-memory data**, rather than a cost assigned to the bare link alone. It need not be hand-selected to equal Einstein: it must be derived from the owned native paid programme. An independent pure-scalar Price fibre with arbitrarily chosen slack does not supply that derivation.
+
+Verification companion: \`sources/d0_book_cost_floor_2026-10-20/check_bare_lorentz_class_source.mjs\`, executing the exact 4×4 integer \(P,J_{23},\eta\) relations and normalized bivector pairing; the checker was evaluated in the same V8 research runtime. Source remains RESEARCH; no \`GR_closed\` claim.
