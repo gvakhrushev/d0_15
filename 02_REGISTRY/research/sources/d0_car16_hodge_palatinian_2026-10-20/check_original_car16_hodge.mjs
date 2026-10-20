@@ -113,6 +113,23 @@ for(let c=0;c<4;c++)for(let d=0;d<4;d++) {
 assert.equal(carInsertion,palatini);
 assert.notEqual(palatini,0);
 
+// The same chiral word has a COMPLETE, positive two-outcome mathematical readout.
+// Gamma is a real symmetric involution, so E±=(I±Gamma)/2 are projections.
+let trGamma=0,grade2Trace=0;
+for(let mask=0;mask<16;mask++) {
+  const [image,sgn]=act(gammaWord,mask);
+  if(image===mask) {
+    trGamma+=sgn;
+    if(popcount(mask)===2)grade2Trace+=sgn;
+  }
+}
+assert.equal(trGamma,0);
+assert.equal(grade2Trace,0);
+assert.equal((16+trGamma)/2,8);
+assert.equal((16-trGamma)/2,8);
+assert.equal((6+grade2Trace)/2,3);
+assert.equal((6-grade2Trace)/2,3);
+
 console.log("PASS_ORIGINAL_CAR16_HODGE_GRADE2_PALATINI_EXACT");
 console.log("Fock dimension=16, unique degree-preserved sector k=2 (dim6)");
 console.log("CAR16 chiral 4-index trace: 256/256 exact integer identities");
