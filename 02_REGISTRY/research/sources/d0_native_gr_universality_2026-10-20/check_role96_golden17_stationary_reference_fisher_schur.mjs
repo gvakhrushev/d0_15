@@ -154,6 +154,40 @@ for(const t of [-.19,-.11,0,.05,.12,.19]){
 }
 fail(costInfoError<1e-13&&adaptiveSourceError<2e-10&&adaptivePrepError<2e-8,
  "exact Golden17 cross-code Cost−Info source not compensated at adaptive minimum");
+// The full17 already-owned original GOLDEN split has p+p²=1, and
+// two genuinely signed label classes a+ and a- at each of SIX Lie marks.
+// A FROZEN native two-port code (p,p²), unlike the matched code, retains
+// an ODD Lie first source. This is an existing Golden code PRIOR, not an
+// extra fitted gravitational coefficient or a physically forced selector.
+// The Lorentz/coframe orientation which assigns +/- is a separate native
+// Q8/Clifford physical-admission obligation.
+const priorNative=golden17(0);
+const biased=priorNative.slice();
+for(let a=0;a<6;a++){
+ const mass=priorNative[2*a]+priorNative[2*a+1];
+ biased[2*a]=mass*p;biased[2*a+1]=mass*p*p;
+}
+const reverseBias=biased.slice();
+for(let a=0;a<6;a++){
+ [reverseBias[2*a],reverseBias[2*a+1]]=
+ [biased[2*a+1],biased[2*a]];
+}
+fail(Math.abs(biased.reduce((s,x)=>s+x,0)-1)<2e-14,
+ "original Golden-p asymmetric full17 prior not normalized");
+const biasedKL=(t,code)=>golden17(t).reduce((sum,q,i)=>
+ sum+q*Math.log(q/code[i])/ell,0);
+const mark=(bell*p**4)/24,oddJet=-Math.SQRT2*mark,
+      testStep=.0015;
+const nativeOdd=(biasedKL(testStep,biased)-biasedKL(-testStep,biased))/(2*testStep);
+const oppositeOdd=(biasedKL(testStep,reverseBias)-
+                   biasedKL(-testStep,reverseBias))/(2*testStep);
+fail(Math.abs(nativeOdd-oddJet)<2e-10&&
+     Math.abs(oppositeOdd+oddJet)<2e-10,
+ "original p:p² chiral code did not retain the entire signed J23 first source");
+const oddShannon=(actualInfo(golden17(testStep))-
+                  actualInfo(golden17(-testStep)))/(2*testStep);
+fail(Math.abs(oddShannon)<1e-12,
+ "complete pointer Shannon should be REVERSAL EVEN");
 const fullOneLink=(theta,refAngle)=>6*KL(theta,refAngle),h=.012;
 const HH=fullOneLink(h,0)+fullOneLink(-h,0)-2*fullOneLink(0,0);
 const RR=fullOneLink(0,h)+fullOneLink(0,-h)-2*fullOneLink(0,0);
@@ -186,6 +220,10 @@ console.log(JSON.stringify({
   candidateFullSixFaceMatchedMovingCodeKL:fullOneLink(.1,.1)},
  localSharedLinkStiffness:{sourceExpected:expected,
   complete17CostInfoIdentityError:costInfoError,
+  nativeGoldenBiasedCodeSignedJet:nativeOdd,
+  analyticNativeGoldenSignedJet:oddJet,
+  reversedOriginalQ8CodeSignedJet:oppositeOdd,
+  fullPointerShannonOddJet:oddShannon,
   movingSourceCancellation:adaptiveSourceError,
   referencePreparationEulerError:adaptivePrepError,
   observedGeometry:d2geometry,observedReference:d2reference,
