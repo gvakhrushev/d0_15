@@ -257,7 +257,9 @@ import D0.Foundation.Q8Anisotropy
 import D0.Foundation.RelationalRepairClosure
 import D0.Foundation.SceneCountReduction
 import D0.Foundation.SceneStepParity
+import D0.Foundation.TheoryTransfer
 import D0.Foundation.VerifiabilityNecessity
+import D0.Foundation.VerificationCore
 import D0.Foundation.ZoneConnectivity
 import D0.Frozen.ConservedStressProjection
 import D0.Gauge.AlbertSMProjection

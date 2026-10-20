@@ -501,7 +501,12 @@
         }
       ],
       "consumer": "theory_transfer",
-      "scope_level": "family"
+      "scope_level": "family",
+      "hypotheses": {
+        "execution_interface": "A declared FutureExecution F with its complete finite action words, tests and outcomes. The theorem quantifies over this supplied total operational interface; actual physical admission and clock calibration are later realization obligations.",
+        "verification_representation": "A supplied TheoryVerification F.futureEmpiricalTheory, retaining every hypothesis of the existing VerificationContract and its represented empirical states. No claim that every arbitrary execution already admits this witness is made.",
+        "coded_representation": "Only the coded Sigma realization requires SigmaWitness E: finite ordered Primcodable alphabet, code round trip and shortlex-minimal valid representatives, and genuine Computable canon/comparison witnesses. Archive access is constructed and proved computable. A finite protocol supplies a concrete singleton witness; arbitrary raw-state encoding is not inferred."
+      }
     },
     {
       "id": "theory_transfer",
@@ -518,7 +523,13 @@
         }
       ],
       "consumer": "gr_operational_realization",
-      "scope_level": "family"
+      "scope_level": "family",
+      "hypotheses": {
+        "operational_interpretation": "Declared FutureExecution systems F and G and primitive Interpretation maps: states, source actions to finite native words, tests, injective outcome encoding, primitive run/readout commutation. All-word commutation, common-sector faithfulness and theorem preservation are derived, not fields.",
+        "foundation_representation": "The same supplied TheoryVerification F.futureEmpiricalTheory when identifying the verified carrier with the common native empirical image; the verification_core prerequisite supplies the constructed quotient/record/action bridge.",
+        "assertion_regime": "Assertions are predicates on future empirical classes; derivability is semantic entailment under an explicit regime H. A source Lean proof of H implies P, or an indexed premise implication, is supplied and every translated premise remains proved or an explicit regime hypothesis. An arbitrary external proof calculus is not implicitly implemented.",
+        "additional_native_contexts": "The unconditional common-sector theorem uses precisely the compiled source experiments on the full native state carrier. Only the stronger all-native equivalence requires NativeContextCoverage with a source experiment and correct readout map for each native context; the extra-test counterexample proves that this upgrade cannot be inferred without coverage."
+      }
     },
     {
       "id": "constitutive",
@@ -1751,6 +1762,6 @@
     }
   ],
   "registry_budget": {
-    "max_active_results": 52
+    "max_active_results": 54
   }
 }
