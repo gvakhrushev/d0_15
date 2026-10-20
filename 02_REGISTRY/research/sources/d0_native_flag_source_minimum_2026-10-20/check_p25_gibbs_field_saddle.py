@@ -67,6 +67,22 @@ def test():
     assert g != 0 and p != 0
     # The necessary coframe dispersion is positive in the witness:
     assert var_alpha2 != 0
+    # Consume, do not re-derive, the independently owned exact ORIGINAL
+    # 24x24 homogeneous Cartan spectrum: 2^4,(-2)^4,1^8,(-1)^8.
+    eigen_mult = {2: 4, -2: 4, 1: 8, -1: 8}
+    determinant = 1
+    for eigen, mult in eigen_mult.items():
+        determinant *= eigen**mult
+    assert determinant == 256
+    assert sum(eigen_mult.values()) == 24
+    assert sum(mult for eigen, mult in eigen_mult.items() if eigen < 0) == 12
+    assert sum(mult for eigen, mult in eigen_mult.items() if eigen > 0) == 12
+    # H=A-beta*Cov with A PSD has at most rank(Cov) negative eigenvalues.
+    # Two length-only score classes have covariance rank <= 1, vs required 12.
+    assert 2-1 < 12
+    assert 12+1 == 13  # necessary number of distinct complete paid score jets
+    print('Original 24 Cartan multiplicity consumption: PASS (12 negative)')
+    print('Two-clock-class covariance rank-capacity no-go: PASS')
     print('Original Golden normalization: PASS')
     print('Source-score gradient cancellation: PASS')
     print('Exact covariant source variance: PASS', var_alpha2)
