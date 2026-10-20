@@ -125,3 +125,28 @@ The second number is the conventional trace distance. These numbers survive all 
 Consequently **NO continuous selection of globally R-minimizing fixedRIGHT rank128 preparation** exists across both signs of the smooth macroscopic perturbation (4) in the declared protected two-grade native programme. This is a stronger, gauge-invariant impossibility than applying the ordinary C²-Schur to an energy with a \(|\epsilon|\) cusp. It does NOT exclude all physically stationary critical preparations, whole16 selections, one-sided admitted cones, extra selected M-dependent work or the user-reported fixed-boundary ten-variable solution; it excludes only the precisely defined smooth LOWEST-R selector here.
 
 Independent checked 4×4 native compressed-source eigenspaces yield \(P_+P_-=0\) to machine precision and true \(\|\rho_+-\rho_-\|_1=1/32\); the projection identity itself follows exactly from (5), so these numerics are a replay, not the proof. \`GR_closed=false\`.
+
+
+## 6. EXACT MINIMAL-CAPACITY OPPOSITE: the original nonzero-only stationary reference128 is the GLOBAL MAXIMUM of R inside its native protected carrier
+
+This complements the discontinuous lowest-energy selection: the original positive reference128 construction in \`A4D_EXACT_CURVED_NATIVE_DIRAC_FIXED_RIGHT_PREPARATION_AND_SOURCE_2026_10_20.md\` can be **spectrally classified completely** at its two minimal nonzero-energy capacity grids, not just declared a saddle.
+
+For original g=2 protected low grades at L_u=65, the real protected carrier has \(gL=130\) dimensions, **exactly two** uniform Fourier k0 zero modes and **128 strictly positive** eigenstates. The owner's offered preparation fills ALL 128 positive states, leaves the two zeros empty, and has \(\Sigma_R=I_{128}/128\). On the full original fixedRIGHT unitary LEFT orbit **restricted to this honest protected 130-state subspace**, Ky Fan's exact rank128 maximum principle implies
+\[
+\boxed{
+R_{\rm offered}
+=\max_{\dim W=128,\ W\subset\mathcal F_{\rm protected}}
+ \frac1{128}\operatorname{Tr}(P_W\Delta_{\rm protected})
+=\frac{1}{128}\operatorname{Tr}\Delta_{\rm protected}
+=\frac{65\nu^2}{32h^2}.}\tag{12}
+\]
+This is the **GLOBAL MAXIMUM**, not a physical minimum; its strict negative occupation-to-zero mode directions are precisely those independently certified in the original saddle owner. The result does NOT say it is a global max on all 16 CAR grades: the complementary native Dirac spectrum has not been ordered.
+
+Similarly for the full original four-grade quartet on L_u=33, the protected carrier dimension is132, with exactly four zero states and 128 positive modes all occupied by the nonzero-only offered rank128; it is its own protected **GLOBAL MAXIMUM**, with
+\[
+\boxed{R_{\rm offered}^{g=4,L=33}
+=\operatorname{Tr}\Delta_{\rm quartet}/128
+=\frac{33\nu^2}{16h^2}.}\tag{13}
+\]
+
+**Thus a complete two-sided spectral selection fork is now exact on the original carrier:** the previously offered conveniently stationary nonzero-only preparations at minimal capacity are energy MAXIMIZERS, while the natural "replace by lowest128" preparations are MINIMIZERS with fourfold/eightfold fractional cutoff, genuine Grassmann-flat states and, in the rigorously tested low2 family, a NONCONTINUOUS selected LEFT density and a non-C¹ energy at an admitted smooth coframe variation. Neither alternative becomes a unique smooth stable physical H+J+R/Einstein branch by merely calling \([\Delta,\rho]=0\) an Euler equation. A selected paid G0/oldRIGHT/clock/source programme has to determine the correct stationary set, occupation and treatment of the cutoff source on the actual full16 field/observer/boundary tangent. \`GR_closed=false\`.
