@@ -9449,3 +9449,30 @@ AF binding, preparation/observer/clock/work/Info source, stationary internal
 elimination and the original refinement/comparator remain open. The prior
 bareHJR flat coframe test has a different Riesz preparation; its coefficient
 is not transplanted here. No assembly or lifecycle promotion. `GR_closed=false`.
+
+
+## 20 October: exact primary-family application of the paired Book price
+
+Phase: native realization / same-source composition, existing #334.
+The same-history owner section8 now consumes paired_feedback.md section9
+on the original exact sourced Brinkmann representatives, with simultaneous
+Ricci and Weyl. The literal complete outer Golden/Julia Book determinant
+has a strictly positive local coframe-dilation source for sufficiently
+fine nonzero faces, uniformly under positive native reference weakening.
+The configured Palatini and null-matter source is zero on that same
+independent variation. All six faces and their actual area scales are kept.
+
+Route change: remove direct EXACT finite-source substitution of this
+paired outer term into the configured all40+2 theorem. Its earlier
+conditional continuum estimate remains valid, but needs a true joint
+stationary-solution transport. Other actual native price terms, including
+the separately charged reference with opposite source, are not excluded
+or declared absent. Their physical accounting and internal Euler remain
+unproved. This result does not replace Cost-Info by a trace statistic,
+introduce a compensating action, or close physical GR/raw216.
+
+The proof and focused fullCAR/Julia/return/Golden replay are in the EXISTING
+sources/d0_native_price_source_synthesis_2026-10-20/ owner; the application
+is A4D_SAME_HISTORY_PRICE_AND_SOURCE_COMPOSITION_2026_10_20.md section8.
+Independent review checks the frozen application and uniform-weakening
+argument. No unchanged geometric/Lean proof is replayed. GR_closed=false.

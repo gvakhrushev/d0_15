@@ -503,3 +503,210 @@ relative to their Palatini source without a counterterm. What remains is
 literal coframe-input/oldRIGHT-compatible admission, the actual obligatory
 full-price accounting and refinement/clock selection. This is not yet a
 proof that original D0 dynamics chooses this apparatus.
+
+## 9. Exact application to the sourced Brinkmann family: the finite source is different
+
+**20 October 2026.** This section applies the EXISTING inverse-paired
+operation (14)-(15) to the [primary exact nonvacuum family](../../A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md).
+It does not introduce another apparatus or re-prove the geometric solution.
+The input version of this file has Git blob
+`50c7131108aa750485f4d02636b9d7b05adac6ae`; the all40 geometry and its
+coframe convention are owned by
+[the original reduction](../../../gr_assembly/sources/d0_double_null_quadratic_cartan_2026-10-19/arbitrary_brinkmann_all40.md).
+
+**Conclusion.** The literal Book feedback of this complete outer word has
+a strictly positive local coframe-dilation source on a nonempty part of the
+EXACT sourced family, including simultaneous nonzero Ricci and Weyl. The
+configured Palatini and null-matter sources vanish on the same direction.
+This excludes their DIRECT exact first-source identification at finite h.
+It does not exclude the controlled continuum route of section8, a proved
+perturbation of the stationary solutions, or compensation by other terms
+of an actually derived complete native price. None of those is supplied
+by this calculation.
+
+### 9.1. The actual face, physical area and independent variation
+
+Use the original null basis (+,-,2,3), eta_(+,-)=1, eta_22=eta_33=-1,
+and N_i=E_(-,i)+E_(i,+). The positive observer
+n=(e_++e_-)/sqrt(2) gives the Euclidean fibre transpose used in section3.
+Take the already owned quadratic member
+
+    H=(c+A)x^2+(c-A)y^2,  c=-lambda_- |Psi'|^2>0,
+    0<|A|<c.
+
+Constants on a chosen time patch suffice; retain the original midpoint
+time placement and its genuine chronological matter increments. Ricci
+is nonzero because c>0, and Weyl is nonzero because A!=0. With the original
+cofactor formula B_rs=(u_r u_s^T-u_s u_r^T)eta/det[u], u=eta e^-T,
+
+    B^(e)_ux=-N_2,   B^(e)_uy=-N_3,
+    P_ux=exp(-t_x N_2),  t_x=(c+A)h^2>0,
+    P_uy=exp(-t_y N_3),  t_y=(c-A)h^2>0.              (22)
+
+These cofactor identities hold for every local H: u_u=e_-, u_a=-e_a
+and det[u]=-1. The other four based plaquettes are identity. The statements
+are local to the free interior and do not impose a polynomial solution
+across a periodic seam.
+
+The original edge legs are v=h e, hence B^(v)=h^2 B^(e). Write
+S=alpha_h S0(B^(e)), where S0 is (5) at sigma=1. If the actual reference
+uses sigma_h S0(B^(v)), then alpha_h=sigma_h h^2. If it uses the normalized
+coframe directly, alpha_h=sigma_h. Fixed positive factors multiplying B
+enter the corresponding alpha for each face. External positive scene,
+density or counting weights multiply the WHOLE price and its source and
+remain explicit: J(w alpha) is not identified with w J(alpha). No weights
+are replaced by equal ones. The theorem below is uniform
+for every positive alpha in a common bounded strict chart. It does not
+identify this outer word with the separate oldRIGHT128 instrument.
+
+At ONE free site vary e -> sqrt(rho)e, holding independent links, matter,
+observer coordinates, weights, h, sigma_h and z fixed. This is a legitimate
+combination of the original sixteen coframe variations, not a restriction
+to solutions of the Cartan equations during variation. All six B at that
+site scale by rho. On (22), Tr(N_i N_j)=0, so every star density is zero
+and its derivative on this dilation is zero. The original null material
+density q is zero and homogeneous under this scaling, so D_rho q=0 too.
+Thus the configured full40+2 source annihilates this direction exactly.
+
+### 9.2. The exact trace of the full CAR/Julia word
+
+For one face write B=-N and P=exp(-tN), t>0. All16 CAR basis states are
+retained. Put a=sqrt(p), L=Lambda(P), D_B=dLambda(B), and
+
+    chi=2 asinh(t/(2 sqrt(2))),
+    r_+=sqrt(1-p^2 exp(2chi)),  r_-=sqrt(1-p^2 exp(-2chi)),
+    delta(t)=p^2 [a(4+t^2)/(2(r_++r_-))-1].
+
+On the strict Julia chart,
+
+    delta(t)>0 for t>0,    delta(t)=t^2/4+O(t^4),
+    Tr_32[S0(-N)V(exp(-tN))]=4p^2 t delta(t).          (23)
+
+Here V is precisely J_(pI)^T J_(pL), not a unitary Lorentz representation.
+One direct derivation starts with A(D)=(D-D^T)/2, H(D)=(D+D^T)/2 and the
+two actual Julia defects E=sqrt(I-p^2 L^T L), D_J=sqrt(I-p^2 LL^T):
+
+    Tr(S0(B)V)=p^2 Tr(A(D_B)L)+p^3 Tr(H(D_B)L)
+                       -(a p^2/2)Tr(H(D_B)(E+D_J)).   (24)
+
+For X=log(P), X^3=0, the full exterior character gives
+Tr_16(dLambda(C)Lambda(P))=4 Tr_4(CX) for traceless C, since
+det(I+P)=16 and (I+P)^-1=I/2-X/4. The singular values of P are
+exp(chi), exp(-chi), 1, 1. On CAR16 their first two values occur four
+times each and 1 occurs eight times. For Q=P^T P or PP^T, set
+Z_Q=(Q-Q^-1)/(2 sinh(2chi)). For P=exp(tN) the defect traces reduce to
+
+    Tr_16[dLambda(C) sqrt(I-p^2 Lambda(Q))]
+        =2(r_+-r_-) Tr_4(C Z_Q),
+    Z_(P^TP)+Z_(PP^T)=8H(N)/sqrt(t^2+8),
+    r_+-r_-=-p^2 t sqrt(t^2+8)(4+t^2)/(4(r_++r_-)).
+
+Substitution in (24), followed by the simultaneous signs B=-N, X=-tN,
+proves (23). Positivity follows from r_++r_-<2a at nonzero t. These are
+full-carrier value identities; unrestricted link derivatives would still
+require differentiating both actual defect roots. Only an independent
+coframe derivative is needed here.
+
+Let F_rho be the ENTIRE64-dimensional return in (15), with
+S=alpha rho S0(-N), and c_z=1-2zp^3>0. Equation(16) now gives the exact
+finite trace, with no discarded higher-curvature term:
+
+    Tr(F_rho-2p^3 I)=16p^5 alpha rho t delta(t).        (25)
+
+### 9.3. The determinant contributes a second strictly positive source
+
+Put K=(d/dt)V(exp(-tN)) at t=0 and C={S0(-N),K}. The literal Julia
+differential (4) gives, on the upper Julia / grade-one block,
+
+    C_11=(p^2/2)(N^2+(N^T)^2)
+                       +(p^3/4)(N^T N-N N^T).
+
+In particular its (-,+) entry is p^2/2, so C!=0. This entry witnesses a
+nonzero full matrix; no grade is removed from the action. Let
+D_rho=sqrt(I+alpha^2 rho^2 S0^2). Expanding the actual return gives
+
+    F_rho(t)=2p^3 I+t p^3 G1(rho,alpha)+O_C1(rho)(alpha t^2),
+    G1=[[alpha rho C, [K,D_rho]],
+        [[K,D_rho],  alpha rho C]].                   (26)
+
+G1 is symmetric. Its complete Frobenius norm obeys
+
+    ||G1||_F^2=2alpha^2 rho^2||C||_F^2+2||[K,D_rho]||_F^2,
+    partial_rho ||G1||_F^2 at rho=1 >=4alpha^2||C||_F^2>0. (27)
+
+For the last inequality diagonalize -S0^2. If its eigenvalues are s_i^2,
+each commutator summand is |K_ij|^2(d_i-d_j)^2 with
+d_i=sqrt(1-alpha^2 rho^2 s_i^2). Its absolute gap is
+alpha^2 rho^2 |s_i^2-s_j^2|/(d_i+d_j), nondecreasing in positive rho.
+Repeated eigenvalues give zero gaps and require no extra assumption.
+
+Now use the literal Book price J=-logdet(I-zF), retaining (25) EXACTLY:
+
+    partial_rho J at rho=1
+      =(16 z p^5/c_z) alpha t delta(t)
+       +(z^2 p^6/(2c_z^2))t^2 partial_rho||G1||_F^2 at rho=1
+       +O(alpha^2 t^3).                               (28)
+
+The remainder is uniform for 0<=alpha<=alpha_max on fixed strict Julia,
+reference and positive-pencil charts, at fixed 0<z<1/(4p^3). Indeed
+E=F-F0 and its rho derivative vanish both at alpha=0 for EVERY t and at
+t=0 for EVERY alpha. Analytic division gives E=alpha t Ebar and
+partial_rho E=alpha t Ebar_rho with bounded derivatives. After (26), the
+quadratic logdet-source remainder is O(alpha^2 t^3); cubic and higher
+terms are O(alpha^3 t^3). The whole linear trace, which could be
+O(alpha t^3), is already retained in the explicitly positive first term.
+
+Equations(23),(27),(28) prove the uniform statement
+
+    There exists t0>0 such that partial_rho J at rho=1 >0
+    for EVERY 0<t<t0 and EVERY 0<alpha<=alpha_max.       (29)
+
+The positive alpha^2 t^2 term dominates the uniform error; the exact trace
+term is positive as well. Thus no positive native weakening schedule,
+including alpha_h=sigma_h h^2 ->0, makes the EXACT finite source vanish.
+For the original area convention and bounded nonzero c,A, the trace
+source starts at order sigma_h h^8 and the determinant quadratic source
+at order sigma_h^2 h^8. They can be small without being zero.
+
+At the chosen site both t_x,t_y in (22) satisfy (29) on sufficiently fine
+meshes. Their positive contributions add, with their actual positive
+counting factors. The four identity faces have F=2p^3I for every coframe
+and contribute zero. This is an actual all-six-face local coframe Euler
+obstruction to direct exact source substitution.
+
+### 9.4. What this decides for the complete-price application
+
+The outer paired Book functional cannot itself replace the configured
+Palatini source on the unchanged exact family. Adding only the original
+null-material source does not repair the displayed dilation row. The
+already proved finite curvature-square neutrality is irrelevant to this
+residual: here its coframe first derivative is explicitly nonzero.
+
+This is NOT a theorem that other physical price terms cannot compensate.
+For example the CONDITIONAL separately charged natural-cut reference
+price (10) has the opposite dilation source
+
+    partial_rho J_ref
+      =2 z_ref alpha^2 rho Tr[
+        ((1-z_ref)I-z_ref alpha^2 rho^2 S0^2)^-1 S0^2]<0. (30)
+
+Section8 already explains why that separate execution and its accounting
+cannot be inferred by copying an intermediate coherent outcome. Whether
+(30), actual Info, preparation, observer, work or clock terms occur in
+the compulsory programme, and their COMBINED stationary source, remains
+to be derived. No cancellation is assigned or ruled out by fiat.
+
+The continuum estimates (18)-(21) also remain intact. A normalized source
+error tending to zero could support a recovery theorem if the ACTUAL
+joint stationary section and a suitable solution-transport estimate are
+proved. Equation(29) rules out automatic exact reuse of the present
+finite roots, not that different, explicitly proved continuum mechanism.
+The same-history parent consumes this result at its section8; physical
+D0->GR and the original full-action selection remain open.
+
+**Bounded replay.** Run `python3 check_original_paired_book_source.py` in
+this directory. It constructs all16 CAR basis states, both32D Julias,
+the64D paired return and the complete128D outer Golden word; checks the
+actual leakage; and differentiates the full resolvent at the original
+z=2^-20. The exact trace term is separated to avoid numerical cancellation.
+The analytic proof above, not the finite diagnostic, establishes (29).

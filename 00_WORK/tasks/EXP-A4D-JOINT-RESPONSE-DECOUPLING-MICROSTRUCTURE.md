@@ -2480,3 +2480,32 @@ counts/inverse-PF, actual256-site/full128 D and true adjoint, independent
 direct R price variation at a supported interior link. Read-only reviewer
 independently checks the frozen proof/checker/receipt. No unrelated heavy
 replay, new task, lifecycle retirement or claim promotion. `GR_closed=false`.
+
+
+### 20 October: actual paired Book source on the primary exact family
+
+Phase: native realization; existing constitutive/native_sector application,
+not a new scientific execution. Inputs: existing inverse-paired Golden
+word (paired_feedback.md, pre-change blob50c7131108aa750485f4d02636b9d7b05adac6ae),
+the original all40 source convention and accepted midpoint family.
+
+Exact result: on H=(c+A)x^2+(c-A)y^2 withc>0,0<|A|<c, the literal
+complete outer Book determinant has positive local coframe-dilation source
+for every sufficiently fine nonzero face, uniformly under positive native
+reference weakening. The configured Palatini/null-matter source on the
+same independent direction is zero. Original area h^2, all six faces,
+full CAR16/Julia32/return64/outer128 and fixed z are retained.
+
+Parent substitution: same-history source-composition section8 excludes
+direct EXACT finite-source replacement by this outer term. It preserves
+the conditional continuum route and explicitly retains other price terms
+and their internal equations; separately charged reference sources can
+have the opposite sign. No complete native compensation or joint recovery
+is inferred. Full physical GR and the task terminal remain open.
+
+Write surface: append paired_feedback.md section9 and same-history section8;
+one focused checker plus its frozen validation in the existing source
+directory; append this brief and the primary memo. Decisive check: exact
+finite trace plus strict second-source inequality, independently reviewed;
+full-matrix native-z replay checks the declared operator, not physical
+admission. No new task, action, claim, lifecycle or assembly promotion.

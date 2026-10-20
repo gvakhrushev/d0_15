@@ -1,0 +1,106 @@
+{
+  "date_utc": "2026-10-20",
+  "repository": "gvakhrushev/d0_15",
+  "pr": 334,
+  "source_read_head": "25bea5bddd54988e32363c1968cdec8f6e4b7801",
+  "append_base_head": "78401f1299365573b47e78cc14624612ac74e3ed",
+  "preserved_latest_head": "3bcb88ffbe3c4d68e1230524ea7fabb069215585",
+  "result": "Original paired outer Book cannot directly replace the configured finite Palatini/null-matter source on the unchanged exact sourced Brinkmann family.",
+  "scope": "Complete outer word and its literal complementary-feedback determinant. No complete native Cost-Info action, internal stationary section or physical GR closure is asserted; the prior conditional continuum route is retained.",
+  "consumed_sources": [
+    {
+      "path": "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md",
+      "git_blob": "ecdd31abb52c94e9f2a157a80c7c49a6f5ac31aa"
+    },
+    {
+      "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_quadratic_cartan_2026-10-19/arbitrary_brinkmann_all40.md",
+      "git_blob": "050ee972efa0f2ae37206b2ef9e3b4122dbac204"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md",
+      "git_blob": "67531a343a0ae707ff0a3830c0e2c9cf2bbc8213"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_price_source_synthesis_2026-10-20/paired_feedback.md",
+      "pre_change_git_blob": "50c7131108aa750485f4d02636b9d7b05adac6ae"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_price_source_synthesis_2026-10-20/paired_feedback.md",
+      "sha256": "72e241a39b0142a157693e575aaa86fcfadcfba698cadaddf0db274b81a68b62",
+      "git_blob": "afc315a6a81a734438cbcb63817701d7e463186a"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_SAME_HISTORY_PRICE_AND_SOURCE_COMPOSITION_2026_10_20.md",
+      "sha256": "d2afefcc9470052b0e21bd730c80fa799dd6d67e32a3e8e88836110ff0f99b01",
+      "git_blob": "038061d0ae52323bd655dc07943b5b175536f61f"
+    },
+    {
+      "path": "02_REGISTRY/research/MEMO_A4D_JOINT_RESPONSE_DECOUPLING_MICROSTRUCTURE.md",
+      "sha256": "d945789e6efae2f44a6c32b25b9b42b817957eaf44e707b00161ccfb971912b8",
+      "git_blob": "508b92fe190ef1febfd2c81a60291642a607bd7c"
+    },
+    {
+      "path": "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md",
+      "sha256": "077c8f7f544187844a3b4d67e0e264b1f37b5d931c7a2aa5e50aa9832aa2ddfb",
+      "git_blob": "fcf6195194129c3d13c5f273c858fa385241c154"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_price_source_synthesis_2026-10-20/check_original_paired_book_source.py",
+      "sha256": "b09335eac00aeef3e5c2884fb499388d993e4b23d9ec80a4b2c9266bbc9b54cf",
+      "git_blob": "a6f00c98088ef8558acc9faf6880c12c4fdf19f1"
+    }
+  ],
+  "command": "python3 02_REGISTRY/research/sources/d0_native_price_source_synthesis_2026-10-20/check_original_paired_book_source.py",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "exit_code": 0,
+  "stdout": "native h=p=0.6180339887498949, sigma_native=p=0.6180339887498949\neffective alpha=sigma_native*h^2=0.23606797749978975, z=2^-20=9.5367431640625e-07\nexact nonzero anticommutator entry p^2/2=0.1909830056250526\nd_rho Book coefficient of t^2=5.6735738437159827e-15\nproved strict lower coefficient=5.6490949861492902e-15\nt=0.03: exact trace dilation=2.300565892113197e-06; whole Book dilation=2.1939967019927712e-12\nt=0.06: exact trace dilation=1.8444360110725797e-05; whole Book dilation=1.7589940919562808e-11\nt=0.12: exact trace dilation=0.00014885108848966547; whole Book dilation=1.4195560656040693e-10\nPASS: original complete paired outer Book has nonzero sourced-family coframe pressure.\nScope: matrix/source check only; inner programme admission and native Cost-Info remain separate.\n",
+  "analytical_validation": [
+    "Exact CAR/Julia trace including all16 basis states and all return directions.",
+    "Actual sourced/Weyl face and local independent all-six-face coframe tangent.",
+    "Strict second-source inequality with uniform alpha-to-zero remainder.",
+    "Physical h^2 area and separate external price weights.",
+    "Known opposite reference source and preserved conditional continuum scope."
+  ],
+  "reviews": [
+    {
+      "reviewer": "action_bridge",
+      "role": "independent bounded research review",
+      "accepted_artifacts": [
+        {
+          "path": "02_REGISTRY/research/sources/d0_native_price_source_synthesis_2026-10-20/paired_feedback.md",
+          "sha256": "72e241a39b0142a157693e575aaa86fcfadcfba698cadaddf0db274b81a68b62"
+        },
+        {
+          "path": "02_REGISTRY/research/A4D_SAME_HISTORY_PRICE_AND_SOURCE_COMPOSITION_2026_10_20.md",
+          "sha256": "d2afefcc9470052b0e21bd730c80fa799dd6d67e32a3e8e88836110ff0f99b01"
+        }
+      ],
+      "checker_sha256": "b09335eac00aeef3e5c2884fb499388d993e4b23d9ec80a4b2c9266bbc9b54cf",
+      "result": "PASS after normalization and terminology corrections."
+    },
+    {
+      "reviewer": "review_midpoint",
+      "role": "derivation and integrated application review",
+      "accepted_artifacts": [
+        {
+          "path": "02_REGISTRY/research/sources/d0_native_price_source_synthesis_2026-10-20/paired_feedback.md",
+          "sha256": "72e241a39b0142a157693e575aaa86fcfadcfba698cadaddf0db274b81a68b62"
+        },
+        {
+          "path": "02_REGISTRY/research/A4D_SAME_HISTORY_PRICE_AND_SOURCE_COMPOSITION_2026_10_20.md",
+          "sha256": "d2afefcc9470052b0e21bd730c80fa799dd6d67e32a3e8e88836110ff0f99b01"
+        }
+      ],
+      "checker_sha256": "b09335eac00aeef3e5c2884fb499388d993e4b23d9ec80a4b2c9266bbc9b54cf",
+      "result": "PASS."
+    }
+  ],
+  "unchanged_original_prefixes_verified": true,
+  "full_lean_replayed": false,
+  "physical_GR_closed": false
+}
