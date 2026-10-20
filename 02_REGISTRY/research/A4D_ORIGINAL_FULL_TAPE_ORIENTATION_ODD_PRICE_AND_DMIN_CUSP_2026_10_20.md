@@ -123,3 +123,44 @@ In particular:
 **One exact next typed proof substitution (not another detector search):** On the SAME admissible original four-Golden/full128 execution, prove that the actual Book03 memory-valued net-price readout evaluates the already retained oriented relative code \(\pm d(\gamma)\) (or derives an equation-equivalent source) with the Q8/Role orientation fixed by one physical verification goal; transport its mixed source through TRUE original based plaquettes, compare it with the owned all40 signed Palatini first source and charged matter, and then use the already published exact finite Brinkmann/continuum recovery. If a compulsory physical valuation instead uses the even total cost (9), it will not produce this mixed source and this candidate fails without touching the valid positive geometrical proof.
 
 **Reproduction:** \`sources/d0_native_four_arm_curvature_2026-10-20/check_native_dual_orientation_full_record.py\` for exact Golden weights/code prices and quantum full-record entropy spectrum with arbitrary entangled right reference; existing \`check_native_four_arm_exact.py\` supplies the original CAR16 exact mixed M over 4 prime fields. No new Lorentz/Palatini rank enumeration. Targeted isolated Python proof/replay passes; author review only. \`GR_closed=false\`.
+
+
+## 5. CURVATURE-ROUTED continuation: remove the false homogeneous-link source without losing the original 3×3 full128 response
+
+A further essential parent-type check is now possible, consuming the concurrently owned original 13-effect *based-plaquette* Julia odds theorem. The matrix M in (4) came from **DIRECT link** variations of one homogeneous Jones Fourier fixture. The original \(\star\)-Palatini geometric Euler on a true based plaquette is **blind at first order** to a homogeneous flat link change, because the oriented edge coboundary vanishes. A direct-link M cannot be promoted to the Palatini tensor by noting only that its rank is three. This is a real error the current extension repairs for a **different declared prospective query composition**.
+
+Let \(P_{rs}(z)=U_r(z)U_s(z+\widehat r)U_r(z+\widehat s)^{-1}U_s(z)^{-1}\) be the ACTUAL original four-edge proper Lorentz plaquette of the accepted old six-face geometry. At identity, for independently sourced true link jets \(X_r\),
+\[
+\boxed{
+\delta P_{rs}(z)
+=X_r(z)+X_s(z+\widehat r)-X_r(z+\widehat s)-X_s(z).
+}\tag{11}
+\]
+The right side is the native lattice one-form *coboundary*. For every homogeneous \(X_r(z)=X_r\) it is EXACTLY zero; likewise for every infinitesimal vertex gauge \(X_r(z)=\xi(z)-\xi(z+\hat r)\). The stronger finite statement is true for pure gauge links \(U_r(z)=g_zg_{z+\hat r}^{-1}\): the full ordered product telescopes to \(P_{rs}=I\), without a Taylor approximation. A constant noncommuting link pair is NOT a pure gauge; its first curvature jet vanishes but its second jet contains \([X_r,X_s]\) and must survive.
+
+**Conditional original-query routing.** Build a declared effective-link query from precisely the SAME original Jones/full128 Walsh–Julia family used for M, but feed its role-0 link by the existing rooted plaquette \(P_{01}(z)\) and its role-3 link by \(P_{31}(z)\), with the other effective links equal to identity. Both plaquettes have the SAME actual original root z; their reference/observer must be co-transported when needed. This is a composed original four-edge query requiring ACTUAL admission/payment of its ordered physical link transports, **not** a claim that the literal old single-link 2-round programme already performs this routing.
+
+Choose the three independent actual underlying field perturbations to be:
+\[
+\begin{array}{ll}
+(1)& X_{0}(z)=X_{03},\quad \delta P_{01}=X_{03},\\
+(2)& X_{0}(z)=X_{01},\quad \delta P_{01}=X_{01},\\
+(3)& X_{3}(z)=X_{03},\quad \delta P_{31}=X_{03},
+\end{array}
+\tag{12}
+\]
+where the original REST observer basis has \(X_{03}=E_{03}+E_{30}\) and \(X_{01}=E_{01}+E_{10}\), both genuine proper Lorentz Lie tangents. The induced **true link-to-plaquette differential on those three coordinates is the identity**. By ordinary exact chain rule, if the already-certified original q is queried on those composed effective links, then the genuine three cost-screened coframe × three inhomogeneous plaquette curvature mixed matrix is exactly the SAME algebraic M:
+\[
+\boxed{M_{\rm face}=M\cdot I_3,\quad
+\det M_{\rm face}=\det M\ne0,\quad
+D_FD_{\rm face}\mathbb E d=2p^6M_{\rm face}.}\tag{13}
+\]
+All four exact original mod-prime nonzero determinant checks therefore transport without a new matrix search. On homogenous flat or pure-gauge link perturbations, the same composed mixed source is instead ZERO as required by the ORIGINAL based-face Ward.
+
+The orientation-odd source is now attached to actual curvature directions, not just to an arbitrary homogeneous connection label. Nevertheless this **does not prove** equality of its numerical mixed tensor with the old \(G_2/\star\) Palatini contraction; all 16+24+2 FIRST-source rows, physical role-dependent solder/Hodge area, matrix source normalizations, the actual matter coupling, complete compiler price, causal clock and true gauge-covariant observer transport remain separately typed. In particular the original source's \(\sqrt\varphi\)/Walsh Jones metric, the original six based Role faces and the field-space tensors need a non-fitted transported identification; a rank-three existence theorem alone is never sufficient.
+
+The concurrently independently sourced [original six-odds based-plaquette theorem](sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/check_original_julia_plaquette_odds_refinement.py) gives a complementary stronger *observable* construction: the true 13-effect CAR16 Julia two-positive-label odds are invariant under subdivision of the SAME net plaquette matrix, have all six proper-Lorentz curvature first responses, and reconstruct original \(\mathcal S_{\star,h}\) as a mathematically prescribed function of those odds plus original coframe. The odds are not the compulsory Price: the actual \(4^{-n}\) success rate and increased executed-clock/failure cost remain. Our sourced full128 code comparison and those independently owned Julia odds are therefore two complementary tests of the SAME physical valuation gate, not evidence that their instruments are identical.
+
+Decisive check for this appendix:
+[sources/d0_native_four_arm_curvature_2026-10-20/check_original_basedface_dualsource.py](sources/d0_native_four_arm_curvature_2026-10-20/check_original_basedface_dualsource.py).
+It uses the original proper \(SO^+(1,3)\) rest generators, the actual four-edge formula, flat gauge coboundary and noncommuting second jet, then applies the already exact M determinants solely through the identity differential of the selected routed primitive edges. This does not compile the new composite effective-link query into the original foundation's paid G0 operations. No scheme fitting and no GR closure.
