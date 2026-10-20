@@ -95,7 +95,7 @@ Use \(x=a-1\), \(t\) and
 s_G(x,t)=3+p\alpha(x+t)+\tfrac12(x^2+t^2),\quad
 s_B(x,t)=2-g\alpha(x+t)+\tfrac12(x^2+t^2).
 \]
-Their raw base weights are \(g p\) and \(p^2\), i.e. have normalized probabilities \(\pi_G=g,\pi_B=p\) (the common +1 in both scores is a pure baseline expense), and every score has **positive definite** field Hessian \(I_2\); locally both scores are above their unit Cost floor. The mean score gradient vanishes:
+Their raw base weights are \(g p\) and \(p^2\), i.e. have normalized probabilities \(\pi_G=g,\pi_B=p\) (the common +1 in both scores is a pure baseline expense), and every score has **positive definite** field Hessian \(I_2\); locally both composite scores exceed one (this is **not** a proof that a decomposition into original primitive edge Costs and vertex Info has been admitted). The mean score gradient vanishes:
 \[
 g(p\alpha,p\alpha)+p(-g\alpha,-g\alpha)=0.
 \]
@@ -117,6 +117,20 @@ D^2F(0)=I_2-
 Meanwhile \(\mathcal V_y(q)\) is strictly convex in the history-distribution variable, with the **unique** minimizer \(q=\pi(y)\) for every fixed \(y\). Thus positive microscopic field curvature and unique prospective statistical minimum **do not force** a positive macroscopic field Hessian.
 
 **Crucial scientific scope.** The explicit coefficients \(\alpha\) and individual slopes in this two-score witness are engineered to demonstrate **logical compatibility** with P25; they are NOT derived from G0, 718 edges, full128, allowed history operations, observer/source or the original Book03 compulsory price. No Einstein action is claimed obtained from a native execution. The existence of a formal two-branch realization changes the theorem-search strategy (stop demanding field minima); it cannot fill \`constitutive\`, \`native_sector\` or \`positive_gr\`.
+
+## 4a. Negative-index capacity bound: how many genuine history-score directions are needed?
+
+A new useful consequence of (3) is the **exact finite negative-inertia bound** when \(A\succeq0\):
+\[
+\boxed{\quad n_-(D^2F)\le\operatorname{rank} C
+\le\dim\operatorname{span}\{Ds_\gamma-\mathbb E_\pi Ds\}
+\le\#\{\text{distinct history-score first jets}\}-1.\quad}\tag{7}
+\]
+Proof: if a negative-definite subspace had dimension \(>\operatorname{rank} C\), it would meet \(\ker C\) nontrivially, where \(v^THv=v^TAv\ge0\), contradiction. The rank bounds follow from the centered finite vector Gram representation of covariance.
+
+For a scalar Book candidate in which every actual one of the original 8440 closed histories has a first score jet determined **solely** by its n=2 or n=3 clock class, the covariance has rank at most **one**, irrespective of 8440 path count, different coframe dependence or the original stage multiplicities. Such a reduction can never supply **more than one negative physical field direction** if its averaged conditional Hessian is PSD. Thus multiplying the number of histories without increasing their independent paid field-sensitive score jets does **not** solve higher-dimensional Einstein Hessian matching. The present P25 two-dimensional test has exactly one negative direction and therefore does not itself violate this rank-one bound; testing the larger original full metric/link Hessian's *already-owned* gauge-quotiented negative index is a named future application, not an assertion that it has been calculated here.
+
+This is an exact **source-capacity** statement; it does not equate the number of outcome labels or the 24 rank of retained conditional quantum states with the number of genuinely distinct **physical paid score jets**. In particular, a full128 detector can be informationally complete on a tangent space while its proposed scalar Cost−Info pays only one effective field-sensitive score direction.
 
 ## 5. The one original physical calculation that decides the remaining hypothesis
 
