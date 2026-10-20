@@ -397,6 +397,15 @@
       "normalization": "The original p=phi^-1, p+p^2=1 depth weights and the full 143484-outcome normalization.",
       "refinement": "Counterfamily on the fixed finite original scene; no continuum or refining-family claim.",
       "scope": "Refutes unconditional absolute-source recovery when depth-specific filters may move independently; it does not refute the shared-filter theorem or physical D0."
+    },
+    "double-null-degree5-coframe-gradient-ward-v1": {
+      "carrier": "The selected perpendicular crossed-null profile H=a*x, J=b*y at h=1 on the original six-plaquette Lorentz-star action.",
+      "action": "The unchanged six based plaquettes, odd Lorentz curvature and fixed original star pairing; the continuum Levi-Civita links are the trial only.",
+      "variations": "All 16 original coframe Euler rows are evaluated after replaying the registered 40-row lower-order branch; the exact adjoint coframe-gradient Ward source is tested at amplitude orders [a^3*b^2] and [a^2*b^3].",
+      "source": "With the full Lorentz exponential through degree five, W^0_[3,2]=3*x/32-3/128 and W^1_[2,3]=-x/128+11*y/128+13/256; every other component in those orders is zero.",
+      "normalization": "Exact rational coefficients at h=1, with W^a=sum_mu(E_e[a,mu](x)-E_e[a,mu](x+e_mu)); the null-axis shifts vanish on this transverse carrier.",
+      "refinement": "One fixed lattice spacing h=1 only; no uniform refinement statement.",
+      "scope": "A non-extension result for one exact RREF-selected lower-order representative. It does not vary the remaining cubic, mixed-quartic or asymmetric-quartic homogeneous modes, and gives no general crossed-null or physical D0-to-GR obstruction."
     }
   },
   "obligations": [
@@ -950,6 +959,12 @@
       "left": "One shared unknown path-verification filter kappa for depths 2 and 3",
       "right": "Two independently moving unknown filters kappa2 and kappa3",
       "reason": "The exact rescaling symmetry with independent filters preserves every stage-labelled probability while changing absolute scalar Book pressure."
+    },
+    {
+      "id": "degree5-selected-rref-ward-vs-global-crossed-null-no-go",
+      "left": "Nonzero fifth-order coframe-gradient Ward source for one exact selected RREF representative of H=a*x, J=b*y.",
+      "right": "No crossed-null finite solution for every lower-order kernel choice, or a physical D0-to-GR no-go.",
+      "reason": "The representative fixes one joint mixed-quartic solution and two zero-free-parameter asymmetric-quartic solutions. The remaining homogeneous modes, other carriers, refinement and native physical admission are not tested."
     }
   ],
   "source_fork_reconciliations": [

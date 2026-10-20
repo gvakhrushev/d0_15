@@ -1665,6 +1665,69 @@
         }
       ],
       "reported_state": "The exact scaling symmetry is derived in the #334 owner; the pinned checker reproduces the hidden-source control with all stage-labelled outcomes retained. This is a scoped failure of unconditional scalar Book identifiability, not a physical D0 or GR no-go."
+    },
+    {
+      "id": "double-null-degree5-selected-rref-ward-obstruction",
+      "owner": "exact fifth-order Ward replay of the registered selected branch in #379",
+      "statement": "For the selected H=a*x, J=b*y, h=1 RREF representative satisfying the 13 registered lower-order amplitude checks, the exact fifth-order coframe-gradient Ward source is nonzero in [a^3*b^2] and [a^2*b^3]; therefore no fifth-amplitude correction extends this representative.",
+      "interface": "double-null-degree5-coframe-gradient-ward-v1",
+      "outcome": "negative",
+      "kind": "exact-finite",
+      "scope_level": "finite",
+      "hypotheses": {
+        "profile": "The perpendicular crossed-null chart H=a*x, J=b*y at h=1.",
+        "action": "The original six based plaquettes with the fixed Lorentz-star pairing and odd Lorentz curvature.",
+        "selected_lower_order_branch": "The exact mixed-quartic RREF representative with two specified [a^2*b] coframe modes, followed by the zero-free-parameter RREF representatives at [a^3*b] and [a*b^3].",
+        "prior_replay": "All 40 Euler rows vanish at the six lower orders, [a^2*b], [a*b^2], [a^2*b^2], [a^3], [b^3], [a^3*b] and [a*b^3].",
+        "fifth_order_variation": "The Lorentz exponential is evaluated through amplitude degree five; the tested coframe-gradient Ward projection is a necessary compatibility condition for any fifth-degree correction because those new fields enter through the flat linearized Euler operator.",
+        "exact_source": "[a^3*b^2], internal component 0: 3*x/32-3/128. [a^2*b^3], internal component 1: -x/128+11*y/128+13/256. Other internal components at these two orders vanish.",
+        "scope_fence": "Only this selected lower-order representative is excluded. Remaining homogeneous lower-order modes, other carriers, arbitrary mesh spacing, all-order roots, matter, native physical selection and GR closure remain open."
+      },
+      "evidence": [
+        {
+          "ref": "a0a8e1b96009bf0e64f33bc2be72e2208d6e0d8f",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_degree5_ward_selected_branch_2026-10-20/check_degree5_ward_selected_branch.py",
+          "sha256": "5824f30566906f3141389eaa38a253c65ef21bc9e58ef97d4bdbc757f8464439"
+        },
+        {
+          "ref": "a0a8e1b96009bf0e64f33bc2be72e2208d6e0d8f",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_degree5_ward_selected_branch_2026-10-20/result.json",
+          "sha256": "7bd637ffde2ddb3a2e85619a2d02d90d323f7ae6ed65377e18ee5c65a128ca42"
+        },
+        {
+          "ref": "a0a8e1b96009bf0e64f33bc2be72e2208d6e0d8f",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_degree5_ward_selected_branch_2026-10-20/output.txt",
+          "sha256": "d47686d2c89b2fecd23fc0e6548ebe3ae6ccf7e6e51545d8cb5ca53894925654"
+        },
+        {
+          "ref": "a0a8e1b96009bf0e64f33bc2be72e2208d6e0d8f",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_degree5_ward_selected_branch_2026-10-20/scope.md",
+          "sha256": "8013e61ca5abc172a7d32ca5d840891785d0886efda669021d6ce2e2719c8ba2"
+        },
+        {
+          "ref": "a0a8e1b96009bf0e64f33bc2be72e2208d6e0d8f",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_degree5_ward_selected_branch_2026-10-20/check_full40_symbolic_ward_identities.cjs",
+          "sha256": "fc6381285b369599a8994103822141bfe2f1942ad83a04510fd751293b4b512d"
+        },
+        {
+          "ref": "a0a8e1b96009bf0e64f33bc2be72e2208d6e0d8f",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_degree5_ward_selected_branch_2026-10-20/ward_identity_output.txt",
+          "sha256": "0e2abfb57f55544af50cc45dd7069cfefb9f44b6027c567ede10c6e04b18299c"
+        },
+        {
+          "ref": "7a593f6ccd31837786a2f1c62a3fca82ae8aa9c8",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_quartic_free_mode_jet_2026-10-19/check_quartic_free_mode_jet.py",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_quartic_free_mode_jet_2026-10-19/check_quartic_free_mode_jet.py",
+          "sha256": "36e6312770341bddb44c349c2025e7a3b385bcb7fa6a31f0f68cc778d854e574"
+        },
+        {
+          "ref": "12245f705982260c32512e648788a7dcd13b0b5b",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_asymmetric_order4_jet_2026-10-19/check_asymmetric_order4_jet.py",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_asymmetric_order4_jet_2026-10-19/check_asymmetric_order4_jet.py",
+          "sha256": "c727f0f8dff5fa02c44e1150955f9ff164ed130ad3eb098fe3ffdb9a748fec41"
+        }
+      ],
+      "reported_state": "The four exact adjoint coframe-gradient Ward directions are certified by 18 Laurent-symbol checks and the selected branch gives two nonzero fifth-order compatibility polynomials. This blocks only a fifth-order extension of that representative; the lower-order homogeneous kernel space remains untested."
     }
   ],
   "applications": [
@@ -1751,6 +1814,26 @@
           "The complete field-to-edge-price map is affine on the 24 independent original Lorentz directions.",
           "The candidate action is only positive scalar Perron pressure; no additional Cost-Info, H+J+R, CAR/memory, measurement, preparation, clock or work terms contribute.",
           "The same original 24-direction Palatini Hessian of inertia (12,12) is the target."
+        ]
+      }
+    },
+    {
+      "id": "double-null-degree5-ward-selected-rref",
+      "result": "double-null-degree5-selected-rref-ward-obstruction",
+      "interface": "double-null-degree5-coframe-gradient-ward-v1",
+      "work_key": "double-null-selected-rref-degree5-ward-extension",
+      "scope": "The exact selected lower-order representative stated in the question; the nonzero fifth-order Ward projection rules out any fifth-amplitude correction for that representative.",
+      "reopen_when": "Vary the remaining joint cubic/mixed-quartic or asymmetric-quartic homogeneous modes, change the finite carrier/action, or enlarge the physical question. Any such result needs its own pinned interface and must not be inferred from this selected-representative obstruction.",
+      "review": {
+        "state": "proposed"
+      },
+      "question_digest": "c22c3c32995ca430f378c98ea32ba1b6b20bb200772179da035d8110ec0029cb",
+      "question": {
+        "statement": "Does the exact selected lower-order RREF representative of the perpendicular H=a*x, J=b*y branch at h=1 admit any fifth-amplitude extension, after allowing arbitrary fifth-degree corrections to the Lorentz links and coframe?",
+        "assumes": [
+          "The original six-plaquette Lorentz-star action and its all-40 Euler variations are fixed.",
+          "The lower-order fields are exactly the mixed-quartic and asymmetric-quartic RREF representatives pinned by the cited checkers, with their remaining homogeneous modes set to zero.",
+          "The fifth-order Lorentz exponential includes all terms through degree five."
         ]
       }
     }
