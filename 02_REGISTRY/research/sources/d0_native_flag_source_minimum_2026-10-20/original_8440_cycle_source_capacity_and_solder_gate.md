@@ -138,7 +138,7 @@ be any continuous scalar function of the *end-to-end Lorentz holonomy alone*, su
 \[
 w(UV)=w(U)w(V)
 \]
-for all \(U,V\) in a group neighborhood of the identity, with its local products. Then \(w(I)=1\). Define \(s(U)=-\log_\varphi w(U)\). It obeys \(s(UV)=s(U)+s(V)\) wherever the local composition law is asserted. Smoothness at the identity follows from a \(C^1\) weight; for merely continuous homomorphisms, standard Lie-group continuity gives smoothness. The derivative \(\ell=Ds_I\) is a Lie-algebra homomorphism to the abelian real Lie algebra, hence
+for **all** \(U,V\in SO^+(1,3)\). Then \(w(I)=1\). If only local products near the identity obey this rule, the conclusion below holds locally near the identity; the global conclusion requires the global homomorphism condition. Define \(s(U)=-\log_\varphi w(U)\). It obeys \(s(UV)=s(U)+s(V)\) wherever the local composition law is asserted. Smoothness at the identity is immediate for a \(C^1\) weight; for merely continuous group homomorphisms, standard Lie-group continuity gives smoothness. The derivative \(\ell=Ds_I\) is a Lie-algebra homomorphism to the abelian real Lie algebra, hence
 \[
 \ell([X,Y])=0.
 \]
