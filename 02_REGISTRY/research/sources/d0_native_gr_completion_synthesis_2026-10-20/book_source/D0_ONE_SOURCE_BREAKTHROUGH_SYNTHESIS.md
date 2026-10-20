@@ -159,6 +159,26 @@ All nodes except the explicitly boxed missing native physical source and native 
 
 **Why these two witnesses do not prove all GR alone:** every existing Brinkmann pp-wave in the primary family has scalar curvature \(R=0\); the Euler tensor of \(\int\sqrt{|g|}R^2\) vanishes on the entire family. Thus even all exact 42 equations on all these roots cannot identify or forbid a fourth-order curvature term. The separate physical **metric-only natural conserved second-jet theorem** is required, NOT just a broader sample of Brinkmann waves.
 
+### 2a. CRITICAL existing solution to the “16384 histories are too many” problem: the ACTUAL original stopped-clock price is already an OPERATOR resolvent
+
+Do not re-enumerate a new future-action catalogue. The main source owner \`sources/d0_native_minimality_closure_2026-10-20/prospective/STOPPED_CLOCK_SOURCE.md\` has ALREADY proved the exact whole-CAR/oldRIGHT original 128-instrument stopped-history transform, distinguishing the one BLANK \(\alpha=0\) from ALL true nonblank Golden direct/return labels. Its original one-round blank operator is \(B=I-\epsilon\Delta/2\), \(Q=B^2\), with true actual port1 effect \(E_1\ne I-Q\). For code-price marker \(0<x<1\) the exact field-dependent COMPLETE stopped positive effect is
+\[
+G_x=x[(I-Q)+p\epsilon(x-1)\Delta],\quad
+\boxed{F_x^{\rm cost}=G_x(I-xQ)^{-1}.}\tag{14}
+\]
+The noncommuting full operator/source FIRST jet is already derived:
+\[
+\boxed{D F_x^{\rm cost}=(DG_x)R_x+
+G_xR_x[(Dx)Q+xDQ]R_x,\quad R_x=(I-xQ)^{-1}.}\tag{15}
+\]
+For a **finite cap N** its truly ALL-PAID port Cost effect (keeping the nonhalting label/dark mass) is
+\[
+\boxed{C_{\rm stop,N}=\sum_{j=0}^{N-1}B^j\,C\,B^j,}\tag{16}
+\]
+with the full preparation source \(\mathrm{Tr}(D\rho)\,C_{\rm stop,N}+\mathrm{Tr}\rho\,D C_{\rm stop,N}\). The same owner recovers the full operator \(\Delta\) and all its first jets from the RETAINED stopping-time generating effect; replacing that rich clock record by eventual exit projects to its support and loses the finite GR source. **The specific source that is STILL MISSING is the original full selected Info/work/observer/preparation valuation and its genuinely compulsory prospective task, not the port-cost path sum itself.**
+
+This EXISTING native resolvent is the practical correct consumer of (10)–(12), and a much shorter test than inventing a new feedback-determinant analogue or separately choosing a Julia/Fisher detector: keep the same stopped original all128 instrument, use (16) as the independently owned actual port-cost part, then attach the TRUE complete selected Book03 Info/work effect \(G_{\rm Info+work}\) on THE SAME chronological records and compute the difference and ALL first sources. If source equality (11) fails, publish its actual noncentral or normal-coframe residual; do not tune it away. The finite native stopped clock is a physical record (subject to compiler admission); an infinite first-exit support projection is NOT an equivalent readout.
+
 ## 3. ONE scientifically meaningful next exact check, with two outcomes
 
 Use a **single real, compulsory, priced programme** on the SAME primary finite CAR–coframe–link Einstein-positive carrier. Before checking Einstein, freeze the true physical choices of:
