@@ -9406,3 +9406,46 @@ that the whole native price belongs to its class. Independent mathematical
 review and the [targeted replay record](sources/d0_midpoint_brinkmann_c2_2026-10-20/CONTINUATION_VALIDATION.json)
 bind the analytical statement and its controls; no assembly acceptance,
 lifecycle, raw-216 or global GR status is changed. `GR_closed=false`.
+
+
+### 20 October: primary configured family has a strict native map and a nonzero original R source
+
+The [new application](A4D_PRIMARY_CONFIGURED_SOURCE_STRICT_JULIA_AND_RAYLEIGH_GATE_2026_10_20.md)
+consumes the primary all40+2 sourced family in main, with its same exact
+finite representatives, proper links, rest-clock CAR preparation and full
+reference128 Gram. The literal unit-transverse inverse legs reach/exceed
+the original Julia boundary. On a declared bounded chart, one fixed Golden
+power s repairs that domain through (e,Psi)->(e/s,Psi/s^2). Sampling star
+and inverse CAR legs remain distinct. Configured field zero rows transport;
+query t->s t preserves the full configured feedback exactly. The declared
+metric/matter decoder recovers the original finite fields, and retains the
+owned midpoint convergence. The null owner's epsilon orientation is
+transported explicitly through detT=-1; canonical rest epsilon is not
+silently substituted. This supplies a conditional matrix/source map, not
+physical generation or free preparation/work.
+
+On the actual supplied m(Psi/s^2)+Fourier128 state, fullCAR algebra and the
+true positive shifted adjoint give the ORIGINAL R link source
+
+    partial_(K_a,z) R=A_z K_a,z+b_a,z,
+    A_z=s^2 rho_z(1-|Psi_z/s^2|^2)/(4 S ell^2)>0.
+
+The complete b is retained and independent of H. At a free interior link,
+two primary harmonic-wave amplitudes have source difference A_z delta K.
+Thus at least one configured root has nonzero R source. In the actual
+L4/n20 unequal-count check the difference is -3.54115051413e-6; independent
+direct price derivatives agree with the analytic gradient/Hessian. The
+polynomial seam belongs to a fixed collar; the Euler tangent has interior
+support. Comparing wave/boundary data is not a comparison of prices from
+one initial state.
+
+Parent substitution: `constitutive`/`native_sector` now has the explicit
+strict-domain/source transport on a nonempty small-matter primary chart.
+The actual remaining complete-price source must cancel or transport this
+specified R covector; it cannot be erased by f=q=0 or the earlier terminal
+cap-error estimate. New Julia defects and the full supplied preparation
+must be used in the paid recycling law. Full physical admission, oldRIGHT/
+AF binding, preparation/observer/clock/work/Info source, stationary internal
+elimination and the original refinement/comparator remain open. The prior
+bareHJR flat coframe test has a different Riesz preparation; its coefficient
+is not transplanted here. No assembly or lifecycle promotion. `GR_closed=false`.

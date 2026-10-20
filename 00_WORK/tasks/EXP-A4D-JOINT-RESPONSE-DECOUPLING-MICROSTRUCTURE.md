@@ -2435,3 +2435,48 @@ use still requires the compulsory full-price/source membership, internal
 stationary elimination, weight/oldRIGHT/reference transport and paid
 preparation/work/clock/physical-time map. No new task, accepted assembly
 premise, lifecycle change, raw-216 or physical GR promotion.
+
+
+### 20 October: primary configured source to strict native domain and actual R link source
+
+Phase: native realization; same existing #334 owner, not a new execution.
+Consume main's primary positive case at0bf309b6 and its exact all40+2
+midpoint recovery at61a0b66f; integration source25bea5bd. The new
+`A4D_PRIMARY_CONFIGURED_SOURCE_STRICT_JULIA_AND_RAYLEIGH_GATE_2026_10_20.md`
+and its `sources/d0_primary_native_domain_source_2026-10-20/` packet
+supply a typed native-domain map and a necessary complete-source test.
+
+Exact statement: on a uniform bounded coframe/link/observer/density chart,
+one fixed Golden power s makes the actual inverse-CAR Julia inputs strict.
+The map (e,U,Psi)->(e/s,U,Psi/s^2) transports all configured40+2 zero
+rows; at query calibration t->s t it preserves the entire configured
+feedback off shell. The calibrated metric/matter dictionary recovers the
+original finite primary representatives and their owned refinement target.
+Use the original rest-clock state, its transported null basis/orientation,
+actual nonuniform golden weights, fullCAR16 and fullRIGHT128 Gram.
+No executed physical clock or complete-price invariance is inferred.
+
+For that supplied preparation the ORIGINAL R=||D C||^2 has independent
+interior proper-link Hessian A_z=s^2 rho_z(1-|Psi_z/s^2|^2)/(4 S ell^2)>0.
+Its full affine intercept is H-independent; two permitted harmonic-wave
+amplitudes give source difference A_z times their exact Cartan-link
+difference. The Euler tangent varies one free link with its collar fixed;
+changing wave/boundary data is not an admissible whole-price comparison.
+Hence remaining actual price terms must carry or cancel this specified
+source before the primary configured root can be used as a full-price root.
+
+Consumer/substitution: `constitutive` and `native_sector` application of
+the existing primary positive family. Replace the previously untyped Julia
+substitution by this explicit fixed-scale map; replace an R-inert claim by
+the actual necessary source equation. The full paid generator, work/Info,
+preparation Euler equations, actual registration clock and refinement norm
+remain. This is not assembly acceptance, a fitted action or physical GR.
+
+Write paths: new summary, source packet and ordinary certificate entrypoint
+`certificates/a4d_primary_native_domain_source_check.py`; append-only intake
+in this brief and its primary memo. Smallest decisive checks: original
+full16 exact CAR identities and configured scaling, exact original F/R
+counts/inverse-PF, actual256-site/full128 D and true adjoint, independent
+direct R price variation at a supported interior link. Read-only reviewer
+independently checks the frozen proof/checker/receipt. No unrelated heavy
+replay, new task, lifecycle retirement or claim promotion. `GR_closed=false`.
