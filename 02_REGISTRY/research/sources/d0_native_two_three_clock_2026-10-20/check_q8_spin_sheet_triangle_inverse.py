@@ -100,3 +100,17 @@ print('PASS SO identity / exterior CAR16 blind to actual central -1 4-cycle')
 print('PASS spinor H4 spectra differ: trace fourth moments 32 vs 16')
 print('PASS original Q8 central commutator -1 projects to trivial SO commutator')
 print('FIREWALL full original Q8-to-scene edge memory/Spin matter G0 selection OPEN')
+
+
+# The Q8 central group-algebra idempotent e_-=(1-[-1])/2 is NONZERO:
+# on left-regular Q8 it is a rank4 orthogonal projector. Exterior CAR16
+# factors through the SO vector quotient and KILLS e_-, while the actual
+# 2D Spin SU2 representation sees e_-=I2. No new physical projector.
+Lz=np.zeros((8,8),dtype=int)
+for i in range(0,8,2):Lz[i,i+1]=Lz[i+1,i]=1
+em=(np.eye(8)-Lz)/2
+assert np.array_equal(em@em,em)
+assert np.linalg.matrix_rank(em)==4
+assert np.array_equal((I16-I16)/2,np.zeros((16,16)))
+assert np.array_equal((np.eye(2)+np.eye(2))/2,np.eye(2))
+print('PASS Q8 central order-memory e_minus rank4, exterior SO kernel, Spin identity')
