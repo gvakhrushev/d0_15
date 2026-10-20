@@ -145,3 +145,56 @@ The genuine synthesis is now pinned:
 The last implication remains a **named one-programme physical proof obligation**, not a missing geometric measurement or eigenmode census. \`GR_closed=false\`.
 
 **Bounded exact checker:** \`sources/d0_midpoint_brinkmann_c2_2026-10-20/check_exact_null_marked_curvature_readout.py\`. It reuses original SO(1,3) null generators, verifies original η-skewness/properness and nilpotence, tests the exact two finite determinants as polynomials in *unrestricted* x,y,s, and substitutes the literal original Cartan K links and discrete face shifts into (5). The general conjugacy contraction (1), physical scope and resource bound (6) are proved analytically; finite arithmetic is not assumed to select a programme.
+
+
+## F. Exact observed native Einstein/Poisson equation for **arbitrary** original Brinkmann H, not only quadratic waves
+
+There is a still more direct all-amplitude mathematical source identity. Keep ANY original Brinkmann profile \(H(u,x,y)\) on the stated free interior \((u,x,y)\) carrier of the accepted exact 40→3→1 theorem, and its original Cartan-frozen-after-independent-variation link:
+\[
+K_a(u_j,x,y)=\tfrac12\left[H(u_{j+1},x,y)-H(u_{j+1},x-h\hat a,y)\right].
+\]
+For the actual oriented based face with an advanced original u-link followed by a positive spatial shift, the common-null logarithm has \(N_a\)-coefficient
+\[
+z_a(u_j,x,y)=K_a(u_j,x,y)-K_a(u_j,x+h\hat a,y)
+=-\frac{h^2}{2}D_{aa}^{h}H(u_{j+1},x,y),\quad a=2(x),3(y),
+\]
+where \(D_{aa}^{h}\) is the true centered three-point second derivative. This is **exact for arbitrary H**, with no polynomial assumption, because all original common-null link exponentials commute.
+
+Execute the already specified two fixed mathematical marked readouts \(\exp(s\bar N_a)P_{ua}\) and define the positive scalar **fourth roots**
+\[
+r_a=\left(m_a/p^2\right)^{1/4}=1+\frac{s}{4}z_a
+=1-\frac{s h^2}{8}D_{aa}^{h}H
+\]
+on the declared positive-root instrument chart. Therefore
+\[
+\boxed{r_2+r_3-2=-\frac{s h^2}{8}\Delta_h^\perp H(u_{j+1}).}\tag{7}
+\]
+
+**Insert the ALREADY PROVED original independent-Euler/Golden-J2 matter equation**
+\[
+\Delta_h^\perp H(u_{j+1})=-4\lambda E_j,\qquad
+E_j=\|D_u^+\Psi_j\|^2,
+\]
+with the very same actual native coframe, proper-null links, Golden-J2 source, matter field and time-staggering as the original exact full40+2 owner. This yields the **exact finite observational encoding of the sourced Einstein-null equation**:
+\[
+\boxed{
+\left(\frac{m_{ux}}{p^2}\right)^{1/4}
++\left(\frac{m_{uy}}{p^2}\right)^{1/4}
+-2
+=\frac{s\lambda h^2}{2}\,\|D_u^+\Psi_j\|^2.
+}\tag{8}
+\]
+
+This is an identity on **every** legitimate finite sourced solution of that configured nonlinear sector, not a low-order approximation, not another separately installed source and not a relation requiring a curvature field or stress tensor to be fitted after the fact. The true Golden/J2 numerical \(\lambda\) remains the same fixed source normalizer; \(s\) is a **declared mathematical future test setting** rather than a gravitational coupling. The identity reverses as well: once the original Cartan link/finite physical fields and specified complete tester are admitted, (8) is equivalent to the original scalar Poisson/Einstein Euler row because \(s\ne0\).
+
+The orthogonal combination remains sensitive to independent tracefree gravitational data:
+\[
+\boxed{
+r_3-r_2={s h^2\over8}\bigl(D_{xx}^hH-D_{yy}^hH\bigr).
+}\tag{9}
+\]
+On the same-metric quadratic family of §C this is exactly \(r_3-r_2=s h^2A/2\), while the sum (8) depends on \(\Psi\) alone. Original off-diagonal/cubic Weyl components are obtained from the original additional plaquette/probe positions, not claimed reconstructed by only the two diagonal sources.
+
+**Exact scope:** this is a new positive **representation of an already proved original 40+2 equation** through a complete positive CAR16/Golden candidate measurement, not an independently derived compulsory Book03 Cost–Info Euler law. A G0-selected actuation, actually charged observer/reference programme and its physical statistics are still necessary to promote \(m_a\) from a mathematical event probability to a required native recorded event. Nor does this imply all 40+2 equations follow from one scalar observed identity when independent stationarity has not already been proved; those equations are inherited from the original owner and must be retained. The apparent \(h^{-2}\) reconstruction amplifies observational noise, consistent with the fixed-probe \(\Omega(h^{-4})\) independent-sample requirement in §D.
+
+The bounded exact checker now includes a completely symbolic **five-independent-site-value** source test, so this identity is not inferred by matching only the harmonic-polynomial test family.
