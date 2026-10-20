@@ -91,7 +91,7 @@
       "scope": "Bounded formal premise consumed by native preparation/variation"
     },
     "mv-span-v1": {
-      "carrier": "Finite real matrix space with admissible traceless source-neutral tests",
+      "carrier": "Real vector space of Hermitian complex matrices on one fixed finite index type, with admissible traceless source-neutral tests",
       "action": "No physical action is selected",
       "variations": "All admissible real tangent tests",
       "source": "The specified neutral span and trace pairing",
@@ -848,7 +848,11 @@
         }
       ],
       "consumer": "matter_source_ward",
-      "scope_level": "family"
+      "scope_level": "family",
+      "hypotheses": {
+        "finite_index": "One fixed finite index type n with decidable equality; the theorem is generic in n.",
+        "hermitian_data": "J1, J2, J3 and M are Hermitian complex matrices on n. Admissible S are all Hermitian matrices with Tr(S)=0 and Tr(S Jr)=0 for r=1,2,3."
+      }
     },
     {
       "id": "global_classification",
@@ -1706,6 +1710,6 @@
     }
   ],
   "registry_budget": {
-    "max_active_results": 50
+    "max_active_results": 52
   }
 }

@@ -3,9 +3,11 @@ import D0.Foundation.EmpiricalTheoryFactorization
 /-!
 # Future-complete verification memory — preserved proof intake
 
-The declarations below are copied without proof or statement changes from
+The declarations below were initially copied byte-for-byte from
 `03_FORMALIZATION/D0/Foundation/EmpiricalTheoryFactorization.lean`
 at `a8cde85432d561c06b9fcb77b77bfe471b7c5031`.
+The finite-cardinality proof now exposes its definitionally equal Boolean
+carrier for typeclass synthesis; its statement and assumptions are unchanged.
 See `02_REGISTRY/research/D0_FOUNDATION_MAIN_INTAKE_2026_10_20.md` for
 provenance, exact scope and the continuing physical consumers.
 -/
@@ -232,7 +234,8 @@ theorem hiddenBit_minimum_future_memory_four {C : Type} [Fintype C]
     (correct : ∀ s, decode (encode s) = hiddenBitExecution.profile s) :
     4 ≤ Fintype.card C := by
   have hinj := hiddenBit_sufficient_encoder_injective encode decode correct
-  simpa using (Fintype.card_le_of_injective encode hinj)
+  simpa using
+    (Fintype.card_le_of_injective (fun s : Bool × Bool => encode s) hinj)
 
 
 /-! ## Exact impossibility for an uncoupled future-memory bit

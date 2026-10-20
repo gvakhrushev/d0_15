@@ -2,14 +2,16 @@
 
 ## Delivery and consuming argument
 
-This CONTROL intake brings two completed proof sections from the published
+This CONTROL intake brings two published proof sections from the
 research branch #334 into the main formalization. It supplies the existing
 `verification-foundation` and `prospective-native-selection` synthesis cards.
 It does not retire #334 or change its raw response terminal. No new research
 task, result registry, physical selector or claim promotion is introduced.
 
-The proof sections are extracted into separately imported modules. Their
-declarations, statements, proofs and original namespaces are preserved exactly.
+The proof sections are extracted into separately imported modules. The initial
+extraction at `2ee07888` and `50f51478` preserved their declarations, statements,
+proofs and original namespaces byte-for-byte. The compiler-compatibility
+corrections recorded below retain the mathematical statements and assumptions.
 The base modules remain unchanged, including all `ActionProtocol` excess,
 non-scaling, non-attainment and homogeneous-cost boundaries delivered by #375.
 This avoids replacing one completed line of work with the other.
@@ -32,6 +34,11 @@ distinction or a complete native objective that makes idle nonoptimal. The
 consumer must supply that premise; the structural theorem is reusable as is.
 
 ## Exact published provenance
+
+These source and section pins identify the original published inputs and the
+initial byte-exact extraction. They are retained unchanged after the explicitly
+listed compiler-compatibility edits; they do not assert byte equality of the
+corrected destination proofs with the original source.
 
 ### Future memory
 
@@ -81,11 +88,37 @@ compiled. Acceptance of this intake requires the actual Ready/main release
 closure, which imports both modules through the generated `D0.All`. Its run
 and exact head belong in the integration PR's validation evidence.
 
-Local integration checks compare each copied section byte-for-byte with its
-pinned source, verify the unchanged base modules, register both modules as
-`EXPLICIT_SUPPORT`, regenerate formal views, and run the affected registry,
-work, agent and assembly guards. The local environment has no Lean toolchain;
-the required formal compilation is performed by the exact-head GitHub job.
+Initial local integration checks compared each copied section byte-for-byte
+with its pinned source, verified the unchanged base modules, registered both
+modules as `EXPLICIT_SUPPORT`, regenerated formal views, and ran the affected
+registry, work, agent and assembly guards.
+
+### Ready compiler corrections, 2026-10-20
+
+The first actual Ready Lean run
+[39407801830](https://github.com/gvakhrushev/d0_15/actions/runs/39407801830/job/118577885965)
+on `50f51478880164ed1307452d4f26794e074a65ee` failed in these two extracted
+modules. This is distinct from the earlier skipped Draft jobs and from the
+byte-exact extraction at `2ee0788868c895adcb679d8f29b27d6d8d0626d1`.
+
+- `FutureExecution`: the cardinality proof could not synthesize
+  `Fintype hiddenBitExecution.State`. Its application of
+  `Fintype.card_le_of_injective` now gives the same encoder the explicit,
+  definitionally equal domain `Bool × Bool`. This selects the existing finite
+  product instance. The theorem still quantifies over every finite memory
+  carrier `C` and every encoder/decoder satisfying the same correctness premise;
+  no instance assumption or restriction on `C` is added.
+- `ProspectiveExecution`: `prefix` was parsed as a reserved keyword in the
+  two Bellman/no-detour theorems. Its 23 bound-variable occurrences are renamed
+  consistently to `initialSegment`. This is alpha-renaming only: both theorem
+  statements, proof steps and the explicit `optimal` premise retain their
+  mathematical content.
+
+The local correction check verifies exactly these body transformations and
+preserves both base modules, the source pins, imports and namespaces. The local
+environment has no Lean toolchain. These structural corrections are not claimed
+as a successful compilation; acceptance still requires the corrected exact-head
+Ready build of `D0.All`.
 
 The subsequent physical work follows the existing
 [central roadmap](MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md#closure-roadmap-goals-reusable-inputs-and-tools).

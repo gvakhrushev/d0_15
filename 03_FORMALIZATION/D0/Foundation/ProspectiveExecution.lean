@@ -3,9 +3,11 @@ import D0.Foundation.EndogenousActionQuantum
 /-!
 # Prospective execution and exact paid-history boundaries — preserved proof intake
 
-The declarations below are copied without proof or statement changes from
+The declarations below were initially copied byte-for-byte from
 `03_FORMALIZATION/D0/Foundation/EndogenousActionQuantum.lean`
 at `bf82fb54c63bbe95aee5e459a30f17a27f576519`.
+The reserved binder spelling `prefix` is now renamed consistently to
+`initialSegment`; the mathematical statements and assumptions are unchanged.
 See `02_REGISTRY/research/D0_FOUNDATION_MAIN_INTAKE_2026_10_20.md` for
 provenance, exact scope and the continuing physical consumers.
 -/
@@ -171,19 +173,19 @@ a selected suffix by an allowed cheaper suffix reaching the SAME
 goal is impossible. -/
 theorem ProspectiveExecution.optimal_suffix
     {D : ProspectiveDynamics} (E : ProspectiveExecution D)
-    (prefix suffix alternative : List D.Action)
-    (hchosen : E.chosen = prefix ++ suffix)
-    (hprefix : D.executable E.initial prefix)
-    (halt : D.executable (D.run E.initial prefix) alternative)
-    (hgoal : E.goal (D.run (D.run E.initial prefix) alternative)) :
-    D.totalPrice (D.run E.initial prefix) suffix ≤
-      D.totalPrice (D.run E.initial prefix) alternative := by
-  have hwhole : D.executable E.initial (prefix ++ alternative) :=
-    (D.executable_append E.initial prefix alternative).2 ⟨hprefix, halt⟩
-  have hwholeGoal : E.goal (D.run E.initial (prefix ++ alternative)) := by
+    (initialSegment suffix alternative : List D.Action)
+    (hchosen : E.chosen = initialSegment ++ suffix)
+    (hprefix : D.executable E.initial initialSegment)
+    (halt : D.executable (D.run E.initial initialSegment) alternative)
+    (hgoal : E.goal (D.run (D.run E.initial initialSegment) alternative)) :
+    D.totalPrice (D.run E.initial initialSegment) suffix ≤
+      D.totalPrice (D.run E.initial initialSegment) alternative := by
+  have hwhole : D.executable E.initial (initialSegment ++ alternative) :=
+    (D.executable_append E.initial initialSegment alternative).2 ⟨hprefix, halt⟩
+  have hwholeGoal : E.goal (D.run E.initial (initialSegment ++ alternative)) := by
     rw [D.run_append]
     exact hgoal
-  have hopt := E.optimal (prefix ++ alternative) hwhole hwholeGoal
+  have hopt := E.optimal (initialSegment ++ alternative) hwhole hwholeGoal
   rw [hchosen, D.totalPrice_append, D.totalPrice_append] at hopt
   linarith
 
@@ -193,29 +195,29 @@ state when the shorter execution preserves all allowed constraints.
 This is a generated law of selection, NOT an ex-post rewriting rule. -/
 theorem ProspectiveExecution.no_positive_redundant_detour
     {D : ProspectiveDynamics} (E : ProspectiveExecution D)
-    (prefix detour suffix : List D.Action)
-    (hchosen : E.chosen = prefix ++ (detour ++ suffix))
-    (hreturn : D.run (D.run E.initial prefix) detour =
-      D.run E.initial prefix)
-    (hcost : 0 < D.totalPrice (D.run E.initial prefix) detour) :
+    (initialSegment detour suffix : List D.Action)
+    (hchosen : E.chosen = initialSegment ++ (detour ++ suffix))
+    (hreturn : D.run (D.run E.initial initialSegment) detour =
+      D.run E.initial initialSegment)
+    (hcost : 0 < D.totalPrice (D.run E.initial initialSegment) detour) :
     False := by
   have hwhole : D.executable E.initial
-      (prefix ++ (detour ++ suffix)) := by
+      (initialSegment ++ (detour ++ suffix)) := by
     simpa [hchosen] using E.chosen_executable
-  have hp := (D.executable_append E.initial prefix
+  have hp := (D.executable_append E.initial initialSegment
     (detour ++ suffix)).1 hwhole
-  have htail0 := (D.executable_append (D.run E.initial prefix)
+  have htail0 := (D.executable_append (D.run E.initial initialSegment)
     detour suffix).1 hp.2
-  have htail : D.executable (D.run E.initial prefix) suffix := by
+  have htail : D.executable (D.run E.initial initialSegment) suffix := by
     rw [← hreturn]
     exact htail0.2
-  have hgoal : E.goal (D.run (D.run E.initial prefix) suffix) := by
+  have hgoal : E.goal (D.run (D.run E.initial initialSegment) suffix) := by
     have hg : E.goal (D.run E.initial
-        (prefix ++ (detour ++ suffix))) := by
+        (initialSegment ++ (detour ++ suffix))) := by
       simpa [hchosen] using E.chosen_goal
     rw [D.run_append, D.run_append, hreturn] at hg
     exact hg
-  have hopt := E.optimal_suffix prefix (detour ++ suffix) suffix
+  have hopt := E.optimal_suffix initialSegment (detour ++ suffix) suffix
     hchosen hp.1 htail hgoal
   rw [D.totalPrice_append, hreturn] at hopt
   linarith

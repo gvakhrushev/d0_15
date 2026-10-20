@@ -1976,6 +1976,27 @@
         }
       ],
       "reported_state": "At pinned #334 9cd16820, both source checkers pass. The null-plane checker verifies proper-Lorentz basis dimension six, Ad scaling, trace-power blindness, the conditional PSD Ad-invariant Hessian result, a legal quartic class-Cost control and a positive Golden17 marker. The bare-link checker verifies P J23 P^-1=-J23 and the normalized coframe-bivector comparator. This excludes those scalar channels only; full physical record/action selection is open, and no GR application is accepted."
+    },
+    {
+      "id": "lean-memory-tangent-span",
+      "owner": "PR #353 / WRK-A4D-LEAN-MV-TANGENT-SPAN (original worker)",
+      "statement": "For every fixed finite Hermitian source triple J1,J2,J3 and Hermitian M, Tr(S M)=0 for every Hermitian traceless source-neutral S if and only if M belongs to span_R{I,J1,J2,J3}. The sources need not be linearly independent. This is the generic algebraic equivalence; it supplies no physical operator selection or matter/source/Ward identification.",
+      "interface": "mv-span-v1",
+      "outcome": "positive",
+      "kind": "lean",
+      "scope_level": "family",
+      "hypotheses": {
+        "finite_index": "One fixed finite index type n with decidable equality; the theorem is generic in n.",
+        "hermitian_data": "J1, J2, J3 and M are Hermitian complex matrices on n. Admissible S are all Hermitian matrices with Tr(S)=0 and Tr(S Jr)=0 for r=1,2,3."
+      },
+      "evidence": [
+        {
+          "ref": "304a6dd3c53b7cf3c35353fbdc40aa0444fc77ec",
+          "path": "03_FORMALIZATION/D0/Research/MemoryTangentSpan.lean",
+          "sha256": "c7b8ac25b6dbc20752e95ebe6d5220fb82170d0c6baccf51bc5416f8f47f78fa"
+        }
+      ],
+      "reported_state": "Original bounded Lean terminal submitted for CONTROL acceptance; physical instantiation remains open."
     }
   ],
   "applications": [
@@ -2004,6 +2025,31 @@
           "ref": "6dbabf6c775b7c26f73f6a84cecc1f713652a752",
           "path": "02_REGISTRY/gr_assembly/reviews/endpoint-probe-to-geometric-law.md",
           "sha256": "fe54ff42fd59626d06db4b91b55ed219fbeb6402a61a4f70ca7c46bc60d1530a"
+        }
+      }
+    },
+    {
+      "id": "lean-memory-tangent-span-to-mv-slot",
+      "result": "lean-memory-tangent-span",
+      "obligation": "mv_tangent_span",
+      "method": "direct",
+      "consumer_location": "02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md#current-route-to-general-relativity",
+      "hypothesis_map": {
+        "finite_index": {
+          "target_hypothesis": "finite_index"
+        },
+        "hermitian_data": {
+          "target_hypothesis": "hermitian_data"
+        }
+      },
+      "review": {
+        "state": "accepted",
+        "by": "Codex CONTROL independent reviewer (merge_research_intake, 2026-10-20)",
+        "digest": "6a6ee2276dd51bf6cae7f9bfa552b5e55167d3e24fe846d86b44ec0cff884d8e",
+        "decision": {
+          "ref": "16b07f9fb6abae4369e2457e28f9a0e20254b992",
+          "path": "02_REGISTRY/gr_assembly/reviews/lean-memory-tangent-span-to-mv-slot.md",
+          "sha256": "3a0a189ae64e5527334890f06ac8d559c2dd1491af568544afd2a56bde0b3533"
         }
       }
     }
