@@ -375,4 +375,52 @@ theorem hiddenBit_minimum_future_memory_four {C : Type} [Fintype C]
   have hinj := hiddenBit_sufficient_encoder_injective encode decode correct
   simpa using (Fintype.card_le_of_injective encode hinj)
 
+
+/-! ## Exact impossibility for an uncoupled future-memory bit
+
+A new hidden center label is NOT automatically an observable.  If
+existing permitted actions act only on the original source carrier and
+all admitted tests likewise observe only that carrier, adding an
+independent Bool coordinate to the raw hardware makes NO NEW future
+distinction — regardless of the number of later repeated measurements.
+
+This is a negative control for the original Golden Fin4 operator and
+the separately owned Q8 central sheet.  It is NOT an assertion that
+physical D0 is forever forbidden to admit a genuinely spin-sensitive
+Book/Dirac test; adding such a test changes the interface and quotient.
+-/
+
+/-- Unobserved central bit, not an extra primitive gate or test. -/
+def FutureExecution.uncoupledCenter (F : FutureExecution) : FutureExecution where
+  State := F.State × Bool
+  Action := F.Action
+  Test := F.Test
+  Outcome := F.Outcome
+  step := fun a s => (F.step a s.1, s.2)
+  observe := fun s q => F.observe s.1 q
+
+/-- Every original native operation leaves the newly adjoined, uncoupled
+center bit intact, and runs the SAME original source history. -/
+theorem FutureExecution.uncoupledCenter_run (F : FutureExecution)
+    (w : List F.Action) (s : F.State) (b : Bool) :
+    (F.uncoupledCenter).run w (s,b) = (F.run w s,b) := by
+  induction w generalizing s with
+  | nil => rfl
+  | cons a w ih =>
+      change (F.uncoupledCenter).run w (F.step a s,b) =
+        (F.run w (F.step a s),b)
+      exact ih (F.step a s)
+
+/-- Two different central sheets attached to the SAME original state
+have IDENTICAL responses to ALL existing admissible future tests. -/
+theorem FutureExecution.uncoupledCenter_profile_independent
+    (F : FutureExecution) (s : F.State) (b b' : Bool) :
+    (F.uncoupledCenter).profile (s,b) =
+      (F.uncoupledCenter).profile (s,b') := by
+  funext w q
+  change F.observe (((F.uncoupledCenter).run w (s,b)).1) q =
+    F.observe (((F.uncoupledCenter).run w (s,b')).1) q
+  rw [F.uncoupledCenter_run, F.uncoupledCenter_run]
+
+
 end D0.Foundation.EmpiricalTheoryFactorization
