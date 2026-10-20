@@ -167,3 +167,24 @@ It does **NOT** derive:
 **Next physical forcing step** is therefore smaller and completely concrete: compile TWO actual 8D native query words (rather than one 28-dimensional exterior lift), an endogenous efficiency coin \(z=2^{-20}\), their two positive outcomes and a reversible 2-input OR into one complete monitored-flag programme; bind its TRUE Cost−Info into G0's compulsory future-comparison law, including preparation and clock source. Then apply (9)–(12) directly to the already owned every-mesh exact Einstein+matter Euler family. Do not design another eigenmode detector or fit an Einstein coefficient.
 
 **Independent original 8D and non-diagonal finite checker:** \`02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/check_two_query_native8d_no_exterior.py\`.
+
+## 6. Paid preparation application: coherent resources from retained Golden heralds
+
+The [resource-bank composition](DETERMINANT_PREPARATION_BANK.md) now
+replaces the supplied fixed fair states by the owned coherent Golden
+parity preparation, within the declared active/addressed interface.
+It prepares42N resources per local detector, keeps every preparation
+failure and an explicit finite-cap abort, and charges preparation and
+routing before the query. Conditional on readiness, the delivered
+efficiency qubits remain coherent; this is not the prematurely measured
+coin of section4a.
+
+For a fixed common bank and one transcript-independent paid query stage,
+the full specified CQ price is `S_pre + alpha S_N`, with finite resources
+chosen so `alpha>=1/2`. Separate local banks preserve every multiplicity,
+giving `D S_full=alpha c_N DJ2` and `|alpha c_N|>0.195`.
+This is first-source transport for the complete experiment with retained
+abort outputs, not a deterministic implementation with aborts erased.
+The moving8D query, exact coherent detector, native task/Info/clock
+binding and separately priced upstream sources remain open as specified
+in that proof and its [independent review](DETERMINANT_PREPARATION_BANK_REVIEW.md).
