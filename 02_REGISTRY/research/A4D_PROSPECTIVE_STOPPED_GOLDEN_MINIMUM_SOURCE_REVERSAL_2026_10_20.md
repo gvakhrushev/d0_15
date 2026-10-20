@@ -21,8 +21,8 @@ Supply the ALREADY CONSTRUCTED field-query \`W(y)\` with real scalar compression
 t=0,\quad Dt=\gamma_h DJ_2,\quad\gamma_h={Q_0R_0\over2N_h}>0,
 \]
 \[
-V_{\rm clean}(y_0)=|r_0\rangle J,\qquad
-DV_{\rm clean}(y_0)=|r_1\rangle J\,Dt.
+V_{\rm clean}(y_0)=|0\rangle J,\qquad
+DV_{\rm clean}(y_0)=2|1\rangle J\,Dt.
 \tag{1}
 \]
 The **entire new work** and all oldRIGHT remain. O(t²) unresolved amplitude, O(t⁴) probability; so at \`Σ\` every completed port effect AND its full first jet is scalar on logical data/reference, including changes of ALL site/coframe/Lorentz/matter/preparation directions. This is the exact inherited original same-carrier theorem, not a borrowed arbitrary Born sampler. The independent protected old tape is NOT reversed by W*.
@@ -100,6 +100,69 @@ The entire actual fixed pre-report execution charge is \`T_k\` on every attempt,
 
 Equation (6) is EXACT at \`Σ\` for the value and derivative on the original quantum experiment; off-Σ is a formally associated scalar comparison law, not an asserted identity between all full quantum histories. In particular the full original pointer entropy of the finitely flagged O(t⁴) cleanup has no additional first jet at \`Σ\`; only the stopped Bernoulli sequence contributes at first order. The untouched oldRIGHT entropy supplies a fixed baseline if included.
 
+Here \(\mu_n\) is the **reporter-only** Kraft reference. Including the paid
+prefix gives word weight \(p^{n(T_k+1)+1}\), whose total mass is generally
+less than one. Equation (6) retains that prefix through \(T_k/q\); it does
+not identify the normalized reporter reference with the whole programme.
+
+### Finite retained cutoff and the full-record first-jet limit
+
+The stopped controller is almost surely finite with finite mean; it has
+no deterministic finite workspace bound. Its relation to a finite native
+execution must therefore be explicit. Cap the number of attempts at \(M\),
+retain the unresolved word \(0^M\), and charge every executed attempt.
+The words \(0^{n-1}10\), \(1\le n\le M\), have probabilities
+\(q(1-q)^{n-1}\); the unresolved word has probability \((1-q)^M\).
+No normalization conditional on success is taken.
+
+Writing \(s=1-q\), the Bernoulli chain entropy and the complete clock cost
+give the exact finite-record scalar identities
+\[
+ E N_M={1-s^M\over q},\quad
+ H_\varphi({\rm ports}_M)=H_\varphi(q){1-s^M\over q},\quad
+ S_{k,M}=(1-s^M)S_{k,\infty}.                         \tag{6a}
+\]
+The last identity includes the extra success tick of the actual reporter:
+\(C_{k,M}=(T_k+1+q)(1-s^M)/q\). The unresolved word is a different
+terminal outcome, so this finite task is not asserted to satisfy an
+obligation to obtain a success with certainty.
+
+For a fixed finite field chart on which \(q\ge q_{\min}>0\), the value
+and source tails are controlled explicitly:
+\[
+ DS_{k,M}=(1-s^M)DS_{k,\infty}
+           +M s^{M-1}S_{k,\infty}\,Dq,\qquad
+ \|D(S_{k,\infty}-S_{k,M})\|
+ \le s^M\|DS_{k,\infty}\|
+       +M s^{M-1}|S_{k,\infty}|\|Dq\|.                \tag{6b}
+\]
+Thus the full retained port records, including unresolved failures,
+converge in value and first source. A finite cap can have a different
+source sign or minimizer; an infinite-horizon minimum is not transferred
+to a finite cap without this comparison.
+
+For the remaining work, the owned cleanup gives the scalar non-clean
+effect \(r(t)I\), \(r(t)=4t^4(1-t^2)\). Its clean compression is scalar
+on every logical input. With fresh work per attempt and all earlier
+records retained, the complete port effects are exactly \(q(t)I\) and
+\((1-q(t))I\), so conditional port probabilities do not require resetting
+an unknown logical state. If the finite per-attempt pointer-work alphabet
+has size \(d\), the entropy chain rule bounds its additional conditional
+information by
+\[
+ 0\le H_\varphi({\rm work}\mid{\rm stopped\ ports})
+ \le {h_\varphi(r)+r\log_\varphi d\over q_{\min}}
+ =O(t^4|\log|t||).                                  \tag{6c}
+\]
+The same bound holds at every cap. Indeed each attempted round contributes
+at most \(h_\varphi(r)+r\log_\varphi d\), and the sum of survival
+probabilities is at most \(1/q_{\min}\). Hence the complete retained work
+adds zero first source on \(\Sigma\), including at the unbounded stopped
+limit. Equations (6a)–(6b) consequently give the stated value and first
+jet of the full specified pointer model there. These estimates are for
+fixed mesh and fixed \(k\); their constants, including \(d\), have not
+been proved uniform in the primary spatial refinement or raw216 norm.
+
 **Key mechanism:** at fixed one-shot terminal horizon \`k=1\` the pointer KL has zero first derivative because the code is matched. But when the SAME experiment has to be repeated until an actual stop, its NONZERO compulsory paid prefix \`T_k\` is incurred a random \`1/q\` times. **Kraft/code matching cannot make that real executed work free.**
 
 ## 4. The new exact SOURCE: the missing clock multiplies the already-built all42 J₂
@@ -149,9 +212,16 @@ The prior *one-shot* full-pointer minimization selects \`G^0\` or \`G^1\` and it
 \forall\,5\le T_0\le50,\quad
 \arg\min_{k\in\mathbb Z_{\ge1}}\mathcal S_k^{\rm stop}
 =\{2\},\qquad
-D\mathcal S_{2}^{\rm stop}\ne0 .
+-{T_0-3\over2p^{3/2}}\gamma_h\ne0 .
 \quad}\tag{10}
 \]
+
+This is a nonzero **multiplier of \(DJ_2\)**, not a claim of a nonzero
+Euler covector at a stationary solution. On the primary exact nonvacuum
+representatives \(DJ_2=0\) in all42 rows, and therefore
+\(D\mathcal S_2^{\rm stop}=0\) there as required. The minimization is over
+the specified constant-\(k\), fresh-work repeat protocols and their expected
+pointer price; it does not compare every admitted native controller.
 
 ### Proof without a finite arbitrary search cap
 
@@ -193,7 +263,20 @@ The actual geometric-source coefficient is then
  -p^{-3/2}\simeq-2.05817102727 .}                  \tag{11}
 \]
 
-**This proves existence of a real Golden-priced prospective task for which D_min selects a NONZERO original geometric-plus-matter FIRST source.** It does NOT prove \`5≤T_0≤50\` for the actual G0 compiled controller; its huge address/coin/Pauli operations may cost far more. For larger known \`T_0\`, the same exact objective (9) has a finite computable candidate set: \`S_k≥T_0+k\`, so every \`k>\mathcal S_2(T_0)-T_0\` is excluded. For example at T0=100, the minimum shifts to k=7 (not k=2), with a different nonzero source. No resource term has been hidden to keep k=2 optimal.
+**This proves existence of a declared Golden-priced prospective task for which the specified minimum has a NONZERO multiplier of the original geometric-plus-matter FIRST source.** It does NOT prove \`5≤T_0≤50\` for the actual G0 compiled controller; its huge address/coin/Pauli operations may cost far more. For larger known \`T_0\`, the same exact objective (9) has a finite computable candidate set: \`S_k≥T_0+k\`, so every \`k>\mathcal S_2(T_0)-T_0\` is excluded. The Decimal illustration at T0=100 finds k=7 among the first150 candidates; it is not the rational all-k certificate in (10). No resource term has been hidden to keep k=2 optimal.
+
+For an actual mesh-dependent compiled ledger \(T_{0,h}\), the selected
+integer \(k_h\) must be supplied before applying the primary-family map.
+Its exact coefficient is
+\[
+ A_h=-\gamma_h\,{q'_{k_h}\over q_{k_h}^2}
+ \left[T_{0,h}+k_h+
+ \log_\varphi{1-q_{k_h}\over p}\right].
+\]
+One must check nonvanishing, any selection ties and the required refinement
+normalization for those actual numbers. The finite candidate bound alone
+does not establish an \(h\)-uniform source transport. Moving primitive
+prices or a varying task add their own derivatives to this formula.
 
 ## 6. The last physical test is NOW genuinely about an actual prospective task
 
