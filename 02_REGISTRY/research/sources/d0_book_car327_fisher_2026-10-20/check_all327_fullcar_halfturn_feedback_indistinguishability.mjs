@@ -302,6 +302,97 @@ const sourceError=Math.abs(dSigned-sourceExpected);
 assert(maxSO2Tomography<3e-12&&maxSO2TriangleSource<3e-12&&
  maxGaugeReconstruction<3e-12&&sourceError<4e-11,
  "GLOBAL original 327-cycle Golden17 SO2 tomography or smooth source failed");
+
+// FULL ORIGINAL 327-DIMENSIONAL POSITIVE QUANTUM FISHER from ALL1287
+// complete native Golden17 conditioned triangle-marked experiments.
+// At ORIGINAL FLAT triangle holonomy one face has Fisher
+// I_Lie=4k=p^4/(6*4096) for the J23 proper Lorentz rotation.
+// On the TRUE native triangle incidence matrix d2^T of shape
+// 1287×359, its entire 359-edge Fisher is 4k d2 d2^T.
+// Its kernel is EXACTLY 32 original vertex gauge gradients; the
+// 327 physical cycles are STRICTLY positive, independent of
+// arbitrary nonuniform moving positive Book acceptance weights.
+const parent=Array.from({length:N},(_,i)=>i);
+function root(x){while(parent[x]!==x){parent[x]=parent[parent[x]];x=parent[x];}return x;}
+const chords=[],tree=[];
+for(let e=0;e<edges.length;e++){
+ const [i,j]=edges[e],ii=root(i),jj=root(j);
+ if(ii===jj)chords.push(e);
+ else{parent[ii]=jj;tree.push(e);}
+}
+assert(tree.length===32&&chords.length===327,
+ "native ABC graph 32 vertex gauges+327 independent triangle cycles");
+const chordIndex=new Map(chords.map((k,i)=>[k,i]));
+const edgeIndex=new Map(edges.map(([i,j],k)=>[i+","+j,k]));
+const cN=chords.length,Gram=Array.from({length:cN},
+ ()=>Array(cN).fill(0)),WGram=Array.from({length:cN},
+ ()=>Array(cN).fill(0));
+const nativeP=(Math.sqrt(5)-1)/2,logphi=Math.log(1/nativeP);
+const nativeK=Array.from({length:N},(_,i)=>Array.from({length:N},(_,j)=>{
+ if(!adj[i][j])return 0;
+ return nativeP*Math.exp(-logphi*(.07*Math.sin(.17*i+.23*j)**2+
+                                     .03*Math.cos(.13*i+.21*j)**2));
+}));
+const faceData=[];
+for(let a=0;a<9;a++)for(let b=9;b<20;b++)for(let c=20;c<N;c++){
+ const orig=[
+  [edgeIndex.get(a+","+b),+1],
+  [edgeIndex.get(b+","+c),+1],
+  [edgeIndex.get(a+","+c),-1]
+ ];
+ const sparse=orig.filter(([e])=>chordIndex.has(e))
+     .map(([e,s])=>[chordIndex.get(e),s]);
+ const w=nativeK[a][b]*nativeK[b][c]*nativeK[c][a];
+ faceData.push({sparse,orig,w});
+}
+const totalW=faceData.reduce((s,v)=>s+v.w,0);
+let minBookFaceWeight=Infinity,maxBookFaceWeight=0;
+for(const {sparse,w} of faceData){
+ const prob=w/totalW;
+ minBookFaceWeight=Math.min(minBookFaceWeight,prob);
+ maxBookFaceWeight=Math.max(maxBookFaceWeight,prob);
+ for(const [i,sgnI] of sparse)for(const [j,sgnJ] of sparse){
+  Gram[i][j]+=sgnI*sgnJ;
+  WGram[i][j]+=prob*sgnI*sgnJ;
+ }
+}
+function strictCholesky(A){
+ const n=A.length,L=Array.from({length:n},()=>Array(n).fill(0));
+ let min=Infinity,max=0;
+ for(let i=0;i<n;i++)for(let j=0;j<=i;j++){
+  let x=A[i][j];
+  for(let z=0;z<j;z++)x-=L[i][z]*L[j][z];
+  if(i===j){
+   assert(x>1e-14,"original all327 phase triangle Fisher not full rank");
+   L[i][j]=Math.sqrt(x);
+   min=Math.min(min,L[i][j]);max=Math.max(max,L[i][j]);
+  }else L[i][j]=x/L[j][j];
+ }
+ return {min,max};
+}
+const unitChol=strictCholesky(Gram),
+      paidChol=strictCholesky(WGram);
+let maxGradientFaceError=0;
+const vertexPotential=Array.from({length:N},(_,i)=>
+ .17*Math.sin(i*.13)+.34*Math.cos(i*.21));
+for(const face of faceData){
+ const s=face.orig.reduce((v,[edge,sign])=>{
+  const [i,j]=edges[edge];return v+sign*(vertexPotential[i]-vertexPotential[j]);
+ },0);
+ maxGradientFaceError=Math.max(maxGradientFaceError,Math.abs(s));
+}
+assert(maxGradientFaceError<6e-16,
+ "all1287 original triangle Fisher should be blind to original 32 site gauge gradients");
+const lStep=.0002;
+const qqp=completeGolden17(lStep),qqm=completeGolden17(-lStep),
+      qq0=completeGolden17(0);
+const fisherOneFace=qq0.reduce((z,v,i)=>{
+ const d=(qqp[i]-qqm[i])/(2*lStep);
+ return z+(v>0?d*d/v:0);
+},0);
+assert(Math.abs(fisherOneFace-4*kGolden)<5e-12,
+ "native complete 17 face mark Fisher per J23 Lie equals original 4k");
+const minConditionalFaceFisher=4*kGolden*minBookFaceWeight;
 console.log(JSON.stringify({
  result:"PASS_GLOBAL_ALL327_FULLCAR16_F_SQUARING_Z2_INDISTINGUISHABILITY",
  actualNativeCarrier:{sceneVertices:33,fullOriginalDirectedEdges:718,
@@ -317,6 +408,18 @@ console.log(JSON.stringify({
    maxRecoveredActual1287FaceHolonomyError:maxSO2Tomography,
    maxOriginal1287TriangleCochainRightInverseError:maxSO2TriangleSource,
    maxOriginal718EdgePhaseGaugeReconstructionError:maxGaugeReconstruction,
+   all327LocalGolden17Fisher:{fullRankOnChordGauge:cN,
+    originalGaugeKernel:tree.length,originalFaceCount:faceData.length,
+    singleFaceAnalyticJ23Fisher:4*kGolden,
+    singleFaceFiniteDifferenceFisher:fisherOneFace,
+    unweightedTriangleGramCholesky:unitChol,
+    trueNonuniformBookTriangleFlowCholesky:paidChol,
+    minimumPositiveNonuniformBookFaceWeight:minBookFaceWeight,
+    maximumPositiveNonuniformBookFaceWeight:maxBookFaceWeight,
+    positiveFisherWeightFloor:minConditionalFaceFisher,
+    pureOriginalGaugeFisherSourceError:maxGradientFaceError,
+    movingBookWeightsCannotRemoveConditionalFisherIfPositive:true},
+
    nearFlatSignedLorentzLinearCoefficient:sourceExpected,
    nearFlatSignedLorentzSourceError:sourceError,
    globalDecoderSmoothExceptAtCompactPiHalfturn:true,
