@@ -499,4 +499,34 @@ theorem nativeQ8RecordedProgram_futureMemoryAtLeastFour
     (Fintype.card_le_of_injective encode hinj)
 
 
+/-! ## The decisive MDL obstruction: commutative primitive counts lose truth
+
+Both actual eight-gate Q8 programmes have EXACTLY the same scalar
+generator inventory (four local i, four common j), hence the same
+strict primitive sum if their respective gate costs are label-only
+and context independent.  Any putative code depending SOLELY on this
+commutative two-count inventory gives the same prediction for both.
+The ORIGINAL Golden order port does not. Consequently an EXACT
+future-sufficient MDL description must encode an additional ORDER
+distinction, even after primitive input costs are fixed canonically.
+-/
+
+/-- No scalar predictor of the original Q8 primitive-gate inventory
+can reproduce both actual Golden order-response distributions. -/
+theorem originalQ8InventoryCannotPredictGolden :
+    ¬ ∃ forecast : ℕ → ℕ → ℝ,
+      forecast originalQ8OrderWord.count_true
+          originalQ8OrderWord.count_false = nativeQ8ProgramPort true ∧
+      forecast originalQ8IdentityWord.count_true
+          originalQ8IdentityWord.count_false = nativeQ8ProgramPort false := by
+  rintro ⟨forecast,ordered,grouped⟩
+  have h1 : originalQ8OrderWord.count_true = 4 := by decide
+  have h2 : originalQ8OrderWord.count_false = 4 := by decide
+  have h3 : originalQ8IdentityWord.count_true = 4 := by decide
+  have h4 : originalQ8IdentityWord.count_false = 4 := by decide
+  rw [h1,h2] at ordered
+  rw [h3,h4] at grouped
+  exact nativeQ8ProgramPort_grouped_ne_ordered (grouped.symm.trans ordered)
+
+
 end D0.Representation.OrderMemoryControl
