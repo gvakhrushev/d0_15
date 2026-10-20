@@ -248,6 +248,30 @@ check(Math.abs(optimalPos-optimalNeg)<1e-13,
  "ANY label-reassignable original F/R code optimal COST is REVERSAL EVEN");
 const distinctPairs=golden17(.19);
 check(distinctPairs[8]!==distinctPairs[9],"orientation reversal really swaps two unequal native J23 outcomes");
+// EXACT finite Golden/F/R CODE OPTIMUM CUSP at a native positive record.
+// The 12 signed Golden marker outcomes are equal at t=0; one original
+// marked pair splits linearly. Within this true 17-word admissible prefix
+// codebook, the label-reassignable optimal code gives the growing J+
+// native cost 7 and shrinking J- cost9 (reversed for t<0). Therefore
+// optimalCodeValue(q(t))=V0−2sqrt(2)c |t|+O(t²), c=Bell p^4/24.
+// This is a real nondifferentiable native F/R EXPECTED CODE statistic,
+// not a proof that global fundamental M1 Dmin chooses this codebook.
+const assignCosts=theta=>{
+ const q=golden17(theta),ids=Array.from({length:17},(_,i)=>i)
+  .sort((a,b)=>q[b]-q[a]);
+ return {positive:costs[ids.indexOf(8)],negative:costs[ids.indexOf(9)]};
+};
+const mapPlus=assignCosts(1e-5),mapMinus=assignCosts(-1e-5);
+check(mapPlus.positive===7&&mapPlus.negative===9&&
+ mapMinus.positive===9&&mapMinus.negative===7,
+ "TRUE Golden17 mark labels swap 7/9 original F/R code lengths under reversal");
+const theoreticalCusp=-2*Math.SQRT2*c,codeAtZero=optimalCodeValue(golden17(0));
+const left=(codeAtZero-optimalCodeValue(golden17(-1e-5)))/(1e-5);
+const right=(optimalCodeValue(golden17(1e-5))-codeAtZero)/(1e-5);
+check(left>0&&right<0&&Math.abs(right-theoreticalCusp)<1e-10&&
+ Math.abs(left+right)<1e-10,
+ "actual native F/R optimally assigned code has strict even |t| cusp and no ordinary Euler derivative at flat geometry");
+
 // A fixed asymmetric labelled code CAN produce an odd cost; that is an
 // INDEPENDENT semantic/orientation rule, not a probability-only Dmin law.
 // Label costs 1 vs 2 using original F/R (other native outcomes share baseline).
@@ -273,7 +297,10 @@ const source={bookZ:R.Z,fineZ:R.fineZ,pointerMoving:R.pointerMoving,
  nativeFRCode:{codewords:leaves,sortedCosts:costs,
  optimalCostAtPlus:optimalPos,optimalCostAtMinus:optimalNeg,
  probabilityOnlyOptimalParityResidual:optimalPos-optimalNeg,
- orientationLabelledSemanticCostContrast:oddActual},
+ orientationLabelledSemanticCostContrast:oddActual,
+ truePrefixCodeCusp:{codeValueAtFlat:codeAtZero,theoreticalSlopeRight:theoreticalCusp,
+  measuredSlopeRight:right,measuredSlopeLeft:left,
+  assignedAtPlus:mapPlus,assignedAtMinus:mapMinus}},
  actualFull128PortMismatch:p**3,actualFull128PortMismatchChecked:portCode};
 console.log(JSON.stringify({
  status:"PASS_ORIGINAL_FULL143480_BOOK_GOLDEN_CONDITIONAL_COST_INFO_AND_SIGNED_SOURCE",
