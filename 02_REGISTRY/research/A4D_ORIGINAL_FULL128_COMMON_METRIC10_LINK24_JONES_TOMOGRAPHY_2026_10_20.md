@@ -88,15 +88,15 @@ PIN37=[0,27,91,123,1211,49,15674,65,19,2235,89,105,11771,185,
        73,2280,2448,6267,2536,2544,3096,3355,7419,3387,3513]
 \`\`\`
 
-Exact algebraic field reductions use \(a^4+a^2-1=0\), \(p=a^2\), and Fourier \(i^2+1=0\), at the legal characteristic-root pairs \((q,a,i)=(101,27,10),(1009,226,469),(4001,842,899)\). Full Walsh, both Golden ports, true root/Sylvester derivatives and all40 Kraus Ward checks are retained. Modular determinants of these ACTUAL square probability Jacobians:
+Exact algebraic field reductions use \(a^4+a^2-1=0\), \(p=a^2\), and Fourier \(i^2+1=0\), at the legal characteristic-root pairs \((q,a,i)=(101,27,10),(1009,226,469),(4001,842,899)\). Full Walsh, both Golden ports, true root/Sylvester derivatives and all40 Kraus Ward checks are retained. Modular determinants of the **physically normalized** square probability Jacobians (the Jones vector used in the algebraic code is divided by √2, so its score jets carry an exact factor 1/2):
 
 | prime | determinant metric10+link24 (34×34) | determinant metric10+boost3+link24 (37×37) |
 |---:|---:|---:|
-| 101 | 4 | 98 |
-| 1009 | 684 | 676 |
-| 4001 | 1449 | 3208 |
+| 101 | **52** | **33** |
+| 1009 | **746** | **250** |
+| 4001 | **2021** | **794** |
 
-Thus the actual characteristic-zero algebraic determinants are NONZERO. The metric+link differential has exact rank34; the full raw40 differential has rank at least37 from the 37×37 minor and at most37 from the exact three SO3 gauge nulls, hence **rank37 exactly**. The single preparation/single Fourier mode/same-field two-round process resolves all 10 metric and all 24 link directions jointly.
+The earlier unnormalized-Jones exploratory values (4/98, 684/676, 1449/3208 for q=101/1009/4001 respectively) differ exactly by 2^(-34) and 2^(-37) and are NOT the normalized Born probability determinants. This factor has now been corrected and the full 40-column source plus 34/37 ranks independently rerun on all three characteristics. Thus the actual characteristic-zero algebraic determinants are NONZERO. The metric+link differential has exact rank34; the full raw40 differential has rank at least37 from the 37×37 minor and at most37 from the exact three SO3 gauge nulls, hence **rank37 exactly**. The single preparation/single Fourier mode/same-field two-round process resolves all 10 metric and all 24 link directions jointly.
 
 ## 5. Strongest genuinely noncircular corollary and remaining native action gate
 
