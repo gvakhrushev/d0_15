@@ -92,13 +92,15 @@ check("boost mixed log-odds",
 # differences are NOT nulled.
 a,b,c,d=s.symbols("a b c d",real=True)
 X=N2
-U1=s.eye(4)+r*a*X
-U2=s.eye(4)+r*b*X
-U3inv=(s.eye(4)+r*c*X).inv()
-U4inv=(s.eye(4)+r*d*X).inv()
+U1=exp_nil(X,r*a)
+U2=exp_nil(X,r*b)
+U3inv=exp_nil(X,-r*c)
+U4inv=exp_nil(X,-r*d)
 Pface=U1*U2*U3inv*U4inv
 check("original inhomogeneous oriented based plaquette first jet",
       s.simplify(s.diff(Pface,r).subs(r,0)-(a+b-c-d)*X)==s.zeros(4))
+check("original homogeneous based plaquette EXACT identity, all orders",
+      s.simplify(Pface.subs({c:a,d:b})-s.eye(4))==s.zeros(4))
 check("original homogeneous based plaquette no direct link jet",
       s.diff(Pface,r).subs({r:0,c:a,d:b})==s.zeros(4))
 
