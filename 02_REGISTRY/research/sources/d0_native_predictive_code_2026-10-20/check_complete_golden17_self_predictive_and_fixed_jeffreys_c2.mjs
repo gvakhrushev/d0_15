@@ -187,6 +187,40 @@ let reverseHess=0;for(let i=0;i<17;i++)
 const analyticalHessInverse=1291/(72*mark);
 check(Math.abs(reverseHess/analyticalHessInverse-1)<2e-5,
  "all17 true original Golden marker jets imply EXACT nonzero finite-clock resource bound");
+
+// A genuinely FORWARD-ONLY Golden17 prediction COMPILER (all 17 support
+// labels kept), NOT a clairvoyant mu=q field-dependent programmer.
+// Universal KT/Jeffreys q_next(r)=(n_r+1/2)/(T+17/2).
+// Its cumulative code is EXACTLY the fixed Dirichlet(1/2)^17 Bayesian
+// mixture (a finite native positive online process), up to one
+// normalization constant and machine roundoff. Failure labels still count.
+const nOnline=8192,nCounts=Array(17).fill(0);let onlineLogWeight=0;
+const onlineSequence=Array.from({length:nOnline},(_,i)=>
+  (i%4096===0)?Math.floor(i/4096):16);
+for(let t=0;t<nOnline;t++){
+ const idx=onlineSequence[t];
+ const prob=(nCounts[idx]+.5)/(t+17/2);
+ check(prob>0&&prob<1,"original 17-label forward KT complete predictive probability");
+ onlineLogWeight+=Math.log(prob);
+ nCounts[idx]++;
+}
+const logHalfGamma=k=>{
+ let out=.5*Math.log(Math.PI);
+ for(let j=0;j<k;j++)out+=Math.log(j+.5);
+ return out;
+};
+let mixtureLogWeight=logHalfGamma(8)-logHalfGamma(nOnline+8);
+for(const nr of nCounts)mixtureLogWeight+=logHalfGamma(nr)-logHalfGamma(0);
+check(Math.abs(onlineLogWeight-mixtureLogWeight)<5e-9,
+ "EXACT same FULL17 Golden online predictive code and fixed Jeffreys-mixture whole-history weight");
+check(nCounts.reduce((a,b)=>a+b,0)===nOnline&&nCounts[16]===nOnline-2,
+ "all original Bell FAILURES counted with NO conditional deletion or memory reset");
+const ktOnline={n:nOnline,observedBellFailures:nCounts[16],
+ actualRetainedCompleteCounts:nCounts,
+ scoreGoldenUnits:-onlineLogWeight/ell,
+ posteriorPredictiveProbabilityOfAnotherBellFailure:
+   (nCounts[16]+.5)/(nOnline+17/2),
+ exactFixedMixtureResidual:onlineLogWeight-mixtureLogWeight};
 console.log(JSON.stringify({
  status:"PASS_ORIGINAL_GOLDEN17_ENDOGENOUS_CODE_AND_JEFFREYS_FIXED_C2",
  genuineRecord:{positiveLabels:17,BellFailure:q0[16],
@@ -201,6 +235,7 @@ console.log(JSON.stringify({
    exactStationaryHistorySchur:reduced,
    trueBookWeightedVerticalHessian:goldenShellHess,
    finiteDifferenceVerticalHessian:dd},
+ forwardOnlyFullGolden17Predictor:ktOnline,
  fixedReferenceJeffreys:{prior:"intrinsic Fisher volume Dirichlet(1/2), NOT a physical Book-selected code",
     binomialSourceTable:KT,
     nativeGoldenConditionedJ23Probability:actualSignedConditioned,
