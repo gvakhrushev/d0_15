@@ -230,6 +230,7 @@ import D0.Foundation.DetectionCapabilityBoundary
 import D0.Foundation.EndogenousActionQuantum
 import D0.Foundation.EquivariantM1
 import D0.Foundation.FrobeniusDivision3D
+import D0.Foundation.FutureExecution
 import D0.Foundation.GeneralComparisonGrammar
 import D0.Foundation.GraphSpaceNoIsometry
 import D0.Foundation.IndependentDetectionRepairGrammar
@@ -251,6 +252,7 @@ import D0.Foundation.Omega8Center
 import D0.Foundation.PartitionAlgebra
 import D0.Foundation.PhysicalComparisonRepresentation
 import D0.Foundation.PopperianBootstrap
+import D0.Foundation.ProspectiveExecution
 import D0.Foundation.Q8Anisotropy
 import D0.Foundation.RelationalRepairClosure
 import D0.Foundation.SceneCountReduction
