@@ -163,6 +163,83 @@ This resolves an important **same-carrier normalization concern**. The already o
 
 Do **not** infer the finite-\(t\) J2\(\to\)HJR positive action identity from this constant coframe map: the full moving scene dressing, independent observer variations and complete oldRIGHT/clock/work are still missing. What is excluded is the attempt to repair the **already exact flat-source collision** by a mere constant change of the physically admissible coframe normalization.
 
+
+
+### 2.3. NEW operator-level extension to PERIODIC OR OPEN rectangular shifts: no reliance on Fourier diagonalization or a torus
+
+The previous exact bound might be evaded by objecting that the positive Brinkmann family has an unwrapped time and a transverse Dirichlet collar whereas its flat-HJR Fourier certificate uses periodic shifts. Here is a second exact result **directly on a full finite product box**, with each of its four original coordinate shifts chosen independently as either a length-L periodic unitary or the standard length-L one-sided open/Dirichlet truncated shift. We keep every interior/boundary site and all original CAR16 grades; a fixed Dirichlet coframe collar makes the admissibility of a **global** coframe variation an additional physical boundary condition (see below).
+
+Let \(\mathcal H_{\rm site}=(\mathbb C^L)^{\otimes4}\), \(N=L^4\). On the same positive observer CAR16 space, write
+\[
+\delta_r=S_r-I,\quad d=\sum_r\sqrt{\rho_r}\,C_r\delta_r,\quad
+D=d+d^\dagger,\quad
+\Delta=D^2.
+\]
+The genuinely shifted adjoint of an open unilateral shift satisfies \(S_r^\dagger\ne S_r^{-1}\); this proof retains it EXACTLY. For different coordinate directions all \(\delta_r,\delta_s^\dagger\) commute; the genuine CAR relations give the **exact positive operator decomposition**
+\[
+\boxed{
+\Delta_{\boldsymbol\rho}=\sum_r\rho_r\Delta_r,\quad
+\Delta_r=C_r I_r\,\delta_r\delta_r^\dagger+
+I_r C_r\,\delta_r^\dagger\delta_r
+\succeq0,\qquad
+\|\Delta_r\|\le4,\quad \|\Delta\|\le16.
+}\tag{B1}
+\]
+The two CAR occupancy projectors have exact trace 8 each. Since every original shift has zero diagonal when \(L\ge2\),
+\[
+\operatorname{Tr}_{\rm site}(\delta_r^\dagger\delta_r)
+=N+\operatorname{rank}(S_r)
+=\begin{cases}
+2N,&S_r\text{ periodic},\\
+(2-L^{-1})N,&S_r\text{ unilateral open},
+\end{cases}
+\]
+and so the entire original site×CAR trace is
+\[
+\boxed{
+\operatorname{Tr}\Delta_r
+=16\,\operatorname{Tr}_{\rm site}(\delta_r^\dagger\delta_r)
+\ge16(2-L^{-1})N.
+}\tag{B2}
+\]
+No normality of the open shift, independent diagonalization by a discrete Fourier transform, or boundaryless exterior calculus is assumed.
+
+Use the **unchanged same algebraic conditional original HJR trace action** (2) on this actual full finite Hilbert space, with \(B=I-\alpha\Delta,\ F=1-z+zB^m\), global \(Z=\operatorname{Tr}B^m\), feedback \(-128\operatorname{Tr}\log F\), and any genuine fixedRIGHT normalized preparation. If \(0<\rho_r\le1\), every eigenvalue \(\mu\) of \(\Delta\) obeys \(0\le\mu\le16\); hence \(B>79/80\) and \(B^{m-1}>1/500000\) by the exact same mα/Golden rational inequality.
+
+The operators \(\Delta_r\) commute with \(\Delta\) in this separable product construction; equivalently the following trace estimates can be obtained from positive spectral functional calculus. For every independent coframe variation, at fixed internal state,
+\[
+\begin{aligned}
+\partial_{\rho_r}H
+&=-\frac{\operatorname{Tr}(\Delta_rB^{m-1})}
+ {\operatorname{Tr}B^m}
+\ge-\frac{4}{79/80}=-\frac{320}{79},\\
+\partial_{\rho_r}J
+&=128\beta z\,\operatorname{Tr}
+\left(\frac{\Delta_rB^{m-1}}{1-z+zB^m}\right)\\
+&\ge \frac{128\cdot(3/4)z}{500000}
+\operatorname{Tr}\Delta_r
+\ge \frac3{512000000}\left(1-\frac1{2L}\right)N.
+\end{aligned}
+\tag{B3}
+\]
+The original Rayleigh derivative is \(\operatorname{Tr}M^\dagger\Delta_rM\ge0\), with either bare stationary-preparation envelope or the actual **full**-internals envelope when testing an additive physically complete price. Thus on EVERY one of these exact original periodic/open finite shift boxes, for any positive coframe scales \(0<\rho_s\le1\) and any genuinely bare-R preparation-stationary fixedRIGHT128 state,
+\[
+\boxed{
+L^{-4}\partial_{\rho_r}S^{\rm bare\,HJR}
+\ge
+\underbrace{\frac3{512000000}\left(1-\frac1{2L}\right)
+-\frac{320}{79L^4}}_{c_{r,L}}
+\ge c_{\rm open}:=
+\frac{406303}{4\cdot20709376000000}
+>4.9\times10^{-9},\quad L\ge256.
+}\tag{B4}
+\]
+The **source is strictly nonzero in all FOUR original coframe legs even without any periodic Fourier normality**, and the all-role radial sum exceeds \(4c_{\rm open}>1.96\times10^{-8}\) per site. The original Palatini star remains identically zero at \(U=I\) on any such site/face carrier.
+
+This kills the simple boundary-change escape **for the unchanged full-trace HJR functional**: periodic vs standard open/Dirichlet shift choice alone does not restore a stationary flat Einstein vacuum, and rank128 occupancy cannot do so either. It remains important NOT to overclaim the full original Brinkmann collar physical boundary problem: when boundary coframe values are externally fixed, a variation of **all** boundary and interior coframes together need not be an admissible Euler tangent. To turn (B4) into an exact interior-only no-go on that specific fixed collar one must redo the \(\partial_\rho\) test for an *admissible interior-supported* variation, including moving boundary/work/traction terms. That further tangent-specific bridge is NOT provided by (B4). Conversely, the conditional full-HJR result itself cannot invoke a torus-only Fourier restriction to excuse the bulk pressure on a physically admitted open global coframe chart.
+
+This operator extension is novel relative to the prior periodic-rank Fourier certificate: it uses the literal shifted TRUE positive adjoint, a fullCAR16 occupancy trace and a positive-operator spectral bound to cover the physically relevant open-shift type **without re-solving the continuum Einstein equation**.
+
 ## 3. NEW local family theorem: no continuous direct same-action lift of ALL small Einstein waves
 
 The already accepted same-metric positive configured Golden-J2 theorem supplies a genuine **one-parameter subfamily of its infinite-dimensional exact NONVACUUM solutions**. For any sufficiently small fixed smooth \(\Psi_0\not\equiv\text{constant}\) and harmonic wave \(W_0(u,x,y)\not\equiv0\), let, for real small \(t\),
