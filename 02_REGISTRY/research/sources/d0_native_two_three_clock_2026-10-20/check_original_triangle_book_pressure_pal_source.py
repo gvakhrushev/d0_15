@@ -78,7 +78,15 @@ print("     weigh two fixed Role faces by a factor phi; raw weighted star != bar
 # Exact field source of native bulk triangle factor for uniform Cost t.
 # W(t)=W(0)*exp(-3*t*ln(phi)), so Dlog W=-3*ln(phi) exactly.
 ell=log(phi)
-assert abs((-3*ell)-(-3*ell))<1e-15
-print("PASS uniform Cost source D_t W = -3 ln(phi)*W (analytic identity)")
+from math import exp
+def tick_W(t):
+ factor=exp(-ell*t)
+ return 3*sum((float(f+r)*factor**3 for f,r in pairs))/7722
+h=1e-4
+first=(tick_W(h)-tick_W(-h))/(2*h)
+second=(tick_W(h)-2*tick_W(0)+tick_W(-h))/(h*h)
+assert abs(first+3*ell*float(W))<1e-8
+assert abs(second-9*ell*ell*float(W))<1e-7
+print("PASS ALL 7722 genuine weighted loop sums: D W = -3 ln(phi)*W, D2W=9 ln(phi)^2 W")
 print("FIREWALL: weighted marked conditional observable is NOT proven")
 print("          compulsory selected original H+J+R Einstein-CAR action")
