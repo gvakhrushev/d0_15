@@ -179,8 +179,12 @@ must(Math.abs(Wshift*gammaScaled-W*Gamma)<2e-12,
 // its complete moving first source is an ACTUAL conditional three-tick
 // native Cost+Info score rather than an arbitrary Weyl gauge field.
 const tSites=[-.12,.17,.32];
-const Ksites=tSites.map((ti,i)=>K.map((row,u)=>row.map((v,j)=>
-   row[j]*Math.exp(((((u+2*j+i)%7)-3)*.037)+.019*ti)));
+const Ksites=tSites.map((ti,i)=>
+ K.map((row,u)=>row.map((value,j)=>{
+  const exponent=((((u+2*j+i)%7)-3)*.037)+.019*ti;
+  return value*Math.exp(exponent);
+ }))
+);
 const dSites=Ksites.map((_,i)=>K.map((row,u)=>row.map((val,v)=>
    part(u)===part(v)?0:(((u*u+3*v+5*i)%13)-6)/17));
 function closed3Source(Ka,ds){
