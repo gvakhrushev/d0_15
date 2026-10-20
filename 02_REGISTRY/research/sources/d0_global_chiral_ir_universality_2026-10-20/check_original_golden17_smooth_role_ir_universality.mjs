@@ -71,7 +71,7 @@ const G=[
  add4(eij(0,2),eij(2,1)),add4(eij(0,3),eij(3,1)),
  add4(eij(2,3),eij(3,2),-1),add4(eij(1,1),eij(0,0),-1)
 ];
-const eta=[[0,1,0,0],[1,0,0,0],[0,0,-1,0],[0,0,0,-1]];
+const etaLorentz6=[[0,1,0,0],[1,0,0,0],[0,0,-1,0],[0,0,0,-1]];
 const tr4=A=>A[0].map((_,j)=>A.map(r=>r[j]));
 const err4=(A,B)=>Math.max(...A.flatMap((r,i)=>r.map((v,j)=>Math.abs(v-B[i][j]))));
 const exp4=(A,t)=>{
@@ -82,7 +82,7 @@ const exp4=(A,t)=>{
 const sixChecks=[];
 for(let j=0;j<6;j++){
  let X=G[j],baseNorm=fro(X,X)/2;
- need(err4(add4(mul4(tr4(X),eta),mul4(eta,X)),zer4())<1e-14,
+ need(err4(add4(mul4(tr4(X),etaLorentz6),mul4(etaLorentz6,X)),zer4())<1e-14,
    "ALL six actual original null Lorentz Lie generators metric skew");
  for(let tt of [.025,.05,.08]){
   let U=exp4(X,tt),m=tra(U)/4,norm=fro(U,U)/4;
