@@ -149,3 +149,30 @@ R_0(L)\longrightarrow\frac{\nu^2\pi^2}{8T^2}
 Therefore the **two required actual H+J cancellation rows remain nonzero uniformly in the refining spectral preparation limit**; a finite ten-variable IFT does not make them negligible by letting \(h\to0\).
 
 This is an EXACT **necessary compatibility theorem on an explicitly stated conditional original Dirac/observer chart**, not a derivation that actual G0 physically selects the H+J+R action or that all ten numerical rows were certified. The observer normalization and variation must be the TRUE existing whitened fixedGram law (not raw M†M under an untransported observer), and both coframe and observer tangents must be admitted. The signed physical Einstein–CAR right-hand side, actual full-clock/source/Cost price and uniform raw216 remain OPEN. \`GR_closed=false\`.
+
+
+## V. STRONGER native exact spectrum-selection NO-GO: even the LOWEST 128 spectral modes have a FLAT non-gauge preparation direction
+
+The original rank128 saddle in §II can be changed by the seemingly natural physical prescription "prepare the 128 LOWEST positive-adjoint eigenmodes" to try to obtain a genuine **stable fixedRIGHT minimum**. For precisely the already-owned **full original periodic u** protected sector, this does NOT give a **strict** minimum or an invertible prep Hessian either.
+
+Let \(g=2\) for the exact low grades (b0,b1) or \(g=4\) for the entire quartet. In the original \(\Delta_\parallel=\nu^2\delta^\dagger\delta\otimes I_g\), the EXACT energy-zero band k=0 has multiplicity \(g\). Each nonzero non-Nyquist Fourier band \(k,L-k\) has multiplicity \(2g\), regardless of actual pp-wave \(H,K\). Thus the number of spectral states with all energy bands FULL up through some nontrivial k < L/2 is
+\[
+\boxed{N_{\le k}=g(1+2k)=g\pmod{2g}.}\tag{15}
+\]
+For the already owned RIGHT rank128,
+\[
+g=2:\quad128=0\pmod4\ne2;\qquad
+g=4:\quad128=0\pmod8\ne4.
+\]
+On any sufficiently large protected u-lattice with \(gL>128\) and with the 128th cutoff BELOW the possible Nyquist band, the **128 lowest eigenstates necessarily CUT one exact degenerate band**: some eigenvectors in that band are occupied and some are unoccupied, with the SAME \(\lambda_*>0\). A fixedRIGHT preserving left unitary rotation between one occupied \(\phi_{\rm in}\) and one unoccupied \(\phi_{\rm out}\) of that SAME eigenspace satisfies
+\[
+\boxed{R(\theta)\equiv R(0)\quad \forall\theta,\quad
+ D^2_{MM}R[\dot M,\cdot]=0\text{ along the occupied/unoccupied rotation}.}\tag{16}
+\]
+This is a true change of the occupied projector \(\rho=MM^\dagger\), not a right-reference basis gauge. It is an UNPAID continuum of equally good positive-energy low-grade preparations that the actual protected Dirac / R cannot distinguish.
+
+**Exact native fixtures:** for the minimal low-grade \(L_u=65\), protected dimension \(2L_u=130\), fill 2 k0 modes + 31 complete fourfold k=1,...,31 bands = 126, then only 2 of the 4 k=32,33 modes are required to reach 128. On the original full quartet \(L_u=33\), protected dimension \(4L_u=132\), fill 4 k0 modes + 15 complete eightfold bands =124, then only 4 of the 8 k=16,17 modes. Both produce exact zero source/Hessian directions for R, and both obey same protected pp-wave intertwiner for arbitrary nontrivial curved H,K. The below-Nyquist hypothesis is satisfied at BOTH explicit native boundary fixtures. For general L>65 (low grade) or L>33 (quartet), k=32 or k=16 respectively stays below Nyquist, so same band-cut argument holds. The FULL-sector exceptions \(L_u=64\) low-grade or \(L_u=32\) quartet have no *unoccupied* protected directions, hence are not covered by this positive minimum degeneracy theorem; the real full16 complement still needs its actual own check.
+
+**Consequence for "exact ten-variable IFT":** after extending its gauge-fixed 10×10 matrix to include the ACTUAL admissible fixedRIGHT128 LEFT preparation variations, the chosen nonzero-only preparation of §II contributes a strict negative mode; the natural protected-energy MINIMIZER here instead contributes a physical zero mode. Hence a 10×10 interval-invertibility certificate restricted to ten chosen interior variables is **NOT** by itself an invertibility certificate of the complete native full-\(H+J+R\) preparation-plus-geometry/observer Hessian. A generalized Morse–Bott / Lyapunov–Schmidt treatment can accommodate the zero band, and a true critical saddle can still admit an indefinite IFT on a suitably transverse selected slice. But an actual **physically compulsory selector** of a unique stable preparation must be specified and paid to remove these modes; the same native \(H,K\) curvature profile cannot lift them because \(\Delta_\parallel\) is exactly H,K-independent.
+
+**Repro:** new exact band-multiplicity independent checker \`sources/d0_curved_native_preparation_2026-10-20/check_native_reference128_spectral_cut_flat_mode.py\`; it checks the genuinely occupied/unoccupied equal-eigenvalue Fourier pair and congruence obstruction in BOTH original g2,L65 and g4,L33 sectors. The proof is elementary discrete Fourier representation theory, not a numeric eigenvalue estimate or a new physical assumption. \`GR_closed=false\`.
