@@ -9684,3 +9684,16 @@ have zero first source on Sigma. The history theorem retains this scoped
 negative. Its only relevant extension would use a derived future task
 and actual continuation price that changes the comparison, or a different
 programme; a nonzero-source requirement cannot choose G^2 by definition.
+
+
+### 20 October: full finite-future price, true integer implementation minimum, and the Beatty input test
+
+The [same-owner synthesis](sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/FINITE_FUTURE_DETERMINANT_MINIMUM.md) constructs an explicit no-click experiment for the original finite-z determinant. The fixed 8D native units retain their rank2 return cut, both bands and every actual multiplicity. Complete monitored two-attempt price is a+bq-(1+q)h_phi(q), including unresolved output and all conditional quantum work.
+
+A nonempty class of uniform implementations with nonnegative integer setup/first-stage and continuation costs has an attained, locally constant minimizing cost pair at the original irrational q0. Thus the derivative of the actual minimized value is c DJ2. Exact rational inequalities prove |c|>0.39 for EVERY integer winning continuation price; the common-attempt version holds for every finite N>=2, including different integer setup costs. This remains uniform under growth of lattice multiplicity. The collective variant has an independent all-N algebraic-conjugation/Gelfond-Schneider noncancellation proof.
+
+The original complete 16+24+2 source, lambda_minus and exact nonvacuum midpoint family are consumed unchanged. This is a true implementation minimum for a specified complete future experiment. The earlier G^k terminal obstruction is preserved. The physical admission of the original query/exterior operation, actual terminal-CQ versus Book03 Info binding, compulsory choice of task and independently charged upstream sources remain open. No field stability or full action equivalence is inferred.
+
+The user's proposed finite Beatty average was checked on head4867b6d4. In the canonical K913 law p^N cancels exactly; the actual native Golden cost-cut contains positive000 whereas the Sturmian tower forbids it. The true R is an effect built from a supplied record-price function xi, whereas C_h is a matched-reference scalar price difference. Conditional averaging over any complete partition preserves Tr(rho R) and its full derivative. No owner currently supplies the proposed common averaging map and complete physical table; no value for that absent average is reported.
+
+The parent now consumes the proved finite complete-price/minimum source identity and seeks the actual valued future task and full native binding. Normalized future probabilities alone omit the scalar determinant valuation; the finite Schur/current universal property makes this precise without importing a Gaussian physical model. Independent final acceptance and one exact changed-calculation replay are pinned in the adjacent review. No new task, certificate census, lifecycle change or GR closure.

@@ -2786,3 +2786,18 @@ terminal-price family. The selected alternatives have zero first source
 on Sigma. This continuation therefore targets a possible derived future
 task/decoder and actual continuation price, or requires a different
 programme; it cannot assert that history completion selects G^2.
+
+
+### 20 October: finite future determinant minimum and exact Golden Beatty intake
+
+Phase: native realization / same-execution complete Book source, within this existing Draft owner. Inputs: original complete Golden-J2 fixed LEFT blocks and CAR source at07ca6ace; current parent, prospective K913, Golden cost-cut and matched-reference cocycle at4867b6d4. Exact blobs are pinned in the new proof.
+
+Precise substituted statement: for the supplied original U,P,Q and fixed z=2^-20, a finite exterior no-click instrument realizes det(I-zF). With complete monitored stopping records and retained pure conditional work, its full CQ Cost-Info is explicit. A nonempty uniform compiler class with nonnegative integer stage costs has an attained locally constant winning pair. On the actual native rank2 units, the minimized full first source is c DJ2 with |c|>0.39 uniformly in mesh and multiplicity. The common-attempt version covers every finite N>=2 and differing integer setup costs. All original 16+24+2 Euler rows and lambda_minus are preserved.
+
+Carrier/source convention: literal 8D AF4/scene2 blocks, every528 nu D_j copy, all detector/exterior complementary modes retained; natural-log J2, base-phi CQ information and actual integer primitive clocks. Local paid trials are distinct from one collective detector. The latter has a general all-N noncancellation proof by quadratic conjugation and Gelfond-Schneider. This is an implementation minimum of a fixed full experiment, not a field minimum.
+
+Remaining hypotheses: native exact query/exterior/fixed detector admission; a compulsory future task requiring that instrument; actual Book03 Info/clock/preparation/controller/prior-work binding. The nonempty exact compiler class is not supplied by a matrix dilation. Earlier G^k terminal minima and independent original H/R/source/clock obligations remain unchanged.
+
+User-directed Beatty check: canonical fixed-N K913 weights cancel p^N; the native full Golden cost-cut and Fibonacci/Sturmian language differ at positive depth3 cylinder000. The actual operator R requires its full physical record-price table; any complete conditional average preserves its scalar expectation and full source. A map to the separately paid matched-reference cocycle is not already in those owners. Do not treat bad approximability or a new cylinder ordering as that missing physical map.
+
+Write paths: existing book_source/FINITE_FUTURE_DETERMINANT_MINIMUM.md, check_determinant_future_minimum.py and FINITE_FUTURE_DETERMINANT_REVIEW.md; append-only intake in this brief, current causal synthesis, packet README and memo. Smallest decisive check: complete exterior outcome/first-jet identities, full stopped entropy/clock coefficients, exact quadratic arithmetic and rational uniform gap; original K913 enumeration and exact depth3 language countercontrol. These changed controls pass. The all-N and compiler-envelope assertions are analytic proofs with independent review, not extrapolation from finite controls. Historical geometry, formal modules and receipts remain unchanged. No new task, Ready/assembly promotion or GR_closed claim.

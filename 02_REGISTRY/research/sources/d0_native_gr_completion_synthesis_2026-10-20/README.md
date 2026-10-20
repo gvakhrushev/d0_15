@@ -86,3 +86,20 @@ does not derive physical selection. A compulsory future task/decoder
 or full continuation price must change this actual comparison. The
 independent review pins this analytical addition; the checker and its
 executed evidence are unchanged.
+
+
+## A finite future experiment whose true implementation minimum preserves the source
+
+[FINITE_FUTURE_DETERMINANT_MINIMUM.md](book_source/FINITE_FUTURE_DETERMINANT_MINIMUM.md) constructs the no-click determinant at the original z from fixed cuts and the original matrix query. Its complete monitored stopping price has an actual minimum over a nonempty class of uniform integer-stage implementations. On every original fixed two-band unit the minimized first-source multiplier has absolute value greater than0.39, uniformly in finite horizon, mesh and integer gate budget. The whole original 40+2 source and lambda_minus are preserved.
+
+The preceding cheap G^0/G^1 terminal minimum remains correct for its task. The new theorem specifies a different future instrument and includes every terminal unresolved branch, quantum conditional work and actual clock. Its native query/exterior admission, compulsory task and literal Book03 Info binding remain explicit physical premises.
+
+Section11 checks the user's Beatty proposal at head4867b6d4: the fixed-N K913 Golden factor cancels, the native cost-cut and Sturmian languages already differ at depth3, and complete conditional averaging preserves the actual residual expectation. No unspecified Book residual average is manufactured.
+
+Reproduce the new bounded calculation, which also checks those original-history controls:
+
+```bash
+python3 -O -B -W error 02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/check_determinant_future_minimum.py
+```
+
+The [final independent acceptance](book_source/FINITE_FUTURE_DETERMINANT_REVIEW.md) pins the integrated proof and checker. No historical receipt is rewritten, no full Lean rerun is claimed, and this remains a conditional native-source result inside the existing Draft.

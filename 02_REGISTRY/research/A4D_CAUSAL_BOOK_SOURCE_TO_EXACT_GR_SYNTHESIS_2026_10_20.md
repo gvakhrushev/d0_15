@@ -422,3 +422,32 @@ distinguishes algebraic acceptance from physical selection. The new
 checker tests complete matrix/jet outputs, noncommuting unseen-block
 variations, finite coin coefficients and the SAME finite-z matter ratio.
 Historical geometry and continuum suites were consumed, not rerun.
+
+
+## Finite future determinant verification and its actual implementation minimum — 20 October 2026
+
+The [integrated finite-future proof](sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/FINITE_FUTURE_DETERMINANT_MINIMUM.md) now supplies a different explicitly priced future experiment for the SAME original Golden-J2/source carrier. It preserves the earlier G^k terminal-minimum obstruction.
+
+The original fixed U,P,Q, a fixed one-particle efficiency z=2^-20 and an exterior lift give no-click probability det(I-zF), with all click/complement work retained. On each actual fixed 8D AF/scene unit the original cut has rank2 and both native bands remain. Running the same paid detector on every actual 528 nu D_j copy gives local probabilities d_b=exp(-j_b), with J2=sum_b j_b. This is an actual separate local programme, not a cost-free reinterpretation of one collective detector.
+
+Two monitored attempts have the COMPLETE record law (d,qd,q^2), q=1-d. Retaining the whole pure quantum work conditional on each resolved record gives Info=(1+q)h_phi(q). With actual nonnegative integer setup/first-stage and continuation costs (a,b), the full price is
+
+    S_(a,b)=a+b q-(1+q)h_phi(q).
+
+For any nonempty admitted compiler class realizing this SAME full future experiment on the source chart, irrational native q0 makes the minimizing integer cost pair unique and locally constant. Attainment follows from the finite number of nonnegative integer pairs below any competing price. Differentiating that actual minimum therefore gives c_(b*) DJ2, rather than an uncomputed implementation correction. For every integer b*, exact rational inequalities put its cancellation threshold between 27.4 and27.5 and prove |c_(b*)|>0.39.
+
+The common-template result extends to every finite N>=2, including compiler-dependent integer setup with a common attempt cost. The uniform lower bound is independent of mesh, unit count and the winning integer gate budget. For a collective detector at arbitrary true multiplicity, a separate algebraic-conjugation/Gelfond-Schneider proof excludes exact cancellation. No price is fitted to Einstein.
+
+This substitutes the full first-source identity into the original 16+24+2 Euler consumer and preserves the SAME finite-z lambda_minus and exact midpoint Einstein/CAR family. The minimum is over realizations of a fixed monitored task, not over fields or over all possible physical tasks. Padded coherent execution pays its entire fixed clock; its zero pure-state entropy cannot be combined with monitored expected stopping cost.
+
+The proof also consumes complete future-boundary descent: all unnormalized Gaussian current comparisons determine BOTH the Schur kernel and its scalar determinant valuation. Normalized boundary data lose the latter. This is a finite representation/universal-property theorem, not native admission of Gaussian matter or a new physical Info law.
+
+### Exact intake of the proposed Golden Beatty residual selector
+
+At the user's head4867b6d4, the canonical K913 fixed-length weights p^N cancel in normalized future probabilities. Original two-step counts are exactly502=242+260. The actual Golden cost-cut has five positive depth3 cylinders, including000 of mass p^3; the Fibonacci/Sturmian word has only four and forbids000 at every phase. The owned partitions are therefore not already the proposed single history-to-Beatty map.
+
+The actual residual is R=sum xi_omega K_omega* K_omega, whose record function xi requires the supplied complete Cost-Info table. For any genuine complete partition, the conditional-average tower identity preserves Tr(rho R) and its full moving-probability/preparation derivative. Averaging alone cannot create the separately paid matched-reference subtraction C_h=A_h(U)-A_h(U0). No numerical equality or inequality for an unspecified full Book table is reported.
+
+Parent continuation: derive the compulsory complete future task and its actual native query/exterior, Info, clock, preparation and prior-work binding. Within the declared admitted monitored class, source cancellation by implementation minimality is now excluded. The actual Book price table, native admission and physical task selection remain open, as do independent upstream rows and the original raw216 target. No lifecycle/assembly/GR promotion.
+
+[Independent final acceptance](sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/FINITE_FUTURE_DETERMINANT_REVIEW.md) pins the proof and exact checker. Only the changed determinant/price/history controls were run; the historical geometry and Lean suites were consumed unchanged.
