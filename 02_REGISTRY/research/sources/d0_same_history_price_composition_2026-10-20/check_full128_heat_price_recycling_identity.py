@@ -125,8 +125,8 @@ assert D3*Tstar3(Delta3)*D3-Delta3**2==s.zeros(3)
 variance=Tstar3(Delta3**2)-Tstar3(Delta3)**2
 assert variance==s.diag(0,1,0)
 B3=I3-A*Delta3
-assert Nstar3(Nstar3(I3))==B3**2
-assert Nstar3(Nstar3(Nstar3(I3)))-B3**3==A**3*s.diag(0,1,0)
+assert eq(Nstar3(Nstar3(I3)),B3**2)
+assert eq(Nstar3(Nstar3(Nstar3(I3)))-B3**3,A**3*s.diag(0,1,0))
 print("EXACT 3-level hostile control: Gamma1=0 but third source differs: PASS")
 
 # The two-moment all-depth bound has its own exact Stinespring proof.
