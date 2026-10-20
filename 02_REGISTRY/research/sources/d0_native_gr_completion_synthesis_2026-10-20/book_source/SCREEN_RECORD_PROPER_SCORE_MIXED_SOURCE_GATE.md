@@ -144,6 +144,69 @@ with honest \(Dq\) including field-dependent preparation, and the exact operator
 
 **Single physical PASS/FAIL:** On the SAME original Jones+/proper-Lorentz rank34 register, calculate the actual complete \((C_\gamma,I_\gamma,W,\rho)\) for all original 128² chronological outcomes and the real root preparation/stopping experiment BEFORE comparing to Palatini. Compute (15) along the finite exact port-invisible \(Q_*\) metric line and its **mixed link variation**, and compare the original \(S_\star\) source with no fitted coefficient and its true sign. If a paid monitored programme has the already proven \(c_NDJ_2\) then identify the physical G0 reason for selecting that task, its native bit/8D compiler and all source-bearing archive. If the native selection admits only proper full-record divergences, (10) is an exact scoped NO-GO for Palatini mixed source.
 
+
+## 5. POSITIVE FOUR-CORNER CONSTRUCTION FROM **NORMALIZED** original records: a native Fisher mixed cross-response without second Kraus jets
+
+The two-arm properly normalized divergence fails by (10). A *different* TRIZ separation-of-functions construction can nevertheless create a signed mixed geometric interaction from FOUR individually nonnegative and normalized original future-law comparisons **without** selecting 34 arbitrarily fitted label weights.
+
+For the SAME original full128 Jones tape on a smooth chart write \(q(e,U)\) for its entire normalized 128² law and choose a fixed independently specified anchor \((e_0,U_0)\) with positive common support. Define the actual ordinary information divergence from the **fixed anchor**
+\[
+D_{00}(e,U)=D_{\rm KL}\big(q(e,U)\,\Vert\,q(e_0,U_0)\big),
+\]
+and its FOUR-CORNER signed operational interaction:
+\[
+\boxed{
+\mathcal P_{\rm Fisher}(e,U;e_0,U_0)
+=D_{00}(e,U)-D_{00}(e,U_0)
+-D_{00}(e_0,U)+D_{00}(e_0,U_0).
+}\tag{16}
+\]
+Each of the FOUR component divergences is a properly normalized nonnegative complete-history functional on genuine original q, although their signed subtraction is not itself a proper divergence or a automatically compulsory Book price. All four programmes/references must be admitted, prepared, measured, archived and **paid** if one proposes (16) physically; the mathematical formula alone does not create a free apparatus.
+
+At the matching anchor the four-corner value and every *pure* \(e\) or \(U\) first and second derivative vanish. The mixed first-source Hessian, however, is EXACTLY
+\[
+\boxed{
+D_eD_U\mathcal P_{\rm Fisher}\big|_{(e_0,U_0)}
+=\sum_{\gamma\in128^2}\frac{(D_eq_\gamma)(D_Uq_\gamma)}{q_\gamma}
+=\sum_\gamma q_\gamma
+(D_e\ln q_\gamma)(D_U\ln q_\gamma)
+=:\mathcal I_{eU}.
+}\tag{17}
+\]
+This derives directly from normalization \(\sum q_\gamma=1\) and the exact Hessian of full-record KL at coincidence; **NO second derivatives of the original Kraus map enter**. For any selected metric and Lorentz tangent pair the local \((e,U)\) Hessian of the polarized score is
+\[
+\begin{pmatrix}0&\mathcal I_{eU}\\\mathcal I_{eU}&0\end{pmatrix}
+\tag{18}
+\]
+with one positive and one negative eigenvalue whenever \(\mathcal I_{eU}\ne0\). Therefore the **signed mixed Palatini saddle signature** is *mathematically compatible* with this four-corner native complete-law interaction, whereas it was impossible for an unpolarized properly averaged divergence by (10).
+
+The original Born score FIRST jets in the already-owned original 34/34 tomography are precisely the required data. The exact finite **PASS/FAIL** is to calculate the full metric10 × link24 matrix
+\[
+\boxed{
+\mathcal I_{eU,h}=J_{e,h}^{T}\,\operatorname{diag}(q_{\gamma,h}^{-1})\,J_{U,h}
+}\tag{19}
+\]
+using **all 16384 original positive outcomes** (and keeping any zero-probability support issue explicit), then compare its exact orientation, rank and source-normalized signs to the original Palatini mixed \(10\times24\) block on the identical original Jones carrier. The Golden native ideal-surprisal conversion, if physically admitted, is the fixed \(1/\ln\varphi\), not a fitted coupling. The original P25 saddle has \(D_aD_tS_\star=-1\); one scalar test is whether the corresponding \(\mathcal I_{at}\) is zero, positive or negative, and whether the **fixed** native code unit makes it the required value. Merely finding nonzero mixed Fisher is not equality to Einstein: matrix ratios, all Euler rows and actual complete Price must agree.
+
+A fully exact normalized two-outcome counterfixture illustrates the escape:
+\(q_1(e,U)=1/3+e/20+U/11+eU/17,\ q_2=1-q_1\).
+Its **co-moving two-arm** KL has \(D_eD_U=0\) at zero by (10), while its **four-corner fixed-anchor** KL has
+\[
+\boxed{
+D_eD_U\mathcal P_{\rm Fisher}|_{0,0}=9/440,\qquad
+\nabla^2\mathcal P_{\rm Fisher}|_{0,0}
+=\begin{pmatrix}0&9/440\\9/440&0\end{pmatrix}.
+}\tag{20}
+\]
+This is an algebraic test fixture, NOT a claim that the original full128 Jones matrix has the same coefficient, and NOT a new detector.
+
+**Exact TRIZ payoff:** replace the false alternative "positive information cannot yield the signed Palatini coupling" by the precise distinction:
+- ONE or TWO proper matched KL arms, with the reference co-moving in the same \(e\), cannot give any mixed source.
+- FOUR-ARM *polarized* properly normalized history comparisons can carry a signed mixed source, with its coefficient **completely fixed by the original native Fisher cross block**, no unknown second Kraus jets.
+- An actual G0-selected physical price must still justify the four charged arms, sign conventions, full oldRIGHT/clock/Info and any extra H/R contributions. If its original cross-Fisher block differs from the Palatini block, this **particular** four-arm selection fails; no new fitted coefficient is allowed.
+
+This is an independently checkable **positive candidate interface** between the exact original full128 metric+link tomography and the original finite Palatini cross source, not a declaration of physical Einstein closure. The precise finite first-jet computation (19) is the next meaningful scientific task and should reuse the existing Jones34 Jacobian owner, NOT rebuild a separate detector or Bloch census.
+
 **Verdict:** the original full128 record IS rich enough to see a port-invisible metric mode, and a genuinely monitored native 8D Golden verification programme CAN preserve the entire configured Einstein first-source. But the ordinary "information distinguishability of histories generates Einstein" step is FALSE for KL/proper-divergence action, even with exact rank34 tomography. The positive route is **actual paid asymmetric/conditional future implementation**, not bare score or entropy geometry. \`GR_closed=false\`; physical Book03 task selection/complete native admission not discharged.
 
 **Exact reproducible consumer:** \`check_screen_cost_vs_information_selection.py\`, no changes to original frozen 128 Kraus/40+2 or primary geometry owners.
