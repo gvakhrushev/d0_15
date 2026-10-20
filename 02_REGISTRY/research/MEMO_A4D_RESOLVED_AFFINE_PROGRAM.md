@@ -7,6 +7,41 @@
 `dff7498b9071ad4d9fd1580b80829d91eb55f534`. Current research inputs retain their
 exact source pins in the [assembly](../gr_assembly/README.md#current-scientific-gate).
 
+## FIRST physical case — exact time-dependent NONVACUUM GR on each mesh
+
+This is now the **first positive application to read and consume** after
+the verification kernel, not a new geometry/search campaign.
+The [canonical main case](D0_GR_PRIMARY_POSITIVE_CASE.md) and
+[exact mathematical proof](A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md)
+consume the [already-owned original exact 40→3→1 Cartan source](../gr_assembly/sources/d0_double_null_quadratic_cartan_2026-10-19/arbitrary_brinkmann_all40.md).
+For arbitrarily time-dependent harmonic quadratic/cubic transverse
+gravitational waves, with nonzero original CAR scalar/top null source,
+the unchanged configured Golden-J2 mathematical field equations have
+**exact full 16+24+2 interior Euler roots at EVERY finite mesh**.
+A single fixed continuum solution with genuinely nonzero Ricci and
+Weyl curvature is recovered by the forced midpoint source/clock
+placement: exact metric sampling and O(h²) material recovery.
+Analytic/spectral broader waves have controlled O(h²) C^r metric and
+C^(r−2) curvature limits. This positive family is the concrete
+nonempty curved regime to TRY FIRST when identifying the true native
+source, not an abstract to-be-constructed Einstein tensor.
+
+**This replaces the repeated local-geometry search as the default
+strategy**, NOT the physical closure theorem. The prospective
+Cost−Info/minimality full native programme, original H+J+R vs configured
+Golden-J2 identity, paid controller/reference/preparation/work/clock
+and other internal Euler, physical normalization, generic recovery
+and original raw216 terminal remain open. The result is a research
+intake, not a `positive_gr` assembly discharge. Continue #334
+and existing linked fronts; do not invent a parallel task.
+
+The present target is therefore to establish an ACTUAL physical
+same-action map into this explicit exact source family, or a rigorously
+preserving equation-level transport, before broadening the
+nonlinear geometric class. If an alternate action produces an
+unremoved source on this shared carrier, it fails this candidate
+substitution unless that actual source is derived and controlled.
+
 ## Architectural objective
 
 D0 supplies the necessary operational structure `Sigma` (`Σ`) of verification
