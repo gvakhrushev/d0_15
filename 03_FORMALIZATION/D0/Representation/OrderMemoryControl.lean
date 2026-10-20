@@ -1040,4 +1040,58 @@ theorem nativeQ8SixAndEightSameCompleteOutcomes :
   · rw [nativeQ8SixGateFullMatchedReference, nativeQ8GroupedWordEvaluates]
   · rw [nativeQ8SixGateFullMatchedOrder, nativeQ8OrderedWordEvaluates]
 
+
+/-! ## PROSPECTIVE MINIMAL CLOSED Q8 SCENE TEST — first nontrivial loop is 3 ticks
+
+This is the physically significant contrast to a word-length-only MDL
+test. In the original K(9,11,13) scene, every two-edge closed word is
+a backtrack (u,v,u), and a correctly inverse-respecting Q8 edge
+connection has q_uv*q_vu=1. In contrast a three-zone true ABC loop
+can carry nontrivial central qNEG without ANY newly invented group
+element. The original Q8 i,j,k edge assignments give i*j*k=-1.
+Replacing the final k by the ALSO EXISTING opposite Q8 element -k
+gives +1. The original positive Golden-order comparison distinguishes
+their central classes with second-port 4p^3 vs zero.
+
+Both are 3-edge MINIMAL closed original scene history programmes
+under canonical primitive nonidentity Cost=1, while the original
+primitive Cost-floor BY ITSELF does not choose which of the two
+gauge-invariant central sheet values is physically selected.
+That selection requires full native Info/initial data/allowed history
+and future test, not an ex-post replacement or fitted Einstein action.
+The Q8 assignment to actual scene transport is an explicitly
+declared mathematical candidate; literal paid G0 does not yet
+supply an executable scene-edge-to-Q8 active representation.
+-/
+
+/-- All eight TRUE original Q8 elements have a trivial chronological
+two-step forward+inverse backtrack holonomy. -/
+theorem originalQ8TwoTickBacktrackAlwaysTrivial :
+    (D0.Foundation.Q8.map (fun q =>
+      D0.Foundation.uqmul q (D0.Foundation.uqinv q))).all
+      (fun q => q == D0.Foundation.qONE) = true := by
+  native_decide
+
+/-- The already-existing Q8 generators i,j,k produce nontrivial
+center sign on one true 3-edge ABC history. -/
+theorem originalQ8ThreeTickTriangleFirstClosedSpinDistinction :
+    D0.Foundation.uqmul
+      (D0.Foundation.uqmul (0,1,0,0) (0,0,1,0))
+      (0,0,0,1) = D0.Foundation.qNEG ∧
+    D0.Foundation.uqmul
+      (D0.Foundation.uqmul (0,1,0,0) (0,0,1,0))
+      (0,0,0,-1) = D0.Foundation.qONE := by
+  native_decide
+
+/-- No added spinor detector: the same EXISTING native Q8 sign to
+Golden-port map distinguishes the two already-available three-tick
+central source histories, IF their actual scene Q8 labels can be
+transported into this existing active sign port. -/
+theorem originalQ8ThreeTickTriangleGoldenWitness :
+    nativeQ8ProgramPort false = 0 ∧
+    nativeQ8ProgramPort true = 4 * D0.primitiveRoot^3 ∧
+    nativeQ8ProgramPort false ≠ nativeQ8ProgramPort true := by
+  exact ⟨nativeQ8ProgramPort_grouped, nativeQ8ProgramPort_ordered,
+    nativeQ8ProgramPort_grouped_ne_ordered⟩
+
 end D0.Representation.OrderMemoryControl
