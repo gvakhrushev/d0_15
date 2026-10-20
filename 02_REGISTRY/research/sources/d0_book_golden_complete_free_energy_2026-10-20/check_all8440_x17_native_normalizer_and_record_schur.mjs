@@ -277,6 +277,25 @@ check(left>0&&right<0&&Math.abs(right-theoreticalCusp)<1e-10&&
 // Label costs 1 vs 2 using original F/R (other native outcomes share baseline).
 const labelledOdd=(q)=>q[8]*1+q[9]*2;
 const oddActual=labelledOdd(pplus)-labelledOdd(pminus);
+
+// EXACT native odd CODE SOURCE criterion: fixed semantically pinned Golden
+// labels have first source sqrt(2)c (L_(J+)−L_(J-)) at the actual flat
+// full17 positive instrument, independent of all failure branches (which
+// stay present). Equal ± costs imply ZERO signed source. The true
+// Book/Golden future-context must PAY and SELECT any asymmetric difference;
+// it is not deduced from the pair probability or from Dmin alone.
+const primitiveChiralSource=Math.SQRT2*c*(1-2);
+const sourceh=1e-4;
+const numericChiralSource=(labelledOdd(golden17(sourceh))-
+                          labelledOdd(golden17(-sourceh)))/(2*sourceh);
+check(Math.abs(primitiveChiralSource-numericChiralSource)<5e-13&&
+ Math.abs(primitiveChiralSource)>1e-7,
+ "true native Golden17 J23 signed FIRST source of fixed primitive F/R cost1/2, not a fitted tensor");
+const symmetricLabelCost=q=>q[8]*1+q[9]*1;
+check(Math.abs(symmetricLabelCost(golden17(sourceh))-
+              symmetricLabelCost(golden17(-sourceh)))<1e-17,
+ "all actual reversal-invariant label costs have ZERO orientation-odd first source");
+
 check(Math.abs(oddActual)>1e-8,
  "orientation-labelled original Golden code can have odd source ONLY after semantic label choice");
 
@@ -298,6 +317,8 @@ const source={bookZ:R.Z,fineZ:R.fineZ,pointerMoving:R.pointerMoving,
  optimalCostAtPlus:optimalPos,optimalCostAtMinus:optimalNeg,
  probabilityOnlyOptimalParityResidual:optimalPos-optimalNeg,
  orientationLabelledSemanticCostContrast:oddActual,
+  exactSemanticJ23Source:primitiveChiralSource,
+  finiteDifferenceSemanticJ23Source:numericChiralSource,
  truePrefixCodeCusp:{codeValueAtFlat:codeAtZero,theoreticalSlopeRight:theoreticalCusp,
   measuredSlopeRight:right,measuredSlopeLeft:left,
   assignedAtPlus:mapPlus,assignedAtMinus:mapMinus}},
