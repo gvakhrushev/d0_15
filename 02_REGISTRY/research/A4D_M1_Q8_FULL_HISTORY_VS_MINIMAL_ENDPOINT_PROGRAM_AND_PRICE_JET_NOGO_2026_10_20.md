@@ -1,5 +1,15 @@
 # D0 M1/MDL → REAL execution: the SAME final Golden/Q8 unitary admits different MINIMAL source histories and different native ActionProtocol second sources
 
+## Binding correction — D_min is prospective when asserted as physical law (20 October)
+
+**USER IDENTIFIED A TEMPORAL LOGIC ERROR IN THE EARLIER PHYSICAL INTERPRETATION OF THIS MEMO.** The original retrospective theorem "an actually executed 8-step record has more primitive Cost/clock work than an actually executed 2-step record with the same final Q8 operator" is TRUE. But it is **NOT** a counterargument to the prospective M1/D_min hypothesis that Nature SELECTS a minimum-cost feasible history *before* it executes. If the ONLY genuine goal is preparing the same relative-sign operator, and if both source histories start with the same COMPLETE native state, satisfy exactly the same future-verification constraints and have strictly comparable full native Cost−Info, a prospective minimizing law excludes the more expensive eight-step path. A proof of past-record irreducibility does NOT show that Nature must choose to make that record in the first place.
+
+The earlier eight-step word is not even the shortest **equal-inventory order-detection** comparison for the original Golden port. The new true native pair \`IJI\` vs \`JII\` has THREE operations each, exactly two i and one j, and true Born bright-port probabilities **0 versus \(4p^3\)**. Exhaustive native gate-word testing proves no same-inventory contrast at lengths 0,1,2 for this original fixed Golden comparator. The full finite prospective selector is now a *separate explicit, compiled* Lean \`ProspectiveExecution\` with a Bellman suffix theorem and exclusion of genuinely avoidable positive-cost return loops; this is NOT yet derived from the original Tome I §2.2 D_min of equivalent DESCRIPTIONS or native G0 Book03 action. Details and actual refs: [prospective correction and minimal three-gate original Q8 detection](A4D_PROSPECTIVE_DMIN_PHYSICAL_SELECTION_BEFORE_EXECUTION_AND_Q8_MINIMAL_3_GATE_2026_10_20.md).
+
+The later retrospective Cost and second-jet results below remain valid only for physically EXECUTED histories and for FULL tasks requiring their clock/provenance, not as a logical refutation of ex-ante D_min. Read the following sections with this separation. \`GR_closed=false\`.
+
+---
+
 **20 October 2026. Exact original Q8/Golden/FiniteProtocolClock/ActionProtocol source-owner in existing research PR #334.**
 
 This result answers a load-bearing D0 conceptual question: Why does minimal *verification* not allow us to erase the actual *price and duration* of an already-executed, reversible and fully registered history? The answer is now a finite original-carrier theorem, not an external philosophy. The entire control uses ONLY the existing original Q8 quaternion matrices \`localIQ/commonJQ\`, the existing Golden mixer \`p=\varphi^{-1}\`, the existing \`FiniteProtocolClock\` and native \`EndogenousActionQuantum.ActionProtocol\`. **No new primitive gate, third checking line, hand-tuned action, GR source, or external clock is inserted. GR_closed=false.**
