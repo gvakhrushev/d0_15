@@ -4,8 +4,8 @@
 `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`. Phase:
 verification kernel → actual native readout → GR operational realization.
 Reuse the accepted main
-[`VerificationCore.lean`](../../../03_FORMALIZATION/D0/Foundation/VerificationCore.lean)
-and [`TheoryTransfer.lean`](../../../03_FORMALIZATION/D0/Foundation/TheoryTransfer.lean);
+[`VerificationCore.lean`](../../../../03_FORMALIZATION/D0/Foundation/VerificationCore.lean)
+and [`TheoryTransfer.lean`](../../../../03_FORMALIZATION/D0/Foundation/TheoryTransfer.lean);
 do not re-prove their generic results.
 
 **Owner and exact scope.** The
@@ -240,6 +240,26 @@ If the input/archive already supplies the distinctions, idle is not
 excluded. If the native output alphabet or allowed initial memory
 grows with h, their actual capacity and price must be included rather
 than assuming one bit per physical gate.
+
+**Conditional native unit-price consequence.** If every emitted b-ary
+symbol is produced by an original nonidentity complete-state transition
+and that *actual* transition is subject to the existing ActionProtocol
+unit floor (Cost >= 1), then on the same uniformly distributed grid
+
+\\[
+ \\mathbb E\\sum_{\\text{executed primitives}}\\mathrm{Cost}
+ \\ge\\mathbb E[\\text{emitted b-ary symbols}]
+ \\ge\\log_b M.
+\\tag{15a}
+\\]
+
+This is a **genuine but scoped prospective lower bound** from required
+future distinctions. It does not identify generator description length,
+physical work, record entropy and complete Cost-Info; it does not prove
+an admitted execution ATTAINS the floor, or choose the selected physical
+dynamics. If one primitive emits a larger alphabet, records a collective
+outcome at one price, or reuses previously known input distinctions,
+its actual b and resource/admission semantics must be used instead.
 
 The lower bound is SHARP as a representation law. By (11) the six
 calibrated coordinates `Y_h(F)` range in a fixed cube, and uniform
