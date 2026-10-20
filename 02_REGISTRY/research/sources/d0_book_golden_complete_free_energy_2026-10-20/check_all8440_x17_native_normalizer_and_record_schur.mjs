@@ -223,6 +223,39 @@ check(perturbedObjective>targetObjective+1e-9,
 const portCode=KL([p*p,p],[p,p*p]);
 check(Math.abs(portCode-p**3)<3e-15,
  "REAL full128 native mismatch retained: self-information cancellation not a complete Book no-go");
+
+// STRONGER M1/MDL no-go: NO probability-only optimal full Golden17 code
+// can supply an ORIENTATION-ODD first source. This holds for ANY admissible
+// codebook set invariant under permitted relabeling, not only Shannon.
+// Verify with 17 actual native F/R prefix leaves (F Cost1, R Cost2).
+const wordCost=w=>[...w].reduce((z,x)=>z+(x==="F"?1:2),0);
+let leaves=["F","R"];
+while(leaves.length<17){
+ const candidates=leaves.map((w,i)=>({w,i,depth:wordCost(w)}))
+    .filter(o=>o.w!=="F").sort((a,b)=>a.depth-b.depth||a.i-b.i);
+ const picked=candidates[0];leaves.splice(picked.i,1,picked.w+"F",picked.w+"R");
+}
+check(leaves.length===17&&new Set(leaves).size===17&&
+ leaves.every((w,i)=>leaves.every((v,j)=>i===j||!v.startsWith(w)),
+ "17 true prefix-free original F/R codewords, no extra letter primitive");
+const costs=leaves.map(wordCost).sort((a,b)=>a-b);
+const optimalCodeValue=q=>q.slice().sort((a,b)=>b-a)
+  .reduce((total,v,i)=>total+v*costs[i],0);
+const codeFixed=q=>q.reduce((total,v,i)=>total+v*wordCost(leaves[i]),0);
+const pplus=golden17(.19),pminus=golden17(-.19);
+const optimalPos=optimalCodeValue(pplus),optimalNeg=optimalCodeValue(pminus);
+check(Math.abs(optimalPos-optimalNeg)<1e-13,
+ "ANY label-reassignable original F/R code optimal COST is REVERSAL EVEN");
+const distinctPairs=golden17(.19);
+check(distinctPairs[8]!==distinctPairs[9],"orientation reversal really swaps two unequal native J23 outcomes");
+// A fixed asymmetric labelled code CAN produce an odd cost; that is an
+// INDEPENDENT semantic/orientation rule, not a probability-only Dmin law.
+// Label costs 1 vs 2 using original F/R (other native outcomes share baseline).
+const labelledOdd=(q)=>q[8]*1+q[9]*2;
+const oddActual=labelledOdd(pplus)-labelledOdd(pminus);
+check(Math.abs(oddActual)>1e-8,
+ "orientation-labelled original Golden code can have odd source ONLY after semantic label choice");
+
 const source={bookZ:R.Z,fineZ:R.fineZ,pointerMoving:R.pointerMoving,
  pointerAtZero:R0.pointerMoving,pretraceSigned:R.pretrace,
  cycleOrientationWeight:R.probOrient,BookGradient:vBook,
@@ -237,6 +270,10 @@ const source={bookZ:R.Z,fineZ:R.fineZ,pointerMoving:R.pointerMoving,
  pathOnlyFisher:fisherBook,full143480Fisher:fisherJoint,
  strictlyPositiveLostFisher:fisherJoint-fisherBook,
  exactPredictedLostFisher:predictedFisherLost,
+ nativeFRCode:{codewords:leaves,sortedCosts:costs,
+ optimalCostAtPlus:optimalPos,optimalCostAtMinus:optimalNeg,
+ probabilityOnlyOptimalParityResidual:optimalPos-optimalNeg,
+ orientationLabelledSemanticCostContrast:oddActual},
  actualFull128PortMismatch:p**3,actualFull128PortMismatchChecked:portCode};
 console.log(JSON.stringify({
  status:"PASS_ORIGINAL_FULL143480_BOOK_GOLDEN_CONDITIONAL_COST_INFO_AND_SIGNED_SOURCE",
