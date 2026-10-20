@@ -3112,3 +3112,44 @@ Author and independent reviewer validate this changed checker only.
 The analytical review binds the universal and full-record statements.
 The earlier sparse assembly-template limitation is unchanged; no assembly
 acceptance, old replay, Lean build or GR/raw216 promotion is asserted.
+
+## 20 October continuation: the actual primary preparation Euler is nonzero
+
+Phase: native realization / final composition; same `constitutive` slot,
+`native-programme-v1` carrier and existing #334. The new
+[`PRIMARY_CAR_PREPARATION_SOURCE.md`](../../02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/PRIMARY_CAR_PREPARATION_SOURCE.md)
+tests the existing closed-history HJR on its original nonvacuum primary
+family, using the literal full16 CAR return, uneven site density and full
+RIGHT128 kernel. The independent normalized preparation direction has exact
+source
+
+```text
+g_w(t) = -(7 p sigma^2 sqrt(rho_w rho_(w+u))/2048) t + O(t^3),
+sigma = p^3,
+```
+
+with a strictly negative coefficient; analyticity gives a nonempty interval
+of positive `t` on which the source is nonzero. The H and J preparation
+derivatives vanish there, while this actual R/preparation derivative does
+not. Thus the existing HJR alone is not a joint stationary law on this
+family. The finite CAR word can lower that declared state functional, but
+its letters, addressing, preparation, controller, work and clock remain
+paid; this does not compare complete programme prices or prove a
+same-task optimum.
+
+Parent substitution: retain the exact GR family and reject direct HJR-only
+stationarity on this primary preparation. The live constitutive question is
+whether the *same complete, physically admitted* Book03 Cost-Info execution
+supplies the missing preparation source or a separately derived native
+constraint/transport. Compute that source with every oldRIGHT, reference,
+controller, clock, work and failure term retained. A fitted cancellation,
+an unpriced return word, or a changed preparation class does not discharge
+it. The result is a scoped negative for the direct HJR route, not a no-go
+for every complete native price and not a physical GR/raw216 acceptance.
+
+Smallest decisive check: differentiate the complete same-execution price
+along the stated native preparation direction and compare it with `g_w(t)`;
+then verify the retained independent field and internal Euler rows on the
+same carrier. The proof, checker and independent review are in the linked
+book-source packet; the checker passes in ordinary and optimized modes on
+Python 3.12.14. No new registry node, lifecycle state or task is introduced.
