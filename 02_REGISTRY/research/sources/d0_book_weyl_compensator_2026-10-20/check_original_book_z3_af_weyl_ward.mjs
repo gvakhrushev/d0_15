@@ -186,7 +186,7 @@ const Ksites=tSites.map((ti,i)=>
  }))
 );
 const dSites=Ksites.map((_,i)=>K.map((row,u)=>row.map((val,v)=>
-   part(u)===part(v)?0:(((u*u+3*v+5*i)%13)-6)/17));
+   part(u)===part(v)?0:(((u*u+3*v+5*i)%13)-6)/17)));
 function closed3Source(Ka,ds){
  let Z=0,Csum=0;
  for(let a=0;a<9;a++)for(let b=9;b<20;b++)for(let c=20;c<33;c++){
