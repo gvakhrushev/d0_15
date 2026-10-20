@@ -1,0 +1,74 @@
+{
+  "schema": "d0-native-relative-history-first-jet-pins/1",
+  "integration_base": "57b7c37f6e136d15d7b0f89b41c9a589d8c779e9",
+  "owned_inputs": [
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_relative_transfer_2026-10-17/check_native_relative_transfer.py",
+      "sha256": "dfa8fffb08d421f2a2a0fa91a3044492ab94bfd6bd7d1e86b110b52c2e0ff065",
+      "source_ref": "57b7c37f6e136d15d7b0f89b41c9a589d8c779e9"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_FULL128_RELATIVE_TRANSFER_AND_CONDENSED_DESCENT.md",
+      "sha256": "577cbc909f766468fbef8ab38a5986ae761d348b075c2f38b2e1a88b704d4b3e",
+      "source_ref": "57b7c37f6e136d15d7b0f89b41c9a589d8c779e9"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_VARIABLE_RECORD_FIRST_SOURCE_LIMIT.md",
+      "sha256": "bacfeb70e261f600cd4d1e305612eaf3ab6fe6f71bd384aab2f04fd588493d93",
+      "source_ref": "57b7c37f6e136d15d7b0f89b41c9a589d8c779e9"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_COMPLETE_RECORD_CHANNEL_AND_NATIVE_COST_SOURCE.md",
+      "sha256": "2128009802edff3e111a26961f050320fd878d7412ed93bfad5d5c9e4219db79",
+      "source_ref": "57b7c37f6e136d15d7b0f89b41c9a589d8c779e9"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/BOOK_SOURCE_BINDING.md",
+      "sha256": "2b26bf2f4c1b128731ccf14a17437ba654c046e82b5e42e55113a8b6053494ea",
+      "source_ref": "57b7c37f6e136d15d7b0f89b41c9a589d8c779e9"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_relative_history_first_jet_2026-10-20/inputs/SMOOTH_BULK_FULL128_C1_HEAT_HISTORY_TRANSFER_AT_BE5E5BD0.md",
+      "sha256": "d67744ae95c062cdf84dd1c10223501eb566f036d58504064557880fc3a4c4af",
+      "source_ref": "be5e5bd0986850cf37f9eec36bcaec341d306b44",
+      "source_path": "02_REGISTRY/research/sources/d0_same_history_price_composition_2026-10-20/SMOOTH_BULK_FULL128_C1_HEAT_HISTORY_TRANSFER.md"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_relative_history_first_jet_2026-10-20/inputs/MINIMAL_GOLDEN_COMPLETE_SOURCE_AT_C16531E3.md",
+      "sha256": "f6a5724e087c58b4294020a59532b7117f55247013181bcd4fd30d069a649330",
+      "source_ref": "c16531e386a68b1f45c9fc55cc2acb956cfdf7b7",
+      "source_path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/MINIMAL_GOLDEN_COMPLETE_SOURCE.md"
+    }
+  ],
+  "frozen_artifacts": [
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_RELATIVE_HISTORY_FIRST_JET_AND_MARKED_LIMIT_2026_10_20.md",
+      "sha256": "5fc2cc5c77d41ac5ae4cc774dc7e9a56f271d5c3b4189f20b22e8f70f21c8f7e"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_relative_history_first_jet_2026-10-20/RESULT.md",
+      "sha256": "d1c3cff174b2e4d03481ca6b3d18a1da2d3b65baba1f2dbf886324d8ce7f607d"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_relative_history_first_jet_2026-10-20/check_relative_history_first_jet.py",
+      "sha256": "0c69dc21fd66e06eefacf9ab047f186ff1e4e93818aff38aca4187968a70b468"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_relative_history_first_jet_2026-10-20/RELATIVE_HISTORY_FIRST_JET.json",
+      "sha256": "b19a2eea6df597e12a9e358eb16c7827617a859e09627f2b6208b2861dff50b2"
+    }
+  ],
+  "external_primary_context": [
+    {
+      "url": "https://arxiv.org/html/2605.03655v1",
+      "result": "Proposition0.3.4; complete locally convex integration interface"
+    },
+    {
+      "url": "https://arxiv.org/html/2605.03658v1",
+      "result": "Corollary0.6.1(iii); real solidification boundary"
+    }
+  ],
+  "scope": "Exact fixed-shell complete native history jet and analytic marked C1 completion, with a separately proved physical nu=h*a application on the prospective h^-4 clock. Actual clock/Book selection, primary spatial transfer and raw source remain open.",
+  "concurrent_integration_ref": "be5e5bd0986850cf37f9eec36bcaec341d306b44",
+  "reporter_selection_ref": "c16531e386a68b1f45c9fc55cc2acb956cfdf7b7"
+}

@@ -9633,3 +9633,54 @@ This is an exact scoped selection theorem, not a no-go for D0 or the
 positive Einstein sector. Independent review accepted the final proof
 SHA256 f6a5724e087c58b4294020a59532b7117f55247013181bcd4fd30d069a649330.
 No new numerical check or unchanged suite was needed.
+
+
+### 20 October: complete native history first jets and explicit marked completion
+
+The [marked-history application](A4D_NATIVE_RELATIVE_HISTORY_FIRST_JET_AND_MARKED_LIMIT_2026_10_20.md)
+executes the user's condensed-mathematics lead on the already owned
+isotropic CAR16/eight-first-shell full128 programme. The exact real
+scalar cross gives zero coherent connection and V_n'^*V_n'=n q_h I,
+with q_h=O(h^2). At the original n_h=128/h^2 horizon this supplies the
+missing absolute cylinder first-jet bound. It is distinct from the
+newer aggregate smooth-bulk heat/history estimate.
+
+An explicit parameter-independent isometry embeds the COMPLETE retained
+tape into marked ordered time cells; all original labels, work, phases
+and oldRIGHT correlations remain. Summable event-sector and derivative
+bounds prove C1 operator convergence to the full finite-time marked
+amplitude, with no trace or probability compression. Golden port-time
+shifts have a separately controlled weak first-source limit on[0,2T],
+while all return marks and unscaled costs remain recorded.
+
+Consumer substitution: BOOK_SOURCE_BINDING section2 can now use this
+common complete history first-jet carrier on the declared shell, for
+supplied bounded-operator C1-convergent memory/price/readout maps and
+a controlled positive denominator. General coherent cross terms and
+raw normalizer derivatives are retained. The construction does not
+supply those physical maps, a hidden field-dependent normalization,
+or their continuation law. Transfer to the actual unequal-density
+nonvacuum primary carrier and original all10 h^-2 raw source remains
+open; this supporting completion result does not narrow that target.
+Proof, focused original-matrix calibration, phase negative control,
+pins and independent review are kept in the source packet. No new
+task, action, lifecycle/assembly acceptance or GR closure.
+
+Physical-scale integration consumes the concurrent sharp low-shell
+clock atbe5e5bd0: nu_h=h a has a trivial complete C1 tape on the
+old h^-2 horizon. The same proof separately yields a full coherent
+marked C1 limit at R_h=128/h^4, with tau_h=epsilon_h h^2. Its cross is
+exp[-2pi^2 T(a-b)^2]I and its tangent metric tends to8pi^2 p^2.
+This extends the owned any-nonblank pointer limit at kappa128; it
+retains the paid h^-4 baseline and divergent original epsilon-time.
+It does not establish a physical clock-selection rule. The new
+minimal Golden reporter's conditional complete finite price/source
+is also retained; the present history theorem supplies its distinct
+potential completion interface, not a replacement information law.
+
+The subsequent exact terminal-price minimum atc16531e3 rejects selection
+of that G^2 reporter on its admitted same task: the minimizing alternatives
+have zero first source on Sigma. The history theorem retains this scoped
+negative. Its only relevant extension would use a derived future task
+and actual continuation price that changes the comparison, or a different
+programme; a nonzero-source requirement cannot choose G^2 by definition.

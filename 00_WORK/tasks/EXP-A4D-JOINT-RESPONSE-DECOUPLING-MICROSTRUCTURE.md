@@ -2728,3 +2728,61 @@ clock. Independent agents accepted final proof hash
 f6a5724e087c58b4294020a59532b7117f55247013181bcd4fd30d069a649330.
 The source checker is unchanged; no redundant replay, task, claim,
 lifecycle or assembly promotion.
+
+
+### 20 October: full retained first jets and an explicit marked-history carrier
+
+Phase: conditional transfer within the existing native-realization owner.
+This executes the bounded condensed lead above; it does not replace the
+primary nonvacuum/complete-price application by a different physical theory.
+Inputs at57b7c37f: original full128 relative-transfer sections1--5, existing
+variable-record innovation bound and BOOK_SOURCE_BINDING section2 Theorem1.
+Reuse the exact CAR16/eight-first-shell isotropic chart and every oldRIGHT
+state, complete128 output label, Julia root and original fixed round clock.
+
+Exact target: extend the owned scalar cross c_h(nu_y,nu_x) to its actual
+parameter neighbourhood, derive V_n*V_n'=0 and V_n'^*V_n'=n q_h I with
+q_h=p^2 w_h(2-nu^2)/(128(1-nu^2)), and bound complete coherent-cylinder
+first variation uniformly through n_h=128/h^2. Then provide an explicit
+isometric ordered-time-cell embedding of the ENTIRE finite coherent tape,
+not only probabilities, and prove C1 operator convergence to its finite-time
+marked-amplitude series. The common carrier is the fixed first-shell DATA
+and oldRIGHT tensored with the ordered Fock history space of127 nonblank
+marks. The physically distinct original Golden port clock and all return
+costs remain recorded; its weak time-readout limit requires its own bound.
+
+Consumer: supplies the missing common full-history first-jet carrier for
+extending BOOK_SOURCE_BINDING Theorem1 to supplied bounded C1 memory/price
+and readout maps with a controlled positive denominator. The actual physical
+Info/work law, admission, unwrapped nonvacuum spatial carrier and original
+h^-2 raw all-grid source remain open. The newer smooth-bulk aggregate heat
+estimate57b7c37f is consumed at its different scope, not repeated.
+
+Write paths: new d0_native_relative_history_first_jet_2026-10-20 packet,
+summary/certificate and append-only task/primary intake. Root owns the proof
+and scope; bounded checker implementation and read-only independent review
+remain in this PR. Smallest checks: exact mixed derivative of the actual
+cross, complete128 single-round connection/metric on all eight shell modes,
+and the phase-connection negative control. All-depth and marked-limit
+claims require the analytic induction and summable sector/jet estimates,
+not finite-word enumeration. No new task, action, lifecycle or GR promotion.
+
+Integration atbe5e5bd0: consume the existing low-shell owner's sharp
+h^-4 distinguishability clock. The physical coframe is nu_h=h a,
+not a fixed positive native nu. Its h^-2 complete history and a jet
+collapse to blank. A separate application of the same literal-coefficient
+proof at R_h=128/h^4, tau_h=epsilon_h h^2 gives a nontrivial complete
+coherent C1 history with limiting metric8pi^2 p^2. All R_h rounds and
+original port surplus remain paid; original epsilon-time diverges.
+The consuming Book extension still requires admitted clock and convergent
+valuation/readout maps. Consume MINIMAL_GOLDEN_COMPLETE_SOURCE's existing
+conditional finite reporter work/source, without reopening that result
+or treating it as a physical selection theorem. Relevant versions are
+snapshotted in this packet with their Git source paths and hashes.
+
+Selection correction atc16531e3 is consumed explicitly: the conditional
+G^2 reporter source is strictly dominated in its admitted same-task
+terminal-price family. The selected alternatives have zero first source
+on Sigma. This continuation therefore targets a possible derived future
+task/decoder and actual continuation price, or requires a different
+programme; it cannot assert that history completion selects G^2.
