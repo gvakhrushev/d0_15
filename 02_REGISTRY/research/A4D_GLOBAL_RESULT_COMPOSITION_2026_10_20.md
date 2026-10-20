@@ -507,3 +507,25 @@ which is STRICTLY POSITIVE DEFINITE on ALL 34 metric10+Lorentz24 coordinates. Th
 A sharp operational distinction follows: the 35-category native full readout can be a mathematically COMPLETE sensor AND nevertheless every proper smooth positive-distance action built from it can be dynamically WRONG for Lorentz gravity. Observability, classically positive operational verification cost, actual Book03 price selection and the signed variational equation are four distinct structures. The project should stop searching positive scalar distances for the remaining Lorentz-action law on this carrier. The next SAME physical complete-price source and FIELD-WRITER gates are precisely (17)–(19), with the original noncommutative retained-memory and internal saddle source preserved.
 
 Proof uses exact differentiability and one fullrank PIN34 minor from the inherited native owner. No large full128 symbolic suite was rerun and no CORE/BOOK/assembly or GR status is changed.
+
+
+### 8.7. STATIONARY-SECTION ESCAPE: full-price fibre invariance is NOT necessary for an effective geometric action
+
+This is the CONSTRUCTIVE synthesis of §8.2–8.6 with the already-owned one-action double Schur in A4D_UNIFIED_BOOK_GEOMETRY_DOUBLE_SCHUR_RESPONSE_SYNTHESIS and the real causal adjoint state elimination in A4D_CAUSAL_BOOK_SOURCE_TO_EXACT_GR_SYNTHESIS. Do NOT turn the exact same-odds/different-paid-cost counterexample from §4 into a universal prohibition of geometry: it only rules out a price which descends automatically by **forgetting all programme/resource variables**.
+
+Let S(g,z) be the ONE actually admitted native full Cost−Info/action on a common real programme/chart, with g the geometric metric10+link24 coordinates and z its physically paid internal histories, executed states, oldRIGHT/controller/prep, clock and archive variables (each carrying the correct actual constraints). Suppose there is an actual locally selected smooth stationary/constraint section z=z_*(g), satisfying the FULL native internal equations, and its linearized internal operator has a legitimate inverse on the original stationary quotient. Then the effective scalar
+
+    S_red(g)=S(g,z_*(g))
+
+has the exact first derivative and Hessian
+
+    D S_red = (D_g S)|_(g,z_*),
+    H_red=H_gg-H_gz H_zz^(-1) H_zg.                         (22)
+
+When proper Lorentz links K and histories nu are both internal, the already-owned same-action DOUBLE Schur gives the associative H_geom-R^T J^(-1) R formula on its valid range/center quotient. If H_zz is singular or the physical constraint derivative has a nontrivial cokernel, NO ordinary inverse or illegitimate field source is silently installed: solve the actual Fredholm/range conditions first. Deterministically executed states in the actual full128 recursion can be eliminated by the already-owned CAUSAL ADJOINT, without treating them as free scalar variational minima; genuinely independent prep/Info/work/clock equations stay.
+
+Thus two different full-price programmes with the SAME finite geometric readout may have different costs, as §4 proves, and yet a **single admitted, source-stationary programme SECTION** can supply a valid effective local geometric source. No universal equality of all costs on observational fibres is required. The section must be independently selected by D0's real task, preparation and historical constraints; choosing it to cancel E_star by hand is NOT an admissible repair.
+
+At that point the exact 34 native history-score chart gives a canonical numerical/symbolic coordinate system for testing (18), while the actual reachability Jacobian Dr from §8.2 determines whether stationary programme variations imply FULL field Euler or only restricted equations. This is the minimum noncircular positive completion route: (i) native selected programme and price, (ii) its own real causal/Schur internal stationary section, (iii) reachable geometric tangents, (iv) vanishing off-shell source defect on the original 34 chart, and independently (v) physical full all40+2/root/refinement or local natural Golden Ward for universal Einstein class.
+
+The mathematical lemma (22) is standard and already present in the existing same-action owner; the NEW contribution is its strict COMPOSITION with actual full128 score-saturation, the failed total-fibre price descent and the exact field-minimum exclusion. This route does not claim the actual native stationary section has already been physically admitted or solved. GR_closed=false.
