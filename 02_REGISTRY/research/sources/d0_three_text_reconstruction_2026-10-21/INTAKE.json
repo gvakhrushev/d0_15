@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-21",
+  "repository_head": "8ba0bd929499e639b0fe4640ffa448631f3b024b",
+  "scope": "Reconstruct mathematical content from three human-supplied texts and live owned sources. New proofs/checks do not restore unavailable historical bytes, commits or execution receipts. Existing PR334; physical GR open.",
+  "original_texts": [
+    {
+      "source_attachment": "/Users/grigorijvahrusev/.codex/attachments/17d569ef-ff7c-421d-baaa-b103f0532240/Вставленный текст.txt",
+      "saved_original": "02_REGISTRY/research/sources/d0_three_text_reconstruction_2026-10-21/originals/01_oriented_complete_price.txt",
+      "sha256": "e7e02b0a1efa2458b6756e0faaf694d333492c65d74fa3a67d364d8a0162b9b4",
+      "bytes": 32611,
+      "status": "Exact supplied text preserved; referenced zip/patch/proof/checker/receipts unavailable."
+    },
+    {
+      "source_attachment": "/Users/grigorijvahrusev/.codex/attachments/890e5792-cb73-466a-85c7-7e6709f1e3cd/Вставленный текст.txt",
+      "saved_original": "02_REGISTRY/research/sources/d0_three_text_reconstruction_2026-10-21/originals/02_full_record_measurement.txt",
+      "sha256": "7a4da058ac9f6bd2096d1cba67ed18ec6b487fd27ac535c090d99aefb6cafdaf",
+      "bytes": 22129,
+      "status": "Exact supplied text preserved; referenced zip/patch/proof/checker/receipts unavailable."
+    },
+    {
+      "source_attachment": "/Users/grigorijvahrusev/.codex/attachments/1bc35f5e-29eb-4c5f-91cb-fede6a1bf17b/Вставленный текст.txt",
+      "saved_original": "02_REGISTRY/research/sources/d0_three_text_reconstruction_2026-10-21/originals/03_nonvacuum_normal_form.txt",
+      "sha256": "17f7e9fdeae3c0f0744c61662f7bd6b4261552673f3843f32ba7aed205670b78",
+      "bytes": 26249,
+      "status": "Exact supplied text preserved; referenced zip/patch/proof/checker/receipts unavailable."
+    }
+  ]
+}

@@ -3273,3 +3273,49 @@ genuine link/preparation finite differences. The fixture remains rank16
 Fourier with 16 RIGHT columns, not primary full-site RIGHT128.
 No old large suite, rank scan or Lean build is rerun; no lifecycle, Book,
 CORE or physical-GR acceptance is promoted.
+
+## 21 October continuation: three lost-result text reconstructions
+
+Phase: native realization / conditional composition, existing constitutive
+and native_sector consumer, native-programme-v1, same Draft #334. No new
+scientific execution or lifecycle/assembly acceptance is introduced.
+
+The [integrated reconstruction](../../02_REGISTRY/research/A4D_THREE_RECOVERED_RESULTS_INTEGRATION_2026_10_21.md)
+preserves all three supplied reports verbatim and reconstructs their proof
+content from input head 8ba0bd92 and the original owners. The historical
+ZIP/patch, 3bf6ca637 commit and historical receipts were unavailable; the
+new proof/checker/review bytes and runs have independent provenance.
+
+Parent substitutions: the original thirteen-effect full flag detector now
+has an explicit locally unbiased six-coordinate estimator, exact FI/QFI,
+and polynomial query upper/lower bounds; the Golden17 conditional fresh
+record programme has a finite paid oriented mixed source with its own-price
+and absolute-normalizer remainder retained; the actual supplied complete
+two-density CQ function admits an auxiliary stationary reduction to a
+linear geometric density plus determined nonlinear matter K. With the original
+sigma=-1 material orientation, minus its finite scalar ratio equals the
+existing CAR lambda_minus exactly. The owned
+unit-price bound kappa>266/5 supplies nonzero slope for all fixed finite caps.
+
+Remaining application: prove the actual original all40+2 query, preparation,
+weights and normalization obey the independent local density scaling law,
+and retain/solve every baseline and internal source on the primary family.
+The thirteen-effect, Golden17 and two-band CQ executions are not identified
+merely by these theorems. Original same-carrier field-minimum exclusion
+remains; the new normal form preserves physical Hessian inertia and only
+establishes full stationary equivalence under its stated hypotheses.
+
+Carrier/norm/source: original full CAR16, original oldRIGHT128 spectator,
+fresh Choi R4 where explicitly used; independent proper-Lorentz links and
+16 coframe components; nondensitized matter; every paid stopped record,
+conditional source and genuine preparation/work term. Julia subdivision,
+spatial refinement and phi metric scaling remain different maps.
+
+Write surface: three_text_reconstruction packet, linked composition,
+complete-record/odds and normal-form proofs, narrow parent/README pointers.
+Smallest decisive checks: original effect first jets and full flag moments;
+complete finite-bank sampler/entropy source and hostile free-bit control;
+exact coupled auxiliary Schur, full null-stratum source, finite lambda and
+all-cap sign bound plus a high-precision section diagnostic. Existing
+heavy all40+2, full128, compiler and Lean suites are consumed unchanged.
+Native compulsory complete price, same-source application and GR remain open.

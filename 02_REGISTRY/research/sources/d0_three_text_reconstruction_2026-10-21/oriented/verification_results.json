@@ -1,0 +1,596 @@
+{
+  "status": "PASS_NEW_ORIENTED_RECONSTRUCTION",
+  "created": "2026-10-21",
+  "historical_bytes_recovered": false,
+  "historical_217_checks_reused": false,
+  "historical_39424_histories_reused": false,
+  "new_check_count": 141,
+  "full_N1_fixture": {
+    "bank_raw_histories": 16384,
+    "ready_bank_histories": 96,
+    "full_terminal_histories_per_setting": 264144,
+    "settings": 4,
+    "total_terminal_histories_evaluated": 1056576,
+    "equal_probability_buckets": 1464,
+    "golden_bits_prepaid": 14,
+    "readiness": "0.00392220950481095111894076238431",
+    "all_17_query_labels_retained": true,
+    "full_raw_bank_and_both_queries_retained": true,
+    "numeric_digits": 70,
+    "largest_absolute_price_error": "8.69345191567e-70",
+    "mixed_rectangle": "4.3374513028005993886831073513763145e-18",
+    "predicted_rectangle": "4.3374513028005993886831073513763145e-18",
+    "rectangle_error": "5.92624238964e-71"
+  },
+  "scope": "New conditional identities and full classical N=1 model using original q17; not physical full Book, not quantum full transcript independence, not full128 replay/rank or compulsory admission.",
+  "checker_sha256": "fe6b278f81ccf5cc24be1dc7815d333ed2cc01c4325b8749a2db1e3370fc9d4a",
+  "runtime_seconds": 0.476,
+  "sympy_version": "1.14.0",
+  "mpmath_version": "1.3.0",
+  "checks": [
+    {
+      "name": "sampler_normalized_N1",
+      "status": "PASS"
+    },
+    {
+      "name": "sampler_positive_derivative_formula_N1",
+      "status": "PASS"
+    },
+    {
+      "name": "sampler_tree_N1_x0",
+      "status": "PASS"
+    },
+    {
+      "name": "sampler_tree_N1_x1/5",
+      "status": "PASS"
+    },
+    {
+      "name": "sampler_tree_N1_x3/7",
+      "status": "PASS"
+    },
+    {
+      "name": "sampler_tree_N1_x1",
+      "status": "PASS"
+    },
+    {
+      "name": "sampler_normalized_N2",
+      "status": "PASS"
+    },
+    {
+      "name": "sampler_positive_derivative_formula_N2",
+      "status": "PASS"
+    },
+    {
+      "name": "sampler_tree_N2_x0",
+      "status": "PASS"
+    },
+    {
+      "name": "sampler_tree_N2_x1/5",
+      "status": "PASS"
+    },
+    {
+      "name": "sampler_tree_N2_x3/7",
+      "status": "PASS"
+    },
+    {
+      "name": "sampler_tree_N2_x1",
+      "status": "PASS"
+    },
+    {
+      "name": "sampler_normalized_N3",
+      "status": "PASS"
+    },
+    {
+      "name": "sampler_positive_derivative_formula_N3",
+      "status": "PASS"
+    },
+    {
+      "name": "sampler_tree_N3_x0",
+      "status": "PASS"
+    },
+    {
+      "name": "sampler_tree_N3_x1/5",
+      "status": "PASS"
+    },
+    {
+      "name": "sampler_tree_N3_x3/7",
+      "status": "PASS"
+    },
+    {
+      "name": "sampler_tree_N3_x1",
+      "status": "PASS"
+    },
+    {
+      "name": "sampler_normalized_N4",
+      "status": "PASS"
+    },
+    {
+      "name": "sampler_positive_derivative_formula_N4",
+      "status": "PASS"
+    },
+    {
+      "name": "sampler_tree_N4_x0",
+      "status": "PASS"
+    },
+    {
+      "name": "sampler_tree_N4_x1/5",
+      "status": "PASS"
+    },
+    {
+      "name": "sampler_tree_N4_x3/7",
+      "status": "PASS"
+    },
+    {
+      "name": "sampler_tree_N4_x1",
+      "status": "PASS"
+    },
+    {
+      "name": "sampler_normalized_N5",
+      "status": "PASS"
+    },
+    {
+      "name": "sampler_positive_derivative_formula_N5",
+      "status": "PASS"
+    },
+    {
+      "name": "sampler_tree_N5_x0",
+      "status": "PASS"
+    },
+    {
+      "name": "sampler_tree_N5_x1/5",
+      "status": "PASS"
+    },
+    {
+      "name": "sampler_tree_N5_x3/7",
+      "status": "PASS"
+    },
+    {
+      "name": "sampler_tree_N5_x1",
+      "status": "PASS"
+    },
+    {
+      "name": "sampler_normalized_N6",
+      "status": "PASS"
+    },
+    {
+      "name": "sampler_positive_derivative_formula_N6",
+      "status": "PASS"
+    },
+    {
+      "name": "sampler_tree_N6_x0",
+      "status": "PASS"
+    },
+    {
+      "name": "sampler_tree_N6_x1/5",
+      "status": "PASS"
+    },
+    {
+      "name": "sampler_tree_N6_x3/7",
+      "status": "PASS"
+    },
+    {
+      "name": "sampler_tree_N6_x1",
+      "status": "PASS"
+    },
+    {
+      "name": "golden_units",
+      "status": "PASS"
+    },
+    {
+      "name": "bank_d2_accepted_code0_equal_raw_cost",
+      "status": "PASS"
+    },
+    {
+      "name": "bank_d2_accepted_code1_equal_raw_cost",
+      "status": "PASS"
+    },
+    {
+      "name": "bank_exact_uniform_d2",
+      "status": "PASS"
+    },
+    {
+      "name": "bank_d4_accepted_code0_equal_raw_cost",
+      "status": "PASS"
+    },
+    {
+      "name": "bank_d4_accepted_code1_equal_raw_cost",
+      "status": "PASS"
+    },
+    {
+      "name": "bank_d4_accepted_code2_equal_raw_cost",
+      "status": "PASS"
+    },
+    {
+      "name": "bank_d4_accepted_code3_equal_raw_cost",
+      "status": "PASS"
+    },
+    {
+      "name": "bank_exact_uniform_d4",
+      "status": "PASS"
+    },
+    {
+      "name": "bank_d6_accepted_code0_equal_raw_cost",
+      "status": "PASS"
+    },
+    {
+      "name": "bank_d6_accepted_code1_equal_raw_cost",
+      "status": "PASS"
+    },
+    {
+      "name": "bank_d6_accepted_code2_equal_raw_cost",
+      "status": "PASS"
+    },
+    {
+      "name": "bank_d6_accepted_code3_equal_raw_cost",
+      "status": "PASS"
+    },
+    {
+      "name": "bank_d6_accepted_code4_equal_raw_cost",
+      "status": "PASS"
+    },
+    {
+      "name": "bank_d6_accepted_code5_equal_raw_cost",
+      "status": "PASS"
+    },
+    {
+      "name": "bank_exact_uniform_d6",
+      "status": "PASS"
+    },
+    {
+      "name": "bank_d8_accepted_code0_equal_raw_cost",
+      "status": "PASS"
+    },
+    {
+      "name": "bank_d8_accepted_code1_equal_raw_cost",
+      "status": "PASS"
+    },
+    {
+      "name": "bank_d8_accepted_code2_equal_raw_cost",
+      "status": "PASS"
+    },
+    {
+      "name": "bank_d8_accepted_code3_equal_raw_cost",
+      "status": "PASS"
+    },
+    {
+      "name": "bank_d8_accepted_code4_equal_raw_cost",
+      "status": "PASS"
+    },
+    {
+      "name": "bank_d8_accepted_code5_equal_raw_cost",
+      "status": "PASS"
+    },
+    {
+      "name": "bank_d8_accepted_code6_equal_raw_cost",
+      "status": "PASS"
+    },
+    {
+      "name": "bank_d8_accepted_code7_equal_raw_cost",
+      "status": "PASS"
+    },
+    {
+      "name": "bank_exact_uniform_d8",
+      "status": "PASS"
+    },
+    {
+      "name": "bank_d10_accepted_code0_equal_raw_cost",
+      "status": "PASS"
+    },
+    {
+      "name": "bank_d10_accepted_code1_equal_raw_cost",
+      "status": "PASS"
+    },
+    {
+      "name": "bank_d10_accepted_code2_equal_raw_cost",
+      "status": "PASS"
+    },
+    {
+      "name": "bank_d10_accepted_code3_equal_raw_cost",
+      "status": "PASS"
+    },
+    {
+      "name": "bank_d10_accepted_code4_equal_raw_cost",
+      "status": "PASS"
+    },
+    {
+      "name": "bank_d10_accepted_code5_equal_raw_cost",
+      "status": "PASS"
+    },
+    {
+      "name": "bank_d10_accepted_code6_equal_raw_cost",
+      "status": "PASS"
+    },
+    {
+      "name": "bank_d10_accepted_code7_equal_raw_cost",
+      "status": "PASS"
+    },
+    {
+      "name": "bank_d10_accepted_code8_equal_raw_cost",
+      "status": "PASS"
+    },
+    {
+      "name": "bank_d10_accepted_code9_equal_raw_cost",
+      "status": "PASS"
+    },
+    {
+      "name": "bank_exact_uniform_d10",
+      "status": "PASS"
+    },
+    {
+      "name": "bank_d12_accepted_code0_equal_raw_cost",
+      "status": "PASS"
+    },
+    {
+      "name": "bank_d12_accepted_code1_equal_raw_cost",
+      "status": "PASS"
+    },
+    {
+      "name": "bank_d12_accepted_code2_equal_raw_cost",
+      "status": "PASS"
+    },
+    {
+      "name": "bank_d12_accepted_code3_equal_raw_cost",
+      "status": "PASS"
+    },
+    {
+      "name": "bank_d12_accepted_code4_equal_raw_cost",
+      "status": "PASS"
+    },
+    {
+      "name": "bank_d12_accepted_code5_equal_raw_cost",
+      "status": "PASS"
+    },
+    {
+      "name": "bank_d12_accepted_code6_equal_raw_cost",
+      "status": "PASS"
+    },
+    {
+      "name": "bank_d12_accepted_code7_equal_raw_cost",
+      "status": "PASS"
+    },
+    {
+      "name": "bank_d12_accepted_code8_equal_raw_cost",
+      "status": "PASS"
+    },
+    {
+      "name": "bank_d12_accepted_code9_equal_raw_cost",
+      "status": "PASS"
+    },
+    {
+      "name": "bank_d12_accepted_code10_equal_raw_cost",
+      "status": "PASS"
+    },
+    {
+      "name": "bank_d12_accepted_code11_equal_raw_cost",
+      "status": "PASS"
+    },
+    {
+      "name": "bank_exact_uniform_d12",
+      "status": "PASS"
+    },
+    {
+      "name": "bank_d24_accepted_code0_equal_raw_cost",
+      "status": "PASS"
+    },
+    {
+      "name": "bank_d24_accepted_code1_equal_raw_cost",
+      "status": "PASS"
+    },
+    {
+      "name": "bank_d24_accepted_code2_equal_raw_cost",
+      "status": "PASS"
+    },
+    {
+      "name": "bank_d24_accepted_code3_equal_raw_cost",
+      "status": "PASS"
+    },
+    {
+      "name": "bank_d24_accepted_code4_equal_raw_cost",
+      "status": "PASS"
+    },
+    {
+      "name": "bank_d24_accepted_code5_equal_raw_cost",
+      "status": "PASS"
+    },
+    {
+      "name": "bank_d24_accepted_code6_equal_raw_cost",
+      "status": "PASS"
+    },
+    {
+      "name": "bank_d24_accepted_code7_equal_raw_cost",
+      "status": "PASS"
+    },
+    {
+      "name": "bank_d24_accepted_code8_equal_raw_cost",
+      "status": "PASS"
+    },
+    {
+      "name": "bank_d24_accepted_code9_equal_raw_cost",
+      "status": "PASS"
+    },
+    {
+      "name": "bank_d24_accepted_code10_equal_raw_cost",
+      "status": "PASS"
+    },
+    {
+      "name": "bank_d24_accepted_code11_equal_raw_cost",
+      "status": "PASS"
+    },
+    {
+      "name": "bank_d24_accepted_code12_equal_raw_cost",
+      "status": "PASS"
+    },
+    {
+      "name": "bank_d24_accepted_code13_equal_raw_cost",
+      "status": "PASS"
+    },
+    {
+      "name": "bank_d24_accepted_code14_equal_raw_cost",
+      "status": "PASS"
+    },
+    {
+      "name": "bank_d24_accepted_code15_equal_raw_cost",
+      "status": "PASS"
+    },
+    {
+      "name": "bank_d24_accepted_code16_equal_raw_cost",
+      "status": "PASS"
+    },
+    {
+      "name": "bank_d24_accepted_code17_equal_raw_cost",
+      "status": "PASS"
+    },
+    {
+      "name": "bank_d24_accepted_code18_equal_raw_cost",
+      "status": "PASS"
+    },
+    {
+      "name": "bank_d24_accepted_code19_equal_raw_cost",
+      "status": "PASS"
+    },
+    {
+      "name": "bank_d24_accepted_code20_equal_raw_cost",
+      "status": "PASS"
+    },
+    {
+      "name": "bank_d24_accepted_code21_equal_raw_cost",
+      "status": "PASS"
+    },
+    {
+      "name": "bank_d24_accepted_code22_equal_raw_cost",
+      "status": "PASS"
+    },
+    {
+      "name": "bank_d24_accepted_code23_equal_raw_cost",
+      "status": "PASS"
+    },
+    {
+      "name": "bank_exact_uniform_d24",
+      "status": "PASS"
+    },
+    {
+      "name": "original_six_eta_skew_and_orthogonal",
+      "status": "PASS"
+    },
+    {
+      "name": "noncommuting_plaquette_exact_SO",
+      "status": "PASS"
+    },
+    {
+      "name": "component_projection_exact",
+      "status": "PASS"
+    },
+    {
+      "name": "component_polarization_exact",
+      "status": "PASS"
+    },
+    {
+      "name": "Lorentz_reference_nilpotent",
+      "status": "PASS"
+    },
+    {
+      "name": "Lorentz_reference_rotation",
+      "status": "PASS"
+    },
+    {
+      "name": "Lorentz_reference_boost",
+      "status": "PASS"
+    },
+    {
+      "name": "dual_projection_for_arbitrary_B",
+      "status": "PASS"
+    },
+    {
+      "name": "unprojected_generic_reference_rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "original_q17_reversal_119",
+      "status": "PASS"
+    },
+    {
+      "name": "original_q17_chernoff_diagonal_120",
+      "status": "PASS"
+    },
+    {
+      "name": "original_q17_reversal_121",
+      "status": "PASS"
+    },
+    {
+      "name": "original_q17_chernoff_diagonal_122",
+      "status": "PASS"
+    },
+    {
+      "name": "original_q17_reversal_123",
+      "status": "PASS"
+    },
+    {
+      "name": "original_q17_chernoff_diagonal_124",
+      "status": "PASS"
+    },
+    {
+      "name": "complete_bank_structure",
+      "status": "PASS"
+    },
+    {
+      "name": "all_terminal_statuses_retained",
+      "status": "PASS"
+    },
+    {
+      "name": "complete_N1_price_setting_00",
+      "status": "PASS"
+    },
+    {
+      "name": "complete_N1_price_setting_01",
+      "status": "PASS"
+    },
+    {
+      "name": "complete_N1_price_setting_10",
+      "status": "PASS"
+    },
+    {
+      "name": "complete_N1_price_setting_11",
+      "status": "PASS"
+    },
+    {
+      "name": "complete_N1_mixed_rectangle",
+      "status": "PASS"
+    },
+    {
+      "name": "cached_register_cannot_replace_fresh",
+      "status": "PASS"
+    },
+    {
+      "name": "minimum_iff_square_completion",
+      "status": "PASS"
+    },
+    {
+      "name": "inverse_pair_exposes_negative_excess",
+      "status": "PASS"
+    },
+    {
+      "name": "log_probability_coefficient",
+      "status": "PASS"
+    },
+    {
+      "name": "coarse_entropy_34_block_negative",
+      "status": "PASS"
+    },
+    {
+      "name": "nonlinear_embedding_second_jet_required",
+      "status": "PASS"
+    },
+    {
+      "name": "normalized_weights_ignore_common_scale",
+      "status": "PASS"
+    },
+    {
+      "name": "absolute_normalizer_source_survives",
+      "status": "PASS"
+    },
+    {
+      "name": "full_price_score_covariance",
+      "status": "PASS"
+    }
+  ]
+}

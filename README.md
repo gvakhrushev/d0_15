@@ -35,6 +35,17 @@ the full price derivative to stationary source transport. The same
 radial map has a proved boundary for nondensitized matter; compulsory
 Book valuation, physical field/time binding and GR closure remain open.
 
+The [three reconstructed results](02_REGISTRY/research/A4D_THREE_RECOVERED_RESULTS_INTEGRATION_2026_10_21.md)
+restore the user's missing research from preserved texts and original owners:
+full Julia-flag readout has a polynomial local estimation budget; a finite
+paid Golden17 programme realizes an oriented mixed price source; and a
+given complete two-density price has an exact local stationary normal form
+with its nonlinear matter term retained. Its signed finite coupling matches
+the original lambda_minus exactly. The same-execution preparation, spatial
+weights, full internal sources and compulsory price selection are still
+required. New checks and independent reviews have their own provenance;
+historical missing archives/commits are not claimed recovered.
+
 ## Current objective: close the D0 foundation through general relativity
 
 D0 starts from the **necessary operational structure of verifiability**:

@@ -1,0 +1,31 @@
+{
+  "repository_head": "8ba0bd929499e639b0fe4640ffa448631f3b024b",
+  "status": "Existing source owners consumed at their stated interfaces; no old heavy replay",
+  "sources": [
+    {
+      "path": "02_REGISTRY/research/A4D_ONE_HISTORY_SCENE_ABSOLUTE_PRESSURE_FEEDBACK_COMPLETENESS_2026_10_19.md",
+      "git_blob": "8b91bfbb2eb7e103f57c81aa1a165cf47da01e3d",
+      "sha256": "7e14b786d40c3080542615140336bc032581444f402c7955799ce33b6a664faa"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_PRIMARY_NORMAL_SOURCE_RECOVERY_SYNTHESIS_2026_10_21.md",
+      "git_blob": "ea01b8cdb9046ed28b3f02dd23c650d1dea43783",
+      "sha256": "d6ca03b9a16a352c7741eb9cb8657f34cd84c6a0a3c6f16e5b58c0b8574a3a22"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_JOINT_FIELD_MINIMUM_EXCLUSION_2026_10_20.md",
+      "git_blob": "bd0fe57263a8bb37cec51e60c56d28730def2646",
+      "sha256": "3a13f82d4b1ef149328da05b62bd0485d1970db3ed4fb38aff044e98f2b6df1a"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_CAUSAL_BOOK_SOURCE_TO_EXACT_GR_SYNTHESIS_2026_10_20.md",
+      "git_blob": "275d6a7c1d2fb6bc7cb10f6c1cd7b358070b405a",
+      "sha256": "88e3b77b08603da9b7b4e24372ff126c3370764d03a36171456df60f72a17248"
+    },
+    {
+      "path": "02_REGISTRY/research/D0_GR_PRIMARY_POSITIVE_CASE.md",
+      "git_blob": "12b14ee596cf5e11a41eaa0752c091154263ee78",
+      "sha256": "153f0128bd1e592a58c506afff936ecc675e0faf58a1487c84e58dab17447a24"
+    }
+  ]
+}

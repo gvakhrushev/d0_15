@@ -246,3 +246,26 @@ the replay script from blob `589ab3b36a03bd848ae1f74adc3c6e7221fe40fb`.
 The construction uses existing original all40 + configured Golden-`J2`
 proof owners; it is **not** an independently accepted physical
 `GR` theorem, and publishing it in main does not change that status.
+
+## Reconstructed complete-price nonvacuum stationary application
+
+The [three-text reconstruction and integration](A4D_THREE_RECOVERED_RESULTS_INTEGRATION_2026_10_21.md)
+recovers the user's lost proof content with new source pins, checkers and
+independent reviews. Its [stationary normal form](A4D_COMPLETE_PRICE_NONVACUUM_STATIONARY_NORMAL_FORM_2026_10_21.md)
+extends a given complete two-density price from the vacuum-only radial
+identity to `B+sum a_i X_i+K(Y)`, under genuine independent local coframe
+homogeneity. It retains the nonlinear material term, moving baseline and
+all internal equations, and preserves Hessian inertia at full critical points.
+The finite detector ratio equals this primary family's original finite
+lambda_minus exactly at orientation sigma=-1; the original unit-price owner
+also supplies the nonzero finite-cap slope hypothesis.
+
+On X=Y=0, its complete first source is `dB+sum(a_i dX_i+b_i dY_i)`.
+Thus this family is a conditional consumer once the actual compiled
+spatial weights, local scale maps and every internal root agree. A null
+material density does not imply a zero material variation. The scalar ratio
+alone does not establish those hypotheses. The full-field minimum exclusion
+above remains; the reconstruction supplies stationary equivalence, not a
+minimum or a compulsory D0 price. Full-flag13 measurement, paid Golden17
+orientation and the two-density CQ compiler remain distinct executions
+until their complete maps and prices are matched. `GR_closed=false`.
