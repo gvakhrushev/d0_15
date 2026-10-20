@@ -3153,3 +3153,35 @@ then verify the retained independent field and internal Euler rows on the
 same carrier. The proof, checker and independent review are in the linked
 book-source packet; the checker passes in ordinary and optimized modes on
 Python 3.12.14. No new registry node, lifecycle state or task is introduced.
+
+## 20 October continuation: compose the existing pi0/alpha, archive and price owners
+
+Phase: final composition / native realization, same constitutive slot and
+native-programme-v1 carrier, existing #334. The
+[existing-parts synthesis](../../02_REGISTRY/research/A4D_EXISTING_PARTS_TO_FULL_PRICE_SYNTHESIS_2026_10_20.md)
+consumes pinned old owners at 2c592f9b and the one-source integration at
+d99d965f. It adds no action, selected task, CORE claim or lifecycle change.
+
+Exact parent substitutions: two fresh-work actual Golden reports realize
+the alpha moment and its first source; fixed-C vertex Info on original
+K(9,11,13) has complete archive source −Q_A J1 D_pi Z DI and the retained
+negative history-Schur Hessian; the old cycle/Poisson owners compute a
+finite Book/Born defect E, with Aeff=−c+sum pi KL(P||q). Matching laws keep
+the absolute source −dc. A literal old P3 example computes the actual
+archive Schur and distinguishes an operator seam defect from a field force.
+
+The scalar 718-edge sector, sequential reporter and full all128 execution
+are explicitly distinct. The real weighted compiler/continuation diagram,
+actual complete Info/work and obligatory programme admission remain. The
+current all128 stopped-clock Cost operator is consumed from its existing
+owner, not re-enumerated. The full source still targets the original
+16+24+2 primary carrier with genuine preparation/boundary variations;
+no native field minimum or general physical GR closure follows.
+
+Write surface: the linked synthesis, repository_puzzle under the existing
+d0_native_gr_completion_synthesis_2026-10-20 packet, and append-only parent
+pointers. Smallest decisive checks: exact two-report moment/source; direct
+Perron jets versus the complete original718 Info source; literal P3
+Schur/source, normalized KL mixed jet and original502 suffix ratio.
+Independent reviews bind each proof and the final composition. Existing
+large rank, formalization and historical certificate suites are not rerun.
