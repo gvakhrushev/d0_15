@@ -54,7 +54,57 @@ check(comm(sign,J)>1.9,
  "Q8 central relative sign breaks common-only invariant; local i source necessary");
 check(p**6+4*p**3>0.99999999999999 &&p**6+4*p**3<1.00000000000001,
  "exact Golden order response full probability normalization");
+
+// MAJOR HOSTILE test: EXACT SAME relativeSignQ output can be prepared
+// by TWO native local-i forward actions or the eight-gate original
+// based chronology. This does NOT reproduce the same paid source history.
+const shortWord=[local,local],shortFinal=run(shortWord),eightFinal=run(order);
+check(err(shortFinal,eightFinal)===0&&err(shortFinal,sign)===0,
+ "actual two-local-i native programme and eight-action Q8 loop EXACT SAME full 8x8 final operator");
+for(const word of [[],[local],[common]])
+ check(err(run(word),sign)>1e-12,
+       "zero or single original gate cannot reach relative sign");
+check((shortWord.length%16)===2 &&(order.length%16)===8,
+ "already-owned FiniteProtocolClock distinguishes 2 vs8 identical-terminal-Golden histories");
+// Physical preparation matters: local i is IDENTITY on pure reference,
+// but moves the actual signal arm once the ORIGINAL Golden mixer has
+// created a strictly positive superposition on both quaternion arms.
+const baseRef=Array(8).fill(0);baseRef[0]=1;
+const mv=(M,v)=>M.map(row=>row.reduce((s,x,j)=>s+x*v[j],0));
+check(Math.hypot(...mv(local,baseRef).map((x,k)=>x-baseRef[k]))===0,
+ "real original local-i does NOT change a reference-only input: no unsupported eight-step paid-work assertion");
+const prepared=mv(mix,baseRef);
+check(Math.abs(prepared[0]-a)<1e-14&&Math.abs(prepared[4]-p)<1e-14,
+ "original Golden mixer provides precisely the needed coherent signal/reference input");
+function fullExecution(word){
+ let U=id8,psi=prepared,transitions=0,minChange=10;
+ for(const gate of word){
+  const next=product(gate,U),newPsi=mv(gate,psi);
+  const d=Math.hypot(...newPsi.map((x,k)=>x-psi[k]));
+  minChange=Math.min(minChange,d);
+  check(d>1e-12&&err(next,U)>1e-12,
+   "each original executed Q8 gate really changes GOLDEN-PREPARED full 8d source state");
+  psi=newPsi;U=next;transitions++;
+ }
+ return {operator:U,transitions,minChange};
+}
+const testedShort=fullExecution(shortWord),testedEight=fullExecution(order);
+check(testedShort.transitions===2&&testedEight.transitions===8&&
+      err(testedShort.operator,testedEight.operator)===0,
+ "all actually prepared Q8 source transitions nontrivial: two versus eight legitimate original S_min cost quanta");
+for(const excess of [0,.1,.25]){
+ const cost=t=>1+t*t;
+ const priceShort=testedShort.transitions*cost(excess),
+       priceEight=testedEight.transitions*cost(excess);
+ check(Math.abs(priceEight-priceShort-6*(1+excess**2))<1e-14,
+       "existing canonical primitive cost+legally positive excess yields 6*(1+t²) full-history source price gap");
+}
+check(2*testedShort.transitions===4&&2*testedEight.transitions===16,
+ "original admissible primitive Cost=1+t² has SOURCE-HESSIAN contrast 12 on identical terminal native Golden output");
+
 console.log(JSON.stringify({
+ native_same_endpoint_source_cost_two_vs_eight:[2,8],
+ optional_legal_excess_primitive_hessians:[4,16],
  full_original_Q8_source:"OrderMemoryControl.localIQ/commonJQ",
  primitive_counts_each:{local_i:4,common_j:4},
  positive_port_order:4*p**3,negative_port_identity:0,
