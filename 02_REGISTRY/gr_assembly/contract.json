@@ -1025,6 +1025,42 @@
       "slot": "mv_tangent_span",
       "carrier": "mv-span-v1",
       "distinct_from": []
+    },
+    "WRK-A4D-LEAN-FOUNDATION-THEORY-TRANSFER": {
+      "obligations": [
+        "verification_core",
+        "theory_transfer"
+      ],
+      "interface": "theory-transfer-v1",
+      "additional_interfaces": [
+        "verification-core-v1"
+      ],
+      "work_key": "verified-future-kernel-and-faithful-operational-transfer",
+      "mode": "proof",
+      "start_requires": [],
+      "assumes": [
+        "A TheoryVerification witness is supplied for the declared future empirical theory.",
+        "Effective finite coding/access and canonicalization are supplied explicitly where used.",
+        "An operational interpretation supplies primitive run/readout commuting maps; additional native contexts need explicit coverage.",
+        "Physical action/source/clock and GR realization remain separate applications."
+      ],
+      "consumer": "gr_operational_realization",
+      "write_paths": [
+        "03_FORMALIZATION/D0/Foundation/VerificationCore.lean",
+        "03_FORMALIZATION/D0/Foundation/TheoryTransfer.lean",
+        "02_REGISTRY/research/D0_FOUNDATION_THEORY_TRANSFER_COMPOSITION_2026_10_20.md",
+        "02_REGISTRY/research/D0_VERIFICATION_CORE_COMPOSITION_2026_10_20.md",
+        "02_REGISTRY/research/D0_THEORY_TRANSFER_2026_10_20.md"
+      ],
+      "statement": "Compose the verified future-state foundation on the same record/process carrier, then derive generic two-system finite-program interpretation, future-distinction equivalence and conditional theorem transfer with every representation/regime premise explicit.",
+      "completion_requires": [
+        "verification_core",
+        "theory_transfer"
+      ],
+      "reuse_results": [],
+      "slot": "theory_transfer",
+      "carrier": "theory-transfer-v1",
+      "distinct_from": []
     }
   },
   "legacy_import": {
