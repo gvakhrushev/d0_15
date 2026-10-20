@@ -103,3 +103,33 @@ With a hypothetical physically supplied alpha seam bias epsilon=Delta_alpha, an 
 **Parent #334 acceptance test:** On one ACTUAL paid full128 original programme, calculate admitted 16-coframe+24-Lorentz+CAR/observer/clock→original 718 directed Cost/Info/ordered history differential. Decompose it by the existing native future32 / signless326 / signed327 atlas and verify whether the physical geometric tangent has a component along the EXACT 31:-35:4 symmetric Cost shear. If yes, the CP² historical response above is a compulsory scalar sub-sector source of that selected programme unless an independently derived same-action cancellation occurs. If no, this avenue does not produce the Einstein source. No new independent action is authorized by these identities.
 
 Independent reproducible Python/SymPy/mpmath checker: check_d0_book_cp_even_shear_six_step_2026_10_20.py; local run PASS. CI or independent acceptance not asserted.
+
+## 7. STRONGER nonlinear result: all finite CP amplitudes move visible even edge probabilities along the SAME 31:-35:4 ray
+
+At true original symmetric baseline t_AB=t_BC=t_CA=0, allow any small native directed Cost bias epsilon with nonnegative primitive Costs. Put B_e=2574 cosh(3ell epsilon), and rho_e the positive root rho_e^3−359rho_e−B_e=0. The REAL original complete stationary Perron edge probability of unordered pair i (counting BOTH directed endpoints) is exactly the ORIGINAL Book first Cost source
+
+    q_i(epsilon)=∂_(t_i) A(0,epsilon)
+      = [2k_i rho_e+B_e]/[2S rho_e+3B_e],
+    S=359, k=(99,143,117).
+
+Define theta_e=2S rho_e/(2S rho_e+3B_e). Then the full, finite-amplitude observable has the EXACT decomposition
+
+    q_i(epsilon) = theta_e (k_i/S) + (1−theta_e)/3.          (13)
+
+This is a transparent path interpretation: k_i/S counts relative two-step backtrack capacities; 1/3 is the fixed per-pair fraction of every oriented 3-zone triangle. The original scalar CP bias changes their competition, not the number of graph vertices or a metric inserted from outside.
+
+Even stronger: B_e strictly grows with |epsilon|, rho_B=1/(3rho²−S), and
+
+    d(theta)/dB = 6S(B rho_B−rho)/(2S rho+3B)^2 < 0
+
+since rho(3rho²−S)=2S rho+3B>B. Hence for EVERY epsilon in the admissible chart
+
+    q(epsilon)−q(0)
+      = c(epsilon) (31,−35,4),                            (14)
+    c(epsilon) = 2[theta(0)−theta(epsilon)]/(3S) >= 0.
+
+This is NOT only a Taylor ratio. The complete observable probability trajectory is a single forced ray in the 2-simplex of the THREE genuine native interface visit fractions. It is even in epsilon: the unoriented full-edge readout loses the CP sign, but it detects the magnitude by its nonzero even change. The full directed ORIGINAL Book record still retains the sign in the triangle odds exp(−6ell epsilon).
+
+Independent exact high-precision controls at epsilon=0.1, 0.3, 0.8 and epsilon=|Delta_alpha| (used as a conditional mathematical value only) verify (13)–(14) at 60+ digits, including normalization sum q=1 and monotonicity theta(epsilon)<theta(0). If one ASSUMES epsilon=|Delta_alpha|, the predicted purely scalar Book pair-mass shift is (+2.03507744e−9, −2.29766808e−9, +2.62590637e−10), in native stationary probabilities. This does NOT establish that the physical native cost bias equals Delta_alpha, or predict a measured neutrino or GR source.
+
+The original 718-edge source is therefore simultaneously (i) an exact FDT resistor/Hessian, (ii) the first nonzero mixed 6-step connected historical cumulant, and (iii) an ALL-amplitude visible probability redistribution with a canonical trace-free 31:-35:4 selection. What is missing remains precisely the typed fully paid full128/16+24 Lorentz/CAR/clock→718 directed Cost/Info plus ordered history map of parent #334. The scalar-only Palatini Hessian no-go remains.
