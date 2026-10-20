@@ -190,6 +190,24 @@ This narrows the *geometry-specific* compulsory selection to the presence of the
 
 **No finite-lattice overclaim:** Holst vanishing uses true algebraic first Bianchi for a torsion-free Riemann tensor. The existing original finite signed SO plaquette star and accepted #377 smooth EH probe are separate owners. A finite lattice Holst Euler is NOT claimed zero at every h, and a physical selected action may contain derivatives/nonlocal terms outside the above class.
 
+### 6.1. CONCURRENT GLOBAL ALL-327 WICK RESULT SHARPENS THE *ONE* PHYSICAL GEOMETRY SELECTOR
+
+The new scientific owner A4D_GLOBAL_327_BOOK_FISHER_CAR16_MAGNETIC_WICK_AND_DARK_REVIVAL_2026_10_20.md proves a genuine whole-original-graph identity, for ALL 327 original cycle directions: the original positive scalar Book Perron pressure has a strict canonical positive cycle Hodge/Fisher Hessian Q_327, and its analytic imaginary continuation produces the charged CAR16 J23 magnetic feedback gap with the SAME Q_327, even beyond the quadratic germ. This is mathematically strong and removes arbitrary cycle-parameter fitting.
+
+But it also gives a GLOBAL non-selection theorem for signed gravity. At a reversible original Book reference, every arbitrary real antisymmetric cycle field a satisfies
+
+    B(t a)^T=B(−t a),  lambda(t a)=lambda(−t a).
+
+Hence the original scalar Book pressure has ZERO odd Taylor derivatives in every one of its 327 cycle directions. Its magnetic CAR return gap constructed from lambda(i theta) is ALSO reversal-even. A mathematical signed source depending ONLY on scalar pressure or this parity-even magnetic gap cannot supply the linear orientation-odd original CAR Γ/Hodge/Golden Palatini coefficient alpha. The latest complete Golden17 original signed +/- pair inversion and our exact CAR16 Hodge parity identify precisely the absent operator channel. This statement holds for the entire 327-cycle family, not just a selected CP triangle.
+
+**Substantive sharper reverse-GR decision:** within the declared local real Lorentz coframe²-curvature¹ geometric IR class, a fully paid physically selected PRETRACE Γ/Golden marked comparison with NONZERO alpha is the single indispensable leading signed curvature ingredient. Once it is genuinely present, its absolute nonzero alpha magnitude, ANY real constant beta (Holst), ANY heterogeneous positive native W_x and their pure endpoint-gradient representation do NOT change the vacuum Einstein geometric equation in ghat. The full independent G0 Book source still must prove its own internal stationarity and absence of other field-dependent leading terms, but hundreds of scalar archive/fisher coefficients need not be matched one by one to Einstein.
+
+Do NOT infer alpha is FORCED by M1 just because the Golden17 readout CAN measure it. Preserving an operational distinction, minimizing an encoding and requiring that distinction to enter the FUNDAMENTAL paid scalar first variation are logically different statements; the original ActionProtocol fiber and the latest prospective Dmin idle-world no-go demonstrate this. This no-go narrows the physical bridge to *native odd pretrace action-selection*, rather than more Perron Fisher/clock source counts. Conversely if the real G0 action selects alpha=0 and only even Book/CAR feedback, the exact local-class vacuum Einstein derivation fails, even though Book Fisher and CAR magnetic gaps match all327.
+
+### 6.2. Concurrent native reference128 preparation now has a smooth but nonminimal option
+
+The simultaneous owner A4D_REFERENCE128_LOWEST_SPECTRAL_SELECTION_NONC2_CUSP_FINITE_TO_REFINEMENT_2026_10_20.md constructs an actual smooth source-stationary original two-grade fixedRIGHT rank128 preparation branch across its true coframe Fourier cutoff by following analytic eigenbranches, while the lowest-R minimizer is non-C1. The smooth branch pays an explicit positive nonminimal excitation gap on one sign of the coframe perturbation. This is a constructive alternative to claiming the previously observed cutoff cusp kills every stationary curved preparation; its full coframe/observer/HJR physical work selector is NOT established. It does not modify any of the independent geometric CAR/Book/Immirzi theorems above.
+
 ## 7. Reproduction
 
 Run: node 02_REGISTRY/research/sources/d0_car_holst_universality_2026-10-20/check_original_car16_hodge_holst_torsion_bianchi.mjs
