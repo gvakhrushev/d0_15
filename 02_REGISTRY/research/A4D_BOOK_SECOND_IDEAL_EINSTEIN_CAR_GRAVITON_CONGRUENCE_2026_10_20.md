@@ -197,3 +197,36 @@ Equivalently use the simpler (10) with M from (13). Thus the **complete lineariz
 For the independent original K(9,11,13) 16-site/48-field replay, \(L\) is the ORIGINAL periodic shared-link first-difference in the 16 link directions, and its source rank is EXACTLY15. The projection \(\Pi\) vanishes on all 32 local coframe entries and is \(I_{16}-\mathbf 1\mathbf 1^\top/16\) on the genuine link coordinates. It follows the vertical space of this scoped live-Hodge model is 33-dimensional (all 32 coframe tangent directions plus constant link); the native historical Schur correction annihilates that space coefficientwise. The upgraded checker now verifies \(\|\Delta H-\Pi\Delta H\Pi\|_{\max}<10^{-14}\) and the explicit shear independently. The 18 COMMON Hessian kernel modes are not confused with the 33 vertical density-kernel modes: these are distinct mathematical spaces.
 
 **Scope reduction:** For exact nonlinear GR *stationary sets*, use the all-order ideal theorem in §§1–2 and genuinely stationary internal B. For *the exact sourced linearized gravity source about an already-owned real nonflat Einstein–CAR root*, only the actual full native FIRST EULER root and vertical second-source test (12) are needed. This is the SHORTEST literal physical PASS/FAIL barrier currently supported by the mathematical owners. Neither is yet proved for the compulsory original M1/G0 action; its full sourced external coupling, spin-central \(\mathbb Z_2\), operational metric, controlled h-refinement and RAW-216 remain open.
+
+
+## 7. Crucial CONCURRENT ORIGINAL 96-face Golden17 falsifier — actual physical-type vertical Hessian, not just a toy price
+
+The newest independently owned **original full 4D Role L2 shared-link** packet
+\`A4D_ORIGINAL_4D_STAR_FLAT_GOLDEN17_VERTICAL_MEMORY_OBSTRUCTION_AND_SOURCE_GATE_2026_10_20.md\`
+now supplies the strongest exact hostile second-source test for (12). It was fetched at blob \`68efc8e3f3415526c583cf8c3d6fc99cc21649b3\` and its **EXACT committed executable was independently run in a fresh V8 isolate; PASS**. Unlike §5's 48-coordinate Book-price subsector, this owner uses ALL **16 genuine original L2 Role sites, 64 SHARED SO links and 96 true based plaquettes**, and the complete 17 labelled original Golden-p two-fresh/Bell effects, retaining every failed flag.
+
+At the original flat 4D coframe and links, rotate only the ONE actual global link \(U_{(0,0)}(t)=\exp(tJ_{23})\). The original six affected plaquettes lie in Role face planes (01),(02),(03) at two neighboring sites, whereas their odd SO curvature has only J23 support. By exact Hodge/complementary wedge contraction,
+\[
+\boxed{ f_i(q(t))\equiv0 \quad\text{for ALL 16 original sites and EVERY t},}
+\]
+even though SIX actual Lorentz holonomies and actual complete Golden17 probabilities change. In particular the true geometric density map has \(LV=0\) for \(V=\partial_t\), and actually ALL higher derivatives of \(t_i=f_i\) on this path vanish. Yet the **same** complete original Golden17 conditional POINTER Shannon, which is one mathematical (but NOT native-selected) possible source aggregation, has exact six-face second jet
+\[
+\boxed{
+\frac{d^2 H_{\varphi,96}}{dt^2}\bigg|_{0}
+=-\frac{6p^4}{4096\ln\varphi}
+ \left(\frac{5}{12}\ln12+\frac16\right)
+=-0.0005338570392207947\ldots\ne0.
+}\tag{15}
+\]
+At t=.15 its FULL first vertical source is \(-0.00007982869969225259\ldots\ne0\). Its six-positive-effect Fisher curvature is \(p^4/4096=0.00003561963714607310\ldots>0\), even though all original f_i stay fixed. ALL 4095/4096 Bell failed mass stays within the complete 17-category normalization; the negative vertical Shannon source is not a postselection artifact.
+
+This decisively demonstrates, ON THE ACTUAL ROLE/PLAQUETTE carrier, that **Golden-positive operational completeness is NOT sufficient for even the WEAKER quadratic-ideal Einstein–CAR second-source property**. In our necessary/sufficient vertical Hessian test (12), this candidate has
+\[
+\boxed{ \Delta H[V,V]=H_{\varphi,96}''(0)\ne0
+\quad\text{while}\quad LV=0.}
+\]
+So the specific candidate \(\text{Palatini}+\alpha H_{\varphi,96}\) with nonzero fixed α and no actual compensating full history terms FAILS even if all its first Euler derivatives happen to agree at the flat point (the POINTER H' vanishes at t=0). A rank-only or first-source-only GR acceptance would be UNSOUND. This is not a no-go for the TRUE compulsory Book03 H+J+R, because **its physical choice of pointer Shannon was never proved**.
+
+**POSITIVE companion in that SAME original owner:** the mathematically declared full positive Golden relative-code \(6D_\varphi(q_{17}(t)\Vert q_{17}(0))\) has zero first vertical jet and exact POSITIVE second jet \(p^4/(4096\ln\varphi)\), so the same native measurement possesses an internally stabilizing local score. But the physical original G0 programme must SELECT that relative-code cost and its admissible action/preparation; no coefficient \(\alpha\) or cancellation against Shannon may be fitted to GR. It may be possible to solve actual permitted archive/observer internal Euler and take the TRUE stationary envelope before applying §§2–6. Neither this single flat J23 mode nor the mere presence of Golden KL proves all original history/Role vertical Hessians regular or the full Einstein matter source.
+
+**Decisive operational check strengthened by this concurrency:** On a literal one-run ORIGINAL Golden LEFT/oldRIGHT/clock/full Book programme, evaluate the ACTUAL complete source along THIS true f-constant SO link path, first at t=0 to second order and then at t=.15 to first order, WITH ALL failure/prep/work/Spin terms. If the genuine selected price produces the nonzero \(-0.000533857...\) second jet without an independently stationary internal removal, the proposed second-ideal normal form fails on an actual full Role carrier. If the ACTUAL completed source instead cancels the vertical jet, check the remaining real 16+24+CAR source projection and invoke (12) and the explicit congruence (14); no new curvature coefficient is needed. \`GR_closed=false\`.
