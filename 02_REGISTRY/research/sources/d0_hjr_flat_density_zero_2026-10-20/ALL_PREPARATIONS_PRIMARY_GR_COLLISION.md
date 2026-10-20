@@ -1,0 +1,129 @@
+# Strong terminal on the **primary exact Einstein family**: no stationary rank128 preparation rescues the bare native H+J+R flat source
+
+20 October 2026. Original-scientific-owner research continuation in existing Draft #334, \`EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE\`, with **unchanged** inputs:
+
+1. Original full CAR16 + global-normalizer + 128-feedback + fixedRIGHT Riesz \`H+J+R\` from \`A4D_EXACT_CURVED_WHOLE_HJR_FIXED_COLLAR_ROOT_2026_10_20.md\`, and already proved exact rational Fourier flat-source owners \`sources/d0_hjr_flat_density_zero_2026-10-20/REFINING_UNIFORM_SOURCE.md\` and \`check_common_einstein_coframe_scale.py\`;
+2. Main positive nonvacuum same-metric Einstein family \`D0_GR_PRIMARY_POSITIVE_CASE.md\`, \`A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md\` and the unchanged 16+24+2 configured Golden-J2 theorem;
+3. complete fixedRIGHT preparation tangent theorem \`A4D_EXACT_CURVED_NATIVE_DIRAC_FIXED_RIGHT_PREPARATION_AND_SOURCE_2026_10_20.md\` §3.
+
+**New step:** prove the flat-source obstruction for **EVERY genuinely preparation-stationary fullRIGHT128 state**, not merely the particular 128-mode positive Riesz shell of the preceding fixed-frame calculator; then compose it with the already constructed infinite-dimensional *small-amplitude* positive Einstein family to rule out any **continuous direct same-action lift** through the flat prepared point. The no-go targets the **specified conditional bare H+J+R**, not the as-yet-unidentified compulsory complete Book03 Cost−Info/oldRIGHT/controller/work/clock price. It is not a new GR action, a selector or a global D0⇒GR no-go.
+
+## 1. Actual flat Einstein carrier and the FULL native thermal + feedback object
+
+Fix integer \(L\ge256\), \(h=L^{-1}\), every one of the original \(L^4\) sites and all 16 CAR grades. Use the original observer's positive scalar product, the **physically coframe-normalized** constant flat Einstein chart
+\[
+v_r(\rho)=h\sqrt\rho\,e_r,\qquad U_r=I,\qquad \rho>0.
+\]
+At \(\rho=1\) the smooth metric is the flat limit of the already accepted exact Brinkmann/Golden-J2 family and the original six-plaquette Palatini action has \(DS_\star=0\) on this entire coframe variation (all plaquettes equal identity). The coframe chart is nondegenerate and uses the genuine shifted positive-adjoint exterior Dirac and all fields, not a bare spectral surrogate.
+
+Exact CAR cancellation on the entire original site×CAR Hilbert space gives
+\[
+\Delta_\rho=\rho\,\Delta_1,\quad
+\operatorname{spec}\Delta_1=\{\mu(q)=\sum_{r=0}^{3}[2-2\cos(2\pi q_r/L)]\}_{q\in(\mathbb Z/L)^4}^{\times16}.
+\tag{1}
+\]
+The original, entirely unchanged conditional \(H+J+R\) is
+\[
+S_L(\rho,M)=
+\frac{\log(C_L\,16\sum_q b_q(\rho)^m)}\beta
+-2048\sum_q\log(1-z+zb_q(\rho)^m)
++\operatorname{Tr}(M^\dagger\Delta_\rho M),
+\tag{2}
+\]
+where
+\[
+p=\varphi^{-1},\quad\alpha=\frac{p^2}{128L^2},\quad
+m=256L^2,\quad\beta=m\alpha=2p^2,\quad
+z=2^{-20},\quad b_q(\rho)=1-\alpha\rho\mu(q).
+\]
+All \(16L^4\) thermal modes and all \(128\times16\) feedback modes occur with the proper multiplicities. The workspace factor \(C_L\) is field-independent in precisely this already-certified conditional owner; a moving **actual** complete workspace/cost must be added to the *physical* Book03 comparison, not silently suppressed or assumed field independent in another owner.
+
+## 2. PREPARATION-INDEPENDENT flat no-go (new uniform theorem)
+
+Take **any** genuinely admitted normalized fixedRIGHT rank128 preparation \(M\) on this same full Hilbert space, \(M^\dagger M=\Sigma_R\succeq0,\operatorname{Tr}\Sigma_R=1\), with its full original LEFT-unitary preparation Euler satisfied,
+\[
+[\Delta_\rho,MM^\dagger]=0
+\]
+(the fixed-Gram criterion, not merely a restricted orbital stationarity). The original \(H,J\) in (2) are independent of \(M\); along the *actual* coframe tangent \(\partial_\rho\), the envelope/stationary-preparation theorem therefore yields
+\[
+\partial_\rho R_L(\rho,M)
+=\operatorname{Tr}(M^\dagger\Delta_1M)\ge0.
+\tag{3}
+\]
+The same expression is valid when \(M(\rho)\) is any differentiable family of fixedRIGHT stationary preparations: the extra \(D_MM\) term drops because the preparation Euler already vanishes. Neither the particular Riesz first-positive shell, a zero-mode-filled preparation, the choice of 128 eigenvectors nor a possible negative preparation second variation can make (3) negative. If a different native **preparation/work** functional couples to \(M\), it is outside the conditional action (2) and must enter its **full** preparation Euler and source rather than being postulated absent.
+
+Direct differentiation of the *entire* (2), with \(f_q=b_q^m\), gives:
+\[
+\partial_\rho(H_L+J_L)\big|_{\rho=1}
+=-\frac{\sum_q\mu(q)f_q/b_q}{\sum_q f_q}
++2048z\beta\sum_q\frac{\mu(q)f_q/b_q}{1-z+zf_q}.
+\tag{4}
+\]
+The earlier exact rational proof of the SAME true flat Einstein chart (source \`check_common_einstein_coframe_scale.py\`) supplies, for **every** integer \(L\ge256\):
+\[
+\begin{aligned}
+0\le\mu(q)\le16,\quad \sum_q\mu(q)=8L^4,\quad b_q>79/80,\\
+0<f_q\le1,\quad f_q>e^{-13}>1/500000,\quad
+3/4<\beta<4/5 .
+\end{aligned}
+\tag{5}
+\]
+The first thermal term in (4) is bounded below by \(-1280/79\). The second feedback term, since \(b_q\le1\), \(1-z+zf_q\le1\), and \(2048z=1/512\), is bounded below by \((3/128000000)L^4\). Thus the **bare H+J tensor component is strictly positive BEFORE ANY choice of preparation**:
+\[
+L^{-4}\partial_\rho(H_L+J_L)
+\ge \frac3{128000000}-\frac{1280}{79L^4}
+\ge c_*:=\frac3{128000000}-\frac{1280}{79\cdot256^4}
+>\frac1{100000000}>0.
+\tag{6}
+\]
+Combining with (3):
+\[
+\boxed{
+L^{-4}\partial_\rho S_L(\rho,M)\big|_{\rho=1}
+\ge c_*>10^{-8}
+\quad\text{FOR EVERY full fixedRIGHT preparation-stationary }M,\ L\ge256.
+}\tag{7}
+\]
+This also excludes every genuine stationary preparation with additional occupancy of the flat Dirac zero modes. A stationary field equation in all 16 independent coframe rows would imply its contraction with this uniform coframe tangent is zero, contradicting (7). Therefore **the exact flat Einstein coframe is NOT a stationary solution of bare conditional full \(H+J+R\), independently of the occupied rank128 spectral shell.**
+
+No new finite-matrix census or expensive original HJR replay is needed: the only new step beyond the previously exact Fourier/rational owner is the *stationary-preparation envelope*, taking advantage of positivity of the unchanged original Rayleigh \(R\). The existing fixed-Riesz calculation is one strict special case. A checker independently verifies the rational strict bound and the logical uniform-preparation inequality.
+
+## 3. NEW local family theorem: no continuous direct same-action lift of ALL small Einstein waves
+
+The already accepted same-metric positive configured Golden-J2 theorem supplies a genuine **one-parameter subfamily of its infinite-dimensional exact NONVACUUM solutions**. For any sufficiently small fixed smooth \(\Psi_0\not\equiv\text{constant}\) and harmonic wave \(W_0(u,x,y)\not\equiv0\), let, for real small \(t\),
+\[
+\Psi_t=t\Psi_0,\qquad
+H_t(u,x,y)=-\lambda t^2\|\Psi'_0(u)\|^2(x^2+y^2)+tW_0(u,x,y).
+\tag{8}
+\]
+For every sufficiently small \(t\ne0\) the original configured J2 action has exact nonvacuum Einstein/positive Weyl 16+24+2 interior stationary representatives **on each admissible mesh** under its actual midpoint time labels and true scalar/top increment records. Their geometric coframes and null holonomies depend smoothly on \(t\) and converge to the flat Einstein fields as \(t\to0\).
+
+**No continuous direct lift theorem, fixed \(L\ge256\).** Suppose a purported same-action transport identifies these original configured finite fields, after a fixed admissible coframe/observer trivialization at the flat point, with solutions of the *bare* conditional \(H+J+R\) for **every** sufficiently small nonzero \(t\), and chooses a continuous family of genuine fixedRIGHT stationarity-satisfying preparations \(M_L(t)\) which converges to a fixedRIGHT normalized stationary \(M_L(0)\) at \(t=0\). Suppose the original \(H+J+R\) coframe source is continuous under that field/state identification and the flat source is precisely the chart of §1 (no field-dependent work or an independently moving clock price has been silently dropped). Then such a lift **does not exist**.
+
+Proof: the complete coframe Euler vanishes for every \(t\ne0\). Its contraction with the admissible uniform scalar coframe direction must therefore vanish. Continuity gives vanishing at \(t=0\), contradicting (7). This is a mathematical no-go for an *entire punctured neighborhood of already existing nonvacuum waves* under direct source identification, not just failure at one arbitrarily unrelated finite fixture.
+
+Even stronger, for each fixed \(L\ge256\) and any fixed genuinely stationary \(M_L(0)\), the source map has a positive neighborhood in the combined field+state chart, so there is a (possibly L-dependent) \(\delta_L>0\) excluding **all** bare-HJR stationary roots that remain in that neighborhood. The bound (7) is L-uniform **at the flat point**, but no common \(\delta>0\) independent of L is asserted without actual second-source/modulus-of-continuity estimates. A root sequence with a discontinuously changing physical preparation, or one using a genuinely different/extra Book price, is not ruled out by this theorem.
+
+## 4. A quantitatively decisive **FULL NATIVE BOOK03 PRICE** obligation
+
+Let a proposed physically admitted complete same-carrier action be
+\[
+S^{\rm physical}_{L}=S^{\rm bare\,HJR}_{L}+E_L,
+\]
+where \(E_L\) denotes **only actually derived and paid** additional native preparation/clock/work/reference/history/controller/normalizer terms, or instead supply a precise typed non-additive operator-source equality. For the flat Einstein vacuum to be an actual stationary solution with any fixedRIGHT stationary preparation of the bare part, it is NECESSARY (not sufficient) that the full extra coframe source obey
+\[
+\boxed{L^{-4}D_\rho E_L\big|_{\rho=1}\le-c_*<-10^{-8}\qquad(L\ge256).}\tag{9}
+\]
+If the actual internally stationary section is changed by E, it must be solved in the COMPLETE physical Euler; the inequality still follows at any such physical solution provided \(H,J\) are as (2) and \(R_\rho\ge0\) at its full preparation-stationary point *only when the bare Rayleigh preparation envelope hypothesis holds*. Do NOT reuse (9) blindly when physical stationarity of M is not bare-R stationarity; instead calculate the complete derivative and use \(\partial_\rho R\ge0\) at fixed M plus the actual internal source.
+
+In particular any proposed E whose **entire** normalised first source is \(o(1)\) as \(L\to\infty\) CANNOT restore even the flat Einstein endpoint. The already owned compact equal-weight stopped Golden *flag-only* first source is zero on the identity-link tree, and it cannot compensate (7) by itself on a genuinely proven shared carrier. A previously discovered p/clock transformation, observational positivity, a match of all40 configured J2 equations, or a finite-curvature readout does not cancel the actual nonzero scalar source. One full paid physical programme must provide a bulk counterpressure of the required size, or a non-additive source-selection mechanism that truly changes the conditional action.
+
+This gives **an explicit quantitative decision fork** for the current \`constitutive/native_sector\` route, based on the same positive Einstein family:
+- The compulsory complete Book source **derives** the required finite bulk coframe counterpressure and the correct oriented coframe×connection source on the same execution, with every actual internal Euler solved; THEN consume the already proven exact nonlinear Golden-J2 recovery.
+- Otherwise the bare conditional \(H+J+R\) branch is **provably incapable** of being the complete off-shell Einstein action or carrying the entire small-amplitude exact family with smooth fixed-right preparation. Do not repeat geometry or detector catalogues to evade the first-source test.
+
+This is not a claim that the full D0 theory is impossible: the actual Book03 action is algebra-valued and complete G0/oldRIGHT preparation, work and clock contributions have not been uniquely bound to the conditional HJR owner. A different *admitted* native source and a proved equivalence of equation loci, rather than full action equality, may constitute another physical GR route. Such a route must still respect this original flat-source witness under its actual explicit carrier/variation map.
+
+**Scientific verdict:** new ALL-preparations (not one Riesz shell) and small-wave continuous-lift obstruction for the bare conditional HJR, with a nonvanishing L-uniform source threshold at the physically normalized flat Einstein point. Full physical GR, complete Book action, two-sided refinement and raw216 remain OPEN. \`GR_closed=false\`.
+
+**Bounded rational replay:** \`sources/d0_hjr_flat_density_zero_2026-10-20/check_all_preparations_primary_gr_flat_obstruction.py\`.
