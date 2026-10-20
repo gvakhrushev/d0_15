@@ -114,6 +114,21 @@ for n in (1,4):
     check("complete conditional native Fisher",s.simplify(
           fisher/(s.Rational(1,4)**n)-s.Rational(1,6))==0)
 
+# The ORIGINAL SO(1,3) Lie algebra is PERFECT: commutators span
+# all 6 generators. No C² additive scalar character of net holonomy
+# can have a nonzero first Lorentz/plaquette curvature derivative.
+comm=lambda X,Y:X*Y-Y*X
+for label,lhs,rhs in (
+    ("rotation",comm(N2,bN3),J),
+    ("boost",comm(N2,bN2),B),
+    ("nullN2",comm(B,N2),N2),
+    ("nullN3",comm(B,N3),N3),
+    ("oppositeN2",comm(B,bN2),-bN2),
+    ("oppositeN3",comm(B,bN3),-bN3),
+):
+    check("perfect original Lorentz bracket "+label,lhs==rhs)
+print("PASS no nonzero additive scalar holonomy character can match native odds")
+
 # CRUCIAL: the EXACT complete genuine Golden-record Shannon source
 # does NOT inherit projective odds/refinement invariance. Split ONLY the
 # negative pointer in the genuine all-good history and preserve all other
