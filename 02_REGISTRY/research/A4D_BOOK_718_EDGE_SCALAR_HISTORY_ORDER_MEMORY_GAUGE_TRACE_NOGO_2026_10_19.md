@@ -123,3 +123,55 @@ The exact falsification question for full native D0→GR now has a single concre
 For an inverse-respecting original graph-edge Lorentz transport, a length-two immediate backtrack has holonomy \(U_{uv}U_{vu}=I\). A genuine original \(K(9,11,13)\) simple directed cycle must therefore have **at least three original edge steps** before it can carry nontrivial closed-loop memory. For ANY two endomorphisms, \(\mathrm{Tr}(UV)=\mathrm{Tr}(VU)\): exchanging two entire loops with a common base can change their based matrix product but **cannot yet change its gauge-invariant Wilson trace**. Three loops are the first number of independent whole-loop factors for which a permutation can change the trace, and equation (2) exhibits an exact nonzero effect.
 
 Thus the chosen protocol of **three original three-edge triangles, total nine primitive directed edges**, is minimal in the explicitly declared class *of permutations of edge-disjoint, nontrivial primitive triangular loops detected only by an ordinary conjugacy-invariant trace*. This is NOT a proof that no other nine-or-fewer-edge graph walk could ever yield an order-sensitive observable, nor that trace is the unique physically admissible test. It provides an economical and exact finite primitive witness using only the already-owned graph and Lorentz Lie algebra. The positive Julia/Choi probe in §4 shows the nonzero trace can be retained as an actual probability in a complete mathematical readout.
+
+
+## 6. GLOBAL reverse-GR decision: even ALL classical history probabilities leave a coherent phase fiber invisible
+
+This strengthens the scoped equality-of-edge-count obstruction in §§1–5 into a **general full-instrument, all-history theorem**. It is not a new Book action, no promotion to CAR/GR, and it explains precisely why more scalar archive cumulants cannot establish the physical Lorentz history representation.
+
+Let {K_a(y)}_{a in A} be ANY complete differentiable finite native quantum instrument, Σ_a K_a(y)^† K_a(y)=I, retaining every distinct classical record label a. In the actual original full128 one-step case, |A|=128 and this completeness is already owned in #334. For arbitrary smooth outcome-dependent real functions θ_a(y), define
+
+    K'_a(y)=exp(i θ_a(y)) K_a(y).                              (6.1)
+
+Then this is another complete isometry. For every admissible initial state ρ, **every finite complete classical record string** γ=(a_1,...,a_n), and every classical adaptive continuation which conditions only on previous labels,
+
+    K'_γ ρ (K'_γ)^† = K_γ ρ K_γ^†,                            (6.2)
+
+because each fixed label-word amplitude acquires a scalar phase which cancels in its own squared record weight and conditioned system state. ALL classical outcome histories, their probabilities, their conditional system states, their Perron/Doob reconstructions, edge-flow action derivatives and all scalar Cost-based statistics built from them are therefore identical. The coherent retained-record Stinespring states, however, differ by the diagonal record unitary diag(exp(iθ_a)), and can be distinguished by an ACTUAL paid cross-label interferometric reference. A fixed diagonal primitive code reference μ also gives a quantum relative entropy D(ρ_record||diag μ) invariant under these rephasings. Thus even keeping the single-cut coherent entropy does NOT by itself identify the missing ordered phase.
+
+This is an all-history *identifiability obstruction*, not a claim that the already-fixed physical native circuit permits arbitrary θ as a gauge. Native G/CNOT/Julia controls may choose specific phases; they must be read and used at the AMPLITUDE/process level, rather than inferred from the classical marginal. The 718-scalar path theory does not choose such a readout or physical action.
+
+### 6.1. Exact Golden-native port example: the price/phase metric coincidence is not yet a gravity coupling
+
+Consume the **ACTUAL ORIGINAL full128 nonblank-label factorization** of #334, A4D_COMPLETE_RECORD_CHANNEL_AND_NATIVE_COST_SOURCE §3: for each genuine nonblank label k, its two real Golden-port Kraus maps are
+
+    K_(0,k)=p L_k,    K_(1,k)=sqrt(p) L_k,  p=φ^−1, p+p²=1.
+
+On that label the fully retained port amplitude is therefore the normalized same-data tensor factor
+
+    |χ_0> = p|0>+sqrt(p)|1>,          q=(p²,p).
+
+The ORIGINAL fixed primitive port code has μ=(p,p²), so its exact native base-φ KL is
+
+    D_φ(q||μ)=p·(+1)+p²·(−1)=p−p²=p³.                        (6.3)
+
+If a coherent RELATIVE port phase θ can be actuated with a physical reference, the normalized port state is |χ_θ>=p|0>+sqrt(p) exp(iθ)|1>, and the full **coherent** two-arm overlap is
+
+    Z(θ+,θ−)=<χ_θ−|χ_θ+>=p²+p exp(i(θ+−θ−)),
+    ∂_θ+ log Z|diag=i p,
+    ∂_θ+∂_θ− log Z|diag=p(1−p)=p³.                           (6.4)
+
+Hence, on the **same native Golden port**, the primitive conditional classical code mismatch and the maximal relative-phase quantum-state susceptibility are exactly the SAME algebraic number p³=√5−2. No new numerical coupling is fitted. This is a useful candidate absolute normalization CHECK for a later original phase-carrying detector/Book bridge; it is not evidence that D0 already performs that phase comparison.
+
+**KILL FIRST:** In the ACTUAL one-round nonblank label instrument, the port factor χ_0 is fixed and the *field* only changes the common system amplitude L_k(y). For any original coframe/Lorentz field tangent V at fixed native p, D_V χ_0=0. Thus the precise equality in (6.3)–(6.4) supplies **NO physical J23 phase derivative** in that one-round conditional port by itself. It does not produce the Palatini seed, matter stress or a neutrino mass. The missing geometric phase must enter through genuinely different native ordered labels, path amplitudes, coherent two-line comparisons, or an explicitly owned moving control/clock acting on BOTH arms; a parameter θ freely inserted after the fact is not authorized.
+
+### 6.2. One parent-level bottleneck, not another local certificate
+
+The strongest **necessary** positive object is the existing complete field-dependent multitime native process, BEFORE forgetting/compressing the coherent record, with the original reference/oldRIGHT, controllers, failed flags and all actual prices kept. A two-line comparison (if physically admitted and priced) uses
+
+    Z_full(y+,y−)=Tr[ρ Σ_{a in ALL native records}
+                          K_a(y−)^† K_a(y+)]
+
+(or its true multi-tick/ordered analogue, without assuming independent cylinder products). Its diagonal is one by instrument completeness; the relative-arm phase/curvature is NOT fixed by diagonal probabilities. The candidate *decisive native experiment* is the owned opposite-null J23 ordered-history benchmark of #334, with its exact CAR16 geometrical value i h²/8 in the selected mixed plaquette, and ALL original native flags. Derive the true full128 paid two-line comparison phase AND its source on the SAME physical field tangent; require a native normalization/record binding rather than fitting the CAR coefficient to the final signal. A nonzero match would establish a missing **phase-provenance** leg, not the full Einstein action. Next, select the one total Cost−Info action and compare its genuinely joint metric+24-Lorentz+matter Euler covectors under controlled refinement.
+
+The strategic consequence is a hard stop for using ANY new 718-edge scalar moment, positive Perron pressure, single diagonal Born sum, classical Fisher metric, or the Golden p³ coincidence **as proof** of full signed Lorentz gravitational dynamics. The original geometric star/EH branch and its finite Einstein response remain owned inputs, but the true coherent process/action selector G0 and joint critical refinement remain independent open scientific obligations. This tightens, rather than loosens, the firewall: **GR_closed=false**.
