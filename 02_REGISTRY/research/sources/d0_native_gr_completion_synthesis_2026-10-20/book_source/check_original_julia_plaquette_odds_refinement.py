@@ -114,6 +114,32 @@ for n in (1,4):
     check("complete conditional native Fisher",s.simplify(
           fisher/(s.Rational(1,4)**n)-s.Rational(1,6))==0)
 
+# CRUCIAL: the EXACT complete genuine Golden-record Shannon source
+# does NOT inherit projective odds/refinement invariance. Split ONLY the
+# negative pointer in the genuine all-good history and preserve all other
+# outcomes and failures; Delta H = q_minus * h2(p)/ln(phi).
+pp=(s.sqrt(5)-1)/2
+h2=-pp*s.log(pp)-pp**2*s.log(pp**2)
+for n in (1,2,4,6):
+    curved=s.eye(4)+r*J+r*r*J*J/2
+    minus=event(curved,J,n,-1)
+    jet=s.simplify(s.diff(minus,r).subs(r,0))
+    check("original marked Golden per-n first source derivative",
+          jet==-s.Rational(1,4)**n/(12*s.sqrt(2)))
+    marked=s.simplify(minus*h2/s.log(phi))
+    check("full recorded Golden entropy n-dependent first source",
+          s.simplify(s.diff(marked,r).subs(r,0)+
+                     s.Rational(1,4)**n*h2/(12*s.sqrt(2)*s.log(phi)))==0)
+check("unavoidable factor64 originally observed in four-link owner",
+      s.simplify((s.Rational(1,4)**1)/(s.Rational(1,4)**4))==64)
+# A counterpart based cross null ab has the same marked amplitude ratio
+# and curvature mix source, because P=I+ab J+O(a²b,ab²).
+for n in (1,4):
+    test=event(P,J,n,-1)
+    jet=s.simplify(s.diff(test,x,y).subs({x:0,y:0}))
+    check("crossed null Golden marked curvature mixed price",
+          jet==-s.Rational(1,4)**n/(12*s.sqrt(2)))
+
 # Paid native success clock: independent complete n-edge executions
 # have all-good probability 4^-n; expected n*4^n primitive edge calls
 for n in (1,4):
