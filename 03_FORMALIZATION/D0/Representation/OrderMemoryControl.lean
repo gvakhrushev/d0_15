@@ -1204,4 +1204,51 @@ theorem nativeQ8ThreeSixCommonFrameInvariant
   · rw [nativeQ8ThreeSixOrderCommonFrame]
     exact hinvariant _
 
+
+/-! ## NO nonminimal six-step output requirement can be imposed by a shorter exact word
+
+This checks the deliberately MORE STRICT original whole-carrier
+task: BOTH native source words must have exactly the SAME primitive
+inventory and terminal operators literally (I8,R8), not merely the
+same full TWO-PORT Golden statistics up to common-j gauge.
+
+All 0..5-gate candidate words are generated only from the TWO
+original Q8 gate primitives and tested in the exact rational
+8×8 source representation. This is an exhaustive FINITE certificate
+rather than a new physical axiom. The six-step pair has already
+been exhibited in the same original module.
+-/
+
+/-- All source words of a given length, from the ORIGINAL two
+forward primitives localIQ/commonJQ only. -/
+def nativeQ8AllWordsOfLength : ℕ → List (List Bool)
+  | 0 => [[]]
+  | n + 1 =>
+      (nativeQ8AllWordsOfLength n).flatMap
+        (fun w => [true :: w, false :: w])
+
+/-- A literal whole-operator same-inventory pair, not a port-only
+observational gauge quotient. -/
+def nativeQ8FullMatchedPairAtLength (n : ℕ) : Bool :=
+  (nativeQ8AllWordsOfLength n).any (fun w =>
+    (nativeQ8AllWordsOfLength n).any (fun v =>
+      (w.count true == v.count true) &&
+      decide (nativeQ8ChronologicalWord w = 1) &&
+      decide (nativeQ8ChronologicalWord v = relativeSignQ)))
+
+/-- ORIGINAL 0,1,2,3,4,5-gate equal-inventory Q8 source words
+cannot realize EXACT full I8 and relativeSignQ outputs at once.
+The existing two six-gate construction achieves this bound. -/
+theorem nativeQ8NoWholeMatchedPairBeforeSix :
+    (List.range 6).all (fun n =>
+       !nativeQ8FullMatchedPairAtLength n) = true := by
+  native_decide
+
+/-- Prospective minimal LENGTH for this particular full-operator
+task is SIX. For a Golden-port-only test, common-j is invisible
+and the corresponding true prospective minimum is THREE. -/
+theorem nativeQ8FullMatchedSixIsFeasible :
+    nativeQ8FullMatchedPairAtLength 6 = true := by
+  native_decide
+
 end D0.Representation.OrderMemoryControl
