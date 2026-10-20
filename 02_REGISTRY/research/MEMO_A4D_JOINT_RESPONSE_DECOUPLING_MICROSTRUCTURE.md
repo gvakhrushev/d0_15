@@ -9604,3 +9604,32 @@ Independent analytical reviews and the adjacent exact rational/Golden
 matrix-jet checker are pinned in MINIMAL_GOLDEN_REVIEW.md. No unchanged
 geometry/continuum/Lean suite was replayed, no new task was opened,
 and no physical GR or assembly acceptance was promoted.
+
+### 20 October: actual Golden terminal minimization rejects the source-preserving readout
+
+User steering about minimality was applied to the actual complete prices,
+not only to the least number of gates retaining a nonzero source.
+[The full proof, section5.1](sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/MINIMAL_GOLDEN_COMPLETE_SOURCE.md)
+solves every integer k>=0 on the SAME supplied query/cleanup/initial
+task. With T_k=T_0+k and common retained-information baseline,
+S_coh,k=T_0+k+1+sin^2(k theta), so k0 is the unique minimum.
+S_ptr,k=T_0+k+D_phi(q^(k)||(p,p²)), so exactly k0 and k1 minimize it.
+All k>=2 have a positive cost gap. A Golden implementation taking
+more than one primitive tick leaves only k0 as the pointer minimum.
+
+Every selected minimum has zero field first source on the whole
+f=q=0 stratum, including non-Einstein points. G2 strictly loses to G1
+for either terminal reading and every fixed nonnegative Info multiplier.
+G1 itself retains a nonzero signed probability derivative, so merely
+requiring distinguishability does not exclude that cheaper competitor.
+
+Parent route change: keep the exact whole-J2 source realization, but
+reject its selection by these unconstrained terminal prices when both
+competitors are task-admissible. Physical minimality must derive the
+actual compulsory future task/decoder and complete continuation price
+that changes this comparison, or select a different programme. A
+nonzero-source constraint cannot be fitted in as the physical task.
+This is an exact scoped selection theorem, not a no-go for D0 or the
+positive Einstein sector. Independent review accepted the final proof
+SHA256 f6a5724e087c58b4294020a59532b7117f55247013181bcd4fd30d069a649330.
+No new numerical check or unchanged suite was needed.

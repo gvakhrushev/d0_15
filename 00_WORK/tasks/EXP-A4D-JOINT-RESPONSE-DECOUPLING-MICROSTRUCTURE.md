@@ -2697,3 +2697,34 @@ source, original finite coin weights and full J2 coupling. Exact run
 passes with -O -B -W error; independent review binds final file hashes.
 No historical lattice/geometry/Lean replay, duplicate task, lifecycle
 retirement, new claim or assembly/physical-GR promotion.
+
+### 20 October: close the actual terminal-minimum question for the same Golden family
+
+Phase/consumer: same native source composition above, now testing the
+actual D_min candidate instead of a source-preservation constraint.
+On the same complete initial/task/remaining ledger, with T_k=T_0+k,
+the coherent price uniquely minimizes at k0; the pointer price
+minimizes at exactly k0,k1. This follows for ALL k>=0 from the explicit
+sin² price and nonnegative binary relative entropy. Every minimizer
+has zero field first source throughout the null stratum. G2 strictly
+loses to G1 for both terminal readings, including all fixed
+nonnegative Info normalizations. G1 still distinguishes the signed
+signal to first order.
+
+Exact parent substitution: the source-preserving G2 construction is
+not selected by these terminal objectives when the cheaper competitors
+are admitted. Remove any use of 'least nondegenerate postrotation' as
+proof of physical minimality. The remaining native obligation is a
+derived compulsory prospective task/decoder and full continuation
+price that changes this same-task comparison, or another actual
+programme. No global D0 impossibility or change to the original exact
+Einstein proof is inferred.
+
+Write surface: proof section5.1 and updated pinned review in the same
+packet, corresponding existing synthesis/README and this memo/brief.
+Smallest decisive verification is analytical: evaluate the full
+terminal values, apply KL>=0 and preserve the actual k-dependent
+clock. Independent agents accepted final proof hash
+f6a5724e087c58b4294020a59532b7117f55247013181bcd4fd30d069a649330.
+The source checker is unchanged; no redundant replay, task, claim,
+lifecycle or assembly promotion.

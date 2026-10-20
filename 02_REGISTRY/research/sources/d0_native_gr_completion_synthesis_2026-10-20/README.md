@@ -73,3 +73,16 @@ python3 -O -B -W error 02_REGISTRY/research/sources/d0_native_gr_completion_synt
 
 This checks the complete query first jet and whole finite-z source
 coefficient, without replaying the historical all40 or continuum suites.
+
+## Actual terminal minimum of that readout family
+
+Section5.1 of the new proof also solves the unrestricted terminal-price
+comparison over all G^k. With unit canonical Golden ticks, coherent
+Info selects k=0 and pointer Info selects exactly k=0,1; all these
+minima have zero field first source on the whole null family. G^2 is
+strictly more expensive than G for either reading, even though G
+already observes a signed first-order signal. Thus the source theorem
+does not derive physical selection. A compulsory future task/decoder
+or full continuation price must change this actual comparison. The
+independent review pins this analytical addition; the checker and its
+executed evidence are unchanged.

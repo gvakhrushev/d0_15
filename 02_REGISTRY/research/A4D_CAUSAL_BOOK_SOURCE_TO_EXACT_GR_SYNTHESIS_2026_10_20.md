@@ -6,10 +6,12 @@ Input: `acfe3e19ecda5f2dbc678ec52e2f7cd0f3e639a1`, joining the reviewed
 main `257fd52f` and native `25bea5bd` without discarding either history.
 
 **20 October continuation.** The [complete terminal-source construction](sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/MINIMAL_GOLDEN_COMPLETE_SOURCE.md)
-now computes the whole original J2 source for two explicit terminal
-Cost-Info readings, using the least nondegenerate Golden postrotation
-in its declared class. See the final section below. Physical programme
-admission and prospective D_min selection remain unproved.
+computes the whole original J2 source for two explicit terminal
+Cost-Info readings. Its actual minimization over Golden postrotations
+is also solved: cheaper admitted readouts have zero first source.
+The physical continuation must therefore derive the compulsory future
+task/price that changes this comparison; source realization alone does
+not supply that selection. See the final source-construction section.
 
 ## Result and consuming theorem
 
@@ -380,11 +382,32 @@ vanish and the existing causal theorem resolves generated intermediate
 state rows. An original additional internal source carried by F is
 preserved, not made zero by this identity.
 
-Minimality is now an actual calculation: among postrotations G^k with
-k>=0, k=0 has zero first probability source; k=1 has baseline(p,p^2)
-and its pointer Cost-Info source cancels exactly; k=2 is the least
-nondegenerate choice for both readings. This is not global D_min
-attainment or a claim that the stationary Einstein points are minima.
+The least SOURCE-PRESERVING postrotation is k=2: k=0 has no first
+probability source and k=1 cancels the pointer Cost-Info source. The
+actual terminal-price minimum is now also solved, rather than inferred
+from that restricted requirement. With the same task and remaining
+ledger, let T_k=T_0+k for the canonical Golden step. On Sigma,
+
+    S_coh,k = T_0+k+1+sin^2(k theta_G)-I_R,
+    S_ptr,k = T_0+k+D_phi(q^(k)||(p,p^2))-I_R.
+
+The coherent minimum is uniquely k=0. The pointer minima are exactly
+k=0 and k=1; all k>=2 are separated by a strictly positive cost gap.
+All selected minima have ZERO field first source throughout Sigma,
+even at non-Einstein points. G^2 strictly costs more than G under both
+terminal prices, and this dominance survives any fixed nonnegative
+Info multiplier. A genuine G implementation costing more than one
+integer tick makes k=0 the unique pointer minimum as well.
+
+Moreover G still observes the signed signal Dq1=4p^(3/2) Dt. Requiring
+that distinction alone therefore does not exclude the cheaper competitor.
+The exact source realization is valid, but these unconstrained terminal
+objectives do NOT select it. A compulsory future task/decoder or a real
+additional continuation price must change this specific comparison, or
+the physical continuation must use another programme. Imposing a
+nonzero Einstein source as the admissibility condition would not derive
+that task. This scoped result does not decide all prospective D0
+programmes or negate the owned exact Einstein sector.
 
 This replaces the uncomputed terminal-work/entropy part of the old
 residual FOR THESE declared execution/price contracts. It does not

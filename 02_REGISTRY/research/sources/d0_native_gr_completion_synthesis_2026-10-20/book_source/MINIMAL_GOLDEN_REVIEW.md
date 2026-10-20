@@ -7,18 +7,20 @@ physical-GR status is changed.
 
 | File in this directory | SHA256 |
 | --- | --- |
-| `MINIMAL_GOLDEN_COMPLETE_SOURCE.md` | `14fc80d5870d5763b177dda9f34776f5b6ef23612777a1d7f0d3837d2dc022ca` |
+| `MINIMAL_GOLDEN_COMPLETE_SOURCE.md` | `f6a5724e087c58b4294020a59532b7117f55247013181bcd4fd30d069a649330` |
 | `check_minimal_golden_complete_source.py` | `2066d88c4469c9586adb96e37c19a5c157016ef0b293616f16221c29acfea043` |
 
-The integrator composed the final argument. Independent review by
-`/root/review_midpoint` accepted these exact bytes after requesting and
+The integrator composed the argument. The source construction was first
+published in commit b24d96fb with proof SHA256
+`14fc80d5870d5763b177dda9f34776f5b6ef23612777a1d7f0d3837d2dc022ca`.
+Independent review by `/root/review_midpoint` accepted that version after requesting and
 checking the following corrections: binary-marginal KL versus complete
 pointer entropy; direct fresh-record entropy pinching and the oldRIGHT
 entropy triangle inequality; explicit fixed oldRIGHT marginal for M(Ψ);
 and separation of the computational inverse from the forward paid clock.
 Its final analytical review also inspected the checker without replaying it.
 
-`/root/action_bridge` independently accepted the same final proof bytes.
+`/root/action_bridge` independently accepted the same source-proof bytes.
 It checked the literal full fixed F_*, genuine multiplicities counted
 once, the finite C coin construction, distinct work flags for operator
 products, fresh whole-query trace probe, unchanged oldRIGHT, the complete
@@ -34,6 +36,38 @@ this distinction.
 
 These are independent model-agent mathematical reviews, not external
 human peer review or physical-theory acceptance.
+
+## Follow-up: the actual terminal minimum is solved and excludes G²
+
+The final proof hash in the table adds §5.1 and its explicit consuming
+scope. This delta leaves all source identities and the checker unchanged.
+The integrator and `/root/review_midpoint` independently derived the
+strict price comparison and the minimum over EVERY integer k≥0.
+Both `/root/review_midpoint` and `/root/action_bridge` then read and
+accepted the exact final proof bytes pinned in the table. No mathematical
+or scope blocker was found, and the unchanged checker was not rerun.
+
+For the same admitted task and unchanged remaining ledger, T_k=T_0+kℓ_G.
+At the original null stratum the coherent price is
+T_0+kℓ_G+1+sin²(kθ_G) minus its common fixed baseline. Thus k=0 is the
+unique minimum. The pointer price is T_0+kℓ_G+D_phi(q^(k)||(p,p²))
+minus its common fixed baseline. For ℓ_G=1, exactly k=0 and k=1 minimize
+it; for integer ℓ_G>1 only k=0 does. Every such minimum has zero field
+first source on the whole null stratum, including non-Einstein members.
+
+G² strictly loses to G for either terminal price whenever both are
+admitted with the same task. The gaps are respectively
+ℓ_G+4p³−p² and ℓ_G+D_phi((p⁶,4p³)||(p,p²)), both positive.
+This dominance survives every fixed nonnegative information multiplier.
+G itself still has a nonzero signed probability derivative, so mere
+signal distinguishability does not exclude the cheaper competitor.
+
+This is an exact analytic selection result, not a new numerical test.
+It strengthens the previous statement that global selection was merely
+unproved: the stated unconstrained TERMINAL objective rejects G².
+The theorem does not decide a different compulsory future task/decoder
+or complete continuation price. Their derivation is the actual next
+physical premise; source preservation cannot be assumed as its replacement.
 
 ## Decisive executed check
 
@@ -88,6 +122,9 @@ This acceptance does not establish native admission of the moving probe
 query, the compulsory physical Book aggregation/Info/normalizer, any
 separately paid upstream or intermediate source, free initial-work
 stationarity, global D_min attainment, or minimality of the stationary
-Einstein points. The two-rotation minimum is within the declared G^k
-postrotation class. The task remains open at the actual physical
-programme/price-selection interface.
+Einstein points. Two rotations are least only in the subclass that is
+required to retain the nonzero source for both information readings.
+Section5.1 proves that the actual terminal-price minimizers in the full
+G^k family are different and have zero source. The task remains open at
+the compulsory prospective task/price interface, with this exact
+terminal selection restriction recorded rather than hidden.

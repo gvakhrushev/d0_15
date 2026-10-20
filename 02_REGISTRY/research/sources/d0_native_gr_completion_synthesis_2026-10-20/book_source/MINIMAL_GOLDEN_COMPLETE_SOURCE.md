@@ -41,6 +41,15 @@ information readings** with the unchanged reporter. It is not a minimum
 over all admitted D0 programmes. Nor is first-source equality a claim of
 equal actions, equal Hessians or global variational minima.
 
+There is a stronger exact selection result: §5.1 computes the ACTUAL
+terminal-price minimum in this same G^k family. It selects k=0 for the
+coherent reading, and k=0 or k=1 for the unit-tick pointer reading.
+All those minima have zero field first source on Σ. Thus G^2 is an
+explicit source realization but cannot be selected by either of these
+unconstrained terminal-price minimizations when the cheaper competitors
+are admitted. This is a proved limitation of this proposal, not merely
+an unverified global-optimality premise.
+
 The execution premises remain explicit: availability of the complete
 field query and fixed reference, its actual finite primitive implementation,
 the prescribed clean initial work/task, the canonical fixed-clock price,
@@ -299,6 +308,74 @@ meeting that source-preservation requirement. In particular, choosing
 the cheapest single rotation without checking its complete Cost−Info
 would have eliminated the source we need to retain.
 
+### 5.1. The actual terminal minimum does not select G²
+
+Now compare the actual prices, rather than imposing source preservation
+as the admissibility criterion. Hold the complete initial condition,
+cleanup/query, required task and remaining ledger fixed, and suppose the
+compared postrotations are all admitted. Let one implementation of G cost
+the fixed positive integer ℓ_G primitive ticks; then T_k=T_0+kℓ_G.
+The specified unit-step Golden comparison is ℓ_G=1. At Σ all query work
+is exactly clean. Put q^(k)=(cos²(kθ_G),sin²(kθ_G)), and subtract the
+same constant oldRIGHT information baseline from every price if included.
+
+For the coherent information cut the terminal price is exactly
+
+\[
+ \mathcal S_{\rm coh}^{(k)}
+ =T_0+k\ell_G+1+\sin^2(k\theta_G)-I_{R,\rm coh}.
+                                                               \tag{15a}
+\]
+
+Its unique minimum over all integers k≥0 is k=0. For the pointer cut,
+the **exact binary KL identity at Σ**, now with all work clean, gives
+
+\[
+ \mathcal S_{\rm ptr}^{(k)}
+ =T_0+k\ell_G+
+ D_\varphi(q^{(k)}\Vert(p,p^2))-I_{R,\rm ptr}.
+                                                               \tag{15b}
+\]
+
+Relative entropy is nonnegative. At k=0 it equals 1, and at k=1 it is
+zero. Consequently for ℓ_G=1 the two minimizers are exactly k=0 and
+k=1, both of value T_0+1−I_R; every k≥2 has value at least T_0+2−I_R.
+For ℓ_G>1, k=0 is the unique pointer minimum. This identifies the whole
+integer-family minimum without a path census or numerical optimization.
+
+In particular, for every ℓ_G>0 the strict G² versus G comparison is
+
+\[
+ \mathcal S_{\rm coh}^{(2)}-\mathcal S_{\rm coh}^{(1)}
+ =\ell_G+4p^3-p^2>0,
+\]
+\[
+ \mathcal S_{\rm ptr}^{(2)}-\mathcal S_{\rm ptr}^{(1)}
+ =\ell_G+D_\varphi((p^6,4p^3)\Vert(p,p^2))>0.       \tag{15c}
+\]
+
+For ℓ_G=1 the first gap is 9p−4>0. Even the nonnegative information
+rescalings in (21) cannot reverse this comparison: the pointer gap is
+ℓ_G+(4p³−p²)+a[H_φ(p,p²)−H_φ(p⁶,4p³)]>0 for every a≥0.
+The entropy difference is positive because 0<p⁶<p²<1/2 and binary
+entropy is strictly increasing on (0,1/2).
+
+Every price-minimizing readout above has zero full field first source
+on Σ. For k=0, q_1=O(t²), so its pointer entropy is O(t²|log|t||)
+and its first derivative is zero; its coherent first derivative is
+also zero. For k=1 the pointer derivative cancels by (14).
+This holds even at non-Einstein members of Σ. Moreover G itself still
+observes a signed first-order signal, Dq_1=4p^(3/2)Dt. Merely requiring
+that signal to be distinguishable does not exclude the cheaper G
+competitor or force its Cost−Info derivative to be nonzero.
+
+The comparison is on the stated SAME terminal task. A compulsory future
+decoder, a different required retained output or an actual additional
+continuation price can alter which competitors are admitted or what
+they cost. Those must be derived from the original prospective task;
+they cannot be introduced solely to select a desired Einstein source.
+Equation (15c) is not a no-go for that different full prospective problem.
+
 ## 6. All final record prices and both complete entropy readings
 
 First let the actual final record have any fixed finite price table
@@ -469,7 +546,11 @@ change (20), and cannot be removed by calling it work. Global D_min
 attainment requires comparison of complete admitted alternatives with
 the same initial conditions and retained distinctions. This construction
 provides an explicit candidate and its complete stated first source;
-it does not prove that attainment. Stationary Einstein points need not
+§5.1 proves that its G² readout loses that terminal comparison when G
+is also admitted. A prospective forcing argument must supply the actual
+future task/price that changes this comparison, or select a different
+programme. The nonzero-source requirement alone is not such a derivation.
+Stationary Einstein points need not
 be minima of these prices; their Hessians have not been identified with
 the original J2 Hessian. Generic GR, physical GR and raw216 remain open.
 
