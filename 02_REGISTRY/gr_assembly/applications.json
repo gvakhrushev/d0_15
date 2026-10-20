@@ -1730,8 +1730,8 @@
     },
     {
       "id": "original-q8-spin-sheet-current-fullstep-boundary",
-      "owner": "Open scientific integrator PR #334; pinned evidence commit 9cd16820d020aed107b6db6215c44cfe3b7ea6f2",
-      "statement": "The original SO/vector-exterior CAR16 pointer kills the Q8 central -1, while the same Fock16 admits an exact parity-even real Cl(1,3)/Spin(1,3)/Q8 representation, invariant indefinite observer form and positive future-causal quadratic current. A conditional relative-path Golden interferometer distinguishes the center only if controlled Q8 is admitted. Separately, the periodic 4-Role torus has 16 flat global Spin boundary sectors invisible to local SO/Spin plaquettes; a declared twisted kinetic benchmark changes its CAR16 zero modes but is not the selected native Hodge-CAR Dirac operator. Literal fullStep still lacks Q8/scene input; paid actuation, selected spin action/stress and Ward remain open.",
+      "owner": "Open #334; typed bridge at fb5d6a5; conditional selector at 9ef8f99",
+      "statement": "The original SO/vector-exterior CAR16 pointer kills the Q8 central -1, while the same Fock16 admits an exact parity-even real Cl(1,3)/Spin(1,3)/Q8 representation, invariant indefinite observer form and positive future-causal quadratic current. A conditional relative-path Golden interferometer distinguishes the center only if controlled Q8 is admitted. The original Q8 center now has a typed map into the pre-existing Golden controlled-sign port, with an existing forward-only comparator and retained clock; this is mathematical interface evidence, not proof that Book03/G0 routes or pays for it. A later conditional model shows that identical scalar Book law and primitive price do not distinguish Q8 sheets; if complete Golden conditional Shannon output entropy is explicitly charged as the negative prospective M1 Info term, the all-negative triangle syndrome is uniquely selected modulo vertex gauge. That constitutive identification is not established: detector output entropy need not be source information. Literal fullStep still has no Q8/scene input; actual G0 admission, paid actuation, selected spin action/stress and Ward remain open.",
       "interface": "q8-spin-sheet-native-bridge-v1",
       "outcome": "positive",
       "kind": "exact-finite",
@@ -1744,7 +1744,9 @@
         "observer_current": "The native CAR16 Gamma0 observer bilinear is indefinite but Spin invariant; J0 is positive and the quadratic current is future-causal for real spinors. This does not construct the selected completely positive G0 instrument or sourced Dirac stress.",
         "conditional_interferometer": "The complete Golden relative-sign probabilities assume a controlled Q8 center on one retained history branch; that control is not in literal fullStep.",
         "current_fullStep": "The current GoldenCoherentMemory.fullStep signature has only real a,p inputs and a real Fin4 matrix output, with no UQuat, scene face or Spin representation input.",
-        "scope": "No paid Q8 actuation, boost implementation, full native spin matter source, global Spin-boundary selection, full H+J+R selection, refinement or GR closure follows."
+        "scope": "No paid Q8 actuation, boost implementation, full native spin matter source, global Spin-boundary selection, full H+J+R selection, refinement or GR closure follows.",
+        "typed_interferometer_route": "The latest pinned bridge maps original qONE/qNEG into the existing Golden controlled-sign parameter and reuses the owned forward-only Q8 comparator and reversible stage register. Physical routing from retained Book03 Q8 history, blank preparation, oldRIGHT protection, clock/work and complete Cost-Info payment remain open.",
+        "conditional_information_selector": "The all-negative central triangle sector uniquely maximizes complete joint Book/Golden Shannon information only under the explicit model premise that conditional Golden output entropy enters prospective Cost-Info with the negative sign. This is not established as the actual Book03 verified-source Info law; a stochastic detector's output entropy is not automatically information about an unknown source state."
       },
       "evidence": [
         {
@@ -1806,9 +1808,29 @@
           "ref": "9cd16820d020aed107b6db6215c44cfe3b7ea6f2",
           "path": "02_REGISTRY/research/sources/d0_native_spin_q8_car16_2026-10-20/check_original_role4_global_spin_twists.py",
           "sha256": "42d03c7976bfad30e261b1a1cf4ddb14019562c0cfc35a1af782e3d4d33f7fbb"
+        },
+        {
+          "ref": "fb5d6a57948d3469a4839be27ec45a7d763985ce",
+          "path": "02_REGISTRY/research/A4D_LITERAL_GOLDEN_M1_FUTURE_MDL_Q8_ORDER_PORT_TYPED_BRIDGE_2026_10_20.md",
+          "sha256": "92694b16bc1c9648305a3a50de6c5189edc27f7f4fd53554392ee0d2fcc4737f"
+        },
+        {
+          "ref": "fb5d6a57948d3469a4839be27ec45a7d763985ce",
+          "path": "02_REGISTRY/research/sources/d0_mdl_binary_generator_2026-10-20/check_literal_native_fin4_golden_future_archive.mjs",
+          "sha256": "242eb3d907ab65dfa9ec11cc9215a7e8fa33e2b39e3775c5c23690f1d99f4aa0"
+        },
+        {
+          "ref": "9ef8f99bcdf87323a8da9b51d4b8ecc5cec9b32f",
+          "path": "02_REGISTRY/research/A4D_CONDITIONAL_BOOK_GOLDEN_INFO_Q8_SPIN_SHEET_SOURCE_SELECTOR_2026_10_20.md",
+          "sha256": "9ffc2f0675d0969e01d92f934dfd5099ce2484c7028bccbaf6388c6d72b0cf23"
+        },
+        {
+          "ref": "9ef8f99bcdf87323a8da9b51d4b8ecc5cec9b32f",
+          "path": "02_REGISTRY/research/sources/d0_mdl_binary_generator_2026-10-20/check_complete_book_golden_conditional_information_spin_selector.mjs",
+          "sha256": "aaf1a223cb56ba40abb86e3c53489b87090178c7c1fe0b10d815682266cb4a08"
         }
       ],
-      "reported_state": "At pinned #334 9cd16820, the exact same-carrier Spin/Q8 and CAR-current checker passes, and the independent Role-twist checker verifies all 16 global sectors, identical local plaquettes and the benchmark 16-to-0 periodic/twisted kernel change. The scope firewall remains: this benchmark is not full native Dirac dynamics, and physical Q8/global-spin admission, paid action, stress and Ward are open. Result-only; GR_closed=false."
+      "reported_state": "At the earlier pinned #334 commits, exact same-carrier Spin/Q8, CAR-current and Role-twist controls are recorded. The typed bridge pinned at fb5d6a57948d3469a4839be27ec45a7d763985ce identifies an existing Golden controlled-sign port and forward-only Q8 comparator/clock, while keeping actual Book03/G0 routing and payment open. The later conditional selector at snapshot 9ef8f99bcdf87323a8da9b51d4b8ecc5cec9b32f reports that, under the named Shannon-as-Info premise, all-negative triangle syndrome maximizes complete joint Book/Golden conditional information; the same source expressly does not establish that this is Book03's physical Info law. Source owners report 33 direct bridge checker groups and 19 selector checker groups; this registry update did not independently replay them. No full native H+J+R source, selected Spin stress, Ward or GR closure is asserted."
     },
     {
       "id": "q8-future-mdl-conditional-327-archive-bits",
