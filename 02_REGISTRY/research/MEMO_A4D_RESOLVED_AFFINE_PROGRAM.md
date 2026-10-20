@@ -73,6 +73,22 @@ future-test clock/matter constraints. Its output Einstein 16+24+CAR
 source, quantal Born interpretation and controlled refinement still
 OPEN; \`GR_closed=false\`.
 
+**Binding idle-world consistency gate (20 Oct).** Newly compiled
+ProspectiveExecution.no_motion_without_a_required_distinction proves
+that a prospective minimizer of strictly positive action with NO
+nontrivial required test or future goal chooses the EMPTY history
+(cost zero); a nonempty chosen physical process forces an initially
+unsatisfied actual task. Thus true physical motion needs BOTH (i)
+a native M1-forced obligatory verification/execution condition or
+genuine full Cost-minus-Info source making idle nonoptimal, and
+(ii) a prospective D_min physical law selecting the globally or
+time-consistently locally minimal FULL permitted history. A minimum
+DESCRIPTION in Tome I and an ActionProtocol Cost quantum do not
+yet prove (i) or (ii). Central source owner and exact Lean:
+[A4D_PROSPECTIVE_DMIN_PHYSICAL_SELECTION_BEFORE_EXECUTION_AND_Q8_MINIMAL_3_GATE_2026_10_20.md](A4D_PROSPECTIVE_DMIN_PHYSICAL_SELECTION_BEFORE_EXECUTION_AND_Q8_MINIMAL_3_GATE_2026_10_20.md).
+No external target or extra gravity attraction has been inserted;
+the real native source and GR_refinement remain OPEN.
+
 ### Upstream M1/D_min future-context source: no third primitive line, no erased future archive
 
 The original exact M1 verification contract now has a genuinely COMPILED generative
