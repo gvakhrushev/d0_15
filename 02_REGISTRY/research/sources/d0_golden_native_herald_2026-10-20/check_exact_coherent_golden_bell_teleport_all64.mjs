@@ -66,7 +66,7 @@ function U4dag(v){
 let start=E16();start[0]=1;
 let raw=U4(start),target=E16();target[6]=a*p;target[15]=a*p;
 let rawSuccess=raw.reduce((sm,v,i)=>sm+((i&2)?v*v:0),0);
-const uncondBellAmpError=Math.max(...raw.map((v,i)=>Math.abs(v-target[i]*(i&2?1:0))));
+const uncondBellAmpError=Math.max(...raw.map((v,i)=>((i&2)?Math.abs(v-target[i]):0)));
 fail(Math.abs(rawSuccess-s)<2e-15&&uncondBellAmpError<2e-15,
  "actual three native wires+fresh blank Bell state source incorrect");
 fail(Math.abs(norm(raw)-1)<2e-15&&Math.abs(s+r-1)<2e-15,
