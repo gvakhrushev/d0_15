@@ -93,3 +93,41 @@ An explicit **genuine countertest** of a proposed compiler is cheap: replace its
 These are exact original finite math theorems + **conditional** symmetry-source repair, not a physically selected full D0 action or GR. \`GR_closed=false\`.
 
 **Exact standalone finite replay**: \`sources/d0_native_two_three_clock_2026-10-20/check_scene_six_face_orbit_twirling_naturality.py\`; enumerates analytically the full original orbit count, checks arbitrary random original permutation/injections and all SIX actual rooted histories using exact Q-rational proper null boosts, and checks the determinant and \(\eta\) nonpreservation of averaged primitive edges. It does NOT enumerate 122 million labels or simulate a complete Golden G0 unitary.
+
+
+## 5. Stronger ORIGINAL six-source NO-GO: one fully G-INVARIANT scene connection carries only ONE independent rooted ABC triangle
+
+Distinguish two logically different uses of \(G\): covariance of a **family** of controlled scene connections \(U^{(\iota,x)}\) versus literal pointwise invariance of ONE unaddressed scene connection \(U_{uv}\).
+
+**Theorem.** Suppose an inverse-respecting original K(9,11,13) scene SO edge assignment has \(\forall g\in G,\ U_{g(u)g(v)}=U_{uv}\), with no Role/observer/address/face conditional. Original directed edge G-orbits are exactly the six ordered part-pairs \(A\to B,B\to A,A\to C,C\to A,B\to C,C\to B\). Therefore the full SO edge connection is determined by at most the THREE group elements
+\[
+U_{AB}=X,\quad U_{BC}=Y,\quad U_{CA}=Z
+\]
+and their literal inverse reverses. For EVERY based original ABC triangle \(a\in A,b\in B,c\in C\),
+\[
+\boxed{\operatorname{Hol}(a\to b\to c\to a)=XYZ}
+\tag{7}
+\]
+independently of all vertex labels, choice of root, anchor or which six distinct \(c_j\) are read. In particular the map that tries to output the original six distinct 4D plaquette holonomies has image in the **diagonal subset**
+\[
+\boxed{\{(P,P,P,P,P,P):P\in SO^+(1,3)\}\subset SO^+(1,3)^6.}\tag{8}
+\]
+It therefore has at most **six** independent Lorentz tangent dimensions, whereas the unrestricted ORIGINAL six-based plaquette input has SIX group elements (36 Lie tangent dimensions before true Role link/Bianchi constraints). Even a mild actual physically admitted Role field with two distinct plaquette matrices refutes a fully invariant single-scene implementation. No dimension/rank census across new sectors is needed: equation (7) is an exact group-theoretic original finite graph theorem.
+
+This DOES NOT prohibit a globally gauge-covariant original Role-to-scene compiler: the addressed map in §2 is the covariant family \(\iota\mapsto U^{(\iota,x)}\), and the physical Role address x and relative face label j are legitimate typed inputs from earlier owners. The obstructed shortcut is **throwing away/never supplying** this relative observer/face information and claiming the bare anonymous \(K(9,11,13)\) directly generates six independent spacetime curvature orientations. An unaddressed scene can carry a flat or common oriented triangle holonomy, not a freely varying 4D 6-face tetrad.
+
+## 6. Conditional original Golden archive cost if ONE execution insists on storing the WHOLE symmetrizing orbit
+
+Orbit averaging in (4) is a **mathematical invariance proof**: it does NOT itself require choosing or storing a random element of the 122,316,480-element orbit, and no such new experiment is postulated. Nevertheless if a proposed actual G0 compiler CLAIMS to materialize a single orthogonal classical branch for EVERY distinct embedding and retain its identity during ordered-history execution, then exact single-shot discrimination requires a classical register with at least \(|\mathcal E|=122316480\) independent labels.
+
+The already-owned original Golden type-A exact-cost supply is Fibonacci: at original word cost k the number of available distinct A-type words is \(F_{k+1}\). Here the PRECISE conditional capacity threshold is
+\[
+\boxed{
+F_{40}=102334155<|\mathcal E|=122316480
+\le F_{41}=165580141,
+\quad\Longrightarrow\quad k\ge40
+}\tag{9}
+\]
+under the same pure type-A exact-cost coding convention. A cost-26 pure A bank (F27=196418), sufficient for the 143480 OUTCOME LABELS of the prior full-Golden programme, is NOT sufficient to distinguish all 122316480 scene embeddings in addition. This is NOT a compulsory minimum D0 gravity cost: if the embedding is a pure coordinate/gauge convention, fixed canonically/relationally and not recorded as distinct physical branch, there is no such 122-million-outcome archival demand. Nor does (9) cover more efficient variable-depth/A+B/mixed-register encodings. It is only a direct **same original supply** constraint on the specific claimed all-orthogonal-type-A-orbit implementation, preventing accidental declaration that averaging over 122 million scenes is zero-work and automatically paid by the already-owned cost-26 mark bank.
+
+**The true physics gate remains:** construct or derive a paid original site+face-relative **covariant** controller and Book/oldRIGHT archive, not a pointwise G-invariant scene connection nor an unpriced random orbit selector. Its complete same-run action must still yield original Einstein–CAR Euler, with physical joint microstructure sector/refinement intact. \`GR_closed=false\`.
