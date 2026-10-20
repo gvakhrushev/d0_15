@@ -119,3 +119,26 @@ The same phenomenon is visible in the original native \(Q_8\): \([i,j]=-1\) insi
 **Crucial topology caveat:** a graph lift choice need not be a freely allowed spin structure on the 4D Golden LEFT Role continuum. The filled original complex has H1(F2)=0; physical 4D spin-structure freedom depends on the separately owned Golden LEFT/refinement carrier and constraints. The present theorem derives neither physical spacetime spin topology nor a 4D spin connection from Q8 by decree.
 
 Reproduction: \`sources/d0_native_two_three_clock_2026-10-20/check_q8_spin_sheet_triangle_inverse.py\`; independent exact Python GF2 matrix rank 327, all960 octahedral constraints, 327-triangle three-pass inverse, true original four-edge central -1 SO-invisible witness and fourth-power spinorial spectrum. Independently executed locally and all exact checks PASSED. Research only. \`GR_closed=false\`.
+
+
+## 6. Strongest exact BOOK03 algebra source: a NONZERO central idempotent dies under every SO/exterior CAR readout
+
+The finite graph proof is complemented by a genuinely **algebra-valued** theorem: let \(z=-1\in Z(Q_8)\), the EXACT original Book01 commutator/order-memory remainder. In the group algebra \(\mathbb Q(\varphi)[Q_8]\), define (ONLY for mathematical source comparison)
+\[
+\boxed{e_-=\frac{[1]-[z]}2,\qquad e_-^2=e_-,\quad e_-\ne0.}\tag{9}
+\]
+The coefficient 1/2 is a rational group-algebra identity, NOT a new original physical action/coupling or proposed inserted projector.
+
+For a detector whose Q8-memory representation **factors through the Lorentz vector quotient**, the center z projects to the SO identity, so on the actual exterior CAR16 induced from the four-vector representation \(\rho_{\rm ext}(z)=I_{16}\). Hence
+\[
+\boxed{\rho_{\rm ext}(e_-)=0.}\tag{10}
+\]
+In contrast for any true fundamental complex spinor doublet of \(Q_8\subset SU(2)\subset\operatorname{Spin}^+(1,3)\), \(\rho_{\rm spin}(z)=-I_2\), and
+\[
+\boxed{\rho_{\rm spin}(e_-)=I_2.}\tag{11}
+\]
+The regular eight-dimensional Q8 group-algebra representation makes nontriviality particularly explicit: left multiplication by z swaps four disjoint basis pairs, so the matrix \((I_8-L_z)/2\) is an exact nonzero rank-FOUR idempotent. **Thus any original Book03 algebra-valued path sum which genuinely retains this Q8 subalgebra cannot be fully recovered from ANY collection of measurements factoring through SO/exterior CAR16**, no matter how many rooted paths or positive Bell outputs are registered. The kernel is exact, already at one central algebra element, and it is a DISCRETE order-memory loss, not a missing continuous Lorentz Jacobian.
+
+An explicit finite interference contrast: in the group algebra, \(X=[1]+[z]\) and \(Y=2[1]\) are distinct positive-coefficient path-memory sums. Both have IDENTICAL SO/exterior images \(2I\), but their spinor images are \(0\) and \(2I\) respectively; a genuine coherent spin-sensitive complete instrument could distinguish them. A *single* spinorial path with central \(-1\) differs only by a global sign and is **not** observable in a normalized single-path Born probability: the effect requires actual retained coherence/relative path memory (or a suitable spin-sensitive loop spectral observable such as §4). This avoids a false claim that \(-1\) is automatically a directly observable one-shot detector event.
+
+This strengthens the **scope** of the existing #334 2648-dimensional SO source atlas. It is mathematically complete for its declared SO/exterior and scalar Cost−Info carrier; it is NOT faithful to the existing Q8 center on the full original algebraic-memory carrier, unless the actual G0/Book programme selects a physical quotient that kills e_- or carries a faithful spin-sensitive complementary channel. The **positive** native reconstruction in §§2–3 uses precisely the already present ABC triangle histories and 960 octahedral checks to keep that existing central sheet if physically admitted. \`GR_closed=false\`.
