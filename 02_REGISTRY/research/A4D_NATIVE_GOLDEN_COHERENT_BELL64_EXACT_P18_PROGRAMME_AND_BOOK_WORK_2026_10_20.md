@@ -163,3 +163,42 @@ The physical theorem has now three narrow, independently falsifiable remaining p
 - \`sources/d0_golden_native_herald_2026-10-20/check_golden_only_conditional_uniform4096_role384.mjs\`: already-owned algebraic-integral no-rational theorem plus NEW exact Z[p] **classical conditional** fair-bit right-inverse, actual complete 18-outcome Golden reference, original Role L2 270-observed/114 gauge+Wilson Fisher spectrum and native L-scaling. PASS, blob \`7a0f7207a6ad4e4e451a7821a3052a8bac469d16\`. It is a **CLASSICAL statistical scaffold**, not a separate proof of quantum projection, which is provided by first checker instead.
 
 Do not rename our successful p^18U trace-decreasing exact native operation as a deterministic SO64 physical gate; only its **conditioned successful output** equals U. Physical workload, response normalization and matter coupling cannot be borrowed from a free ideal Bell-projection that was not executed. \`GR_closed=false\`.
+
+
+## 6. Full 718×17 SAME-HISTORY source and exact ORIGINAL Role384 rank with native (not imported) Bell rate
+
+The independently executed complete consumer \`sources/d0_golden_native_herald_2026-10-20/check_original_all718_nativep36_signed_source.mjs\` puts the true \(p^{36}\) coherent success **instead of** the externally ideal mathematical 1/4096 probability into the already-owned original 33-vertex/718-directed-edge moving one-sided Perron history. On every original directed event e, retain 16 conditional Golden/Choi outcomes with \(q_e^{\rm good/bad}(U)\), plus one additional **actual composite native-Bell-failure outcome**. For \(h_{\rm native}=p^{36}\),
+\[
+\boxed{
+Q_{e,j}(y)=\alpha_{u(e)}(y)P_e(y)
+  \begin{cases}
+ h_{\rm native}q^{(16)}_j(U_e(y)),&1\le j\le16\\
+ 1-h_{\rm native},&j=\mathrm{BellFail},
+ \end{cases}}
+\tag{14}
+\]
+with \(\sum_{j=1}^{17}q^{(17)}_j=1\), all original Golden inner BAD failures in the 16, old one-sided \(\alpha=r/\sum r\) rather than stationary \(\pi\). There are **exactly 718×17=12,206 FULL positive mathematical joint outcomes**. Their entire first score satisfies the exact moving conditional chain rule, so scalar Book-Perron and Lorentz-score Fisher blocks are orthogonal **even when original \(\alpha,P\) move with genuine primitive Cost/Info**.
+
+On the original six independent Lie directions, the entire *unconditional* one-face Fisher becomes
+\[
+\boxed{c_{\rm fully\,native}=
+ h_{\rm native}\frac{p^4}{6}
+ =\frac{p^{40}}{6}
+ =7.2835505653018\cdot10^{-10}>0.}\tag{15}
+\]
+The original 4D Role L2 shared-link incidence has owned rank45 PER Lie axis; multiplying its six positive Fisher blocks by the genuine positive native scalar (15) leaves **rank270 and the same 114 gauge+Wilson link nulls** exactly, not a fitted full64 condition. The source strength is smaller than the ideal \(p^4/(6\cdot4096)\) by \(4096p^{36}=(2p^3)^{12}\); it MUST NOT be relabelled the ideal unitary Bell success coefficient. Each face's **conditional** signed positive-root \(J_{23}\) decoded tensor is identical to the original based Lorentz odd plaquette after dividing by the actual same-class full17 mass. Its absolute Book path/prior/cost source is still charged separately, as in (14).
+
+**Executed original 12,206 result**: original positive nonconstant moving K913 Cost/Info, full one-sided Perron and exact moving rate gives complete Book/Lorentz Fisher cross \(0\) to double precision; recovered marginal error \(2.17\cdot10^{-19}\), original Lie odd positive-root error \(1.94\cdot10^{-16}\); all positive original 17 full outcome labels sum to one, and the unconditioned six-axis Fisher equals \(p^{40}/6\). Direct independent source code \`check_original_all718_nativep36_signed_source.mjs\`, run from its committed blob, PASS. The original K913-directed SO assignment in that checker is a declared mathematical role **TEST**; the genuine Role4 site/face controller is separately owned by the real 640-Euler geometry and is NOT inferred by equating K913 vertices to spacetime sites.
+
+### 6.1. The SIX prepared Bell-pair successes produce exactly the twelve known-|1> active ancillas required by the SIX inverse Bell checks
+
+There is NO NEED to import another group of known-1 reference basis preparations into the 64d Bell stage. Eq. (2) shows every successful original \(|\Phi^+\rangle_{AD}\) programme Bell pair has TWO spectator active states \(|1\rangle_B|1\rangle_C\) **already prepared deterministically on its successful branch**. SIX independent programme pairs therefore leave exactly **twelve separable known-\(|1\rangle\)** active byproducts — the number required by the SIX inverse Bell comparison gadgets in equation (3). Once the original measured parity C=1 is properly copied into a permanent read-only stage record, and the actual G0 active controller permits sound routing of those *independently known product* spectators, they can supply the inverse-comparator's B,C inputs. No free unknown-state cloning and no borrowed Bell seed are involved. The CNOT record-copy, active feedforward, stage bookkeeping and routing resource must be paid; this is a constructive resource **inventory**, not an already compiled literal G0 programme.
+
+### 6.2. Exact distinction between coherent FULL quantum archive and classical Golden F/R word-cost audit
+
+The independently executed \`sources/d0_golden_native_herald_2026-10-20/check_native_bell_failed_parity_archive_price.mjs\` makes the quantum/classical distinction quantitative:
+- The COHERENT inverse-Bell circuit measures parity C and later the actual reverse measurement; failed AB states are preserved as coherent quantum states. With unlimited OFFLINE attempts for one Bell seed, the observed PARITY stopping-clock \(T\) has \(\Pr(T=j)=s r^{j-1}\), exact \(\varphi\)-Shannon \(H_\varphi(T)=-\log_\varphi s-(r/s)\log_\varphi r=3.04402053837818\ldots\), so SIX independent offline stop-times contribute \(18.2641232302691...\) golden units of **classical timing information** alone. This is NOT the whole quantum archive/circuit Work price. The SIX inverse projections on unknown data are single-shot and have a separately recorded success/failure source.
+- A DIFFERENT, dephased *classical* experiment that measures every Golden F/R letter in every two-sample attempt has an exact original prefix-code \(C(F)=1,C(R)=2\). The stopped raw F/R tape has expected \(\varphi\)-cost \(12(2-p)/p^3=70.2492235949962...\); a successfully delivered perfectly uniform 4096 public label carries \(12\log_\varphi2=17.2850410849507...\) and the DIFFERENCE \(52.9641825100455...\) is the mean original CLASSICAL raw-archive conditional entropy. Those numbers must NEVER be imported into the actual coherent programme as though both experiments had measured the same microscopic distinctions. The physically selected H+J+R has to compute its own complete retained quantum register price.
+- Both exact full-positive experiments are permitted mathematical encodings with original Golden probability sources and have NO exogenous positive coupling coefficient. The full original G0 future-test/clock/witness law has not selected which execution, if either, is compulsory.
+
+This is the critical resource correction to simplistic "Bell rate is field independent, therefore Bell costs nothing" arguments: the scalar SUCCESS surprise can be a fixed **36** while the complete failure/clock/preparation/oldRIGHT archive has a genuine independently moving and physically chargeable Cost−Info source.
