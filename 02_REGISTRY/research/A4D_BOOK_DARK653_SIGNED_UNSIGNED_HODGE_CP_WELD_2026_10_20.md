@@ -148,3 +148,20 @@ The independent Schur closure error is <2.4e−15. The originally observed 83.88
 **Physical use:** after any ACTUAL original fully priced full128/CAR/Lorentz→718 Cost/Info tangent is established, (12) is the exact parent-compatible scalar historical part of the same-action source. No physical mapping is silently selected here. The Lorentz Hessian and its separate ordered-history memories must remain present. A scalar-only pressure still cannot reproduce the full original Palatini 12+/12− block, and GR_closed remains false.
 
 New executable numerical regression: sources/d0_book_dark_hodge_2026-10-20/check_book_source_three_channel_parity.py (a bounded full718 original native-source Poisson replay, no eigenrank census beyond the already owned F rank32).
+
+## 8. Independent balance-flow proof of the dimensions and of parity orthogonality
+
+The ORIGINAL normalized balanced stationary-flow tangent from #384 is
+    T={z on 718 directed original edges: ∑ z=0, ∑_v z_uv=∑_v z_vu each u},
+    dim T=685.
+At a reversible bulk reference, split z into reversal-even z^+ and reversal-odd z^−. For even z_uv=z_vu, the balance equations are automatic; total normalization is ONE nonzero condition on 359 unordered original edges, so dim T_even=358. For odd z_uv=−z_vu, total normalization is automatic; the balance equations are exactly Bminus z^−=0 of rank32, so dim T_odd=327. Hence
+    T=T_even[358] ⊕ T_odd[327],
+    T_even[358] --original Q_A Fisher--> future32 ⊕ dark_even326,
+    T_odd[327]  --original Q_A Fisher--> dark_odd327.
+The first target-side arrow is an isometry for the *Book Hessian inner product*, not an unweighted equality of individual source vectors. This derivation requires only balance and the already-owned original incidence ranks.
+
+Since μ_uv=μ_vu, the full original history Hessian
+    H_f[z,z]=(1/lnφ){Σ_uv z_uv²/μ_uv − Σ_u (Σ_v z_uv)²/π_u}
+has identically vanishing cross term H_f[z_even,z_odd]=0: the first sum cancels pairwise by reversal and every outgoing marginal of an odd balanced z vanishes. Thus the source split in §7 is not merely numerical or an accidental orthogonality of three handpicked costs; it is forced by the full original positive reversible Book equilibrium.
+
+Neither this decomposition nor (12) identifies the noncommutative full128 History→Lorentz representation. This is a typed FINITE original scalar history theorem; original full GR remains open.
