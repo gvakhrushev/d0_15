@@ -90,6 +90,38 @@ Coarse-graining to just the sixteen scalar densities f_x gives a constant record
 
 It has the exact small-t leading coefficient I6/(2 ln phi). On t=.002 V8 returns actual 1.480417866592053e−10 versus analytic leading 1.4804140418478372e−10. Thus any field-independent Petz/reconstruction channel from f-only to the full varying Golden17 record is impossible along this field path; genuine conditional information is lost. This is a quantitative source audit, NOT an assertion the full physical D0 action must charge this Shannon/KL.
 
+## 5.1. Positive reverse synthesis: native relative-code memory can STABILIZE the invisible variable
+
+The full 17-outcome Golden probabilities not only refute trivial f-only Shannon descent: they also supply a **strict local positive information metric in precisely that geometric scalar fiber**. Choose the existing canonical Golden flat positive reference q_17(I), without adding a free coefficient. The mathematically defined, fully inclusive Golden relative-code statistic of the true six separate affected face observations is
+
+    R_native(t) :=
+        6 D_phi(q17(exp(t J23)) || q17(I)).
+
+This is NOT a newly selected fundamental term of G0, merely the original positive probability distributions read in the relative-entropy/code convention already owned by the complete-history price audit. By Gibbs positivity and the explicit native q variation,
+
+    R_native(0)=0,  R_native'(0)=0,
+    R_native''(0)=I_six/ln(phi)
+                 =p^4/(4096 ln(phi)) >0.
+
+The exact closed **positive** coefficient is entirely native Golden p and the TWO true fresh-flag fixed Bell rate 1/4096, with no fitted Einstein parameter. The original complete-record measurement is strictly information-distinguishing even though all f_i are constant; its legitimate relative-code curvature is strictly stabilizing when used as a positive internal price. There exists a genuine local radius epsilon such that R_native(t)>0 for 0<|t|<epsilon, and t=0 is its unique local minimum on THIS one-dimensional native Lorentz link orbit.
+
+This suggests a much more realistic PHYSICAL mathematical route than demanding that the **entire paid native action be constant on every microscopic f-fiber OFF SHELL**. For a true selected complete action A(q,nu), in any actually admitted regular chart with coordinates (f,z) along geometric scalar and INTERNAL history/link fibers, if the entire genuine native internal Euler
+
+    D_z A(f,z)=0
+
+has a locally unique smooth stationary solution z=z_*(f), with the true vertical Hessian D_zz² A positive/invertible in the real gauge quotient, then the legitimately reduced action
+
+    F_eff(f)=A(f,z_*(f))
+
+IS a function of f and has exact first/second source
+
+    D F_eff =D_f A(f,z_*),
+    D² F_eff =A_ff−A_fz(A_zz)^(-1) A_zf.
+
+This is the true same-action Schur/IFT envelope theorem; it does **not** require D_z A=0 for arbitrary OFFSHELL z, and can therefore accommodate the actually measured positive native Golden memory Hessian. The already-owned arbitrary-nonseparable F(f) radial theorem can consume F_eff once its nonzero site first coefficients and genuine connected/regular physical chart are established. The full original internal Euler and Cost/Info selector still have to be derived; only ONE of many vertical directions has been shown to admit an intrinsically positive available relative-code statistic. Do not claim all internal Hessian eigenvalues are positive, or that Book03 compels the specific KL/relative reference: the experiment demonstrates mathematical *compatibility*, not the missing physical choice.
+
+**Sharper route:** do not try to erase all full17 historical information before forming geometry. On a truly selected native programme, solve the legitimate full history/preparation/clock/oldRIGHT Euler FIRST, retaining all positive records. Then check descent of the STATIONARY ENVELOPE to the original geometric f. The strict native one-link Golden KL Hessian gives one explicit positive physical-type input to that solver, whereas the previous offshell full-Shannon source example shows why demanding zero memory variation everywhere was overstrong.
+
 ## 6. THE physical yes/no source test for the latest nonlinear universality theorem
 
 Let S_compulsory(q,nu) denote the actually selected paid original whole G0/Book03 H+J+R/Cost−Info/Golden/CAR/prep/clock/work action on an actual balanced native Golden LEFT site, with its own genuine internal Euler and full oldRIGHT/ref128 memory. Its stationary reduction is *not owned*. To invoke the newly owned universal vacuum Einstein theorem, it must satisfy the actual vertical SOURCE condition on this field direction, not just match a face observable at one point.
