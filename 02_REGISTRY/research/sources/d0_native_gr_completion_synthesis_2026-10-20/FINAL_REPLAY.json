@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "validation_date": "2026-10-20",
+  "scientific_command": "PYTHONPATH=/tmp/d0_native_flag_deps python3 -B -W error 02_REGISTRY/research/certificates/a4d_native_gr_completion_synthesis_check.py",
+  "scientific_scope": "One final integrated replay of the three changed calculations; exact equality with all immutable scientific fields. Only elapsed seconds in execution receipt excluded. No historical all40/continuum/Lean replay.",
+  "results": {
+    "geometric_source_exact_checks": 768,
+    "book_source_exact_checks": 49,
+    "execution_return_exact_checks": 34,
+    "immutable_inputs_before_and_after": 36
+  },
+  "structural_commands": [
+    "python3 tools/validate_repo.py",
+    "python3 tools/validate_work.py",
+    "python3 tools/validate_agent_protocol.py",
+    "python3 tools/gr_assembly.py check",
+    "python3 tools/generate_lean_views.py --check",
+    "git diff --check"
+  ],
+  "structural_result": "all PASS; no scientific promotion",
+  "files": {
+    "02_REGISTRY/research/A4D_CAUSAL_BOOK_SOURCE_TO_EXACT_GR_SYNTHESIS_2026_10_20.md": "3389dcd4c171e5752098bf28c1d1962adff6bb21244a6b0e6b6fbcb2d0264a5b",
+    "02_REGISTRY/research/certificates/a4d_native_gr_completion_synthesis_check.py": "8eefe3ce5116b2b84256118457e0b7eedfb90887f1e998d75ba1209d0903772d",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/causal_boundary_completion.md": "46c08c8295401cb42531ec3b974709638ec5f913dbd1b64c0210efa3b99953ba",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/INTEGRATION_REVIEW.md": "be25de9d37c1b68c34bdfaf77179a48271b6f21dfd316dac1c710842c41d7d00",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/COMPANION_REVIEW.md": "3e7d734e6dacab82485f756005ad3850f9c44e0ad81a440047bfecd2b21ee31d",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/REFERENCE_COMPOSITION_REVIEW.md": "8066afa814454731b460e0b92be4902c69b3b692336a7ad216dca876cd3b81e9"
+  },
+  "formal_tree": "070f4471863893ce9f7ea85a3e3ce23f3c8f13aa",
+  "tools_tree": "bb5dd3335b69a58e29c00b4186211c91f5c5e870",
+  "fresh_Lean_build": false,
+  "complete_physical_price_proved": false,
+  "GR_closed": false
+}

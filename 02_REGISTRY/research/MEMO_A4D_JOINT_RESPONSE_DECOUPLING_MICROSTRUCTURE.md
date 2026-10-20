@@ -1,5 +1,18 @@
 # A4D joint response on fixed smooth sources: PARTIAL / OPEN
 
+Current same-programme composition: [whole-family CAR first source, causal
+state elimination and complete Book-price binding](A4D_CAUSAL_BOOK_SOURCE_TO_EXACT_GR_SYNTHESIS_2026_10_20.md).
+It supplies the exact geometric reporting component on the entire original
+common-null family, including full-address/fixed-oldRIGHT preparation and
+paid repetition multiplicity. The generated-state adjoint equations are
+composed with all40 §5.1; complete absolute Info/work valuation, primitive
+admission and genuinely independent upstream preparation remain explicit.
+The original amplitude/likelihood distinction and exact all128 paid return
+prevent a normalized readout or an additional statistical weight from being
+mistaken for that full physical price. The concurrent reference cocycle is
+consumed with its actual source-preservation and moving-reference boundary.
+No new action, fitted residual, task retirement or GR closure is asserted.
+
 Latest composed continuation: [same-history paid source, clock reduction and
 full connection response](A4D_SAME_HISTORY_PRICE_AND_SOURCE_COMPOSITION_2026_10_20.md).
 It corrects the former positive-sign LC interpretation in the paid-gradient

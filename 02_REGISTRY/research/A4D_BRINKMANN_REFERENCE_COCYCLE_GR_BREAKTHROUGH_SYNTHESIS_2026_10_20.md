@@ -22,7 +22,7 @@ deformation fixes the full coframe and metric determinants exactly.
 A reference-matched two-history scalar **cocycle** instead cancels
 all coframe-only flat source rows to ALL orders at the diagonal.
 If it preserves the original dynamical link derivative, that
-cocycle is UNIQUE, up to a field-independent constant.
+cocycle is UNIQUE when its value is zero on every reference diagonal.
 This supplies a canonical **mathematical** shape of the required
 relative native source rather than a counterterm tuned to Einstein.
 Actual physical execution/selection, positive records, code/clock
@@ -263,9 +263,16 @@ zero when U=U_0 for every e,U0, then
 Proof: their difference in U is constant on each
 connected chart; evaluation at U=U0 fixes that constant.
 The additive identity then holds automatically.
-If only coframe differential vanishing is required
-rather than zero value, the solution is unique
-up to a field-independent constant.
+If only coframe differential vanishing is required rather than zero value,
+the general solution is (9) plus `c(U_0, held internals)`: integration in e
+does not eliminate dependence on an independently retained reference.
+Exact zero diagonal for every reference fixes this term to zero, as does
+the full pair-cocycle identity. A globally field-independent constant
+requires the corresponding reference/internal derivative conditions too.
+Source preservation here is a partial derivative at independently held
+reference/internals. If a physical matching map moves their preparation,
+observer or clock with active U, their actual chain-rule sources remain
+until joint internal stationarity or an explicit cancellation is proved.
 
 Thus **one** relative comparison of the FULL original
 price automatically cancels its entire one-arm

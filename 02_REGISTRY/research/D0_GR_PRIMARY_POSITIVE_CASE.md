@@ -77,6 +77,18 @@ literal same-metric sampling on every mesh.
 
 ## The one missing physical selection — not another geometry campaign
 
+The [whole-family CAR/Book/causal synthesis](A4D_CAUSAL_BOOK_SOURCE_TO_EXACT_GR_SYNTHESIS_2026_10_20.md)
+now realizes this family's geometric first-source slot through actual CAR
+operands and a complete Golden reporting component on the supplied coherent
+query interface. It includes every ambient 16+24 direction, full-address
+preparation, retained work and the actual repetition count; causal generated
+states have an exact adjoint elimination. This closes that component map,
+not the full price. The remaining same-programme source must include actual
+Info/work, primitive admission, independent upstream preparations and matter
+coefficients. Its operator residual is explicit in the synthesis; it cannot
+be fitted away by selecting an information table or subtracting an unpaid
+reference. The existing all40 and midpoint results remain the consumer.
+
 **Research intake, not promotion to `GR` / `positive_gr`.** This
 construction proves a family of mathematical finite stationary
 geometric/matter solutions using an explicitly configured Golden-`J2`

@@ -1,0 +1,109 @@
+{
+  "arithmetic": "exact Q(a), a=sqrt(phi^-1), a^4+a^2-1=0",
+  "check_names": [
+    "source SHA256: 01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md",
+    "source SHA256: 01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md",
+    "source SHA256: 02_REGISTRY/research/A4D_RETAINED_HISTORY_READOUT_AND_NORMALIZER.md",
+    "source SHA256: 02_REGISTRY/research/A4D_COMPLETE_HISTORY_INFORMATION_SCALE.md",
+    "source SHA256: 02_REGISTRY/research/A4D_NATIVE_FULL128_PORT_SCORE_SUFFICIENCY_AND_CODE_SOURCE_RECOVERY_2026_10_19.md",
+    "source SHA256: 02_REGISTRY/research/sources/d0_same_history_price_composition_2026-10-20/paid_port_history.md",
+    "source SHA256: 02_REGISTRY/research/A4D_PROSPECTIVE_BOOK_FINITE_FUTURE_LAW_Q8_VERIFICATION_2026_10_20.md",
+    "source SHA256: 02_REGISTRY/research/A4D_EXACT_GR_COMMON_CARRIER_HJR_SCALE_SOURCE_GAP_2026_10_20.md",
+    "source SHA256: 02_REGISTRY/gr_assembly/sources/d0_double_null_quadratic_cartan_2026-10-19/arbitrary_brinkmann_all40.md",
+    "original Golden p+p^2=1",
+    "phi=1+p=1/p",
+    "inverse of original sqrt(p)",
+    "original K0=p L coefficient",
+    "original K1=sqrt(p) L coefficient",
+    "all nonblank port mass retained",
+    "absolute amplitude squares",
+    "exact native port probability ratio phi",
+    "amplitude Info gap=3/2",
+    "probability Info gap=2",
+    "additional-marker Info gap=1",
+    "wrong squared law still normalized",
+    "wrong law port0=(5-sqrt(5))/10",
+    "wrong law port1=(5+sqrt(5))/10",
+    "squared-probability binding fails original physical port",
+    "t=log(phi) true cost-marked port0",
+    "t=log(phi) true cost-marked port1",
+    "t=log(phi) retains both ports",
+    "t=2log(phi) true cost-marked port0",
+    "t=2log(phi) true cost-marked port1",
+    "t=2log(phi) retains both ports",
+    "coherent first jet: full moving Gram coefficient",
+    "coherent first jet: exact log(phi) coefficient",
+    "coherent control really contains an off-diagonal record term",
+    "native full two-port vector norm",
+    "native norm derivative cancels",
+    "raw first source retains the common normalization derivative",
+    "complete price and common-state product rule",
+    "dropping moving state/preparation term gives a false zero",
+    "actual original conditional port mean cost",
+    "original Golden gate involution (0, 0)",
+    "original Golden gate involution (0, 1)",
+    "original Golden gate involution (1, 0)",
+    "original Golden gate involution (1, 1)",
+    "controlled-unitary port1 scale p^3",
+    "literal 0/10 reporter baseline",
+    "real scalar compression t=-sigma*A/2 source",
+    "complete two-port cost source retains complement",
+    "equal code prices erase the source despite nonzero readout",
+    "moving common net price cannot be dropped by normalization"
+  ],
+  "checks": 49,
+  "input_sha256": {
+    "01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md": "668fc904b0585cc7fd5175babead5225c22051422c9c64e197d7b0d42d225342",
+    "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d",
+    "02_REGISTRY/gr_assembly/sources/d0_double_null_quadratic_cartan_2026-10-19/arbitrary_brinkmann_all40.md": "8dbca8ff9a4567a2baf216357b5d3ffa2d217281ced4e5d0e535257db2f5e83e",
+    "02_REGISTRY/research/A4D_COMPLETE_HISTORY_INFORMATION_SCALE.md": "6a14686fcaab0b48b78b8ff4f784d989ea3ead1edf0ee28d48b7c20f76c4a7ed",
+    "02_REGISTRY/research/A4D_EXACT_GR_COMMON_CARRIER_HJR_SCALE_SOURCE_GAP_2026_10_20.md": "c5b2f1021e8da573221f4327bacae67934470a368966456bf328b19fc51555fb",
+    "02_REGISTRY/research/A4D_NATIVE_FULL128_PORT_SCORE_SUFFICIENCY_AND_CODE_SOURCE_RECOVERY_2026_10_19.md": "f64e04fa9f3d27a604463561fa3d8c1c997e55d3c55badd91a6b4198ce0f9f4e",
+    "02_REGISTRY/research/A4D_PROSPECTIVE_BOOK_FINITE_FUTURE_LAW_Q8_VERIFICATION_2026_10_20.md": "bd3f1ab51599b0efe17af03e40c59a606200cd1912f801e4bd57e0eb77a6b014",
+    "02_REGISTRY/research/A4D_RETAINED_HISTORY_READOUT_AND_NORMALIZER.md": "98b02b22f8678be211f555c2ec0c1d8ac3d2cc43f7dd50b002b8e1424460407b",
+    "02_REGISTRY/research/sources/d0_same_history_price_composition_2026-10-20/paid_port_history.md": "ef69c2052237fbe8e916acf16691f9b14b4c1c2465a7837e838db2baeb95449d"
+  },
+  "native_port_probabilities_in_1_a_a2_a3_basis": [
+    [
+      "1",
+      "0",
+      "-1",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "1",
+      "0"
+    ]
+  ],
+  "relative_gain_gaps": {
+    "absolute_amplitude": "3/2",
+    "absolute_scalar_probability": "2",
+    "additional_native_amplitude_marker": "1"
+  },
+  "scope": {
+    "GR_closed": false,
+    "checked_carrier": "exact factored original nonblank port; no historical 128-matrix replay",
+    "coherent_jet": "formal coefficients of 1 and log(phi), no log approximation",
+    "controlled_port": "conditional unitary compression and literal 0/10 reporter only",
+    "full_programme_price_closed": false,
+    "original_outcomes": 128,
+    "physical_Info_selected": false
+  },
+  "status": "PASS",
+  "wrong_squared_probabilities_in_1_a_a2_a3_basis": [
+    [
+      "2/5",
+      "0",
+      "-1/5",
+      "0"
+    ],
+    [
+      "3/5",
+      "0",
+      "1/5",
+      "0"
+    ]
+  ]
+}

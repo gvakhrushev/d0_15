@@ -15,6 +15,37 @@ Assembly-Slot: `constitutive`
 
 ## Strategic synthesis continuation — 2026-10-17
 
+### 20 October: whole-family CAR source, causal completion and absolute Book valuation
+
+Continue the same Draft334 / native-programme-v1. Input acfe3e19 joins
+reviewed main257fd52f with native25bea5bd; concurrent source/cocycle work
+through3bcb88ff is preserved. Phase: native realization and final composition.
+The primary application is all40 §5.1 on the existing exact nonvacuum
+midpoint family. Root owns
+`A4D_CAUSAL_BOOK_SOURCE_TO_EXACT_GR_SYNTHESIS_2026_10_20.md` and
+`sources/d0_native_gr_completion_synthesis_2026-10-20/`; bounded assistants
+own its disjoint book_source, geometric_source and execution subdirectories.
+
+The new source slot uses the real CAR coframe polynomial and original
+Lorentz holonomy, a full-address coherent scalarizer and the actual0/10
+reporter. It retains all16+24 source directions, oldRIGHT128, output work,
+and paid repetitions. Causal generated states are eliminated with their
+actual initial boundary and full price derivative. The exact same-history
+Book amplitude and likelihood bindings, closed return and cost marker are
+kept separate. A reference cocycle preserves only its own actual price's
+source, including moving matched-internal derivatives.
+
+Next parent substitution: derive the complete absolute Info/work price and
+primitive admission of this same execution, calculate its full residual
+and actual matter/source ratio, then consume the owned all40/recovery.
+Do not infer Info from the target probability or promote the known reporter
+component to full Cost-Info. The smallest decisive new checks are symbolic
+whole-null-family CAR first jets, complete-output Golden source, original
+port price binding, and all128 marked return on the physical coframe scale.
+Use the registered narrow entrypoint; no unchanged Lean or geometric suite
+replay. Independent review precedes bounded main intake; parent physical
+GR/raw216 and lifecycle remain open.
+
 ### 20 October: same-history price, clock elimination and full connection composition
 
 Continue the same Draft334/native-programme-v1 after the reviewed main/native

@@ -29,6 +29,16 @@ research task unless it removes an explicit parent premise that this
 positive solution requires. Generic D0 verification and TheoryTransfer
 owners are already accepted: reuse rather than reprove them.
 
+The [whole-family CAR/Book/causal composition](02_REGISTRY/research/A4D_CAUSAL_BOOK_SOURCE_TO_EXACT_GR_SYNTHESIS_2026_10_20.md)
+now supplies the geometric reporting first source on every 16+24 direction,
+its full-address input-preparation cancellation and causal-state elimination.
+Reuse these exact maps. The next native application is the complete absolute
+Book amplitude/Info/work effect and actual primitive admission, with every
+residual and genuine upstream preparation source retained. A normalized
+readout, a cost marker, a relative statistic and a full physical price are
+different objects until the same-execution binding is proved. Do not assign
+Info from a desired output law or freeze an independently selectable blank.
+
 This is a first **mathematical physical example**, not a claim that
 D0 necessarily selects the configured Golden-J2 action. The original
 full H+J+R, `positive_gr`, generic GR and raw216 remain open.

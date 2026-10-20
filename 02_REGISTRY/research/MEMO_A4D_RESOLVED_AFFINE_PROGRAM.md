@@ -380,6 +380,34 @@ source with the link-independent J2 scalar without proof.
 
 ## Current route to general relativity
 
+### Current composition: exact CAR source and the remaining full Book valuation
+
+Consume the [whole-family source synthesis](A4D_CAUSAL_BOOK_SOURCE_TO_EXACT_GR_SYNTHESIS_2026_10_20.md)
+before further native dispatch. The geometric reporting component now has
+an exact source `p^3 sigma nu^2 h^2 D(sum fhat)` on the entire original
+common-null family, including all16+24 directions. Full-address coherent
+scalarization retains the oldRIGHT128 preparation and paid repetitions;
+causal adjoint equations eliminate generated states without deleting their
+cost. Exact finite foundational compilation is still a separate admission
+premise of the supplied coherent-query construction.
+
+The next calculation is the absolute complete price, with its real
+amplitude/likelihood binding and Info/work residual. Under a genuinely
+supplied mean-history price the exact test is scalarity of the full effect
+and `dG+dW I=(a_h d sum fhat+b_h d sum q)I`, with all genuine independent
+internal sources resolved. The original all40 theorem then supplies the
+finite Einstein family at its actual derived ratio `b_h/a_h`. The former
+configured representative is reused only if that ratio is unchanged.
+
+Reuse the exact closed-return/cost-marker map and preserve the absolute
+normalizer. A fixed-clock programme and a first-event stopping programme
+are different prospective tasks. A matched-reference difference preserves
+the source of its own specified price; its uniqueness does not identify
+an HJR source with the CAR reporting source. The complete residual and
+primitive selection, rather than another geometry or root calculation,
+are the remaining work for this application. No assembly or GR status is
+changed by this research composition.
+
 State the strongest complete conditional argument first: the owned verification
 kernel supports a faithful GR interpretation; its admitted native realization
 preserves the physical source and variations; the existing geometric theorems
