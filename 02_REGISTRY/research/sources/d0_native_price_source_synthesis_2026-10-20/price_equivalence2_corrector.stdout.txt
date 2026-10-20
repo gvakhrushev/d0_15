@@ -1,0 +1,7 @@
+PASS exact Poisson corrector C=i nu² J_(+,-), cubic cancellation and zero trace
+PASS exact single-role positive HS spectrum 1,b,b²; full-CAR Dirichlet gap >= nu² sigma_min(B)²/8
+PASS H=0: analytic delta=0.045, actual HS gap=0.05, corrector norm=1.0182338
+PASS H=0.4: analytic delta=0.036855112, actual HS gap=0.041042523, corrector norm=1.0094844
+PASS H=1: analytic delta=0.027432531, actual HS gap=0.03085505, corrector norm=0.96828405
+PASS H=1.5: analytic delta=0.021611234, actual HS gap=0.02461756, corrector norm=0.91878301
+SCOPE: exact local matrix Poisson closure and positive energy symbol; uniform native h/clock remainder still open
