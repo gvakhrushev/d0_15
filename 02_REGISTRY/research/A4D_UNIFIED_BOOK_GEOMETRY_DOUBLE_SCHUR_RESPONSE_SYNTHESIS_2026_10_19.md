@@ -337,3 +337,28 @@ The two-round pointer map on the common 34 real physical coordinates is analytic
 ### 12.2. Immediate consumption in the scientific route
 
 This theorem removes a large class of **representation/observability obstacles** on the declared native finite background and replaces the vague request to "find a common carrier for metric and Lorentz" by an exact, reproducible, invertible **34-record observable chart**. The next experiment for parent G0 has only ONE purpose: compute the TRUE selected Book03 native score covector on those 34 actual outcome histories and test its pullback against the already-owned \(S_\star\) coframe10+Lorentz24 Euler covector, without fitting a posteriori coefficients. If the score is not selected by foundational Book03, local tomography cannot fix that logical gap: do NOT simply *define* it to reproduce \(S_\star\). A no-go on that exact pullback is more decisive than additional local graph moment certificates. No GR/claim/lifecycle promotion is authorized by the exact rank result.
+
+
+## 13. EXACT native same-carrier PRICE-TO-GEOMETRY DISCRIMINATOR: three port-dark metric directions; true two-tick mixed source 0 versus old local star -6
+
+Consume [A4D_NATIVE_FULL128_PORT_SCREEN_THREE_HISTORY_PALATINI_MIXED_SOURCE_TEST_2026_10_20.md](A4D_NATIVE_FULL128_PORT_SCREEN_THREE_HISTORY_PALATINI_MIXED_SOURCE_TEST_2026_10_20.md), plus the already owned original two-tick common Jones metric10+Lorentz24 tomography (§12), original literal Golden port1 effect Eport=4p³ A², and unchanged six-face G2/STAR/b(F).
+
+On the SAME legal L4 original Fourier character z=(i,i,-1,-i), put k=z−1 and real symmetric metric Q. The kernel of Q↦Qk has dimension3 inside the 10-dimensional metric tangent. This is a STRONG 3D screen of original Golden port-only cost, not the entire port scalar-kernel. The native literal two-tick Golden port score on a homogeneous coframe F is
+
+    Cport^(2)(F) = 2 + (p³ν²/32) ||F^T k||².
+
+A pinned rank-one direction Q*=ell ell^T, ell=(0,1,−1,1), satisfies Q*k=Q*ηk=0, so F(t)=I+tηQ* changes the actual metric g(t)=η+(2t−3t²)Q* but leaves Cport^(2)(F(t)) EXACTLY constant at every finite small t.
+
+**One actual detector versus one already-owned geometric source:** Original full128 two-round histories (0,17),(0,27),(0,59) have strict positive baselines and exact 3×3 metric-screen log-score J with det J=−(1888a³+4595)/702!=0, a²=p; their exact source along Q* is (−4/3,−181/36,−189/52). Thus even this full-port-price-dark METRIC family remains locally visible to the literal actual two-round registered record. Independently the OLD ORIGINAL local G2/STAR six-face Fourier mixed coframe/link quadratic symbol has rank3 on this SAME screen; specifically D_Q* D_(link Role0 boost K2) S_star,local=−6 (not a claim about a fully summed finite periodic Einstein Euler row).
+
+**Sharper TRUE full128 two-tick cost calculation, not just one-step comparison:** retain ALL original 128 Golden Kraus, true Walsh/Julia positive left/right derivatives, actual fixed Jones input, and the unreset FIRST output state Phi(rho). The authentic native two-round port cost is 2+Tr(Eport rho)+Tr(Eport Phi(rho)). For Q* and Role0 K2, D_Q*A=D_Q*D_K2 A=0, yet D_K2 Eport and D_Q*Phi(rho) are separately NONZERO. Full 64-subcolumn Walsh Parseval with both duplicated literal word flags and all actual Julia roots proves EXACTLY
+
+    D_Q* D_(Role0,K2) Cport^(2) = Tr[D_K2 Eport · D_Q*Phi(rho)] = 0,
+
+while the original local star symbol is −6. This is a **one-witness, actual-cost-source mismatch**. Two ticks and the full state recycling do NOT restore the port-only Palatini source. It does NOT forbid a genuine other complete paid Cost−Info/label/reference/controller/clock/oldRIGHT/memory source, and cannot be promoted to whole-Book or Einstein no-go. The exact screen rank3 STAR symbol alone is not a physical T_{\mu\nu} or GR closure.
+
+**One parent G0/P25/P34 acceptance target instead of another census:** compute the genuine independently selected residual of the COMPLETE actual priced native H+J+R Book action on the SAME Q* × Role0-K2 tangent, including all history Info, label coding, signed memory, Jones preparation, oldRIGHT, clock/work, and actual connection/history stationary Schur. With the proper original geometric normalization it must supply precisely the missing nonzero old local source if the physical Palatini-equivalence thesis is right. Do not add an EH term or define the Info remainder as −6. Parent #334 exact historic signed Lorentz observability is already sufficient; **SOURCE SELECTION**, full periodic coframe/link Euler and refinement remain OPEN. GR_closed=false.
+
+Three original-carrier exact checkers are under
+\`sources/d0_native_metric_port_screen_2026-10-20/\`.
+Local exact calculations independently replayed; remote CI/accepted intake not asserted.
