@@ -255,3 +255,43 @@ More strongly than the particular m_p(P) inversion-even test of §9.3: ANY smoot
 The CORRECT new positive comparator reads the genuine finite P, not C(P) supplied as an auxiliary source. Its coframe-source Golden CAR16 marked log-odds for P vs P^-1 gives the canonical Cayley matrix T(P)=(P-I)(P+I)^-1. All six native source gradients reconstruct the full ACTUAL holonomy P=(I+T)(I-T)^-1 and the OLD original curvature C(P)=2T(I-T²)^-1 EXACTLY. The simplest odd two-history score differs from S_star by exactly the cubic curvature term -Tr[X_B T³(I-T²)^-1], O(h^6) per smooth cell; do NOT equate this to a uniform raw finite nonlinear field-action bridge. The existing Golden two-density six-phase CAR atlas independently recovers P from its invertible local chart, with O(h²) signed sensitivity vs only O(h^4) even marked class-statistic sensitivity. It already contains mathematical informational sufficiency; physics must still admit/price that coherent comparison.
 
 The dangerous earlier claim that positive marked m_p(P) itself could be an original multiplicative *scalar Book history weight* is REFUTED (inversion parity, identity cost=2, nonmultiplicative U→UV). The true Book03 algebra-valued memory may compose as Lambda(P_gamma) while the marked scalar is applied after path composition; accepted observer-dependent positive exterior/path functors show a consistent mathematical carrier. The missing step is still a compulsory same-programme scene/field/observer/oldRIGHT/full128→Book Cost−Info/memory representation and source, not another independent scalar coefficient. No all40 source equality, Einstein theory, matter Ward or RAW-216 promotion. GR_closed=false.
+
+
+## 10. INTEGRATOR: eliminate Choi-reference and hand-inserted Hodge; use ORIGINAL Jones p³ two-history code and CAR16 TOP saturation
+
+New same-PR **exact original finite-carrier theorem**:
+[A4D_NATIVE_JONES_CAR16_TOP_GOLDEN_RELATIVE_PALATINI_2026_10_20.md](A4D_NATIVE_JONES_CAR16_TOP_GOLDEN_RELATIVE_PALATINI_2026_10_20.md).
+Consume ORIGINAL old G2/STAR/b(F), actual ArchiveExteriorFrameLift creators, and the ALREADY-owned A4D_NATIVE_REFERENCE_MEMORY_PREPARATION Jones pair psi±=a u±p v, a²=p=phi^-1, <psi+,psi−>=p³. This Jones pair is NOT the different grade-one psi± of the existing native Golden six-phase detector.
+
+The exact star face has a **simpler native CAR4 saturation**, no manually inserted star generator:
+
+  N(B,F):=[Σ_(i<j) B_ij c_i†c_j†][Σ_(k<l)(Fη)_kl c_k†c_l†]
+          =−L_star(B,F) |top><vac|                               (10.1)
+
+for EVERY finite original coframe area B and extracted plaquette Lorentz F, on all16 Fock states. Exact 36 original G2/STAR_MAP checks are now upgraded to a full 16×16 rank-one operator theorem. The unique top exterior degree is the source of the oriented epsilon sign; we did not insert X_*B into a new Choi tester.
+
+For the ORIGINAL Jones pair, its exact trace distance is Dtr=sqrt(1−p^6)=2ap (the SAME GoldenCoherentMemory correlationCoefficient). Thus
+
+  L_star(B,F)
+    = Tr[(rho+−rho−)(N+N†)]/Dtr(rho+,rho−),                  (10.2)
+
+and this survives strict full even/odd fermion-parity dephasing and proper-Lorentz observer-positive exterior transport. This is a finite exact **same-native-reference contrast**, not a newly chosen Choi entanglement. It needs no new numerical gravitational normalization: 2ap is the PRE-EXISTING Jones distinguishability.
+
+The stronger ORIGINAL Golden GOOD+BAD comparison uses, on the SAME CAR16 algebra, a CONSTRUCTED (not compulsory full128) local Julia complete isometry
+  V_s=|GOOD>p(I+sN)+|BAD>sqrt[I−p²(I+sN)†(I+sN)].
+Its exact derivative including BAD is V0†V0'=(p²/2)(N−N†). For two genuinely different historical references define Z_+−(s)=<V0 psi+, Vs psi−>, Z_−+(s)=<V0 psi−, Vs psi+>, both with baseline p³. Then
+
+  **L_star(B,F) = (1/a) D_s log(Z_+−(s)/Z_−+(s))|s=0.** (10.3)
+
+No failed outcome was postselected away; a full positive 32-output Julia numerical square-root check reproduces the source. CRUCIAL NEGATIVE CONTROL: applying the SAME complete V_s to BOTH initial references makes <Vs psi+,Vs psi−>=p³ identically, so a common basis evolution/ordinary end-point readout gives ZERO. Only a RELATIVE, ordered two-history comparison can be the source. This is also the precise reason a one-step marginal or scalar all-history Perron source cannot replace original Lorentz memory.
+
+This also reveals the remaining and SMALLEST physical distinction: A4D_NATIVE_REFERENCE_MEMORY_PREPARATION's Jones H encodes this p³ restricted-history pair, but explicitly PROVES no universal fixed product-controller can simultaneously program its opposite signed gates with such NONorthogonal references. Moreover real original full128 J23 first-shell often prepares I16/16, for which Tr(rho0 N)=0. We must therefore derive **from the actual paid oldRIGHT/ref128/full128+controller**, rather than assume, the physical ability to prepare the original Jones history pair, enact the rank-one CAR four-creator N built from actual coframe/plaquette data, and retain the relative two-arm overlap (10.3) at its actual Book03 Cost/Info price.
+
+ONE parent G0→G1 test, no more coefficient census:
+  D_s log[Z_actual(+,-;s)/Z_actual(-,+;s)]|0 ?= a L_star(B,F)
+on independent original coframe16+proper Lorentz24 tangents for ONE compelled full paid programme (and then across nonlinear curved fields), with all BAD/reference/clock/preparation sources. It must be verified WITHOUT inserting the old target L_star as a native gate. If it passes, the entire original geometrical finite source is recovered in that actual process (plus still needed action-selection proof); if it fails, this is a genuine scoped NO-GO for the Jones 0↔4 channel. In either case the original matter Ward, exact joint roots, full physical Book action and #216/refinement remain independent obligations. **GR_closed=false.**
+
+Exact local scripts:
+- sources/d0_jones_top_palatinisource_2026-10-20/check_car16_jones_reference_top_source.py
+- sources/d0_jones_top_palatinisource_2026-10-20/check_complete_golden_jones_relative_julia.py
+All PASS locally; remote CI or independent review not asserted.
