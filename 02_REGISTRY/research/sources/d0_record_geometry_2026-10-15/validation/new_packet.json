@@ -1,0 +1,158 @@
+{
+  "GR_closed": false,
+  "Lean_build": false,
+  "exact_default_optimized_and_preserved_equal": true,
+  "exact_result": {
+    "A_labels": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "B_labels": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        3,
+        2
+      ]
+    ],
+    "GR_closed": false,
+    "Lorentzian_metric_derived": false,
+    "checks_are_not_independent_theorems": true,
+    "metric": "p^3 I4",
+    "native_action_identified": false,
+    "normal_metric_map": "-2 p^3 I10 in mu<=nu packing",
+    "observer_signature_reflection_rank": 10,
+    "physical_native_admission": false,
+    "rank_loss_control": 9,
+    "return_family": "U(x)=exp(i sum A_mu x_mu + i/2 sum B_mu_nu x_mu x_nu)",
+    "same_first_jet_linear_normal_map_rank": 0,
+    "scalar_curvature_times_p3": "-6",
+    "scope": "KINEMATIC_ANALYTIC_GERM_AND_EXACT_FINITE_ALGEBRA_ONLY",
+    "second_source_map_rank": 10,
+    "sectional_curvature_times_p3": {
+      "01": "0",
+      "02": "0",
+      "03": "-1",
+      "12": "0",
+      "13": "-1",
+      "23": "-1"
+    }
+  },
+  "heat_comparison_tolerance": 1e-09,
+  "heat_default_optimized_equal": true,
+  "heat_diagnostic": {
+    "analytic_result": "beta=h gives nonzero limiting shape source 15/32",
+    "coefficient": "15/32",
+    "native_temperature_law": false,
+    "rows": [
+      {
+        "L": 128,
+        "beta": 0.0078125,
+        "limit": 0.46875,
+        "shape_source": 1.8547687714851548
+      },
+      {
+        "L": 256,
+        "beta": 0.00390625,
+        "limit": 0.46875,
+        "shape_source": 0.4745582105628614
+      },
+      {
+        "L": 512,
+        "beta": 0.001953125,
+        "limit": 0.46875,
+        "shape_source": 0.47070751232024577
+      },
+      {
+        "L": 1024,
+        "beta": 0.0009765625,
+        "limit": 0.46875,
+        "shape_source": 0.4697257394652752
+      },
+      {
+        "L": 2048,
+        "beta": 0.00048828125,
+        "limit": 0.46875,
+        "shape_source": 0.46923712026546127
+      },
+      {
+        "L": 4096,
+        "beta": 0.000244140625,
+        "limit": 0.46875,
+        "shape_source": 0.4689933733370708
+      }
+    ],
+    "scope": "exact_coefficient_plus_floating_diagnostic_not_interval"
+  },
+  "heat_preserved_max_absolute_gap": 2.2737367544323206e-13,
+  "historical_full_replay": false,
+  "mutations": {
+    "duplicate_tangent_generator": {
+      "last_error": "RuntimeError: first-jet metric",
+      "rejected": true
+    },
+    "remove_real_second_jet": {
+      "last_error": "RuntimeError: all ten metric directions",
+      "rejected": true
+    },
+    "wrong_signature_reflection": {
+      "last_error": "RuntimeError: observer reflection preserves source rank",
+      "rejected": true
+    }
+  },
+  "native_action_binding": false,
+  "native_admission": false,
+  "numpy": "2.3.5",
+  "python": "3.12.14",
+  "scope": "new exact kinematic fixture, mathematical mutations, floating heat diagnostic",
+  "status": "PASS_NEW_PACKET_REPLAY",
+  "sympy": "1.14.0"
+}

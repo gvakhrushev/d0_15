@@ -1,0 +1,279 @@
+{
+  "status": "NEW_EXACT_ALGEBRA_AND_GENERAL_ANALYTIC_DEDUCTIONS",
+  "exact_identities": [
+    {
+      "identity": "regular connected critical fibre",
+      "result": "exact"
+    },
+    {
+      "identity": "regular fibre source",
+      "result": "exact"
+    },
+    {
+      "identity": "regular fibre reduced Hessian",
+      "result": "exact"
+    },
+    {
+      "identity": "singular projection control",
+      "result": "exact"
+    },
+    {
+      "identity": "singular horizontal ambiguity",
+      "result": "exact"
+    },
+    {
+      "identity": "disconnected branch stationarity +",
+      "result": "exact"
+    },
+    {
+      "identity": "disconnected branch stationarity -",
+      "result": "exact"
+    },
+    {
+      "identity": "disconnected source mismatch",
+      "result": "exact"
+    },
+    {
+      "identity": "singular Schur retained-variable reduction",
+      "result": "exact"
+    },
+    {
+      "identity": "kernel compatibility is not optional",
+      "result": "exact"
+    },
+    {
+      "identity": "minimal coupled-kernel rank identity",
+      "result": "exact"
+    },
+    {
+      "identity": "coupled-kernel exact rank",
+      "result": "exact"
+    },
+    {
+      "identity": "bounded stationary lift despite singular limit",
+      "result": "exact"
+    },
+    {
+      "identity": "bounded response with bounded lift",
+      "result": "exact"
+    },
+    {
+      "identity": "bounded response alone need not bound lift",
+      "result": "exact"
+    },
+    {
+      "identity": "divergent lift control",
+      "result": "exact"
+    },
+    {
+      "identity": "resonance equals real determinant",
+      "result": "exact"
+    },
+    {
+      "identity": "null-cone parametrization",
+      "result": "exact"
+    },
+    {
+      "identity": "phase rotation of compatibility",
+      "result": "exact"
+    },
+    {
+      "identity": "phase robust complex factorization",
+      "result": "exact"
+    },
+    {
+      "identity": "fixed-phase cone not phase robust",
+      "result": "exact"
+    },
+    {
+      "identity": "robust polarization -1",
+      "result": "exact"
+    },
+    {
+      "identity": "robust polarization 1",
+      "result": "exact"
+    },
+    {
+      "identity": "Gram imaginary quadrature",
+      "result": "exact"
+    },
+    {
+      "identity": "Gram real quadrature",
+      "result": "exact"
+    },
+    {
+      "identity": "golden comparer has unit phase modulus",
+      "result": "exact"
+    },
+    {
+      "identity": "raw amplitude first jet",
+      "result": "exact"
+    },
+    {
+      "identity": "flag recovers relative normalizer",
+      "result": "exact"
+    },
+    {
+      "identity": "flag derivative is log normalizer derivative",
+      "result": "exact"
+    },
+    {
+      "identity": "normalized phase connection theta",
+      "result": "exact"
+    },
+    {
+      "identity": "normalized phase connection phi",
+      "result": "exact"
+    },
+    {
+      "identity": "nonintegrable phase connection control",
+      "result": "exact"
+    },
+    {
+      "identity": "golden moving inclusion isometry",
+      "result": "exact"
+    },
+    {
+      "identity": "golden record branch zero effect",
+      "result": "exact"
+    },
+    {
+      "identity": "golden record branch one effect",
+      "result": "exact"
+    },
+    {
+      "identity": "golden induced connection x",
+      "result": "exact"
+    },
+    {
+      "identity": "golden induced connection y",
+      "result": "exact"
+    },
+    {
+      "identity": "archive-complement curvature identity",
+      "result": "exact"
+    },
+    {
+      "identity": "nonzero golden curvature",
+      "result": "exact"
+    },
+    {
+      "identity": "golden branch variance coefficient",
+      "result": "exact"
+    },
+    {
+      "identity": "golden distinguishability quadratic form",
+      "result": "exact"
+    },
+    {
+      "identity": "golden offdiagonal operator-valued quadratic form",
+      "result": "exact"
+    },
+    {
+      "identity": "ordinary trace is not Palatini contraction",
+      "result": "exact"
+    },
+    {
+      "identity": "moving inclusion first jet is not automatically zero",
+      "result": "exact"
+    },
+    {
+      "identity": "first Lorentz identity",
+      "result": "exact"
+    },
+    {
+      "identity": "first moving positive norm",
+      "result": "exact"
+    },
+    {
+      "identity": "first canonical boost factor",
+      "result": "exact"
+    },
+    {
+      "identity": "first positive fibre isometry",
+      "result": "exact"
+    },
+    {
+      "identity": "first time-axis fixed in trivialization",
+      "result": "exact"
+    },
+    {
+      "identity": "second Lorentz identity",
+      "result": "exact"
+    },
+    {
+      "identity": "second moving positive norm",
+      "result": "exact"
+    },
+    {
+      "identity": "second canonical boost factor",
+      "result": "exact"
+    },
+    {
+      "identity": "second positive fibre isometry",
+      "result": "exact"
+    },
+    {
+      "identity": "second time-axis fixed in trivialization",
+      "result": "exact"
+    },
+    {
+      "identity": "composed Lorentz identity",
+      "result": "exact"
+    },
+    {
+      "identity": "composed moving positive norm",
+      "result": "exact"
+    },
+    {
+      "identity": "composed canonical boost factor",
+      "result": "exact"
+    },
+    {
+      "identity": "composed positive fibre isometry",
+      "result": "exact"
+    },
+    {
+      "identity": "composed time-axis fixed in trivialization",
+      "result": "exact"
+    },
+    {
+      "identity": "observer-fibre composition",
+      "result": "exact"
+    },
+    {
+      "identity": "pure-boost Hilbert rotation is identity",
+      "result": "exact"
+    },
+    {
+      "identity": "pure boost not physically erased",
+      "result": "exact"
+    },
+    {
+      "identity": "non-collinear boost rotation cosine",
+      "result": "exact"
+    },
+    {
+      "identity": "non-collinear boost rotation sine magnitude",
+      "result": "exact"
+    },
+    {
+      "identity": "quartic coefficient",
+      "result": "exact"
+    },
+    {
+      "identity": "interaction can source a constant envelope",
+      "result": "exact"
+    }
+  ],
+  "wigner_rotation": "Matrix([[1, 0, 0, 0], [0, 15/17, -8/17, 0], [0, 8/17, 15/17, 0], [0, 0, 0, 1]])",
+  "source_audits_replayed": false,
+  "original_resonance_cubic_recomputed": false,
+  "general_descent_theorem": "analytic proof in SYNTHESIS_RU.md, not certified by finite examples",
+  "native_physical_admission_proved": false,
+  "nonlinear_resonant_roots_proved": false,
+  "GR_closed": false,
+  "Lean_compilation": false,
+  "sympy": "1.14.0"
+}
+

@@ -1,0 +1,29 @@
+{
+  "schema": "d0-readable-publication-validation/1",
+  "date": "2026-10-15",
+  "source_coverage": "150/150 recursive UTF-8 text occurrences; 77/77 unique contents; 21/21 prior capsule mappings; 78 combined unique contents",
+  "original_zip_and_compressed_duplicate_comparison": "PASS; validation/preservation.json",
+  "independent_source_inventory_audit": "PASS; independent recursive ZIP/XZ and prior capsule byte comparison",
+  "original_embedded_hash_manifests": "PASS; 6 inventories, 110 entries, independently audited",
+  "new_mathematical_checks": "PASS default and optimized; validation/new_packet.json",
+  "historical_text_replays": "PASS default and optimized; validation/historical and validation/historical_optimized",
+  "integrity_negative_controls": "PASS; validation/integrity_controls.json",
+  "pinned_source_paths_checked": 17,
+  "repository_guards": "PASS; validation/repository_guards.json",
+  "publication_ci": "See current PR #323 checks; not inferred from local checks or original VALIDATION.json",
+  "scope": {
+    "whole_scientific_repository_replay": false,
+    "full4d_interval_replay": false,
+    "Lean_build": false,
+    "new_task_registered": false,
+    "native_physical_admission": false,
+    "full_native_action_binding": false,
+    "Einstein_equations_derived_from_core": false,
+    "scientific_parent_retired": false,
+    "self_merge": false
+  },
+  "source_alias_boundary": "Standalone brief equals original ZIP member. Standalone synthesis alias was not independently available; archive SYNTHESIS_RU.md is verified.",
+  "new_files_are_text_only": true,
+  "original_supplied_bytes_modified": false,
+  "authored_local_links_checked": 195
+}

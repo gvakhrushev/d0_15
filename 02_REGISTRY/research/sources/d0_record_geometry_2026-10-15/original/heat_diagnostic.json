@@ -1,0 +1,44 @@
+{
+  "analytic_result": "beta=h gives nonzero limiting shape source 15/32",
+  "coefficient": "15/32",
+  "native_temperature_law": false,
+  "rows": [
+    {
+      "L": 128,
+      "beta": 0.0078125,
+      "limit": 0.46875,
+      "shape_source": 1.8547687714851548
+    },
+    {
+      "L": 256,
+      "beta": 0.00390625,
+      "limit": 0.46875,
+      "shape_source": 0.4745582105628614
+    },
+    {
+      "L": 512,
+      "beta": 0.001953125,
+      "limit": 0.46875,
+      "shape_source": 0.47070751232035946
+    },
+    {
+      "L": 1024,
+      "beta": 0.0009765625,
+      "limit": 0.46875,
+      "shape_source": 0.4697257394650478
+    },
+    {
+      "L": 2048,
+      "beta": 0.00048828125,
+      "limit": 0.46875,
+      "shape_source": 0.46923712026546127
+    },
+    {
+      "L": 4096,
+      "beta": 0.000244140625,
+      "limit": 0.46875,
+      "shape_source": 0.4689933733370708
+    }
+  ],
+  "scope": "exact_coefficient_plus_floating_diagnostic_not_interval"
+}

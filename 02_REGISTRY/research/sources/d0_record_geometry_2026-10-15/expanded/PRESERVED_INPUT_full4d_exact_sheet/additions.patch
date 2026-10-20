@@ -1,0 +1,2017 @@
+diff --git a/02_REGISTRY/research/A4D_FULL_FOUR_DIMENSIONAL_LOCAL_SHEET.md b/02_REGISTRY/research/A4D_FULL_FOUR_DIMENSIONAL_LOCAL_SHEET.md
+new file mode 100644
+index 0000000..71e22aa
+--- /dev/null
++++ b/02_REGISTRY/research/A4D_FULL_FOUR_DIMENSIONAL_LOCAL_SHEET.md
+@@ -0,0 +1,28 @@
++# Exact finite full-four-dimensional local connection sheet
++
++SOURCE #310. Input `61688727ab3273bf35318f10ca789937b0b8f9b3`.
++[Proof and exact scope](sources/d0_full_four_dimensional_sheet_2026-10-15/RESULT_RU.md).
++
++A directed-interval Banach certificate constructs an exact 384-variable
++(two-coordinate) curved root of the unchanged naked-star action on L=4.
++Translation symmetry proves all 6144 local connection rows vanish. Crucially,
++ALL sixteen transverse Bloch blocks of its full 6144-dimensional Hessian
++are interval-invertible, with full inverse bound <2^24. The implicit-function
++theorem therefore supplies an open neighbourhood of arbitrary 4096-component
++four-dimensional coframe data with unique nearby exact connection roots.
++The new coframes and roots are not restricted to a coordinate ansatz.
++Full source derivatives have the actual on-shell Schur formula.
++
++This is a finite open curved connection sheet, not a uniform L->infinity
++estimate, prescribed-source metric/matter solve, stable energy minimum,
++full Cost-Info binding, or GR closure. The severe finite inverse constant is
++reported, not suppressed. No previous task/claim/BOOK status is changed.
++
++The new interval kernel independently copies endpoint arrays. The upstream
++one-coordinate kernel's np.asarray alias bug is reproduced; a separate
++minimal repair patch is included, but the old L=8 interval receipt is not
++silently refreshed. Its analytic one-coordinate theorem is unaffected.
++
++New proof replay requires NumPy, SymPy and mpmath. The optional JAX full-6144
++row test is a labelled numerical diagnostic only. No new Lean compilation
++or whole-repository CI pass is claimed. This intake has not yet been pushed.
+diff --git a/02_REGISTRY/research/certificates/a4d_full_four_dimensional_sheet_check.py b/02_REGISTRY/research/certificates/a4d_full_four_dimensional_sheet_check.py
+new file mode 100644
+index 0000000..acc7d8e
+--- /dev/null
++++ b/02_REGISTRY/research/certificates/a4d_full_four_dimensional_sheet_check.py
+@@ -0,0 +1,14 @@
++#!/usr/bin/env python3
++"""Research replay only; no physical/source/GR promotion."""
++# D0_CI_TIMEOUT_SECONDS=240
++from pathlib import Path
++import hashlib,json,subprocess,sys,os
++ROOT=Path(__file__).resolve().parents[3]
++S=ROOT/'02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15'
++for f,h in json.loads((S/'MANIFEST.json').read_text()).items():
++ if hashlib.sha256((S/f).read_bytes()).hexdigest()!=h:raise RuntimeError('CHANGED_RESEARCH_INPUT: '+f)
++env={**os.environ,'OPENBLAS_NUM_THREADS':'1','PYTHONDONTWRITEBYTECODE':'1'}
++for argv in [('verify.py',),('-O','verify.py'),('hostile.py',),('invariants.py',)]:
++ cmd=[sys.executable]+[str(S/x) if x.endswith('.py') else x for x in argv]
++ subprocess.run(cmd,cwd=S,env=env,check=True,timeout=180)
++print('PASS_FULL_4D_FINITE_CONNECTION_SHEET_NOT_FULL_GR')
+diff --git a/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/MANIFEST.json b/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/MANIFEST.json
+new file mode 100644
+index 0000000..8d2847a
+--- /dev/null
++++ b/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/MANIFEST.json
+@@ -0,0 +1,12 @@
++{
++  "RESULT_RU.md": "d2f8b06eda5894b8cf478eb2f09c847cc03df2ddb07decc0a5d3f13c9832c158",
++  "verify.py": "2036deb3985ce204891a7f8a03dff38739e2a6a033cbf233a8f846d953b19c2c",
++  "interval_check.py": "2f46b84ec9667e148a4595d415c9c44c89969adb30e61d8c8ff346a0999b7219",
++  "blas_bounds.py": "38d1374c859e8b0c40938290f3acc51431514aa3e7fa62b8468cb7a24262ac98",
++  "point_interval.py": "4a1d9bedc386ac8267dd453aa0307b5d1fd1a49d49599edf1cf3b534b72bd374",
++  "full_bloch_verify.py": "0fe3f87b317e25dfc7e110bcdb82eb11bb3e88b543ffa329975283ffa2643c8b",
++  "symbol.py": "37c2b21429c5e703068d2ac398160329e9728ffce480ec86fc57418813e90dab",
++  "center.json": "931fe184de2af7818b6882c4dc2182105f98f74826c4938ebe9a566321741520",
++  "hostile.py": "bc098b9074504e3b42fa48648cad5907a3821ecf6828ab438d8272f3a1e6fdf3",
++  "invariants.py": "c87ae709e5fff346f1feff97d2bf61f952e606bca35cd46e613989fc421b2f19"
++}
+diff --git a/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/RESULT_RU.md b/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/RESULT_RU.md
+new file mode 100644
+index 0000000..06f2736
+--- /dev/null
++++ b/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/RESULT_RU.md
+@@ -0,0 +1,275 @@
++# Полный четырёхмерный локальный лист точных связей около искривлённой сцены
++
++15 октября 2026. D0 SOURCE #310. Вход репозитория:
++`61688727ab3273bf35318f10ca789937b0b8f9b3`.
++
++**Результат:** на фиксированной сетке L=4 построен точный искривлённый
++connection-root исходного naked-star действия, а его полный 6144-мерный
++connection-якобиан доказанно обратим. Поэтому существует открытая окрестность
++произвольных, не обязанных иметь никакую координатную симметрию, четырёхмерных
++coframe-полей с единственной близкой точной стационарной связью.
++
++Это конечная нелинейная непустота и структурная устойчивость полного
++connection-листа. Это не доказательство положительности его энергетического
++гессиана, решения metric/matter уравнений, uniform refinement или полного ОТО.
++
++## 1. Неизменённый объект и новые кванторы
++
++Вершины x принадлежат (Z/4Z)^4. Все четыре положительные link-роли и все
++шесть Lorentz-компонент на каждом link сохранены. В частности,
++
++    dim a = 24 * 4^4 = 6144,
++    dim E = 16 * 4^4 = 4096,
++    dim g = 10 * 4^4 = 2560.
++
++Используется прежняя column-coframe конвенция eta=diag(1,-1,-1,-1),
++g=E^T eta E, det E>0. Для действительных параметров a определяем
++
++    X_(x,r)=sum_alpha a_(x,r,alpha) J_alpha,
++    U_(x,r)=(I-X_(x,r)/2)^(-1)(I+X_(x,r)/2).
++
++Это координаты тех же Lorentz-links. В указанной малой области знаменатели
++отделены от нуля, U^T eta U=eta и компонента связности не меняется.
++
++Действие ровно прежнее: сумма всех шести основанных plaquettes
++P_(x,rs)=U_(x,r) U_(x+r,s) U_(x+s,r)^(-1) U_(x,s)^(-1), их нечётных частей
++(P-P^(-1))/2 и face-веса orient(r,s) wedge(E_u,E_v)^T G2 STAR.
++Bivector(C)_(a,b)=(C eta)_(a,b), a<b. Сохраняются все входящие/выходящие
++положения разделяемых links. Обозначим эту сумму A(E,a), а полный
++connection-градиент F(E,a)=partial_a A(E,a).
++
++Не добавляются ни entropy/matter-член, ни селектор, ни штраф. Никакой источник
++не определяется как уже полученный ответ.
++
++### Теорема
++
++Существует точная пара (Ebar,abar), где
++
++    Ebar(x)=diag(1,1,f(x1,x2),f(x1,x2)),
++    f=1+cos(2pi*x1/4)/100+cos(2pi*x2/4)/1000,
++
++и открытые окрестности U(Ebar), V(abar) в ПОЛНЫХ пространствах 4096 и 6144
++координат соответственно, такие, что для каждого E в U существует ровно
++одна a(E) в V с F(E,a(E))=0. Отображение a(E) действительно аналитично.
++E может зависеть от всех четырёх координат; link-решение не ограничивается
++ни анзацем, ни набором Fourier-мод. Метрики сохраняют Lorentz-сигнатуру.
++
++Коэффициенты 1/100 и 1/1000 — заранее заданная диагностическая геометрия,
++не константы нового физического закона.
++
++## 2. Построение точного якоря, а не численный почти-нуль
++
++Ebar и исходный якорь зависят от x1,x2. На подпространстве этих полей
++остаётся 16 узлов и 384 независимых link-параметра. Трансляции по x0,x3
++сохраняют полное действие. Поэтому его полный локальный градиент на этом
++подпространстве одинаков на каждой орбите из 16 узлов.
++
++Полное ограниченное действие равно 16 A_red. Его производная по одному
++общему параметру орбиты равна сумме 16 одинаковых полных локальных строк.
++Следовательно, F_red=0 обнуляет ВСЕ 6144 строки, а не только их формальную
++проекцию. Это свойство конечной трансляционной симметрии данного действия.
++
++`center.json` содержит 384 числа. Каждое читается как точное двоичное
++рациональное значение binary64, а не неопределённая десятичная погрешность.
++Это сохранённый центр a0, не готовое точное решение.
++
++На кубе ||a-a0||_infinity <= r, r=2^-42, независимо вычислены:
++* F_red(a0): направленные наружу интервалы с 80 десятичными знаками;
++* H_red на ВСЁМ кубе: направленные наружу binary64-интервалы аналитических
++  первых и вторых Cayley-производных и всех позиций каждого plaquette;
++* постоянная двоично-рациональная матрица B (численно предложенный
++  предобусловливатель; её равенство точному обратному не предполагается).
++
++Проверяются непосредственно
++
++    q = ||I-B H_red(cube)||_infinity < 1,
++    d = ||B F_red(a0)||_infinity,
++    d + q r < r.
++
++Выполненный реплей даёт q<1.3e-6, d<1.8e-18 и радиус образа <2.1e-18.
++По теореме о сжатии существует ровно один точный корень abar в этом кубе.
++Направленное наружу округление каждого шага сохраняется. Нулевая невязка
++не выводится из округлённого десятичного нуля.
++
++На этом же кубе, например, нечётная кривизна face(1,2) в узле (0,0)
++имеет компоненту
++
++    0.0273703268117 < C_12[1,2] < 0.0273703268137.
++
++Она не может обращаться в ноль. Нетривиальный plaquette нельзя превратить
++в единицу Lorentz-сопряжением.
++
++### Геометрия действительно двухкоординатная
++
++Рассмотрим гладкую unit-torus метрику g=diag(1,-1,-f^2,-f^2),
++f=1+a cos(2pi y1)+b cos(2pi y2), a=1/100,b=1/1000. Пусть R и Q=Ric_munu
++Ric^munu — стандартные скалярные инварианты. В точке y1=y2=1/4 точная
++символьная дифференциация даёт
++
++    det partial(R,Q)/partial(y1,y2)
++      =(2pi)^8 * 8ab(2a^4-3a^2b^2+a^2+4b^4-b^2)
++      =(2pi)^8 * 12377463/1562500000000000 != 0.
++
++Следовательно, оба инварианта нельзя локально сделать функциями одного
++общего скаляра. Это не старый однонаправленный гладкий фон после смены
++координат. Данное утверждение относится к заданной гладкой метрике; оно
++не используется вместо отдельного конечного доказательства stationarity.
++
++## 3. Проверены все поперечные направления, а не только 384
++
++В найденном якоре полный H=partial_a F имеет трансляционную симметрию
++по x0,x3. Конечное Fourier-преобразование группы Z4 x Z4 разбивает его
++комплексификацию на ровно 16 блоков H_(q0,q3) размера 384. Все q0,q3=0,1,2,3
++сохранены, включая самосопряжённые и сопряжённые пары. Это обратимая смена
++координат, не Fourier-cutoff или удаление строк.
++
++Для каждой грани действительные местоположения четырёх link-вхождений
++равны 0,e_r,e_s,0. В смешанном Hessian-блоке ij ставится ровно множитель
++
++    i^[q0(offset_j^0-offset_i^0)+q3(offset_j^3-offset_i^3)].
++
++Он равен 1,i,-1 или -i точно. Однослотовые вторые производные также
++сохраняются. Знак обратного слова, перестановка его позиций и коэффициент
++1/2 нечётной части учитываются буквально.
++
++Куб раздела 2 содержит точный abar. На нём для КАЖДОГО из 16 блоков
++вычисляется интервальное включение H_q и проверяется с предложенной
++постоянной комплексной двоично-рациональной матрицей B_q
++
++    ||I-B_q H_q||_infinity <= eta_q < 1.
++
++Следовательно, каждый блок обратим у самого точного корня. Для всех блоков
++eta_q<0.00076; наименьшего численного singular value в доказательстве нет.
++Ни det, ни ранг не объявляются на основании floating-point эвристики.
++
++Обратное Fourier-преобразование и треугольное неравенство дают
++
++    ||H(abar)^(-1)||_infinity
++       <= sum_q ||B_q||_infinity/(1-eta_q)
++       < 15931464 < 2^24.
++
++Поскольку H — действительный Hessian, он симметричен; та же граница действует
++в l1, а интерполяция даёт остальные lp. Это граница на ФИКСИРОВАННОЙ L=4,
++не равномерная константа для L -> infinity.
++
++Самые чувствительные блоки — (1,1) и (3,3), с обратной нормой около 7.82e6
++по использованной консервативной оценке. Они не вырезаются из результата.
++В плоской исходной точке уже H_owner(1,i,i,1) имеет точный ранг 22, а не 24.
++Значит, доказанное снятие вырождения относится к реальному искривлённому
++якорю, а не к неверной декларации плоского uniform gap.
++
++## 4. От полного ранга к открытой четырёхмерной семье
++
++F(E,a) аналитичен по всем 4096+6144 координатам в выбранном Cayley-chart.
++Раздел 2 даёт точный нуль, раздел 3 — обратимость его ПОЛНОГО якобиана.
++Аналитическая теорема о неявной функции доказывает заявленный полный лист.
++Трансляционная симметрия требовалась только для сертификации якоря; новые E
++и новые a(E) её иметь не обязаны.
++
++При необходимости можно дать грубую явную область. В chart с
++||a||_infinity<=1/16 и max|E_ij|<=2 выполняются
++
++    ||D_a F(E,a)-D_a F(Ebar,abar)||_infinity
++       <= 2^23 ||a-abar||_infinity + 2^18 ||E-Ebar||_infinity,
++    ||F(E,abar)||_infinity <= 2^14 ||E-Ebar||_infinity.
++
++Обоснование констант: ||X||_matrix,infinity<=3||a||_infinity;
++||S=(I-X/2)^(-1)||<2, ||U||<2. На единичном generator первые три
++Cayley-производные ограничены 4,8,24. Смешанный третий производный
++четырёхфакторный продукт с двумя глобальными componentwise-norm-1
++направлениями ограничен 19008. Полный шестикомпонентный face-вес имеет
++l1-норму <=48; один local link входит в 6 faces. Поэтому 19008*48*6
++=5474304<2^23. Аналогично 768*48*6=221184<2^18, 32*48*6=9216<2^14.
++Все позиции учитываются; число узлов не входит в эти stencil-границы.
++
++С M=2^24 можно выбрать ||a-abar||<=2^-52,
++||E-Ebar||<=2^-92. Тогда итерация a -> a-H(abar)^(-1)F(E,a)
++имеет коэффициент <1/16 и переводит шар в себя. Это очень консервативная
++математическая область, не утверждение о практически значимой ширине
++устойчивости и не физическая новая шкала. Более широкая область не исключена.
++
++На каждом узле локальный аналитический Gram-раздел даёт также семейство
++по 2560 произвольным метрическим параметрам. Например,
++E(gbar+V)=Ebar sqrt(I+gbar^(-1)V) при достаточно малом симметричном V.
++Ориентация и Lorentz-сигнатура сохраняются. Калибровочная свобода не
++смешивается с физическими link-модулями.
++
++## 5. Теперь эффективный источник определяется на настоящем листе
++
++В локальном Gram-разделе положим S_eff(g)=A(g,a(g)). Тогда ТОЧНО
++
++    d S_eff[V]=partial_g A[V],
++    D a[V]=-H^(-1) A_ag[V],
++    d^2 S_eff[V,W]=A_gg[V,W]-A_ga[V] H^(-1) A_ag[W].
++
++Ни одна connection-строка не выброшена: исчезновение первого chain-term
++использует F=0. Вторая строка сохраняет весь обратный оператор, а третья —
++его настоящий Schur-вклад. Формулы относятся ко всем метрическим направлениям
++на сетке, не только к двум координатам исходного фона. При использовании
++packed Gram-слотов у внедиагональных свёрток остаётся фактор два.
++
++Это устраняет неопределённость «дифференцируем формальный ряд без существующего
++решения» в данном полном конечном открытом классе. Но конечный эффективный
++Hessian ещё не отождествлён с continuum Einstein-оператором.
++
++## 6. Точно один следующий аналитический барьер
++
++Для переноса на фиксированный гладкий четырёхмерный фон при h -> 0 необходим
++контроль полного обратного оператора (или подходящее нелинейное разрешение
++его ядра) в исходных нормах. Факт обратимости при L=4 НЕ доказывает этот
++контроль для всех L. Плоские многомерные резонансы показывают, почему это
++содержательное обязательство.
++
++Конкретный достаточный мост: если около собственного гладкого approximate
++solve полного stencil имеется ||H_h^(-1)||<=C h^-s в l1 и linfinity,
++а residual O(h^N) componentwise при равномерной stencil-Lipschitz границе,
++то при N>2s Newton/Banach exactification даёт поправку O(h^(N-s)).
++Нормированная raw-разность metric-response не превосходит O(h^(N-s-6)),
++поскольку сохраняются все h^-4 узлов и внешний h^-2. Следовательно,
++N>max(2s,s+6) достаточно для переноса собственного Einstein-компаратора.
++Эта формулировка не объявляет требуемую inverse-оценку доказанной.
++
++Даже такой локальный результат не классифицирует все удалённые grid-scale
++ветви #232 и не отождествляет naked-star сектор с полным физическим
++Cost-Info. Не добавляются ограничения на источник ради тождества ответа.
++
++## 7. Исправление интервальной инфраструктуры
++
++В прочитанном upstream `.../d0_one_coordinate_exact_curved_sheet_2026-10-15/intervals.py`
++(blob `9ebb9202c2324e755a700bb08e5d71f22e979bce`) конструктор использует
++`np.asarray(l)` и `np.asarray(l if h is None else h)`. При входе ndarray
++это может быть ОДИН массив. Последовательные in-place записи в lower/upper
++тогда уничтожают нижнюю границу. Воспроизводящий пример включён в verify.
++
++Новый kernel всегда создаёт независимые копии обоих концов; изменённая
++версия, возвращающая alias, отвергается. Старые опубликованные численные
++интервальные квитанции не объявляются повторно проверенными. Аналитическое
++однонаправленное доказательство существования от этого дефекта не зависит.
++Новый 2D-root/полный 4D-rank сертифицирован независимо исправленным кодом.
++К пакету приложен минимальный repair-patch; для прежнего L=8 остаётся нужен
++новый реплей с исправлением, а не переписывание исторического PASS.
++
++Большие завершающие произведения используют binary64 BLAS с явной оценкой
++округления, а не предполагаются точными. Для inner dimension<=512 выбрано
++Gamma=2^-38>gamma_(8n+32), u=2^-53. Положительные matrix-products ограничиваются
++сверху computed/(1-Gamma)+2^-1000. Для произвольных знаков добавляется Gamma
++умножить на абсолютное произведение. Ошибки real/imag-сумм, вычитания единицы
++и интервальный радиус учитываются отдельно; 2^-1000 заведомо покрывает
++субнормальные ошибки рассматриваемой конечной размерности. Не допускаются
++NaN/overflow или арифметика пониженной точности. Малые 4x4 действия вычисляются
++с nextafter после каждого сложения и умножения.
++
++## 8. Проверка и происхождение
++
++`verify.py` повторно вычисляет point residual, интервальный Hessian,
++все 16 блоков, строгие границы и точные структурные проверки. JAX не нужен
++для доказательного replay. `full4d_diagnostic.py` — отдельная необязательная
++проверка полных 6144 строк и Bloch-производных автоматическим дифференцированием;
++её результаты явно численные, не интервальные.
++
++Прямые исходные владельцы — опубликованные RESULT.md, nonlinear.py и
++intervals.py однонаправленного пакета, плюс буквальные ETA/GEN/G2/STAR из
++`a4d_j2_fixed_realization_ir_check.py`. Наш исходный symbol — независимое
++буквальное повторение определения для exact-сверок, не объявлен повторной
++компиляцией Lean. Никакая Lean-теорема, CI всего репозитория, physical GR или
++оригинальный terminal #310 в этой работе не закрывается.
+diff --git a/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/UPSTREAM_INTERVAL_REPAIR.patch b/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/UPSTREAM_INTERVAL_REPAIR.patch
+new file mode 100644
+index 0000000..7ac6292
+--- /dev/null
++++ b/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/UPSTREAM_INTERVAL_REPAIR.patch
+@@ -0,0 +1,8 @@
++diff --git a/02_REGISTRY/research/sources/d0_one_coordinate_exact_curved_sheet_2026-10-15/intervals.py b/02_REGISTRY/research/sources/d0_one_coordinate_exact_curved_sheet_2026-10-15/intervals.py
++--- a/02_REGISTRY/research/sources/d0_one_coordinate_exact_curved_sheet_2026-10-15/intervals.py
+++++ b/02_REGISTRY/research/sources/d0_one_coordinate_exact_curved_sheet_2026-10-15/intervals.py
++@@ -8 +8,3 @@
++- def __init__(self,l,h=None):self.l=np.asarray(l,dtype=float);self.h=np.asarray(l if h is None else h,dtype=float)
+++ def __init__(self,l,h=None):
+++  self.l=np.array(l,dtype=float,copy=True)
+++  self.h=np.array(l if h is None else h,dtype=float,copy=True)
+diff --git a/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/VALIDATION_STATUS.json b/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/VALIDATION_STATUS.json
+new file mode 100644
+index 0000000..4ca1aef
+--- /dev/null
++++ b/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/VALIDATION_STATUS.json
+@@ -0,0 +1,19 @@
++{
++  "date": "2026-10-15",
++  "scientific_base": "61688727ab3273bf35318f10ca789937b0b8f9b3",
++  "scope": "FINITE_L4_FULL_4D_OPEN_CONNECTION_SHEET",
++  "normal_full_replay": "PASS",
++  "optimized_full_replay": "PASS",
++  "normal_plus_optimized_combined_command": "TIMEOUT_DURING_SECOND_RUN_THEN_SECOND_REPEATED_SEPARATELY_PASS",
++  "executed_mathematical_mutants_rejected": 4,
++  "independent_full_6144_row_jax_diagnostic": "PASS_NUMERICAL_ONLY",
++  "new_Lean_compilation": false,
++  "whole_repo_ci_executed": false,
++  "remote_publication_completed": false,
++  "git_terminal_failure": "Could not resolve host: raw.githubusercontent.com",
++  "connector_write_actions_exposed": false,
++  "upstream_interval_alias_reproduced": true,
++  "upstream_L8_corrected_replay_done": false,
++  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
++  "platform": "Linux-6.18.44-x86_64-with-glibc2.41"
++}
+diff --git a/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/blas_bounds.py b/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/blas_bounds.py
+new file mode 100644
+index 0000000..2dd1ded
+--- /dev/null
++++ b/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/blas_bounds.py
+@@ -0,0 +1,30 @@
++"""Rigorous normwise enclosures for binary64 real matrix products.
++For inner dimension <=512, GAMMA=2^-38 exceeds gamma_(8n+32).
++Products use IEEE binary64 operations (or FMA/higher precision, no worse).
++Subnormal roundoff is bounded conservatively by 2^-1000 per entry.
++The small-matrix interval kernel itself uses operationwise nextafter.
++"""
++import numpy as np
++GAMMA=2.**-38
++TINY=2.**-1000
++
++def up(x):return np.nextafter(x,np.inf)
++def upper_product(A,B):
++ if A.shape[1]>512 or np.any(A<0) or np.any(B<0):raise ValueError('positive product scope')
++ y=A@B
++ if not np.all(np.isfinite(y)):raise ArithmeticError('nonfinite BLAS result')
++ # Exact positive product <= computed/(1-gamma)+underflow allowance.
++ return up(up(y/(1-GAMMA))+TINY)
++
++def complex_left_residual(Br,Bi,Hr,Hi):
++ # Midpoints rounded to binary64, radii include that rounding exactly.
++ mr=Hr.l/2+Hr.h/2;mi=Hi.l/2+Hi.h/2
++ rr=up(np.maximum(mr-Hr.l,Hr.h-mr));ri=up(np.maximum(mi-Hi.l,Hi.h-mi))
++ br=np.abs(Br);bi=np.abs(Bi)
++ mag=up(upper_product(up(br+bi),up(np.abs(mr)+np.abs(mi))))
++ rad=upper_product(up(br+bi),up(rr+ri))
++ pr=Br@mr-Bi@mi;pi=Br@mi+Bi@mr
++ real=np.eye(Br.shape[0])-pr;imag=-pi
++ # One common generous bound covers all real/imag products, sums, and I-.
++ err=up(up(GAMMA*up(mag+1))+rad)
++ return up(up(np.abs(real)+np.abs(imag))+up(2*err))
+diff --git a/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/center.json b/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/center.json
+new file mode 100644
+index 0000000..510bdcd
+--- /dev/null
++++ b/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/center.json
+@@ -0,0 +1,386 @@
++[
++  -0.0022531615725596113,
++  -0.0021169935310331287,
++  -0.0007734998940415553,
++  -0.0014561342884698398,
++  0.004612604923708365,
++  -0.004438857278153069,
++  -0.011458906426068501,
++  0.012387717438865506,
++  -0.001372908147898552,
++  -0.002989345003587841,
++  -0.007308946011225771,
++  0.0029199023665987507,
++  -0.0029587431199218097,
++  0.01026760020593289,
++  -0.0012145189662678504,
++  -0.013100623645399156,
++  0.0064968319677607845,
++  0.014074507559698907,
++  0.00452020878642784,
++  -0.004493284442319384,
++  0.003400489226608353,
++  0.007496266454114741,
++  -0.012271922351759843,
++  -0.003044539298944737,
++  0.004395885013215245,
++  0.004639620078140357,
++  0.0018860879736160884,
++  0.0022714456555652527,
++  0.0021740883956274334,
++  -0.002174824752532953,
++  0.00950334561401159,
++  -0.001215549832764764,
++  0.0026151409740895327,
++  -0.004455572213891132,
++  -7.283392529980084e-05,
++  -0.005412276047841945,
++  0.0020102143304850024,
++  0.01526148463005857,
++  0.0028432482035087047,
++  -0.014408868545879494,
++  0.005942302960027119,
++  0.005992727797603084,
++  0.0021398512167760775,
++  -0.0020966998741758437,
++  -0.007392196015285682,
++  0.0066117954501908925,
++  -0.0052084217973714245,
++  0.00571286115986385,
++  0.0019619149037581407,
++  0.002008227764951877,
++  0.0007059560706280364,
++  0.0017005333799825029,
++  -0.004663078456850431,
++  0.004712388621622818,
++  0.011330301885202223,
++  -0.012325374465073686,
++  0.0013298762324484203,
++  0.0028739822792552844,
++  0.007390186454898358,
++  -0.0030900356765506077,
++  0.002906396448693905,
++  -0.010187959184811224,
++  0.0014305685121158167,
++  -0.006679726629135055,
++  -0.006692639069420011,
++  -0.014245789158894576,
++  -0.004676294940324454,
++  0.004749840349155463,
++  -0.0033754016313951,
++  -0.007722169650322476,
++  -0.007748967115372411,
++  0.0030748381605146054,
++  -0.00479750871748261,
++  -0.004716515358794939,
++  -0.0017939774487857473,
++  -0.0021650734454305696,
++  -0.0020942947609083854,
++  0.001909182957915225,
++  -0.00958732984452781,
++  0.001354519928067229,
++  -0.0026483847367880986,
++  0.004393401336355384,
++  0.0002269669405228698,
++  0.005174942946694587,
++  -0.0016869363292176377,
++  -0.015285817965466473,
++  -0.002721842688670436,
++  -0.00546012654715995,
++  -0.005941637749337007,
++  -0.006280687053660702,
++  -0.0021921601769691415,
++  0.002029690683013021,
++  0.007444087368090917,
++  -0.006701727669856263,
++  -0.014811653785519402,
++  -0.005779550691145923,
++  -0.004525200458284016,
++  -0.004568063163215175,
++  0.008034510499956947,
++  -0.0006367196738904002,
++  -0.002220949758486014,
++  0.0018967228872379968,
++  -0.011274034431536803,
++  0.011596605878408191,
++  -0.012896161347113282,
++  0.002832336929655977,
++  -0.0013155612454799701,
++  0.015788149307446403,
++  0.008477760590835843,
++  -0.013728202677229167,
++  -0.012794259927246195,
++  0.012760410769209963,
++  0.0040666941866087485,
++  -0.003994611541378484,
++  -0.002268723348953762,
++  0.0019694102647656456,
++  0.0178285307058937,
++  -0.0046984696459375,
++  0.005344999365319753,
++  -0.005488323428673555,
++  -0.0016943194553680106,
++  -0.002165459533833213,
++  -0.00612111901718893,
++  -0.01375563721343864,
++  0.004843252329473182,
++  -0.004900929599418417,
++  0.0004764083976261729,
++  0.00703700870008173,
++  0.004072834440342138,
++  0.009196717381273435,
++  0.0050162929224303295,
++  -0.0023911398287409635,
++  -0.008426752970281295,
++  -0.0018938863469063376,
++  0.004075768294434078,
++  0.019175974002183974,
++  0.0012588867825740493,
++  0.002180616344897084,
++  0.00485024224671141,
++  -0.004881225196152418,
++  -0.002164264324350153,
++  -0.004240094208140701,
++  0.007915017621237067,
++  -0.0013196451214163214,
++  0.005140309544744168,
++  0.005147622709527469,
++  -0.007969996793641906,
++  0.0004965428267698507,
++  0.002306816793369586,
++  -0.0020571033050421064,
++  0.011261352103846762,
++  -0.01136922239533916,
++  0.012880776547694366,
++  -0.002633527834242772,
++  0.0017820137417639502,
++  -0.015532221726633464,
++  -0.008384114327307561,
++  0.013785228940945958,
++  0.012795665618515856,
++  0.007291888251284189,
++  -0.004170240698086364,
++  0.003964418294336809,
++  0.0022990202731011334,
++  -0.0019896809951845925,
++  -0.01760355180387422,
++  0.004731865649543844,
++  0.014745206558708073,
++  0.005747921663230321,
++  0.0023522250694367453,
++  0.002250446168566461,
++  0.005966261742891665,
++  0.013711276331438208,
++  -0.004740828323288394,
++  0.004684697076220433,
++  -0.0007480281544641477,
++  -0.007100440952513648,
++  -0.004393869624649157,
++  -0.009126348305164603,
++  -0.004931599093706135,
++  0.0024052390856959525,
++  0.008370764386651224,
++  0.0019046136588327265,
++  -0.004051220173463439,
++  0.001128927941392536,
++  -0.001439598645424486,
++  -0.0020954683390847282,
++  -0.004800102124947313,
++  0.004702603828309674,
++  0.0021366639899958,
++  0.004349245081527834,
++  0.012277218334178426,
++  0.0012261814730647456,
++  0.002041207164829048,
++  0.002175651376746102,
++  0.0009094207313651492,
++  0.0018313745085372264,
++  -0.004810851285389555,
++  0.00496173782231938,
++  0.011600283700604905,
++  -0.012912898306287583,
++  0.0012153938176361749,
++  0.00312026149276446,
++  0.0071753172253212465,
++  -0.0036320603301748153,
++  0.0028301661405209055,
++  -0.00995426842014757,
++  0.00136774379631775,
++  0.012997522195713838,
++  -0.006534546300033501,
++  -0.014722486718194887,
++  -0.004920641110338029,
++  0.00490904161238104,
++  -0.0034582955968024904,
++  -0.008000049048078649,
++  0.012027941824182238,
++  0.001256276958534125,
++  -0.005022222606652788,
++  -0.004782590704808086,
++  -0.0022292264475561622,
++  -0.00227256737752496,
++  -0.002133072912903884,
++  0.0021172062648730392,
++  -0.009511868043766983,
++  0.0007480509234567745,
++  -0.0026700498394957996,
++  0.004403825967126973,
++  -0.000244599566780904,
++  0.005220630638019088,
++  -0.001720968420714133,
++  -0.015758996120166038,
++  -0.0024574349409656514,
++  0.014502612135701289,
++  -0.006410857744485204,
++  -0.006192246736321591,
++  -0.0021667493072004126,
++  0.0021967209840612657,
++  0.007284882337156638,
++  -0.006587549864832236,
++  0.005346199850415921,
++  -0.0036947623772164524,
++  -0.0023369578975496724,
++  -0.002275009429147224,
++  -0.0010319549101045192,
++  -0.0016203574897418636,
++  0.004742416214729038,
++  -0.004708662336787928,
++  -0.011778407904172734,
++  0.013088587588089956,
++  -0.0012532171165376509,
++  -0.0032078189649289114,
++  -0.0071003304390410875,
++  0.00342084843897131,
++  -0.0028628800462127155,
++  0.010151940302390737,
++  -0.001169339391096503,
++  0.007227073574845259,
++  0.00633274729144509,
++  0.014633331129247092,
++  0.004716995238354536,
++  -0.004664307280409796,
++  0.003546101715677313,
++  0.007788829773149888,
++  0.007921026202174537,
++  -0.0012000397982395647,
++  0.004581043564031045,
++  0.0047003418852725656,
++  0.0023124688190307,
++  0.0024699235497288403,
++  0.0021687478503819918,
++  -0.002407783663177537,
++  0.00940827412118392,
++  -0.0007191133592596596,
++  0.0026667701048662187,
++  -0.004524028024278415,
++  0.0004328464589477668,
++  -0.005440218629310099,
++  0.0021271933976787444,
++  0.015660360204290114,
++  0.0025777607893677666,
++  0.005666216901395832,
++  0.0063585719225332845,
++  0.005841951379781015,
++  0.002072150187877683,
++  -0.0022828405743721496,
++  -0.007280880983924125,
++  0.0064482575341570075,
++  0.01459565559532563,
++  0.003646113198239428,
++  0.0048756414010876666,
++  0.004838255187373712,
++  -0.008354374588126053,
++  0.0005614947687337981,
++  0.0020747234831159822,
++  -0.002381157343394058,
++  0.011035104833800642,
++  -0.010981603283489518,
++  0.012920485275985464,
++  -0.0026843969067834763,
++  0.0022044860527283654,
++  -0.015313331298688875,
++  -0.00837822404426103,
++  0.013859017472402212,
++  0.013053484957667333,
++  -0.012732418853433927,
++  -0.004126902318237788,
++  0.004768460162900005,
++  0.0020206416976297366,
++  -0.002317308497987376,
++  -0.017412172153995074,
++  0.0050738903811329205,
++  -0.005253465276341836,
++  0.0039093662549423615,
++  0.00259463846749852,
++  0.002148343124650541,
++  0.006521425934980925,
++  0.014065613246937841,
++  -0.00454632930308826,
++  0.0045275733483252836,
++  -0.0009293305603087159,
++  -0.007393533986966218,
++  -0.004256353045548365,
++  -0.009195208505084766,
++  -0.004994348994767924,
++  0.002005408875027445,
++  0.008348946123679776,
++  0.002416161743192864,
++  -0.0042879286179422675,
++  -0.019253379722933697,
++  -0.0008398962457658264,
++  -0.002155634637289724,
++  -0.004538088147157392,
++  0.004559068079363859,
++  0.0018610405799696168,
++  0.004759926649235189,
++  -0.007757279393564604,
++  0.0030151141551199375,
++  -0.004288935955517305,
++  -0.00429140536560692,
++  0.00848751349851751,
++  -0.0007042270482049893,
++  -0.0020029156007788152,
++  0.002224522326213986,
++  -0.0111660682010157,
++  0.011241112772645088,
++  -0.012992760004949176,
++  0.0028741243751221647,
++  -0.0018004389900010424,
++  0.01565862783249356,
++  0.00837717107997846,
++  -0.01378338199396409,
++  -0.013041861318716753,
++  -0.007205522425934183,
++  0.0040499402717989255,
++  -0.0047736214129642926,
++  -0.0020289808931529536,
++  0.002295136372322921,
++  0.01768162341604211,
++  -0.005075860244346745,
++  -0.014647721301506359,
++  -0.0036565920142702293,
++  -0.0019549757103533216,
++  -0.0020070792153337493,
++  -0.0067278189708048185,
++  -0.014138585321855867,
++  0.004696131760867512,
++  -0.004726591670928359,
++  0.000760881877599167,
++  0.0072077084130270025,
++  0.00402958395688597,
++  0.009275414833639743,
++  0.0050921577477765125,
++  -0.0020496679274269935,
++  -0.008382267132417806,
++  -0.0022823529173265312,
++  0.004347473650828553,
++  -0.000464807838115263,
++  0.0006303077146302378,
++  0.002257370593866762,
++  0.004624788117170784,
++  -0.004694428001345797,
++  -0.0020299204397756752,
++  -0.004629304764836284,
++  -0.012047762728951732,
++  -0.003057993802295617
++]
+diff --git a/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/full4d_diagnostic.py b/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/full4d_diagnostic.py
+new file mode 100644
+index 0000000..8dedbba
+--- /dev/null
++++ b/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/full4d_diagnostic.py
+@@ -0,0 +1,48 @@
++"""Independent numerical diagnostic on ALL 6144 real link variables.
++Not used as a substitute for interval invertibility or the analytic symmetry proof.
++"""
++import os
++os.environ['OPENBLAS_NUM_THREADS']='1';os.environ['OMP_NUM_THREADS']='1';os.environ['JAX_ENABLE_X64']='1'
++import jax
++jax.config.update('jax_enable_x64',True)
++import jax.numpy as j
++import numpy as np,json
++from pathlib import Path
++from itertools import combinations
++from symbol import GEN,PAIR,G2,STAR
++ROOT=Path(__file__).parent;G=np.array([np.array(x.tolist(),float) for x in GEN]);et=np.diag([1.,-1.,-1.,-1.]);q=np.array((G2*STAR).tolist(),float)
++
++def act(a,E):
++ X=j.einsum('...rk,kab->...rab',a.reshape(4,4,4,4,4,6),G);U=j.linalg.solve(j.eye(4)-X/2,j.eye(4)+X/2);Ui=et@j.swapaxes(U,-1,-2)@et
++ S=j.array(0.)
++ for r,s in PAIR:
++  u,v=[i for i in range(4) if i not in (r,s)];seq=[r,s,u,v];sg=(-1)**sum(seq[i]>seq[k] for i,k in combinations(range(4),2))
++  P=U[...,r,:,:]@j.roll(U[...,s,:,:],-1,axis=r)@j.roll(Ui[...,r,:,:],-1,axis=s)@Ui[...,s,:,:]
++  C=(P-et@j.swapaxes(P,-1,-2)@et)/2
++  wc=j.stack([E[...,aa,u]*E[...,bb,v]-E[...,bb,u]*E[...,aa,v] for aa,bb in PAIR],-1)
++  b=j.stack([(C@et)[...,aa,bb] for aa,bb in PAIR],-1)
++  S+=sg*j.sum(j.einsum('...a,ab,...b->...',wc,q,b))
++ return S
++
++grad=jax.grad(act);jvp=jax.jit(lambda a,E,v:jax.jvp(lambda z:grad(z,E),(a,),(v,))[1]);gr=jax.jit(grad)
++def main():
++ from full_bloch_verify import hessian_enclosure,assemble
++ a2=np.array(json.load(open(ROOT/'center.json'))).reshape(4,4,24);A=np.broadcast_to(a2[None,:,:,None,:],(4,4,4,4,24)).copy().reshape(-1)
++ E=np.tile(np.eye(4),(4,4,4,4,1,1));c=np.array([1.,0.,-1.,0.]);f=1+c[None,:,None,None]/100+c[None,None,:,None]/1000
++ E[...,2,2]=f;E[...,3,3]=f
++ res=np.array(gr(A,E));print('full residual diagnostic',np.max(abs(res)),flush=True)
++ H,bb=hessian_enclosure(a2.reshape(16,24),0.,True);rng=np.random.default_rng(731)
++ report={'status':'NUMERICAL_DIAGNOSTIC_ONLY','full_rows':6144,'full_residual_diagnostic':float(np.max(abs(res))),'bloch_tests':[]}
++ for k,l in [(1,1),(1,3),(2,2),(0,0)]:
++  w=rng.normal(size=(4,4,24))+1j*rng.normal(size=(4,4,24));realmode=(k%2==0 and l%2==0)
++  if realmode:w=w.real.astype(complex)
++  phase=(1j)**(k*np.arange(4)[:,None]+l*np.arange(4)[None,:]);V=np.real(phase[:,None,None,:,None]*w[None,:,:,None,:]).reshape(-1)
++  out=np.array(jvp(A,E,V)).reshape(4,4,4,4,24)
++  recovered=np.einsum('txyzq,tz->xyq',out,np.conj(phase))/16*(1 if realmode else 2)
++  hb=assemble(bb,k,l);M=(hb.r.l+hb.r.h)/2+1j*(hb.i.l+hb.i.h)/2
++  expected=(M@w.reshape(-1)).reshape(4,4,24);err=float(np.max(abs(recovered-expected)))
++  print('full Bloch compare',k,l,err,flush=True)
++  if not err<1e-11:raise AssertionError('full Hessian/Bloch discrepancy')
++  report['bloch_tests'].append({'q0':k,'q3':l,'absolute_error':err})
++ json.dump(report,open(ROOT/'full_diagnostic.json','w'),indent=2)
++if __name__=='__main__':main()
+diff --git a/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/full_bloch_verify.py b/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/full_bloch_verify.py
+new file mode 100644
+index 0000000..08f3235
+--- /dev/null
++++ b/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/full_bloch_verify.py
+@@ -0,0 +1,51 @@
++"""Interval certification of ALL 6144 connection directions at the exact root.
++Bloch blocks are a computational decomposition, not a frequency cutoff.
++"""
++from interval_check import *
++from blas_bounds import complex_left_residual
++
++class C:
++ def __init__(self,r,i=0):self.r=r if isinstance(r,I) else I(r);self.i=i if isinstance(i,I) else I(i)
++ def __add__(a,b):return C(a.r+b.r,a.i+b.i)
++ def __sub__(a,b):return C(a.r-b.r,a.i-b.i)
++ def __matmul__(a,b):return C(a.r@b.r-a.i@b.i,a.r@b.i+a.i@b.r)
++ def bound(a):return np.nextafter(a.r.absup()+a.i.absup(),np.inf)
++
++def assemble(bb,t,u):
++ # Exact fourth roots of unity; multiplication is sign/swap only.
++ R=I(np.zeros((384,384)));J=I(np.zeros((384,384)))
++ for (i,j),mat in bb.items():
++  k=(t*i+u*j)%4
++  if k==0:R=R+mat
++  if k==1:J=J+mat
++  if k==2:R=R-mat
++  if k==3:J=J-mat
++ return C(R,J)
++
++def run(write=False):
++ a=np.asarray(json.load(open(ROOT/'center.json'))).reshape(16,24);rad=2.**-42
++ H,bb=hessian_enclosure(a,rad,True)
++ # Preconditioner is generated from midpoint, then frozen as exact dyadic data.
++ from point_interval import residual_interval
++ B=np.linalg.inv((H.l+H.h)/2);F=residual_interval(a)
++ c=rowsup((I(np.eye(384))-I(B)@H).absup());disp=float((I(B)@F.reshape(384,1)).absup().max());image=float(np.nextafter(disp+np.nextafter(c*rad,np.inf),np.inf))
++ if not (c<1 and image<rad):raise AssertionError('2D exact root not certified')
++ root={'radius':rad,'contraction_upper':c,'displacement_upper':disp,'image_radius_upper':image,'variables':384,'all_connection_rows':6144,'test':'strict outward Banach enclosure'}
++ print('EXACT ROOT',root,flush=True)
++ blocks=[];total=0.;precs={}
++ for t in range(4):
++  for u in range(4):
++   z=assemble(bb,t,u);mid=(z.r.l+z.r.h)/2+1j*(z.i.l+z.i.h)/2
++   inv=np.linalg.inv(mid);Bz=C(inv.real,inv.imag);err=rowsup(complex_left_residual(inv.real,inv.imag,z.r,z.i))
++   bn=rowsup(Bz.bound());norm=float(np.nextafter(bn/np.nextafter(1-err,-np.inf),np.inf));total=float(np.nextafter(total+norm,np.inf))
++   print('BLOCH',t,u,'eta',err,'inverse norm bound',norm,flush=True)
++   if not err<1:raise AssertionError('uncertified full-rank block')
++   blocks.append({'q0':t,'q3':u,'rows':384,'defect_infinity_upper':err,'inverse_norm_upper':norm})
++   precs[f'{t}_{u}_real']=inv.real;precs[f'{t}_{u}_imag']=inv.imag
++ # Preconditioners are free dyadic witnesses, regenerated and validated per run.
++ report={'status':'PASS_EXACT_TWO_COORDINATE_ROOT_AND_FULL_4D_NONDEGENERACY','root':root,'blocks':blocks,'full_connection_dimension':6144,'full_coframe_parameter_dimension':4096,'full_metric_parameter_dimension':2560,'full_inverse_infinity_upper':total,'mesh':4,'physical_GR_closed':False,'all_mesh_uniformity_claimed':False,'new_Lean_compilation':False,'interval_endpoint_aliasing_fixed':True}
++ if write:json.dump(report,open(ROOT/'full_receipt.json','w'),indent=2)
++ if not (len(blocks)==16 and total<2.**24):raise AssertionError('full-spectrum gate')
++ print('FULL PASS',total)
++ return report
++if __name__=='__main__':run()
+diff --git a/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/full_diagnostic.json b/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/full_diagnostic.json
+new file mode 100644
+index 0000000..30c2d32
+--- /dev/null
++++ b/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/full_diagnostic.json
+@@ -0,0 +1,27 @@
++{
++  "status": "NUMERICAL_DIAGNOSTIC_ONLY",
++  "full_rows": 6144,
++  "full_residual_diagnostic": 7.151397529714387e-16,
++  "bloch_tests": [
++    {
++      "q0": 1,
++      "q3": 1,
++      "absolute_error": 8.005932084973442e-15
++    },
++    {
++      "q0": 1,
++      "q3": 3,
++      "absolute_error": 7.283604593613869e-15
++    },
++    {
++      "q0": 2,
++      "q3": 2,
++      "absolute_error": 3.9968028886505635e-15
++    },
++    {
++      "q0": 0,
++      "q3": 0,
++      "absolute_error": 3.552713678800501e-15
++    }
++  ]
++}
+diff --git a/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/full_receipt.json b/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/full_receipt.json
+new file mode 100644
+index 0000000..ee7a134
+--- /dev/null
++++ b/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/full_receipt.json
+@@ -0,0 +1,135 @@
++{
++  "status": "PASS_EXACT_TWO_COORDINATE_ROOT_AND_FULL_4D_NONDEGENERACY",
++  "root": {
++    "radius": 2.2737367544323206e-13,
++    "contraction_upper": 1.232213056621168e-06,
++    "displacement_upper": 1.7129739995119345e-18,
++    "image_radius_upper": 1.9931468111250295e-18,
++    "variables": 384,
++    "all_connection_rows": 6144,
++    "test": "strict outward Banach enclosure"
++  },
++  "blocks": [
++    {
++      "q0": 0,
++      "q3": 0,
++      "rows": 384,
++      "defect_infinity_upper": 3.574403742699774e-06,
++      "inverse_norm_upper": 42086.76391795605
++    },
++    {
++      "q0": 0,
++      "q3": 1,
++      "rows": 384,
++      "defect_infinity_upper": 5.096982999515847e-07,
++      "inverse_norm_upper": 5480.770530740964
++    },
++    {
++      "q0": 0,
++      "q3": 2,
++      "rows": 384,
++      "defect_infinity_upper": 5.034690546784476e-06,
++      "inverse_norm_upper": 63601.799926074455
++    },
++    {
++      "q0": 0,
++      "q3": 3,
++      "rows": 384,
++      "defect_infinity_upper": 5.096982999515847e-07,
++      "inverse_norm_upper": 5480.770530740964
++    },
++    {
++      "q0": 1,
++      "q3": 0,
++      "rows": 384,
++      "defect_infinity_upper": 3.386763625810448e-07,
++      "inverse_norm_upper": 3785.3779410291563
++    },
++    {
++      "q0": 1,
++      "q3": 1,
++      "rows": 384,
++      "defect_infinity_upper": 0.0007510706881723443,
++      "inverse_norm_upper": 7813789.387831605
++    },
++    {
++      "q0": 1,
++      "q3": 2,
++      "rows": 384,
++      "defect_infinity_upper": 1.738015597908691e-07,
++      "inverse_norm_upper": 1863.5979545121186
++    },
++    {
++      "q0": 1,
++      "q3": 3,
++      "rows": 384,
++      "defect_infinity_upper": 5.080588342310781e-06,
++      "inverse_norm_upper": 50515.597028489996
++    },
++    {
++      "q0": 2,
++      "q3": 0,
++      "rows": 384,
++      "defect_infinity_upper": 1.9022421288241149e-06,
++      "inverse_norm_upper": 24584.87827686763
++    },
++    {
++      "q0": 2,
++      "q3": 1,
++      "rows": 384,
++      "defect_infinity_upper": 3.7937726409245616e-07,
++      "inverse_norm_upper": 4093.1163162868966
++    },
++    {
++      "q0": 2,
++      "q3": 2,
++      "rows": 384,
++      "defect_infinity_upper": 3.4310676789662583e-06,
++      "inverse_norm_upper": 42133.78168303846
++    },
++    {
++      "q0": 2,
++      "q3": 3,
++      "rows": 384,
++      "defect_infinity_upper": 3.7937726409245616e-07,
++      "inverse_norm_upper": 4093.1163162868966
++    },
++    {
++      "q0": 3,
++      "q3": 0,
++      "rows": 384,
++      "defect_infinity_upper": 3.386763625810448e-07,
++      "inverse_norm_upper": 3785.3779410291563
++    },
++    {
++      "q0": 3,
++      "q3": 1,
++      "rows": 384,
++      "defect_infinity_upper": 5.080588342310781e-06,
++      "inverse_norm_upper": 50515.597028489996
++    },
++    {
++      "q0": 3,
++      "q3": 2,
++      "rows": 384,
++      "defect_infinity_upper": 1.738015597908691e-07,
++      "inverse_norm_upper": 1863.5979545121186
++    },
++    {
++      "q0": 3,
++      "q3": 3,
++      "rows": 384,
++      "defect_infinity_upper": 0.0007510706881723443,
++      "inverse_norm_upper": 7813789.387831605
++    }
++  ],
++  "full_connection_dimension": 6144,
++  "full_coframe_parameter_dimension": 4096,
++  "full_metric_parameter_dimension": 2560,
++  "full_inverse_infinity_upper": 15931462.919009278,
++  "mesh": 4,
++  "physical_GR_closed": false,
++  "all_mesh_uniformity_claimed": false,
++  "new_Lean_compilation": false,
++  "interval_endpoint_aliasing_fixed": true
++}
+diff --git a/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/hostile.log b/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/hostile.log
+new file mode 100644
+index 0000000..d231d5a
+--- /dev/null
++++ b/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/hostile.log
+@@ -0,0 +1,26 @@
++[
++  {
++    "file": "interval_check.py",
++    "mutation": "self.l=np.array(l,float,copy=True);self.h=np.array(l if h is None else h,float,copy=True) -> self.l=np.asarray(l,float);self.h=np.asarray(l if h is None else h,float)",
++    "returncode": 1,
++    "detected_by": "independent_interval_endpoint_storage"
++  },
++  {
++    "file": "interval_check.py",
++    "mutation": "ex=(off[j][0]-off[i][0],off[j][1]-off[i][1]) -> ex=(0,0)",
++    "returncode": 1,
++    "detected_by": "literal_full_Bloch_placement"
++  },
++  {
++    "file": "interval_check.py",
++    "mutation": "coef=ee[u]*ee[v]*.5 -> coef=-ee[u]*ee[v]*.5",
++    "returncode": 1,
++    "detected_by": "literal_full_Bloch_placement"
++  },
++  {
++    "file": "blas_bounds.py",
++    "mutation": "GAMMA=2.**-38 -> GAMMA=0.",
++    "returncode": 1,
++    "detected_by": "BLAS_error_factor_proved"
++  }
++]
+diff --git a/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/hostile.py b/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/hostile.py
+new file mode 100644
+index 0000000..0fce539
+--- /dev/null
++++ b/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/hostile.py
+@@ -0,0 +1,25 @@
++"""Executed semantic mutations. A missing import does not count as detection."""
++from pathlib import Path
++import tempfile,shutil,subprocess,sys,os,json
++R=Path(__file__).parent
++cases=[
++ ('interval_check.py','self.l=np.array(l,float,copy=True);self.h=np.array(l if h is None else h,float,copy=True)','self.l=np.asarray(l,float);self.h=np.asarray(l if h is None else h,float)','independent_interval_endpoint_storage'),
++ ('interval_check.py','ex=(off[j][0]-off[i][0],off[j][1]-off[i][1])','ex=(0,0)','literal_full_Bloch_placement'),
++ ('interval_check.py','coef=ee[u]*ee[v]*.5','coef=-ee[u]*ee[v]*.5','literal_full_Bloch_placement'),
++ ('blas_bounds.py','GAMMA=2.**-38','GAMMA=0.','BLAS_error_factor_proved'),
++]
++receipt=[]
++for file,old,new,expected in cases:
++ with tempfile.TemporaryDirectory() as td:
++  d=Path(td)
++  for p in R.glob('*.py'):shutil.copy2(p,d/p.name)
++  shutil.copy2(R/'center.json',d/'center.json')
++  f=d/file;txt=f.read_text()
++  if old not in txt:raise AssertionError('mutation anchor absent')
++  f.write_text(txt.replace(old,new,1))
++  p=subprocess.run([sys.executable,str(d/'verify.py'),'--kernel-only'],capture_output=True,text=True,env={**os.environ,'OPENBLAS_NUM_THREADS':'1','PYTHONDONTWRITEBYTECODE':'1'},timeout=40)
++  out=p.stdout+p.stderr
++  if p.returncode==0 or expected not in out:raise AssertionError('mutation not mathematically detected: '+file+' '+out[-700:])
++  receipt.append({'file':file,'mutation':old+' -> '+new,'returncode':p.returncode,'detected_by':expected})
++print(json.dumps(receipt,indent=2));
++if '--write' in sys.argv:(R/'hostile_receipt.json').write_text(json.dumps(receipt,indent=2)+'\n')
+diff --git a/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/hostile_receipt.json b/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/hostile_receipt.json
+new file mode 100644
+index 0000000..d231d5a
+--- /dev/null
++++ b/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/hostile_receipt.json
+@@ -0,0 +1,26 @@
++[
++  {
++    "file": "interval_check.py",
++    "mutation": "self.l=np.array(l,float,copy=True);self.h=np.array(l if h is None else h,float,copy=True) -> self.l=np.asarray(l,float);self.h=np.asarray(l if h is None else h,float)",
++    "returncode": 1,
++    "detected_by": "independent_interval_endpoint_storage"
++  },
++  {
++    "file": "interval_check.py",
++    "mutation": "ex=(off[j][0]-off[i][0],off[j][1]-off[i][1]) -> ex=(0,0)",
++    "returncode": 1,
++    "detected_by": "literal_full_Bloch_placement"
++  },
++  {
++    "file": "interval_check.py",
++    "mutation": "coef=ee[u]*ee[v]*.5 -> coef=-ee[u]*ee[v]*.5",
++    "returncode": 1,
++    "detected_by": "literal_full_Bloch_placement"
++  },
++  {
++    "file": "blas_bounds.py",
++    "mutation": "GAMMA=2.**-38 -> GAMMA=0.",
++    "returncode": 1,
++    "detected_by": "BLAS_error_factor_proved"
++  }
++]
+diff --git a/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/interval_check.py b/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/interval_check.py
+new file mode 100644
+index 0000000..0098266
+--- /dev/null
++++ b/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/interval_check.py
+@@ -0,0 +1,129 @@
++"""Directed IEEE binary64 Hessian enclosures, independent high-precision
++interval residual. No floating-point small residual is a zero certificate.
++"""
++import os
++os.environ['OPENBLAS_NUM_THREADS']='1'
++import numpy as np
++from fractions import Fraction
++from itertools import combinations
++import json,sys,time
++from pathlib import Path
++ROOT=Path(__file__).parent
++P=list(combinations(range(4),2));ET=np.diag([1.,-1.,-1.,-1.]);GN=[]
++for a,b in P:
++ X=np.zeros((4,4));X[a,b]=1;X[b,a]=-ET[a,a]*ET[b,b];GN.append(X)
++GN=np.array(GN);DOWN=-np.inf;UP=np.inf
++class I:
++ __array_priority__=10000
++ def __init__(self,l,h=None): self.l=np.array(l,float,copy=True);self.h=np.array(l if h is None else h,float,copy=True)
++ def __add__(a,b):
++  b=b if isinstance(b,I) else I(b)
++  return I(np.nextafter(a.l+b.l,DOWN),np.nextafter(a.h+b.h,UP))
++ __radd__=__add__
++ def __neg__(a):return I(-a.h,-a.l)
++ def __sub__(a,b):return a+(-(b if isinstance(b,I) else I(b)))
++ def __rsub__(a,b):return I(b)-a
++ def __mul__(a,b):
++  b=b if isinstance(b,I) else I(b)
++  vs=np.stack(np.broadcast_arrays(a.l*b.l,a.l*b.h,a.h*b.l,a.h*b.h))
++  return I(np.nextafter(vs.min(0),DOWN),np.nextafter(vs.max(0),UP))
++ __rmul__=__mul__
++ def __truediv__(a,b):
++  b=b if isinstance(b,I) else I(b)
++  if np.any((b.l<=0)&(b.h>=0)): raise ArithmeticError('unproved denominator')
++  return a*I(np.nextafter(1/b.h,DOWN),np.nextafter(1/b.l,UP))
++ def __matmul__(a,b):
++  b=b if isinstance(b,I) else I(b)
++  if a.l.shape[-1]!=b.l.shape[-2]:raise ValueError('matmul shape')
++  dims=np.broadcast_shapes(a.l.shape[:-2],b.l.shape[:-2]);out=I(np.zeros(dims+(a.l.shape[-2],b.l.shape[-1])))
++  for k in range(a.l.shape[-1]):out=out+a[...,k:k+1]*b[...,k:k+1,:]
++  return out
++ def __getitem__(a,k):return I(a.l[k],a.h[k])
++ def reshape(a,*shape):return I(a.l.reshape(*shape),a.h.reshape(*shape))
++ def swapaxes(a,i,j):return I(np.swapaxes(a.l,i,j),np.swapaxes(a.h,i,j))
++ @property
++ def T(a):return a.swapaxes(-1,-2)
++ def absup(a):return np.maximum(abs(a.l),abs(a.h))
++
++def rational(q):
++ q=Fraction(q);v=float(q);lo=hi=v
++ if Fraction.from_float(v)>q:lo=np.nextafter(v,DOWN)
++ if Fraction.from_float(v)<q:hi=np.nextafter(v,UP)
++ return I(lo,hi)
++
++def inv(a):
++ n=a.l.shape[0];w=I(np.concatenate([a.l,np.eye(n)],1),np.concatenate([a.h,np.eye(n)],1))
++ for k in range(n):
++  rr=w[k:k+1,:]/w[k,k];w.l[k:k+1,:]=rr.l;w.h[k:k+1,:]=rr.h
++  for j in range(n):
++   if j==k:continue
++   row=w[j:j+1,:]-w[j,k]*rr;w.l[j:j+1,:]=row.l;w.h[j:j+1,:]=row.h
++ return w[:,n:]
++
++def stack(xs,axis=0):return I(np.stack([x.l for x in xs],axis),np.stack([x.h for x in xs],axis))
++def setup(A,rad):
++ n=len(A);res={};eye=I(np.eye(4));g=I(GN);et=I(ET)
++ for ix in range(n):
++  for r in range(4):
++   a=A[ix,6*r:6*r+6];a=I(np.nextafter(a-rad,DOWN),np.nextafter(a+rad,UP));X=I(np.zeros((4,4)))
++   for k in range(6):X=X+a[k]*g[k]
++   S=inv(eye-X*.5);U=S@(eye+X*.5);d=S@g@S
++   dd=((d.reshape(6,1,4,4)@g.reshape(1,6,4,4)@S)+(d.reshape(1,6,4,4)@g.reshape(6,1,4,4)@S))*.5
++   res[ix,r,1]=(U,d,dd)
++   res[ix,r,-1]=(et@U.T@et,et@d.T@et,et@dd.T@et)
++ return res
++
++def neighbor(n,r,L):
++ x,y=divmod(n,L)
++ if r==1:x=(x+1)%L
++ if r==2:y=(y+1)%L
++ return x*L+y
++
++def frame_f(n,L=4):
++ x,y=divmod(n,L);c=[1,0,-1,0]
++ return rational(1+Fraction(c[x],100)+Fraction(c[y],1000))
++
++def hessian_enclosure(A,rad,keep_bloch=False):
++ L=4;n=L*L;vc=24*n;H=I(np.zeros((vc,vc)));UU=setup(A,rad);eye=I(np.eye(4))
++ bloch={}
++ def add(ix,jx,block,ex=(0,0)):
++  if keep_bloch:
++   if ex not in bloch:bloch[ex]=I(np.zeros((vc,vc)))
++   xx=slice(ix,ix+6); yy=slice(jx,jx+6); vv=bloch[ex][xx,yy]+block
++   bloch[ex].l[xx,yy]=vv.l;bloch[ex].h[xx,yy]=vv.h
++  x=slice(ix,ix+6);y=slice(jx,jx+6);rr=H[x,y]+block;H.l[x,y]=rr.l;H.h[x,y]=rr.h
++ # At a diagonal coframe the literal G2*STAR weight contracted with eta
++ # on every upper (r,s) odd entry is +1, checked independently in verify.
++ for m in range(n):
++  ee=[I(1),I(1),frame_f(m),frame_f(m)]
++  for r,s in P:
++   u,v=[a for a in range(4) if a not in (r,s)]
++   coef=ee[u]*ee[v]*.5
++   ids=[(m,r,1),(neighbor(m,r,L),s,1),(neighbor(m,s,L),r,-1),(m,s,-1)]
++   offsets=[(0,0),(int(r==0),int(r==3)),(int(s==0),int(s==3)),(0,0)]
++   for sg,ls,off in [(1,ids,offsets),(-1,[(k,a,-z) for k,a,z in ids[::-1]],offsets[::-1])]:
++    ff=[UU[k][0] for k in ls];pre=[eye]
++    for z in ff:pre.append(pre[-1]@z)
++    suf=[None]*5;suf[4]=eye
++    for i in range(3,-1,-1):suf[i]=ff[i]@suf[i+1]
++    left=[];right=[]
++    for i,(k,a,z) in enumerate(ls):
++     U,d,dd=UU[k,a,z];pr=pre[i][r:r+1,:];po=suf[i+1][:,s:s+1]
++     left.append((pr@d).reshape(6,4));right.append((d@po).reshape(6,4).T)
++     dg=(pr@dd@po).reshape(6,6)*coef*sg
++     add(24*k+6*a,24*k+6*a,dg)
++    for i in range(4):
++     mid=eye
++     for j in range(i+1,4):
++      if j>i+1:mid=mid@ff[j-1]
++      dg=(left[i]@mid@right[j])*coef*sg
++      ii=24*ls[i][0]+6*ls[i][1];jj=24*ls[j][0]+6*ls[j][1]
++      ex=(off[j][0]-off[i][0],off[j][1]-off[i][1])
++      add(ii,jj,dg,ex);add(jj,ii,dg.T,(-ex[0],-ex[1]))
++  print('hessian site',m,flush=True)
++ return (H,bloch) if keep_bloch else H
++
++def rowsup(A):
++ acc=np.zeros(A.shape[0])
++ for k in range(A.shape[1]):acc=np.nextafter(acc+A[:,k],UP)
++ return float(acc.max())
+diff --git a/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/invariants.log b/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/invariants.log
+new file mode 100644
+index 0000000..33ee99b
+--- /dev/null
++++ b/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/invariants.log
+@@ -0,0 +1,6 @@
++R 2*(2*f**3*fxx + f**2*fx**2 + f*fyy - fy**2)/f**4
++Ric Matrix([[0, 0, 0, 0], [0, -2*fxx/f, (-f*fxy + fx*fy)/f**2, 0], [0, (-f*fxy + fx*fy)/f**2, -f*fxx - fx**2 - fyy/f + fy**2/f**2, 0], [0, 0, 0, -f*fxx - fx**2 - fyy/f + fy**2/f**2]])
++Q 2*(3*f**6*fxx**2 + 2*f**5*fx**2*fxx + f**4*fx**4 + 2*f**4*fxx*fyy + f**4*fxy**2 + 2*f**3*fx**2*fyy - 2*f**3*fx*fxy*fy - 2*f**3*fxx*fy**2 - f**2*fx**2*fy**2 + f**2*fyy**2 - 2*f*fy**2*fyy + fy**4)/f**8
++J Matrix([[4*a*(a**2 - 2*b**2 + 1), 2*b*(2*a**2 - 4*b**2 + 1)], [4*a*(2*a**4 - 3*a**2*b**2 + a**2 + 4*b**4 - b**2), 4*b*(2*a**4 - 3*a**2*b**2 + a**2 + 4*b**4 - b**2)]]) det 8*a*b*(2*a**4 - 3*a**2*b**2 + a**2 + 4*b**4 - b**2)
++example 12377463/1562500000000000
++PASS_GENUINELY_TWO_COORDINATE_GEOMETRY
+diff --git a/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/invariants.py b/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/invariants.py
+new file mode 100644
+index 0000000..e2c31ce
+--- /dev/null
++++ b/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/invariants.py
+@@ -0,0 +1,22 @@
++import sympy as s
++f,fx,fy,fxx,fxy,fyy,fxxx,fxxy,fxyy,fyyy=s.symbols('f fx fy fxx fxy fyy fxxx fxxy fxyy fyyy', real=True)
++v=[f,fx,fy,fxx,fxy,fyy]
++dx=[fx,fxx,fxy,fxxx,fxxy,fxyy];dy=[fy,fxy,fyy,fxxy,fxyy,fyyy]
++def der(a,i):
++ return sum(s.diff(a,z)*dz for z,dz in zip(v,dx if i==1 else dy)) if i in [1,2] else s.S.Zero
++g=s.diag(1,-1,-f*f,-f*f);gi=g.inv()
++G=[s.Matrix(4,4,lambda a,b:s.simplify(sum(gi[a,k]*(der(g[k,b],r)+der(g[k,r],b)-der(g[r,b],k))/2 for k in range(4)))) for r in range(4)]
++Riem={(r,t):(G[t].applyfunc(lambda a:der(a,r))-G[r].applyfunc(lambda a:der(a,t))+G[r]*G[t]-G[t]*G[r]).applyfunc(s.simplify) for r in range(4) for t in range(4)}
++Ric=s.Matrix(4,4,lambda b,d:sum(Riem[a,d][a,b] for a in range(4))).applyfunc(s.simplify)
++R=s.simplify(s.trace(gi*Ric));Q=s.simplify(s.trace((gi*Ric)**2))
++print('R',R,'\nRic',Ric,'\nQ',Q,flush=True)
++a,b=s.symbols('a b',real=True)
++jet={f:1,fx:-a,fy:-b,fxx:0,fxy:0,fyy:0,fxxx:a,fxxy:0,fxyy:0,fyyy:b}
++J=s.Matrix([[der(R,1),der(R,2)],[der(Q,1),der(Q,2)]]).subs(jet).applyfunc(s.factor)
++print('J',J,'det',s.factor(J.det()),flush=True)
++print('example',s.factor(J.det().subs({a:s.Rational(1,100),b:s.Rational(1,1000)})))
++
++expected=8*a*b*(2*a**4-3*a*a*b*b+a*a+4*b**4-b*b)
++if s.expand(J.det()-expected)!=0:raise AssertionError('Ricci invariant Jacobian not verified')
++if s.factor(J.det().subs({a:s.Rational(1,100),b:s.Rational(1,1000)}))!=s.Rational(12377463,1562500000000000):raise AssertionError('two-coordinate scalar invariant rank failed')
++print('PASS_GENUINELY_TWO_COORDINATE_GEOMETRY')
+diff --git a/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/optimized.log b/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/optimized.log
+new file mode 100644
+index 0000000..4bc070c
+--- /dev/null
++++ b/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/optimized.log
+@@ -0,0 +1,51 @@
++hessian site 0
++hessian site 1
++hessian site 2
++hessian site 3
++hessian site 4
++hessian site 5
++hessian site 6
++hessian site 7
++hessian site 8
++hessian site 9
++hessian site 10
++hessian site 11
++hessian site 12
++hessian site 13
++hessian site 14
++hessian site 15
++hessian site 0
++hessian site 1
++hessian site 2
++hessian site 3
++hessian site 4
++hessian site 5
++hessian site 6
++hessian site 7
++hessian site 8
++hessian site 9
++hessian site 10
++hessian site 11
++hessian site 12
++hessian site 13
++hessian site 14
++hessian site 15
++EXACT ROOT {'radius': 2.2737367544323206e-13, 'contraction_upper': 1.232213056621168e-06, 'displacement_upper': 1.7129739995119345e-18, 'image_radius_upper': 1.9931468111250295e-18, 'variables': 384, 'all_connection_rows': 6144, 'test': 'strict outward Banach enclosure'}
++BLOCH 0 0 eta 3.574403742699774e-06 inverse norm bound 42086.76391795605
++BLOCH 0 1 eta 5.096982999515847e-07 inverse norm bound 5480.770530740964
++BLOCH 0 2 eta 5.034690546784476e-06 inverse norm bound 63601.799926074455
++BLOCH 0 3 eta 5.096982999515847e-07 inverse norm bound 5480.770530740964
++BLOCH 1 0 eta 3.386763625810448e-07 inverse norm bound 3785.3779410291563
++BLOCH 1 1 eta 0.0007510706881723443 inverse norm bound 7813789.387831605
++BLOCH 1 2 eta 1.738015597908691e-07 inverse norm bound 1863.5979545121186
++BLOCH 1 3 eta 5.080588342310781e-06 inverse norm bound 50515.597028489996
++BLOCH 2 0 eta 1.9022421288241149e-06 inverse norm bound 24584.87827686763
++BLOCH 2 1 eta 3.7937726409245616e-07 inverse norm bound 4093.1163162868966
++BLOCH 2 2 eta 3.4310676789662583e-06 inverse norm bound 42133.78168303846
++BLOCH 2 3 eta 3.7937726409245616e-07 inverse norm bound 4093.1163162868966
++BLOCH 3 0 eta 3.386763625810448e-07 inverse norm bound 3785.3779410291563
++BLOCH 3 1 eta 5.080588342310781e-06 inverse norm bound 50515.597028489996
++BLOCH 3 2 eta 1.738015597908691e-07 inverse norm bound 1863.5979545121186
++BLOCH 3 3 eta 0.0007510706881723443 inverse norm bound 7813789.387831605
++FULL PASS 15931462.919009278
++PASS_FINITE_FULL_4D_SHEET 56 named structural conditions; interval gates separately in receipt
+diff --git a/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/optimized_interrupted.log b/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/optimized_interrupted.log
+new file mode 100644
+index 0000000..db76516
+--- /dev/null
++++ b/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/optimized_interrupted.log
+@@ -0,0 +1,33 @@
++hessian site 0
++hessian site 1
++hessian site 2
++hessian site 3
++hessian site 4
++hessian site 5
++hessian site 6
++hessian site 7
++hessian site 8
++hessian site 9
++hessian site 10
++hessian site 11
++hessian site 12
++hessian site 13
++hessian site 14
++hessian site 15
++hessian site 0
++hessian site 1
++hessian site 2
++hessian site 3
++hessian site 4
++hessian site 5
++hessian site 6
++hessian site 7
++hessian site 8
++hessian site 9
++hessian site 10
++hessian site 11
++hessian site 12
++hessian site 13
++hessian site 14
++hessian site 15
++EXACT ROOT {'radius': 2.2737367544323206e-13, 'contraction_upper': 1.232213056621168e-06, 'displacement_upper': 1.7129739995119345e-18, 'image_radius_upper': 1.9931468111250295e-18, 'variables': 384, 'all_connection_rows': 6144, 'test': 'strict outward Banach enclosure'}
+diff --git a/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/point_interval.py b/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/point_interval.py
+new file mode 100644
+index 0000000..25c8be2
+--- /dev/null
++++ b/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/point_interval.py
+@@ -0,0 +1,66 @@
++"""80-decimal-digit outward mpmath interval residual, at an exactly dyadic center."""
++import mpmath as mp
++import numpy as np,json,time
++from pathlib import Path
++from fractions import Fraction
++from interval_check import GN,P,ET,neighbor,I,rowsup
++mp.iv.dps=80
++iv=mp.iv;ROOT=Path(__file__).parent
++
++def exact(x):
++ f=Fraction(float(x)) if isinstance(x,(float,np.floating)) else Fraction(x)
++ return iv.mpf(f.numerator)/f.denominator
++
++def inverse4(M):
++ n=4;W=iv.matrix(n,2*n)
++ for i in range(n):
++  for j in range(n):W[i,j]=M[i,j];W[i,n+j]=int(i==j)
++ for k in range(n):
++  piv=W[k,k]
++  if piv.a<=0<=piv.b:raise ArithmeticError('zero pivot interval')
++  rr=[W[k,j]/piv for j in range(2*n)]
++  for j in range(2*n):W[k,j]=rr[j]
++  for i in range(n):
++   if i==k:continue
++   c=W[i,k]
++   for j in range(2*n):W[i,j]=W[i,j]-c*rr[j]
++ return W[:,n:]
++
++def endpoint_frac(ep):
++ sign,man,ex,bc=ep
++ return (-1 if sign else 1)*Fraction(int(man))*(Fraction(2)**int(ex))
++
++def to_I(vals):
++ lo=[];hi=[]
++ for x in vals:
++  lq,hq=map(endpoint_frac,x._mpi_)
++  lv,hv=float(lq),float(hq)
++  if Fraction(lv)>lq:lv=np.nextafter(lv,-np.inf)
++  if Fraction(hv)<hq:hv=np.nextafter(hv,np.inf)
++  lo.append(lv);hi.append(hv)
++ return I(np.array(lo),np.array(hi))
++
++def residual_interval(A):
++ A=A.reshape(16,24);U={};eye=iv.eye(4);et=iv.matrix(ET.tolist());gens=[iv.matrix(x.tolist()) for x in GN]
++ out=[iv.mpf(0) for _ in range(384)]
++ for m in range(16):
++  for r in range(4):
++   X=iv.zeros(4)
++   for k in range(6):X+=exact(A[m,6*r+k])*gens[k]
++   S=inverse4(eye-X/2);u=S*(eye+X/2);ds=[S*g*S for g in gens]
++   U[m,r,1]=(u,ds);U[m,r,-1]=(et*u.T*et,[et*d.T*et for d in ds])
++ cos=[1,0,-1,0]
++ for m in range(16):
++  x,y=divmod(m,4);f=exact(Fraction(1)+Fraction(cos[x],100)+Fraction(cos[y],1000));ee=[iv.mpf(1),iv.mpf(1),f,f]
++  for r,s in P:
++   other=[i for i in range(4) if i not in (r,s)];coef=ee[other[0]]*ee[other[1]]/2
++   ids=[(m,r,1),(neighbor(m,r,4),s,1),(neighbor(m,s,4),r,-1),(m,s,-1)]
++   for sg,ls in [(1,ids),(-1,[(k,a,-z) for k,a,z in ids[::-1]])]:
++    fac=[U[k][0] for k in ls];pre=[eye]
++    for z in fac:pre.append(pre[-1]*z)
++    suf=[None]*5;suf[4]=eye
++    for i in range(3,-1,-1):suf[i]=fac[i]*suf[i+1]
++    for i,(k,a,z) in enumerate(ls):
++     pr=pre[i][r:r+1,:];po=suf[i+1][:,s:s+1]
++     for j,d in enumerate(U[k,a,z][1]):out[24*k+6*a+j]+=sg*coef*(pr*d*po)[0,0]
++ return to_I(out)
+diff --git a/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/replay.log b/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/replay.log
+new file mode 100644
+index 0000000..4bc070c
+--- /dev/null
++++ b/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/replay.log
+@@ -0,0 +1,51 @@
++hessian site 0
++hessian site 1
++hessian site 2
++hessian site 3
++hessian site 4
++hessian site 5
++hessian site 6
++hessian site 7
++hessian site 8
++hessian site 9
++hessian site 10
++hessian site 11
++hessian site 12
++hessian site 13
++hessian site 14
++hessian site 15
++hessian site 0
++hessian site 1
++hessian site 2
++hessian site 3
++hessian site 4
++hessian site 5
++hessian site 6
++hessian site 7
++hessian site 8
++hessian site 9
++hessian site 10
++hessian site 11
++hessian site 12
++hessian site 13
++hessian site 14
++hessian site 15
++EXACT ROOT {'radius': 2.2737367544323206e-13, 'contraction_upper': 1.232213056621168e-06, 'displacement_upper': 1.7129739995119345e-18, 'image_radius_upper': 1.9931468111250295e-18, 'variables': 384, 'all_connection_rows': 6144, 'test': 'strict outward Banach enclosure'}
++BLOCH 0 0 eta 3.574403742699774e-06 inverse norm bound 42086.76391795605
++BLOCH 0 1 eta 5.096982999515847e-07 inverse norm bound 5480.770530740964
++BLOCH 0 2 eta 5.034690546784476e-06 inverse norm bound 63601.799926074455
++BLOCH 0 3 eta 5.096982999515847e-07 inverse norm bound 5480.770530740964
++BLOCH 1 0 eta 3.386763625810448e-07 inverse norm bound 3785.3779410291563
++BLOCH 1 1 eta 0.0007510706881723443 inverse norm bound 7813789.387831605
++BLOCH 1 2 eta 1.738015597908691e-07 inverse norm bound 1863.5979545121186
++BLOCH 1 3 eta 5.080588342310781e-06 inverse norm bound 50515.597028489996
++BLOCH 2 0 eta 1.9022421288241149e-06 inverse norm bound 24584.87827686763
++BLOCH 2 1 eta 3.7937726409245616e-07 inverse norm bound 4093.1163162868966
++BLOCH 2 2 eta 3.4310676789662583e-06 inverse norm bound 42133.78168303846
++BLOCH 2 3 eta 3.7937726409245616e-07 inverse norm bound 4093.1163162868966
++BLOCH 3 0 eta 3.386763625810448e-07 inverse norm bound 3785.3779410291563
++BLOCH 3 1 eta 5.080588342310781e-06 inverse norm bound 50515.597028489996
++BLOCH 3 2 eta 1.738015597908691e-07 inverse norm bound 1863.5979545121186
++BLOCH 3 3 eta 0.0007510706881723443 inverse norm bound 7813789.387831605
++FULL PASS 15931462.919009278
++PASS_FINITE_FULL_4D_SHEET 56 named structural conditions; interval gates separately in receipt
+diff --git a/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/symbol.py b/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/symbol.py
+new file mode 100644
+index 0000000..11c52b9
+--- /dev/null
++++ b/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/symbol.py
+@@ -0,0 +1,30 @@
++from itertools import combinations
++import sympy as s
++PAIR=list(combinations(range(4),2)); eta=s.diag(1,-1,-1,-1)
++GEN=[]
++for i in (1,2,3):
++ X=s.zeros(4); X[0,i]=X[i,0]=1; GEN.append(X)
++for i,j in ((1,2),(1,3),(2,3)):
++ X=s.zeros(4);X[i,j]=1;X[j,i]=-1;GEN.append(X)
++G2=s.diag(*(eta[a,a]*eta[b,b] for a,b in PAIR));STAR=s.zeros(6)
++for p,(q,sg) in {(0,1):((2,3),-1),(0,2):((1,3),1),(0,3):((1,2),-1),(1,2):((0,3),1),(1,3):((0,2),-1),(2,3):((0,1),1)}.items(): STAR[PAIR.index(q),PAIR.index(p)]=sg
++
++def wedge(u,v):return s.Matrix([u[a]*v[b]-u[b]*v[a] for a,b in PAIR])
++def symbol(E,z):
++ result=s.zeros(24)
++ for r,ss in PAIR:
++  u,v=[i for i in range(4) if i not in (r,ss)]; seq=[r,ss,u,v]
++  sg=(-1)**sum(seq[i]>seq[j] for i,j in combinations(range(4),2))
++  pairing=sg*wedge(E[:,u],E[:,v]).T*G2*STAR
++  bf=s.zeros(6)
++  for i,xi in enumerate(GEN):
++   for j,xj in enumerate(GEN):
++    yy=(xi*xj-xj*xi)*eta
++    bf[i,j]=(pairing*s.Matrix([yy[a,b] for a,b in PAIR]))[0]
++  roles=[r,ss,r,ss];direct=[s.S.One,z[r],-z[ss],-s.S.One];inverse=[s.S.One,1/z[r],-1/z[ss],-s.S.One]
++  rf=s.zeros(4)
++  for i,j in combinations(range(4),2):
++   rf[roles[i],roles[j]]+=direct[i]*inverse[j]/2
++   rf[roles[j],roles[i]]-=inverse[i]*direct[j]/2
++  result+=s.kronecker_product(rf,bf)
++ return result.applyfunc(s.expand).T
+diff --git a/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/validation.json b/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/validation.json
+new file mode 100644
+index 0000000..02c8168
+--- /dev/null
++++ b/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/validation.json
+@@ -0,0 +1,260 @@
++{
++  "structure": {
++    "exact_structural_checks": 51,
++    "checks": [
++      "upstream_alias_reproduced",
++      "independent_interval_endpoint_storage",
++      "exact_rational_enclosure_1/100",
++      "exact_rational_enclosure_1/1000",
++      "exact_rational_enclosure_-1/3",
++      "all_Lorentz_generators",
++      "star_square",
++      "root_dimension",
++      "all_4D_links_retained",
++      "all_metric_slots_retained",
++      "literal_face_coefficient_(0, 1)",
++      "literal_face_coefficient_(0, 2)",
++      "literal_face_coefficient_(0, 3)",
++      "literal_face_coefficient_(1, 2)",
++      "literal_face_coefficient_(1, 3)",
++      "literal_face_coefficient_(2, 3)",
++      "flat_full_hessian_is_symmetric",
++      "flat_zero_frequency_det",
++      "real_transverse_resonance_I",
++      "real_transverse_resonance_-I",
++      "two_invariant_jacobian_identity",
++      "two_coordinate_invariant_rank",
++      "third_derivative_stencil_budget",
++      "mixed_stencil_budget",
++      "coframe_forcing_budget",
++      "full_4D_parameter_contraction",
++      "full_4D_parameter_self_mapping",
++      "BLAS_error_factor_proved",
++      "flat_exact_quarter_coefficients_(0, 0)",
++      "flat_exact_quarter_coefficients_(1, 0)",
++      "flat_exact_quarter_coefficients_(-1, 0)",
++      "flat_exact_quarter_coefficients_(0, 1)",
++      "flat_exact_quarter_coefficients_(0, -1)",
++      "flat_exact_quarter_coefficients_(-1, 1)",
++      "flat_exact_quarter_coefficients_(1, -1)",
++      "literal_full_Bloch_placement_(0, 0)",
++      "literal_full_Bloch_placement_(0, 1)",
++      "literal_full_Bloch_placement_(0, 2)",
++      "literal_full_Bloch_placement_(0, 3)",
++      "literal_full_Bloch_placement_(1, 0)",
++      "literal_full_Bloch_placement_(1, 1)",
++      "literal_full_Bloch_placement_(1, 2)",
++      "literal_full_Bloch_placement_(1, 3)",
++      "literal_full_Bloch_placement_(2, 0)",
++      "literal_full_Bloch_placement_(2, 1)",
++      "literal_full_Bloch_placement_(2, 2)",
++      "literal_full_Bloch_placement_(2, 3)",
++      "literal_full_Bloch_placement_(3, 0)",
++      "literal_full_Bloch_placement_(3, 1)",
++      "literal_full_Bloch_placement_(3, 2)",
++      "literal_full_Bloch_placement_(3, 3)"
++    ],
++    "old_interval_alias_reproduced": true
++  },
++  "scope": "FINITE_L4_OPEN_FULL_4D_CONNECTION_SHEET_NOT_FULL_GR",
++  "interval": {
++    "status": "PASS_EXACT_TWO_COORDINATE_ROOT_AND_FULL_4D_NONDEGENERACY",
++    "root": {
++      "radius": 2.2737367544323206e-13,
++      "contraction_upper": 1.232213056621168e-06,
++      "displacement_upper": 1.7129739995119345e-18,
++      "image_radius_upper": 1.9931468111250295e-18,
++      "variables": 384,
++      "all_connection_rows": 6144,
++      "test": "strict outward Banach enclosure"
++    },
++    "blocks": [
++      {
++        "q0": 0,
++        "q3": 0,
++        "rows": 384,
++        "defect_infinity_upper": 3.574403742699774e-06,
++        "inverse_norm_upper": 42086.76391795605
++      },
++      {
++        "q0": 0,
++        "q3": 1,
++        "rows": 384,
++        "defect_infinity_upper": 5.096982999515847e-07,
++        "inverse_norm_upper": 5480.770530740964
++      },
++      {
++        "q0": 0,
++        "q3": 2,
++        "rows": 384,
++        "defect_infinity_upper": 5.034690546784476e-06,
++        "inverse_norm_upper": 63601.799926074455
++      },
++      {
++        "q0": 0,
++        "q3": 3,
++        "rows": 384,
++        "defect_infinity_upper": 5.096982999515847e-07,
++        "inverse_norm_upper": 5480.770530740964
++      },
++      {
++        "q0": 1,
++        "q3": 0,
++        "rows": 384,
++        "defect_infinity_upper": 3.386763625810448e-07,
++        "inverse_norm_upper": 3785.3779410291563
++      },
++      {
++        "q0": 1,
++        "q3": 1,
++        "rows": 384,
++        "defect_infinity_upper": 0.0007510706881723443,
++        "inverse_norm_upper": 7813789.387831605
++      },
++      {
++        "q0": 1,
++        "q3": 2,
++        "rows": 384,
++        "defect_infinity_upper": 1.738015597908691e-07,
++        "inverse_norm_upper": 1863.5979545121186
++      },
++      {
++        "q0": 1,
++        "q3": 3,
++        "rows": 384,
++        "defect_infinity_upper": 5.080588342310781e-06,
++        "inverse_norm_upper": 50515.597028489996
++      },
++      {
++        "q0": 2,
++        "q3": 0,
++        "rows": 384,
++        "defect_infinity_upper": 1.9022421288241149e-06,
++        "inverse_norm_upper": 24584.87827686763
++      },
++      {
++        "q0": 2,
++        "q3": 1,
++        "rows": 384,
++        "defect_infinity_upper": 3.7937726409245616e-07,
++        "inverse_norm_upper": 4093.1163162868966
++      },
++      {
++        "q0": 2,
++        "q3": 2,
++        "rows": 384,
++        "defect_infinity_upper": 3.4310676789662583e-06,
++        "inverse_norm_upper": 42133.78168303846
++      },
++      {
++        "q0": 2,
++        "q3": 3,
++        "rows": 384,
++        "defect_infinity_upper": 3.7937726409245616e-07,
++        "inverse_norm_upper": 4093.1163162868966
++      },
++      {
++        "q0": 3,
++        "q3": 0,
++        "rows": 384,
++        "defect_infinity_upper": 3.386763625810448e-07,
++        "inverse_norm_upper": 3785.3779410291563
++      },
++      {
++        "q0": 3,
++        "q3": 1,
++        "rows": 384,
++        "defect_infinity_upper": 5.080588342310781e-06,
++        "inverse_norm_upper": 50515.597028489996
++      },
++      {
++        "q0": 3,
++        "q3": 2,
++        "rows": 384,
++        "defect_infinity_upper": 1.738015597908691e-07,
++        "inverse_norm_upper": 1863.5979545121186
++      },
++      {
++        "q0": 3,
++        "q3": 3,
++        "rows": 384,
++        "defect_infinity_upper": 0.0007510706881723443,
++        "inverse_norm_upper": 7813789.387831605
++      }
++    ],
++    "full_connection_dimension": 6144,
++    "full_coframe_parameter_dimension": 4096,
++    "full_metric_parameter_dimension": 2560,
++    "full_inverse_infinity_upper": 15931462.919009278,
++    "mesh": 4,
++    "physical_GR_closed": false,
++    "all_mesh_uniformity_claimed": false,
++    "new_Lean_compilation": false,
++    "interval_endpoint_aliasing_fixed": true
++  },
++  "curvature": {
++    "component": [
++      0.027370326811734576,
++      0.02737032681363493
++    ],
++    "all_state_energetic_stability_claimed": false
++  },
++  "final_checks": [
++    "upstream_alias_reproduced",
++    "independent_interval_endpoint_storage",
++    "exact_rational_enclosure_1/100",
++    "exact_rational_enclosure_1/1000",
++    "exact_rational_enclosure_-1/3",
++    "all_Lorentz_generators",
++    "star_square",
++    "root_dimension",
++    "all_4D_links_retained",
++    "all_metric_slots_retained",
++    "literal_face_coefficient_(0, 1)",
++    "literal_face_coefficient_(0, 2)",
++    "literal_face_coefficient_(0, 3)",
++    "literal_face_coefficient_(1, 2)",
++    "literal_face_coefficient_(1, 3)",
++    "literal_face_coefficient_(2, 3)",
++    "flat_full_hessian_is_symmetric",
++    "flat_zero_frequency_det",
++    "real_transverse_resonance_I",
++    "real_transverse_resonance_-I",
++    "two_invariant_jacobian_identity",
++    "two_coordinate_invariant_rank",
++    "third_derivative_stencil_budget",
++    "mixed_stencil_budget",
++    "coframe_forcing_budget",
++    "full_4D_parameter_contraction",
++    "full_4D_parameter_self_mapping",
++    "BLAS_error_factor_proved",
++    "flat_exact_quarter_coefficients_(0, 0)",
++    "flat_exact_quarter_coefficients_(1, 0)",
++    "flat_exact_quarter_coefficients_(-1, 0)",
++    "flat_exact_quarter_coefficients_(0, 1)",
++    "flat_exact_quarter_coefficients_(0, -1)",
++    "flat_exact_quarter_coefficients_(-1, 1)",
++    "flat_exact_quarter_coefficients_(1, -1)",
++    "literal_full_Bloch_placement_(0, 0)",
++    "literal_full_Bloch_placement_(0, 1)",
++    "literal_full_Bloch_placement_(0, 2)",
++    "literal_full_Bloch_placement_(0, 3)",
++    "literal_full_Bloch_placement_(1, 0)",
++    "literal_full_Bloch_placement_(1, 1)",
++    "literal_full_Bloch_placement_(1, 2)",
++    "literal_full_Bloch_placement_(1, 3)",
++    "literal_full_Bloch_placement_(2, 0)",
++    "literal_full_Bloch_placement_(2, 1)",
++    "literal_full_Bloch_placement_(2, 2)",
++    "literal_full_Bloch_placement_(2, 3)",
++    "literal_full_Bloch_placement_(3, 0)",
++    "literal_full_Bloch_placement_(3, 1)",
++    "literal_full_Bloch_placement_(3, 2)",
++    "literal_full_Bloch_placement_(3, 3)",
++    "nonzero_curvature_at_exact_anchor",
++    "all_Bloch_modes_checked",
++    "interval_root_complete",
++    "all_blocks_strict",
++    "no_false_GR_promotion"
++  ]
++}
+diff --git a/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/verify.py b/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/verify.py
+new file mode 100644
+index 0000000..c2f8f91
+--- /dev/null
++++ b/02_REGISTRY/research/sources/d0_full_four_dimensional_sheet_2026-10-15/verify.py
+@@ -0,0 +1,109 @@
++"""Reproduce exact structure, outward root and ALL full-4D inverse blocks.
++Run with Python or Python -O. JAX is not a proof dependency.
++"""
++from pathlib import Path
++import argparse,json,hashlib
++from fractions import Fraction
++import numpy as np
++import sympy as s
++from interval_check import I,rational,setup,neighbor,ET,ROOT
++from symbol import PAIR,eta,GEN,G2,STAR,wedge,symbol
++CHECKS=[]
++def ck(name,yes):
++ if not bool(yes):raise AssertionError(name)
++ CHECKS.append(name)
++
++def kernel():
++ # This reproduces the concrete upstream bug instead of merely tagging it.
++ class Old:
++  def __init__(self,l,h=None):self.l=np.asarray(l,float);self.h=np.asarray(l if h is None else h,float)
++ old=Old(np.zeros(1));old.l[0]=-1;old.h[0]=1
++ ck('upstream_alias_reproduced',old.l[0]==1 and np.shares_memory(old.l,old.h))
++ new=I(np.zeros(1));new.l[0]=-1;new.h[0]=1
++ ck('independent_interval_endpoint_storage',new.l[0]==-1 and not np.shares_memory(new.l,new.h))
++ for q in [Fraction(1,100),Fraction(1,1000),Fraction(-1,3)]:
++  z=rational(q);ck('exact_rational_enclosure_'+str(q),Fraction(float(z.l))<=q<=Fraction(float(z.h)))
++ ck('all_Lorentz_generators',all(X.T*eta+eta*X==s.zeros(4) for X in GEN))
++ ck('star_square',STAR*STAR==-s.eye(6))
++ ck('root_dimension',np.array(json.load(open(ROOT/'center.json'))).shape==(384,))
++ ck('all_4D_links_retained',16*384==24*4**4==6144)
++ ck('all_metric_slots_retained',10*4**4==2560)
++ for r,t in PAIR:
++  u,v=[a for a in range(4) if a not in (r,t)];seq=[r,t,u,v]
++  sg=(-1)**sum(seq[i]>seq[j] for i in range(4) for j in range(i+1,4))
++  w=sg*wedge(s.eye(4)[:,u],s.eye(4)[:,v]).T*G2*STAR
++  ck('literal_face_coefficient_'+str((r,t)),w[PAIR.index((r,t))]*eta[t,t]==1)
++ H=symbol(s.eye(4),[s.S.One]*4)
++ ck('flat_full_hessian_is_symmetric',H==H.T)
++ ck('flat_zero_frequency_det',H.det()==256)
++ for z in [s.I,-s.I]:
++  R=symbol(s.eye(4),[s.S.One,s.I,z,s.S.One]);ck('real_transverse_resonance_'+str(z),R.rank()==22)
++ # Independent closed formulas for genuine two-coordinate scalar curvature jets.
++ a,b=s.symbols('a b',real=True)
++ JJ=s.Matrix([[4*a*(a*a-2*b*b+1),2*b*(2*a*a-4*b*b+1)],
++   [4*a*(2*a**4-3*a*a*b*b+a*a+4*b**4-b*b),4*b*(2*a**4-3*a*a*b*b+a*a+4*b**4-b*b)]])
++ det=s.factor(JJ.det());target=8*a*b*(2*a**4-3*a*a*b*b+a*a+4*b**4-b*b)
++ ck('two_invariant_jacobian_identity',s.expand(det-target)==0)
++ ck('two_coordinate_invariant_rank',det.subs({a:s.Rational(1,100),b:s.Rational(1,1000)})==s.Rational(12377463,1562500000000000))
++ # Full IFT neighbourhood, conservative but explicit; no sampled L->infinity.
++ ck('third_derivative_stencil_budget',19008*48*6<2**23)
++ ck('mixed_stencil_budget',768*48*6<2**18)
++ ck('coframe_forcing_budget',32*48*6<2**14)
++ rho=Fraction(1,2**52);eps=Fraction(1,2**92);M=2**24
++ q=M*(2**23*rho+2**18*eps);d=M*2**14*eps
++ ck('full_4D_parameter_contraction',q<Fraction(1,16))
++ ck('full_4D_parameter_self_mapping',d+q*rho<rho)
++ # gamma bound used for large complex final interval products.
++ n=512;u=Fraction(1,2**53);k=8*n+32;gamma=k*u/(1-k*u)
++ from blas_bounds import GAMMA
++ ck('BLAS_error_factor_proved',gamma<Fraction.from_float(GAMMA))
++ flat_bloch_checks()
++ return {'exact_structural_checks':len(CHECKS),'checks':CHECKS.copy(),'old_interval_alias_reproduced':True}
++
++def flat_bloch_checks():
++ # Independent coefficient check against the literal owner's polarized symbol.
++ import interval_check as mod
++ from full_bloch_verify import assemble
++ old=mod.frame_f
++ mod.frame_f=lambda n,L=4:I(1)
++ try:H,bb=mod.hessian_enclosure(np.zeros((16,24)),0.,True)
++ finally:mod.frame_f=old
++ exact={}
++ for ij,m in bb.items():
++  q=np.rint(4*(m.l/2+m.h/2))/4
++  ck('flat_exact_quarter_coefficients_'+str(ij),np.all(m.l<=q) and np.all(q<=m.h))
++  exact[ij]=q
++ z=s.symbols('z0:4',nonzero=True)
++ hz=s.lambdify(z,symbol(s.eye(4),z),'numpy')
++ xy=[divmod(n,4) for n in range(16)]
++ for k0 in range(4):
++  for k3 in range(4):
++   k1=(k0+1)%4;k2=(k3+2)%4
++   mat=sum(((1j)**(k0*i+k3*j))*m for (i,j),m in exact.items())
++   phase=np.array([(1j)**(k1*x+k2*y) for x,y in xy])
++   actual=np.einsum('iajb,j->iab',mat.reshape(16,24,16,24),phase)
++   expected=phase[:,None,None]*hz(*[(1j)**k for k in (k0,k1,k2,k3)])[None,:,:]
++   ck('literal_full_Bloch_placement_'+str((k0,k3)),np.array_equal(actual,expected))
++
++def curvature():
++ A=np.array(json.load(open(ROOT/'center.json'))).reshape(16,24);U=setup(A,2.**-42);et=I(ET)
++ r,t=1,2;m=0
++ P=U[m,r,1][0]@U[neighbor(m,r,4),t,1][0]@U[neighbor(m,t,4),r,-1][0]@U[m,t,-1][0]
++ C=(P-et@P.T@et)*.5
++ ck('nonzero_curvature_at_exact_anchor',float(C.l[1,2])>.027 and float(C.h[1,2])<.028)
++ return {'component':[float(C.l[1,2]),float(C.h[1,2])],'all_state_energetic_stability_claimed':False}
++
++def main():
++ ap=argparse.ArgumentParser();ap.add_argument('--kernel-only',action='store_true');ap.add_argument('--write',action='store_true');args=ap.parse_args()
++ result={'structure':kernel(),'scope':'FINITE_L4_OPEN_FULL_4D_CONNECTION_SHEET_NOT_FULL_GR'}
++ if not args.kernel_only:
++  from full_bloch_verify import run
++  result['interval']=run(write=args.write);result['curvature']=curvature()
++  ck('all_Bloch_modes_checked', {(x['q0'],x['q3']) for x in result['interval']['blocks']}=={(i,j) for i in range(4) for j in range(4)})
++  ck('interval_root_complete',result['interval']['root']['contraction_upper']<2e-6)
++  ck('all_blocks_strict',all(x['defect_infinity_upper']<1e-3 for x in result['interval']['blocks']))
++  ck('no_false_GR_promotion',result['interval']['physical_GR_closed'] is False and result['interval']['all_mesh_uniformity_claimed'] is False)
++  result['final_checks']=CHECKS.copy()
++  if args.write:(ROOT/'validation.json').write_text(json.dumps(result,indent=2)+'\n')
++ print('PASS_FINITE_FULL_4D_SHEET',len(CHECKS),'named structural conditions; interval gates separately in receipt')
++if __name__=='__main__':main()

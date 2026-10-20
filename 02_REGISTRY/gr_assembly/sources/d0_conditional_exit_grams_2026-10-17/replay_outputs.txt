@@ -1,0 +1,23 @@
+Replay source: PR #363 head 33911defe1607b94a895b455d3357ad2f3039e12
+Environment: Python 3.9.6, NumPy 2.0.2, SciPy 1.13.1
+Only normal-mode runs counted; optimized Python disables assert statements used by these checkers.
+
+$ python3 check_serial_gram.py
+exit=0
+PASS: noncommuting 16x16 complete source tangent check, max error 1.0358204224902856e-10
+PASS: comparator singular values in (0,1], interval 0.9439872051043273 0.969606467897114
+PASS: exact IR jet weights b=1,d=1: endpoints=3/4 each, bridge=-1/2; ratio=3/2
+PASS: exact static IR coefficient b=1,d=1/2: 2/3 target
+RuntimeWarning lines: 30; categories: divide by zero encountered in matmul, invalid value encountered in matmul, overflow encountered in matmul
+
+$ python3 check_orthogonal_exit.py
+exit=0
+PASS: complete-exit tagged 16x16 Gram and cross, singular values 0.428133963..0.461085474
+PASS: independent noncommuting first source max abs error 1.72e-10
+PASS: IR Einstein a2 weights (spatial0,spatial1,4D)=(1,1,-1)
+PASS: volume a0 total=3/2 (separate source, not hidden)
+RuntimeWarning lines: 42; categories: divide by zero encountered in matmul, invalid value encountered in matmul, overflow encountered in matmul
+
+Parent comparison: current #334 head 0e1849bd7bf6a87e9731801206fd5ccd1041bb63; common ancestor ba055b63f01c43bf01118ef4d2f155e907dd912d; PR #363 target base ref 8050cefe2600972408a904c3004d85a0a7720c68.
+The four child-added files are absent from current #334.
+GitHub guards for #363 fail at PR metadata validation before scientific acceptance: missing exactly one Repository line.

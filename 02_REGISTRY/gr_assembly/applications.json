@@ -1,0 +1,2349 @@
+{
+  "schema": "d0-gr-applications/1",
+  "results": [
+    {
+      "id": "normal-chart-estimator",
+      "owner": "existing CONTROL/main research owner",
+      "statement": "The centered normal-chart estimator reconstructs -2G with O(epsilon_N^2) for the stated smooth Lorentz inputs.",
+      "interface": "normal-chart-estimator-v1",
+      "outcome": "positive",
+      "kind": "analytic",
+      "scope_level": "family",
+      "hypotheses": {},
+      "evidence": [
+        {
+          "ref": "77d3ab6059bd1a3ce48637b97b9f30aa8825fc5f",
+          "path": "02_REGISTRY/research/ATORUS_NORMAL_JET_EINSTEIN_BRIDGE.md",
+          "sha256": "ad1a72868ca3122314661695943664a5e4f7377413b416c3ccef43ea2ad531b6"
+        }
+      ],
+      "reported_state": "ACCEPT AS RESEARCH / NORMAL-JET-EINSTEIN-ESTIMATOR-REACHED"
+    },
+    {
+      "id": "metric-provenance",
+      "owner": "existing CONTROL/main research owner",
+      "statement": "The selected nondegenerate star-action quotient has Q=Theta eta Theta^T and the owned Einstein flat metric tangent.",
+      "interface": "star-metric-v1",
+      "outcome": "positive",
+      "kind": "analytic",
+      "scope_level": "family",
+      "hypotheses": {},
+      "evidence": [
+        {
+          "ref": "77d3ab6059bd1a3ce48637b97b9f30aa8825fc5f",
+          "path": "02_REGISTRY/research/MEMO_A4D_NONLINEAR_EINSTEIN_J2_BRIDGE.md",
+          "sha256": "ce56193edac787640840921310d265e5ebb5a0bd4d628414109dacaa6836b7bc"
+        }
+      ],
+      "reported_state": "Main-owned metric provenance; global all-mode elimination remains obstructed."
+    },
+    {
+      "id": "smooth-parametrix",
+      "owner": "existing CONTROL/main research owner",
+      "statement": "The fixed smooth realization has the stated Fourier-tail, normal-center and IR parametrix controls; exact coupled normal rescue remains open.",
+      "interface": "star-metric-v1",
+      "outcome": "positive",
+      "kind": "analytic",
+      "scope_level": "family",
+      "hypotheses": {},
+      "evidence": [
+        {
+          "ref": "77d3ab6059bd1a3ce48637b97b9f30aa8825fc5f",
+          "path": "02_REGISTRY/research/MEMO_A4D_J2_SMOOTH_RESONANCE_CLOSURE.md",
+          "sha256": "3ba0c4355999b147bc77048b082660558c538c48d49ef7fff98d4541069bf28a"
+        }
+      ],
+      "reported_state": "PARTIAL / refinement-uniform full coupled stationary estimate unresolved"
+    },
+    {
+      "id": "phase-count-counterexample",
+      "owner": "existing CONTROL/main research owner",
+      "statement": "At (-1,-1,i,i) the actual character Hessian has exact rank 22 and nullity 2, refuting the proposed phase-count rule which predicts 4.",
+      "interface": "resonance-divisor-v1",
+      "outcome": "negative",
+      "kind": "exact-finite",
+      "scope_level": "finite",
+      "hypotheses": {},
+      "evidence": [
+        {
+          "ref": "77d3ab6059bd1a3ce48637b97b9f30aa8825fc5f",
+          "path": "02_REGISTRY/research/A4D_RESONANCE_DIVISOR_RANK_LAW.md",
+          "sha256": "2a688da86de46be7c2220b8a1fe00e13d8e9b5535805ed59c9052823db5cfd8e"
+        }
+      ],
+      "reported_state": "Exact finite counterexample on main; full divisor classification remains open."
+    },
+    {
+      "id": "endpoint-probe-law",
+      "owner": "registered native response research owner #334",
+      "statement": "Under the named endpoint hypotheses, the finite action contrast reconstructs the geometric Einstein observable with O(h/epsilon+epsilon^2), hence O(h^(2/3)) at epsilon=h^(1/3).",
+      "interface": "endpoint-probe-v1",
+      "outcome": "positive",
+      "kind": "analytic",
+      "scope_level": "family",
+      "hypotheses": {
+        "metric_pencil": "One fixed smooth periodic oriented/time-oriented nondegenerate metric, smooth solder and smooth symmetric probe in a compact Gram section.",
+        "endpoint_domain": "h=1/L, L in 4N; endpoint log bounds Rh and all 24 physical Euler residual bounds Mh^2, for fixed R,M.",
+        "literal_action": "The unchanged literal naked-star counting action and the owner curvature/index/density convention."
+      },
+      "evidence": [
+        {
+          "ref": "180ddd187b76035b83ba784ce3c0844f3192ba7d",
+          "path": "02_REGISTRY/research/A4D_NATIVE_FINITE_PROBE_COMPLETION.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/finite_probe_completion.md",
+          "sha256": "77079fb2fa8da001ca259ebef432ae7001a15d18f73cde04b8ba3380b9b1cbcf"
+        }
+      ],
+      "reported_state": "Published analytic observable theorem; native admission and the original raw terminal remain open."
+    },
+    {
+      "id": "brinkmann-j2-null-family",
+      "owner": "Open scientific integrator PR #334; pinned evidence commit 9cd16820d020aed107b6db6215c44cfe3b7ea6f2",
+      "statement": "On the declared six-plaquette Lorentz-star Brinkmann family, the unrestricted 16+24 geometric Euler rows reduce exactly to three rows; the two link rows force the one-u-step connection, leaving a transverse Poisson equation. Composing the owned corrected two-tick Golden AF×scene Book03 J2 null source gives the stated finite roots and smooth Einstein-scalar Brinkmann family.",
+      "interface": "brinkmann-j2-v1",
+      "outcome": "positive",
+      "kind": "analytic",
+      "scope_level": "family",
+      "hypotheses": {
+        "geometric_carrier": "Independent H(u,x,y) at lattice sites; original six based plaquettes; independent full 16+24 field variations; fixed transverse collar.",
+        "constructed_price": "The matter coupling is the corrected two-tick Golden AF×scene Book03 J2, not an action shown to be compulsory in foundational D0.",
+        "matter_sector": "The source applies to the declared scalar/top CAR16 null histories with E(u)=|D_u+Psi(u)|^2, not arbitrary full-CAR16 stress tensors.",
+        "refinement_domain": "Smooth local unwrapped-u profiles and bounded transverse Dirichlet data; exact periodic-u roots are an explicit antipodal subfamily."
+      },
+      "evidence": [
+        {
+          "ref": "9cd16820d020aed107b6db6215c44cfe3b7ea6f2",
+          "path": "02_REGISTRY/research/A4D_ARBITRARY_BRINKMANN_ALL40_CARTAN_DISCRETE_EINSTEIN_2026_10_19.md",
+          "sha256": "8dbca8ff9a4567a2baf216357b5d3ffa2d217281ced4e5d0e535257db2f5e83e"
+        },
+        {
+          "ref": "9cd16820d020aed107b6db6215c44cfe3b7ea6f2",
+          "path": "02_REGISTRY/research/sources/d0_arbitrary_brinkmann_all40_2026-10-19/check_all40_arbitrary_brinkmann.py",
+          "sha256": "d3d0b1bc92c25a0963a4ba851d9d587d2191f0bbd8cd8cd0ab58b664852b7026"
+        },
+        {
+          "ref": "9cd16820d020aed107b6db6215c44cfe3b7ea6f2",
+          "path": "02_REGISTRY/research/sources/d0_arbitrary_brinkmann_all40_2026-10-19/check_time_dependent_golden_source.py",
+          "sha256": "c89c690f54f11e166dd1a9a6315c80da5089659598f943aef03d3732f71a2d98"
+        }
+      ],
+      "reported_state": "At pinned #334 evidence commit 9cd16820, independent replays pass: the original unrestricted 16+24 variation gives exactly three rows and one arbitrary-site discrete Poisson equation with the link stagger forced; arbitrary cubic and corrected quartic harmonics pass. The L=4/L=8 complete constructed AF×scene J2 checks have Poisson residuals 1.28e-15/5.87e-15 and full-source residuals 2.55e-15/2.35e-14. This is a mathematical constructed-price family only: compulsory full D0 selection, preparation/clock/controller and raw #216 remain open; no GR application is accepted."
+    },
+    {
+      "id": "opposite-null-julia-order-memory",
+      "owner": "registered native response research owner #334",
+      "statement": "Two opposite null families span the proper Lorentz algebra; a complete positive Julia/CAR16 test has full-rank six-generator response and detects noncommuting AB-versus-BA order with a nonzero conditional Golden mean-information first source.",
+      "interface": "opposite-null-order-memory-v1",
+      "outcome": "positive",
+      "kind": "exact-finite",
+      "scope_level": "finite",
+      "hypotheses": {
+        "lorentz_chart": "The original real null basis and CAR16 exterior representation are used, with ||X||_2<=1/10; the result is a local finite-dimensional test.",
+        "complete_instrument": "Each ordered link uses a distinct fresh retained Julia flag; the fixed 13-outcome POVM and every failure branch are retained. Reusing one flag has the certified 3/4 I identity-point defect.",
+        "book_source": "The nonzero mean-Shannon source is conditional on the stated registered Golden p,p^2 pointer branch and same-history probability binding; it is not established for literal fullStep.",
+        "physical_admission": "The native programme has not been shown to select, execute or pay for this tester, its fresh references, flags, preparation and decoder.",
+        "remaining_equations": "No complete H+J+R/preparation/clock/controller source, nonlinear full40 equality, Ward transfer, refinement or raw #216 closure is proved."
+      },
+      "evidence": [
+        {
+          "ref": "a18606f1c9cdcb2aa47dd3619fe4aa657077c47e",
+          "path": "02_REGISTRY/research/A4D_OPPOSITE_NULL_LIE_COMPLETE_JULIA_ORDER_MEMORY_BOOK_SOURCE_2026_10_19.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_opposite_null_julia_order_memory_2026-10-19/theorem.md",
+          "sha256": "acc07f37a16ec5aa99421252f49fd1b7a08b61d3f0f47e46a48c29c069a87463"
+        },
+        {
+          "ref": "a18606f1c9cdcb2aa47dd3619fe4aa657077c47e",
+          "path": "02_REGISTRY/research/sources/d0_opposite_null_julia_order_memory_2026-10-19/check_lorentz_order_memory.py",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_opposite_null_julia_order_memory_2026-10-19/check_lorentz_order_memory.py",
+          "sha256": "48a9692675fbe46c68c4d902d3069ac2c717e2370761508983db2e3245497cb8"
+        }
+      ],
+      "reported_state": "Pinned result-only evidence at #334 head a18606f1. The exact checker replays the rank-six positive response, nonzero order contrasts, reused-flag defect and conditional same-history information source. No application to native-programme-v1 is registered or accepted."
+    },
+    {
+      "id": "two-line-full-julia-car-observability",
+      "owner": "registered native response research owner #334",
+      "statement": "For two specified grade-one probe states in the original CAR16, the existing complete positive Julia GOOD/BAD instrument has an exact nonsingular six-by-six Jacobian from the six original proper-Lorentz directions to six unconditioned CAR response values, with determinant 1/373248.",
+      "interface": "two-line-full-julia-car-v1",
+      "outcome": "positive",
+      "kind": "exact-finite",
+      "scope_level": "finite",
+      "hypotheses": {
+        "local_chart": "The proper-Lorentz transformation lies in the small chart where T=Lambda(U)/2 is a strict contraction; this is local response observability, not a global group inverse.",
+        "probe_states": "The two explicit normalized probes lie in grade one. The result does not establish that D0 selects or prepares them; the full16 operator and its failure complement are retained.",
+        "complete_instrument": "Both the GOOD contraction and the BAD square-root complement are retained; the six responses are unconditioned and do not condition on success.",
+        "measurement_binding": "The six CAR bilinear responses are mathematical detector coordinates. A physically admitted compatible measurement schedule and its recording cost are not proved.",
+        "native_action": "No same-history Cost-Info, controller, clock, work, preparation, oldRIGHT/reference or full H+J+R source identity is derived.",
+        "remaining_equations": "No original 40-row stationary source match, Ward transfer, joint-root refinement, generic matter recovery or raw #216 closure follows."
+      },
+      "evidence": [
+        {
+          "ref": "a66687228405a7cd3feaf6c5781b61f53ebdb7c3",
+          "path": "02_REGISTRY/research/A4D_TWO_LINE_CAR_PROJECTIVE_LORENTZ_BARGMANN_GAUGE_FREE_2026_10_19.md",
+          "sha256": "584cc078382d7f8b6ccdc3017119bfe4617e8138f0177ce2e2c5fa66118e65a7"
+        },
+        {
+          "ref": "a66687228405a7cd3feaf6c5781b61f53ebdb7c3",
+          "path": "02_REGISTRY/research/sources/d0_two_history_phase_2026-10-19/check_native_two_line_projective_lorentz.mjs",
+          "sha256": "33a2fe74e255cbcf0bb0973392480eba9b8578bcf17bb6a743db414fb6e42e0f"
+        }
+      ],
+      "reported_state": "Pinned to #334 head a6668722. The exact dependency-free checker passes the projective rank, gauge-invariant Bargmann phase, CAR bilinear and complete GOOD/BAD Julia response controls. This is a result-only pointer; no native-programme-v1 application is registered or accepted."
+    },
+    {
+      "id": "book-cost-info-boundary",
+      "owner": "registered native response research owner #334",
+      "statement": "On the exact finite K(9,11,13) scene path carrier, the literal all-vertex Info(v) sum with zero singleton action and additive composition forces Info=0; transition-event allocations are additive for every real theta and differ on open paths only by an endpoint coboundary.",
+      "interface": "book-cost-info-boundary-v1",
+      "outcome": "positive",
+      "kind": "lean",
+      "scope_level": "finite",
+      "hypotheses": {
+        "carrier": "The result is on the actual 33-vertex K(9,11,13) scene path carrier: 718 directed edges and 15,708 two-step paths.",
+        "literal_convention": "The displayed sum is read as charging every listed vertex, including endpoints; singleton identity action is zero and the path action is additive under composition.",
+        "transition_convention": "A branch information value is allocated across each transition by w_theta(u,v)=Cost(u,v)-theta*Info(u)-(1-theta)*Info(v).",
+        "physical_binding": "Book/native owners have not selected theta, a branch-to-record-to-Info law, a measured probability binding, or field derivatives of the same complete physical Cost-Info.",
+        "remaining_equations": "No metric source, Ward identity, nonlinear Einstein system, continuum refinement, or original raw #216 result follows."
+      },
+      "evidence": [
+        {
+          "ref": "ae82232e018ffa94515729bdd719858f5a91787f",
+          "path": "02_REGISTRY/research/A4D_NATIVE_COST_INFO_BOUNDARY.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_cost_info_boundary_2026-10-19/theorem.md",
+          "sha256": "993078385389c10fa4f9da38e5e5912f331384d896e78f43713e2fd39ba48246"
+        },
+        {
+          "ref": "ae82232e018ffa94515729bdd719858f5a91787f",
+          "path": "02_REGISTRY/research/A4D_NATIVE_HISTORY_ACTION_BOUNDARY.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_cost_info_boundary_2026-10-19/history_action_boundary.md",
+          "sha256": "3ec95e7fb46b0852bccdf8ab64db322a3faef2b87fa64eacfae01ac161f6c2b7"
+        },
+        {
+          "ref": "ae82232e018ffa94515729bdd719858f5a91787f",
+          "path": "02_REGISTRY/research/certificates/a4d_native_cost_info_boundary.lean",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_cost_info_boundary_2026-10-19/a4d_native_cost_info_boundary.lean",
+          "sha256": "003e648673a1bc7e6e5150be444776687316621923d678099a5eda95e9a2a416"
+        },
+        {
+          "ref": "ae82232e018ffa94515729bdd719858f5a91787f",
+          "path": "02_REGISTRY/research/certificates/a4d_native_cost_info_boundary_check.py",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_cost_info_boundary_2026-10-19/a4d_native_cost_info_boundary_check.py",
+          "sha256": "58428a30a60a8211b31b818659b12ff33de38c41fd9fe53e4f533f66404e1971"
+        },
+        {
+          "ref": "ae82232e018ffa94515729bdd719858f5a91787f",
+          "path": "02_REGISTRY/research/certificates/a4d_native_cost_info_boundary_certificate.json",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_cost_info_boundary_2026-10-19/a4d_native_cost_info_boundary_certificate.json",
+          "sha256": "a3944c0c544624f7cd4dbc99e1fd4f287804a0806859a9e3d84aab5eefd2e789"
+        },
+        {
+          "ref": "ae82232e018ffa94515729bdd719858f5a91787f",
+          "path": "02_REGISTRY/research/certificates/a4d_native_cost_info_boundary_results.json",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_cost_info_boundary_2026-10-19/a4d_native_cost_info_boundary_results.json",
+          "sha256": "286742d3e0201970147ece4ae771f7dc9ea74f0054dbd1b55df5e3e828c2f1ab"
+        },
+        {
+          "ref": "ae82232e018ffa94515729bdd719858f5a91787f",
+          "path": "02_REGISTRY/research/certificates/a4d_native_cost_info_boundary_output.txt",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_cost_info_boundary_2026-10-19/a4d_native_cost_info_boundary_output.txt",
+          "sha256": "7d035a0785d036f402141308b26d1819dad661c35e8d3f5b7a09f6e133fbc127"
+        }
+      ],
+      "reported_state": "Result-only evidence pinned to #334 head ae82232e. The exact finite checker passes; the Lean certificate was compiled from that pinned source using the existing Lean 4.30/Mathlib cache and reports only standard axioms. No application to native-programme-v1 is registered or accepted."
+    },
+    {
+      "id": "book-ordered-memory-positive-readout",
+      "owner": "existing #384 exact finite research result",
+      "statement": "On the original K(9,11,13) scene, two distinct closed nine-edge histories have identical edge and vertex multiplicities, so every primitive scalar Book03 Cost-Info law gives them identical weights and field jets. A conditional proper-Lorentz edge assignment nevertheless yields an exact gauge-invariant Wilson-trace gap and a distinct branch-complete positive Julia/Choi marked-event probability.",
+      "interface": "book-ordered-memory-readout-v1",
+      "outcome": "positive",
+      "kind": "exact-finite",
+      "scope_level": "finite",
+      "hypotheses": {
+        "original_histories": "The two paths are the literal L0L1L2 and L0L2L1 loops on the original 718-edge K(9,11,13) carrier, with identical directed-edge and vertex counts.",
+        "conditional_lorentz_assignment": "The three triangle transports use the stated N2, Nbar3 and J23 matrices; this representation-level assignment is not derived as a native physical compiler.",
+        "complete_positive_readout": "The Julia/Choi tester retains marked success, unmarked success and failure outcomes; it is a conditional mathematical tester, not an admitted D0 operation."
+      },
+      "evidence": [
+        {
+          "ref": "59527d90190b2d03e61047466d5e5dad4fd90568",
+          "path": "02_REGISTRY/research/A4D_BOOK_718_EDGE_SCALAR_HISTORY_ORDER_MEMORY_GAUGE_TRACE_NOGO_2026_10_19.md",
+          "sha256": "bed3f818333a696c9a228266a6481ccbfa05c71fd11dddf824d9e8c657235fe6"
+        },
+        {
+          "ref": "59527d90190b2d03e61047466d5e5dad4fd90568",
+          "path": "02_REGISTRY/research/sources/d0_physical_binary_return_2026-10-19/check_native_book_order_trace_obstruction.py",
+          "sha256": "3e3eef8c1f8ff7f6cebe96b87ca787875840d40cc736ac1232be1cf6b7b3660e"
+        }
+      ],
+      "owners": [
+        "02_REGISTRY/research/A4D_BOOK_718_EDGE_SCALAR_HISTORY_ORDER_MEMORY_GAUGE_TRACE_NOGO_2026_10_19.md",
+        "02_REGISTRY/research/sources/d0_physical_binary_return_2026-10-19/check_native_book_order_trace_obstruction.py"
+      ],
+      "reported_state": "Pinned exact conditional finite result from #384. The source PR reports a passing exact checker; this result does not show that D0 physically admits or pays for the Lorentz representation, and no application to native-programme-v1 is accepted."
+    },
+    {
+      "id": "original-golden-inverse-pf-moving-mean-j2",
+      "owner": "registered native response research owner #334",
+      "statement": "On the unchanged original golden-box addresses with true nonuniform native weights, a specified inverse-PF plus moving-volume-quantile operand of the same two-tick AF×scene Book03 J2 transfers the arbitrary-time Brinkmann roots with exact finite first-source equality and derives a conditional off-null Einstein-scalar mean source.",
+      "interface": "original-golden-mean-j2-v1",
+      "outcome": "positive",
+      "kind": "analytic",
+      "scope_level": "family",
+      "hypotheses": {
+        "geometric_core": "Consumes brinkmann-j2-null-family for the unrestricted six-plaquette 40-to-3-to-1 equations and the corrected two-tick null CAR source.",
+        "original_addresses": "The native exact-cost F/R words keep their original X_w locations and generally unequal positive regular-LEFT counts; the theorem proves all-site support and a uniform inverse-weight bound only along its stated logarithmic depth schedule.",
+        "composite_query": "The source-compatible inverse-PF factors and field-dependent T_{J/V} operand are specified inside the existing J2 law; the off-node interpolation, query execution and its real work/cost must be part of that programme.",
+        "finite_source": "Exact full first-source equality is at the common nonvacuum null/star roots with f=q=0, J=1 and T=id; it is not an off-shell equality of the two query actions. To realize a prescribed smooth Psi(u) exactly at finite h, the sampled velocities must be integrated by a discrete recurrence; direct point samples generally give only an O(h) derivative match. Exact periodic-u closure is restricted to the stated antipodal subfamily.",
+        "mean_source": "The off-null volume-normalized Palatini/CAR source retains the owner's bounded C2 field/query, smooth sampling and compiled-work assumptions; ten metric equations additionally require the stated free constant-scaling condition, otherwise the volume term remains.",
+        "physical_admission": "Physical admission and compulsory D0 selection of this query, its inverse-PF ratios, moving-volume map and complete execution cost have not been derived."
+      },
+      "evidence": [
+        {
+          "ref": "2f930abe5dca9b8753609384cdab22f93155405a",
+          "path": "02_REGISTRY/research/A4D_ORIGINAL_GOLDEN_BOX_INVERSE_PF_MOVING_QUANTILE_EINSTEIN_BRIDGE_2026_10_19.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_original_golden_moving_mean_j2_2026-10-19/theorem.md",
+          "sha256": "b7a068874351e54694c093ed67d14f488a57287ad091cd77c3ff65ef33658fe8"
+        },
+        {
+          "ref": "2f930abe5dca9b8753609384cdab22f93155405a",
+          "path": "02_REGISTRY/research/sources/d0_original_golden_inverse_pf_quantile_2026-10-19/check_original_inverse_pf_quantile.mjs",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_original_golden_moving_mean_j2_2026-10-19/check_original_inverse_pf_quantile.mjs",
+          "sha256": "92551677423abc8b404fa55f598de05716aa04875cde67d329b24e96a7e56883"
+        },
+        {
+          "ref": "2f930abe5dca9b8753609384cdab22f93155405a",
+          "path": "02_REGISTRY/research/sources/d0_balanced_native_quantile_einstein_2026-10-19/check_balanced_native_source.py",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_original_golden_moving_mean_j2_2026-10-19/check_balanced_native_source.py",
+          "sha256": "582b165c51fc6c96016344ab1e9ec5f59bfc0a2bc8a9bafa502f43f00c997c09"
+        }
+      ],
+      "reported_state": "Pinned at PR #334 head 2f930abe5dca9b8753609384cdab22f93155405a; exact all40 and moving-source controls were replayed. This result-only record removes the balancing/decoder requirement for this specified route, but does not prove physical admission or compulsory selection. No native-programme-v1 application is registered or accepted; full D0 cost/clock/preparation, generic matter, global recovery and raw #216 remain open."
+    },
+    {
+      "id": "balanced-original-x-j2-mean-source-seam",
+      "owner": "registered native response research owner #334",
+      "statement": "On the balanced subset selected from the original X_w-addressed golden histories, the corrected local two-tick J2 and moving physical-volume mean J2 have identical complete finite values and first field jets on the common nonempty null/star Brinkmann roots, yielding the same normalized finite source.",
+      "interface": "balanced-original-x-j2-v1",
+      "outcome": "positive",
+      "kind": "analytic",
+      "scope_level": "family",
+      "hypotheses": {
+        "balanced_selection": "At fixed exact cost, the selected old LEFT histories have equal counts in every original Role macro cell; unselected histories and old RIGHT outcomes remain in the archive.",
+        "cell_query": "A fixed C2 cardinal interpolation has exact nodal values at canonical macro-cell representatives; smooth-source transfer retains the owner’s stated interpolation and actual work/return budget assumptions.",
+        "common_background": "The compared first jets are evaluated on the declared nonempty common null/star roots where the sampled geometric and CAR source scalars f and q vanish and J=1.",
+        "physical_admission": "A real native LEFT-gate realization and compulsory physical selection of this balanced subset are not proved.",
+        "remaining_price": "The result does not include the full historical H+J+R price or independent preparation, clock, controller, observer, right/code variations, and does not discharge raw #216."
+      },
+      "evidence": [
+        {
+          "ref": "7e2452e7d4f25d608c8fd7f30dcd4a18ec0c84d7",
+          "path": "02_REGISTRY/research/A4D_BALANCED_NATIVE_GOLDEN_EXACT_SOURCE_SEAM_LOCAL_TO_VOLUME_MEAN_2026_10_19.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_balanced_original_x_j2_2026-10-19/theorem.md",
+          "sha256": "9fc57e5a0622a7762acd2e927a7c278f7de7d7811343e52e111a2523e26579f7"
+        },
+        {
+          "ref": "7e2452e7d4f25d608c8fd7f30dcd4a18ec0c84d7",
+          "path": "02_REGISTRY/research/sources/d0_balanced_native_quantile_einstein_2026-10-19/check_balanced_native_source.py",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_balanced_original_x_j2_2026-10-19/check_balanced_native_source.py",
+          "sha256": "c88c40c151ae7c1e112835d50b06aa6e88b02c16a9f40b18bf0db929c88f463d"
+        }
+      ],
+      "reported_state": "Result-only evidence record; no application is registered. Both published source files and the Python control were independently rechecked. Original X_w microaddresses are preserved, but physical LEFT-gate admission and compulsory D0 selection remain open; first-source agreement is not off-shell action equality."
+    },
+    {
+      "id": "balanced-rank-decoder-j2-mean-source",
+      "owner": "registered native response research owner #334",
+      "statement": "An explicit deterministic Fibonacci rank/unrank LEFT decoder gives exactly balanced Role-cell counts for L=2^r; on its selected AF×scene J2 programme the owner proves exact finite common-root source matching to the moving-volume mean query and a conditional smooth Einstein-scalar mean source.",
+      "interface": "balanced-rank-decoder-j2-v1",
+      "outcome": "positive",
+      "kind": "analytic",
+      "scope_level": "family",
+      "hypotheses": {
+        "decoder": "The stated rank-to-site decoder is selected; it changes the assignment of words to sites and is not the original X_w physical address map.",
+        "exact_balance": "The exact finite theorem uses the declared Fibonacci divisibility sequence L=2^r; the separate near-balanced variant supplies a source-discrepancy estimate, not exact roots by itself.",
+        "mean_source": "The smooth off-null limit retains the owner’s bounded C2 query, true moving-volume quantile, actual J2 compile/work/return and smooth-chart assumptions.",
+        "physical_admission": "Native D0 does not yet derive or compel admission/selection of this decoder, and its full cost must include any required physical selector.",
+        "remaining_price": "No result is claimed for the complete historical H+J+R, preparation/clock/controller/right/code price, generic CAR stress, or original raw #216 terminal."
+      },
+      "evidence": [
+        {
+          "ref": "7e2452e7d4f25d608c8fd7f30dcd4a18ec0c84d7",
+          "path": "02_REGISTRY/research/A4D_EXACT_BALANCED_GOLDEN_LEFT_QUANTILE_COMMON_EINSTEIN_SOURCE_2026_10_19.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_balanced_rank_quantile_j2_2026-10-19/theorem.md",
+          "sha256": "e3eacd663d5453412a53b4ec1a9e3f0b386dff6c7089dfb79f6741a063292559"
+        },
+        {
+          "ref": "7e2452e7d4f25d608c8fd7f30dcd4a18ec0c84d7",
+          "path": "02_REGISTRY/research/sources/d0_balanced_fibonacci_left_quantile_2026-10-19/check_balanced_left_quantile.mjs",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_balanced_rank_quantile_j2_2026-10-19/check_balanced_left_quantile.mjs",
+          "sha256": "ecb771e7127f4fba0417feeb606563e9a1c6bc4e1cdffa4269938eed1d9067ce"
+        }
+      ],
+      "reported_state": "Result-only evidence record; no application is registered. The independent JavaScript control passes BigInt rank/unrank, exact divisibility, near-balance and a sampled moving-volume J2 derivative (relative error 2.44e-8). This verifies finite controls, not native decoder admission, the full physical price or raw #216."
+    },
+    {
+      "id": "double-null-quadratic-cartan-bootstrap",
+      "owner": "registered native response research owner #334",
+      "statement": "For two affine null amplitudes on the original six-plaquette Lorentz-star action, a unique rational h/8 mixed Cartan correction cancels all 24 independent link Euler coefficients at order a*b; the 16 coframe coefficients then reduce to the Einstein dot-product overlap. For perpendicular gradients with nonzero wedge product, every one of the 40 mixed Euler coefficients vanishes while mixed plaquette curvature remains nonzero.",
+      "interface": "double-null-quadratic-cartan-v1",
+      "outcome": "positive",
+      "kind": "exact-finite",
+      "scope_level": "finite",
+      "hypotheses": {
+        "original_action": "Unchanged six based plaquettes, odd Lorentz curvature, fixed star pairing, original eta and original proper-Lorentz generator convention.",
+        "field_variations": "All 16 coframe and all 24 left-link first variations are formed independently before substituting the trial connection and its correction.",
+        "amplitude_germ": "Exact arithmetic in Q[a,b]/(a^2,b^2), with symbolic transverse coordinates and four ordered unit-vector pairs establishing the general bilinear A,B coefficients.",
+        "connection_chart": "Continuum Levi-Civita links are a trial. The exact correction uses the invertible homogeneous flat 24x24 Cartan block at one interior site; this does not establish a uniform correction solving every site at finite amplitudes.",
+        "result_scope": "Only the mixed [a*b] coefficient is solved. Higher-order coefficients and all-order finite roots remain open.",
+        "physical_scope": "No native action/price selection, matter-source binding, complete controller/preparation/clock equations, global Ward identity or recovery theorem follows."
+      },
+      "evidence": [
+        {
+          "ref": "d6db28e517278c927efaa425b2ad2fc0511093f5",
+          "path": "02_REGISTRY/research/A4D_DOUBLE_NULL_EXACT_FINITE_QUADRATIC_CARTAN_EINSTEIN_BOOTSTRAP_2026_10_19.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_quadratic_cartan_2026-10-19/theorem.md",
+          "sha256": "d73bb769ffcfa0ca5c5dbef2b341444ca6753ad339b3c53d083a82ecd9fbae47"
+        },
+        {
+          "ref": "d6db28e517278c927efaa425b2ad2fc0511093f5",
+          "path": "02_REGISTRY/research/A4D_ARBITRARY_BRINKMANN_ALL40_CARTAN_DISCRETE_EINSTEIN_2026_10_19.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_quadratic_cartan_2026-10-19/arbitrary_brinkmann_all40.md",
+          "sha256": "8dbca8ff9a4567a2baf216357b5d3ffa2d217281ced4e5d0e535257db2f5e83e"
+        },
+        {
+          "ref": "d6db28e517278c927efaa425b2ad2fc0511093f5",
+          "path": "02_REGISTRY/research/A4D_DOUBLE_NULL_CARTAN_CROSSING_RICCI_WEYL_SPLIT_2026_10_19.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_quadratic_cartan_2026-10-19/double_null_cartan_crossing.md",
+          "sha256": "38fbfb92b972ef2e1bf347c2818c9707c343c19575a08765ed2a957568fa2b09"
+        },
+        {
+          "ref": "d6db28e517278c927efaa425b2ad2fc0511093f5",
+          "path": "02_REGISTRY/research/sources/d0_two_null_crossing_2026-10-19/check_mixed_cartan_exact.py",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_quadratic_cartan_2026-10-19/check_mixed_cartan_exact.py",
+          "sha256": "05b79065744748d73dfcf55a931cc4d7b4076f70839adb19c5836a1fe892e493"
+        },
+        {
+          "ref": "d6db28e517278c927efaa425b2ad2fc0511093f5",
+          "path": "02_REGISTRY/research/sources/d0_two_null_crossing_2026-10-19/check_finite_all40_two_null.mjs",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_quadratic_cartan_2026-10-19/check_finite_all40_two_null.mjs",
+          "sha256": "a4d24bf53531815cf8400444ec27dbe02a94757d5601a6a0f5baf7a9f78b93cb"
+        },
+        {
+          "ref": "d6db28e517278c927efaa425b2ad2fc0511093f5",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_quadratic_cartan_2026-10-19/symbolic_output.txt",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_quadratic_cartan_2026-10-19/symbolic_output.txt",
+          "sha256": "7e31f534a1162e5723681f50a01db2549b1f027959c20bd52f3b54e2e14a18ea"
+        },
+        {
+          "ref": "d6db28e517278c927efaa425b2ad2fc0511093f5",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_quadratic_cartan_2026-10-19/numeric_output.txt",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_quadratic_cartan_2026-10-19/numeric_output.txt",
+          "sha256": "667530a312f0be8b2d48f93e167999d1a272b3cdd923523b727b5ddaf7ca02ea"
+        }
+      ],
+      "reported_state": "Pinned to exact theorem source commit d6db28e517278c927efaa425b2ad2fc0511093f5, subsequently integrated into the #334 strategic route at commit 588b701a38d0f1fa821cc6b3fb64048d5c593ce2. The exact rational checker passes all 24 link and 16 coframe mixed rows and the mixed plaquette controls; the independent finite-mesh numerical check reproduces the h/8 residual suppression. Result-only graph entry; no application to native-programme-v1 is registered or accepted."
+    },
+    {
+      "id": "double-null-cubic-continuum-ricci-poisson",
+      "owner": "registered native response research owner #334; independently normalized replay in #379",
+      "statement": "For arbitrary real orthogonal transverse slopes A=(p,q), B=kappa*(-q,p), the continuum crossed-null Ricci tensor through total amplitude degree three has only the stated uu and vv cubic sources. Source-forced cubic profile corrections cancel the entire Ricci jet, and the central five-point Laplacian reproduces both cubic source identities exactly for every h.",
+      "interface": "double-null-cubic-continuum-poisson-v1",
+      "outcome": "positive",
+      "kind": "analytic",
+      "scope_level": "family",
+      "hypotheses": {
+        "geometry": "The continuum metric uses H=a(A dot x), J=b(B dot x), g_uv=1+HJ/4 and a flat transverse plane.",
+        "orthogonality": "A dot B=0, parameterized symbolically by A=(p,q), B=kappa*(-q,p).",
+        "correction": "H is shifted by -a^2 b |A|^2(B dot x)(x^2+y^2)/32 and J by -a b^2 |B|^2(A dot x)(x^2+y^2)/32.",
+        "checker_status": "The historical checker at a76ffeb0680827745558c9c864242303b51a9223 failed two rotated fixtures because SymPy matrix equality was structural. The fixed upstream checker at current #334 head 83537e03543ca9b08a7408fcf786e2f3c98a3d3c simplifies entries before comparison and passes all four fixtures, the symbolic arbitrary-orthogonal family, and its additional area-trace controls. The independent normalized replay also passes.",
+        "finite_action_boundary": "This is not the original six-plaquette third-order Cartan/coframe Euler system and does not establish a finite nonlinear D0 root."
+      },
+      "evidence": [
+        {
+          "ref": "a76ffeb0680827745558c9c864242303b51a9223",
+          "path": "02_REGISTRY/research/sources/d0_two_null_crossing_2026-10-19/check_cubic_ricci_poisson.py",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_continuum_2026-10-19/upstream_check_cubic_ricci_poisson.py",
+          "sha256": "7c935702d78bae518eb0e4e6c8908e2cc6c3c1fc5af3dc0d663dd77f2dc2f78b"
+        },
+        {
+          "ref": "35f3b5e1ddff9fbb9d76fda3f5c8d0fd79275668",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_continuum_2026-10-19/check_cubic_ricci_poisson_normalized.py",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_continuum_2026-10-19/check_cubic_ricci_poisson_normalized.py",
+          "sha256": "127b442f2688d406ebd7fe90b465f1817570e996f07f288adf408c92fe2a23e8"
+        },
+        {
+          "ref": "35f3b5e1ddff9fbb9d76fda3f5c8d0fd79275668",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_continuum_2026-10-19/normalized_output.txt",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_continuum_2026-10-19/normalized_output.txt",
+          "sha256": "dafed2dcf3c656980d7e0590b6ae110ce516c2570ab4ad6d076e2c0b0c53ffe5"
+        },
+        {
+          "ref": "35f3b5e1ddff9fbb9d76fda3f5c8d0fd79275668",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_continuum_2026-10-19/upstream_output.txt",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_continuum_2026-10-19/upstream_output.txt",
+          "sha256": "a1257ccae5b28763ad87cc1b086bb4e93784baf4a8cbb3b843fccb281a016960"
+        },
+        {
+          "ref": "0eaf637bf4b631587e0f72ce23f12901317493c1",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_continuum_2026-10-19/scope.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_continuum_2026-10-19/scope.md",
+          "sha256": "e6a26d575a73df3d77241c4253efb68feb8de7f1a4063896ff4f1c304cc8d27e"
+        },
+        {
+          "ref": "d6db28e517278c927efaa425b2ad2fc0511093f5",
+          "path": "02_REGISTRY/research/A4D_DOUBLE_NULL_EXACT_FINITE_QUADRATIC_CARTAN_EINSTEIN_BOOTSTRAP_2026_10_19.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_quadratic_cartan_2026-10-19/theorem.md",
+          "sha256": "d73bb769ffcfa0ca5c5dbef2b341444ca6753ad339b3c53d083a82ecd9fbae47"
+        },
+        {
+          "ref": "83537e03543ca9b08a7408fcf786e2f3c98a3d3c",
+          "path": "02_REGISTRY/research/sources/d0_two_null_crossing_2026-10-19/check_cubic_ricci_poisson.py",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_continuum_2026-10-19/check_cubic_ricci_poisson_83537.py",
+          "sha256": "248177ab783a38d9dee8c04ad91e9948dc301cdff1ce2ae8571f17e145133d55"
+        },
+        {
+          "ref": "0eaf637bf4b631587e0f72ce23f12901317493c1",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_continuum_2026-10-19/output_83537.txt",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_continuum_2026-10-19/output_83537.txt",
+          "sha256": "1fff1391bea0cf3b95616b5cc292255b4826e39d120f5932d91d5d71f5d4fa6b"
+        }
+      ],
+      "reported_state": "The historical a76 checker failure was fixed upstream: the checker at current #334 head 83537e03543ca9b08a7408fcf786e2f3c98a3d3c passes four exact fixtures, the arbitrary orthogonal family and added area-trace controls; the independent normalized replay also passes. This result remains a continuum cubic Ricci jet plus exact scalar finite-difference identity. It does not establish the finite 40-row cubic system or compulsory native Cost-Info."
+    },
+    {
+      "id": "double-null-cubic-uniform-control",
+      "owner": "independent exact finite-control replay in #379",
+      "statement": "For the perpendicular affine crossed-null profile H=a x, J=b y with the coframe fixed, an exact cubic expansion of the original six-plaquette equations shows that a site-independent cubic connection correction chosen to cancel all 24 link rows at the origin leaves nonzero coframe rows there and nonzero link rows at the adjacent node (x,y)=(1,0), for both [a^2 b] and [a b^2].",
+      "interface": "double-null-cubic-uniform-control-v1",
+      "outcome": "negative",
+      "kind": "exact-finite",
+      "scope_level": "finite",
+      "hypotheses": {
+        "profile": "A=(1,0), B=(0,1), h=1, fixed affine coframe.",
+        "base_connection": "Full continuum Levi-Civita link exponential plus the published order-ab h/8 Cartan correction.",
+        "correction_chart": "The cubic correction is spatially uniform and is obtained from the exact homogeneous flat Cartan Hessian at the origin.",
+        "formal_ring": "Exact rational arithmetic in Q[a,b]/(a^3,b^3), retaining coefficients [a^2 b] and [a b^2].",
+        "scope_fence": "No spatially varying cubic link correction or lower-order coframe mode is tested; no general no-go follows."
+      },
+      "evidence": [
+        {
+          "ref": "14174fc45e69004a3e7dd8348d48472d32019d0a",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_uniform_control_2026-10-19/check_cubic_uniform_control.py",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_uniform_control_2026-10-19/check_cubic_uniform_control.py",
+          "sha256": "a63f05ae98c620b59dc3178788f04e7548ab613f69f11fc578972ce4c014e540"
+        },
+        {
+          "ref": "14174fc45e69004a3e7dd8348d48472d32019d0a",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_uniform_control_2026-10-19/output.txt",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_uniform_control_2026-10-19/output.txt",
+          "sha256": "4f2c440274449ce8e5837cc9919b415b86317c30665011e3f326b77eacf97aaa"
+        },
+        {
+          "ref": "14174fc45e69004a3e7dd8348d48472d32019d0a",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_uniform_control_2026-10-19/scope.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_uniform_control_2026-10-19/scope.md",
+          "sha256": "4a37dd52888e8062dd9073b8961a91c0faca9f805e3264332b923853594cd298"
+        },
+        {
+          "ref": "d6db28e517278c927efaa425b2ad2fc0511093f5",
+          "path": "02_REGISTRY/research/A4D_DOUBLE_NULL_EXACT_FINITE_QUADRATIC_CARTAN_EINSTEIN_BOOTSTRAP_2026_10_19.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_quadratic_cartan_2026-10-19/theorem.md",
+          "sha256": "d73bb769ffcfa0ca5c5dbef2b341444ca6753ad339b3c53d083a82ecd9fbae47"
+        },
+        {
+          "ref": "d6db28e517278c927efaa425b2ad2fc0511093f5",
+          "path": "02_REGISTRY/research/sources/d0_two_null_crossing_2026-10-19/check_mixed_cartan_exact.py",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_quadratic_cartan_2026-10-19/check_mixed_cartan_exact.py",
+          "sha256": "05b79065744748d73dfcf55a931cc4d7b4076f70839adb19c5836a1fe892e493"
+        }
+      ],
+      "reported_state": "Exact rational control at h=1: the uniform correction makes all 24 cubic link rows vanish at the origin, but two coframe rows remain; the same correction gives nonzero link rows at (1,0). This is restricted to the fixed-coframe, spatially uniform chart and is not a no-go for spatially varying corrections or physical D0-to-GR."
+    },
+    {
+      "id": "double-null-cubic-polynomial-chart-obstruction",
+      "owner": "independent exact finite-control replay in #379",
+      "statement": "For H=a*x, J=b*y at h=1 with the published exact order-a*b repair, no site-dependent corrections for all 24 Lorentz links and 16 coframe components that are polynomials of total spatial degree at most two make all original finite Euler rows vanish at order a^2*b.",
+      "interface": "double-null-cubic-polynomial-chart-v1",
+      "outcome": "negative",
+      "kind": "exact-finite",
+      "scope_level": "finite",
+      "hypotheses": {
+        "profile": "The perpendicular crossed-null affine chart A=(1,0), B=(0,1), with H=a*x and J=b*y.",
+        "base_connection": "The exact mixed a*b Cartan repair from the original six-plaquette theorem, continued with the continuum Levi-Civita link trial.",
+        "formal_ring": "Exact rational [a^2 b] extraction in Q[a,b]/(a^3,b^3).",
+        "correction_chart": "All 24 proper-Lorentz link and 16 coframe corrections have independent degree-at-most-two polynomials in x,y, evaluated at each link/coframe site including shifted plaquette sites.",
+        "equations": "All 24 original left-link and all 16 independent coframe Euler rows; 240 coefficients against 1,x,y,x^2,x*y,y^2.",
+        "scope_fence": "Rank separation excludes this polynomial chart only. Arbitrary site functions, higher-degree/nonpolynomial corrections, alternate branches, an exact nonlinear root and native D0 price remain open."
+      },
+      "evidence": [
+        {
+          "ref": "d4b57047458075b03872ab1cf234888ce5ac2a91",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_polynomial_chart_2026-10-19/check_cubic_polynomial_chart.py",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_polynomial_chart_2026-10-19/check_cubic_polynomial_chart.py",
+          "sha256": "6f1500d291d43773c92053051971ac0610d273879722c9c9787840c0edbd7cb5"
+        },
+        {
+          "ref": "d4b57047458075b03872ab1cf234888ce5ac2a91",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_polynomial_chart_2026-10-19/output.txt",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_polynomial_chart_2026-10-19/output.txt",
+          "sha256": "73fc385734a7f3f39f874658b06d5d6aabcd12f9b1a49b2354ee69bfff7f4d4f"
+        },
+        {
+          "ref": "d4b57047458075b03872ab1cf234888ce5ac2a91",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_polynomial_chart_2026-10-19/scope.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_polynomial_chart_2026-10-19/scope.md",
+          "sha256": "3d0f2424cf5c9fb7f54bbcba0d2dd3fe351fc607d2d5f99525481d5a5f937200"
+        },
+        {
+          "ref": "d4b57047458075b03872ab1cf234888ce5ac2a91",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_uniform_control_2026-10-19/check_cubic_uniform_control.py",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_uniform_control_2026-10-19/check_cubic_uniform_control.py",
+          "sha256": "a63f05ae98c620b59dc3178788f04e7548ab613f69f11fc578972ce4c014e540"
+        },
+        {
+          "ref": "d6db28e517278c927efaa425b2ad2fc0511093f5",
+          "path": "02_REGISTRY/research/A4D_DOUBLE_NULL_EXACT_FINITE_QUADRATIC_CARTAN_EINSTEIN_BOOTSTRAP_2026_10_19.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_quadratic_cartan_2026-10-19/theorem.md",
+          "sha256": "d73bb769ffcfa0ca5c5dbef2b341444ca6753ad339b3c53d083a82ecd9fbae47"
+        }
+      ],
+      "reported_state": "The degree-at-most-two 240 by 240 coefficient system has rank 154 and augmented rank 155. This is only a lower-degree chart obstruction: the companion degree-at-most-three systems now solve both cubic amplitude coefficients and pass a combined all-40-row replay. Arbitrary site functions and higher amplitude orders remain open."
+    },
+    {
+      "id": "double-null-continuum-fourth-order-ricci-jet",
+      "owner": "independent exact symbolic replay in #379",
+      "statement": "For arbitrary real orthogonal slopes A=(p,q), B=kappa*(-q,p), a transverse conformal profile with coefficient k=3/1024 cancels all 16 continuum Ricci entries through total amplitude degree four, and the two-Killing area radius is harmonic to that order.",
+      "interface": "double-null-continuum-fourth-order-v1",
+      "outcome": "positive",
+      "kind": "analytic",
+      "scope_level": "family",
+      "hypotheses": {
+        "geometry": "Continuum crossed-null metric with g_uv=1+H*J/4, g_uu=H, g_vv=J and a flat transverse plane.",
+        "slopes": "A=(p,q), B=kappa*(-q,p) with real symbolic p,q,kappa.",
+        "lower_order_profiles": "The source-forced cubic H and J corrections with coefficient -1/32 are retained.",
+        "fourth_order_mode": "phi=k*(a*b)^2*|A|^2*|B|^2*(x^2+y^2)^2; the exact cancellation value is k=3/1024.",
+        "scope_fence": "Continuum jet only. No original finite link/coframe Euler rows, all-order solution, native price or physical selector is established."
+      },
+      "evidence": [
+        {
+          "ref": "1f8474a4f641f75a8d1a682b155b3416bdc2b4fc",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_continuum_fourth_order_2026-10-19/check_crossed_null_ricci_degree4.py",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_continuum_fourth_order_2026-10-19/check_crossed_null_ricci_degree4.py",
+          "sha256": "6e68fbfaa3ada4c33770c92ed46276e5c4acd379953b11dd14bb9b7b72be3440"
+        },
+        {
+          "ref": "1f8474a4f641f75a8d1a682b155b3416bdc2b4fc",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_continuum_fourth_order_2026-10-19/output.txt",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_continuum_fourth_order_2026-10-19/output.txt",
+          "sha256": "08e7b9df5078e1fd8bda0a4f63b81fce9d3d8e34bf77399809cef8bb38a30382"
+        },
+        {
+          "ref": "1f8474a4f641f75a8d1a682b155b3416bdc2b4fc",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_continuum_fourth_order_2026-10-19/scope.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_continuum_fourth_order_2026-10-19/scope.md",
+          "sha256": "9f37c24c8223e7e352e6799c3f0f69e51ae14a4759153491daaa095567e4c5f9"
+        }
+      ],
+      "reported_state": "All 16 Ricci entries vanish and the two-Killing area-radius Laplacian is zero through total amplitude degree four. This is separate from the finite cubic polynomial-chart obstruction and does not establish a finite D0 root."
+    },
+    {
+      "id": "double-null-finite-cubic-euler-jet",
+      "owner": "independent exact finite replay in #379",
+      "statement": "For H=a*x, J=b*y at h=1 on the original six-plaquette action, there exist site-dependent degree-at-most-three corrections for all 24 Lorentz links and 16 coframe components that make every original Euler row vanish identically in x,y through total amplitude degree three, including both [a^2*b] and [a*b^2].",
+      "interface": "double-null-cubic-finite-jet-v1",
+      "outcome": "positive",
+      "kind": "exact-finite",
+      "scope_level": "finite",
+      "hypotheses": {
+        "profile": "The perpendicular crossed-null chart A=(1,0), B=(0,1), with H=a*x and J=b*y.",
+        "base_connection": "The continuum Levi-Civita link trial plus the published exact mixed a*b Cartan repair; all higher link and coframe corrections are solved as independent fields.",
+        "formal_ring": "Exact rational amplitude coefficients; the claim covers every monomial of total amplitude degree at most three and does not cover a^2*b^2.",
+        "correction_chart": "All 24 directed proper-Lorentz link components and all 16 coframe components have independent site-dependent spatial polynomials of total degree at most three, evaluated at each shifted site.",
+        "linear_systems": "For each cubic coefficient, 400 rational coefficient equations have rank 266 and augmented rank 266; an explicit solution is obtained by setting the 134 free parameters to zero.",
+        "combined_check": "Both particular solutions are substituted at once; all 40 original Euler rows vanish symbolically in x,y at every amplitude order through total degree three.",
+        "scope_fence": "This is a finite perturbative jet at h=1 for one orthogonal slope pair, not an all-order root, arbitrary-slope family, refinement theorem, sourced matter solution or native physical selector."
+      },
+      "evidence": [
+        {
+          "ref": "1f3889f98dca73f182c31381ae8990c944e17444",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_polynomial_chart_2026-10-19/check_cubic_polynomial_degree3.py",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_polynomial_chart_2026-10-19/check_cubic_polynomial_degree3.py",
+          "sha256": "5748a1e4f18fe3e09bff805fa5a243ede2efb098d10fd31ee69be75ad85f9817"
+        },
+        {
+          "ref": "1f3889f98dca73f182c31381ae8990c944e17444",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_polynomial_chart_2026-10-19/degree3_output.txt",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_polynomial_chart_2026-10-19/degree3_output.txt",
+          "sha256": "44f088293171a818beadbec12add96fb97672cea8f283fa2c9bda25531bd58e3"
+        },
+        {
+          "ref": "1f3889f98dca73f182c31381ae8990c944e17444",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_polynomial_chart_2026-10-19/degree3_scope.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_polynomial_chart_2026-10-19/degree3_scope.md",
+          "sha256": "5ceb5f2ffe107391154797c64e463bb708dac073ea91255d0b0eae19c91249e6"
+        },
+        {
+          "ref": "d4b57047458075b03872ab1cf234888ce5ac2a91",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_uniform_control_2026-10-19/check_cubic_uniform_control.py",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_uniform_control_2026-10-19/check_cubic_uniform_control.py",
+          "sha256": "a63f05ae98c620b59dc3178788f04e7548ab613f69f11fc578972ce4c014e540"
+        }
+      ],
+      "reported_state": "Both cubic coefficient systems are exactly consistent, and a combined replay verifies all 40 original Euler rows vanish through total amplitude degree three for symbolic x,y. This is a finite crossed-null vacuum jet, not an all-order solution or native D0-to-GR closure."
+    },
+    {
+      "id": "double-null-finite-quartic-selected-cubic-branch-obstruction",
+      "owner": "independent exact finite replay in #379",
+      "statement": "For H=a*x, J=b*y at h=1 on the original six-plaquette action, fixing the explicit degree-at-most-three particular solutions with cubic free parameters set to zero, no degree-at-most-five spatial-polynomial quartic corrections to all 24 Lorentz links and 16 coframe components cancel all 40 Euler rows at [a^2*b^2].",
+      "interface": "double-null-quartic-selected-cubic-branch-v1",
+      "outcome": "negative",
+      "kind": "exact-finite",
+      "scope_level": "finite",
+      "hypotheses": {
+        "profile": "The perpendicular crossed-null chart A=(1,0), B=(0,1), with H=a*x and J=b*y.",
+        "original_action": "Unchanged six based plaquettes, odd Lorentz curvature and fixed star pairing; continuum Levi-Civita links are only the initial trial.",
+        "lower_order_branch": "Uses the explicit degree-at-most-three particular corrections in degree3_output.txt, with all 134 free parameters in each of [a^2*b] and [a*b^2] set to zero; those free modes are not varied here.",
+        "formal_ring": "Exact rational extraction of the [a^2*b^2] coefficient at h=1.",
+        "correction_chart": "All 24 proper-Lorentz link and 16 coframe quartic corrections have independent spatial polynomials of total degree at most five, evaluated at their own sites including shifted plaquette sites.",
+        "equations": "All 40 original Euler rows yield 840 exact rational coefficient equations for 840 correction coefficients; fraction-free reduction gives rank 580 and augmented rank 581.",
+        "scope_fence": "Only this selected cubic representative and polynomial chart are excluded. Other cubic representatives, arbitrary site functions, higher spatial degree, an all-order root, a refinement family, sourced matter and physical D0 selection remain open."
+      },
+      "evidence": [
+        {
+          "ref": "427fdcba0718044a648da7b743d7bcf14cde9c27",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_quartic_selected_branch_2026-10-19/check_quartic_selected_branch_degree5.py",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_quartic_selected_branch_2026-10-19/check_quartic_selected_branch_degree5.py",
+          "sha256": "414652409ccebe47db04023b49ac5d98f97b70b0ba873d0d62d8a1c0483fb9f0"
+        },
+        {
+          "ref": "427fdcba0718044a648da7b743d7bcf14cde9c27",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_quartic_selected_branch_2026-10-19/output.txt",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_quartic_selected_branch_2026-10-19/output.txt",
+          "sha256": "368719874ba18ae9fdfe4f39e08b536461aba38bb904c39b3dacd0e6078c96c5"
+        },
+        {
+          "ref": "427fdcba0718044a648da7b743d7bcf14cde9c27",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_quartic_selected_branch_2026-10-19/scope.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_quartic_selected_branch_2026-10-19/scope.md",
+          "sha256": "8a7ab9b73ddbeea90452648b1167822c87efb5189900149339a3b86146b5eda3"
+        },
+        {
+          "ref": "1f3889f98dca73f182c31381ae8990c944e17444",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_polynomial_chart_2026-10-19/degree3_output.txt",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_polynomial_chart_2026-10-19/degree3_output.txt",
+          "sha256": "44f088293171a818beadbec12add96fb97672cea8f283fa2c9bda25531bd58e3"
+        },
+        {
+          "ref": "d4b57047458075b03872ab1cf234888ce5ac2a91",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_uniform_control_2026-10-19/check_cubic_uniform_control.py",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_uniform_control_2026-10-19/check_cubic_uniform_control.py",
+          "sha256": "a63f05ae98c620b59dc3178788f04e7548ab613f69f11fc578972ce4c014e540"
+        }
+      ],
+      "reported_state": "At the selected cubic particular solution, the 840 by 840 quartic correction system is exactly inconsistent, with coefficient rank 580 and augmented rank 581. The 134 free modes in each cubic coefficient remain untested, so this is not a general obstruction to crossed-null finite roots or a positive D0-to-GR derivation."
+    },
+    {
+      "id": "double-null-finite-mixed-quartic-euler-jet",
+      "owner": "independent exact finite replay in #379",
+      "statement": "For H=a*x, J=b*y at h=1 on the original six-plaquette action, there exist site-dependent degree-at-most-three cubic corrections and degree-at-most-five [a^2*b^2] corrections for all 24 Lorentz links and 16 coframe components that make all 40 original Euler rows vanish identically in x,y at every checked coefficient in Q[a,b]/(a^3,b^3).",
+      "interface": "double-null-cubic-free-mode-quartic-jet-v1",
+      "outcome": "positive",
+      "kind": "exact-finite",
+      "scope_level": "finite",
+      "hypotheses": {
+        "profile": "The perpendicular crossed-null chart A=(1,0), B=(0,1), with H=a*x and J=b*y.",
+        "original_action": "The unchanged original six based plaquettes, odd Lorentz curvature and fixed Lorentz-star pairing; the continuum Levi-Civita links are only the initial trial and the published order-a*b Cartan correction is retained.",
+        "formal_ring": "Exact rational coefficients in Q[a,b]/(a^3,b^3); the replay checks all lower retained coefficients and [a^2*b^2], but not the pure [a^3] or [b^3] coefficients.",
+        "cubic_systems": "Both 400-equation cubic systems have exact coefficient rank 266 and augmented rank 266, with 134 free parameters apiece.",
+        "free_mode_selection": "The selected [a^2*b] coframe modes are e_2_1_1_0_1_2=1/64 and e_2_1_1_0_0_3=-1/64; the other cubic free modes are zero in the selected joint RREF solution.",
+        "quartic_chart": "All 24 Lorentz-link and 16 coframe corrections at [a^2*b^2] are independent site-dependent spatial polynomials of total degree at most five, evaluated at their own and shifted plaquette sites.",
+        "joint_system": "The exact joint system has 840 equations and 1108 unknowns; coefficient rank and augmented rank are both 582, with the RHS column non-pivot. The selected solution has two nonzero cubic free modes and 166 nonzero quartic coefficients.",
+        "combined_replay": "All 40 original Euler rows vanish identically in x,y at the checked lower coefficients and at [a^2*b^2] after simultaneous substitution.",
+        "scope_fence": "This is one finite mixed-amplitude jet at h=1 for a single orthogonal slope pair. It is not an all-order root, arbitrary-slope family, refinement theorem, sourced matter solution or native physical selector."
+      },
+      "evidence": [
+        {
+          "ref": "7a593f6ccd31837786a2f1c62a3fca82ae8aa9c8",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_quartic_free_mode_jet_2026-10-19/check_quartic_free_mode_jet.py",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_quartic_free_mode_jet_2026-10-19/check_quartic_free_mode_jet.py",
+          "sha256": "36e6312770341bddb44c349c2025e7a3b385bcb7fa6a31f0f68cc778d854e574"
+        },
+        {
+          "ref": "7a593f6ccd31837786a2f1c62a3fca82ae8aa9c8",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_quartic_free_mode_jet_2026-10-19/output.txt",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_quartic_free_mode_jet_2026-10-19/output.txt",
+          "sha256": "d8abc3907ac8a50ee33ff74c09aaccfa84661b3d325781ce18913c11fa39ef4b"
+        },
+        {
+          "ref": "7a593f6ccd31837786a2f1c62a3fca82ae8aa9c8",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_quartic_free_mode_jet_2026-10-19/scope.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_quartic_free_mode_jet_2026-10-19/scope.md",
+          "sha256": "7dd2736ddd5d28a391bc21a4124f6d74deef898d495cad9b1778c8dffbc845f5"
+        },
+        {
+          "ref": "d4b57047458075b03872ab1cf234888ce5ac2a91",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_uniform_control_2026-10-19/check_cubic_uniform_control.py",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_uniform_control_2026-10-19/check_cubic_uniform_control.py",
+          "sha256": "a63f05ae98c620b59dc3178788f04e7548ab613f69f11fc578972ce4c014e540"
+        }
+      ],
+      "reported_state": "The full exact cubic solution families were varied jointly with quartic corrections. An RREF solution with two specified cubic coframe modes and 166 quartic coefficients passes a simultaneous symbolic replay of all 40 original Euler rows through the mixed [a^2*b^2] coefficient. This remains scoped finite evidence and does not discharge native physical obligations."
+    },
+    {
+      "id": "double-null-finite-asymmetric-quartic-euler-jet",
+      "owner": "independent exact finite replay in #379",
+      "statement": "On the selected H=a*x, J=b*y, h=1 crossed-null solution branch of the original six-plaquette action, the pure [a^3] and [b^3] coefficients require no correction, and degree-at-most-five site-dependent corrections at [a^3*b] and [a*b^3] can be chosen so all 40 original Euler rows vanish identically in x,y at 13 specified retained amplitude coefficients, including [a^2*b^2].",
+      "interface": "double-null-asymmetric-order4-v1",
+      "outcome": "positive",
+      "kind": "exact-finite",
+      "scope_level": "finite",
+      "hypotheses": {
+        "profile": "The perpendicular crossed-null chart A=(1,0), B=(0,1), with H=a*x and J=b*y at h=1.",
+        "prior_branch": "Consumes the exact mixed-quartic finite representative with two specified [a^2*b] coframe free modes and degree-at-most-five [a^2*b^2] corrections.",
+        "amplitude_cap": "The Jet cap is raised to three. The checked set is the six lower coefficients, [a^2*b], [a*b^2], [a^2*b^2], [a^3], [b^3], [a^3*b], and [a*b^3].",
+        "pure_cubic": "At [a^3] and [b^3], all 40 source rows are identically zero and zero corrections are selected.",
+        "asymmetric_correction_chart": "At [a^3*b] and [a*b^3], all 24 Lorentz-link and 16 coframe corrections have independent site-dependent spatial polynomials of total degree at most five, including shifted plaquette sites.",
+        "linear_systems": "Each asymmetric order gives 840 exact rational equations and 840 correction variables, with coefficient rank 580 and the augmented RHS non-pivot; the RREF solution has four nonzero field coefficients.",
+        "combined_replay": "All 40 original Euler rows vanish identically in x,y at the 13 checked amplitude coefficients after simultaneous substitution of the prior mixed-quartic branch and both new corrections.",
+        "scope_fence": "This is not a complete fourth-order jet: [a^4], [b^4], [a^3*b^2], [a^2*b^3], and [a^3*b^3] are untested. No arbitrary-slope family, refinement limit, sourced matter, global root or native physical selector follows."
+      },
+      "evidence": [
+        {
+          "ref": "12245f705982260c32512e648788a7dcd13b0b5b",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_asymmetric_order4_jet_2026-10-19/check_asymmetric_order4_jet.py",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_asymmetric_order4_jet_2026-10-19/check_asymmetric_order4_jet.py",
+          "sha256": "c727f0f8dff5fa02c44e1150955f9ff164ed130ad3eb098fe3ffdb9a748fec41"
+        },
+        {
+          "ref": "12245f705982260c32512e648788a7dcd13b0b5b",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_asymmetric_order4_jet_2026-10-19/output.txt",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_asymmetric_order4_jet_2026-10-19/output.txt",
+          "sha256": "afece2027d4c8709edc3c1fc65fb3342b1114b201990bbb05d86f917a314f295"
+        },
+        {
+          "ref": "12245f705982260c32512e648788a7dcd13b0b5b",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_asymmetric_order4_jet_2026-10-19/scope.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_asymmetric_order4_jet_2026-10-19/scope.md",
+          "sha256": "4776e03dbcb502622fd03644f9628e2eebe47b2417d6d25c8430c7a7024cac00"
+        },
+        {
+          "ref": "7a593f6ccd31837786a2f1c62a3fca82ae8aa9c8",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_quartic_free_mode_jet_2026-10-19/check_quartic_free_mode_jet.py",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_quartic_free_mode_jet_2026-10-19/check_quartic_free_mode_jet.py",
+          "sha256": "36e6312770341bddb44c349c2025e7a3b385bcb7fa6a31f0f68cc778d854e574"
+        },
+        {
+          "ref": "7a593f6ccd31837786a2f1c62a3fca82ae8aa9c8",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_quartic_free_mode_jet_2026-10-19/output.txt",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_quartic_free_mode_jet_2026-10-19/output.txt",
+          "sha256": "d8abc3907ac8a50ee33ff74c09aaccfa84661b3d325781ce18913c11fa39ef4b"
+        },
+        {
+          "ref": "d4b57047458075b03872ab1cf234888ce5ac2a91",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_uniform_control_2026-10-19/check_cubic_uniform_control.py",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_cubic_uniform_control_2026-10-19/check_cubic_uniform_control.py",
+          "sha256": "a63f05ae98c620b59dc3178788f04e7548ab613f69f11fc578972ce4c014e540"
+        }
+      ],
+      "reported_state": "The same selected finite branch passes a combined symbolic replay at 13 specified coefficients: pure cubic sources [a^3] and [b^3] vanish, and both asymmetric quartic coefficients [a^3*b] and [a*b^3] admit exact degree-at-most-five corrections. This extends the mixed [a^2*b^2] jet but remains scoped finite evidence and does not discharge native physical obligations."
+    },
+    {
+      "id": "complete-code-class-first-source-universality",
+      "owner": "complete-code-class research owner #334",
+      "statement": "For a fixed finite complete-history set, any fixed injective code satisfying the same-object competitive-cost bound has the declared normalized first-source estimate C_N*sqrt(I_N)/N; uniform first-source controls transfer a root only under the owner’s genuine full-system stationary-chart and stability hypotheses.",
+      "interface": "complete-history-code-source-v1",
+      "outcome": "positive",
+      "kind": "analytic",
+      "scope_level": "family",
+      "hypotheses": {
+        "fixed_complete_record": "The probability law is positive and C1 on one fixed finite set of complete distinguishable histories; the field-independent code is injective on that same set.",
+        "competitive_cost": "The actual code obeys L_N<=c_U+d_N for the same object, with the stated code-mass/tail and Fisher-score bounds; golden weighted cost is not inferred from the notation D_min.",
+        "correlated_scope": "The correlated extension is proved for the declared finite, time-homogeneous Markov-history class; it does not identify a general quantum D0 history with that class.",
+        "root_transfer": "Exact-root transfer requires uniform first-source control and an actual full-system stationary chart/inverse and root-stability hypotheses; an invertible Poisson subblock alone is insufficient.",
+        "physical_admission": "No same-object admitted native decoder, compulsory complete D0 Cost-Info, or full matter/clock/preparation source is selected or proved."
+      },
+      "evidence": [
+        {
+          "ref": "bd36badebdd2989f866c70eaaf49733d3f5ca0f1",
+          "path": "02_REGISTRY/research/A4D_COMPLETE_CODE_CLASS_SOURCE_UNIVERSALITY_2026_10_19.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_complete_code_source_2026-10-19/theorem.md",
+          "sha256": "843c71731fdfc6ea4291996793ed304ffc90372e2ccf9c5e3ee4bf3421c8c78b"
+        },
+        {
+          "ref": "bd36badebdd2989f866c70eaaf49733d3f5ca0f1",
+          "path": "02_REGISTRY/research/sources/d0_complete_code_source_2026-10-19/README.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_complete_code_source_2026-10-19/README.md",
+          "sha256": "4366d2a406e15099b2b78d69cfcea5647a61db2c25dd4ca33a2b29f07c4cd2ca"
+        },
+        {
+          "ref": "bd36badebdd2989f866c70eaaf49733d3f5ca0f1",
+          "path": "02_REGISTRY/research/sources/d0_complete_code_source_2026-10-19/RESULT.json",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_complete_code_source_2026-10-19/RESULT.json",
+          "sha256": "ca381fac000d1b91f81754e108592d20115534336c796e8245888db592d763b6"
+        },
+        {
+          "ref": "bd36badebdd2989f866c70eaaf49733d3f5ca0f1",
+          "path": "02_REGISTRY/research/sources/d0_complete_code_source_2026-10-19/VALIDATION.json",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_complete_code_source_2026-10-19/VALIDATION.json",
+          "sha256": "681f656b150e23b73fa1d103b804cecdcb5ee478e2475bacdfbefdbb566d0255"
+        },
+        {
+          "ref": "bd36badebdd2989f866c70eaaf49733d3f5ca0f1",
+          "path": "02_REGISTRY/research/sources/d0_complete_code_source_2026-10-19/check_code_source.py",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_complete_code_source_2026-10-19/check_code_source.py",
+          "sha256": "7c13c56a0b9b7761298a5ea960f9983082ccf3499a23d9325f13f9cc05f0673d"
+        }
+      ],
+      "reported_state": "Pinned result-only to #334 commit bd36badebdd2989f866c70eaaf49733d3f5ca0f1. The analytic theorem is in theorem.md; the bounded checker replays with exact Q(sqrt(5))/rational controls and floating logarithmic estimates. Local numeric output agrees with the pinned RESULT.json within 1e-12 (last-bit floating variation only). The owner’s read-only analytical reviews are not independent registry acceptance. No application to native-programme-v1 is registered; physical decoder/cost admission, full-price source equality, and genuine full-system recovery remain open."
+    },
+    {
+      "id": "dmin-canonicality-source-bound-countermodel",
+      "owner": "complete-code-class research owner #334",
+      "statement": "In the declared literal-comparison interface, D_min canonicality, injectivity and golden F/R word costs alone do not imply a normalized code-minus-entropy source bound: at theta=1/2 the expected cost rate is 3/2 with derivative 1, while golden Shannon entropy has derivative 0.",
+      "interface": "complete-history-code-source-v1",
+      "outcome": "negative",
+      "kind": "exact-finite",
+      "scope_level": "finite",
+      "hypotheses": {
+        "comparison_interface": "Complete histories are distinguished by equality of their complete literal binary words; Can is identity on those classes.",
+        "missing_equivalence": "The compressed universal history is not assumed Delta-equivalent to the expanded Enc(X_N); every literal history remains represented.",
+        "scope_limit": "This is a countermodel to the implication from the listed canonicality/injectivity/counting premises alone, not a counterexample to the full D0 foundation or its actual physical Delta."
+      },
+      "evidence": [
+        {
+          "ref": "bd36badebdd2989f866c70eaaf49733d3f5ca0f1",
+          "path": "02_REGISTRY/research/A4D_COMPLETE_CODE_CLASS_SOURCE_UNIVERSALITY_2026_10_19.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_complete_code_source_2026-10-19/theorem.md",
+          "sha256": "843c71731fdfc6ea4291996793ed304ffc90372e2ccf9c5e3ee4bf3421c8c78b"
+        },
+        {
+          "ref": "bd36badebdd2989f866c70eaaf49733d3f5ca0f1",
+          "path": "02_REGISTRY/research/sources/d0_complete_code_source_2026-10-19/check_code_source.py",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_complete_code_source_2026-10-19/check_code_source.py",
+          "sha256": "7c13c56a0b9b7761298a5ea960f9983082ccf3499a23d9325f13f9cc05f0673d"
+        },
+        {
+          "ref": "bd36badebdd2989f866c70eaaf49733d3f5ca0f1",
+          "path": "02_REGISTRY/research/sources/d0_complete_code_source_2026-10-19/RESULT.json",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_complete_code_source_2026-10-19/RESULT.json",
+          "sha256": "ca381fac000d1b91f81754e108592d20115534336c796e8245888db592d763b6"
+        }
+      ],
+      "reported_state": "The exact finite literal-description control in the #334 owner gives rate 3/2 and source 1 at theta=1/2 while the entropy source is zero; the bounded checker reproduces the control. This refutes only the inference from the specified abstract interfaces, not actual D0 semantics. No physical no-go or native-programme application is claimed."
+    },
+    {
+      "id": "original-scene-rooted-n4-depth-four-sharpness",
+      "owner": "research owner #334; replayed in current task",
+      "statement": "On the original K(9,11,13) scene, full matrix-valued root-frame products of the 327 original triangle loops reconstruct all chord transports for arbitrary noncommuting proper-Lorentz edge assignments. Under the restriction to one root and no nonroot co-transport, 143 rooted depth-three loops see at most 858 of 1962 chord Lie directions; the 184 original root-based depth-four paths are sufficient and necessary to expose the remaining 1104.",
+      "interface": "original-scene-rooted-n4-lorentz-atlas-v1",
+      "outcome": "positive",
+      "kind": "exact-finite",
+      "scope_level": "finite",
+      "hypotheses": {
+        "original_graph": "The carrier is the original 33-vertex K(9,11,13) scene with 359 physical undirected edges and 718 orientations.",
+        "proper_lorentz_links": "Each directed edge is assigned a genuine SO+(1,3) matrix and reverse edges are exact inverses; nonidentity tree links and noncommuting curved links are allowed.",
+        "rooted_detector": "All products are compared in one fixed root frame; no physically paid nonroot co-transport is included.",
+        "sharp_depth": "The 143 available rooted three-step loops expose at most 858 of 1962 Lie coordinates; the 184 root-based four-step paths span the remaining 1104 under the stated detector restriction.",
+        "scope_fence": "This is finite scene-group observability. It does not identify the scene graph with the 4D Role lattice, select a native detector, or prove physical Einstein dynamics."
+      },
+      "evidence": [
+        {
+          "ref": "4b78c41a06da0353a0247b9da4646baf80ed9929",
+          "path": "02_REGISTRY/research/A4D_NATIVE_SCENE_FULL_NONABELIAN_327_LOOP_INVERSE_AND_BOOK_SOURCE_2648_2026_10_20.md",
+          "sha256": "88d9534eb21954a3937499b3fb51d10692ddc8374b0b3217b44fb901e80e99c6"
+        },
+        {
+          "ref": "4b78c41a06da0353a0247b9da4646baf80ed9929",
+          "path": "02_REGISTRY/research/sources/d0_native_two_three_clock_2026-10-20/check_nonabelian_327_triangle_scene_holonomy_inverse.mjs",
+          "sha256": "aff52c0ad7c570bc7ce24cc02145fefb34757401b233f20f61a4d729170c2904"
+        }
+      ],
+      "reported_state": "Source and checker are pinned to #334 commit 4b78c41a06da0353a0247b9da4646baf80ed9929. The root-frame mod-prime replay passes at three primes. The 4D Role action and paid nonroot reference remain unselected."
+    },
+    {
+      "id": "original-scene-234-book-lorentz-source-atlas-2648",
+      "owner": "research owner #334; replayed in current task",
+      "statement": "For the declared complete positive 2/3/4 Book × Golden/Bell17 construction on the original 33-vertex scene, a finite inverse recovers 686 scalar net-price coordinates and 1962 rooted SO+(1,3) coordinates, for a combined 2648-coordinate source chart, from the complete original history family.",
+      "interface": "original-scene-234-book-lorentz-source-v1",
+      "outcome": "positive",
+      "kind": "exact-finite",
+      "scope_level": "finite",
+      "hypotheses": {
+        "history_set": "The complete based closed original histories are retained at depths 2, 3, and 4: 718, 7722, and 257762 paths respectively.",
+        "clock": "The construction uses one common mathematical normalizer and attempt factors p, p^2, and p^3; the depth-four factor is hypothetical pending physical G0 selection.",
+        "complete_outcomes": "All 17 Golden/Bell categories, including the failure outcome, are retained; the declared path-conditioned CAR programme and common root frame are mathematical inputs.",
+        "coordinates": "The inverse reports 686 scalar directed-weight coordinates modulo 32 endpoint gauges and 1962 Lie coordinates from 327 rooted loop matrices; the finite checker uses floating-point residual tolerances.",
+        "scope_fence": "No physical Cost-Info/preparation/clock/work selector, independent L=4 Role-lattice control, same-action Einstein source, Ward, or physical refinement is proved."
+      },
+      "evidence": [
+        {
+          "ref": "4b78c41a06da0353a0247b9da4646baf80ed9929",
+          "path": "02_REGISTRY/research/A4D_NATIVE_SCENE_FULL_NONABELIAN_327_LOOP_INVERSE_AND_BOOK_SOURCE_2648_2026_10_20.md",
+          "sha256": "88d9534eb21954a3937499b3fb51d10692ddc8374b0b3217b44fb901e80e99c6"
+        },
+        {
+          "ref": "4b78c41a06da0353a0247b9da4646baf80ed9929",
+          "path": "02_REGISTRY/research/sources/d0_native_two_three_clock_2026-10-20/check_full_234_book_lorentz_2648_source.mjs",
+          "sha256": "e6f59a153743b3964414fe5976648b7eeabb357e303ddf33f6d5434964fd94b4"
+        }
+      ],
+      "reported_state": "Source and checker are pinned to #334 commit 4b78c41a06da0353a0247b9da4646baf80ed9929. The finite checker passes with numerical inverse residuals near machine precision; its output explicitly says GR_closed=false and lists the unproved physical inputs."
+    },
+    {
+      "id": "original-stage-resolved-book-selector-143484",
+      "owner": "research owner #334; replayed in current task",
+      "statement": "For the original two-depth (n=2,3) Book event law with one shared positive path-verification factor and the complete 143484-event record, the analytic inverse recovers both depth attempts, both acceptances, the common verifier, every closed-path scalar weight, and the absolute Perron Book action up to the original 32 endpoint similarities. Hence equality of the full record implies equality of the action as a smooth field function and of all its source jets.",
+      "interface": "original-stage-resolved-book-selector-v1",
+      "outcome": "positive",
+      "kind": "analytic",
+      "scope_level": "family",
+      "hypotheses": {
+        "full_stage_record": "All 8440 original 2/3 paths, all 17 Golden/Bell outcomes per path, and the four separately labelled early/late rejection outcomes are retained.",
+        "positive_chart": "The directed Book weights are strictly positive; g_2,g_3>0 with g_2+g_3=1; beta_2,beta_3 lie in (0,1); and the shared kappa is positive with kappa*Z_n(K)<1 for both depths.",
+        "shared_verifier": "The same unknown path-verification factor kappa is used at depths 2 and 3; this is a substantive selector hypothesis, not inferred from fixed gates.",
+        "inverse": "The full record first determines g_n and beta_n from stage counts, then kappa from five original loop outcomes, then every closed-path weight; the existing backtrack/odd-cycle inverse recovers K modulo 32 endpoint similarities.",
+        "source_jets": "For any smooth admissible field family within this positive chart, differentiating the same inverse recovers the first, second, and higher derivatives of the absolute scalar Book action.",
+        "scope_fence": "This recovers only the scalar net Book source. It does not identify the complete H+J+R Cost/Info/work action, admit physical G0 execution, supply the native 4D Role map, or close Einstein dynamics."
+      },
+      "evidence": [
+        {
+          "ref": "518ee207d790fdf9c13692a784ba3255625fd001",
+          "path": "02_REGISTRY/research/A4D_COMPLETE_STAGED_143484_BOOK_CLOCK_ABSOLUTE_SOURCE_SELF_CALIBRATION_2026_10_20.md",
+          "sha256": "73e4ce4a68649840544cda3d125c1c50d9c782d50cf86f4731a471e242892bef"
+        },
+        {
+          "ref": "518ee207d790fdf9c13692a784ba3255625fd001",
+          "path": "02_REGISTRY/research/sources/d0_native_two_three_clock_2026-10-20/check_complete_143484_stage_clock_cost_selector.mjs",
+          "sha256": "0a8e3046511c776fd203ddfc77d4bbe0b84f7a8e4de1de04269980d1e338f2d9"
+        }
+      ],
+      "reported_state": "The analytic inverse and its common-verifier hypothesis are pinned to prior #334 commit 518ee207d790fdf9c13692a784ba3255625fd001. The checker replay passes; actual physical common-filter selection, complete H+J+R admission, and GR remain open."
+    },
+    {
+      "id": "original-stage-depth-specific-verifier-source-nonidentifiability",
+      "owner": "research owner #334; current-task audit",
+      "statement": "If the two original Book depths have independent unknown verification factors kappa_2 and kappa_3, then for any smooth positive scalar c(y), the transformation K_uv→c(y)K_uv and kappa_n→kappa_n*c(y)^(-n) leaves every accepted and early/late stage-labelled probability unchanged while shifting the absolute Perron Book action by -log_phi(c(y)). Thus even the complete 143484-event archive does not identify its absolute scalar source without a common or independently calibrated cross-depth filter.",
+      "interface": "original-stage-resolved-book-selector-v1",
+      "outcome": "negative",
+      "kind": "analytic",
+      "scope_level": "family",
+      "hypotheses": {
+        "depth_specific_filters": "The probability model permits independent positive verification factors kappa_2(y) and kappa_3(y), each satisfying its corresponding normalization bound.",
+        "smooth_scaling": "A smooth positive scalar c(y) rescales every directed Book edge weight by c(y) and each depth-n verification factor by c(y)^(-n), within the admissible positive chart.",
+        "complete_record": "All accepted path outcomes and all four early/late rejection labels are observed; the invariance therefore holds for the entire two-stage record, not merely its terminal marginal.",
+        "consequence": "The complete record remains identical while the absolute Book Perron action and its field derivatives can change; source recovery needs one common verifier or an independently fixed/calibrated cross-depth rule.",
+        "scope_fence": "This is a no-go for unconditional absolute scalar Book-source identification under depth-specific filters. It is not a no-go for actual D0 if the native programme enforces a common filter, and it does not classify the full H+J+R action."
+      },
+      "evidence": [
+        {
+          "ref": "518ee207d790fdf9c13692a784ba3255625fd001",
+          "path": "02_REGISTRY/research/A4D_COMPLETE_STAGED_143484_BOOK_CLOCK_ABSOLUTE_SOURCE_SELF_CALIBRATION_2026_10_20.md",
+          "sha256": "73e4ce4a68649840544cda3d125c1c50d9c782d50cf86f4731a471e242892bef"
+        },
+        {
+          "ref": "518ee207d790fdf9c13692a784ba3255625fd001",
+          "path": "02_REGISTRY/research/sources/d0_native_two_three_clock_2026-10-20/check_complete_143484_stage_clock_cost_selector.mjs",
+          "sha256": "0a8e3046511c776fd203ddfc77d4bbe0b84f7a8e4de1de04269980d1e338f2d9"
+        }
+      ],
+      "reported_state": "The source document proves the scaling invariance analytically on the declared positive chart; the companion checker includes a finite hostile control. This pins the exact remaining scalar selector input: the physical verifier must be common across depths or independently calibrated."
+    },
+    {
+      "id": "original-staged-234-book-lorentz-source-4525440",
+      "owner": "research owner #334; current-task replay",
+      "statement": "For a constructed positive three-depth original-scene event model, the complete 2/3/4 Book histories with all 17 Golden/Bell outcomes and six early/late failure labels form 4525440 possible labels. The checker verifies normalization, recovery of the three attempt masses, early acceptances and one common verifier, plus the combined 686 scalar and 1962 rooted Lorentz source dimensions; a depth-specific-verifier control preserves the full staged law while hiding absolute Book scale.",
+      "interface": "original-staged-234-book-lorentz-source-v1",
+      "outcome": "positive",
+      "kind": "exact-finite",
+      "scope_level": "finite",
+      "hypotheses": {
+        "original_history_counts": "The original K(9,11,13) graph has 718, 7722 and 257762 based closed paths at depths 2, 3 and 4, respectively, for 266202 total.",
+        "attempt_and_acceptance_fixture": "The finite fixture uses Golden attempt masses (p^2,p^3,p^2) and early acceptances beta_n=p^2; it also checks recovery of these quantities from retained stages, but does not establish their physical execution by G0.",
+        "stage_record": "All 17 conditional Golden/Bell outcomes per accepted path and the six separately labelled early/late failures are retained; the common verifier satisfies kappa*Z_n(K)<1 at each depth.",
+        "source_coordinates": "The script reports 686 scalar transfer coordinates modulo endpoint gauge and 327*6=1962 rooted Lie coordinates. Its probability and inverse controls are floating-point checks; the dimension sum is not a symbolic Jacobian-rank proof.",
+        "scope_fence": "The script explicitly reports actual_G0_fullStep_234_preparation=false, native_4D_Role_Palatini_source_selected=false, and GR_closed=false. No physical action, source, Ward, or refinement is established."
+      },
+      "evidence": [
+        {
+          "ref": "01b047a188a4b41590949cea096d68e4e922dac4",
+          "path": "02_REGISTRY/research/sources/d0_native_two_three_clock_2026-10-20/check_staged_234_rooted_2648_book_source.mjs",
+          "sha256": "c9e89ac5e0773d99636ec563c4026476639ca73ab5e71622f9148ee1a2b3d54b"
+        }
+      ],
+      "reported_state": "The checker source is pinned to #334 commit 01b047a188a4b41590949cea096d68e4e922dac4. It was independently rerun on live #334 head 0e1849bd7bf6a87e9731801206fd5ccd1041bb63 and passes. Its output preserves the actual-G0, native 4D source, and GR closure boundaries."
+    },
+    {
+      "id": "original-role40-six-root-triangle-star-pullback",
+      "owner": "research owner #334; exact checker replayed in current task",
+      "statement": "Mapping the six original based plaquette matrices at each Golden LEFT Role site to six original rooted three-step triangle words gives exact off-shell equality of the unchanged nonlinear six-face Palatini star observable and its scene pullback. Consequently the full 16 coframe plus 24 shared-link source derivatives agree; an independent three-prime L=2 replay checks all 640 genuine source directions.",
+      "interface": "original-role40-six-root-triangle-pullback-v1",
+      "outcome": "positive",
+      "kind": "exact-finite",
+      "scope_level": "finite",
+      "hypotheses": {
+        "original_geometry": "The carrier is the original six-based SO+(1,3) Role Palatini star on the existing Golden LEFT 4D Role lattice, with the unchanged coframe, eta, Hodge and orientation conventions.",
+        "rooted_encoding": "At each Role site, six distinct original K(9,11,13) rooted three-edge loops encode the six based plaquette matrices; the same scene chords may vary by Role address in the mathematical map.",
+        "variation_rule": "Role coframe and globally shared proper-Lorentz links are the independent Euler coordinates. A shared Role link is differentiated through every adjacent face exactly once; mapped scene chords are not extra independent Euler fields.",
+        "finite_replay": "The regression uses an L=2 periodic Role carrier with 16 sites, 64 actual links and 96 faces and checks 256 coframe plus 384 link directions over three finite fields; the algebraic observable identity is the general statement.",
+        "physical_boundary": "The address-conditioned scene control, same-run Book03 Cost-Info/H+J+R selection, full failure and reference costs, matter source, native stationarity and continuum/refinement remain unproved."
+      },
+      "evidence": [
+        {
+          "ref": "0e1849bd7bf6a87e9731801206fd5ccd1041bb63",
+          "path": "02_REGISTRY/research/A4D_MINIMAL_SIX_ORIGINAL_SCENE_TRIANGLES_REPRODUCE_FULL_ROLE40_PALATINI_2026_10_20.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_role_root_triangles_2026-10-20/six_root_triangles_owner.md",
+          "sha256": "8ec694e47077de7e1c908052242957144d041a045e072aead0e71c4512a7d5ca"
+        },
+        {
+          "ref": "0e1849bd7bf6a87e9731801206fd5ccd1041bb63",
+          "path": "02_REGISTRY/research/sources/d0_native_two_three_clock_2026-10-20/check_six_original_scene_triangles_full_role_40_euler.mjs",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_role_root_triangles_2026-10-20/check_six_original_scene_triangles_full_role_40_euler.mjs",
+          "sha256": "088bcb8860307e20b216f2a0a035b6d2adcabf3c936dff89a6a1ad1c285ed2e5"
+        }
+      ],
+      "reported_state": "Pinned to #334 head 0e1849bd7bf6a87e9731801206fd5ccd1041bb63 and independently replayed in the current task with the bundled Node runtime. The checker reports PASS_SIX_ORIGINAL_ROOTED_TRIANGLES_PRESERVE_ALL_40_ROLE_EULER and GR_closed=false. This is a sufficient mathematical geometry interface; physical G0 actuation and action selection remain open."
+    },
+    {
+      "id": "original-book-triangle-odds-960-affine-pressure-no-go",
+      "owner": "research owner #380; exact controls replayed in current task",
+      "statement": "For the original K(9,11,13) scene, opposite rooted triangle Book-weight odds cancel all 33 vertex Info terms and isolate oriented directed-edge Cost differences; a triangle signal comes from additive directed-edge prices exactly when its 960 mixed triple contrasts vanish. Further, an affine 24-coordinate Lorentz-to-edge-price map followed by positive scalar Perron pressure has positive-semidefinite Hessian and cannot equal the original Palatini Hessian of inertia (12,12). The no-go is limited to this affine pressure-only action.",
+      "interface": "original-scene-book-triangle-odds-pressure-boundary-v1",
+      "outcome": "negative",
+      "kind": "analytic",
+      "scope_level": "family",
+      "hypotheses": {
+        "original_scene": "The finite carrier is the original K(9,11,13) scene, with all 718 directed edges and 1287 original A-B-C triangles.",
+        "additive_book_price": "History weights are the original phi powers of directed-edge Cost minus theta-split endpoint Info; opposite complete rooted triangles share their endpoints.",
+        "pressure_only": "The candidate entire action is positive scalar Perron pressure of the 718-edge transfer matrix, with no additional H+J+R, memory, measurement or preparation/work/clock source.",
+        "affine_map": "The 24 independent original homogeneous Lorentz coordinates map affinely into the directed edge prices.",
+        "target_hessian": "The compared original Palatini Hessian is the owned 24-direction matrix with inertia (12 positive, 12 negative).",
+        "physical_boundary": "No actual native field-to-edge-price or Born/Book binding is supplied; this result is not a physical D0 or GR no-go."
+      },
+      "evidence": [
+        {
+          "ref": "3ffff0fb76aa86132139c647c883baf240afe3a1",
+          "path": "02_REGISTRY/research/A4D_BOOK_TRIANGLE_ODDS_960_COST_COMPATIBILITY_AND_CARTAN_HESSIAN_BOUNDARY_2026_10_19.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_book_triangle_odds_2026-10-19/owner.md",
+          "sha256": "e3543a4b4b1d1b8f1006d060d326a4c20e17f88588bf73af098da591a74c5afa"
+        },
+        {
+          "ref": "3ffff0fb76aa86132139c647c883baf240afe3a1",
+          "path": "02_REGISTRY/research/sources/d0_book_triangle_odds_2026-10-19/check_d0_triangle_cost_interface.py",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_book_triangle_odds_2026-10-19/check_d0_triangle_cost_interface.py",
+          "sha256": "afff085aba287c671dec2ddb58b00fa2260dd069f552c292fa077e6542ae3293"
+        },
+        {
+          "ref": "3ffff0fb76aa86132139c647c883baf240afe3a1",
+          "path": "02_REGISTRY/research/A4D_DOUBLE_NULL_EXACT_FINITE_QUADRATIC_CARTAN_EINSTEIN_BOOTSTRAP_2026_10_19.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_book_triangle_odds_2026-10-19/original_palatinistar_hessian_owner.md",
+          "sha256": "d73bb769ffcfa0ca5c5dbef2b341444ca6753ad339b3c53d083a82ecd9fbae47"
+        }
+      ],
+      "reported_state": "Exact source-fork comparison (2026-10-20): #334/#380 merge-base is 03bd6fed84830e72e55341cc38215c880d287357. The #380 child-only delta is exactly three added files (owner note and two checkers), all absent at current #334 head 0e1849bd7bf6a87e9731801206fd5ccd1041bb63. The parent quartic-vector blob is unchanged across the merge-base, #380 head and current #334 head. Both scoped #380 checkers were replayed in the current task; exact outputs are pinned in replay_outputs.txt, and the quartic comparison is separately indexed as stored-quartic-vector-literal-profile-mismatch. #380 remains open Draft without Task metadata; its PR guard fails only because the body lacks exactly one Repository line. Its evidence remains result-only and is not accepted/consumed by #334; no native-programme application or scientific promotion."
+    },
+    {
+      "id": "full128-opposite-null-two-round-shannon-order-source",
+      "owner": "same-branch #334 full128 order-readout research result; indexed result-only",
+      "statement": "For the original CAR16/full128 instrument at the pinned L=4 nonzero Fourier mode, the retained port-0/blank-label event distinguishes the opposite-null J23 commutator with exact positive derivative (42633-14157*sqrt(5))/5120000. Applying the same assigned instrument twice with separate fresh outcome records and retaining every one of the 16,384 ordered histories gives a strictly positive complete Golden-Shannon mixed order source in [8.0230437693961338, 8.0230437693961339]*10^-8.",
+      "interface": "full128-opposite-null-order-source-v1",
+      "outcome": "positive",
+      "kind": "exact-finite",
+      "scope_level": "finite",
+      "hypotheses": {
+        "carrier": "The original 16-component CAR and 128-outcome full instrument are fixed, with reference128 retained as an unchanged full-rank spectator.",
+        "fixture": "L=4, h=1/4, nu=3/5, mode (0,0,0,1), and system marginal I16/16; only the role-2 link is varied by N2 and Nbar3.",
+        "assigned_sequence": "The two Lorentz increments are inputs to two successive evaluations of the existing matrix instrument; a fresh retained 128-outcome record is used per round. This does not prove that D0 physically admits this per-increment operation.",
+        "complete_history": "The Shannon calculation retains all 16,384 ordered outcomes in both orders. There are 1,764 positive-support histories and 14,620 zero-support histories per order; each zero-history q log q contribution has zero mixed derivative by the pinned factorization control.",
+        "source_scope": "The interval is the mixed derivative of the complete pointer Shannon law only. The assigned two-round instrument is not thereby identified with the full Book Cost-Info law or its controller/work/preparation/clock source.",
+        "physical_boundary": "No physical field-to-increment compiler, literal fullStep admission, native fresh-record execution, compulsory action selection, Einstein-source equality, Ward identity, refinement or GR closure is established."
+      },
+      "evidence": [
+        {
+          "ref": "0e1849bd7bf6a87e9731801206fd5ccd1041bb63",
+          "path": "02_REGISTRY/research/A4D_OPPOSITE_NULL_LIE_COMPLETE_JULIA_ORDER_MEMORY_BOOK_SOURCE_2026_10_19.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_full128_order_memory_2026-10-19/owner.md",
+          "sha256": "4f32d226dcf38284cae32ec78937915ae6f149271097107f3078efc0ba5545f0"
+        },
+        {
+          "ref": "0e1849bd7bf6a87e9731801206fd5ccd1041bb63",
+          "path": "02_REGISTRY/research/sources/d0_native_full128_order_readout_2026-10-19/RESULT.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_full128_order_memory_2026-10-19/result.md",
+          "sha256": "a69ff3093d9f16c66903b7692e809a3f46abda15ee6d74962d10fc08b5750c68"
+        },
+        {
+          "ref": "0e1849bd7bf6a87e9731801206fd5ccd1041bb63",
+          "path": "02_REGISTRY/research/sources/d0_native_full128_order_readout_2026-10-19/check_native_full128_order_readout.py",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_full128_order_memory_2026-10-19/check_full128_pointer.py",
+          "sha256": "176739372e85d8cbd2ba48f7cc28cfe508395ae84007d8462a3f502d596a87a2"
+        },
+        {
+          "ref": "0e1849bd7bf6a87e9731801206fd5ccd1041bb63",
+          "path": "02_REGISTRY/research/sources/d0_native_full128_order_readout_2026-10-19/check_two_round_complete_shannon_order_source.py",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_full128_order_memory_2026-10-19/check_two_round_shannon.py",
+          "sha256": "3759eb9a7826efdb167c73d2185acc5c8c82d271b5dde1b208d4e74db85f18ae"
+        },
+        {
+          "ref": "0e1849bd7bf6a87e9731801206fd5ccd1041bb63",
+          "path": "02_REGISTRY/research/sources/d0_native_full128_order_readout_2026-10-19/TWO_ROUND_COMPLETE_SHANNON_SOURCE.json",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_full128_order_memory_2026-10-19/two_round_shannon_source.json",
+          "sha256": "a0207ca49665062c04e8dcb9cf072aa20daa15df9eef7533a686beb8ea6b9de3"
+        },
+        {
+          "ref": "0e1849bd7bf6a87e9731801206fd5ccd1041bb63",
+          "path": "02_REGISTRY/research/sources/d0_native_full128_order_readout_2026-10-19/check_complete_shannon_order_source.py",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_full128_order_memory_2026-10-19/check_complete_shannon.py",
+          "sha256": "26424be5c2278828af81d331b8edc110dd8c4eefad4fc97e2c2e5fa813de178a"
+        },
+        {
+          "ref": "0e1849bd7bf6a87e9731801206fd5ccd1041bb63",
+          "path": "02_REGISTRY/research/sources/d0_native_full128_order_readout_2026-10-19/COMPLETE_SHANNON_SOURCE.json",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_full128_order_memory_2026-10-19/complete_shannon_source.json",
+          "sha256": "3111d22f61d3c03ae7ed34c114a53ef69f1c8a9fe5b6102e197dfe2cd9be5ddd"
+        },
+        {
+          "ref": "0e1849bd7bf6a87e9731801206fd5ccd1041bb63",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_full128_order_memory_2026-10-19/SOURCE_PINS.json",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_full128_order_memory_2026-10-19/SOURCE_PINS.json",
+          "sha256": "d58f481dcc57f0c98a841f09df885e21d144538a21b02e858528be9abad2250c"
+        }
+      ],
+      "reported_state": "Historical evidence is pinned to #334 commit 0e1849bd7bf6a87e9731801206fd5ccd1041bb63, not its current head 63da786b4d4f8416bb0699305ab599794068de3f; the recorded source hashes identify that exact snapshot. At that snapshot the full128 pointer checker passed 326 exact controls and the complete two-round Shannon checker passed 1,803 controls, including all 16,384 ordered histories and zero-support mixed-derivative checks. This remains finite assigned-instrument evidence only: no physical per-increment admission or complete Cost-Info action is shown, and there is no accepted application to constitutive, native_sector, matter_source_ward or positive_gr and no scientific promotion."
+    },
+    {
+      "id": "native-retained-record-oneway-actuation-gap",
+      "owner": "#334 retained-record admission proof; exact checker replayed in current task",
+      "statement": "For every finite word generated by active complete orthogonals U_A tensor I_R and controlled additive record updates C_f, and every faithful complete isometric extension retaining the same old-record translation probe, the probe charge is invariant. The actual fixed p0 complete golden-record preparation and its first-unequal target differ by the exact positive charge gap Delta=2*a*p*q^3/(1+q+q^2+q^3), so every operation in that class stays at least Delta/2 (about 0.03658) from the target. Any epsilon-accurate complete actuation must satisfy ||[X,U]|| >= Delta-2*epsilon.",
+      "interface": "native-retained-record-oneway-actuation-boundary-v1",
+      "outcome": "negative",
+      "kind": "analytic",
+      "scope_level": "family",
+      "hypotheses": {
+        "generated_class": "Only active complete orthogonals tensored with record identity, controlled additive record translations, their words/reversals, and faithful complete extensions are classified.",
+        "fixed_experiment": "Use the declared complete p0 raw preparation, first-unequal route, actual common-record target, all 33 scene vertices and the transported old-record probe.",
+        "complete_state": "All failure/old-record coordinates remain present; no reset, trace, postselection, change of probe or initial target preparation is used.",
+        "escape_routes": "First-odd routing and coherent actuation on an old record break the invariant and are outside the restricted class; their physical admission is not established.",
+        "scope_fence": "This is not a no-go for every D0 operation, the broader addressed G/CNOT compiler, the full native core, or positive GR. It identifies a necessary actuation property for this target."
+      },
+      "evidence": [
+        {
+          "ref": "0e1849bd7bf6a87e9731801206fd5ccd1041bb63",
+          "path": "02_REGISTRY/research/A4D_NATIVE_RETAINED_RECORD_ADMISSION.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_retained_record_boundary_2026-10-09/owner.md",
+          "sha256": "05c50904b149fcffcc93d8d52ffa66da260654cf9bfc47b80354d59fef4fe336"
+        },
+        {
+          "ref": "0e1849bd7bf6a87e9731801206fd5ccd1041bb63",
+          "path": "02_REGISTRY/research/certificates/a4d_native_retained_record_admission.lean",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_retained_record_boundary_2026-10-09/retained_record_admission.lean",
+          "sha256": "60315f9b6069e4e10fabd9db5b230d241e6b13e53054d7c492fd722c95000123"
+        },
+        {
+          "ref": "0e1849bd7bf6a87e9731801206fd5ccd1041bb63",
+          "path": "02_REGISTRY/research/certificates/a4d_native_retained_record_admission_check.py",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_retained_record_boundary_2026-10-09/check_retained_record_admission.py",
+          "sha256": "0fedfee8a287a0bfa70b842b064ae49d56bc3456073c3957a4412202e5bd3f4a"
+        },
+        {
+          "ref": "0e1849bd7bf6a87e9731801206fd5ccd1041bb63",
+          "path": "02_REGISTRY/research/certificates/a4d_native_retained_record_admission_certificate.json",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_retained_record_boundary_2026-10-09/certificate.json",
+          "sha256": "0bfbb02423f28dbbf1baaf014729e9e313cbadbae976f36dbf4ca4b2ed830dd1"
+        },
+        {
+          "ref": "0e1849bd7bf6a87e9731801206fd5ccd1041bb63",
+          "path": "02_REGISTRY/research/certificates/a4d_native_retained_record_admission_results.json",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_retained_record_boundary_2026-10-09/results.json",
+          "sha256": "8aca3f581f68326310b6edf5539aa92d595457ce36a7a2fd9458198b5e9fa8c6"
+        },
+        {
+          "ref": "0e1849bd7bf6a87e9731801206fd5ccd1041bb63",
+          "path": "02_REGISTRY/research/certificates/a4d_native_retained_record_admission_output.txt",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_retained_record_boundary_2026-10-09/lean_output.txt",
+          "sha256": "ca6cc9098256c4abfe8869723ed44372e278e76d90e907c033c72a1122a0ca6c"
+        },
+        {
+          "ref": "0e1849bd7bf6a87e9731801206fd5ccd1041bb63",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_retained_record_boundary_2026-10-09/SOURCE_PINS.json",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_retained_record_boundary_2026-10-09/SOURCE_PINS.json",
+          "sha256": "6af2d9537afb46bae51f53cf03d2df24ce7441949d101430d4f463e354739b25"
+        }
+      ],
+      "reported_state": "Pinned to #334 head 0e1849bd7bf6a87e9731801206fd5ccd1041bb63. The exact checker passed with its pinned certificate: 296 controls. It is a restricted-class actuation boundary only; no physical D0 obstruction, accepted native application or positive GR closure is inferred."
+    },
+    {
+      "id": "native-actionprotocol-book03-pullback-boundary",
+      "owner": "CONTROL result from PR #375; indexed as a scoped G0/constitutive boundary",
+      "statement": "The typed ActionProtocol fiber allows arbitrary nonnegative excess above unit cost on every nonidentity transition, so it does not choose relative prices or a field-source map. Under the explicitly diagnostic Cost=ActionProtocol.action identification, two admissible profiles change the same-endpoint K(9,11,13) return coefficient by the exact factor phi, and increasing one edge strictly decreases the complete fixed-memory depth-two coefficient. Separately, the constrained Book03 feedback operator has a complete mathematical P/U/z source, but identical base operator data admit complement-preserving field lifts with arbitrary real first source. The missing physical history-to-price and geometry-to-operator pullbacks remain explicit.",
+      "interface": "native-actionprotocol-book03-pullback-boundary-v1",
+      "outcome": "negative",
+      "kind": "analytic",
+      "scope_level": "family",
+      "hypotheses": {
+        "action_protocol": "Only the owned axioms action(x,x)=0 and action(x,y)>=1 for x!=y are assumed; no additivity, symmetry, composition, refinement or field dependence is added.",
+        "finite_history_response": "The K(9,11,13) depth-two result identifies Cost with ActionProtocol.action only for this diagnostic, holding the path Info and memory assignment fixed. It does not establish physical admission of either completion.",
+        "book03_feedback": "The feedback component uses the literal constrained split Q=I-P and includes all mathematical P, U and z tangents; no physical map from the D0 state to these operators is assumed.",
+        "source_boundary": "Equal base P,Q,U,z,F and action value can have different field derivatives under distinct complement-preserving mathematical lifts. This proves non-identifiability from the operator law alone, not physical freedom of the native programme.",
+        "scope_fence": "No no-go for all D0, complete native price, matter Ward, physical stationarity, curved roots or GR is claimed."
+      },
+      "evidence": [
+        {
+          "ref": "34dc2ddd6cf40803b95cf8afe66f9dd87f0bf22a",
+          "path": "02_REGISTRY/research/A4D_NATIVE_BOOK03_OPERATOR_VARIATION_BOUNDARY.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_actionprotocol_book03_boundary_2026-10-19/owner.md",
+          "sha256": "ecdb60f750cebc10312ea0079973370920da754f08e64a4ad0cf5432768b8f02"
+        },
+        {
+          "ref": "34dc2ddd6cf40803b95cf8afe66f9dd87f0bf22a",
+          "path": "03_FORMALIZATION/D0/Foundation/EndogenousActionQuantum.lean",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_actionprotocol_book03_boundary_2026-10-19/EndogenousActionQuantum.lean",
+          "sha256": "5ca12d6190aca5f75a898e1e7a5c1296a71ed1ff04b963bd3df32f34e8569e94"
+        },
+        {
+          "ref": "34dc2ddd6cf40803b95cf8afe66f9dd87f0bf22a",
+          "path": "03_FORMALIZATION/D0/Research/NativeHistoryActionResponse.lean",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_actionprotocol_book03_boundary_2026-10-19/NativeHistoryActionResponse.lean",
+          "sha256": "fe2664a6815c685ea1477a6421bac433ce3b80e47bc739b266c3a1e29c34446d"
+        },
+        {
+          "ref": "34dc2ddd6cf40803b95cf8afe66f9dd87f0bf22a",
+          "path": "03_FORMALIZATION/D0/Research/GoldenCylinderOneStepBridge.lean",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_actionprotocol_book03_boundary_2026-10-19/GoldenCylinderOneStepBridge.lean",
+          "sha256": "9bb5a92ec6eea4957a0f207865eb3a20097b3709ff49f0d11620f6ca474cd9c0"
+        },
+        {
+          "ref": "34dc2ddd6cf40803b95cf8afe66f9dd87f0bf22a",
+          "path": "02_REGISTRY/research/certificates/a4d_book03_feedback_variation_check.py",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_actionprotocol_book03_boundary_2026-10-19/book03_feedback_variation_check.py",
+          "sha256": "4a801ee871d6a446bb382c10220e171f34e39b23df085e3abdc2afe10b0af952"
+        },
+        {
+          "ref": "34dc2ddd6cf40803b95cf8afe66f9dd87f0bf22a",
+          "path": "02_REGISTRY/research/certificates/a4d_book03_feedback_variation_result.json",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_actionprotocol_book03_boundary_2026-10-19/book03_feedback_variation_result.json",
+          "sha256": "fe61c021c00eaab2011d1a10221e81ac05c896b4ee05ced1ce31013b49c88900"
+        },
+        {
+          "ref": "34dc2ddd6cf40803b95cf8afe66f9dd87f0bf22a",
+          "path": "01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_actionprotocol_book03_boundary_2026-10-19/BOOK_01.md",
+          "sha256": "668fc904b0585cc7fd5175babead5225c22051422c9c64e197d7b0d42d225342"
+        },
+        {
+          "ref": "34dc2ddd6cf40803b95cf8afe66f9dd87f0bf22a",
+          "path": "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_actionprotocol_book03_boundary_2026-10-19/BOOK_03.md",
+          "sha256": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d"
+        },
+        {
+          "ref": "34dc2ddd6cf40803b95cf8afe66f9dd87f0bf22a",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_actionprotocol_book03_boundary_2026-10-19/SOURCE_PINS.json",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_actionprotocol_book03_boundary_2026-10-19/SOURCE_PINS.json",
+          "sha256": "275069941317b6e399d7a01573a61ead1cc9cf5313794388ba2d4f3f0bd13e04"
+        }
+      ],
+      "reported_state": "Pinned to exact open PR #375 head 34dc2ddd6cf40803b95cf8afe66f9dd87f0bf22a. Its guards and Lean build pass. The feedback checker reports PASS_SCOPED_BOOK03_CONSTRAINED_OPERATOR_VARIATION with 20 controls; the Lean path-response result is conditional on the diagnostic cost identification. No application to native-programme-v1 or positive_gr is accepted."
+    },
+    {
+      "id": "original-binary-event-geometric-car-source-proportionality",
+      "owner": "registered physical-source research owner #334",
+      "statement": "On the declared k=10,d=1056 common null/star fixture, the conditional binary expected surprisal, modal-good cost and odds contrast have positive multiples of the existing DJ_trace on the fixed-oldRIGHT eligible geometry+CAR tangent slice. This preserves that finite source projection’s roots; preparation/clock directions, full Book price and normalizer, event admission and physical selection remain open.",
+      "interface": "physical-binary-source-gate-v1",
+      "outcome": "positive",
+      "kind": "exact-finite",
+      "scope_level": "finite",
+      "hypotheses": {
+        "binary_event": "The measured outcomes are the original complete good/failure binary verification event at k=10,d=1056.",
+        "common_base": "The common null/star base has equal addresswise good probability and the owner’s actual matched oldRIGHT weights.",
+        "eligible_tangent": "The equality is restricted to the owner-declared geometric+CAR directions; preparation and clock rows are not included."
+      },
+      "evidence": [
+        {
+          "ref": "0e1849bd7bf6a87e9731801206fd5ccd1041bb63",
+          "path": "02_REGISTRY/research/A4D_PHYSICAL_BINARY_RETURN_BOOK_PRICE_AND_EINSTEIN_SOURCE_GATE_2026_10_19.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_physical_binary_source_gate_2026-10-19/A4D_PHYSICAL_BINARY_RETURN_BOOK_PRICE_AND_EINSTEIN_SOURCE_GATE_2026_10_19.md",
+          "sha256": "8c02f6bd280dceb7323e7b590496a43e8950589664ee0358af2659ce8e725f0b"
+        },
+        {
+          "ref": "0e1849bd7bf6a87e9731801206fd5ccd1041bb63",
+          "path": "02_REGISTRY/research/sources/d0_physical_binary_return_2026-10-19/check_binary_native_price_source.py",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_physical_binary_source_gate_2026-10-19/check_binary_native_price_source.py",
+          "sha256": "d9b71f9f82d8ea5f60ea5764476e3883def01072d0ec26a763099e76947e0b8f"
+        }
+      ],
+      "reported_state": "Conditional finite source equivalence only; not a selected physical action or GR closure."
+    },
+    {
+      "id": "full128-modal-surprisal-flat-source-mismatch",
+      "owner": "registered full128 modal-history research owner #334",
+      "statement": "In the original flat-shell full1024 modal fixture, the conditional modal surprisal has a nonzero J23 first source (about -4.581893845), while the original Palatini flat-vacuum Lorentz-link row is zero. This is a mismatch only if that bare modal surprisal is the complete action on the same tangent with no compensating native term; it is not a general D0 no-go.",
+      "interface": "physical-binary-source-gate-v1",
+      "outcome": "negative",
+      "kind": "exact-finite",
+      "scope_level": "finite",
+      "hypotheses": {
+        "bare_action": "The modal surprisal alone is identified with the complete action.",
+        "same_variation": "The modal derivative and Palatini row use the same original flat-shell J23 tangent.",
+        "no_compensation": "No other native source or price term contributes on that tangent."
+      },
+      "evidence": [
+        {
+          "ref": "0e1849bd7bf6a87e9731801206fd5ccd1041bb63",
+          "path": "02_REGISTRY/research/A4D_NATIVE_FULL128_GLOBAL_MODAL_HISTORY_MDLCLOCK_AND_SOURCE_2026_10_19.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_physical_binary_source_gate_2026-10-19/A4D_NATIVE_FULL128_GLOBAL_MODAL_HISTORY_MDLCLOCK_AND_SOURCE_2026_10_19.md",
+          "sha256": "21d5e9a289abd32aa955d80ce4a7909d99b7335048795de83a0b255ca4340811"
+        },
+        {
+          "ref": "0e1849bd7bf6a87e9731801206fd5ccd1041bb63",
+          "path": "02_REGISTRY/research/sources/d0_physical_binary_return_2026-10-19/check_full128_global_map_native_history.py",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_physical_binary_source_gate_2026-10-19/check_full128_global_map_native_history.py",
+          "sha256": "7cbe15c11182cfec2ba35546d9e35cabca3fd47073e2328b952c91056afcfb83"
+        }
+      ],
+      "reported_state": "Conditional mismatch; full physical action identity is unestablished."
+    },
+    {
+      "id": "full-history-binary-source-loss",
+      "owner": "registered full-history coherence research owner #334",
+      "statement": "In the checked original full-history fixture, fixing the coarse binary statistics leaves nonzero hidden classical and coherent source derivatives (-2.440420090455 and +1.173585686469). The binary aggregation therefore loses source information in this fixture; this is not a universal obstruction to other complete readouts.",
+      "interface": "physical-binary-source-gate-v1",
+      "outcome": "negative",
+      "kind": "exact-finite",
+      "scope_level": "finite",
+      "hypotheses": {
+        "fixture": "Use the owner’s original flat-shell Golden full-history channel and declared source tangent.",
+        "coarse_record": "Only the binary aggregation is retained when comparing source statistics."
+      },
+      "evidence": [
+        {
+          "ref": "0e1849bd7bf6a87e9731801206fd5ccd1041bb63",
+          "path": "02_REGISTRY/research/A4D_PHYSICAL_FULL_HISTORY_COHERENCE_SOURCE_AND_BINARY_COMPRESSION_GATE_2026_10_19.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_physical_binary_source_gate_2026-10-19/A4D_PHYSICAL_FULL_HISTORY_COHERENCE_SOURCE_AND_BINARY_COMPRESSION_GATE_2026_10_19.md",
+          "sha256": "87e44b774107e714c3cc6f1cc0419bf9e78028f56117ed0a0d4b75da2244c0fd"
+        },
+        {
+          "ref": "0e1849bd7bf6a87e9731801206fd5ccd1041bb63",
+          "path": "02_REGISTRY/research/sources/d0_physical_binary_return_2026-10-19/check_full_history_binary_information_loss.py",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_physical_binary_source_gate_2026-10-19/check_full_history_binary_information_loss.py",
+          "sha256": "d6a93b00a65eb7ed140f093341ee57e2e001481878c6cd1b7ac84aa7b27af0f0"
+        }
+      ],
+      "reported_state": "Fixture-specific information-loss result; no universal binary-readout no-go."
+    },
+    {
+      "id": "native-af-preparation-source-preserving-optimizer",
+      "owner": "registered Golden AF preparation research owner #334",
+      "statement": "For the declared second full AF-record price, its finite optimizer has positive READY factor 1.018750574778 and preserves the source-bearing geometry+CAR ratio on the owner’s field-fixed effect/class-support slice. It does not establish compulsory whole-program preparation selection or cancel preparation, clock and controller rows.",
+      "interface": "physical-binary-source-gate-v1",
+      "outcome": "positive",
+      "kind": "exact-finite",
+      "scope_level": "finite",
+      "hypotheses": {
+        "price": "Use the owner’s actual second AF-record price, not a sum of first- and second-record prices.",
+        "field_support": "The effect and class support are field-fixed on the tested geometry+CAR directions.",
+        "source_support": "Only the declared source-bearing READY class contributes to the compared field source."
+      },
+      "evidence": [
+        {
+          "ref": "0e1849bd7bf6a87e9731801206fd5ccd1041bb63",
+          "path": "02_REGISTRY/research/A4D_PHYSICAL_GOLDEN_PREPARATION_PRESSURE_AND_BOOK_SOURCE_BOUNDARY_2026_10_19.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_physical_binary_source_gate_2026-10-19/A4D_PHYSICAL_GOLDEN_PREPARATION_PRESSURE_AND_BOOK_SOURCE_BOUNDARY_2026_10_19.md",
+          "sha256": "a9fa5d31145aba5e02156f872c2ceaa53f684a11e1742e433f4c8000a0dac8de"
+        },
+        {
+          "ref": "0e1849bd7bf6a87e9731801206fd5ccd1041bb63",
+          "path": "02_REGISTRY/research/sources/d0_physical_binary_return_2026-10-19/check_d0_physical_golden_preparation_pressure.py",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_physical_binary_source_gate_2026-10-19/check_d0_physical_golden_preparation_pressure.py",
+          "sha256": "172ec9090de93ec80fe4f41d570aa9738e24084f384e3c701f94cf5cadae0e96"
+        }
+      ],
+      "reported_state": "Conditional finite source-preserving preparation optimizer; not a physical selector."
+    },
+    {
+      "id": "naive-af-plus-binary-mean-no-preparation-root",
+      "owner": "registered Golden AF preparation research owner #334",
+      "statement": "On the declared unrestricted AF preparation simplex, the naive sum of the second AF-record price and binary pointer mean has preparation derivative -1.146432968593 along the tested whole-sector tangent and is linear rather than stationary. This excludes only that additive concatenation, not the actual complete D0 action.",
+      "interface": "physical-binary-source-gate-v1",
+      "outcome": "negative",
+      "kind": "exact-finite",
+      "scope_level": "finite",
+      "hypotheses": {
+        "additive_composition": "Treat the second AF-record price and the binary pointer mean as additive terms of one action.",
+        "domain": "Use the owner’s unrestricted normalized AF preparation simplex and whole-sector tangent.",
+        "binary_mean": "The binary term is the declared complete pointer mean for the same common-base fixture."
+      },
+      "evidence": [
+        {
+          "ref": "0e1849bd7bf6a87e9731801206fd5ccd1041bb63",
+          "path": "02_REGISTRY/research/A4D_PHYSICAL_GOLDEN_PREPARATION_PRESSURE_AND_BOOK_SOURCE_BOUNDARY_2026_10_19.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_physical_binary_source_gate_2026-10-19/A4D_PHYSICAL_GOLDEN_PREPARATION_PRESSURE_AND_BOOK_SOURCE_BOUNDARY_2026_10_19.md",
+          "sha256": "a9fa5d31145aba5e02156f872c2ceaa53f684a11e1742e433f4c8000a0dac8de"
+        },
+        {
+          "ref": "0e1849bd7bf6a87e9731801206fd5ccd1041bb63",
+          "path": "02_REGISTRY/research/sources/d0_physical_binary_return_2026-10-19/check_d0_physical_golden_preparation_pressure.py",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_physical_binary_source_gate_2026-10-19/check_d0_physical_golden_preparation_pressure.py",
+          "sha256": "172ec9090de93ec80fe4f41d570aa9738e24084f384e3c701f94cf5cadae0e96"
+        }
+      ],
+      "reported_state": "Scoped incompatibility of one naive sum; actual D0 composition law remains open."
+    },
+    {
+      "id": "serial-conditional-gram-source-ratio-obstruction",
+      "owner": "conditional-Gram source research owner #363; unreviewed child fork",
+      "statement": "For the declared serial construction B1^n V4 B0^n, fixed positive clocks b,d and independent endpoint/bridge source jets, the leading endpoint and bridge curvature coefficients have ratio 1+d/(2b)>1, while the comparison target requires 1. At b=d=1 the coefficients are (3/4,3/4,-1/2), so a matched common static sum masks the independent-jet mismatch. This is an obstruction only to this serial factorization.",
+      "interface": "conditional-exit-gram-source-v1",
+      "outcome": "negative",
+      "kind": "analytic",
+      "scope_level": "family",
+      "hypotheses": {
+        "serial_factorization": "Use the owner’s two endpoint heat filters and one serial 4D no-mark middle factor B1^n V4 B0^n.",
+        "independent_jets": "The two endpoint and central 4D Hodge-source jets are varied independently in one common Hilbert chart.",
+        "clock": "The endpoint and bridge durations are fixed positive multiples b*beta and d*beta under the owner’s uniform C1 heat expansion.",
+        "comparison": "The target source comparison requires endpoint-to-bridge curvature coefficient ratio one."
+      },
+      "evidence": [
+        {
+          "ref": "33911defe1607b94a895b455d3357ad2f3039e12",
+          "path": "02_REGISTRY/research/A4D_NATIVE_CONDITIONAL_GRAM_SERIAL_SOURCE_RATIO_2026_10_17.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_conditional_exit_grams_2026-10-17/serial_source_ratio.md",
+          "sha256": "4d71ce9b0ac60533d04d4d67d91b3ff43fc249fa8b354aa71c9f92dd052784c8"
+        },
+        {
+          "ref": "33911defe1607b94a895b455d3357ad2f3039e12",
+          "path": "02_REGISTRY/research/sources/d0_native_conditional_gram_2026-10-17/check_serial_gram.py",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_conditional_exit_grams_2026-10-17/check_serial_gram.py",
+          "sha256": "cbf7e2fa30b4e5a95c7b0af75867c4e2f7b07b2c56ec275f4097429054f20cc4"
+        }
+      ],
+      "reported_state": "Conditional serial-architecture obstruction from #363; no all-programme or physical D0 no-go."
+    },
+    {
+      "id": "orthogonal-exit-conditional-gram-einstein-source-ratio",
+      "owner": "conditional-exit source research owner #363; unreviewed child fork",
+      "statement": "Under the declared orthogonally tagged complete-exit construction and fixed-window C1/macroscopic heat hypotheses, the mathematical logdet comparison has three independent leading curvature-source coefficients (1,1,-1), matching the stated conditional Einstein ratio; its separate vacuum-volume coefficient is 3/2. The owner’s analytic derivation uses the full exit rows, while the numerical companion checks the Gram identities with a positive square-root-complement proxy. No literal fullStep admission, compulsory Cost-Info selection or original raw #216 conclusion follows.",
+      "interface": "conditional-exit-gram-source-v1",
+      "outcome": "positive",
+      "kind": "analytic",
+      "scope_level": "family",
+      "hypotheses": {
+        "complete_exits": "All complementary exit labels are retained in the owner’s orthogonally tagged comparison; no failure branch is discarded.",
+        "golden_controller": "Use the stated original Golden amplitudes and field-independent z=p^2 controller split.",
+        "independent_jets": "Endpoint and 4D bridge Hodge-source jets are independent within the declared fixed Hilbert chart.",
+        "fixed_window": "Assume the owner’s uniform C1 heat expansion on the fixed invariant window and the separate macroscopic long-wave limit.",
+        "clock": "The shared central 4D no-mark duration is twice each endpoint duration."
+      },
+      "evidence": [
+        {
+          "ref": "33911defe1607b94a895b455d3357ad2f3039e12",
+          "path": "02_REGISTRY/research/A4D_NATIVE_ORTHOGONAL_EXIT_DOUBLE_CLOCK_EINSTEIN_SOURCE_2026_10_17.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_conditional_exit_grams_2026-10-17/orthogonal_exit_source.md",
+          "sha256": "74ac35440478b9a241797922c79c734b28986c64aa2835473fac02504fb820fa"
+        },
+        {
+          "ref": "33911defe1607b94a895b455d3357ad2f3039e12",
+          "path": "02_REGISTRY/research/sources/d0_native_conditional_gram_2026-10-17/check_orthogonal_exit.py",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_conditional_exit_grams_2026-10-17/check_orthogonal_exit.py",
+          "sha256": "7ca0d9d725d9f84ab18b12c307bc7d325cfd5a335f7ee20b1270fd559b04bb3e"
+        }
+      ],
+      "reported_state": "Conditional analytic source-ratio construction from open Draft #363. Its four child files are absent from current #334 head; PR guards currently fail at body metadata validation. Result-only."
+    },
+    {
+      "id": "stored-quartic-vector-literal-profile-mismatch",
+      "owner": "Independent exact replay of #380 quartic comparison",
+      "statement": "The pinned #334 [a^2 b^2] 1008-vector has 118 nonzero link and 20 nonzero coframe entries; its extracted coframe maps differ from the compact continuum sigma4/chi4 profile in the same untransformed coordinates. This does not test allowed gauge/kernel lifts.",
+      "interface": "saved-quartic-representative-v1",
+      "outcome": "negative",
+      "kind": "exact-finite",
+      "scope_level": "finite",
+      "hypotheses": {
+        "stored_vector": "The exact 1008-entry rational vector is pinned at the common #334/#380 base commit 03bd6fed84830e72e55341cc38215c880d287357 and has SHA-256 443c6fe34ae9fa8251838f28cebd5705f55ab6add51e1bc38b3b54f3702ef40f.",
+        "coordinate_convention": "The comparison applies the saved official ordering and same untransformed coframe coordinates; no coordinate, gauge or kernel map is applied.",
+        "compact_profile": "The compared continuum candidate is sigma4=-(x^2+y^2)^2/128 in the null-leg scale and chi4=3(x^2+y^2)^2/1024 in each transverse conformal leg for A=(1,0), B=(0,1).",
+        "checker_scope": "The checker validates stored-vector length, sparsity and selected exact coefficients; it does not rerun the 840x1008 finite Euler solve or classify its full solution space."
+      },
+      "evidence": [
+        {
+          "ref": "3ffff0fb76aa86132139c647c883baf240afe3a1",
+          "path": "02_REGISTRY/research/A4D_BOOK_TRIANGLE_ODDS_960_COST_COMPATIBILITY_AND_CARTAN_HESSIAN_BOUNDARY_2026_10_19.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_book_triangle_odds_2026-10-19/owner.md",
+          "sha256": "e3543a4b4b1d1b8f1006d060d326a4c20e17f88588bf73af098da591a74c5afa"
+        },
+        {
+          "ref": "3ffff0fb76aa86132139c647c883baf240afe3a1",
+          "path": "02_REGISTRY/research/sources/d0_book_triangle_odds_2026-10-19/check_saved_quartic_normal_form.py",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_book_triangle_odds_2026-10-19/check_saved_quartic_normal_form.py",
+          "sha256": "7738cb2971a344f4d60e1ae0fbc9cd6c539a8e32e31014fa63654c6e45a74058"
+        },
+        {
+          "ref": "03bd6fed84830e72e55341cc38215c880d287357",
+          "path": "02_REGISTRY/research/sources/d0_two_null_crossing_2026-10-19/quartic_full_spatial_jet_solution.json",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_two_null_crossing_2026-10-19/quartic_full_spatial_jet_solution.json",
+          "sha256": "443c6fe34ae9fa8251838f28cebd5705f55ab6add51e1bc38b3b54f3702ef40f"
+        },
+        {
+          "ref": "3ffff0fb76aa86132139c647c883baf240afe3a1",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_book_triangle_odds_2026-10-19/replay_outputs.txt",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_book_triangle_odds_2026-10-19/replay_outputs.txt",
+          "sha256": "fe788ca74d5b8e9a4f0270c4c52953619558d89646701bca1404a4664ac4f7ae"
+        }
+      ],
+      "reported_state": "Replayed in the current task from #380 head 3ffff0fb76aa86132139c647c883baf240afe3a1 and the quartic vector at the #334/#380 common base. Exact rational checks confirm stored-vector support and literal sigma4/chi4 mismatch. The output is pinned in replay_outputs.txt. Result-only; no gauge-aware finite range, physical admission or GR closure is inferred."
+    },
+    {
+      "id": "complete-stage-resolved-book-source-inverse-143484",
+      "owner": "Existing scientific owner #334; checker replayed independently in current task",
+      "statement": "In the declared two-stage original-scene model with one shared unknown path filter, the complete 143484-outcome record self-calibrates both moving depth acceptances and the filter, then reconstructs the full scalar Perron Book action and its source jets modulo 32 endpoint gauges.",
+      "interface": "stage-resolved-book-common-filter-source-v1",
+      "outcome": "positive",
+      "kind": "analytic",
+      "scope_level": "family",
+      "hypotheses": {
+        "two_stage_model": "The 8440 original two-/three-step return words, 17 Golden/Bell outputs per accepted word and four early/late depth-rejection labels follow the exact probability law in the pinned owner.",
+        "shared_filter": "The unknown path-verification filter kappa is the same function at depths 2 and 3; beta2 and beta3 may vary independently and move with fields.",
+        "complete_record": "Every accepted history and each early/late rejection stage is retained; no event is discarded.",
+        "physical_boundary": "The checker and owner do not show that native D0 admits or pays this law, selects a common filter, or identifies it with compulsory full H+J+R."
+      },
+      "evidence": [
+        {
+          "ref": "0e1849bd7bf6a87e9731801206fd5ccd1041bb63",
+          "path": "02_REGISTRY/research/A4D_COMPLETE_STAGED_143484_BOOK_CLOCK_ABSOLUTE_SOURCE_SELF_CALIBRATION_2026_10_20.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_native_two_three_clock_2026-10-20/owner.md",
+          "sha256": "73e4ce4a68649840544cda3d125c1c50d9c782d50cf86f4731a471e242892bef"
+        },
+        {
+          "ref": "0e1849bd7bf6a87e9731801206fd5ccd1041bb63",
+          "path": "02_REGISTRY/research/sources/d0_native_two_three_clock_2026-10-20/check_complete_143484_stage_clock_cost_selector.mjs",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_native_two_three_clock_2026-10-20/check_complete_143484_stage_clock_cost_selector.mjs",
+          "sha256": "0a8e3046511c776fd203ddfc77d4bbe0b84f7a8e4de1de04269980d1e338f2d9"
+        },
+        {
+          "ref": "0e1849bd7bf6a87e9731801206fd5ccd1041bb63",
+          "path": "02_REGISTRY/research/sources/d0_native_two_three_clock_2026-10-20/replay_output.txt",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_native_two_three_clock_2026-10-20/replay_output.txt",
+          "sha256": "219efdeda0310cfa63d8e1f36f35fbe661fe61c2c59fbda017c77a90aee0ca4f"
+        }
+      ],
+      "reported_state": "The #334 owner gives the analytic inverse and its hypotheses. The self-contained checker was replayed with Node v24.19.0: all printed controls pass, including full 143484-event normalization, 718-edge reconstruction, all 1287 triangle products and absolute Perron recovery. Its output explicitly records actual_full_G0_HJR_admission=false and GR_closed=false. Result-only; no positive-GR application.",
+      "navigation_alias_of": "original-stage-resolved-book-selector-143484"
+    },
+    {
+      "id": "depth-specific-filter-book-source-nonidentifiability",
+      "owner": "Existing scientific owner #334; hostile control replayed independently in current task",
+      "statement": "If the two depths have independent unknown filters, K->cK and kappa_n->kappa_n c^-n leave all 143484 accepted and early/late stage probabilities unchanged while shifting the absolute scalar Book action; a complete staged record alone is therefore insufficient without a common-filter or independent calibration premise.",
+      "interface": "stage-resolved-book-depth-filter-countermodel-v1",
+      "outcome": "negative",
+      "kind": "analytic",
+      "scope_level": "family",
+      "hypotheses": {
+        "complete_record": "All 143484 accepted and early/late stage probabilities are observed, including all original based histories and Golden/Bell labels.",
+        "independent_filters": "The allowed model includes separate positive moving verification filters kappa2 and kappa3.",
+        "rescaling": "A common positive edge-weight scaling c is compensated by kappa_n->kappa_n c^-n while beta_n is unchanged.",
+        "physical_boundary": "This counterfamily diagnoses what must be selected or calibrated in the mathematical program; it is not a no-go for native D0."
+      },
+      "evidence": [
+        {
+          "ref": "0e1849bd7bf6a87e9731801206fd5ccd1041bb63",
+          "path": "02_REGISTRY/research/A4D_COMPLETE_STAGED_143484_BOOK_CLOCK_ABSOLUTE_SOURCE_SELF_CALIBRATION_2026_10_20.md",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_native_two_three_clock_2026-10-20/owner.md",
+          "sha256": "73e4ce4a68649840544cda3d125c1c50d9c782d50cf86f4731a471e242892bef"
+        },
+        {
+          "ref": "0e1849bd7bf6a87e9731801206fd5ccd1041bb63",
+          "path": "02_REGISTRY/research/sources/d0_native_two_three_clock_2026-10-20/check_complete_143484_stage_clock_cost_selector.mjs",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_native_two_three_clock_2026-10-20/check_complete_143484_stage_clock_cost_selector.mjs",
+          "sha256": "0a8e3046511c776fd203ddfc77d4bbe0b84f7a8e4de1de04269980d1e338f2d9"
+        },
+        {
+          "ref": "0e1849bd7bf6a87e9731801206fd5ccd1041bb63",
+          "path": "02_REGISTRY/research/sources/d0_native_two_three_clock_2026-10-20/replay_output.txt",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_native_two_three_clock_2026-10-20/replay_output.txt",
+          "sha256": "219efdeda0310cfa63d8e1f36f35fbe661fe61c2c59fbda017c77a90aee0ca4f"
+        }
+      ],
+      "reported_state": "The exact scaling symmetry is derived in the #334 owner; the pinned checker reproduces the hidden-source control with all stage-labelled outcomes retained. This is a scoped failure of unconditional scalar Book identifiability, not a physical D0 or GR no-go.",
+      "navigation_alias_of": "original-stage-depth-specific-verifier-source-nonidentifiability"
+    },
+    {
+      "id": "double-null-degree5-selected-rref-ward-obstruction",
+      "owner": "exact fifth-order Ward replay of the registered selected branch in #379",
+      "statement": "For the selected H=a*x, J=b*y, h=1 RREF representative satisfying the 13 registered lower-order amplitude checks, the exact fifth-order coframe-gradient Ward source is nonzero in [a^3*b^2] and [a^2*b^3]; therefore no fifth-amplitude correction extends this representative.",
+      "interface": "double-null-degree5-coframe-gradient-ward-v1",
+      "outcome": "negative",
+      "kind": "exact-finite",
+      "scope_level": "finite",
+      "hypotheses": {
+        "profile": "The perpendicular crossed-null chart H=a*x, J=b*y at h=1.",
+        "action": "The original six based plaquettes with the fixed Lorentz-star pairing and odd Lorentz curvature.",
+        "selected_lower_order_branch": "The exact mixed-quartic RREF representative with two specified [a^2*b] coframe modes, followed by the zero-free-parameter RREF representatives at [a^3*b] and [a*b^3].",
+        "prior_replay": "All 40 Euler rows vanish at the six lower orders, [a^2*b], [a*b^2], [a^2*b^2], [a^3], [b^3], [a^3*b] and [a*b^3].",
+        "fifth_order_variation": "The Lorentz exponential is evaluated through amplitude degree five; the tested coframe-gradient Ward projection is a necessary compatibility condition for any fifth-degree correction because those new fields enter through the flat linearized Euler operator.",
+        "exact_source": "[a^3*b^2], internal component 0: 3*x/32-3/128. [a^2*b^3], internal component 1: -x/128+11*y/128+13/256. Other internal components at these two orders vanish.",
+        "scope_fence": "Only this selected lower-order representative is excluded. Remaining homogeneous lower-order modes, other carriers, arbitrary mesh spacing, all-order roots, matter, native physical selection and GR closure remain open."
+      },
+      "evidence": [
+        {
+          "ref": "a0a8e1b96009bf0e64f33bc2be72e2208d6e0d8f",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_degree5_ward_selected_branch_2026-10-20/check_degree5_ward_selected_branch.py",
+          "sha256": "5824f30566906f3141389eaa38a253c65ef21bc9e58ef97d4bdbc757f8464439"
+        },
+        {
+          "ref": "a0a8e1b96009bf0e64f33bc2be72e2208d6e0d8f",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_degree5_ward_selected_branch_2026-10-20/result.json",
+          "sha256": "7bd637ffde2ddb3a2e85619a2d02d90d323f7ae6ed65377e18ee5c65a128ca42"
+        },
+        {
+          "ref": "a0a8e1b96009bf0e64f33bc2be72e2208d6e0d8f",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_degree5_ward_selected_branch_2026-10-20/output.txt",
+          "sha256": "d47686d2c89b2fecd23fc0e6548ebe3ae6ccf7e6e51545d8cb5ca53894925654"
+        },
+        {
+          "ref": "a0a8e1b96009bf0e64f33bc2be72e2208d6e0d8f",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_degree5_ward_selected_branch_2026-10-20/scope.md",
+          "sha256": "8013e61ca5abc172a7d32ca5d840891785d0886efda669021d6ce2e2719c8ba2"
+        },
+        {
+          "ref": "a0a8e1b96009bf0e64f33bc2be72e2208d6e0d8f",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_degree5_ward_selected_branch_2026-10-20/check_full40_symbolic_ward_identities.cjs",
+          "sha256": "fc6381285b369599a8994103822141bfe2f1942ad83a04510fd751293b4b512d"
+        },
+        {
+          "ref": "a0a8e1b96009bf0e64f33bc2be72e2208d6e0d8f",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_degree5_ward_selected_branch_2026-10-20/ward_identity_output.txt",
+          "sha256": "0e2abfb57f55544af50cc45dd7069cfefb9f44b6027c567ede10c6e04b18299c"
+        },
+        {
+          "ref": "7a593f6ccd31837786a2f1c62a3fca82ae8aa9c8",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_quartic_free_mode_jet_2026-10-19/check_quartic_free_mode_jet.py",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_quartic_free_mode_jet_2026-10-19/check_quartic_free_mode_jet.py",
+          "sha256": "36e6312770341bddb44c349c2025e7a3b385bcb7fa6a31f0f68cc778d854e574"
+        },
+        {
+          "ref": "12245f705982260c32512e648788a7dcd13b0b5b",
+          "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_asymmetric_order4_jet_2026-10-19/check_asymmetric_order4_jet.py",
+          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_double_null_asymmetric_order4_jet_2026-10-19/check_asymmetric_order4_jet.py",
+          "sha256": "c727f0f8dff5fa02c44e1150955f9ff164ed130ad3eb098fe3ffdb9a748fec41"
+        }
+      ],
+      "reported_state": "The four exact adjoint coframe-gradient Ward directions are certified by 18 Laurent-symbol checks and the selected branch gives two nonzero fifth-order compatibility polynomials. This blocks only a fifth-order extension of that representative; the lower-order homogeneous kernel space remains untested."
+    },
+    {
+      "id": "original-q8-spin-sheet-current-fullstep-boundary",
+      "owner": "Open #334; typed bridge at fb5d6a5; conditional selector at 9ef8f99",
+      "statement": "The original SO/vector-exterior CAR16 pointer kills the Q8 central -1, while the same Fock16 admits an exact parity-even real Cl(1,3)/Spin(1,3)/Q8 representation, invariant indefinite observer form and positive future-causal quadratic current. A conditional relative-path Golden interferometer distinguishes the center only if controlled Q8 is admitted. The original Q8 center now has a typed map into the pre-existing Golden controlled-sign port, with an existing forward-only comparator and retained clock; this is mathematical interface evidence, not proof that Book03/G0 routes or pays for it. A later conditional model shows that identical scalar Book law and primitive price do not distinguish Q8 sheets; if complete Golden conditional Shannon output entropy is explicitly charged as the negative prospective M1 Info term, the all-negative triangle syndrome is uniquely selected modulo vertex gauge. That constitutive identification is not established: detector output entropy need not be source information. Literal fullStep still has no Q8/scene input; actual G0 admission, paid actuation, selected spin action/stress and Ward remain open.",
+      "interface": "q8-spin-sheet-native-bridge-v1",
+      "outcome": "positive",
+      "kind": "exact-finite",
+      "scope_level": "finite",
+      "hypotheses": {
+        "local_scene": "The finite memory input is the original K(9,11,13) graph with 33 vertices, 359 undirected edges, 718 directed edges and 1287 filled ABC triangles.",
+        "exterior_blindness": "The original SO/vector-exterior Golden marker is blind to the central -1; this statement is limited to that representation.",
+        "same_carrier_spin": "The exact real Clifford/Spin representation is constructed from the original four CAR creation/annihilation modes on the same Fock16 carrier and preserves Fock parity; it is a mathematical representation, not a selected action.",
+        "global_role_spin": "The periodic Fin(2)^4 Role regulator has 16 flat central Spin winding sectors; the benchmark distinguishes their global CAR16 kinetic spectra, but it is not the selected native hodgeCarDirac/stress action.",
+        "observer_current": "The native CAR16 Gamma0 observer bilinear is indefinite but Spin invariant; J0 is positive and the quadratic current is future-causal for real spinors. This does not construct the selected completely positive G0 instrument or sourced Dirac stress.",
+        "conditional_interferometer": "The complete Golden relative-sign probabilities assume a controlled Q8 center on one retained history branch; that control is not in literal fullStep.",
+        "current_fullStep": "The current GoldenCoherentMemory.fullStep signature has only real a,p inputs and a real Fin4 matrix output, with no UQuat, scene face or Spin representation input.",
+        "scope": "No paid Q8 actuation, boost implementation, full native spin matter source, global Spin-boundary selection, full H+J+R selection, refinement or GR closure follows.",
+        "typed_interferometer_route": "The latest pinned bridge maps original qONE/qNEG into the existing Golden controlled-sign parameter and reuses the owned forward-only Q8 comparator and reversible stage register. Physical routing from retained Book03 Q8 history, blank preparation, oldRIGHT protection, clock/work and complete Cost-Info payment remain open.",
+        "conditional_information_selector": "The all-negative central triangle sector uniquely maximizes complete joint Book/Golden Shannon information only under the explicit model premise that conditional Golden output entropy enters prospective Cost-Info with the negative sign. This is not established as the actual Book03 verified-source Info law; a stochastic detector's output entropy is not automatically information about an unknown source state."
+      },
+      "evidence": [
+        {
+          "ref": "8456cd4ba1228752ac1de80baf97050c240fdaba",
+          "path": "02_REGISTRY/research/A4D_Q8_SPIN_SHEET_327_TRIANGLE_INVERSE_AND_960_COHERENCE_GATES_2026_10_20.md",
+          "sha256": "f41ee9b75ae2030ca213cd6fd31d906b26107cc7eb9de4a26fe51dfb2bc09074"
+        },
+        {
+          "ref": "8456cd4ba1228752ac1de80baf97050c240fdaba",
+          "path": "02_REGISTRY/research/sources/d0_native_two_three_clock_2026-10-20/check_q8_spin_sheet_triangle_inverse.py",
+          "sha256": "dbcb1ff5540c11cfe6d8eb525d2f817dfd5ff63026f42d5a8bae5c74cd47207f"
+        },
+        {
+          "ref": "8456cd4ba1228752ac1de80baf97050c240fdaba",
+          "path": "03_FORMALIZATION/D0/Foundation/Omega8Center.lean",
+          "sha256": "3adb5c0a3d1b3d352cd90debabd7be4009a168dd67e97f317161777b61f745f4"
+        },
+        {
+          "ref": "8456cd4ba1228752ac1de80baf97050c240fdaba",
+          "path": "03_FORMALIZATION/D0/Representation/GoldenCoherentMemory.lean",
+          "sha256": "6ea993e22c8b7d0b8a93b9537d51893cb4aff45af858d82ec7f9005ead96e2d7"
+        },
+        {
+          "ref": "3f831683c301f72f25b11bb4de903c590af71d83",
+          "path": "02_REGISTRY/research/A4D_NATIVE_CAR16_REAL_SPIN13_Q8_GOLDEN_COHERENT_SHEET_BRIDGE_2026_10_20.md",
+          "sha256": "12ff87857a75832d03fe701a4f68254b0dd496c629c88bf0227e10180cae10ee"
+        },
+        {
+          "ref": "3f831683c301f72f25b11bb4de903c590af71d83",
+          "path": "02_REGISTRY/research/sources/d0_native_spin_q8_car16_2026-10-20/check_original_car16_clifford_spin_golden.py",
+          "sha256": "d34bf9aaa95998f64ada9b2e5b3f45ecb3740a6254aef0e0d6bfe7759437b1f0"
+        },
+        {
+          "ref": "ebd436446985ead546d98f32eb69b5bd25e1838c",
+          "path": "02_REGISTRY/research/A4D_NATIVE_CAR16_REAL_SPIN13_Q8_GOLDEN_COHERENT_SHEET_BRIDGE_2026_10_20.md",
+          "sha256": "59ee0830258aba164b7ee110240ac82ce186d75ada178de399fc35c10773c3f2"
+        },
+        {
+          "ref": "ebd436446985ead546d98f32eb69b5bd25e1838c",
+          "path": "02_REGISTRY/research/sources/d0_native_spin_q8_car16_2026-10-20/check_original_car16_clifford_spin_golden.py",
+          "sha256": "41dc0b5b087bc6313eb6c39eac21d1722727280edc9ce25260fb3d327ffa503b"
+        },
+        {
+          "ref": "ebd436446985ead546d98f32eb69b5bd25e1838c",
+          "path": "02_REGISTRY/research/sources/d0_native_spin_q8_car16_2026-10-20/check_original_role4_global_spin_twists.py",
+          "sha256": "42d03c7976bfad30e261b1a1cf4ddb14019562c0cfc35a1af782e3d4d33f7fbb"
+        },
+        {
+          "ref": "9cd16820d020aed107b6db6215c44cfe3b7ea6f2",
+          "path": "02_REGISTRY/research/A4D_NATIVE_CAR16_REAL_SPIN13_Q8_GOLDEN_COHERENT_SHEET_BRIDGE_2026_10_20.md",
+          "sha256": "59ee0830258aba164b7ee110240ac82ce186d75ada178de399fc35c10773c3f2"
+        },
+        {
+          "ref": "9cd16820d020aed107b6db6215c44cfe3b7ea6f2",
+          "path": "02_REGISTRY/research/sources/d0_native_spin_q8_car16_2026-10-20/check_original_car16_clifford_spin_golden.py",
+          "sha256": "41dc0b5b087bc6313eb6c39eac21d1722727280edc9ce25260fb3d327ffa503b"
+        },
+        {
+          "ref": "9cd16820d020aed107b6db6215c44cfe3b7ea6f2",
+          "path": "02_REGISTRY/research/sources/d0_native_spin_q8_car16_2026-10-20/check_original_role4_global_spin_twists.py",
+          "sha256": "42d03c7976bfad30e261b1a1cf4ddb14019562c0cfc35a1af782e3d4d33f7fbb"
+        },
+        {
+          "ref": "fb5d6a57948d3469a4839be27ec45a7d763985ce",
+          "path": "02_REGISTRY/research/A4D_LITERAL_GOLDEN_M1_FUTURE_MDL_Q8_ORDER_PORT_TYPED_BRIDGE_2026_10_20.md",
+          "sha256": "92694b16bc1c9648305a3a50de6c5189edc27f7f4fd53554392ee0d2fcc4737f"
+        },
+        {
+          "ref": "fb5d6a57948d3469a4839be27ec45a7d763985ce",
+          "path": "02_REGISTRY/research/sources/d0_mdl_binary_generator_2026-10-20/check_literal_native_fin4_golden_future_archive.mjs",
+          "sha256": "242eb3d907ab65dfa9ec11cc9215a7e8fa33e2b39e3775c5c23690f1d99f4aa0"
+        },
+        {
+          "ref": "9ef8f99bcdf87323a8da9b51d4b8ecc5cec9b32f",
+          "path": "02_REGISTRY/research/A4D_CONDITIONAL_BOOK_GOLDEN_INFO_Q8_SPIN_SHEET_SOURCE_SELECTOR_2026_10_20.md",
+          "sha256": "9ffc2f0675d0969e01d92f934dfd5099ce2484c7028bccbaf6388c6d72b0cf23"
+        },
+        {
+          "ref": "9ef8f99bcdf87323a8da9b51d4b8ecc5cec9b32f",
+          "path": "02_REGISTRY/research/sources/d0_mdl_binary_generator_2026-10-20/check_complete_book_golden_conditional_information_spin_selector.mjs",
+          "sha256": "aaf1a223cb56ba40abb86e3c53489b87090178c7c1fe0b10d815682266cb4a08"
+        }
+      ],
+      "reported_state": "At the earlier pinned #334 commits, exact same-carrier Spin/Q8, CAR-current and Role-twist controls are recorded. The typed bridge pinned at fb5d6a57948d3469a4839be27ec45a7d763985ce identifies an existing Golden controlled-sign port and forward-only Q8 comparator/clock, while keeping actual Book03/G0 routing and payment open. The later conditional selector at snapshot 9ef8f99bcdf87323a8da9b51d4b8ecc5cec9b32f reports that, under the named Shannon-as-Info premise, all-negative triangle syndrome maximizes complete joint Book/Golden conditional information; the same source expressly does not establish that this is Book03's physical Info law. Source owners report 33 direct bridge checker groups and 19 selector checker groups; this registry update did not independently replay them. No full native H+J+R source, selected Spin stress, Ward or GR closure is asserted."
+    },
+    {
+      "id": "q8-future-mdl-conditional-327-archive-bits",
+      "owner": "Open scientific integrator PR #334 at pinned head cc64f5aae20809cf4e6b4ba2506ff749a1efffa3",
+      "statement": "For the original K(9,11,13) Q8 Spin sheets, the complete future-profile quotient is the coarsest sound action-stable identification. If admitted future Spin tests distinguish all 2^327 relative sheets modulo 32 vertex gauges, every future-sufficient binary archive needs at least 327 bits; the original 327 independent ABC triangle labels achieve it and 960 parity checks constrain consistency. Current fullStep/G0 does not establish admission of those probes.",
+      "interface": "q8-spin-sheet-native-bridge-v1",
+      "outcome": "positive",
+      "kind": "exact-finite",
+      "scope_level": "finite",
+      "hypotheses": {
+        "original_q8_carrier": "The finite source is the original 359-edge Spin lift over the fixed SO connection, modulo 32 local central vertex gauges, with 1287 original ABC triangle histories.",
+        "future_spin_tests": "The 327 relative Spin-sheet classes are distinguished only under the explicit conditional premise that a faithful native future Spin-test family is admitted.",
+        "minimal_archive": "The archive preserves the complete future observational profile under the actual admitted action/test alphabet; no outside catalogue of tests is added.",
+        "physical_boundary": "The current GoldenCoherentMemory.fullStep type does not itself license these Spin tests or select their physical cost; no full H+J+R or Einstein source is proved."
+      },
+      "evidence": [
+        {
+          "ref": "cc64f5aae20809cf4e6b4ba2506ff749a1efffa3",
+          "path": "02_REGISTRY/research/A4D_M1_MINIMAL_GENERATOR_FUTURE_CONTEXT_ARCHIVE_Q8_SPIN_UNIVERSALITY_2026_10_20.md",
+          "sha256": "ce7180fce26e4d7fc5ef19c89e725c65fdb2a87d6c531825f7273a5211e78842"
+        },
+        {
+          "ref": "cc64f5aae20809cf4e6b4ba2506ff749a1efffa3",
+          "path": "02_REGISTRY/research/sources/d0_mdl_binary_generator_2026-10-20/check_native_q8_future_archive_mdl_327.mjs",
+          "sha256": "c3e1edd4ba2cf082aacccf6257519bff5abac59a3138c7b09cf7dbadc4666a6b"
+        },
+        {
+          "ref": "cc64f5aae20809cf4e6b4ba2506ff749a1efffa3",
+          "path": "02_REGISTRY/research/sources/d0_mdl_binary_generator_2026-10-20/check_finite_future_contextual_mdl_partition.mjs",
+          "sha256": "07a2dfbb0ae305a58b8f676ed9753db7ab9403bbf97a20e8ee45a74ef2efd53a"
+        },
+        {
+          "ref": "cc64f5aae20809cf4e6b4ba2506ff749a1efffa3",
+          "path": "03_FORMALIZATION/D0/Foundation/EmpiricalTheoryFactorization.lean",
+          "sha256": "8f23e47a09092947dfa6cbeb848d920ff841896730fa1611214906b4b98e3ed3"
+        }
+      ],
+      "reported_state": "Result-only: both independent finite Node checkers were rerun and passed; the Lean build passed at the pinned #334 head cc64f5aae20809cf4e6b4ba2506ff749a1efffa3. The 327-bit memory bound is conditional on native future Spin-test admission. No application to constitutive, native_sector or positive_gr is accepted; physical source selection and GR_closed remain open."
+    },
+    {
+      "id": "original-golden17-shannon-vertical-no-descent",
+      "owner": "Open scientific integrator PR #334; pinned evidence commit 9cd16820d020aed107b6db6215c44cfe3b7ea6f2",
+      "statement": "On the original L=2 Role carrier, the single-link J23 orbit keeps all 16 star densities zero while the complete 17-outcome, 96-face Golden pointer Shannon changes, with H96″(0)=-0.0005338570392207947 and H96'(0.15)=-0.00007982869969225259; it cannot factor through f. On a second original shared-link direction, Palatini site densities are nonzero but the Shannon even difference is zero while the signed J23 marker recovers the orientation-odd source. Thus this pointer alone both adds unsupported vertical information and loses a needed signed first source. A distinct full 8440-history Book cost can have an ideal-square remainder, but neither price is selected as the compulsory full D0 action.",
+      "interface": "golden17-vertical-source-descent-v1",
+      "outcome": "negative",
+      "kind": "exact-finite",
+      "scope_level": "finite",
+      "hypotheses": {
+        "original_role_carrier": "The orbit uses the original L=2 Role lattice, 16 sites, 64 shared proper-Lorentz links and 96 based six-star faces.",
+        "single_link_variation": "Only U_(0,0)(theta)=exp(theta J23) varies; the original Hodge/star densities f_x(theta) are exactly zero for all 16 sites and all theta.",
+        "pointer_candidate": "H96 is the complete original positive Golden17 pointer Shannon in log_phi units with both fresh flags, every Golden/Bell outcome and Bell failure retained; no physical selection is assumed.",
+        "odd_source_control": "A second original Role shared-link direction has nonzero Palatini site-density first source; the even Shannon difference is zero there, while the signed J23 marker reproduces the orientation-odd Lie coordinate.",
+        "scope": "The result refutes this pointer as a sole single-valued F(f) geometric source on the stated exact finite carrier. It does not rule out the compulsory complete price or separately stationary/canceling terms; full physical selection, H+J+R, Ward, refinement and GR remain open."
+      },
+      "evidence": [
+        {
+          "ref": "9cd16820d020aed107b6db6215c44cfe3b7ea6f2",
+          "path": "02_REGISTRY/research/A4D_ORIGINAL_4D_STAR_FLAT_GOLDEN17_VERTICAL_MEMORY_OBSTRUCTION_AND_SOURCE_GATE_2026_10_20.md",
+          "sha256": "ee6cb4f70b6b90b075c2ea62c5ae7c1803992583771255324725d43c959153bd"
+        },
+        {
+          "ref": "9cd16820d020aed107b6db6215c44cfe3b7ea6f2",
+          "path": "02_REGISTRY/research/sources/d0_native_vertical_source_2026-10-20/check_original_L2_star_flat_golden17_shannon_vertical.mjs",
+          "sha256": "5c3ef23b3809240e6782d184fe5054a119c7f3dbe73487347b1e61f6ad1aefc0"
+        }
+      ],
+      "reported_state": "At pinned #334 9cd16820, the original checker passes: max |f_i|=0 on the J23 orbit, complete-17 Shannon change=-5.996565457053876e-6, exact H96″(0)=-5.338570392207947e-4, and vertical first source at 0.15=-7.982869969225259e-5. Its second-direction control gives nonzero Palatini density and the exact signed-marker derivative while the Shannon even difference stays zero. This is a source insufficiency result for this candidate only; a distinct full 8440-history Book action has a squared-ideal remainder. No physical no-go or GR application is accepted."
+    },
+    {
+      "id": "book-second-ideal-vertical-hessian-source-test",
+      "owner": "Open scientific integrator PR #334; pinned evidence commit 9cd16820d020aed107b6db6215c44cfe3b7ea6f2",
+      "statement": "For the original finite Role/Book carrier, if the genuinely internally reduced action has S=c+Σ_i w_i f_i+R with nonzero site weights and R in the squared ideal generated by the original Palatini site densities, exact radial homogeneity gives the same nonlinear zero-density vacuum stationary set and the same raw 16+24 linearized Euler kernel as the weighted Palatini action; scale-neutral source response also agrees. A conditional conformal-matter extension needs an actual sitewise Weyl Ward. The full 8440-history fixture realizes nonfactorable Golden17 vertical dependence only in the squared ideal, while the 48-field/33-vertical fixture validates the sourced-root Hessian criterion. Neither construction proves the compulsory full D0 action belongs to this class.",
+      "interface": "book-second-ideal-source-jet-v1",
+      "outcome": "positive",
+      "kind": "analytic",
+      "scope_level": "finite",
+      "hypotheses": {
+        "physical_first_jet": "The actual internally reduced selected action must have constant value and DS|f=0=Σ_i w_i df_i with nonzero site-independent weights on the actual admissible f=0 shell; genuine internal history, preparation, clock, work and oldRIGHT Euler equations must already be solved.",
+        "squared_ideal_regularization": "For nonlinear vacuum stationary-set and kernel transfer, the residual must admit a locally C1 bounded-coefficient decomposition R=Σ_ij f_i f_j H_ij in the actual original field chart; a conditional matter extension additionally requires the stated sitewise conformal/Weyl Ward.",
+        "full_book_fixture": "The original K(9,11,13) graph has 33 vertices, 718 directed edges, 8440 retained based histories and the tested original positive Golden17 vertical mark; its ActionProtocol-compatible cost is a mathematical example, not compulsory full G0/Book03 H+J+R.",
+        "sourced_root_fixture": "The separate 48-field/33-vertical replay tests the true internal Schur Hessian at a common t=0 sourced root; it is not the full 640-dimensional Role source.",
+        "hostile_control": "The raw Golden17 Shannon and a permitted Cost>=1 shape completion each violate the relevant vertical source condition, so positive records or ActionProtocol alone do not force the ideal-squared property.",
+        "physical_scope": "Full selected native first source, physical admission, full CAR/Spin stress, preparation/clock/work, all Role equations, Ward transfer, refinement and raw #216 remain open."
+      },
+      "evidence": [
+        {
+          "ref": "9cd16820d020aed107b6db6215c44cfe3b7ea6f2",
+          "path": "02_REGISTRY/research/A4D_VACUUM_EINSTEIN_SQUARED_IDEAL_UNIVERSALITY_WITH_VERTICAL_HISTORY_2026_10_20.md",
+          "sha256": "c17dc6413456f9a406dc667f7d5755c232c8a0e2df80cebc56404e8f2db8c20b"
+        },
+        {
+          "ref": "9cd16820d020aed107b6db6215c44cfe3b7ea6f2",
+          "path": "02_REGISTRY/research/A4D_BOOK_SECOND_IDEAL_EINSTEIN_CAR_GRAVITON_CONGRUENCE_2026_10_20.md",
+          "sha256": "23f1e93b8a8402069e4bc0f95833f73e3d09f6f49d8eecb433cac45fb1ef184b"
+        },
+        {
+          "ref": "9cd16820d020aed107b6db6215c44cfe3b7ea6f2",
+          "path": "02_REGISTRY/research/sources/d0_native_gr_universality_2026-10-20/check_book_second_ideal_archive_graviton_congruence.mjs",
+          "sha256": "c4429406ff4b71fd24044e86e71f3832eaee838c1a83341562202dc9af1179da"
+        },
+        {
+          "ref": "9cd16820d020aed107b6db6215c44cfe3b7ea6f2",
+          "path": "02_REGISTRY/research/sources/d0_native_gr_universality_2026-10-20/check_original_718_book_vertical_ideal_square.mjs",
+          "sha256": "42dbd494d43c152d64f32a0d1a45232a39b1d96ffa9fbb671cd2ae8bf8a20743"
+        }
+      ],
+      "reported_state": "At pinned #334 9cd16820, the analytic squared-ideal theorem supplies exact same vacuum stationary set, raw linearized kernel and scale-neutral linear response, conditional on the true first jet and regular residual. Both independent finite checkers pass: the 48x48 congruence error is 8.67e-19 and 33-vertical Hessian error 1.04e-17; the full 8440-history fixture has Cost>=1, nonfactorable off-shell Golden17 dependence and an exact squared-ideal remainder. A permitted hostile completion still has nonzero vertical source. No compulsory physical action/root is identified; GR_closed=false."
+    },
+    {
+      "id": "lorentz-null-conjugacy-cost-blindness",
+      "owner": "Open scientific integrator PR #334; pinned evidence commit 9cd16820d020aed107b6db6215c44cfe3b7ea6f2",
+      "statement": "Every continuous proper-Lorentz-conjugacy-invariant scalar Cost of one original null plaquette is constant on each full finite null 2-plane; at a smooth saturated positive minimum its Hessian vanishes on all six Lorentz generators. Independently, a C1 conjugacy-invariant scalar of one bare link has zero first J23 source at the identity, even at an interior Cost. A covariantly carried coframe/face bivector gives an algebraic J23-sensitive comparator and the retained Golden17 pretrace marker sees null amplitude, but neither comparator is selected by the compulsory physical action.",
+      "interface": "lorentz-null-class-cost-boundary-v1",
+      "outcome": "negative",
+      "kind": "analytic",
+      "scope_level": "family",
+      "hypotheses": {
+        "null_class_cost": "The plaquette result assumes a continuous scalar depending only on one plaquette conjugacy class; the Hessian conclusion additionally assumes a C2 local minimum at C(I)=1 with positive-semidefinite Hessian.",
+        "bare_link": "The zero-first-jet result assumes a C1 scalar of one bare Lorentz link invariant under all proper orthochronous conjugations.",
+        "oriented_escape": "The bivector pairing is covariant algebraic data from a coframe/face reference; it is not a selected physical cost or paid record map.",
+        "scope": "Excludes only scalar unmarked single-plaquette/bare-link class-price source channels. It does not exclude full Book history, coframe/observer dependence, ordered memory, the compulsory full action, matter or GR closure."
+      },
+      "evidence": [
+        {
+          "ref": "9cd16820d020aed107b6db6215c44cfe3b7ea6f2",
+          "path": "02_REGISTRY/research/A4D_LORENTZ_NULL_COST_CONJUGACY_AND_FIBER_FIRST_JET_2026_10_20.md",
+          "sha256": "cb1aeb7fac2979a4bde59200cf15ee10dfd6eb991587ee288e1af121b8bc0065"
+        },
+        {
+          "ref": "9cd16820d020aed107b6db6215c44cfe3b7ea6f2",
+          "path": "02_REGISTRY/research/sources/d0_native_gr_universality_2026-10-20/check_original_lorentz_null_cost_conjugacy_no_go.mjs",
+          "sha256": "df7eafa0ecc9fd1f7963e5c0e70924529353d6512de279806ec09d06b1c3a357"
+        },
+        {
+          "ref": "9cd16820d020aed107b6db6215c44cfe3b7ea6f2",
+          "path": "02_REGISTRY/research/A4D_ACTION_QUANTUM_FLOOR_CP_SOURCE_GATE_AND_FULL128_INFO_ESCAPE_2026_10_20.md",
+          "sha256": "2e7ffcd3ee7aea211b195737a7697a4e648a8989794eb08137a6f0c5f44c3e4c"
+        },
+        {
+          "ref": "9cd16820d020aed107b6db6215c44cfe3b7ea6f2",
+          "path": "02_REGISTRY/research/sources/d0_book_cost_floor_2026-10-20/check_bare_lorentz_class_source.mjs",
+          "sha256": "cde7c3d949829ace9446fa5470438d4d8f6285482365001cd70ac3748fd4a075"
+        }
+      ],
+      "reported_state": "At pinned #334 9cd16820, both source checkers pass. The null-plane checker verifies proper-Lorentz basis dimension six, Ad scaling, trace-power blindness, the conditional PSD Ad-invariant Hessian result, a legal quartic class-Cost control and a positive Golden17 marker. The bare-link checker verifies P J23 P^-1=-J23 and the normalized coframe-bivector comparator. This excludes those scalar channels only; full physical record/action selection is open, and no GR application is accepted."
+    },
+    {
+      "id": "lean-memory-tangent-span",
+      "owner": "PR #353 / WRK-A4D-LEAN-MV-TANGENT-SPAN (original worker)",
+      "statement": "For every fixed finite Hermitian source triple J1,J2,J3 and Hermitian M, Tr(S M)=0 for every Hermitian traceless source-neutral S if and only if M belongs to span_R{I,J1,J2,J3}. The sources need not be linearly independent. This is the generic algebraic equivalence; it supplies no physical operator selection or matter/source/Ward identification.",
+      "interface": "mv-span-v1",
+      "outcome": "positive",
+      "kind": "lean",
+      "scope_level": "family",
+      "hypotheses": {
+        "finite_index": "One fixed finite index type n with decidable equality; the theorem is generic in n.",
+        "hermitian_data": "J1, J2, J3 and M are Hermitian complex matrices on n. Admissible S are all Hermitian matrices with Tr(S)=0 and Tr(S Jr)=0 for r=1,2,3."
+      },
+      "evidence": [
+        {
+          "ref": "304a6dd3c53b7cf3c35353fbdc40aa0444fc77ec",
+          "path": "03_FORMALIZATION/D0/Research/MemoryTangentSpan.lean",
+          "sha256": "c7b8ac25b6dbc20752e95ebe6d5220fb82170d0c6baccf51bc5416f8f47f78fa"
+        }
+      ],
+      "reported_state": "Original bounded Lean terminal submitted for CONTROL acceptance; physical instantiation remains open."
+    },
+    {
+      "id": "lean-primitive-jet-composition",
+      "owner": "PR #342 / WRK-A4D-LEAN-PRIMITIVE-JET-COMPOSITION (original worker)",
+      "statement": "For every finite ordered word in one ring, the endpoint intertwining residual is the exact ordered sum of one-step residuals. The identity holds for a distinct intertwiner at each vertex and in the first-jet ring, retaining both adjacent dI terms. Supplied norm bounds give the word-value estimate; the numerical derivative estimate is proved only for a shared parameter-dependent intertwiner. Branching, comparison and physical primitive admission remain separate supplied hypotheses.",
+      "interface": "word-jet-v1",
+      "outcome": "positive",
+      "kind": "lean",
+      "scope_level": "family",
+      "hypotheses": {
+        "algebraic_domain": "The exact identities quantify over a ring R, a finite ordered word of pairs (V,U), and an arbitrary intertwiner at each vertex. First jets are the defined noncommutative value/derivative ring Jet R.",
+        "supplied_norm_bounds": "Value estimates require NormedRing and NormOneClass, step contractions and supplied residual bounds. The derivative estimate additionally requires nonnegative M and epsilon, supplied step/residual derivative bounds, and one shared parameter-dependent intertwiner; no derivative bound for unequal vertex intertwiners is asserted.",
+        "branch_and_comparison": "Branched/comparison corollaries require separately supplied labels, preparations, tests and carrier/endpoint agreement propositions. No word residual proves those propositions, postselection normalization or physical primitive admission."
+      },
+      "evidence": [
+        {
+          "ref": "9e3073851e9fa59d3564caeb02a8a5cb4d6d936b",
+          "path": "03_FORMALIZATION/D0/Research/PrimitiveJetComposition.lean",
+          "sha256": "4e93661bd8d4f4a8402b9f177fbe0e1e2f8e635adb9622f541ad84abe1499731"
+        }
+      ],
+      "reported_state": "Original bounded ordered-word/jet Lean terminal submitted for CONTROL acceptance; physical instantiation remains open."
+    }
+  ],
+  "applications": [
+    {
+      "id": "endpoint-probe-to-geometric-law",
+      "result": "endpoint-probe-law",
+      "obligation": "probe_law",
+      "method": "direct",
+      "consumer_location": "02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md#two-linked-scientific-fronts",
+      "hypothesis_map": {
+        "metric_pencil": {
+          "target_hypothesis": "metric_pencil"
+        },
+        "endpoint_domain": {
+          "target_hypothesis": "endpoint_domain"
+        },
+        "literal_action": {
+          "target_hypothesis": "literal_action"
+        }
+      },
+      "review": {
+        "state": "accepted",
+        "by": "Codex CONTROL independent reviewer (2026-10-18)",
+        "digest": "be2a1df1433c745633d08d61aee0cf932a794e57bfa2138ca66eae2ead09a921",
+        "decision": {
+          "ref": "6dbabf6c775b7c26f73f6a84cecc1f713652a752",
+          "path": "02_REGISTRY/gr_assembly/reviews/endpoint-probe-to-geometric-law.md",
+          "sha256": "fe54ff42fd59626d06db4b91b55ed219fbeb6402a61a4f70ca7c46bc60d1530a"
+        }
+      }
+    },
+    {
+      "id": "lean-memory-tangent-span-to-mv-slot",
+      "result": "lean-memory-tangent-span",
+      "obligation": "mv_tangent_span",
+      "method": "direct",
+      "consumer_location": "02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md#current-route-to-general-relativity",
+      "hypothesis_map": {
+        "finite_index": {
+          "target_hypothesis": "finite_index"
+        },
+        "hermitian_data": {
+          "target_hypothesis": "hermitian_data"
+        }
+      },
+      "review": {
+        "state": "proposed"
+      }
+    },
+    {
+      "id": "lean-primitive-jet-composition-to-word-slot",
+      "result": "lean-primitive-jet-composition",
+      "obligation": "primitive_jet_composition",
+      "method": "direct",
+      "consumer_location": "02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md#current-route-to-general-relativity",
+      "hypothesis_map": {
+        "algebraic_domain": {
+          "target_hypothesis": "algebraic_domain"
+        },
+        "supplied_norm_bounds": {
+          "target_hypothesis": "supplied_norm_bounds"
+        },
+        "branch_and_comparison": {
+          "target_hypothesis": "branch_and_comparison"
+        }
+      },
+      "review": {
+        "state": "proposed"
+      }
+    }
+  ],
+  "attempts": [
+    {
+      "id": "phase-count-shortcut",
+      "result": "phase-count-counterexample",
+      "interface": "resonance-divisor-v1",
+      "work_key": "phase-count-nullity-shortcut",
+      "scope": "The proposed nullity=2 max(n_+i,n_-i) rule is false already at (-1,-1,i,i).",
+      "reopen_when": "The formula or its domain changes explicitly and no longer includes the certified counterexample. Full divisor classification is a different task.",
+      "review": {
+        "state": "proposed"
+      },
+      "question_digest": "801c1b633ff8ca9e7bdb105091df64d28ea606631ab153af3a0c99281fdb13c8",
+      "question": {
+        "statement": "For every z in (C*)^4, nullity A(z)=2 max(n_+i,n_-i).",
+        "assumes": []
+      }
+    },
+    {
+      "id": "dmin-canonicality-source-bound-inference",
+      "result": "dmin-canonicality-source-bound-countermodel",
+      "interface": "complete-history-code-source-v1",
+      "work_key": "dmin-same-object-competitive-source",
+      "scope": "The literal-comparison countermodel only: canonicality, injectivity and golden word counts do not supply a Delta-equivalent same-object universal decoder or the first-source bound.",
+      "reopen_when": "A pinned construction in actual D0 proves Pair(decoder_N,U_N(X_N)) is Delta-equivalent to Enc(X_N) on the same complete history, establishes an admitted injective decoder and a cost-capacity-matched competitive bound, and controls the same moving law/Fisher source. A changed interface needs a new typed question.",
+      "question_digest": "b894222b378feb118a9e514e6fbaf9c9a27d7da296b4cc9c384f0aa0a0207c13",
+      "question": {
+        "statement": "Do the Book 01 canonicality definition, injectivity, and golden F/R word counts alone imply a same-object competitive decoder and the normalized complete-history code-minus-entropy first-source bound?",
+        "assumes": [
+          "D_min=Can(Enc(X)) is minimal only within the actual Delta-equivalence class.",
+          "No Delta-equivalence between Pair(decoder_N,U_N(X_N)) and Enc(X_N) is assumed unless proved.",
+          "The physical code-cost unit and complete moving probability law are fixed by the native programme."
+        ]
+      },
+      "review": {
+        "state": "proposed"
+      }
+    },
+    {
+      "id": "affine-scalar-perron-pressure-palatiniaction-shortcut",
+      "result": "original-book-triangle-odds-960-affine-pressure-no-go",
+      "interface": "original-scene-book-triangle-odds-pressure-boundary-v1",
+      "work_key": "affine-scalar-perron-pressure-palatiniaction-shortcut",
+      "scope": "Only the affine edge-price plus scalar positive Perron-pressure route as the entire Palatini action. This says nothing about nonlinear prices or the original complete H+J+R/CAR/memory/measurement/preparation/work/clock action.",
+      "reopen_when": "A physically admitted non-affine field-to-edge price map or an independently derived additional same-history action term changes the exact action family; record that new interface and compare its full Hessian/source rather than relabeling this pressure-only route.",
+      "review": {
+        "state": "proposed"
+      },
+      "question_digest": "ed681305328568ac87e9a07cbad484f3a377e397936e3f8cb7d8202f63676968",
+      "question": {
+        "statement": "Can the entire original 24-link Palatini quadratic action be derived from positive scalar Perron pressure after an affine map from the Lorentz coordinates to the original directed-edge prices?",
+        "assumes": [
+          "The complete field-to-edge-price map is affine on the 24 independent original Lorentz directions.",
+          "The candidate action is only positive scalar Perron pressure; no additional Cost-Info, H+J+R, CAR/memory, measurement, preparation, clock or work terms contribute.",
+          "The same original 24-direction Palatini Hessian of inertia (12,12) is the target."
+        ]
+      }
+    },
+    {
+      "id": "double-null-degree5-ward-selected-rref",
+      "result": "double-null-degree5-selected-rref-ward-obstruction",
+      "interface": "double-null-degree5-coframe-gradient-ward-v1",
+      "work_key": "double-null-selected-rref-degree5-ward-extension",
+      "scope": "The exact selected lower-order representative stated in the question; the nonzero fifth-order Ward projection rules out any fifth-amplitude correction for that representative.",
+      "reopen_when": "Vary the remaining joint cubic/mixed-quartic or asymmetric-quartic homogeneous modes, change the finite carrier/action, or enlarge the physical question. Any such result needs its own pinned interface and must not be inferred from this selected-representative obstruction.",
+      "review": {
+        "state": "proposed"
+      },
+      "question_digest": "c22c3c32995ca430f378c98ea32ba1b6b20bb200772179da035d8110ec0029cb",
+      "question": {
+        "statement": "Does the exact selected lower-order RREF representative of the perpendicular H=a*x, J=b*y branch at h=1 admit any fifth-amplitude extension, after allowing arbitrary fifth-degree corrections to the Lorentz links and coframe?",
+        "assumes": [
+          "The original six-plaquette Lorentz-star action and its all-40 Euler variations are fixed.",
+          "The lower-order fields are exactly the mixed-quartic and asymmetric-quartic RREF representatives pinned by the cited checkers, with their remaining homogeneous modes set to zero.",
+          "The fifth-order Lorentz exponential includes all terms through degree five."
+        ]
+      }
+    }
+  ],
+  "migration": {
+    "constitutive": {
+      "result": "legacy:constitutive",
+      "obligation": "constitutive"
+    },
+    "native_sector": {
+      "result": "legacy:native_sector",
+      "obligation": "native_sector"
+    },
+    "canonical_archive_gate": {
+      "result": "legacy:canonical_archive_gate",
+      "obligation": null
+    },
+    "affine_profile_bridge": {
+      "result": "legacy:affine_profile_bridge",
+      "obligation": null
+    },
+    "homogeneous_parent_bridge": {
+      "result": "legacy:homogeneous_parent_bridge",
+      "obligation": null
+    },
+    "signed_quadratic_gram_bridge": {
+      "result": "legacy:signed_quadratic_gram_bridge",
+      "obligation": null
+    },
+    "literal_flux_joint_gate": {
+      "result": "legacy:literal_flux_joint_gate",
+      "obligation": null
+    },
+    "weighted_trace_volume_bridge": {
+      "result": "legacy:weighted_trace_volume_bridge",
+      "obligation": null
+    },
+    "free_linear_lift_gate": {
+      "result": "legacy:free_linear_lift_gate",
+      "obligation": null
+    },
+    "weighted_compensator_full_gate": {
+      "result": "legacy:weighted_compensator_full_gate",
+      "obligation": null
+    },
+    "volume_only_native_bridge": {
+      "result": "legacy:volume_only_native_bridge",
+      "obligation": null
+    },
+    "probe_law": {
+      "result": "legacy:probe_law",
+      "obligation": "probe_law"
+    },
+    "record_arrow": {
+      "result": "legacy:record_arrow",
+      "obligation": null
+    },
+    "contrast_refinement_transfer": {
+      "result": "legacy:contrast_refinement_transfer",
+      "obligation": "contrast_refinement_transfer"
+    },
+    "matter_source_ward": {
+      "result": "legacy:matter_source_ward",
+      "obligation": "matter_source_ward"
+    },
+    "on_shell_stationarity": {
+      "result": "legacy:on_shell_stationarity",
+      "obligation": "on_shell_stationarity"
+    },
+    "gauge_range": {
+      "result": "legacy:gauge_range",
+      "obligation": "gauge_range"
+    },
+    "joint_nonlinear_solve": {
+      "result": "legacy:joint_nonlinear_solve",
+      "obligation": "joint_nonlinear_solve"
+    },
+    "soundness": {
+      "result": "legacy:soundness",
+      "obligation": "soundness"
+    },
+    "recovery": {
+      "result": "legacy:recovery",
+      "obligation": "recovery"
+    },
+    "physical_constraints": {
+      "result": "legacy:physical_constraints",
+      "obligation": "physical_constraints"
+    },
+    "positive_gr": {
+      "result": "legacy:positive_gr",
+      "obligation": "positive_gr"
+    },
+    "binding_diagnostics": {
+      "result": "legacy:binding_diagnostics",
+      "obligation": null
+    },
+    "cochain_refinement_construction": {
+      "result": "legacy:cochain_refinement_construction",
+      "obligation": null
+    },
+    "composed_frozen_readout": {
+      "result": "legacy:composed_frozen_readout",
+      "obligation": null
+    },
+    "reference_weight_lorentz": {
+      "result": "legacy:reference_weight_lorentz",
+      "obligation": null
+    },
+    "reference_weight_range": {
+      "result": "legacy:reference_weight_range",
+      "obligation": null
+    },
+    "spectral_flux_descent": {
+      "result": "legacy:spectral_flux_descent",
+      "obligation": null
+    },
+    "vector_commutator_source": {
+      "result": "legacy:vector_commutator_source",
+      "obligation": null
+    },
+    "mixed_parent_pointwise_source": {
+      "result": "legacy:mixed_parent_pointwise_source",
+      "obligation": null
+    },
+    "verification_process_refinement": {
+      "result": "legacy:verification_process_refinement",
+      "obligation": null
+    },
+    "local_source_quotient_range": {
+      "result": "legacy:local_source_quotient_range",
+      "obligation": null
+    },
+    "canonical_phase_variational_source": {
+      "result": "legacy:canonical_phase_variational_source",
+      "obligation": null
+    },
+    "logdet_source_class": {
+      "result": "legacy:logdet_source_class",
+      "obligation": null
+    },
+    "convex_profile_bridge": {
+      "result": "legacy:convex_profile_bridge",
+      "obligation": null
+    },
+    "direct_coordinate_local_operator": {
+      "result": "legacy:direct_coordinate_local_operator",
+      "obligation": null
+    },
+    "bounded_logdet_flat_transfer": {
+      "result": "legacy:bounded_logdet_flat_transfer",
+      "obligation": null
+    },
+    "native_point_volume_recovery": {
+      "result": "legacy:native_point_volume_recovery",
+      "obligation": null
+    },
+    "native_centered_metric_lift": {
+      "result": "legacy:native_centered_metric_lift",
+      "obligation": null
+    },
+    "native_transported_connection": {
+      "result": "legacy:native_transported_connection",
+      "obligation": null
+    },
+    "native_connection_action": {
+      "result": "legacy:native_connection_action",
+      "obligation": null
+    },
+    "native_coupled_hodge_scale": {
+      "result": "legacy:native_coupled_hodge_scale",
+      "obligation": null
+    },
+    "native_weighted_dirac": {
+      "result": "legacy:native_weighted_dirac",
+      "obligation": null
+    },
+    "native_mixed_spectral_contrast": {
+      "result": "legacy:native_mixed_spectral_contrast",
+      "obligation": null
+    }
+  }
+}

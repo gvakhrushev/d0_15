@@ -1,0 +1,77 @@
+{
+  "schema": "d0-publication-guards/1",
+  "date": "2026-10-15",
+  "worktree": "/Users/grigorijvahrusev/.codex/worktrees/record-text-publication/d0_15",
+  "python": "/tmp/d0-record-text-venv/bin/python",
+  "bytecode_disabled": true,
+  "checks": [
+    {
+      "name": "validate_repo",
+      "exit_code": 0,
+      "output": "claims=889 assumptions=31 aliases=58 formal_support=167 lean_closure=902\nPASS warnings=0"
+    },
+    {
+      "name": "validate_work",
+      "exit_code": 0,
+      "output": "PASS work_validation: active work plane clean and enforced"
+    },
+    {
+      "name": "validate_agent_protocol",
+      "exit_code": 0,
+      "output": "PASS agent_protocol: cold-start task metadata enforced"
+    },
+    {
+      "name": "render_work_status",
+      "exit_code": 0,
+      "output": "PASS work_views stale=0"
+    },
+    {
+      "name": "generate_lean_views",
+      "exit_code": 0,
+      "output": "PASS lean_views stale=0"
+    },
+    {
+      "name": "lint_claim_strength",
+      "exit_code": 0,
+      "output": "PASS claim-strength lint"
+    },
+    {
+      "name": "validate_pr_contract",
+      "exit_code": 0,
+      "output": "PASS pr_contract self-test"
+    },
+    {
+      "name": "previous_capsule",
+      "exit_code": 0,
+      "output": "PASS_HANDOFF_INPUT_PRESERVATION 21 files; not scientific replay"
+    },
+    {
+      "name": "diff_whitespace",
+      "exit_code": 0,
+      "output": ""
+    }
+  ],
+  "all_pass": true,
+  "preservation_verifier_checks": [
+    {
+      "mode": "default",
+      "exit_code": 0,
+      "original_zip_compared": false
+    },
+    {
+      "mode": "optimized_original_zip",
+      "exit_code": 0,
+      "original_zip_compared": true
+    }
+  ],
+  "whitespace_scope": {
+    "tracked_authored_diff_clean": true,
+    "untracked_immutable_source_files_with_original_whitespace": [
+      "expanded/D0_two_syntheses_proof_package_2026-10-15/inputs/cold_start_audit_response.txt",
+      "expanded/D0_two_syntheses_proof_package_2026-10-15/run.log",
+      "original/EXPENSIVE_AI_BRIEF_RU.md",
+      "original/inputs/D0_deep_audit_2026-10-15(1).md"
+    ],
+    "preserve_original_bytes": true
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "schema": "d0-gr-assembly-source-snapshot/v1",
+  "source_commit": "0e1849bd7bf6a87e9731801206fd5ccd1041bb63",
+  "source_pr": "https://github.com/gvakhrushev/d0_15/pull/334",
+  "files": [
+    {
+      "source_path": "02_REGISTRY/research/A4D_OPPOSITE_NULL_LIE_COMPLETE_JULIA_ORDER_MEMORY_BOOK_SOURCE_2026_10_19.md",
+      "snapshot_path": "02_REGISTRY/gr_assembly/sources/d0_full128_order_memory_2026-10-19/owner.md",
+      "sha256": "4f32d226dcf38284cae32ec78937915ae6f149271097107f3078efc0ba5545f0",
+      "bytes": 38994
+    },
+    {
+      "source_path": "02_REGISTRY/research/sources/d0_native_full128_order_readout_2026-10-19/RESULT.md",
+      "snapshot_path": "02_REGISTRY/gr_assembly/sources/d0_full128_order_memory_2026-10-19/result.md",
+      "sha256": "a69ff3093d9f16c66903b7692e809a3f46abda15ee6d74962d10fc08b5750c68",
+      "bytes": 15473
+    },
+    {
+      "source_path": "02_REGISTRY/research/sources/d0_native_full128_order_readout_2026-10-19/check_native_full128_order_readout.py",
+      "snapshot_path": "02_REGISTRY/gr_assembly/sources/d0_full128_order_memory_2026-10-19/check_full128_pointer.py",
+      "sha256": "176739372e85d8cbd2ba48f7cc28cfe508395ae84007d8462a3f502d596a87a2",
+      "bytes": 24924
+    },
+    {
+      "source_path": "02_REGISTRY/research/sources/d0_native_full128_order_readout_2026-10-19/check_complete_shannon_order_source.py",
+      "snapshot_path": "02_REGISTRY/gr_assembly/sources/d0_full128_order_memory_2026-10-19/check_complete_shannon.py",
+      "sha256": "26424be5c2278828af81d331b8edc110dd8c4eefad4fc97e2c2e5fa813de178a",
+      "bytes": 14292
+    },
+    {
+      "source_path": "02_REGISTRY/research/sources/d0_native_full128_order_readout_2026-10-19/COMPLETE_SHANNON_SOURCE.json",
+      "snapshot_path": "02_REGISTRY/gr_assembly/sources/d0_full128_order_memory_2026-10-19/complete_shannon_source.json",
+      "sha256": "3111d22f61d3c03ae7ed34c114a53ef69f1c8a9fe5b6102e197dfe2cd9be5ddd",
+      "bytes": 5061
+    },
+    {
+      "source_path": "02_REGISTRY/research/sources/d0_native_full128_order_readout_2026-10-19/check_two_round_complete_shannon_order_source.py",
+      "snapshot_path": "02_REGISTRY/gr_assembly/sources/d0_full128_order_memory_2026-10-19/check_two_round_shannon.py",
+      "sha256": "3759eb9a7826efdb167c73d2185acc5c8c82d271b5dde1b208d4e74db85f18ae",
+      "bytes": 20521
+    },
+    {
+      "source_path": "02_REGISTRY/research/sources/d0_native_full128_order_readout_2026-10-19/TWO_ROUND_COMPLETE_SHANNON_SOURCE.json",
+      "snapshot_path": "02_REGISTRY/gr_assembly/sources/d0_full128_order_memory_2026-10-19/two_round_shannon_source.json",
+      "sha256": "a0207ca49665062c04e8dcb9cf072aa20daa15df9eef7533a686beb8ea6b9de3",
+      "bytes": 2664
+    },
+    {
+      "source_path": "02_REGISTRY/research/certificates/a4d_native_curved_soldered_heat.py",
+      "snapshot_path": "02_REGISTRY/gr_assembly/sources/d0_full128_order_memory_2026-10-19/pinned_inputs/a4d_native_curved_soldered_heat.py",
+      "sha256": "bf13f57c902da0005634ae6834c0b4e3ffd2df1aa196a61ebc0ff3dc0351c7da",
+      "bytes": 4369
+    },
+    {
+      "source_path": "02_REGISTRY/research/A4D_RETAINED_HISTORY_CAUSAL_SOURCE.md",
+      "snapshot_path": "02_REGISTRY/gr_assembly/sources/d0_full128_order_memory_2026-10-19/pinned_inputs/A4D_RETAINED_HISTORY_CAUSAL_SOURCE.md",
+      "sha256": "d7f8498e30e788af43edeb2bfd6e763d429e221cea76b622198687bbf4af21db",
+      "bytes": 13897
+    },
+    {
+      "source_path": "02_REGISTRY/research/A4D_COMPLETE_RECORD_CHANNEL_AND_NATIVE_COST_SOURCE.md",
+      "snapshot_path": "02_REGISTRY/gr_assembly/sources/d0_full128_order_memory_2026-10-19/pinned_inputs/A4D_COMPLETE_RECORD_CHANNEL_AND_NATIVE_COST_SOURCE.md",
+      "sha256": "2128009802edff3e111a26961f050320fd878d7412ed93bfad5d5c9e4219db79",
+      "bytes": 42834
+    },
+    {
+      "source_path": "02_REGISTRY/research/A4D_NATIVE_FULL128_RELATIVE_TRANSFER_AND_CONDENSED_DESCENT.md",
+      "snapshot_path": "02_REGISTRY/gr_assembly/sources/d0_full128_order_memory_2026-10-19/pinned_inputs/A4D_NATIVE_FULL128_RELATIVE_TRANSFER_AND_CONDENSED_DESCENT.md",
+      "sha256": "577cbc909f766468fbef8ab38a5986ae761d348b075c2f38b2e1a88b704d4b3e",
+      "bytes": 16547
+    },
+    {
+      "source_path": "02_REGISTRY/research/A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md",
+      "snapshot_path": "02_REGISTRY/gr_assembly/sources/d0_full128_order_memory_2026-10-19/pinned_inputs/A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md",
+      "sha256": "a0a8a0b7389c7a6120ebbe402d111bf55cd2a00730403a00ffceca73548e7915",
+      "bytes": 28004
+    },
+    {
+      "source_path": "02_REGISTRY/research/sources/d0_opposite_null_julia_order_memory_2026-10-19/check_lorentz_order_memory.py",
+      "snapshot_path": "02_REGISTRY/gr_assembly/sources/d0_full128_order_memory_2026-10-19/pinned_inputs/check_lorentz_order_memory.py",
+      "sha256": "48a9692675fbe46c68c4d902d3069ac2c717e2370761508983db2e3245497cb8",
+      "bytes": 12164
+    },
+    {
+      "source_path": "02_REGISTRY/research/sources/d0_complete_record_channel_2026-10-17/check_record_channel.py",
+      "snapshot_path": "02_REGISTRY/gr_assembly/sources/d0_full128_order_memory_2026-10-19/pinned_inputs/check_record_channel.py",
+      "sha256": "dee7ada5cf04bf961701206f65b216e1ab9c6f45ef9f9ed3258e70bed9cb13a2",
+      "bytes": 11396
+    }
+  ],
+  "replay_note": "Exact checker sources and their pinned inputs are frozen here; execute against the pinned #334 tree to replay because the checkers enforce original repository-relative input paths."
+}

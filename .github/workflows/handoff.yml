@@ -1,0 +1,54 @@
+name: D0 strategy preservation
+on:
+  pull_request:
+    paths:
+      - '02_REGISTRY/research/D0_RESEARCH_STRATEGY_RU.md'
+      - '02_REGISTRY/research/D0_IDEA_REGISTER.json'
+      - '02_REGISTRY/research/D0_HANDOFF_SOURCE_NOTES_RU.md'
+      - '02_REGISTRY/research/D0_GR_CLOSURE_CONTRACT_RU.md'
+      - '02_REGISTRY/research/D0_STRATEGY_HANDOFF_INTAKE_2026-10-15.md'
+      - '02_REGISTRY/research/sources/d0_strategy_handoff_2026-10-15/**'
+      - '02_REGISTRY/research/sources/d0_record_geometry_2026-10-15/**'
+      - '.github/workflows/handoff.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: strategy-preservation-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+jobs:
+  preservation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Preserved scientific leads (no execution roles)
+        run: |
+          python - <<'PYCODE'
+          import json
+          from pathlib import Path
+          root = Path('02_REGISTRY/research')
+          inventory = json.loads((root / 'D0_IDEA_REGISTER.json').read_text())
+          ideas = inventory['ideas']
+          ids = [idea['id'] for idea in ideas]
+          if inventory.get('schema') != 'd0-idea-register/1' or len(set(ids)) != len(ids):
+              raise SystemExit('Invalid idea inventory or duplicate IDs')
+          if not {f'D0-I{i:02d}' for i in range(1, 19)} <= set(ids):
+              raise SystemExit('A preserved strategic lead is missing')
+          for idea in ideas:
+              for key in ('origin', 'mechanism', 'current_boundary', 'next_proof_use', 'consumer_role'):
+                  if not idea.get(key):
+                      raise SystemExit(f'Missing content: {key}')
+              if idea.get('proof_status') != 'NO_PROMOTION_BY_HANDOFF':
+                  raise SystemExit('Preservation cannot promote scientific status')
+          for name in ('D0_RESEARCH_STRATEGY_RU.md', 'D0_HANDOFF_SOURCE_NOTES_RU.md', 'D0_GR_CLOSURE_CONTRACT_RU.md'):
+              if not (root / name).is_file():
+                  raise SystemExit(f'Missing strategy input: {name}')
+          print(f'PASS preserved scientific leads: {len(ideas)}; no launch or theorem acceptance')
+          PYCODE
+      - name: Lossless source preservation (no scientific execution)
+        run: python 02_REGISTRY/research/sources/d0_strategy_handoff_2026-10-15/restore.py --check
+      - name: Readable research source preservation (no scientific execution)
+        run: python 02_REGISTRY/research/sources/d0_record_geometry_2026-10-15/verify_publication.py
