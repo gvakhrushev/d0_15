@@ -171,6 +171,63 @@ const meanScale=q**(1.5),gammaScaled=face(scaleMat(e,meanScale))/
 must(Math.abs(Wshift*gammaScaled-W*Gamma)<2e-12,
  "MEAN-VOLUME 3:2 W-Info Weyl compensator has OPPOSITE coframe sign");
 
+
+// NEW ORIGINAL BOOK->RELATIVE-SOLDER sitewise edge jet:
+// for site-labelled COMPLETE native scene K_x the exact positive scalar
+// omega_x = Tr(K_x^3)/7722 is a true ORIGINAL triangle Price observable.
+// The endpoint rescaling sqrt(omega_x/omega_y) is a pure coboundary;
+// its complete moving first source is an ACTUAL conditional three-tick
+// native Cost+Info score rather than an arbitrary Weyl gauge field.
+const tSites=[-.12,.17,.32];
+const Ksites=tSites.map((ti,i)=>K.map((row,u)=>row.map((v,j)=>
+   row[j]*Math.exp(((((u+2*j+i)%7)-3)*.037)+(i===0?0:.019*ti))));
+const dSites=Ksites.map((_,i)=>K.map((row,u)=>row.map((val,v)=>
+   part(u)===part(v)?0:(((u*u+3*v+5*i)%13)-6)/17));
+function closed3Source(Ka,ds){
+ let Z=0,Csum=0;
+ for(let a=0;a<9;a++)for(let b=9;b<20;b++)for(let c=20;c<33;c++){
+  const w1=Ka[a][b]*Ka[b][c]*Ka[c][a],w2=Ka[a][c]*Ka[c][b]*Ka[b][a];
+  Z+=3*(w1+w2);
+  Csum+=3*(w1*(ds[a][b]+ds[b][c]+ds[c][a])+
+           w2*(ds[a][c]+ds[c][b]+ds[b][a]));
+ }
+ return {omega:Z/7722,dlog:-ell*Csum/Z};
+}
+const originalSite=Ksites.map((Ka,i)=>closed3Source(Ka,dSites[i]));
+for(let i=0;i<originalSite.length;i++){
+ const eps=1e-5,di=dSites[i];
+ const Kplus=Ksites[i].map((row,u)=>row.map((z,v)=>z*Math.exp(-ell*eps*di[u][v])));
+ const Kminus=Ksites[i].map((row,u)=>row.map((z,v)=>z*Math.exp(+ell*eps*di[u][v])));
+ const derivative=(Math.log(Z3(Kplus))-Math.log(Z3(Kminus)))/(2*eps);
+ must(Math.abs(derivative-originalSite[i].dlog)<4e-9,
+   "ORIGINAL 7722 three-tick Book mean edge-Cost SOURCE exactly equals D log omega_x");
+}
+const [wa,wb,wc]=originalSite.map(x=>x.omega);
+const endpoint=(x,y)=>Math.sqrt(x/y);
+must(Math.abs(endpoint(wa,wb)*endpoint(wb,wc)*endpoint(wc,wa)-1)<2e-14,
+ "ACTUAL original Book endpoint relative-solder transport is an EXACT zero-curvature coboundary");
+const BookEdgeJet=(originalSite[0].dlog-originalSite[1].dlog)/2;
+const eps=1e-5;
+const rawFaceFactor=endpoint(wa,wb);
+const movedFaceFactor=endpoint(
+ wa*Math.exp(eps*originalSite[0].dlog),wb*Math.exp(eps*originalSite[1].dlog));
+must(Math.abs(Math.log(movedFaceFactor/rawFaceFactor)/eps-BookEdgeJet)<4e-9,
+ "Book native relative-solder jet is 1/2 difference of TRUE conditional history sources");
+const localInfo=tSites.map((x,i)=>Math.pow(phi,x));
+const locallyDressed=[];
+for(let i=0;i<3;i++){
+ const qi=localInfo[i],w=originalSite[i].omega,xi=[-.3,.2,.35][i];
+ const transformed=bookCompensatedF(xi,qi);
+ const ws=qi**3*w;
+ must(Math.abs(ws*Phi(transformed)-w*Phi(xi))<3e-11,
+   "SITEWISE original native Book-Weyl compensation works on independent Golden LEFT Role cells");
+ const dressed=Math.sqrt(w*Phi(xi)/xi);
+ const after=Math.sqrt(ws*Phi(transformed)/transformed)*Math.sqrt(transformed/xi);
+ must(Math.abs(dressed-after)<3e-10,
+   "SITEWISE physically dressed coframe invariant under individual 33-Info shifts");
+ locallyDressed.push({omega:w,shift:qi,nonlinearF:xi,shiftedF:transformed,
+   residual:after-dressed});
+}
 // ZERO-IDEAL theorem: for a true vacuum stationary geometric scalar A(q0)=DA=0,
 // a moving positive W changes neither its root nor its MIXED Hessian.
 // Elementary 1D analytic counterprobe Ageom(x)=x² illustrates exact block.
@@ -197,6 +254,8 @@ console.log(JSON.stringify({
  bookStarOffshellResidual:Wshift*fShift-W*f,
  genuineAFSceneB0:true,goldenPhiChecks:tests,
  physicalVolumeReciprocalBookPressure:gammaHat-Gamma/W,
+ sitewiseGolden:locallyDressed,sitewiseOriginalNativeBookScores:originalSite,
+ BookEndpointEdgeJet:BookEdgeJet,
  nullCriticalMixedHessian:hxt,
  equalities:"W3(Phi/e), nonlinear inverse, original 4D volume and exact Ward",
  notEstablished:"actual compulsory original G0/M1/Book full H+J+R selection, clock/prep/Info domain, sourced GR",
