@@ -144,3 +144,24 @@ D^2_{V_0V_0}S_{\rm Book}
 Hence the **SAME flat stationary root can have DIFFERENT exact native Hessian quadratic forms/linearized field sources**. In particular the actual microscopic correction is **NOT in the squared Palatini density ideal \(I_f^2\)** at this root: for any \(R\in I_f^2\), \(D^2R[V_0,V_0]\) vanishes because every original \(D_{V_0}f_i=0\), while the scalar Book difference above is strictly positive. This directly consumes the same-source Hessian gate in \`A4D_VACUUM_EINSTEIN_SQUARED_IDEAL_UNIVERSALITY_WITH_VERTICAL_HISTORY_2026_10_20.md\`.
 
 Do not overstate this as a proof \(V_0\) is in the ENTIRE Palatini Hessian KERNEL; a vanishing diagonal quadratic value alone is not a full \(H V_0=0\) statement because mixed coframe/source blocks might be nonzero. The rigorous conclusion is **failure of the complete quadratic-ideal/Hessian congruence condition**, already enough to refute the desired full linearized source identification for the specified scalar Cost–Shannon class. A genuine internally stationary oldRIGHT/clock/Spin archive could supply a different negative Schur, but no such physically mandatory extra source is derived here. \`GR_closed=false\`.
+
+
+## 7. Quantitative non-fitted hidden-archive Schur requirement: the minimum source cancellation is known NOW
+
+If a full actual physically selected M1/G0 Book/oldRIGHT programme nevertheless takes the complete Golden17 Shannon as its 33 vertex Info, keeps all primitive Cost at the saturated unit floor, but includes genuine *internally stationary* archive/control variables \(z\), its effective geometric Hessian at the same exact flat stationary point must be calculated using the **TRUE** internal stationary envelope
+\[
+H_{\rm eff}=H_{qq}-H_{qz}H_{zz}^{-1}H_{zq}.
+\]
+For a locally stable nondegenerate internal sector \(H_{zz}>0\) on the correctly gauge-fixed native archive quotient, write \(b=D^2_{zV_0}S_{\rm complete}\). The mathematically NECESSARY and SUFFICIENT cancellation along this ONE actual \(V_0\) tangent (provided no further explicit vertical terms) is
+\[
+\boxed{
+b^TH_{zz}^{-1}b
+= D^2_{V_0V_0}S_{\rm bare\ Book}
+\ge 0.0020507888725507617\ldots,
+}\tag{12}
+\]
+for the original uniform full96-Shannon Info fixture with literal Golden \(p,p^2\) 2/3-clock and all8440 rooted histories. The numerical lower value is sharp when all primitive Cost second jets vanish; any admitted positive Cost curvature **increases** the required cancellation. If Cost is not universally saturated, the first-cost source must also be included, and this inequality is not claimed. If Hzz is indefinite, use the actual signed inverse rather than a stability-norm interpretation; if a genuine physical source couples Golden pointer Info differently, the numerical threshold must be recomputed.
+
+This is a **P0 binary experimental certificate** for the previously unowned internal stationary work/clock source: either the compulsory complete H+J+R path gives a concrete \(b,H_{zz}\) and the equality (12) with unchanged G0 and paid records, OR the Cost-floor + scalar Shannon route FAILS the original quadratic-ideal Einstein source even though it has the same vacuum root. This kills the easy escape "hidden memory might cancel" unless a REAL stationary history Schur is computed; no free gravitational coefficient is permitted. Independently, on the orientation-active \(V_2\) tangent, a genuine signed/pretrace source must supply the missing \(-9/16\) integrated geometrical jet (at the paper's unweighted star normalization). Neither observation is discharged by maximizing a positive Fisher rank or reading Golden17 probabilities without deriving their actual Cost/Info physics.
+
+**NO EXTRA GRAVITY ACTION IS PROPOSED**: (12) is a necessary compatibility equation for any selected native physical completion retaining the stated class of ingredients. Book03 original algebra-valued history, actual Q8 spin memory, preparation and observer work may change the scalar effective family; that is precisely what must be derived. \`GR_closed=false\`.
