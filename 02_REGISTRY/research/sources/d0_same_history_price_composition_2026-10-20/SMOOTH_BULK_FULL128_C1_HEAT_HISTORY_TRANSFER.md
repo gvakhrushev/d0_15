@@ -323,3 +323,31 @@ For **any** two distinct fixed scales \(\rho,\rho'>0\), the two right-hand proba
 for this fixed original full128 low-shell experiment with declared repeated rounds. The complete oldRIGHT, CAR16 and every intermediate label remain present throughout, even though only a coarse already-measured event is used for this sufficient statistic.
 
 The interpretation is precise: the native coupling \(\varepsilon=O(L^{-2})\) times the prepared lowest-shell energy \(\lambda_1=O(L^{-2})\) sets the actual rare-event rate \(O(L^{-4})\); a four-dimensional number of complete actual rounds is **both necessary and sufficient** for finite recorded sensitivity. This is a real finite-protocol derivation of an \(L^4\) *resource exponent*, NOT a proof that the world has four dimensions, a replacement for the HJR feedback trace, or a proof that Book03 compels such an extremely long interrogation. Each original additional round has a genuine port-code clock price at least one, so this is also a lower-bound scaling for its already KNOWN primitive clock payment. A controller which accesses a different higher-energy state or changes the task is outside this exact experiment and must be evaluated separately.
+
+
+## 10. Cross-preparation synthesis with the NEW original SAME-TAPE Jones34 result: an exact energy-vs-clock resource law
+
+The concurrently integrated #334 \`A4D_ORIGINAL_FULL128_COMMON_METRIC10_LINK24_JONES_TOMOGRAPHY_2026_10_20.md\` proves an exact 34/34 positive-probability Jacobian on **ONE original two-round full128 tape** at an \(L=4\) finite high-Fourier-character Jones+ reference. This is an important positive FINITE observability result. It does NOT conflict with §§8–9: its input is a different \(\psi_J\), its native momentum \(z=(i,i,-1,-i)\) is a fixed nonzero fraction of the Brillouin zone, and its two-round Jacobian rank does not supply an \(h\)-uniform smallest singular value or a finite-continuum physical discrimination rate. The actual low-energy Einstein-Riesz reference has energy \(O(L^{-2})\), while high-Brillouin Jones input has energy \(O(1)\) on the physically coframe-scaled \(v=h e\) Dirac.
+
+There is one **general exact common law**, valid on ANY original homogeneous flat momentum shell on which \(\Delta_{\rho,h}=\rho\lambda_h I_{\rm CAR16}\), with a fixed common input/reference supported there. Every full128 original m-round all-blank word is the scalar
+\[
+B_\rho^R=(1-\alpha\rho\lambda_h)^R I,\qquad
+P_{\rho,h}(\mathrm{any\ actual\ nonblank})
+=1-(1-\alpha\rho\lambda_h)^{2R},
+\quad \alpha=\frac{p^2}{128L^2}.
+\tag{34}
+\]
+The complete pure tape is within norm
+\(\sqrt{2R\alpha\rho\lambda_h}\) of the identical all-blank reference. Hence to distinguish two positive fixed scales with nonzero limiting advantage using THIS native fixed-shell serial experiment, **necessarily**
+\[
+\boxed{R_L\alpha\lambda_h=\Omega(1)
+\quad\Longleftrightarrow\quad
+R_L=\Omega(L^2/\lambda_h).}\tag{35}
+\]
+Conversely, with \(R_L\sim\kappa/\alpha\lambda_h\), the actual already recorded pointer "some nonblank" has strictly different limiting probabilities \(1-e^{-2\kappa\rho}\), so the same scaling is also sufficient on the actual two-scale task:
+\[
+\boxed{R_{\rm critical}(L)\asymp L^2/\lambda_h .}\tag{36}
+\]
+If \(\lambda_h=\Theta(L^{-a})\), this is \(\Theta(L^{2+a})\). In particular **low smooth Fourier modes** \(k=O(1)\): \(a=2\), \(R=\Theta(L^4)\). **High Brillouin modes** \(k_r=\Theta(L)\), nonzero phase fraction: \(a=0\), \(R=\Theta(L^2)\). A two-tick high-energy finite Jacobian may be nonzero at every finite L yet become arbitrarily ill-conditioned in the continuum; no contradiction with rank34.
+
+This is a rigorous **operational energy/clock/preparation tradeoff** on the SAME original full128 Kraus family; it explains why mixing prepared-LC HJR (IR) and a high-energy Jones34 finite tomography would silently change the actual physical preparation. A positive D0→GR theorem must select, from foundational Cost−Info/G0 and true oldRIGHT/work, the accessible energy preparation AND pay its \(R_{\rm critical}\) steps. This alone does not fix the signed action or close Einstein, but it rules out treating a finite exact tomography rank as a free continuum metric source.
