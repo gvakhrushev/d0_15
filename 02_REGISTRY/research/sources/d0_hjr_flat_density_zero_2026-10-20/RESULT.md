@@ -195,6 +195,56 @@ of on-shell covectors under a specified invertible map with all hypotheses.
 flat-holonomy chart; \`constitutive\`, \`native_sector\`, \`GR\`, and the original
 \`raw216\` terminals remain OPEN.
 
+## Reverse-synthesis: one missing native price, two independent tests
+
+The new [complete-flag/native-minimum packet](../../A4D_COMPLETE_FLAG_SOURCE_AND_NATIVE_MINIMUM_GATE_2026_10_20.md),
+section 5, proves a *different* necessary condition on the exact curved fixed-
+collar critical family of the same conditional whole H+J+R. There, an
+admissible nongauge bulk tangent v has
+
+\[
+D^2 S_{\mathrm{HJR}}[v,v]\in
+[-2372501681/32000000000,\,-2372493199/32000000000]\subset(-.074141,-.074140).
+\tag{8}
+\]
+
+To keep that same critical point as a physical local minimum for an *actually
+derived* full-price completion \`S_full=S_HJR+E\`, **if** this same v is
+physically admitted and the new action is C2, it is necessary that
+
+\[
+dE=0\ \text{at the original curved root},\qquad
+D^2E[v,v]\ge 2372493199/32000000000.
+\tag{9}
+\]
+
+This condition is quoted at the exact scoped fixed-L8 critical point, not
+asserted uniformly in \`h\`, and it is distinct from the present flat test.
+On the separate flat-holonomy family, if one requires the *whole completed
+action itself* to be a function of Palatini densities only, the same extra
+price must instead obey the first-source cancellation
+
+\[
+\lim_{u\downarrow0}\frac{dE}{du}
+=-744+256\sqrt5+4\sqrt2
+\tag{10}
+\]
+whenever this limit exists, or pointwise \`E'(u)=-S_HJR'(u)\` on every
+included positive-\`u\` segment. If the actual physical target contains
+other fields/terms, or only an equation-level transported equivalence is
+claimed, use its **derived** source instead; (10) is not imposed on those
+other hypotheses.
+
+Equations (9) and (10) are **two separate necessary tests at two different
+configurations**, not a proposed functional \`E\`. They make the next
+\`constitutive\` verification finite and discriminating: derive the one
+complete native preparation/controller/clock/history/work price without
+post hoc tuning; evaluate its flat first jet **and** the existing curved
+negative-Hessian direction, with actual admission and source maps. Only
+after those gates does the existing nonlinear field/refinement argument
+have a candidate to consume. No new selector or Einstein equation is
+smuggled into the source.
+
 ## Smallest decisive replay
 
 Run \`python3 check_flat_source.py\` in this directory. Standard-library-only
