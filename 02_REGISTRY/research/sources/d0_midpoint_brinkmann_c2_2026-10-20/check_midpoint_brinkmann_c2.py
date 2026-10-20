@@ -118,7 +118,7 @@ print("PASS: exact original reduced finite 40+2 Euler, nonflat nonvacuum, "
 # STRONGER: exactly the SAME fixed continuum Einstein metric is sampled at
 # every lattice spacing, and genuine original CAR matter differences (not an
 # independently assigned stress) match its source at the Cartan midpoint.
-# Cubic harmonic waves are BOTH continuously and discretely harmonic.
+# The extra harmonic quartic xy(x²-y²) is also exact on every mesh.
 def pw(t):
     return .04*sin(2.4*t)
 def dpw(t):
@@ -131,14 +131,17 @@ def A3(t):
     return .013*cos(4*t)
 def B3(t):
     return -.009*sin(2*t)
+def C4(t):
+    return .011*cos(1.1*t)
 def fixed_H(t,x,y):
     return (-lam*dpw(t)**2*(x*x+y*y)
             +A2(t)*(x*x-y*y)+2*B2(t)*x*y
-            +A3(t)*(x**3-3*x*y*y)+B3(t)*(3*x*x*y-y**3))
+            +A3(t)*(x**3-3*x*y*y)+B3(t)*(3*x*x*y-y**3)
+            +C4(t)*x*y*(x*x-y*y))
 def fixed_Hxx(t,x,y):
-    return -2*lam*dpw(t)**2+2*A2(t)+6*A3(t)*x+6*B3(t)*y
+    return -2*lam*dpw(t)**2+2*A2(t)+6*A3(t)*x+6*B3(t)*y+6*C4(t)*x*y
 def fixed_Hxy(t,x,y):
-    return 2*B2(t)-6*A3(t)*y+6*B3(t)*x
+    return 2*B2(t)-6*A3(t)*y+6*B3(t)*x+3*C4(t)*(x*x-y*y)
 
 for L in (8,16,32,64,128):
     h=1/L
@@ -150,6 +153,7 @@ for L in (8,16,32,64,128):
         nxt=original_psi+h*dpw(uj+h/2)
         max_sampling_err=max(max_sampling_err,abs(nxt-pw(uj+h)))
         original_psi=nxt
+        assert abs(original_psi) < sqrt(1-p)
     assert max_sampling_err < .2*h*h
 
     j=2
@@ -191,4 +195,13 @@ for L in (8,16,32,64,128):
           f"native_euler={source_euler:+.2e}")
 
 print("PASS: exact same continuum nonlinear sourced Einstein metric "
-      "on every native lattice, O(h^2) original CAR field recovery")
+      "on every tested admissible lattice, O(h^2) CAR recovery at matter nodes")
+
+# Small continuum amplitude alone does not guarantee admissibility on coarse
+# meshes. This fixed smooth waveform resonates with a midpoint sampling grid.
+N = 20
+aliased_record = sum((1/N) * .01*2*pi*N*cos(2*pi*N*(j+.5)/N)
+                     for j in range(N))
+assert .01 < sqrt(1-p) and abs(aliased_record) > sqrt(1-p)
+print("PASS: coarse-mesh CAR aliasing control; all-h claim requires admissibility")
+

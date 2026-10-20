@@ -2389,3 +2389,49 @@ source. Independent analytical/checker review pins the application. This
 supplies only the terminal cap-error component of `constitutive`/`native_sector`;
 actual Book Info/price, paid admission, work/clock, full128/noncompact and
 joint/refinement obligations remain. No assembly goal or lifecycle promotion.
+
+### 20 October: smooth sourced Brinkmann recovery and finite curvature-square continuation
+
+Phase: native-realization support and configured-sector source composition
+within the SAME PR #334. Consume the existing arbitrary-Brinkmann full40+2
+and midpoint input at `441fac23c1da2d51d524ba96e8a18f2a1d5dc98f`; do not
+repeat its independent geometric variation proof. The missing mathematical
+application was arbitrary smooth transverse recovery with actual finite
+records and a finite first-source comparison beyond scalar-density squares.
+
+Statement/carrier: same original coframe, proper-Lorentz links, normalized
+CAR16 scalar/top amplitudes, Golden-J2 lambda and Cartan time staggering.
+For r>=2, use W in C^(r+5), harmonic on a fixed outer rectangle, and Psi in
+C^(r+3) with positive CAR slack. Exact Dirichlet roots on admitted meshes
+have O(h^2) C^r metric/matter and C^(r-2) curvature recovery on fixed compact
+interiors. Fixed-data uniqueness, stability, first/second solution-DATA
+derivatives and a convergent-data soundness statement are included; no
+full-action Hessian or minimum assertion follows. The maximal exactly
+sampled harmonic class and the coarse-mesh CAR counterexample delimit
+the exactness/admission quantifier.
+
+For the explicit uniform local metric contraction of the SAME finite
+plaquette odd curvatures, prove all unrestricted 16+24 first-source rows
+vanish on those sourced roots. Keep the expanded sourced support/collar
+and uniform external coefficient; transverse weight transport is an
+additional obligation. This preserves roots under the stated beta_h Q_h
+deformation, without identifying that functional with the complete native
+price. The broader continuum polynomial class has its own explicit scope.
+
+Write paths: extend
+`02_REGISTRY/research/A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md`
+and its existing `sources/d0_midpoint_brinkmann_c2_2026-10-20/` packet,
+plus append-only primary/brief intake. Bounded read-only reviewers cover
+the interpolation/interior estimate and unrestricted finite variation.
+Smallest decisive checks: exact rational full-holonomy first derivatives
+with off-shell, weight and collar controls; non-bandlimited harmonic
+Dirichlet recovery with the original normalized plaquette curvature;
+the updated midpoint/CAR test. Consume the unchanged all40 proof; do not
+rerun unrelated Lean or thermal calculations.
+
+Intended parent substitution: configured-sector recovery/soundness and
+the proved on-solution first-source class. Actual constitutive/native-sector
+use still requires the compulsory full-price/source membership, internal
+stationary elimination, weight/oldRIGHT/reference transport and paid
+preparation/work/clock/physical-time map. No new task, accepted assembly
+premise, lifecycle change, raw-216 or physical GR promotion.

@@ -9360,3 +9360,49 @@ map, actual paid work/preparation/controller/clock, different full128 and
 noncompact carrier, physical selection and joint nonlinear refinement
 remain open. This component application does not identify the compact
 protocol with the whole-HJR root or alter its minimum gate. `GR_closed=false`.
+
+## 20 October: arbitrary smooth sourced GR recovery and a finite action equivalence
+
+The [continued midpoint theorem](A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md)
+consumes the unchanged full 40-to-3-to-1 Brinkmann reduction at
+`441fac23c1da2d51d524ba96e8a18f2a1d5dc98f`. It now solves the exact finite
+Dirichlet problem for arbitrary sufficiently smooth transverse harmonic data,
+with the original midpoint CAR16 record and Cartan links. On fixed compact
+interiors, the actual finite records have a C^r metric/matter reconstruction
+and C^(r-2) curvature recovery with error O(h^2), r>=2. The finite solution is
+unique inside this ansatz at fixed matter and boundary data, is uniformly
+stable, and has convergent first/second DATA derivatives. These derivatives
+are of the solution map, not the action Hessian. A convergent-data converse
+supplies soundness on the same configured sector. This replaces the former
+finite spectral / C0-only restriction in that mathematical application;
+it does not supply the full native physical recovery map.
+
+The maximal fixed-profile exact-sampling class has eight transverse basis
+functions, including the additional curved mode xy(x^2-y^2). Smooth matter
+with positive CAR slack admits all sufficiently fine midpoint meshes;
+admission on every coarse mesh requires the separate bound in the proof.
+The matter and coframe time grids remain distinct. The new finite-record
+interpolation respects both, without sampling an unknown continuum target
+between time nodes.
+
+There is also an exact finite first-source identity for the explicitly
+defined uniform curvature-square functional Q_h on the SAME six based
+plaquettes. All independent sixteen coframe and twenty-four proper-link
+rows vanish on the sourced Brinkmann family: its only possible link rows
+are 2h^2 Delta_h K_a, which the original Cartan and transverse source
+equations annul. Thus S_configured+beta_h Q_h preserves those exact roots
+for every scalar beta_h. The variation support must have an expanded
+sourced collar. Nonuniform transverse weights and an incompatible collar
+have explicit nonzero controls. This is equality of first covectors on the
+exhibited family, not equality of off-shell operators, Hessians or all roots.
+
+The parent substitution is configured-sector recovery/soundness and this
+specific on-solution first-source equivalence. The constitutive/native-sector
+application still needs the complete admitted Cost-Info/H+J+R source,
+internal stationary elimination, actual weight transport, paid
+preparation/work/clock and physical-time readout on the same family.
+The accompanying continuum curvature-polynomial theorem does not assert
+that the whole native price belongs to its class. Independent mathematical
+review and the [targeted replay record](sources/d0_midpoint_brinkmann_c2_2026-10-20/CONTINUATION_VALIDATION.json)
+bind the analytical statement and its controls; no assembly acceptance,
+lifecycle, raw-216 or global GR status is changed. `GR_closed=false`.
