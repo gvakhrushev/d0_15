@@ -246,6 +246,76 @@ for(const hh of [.016,.009]){
 // baseline, then for every tested small two-sided a perturb
 // Cost_uv=3-t a_uv / ln(phi) remains >=1.  Thus no
 // ActionProtocol saturated-floor one-sided loophole is needed.
+// GENERIC full original CAR16 "DARK" rank revival: original rank(A)=3
+// gives 30 original transfer zero modes per CAR grade = 480 at zero
+// phase. The CP homogeneous zone angle preserves rank3 and 480 zeros.
+// But GENERIC original 327-cycle phases make charged Hermitian 33x33
+// magnetic K full rank33 (zero original transfer modes lifted), while
+// eight J23-neutral CAR grades still carry exact rank3 K. Hence generic
+// full 33x16 transfer zero subspace has dimension 30*8=240, not 480!
+// This has NOTHING to do with the Perron F=I-T² zero gap: rank(F)
+// near flat is a DIFFERENT question. "Protected rank30" is ONLY
+// true for the zone-constant original CP interface family.
+function rankHermitianPhase(a,theta,tol=1e-10){
+ const W=A.map((row,i)=>row.map((v,j)=>[v,0]));
+ for(let e=0;e<M;e++){
+  let [i,j]=edges[e],t=theta*a[e],c=Math.cos(t),si=Math.sin(t);
+  W[i][j]=[c,si];W[j][i]=[c,-si];
+ }
+ let rank=0,minPivot=Infinity;
+ for(let j=0;j<N&&rank<N;j++){
+  let pivot=rank;
+  for(let i=rank+1;i<N;i++)
+   if(W[i][j][0]**2+W[i][j][1]**2 >
+      W[pivot][j][0]**2+W[pivot][j][1]**2)pivot=i;
+  const [re,im]=W[pivot][j],mag=Math.hypot(re,im);
+  if(mag<tol)continue;
+  [W[rank],W[pivot]]=[W[pivot],W[rank]];
+  minPivot=Math.min(minPivot,mag);
+  const den=re*re+im*im;
+  for(let i=rank+1;i<N;i++){
+   let [ar,ai]=W[i][j],rr=(ar*re+ai*im)/den,
+       ii=(ai*re-ar*im)/den;
+   for(let k=j;k<N;k++){
+    let [br,bi]=W[rank][k];
+    W[i][k][0]-=rr*br-ii*bi;
+    W[i][k][1]-=rr*bi+ii*br;
+   }
+  }
+  rank++;
+ }
+ return {rank,minPivot};
+}
+const genericTransferRanks=[];
+for(const theta of [0,.1,.2,.5,.8]){
+ const cpRank=rankHermitianPhase(cp,theta);
+ const genRank=rankHermitianPhase(random,theta);
+ const gradientRank=rankHermitianPhase(gradient,theta);
+ assert(cpRank.rank===3&&gradientRank.rank===3,
+   "native CP zone phase/vertex PRICE-gauge lifted the wrong dark kernel");
+ assert(genRank.rank===(theta===0?3:33),
+   "generic 327 cycle full-rank CAR16 transfer not recovered");
+ genericTransferRanks.push({theta,originalCPZoneRank:cpRank.rank,
+  genericFullCycleRank:genRank.rank,gradientGaugeRank:gradientRank.rank,
+  genericFull33MinPivot:genRank.minPivot,
+  originalCAR16TransferZeroModesGeneric:8*(N-genRank.rank)+8*(N-cpRank.rank)});
+}
+const byZone=[Array.from({length:9},(_,i)=>i),
+ Array.from({length:11},(_,i)=>i+9),
+ Array.from({length:13},(_,i)=>i+20)];
+// FIXED native ABC triangle plus 15 disjoint reciprocal pairs on
+// remaining 30 vertices proves NONZERO Laurent determinant monomial
+// e^(i(alpha_ab+alpha_bc+alpha_ca)) of the Hermitian phase matrix.
+const triangle=[byZone[0].shift(),byZone[1].shift(),byZone[2].shift()];
+const matching=[];
+while(byZone.some(v=>v.length)){
+ const ix=[0,1,2].sort((x,y)=>byZone[y].length-byZone[x].length);
+ assert(byZone[ix[1]].length>0,"remaining true K913 graph has no matching");
+ matching.push([byZone[ix[0]].shift(),byZone[ix[1]].shift()]);
+}
+assert(matching.length===15&&
+ new Set(triangle.concat(matching.flat())).size===33,
+ "original 33 determinant triangle+15 disjoint pair monomial lacks proof");
 const ell=Math.log((1+Math.sqrt(5))/2),interiorCost=3;
 let minAdmittedCost=Infinity,minNonGradientGlobalBookGap=Infinity;
 const globalComparisons=[];
@@ -285,7 +355,9 @@ console.log(JSON.stringify({
   originalTreeEdges:32,independentCycleOrbits:327,
   gaugeCoboundaries:32,fullCAR16Grades:16,
   magneticChargedHelicityBranches:8,neutralCARBranches:8,
-  original30KerTimes16:480},
+  original30KerTimes16AtZeroPhase:480,
+  original30KerTimes16CPZonalAllPhases:480,
+  genericCycleNonzeroTransferKernel:240},
  originalPerron:{rho,stochasticRowMaxError:stochasticErr,perronEigError:perronErr},
  full327:{
   HessianRank:327,strictPositiveCholesky:true,
@@ -300,7 +372,11 @@ console.log(JSON.stringify({
   strictGlobalBookReversibilityTheorem:true,
   allAdmittedOriginalCostMinimum:minAdmittedCost,
   minimumPositiveOffshellCyclicPressureGap:minNonGradientGlobalBookGap,
-  fullPositiveDomainCyclicGlobalTests:globalComparisons},
+  fullPositiveDomainCyclicGlobalTests:globalComparisons,
+  genericCARMixingAndDarkKernelRevival:genericTransferRanks,
+  determinantLaurentNonzeroMonomial:{nativeTriangle:triangle,
+   reciprocalPerfectMatchingCount:matching.length,
+   signedCoefficientNonzero:true}},
  uniqueCanonicalLaw:{
   residualCycleCovariance:"Q(a,b)=2 sum_undirected mu_uv [a_uv-chi_u+chi_v][b_uv-chi_u+chi_v]",
   MarkovPoisson:"L_mu chi=div_mu a",
