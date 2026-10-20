@@ -79,6 +79,33 @@ Both functions are strictly inversion-odd and have identical first Lorentz-sourc
 
 Any other original fully retained Golden code/readout scalar with the SAME Lorentz-equivariant, inversion-odd first differential and bounded higher derivatives differs from this representative by O(||X||³); the leading continuum equivalence below uses that fixed same-derivative assumption, not an assertion about every possible code.
 
+## 1.1. NEW exact operational glue: signed SOURCE survives ACTUAL Golden/CNOT coherent hardware AND moving Book class price
+
+The concurrent scientific #334 new source \`sources/d0_golden_native_herald_2026-10-20/check_exact_coherent_golden_bell_teleport_all64.mjs\` now builds an **ACTUAL native-p Golden+CNOT** coherent two-qubit Bell pair/effect from original computational blanks with complete parity-failure archive. A single coherent pair resource succeeds with probability \`s=2p³\`. Its twelve needed independent pairs prepare the EXISTING 64-dimensional two-fresh CAR16 Golden/Bell Choi comparison at one-shot resource rate
+
+    r_Golden = (2p³)^12 = 0.0001226887944214464...
+
+and the final conditional Bell comparison succeeds at 1/4096. The TOTAL unconditioned one-shot fixed-circuit amplitude is \`p^18\` and probability
+
+    r_Golden/4096 = p^36 = 2.995331895054845×10^-8.
+
+Every failure stays in the full recorded output; the 12-pair retry construction can have expected native Golden G calls bounded above by \`12/p³≈50.83281573\` **per prepared Bell attempt**, with a maximum cutoff K=O(log L) for the specific prescribed refinement-error budget. This does NOT make final Bell success probability one or pay its repeated attempts for free. Critically the moving arbitrary field-dependent complete \`|J(U)>>\` programme preparation, oldRIGHT/clock/controller and its actual physical price are still NOT constructed by the fixed-Bell circuit.
+
+There is nevertheless a stronger **ALL-AMPLITUDE, ALL FIELD-DERIVATIVE SOURCE-WELD IDENTITY**, valid on the actual 17-positive-event mathematical carrier and independent of how tiny the preparation rate is. On ONE ORIGINAL oriented Book path class γ, suppose the full jointly recorded signed +/- marker probabilities are
+
+    Q_(γ,±)(y)=w_γ(y) r_γ(y) q_(a,±)(P(y)),
+
+where \`w_γ(y)>0\` is that actual path-class common original Book Cost–Info weight and \`r_γ(y)>0\` the complete Golden coherent-Bell preparation probability shared by the TWO marker outcomes. Both may move arbitrarily with all real coframe/connection/preparation fields (on a faithful positive chart). Then EXACTLY, off shell and before any expansion,
+
+    ln[Q_(γ,+)(y)/Q_(γ,−)(y)]
+      =ln[q_(a,+)(P(y))/q_(a,−)(P(y))].
+
+Every first, second and all higher field SOURCE derivative of this oriented native relative code is unchanged by the full common preparation/clock/class amplitude; no \`D w_γ=0\` or \`D r_γ=0\` is assumed. The corresponding signed square-root decoder becomes EXACT after dividing each raw positive mark by its ACTUAL measured full-class marginal \`Q_γ=∑_{all17}Q_(γ,r)=w_γr_γ\`; the actual complete failure branch is essential for this marginal and remains paid/retained.
+
+The strengthened executable checker tests this fact directly in ALL SIX original null/compact/noncompact SO controls, with the genuine original coherent 12-pair success rate \`(2p³)^12\` AND a deliberately moving positive Book class weight. All ratio/source invariances PASS to <5×10^-14.
+
+**Very important limitation:** if the + and − markers come from DIFFERENT original Book path classes with distinct w_+,w_−, the factors do NOT cancel across those classes until EACH original forward/reverse class is separately normalized by its own full retained marginal; this is the earlier PRETRACE theorem, not free global path reversal symmetry. The common-intensity identity says the complete geometric **OBSERVABLE** is source-invariant under paid generation, not that the fundamental physical Book/CAR/clock/oldRIGHT action lost those source terms. In the whole Book price they still matter. It removes an actual OPERATIONAL conditioning/normalization concern from the signed readout without selecting an Einstein action.
+
 ## 2. GLOBAL 4D original smooth-action / source universality at the actual geometric normalization
 
 Let \`h=1/L\` on the actual periodic 4D Role lattice, with **shared** proper SO⁺(1,3) links sampled from a bounded C³ continuum spin connection and C² coframes. Every based original face holonomy has a true Lie logarithm
@@ -220,7 +247,7 @@ The decisive remaining question is now *whether the COMPULSORY original process 
 ## 7. Reproduction / status
 
 1. \`node 02_REGISTRY/research/sources/d0_global_chiral_ir_universality_2026-10-20/check_original_golden17_smooth_role_ir_universality.mjs\`
-   - Actually fetched live GitHub source and executed in current V8; terminal \`PASS_ORIGINAL_4D_ROLE_GOLDEN17_CHIRAL_IR_UNIVERSALITY\`. Original L=8→96 smooth Role shared links, 17 fully retained native positive outputs, exact signed odds/root source and full Shannon, real all-site source/derivative normalization, true 4D field derivatives, order-h4 and order-h2 empirical bounds, the nonzero UNWEIGHTED even-code counterexample and **six actual native Lorentz generator 17-outcome positivity/source tests** all PASS. Closed formulae (1)–(5) supply analytic proof.
+   - Actually fetched live GitHub source and executed in current V8; terminal \`PASS_ORIGINAL_4D_ROLE_GOLDEN17_CHIRAL_IR_UNIVERSALITY\`. Original L=8→96 smooth Role shared links, 17 fully retained native positive outputs, exact signed odds/root source and full Shannon, real all-site source/derivative normalization, true 4D field derivatives, order-h4 and order-h2 empirical bounds, the nonzero UNWEIGHTED even-code counterexample, **six actual native Lorentz generator 17-outcome positivity/source tests**, and **all-six genuine Golden/CNOT coherent 12-pair Bell plus moving Book-class exact relative-odds cancellation tests** all PASS. Closed formulae (1)–(5) supply analytic proof.
 2. \`node 02_REGISTRY/research/sources/d0_global_chiral_ir_universality_2026-10-20/check_original_car16_hodge_holst_vacuum_class.mjs\`
    - Actually fetched live GitHub source and executed in current V8; terminal \`PASS_ORIGINAL_CAR16_HODGE_HOLST_VACUUM_UNIVERSALITY\`. Original six-bivector Hodge, its exact aI+bJ inverse/determinant, first Bianchi/ε Holst negative control with genuine nonzero scalar curvature, all PASS.
 3. This combined theorem is **research mathematics / scoped continuum universality**, not a newly accepted scientific closure or production formal Lean proof. None of the actual full G0 H+J+R, compulsory original Cost-floor+Shannon selection, 128/oldRIGHT, normalizing clock, matter source Ward, uniform exact periodic Einstein root or raw216 were rerun/claimed.
