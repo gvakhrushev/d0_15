@@ -1094,4 +1094,65 @@ theorem originalQ8ThreeTickTriangleGoldenWitness :
   exact ⟨nativeQ8ProgramPort_grouped, nativeQ8ProgramPort_ordered,
     nativeQ8ProgramPort_grouped_ne_ordered⟩
 
+
+/-! ## Strong prospective D_min reversal: a selected UNIFORM Spin sheet
+has NO 327 independently stored source parameters — one CLOCK PARITY law.
+
+All 327 original K913 Q8 central sheet bits label the general
+mathematically possible graph gauge-quotient.  IF a future compulsory
+prospective information-price rule selects the UNIQUE gauge class with
+every original ABC triangle syndrome qNEG, then the original
+representative with all directed central edge lifts qNEG exists.
+Every based closed word of length n has central holonomy (-1)^n,
+a function ONLY of an already owned native clock parity.
+
+Thus the generative-description complexity of this SINGLE selected
+Spin gauge class is a fixed rule, rather than 327 independent initial
+sheet bits. The previously established 327-bit lower bound is
+conditional on the actual physical world needing to preserve all
+2^327 allowed source sheets and compare each under future tests.
+This theorem proves only the parity formula on original Q8 central
+group; it does NOT select all-negative physical vacuum or claim
+the actual whole Book03 Info is Golden output Shannon.
+-/
+
+/-- Exact native Q8 central holonomy of n consecutive source edges
+each with the original central element qNEG. This is a
+representative of a possible flat projective gauge connection,
+not a new physical primitive edge. -/
+def nativeQ8UniformNegativeLoop : ℕ → D0.Foundation.UQuat
+  | 0 => D0.Foundation.qONE
+  | n + 1 =>
+      D0.Foundation.uqmul D0.Foundation.qNEG
+        (nativeQ8UniformNegativeLoop n)
+
+/-- The true already-owned original center has exact period two. -/
+theorem nativeQ8CenterTwiceIsIdentity (q : D0.Foundation.UQuat) :
+    D0.Foundation.uqmul D0.Foundation.qNEG
+      (D0.Foundation.uqmul D0.Foundation.qNEG q) = q := by
+  rcases q with ⟨a,b,c,d⟩
+  simp [D0.Foundation.uqmul, D0.Foundation.qNEG]
+
+theorem nativeQ8UniformNegativeLoop_periodTwo (n : ℕ) :
+    nativeQ8UniformNegativeLoop (n + 2) =
+      nativeQ8UniformNegativeLoop n := by
+  simp only [nativeQ8UniformNegativeLoop]
+  exact nativeQ8CenterTwiceIsIdentity _
+
+theorem nativeQ8UniformNegativeLoop_even (n : ℕ) :
+    nativeQ8UniformNegativeLoop (2*n) = D0.Foundation.qONE := by
+  induction n with
+  | zero => rfl
+  | succ n ih =>
+      have h : 2*(n+1) = 2*n+2 := by omega
+      rw [h, nativeQ8UniformNegativeLoop_periodTwo, ih]
+
+theorem nativeQ8UniformNegativeLoop_odd (n : ℕ) :
+    nativeQ8UniformNegativeLoop (2*n+1) =
+      D0.Foundation.qNEG := by
+  change D0.Foundation.uqmul D0.Foundation.qNEG
+    (nativeQ8UniformNegativeLoop (2*n)) = D0.Foundation.qNEG
+  rw [nativeQ8UniformNegativeLoop_even]
+  native_decide
+
 end D0.Representation.OrderMemoryControl
