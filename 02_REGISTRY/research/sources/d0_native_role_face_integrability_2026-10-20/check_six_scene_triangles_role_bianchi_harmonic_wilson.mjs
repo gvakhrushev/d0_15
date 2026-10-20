@@ -124,7 +124,7 @@ const rawI=()=>Array.from({length:4},(_,i)=>Array.from({length:4},(_,j)=>+(i===j
 const E=(a,b)=>Array.from({length:4},(_,i)=>Array.from({length:4},(_,j)=>+(i===a&&j===b)));
 const eta=[[0,1,0,0],[1,0,0,0],[0,0,-1,0],[0,0,0,-1]];
 const mm=(A,B)=>A.map(row=>B[0].map((_,j)=>
-  row.reduce((tot,x,k)=>tot+x*B[k][j],0));
+  row.reduce((tot,x,k)=>tot+x*B[k][j],0)));
 const add=(A,B,s=1)=>A.map((r,i)=>r.map((v,j)=>v+s*B[i][j]));
 const gens=[
   add(E(1,1),E(0,0),-1),
