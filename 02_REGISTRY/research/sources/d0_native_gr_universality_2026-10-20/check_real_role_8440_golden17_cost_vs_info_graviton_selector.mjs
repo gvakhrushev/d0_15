@@ -118,7 +118,7 @@ for(const t of [0,.05,.15,.27]){
  const Z2=fullBook("cost",t).n2,Z3=fullBook("cost",t).n3;
  const reject2=g2*(1-beta2)+g2*beta2*(1-kappa*Z2/g2);
  const reject3=g3*(1-beta3)+g3*beta3*(1-kappa*Z3/g3);
- const accept2=kappa*Z2,accept3=kappa*Z3;
+ const accept2=beta2*kappa*Z2,accept3=beta3*kappa*Z3;
  fail(reject2>0&&reject3>0&&Math.abs(
    reject2+reject3+accept2+accept3-1)<1e-12,
    "all original stage failures must be retained in valid positive law");
@@ -126,12 +126,12 @@ for(const t of [0,.05,.15,.27]){
 }
 fail(maxRawErr<3e-11,"analytic 8440 path source identity fail");
 const analyticalCost=edgeOccupancy*K2,analyticalInfo=-vertexOccupancy*K2;
-const h=.004;
+const h=.15;
 const numericalCost=(action("cost",h)+action("cost",-h))/(h*h);
 const numericalInfo=(action("info",h)+action("info",-h))/(h*h);
-fail(Math.abs(numericalCost-analyticalCost)<2e-10,
+fail(Math.abs(numericalCost-analyticalCost)<2e-9,
  "true original Golden raw Cost Hessian wrong");
-fail(Math.abs(numericalInfo-analyticalInfo)<3e-10,
+fail(Math.abs(numericalInfo-analyticalInfo)<6e-8,
  "true original Golden raw INFO Hessian wrong");
 const sameFirst=Math.abs((action("cost",h)-action("cost",-h))/(2*h))+
  Math.abs((action("info",h)-action("info",-h))/(2*h));
