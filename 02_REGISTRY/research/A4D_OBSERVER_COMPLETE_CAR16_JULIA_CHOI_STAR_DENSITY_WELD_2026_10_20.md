@@ -175,3 +175,53 @@ G_2(B,\star\mathfrak b(C))
 Thus, once the existing **two-density Golden six-phase atlas itself** is operationally admitted and paid for, the signed Palatini face is mathematically accessible as a **derived scalar function of six existing CAR comparison readouts**; an additionally physically executed entangled Choi-mark apparatus is not a logically necessary new experimental primitive. This is a LOCAL analytical representation theorem only. It does NOT say the original primitive full128 pointer magically implements the six two-density preparations/anchors; #334 explicitly treats them as conditional complete readouts with work, preparation and reference costs. Nor does reconstructability choose \(\widehat q\), its two auxiliary probes, or the full Book Cost−Info source as the physically selected law. Frame/observer transport of preparations and anchors must be retained; local chart coordinates are not automatically globally gauge invariant.
 
 This substantially narrows the remaining G0 task: no new **Hilbert carrier**, no new **Lorentz generator**, no new **positive tester class**, and not even an extra Choi laboratory operation are needed merely to REPRESENT every local finite Palatini scalar; the actual native programme must prove the readout/price **selection** and the same-action Euler/Clock/Ward/refinement, with this six-phase atlas as its already-owned field-visible source rather than an invented scalar graph potential. The earlier conditional/failure log-source and observer covariance remain mandatory.
+
+
+## 8. NEW G0 selector theorem: observer-free smooth prices recover EXACTLY the signed Lorentz form
+
+This is a precise necessity/sufficiency result ON THE SAME ORIGINAL Golden-CAR16 Julia/Choi mathematical tester of §§1–7, not a proof that Book03 selects this tester. Let q=(m,u,f) be its three COMPLETE event probabilities: marked-good, unmarked-good, failure. At U=I, q0=(p²,0,p), p=φ^(-1). ALL three first Lorentz field jets vanish. On the literal boost/rotation basis (K1,K2,K3,J23,J31,J12), their SIX-DIMENSIONAL Hessians are EXACTLY
+
+  D²m = p² diag(I3,-I3),
+  D²u = p² I6,
+  D²f = p² diag(-2I3,0).                                  (8.1)
+
+Their sum vanishes as a direct complete Born-normalization Ward. Let C(m,u,f) be ANY scalar score differentiable at q0 on the positive-simplex closure, with first derivatives c_m,c_u,c_f. Since q(y)-q0=O(y²), differentiability of C already suffices to give the quadratic jet of C(q(y)) (no full C² assumption on C itself):
+
+  D²_y C(q(y))|0 = p² diag(
+           (c_m+c_u-2c_f) I3,
+           (-c_m+c_u) I3 ).                                (8.2)
+
+Thus a NONZERO Lorentz Killing/Palatini quadratic form a diag(I3,-I3) occurs IF AND ONLY IF
+
+  c_u = c_f,  c_m != c_f,  a=p²(c_m-c_f).                  (8.3)
+
+A sharper physics-motivated reason for the equality is OBSERVER-INDEPENDENCE of the PURE geometry score (stronger than covariance when both the observer and field transform). The marked event m(U) is observer-free; the total-good probability is not. Fix the SAME spatial rotation U=R23(theta), and compare rest observer n0 with n_a=g_a n0 where g_a is an existing proper Lorentz boost transverse to R23. The COMPLETE observer-metric CAR16 Julia probabilities obey at finite theta
+
+  m = p² cos(theta/2)^4,
+  q_good(U,n_a)=p² [1+sinh(a)² (1-cos theta)]².            (8.4)
+
+For the already-owned D0 rational boost cosh(a)=5/4, sinh(a)=3/4, with z=tan(theta/2), this is an exact rational identity:
+
+  q_good/p²=(17z²+8)²/[64(1+z²)²],
+  m/p²=1/(1+z²)²,
+  q_good/p²-1=9z²(25z²+16)/[64(1+z²)²] >0 (z!=0).       (8.5)
+
+At flat, this observer change alters the candidate geometric Hessian along J23 by exactly (9p²/8)(c_u-c_f). Therefore observer-free PURE GRAVITY forces c_u=c_f. Conversely, (8.3) eliminates the observer-dependent total-return Hessian and leaves the invariant Lorentz trace pairing for ALL six generators. An actual FULL matter/clock action MAY depend on a moving observer and pay its own source; do not impose this pure-geometric condition on that entire action by fiat.
+
+To match the literal old S_star face (4) in natural logarithms requires the further FIXED scale p²(c_m-c_f)=-1. The marked-event surprisal C=-ln m has c_m=-1/p²,c_u=c_f=0, so passes without a fit; in BOOK Golden-log units the same identity needs the forced ln(phi) conversion of §6. This identifies a whole allowed score CLASS at the quadratic level, not the uniquely physically selected nonlinear Book action.
+
+### 8.1. Three simultaneous kill controls from one COMPLETE native-weighted CAR16 apparatus
+
+(A) Every spectral cost depending ONLY on the complete Julia failure effect F_J=I16-p² Lambda(U)^(dagger_n)Lambda(U) is IDENTICALLY constant on the entire compact spatial SO(3) subgroup at the rest observer. In particular the plausible isolated Book-like feedback -Tr log(I-z F_J) cannot equal S_star's nonzero spatial rotation Hessian. Along a one-axis boost its exact second derivative is 32p² z(z-1)/(1-zp)² <0 for 0<z<1, whereas its spatial rotation Hessian is zero. This is scoped to the identification Book-feedback=Julia-return-effect, NOT a no-go for the real complete noncommutative Book03 memory.
+
+(B) The FULL three-label classical Shannon entropy of THIS constructed tester is NOT C² at flat. Every unit six-generator tangent opens the previously dark unmarked-good branch as u(t)=p²t²/2+O(t^4), while m,f are positive at t=0, so
+
+  H_pointer(t)=H_pointer(0)-p² t² ln|t|+O(t²).              (8.6)
+
+Its second derivative diverges; it cannot be replaced silently by the smooth old S_star Hessian. This does NOT claim actual native full128 Shannon necessarily has the same dark-outcome jets, nor exclude cancellations in a fully selected Cost-Info action.
+
+(C) Conditional marked-given-success log probability has Hessian -I6; postselection erases the indefinite form. Two equally positive Golden-cost candidate event surprisals, -log_phi(m) and -log_phi(q_good), have the SAME flat value 2 and first Lorentz jets 0 and both respect the original observer-covariant FULL readout and action floor on a small chart, but have DIFFERENT second geometric signatures. Golden weights, positivity and a first-source certificate do not select the action. Observer-INDEPENDENCE of its pure-geometric score DOES select its correct signed quadratic shape through (8.3).
+
+**Decisive G0→G1 consumer, reduced to TWO conditions instead of another atlas:** IF one genuine, fully priced physical original full128+CAR/Golden/observer/clock/oldRIGHT programme is proved to admit THIS actual complete event quotient, determine the three FIRST derivatives c_m,c_u,c_f of its actual selected Cost-Info. The pure geometric contribution can equal the old unnormalized finite Palatini bilinear ONLY if c_u=c_f and the common coefficient obeys p²(c_m-c_f)=-1 in natural-log cell units (or the exact corresponding Golden base conversion). If not, a same-programme cancellation or a different readout is mandatory. No derivation of the fundamental three-label quotient, nonlinear Book selection, matter Ward, joint exact root or #216 refinement is claimed. GR_closed=false.
+
+Exact independent source: sources/d0_book_geometry_double_schur_2026-10-19/check_car16_golden_observer_score_selector.py (all-six CAR16 and finite rational observer, Shannon dark-jump and return-only feedback controls); a separate local SymPy/mpmath independent replay PASSED. No remote CI or accepted scientific promotion claimed.
