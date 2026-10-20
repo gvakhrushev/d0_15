@@ -125,3 +125,34 @@ This no-go targets **equality of the actual selected action SOURCE/Hessian with 
 **P0 physical fork:** obtain the actual G0 programme and compute the ONE original coframe-area to link-price mixed derivative \(\partial_a\partial_t S_{\rm selected}\) on (1)–(2), together with \(\partial_a^2S_{\rm selected}\), true 16+24 original Euler, archive work/clock/oldRIGHT and the complete primitive Cost floor. If the selected source is of class (5), \((0,-c)\) is algebraically IMPOSSIBLE for \(c\ne0\). If true H+J+R provides coframe-area-dependent paid Info/coding/preparation (or a real stationary archive Schur), it must exhibit and normalize the counterterm's mixed source from native primitives, not guess a Palatini coefficient.
 
 Independent exact SymPy ALL 96 shared-face & original 8440 occurrence checker: \`sources/d0_native_gr_universality_2026-10-20/check_native_palatini_unimodular_cost_floor_mixed_cone.py\`. \`GR_closed=false\`.
+
+
+## 5. Complementary INTERIOR-Cost terminal already owned upstream: true Golden17 all-order matched code can pay once and make ALL original 8440 Book action field-CONSTANT
+
+The source-cone theorem §§1–4 assumes exact quantum saturation \(C_e(q_0)=1\). This is NOT the case for many candidate predictive coding Costs which pay extra positive code length; those may have nonzero linear Cost/source away from the floor and can carry an independent true coframe-area response if actually selected.
+
+The VERY FRESH existing #334 \`sources/d0_native_gr_universality_2026-10-20/check_native_8440_root_code_budget_and_384_golden_stationary_source.mjs\` provides a different sharp all-order no-source example **inside** this interior-Cost code space: for the SAME complete genuine native 96-site-face Golden17 pointer \(q_{17}(U)\) with Bell fail retained, take a physically *conditionally prepared* exact matched codebook \(m=q_{17}(U)\). Its expected Cross code cost equals the full Shannon \(H_\varphi(q)\). Let \(\mathcal H(q)\) denote the true entire original 96-face entropy. Suppose a Book programme charges EACH primitive edge \(C_e=1+\mathcal H\), EACH visited vertex \(I_v=\mathcal H\) INCLUDING the repeated closing initial root, and separately pays precisely ONE full initial-root preparation code of length \(\mathcal H\) per based history. Then on EVERY actual original n=2/3 based path:
+\[
+\boxed{
+S_\gamma
+=n(1+\mathcal H)+\mathcal H-(n+1)\mathcal H
+=n\quad\text{for EVERY physical Lorentz field }U.}\tag{11}
+\]
+Hence the literal complete original same-clock scalar partition, with original \(g_2=p,g_3=p²\), is
+\[
+\boxed{
+Z_{\rm B}
+=\sum_{\gamma\in\mathcal L_{8440}}g_{|\gamma|}p^{S_\gamma}
+=718p^3+7722p^5
+=\text{TRUE CONSTANT for ALL native field values}.
+}\tag{12}
+\]
+There is NO first, second or higher Book Euler source in ANY 16/24 Role direction on this **conditional mathematical programme**, even though the FULL 17-component Golden pointer, its SIX signed Lorentz signals and the reconstructed 640 geometric Palatini Euler *observables* move nontrivially. The matched reference may require a separately selected/payable preparation; the equation above is a source identity under that PREPARATION condition, not an assertion the original unchanged fullStep/G0 physically chooses it.
+
+This is an important **COMPLEMENTARY** no-go: simply evading the Cost saturation of §§2–3 by charging full predictive code overhead does NOT automatically yield Einstein. One actual fully matched, once-root-charged positive code has EXACT ZERO geometric source although all the genuine signed Golden labels remain perfectly observable. For arbitrary integer root-charge count \(m\), the same literal Book price becomes \(S_\gamma=n+(m-1)\mathcal H\), so \(m=0,1,2\) give three different Euler sources on the very SAME full17 physical pointer. This is a mathematical nonselection witness for P25; no physically compelled \(m\) has been proved by the Book03/G0 input. It also shows that the full external Golden17 signed chiral-Cost decoder reproducing original all640 Palatini observable derivatives is NOT the same proposition as a G0-selected scalar Book action having those derivatives.
+
+**Strongest action-selection DICHOTOMY on original data:**
+1. If the physically compulsory scalar action uses smooth original primitive saturated \(C_e\ge1,C_e=1\), full coframe-blind signed Info and clock, the mixed Hessian PSD cone theorem (10) excludes Einstein even with arbitrary frame-dependent Cost corrections.
+2. If it instead pays interior Cost for a matched prepared full17 code, (11)–(12) show one mathematically admissible whole-book completion has ZERO source to all orders, despite nontrivial complete observable Palatini readout. Other interior codes can have nonzero sources, but must be selected by unchanged G0 and must contain the real coframe-area×link mixed jet.
+
+Only an ORIGINAL physically selected, PAID, SOURCE-FAITHFUL operation coupling the native oriented coframe area into actual H+J+R/Golden/oldRIGHT primitive Cost–Info/clock or a genuine full internal z-Schur can remove this underdetermination. This is not a novel gravity action; it is a strict finite source-compatibility test. \`GR_closed=false\`.
