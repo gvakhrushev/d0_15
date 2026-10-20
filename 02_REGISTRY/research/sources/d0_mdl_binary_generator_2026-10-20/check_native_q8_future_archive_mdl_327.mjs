@@ -121,6 +121,51 @@ const lineAnswer=(line,bit)=>Boolean(bit);
 check([0,1,2].every(l=>lineAnswer(l,1)===true)&&
  [0,1,2].every(l=>lineAnswer(l,0)===false),
  "same complete Spin test verified by two existing independent lines; third PERFECT line adds no distinct verified content");
+
+// NEW actual OWNER-to-OWNER typed mathematical assay:
+// The already-owned Q8 center sign from each original 3-tick
+// triangle can be routed (IF G0 admits control) into the already-owned
+// GoldenOrderInterferometer.controlledSign(s). The actual primitive
+// p-Golden positive second-port law is EXACTLY 0 for Q8 +1 and
+// 4p^3 for Q8 -1. A singleton-shot 0 does not prove +1; the exact
+// conditional probability distribution distinguishes both.
+const goldenP=(Math.sqrt(5)-1)/2, aGolden=Math.sqrt(goldenP);
+const portProbability=(bit)=>{
+ const sign=bit?-1:1,alpha=aGolden*aGolden+sign*goldenP*goldenP,
+       beta=(sign-1)*aGolden*goldenP;
+ if(Math.abs(alpha*alpha+beta*beta-1)>1e-13)throw Error("invalid full two-port Born");
+ return beta*beta;
+};
+check(Math.abs(portProbability(0))<1e-15 &&
+ Math.abs(portProbability(1)-4*goldenP**3)<1e-14 &&
+ portProbability(1)>0,
+ "ACTUAL primitive p Golden order interferometer distinguishes Q8 central +1 (dark) vs -1 (4p^3)");
+const basis=[];
+for(let b=9;b<20;b++)for(let c=20;c<33;c++)basis.push([0,b,c]);
+for(let a=1;a<9;a++)for(let c=20;c<33;c++)basis.push([a,9,c]);
+for(let a=1;a<9;a++)for(let b=10;b<20;b++)basis.push([a,b,20]);
+check(basis.length===327&&rank2(basis.map(([a,b,c])=>
+  (1n<<BigInt(idx(a,b)))^(1n<<BigInt(idx(b,c)))^(1n<<BigInt(idx(a,c)))))===327,
+ "the EXACT 327 native ABC basis-centre assays are independent, no 960 extra primitive detectors");
+const chords=edges.map((x,i)=>i).filter(i=>!tree.has(i));
+let minResponse=1,maxResponse=0;
+for(let ci=0;ci<chords.length;ci++){
+ const delta=chords[ci];
+ const before=basis.map(x=>tau(...x)),
+       after=basis.map(([a,b,c])=>before[basis.findIndex(v=>v[0]===a&&v[1]===b&&v[2]===c)]^
+                                  Number([idx(a,b),idx(b,c),idx(a,c)].includes(delta)));
+ let witness=false;
+ for(let j=0;j<327;j++){
+   const diff=Math.abs(portProbability(before[j])-portProbability(after[j]));
+   maxResponse=Math.max(maxResponse,diff);
+   if(diff>1e-14){witness=true;minResponse=Math.min(minResponse,diff);}
+ }
+ if(!witness)throw Error("original Q8 sheet chord not detectable by Golden spin-controlled word");
+}
+check(chords.length===327 &&Math.abs(minResponse-4*goldenP**3)<1e-13 &&
+ Math.abs(maxResponse-4*goldenP**3)<1e-13,
+ "EACH original 327 SO-blind Q8 gauge-invariant sheet directions has a positive-distribution Golden order-port future witness");
+
 console.log(JSON.stringify({
  original_source:"native Q8 Spin central sheets on original K9/K11/K13 graph, not arbitrary generic encoding",
  full_edges:359,original_based_triangles:1287,
