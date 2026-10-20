@@ -8546,14 +8546,27 @@ all real amplitudes outside a finite algebraic exceptional set. Exact
 specializations give ranks 90/90 at `t=0` (the zero-carrier compatible point)
 and 97/98 at `t=1` and `t=2`.
 
-The exceptional nonzero roots have not been isolated. This is a generic
-amplitude obstruction to this particular first-slow lift, not a nonlinear
-no-go for #232, not a response-gap sequence, and not the task's
-`A4D-JOINT-MICROSTRUCTURE-METRIC-RESPONSE-NOGO` terminal. The smallest remaining
-calculation on this route is exact real-root isolation of the augmented-minor
-exception set, followed by pointwise compatibility checks there. Higher-order
-continuations and the normalized response terminal remain open. The bounded
-replay is
+The exceptional set is now classified exactly. A 98×98 augmented minor
+selected at `t=1` factors, up to a nonzero integer constant, as
+`t^24*(3*t^2+4)^348*F_26(t)`, where
+
+`F_26(t) = 6377292*t^26 + 107351082*t^24 + 398935044*t^22 - 82574559*t^20 - 3595282200*t^18 - 2239488*t^17 - 8560584792*t^16 - 15614208*t^15 - 6051278880*t^14 - 40421376*t^13 + 8954889984*t^12 - 51904512*t^11 + 25823442432*t^10 - 36716544*t^9 + 29726969856*t^8 - 14352384*t^7 + 20294336512*t^6 - 2359296*t^5 + 8667824128*t^4 + 2204368896*t^2 + 264241152`.
+
+The degree-26 factor is irreducible over `Q` and has exactly four real roots,
+isolated in
+`(-28707/16781,-24160/14123)`,
+`(-7507/5873,-76508/59855)`,
+`(12201/9557,15362/12033)`, and
+`(50362/29425,50451/29477)`. Exact Gaussian elimination over
+`Q[t]/(F_26)` gives ranks 97 and 98 after adjoining the source. Since the
+four roots are conjugate, the augmented rank is 98 at each; none is compatible.
+The factor `3*t^2+4` has no real roots. At `t=0`, the microstructure vanishes,
+the source is zero, and both ranks are 90. Therefore `t=0` is the only real
+amplitude compatible with this first-slow system; no nonzero amplitude on the
+designated #232 Cayley orbit admits the regular same-source first-slow lift.
+The exact factorization and field-rank replay is
+[`a4d_y232_amplitude_exception_root_check.py`](certificates/a4d_y232_amplitude_exception_root_check.py)
+(`python-flint==0.6.0`); the SymPy-only generic-rank replay remains in
 [`a4d_y232_designated_warp_amplitude_generic_check.py`](certificates/a4d_y232_designated_warp_amplitude_generic_check.py).
 
 ## 20 October: native two-record source, balanced-flag loss and the shortest six-face consumer
@@ -8615,3 +8628,8 @@ full block pullback and a nonzero fixed-original-coframe Schur control
 are retained. The physical source must specify whether the observed
 metric is e or the derived E; coordinate equivalence alone cannot change
 the raw fixed-metric question.
+
+This excludes only this candidate's regular first-slow lift. It is not a
+nonlinear no-go for #232, not a response-gap sequence, and not the task's
+`A4D-JOINT-MICROSTRUCTURE-METRIC-RESPONSE-NOGO` terminal. Higher-order or
+nonregular continuations and the normalized response terminal remain open.
