@@ -213,6 +213,51 @@ Conversely, in the dressed geometric/volume sector alone this same uniform Info 
 
 **STRATEGIC KILL-FIRST:** stop searching for an independent "Book-Weyl stress" or manually inserting W_B^-1. The exact original K(9,11,13) triangle combinatorics, the original two-coframe-leg Lorentz star and 4D moving physical volume already determine its geometric dressing and its source transformation. If a candidate complete original G0 history only differs by common pressure W_B and its absolute Perron B, the entire geometry and one residual pressure Ward are now explicitly soluble. Inspect the LITERAL actual complete Book03 H+J+R/clock/Golden-preparation source ON THAT SAME balanced Golden LEFT physical cut: does its uniform Info+coframe tangent supply 0, -1 or the required compensating +1? This one ACTUAL source measurement is the decisive way to test the constitutive physical law; declaring an arbitrary \(T_{\mu\nu}\) or another curvature coefficient cannot do it.
 
+## 5.1. NEW POSITIVE COMPLETION: the ORIGINAL 2→3 Book clock contains EXACTLY the missing +1 affine source
+
+The -1 Perron cocycle in §5 is **not an arbitrary unobservable defect needing a fitted counterterm**. The ORIGINAL finite 2/3 stage-resolved native Book history contains another ALREADY OWNED positive readout with the precise opposite cocycle. This is a new exact natural combination of existing operators, not a new clock primitive.
+
+Let \`Z_n(K)=Tr(K^n)\` for n=2,3 on the actual ORIGINAL 33 scene, both strictly positive because the graph contains real 2- and 3-cycles. Alternatively use the genuinely original single-root return \`Z_n^(a0)=(K^n)_(a0,a0)\`, positive at n=2,3 as well. Let \`beta_2,beta_3>0\` be the REAL probabilities/amplitudes of the declared native stage-selection instrument, **assumed fixed under this tested common Info shift** (not assigned numerical Golden values by theory). In a complete stage-labelled history experiment, the actually observable ratio of the two stage masses is
+
+    Odds_(3/2)(K) = q_3/q_2 = beta_3 Z_3(K)/(beta_2 Z_2(K)).
+
+This ratio cancels the overall normalization of the COMPLETE labelled two-stage record, including any retained rejected complement. It does not condition away or erase those failures. Under the SAME exact original shift \`I→I+t\` (K→phi^t K), at ALL amplitudes:
+
+    Z_2→phi^(2t) Z_2, Z_3→phi^(3t) Z_3,
+    Odds_(3/2)→phi^t Odds_(3/2).
+
+Consequently the ORIGINAL stage-contrast CODE observable
+
+    L_clock(K) := log_phi(q_3/q_2)
+
+has the exact first and ALL higher source law
+
+    L_clock(I+t) = L_clock(I) + t.
+
+No coefficient was chosen to match GR: the source +1 is FORCED by the DIFFERENCE OF ONE ACTUAL ORIGINAL TICK, 3−2=1. The identical law holds for the real root a0 closed path counts. Meanwhile the true original Perron pressure has \`B(I+t)=B(I)−t\`, so the completely native scalar **COMPARISON INVARIANT**
+
+    J_abs-clock(K) :=
+       -log_phi(lambda(K))
+       + log_phi[beta_3 Tr K³ /(beta_2 Tr K²)]
+     = log_phi[ beta_3 Tr K³ / (beta_2 lambda(K) Tr K²)]
+
+satisfies
+
+    J_abs-clock(I+t) = J_abs-clock(I) EXACTLY
+
+for arbitrary original nonuniform/asymmetric positive Book edge costs. This is a **closed mathematical 2-tick/3-tick absolute-source cancellation** on ONE ORIGINAL SCENE carrier: the -1 anomaly of absolute scalar pressure and +1 adjacent-stage observed clock contrast cancel all orders, with no new continuous coupling.
+
+It follows immediately that the previously defined fully compensated ORIGINAL marked geometric/clock **candidate observable**
+
+    H_clock-comp(K,e,U) =
+        J_abs-clock(K) + W_B(K) F_star(e,U)
+
+is exactly invariant under the Book-Weyl transformation of §1. Replace the Star term by any already-owned legal nonlinear AF fibre of §2 and use its nonlinear radial compensator: the SAME symmetry persists.
+
+**What is and is not proved:** the 2/3 stage probabilities are mathematical REAL originally typed event records; the exact logarithmic ratio is computed from the original accepted 2/3 history weights and does not add a new arbitrary function. Yet this construction does NOT prove that the foundational G0/M1 compulsory complete H+J+R actually includes this ratio WITH THIS SIGN as the charged action, or that the stage priors beta_2,beta_3 stay fixed under all physical preparation/clock motions. Those questions now have a SHARP original yes/no answer. On one original Golden LEFT balanced Role-cell and one actual complete 2/3-clock, measure the FULL first absolute source in the uniform Info+coframe direction. If the true Book/copy/prep/clock source matches this fixed native stage contrast, the previous pressure -1 obstruction is mathematically eliminated with no counterterm; otherwise preserve the concrete nonzero residual rather than trying another Einstein jet.
+
+**Sharper mathematical conclusion:** an EXTRA one-gauge-fixing primitive is NOT NEEDED merely to construct a pressure-covariant complete READOUT. Original Perron lambda and original consecutive-stage labelled Book histories ALREADY have exactly complementary scalar response characters. What remains is the PHYSICAL selection/admission of this already available source as part of ONE compulsory programme, not its algebraic existence.
+
 ## 6. Reproduction
 
 \`node 02_REGISTRY/research/sources/d0_book_weyl_compensator_2026-10-20/check_original_book_z3_af_weyl_ward.mjs\`.
