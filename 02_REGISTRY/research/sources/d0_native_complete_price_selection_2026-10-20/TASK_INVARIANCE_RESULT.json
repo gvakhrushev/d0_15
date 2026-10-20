@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "checks": 70,
+  "scope": "Exact bounded complete-circuit, reporter-isometry and first-jet checks; analytic note owns all-k/all-carrier theorem.",
+  "native_price_selection": false,
+  "GR_closed": false
+}

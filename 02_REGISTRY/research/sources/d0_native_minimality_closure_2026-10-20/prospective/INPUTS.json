@@ -1,0 +1,24 @@
+{
+  "input_commit": "f569c786730301e1603ee64062beccc6b20d05e7",
+  "phase": "native realization; existing #334",
+  "proof_sha256": "75845813d20ecf7b585fb7b7a7bef8b8170a711e94a56bb0df0cc3546622a036",
+  "inputs": [
+    {
+      "path": "02_REGISTRY/research/A4D_COMPLETE_EXIT_ACTION_AND_SECOND_SOURCE.md",
+      "sha256": "482cf99f280620e7aa6120432cd7b9764671c5ef3fb1c0c3b50d7228d66e08b3"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_COMPLETE_RECORD_CHANNEL_AND_NATIVE_COST_SOURCE.md",
+      "sha256": "2128009802edff3e111a26961f050320fd878d7412ed93bfad5d5c9e4219db79"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_same_history_price_composition_2026-10-20/paid_port_history.md",
+      "sha256": "ef69c2052237fbe8e916acf16691f9b14b4c1c2465a7837e838db2baeb95449d"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/execution/return_cost_and_stopping.md",
+      "sha256": "29e30b35170c8ab1d4d324dd0f7aaa6e588cb1a32f023ad529947dc8639b9faa"
+    }
+  ],
+  "scope": "New stopped-record operator/resolvent/source composition; owned literal all128 identities and prior scalar stopping are consumed."
+}

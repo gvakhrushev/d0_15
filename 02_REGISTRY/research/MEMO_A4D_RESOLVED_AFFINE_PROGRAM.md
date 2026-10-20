@@ -378,6 +378,30 @@ the admitted complete price on this existing positive family; do not
 replace it with another root search or identify the known Gamma spin
 source with the link-independent J2 scalar without proof.
 
+### Complete native information and solved specified minima
+
+Consume the [complete-record information/price synthesis](A4D_NATIVE_COMPLETE_RECORD_INFO_PRICE_SELECTION_2026_10_20.md)
+in existing #334. The original physical full128 history limit is a fixed
+isometric image of one coherent mode, with oldRIGHT retained. This supplies
+an explicit full pointer entropy/source, two coherent information algebras,
+a strict nonzero limiting minimum for the specified fresh-record
+Cost-minus-entropy, and an exact least paid fixed horizon for a supplied
+minimax binary verification task. The earlier stopped-clock operator/source
+inversion and all-launch versus conditioned-price packet are recovered
+byte-identically and independently replayed.
+
+The remaining physical application is now specific: derive which Book
+memory/Info algebra, fixed evidence or future task and complete actual
+charges apply on the same nonuniform carrier. Including oldRIGHT in Info
+removes the fresh-entropy minimum on the same execution. Completing the
+matched loop/void contrast to expected relative information cancels its
+coframe-link mixed source; a genuine paid mismatch or independently fixed
+evidence defines a different problem. The required regular maximal-Fisher
+scalar reporter is already cheapest at G, with zero first source, so that
+task does not force G squared. These scoped results guide the native
+selection step and do not discharge the all40+2 source identity, physical
+GR, the open parent or raw216.
+
 ## Current route to general relativity
 
 ### Current composition: exact CAR source and the remaining full Book valuation

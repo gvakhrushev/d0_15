@@ -1,0 +1,61 @@
+{
+  "input_commit": "f569c786730301e1603ee64062beccc6b20d05e7",
+  "scope": "Immutable original owners consumed by the new stopped-clock, coherent pressure and source-moment calculations; no physical GR promotion.",
+  "inputs": [
+    {
+      "original_path": "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md",
+      "snapshot_path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/inputs/01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md",
+      "sha256": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d"
+    },
+    {
+      "original_path": "02_REGISTRY/research/A4D_COMPLETE_EXIT_ACTION_AND_SECOND_SOURCE.md",
+      "snapshot_path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/inputs/02_REGISTRY/research/A4D_COMPLETE_EXIT_ACTION_AND_SECOND_SOURCE.md",
+      "sha256": "482cf99f280620e7aa6120432cd7b9764671c5ef3fb1c0c3b50d7228d66e08b3"
+    },
+    {
+      "original_path": "02_REGISTRY/research/A4D_COMPLETE_RECORD_CHANNEL_AND_NATIVE_COST_SOURCE.md",
+      "snapshot_path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/inputs/02_REGISTRY/research/A4D_COMPLETE_RECORD_CHANNEL_AND_NATIVE_COST_SOURCE.md",
+      "sha256": "2128009802edff3e111a26961f050320fd878d7412ed93bfad5d5c9e4219db79"
+    },
+    {
+      "original_path": "02_REGISTRY/research/A4D_EXACT_GR_COMMON_CARRIER_HJR_SCALE_SOURCE_GAP_2026_10_20.md",
+      "snapshot_path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/inputs/02_REGISTRY/research/A4D_EXACT_GR_COMMON_CARRIER_HJR_SCALE_SOURCE_GAP_2026_10_20.md",
+      "sha256": "c5b2f1021e8da573221f4327bacae67934470a368966456bf328b19fc51555fb"
+    },
+    {
+      "original_path": "02_REGISTRY/research/A4D_NATIVE_FULL128_JONES_OBSERVER_SO3_QUOTIENT_2026_10_20.md",
+      "snapshot_path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/inputs/02_REGISTRY/research/A4D_NATIVE_FULL128_JONES_OBSERVER_SO3_QUOTIENT_2026_10_20.md",
+      "sha256": "610a6688f8f1ea91c93462d4cedf716eec321dd5032ba35a0d2ffb7262ffca61"
+    },
+    {
+      "original_path": "02_REGISTRY/research/A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md",
+      "snapshot_path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/inputs/02_REGISTRY/research/A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md",
+      "sha256": "a0a8a0b7389c7a6120ebbe402d111bf55cd2a00730403a00ffceca73548e7915"
+    },
+    {
+      "original_path": "02_REGISTRY/research/A4D_NATIVE_PRICE_EXACT_VARIATIONAL_UNFOLDING.md",
+      "snapshot_path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/inputs/02_REGISTRY/research/A4D_NATIVE_PRICE_EXACT_VARIATIONAL_UNFOLDING.md",
+      "sha256": "d92aabf2d46d9ac7d8d9aa3bf5ed66a58f25bb83ca4460d66d25648c62f7e10b"
+    },
+    {
+      "original_path": "02_REGISTRY/research/A4D_PROSPECTIVE_BOOK_FINITE_FUTURE_LAW_Q8_VERIFICATION_2026_10_20.md",
+      "snapshot_path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/inputs/02_REGISTRY/research/A4D_PROSPECTIVE_BOOK_FINITE_FUTURE_LAW_Q8_VERIFICATION_2026_10_20.md",
+      "sha256": "bd3f1ab51599b0efe17af03e40c59a606200cd1912f801e4bd57e0eb77a6b014"
+    },
+    {
+      "original_path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/execution/return_cost_and_stopping.md",
+      "snapshot_path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/inputs/02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/execution/return_cost_and_stopping.md",
+      "sha256": "29e30b35170c8ab1d4d324dd0f7aaa6e588cb1a32f023ad529947dc8639b9faa"
+    },
+    {
+      "original_path": "02_REGISTRY/research/sources/d0_same_history_price_composition_2026-10-20/FULL128_HEAT_PRICE_RECYCLING_BRIDGE.md",
+      "snapshot_path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/inputs/02_REGISTRY/research/sources/d0_same_history_price_composition_2026-10-20/FULL128_HEAT_PRICE_RECYCLING_BRIDGE.md",
+      "sha256": "a8cdbd52e52275cb7e41aa84b8bd69e9fb36170f75d8481c6568fb3ea1a2bce0"
+    },
+    {
+      "original_path": "02_REGISTRY/research/sources/d0_same_history_price_composition_2026-10-20/paid_port_history.md",
+      "snapshot_path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/inputs/02_REGISTRY/research/sources/d0_same_history_price_composition_2026-10-20/paid_port_history.md",
+      "sha256": "ef69c2052237fbe8e916acf16691f9b14b4c1c2465a7837e838db2baeb95449d"
+    }
+  ]
+}

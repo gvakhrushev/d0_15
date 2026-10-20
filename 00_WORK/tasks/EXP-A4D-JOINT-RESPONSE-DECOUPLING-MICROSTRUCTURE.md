@@ -2165,6 +2165,18 @@ full-field patch; compact C3 approximation is retained, while exact roots
 require actual constrained critical-family stability. Same write surfaces
 and one bounded helper; no old scientific replay.
 
+## Current bounded complete-price application — 20 October 2026
+
+Continue the existing #334 execution through the
+[complete-record Info/price synthesis](../../02_REGISTRY/research/A4D_NATIVE_COMPLETE_RECORD_INFO_PRICE_SELECTION_2026_10_20.md).
+It consumes the owned full128 C1 history and recovered clock/source packet,
+solves the specified coherent-record limiting price and supplied binary-task
+paid horizon, and isolates the actual missing Info/task/payment definition.
+Independent analytical review and immutable targeted replay accompany the
+result. This native-realization application retains the all40+2 source,
+nonuniform carrier, full-price/admission and common-refinement premises;
+it does not retire this owner or promote physical GR/raw216.
+
 ## Objective
 
 ### 19 October continuation: test the phase criterion on the complete closed comparison

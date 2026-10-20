@@ -1,0 +1,539 @@
+{
+  "status": "PASS",
+  "reviewer": "checkpoint_integration",
+  "source_base": "04988901985534dd729d34286aadc4fa6401adec",
+  "observed_head": "04988901985534dd729d34286aadc4fa6401adec",
+  "source_snapshot_commit": "c7a2e7c39fab6b60fa70a553998e9aa2ccc89f3f",
+  "new_immutable_pins": 65,
+  "source_snapshots_byte_identical": 10,
+  "recovered_paths_unchanged": 36,
+  "numerical_replay_repeated": false,
+  "read_only_integrity_checks": 136,
+  "routing_changes": [
+    {
+      "path": "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md",
+      "inserted_lines": 12,
+      "deleted_lines": 0,
+      "sha256": "0cbf1d75b8bc7aefbedc6d84d249bc585941b54c9ec70730cf4c16b1b0e85625"
+    },
+    {
+      "path": "02_REGISTRY/research/MEMO_A4D_JOINT_RESPONSE_DECOUPLING_MICROSTRUCTURE.md",
+      "inserted_lines": 10,
+      "deleted_lines": 0,
+      "sha256": "702de800289e0d0d7e60b187359159c0c67d9ea20497573efba6c23a4521906a"
+    },
+    {
+      "path": "02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md",
+      "inserted_lines": 24,
+      "deleted_lines": 0,
+      "sha256": "60e44d8d795638c90d8a3a0b236b792a38178574bba6e555c75179a45a7aef70"
+    },
+    {
+      "path": "README.md",
+      "inserted_lines": 9,
+      "deleted_lines": 0,
+      "sha256": "e63492a6d0ce7eacdc7551ab06a334f3d97fcbea11a03fce5b6ebd223e6de390"
+    }
+  ],
+  "artifact_manifest_sha256": "a0b7f0f21776d326672389b60771f310b872096c6476a03b280bcfb531bead88",
+  "artifacts": [
+    {
+      "path": "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md",
+      "sha256": "0cbf1d75b8bc7aefbedc6d84d249bc585941b54c9ec70730cf4c16b1b0e85625",
+      "bytes": 183318
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_CLOCK_PRESSURE_AND_COMPLETE_PRICE_SYNTHESIS_2026_10_20.md",
+      "sha256": "823d527dbe61050a9c3f81109691839e1bc9de0855e5435e08259049db1a06ed",
+      "bytes": 10800
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_COMPLETE_RECORD_INFO_PRICE_SELECTION_2026_10_20.md",
+      "sha256": "93d530eaa84df942bafb174006210047adb6588ec017d14d22bfa91ce800eaeb",
+      "bytes": 13631
+    },
+    {
+      "path": "02_REGISTRY/research/MEMO_A4D_JOINT_RESPONSE_DECOUPLING_MICROSTRUCTURE.md",
+      "sha256": "702de800289e0d0d7e60b187359159c0c67d9ea20497573efba6c23a4521906a",
+      "bytes": 694286
+    },
+    {
+      "path": "02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md",
+      "sha256": "60e44d8d795638c90d8a3a0b236b792a38178574bba6e555c75179a45a7aef70",
+      "bytes": 48211
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_clock_price_source_check.py",
+      "sha256": "7c6715937ab4ab5e0f9efff54ce42e8d8fbce2005e8c07242c76f87fd871407f",
+      "bytes": 14898
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_complete_price_selection_check.py",
+      "sha256": "a9c3772ce43710248d43a893501fe04721c7879895eefd29e6dad29dd1d58c2a",
+      "bytes": 25442
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/FROZEN_REPLAY.json",
+      "sha256": "df418a158a17ddee9d43c618e5e330fc048274c844410b12938cd777d1bffd1d",
+      "bytes": 1170
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/FROZEN_REPLAY.log",
+      "sha256": "c2e1c0d3db8aecf36674f21e469f47ce6dd8e11d461fdf5ecc45a2ddd8aeb9df",
+      "bytes": 628
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/FULL128_COHERENT_LIMIT_AND_INFO_PRICE.md",
+      "sha256": "755fb3b181bfdc989235f54c518372404e72c008a70fbe9071a400da389b2530",
+      "bytes": 16169
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/FULL128_COHERENT_RESULT.json",
+      "sha256": "90e1883afd6227f76fc48bdec9249c6c279e5c6e09e4fd9a466c065cbb771833",
+      "bytes": 14895
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/INDEPENDENT_ANALYTICAL_REVIEW.md",
+      "sha256": "57169a1c0b09e4c3dfe79872114335c55742e7ae6934c92a4c7fbc2fdb62dded",
+      "bytes": 13544
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/MATCHED_COMPLETE_LIKELIHOOD_SOURCE.md",
+      "sha256": "4b08d0786a8a8ac39676e4912e00708548412cdacfaa96cf369b921e485d8c4d",
+      "bytes": 12103
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/MATCHED_LIKELIHOOD_RESULT.json",
+      "sha256": "2c139731204d5708a11853e606fd93a18c7ea5d024d2966e851d49ce30dcec66",
+      "bytes": 3487
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/NATIVE_BINARY_RESULT.json",
+      "sha256": "2c141eeddf6bf830df57d10f939efbc3f641e4368c91888ad193a501201c6773",
+      "bytes": 2059
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/NATIVE_BINARY_TASK_MINIMUM.md",
+      "sha256": "fe1bd6a907ad13ff454de7e22b323b0065b7eecf75c127f74243df26ea435284",
+      "bytes": 7588
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/README.md",
+      "sha256": "3bc62334dcd9661527112a8a8a404dea1cce3373ddf026bbc81f48f21741d9bf",
+      "bytes": 2990
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/RECOVERED_PACKET.json",
+      "sha256": "06bd4041db9ce0273136c3854ac05ca389afeba903aee1a54ab9484e94a77797",
+      "bytes": 12522
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/RECOVERED_REPLAY.json",
+      "sha256": "6f2c752d2b1d779c4c34a623a04a1397bf8df80fb920d1b20a639822dfac03be",
+      "bytes": 858
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/RECOVERED_REPLAY.log",
+      "sha256": "6f4c9e7152d2d14c2840904a3398f16e305d9aefa9119944fba89ca0a015a307",
+      "bytes": 2060
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/SOURCE_INPUTS.json",
+      "sha256": "e83d6b96345a79e3f7040fee39a5625efd40f47f646e53cbf4dc9ed120d168e0",
+      "bytes": 4298
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/TASK_INVARIANCE_AND_TERMINAL_MINIMUM.md",
+      "sha256": "59ad221195a386b037a615c8275989d4b3d9782009b14179c2c324a3159e9949",
+      "bytes": 11202
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/TASK_INVARIANCE_RESULT.json",
+      "sha256": "7613c8240c47d818041cc2643d2b1511000baea2e6ea37a186ee612bf6e60e6d",
+      "bytes": 228
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/check_full128_coherent_info_price.py",
+      "sha256": "60f70c32d9f67c09eee8cccb160b3ebc2299735a0fd7b471d1bb712af9e8a03c",
+      "bytes": 24542
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/check_matched_complete_likelihood_source.py",
+      "sha256": "4fd9ab1258cd0bef67e3236a8c46f206d944c6737ae6b07d949bbf2bc1129901",
+      "bytes": 9546
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/check_native_binary_task.py",
+      "sha256": "ba4a4c069dba2d13a3740c0f1b8d7ee44d5fc9226d4118a8ff1b3dbb55856171",
+      "bytes": 3237
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/check_task_invariance.py",
+      "sha256": "da839c7947989b7d2637bbb3d6fceb9b2aef3b7906341502dc7af7a44e580322",
+      "bytes": 5306
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/inputs/02_REGISTRY/research/A4D_NATIVE_FULL128_RELATIVE_TRANSFER_AND_CONDENSED_DESCENT.md",
+      "sha256": "577cbc909f766468fbef8ab38a5986ae761d348b075c2f38b2e1a88b704d4b3e",
+      "bytes": 16547
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/inputs/02_REGISTRY/research/A4D_P25_NATIVE_COST_FLOOR_PSD_MIXED_PALATINI_VACUUM_NO_GO_2026_10_20.md",
+      "sha256": "1a2e52a67f6e707aa49f51c85d1af124eeee915f586687e683bec3214bd12131",
+      "bytes": 15606
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/inputs/02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/MINIMAL_GOLDEN_COMPLETE_SOURCE.md",
+      "sha256": "f6a5724e087c58b4294020a59532b7117f55247013181bcd4fd30d069a649330",
+      "bytes": 26294
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/inputs/02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/execution/return_cost_and_stopping.md",
+      "sha256": "29e30b35170c8ab1d4d324dd0f7aaa6e588cb1a32f023ad529947dc8639b9faa",
+      "bytes": 19743
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/inputs/02_REGISTRY/research/sources/d0_native_relative_history_first_jet_2026-10-20/RESULT.md",
+      "sha256": "d1c3cff174b2e4d03481ca6b3d18a1da2d3b65baba1f2dbf886324d8ce7f607d",
+      "bytes": 26087
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/inputs/02_REGISTRY/research/sources/d0_native_relative_history_first_jet_2026-10-20/check_relative_history_first_jet.py",
+      "sha256": "0c69dc21fd66e06eefacf9ab047f186ff1e4e93818aff38aca4187968a70b468",
+      "bytes": 24593
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/inputs/02_REGISTRY/research/sources/d0_native_relative_transfer_2026-10-17/check_native_relative_transfer.py",
+      "sha256": "dfa8fffb08d421f2a2a0fa91a3044492ab94bfd6bd7d1e86b110b52c2e0ff065",
+      "bytes": 5315
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/inputs/02_REGISTRY/research/sources/d0_native_triz_reference_2026-10-20/TRIZ_MATCHED_LOOP_VOID_SOURCE.md",
+      "sha256": "360e05c5f4825ea197d19e33669b2df1eb7017e11999d5f1f460eb88e982b477",
+      "bytes": 11436
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/inputs/02_REGISTRY/research/sources/d0_native_triz_reference_2026-10-20/check_matched_feedback_poisson.py",
+      "sha256": "403ed4a5b68dbe4be56fd72a16a5c45d8ccdc5ca13eb5e2249d2722f68957b66",
+      "bytes": 3002
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/inputs/02_REGISTRY/research/sources/d0_same_history_price_composition_2026-10-20/paid_port_history.md",
+      "sha256": "ef69c2052237fbe8e916acf16691f9b14b4c1c2465a7837e838db2baeb95449d",
+      "bytes": 11127
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/INPUT_SNAPSHOTS.json",
+      "sha256": "c3bd0f9a64d7bc2a0dfc912de6411f515b680574fa132add5a4056356ecc4b46",
+      "bytes": 4524
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/README.md",
+      "sha256": "70b05ec1b04c8b4f71d46dcc1b9c99dd76abaf006c3942384796ce0165ee298b",
+      "bytes": 4055
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/VALIDATION.json",
+      "sha256": "755622e853fc480259c07f5fb92537e23ce925db21b301aa1130a0cb4ab4cec3",
+      "bytes": 1038
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/VALIDATION.log",
+      "sha256": "6f4c9e7152d2d14c2840904a3398f16e305d9aefa9119944fba89ca0a015a307",
+      "bytes": 2060
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/book_price/COHERENT_RETURN_PRESSURE_AND_PAID_MOMENTS.md",
+      "sha256": "8001997f869a2ed86e78b6222e881d9ed67014ac0dc18573808df12b3592b7de",
+      "bytes": 23025
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/book_price/GEOMETRY_REVIEW.md",
+      "sha256": "de105b644d2e5a7458587eddac49393c486d5f14b0c584d534141dd1db75d13e",
+      "bytes": 5065
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/book_price/INPUTS.json",
+      "sha256": "26674fa2e66b3534fe0361c2acdae0994d6d03d2f732210fb92719d6ef7782ae",
+      "bytes": 862
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/book_price/RESULT.json",
+      "sha256": "163bb6d85e7b7deb626cf56486e0117da9e126d4fcdbf8dbf021c449c8b1f138",
+      "bytes": 7742
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/book_price/STOPPED_CLOCK_REVIEW.md",
+      "sha256": "5f8f459577450c4959fd16b1a460805a394827f80244585dbf38578ca5d56f6a",
+      "bytes": 5292
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/book_price/check_coherent_return_pressure.py",
+      "sha256": "e3388349e9c6cbba37a05ac3a05b607ad34d2135aaca958e1265c3cca16e8db1",
+      "bytes": 13135
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/check_finite_closed_record.py",
+      "sha256": "aa6d603038129139e0d944610d722123b776f01e52d72b3c8178636df4bd7b19",
+      "bytes": 7188
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/finite_closed_record.md",
+      "sha256": "44e3f7844dc40c99c5218c7223fabc485e63fc251517c53f1d424dab222bfe28",
+      "bytes": 12085
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/geometry/BOOK_PRICE_REVIEW.md",
+      "sha256": "862099aac7349fa31e30546141537420fa817e809b3c636f23b13a92555442a7",
+      "bytes": 4327
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/geometry/CENTRAL_GEOMETRY_REVIEW.md",
+      "sha256": "841683dbcbed32f75ed36a415f91b2c8c511f8bece57da328c2c0605d4d030ae",
+      "bytes": 4383
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/geometry/SOURCE_MOMENT_RESULT.json",
+      "sha256": "283d3f92890644469482f1f4de0c9885d380e9dff2ef8825fea40796400f7c08",
+      "bytes": 12871
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/geometry/check_source_moment_collapse.py",
+      "sha256": "fd4edf0649492910eecf649fb1c133dafd2eb1b3d4b8df801a6e62a0f30691b8",
+      "bytes": 9793
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/geometry/source_moment_collapse.md",
+      "sha256": "9bfb61897324d438bff3458209f3fda321b2876af41b6178b96fdf04490773c4",
+      "bytes": 16548
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/inputs/01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md",
+      "sha256": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d",
+      "bytes": 86193
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/inputs/02_REGISTRY/research/A4D_COMPLETE_EXIT_ACTION_AND_SECOND_SOURCE.md",
+      "sha256": "482cf99f280620e7aa6120432cd7b9764671c5ef3fb1c0c3b50d7228d66e08b3",
+      "bytes": 15872
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/inputs/02_REGISTRY/research/A4D_COMPLETE_RECORD_CHANNEL_AND_NATIVE_COST_SOURCE.md",
+      "sha256": "2128009802edff3e111a26961f050320fd878d7412ed93bfad5d5c9e4219db79",
+      "bytes": 42834
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/inputs/02_REGISTRY/research/A4D_EXACT_GR_COMMON_CARRIER_HJR_SCALE_SOURCE_GAP_2026_10_20.md",
+      "sha256": "c5b2f1021e8da573221f4327bacae67934470a368966456bf328b19fc51555fb",
+      "bytes": 13796
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/inputs/02_REGISTRY/research/A4D_NATIVE_FULL128_JONES_OBSERVER_SO3_QUOTIENT_2026_10_20.md",
+      "sha256": "610a6688f8f1ea91c93462d4cedf716eec321dd5032ba35a0d2ffb7262ffca61",
+      "bytes": 5673
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/inputs/02_REGISTRY/research/A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md",
+      "sha256": "a0a8a0b7389c7a6120ebbe402d111bf55cd2a00730403a00ffceca73548e7915",
+      "bytes": 28004
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/inputs/02_REGISTRY/research/A4D_NATIVE_PRICE_EXACT_VARIATIONAL_UNFOLDING.md",
+      "sha256": "d92aabf2d46d9ac7d8d9aa3bf5ed66a58f25bb83ca4460d66d25648c62f7e10b",
+      "bytes": 27486
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/inputs/02_REGISTRY/research/A4D_PROSPECTIVE_BOOK_FINITE_FUTURE_LAW_Q8_VERIFICATION_2026_10_20.md",
+      "sha256": "bd3f1ab51599b0efe17af03e40c59a606200cd1912f801e4bd57e0eb77a6b014",
+      "bytes": 26033
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/inputs/02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/execution/return_cost_and_stopping.md",
+      "sha256": "29e30b35170c8ab1d4d324dd0f7aaa6e588cb1a32f023ad529947dc8639b9faa",
+      "bytes": 19743
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/inputs/02_REGISTRY/research/sources/d0_same_history_price_composition_2026-10-20/FULL128_HEAT_PRICE_RECYCLING_BRIDGE.md",
+      "sha256": "a8cdbd52e52275cb7e41aa84b8bd69e9fb36170f75d8481c6568fb3ea1a2bce0",
+      "bytes": 21471
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/inputs/02_REGISTRY/research/sources/d0_same_history_price_composition_2026-10-20/paid_port_history.md",
+      "sha256": "ef69c2052237fbe8e916acf16691f9b14b4c1c2465a7837e838db2baeb95449d",
+      "bytes": 11127
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/prospective/CENTRAL_COMPOSITION_REVIEW.md",
+      "sha256": "73cef0764bf733a340df15835d6add01df6740545acae5d7ec4b3d11778c32dd",
+      "bytes": 4571
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/prospective/FINITE_CUT_REVIEW.md",
+      "sha256": "e70dae15cbc0ead0565b16464818bc21fabee8583a705d98cf889e39e5142e85",
+      "bytes": 4521
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/prospective/INPUTS.json",
+      "sha256": "8de593a2da6afe859e86f5b42a212b53705dcf5ce3def77ae15c22c02c4ea733",
+      "bytes": 1162
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/prospective/RESULT.json",
+      "sha256": "b226373c813903af983ac1f438c4b7d6485d81dda32f13f2225284d20d0ee35f",
+      "bytes": 6548
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/prospective/STOPPED_CLOCK_SOURCE.md",
+      "sha256": "75845813d20ecf7b585fb7b7a7bef8b8170a711e94a56bb0df0cc3546622a036",
+      "bytes": 15686
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/prospective/check_stopped_clock_source.py",
+      "sha256": "bdab1158efc863a8d631c50ae7f30f7c3780df744e74441a88ed298bc059f0c9",
+      "bytes": 17654
+    },
+    {
+      "path": "README.md",
+      "sha256": "e63492a6d0ce7eacdc7551ab06a334f3d97fcbea11a03fce5b6ebd223e6de390",
+      "bytes": 49322
+    }
+  ],
+  "checks": [
+    "all declared input paths equal pinned paths",
+    "immutable pin 02_REGISTRY/research/A4D_NATIVE_CLOCK_PRESSURE_AND_COMPLETE_PRICE_SYNTHESIS_2026_10_20.md",
+    "immutable pin 02_REGISTRY/research/A4D_NATIVE_COMPLETE_RECORD_INFO_PRICE_SELECTION_2026_10_20.md",
+    "immutable pin 02_REGISTRY/research/certificates/a4d_native_clock_price_source_check.py",
+    "immutable pin 02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/FULL128_COHERENT_LIMIT_AND_INFO_PRICE.md",
+    "immutable pin 02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/FULL128_COHERENT_RESULT.json",
+    "immutable pin 02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/INDEPENDENT_ANALYTICAL_REVIEW.md",
+    "immutable pin 02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/MATCHED_COMPLETE_LIKELIHOOD_SOURCE.md",
+    "immutable pin 02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/MATCHED_LIKELIHOOD_RESULT.json",
+    "immutable pin 02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/NATIVE_BINARY_RESULT.json",
+    "immutable pin 02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/NATIVE_BINARY_TASK_MINIMUM.md",
+    "immutable pin 02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/README.md",
+    "immutable pin 02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/RECOVERED_PACKET.json",
+    "immutable pin 02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/RECOVERED_REPLAY.json",
+    "immutable pin 02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/RECOVERED_REPLAY.log",
+    "immutable pin 02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/SOURCE_INPUTS.json",
+    "immutable pin 02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/TASK_INVARIANCE_AND_TERMINAL_MINIMUM.md",
+    "immutable pin 02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/TASK_INVARIANCE_RESULT.json",
+    "immutable pin 02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/check_full128_coherent_info_price.py",
+    "immutable pin 02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/check_matched_complete_likelihood_source.py",
+    "immutable pin 02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/check_native_binary_task.py",
+    "immutable pin 02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/check_task_invariance.py",
+    "immutable pin 02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/inputs/02_REGISTRY/research/A4D_NATIVE_FULL128_RELATIVE_TRANSFER_AND_CONDENSED_DESCENT.md",
+    "immutable pin 02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/inputs/02_REGISTRY/research/A4D_P25_NATIVE_COST_FLOOR_PSD_MIXED_PALATINI_VACUUM_NO_GO_2026_10_20.md",
+    "immutable pin 02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/inputs/02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/MINIMAL_GOLDEN_COMPLETE_SOURCE.md",
+    "immutable pin 02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/inputs/02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/execution/return_cost_and_stopping.md",
+    "immutable pin 02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/inputs/02_REGISTRY/research/sources/d0_native_relative_history_first_jet_2026-10-20/RESULT.md",
+    "immutable pin 02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/inputs/02_REGISTRY/research/sources/d0_native_relative_history_first_jet_2026-10-20/check_relative_history_first_jet.py",
+    "immutable pin 02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/inputs/02_REGISTRY/research/sources/d0_native_relative_transfer_2026-10-17/check_native_relative_transfer.py",
+    "immutable pin 02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/inputs/02_REGISTRY/research/sources/d0_native_triz_reference_2026-10-20/TRIZ_MATCHED_LOOP_VOID_SOURCE.md",
+    "immutable pin 02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/inputs/02_REGISTRY/research/sources/d0_native_triz_reference_2026-10-20/check_matched_feedback_poisson.py",
+    "immutable pin 02_REGISTRY/research/sources/d0_native_complete_price_selection_2026-10-20/inputs/02_REGISTRY/research/sources/d0_same_history_price_composition_2026-10-20/paid_port_history.md",
+    "immutable pin 02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/INPUT_SNAPSHOTS.json",
+    "immutable pin 02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/README.md",
+    "immutable pin 02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/VALIDATION.json",
+    "immutable pin 02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/VALIDATION.log",
+    "immutable pin 02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/book_price/COHERENT_RETURN_PRESSURE_AND_PAID_MOMENTS.md",
+    "immutable pin 02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/book_price/GEOMETRY_REVIEW.md",
+    "immutable pin 02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/book_price/INPUTS.json",
+    "immutable pin 02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/book_price/RESULT.json",
+    "immutable pin 02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/book_price/STOPPED_CLOCK_REVIEW.md",
+    "immutable pin 02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/book_price/check_coherent_return_pressure.py",
+    "immutable pin 02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/check_finite_closed_record.py",
+    "immutable pin 02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/finite_closed_record.md",
+    "immutable pin 02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/geometry/BOOK_PRICE_REVIEW.md",
+    "immutable pin 02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/geometry/CENTRAL_GEOMETRY_REVIEW.md",
+    "immutable pin 02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/geometry/SOURCE_MOMENT_RESULT.json",
+    "immutable pin 02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/geometry/check_source_moment_collapse.py",
+    "immutable pin 02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/geometry/source_moment_collapse.md",
+    "immutable pin 02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/inputs/01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md",
+    "immutable pin 02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/inputs/02_REGISTRY/research/A4D_COMPLETE_EXIT_ACTION_AND_SECOND_SOURCE.md",
+    "immutable pin 02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/inputs/02_REGISTRY/research/A4D_COMPLETE_RECORD_CHANNEL_AND_NATIVE_COST_SOURCE.md",
+    "immutable pin 02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/inputs/02_REGISTRY/research/A4D_EXACT_GR_COMMON_CARRIER_HJR_SCALE_SOURCE_GAP_2026_10_20.md",
+    "immutable pin 02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/inputs/02_REGISTRY/research/A4D_NATIVE_FULL128_JONES_OBSERVER_SO3_QUOTIENT_2026_10_20.md",
+    "immutable pin 02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/inputs/02_REGISTRY/research/A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md",
+    "immutable pin 02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/inputs/02_REGISTRY/research/A4D_NATIVE_PRICE_EXACT_VARIATIONAL_UNFOLDING.md",
+    "immutable pin 02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/inputs/02_REGISTRY/research/A4D_PROSPECTIVE_BOOK_FINITE_FUTURE_LAW_Q8_VERIFICATION_2026_10_20.md",
+    "immutable pin 02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/inputs/02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/execution/return_cost_and_stopping.md",
+    "immutable pin 02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/inputs/02_REGISTRY/research/sources/d0_same_history_price_composition_2026-10-20/FULL128_HEAT_PRICE_RECYCLING_BRIDGE.md",
+    "immutable pin 02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/inputs/02_REGISTRY/research/sources/d0_same_history_price_composition_2026-10-20/paid_port_history.md",
+    "immutable pin 02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/prospective/CENTRAL_COMPOSITION_REVIEW.md",
+    "immutable pin 02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/prospective/FINITE_CUT_REVIEW.md",
+    "immutable pin 02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/prospective/INPUTS.json",
+    "immutable pin 02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/prospective/RESULT.json",
+    "immutable pin 02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/prospective/STOPPED_CLOCK_SOURCE.md",
+    "immutable pin 02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/prospective/check_stopped_clock_source.py",
+    "source commit blob 02_REGISTRY/research/sources/d0_native_relative_history_first_jet_2026-10-20/RESULT.md",
+    "snapshot exactly equals source blob 02_REGISTRY/research/sources/d0_native_relative_history_first_jet_2026-10-20/RESULT.md",
+    "source commit blob 02_REGISTRY/research/sources/d0_native_relative_history_first_jet_2026-10-20/check_relative_history_first_jet.py",
+    "snapshot exactly equals source blob 02_REGISTRY/research/sources/d0_native_relative_history_first_jet_2026-10-20/check_relative_history_first_jet.py",
+    "source commit blob 02_REGISTRY/research/sources/d0_native_relative_transfer_2026-10-17/check_native_relative_transfer.py",
+    "snapshot exactly equals source blob 02_REGISTRY/research/sources/d0_native_relative_transfer_2026-10-17/check_native_relative_transfer.py",
+    "source commit blob 02_REGISTRY/research/A4D_NATIVE_FULL128_RELATIVE_TRANSFER_AND_CONDENSED_DESCENT.md",
+    "snapshot exactly equals source blob 02_REGISTRY/research/A4D_NATIVE_FULL128_RELATIVE_TRANSFER_AND_CONDENSED_DESCENT.md",
+    "source commit blob 02_REGISTRY/research/sources/d0_native_triz_reference_2026-10-20/TRIZ_MATCHED_LOOP_VOID_SOURCE.md",
+    "snapshot exactly equals source blob 02_REGISTRY/research/sources/d0_native_triz_reference_2026-10-20/TRIZ_MATCHED_LOOP_VOID_SOURCE.md",
+    "source commit blob 02_REGISTRY/research/sources/d0_native_triz_reference_2026-10-20/check_matched_feedback_poisson.py",
+    "snapshot exactly equals source blob 02_REGISTRY/research/sources/d0_native_triz_reference_2026-10-20/check_matched_feedback_poisson.py",
+    "source commit blob 02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/execution/return_cost_and_stopping.md",
+    "snapshot exactly equals source blob 02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/execution/return_cost_and_stopping.md",
+    "source commit blob 02_REGISTRY/research/sources/d0_same_history_price_composition_2026-10-20/paid_port_history.md",
+    "snapshot exactly equals source blob 02_REGISTRY/research/sources/d0_same_history_price_composition_2026-10-20/paid_port_history.md",
+    "source commit blob 02_REGISTRY/research/A4D_P25_NATIVE_COST_FLOOR_PSD_MIXED_PALATINI_VACUUM_NO_GO_2026_10_20.md",
+    "snapshot exactly equals source blob 02_REGISTRY/research/A4D_P25_NATIVE_COST_FLOOR_PSD_MIXED_PALATINI_VACUUM_NO_GO_2026_10_20.md",
+    "source commit blob 02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/MINIMAL_GOLDEN_COMPLETE_SOURCE.md",
+    "snapshot exactly equals source blob 02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/MINIMAL_GOLDEN_COMPLETE_SOURCE.md",
+    "all36 recovered path/hash pairs equal independently recovered original manifest",
+    "unchanged recovered original 02_REGISTRY/research/A4D_NATIVE_CLOCK_PRESSURE_AND_COMPLETE_PRICE_SYNTHESIS_2026_10_20.md",
+    "unchanged recovered original 02_REGISTRY/research/certificates/a4d_native_clock_price_source_check.py",
+    "unchanged recovered original 02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/INPUT_SNAPSHOTS.json",
+    "unchanged recovered original 02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/README.md",
+    "unchanged recovered original 02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/VALIDATION.json",
+    "unchanged recovered original 02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/VALIDATION.log",
+    "unchanged recovered original 02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/book_price/COHERENT_RETURN_PRESSURE_AND_PAID_MOMENTS.md",
+    "unchanged recovered original 02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/book_price/GEOMETRY_REVIEW.md",
+    "unchanged recovered original 02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/book_price/INPUTS.json",
+    "unchanged recovered original 02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/book_price/RESULT.json",
+    "unchanged recovered original 02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/book_price/STOPPED_CLOCK_REVIEW.md",
+    "unchanged recovered original 02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/book_price/check_coherent_return_pressure.py",
+    "unchanged recovered original 02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/check_finite_closed_record.py",
+    "unchanged recovered original 02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/finite_closed_record.md",
+    "unchanged recovered original 02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/geometry/BOOK_PRICE_REVIEW.md",
+    "unchanged recovered original 02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/geometry/CENTRAL_GEOMETRY_REVIEW.md",
+    "unchanged recovered original 02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/geometry/SOURCE_MOMENT_RESULT.json",
+    "unchanged recovered original 02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/geometry/check_source_moment_collapse.py",
+    "unchanged recovered original 02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/geometry/source_moment_collapse.md",
+    "unchanged recovered original 02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/inputs/01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md",
+    "unchanged recovered original 02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/inputs/02_REGISTRY/research/A4D_COMPLETE_EXIT_ACTION_AND_SECOND_SOURCE.md",
+    "unchanged recovered original 02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/inputs/02_REGISTRY/research/A4D_COMPLETE_RECORD_CHANNEL_AND_NATIVE_COST_SOURCE.md",
+    "unchanged recovered original 02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/inputs/02_REGISTRY/research/A4D_EXACT_GR_COMMON_CARRIER_HJR_SCALE_SOURCE_GAP_2026_10_20.md",
+    "unchanged recovered original 02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/inputs/02_REGISTRY/research/A4D_NATIVE_FULL128_JONES_OBSERVER_SO3_QUOTIENT_2026_10_20.md",
+    "unchanged recovered original 02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/inputs/02_REGISTRY/research/A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md",
+    "unchanged recovered original 02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/inputs/02_REGISTRY/research/A4D_NATIVE_PRICE_EXACT_VARIATIONAL_UNFOLDING.md",
+    "unchanged recovered original 02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/inputs/02_REGISTRY/research/A4D_PROSPECTIVE_BOOK_FINITE_FUTURE_LAW_Q8_VERIFICATION_2026_10_20.md",
+    "unchanged recovered original 02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/inputs/02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/execution/return_cost_and_stopping.md",
+    "unchanged recovered original 02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/inputs/02_REGISTRY/research/sources/d0_same_history_price_composition_2026-10-20/FULL128_HEAT_PRICE_RECYCLING_BRIDGE.md",
+    "unchanged recovered original 02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/inputs/02_REGISTRY/research/sources/d0_same_history_price_composition_2026-10-20/paid_port_history.md",
+    "unchanged recovered original 02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/prospective/CENTRAL_COMPOSITION_REVIEW.md",
+    "unchanged recovered original 02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/prospective/FINITE_CUT_REVIEW.md",
+    "unchanged recovered original 02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/prospective/INPUTS.json",
+    "unchanged recovered original 02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/prospective/RESULT.json",
+    "unchanged recovered original 02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/prospective/STOPPED_CLOCK_SOURCE.md",
+    "unchanged recovered original 02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/prospective/check_stopped_clock_source.py",
+    "new replay records actual success",
+    "frozen replay pins current wrapper",
+    "frozen replay pins current log",
+    "frozen replay input count matches wrapper",
+    "copied recovered replay receipt matches my earlier independent execution",
+    "copied recovered log matches my independent execution",
+    "routing preserves every existing line 00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md",
+    "routing preserves every existing line 02_REGISTRY/research/MEMO_A4D_JOINT_RESPONSE_DECOUPLING_MICROSTRUCTURE.md",
+    "routing preserves every existing line 02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md",
+    "routing preserves every existing line README.md",
+    "exactly four existing paths modified",
+    "only expected four routing paths modified",
+    "git diff --check 04988901985534dd729d34286aadc4fa6401adec"
+  ]
+}

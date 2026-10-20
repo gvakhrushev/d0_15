@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "command": [
+    "python3",
+    "-B",
+    "02_REGISTRY/research/certificates/a4d_native_clock_price_source_check.py"
+  ],
+  "environment_override": {
+    "PYTHONPATH": "/tmp/d0_native_validation_deps"
+  },
+  "worktree": "/workspace/scratch/98370b00de99/d0_native",
+  "old_source_commit": "a0a460bb290f2377255fe0588451b3e51e962860",
+  "local_head": "c7a2e7c39fab6b60fa70a553998e9aa2ccc89f3f",
+  "source_manifest_sha256": "a65baba79ddf3b7619f1aaca572c4c3a2668d2af8c19233386d3e96f58f4a6ff",
+  "immutable_paths": 36,
+  "pre_run_hashes_match_original_manifest": true,
+  "unchanged_before_after": true,
+  "changed_paths": [],
+  "returncode": 0,
+  "elapsed_seconds": 9.205336,
+  "log_sha256": "6f4c9e7152d2d14c2840904a3398f16e305d9aefa9119944fba89ca0a015a307",
+  "log_path": "/tmp/d0_checkpoint_integration/recovered_clock_validation.log"
+}

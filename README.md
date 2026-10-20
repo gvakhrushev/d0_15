@@ -10,6 +10,15 @@ The [same-history price/source intake](02_REGISTRY/research/D0_SAME_HISTORY_PRIC
 
 The [whole-family CAR/Book/causal synthesis](02_REGISTRY/research/A4D_CAUSAL_BOOK_SOURCE_TO_EXACT_GR_SYNTHESIS_2026_10_20.md) now supplies the exact geometric first source on all 16+24 directions through a complete Golden reporting component on the entire spatial carrier. It resolves that component's input-preparation source and the generated execution-state equations, with its paid repetition count retained. The next application computes the **full** absolute Book Info/work effect and primitive admission on this same programme; the known reporting Cost is not substituted for that full price. The ordinary targeted certificate and independent analytical review accompany the proof.
 
+The [complete-record information and price application](02_REGISTRY/research/A4D_NATIVE_COMPLETE_RECORD_INFO_PRICE_SELECTION_2026_10_20.md)
+identifies the original full128 coherent limit as one coherent mode, computes
+its whole pointer entropy source, and solves a specified fresh-record price
+with a strict positive limiting minimum. It also gives the exact least paid
+fixed horizon for a supplied binary verification task. The recovered
+retained-clock/price packet is included unchanged. Selecting the compulsory
+Book Info algebra, task and complete work payment remains the physical
+premise before the all40+2 GR source can be applied; #334 stays open.
+
 ## Current objective: close the D0 foundation through general relativity
 
 D0 starts from the **necessary operational structure of verifiability**:

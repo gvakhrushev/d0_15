@@ -1,5 +1,15 @@
 # A4D joint response on fixed smooth sources: PARTIAL / OPEN
 
+**Current native application, 20 October 2026:**
+[complete-record information and price selection](A4D_NATIVE_COMPLETE_RECORD_INFO_PRICE_SELECTION_2026_10_20.md),
+continuing #334, now gives the actual full128 coherent-mode limit, the whole
+fine-pointer entropy source, a strict positive limiting minimum for one
+specified coherent Info algebra, and the exact least paid fixed horizon
+for a supplied binary task. The earlier clock/pressure/price packet is
+recovered unchanged. Complete physical Info/task/work selection and the
+same nonuniform all40+2 source remain the next application; the historical
+results below keep their original scopes.
+
 Current same-programme composition: [whole-family CAR first source, causal
 state elimination and complete Book-price binding](A4D_CAUSAL_BOOK_SOURCE_TO_EXACT_GR_SYNTHESIS_2026_10_20.md).
 It supplies the exact geometric reporting component on the entire original
