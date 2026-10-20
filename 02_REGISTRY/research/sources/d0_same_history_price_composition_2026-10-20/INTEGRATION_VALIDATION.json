@@ -1,0 +1,73 @@
+{
+  "status": "PASS",
+  "repository": "gvakhrushev/d0_15",
+  "local_integration_commit": "80684d202271de2227e0cb1bc5cbfb90d3a77a2a",
+  "published_source": "b8574656b0613fac8e4ff65e2292d6b180cbd8d0",
+  "preserved_native": "5a511e9a79ca952f06d044b524a91d230d198a2d",
+  "preserved_main": "0bf309b6260cf5b63e54d6ccabdcdae6734b950a",
+  "scientific_replay": {
+    "entrypoint": "02_REGISTRY/research/certificates/a4d_same_history_price_composition_check.py",
+    "sha256": "5cac9c8df250546a2abd177f2ac3b5bfdf895388b02f7bffc82d6d501db995a2",
+    "command": "PYTHONPATH=/tmp/d0_native_flag_deps python3 -O -B -W error 02_REGISTRY/research/certificates/a4d_same_history_price_composition_check.py",
+    "return_code": 0,
+    "exact_scientific_receipts": 5,
+    "immutable_pins": 25,
+    "comparison": "All JSON scientific fields; elapsed_seconds alone omitted. Pins checked before and after. Separate finite-time rows in FINAL_REPLAY.json."
+  },
+  "proof_sha256": {
+    "paid_port_history.md": "ef69c2052237fbe8e916acf16691f9b14b4c1c2465a7837e838db2baeb95449d",
+    "clock_source_reduction.md": "7ca9575697d5de7c78794bc5d2879f6c2292caadb4f75334d0e1479fd1287069",
+    "prepared_price_feedback.md": "73bf64d8c05b2624e092d851cab5f11019fd886c74d6b332ed97f4d4f4d4d434",
+    "d0_sourced_connection_proof.md": "b782f919536002c0099b5286290fcde7b2b2b819e9a185bb118a7f92b206dea3"
+  },
+  "structural_checks": [
+    {
+      "command": "python3 tools/validate_repo.py",
+      "return_code": 0
+    },
+    {
+      "command": "python3 tools/validate_work.py",
+      "return_code": 0
+    },
+    {
+      "command": "python3 tools/validate_agent_protocol.py",
+      "return_code": 0
+    },
+    {
+      "command": "python3 tools/gr_assembly.py check",
+      "return_code": 0
+    },
+    {
+      "command": "python3 tools/gr_assembly.py render --check",
+      "return_code": 0
+    },
+    {
+      "command": "python3 tools/render_work_status.py --check",
+      "return_code": 0
+    },
+    {
+      "command": "python3 tools/generate_lean_views.py --check",
+      "return_code": 0
+    }
+  ],
+  "reused_lean": {
+    "fresh_build_claimed": false,
+    "previous_validated_commit": "7e89ffd304d7fc901b5ef9ce8eac6b7df164deba",
+    "formal_tree": "070f4471863893ce9f7ea85a3e3ce23f3c8f13aa",
+    "tools_tree": "bb5dd3335b69a58e29c00b4186211c91f5c5e870",
+    "identity_verified_after_merges": true
+  },
+  "scope": {
+    "known_original_port_cost_transport": "proved and applied",
+    "prepared_feedback_source_transport": "conditional on the explicit uniform strict chart; actual repeated-instrument jet bound proved",
+    "connection_stationarity": "all24 components of one declared Fourier coefficient, corrected frame and true LC",
+    "complete_native_Book_price_selected": false,
+    "positive_GR_physical_closure": false,
+    "raw216_closed": false
+  },
+  "notes": [
+    "Historical numerical/Lean evidence was not rewritten.",
+    "Old positive-sign null-link fixtures retain their literal calculation and are no longer labelled true LC for the native coframe.",
+    "The positive all40+2 midpoint family and finite Book future law are consumed through explicit maps; their missing same-programme physical price remains visible."
+  ]
+}

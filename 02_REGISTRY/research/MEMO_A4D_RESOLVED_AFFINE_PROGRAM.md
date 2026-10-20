@@ -328,6 +328,43 @@ the full source/admission map, joint refinement and original GR/raw-216
 terminals remain with the existing scientific owners. No accepted assembly
 goal changes merely from importing this packet.
 
+### Same-history composition now available for the native price map
+
+The [same-history cost/source composition](A4D_SAME_HISTORY_PRICE_AND_SOURCE_COMPOSITION_2026_10_20.md)
+connects the original all128-outcome tape to its exact cost-marked transfer,
+then preserves its initial/terminal and clock source under joint Schur
+elimination. The prepared price-test feedback has the derived work-complement
+correction `F_in=G+L`; the stated uniform strict-chart estimate transports
+its absolute normalized first source. The actual next-clock Gamma source
+is then applied to all24 connection components of a specified Fourier jet,
+with an explicit solution of the coupled Palatini quadratic.
+
+This composition also corrects the original null-link LC sign using the
+literal inverse-coframe map. The old positive-sign numerical fixtures are
+not relabelled; the corrected source and full geometric form are independently
+checked. The source is nonzero and cannot be treated as spinless vacuum
+matter. A general Holst coefficient requires its sourced torsion equation.
+
+Use these maps when deriving the complete physical price from the same
+admitted programme. The cost transform is an exact statistic of that process,
+not an established replacement for Book03's memory-algebra amplitude law.
+The native Info/admission map, same-action positive-clock refinement and
+original final GR/raw216 requirements remain the parent premises. A proposed
+completion must now consume these actual equations, including the complement,
+clock boundaries and all connection sources, rather than restart their
+accounting or assume they vanish.
+
+For the accepted exact nonvacuum midpoint case, the concrete consumer is
+its original all40 §5.1 identity
+`DS_full,h|_(f=q=0)=a_h D(sum fhat)+b_h D(sum q)`, on every independent
+field direction after the actual internal Euler equations. The explicit
+frame map `e_native=nu^-1 diag(1,1,-1,-1)e_J2` aligns geometry but does not
+identify preparation, price or source. The [application proof](A4D_SAME_HISTORY_PRICE_AND_SOURCE_COMPOSITION_2026_10_20.md#7-application-to-the-accepted-exact-nonvacuum-gr-family)
+retains that exact target and all normalization/clock/state maps. Evaluate
+the admitted complete price on this existing positive family; do not
+replace it with another root search or identify the known Gamma spin
+source with the link-independent J2 scalar without proof.
+
 ## Current route to general relativity
 
 State the strongest complete conditional argument first: the owned verification

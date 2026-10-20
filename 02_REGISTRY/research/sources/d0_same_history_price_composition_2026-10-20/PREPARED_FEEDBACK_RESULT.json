@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "arithmetic": "exact rational and Q[a]/(a^4+a^2-1)",
+  "scope": "operator/source identities; no physical Info or apparatus admission",
+  "checks": [
+    "golden_probability",
+    "native_K0_K1_complete",
+    "golden_feedback_constant",
+    "golden_feedback_linear_work_complement",
+    "golden_feedback_quadratic_work_complement",
+    "golden_cost_marker",
+    "variation_does_not_commute",
+    "complete_noncommuting_first_source",
+    "dropping_work_complement_changes_source",
+    "full_work_unitary",
+    "actual_isometry_tangent",
+    "marker_full_complement",
+    "entire_echo_unitary",
+    "prepared_cut_true_feedback",
+    "all_output_work_complement",
+    "complement_strictly_present",
+    "selected_marker_is_not_original_complement",
+    "nonzero_work_complement_first_source",
+    "full_work_determinant_identity",
+    "full_work_determinant_source_zero",
+    "prepared_partition_source_nonzero",
+    "centred_work_covariance_identity"
+  ],
+  "golden_complement_coefficient_basis_1_a_a2_a3": [
+    "1",
+    "0",
+    "0",
+    "-2"
+  ],
+  "complete_echo": {
+    "paid_partition_effect": "81936/105625",
+    "true_feedback": "2076624/2640625",
+    "work_complement": "28224/2640625",
+    "work_complement_first_source": "-263424/13203125",
+    "prepared_partition_first_source": "172032/528125",
+    "full_work_feedback_source": "0"
+  }
+}
