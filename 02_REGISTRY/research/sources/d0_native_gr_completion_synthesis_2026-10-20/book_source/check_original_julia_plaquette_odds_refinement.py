@@ -65,27 +65,27 @@ x,y=s.symbols("x y",real=True)
 def exp_nil(g,t):
     check("original null generator nilpotent",g**3==s.zeros(4))
     return s.eye(4)+t*g+t*t*g*g/2
-P=exp_nil(N2,x)*exp_nil(bN3,y)*exp_nil(N2,-x)*exp_nil(bN3,-y)
+crossed_J=exp_nil(N2,x)*exp_nil(bN3,y)*exp_nil(N2,-x)*exp_nil(bN3,-y)
 check("actual based commutator first edge jets zero",
-      s.diff(P,x).subs({x:0,y:0})==s.zeros(4)
-      and s.diff(P,y).subs({x:0,y:0})==s.zeros(4))
+      s.diff(crossed_J,x).subs({x:0,y:0})==s.zeros(4)
+      and s.diff(crossed_J,y).subs({x:0,y:0})==s.zeros(4))
 check("actual based commutator mixed P source is J",
-      s.diff(P,x,y).subs({x:0,y:0})==J)
+      s.diff(crossed_J,x,y).subs({x:0,y:0})==J)
 for sign in (-1,1):
     check("64fold exact full-event composition defect, not discarded",
-          s.simplify(event(P,J,1,sign)-64*event(P,J,4,sign))==0)
+          s.simplify(event(crossed_J,J,1,sign)-64*event(crossed_J,J,4,sign))==0)
 check("exact score ratio insensitive to number of intermediate Julia flags",
-      s.simplify(event(P,J,1,-1)*event(P,J,4,1)
-                -event(P,J,1,1)*event(P,J,4,-1))==0)
+      s.simplify(event(crossed_J,J,1,-1)*event(crossed_J,J,4,1)
+                -event(crossed_J,J,1,1)*event(crossed_J,J,4,-1))==0)
 check("nonzero genuine crossed-null curvature mixed log-odds",
-      s.simplify(s.diff(nat_odds(P,J,4),x,y).subs({x:0,y:0})
+      s.simplify(s.diff(nat_odds(crossed_J,J,4),x,y).subs({x:0,y:0})
                  +2*s.sqrt(2))==0)
 # Ditto the other original opposite-null pair B.
-Pb=exp_nil(N2,x)*exp_nil(bN2,y)*exp_nil(N2,-x)*exp_nil(bN2,-y)
+crossed_B=exp_nil(N2,x)*exp_nil(bN2,y)*exp_nil(N2,-x)*exp_nil(bN2,-y)
 check("true crossed boost plaquette source",
-      s.diff(Pb,x,y).subs({x:0,y:0})==B)
+      s.diff(crossed_B,x,y).subs({x:0,y:0})==B)
 check("boost mixed log-odds",
-      s.simplify(s.diff(nat_odds(Pb,B,4),x,y).subs({x:0,y:0})
+      s.simplify(s.diff(nat_odds(crossed_B,B,4),x,y).subs({x:0,y:0})
                  +2*s.sqrt(2))==0)
 
 # Homogeneous Ward / actual based face derivative; inhomogeneous finite
@@ -107,8 +107,8 @@ check("original homogeneous based plaquette no direct link jet",
 # First-order POVM Fisher on full COARSE pointer output (not on all
 # additional fine Julia failure-history labels, which may add info).
 for n in (1,4):
-    ga=J;P=s.eye(4)+r*ga+r*r*ga*ga/2
-    plus=event(P,ga,n,+1);minus=event(P,ga,n,-1)
+    ga=J;one_link=s.eye(4)+r*ga+r*r*ga*ga/2
+    plus=event(one_link,ga,n,+1);minus=event(one_link,ga,n,-1)
     base=plus.subs(r,0)
     fisher=s.simplify(sum((s.diff(q,r).subs(r,0))**2/base
                            for q in (plus,minus)))
@@ -152,25 +152,35 @@ print("PASS no nonzero additive scalar holonomy character can match native odds"
 # outcomes and failures; Delta H = q_minus * h2(p)/ln(phi).
 pp=(s.sqrt(5)-1)/2
 h2=-pp*s.log(pp)-pp**2*s.log(pp**2)
+golden_log=-s.log(pp)
+golden_entropy_ratio=pp+2*pp**2
+check("Golden p and phi are exact reciprocals",s.simplify(phi*pp-1)==0)
+check("exact Golden entropy-to-information ratio",
+      s.simplify(s.expand_log(h2,force=True)-golden_entropy_ratio*golden_log)==0)
 for n in (1,2,4,6):
     curved=s.eye(4)+r*J+r*r*J*J/2
     minus=event(curved,J,n,-1)
     jet=s.simplify(s.diff(minus,r).subs(r,0))
     check("original marked Golden per-n first source derivative",
           jet==-s.Rational(1,4)**n/(12*s.sqrt(2)))
-    marked=s.simplify(minus*h2/s.log(phi))
+    # Use the exact algebraic form h2/log(phi)=p+2p^2 after checking it
+    # above; this avoids SymPy's branch-sensitive log-power rewrite.
+    marked=minus*golden_entropy_ratio
     check("full recorded Golden entropy n-dependent first source",
           s.simplify(s.diff(marked,r).subs(r,0)+
-                     s.Rational(1,4)**n*h2/(12*s.sqrt(2)*s.log(phi)))==0)
+                     s.Rational(1,4)**n*golden_entropy_ratio/(12*s.sqrt(2)))==0)
 check("unavoidable factor64 originally observed in four-link owner",
       s.simplify((s.Rational(1,4)**1)/(s.Rational(1,4)**4))==64)
 # A counterpart based cross null ab has the same marked amplitude ratio
 # and curvature mix source, because P=I+ab J+O(a²b,ab²).
 for n in (1,4):
-    test=event(P,J,n,-1)
+    test=event(crossed_J,J,n,-1)
     jet=s.simplify(s.diff(test,x,y).subs({x:0,y:0}))
+    marked=test*golden_entropy_ratio
     check("crossed null Golden marked curvature mixed price",
-          jet==-s.Rational(1,4)**n/(12*s.sqrt(2)))
+          s.simplify(s.diff(marked,x,y).subs({x:0,y:0})+
+                     s.Rational(1,4)**n*golden_entropy_ratio/
+                     (12*s.sqrt(2)))==0)
 
 # Paid native success clock: independent complete n-edge executions
 # have all-good probability 4^-n; expected n*4^n primitive edge calls
