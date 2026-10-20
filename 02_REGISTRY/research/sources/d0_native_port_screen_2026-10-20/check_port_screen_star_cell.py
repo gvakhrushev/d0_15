@@ -104,6 +104,13 @@ for Qi in Qs:
     M.append(row)
 M=s.Matrix(M)
 assert M.rank()==3
+literal_real=s.Matrix([
+    [0,-2,-1,2,1,0,0,-2,-1,2,1,0,0,2,0,-2,0,0,0,0,2,0,-2,0],
+    [-1,-1,1,-1,-2,-3,-1,3,0,-5,-1,-3,2,0,1,2,-1,0,-2,-2,-3,2,5,6],
+    [-2,-3,-3,-1,1,3,3,0,0,0,-3,0,-1,0,0,0,1,0,1,3,3,1,0,-3]
+])
+assert M.applyfunc(s.re)==literal_real
+assert literal_real.rank()==3
 assert (s.ones(1,3)*M)[1]==-6
 # Trace-free two-dimensional chosen screen cross-source remains rank2.
 TF=s.Matrix([[1,0],[0,1],[0,-2]])
