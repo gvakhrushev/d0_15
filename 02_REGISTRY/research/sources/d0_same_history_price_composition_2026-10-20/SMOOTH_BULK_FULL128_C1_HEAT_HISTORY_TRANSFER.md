@@ -136,3 +136,38 @@ for the literal original \(z=2^{-20}\). This is an **operator-source** theorem a
 **Most valuable conclusion:** under the physically important **regular continuum** hypothesis, there is NO new explosion of memory terms from repeating the actual 128-outcome measurement \(O(h^{-2})\) times. The full noncommutative memory correction can be proved negligible in the **normalized bulk first source** from native locality and CAR alone. The physical closure frontier has narrowed: neither extra states, multi-round \(\Gamma\) tensors nor another preselected spectral penalty is needed to connect actual serial records to the original HJR heat source in this chart. The remaining problem is the **selected full Book action**, especially its missing flat bulk source and oriented Cartan coupling, not the long history itself.
 
 **Bounded numerical stress test, not theorem proof:** \`check_smooth_car16_recycling_bulk.py\`, actual Julia/defect 32 terms on a fully CAR16-represented reduced 1D site profile, with every remaining role present (their site shifts trivialized only for the diagnostic). Proof equations (5)–(14) are analytic on the full original four-dimensional periodic product, not extrapolated from the reduced diagnostic.
+
+
+## 6. SAME-128-PORT SIGN RESULT: original paid port Cost cannot cancel the already-owned flat HJR source
+
+The analytic smooth transfer above solves the serial-memory error; it does NOT supply the needed flat Einstein counterpressure. An exact independent conclusion is available from the **actual original paid-port full-history source itself**, without the optional thinning/challenge controller.
+
+On the unchanged periodic flat \(U=I\) carrier and four independent positive creation-leg scales \(v_r=h\sqrt{\rho_r}e_r\), every momentum block of the true fullCAR16 Dirac square is
+\[
+\Delta_{\boldsymbol\rho}(k)
+=\Big[\sum_r\rho_r\omega_r(k)\Big] I_{16},\quad
+\omega_r(k)=2-2\cos(2\pi k_r/L)\ge0 .
+\]
+Every original N_k is block diagonal in the momentum label (although NOT scalar in CAR), so for every bounded function f,
+\(T^*_{\boldsymbol\rho}(f(\Delta_{\boldsymbol\rho}))=f(\Delta_{\boldsymbol\rho})\) **exactly**. The actual full128 unconditional channel \(\Phi\) therefore satisfies \(\Phi^*(\Delta)=\Delta\). The accepted literal complete two-port code, cost1 for direct and cost2 for return, obeys at **every** integer horizon m for every normalized fixed input/reference density \(\rho_{\rm in}\):
+\[
+\boxed{
+\mathbb E_{\rho_{\rm in}}C_{\rm port,m}
+=m+mp\varepsilon\,\operatorname{Tr}(\rho_{\rm in}\Delta_{\boldsymbol\rho}),\qquad
+\partial_{\rho_r}\mathbb E C_{\rm port,m}\big|_{\rho_{\rm in}\,\rm fixed}
+=mp\varepsilon\,\operatorname{Tr}(\rho_{\rm in}\Delta_r)\ge0.
+}\tag{15}
+\]
+This holds on the **same original all128 history** without the extra Golden thinning programme, without throwing out zero-momentum modes and for EVERY stationary or nonstationary \(\rho_{\rm in}\) at fixed preparation. The full reference remains a spectator, so a general correlated input has the same positive \(\Delta_r\otimes I_{\rm ref}\).
+
+Thus the class of proposed scalar physical completions
+\[
+S_{\rm candidate}=S^{\rm bare\,HJR}+\kappa C_{\rm port,m}+C_{\rm fixed},
+\qquad \kappa\ge0,
+\tag{16}
+\]
+with no other field-dependent price/Info terms and the above actual fixed or truly envelope-stationary input state, **cannot** admit the original flat Einstein vacuum as a stationary solution on the all-L≥256 coframe scale box. Its true partial coframe source is bounded below by the already-certified positive flat HJR value, because (15) is nonnegative. The bare-HJR proof provides \(L^{-4}\partial_{\rho_r}S_{HJR}>4.9\times10^{-9}\) for periodic or the specified open trace geometry; this new positive-port sign theorem itself is on the periodic homogeneous complete original full128 carrier, **not** a fixed-Dirichlet interior Euler.
+
+Even after solving the **combined** internal/preparation Euler of a genuinely additive candidate (16), the envelope derivative is the partial field derivative with internals fixed; the Rayleigh energy and the new port term each have nonnegative \(\partial_{\rho_r}\) there. Hence no positive multiple of the KNOWN PAID PORT COST restores the flat Einstein Euler on that chart. Retaining additional mandatory port ticks simply increases m, not its sign. If an alternative source has field-dependent controller/label/clock/preparation **costs or negative Info**, the theorem does NOT exclude it: that is the exact remaining Book03 source obligation, which cannot be discharged by another return-port probability alone.
+
+**Strong synthesis:** The *original* same-history port cost already has a determined sign, and the original HJR flat bulk pressure has the SAME sign. Therefore the physical restoring source, if D0 admits one, must arise in its truly selected **nontrivial Info/reference/relative-history or genuinely additional internal price**, with a derived negative coframe first jet; it is not hidden in the previously-missing multistep Γ correction, since that correction vanishes in the flat full128 history and is O(h) in smooth periodic bulk. This does NOT identify Shannon entropy with compulsory Book03 Info or choose a fitted negative term. It is a sharp physical selection test.
