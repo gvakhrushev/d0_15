@@ -80,3 +80,15 @@ and the moving-positive-adjoint equals Lambda(g)^(-1). Thus literal path reversa
 4. If physically selected, compare exact FIRST EULER COVECTORS for the original 16 coframe+24 Lorentz+matter tangent including all failures/prep/observer. Independently solve exact curved joint roots, Ward and uniform refinement. None of these steps is closed by (2.1–3.1); GR_closed=false.
 
 New reproducible finite tests: check_real_plaquette_cayley_book_gate.py and check_observer_positive_lorentz_path_groupoid.py, both exact rational where stated and local numerical positive-contraction controls. Existing Hodge/observer/path CAR owners are consumed; no new BOOK/CORE claims or status changes.
+
+### 3.1. Stronger: existing NATIVE Golden two-density six-phase atlas detects the ACTUAL plaquette orientation at order h², without an extra marked-source actuator
+
+Consume the already-owned #334 A4D_TWO_RECORD_PHASE_ATLAS_AND_AUTOMATIC_PREPARATION_SOURCE complete Julia/Golden two-density scalar phase map Phi:SO+(1,3)→R^6. It has exact det D Phi(I)=p^9/15552000 !=0 at the original positive Golden contraction, with all BAD flags retained and genuine moving preparation derivatives in its owned differential. By analytic inverse function theorem the SIX already defined comparison readings Phi(P) uniquely recover any actual native Lorentz P close to I; thus (2.3) reconstructs its entire exact finite curvature and orientation, even if NO extra Choi marked-success readout is physically executed.
+
+For a controlled smooth original lattice plaquette P_h=I+h²F+O(h³), the true six-phase orientation contrast satisfies
+
+  Phi(P_h)-Phi(P_h^(-1))=2h² D Phi(I)[F]+O(h³),
+
+whose order-h² coefficient is NONZERO for every F!=0 by the rank6 owner. In contrast the class function m_p(P_h) has derivative zero at I and therefore m_p(P_h)-m_p(I)=O(h^4), while m_p(P_h)=m_p(P_h^(-1)) exactly. This explains the **two-derivative observational delay** of scalar holonomy statistics without claiming literal physical time delay: signed curvature is a native order-sensitive CAR observable at O(h²), scalar marked probability is inversion-even and O(h^4).
+
+This is a strict local mathematical observable-factorization theorem using an EXISTING #334 readout; physical original full128 admission, its reference/preparation/work/clock/code price, and which all40 Euler covector it selects remain independently unproved. No new quantum device must be postulated solely for local informational sufficiency. The constructed six log-gradient Cayley tester above remains an exact independent analytic alternative to the already-owned Golden phase atlas, not evidence that it is the compulsory original experiment.
