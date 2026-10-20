@@ -367,6 +367,59 @@ must optimize full signed original Cost−Info/test capability
 rather than just primitive shortest path length or scalar K.
 \`GR_closed=false\`.
 
+### Physical Q8-center dichotomy under M1 and PROSPECTIVE correct minimum (20 Oct)
+
+New integrated pinned scientific owner:
+[A4D_M1_PROSPECTIVE_VERIFIABILITY_FORCES_SPIN_TEST_GAUGE_MINIMAL_Q8_2026_10_20.md](A4D_M1_PROSPECTIVE_VERIFIABILITY_FORCES_SPIN_TEST_GAUGE_MINIMAL_Q8_2026_10_20.md).
+Original compiled Lean FutureExecution.uncoupledCenter_not_future_complete
+and future_complete_forces_a_test now prove the decisive PHYSICAL
+DILEMMA: if Q8 central signs are actually two distinct FULLY VERIFIED
+native physical states, some genuinely ADMITTED finite future Spin/
+order-sensitive context is NECESSARY; if ALL original G0 actions/readouts
+ignore the center, their raw labels lie in ONE M1 operational state
+class and a compulsory 327-bit physical Spin memory does NOT follow.
+No ad-hoc new detector is inserted. The existing original Q8/Golden
+sign port is an exact finite mathematical candidate but its actual
+Book03 scene-memory→active controller work/source remains OPEN.
+
+Prospective D_min must compare exactly the SAME future verification
+task: original Q8 relative-sign operator alone requires TWO local-i
+steps; matched primitive-count Golden two-port contrast can be
+performed with THREE steps IJI/JII (actual complete 8x8 Golden
+POVM EFFECTS agree on ALL input states with a six-gate fully normalized
+reference/order pair IJIJJJ/JIIJJJ); exact whole-I8/relativeSignQ
+terminal operator requirements, unlike Golden-port statistics, demand
+SIX same-inventory gates. Original OrderMemoryControl Lean theorems
+now certify the 3→6 common-J group relation, a general invariant
+future-readout factorization and exhaustive 0..5 word absence for
+whole-I/R matched source. Independent actual Golden8 real
+effect-matrix checker and all127-word exhaustive search supply
+separate replay. The common global-J operator is invisible ONLY to
+the already-owned TWO-PORT Goldens; G0 must determine whether any
+admissible future frame-sensitive test makes that quaternion
+reference physically meaningful, not an external human catalogue.
+
+On the TRUE original K(9,11,13), ALL718 closed n2 backtracks have
+trivial inverse-respecting Q8 holonomy; the FIRST actual possible
+signed closed central memory is an ABC n3 triangle, with
+i*j*k=-1 vs i*j*(-k)=+1. New original Lean
+originalQ8TwoTickBacktrackAlwaysTrivial/
+originalQ8ThreeTickTriangleFirstClosedSpinDistinction plus
+independent full8440 Book-history×2 complete Golden label
+test demonstrate that one actual central edge-sheet flip causes
+exactly66 negative based triangle histories, ZERO negative two-tick
+histories, unchanged whole scalar Book K/pressure, yet nonzero
+full Golden bright probability 0.00649068726217. When TESTING the
+two KNOWN rival sheets, prospective directed 3-tick Q8 triangle
+has conditional bright probability 4p³=0.94427191, versus passive
+8440-clock sampling 0.00649068726: expected ~1.059 vs154.067
+attempts under an explicitly assumed independent retry law.
+This is a test-selection/attempt distinction, NOT a demonstrated
+full Book Cost−Info/work advantage. It removes one invented
+primitive, but does NOT physically select signed Spin sheets,
+the native CAR/Dirac/Role 40-Euler or Einstein refining root.
+GR_closed=false.
+
 ### Route update — nonlinear completion is no longer the open step
 
 For the already-built golden-AF geometric branch, the all-order nonlinear
