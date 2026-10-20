@@ -3,7 +3,7 @@
 /*
  * STRATEGIC D0→GR UNIVERSALITY / NO BOOK ACTION FIT.
  *
- * The mathematical theorem (proved analytically in owner):
+ * The mathematical theorem is proved in RESULT.md:
  * for actual six-based Palatini site densities f_i(e,U) homogeneous
  * degree 2 in site i's ORIGINAL coframe e_i and unchanged at j!=i;
  * and for ANY C^2 smooth, perhaps completely NONSEPARABLE field
@@ -11,14 +11,15 @@
  * define a_i(f)=int_0^1 dF/df_i(t f) dt;
  *    e_tilde_i = sqrt(a_i(f)/w_i) e_i;
  * then EXACTLY F(f(e,U))-F(0) = SUM_i w_i f_i(e_tilde,U).
- * f→f*a_i(f)/w_i is local diffeo at zero (derivative I);
- * original e→e_tilde with SAME physical four links U is invertible.
+ * f→f*a_i(f)/w_i is a local diffeo at zero (derivative I);
+ * the full coframe map is invertible by its determinant identity in
+ * RESULT.md, with the SAME physical links U.
  * Independently radially varying EACH site forces f_i=0 at
  * ANY vacuum stationary point for either action, and then ALL
  * 16+24 original equations have identical zero sets.
- * More strongly, at any common stationary point the KERNELS of
- * the two full Euler Hessians COINCIDE, even when F has arbitrary
- * cross-site second derivatives.
+ * More strongly, at a common stationary point the full Euler
+ * Hessians are congruent under D(e_tilde,U); their tangent kernels
+ * are isomorphic, not necessarily the same raw-coordinate subspace.
  *
  * This fixture is NOT physically selected D0 action. It is a
  * hostile ORIGINAL 718-edge 8440-history native Book clock
@@ -267,7 +268,7 @@ for(;iterations<12;iterations++){
 const maxInverse=Math.max(...invF.map((v,i)=>Math.abs(v-f[i])));
 check(maxInverse<1e-10,"nonseparable global radial diffeomorphism has no inverse");
 const result={
- status:"PASS_NONSEPARABLE_ACTUAL_ORIGINAL_718_BOOK_PRESSURE_UNIVERSALITY",
+ status:"PASS_CONSTRUCTED_ORIGINAL_718_BOOK_NATIVE_TYPE_CONTROL",
  trueOriginalRoleStar:{sites:N,links:4*N,
   genuineSixFaceTypes:prs.length,
   maxOriginalSiteDensity:Math.max(...f.map(Math.abs)),
@@ -284,17 +285,19 @@ const result={
   nearbyCrossSecondDerivative:near,
   distantCrossSecondDerivative:far,
   trulyNonseparableHistoryAction:true,
-  wholeBookNativeSelectorProved:false},
+  wholeBookNativeSelectorProved:false,
+  fieldMapIsConstructedControl:true},
  exactMathematicalTheorem:{
-  statement:"For any smooth F(f) with w_i=dF/df_i(0)!=0, all vacuum stationary Role fields and all linearized Euler kernels agree EXACTLY with weighted original 16+24 Palatini star. One coframe-only smooth invertible reparametrization makes the entire offshell actions equal.",
+  statement:"For any C2 F(f) with all w_i=dF/df_i(0)!=0, the local vacuum stationary sets agree pointwise with the weighted original six-face star. The full actions are exactly related by a local coframe diffeomorphism; stationary Hessians are congruent and their tangent kernels are isomorphic.",
   canonicalHomotopy:"a_i(f)=int_0^1 dF/d f_i(t f) dt",
   coframe:"e_i_tilde=sqrt(a_i(f)/w_i)*e_i",
   scalarDiffeomorphism:"g_i(f)=f_i*a_i(f)/w_i; Dg(0)=I",
   onVacuumCoframeIdentity:true,
   nativeMetricMatterSourceSelectionStillOpen:true},
  numericalNonseparableOriginalBook:{
-  BookF:book,exactWeightedStarAfterGlobalDressing:star,
+  BookF:book,weightedStarFromQuadrature:star,
   difference:book-star,
+  comparisonMethod:"floating point; 8-point Gauss-Legendre homotopy; not an exact-arithmetic replay",
   minimumDressing:Math.min(...sigma),maximumDressing:Math.max(...sigma),
   gradientLineQuadratureNodes:8,
   scalarInverseIterations:iterations+1,

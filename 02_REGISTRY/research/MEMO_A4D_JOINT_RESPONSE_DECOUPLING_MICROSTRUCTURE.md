@@ -8675,3 +8675,30 @@ compilation accuracy and a uniform scale Ward alone do not supply these
 sources. Exact saved checker PASS26 groups and two bounded independent
 reviews. No selected full D0 price, physical tangent admission, geometric
 root/refinement or raw216 conclusion is promoted; GR_closed=false.
+
+## 20 October: exact coframe pullback for a nonseparable history pressure
+
+The new [analytic result](sources/d0_native_gr_universality_2026-10-20/RESULT.md)
+removes separability as a necessary condition for a Palatini-equivalent
+vacuum geometric price. If the full history action factors through the
+original sitewise six-face densities \(f_i(e,U)\), is \(C^2\), and has
+nonzero site derivatives \(w_i=\partial_iF(0)\), the line-homotopy
+coefficients \(a_i(f)=\int_0^1\partial_iF(tf)dt\) give an exact local
+coframe change \(\tilde e_i=\sqrt{a_i/w_i}\,e_i\). This makes the
+whole off-shell scalar action exactly \(\sum_iw_i f_i(\tilde e,U)\),
+including arbitrary cross-site second derivatives. A determinant identity
+proves the full coframe/link chart is locally invertible. In the local
+vacuum chart both stationary sets coincide pointwise; their Hessians are
+congruent and their tangent kernels are isomorphic under the field-map
+Jacobian (they need not be the same raw-coordinate subspace).
+
+The adjacent checker supplies a constructed hostile witness on the original
+718-transition/8440-history support with nonseparable pressure and nonzero,
+equal flat site slopes. Its finite differences and line quadrature are
+floating-point evidence for that fixture; the universal theorem is the
+analytic proof in `RESULT.md`. This advances only the conditional
+`constitutive` route: actual G0 must still derive that its compulsory whole
+H+J+R/Book/preparation/clock/work source factors through these \(f_i\),
+with a common correctly signed coefficient, on a nonempty admitted chart.
+The fixture does not supply that selector, a matter source, refinement,
+Ward identity or physical recovery. `GR_closed=false`.
