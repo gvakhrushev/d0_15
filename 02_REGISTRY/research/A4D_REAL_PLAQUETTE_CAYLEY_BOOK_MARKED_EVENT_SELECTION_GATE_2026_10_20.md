@@ -57,6 +57,10 @@ Let the six native marked readout gradients for the SAME actual plaquette be r_i
 
     T(P)=sum_i [r_i(P)/gamma_i]G_i                         (3.1)
 
+Consequently the SAME six gradients reconstruct not only the original finite CURVATURE, but the complete oriented plaquette HOLONOMY itself on this Cayley chart:
+
+    P=(I+T(P))(I−T(P))^(-1).                              (3.2)
+
 is uniquely reconstructed. Equation (2.3) then recovers the ENTIRE literal finite D0 plaquette curvature, without assuming it as an auxiliary input. This is an exact mathematical information-sufficiency result for a locally positive CAR16 marked comparison FAMILY, not a proof that the compulsory original full128/Book apparatus actually executes six physical probe settings.
 
 The exact checker reconstructs T and C from all six r_i on rational noncommuting boost×rotation×boost P; verifies P and P^(-1) lie in the native p·Lambda(P) positive Julia contraction chart (complete success/failure available); verifies inversion, nonmultiplicativity and the nonzero rational old star/Cayley difference. All native SO(1,3) CAR generator identities and Hodge conventions are reused unchanged.
