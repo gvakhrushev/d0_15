@@ -150,6 +150,20 @@ fail(Math.abs(KLsmall-KLexpected)<3e-11,
 // is ORIENTATION-ODD (sin t), but complete Golden17 Shannon is EVEN (t).
 // So whole pointer entropy misses the true signed FIRST gravitational
 // density jet while also carrying spurious VERTICAL Hessian in dir0.
+// A single original J23 mark pair still retains precisely the ODD
+// orientation that its full 17-outcome Shannon entropy discards.
+// q_(J23,+)-q_(J23,-)=herald*p^4/6 * m(t)*sin(t)/sqrt(2).
+const tp=.08,mMark=(1+Math.cos(tp))/2,sMark=Math.sin(tp)/Math.SQRT2;
+const qp=actualGolden17(expJ(tp)),qm=actualGolden17(expJ(-tp));
+const markOdd=qp[2*4]-qp[2*4+1];
+const markExpected=herald*p**4/6*mMark*sMark;
+fail(Math.abs(markOdd-markExpected)<2e-17,
+ "original complete Golden17 signed mark retains actual orientation ODD signal");
+fail(Math.abs(markOdd+(qm[2*4]-qm[2*4+1]))<2e-17,
+ "opposite nonzero Palatini signed source reverses native original +/- Golden marks");
+const decodedJ=256*Math.sqrt(3)/(p*p)*(Math.sqrt(qp[2*4])-Math.sqrt(qp[2*4+1]));
+fail(Math.abs(decodedJ-2*Math.sin(tp))<1e-13,
+ "positive square-root Golden root reconstructs full signed J23 curvature exactly");
 const alignedPlus=solve(.08,2),alignedMinus=solve(-.08,2),
       alignedZero=solve(0,2);
 const gFirst=alignedPlus.all16OriginalStar.map((x,i)=>
@@ -197,7 +211,9 @@ console.log(JSON.stringify({
  actualVerticalFirstSourceAtTheta015:first,
  secondOriginalRoleLinkControl:{roleDirection:2,
    fullStarJetNorm:gNorm,nonzeroPalatiniSiteDensities:alignedPlus.all16OriginalStar.filter(x=>Math.abs(x)>1e-12),
-   ShannonEvenDifference:alignedPlus.completePointerShannon96-alignedMinus.completePointerShannon96},
+   ShannonEvenDifference:alignedPlus.completePointerShannon96-alignedMinus.completePointerShannon96,trueOriginalOddSignedJ23Marker:markOdd,
+   trueOriginalOddSignedJ23MarkerExpected:markExpected,
+   decodedOriginalOddJ23LieCoordinate:decodedJ},
  phiMinusOne:p,
  scope:"mathematical full positive Golden17 POINTER SHANNON countermodel on genuine role-shared 4D link; not compulsory physical Book03 action",
  GR_closed:false
