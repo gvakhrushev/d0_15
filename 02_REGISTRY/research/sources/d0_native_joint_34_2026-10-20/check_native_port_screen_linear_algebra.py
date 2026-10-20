@@ -21,7 +21,7 @@ assert (F.T*eta*F).diff(t).subs(t,0)==2*Qs
 assert Qs*k==s.zeros(4,1)
 # The index placement matters: CAR vector from F in this chart is
 # k(F) = F.T eta k, so F(t).T eta k = k+t Qs k =k exactly.
-assert s.simplify(F.T*eta*k-k)==s.zeros(4,1)
+assert s.simplify(F.T*eta*k-eta*k)==s.zeros(4,1)
 # The full Dirac symbol is fixed, so any scalar function only of D^2
 # (including the complete original Golden port effect) is constant.
 print('PASS real symmetric screening rank 7, nullity 3')
