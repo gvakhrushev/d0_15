@@ -71,6 +71,20 @@ for L in (8, 16, 24, 32, 40):
     Jsource = 2048*z*beta*float(np.sum(mu*f/B/(1-z+z*f)))
     Rsource = 2 - 2*cos(2*pi/L)
     original_full = (Hsource+Jsource+Rsource)/L**4
+    if L in (8, 16, 24):
+        # Independent value-level central finite difference of the WHOLE
+        # native H + J + R action, not differentiated from (7).
+        # Field-independent C_h is omitted only from this derivative check.
+        def full_original_action(rho):
+            b_r = 1-alpha*rho*mu
+            fw = np.exp(m*np.log(b_r))
+            return (float(np.log(16*np.sum(fw)))/beta
+                    -2048*float(np.sum(np.log1p(z*(fw-1))))
+                    +rho*Rsource)
+        eps = 1e-5
+        central = (full_original_action(1+eps)
+                   -full_original_action(1-eps))/(2*eps)
+        assert abs(central-(Hsource+Jsource+Rsource)) < 1e-5
     if L >= 24:
         assert original_full > 0
     print(f"L={L} local_source={original_full:+.12e} "
