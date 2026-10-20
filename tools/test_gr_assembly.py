@@ -51,6 +51,8 @@ class AssemblyTests(unittest.TestCase):
                          "goals": [{"id": "GR", "requires": ["D"], "outcome": "positive"}],
                          "obligations": [self.obligation(n, deps) for n, deps in
                                          [("A", []), ("B", ["A"]), ("C", ["A"]), ("D", ["B", "C"])]],
+                         "carrier_distinctions": [],
+                         "registry_budget": {"max_active_results": 10},
                          "task_bindings": {TASK: self.binding("A", "question-a"), OTHER: self.binding("B", "question-b")}}
         self.intake = {"schema": "d0-gr-applications/1", "results": [], "applications": [], "attempts": [],
                        "migration": {"old": {"result": "legacy:old", "obligation": None}}}
@@ -59,7 +61,9 @@ class AssemblyTests(unittest.TestCase):
             brief = f"00_WORK/tasks/{tid}.md"
             self.queue["tasks"].append({"id": tid, "class": "WORKER", "state": "PLANNED", "brief": brief})
             (self.root / brief).write_text(f"# {tid}\nBase: `main`\nBranch: `wrk/{tid.lower()}`\n"
-                                         f"Primary artifact: `proof.md`\nAssembly: `{tid}`\n")
+                                         f"Primary artifact: `proof.md`\nAssembly: `{tid}`\n"
+                                         f"Assembly-Slot: `{self.binding('A' if tid == TASK else 'B', '')['slot']}`\n"
+                                         f"Assembly-Carrier: `native`\n")
         self.save()
 
     def snapshot(self, name, data):
@@ -73,7 +77,8 @@ class AssemblyTests(unittest.TestCase):
                 "methods": [{"id": "direct", "requires": list(deps)}]}
 
     def binding(self, ob, key):
-        return {"obligations": [ob], "interface": "native", "work_key": key, "statement": "Prove " + ob,
+        return {"obligations": [ob], "slot": ob, "carrier": "native", "distinct_from": [],
+                "interface": "native", "work_key": key, "statement": "Prove " + ob,
                 "consumer": "D", "mode": "proof", "assumes": [], "write_paths": ["proof.md"],
                 "start_requires": [], "completion_requires": [ob]}
 
@@ -182,10 +187,23 @@ class AssemblyTests(unittest.TestCase):
         with self.assertRaisesRegex(gr.AssemblyError, "finite certificate"):
             self.model()
 
+    def test_active_result_budget_is_enforced(self):
+        self.contract["registry_budget"]["max_active_results"] = 2
+        for name in ["r1", "r2", "r3"]:
+            self.add_result(name=name)
+        with self.assertRaisesRegex(gr.AssemblyError, "active result registry budget exceeded: 3/2"):
+            self.model()
+
     def test_finite_result_does_not_fill_family_premise(self):
         self.add_result(kind="exact-finite", scope="finite")
         self.add_app()
         with self.assertRaisesRegex(gr.AssemblyError, "finite scope"):
+            self.model()
+
+    def test_application_cannot_switch_carrier_without_typed_edge(self):
+        self.add_result(interface="other")
+        self.add_app()
+        with self.assertRaisesRegex(gr.AssemblyError, "different carrier needs an explicit distinct-from edge"):
             self.model()
 
     def test_passport_does_not_close_internal_goal(self):
@@ -198,13 +216,21 @@ class AssemblyTests(unittest.TestCase):
         self.contract["interfaces"]["other"] = copy.deepcopy(self.contract["interfaces"]["native"])
         self.contract["interfaces"]["other"]["action"] = "A different complete action"
         self.add_result(interface="other")
-        self.add_app()
+        app = self.add_app()
+        self.contract["carrier_distinctions"].append({
+            "id": "A-native-other", "slot": "A", "left_interface": "native",
+            "right_interface": "other", "type": "distinct-from", "reason": "Fixture carrier distinction."})
+        app["distinct_from"] = ["A-native-other"]
         with self.assertRaisesRegex(gr.AssemblyError, "every transport map"):
             self.model()
 
     def test_complete_proved_transport_can_be_accepted(self):
         self.add_result(interface="other")
         app = self.add_app()
+        self.contract["carrier_distinctions"].append({
+            "id": "A-native-other", "slot": "A", "left_interface": "native",
+            "right_interface": "other", "type": "distinct-from", "reason": "Fixture carrier distinction."})
+        app["distinct_from"] = ["A-native-other"]
         app["transport"] = {"proof": self.proof, "maps": {k: "Proved fixture map for " + k for k in gr.INTERFACE_FIELDS}}
         self.sign(app)
         self.assertIn("A", gr.evaluate(self.model())["closed"])
@@ -435,6 +461,57 @@ class AssemblyTests(unittest.TestCase):
         self.contract["task_bindings"][OTHER]["start_requires"] = ["A"]
         self.assertIn("unproved start prerequisites", " ".join(gr.launch_check(self.model(), OTHER, [])["reasons"]))
 
+    def test_brief_requires_exact_slot_and_carrier_before_dispatch(self):
+        model = self.model()
+        task = next(t for t in self.queue["tasks"] if t["id"] == TASK)
+        path = self.root / task["brief"]
+        path.write_text(path.read_text().replace("Assembly-Slot: `A`", "Assembly-Slot: `B`"))
+        with self.assertRaisesRegex(gr.AssemblyError, "Assembly-Slot"):
+            gr.brief_binding(self.root, task, model)
+
+    def test_different_carrier_requires_a_typed_distinct_from_edge(self):
+        binding = self.contract["task_bindings"][OTHER]
+        binding.update({"interface": "other", "carrier": "other"})
+        with self.assertRaisesRegex(gr.AssemblyError, "matching distinct-from edge"):
+            self.model()
+
+        edge = {"id": "B-native-other", "slot": "B", "left_interface": "native",
+                "right_interface": "other", "type": "distinct-from", "reason": "Fixture carrier distinction."}
+        self.contract["carrier_distinctions"].append(edge)
+        binding["distinct_from"] = [edge["id"]]
+        brief = self.root / "00_WORK/tasks" / f"{OTHER}.md"
+        body = brief.read_text().replace("Assembly-Carrier: `native`", "Assembly-Carrier: `other`")
+        body += "Assembly-Distinct-From: `B-native-other`\n"
+        brief.write_text(body)
+        model = self.model()
+        task = next(t for t in self.queue["tasks"] if t["id"] == OTHER)
+        self.assertEqual(gr.brief_binding(self.root, task, model)["distinct_from"], [edge["id"]])
+
+    def test_same_filled_slot_and_carrier_cannot_start_again(self):
+        self.add_result()
+        self.sign(self.add_app())
+        check = gr.launch_check(self.model(), TASK, [])
+        self.assertFalse(check["allowed"])
+        self.assertIn("already filled with the same carrier", " ".join(check["reasons"]))
+
+    def test_filled_slot_different_carrier_requires_and_uses_distinct_edge(self):
+        self.add_result()
+        self.sign(self.add_app())
+        binding = self.contract["task_bindings"][OTHER]
+        binding.update({"obligations": ["A"], "slot": "A", "completion_requires": ["A"],
+                        "interface": "other", "carrier": "other"})
+        edge = {"id": "A-native-other", "slot": "A", "left_interface": "native",
+                "right_interface": "other", "type": "distinct-from", "reason": "Fixture carrier distinction."}
+        self.contract["carrier_distinctions"].append(edge)
+        binding["distinct_from"] = [edge["id"]]
+        brief = self.root / "00_WORK/tasks" / f"{OTHER}.md"
+        text = brief.read_text().replace("Assembly-Slot: `B`", "Assembly-Slot: `A`")
+        text = text.replace("Assembly-Carrier: `native`", "Assembly-Carrier: `other`")
+        text += "Assembly-Distinct-From: `A-native-other`\n"
+        brief.write_text(text)
+        check = gr.launch_check(self.model(), OTHER, [])
+        self.assertTrue(check["allowed"], check["reasons"])
+
     def test_different_task_label_does_not_avoid_duplicate_gate(self):
         self.contract["task_bindings"][OTHER]["work_key"] = "question-a"
         check = gr.launch_check(self.model(), OTHER, [self.pr()])
@@ -444,6 +521,11 @@ class AssemblyTests(unittest.TestCase):
     def test_different_interface_does_not_avoid_duplicate_gate(self):
         self.contract["task_bindings"][OTHER]["work_key"] = "question-a"
         self.contract["task_bindings"][OTHER]["interface"] = "other"
+        self.contract["task_bindings"][OTHER]["carrier"] = "other"
+        self.contract["carrier_distinctions"].append({
+            "id": "B-native-other", "slot": "B", "left_interface": "native",
+            "right_interface": "other", "type": "distinct-from", "reason": "Fixture carrier distinction."})
+        self.contract["task_bindings"][OTHER]["distinct_from"] = ["B-native-other"]
         check = gr.launch_check(self.model(), OTHER, [self.pr()])
         self.assertFalse(check["allowed"])
         self.assertIn("same scientific work", check["reasons"][0])

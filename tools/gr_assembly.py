@@ -69,6 +69,18 @@ def records(rows: object, label: str) -> dict:
     return result
 
 
+def _carrier_edge_matches(edge: dict, slot: str, left: str, right: str) -> bool:
+    return (edge.get("slot") == slot and edge.get("type") == "distinct-from"
+            and {edge.get("left_interface"), edge.get("right_interface")} == {left, right})
+
+
+def _has_declared_carrier_edge(model: dict, binding: dict, slot: str, left: str, right: str) -> bool:
+    declared = set(binding.get("distinct_from", []))
+    edges = model["carrier_distinctions"]
+    return any(edge_id in declared and _carrier_edge_matches(edges[edge_id], slot, left, right)
+               for edge_id in declared if edge_id in edges)
+
+
 def string_list(value: object, label: str) -> list[str]:
     require(isinstance(value, list) and all(isinstance(v, str) and v for v in value),
             f"{label}: expected a string array")
@@ -149,6 +161,7 @@ def load(root: Path) -> dict:
         }
     model = {"root": root, "contract": contract, "intake": intake, "results": results,
              "obligations": records(contract.get("obligations"), "obligations"),
+             "carrier_distinctions": records(contract.get("carrier_distinctions", []), "carrier_distinctions"),
              "applications": records(intake.get("applications"), "applications"),
              "attempts": records(intake.get("attempts"), "attempts")}
     validate(model)
@@ -414,6 +427,14 @@ def validate(model: dict) -> None:
     except ValueError as exc:
         raise AssemblyError(str(exc)) from exc
     interfaces, obs = c.get("interfaces"), model["obligations"]
+    budget = c.get("registry_budget")
+    require(isinstance(budget, dict), "registry_budget is required")
+    max_active_results = budget.get("max_active_results")
+    require(type(max_active_results) is int and max_active_results > 0,
+            "registry_budget.max_active_results must be a positive integer")
+    active_results = len(model["intake"].get("results", []))
+    require(active_results <= max_active_results,
+            f"active result registry budget exceeded: {active_results}/{max_active_results}; strengthen an existing result")
     require(isinstance(interfaces, dict) and bool(interfaces), "interfaces are required")
     for name, value in interfaces.items():
         require(isinstance(value, dict) and set(value) == INTERFACE_FIELDS, f"{name}: incomplete interface")
@@ -439,8 +460,29 @@ def validate(model: dict) -> None:
         require(goal["outcome"] != "positive" or all(obs[d]["outcome"] == "positive" for d in deps),
                 f"{goal['id']}: a positive goal cannot be supplied by negative/classification terminals")
     require(set(c.get("task_bindings", {})).isdisjoint({"CONTROL-PLANE"}), "CONTROL-PLANE is not a scientific execution")
+    for edge in model["carrier_distinctions"].values():
+        require(edge.get("type") == "distinct-from", f"{edge['id']}: unsupported carrier edge type")
+        require(edge.get("slot") in obs, f"{edge['id']}: unknown slot")
+        left, right = edge.get("left_interface"), edge.get("right_interface")
+        require(left in interfaces and right in interfaces and left != right,
+                f"{edge['id']}: carrier edge needs two distinct typed interfaces")
+        text_field(edge.get("reason"), f"{edge['id']}.reason")
     for tid, binding in c.get("task_bindings", {}).items():
         require(binding.get("interface") in interfaces, f"{tid}: unknown interface")
+        require(binding.get("carrier") == binding.get("interface"),
+                f"{tid}: carrier must name its exact typed interface")
+        slot = binding.get("slot")
+        require(slot in obs and slot in binding.get("obligations", []),
+                f"{tid}: primary slot must be one of its declared obligations")
+        declared_edges = string_list(binding.get("distinct_from", []), f"{tid}.distinct_from")
+        require(all(edge_id in model["carrier_distinctions"] for edge_id in declared_edges),
+                f"{tid}: unknown distinct-from edge")
+        require(all(model["carrier_distinctions"][edge_id]["slot"] == slot for edge_id in declared_edges),
+                f"{tid}: every distinct-from edge must name the binding's primary slot")
+        slot_carrier = obs[slot]["interface"]
+        if binding["carrier"] != slot_carrier:
+            require(_has_declared_carrier_edge(model, binding, slot, slot_carrier, binding["carrier"]),
+                    f"{tid}: a different carrier needs a matching distinct-from edge before dispatch")
         for iface in binding.get("additional_interfaces", []):
             require(iface in interfaces, f"{tid}: unknown additional interface")
         require(binding.get("mode") in MODES, f"{tid}: unknown execution mode")
@@ -480,6 +522,12 @@ def validate(model: dict) -> None:
         aid = app["id"]
         require(app.get("obligation") in obs and app.get("result") in model["results"], f"{aid}: dangling application")
         target, result = obs[app["obligation"]], model["results"][app["result"]]
+        distinct_edges = string_list(app.get("distinct_from", []), f"{aid}.distinct_from")
+        require(all(edge_id in model["carrier_distinctions"] for edge_id in distinct_edges),
+                f"{aid}: unknown distinct-from edge")
+        require(all(model["carrier_distinctions"][edge_id]["slot"] == app["obligation"]
+                    for edge_id in distinct_edges),
+                f"{aid}: every distinct-from edge must name the application's target slot")
         require(not result.get("historical"), f"{aid}: historical results need a typed intake before use")
         require(target["outcome"] == "classification" or target["outcome"] == result["outcome"],
                 f"{aid}: a {result['outcome']} result cannot supply a {target['outcome']} premise")
@@ -512,6 +560,9 @@ def validate(model: dict) -> None:
                 require("assumption" in binding, f"{aid}: unknown hypothesis binding")
                 text_field(binding["assumption"], "retained assumption")
         if result["interface"] != target["interface"]:
+            require(_has_declared_carrier_edge(model, app, app["obligation"],
+                                                target["interface"], result["interface"]),
+                    f"{aid}: a different carrier needs an explicit distinct-from edge")
             transport = app.get("transport", {})
             require(set(transport.get("maps", {})) == INTERFACE_FIELDS,
                     f"{aid}: different interfaces require every transport map")
@@ -583,7 +634,15 @@ def brief_binding(root: Path, task: dict, model: dict | None = None) -> dict | N
     body = path_in(root, task["brief"]).read_text()
     matches = re.findall(r"^Assembly:[ \t]*`?([^`\r\n]+)`?[ \t]*\r?$", body, re.MULTILINE)
     require(matches == [tid], f"{tid}: brief must contain exactly one Assembly: `{tid}`")
-    return model["contract"]["task_bindings"][tid]
+    binding = model["contract"]["task_bindings"][tid]
+    slots = re.findall(r"^Assembly-Slot:[ \t]*`?([^`\r\n]+)`?[ \t]*\r?$", body, re.MULTILINE)
+    carriers = re.findall(r"^Assembly-Carrier:[ \t]*`?([^`\r\n]+)`?[ \t]*\r?$", body, re.MULTILINE)
+    require(slots == [binding["slot"]], f"{tid}: brief must name exactly its registered Assembly-Slot")
+    require(carriers == [binding["carrier"]], f"{tid}: brief must name exactly its registered Assembly-Carrier")
+    distinct = re.findall(r"^Assembly-Distinct-From:[ \t]*`?([^`\r\n]+)`?[ \t]*\r?$", body, re.MULTILINE)
+    expected = [",".join(binding.get("distinct_from", []))] if binding.get("distinct_from") else []
+    require(distinct == expected, f"{tid}: brief distinct-from declaration differs from its typed binding")
+    return binding
 
 
 def validate_queue(root: Path, model: dict) -> None:
@@ -726,6 +785,21 @@ def launch_check(model: dict, task_id: str, prs: list[dict]) -> dict:
         require("A4D" not in task_id, f"{task_id}: missing assembly binding")
         return {"allowed": True, "reasons": [], "binding": None}
     state, reasons = evaluate(model), []
+    slot = binding["slot"]
+    slot_carrier = model["obligations"][slot]["interface"]
+    if binding["carrier"] != slot_carrier and not _has_declared_carrier_edge(
+            model, binding, slot, slot_carrier, binding["carrier"]):
+        reasons.append(f"slot {slot} uses {slot_carrier}; declare a matching distinct-from edge for {binding['carrier']}")
+    filled_carriers = {
+        model["results"][app["result"]]["interface"]
+        for app in model["applications"].values()
+        if app["obligation"] == slot and app.get("_accepted")
+    }
+    if binding["carrier"] in filled_carriers:
+        reasons.append(f"slot {slot} is already filled with the same carrier {binding['carrier']}; do not start duplicate work")
+    for filled_carrier in sorted(filled_carriers - {binding["carrier"]}):
+        if not _has_declared_carrier_edge(model, binding, slot, filled_carrier, binding["carrier"]):
+            reasons.append(f"slot {slot} is filled by {filled_carrier}; a matching distinct-from edge is required")
     for pr in prs:
         fields = metadata(pr.get("body") or "", "Task")
         if len(fields) > 1 and any(t in bindings and collision_key(bindings[t]) == collision_key(binding) for t in fields):
@@ -738,7 +812,10 @@ def launch_check(model: dict, task_id: str, prs: list[dict]) -> dict:
     missing = set(binding["start_requires"]) - state["closed"]
     if missing:
         reasons.append("unproved start prerequisites: " + ", ".join(sorted(missing)))
-    if set(binding["obligations"]) <= state["closed"] and binding["mode"] != "verification":
+    if (set(binding["obligations"]) <= state["closed"] and binding["mode"] != "verification"
+            and not (filled_carriers and binding["carrier"] not in filled_carriers
+                     and all(_has_declared_carrier_edge(model, binding, slot, filled, binding["carrier"])
+                             for filled in filled_carriers))):
         reasons.append("the exact bound obligations are already discharged; name a genuine new premise")
     for attempt in model["attempts"].values():
         if attempt.get("_accepted") and collision_key(attempt) == collision_key(binding):
@@ -777,7 +854,8 @@ def context(model: dict, task_id: str) -> str:
         return ""
     c, state = model["contract"], evaluate(model)
     iface = c["interfaces"][binding["interface"]]
-    lines = [f"Assembly: {task_id}", f"Work: {binding['statement']}",
+    lines = [f"Assembly: {task_id}", f"Primary slot: {binding['slot']}",
+             f"Carrier: {binding['carrier']}", f"Work: {binding['statement']}",
              f"Interface: {binding['interface']} ({digest(iface)[:12]})",
              f"Consumer: {binding['consumer']}", "Obligations: " + ", ".join(binding["obligations"])]
     for assumption in binding["assumes"]:
@@ -1019,7 +1097,8 @@ def next_actions(model: dict, prs: list[dict] | None) -> list[dict]:
         affected = set().union(*(downstream(model, n) for n in binding["obligations"]))
         after = evaluate(model, set(state["closed"]) | set(binding["obligations"]))["closed"]
         newly_ready = readiness(model, after) - before - set(binding["obligations"])
-        row = {"task": tid, "action": action, "reasons": reasons,
+        row = {"task": tid, "action": action, "slot": binding["slot"], "carrier": binding["carrier"],
+               "reasons": reasons,
                "consumer": binding["consumer"], "assumes": binding["assumes"],
                "reuse_results": binding.get("reuse_results", []),
                "live_executions": live_executions,
@@ -1058,6 +1137,7 @@ def ready_obligations(model: dict, actions: list[dict]) -> list[dict]:
                 continue
             action = action_by_task[task_id]
             row = {"task": task_id, "action": action["action"],
+                   "slot": binding["slot"], "carrier": binding["carrier"],
                    "live_executions": action["live_executions"]}
             if action.get("reconciled_source_forks"):
                 row["reconciled_source_forks"] = action["reconciled_source_forks"]
@@ -1285,7 +1365,7 @@ def template(model: dict, tid: str) -> dict:
                        "interface": binding["interface"], "outcome": "positive", "kind": "analytic", "scope_level": "family",
                        "hypotheses": {"h1": "REMAINING EXACT HYPOTHESIS"},
                        "evidence": [{"ref": "FULL-PUBLISHED-COMMIT", "path": binding["write_paths"][0], "sha256": "SHA256"}]},
-            "application": {"id": "APPLICATION-ID", "result": "RESULT-ID", "obligation": binding["obligations"][0],
+            "application": {"id": "APPLICATION-ID", "result": "RESULT-ID", "obligation": binding["slot"],
                             "method": "direct", "consumer_location": model["contract"]["route"] + "#PARENT-STEP",
                             "hypothesis_map": {"h1": {"assumption": "REMAINING EXACT HYPOTHESIS"}},
                             "review": {"state": "proposed"}},
@@ -1322,6 +1402,8 @@ def main(argv=None) -> int:
         if args.command == "check":
             validate_queue(args.repo_root, model)
             data = {"valid": True, "obligations": len(model["obligations"]), "results": len(model["results"]),
+                    "active_results": len(model["intake"]["results"]),
+                    "active_result_limit": model["contract"]["registry_budget"]["max_active_results"],
                     "discharged": len(evaluate(model)["closed"]), "scientific_promotion": False}
         elif args.command == "render":
             text = overview(model)

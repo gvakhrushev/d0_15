@@ -65,13 +65,23 @@ class SynthesisTests(unittest.TestCase):
         self.assertEqual(synthesis.read(self.root, "unknown")["pieces"], [])
 
     def test_alias_is_display_only_and_keeps_original_records(self):
-        duplicate = {**self.result, "id": "duplicate", "navigation_alias_of": "r"}
+        duplicate = {**self.result, "id": "duplicate", "navigation_alias_of": "r",
+                     "interface_id": "different-interface", "scope_level": "different-scope",
+                     "hypotheses": {"extra": "retained"},
+                     "statement": "A separately scoped statement with the same outcome."}
         self.intake["results"].append(duplicate)
         self.piece["results"] = ["duplicate", "r"]
         self.save()
         data = synthesis.read(self.root)
         self.assertEqual(len(data["pieces"][0]["uses"]), 1)
         self.assertEqual(data["pieces"][0]["uses"][0]["also_indexed_as"], ["duplicate"])
+        alias = data["pieces"][0]["uses"][0]["alias_records"][0]
+        self.assertEqual(alias["interface_id"], "different-interface")
+        self.assertEqual(alias["scope_level"], "different-scope")
+        self.assertEqual(alias["hypotheses"], {"extra": "retained"})
+        rendered = synthesis.render(data)
+        self.assertIn("A separately scoped statement with the same outcome.", rendered)
+        self.assertIn("different-interface", rendered)
         self.assertEqual(len(json.loads((self.directory / "applications.json").read_text())["results"]), 2)
 
     def test_shared_evidence_does_not_automatically_merge_distinct_results(self):
@@ -104,6 +114,17 @@ class SynthesisTests(unittest.TestCase):
             with self.assertRaises(ValueError):
                 synthesis.validate_navigation(self.contract, self.intake)
 
+    def test_evidence_links_reject_malformed_refs_and_unsafe_paths(self):
+        for ref, path in [("main", "proof.md"), ("a" * 40, "../proof.md"),
+                          ("a" * 40, "/proof.md"), ("a" * 40, "a\\b.md")]:
+            self.result["evidence"] = [{"ref": ref, "path": path}]
+            with self.assertRaisesRegex(ValueError, "evidence pointer"):
+                synthesis.validate_navigation(self.contract, self.intake)
+        self.result["evidence"] = [{"ref": "a" * 40, "path": "proof.md"}]
+        self.save()
+        self.assertIn("/blob/" + "a" * 40 + "/proof.md",
+                      synthesis.render(synthesis.read(self.root)))
+
     def test_optional_navigation_adds_no_result_registration_requirement(self):
         self.contract.pop("synthesis")
         self.save()
@@ -115,6 +136,12 @@ class SynthesisTests(unittest.TestCase):
         self.assertIn("/blob/" + "a" * 40 + "/unfetched.md", output)
         self.assertIn("task_dispatch.py TASK-ID", output)
         self.assertIn("окончательная проверка", output)
+
+    def test_evidence_link_encodes_markdown_and_url_delimiters(self):
+        self.result["evidence"] = [{"ref": "a" * 40, "path": "proof (current)#1.md"}]
+        self.save()
+        output = synthesis.render(synthesis.read(self.root))
+        self.assertIn("proof%20%28current%29%231.md", output)
 
 
 if __name__ == "__main__":

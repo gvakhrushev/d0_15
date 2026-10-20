@@ -64,10 +64,17 @@ before dispatching dependent work. A scoped no-go must change the parent route,
 not trigger an unbounded new census. Keep independent work moving.
 
 Every queued gravity execution has one `Assembly: TASK-ID` line and a semantic
-binding in `02_REGISTRY/gr_assembly/contract.json`. CONTROL records the exact
-statement, interface, work key, start prerequisites, retained assumptions,
-consumer and completion premises. Different task names or carrier/interfaces
-do not authorize the same scientific work: the duplicate gate uses the
+binding in `02_REGISTRY/gr_assembly/contract.json`. Its brief also names one
+`Assembly-Slot: OBLIGATION-ID` and one `Assembly-Carrier: INTERFACE-ID`; the
+obligation is the primary slot and the interface points to its full
+carrier/action/source contract. The dispatcher rejects missing or mismatched
+slot/carrier labels before a new branch starts. A slot already accepted on the
+same carrier is not dispatched again. A different carrier requires a typed
+`distinct-from` edge in `carrier_distinctions` and its edge ID in the binding
+and brief; any transport still needs its own reviewed proof. CONTROL records
+the exact statement, interface, work key, start prerequisites, retained
+assumptions, consumer and completion premises. Different task names or
+carrier/interfaces do not authorize the same scientific work: the duplicate gate uses the
 scientific work key. A new key requires a genuinely different exact question and
 named consumer; a changed carrier alone does not establish that difference.
 Independent verification is an explicit mode. Logical dependencies constrain

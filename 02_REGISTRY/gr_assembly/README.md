@@ -110,6 +110,14 @@ independent conditional premises in parallel, with their assumptions retained.
 | Live execution | GitHub PRs resolved by the existing dispatcher |
 | Composition overview | Generated `VIEW.md`; never edit it by hand |
 
+In this schema, an obligation is the assembly slot; do not create a parallel
+`slots.json`. Add a result node only when it changes an open slot's route,
+readiness or a material substitution decision. New evidence should point to
+the existing research owner by commit/path/SHA. Copy source bytes only when
+they are otherwise unavailable at the pinned Git commit. Active result nodes
+are capped at 50; strengthen an existing node when new evidence supports the
+same scoped result.
+
 The frozen gravity graph preserves all 44 IDs and its complete source bytes.
 `migration` maps each original ID to a searchable `legacy:ID`; unresolved
 historical scope stays historical. Its old root pin, next-step prose and
@@ -128,14 +136,87 @@ independently accepted application records the exact substitution. Keep such a
 result on its own interface when it does not yet transport to
 `native-programme-v1`.
 
+## Current scientific gate
+
+The geometric side is no longer the immediate bottleneck: the pinned #334
+`brinkmann-j2-null-family` result has the exact unrestricted 40→3→1 reduction,
+the forced one-step null-link stagger, and a constructed two-tick J2 source
+with arbitrary time-dependent null energy and transverse discrete harmonics.
+That is a mathematical carrier/price family, not proof that the compulsory
+full D0 action selects it. The `lorentz-null-conjugacy-cost-blindness` and
+`full128-opposite-null-two-round-shannon-order-source` results narrow the
+memory question: scalar single-plaquette class Costs erase null amplitude,
+while an oriented retained-history readout can detect order, but literal
+`fullStep` admission and payment remain open.
+
+The shortest vacuum gate is now sharper than full off-shell price matching:
+after solving the actual preparation, clock, work, oldRIGHT and internal
+history Euler equations, check on the true zero-density shell that the selected
+source has one value and `DS = Σ w_i df_i` with nonzero site weights. In a
+regular chart, a locally bounded squared-ideal remainder then protects the exact
+nonlinear vacuum stationary set and the raw 16+24 linearized kernel even when
+the Book price has vertical history dependence away from the shell. The
+48-field sourced-root Hessian test remains a separate check for the nonvacuum
+response. Full Golden17 pointer Shannon and allowed Cost≥1 shape terms are
+hostile controls, not substitutes for the selected total action. Only after
+the selected source is shown to be local and linear on the five-point
+Brinkmann stratum should four harmonic profiles identify its stencil. The
+later recovery gate still needs a same-metric null system, full Ward transfer,
+boundary/seam flux balance and refinement. These are decision criteria for the
+existing route, not extra result nodes or permission to start a parallel task.
+
+The four-profile stencil argument is a conditional identification lemma, not a
+result about the compulsory action: after independently establishing linearity
+and five-site support, testing `1`, `x`, `y`, and `x²−y²` fixes the coefficients
+to a multiple of the central Laplacian; one nonzero matter source then fixes
+the remaining ratio. It says nothing about a nonlocal or nonlinear native
+operator. The assigned positive Julia model already composes `AB` and `BA`
+exactly when it uses distinct fresh flag banks; reusing a flag has a known
+identity-point defect. What remains open is whether the literal native
+`fullStep` admits and pays those two operations and realizes the same ordered
+readout. The next discriminating observation is one full old
+LEFT/RIGHT/reference experiment for `AB` and `BA`, with both orders, all
+outcomes, a boost control, and the observable composition defect between that
+physical execution and the assigned Julia model. The opposite-branch
+plaquette Euler equations must still be derived from the original action
+before calling this a nonlinear gravitational completion.
+
+Keep the connection normalization fixed when checking the proposed finite
+Ricci/Weyl matrix. In the pinned #334 plaquette convention,
+`K_link(u,x,y) = ½[H(u+h,x,y)−H(u+h,x−h,y)] = h K_u(u+h,x,y)`, where
+`K_u = (H−H_-)/(2h)` is the connection per unit length. The cubic harmonic
+`W=x³−3xy²` gives the proposed `h²` matrix from differences of `K_link`; taking
+differences of `K_u` directly gives that matrix divided by `h`. The
+common-center trace/tracefree test must therefore use the link-integrated
+variables, include the forced one-step shift in `u`, and retain the transverse
+plaquette staggering.
+
+The pinned local Poisson law also gives a finite-domain balance: the summed
+curvature trace is the boundary flux and equals `2 λ E(u) Area_h(D)` in the
+stated normalization. On a periodic transverse torus the summed Laplacian is
+zero, so a single-valued periodic profile cannot support nonzero mean source
+when `λ ≠ 0`. Global completion therefore needs an actual boundary flux, chart
+seam, or balancing source; the fixed local Dirichlet family alone does not
+supply one.
+
 ## Register or revise an execution
 
 CONTROL adds the semantic binding in `contract.json` while registering the
-ordinary task. Add exactly one line to its brief:
+ordinary task. Add these exact lines to its brief:
 
 ```text
 Assembly: `TASK-ID`
+Assembly-Slot: `constitutive`
+Assembly-Carrier: `native-programme-v1`
 ```
+
+`Assembly-Slot` names the primary obligation; `Assembly-Carrier` names the
+interface whose full carrier/action/source contract dispatch will print. These
+must match the registered binding. A different carrier requires an explicit
+`distinct-from` edge in `carrier_distinctions` and an
+`Assembly-Distinct-From: edge-id` line in its brief; it remains separate until
+a reviewed transport proves it can fill the slot. A slot already accepted on
+the same carrier is blocked before a new branch starts.
 
 The binding records its exact statement, interface version, scientific work
 key, named consumer, disjoint write paths, `start_requires`, retained `assumes`

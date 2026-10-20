@@ -10,6 +10,7 @@ from __future__ import annotations
 import json
 from pathlib import Path, PurePosixPath
 import re
+from urllib.parse import quote
 
 DIRECTORY = "02_REGISTRY/gr_assembly"
 REPOSITORY = "https://github.com/gvakhrushev/d0_15"
@@ -43,6 +44,34 @@ def strings(value: object, name: str) -> list[str]:
     return value
 
 
+def repository_path(value: object) -> bool:
+    if not isinstance(value, str) or not value or "\x00" in value or "\\" in value:
+        return False
+    pure = PurePosixPath(value)
+    return not pure.is_absolute() and ".." not in pure.parts and pure.as_posix() == value
+
+
+def safe_source(value: object) -> dict:
+    """Return a linkable evidence pointer without trusting registry path text."""
+    if not isinstance(value, dict):
+        return {}
+    ref, path = value.get("ref"), value.get("path")
+    if not isinstance(ref, str) or re.fullmatch(r"[0-9a-f]{40}", ref) is None:
+        return {}
+    if not repository_path(path):
+        return {}
+    return value
+
+
+def result_view(result: dict) -> dict:
+    evidence = next((safe_source(item) for item in result.get("evidence", [])
+                     if safe_source(item)), {})
+    return {key: result[key] for key in (
+        "id", "statement", "outcome", "scope_level", "proof_kind", "interface",
+        "interface_id", "carrier", "hypotheses"
+    ) if key in result} | {"source": evidence}
+
+
 def result_groups(results: dict) -> dict[str, list[str]]:
     """Explicit display aliases only; never infer equivalence from shared files."""
     grouped = {}
@@ -64,6 +93,14 @@ def validate_navigation(contract: dict, intake: dict) -> None:
     """Optional reading hints: no new scientific fields are required of results."""
     results = rows(intake.get("results"), "results")
     result_groups(results)
+    for result_id, result in results.items():
+        evidence = result.get("evidence", [])
+        require(isinstance(evidence, list), f"{result_id}: expected evidence array")
+        for source in evidence:
+            require(isinstance(source, dict), f"{result_id}: expected evidence object")
+            if "ref" in source or "path" in source:
+                require(safe_source(source) == source,
+                        f"{result_id}: unsafe or malformed evidence pointer")
     obligations = rows(contract.get("obligations"), "obligations")
     for name, piece in rows(contract.get("synthesis", []), "synthesis").items():
         for key in ("title", "contribution", "next_question"):
@@ -83,10 +120,7 @@ def validate_navigation(contract: dict, intake: dict) -> None:
             require(isinstance(ref, str) and re.fullmatch(r"[0-9a-f]{40}", ref) is not None,
                     f"{name}: reading needs a fixed full commit")
             path = text(reading.get("path"), name)
-            pure = PurePosixPath(path)
-            require(not pure.is_absolute() and ".." not in pure.parts and "\\" not in path
-                    and "\x00" not in path and pure.as_posix() == path,
-                    f"{name}: unsafe reading path")
+            require(repository_path(path), f"{name}: unsafe reading path")
 
 
 def read(root: Path, query: str = "") -> dict:
@@ -116,11 +150,9 @@ def read(root: Path, query: str = "") -> dict:
         uses = []
         for name in ids:
             result = results[name]
-            evidence = next(iter(result.get("evidence", [])), {})
-            uses.append({"id": name, "also_indexed_as": [x for x in groups[name] if x != name],
-                         "statement": result["statement"], "scope_level": result.get("scope_level"),
-                         "hypotheses": result.get("hypotheses", {}),
-                         "source": evidence})
+            aliases = [x for x in groups[name] if x != name]
+            uses.append({**result_view(result), "also_indexed_as": aliases,
+                         "alias_records": [result_view(results[x]) for x in aliases]})
         pieces.append({**piece, "uses": uses,
                        "consumer_statements": {x: obligations[x]["statement"] for x in piece["consumers"]},
                        "execution_tasks": [tid for tid, binding in contract.get("task_bindings", {}).items()
@@ -132,8 +164,8 @@ def read(root: Path, query: str = "") -> dict:
 
 
 def source_link(source: dict, label: str) -> str:
-    if source.get("ref") and source.get("path"):
-        return f"[{label}]({REPOSITORY}/blob/{source['ref']}/{source['path']})"
+    if safe_source(source):
+        return f"[{label}]({REPOSITORY}/blob/{source['ref']}/{quote(source['path'], safe='/-._~')})"
     return label
 
 
@@ -151,7 +183,14 @@ def render(data: dict) -> str:
                   "**Взять из уже опубликованного:**"]
         for result in piece["uses"]:
             link = source_link(result["source"], result["id"])
-            lines.append(f"- {link}")
+            lines.append(f"- {link} — {result['statement']}")
+            for alias in result.get("alias_records", []):
+                interface = alias.get("interface_id") or alias.get("interface") or "интерфейс не указан"
+                scope = alias.get("scope_level") or "область не указана"
+                lines.append(
+                    f"  - Отдельная индексная запись {source_link(alias['source'], alias['id'])}: "
+                    f"{alias['statement']} (интерфейс: `{interface}`; область: `{scope}`)."
+                )
         for reading in piece.get("readings", []):
             lines.append(f"- {source_link(reading, reading['label'])} — опубликованный исследовательский вход")
         if piece["execution_tasks"]:

@@ -98,7 +98,7 @@
     },
     {
       "id": "brinkmann-j2-null-family",
-      "owner": "registered native response research owner #334",
+      "owner": "Open scientific integrator PR #334; pinned evidence commit 9cd16820d020aed107b6db6215c44cfe3b7ea6f2",
       "statement": "On the declared six-plaquette Lorentz-star Brinkmann family, the unrestricted 16+24 geometric Euler rows reduce exactly to three rows; the two link rows force the one-u-step connection, leaving a transverse Poisson equation. Composing the owned corrected two-tick Golden AF×scene Book03 J2 null source gives the stated finite roots and smooth Einstein-scalar Brinkmann family.",
       "interface": "brinkmann-j2-v1",
       "outcome": "positive",
@@ -112,25 +112,22 @@
       },
       "evidence": [
         {
-          "ref": "8aa6cc4e961679ef13f2c32a8b04b4ba7b3196ba",
+          "ref": "9cd16820d020aed107b6db6215c44cfe3b7ea6f2",
           "path": "02_REGISTRY/research/A4D_ARBITRARY_BRINKMANN_ALL40_CARTAN_DISCRETE_EINSTEIN_2026_10_19.md",
-          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_brinkmann_j2_2026-10-19/theorem.md",
           "sha256": "8dbca8ff9a4567a2baf216357b5d3ffa2d217281ced4e5d0e535257db2f5e83e"
         },
         {
-          "ref": "8aa6cc4e961679ef13f2c32a8b04b4ba7b3196ba",
+          "ref": "9cd16820d020aed107b6db6215c44cfe3b7ea6f2",
           "path": "02_REGISTRY/research/sources/d0_arbitrary_brinkmann_all40_2026-10-19/check_all40_arbitrary_brinkmann.py",
-          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_brinkmann_j2_2026-10-19/check_all40_arbitrary_brinkmann.py",
           "sha256": "d3d0b1bc92c25a0963a4ba851d9d587d2191f0bbd8cd8cd0ab58b664852b7026"
         },
         {
-          "ref": "8aa6cc4e961679ef13f2c32a8b04b4ba7b3196ba",
+          "ref": "9cd16820d020aed107b6db6215c44cfe3b7ea6f2",
           "path": "02_REGISTRY/research/sources/d0_arbitrary_brinkmann_all40_2026-10-19/check_time_dependent_golden_source.py",
-          "snapshot": "02_REGISTRY/gr_assembly/sources/d0_brinkmann_j2_2026-10-19/check_time_dependent_golden_source.py",
           "sha256": "c89c690f54f11e166dd1a9a6315c80da5089659598f943aef03d3732f71a2d98"
         }
       ],
-      "reported_state": "Pinned evidence commit 8aa6cc4e961679ef13f2c32a8b04b4ba7b3196ba: symbolic all40 and finite Golden-source checker replays pass. This is a searchable result record only; no native-programme-v1 application is registered or accepted. Physical action selection, complete D0 history/clock/preparation equations, generic matter and raw #216 remain open."
+      "reported_state": "At pinned #334 evidence commit 9cd16820, independent replays pass: the original unrestricted 16+24 variation gives exactly three rows and one arbitrary-site discrete Poisson equation with the link stagger forced; arbitrary cubic and corrected quartic harmonics pass. The L=4/L=8 complete constructed AF×scene J2 checks have Poisson residuals 1.28e-15/5.87e-15 and full-source residuals 2.55e-15/2.35e-14. This is a mathematical constructed-price family only: compulsory full D0 selection, preparation/clock/controller and raw #216 remain open; no GR application is accepted."
     },
     {
       "id": "opposite-null-julia-order-memory",
@@ -1733,17 +1730,21 @@
     },
     {
       "id": "original-q8-spin-sheet-current-fullstep-boundary",
-      "owner": "Open scientific integrator PR #334 at pinned head 8456cd4ba1228752ac1de80baf97050c240fdaba",
-      "statement": "On the original 33/359/718 scene graph, the exact 327-label triangle inverse and all 960 admissibility checks reconstruct the Q8 spin sheet, while an SO/vector-exterior CAR16 readout kills the central -1 and the current GoldenCoherentMemory.fullStep signature has no Q8 or scene-path input. This identifies a missing typed physical bridge, not a no-go for another admitted completion.",
+      "owner": "Open scientific integrator PR #334; pinned evidence commit 9cd16820d020aed107b6db6215c44cfe3b7ea6f2",
+      "statement": "The original SO/vector-exterior CAR16 pointer kills the Q8 central -1, while the same Fock16 admits an exact parity-even real Cl(1,3)/Spin(1,3)/Q8 representation, invariant indefinite observer form and positive future-causal quadratic current. A conditional relative-path Golden interferometer distinguishes the center only if controlled Q8 is admitted. Separately, the periodic 4-Role torus has 16 flat global Spin boundary sectors invisible to local SO/Spin plaquettes; a declared twisted kinetic benchmark changes its CAR16 zero modes but is not the selected native Hodge-CAR Dirac operator. Literal fullStep still lacks Q8/scene input; paid actuation, selected spin action/stress and Ward remain open.",
       "interface": "q8-spin-sheet-native-bridge-v1",
       "outcome": "positive",
       "kind": "exact-finite",
       "scope_level": "finite",
       "hypotheses": {
-        "original_scene": "The carrier is the original K(9,11,13) graph with 33 vertices, 359 undirected edges, 718 directed edges and 1287 filled ABC triangles.",
-        "so_detector": "The compared CAR16 detector factors through the SO/vector-exterior representation, under which the Q8 central -1 acts as identity.",
-        "current_fullStep": "The current Lean fullStep takes only real a,p inputs and returns a Matrix (Fin 4) (Fin 4) ℝ; its signature does not include UQuat, a scene face or a Spin representation.",
-        "scope": "The signature audit does not exclude a different physically admitted and paid extension, and it does not derive a 4D spin structure."
+        "local_scene": "The finite memory input is the original K(9,11,13) graph with 33 vertices, 359 undirected edges, 718 directed edges and 1287 filled ABC triangles.",
+        "exterior_blindness": "The original SO/vector-exterior Golden marker is blind to the central -1; this statement is limited to that representation.",
+        "same_carrier_spin": "The exact real Clifford/Spin representation is constructed from the original four CAR creation/annihilation modes on the same Fock16 carrier and preserves Fock parity; it is a mathematical representation, not a selected action.",
+        "global_role_spin": "The periodic Fin(2)^4 Role regulator has 16 flat central Spin winding sectors; the benchmark distinguishes their global CAR16 kinetic spectra, but it is not the selected native hodgeCarDirac/stress action.",
+        "observer_current": "The native CAR16 Gamma0 observer bilinear is indefinite but Spin invariant; J0 is positive and the quadratic current is future-causal for real spinors. This does not construct the selected completely positive G0 instrument or sourced Dirac stress.",
+        "conditional_interferometer": "The complete Golden relative-sign probabilities assume a controlled Q8 center on one retained history branch; that control is not in literal fullStep.",
+        "current_fullStep": "The current GoldenCoherentMemory.fullStep signature has only real a,p inputs and a real Fin4 matrix output, with no UQuat, scene face or Spin representation input.",
+        "scope": "No paid Q8 actuation, boost implementation, full native spin matter source, global Spin-boundary selection, full H+J+R selection, refinement or GR closure follows."
       },
       "evidence": [
         {
@@ -1765,9 +1766,49 @@
           "ref": "8456cd4ba1228752ac1de80baf97050c240fdaba",
           "path": "03_FORMALIZATION/D0/Representation/GoldenCoherentMemory.lean",
           "sha256": "6ea993e22c8b7d0b8a93b9537d51893cb4aff45af858d82ec7f9005ead96e2d7"
+        },
+        {
+          "ref": "3f831683c301f72f25b11bb4de903c590af71d83",
+          "path": "02_REGISTRY/research/A4D_NATIVE_CAR16_REAL_SPIN13_Q8_GOLDEN_COHERENT_SHEET_BRIDGE_2026_10_20.md",
+          "sha256": "12ff87857a75832d03fe701a4f68254b0dd496c629c88bf0227e10180cae10ee"
+        },
+        {
+          "ref": "3f831683c301f72f25b11bb4de903c590af71d83",
+          "path": "02_REGISTRY/research/sources/d0_native_spin_q8_car16_2026-10-20/check_original_car16_clifford_spin_golden.py",
+          "sha256": "d34bf9aaa95998f64ada9b2e5b3f45ecb3740a6254aef0e0d6bfe7759437b1f0"
+        },
+        {
+          "ref": "ebd436446985ead546d98f32eb69b5bd25e1838c",
+          "path": "02_REGISTRY/research/A4D_NATIVE_CAR16_REAL_SPIN13_Q8_GOLDEN_COHERENT_SHEET_BRIDGE_2026_10_20.md",
+          "sha256": "59ee0830258aba164b7ee110240ac82ce186d75ada178de399fc35c10773c3f2"
+        },
+        {
+          "ref": "ebd436446985ead546d98f32eb69b5bd25e1838c",
+          "path": "02_REGISTRY/research/sources/d0_native_spin_q8_car16_2026-10-20/check_original_car16_clifford_spin_golden.py",
+          "sha256": "41dc0b5b087bc6313eb6c39eac21d1722727280edc9ce25260fb3d327ffa503b"
+        },
+        {
+          "ref": "ebd436446985ead546d98f32eb69b5bd25e1838c",
+          "path": "02_REGISTRY/research/sources/d0_native_spin_q8_car16_2026-10-20/check_original_role4_global_spin_twists.py",
+          "sha256": "42d03c7976bfad30e261b1a1cf4ddb14019562c0cfc35a1af782e3d4d33f7fbb"
+        },
+        {
+          "ref": "9cd16820d020aed107b6db6215c44cfe3b7ea6f2",
+          "path": "02_REGISTRY/research/A4D_NATIVE_CAR16_REAL_SPIN13_Q8_GOLDEN_COHERENT_SHEET_BRIDGE_2026_10_20.md",
+          "sha256": "59ee0830258aba164b7ee110240ac82ce186d75ada178de399fc35c10773c3f2"
+        },
+        {
+          "ref": "9cd16820d020aed107b6db6215c44cfe3b7ea6f2",
+          "path": "02_REGISTRY/research/sources/d0_native_spin_q8_car16_2026-10-20/check_original_car16_clifford_spin_golden.py",
+          "sha256": "41dc0b5b087bc6313eb6c39eac21d1722727280edc9ce25260fb3d327ffa503b"
+        },
+        {
+          "ref": "9cd16820d020aed107b6db6215c44cfe3b7ea6f2",
+          "path": "02_REGISTRY/research/sources/d0_native_spin_q8_car16_2026-10-20/check_original_role4_global_spin_twists.py",
+          "sha256": "42d03c7976bfad30e261b1a1cf4ddb14019562c0cfc35a1af782e3d4d33f7fbb"
         }
       ],
-      "reported_state": "Result-only: the Q8 checker was rerun and passed its 327-triangle inverse, rank-327 and 960 parity controls. The exact type boundary is pinned to fullStep at #334 head 8456cd4ba1228752ac1de80baf97050c240fdaba. No application to constitutive, native_sector or positive_gr is accepted; GR_closed=false."
+      "reported_state": "At pinned #334 9cd16820, the exact same-carrier Spin/Q8 and CAR-current checker passes, and the independent Role-twist checker verifies all 16 global sectors, identical local plaquettes and the benchmark 16-to-0 periodic/twisted kernel change. The scope firewall remains: this benchmark is not full native Dirac dynamics, and physical Q8/global-spin admission, paid action, stress and Ward are open. Result-only; GR_closed=false."
     },
     {
       "id": "q8-future-mdl-conditional-327-archive-bits",
@@ -1805,7 +1846,114 @@
           "sha256": "8f23e47a09092947dfa6cbeb848d920ff841896730fa1611214906b4b98e3ed3"
         }
       ],
-      "reported_state": "Result-only: both independent finite Node checkers were rerun and passed; the Lean build passed at the pinned #334 head. The 327-bit memory bound is conditional on native future Spin-test admission. No application to constitutive, native_sector or positive_gr is accepted; physical source selection and GR_closed remain open."
+      "reported_state": "Result-only: both independent finite Node checkers were rerun and passed; the Lean build passed at the pinned #334 head cc64f5aae20809cf4e6b4ba2506ff749a1efffa3. The 327-bit memory bound is conditional on native future Spin-test admission. No application to constitutive, native_sector or positive_gr is accepted; physical source selection and GR_closed remain open."
+    },
+    {
+      "id": "original-golden17-shannon-vertical-no-descent",
+      "owner": "Open scientific integrator PR #334; pinned evidence commit 9cd16820d020aed107b6db6215c44cfe3b7ea6f2",
+      "statement": "On the original L=2 Role carrier, the single-link J23 orbit keeps all 16 star densities zero while the complete 17-outcome, 96-face Golden pointer Shannon changes, with H96″(0)=-0.0005338570392207947 and H96'(0.15)=-0.00007982869969225259; it cannot factor through f. On a second original shared-link direction, Palatini site densities are nonzero but the Shannon even difference is zero while the signed J23 marker recovers the orientation-odd source. Thus this pointer alone both adds unsupported vertical information and loses a needed signed first source. A distinct full 8440-history Book cost can have an ideal-square remainder, but neither price is selected as the compulsory full D0 action.",
+      "interface": "golden17-vertical-source-descent-v1",
+      "outcome": "negative",
+      "kind": "exact-finite",
+      "scope_level": "finite",
+      "hypotheses": {
+        "original_role_carrier": "The orbit uses the original L=2 Role lattice, 16 sites, 64 shared proper-Lorentz links and 96 based six-star faces.",
+        "single_link_variation": "Only U_(0,0)(theta)=exp(theta J23) varies; the original Hodge/star densities f_x(theta) are exactly zero for all 16 sites and all theta.",
+        "pointer_candidate": "H96 is the complete original positive Golden17 pointer Shannon in log_phi units with both fresh flags, every Golden/Bell outcome and Bell failure retained; no physical selection is assumed.",
+        "odd_source_control": "A second original Role shared-link direction has nonzero Palatini site-density first source; the even Shannon difference is zero there, while the signed J23 marker reproduces the orientation-odd Lie coordinate.",
+        "scope": "The result refutes this pointer as a sole single-valued F(f) geometric source on the stated exact finite carrier. It does not rule out the compulsory complete price or separately stationary/canceling terms; full physical selection, H+J+R, Ward, refinement and GR remain open."
+      },
+      "evidence": [
+        {
+          "ref": "9cd16820d020aed107b6db6215c44cfe3b7ea6f2",
+          "path": "02_REGISTRY/research/A4D_ORIGINAL_4D_STAR_FLAT_GOLDEN17_VERTICAL_MEMORY_OBSTRUCTION_AND_SOURCE_GATE_2026_10_20.md",
+          "sha256": "ee6cb4f70b6b90b075c2ea62c5ae7c1803992583771255324725d43c959153bd"
+        },
+        {
+          "ref": "9cd16820d020aed107b6db6215c44cfe3b7ea6f2",
+          "path": "02_REGISTRY/research/sources/d0_native_vertical_source_2026-10-20/check_original_L2_star_flat_golden17_shannon_vertical.mjs",
+          "sha256": "5c3ef23b3809240e6782d184fe5054a119c7f3dbe73487347b1e61f6ad1aefc0"
+        }
+      ],
+      "reported_state": "At pinned #334 9cd16820, the original checker passes: max |f_i|=0 on the J23 orbit, complete-17 Shannon change=-5.996565457053876e-6, exact H96″(0)=-5.338570392207947e-4, and vertical first source at 0.15=-7.982869969225259e-5. Its second-direction control gives nonzero Palatini density and the exact signed-marker derivative while the Shannon even difference stays zero. This is a source insufficiency result for this candidate only; a distinct full 8440-history Book action has a squared-ideal remainder. No physical no-go or GR application is accepted."
+    },
+    {
+      "id": "book-second-ideal-vertical-hessian-source-test",
+      "owner": "Open scientific integrator PR #334; pinned evidence commit 9cd16820d020aed107b6db6215c44cfe3b7ea6f2",
+      "statement": "For the original finite Role/Book carrier, if the genuinely internally reduced action has S=c+Σ_i w_i f_i+R with nonzero site weights and R in the squared ideal generated by the original Palatini site densities, exact radial homogeneity gives the same nonlinear zero-density vacuum stationary set and the same raw 16+24 linearized Euler kernel as the weighted Palatini action; scale-neutral source response also agrees. A conditional conformal-matter extension needs an actual sitewise Weyl Ward. The full 8440-history fixture realizes nonfactorable Golden17 vertical dependence only in the squared ideal, while the 48-field/33-vertical fixture validates the sourced-root Hessian criterion. Neither construction proves the compulsory full D0 action belongs to this class.",
+      "interface": "book-second-ideal-source-jet-v1",
+      "outcome": "positive",
+      "kind": "analytic",
+      "scope_level": "finite",
+      "hypotheses": {
+        "physical_first_jet": "The actual internally reduced selected action must have constant value and DS|f=0=Σ_i w_i df_i with nonzero site-independent weights on the actual admissible f=0 shell; genuine internal history, preparation, clock, work and oldRIGHT Euler equations must already be solved.",
+        "squared_ideal_regularization": "For nonlinear vacuum stationary-set and kernel transfer, the residual must admit a locally C1 bounded-coefficient decomposition R=Σ_ij f_i f_j H_ij in the actual original field chart; a conditional matter extension additionally requires the stated sitewise conformal/Weyl Ward.",
+        "full_book_fixture": "The original K(9,11,13) graph has 33 vertices, 718 directed edges, 8440 retained based histories and the tested original positive Golden17 vertical mark; its ActionProtocol-compatible cost is a mathematical example, not compulsory full G0/Book03 H+J+R.",
+        "sourced_root_fixture": "The separate 48-field/33-vertical replay tests the true internal Schur Hessian at a common t=0 sourced root; it is not the full 640-dimensional Role source.",
+        "hostile_control": "The raw Golden17 Shannon and a permitted Cost>=1 shape completion each violate the relevant vertical source condition, so positive records or ActionProtocol alone do not force the ideal-squared property.",
+        "physical_scope": "Full selected native first source, physical admission, full CAR/Spin stress, preparation/clock/work, all Role equations, Ward transfer, refinement and raw #216 remain open."
+      },
+      "evidence": [
+        {
+          "ref": "9cd16820d020aed107b6db6215c44cfe3b7ea6f2",
+          "path": "02_REGISTRY/research/A4D_VACUUM_EINSTEIN_SQUARED_IDEAL_UNIVERSALITY_WITH_VERTICAL_HISTORY_2026_10_20.md",
+          "sha256": "c17dc6413456f9a406dc667f7d5755c232c8a0e2df80cebc56404e8f2db8c20b"
+        },
+        {
+          "ref": "9cd16820d020aed107b6db6215c44cfe3b7ea6f2",
+          "path": "02_REGISTRY/research/A4D_BOOK_SECOND_IDEAL_EINSTEIN_CAR_GRAVITON_CONGRUENCE_2026_10_20.md",
+          "sha256": "23f1e93b8a8402069e4bc0f95833f73e3d09f6f49d8eecb433cac45fb1ef184b"
+        },
+        {
+          "ref": "9cd16820d020aed107b6db6215c44cfe3b7ea6f2",
+          "path": "02_REGISTRY/research/sources/d0_native_gr_universality_2026-10-20/check_book_second_ideal_archive_graviton_congruence.mjs",
+          "sha256": "c4429406ff4b71fd24044e86e71f3832eaee838c1a83341562202dc9af1179da"
+        },
+        {
+          "ref": "9cd16820d020aed107b6db6215c44cfe3b7ea6f2",
+          "path": "02_REGISTRY/research/sources/d0_native_gr_universality_2026-10-20/check_original_718_book_vertical_ideal_square.mjs",
+          "sha256": "42dbd494d43c152d64f32a0d1a45232a39b1d96ffa9fbb671cd2ae8bf8a20743"
+        }
+      ],
+      "reported_state": "At pinned #334 9cd16820, the analytic squared-ideal theorem supplies exact same vacuum stationary set, raw linearized kernel and scale-neutral linear response, conditional on the true first jet and regular residual. Both independent finite checkers pass: the 48x48 congruence error is 8.67e-19 and 33-vertical Hessian error 1.04e-17; the full 8440-history fixture has Cost>=1, nonfactorable off-shell Golden17 dependence and an exact squared-ideal remainder. A permitted hostile completion still has nonzero vertical source. No compulsory physical action/root is identified; GR_closed=false."
+    },
+    {
+      "id": "lorentz-null-conjugacy-cost-blindness",
+      "owner": "Open scientific integrator PR #334; pinned evidence commit 9cd16820d020aed107b6db6215c44cfe3b7ea6f2",
+      "statement": "Every continuous proper-Lorentz-conjugacy-invariant scalar Cost of one original null plaquette is constant on each full finite null 2-plane; at a smooth saturated positive minimum its Hessian vanishes on all six Lorentz generators. Independently, a C1 conjugacy-invariant scalar of one bare link has zero first J23 source at the identity, even at an interior Cost. A covariantly carried coframe/face bivector gives an algebraic J23-sensitive comparator and the retained Golden17 pretrace marker sees null amplitude, but neither comparator is selected by the compulsory physical action.",
+      "interface": "lorentz-null-class-cost-boundary-v1",
+      "outcome": "negative",
+      "kind": "analytic",
+      "scope_level": "family",
+      "hypotheses": {
+        "null_class_cost": "The plaquette result assumes a continuous scalar depending only on one plaquette conjugacy class; the Hessian conclusion additionally assumes a C2 local minimum at C(I)=1 with positive-semidefinite Hessian.",
+        "bare_link": "The zero-first-jet result assumes a C1 scalar of one bare Lorentz link invariant under all proper orthochronous conjugations.",
+        "oriented_escape": "The bivector pairing is covariant algebraic data from a coframe/face reference; it is not a selected physical cost or paid record map.",
+        "scope": "Excludes only scalar unmarked single-plaquette/bare-link class-price source channels. It does not exclude full Book history, coframe/observer dependence, ordered memory, the compulsory full action, matter or GR closure."
+      },
+      "evidence": [
+        {
+          "ref": "9cd16820d020aed107b6db6215c44cfe3b7ea6f2",
+          "path": "02_REGISTRY/research/A4D_LORENTZ_NULL_COST_CONJUGACY_AND_FIBER_FIRST_JET_2026_10_20.md",
+          "sha256": "cb1aeb7fac2979a4bde59200cf15ee10dfd6eb991587ee288e1af121b8bc0065"
+        },
+        {
+          "ref": "9cd16820d020aed107b6db6215c44cfe3b7ea6f2",
+          "path": "02_REGISTRY/research/sources/d0_native_gr_universality_2026-10-20/check_original_lorentz_null_cost_conjugacy_no_go.mjs",
+          "sha256": "df7eafa0ecc9fd1f7963e5c0e70924529353d6512de279806ec09d06b1c3a357"
+        },
+        {
+          "ref": "9cd16820d020aed107b6db6215c44cfe3b7ea6f2",
+          "path": "02_REGISTRY/research/A4D_ACTION_QUANTUM_FLOOR_CP_SOURCE_GATE_AND_FULL128_INFO_ESCAPE_2026_10_20.md",
+          "sha256": "2e7ffcd3ee7aea211b195737a7697a4e648a8989794eb08137a6f0c5f44c3e4c"
+        },
+        {
+          "ref": "9cd16820d020aed107b6db6215c44cfe3b7ea6f2",
+          "path": "02_REGISTRY/research/sources/d0_book_cost_floor_2026-10-20/check_bare_lorentz_class_source.mjs",
+          "sha256": "cde7c3d949829ace9446fa5470438d4d8f6285482365001cd70ac3748fd4a075"
+        }
+      ],
+      "reported_state": "At pinned #334 9cd16820, both source checkers pass. The null-plane checker verifies proper-Lorentz basis dimension six, Ad scaling, trace-power blindness, the conditional PSD Ad-invariant Hessian result, a legal quartic class-Cost control and a positive Golden17 marker. The bare-link checker verifies P J23 P^-1=-J23 and the normalized coframe-bivector comparator. This excludes those scalar channels only; full physical record/action selection is open, and no GR application is accepted."
     }
   ],
   "applications": [
