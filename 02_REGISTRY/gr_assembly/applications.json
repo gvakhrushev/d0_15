@@ -962,7 +962,7 @@
           "sha256": "aff52c0ad7c570bc7ce24cc02145fefb34757401b233f20f61a4d729170c2904"
         }
       ],
-      "reported_state": "Pinned to commit 4b78c41a06da0353a0247b9da4646baf80ed9929 in the current #334 history; live PR head is 01b047a188a4b41590949cea096d68e4e922dac4. The root-frame mod-prime replay passes at three primes. The 4D Role action and paid nonroot reference remain unselected."
+      "reported_state": "Source and checker are pinned to #334 commit 4b78c41a06da0353a0247b9da4646baf80ed9929. The root-frame mod-prime replay passes at three primes. The 4D Role action and paid nonroot reference remain unselected."
     },
     {
       "id": "original-scene-234-book-lorentz-source-atlas-2648",
@@ -991,7 +991,7 @@
           "sha256": "e6f59a153743b3964414fe5976648b7eeabb357e303ddf33f6d5434964fd94b4"
         }
       ],
-      "reported_state": "Pinned to commit 4b78c41a06da0353a0247b9da4646baf80ed9929 in the current #334 history; live PR head is 01b047a188a4b41590949cea096d68e4e922dac4. The finite checker passes with numerical inverse residuals near machine precision; its output explicitly says GR_closed=false and lists the unproved physical inputs."
+      "reported_state": "Source and checker are pinned to #334 commit 4b78c41a06da0353a0247b9da4646baf80ed9929. The finite checker passes with numerical inverse residuals near machine precision; its output explicitly says GR_closed=false and lists the unproved physical inputs."
     },
     {
       "id": "original-stage-resolved-book-selector-143484",
@@ -1021,7 +1021,7 @@
           "sha256": "0a8e3046511c776fd203ddfc77d4bbe0b84f7a8e4de1de04269980d1e338f2d9"
         }
       ],
-      "reported_state": "The analytic inverse and its common-verifier hypothesis are pinned to prior #334 commit 518ee207d790fdf9c13692a784ba3255625fd001, ancestor of live head 01b047a188a4b41590949cea096d68e4e922dac4. The checker replay passes; actual physical common-filter selection, complete H+J+R admission, and GR remain open."
+      "reported_state": "The analytic inverse and its common-verifier hypothesis are pinned to prior #334 commit 518ee207d790fdf9c13692a784ba3255625fd001. The checker replay passes; actual physical common-filter selection, complete H+J+R admission, and GR remain open."
     },
     {
       "id": "original-stage-depth-specific-verifier-source-nonidentifiability",
@@ -1074,7 +1074,7 @@
           "sha256": "c9e89ac5e0773d99636ec563c4026476639ca73ab5e71622f9148ee1a2b3d54b"
         }
       ],
-      "reported_state": "Pinned to the current #334 head 01b047a188a4b41590949cea096d68e4e922dac4. Current-task checker replay passes. Its output preserves the actual-G0, native 4D source, and GR closure boundaries."
+      "reported_state": "The checker source is pinned to #334 commit 01b047a188a4b41590949cea096d68e4e922dac4. It was independently rerun on live #334 head 0e1849bd7bf6a87e9731801206fd5ccd1041bb63 and passes. Its output preserves the actual-G0, native 4D source, and GR closure boundaries."
     },
     {
       "id": "original-role40-six-root-triangle-star-pullback",
