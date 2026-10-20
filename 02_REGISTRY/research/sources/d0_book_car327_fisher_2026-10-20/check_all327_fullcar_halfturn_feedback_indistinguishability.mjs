@@ -393,6 +393,78 @@ const fisherOneFace=qq0.reduce((z,v,i)=>{
 assert(Math.abs(fisherOneFace-4*kGolden)<5e-12,
  "native complete 17 face mark Fisher per J23 Lie equals original 4k");
 const minConditionalFaceFisher=4*kGolden*minBookFaceWeight;
+
+// IMPORTANT: the two true ORIGINAL 327-metrics are BOTH definite on
+// cycles but they are NOT necessarily a multiple of one another:
+//  Q_Book(a)=2 sum μ_e(a−grad b)^2 (all-walk current cost curvature),
+//  I_Golden17(a)=4k sum_triangle w_t (delta a)^2 (all positive faces).
+// One must not identify this difference with an Einstein coupling.
+// This whole-original bridge is a canonical pair of source forms
+// related by a calculable positive operator on the same 327-dimensional
+// cycle quotient, with no unsupported universal proportionality.
+const muUnd=edges.map(([i,j])=>Perron[i]*Perron[j]/rho);
+const lap=Array.from({length:N},()=>Array(N).fill(0));
+for(let e=0;e<edges.length;e++){
+ const [i,j]=edges[e],w=muUnd[e];
+ lap[i][i]+=w;lap[j][j]+=w;lap[i][j]-=w;lap[j][i]-=w;
+}
+function solveGauge(a){
+ const div=Array(N).fill(0);
+ for(let e=0;e<edges.length;e++){
+  const [i,j]=edges[e],v=muUnd[e]*a[e];
+  div[i]+=v;div[j]-=v;
+ }
+ const n=N-1,M=Array.from({length:n},(_,i)=>
+   [...lap[i].slice(0,n),div[i]]);
+ for(let k=0;k<n;k++){
+  let idx=k;for(let i=k+1;i<n;i++)
+   if(Math.abs(M[i][k])>Math.abs(M[idx][k]))idx=i;
+  assert(Math.abs(M[idx][k])>1e-12,
+    "all original 33 native vertex Laplacian roots not solved");
+  [M[idx],M[k]]=[M[k],M[idx]];
+  const z=M[k][k];for(let j=k;j<=n;j++)M[k][j]/=z;
+  for(let i=k+1;i<n;i++){
+   const g=M[i][k];
+   for(let j=k;j<=n;j++)M[i][j]-=g*M[k][j];
+  }
+ }
+ const b=Array(N).fill(0);
+ for(let i=n-1;i>=0;i--){
+  let z=M[i][n];
+  for(let j=i+1;j<n;j++)z-=M[i][j]*b[j];
+  b[i]=z;
+ }
+ return b;
+}
+function bookVariance(a){
+ const b=solveGauge(a);
+ return 2*edges.reduce((s,[i,j],e)=>{
+  const v=a[e]-b[i]+b[j];
+  return s+muUnd[e]*v*v;
+ },0);
+}
+function fullGoldenFaceFisher(a){
+ return 4*kGolden*faceData.reduce((s,face)=>{
+  const flux=face.orig.reduce((z,[e,sgn])=>z+sgn*a[e],0);
+  return s+(face.w/totalW)*flux*flux;
+ },0);
+}
+const originalCP=edges.map(([i,j])=>{
+ const a=zone(i),b=zone(j);
+ return (a===0&&b===1)||(a===1&&b===2)?1:-1;
+});
+const originalOneEdge=edges.map((_,e)=>+(e===0));
+const independentSourceRatios=[
+ ["CP",originalCP],["singleRealEdge",originalOneEdge]
+].map(([name,a])=>{
+ const Q=bookVariance(a),Gf=fullGoldenFaceFisher(a);
+ assert(Q>0&&Gf>0,"genuine native cycle modes not measured by Golden/Book");
+ return {name,actualBookCycleVariance:Q,fullGolden17TriangleFisher:Gf,
+          ratioOfTwoDifferentPhysicallyTypedMetrics:Gf/Q};
+});
+assert(Math.abs(independentSourceRatios[0].ratioOfTwoDifferentPhysicallyTypedMetrics-
+                independentSourceRatios[1].ratioOfTwoDifferentPhysicallyTypedMetrics)
+       >1e-6,"full native 327 Book and Golden face metrics should not be blindly identified");
 console.log(JSON.stringify({
  result:"PASS_GLOBAL_ALL327_FULLCAR16_F_SQUARING_Z2_INDISTINGUISHABILITY",
  actualNativeCarrier:{sceneVertices:33,fullOriginalDirectedEdges:718,
@@ -418,6 +490,8 @@ console.log(JSON.stringify({
     maximumPositiveNonuniformBookFaceWeight:maxBookFaceWeight,
     positiveFisherWeightFloor:minConditionalFaceFisher,
     pureOriginalGaugeFisherSourceError:maxGradientFaceError,
+    nativeBookVsGoldenTwoDistinctMetrics:independentSourceRatios,
+
     movingBookWeightsCannotRemoveConditionalFisherIfPositive:true},
 
    nearFlatSignedLorentzLinearCoefficient:sourceExpected,
