@@ -2181,7 +2181,14 @@
         }
       },
       "review": {
-        "state": "proposed"
+        "state": "accepted",
+        "by": "Codex CONTROL independent reviewer (native_selection_synthesis, 2026-10-20)",
+        "digest": "72b0df30c89b39c29a5053bd0f1b27231f61f76ab82f72ebf6356f28cf42ede2",
+        "decision": {
+          "ref": "4aa19a667387b3250d310d00c511bd1dd315bbb0",
+          "path": "02_REGISTRY/gr_assembly/reviews/lean-verification-core-to-foundation.md",
+          "sha256": "0f2d369c951408ae0c692447d09eccf172f42d1a83365ad125cc091de6a6b9a5"
+        }
       }
     },
     {
@@ -2205,7 +2212,14 @@
         }
       },
       "review": {
-        "state": "proposed"
+        "state": "accepted",
+        "by": "Codex CONTROL independent reviewer (native_selection_synthesis, 2026-10-20)",
+        "digest": "0230078042b9861d8a3599d32ceea20452eba9e945260507c4c0dd325d46fd2a",
+        "decision": {
+          "ref": "4aa19a667387b3250d310d00c511bd1dd315bbb0",
+          "path": "02_REGISTRY/gr_assembly/reviews/lean-operational-transfer-to-theory-transfer.md",
+          "sha256": "2b5ee6947b223eda12fbaa1ebd10328ce68429ea4b055e5a4ca9346ff97ca250"
+        }
       }
     }
   ],
