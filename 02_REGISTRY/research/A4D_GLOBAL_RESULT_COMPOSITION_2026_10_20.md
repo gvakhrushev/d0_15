@@ -483,3 +483,27 @@ Thus the cumulative result is strategically sharper than a certificate inventory
 ### 8.5. Exact arithmetic provenance
 
 The source document's originally exploratory Jones-UNNORMALIZED 34/37 minor residues were subsequently corrected to properly normalized physical-Born residues. Actual normalized mod101/mod1009/mod4001 34×34 determinants are 52/746/2021 and 37×37 are 33/250/794. These equal the historical exploratory residues (4/684/1449 for rank34; 98/676/3208 for rank37) multiplied by 2^(-34) and 2^(-37), respectively, modulo each prime. This small modular conversion was independently checked in exact integer arithmetic in the present integration. The original expensive exact full128 34×34 source/minor and all40 Kraus Ward owner was CONSUMED, not rerun. Equations (14)–(18) follow by elementary exact differentiation and invertible linear algebra on that owner. This is research-level composition with existing scientific terminals unchanged; it is not CI promotion or physical GR closure.
+
+
+### 8.6. STRICT NATIVE-RECORD F-DIVERGENCE NO-GO on the entire 34-dimensional physical local chart
+
+This is a NEW mathematically exact consequence of the original same-Jones all128 two-tick 34×34 minor, stronger than simply noting that a Fisher metric is nonnegative. It directly separates the successful full-native geometry READOUT from the non-selected proposed INFORMATION ACTION.
+
+Take the same 34 selected genuine nonnegative analytic history probabilities q_i(x) and all OTHER 128² native records as ONE 35th complete category r(x)=1-sum_(i=1)^34 q_i(x). At the certified base x0, every q_i0>0 by §8.1. Also r0>0: if r0=0, smooth nonnegativity implies Dr(x0)=0, and hence sum_i Dq_i(x0)=0, a nonzero left null vector of invertible J=Dq. Contradiction. Therefore this is a FULLY STRICT 35-category probability distribution on a real neighborhood, with no dropped or postselected original outcome (only the residual labels are grouped).
+
+For ANY C² convex f with f(1)=0 and f''(1)>0, define the standard classical f-divergence from the actual native complete 35-category distribution to its baseline:
+
+    D_f(x||x0) = sum_(i=1)^34 q_i0 f(q_i(x)/q_i0)
+                + r0 f(r(x)/r0).                            (20)
+
+Its first differential vanishes automatically at x0 because total probability is one, regardless of f'(1). Its EXACT Hessian is
+
+    D² D_f|x0 = f''(1) J^T [diag(1/q_i0)+(1/r0) 11^T] J,   (21)
+
+which is STRICTLY POSITIVE DEFINITE on ALL 34 metric10+Lorentz24 coordinates. This is not a numerical eigenvalue approximation: invertible REAL J and strict native q_i0,r0 positivity prove it for every nonzero field tangent. The count is part of the same positive Born tape and does not add any new measurement or comparator.
+
+**Scoped physical kill:** no standalone smooth classical proper f-divergence between a complete native field record and the SAME fixed reference record can have the indefinite Palatini Hessian on any common regular chart where the original geometric target actually has mixed signs. No fitted rescaling of f by one strictly positive native unit changes its signature; a negative multiple is negative definite instead, not mixed. This excludes an enormous class of tempting normalized record-distance/relative-entropy actions without excluding the actual ORIGINAL algebra-valued Book03 H+J+R, signed ordered two-history comparisons, moving observers, or SAME-ACTION stationary elimination of independently derived nonconvex/saddle terms. It also does NOT claim the old Palatini Hessian's specific inertia is already certified on the identical L4 Jones chart; that same-chart signed target test must retain the original momentum/gauge conventions.
+
+A sharp operational distinction follows: the 35-category native full readout can be a mathematically COMPLETE sensor AND nevertheless every proper smooth positive-distance action built from it can be dynamically WRONG for Lorentz gravity. Observability, classically positive operational verification cost, actual Book03 price selection and the signed variational equation are four distinct structures. The project should stop searching positive scalar distances for the remaining Lorentz-action law on this carrier. The next SAME physical complete-price source and FIELD-WRITER gates are precisely (17)–(19), with the original noncommutative retained-memory and internal saddle source preserved.
+
+Proof uses exact differentiability and one fullrank PIN34 minor from the inherited native owner. No large full128 symbolic suite was rerun and no CORE/BOOK/assembly or GR status is changed.
