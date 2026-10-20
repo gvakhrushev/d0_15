@@ -188,4 +188,35 @@ theorem originalQ8CommutatorForwardProgram :
   exact originalQ8CenterForwardProgram_minus
 
 
+/-- M1/MDL core lesson on the LITERAL ORIGINAL native Q8 gate vocabulary:
+TWO chronological programs have the SAME four-i/four-j generator
+inventory but DIFFERENT signed Golden order-port probability laws.
+Hence primitive gate MULTISET/word-length compression is UNSOUND
+as a complete predictor of future registered comparisons; actual
+order-memory is a future-test invariant. This is not a claim the
+full Book work cost is only the primitive word length. -/
+theorem originalQ8SameGateInventoryButDifferentMeasuredHistory :
+    let p := D0.primitiveRoot
+    let a := Real.sqrt p
+    originalQ8OrderWord.count true = originalQ8IdentityWord.count true ∧
+    originalQ8OrderWord.count false = originalQ8IdentityWord.count false ∧
+    (D0.Representation.GoldenOrderInterferometer.output a p
+      (D0.Representation.GoldenOrderInterferometer.q8_center_sign
+        D0.Foundation.qONE) 1)^2 ≠
+    (D0.Representation.GoldenOrderInterferometer.output a p
+      (D0.Representation.GoldenOrderInterferometer.q8_center_sign
+        D0.Foundation.qNEG) 1)^2 := by
+  dsimp
+  have hc := originalQ8ForwardWordsSamePrimitiveInventory
+  have hz := D0.Representation.GoldenOrderInterferometer.q8_center_order_golden_detectable
+  refine ⟨?_, ?_, ?_⟩
+  · simp [originalQ8OrderWord, originalQ8IdentityWord]
+  · simp [originalQ8OrderWord, originalQ8IdentityWord]
+  · intro h
+    have dark := hz.1
+    have bright := hz.2.2
+    rw [dark] at h
+    exact (ne_of_gt bright) h.symm
+
+
 end D0.Representation.OrderMemoryControl
