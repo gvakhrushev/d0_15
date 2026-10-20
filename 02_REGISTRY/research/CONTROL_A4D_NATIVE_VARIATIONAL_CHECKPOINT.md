@@ -20,6 +20,22 @@ same bounded binding; the maintained report and its #375 boundaries remain
 current. This repair changes no
 physical action, acceptance claim or parent terminal.
 
+The independent B2 integration review checked local commit
+`a8cf63967033ece8932994946f8ac101722f2d2b`, published as
+`cd191ab509d724239ad819aa36c7a84e42f1de75` with the identical tree
+`aea95f4f7f883d484ced01659acc5cc2288df064`. Against published source
+`64cbac8d17028376ba2e5324da5014ebcfa053b1`, 38 of the 40 bound artifact
+paths are byte-identical; the two differences are exactly the declared new
+field-coupling checker and relocation receipt. Both historical snapshots match
+that source. The review confirmed the bounded input maps, mutation/failure
+semantics and normal changed-input selection, while preserving the maintained
+#375 source/report and typed field/history result. It found no blocking
+integration defect. This was a static review, not another replay or compilation.
+At this publication checkpoint, the actual maintained-source Lean run
+[39409844753](https://github.com/gvakhrushev/d0_15/actions/runs/39409844753)
+on `cd191ab5` and the required final Ready guards remain pending; neither this
+review nor historical replay claims a completed current-source `D0.All` build.
+
 **Correlated-current CI portability repair, 2026-10-13.**
 The failed Linux guard attempted to load a temporary macOS Lean object.
 Default immutable replay now checks actual archived compiler output,
