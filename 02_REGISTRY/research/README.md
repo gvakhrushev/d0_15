@@ -2,6 +2,15 @@
 
 This directory contains CONTROL-curated research packets that materially affect D0 roadmap decisions but are not yet proof owners.
 
+Latest same-carrier route correction:
+[the original joint-field-minimum exclusion](A4D_NATIVE_JOINT_FIELD_MINIMUM_EXCLUSION_2026_10_20.md).
+The configured full source and Einstein/CAR stationary family are preserved,
+but the source-preserving stopped price has a strict same-boundary descent.
+Implementation optimality also holds on nearby non-Einstein fields.
+The next prospective bridge is the actual reachable field-and-price graph
+or a native stationary/constraint law. This is a reviewed research
+application in #334, with physical admission and GR closure still open.
+
 Current integrator entrypoint: [D0 → GR strategic synthesis, updated 18 October](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md).
 It connects foundational theorem owners to the positive AF-star nonlinear
 Einstein composition and states the remaining native/source and recovery

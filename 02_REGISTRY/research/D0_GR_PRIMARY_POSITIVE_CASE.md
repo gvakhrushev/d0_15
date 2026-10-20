@@ -130,6 +130,30 @@ geometric extensions beyond Brinkmann are welcome only when an exact
 parent premise demands them; an additional local rank, resonant census,
 or single Taylor coefficient is not programme-level progress.
 
+## The source-preserving field minimum is now excluded on this very carrier
+
+The [new exact application](A4D_NATIVE_JOINT_FIELD_MINIMUM_EXCLUSION_2026_10_20.md)
+uses this primary nonvacuum family and the original unrestricted normal
+coframe row. A buffered H perturbation with its exact Cartan lift keeps
+every f=q=0 and the configured complete stopped record/price unchanged,
+but changes that row by 2 a_J,h s/h^3. An additional original coframe
+variation gives an arbitrarily small strict decrease of the actual
+all-launch price, with every work/entropy outcome retained.
+
+Thus the previous necessary implication from a genuine field minimum
+to DJ2=0 does not provide a minimum at these representatives. Every
+fixed-price minimizing implementation is still optimal on nearby
+non-Einstein fields. Any C1 complete price preserving a nonzero multiple
+of DJ2 throughout the same off-shell family inherits the exclusion;
+so does the fixed-coefficient all40 source target at any gravity/matter
+ratio. The stationary solutions above and their recovery remain valid.
+
+Continue through actual reachable field-and-price comparisons from one
+complete initial D0 state, or an independently native stationarity law.
+The witness preserves initial/boundary field values; it does not prove
+such field-writing admission. Restricting the price to the null ansatz
+makes it constant and removes the equation one wanted to derive.
+
 ## Mandatory agent cold start / execution
 
 - Read **this case first** before another GR synthesis/dispatch;

@@ -46,6 +46,15 @@ Continue existing research owner [#334](https://github.com/gvakhrushev/d0_15/pul
 without duplicating or retiring it. Main contains the proof as a
 research intake, not an independently accepted physical GR claim.
 
+The [same-carrier field-minimum exclusion](02_REGISTRY/research/A4D_NATIVE_JOINT_FIELD_MINIMUM_EXCLUSION_2026_10_20.md)
+now changes the prospective application: the configured source-preserving
+stopped price has no full-open-field minimum at this primary family.
+The genuine implementation optimum exists even at nearby non-Einstein
+fields. Preserve both results. The next bridge is the actual same-initial
+reachable field-and-price graph or a native stationary/constraint law;
+another source-neutral completion or a restriction chosen to enforce
+Einstein does not supply it. This is scoped research, not physical closure.
+
 ## 1. Never ask which project when a D0 task ID is provided
 
 If the user gives a task ID such as `EXP-...`, `WRK-...`, or `CTRL-...`,
