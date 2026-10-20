@@ -592,3 +592,40 @@ mixture price. These boundaries, actual clock/task transport, controller
 admission and the physical choice of Book Info/work remain explicit.
 The bounded proof/checker/review provides this candidate test, not a
 universal randomized-control no-go or closure of native GR/raw216.
+
+## 18. Unmeasured common-initial return: complete coherent source
+
+The [coherent application](NATIVE_COHERENT_CHOICE_SOURCE.md) supplies
+two literal14-letter words Q and B, each with2K+4G+4C_cN+4C_PN.
+Both start from the same P blank, apply the same G(P), and reach the
+original query with matching prefix time under held addressed-gate
+durations. On supplied c1, Q^k coherently controls L^(2k) and B^k
+is identity. All actual c0/P/f/CAR128 complements are retained.
+This uses the owned controlled-G^2 echo and no Boolean-sign factory,
+measured selector, selected branch or arbitrary-angle primitive.
+
+For original RIGHT128 the complete cut is the FULL transpose of the
+P--RIGHT amplitude Gram on each classical query leaf. Its R prior
+remains uniform; its PR prior generally does not. The declared central
+reference has capacity256 and label net A_coh-log_phi2, where
+A_coh=H_phi(P,Y|R)>=0. The common capacity offset cancels between
+the two programmes, not in the absolute value. A partial-R transpose
+or inherited uniform-PR likelihood identity gives a wrong operator.
+
+At coincident arms the owned amplitude-Gram C1 theorem handles the
+new null selector direction without a faithful256 inverse or spectral
+replay. The coherent cap2 source is exactly p^2 times the original:
+its linear coefficient lies between-4.841986468942374e-7 and
+-4.841986464764594e-7. Dense positive Golden powers therefore give
+some finite Q^k with smaller complete coherent component than B^k
+on each sufficiently small fixed-primary chart. The integer k need
+not be uniformly bounded. No fresh classical-choice penalty applies
+to this unmeasured experiment.
+
+The actual abort source is still positive, between3.378289512405241e-8
+and3.378289512411712e-8. Thus an actual task tolerance can exclude
+this local alternative. The full price difference is DeltaA_coh+DeltaW;
+prefix matching cancels only genuinely held additive marks, while
+query/clock/readout/normalization and other work remain. This removes
+a conditional synthesis/source premise, not physical admission,
+compulsory Book/Info selection, joint stationarity or native GR/raw216.

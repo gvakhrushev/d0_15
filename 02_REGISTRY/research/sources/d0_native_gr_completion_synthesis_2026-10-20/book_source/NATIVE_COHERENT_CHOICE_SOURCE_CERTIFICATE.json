@@ -1,0 +1,68 @@
+{
+  "full_word": {
+    "baseline_c0_P0": "G^4_all",
+    "baseline_other_blocks": "I",
+    "c0_P0": "G^4_low+I_high",
+    "c0_P1": "I",
+    "c1_P0": "I",
+    "c1_P1": "I_low+G^4_high",
+    "dimension": 128,
+    "forward_letters_each_prefix": 14,
+    "primitive_inventory": {
+      "G": 4,
+      "K": 2,
+      "XC": 4,
+      "XP": 4
+    },
+    "unmeasured_common_selector_preparation": "G(P)|0> on BOTH programmes"
+  },
+  "inherited_primary_sources": {
+    "coherent_cap2_abort_angle": {
+      "decimal_lower": "0.000000033782895124052411404101",
+      "decimal_upper": "0.000000033782895124117118963354",
+      "rational_lower": "123434391343951939807024535911469944480511/3653754093327257295509212081790707549139831357440",
+      "rational_upper": "12343439134418836531651086018199784343795/365375409332725729550921208179070754913983135744"
+    },
+    "coherent_cap2_entropy_angle": {
+      "decimal_lower": "-0.000000484198646894237340726684",
+      "decimal_upper": "-0.000000484198646476459455171882",
+      "rational_lower": "-11057142425458368509158652310272254166325/22835963083295358096932575511191922182123945984",
+      "rational_upper": "-22114284831836016275224042497448382356661/45671926166590716193865151022383844364247891968"
+    }
+  },
+  "new_256_eigensystem_replayed": false,
+  "physical_Book_Info_or_work_selected": false,
+  "physical_oldRIGHT_spectral_test_admission_inferred": false,
+  "quantum_cut_control": {
+    "H_Y_given_R": "2-p",
+    "actual_PR_prior_is_uniform": false,
+    "central_label_cost_minus_gain": "A_coh-log_phi2",
+    "complete_conditional_entropy": 0,
+    "each_leaf_H_P_given_R": "-(2-p)",
+    "full_transpose_required": true,
+    "initial_pure_flag_capacity_is_executed_work": false
+  },
+  "source_compression": {
+    "exact_angle_source_factor": "p^2",
+    "new_full_Gram_inversion_used": false,
+    "rank_birth_model_determinant_at_G": "p^5",
+    "rank_birth_remainder_may_include": "alpha^2 log|alpha|"
+  },
+  "source_sha256": {
+    "02_REGISTRY/research/A4D_NATIVE_GOLDEN_PROGRAM_COMPILATION.md": "f09c24bb7b8ef5f512555257dcd9a335571c052b452482d2c31a3b8e586efdc5",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/FIXED_CLOCK_PREPARATION_BANK.md": "a922a3aeaabe8dfb68dc28e4d788c708b496a1081a3a0ab8cf241fd91fbaf88e",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/GOLDEN_EXACT_DETECTOR.md": "d33c9c2cb2322e381723f481eb1fcf58058fd05ad88eda92c5597c026d02eb77",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/NATIVE_CAR_ACTUATED_METRIC.md": "b9dd63f0888a062941c1744d800120e47d20777f429f892f5a98c504a3c0a4be",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/NATIVE_RETAINED_CHOICE_DISPATCH.md": "6f4289d101d2b3cd70f33a14828e2f6da43bfec4b7e58765b8aad1278f61c065",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/PAID_RANDOM_CHOICE_MINIMUM.md": "30fe9fe6e48f6a978b6f5b7762bced2824ca3342043a566fc4e94723ae6d8df3",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/PRIMARY_CAR_PAID_RETURN_PRICE.md": "2fdf545aa33e3c85f9ef81398fe604a4770c0af76ee872845beefd4f365cfcc1",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/PRIMARY_RIGHT_COMPLETE_CODE_SOURCE.md": "7a38155f37b98fabdd358271be52ad4919a0b28963a5fb952d91da049eba4424",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/PRIMARY_STOPPED_RIGHT_CONDITIONAL_SOURCE.md": "f45c6b301aad0d5601fc771b20550072ad8eeb579c8a701ec51c91b249d64f89",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/PRIMARY_STOPPED_RIGHT_CONDITIONAL_SOURCE_CERTIFICATE.json": "9c910c2e28d02af5fd3a8642d98d01b8c58aeb0a9a55ccf3612a5bc80e397785",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/check_native_car_actuated_metric.py": "72b2743f2f4c9408ceafe29dc691786c5011c4d1133d5fa6ebdb671a230bc3fa",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/check_native_retained_choice_dispatch.py": "4c0cfe7af38ca3d768bb29b47b1b7300504ebdaa90a3bdae0f3a5910ec72bc67",
+    "02_REGISTRY/research/sources/d0_primary_full128_information_source_2026-10-20/RESULT.md": "9a441405c455adda9651f88c21fcda4d9383673a3718e88a93aeb50467133e71"
+  },
+  "status": "PASS",
+  "task_abort_constraint_removed": false
+}
