@@ -47,6 +47,7 @@ for X,a in zip(G,[2,2,2,-2,-2,-2]):
     reconstructed+=(s.trace(X*T)/a)*X
 assert s.simplify(reconstructed-T)==s.zeros(4)
 assert s.simplify(2*reconstructed*(I-reconstructed**2).inv()-curv)==s.zeros(4)
+assert s.simplify((I+reconstructed)*(I-reconstructed).inv()-P)==s.zeros(4)
 # Explicit original J23 old face changes sign even though marked mass doesn't.
 X=G[3]
 assert s.simplify(mark(ROT)-mark(ROT.inv()))==0
