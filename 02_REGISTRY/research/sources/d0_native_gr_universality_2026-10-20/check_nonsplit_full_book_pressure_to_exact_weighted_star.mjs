@@ -17,9 +17,10 @@
  * Independently radially varying EACH site forces f_i=0 at
  * ANY vacuum stationary point for either action, and then ALL
  * 16+24 original equations have identical zero sets.
- * More strongly, at a common stationary point the full Euler
- * Hessians are congruent under D(e_tilde,U); their tangent kernels
- * are isomorphic, not necessarily the same raw-coordinate subspace.
+ * More strongly, the site-radial Euler identities prove equality of
+ * the full linearized kernels in original coordinates: contracting
+ * either Hessian with Z_i=e_i gives 2*w_i*df_i[V]. The checker is a
+ * numerical witness for one fixture, not the proof of this theorem.
  *
  * This fixture is NOT physically selected D0 action. It is a
  * hostile ORIGINAL 718-edge 8440-history native Book clock
@@ -288,7 +289,7 @@ const result={
   wholeBookNativeSelectorProved:false,
   fieldMapIsConstructedControl:true},
  exactMathematicalTheorem:{
-  statement:"For any C2 F(f) with all w_i=dF/df_i(0)!=0, the local vacuum stationary sets agree pointwise with the weighted original six-face star. The full actions are exactly related by a local coframe diffeomorphism; stationary Hessians are congruent and their tangent kernels are isomorphic.",
+  statement:"For any C2 F(f) with all w_i=dF/df_i(0)!=0, the local vacuum stationary sets agree pointwise with the weighted original six-face star. The full actions are exactly related by a local coframe diffeomorphism; stationary Hessians are congruent and the site-radial Euler identities prove equality of their kernels in the original coordinates.",
   canonicalHomotopy:"a_i(f)=int_0^1 dF/d f_i(t f) dt",
   coframe:"e_i_tilde=sqrt(a_i(f)/w_i)*e_i",
   scalarDiffeomorphism:"g_i(f)=f_i*a_i(f)/w_i; Dg(0)=I",

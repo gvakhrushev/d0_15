@@ -8688,9 +8688,10 @@ coframe change \(\tilde e_i=\sqrt{a_i/w_i}\,e_i\). This makes the
 whole off-shell scalar action exactly \(\sum_iw_i f_i(\tilde e,U)\),
 including arbitrary cross-site second derivatives. A determinant identity
 proves the full coframe/link chart is locally invertible. In the local
-vacuum chart both stationary sets coincide pointwise; their Hessians are
-congruent and their tangent kernels are isomorphic under the field-map
-Jacobian (they need not be the same raw-coordinate subspace).
+vacuum chart both stationary sets coincide pointwise and their Hessians
+are congruent. A site-radial Euler contraction gives the stronger exact
+statement that their kernels coincide in the same original coframe/link
+coordinates; the Hessian matrices themselves need not coincide.
 
 The adjacent checker supplies a constructed hostile witness on the original
 718-transition/8440-history support with nonseparable pressure and nonzero,
