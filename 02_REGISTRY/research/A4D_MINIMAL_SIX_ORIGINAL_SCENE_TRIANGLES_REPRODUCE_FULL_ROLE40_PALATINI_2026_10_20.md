@@ -136,3 +136,24 @@ GR_closed=false. No Book/CORE/claims promotion.
 - [Six original three-step root loops and 640 genuine full40 source variations](sources/d0_native_two_three_clock_2026-10-20/check_six_original_scene_triangles_full_role_40_euler.mjs).
 - [Full original nonabelian scene group inverse, 327 chords and root4 minimality](sources/d0_native_two_three_clock_2026-10-20/check_nonabelian_327_triangle_scene_holonomy_inverse.mjs).
 - [Original complete positive two/three scalar Book Cost−Info inverse](A4D_ONE_8440_BOOK_CLOCK_AND_143480_GOLDEN_SOURCE_GLOBAL_INVERSE_2026_10_19.md) and [selected Golden-AF nonlinear Palatini equivalence](A4D_EXACT_AF_RADIAL_COFRAME_EQUIVALENCE_NONLINEAR_SPIN2_2026_10_18.md) are consumed unchanged.
+
+
+## 4. Consuming 20 Oct synthesis: eliminating the arbitrary six-vertex choice DOES NOT eliminate native Book triangle pressure
+
+The original six-root map (3) fixed literal vertex labels 0,9,20..25, but the UNLABELLED original K(9,11,13) has full automorphism group \(S_9\times S_{11}\times S_{13}\) and no canonical choice of its root or ordered six C-vertices. The [exact Aut-orbit theorem](A4D_AUTOMORPHISM_NATURAL_SIX_FACE_ROLE_EMBEDDING_AND_ORDERED_MEMORY_TWIRL_2026_10_20.md) proves all 122316480 original six-root placements reproduce the SAME exact offshell star/40 Euler, and their unique invariant orbit mean equals the same original geometric observable with no new coefficient. It also shows why one cannot erase the common embedding branch BEFORE ordered Lorentz composition: edgewise averaging a true null SO boost gives determinant \(1+71/20449\ne1\). A SINGLE unaddressed G-invariant SO graph connection has the SAME holonomy on every ABC triangle and cannot simultaneously supply six distinct Role plaquettes. Site+face-relative Golden LEFT addressing therefore remains structurally required; no actual physical G0 compiler is claimed.
+
+More importantly the separately proved [exact original Book→star mixed source](A4D_ORIGINAL_BOOK_TRIANGLE_PRESSURE_MULTIPLIES_SIX_FACE_PALATINI_SOURCE_2026_10_20.md) warns that (7) is a **geometric observable identity, NOT an automatic equality of Book Cost-weighted action**. For any original 718 positive directed scalar Book transfer K, the specific signed *raw Book-weighted and Lorentz-skew projected* original face readout, averaged over the full G-orbit, is exactly
+\[
+\boxed{
+F_{\rm weighed}^{\rm twirled}
+=\underbrace{\frac{\operatorname{Tr}K^3}{7722}}_{W_{\rm Book}}\,F_\star^{\rm Role}.
+}
+\]
+The multiplier is entirely original Book THIRD-TICK pressure, not a fitted Einstein coefficient, and is recovered by the previously owned 8440 stage-sufficient clock record if its physical admission is proved. Its real first source is
+\[
+\boxed{D F_{\rm weighed}^{\rm twirled}
+=W_{\rm Book}\,DF_\star+F_\star\,D W_{\rm Book}.}
+\]
+On the canonical unit primitive price \(W_{\rm Book}=p^3\), which is not automatically one. On a genuine moving-cost direction \(D W_{\rm Book}\) contributes unless physically excluded or canceled by a **derived actual normalization**. On a fixed chosen six-chord embedding, nonuniform original vertex Info can furthermore give different weights to individual faces by the EXACT Golden ratio phi, even at the unit primitive Cost floor. The Aut orbit removes that arbitrary FACE anisotropy but not the common absolute pressure.
+
+Thus any future full native G0 H+J+R/Euler proof must **explicitly decide from the existing executed action** whether the six-face observable is inserted unweighted, with raw Book weights, or with a truly compelled normalized/paid factor (and include the variation of whichever rule actually applies). The original six-face geometric 40-row equality remains completely correct under its stated map; a Book-source equality needs this extra physical theorem, not a second geometry computation. \`GR_closed=false\`.
