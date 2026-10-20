@@ -96,4 +96,12 @@ The new executable pins the old checker bytes and verifies complete retained-wor
 
 [INTEGRATION_RESULT.json](INTEGRATION_RESULT.json) is the actual new output; `python -O` reproduces it byte-for-byte. The numerical residuals are explicitly diagnostic, not evaluated native Info/work. No remote CI, independent acceptance or new Lean validation is claimed.
 
+## 5. Concurrent orientation-verification theorem: preserve the distinct task and price
+
+The parallel [native Golden17 stopped-orientation owner](../../A4D_NATIVE17_OPTIMAL_STOPPED_ORIENTATION_AND_INFO_2026_10_21.md), present by snapshot `5f92d32ac405f956fc5e10c4f06649e2728881f5`, proves an optimal expected measurement count for its specified IID two-hypothesis task on the existing positive 17-category instrument. At fixed target error and face amplitude xi=h^2 f with fixed f!=0, its count is Theta(h^-4), retaining neutral outcomes and the Bell success factor. This is not a re-proof or independent acceptance of that owner here.
+
+Its task-relevant orientation information is bounded, while the accumulated verification expense grows. Therefore the optimal repeated verifier cannot be silently identified with the fixed-word terminal signal g_h DJ2, treated as a field-independent prefix, or declared a negligible remainder without a SAME-programme clock/price transport. Conversely a large price VALUE is not by itself a proof of a large FIRST source; the actual stopped-source derivative and any threshold changes must be calculated. No C1 continuation of an optimized integer-threshold envelope is assumed.
+
+These statements are compatible: the present packet controls exact stationary recovery from an already supplied, correctly normalized continuous SOURCE; the parallel result identifies the expense and selection of a different declared verification TASK. The remaining physical question is which complete reachable execution and information contract the native programme actually admits and selects. Neither theorem answers that by renaming the other one's cost.
+
 **Open:** compulsory price/admission/readout selection; complete upstream residual; its all-row compatibility and size; native stationary/constraint law versus prospective field minimum; generic joint recovery and raw216. `GR_closed=false`.
