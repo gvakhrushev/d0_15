@@ -135,3 +135,47 @@ The original cap-one final pair fails the literal pointwise Shannon binding on t
 Book03's general gain is not proved to be Shannon information. This is not a no-go for every possible Book03 Info law. The memory-algebra sum, quadratic response, feedback partition and absolute normalization remain the actual owners. The next required result is to derive the real branch gain and normalizer from those definitions and run these four tests on one fully admitted execution.
 
 GR_closed=false. No new detector, action, Info law, coupling, field writer or physical admission is introduced.
+
+
+## 6. Consuming the covariant two-field synthesis: the missing map is now sharply typed
+
+The 21 October covariant two-field result strengthens the *target* of this gate but does not fill its physical input. For a selected regular two-density price, the local continuum stationary equations are equivalent to
+`G_{\\mu\\nu}=\\Lambda\\sum_A\\partial_\\mu\\psi_A\\partial_\\nu\\psi_A`,
+`q=q_*`, and `\\nabla_\\mu(\\Lambda\\nabla^\\mu\\psi_A)=0`, in the derived gauge
+`\\Lambda\\operatorname{vol}_g=k_F\\mu_0`. Different regular prices can share this covariant solution class after a constant-Jacobian coordinate transport. This is not equality of their fixed-coordinate prices or their complete-history first sources.
+
+Accordingly, do not use covariant-class equivalence to infer the actual Book gain. The remaining map must be evaluated on the SAME complete finite execution before taking any continuum limit:
+```
+actual complete history H
+  -> actual branch probability q_H and retained conditional state
+  -> Book03-defined branch gain I_H (not assumed Shannon)
+  -> actual paid charge c_H, including failures/work/clock/reference
+  -> absolute Z_D and full first derivative
+  -> complete H+J+R source on the same admitted field/preparation tangent.
+```
+
+The current Book03 owners define `Z_D=Σ φ^{-c_H+I_H}` and describe `I_H` as a branch distinguishability gain, but do not yet provide a unique native operator/map that determines every `I_H) and its geometry/preparation derivative on this full tape. This is the exact underdetermination boundary: it is not valid to fill that missing map with Shannon entropy, a relative-gain proxy, a coherent amplitude norm, or a convenient feedback partition merely because each is mathematically well-defined.
+
+The finite algebra supplies a decisive test once the real map is specified. Put
+`Z_B=Σ_H φ^{-c_H+I_H}` and `Q_B(H)=φ^{-c_H+I_H}/Z_B`. The exact identity remains
+```math
+S_{CQ}=D_φ(q\\Vert Q_B)-\\log_φ Z_B+\\mathbb E_q I.
+```
+If the actual source law yields `q=Q_B) on a positive-support chart, then
+```math
+D S_{CQ}=-D\\log_φ Z_B+D(\\mathbb E_q I),
+```
+with the derivative of the moving Born law retained inside the expectation. Thus even Gibbs matching does not by itself identify the native price with `-log_φ Z_B); the expected gain term remains. The absolute binding and source equations (3)–(6) above must still be checked.
+
+### Smallest next decisive calculation
+
+For the original cap-one execution, produce the literal branch table `(H,q_H,c_H,I_H)` from the actual Book03 gain definition, including all aborts, conditional work, oldRIGHT/reference and clock labels; differentiate it on the same original 42-direction field chart and every independently admitted upstream tangent. Then run, in order:
+
+1. terminal-pair value and first-jet identities (1)–(2);
+2. absolute normalizer and mean-source identities (3)–(4);
+3. complete-path cycle/coboundary identity (5)–(6);
+4. the full original 16+24+2 plus internal preparation/clock source comparison.
+
+If the Book03 definition cannot determine `I_H) or its first jet from owned primitives, record the result as **valuation underdetermined at the physical interface** and identify the missing primitive—not as a failure of every possible Info law. No fit to the desired Einstein source, new action, new detector, or selector is allowed. Only after this finite same-execution map passes is continuum/refinement transport a meaningful next test.
+
+This section consumes, rather than duplicates, the 21 October finite-source/covariant-two-field synthesis. It changes no lifecycle, assembly, Book/CORE acceptance or GR status.
