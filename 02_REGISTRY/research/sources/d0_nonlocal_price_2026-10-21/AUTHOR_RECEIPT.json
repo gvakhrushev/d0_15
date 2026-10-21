@@ -1,0 +1,45 @@
+{
+  "status": "AUTHOR_EXECUTED_NONLOCAL_PRICE_AND_JET_COMPILER",
+  "input_ref": "7f87eaaba20a19b1dad3a27079a4417caff5bff1",
+  "research_note_blob": "c3e948ebd785e99f40696b10e3f3a4cf0dd21f8d",
+  "scripts": {
+    "check_nonlocal_price.py": {
+      "git_blob": "91f5824206b7af31c35c0848e3bd96587eb55dc2",
+      "sha256": "599a21fa35c538d1c5fb5a9e5399589509a3bab9eaa87f2e24b6d2854a3e34a9",
+      "checks": 116,
+      "normal_stdout_and_result_sha256": "75f2fda354120c343c8821608da74f428feaf5f83dbb21df139fa9fda450e2fa",
+      "optimized_stdout_and_result_sha256": "75f2fda354120c343c8821608da74f428feaf5f83dbb21df139fa9fda450e2fa"
+    },
+    "check_jet_exact_schedules.py": {
+      "git_blob": "7a77960fc2f8d52b0e072a93dec425457479677a",
+      "sha256": "8f43831358522eacb70cbb96ceeee7c49ecefc62cc460ebe82a85b9dd16a01fb",
+      "checks": 37,
+      "normal_stdout_and_result_sha256": "1f2e8357b513d7b39fd4d9b8e2b96c0686294bcb7bf72fb40e1c3354436aa2a2",
+      "optimized_stdout_and_result_sha256": "1f2e8357b513d7b39fd4d9b8e2b96c0686294bcb7bf72fb40e1c3354436aa2a2"
+    }
+  },
+  "proved_math_scope": [
+    "regular given nonlocal two-density continuum action: conformal Einstein/current reduction and x=chi B, y=chi A",
+    "functional fixed point needs no inverse price Hessian; nonnull Jacobi comparison keeps the integration sector fixed",
+    "all-address-word complete CQ ledger includes unequal actual address charges and original continuation probabilities",
+    "positive polynomial schedule gives exact common-background price jets, strength2 first order and strength3 second order"
+  ],
+  "checks_use": {
+    "finite_Golden_z": "2^-20",
+    "sigma_minus_ratio": "-23.41640675188407497289558206489525274426",
+    "full_word_programmes_in_schedule_control": 625,
+    "first_jet_programmes": 25,
+    "second_jet_programmes": 125,
+    "first_jet_control_does_not_match_Hessian": true,
+    "nonlocal_continuum_example": "diagnostic functional, not a selected native action"
+  },
+  "independent_review": false,
+  "new_Lean_run": false,
+  "remote_CI_run": false,
+  "native_field_writer_admitted": false,
+  "Book03_absolute_valuation_selected": false,
+  "actual_programmes_run_on_quantum_hardware": false,
+  "original_bank_Toffoli_compiler_replayed": false,
+  "finite_lattice_Bianchi_or_refinement_proved": false,
+  "GR_closed": false
+}
