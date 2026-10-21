@@ -1,0 +1,15 @@
+{
+  "check_count": 5,
+  "composition": {
+    "finite": "D_42 B_h = C_h D_42 S_h, C_h != 0",
+    "recovery": "existing O(h^2) midpoint/Dirichlet recovery reused",
+    "roots": "D_42 B_h = 0 for every owned valid mesh"
+  },
+  "remaining_single_programme_gate": "same-initial physical admission/selection and independent upstream equations",
+  "scope": {
+    "GR_closed": false,
+    "generic_two_sided_GR": false,
+    "physical_GR": false
+  },
+  "status": "PASS"
+}
