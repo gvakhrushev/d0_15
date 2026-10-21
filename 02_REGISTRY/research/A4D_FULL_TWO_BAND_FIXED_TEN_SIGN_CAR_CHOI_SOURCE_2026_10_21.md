@@ -229,3 +229,23 @@ This is stationarity ONLY of the full downstream processing CQ price. The origin
 ## Reproduction
 
 Exact Q(p) script: sources/d0_positive_ten_sign_complete_query_2026-10-21/check_exact_two_band.mjs, Git blob 199eb069db7b4d9603a379d7c18e30b4f5f0169c. An isolated V8 call ran the actual checker source before publication, checking every one of 1024 β branches for both sigma, the high coefficient, complete normalized Born expectation, exact source coefficients and finite z lambda. The Choi/CAR tensor-moment formulae are analytic consequences of the original supplied resource definitions and exterior CAR polynomial; no separate full-system 2^180-state simulation or independent acceptance is claimed. The source theorem consumes the pinned geometric and material owners rather than replaying their 16+24+2 checker. This is author research, not physical Book admission, comprehensive CI or a completed GR theorem.
+
+## 7. Strongest usable PARENT APPLICATION: the minimal two-source-moment Gate A
+
+The actual original cap-N=1 source-consumer does not need the entire moving 8D matrix U(E,b) as a physical field-dependent gate. Nor, after (3), does it logically require the particular 32D Choi implementation of (9)–(18). The **smallest independently testable sufficient same-execution INPUT CONTRACT** for this fixed positive compiler is just:
+
+- TWO genuinely admitted, bounded **positive binary source effects** F_f and F_q on the SAME retained original full field/history state, with all real failure outputs and oldRIGHT;
+- on the existing common-null full42 field chart their signed Born means s,t satisfy s=t=0 and
+\[
+\boxed{
+D_{42}s=\Lambda_h^{-1}D_{42}f_{\rm owned},\qquad
+D_{42}t=\Lambda_h^{-1}D_{42}q_{\rm owned},
+}\tag{25}
+\]
+  including all real original inverse-PF weights, shared link occurrences, matter increments, moving observation/initial state and boundary/collar derivatives;
+- independent fresh repetitions of those SAME admitted effects with true input regeneration paid; one fixed universal Golden-prefix output word whose literal factory/clock/abort law is field-independent on that admitted chart; only the final report bit read into the native fixed-width CQ pointer cut;
+- the actually chosen Book03 full Cost−Info evaluation (which need NOT be Shannon), all genuinely independent upstream input equations and the real clock/primitive ledger.
+
+The FIRST THREE clauses are sufficient for the complete cap-one CQ report SOURCE and exact 42-source RATIO by (17)–(20). The fixed Choi/CAR-moment programme in §§3–5 is ONE mathematically explicit witness for its operator/source part, but it is NOT thereby the only valid native realization, and does NOT establish the fourth clause. The geometric source coin may instead come from a cheaper already-paid original CAR16 six-face trace; the material coin may come from the existing original four-copy state-query effect; what matters is that they are admitted and valued **on the same history** without separate unknown geometrical codes. No normalized history ratios are mistaken for the absolute Book amplitude source.
+
+This removes a previous excessive design demand from Gate A: physical implementation of a continuously moving **full matrix** U(E,b) is unnecessary for the one nonzero Einstein–CAR **first-source** theorem. The true requirement is a paid native realization of **two source moments and their joint field jets**, which is a smaller physical datum. It does NOT discharge the common native writer/admission premise. The subsequent Book03 branchwise Info and absolute archive-normalizer still have to be derived; if they contribute additional nonzero covectors, their full same-history residual remains and can spoil the 42 stationary equations. An actual signed geometrical Price is not inferred from implementing an ordinary binary measurement. Physical all-GR/raw216 closure remains open.
