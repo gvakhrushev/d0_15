@@ -76,6 +76,22 @@ For one diagnostic `a=4/5, zeta=2^-20, r_R=1`, this two-dimensional fixture give
 
 Three mandatory NEGATIVE controls follow directly: at `t=0` both marked terminal factors are 1 and `u_0=u_1`, so `D_r J=0`; at any t, equal net report charge also yields zero; and if the initial/early cut has `C_t=0`, `D_r J=0` despite the unequal real charges. A genuine common full-branch charge shift has identically zero effect on J and its derivative.
 
+
+### Exact Book-Info fork: likelihood gain erases the cost-marked scalar source
+
+The genuinely original READY path source also supplies a fully normalized operational relative gain `I_b^rel=log_phi(P_b/mu_b)`, with `P_0=1-r,P_1=r` and native terminal code weights `mu_0=p,mu_1=p²`. For the old physical code lengths `c_0=1,c_1=2` this *mathematically* gives `c_b-I_b^rel=-log_phi P_b`. Thus if the whole complete Book03 branchwise Info were IDENTIFIED with this candidate relative gain on each fine retained leaf, the full final scalar Book weights would instead be exactly `P_b` and the whole per-trial return input would normalize as `N=I`, not as the unequal **Cost-only** marked function `n(r)`. With a fixed r-independent early corner `C_E` the initialized-cut normalized determinant then has `D_r J=0`.
+
+This is an exact KILL control for the proposed shortcut `Book Info is automatically the normalized per-leaf likelihood ratio AND the positive cost-marked J survives unchanged`. Those two claims cannot both hold on this fixed-cut scalar-leaf chart. The Book03 branch gain is NOT yet chosen by the original physical controller. Conversely, if it is NOT that likelihood ratio, the true `D I_b` and effective marked outcome-charge contrast must be included instead of treating the Cost-only mark as the whole net Book action.
+
+### Quantitative source lower wall for refinement
+
+For `C_t>=0`, `0<zeta<1`, `n>0`, put `b_max=||C_t||`. The exact source coefficient obeys the rigorous bound
+```
+|D_r J| >= r_R*zeta*|u_1-u_0| * Tr(C_t)
+           / [n * ((1-zeta)*n + zeta*b_max)] .
+```
+Consequently a TRUE source-normalized refinement must control more than finite-mesh `Tr C_t>0`: it needs positive uniform bounds on the actual normalized early return, readiness/net charge contrast, and clock/cut transport in the original physical source norm. The inequality is a direct eigenvalue bound, not a new native regularity assumption claimed already proved.
+
 ## 3. Consumer: the already-owned 42-source equality, with NO fitted Einstein coupling
 
 For one genuine shared local execution (same input, report, cut, early corner and cost-mark), suppose all original spatial addresses share the SAME normalized ratio `C_t/n_t` on the primary common-null stratum up to genuinely common charged-prefix scaling, and the same `r_a(y)` are supplied by the original two-source-moment instrument. Then
