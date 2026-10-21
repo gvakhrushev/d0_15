@@ -218,3 +218,105 @@ products, all 1,156 first Jacobian entries, the exact isospectral
 master value (6), and the anchored first/second-variation controls.
 Standard Python library only. It does not replay or replace any
 old full128, geometric, Lean or physical Book certificates.
+
+## 6. Original full128 bridge: exact polar principal-angle source gate
+
+The preceding rank-34 countermodel becomes a **native-priced** test when
+composed with the **already owned**, explicitly cut-dependent original
+full128 normalized complementary determinant
+(\`A4D_FULL128_NORMALIZATION_AND_TRUE_BOOK_SOURCE_2026_10_21.md\`).
+This is an application to *that* complementary Book component, not
+yet proof that it is the compulsory full section-03.25 master feedback.
+
+Let \(W(y):H_{\rm in}\to H_{\rm retained}\) be the complete cost-marked
+chronological map, **retaining the failures**, and let \(P(y)\) be its
+actually specified active-return projector. Assume
+
+\[
+ N=W^\dagger W>0,\quad B=W^\dagger P W,\quad
+ V=W N^{-1/2},\quad T=V^\dagger P V.
+ \tag{10}
+\]
+
+Then \(V^\dagger V=I\), \(0\le T\le I\), and the original retained
+right-multiplicity \(r_{\rm R}\) is *not discarded*. By the owned
+full128 determinant identity,
+
+\[
+ \begin{split}
+ J_{\rm comp}
+ &=r_{\rm R}\{\log\det N-\log\det[(1-\zeta)N+\zeta B]\}\\
+ &=-r_{\rm R}\log\det[(1-\zeta)I+\zeta T].
+ \end{split}                                                 \tag{11}
+\]
+
+The eigenvalues of \(T\) are precisely the squared cosines of the
+principal angles \(\theta_k\) between the isometric history range
+\(\operatorname{ran}V\) and the cut \(\operatorname{ran}P\) (including
+zero and unit eigenvalues with their multiplicities). In a chart
+where the angle branches are differentiable,
+
+\[
+ \boxed{
+ DJ_{\rm comp}[v]=
+ r_{\rm R}\sum_k
+ \frac{\zeta\sin(2\theta_k)}
+      {(1-\zeta)+\zeta\cos^2\theta_k}\,
+ D\theta_k[v].
+ }                                                           \tag{12}
+\]
+
+This also has a crossing-safe operator version, obtained directly
+from (11):
+
+\[
+ DJ_{\rm comp}[v]=
+ -r_{\rm R}\zeta\operatorname{Tr}
+  ([(1-\zeta)I+\zeta T]^{-1}DT[v]).                            \tag{13}
+\]
+
+**Two exact no-source cases.** If \(V\) is a *surjective* unitary and
+\(P\) is a rank-fixed projection, then \(T=V^\dagger PV\) is always a
+projection and (11) is constant, even when every addressed Born
+probability changes. More generally, if \(T(y_0)\) is a projection
+at one reference configuration and \(V,P\) vary differentiably while
+remaining an isometry/projection, then \(DJ_{\rm comp}|_{y_0}=0\):
+the diagonal derivatives on the 0- and 1-eigenspaces vanish because
+\(0\le T(y)\le I\); off-diagonal derivatives have zero trace in (13).
+Thus a fully deterministic return cut cannot generate this first
+source by an infinitesimal rotation alone.
+
+**Sharp response bound.** For each differentiable principal angle,
+write \(t=\tan\theta>0\). Its coefficient in (12) equals
+
+\[
+ \frac{2\zeta t}{1+(1-\zeta)t^2}
+ \ \le\ \frac{\zeta}{\sqrt{1-\zeta}},
+ \quad 0<\zeta<1,                                           \tag{14}
+\]
+
+with equality at \(t=(1-\zeta)^{-1/2}\). Consequently
+
+\[
+ |DJ_{\rm comp}[v]|
+ \le r_{\rm R}\frac{\zeta}{\sqrt{1-\zeta}}
+       \sum_k |D\theta_k[v]|.                                \tag{15}
+\]
+
+This is **not** a free clock/field sensitivity bound: actual angle
+velocities, oldRIGHT multiplicity, moving cut, and all paid
+preparation/controller/clock charges are still needed.
+The original full128 normalized two-effect \(N,B\) source theorem
+already supplies the required algebra; this corollary identifies its
+**minimal spectral-geometric target**. A varying partial return angle,
+rather than full-wavefunction tomography or an isospectral projector
+rotation, is necessary for a nonzero normalized complementary
+Book first source. The Golden splitter's interior port probabilities
+can support such angles, but they do not select a physical moving
+cut or establish their field velocities.
+
+The independent thermal part of Book03 section 03.25 and the genuine
+upstream Euler conditions must be composed on this **same** execution
+before (12) is used for GR. Both signed curvature owners, the
+full42 Einstein/CAR mathematical roots and the source convention
+remain unchanged. \`GR_closed=false\`.
