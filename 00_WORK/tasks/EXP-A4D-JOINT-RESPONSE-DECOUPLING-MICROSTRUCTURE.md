@@ -3841,8 +3841,6 @@ Historical full128/all40/Lean evidence is reused. Keep source-test versus
 field-writer, fixed-volume continuum versus finite lattice, and on-shell
 matter covariance versus off-shell physical metric descent distinct. No
 new task, source selector, minimum/Book/assembly/GR promotion is introduced.
-
-
 ## 21 October continuation: exact-resonance route exclusion and the remaining curved-Y bridge
 
 This is a scoped synthesis of already-owned exact controls, not a new
@@ -3850,79 +3848,103 @@ global response-decoupling theorem.
 
 ### Exact result established by composition
 
-Let (K_Y(z)) be the all-order joint-stationary Y-family from
-`A4D_Y_SLOW_JOINT_CONTINUATION.md`. On its declared frozen-cell /
-slow-solder class, the exact metric response difference is zero. This is
-a valid response-null nongauge microstructure control, but its macro-metric
-is not the nonconstant curved background required by the terminal.
+The all-order joint-stationary Y-family from
+A4D_Y_SLOW_JOINT_CONTINUATION.md has zero exact metric-response difference
+on its declared frozen-cell / slow-solder class. It is a response-null
+nongauge microstructure control. Its macro-metric remains the flat background
+for this response terminal; the nonconstant coframe is not the curved
+macro-background required here.
 
-Now consider the proposed single-ray exact-resonance continuation using
-the selected real-COS Orth3 direction with the owned #260 logarithmic
-correction and #241 slow solder. The full 96-row connection equation has
-flat operator rank 80 and left-kernel dimension 16. The exact order-(t^3h)
-forcing has a left-null pairing equal to (1); therefore
-(L_0r=-B_{31}) is insoluble. Its accompanying nonzero metric coefficient
-is consequently off-shell and cannot be promoted to a stationary-sheet
-response defect.
+For the proposed single-ray exact-resonance continuation, using the selected
+real-COS Orth3 direction with the owned #260 logarithmic correction and #241
+slow solder, the full 96-row connection equation has flat operator rank 80
+and left-kernel dimension 16. The exact order-\((t^3h)\) forcing has a
+left-null pairing equal to 1 (row 8 is an explicit witness), so
+\(L_0r=-B_{31}\) is insoluble. Its accompanying nonzero metric coefficient
+is off shell and cannot be promoted to a stationary-sheet response defect.
 
-**Theorem (scoped route exclusion).** No analytic correction of this
-specified Orth3 single-ray ansatz at exact resonance can furnish the
-required joint-stationary curved-background continuation with that
-leading jet. This follows from the nonzero Fredholm pairing, independently
-of the later metric-response coefficient. The theorem excludes that route,
-not other rays, detuned branches, coupled multimode corrections, or a
-nonperturbative exact sheet.
+**Scoped route exclusion.** No analytic correction of this specified Orth3
+single-ray ansatz at exact resonance can furnish the required joint-stationary
+curved-background continuation with that leading jet. This follows from the
+nonzero Fredholm pairing, independently of the later metric-response
+coefficient. It excludes this route, not other rays, detuned branches,
+coupled multimode corrections, or a nonperturbative exact sheet.
 
-### Why the two controls do not yet settle the terminal
+### Why the controls do not settle the terminal
 
-The Y family proves zero response only on its owned macro-flat/frozen-cell
-profile. The Orth3 calculation proves failure of one exact-resonance
-continuation, not failure of every curved continuation. The #227 hostile
-metric-response example remains connection-stationary rather than
-joint-critical, so it cannot be promoted to a counterexample satisfying
-both Euler systems. The #223 locality and #226 sensitivity estimates also
-retain their smooth/analytic-vertex and link-log sum-norm hypotheses;
-they do not control grid-scale Young measures by themselves.
+The Y family proves zero response only on its owned flat-macro-metric,
+frozen-cell profile. The Orth3 calculation rules out one exact-resonance
+continuation, not every curved continuation. The #227 hostile metric-response
+example remains connection-stationary rather than joint-critical, so it is
+not a counterexample satisfying both Euler systems. The #223 locality and
+#226 sensitivity estimates retain their smooth/analytic-vertex and
+link-log sum-norm hypotheses; they do not control grid-scale Young measures
+by themselves.
 
-The raw sensitivity exponent remains (0), and normalization by (h^{-2})
-retains a loss of (h^{-2}). Thus super-algebraic smallness of a connection
-difference would suffice, but the owned estimate does not provide such
-smallness for all exact stationary microstructure. No bounded-energy or
-weak-convergence argument may replace the missing nonlinear metric-variation
-commutator estimate.
+The raw sensitivity exponent remains 0, and normalization by \(h^{-2}\)
+retains a loss of \(h^{-2}\). Super-algebraic smallness of a connection
+difference would suffice, but the owned estimate does not provide it for all
+exact stationary microstructure. A bounded-energy or weak-convergence
+argument cannot replace the missing nonlinear metric-variation commutator
+estimate.
 
 ### Exact next gate
 
-The smallest remaining mathematical blocker is now stated as one map:
-
-[
-oxed{
-	ext{curved sampled }Q_h
-;longmapsto;
-	ext{an exact joint-critical continuation of the Y-type UV mode}
+The smallest remaining mathematical blocker is the map
+\[
+\boxed{
+\text{curved sampled }Q_h
+\longmapsto
+\text{an exact joint-critical continuation of the Y-type UV mode}
 }
-]
-
-with the full finite connection and metric Euler equations both satisfied,
-the genuine Lorentz quotient retained, and either (i) a uniform bound
-(|R_h[h^{-2}Delta E_Q]|\to0) in the task's declared ten-slot tested
-norm, or (ii) a certified nonzero normalized response gap. The first would
-close the response terminal; the second would require an actual smooth
-curved-background joint-critical sequence and would support the no-go
-terminal. Neither exists in the current owned evidence. Do not use the
-Orth3 off-shell coefficient or #227 alone as that sequence.
+\]
+with both full finite connection and metric Euler equations satisfied and
+the genuine Lorentz quotient retained, plus either (i) a uniform bound
+\(\lVert R_h[h^{-2}\Delta E_Q]\rVert\to0\) in the task's declared ten-slot
+tested norm, or (ii) a certified nonzero normalized response gap. The first
+would close the response terminal; the second would require an actual smooth
+curved-background joint-critical sequence and support the no-go terminal.
+Neither exists in the current evidence. Do not use the Orth3 off-shell
+coefficient or #227 alone as that sequence.
 
 Source pins consumed from current main:
-- `A4D_Y_SLOW_JOINT_CONTINUATION.md`, blob
-  `a930504eec567586e04e32fb512279e8fe3d4aed`.
-- `A4D_ORTH3_NONFLAT_T3H_RESPONSE.md`, blob
-  `754d491ae5dfe90eb7f4d7d6492b858d8d801407`.
-- `A4D_J2_METRIC_RESPONSE_SENSITIVITY.md`, blob
-  `ab894c0b94e346eb8aaa3af5b3d9cd2d8727f7f1`.
-- `A4D_J2_NORMAL_COORDINATE_LOCALITY.md`, blob
-  `e094c48fda0af8bf708b21a43d56157b20650c32`.
-- `MEMO_A4D_J2_SMOOTH_RESONANCE_CLOSURE.md`, blob
-  `21b768681cd4bf12b9dda22fc86c43d6b831bbec`.
+- A4D_Y_SLOW_JOINT_CONTINUATION.md, blob
+  a930504eec567586e04e32fb512279e8fe3d4aed.
+- A4D_ORTH3_NONFLAT_T3H_RESPONSE.md, blob
+  754d491ae5dfe90eb7f4d7d6492b858d8d801407.
+- A4D_J2_METRIC_RESPONSE_SENSITIVITY.md, blob
+  ab894c0b94e346eb8aaa3af5b3d9cd2d8727f7f1.
+- A4D_J2_NORMAL_COORDINATE_LOCALITY.md, blob
+  e094c48fda0af8bf708b21a43d56157b20650c32.
+- MEMO_A4D_J2_SMOOTH_RESONANCE_CLOSURE.md, blob
+  21b768681cd4bf12b9dda22fc86c43d6b831bbec.
 
 Status: PARTIAL/OPEN. No task retirement, source selector, action term,
 physical GR acceptance, or raw216 promotion.
+
+The weighted-continuum consumer uses the actual prescribed positive PF
+profile rho and proves
+d(F-x F_x)+y F_y dlog(rho)=0, hence d(rho*y/F_x)=0, together with a
+local dust realization for every such smooth positive rho. This does not
+assume that rho is constant. Its separate finite-source result retains
+the exact two Ward defects; neither defect is set to zero by the continuum
+proof.
+
+For the existing finite N=1 CQ price
+S_z=M rho_z F(xi_z,eta_z), with xi_z=tau fhat_z/rho_z and
+eta_z=tau qhat_z/rho_z, an allowed variation holding the price function
+F and M,tau fixed obeys
+\[
+D S_z=M\tau(F_{\xi}D\widehat f_z+F_{\eta}D\widehat q_z)
++M(F-\xi F_{\xi}-\eta F_{\eta})D\rho_z.
+\]
+The operational-weight source vanishes on the finite common-null stratum
+because F(0,0)=fhat=qhat=0; off that stratum it must be retained.
+Variations of M, tau, or the price function require their corresponding
+explicit chain-rule terms. The next bridge test is to derive the actual
+refinement map from the finite rho_z,fhat_z,qhat_z to the continuum
+rho,x,y, and control the two finite Ward defects in that limit. It must
+also transport the complete 42-field, preparation, clock, internal and
+baseline source. The continuum weighted theorem does not itself provide
+this finite/refinement estimate, compulsory Book03 selection, or physical
+admission.

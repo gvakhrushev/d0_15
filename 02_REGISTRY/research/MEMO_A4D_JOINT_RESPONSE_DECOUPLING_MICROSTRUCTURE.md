@@ -9938,3 +9938,46 @@ optimized Python; outputs were byte-identical (SHA-256
 `787087e22940790ee67a09cb1aea83367cbc1b113ff82c9a77283ea0522a6da0`).
 This is the recorded author checker replay, not an independent review or a
 physical acceptance.
+
+### Finite source bridge after the actual weighted-continuum result
+
+The existing complete CQ owner writes each site term as
+`S_z=M rho_z F(xi_z,eta_z)`, where
+`xi_z=tau fhat_z/rho_z` and `eta_z=tau qhat_z/rho_z`, with
+`F(0,0)=0`. For an allowed variation holding the price function `F` and
+`M,tau` fixed, direct differentiation gives
+
+`D S_z = M tau [F_xi D fhat_z + F_eta D qhat_z]`
+`        + M [F-xi F_xi-eta F_eta] D rho_z`.                (20)
+
+This identifies why its complete first source can remain exact on the
+common-null stratum even when the operational weights move: there
+`xi=eta=F=0`, so the explicit `D rho_z` term vanishes. Moving `M` or `tau`
+adds their actual chain-rule terms; the two terms attached to this local
+factor also vanish at `fhat=qhat=0`, while the independently retained
+baseline and upstream ledger still require their own equations. A variation
+of the price function itself contributes its explicit `M rho_z D_F F`
+term and must be checked against the declared variation class.
+
+The new weighted-continuum result applies to the actual prescribed positive
+PF profile `rho`, including inhomogeneous profiles. It proves the full
+weighted Ward identity
+`d(F-x F_x)+y F_y dlog(rho)=0` and the invariant
+`d(rho y/F_x)=0`, constructs a local dust representative for every such
+smooth positive `rho`, and retains the original/reduced metric distinction.
+Its finite-source section gives an exact substitution and names both finite
+Ward defects without assuming they vanish. The independent review passes in
+the declared local continuum domain; the checker is a narrow Decimal
+diagnostic, not an interval proof.
+
+Equation (20) therefore identifies the remaining transition more precisely.
+Away from the finite common-null stratum the weight source generally
+survives. One still needs the typed refinement map from the actual
+`rho_z,fhat_z,qhat_z` to continuum `rho,x,y`, quantitative control of the two
+finite Ward defects under refinement, and convergence of the full field
+source and its weight, preparation, clock and internal derivatives. The
+actual source owner proves the 42-direction identity on its declared finite
+common-null carrier; the weighted-continuum theorem does not itself provide
+this finite/refinement estimate or make CQ entropy the compulsory Book03
+price. Native admission, complete upstream price and physical selection
+remain open, without adding a new selector.
