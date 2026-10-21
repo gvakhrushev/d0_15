@@ -74,6 +74,62 @@ absolute path gains remain genuine prerequisites. The full heat,
 independent preparation, clock and retained-work prices do not follow
 from (3).
 
+
+## 1a. Full ordered-history causal adjoint, without a positive-score substitution
+
+There is an exact algorithmic form of (2) when the **same specified**
+finite history algebra is represented by genuine time-ordered transfer
+matrices. Let \(\psi_0(y)\) be its prepared initial vector,
+\(M_t(y)\) the actual full transition including paid status/memory
+updates at tick \(t\), and \(P_{\rm cut}(y)\) its genuine final observer
+projection. Put
+\[
+ \psi_{t+1}=M_t\psi_t,\qquad
+ A=P_{\rm cut}\psi_T,\qquad {\cal N}=\|A\|^2>0,
+ \quad
+ b_T=P_{\rm cut}^* A/{\cal N},\quad
+ b_t=M_t^*b_{t+1}.
+\]
+For *any admitted differentiable joint variation*, direct
+reverse-mode differentiation gives the **entire** represented
+log-pressure source:
+\[
+ \boxed{
+ dP_{\rm repr}=-\frac1{\ln\varphi}\operatorname{Re}\left[
+ \frac{\langle A,(dP_{\rm cut})\psi_T\rangle}{{\cal N}}
+ +\sum_{t=0}^{T-1}\langle b_{t+1},(dM_t)\psi_t\rangle
+ +\langle b_0,d\psi_0\rangle\right].}                 \tag{2a}
+\]
+Each term has its own origin: the moving cut, each paid/ordered
+primitive, and independent initial preparation. For a transfer
+\(M_t=\sum_e\varphi^{-S_e}R_e\),
+\[
+ dM_t=\sum_e\varphi^{-S_e}
+       \left[-(\ln\varphi)(dC_e-dI_e)R_e+dR_e\right].
+\]
+No \(R_e\) commute or need to be diagonal. The \(\langle b,M'\psi\rangle\)
+contractions can be signed. This is an exact **causal-adjoint
+application to the represented Book memory pressure**. It is not an
+Euler law by itself, and an exponentially large memory automaton
+need not become computationally small by writing this recursion.
+
+An exact local control recovers (6) from the **actual Golden gate word**:
+take \(\psi_0=|0\rangle\), successive transfers \(G\),
+\(Z_t=\operatorname{diag}(1,-\varphi^{-t})\), \(G^T\),
+and \(P_{\rm cut}=|0\rangle\langle0|\).
+At \(t=0\), \(A=p^3|0\rangle\), and the unique middle-transfer
+derivative produces \(dA/dt=(\ln\varphi)p^2|0\rangle\).
+Equation (2a) gives
+\[
+ \left.\frac{dP_{\rm repr}}{dt}\right|_0
+ =-\frac{p^2}{p^3}=-\varphi.
+\]
+\(Z_t\) is nonunitary for \(t\ne0\), hence a **formal cost-mark
+deformation** of the actual \(Z_0\) phase word, not a newly admitted
+moving native unitary. A physical implementation must retain the
+associated failures and their cost. This sharp distinction is exactly
+why a complete selected execution is still required.
+
 ## 2. The exact original Golden/Q8 witness
 
 The original real Golden gate is
