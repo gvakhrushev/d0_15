@@ -510,6 +510,32 @@ This removes the previously stated **algebraic complex-phase tomography gap** at
 
 The [updated complex full128 feedback source proof](A4D_Q8_REAL_BOOK_SOURCE_INTERFACE_2026_10_21.md) strengthens the earlier algebraic Q8 result: the quarter turn on one *input* phase rebit is an exact addressed finite word, chronological `H_r; CNOT(b,r); H_r; CNOT(b,r)`, using the already admitted **heralded** Golden Hadamard factory, with actual two-H readiness `b_2^4`, all failed transcripts/clock/work preserved, and paid known-one/fair-plus supplies. Its completed effect maps `a|0,0>+p|1,0>` to `a|0,0>+p|1,1>`. Consequently the previously external phase-quadrature **input-preparation** premise is discharged at the declared addressed instrument interface; 55 exact/numeric checks run identically in normal and optimized modes. This does not provide a physically admitted realification of *every* original complex CAR16 Kraus operator, the same full-history Book cut, or its branchwise Info. Source sufficiency and the original Einstein solutions remain conditional on those physical interfaces; Draft #334, `GR_closed=false`.
 
+## Corrected full128 entropy tangent on an actual Lorentz chart
+
+The [full128 source correction](A4D_BOOK03_FIRST_SOURCE_UNDERDETERMINATION_THEOREM_2026_10_21.md)
+withdraws the earlier proposed tangent `Dq_0=-1, Dq_1=+1` inside one
+nonblank Golden pair: the original Kraus instrument fixes that conditional
+ratio exactly. It replaces it with an analytically differentiated proper-
+Lorentz tangent of the original 16-CAR, 128-Kraus one-round instrument.
+All 128 labels are retained, including the 64 dark labels of this fixture;
+the full output-normalization and its derivative are checked. On the
+constant-support stratum the exact grouped-entropy chain rule respects the
+fixed `p^2:p` ratios. At `theta=0.08` the resulting numerical diagnostic is
+`D_theta H_phi=-0.019550941179130216`; under the separately assumed complete
+amplitude binding only, the candidate mean-path/pressure source gap is half
+of that value. This is a real field tangent, unlike the withdrawn pair
+reallocation, but the sign has no interval enclosure and Book03 has not
+selected either candidate aggregation.
+
+The packet's parity calculation was made Python-3.9-compatible and replayed
+locally in normal and optimized modes; both outputs match `RESULT.json`.
+NumPy 2.0.2/Apple Accelerate emitted divide-by-zero, overflow and invalid
+matmul RuntimeWarnings in both runs; these remain unsuppressed and
+unexplained. Accordingly this replay is numerical evidence only. It narrows
+the source comparison but does not provide compulsory branchwise Book03
+Info, the full paid action, the same-history input equations, or a physical
+selection law. The common-map gate and `GR_closed=false` stand.
+
 ## Conditional nonlinear pullback through a derived scene conductance
 
 The [derived-scene composition](A4D_BOOK03_DERIVED_SCENE_NONLINEAR_CRITICAL_SET_2026_10_21.md)

@@ -4,6 +4,6 @@
 
 Прежняя форма `Dq_0=-1,Dq_1=+1` внутри одного nonblank Golden-порта не является физически допустимой. Гипотетический свидетель `-1/2` нужно изъять именно из приложения к original full128. Новый расчет использует реально движущуюся Lorentz-связь, все метки и правильный список нулевых исходов.
 
-`analytic.py` выполняется так: `OPENBLAS_NUM_THREADS=1 python3 analytic.py`, затем `python3 -O analytic.py`. Итоги обоих запусков сохранены в `REPLAY.log`/`REPLAY_OPT.log`; `RESULT.json` содержит число и отладочный остаток численной производной. `PROOF.md` — точная математическая формулировка, пределы вывода и связка с Book03.
+`analytic.py` выполняется так: `OPENBLAS_NUM_THREADS=1 python3 analytic.py`, затем `OPENBLAS_NUM_THREADS=1 python3 -O analytic.py`. Расчёт использует совместимый с Python 3.9 подсчёт чётности; stdout обоих режимов сохранён в `REPLAY.log`/`REPLAY_OPT.log`, `RESULT.json` содержит численные результаты и остатки центральных секущих. Локальный replay на Python 3.9.6 / NumPy 2.0.2 (Apple Accelerate) совпал с `RESULT.json` в normal и `-O`, но обе команды вывели RuntimeWarning `divide by zero/overflow/invalid` из матричных умножений. Предупреждения не подавлялись; их причина не установлена, поэтому replay не считается warning-free или интервальной сертификацией. `PROOF.md` — точная математическая формулировка, пределы вывода и связка с Book03.
 
 GR_closed=false, физическое Book03 Cost−Info/общий вход/полные all42 решения пока не закрыты.

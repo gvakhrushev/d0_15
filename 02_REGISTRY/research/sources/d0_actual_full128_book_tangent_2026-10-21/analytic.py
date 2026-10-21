@@ -30,7 +30,7 @@ def maker(theta):
  N=[]
  for label in range(32):
   for c in range(2):
-   N.append(sum(((-1)**((label&j).bit_count()&1)*words[j][c] for j in range(32)),np.zeros((16,16),complex))/32)
+   N.append(sum(((-1)**(bin(label&j).count("1")&1)*words[j][c] for j in range(32)),np.zeros((16,16),complex))/32)
  A=N[0]
  assert np.linalg.norm(A-adj(A))<1e-12
  K=[]
@@ -77,7 +77,7 @@ def analytic_native(theta):
     N=[];dN=[]
     for label in range(32):
       for c in range(2):
-       signs=np.array([(-1)**((label&j).bit_count()&1) for j in range(32)])
+       signs=np.array([(-1)**(bin(label&j).count("1")&1) for j in range(32)])
        N.append(sum((signs[j]*words[j][c] for j in range(32)),np.zeros((16,16),complex))/32)
        dN.append(sum((signs[j]*dwords[j][c] for j in range(32)),np.zeros((16,16),complex))/32)
     A=N[0];dA=dN[0];K=[];dK=[]
