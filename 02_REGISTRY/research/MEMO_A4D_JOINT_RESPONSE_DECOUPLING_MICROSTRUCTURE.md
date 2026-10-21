@@ -9740,3 +9740,37 @@ This closes the proposed *mathematical detector construction* in the declared ac
 The normalization in the supplied profile/flux formulas must follow the original 40→3→1 owner: its dimensionless link is K_a(z) = ½[H(z+û) − H(z+û−â)], with K_a/h → ½∂_aH. For C_h formed from the unscaled differences K_b(z) − K_b(z+â), the exact identities are tr C_h = −h²Δ_hH/2 and E_vv = h tr C_h = −h³Δ_hH/2. Thus Δ_hH = −4λE gives tr C_h = 2λh²E and the stated telescoping boundary flux. The alternative K_a = [H(z) − H(z−â)]/(2h) is a different link convention; it cannot be combined with these C_h and E_vv identities without changing their powers of h and rederiving the source normalization.
 
 The next consumer remains the one already identified in the [primary GR case](D0_GR_PRIMARY_POSITIVE_CASE.md) and [TRIZ/φ handoff](D0_TRIZ_PHI_AGENT_HANDOFF_2026_10_20.md): evaluate the actual selected, fully paid Book03 history effect and its Info, work, controller, clock, observer, preparation, oldRIGHT, and internal Euler sources on the same 42-variable witnesses. No further detector or profile family supplies that selection.
+
+### 21 October: the compactified nonzero-amplitude endpoint
+
+The exact finite-amplitude owner classifies every real nonzero Cayley amplitude on the designated #232 orbit as incompatible with a regular first-slow same-source lift. I checked the remaining projective endpoint \(t=\infty\), using the regular coordinate \(s=1/t\). The limiting link is
+\[
+U_\infty=I+\frac23Y^2,\qquad Y=J_{12}-J_{13}+J_{23}.
+\]
+At this endpoint the connection block has rank 72, while the complete 136-row joint flat system has rank 79 and therefore a 17-dimensional center kernel. I included all 17 directions in the slow drift, without quotienting or labelling any response-invisible direction as gauge. The resulting exact rational first-slow matrix has shape \(136\times113\), rank 96; after adjoining the prescribed curved #216 source its rank is 97. Thus no first-slow correction vector solves the same-source equations at the endpoint, even after granting every center direction.
+
+Replay with [a4d_y232_infinite_amplitude_firstslow_check.py](certificates/a4d_y232_infinite_amplitude_firstslow_check.py). Together with the finite-amplitude classification, this excludes regular first-slow continuations whose leading amplitude tends to a finite nonzero value or to the compactified endpoint with \(s=O(h)\). It does not exclude \(t_h\to0\), intermediate nonregular scales such as \(s_h\gg h\), unbounded expansion coefficients, disconnected exact roots outside this Cayley orbit, or the required normalized-response gap. The #334 terminal remains open.
+
+### 21 October: bounded-pole first-slow obstruction at \(t=0\)
+
+The exact polynomial first-slow system from the preceding amplitude result has
+also been expanded at the zero-carrier point. Write it as \(M(t)x(t)=b(t)\),
+with all 96 link corrections and both center slopes retained. A Laurent
+correction with pole order at most two has the form
+\(x(t)=t^{-2}x_{-2}+t^{-1}x_{-1}+x_0+t x_1+\cdots\).
+The exact rational convolution system matching coefficients through \(t^0\)
+has shape \(408\times294\) and ranks \((282,282)\). Adding the \(t^1\)
+equations gives shape \(544\times392\) and ranks \((379,380)\). Thus the
+first-slow source is compatible through \(t^0\), but no correction with a
+Laurent pole of order at most two satisfies it through \(t^1\); lower pole
+orders are included by zero-padding.
+
+Replay with
+[a4d_y232_firstslow_laurent_scale_check.py](certificates/a4d_y232_firstslow_laurent_scale_check.py).
+This is a formal-amplitude obstruction for the designated first-slow system.
+It does not bound corrections with pole order above two, arbitrary
+non-Laurent \(h\)-dependent corrections, or the nonlinear finite-\(h\)
+Euler remainder. It supplies neither a task-level no-go nor a normalized
+response gap. The next missing estimate is a uniform control of the center
+correction as \(t_h\to0\), or an exact finite-\(h\) reduced equation that
+replaces such a bound.
