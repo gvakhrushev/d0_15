@@ -37,6 +37,16 @@ Known negative controls must stay in force: (i) a fixed four-G/two-CNOT word mat
 
 For the actual outcomes omega, use their actual probabilities q_omega, costs c_omega, and admitted information values I_omega. Compute the literal complete price and its derivative, including the absolute partition/normalization term, preparation, controller, clock, compiler, failures, retained work and old archive.
 
+The existing formalization makes this dependence explicit: `book03PathWeight`
+accepts `info` as an argument and defines
+`w_omega = phi^(I_omega - c_omega)`. Therefore its exact branch log-weight
+monotonicity results quantify over the supplied `info`; they do not select an
+admitted physical Info law. For differentiable field-dependent entries, the
+exact log-weight source is
+`D log w_omega = log(phi) * (D I_omega - D c_omega)`. The missing
+`D I_omega` must come from the same execution map above.
+([formal owner](../../03_FORMALIZATION/D0/Research/NativeHistoryActionResponse.lean))
+
 For the declared amplitude/probability binding family, the existing necessary test is
 
 J_abs = (1 + theta) H - C,
