@@ -4025,31 +4025,33 @@ the source directory README. The earlier statement that the finite defects
 still lacked an explicit all42 computation is superseded by this continuation;
 physical field-writer and Book selection remain open.
 
-The [Book03 source-identifiability theorem](../../02_REGISTRY/research/A4D_BOOK03_SOURCE_IDENTIFIABILITY_THEOREM_2026_10_21.md)
-shows that consistent relative branch ratios on connected positive support
-fix branch weights only up to one common positive factor. Actual charge jets,
-relative-ratio jets, and one absolute anchor value plus its first jet are
-needed to recover the full source; the closed loop sees that common mode.
+### Corrected scope: scalar weight ambiguity and the actual full128 source
+
+The [corrected Book03 source-identifiability note](../../02_REGISTRY/research/A4D_BOOK03_SOURCE_IDENTIFIABILITY_THEOREM_2026_10_21.md)
+retains the connected-graph theorem for scalar positive weights: relative
+ratios determine those weights up to one common factor. It withdraws the
+earlier claim that one absolute scalar jet is necessary and sufficient for
+the complete physical Book source. Scalar weight data do not determine the
+memory-operator, active-cut, heat, preparation, or work maps.
+
+The [executed full128 normalization/source calculation](../../02_REGISTRY/research/A4D_FULL128_NORMALIZATION_AND_TRUE_BOOK_SOURCE_2026_10_21.md)
+computes \(N=W^*W\), \(A=i^*W\), and the true normalized complement
+\(J=-128\log\det((1-z)N+zA^*A)+128\log\det N\), including its complete
+first derivative. A common scalar \(W\mapsto aW\) cancels from both value
+and source; it is not a free physical compensator. A real attenuation is a
+different execution whose complement and retained failure histories must
+be priced. On the unchanged primary HJR family, the independent preparation
+source remains strictly negative for sufficiently small positive amplitude,
+so normalization-only repair fails for that tested family and direction.
+This is not a no-go for every native Book realization.
+
 The [same-execution gate](../../02_REGISTRY/research/A4D_NEXT_COMMON_MAP_CONSTRUCTION_GATE_2026_10_21.md)
-now states the remaining task as one differentiable map from the original
-42 field directions and genuinely admitted inputs to the complete instrument,
-all outcomes, ledger, clock, archive, and absolute Book03 valuation. It
-requires simultaneous operator/source, absolute-price, and independent-input
-tests on that same execution. This narrows the next step but does not supply
-the map, native Book03 gain, physical input admission, or GR closure.
-GR_closed=false.
-
-
-### Absolute-source kernel of normalized amplitude records
-
-The companion [absolute-source lemma](../../02_REGISTRY/research/A4D_ABSOLUTE_BOOK_SOURCE_NONIDENTIFIABILITY_2026_10_21.md)
-shows that matching only a normalized coherent record fixes weights as
-\(w_\omega=a(y)\sqrt{q_\omega}\), leaving one common positive factor; in Book
-notation \(I_\omega=C_\omega+\tfrac12\log_\varphi q_\omega+J(y)\).
-Changing \(J(y)\) leaves normalized open-record predictions unchanged but
-changes the absolute log-norm and closed-loop source. This is a structural
-non-identifiability statement about normalized data, not a no-go for Book03
-and not a physical source selection.
+therefore remains the next physical step: derive one differentiable map from
+the original 42 field directions and genuinely admitted inputs to the
+complete instrument, outcomes, ledger, clock, archive, and absolute Book03
+valuation, then test operator/source, absolute-price, and independent-input
+rows on that same execution. The map, native Book03 gain, physical input
+admission, and GR closure remain open. GR_closed=false.
 
 
 ## 21 October continuation: joint execution toward the full physical GR bridge

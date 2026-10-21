@@ -10230,54 +10230,69 @@ do not establish the field writer or Book selection. The exact algebra is
 carried by the displayed identities; the scripts numerically replay their
 declared controls rather than provide interval enclosures.
 
-### Book03 source identifiability and one common admitted map
+### Book03 scalar-weight identifiability and one common admitted map
 
-The [source-identifiability theorem](A4D_BOOK03_SOURCE_IDENTIFIABILITY_THEOREM_2026_10_21.md)
-proves the finite graph statement needed after a candidate native Book03 map
-is specified: consistent relative branch ratios on connected positive support
-fix all branch weights up to one common factor. Relative ratio jets and actual
-charge jets determine the relative gains, but the full first source also
-requires one absolute anchor and its first jet. A value-only normalization is
-insufficient. The same common mode contributes to the actual fixed-z
-closed-loop determinant source, so it cannot be removed by rescaling feedback
-without changing the calibration.
+The [corrected source-identifiability theorem](A4D_BOOK03_SOURCE_IDENTIFIABILITY_THEOREM_2026_10_21.md)
+retains the finite graph result after a scalar branch-weight map is specified:
+consistent relative ratios on connected positive support determine the scalar
+weights up to one common factor. Ratio jets and actual charge jets determine
+relative scalar gains; the absolute value of that factor and its first jet
+identify the scalar weight representation. They do not, by themselves,
+determine the complete physical Book source or its memory, active-cut, heat,
+preparation and work maps.
+
+The [executed full128 normalization/source calculation](A4D_FULL128_NORMALIZATION_AND_TRUE_BOOK_SOURCE_2026_10_21.md)
+withdraws the earlier blanket claim that this scalar common mode necessarily
+contributes to the actual fixed-z complementary determinant. For the true
+normalized complement, the full operator normalizer is retained and a common
+right factor (W\mapsto WL), including a field-dependent scalar, leaves both
+the determinant and its first source invariant. The complete actual price and
+its other derivatives still require the same admitted execution; this result
+does not identify the Book03 Info law or close its preparation/clock/work
+terms.
 
 The companion [common-map gate](A4D_NEXT_COMMON_MAP_CONSTRUCTION_GATE_2026_10_21.md)
 states the smallest remaining scientific task: one differentiable,
 same-execution map from the original 42 field directions and admitted inputs
 to the complete report instrument, every outcome, retained work/archive,
 primitive ledger, clock and absolute Book03 valuation. It must satisfy
-operator/source identity, absolute price/source recovery, and every
-independent-input equation on the same boundary. The full128 port-ratio
-rigidity result supplies necessary ratio laws but neither the absolute
-normalizer jet nor a physical Book03 selection. The cap-one N=1 CQ compiler,
+operator/source identity, complete price/source recovery, and every
+independent-input equation on the same boundary. The cap-one N=1 CQ compiler,
 full128 tape, causal archive and continuum constitutive model remain separate
 until that map identifies and transports their complete sources.
 
-These additions supersede only the earlier claim that the finite Ward defects
-had not yet been computed. They do not close general rough refinement,
-construct smooth joint roots, prove physical input admission, or establish
-GR_closed=true.
+The finite Ward replay supersedes the earlier claim that those defects had
+not yet been computed. The separate full128 calculation corrects the
+scalar-normalizer inference above. Neither result closes general rough
+refinement, constructs smooth joint roots, proves physical input admission,
+or establishes GR_closed=true.
 
 
-### Normalized coherent records leave an absolute-source kernel
+### Normalized coherent records and the true full128 complement
 
-The [absolute-source lemma](A4D_ABSOLUTE_BOOK_SOURCE_NONIDENTIFIABILITY_2026_10_21.md)
-is the coherent-amplitude specialization of the branch-identifiability
-boundary. Requiring only the normalized record
-\(V=\sum_\omega\sqrt{q_\omega}\,|\omega\rangle u_\omega\) forces
-\(w_\omega=a(y)\sqrt{q_\omega}\), equivalently
-\(I_\omega=C_\omega+\tfrac12\log_\varphi q_\omega+J(y)\), but leaves the common
-positive factor \(a=\varphi^J\) arbitrary. Any smooth change of \(J(y)\) is
-invisible to normalized open-record predictions and changes the absolute
-log-norm source; if it enters the actual feedback operator, it also changes
-the fixed-\(z\) determinant source. This does not conflict with the general
-finite-graph theorem: the latter says that ratio jets plus actual charge jets
-and one absolute anchor value/first jet are the minimal data that remove this
-kernel.
+The [normalized-vector lemma](A4D_ABSOLUTE_BOOK_SOURCE_NONIDENTIFIABILITY_2026_10_21.md)
+remains valid for a scalar amplitude representation: requiring only a
+normalized record \(V=\sum_\omega\sqrt{q_\omega}\,|\omega\rangle u_\omega\)
+forces \(w_\omega=a(y)\sqrt{q_\omega}\), equivalently
+\(I_\omega=C_\omega+\tfrac12\log_\varphi q_\omega+J(y)\). It does not imply
+that this factor is an independent physical degree of freedom in the native
+complement.
 
-The lemma is exact and structural, with no separate executable receipt. It
-does not prove that Book03 leaves \(J\) free: the owned memory-algebra sum,
-quadratic response and complete feedback partition must still determine
-\(J,DJ\) on the original fully paid full128 execution. This carrier remains
+The full128 calculation above derives the actual normalized determinant
+using \(N=W^*W\), \(A=i^*W\), and
+\(J=-128\log\det((1-z)N+zA^*A)+128\log\det N\). A common scalar factor
+cancels from its value and complete first source. The earlier formula for
+\(D[-\log\det(I-zaF)]\) remains algebraically valid for a separately
+defined family \(aF\), but such a family was not derived by scaling the
+native amplitudes in the original complement \(F=I-A^*A\). A real physical
+attenuation changes the complement and must retain and price its failure
+histories.
+
+Thus normalized-record data alone still do not identify the complete native
+Book ledger, but the missing full source cannot be reduced to a freely chosen
+scalar normalizer. The unchanged primary HJR preparation source remains
+nonzero, so a normalization-only repair fails on that tested configuration;
+other jointly solved native executions remain open. The full Book03
+memory-algebra sum, complete feedback and actual clock/work valuation must
+still be evaluated on one admitted full128 execution. This carrier remains
 distinct from the cap-one N=1 CQ compiler.

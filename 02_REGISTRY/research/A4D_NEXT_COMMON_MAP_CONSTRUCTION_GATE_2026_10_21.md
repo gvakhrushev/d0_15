@@ -36,8 +36,17 @@ below. No source-preserving identification with the original cap-one N=1
 record, the original full128 tape, or the native Book03 stack is asserted.
 The result therefore narrows the next calculation from implementing the
 fixed processor to deriving its **native resource writer and price on the
-same complete history**. The actual Book03 information, absolute anchor,
-and native selection remain independent obligations.
+same complete history**. The actual Book03 information, its complete
+admitted price and source, and native selection remain independent obligations.
+
+The [executed full128 normalization/source result](A4D_FULL128_NORMALIZATION_AND_TRUE_BOOK_SOURCE_2026_10_21.md)
+corrects the proposed common-scalar repair: for its true normalized
+complementary determinant, \(W\mapsto aW\) leaves both value and full first
+source invariant. The scalar positive-weight graph theorem does not by itself
+identify the full Book source, and a freely chosen scalar anchor cannot
+replace the same-execution valuation. The tested primary HJR preparation
+source remains nonzero, so this closes only that normalization-only repair,
+not the native resource-writer or Book03 gate.
 
 ## Consumed result: the null source fibre is an additional readout test
 
@@ -80,7 +89,7 @@ Known negative controls must stay in force: (i) a fixed four-G/two-CNOT word mat
 
 ## Gate B — complete absolute Book03 price
 
-For the actual outcomes omega, use their actual probabilities q_omega, costs c_omega, and admitted information values I_omega. Compute the literal complete price and its derivative, including the absolute partition/normalization term, preparation, controller, clock, compiler, failures, retained work and old archive.
+For the actual outcomes omega, use their actual probabilities q_omega, costs c_omega, and admitted information values I_omega. Compute the literal complete price and its derivative, including the partition/normalization term dictated by that execution, preparation, controller, clock, compiler, failures, retained work and old archive. Do not add a common scalar normalization as a free source term.
 
 The existing formalization makes this dependence explicit: `book03PathWeight`
 accepts `info` as an argument and defines
@@ -142,7 +151,8 @@ where possible:
 4. the resulting upstream price derivative \(D P_{\rm in}\), retained
    separately from the vanishing downstream processing source;
 5. the literal Book03 branch data \((H,q_H,c_H,I_H)\) and its full source
-   on this same tape, including the absolute anchor and clock/work terms;
+   on this same tape, including every normalization, clock and work
+   derivative dictated by that execution;
 6. the response of the complete record/price along every admitted
    same-metric/same-source null fibre direction, with the native volume,
    cut and clock transport included;

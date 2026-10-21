@@ -186,45 +186,53 @@ This section consumes, rather than duplicates, the 21 October finite-source/cova
 The companion [full128 port-gain result](A4D_FULL128_PORT_GAIN_MARKER_RIGIDITY_2026_10_21.md)
 examines the original nonblank pair \(K_{0,k}=pL_k,\ K_{1,k}=\sqrt pL_k\),
 with charges \(1,2\), under its supplied analytic cost-marker family. It
-derives three distinct necessary relative gains: coherent-amplitude binding
-\(\Delta I=3/2-t/(2\ln\varphi)\), scalar-probability binding
-\(\Delta I=2-t/\ln\varphi\), and an extra marker on the already executed
-Kraus branch \(\Delta I=1\). They coincide at the uniform marker setting
-but disagree at \(t=2\ln\varphi\). A common absolute normalizer cannot alter
-these branch-ratio conditions.
+distinguishes four necessary relative-gain laws with their typed bases:
+coherent-amplitude binding \(\Delta I=3/2-t/(2\ln\varphi)\),
+scalar-probability binding \(\Delta I=2-t/\ln\varphi\), an extra multiplier
+on the ORIGINAL UNMARKED Kraus pair to produce the marked probability law
+\(\Delta I=1-t/(2\ln\varphi)\), and preservation of a base already
+representing the desired record \(\Delta I=1\). At \(t=\ln\varphi\) the
+first two equal 1 while the unmarked-to-marked and preserve-base gains are
+\(1/2\) and 1; at \(t=2\ln\varphi\) the four values are \(1/2,0,0,1\).
+The former common three-way uniform calibration is withdrawn. A common scalar
+multiplier cannot change branch-ratio conditions.
 
-The same result retains the derivative of any actual common factor in the
-closed-loop determinant source. It does not determine which map Book03 uses,
-supply the missing native gain operator, or identify this full128 carrier
-with the cap-one N=1 CQ compiler above. The marker family is not declared a
-compulsory physical operation. The branch-gain and full closed-loop source
-must still be derived from one admitted execution before any physical
-selection or GR conclusion. The port-ratio calculation is exact algebra;
-it has no separate executable receipt. GR_closed=false.
+The port-ratio result does not determine the absolute source or which map
+Book03 uses, and it does not identify this full128 carrier with the cap-one
+N=1 CQ compiler above. The [executed full128 normalization/source calculation](A4D_FULL128_NORMALIZATION_AND_TRUE_BOOK_SOURCE_2026_10_21.md)
+shows that a common scalar factor on the amplitude map cancels from the true
+normalized complementary determinant and its first source. The older
+derivative formula for a separately scaled (F\mapsto aF) remains valid for
+that separately defined operator family; it was not derived by scaling the
+native amplitudes in the original (F=I-A^*A). A real attenuation changes
+the execution and must retain and price its failures. The marker family is
+not declared compulsory. The complete Book source must still be derived from
+one admitted execution before physical selection or any GR conclusion.
+GR_closed=false.
 
 
-### 8. Relative branch data do not fix the absolute source
+### 8. Scalar branch data and the actual full128 source
 
-The [Book03 source-identifiability theorem](A4D_BOOK03_SOURCE_IDENTIFIABILITY_THEOREM_2026_10_21.md)
-proves that consistent ratios on a connected positive history support
-reconstruct all branch weights only up to a common positive factor. The
-actual charge jets and ratio jets, plus one absolute normalizer value and its
-first jet, are necessary to identify the complete first source. The closed
-loop observes the common mode through its determinant derivative. This
-formalizes the distinction between the relative-gain laws in section 7 and
-the native absolute Book03 source; it does not choose that source.
+The [corrected Book03 source-identifiability theorem](A4D_BOOK03_SOURCE_IDENTIFIABILITY_THEOREM_2026_10_21.md)
+proves the graph statement for scalar positive weights: consistent ratios on
+a connected positive support determine those weights up to one common factor.
+An absolute value and first jet identify that scalar representation; they do
+not determine the complete physical first source or its memory, active-cut,
+heat, preparation and work maps.
 
-The companion [absolute-source lemma](A4D_ABSOLUTE_BOOK_SOURCE_NONIDENTIFIABILITY_2026_10_21.md)
-makes the amplitude-only kernel explicit: normalized coherent-record
-matching leaves \(w_\omega=a(y)\sqrt{q_\omega}\), or
-\(I_\omega=C_\omega+\tfrac12\log_\varphi q_\omega+J(y)\). A changing \(J\)
-preserves normalized open-record predictions but changes the absolute and
-closed-loop source. This is non-identifiability from normalized data, not a
-no-go for Book03; the native memory sum, quadratic norm, and full paid ledger
-must determine \(J,DJ\) on one admitted full128 execution.
+The [normalized-vector lemma](A4D_ABSOLUTE_BOOK_SOURCE_NONIDENTIFIABILITY_2026_10_21.md)
+still says that normalized coherent-record matching alone leaves
+\(w_\omega=a(y)\sqrt{q_\omega}\), or
+\(I_\omega=C_\omega+\tfrac12\log_\varphi q_\omega+J(y)\), within that
+scalar representation. The executed full128 calculation above derives the
+actual normalized complementary source using \(N=W^*W\) and \(A=i^*W\); a
+common factor \(W\mapsto aW\) cancels from its value and full first source.
+Thus the scalar representation ambiguity is not itself a physical feedback
+source. A physical change to the instrument or ledger still requires its own
+complete same-execution price.
 
 The [same-execution construction gate](A4D_NEXT_COMMON_MAP_CONSTRUCTION_GATE_2026_10_21.md)
-requires the complete field-to-instrument-and-price map, including all
+still requires the complete field-to-instrument-and-price map, including all
 outcomes and independently admitted inputs, before the finite source can be
 compared with the original 42 rows. It remains separate from the port-ratio
 test and from the cap-one N=1 compiler. GR_closed=false.

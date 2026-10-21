@@ -540,3 +540,18 @@ processing-source theorem with real failures and independent inputs, not
 full physical D0 selection; `GR_closed=false`. The next same-history
 resource-writer, complete-price and Book03 binding calculation is specified
 in the [common-map construction gate](A4D_NEXT_COMMON_MAP_CONSTRUCTION_GATE_2026_10_21.md).
+
+## Full128 normalization/source correction
+
+The [executed full128 normalization/source calculation](A4D_FULL128_NORMALIZATION_AND_TRUE_BOOK_SOURCE_2026_10_21.md)
+reconstructs the actual operator normalizer and differentiates the true
+normalized complementary Book determinant. For \(N=W^*W\) and \(A=i^*W\),
+its full source is invariant under a common scalar \(W\mapsto aW\); this
+normalization cannot supply a free compensating source. The unchanged primary
+HJR configuration still has a strictly negative independent preparation
+derivative for sufficiently small positive matter amplitude, so that specific
+normalization-only repair fails. This does not rule out other jointly solved
+native Book executions. The scalar branch-weight ratio theorem remains a
+separate statement and does not determine the full Book memory, cut, heat,
+preparation, work, or clock map. The same-history resource-writer and complete
+Book03 binding gate above remains open; `GR_closed=false`.
