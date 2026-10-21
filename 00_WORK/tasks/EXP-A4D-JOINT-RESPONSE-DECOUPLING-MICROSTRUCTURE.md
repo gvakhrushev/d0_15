@@ -4448,3 +4448,45 @@ price. The actual compulsory Book03 branch valuation/cut, common native
 controller, independent input/apparatus equations and source-normalized
 raw216 refinement remain the same open closure gate. No acceptance gate
 is promoted. Draft #334; `GR_closed=false`.
+
+## Bounded continuation: variational selection and native clocks — 2026-10-21
+
+Phase: native realization / final same-execution composition within this
+existing scientific owner and Draft #334. Primary continuation artifact:
+`02_REGISTRY/research/A4D_VARIATIONAL_SELECTION_AND_NATIVE_CLOCK_SYNTHESIS_2026_10_21.md`;
+packet: `02_REGISTRY/research/sources/d0_variational_selection_synthesis_2026-10-21/`.
+
+Input calculations are frozen at `441bdef5a02bef09a74ebe48dcf4d5527ba18988`.
+Concurrent `c2818755` (stronger explicit paid-descent/retained-code/cut test)
+and `2961dc6e` (typed Brinkmann sign/source correction) are consumed and
+preserved without rerunning their suites or claiming their results anew.
+Four later sources at c7e0c3d2 are separately frozen for applications of the
+exact double-zero geometry and actual original Golden PF regularity.
+All subsequently fetched work through fb0f45b7 is preserved.
+
+The bounded proofs cover the original full128 coherent-input price, READY
+amplitude/full-sector initialized-cut binding, actual moment-catalogue CQ
+secants, original sigma-minus N=1 material remainder in a declared discrete
+negative norm, and a CAR16 external spatial-frame clock/coframe identity.
+They do not identify these carriers. The source convention retains
+`F_cart(x,y)=F_null(-x,y)`; the physical raw216 norm is unchanged.
+
+The intended substitution is a precise route correction for Gate A/B/C:
+exclude the shown same-price/same-range repairs; consume the new exact
+double-zero three-row construction; apply the actual native PF density
+sequence to the weak material and finite clock bounds. A new exact
+volume-preserving ambient coframe row is E_v=-2h/e+O(h^2) at r=1, so the
+projected representative is not secretly an all42 root. The remaining
+15+24 ambient components (at most 33 after the six Lorentz Noether identities) must be solved
+while maintaining the sheet, currents and fixed collar. Restricting the
+constant sheet action supplies no equation. The paid physical clock,
+selected full Book price, complete controller/state lift and coupled
+gauge/boundary inverse remain unproved; the actual normalized-PF bound
+is now discharged on the explicitly chosen original-history sequence. No new lapse, action,
+initial seed or task owner is introduced.
+
+Smallest final check: replay only the six bounded entrypoints through
+`check_synthesis.py` against twenty original and four separate late frozen source files, verify their
+exact receipts and scoped independent reviews, then run affected structural
+and link checks. The original large factory/geometry/full-history/Lean
+suites are unchanged. `GR_closed=false`; lifecycle remains IN_PROGRESS.

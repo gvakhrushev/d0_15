@@ -1,0 +1,31 @@
+{
+  "repository": "gvakhrushev/d0_15",
+  "input_ref": "c7e0c3d2f6bcfbcc8bd43034ff72da85b8cdd18a",
+  "layout": "late_inputs/<original repository path>; separate late analytical application, original twenty inputs and receipts remain pinned at 441bdef5",
+  "sources": [
+    {
+      "path": "02_REGISTRY/research/A4D_RANK2_EXACT_FINITE_DOUBLE_ZERO_UNIMODULAR_PF_SYNTHESIS_2026_10_21.md",
+      "bytes": 12970,
+      "sha256": "dcfc4ed42147d047fae32c11b10c25a9d77df6a2dc3009ab6ad0c7d16da2af31",
+      "git_blob": "15d38e700c4024b539c6cbf3be36aa3afcb63ad0"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_ORIGINAL_GOLDEN_PF_DISCRETE_C2_REGULARITY_AND_RANK2_MATERIAL_SOURCE_2026_10_21.md",
+      "bytes": 15032,
+      "sha256": "335f1c71e3bbd9b9ffa938a50f6718cb0d9cef862bd7544061254e771b4ae511",
+      "git_blob": "28dc837c770a6e4cfe1e6475df52167c0b3fb099"
+    },
+    {
+      "path": "02_REGISTRY/gr_assembly/sources/d0_original_golden_moving_mean_j2_2026-10-19/theorem.md",
+      "bytes": 24624,
+      "sha256": "b7a068874351e54694c093ed67d14f488a57287ad091cd77c3ff65ef33658fe8",
+      "git_blob": "1eb92875e745bed2b72319ea9de64a3c41a9cc46"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_star_rank2_seam_2026-10-21/check_exact_null_sheet_unimodular.py",
+      "bytes": 8047,
+      "sha256": "098d11cd21c4bfc07f24ba32b23f9abe08eecb527bff451a1278bd8ffcdbbf05",
+      "git_blob": "7f2a6a2b825cb282bb29ff5518c57251cbb19b2a"
+    }
+  ]
+}

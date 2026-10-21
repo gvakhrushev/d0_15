@@ -1,0 +1,116 @@
+{
+  "status": "PASS_PAID_THREE_NODE_AND_WEAK_MATERIAL_SOURCE_IDENTITIES",
+  "source_snapshot": "441bdef5a02bef09a74ebe48dcf4d5527ba18988",
+  "source_sha256": {
+    "02_REGISTRY/research/A4D_PAID_MOMENT_FIELD_WRITER_2026_10_21.md": "4ec6622ae2ff4f75d615bbd2b207a071a154df56e59d74f0eb76fab6c9f95d82",
+    "02_REGISTRY/research/sources/d0_paid_moment_field_writer_2026-10-21/code/PAID_CODE_AND_MOMENT_WRITER.md": "e95f0486456c53cf0ce40023bab08ac744fd6189b397d29a8773446c168244a0",
+    "02_REGISTRY/research/sources/d0_paid_moment_field_writer_2026-10-21/moments/EXACT_MOMENT_SOURCE_CONSTRUCTION.md": "8c4c3cf03ebf637de6917776f13533d8b9f20cd0e8790025cf64a092915aef15",
+    "02_REGISTRY/research/A4D_SAME_EXECUTION_SPATIAL_WEIGHTS_AND_COMPLETE_SOURCE_2026_10_21.md": "42c9b9745f3c9ee78b868e991485bbaf8b77810f4261204d913fc87fc44377a1",
+    "02_REGISTRY/research/sources/d0_native_joint_field_minimum_2026-10-20/JOINT_FIELD_MINIMUM_OBSTRUCTION.md": "d14d72318229ac6102d38aa25f84e3617116257dea6a40fb4d3a6d1d3fe1fb54",
+    "02_REGISTRY/research/sources/d0_star_rank2_seam_2026-10-21/check_global_star_pf_jump.py": "8f47b84046bd8f4c2979cb3fdafa0ecb8df73dcb67ff5cc773048c30fd3d5390"
+  },
+  "exact_detector": {
+    "r0": "0.0000018512395784882030762843950549834036617169798842718979832305376579121737840",
+    "lambda_finite": "-23.4164067518840749728955820648952527442631785139903918337831355453544591222",
+    "rf": "2.9951299521267928114842057851444512590512515997849020881038948587365060E-10",
+    "mixed_report_hessian": "3.0670130709778358389598267239879180892684816381797397382183883353461822E-7",
+    "report_second_along_1_1": "6.1340261419556714350639361060736172183394667047469529853762168149749670E-7",
+    "scope": "Exact source-jet diagnostic at tau=1/64; general paid theorem uses the owned negative cone and any strict fixed tau."
+  },
+  "paid_three_node": {
+    "nu": "41/64",
+    "delta": "1/128",
+    "gamma": "1/3",
+    "central_price_difference": "-31463/2415919104",
+    "strict_witness_advantage": "44519/4831838208",
+    "scope": "Exact Taylor-inequality diagnostic; no full factory size or field M4 bound is asserted."
+  },
+  "discrete_weak_identity": {
+    "summation_by_parts_value": "120/187",
+    "alternating_exact_controls": [
+      {
+        "n": 8,
+        "strong_norm_squared": "16/49",
+        "dual_norm_squared": "1/784"
+      },
+      {
+        "n": 16,
+        "strong_norm_squared": "16/49",
+        "dual_norm_squared": "1/3136"
+      },
+      {
+        "n": 32,
+        "strong_norm_squared": "16/49",
+        "dual_norm_squared": "1/12544"
+      },
+      {
+        "n": 64,
+        "strong_norm_squared": "16/49",
+        "dual_norm_squared": "1/50176"
+      }
+    ]
+  },
+  "actual_nonlinear_pf_slopes": {
+    "original_price": "sigma-minus N=1 minus binary entropy; fixed positive prefactor cancels in F_y/F_x0",
+    "canonical_pullback": "x=-tau*f/rho, y=0",
+    "test_f": "f_h=h/5; actual geometry is not resimulated",
+    "rho_values": [
+      1,
+      2
+    ],
+    "slope_derivative_at_zero": "-8.01836968056285101250888270572720060461909605795081993135157906862054470631",
+    "predicted_strong_limit": "0.0801836968056285101250888270572720060461909605795081993135157906862054470632",
+    "rows": [
+      {
+        "n": 16,
+        "strong_norm": "0.0803053878731256193045016055478123884025993884727739541030990772014578688",
+        "negative_norm": "0.0025095433710351756032656751733691371375812308897741860657218461625455584",
+        "negative_norm_over_h": "0.0401526939365628096522508027739061942012996942363869770515495386007289344"
+      },
+      {
+        "n": 32,
+        "strong_norm": "0.0802445423040585548516432860772469381644769676145777354438200905051309888",
+        "negative_norm": "0.0012538209735009149195569263449569834088199526189777771163096889141426717",
+        "negative_norm_over_h": "0.0401222711520292774258216430386234690822384838072888677219100452525654944"
+      },
+      {
+        "n": 64,
+        "strong_norm": "0.0802141195460175185745435159640630897267937055736515454128850088083205248",
+        "negative_norm": "0.0006266728089532618638636212184692428884905758247941526985381641313150041",
+        "negative_norm_over_h": "0.0401070597730087592872717579820315448633968527868257727064425044041602624"
+      },
+      {
+        "n": 128,
+        "strong_norm": "0.0801989081736169625613849797498941293510003781377139834927992066288510208",
+        "negative_norm": "0.0003132769850531912600054100771480239427773452271004452480187469008939493",
+        "negative_norm_over_h": "0.0400994540868084812806924898749470646755001890688569917463996033144255104"
+      },
+      {
+        "n": 256,
+        "strong_norm": "0.08019130248907127985713403982517683931589135784709317180580975037360896",
+        "negative_norm": "0.0001566236376739673434709649215335485142888503082951038511832221686984550",
+        "negative_norm_over_h": "0.04009565124453563992856701991258841965794567892354658590290487518680448"
+      },
+      {
+        "n": 512,
+        "strong_norm": "0.08018749964721203792719582931422529540990007708184560657392222216965376",
+        "negative_norm": "0.0000783081051242305057882771770646731400487305440252398501698459200875525",
+        "negative_norm_over_h": "0.04009374982360601896359791465711264770495003854092280328696111108482688"
+      },
+      {
+        "n": 1024,
+        "strong_norm": "0.080185598226385810642363722140058198749926091610006980474232978583544832",
+        "negative_norm": "0.0000391531241339774466027166612012002923583623494189487209346840715739965",
+        "negative_norm_over_h": "0.040092799113192905321181861070029099374963045805003490237116489291772416"
+      }
+    ]
+  },
+  "scope": {
+    "autonomous_controller_selection_proved": false,
+    "best_separately_compiled_root_excluded": false,
+    "raw216_norm_changed": false,
+    "whole42_finite_root_or_inverse_proved": false,
+    "actual_AF_uniform_PF_lower_bound_proved": false,
+    "GR_closed": false
+  }
+}

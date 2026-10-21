@@ -437,3 +437,36 @@ receipts and mathematical reviews. Scientific inputs remain pinned at
 cut and complete-price identification, followed by its independent input
 equations and original-carrier physical refinement. The prior retained-code
 continuity obstruction remains. Keep Draft #334 and `GR_closed=false`.
+
+## Variational selection and native-clock continuation — 21 October 2026
+
+The [integrated synthesis](A4D_VARIATIONAL_SELECTION_AND_NATIVE_CLOCK_SYNTHESIS_2026_10_21.md)
+consumes the concurrent explicit paid-descent and retained-code/full-column
+results above. Its original native128 all-input finite price comparison and
+same-range Book invariant remove two further attempted repairs. They do not
+supply the selected physical price.
+
+The later exact double-zero construction now supplies two matter rows
+and the radial coframe row, with full nonlinear/affine equality of all42
+ambient first sources on that sheet. The new synthesis derives a concrete
+remaining volume-preserving coframe source, E_v=-2h/e+O(h^2) at r=1.
+Thus the 15+24 remaining components, with their gauge identities, must be
+solved as ambient equations on the sheet; its restricted action is constant.
+
+Two additional positive inputs have explicit proofs: the original nonlinear
+material remainder obeys
+`||R_A,h||_-1,h <= 2 L tau ||(f_h/rho_h)V_A||_2,h`, allowing O(h) weak
+consistency with jumping PF weights under the actual weighted bound. The
+original exact-cell theorem and its new explicit Golden schedule now
+discharge that density premise and give an O(h^4) PF-only weak correction;
+the finite weighted-clock perturbation is also O(h). In addition,
+native CAR Dirac readouts have a metric/spin clock commutator with an exact
+formal moving-coframe compensation. The physical clock, the distinct
+Clifford-versus-exterior frame transport, and a smooth complete-state lift
+are still to be constructed and paid. Neither an auxiliary weak norm nor
+an external-frame operator identity replaces the original physical gate.
+
+Use these results only in the existing same-execution source/constraint
+construction and its eventual coupled gauge/boundary correction. Do not
+repeat the already established field descent, coherent input search or
+same-range amplitude refit. `GR_closed=false`; PR #334 stays Draft.

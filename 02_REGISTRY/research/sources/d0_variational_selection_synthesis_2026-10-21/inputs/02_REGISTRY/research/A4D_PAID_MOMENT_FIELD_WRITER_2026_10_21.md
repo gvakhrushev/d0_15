@@ -1,0 +1,368 @@
+# A paid moment field writer: exact finite nodes, all42 source secants and the actual Book cut
+
+21 October 2026. Existing Draft PR #334 and its existing joint-response
+owner. Phase: native realization and source composition. Scientific input
+311b1d3f; concurrent rational-resource writer e37991ae preserved and consumed.
+**Positive construction on the declared addressed Golden/CNOT/factory and
+counted-CQ interface. Physical Book03 selection and GR remain open.**
+
+## 1. The construction and the parent premise it replaces
+
+The [exact pure-programme obstruction](A4D_EXACT_RESOURCE_WRITER_OBSTRUCTION_2026_10_21.md)
+does not require abandoning the original 16+24+2 source. Its forbidden
+relative amplitude belongs to a particular supplied pure Julia programme.
+The construction here instead writes actual CAR moment resources from
+declared blanks. A fixed positive polynomial processor consumes them and
+has the original full ambient second jet at the primary family.
+
+At each allowed fixed dyadic mesh and finite catalogue, on the owned
+positive-density chart:
+
+* every requested component moment in the catalogue is prepared **exactly**
+  when its value belongs to \(\mathbb Q(p)\), \(p=\varphi^{-1}\);
+* all catalogue rows, unused resources, purifiers, code, factory failures,
+  full RIGHT128 references and literal local trace copies are paid
+  and retained;
+* the actual complete counted-CQ preparation baseline is identical for
+  every code compared within this catalogue;
+* the original full42 Euler covector and second variation are recovered
+  by controlled price differences of actual finite programmes;
+* the normalized Book complementary determinant of these complete
+  programmes has exactly zero code contrasts on their specified common
+  initialized-workspace cut.
+
+The [proof packet](sources/d0_paid_moment_field_writer_2026-10-21/README.md)
+contains the literal code and row writer, the original-carrier moment
+dictionary, source transport, complete price and separate Book calculation.
+The changed parent premise is the externally supplied moving quantum
+programme/material bank and its unknown upstream CQ price in the
+[polynomial source compiler](sources/d0_causal_native_weighted_synthesis_2026-10-21/native_source/NATIVE_POLYNOMIAL_FIRST_JET.md).
+Those resources are now generated on the stated finite-word interface.
+The construction does not implement the excluded pure programme or the
+old unknown-input Julia channel.
+
+## 2. Real finite code writing and exact moment preparation
+
+The owned paid Golden parity factory first supplies a known one \(c=1\).
+Retain every failed attempt and all work. For fresh \(u=b=0\), let
+\(A=\operatorname{CNOT}(c,u)\) and
+\(B=\operatorname{CNOT}(u,b)\). Chronological execution gives
+
+\[
+ (A,B): (1,0,0)\longmapsto(1,1,1),\qquad
+ (B,A): (1,0,0)\longmapsto(1,1,0).
+ \tag{1}
+\]
+
+Each code bit therefore costs one use of each of the same addressed
+gates. Full complementary input columns remain reversible. Keep the
+generated \(u=1\) work untouched afterwards. Distinct codes retain
+distinct ordered words; equal gate counts are not an identification
+of their Book memory classes.
+
+For a moment \(t\in\mathbb Q(p)\cap[-1,1]\), prepare the positive
+partition \((1+t)/2,(1-t)/2\) by the existing exact Golden-prefix row
+factory. A common denominator, prefix depth, label width and cap work
+for the entire finite catalogue. Prepare **all** rows before choosing
+the live row, including a genuinely fresh bank at each consumed factor
+and local trace-copy role. The row herald law is the actual
+\(D/2^\ell\); finite retries and their expenses are retained.
+
+The generated sign controls only a fixed phase on a known CAR pair:
+
+\[
+ |\Xi_t\rangle
+ =\sum_{\sigma=\pm}
+   \sqrt{(1+\sigma t)/2}\,|\eta_\sigma\rangle
+   (|A\rangle+\sigma|B\rangle)/\sqrt2 ,
+ \quad
+ \langle |A\rangle\langle B|+|B\rangle\langle A|\rangle=t.
+ \tag{2}
+\]
+
+The orthogonal \(\eta_\sigma\) include the actual raw labels, Golden
+suffix and work. Equation (2) does not posit a clean qubit containing
+the two displayed square roots. Its active CAR marginal is generally
+mixed, while the complete retained preparation is pure conditional on
+the real factory tape. A fixed equality ladder and controlled-SWAP
+multiplexer, expanded into paid Boolean factories, select the row.
+No row is heralded conditionally on a live field code.
+
+Different words in (1) begin with the same declared quantum blanks.
+This is an explicit admissible-word family within the addressed-gate
+interface; it is not a proof that one autonomous physical controller
+selects a prescribed code. The packet separately constructs a single
+fixed uniform-code instrument whose outcomes reach every catalogue
+node. Its unconditional price is the code-weighted average with the
+code-record entropy included, not one chosen node's conditional price.
+
+## 3. An injective 16+24+2 dictionary without the forbidden radical
+
+Keep the actual PF density \(\rho_z\), calibration \(s\), mesh \(h\),
+orientation and rest/null conversion \(T\) fixed. Replace the old
+creation-coordinate readout \(V\) by dimensionless component moments
+
+\[
+ D=V/(s\sqrt{\rho})=\eta_R(TE)^{-T},\qquad
+ E=T^{-1}\eta_R D^{-T}.
+ \tag{3}
+\]
+
+This is a locally invertible sixteen-coordinate chart. A fixed rational
+bound rescales its entries into the range of (2). The target source
+depends on these new coordinates through polynomials with coefficients
+in \(\mathbb Q(p)\); no \(\sqrt{\rho}\) state-preparation gate occurs.
+The change of readout is explicit, not equality of the old creation
+probe and the new moment state.
+Keep the original fixed calibration:
+\(g_{\rm read}=E^T\eta_{\rm null}E\) and the density-dressed native
+metric is \(\widehat g=s^{-2}g_{\rm read}\).
+
+For each of the four proper links, write six independent coordinates
+of \(K\in\mathfrak{so}(\eta_R)\) and decode
+
+\[
+ U(K)=(I+K/2)(I-K/2)^{-1}.
+ \tag{4}
+\]
+
+On the inherited primary links \(K^3=0\), (4) equals \(\exp K\).
+Its Cayley chart has an invertible six-dimensional differential, so
+these are all24 proper-link variations, not a restriction to the two
+nilpotent link directions of the solution family.
+
+For material copies start from the constructed original Fourier128
+vacuum prefix \(\sqrt p\,|1\rangle+p\,|14\rangle\). A fixed category
+bank has weights \(1/4,1/4,1/2\). In category \(A=0,15\), a coherent
+signed permutation routes the slack to \(\pm p|A\rangle\).
+Retain the category and sign purifiers. With sign mean
+\(t_{x,A}=4\psi_{A,x}/p\), the **original same-site** LEFT observable
+satisfies exactly
+
+\[
+ \mu_{x,A}
+ =\left\langle |x,1\rangle\langle x,A|
+                +|x,A\rangle\langle x,1|\right\rangle
+ =\frac{2\sqrt p}{L^4}\psi_{A,x}.
+ \tag{5}
+\]
+
+Clock population remains \(p\) and the full original RIGHT Gram remains
+\(I_{128}/128\). The CAR marginal is a different purified mixed
+preparation; the old pure material state is not claimed to have been
+prepared. Two independent complete copies reproduce the original
+quadratic material scalar. All routing garbage and every unused copy
+remain in the price.
+
+The literal original Fourier reference is used at \(L=4\). A paid
+reference family at \(L=2^n\), \(n\ge2\), starts from that exact base:
+append four fair site bits at each refinement and implement
+\[
+ |x\rangle\longmapsto\frac14
+       \sum_{\delta\in\{0,1\}^4}|2x+\delta\rangle .
+\]
+Every new site row has squared norm \(1/L^4\), and the full RIGHT Gram
+is unchanged. The same-site observables and source proof use precisely
+these two identities, so they apply on every such permitted mesh with
+the actual additional preparation included in the price. This is an
+explicit nested reference family. Its off-site correlations need not
+equal the original first64 Fourier choice on a finer mesh; no full
+archive/HJR or raw-216 equivalence follows from this local-moment
+transport.
+
+Here \(\psi\) denotes the actual native CAR/query amplitude; the
+calibrated continuum field is \(\Psi_{\rm read}=s^2\psi\).
+This is the inherited fixed-scale convention, not a changed source
+normalization.
+
+The fixed material chart is \(|\psi_A|<p/4\). It contains an open
+ambient collar around an explicit small, genuinely nonvacuum member
+of the already owned Einstein-null-scalar family. The packet gives
+its exact algebraic parameters. It is not the whole original material
+sphere. The original boundary/collar is fixed during free-site
+variations.
+
+## 4. Transport of the original full ambient second jet
+
+Set \(Z=\bigwedge^2(D^T\eta_R T)=\bigwedge^2E^{-1}\).
+At every primary coframe \((Z-I)^2=0\). The owned finite inverse lemma
+gives the full ambient two-jet of the original area using
+
+\[
+ \widetilde{\mathcal A}
+   =\frac{\bigwedge^2T}{s^2\rho}
+       \sum_{j=0}^{5}(-1)^j(Z-I)^j .
+ \tag{6}
+\]
+
+For links use
+
+\[
+ C_8(K)=I+2\sum_{j=1}^{8}(K/2)^j,\qquad
+ C_8(K)-U(K)=-2(K/2)^9(I-K/2)^{-1}.
+ \tag{7}
+\]
+
+Every derivative through order two of the remainder vanishes at
+\(K^3=0\): at most two inserted directions leave a run of at least
+three unchanged \(K\)'s. This covers arbitrary ambient directions and
+mixed coframe/link derivatives. Proper inverse factors use the
+original \(\eta_R\)-transpose identity and the same jet transport.
+No finite polynomial is asserted equal to the inverse on an open set.
+
+The original six-face star scalar becomes a finite moment polynomial
+\(\widetilde f\). The original material scalar is reproduced exactly:
+
+\[
+ q_z=\frac{s^2}{\rho_z h^2}
+   \sum_{a,r,t,A}\eta_{R,aa}D_{ar}D_{at}
+     (\psi_{A,z+e_r}-\psi_{A,z})
+     (\psi_{A,z+e_t}-\psi_{A,z}).
+ \tag{8}
+\]
+
+Use the existing positive signed-involution, majority and fixed-table
+compiler with these actual generated operands. Its original
+\(z,\tau,\sigma\), source ratio, orientation and local trace-copy
+weights remain. It yields
+
+\[
+ j_y^2 r_{\lambda}^{\rm poly}=j_y^2 r_{\lambda}^{\rm original}
+ \quad (y\in\Sigma_{\rm prim})
+ \tag{9}
+\]
+
+on all16 coframe, all24 proper-link and both material coordinates.
+This is a proved report/source transport. It is neither equality of
+unknown-input channels nor off-shell equality of the two actions.
+
+## 5. Complete finite price and all-row source differences
+
+Let \(T_{\rm fac}\) be the entire measured factory, failure and abort
+tape. Its probability law and the actual charged cost are independent
+of the selected code at a fixed catalogue. Every conditional complete
+work state is pure. Include every literal local implementation with
+its original integer multiplicity \(w_\lambda\). The exact price is
+
+\[
+ S_m(k)=B_m-\gamma_m\sum_\lambda w_\lambda
+           h_\varphi(r_\lambda^{\rm poly}(y_k)).
+ \tag{10}
+\]
+
+\(B_m\) includes the new writer, the whole catalogue, address/controller
+work, all failures, references, copies and actual clocks, minus the
+entropy of the complete factory tape. Its equality between codes is
+derived from this execution, not imposed by a subtraction.
+\(\gamma_m>0\) is the new actual readiness. Finite nested caps can make
+it at least one half, or arbitrarily close to one, with all increased
+resources paid. No refinement-uniform runtime bound is claimed.
+
+Use the rational coframe/Cayley/material chart above; its invertible
+Jacobian transports the result to the original raw-coframe and
+left-link Euler rows. For one common catalogue containing the exact \(\mathbb Q(p)\) nodes
+\(y\pm\delta v\), put
+\(F_h=\sum_\lambda w_\lambda h_\varphi(r_\lambda^{\rm poly})\).
+Then
+
+\[
+ \frac{S_m(k_+)-S_m(k_-)}{2\delta}
+ =-\gamma_m\frac{F_h(y+\delta v)-F_h(y-\delta v)}{2\delta},
+ \tag{11}
+\]
+
+\[
+ \left|
+ \frac{S_m(k_+)-S_m(k_-)}{2\delta}+\gamma_m D_vF_h(y)
+ \right|\le \gamma_m M_{3,h}\delta^2/6 .
+ \tag{12}
+\]
+
+The exact same paid \(B_m\) cancels only within this comparison.
+The original signed gain \(g_h\ne0\) is retained: dividing by the actual
+\(\Gamma_m=\gamma_m g_h\) gives error
+\(M_{3,h}\delta^2/(6|g_h|)\). In the original local-\(J_2\) convention,
+the [same-execution source owner](A4D_SAME_EXECUTION_SPATIAL_WEIGHTS_AND_COMPLETE_SOURCE_2026_10_21.md)
+fixes this gain as \(-d_0h'_\varphi(r_0)<0\), with
+\(d_0=(1-zL)(1-zM)\) and \(r_0=1-d_0\). Readiness is positive;
+the source sign is not changed to make a positive calibration.
+The packet also gives the paid dyadic
+fallback and its additional error \(E_h2^{-m}/(|g_h|\delta)\), including
+all local-copy multiplicities. Central second differences use the
+same exact-node construction and the ambient two-jet in (9).
+
+Thus the original stationary primary covector and the old configured
+CQ consumer's full Hessian are controlled limits of actual finite-price
+differences. The Hessian comparison has positive factor
+\(\gamma_m/\gamma_{\rm old}\); it is not an inertia claim for a
+different raw \(J_2\) action. A finite
+word selector has no claimed smooth derivative, and a finite sampled
+node is not declared an exact native stationary point. The original
+negative field directions survive this source transport; the previous
+full-field minimum exclusion remains in force.
+
+## 6. The actual Book term that can now be computed
+
+Keep the common initialized-work embedding \(i:H\to E_{\rm out}\)
+fixed, with code-work \(u=0\). Every branch reaching code writing has
+\(u=1\), including all later failures. Earlier abort branches are
+identical for every code. For the actual cost-marked complete map,
+
+\[
+ N_{k,t}=n(t)I,\qquad A_{k,t}=i^*W_{k,t}=A_{{\rm early},t}.
+ \tag{13}
+\]
+
+Consequently the complete normalized complementary determinant
+
+\[
+ J^{\rm init}_{k,t}
+ =r\log\det(n(t)I)
+  -r\log\det\!\left[(1-z)n(t)I
+       +zA_{{\rm early},t}A_{{\rm early},t}^*\right]
+ \tag{14}
+\]
+
+is **exactly independent of the code**, without discarding an early
+abort with nonzero blank overlap. The actual retained code work
+provides this property; no new flag or moving active cut is introduced.
+Here \(r\) is this circuit's actual fixed reference multiplicity and
+\(H\) is its declared common initialized input; neither is assigned
+the dimension 128 from a different execution.
+The statement applies to the complete composed map when the fixed
+processor preserves that work and the common charge schedule.
+
+The packet also proves a cut-fixing, factory-sector-preserving unitary
+equivalence of the complete amplitude stacks. It gives a sufficient
+criterion for equality of heat traces if an actual heat operator is
+derived covariantly from those stacks and charges. The Books do not
+identify their original Dirac/Hodge/scene heat operator with that
+particular function, so the criterion is not substituted for it.
+Neither (10) nor (14) assigns the missing branchwise Book03 Info.
+
+## 7. What is now available and what remains physical
+
+This is a concrete positive alternative to the excluded exact pure
+programme: an actual generated, injective42 moment interface with
+paid exact finite nodes, complete CQ prices and controlled source
+differences. The separate
+[rational orthogonal writer](A4D_PAID_RATIONAL_RESOURCE_WRITER_2026_10_21.md)
+approximates the original pure resources on a finite stencil. The
+present route uses exact moment values and a proved two-jet consumer;
+the two constructions are not identified.
+
+For physical closure the same execution still needs the compulsory
+primitive/address/controller admission, the original active-sector
+identification, its actual heat and ordered Book03 Info valuation,
+and the native stationary/constraint or selection law. A uniform-code
+reachability instrument proves possible outputs, not preference for
+Einstein fields. A fixed \(\mathbb Q(p)\) catalogue does not establish arbitrary
+continuous field actuation or physical time control under refinement.
+Independent apparatus/preparation coordinates outside the generated
+section retain their actual equations.
+
+The [common-map gate](A4D_NEXT_COMMON_MAP_CONSTRUCTION_GATE_2026_10_21.md)
+therefore gains a proved finite constructive input and a smaller
+specified Book test, while full native price selection, universal GR
+and the original raw-216 refinement remain open. PR #334 stays Draft;
+GR_closed=false.
