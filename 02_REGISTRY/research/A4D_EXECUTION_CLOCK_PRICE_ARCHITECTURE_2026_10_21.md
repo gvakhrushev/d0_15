@@ -165,11 +165,11 @@ Normal Python and `python -O` outputs are byte-identical in the local run. `RESU
 
 ## 8. Scope boundary: Book06's toral time operator is not this reporting-window compression
 
-Book06 §§06.8 and 06.8.F name the integer matrix `T=[[0,1],[1,-1]]` as the toral time operator; `det(T)=-1`, so `T` is invertible. This package §3 instead defines `T_M,d=P_M S^d P_M` on a finite open counter, with supplied `d>=1`. Every application advances a counter slot by `d`, so `T_M,d^k=0` once `kd>=M`: the compressed reporting shift is nilpotent.
+Book06 §06.8 names the integer matrix `T=[[0,1],[1,-1]]` as the toral time operator; `det(T)=-1`, so `T` is invertible. This package §3 instead defines `T_M,d=P_M S^d P_M` on a finite open counter, with supplied `d>=1`. Every application advances a counter slot by `d`, so `T_M,d^k=0` once `kd>=M`: the compressed reporting shift is nilpotent. Book06 §06.8.F separately identifies the Neumann-series index `k` as a phenomenological archive delay.
 
 There is no nonzero linear intertwiner in either direction. If `T_M,d X = X T`, then for any `k` with `kd>=M`, `0=T_M,d^k X=X T^k`, and invertibility of `T^k` gives `X=0`. If `T X=X T_M,d`, the same power gives `T^k X=X T_M,d^k=0`, again forcing `X=0`. In particular, no similarity or direct invariant-subspace identification can identify these two finite operators.
 
-This rules out using the forward-reporting overlap factor `r=max(M-d,0)` as Book06's forced tick by direct linear identification. It does not rule out a reversible dilation, an induced-channel map, or a separately derived subclock/active-cut transport. No such map or compulsory physical cut is established here; the complete Book `Cost/Info` selection and constitutive obligation in `gr_assembly` therefore remain open.
+Thus the reporting compression cannot be identified linearly with Book06's toral operator `T`. This does not identify the overlap factor `r=max(M-d,0)` with Book06's Neumann-delay index `k`: that comparison needs a same-execution map from the actual reporting history to the archive-return expansion. Neither that map nor a reversible dilation, induced-channel map, or compulsory physical cut is established here; the complete Book `Cost/Info` selection and constitutive obligation in `gr_assembly` therefore remain open.
 
 ## Original input owners at the pinned snapshot
 
