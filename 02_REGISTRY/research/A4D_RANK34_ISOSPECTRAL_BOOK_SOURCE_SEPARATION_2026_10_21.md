@@ -320,3 +320,37 @@ upstream Euler conditions must be composed on this **same** execution
 before (12) is used for GR. Both signed curvature owners, the
 full42 Einstein/CAR mathematical roots and the source convention
 remain unchanged. \`GR_closed=false\`.
+
+## 7. First quantitative native-heat cancellation test (conditional)
+
+The independently owned soldered Hodge operator gives, on its **actual
+specified** flat \(L=4,\ \beta=\log(2)/32\) positive-symbol chart, the
+off-diagonal heat source \(DH_{\rm heat}[H_{01}]=128/9\); see
+\`A4D_NATIVE_SOLDERED_HEAT_SOURCE.md\`, its exact ten-component
+calculation. The following is a **necessary condition**, not an
+identification of that heat with Book03's compulsory \(\Delta_N(V)\).
+
+If **one and the same selected execution** identifies that soldered heat
+and the original complementary polar feedback (11), and if its other
+independently priced terms have zero \(H_{01}\) source, stationarity
+requires \(DJ_{\rm comp}[H_{01}]=-128/9\). The sharp bound (15) then gives
+
+\[
+ \boxed{\sum_k|D\theta_k[H_{01}]|
+ \ \ge\ \frac{128}{9\,r_{\rm R}}\,
+              \frac{\sqrt{1-\zeta}}{\zeta}.}             \tag{16}
+\]
+
+With the **original** oldRIGHT multiplicity \(r_{\rm R}=128\), an
+illustrative (not physically selected) \(\zeta=1/2\) requires total
+principal-angle speed at least \(0.15713484026367724\ldots\).
+If extra genuine source \(DR_{\rm other}[H_{01}]\) is present, the
+numerator \(128/9\) in (16) must instead be
+\(|128/9+DR_{\rm other}[H_{01}]|\). No unpaid term is set to zero.
+
+Thus one can decisively kill a proposed same-execution native
+clock/writer using its **paid principal-angle velocities**, without
+building a new GR solution or differentiating every microscopic
+amplitude. Neither the equality of the heat carriers, the cut,
+fugacity, proper field variation, nor the remaining clock/input
+sources is supplied by this inequality. \`GR_closed=false\`.
