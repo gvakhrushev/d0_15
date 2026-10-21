@@ -28,3 +28,14 @@ The 108 exact rational coframe/Lorentz slots, 72 exact finite-holonomy slots and
 - SAME complete paid price coordinate pullback, not same alternative detector.
 - CURRENT STATE: exact owner-sign theorem; exact all-order K; five-mesh consistency of FULL defined N1 scalar CQ functional; exact material q_h=0 with nonzero full-price scalar1 first source; structural whole-slab connection compatibility.
 - STILL OPEN: absolute compulsory Book03 physical price and all clocks/controller/oldRIGHT/preparation; field-writing admission; general 40-by-site gauge/boundary inverse; true full42 finite exact rank-two root; uniform analytic continuum refinement and generic GR. GR_closed=false.
+
+
+## New all-time and PF-hostile controls
+
+The [same N=1 rank-two synthesis, section 8](../../A4D_RANK2_FULL_N1_CQ_42_SOURCE_FINITE_CONSISTENCY_2026_10_21.md) now gives the exact six-face finite boost closed form and leading coefficient
+  f_star,h(t)=h*3*(r(t)^4-1)*exp(-r(t)^2)/(4*r(t)^2)+O(h^2).
+The r=1 local-cell cancellation to O(h^2) is SPECIAL, not a global error estimate. More seriously, although a bounded, smoothly sampled positive PF density lets the FULL nonlinear material source remain O(h) on the tested rank-two class, a positive bounded density with a fixed neighbor jump (1,2) leaves NONZERO material Euler limits (both timelike and spatial examples). No claim is made that actual native AF weights have those jumps. It is a counterexample to positivity-only PF refinement and identifies a new parent input: original native PF regularity or true compensated field/source transport.
+
+    OPENBLAS_NUM_THREADS=1 python3 02_REGISTRY/research/sources/d0_star_rank2_seam_2026-10-21/check_global_star_pf_jump.py
+
+The checker proves its actual spatial boost commutator, symbolic leading coefficient and original sigma-minus Golden derivative, and checks the nonzero PF-jump limits using finite original CAR matter currents. The physical same-programme PF address dictionary, Book valuation, all42 exact joint finite roots and uniform compatible refinement remain separate.
