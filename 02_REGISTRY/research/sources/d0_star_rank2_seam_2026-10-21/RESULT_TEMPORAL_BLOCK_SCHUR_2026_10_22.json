@@ -1,52 +1,58 @@
 {
-  "status": "PASS_EXACT_TEMPORAL_LOCALITY_AND_NUMERICAL_BLOCK_SCHUR_DIAGNOSTIC",
-  "source": "existing configured local N=1 CQ original 6-face plus 2-real CAR independent-source",
-  "original_gauge_exact": "residual SO+(1,3)^(n-2), 6(n-2) redundancies",
-  "exact_temporal_locality": "Every time-cell price S_j depends only on fields j and j+1; D E_j / D x_k = 0 for |j-k|>1",
-  "runs": [
+  "status": "PASS_EXACT_TIME_LOCALITY_AND_BOUNDED_BLOCK_SCHUR_DIAGNOSTIC",
+  "pinned_original_source_blobs": {
+    "02_REGISTRY/research/sources/d0_star_rank2_seam_2026-10-21/check_full42_n1_single_internal.py": "da83e40379867f71b598fecd8430444ea027a4da",
+    "02_REGISTRY/research/sources/d0_star_rank2_seam_2026-10-21/full_n1_euler_analytic.py": "7ea28c981826c96b01bbdda67a92010dc7221095",
+    "02_REGISTRY/research/sources/d0_star_rank2_seam_2026-10-21/check_star_rank2_seam.py": "a57f0e3e845290923c2ac88d39ba5c08af4f6fd6"
+  },
+  "proof": "Each original N1 CQ cell uses only node j,j+1, thus interior Euler at j uses only j-1,j,j+1.",
+  "rows": [
     {
-      "n": 4,
-      "reduced_source_size": 114,
+      "intervals": 4,
+      "full_original_Euler": 126,
+      "omitted_exact_Lorentz_gauge": 12,
+      "gauge_source_dim": 114,
       "time_block_sizes": [
         36,
         36,
         42
       ],
-      "offband_max": 0,
-      "block_schur_cond": [
-        19700.43578479487,
-        589370.3463375487,
-        428954.7505656569
+      "off_tridiagonal_source_Jacobian_max": 0.0,
+      "all_block_schur_condition_numbers": [
+        19700.435794891135,
+        589370.3389289788,
+        428954.75204005267
       ],
-      "block_vs_dense_inverse_error_inf": 9.188738658849616e-11,
-      "jac_min_singular_at_Cauchy_seed": 0.0005921284443624295
+      "numerical_inverse_block_vs_dense_inf_error": 1.8712853488977998e-10,
+      "seed_jacobian_min_singular": 0.000592128445400558,
+      "genuine_Schur_root_proved": false,
+      "actual_G0_Book_compulsory_selected": false,
+      "uniform_h_inverse_proved": false
     },
     {
-      "n": 5,
-      "reduced_source_size": 150,
+      "intervals": 5,
+      "full_original_Euler": 168,
+      "omitted_exact_Lorentz_gauge": 18,
+      "gauge_source_dim": 150,
       "time_block_sizes": [
         36,
         36,
         36,
         42
       ],
-      "offband_max": 0,
-      "block_schur_cond": [
-        29295.249827883155,
-        1344606.9270007245,
-        790379.6925955198,
-        659186.4612512303
+      "off_tridiagonal_source_Jacobian_max": 0.0,
+      "all_block_schur_condition_numbers": [
+        29295.249814598854,
+        1344606.9382521266,
+        790379.6909531961,
+        659186.4624755225
       ],
-      "block_vs_dense_inverse_error_inf": 3.7061909097246826e-10,
-      "jac_min_singular_at_Cauchy_seed": 0.00030890367460084206
+      "numerical_inverse_block_vs_dense_inf_error": 2.2669155441690236e-10,
+      "seed_jacobian_min_singular": 0.000308903673059705,
+      "genuine_Schur_root_proved": false,
+      "actual_G0_Book_compulsory_selected": false,
+      "uniform_h_inverse_proved": false
     }
   ],
-  "scope": {
-    "calculations_at_Cauchy_seed_not_stationary_root": true,
-    "true_original_local_price_interface": true,
-    "arbitrary_4D_correlated_original_Book_price": false,
-    "rigorous_uniform_Schur_inverse": false,
-    "interval_validated_stationary_root": false,
-    "GR_closed": false
-  }
+  "GR_closed": false
 }

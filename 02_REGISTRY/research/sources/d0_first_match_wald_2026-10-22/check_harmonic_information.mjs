@@ -82,6 +82,36 @@ for(const r of native){
   check(dgap<3e-16,'native bounded all42 first-source coefficient-gap 20M');
   check(v>0 && v<0.0001,'original positive off-null report entropy not fitted');
 }
+
+// Independently enumerate the finite-cap score E[H_min(N,K)] and its
+// positive-tail certificate, then check a positive Bernoulli realization.
+function harmonicTrunc(q,K){
+  const x=1-q;let power=x,total=0;
+  for(let k=1;k<=K;k++){total+=power/k;power*=x;}
+  return total;
+}
+function cappedScoreDirect(q,K){
+  const x=1-q;let mass=1,total=0,h=0;
+  for(let n=0;n<K;n++){
+    total+=q*mass*h;
+    mass*=x;h+=1/(n+1);
+  }
+  return total+mass*h;
+}
+function Hn(n){let h=0;for(let j=1;j<=n;j++)h+=1/j;return h;}
+for(const q of [.02,.15,.37,.8]) for(const K of [32,128,512,2048]){
+  const x=1-q,score=harmonicTrunc(q,K),direct=cappedScoreDirect(q,K);
+  const tailBound=x**(K+1)/((K+1)*q);
+  close(direct,score,3e-13,'capped harmonic expectation equals finite series');
+  check(Math.abs(-Math.log(q)-score)<=tailBound+4e-13,'finite-cap positive harmonic tail bound');
+  const derivative=-(1-x**K)/q,eps=1e-6;
+  const numeric=(harmonicTrunc(q+eps,K)-harmonicTrunc(q-eps,K))/(2*eps);
+  close(numeric,derivative,2e-7,'finite-cap harmonic source derivative');
+}
+for(const n of [0,1,2,8,64,512]){
+  const bernoulliMean=Array.from({length:n},(_,j)=>1/(j+1)).reduce((a,b)=>a+b,0);
+  close(bernoulliMean,Hn(n),2e-14,'positive Bernoulli harmonic randomizer mean');
+}
 console.log(JSON.stringify({status:"PASS",checks,
   nativeBinaryExpectedCompleteTrials:3,
   uniqueHarmonicScore:"H_n=sum_{k=1}^n 1/k",

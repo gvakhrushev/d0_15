@@ -141,10 +141,20 @@ for(const r of [0.00000185125,0.08,0.15,0.5,0.87,0.99]){
   check(s(r)>s(nativePrior)+1e-7,'stop programme alone does not select GR reporter');
 }
 
+// The certified two-report CQ tangent kills the padded entropy source, but
+// the actual unpadded Golden 0/10 charge contributes the nonzero D r term.
+const r0=1.851242740976536e-6,r1=1.8513157633356053e-6;
+const dr0=-2.26378054238336192e-8,dr1=-lp(r0)/lp(r1)*dr0;
+const padded=-lp(r0)*dr0-lp(r1)*dr1;
+const unpadded=(1-lp(r0))*dr0+(1-lp(r1))*dr1;
+check(Math.abs(padded)<1e-18,'padded CQ source vanishes on certified root tangent');
+check(unpadded>5.3795610116359145e-14,'unpadded Golden 0/10 source remains nonzero');
+
 console.log(JSON.stringify({status:"PASS",checks,
   theorem:"exact whole iid native first-match Cost-minus-CQ-Info and KL/Fisher m+1",
   nativeBinaryClockMean:3,
   original128MeanIfAllStrictlyPositive:129,
   nativeH4Cap:k,
   nativeH4CapClockGradientLimit:"less than 2e-9; not identically zero",
+  root_source_control:{padded_CQ_source:padded,unpadded_0_10_source:unpadded},
   priceSelector:"unproved compulsory Book03"}));
