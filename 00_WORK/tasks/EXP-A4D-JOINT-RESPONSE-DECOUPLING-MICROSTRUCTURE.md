@@ -3948,3 +3948,30 @@ also transport the complete 42-field, preparation, clock, internal and
 baseline source. The continuum weighted theorem does not itself provide
 this finite/refinement estimate, compulsory Book03 selection, or physical
 admission.
+
+## 21 October continuation: native Book03 binding gate
+
+The [native Book03 gate](../../02_REGISTRY/research/A4D_NATIVE_BOOK03_CLOSURE_GATE_2026_10_21.md)
+composes existing finite owners into a four-stage decision procedure to
+apply to one specified, fully admitted execution: (1) the actual final-report
+pair and its first jet; (2) the absolute normalizer and its source; (3) the
+complete-history cycle/coboundary condition; and (4) the full Book03 source
+against the field/matter source. It does not identify the N=1 CQ compiler
+with the original full128 tape.
+For the literal candidate `I_omega=-log_phi(q_omega)`, the final pair
+requires `delta c=(1+theta)log_phi((1-r)/r)`, with `theta=1/2` for amplitude
+binding and `theta=1` for scalar-probability binding. The supplied N=1 query has
+`partial_x r>0` at its base point, so a field-independent cost gap cannot
+pass this pair's source test if an admitted physical field direction pulls
+back to that query direction. The physical pullback is not yet established.
+
+This excludes only that literal binding in the stated domain; it does not
+derive Shannon information from Book03 or rule out every allowed Info law.
+The actual Book03 branch gain, absolute normalizer and terminal data must
+come from the same process before the four tests can decide its finite
+valuation. Passing them would still leave the continuum/refinement and
+physical-selection gates open. The companion
+[weighted CQ density note](../../02_REGISTRY/research/D0_WEIGHTED_CQ_DENSITY_RIGIDITY_2026_10_21.md)
+states the continuum invariant `d(rho*y/F_x)=0` and its Einstein-matter
+dictionary; it does not supply the missing finite-lattice transport.
+`GR_closed=false`.

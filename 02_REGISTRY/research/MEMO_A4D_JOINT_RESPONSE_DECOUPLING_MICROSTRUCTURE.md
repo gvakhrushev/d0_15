@@ -10044,3 +10044,38 @@ admission, compulsory same-process Book valuation, upstream stationarity,
 finite refinement and physical selection remain separate obligations.
 Neither the new native two-jet nor the weighted continuum theorem closes
 those gaps; `GR_closed=false`.
+
+### Native Book03 closure gate and weighted density note
+
+The new [native Book03 gate](A4D_NATIVE_BOOK03_CLOSURE_GATE_2026_10_21.md)
+composes the existing N=1 terminal-pair obstruction with the paid-history
+Gibbs identity and the exact finite compiler cycle criterion. It gives four
+necessary tests to run on one specified, fully admitted execution:
+final-pair value and first jet; absolute normalizer and its source;
+pathwise/cycle consistency for every complete history; and the complete
+same-process Book03 source against the geometric and matter source. The
+source owners remain distinct until a same-execution map identifies them;
+in particular this gate does not identify the N=1 CQ compiler with the
+original full128 tape. Its literal candidate `I_omega=-log_phi(q)`
+requires the actual final-leaf cost gap
+`delta c=(1+theta)log_phi((1-r)/r)`. The owned N=1 query has
+`partial_x r>0` at its base point, so a field-independent leaf-cost gap
+fails the source condition on that query chart. This is a physical-field
+obstruction only if the admitted physical map realizes a direction with
+`D r != 0`; that map is still missing. The aggregate normalizer and every
+branch's actual cost/information remain independently tested, not assigned
+to fit the target. The gate does not identify Book03 Info with Shannon
+information or exclude other Info laws.
+
+The [weighted density note](D0_WEIGHTED_CQ_DENSITY_RIGIDITY_2026_10_21.md)
+is a compact statement of the continuum consequence for the actual
+inhomogeneous positive PF-weighted CQ price: on its regular branch,
+`d(rho*y/F_x)=0` yields constant transformed material contraction and the
+declared bidirectional Einstein-matter dictionary; the primary-zero Jacobi
+statement is under that same stationary map. It does not create the finite
+source transport or choose the physical price. I cross-checked the terminal
+pair and normalizer equations against the cited `book_binding/PROOF.md` and
+the Gibbs/cycle owner. These two new notes contain no independent executable
+receipt; they are analytic compositions of those owners, and the parent
+memo preserves their conditions and limits rather than counting them as new
+replays. `GR_closed=false`.
