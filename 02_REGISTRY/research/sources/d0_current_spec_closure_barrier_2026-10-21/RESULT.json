@@ -1,0 +1,26 @@
+{
+  "amplitude_binding_corollary": {
+    "J_if_mean_equals_CQ": 0.4549150281252632,
+    "J_if_pressure_equals_CQ": -0.23606797749978958,
+    "mean_minus_CQ_source": -0.5,
+    "mean_minus_CQ_value": 0.6909830056250527,
+    "pressure_minus_CQ_source": 0.5,
+    "pressure_minus_CQ_value": -0.6909830056250527
+  },
+  "check_count": 8,
+  "endpoint_allocation": {
+    "source_gap": "theta-eta for D(Info_final-Info_initial)=1"
+  },
+  "golden": {
+    "CQ": 0.23606797749978958,
+    "Cbar": 1.618033988749895,
+    "H": 1.3819660112501053,
+    "dH": -1.0,
+    "p": 0.6180339887498949
+  },
+  "scope": {
+    "GR_closed": false,
+    "current_specification_unique_native_source": false
+  },
+  "status": "PASS"
+}
