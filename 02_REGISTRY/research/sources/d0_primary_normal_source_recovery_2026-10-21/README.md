@@ -173,3 +173,32 @@ python3 02_REGISTRY/research/sources/d0_primary_normal_source_recovery_2026-10-2
 [Constitutive RESULT.json](constitutive/RESULT.json) is the actual new output. It includes the consumed 23 bounded original checks, symbolic general replication/auxiliary identities, 75-digit nonlinear branch checks, unequal diagnostic site weights and explicit false-off-shell/omitted-density/upstream-source controls. Normal and optimized runs match byte-for-byte. The same execution's whole field/source and causal proofs are consumed, not freshly re-proved by this bounded scalar calculation.
 
 The architectural next gate is now explicit: primitive moving-field-query admission and compulsory absolute Book/CQ valuation for THIS concrete programme, plus genuinely independent upstream equations. A new optional detector, a separate full128 information cut or a rank34 inverse cannot substitute for those maps. The nonlinear constitutive reduction and primary stationary recovery are already available consumers once the same physical programme is supplied. `GR_closed=false`.
+
+## 8. Execute first, then price: concrete full128 forward-clock composition
+
+The [execution/clock/source architecture](../../A4D_EXECUTION_CLOCK_PRICE_ARCHITECTURE_2026_10_21.md) now connects section 7's COMPLETE N=1 CQ source to the separate original full128 price owners without identifying their different executions. The CQ all42 identity and its nonlinear K are already proved on their specified moving-query/fixed-price interface. The original full128 port cost, conditional RIGHT information and Book feedback are not extra terms of that CQ price unless a same-execution transport supplies them.
+
+One formerly abstract native input now has an explicit application. For an actual work-blank history of supplied forward-clock duration d and data amplitude D, use a declared active clock window of M consecutive slots. With no cyclic wrap or reset,
+
+`A_clock=(P_M Shift^d P_M) tensor D`,
+`R_clock=projector onto the max(M-d,0) clock starts still inside the window`.
+
+The TRUE complementary Book functional therefore satisfies exactly
+
+`J_clock=max(M-d,0) J_data - dim(RIGHT) min(M,d) dim(DATA) log(1-z)`.
+
+At fixed clock/cut/fugacity its full field source is `max(M-d,0) D J_data`. An initial-time-only cut has zero return source after any positive duration; an active time window can retain it without resetting a clock. An orthogonally tagged stopped-unresolved result still is NOT a work-blank return. A strictly forward corner can be nilpotent while its complementary Book source is nonzero: `det(I-z A_clock)=1` does not replace the actual `det(I-z(I-A_clock* A_clock))`.
+
+The bounded executable uses the L4 original all16/128 Walsh/Julia/Golden instrument, all16384 two-round probabilities, true two-port reporting lengths and actual complementary source. It simultaneously checks the mean reporting price by the chronological probability sum and by the original Heisenberg effect, the forward-clock multiplicities, the retained absolute boundary value and the recombined Golden source sign. Only the 0/10 reporting subclock is numerically instantiated; all other primitive durations and the compulsory active clock cut remain physical inputs.
+
+This resolves `R_clock` in the declared forward-window application of the existing complementary-cut owner; it does not choose that window or the full physical Book price. The boundary term is not freely subtracted, the clock overlap is not a tunable gravity coefficient, and it does not multiply an unrelated Info/work source. The section 2 recovery denominator may consume a derived gain ONLY for the component and execution for which it has been proved.
+
+Architecturally, `D readout` and `D field_writer` remain distinct. A faithful probability chart does not create all ambient field variation gates. Stationarity of a genuinely reachable execution gives `(D field_writer)^T E=0`; using the ambient all42 equations requires the actual admitted image or constraints. This, together with compulsory absolute valuation and independent upstream sources, is the physical continuation of the completed same-CQ source, not another detector search.
+
+Reproduce the new original-carrier application:
+
+```bash
+OPENBLAS_NUM_THREADS=1 python3 02_REGISTRY/research/sources/d0_execution_clock_source_2026-10-21/check_execution_clock_source.py
+```
+
+[Actual result](../d0_execution_clock_source_2026-10-21/RESULT.json) and [immutable consumed inputs](../d0_execution_clock_source_2026-10-21/SOURCE_INPUTS.json) are in the repository. Normal and optimized local runs matched byte-for-byte. The all-M,d identity is proved by block decomposition; numerical native matrices are tolerance checks. No old scientific receipt is overwritten, no new full42/Lean replay is claimed, and physical `GR_closed` remains false.
