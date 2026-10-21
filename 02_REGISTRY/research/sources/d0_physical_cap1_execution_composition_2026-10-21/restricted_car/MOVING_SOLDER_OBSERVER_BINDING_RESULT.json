@@ -4,13 +4,16 @@
     "native observer pairing equals F F^T",
     "F_H F_H^T equals the moving-solder Q_H",
     "moving-pairing off-diagonal increment is -kappa eps chi/4",
-    "moving-pairing first derivative is nonzero"
+    "moving-pairing first derivative is nonzero",
+    "completed profile actuator leaves the first-grade current fixed",
+    "held REST metric and fixed first grade keep the observer pairing at I4"
   ],
-  "count": 5,
+  "count": 7,
   "scope": {
     "GR_closed": false,
     "physical_admission": false,
     "primary_null_matter_identified": false,
+    "profile_sensitive_CAR_actuator_changes_observer_pairing": false,
     "rest_aligned_timelike_observer_only": true,
     "same_native_endpoint_isometry_can_follow_nonzero_H_step": false
   },

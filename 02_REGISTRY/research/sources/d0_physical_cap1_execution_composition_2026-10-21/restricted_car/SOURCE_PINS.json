@@ -22,6 +22,11 @@
       "git_blob": "fa59e9f59e061e6bcda0f05f29abed1e641f8ebb"
     },
     {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/NATIVE_CAR_ACTUATED_METRIC.md",
+      "sha256": "b9dd63f0888a062941c1744d800120e47d20777f429f892f5a98c504a3c0a4be",
+      "git_blob": "601f4a6aeb093ab547692015b31a92be48b41c61"
+    },
+    {
       "path": "02_REGISTRY/research/certificates/a4d_native_field_instrument_jet_check.py",
       "sha256": "4486abe0799b0a60a3191cb6bf19d85feaebaed7ace876f9132325932bfb1536",
       "git_blob": "2acc4a7f7f0832a776e255405a33cf349801987a"

@@ -2,7 +2,7 @@
 
 This packet records a pre-existing native field-dependent CAR transition in
 the repository, then states exactly how far it composes with the new cap-one
-CQ analysis. Its five source files are pinned as present at the common input
+CQ analysis. Its seven source files are pinned as present at the common input
 commit in `SOURCE_PINS.json`; the original certificate is cited as evidence,
 not rerun here. The certificate itself records its own source head
 `f1270f63cffa5fcfc27b469ff2517d8398d5362a`, distinct from the 92c00ccb
@@ -88,6 +88,17 @@ transition and its full price, or identify a different admitted matter branch.
 Replay: `python3 check_moving_solder_observer_binding.py`; its exact symbolic
 receipt is `MOVING_SOLDER_OBSERVER_BINDING_RESULT.json`.
 
+## The autonomous CAR profile actuator is not a metric writer
+
+The existing [CAR profile actuator](../../d0_native_gr_completion_synthesis_2026-10-20/book_source/NATIVE_CAR_ACTUATED_METRIC.md) §2 rotates only the completed four-mask amplitudes `|14>` and `|15>`; it explicitly holds geometry and proper links fixed. The `|1>` first-grade amplitude remains fixed, so in the declared REST chart `q=eta_rest`, `v=P_1m=a_0 e_0`, and
+
+```text
+k = v^T q^-1 v = a_0^2,
+Q(q,m) = -q + 2 v v^T/k = I_4
+```
+
+both before and after that completed word. Its live query distinguishes supplied profiles through `H`, but this response sensitivity is not a transition of the metric coordinate: the actuator supplies neither the moving `Q_H` nor `H -> F_H`. It closes this candidate route only; another jointly admitted writer and its full price remain open. The exact checker also verifies the fixed first-grade projection and pairing on the declared four-mask chart.
+
 ## Pinned owners
 
 - `A4D_NATIVE_FIELD_TO_INSTRUMENT_JET_BOUNDARY.md` and its exact checker
@@ -99,6 +110,8 @@ receipt is `MOVING_SOLDER_OBSERVER_BINDING_RESULT.json`.
   price source.
 - `NATIVE_FIELD_WRITER_BRIDGE.md`: the pinned moving-solder control and the
   endpoint-isometry implication used in the scoped incompatibility above.
+- `NATIVE_CAR_ACTUATED_METRIC.md`: the completed profile-sensitive CAR word,
+  with geometry and proper links held fixed.
 - `check_moving_solder_observer_binding.py`: exact algebraic replay for the
   rest-aligned timelike branch only.
 - `a4d_native_field_instrument_jet_check.py` and
