@@ -15,6 +15,17 @@ The map is acceptable only if the following three tests hold on the SAME paramet
 
 ## Gate A — operator and source identity
 
+[Book03 §03.1.3](../../01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md)
+requires the path sum to retain ordered noncommutative memory classes `q(γ)`,
+not replace them by scalar path probabilities. The map
+must therefore carry every admitted ordered primitive word to its typed
+operator/memory class before the report; equality of terminal probabilities
+alone is insufficient. The existing
+[opposite-null CAR16 Julia/order-memory construction](A4D_OPPOSITE_NULL_LIE_COMPLETE_JULIA_ORDER_MEMORY_BOOK_SOURCE_2026_10_19.md)
+provides a finite `AB`/`BA` witness for this test. That construction remains
+conditional until its actual primitives, retained outcomes and complete
+Book03 price are admitted on this same map.
+
 1. Its actual primitives reproduce the original cap-one report effects and their required nonzero field jet, not only the value at the base point.
 2. It transports the restricted 16D CAR field-to-operation transition without assuming its endpoint-isometry: prove the isometry on the admitted image or explicitly carry its failure/leakage outcomes.
 3. It differentiates the full record, including failure, abort, work and archive branches. A terminal work/OR derivative is not silently extended to a newly monitored per-primitive archive.
