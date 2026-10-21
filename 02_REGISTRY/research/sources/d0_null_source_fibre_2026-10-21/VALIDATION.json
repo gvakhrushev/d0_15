@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "python": "3.13.5",
+  "sympy": "1.14.0",
+  "check_groups": 87,
+  "normal_optimized_stdout_identical": true,
+  "sha256": {
+    "PROOF.md": "9626389bfb0cc30c39208f0734dd276d7f623fde13d35b89e9ab377de751f29e",
+    "check_source_fibre.py": "f99112c75c14caa762694f6d6d466ca4c2dd36e35288feaeb6cf1d814f56dad2",
+    "RESULT.json": "23fd75b958da7834c0d6fe0264b33d6eba75b373e4fb96c2901f92374764c98b",
+    "SOURCE_PINS.json": "62bf0c741160a1a80ca18a45d44dfcd5979505cf518a617b28961f2777b419bb",
+    "SYNTHESIS.md": "5d8c7421a830bfe89757bf319db27079115e669b2095c4ae78be7bd5bf05662b",
+    "README.md": "2f40ffee639772fae0be70ac156dd0accd87a0a807ded42829e5bae406901d24"
+  },
+  "git_blobs": {
+    "PROOF.md": "f3b36578c3abd11f0c02ef137a19b968853b3e02",
+    "check_source_fibre.py": "d6b080e1e503ce177246f567beb58513087759e5",
+    "RESULT.json": "eeb269ebd8108edd321167ae47df702b2eb1b83e",
+    "SOURCE_PINS.json": "c99cc824e50840b3a20144df034d9d0dec29b5fe",
+    "SYNTHESIS.md": "37e16d87e669b8bd8d85224fa9d23c8931a93154",
+    "README.md": "cc1fd64e4650ece4925ea09ff6f313c7906949d4"
+  },
+  "independent_review": false,
+  "historical_large_suites_replayed": false,
+  "GR_closed": false,
+  "concurrent_head_preserved": "c55fcde1091dc5ed5e208ec4234a717433de3505",
+  "complete_repository_guards_run": false
+}

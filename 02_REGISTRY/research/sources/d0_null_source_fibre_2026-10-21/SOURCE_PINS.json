@@ -1,0 +1,25 @@
+{
+  "repository": "gvakhrushev/d0_15",
+  "input_head": "5edac80c86c17014fc83e0aa608e192f43c1fdba",
+  "source_git_blobs": {
+    "02_REGISTRY/research/sources/d0_covariant_multiscalar_price_2026-10-21/PROOF.md": "fea122b537a847ac25b3ae0dbd3ae09c7353476e",
+    "02_REGISTRY/research/sources/d0_covariant_multiscalar_price_2026-10-21/CROSSING_STREAMS.md": "45329a4c9f556fcdf5321e90b2fc438bd2209a4a",
+    "02_REGISTRY/research/sources/d0_covariant_multiscalar_price_2026-10-21/WEIGHTED_NULL_COROLLARY.md": "47e84273dd2d605c3a362506454468ba5c0c6e45",
+    "02_REGISTRY/research/sources/d0_causal_native_weighted_synthesis_2026-10-21/weighted_dynamics/WEIGHTED_WARD_AND_DUST.md": "0ce3330397cad858d32d2a465dd9100b06bf6e10",
+    "02_REGISTRY/research/A4D_NEXT_COMMON_MAP_CONSTRUCTION_GATE_2026_10_21.md": "985c98f075109f89f207c58eef6602705fc9a85f"
+  },
+  "external_primary_background": [
+    {
+      "paper": "Liimatainen and Salo, n-harmonic coordinates and the regularity of conformal mappings",
+      "arxiv": "1209.1285",
+      "use": "Theorem 2.1 with p=2 only"
+    },
+    {
+      "paper": "Shen, Zheng, Li, Two-field mimetic gravity revisited and Hamiltonian analysis",
+      "arxiv": "1909.01248",
+      "use": "standard multiplier formulation only; not null-rank-two stability"
+    }
+  ],
+  "independent_review": false,
+  "GR_closed": false
+}
