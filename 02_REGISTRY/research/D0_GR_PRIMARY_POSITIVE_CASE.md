@@ -345,3 +345,32 @@ above remains; the reconstruction supplies stationary equivalence, not a
 minimum or a compulsory D0 price. Full-flag13 measurement, paid Golden17
 orientation and the two-density CQ compiler remain distinct executions
 until their complete maps and prices are matched. `GR_closed=false`.
+
+## One paid CQ execution now has the exact spatial/source stationary lift
+
+The [same-execution application](A4D_SAME_EXECUTION_SPATIAL_WEIGHTS_AND_COMPLETE_SOURCE_2026_10_21.md)
+consumes the actual original LEFT address map and the existing complete
+Golden detector at N=1, K_pre=9 and L_gate=20. Its true integer trace-copy
+counts cancel the inverse-PF factor at each site, for both the geometric
+star and the original nondensitized matter density. No additional measure,
+uniform address law, per-site price renormalization or new coupling is used.
+Heterogeneous field-independent address/stage costs stay in the full baseline
+but no longer affect the slope at this one-stage cap.
+
+On the whole common-null stratum and all42 ambient field directions,
+the full specified CQ ledger satisfies `D S=gamma1 D J2`,
+`gamma1=-alpha beta d0 h_phi'(r0)=-12.4442926813187... !=0`.
+Thus these same finite coframe/link/matter representatives are roots of
+that complete price on each original valid mesh. The nonlinear entropy
+adjoint gives their exact constrained stationary lift to every generated
+preparation, query, compiler, work and archive state with the same initial
+boundary; logical/oldRIGHT spectators retain their zero preparation source.
+Live material query dependence remains differentiated.
+
+This closes the weight and generated-state application inside the already
+declared fixed-price/moving-query CQ interface. Independently admissible
+upstream preparation, mixed spectra, physical time/query realization and
+compulsory Book03 Info/absolute valuation keep their actual source tests.
+Generated paid-bank inputs are not free initial controls, and causal
+elimination does not cancel a genuinely independent upstream derivative.
+The previous field-minimum exclusion and raw216/physical-GR scope remain.

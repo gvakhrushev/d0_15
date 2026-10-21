@@ -89,6 +89,19 @@ weights, full internal sources and compulsory price selection are still
 required. New checks and independent reviews have their own provenance;
 historical missing archives/commits are not claimed recovered.
 
+### Same-execution spatial weights and complete CQ source
+
+The [new primary-family application](02_REGISTRY/research/A4D_SAME_EXECUTION_SPATIAL_WEIGHTS_AND_COMPLETE_SOURCE_2026_10_21.md)
+now closes those weight/source maps for one existing paid N=1 compiler:
+the original trace-copy counts and inverse-PF dictionary give one spatial
+coefficient for gravity and matter, even with unequal field-independent
+address costs. Its complete declared CQ source is `D_42 S=gamma1 D_42 J2`,
+with `gamma1=-12.4442926813187... !=0` and the same finite lambda_minus.
+The entropy adjoint also solves every generated bank/query/work/archive
+state equation at the same specified initial boundary. Compulsory Book03
+valuation, physical moving-query admission and genuinely independent
+upstream equations remain required; no field minimum or GR closure is claimed.
+
 ### Main integration and the next proof stage
 
 Continue existing scientific [Draft #334](https://github.com/gvakhrushev/d0_15/pull/334).

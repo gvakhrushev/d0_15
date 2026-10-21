@@ -1,0 +1,36 @@
+{
+  "repository_head": "c49ebdb12244943d1ec45ef6d148a0432481141e",
+  "scope": "Original owned source premises consumed unchanged; no old large replay",
+  "sources": [
+    {
+      "path": "02_REGISTRY/research/D0_GR_PRIMARY_POSITIVE_CASE.md",
+      "git_blob": "67d1aa64d0101e73911c75b2ee0023c0ff02771c",
+      "sha256": "f4db4133eb486f886d9fa20e96b954c5cf31ba4c53d75ad9c2626539ef70df30"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_COMPLETE_PRICE_NONVACUUM_STATIONARY_NORMAL_FORM_2026_10_21.md",
+      "git_blob": "25b2253436419ec0f0f63c36d40d5d728103a40c",
+      "sha256": "5ad9461c6f1b8d964f0764697a38120d19d320714bc66d99a42898171e3a01a0"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/GOLDEN_EXACT_DETECTOR.md",
+      "git_blob": "92b9003d783c24b1883a2a21f8b30625078afff7",
+      "sha256": "d33c9c2cb2322e381723f481eb1fcf58058fd05ad88eda92c5597c026d02eb77"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/check_two_query_native8d_no_exterior.py",
+      "git_blob": "caf7f24801464f448fd3cae9e20399d13ec76754",
+      "sha256": "f6474e9dee226968f252c13b6732c6c6067b9f3813478fd06a81884748c21e38"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/causal_boundary_completion.md",
+      "git_blob": "b378006fa38617ab7ec8e1cda4431336a0388a68",
+      "sha256": "46c08c8295401cb42531ec3b974709638ec5f913dbd1b64c0210efa3b99953ba"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md",
+      "git_blob": "67531a343a0ae707ff0a3830c0e2c9cf2bbc8213",
+      "sha256": "71497086dfad667831c77d69201aea3890909d0cf772791f7df32b8b8c3c07d4"
+    }
+  ]
+}

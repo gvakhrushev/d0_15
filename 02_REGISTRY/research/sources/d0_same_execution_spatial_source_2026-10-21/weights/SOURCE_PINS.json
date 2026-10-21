@@ -1,0 +1,126 @@
+{
+  "repository_head": "c49ebdb12244943d1ec45ef6d148a0432481141e",
+  "sources": [
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/COMPLETE_COMPILER_COFRAME_EQUIVALENCE.md",
+      "git_blob": "4a75e7666560602ce0b13b9ec33a6864dbff84ef",
+      "sha256": "65b23f3b2f9e821a574b90102b1a6d60f8d8f26447971fcd073ae53ff628534b",
+      "relevant_line_ranges": [
+        [
+          55,
+          113
+        ],
+        [
+          217,
+          279
+        ]
+      ],
+      "role": "Owned complete CQ local ledger, cap1 nonzero coefficient and true two-density derivatives"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_global_result_composition_2026-10-20/FULL_PRICE_COMPOSITION.md",
+      "git_blob": "b0d4483c42e4ac8281603b1459c1f2464da1fff9",
+      "sha256": "dde1aab20b306afd0f515f4ccbd13d47f74cdf1e293ae6409175615332f708fb",
+      "relevant_line_ranges": [
+        [
+          25,
+          130
+        ]
+      ],
+      "role": "Actual complete compiler ledger and independent-local multiplicity condition"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/GOLDEN_EXACT_DETECTOR.md",
+      "git_blob": "92b9003d783c24b1883a2a21f8b30625078afff7",
+      "sha256": "d33c9c2cb2322e381723f481eb1fcf58058fd05ad88eda92c5597c026d02eb77",
+      "relevant_line_ranges": [
+        [
+          180,
+          230
+        ],
+        [
+          237,
+          284
+        ],
+        [
+          316,
+          367
+        ]
+      ],
+      "role": "Actual paid per-local-block banks, 43-Toffoli detector, readiness and complete retained cost/entropy; N>=2 price condition"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/DETERMINANT_PREPARATION_BANK.md",
+      "git_blob": "e7b92fae0d6f3dc3e60499f0dd041c18003da872",
+      "sha256": "6cc9fc85ef8e238635ef24b78ddb3936f07d1a3f915558172eee8ff1c3602705",
+      "relevant_line_ranges": [
+        [
+          46,
+          106
+        ],
+        [
+          108,
+          179
+        ]
+      ],
+      "role": "Paid canonical +/- inputs, complete bank transcript and moving-preparation boundary"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/TWO_NATIVE_8D_DETERMINANT_SOURCE.md",
+      "git_blob": "daa07a1c4bd7d5e07bd6cb67ba0a894b0b438e7b",
+      "sha256": "491ea21c32b9bf6eeba4202fbd592eea8832dc981a043601526e2438bc2b06cc",
+      "relevant_line_ranges": [
+        [
+          1,
+          155
+        ]
+      ],
+      "role": "Original 8D block, two fixed eigen-inputs, first source including off-diagonal tangents"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_LOCAL_LEFT_CODED_CAR_NULL_MATTER_EINSTEIN_2026_10_18.md",
+      "git_blob": "75c40d133a23973a36ba5b95d34b4eb36ca96663",
+      "sha256": "828cba545e2c734741e7acf1509248c441de4451f9099cebee8d10c00230e35b",
+      "relevant_line_ranges": [
+        [
+          9,
+          44
+        ],
+        [
+          46,
+          117
+        ]
+      ],
+      "role": "Actual AF weights D_j/K, inverse-PF input map, nu*528*D_j multiplicities and target ratio"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_CAUSAL_BOOK_SOURCE_TO_EXACT_GR_SYNTHESIS_2026_10_20.md",
+      "git_blob": "275d6a7c1d2fb6bc7cb10f6c1cd7b358070b405a",
+      "sha256": "88e3b77b08603da9b7b4e24372ff126c3370764d03a36171456df60f72a17248",
+      "relevant_line_ranges": [
+        [
+          35,
+          46
+        ],
+        [
+          79,
+          161
+        ]
+      ],
+      "role": "All42 consumer, distinct full-address scalarization and causal/upstream source boundary"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/MINIMAL_GOLDEN_COMPLETE_SOURCE.md",
+      "git_blob": "bce112de77a694809e0a9a7fa769731296148ca2",
+      "sha256": "f6a5724e087c58b4294020a59532b7117f55247013181bcd4fd30d069a649330",
+      "relevant_line_ranges": [
+        [
+          61,
+          134
+        ]
+      ],
+      "role": "Actual full trace multiplicities and original DJ2 coefficient ratio"
+    }
+  ],
+  "scope": "Bounded application of existing paid cap1 compiler; no new scene/address census or physical Info selection"
+}

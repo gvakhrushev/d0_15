@@ -3319,3 +3319,48 @@ exact coupled auxiliary Schur, full null-stratum source, finite lambda and
 all-cap sign bound plus a high-precision section diagnostic. Existing
 heavy all40+2, full128, compiler and Lean suites are consumed unchanged.
 Native compulsory complete price, same-source application and GR remain open.
+
+## 21 October continuation: actual spatial-weight and full N1 source application
+
+Phase: native realization / exact parent substitution, same constitutive,
+native_sector and native-programme-v1 interface, existing Draft #334.
+The [same-execution theorem](../../02_REGISTRY/research/A4D_SAME_EXECUTION_SPATIAL_WEIGHTS_AND_COMPLETE_SOURCE_2026_10_21.md)
+consumes input c49ebdb1 and the existing paid Golden detector at cap1.
+There is no new task, physical action/Info, lifecycle or assembly acceptance.
+
+The literal original local density dictionary satisfies the normal form's
+independent-site (+1,-1) scaling. Actual nu*528*D_j trace-copy counts and
+the already-owned inverse-PF map give the same constant spatial source
+coefficient for geometry and matter. At N=1 unequal field-independent
+address/stage kappa values do not change that coefficient. The full declared
+CQ price, including every bank abort, compiler retry, sign, clock and
+conditional work output, has D_42S=gamma1 D_42J2 on the entire common-null
+stratum, gamma1=-alpha beta d0 h_phi'(r0)=-12.4442926813187... !=0.
+The original finite lambda_minus, coframes, links, CAR increments and collar
+are unchanged. A weighted24-link extension proves why matching local
+gravity/matter ratios alone would have failed with unequal site slopes.
+
+The same complete entropy price has an exact nonlinear terminal adjoint
+and finite-tree backward solution. Every generated bank/query/work/archive
+state Euler equation is solved at the same initial boundary, rather than
+freezing an independently selectable input or resetting work. Thus each
+original primary42 root has a constrained stationary lift for this paid
+fixed-query CQ execution. The direct first source uses only the original
+free interior/collar tangent; a global auxiliary map does not authorize
+unchanged off-shell boundary constraints.
+
+Remaining physical application: actually admit the moving field-query and
+its input mechanism, and identify the compulsory full absolute Book03
+valuation on that same execution with all genuinely independent upstream
+preparation/time/clock sources. The complete baseline covector is retained;
+other raw128/central-gain/return-cut prices are not added as unproved terms
+of this CQ ledger. No field minimum or physical GR/raw216 closure follows.
+
+Write surface: linked proof; sources/d0_same_execution_spatial_source_2026-10-21;
+narrow existing primary/README pointers. Decisive checks: exact symbolic
+native cap1/multiplicity algebra, original weighted24-link source and matter
+adjoint, literal full8D coherent-query/OR entropy gradient and backward
+source against the complete diagnostic leaf price. The prefix refinement
+fixture is explicitly not the huge native retry transcript. Independent
+reviews pin the proofs and actual narrow runs. Original large root,
+compiler, native128, geometry/continuum and Lean suites are consumed unchanged.

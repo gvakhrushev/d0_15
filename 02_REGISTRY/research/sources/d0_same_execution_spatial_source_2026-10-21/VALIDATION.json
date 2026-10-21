@@ -1,0 +1,70 @@
+{
+  "status": "PASS",
+  "utc": "2026-10-21T05:52:37.427691+00:00",
+  "kind": "new same-execution source application; no historical replay",
+  "proof_sha256": "b13ef78db2ef108ce0435bc3b678822b4518d6e0eaa4d8610f4672cd5798eafd",
+  "manifest_sha256": "64011c1af9a5a927671488077de71478dc0d676d70f54da75ebdbe217a2ccdcf",
+  "replay_receipt_sha256": "db335fd230970290f96f47f309bb5904aabfa4642942815cd1e9938b42d3cded",
+  "checks": [
+    {
+      "entrypoint": "weights/check_same_execution_spatial_weights.py",
+      "status": "PASS_SAME_EXECUTION_CAP1_SPATIAL_WEIGHTS",
+      "checker_sha256": "8ba3f1c4ed3cfb274d9c94ed950994a3a1e357281d26769cf4dd3e8b283cc0f3",
+      "elapsed_seconds": 0.3534603329999999
+    },
+    {
+      "entrypoint": "geometry/check_spatial_source.py",
+      "status": "PASS",
+      "checker_sha256": "75feeeee89aa0db6069205f8116d27e89f08b1d3a595897071ec62054200235a",
+      "elapsed_seconds": 0.7067015000000001
+    },
+    {
+      "entrypoint": "check_n1_entropy_adjoint.py",
+      "status": "PASS_N1_COMPLETE_ENTROPY_ADJOINT",
+      "checker_sha256": "f20a91c1a7d6f486eb49284e16b4350af5222a89d64b9aff06de28c2c3217eb0",
+      "elapsed_seconds": 0.05113816699999996
+    }
+  ],
+  "integrity": {
+    "artifacts": 25,
+    "source_pin_checks": 38,
+    "runtime_literal_carrier_verified": true,
+    "manifest_sha256": "64011c1af9a5a927671488077de71478dc0d676d70f54da75ebdbe217a2ccdcf"
+  },
+  "new_local_links_checked": 18,
+  "independent_reviews": [
+    {
+      "file": "reviews/REVIEW_ONE_STAGE_SPATIAL_WEIGHTS.md",
+      "sha256": "de8e9574377498e35929377437d7c0c3505b85b9fce99afdf30b28b432d6a4c3",
+      "result": "ACCEPT_AT_STATED_INTERFACE"
+    },
+    {
+      "file": "reviews/REVIEW_LOCAL_HOMOGENEITY.md",
+      "sha256": "ba91c2258fce3b600ff97616e36a98bf03736eb5fedef7bdc7ad6cbab33478ca",
+      "result": "ACCEPT_AT_STATED_INTERFACE"
+    },
+    {
+      "file": "reviews/REVIEW_FULL_SOURCE_PREPARATION.md",
+      "sha256": "57d1953690064599a330547af4f52c97ec1f19e701114d9e9be6039e7b4a3576",
+      "result": "ACCEPT_AT_STATED_INTERFACE"
+    },
+    {
+      "file": "reviews/REVIEW_N1_CAUSAL_COMPLETION.md",
+      "sha256": "2685bfdd5dd592a0c53a381cf5fc4f7634c2fa5036170ef0253112765a8a3f44",
+      "result": "ACCEPT_AT_STATED_INTERFACE"
+    },
+    {
+      "file": "reviews/REVIEW_INTEGRATED_SOURCE.md",
+      "sha256": "280bce03f410319df99261d3b80bb47df97c1c29a8b1c541996f15fe90a6a7d5",
+      "result": "ACCEPT_AT_STATED_INTERFACE"
+    }
+  ],
+  "structural_checks": {
+    "validate_repo": "PASS warnings=0",
+    "validate_work": "PASS",
+    "validate_agent_protocol": "PASS",
+    "gr_assembly": "valid=true; scientific_promotion=false",
+    "render_work_status": "PASS stale=0"
+  },
+  "scope": "fixed-query complete CQ source + generated-state stationary lift; native moving-query admission, compulsory Book03 and genuinely independent upstream remain open; old large suites not rerun."
+}
