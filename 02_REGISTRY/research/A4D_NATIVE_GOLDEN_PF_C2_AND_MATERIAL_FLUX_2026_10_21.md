@@ -185,3 +185,53 @@ The proof uses only \(|\log\rho|\le2|\rho-1|\) and the \(2^j\) signed terms of a
 **Independent exact-rational and high-precision check**:
 sources/d0_native_golden_pf_material_flux_2026-10-21/check_native_golden_pf_allorders.py
 was executed with r=0,1,2,3,4,6,8,16,32,64 and L=4,8,16,64,256,1024. It verifies the exact rational majorant <9, the inherited original-box bound with the unchanged Fibonacci renewal coefficient and positive READY mass for all checked cases. The **all-order theorem is analytic** from the preceding bound; the finite parameter checks are not evidence replacing this induction.
+
+
+## 6. Genuine two-scalar simultaneous finite Euler solve — same REAL n24/L8 PF and SAME full nonlinear N1 price
+
+The one-scalar current theorem §2 covers one time column. This continuation gives a stronger simultaneous **numerical** root for BOTH independently varied scalar species at once, using the TRUE original full eight-by-eight time/spatial slab. The underlying Euler equation is an exact analytic identity; the finite root is a numerical witness, not yet an interval existence certificate.
+
+Consume the native original cost24/L8 4D nested-box census (75025 real Golden equal-cost words), on the true Role sites (time i, spatial j, fixed other coordinates 4,4). Its actual nonuniform PF density lies between 0.54595134955 and 1.85623458847. Keep original rank2 metric g_tt=A(t)^2, g_xx=-B(t)^2, A B=1, true based six-face f_i including the noncommuting boost/time plaquettes, and both real scalar fields psi_A(i,j), A=0,1. Their entire original Dirichlet boundary collar is fixed. The exact finite nondensitized source is
+\[
+q_{ij}=\sum_{A=0}^1[g_i^{tt}(D_t^+\psi_A)^2+g_i^{xx}(D_x^+\psi_A)^2]
+\]
+on 7×7 actual original forward cells. The unchanged full sigma-minus native GoldenMaster N1 price is
+\[
+\boxed{\mathscr S_{N1}=h^2\sum_{i,j=0}^6 \rho_{ij}
+ F_{N1}(-\tau f_i/\rho_{ij},\tau q_{ij}/\rho_{ij}).}\tag{18}
+\]
+Real fixed positive readiness factors and code/factory baseline belong to this same process and multiply/add to it without changing its declared matter source; no q=0 constraint is imposed after variation and no affine Einstein action is substituted. The original F_N1 has the REAL two-band nonlinear Golden probability and correct original sigma-minus material orientation.
+
+For EACH species A and EACH independently varied interior scalar value, 1≤i,j≤6, the exact genuine Euler has the divergence form
+\[
+\boxed{E_{A,ij}=J_{A,t}(i-1,j)-J_{A,t}(i,j)
++J_{A,x}(i,j-1)-J_{A,x}(i,j)=0,}\tag{19}
+\]
+with
+\[
+J_{A,t}=F_y\,g^{tt}D_t^+\psi_A,\qquad
+J_{A,x}=F_y\,g^{xx}D_x^+\psi_A.
+\]
+The actual derivative of the written price is exactly 2 tau h times (19). The site rho cancels between the paid prefactor and query derivatives, but true rho remains in BOTH arguments of F_y. Geometry/coframe/link fields are fixed for this MATTER-SUBSYSTEM solve, and ALL original scalar boundary values remain fixed.
+
+The jointly solved 72-dimensional system comprises 2×6×6 true scalar variables. On the original zero-q rank2 seed it has a nonzero full N1 EULER due to real f and site PF. A direct finite Newton root using SciPy hybr and original 75025-word site counts gave:
+
+| Genuine original n24/L8 diagnostic | Measured |
+|---|---:|
+| Max 72-scalar Euler residual BEFORE | 7.70066696072e-5 |
+| Max 72-scalar Euler residual AFTER | 2.60188192606e-16 |
+| Scalar species0/source0 AFTER | 2.60188192606e-16 |
+| Scalar species1/source1 AFTER | 2.49800180541e-16 |
+| Max correction of physical scalar field values | 2.17120991899e-5 |
+| Max TRUE generated nonlinear q | 3.09521682355e-5 |
+| Changed scalar boundary/collar values | 0 |
+| 72×72 numerical Jacobian smallest singular value | 0.87006550687 |
+| Numerical Jacobian 2-norm condition number | 57.56104684575 |
+
+The numerical Jacobian is full rank and modestly conditioned. This is NOT yet an exact interval proof of the 72D finite solution, nor a 4D full-lattice scalar theorem. The source uses the actual original local six-face scalar f and the real original sigma-minus full N1 F_y, not the separate sigma-plus price or an affine model. An independently coded complete Bernoulli-entropy CQ price finite difference on eight representative interior variables across BOTH scalar species agrees with the exact source derivative before correction to absolute error below 3.3e-16; after the root its numeric secants are below 3.3e-16 at step 3e-5. This is a literal same-price control.
+
+**The genuinely changed parent obligation:** both material scalar species can be simultaneously stationary on this actual finite Golden non-VSI 2D slice; the second species is not an automatic unsolved source if the two fields vary together. The original 42-Euler root STILL needs full 4D gauge/collar, all independent16 coframe+24 covariant neighbor-coupled Lorentz equations at the corrected nonzero q, actual native oldRIGHT/controller/clock/absolute Book03 source, compulsory action and uniform refinement. Not even the numerical matter root is claimed an exact finite all42 solution. Physical GR_closed=false.
+
+Executable same-owner scripts:
+- sources/d0_native_golden_pf_material_flux_2026-10-21/check_native_n1_two_scalar_2d.py: true 8×8 site density, real rank2 six-face, 72D simultaneous nonlinear matter root, numerical SVD.
+- sources/d0_native_golden_pf_material_flux_2026-10-21/check_native_n1_two_scalar_price_secant.py: independently evaluated TRUE N1 output-entropy price secants before/after root on both scalar species.
