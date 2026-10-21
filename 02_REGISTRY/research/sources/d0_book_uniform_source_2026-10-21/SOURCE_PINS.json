@@ -1,0 +1,23 @@
+{
+  "repository": "gvakhrushev/d0_15",
+  "owner_pr": 334,
+  "scientific_input_commit": "b60a111b43f723a841d253b1d5bd9650c46b2cf8",
+  "inputs": [
+    {
+      "path": "02_REGISTRY/research/sources/d0_full128_normalization_closure_2026-10-21/PROOF.md",
+      "git_blob": "eeae605705b5ee29a098ab9e14c4882034c73795",
+      "use": "True complementary determinant, full normalizer source and normalization-versus-attenuation boundary."
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_full128_normalization_closure_2026-10-21/check_normalization.py",
+      "git_blob": "82d671663bb65c8b178d402ef439118b082aeb42",
+      "use": "Literal CAR16/Walsh/Julia/Golden128 native formulas adapted in the new standalone checker; no full upstream replay claimed."
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_relative_history_first_jet_2026-10-20/RESULT.md",
+      "git_blob": "08b1765c44759e6d3d7198a0d43b8f9f8aa80e90",
+      "use": "Complete coherent C1 first-shell carrier, physical h^-4 horizon, ordered jump amplitudes, cost count and original source-consumer hypothesis."
+    }
+  ],
+  "scope": "Input proofs consumed at exact immutable commit. The new source law does not identify full128 with the distinct cap-one CQ or select Book03 Info."
+}

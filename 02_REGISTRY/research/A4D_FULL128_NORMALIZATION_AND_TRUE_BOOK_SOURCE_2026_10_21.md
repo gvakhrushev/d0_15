@@ -24,3 +24,29 @@ Here epsilon is the primary matter amplitude, distinct from the analytical cost-
 [Actual results](sources/d0_full128_normalization_closure_2026-10-21/RESULT.json):39 conditions, including exact symbolic controls and all16,384 native Fourier-block histories; normal/-O output agrees. Four mutated programs are rejected. The primary formula is analytically consumed and its exact integer densities recomputed; the entire256-site spectrum/all42/Lean suite is not re-run. No independent mathematical review or remote CI pass is claimed here.
 
 The prior universal source-identifiability claim and its automatic scalar-loop application are withdrawn; the extra-factor marker table is corrected for its starting base. The [corrected weight note](A4D_BOOK03_SOURCE_IDENTIFIABILITY_THEOREM_2026_10_21.md), [normalized-vector note](A4D_ABSOLUTE_BOOK_SOURCE_NONIDENTIFIABILITY_2026_10_21.md) and [port note](A4D_FULL128_PORT_GAIN_MARKER_RIGIDITY_2026_10_21.md) now point to this actual computation. The separate cap-one CQ, clock and weighted Ward results are preserved, not identified by notation. Full native price/admission/joint nonvacuum selection and GR remain open; GR_closed=false.
+
+## 21 October continuation: uniform complete-archive source at the physical horizon
+
+The [cost-marked archive/source application](A4D_COST_MARKED_COMPLETE_ARCHIVE_SOURCE_2026_10_21.md)
+consumes this corrected determinant and the existing full128 first-shell C1
+history theorem. An operator bound on the actual excess-count effect gives
+`exp(-tM)I <= Nbar <= I`, independent of the compulsory baseline tick count.
+The baseline amplitude cancels in the normalized determinant only; the
+baseline remains in the actual ledger. A reverse CP adjoint evaluates the
+same full source without enumerating exponentially many histories.
+
+On the supplied physical first-shell chart at `n_h=128 h^-4`, the absolute
+counting-trace source has the explicit C1 limit
+`J_t=-16384 log[1-z+z exp(-(p^2+p exp(-t))*8 pi^2 p^2 a^2)]`.
+For the EXTRA amplitude mark `phi^(-Cost)`, the entire limiting coherent
+archive is the original archive at event time `pT`, with the paired nonblank
+ports exchanged, including its first a derivative. The finite orphan mark
+and all original costs stay retained. A logical nonnegative padding table
+makes the actual remaining baseline charge explicit; physical controller,
+Info and clock-cut admission are not inferred.
+
+This removes a concrete denominator/source-transport premise for this
+specified shell, not the primary spatial preparation residual above or the
+full42 common native map. The new 115-check packet has byte-identical normal
+and optimized output; no independent review, new Lean or full CI is asserted.
+`GR_closed=false`.
