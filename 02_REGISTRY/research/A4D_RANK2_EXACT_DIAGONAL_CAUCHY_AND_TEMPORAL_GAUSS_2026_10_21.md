@@ -176,3 +176,41 @@ The independent random-diagonal/full4 source replay further shows all SIX tempor
 This result makes the earlier "39 remaining independent fields" and random one-site 24x24 Cartan inverse framing obsolete ON THE DECLARED RANK-TWO HOMOGENEOUS SECTOR. The next actual map is the remaining off-diagonal coframe and spatial-link Euler covector, evaluated on the EXACT 12-component zero branch (with all real CAR currents preserved); its homogeneous/inhomogeneous gauge and boundary compatibility can be tested separately. If the complement lies in the image of the whole-slab gauge-fixed Jacobian, a true 42-root may be continued. An O(h) residual alone does not imply this.
 
 The original null Brinkmann all40 exact family and the genuinely physical compulsory Book03 price, clock/observer/preparation/oldRIGHT and primitive field writer remain distinct accepted/open carriers. Do not infer a universal physical full GR theorem from this homogeneous recursion. The analytic fold rcrit is a chart limit, not a metric singularity. Preserve the genuine original PF irregularity and the exact source retyping; no sigma-plus detector is physically chosen here.
+
+
+## 7. Exact original Euler SUPPORT: only 18 components remain potentially nonzero
+
+For this SAME spatially homogeneous diagonal-coframe, pure three-boost link and two independent CAR scalar-gradient sector, the remaining source can be reduced further by a finite structural theorem **before** solving another equation. This is not a stochastic rank scan and uses NO approximation in h.
+
+At every based face, the original finite odd curvature \((P-P^{-1})/2\) lies in a small invariant Lorentz Lie subalgebra:
+- the temporal-spatial face (0,i) is a pure boost \(K_i\), because both endpoint spatial links lie in the same 1-parameter boost subgroup;
+- the spatial face (i,j) is inside \(\mathfrak{so}(1,2)\) on the exact three-dimensional subspace span(e0,ei,ej), hence its bivector components can lie ONLY in \(K_i,K_j,J_{ij}\). The fourth internal direction is acted on identically.
+This statement is exact for arbitrary finite boost exponents and all based plaquettes, not just a first curvature Taylor coefficient.
+
+The ORIGINAL diagonal based coframe gives a complementary wedge on the two Role legs u,v. Differentiating one leg \(e^a{}_\mu\) can meet the above curvature support only when the corresponding internal unordered index-pair is its Hodge complement. An exhaustive exact six-face combinatorial certificate therefore gives the EXACT source support
+
+  Coframe (potentially nonzero): 
+    (a,mu)=(0,0),(1,1),(2,2),(3,3),(1,0),(2,0),(3,0).
+  Coframe identically zero:
+    all other 9 of the original 16 independent components.
+
+For the original 24 spatial/temporal Lorentz left-link source components, Section 4 already proves 6 temporal-link Gauss zeros EXACTLY. Three additional spatial-link rows vanish EXACTLY by the same subgroup-support argument: at U_x, the generator J23; at U_y, generator J13; at U_z, generator J12. To see this without restricting the link tangent, choose an actual based spatial plaquette containing Ui and Uj. Every unvaried link acts on span(e0,ei,ej) and identically on the orthogonal fourth internal axis k. A tangent \(J_{jk}\) with j,k perpendicular to i necessarily has at least one internal index OUTSIDE that 3D invariant subspace in each plaquette that contains Ui; multiplying by any existing unvaried group element keeps it outside. It cannot affect the Lie component \(J_{ij}\) to which the original diagonal complementary coframe projects that spatial face. The temporal-spatial face similarly projects only Ki and is already covered by the six temporal-link zeros. These are source identically-zero statements for all original proper-Lorentz variations, not an assertion that the three links or their holonomies are trivial.
+
+Thus the complete original 42-component FIRST Euler covector in this declared rank-two homogeneous sector has the exact support count BEFORE using any stationarity:
+
+| Original field component | Exact structural zeros | Potentially nonzero |
+|---|---:|---:|
+| 16 coframe | 9 | 7 |
+| 24 left-Lorentz link | 6 temporal +3 spatial =9 | 15 |
+| 2 real scalar | 0 generically | 2 |
+| TOTAL | 18 | 24 |
+
+The new Cauchy recurrence of Sections 2-3 then makes all four diagonal coframe entries and both material Euler zero EXACTLY. Therefore, on its constructed nonflat TWO-stream null-kinetic Cauchy family:
+
+  BOX: at most 18 original Euler COMPONENTS can remain NONZERO,
+       namely three (a,mu)=(1,0),(2,0),(3,0) coframe rows
+       and fifteen spatial proper-Lorentz left-link rows.
+
+The exact six local SO^+(1,3) Noether identities relate these components; they are NOT six additional independent equations to subtract blindly. In the original all4x4 numerical replay, all nine forbidden coframe and all nine forbidden link source entries are zero at machine precision even for random nonsymmetric diagonal-coframe/pure-boost controls; the permitted three off-diagonal and multiple permitted spatial-link entries are genuinely NONZERO at small finite h. In particular a reduced action varied ONLY inside diagonal tetrads and prescribed boosts cannot promote this statement to a full42 root: the remaining 18 must be tested as independent ambient variations with the original neighbor faces.
+
+This is the practical architectural reduction: the next source solver needs a small, exact **18-slot observed residual**, not a blind all42 search or one-site 24x24 inverse. This says nothing about whether those 18 slots lie in a globally compatible gauge-fixed field-writer image with a fixed two-ended temporal collar. GR_closed=false.
