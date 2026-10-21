@@ -830,3 +830,20 @@ The regularity chart endpoint rcrit=sqrt(1+sqrt(2)) is a fold of THIS algebraic 
 The [full finite Cauchy theorem §7](A4D_RANK2_EXACT_DIAGONAL_CAUCHY_AND_TEMPORAL_GAUSS_2026_10_21.md) now supplies a structural ORIGINAL six-plaquette Euler SUPPORT reduction in the spatially homogeneous, diagonal tetrad, three pure spatial boost sector. Every time-space based curvature remains in its Ki subalgebra and every spatial ij face remains in the exact 3D Lorentz subalgebra spanned by Ki,Kj,Jij. The original G2STAR complementary-wedge contraction therefore permits only 7 of 16 coframe Euler components (4 diagonal and 3 (i,0) offdiagonal), making 9 coframe components identically zero. All 6 temporal-link Euler and the three transverse rotations J23 at Ux, J13 at Uy, J12 at Uz are identically zero, leaving only 15 potentially nonzero spatial-link rows. Two scalar rows were already exactly solved by the original CAR conserved flux.
 
 Combined with the genuine one-step Cauchy exact solution of all4 diagonal coframe rows and both scalar rows on f_star=q=0, at most **18 of the original 42 first Euler COMPONENTS** remain nonzero, exactly three offdiagonal coframe and up to 15 spatial proper-link entries. This is a finite exact support theorem, NOT 18 independent equations or a license to restrict the original field variations when evaluating them. Local proper Lorentz Noether relations and temporal collar compatibility must still be considered, and the remaining sources are numerically NONZERO. No exact whole42 stationary solution, native full Book selected price or physical GR closure is claimed.
+
+
+## Rank-two EXACT all42 iff TWELVE spatial-link source test (21 October)
+
+The [original finite diagonal Cauchy theorem, §8](A4D_RANK2_EXACT_DIAGONAL_CAUCHY_AND_TEMPORAL_GAUSS_2026_10_21.md) now closes the previous gauge-count ambiguity WITH AN EXPLICIT INVERTIBLE MINOR. On the constructed original spatially homogeneous rank-two double-null two-CAR-field Cauchy branch, the genuine six-face G2STAR + SAME Golden N1 price has only 18 potentially nonzero original first Euler components after all four diagonal coframe and both scalar rows are solved and the exact Lie subgroup support is used. The six local Lorentz Noether relations on these 18 sources have exact nonzero 6x6 minor
+
+    det W_pivot = -X³ sinh(h k2)³ !=0
+
+for actual X>0, h>0, k2>0. The pivotal source coordinates are E_e[1,0],E_e[2,0],E_e[3,0], E_Uy,K1, E_Uz,K1,E_Uy,K3. Their values are uniquely determined by twelve OTHER, actual original spatial-link Euler components.
+
+Therefore on this particular mathematical carrier all original 42 Euler components vanish **IFF these twelve named spatial-link sources vanish**:
+    Ux: K1,K2,K3,J12,J13;
+    Uy: K2,J12,J23;
+    Uz: K2,K3,J13,J23.
+The source relations include the genuine spatial predecessor link variations and time Gauss zeros, with exact local Lorentz quotient and all irregular fixed AF/PF multiplicities cancelling at the f=q=0 FIRST source. The twelve target values remain numerically NONZERO on the currently constructed Cauchy trajectory. This is an EXACT ZERO-EQUIVALENCE/REDUCTION result, NOT a full42 finite root. No general all-spacetime 12-degree-of-freedom interpretation, global gauge inverse or physical mandatory Book03/CQ price selection follows.
+
+Next precise source solve: keep the original common f=q zero branch, both real matter currents and single forward Cauchy link map, then solve the above twelve original spatial link equations across a shared temporal slab with the actual fixed collar. A true accepted solution would automatically satisfy all 42 mathematical Euler components by the proven exact Ward identity, but would still require original native execution/clock/preparation/field-writer admission and uniform refinement to qualify as foundational D0→GR. GR_closed=false.
