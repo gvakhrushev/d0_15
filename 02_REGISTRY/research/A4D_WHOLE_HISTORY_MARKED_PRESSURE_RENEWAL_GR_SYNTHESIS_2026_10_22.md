@@ -130,6 +130,21 @@ For comparison, the long-run TOTAL *padded* stopped score \((c-h_\varphi(r))/r\)
 \]
 through the same tiny native report interval. Unequal \(r_0,r_1\) cannot cancel at a full CQ root by using the total stopped score instead of a real time-normalized rate.
 
+
+## 4a. Reverse-necessity theorem: on TWO independent report channels, an exactly source-equivalent scalar Price MUST have an entropy-type derivative
+
+This adds a strictly local algebraic obstruction with no Einstein parameters. Let \(I\subset(0,p^2)\) be an open interval where the complete binary entropy slope \(h'_\varphi(r)>0\), and consider a separable scalar report action \(B(r_0,r_1)=b(r_0)+b(r_1)\) with \(b\in C^1(I)\). The original padded complete-CQ report potential is \(Q(r_0,r_1)=-h_\varphi(r_0)-h_\varphi(r_1)\). Suppose the two report coordinates have ACTUALLY INDEPENDENT permissible first variations, and one demands that \(DB\) and \(DQ\) have IDENTICAL KERNELS at **every** pair \((r_0,r_1)\in I^2\), so that the same one-dimensional stationary directions are admitted (not merely that one chosen root survives). Then, NECESSARILY AND SUFFICIENTLY, there exist constants \(a\ne0,b_0\) such that
+\[
+ \boxed{b(r)=a\,h_\varphi(r)+b_0\quad\forall r\in I.}\tag{11}
+\]
+Proof: because \(h'\ne0\), equality of covector kernels in the 2-dimensional report tangent space is equivalent to pointwise proportionality of \((b'(r_0),b'(r_1))\) and \((h'(r_0),h'(r_1))\). Thus \(b'(r_0)/h'(r_0)=b'(r_1)/h'(r_1)\) for ALL independently variable pairs, so this ratio is one global constant. Integrate once. Conversely any nonzero constant multiple has the same kernel. The sign of \(a\) does not affect first-source zeros but DOES affect minimum/saddle character; no positivity or native minimum is inferred.
+
+This is a scoped **reverse NECESSITY**, not a proof that the full physical D0 programme admits two independent report-coordinate variations. On the already-CERTIFIED \(h=1/4\) root one actual \(V_{29}\) verifies the weaker pointwise requirement \(b'(r_0)/h'(r_0)=b'(r_1)/h'(r_1)\); the independent Golden/H feedback kernels fail by their already proved strictly monotone ratio. If the physical report-field map has rank one or a constrained tangent space, the global statement (11) need not apply: use only its true pulled-back source-separation criterion.
+
+The genuine unpadded original \`0/10\` expected code price \(g(r)=1+r-h_\varphi(r)\) does NOT satisfy (11) on any such open interval, because \(g'(r)/h'(r)=1/h'(r)-1\) is nonconstant. A real equal-length padded execution \(\ell-h_\varphi(r)\) DOES. Thus preserving *all* independent two-channel source kernels requires either a real equal-length code implementation or an ACTUAL field-dependent branch Info/clock/heat correction whose first source removes the outcome-charge asymmetry. This formalizes why changing the native paid reporter without changing physical price cannot be a free GR operation.
+
+The marked **complete-history** pressure response (2), unlike a fixed finite-dimensional Golden \(-\log\det\) as a function of only one scalar probability, already contains exactly the unique entropy shape demanded by (11). A fully physical Book03 law would still have to SELECT this response and solve its independent input/cut/clock equations. This theorem does not insert \(b=h_\varphi\) as a new compulsory action.
+
 ## 5. New physically decisive one-source gate
 
 The previous Book source search became unnecessarily hard by asking the **unmarked normalized scalar partition value** to reproduce entropy. It cannot: its field derivative is zero. The marked response (2)/(5) has the entire original complete measured code source across BOTH common-null and off-null reports; the finite per-actual-tick pressure (8) is an exact SOURCE-COMPATIBLE renewal implementation at every cap. Neither is an introduced gravitational action: they are mathematical functions of the real full native record and its costs.
