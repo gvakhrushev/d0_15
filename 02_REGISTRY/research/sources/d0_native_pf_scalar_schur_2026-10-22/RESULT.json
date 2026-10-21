@@ -1,0 +1,304 @@
+{
+  "status": "PASS_EXACT_FORMULA_AND_SCOPED_NATIVE_DIAGNOSTIC",
+  "Golden_F_y_interval_without_alpha_beta": {
+    "rectangle": [
+      -0.0078125,
+      0.0078125
+    ],
+    "r": [
+      1.8144850493312882e-06,
+      1.888460315340948e-06
+    ],
+    "normalized_Fy": [
+      1.1333310054354927e-05,
+      1.3306866543222868e-05
+    ],
+    "normalized_Fyy": [
+      4.0591660304717545e-05,
+      4.316641660185197e-05
+    ],
+    "normalized_longitudinal_eigenvalue": [
+      1.0658834794950989e-05,
+      1.3981341802626804e-05
+    ],
+    "alpha_beta": 0.45367493868186265
+  },
+  "actual_Golden_PF_uniform_C2_refinement": [
+    {
+      "L": 4,
+      "Golden_cost": 320,
+      "letter_prefix_length": 80,
+      "bound_rho_minus_one": 0.09355015546403299,
+      "claimed_rho_bound": 0.140625,
+      "log_gradient_bound": 2.25,
+      "log_second_diff_bound": 18.0,
+      "delta": 0.00013221392270379217,
+      "epsilon": 3.676905579258119e-68,
+      "ready_probability": 0.34164078649987384
+    },
+    {
+      "L": 8,
+      "Golden_cost": 448,
+      "letter_prefix_length": 112,
+      "bound_rho_minus_one": 0.0039826614212764245,
+      "claimed_rho_bound": 0.017578125,
+      "log_gradient_bound": 0.5625,
+      "log_second_diff_bound": 9.0,
+      "delta": 2.814336794504114e-06,
+      "epsilon": 6.532275991630134e-95,
+      "ready_probability": 0.34164078649987384
+    },
+    {
+      "L": 16,
+      "Golden_cost": 512,
+      "letter_prefix_length": 128,
+      "bound_rho_minus_one": 0.0011621249409149346,
+      "claimed_rho_bound": 0.002197265625,
+      "log_gradient_bound": 0.140625,
+      "log_second_diff_bound": 4.5,
+      "delta": 4.10606204629316e-07,
+      "epsilon": 2.753312773440196e-108,
+      "ready_probability": 0.34164078649987384
+    },
+    {
+      "L": 32,
+      "Golden_cost": 640,
+      "letter_prefix_length": 160,
+      "bound_rho_minus_one": 4.947453209379759e-05,
+      "claimed_rho_bound": 0.000274658203125,
+      "log_gradient_bound": 0.03515625,
+      "log_second_diff_bound": 2.25,
+      "delta": 8.740260678362166e-09,
+      "epsilon": 4.891449763858457e-135,
+      "ready_probability": 0.34164078649987384
+    },
+    {
+      "L": 64,
+      "Golden_cost": 704,
+      "letter_prefix_length": 176,
+      "bound_rho_minus_one": 1.4436473906403896e-05,
+      "claimed_rho_bound": 3.4332275390625e-05,
+      "log_gradient_bound": 0.0087890625,
+      "log_second_diff_bound": 1.125,
+      "delta": 1.2751868474382386e-09,
+      "epsilon": 2.061714957042354e-148,
+      "ready_probability": 0.34164078649987384
+    },
+    {
+      "L": 128,
+      "Golden_cost": 832,
+      "letter_prefix_length": 208,
+      "bound_rho_minus_one": 6.145963884411048e-07,
+      "claimed_rho_bound": 4.291534423828125e-06,
+      "log_gradient_bound": 0.002197265625,
+      "log_second_diff_bound": 0.5625,
+      "delta": 2.7143928500278927e-11,
+      "epsilon": 3.6627786123868504e-175,
+      "ready_probability": 0.34164078649987384
+    }
+  ],
+  "original_nonlinear_N1_one_scalar_time_layer": [
+    {
+      "L": 4,
+      "n": 20,
+      "original_count_sum": 10946,
+      "true_density_counts": [
+        38,
+        44,
+        60,
+        56
+      ],
+      "densities": [
+        0.8887264754248128,
+        1.0290517083866253,
+        1.4032523296181254,
+        1.3097021743102504
+      ],
+      "h": 0.25,
+      "tau": 0.05,
+      "original_n1_f": [
+        -0.010591362528769355,
+        0.023972004756913856,
+        0.03741170693447893,
+        0.04098461115623764
+      ],
+      "current_before": [
+        8.160621891855988e-07,
+        8.165547350776794e-07,
+        8.16601957299854e-07,
+        8.166669976413209e-07
+      ],
+      "current_after": 8.164707703385837e-07,
+      "original_current_jump": 4.925458920806943e-10,
+      "final_current_error": 6.352747104407253e-22,
+      "final_scalar_Euler_from_whole_CQ": 3.237139823018669e-11,
+      "max_existing_scalar_gradient_change": 4.2922527886124495e-05,
+      "max_new_native_material_argument": 7.05911462304401e-07,
+      "fixed_boundary_error": 2.7755575615628914e-17,
+      "scalar_Hessian_min_eigenvalue": 9.026533640799521e-06,
+      "scalar_Hessian_max_eigenvalue": 5.128835975631398e-05,
+      "period_scalar1_values": [
+        0.0,
+        0.021546399682880205,
+        0.04370147208051739,
+        0.0654390929552556,
+        0.08622527892816029
+      ]
+    },
+    {
+      "L": 8,
+      "n": 24,
+      "original_count_sum": 75025,
+      "true_density_counts": [
+        8,
+        5,
+        8,
+        7,
+        6,
+        7,
+        8,
+        6
+      ],
+      "densities": [
+        0.43676107964011995,
+        0.27297567477507495,
+        0.43676107964011995,
+        0.38216594468510495,
+        0.32757080973008995,
+        0.38216594468510495,
+        0.43676107964011995,
+        0.32757080973008995
+      ],
+      "h": 0.125,
+      "tau": 0.05,
+      "original_n1_f": [
+        -0.040440338078426286,
+        -0.017501188292322833,
+        -0.002741419026190517,
+        0.006757482055246289,
+        0.012771604302134643,
+        0.016443836268719703,
+        0.018534174104199552,
+        0.019557583220197627
+      ],
+      "current_before": [
+        8.149443179703864e-07,
+        8.153372575624741e-07,
+        8.161409019363644e-07,
+        8.164760315212092e-07,
+        8.167751566277177e-07,
+        8.168319781420054e-07,
+        8.168236407315962e-07,
+        8.170669735660102e-07
+      ],
+      "current_after": 8.163043860376128e-07,
+      "original_current_jump": 8.036443738902335e-10,
+      "final_current_error": 7.411538288475128e-22,
+      "final_scalar_Euler_from_whole_CQ": 1.9327395410372006e-11,
+      "max_existing_scalar_gradient_change": 0.00013636624675703035,
+      "max_new_native_material_argument": 5.388292874951912e-06,
+      "fixed_boundary_error": 2.3175905639050143e-15,
+      "scalar_Hessian_min_eigenvalue": 9.502600871736649e-06,
+      "scalar_Hessian_max_eigenvalue": 0.00023250602677236452,
+      "period_scalar1_values": [
+        0.0,
+        0.010326843698888947,
+        0.02110725318869893,
+        0.03211768883978681,
+        0.0431940568691779,
+        0.05420890790489301,
+        0.06507251646743786,
+        0.0757206560332668,
+        0.086106657266055
+      ]
+    }
+  ],
+  "original_nonlinear_N1_TWO_REAL_scalar_time_layer": [
+    {
+      "L": 4,
+      "n": 20,
+      "original_PF_site_counts": [
+        38,
+        44,
+        60,
+        56
+      ],
+      "rho": [
+        0.8887264754248128,
+        1.0290517083866253,
+        1.4032523296181254,
+        1.3097021743102504
+      ],
+      "two_real_matter_flux": [
+        8.16478360424661e-07,
+        5.681477895397151e-08
+      ],
+      "maximum_complete_CQ_temporal_material_Euler": 3.833038950108735e-11,
+      "boundary_difference": [
+        0.08622527892816031,
+        0.006
+      ],
+      "fixed_endpoint_error": 4.163336342344337e-17,
+      "full_2D_material_Hessian_min_eigenvalue": 8.99122831796738e-06,
+      "full_2D_material_Hessian_max_eigenvalue": 5.1289731781938644e-05,
+      "field_source_envelope": 2.090079403591589e-08,
+      "field_source_optimized_actual_secant": 2.0901748371143636e-08,
+      "field_source_envelope_error": 9.543352277443896e-13,
+      "nonzero_scalar2_temporal_flux": true,
+      "max_native_argument": 4.135048112389987e-06
+    },
+    {
+      "L": 8,
+      "n": 24,
+      "original_PF_site_counts": [
+        8,
+        5,
+        8,
+        7,
+        6,
+        7,
+        8,
+        6
+      ],
+      "rho": [
+        0.43676107964011995,
+        0.27297567477507495,
+        0.43676107964011995,
+        0.38216594468510495,
+        0.32757080973008995,
+        0.38216594468510495,
+        0.43676107964011995,
+        0.32757080973008995
+      ],
+      "two_real_matter_flux": [
+        8.163275842688124e-07,
+        5.6882541502904454e-08
+      ],
+      "maximum_complete_CQ_temporal_material_Euler": 1.7009446131942938e-11,
+      "boundary_difference": [
+        0.08610665726605732,
+        0.006
+      ],
+      "fixed_endpoint_error": 2.3314683517128287e-15,
+      "full_2D_material_Hessian_min_eigenvalue": 9.394137306587214e-06,
+      "full_2D_material_Hessian_max_eigenvalue": 0.00023252572805249403,
+      "field_source_envelope": 2.3777179776697577e-08,
+      "field_source_optimized_actual_secant": 2.377699413427525e-08,
+      "field_source_envelope_error": 1.8564242232789864e-13,
+      "nonzero_scalar2_temporal_flux": true,
+      "max_native_argument": 1.6564798631910125e-05
+    }
+  ],
+  "science_scope": {
+    "two_real_scalar_temporal_Euler_exact_by_flux": true,
+    "fixed_temporal_boundaries": true,
+    "original_negative_Golden_orientation": true,
+    "actual_L4_L8_native_F_R_counts": true,
+    "nonflat_true_six_face_local_density": true,
+    "two_real_scalar_spatial_Euler_automatic": false,
+    "coframe16_link24_joint_stationarity": false,
+    "full_Book03_absolute_Info_selected": false,
+    "finite_all42_exact_root": false,
+    "physical_GR_closed": false
+  }
+}
