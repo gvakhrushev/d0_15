@@ -68,7 +68,9 @@ R=1.2
 first=float(expected.subs(r,s.Rational(6,5)))
 PF_L,PF_R=1.,2.
 limit=2*amp*tau*(fxy/a)*first*(1/PF_L-1/PF_R)
-assert limit>0
+gxx=-R*np.exp(-R*R/2)
+spatial_limit=gxx*limit
+assert limit>0 and spatial_limit<0
 uniform=[];jump=[]
 for n in (16,32,64,128,256,512):
     hh=1/n
@@ -85,12 +87,18 @@ for n in (16,32,64,128,256,512):
     smoothnow=1+.2*np.sin(3*now)
     e_smooth=2*amp*(slope(fprev,smoothprev)-slope(fcur,smoothnow))/hh
     e_jump=2*amp*(slope(fprev,PF_L)-slope(fcur,PF_R))/hh
+    # With an x-directed second scalar, a jump between spatial PF neighbors
+    # makes a nonvanishing spatial matter Euler residual too. Both spatial
+    # sites share the SAME geometric f: this is PURE inverse-PF slope contrast.
+    e_spatial=2*amp*gxx*(slope(fcur,PF_L)-slope(fcur,PF_R))/hh
+    assert abs(e_spatial-spatial_limit)<.5*hh
     assert abs(e_smooth)<.25*hh
     assert abs(e_jump-limit)<.6*hh
     uniform.append({'n':n,'finite_fstar_over_h':fcur/hh,
                     'scalar_material_smooth_rho':e_smooth})
     jump.append({'n':n,'rho_previous':PF_L,'rho_current':PF_R,
-                 'scalar_material_pf_jump':e_jump})
+                 'scalar_material_pf_jump':e_jump,
+                 'scalar_material_spatial_PF_jump':e_spatial})
 print(json.dumps({
  'status':'PASS_STAR_GLOBAL_TRUNCATION_AND_PF_JUMP_CONTROL',
  'analytic_original_six_face':{
@@ -99,7 +107,8 @@ print(json.dumps({
     'commutator_rotation_exact':'sinh(x)sinh(y)[1-(cosh(x)-1)(cosh(y)-1)/2]',
     'special_r_equal_1':'the O(h) coefficient vanishes ONLY at this center'},
  'native_model':'same GoldenMaster sigma-minus, no sigma-plus substitution',
- 'pf_jump_limit_predicted':limit,'smooth_samples':uniform,'jump_samples':jump,
+ 'pf_jump_limit_predicted':limit,'spatial_pf_jump_limit_predicted':spatial_limit,
+ 'smooth_samples':uniform,'jump_samples':jump,
  'scope':{'actual_native_PF_counts_have_jumps':False,
           'bounded_PF_positivity_alone_suffices':False,
           'smooth_PF_or_compensating_discrete_source_needed':True,
