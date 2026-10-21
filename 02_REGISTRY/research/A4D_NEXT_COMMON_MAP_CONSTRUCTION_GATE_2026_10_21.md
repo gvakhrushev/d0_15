@@ -54,6 +54,18 @@ proper links during its matter word. The [fixed processor](sources/d0_common_exe
 then takes the field-dependent Choi bank as its input and expressly supplies
 no controlled unknown Julia action or writer from the common blank/history.
 
+The valuation input is independently underdetermined. Book02 §02.10 defines
+entropy for an actual archive-forgetting/dephasing map
+\(\rho\mapsto\Delta(\rho)\); on the fixed processor this yields the global
+same-cut entropy \(H_\varphi(q)\) of its complete recorded outcomes. Book03
+§03.3.0a instead uses the pathwise vertex gains \(\operatorname{Info}(v)\) in
+each \(S_\gamma\). The [literal Book binding](sources/d0_common_execution_closure_2026-10-21/book_binding/BOOK_BINDING_ON_FIXED_PROCESSOR.md)
+proves the dephasing identity but explicitly does not identify that global
+entropy with Book03 Info, its negative, or a branch surprisal. Thus the
+branchwise \(I_\gamma\) and its field/preparation derivative also remain
+UNDEFINED until a same-execution Book map is supplied; Shannon is not a
+substitute by notation.
+
 Accordingly the physical writer for \(|\Omega(y)\rangle\) is **UNDEFINED in
 the presently specified Book03/#334 execution**. This is a boundary of the
 specified route, not a no-go theorem for every possible admitted D0 process.
@@ -61,7 +73,7 @@ It prevents computing the upstream preparation price/source or promoting the
 downstream processor to a physical stationarity claim. Reopen this interface
 only with an already admitted finite history from the common initial state,
 including its preparation, address control, failures, clock/work tape, and
-absolute Book03 valuation; do not add those operations by convention.
+absolute branchwise Book03 valuation; do not add those operations by convention.
 
 The [executed full128 normalization/source result](A4D_FULL128_NORMALIZATION_AND_TRUE_BOOK_SOURCE_2026_10_21.md)
 corrects the proposed common-scalar repair: for its true normalized
