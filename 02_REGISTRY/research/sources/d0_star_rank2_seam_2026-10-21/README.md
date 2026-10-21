@@ -84,3 +84,18 @@ Three offdiagonal coframe and three spatial-link entries are Ward PIVOTS, not so
     OPENBLAS_NUM_THREADS=1 python3 02_REGISTRY/research/sources/d0_star_rank2_seam_2026-10-21/check_ward12_spatial_source_equivalence.py
 
 The checker pins the unchanged original full4 six-face calculator; derives the exact six-face coframe support, symbolic 6x6 Noether determinant and 12 selected targets. It independently evaluates 16 coframe/24 link first-source rows at seven ORIGINAL random finite nonstationary diagonal/boost configurations, including spatial predecessor faces; forbidden source entries and Ward residuals are roundoff-level while accepted target12 are observably NONZERO. A mathematical zero-test is not a physical selected Book execution or all42 exact stationarity.
+
+
+## Pureboost original Euler no-go: correct the old twelve-target root plan
+
+[New exact finite source owner](../../A4D_RANK2_PUREBOOST_NO_GO_AND_FULL_SOURCE_EXTENSION_2026_10_21.md) resolves the previously hidden contradiction: the original actual unrestricted J12 variation of Ux yields E_(Ux,J12)<0 for nonzero transverse pure boost k2 in the old small native nonflat rank-two diagonal homogeneous chart, with a NONZERO raw finite limit -XR k2²/2. Thus the earlier mathematically correct 42-to-12 zero test has NO nonflat full-root within its own pureboost field class. Moving into original spatial-link rotations is the right physical field enlargement but changes the support theorem, so twelve equations are NO LONGER sufficient for full42 stationarity.
+
+Use the exact pinned source checker (all outgoing+spatial-predecessor original SO(1,3) faces):
+
+    OPENBLAS_NUM_THREADS=1 python3 02_REGISTRY/research/sources/d0_star_rank2_seam_2026-10-21/check_pureboost_rotation_no_go.py --repo .
+
+The separate full temporal slab negative control preserves the two original fixed link collar endpoints, obtains full row rank on the old target12 against all native 18 spatial Lorentz variations per free time node, and ZEROES target12 numerically; however true f_star and previously forbidden temporal-link/coframe source become O(1). It is a NEGATIVE acceptance regression, not a completed nonlinear finite Einstein solution.
+
+    OPENBLAS_NUM_THREADS=1 python3 02_REGISTRY/research/sources/d0_star_rank2_seam_2026-10-21/check_full_slab_12_target_false_root.py
+
+The corrected architecture is to use the ORIGINAL 40 geometric first-source directions on an enlarged spatial-Lorentz/offdiagonal-coframe carrier with its true six local Lorentz gauge identities, full original fixed collar and both CAR materials. This is the next physical and mathematical source gate, not another local rank scan or a change of Golden sigma.
