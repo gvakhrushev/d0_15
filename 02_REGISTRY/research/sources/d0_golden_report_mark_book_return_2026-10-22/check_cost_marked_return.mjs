@@ -55,12 +55,23 @@ const rep = reportCut(r0);
 const repfd = (reportCut(r0 + finiteStep).J - reportCut(r0 - finiteStep).J)/(2 * finiteStep);
 assert.ok(close(repfd, rep.Dr, 1e-11));
 assert.ok(rep.Dr < 0);
+
+// ONE original Golden n=20,L=4 READY address tree: source weights cancel exactly.
+// This is a diagnostic of the inherited identity, not a re-enumeration of 10946 leaves.
+const KReady = 10946, pReady = 2 * KReady * p ** 23;
+const perSite = pReady / 256;
+for (const nativeCount of [29,39,48,78]) {
+  const observedReady = 2 * nativeCount * p ** 23;
+  const rho = 256 * nativeCount / KReady;
+  assert.ok(close(observedReady / rho, perSite, 1e-14));
+}
+
 const hPrime = Math.log((1-r0)/r0)/Math.log(phi);
 assert.ok(hPrime>0);
 // Original 0/10 CQ slope is 1-hPrime, also negative at r0.
 assert.ok(1-hPrime<0);
 console.log(JSON.stringify({
-  status: "SCOPED_PASS", checks: 12, phi, p, zeta, r0, mark: "ln(phi)",
+  status: "SCOPED_PASS", checks: 16, phi, p, zeta, r0, mark: "ln(phi)",
   model: {ready: 4/5, early_cost: 1, report_costs: [1,2],
           early_return_spectrum_unmarked: [(1-4/5)/2,(1-4/5)/4]},
   initialized_cut: {J: measured.J, source: measured.Dr, finite_difference: fd},
@@ -68,5 +79,6 @@ console.log(JSON.stringify({
   controls: ["unmarked zero","equal net report charges zero",
              "vanishing early return zero", "common full-charge shift cancels",
              "true r0 and native 0/10 CQ slope nonzero"],
+  ready_address_source: {P_READY: pReady, ratio: perSite, native_counts_checked: [29,39,48,78]},
   physics_status: "GR_closed=false; actual Book03 choice, Info, heat, clock and input admission open"
 }, null, 2));
