@@ -1,0 +1,42 @@
+{
+  "input_ref": "80d3b1bac1bb9a974f365dbc4c48d3ada539d3a2",
+  "sources": [
+    {
+      "path": "02_REGISTRY/research/A4D_PAID_GOLDEN_WORD_QUERY_SOURCE_LIMIT_2026_10_21.md",
+      "sha256": "9091b4ad313465098b410dca0bd9f49bc54de0b6afb33070774dffd5d5c58672",
+      "git_blob": "8854d99a2752a9890430035279293a8ce85d2eb6"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_paid_golden_query_secants_2026-10-21/check_paid_golden_query_secants.py",
+      "sha256": "04f6a44a0bdeea88e56768cc301c5411f9944b0cf295de60b121435613844664",
+      "git_blob": "ddf80ddbeb2828a2e711a45862c99d69869a5684"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_physical_cap1_execution_composition_2026-10-21/moving_query/PROOF.md",
+      "sha256": "9dc733555100874b164e24a3dee7d73814faa4fc5a21a7b22a06ca3b23d93bd7",
+      "git_blob": "280d4b93f3113d94691609b20cd7c27793e61499"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/GOLDEN_EXACT_DETECTOR.md",
+      "sha256": "d33c9c2cb2322e381723f481eb1fcf58058fd05ad88eda92c5597c026d02eb77",
+      "git_blob": "92b9003d783c24b1883a2a21f8b30625078afff7"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/check_two_query_native8d_no_exterior.py",
+      "sha256": "f6474e9dee226968f252c13b6732c6c6067b9f3813478fd06a81884748c21e38",
+      "git_blob": "caf7f24801464f448fd3cae9e20399d13ec76754"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_SAME_EXECUTION_SPATIAL_WEIGHTS_AND_COMPLETE_SOURCE_2026_10_21.md",
+      "sha256": "42c9b9745f3c9ee78b868e991485bbaf8b77810f4261204d913fc87fc44377a1",
+      "git_blob": "14867b53a1bbb006eafe2cbf90d62be03560e5a0"
+    }
+  ],
+  "concurrent_owner": {
+    "input_ref": "f996faae1eabd552a4f1573174bb6738a4c61c35",
+    "path": "02_REGISTRY/research/sources/d0_paid_golden_query_secants_2026-10-21/check_exact_four_setting_source.py",
+    "sha256": "cbcc9d457d5b0fdd48dc9dfb8edb8c9a6c607511c1294b4da88e5f01215cd590",
+    "git_blob": "f17b12924c17ed1cbeaeafcdcaa36420b31554d3",
+    "role": "existing exact four-setting report source; consumed, not re-claimed"
+  }
+}

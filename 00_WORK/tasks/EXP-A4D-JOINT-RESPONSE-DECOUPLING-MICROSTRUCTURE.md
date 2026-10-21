@@ -3799,3 +3799,45 @@ rank/root and Lean suites are consumed, not replayed. The original coherent
 Julia field access, paid independent copy supply, native field writer and
 compulsory same-process Book/Info/clock valuation remain the physical map
 to construct. `GR_closed=false`.
+
+
+## 21 October continuation: finite full-record source and covariant two-field interpretation
+
+Existing owner/phase/carrier remain unchanged: #334, native realization and
+conditional composition, constitutive/native-programme-v1. Input 80d3b1ba;
+concurrent four-report evaluator f996faae is consumed with its own priority.
+The new parent artifact is
+`02_REGISTRY/research/A4D_FINITE_SOURCE_AND_COVARIANT_TWO_FIELD_SYNTHESIS_2026_10_21.md`.
+It supplies a distinct sixteen-setting whole-CQ-channel first derivative,
+including all 256 work outputs/coherences and paid precision budgets. The
+shorter concurrent FOUR-report evaluator is used for the known price itself.
+The channel interface is the declared terminal work/OR and inherited fixed
+compiler/abort instrument; an enlarged per-primitive history is not inferred.
+
+The original density-rigid two-real-scalar continuum stationary set is
+identified bidirectionally with a covariant positive-multiplier Einstein
+system in its derived volume gauge; fixed-sector/common-gauge Jacobi
+equations also transfer. A directly verified rank-two non-VSI solution
+consumes the same finite Golden ratio and solves every admitted fixed-cap
+continuum price. This closes the specified continuum interpretation and
+reverse-realization premise, not its missing finite physical source map.
+The parallel generic Ward/LTB integration at 7f87eaab is preserved: its
+one-scalar non-VSI result is distinct from our rank-two zero-density case.
+Its generic Ward theorem also composes with our reverse map to identify
+the common covariant solution class for regular two-density prices at a
+selected common kinetic sector, with the price dependence in the positive
+volume gauge. This does not identify their fixed-coordinate critical sets.
+The parallel actual weighted-price interface at 401eafb2 also accepts this
+SAME rank-two zero-density representative: all fixed positive PF weights
+cancel in its full first covector, provided the common first coefficients
+are spatially constant and the actual baseline has zero field source.
+
+Disjoint proof/checker packets are
+`sources/d0_finite_native_source_reconstruction_2026-10-21/` and
+`sources/d0_covariant_multiscalar_price_2026-10-21/` under research. Exact
+number-field channel identities, a direct metric-curvature calculation,
+and an independent Bianchi-I/Weyl derivation are the decisive checks.
+Historical full128/all40/Lean evidence is reused. Keep source-test versus
+field-writer, fixed-volume continuum versus finite lattice, and on-shell
+matter covariance versus off-shell physical metric descent distinct. No
+new task, source selector, minimum/Book/assembly/GR promotion is introduced.

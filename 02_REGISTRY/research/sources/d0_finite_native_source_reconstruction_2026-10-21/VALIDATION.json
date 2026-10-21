@@ -1,0 +1,22 @@
+{
+  "normal_returncode": 0,
+  "optimized_returncode": 0,
+  "stdout_equal": true,
+  "normal_seconds": 0.4524277590026031,
+  "optimized_seconds": 0.6193118579976726,
+  "stdout_sha256": "5b40ef29c640b79f6a46121f862b5a4f00538f03f759a7d9f32ef017dcbf42dc",
+  "dependencies": {
+    "python": "3.12.14",
+    "mpmath": "1.3.0"
+  },
+  "concurrent_four_owner": {
+    "ref": "f996faae1eabd552a4f1573174bb6738a4c61c35",
+    "returncode": 0,
+    "seconds": 1.192773971000861,
+    "stdout_sha256": "97289b6344a7a4d78e11ce4f629cf045536b099065075d0d282b5170b526a1c9",
+    "status": "PASS_EXACT_FOUR_SETTING_NATIVE_SOURCE"
+  },
+  "historical_suites_replayed": false,
+  "physical_experiment_or_sampling": false,
+  "independent_review": "corrections from native_action incorporated; final acceptance belongs to its reviewer"
+}

@@ -473,3 +473,41 @@ positive dust inverse, with the original nonnull conformal/torsion readout
 retained and identity on null fields. This continuum result is not silently
 promoted to a discrete Ward identity or to the new compiler's off-null law.
 The existing saddle exclusion and `GR_closed=false` remain in force.
+
+
+## Exact finite source test and a covariant two-field continuum extension
+
+The [new composed proof](A4D_FINITE_SOURCE_AND_COVARIANT_TWO_FIELD_SYNTHESIS_2026_10_21.md)
+consumes the concurrent exact FOUR-report Golden source evaluator and adds
+an exact SIXTEEN-setting derivative of the entire retained CQ output,
+including work coherences. Both retain the actual finite source ratio and
+paid query inventories; statistical precision and all upstream costs stay
+explicit. A source test is not a physical field-writer or price-selection law.
+The channel identity uses the declared terminal work/OR and inherited fixed
+compiler/abort interface; a newly enlarged per-primitive archive needs its
+own derivative.
+
+For the specified full fixed-measure continuum price, the same density
+rigidity now supplies a bidirectional local representation as Einstein
+equations with TWO constrained real scalars and positive multiplier, in
+the derived gauge `Lambda vol_g=k_* mu0`. The full fixed-sector Jacobi
+equations match in an already common gauge and collar. An explicit
+rank-two solution has strictly positive Ricci-squared and Weyl-squared
+invariants at the original zero-density point, complementing the parallel
+one-scalar timelike LTB result. The actual finite Golden coefficient is used
+without fitting. Composing the generic Ward theorem with the volume-gauge
+map gives the same local covariant equation class for any regular
+two-density price with positive derivative ratio at a selected common
+kinetic sector. This is equivalence after local coordinate transport,
+not equality of fixed-gauge critical sets for arbitrary prices.
+At the new witness's `R=q=0`, the actual PF weights cancel in the full
+first variation, so its same native representative also solves the declared
+weighted continuum price for every prescribed positive weight, with the
+fixed common coefficient and zero baseline-field-source hypotheses kept.
+
+This does not replace the exact all-mesh finite Cartan family above: the
+new witness is a continuum theorem and still needs its actual native
+lattice/source lift. Compulsory full Book valuation, genuine upstream
+stationarity, field-writing admission and physical refinement remain open.
+Off-shell Diff-natural metric-only descent is not inferred from the new
+on-shell covariant matter representation. `GR_closed=false`.
