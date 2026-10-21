@@ -4262,3 +4262,93 @@ quantum resources and their upstream CQ price in the proved moment
 consumer. Compulsory primitive/controller admission, Book03 heat/Info
 binding, physical field selection and the original raw-216 refinement
 remain open; PR #334 stays Draft and GR_closed=false.
+
+## 21 October continuation: test native selection on the constructed writer
+
+Phase: native realization and final same-execution composition. Scientific
+input is the published paid moment writer at `f64d4c3389b507c7e7fb66ace9480ed6191c463d`.
+The user requests full closure. The precise parent is the remaining passage
+from actual generated field resources and complete CQ prices to one native
+Book03 field-selection or stationary law, with all independent apparatus
+equations. The existing positive nonvacuum geometry, exact writer and source
+transport are consumed without replay or promotion.
+
+Test the actual common-catalogue field/price graph against the owned
+constant-null-family and changing-normal-source theorem. Determine whether
+its infinitesimal obstruction has genuine finite paid-word witnesses, and
+whether the one-controller uniform-code instrument realizes the prospective
+price/continuation law on those same nodes. In parallel, trace the literal
+Book01 retained/readout projector and Book03 full-column feedback definition:
+the initialized-workspace cut is a proved calculation but is not yet the
+compulsory physical observer cut. Any tensor extension or retained-workspace
+covariance must retain its actual hypothesis and all input columns.
+
+The independent apparatus step must be evaluated on genuine admissible
+variables. Use the existing elimination/price-envelope owners to test whether
+minimizing or stationary elimination can preserve the target source while
+removing its negative block. State a quantitative necessary correction if the
+same-source minimum is excluded; do not install that correction as new Info,
+an action term or a desired field constraint. A native stationary mechanism
+remains logically distinct from a full-field minimum.
+
+The smallest decisive check is a finite exact word/cut or block calculation
+that changes one of these parent applications. Contributors write disjoint
+scratch proof/checker handoffs under this integrator, not new executions.
+Intended repository writes are this brief, the current common-map gate, one
+integrated research note and `sources/d0_moment_writer_native_selection_2026-10-21/`.
+No source-neutral completion, scalar probability, ordinary entropy or generic
+operator covariance is identified with the compulsory full Book price without
+the same-execution proof. The unchanged complete physical obligations decide
+closure; keep PR #334 Draft and `GR_closed=false` until they are proved.
+
+### Result: exact finite selection obstruction and quantified completion gate
+
+The [native selection continuation](../../02_REGISTRY/research/A4D_MOMENT_WRITER_NATIVE_SELECTION_TEST_2026_10_21.md)
+now constructs a finite paid competitor on the original buffered h=1/8
+nonvacuum family. At s=2^-20, r=2^-40, the actual local contractions
+have f>0 and q<0. The P5/C8 moment report is exactly equal in value on
+this nilpotent two-parameter surface, so the strict entropy increase
+and lower complete CQ price require no infinitesimal remainder estimate.
+One common all-row catalogue pays every failure, unused resource and
+retained code. A second fixed fair-label comparison preserves the code
+entropy and lowers the entire unconditional price by half the same
+report contrast. Native admissibility of the two AB/BA orders from the
+same complete initial controller remains an explicit hypothesis.
+
+The actual retained code also imposes a trace-distance lower bound
+equal to the probability of reaching code writing on the common early
+CQ sector, and at least that large for an enlarged controller. With
+uniformly positive readiness and faithful retained-code embeddings,
+arbitrarily close moment nodes cannot supply a continuous full-state
+limiting lift. The finite catalogue itself is discrete; neither this
+argument nor the computed source secants define a physical full-state
+tangent. A genuine admitted smooth apparatus elimination must be
+constructed separately.
+
+The literal Golden/CNOT cut countercheck has unequal prepared report
+probabilities 41-65p and p^2 while the complete eight-column same-cut
+feedback spectrum and determinant agree. The actual paid six-qubit
+prefix has its own complete CQ law. Equality of the whole prefix's
+Book determinant would need an additional all-column range/cut map;
+no one-column substitution or arbitrary tensor spectator cut is made.
+The positive paired-epoch clock result remains valid at its hypotheses.
+
+For an actual full price P and U=P-CQ, a field minimum against the
+finite competitor requires U(w_1)-U(w_0)>=D-Delta_0, where D is the
+strict CQ decrease and Delta_0 is the constructed root's implementation
+slack against its true apparatus infimum. Thus a neutral completion
+cannot restore an attained minimum; a globally cheaper root
+implementation is not excluded without its real slack bound. The
+separate Schur statement is conditional on a genuine smooth stationary
+lift and does not identify minimum selection with a stationary saddle.
+
+The [new source packet](../../02_REGISTRY/research/sources/d0_moment_writer_native_selection_2026-10-21/README.md)
+contains exact proof/checker handoffs and independent internal reviews.
+The scientific inputs are pinned at f64d4c33. Concurrent original
+Golden READY measured-CQ/source and exact null/Cartesian same-price
+sign results through 6a6dba84 are preserved; neither supplies the
+missing full Book03/controller map for this writer. The finite native
+admission diamond, actual Cost/Info/heat first variation, independent
+apparatus equations, physical metric descent and original-carrier
+refinement remain open. No fitted Info, action or selector is added.
+Keep PR #334 Draft and `GR_closed=false`.

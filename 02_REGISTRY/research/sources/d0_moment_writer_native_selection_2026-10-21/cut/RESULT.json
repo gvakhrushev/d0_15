@@ -1,0 +1,144 @@
+{
+  "status": "PASS",
+  "scientific_input": "f64d4c3389b507c7e7fb66ace9480ed6191c463d",
+  "arithmetic": "Q[a]/(a^4+a^2-1), exact Fraction coefficients",
+  "proof_sha256": "beade911fc9a51aa48cb26c2d4e74cc141c97afe96c54ce59e516d170734bc12",
+  "checker_sha256": "cc760def4c6c6b125150c4af5c0d8002190a097e84b31aaec1bbdecff85f52a8",
+  "source_pins_sha256": "9f25b764734619ac47acaae3edf4370aedda76b4d48999ed710a5562e4657d25",
+  "checks": 61,
+  "labels": [
+    "historical source S1",
+    "historical source S2",
+    "historical source S3",
+    "historical source S4",
+    "historical source S5",
+    "historical source S6",
+    "historical source S7",
+    "historical source S8",
+    "Golden norm p+p^2=1",
+    "a^2=p",
+    "positive root bracket lower",
+    "positive root bracket upper",
+    "brackets imply strict entropy order",
+    "r0 direct Golden polynomial",
+    "r1 Golden probability",
+    "distinct prepared reports",
+    "real prefix readiness",
+    "all 16 report columns orthogonal",
+    "full report effect spectrum",
+    "code0 full orthogonal columns",
+    "code0 whole word orthogonal",
+    "code0 actual chronological composition",
+    "code0 preserves whole report cut",
+    "code0 all-branch completeness",
+    "code0 exact right conjugacy",
+    "code0 diagonal full effect",
+    "code0 both spectral multiplicities",
+    "code0 actual prepared click",
+    "code0 exact feedback factors",
+    "code1 full orthogonal columns",
+    "code1 whole word orthogonal",
+    "code1 actual chronological composition",
+    "code1 preserves whole report cut",
+    "code1 all-branch completeness",
+    "code1 exact right conjugacy",
+    "code1 diagonal full effect",
+    "code1 both spectral multiplicities",
+    "code1 actual prepared click",
+    "code1 exact feedback factors",
+    "same complete determinant",
+    "selected-column determinants differ",
+    "equal per-address code inventories",
+    "seven gates in either ready block",
+    "paid prefix norm",
+    "all prefix failure retained",
+    "actual ready probability",
+    "actual known-one and pure plus byproduct",
+    "full prefix code0 complete law",
+    "full prefix code0 total probability",
+    "full prefix code0 untouched u=1",
+    "full prefix code0 retained code",
+    "full prefix code1 complete law",
+    "full prefix code1 total probability",
+    "full prefix code1 untouched u=1",
+    "full prefix code1 retained code",
+    "actual whole entropy contrast has nonzero readiness",
+    "stable cut commutes X",
+    "stable cut commutes Z",
+    "stable cut blank compression",
+    "initialized cut same blank compression",
+    "initialized cut fails X covariance"
+  ],
+  "exact_values_basis_1_a_p_ap": {
+    "r0": [
+      "41",
+      "0",
+      "-65",
+      "0"
+    ],
+    "r1": [
+      "1",
+      "0",
+      "-1",
+      "0"
+    ],
+    "alpha": [
+      "-2",
+      "0",
+      "4",
+      "0"
+    ],
+    "full_q0": [
+      [
+        "3",
+        "0",
+        "-4",
+        "0"
+      ],
+      [
+        "340",
+        "0",
+        "-550",
+        "0"
+      ],
+      [
+        "-342",
+        "0",
+        "554",
+        "0"
+      ]
+    ],
+    "full_q1": [
+      [
+        "3",
+        "0",
+        "-4",
+        "0"
+      ],
+      [
+        "4",
+        "0",
+        "-6",
+        "0"
+      ],
+      [
+        "-6",
+        "0",
+        "10",
+        "0"
+      ]
+    ],
+    "full_det_z_1_over_16": [
+      "1273618330625/2147483648",
+      "0",
+      "-4116414106875/4294967296",
+      "0"
+    ]
+  },
+  "scope": [
+    "Actual full16 Golden/CNOT block and same report cut rank8",
+    "Genuine six-qubit paid prefix, all failure and final report probabilities",
+    "No claimed full-prefix Book factorization, native cut selection or heat/Info binding",
+    "No imported old suite or numerical source extrapolation"
+  ]
+}

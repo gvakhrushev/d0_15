@@ -165,6 +165,67 @@ identified with this different moment instrument. The separate
 [rational-resource writer](A4D_PAID_RATIONAL_RESOURCE_WRITER_2026_10_21.md)
 remains an approximation route to the original pure resources.
 
+## Native selection test on the constructed moment writer
+
+The [finite operational selection test](A4D_MOMENT_WRITER_NATIVE_SELECTION_TEST_2026_10_21.md)
+now realizes the owned mixed field obstruction as an exact finite
+comparison on the paid moment graph. On the buffered h=1/8 nonvacuum
+primary family, the literal perturbations s=2^-20 and r=2^-40 yield
+f>0 and q<0 at one site. P5 and C8 equal the original contractions
+in value on this nilpotent surface, so the strict lower complete CQ
+price follows from the actual report's entropy monotonicity without
+a truncated Hessian or postselected ledger. Both alternatives use
+one common all-row catalogue, with all preparation and failures paid.
+
+A second exact comparison retains and reads a common fair label even
+when both labels generate the root. Switching one paid steering cell
+to generate the competitor on half the labels lowers the UNCONDITIONAL
+price by gamma/2 times the negative report-price contrast. Thus neither
+retained-code entropy nor honest failure accounting removes this
+finite descent. Prescribed AB/BA alternatives still need the actual
+same-initial-controller admission diamond and the same terminal task;
+positive-probability outcomes of a fixed programme are not automatically
+controllable histories. The uniform-code instrument has equal code
+odds, which cannot equal phi^(-C_k) Z_k with these unequal CQ prices
+and equal continuation weights.
+
+The full retained states of distinct codes have trace distance at least
+the actual probability of reaching code writing, even when their
+decoded field coordinates approach each other. Under faithful code
+embeddings and uniformly positive readiness, the moment chart therefore
+does not supply a continuous full-state limiting lift. A fixed finite
+catalogue has a discrete domain; no discontinuity theorem on that
+finite domain or no-go for every encoding is claimed. In particular,
+smooth apparatus elimination needs its own admitted physical lift.
+
+The Book test also distinguishes a prepared column from the actual full
+input domain. A literal paid Golden/CNOT report block has different
+prepared probabilities r_0=41-65p and r_1=p^2, while its full rank-eight
+same-cut feedback spectrum and determinant are exactly equal for both
+codes. The actual common factory prefix has its complete measured CQ
+law; extending the all-column determinant equality across that prefix
+needs its own range/cut factorization. Workspace covariance gives a
+spectator cut P_old tensor I only with the declared invariance and
+blank-compression premises; it does not identify the compulsory observer.
+
+For any actually derived full price P, write U=P-CQ as a bookkeeping
+difference. If D=CQ(w_0)-CQ(w_1)>0 and
+Delta_0=P(w_0)-inf_(Y(w)=y_0) P(w) is the root implementation slack,
+a minimizing physical field envelope necessarily satisfies
+U(w_1)-U(w_0)>=D-Delta_0. Only an attained or quantitatively controlled
+root implementation excludes a neutral completion at the optimized
+envelope level. Stable apparatus minimization cannot cure an inherited
+negative direction by a Schur complement, but that statement itself
+requires a genuine smooth joint stationary lift. A native stationary
+saddle law, different admitted constraints or a different derived full
+price remain possibilities; none is installed by this test.
+
+This closes specific source-neutral minimum and prepared-probability
+substitutions at their stated interfaces. It preserves the exact
+positive writer, the original Einstein solutions and the conditional
+paired-epoch clock lift. The same-execution Book03 admission, complete
+valuation and stationary/constraint selection remain the physical gate.
+
 ## Consumed result: the null source fibre is an additional readout test
 
 The [null two-field source-fibre classification](A4D_NULL_SOURCE_FIBRE_AND_READOUT_DESCENT_2026_10_21.md)
@@ -298,7 +359,11 @@ The covariant two-field stationary-set correspondence, explicit rank-two non-VSI
 
 The finite moment writer, its actual counted-CQ input price and its
 initialized-cut Book determinant are constructed at the scope stated
-above. The compulsory native common-history map \(P\), full Book03
+above. Its exact finite lower-price competitor, complete unconditional
+replacement test, retained-code distance gap and full-column Book
+countercheck are now established. They rule out the specified shortcuts
+to native selection; they do not define that selection. The compulsory
+native common-history map \(P\), full Book03
 heat/Info valuation, native stationary/constraint selection, the
 physical readout of the classified null source fibre, and uniform
 physical refinement have NOT been established. Keep PR #334 Draft and

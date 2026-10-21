@@ -1,0 +1,45 @@
+{
+  "commit": "f64d4c3389b507c7e7fb66ace9480ed6191c463d",
+  "sources": [
+    {
+      "id": "S1",
+      "path": "01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md",
+      "sha256": "668fc904b0585cc7fd5175babead5225c22051422c9c64e197d7b0d42d225342"
+    },
+    {
+      "id": "S2",
+      "path": "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md",
+      "sha256": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d"
+    },
+    {
+      "id": "S3",
+      "path": "02_REGISTRY/research/sources/d0_full128_normalization_closure_2026-10-21/PROOF.md",
+      "sha256": "42f96fc4cdb4f47878c4d260a003dd2819741c6b4e233581e184f28e9792ebcc"
+    },
+    {
+      "id": "S4",
+      "path": "02_REGISTRY/research/sources/d0_paid_moment_field_writer_2026-10-21/code/PAID_CODE_AND_MOMENT_WRITER.md",
+      "sha256": "e95f0486456c53cf0ce40023bab08ac744fd6189b397d29a8773446c168244a0"
+    },
+    {
+      "id": "S5",
+      "path": "02_REGISTRY/research/sources/d0_paid_moment_field_writer_2026-10-21/book/COMPLETE_CODE_WRITER_BOOK_PRICE.md",
+      "sha256": "711c9129230643f65228962a9835dd5faa59882d1803556fa90ca769016b6ec1"
+    },
+    {
+      "id": "S6",
+      "path": "02_REGISTRY/research/A4D_PAIRED_EPOCH_CLOCK_COMPLETE_SOURCE_TRANSPORT_2026_10_21.md",
+      "sha256": "bc8d9b96701c8c0096f01dc22cf717ac86a0e83741be1608b438cd5e2ed79824"
+    },
+    {
+      "id": "S7",
+      "path": "02_REGISTRY/research/A4D_PAID_MOMENT_FIELD_WRITER_2026_10_21.md",
+      "sha256": "4ec6622ae2ff4f75d615bbd2b207a071a154df56e59d74f0eb76fab6c9f95d82"
+    },
+    {
+      "id": "S8",
+      "path": "02_REGISTRY/research/A4D_NATIVE_BOOK03_CLOSURE_GATE_2026_10_21.md",
+      "sha256": "3257bd02e99c7653d373809b4a5531956f72c7e45420f4ddfd6f3da88635256a"
+    }
+  ]
+}
