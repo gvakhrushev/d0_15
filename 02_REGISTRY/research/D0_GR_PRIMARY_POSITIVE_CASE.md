@@ -532,4 +532,6 @@ the actual common-history resource supply, neutralize its own input price,
 choose literal Book03 Info or derive the native stationary/constraint law.
 Physical metric descent and refinement remain required. This is a stronger
 processing-source theorem with real failures and independent inputs, not
-full physical D0 selection; `GR_closed=false`.
+full physical D0 selection; `GR_closed=false`. The next same-history
+resource-writer, complete-price and Book03 binding calculation is specified
+in the [common-map construction gate](A4D_NEXT_COMMON_MAP_CONSTRUCTION_GATE_2026_10_21.md).

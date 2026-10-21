@@ -13,6 +13,32 @@ P:(y,zeta) -> (input purification, RIGHT/reference state, complete instrument an
 
 The map is acceptable only if the following three tests hold on the SAME parameterized execution and SAME boundary.
 
+## Consumed result: the fixed processor still needs a native resource writer
+
+The [fixed-processor continuation](A4D_FIXED_PROCESSOR_JOINT_RESOURCE_SOURCE_2026_10_21.md)
+now proves a complete paid downstream execution, including its addressed
+Bell/Kraus outcomes, matched paid abort, retained work, and independent
+downstream programme/material preparation equations. Its domain, however,
+starts with supplied complete resource banks. In particular, the aggregate
+programme input is
+\[
+|\Omega(y)\rangle=(Ad)^{-1/2}\sum_{a,i}|a,i\rangle J_a(y)|i\rangle,
+\]
+where the shared field addresses are deduplicated. The package explicitly
+records `actual_input_writer_constructed=false`: it does not derive one
+admitted common D0 history that prepares these states and the material bank,
+nor the true price and first source of that preparation. The transitive
+permutation only acts after this resource bank exists. Its theorem isolates
+the remaining upstream derivative; it cannot cancel it by averaging.
+
+This is a conditional downstream source theorem, not yet the Gate-A map
+below. No source-preserving identification with the original cap-one N=1
+record, the original full128 tape, or the native Book03 stack is asserted.
+The result therefore narrows the next calculation from implementing the
+fixed processor to deriving its **native resource writer and price on the
+same complete history**. The actual Book03 information, absolute anchor,
+and native selection remain independent obligations.
+
 ## Gate A — operator and source identity
 
 [Book03 §03.1.3](../../01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md)
@@ -71,18 +97,46 @@ The equality D_y S_full = gamma_1 D J2 is the target only if all other independe
 
 ## Smallest next calculation
 
-Start from the already owned finite moving-query and restricted-CAR definitions. For the first candidate that uses a moving encoder/decoder or leakage, derive its exact finite Kraus/effect family on the SAME input and record space. Compute, symbolically where possible:
+Do not replay the fixed Bell processor or transitive-bank algebra. Start from
+that processor's exact \(|\Omega(y)\rangle\) interface and the already owned
+original finite field/material carrier. The next candidate must be an actual
+finite history from the common admitted D0 initial state, not a freely
+supplied field-dependent program state. Construct its exact preparation
+instrument and complete output tape. If the original admitted primitives do
+not determine a physical writer, record that interface as `UNDEFINED`; claim
+a scoped no-go only when a specified candidate is actually ruled out.
+For a candidate writer and its composed processor, compute, symbolically
+where possible:
 
-1. its base value and full first jet in all active y-directions;
-2. the complete complement/leakage and failure probabilities;
-3. its actual primitive/clock/work price and the derivative of its absolute normalizer;
-4. the pullback of every independent input tangent;
-5. the residual against the original 42-source identity.
+1. the exact output state on the original primary section, including the
+   programme, material, RIGHT/reference and fixed-collar resources;
+2. every preparation, compiler, failure and abort branch, with its actual
+   primitive/clock/work cost and absolute normalizer;
+3. the complete first jet on the original 42 field directions and every
+   genuinely independent input/preparation tangent;
+4. the resulting upstream price derivative \(D P_{\rm in}\), retained
+   separately from the vanishing downstream processing source;
+5. the literal Book03 branch data \((H,q_H,c_H,I_H)\) and its full source
+   on this same tape, including the absolute anchor and clock/work terms;
+6. the residual against the original 42-source identity and all independent
+   input equations.
 
-Reject a candidate immediately if it fails any one of these identities. If it passes, it is still conditional until physical primitive admission and the compulsory Book03 valuation are proved. Only then attempt a uniform refinement estimate in the original raw-216 norm. The continuum two-field correspondence and rank-two non-VSI witness are consumers of this step, not substitutes for it.
+Reject a candidate immediately if it fails any one of these identities. Do
+not set \(D P_{\rm in}=0\), infer a Book03 Info law from Shannon entropy, or
+identify different record carriers without a priced source-preserving map.
+If the Book definitions do not determine \(I_H\) or its first jet, record
+that exact physical interface as underdetermined. Only a candidate passing
+the same-history writer, full-price, and Book tests proceeds to uniform
+refinement in the original raw-216 norm. The continuum two-field
+correspondence and rank-two non-VSI witness are consumers of this step, not
+substitutes for it.
 
 ## Current verdict
 
 The covariant two-field stationary-set correspondence, explicit rank-two non-VSI solution, fixed-positive-PF-weight first-covector identity, finite four-report price-source test, and finite sixteen-setting whole-channel derivative are established within their stated mathematical interfaces. The original exact finite Cartan family remains a separate positive result.
 
-The common admitted map P, compulsory complete Book03 valuation, genuinely independent upstream equations, and uniform physical refinement have NOT been established. Keep PR #334 Draft and `GR_closed=false`. This is the single next closure gate; do not start another geometry census or repeat completed proofs.
+The native resource writer and its genuine input price, the common admitted
+map \(P\), compulsory complete Book03 valuation, native stationary/constraint
+selection, and uniform physical refinement have NOT been established. Keep
+PR #334 Draft and `GR_closed=false`. This remains the single next closure
+gate; do not start another geometry census or repeat completed proofs.
