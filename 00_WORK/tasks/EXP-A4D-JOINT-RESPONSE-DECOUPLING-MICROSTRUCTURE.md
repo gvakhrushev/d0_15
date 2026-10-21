@@ -3446,3 +3446,30 @@ Q(sqrt(5)) identities, explicit auxiliary section, symbolic Q[t,t0] curvature
 and all-row source calculation, noncommuting curved-background propagation.
 Independent reviews bind the frozen proofs/checker/receipt. No lifecycle,
 registry, CORE/BOOK or physical-GR acceptance change; GR_closed=false.
+
+## 21 October continuation: Book03 order comparator on original CAR16
+
+Phase: native-representation support for the existing constitutive owner in
+Draft PR #334. The exact certificate
+[`d0_book03_car16_q8_order_2026-10-21`](../../02_REGISTRY/research/sources/d0_book03_car16_q8_order_2026-10-21/README.md)
+pins the Book03 order comparator, its Lean/clock owners, and the existing
+original-CAR16 Spin/Q8 source at the PR head `dfc0275eea67ebc21ffe539de9b6ea96713863a5`.
+
+Precise parent substitution: the finite comparator's `Q8` spin factor now has
+an exact faithful representation on the original `ArchiveFockState` CAR16;
+all 64 group products, all 15 operations, the 16-stage clock, and the two
+terminal record effects replay exactly for arbitrary CAR16 input. The identity
+and order effects are `0` and `4 p^3 I16` on record one, with complementary
+order effect `p^6 I16`. A common-`i` control erases the contrast.
+
+This consumes only the **abstract-carrier mismatch** in the existing
+`original-q8-spin-sheet-current-fullstep-boundary` input. It does not supply
+actual G0 admission/payment, full Book03 `Cost−Info`, the field-to-Q8 pullback,
+or physical source/variation selection. The smallest remaining application is
+the same-execution native admission and complete-price map; no task, selector,
+lifecycle, claim status, or physical-GR acceptance changes.
+
+Carrier and source: original CAR16 Spin/Q8 factor with explicit arm, program,
+clock, and retained-record apparatus factors. Decisive check: the 206-check
+exact symbolic CAR16 replay, with normal/optimized stdout identical and the
+existing Book03 comparator checker still passing (88 checks). `GR_closed=false`.

@@ -166,3 +166,32 @@ and uses the finite Book 03 weight. It does not prove that D0 admits either cost
 that its native `Σ` selects these `q` and `Info` maps, or that the action variation pulls
 back to a physical field variation. The native history/readout-to-field map, completeness
 of its action family, and physical response visibility remain open G0 obligations.
+
+## 10. The Book03 order comparator lifts to the original CAR16 Spin/Q8 carrier
+
+The exact finite source at
+`sources/d0_book03_car16_q8_order_2026-10-21/` composes Book03 §03.26.1's
+identity/order words with the faithful parity-even `Q8` action already
+constructed from the original four-mode Jordan–Wigner CAR operators. Its
+checker compares all 64 products with the existing `OrderMemoryReadout.spin`
+ordering, then runs the 15 chronological stages on arm × CAR16 × retained-bit
+coordinates. It also realizes both words on the existing 16-label clock,
+including its final idle, and stores the program label in one reversible
+2048-coordinate machine.
+
+For every real `ψ` in the original CAR16, the exact effects are
+
+\[
+E_{1,\mathrm{identity}}=0,\qquad
+E_{1,\mathrm{order}}=4p^3 I_{16},\qquad
+E_{0,\mathrm{order}}=p^6 I_{16},
+\quad a^2=p,\quad p^2+p=1.
+\]
+
+This closes the **algebraic carrier map** from the comparator's abstract
+quaternion spin factor to the original CAR16 representation, and shows that
+its record effect is state-independent across that full carrier. It does not
+admit the controlled operation physically: arm addressability, preparation,
+record, clock, and their full Book price remain apparatus inputs. The literal
+`fullStep` still has no `Q8` input. No same-execution `Cost−Info` pullback,
+field source, native stationarity, or GR closure follows; `GR_closed=false`.
