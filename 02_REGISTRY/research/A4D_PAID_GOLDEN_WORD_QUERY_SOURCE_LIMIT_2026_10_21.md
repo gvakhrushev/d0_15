@@ -175,3 +175,32 @@ All repository inputs refer to `086fab99d8aaed7f712e9a3d2858c516b61901fc`:
 - `A4D_PHYSICAL_CAP1_EXECUTION_COMPOSITION_2026_10_21.md`: remaining physical query/price/input distinctions.
 
 References distinguish established background from the present original-query application: [Dawson--Nielsen, quant-ph/0505030](https://arxiv.org/abs/quant-ph/0505030); [Nielsen--Chuang, quant-ph/9703032](https://arxiv.org/abs/quant-ph/9703032). No external approximation theorem is used to waive a D0 clock, input, reference or price obligation.
+
+## 9. Exact source evaluation from four probability contexts
+
+The follow-up checker `sources/d0_paid_golden_query_secants_2026-10-21/check_exact_four_setting_source.py` computes the original full8D operator/report jets and stencil weights exactly in `Q(a)[z]`, where `a^4+a^2-1=0`, then applies the CQ entropy chain rule at the baseline. Seven operator settings,
+
+`(1,1), (3,1), (-1,1), (1,3), (1,-1), (1,5), (1,-3)`,
+
+reduce by exact report symmetry to four distinct probability contexts: `(1,1), (3,1), (1,3), (1,5)`. Each setting is an actual equal-inventory two-query word: 40 Golden gates, 84 CNOTs and 124 unit query ticks. The full controller complement, original fixed rank-two cut, unconditional abort factor, and retained CQ readout are kept.
+
+Writing `ell_{e,b}=alpha beta r_{e,b}` for the unconditional complete-report probabilities and `h_phi` for the binary entropy in base `1/p`, the exact chain-rule source is reconstructed as
+
+```math
+S_f=-h_phi'(r_{1,1}) (a/2) w_E (ell_{3,1}-ell_{1,1}),
+S_q=h_phi'(r_{1,1}) a^3[-w_1 ell_{1,1}+(w_1-w_2)ell_{1,3}+w_2 ell_{1,5}],
+```
+
+with exact stencil coefficients
+
+```math
+w_E=-173a^3/124-70a/31,
+w_1=-21449a^3/10505-34712a/10505,
+w_2=2049697447a^3/3670783160+414560017a/458847895.
+```
+
+The probability-side symbolic source error is zero; the four-context chain-rule reconstruction matches the full source to the checker’s `1e-70` numerical tolerance. The finite-`z` source ratio is `S_q/S_f=-23.416406751884074972895582064895...`. This is an exact evaluator for the declared CQ price derivative; it is not a finite difference of entropy values. Applying the probability stencil directly to the nonlinear entropy differs from the correct chain-rule result by `9.738373384822754845e-11` in the checker’s 85-digit numerical control.
+
+The physical-sampling control remains severe: under the checker’s independent full-run model, the geometry source needs about `2.054e14` runs per nonbaseline setting for 1% RMS error. Finite-shot error is not removed. More fundamentally, the exact evaluator still supplies no physical field-to-program map or autonomous descent, does not select Book 03 `Info` or its input constraints, does not recompute the complete bank/detector ledger, and does not solve the all42 stationary system. The result closes a finite query-source evaluation step only; `GR_closed=false`.
+
+The exact checker, stored output `RESULT_FOUR_SETTING.json`, and local input pins are adjacent to the source. Ordinary and optimized checker runs agree byte-for-byte. The output is a symbolic/high-precision computation, not an interval enclosure or experimental measurement.
