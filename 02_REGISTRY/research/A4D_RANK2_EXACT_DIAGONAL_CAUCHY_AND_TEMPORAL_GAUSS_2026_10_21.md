@@ -214,3 +214,55 @@ The new Cauchy recurrence of Sections 2-3 then makes all four diagonal coframe e
 The exact six local SO^+(1,3) Noether identities relate these components; they are NOT six additional independent equations to subtract blindly. In the original all4x4 numerical replay, all nine forbidden coframe and all nine forbidden link source entries are zero at machine precision even for random nonsymmetric diagonal-coframe/pure-boost controls; the permitted three off-diagonal and multiple permitted spatial-link entries are genuinely NONZERO at small finite h. In particular a reduced action varied ONLY inside diagonal tetrads and prescribed boosts cannot promote this statement to a full42 root: the remaining 18 must be tested as independent ambient variations with the original neighbor faces.
 
 This is the practical architectural reduction: the next source solver needs a small, exact **18-slot observed residual**, not a blind all42 search or one-site 24x24 inverse. This says nothing about whether those 18 slots lie in a globally compatible gauge-fixed field-writer image with a fixed two-ended temporal collar. GR_closed=false.
+
+
+## 8. EXACT six-dimensional Ward rank: all 42 Euler ZERO iff TWELVE chosen original spatial-link sources vanish
+
+The six local original \(\mathrm{SO}^+(1,3)\) Noether relations can be made constructive on THIS specific already-defined finite Cauchy carrier. They are not just a formal statement that "some six combinations must vanish": the actual coefficient matrix restricted to the 18 potentially nonzero source entries has an explicitly invertible minor.
+
+At any spatial homogeneous based site, the actual canonical original star+CAR source is invariant under arbitrary infinitesimal local proper Lorentz \(Z\). At the declared diagonal/pure-spatial-boost field and its already proved E_(U_t)=0, the exact local variation gives
+
+  0 = sum_(a,mu) E_e[a,mu] (Z e)[a,mu]
+      +sum_(i=1..3) sum_(j=0..5)
+         E_(Ui,Xj) * coeff_Xj[ Z - Ui Z Ui^-1 ].           (8.1)
+
+Here each spatial predecessor link contributes the actual RIGHT derivative, rewritten in the original LEFT basis as \(-\operatorname{Ad}_{U_i}Z\); it must NOT be omitted. The original arbitrary fixed PF weights disappear from the complete native N=1 FIRST source because the constructed branch has f=q=0 at every site. This exact identity remains valid for the fully nonlinear native price on this very branch; it is not a continuum Ward assumption.
+
+The original surviving source has 18 coordinates after Sections 3,4,7:
+- Three **off-diagonal coframe** values E_e[1,0],E_e[2,0],E_e[3,0];
+- FIFTEEN original spatial-link Lie source entries:
+  Ux: K1,K2,K3,J12,J13 (five);
+  Uy: K1,K2,K3,J12,J23 (five);
+  Uz: K1,K2,K3,J13,J23 (five).
+All 24 other original Euler entries were already proved structurally/sourced zero in the declared Cauchy branch. These are source COMPONENTS, not 18 independent dynamical degrees of freedom.
+
+Let W be the exact 6x18 coefficient matrix of (8.1), using the six originally accepted Lie generators in order K1,K2,K3,J12,J13,J23. Pick THESE SIX actual source coordinates as W-pivots:
+
+  E_e[1,0], E_e[2,0], E_e[3,0],
+  E_(Uy,K1), E_(Uz,K1), E_(Uy,K3).
+
+For e=diag(X,1/X,R,R), the leading 3x3 boost-row/coframe-pivot block is X*I3 and the rotation-row/coframe-pivot block is ZERO. The selected last three spatial-link pivot columns have rotation-row submatrix
+
+  diag( sinh(h k2), sinh(h k2), -sinh(h k2) )
+
+when \(U_y=\exp(h k_2 K_2),\,U_z=\exp(h k_2 K_3)\). This follows by evaluating the original \(\operatorname{Ad}_{U_i}Z\) with the old proper-Lorentz generators, not by fitting a numerical kernel. Consequently
+
+  BOX: det W_pivot = -X^3 sinh(h k2)^3 != 0             (8.2)
+
+for X>0,h>0,k2!=0. Along the entire present positive-radius original rank-two seed k2(r)>0. Hence W has **exactly rank six** on the actual 18-slot source carrier.
+
+Write the 18-column source vector as (pivots6, targets12). Because W_pivot is invertible, the exact Ward identity implies
+
+  pivots6 = -W_pivot^-1 W_targets * targets12.
+
+Thus ALL original 42 Euler components vanish on the already constructed exact diagonal/matter Cauchy branch **IF AND ONLY IF** the following TWELVE, explicitly identified, ORIGINAL spatial-link Euler source components vanish:
+
+  Ux: (K1,K2,K3,J12,J13) — 5 original independent left-link directions;
+  Uy: (K2,J12,J23)       — 3;
+  Uz: (K2,K3,J13,J23)    — 4.                            (8.3)
+
+This is a **complete ZERO TEST**, not an assertion those twelve already vanish or that twelve unrelated arbitrary constraints are independent. The six omitted pivot source components are then forced zero by the genuine full original on-carrier Ward equations. The reduction is exact at finite h under the stated homogeneous coframe/link ansatz and actual fixed supported first-source premise, including arbitrary (even jagged) positive frozen PF weights. It is NOT a theorem that all arbitrary four-dimensional D0 fields have twelve degrees of freedom or that the missing full 42-row finite root has already been found.
+
+The [standalone checker](sources/d0_star_rank2_seam_2026-10-21/check_ward12_spatial_source_equivalence.py) computes the exact symbolic determinant (8.2), the seven-source coframe support and the complete twelve-target list. It also differentiates all actual 16 coframe and 24 LEFT-link original six-face sources at independent random diagonal/pure-boost finite fields, including predecessor faces. On those NONSTATIONARY tests the exact Ward residual and structural forbidden-source residual are of numerical roundoff size; the twelve target values are demonstrably NONZERO. The negative control is mandatory: rank six does not solve twelve equations.
+
+**Architectural next step:** replace the unconstrained "full42" numerical target on THIS narrow homogeneous two-stream branch by ONE gauge/boundary-compatible whole-slab solver of exactly the 12 specified spatial-link source equations (8.3), coupled to the exact coframe Cauchy map (5)-(7) and the two real CAR histories. Its solution, with correct collar and same complete price, automatically satisfies all original 42 ambient Euler rows by (8.1)–(8.3). A free per-site rotation or an arbitrary second temporal boundary is NOT authorization to declare existence. Outside this homogeneous sector one must return to the original global 42-row system.
