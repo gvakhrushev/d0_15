@@ -550,3 +550,23 @@ On the already-owned rank-two non-VSI metric with its exact finite two-scalar cu
 There is a **positive constructive alternative using an ALREADY existing detector branch, NOT a newly fitted action**: \(\sigma=+1\), \(\lambda_+=+\kappa\) and the determined volume calibration \(e\mu=2\kappa\) give \(G_{\mu\nu}=2\kappa e^{-1}\sum_A\partial_\mu\psi_A\partial_\nu\psi_A\), compatible with the literal original \(f_\star+\lambda_+q\) in this chart. On the genuine noncommutative six-face local finite interior stencil, independent complex-step checks of all16 coframe+24 link tangents show coframe and *physically normalized* connection source maxima tending numerically to zero proportional to \(h\), for \(h=1/8,\dots,1/128\); both matter rows are exactly zero. The full nonlinear CQ finite-\(f_h\) source, exact finite all42 roots, uniform analytic convergence, paid orientation choice and original field writer are NOT proved.
 
 **Parent acceptance change:** before consuming this nonnull continuum class as a physical finite D0 limit, first certify the proper/oriented frame transfer and **exact first-source Jacobian** between native \(f_\star\) and the standard \(eR\); retain the genuine sigma of the SAME Golden physical programme. The old \(\sigma=-1\) positive Brinkmann/null result and this Cartesian \(\sigma=+1\) rank-two candidate are different typed hypotheses until this transport is completed. Do not silently identify them by a shared \(\kappa\) decimal or adjust it by a fitted \(-2\). This is a source-normalization classification, not a new physical gravity selection. **GR_closed=false.**
+
+
+## Source-owner reconciliation after the rank-two finite test (21 October): a full nonlinear price, not a new sigma, is transported
+
+Previously Sections 6-7 left the sign relationship between the old exact sourced-null pp owner and the Cartesian rank-two candidate untyped. [The now EXPLICIT exact finite sign theorem](A4D_ORIGINAL_STAR_NULL_CART_SIGN_AND_ALL_ORDER_CQ_RETYPE_2026_10_21.md) resolves that specific gap: the null 40-to-3-to-1 checker computes PLUS epsilon4 times the original bivector and extracted finite plaquette curvature, whereas the canonical flat G2*STAR owner computes MINUS epsilon4. The positive-orientation null-to-Cartesian internal map has det=+1, so no automatic sign change follows from the frame alone.
+
+For identical old fields at every finite lattice spacing:
+  P_null = -P_canonical,
+  D_42(P_null+lambda_minus q)
+    = -D_42(P_canonical -lambda_minus q).
+The earlier numerical Cartesian affine sigma-plus source is the same stationarity target after this exact retyping, NOT evidence that the physically selected Book03/CQ detector changes from its original sigma-minus contract.
+
+At the COMPLETE same native N=1 nonlinear price level the correct map is
+  F_canonical(x,y)=F_null(-x,y),
+not F_original_sigma_plus(x,y). Under it the original analytic auxiliary master section obeys
+  (s,P,a)_canonical=(-s,-P,-a)_null,
+  K_canonical(t)=K_null(t) EXACTLY for all t.
+Consequently all nonlinear material coefficients, true spatial PF factors, stationary coframe scale P/a and initial field/matter first-source ratio are carried consistently. Replacing this coordinate pullback by a separate sigma-plus detector only matches (possibly opposite) FIRST derivatives and is false at finite nonlinear order (the actual native F_xx(0) is nonzero).
+
+The remaining finite rank-two task is now NARROW: with this same functional on the literal finite star and CAR source, check its FULL original 16+24+2 Euler residual and solve its gauge/constraint-compatible finite correction on the original fixed collar, with the actual clock/controller/upstream source and physical primitive admissibility. The published five-grid affine O(h) SOURCE trend and the exact finite material Q=0 history are not exact finite all42 roots. Analytic Taylor controls the nonlinear correction only in a uniformly bounded source norm; it cannot be substituted for a proved full connected-gauge inverse or source selection. GR_closed=false.
