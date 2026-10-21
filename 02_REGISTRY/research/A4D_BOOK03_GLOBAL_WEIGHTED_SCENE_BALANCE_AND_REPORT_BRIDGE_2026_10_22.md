@@ -155,3 +155,48 @@ The mathematical theorems above are global in the stated equitable positive grap
 Companion bounded standalone diagnostic \`check_book03_balanced_scene.py\` checks the exact fractions (39/160, 1/4 and canonical three derivative coefficients), positive rational weight controls, the hyperbolic two-shape-coordinate identity, the complete 33×33 normalized matrix spectrum and both actual master traces, the 359 edge-source components at the balanced configuration, the price gap, and the positive two-shape Hessian. The algebraic proof of the global derivative inequality and all-size 359-edge statement is in §§1–3; finite floating checks do not replace it.
 
 A verified local replay with NumPy gave 359 original edges, exact rational lower gap 57179/3460300800, numerical gap 9.725561821971596e-5, maximum complete balanced first-edge derivative 1.34e-19 and full closed-form spectral price discrepancy below 4.5e-16. No old root, physics, full128, Lean or raw216 suites were rerun.
+
+## 7. Stronger: a 31-dimensional isospectral stationary manifold in the **full 359-edge** space
+
+The balanced 13:11:9 **equitable ray** is merely a slice of a larger exact family. Write the zone sizes as n=(9,11,13), and the three balanced edge factors as w^0_(9,11)=13, w^0_(9,13)=11, w^0_(11,13)=9. For each of all 33 vertices independently choose s_i>0, imposing only the **three** constraints
+
+    sum_{i in zone a} s_i=n_a   (a=9,11,13).
+
+Give EVERY cross-zone edge i∈a,j∈b its genuine positive weight
+
+    w_ij = w^0_ab s_i s_j.
+
+There are 33−3=30 independently variable vertex factors. A separate common positive scaling of every edge supplies a 31st independent parameter. These are truly different positive conductance arrays: under the fixed zone-sum constraints, ratios of edges sharing a target recover each source vertex factor, so the parameter-to-weight map is injective.
+
+**Exact spectrum.** Every vertex i in zone a has the actual degree d_i=s_i d^0_a, with d^0=(286,234,198). Consequently the full 33×33 stochastic operator has entries
+
+    T_ij = w^0_ab s_j / d^0_a    (i∈a,j∈b,a≠b).
+
+Let J embed zone constants into all vertices, and let Z take the s-weighted mean in each zone: (Z f)_a=(1/n_a)sum_{i∈a}s_i f_i. Then ZJ=I_3 and
+
+    T=J T_0 Z,     T_0=(ones_3 ones_3^T−I_3)/2.
+
+It follows that the full transport spectrum is EXACTLY {1,−1/2,−1/2,0^30} for **all** these independently varying 30 parameters. The true 718-history Sylvester feedback and full 33-vertex heat price therefore have exactly the same value Phi(1/4) everywhere on this family. This is not a relabeling of the unweighted scene: individual vertex degrees and conductances genuinely change.
+
+**The stronger, all-edge stationary statement.** Constancy along this 30-manifold alone would not guarantee vanishing of the 359-dimensional ambient gradient; we check every edge direction analytically. Let m(t)=exp[-beta(1−t)]/Z−2z t/[1−z(1−t²)] be the exact scalar from the original complete weighted-scene derivative, and let M=m(T). Define the two idempotents P_zone=JZ and P_1=J[ones_3 ones_3^T/3]Z. Since T has eigenvalues 1,−1/2,0 with projectors P_1, P_zone−P_1 and I−P_zone,
+
+    M=m(0)I+[m(−1/2)−m(0)]P_zone
+                 +[m(1)−m(−1/2)]P_1.
+
+Put c=[m(1)−m(−1/2)]/3. For i∈a,j∈b,a≠b, the displayed spectral decomposition gives the **actual complete matrix entries**
+
+    M_ji=c*s_i/n_a,    M_ij=c*s_j/n_b,
+    (TM)_ii=c*s_i/n_a, (TM)_jj=c*s_j/n_b.
+
+Substitute these into the existing all-edge source formula (native shared-scene owner, equation (5)):
+
+    omega_ij=M_ji/d_i+M_ij/d_j
+                   −(TM)_ii/d_i−(TM)_jj/d_j = 0.
+
+Every cancellation is exact for every one of the **359** independent cross-zone edge jets, any beta>0 and 0<z<1. The moving degree, history pairing and full feedback are already inside M and this formula. Thus the 30 vertex-redistribution parameters, plus scale, describe an exact **31-dimensional full-gradient stationary manifold**, not merely a family of equal values on which transverse Euler rows could remain nonzero.
+
+Differentiating the identically zero full gradient along this smooth injective family shows that **the full 359×359 Hessian has at least 31 independent kernel vectors at every member of the family**. We make no positive-definiteness or global-minimum claim in the remaining 328 directions; the original section 3 proves global minimality only within the *three-parameter equitable* subfamily. This explicit degeneracy is a further obstruction to asserting unique apparatus preparation or isolated physical selection from the weighted-scene scalar alone.
+
+A separate narrow checker \`check_book03_vertex_balance.py\` verifies three non-equitable rational factor arrays. It evaluates all 359 analytic edge cancellations in exact rational arithmetic and independently recomputes the true 33×33 normalized spectrum, complete master scalar and complete per-edge source to floating accuracy. All three trials pass, with maximum full359 numerical first-source norm below 2.4e−19. The general conclusion is the projector proof above, not an extrapolation from those three controls.
+
+The original D0 **binary** 33-vertex passport still does not admit these weights without an explicit paid native extension. No new scene preparation, Book03 Info law or GR selection is derived. GR_closed=false.
