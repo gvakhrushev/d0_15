@@ -95,6 +95,36 @@ def symbolic_reduction():
        "q_zero_and_matter_euler":"X*Y=constant, not a freely postulated ansatz",
        "radial_trace_identity":"X EX + Y EY + 2 R Eperp = 2 f on q=0"}
 
+def exact_component_support():
+    """Literal six-face Hodge/epsilon support, without momentum fitting.
+    Temporal boost face 0i lives in K_i. Spatial boost commutator ij belongs
+    to so(1,2) on (0,i,j): K_i,K_j,J_ij. At diagonal coframe, a one-leg
+    variation can hit only the internal complementary bivector.
+    """
+    from itertools import combinations
+    ps=list(combinations(range(4),2))
+    possible=set()
+    for r,t in ps:
+        u,v=[j for j in range(4) if j not in (r,t)]
+        curv=[(0,t)] if r==0 else [(0,r),(0,t),(r,t)]
+        for a,b in curv:
+            comp=set(range(4))-{a,b}
+            for A in range(4):
+                if {A,v}==comp:possible.add((A,u))
+                if {u,A}==comp:possible.add((A,v))
+    expected={(i,i) for i in range(4)}|{(i,0) for i in (1,2,3)}
+    assert possible==expected,(possible,expected)
+    # A link Ui variation along the rotation J_jk orthogonal to its
+    # boost plane has exactly one index outside each participating
+    # so(1,2) face. Its projected J_ij curvature entry is identically zero.
+    return {"original_six_face_coframe_allowed":sorted([list(v) for v in possible]),
+            "original_coframe_identically_zero_components":16-len(possible),
+            "all_six_temporal_lorentz_Euler":"ZERO",
+            "three_spatial_transverse_rotation_lorentz_Euler":"ZERO",
+            "other_spatial_link_rows_potentially_nonzero":15,
+            "nonzero_component_bound_before_solving":7+15+2,
+            "nonzero_component_bound_after_cauchy_root":3+15}
+
 def exact_temporal_gauss():
     """Two neighboring TRUE based time-spatial faces; rational Lorentz check.
     Projection on the i-th boost is zero for ALL six proper Lorentz tangents.
@@ -171,7 +201,7 @@ def solve_slab(lo,hi,n):
     # psi2=amp*x is the other independent spatial history.
     first_history=np.cumsum([0.]+[h*c['v'][0,0].real for c in cells[:-1]])
     assert len(first_history)==n+1
-    max_f=max_q=max_diag=max_off=max_Utime=0.
+    max_f=max_q=max_diag=max_off=max_Utime=max_forbidden_links=max_forbidden_coframe=0.
     dx=1e-20
     for j in range(n):
         cur,nxt=cells[j:j+2]
@@ -202,6 +232,8 @@ def solve_slab(lo,hi,n):
                 ).imag/dx
                 cur['u'][0]=old
                 max_Utime=max(max_Utime,float(abs(dval)))
+            # Verify all 12 off-diagonal source components, not just the
+            # three potentially nonzero by the exact six-face support.
             for a in range(4):
                 for b in range(4):
                     if a==b:continue
@@ -209,19 +241,34 @@ def solve_slab(lo,hi,n):
                     cur['e'][a,b]=old+1j*dx
                     grad=(star_density(cur,nxt,h)+KAPPA*matter_query(cur)).imag/dx
                     cur['e'][a,b]=old
-                    max_off=max(max_off,float(abs(grad)))
+                    if b==0 and a in (1,2,3):
+                        max_off=max(max_off,float(abs(grad)))
+                    else:
+                        max_forbidden_coframe=max(max_forbidden_coframe,float(abs(grad)))
+            # Three additional exact zero spatial-link source rows are the
+            # rotations J23 at U_x, J13 at U_y, J12 at U_z.
+            for r,gindex in ((1,5),(2,4),(3,3)):
+                old=cur['u'][r].copy()
+                cur['u'][r]=expm(1j*dx*LORENTZ[gindex])@old
+                grad=(star_density(prev,cur,h)+star_density(cur,nxt,h)).imag/dx
+                cur['u'][r]=old
+                max_forbidden_links=max(max_forbidden_links,float(abs(grad)))
     assert max_f<3e-10 and max_q<2e-14 and max_diag<3e-9
     Xdiff=max(abs(x["x_from_seed"]) for x in stats)
     Rdiff=max(abs(x["R_from_seed"]) for x in stats)
     Kdiff=max(abs(x["k1_from_seed"]) for x in stats)
     assert max_off>1e-6,"remaining off-diagonal Euler source must not be hidden"
     assert max_Utime<2e-9,("original six temporal link Gauss",lo,hi,n,max_Utime)
+    assert max_forbidden_links<2e-9,("original three spatial transverse rotations",lo,hi,n,max_forbidden_links)
+    assert max_forbidden_coframe<2e-9,("original nine off-diagonal coframe zeros",lo,hi,n,max_forbidden_coframe)
     assert max(Xdiff,Rdiff,Kdiff)<2.0*h
     return dict(r_interval=[lo,hi],steps=n,h=h,
        full_original_6face_f_max=max_f,actual_two_CAR_Q_max=max_q,
        all_four_true_diagonal_coframe_Euler_max=max_diag,
        unsolved_offdiagonal_coframe_Euler_midpoint=max_off,
        six_original_temporal_link_Euler_max_midpoint=max_Utime,
+       three_spatial_transverse_link_Euler_max=max_forbidden_links,
+       nine_structural_offdiag_coframe_Euler_max=max_forbidden_coframe,
        X_seed_distance=Xdiff,R_seed_distance=Rdiff,k1_seed_distance=Kdiff,
        two_original_material_current_rows="ZERO at all free interior stencils",
        exact_timeline="Cauchy k1 initial data; final k1 is derived, not prescribed",
@@ -234,6 +281,7 @@ def main():
     assert master.a<0<master.b and abs(float(master.kappa)-KAPPA)<2e-12
     exact=symbolic_reduction()
     exact.update(exact_temporal_gauss())
+    exact.update(exact_component_support())
     samples=[solve_slab(lo,hi,n) for lo,hi in
        ((1,1.2),(.85,1.15),(.9,1.4)) for n in (16,32,64,128)]
     print(json.dumps({"status":"PASS_EXACT_DIAGONAL_FOUR_PLUS_TWO_CAUCHY_BRANCH",
