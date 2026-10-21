@@ -1,0 +1,7 @@
+{
+  "all_proof_checker_and_result_bytes_unchanged": true,
+  "file": "native_processor/INDEPENDENT_REVIEW.md",
+  "integrated_review_sha256": "d9e806ad9d1b6f65e48c701d19fef944a1390f9239615f0e936ef0bb2c257e44",
+  "operation": "remove only redundant blank line at EOF",
+  "original_review_sha256": "1443b92fb5833579a28aac9ec9df18e93ca0176101b15592dd8d8e5f08bbed78"
+}

@@ -4050,3 +4050,70 @@ Changing \(J(y)\) leaves normalized open-record predictions unchanged but
 changes the absolute log-norm and closed-loop source. This is a structural
 non-identifiability statement about normalized data, not a no-go for Book03
 and not a physical source selection.
+
+
+## 21 October continuation: joint execution toward the full physical GR bridge
+
+Phase: native realization and final composition on the same constitutive /
+native-programme-v1 owner, after the reviewed causal/native/weighted packet.
+Scientific input ref is `b1870ff3ecedd02e09388bc8b6fd8df4da54b990`, with the
+native two-jet, causal archive and weighted proofs consumed at `401eafb2`.
+The intended parent substitution is the remaining common admitted execution,
+including actual field access and genuinely independent preparation sources;
+no new selector, task, acceptance or GR status is introduced.
+
+The bounded questions are (i) whether the actual moving Julia calls can be
+replaced by one fixed paid processor with explicit consumable input resources
+and complete success/failure source, (ii) whether a paid transitive permutation
+of the genuinely independent material bank transports the original collective
+matter equation to every independent preparation row without erasing its CQ
+record, and (iii) whether the original Book03 valuation and the actual
+retained-record cut of this same execution can be identified, or what precise
+residual remains. A resource-state implementation must retain its actual
+preparation action and admissibility; it cannot rename a missing field writer.
+A symmetric bank must retain the real factory/selection transcript and all
+reference systems, and may not infer equality of relative Hessian blocks from
+first-source neutrality.
+
+Carrier/source conventions are unchanged: original full CAR16 / RIGHT128,
+finite paid Golden/addressed primitives, common strict-contraction charts,
+all 16+24+2 field rows and independent admitted preparation variations, full
+absolute Cost-Info with real causal clocks. The decisive checks are exact
+processor Kraus/entropy identities, the full derivative of the permutation-
+averaged joint CQ price, and the literal original Book03 information/source
+map. Existing field-minimum exclusion, continuum/finite distinction, and the
+unresolved physical selection law remain in force. Independent bounded
+contributors write only disjoint scratch handoffs; the integrator owns new
+research files and the existing brief/primary pointer. Intended output lives
+under `sources/d0_common_execution_closure_2026-10-21/` in this PR.
+
+### Result: fixed processor and all independent downstream resource rows
+
+The [joint resource-source synthesis](../../02_REGISTRY/research/A4D_FIXED_PROCESSOR_JOINT_RESOURCE_SOURCE_2026_10_21.md)
+constructs one finite paid process on the supplied original material and
+aggregate full32 Julia-programme banks. A fixed complete addressed Bell
+processor replaces moving active Julia calls; shared field addresses remain
+deduplicated. Fixed attempts, deferred readout on live factory aborts, a paid
+matched reference report and the polynomial Lorentz normal projection give
+the original all42 field covector on arbitrary normalized programme normals.
+The actual full-state material moment map supplies the material consumer.
+A paid measured transitive permutation over the GLOBAL banks, including
+every literal spatial trace copy, turns both collective zero covectors into
+every independent downstream preparation equation on the admitted product
+manifold. Full resources, purifiers, fixed collar and true failure costs stay.
+
+The complete processing price retains the original proper-field two-jet
+and Hessian inertia with the new positive gain `a_pi*gamma_F*s0`; relative
+copy Hessians and genuine upstream preparation prices are not erased.
+The Book calculation proves the actual same-cut dephasing entropy and
+central supplied processing-cost effect, then gives its literal label/gain
+source residual. Faithful amplitude binding and the actual input anchor
+remain hypotheses. A separate full-spectrum theorem provides a first-source
+equivalence criterion without selecting Shannon as compulsory Book Info.
+
+The four new proof/checker packets and independent reviews use pinned
+historical inputs at `b1870ff3`; no old root/rank census or new selector is
+introduced. The exact remaining physical source is that of the actual
+input/Book/work/clock valuation difference. Its native stationary law,
+physical metric descent and refinement obligations remain open; the original
+field-minimum exclusion and `GR_closed=false` are unchanged.

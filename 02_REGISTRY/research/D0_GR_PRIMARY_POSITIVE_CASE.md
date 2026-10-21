@@ -511,3 +511,25 @@ lattice/source lift. Compulsory full Book valuation, genuine upstream
 stationarity, field-writing admission and physical refinement remain open.
 Off-shell Diff-natural metric-only descent is not inferred from the new
 on-shell covariant matter representation. `GR_closed=false`.
+
+## Fixed processor and independent full-resource preparation sources
+
+The [joint resource-source continuation](A4D_FIXED_PROCESSOR_JOINT_RESOURCE_SOURCE_2026_10_21.md)
+now replaces moving active Julia calls by one fixed paid addressed processor
+consuming explicitly supplied aggregate full32 programme states. Its complete
+uniform attempt tape, paid matched-abort report and polynomial Lorentz
+normal projection extend the original field-source cancellation to arbitrary
+normalized programme directions. A global paid measured transitive bank
+then transports this collective identity and the full-state material moment
+identity to every independent downstream resource-preparation row, including
+off-code CAR and retained-reference variations on the declared product-input
+and fixed-collar domain. The proper-field two-jets and Hessian inertia retain
+one actual positive common gain; arbitrary relative-copy Hessians do not.
+
+The same execution has an explicit full-record Book-source residual and a
+separate spectral first-source equivalence criterion. These do not construct
+the actual common-history resource supply, neutralize its own input price,
+choose literal Book03 Info or derive the native stationary/constraint law.
+Physical metric descent and refinement remain required. This is a stronger
+processing-source theorem with real failures and independent inputs, not
+full physical D0 selection; `GR_closed=false`.

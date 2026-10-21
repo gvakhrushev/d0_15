@@ -1,0 +1,69 @@
+{
+  "book_peer_aliases_verified": 2,
+  "concurrent_changed_paths_preserved": 65,
+  "distinct_historical_source_files": 25,
+  "formatting_only_review_adjustment": "native_processor review: remove one redundant blank line at EOF; see REVIEW_FORMATTING.json",
+  "historical_source_records_verified": 36,
+  "independent_book_synthesis_section_sha256": "b37b35b706bd1753b6fee470b6f1e1d71cc29915ae8a5aa7c0aa78e80d53eed4",
+  "integrated_parent": "977ea92437b720162186a3dc220b2bec374e0d22",
+  "local_markdown_links_verified": 34,
+  "no_old_root_rank_lean_suites_replayed": true,
+  "packets": [
+    {
+      "author_and_independent_receipt_sha256": "cc3c7e422eb1167d432ff3fb7cdbb17898194234846ba887c8d183a1e22b1e36",
+      "byte_identical_replay": true,
+      "checker_sha256": "76fa1e6cebc6e98f28b6718d86b4adba0fe0e6fa101024343ec103ac10bea171",
+      "name": "native_processor",
+      "proof_sha256": "4a879a3bb986aca43f06cec760f882cec4e7c6446efd46d5add8a2f199e9381b"
+    },
+    {
+      "author_and_independent_receipt_sha256": "57cfa237df6024a612f91cee755f199f2da86f8a14a1c5d11a8a279fa7d86fcf",
+      "byte_identical_replay": true,
+      "checker_sha256": "cebff48a5672696565812ba3c2801b847bee38626e2b6233d372a74dc02020be",
+      "name": "transitive_preparation",
+      "proof_sha256": "8348922c3a093b06b91ad52249177238e8abab89057bdaf002deac0fd1ced1d7"
+    },
+    {
+      "author_and_independent_receipt_sha256": "4ab11822084ee7746fed5411b246069debc0580b42f60a19fe8ddee6f8fdb043",
+      "byte_identical_replay": true,
+      "checker_sha256": "456418a4567c0acae119d5769f70b227bfdbcaf45f50a49234616c7045c6b033",
+      "name": "book_binding",
+      "proof_sha256": "37edd1a914d181f819cb0da5b75c43a52cc1161257a6040ac211c90cfad33ff3"
+    },
+    {
+      "author_and_independent_receipt_sha256": "9223e264716ee13936f210973ba151b3d295aaa7b331980022a66d1cce5463f8",
+      "byte_identical_replay": true,
+      "checker_sha256": "53b1fdb8ad989eeb9425401b44e6e10af2424949be8f983ed140486f71ea4a13",
+      "name": "record_source",
+      "proof_sha256": "a8c17dc2975078071b8644a42a270ef695aaab4671d73f0901b0cfcb0060f5b1"
+    }
+  ],
+  "scientific_input": "b1870ff3ecedd02e09388bc8b6fd8df4da54b990",
+  "scope": {
+    "actual_input_writer_constructed": false,
+    "arbitrary_entangling_bank_tangents": false,
+    "complete_processing_resource_first_sources": true,
+    "full_relative_hessian_identified": false,
+    "physical_Book_Info_selected": false,
+    "physical_GR_closed": false,
+    "proper_field_two_jets": true
+  },
+  "status": "PASS_INTEGRATED_COMMON_EXECUTION_PACKET",
+  "structural_guards": [
+    {
+      "command": "python tools/validate_repo.py",
+      "exit_code": 0,
+      "output": "claims=889 assumptions=31 aliases=58 formal_support=183 lean_closure=918\nPASS warnings=0\n"
+    },
+    {
+      "command": "python tools/validate_work.py",
+      "exit_code": 0,
+      "output": "PASS work_validation: active work plane clean and enforced\n"
+    },
+    {
+      "command": "python tools/validate_agent_protocol.py",
+      "exit_code": 0,
+      "output": "PASS agent_protocol: cold-start task metadata enforced\n"
+    }
+  ]
+}

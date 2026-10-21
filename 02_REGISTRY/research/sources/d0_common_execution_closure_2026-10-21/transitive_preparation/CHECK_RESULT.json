@@ -1,0 +1,87 @@
+{
+  "checker_sha256": "cebff48a5672696565812ba3c2801b847bee38626e2b6233d372a74dc02020be",
+  "controlled_shift": {
+    "fixed_register_transpositions": {
+      "1": 0,
+      "2": 1,
+      "4": 5,
+      "8": 17
+    },
+    "only_LEFT_permuted": true,
+    "shift_label_retained": true,
+    "sizes": [
+      1,
+      2,
+      4,
+      8
+    ]
+  },
+  "entropy_and_abort": {
+    "entropy_average_gap_decimal_diagnostic": "0.021826510084989740253966333451455619524468284758920664512873110246880",
+    "entropy_gap_scope": "strict sign also follows analytically from entropy concavity",
+    "matched_abort_weight_source_zero": true,
+    "nonzero_readiness_derivative": "4/5",
+    "relative_binary_CQ_curvature_both_signs": true,
+    "remaining_true_report_coefficient": "-13/308",
+    "uniform_flag_source_zero": true
+  },
+  "material_source": {
+    "actual_count_total": 10946,
+    "actual_count_values": [
+      29,
+      78
+    ],
+    "all_independent_sources_zero": true,
+    "independent_used_copies": 428,
+    "local_only_and_missing_weight_countercontrols": true,
+    "native_material_coefficient_Qp": [
+      "-64489453/140737488355328",
+      "104336595/140737488355328"
+    ],
+    "padded_copies": 512,
+    "report_r0_Qp": [
+      "-3014703/34359738368",
+      "1245203/8589934592"
+    ],
+    "rho": [
+      "3712/5473",
+      "768/421"
+    ],
+    "scope": "two-density algebra fixture; no new primary root claim",
+    "site_count": 256
+  },
+  "multigroup_hessian": {
+    "arbitrary_nonzero_gradient_formula": true,
+    "block_circulant": true,
+    "cross_group_uniform_modes_only": true,
+    "group_sizes": [
+      4,
+      2
+    ],
+    "relative_Hessian_not_zero": true
+  },
+  "own_input_price": {
+    "actual_positive_observable_price_derivative_Qp": [
+      "0",
+      "1/256"
+    ],
+    "clock_moments_identically_zero": true,
+    "complete_RIGHT_Gram_preserved_by_local_normalization": true,
+    "independent_input_price_residual_not_erased": true
+  },
+  "proof_sha256": "8348922c3a093b06b91ad52249177238e8abab89057bdaf002deac0fd1ced1d7",
+  "scope": {
+    "GR_closed": false,
+    "all_independent_downstream_prep_rows": "analytic theorem on product inputs",
+    "arbitrary_entangling_bank_tangents": false,
+    "fixed_collar_moments": "required; optional paid boundary routing stated",
+    "native_resource_supply_or_task_selected": false,
+    "own_input_price_source_eliminated": false,
+    "programme_group": "requires companion full-normal diagonal source lemma"
+  },
+  "source_count": 10,
+  "source_pins_sha256": "4bf0d2415930563a585a058d3cd11d15a885bafa083f2759cb9e20eb5264ff15",
+  "source_ref": "b1870ff3ecedd02e09388bc8b6fd8df4da54b990",
+  "source_verification_mode": "git show source_ref:path; imported arithmetic additionally current-hash checked",
+  "status": "PASS"
+}
