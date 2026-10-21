@@ -1,0 +1,32 @@
+{
+  "amplitude_binding": {
+    "I0": 0.0,
+    "I1": 1.5,
+    "S0": 1.0,
+    "S1": 0.5
+  },
+  "check_count": 13,
+  "first_source_gap": {
+    "common_mode_derivative_cancels_from_gap": true,
+    "mean_minus_amplitude_pressure": -0.5,
+    "probability_mean_minus_pressure": -1.0
+  },
+  "native_pair": {
+    "C0": 1,
+    "C1": 2,
+    "q0": 0.3819660112501052,
+    "q1": 0.6180339887498949
+  },
+  "scope": {
+    "GR_closed": false,
+    "book03_aggregation_selected": false,
+    "book03_branch_info_law_selected": false,
+    "same_execution_amplitude_binding_assumed": true
+  },
+  "status": "PASS",
+  "tangent": {
+    "dH_phi": -1.0,
+    "dq0": -1,
+    "dq1": 1
+  }
+}
