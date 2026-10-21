@@ -13,6 +13,7 @@ checks=[]
 def check(x,name):
     require(x,name);checks.append(name)
 
+
 def rot(d,i,j,c,s):
     A=sp.eye(d)
     A[i,i]=c;A[j,j]=c;A[i,j]=-s;A[j,i]=s
