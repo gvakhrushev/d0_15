@@ -1,32 +1,95 @@
 {
+  "actual_full128_operator_family": {
+    "DH_phi_dnu": 0.7671427296247741,
+    "controller_admission": false,
+    "exact_sign_domain": "0<nu<sqrt(3)/2; see aggregation_audit/PROOF.md",
+    "local_replay_runtime_warning_lines": 78,
+    "nu": 0.5,
+    "parameter": "nu",
+    "physical_Book03_selection": false
+  },
   "amplitude_binding": {
-    "I0": 0.0,
-    "I1": 1.5,
-    "S0": 1.0,
-    "S1": 0.5
+    "exact_identity": "D(mean)-D(pressure)=DH_phi/2",
+    "sampled_derivatives": [
+      {
+        "dCbar": 1.0,
+        "dH": 0.0,
+        "dJ": 0.0,
+        "dM_minus_dP": 0.0,
+        "mean_minus_CQ_if_pressure_matches": 0.0,
+        "pressure_minus_CQ_if_mean_matches": 0.0
+      },
+      {
+        "dCbar": 0.4,
+        "dH": 0.7,
+        "dJ": -1.2,
+        "dM_minus_dP": 0.34999999999999987,
+        "mean_minus_CQ_if_pressure_matches": 0.35,
+        "pressure_minus_CQ_if_mean_matches": -0.34999999999999987
+      },
+      {
+        "dCbar": 2.0,
+        "dH": -1.4,
+        "dJ": 0.3,
+        "dM_minus_dP": -0.7,
+        "mean_minus_CQ_if_pressure_matches": -0.6999999999999997,
+        "pressure_minus_CQ_if_mean_matches": 0.6999999999999997
+      },
+      {
+        "dCbar": -0.5,
+        "dH": 1.4142135623730951,
+        "dJ": 2.0,
+        "dM_minus_dP": 0.7071067811865475,
+        "mean_minus_CQ_if_pressure_matches": 0.7071067811865477,
+        "pressure_minus_CQ_if_mean_matches": -0.7071067811865477
+      }
+    ]
   },
-  "check_count": 13,
-  "first_source_gap": {
-    "common_mode_derivative_cancels_from_gap": true,
-    "mean_minus_amplitude_pressure": -0.5,
-    "probability_mean_minus_pressure": -1.0
-  },
-  "native_pair": {
-    "C0": 1,
-    "C1": 2,
-    "q0": 0.3819660112501052,
-    "q1": 0.6180339887498949
+  "check_count": 25,
+  "checks": [
+    "fixed native conditional Golden pair x=0.2",
+    "zero conditional-pair source x=0.2",
+    "fixed native conditional Golden pair x=0.7",
+    "zero conditional-pair source x=0.7",
+    "fixed native conditional Golden pair x=1.0",
+    "zero conditional-pair source x=1.0",
+    "withdrawn (-1,+1) direction violates the native ratio",
+    "amplitude-bound source gap for dH=0.0, dJ=0.0",
+    "mean-to-CQ pressure gap formula for dH=0.0",
+    "pressure-to-CQ mean gap formula for dH=0.0",
+    "amplitude-bound source gap for dH=0.7, dJ=-1.2",
+    "mean-to-CQ pressure gap formula for dH=0.7",
+    "pressure-to-CQ mean gap formula for dH=0.7",
+    "amplitude-bound source gap for dH=-1.4, dJ=0.3",
+    "mean-to-CQ pressure gap formula for dH=-1.4",
+    "pressure-to-CQ mean gap formula for dH=-1.4",
+    "amplitude-bound source gap for dH=1.4142135623730951, dJ=2.0",
+    "mean-to-CQ pressure gap formula for dH=1.4142135623730951",
+    "pressure-to-CQ mean gap formula for dH=1.4142135623730951",
+    "actual full128 entropy-tangent replay exits 0",
+    "actual full128 entropy-tangent status",
+    "actual full128 entropy-tangent controls",
+    "full128 fixture retains 42 positive and 86 dark outcomes",
+    "positive numeric nu witness agrees with the strict analytic sign proof",
+    "nu-family witness is not physical admission or GR closure"
+  ],
+  "native_conditional_pair": {
+    "conditional_derivative": [
+      0,
+      0
+    ],
+    "q0": "p^2*x",
+    "q1": "p*x",
+    "withdrawn_trial": [
+      -1.0,
+      1.0
+    ],
+    "withdrawn_trial_ratio_constraint_derivative": -1.618033988749895
   },
   "scope": {
+    "Book03_bootstrap_pullback_proved": false,
     "GR_closed": false,
-    "book03_aggregation_selected": false,
-    "book03_branch_info_law_selected": false,
-    "same_execution_amplitude_binding_assumed": true
+    "old_pairwise_native_tangent_claim": false
   },
-  "status": "PASS",
-  "tangent": {
-    "dH_phi": -1.0,
-    "dq0": -1,
-    "dq1": 1
-  }
+  "status": "PASS_TYPED_CANDIDATE_SOURCE_IDENTITIES"
 }

@@ -44,6 +44,10 @@ def bvec(F):
     T=F@ETA
     return np.array([T[i,j] for i,j in PAIRS])
 
+def star_node(node):
+    """Adapt this module's `U` spelling to check_star_rank2_seam's `u`."""
+    return dict(e=node['e'],u=node['U'],v=node['v'])
+
 def facelist(nodes,j,r,s):
     Uj=nodes[j]['U'];nxt=nodes[j+1]['U']
     # r=0 (time) has a real future Ui(t+h). A spatial shift of a
@@ -140,7 +144,7 @@ def unit_test():
                 U=c['U'].astype(complex),
                 v=c['v'].astype(complex)) for c in nodes]
         k[j]['e'][a,mu]+=1j*dx
-        dff=star_density(k[j],k[j+1],h).imag/dx
+        dff=star_density(star_node(k[j]),star_node(k[j+1]),h).imag/dx
         dqq=matter_query(k[j]).imag/dx
         expected=actual['w'][j]*dff+actual['v'][j]*dqq
         assert abs(actual['e'][j,a,mu]-expected)<1e-6
@@ -150,8 +154,8 @@ def unit_test():
                 v=c['v'].astype(complex)) for c in nodes]
         old=x[j]['U'][axis].copy()
         x[j]['U'][axis]=expm(1j*dx*L[kid])@old
-        prev=star_density(x[j-1],x[j],h).imag/dx
-        cur=star_density(x[j],x[j+1],h).imag/dx
+        prev=star_density(star_node(x[j-1]),star_node(x[j]),h).imag/dx
+        cur=star_density(star_node(x[j]),star_node(x[j+1]),h).imag/dx
         expected=actual['w'][j-1]*prev+actual['w'][j]*cur
         assert abs(actual['U'][j,axis,kid]-expected)<1e-6
     print("PASS original analytic all16+24 N1 CQ jets vs literal independent complex-step")

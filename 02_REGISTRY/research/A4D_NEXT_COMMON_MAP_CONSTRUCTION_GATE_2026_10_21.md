@@ -490,6 +490,97 @@ gives `H_phi'(nu)>0` on `0<nu<sqrt(3)/2`. This repairs only the conditional
 mean/norm aggregate comparison; neither aggregate is thereby identified
 with the prescribed bootstrap or a complete physical D0 model.
 
+## Replayed two-interval full42 root for the configured N=1 CQ price — 22 October 2026
+
+The new [analytic source and numerical root checker](sources/d0_star_rank2_seam_2026-10-21/check_full42_n1_single_internal.py)
+have now been replayed after correcting their node adapter to the original
+six-face interface (`U` in the source bundle, `u` in `star_density`). The
+independent analytic all16+24 source also matches literal complex-step
+variations. For both diagnostic PF choices `(1,1)` and `(1,2)`, one
+spatially homogeneous two-interval slab has a numerical full42 CQ root; direct
+complex-step differentiation of the complete N=1 CQ value agrees with the
+analytic Euler rows to below `1.7e-14`, and the maximum row residuals are below
+`5.3e-15` and `6.6e-15`, respectively. The [local replay receipt](sources/d0_star_rank2_seam_2026-10-21/REPLAY_FULL42_N1_NUMERICAL.json)
+records both witnesses.
+
+The same replay includes a second-variation audit. At both weights the
+fixed-link, fixed-matter raw 16-coframe Hessian has inertia `(8+,8-)`; the
+original N=1 price value was also checked by independent second differences
+in two raw coframe directions. These roots are coframe saddles of the
+configured CQ price, not unrestricted coframe minima. The negative direction
+does not rule out a separately proved physical constraint or stationary law;
+it rules out treating this root as evidence for unconstrained Cost-Info
+minimization.
+
+A separate [five-point PF-time continuation checker](sources/d0_star_rank2_seam_2026-10-21/check_full42_pf_time_continuation.py)
+also resolves full42 roots at sampled ratios `1, 1.25, 1.5, 1.75, 2`; its
+[replay receipt](sources/d0_star_rank2_seam_2026-10-21/REPLAY_FULL42_PF_TIME_CONTINUATION.json)
+records residuals below `7.9e-15` and minimum numerical singular value above
+`0.04468`. This supports robustness at those five settings only. It does not
+prove a continuous solution branch, interval-certified roots, actual native
+AF weights or refinement.
+
+This is a numerical float root, not an interval-existence theorem. It uses a
+fixed two-neighbor collar, one free internal site, spatially homogeneous
+fields and diagnostic weights; no actual native AF-count dictionary or
+physically admitted primitive writer is supplied. It is a positive
+same-CQ-price finite result and a useful consumer for the Book03 common-map
+test, while compulsory complete Book03 selection, longer-slab roots, physical
+admission and GR closure remain open. Do not read it as a replacement for the
+primary exact nonvacuum refinement family or as a proof of universal GR.
+
+## Native two-bin CFL and rectangular PF source weight — 22 October 2026
+
+The new [native rectangular CFL theorem](A4D_NATIVE_GOLDEN_RECTANGULAR_CFL_AND_CAUSAL_TWO_SCALAR_2026_10_21.md)
+and its bounded [original-box replay](sources/d0_native_rectangular_cfl_2026-10-21/check_original_rectangular_cfl.mjs)
+close a distinct material-stability premise. For the original N=1 two-CAR
+linearized equation on the declared positive rank-two chart, one time bin per
+spatial step has checkerboard CFL ratio `1.5809407606` at `r=1` for any
+positive spatial PF. Two native time bins give a uniform frozen-geometry
+positive-energy gap on `r >= 3/5` when the PF source ratio is below `24/23`;
+the existing high-depth PF theorem supplies that condition sufficiently far
+along the stated homogeneous chart. On the bounded `n=24, L=8` replay all
+75,025 original histories remain, grouped into `8x4x4x4` with exact inverse-PF
+source/volume equality and conserved positive energy (relative drift
+`7.8e-16` over 140 updates).
+
+This proves only the stated linearized frozen-metric stability and source
+weight identities. It does not solve the anisotropic 16+24 geometric Euler
+system on the rectangle, derive physical selection of the two-bin clock,
+prove large-amplitude nonlinear refinement, or provide Book03 H+J+R
+selection. Keep this result separate from the finite full42 CQ saddle above;
+neither closes the same-execution physical pullback.
+
+## Exact normalized-complementary source through principal angles — 22 October 2026
+
+The [new rank-34 synthesis](A4D_RANK34_ISOSPECTRAL_BOOK_SOURCE_SEPARATION_2026_10_21.md)
+now applies the owned full128 normalized
+complementary determinant to its source-sensitive spectral coordinates. For
+the same complete cost-marked map `W` and moving active-return projection `P`,
+set `N=W†W`, `V=W N^(-1/2)` and `T=V†PV`. The exact complementary price and
+its first source are
+
+`J_comp = -r_R log det[(1-zeta)I+zeta T]`
+
+`D J_comp = -r_R*zeta*Tr([(1-zeta)I+zeta T]^(-1) D T)`.
+
+Equivalently, with differentiable principal angles `theta_k` between the
+normalized history range and the cut, the source is the sum of
+`r_R*zeta*sin(2*theta_k)*D(theta_k) / ((1-zeta)+zeta*cos(theta_k)^2)`;
+each coefficient is at most `zeta/sqrt(1-zeta)`. At a deterministic projection
+cut the first source vanishes. The physical test is therefore the actual
+angle velocity and moving-cut jet on the admitted same history, paired with
+the thermal derivative of `Delta_N`; this formula alone does not supply the
+cut, controller/preparation/clock charges or the compulsory Book03 action.
+
+The exact soldered-heat calculation supplies a conditional kill test: if its
+`H_01` row is the selected heat source and no other priced term has an `H_01`
+jet, the complementary component must supply total angle speed at least
+`(128/(9*r_R))*sqrt(1-zeta)/zeta` (about `0.1571348403` at the original
+`r_R=128`, illustrative `zeta=1/2`). On the actual common execution, compute
+the heat, angle and upstream source rows together; do not assign the heat to
+`Delta_N` by notation or omit a nonzero extra term.
+
 The concurrent exact Cauchy/support theorem now gives 24 zero raw rows and
 an 18-slot possible residual (3 coframe plus 15 spatial-link) in its stated
 homogeneous sector. Preserve its already-zero equations during correction;
@@ -523,7 +614,8 @@ constant-support stratum the exact grouped-entropy chain rule respects the
 fixed `p^2:p` ratios. At `theta=0.08` the resulting numerical diagnostic is
 `D_theta H_phi=-0.019550941179130216`; under the separately assumed complete
 amplitude binding only, the candidate mean-path/pressure source gap is half
-of that value. This is a real field tangent, unlike the withdrawn pair
+of that value. This is a real Lorentz-chart tangent of the supplied
+instrument, unlike the withdrawn pair
 reallocation, but the sign has no interval enclosure and Book03 has not
 selected either candidate aggregation.
 
@@ -535,6 +627,18 @@ unexplained. Accordingly this replay is numerical evidence only. It narrows
 the source comparison but does not provide compulsory branchwise Book03
 Info, the full paid action, the same-history input equations, or a physical
 selection law. The common-map gate and `GR_closed=false` stand.
+
+The separate [exact-sign operator-family theorem](sources/d0_variational_selection_synthesis_2026-10-21/aggregation_audit/PROOF.md)
+proves `D_nu H_phi>0` on `0<nu<sqrt(3)/2` for the original full128
+instrument, with 42 positive and 86 dark labels and moving Julia defects.
+At `nu=0.5` the replayed derivative is about `0.7671427296`; under the
+same separate amplitude-binding hypothesis it yields a candidate source
+gap of half that amount. This is an exact sign theorem on the supplied
+operator family, not proof that one physical controller admits `nu` as an
+independent variable or that it is one of the 42 GR field coordinates. The
+100-control replay passes normal and optimized modes locally, with 78
+unsuppressed matmul RuntimeWarning lines in each mode. Book03 selection and
+the same-history physical pullback remain open.
 
 ## Conditional nonlinear pullback through a derived scene conductance
 

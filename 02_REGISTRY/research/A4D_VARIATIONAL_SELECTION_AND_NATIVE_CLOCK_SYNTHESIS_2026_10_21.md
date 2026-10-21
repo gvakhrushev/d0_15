@@ -396,9 +396,10 @@ This is a conditional identity, not the derivation of either functional
 from the entire Book03 operator stack. The common offset cancels, whereas
 differentiating a mean price still differentiates its actual weights.
 
-The later [first-source underdetermination memo](A4D_BOOK03_FIRST_SOURCE_UNDERDETERMINATION_THEOREM_2026_10_21.md)
-uses the ordinary conditional Golden law `(p^2,p)` and a trial tangent
-`(-1,+1)` to obtain the number `-1/2`. But the literal original Kraus
+An earlier version of the later [first-source memo](A4D_BOOK03_FIRST_SOURCE_UNDERDETERMINATION_THEOREM_2026_10_21.md)
+used the ordinary conditional Golden law `(p^2,p)` and a trial tangent
+`(-1,+1)` to obtain the number `-1/2`; its current corrigendum withdraws
+that witness. The literal original Kraus
 operators are `K_(0j)=p L_j`, `K_(1j)=sqrt(p) L_j` for every ordinary
 nonblank row. Their conditional law is fixed under all changes of `L_j`
 and the input. That trial vector violates the exact ratio constraint;
@@ -420,8 +421,8 @@ measured labels and 86 identically dark retained labels. Throughout
 \]
 Every ordinary conditional Golden pair nevertheless remains `(p^2,p)`.
 At `nu=1/2` the exact formulas give
-`H_phi'=0.7671427296247743`, hence the candidate aggregate difference is
-`M'-P'=0.38357136481238713`. These decimals are diagnostics; the sign
+`H_phi' is approximately 0.7671427296`, hence the candidate aggregate difference is
+`M'-P' is approximately 0.3835713648`. These decimals are diagnostics; the sign
 is proved on the whole interval without numerical differentiation.
 
 The entropy here is the full history-label Shannon functional, not the
@@ -435,7 +436,10 @@ neither a whole-D0 no-go nor the missing physical selection rule.
 
 The independent [review](sources/d0_variational_selection_synthesis_2026-10-21/aggregation_audit/REVIEW.md)
 derives the literal Walsh table and repeats the new bounded 100-check
-fixture. Earlier source memos and the six core receipts are preserved.
+fixture. A fresh Python 3.9.6/NumPy 2.0.2/Apple Accelerate replay matches its
+receipt in normal and optimized modes but emits 78 matmul RuntimeWarning
+lines in each mode; they remain unexplained and unsuppressed. Earlier source
+memos and the six core receipts are preserved.
 
 ### 5.5 The bootstrap scalar already exists; its native pullback has an exact test
 

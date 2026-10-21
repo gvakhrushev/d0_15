@@ -17,7 +17,7 @@ from scipy.optimize import root,least_squares
 from scipy.optimize._numdiff import approx_derivative
 from check_diagonal_coframe_cauchy_recurrence import clock,radius,golden_curve,comm
 from check_star_rank2_seam import I,LORENTZ as L,KAPPA,ETA,star_density,matter_query
-from full_n1_euler_analytic import full_source
+from full_n1_euler_analytic import full_source,star_node
 
 def make_slab(n=2):
     """Consume the exact ORIGINAL four-diagonal Cauchy branch only as
@@ -114,7 +114,7 @@ def direct_CQ_value(nodes,h,weights):
     out=0j
     tau=.05
     for j,rho in enumerate(weights):
-        f=star_density(nodes[j],nodes[j+1],h)
+        f=star_density(star_node(nodes[j]),star_node(nodes[j+1]),h)
         q=matter_query(nodes[j])
         out+=rho*F(-tau*f/rho,tau*q/rho)
     return out/(-tau*a)
@@ -133,7 +133,7 @@ def direct_coframe_second_variations(nodes,h,weights):
     def price(nn):
         value=model.a*0
         for j,rho in enumerate(weights):
-            f=float(star_density(nn[j],nn[j+1],h).real)
+            f=float(star_density(star_node(nn[j]),star_node(nn[j+1]),h).real)
             q=float(matter_query(nn[j]).real)
             value+=rho*model.F(-tau*f/rho,tau*q/rho)
         return value/(-tau*model.a)

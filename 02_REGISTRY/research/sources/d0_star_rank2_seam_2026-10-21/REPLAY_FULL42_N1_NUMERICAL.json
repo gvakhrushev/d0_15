@@ -1,0 +1,165 @@
+{
+  "status": "PASS_TWO_FINITE_FULL42_NUMERICAL_CONFIGURED_CQ_ROOTS",
+  "witnesses": [
+    {
+      "status": "PASS_NUMERICAL_COMPLETE_CONFIGURED_N1_42_EULER_SINGLE_INTERNAL",
+      "PF": [
+        1.0,
+        1.0
+      ],
+      "intervals": 2,
+      "step": 0.18380152465817923,
+      "original_complete_source_max": 5.223953526700007e-15,
+      "direct_entire_n1_value_42_source_max": 1.503848012979838e-14,
+      "analytic_vs_direct_entire_price_max": 1.634446851147338e-14,
+      "original_euler_before": 0.3481097051616667,
+      "coframe_source_max": 2.2483100450831905e-15,
+      "raw_link_source_max": 2.842170943040401e-14,
+      "scalar_source_max": 7.105427357601002e-15,
+      "full_42by42_J_singular_min": 0.044716958681332124,
+      "full_42by42_J_singular_max": 831.4197510219975,
+      "fixed_link_matter_original_coframe_Hessian": {
+        "positive": 8,
+        "negative": 8,
+        "eig_min": -1.3113983206340933,
+        "eig_max": 4.7008624438456845,
+        "symmetry_error_inf": 4.6074255521943996e-10,
+        "unrestricted_16coframe_minimum": false
+      },
+      "independent_original_complete_price_second_jet": {
+        "d2_e00": 3.0283312171111696,
+        "d2_e11": -1.0912676765064329,
+        "native_positive_and_negative_curvature": true,
+        "numerical_unrestricted_original_coframe_minimum": false
+      },
+      "Lorentz_metric_inertia": [
+        [
+          -1.6375925078183506,
+          -1.2608775973746476,
+          -1.2608775973746476,
+          0.6106525251096988
+        ],
+        [
+          -2.083901164498541,
+          -1.6351439987013516,
+          -1.495161758414902,
+          0.45687199738929635
+        ]
+      ],
+      "original_spatial_based_holonomy_norms": [
+        1.5734522878324351e-16,
+        1.5700924586837752e-16,
+        0.029324873817418832,
+        0.002865991011863868,
+        0.0028659910118638407,
+        0.023675256542894037
+      ],
+      "two_REAL_CAR_stress_ranks": [
+        2,
+        2
+      ],
+      "original_fstar": [
+        -0.02741160259156905,
+        0.002553333962174109
+      ],
+      "original_twofield_q": [
+        -0.00032338331940637115,
+        0.00010908342061841277
+      ],
+      "max_parameter_change": 0.6688617391054471,
+      "nfev": 21,
+      "time_s": 2.0458829402923584,
+      "scope": {
+        "finite_float_root_not_validated_interval_existence": true,
+        "three_plus_intervals_stationary_root_proved": false,
+        "all42_original_field_directions_checked": true,
+        "full_nonlin_same_N1_not_sigma_plus": true,
+        "spatial_homogeneous_fields_and_PF": true,
+        "actual_native_AF_counts_used": false,
+        "original_primitive_writer_admitted": false,
+        "compulsory_complete_Book03_selected": false,
+        "GR_closed": false
+      }
+    },
+    {
+      "status": "PASS_NUMERICAL_COMPLETE_CONFIGURED_N1_42_EULER_SINGLE_INTERNAL",
+      "PF": [
+        1.0,
+        2.0
+      ],
+      "intervals": 2,
+      "step": 0.18380152465817923,
+      "original_complete_source_max": 6.529941908375009e-15,
+      "direct_entire_n1_value_42_source_max": 1.2030784103838702e-14,
+      "analytic_vs_direct_entire_price_max": 1.2941053222904033e-14,
+      "original_euler_before": 0.3481097051616615,
+      "coframe_source_max": 4.274358644806853e-15,
+      "raw_link_source_max": 3.552713678800501e-14,
+      "scalar_source_max": 7.105427357601002e-15,
+      "full_42by42_J_singular_min": 0.044684093595656595,
+      "full_42by42_J_singular_max": 830.3721527738462,
+      "fixed_link_matter_original_coframe_Hessian": {
+        "positive": 8,
+        "negative": 8,
+        "eig_min": -1.3311131304795596,
+        "eig_max": 4.644141490144939,
+        "symmetry_error_inf": 6.328271240363392e-10,
+        "unrestricted_16coframe_minimum": false
+      },
+      "independent_original_complete_price_second_jet": {
+        "d2_e00": 2.986865035354877,
+        "d2_e11": -1.1061701147805618,
+        "native_positive_and_negative_curvature": true,
+        "numerical_unrestricted_original_coframe_minimum": false
+      },
+      "Lorentz_metric_inertia": [
+        [
+          -1.6375925078183506,
+          -1.2608775973746476,
+          -1.2608775973746476,
+          0.6106525251096988
+        ],
+        [
+          -2.084333112936597,
+          -1.6354908664045236,
+          -1.4954736038109468,
+          0.45697375699491033
+        ]
+      ],
+      "original_spatial_based_holonomy_norms": [
+        1.5734522878324351e-16,
+        1.5700924586837752e-16,
+        0.029324873817418832,
+        0.0028662854034761575,
+        0.002866285403476146,
+        0.023674658831368607
+      ],
+      "two_REAL_CAR_stress_ranks": [
+        2,
+        2
+      ],
+      "original_fstar": [
+        -0.0274811460551474,
+        0.002626079854309016
+      ],
+      "original_twofield_q": [
+        -0.00032662292064819,
+        0.00011216976625755791
+      ],
+      "max_parameter_change": 0.668931070860122,
+      "nfev": 20,
+      "time_s": 1.8940222263336182,
+      "scope": {
+        "finite_float_root_not_validated_interval_existence": true,
+        "three_plus_intervals_stationary_root_proved": false,
+        "all42_original_field_directions_checked": true,
+        "full_nonlin_same_N1_not_sigma_plus": true,
+        "spatial_homogeneous_fields_and_PF": true,
+        "actual_native_AF_counts_used": false,
+        "original_primitive_writer_admitted": false,
+        "compulsory_complete_Book03_selected": false,
+        "GR_closed": false
+      }
+    }
+  ]
+}

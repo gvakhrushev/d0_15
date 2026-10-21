@@ -108,6 +108,41 @@ The corrected architecture is to use the ORIGINAL 40 geometric first-source dire
 Reproduction from repository root:
 
     OPENBLAS_NUM_THREADS=1 python3 02_REGISTRY/research/sources/d0_star_rank2_seam_2026-10-21/full_n1_euler_analytic.py
-    OPENBLAS_NUM_THREADS=1 python3 02_REGISTRY/research/sources/d0_star_rank2_seam_2026-10-21/check_full42_n1_single_internal.py
+    OPENBLAS_NUM_THREADS=1 python3 02_REGISTRY/research/sources/d0_star_rank2_seam_2026-10-21/check_full42_n1_single_internal.py --json 02_REGISTRY/research/sources/d0_star_rank2_seam_2026-10-21/REPLAY_FULL42_N1_NUMERICAL.json
 
 This does NOT prove exact mathematical existence by intervals, a stationary field on a 3+ interval slab, uniform refinement, actual four-dimensional original PF descendant weights, real primitive writeability or complete mandatory Book03 H+J+R physical selection. The six local Lorentz Noether identities include boundary reactions; fixed incoming temporal links mean the interior 42×42 Hessian can be numerically invertible without violating gauge covariance. Preserve both the proved scoped pureboost no-go and this NONTRIVIAL positive outside-stratum short-collar numerical answer, and do not rename it 'GR_closed'.
+
+The [local numerical receipt](REPLAY_FULL42_N1_NUMERICAL.json) records a replay
+in this checkout. Its final digits and timing may vary with the numerical
+runtime; the checked scope is the two finite roots above, not interval
+existence or refinement.
+The upstream [`FULL42_NUMERICAL_REFERENCE.json`](FULL42_NUMERICAL_REFERENCE.json)
+preserves the separately pinned reference values; the replay file records the
+rerun after fixing the `U`/`u` adapter mismatch.
+
+The current checker also computes the fixed-link, fixed-matter raw coframe
+Hessian at both roots and independently checks the original CQ value by
+second differences. Each 16-dimensional coframe block has inertia `(8+,8-)`;
+the checked value directions have opposite signs. These roots are saddles
+of this configured price on the free coframe slice, not unrestricted coframe
+minima. This does not exclude a separately justified constrained physical
+principle.
+
+The separate [five-point positive time-PF continuation checker](check_full42_pf_time_continuation.py)
+and [replay receipt](REPLAY_FULL42_PF_TIME_CONTINUATION.json) solve the same
+42 equations at ratios `1, 1.25, 1.5, 1.75, 2`. The replay has maximum source
+residual below `7.9e-15` and minimum numerical singular value above `0.04468`.
+These are five warm-started numerical settings, not an interval theorem,
+continuous root-branch proof or mesh-refinement result.
+
+## Native two-bin material CFL consumer
+
+The separate [rectangular Golden CFL note](../../A4D_NATIVE_GOLDEN_RECTANGULAR_CFL_AND_CAUSAL_TWO_SCALAR_2026_10_21.md)
+and [bounded replay](../d0_native_rectangular_cfl_2026-10-21/check_original_rectangular_cfl.mjs)
+show a scoped frozen linearized material result: one time bin is unstable at
+`r=1`, while two bins give a strict CFL energy gap under the stated positive
+PF ratio bound. The `n=24, L=8` replay retains all 75,025 original histories
+and verifies the rectangular inverse-PF source weight and 140-step energy
+conservation. This does not solve the anisotropic geometric 16+24 equations,
+choose a physical clock, or establish complete Book03 selection or GR
+closure.

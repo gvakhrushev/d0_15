@@ -24,7 +24,8 @@ This theorem composes four already-owned exact boundaries:
    `gr_assembly/sources/d0_cost_info_boundary_2026-10-19/theorem.md`;
 3. the formal `ActionProtocol` excess-profile classification and full depth-two
    response in `A4D_NATIVE_BOOK03_OPERATOR_VARIATION_BOUNDARY.md`;
-4. the new native Golden first-source separation in
+4. the corrected candidate-source comparison and full128 operator-family
+   tangent in
    `A4D_BOOK03_FIRST_SOURCE_UNDERDETERMINATION_THEOREM_2026_10_21.md`.
 
 It proves a statement about **logical derivability from the currently explicit
@@ -33,250 +34,257 @@ does not weaken any positive finite GR construction.
 
 `GR_closed=false`.
 
-## 1. The current formal interface does not define one native action
+## 1. Formal ActionProtocol does not identify the native Book03 pullback
 
 The exact formal `ActionProtocol` fiber is already classified. For every
 off-diagonal ordered pair, its nonnegative excess is independent; the type
 imposes no path-composition, symmetry, refinement or field-source law.
-`book03PathWeight` takes total `info` as a supplied real argument. The
-formal owner explicitly records that `ActionProtocol` does not identify its
+`book03PathWeight` takes total `info` as a supplied real argument. The formal
+owner explicitly records that `ActionProtocol` does not identify its
 transition action with physical Book03 `Cost`, does not contain native
 `Info(v)`, memory assignment or refinement, and therefore has no native field
 source to differentiate.
 
-Independently, Book03 writes
+Independently, Book03 writes the literal path price as:
 
-[
-  S(gamma)=sum_{eingamma}C(e)-sum_{vingamma}I(v).
-]
+`S(gamma) = sum_{e in gamma} C(e) - sum_{v in gamma} I(v)`.
 
 The exact boundary theorem shows that the literal all-vertices reading is
 incompatible with nonzero `Info` if singleton histories are action identities
 and path action is additive. The full additive repair is a one-parameter
-family
+family:
 
-[
-  w_	heta(u,v)
-  =C(u,v)-	heta I(u)-(1-	heta)I(v).
-	ag{1}
-]
+`w_theta(u,v) = C(u,v) - theta*I(u) - (1-theta)*I(v)`.
 
-For an open history from (v_0) to (v_n),
+For an open history from `v_0` to `v_n`:
 
-[
-  oxed{
-  S_	heta(gamma)-S_eta(gamma)
-   =(	heta-eta)[I(v_n)-I(v_0)] .
-  }	ag{2}
-]
+`S_theta(gamma) - S_eta(gamma) = (theta-eta)*(I(v_n)-I(v_0))`.
 
-The current Book03 text does not select (	heta). Closed paths do not see
-this freedom, but finite retained tapes are open histories. Whenever the
+The current Book03 text does not select `theta`. Closed paths do not see this
+freedom, but finite retained tapes are open histories. Whenever the
 endpoint-information difference has a physical first jet,
 
-[
-  D S_	heta-D S_eta
-  =(	heta-eta)D[I(v_n)-I(v_0)]
-	ag{3}
-]
+`D S_theta - D S_eta = (theta-eta)*D[I(v_n)-I(v_0)]`
 
 is a genuine first-source ambiguity even with the same edge costs and the
 same interior information values.
 
-## 2. Even granting the strongest amplitude binding leaves a second,
-independent first-source ambiguity
+## 2. Conditional candidate-source identity under complete amplitude binding
 
-Now grant more than the formal G0 layer currently proves. Assume the normalized
-Book vector on the complete orthogonal native history basis equals the actual
-native coherent record. Then the existing amplitude-binding theorem forces
+Now grant more than the formal G0 layer currently proves. Assume the
+normalized Book vector on the complete orthogonal native history basis equals
+the actual native coherent record. Then the existing amplitude-binding
+theorem forces:
 
-[
-  I_omega=C_omega+rac12log_arphi q_omega+J,qquad
-  S_omega=-rac12log_arphi q_omega-J.
-	ag{4}
-]
+`I_omega = C_omega + (1/2)*log_phi(q_omega) + J`
+
+`S_omega = -(1/2)*log_phi(q_omega) - J`.
 
 Thus relative branch gains and phases are fixed; only the common real mode
-(J) remains.
+`J` remains.
 
-For exactly the same complete history data define
+For exactly the same complete history data define:
 
-[
-  M=sum_omega q_omega S_omega
-   =rac12H_arphi(q)-J,
-qquad
-  P=-log_arphi|Q_B|=-J.
-	ag{5}
-]
+`M = sum_omega q_omega*S_omega = (1/2)*H_phi(q) - J`
+
+`P = -log_phi(|Q_B|) = -J`.
 
 Both are scalar functions of the same amplitude-bound Book family. Their
-first sources satisfy
+first sources satisfy:
 
-[
-  oxed{DM-DP=rac12,DH_arphi(q).}	ag{6}
-]
+`D M - D P = (1/2)*D H_phi(q)`.
 
-The common mode cancels. Therefore an absolute anchor for (J) cannot make
+The common mode cancels. Therefore an absolute anchor for `J` cannot make
 these two variational readings equivalent on a chart with moving record
 entropy.
 
-On the literal original full128 Golden nonblank pair
+**Correction to the former tangent.** The trial derivative
+`(Dq0,Dq1)=(-1,+1)` inside one nonblank Golden pair is not admitted by the
+original Kraus law: `q0=p^2*x` and `q1=p*x` keep their conditional ratio
+fixed. The value `D H_phi=-1` and the resulting `-1/2` are withdrawn as
+full128 native-tangent claims.
 
-[
-  (q_0,q_1)=(p^2,p),quad (C_0,C_1)=(1,2),quad p=arphi^{-1},
-]
-
-use (Dq=(-1,+1)). Exactly,
-
-[
-  DH_arphi=log_arphi(q_0/q_1)=-1,
-]
-
-so
-
-[
-  oxed{DM-DP=-rac12.}	ag{7}
-]
-
-This remains true for every (DJ).
+A separate exact full128 operator-family theorem
+(`sources/d0_variational_selection_synthesis_2026-10-21/aggregation_audit/PROOF.md`)
+proves `D_nu H_phi > 0` for `0 < nu < sqrt(3)/2`, retaining all 128 labels
+and the actual moving Julia defects. At `nu=0.5` its replay gives
+`D_nu H_phi is approximately 0.7671427296`; the strict sign comes from the proof, not
+from that decimal. This is an operator-family tangent only: physical
+controller admission, Fourier preparation and identification of `nu` with an
+original GR field direction remain unproved. A separate proper-Lorentz
+theta-chart calculation is also available, but its sign at `theta=0.08` has
+no interval enclosure. Neither candidate tangent selects the Book03 master
+bootstrap or proves a physical source equation.
 
 ## 3. Matching the configured CQ price does not remove the ambiguity
 
-Let the already-owned complete CQ scalar be
+Let the already-owned complete CQ scalar be:
 
-[
-  S_{m CQ}=ar C-H_arphi.
-	ag{8}
-]
+`S_CQ = C_bar - H_phi`.
 
-If one requires the **mean** amplitude-bound Book path price in (5) to equal
-this CQ value, then necessarily
+If one requires the **mean** amplitude-bound Book path price in section 2 to
+equal this CQ value, then necessarily:
 
-[
-  J=rac32H_arphi-ar C.
-	ag{9}
-]
+`J = (3/2)*H_phi - C_bar`.
 
-The amplitude pressure of the SAME Book vector is then
+The amplitude pressure of the same Book vector is then:
 
-[
-  P=S_{m CQ}-rac12H_arphi,
-]
+`P = S_CQ - (1/2)*H_phi`,
 
-hence
+hence:
 
-[
-  oxed{DP-DS_{m CQ}=-rac12 DH_arphi.}	ag{10}
-]
+`D P - D S_CQ = -(1/2)*D H_phi`.
 
-On the Golden tangent this is (+1/2).
+For any tangent, this gives the exact conditional identity
+`D(P-CQ) = -D H_phi/2`. Conversely, if the amplitude pressure is required
+to equal CQ, then `M = CQ + H_phi/2` and
+`D(M-CQ) = D H_phi/2`. Thus for any tangent with `D H_phi != 0` the two
+scalar candidates differ after matching one candidate value. The exact
+nu-family theorem above supplies such a tangent on its declared operator
+family under the separate amplitude-binding hypothesis; it does not prove
+`nu` is an admitted physical controller or GR field variation.
 
-Conversely, if the amplitude pressure is required to equal (S_{m CQ}),
-then
+These identities do not show that either candidate equals Book03's master
+bootstrap `B_N`. That action is already specified; the unresolved step is
+its same-execution pullback to the physical field, history, preparation,
+clock and work variables. No physical aggregation or source conclusion
+follows from the candidate comparison alone.
 
-[
-  J=H_arphi-ar C,
-]
+## 4. Actual closure consequence: the bootstrap pullback is missing
 
-and
+Book03 §03.25 fixes the action-layer scalar B_N. The current documents do not
+provide one admitted same-execution map from the original 42 field variables
+and independent physical inputs to the moving bootstrap operators
+Delta_N(V), F_N(V), retained history, preparation, observer, clock, work and
+Book03 Info. In particular, no field jet of B_N on the original GR carrier
+can currently be evaluated from the specified physical execution.
 
-[
-  M=S_{m CQ}+rac12H_arphi,qquad
-  oxed{DM-DS_{m CQ}=rac12DH_arphi,}	ag{11}
-]
+PR #334 also carries a separate [two-bin rectangular CFL theorem and
+checker](A4D_NATIVE_GOLDEN_RECTANGULAR_CFL_AND_CAUSAL_TWO_SCALAR_2026_10_21.md).
+On its stated rank-two chart and linearized frozen N=1 two-CAR equation, one
+temporal bin per spatial step is unstable at `r=1` for any positive spatial
+PF, while two native time bins give a strict CFL gap under the proved PF-ratio
+bound. The bounded original `n=24, L=8` history census, rectangular grouping
+and inverse-PF volume weight replay exactly. This closes that scoped
+material-stability gate only: the anisotropic original 16+24 geometric
+source, outgoing boundary term, physical clock selection and same-execution
+Book03 pullback remain open.
 
-which is (-1/2) on the same native tangent.
+The exact candidate identity in section 2 and the nonzero nu-family entropy
+source are useful controls on proposed substitutions, but neither supplies
+that map. The pairwise (-1,+1) Golden direction is withdrawn as an inadmissible
+native tangent. The proper-Lorentz theta-chart source remains numerical
+without an interval enclosure; the nu-family sign is exact on its declared
+operator family but its physical controller admission is open.
 
-Therefore no choice of the common amplitude anchor makes both already present
-scalar readings equal the configured CQ action, even in value and first source,
-unless (DH_arphi=0). The original Golden pair supplies an exact nonzero
-counterexample.
+This is a derivation boundary in the current specification, not a
+construction of two fully admitted D0 completions and not a no-go theorem
+for every future completion. The positive finite GR families remain intact;
+the missing evidence is their same-history physical selection and pullback.
 
-This is stronger than saying that Shannon has not been proved to be Book
-Info. It says that after a complete amplitude binding and after one scalar
-value-identification are supplied, a separate **aggregation theorem** is
-still logically necessary.
+## 5. The missing same-execution theorem
 
-## 4. Model-theoretic closure consequence
+Book03 already names the action-layer functional. The required theorem must
+identify its arguments and all source-bearing variables on one admitted
+history:
 
-Consider the currently explicit G0/Book03 specification as the common theory.
-A completion may add an interpretation of the missing physical variational
-scalar while preserving every currently proved equation.
+1. **Common-initial execution map.** Derive the actual preparation, field
+   writer, scene/LEFT interaction, CAR instrument, observer and outcome tape
+   from one admitted initial D0 state and named primitives.
+2. **Complete Book03 valuation.** Compute the moving Delta_N(V) and F_N(V),
+   every retained history and memory class, branch Cost and Info, absolute
+   normalization, clock, work, failures and cut on that same execution.
+3. **All independent equations.** Differentiate the full price in the
+   original 16 coframe, 24 proper-link and 2 matter directions, plus every
+   independent preparation/controller/clock direction and genuine constraint
+   reaction. No source may be fitted or discarded.
+4. **Physical selection and refinement.** Prove that this execution is
+   compulsory under the existing D0 admission law and carry its source to
+   the original raw-216 refinement norm.
 
-Completion A selects the complete mean path price (M).
-Completion B selects the absolute amplitude pressure (P).
+The current BOOK_SOURCE_BINDING owner explicitly does not identify state code
+length with Book03 vertex Info on the native full128 tape. The formal
+ActionProtocol also lacks the physical memory assignment, refinement and
+field-source map. Thus neither the action-layer formula nor an entropy
+identity alone supplies items 1--4.
 
-They may share:
+Existing PR #334 now also contains two **numerical finite roots** of all 42
+field rows for the configured original N=1 CQ price on a spatially homogeneous
+two-interval slab, at positive diagnostic weights `(1,1)` and `(1,2)`. Each
+root was checked against independent complex-step derivatives of the complete
+CQ value; the latest local replay has maximum 42-row residuals about
+`5.2e-15` and `6.5e-15`.
+The second-variation audit also qualifies these roots: for both diagnostic
+weights the fixed-link, fixed-matter raw 16-coframe Hessian has inertia
+`(8+,8-)`, and independent second differences of the complete N=1 CQ value
+have both signs. For `(1,1)`, the checked directions give approximately
+`+3.02833` and `-1.09127`; for `(1,2)`, approximately `+2.98687` and
+`-1.10617`. These stationary roots are coframe saddles of this configured
+price, not free coframe minima. This is not a no-go for a physically
+justified constrained or stationary principle, but unrestricted Cost-Info
+minimization cannot be inferred from these roots.
+A separate warm-start replay finds full42 roots at five sampled positive
+time-slice PF ratios `1, 1.25, 1.5, 1.75, 2`, with maximum source residual
+below `7.9e-15` and minimum reported numerical singular value above
+`0.04468`. These are discrete numerical points only; they do not prove a
+continuous root branch, validated interval existence, actual native AF
+weights or mesh refinement.
+This closes a useful finite candidate-price test, but not an interval-certified
+root, a longer-slab theorem, actual native AF counts, physical writer
+admission or compulsory full Book03 selection. It tests the 42 geometric and
+matter directions only for the configured CQ price, so item 3 remains open
+for the specified Book03 master price and for independent preparation,
+controller and clock directions. It does not supply items 1, 2 or 4 above.
+The detailed [witness note](A4D_COMPLETE_N1_FULL42_FIXED_COLLAR_FIRST_NONFLAT_RANK2_NUMERICAL_ROOT_2026_10_21.md)
+checks nonzero site curvature and matter invariants, rank-two real stress and
+a nonidentity spatial Lorentz plaquette. Its separate
+84-variable, three-interval run did not reach a root within its iteration
+budget; this numerical failure is not a no-go theorem, but the two-interval
+result supplies no refining sequence.
 
-- the same scene and path carrier;
-- the same actual native Kraus histories and Born probabilities;
-- the same actual primitive charges;
-- the same normalized complete coherent Book vector, including phases;
-- the same common amplitude anchor (J);
-- the same one-step Golden marginal and all already measured native
-  probabilities.
+The same PR now gives an exact formula and sharp bound for the normalized
+complementary full128 feedback component in terms of the principal angles
+between the normalized history range and the active-return cut. This closes
+its algebraic first-source expression once that complete map and cut are
+provided. It supplies neither the actual physical angle velocities and cut
+jets nor the independent thermal source in `B_N`; these still must be
+computed on the same admitted execution.
 
-Yet by (7) they give different first Euler covectors.
+Combining the sharp angle-speed bound with the existing soldered-heat
+calculation gives a conditional rejection threshold: if that heat is the
+selected `Delta_N` source and every other `H_01` term vanishes, stationarity
+requires `sum_k |D theta_k[H_01]| >= (128/(9*r_R))*sqrt(1-zeta)/zeta`.
+For the illustrative values `r_R=128`, `zeta=1/2`, this is at least
+`0.1571348403`. The common execution has not yet been shown to identify that
+heat, cut or fugacity, and any other priced source changes the numerator.
 
-Hence the currently explicit G0/Book03 specification has at least two
-consistent completions with different native first sources. A unique Einstein
-source, or any other unique nonzero field source, is therefore **not entailed**
-by that specification alone.
-
-This is a logical non-entailment statement, not a statement that no stronger
-unwritten intended rule exists. To make a physical GR theorem, that intended
-rule must be added/proved explicitly.
-
-## 5. The missing theorem is now minimal and irreducible
-
-No further geometry census can repair this barrier. The remaining G0 theorem
-must simultaneously fix:
-
-1. **History composition / endpoint allocation** — select the actual additive
-   placement of branch information, removing the (	heta) coboundary (2).
-2. **Native Info** — derive (I(v)) or (I_gamma) from the same admitted
-   `Sigma`/history/readout object, with its first jet.
-3. **Memory normalization and refinement** — identify the represented
-   memory operator/vector on the actual retained tape and the native
-   multi-tick composition.
-4. **Aggregation** — identify the one scalar functional whose stationarity is
-   the physical finite Euler equation and prove its relation to the Book03
-   action stack.
-
-The existing `D_min/F_0` definition does not supply item 2: the current
-`BOOK_SOURCE_BINDING` owner records explicitly that state code length is not
-identified with the Book03 vertex gain on the native full128 tape.
-
-Once items 1--4 are supplied, the existing finite machinery can compute the
-full source and test the original 16+24+2 equations. Before that point,
-declaring the complete CQ price, a raw amplitude norm, normalized feedback, a
-mean `Cost-Info`, or a prospective minimum to be “the Book action” is an
-additional constitutive choice.
+Until this map is derived, a CQ price, raw amplitude norm, normalized
+feedback or mean Cost-Info cannot be identified with the full physical
+Book03 pullback by notation. The exact full128 nu-family source is a scoped
+candidate comparison, not a replacement for that missing theorem.
 
 ## 6. Research disposition
 
-This theorem changes the programme priority.
+Do not repeat geometry scans or the now-replayed two-interval CQ root search.
+The next scientific step is to pull the specified Book03 bootstrap back along
+the same admitted histories and compare its full source with the existing
+42-row CQ roots, or identify the precise core definition that determines that
+map. Do not treat nu as an independent physical field/controller coordinate
+without an admission theorem, and do not add a new physical selector or
+postulate as a computational convenience.
 
-- Do **not** spend the next cycle on another metric solution, rank scan,
-  continuum example, or source reconstruction.
-- Do **not** try to tune the common scalar (J); equation (7) is independent
-  of it.
-- Do **not** infer the missing rule from the one-step Golden probabilities;
-  the existing two-tick counterexample already proves that those marginals do
-  not determine the native history law.
-- Do derive one explicit same-execution Book03 history/action object from the
-  common initial D0 state that fixes items 1--4. If this cannot be derived
-  from existing core axioms, the theory itself requires an explicit new
-  definition/theorem before D0->GR can be closed.
+If existing core axioms do not determine the map, record that exact
+definition boundary before attempting a physical GR promotion. This is an
+open construction task, not proof that no future D0 completion exists.
 
-The accompanying checker
-`check_current_spec_closure_barrier.py` verifies the exact Golden
-first-source gaps, both CQ matching corollaries, and the endpoint-allocation
-source difference.
+The accompanying checker validates the generic amplitude-bound source
+identities, the corrected full128 operator-family replay and the conditional
+endpoint-allocation identity. It does not certify physical Book03 admission
+or the bootstrap pullback.
 
 Positive results remain intact: exact all40 Cartan families, the configured
 all42 CQ source, rank-two double-zero finite sheets, paid writers, direct
 signed-curvature readouts, full128 preparation/input closure and conditional
-GR recovery all remain valid within their declared interfaces.
+GR recovery remain valid within their declared interfaces.
 
-`GR_closed=false`.
+GR_closed=false.

@@ -5,7 +5,7 @@ Phase: native realization / Book03 first-source selection. This is an exact
 finite mathematical countermodel **and a sufficient anchored-source
 construction**, not a new action chosen for D0 or a physical GR theorem.
 The target consumer is the existing same-execution common-map gate.
-\`GR_closed=false\`.
+`GR_closed=false`.
 
 ## 1. Exact obstruction: a full-rank observable chart may be spectrally silent
 
@@ -208,11 +208,11 @@ This note consumes the existing rank-34 geometric observability and
 Book03 §03.25/§03.26, but does **not** discharge original physical
 admission, heat identification, native stationary/constraint law,
 two-sided GR recovery, raw216 or refinement. It creates no new
-selector or task. \`GR_closed=false\`.
+selector or task. `GR_closed=false`.
 
 ## 5. Narrow reproducibility
 
-\`sources/d0_rank34_isospectral_source_2026-10-21/check_rank34_isospectral.py\`
+`sources/d0_rank34_isospectral_source_2026-10-21/check_rank34_isospectral.py`
 independently evaluates (4) both directly and via complex Born inner
 products, all 1,156 first Jacobian entries, the exact isospectral
 master value (6), and the anchored first/second-variation controls.
@@ -224,7 +224,7 @@ old full128, geometric, Lean or physical Book certificates.
 The preceding rank-34 countermodel becomes a **native-priced** test when
 composed with the **already owned**, explicitly cut-dependent original
 full128 normalized complementary determinant
-(\`A4D_FULL128_NORMALIZATION_AND_TRUE_BOOK_SOURCE_2026_10_21.md\`).
+(`A4D_FULL128_NORMALIZATION_AND_TRUE_BOOK_SOURCE_2026_10_21.md`).
 This is an application to *that* complementary Book component, not
 yet proof that it is the compulsory full section-03.25 master feedback.
 
@@ -319,14 +319,20 @@ The independent thermal part of Book03 section 03.25 and the genuine
 upstream Euler conditions must be composed on this **same** execution
 before (12) is used for GR. Both signed curvature owners, the
 full42 Einstein/CAR mathematical roots and the source convention
-remain unchanged. \`GR_closed=false\`.
+remain unchanged. `GR_closed=false`.
+
+The separate [`check_principal_angles.py`](sources/d0_rank34_isospectral_source_2026-10-21/check_principal_angles.py)
+checker covers the single-angle derivative, determinant invariance on a
+surjective projection orbit, the deterministic-cut zero source and the sharp
+bound in 825 controls. This verifies the one-angle algebra used in (12)--(15);
+it does not instantiate physical angle jets or the complete Book03 pullback.
 
 ## 7. First quantitative native-heat cancellation test (conditional)
 
 The independently owned soldered Hodge operator gives, on its **actual
 specified** flat \(L=4,\ \beta=\log(2)/32\) positive-symbol chart, the
 off-diagonal heat source \(DH_{\rm heat}[H_{01}]=128/9\); see
-\`A4D_NATIVE_SOLDERED_HEAT_SOURCE.md\`, its exact ten-component
+`A4D_NATIVE_SOLDERED_HEAT_SOURCE.md`, its exact ten-component
 calculation. The following is a **necessary condition**, not an
 identification of that heat with Book03's compulsory \(\Delta_N(V)\).
 
@@ -353,4 +359,9 @@ clock/writer using its **paid principal-angle velocities**, without
 building a new GR solution or differentiating every microscopic
 amplitude. Neither the equality of the heat carriers, the cut,
 fugacity, proper field variation, nor the remaining clock/input
-sources is supplied by this inequality. \`GR_closed=false\`.
+sources is supplied by this inequality. `GR_closed=false`.
+
+The numerical principal-angle checker above covers (15). The cancellation
+threshold is the analytic consequence of combining that bound with the
+separately proved heat source; no physical heat/feedback identification is
+assumed by the checker.

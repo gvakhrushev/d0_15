@@ -11,19 +11,19 @@
 > control against deriving that bootstrap source from normalized record data
 > or mean Cost-Info alone.
 
-# Book03 first-source underdetermination on the original Golden port
+# Book03 candidate first-source comparison and missing physical pullback
 
 21 October 2026. Existing Draft PR #334,
 `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`,
 constitutive/native-programme-v1.
 
-This is a **closure theorem about the present specification**, not a new
-physical action and not a no-go theorem for every possible D0 completion.
-It consumes the literal Book03 path-weight definition, the existing
-`BOOK_SOURCE_BINDING.md` amplitude theorem, and the original full128
-nonblank Golden port. It proves that the currently specified Book03 layer
-does not determine one unique first Euler covector even after the strongest
-same-record amplitude binding is granted.
+This note gives an exact comparison of two **candidate scalar functionals**
+under the separately assumed complete amplitude binding. It is not a new
+physical action, a proof that Book03 selects either candidate, or a no-go
+theorem for every possible D0 completion. Book03 §03.25 already specifies
+the master bootstrap scalar; its same-execution pullback to the original
+GR field and retained history remains unproved. The comparison below is a
+source diagnostic for that missing bridge, not a substitute for it.
 
 `GR_closed=false`.
 
@@ -137,7 +137,7 @@ which already appear in the literature:
 Thus even after (1), `expected differential of path action` and
 `differential of expected path action` are not interchangeable.
 
-## 3. Correction: admissible original full128 field tangent, not an arbitrary Golden-pair tangent
+## 3. Corrected full128 tangents: the conditional-pair witness is withdrawn
 
 **21 October audit corrigendum.** The earlier witness \(Dq_0=-1,Dq_1=+1\) inside a single original *nonblank* \((p^2,p)\) conditional port pair is NOT physically realizable by varying the native Lorentz field: its relative ratio is fixed exactly by its original two Kraus coefficients. The previously printed value \(-1/2\) for that inadmissible two-outcome tangent is **withdrawn as an original-full128 witness**. It remains an abstract two-probability calculation only.
 
@@ -165,7 +165,17 @@ D_\theta\overline S-D_\theta P_B
 \]
 Those decimals are numerical diagnostics; a rigorous interval certificate for their sign has not been issued. The **exact** source-gap formula (5) follows algebraically under its independently stated complete amplitude-binding hypothesis. The new checker analytically differentiates every original CAR16 Julia square root and all128 Kraus rows, verifies full completeness and its derivative, and matches grouped entropy derivatives and finite secants. It does **not** select the physical Book03 aggregation.
 
-Consequently the valid theorem is the typed mathematical nonuniqueness of candidate aggregations unless native Book03 specifies the actual aggregation; a nonphysical two-port tangent is no longer offered as evidence. No field-source, physics-selection, or GR acceptance status changes.
+The exact identity (5) is valid on every differentiable amplitude-bound
+record. A separate [full128 operator-family theorem](sources/d0_variational_selection_synthesis_2026-10-21/aggregation_audit/PROOF.md)
+proves (D_\nu H_\varphi>0) for (0<\nu<\sqrt3/2) on its supplied
+operator family, while explicitly leaving physical controller admission
+open. It therefore gives an exact nonzero **candidate** source difference
+on that family if the amplitude binding is imposed. The proper-Lorentz
+\(\theta\)-chart above is another actual instrument diagnostic, but its
+displayed sign remains numerical without an interval enclosure. Neither
+result identifies either scalar with the selected Book03 bootstrap or
+establishes a physical GR field tangent. The impossible conditional-pair
+direction is withdrawn and is not used below.
 
 ## 4. Why normalized readout and the corrected full128 normalizer do not choose between them
 
@@ -180,34 +190,37 @@ price sees both (J) and the Shannon/record redistribution term. These are
 different physical candidates until Book03 supplies the same-execution rule.
 
 The existing `A4D_GOLDEN_MEAN_INFO_FIBRE_2026_10_21.md` proves a complementary
-second-order underdetermination: mean-preserving branch gain changes can alter
-the quadratic Book response. Equation (10) is stronger for the GR closure
-gate because it exhibits a disagreement already in the **first** source even
-when the complete coherent amplitude binding itself is imposed.
+second-order candidate-response separation. Both that result and the
+first-source identity still require a theorem connecting the chosen scalar
+valuation to the same physical Book03 execution.
 
-## 5. Closure theorem for the present specification
+## 5. Scope of the source comparison
 
-### Theorem
+### Conditional candidate-source statement
 
-Under the explicit Book03 equations currently present in the repository,
-plus the strongest same-record amplitude binding (1), the native first
-Euler covector of the complete execution is not uniquely determined.
+Under the separately assumed amplitude binding (1), the two displayed
+scalar candidates obey the exact identity (5). On the supplied \(\nu\)-
+parameter operator family, the independent exact-sign proof gives
+\(D_\nu H_\varphi>0\), so these candidates have different derivatives
+there. This is an operator-family comparison, not a claim that \(\nu\) is
+an admitted independent variable of the complete physical D0 controller.
 
-### Proof
+### Explanation
 
-The same complete native history family, branch vectors, Born probabilities,
-actual charges and amplitude-bound gains (1) define both scalar functionals
-(2) and (3). They agree with the same normalized coherent record. Their
-first derivatives differ by (5), and on the literal original Golden pair by
-the nonzero exact value (10). The current Book03 text supplies neither an
-equation identifying the finite variational action with (2), nor one
-identifying it with (3), nor a third rule proved equivalent to exactly one of
-them on the original complete tape. Therefore the existing specification
-does not determine one first covector. QED.
+The same supplied operator family and amplitude-bound record define (2) and
+(3), and (5) gives their derivative difference. The exact \(\nu\)-family
+theorem supplies a nonzero record-entropy derivative on that declared
+operator family; the rejected pairwise direction is not used. This proves a
+candidate-source separation at that interface. It does not construct two
+physically admitted Book03 completions or identify the family parameter
+with one of the 42 GR field coordinates.
 
-This theorem does **not** say that Book03 cannot be completed. It says that
-a proof of D0->GR from the current files cannot honestly promote one of these
-sources without an additional native theorem/definition.
+The physical closure barrier is instead the missing same-execution map from
+the original 42-field carrier and admitted inputs to Book03's actual
+\(\Delta_N(V),F_N(V)\), history/Info valuation, preparation, clock, work and
+refinement. Without that map the field derivative of the specified master
+bootstrap cannot be evaluated or compared with the Einstein source. This is
+an open derivation obligation, not a no-go theorem for future D0 completion.
 
 ## 6. Minimal sufficient missing theorem
 
@@ -228,19 +241,21 @@ After those are supplied, the repository already has finite procedures for
 computing the full source and comparing it with the original 16+24+2 target.
 Without item 3 in particular, equality of probabilities, full coherent
 states, mean `Cost-Info`, or normalized Book feedback cannot by itself close
-GR because (10) remains.
+GR. Neither candidate-source calculation supplies the missing physical
+pullback or compulsory selection.
 
 The exact checker
 [`check_book03_source_gap.py`](check_book03_source_gap.py)
-replays the original Golden algebra, the amplitude-bound gains, the
-source gap for several arbitrary common-mode derivatives, the probability
-control, and finite-difference checks.
+verifies the fixed conditional Golden ratio, the exact generic amplitude-
+binding source identities, and replays the 100-control full128 \(\nu\)-family
+source theorem. The separate full128 \(\theta\)-chart replay is documented
+with its local numerical warnings and is not used as an exact sign proof.
 
 No geometry result is weakened by this theorem. The exact finite Cartan
 families, rank-two double-zero sheet, paid writers, direct signed-curvature
 readout and conditional source/recovery theorems remain valid in their stated
 interfaces. The result only prevents promoting one of their candidate prices
-to the compulsory Book03 action before the missing aggregation theorem is
-provided.
+to the compulsory Book03 action before the missing same-execution pullback
+and selection theorem are provided.
 
 `GR_closed=false`.
