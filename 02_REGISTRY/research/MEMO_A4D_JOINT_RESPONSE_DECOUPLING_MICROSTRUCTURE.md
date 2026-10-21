@@ -10145,3 +10145,45 @@ complete absolute Book03, clock, preparation, copy and upstream sources; and
 control the finite Ward defects under refinement. The new channel source and
 rank-two continuum witness do not supply those maps or select the physical
 Info/price. `GR_closed=false`.
+
+
+### Full128 port-gain rigidity across the marker family
+
+The new [port-gain result](A4D_FULL128_PORT_GAIN_MARKER_RIGIDITY_2026_10_21.md)
+starts from the original nonblank full128 Kraus pair
+\(K_{0,k}=pL_k,\ K_{1,k}=\sqrt pL_k\), \(p=\varphi^{-1}\), with charges
+\(C_0=1,C_1=2\) and the supplied analytic marker
+\(q_t(0|k)=p/(p+e^{-t})\), \(q_t(1|k)=e^{-t}/(p+e^{-t})\). This is
+consistent with the existing full128 no-identification control: the old
+pair has the same data map on both ports and frozen base probabilities
+\((p^2,p)\); the marker varies the weights analytically, but does not make
+the separate constructed Golden apparatus the same field-dependent
+instrument.
+
+Directly equating the Book branch ratio
+\(\varphi^{-1+\Delta I(t)}\) with the claimed target ratio gives three
+different necessary laws:
+\[
+\Delta I_{\rm amp}=\frac32-\frac{t}{2\ln\varphi},\qquad
+\Delta I_{\rm prob}=2-\frac{t}{\ln\varphi},\qquad
+\Delta I_{\rm extra}=1.
+\]
+Their derivatives are respectively \(-1/(2\ln\varphi)\),
+\(-1/\ln\varphi\), and \(0\). All three equal 1 at \(t=\ln\varphi\);
+at \(t=2\ln\varphi\) they are \(1/2,0,1\). Thus one-point calibration
+does not identify a binding across the family, and a common absolute
+normalizer cancels from this relative-port test.
+
+The companion note also differentiates the complete closed-loop
+determinant with a moving common factor \(a(t)\). Its derivative contains
+both \(a\,D_tF\) and \(F\,D_ta\); absorbing the second term by changing the
+physical feedback fugacity would change the calibration. This is a finite
+exact algebraic compatibility test, not a new physical marker operation.
+It does not choose the Book03 map, establish its native common factor, or
+identify the full128 carrier with the separate N=1 CQ compiler. The
+original full128 port-pair facts were cross-checked against the explicit
+no-identification statement in
+A4D_OBSERVER_COMPLETE_CAR16_JULIA_CHOI_STAR_DENSITY_WELD_2026_10_20.md.
+The derivation is analytic and exact; the new note has no independent
+executable receipt. Physical admission of the t-family and evaluation of
+the full source on a single actual execution remain open. GR_closed=false.

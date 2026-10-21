@@ -1,7 +1,7 @@
 # Full128 port-ratio rigidity across the native cost-marker family
 
-**Date:** 2026-10-21  
-**Owner:** existing Draft #334, EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE  
+**Date:** 2026-10-21
+**Owner:** existing Draft #334, EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE
 **Status:** exact necessary compatibility law for the already-owned nonblank port pair. No new Info law, instrument, or physical selection. GR_closed=false.
 
 ## 1. Why one-point matching is too weak

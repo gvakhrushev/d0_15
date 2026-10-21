@@ -154,18 +154,18 @@ actual complete history H
   -> complete H+J+R source on the same admitted field/preparation tangent.
 ```
 
-The current Book03 owners define `Z_D=Σ φ^{-c_H+I_H}` and describe `I_H` as a branch distinguishability gain, but do not yet provide a unique native operator/map that determines every `I_H) and its geometry/preparation derivative on this full tape. This is the exact underdetermination boundary: it is not valid to fill that missing map with Shannon entropy, a relative-gain proxy, a coherent amplitude norm, or a convenient feedback partition merely because each is mathematically well-defined.
+The current Book03 owners define `Z_D=Σ φ^{-c_H+I_H}` and describe `I_H` as a branch distinguishability gain, but do not yet provide a unique native operator/map that determines every `I_H` and its geometry/preparation derivative on this full tape. This is the exact underdetermination boundary: it is not valid to fill that missing map with Shannon entropy, a relative-gain proxy, a coherent amplitude norm, or a convenient feedback partition merely because each is mathematically well-defined.
 
 The finite algebra supplies a decisive test once the real map is specified. Put
 `Z_B=Σ_H φ^{-c_H+I_H}` and `Q_B(H)=φ^{-c_H+I_H}/Z_B`. The exact identity remains
 ```math
 S_{CQ}=D_φ(q\\Vert Q_B)-\\log_φ Z_B+\\mathbb E_q I.
 ```
-If the actual source law yields `q=Q_B) on a positive-support chart, then
+If the actual source law yields `q=Q_B` on a positive-support chart, then
 ```math
 D S_{CQ}=-D\\log_φ Z_B+D(\\mathbb E_q I),
 ```
-with the derivative of the moving Born law retained inside the expectation. Thus even Gibbs matching does not by itself identify the native price with `-log_φ Z_B); the expected gain term remains. The absolute binding and source equations (3)–(6) above must still be checked.
+with the derivative of the moving Born law retained inside the expectation. Thus even Gibbs matching does not by itself identify the native price with `-log_φ Z_B`; the expected gain term remains. The absolute binding and source equations (3)–(6) above must still be checked.
 
 ### Smallest next decisive calculation
 
@@ -179,3 +179,25 @@ For the original cap-one execution, produce the literal branch table `(H,q_H,c_H
 If the Book03 definition cannot determine `I_H` or its first jet from owned primitives, record the result as **valuation underdetermined at the physical interface** and identify the missing primitive—not as a failure of every possible Info law. No fit to the desired Einstein source, new action, new detector, or selector is allowed. Only after this finite same-execution map passes is continuum/refinement transport a meaningful next test.
 
 This section consumes, rather than duplicates, the 21 October finite-source/covariant-two-field synthesis. It changes no lifecycle, assembly, Book/CORE acceptance or GR status.
+
+
+### 7. Separate original-full128 port-gain test
+
+The companion [full128 port-gain result](A4D_FULL128_PORT_GAIN_MARKER_RIGIDITY_2026_10_21.md)
+examines the original nonblank pair \(K_{0,k}=pL_k,\ K_{1,k}=\sqrt pL_k\),
+with charges \(1,2\), under its supplied analytic cost-marker family. It
+derives three distinct necessary relative gains: coherent-amplitude binding
+\(\Delta I=3/2-t/(2\ln\varphi)\), scalar-probability binding
+\(\Delta I=2-t/\ln\varphi\), and an extra marker on the already executed
+Kraus branch \(\Delta I=1\). They coincide at the uniform marker setting
+but disagree at \(t=2\ln\varphi\). A common absolute normalizer cannot alter
+these branch-ratio conditions.
+
+The same result retains the derivative of any actual common factor in the
+closed-loop determinant source. It does not determine which map Book03 uses,
+supply the missing native gain operator, or identify this full128 carrier
+with the cap-one N=1 CQ compiler above. The marker family is not declared a
+compulsory physical operation. The branch-gain and full closed-loop source
+must still be derived from one admitted execution before any physical
+selection or GR conclusion. The port-ratio calculation is exact algebra;
+it has no separate executable receipt. GR_closed=false.

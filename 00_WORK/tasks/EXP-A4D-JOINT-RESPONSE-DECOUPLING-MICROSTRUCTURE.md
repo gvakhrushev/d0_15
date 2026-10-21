@@ -3975,3 +3975,22 @@ physical-selection gates open. The companion
 states the continuum invariant `d(rho*y/F_x)=0` and its Einstein-matter
 dictionary; it does not supply the missing finite-lattice transport.
 `GR_closed=false`.
+
+
+## 21 October continuation: full128 port-gain marker test
+
+The [port-gain rigidity result](../../02_REGISTRY/research/A4D_FULL128_PORT_GAIN_MARKER_RIGIDITY_2026_10_21.md)
+derives the exact relative gains required across the supplied analytic
+cost-marker family for three distinct bindings of the original nonblank
+full128 port pair: coherent amplitude, scalar probability, and an additional
+marker on the already executed Kraus branch. A calibration at the uniform
+setting does not extend across the family; a common absolute normalizer cannot
+repair the relative port ratio. The complete closed-loop source also retains
+the derivative of its actual common factor.
+
+This is a necessary finite algebraic test, not a Book03 physical selection.
+It does not identify the original full128 pair with the cap-one N=1 CQ
+compiler or establish that the marker family is physically compulsory.
+Deriving the actual Book03 gain and common factor on one admitted execution
+remains open. The result has no separate executable receipt and gives no
+GR/CORE promotion; GR_closed=false.
