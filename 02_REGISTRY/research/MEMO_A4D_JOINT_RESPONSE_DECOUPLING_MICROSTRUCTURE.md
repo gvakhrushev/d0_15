@@ -9774,3 +9774,32 @@ Euler remainder. It supplies neither a task-level no-go nor a normalized
 response gap. The next missing estimate is a uniform control of the center
 correction as \(t_h\to0\), or an exact finite-\(h\) reduced equation that
 replaces such a bound.
+
+## 21 October — explicit complete-price branch and full nonnull continuum realization
+
+The [new continuation](sources/d0_complete_price_explicit_dynamics_2026-10-21/README.md)
+turns the current two-density stationary normal form into an explicit
+quadratic trace branch, an all-order K_N with a common finite-cap chart,
+and true partial radial minima in their stated sign sectors. Its strongest
+new consumer is a common nonnull Bianchi I family solving all 16+24+2
+ambient continuum equations, including lapse, of the precisely declared
+fixed-measure action. Both queries are nonzero and spacetime constant;
+the complete price derivative factors without dropping ambient variations.
+Ricci and Weyl are nonzero. Native dictionary/weight/internal-root and
+finite-lattice binding remain open, so this is conditional supporting
+composition, not a new native all40 acceptance.
+
+The same derived matter response has a uniform normalized sign and exact
+unitary transport of linear disturbances on reduced Brinkmann geometry,
+including rotating noncommuting internal profiles. Remaining original
+geometric rows and spectator sources are retained. The full-field minimum
+exclusion on the primary carrier is unchanged.
+
+[Live source binding](sources/d0_complete_price_explicit_dynamics_2026-10-21/SOURCE_BINDING.md)
+consumes the actual finite lambda and unit-charge kappa>266/5 owners and
+attributes the Gibbs/Doob/cycle reformulation to its earlier owners.
+The previously unavailable original long normal-form proof/checker/reviews
+are restored as immutable source evidence without replacing the current
+reconstruction. Exact and numerical checks are distinguished; independent
+reviews bind the final proofs. Existing #334/native-programme-v1 continues;
+no new task, claimed compulsory action or GR_closed promotion.

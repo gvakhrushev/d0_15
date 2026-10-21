@@ -3364,3 +3364,46 @@ source against the complete diagnostic leaf price. The prefix refinement
 fixture is explicitly not the huge native retry transcript. Independent
 reviews pin the proofs and actual narrow runs. Original large root,
 compiler, native128, geometry/continuum and Lean suites are consumed unchanged.
+
+## 21 October continuation: explicit complete-price dynamics and nonnull continuum consumer
+
+Phase: conditional native realization / supporting final composition in the
+existing constitutive/native_sector owner and PR #334. The
+[explicit-dynamics packet](../../02_REGISTRY/research/sources/d0_complete_price_explicit_dynamics_2026-10-21/README.md)
+consumes the current reconstructed two-density stationary normal form and
+original complete compiler/detector owners at inspected head f4f92f4b.
+Its [source binding](../../02_REGISTRY/research/sources/d0_complete_price_explicit_dynamics_2026-10-21/SOURCE_BINDING.md)
+retains the literal finite lambda, original unit-charge kappa>266/5, paid
+baselines, reciprocal coframe scaling and all internal source obligations.
+The original long proof and six companions are recovered as archival bytes;
+the current reconstruction is not replaced.
+
+Precise new input: the native trace equation is quadratic, giving an explicit
+all-order K_N on a common |Y|<2^-13 chart and a genuine radial minimum in the
+stated sign/cap sectors. A spacetime-constant nonzero query pair has an explicit
+Bianchi I realization solving every ambient coframe/connection/scalar row,
+including lapse, of the declared fixed-measure continuum action. The same
+original fields work for all admitted fixed finite caps. A separate null
+sector has -128<K_N''/K_N'<-3 and an exact unitary ordered matter propagator
+with reduced geometry held. The Gibbs/cycle note is a finite reformulation
+of existing owners, not a newly selected native law.
+
+Intended consumers: the nonvacuum complete-price stationary application and,
+subject to an actual dictionary transport, joint_nonlinear_solve. No native
+GR premise is discharged by merely naming those consumers. The remaining
+application is the actual continuum geometric coefficient, original spatial
+weights/preparation, full internal roots and finite-lattice lift. The held
+reduced-geometry propagator is not the full original coupled perturbation
+system. The primary all-mesh null carrier, its full-field minimum exclusion,
+and its gain-aware residual route remain unchanged.
+
+Carrier/source: literal two-band detector and paid finite-cap function;
+independent coframes/Lorentz connection; original nondensitized scalar query;
+explicit fixed coordinate measure in the continuum consumer. Baseline and
+clock/source derivatives are never set to zero by a normal-form convention.
+Write surface: four proof notes, restored original packet, new sources folder,
+this existing brief and its primary memo. Smallest decisive check: exact
+Q(sqrt(5)) identities, explicit auxiliary section, symbolic Q[t,t0] curvature
+and all-row source calculation, noncommuting curved-background propagation.
+Independent reviews bind the frozen proofs/checker/receipt. No lifecycle,
+registry, CORE/BOOK or physical-GR acceptance change; GR_closed=false.
