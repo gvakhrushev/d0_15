@@ -9,6 +9,7 @@
 3. [Complete Golden terminal protocol](../d0_native_gr_completion_synthesis_2026-10-20/book_source/MINIMAL_GOLDEN_COMPLETE_SOURCE.md), sections 4-7. Actual query, primitive admission, fixed prefix and information cut remain explicit hypotheses.
 4. [Normal-row recovery theorem](../../A4D_PRIMARY_NORMAL_SOURCE_RECOVERY_SYNTHESIS_2026_10_21.md). All other Euler rows must be solved, not discarded.
 5. The gain-aware substitution below, checked by [the new executable](check_source_gain_composition.py) and recorded in [INTEGRATION_RESULT.json](INTEGRATION_RESULT.json).
+6. [Protected null-source and filtered-recovery synthesis](../../A4D_PRIMARY_NULL_PROTECTION_AND_FILTERED_SOURCE_SYNTHESIS_2026_10_21.md): a conditional source-class application that separates large annihilated curvature terms from the residual that actually needs a smallness bound. See section 6 below. The actual native metric descent remains unproved.
 
 ## 1. A known proportional archive source is not an uncontrolled small error
 
@@ -105,3 +106,37 @@ Its task-relevant orientation information is bounded, while the accumulated veri
 These statements are compatible: the present packet controls exact stationary recovery from an already supplied, correctly normalized continuous SOURCE; the parallel result identifies the expense and selection of a different declared verification TASK. The remaining physical question is which complete reachable execution and information contract the native programme actually admits and selects. Neither theorem answers that by renaming the other one's cost.
 
 **Open:** compulsory price/admission/readout selection; complete upstream residual; its all-row compatibility and size; native stationary/constraint law versus prospective field minimum; generic joint recovery and raw216. `GR_closed=false`.
+
+## 6. Protected null source: first separate terms that cannot change the primary family
+
+The [new synthesis](../../A4D_PRIMARY_NULL_PROTECTION_AND_FILTERED_SOURCE_SYNTHESIS_2026_10_21.md) consumes the known pp-wave tensor-reduction theorem (Gurses–Sisman–Tekin, arXiv:1407.5301, section II); it does not claim that theorem as a new D0 discovery. The D0 application is explicit: on the actual primary profile `H=-lambda_* j(u)(x^2+y^2)+W`, with harmonic W, one has
+
+`Ric_ab=-lambda_* T_ab`, `Box Ric_ab=0`, `Box^k Ric_ab=0 (k>=1)`.
+
+Therefore any ACTUALLY DERIVED local metric-only polynomial curvature source of the cited class reduces from `Lambda g+sum b_k Box^k Ric` to `Lambda g+b_0 Ric` on this family. Its derivative-correction coefficients need not be small. A proved flat-vacuum condition and the ACTUAL original gravity/matter ratio then leave this primary family unchanged. The older common-gain result supplies that ratio only for its own whole-source component; an unrelated renormalization of geometry alone is not automatically harmless.
+
+On the original quadratic/cubic midpoint grid the stronger identity `L_h Ric_h=0` is exact at every complete-stencil interior site. This gives all-order polynomial source protection IF the actual finite reduced source has that polynomial form and uses the correct retained collars. A homogeneous Dirichlet matrix applied to a constant Ricci array is a different boundary problem and is explicitly rejected.
+
+There is a compatible extension of section 2. If the ACTUAL normal correction equation is
+
+`(g_h a_J,h/(2h)) A_h(L_D) L_D v + r_h(H0+v)=0`,
+
+with a supplied compatible higher-derivative boundary realization and
+
+`A_h(L_D)=product_j(I+ell_j(h)^2 L_D)`, `ell_j^2>=0`,
+
+then every inverse factor is positive with infinity norm at most1. Hence
+
+`||L_D^-1 A_h(L_D)^-1||_(inf->inf)<=1/8`
+
+with no smallness condition on those factors. The old gain-aware fixed-point source estimate is unchanged, but r_h now need only contain the UNPROTECTED residual. A positive finite-mass heat-mixture inverse is another sufficient class; it is not identified with native physical heat preparation. Arbitrary signed filters can resonate: the exact test catches `I-L_D/64` singular at h=1/4.
+
+This does NOT discharge the physical descent premise. Actual independent connection/internal stationarity, observer/grid erasure, nonminimal matter terms, Info/work/clock/absolute-value source and field-writing/minimum selection still have to be supplied. The known family protection is compatible with the VSI/Lovelock warning: agreement on this family cannot identify Einstein equations on arbitrary spacetime.
+
+Reproduce only the new bounded application:
+
+```bash
+python3 02_REGISTRY/research/sources/d0_primary_normal_source_recovery_2026-10-21/check_null_source_protection.py
+```
+
+[NULL_PROTECTION_RESULT.json](NULL_PROTECTION_RESULT.json) is the actual local output. Normal and optimized runs matched byte-for-byte. The script checks generic Ricci/Box and material identities, the actual unchanged stencil, the exact positive-filter Green bound and49/225/961-site numerical controls. It also rejects VSI-alone reasoning using `H=x^4`, nonminimal `F(Psi)R`, finite quartic-harmonic stencil exactness, boundary misidentification and a resonant negative filter. It does not independently re-prove the cited arbitrary-order tensor theorem or execute the full all42 parent suite. No remote CI, independent review or GR promotion is asserted.
