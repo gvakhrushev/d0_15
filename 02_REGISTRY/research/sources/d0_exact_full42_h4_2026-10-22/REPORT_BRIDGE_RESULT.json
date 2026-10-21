@@ -1,0 +1,23 @@
+{
+  "status": "PASS_INTERVAL_OFF_NULL_REPORT_BRIDGE_OBSTRUCTION",
+  "h": "1/4",
+  "root_cube_radius": "1e-30",
+  "complex_polydisc_radius": "1e-7",
+  "report_complex_sup_bound": "1.85134372019395838e-6",
+  "report_interval_gap_lower": "5.806889141593e-11",
+  "report0_D_coordinate29_interval": [
+    "[-0.000000022637805423849170717419692525669311589611500105010880600865483817814689194657572724536398210406, -0.000000022637805423849170717419692525669311589611500105010880600865483817814689194657572724536398210406]",
+    "[-0.000000022637805423849170717419692525669311589611500105010880600865483817814689194657572724536371791852, -0.000000022637805423849170717419692525669311589611500105010880600865483817814689194657572724536371791852]"
+  ],
+  "report0_D_abs_lower_at_root": "2.26378054238336192e-8",
+  "hprime_ratio_minus_one_lower": "2.37636153810748149e-6",
+  "mean_report_D_abs_lower_at_root": "2.68978050581795731e-14",
+  "H_comparator_Jprime_lower": "1.90734510177002363e-6",
+  "Golden_comparator_Jprime_lower": "2.35760717199469487e-6",
+  "conclusion": "At the exact nonflat CQ stationary root, the full CQ source is zero, but the single mean-report source is nonzero; hence a scalar mean-report Book feedback does not transfer this off-null root. This does not refute a multi-channel or full physical Book03 construction.",
+  "scope": {
+    "exact_root_used_from_interval_certificate": true,
+    "book03_compulsory_action_selected": false,
+    "GR_closed": false
+  }
+}
