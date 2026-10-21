@@ -1,0 +1,210 @@
+# D0 → GR: first-match prospective history **exactly preserves the WHOLE measured CQ Price−Info source**, including off-null rank-two fields
+
+22 October 2026 · existing scientific Draft #334, \`EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE\` · **exact native finite/capped and integrable-stopping probability theorem**, not a compulsory physical Book03/M1-selected task. This is a new **stopped-native measured-information architecture**, NOT another configured Lorentz/CAR field action. Scientific inputs: actual complete original Golden \(0/10\) Cost−measured CQ entropy, original paid cap-one moment reporter, interval-certified h=1/4 full42 nonflat root, original complete full128 port archive. \`GR_closed=false\`.
+
+## 1. The exact task: repeat an original complete paid test until its FIRST independent verification
+
+Let \(Z\) be the COMPLETE observed finite/countable record of **one** genuinely re-preparable, paid native test: its original binary/factory failures, purification or other orthogonally measured log, input reference, RIGHT, and time/work if they are actually included in the measured pointer cut. Let \(b(Z)\) be an observer-declared finite terminal distinction in an alphabet \(\mathcal A\) of **m strictly positive** outcomes:
+
+\[
+ q_a(y)=\Pr_y\{b(Z)=a\}>0,\quad
+ \sum_{a\in\mathcal A}q_a(y)=1,\qquad |\mathcal A|=m.       \tag{1}
+\]
+
+All complete \(Z_i\) are independently and identically executed from fresh **actually generated, charged blanks with the SAME original code and field \(y\)**; this does NOT clone an unknown quantum state or assert that original oldRIGHT can be reused for free. The FULL record in each trial is retained even if the stop controller compares only \(b(Z_i)\).
+
+Execute \(Z_0\) and **at least one independent** later \(Z_1,Z_2,\ldots\). Stop at the FIRST \(j\ge1\) with \(b(Z_j)=b(Z_0)\). Retain EVERY nonmatching sample and the matching sample. Write \(N=j-1\) (number of nonmatches) and \(T=j+1=N+2\) (TOTAL executed complete tests). The stopping comparison is a reversible paid fixed-inventory equality test on the already measured finite labels; its true costs/Info are kept separately below.
+
+Conditional on initial pointer \(a\), \(\Pr(N=n\mid a)=q_a(1-q_a)^n\), \(n\ge0\). Therefore
+
+\[
+ \boxed{\Pr(N\ge k)=\sum_{a}q_a(1-q_a)^k,\quad
+ \mathbb E[T\mid a]=1+\frac1{q_a},\quad
+ \mathbb E[T]=m+1.}                                         \tag{2}
+\]
+
+The last equality is **exact on the ENTIRE positive simplex**, even for an astronomically rare event; it follows from \(\sum_a q_a/q_a=m\), with no fitted cost, information penalty, geometry input, or postselection. For the native binary \(0/10\) report, \(m=2\) and
+
+\[
+ \boxed{\mathbb E T=3,\quad \mathbb E N=1,\quad
+   \mathbb E(T-1)=2,\quad
+   \partial_y\mathbb E T=0\quad\text{for EVERY field/input tangent}.}
+                                                               \tag{3}
+\]
+
+For the actual 128-outcome full-port tape, the same identity is \(129\) **ONLY on a chart where all 128 chosen pointer outcomes are strictly positive**. If some have zero probability, m is the **actual positive pointer support** and support changes require separate analysis.
+
+This is the pathwise *earliest matching witness* within the declared comparison task; a different physical task, coherent unmeasured verifier, or prospective global controller is NOT proven to select this stopping rule.
+
+## 2. THE complete actual Price and measured CQ information: an exact Wald/source equation
+
+Let the entire individual measured-pointer law be \(P_y(z)\), and let \(C(z)\) be its ORIGINAL complete per-trial additive cost (actual Golden \(0/10\) code, consumed factory primitives, charged fresh preparation, retries/work/clock where typed). Define
+
+\[
+ C_1(y)=\mathbb E_y C(Z),\quad
+ I_1(y)=-\sum_zP_y(z)\log_\varphi P_y(z),\quad
+ S_1(y)=C_1(y)-I_1(y).                                    \tag{4}
+\]
+
+The true complete stopped path \(\Gamma=(Z_0,\ldots,Z_{T-1})\) has **unconditional normalized law**
+
+\[
+ P_y(\gamma)=\prod_{j<T}P_y(z_j)
+\quad\text{on the prefix-free FIRST-MATCH stopping language}.      \tag{5}
+\]
+
+No readout is conditioned on success: the stop occurs almost surely when every \(q_a>0\); all earlier nonmatches are still paid/retained. The classical stopped-path information is the REAL entropy of (5), not an invented entropy score. Wald's first identity applies to the integrable native per-trial charges and the integrable self-information \(-\log_\varphi P_y(Z)\) because \(T\) is a finite-mean stopping time for the **same iid complete records**:
+
+\[
+ \boxed{C_{\rm trials,stop}=(m+1)C_1,\qquad
+ I_{\rm pointer,stop}=(m+1)I_1,\qquad
+ S_{\rm trials,stop}=(m+1)S_1.}                            \tag{6}
+\]
+
+This remains EXACT with outcome-dependent code lengths, complete failed factory branches, and conditional **product quantum work**: for an iid measured CQ trial \(\sum_zP_z|z\rangle\langle z|\otimes\sigma_z\), the full stopped CQ direct sum with per-path work \(\bigotimes_j\sigma_{z_j}\) has \(S_{\rm vN,stop}=(m+1)S_{\rm vN,trial}\). Entangled shared resources, unmeasured coherent interference between stopping paths, nonlinear nonlocal history charges and physical Book03 branchwise Info are **not** covered by this product-measured theorem.
+
+One fixed-inventory reversible compare on each later trial costs an actual positive per-comparison **net measured-pointer Cost−Info charge** \(\kappa\) if its entire factory/abort/work law is truly independent of which pointer labels were compared. Its match bit is a deterministic function of the already retained labels, so it adds no separate **classical pointer entropy**. Since \(\mathbb E(T-1)=m\),
+
+\[
+ \boxed{S_{\rm whole,stop}(y)
+ =(m+1)S_1(y)+m\kappa+B_{\rm shared}(y),\quad
+ D_yS_{\rm whole,stop}
+ =(m+1)D_yS_1+D_y B_{\rm shared}.}                       \tag{7}
+\]
+
+Here \(B_{\rm shared}\) is every actually shared one-time charge/work/preparation/clock/observer term, and its genuine source CANNOT be frozen unless the real execution proves it is field-independent. If the comparison factory charges depend on labels, the \(\kappa m\) simplification is INVALID and the true full conditional ledger must be differentiated.
+
+**Consequently**, on the ALREADY owned paid cap-one field chart where \(B_{\rm shared}\) and all one-trial non-report expenses have field-independent first source, one independent first-match verifier for EACH originally counted local report yields
+
+\[
+ \boxed{D_{42}S_{\rm verify}
+       =3\,D_{42}S_{\rm CQ,complete}}                    \tag{8}
+\]
+
+throughout its open smooth report chart, **NOT JUST on the common-null section**. All 16+24+2 field directions and all actual positive multiplicities \(w_a\) survive unchanged; no matter/gravity coupling is set by hand. The exact off-null h=1/4 **certified** N1 root with \(r_0\ne r_1\), which defeats the single mean or Golden two-channel Book derivative, is therefore ALSO an exact stationary point of this **specified measured-CQ stopped extension**, provided the genuine same-initial independent preparations and neutral shared/cmp sources of (7) have been physically admitted. This is NOT an assertion that this verifier IS the compulsory \(\mathcal B_N\) Book03 master.
+
+## 3. Native Golden code: WHOLE self-delimiting KL, not a guessed Shannon cost
+
+For the ORIGINAL measured terminal symbols \(\{0,10\}\), the two native code lengths are \(c_0=1,c_1=2\), the original Golden Kraft reference is \(\mu_0=p,\mu_1=p^2\), \(p=\varphi^{-1}\), \(p+p^2=1\). If the actual bit-one probability is \(r\in(0,1)\), its real ONE-TRIAL code-minus-measured-information price is
+
+\[
+ S_{0/10}(r)=1+r-h_\varphi(r)
+ =D_\varphi(\operatorname{Bern}(r)\Vert\operatorname{Bern}(p^2))
+ \ge0.                                                      \tag{9}
+\]
+
+The complete uncapped first-match tape consists of **exactly** the prefixes
+
+\[
+ 1\,0^n\,1,\qquad 0\,1^n\,0,\quad n\ge0,
+\]
+with respective ACTUAL probabilities \(r^2(1-r)^n\) and \((1-r)^2r^n\) and honest ORIGINAL native code charges \(n+4\), \(2n+2\). Both classes sum to one. Their original Golden reference probabilities are \(p^{n+4}\) and \(p^{2n+2}\), which ALSO sum to one — a complete prefix-free Kraft law, not readiness postselection.
+
+Wald applied to this actual pair of complete recorded laws gives the universal identity for **any** \(r,s\in(0,1)\):
+
+\[
+ \boxed{
+ D_\varphi(P_r^{\rm firstmatch}\Vert P_s^{\rm firstmatch})
+ =3D_\varphi(\operatorname{Bern}(r)\Vert\operatorname{Bern}(s)),
+ \quad
+ S_{0/10,\rm firstmatch}=3[1+r-h_\varphi(r)].}              \tag{10}
+\]
+
+In particular \(D_yS_{0/10,\rm firstmatch}=3[1-h_\varphi'(r)]D_y r\) for ALL \(r\), including the original off-null reports. **DO NOT conflate** this \(0/10\) \((1-h')\) slope with the fixed-inventory N1 CQ \((-h')\) slope in (8). They are two declared different original terminal price interfaces.
+
+The same stopped-law KL and Fisher information satisfy, for every parameter tangent \(v\),
+
+\[
+ \boxed{\mathcal I_{\rm stop}[v,v]=(m+1)\mathcal I_{\rm one}[v,v],} \tag{11}
+\]
+
+by the orthogonal martingale-difference score identity. Thus first-match verification preserves the field-report Fisher rank (including an owned full metric10+link24 rank if actually sourced by the same reporter), but boosts its actual information per complete sequential experiment by precisely m+1. Observation/Fisher rank is still NOT field-writing/action selection.
+
+## 4. A unique noncatalogue harmonic future score: the LOG-ODDS source on the ENTIRE native chart
+
+The actual observed nonmatch count \(N\), rather than a supplied probability table, determines an exact **positive** information reporter. Put \(H_0=0\), \(H_n=\sum_{k=1}^n k^{-1}\), and record \(H_N\) as a readable function of the fully retained first-match history. For every initial symbol \(a\), with its true positive probability \(q_a\),
+
+\[
+ \mathbb E[H_N\mid b(Z_0)=a]
+ =\sum_{k\ge1}\frac{(1-q_a)^k}{k}=-\ln q_a.
+\]
+
+Therefore
+
+\[
+ \boxed{\frac{\mathbb E H_N}{\ln\varphi}
+      =-\sum_aq_a\log_\varphi q_a=H_\varphi(q).}             \tag{12}
+\]
+
+**Uniqueness.** Suppose \(g(n)\) is independent of unknown \(q_a\) and its expectation under the geometric first-match count equals \(-\ln s\) for **every** \(s\in(0,1)\). Its generating series must satisfy
+
+\[
+ (1-x)\sum_{n\ge0}g(n)x^n=-\ln(1-x),
+\]
+hence \(g(n)=H_n\) uniquely (under convergence for \(|x|<1\)). No externally known \(r\), parameter-dependent compensator or Shannon term inserted into a gate is used in this uniqueness proof. The target additive surprisal \(-\ln s\) itself is the unique continuous nontrivial function additive under independent probability products; its normalization in Golden units follows from \(-\log_\varphi p=1\). **What is NOT proved:** that the full original Book03 branchwise Info is compelled by this score task.
+
+For the original actual binary complete N1 reporter, (12) gives the ENTIRE off-null first jet:
+
+\[
+ D_y\,\frac{\mathbb E H_N}{\ln\varphi}
+ =\log_\varphi\frac{1-r}{r}\,D_y r,
+\]
+not merely its value at \(r=r_0\). This is a pure stopped-statistic identity, with the reported probability differentiated through its actual field/compiler map. At the **unequal** two-site certified h=1/4 CQ root it exactly recovers BOTH weighted entropy slopes and hence its original all42 source, instead of falsely replacing both by the derivative at their mean.
+
+If an executed INTEGER rather than a rational harmonic score is needed, retain independent fair factory registers \(B_j\) with \(\Pr(B_j=1)=1/j\) conditional on \(j\le N\), and count \(R_N=\sum_{j=1}^N B_j\). Then \(\mathbb E[R_N\mid N]=H_N\) EXACTLY. This is a positive actual counted-record implementation; the \(1/j\) randomizers and their retries/clock/Info costs must be paid. It does not make the original Book Info equal this random score by decree.
+
+## 5. A genuine FINITE stop cap K: the entire missing clock SOURCE, and exact root persistence
+
+The physical D0 verification task may require a deterministic finite worst-case clock. Cap at **K later completed trials**, retaining distinct all-mismatch abort leaves. Nothing is discarded or success-conditioned. The full stopped path \(\Gamma_K\) is prefix-free and normalized. Its true mean length and first source are
+
+\[
+ \boxed{
+ L_K(q)=\mathbb E T_K
+ =m+1-\sum_a(1-q_a)^K,\quad
+ D_yL_K=K\sum_a(1-q_a)^{K-1}D_yq_a.}                       \tag{13}
+\]
+
+All complete *iid* measured-pointer entropy, additive trial costs and one fixed-inventory comparison are still governed EXACTLY by the stopped-time identity:
+
+\[
+ \boxed{S_{\rm whole,K}
+   =L_K S_1+(L_K-1)\kappa+B_{\rm shared},\quad
+ D_yS_{\rm whole,K}
+   =L_K D_yS_1+(S_1+\kappa)D_yL_K+D_yB_{\rm shared}.}      \tag{14}
+\]
+
+**Do not omit \((S_1+\kappa)D_yL_K\)** or treat the capped expected number of trials as the universal constant m+1. This is the actual finite-clock/terminal reaction that an incorrect uncapped substitution loses.
+
+For strictly positive reports on a compact chart \(q_a\ge\epsilon>0\), all native \(q_a(y)\) and \(S_1(y)\) smooth, with fixed m:
+
+\[
+ |L_K-(m+1)|\le m(1-\epsilon)^K,\qquad
+ \|DL_K\|\le K(1-\epsilon)^{K-1}\sum_a\|Dq_a\|.            \tag{15}
+\]
+
+All derivatives of \(L_K\) through second order tend uniformly to zero exponentially (with polynomial K factors) whenever the native \(q_a\) have bounded C² derivatives on the chart. This is a genuine **source-normalized future-cap approximation theorem** before any geometry-specific inverse.
+
+**New exact 42-root corollary (finite, not yet compulsory):** The existing 22 October \`d0_exact_full42_h4_2026-10-22\` interval/Banach certificate proves an EXACT original nonflat rank-two finite N1 CQ stationary point \(y_*\in\mathbb R^{42}\) with NONSINGULAR full42 Hessian. Its two genuine report probabilities are **distinct but strictly positive** on a common open analytic neighborhood. Under the *same* fixed-inventory/field-independent shared-source assumptions as its already-certified N1 action, define the actually accounted finite-cap **measured** first-match CQ price by (14), independently for each true local report, with true per-address positive weights and fixed-inventory comparison \(\kappa_a\). Because its gradients and Hessians converge in C¹ to **3 times the already-certified CQ gradient/Hessian** as \(K\to\infty\), the ordinary inverse/implicit-function theorem gives:
+
+\[
+ \boxed{\exists K_0<\infty\ \forall K\ge K_0:
+ \ \exists!\ y_K\ \text{near }y_*:
+ D_{42}S_{\rm stop,K}(y_K)=0,\quad y_K\to y_*.}           \tag{16}
+\]
+
+The local uniqueness is within a sufficiently small neighborhood chosen from the original nondegenerate root and the uniform C² control. For all sufficiently large K, \(y_K\) remains nonflat Lorentzian with TWO independent real CAR gradients and the saddle signs survive. This is an **analytic existence consequence**, not a fresh claimed interval certificate of any given numeric K, nor a proof the original Book03 master chooses this new price. A one-time field-dependent shared \(B_{\rm shared}\) or nonneutral comparison-source invalidates (16) unless explicitly included and shown compatible.
+
+For the actual native certified report \(r\approx1.8513\times10^{-6}\), \(K=2\cdot10^7\) gives, **as a bounded coefficient diagnostic** (not as a physical admission), \((1-r)^K\lesssim9\times10^{-17}\), while mean execution stays near THREE trials. The capped clock source \(K(1-r)^{K-1}D r\) is small but NOT exactly zero. Its actual cost/heat and rare huge elapsed-clock tails remain physical obligations.
+
+## 6. Why this is a real architectural narrowing, but not Book03 or GR closure
+
+The owned original h=1/4 off-null theorem correctly proved that two simple Golden/H **feedback log determinants** with coefficient \(j'(r)\) do NOT share the same finite CQ stationary root. Nothing here disputes that strict negative result. Instead, native prospective **first-match verification** gives a DIFFERENT, fully specified, self-delimiting **measured Cost−Info** execution whose FULL absolute price/source is a positive constant multiple of the original per-trial measured-CQ price (including all original outcome-dependent charges), with an exact capped boundary error. It has actual observed path probabilities, no prescribed target field, no off-null fitted response and a quantitative finite-clock gate. This is precisely an interface candidate for the missing physical native continuation/Info transport — not a new gravity action or externally assumed Einstein coupling.
+
+The still-open hard arrow is **the compulsory operator/action identification**:
+- Does M1/G0 ACTUALLY choose the independently verified first-match task from the SAME complete original preparation, and admit its entire paid repetitions/stopping-controller history?
+- Does the original Book03 §03.25 **heat + full-history complementary return** on THAT tape yield the measured CQ Price−Info and source (6)--(8), with its TRUE original active cut, oldRIGHT, clock and genuine moving preparation? There is NO SUCH IDENTIFICATION proved by a renewal/Wald/KL identity.
+- Are all independently selectable inputs/upstream/collar sources stationary, and does the full 34-geometry quotient carry a uniformly invertible, source-normalized refining family beyond the one certified finite h=1/4 collar?
+
+Do not call a measured entropy an operator trace, the unique harmonic score compulsory Book Info, or a mathematical conditional stopped programme physically selected. \`GR_closed=false;\ full_D0_price_selected=false;\ raw216_closed=false\`.
+
+**Narrow repro:** \`sources/d0_first_match_wald_2026-10-22/check_first_match_wald.mjs\` validates whole-prefix probability, original Golden 0/10 reference Kraft/KL, true capped Price–Info/source boundary, Fisher factor, and the native rare-report native K diagnostics. \`sources/d0_first_match_wald_2026-10-22/check_harmonic_information.mjs\` independently tests the harmonic unique source and all finite-K truncation controls. These are new bounded mathematical tests, NOT original native full128/HJR or expensive 42-root reruns.
