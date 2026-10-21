@@ -3712,3 +3712,23 @@ the normalized N=1 material function. The reviewed scientific core and
 interval packet stay unchanged. Exact late-merge preservation and the
 unchanged source-pin checks are recorded in
 [sources/d0_joint_closure_synthesis_2026-10-21/PUBLICATION_PRESERVATION.json](../../02_REGISTRY/research/sources/d0_joint_closure_synthesis_2026-10-21/PUBLICATION_PRESERVATION.json).
+
+### 21 October: fixed-measure Ward rigidity for the conditional continuum price
+
+The [on-shell density-rigidity proof](../../02_REGISTRY/research/A4D_COMPLETE_PRICE_ONSHELL_DENSITY_RIGIDITY_2026_10_21.md)
+combines the original coframe trace equation with the fixed-measure Ward
+identity. On the owned regular branch this forces both detector densities to
+be constant for every full stationary field solution. It proves equality of
+the local field critical sets and Jacobi kernels across all fixed finite caps
+of the declared two-density valuation, and derives the aligned timelike
+Einstein-dust sector. A non-VSI arbitrary-function LTB substitution checks
+all ambient coframe and scalar sources with the proper Lorentz connection.
+
+This lowers the conditional continuum comparison target from a unique
+microscopic price to membership in the regular fixed-measure two-density
+class or a proved equivalent source. It does not establish that the complete
+native D0 execution has that price/source, admit its moving query, close its
+independent preparation/clock/work equations, or provide the original
+finite-lattice lift. Package provenance and source mapping are recorded in
+the [parent integration memo](../../02_REGISTRY/research/MEMO_A4D_JOINT_RESPONSE_DECOUPLING_MICROSTRUCTURE.md).
+The constitutive obligation remains open; `GR_closed=false`.

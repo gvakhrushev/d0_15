@@ -9878,3 +9878,63 @@ information cuts remain distinct. The [package and independent reviews](sources/
 state the exact common-action composition condition and the remaining
 Book/input/query/time binding. No physical GR, raw216, task lifecycle or
 CORE claim is promoted.
+
+## 21 October — fixed-measure Ward rigidity and package reconciliation
+
+The new [on-shell density-rigidity result](A4D_COMPLETE_PRICE_ONSHELL_DENSITY_RIGIDITY_2026_10_21.md)
+consumes the existing fixed-measure two-density continuum action. Its local
+coframe trace gives `T=x F_x-y F_y=0`; the Lie variation of all dynamical
+fields with the external measure held fixed gives `d(F-x F_x)=0`. Wherever
+the density map is regular, these equations force `x,y` to be spacetime
+constant on each connected chart. For the declared finite-cap detector,
+the inherited radial branch and `|d_y log|V_N' r_x||<202` make the Ward
+slope strictly nonzero throughout the owned interval. All finite caps
+therefore have the same complete local field critical set, and the same
+local Jacobi kernel under the common boundary class, as the bare `r` action.
+
+After the already-owned stationary reduction, the aligned timelike sector is
+Einstein–irrotational dust with its volume/current relation fixed by the
+actual source ratio. The arbitrary-function LTB witness is non-VSI and the
+new checker verifies the full coframe source, torsion-free Lorentz connection
+and fixed-measure scalar equations. This supplies a narrower possible
+constitutive target: an admitted same-process D0 source may suffice if it is
+shown to induce this regular fixed-measure two-density class, or an equivalent
+field source, without selecting a unique microscopic price. The result does
+not derive that native map. Moving-query admission, complete Book03
+Cost/Info and upstream price, nonuniform-weight source transport, the
+original finite-lattice lift and physical selection remain open;
+`GR_closed=false`.
+
+The supplied packages were reconciled against this current PR tree rather
+than overlaid wholesale. The native-clock handoff archive
+(`d0_15-native-clock-handoff-2026-10-21.zip`, SHA-256
+`7d075d21fb3de9862ebe4fe7cfd98c7d2035b61a87acaf6d6b6f639258eceba1`)
+matches all nine manifest-listed repository files byte-for-byte; its patch
+passes a reverse-application check, confirming those files are already
+integrated. The explicit-dynamics ZIP and standalone patch have SHA-256
+`ab5539cdce4a478e2941bf463291efc513b3a92a1263167e65943ac9f3bbc09d` and
+`0293ffb3a617322b571f45172fc55cfbf57acf8328f57f2aef34bc0b3882dfa5`;
+the embedded patch has the same hash as the standalone file. Nineteen of its
+21 overlay files match the live tree byte-for-byte. The task brief and parent
+memo are newer integrated versions; the memo also replaces an older
+first-slow limitation with the later rank-97/98 formal obstruction. Applying
+the snapshot patch or copying its two large files over the live versions
+would discard newer research, so no duplicate overlay was performed.
+
+The recovered odds-price ZIP (SHA-256
+`1306dd79a5a6a4266d2f59fce6896aeb6d81f9457bbc8de1f18a07cb063661ac`)
+identifies itself as reconstructed material and says the original commit
+and 233 native checks are unavailable. Its Fisher/resource formulas,
+third-jet Born–Book counterexample and stopped-clock normalization are
+already represented in the existing
+[three-text reconstruction](sources/d0_three_text_reconstruction_2026-10-21/README.md),
+the [all-flag source](sources/d0_three_text_reconstruction_2026-10-21/all_flag/RESTORED_ALL_FLAG_PRICE.md)
+and [complete-record/odds synthesis](A4D_COMPLETE_RECORD_ODDS_PRICE_SYNTHESIS_2026_10_21.md).
+It adds no recoverable original matrices or historical receipt, so it is
+recorded as a mapped duplicate rather than copied as a second proof.
+
+The bounded density/Ward checker passed 200 controls under both normal and
+optimized Python; outputs were byte-identical (SHA-256
+`787087e22940790ee67a09cb1aea83367cbc1b113ff82c9a77283ea0522a6da0`).
+This is the recorded author checker replay, not an independent review or a
+physical acceptance.
