@@ -382,3 +382,58 @@ The original exact-writer obstruction and the finite approximation thus agree. T
 A further exact [Golden mean-Info fibre theorem](A4D_GOLDEN_MEAN_INFO_FIBRE_2026_10_21.md) proves that even agreement of the original full128 port law, real costs, **the entire expected Shannon Info** and the first amplitude log-normalizer jet at one point does NOT identify Book03's branchwise amplitude second source: a centred, mean-preserving gain variation has negative quadratic-response curvature \`-4 ln(phi) Var_q(v)\`. The actual nonblank Golden pair gives \`-4 p^3 ln(phi)\`. These are alternative candidate gain tables, not claimed to be admitted D0 physical variations. The result therefore **increases** the burden of the Book03 selection test: the full branchwise and memory-algebra valuation must be derived before promoting the counted-CQ writer+processor cost.
 
 Exact code, frozen 124 author checks, two additional finite/symbolic checkers and author receipts are in [the paid-writer source packet](sources/d0_paid_resource_writer_2026-10-21/PROOF.md). This does not change Gate A/B/C: actual single-initial-controller admission, complete Book03 ordered-memory valuation, independent upstream input equations, source-normalized physical refinement and the raw216 norm remain OPEN. The physical action/source equality and GR closure are still unproved. \`GR_closed=false\`.
+
+## Reverse source interface and paid coherent-record orbit input
+
+The [integrated reverse/source/preparation result](A4D_REVERSE_SOURCE_AND_PAID_PREPARATION_SYNTHESIS_2026_10_21.md)
+now supplies two specific substitutions into this same parent gate.
+
+First, the owned normalized complementary Book component does not require
+the whole microscopic amplitude as input: `N=W*W`, `B=W*P W` and their
+full first variations determine its exact source. Finite native Golden
+probes invert real effect matrices if the full original input contexts and
+cut measurement are actually accessible. For first-source preservation,
+projection to a fixed unital *-algebra containing the anchored `N,B` is
+exact. It is also necessary for arbitrary independent Hermitian effect
+jets; physically restricted tangents can require fewer data. On the
+original full128 CAR family with its original blank-history cut, parity
+gives blocks 8+8 on the consumed Fourier CAR16 block, or 8S+8S on the full
+S-site carrier. All labels, ports, spatial links and oldRIGHT remain.
+The exact Hessian defect is retained; source sufficiency does not promote
+an apparatus minimum or a free physical forgetting operation.
+
+Second, a complete paid catalogue, actual Golden H/Bell factories and
+paid output copies of reported prefix flags implement finite rational
+orbit inputs `U_k C0` for the owned coherent-E input functional. From one
+common supplied C0 and within one fixed catalogue, their specified full
+tagged-E cost is exactly
+
+\[
+\mathcal P_k=B_{\mathcal C}+\Gamma F_n^E(U_kC_0),
+\qquad \Gamma=\alpha\beta/d^2>0.
+\]
+
+Here B includes all prefix/factory/flag costs and the entire prefix and
+abort entropy. The known Bell/tag gate block is counted from the actual
+owner; bank, controller, work and storage charges remain additional real
+terms. The flags outside E are actual new retained output memory: without
+them the coherent entropy generally does not split. The original downstream
+record remains coherent. C0 is still a common boundary input, k is not
+automatically selected by one admitted autonomous controller, and distinct
+catalogue constants cannot be dropped from a global device comparison.
+
+This positively removes the external moving-orbit-input premise for that
+declared finite tagged consumer. It does not identify that consumer with
+the original compulsory Book03 cut or heat/Info valuation. In particular,
+the separate Golden timestamp-archive result exhibits a field-dependent
+retained-price defect despite equal limiting J and J source. Therefore
+source reconstruction and orbit preparation cannot simply be added and
+declared to be the full native action.
+
+The [frozen source packet](sources/d0_reverse_source_synthesis_2026-10-21/README.md)
+contains three proofs, 40/50/119 checked conditions, separate optimized
+receipts and mathematical reviews. Scientific inputs remain pinned at
+2961dc6e. The next calculation remains one same-execution native controller,
+cut and complete-price identification, followed by its independent input
+equations and original-carrier physical refinement. The prior retained-code
+continuity obstruction remains. Keep Draft #334 and `GR_closed=false`.

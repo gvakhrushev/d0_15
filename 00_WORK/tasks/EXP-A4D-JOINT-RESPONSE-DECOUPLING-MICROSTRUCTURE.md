@@ -4360,9 +4360,91 @@ Consume [A4D_RANK2_EXACT_FINITE_DOUBLE_ZERO_UNIMODULAR_PF_SYNTHESIS_2026_10_21.m
 
 One exact original six-face coframe-balance equation in the 16 already-owned coframe components has a positive near-identity root v_h=1+O(h), preserving det(e)=r². The two original CAR forward gradients then have total Lorentz Clifford Q=0 and genuinely conserved time/spatial scalar currents, so BOTH material Euler rows and ONE local radial coframe Euler row vanish exactly for the full N=1 CQ density at every admitted free interior cell, regardless of fixed AF PF irregularity. The result is non-VSI and rank-two, not a copy of the pp-wave solution. It is a mathematical field construction and not a fully paid primitive writer or whole-Book selection. The remaining15+24 geometric rows have O(h) measured source but DO NOT vanish identically, and a fixed two-ended temporal collar may constrain v_h on boundary sites.
 
-**NEXT**: construct one same-price, gauge/constraints/collar-compatible whole-slab inverse or analytic branch solving the remaining geometric source on the native gauge quotient (39 explicit components, at most 33 quotient-geometric equations after the six Lorentz Noether identities and the solved radial relation) while retaining the exact f=q=0 equation, the two real CAR finite histories, the actual positive AF weights and the same original 42-field variation. Do NOT launch another local rank scan, suppress the true collar, substitute a different sigma-plus detector, assume PF smoothness for an exact null-sheet root, or promote GR_closed. Full original Book03/clock/preparation/oldRIGHT/controller/field-writer admission and physical selection still OPEN. Bounded replay: \`sources/d0_star_rank2_seam_2026-10-21/check_exact_null_sheet_unimodular.py\`.
+**NEXT**: construct one same-price, gauge/constraints/collar-compatible whole-slab inverse or analytic branch solving these remaining 39 independent Euler rows while retaining the exact f=q=0 equation, the two real CAR finite histories, the actual positive AF weights and the same original 42-field variation. Do NOT launch another local rank scan, suppress the true collar, substitute a different sigma-plus detector, assume PF smoothness for an exact null-sheet root, or promote GR_closed. Full original Book03/clock/preparation/oldRIGHT/controller/field-writer admission and physical selection still OPEN. Bounded replay: \`sources/d0_star_rank2_seam_2026-10-21/check_exact_null_sheet_unimodular.py\`.
 
 
 ### 21 October: gauge-correct residual count of the exact double-zero sheet
 
 The exact unimodular f=q=0 finite two-real-CAR sheet solves one radial coframe row and both matter rows; the apparent 39 remaining geometric components are NOT 39 independent equations. Reuse the accepted original nonlinear local SO^+(1,3) quotient/Noether owner: 40 geometric components obey six exact local Lorentz vertical relations. Therefore the next whole-slab source inversion has at most33 gauge-quotient geometric components after the radial equation is solved, not a naively invertible 39x39 system. Do not simply discard arbitrary rows: the exact Ward identity couples coframes to **all incident** spatial/temporal links and collars. Build it on the native nondegenerate gauge quotient, with the genuine two real CAR histories and the original actual fixed PF counts. All-row/root and physical Book03 selection remain open.
+
+## 21 October continuation: reverse reconstruction at the actual source interface
+
+Phase: native realization and final composition, continuing this existing
+integrator after the user's request to reuse the most productive proof moves,
+test the reverse necessity arrow, and inspect unused Book primitives and
+cross-domain constructions. Scientific input is `2961dc6e` together with its
+unchanged source owners; this is not a separate execution or task.
+
+The precise parent is the missing same-execution complete Book source after
+the paid moment writer. Test whether recovering the entire microscopic map
+is unnecessarily strong for this consumer. The owned full128 normalization
+proof already expresses the normalized complementary feedback through
+`N=W*W` and `B=W*P W`; reuse that identity. The intended new substitution is
+an operational reconstruction and source-sufficiency test for these effects,
+including absolute normalization, the moving retained cut, genuine input
+preparations and all first variations. A conditional expectation that
+preserves a source functional is not automatically an admitted physical
+forgetting operation or an identification of the whole Cost-Info price.
+
+Consume the accepted VerificationCore/TheoryTransfer necessity at its stated
+scope, the original all42 nonvacuum geometry, the exact moment compiler, the
+full128 normalized-source owner, and the retained-entropy input Euler owner.
+Retrospective comparison must identify removed premises, not count nearby
+examples. An inverse GR observation map cannot by itself select Golden gates,
+the physical Book cut or a microscopic price. Preserve that distinction while
+testing a genuinely weaker source interface.
+
+Carrier and convention: the same finite real/complex full-column execution,
+all retained original history and oldRIGHT factors, the specified active cut,
+fixed native fugacity unless its derivative is explicitly retained, and
+ordinary finite trace with its actual multiplicity. Any numerical diagnostic
+must name its original Fourier block; it is not the full spatial primary.
+Use exact finite identities and the smallest original-operator source test;
+do not replay geometric rank, root, or refinement suites.
+
+Intended writes: this brief, the existing next-common-map gate, one integrated
+research note, and `sources/d0_reverse_source_synthesis_2026-10-21/`. Bounded
+contributors use disjoint scratch handoffs. Independent review must separate
+owned identities, the new consumer application, physical admission and the
+remaining complete-price/preparation/refinement premises. No new Info,
+Einstein counterterm, physical selector or acceptance status is introduced.
+
+### Result: finite inverse/source algebra and paid tagged orbit inputs
+
+The [integrated synthesis](../../02_REGISTRY/research/A4D_REVERSE_SOURCE_AND_PAID_PREPARATION_SYNTHESIS_2026_10_21.md)
+now delivers three bounded results at that parent interface. The owned
+two-effect Book formula receives an explicit finite Golden-probe inverse
+and a full moving-cut source reconstruction, conditional on actual process
+input/cut access. A trace-preserving expectation onto an algebra containing
+the anchored N,B preserves the first source for arbitrary effect jets;
+necessity is proved within that specified algebraic interface. The actual
+original full128 CAR/blank-history family admits the 8+8 Fourier, or 8S+8S
+full-space parity split without changing labels, ports or RIGHT. Its
+Hessian defect is explicit, so no minimum claim is inferred.
+
+The paid rational writer is also composed with the complete coherent-E
+input theorem. Preparing every row before selection, using real paid
+Golden H/Bell factories and copying only reported prefix flags into new
+output DATA outside E gives the exact finite-catalogue identity
+`P_k=B_catalogue+Gamma F_n^E(U_k C0)`, `Gamma>0`. Every preparation/factory
+failure and abort entropy remains, and the known Bell/tag gate counts
+are derived from the actual owner. Common C0 is still supplied; real
+rational orbit inputs approximate values and finite stencils, not an
+automatically admitted smooth full-state family or a free Gibbs input.
+This removes one moving-input premise for the declared tagged-E consumer.
+
+The [source packet](../../02_REGISTRY/research/sources/d0_reverse_source_synthesis_2026-10-21/README.md)
+preserves exact handoffs, historical pins, three narrow author receipts
+and separate optimized byte-identical receipts: 40 inverse checks, 50
+source/parity checks, 119 preparation checks. Separate mathematical reviews
+audit the native parity and all-branch preparation proofs; the integrator
+reviews the reverse proof and composition. Old suites were not replayed.
+
+The reverse necessity arrow establishes the already-owned verification
+kernel and, here, required data for a specified source. It does not select
+Golden dynamics uniquely. Concurrent timestamp-price work further shows
+why equal normalized feedback source cannot identify the entire retained
+price. The actual compulsory Book03 branch valuation/cut, common native
+controller, independent input/apparatus equations and source-normalized
+raw216 refinement remain the same open closure gate. No acceptance gate
+is promoted. Draft #334; `GR_closed=false`.

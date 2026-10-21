@@ -1,0 +1,41 @@
+{
+  "source_ref": "2961dc6ee4abcda0a0fb2aa36dc6ecd7e62a6535",
+  "sources": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "488726b4aa4b9de5abeda5b260688a9715809de0befa942c00cad200a34e4fe0"
+    },
+    {
+      "path": "02_REGISTRY/research/D0_GR_PRIMARY_POSITIVE_CASE.md",
+      "sha256": "5bcfd9089a88f20ac3e3e65c414e03de779ca71938a2050affe33c968b55ce08"
+    },
+    {
+      "path": "02_REGISTRY/research/D0_TRIZ_PHI_AGENT_HANDOFF_2026_10_20.md",
+      "sha256": "6db9c4fbc3a41e8ecea060a9c986a21942ba510b339aaec571617d15ebb5a0c6"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_PAID_RATIONAL_RESOURCE_WRITER_2026_10_21.md",
+      "sha256": "b609514f9170e393b72d0df0650bfd88f93e6dd47d7a7d4d9fceb35d00a04993"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/GOLDEN_EXACT_DETECTOR.md",
+      "sha256": "d33c9c2cb2322e381723f481eb1fcf58058fd05ad88eda92c5597c026d02eb77"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_common_execution_closure_2026-10-21/native_processor/FIXED_PROCESSOR_PROGRAM_SOURCE.md",
+      "sha256": "4a879a3bb986aca43f06cec760f882cec4e7c6446efd46d5add8a2f199e9381b"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_retained_entropy_input_euler_2026-10-21/PROOF.md",
+      "sha256": "0842064ccb7a4b3192ccea00e7e411d8bea7454a83d53cf7145b6be7c8d76ffa"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_full128_normalization_closure_2026-10-21/PROOF.md",
+      "sha256": "42f96fc4cdb4f47878c4d260a003dd2819741c6b4e233581e184f28e9792ebcc"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_PAID_MOMENT_FIELD_WRITER_2026_10_21.md",
+      "sha256": "4ec6622ae2ff4f75d615bbd2b207a071a154df56e59d74f0eb76fab6c9f95d82"
+    }
+  ]
+}
