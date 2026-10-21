@@ -169,3 +169,14 @@ The companion exact-symbolic and numerical hostile-control checker is
   sources/d0_star_rank2_seam_2026-10-21/check_global_star_pf_jump.py
 
 This strengthens the route but also corrects any interpretation that the r=1 f=O(h^2) estimate was globally uniform or that a positive PF lower bound alone ensures full42 refinement. The prior one-site Cartan correction obstruction remains separate. GR_closed=false.
+
+
+## 9. Constructively enter the EXACT finite common source sheet (21 October)
+
+The later [unimodular coframe/true-CAR double-zero theorem](A4D_RANK2_EXACT_FINITE_DOUBLE_ZERO_UNIMODULAR_PF_SYNTHESIS_2026_10_21.md) **supersedes a strategic inference, not this experiment**. The old global native result f_star,h = h c(r)+O(h²) and the PF-jump source at nonzero finite f remain valid for the earlier *uncorrected trial*. But any true full N=1 stationarity with q_z=0, on the original analytic branch F_x!=0, must also have **f_z=0** sitewise by the ORIGINAL independently varied coframe-scale equation x F_x-y F_y=0. Thus PF smoothness is not a NECESSARY precondition for exact on-shell source neutrality; it is necessary only for one class of off-shell approximate/refining trial fields.
+
+The new original finite rank-two constructive coframe is e_h=diag(A v_h,B/v_h,r,r), AB=1, with v_h determined as the UNIQUE positive near-1 root of one genuine original six-face quadratic per based time cell. It makes f_star,h=0 EXACTLY, preserves the actual volume r², and, with the correspondingly updated two REAL CAR scalar gradients, preserves q_h=0 and BOTH finite scalar Euler rows EXACTLY. There is NO dependence on smoothness of the fixed actual PF weights in these first-source identities; a discontinuous positive rho example passes. One original coframe radial Euler is also exactly zero. The remaining 39 geometrical coframe+link equations have a measured O(h) residual but are NOT solved. A fixed temporal collar, gauge compatibility and physical admission remain separate.
+
+The direct conservative return from this projection to the true historical theorem is the full affine-source identity on Sigma,
+  D_42 S_N1 = M tau(a Dsum f+b Dsum q)
+with the SAME original Golden price. Its higher material Hessian remains nontrivial off Sigma. Do not erase the actual previous PF-jump negative control or claim an exact 42-row Einstein solution.
