@@ -15,6 +15,12 @@ Assembly-Slot: `constitutive`
 
 ## Strategic synthesis continuation — 2026-10-17
 
+### 22 October: integrate exact report-to-Book feedback routes
+
+Consume the new [all42 report-to-Book feedback synthesis](../../02_REGISTRY/research/A4D_NATIVE_GOLDEN_REPORT_TO_BOOK_FEEDBACK_ALL42_2026_10_21.md), now published in the existing PR at `3c581e83`. It constructs two true §03.25 complementary returns from the supplied N=1 binary report and derives their positive first-source multiples on the declared CQ chart: coherent reflection with a retained-history/controller obstruction, and two paid forward conjugate histories with a sharp `1/D` sensitivity bound. The primary positive case now records both routes and their limits.
+
+This does not provide compulsory Book03 Info/work/clock valuation or the admitted common field→CAR→report→price map. Continue with that same-initial fully priced execution, its independent input/controller equations and the complete source/refinement comparison. Preserve `GR_closed=false`; no new task, action, selector or physical admission is introduced.
+
 ### 21 October: physical admission of the same cap-one complete source
 
 Continue the existing Draft334 / native-programme-v1 at input
