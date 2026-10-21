@@ -167,3 +167,19 @@ The strongly reduced physical remaining task is to show that D0/M1 SELECTS AND P
 - checks dephasing mismatch and the certified two-cell off-null failure at an unequal-report CQ root.
 
 The checker was EXECUTED on its source in isolated V8 with every asserted condition passed. The native original 10946-word-to-256 histogram and original all42 CAR source are consumed from their prior independently owned proof, not replayed as part of this narrow exact-complement script. No new GitHub CI proof or independent acceptance claimed.
+
+## 6. ACTUATION STRENGTHENING — no physically new Golden inverse-angle oracle
+
+The coherent Book comparison (4) involves a double pass \(V_y^\dagger Z V_y\). It is not legitimate to regard the inverse as free, or to demand a continuous inverse Golden angle as a new native primitive. On the LITERAL already-owned native two-channel Golden matrix, let \(a=\sqrt p\), \(p+p^2=1\) and \(X=\left(\begin{smallmatrix}0&1\\1&0\end{smallmatrix}\right)\). Then
+\[
+\boxed{G=\begin{pmatrix}a&-p\\p&a\end{pmatrix},\qquad
+G^{-1}=G^\top=XGX.}\tag{15}
+\]
+Thus every original Golden gate in the inverse word is implemented by precisely ONE already available native Golden gate plus TWO **genuinely charged Boolean NOT** operations. Every ordinary CNOT, Toffoli, SWAP, Hadamard, X and CZ primitive in the declared logical compiler likewise has its existing finite inverse, with
+\(\mathrm{CZ}=(I\otimes H)\mathrm{CNOT}(I\otimes H)\). If the forward supplied-input coherent unitary V is represented by a complete **reversible known** native gate word of N primitive logical gates, including \(N_G\) Golden occurrences, then its inverse is the reversed actual word with at most \(N+2N_G\) native gates, not an oracle. A complete \(V^\dagger\mathrm{CZ}\,V\) has an explicit positive finite logical gate upper bound \(2N+2N_G+3\) in this declared gate-counting convention; ALL actual factory/clock costs and prepared inputs still require their own ledger.
+
+This removes a real **gate-palette** concern for the unmeasured coherent logical skeleton, but not the physical \(\mathrm{Book03}\) *admission/selection* of the controller or of the input preparation. After a raw factory branch has been classically measured and persistently registered it CANNOT simply be reversed away. A valid actual two-pass test must instead (a) coherently defer that measurement and keep its full Stinespring work, or (b) use the real conditioned fine-tape control with all measured failures and its Book source computed separately. It cannot invoke the reversible palindrome on an irreversibly dephased register while claiming to retain its earlier Shannon ledger.
+
+**Literal all-column hostile test:** a 3-qubit native word of 10 original G/CNOT/H/X operations was inverted with exactly 18 existing primitive gates (four G becoming XGX); the phase comparator is THREE existing H/CNOT/H gates, and the full 31-gate palindrome is selfadjoint unitary on ALL EIGHT columns. It satisfies the exact full-prepared-input \(\langle0|V^\dagger\mathrm{CZ}V|0\rangle=1-2P(\mathrm{click})\) and the original complement \(F=4P(\mathrm{click})(1-P(\mathrm{click}))\) (numerical exact-identity tolerance < 5e−14; the Golden inverse algebra is symbolic from p²+p=1). This is a **paid logical-gate checker**, not a new full128/CAR writer or an accepted complete \(K913\) Price.
+
+Reproduce: \`sources/d0_original_golden_ready_coherent_book_2026-10-22/check_native_palindrome_compilation.mjs\`, immutable Git blob \`09b62a47b9530bc56b8c61192000bea3e332fd52\`. The same original READY coherent pressure and all42 source above remain valid; the native inverse-word part is now CONSTRUCTED rather than named abstractly. \`GR_closed=false\`.
