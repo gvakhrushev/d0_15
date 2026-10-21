@@ -4549,3 +4549,12 @@ Validation is one new bounded native entropy checker and its independent
 review, unchanged six-lane artifact/input hashes, and affected structural
 checks. The old numerical receipts are not relabelled. `GR_closed=false`;
 Draft #334 and this existing owner remain open.
+
+
+### 21 October: exact rotation Euler obstruction supersedes pureboost 12-target root plan
+
+Consume [the exact original based-face no-go and source-stratum repair](../../02_REGISTRY/research/A4D_RANK2_PUREBOOST_NO_GO_AND_FULL_SOURCE_EXTENSION_2026_10_21.md) within THIS existing PR #334. The valid 42-to-12 zero test of the earlier spatially homogeneous diagonal pureboost Cauchy theorem is unsatisfiable on the nonflat k2!=0 positive chart: original genuine Ux,J12 source has exact expression (X R)/(2h²)cosh(hk1)[cosh(hk2)-1]*{cosh(hk1)[cosh(hk2)-1]-cosh(hk2)-1} <0. The original null-CAR sheet makes full N1 CQ source proportional to this nonzero affine source independent of jagged fixed PF weights.
+
+CRITICAL next plan correction: applying a 12×18 transverse Lorentz-link right inverse does NOT remain in the prior pureboost stratum, so its 12 target-zero condition no longer implies full42 Euler zero. A pinned native whole-slab controlled example zeros target12 to ~2e-12 while activating forbidden temporal-link and coframe source O(1), and violates exact f_star=0 through source-incompatible fixed-collar jumps. Do NOT continue the false 12-target-only 'full root' track, nor relabel an off-stratum Jacobian rank as physical solvability.
+
+Next scientific owner input: minimum original rotational/offdiagonal coframe completion with ALL original six-based-face derivatives, true temporal Gauss link rows, fixed collar, full local SO^+(1,3) gauge quotient, genuine two CAR scalar gradient histories, SAME original N1 nonlinear CQ price and (only on a genuine double-zero source) PF-neutral first-source. Count max 34 independent geometric quotient source components before the radial equation, up to 33 afterward; compute the ACTUAL connected Jacobian and regularity rather than assume a 12-dimensional inherited source support. Do not create a new detector/price or independent PR. Full Book03 clock/preparation/oldRIGHT/field-writer selection and GR_closed remain OPEN.
