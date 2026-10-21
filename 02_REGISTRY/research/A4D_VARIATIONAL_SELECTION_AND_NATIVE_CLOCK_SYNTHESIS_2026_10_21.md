@@ -14,8 +14,12 @@ several increasingly concrete native realization results. Their composition
 still lacks a **single selected physical execution with its complete price,
 input/controller law, field source, and spacetime evolution**. Equal scalar
 readouts or equal first derivatives do not identify these different objects.
+Book03 §03.25 already selects one master bootstrap functional. The missing
+construction is its native operator/field pullback and source-compatible
+internal elimination, not the invention of an aggregation scalar at the
+action layer. Section 5.5 gives an exact first test of that pullback.
 
-The strongest new composition is the exact double-zero route. The
+The first exact composition is the double-zero route. The
 concurrent original six-face construction gives an actual finite
 \(\Sigma_h=\{f_h=q_h=0\}\), where the complete nonlinear N=1 **ambient
 first source in all42 field directions** equals the correctly typed affine
@@ -29,10 +33,22 @@ packet exhibits a remaining volume-preserving coframe source
  E_v=h\,\frac{e^{-r^2}(3r^2+1)(r^4-3)}{4r^4}+O(h^2),
  \qquad E_v|_{r=1}=-2h/e+O(h^2)\ne0.
 \]
-The useful next geometric target is therefore the remaining **15 coframe
-and 24 proper-link ambient components**, with their gauge dependencies,
-on the same double-zero sheet. Differentiating the action restricted to
-that sheet would return zero everywhere and would miss this equation.
+This excludes that particular projected representative. Differentiating
+the action restricted to the double-zero sheet would return zero everywhere
+and would miss this equation.
+
+The later corrected Cauchy construction at `ad912a97` goes further: it
+changes the transverse coframe radius and one shared boost-link history,
+and exactly solves four diagonal coframe, two matter and six temporal-link
+components. Its first 12 solved raw components are strengthened at
+`9ccdb83c` by exact subgroup/source support: nine off-diagonal coframe
+and three additional spatial-link components vanish identically. Thus
+**24 raw components vanish and only 3 coframe plus 15 spatial-link
+components can remain nonzero**. This is a different representative,
+compatible with the residual just displayed. It solves an initial-value
+problem on a declared homogeneous chart, not arbitrary two-ended collars.
+The exact remaining-source target is now this 18-component complement;
+its independent quotient rank is not obtained by subtracting six again.
 
 A second composition discharges a premise that should no longer be called
 unavailable: the original exact-cell Golden theorem already supplied
@@ -100,6 +116,15 @@ a direct signed-curvature report-cost readout. The latter is a promising
 actual source candidate with a separately declared measured-CQ ledger,
 not an identification with compulsory Book03. Section 5.3 states its scope.
 
+A separate follow-up also repairs an overstrong Book03 aggregation claim.
+Two conditional aggregate formulas differ by half a Shannon-entropy
+variation. The previously proposed variation of a conditional Golden pair
+is not a tangent of that unchanged pair. Section 5.4 instead proves a
+strict nonzero entropy variation on the literal full128 operator family,
+at fixed Golden constant and fixed input. This distinguishes the candidate
+aggregates without claiming two complete physical D0 models or a global
+impossibility theorem.
+
 ## 2. Keep the carriers distinct
 
 | Object | What is established | What cannot be transferred without another theorem |
@@ -110,7 +135,7 @@ not an identification with compulsory Book03. Section 5.3 states its scope.
 | Axial CAR16 block of the original128 instrument | Exact free-input minimum on every finite n>=8 and a joint scale minimum on the informative h^-4 horizon; explicit slower h^-6 mixing scale | Full spatial rank128 preparation, a uniform input inverse, other field rows, or selected Book03 price |
 | Paid moment writer | Exact algebraic moment nodes, common paid bank, source two-jet, and a separate uniform controller | A single autonomous policy choosing the centre as the physical optimum |
 | Fixed vacuum-reference Julia instrument | Linear reconstruction of the original odd curvature from complete positive report probabilities; genuine flat first and crossed mixed report-cost/CQ sources | The original Fourier input, obligatory Book03 Info, full off-shell price equality or field-writer admission |
-| Original rank-two N=1 source | Actual nonlinear scalar valuation; exact double-zero finite representatives with three solved Euler rows; derived native PF sequence for the approximate route | The other 39 ambient components, compatible fixed endpoints, all42 finite roots, or physical Book selection |
+| Original rank-two N=1 source | Actual nonlinear valuation; corrected homogeneous Cauchy branch plus exact source support make 24 raw components zero; derived native PF sequence | The remaining 3 coframe and 15 spatial-link components, arbitrary two-ended collars, all42 finite roots, or physical Book selection |
 | CAR local-clock calculation below | Operator identity and smooth native-stencil consistency on an external spatial frame | Dynamical spacetime, an admitted physical lapse, or canonical gravity constraints |
 
 This table is a composition rule, not a list of new projects. The inherited
@@ -352,6 +377,157 @@ to be that range or cut. Its exact observable identity supplies a much
 more concrete next Book/field-map candidate than another amplitude refit.
 The concurrent author suites are consumed, not rerun or claimed here.
 
+### 5.4 Aggregation changes the source, but its native tangent must be real
+
+Under the separately assumed **complete coherent amplitude binding**, the
+old [Book source owner](sources/d0_variational_selection_synthesis_2026-10-21/inputs/02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/BOOK_SOURCE_BINDING.md)
+already gives
+\[
+ I_\omega=C_\omega+\tfrac12\log_\varphi q_\omega+J,
+ \qquad S_\omega=-\tfrac12\log_\varphi q_\omega-J.
+\]
+The candidate mean path price and coherent norm price are then
+\[
+ M=\mathbb E_q S=\tfrac12H_\varphi(q)-J,
+ \qquad P=-\log_\varphi\|Q_B\|=-J,
+ \qquad \boxed{DM-DP=\tfrac12DH_\varphi(q).}
+\]
+This is a conditional identity, not the derivation of either functional
+from the entire Book03 operator stack. The common offset cancels, whereas
+differentiating a mean price still differentiates its actual weights.
+
+The later [first-source underdetermination memo](A4D_BOOK03_FIRST_SOURCE_UNDERDETERMINATION_THEOREM_2026_10_21.md)
+uses the ordinary conditional Golden law `(p^2,p)` and a trial tangent
+`(-1,+1)` to obtain the number `-1/2`. But the literal original Kraus
+operators are `K_(0j)=p L_j`, `K_(1j)=sqrt(p) L_j` for every ordinary
+nonblank row. Their conditional law is fixed under all changes of `L_j`
+and the input. That trial vector violates the exact ratio constraint;
+its abstract-simplex derivative is not a native pair derivative. Nor do
+two scalar formulas alone establish two models of the full Book03 stack.
+
+The new [native entropy proof](sources/d0_variational_selection_synthesis_2026-10-21/aggregation_audit/PROOF.md)
+repairs the witness using the actual original128 constructor. Fix
+`theta=0`, phases `(i,i,-1,-i)`, all16 CAR grades and a fixed purification
+of `I16/16` inside oldRIGHT128; vary the real operator parameter `nu`,
+including its actual Julia defects. There are exactly 42 positive
+measured labels and 86 identically dark retained labels. Throughout
+`0<nu<sqrt(3)/2`, all41 positive labels other than the ordinary blank grow and
+`q_00>(59/64)^2>1/2`. Consequently
+\[
+ \boxed{H_\varphi'(\nu)
+ =\sum_{i\ne00,\ q_i>0}q_i'(\nu)
+       \log_\varphi\!\frac{q_{00}(\nu)}{q_i(\nu)}>0.}
+\]
+Every ordinary conditional Golden pair nevertheless remains `(p^2,p)`.
+At `nu=1/2` the exact formulas give
+`H_phi'=0.7671427296247743`, hence the candidate aggregate difference is
+`M'-P'=0.38357136481238713`. These decimals are diagnostics; the sign
+is proved on the whole interval without numerical differentiation.
+
+The entropy here is the full history-label Shannon functional, not the
+coherent archive's von Neumann entropy. Its occurrence in the aggregate
+identity depends on the assumed amplitude binding. This proves that the
+candidate aggregates are inequivalent even on an actual supplied operator
+family. Physical writer/controller admission, the relation to compulsory
+Book03 Info and its memory normalization, and a boundary-compatible field
+pullback remain separate obligations. In particular this repair supplies
+neither a whole-D0 no-go nor the missing physical selection rule.
+
+The independent [review](sources/d0_variational_selection_synthesis_2026-10-21/aggregation_audit/REVIEW.md)
+derives the literal Walsh table and repeats the new bounded 100-check
+fixture. Earlier source memos and the six core receipts are preserved.
+
+### 5.5 The bootstrap scalar already exists; its native pullback has an exact test
+
+The literal [Book03 §03.25](sources/d0_variational_selection_synthesis_2026-10-21/inputs/01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md)
+defines one master functional
+\[
+ \mathcal B_N=\beta^{-1}\log\operatorname{Tr}e^{-\beta\Delta_N(V)}
+              -\log\det(I-z\mathcal F_N(V)).
+\]
+It is therefore incorrect to promote §5.4 into a claim that the action
+layer lacks an aggregation rule. The path-price/amplitude interfaces alone
+do not derive this bootstrap or its moving operators. The relevant later
+source memos now carry that explicit correction. Neither `M` nor `P` in
+§5.4 has been identified with this prescribed master functional.
+
+At fixed `beta,z`, a same-execution differentiable pullback would give
+\[
+ D\mathcal B_N=-\operatorname{Tr}(\rho_\beta D\Delta_N)
+ +z\operatorname{Tr}[(I-z\mathcal F_N)^{-1}D\mathcal F_N],
+ \qquad \rho_\beta=e^{-\beta\Delta_N}/\operatorname{Tr}e^{-\beta\Delta_N}.
+\]
+The thermal density is a derivative weight here; an independently prepared
+Gibbs state is not a prerequisite of this formula. Actual moving adjoints,
+pairings, projectors, preparation and observer/clock variations still have
+to be supplied by the same native map.
+
+The [tracefree cancellation gate](A4D_BOOTSTRAP_TRACEFREE_CANCELLATION_GATE_2026_10_21.md)
+composes two owned exact sources. **If** the bootstrap heat is the literal
+soldered Hodge square, then at `L=4`, `beta=log(2)/32`, flat positive
+symbol `Q=I` and rest observer, the metric tangent
+`H_01=E_01+E_10` gives
+\[
+ DB_H[H_{01}]=128/9.
+\]
+The flat Einstein comparator and a pure volume term vanish on this
+tracefree tangent. Stationarity of this candidate bootstrap would require
+\[
+ \boxed{DJ_F[H_{01}]=-128/9.}
+\]
+The existing fixed-Golden-compression two-tick feedback has `DJ_2=0`
+at the ordinary and recorded Golden base operations for every curve
+staying in its declared class with fixed `p,z`. Its theorem is local at
+those base operations; it does not say that every state in that class
+has zero derivative. This particular heat/feedback composition therefore
+fails the flat test. The heat identification is still conditional, and
+a different moving cut or feedback map is not excluded.
+
+This is a concrete construction target: derive `Delta_N(X)` and
+`F_N(X)` from one full execution and test their **sum of sources**, first
+on the exact flat tracefree probe and then on the other field/observer
+directions. A normalized history law, a new Info table or a field-independent
+offset cannot supply the missing feedback derivative. The original
+[heat owner](A4D_NATIVE_SOLDERED_HEAT_SOURCE.md) and
+[feedback owner](A4D_NATIVE_CONSTRAINED_PRICE_SOURCE.md) retain their
+distinct interfaces and physical-admission boundaries.
+
+### 5.6 Two smaller exact interfaces can supply parts of that construction
+
+The concurrent [reverse-source and paid-preparation synthesis](A4D_REVERSE_SOURCE_AND_PAID_PREPARATION_SYNTHESIS_2026_10_21.md)
+removes two excessive input requirements. For its **defined normalized
+complementary feedback component**, the full microscopic amplitude is
+unnecessary: with `N=W*W`, `B=W*P W` and `M=(1-z)N+zB`, the owned formula is
+\[
+ J=r_{\rm R}(\log\det N-\log\det M),
+\]
+\[
+ DJ=r_{\rm R}\operatorname{Tr}\{N^{-1}DN
+ -M^{-1}[(1-z)DN+zDB+(B-N)Dz]\}.
+\]
+Thus two actual effects and their full jets suffice; `DB` includes the
+moving cut derivative. The spectator factor `r_R` is allowed only when
+oldRIGHT really is spectator. A finite Golden tomography reconstructs
+real `N,B` under the declared full input/cut access. A single prepared
+output is insufficient, and identifying this component with the bootstrap
+feedback remains a separate map.
+
+For its separate coherent-E input price, one complete paid rational
+catalogue, real Bell factories and explicit retained output tags outside
+E implement
+\[
+ \mathcal P_k=B_{\rm catalogue}
+       +\Gamma F_n^E(U_k\rho_0U_k^*),\qquad \Gamma>0.
+\]
+The common baseline includes actual preparation failures, prefix/abort
+entropy and charges. Without the physical tags the entropy decomposition
+need not hold. This supplies finite paid input competitors from one
+common boundary input; it does not select `k` autonomously, change the
+oldRIGHT spectrum, or justify subtracting different catalogue baselines.
+These two interfaces can be used within the same construction only after
+their full controller, cut and valuation are identified. Their respective
+sources cannot simply be added and renamed the compulsory Book03 price.
+
 ## 6. Positive route I: exact double-zero geometry and native PF control
 
 ### 6.1 The nonlinear source becomes affine on an actual finite sheet
@@ -383,7 +559,7 @@ The raw uncentered constant would instead contribute
 Neither statement removes preparation derivatives of B0 or implicit PF
 dependence inside the actual coframe/material dictionary.
 
-### 6.2 The sheet is nonempty and solves three actual rows
+### 6.2 The first sheet construction solves three actual rows
 
 The concurrent construction keeps the original noncommuting proper-boost
 links and changes one real volume-preserving coframe coordinate:
@@ -455,10 +631,11 @@ A concrete next test is the coupled, gauge-aware system
  \qquad D(f,q)(y_h)\,\delta y=0,
 \]
 together with actual current, volume and fixed-collar compatibility.
-The concurrent local Lorentz quotient theorem supplies six exact vertical
-Noether relations among the forty geometric components. Thus the thirty-nine
-remaining explicit components contain at most thirty-three quotient-geometric
-equations after removing the six gauge directions. These identities couple
+For this earlier three-row representative, the concurrent local Lorentz
+quotient theorem supplies six exact vertical Noether relations among the
+forty geometric components. Its thirty-nine remaining explicit components
+therefore contain at most thirty-three quotient-geometric equations after
+removing the six gauge directions. These identities couple
 neighboring link sources; they do not permit discarding six arbitrary rows
 or assuming a nonsingular 39 by 39 Jacobian. The full slab quotient and
 its actual rank still have to be constructed.
@@ -471,7 +648,69 @@ history cannot settle these connected boundary conditions.
 Proof and 17 exact symbolic controls:
 [COFRAME_RESIDUAL.md](sources/d0_variational_selection_synthesis_2026-10-21/late_application/COFRAME_RESIDUAL.md).
 
-### 6.4 The approximate route now has a derived original PF sequence
+### 6.4 The Cauchy branch and exact support leave eighteen raw components
+
+The [corrected diagonal Cauchy and temporal Gauss theorem](A4D_RANK2_EXACT_DIAGONAL_CAUCHY_AND_TEMPORAL_GAUSS_2026_10_21.md)
+at `ad912a97301c54dddc664d3353009fd447b7788e` retains the actual nonlinear
+source and two real scalar fields, but uses
+`e=diag(X,Y,R,R)` and corrects a shared link history. On `f=q=0`, the true
+scalar current is `J_t=epsilon/(XY)`. Its conservation implies `XY=const`;
+the inherited initial choice sets `XY=1`, with actual increments
+`p_t=epsilon X^2` and `p_x=epsilon`.
+
+All four diagonal coframe derivatives are taken independently with those
+actual scalar increments held fixed, before imposing the ansatz. Two
+algebraic equations determine `X,R`; the remaining diagonal relation gives
+one recurrence for `k_1(t+h)` shared by neighboring faces, with `k_2(t)`
+prescribed. Its limiting algebraic Jacobian is
+\[
+ -\frac{2(r^4-2r^2-1)e^{-3r^2/4}}{r^{7/2}}>0,
+ \qquad 0<r<\sqrt{1+\sqrt2}.
+\]
+On compact intervals inside this chart, the uniform implicit-function
+theorem and discrete error estimate produce a finite branch `O(h)` from
+the old seed. It obeys `f=q=0`, all four diagonal coframe equations and
+both scalar equations exactly. On this double-zero homogeneous
+diagonal/pure-boost branch, the true outgoing and predecessor face contributions cancel
+in all six temporal-link Gauss components.
+
+These first results make 12 raw components vanish. The same source's
+§7 at `9ccdb83ca9a72f279bae5e445cfa4309efa2e5ef` then uses the exact
+finite subgroup support: a temporal face lies in its one boost direction;
+a spatial `(i,j)` face lies in the `so(1,2)` subalgebra on `(0,i,j)`.
+The original diagonal coframe's complementary wedges permit only four
+diagonal and three `(a,mu)=(1,0),(2,0),(3,0)` coframe source entries.
+The other nine are identically zero. In addition, the spatial-link
+rotations `J23 at U_x`, `J13 at U_y`, and `J12 at U_z` cannot enter the
+projected curvature component and have identically zero source.
+
+On the exact Cauchy double-zero branch this gives **24 zero raw
+components**: 9 structural coframe, 9 structural link, 4 solved diagonal
+coframe and 2 solved scalar. The remaining ambient covector has at most
+**3 coframe plus 15 spatial-link components**. The checker explicitly
+retains nonzero allowed off-diagonal and spatial-link sources. This is
+an exact support reduction, not a rank theorem or an all42 root. The six
+Noether identities and the structural Gauss zeros are not automatically
+independent; no further reduction follows by subtracting six again.
+Arbitrary fixed positive PF weights are compatible with this statement
+on `f=q=0`, where the nonlinear source slopes are constant. A temporal
+pair cancellation off that sheet would require its own coefficient check.
+The support statement holds in this homogeneous diagonal/pure-boost sector.
+A correction leaving that sector can activate previously zero components;
+it must preserve them or control them simultaneously. Eighteen observed
+residual slots are not a proved autonomous eighteen-by-eighteen inverse.
+
+This construction removes the old displayed coframe residual on its new
+representative: both `R` and `k_1` change, and the determinant is now
+`R^2`, not the previous fixed `r^2`. It does not contradict §6.3, whose
+counterexample held those quantities fixed. The terminal value of `k_1`
+is the output of an initial-value recurrence; arbitrary terminal collar
+data are not solved. The next geometric correction must consume this
+exact Cauchy branch and its eighteen-component ambient source, rather
+than repeat the older three-row projection. The concurrent proof and
+checker are consumed here without rerunning their large source suite.
+
+### 6.5 The approximate route now has a derived original PF sequence
 
 The packet's original weak estimate remains useful away from exact
 \(\Sigma_h\). In its null-source notation let
@@ -664,8 +903,8 @@ interfaces, using the existing owner:
 
 | Priority | Required concrete result | A failure that terminates this candidate |
 |---|---|---|
-| 1. Physical execution and selected price | Actual paid controller/return/active-cut construction with complete field-dependent source; any amplitude binding verified on the whole sector | Same-range initialized-cut invariance, uncharged code selection, or a source absent from the full price |
-| 2. Exact geometric completion | Solve the 15+24 remaining ambient components on the actual double-zero sheet with gauge/current/collar compatibility, or prove a full coupled correction theorem | Restricted gradient of the constant sheet action, the explicit nonzero E_v, or an unproved whole-slab inverse |
+| 1. Physical execution and bootstrap pullback | Derive the already selected bootstrap's moving heat/feedback operators from one paid controller/cut/history map, with all internal and field sources | Failure of the conditional flat cancellation target, same-range cut invariance, an inadmissible entropy tangent, or unpaid selection |
+| 2. Exact geometric completion | Solve the 3 coframe and 15 spatial-link ambient source components on the corrected Cauchy branch, with true gauge/current/collar compatibility, or prove a full coupled correction theorem | Restricted gradient of the constant sheet action, a retained off-diagonal source, support confused with rank, or an unproved two-ended slab inverse |
 | 3. Physical dynamics and transport | Selected stationarity or admitted source-compatible clock/coframe operations, followed by all-row refinement on the derived native PF sequence | Reuse of the excluded minimum, omitted spin/strain, wrong adjoint, uncharged depth or a dimension-amplified trace source |
 | 4. Identification with GR | Verify the chosen reconstruction hypotheses, common matter coupling, constraint propagation and physical scale/descent | A configured Einstein family or a single normal-normal bracket substituted for universal dynamics |
 
@@ -675,6 +914,22 @@ that the clock route is the only possible route to GR. They specify why
 another unaltered scalar minimum, input search, or same-range amplitude
 refit would repeat an already decided calculation.
 
+There is also an existing sufficient shortcut for the last identification
+step: the [single Golden-step rigidity theorem](A4D_GOLDEN_DISCRETE_BLOWUP_CONDENSED_GR_2026_10_20.md).
+If the **same selected** reduced gravitational tensor is metric-only,
+local under restrictions and open diffeomorphisms, differentiable at flat
+metrics, off-shell conserved, and obeys the actual physical metric law
+`E[phi^2 g]=E[g]`, its normal-coordinate blow-up proves `E=aG` on the
+common chart. A second-order hypothesis is not separately needed in that
+theorem. Equivalently, a properly reduced local Diff-invariant action with
+`I[phi^2 g]=phi^2 I[g]+constant/boundary` and smooth flat source supplies
+the weight and Ward premises. This can replace an all-curved matching
+campaign **after** those source and descent premises are proved. The
+internal Golden archive scale is not the physical metric law, and the
+owned bare HJR source fails that law on its tested carrier. The theorem
+is a conditional route to use, not a licence to rename the configured
+Einstein family as the compulsory bootstrap dynamics.
+
 ## 9. Evidence and replay
 
 The [source packet](sources/d0_variational_selection_synthesis_2026-10-21/README.md)
@@ -683,9 +938,12 @@ applications, six bounded checkers, original receipts and independently
 scoped reviews. Twenty input files retain the original scientific ref;
 four separately pinned late inputs fix the new application boundary.
 One portable wrapper verifies both sets of source hashes and replays the
-six receipts. General proofs and their hypotheses remain separate from
-finite algebraic/numerical fixtures. The copied historical reviews retain
-their original hashes; final reviews identify the clarified final artifacts.
+six receipts. The later `aggregation_audit` is a separate proof/checker/
+receipt/review follow-up against two already frozen native sources. It does
+not alter the six-entrypoint wrapper or its 35 pinned artifacts. General
+proofs and their hypotheses remain separate from finite algebraic/numerical
+fixtures. Historical reviews retain their exact earlier scope and hashes;
+the follow-up review identifies the new integrated prose separately.
 
 No broad historical factory suite or full Lean build is required for this
 analytical source packet. No Book axiom, main theorem status, primary

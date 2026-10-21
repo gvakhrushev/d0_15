@@ -470,3 +470,31 @@ Use these results only in the existing same-execution source/constraint
 construction and its eventual coupled gauge/boundary correction. Do not
 repeat the already established field descent, coherent input search or
 same-range amplitude refit. `GR_closed=false`; PR #334 stays Draft.
+
+
+## Bootstrap pullback and corrected native aggregation witness — 21 October 2026
+
+The [updated synthesis](A4D_VARIATIONAL_SELECTION_AND_NATIVE_CLOCK_SYNTHESIS_2026_10_21.md)
+keeps the literal Book03 section 03.25 master functional fixed. There is no
+missing aggregation scalar at that action layer. The open construction is
+one actual map to its moving heat, feedback, pairing and complete field/
+internal jets. The conditional soldered-heat test fixes the nonzero target
+`DJ_F[H01]=-128/9`; zero two-tick Golden feedback at its involutive base
+operations cannot cancel it. No generic all-state feedback-zero theorem
+is used.
+
+The [new full128 entropy witness](sources/d0_variational_selection_synthesis_2026-10-21/aggregation_audit/PROOF.md)
+and its independent review reject the fictitious conditional-pair tangent
+`(-1,+1)`. At fixed p and input, varying the actual nu/Julia-defect family
+gives `H_phi'(nu)>0` on `0<nu<sqrt(3)/2`. This repairs only the conditional
+mean/norm aggregate comparison; neither aggregate is thereby identified
+with the prescribed bootstrap or a complete physical D0 model.
+
+The concurrent exact Cauchy/support theorem now gives 24 zero raw rows and
+an 18-slot possible residual (3 coframe plus 15 spatial-link) in its stated
+homogeneous sector. Preserve its already-zero equations during correction;
+leaving the sector can reactivate them. Source support is not Jacobian
+rank, a whole-slab inverse or a solution of arbitrary terminal collars.
+Use the existing reverse-effect and paid-input maps within this same
+bootstrap pullback; do not repeat scalar amplitude fitting, derive a new
+action from entropy alone, or promote physical GR closure. `GR_closed=false`.

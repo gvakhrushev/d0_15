@@ -4515,3 +4515,37 @@ NEXT CONTRACT: build one connected temporal-slab compatible source map for THESE
 The 12 remaining necessary/sufficient acceptance SOURCE values are Ux(K1,K2,K3,J12,J13), Uy(K2,J12,J23), Uz(K2,K3,J13,J23). All other 30 source components are either proven zeros or uniquely reconstructed from the twelve by the full native Ward identity. Numerically these twelve are NOT YET ZERO. The constructive diagonal coframe Cauchy branch/2 true CAR histories do not solve spatial Cartan equations. This is not 12 freely independent dynamical DOFs on an arbitrary four-dimensional field.
 
 **NEXT ONLY:** build a gauge/boundary-compatible whole-slab solve of these original TWELVE spatial source constraints on the same exact f=q=0 geometry, with the actual positive AF/PF weights, no unselected sigma swap, both original real scalar histories and a physically declared temporal collar. Verify the original 42 full Euler after obtaining the target12 zero; do not infer roots from source rank, local Noether/minor, a finite O(h) residual, or a fitted action. Retain physical Book03/oldRIGHT/clock/controller/preparation/field writer selection and GR_closed=false.
+
+
+### 21 October: native aggregation witness and bootstrap pullback correction
+
+The same [variational synthesis](../../02_REGISTRY/research/A4D_VARIATIONAL_SELECTION_AND_NATIVE_CLOCK_SYNTHESIS_2026_10_21.md)
+now consumes the exact Cauchy source-support reduction at `9ccdb83c`:
+24 raw components vanish in the declared homogeneous sector; only three
+coframe and fifteen spatial-link source slots can remain. This is support,
+not a quotient-rank or autonomous 18-by-18 inverse theorem, and a correction
+outside the sector must control the reactivated rows and the actual collar.
+
+A separate [native entropy proof and review](../../02_REGISTRY/research/sources/d0_variational_selection_synthesis_2026-10-21/aggregation_audit/PROOF.md)
+repairs the conditional Golden witness: its pair `(p^2,p)` has zero
+conditional derivative, so `(-1,+1)` is inadmissible. The literal128
+operator family instead has `H_phi'(nu)>0` for `0<nu<sqrt(3)/2` at fixed
+input and p, retaining all outcomes. The conditional aggregate difference
+`DM-DP=DH_phi/2` is consequently nonzero on a genuine supplied family;
+this does not establish two physical D0 models or controller admission.
+
+Book03 section 03.25 ALREADY defines the unique master bootstrap scalar.
+The missing parent substitution is its same-execution moving heat/feedback
+pullback and internal/field source identification, not a newly chosen
+aggregation action. Under the stated soldered-heat identification, the
+flat tracefree probe requires `DJ_F[H01]=-128/9`; the fixed-Golden two-tick
+source is zero at its specified ordinary/recorded base operations and
+cannot provide that cancellation. The already-owned reverse N,B/jet
+interface and paid tagged-input adapter remain usable with their distinct
+cuts and access hypotheses. Keep the conditional Golden metric-rigidity
+route; no physical selector or scale law is inferred.
+
+Validation is one new bounded native entropy checker and its independent
+review, unchanged six-lane artifact/input hashes, and affected structural
+checks. The old numerical receipts are not relabelled. `GR_closed=false`;
+Draft #334 and this existing owner remain open.
