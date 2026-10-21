@@ -160,3 +160,12 @@ The new [standalone checker](check_full42_temporal_gauge_deflation.py) consumes 
     OPENBLAS_NUM_THREADS=1 python3 02_REGISTRY/research/sources/d0_star_rank2_seam_2026-10-21/check_full42_temporal_gauge_deflation.py --intervals 5
 
 This is a finite numerical existence WITNESS without interval enclosure, not true native absolute Book03 H+J+R selection, actual spatial arbitrary AF descendant PF, an independently writable compiler or uniform h→0 Einstein theorem. The shrinking reduced min singular values (n3 0.001226, n4 0.000525, n5 0.000273) are recorded rather than presented as a uniform inverse.
+
+
+### Exact original time-local block Schur structure after gauge reduction
+
+The SAME chosen local N1 CQ price decomposes into actual original based time-cell contributions involving only time nodes j and j+1 (all original six G2STAR plaquettes and TWO CAR temporal forward gradients retained). Thus the exact first Euler at j depends only on j−1,j,j+1, and the full gauge-reduced source Jacobian is EXACTLY block tridiagonal. The valid time-block sizes are (36,...,36,42), not forty-two everywhere or an invented 12-source pureboost model. The exact Schur recursion is D1=A1, D_(j+1)=A_(j+1)−C_j D_j^−1 B_j when the genuine intermediate pivots are invertible.
+
+The new [original source and Schur control](check_temporal_block_schur_source.py) independently differentiates the original N1 analytic 16+24+2 field source at Cauchy seed on n4/n5 gauge slices. Forbidden time-distance>1 blocks vanish exactly numerically, and actual block forward/backward substitution agrees with dense pivoted solves within 3.8e-10. Intermediate Schur condition numbers exceed 5e5 (n4) and 1.3e6 (n5); these tests DO NOT prove a uniform inverse or admit a physical full Book03 price. The blocked Jacobian is the correct future Krawczyk/Green input, not an already certified interval root.
+
+    OPENBLAS_NUM_THREADS=1 python3 02_REGISTRY/research/sources/d0_star_rank2_seam_2026-10-21/check_temporal_block_schur_source.py
