@@ -111,3 +111,24 @@ Two independent narrow author-executed V8/BigInt checkers are included:
 - sources/d0_native_golden_ready_cq_source_2026-10-21/check_uniform_fraction_field_herald.mjs: exact all50 count-range three-way dyadic partitions, common LCM ready, actual site39, general Q(p) three-way example, closed-square endpoint factors and their full logarithmic first derivative.
 
 Author checks pass in independent V8 isolates. All interval sign tests use genuine BigInt rational arithmetic; quoted decimals are only displays. No new large all42 replay, Lean run, independent scientific review or acceptance.
+
+## F. The literal normalized reference removes the SCALAR code anchor, not Book03's physical operator cut
+
+The full completed terminal alphabet has an absolute NATIVE code reference, not a freely scaled likelihood table:
+\[
+\mu_\gamma=p^{\ell(\gamma)} \quad\text{on every unready leaf},\qquad
+\mu_{\gamma b}=p^{\ell(\gamma)}p^{1+b}
+ \quad\text{on every READY leaf and }b\in\{0,1\}.
+\tag{F1}
+\]
+The entire \(\mu\) is normalized exactly because the original complete first-crossing+two-extra-draw tree is prefix-free and the new binary report code obeys \(p+p^2=1\). Its actual full measured law satisfies \(P_\gamma=\mu_\gamma\) on unready leaves and \(P_{\gamma b}=p^{\ell(\gamma)}r_z^b(1-r_z)^{1-b}\) on READY leaves. Thus the **fully normalized operational likelihood-ratio gain per branch** is explicitly
+\[
+\mathcal I_{\gamma b}^{\rm rel}
+ =\log_\varphi\frac{P_{\gamma b}}{\mu_{\gamma b}}
+ =\log_\varphi\frac{r_z^b(1-r_z)^{1-b}}{p^{1+b}},
+ \qquad \mathcal I_{\gamma}^{\rm rel}=0\quad(\gamma\text{ unready}).
+\tag{F2}
+\]
+The branch score and its entire actual field source are fixed by the completed code and measured probabilities, with no site-dependent/field-dependent scalar normalization to fit. Averaging \(\mathcal I^{\rm rel}\) against the actual complete law yields EXACTLY the KL in (B2): \(\mathbb E_P\mathcal I^{\rm rel}=D_\varphi(P\Vert\mu)\).
+
+**Conditional Book test, not a promotion:** If an ACTUALLY admitted same-history Book03 vertex-gain contract equated its branchwise Info to this operational log-code-relative gain, then \(S_\gamma=C_\gamma-\mathcal I_\gamma^{\rm rel}=-\log_\varphi P_\gamma\) and its positive scalar Book weights would be exactly \(P_\gamma\), with no unowned common normalization on THIS measured prefix tree. This is not the same functional as the measured expected code-minus-POINTER-entropy (B2); the two notions of Info may not be silently interchanged. The Book03 noncommutative memory classes, actual return/active cut, absolute H+J+R determinant, factory/generator price, observer and independent field-writer remain separate. A normalized stochastic output instrument with zero blank-return corner can have no desired closed-source response even though F2 is exact; the paired-epoch cut requires its own REAL physical adoption. F2 therefore supplies one exact native branch-Info QUESTION to test, not its compulsory physical answer.
