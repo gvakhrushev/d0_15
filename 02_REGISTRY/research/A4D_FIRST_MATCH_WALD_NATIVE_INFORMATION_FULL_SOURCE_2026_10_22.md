@@ -208,3 +208,54 @@ The still-open hard arrow is **the compulsory operator/action identification**:
 Do not call a measured entropy an operator trace, the unique harmonic score compulsory Book Info, or a mathematical conditional stopped programme physically selected. \`GR_closed=false;\ full_D0_price_selected=false;\ raw216_closed=false\`.
 
 **Narrow repro:** \`sources/d0_first_match_wald_2026-10-22/check_first_match_wald.mjs\` validates whole-prefix probability, original Golden 0/10 reference Kraft/KL, true capped Price–Info/source boundary, Fisher factor, and the native rare-report native K diagnostics. \`sources/d0_first_match_wald_2026-10-22/check_harmonic_information.mjs\` independently tests the harmonic unique source and all finite-K truncation controls. These are new bounded mathematical tests, NOT original native full128/HJR or expensive 42-root reruns.
+
+
+## 7. Two SAME-HISTORY negative controls: Book blank-cut blindness and unchanged Golden KL minimum
+
+**A first-match Price−Info identity cannot by itself be substituted into the original Book03 complement.** On the full coherent Stinespring space with a genuine initial blank \(|\emptyset\rangle\) and one orthogonal output basis vector \(|\gamma\rangle\) for EVERY complete stopped word, prepare
+
+\[
+ U_y|\emptyset\rangle
+ =\sum_{\gamma\in\Gamma}\sqrt{P_y(\gamma)}\,|\gamma\rangle,
+ \qquad \langle\emptyset|\gamma\rangle=0.               \tag{17}
+\]
+
+The output is normalized, so \(U_y\) has a unitary extension. On the SAME complete outcome law, choose the actual **initialized-blank cut** \(P_{\rm blank}=|\emptyset\rangle\langle\emptyset|\). Its true Book feedback is
+
+\[
+ \boxed{
+ P_{\rm blank}U_y^\dagger(I-P_{\rm blank})U_yP_{\rm blank}
+ =P_{\rm blank},\quad
+ J_{\rm blank}=-\ln(1-\zeta),\quad
+ D_yJ_{\rm blank}=0\quad\text{for ALL fields}.}           \tag{18}
+\]
+
+Meanwhile the COMPLETE mean Cost−measured-CQ-Info is \((m+1)S_1(y)\) and can have nonzero field source. A literal 3×3 Householder realization of \(U_y\) on two terminal labels is checked in the accompanying bounded script. This is a **counterexample to automatic Book-source transport**, not to the stopped native CQ theorem. The physical Book projector can be different, but that difference requires a sourced native active-cut law, not a renamed blank.
+
+**A genuine prospective global minimum does not follow either.** For the original Golden \(0/10\) observed code the FULL stopped law has price
+
+\[
+ S_{\rm firstmatch,0/10}(r)
+ =3D_\varphi(\operatorname{Bern}(r)\Vert
+             \operatorname{Bern}(p^2))\ge0,               \tag{19}
+\]
+
+with the UNIQUE global minimum \(r=p^2\), not the original finite two-query report near \(r_0\approx1.85\cdot10^{-6}\). This inequality is exact over the entire \(0<r<1\) chart. The first-match verification preserves all fixed-collar critical field source equations **if they belonged to the originally declared per-trial price**, but it does not generate an extra physical principle preferring the Einstein root or preventing a native controller from choosing the Golden prior when admissible at the same complete task/cost.
+
+Thus the stopped-law result upgrades **native operational information generation and exact prospective source transport** but leaves the **physical Book03 selection/active return projector** as a sharply falsifiable independent arrow. In particular an equal-clock/blank-cut experiment (18) refutes any attempted claim that correct CQ entropy and complete word retention alone force the Book03 source.
+
+## 8. Hard finite-horizon distinction
+
+The harmonic score \(\mathbb E[H_{\min(N,K)}]/\ln\varphi\) from §4 is a finite polynomial in \(r\) for each finite K, with an explicit positive tail. It is **NOT equal** to the Shannon entropy of the entire capped path \(\Gamma_K\), which is \(L_K(r)h_\varphi(r)\) by Wald and still contains actual logarithms of the complete word probabilities. Do not replace one by the other when valuing the compulsory information ledger. The equality (12) is exact for the **unbounded but almost-surely terminating** score, while the exact finite capped Price−Info (14) is a different, still complete pointer entropy functional.
+
+Moreover \(\mathbb E T=3\) for the binary uncapped task does NOT give a uniform bound on higher clock/heat moments. Writing \(N=T-2\),
+
+\[
+ \mathbb E N=1,\quad
+ \mathbb E N^2=
+ \frac{(1-r)(2-r)}r+\frac{r(1+r)}{1-r},\quad
+ \operatorname{Var}T=
+ 2\left(\frac1r+\frac1{1-r}\right)-6.                \tag{20}
+\]
+
+The true native \(r\approx1.85\cdot10^{-6}\) has very large clock variance, despite the constant mean. All physical Book03 moving heat, stage/cap, oldRIGHT and verification-time derivatives are therefore still compulsory and cannot be discarded by (2) or (7).
