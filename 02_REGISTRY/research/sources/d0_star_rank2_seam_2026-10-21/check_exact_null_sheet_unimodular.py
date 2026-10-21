@@ -159,6 +159,23 @@ def grid_test(lo,hi,n):
                       abs(float(master.fy(x,y)/master.b)-1))
     mid=n//2
     eco,elink=full_first_40(cells[mid-1],cells[mid],cells[mid+1],h)
+    # Zero scalar star curvature is NOT zero full holonomy. Two independent
+    # REAL original scalar gradients give two DISTINCT null covectors.
+    selected=cells[mid]
+    U=selected['u']
+    P23=U[2]@U[3]@np.linalg.inv(U[2])@np.linalg.inv(U[3])
+    curvature_nontrivial=float(np.linalg.norm(P23-np.eye(4))/h**2)
+    metric_inverse=np.linalg.inv(selected['e'].T@np.diag([1,-1,-1,-1])@selected['e'])
+    p1,p2=selected['v']
+    ell_plus=(p1+p2)/np.sqrt(2)
+    ell_minus=(p1-p2)/np.sqrt(2)
+    null_error=max(abs(ell_plus@metric_inverse@ell_plus),
+                   abs(ell_minus@metric_inverse@ell_minus))
+    stress=np.outer(p1,p1)+np.outer(p2,p2)
+    if not (curvature_nontrivial>.01 and null_error<1e-13
+            and np.linalg.matrix_rank(stress)==2):
+        raise AssertionError(('nonflat two-null-stream witnesses',
+                              curvature_nontrivial,null_error))
     return {
        'r_interval':[lo,hi],'n':n,'h':h,'f_star_max':ferr,
        'q_CAR_max':qerr,
@@ -171,6 +188,9 @@ def grid_test(lo,hi,n):
        'one_local_radial_coframe_euler':'ZERO via x=y=0',
        'remaining_16_coframe_max_midpoint':eco,
        'remaining_24_link_h_scaled_max_midpoint':elink,
+       'nontrivial_spatial_based_holonomy_norm_over_h2':curvature_nontrivial,
+       'two_independent_null_streams_max_error':float(null_error),
+       'original_two_real_field_stress_rank':int(np.linalg.matrix_rank(stress)),
        'PF':'alternating 1 and 2 diagnostic, NOT actual AF descendant weights'}
 
 def main():
