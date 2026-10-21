@@ -10342,6 +10342,30 @@ preparation, address control, failures, clock/work and absolute Book03
 valuation on one process. This is a scoped route boundary and the immediate
 physical blocker. GR_closed=false.
 
+### 21 October: causal clock minima and source descent after internal stationarity
+
+The [causal clock and stationary descent synthesis](A4D_CAUSAL_CLOCK_MINIMUM_AND_STATIONARY_SOURCE_DESCENT_2026_10_21.md)
+strengthens the paired-epoch conditional source transport. With a retained
+initial epoch, no active return into it, one complete factorizing word and
+the stated spectator heat/preparation/normalizer interface, every actual
+clock-cut minimum has the same full feedback value and physical first source as
+the data programme plus its retained clock offset. The clock basis need
+not be uniquely selected. For diagonal retained epochs the feedback
+preference also holds for phase-dependent words; the exact remaining-price
+test is K_endpoint-K_dark<=128 logdet(I+z A_0* A_0/(1-z)).
+
+The same composition permits metric source descent on the selected smooth
+internal critical object, rather than all paid histories. A physical
+Golden lift whose full action defect has zero first jet there transports
+the reduced source; a derived squared internal-Euler defect is sufficient.
+The existing Golden rigidity theorem then applies at its original metric,
+Diff, flat-regularity and Ward hypotheses. Pure clock stationarity alone
+does not suffice: two cuts of one complete finite unitary have different
+field sources. Actual full Book valuation, admission of the causal
+comparison class, other internal roots and native field stationarity
+remain the physical application. The original Einstein saddle, all40+2
+recovery and raw216 scope are preserved; GR_closed remains false.
+
 
 ### Native READY measured-prefix source and exact rational PF coefficient admission — 21 October
 

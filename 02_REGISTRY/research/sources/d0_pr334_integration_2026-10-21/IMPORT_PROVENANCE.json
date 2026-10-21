@@ -68,5 +68,112 @@
   },
   "preflight_parent": "d33c7bf9d78def64bcfb7d6e55ea4c8d48cacc74",
   "remote_convergence": "The full128 complement result proves common right-coordinate invariance for its normalized determinant. The imported operator-Doob tests concern a field-dependent normalizer and induced input change. The latest common-map gate marks the physical writer from the common initial history UNDEFINED in the specified Book03 route; this is scoped to that route.",
-  "additional_preserved_pr_head": "b60a111b43f723a841d253b1d5bd9650c46b2cf8"
+  "additional_preserved_pr_head": "b60a111b43f723a841d253b1d5bd9650c46b2cf8",
+  "followup_integrations": [
+    {
+      "attachment": "d0_15-native-closure-handoff-2026-10-21.zip",
+      "archive_sha256": "6f3f8fdc2cbb44f3da116cf5168f95ee76f93e2b45066b6600ec78f25fdf1136",
+      "archive_source_base": "ccadc27d360353c38467b1e0cceae2cd883c47b4",
+      "patch": "handoff/apply-to-pr.patch",
+      "patch_sha256": "99d313d13f679bc3593be8d12154c9463dae54086f5d8ad3b96905f2c1469cb9",
+      "checked_and_applied_to_pr_head": "d8c3162264c005118eca51c9b300d30151be517f",
+      "applied_paths": "15 new proof/checker/receipt files and one additive 24-line MEMO section",
+      "archive_integrity": {
+        "zip_crc": "PASS",
+        "manifest_files_sha256_and_bytes": "PASS 16/16",
+        "SHA256SUMS": "PASS 20/20",
+        "patch_preflight_on_pr_head": "PASS"
+      },
+      "replay": {
+        "runtime": {
+          "python": "3.11.15",
+          "sympy": "1.12.1",
+          "numpy": "2.2.6",
+          "scipy": "1.16.3"
+        },
+        "check_counts": {
+          "absolute_anchor_budget": 27,
+          "exact_golden_writer_field": 28,
+          "golden_paid_cost_herald": 43,
+          "golden_timestamp_price_defect": 52,
+          "two_letter_golden_cost_herald": 61
+        },
+        "normal_equals_optimized": true,
+        "non_environment_receipts_within_abs_tol_1e-12": true,
+        "max_observed_receipt_delta": 5.2e-18,
+        "runtime_warning": "Timestamp checker emits RuntimeWarnings from the imported existing check_uniform_book_source.py:71; its bounded numerical receipt remains within 1e-12."
+      },
+      "scope": {
+        "Book03_Info_selected": false,
+        "independent_acceptance": false,
+        "GR_closed": false
+      }
+    },
+    {
+      "attachment": "d0_native_preparation_closure_2026-10-21.zip",
+      "archive_sha256": "c2a72fa3361dd0f09b2b17a0595e7ce2dba9769640b58f6cede7fd9a70468f46",
+      "status": "Already published in this PR; no duplicate files applied.",
+      "publication_commit": "fedbb1ec0386ebd045363c3a64b87966f4665850",
+      "publication_commit_is_ancestor_of_pr_head": "2b8c4860e831064bb7ddb77339a23c9aef5452f5",
+      "repository_archive_files_byte_identical": 10,
+      "replay": {
+        "runtime": {
+          "python": "3.11.15",
+          "sympy": "1.12.1",
+          "numpy": "2.2.6",
+          "scipy": "1.16.3"
+        },
+        "status": "PASS",
+        "checks": 69,
+        "normal_equals_optimized": true,
+        "max_saved_receipt_float_delta": 5.4704e-13,
+        "runtime_warning": "Imported existing check_uniform_book_source.py:71 emits RuntimeWarnings in this environment; both modes exit 0 and return identical JSON."
+      },
+      "scope": {
+        "native_Book03_Info_selected": false,
+        "uniform_mesh_gap_proved": false,
+        "independent_review": false,
+        "GR_closed": false
+      }
+    }
+  ],
+  "integrated_route_status": {
+    "GR_closed": false,
+    "physical_Book03_Info_selected": false,
+    "original_native_Book03_route_writer": "UNDEFINED at the original Book03/HJR gate; the paid moment writer and measured READY sampler are alternative interfaces not yet transported into that stack",
+    "alternative_paid_moment_writer": "Constructed on its declared addressed Golden/CQ interface; compulsory Book03 cut/heat/Info/controller binding and physical refinement remain open",
+    "measured_Golden_READY_source": "Complete measured CQ prefix Cost-Info and inverse-PF all42 source; does not provide the actual moving CAR/holonomy source input or Book03 pathwise Info",
+    "next_missing_interface": "Same-history CAR/holonomy source-effect query and complete branchwise Book03 valuation on the READY tape; for the separate Golden/Beatty selector, prove paid-history-to-return-time equivariance",
+    "native_full128_preparation": "Inverse-square invariant DATA state and exact induced first jet under stated recycling assumptions; exact port-cost component retains initial boundary, but other charges and compulsory Book03 Info remain unassigned.",
+    "rank2_full_N1_source": "Correctly retyped same nonlinear N=1 price gives a bounded finite O(h) 16+24+2 source sequence on the tested non-VSI carrier; the first material row is nonzero, so this is not an exact root.",
+    "whole_slab_Cartan_test": "Coherent three-slice correction has O(h) coframe source; isolated central-link correction leaves an O(1) coframe source. Neighbor-link rows and a coupled exact root remain unsolved."
+  },
+  "concurrent_pr_update_review": {
+    "observed_head": "2b8c4860e831064bb7ddb77339a23c9aef5452f5",
+    "preserved_results": [
+      "Paid finite moment-field writer, counted-CQ price, and controlled all42 source secants.",
+      "Original stopped Golden READY history with exact measured prefix-code Cost minus CQ entropy cancellation and inverse-PF all42 source.",
+      "Correctly sign-retyped nonlinear N=1 rank-two price, with full finite 16+24+2 O(h) source and a nonzero material row.",
+      "Scoped whole-slab compatibility test: coherent three-slice link transport avoids the isolated-link O(1) coframe spike, but does not solve neighboring link rows.",
+      "Exact covariant temporal link-difference identity and original-owner whole-CQ replay README; the new README is an integration guide, not an independent replay of every checker."
+    ],
+    "compatibility_boundary": "The full128 preparation, measured READY history, moment writer and rank-two N=1 test remain distinct carriers; none supplies the compulsory same-tape Book03 H+J+R valuation and physical root.",
+    "bounded_replays": {
+      "rank2_full_n1_same_price": {
+        "status": "PASS_DECLARED_FINITE_N1_TWO_FIELD_SOURCE_RETYPE",
+        "meshes": "h=1/8 through 1/128, uniform and smooth nonuniform diagnostic rho",
+        "scope": "All 42 local source components tested; no exact root, physical Book03 selection or GR closure."
+      },
+      "whole_slab_cartan_compatibility": {
+        "status": "PASS_SCOPED_WHOLE_SLAB_CARTAN_COMPATIBILITY",
+        "isolated_central_link_coframe_source": "approximately 0.779 across tested refinements",
+        "coherent_three_slice_coframe_source": "0.06452 at h=1/8 down to 0.00884 at h=1/64",
+        "neighbor_link_rows_solved": false,
+        "exact_full_discrete_root": false,
+        "analytic_identity": "delta P_0i(t)/h^2 = Z(t+h)P_0i(t) - P_0i(t)Z(t); smooth neighbor transport cancels the O(1) term."
+      }
+    },
+    "smallest_next_weld": "Run the two admitted CAR/holonomy source-effect instruments as query on the exact measured READY history; compute the actual upstream cost and full branchwise Book03 source on the same tape. Then solve the coupled gauge- and boundary-compatible 16+24+2 whole-slab equations with independent preparation/clock/work rows retained.",
+    "separate_selector_boundary": "For Golden/Beatty, prove paid-history-to-return-time equivariance before using the hierarchy average; the K913 prospective law is not yet that transport."
+  }
 }

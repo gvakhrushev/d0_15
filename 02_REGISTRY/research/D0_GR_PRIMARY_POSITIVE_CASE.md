@@ -690,3 +690,55 @@ Mandatory new owner type before joining any source across geometries: CurvatureC
 The [finite same-PRICE rank-two source consumer](A4D_RANK2_FULL_N1_CQ_42_SOURCE_FINITE_CONSISTENCY_2026_10_21.md) now evaluates the ACTUAL existing N=1 GoldenMaster analytic price after the exact owner-sign coordinate map F_cart(x,y)=F_null(-x,y). It does NOT replace the full selected native sigma-minus price with the distinct sigma-plus detector. On the original rank-two two-real-field smooth/homogeneous finite interior stencil, the two true forward CAR gradients have q=0 exactly and the full six-face f is O(h^2). The full normalized 16 coframe +24 original proper-link +2 scalar first-source residual is numerically O(h) on five meshes (1/8 through1/128), both at uniform and nonuniform positive diagnostic rho. At h=1/128 the maximum normalized coframe component is about0.00445934, the physical-link source h times the raw link jet is about0.00236932, and the FIRST material source is NONZERO -0.00060892; the second remains zero. Unlike the affine controlled source, the genuine nonlinear material slope F_y(f,0) varies with the finite plaquette signal, so "both matter Euler equations are exactly solved for the FULL CQ price" is not valid at finite h.
 
 The same-price analytic auxiliary K remains identical to all orders after retyping. Under uniform bounded operand/field/source norms, the nonlinear source differs from the affine one by O(h^2) in the coframe and raw link parts; the matter backward difference can amplify coefficient differences to O(h). This gives a concrete non-VSI FULL configured price source CONSISTENCY result, not a new exact finite all42 stationary root, generic source inverse, physical Book03 selection or GR closure. The next finite task is a gauge/boundary-compatible WHOLE-SLAB coupled geometric+matter correction, not isolated one-site Cartan inversion or another scalar coefficient fit.
+
+## Native preparation and the common-price weld (21 October)
+
+The [full128 preparation packet](sources/d0_native_preparation_closure_2026-10-21/README.md)
+now determines the invariant DATA state of the original recycling process:
+\(\rho_*=(D^2)^{-1}/\operatorname{Tr}(D^{-2})\) for invertible \(D\),
+unique under its stated strict traceless-contraction condition. It retains the
+full induced preparation derivative and classifies the singular dark sector.
+The exact finite port-cost value is
+\[
+C_{\rm port,n}=n(1+\kappa)+\operatorname{Tr}(\rho_0Y)
+-\operatorname{Tr}(\Phi^n(\rho_0)Y),\qquad
+(I-\Phi^*)Y=E_{\rm port1}-\kappa I.
+\]
+The initial-boundary term remains after DATA relaxation. The same packet finds
+a positive noncommuting two-round complementary Book determinant defect on a
+proper-Lorentz-link direction, so the scalar-shell correction cannot be
+removed as a free normalization. This prices the original port component; it
+does not price all label/factory/work terms or select Book03 Info. Its gap is
+not proved uniform under mesh refinement, and the limit is not an exact
+finite-time preparation.
+
+This theorem is now read against two downstream results. The [measured Golden
+READY construction](A4D_ORIGINAL_GOLDEN_READY_COMPLETE_CQ_COST_INFO_PF_SOURCE_2026_10_21.md)
+uses the original stopped F/R history, preserves overshoots and failures, and
+has exact measured-prefix Cost-minus-CQ-entropy cancellation plus the
+inverse-PF all42 source. The shared spatial marginal does not identify its
+complete AF/RIGHT history, initial state, or absolute Book03 value with the
+full128 invariant-preparation process. Separately, the [same-price rank-two
+calculation](A4D_RANK2_FULL_N1_CQ_42_SOURCE_FINITE_CONSISTENCY_2026_10_21.md)
+finds an \(O(h)\) full 16+24+2 residual on the non-VSI finite carrier; its
+first material row is genuinely nonzero. The [whole-slab Cartan test](sources/d0_star_rank2_seam_2026-10-21/check_whole_slab_cartan_compatibility.py)
+shows the missing compatibility term explicitly. For the original temporal
+plaquette, the normalized link variation is the covariant difference
+\(\delta P_{0i}(t)/h^2=Z(t+h)P_{0i}(t)-P_{0i}(t)Z(t)\). A smooth correction
+transported to its neighbors cancels the order-one term and gives an
+\(O(h)\) coframe source; an isolated correction leaves the nonvanishing
+\(-PZ(t)\) term. The bounded replay measures about 0.779 for the isolated
+case and 0.0645 at \(h=1/8\), decreasing to 0.00884 at \(h=1/64\), for
+the coherent three-slice case. Neighbor-link rows and the coupled 42-row root
+are still unsolved.
+
+The missing weld is therefore a single admitted tape that carries the actual
+invariant preparation through the READY address process, executes the two
+CAR/holonomy source-effect queries with their independent preparation, clock,
+work and failure branches, and evaluates the compulsory branchwise Book03
+\(H+J+R\) price and all42 derivative on that same history. The measured CQ
+entropy is not a substitute for that Book03 valuation. Only after that
+source is fixed can the full gauge- and boundary-compatible whole-slab
+16+24+2 equations be solved. These packets provide the components and a
+precise next test, but not their source-preserving transport into one physical
+execution. \(\mathrm{GR\_closed}=\mathrm{false}\).

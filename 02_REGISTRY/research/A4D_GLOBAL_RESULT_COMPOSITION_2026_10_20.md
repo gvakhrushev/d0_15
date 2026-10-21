@@ -443,6 +443,11 @@ test the explicit differences in section 4 before applying (12) or (13).
 Each route must retain its own field-writer/variation law and full source.
 The given formulas decide proposed identifications; they are not values
 to assign to Info after observing the desired source.
+The 21 October full128 preparation, exact port-cost boundary and Golden
+herald composition is summarized in the
+[read-first primary-case update](D0_GR_PRIMARY_POSITIVE_CASE.md#native-preparation-and-the-common-price-weld-21-october).
+It closes the native port-cost component under its stated map, not the
+compulsory full Book03 valuation or same-history physical admission.
 
 One proposed shortcut for the N=1 primitive has now been eliminated
 exactly over the full observer-angle interval: if the existing two-step
