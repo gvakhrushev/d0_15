@@ -69,3 +69,18 @@ This checker consumes immutable existing original six-face and actual cap-one Go
 ### Exact original six-face support: 42 to 18 potential source components
 
 The finite Cauchy proof [§7](../../A4D_RANK2_EXACT_DIAGONAL_CAUCHY_AND_TEMPORAL_GAUSS_2026_10_21.md) further reduces the ORIGINAL source by exact Lorentz-subgroup support, without dropping any original independent field variation. In the diagonal, spatially homogeneous, single-axis-boost original carrier, only seven of sixteen coframe Euler directions can be nonzero: the four diagonal and three (i,0) entries. All other nine coframe entries vanish exactly. Of 24 true link Euler rows, six temporal entries and three transverse spatial rotation entries (J23@Ux, J13@Uy, J12@Uz) are exact zeros. The original source therefore has only 7+15+2=24 potentially nonzero rows before solving; the coherent Cauchy branch solves four diagonal and both scalar rows, leaving at most **3+15=18 potentially nonzero original first Euler components**. The correct quotient and fixed two-end collar still have to be used to solve them. The actual checker now has an exact combinatorial source-support certificate and full4 numerical negative controls on the prohibited components.
+
+
+## Exact 42 Euler zero iff 12 pinned spatial-link sources zero
+
+The [rank-two finite Cauchy theorem §8](../../A4D_RANK2_EXACT_DIAGONAL_CAUCHY_AND_TEMPORAL_GAUSS_2026_10_21.md) proves an explicit rank-six Ward matrix on the 18 previously remaining source components, with nonzero original minor -X³ sinh(h k2)³. In this declared spatially homogeneous rank-two CAR double-zero branch, all original 42 Euler vanish IFF the following original TWELVE spatial link source values vanish:
+
+  Ux(K1,K2,K3,J12,J13);
+  Uy(K2,J12,J23);
+  Uz(K2,K3,J13,J23).
+
+Three offdiagonal coframe and three spatial-link entries are Ward PIVOTS, not solved; their vanishing follows if the target12 are zero. The actual numerical target12 source is NONZERO on the current constructed Cauchy branch. This is only a ZERO ACCEPTANCE TEST, not a discovery of a full root.
+
+    OPENBLAS_NUM_THREADS=1 python3 02_REGISTRY/research/sources/d0_star_rank2_seam_2026-10-21/check_ward12_spatial_source_equivalence.py
+
+The checker pins the unchanged original full4 six-face calculator; derives the exact six-face coframe support, symbolic 6x6 Noether determinant and 12 selected targets. It independently evaluates 16 coframe/24 link first-source rows at seven ORIGINAL random finite nonstationary diagonal/boost configurations, including spatial predecessor faces; forbidden source entries and Ward residuals are roundoff-level while accepted target12 are observably NONZERO. A mathematical zero-test is not a physical selected Book execution or all42 exact stationarity.
