@@ -1,0 +1,33 @@
+{
+  "repository": "gvakhrushev/d0_15",
+  "read_head": "dfc0275eea67ebc21ffe539de9b6ea96713863a5",
+  "scientific_owner_pr": 334,
+  "inputs": [
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_logarithmic_source_reduction_2026-10-21/PROOF.md",
+      "sha256": "4b2ab4a0d80aa75dca4cd952b25e03827630cf6796e36cf6fb521aabe2eccb94",
+      "git_blob": "c00e533a56050bab649d987d85b8695c33ce4f5e"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/NATIVE_COHERENT_CHOICE_SOURCE.md",
+      "sha256": "2e906213861d0c4d1812e1ec8608aec571aeb18230fce8f791fb4cce6b4c2c1b",
+      "git_blob": "e5841990c5becf562928115012a4dcafd25f6a87"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/PRIMARY_STOPPED_PORT_PRICE_AND_PREPARATION_EULER.md",
+      "sha256": "66108133dc615593e50e634274005a5d904b533f3a2f3fd7861a57b2557b8b50",
+      "git_blob": "829c2fafcf390f6d2d6246b46fb22cc8655756f2"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/PRIMARY_STOPPED_RIGHT_CONDITIONAL_SOURCE.md",
+      "sha256": "f45c6b301aad0d5601fc771b20550072ad8eeb579c8a701ec51c91b249d64f89",
+      "git_blob": "6afab2c3d5c8361639f2c58bddeffdfce91b3098"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_primary_full128_information_source_2026-10-20/RESULT.md",
+      "sha256": "9a441405c455adda9651f88c21fcda4d9383673a3718e88a93aeb50467133e71",
+      "git_blob": "dc22cc51ecea386ecfb8cb8f39c83541f4299750"
+    }
+  ],
+  "original_full128_spectral_replay": false
+}

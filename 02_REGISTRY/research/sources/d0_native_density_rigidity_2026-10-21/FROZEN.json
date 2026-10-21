@@ -1,0 +1,14 @@
+{
+  "status": "FROZEN_FOR_INDEPENDENT_REVIEW",
+  "validation": "PYTHONPATH=/tmp/d0_pydeps python3 check_density_rigidity.py --repo /workspace/scratch/75286bd77d4e/d0_15; normal and python -O outputs identical",
+  "checks": 101,
+  "files": {
+    "PROOF.md": "23794bfbfbbe8c3524f370461ccc616d2c7653318e4a578250354db378fa26a2",
+    "check_density_rigidity.py": "ecac5ea134d01f1b9d4b1521a7879788bd7ac69586dd75072834afb65b656531",
+    "SOURCE_PINS.json": "d12f14b6b3f11cad97e6981b6055012e0d5731d7140209e4535d715d6496abc1",
+    "README.md": "d57450deffe7b96cb4cc7dff9c5eb295f7149c5b0deb8e194e3761675ba25557",
+    "RESULT.json": "38f72c05c75a82ca2e4174d7dbdd28336283be0ba1d687bccab2151b8747e98b",
+    "RESULT_OPTIMIZED.json": "38f72c05c75a82ca2e4174d7dbdd28336283be0ba1d687bccab2151b8747e98b",
+    "inputs/A4D_SAME_EXECUTION_SPATIAL_WEIGHTS_AND_COMPLETE_SOURCE_2026_10_21_dfc0275e.md": "b13ef78db2ef108ce0435bc3b678822b4518d6e0eaa4d8610f4672cd5798eafd"
+  }
+}
