@@ -146,3 +146,17 @@ and verifies the rectangular inverse-PF source weight and 140-step energy
 conservation. This does not solve the anisotropic geometric 16+24 equations,
 choose a physical clock, or establish complete Book03 selection or GR
 closure.
+
+
+## True original residual temporal-gauge quotient and 3/4/5-slab roots
+
+[Exact original finite SO+(1,3) temporal gauge theorem](../../A4D_FULL_N1_NATIVE_TEMPORAL_GAUGE_QUOTIENT_MULTISLAB_ROOTS_2026_10_22.md) identifies the true 6(n−2) residual Lorentz frame transformations left by the first fixed temporal boundary link, proves an ordered unique gauge slice U0(1)=...=U0(n−2)=I keeping the endpoint holonomy in the final temporal link, and shows gauge-fixed 36n−30 Euler sources vanish IFF ALL original 42(n−1) native first-source entries vanish. This is an exact mathematical zero-set equivalence of ONE original complete N1 CQ price, not the invalid pureboost 42-to-12 extension.
+
+The new [standalone checker](check_full42_temporal_gauge_deflation.py) consumes original pinned full42 field/source/entropy price and literal based G2STAR instead of recoding them. It uses the true 16 coframe+24 spatial/temporal link+2 REAL CAR gradients at EACH free node, checks all dropped temporal Euler entries AFTER solving, tests original entire Golden N1 scalar PRICE gradients independently, confirms metric inertia/spatial holonomy/matter rank2 and offshell actual proper-frame covariance. Actual local numeric controls n=3 (78×78, all84 Euler), n=4 (114×114, all126 Euler), n=5 (150×150, all168 Euler), and n=3 PF time weights [1,2,1] pass in the original mathematical configured price. [Actual compact result](RESULT_TEMPORAL_GAUGE_MULTISLAB_2026_10_22.json) preserves the measured max source residuals, site f/q values, and reduced Jacobian spectra.
+
+    OPENBLAS_NUM_THREADS=1 python3 02_REGISTRY/research/sources/d0_star_rank2_seam_2026-10-21/check_full42_temporal_gauge_deflation.py --intervals 3
+    OPENBLAS_NUM_THREADS=1 python3 02_REGISTRY/research/sources/d0_star_rank2_seam_2026-10-21/check_full42_temporal_gauge_deflation.py --intervals 3 --pf 1,2,1
+    OPENBLAS_NUM_THREADS=1 python3 02_REGISTRY/research/sources/d0_star_rank2_seam_2026-10-21/check_full42_temporal_gauge_deflation.py --intervals 4
+    OPENBLAS_NUM_THREADS=1 python3 02_REGISTRY/research/sources/d0_star_rank2_seam_2026-10-21/check_full42_temporal_gauge_deflation.py --intervals 5
+
+This is a finite numerical existence WITNESS without interval enclosure, not true native absolute Book03 H+J+R selection, actual spatial arbitrary AF descendant PF, an independently writable compiler or uniform h→0 Einstein theorem. The shrinking reduced min singular values (n3 0.001226, n4 0.000525, n5 0.000273) are recorded rather than presented as a uniform inverse.
