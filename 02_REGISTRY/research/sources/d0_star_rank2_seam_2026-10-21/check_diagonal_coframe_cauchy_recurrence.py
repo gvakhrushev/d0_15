@@ -79,7 +79,7 @@ def symbolic_reduction():
     assert s.simplify(X*ex+(1/X)*ey+2*R*ez-2*f)==0
     sz=s.symbols("z")
     eq_poly=h*h*c12*sz*sz+(h*h*s2+c12*c22)*sz-s2*c22
-    assert s.simplify((ex*X*s2-ey*X*c12)-eq_poly.subs(sz,X*X))==0
+    assert s.simplify((ex*X*s2-ey*X*c12)+eq_poly.subs(sz,X*X))==0
     q=2*s.symbols("eps",positive=True)**2
     # Discrete matter current J_t=p_t/X², Q=p_t²/X²-eps²/Y².
     # Q=0 => p_t=eps*X/Y and J_t=eps/(X*Y).
