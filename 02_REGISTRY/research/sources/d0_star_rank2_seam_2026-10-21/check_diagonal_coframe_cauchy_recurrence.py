@@ -95,6 +95,36 @@ def symbolic_reduction():
        "q_zero_and_matter_euler":"X*Y=constant, not a freely postulated ansatz",
        "radial_trace_identity":"X EX + Y EY + 2 R Eperp = 2 f on q=0"}
 
+def exact_temporal_gauss():
+    """Two neighboring TRUE based time-spatial faces; rational Lorentz check.
+    Projection on the i-th boost is zero for ALL six proper Lorentz tangents.
+    """
+    metric=s.diag(1,-1,-1,-1)
+    generators=[]
+    for i in (1,2,3):
+        X=s.zeros(4);X[0,i]=X[i,0]=1;generators.append(X)
+    for i,j in ((1,2),(1,3),(2,3)):
+        X=s.zeros(4);X[i,j]=1;X[j,i]=-1;generators.append(X)
+    def rational_boost(i,q):
+        M=s.eye(4)
+        c=(1+q*q)/(1-q*q)
+        z=2*q/(1-q*q)
+        M[0,0]=M[i,i]=c
+        M[0,i]=M[i,0]=z
+        return M
+    checks=0
+    for i in (1,2,3):
+        V=rational_boost(i,s.Rational(i,10))
+        W=rational_boost(i,s.Rational(i+1,12))
+        P=V*W.inv()
+        for X in generators:
+            dP=X*P-V*X*W.inv()
+            dR=(dP+P.inv()*dP*P.inv())/2
+            assert s.simplify((dR*metric)[0,i])==0
+            checks+=1
+    return {"exact_original_temporal_spatial_face_lorentz_slots":checks,
+            "all_temporal_link_Euler":"ZERO for diagonal homogeneous coframe and pure spatial boosts"}
+
 def solve_slab(lo,hi,n):
     # User-given Cauchy k1(lo), prescribed smooth original k2(t).
     # Boundary t_hi is OUTPUT, not an independently fixed Dirichlet datum.
@@ -141,7 +171,7 @@ def solve_slab(lo,hi,n):
     # psi2=amp*x is the other independent spatial history.
     first_history=np.cumsum([0.]+[h*c['v'][0,0].real for c in cells[:-1]])
     assert len(first_history)==n+1
-    max_f=max_q=max_diag=max_off=0.
+    max_f=max_q=max_diag=max_off=max_Utime=0.
     dx=1e-20
     for j in range(n):
         cur,nxt=cells[j:j+2]
@@ -160,6 +190,18 @@ def solve_slab(lo,hi,n):
             diag.append(grad)
         max_diag=max(max_diag,float(max(abs(v) for v in diag)))
         if j==n//2:
+            # Check the ORIGINAL temporal link with BOTH spatial-predecessor
+            # and outgoing based faces; no restricted k1/k2 variation.
+            prev=cells[j-1]
+            for G in LORENTZ:
+                old=cur['u'][0].copy()
+                cur['u'][0]=expm(1j*dx*G)@old
+                dval=(
+                    star_density(prev,cur,h)+
+                    star_density(cur,nxt,h)
+                ).imag/dx
+                cur['u'][0]=old
+                max_Utime=max(max_Utime,float(abs(dval)))
             for a in range(4):
                 for b in range(4):
                     if a==b:continue
@@ -173,11 +215,13 @@ def solve_slab(lo,hi,n):
     Rdiff=max(abs(x["R_from_seed"]) for x in stats)
     Kdiff=max(abs(x["k1_from_seed"]) for x in stats)
     assert max_off>1e-6,"remaining off-diagonal Euler source must not be hidden"
+    assert max_Utime<2e-9,("original six temporal link Gauss",lo,hi,n,max_Utime)
     assert max(Xdiff,Rdiff,Kdiff)<2.0*h
     return dict(r_interval=[lo,hi],steps=n,h=h,
        full_original_6face_f_max=max_f,actual_two_CAR_Q_max=max_q,
        all_four_true_diagonal_coframe_Euler_max=max_diag,
        unsolved_offdiagonal_coframe_Euler_midpoint=max_off,
+       six_original_temporal_link_Euler_max_midpoint=max_Utime,
        X_seed_distance=Xdiff,R_seed_distance=Rdiff,k1_seed_distance=Kdiff,
        two_original_material_current_rows="ZERO at all free interior stencils",
        exact_timeline="Cauchy k1 initial data; final k1 is derived, not prescribed",
@@ -189,6 +233,7 @@ def main():
     master=GoldenMaster(55)
     assert master.a<0<master.b and abs(float(master.kappa)-KAPPA)<2e-12
     exact=symbolic_reduction()
+    exact.update(exact_temporal_gauss())
     samples=[solve_slab(lo,hi,n) for lo,hi in
        ((1,1.2),(.85,1.15),(.9,1.4)) for n in (16,32,64,128)]
     print(json.dumps({"status":"PASS_EXACT_DIAGONAL_FOUR_PLUS_TWO_CAUCHY_BRANCH",
