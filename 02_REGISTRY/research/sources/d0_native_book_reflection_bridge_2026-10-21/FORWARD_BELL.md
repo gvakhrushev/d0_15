@@ -161,4 +161,49 @@ Thus the Route B master is not stationary under the unrestricted independent \(U
 
 The updated checker replays this formula symbolically and constructs the nonzero skew-Hermitian direction on four independent \(D=2\) unitary controls. It verifies the restricted Euler obstruction, not physical admission or the complete upstream price. `GR_closed=false`.
 
+## 7. Refinement bound from the actual spatial address register
+
+Route B's first-source gain has a second refinement loss once its address selector is included in the complete work carrier. Let \(h=1/L\), and use the literal original covered LEFT-address copies of the paid moment reporter. The spatial owner assigns \(\nu\,528\,D_j\) actual trace copies to an address \(a=(j,i)\); the refinement map covers every one of the \(L^4\) Role sites. For each site,
+
+\[
+ M_z=\sum_{a\in\mathcal I_z}D_j\ge1,
+ \qquad
+ W=\nu\,528\sum_z M_z\ge\nu\,528L^4\ge528L^4,
+ \tag{17}
+\]
+
+because \(D_j\) and the reference multiplicity \(\nu\) are positive integers. This is a lower bound only: the owned coverage schedule may make \(W\) grow faster than \(L^4\). It does not assert \(W=\Theta(L^4)\).
+
+The uniform draw among these \(W\) copies is part of the claimed coherent report map. In its purified full-unitary implementation the address selector has at least \(W\) orthogonal labels. Since \(D\) is the dimension of the *complete* work label after padding, including that selector and its records, \(D\ge W\). Measuring the selector and dropping its record before the two-copy return would be a different execution and would require a new overlap/source derivation.
+
+At the common-null report \(r_0\), put \(m_0=p+(a-p)r_0\) and \(h'_0=h'_\varphi(r_0)>0\). Equation (8) gives the exact gain
+
+\[
+ g_h=\frac{2z(a-p)m_0}
+ {D W\,\gamma_{m,h}h'_0\,[1-z+zm_0^2/D]}.
+\tag{18}
+\]
+
+With \(C_0=2z(a-p)m_0/[h'_0(1-z)]\), the bracket is at least \(1-z\), so the actual finite gain obeys
+
+\[
+ 0<g_h\le\frac{C_0}{D W\gamma_{m,h}}
+       \le\frac{C_0}{W^2\gamma_{m,h}}
+       \le\frac{C_0}{528^2\,\gamma_{m,h}}h^8.
+\tag{19}
+\]
+
+Here \(\gamma_{m,h}\) is exactly the matched N=1 readiness in the declared source identity (8). The paid moment-writer owner permits finite caps with \(\gamma_{m,h}\ge1/2\), retaining their real cost and work registers. On that declared cap choice, \(g_h\le 2C_0 h^8/528^2\). This assumes the exact uniform-address map of §3; its physical realization/admission remains open. If that realization contributes an additional failure or field-dependent readiness, its derivative must be composed into the source ratio rather than silently absorbed into \(\gamma_{m,h}\). This is an upper envelope on the gain, not a uniform positive lower bound; larger-than-minimal \(W\) or \(D\) makes the gain smaller. The two-copy route therefore loses at least the average-address factor \(W^{-1}\) in addition to its Bell factor \(D^{-1}\), on the stated map.
+
+For the sufficient absolute-source recovery estimate in [the owned error budget](../../A4D_ABSOLUTE_LOOP_ANCHOR_AND_GR_ERROR_BUDGET_2026_10_21.md), an \(O(h^2)\) profile certificate using this same admitted source must control the complete residual at scale
+
+\[
+ e_h=O(h|a_{J,h}|g_h)
+ =O\!\left(\frac{h|a_{J,h}|}
+ {D W\gamma_{m,h}}\right),
+\tag{20}
+\]
+
+up to the fixed positive constants in (18). With \(\gamma_{m,h}\ge1/2\), the refinement envelope makes this sufficient tolerance no looser than \(O(h^9|a_{J,h}|)\); if \(|a_{J,h}|=\Theta(1)\), that is an \(O(h^9)\) complete-residual budget. Faster growth of \(D\) or \(W\) tightens it. This composes only the source-gain estimate with the owned sufficient recovery bound: missing non-normal rows, controller/input stationarity, physical admission, or a failure to meet the residual tolerance are not converted into a GR no-go. `GR_closed=false`.
+
 **GR_closed=false.**

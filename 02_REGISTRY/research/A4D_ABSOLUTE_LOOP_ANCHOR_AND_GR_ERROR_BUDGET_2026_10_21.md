@@ -133,6 +133,19 @@ h^(-4), then e_h=O(h^5) suffices. This is not a universal D0 gain:
 the newer local-report construction and other native executions retain
 their own readiness, trace-copy counts and normalization.
 
+For the specific two-forward-copy Route B report-to-Book construction,
+the original covered spatial reporter has W>=528 L^4 actual copies, and
+the coherent/purified uniform-address selector occupies the full work
+carrier, so D>=W. Its exact declared-interface source gain therefore
+satisfies g_h<=C h^8/gamma_m, with the fixed C given by
+[the Route B refinement proof](sources/d0_native_book_reflection_bridge_2026-10-21/FORWARD_BELL.md#7-refinement-bound-from-the-actual-spatial-address-register). The paid moment writer can choose finite caps with
+gamma_m>=1/2; selector admission and any extra selector readiness remain
+separate premises. Under the same-source hypotheses above, the owned
+sufficient O(h^2) recovery tolerance is e_h=O(h |a_J,h| g_h), hence no
+looser than O(h^9 |a_J,h|) for this Route B interface. This is a
+route-specific sufficient error target, not a universal gain law or a
+necessary condition for other recovery theorems.
+
 A non-normal component of the scalar anchor jet, however small, can
 invalidate the hypothesis of (6). In particular a common gain is ONE
 scalar function but its derivative is an unrestricted covector. It

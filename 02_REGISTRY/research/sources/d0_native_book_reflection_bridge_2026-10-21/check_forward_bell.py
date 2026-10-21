@@ -143,6 +143,38 @@ gain=-sp.diff(J,r).subs(r,r0)/(W*Hp)
 ck(float(sp.N(gain.subs({D:2,W:10})))>0,
    'all42 common source gain is positive on native N1 root')
 
+# Refinement attenuation of the complete uniform-address Route B source.
+gamma_m=sp.symbols('gamma_m',positive=True)
+m0=p+(a-p)*r0
+route_bracket=1-z+z*m0**2/D
+gain_refine=2*z*(a-p)*m0/(D*W*gamma_m*Hp*route_bracket)
+ck(sp.simplify(gain_refine-(-sp.diff(J,r).subs(r,r0)/(W*gamma_m*Hp)))==0,
+   'exact Route B gain retains both full work dimension and address average')
+C0=2*z*(a-p)*m0/(Hp*(1-z))
+gain_upper=C0/(D*W*gamma_m)
+gain_upper_gap=2*z**2*(a-p)*m0**3/(D**2*W*gamma_m*Hp*(1-z)*route_bracket)
+ck(sp.simplify(gain_upper-gain_refine-gain_upper_gap)==0,
+   'exact positive difference proves the finite 1/(D W gamma) envelope')
+Lmesh,Wmesh,Dmesh=sp.symbols('Lmesh Wmesh Dmesh',positive=True)
+bound_W=C0/(Wmesh**2*gamma_m)
+bound_h8=C0/(528**2*Lmesh**8*gamma_m)
+ck(sp.simplify(C0/(Wmesh**2*gamma_m)-
+       C0/(Dmesh*Wmesh*gamma_m)-C0*(Dmesh-Wmesh)/
+       (Dmesh*Wmesh**2*gamma_m))==0,
+   'D>=W implies the exact address-squared attenuation envelope')
+ck(sp.simplify(bound_h8-bound_W-
+       C0*(Wmesh**2-528**2*Lmesh**8)/
+       (528**2*Lmesh**8*Wmesh**2*gamma_m))==0,
+   'W>=528 L^4 implies the exact h^8 attenuation envelope')
+Mtotal,nu=sp.symbols('Mtotal nu',positive=True)
+copy_gap=528*nu*Mtotal-528*Lmesh**4
+copy_gap_decomp=528*((nu-1)*Mtotal+(Mtotal-Lmesh**4))
+ck(sp.simplify(copy_gap-copy_gap_decomp)==0,
+   'covered integer site copies imply W>=528 L^4 for nu>=1')
+ck(sp.simplify((C0/(528**2*Lmesh**8*gamma_m)).subs(gamma_m,sp.Rational(1,2))-
+       2*C0/(528**2*Lmesh**8))==0,
+   'paid finite-cap readiness gamma>=1/2 gives a uniform h^8 upper envelope')
+
 # Compare native complete N1 matched-cost source and paired-book source on four
 # truly independently varied report branches. Both are gradients of real values.
 weights=[1,2,3,4]
@@ -197,6 +229,16 @@ out={
             'stationary_under_unrestricted_U':False},
   'full_column_no_free_gain':{'bound':'abs(dF/dr)<=2*sqrt(2)/D',
                              'universal_full_output_basis_required':True},
+  'refinement_attenuation':{
+            'covered_site_copy_bound':'W>=528*L^4; nu>=1 and every Role site covered',
+            'coherent_selector_dimension':'D>=W when the uniform address draw is retained/purified in the complete work label',
+            'exact_gain':'2*z*(sqrt(p)-p)*m0/(D*W*gamma_m*h_phi_prime(r0)*(1-z+z*m0^2/D))',
+            'm0':'p+(sqrt(p)-p)*r0',
+            'C0':'2*z*(sqrt(p)-p)*m0/(h_phi_prime(r0)*(1-z))',
+            'gain_upper':'C0/(528^2*gamma_m)*h^8',
+            'paid_readiness_bound':'gamma_m>=1/2 for finite declared moment-writer caps; all cap costs and work retained',
+            'absolute_recovery_tolerance':'O(h*abs(a_J_h)*g_h); at most O(h^9*abs(a_J_h)) under gamma_m>=1/2',
+            'scope':'conditional operator-source/refinement bound; no physical admission, uniform gain lower bound, or GR closure'},
   'memory':{'V_inverse_uses':0, 'forward_conjugate_copy_required':True,
             'second_paid_initial_preparation_required':True,
             'unmeasured_full_record_source_cut_required':True},
