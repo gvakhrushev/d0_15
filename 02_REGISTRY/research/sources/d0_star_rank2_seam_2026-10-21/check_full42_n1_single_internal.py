@@ -125,7 +125,7 @@ def direct_coframe_second_variations(nodes,h,weights):
     The original literal six-face holonomies are re-evaluated every time.
     """
     from importlib.machinery import SourceFileLoader
-    native_path=(Path(__file__).resolve().parents[3]/
+    native_path=(Path(__file__).resolve().parents[4]/
        "02_REGISTRY/research/sources/d0_weighted_two_field_rank2_2026-10-21/native_master.py")
     Golden=SourceFileLoader("d0_native_n1_second_price",str(native_path)).load_module().GoldenMaster
     model=Golden(75)
