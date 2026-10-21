@@ -236,3 +236,113 @@ The immediately falsifiable check is to take the already executed paid Golden mo
 
 \`sources/d0_address_extensive_book_2026-10-22/check_address_book.mjs\`
 constructs actual 4×4 Golden reflected binary reporters, 16×16 tensor blocks and ONE addressed block-diagonal return, checks the full complement rather than inserting a scalar \(aF\), and verifies field/shared-controller jets, finite-rank contrasts and their exact Golden coefficients. A second tiny standalone checker verifies the sharp \(1/(m+1)\) symmetric-programme false-acceptance floor. Neither is a replay of the original full128, 42-variable numerical nonlinear root, Lean or physical Book03 admission.
+
+## 9. SAME COHERENT HISTORY, different Book cut: exact source non-identifiability on the master itself
+
+This is the strongest structural limitation of the addressed construction,
+and it identifies the actual missing primitive more precisely than
+"physically admit a large projector".
+
+Take **one and the same** entire coherently retained normalized input,
+including the orthogonal native address/copy labels:
+
+\[
+ |\Psi(y)\rangle
+ =\frac1{\sqrt W}\sum_{a,k\le w_a}|a,k\rangle|\psi_{a,k}(y)\rangle .
+ \tag{16}
+\]
+
+All full addressed Born report probabilities are
+\(q_{a,k,b}=W^{-1}q_{a,k}(b)\). They do not depend on any Book
+projector chosen AFTER this state is specified. Keep the **same**
+address-preserving full unitary \(U_{\rm addr}\), original primitive
+return, every record label and fixed scene heat. Two mathematically
+distinct active cuts are:
+
+\[
+ P_{\rm pure}=|\Psi\rangle\langle\Psi|,\qquad
+ P_{\rm pointer}
+ =\sum_{a,k\le w_a}|a,k;\psi_{a,k}\rangle
+              \langle a,k;\psi_{a,k}|.                  \tag{17}
+\]
+
+\(P_{\rm pointer}|\Psi\rangle=|\Psi\rangle\), so **both contain the
+same prepared state**, yet
+\(\operatorname{rank}P_{\rm pure}=1\) and
+\(\operatorname{rank}P_{\rm pointer}=W\).
+Define \(t_j=\langle\psi_j|U_j|\psi_j\rangle\), one true tensor-pair
+return for each of the \(W\) already counted complete history copies.
+A direct calculation of the SAME Book03 complementary formula gives
+
+\[
+ \begin{array}{ll}
+ P_{\rm pure}:&
+ F_{\rm pure}=1-\left|\frac1W\sum_{j=1}^W t_j\right|^2
+       \quad\text{on its ONE input dimension};\\
+ P_{\rm pointer}:&
+ F_{\rm pointer}=\operatorname{diag}(1-|t_1|^2,\ldots,
+                                   1-|t_W|^2)
+       \quad\text{on its }W\text{ input dimensions}.
+ \end{array}                                               \tag{18}
+\]
+
+Thus the **very same** fixed Book03 master, the **very same**
+complete retained coherent state and the **very same** native unitary
+have different first sources unless a physical rule selects the
+ACTIVE CUT. At the fair null source \(t_j=p^4\) and
+\(A_0=1-\zeta(1-p^8)\),
+
+\[
+ \mathcal B_{\rm pointer}-\mathcal B_{\rm pure}
+ =-(W-1)\log A_0>0,                                        \tag{19}
+\]
+\[
+ \boxed{
+ D_y\mathcal B_{\rm pure}
+ =-\frac{2\zeta p^7}{WA_0}\sum_a w_a\gamma_a D_y r_a,
+ \qquad
+ D_y\mathcal B_{\rm pointer}
+ =-\frac{2\zeta p^7}{A_0}\sum_a w_a\gamma_a D_y r_a.
+ }                                                         \tag{20}
+\]
+
+The *complete addressed report statistics* are unchanged here.
+A physical experiment with off-diagonal address-interference access
+could distinguish a coherent superposition from an actually
+dephased pointer mixture, so we do NOT claim equivalence for all
+possible additional measurements. The difference between (17) is
+a **Book active-algebra/cut choice**, not a hidden substitution of
+the report law.
+
+This makes the physical rank gate irreducible: merely PREPARING all
+\(W\) different paid catalogue rows in one initially pure
+programme does NOT make its prepared support rank \(W\).
+Unitary transport of an initial pure one-dimensional input leaves
+its range rank one for every field. The rank-\(W\) support can
+instead arise in the accessible **classical-pointer algebra**
+when the address is genuinely registered and the effective input
+is the direct sum/mixed rank-\(W\) sector, or from a separately
+admitted Book03 rank-evolution law. Selecting this algebra,
+its actual history dephasing/observer cut, Info, preparation and
+clock is a physical theorem, NOT a consequence of the preceding
+operator algebra or of all original Born marginals.
+
+This also identifies why invoking a preprepared bank, a big
+workspace or a full observable rank-34 Jacobian never automatically
+closes the D0→GR source: those notions do not select (17).
+A true **native retained-pointer / accessible-algebra theorem**
+must provide the missing equal-history cut identification.
+If the compulsory Book03 \(P_N\) is the transported projector of
+the one pure complete initial D0 history, (20) shows that the
+particular extensive rank-\(W\) substitution FAILS; if it is the
+physically admitted rank-\(W\) pointer algebra, (20) supplies the
+nonattenuated source and the remaining independent full-price
+Euler equations must be tested.
+
+Exact independently compiled two-dimensional full-unitary
+matrix evidence is in
+\`sources/d0_address_extensive_book_2026-10-22/check_same_history_cut_selection.mjs\`.
+It verifies BOTH Book complements from the same \(U,|\Psi\rangle\),
+their complete first-source \(1/W\)-versus-\(1\) difference, and
+the positive absolute price distinction (19). No extra native
+projector is declared already selected. \`GR_closed=false\`.
