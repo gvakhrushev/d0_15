@@ -435,8 +435,14 @@ The native second-jet result is restricted to `Sigma_prim` on each fixed
 finite mesh. The new crossing-stream metric is not proved to belong to
 that family: its `x=Y=0` values alone do not suffice. Therefore that compiler
 does not yet lift our new witness or the whole covariant solution class.
-Its own readiness and factory/copy/majority costs are not the old
-`alpha beta` or the 496/1,216 query inventories.
+The separate [weighted two-field continuation](A4D_WEIGHTED_TWO_FIELD_RANK2_AND_FINITE_SOURCE_2026_10_21.md)
+does supply the witness's actual midpoint finite matter history, proves
+`q_h=0` and both reduced finite material rows exactly, and computes the
+material term in the finite Ward defect. That is a bounded matter lift: it
+does not solve the 16 coframe or 24 link rows, evaluate the geometric Ward
+term, or produce an all42 root. The readiness and factory/copy/majority costs
+of the compiler remain distinct from the old `alpha beta` or the 496/1,216
+query inventories.
 
 For its specified full coherent return, the parallel causal archive also
 proves `J_clock=J_original-128 dim(H) log(1-z)`. At fixed `z` this preserves
@@ -452,7 +458,7 @@ terms, not another isolated query derivative.
 |---|---|---|
 | Can the original whole CQ first source be tested without ever-longer query words? | Concurrent four-report price-source evaluator, plus exact sixteen-setting whole-channel derivative and actual statistical budgets | Physical provision of the now conditionally compiled moving Julia/input interfaces, compulsory Book valuation and actual upstream ledger |
 | What geometric theory is represented by the full constant-density two-field stationary set? | Local covariant positive-multiplier Einstein/constrained-two-scalar equivalence, reverse map and fixed-sector Jacobi map; regular-price extension sector by sector | Actual native finite-source/continuum dictionary, admissible coordinate transport and physical admission |
-| Does the original zero-density detector point admit independent rank-two matter with the actual PF weights? | Explicit rank-two non-VSI solution using the unchanged finite query ratio; the SAME representative survives every fixed positive PF weight under the stated price conditions | Exact finite-lattice lift and controlled physical refinement |
+| Does the original zero-density detector point admit independent rank-two matter with the actual PF weights? | Explicit rank-two non-VSI solution using the unchanged finite query ratio; the SAME representative survives every fixed positive PF weight under the stated price conditions; an actual midpoint lift solves both reduced finite material rows and exposes their Ward defect | Original 16 coframe and 24 link rows, geometric/extra-source Ward terms, a full finite root and controlled physical refinement |
 
 The exact finite Cartan/Brinkmann recovery owner remains the stronger
 EXACT-LATTICE result; the new witness is a distinct continuum extension.

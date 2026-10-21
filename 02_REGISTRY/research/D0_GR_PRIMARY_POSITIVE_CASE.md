@@ -506,11 +506,16 @@ weighted continuum price for every prescribed positive weight, with the
 fixed common coefficient and zero baseline-field-source hypotheses kept.
 
 This does not replace the exact all-mesh finite Cartan family above: the
-new witness is a continuum theorem and still needs its actual native
-lattice/source lift. Compulsory full Book valuation, genuine upstream
-stationarity, field-writing admission and physical refinement remain open.
-Off-shell Diff-natural metric-only descent is not inferred from the new
-on-shell covariant matter representation. `GR_closed=false`.
+new witness remains a distinct continuum extension. The subsequent
+[weighted rank-two continuation](A4D_WEIGHTED_TWO_FIELD_RANK2_AND_FINITE_SOURCE_2026_10_21.md)
+now supplies a real midpoint finite lift for both material rows on that
+non-VSI representative and derives its finite material Ward term. This does
+not solve the original 16 coframe and 24 link rows: the geometric defect and
+extra source remain unevaluated, so there is still no finite all42 root.
+Compulsory full Book valuation, genuine upstream stationarity, field-writing
+admission and physical refinement remain open. Off-shell Diff-natural
+metric-only descent is not inferred from the on-shell covariant matter
+representation. `GR_closed=false`.
 
 ## Fixed processor and independent full-resource preparation sources
 
