@@ -676,3 +676,29 @@ Info and absolute price. This conditional pullback is therefore entered as
 a candidate inside the existing common-map gate, not as a substitute for
 it: compulsory physical selection, same-history Book03 valuation, original
 null-fibre readout and physical refinement remain open; `GR_closed=false`.
+
+
+## 22 October: FULL fine-record two-mark pressure and native clock-rate reverse gate
+
+New exact source-typed consumer: [WHOLE_HISTORY_MARKED_PRESSURE_RENEWAL_GR_SYNTHESIS](A4D_WHOLE_HISTORY_MARKED_PRESSURE_RENEWAL_GR_SYNTHESIS_2026_10_22.md), with [the complete stopped-tree + cap replay](sources/d0_whole_history_marked_pressure_renewal_2026-10-22/check_whole_tape_marked_pressure.mjs). The analytical two-mark pressure of ONE real paid complete tape
+\[
+\mathcal P_y(s,t)=\log_\varphi\sum_{\omega\in\Omega}
+P_y(\omega)^{1+s}\varphi^{-t c_y(\omega)}
+\]
+has \(\mathcal P_y(0,0)=D_y\mathcal P_y(0,0)=0\) but the **EXACT mixed response**
+\[
+\boxed{C_y-H_\varphi(P_y)
+=[(\partial_s-\partial_t)\mathcal P_y](0,0),}
+\]
+including ALL actual field, cost, preparation, history, and original 42 first/second jets wherever the complete native charged interface is known. For original whole 10946-prefix Golden READY/0/10 tape, this becomes exactly \(2p^{23}\sum_z n_z[1+r_z-h_\varphi(r_z)]\), not an independently normalized set of 256 Book scalar actions. If \(\mu_\omega=p^{c_\omega}\) is a *real complete code*, the ONE relative-tilt derivative is exactly the complete native code KL price; the finite fluctuation identity and positive second score curvature are proved without hypothesizing a Book Info table.
+
+A genuine finite-capped repeated reporter (including every unresolved/failure leaf) has the exact **paid per-expected-tick** equality
+\[
+(\mathbb EC_M-H_\varphi(\mathrm{tape}_M))/\mathbb EN_M
+=c_0(1-r)+c_1r-h_\varphi(r)
+\]
+for EVERY finite \(M\); with the ALREADY owned genuinely paid equal-width padded report, its field source is exactly \(-h_\varphi'(r)Dr\), even off the common-null equal-report section. This is NOT the un-normalized whole-stop action and DOES NOT assert the original fixed HJR \(\beta\) is the same as mean elapsed ticks.
+
+The recent certified exact \(h=1/4\) nonflat all42 CQ root supplies the decisive adversarial test: the old unpadded **different physical** 0/10 code has extra \(Dr_0+Dr_1=2D\bar r\), with the original interval certificate lower bound \(>5.3795610116359145\times10^{-14}\) in direction 29. Therefore one cannot freely move between the true 0/10 code, an equal-width padded reporter, the complete stopped total, and the per-tick source; actual Info/clock/work reactions are required. A two-independent-report-kernel theorem shows that to preserve *all* source kernels on an open report chart any separable scalar Book target must be a nonzero affine function of binary entropy, not a fixed Golden/H \(-\log\det\) shape.
+
+**One remaining physical gate, now SHARP:** derive from the compulsory ORIGINAL Book03 \(H+J+R\), selected observer/cut, actual pathwise vertex Info, and real causal clock/independent preparation equations whether its native **variational field source** equals this marked/intensive complete-tape response on one genuine admitted execution. The analytical mark is NOT by itself an additional compulsory physical action or executable fractional gate. An unmarked normalized scalar \(Z=1\) is source blind; the true full Book may instead retain ordered operator memory, moving heat or other source. Neither bridge is asserted as forced. Do not launch another exact Einstein root or fit a report coefficient; use the same complete tape, true cost and source norm. \`GR_closed=false\`.
