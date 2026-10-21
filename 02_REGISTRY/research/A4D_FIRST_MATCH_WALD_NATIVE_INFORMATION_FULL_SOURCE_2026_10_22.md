@@ -345,3 +345,62 @@ Its gradient in \(q\) is GENERICALLY nonzero although
 \(\partial_y\mathbb ET=0\). Equation (26) is an operational delay transform, **not** automatically the Book03 Hodge/scene heat \(\operatorname{Tr}e^{-\beta\Delta_N}\); equating them needs a genuinely derived operator/clock identification.
 
 Accompanying \`check_native_marked_first_return.mjs\` verifies the TRUE leaf-by-leaf cost sums and aborts, unmarked mass, first and second charge moments, Golden \(-\varphi\) log-source, and source-blind normalized blank-return even with a moving \(N_t\). Full moving Hodge heat, complete original Book path Info and independently admitted active cut remain OPEN. \`GR_closed=false\`.
+
+
+## 10. Sharper ORIGINAL-cap1 consumer: THREE real complete outcome classes, not postselected Bernoulli
+
+The strict off-null h=1/4 continuation in §5 should **not** be promoted by treating a READY-conditional probability \(r_i\) as the unconditional probability of a one-bit device with no failed factories. The actual owned paid N1 cap9/20 reporter has a strictly positive **data-independent READY probability** \(\gamma=\alpha\beta\in(0,1)\) on its declared completed-programme/fixed-charge chart. All failures, untouched work and original RIGHT remain paid and preserved. At the level of the physical *coarse final status* the FULL THREE outcomes are exactly
+
+\[
+ \boxed{
+ q_{\rm fail}=1-\gamma,\quad
+ q_{\rm READY0}=\gamma(1-r),\quad
+ q_{\rm READY1}=\gamma r.
+ }                                                           \tag{27}
+\]
+
+This is a complete positive probability law, not conditioning on READY. The detailed failure/preparation/work histories are retained in the full per-trial \(Z\); only the **stopping equality test** compares the three coarse status values. Since \(0<r<1,\ 0<\gamma<1\), the actual pointer alphabet has \(m=3\) even when \(r\) is extremely small. By the **same exact complete-archive** Wald theorem, without deleting a single failed N1 branch,
+
+\[
+ \boxed{
+ \mathbb E T=4,\quad
+ S_{\rm COMPLETE\;firstmatch}=4S_{\rm COMPLETE\;N1\;trial}
+                             +3\kappa+B_{\rm shared},
+ \quad
+ D_{42}S_{\rm firstmatch}
+ =4D_{42}S_{\rm COMPLETE\;N1\;trial}+D_{42}B_{\rm shared}.
+ }                                                           \tag{28}
+\]
+
+All dependent conditional failure-work entropies and charges belong to the original complete \(S_{\rm trial}\), and \(\kappa\) assumes genuinely label-independent **whole** comparison Cost−measured-CQ-Info. The exact multiplier FOUR is robust even if an independently generated readiness \(\gamma(y)\) moves, **because the full per-trial source is multiplied**, rather than reidentifying its inner conditional entropy with a new input.
+
+On the already owned verified cap-one 42-field cost chart, the field-independent whole-preparation baseline and the complete N1 report entropy produce the genuine original
+\(D S_{\rm COMPLETE\;N1}=-\gamma\, h_\varphi'(r)\,D r\)
+plus any explicitly retained nonneutral source. Therefore the **full three-class first-return programme** has
+\(D S_{\rm stop}=-4\gamma h_\varphi'(r)Dr\)
+on that stated fixed-source chart, preserving **each** off-null local entropy slope with the original readiness. Its source is NOT the hypothetical 3× conditional-Bernoulli source, and its physical comparator/heat/oldRIGHT admission remains subject to the same prerequisites.
+
+This is a directly actionable **same ORIGINAL paid execution type**: reprepare the *complete* native factory/processor from fresh blanks per trial; always retain all failure detail; compare only the existing coarse \(\{\mathrm{fail},\mathrm{ready0},\mathrm{ready1}\}\) final status using one fixed charged reversible Boolean equality word. No new material/carrier field, tuned reporter probability, unknown-state cloning or physical postselection is requested. The task of **repeating until equality**, rather than the original one-shot task, is nevertheless a DISTINCT prospective programme and must be selected and priced as such by M1/G0, and the native Book03 active cut, spectral heat, full history Info and stationary upstream preparation are still not identified.
+
+For a deterministic cap at K comparisons its actual expected number of trials is
+
+\[
+ \boxed{
+ L_K(\gamma,r)=4-
+ \gamma^K-(1-\gamma+\gamma r)^K-(1-\gamma r)^K
+ }
+\]
+
+**after correcting each survival probability exactly**:
+\[
+ \boxed{
+ L_K^{\rm correct}(\gamma,r)=4-
+ \gamma^K-
+ [1-\gamma(1-r)]^K-
+ [1-\gamma r]^K .
+ }                                                           \tag{29}
+\]
+
+The first term \(\gamma^K=(1-q_{\rm fail})^K\) and remaining terms are the TWO READY-status nonmatch probabilities. Formula (29), not a frozen 4, must be inserted into the full finite clock/source rule (14); its full derivative includes actual \(D\gamma\) whenever readiness moves. A claimed uniform cap/source refinement requires a strictly positive lower bound on all three true native probabilities, particularly \(\gamma r\), not just on \(r\). The numeric finite h=1/4 root persists for sufficiently high K under the explicit C²/independent-trial hypotheses of §5. This does not prove a compulsory Book03 or generic GR root.
+
+**Code:** \`check_first_match_wald.mjs\` directly tests (27)--(29) on two distinct genuine native nonzero report probabilities and multiple readiness values and their 42 independent formal source directions. No original 42-field Euler/interval certificate is claimed rerun.
