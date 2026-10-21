@@ -201,3 +201,30 @@ compulsory physical operation. The branch-gain and full closed-loop source
 must still be derived from one admitted execution before any physical
 selection or GR conclusion. The port-ratio calculation is exact algebra;
 it has no separate executable receipt. GR_closed=false.
+
+
+### 8. Relative branch data do not fix the absolute source
+
+The [Book03 source-identifiability theorem](A4D_BOOK03_SOURCE_IDENTIFIABILITY_THEOREM_2026_10_21.md)
+proves that consistent ratios on a connected positive history support
+reconstruct all branch weights only up to a common positive factor. The
+actual charge jets and ratio jets, plus one absolute normalizer value and its
+first jet, are necessary to identify the complete first source. The closed
+loop observes the common mode through its determinant derivative. This
+formalizes the distinction between the relative-gain laws in section 7 and
+the native absolute Book03 source; it does not choose that source.
+
+The companion [absolute-source lemma](A4D_ABSOLUTE_BOOK_SOURCE_NONIDENTIFIABILITY_2026_10_21.md)
+makes the amplitude-only kernel explicit: normalized coherent-record
+matching leaves \(w_\omega=a(y)\sqrt{q_\omega}\), or
+\(I_\omega=C_\omega+\tfrac12\log_\varphi q_\omega+J(y)\). A changing \(J\)
+preserves normalized open-record predictions but changes the absolute and
+closed-loop source. This is non-identifiability from normalized data, not a
+no-go for Book03; the native memory sum, quadratic norm, and full paid ledger
+must determine \(J,DJ\) on one admitted full128 execution.
+
+The [same-execution construction gate](A4D_NEXT_COMMON_MAP_CONSTRUCTION_GATE_2026_10_21.md)
+requires the complete field-to-instrument-and-price map, including all
+outcomes and independently admitted inputs, before the finite source can be
+compared with the original 42 rows. It remains separate from the port-ratio
+test and from the cap-one N=1 compiler. GR_closed=false.

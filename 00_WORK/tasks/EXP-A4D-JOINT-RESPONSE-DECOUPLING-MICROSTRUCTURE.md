@@ -3994,3 +3994,59 @@ compiler or establish that the marker family is physically compulsory.
 Deriving the actual Book03 gain and common factor on one admitted execution
 remains open. The result has no separate executable receipt and gives no
 GR/CORE promotion; GR_closed=false.
+
+
+## 21 October continuation: all42 finite Ward consumer and the common-map gate
+
+The [finite weighted-Ward continuation](../../02_REGISTRY/research/sources/d0_causal_native_weighted_synthesis_2026-10-21/weighted_dynamics/CONTINUUM_TO_FINITE_WARD.md)
+computes the material and geometric Ward defect covectors on the unchanged
+six-face star and the original forward scalar stencil. It derives the exact
+42-row identity
+\[
+L_h^*E_h=(a/b)W_{\rm geom}
++\bigl[K'(\tau q/\rho)/b\bigr]D_h^+q+W_{\rm mat},
+\]
+with all 16 coframe, 24 link, and 2 matter rows. Neither finite defect is
+set to zero. Under uniformly \(C^4\)-bounded samples, bounded inverse
+coframes, smooth link logs, \(C^1\) source slope, and the stated collar
+conditions, it proves \(W_{\rm geom},W_{\rm mat}=O(h)\). Consequently an
+existing smooth-regime full finite root with the specified kinetic collar
+and \(k\ge k_{\min}>0\) obeys \(q_h=q_*+O(h)\); approximate roots require the
+actual projected residual bound. This is conditional smooth-regime transport,
+not construction of roots, a bound for rough fields, or physical refinement.
+
+The two replays passed 29 material and 19 full-source checks on four
+diagnostic grids. Those grids are explicitly not stationary roots. In the
+local Python 3.9.6 / NumPy 2.0.2 / SciPy 1.13.1 environment, every status,
+scope flag, check name, and non-floating output matched the pinned receipts;
+only floating diagnostic fields differed from the recorded Python 3.13.5
+outputs. The reproducible inputs, output pins, and commands are indexed in
+the source directory README. The earlier statement that the finite defects
+still lacked an explicit all42 computation is superseded by this continuation;
+physical field-writer and Book selection remain open.
+
+The [Book03 source-identifiability theorem](../../02_REGISTRY/research/A4D_BOOK03_SOURCE_IDENTIFIABILITY_THEOREM_2026_10_21.md)
+shows that consistent relative branch ratios on connected positive support
+fix branch weights only up to one common positive factor. Actual charge jets,
+relative-ratio jets, and one absolute anchor value plus its first jet are
+needed to recover the full source; the closed loop sees that common mode.
+The [same-execution gate](../../02_REGISTRY/research/A4D_NEXT_COMMON_MAP_CONSTRUCTION_GATE_2026_10_21.md)
+now states the remaining task as one differentiable map from the original
+42 field directions and genuinely admitted inputs to the complete instrument,
+all outcomes, ledger, clock, archive, and absolute Book03 valuation. It
+requires simultaneous operator/source, absolute-price, and independent-input
+tests on that same execution. This narrows the next step but does not supply
+the map, native Book03 gain, physical input admission, or GR closure.
+GR_closed=false.
+
+
+### Absolute-source kernel of normalized amplitude records
+
+The companion [absolute-source lemma](../../02_REGISTRY/research/A4D_ABSOLUTE_BOOK_SOURCE_NONIDENTIFIABILITY_2026_10_21.md)
+shows that matching only a normalized coherent record fixes weights as
+\(w_\omega=a(y)\sqrt{q_\omega}\), leaving one common positive factor; in Book
+notation \(I_\omega=C_\omega+\tfrac12\log_\varphi q_\omega+J(y)\).
+Changing \(J(y)\) leaves normalized open-record predictions unchanged but
+changes the absolute log-norm and closed-loop source. This is a structural
+non-identifiability statement about normalized data, not a no-go for Book03
+and not a physical source selection.

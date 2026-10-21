@@ -10187,3 +10187,97 @@ A4D_OBSERVER_COMPLETE_CAR16_JULIA_CHOI_STAR_DENSITY_WELD_2026_10_20.md.
 The derivation is analytic and exact; the new note has no independent
 executable receipt. Physical admission of the t-family and evaluation of
 the full source on a single actual execution remain open. GR_closed=false.
+
+
+### Finite weighted Ward continuation: both defects and the smooth-regime bound
+
+The [finite-to-continuum continuation](sources/d0_causal_native_weighted_synthesis_2026-10-21/weighted_dynamics/CONTINUUM_TO_FINITE_WARD.md)
+consumes the existing weighted continuum proof and computes, on the original
+six-face action and forward scalar stencil, both the material product/inverse
+defect and the gravitational Lie-pullback defect. Its exact source identity is
+\[
+L_h^*E_h=(a/b)W_{\rm geom}
++\bigl[K'(\tau q/\rho)/b\bigr]D_h^+q+W_{\rm mat}.
+\]
+The pullback contains every one of the 16 coframe, 24 proper-link, and 2
+material source rows. The defects are explicit, generally nonzero finite
+arrays; this does not postulate a lattice diffeomorphism symmetry.
+
+The accompanying conditional estimate is materially stronger than the
+previously open “compute the finite defects” step. With uniformly \(C^4\)
+sampled fields, bounded inverse coframes, \(U_r=\exp(h\Omega_r)\), a
+uniformly \(C^1\) actual source slope, and complete compatible collars, the
+displayed product/inverse identities give \(W_{\rm mat}=O(h)\), while
+expansion of the original plaquette and its actual first variation gives
+\(W_{\rm geom}=O(h)\). Hence existing smooth-regime full finite roots with
+\(k\ge k_{\min}>0\) and the kinetic collar condition satisfy
+\(q_h=q_*+O(h)\). For approximate roots, the actual projected residual in
+the stated norm must also tend to zero. This is not a construction of roots,
+a rough-field estimate, or a physical compactness/refinement theorem.
+
+I reran both new checkers with Python 3.9.6, NumPy 2.0.2, SciPy 1.13.1,
+SymPy 1.14.0 and mpmath 1.3.0, directing outputs to temporary files so the
+pinned receipts were preserved. The discrete material replay passed all 29
+checks; the full-source replay passed all 19. Their local output hashes are
+df2cf87aec28d9b6fccd7a1061c026174ba588e54ca430bf6aa2c265853d825b and
+510de4c408128da774b42e4afcbbeecbbebabf5d6de506d18be0893d42768457.
+Against the recorded outputs, the check names, statuses, scope flags, and all
+non-floating values match exactly. Only 13 and 20 floating diagnostic fields
+respectively differ at low numerical precision; therefore the local files are
+not byte-identical to the pinned Python 3.13.5 receipts. The diagnostic grids
+are not stationary roots, do not prove actual PF refinement regularity, and
+do not establish the field writer or Book selection. The exact algebra is
+carried by the displayed identities; the scripts numerically replay their
+declared controls rather than provide interval enclosures.
+
+### Book03 source identifiability and one common admitted map
+
+The [source-identifiability theorem](A4D_BOOK03_SOURCE_IDENTIFIABILITY_THEOREM_2026_10_21.md)
+proves the finite graph statement needed after a candidate native Book03 map
+is specified: consistent relative branch ratios on connected positive support
+fix all branch weights up to one common factor. Relative ratio jets and actual
+charge jets determine the relative gains, but the full first source also
+requires one absolute anchor and its first jet. A value-only normalization is
+insufficient. The same common mode contributes to the actual fixed-z
+closed-loop determinant source, so it cannot be removed by rescaling feedback
+without changing the calibration.
+
+The companion [common-map gate](A4D_NEXT_COMMON_MAP_CONSTRUCTION_GATE_2026_10_21.md)
+states the smallest remaining scientific task: one differentiable,
+same-execution map from the original 42 field directions and admitted inputs
+to the complete report instrument, every outcome, retained work/archive,
+primitive ledger, clock and absolute Book03 valuation. It must satisfy
+operator/source identity, absolute price/source recovery, and every
+independent-input equation on the same boundary. The full128 port-ratio
+rigidity result supplies necessary ratio laws but neither the absolute
+normalizer jet nor a physical Book03 selection. The cap-one N=1 CQ compiler,
+full128 tape, causal archive and continuum constitutive model remain separate
+until that map identifies and transports their complete sources.
+
+These additions supersede only the earlier claim that the finite Ward defects
+had not yet been computed. They do not close general rough refinement,
+construct smooth joint roots, prove physical input admission, or establish
+GR_closed=true.
+
+
+### Normalized coherent records leave an absolute-source kernel
+
+The [absolute-source lemma](A4D_ABSOLUTE_BOOK_SOURCE_NONIDENTIFIABILITY_2026_10_21.md)
+is the coherent-amplitude specialization of the branch-identifiability
+boundary. Requiring only the normalized record
+\(V=\sum_\omega\sqrt{q_\omega}\,|\omega\rangle u_\omega\) forces
+\(w_\omega=a(y)\sqrt{q_\omega}\), equivalently
+\(I_\omega=C_\omega+\tfrac12\log_\varphi q_\omega+J(y)\), but leaves the common
+positive factor \(a=\varphi^J\) arbitrary. Any smooth change of \(J(y)\) is
+invisible to normalized open-record predictions and changes the absolute
+log-norm source; if it enters the actual feedback operator, it also changes
+the fixed-\(z\) determinant source. This does not conflict with the general
+finite-graph theorem: the latter says that ratio jets plus actual charge jets
+and one absolute anchor value/first jet are the minimal data that remove this
+kernel.
+
+The lemma is exact and structural, with no separate executable receipt. It
+does not prove that Book03 leaves \(J\) free: the owned memory-algebra sum,
+quadratic response and complete feedback partition must still determine
+\(J,DJ\) on the original fully paid full128 execution. This carrier remains
+distinct from the cap-one N=1 CQ compiler.
