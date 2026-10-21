@@ -244,3 +244,16 @@ selection, the actual readout of the classified null source fibre, and uniform
 physical refinement have NOT been established. Keep PR #334 Draft and
 `GR_closed=false`. This remains the single next closure gate; do not start
 another geometry census or repeat completed proofs.
+
+
+## Finite paid rational writer after the exact-palette obstruction
+
+The exact-palette theorem above is not weakened: the original cost20/L4 programme contains a coefficient with a prime-421 square-root obstruction, so no exact finite Golden/CNOT word from the stated seeds can produce that **same exact pure programme**. The new bounded research application [paid rational resource writer](A4D_PAID_RATIONAL_RESOURCE_WRITER_2026_10_21.md) instead gives a different, explicitly approximate and paid finite compiler.
+
+For any finite address/stencil list of real orthogonal programme/material targets it builds EXACTLY orthogonal rational approximants. One COMMON integer denominator R clears all matrices with a bit bound polynomial in the number of addresses and log precision. The coherent writer's successful Kraus block is \`K_s=(R/(dB)) direct_sum U_hat_a\`, with \`B=2^ceil(log2 R)\`, \`K_s* K_s=sI\` and \`s>1/(4d^2)\`; its full coherent failure effect is \`(1-s)I\`. Every successful and failed coarse branch therefore preserves the entire protected oldRIGHT Gram. The native factory failures, clock, work, table computation and routing remain charged, and the result is only finite-precision source stencils, not a differentiable fixed-word field map. The original all42 exact stationary solution is **not** thereby a root of any particular finite code.
+
+The original exact-writer obstruction and the finite approximation thus agree. The former rules out equality at fixed finite word/palette; the latter proves approximability with polynomial bit-length and a readiness lower bound on the separately declared *counted-CQ* resource-writing interface. No newly selected primitive or seed outside the original Golden gate grammar is inferred.
+
+A further exact [Golden mean-Info fibre theorem](A4D_GOLDEN_MEAN_INFO_FIBRE_2026_10_21.md) proves that even agreement of the original full128 port law, real costs, **the entire expected Shannon Info** and the first amplitude log-normalizer jet at one point does NOT identify Book03's branchwise amplitude second source: a centred, mean-preserving gain variation has negative quadratic-response curvature \`-4 ln(phi) Var_q(v)\`. The actual nonblank Golden pair gives \`-4 p^3 ln(phi)\`. These are alternative candidate gain tables, not claimed to be admitted D0 physical variations. The result therefore **increases** the burden of the Book03 selection test: the full branchwise and memory-algebra valuation must be derived before promoting the counted-CQ writer+processor cost.
+
+Exact code, frozen 124 author checks, two additional finite/symbolic checkers and author receipts are in [the paid-writer source packet](sources/d0_paid_resource_writer_2026-10-21/PROOF.md). This does not change Gate A/B/C: actual single-initial-controller admission, complete Book03 ordered-memory valuation, independent upstream input equations, source-normalized physical refinement and the raw216 norm remain OPEN. The physical action/source equality and GR closure are still unproved. \`GR_closed=false\`.
