@@ -9981,3 +9981,66 @@ common-null carrier; the weighted-continuum theorem does not itself provide
 this finite/refinement estimate or make CQ entropy the compulsory Book03
 price. Native admission, complete upstream price and physical selection
 remain open, without adding a new selector.
+
+### 21 October continuation: native second jets, causal feedback, and actual PF weights
+
+The [causal/native/weighted synthesis](A4D_CAUSAL_NATIVE_SOURCE_AND_WEIGHTED_DYNAMICS_2026_10_21.md)
+adds three scoped consumers to the same #334 owner. The native packet
+constructs a paid finite coherent report from the original Julia/CAR
+operations and matches the original report through the full ambient two-jet
+on its primary family; transfer of the all-42 roots and Hessian inertia is
+conditional on the actual input/call baseline having the stated
+field-independent jets. The proof does not extend the new circuit to the
+whole off-null `K` functional, supply the original moving Julia access or
+independent material copies for free, or select the native field writer.
+
+The causal packet realizes the original full128 feedback determinant by a
+strictly forward complete archive return. It retains the compulsory first
+clock tick and proves the finite feedback/source jets, including dark-rank
+birth and moving-`z` boundary terms. This is equality of the specified
+feedback component; routing, preparation and the rest of the absolute
+Cost−Info/work ledger are still those of the chosen execution and are not
+identified with fresh measured128 rounds.
+
+The weighted packet applies the existing full CQ constitutive law with the
+actual prescribed inhomogeneous positive PF profile. Its continuum Ward
+identity is `d(F-x F_x)+y F_y dlog(rho)=0`, giving
+`d(rho y/F_x)=0`; it constructs a local positive irrotational dust
+representative for every such smooth `rho`, retains the original/reduced
+metric and nonnull torsion distinction, and proves the coupled fixed-collar
+Jacobi-kernel comparison. The finite section gives an exact source
+substitution and displays both Ward defects; it does not prove they vanish
+for finite roots or under refinement. The independent weighted review passes
+in its local continuum domain, and its Decimal checker passes 42 controls;
+the replayed receipt is byte-identical, with diagnostic arithmetic rather
+than an interval enclosure.
+
+The native checker passes on the frozen 13-source input snapshot at
+`ea0ea3bed801b3a5f6bb147e803c75794214577b`; its output is byte-identical to
+`native_source/CHECK_RESULT.json` (SHA-256
+`155f821709c876cea31fa67daac7c46dd15947bdb3b36e664cb99109061aed2f`).
+The live PR tree has since appended the independent exact four-setting
+source evaluation to `A4D_PAID_GOLDEN_WORD_QUERY_SOURCE_LIMIT_2026_10_21.md`
+in commits `08eac073` and `908eaa7e`, so the frozen native checker correctly
+rejects that one live-path byte mismatch. Replaying it against its recorded
+immutable input snapshot passes; the later source extension is retained and
+not copied backward or silently substituted for the reviewed input.
+
+The causal checker passes all 68 named controls under Python 3.12.14,
+NumPy 2.3.5, and SciPy 1.17.0. The locally generated JSON SHA-256 is
+`7eb615235cdd870426d08416a3b60f1e47d9883c8357e81ed12c981641e88d24`,
+while the frozen receipt is `38d40ba3ada024c1dcfceac823b7e7c0e67919e97525e1c9d49b973468a91df9`;
+field-by-field comparison finds differences only in floating-point
+diagnostic entries, with every named predicate and scope field unchanged.
+The finite-source and second-source finite-difference diagnostics
+remain below the checker's bounds. The source reviews likewise classify
+these matrix diagnostics as numerical rather than interval certificates.
+
+The exact next bridge is therefore the finite-to-continuum transport of
+`rho_z,fhat_z,qhat_z` to the weighted continuum `rho,x,y`, with quantitative
+control of both finite Ward defects and convergence of the complete field,
+preparation, clock, internal and baseline source. Physical writer/query
+admission, compulsory same-process Book valuation, upstream stationarity,
+finite refinement and physical selection remain separate obligations.
+Neither the new native two-jet nor the weighted continuum theorem closes
+those gaps; `GR_closed=false`.
