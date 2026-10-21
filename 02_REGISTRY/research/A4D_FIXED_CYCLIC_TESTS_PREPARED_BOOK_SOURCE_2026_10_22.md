@@ -186,6 +186,30 @@ At t=0 the effect is \(E_0=\mathrm{diag}(\cos^2 a,\cos^2 b)\); its exact derivat
 \]
 Thus this is **not** a diagonalized-scalar or frozen-query control. Direct 4D \(\eta=\Pi WW^\dagger\Pi/2\) and independent 2D E powers verify (1) k=1..6, for t=0 and t=0.31. Positive unconditional event probabilities (3) are checked at k=2,3,4, with NO discard of failure mass. Direct exact 2×2 determinant from \(-\log[1-\zeta\operatorname{Tr}F+\zeta^2\det F]\) is compared to R=2 moment expansion. Stable \(\log1p\) arithmetic avoids spurious cancellation in eigenvalue logs at tiny \(\zeta\). The difference is approximately \(4.89\times10^{-19}\) (t=0), within the certified \(5.7825\times10^{-19}\) bound for \(d=2,r_R=1\). The source derivative and its k≤4 moment approximation are also checked by finite differencing and the noncommuting trace formula. These are diagnostic finite numerical checks, not a separate fully sourced original CAR128 execution.
 
+
+## 3a. Reverse GR strategy: the moving active cut is uniquely characterized by NO-LOSS + MINIMAL RANK, but not by verification alone
+
+Let an actual full paid finite preparation \(W_y:H_d\to K_D\) satisfy \(W_y^\dagger W_y=I_d\) and retain the entire original work/reference/archive in \(K_D\). Consider a physically supplied orthogonal active projector \(P_y\). The following are EXACTLY equivalent at a fixed field point:
+
+1. Every protected prepared input remains in the active sector with probability ONE, with no success conditioning: \(\|P_y W_y\psi\|^2=\|\psi\|^2\) for all \(\psi\in H_d\).
+2. \(P_yW_y=W_y\).
+3. \(\operatorname{ran}(W_y)\subseteq\operatorname{ran}(P_y)\).
+
+The proof of (1)->(2) is the exact Pythagorean identity \(\|(I-P)W\psi\|^2=\|\psi\|^2-\|PW\psi\|^2=0\); the rest is immediate. Hence \(\operatorname{rank}(P_y)\ge d\). If the ACTUAL physical active-sector rule additionally chooses the **minimal no-loss Hilbert rank d**, there is exactly ONE active projector:
+\[
+ \boxed{P_y=W_yW_y^\dagger.}\tag{17}
+\]
+It is automatically covariant under consistent co-transport of the output/history carrier. This provides a **candidate endogenous physical selector** for the previously hypothesized moving projector, rather than freely defining it by the desired Euler equation. But it is still CONDITIONAL on two separate native claims: that the physically active projector must contain every complete prepared logical state without attenuation, and that active rank is physically minimized. D0 future-verification sufficiency alone proves NEITHER condition. Even a rank-d projector can preserve injectivity of \(PW\) without preserving norm or fixing the range: for \(W e_i=e_i\subset\mathbb R^4\), \(P_\theta\) projecting onto \(\operatorname{span}(\cos\theta e_0+\sin\theta e_2,e_1)\), \(0<\theta<\pi/2\), has \(\operatorname{rank}P_\theta=2\) and \(P_\theta W\) injective but \(P_\theta\ne WW^\dagger\). A mere minimum number of distinguishable labels or smallest word length cannot substitute for the NORM/no-loss axiom.
+
+There is a matching **one-event scalar-anchor selection test**. For the true COMPLETE positive reporter effect \(E_y=W_y^\dagger\Pi W_y\), the following are equivalent at the root \(y_*\): (i) \(\Pr(\Pi\mid\psi)=r_*\) is the SAME for EVERY normalized protected logical \(\psi\); (ii) \(\langle\psi,E_*\psi\rangle=r_*\|\psi\|^2\) for all \(\psi\); (iii) \(E_*=r_*I_d\), by polarization. Thus an actually demonstrated *protected-input independence of the report* would establish the scalar-anchor hypothesis for the exact one-moment ALL42 first source, without demanding that \(E_y\) remain scalar in an open off-shell chart. A check only on ONE prepared \(\psi\) does NOT suffice.
+
+Together these are two small, verifiable SAME-EXECUTION Book03/operational obligations:
+
+- determine from the original physical active/archive rule whether the cut is **lossless for the protected full input space and of minimum active rank**; if YES, (17) forces precisely the moving cut used by the Golden comparator, without fitted geometry, if NO, reject that selection route;
+- determine whether the ORIGINAL paid reporter is input-independent on ALL protected logical/oldRIGHT columns at the physical root; if YES, the one-bit measured \(D\bar r\) rigorously recovers the entire prepared-cut Book first source by (13), if NO, use the full \(d^2\) or k-moment source tests.
+
+Neither result supplies the compulsory Book03 Info, actual upstream preparation Euler/clock, source-normalized refinement, or stationarity selection. Replacing a genuine independent free moving preparation by a constrained deterministic state requires the ACTUAL native writer and its causal adjoint; simply calling the cut minimal does not pay its preparation cost.
+
 ## 4. What this actually removes and what it cannot
 
 **Proved on the supplied actual \(W\)-input type:** all spectral moments and all first derivative jets of the mathematical moving prepared-cut Book component have a source-sufficient **fixed positive measurement language**, compatible with a counted/retained complete tape and finite Golden/H+CNOT/Toffoli gates. An actual implementation no longer needs to execute \(W^\dagger\), implement \(WW^\dagger\) as a physical projector, or freeze the prepared input for measuring that mathematical component. The known original H/fair-pair Golden factories provide a plausible declared paid input interface; every independent copy and higher-order cyclic gate must truly be supplied and charged.
