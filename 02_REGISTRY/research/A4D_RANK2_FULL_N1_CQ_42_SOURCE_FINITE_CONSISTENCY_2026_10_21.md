@@ -180,3 +180,24 @@ The new original finite rank-two constructive coframe is e_h=diag(A v_h,B/v_h,r,
 The direct conservative return from this projection to the true historical theorem is the full affine-source identity on Sigma,
   D_42 S_N1 = M tau(a Dsum f+b Dsum q)
 with the SAME original Golden price. Its higher material Hessian remains nontrivial off Sigma. Do not erase the actual previous PF-jump negative control or claim an exact 42-row Einstein solution.
+
+
+## 10. Original Golden depth repairs the PF-jump limit, and scalar1 admits an EXACT finite nonlinear flux root — 21 October
+
+**New owner, consumed here:** [A4D_NATIVE_GOLDEN_PF_C2_AND_MATERIAL_FLUX_2026_10_21.md](A4D_NATIVE_GOLDEN_PF_C2_AND_MATERIAL_FLUX_2026_10_21.md), actually executed two-file [packet](sources/d0_native_golden_pf_material_flux_2026-10-21/AUTHOR_RESULT.json).
+
+The hostile PF-jump example (1,2) above is a VALID counterexample to positivity-only site-weight refinement, but it is NOT a counterexample to the true ORIGINAL high-depth Golden nested-box tower: the inherited explicit discrepancy estimate and the actual equal-cost choice n(L)=64*min{s:phi^s>=L}+128 imply uniformly on every genuine L^4 site, with h=1/L,
+
+    ||rho-1|| < 9 h^3,
+    ||nabla_h log rho|| <=36 h^2,
+    ||nabla_h^2 log rho|| <=72 h.
+
+This follows for ALL L>=4 by exact rational inequalities (not the L4/L8 finite census). Original TRUE READY mass remains 2 p^3 a_n -> 0.3416407865..., and the original fully measured Golden-prefix Code-Info source cancels exactly. No site relabeling, artificial uniformly sampled prior, density field, or fitted N1 normalization occurs. On the actual compact non-VSI rank2 time chart, original finite six-face f_star,h=h c(t)+O(h^2) with c generally nonzero. Since the SAME fixed N1 GoldenMaster F_y is analytic and uniformly C1 in its strict chart, its REAL temporal material scalar Euler error induced solely by replacing rho=1 with this actual rho_n satisfies
+
+    |E_psi1(rho_n)-E_psi1(1)| <= C||rho_n-1|| = O(h^3),
+
+unlike O(1) for the artificial fixed (1,2) jump. The open weighted stored-D endpoint jet is NOT zero at finite h; its PF component obeys ||D_rho-D_1||=O(h^2), ||(D*D)_rho-(D*D)_1||=O(h) under bounded original coframe/link and compatible adjoint assumptions. This is operator norm consistency, not an automatic whole-HJR price/source comparison with L^4 or other growing multiplicities.
+
+**Exact nonlinear matter equation resolved (one REAL independent scalar row class):** For the same sigma-minus ORIGINAL F_N1, fixed finite coframe/links and any actual positive PF rho_i, let u_i=(psi_i+1-psi_i)/h, q_i=g_i^00 u_i^2+g_i^11 eps^2. The true interior Euler is the difference of neighboring FULL nonlinear currents J_i=F_y(-tau*f_i/rho_i,tau*q_i/rho_i)g_i^00 u_i. For a regular positive interval satisfying dJ_i/du_i>0, solve each J_i(u_i)=J and determine the unique shared J by the ORIGINAL fixed scalar endpoint difference. This solves all interior psi1 equations EXACTLY, even though the corrected nonlinear material q_i becomes nonzero. On the TRUE original n24/L8 4D box column (4,4,4), the owner checker computes the actual finite noncommuting six-face scalar and native PF rho, then reports source residual 3.79e-4 BEFORE vs 4.44e-16 AFTER, independently checked by full native N1 scalar price secant 1.41e-15. Correction of scalar gradient max4.52e-5; new q max1.32e-5; both scalar endpoint values unchanged.
+
+**Remaining coupled finite root** is therefore a genuine gauge/collar-compatible WHOLE time-slab 16-coframe+24-Lorentz connection and transverse scalar2 system WITH the small generated q, plus physical original Book03 action/selection/input and C1/C2 refinement. The full finite exact rank2 Einstein root is NOT promoted; other source rows have NOT been declared zero merely because scalar1 is solved. The prior all-slab covariant-link counterexample stays necessary. This update eliminates the specific PF-regulator hostile case on the actual prescribed original deep-cost tower and solves one original nonlinear matter source; it does not erase the full native Book/source interface.
