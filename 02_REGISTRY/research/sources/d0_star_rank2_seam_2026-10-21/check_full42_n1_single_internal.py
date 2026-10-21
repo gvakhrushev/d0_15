@@ -119,6 +119,40 @@ def direct_CQ_value(nodes,h,weights):
         out+=rho*F(-tau*f/rho,tau*q/rho)
     return out/(-tau*a)
 
+def direct_coframe_second_variations(nodes,h,weights):
+    """Independent 75-digit ORIGINAL N1 CQ PRICE second differences in
+    two REAL raw coframe directions, without using the Euler derivative.
+    The original literal six-face holonomies are re-evaluated every time.
+    """
+    from importlib.machinery import SourceFileLoader
+    native_path=(Path(__file__).resolve().parents[3]/
+       "02_REGISTRY/research/sources/d0_weighted_two_field_rank2_2026-10-21/native_master.py")
+    Golden=SourceFileLoader("d0_native_n1_second_price",str(native_path)).load_module().GoldenMaster
+    model=Golden(75)
+    tau=.05
+    def price(nn):
+        value=model.a*0
+        for j,rho in enumerate(weights):
+            f=float(star_density(nn[j],nn[j+1],h).real)
+            q=float(matter_query(nn[j]).real)
+            value+=rho*model.F(-tau*f/rho,tau*q/rho)
+        return value/(-tau*model.a)
+    step=.0003
+    base=price(nodes)
+    values=[]
+    for a,mu in ((0,0),(1,1)):
+        terms=[]
+        for sign in (-1,1):
+            trial=[dict(e=c['e'].copy(),U=c['U'].copy(),v=c['v'].copy())
+                   for c in nodes]
+            trial[1]['e'][a,mu]+=sign*step
+            terms.append(price(trial))
+        values.append(float((terms[0]-2*base+terms[1])/(step*step)))
+    assert values[0]>2 and values[1]<-.7,values
+    return dict(d2_e00=values[0],d2_e11=values[1],
+                native_positive_and_negative_curvature=True,
+                numerical_unrestricted_original_coframe_minimum=False)
+
 def direct_42_jets(nodes,h,weights):
     """Verify EACH of 42 sources directly from complex differentiation
     of the original N1 ENTROPY VALUE rather than differentiating a
@@ -173,6 +207,7 @@ def run(weights=(1.,1.),n=2,limit=50):
     negative=int(np.count_nonzero(eig < -1e-3))
     positive=int(np.count_nonzero(eig > 1e-3))
     assert asym<1e-7 and negative==8 and positive==8,(asym,eig)
+    second_direct=direct_coframe_second_variations(nodes,h,rhos)
     # Genuine original metric, nonflat SO(1,3) spatial based plaquettes
     # and rank-two REAL matter are checked independently.
     sig=[];comm=[];stress=[]
@@ -207,6 +242,7 @@ def run(weights=(1.,1.),n=2,limit=50):
         eig_min=float(eig.min()),eig_max=float(eig.max()),
         symmetry_error_inf=asym,
         unrestricted_16coframe_minimum=False),
+      independent_original_complete_price_second_jet=second_direct,
       Lorentz_metric_inertia=sig,
       original_spatial_based_holonomy_norms=comm,
       two_REAL_CAR_stress_ranks=stress,
