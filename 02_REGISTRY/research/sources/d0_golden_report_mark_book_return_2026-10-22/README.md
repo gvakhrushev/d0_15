@@ -132,6 +132,47 @@ The measured original 0/10 report's complete CQ `Cost-Shannon` slope is `1-h'_ph
 
 **Crucial distinction.** The original initialized-work *unmarked/equal-schedule* `J` remains exactly code blind. This theorem computes the **different physically priced terminal-code programme under a stated analytical mark**, not an already accepted source of the original physical `H+J+R`. The original Book03 `P_N`, elapsed/stage clock, true heat `Delta_N`, noncommutative path memory and branchwise Info, native controller/code selection and upstream preparation must be established on the same original execution. In particular, an extra elapsed-code tick can change the heat/clock first source; it cannot be frozen because the feedback source looks correct.
 
+
+## 3a. STRONGER SAME-PROGRAMME RESULT: ONE ORIGINAL GOLDEN READY TREE, not summed independently priced sites
+
+The old source `A4D_ORIGINAL_GOLDEN_READY_COMPLETE_CQ_COST_INFO_PF_SOURCE_2026_10_21.md` supplies a TRUE single stopped native `F/R` programme with one subsequently selected spatial address. At original depth `n=20`, `K=F_21=10946` equal-cost base words are distributed among 256 actual sites, with positive exact native counts `n_z` satisfying `sum_z n_z=K`. The two actual READY endings `FR,RF` have ORIGINAL born probability `p^23` each. Therefore BEFORE any new Book assumptions:
+
+```
+pi_z = Pr(READY,z)=2*n_z*p^23,
+P_READY=2*K*p^23,
+rho_z = 256*n_z/K,
+BOX pi_z/rho_z = P_READY/256 EXACTLY for all 256 sites.
+```
+
+Let `r_z(y)` be the SAME existing original two-band report conditional on actual site z with the true original inverse-PF operands `x_z=eta_h² fhat_z/rho_z`, `y_z=sigma eta_h² qhat_z/rho_z`. Take the **one actual complete tree and one declared fixed initialized-work cut**. If the genuinely complete marked scalar-reporter extension has common READY terminal mark factors `u_0,u_1` (including the SAME paid READY-prefix cost20+3 and all equal-schedule compiler/factory costs, while retaining both original 0/10 terminal charges) and an early/unready marked mass `v`, its *single whole-tree normalizer* is
+
+```
+n_full(y) = v + sum_z pi_z [u_0(1-r_z(y))+u_1 r_z(y)] .
+```
+
+The prefix itself is paid in `u_b`: the Born probability `pi_z` and its separate cost mark are both present and not merged. Genuine unready/abort records appear in v, never conditioned away. Let the SAME normalized Book early return operator `C_E` be fixed to first order on the genuine 42-field chart and let the late written records remain orthogonal to the original initialized cut. At the original common-null primary family, **all** `r_z=r_0` and
+
+```
+n_0 = v + P_READY[u_0(1-r_0)+u_1 r_0] > 0,
+K_B := r_R*zeta*sum_j b_j/
+            [n_0*((1-zeta)*n_0+zeta*b_j)] > 0
+       iff C_E != 0 .
+```
+
+The original fixed full10-sign/two-band scalar report has exact field source `Dr_z|Sigma=eta_h² [r_f D fhat_z/rho_z+sigma r_q D qhat_z/rho_z]`, where `r_f=4 z_0 Q p^11` and `r_q=8 z_0 p^6(R+Q p^6)`. The entire ORIGINAL ONE-TREE source is therefore
+
+```
+BOX D_42 J_Book,init|Sigma
+ = K_B (u_1-u_0) * (P_READY/256) * eta_h²
+   [r_f D_42 sum_z fhat_z + sigma*r_q D_42 sum_z qhat_z].
+```
+
+This is a **single normalized determinant of the actual ONE addressed programme**, not the unlicensed sum of 256 independent Book actions. It uses the true original integer counts, positive unequal PF weights, actual 0/10 charge difference, ALL original 42 ambient rows and the exact finite `lambda_sigma(2^-20)`. If `C_E!=0` and `u_1!=u_0`, its source is a nonzero field-independent multiple of the already published Golden READY measured-CQ all42 source (C1) at the primary family; in particular sigma=-1 gives exactly the old Einstein–CAR matter ratio, not a fitted limit value. Actual shared READY-prefix charge factors cancel only in the *relative site ratio*; the FULL marked normalizer and Book source still pay them.
+
+The necessary caveat is now even sharper: this is a **conditional physical-return theorem** on the complete true address distribution. The real reported scalar coin and all its directions must be physically generated on this same history, the **entire** original early return `C_E` must be computed with the true stage/elapsed work and have `D_42 C_E|Sigma=0`, the genuine Book cut/Info/cost mark and full heat/stationary rules must be identified, and field-dependent source-compiler histories may violate the common `u_b` law. This is not an accepted compulsory Book03 action or full D0→GR forcing. The result removes only the previous excess assumption of separately paid per-site Book functional additivity.
+
+**Small exact address test.** At `n_z=29,39,48,78`, the literal `pi_z/rho_z` values all equal `P_READY/256 ≈ 0.001334534324492789`; the proof holds algebraically for the entire actual 256-address tree, without rerunning the owner's 10946-prefix enumeration.
+
 ## 4. Alternate readout cut: independently charged and unselected
 
 For completeness, if a distinct **REPORT** cut is declared with `B_t(r)=u_1,t r I_H` instead of the existing initialized-work cut, then `T=B/N` and `T'_r=u_1(v+u_0)/n^2>0`, giving `D_r J=-r_R d zeta T'_r/(1-zeta+zeta T)<0` even when early return `C_t=0`. This is a positive alternative algebraic source, **NOT** a proof the original Book03 cut may be freely changed. The initialized-work result above is stronger for the actual old-cut consumer when `C_t!=0`.
