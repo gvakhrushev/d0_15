@@ -103,6 +103,20 @@ This pairs with the previous strict lower bound. Even though the finite-mesh sou
 
 There is also a FIXED-NATIVE GEOMETRY negative control against simply appending this price to an unrelated whole HJR. Consume `A4D_BRINKMANN_REFERENCE_COCYCLE_GR_BREAKTHROUGH_SYNTHESIS_2026_10_20.md`, §2 and `d0_global_result_composition_2026-10-20/FULL_PRICE_COMPOSITION.md`, (18). On the exact original constant-H null shear `H=2t`, the based plaquettes are identity, the matter gradients vanish, and the selected two-band reporter's `r_a(y)` is constant: hence `D_t r_a=0` and the new marked report-feedback gives `D_t J_report=0`. But for the UNCHANGED full original HJR/positive-adjoint carrier the independently published complete normalized full source has `L^(-4) D_t S_HJR>1/200000000` for `L>=256` under its stated hypotheses. Thus a proposed genuinely ADDED `S_HJR + J_report` with no other source cannot equal the Einstein/J2 first source on that flat direction. **The full cost/heat/Info/clock/reference must be recomposed on ONE real programme**; the present positive marked-return source cannot be used as a fitted patch that cancels a distinct HJR source. This is a scoped conditional obstruction, not a no-go for a newly derived full Book programme.
 
+
+### Explicit complete positive instrument underlying the diagnostic fixture
+
+The two-eigenvalue fixture is not an invented unconstrained return matrix. It has a completely normalized finite isometric dilation on `H=C²`: choose `R=diag(1/2,1/4)`, readiness `a=4/5`, pairwise orthogonal output work sectors `|init>,|early_perp>,|late0>,|late1>`, and fixed initialized embedding `i|psi>=|init> tensor |psi>`. Define the actual UNMARKED full branch maps
+```
+W_E |psi> = sqrt(1-a) [ |init> tensor sqrt(R)|psi>
+                      + |early_perp> tensor sqrt(I-R)|psi> ],
+W_0 |psi> = sqrt(a(1-r)) |late0> tensor |psi>,
+W_1 |psi> = sqrt(a r) |late1> tensor |psi>.
+```
+Their full effects sum `(1-a)I+a(1-r)I+arI=I` for every 0<r<1, retaining the whole early complement and BOTH late reporters. Their initialized corner is `i†W_E=sqrt(1-a)sqrt(R)`, so the true early `C=(1-a)R`. Assign REAL fully retained transcript costs `c_E=1,c_0=1,c_1=2`. Marking the three complete branches by `exp(-t c/2)`, `t=ln(phi)`, gives the diagnostic `n(r)=p-a p³r`, `C_t=p(1-a)R` exactly. The numerical checker is therefore a genuine CPTP/finite-Kraus **mathematical** fixture, not proof these four work sectors and `i` have been physically prepared/selected by D0.
+
+This fixture verifies that positive complete recording, a preserved original cut, and differing 0/10 branch costs are mathematically compatible with a nonzero normalized Book first source. In an ACTUAL retained hardware clock, early abort may be orthogonal to the initial state when its stage/elapsed registers are included. That case is `C_t=0` and is explicitly a FAIL of this mechanism; no unpriced reset may be inserted to force overlap.
+
 ## 3. Consumer: the already-owned 42-source equality, with NO fitted Einstein coupling
 
 For one genuine shared local execution (same input, report, cut, early corner and cost-mark), suppose all original spatial addresses share the SAME normalized ratio `C_t/n_t` on the primary common-null stratum up to genuinely common charged-prefix scaling, and the same `r_a(y)` are supplied by the original two-source-moment instrument. Then
