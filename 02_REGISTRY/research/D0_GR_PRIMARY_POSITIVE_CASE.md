@@ -672,3 +672,14 @@ admission, ordered Book03 valuation and physical stationary selection
 remain the [same common-map gate](A4D_NEXT_COMMON_MAP_CONSTRUCTION_GATE_2026_10_21.md).
 The exact original all40+2 family is consumed unchanged; no new
 geometric root census or physical GR promotion is made.
+
+
+## Source-convention architecture lock: canonical star versus exact sourced Brinkmann owner (21 October 2026)
+
+The [finite original-owner sign theorem](A4D_ORIGINAL_STAR_NULL_CART_SIGN_AND_ALL_ORDER_CQ_RETYPE_2026_10_21.md) resolves a concrete cross-owner interoperability bug. The original Cartesian flat-star source defines G2*STAR=-EPS6, whereas the exact 40-to-3-to-1 Brinkmann checker constructs +EPS6 directly in its null-frame pair(E,u,v,R). After a PROPER det=+1 null-to-Cartesian internal frame transport, their original finite six-face actions are negatives OFF SHELL, with arbitrary true P-P^-1 holonomy curvature and every 16+24 variation. A frame/gauge transformation ALONE does not supply this relative minus.
+
+At the SAME scalar/top field and old lambda_minus=-kappa, the exact full 42-field AFFINE source identity is
+  D(P_Brinkmann-kappa*q)=-D(P_canonical+kappa*q).
+Thus the earlier Cartesian sigma-plus-looking rank-two affine O(h) residual is a coordinate-typed stationarity target for the old sourced-null coupling, not proof that a new Golden orientation has been physically selected. The correct complete same-N=1 CQ price is F_cart(x,y)=F_null(-x,y), not the DISTINCT original sigma-plus detector law. Under the old exact auxiliary master equations its (s,P,a) section changes signs, the coframe ratio P/a does not, and the **ENTIRE nonlinear material function K(t) stays unchanged**. This preserves the actual inverse-PF nonlinear vertices without fitting a new matter sector.
+
+Mandatory new owner type before joining any source across geometries: CurvatureConvention=(EPS_PLUS_NULL or G2STAR_NEG_EPS_CANONICAL); GoldenQueryMatterSign=separate original supplied sigma; PriceContraction=the single ACTUAL full N=1/Book ledger. Owners must supply the explicit x->-x retyping as a pullback of one function; generic comparisons of the same kappa decimal or matching linear slopes cannot replace it. The old exact null family is preserved unchanged. The non-VSI rank-two finite representative remains a numerically O(h) normalized affine SOURCE sequence, not an exact finite all42 root or compulsory physical execution. Proper connected-gauge finite source inversion, full nonlinear first-source bounds and original field writing/clock/Book selection remain open. GR_closed=false.
