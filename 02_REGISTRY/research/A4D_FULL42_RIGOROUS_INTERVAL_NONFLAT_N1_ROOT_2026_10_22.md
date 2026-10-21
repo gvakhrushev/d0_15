@@ -57,7 +57,7 @@ e^Y=\sum_{n=0}^{30}Y^n/n!+E,\quad
 The last inequality is verified using **exact integer arithmetic**
 \(2\cdot 10^{120}<31!\cdot2048^{31}\), and \(e^{1/2048}<2\). Add the full complex rectangle \([-10^{-120},10^{-120}]+i[-10^{-120},10^{-120}]\) to each entry, and square the resulting interval matrix **ELEVEN TIMES**. Interval multiplication then contains the true \(e^X\) for the ENTIRE complex input box, with no missing Taylor tail. Original fixed boundary boosts use rigorously interval-enclosed scalar exponentials. Every Lorentz inverse is the exact algebraic \(\eta U^\top\eta\), valid for the TRUE exponentials.
 
-No numerical finite-difference step, nonrigorous matrix exp or fitted 4×4 holonomy is used in the final existence inequality. The complex entropy/logarithm branch is analytic on the entire verification box because both true click values have strictly positive real parts between 10^-6 and10^-5 and the real parts of \(1-\mathrm{click}\) exceed 0.9999. The original coframe inverse exists on that complex box: its actual Gauss elimination is performed in the interval field with every pivot enclosure excluding zero. The complete scalar price satisfies \(|S|<10\) for every complex \(z\) in the polydisc \(|z_j-z_{0j}|\le R=10^{-4}\).
+The final existence inequality does not rely on uncontrolled numerical finite differences, a nonrigorous matrix exponential or fitted holonomy: the derivative samples are enclosed by outward intervals with explicit Cauchy remainders, and the matrix exponentials have the explicit \(10^{-120}\) tail above. The complex entropy/logarithm branch is analytic on the entire verification box because both true click values have strictly positive real parts between \(10^{-6}\) and \(10^{-5}\) and the real parts of \(1-\mathrm{click}\) exceed 0.9999. The original coframe inverse exists on that complex box: its actual Gauss elimination is performed in the interval field with every pivot enclosure excluding zero. The complete scalar price satisfies \(|S|<10\) for every complex \(z\) in the polydisc \(|z_j-z_{0j}|\le R=10^{-4}\).
 
 ## 3. 42-source and 1764-Hessian rigorous bounds
 
@@ -77,7 +77,7 @@ for \(i\ne j\) use
 \(-[\operatorname{Re}S(z_0+i\delta_J(e_i+e_j))-\operatorname{Re}S(z_0+i\delta_J(e_i-e_j))]/(2\delta_J^2)\).
 Outward-rounded complex intervals enclose every scalar price evaluation, so the resulting J is a **true interval matrix containing the exact Hessian**. Its symmetry is built into the scalar-price formula, independently from the native Euler-gradient implementation.
 
-A 42×42 numerical inverse of the old original Euler Jacobian is used ONLY as a proposal for a preconditioner. Every entry is immediately converted to an EXACT finite decimal rational. Its validity comes solely from the subsequent interval product \(I-AJ\), not from floating point rank, SciPy tolerances, or a truncated singular value.
+The current replay proposes \(A\) by forming the Hessian of the SAME full scalar CQ price with 57-digit imaginary finite differences at \(\delta=10^{-7}\), numerically inverting that proposal, and converting every entry to an EXACT finite decimal rational. Neither that inversion nor its finite-difference truncation is trusted for existence. The only validity test is the outward interval product \(I-AJ\) using the independently enclosed full scalar-price Hessian. This uses one scalar-price normalization for both the proposed inverse and verified \(J\); it does not mix in differently scaled native Euler rows.
 
 ## 4. A validated uniform contraction, not a numerical Newton success claim
 
@@ -86,10 +86,10 @@ The independently completed validated replay with 115-digit outward interval pre
 | Quantity | Rigorous result (upper or conservative bound) |
 |---|---:|
 | \(\|D S(z_0)\|_\infty\) | \(<2.001\cdot10^{-67}\) |
-| \(\|A\|_\infty\) | \(28.882883969983666186738<29\) |
-| \(\|I-AJ\|_\infty\) | \(<2.746\cdot10^{-7}\) |
+| \(\|A\|_\infty\) | \(28.882884003054300244290<28.883\) |
+| \(\|I-AJ\|_\infty\) | \(<1.4691\cdot10^{-11}\) |
 | Cauchy Hessian-Lipschitz contribution after \(A\), at \(r=10^{-24}\) | \(<2.448\cdot10^{-5}\) |
-| Full Banach contraction | \(<2.474\cdot10^{-5}<0.01\) |
+| Full Banach contraction | \(<2.44558\cdot10^{-5}<0.01\) |
 | Center image displacement | \(<5.78\cdot10^{-66}\) |
 | Radius of invariant closed \(\ell^\infty\) ball | \(r=10^{-24}\) |
 
@@ -101,7 +101,7 @@ Indeed in the polydisc of half-radius \(R/2\) each third scalar-price partial is
 \]
 
 Consequently the map \(T(x)=x-A D S(x)\) is Lipschitz with constant
-\(q<2.474\cdot10^{-5}\), and
+\(q<2.44558\cdot10^{-5}\), and
 
 \[
 \|T(z_0)-z_0\|_\infty
@@ -110,7 +110,7 @@ Consequently the map \(T(x)=x-A D S(x)\) is Lipschitz with constant
 
 It maps the closed **real** ball to itself and contracts there. Banach gives one and only one real fixed point \(z_*\) in that ball. Furthermore \(\|I-AJ\|_\infty<1\) for square 42×42 A,J implies \(A\) is invertible, so \(A D S(z_*)=0\) implies the ACTUAL \(D_{42}S(z_*)=0\). The root is exact, not the rational center or an approximation.
 
-The strict inequalities have very large margins; the final code re-computes them on the repository's pinned native data. \`RESULT.json\` records the historical local proof run with the independently vetted explicit matrix-exp remainder. The reproduction entrypoint re-generates a candidate preconditioner from the repository's pinned native 42-row owner and performs the ENTIRE interval verification again; because each candidate is checked by \(\|I-AJ\|_\infty\), this generation is not a mathematical assumption.
+The strict inequalities have very large margins; the final code re-computes them on the repository's pinned native data. \`RESULT.json\` records the fresh local proof run with the explicit matrix-exponential remainder and same-price preconditioner. The reproduction entrypoint regenerates a candidate inverse from high-precision samples of the pinned complete CQ price, rationalizes it, and performs the ENTIRE interval verification again; because each candidate is checked by \(\|I-AJ\|_\infty\), this generation is not a mathematical assumption.
 
 ## 5. The exact root is genuine nonflat rank-two matter — AND a saddle
 

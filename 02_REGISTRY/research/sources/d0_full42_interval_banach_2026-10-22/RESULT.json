@@ -14,6 +14,7 @@
       1,
       1
     ],
+    "preconditioner_proposal": "57-digit imaginary finite differences of the same full scalar CQ price Hessian at delta=1e-7; numerically inverted, rationalized, and accepted only after the outward interval I-AH check",
     "complex_polydisc_radius": "1e-4",
     "abs_whole_scalar_price": "<10",
     "real_click_bounds": [
@@ -22,9 +23,9 @@
     ],
     "first_gradient_infty_bound": "<2.001e-67",
     "rational_preconditioner_infty_bound": "<28.883",
-    "interval_I_minus_AH_infty_bound": "<2.746e-7",
+    "interval_I_minus_AH_infty_bound": "<1.4691e-11",
     "center_Hessian_Lipschitz_times_ball": "8.46720e-7",
-    "strict_contraction_infty_bound": "<2.474e-5",
+    "strict_contraction_infty_bound": "<2.44558e-5",
     "center_drift_bound": "<5.78e-66",
     "existence_ball_infty_radius": "1e-24",
     "exact_solution": "EXISTS_AND_UNIQUE_IN_THIS_BALL",
@@ -41,7 +42,8 @@
   },
   "proof_runtime": {
     "local_interval_execution": "COMPLETED_WITH_RIGOROUS_MATRIX_EXP_TAIL",
-    "repo_checker": "check_interval42.py --verbose; regenerates candidate rational A from pinned original native 42-source; all inequalities reverified",
+    "replay_commit": "5004ae62449efa446496084f3d2904108e9b8adf",
+    "repo_checker": "check_interval42.py --verbose; regenerates candidate rational A from high-precision samples of the pinned complete scalar CQ price; all inequalities reverified",
     "remote_scientific_replay": "NOT_CLAIMED",
     "new_Lean_formalization": "NOT_CLAIMED"
   },
