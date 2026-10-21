@@ -1,0 +1,150 @@
+{
+  "check_count": 69,
+  "checks": [
+    "unchanged original native input Git blob",
+    "exact indefinite-Dirac inverse-square stationary state",
+    "exact regular algebra control: one-dimensional fixed space",
+    "exact singular control: all and only the full two-dimensional dark algebra",
+    "exact invariant-preparation derivative has zero trace",
+    "exact full differentiated native-form stationary equation",
+    "hostile frozen-preparation derivative is not stationary",
+    "exact signed Sylvester ratio bound",
+    "exact two-round noncommuting normalizer correction",
+    "exact recycling Dirichlet energy and strict noncommuting control",
+    "exact normalizer trace correction keeps its positive coefficient",
+    "exact native boost theta=log(5/4)",
+    "exact original full16 native A is Hermitian",
+    "all256 exact entries of native quadratic minimal polynomial",
+    "all256 exact native inverse entries",
+    "exact native harmonic-energy value",
+    "exact native proper-link harmonic-energy source",
+    "exact scalar base of same proper-link chart",
+    "exact native boost-squared Dirichlet coefficient",
+    "exact native recycling-defect squared norm",
+    "exact Q(sqrt5) enclosure of positive full finite Book Hessian defect",
+    "native unshifted-half recycling contraction bound 39/40",
+    "original native K00 equals I-epsilon Delta/2",
+    "original native blank-corner first jet",
+    "all128 exact-owner weighted-reversal identities, numerical native realization",
+    "all128 differentiated weighted-reversal identities",
+    "hostile deletion of anti-Hermitian Walsh phases fails",
+    "same original full128 has inverse-square invariant density",
+    "full field/preparation stationary first jet",
+    "normalized faithful native preparation",
+    "freezing induced preparation misses an actual field source",
+    "actual all-port1 effect, including orphan outcome",
+    "native stationary energy agrees with exact rational value",
+    "native stationary count source agrees with exact rational derivative",
+    "complete16384-history normalization and derivative",
+    "complete native two-round stationary reversal law",
+    "complete reversal first jet includes endogenous preparation",
+    "frozen-preparation reversal-source hostile control",
+    "flat input cannot replace the native invariant input",
+    "reversal probabilities retain noncommuting memory words",
+    "complete stationary two-round actual paid cost",
+    "complete paid-cost first jet from all histories",
+    "exact-equation native paid Poisson corrector",
+    "Poisson gauge and full moving-gauge derivative",
+    "full actual 1-round port cost equals rate plus both boundaries",
+    "full actual 1-round port-cost-source identity",
+    "independent initial preparation source at horizon 1",
+    "full actual 2-round port cost equals rate plus both boundaries",
+    "full actual 2-round port-cost-source identity",
+    "independent initial preparation source at horizon 2",
+    "full actual 17-round port cost equals rate plus both boundaries",
+    "full actual 17-round port-cost-source identity",
+    "independent initial preparation source at horizon 17",
+    "full actual 64-round port cost equals rate plus both boundaries",
+    "full actual 64-round port-cost-source identity",
+    "independent initial preparation source at horizon 64",
+    "erasing the actual upstream paid boundary loses a nonzero source",
+    "native finite repeated-run marginal reaches invariant preparation",
+    "nonzero asymptotic absolute initial-preparation source persists",
+    "unconditional retained reference Gram is unchanged",
+    "native recycling is both unital and trace preserving",
+    "actual native noncommuting Dirichlet energy",
+    "actual full128 two-round Golden normalizer correction",
+    "commuting spectral replacement fails on actual proper-link input",
+    "actual normalizer trace has derived positive defect",
+    "independent full native Book determinant secant at r=0.02",
+    "independent full native Book determinant secant at r=0.01",
+    "five-point independent native preparation derivative",
+    "five-point independent native price-rate derivative"
+  ],
+  "exact_algebra": {
+    "rational_noncommuting_Dirichlet_energy": "9/2",
+    "regular_fixed_dimension": 1,
+    "singular_fixed_dimension": 4
+  },
+  "exact_native": {
+    "Dirichlet_r2_coefficient": "2349/64000000",
+    "finite_Book_r2_defect": "0.0000000024185419946151059709124300905367",
+    "finite_Book_r2_exact_Qsqrt5": "-266557250404264984817486491085799816896527275584087965514138574535245133943136/15420354612309144854882251269345293556128737087602340344583394565580132573528140625 + 119224705090385287541831715013115974187839998860923142897091772617918432577248*sqrt(5)/15420354612309144854882251269345293556128737087602340344583394565580132573528140625",
+    "finite_Book_r2_exact_enclosure": [
+      "1209/500000000000",
+      "2419/1000000000000"
+    ],
+    "harmonic_energy": "69399/5030720",
+    "harmonic_energy_r_source": "-20040939/9885993640",
+    "mean_Delta_at_r=1/9": "141489/10240000",
+    "recycling_q_bound": "39/40"
+  },
+  "input_blob": "ee8de4635d24c668949ac9a0186616ab7d59f2ed",
+  "input_commit": "dda8f5d8ce5950cce4278b1f5b7d63f826b2e8f2",
+  "native_diagnostic": {
+    "asymptotic_initial_preparation_source": 0.30938616194714874,
+    "finite_16384_round_marginal_error": 1.7851224446844136e-12,
+    "frozen_preparation_reversal_jet_defect": 3.800080556686468e-08,
+    "full_Book_defect_secants": {
+      "0.01": 2.4196784306025274e-09,
+      "0.02": 2.4230291828275822e-09
+    },
+    "invariant_density_extremes": [
+      0.05999242103212455,
+      0.06500757896787547
+    ],
+    "native_Dirichlet_energy": 4.906657849534243e-07,
+    "native_r": 0.1111111111111111,
+    "native_theta": 0.22314355131420974,
+    "noncommuting_word_gap": 0.011275747727049104,
+    "paid_boundaries": {
+      "1": {
+        "cost": 1.0132788237343633,
+        "field_source": 1.0291450309139749e-19,
+        "initial_preparation_source": 0.000663941186718158
+      },
+      "17": {
+        "cost": 17.225669229941097,
+        "field_source": -0.000569198915765471,
+        "initial_preparation_source": 0.011095032259976465
+      },
+      "2": {
+        "cost": 2.0265571181577733,
+        "field_source": -4.275758340629886e-06,
+        "initial_preparation_source": 0.001326454940887283
+      },
+      "64": {
+        "cost": 64.84884050750843,
+        "field_source": -0.008008779981431782,
+        "initial_preparation_source": 0.03974173579543786
+      }
+    },
+    "stationary_surplus_rate": 0.013026271842207804,
+    "stationary_surplus_rate_r_source": -0.0019142330489812693,
+    "two_round_normalizer_nonspectral_norm": 1.6886148520064342e-06,
+    "two_round_reversal_jet_max_error": 2.168404344971009e-19,
+    "two_round_reversal_max_error": 8.673617379884035e-19
+  },
+  "scope": {
+    "GR_closed": false,
+    "all_horizon_reversal": "analytical with stationary data input",
+    "independent_review": false,
+    "native_Book_Info_selected": false,
+    "native_invariant_preparation": "finite theorem under explicit recycling assumptions",
+    "paid_initial_boundary": "retained, not assumed zero",
+    "primary_full42_price_root": false,
+    "uniform_mesh_gap_proved": false,
+    "valued_cost_component": "original port charges only; other actual charges and Info not assigned"
+  },
+  "status": "PASS"
+}

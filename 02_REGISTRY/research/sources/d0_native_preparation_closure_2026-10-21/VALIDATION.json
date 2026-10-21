@@ -1,0 +1,67 @@
+{
+  "status": "PASS",
+  "input_commit": "dda8f5d8ce5950cce4278b1f5b7d63f826b2e8f2",
+  "check_count": 69,
+  "normal_and_optimized_byte_identical": true,
+  "author_runs_only": true,
+  "independent_review": false,
+  "mutation_checks": [
+    {
+      "name": "replace_native_preparation_by_flat",
+      "returncode": 1,
+      "failure": "ArithmeticError: same original full128 has inverse-square invariant density"
+    },
+    {
+      "name": "freeze_induced_preparation_jet",
+      "returncode": 1,
+      "failure": "ArithmeticError: full field/preparation stationary first jet"
+    },
+    {
+      "name": "drop_paid_boundary_corrector",
+      "returncode": 1,
+      "failure": "ArithmeticError: exact-equation native paid Poisson corrector"
+    },
+    {
+      "name": "erase_noncommuting_normalizer",
+      "returncode": 1,
+      "failure": "ArithmeticError: actual full128 two-round Golden normalizer correction"
+    }
+  ],
+  "sha256": {
+    "PROOF.md": "4001c3adb8b5c7bbcea95b1795d6d847e4386191e9129e43e5c611994b64a99f",
+    "check_native_preparation.py": "47c426a03134a191c90e83508a4437b65ce47dd7f245e57738dabf816392cee5",
+    "RESULT.json": "b721861188b3451de4cef7a70567d8d5ebd604568e8a1c746fce705a857af407",
+    "RESULT_OPTIMIZED.json": "b721861188b3451de4cef7a70567d8d5ebd604568e8a1c746fce705a857af407",
+    "README.md": "b05b233a650b22cf05139035a3a6b64d04789bbbcf60bf2b2042150476208de5",
+    "SYNTHESIS.md": "1d2ee0313960a921b6b6296e062547d909e8587f0e33280758db4ede179d40b7",
+    "SOURCE_PINS.json": "fbcfc847d81d96c44235794e4e325a420d79f970fc5080c5673a47b8f881ca01",
+    "validate_packet.py": "eddf5ea686dfdf0c8964229520db046ac0bc29285fb2f309efa37b7df31f2d8e"
+  },
+  "environment": {
+    "python": "3.13.5",
+    "sympy": "1.14.0",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "scope": {
+    "GR_closed": false,
+    "all_horizon_reversal": "analytical with stationary data input",
+    "independent_review": false,
+    "native_Book_Info_selected": false,
+    "native_invariant_preparation": "finite theorem under explicit recycling assumptions",
+    "paid_initial_boundary": "retained, not assumed zero",
+    "primary_full42_price_root": false,
+    "uniform_mesh_gap_proved": false,
+    "valued_cost_component": "original port charges only; other actual charges and Info not assigned"
+  },
+  "not_run": [
+    "previous full scientific suites",
+    "Lean",
+    "repository-wide CI"
+  ],
+  "errors_corrected_before_final_run": [
+    "canonicalized exact complex rational matrix identities",
+    "used the full Hermitian probability derivative rather than assuming each half trace real"
+  ],
+  "publication_scope_update": "Added provenance-only concurrent integration note; calculation bytes and receipts unchanged."
+}
