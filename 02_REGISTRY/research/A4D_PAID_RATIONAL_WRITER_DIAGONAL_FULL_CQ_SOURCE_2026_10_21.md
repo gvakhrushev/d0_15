@@ -164,3 +164,81 @@ Thus the ambient second symmetric secant obeys
 This is an ANALYTICAL rank-birth result, not inference from a sample plot. It disproves an automatic bounded ambient \(\Phi''\) across dark quantum/classical outcome births, even though the true complete CQ value has the floor-free continuity modulus (3) and the reference is retained. The diagonal theorem requires C4 only on the **specific owned smooth ideal physical source section**, not on the entire space of arbitrary approximate bank states.
 
 The companion executable [check_full_cq_rank_birth.py](sources/d0_diagonal_paid_source_2026-10-21/check_full_cq_rank_birth.py) confirms complete normalization, four conditional quantum blocks, oldRIGHT preservation, CPTP trace-distance contraction, entropy continuity and diverging symmetric second secants. Its sample test is **not** the original native full128 instrument. The separately executed author fixture passed 112 checks in ordinary and optimized Python with identical receipts; the all-\(\varepsilon\) conclusion follows from (9), not those six sample points.
+
+
+## 9. Literal 1024-branch Golden source, rational Born writer and the two-field ratio
+
+This section supplies the direct finite consumer of the original ten-sign owner, beyond the generic Bernoulli diagnostics in §7. Use its ACTUAL fixed two-band polynomial with \(p=\varphi^{-1}\), \(z=2^{-20}\), \(\varepsilon=1/64\), and either original orientation \(\sigma=\pm1\):
+
+\[
+E(s)=p^2(1+\varepsilon s),\quad
+u(t)=p+\sigma p^2\varepsilon t,\quad
+B(u)=4u^2(1-u^2),\quad L(E)=4E(1-E),
+\]
+\[
+A(E,u)=L(E)+(1-L(E))B(u),\quad
+R_\sigma(s,t)=1-(1-zB(u(t)))(1-zA(E(s),u(t))).
+\tag{11}
+\]
+
+This has degree at most \((2,8)\) in \((s,t)\). Let \(c_{ab}^{(\sigma)}\) denote its EXACT Golden polynomial coefficients. For two retained geometric signs \(S_1,S_2\) and eight retained material signs \(T_1,\ldots,T_8\), the one fixed reported conditional success probability is
+
+\[
+\beta_\sigma(S,T)=\sum_{a=0}^2\sum_{b=0}^8
+c_{ab}^{(\sigma)}
+\prod_{i=1}^{a}S_i\prod_{j=1}^{b}T_j.
+\tag{12}
+\]
+
+The already owned \(\mathbb Q(p)\) positivity certificate proves ALL 1024 sign-conditioned reports satisfy \(0<\beta_\sigma<1\). Independence of supplied copies gives \(\mathbb E[\prod S_i\prod T_j]=s^a t^b\); hence the FULL unconditional final report obeys \(\Pr(R=1)=R_\sigma(s,t)\). **The signs are kept coherent/unmeasured until this fixed final report.** Reporting their individual values would change the actual CQ entropy and is NOT the owner execution.
+
+The genuine first source coefficients at the origin are
+
+\[
+\partial_sR_\sigma(0,0)=\frac{4zQp^{11}}{64},\qquad
+\partial_tR_\sigma(0,0)=\sigma\frac{8zp^6(R_0+Qp^6)}{64},
+\quad Q=1-4zp^3,\quad R_0=1-4zp^3(1+p^6).
+\tag{13}
+\]
+
+Thus, with NO fitted coefficient,
+
+\[
+\boxed{
+\frac{\partial_tR_\sigma}{\partial_sR_\sigma}(0,0)
+=\sigma\,2p^{-5}(R_0/Q+p^6)
+=\lambda_\sigma(2^{-20}).
+}
+\tag{14}
+\]
+
+This is the exact positive/negative finite Golden coefficient ratio already owned by the full 42-source proof, now checked directly on the full 1024-branch positive readout polynomial. The downstream complete measured-CQ price at fixed completed-inventory charge is \(B_h-\alpha_h h_\varphi(R_\sigma)\), so both first source rows follow by the actual full CQ chain rule.
+
+A genuine finite **rational qubit writer** can prepare an APPROXIMATE sign mean; it must obey the Born square, not equate a unitary MATRIX ENTRY with a measured mean. Put
+
+\[
+c=\frac{M^2-m^2}{M^2+m^2},\qquad
+d=\frac{2Mm}{M^2+m^2},\qquad
+U=\begin{pmatrix}c&-d\\d&c\end{pmatrix}\in SO(2,\mathbb Q).
+\]
+\[
+\boxed{\langle 0|U^\dagger ZU|0\rangle=c^2-d^2.}
+\tag{15}
+\]
+
+For desired sign mean \(s\in(-1,1)\) choose \(M=2^{5k}\) and integer \(m\) nearest to \(M\tan(\tfrac14\arccos s)\). Then \(|c^2-d^2-s|=O(1/M)\). The THREE input codes at \(s=0,\pm2^{-k}\) get one common product denominator \(R\), and the published actual writer has the SAME herald effect \(R^2/(4B^2)I\) on all three, with \(B\) the next power of two. All failed branches and oldRIGHT stay present.
+
+This corrects a subtle false shortcut: approximating \(c\approx s\) does NOT prepare a qubit of \(Z\)-mean \(s\), because its true Born mean is \(2c^2-1\). The independent full-source secants must use (15) and approximate ALSO the central resource at \(s=0\). They cannot treat the central fair qubit as an exact rational \(SO(2)\) column.
+
+The new author calculation directly enumerates every one of the 1024 conditional sign words for both orientations and the true nonlinear report, computes the fixed-width paid \(B_h-\alpha_hh_\varphi(r)\) first and second finite differences at \(s=0\), and reconstructs the genuine ratio (14). It uses rational orthogonal qubit preparations on each three-code stencil with a common herald effect. It passes 1074 finite checks, normal and optimized Python agreeing byte-for-byte. Source coefficients at this explicitly declared \(\varepsilon=1/64\) fixture are
+
+\[
+\partial_sR_+(0,0)=2.99512995212679281148\cdot10^{-10},\quad
+\partial_tR_+(0,0)=7.01351812337520574301\cdot10^{-9},
+\]
+\[
+\min_{1024}\beta_+ =1.84369213362159864247\cdot10^{-6},\quad
+\max_{1024}\beta_+=1.85870820040087241567\cdot10^{-6}.
+\]
+
+The numerical min/max are AUTHOR diagnostic displays; the exact positivity belongs to the inherited \(\mathbb Q(p)\) owner. This calculation reads the *correct original fixed-report polynomial* and the physical quadratic qubit Born rule, but it does NOT simulate the full 180-Choi/16-matter Hilbert state, the original all42 field writer, actual primitive factory durations or Book03 Info. The three codes are distinct priced programmes, not one native field Euler. The full checker and result are in the conversation archive alongside the owned writer and diagonal proof.
