@@ -665,3 +665,38 @@ supplies an actual preparation/control term to the global E_upstream
 equation, not writer surjectivity, all42 source equality or a physical
 stationary section. Book/Info/work selection, metric descent, the
 configured positive GR application's physical admission and raw216 stay open.
+
+## 20. Actual Book complement: a common native recombiner and clock test
+
+The [Book-complement application](NATIVE_COHERENT_BOOK_COMPLEMENT.md)
+now tests the fixed Book03 feedback functional itself. Two typing
+restrictions change the candidate route. The section19 counting/port
+gain has paired-port net gap-1, whereas literal amplitude binding
+requires-1/2; a common normalizer cannot repair that relative gap.
+Its conditional mean source remains valid, but is not a selected
+Book amplitude price. Also a selected abort event is generally not
+the original archive complement Q=I-P.
+
+With actual abort-clock return compression T_clk and the declared blank
+workspace interface, unrecombined Q^k/B^k have true complementary
+feedback I-p(T_clk*T_clk) tensor B^4, independent of the moved arm.
+A new COMMON three-letter G(Pflag)^-1 after the query instead gives
+A=T_clk tensor B^2(pI+p^2U) and F_Book=I-A*A, retaining every output
+complement. Its real stages/work are added to both programmes.
+
+For the full rank-eight local high-CAR generator, g=2p^3(1-cos4k theta),
+the exact feedback difference is -128 logdet(I-zg K_c)>=0 on the
+clock/high-CAR range. It is strict when the clock return is nonzero
+and k is a nontrivial native return. At k=1,z=2^-20 it is bounded
+below by(14641p^6/1327104)Tr(T_clk*T_clk). No Pi/B^4 commutation is
+assumed. A clock retained outside a start-only cut can instead make
+T_clk=0 and F=I: no free clock reset or cyclic wrap is permitted.
+
+The common output unitary preserves the earlier complete PR entropy,
+central gain and Y-port costs, so those means cannot be identified
+with this complementary feedback. Its first derivative at coincidence
+is zero; positive quadratic feedback alone does not cancel their
+negative first source. The actual physical cut/clock/Delta_N/beta map,
+remaining stack, Info/work and joint stationarity still must be derived.
+This supplies a typed Book-source test and route restriction, not a
+new physical action, all42 source equality or native GR/raw216 closure.
