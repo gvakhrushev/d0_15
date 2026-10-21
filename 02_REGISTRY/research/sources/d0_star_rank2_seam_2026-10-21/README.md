@@ -99,3 +99,15 @@ The separate full temporal slab negative control preserves the two original fixe
     OPENBLAS_NUM_THREADS=1 python3 02_REGISTRY/research/sources/d0_star_rank2_seam_2026-10-21/check_full_slab_12_target_false_root.py
 
 The corrected architecture is to use the ORIGINAL 40 geometric first-source directions on an enlarged spatial-Lorentz/offdiagonal-coframe carrier with its true six local Lorentz gauge identities, full original fixed collar and both CAR materials. This is the next physical and mathematical source gate, not another local rank scan or a change of Golden sigma.
+
+
+## First positive configured FULL N1 CQ all42 short-collar numerical root
+
+[Proof boundary, original witness, numerical Jacobian and historical no-go status](../../A4D_COMPLETE_N1_FULL42_FIXED_COLLAR_FIRST_NONFLAT_RANK2_NUMERICAL_ROOT_2026_10_21.md). The older pureboost Ux,J12 source NO-GO remains a correct restriction, but the NEW original n=2 interval (ONE free time node) numerical calculation leaves that ansatz: independently vary every original 16 coframe component, all24 native Lorentz left-link tangent coordinates including temporal/spatial rotations, and two real CAR scalar values, with original based predecessor faces and genuinely fixed original endpoint field/clock data. It solves all42 original Euler conditions of the original complete N1 Golden cap9/20 scalar CQ price (after proper same-price Cartesian sign retyping, NOT physically changing sigma). Uniform PF[1,1] gives source inf3.92e-15; a positive time-jump PF[1,2] gives6.53e-15. Original F_N has real nonzero f and q at those roots, so this is NOT an affine f=q=0 source check. The separate ENTIRE physical declared N1 entropy VALUE was differentiated directly in all42 original field directions; both runs independently give max source and analytical mismatch<1.81e-14. The numerical root has full-rank42 Jacobian (min singular>0.0446), nonflat original based spatial commutator holonomy, real rank2 material stress and Lorentzian nondegenerate geometry. Initial four-diagonal Cauchy field is an INITIAL GUESS only.
+
+Reproduction from repository root:
+
+    OPENBLAS_NUM_THREADS=1 python3 02_REGISTRY/research/sources/d0_star_rank2_seam_2026-10-21/full_n1_euler_analytic.py
+    OPENBLAS_NUM_THREADS=1 python3 02_REGISTRY/research/sources/d0_star_rank2_seam_2026-10-21/check_full42_n1_single_internal.py
+
+This does NOT prove exact mathematical existence by intervals, a stationary field on a 3+ interval slab, uniform refinement, actual four-dimensional original PF descendant weights, real primitive writeability or complete mandatory Book03 H+J+R physical selection. The six local Lorentz Noether identities include boundary reactions; fixed incoming temporal links mean the interior 42×42 Hessian can be numerically invertible without violating gauge covariance. Preserve both the proved scoped pureboost no-go and this NONTRIVIAL positive outside-stratum short-collar numerical answer, and do not rename it 'GR_closed'.
