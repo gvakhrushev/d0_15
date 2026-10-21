@@ -23,6 +23,25 @@
     "car_aligned_full16_pencil",
     "car_aligned_active_blocks_have_value_L",
     "car_aligned_remaining_blocks_are_zero",
+    "all_angle_ell_lies_below_L",
+    "all_angle_repeated_block_trace_below_L",
+    "repeated_block_trace_endpoint_normalization",
+    "observer_trace_gap_degree_four",
+    "observer_trace_gap_exact_bernstein_coefficients",
+    "observer_trace_unsplit_negative_control_requires_split",
+    "observer_trace_gap_left_half_controls",
+    "observer_trace_gap_right_half_controls",
+    "observer_trace_gap_only_endpoint_zero",
+    "observer_trace_gap_left_positive_1",
+    "observer_trace_gap_left_positive_2",
+    "observer_trace_gap_left_positive_3",
+    "observer_trace_gap_left_positive_4",
+    "observer_trace_gap_right_positive_0",
+    "observer_trace_gap_right_positive_1",
+    "observer_trace_gap_right_positive_2",
+    "observer_trace_gap_right_positive_3",
+    "observer_trace_gap_right_positive_4",
+    "observer_trace_endpoint_blocks",
     "query_plus_effect_eigenvalue_M",
     "query_minus_effect_eigenvalue_L",
     "strict_effect_spectral_gap",
@@ -34,16 +53,19 @@
     "determinant_gap_rational_lower_bound",
     "raw_two_band_and_car_determinants_relation"
   ],
-  "check_count": 31,
+  "check_count": 50,
   "target_effect_spectrum": [
     "L=4*p^3",
     "M=4*p^3*(1+p^6)"
   ],
   "car_effect_spectrum": [
-    "L=4*p^3 (multiplicity 4)",
-    "0 (multiplicity 12)"
+    "ell(c) multiplicity 2",
+    "roots(x^2-t(c)x+d(c)) multiplicity 2",
+    "roots(x^2-t0(c)x+d0(c))",
+    "eight zeros"
   ],
   "strict_gap": "M-L=4*p^9>0",
-  "raw_determinant_relation": "det_query-det_CAR=(1-z*L)*z*(L*(2-p^6)-3*z*L^2+z^2*L^3)>0",
+  "aligned_c1_raw_determinant_relation": "det_query-det_CAR=(1-z*L)*z*(L*(2-p^6)-3*z*L^2+z^2*L^3)>0",
+  "observer_angle_result": "no direct two-dimensional same-event isometric compression for any c in [-1,1]",
   "scope": "same-z direct isometric effect compression only; no Book03 price identity, physical admission, or GR closure"
 }

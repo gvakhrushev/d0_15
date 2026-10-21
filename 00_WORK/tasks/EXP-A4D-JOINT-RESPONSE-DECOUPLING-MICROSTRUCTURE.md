@@ -3563,3 +3563,28 @@ encoder/decoder, leakage, heralded execution, compulsory Book03 valuation,
 independent inputs and the common 42-direction physical map remain open.
 Do not add a physical selector, reset or new price to bypass the spectrum.
 `GR_closed=false`.
+
+### 21 October continuation: extend the CAR effect exclusion to every observer angle
+
+The source-owned full-16D chronological pencil gives three active blocks
+over the whole native observer-angle interval `c∈[-1,1]`. Exact block-trace
+identities bound the scalar and repeated-quadratic blocks by `L=4p^3`; an exact quartic
+Bernstein subdivision proves `2L-t0(c)>0` for `c>-1`. Together with the
+two endpoint evaluations, this shows that whenever the largest CAR effect
+eigenvalue reaches the cap-one value `M=4p^3(1+p^6)`, the second is strictly
+below `L`. Cauchy interlacing rules out the target spectrum `(M,L)` for any
+direct two-dimensional same-event, same-fugacity isometric compression at
+any observer angle. The 50-control checker verifies the pinned block
+identities, Bernstein coefficients and subdivision (including the negative
+unsplit control), endpoint values, and aligned `c=1` determinant comparison.
+Only that determinant comparison is
+restricted to `c=1`; its functionals still do not identify the full
+chronological price with cap-one `Cost-Info`.
+
+This strengthens the exclusion only for the stated direct effect map.
+Moving encoders/decoders, leakage, heralded programmes, other stages,
+compulsory Book03 valuation, independent inputs and physical admission remain
+open. The historical 469-control chronology receipt remains immutable; the
+new narrow replay checks the source-pinned pencil without re-running that
+certificate. No action, selector, or physical closure claim changes.
+`GR_closed=false`.

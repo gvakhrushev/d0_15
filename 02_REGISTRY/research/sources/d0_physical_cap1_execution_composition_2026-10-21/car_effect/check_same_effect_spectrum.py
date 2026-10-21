@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-"""Exact same-z effect-spectrum test for cap-one versus two-step CAR."""
+"""Exact full-angle same-z effect-spectrum test for cap-one versus two-step CAR."""
 import hashlib
 import argparse
 import json
+from math import comb
 from pathlib import Path
 import subprocess
 import sys
@@ -86,7 +87,7 @@ def main():
     L = 4 * p**3
     M = L * (1 + p**6)
 
-    # Reconstruct equation (8) of the pinned CAR chronology owner at c=1.
+    # Check the aligned c=1 determinant anchor from equation (8).
     ell = p**2 * (1 + c) * (1 + p**3 * c)
     tr = 2 * (p**2 + p**5 * c**2)
     det = p**4 * (1 - c**2) ** 2
@@ -104,6 +105,80 @@ def main():
             "car_aligned_active_blocks_have_value_L")
     require(reduce(det) == 0 and reduce(tr0) == 0 and reduce(det0) == 0,
             "car_aligned_remaining_blocks_are_zero")
+
+    # Uniform spectral bound over the full native observer-angle domain.
+    p0 = (s.sqrt(5) - 1) / 2
+    L0 = 4 * p0**3
+    c0, x0 = s.symbols("c0 x0", real=True)
+    ell0 = p0**2 * (1 + c0) * (1 + p0**3 * c0)
+    t_all = 2 * (p0**2 + p0**5 * c0**2)
+    d_all = p0**4 * (1 - c0**2) ** 2
+    t0_all = 2 * (1 - c0) * (
+        2 * p0**4 * c0**3 + 2 * p0 * c0**2 + (3 * p0 - 1) * c0 + p0**2
+    )
+    d0_all = (1 - c0) ** 2 * (
+        5 * p0**4 * c0**2 + (14 * p0 - 8) * c0 + p0**4
+    )
+    require(s.simplify(
+        L0 - ell0 - p0**2 * (1 - c0) * (1 + p0**3 * (2 + c0))
+    ) == 0, "all_angle_ell_lies_below_L")
+    require(s.simplify(
+        L0 - t_all - 2 * p0**5 * (1 - c0**2)
+    ) == 0, "all_angle_repeated_block_trace_below_L")
+    require(s.simplify(t_all.subs(c0, 1) - L0) == 0,
+            "repeated_block_trace_endpoint_normalization")
+
+    qpoly = s.Poly(s.expand((2 * L0 - t0_all).subs(c0, 2 * x0 - 1)), x0)
+    require(qpoly.degree() == 4, "observer_trace_gap_degree_four")
+    power_coefficients = [qpoly.nth(i) for i in range(5)]
+    bernstein = [s.simplify(sum(
+        power_coefficients[i] * s.Rational(comb(k, i), comb(4, i))
+        for i in range(k + 1)
+    )) for k in range(5)]
+    expected_bernstein = [
+        s.Integer(0), -45 + 21 * s.sqrt(5), -4 + s.Rational(8, 3) * s.sqrt(5),
+        -21 + 9 * s.sqrt(5), -16 + 8 * s.sqrt(5),
+    ]
+    require(all(s.simplify(a0 - b0) == 0
+                for a0, b0 in zip(bernstein, expected_bernstein)),
+            "observer_trace_gap_exact_bernstein_coefficients")
+    require(bool(s.simplify(bernstein[3] < 0)),
+            "observer_trace_unsplit_negative_control_requires_split")
+    levels = [bernstein]
+    while len(levels[-1]) > 1:
+        prior = levels[-1]
+        levels.append([s.simplify((prior[i] + prior[i + 1]) / 2)
+                       for i in range(len(prior) - 1)])
+    left_controls = [levels[j][0] for j in range(5)]
+    right_controls = [levels[4 - j][j] for j in range(5)]
+    expected_left = [
+        s.Integer(0), (-45 + 21 * s.sqrt(5)) / 2,
+        (-141 + 67 * s.sqrt(5)) / 6, -21 + 10 * s.sqrt(5),
+        -19 + 9 * s.sqrt(5),
+    ]
+    expected_right = [
+        -19 + 9 * s.sqrt(5), -17 + 8 * s.sqrt(5),
+        (-93 + 43 * s.sqrt(5)) / 6, (-37 + 17 * s.sqrt(5)) / 2,
+        -16 + 8 * s.sqrt(5),
+    ]
+    require(all(s.simplify(a0 - b0) == 0
+                for a0, b0 in zip(left_controls, expected_left)),
+            "observer_trace_gap_left_half_controls")
+    require(all(s.simplify(a0 - b0) == 0
+                for a0, b0 in zip(right_controls, expected_right)),
+            "observer_trace_gap_right_half_controls")
+    require(left_controls[0] == 0, "observer_trace_gap_only_endpoint_zero")
+    for index, coefficient in enumerate(left_controls[1:], start=1):
+        require(bool(s.simplify(coefficient > 0)),
+                f"observer_trace_gap_left_positive_{index}")
+    for index, coefficient in enumerate(right_controls):
+        require(bool(s.simplify(coefficient > 0)),
+                f"observer_trace_gap_right_positive_{index}")
+    require(s.simplify(t0_all.subs(c0, -1) - 2 * L0) == 0 and
+            s.simplify(d0_all.subs(c0, -1) - L0**2) == 0 and
+            s.simplify(t0_all.subs(c0, 1)) == 0 and
+            s.simplify(d0_all.subs(c0, 1)) == 0,
+            "observer_trace_endpoint_blocks")
 
     # Rebuild the cap-one F_query matrix and check both actual eigenvectors.
     I2 = s.eye(2)
@@ -126,7 +201,7 @@ def main():
     require(reduce(M - L - 4 * p**9) == 0 and a.is_positive,
             "strict_effect_spectral_gap")
 
-    # A two-dimensional isometric compression cannot exceed lambda_max(F_CAR)=L.
+    # At c=1, the full CAR maximum is L; bound the aligned determinant gap.
     p_exact = (s.sqrt(5) - 1) / 2
     L_exact = 4 * p_exact**3
     require(bool(s.simplify(p_exact - s.Rational(1, 2) > 0)),
@@ -153,9 +228,10 @@ def main():
         "checks": checks,
         "check_count": len(checks),
         "target_effect_spectrum": ["L=4*p^3", "M=4*p^3*(1+p^6)"],
-        "car_effect_spectrum": ["L=4*p^3 (multiplicity 4)", "0 (multiplicity 12)"],
+        "car_effect_spectrum": ["ell(c) multiplicity 2", "roots(x^2-t(c)x+d(c)) multiplicity 2", "roots(x^2-t0(c)x+d0(c))", "eight zeros"],
         "strict_gap": "M-L=4*p^9>0",
-        "raw_determinant_relation": "det_query-det_CAR=(1-z*L)*z*(L*(2-p^6)-3*z*L^2+z^2*L^3)>0",
+        "aligned_c1_raw_determinant_relation": "det_query-det_CAR=(1-z*L)*z*(L*(2-p^6)-3*z*L^2+z^2*L^3)>0",
+        "observer_angle_result": "no direct two-dimensional same-event isometric compression for any c in [-1,1]",
         "scope": "same-z direct isometric effect compression only; no Book03 price identity, physical admission, or GR closure",
     }
     payload = json.dumps(result, indent=2, ensure_ascii=False) + "\n"

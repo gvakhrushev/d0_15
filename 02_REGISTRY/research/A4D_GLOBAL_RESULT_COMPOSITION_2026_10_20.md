@@ -445,14 +445,16 @@ The given formulas decide proposed identifications; they are not values
 to assign to Info after observing the desired source.
 
 One proposed shortcut for the N=1 primitive has now been eliminated
-exactly: at the aligned-observer point, the existing two-step chronological
-CAR feedback effect has maximum eigenvalue `4p^3`, while the retained N=1
-query effect has an eigenvalue `4p^3(1+p^6)>4p^3`. Direct same-fugacity
-isometric effect compression therefore fails before first-jet matching;
-their raw determinant factors differ as well. This is only a scoped
-exclusion of that effect map, not a statement about the complete Book/CQ
-price, physical admission, or other paid field-dependent encoders. The
-remaining N=1 completion is still one admitted common
+exactly over the full observer-angle interval: if the existing two-step
+chronological CAR feedback effect has a largest eigenvalue reaching
+`M=4p^3(1+p^6)`, its second eigenvalue is strictly below `L=4p^3`.
+Cauchy interlacing therefore excludes the retained N=1 query spectrum
+`(M,L)` from every direct same-event, same-fugacity two-dimensional
+isometric compression before first-jet matching. The separate raw
+determinant mismatch is proved at the aligned value `c=1` only. This is
+only a scoped exclusion of that effect map, not a statement about the
+complete Book/CQ price, physical admission, or other paid field-dependent
+encoders. The remaining N=1 completion is still one admitted common
 field→CAR→report→Book03 map with its actual independent-input equations.
 
 **Proved here:** a controlled operational geometry recovery and exact

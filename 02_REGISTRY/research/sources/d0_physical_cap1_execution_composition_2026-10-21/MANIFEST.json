@@ -3,7 +3,7 @@
   "files": [
     {
       "path": "README.md",
-      "sha256": "1a91e9cbf25a5f01cc559e56804bcaef6846ccf43ba07debe04058dc376c1237"
+      "sha256": "f67455a5f8ab9e21f977e17f79ff935387fef313058cfe11879d463c4d37ad05"
     },
     {
       "path": "book_binding/PROOF.md",
@@ -31,7 +31,7 @@
     },
     {
       "path": "car_effect/PROOF.md",
-      "sha256": "a63a0f46b367ba01ec820908209ec6f0807929c90a806b5883207bf30a94c080"
+      "sha256": "82d0a871d21ea86f2d6f8e7511a273e7f0da9e49cd53e7dd4fc85c74769f7775"
     },
     {
       "path": "car_effect/SOURCE_PINS.json",
@@ -39,11 +39,11 @@
     },
     {
       "path": "car_effect/VERIFICATION.json",
-      "sha256": "6f6f7c34ad1c692da2675ff6b1c32d5d7506d592a677a91b6cd3ab1c51787846"
+      "sha256": "79252a800f76db0aa3e3377ac4b0c84b10b9d37eeb5cf90c03babb84194a529f"
     },
     {
       "path": "car_effect/check_same_effect_spectrum.py",
-      "sha256": "ed931c62519fdaad832b5dd51b902a3cfe6142218a4c564c8c5160979f4d720f"
+      "sha256": "24944232f2b713b3db8b871f0bf8d6365d3fd2949a9b522f4430d78e57aa3ad3"
     },
     {
       "path": "independent_input/PROOF.md",

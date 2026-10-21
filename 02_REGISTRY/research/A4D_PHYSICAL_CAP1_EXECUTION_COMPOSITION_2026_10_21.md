@@ -139,18 +139,20 @@ failure/work ledger и Book03 цену на том же исполнении.
 
 Проверен и следующий конкретный кандидат: прямое представление исходного
 двухмерного cap-one leakage effect как isometric compression полного
-chronological CAR effect при том же событии и `z=2^-20`. На совпадающих
-наблюдателях `c=1` собственный полный 16-компонентный CAR pencil даёт
-`det(I-zF_CAR)=(1-zL)^4`, `L=4p^3`; из `0<=F_CAR<=I` следует спектр
-`F_CAR={L,L,L,L,0,...,0}`. Целевой cap-one effect на retained 2D входе
-имеет точные собственные значения `M=4p^3(1+p^6)` и `L`, причём
-`M-L=4p^9>0`. Поэтому норма любого изометрического сжатия CAR-эффекта
-не выше `L`; оно не может совпасть с целевым эффектом даже по значению.
-Это строгое исключение прямой общей-effect подстановки; оно не
-отвергает подвижный encoder/decoder, leakage, иной отчёт или дополнительную
+chronological CAR effect при том же событии и `z=2^-20`. Для всего углового
+интервала `c∈[-1,1]` source-owned 16-компонентный CAR pencil распадается на
+два скалярных значения, два одинаковых квадратичных блока и один
+дополнительный квадратичный блок. Точные верхние границы первых блоков и
+положительный Bernstein-сертификат для `2L-t0(c)` показывают: если старшее
+значение CAR достигает `M=4p^3(1+p^6)`, второе строго меньше `L=4p^3`.
+По interlacing это исключает целевой спектр `(M,L)` у любого
+двумерного isometric compression при любом `c`; `M-L=4p^9>0`. Это
+строгое исключение прямой общей-effect подстановки; оно не отвергает
+подвижный encoder/decoder, leakage, иной отчёт или дополнительную
 оплаченную стадию.
 
-Для тех же `z` и события сырые determinant factors тоже различны:
+Только на совпадающих наблюдателях `c=1` сырые determinant factors для
+тех же `z` и события тоже различны:
 `(1-zM)(1-zL)` против `(1-zL)^4`. Их строгая разность и точный спектральный
 аргумент воспроизводятся в
 [узком пакете](sources/d0_physical_cap1_execution_composition_2026-10-21/car_effect/PROOF.md).
@@ -161,4 +163,4 @@ chronological CAR effect при том же событии и `z=2^-20`. На с
 
 ## Проверка и provenance
 
-Агрегатор проверяет provenance пакета и пять source pins уже существующего restricted CAR/field-instrument результата. Для этой старой карточки он валидирует записанный receipt и точные исходники, не повторяя остальные дорогие controls. Четыре локальных replay включают query/encoding — 17 алгебраических проверок; Book valuation — PASS17 при 80 знаках; independent input — PASS21 exact matrix controls; effect spectrum — 31 exact/source-pin controls. Он не запускает старые root, Lean или continuum suites. Узкое следствие выше непосредственно композирует два source-owned эффекта при одном явно заданном isometric map; оно не заявляет новый physical admission. Самостоятельные доказательства лежат рядом: [подвижный запрос](sources/d0_physical_cap1_execution_composition_2026-10-21/moving_query/PROOF.md), [Book03](sources/d0_physical_cap1_execution_composition_2026-10-21/book_binding/PROOF.md), [входные уравнения](sources/d0_physical_cap1_execution_composition_2026-10-21/independent_input/PROOF.md), [restricted native CAR](sources/d0_physical_cap1_execution_composition_2026-10-21/restricted_car/SCOPE.md), [spectrum comparison](sources/d0_physical_cap1_execution_composition_2026-10-21/car_effect/PROOF.md).
+Агрегатор проверяет provenance пакета и пять source pins уже существующего restricted CAR/field-instrument результата. Для этой старой карточки он валидирует записанный receipt и точные исходники, не повторяя остальные дорогие controls. Четыре локальных replay включают query/encoding — 17 алгебраических проверок; Book valuation — PASS17 при 80 знаках; independent input — PASS21 exact matrix controls; effect spectrum — 50 exact/source-pin controls, включая all-angle block bounds, Bernstein subdivision и контроль отрицательного исходного коэффициента. Он не запускает старые root, Lean или continuum suites. Узкое следствие выше непосредственно композирует два source-owned эффекта при одном явно заданном isometric map; оно не заявляет новый physical admission. Самостоятельные доказательства лежат рядом: [подвижный запрос](sources/d0_physical_cap1_execution_composition_2026-10-21/moving_query/PROOF.md), [Book03](sources/d0_physical_cap1_execution_composition_2026-10-21/book_binding/PROOF.md), [входные уравнения](sources/d0_physical_cap1_execution_composition_2026-10-21/independent_input/PROOF.md), [restricted native CAR](sources/d0_physical_cap1_execution_composition_2026-10-21/restricted_car/SCOPE.md), [spectrum comparison](sources/d0_physical_cap1_execution_composition_2026-10-21/car_effect/PROOF.md).

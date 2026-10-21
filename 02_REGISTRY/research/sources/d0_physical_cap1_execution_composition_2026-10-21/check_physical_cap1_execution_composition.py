@@ -14,7 +14,7 @@ GROUPS={
     "moving_query":("SOURCE_PINS.json","files","VERIFICATION.json","check_native_query_value_and_jet.py",17),
     "book_binding":("SOURCE_PINS.json","sources","VERIFICATION.json","check_exact_cq_book_binding.py",17),
     "independent_input":("SOURCE_PINS.json","sources","VERIFICATION.json","check_upstream_reaction.py",21),
-    "car_effect":("SOURCE_PINS.json","sources","VERIFICATION.json","check_same_effect_spectrum.py",31),
+    "car_effect":("SOURCE_PINS.json","sources","VERIFICATION.json","check_same_effect_spectrum.py",50),
     "restricted_car":("SOURCE_PINS.json","sources",None,None,None),
 }
 
