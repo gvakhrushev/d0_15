@@ -1,0 +1,27 @@
+{
+  "check_count": 215,
+  "full_column_no_free_gain": {
+    "bound": "abs(dF/dr)<=2*sqrt(2)/D",
+    "universal_full_output_basis_required": true
+  },
+  "memory": {
+    "V_inverse_uses": 0,
+    "forward_conjugate_copy_required": true,
+    "second_paid_initial_preparation_required": true,
+    "unmeasured_full_record_source_cut_required": true
+  },
+  "native": {
+    "book_source_gain_D2_W10": "3.6124297068986899322e-10",
+    "complete_complement": "1-(p+(sqrt(p)-p)*r)^2/D",
+    "forward_return": "(p+(sqrt(p)-p)*r)/sqrt(D)",
+    "golden_p": "0.61803398874989484820",
+    "n1_r0": "1.8512395784882030763e-6"
+  },
+  "scope": {
+    "GR_closed": false,
+    "conditional_same_field_first_source": true,
+    "full_clock_Info_price_composed": false,
+    "native_conjugate_writer_admitted": false
+  },
+  "status": "PASS"
+}

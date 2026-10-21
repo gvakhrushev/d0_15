@@ -1,0 +1,28 @@
+{
+  "checks": {
+    "coherent_reflection": 69,
+    "forward_bell": 215,
+    "total": 284
+  },
+  "files_sha256": {
+    "FORWARD_BELL.md": "afdce35fb1a29bcf8f7c4f76ad9baf1d2a8018aa0f48c79af7a0f50c3348dbc0",
+    "PROOF.md": "05c2774366496df42b6524df7d3f938572e719a3fafdbfe3a7afbca4b210dc8a",
+    "RESULT.json": "d2c6db90ae72248ae5f691844872ba67a19dd717587f26a54dee96a3285d1992",
+    "RESULT_BELL.json": "fb4c5db6609f6cb53b86820a45d30ac20d641b1ba2409968a65ff6431c7e8784",
+    "RESULT_BELL_OPTIMIZED.json": "fb4c5db6609f6cb53b86820a45d30ac20d641b1ba2409968a65ff6431c7e8784",
+    "RESULT_OPTIMIZED.json": "d2c6db90ae72248ae5f691844872ba67a19dd717587f26a54dee96a3285d1992",
+    "check_forward_bell.py": "8d6b857aa0ac8ab5839654ea24de0a801d632c1dae6ce5ef6b9507033693fd59",
+    "check_reflection.py": "32afd8f531f5a3353643f38df7d9aebece1db68d485b5576e7a802ba487f949b"
+  },
+  "replay": {
+    "coherent_normal_equals_optimized": true,
+    "forward_normal_equals_optimized": true
+  },
+  "scope": {
+    "GR_closed": false,
+    "controller_Info_clock_stationary": false,
+    "full_one_initial_physical_execution": false,
+    "true_Book03_complement": "finite exact conditional source"
+  },
+  "status": "PASS"
+}
