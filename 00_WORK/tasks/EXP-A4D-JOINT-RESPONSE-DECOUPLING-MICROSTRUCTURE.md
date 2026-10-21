@@ -3732,3 +3732,70 @@ independent preparation/clock/work equations, or provide the original
 finite-lattice lift. Package provenance and source mapping are recorded in
 the [parent integration memo](../../02_REGISTRY/research/MEMO_A4D_JOINT_RESPONSE_DECOUPLING_MICROSTRUCTURE.md).
 The constitutive obligation remains open; `GR_closed=false`.
+
+## 21 October continuation: constructive native second jets, complete causal archive, and actual weighted dynamics
+
+Phase: native realization and final composition on the existing
+constitutive/native-programme-v1 owner. The
+[causal/native/weighted synthesis](../../02_REGISTRY/research/A4D_CAUSAL_NATIVE_SOURCE_AND_WEIGHTED_DYNAMICS_2026_10_21.md)
+continues the source-pinned `086fab99` argument and preserves the concurrent
+paid Golden-word source-secant result through `ea0ea3be`. No new task,
+selector, action, lifecycle change, assembly acceptance or GR claim is made.
+
+The changed input in the moving-query application is an explicit coherent
+use of the ORIGINAL Julia creation block's fixed top kernel and of the
+material preparation's fixed clock component. These give linear coframe
+probes and exact two-copy material bilinears with the ACTUAL Fourier128
+reference, including its zero off-site overlaps. Forward-link probes and
+the exterior-square quintic inverse then produce a fixed finite report
+matching all ambient second derivatives on the original square-zero
+primary family. Exact positive Q(p) coefficient preparations, paid logical
+factories, finite majority amplification and literal independent local
+trace copies give its true complete CQ ledger. A common finite schedule
+can retain readiness at least one half; its resource cost is not bounded
+uniformly under refinement. Under an actually field-independent supplied
+input/call baseline, all original42 field sources and the full field-Hessian
+inertia are preserved by one positive scalar. Actual DB_new and D2B_new
+remain in the general formula. The same LEFT-only report is also a real
+consumer of the previous balanced relative-preparation neutrality theorem.
+
+The separate original full128 reflection is now used to realize the COMPLETE
+Book06 archive-return series on a strictly forward time-bin execution.
+For n+1 actual encounters its absolute feedback is exactly the old v8 J_n
+plus `-128 dim(H) log(1-z)`. All finite field/cut/normalization jets entering
+the same B agree at fixed z, even through dark-rank changes; the moving-z
+boundary remains. This removes the arbitrary surviving-window multiplicity
+for that declared coherent realization. Its routing and remaining absolute
+Info/work/cost are not equated to fresh measured128-outcome histories.
+
+The weighted continuum application retains the actual prescribed PF rho
+and the already-derived stationary normal form. The correct full Ward
+identity is `d(F-xFx)+yFy dlog(rho)=0`, and it gives
+`d(rho y/Fx)=0`, equivalently constant transformed material contraction.
+Every local positive irrotational Einstein-dust geometry has a representative
+for every prescribed smooth positive rho, via a constructive mass-volume
+Jacobian with its induced shift retained. Nonnull original-metric torsion
+and conformal terms are explicit; the null map is identity. Coupled
+fixed-collar Jacobi kernels equal those of the affine comparison with the
+ACTUAL spatial material slope. The finite-source chain rule is exact;
+continuum Ward identities are not presumed on the original stencil.
+
+Carriers and norms remain explicit: full CAR16 and RIGHT128 with the real
+PF/count assignment, fixed finite strict-contraction Julia charts and full
+ambient two-jets; finite-dimensional Book operator/determinant norms with
+the complete complementary archive; Lorentz signature (+---), fixed
+coordinate measure and undensitized material contraction for the continuum
+consumer. The native two-jet theorem does not transport the entire off-null
+K functional to its new circuit. The three full prices are not silently
+identified.
+
+Write paths are the new synthesis, its three proof/checker/review packets
+under `sources/d0_causal_native_weighted_synthesis_2026-10-21/`, this existing
+brief and a narrow primary-case pointer. The smallest decisive checks are
+the exact native interference/jet/table algebra, the finite original128
+causal determinant/source identity, and the actual weighted Ward/shift
+calculation. Independent reviews pin each proof and receipt. Old geometric,
+rank/root and Lean suites are consumed, not replayed. The original coherent
+Julia field access, paid independent copy supply, native field writer and
+compulsory same-process Book/Info/clock valuation remain the physical map
+to construct. `GR_closed=false`.

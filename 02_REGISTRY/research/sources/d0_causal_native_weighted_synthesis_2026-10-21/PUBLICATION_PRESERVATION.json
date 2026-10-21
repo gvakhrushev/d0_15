@@ -1,0 +1,108 @@
+{
+  "status": "PASS_LATE_CONCURRENT_PRESERVATION",
+  "reviewed_integration_base": "f996faae1eabd552a4f1573174bb6738a4c61c35",
+  "publication_parent": "7f87eaaba20a19b1dad3a27079a4417caff5bff1",
+  "preserved_commits": [
+    "908eaa7e58e77bf0892968dd131affb9bd7145d7",
+    "bd2005bb5f2ec6dfe4d1738941ff7ab36cde072e",
+    "7f87eaaba20a19b1dad3a27079a4417caff5bff1"
+  ],
+  "all_historical_source_pins_verified": 27,
+  "all_reviewed_artifact_hashes_unchanged": 17,
+  "changed_current_source_inputs": [
+    {
+      "path": "02_REGISTRY/research/A4D_PAID_GOLDEN_WORD_QUERY_SOURCE_LIMIT_2026_10_21.md",
+      "pinned_ref": "ea0ea3bed801b3a5f6bb147e803c75794214577b",
+      "pinned_sha256": "9091b4ad313465098b410dca0bd9f49bc54de0b6afb33070774dffd5d5c58672",
+      "current_sha256": "155fa5ec5478e0965884425170c9fd42e1d546d7e767e6515c170eb59dcece50",
+      "pinned_bytes_preserved_as_exact_prefix": true,
+      "appended_bytes": 2637
+    }
+  ],
+  "concurrent_files": [
+    {
+      "path": "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md",
+      "remote_blob": "6c2dc2a02786ece8097d26f3df4cbc4f81e152ac",
+      "remote_bytes_preserved": true,
+      "own_append_bytes": 4337
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_COMPLETE_PRICE_ONSHELL_DENSITY_RIGIDITY_2026_10_21.md",
+      "remote_blob": "b51a3fc3df1c29158361ab2ee5766a15e5e21b95",
+      "remote_bytes_preserved": true,
+      "own_append_bytes": 0
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_PAID_GOLDEN_WORD_QUERY_SOURCE_LIMIT_2026_10_21.md",
+      "remote_blob": "c1a67ea58313a78ded234b69216b23c5c17c986e",
+      "remote_bytes_preserved": true,
+      "own_append_bytes": 0
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_THREE_RECOVERED_RESULTS_INTEGRATION_2026_10_21.md",
+      "remote_blob": "a6cec5bd64179f0730a9284acc2c8a4f8d247163",
+      "remote_bytes_preserved": true,
+      "own_append_bytes": 0
+    },
+    {
+      "path": "02_REGISTRY/research/MEMO_A4D_JOINT_RESPONSE_DECOUPLING_MICROSTRUCTURE.md",
+      "remote_blob": "b0b5d59cfe19440d4c21a8d1965e3201a9029960",
+      "remote_bytes_preserved": true,
+      "own_append_bytes": 0
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_complete_price_ward_2026-10-21/AUTHOR_RECEIPT.json",
+      "remote_blob": "0f2f0a5c6d9ace4448236d7567ebe26ddf4c635c",
+      "remote_bytes_preserved": true,
+      "own_append_bytes": 0
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_complete_price_ward_2026-10-21/README.md",
+      "remote_blob": "b620b03bb67c237525a85b432ab758e503647df7",
+      "remote_bytes_preserved": true,
+      "own_append_bytes": 0
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_complete_price_ward_2026-10-21/check_complete_price_ward.py",
+      "remote_blob": "74d1792798d39a04eb0753e2f18793e0d19e5223",
+      "remote_bytes_preserved": true,
+      "own_append_bytes": 0
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_paid_golden_query_secants_2026-10-21/RESULT_FOUR_SETTING.json",
+      "remote_blob": "2f300396786527e26928bb160bc154a1b66b15f6",
+      "remote_bytes_preserved": true,
+      "own_append_bytes": 0
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_paid_golden_query_secants_2026-10-21/SOURCE_INPUTS.json",
+      "remote_blob": "76324a15f8168e74ff0fbfb500f01d01e477e494",
+      "remote_bytes_preserved": true,
+      "own_append_bytes": 0
+    }
+  ],
+  "task_conflict_resolution": "Both independently appended sections retained byte for byte; incoming full task file is an exact prefix.",
+  "scope": "Historical integration checks remain at their stated base. The concurrent four-setting and fixed-measure Ward results are preserved, not independently revalidated or identified with the weighted/native proof interfaces. No numerical or Lean reruns were required for unchanged reviewed arguments.",
+  "structural_guards_after_integration": {
+    "python3 tools/validate_repo.py": {
+      "returncode": 0,
+      "stdout": "claims=889 assumptions=31 aliases=58 formal_support=183 lean_closure=918\nPASS warnings=0\n",
+      "stderr": ""
+    },
+    "python3 tools/validate_work.py": {
+      "returncode": 0,
+      "stdout": "PASS work_validation: active work plane clean and enforced\n",
+      "stderr": ""
+    },
+    "python3 tools/validate_agent_protocol.py": {
+      "returncode": 0,
+      "stdout": "PASS agent_protocol: cold-start task metadata enforced\n",
+      "stderr": ""
+    },
+    "git diff --check": {
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  }
+}

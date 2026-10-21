@@ -1,0 +1,46 @@
+{
+  "input_ref": "086fab99d8aaed7f712e9a3d2858c516b61901fc",
+  "files": [
+    {
+      "path": "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md",
+      "sha256": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d",
+      "git_blob": "ecdd31abb52c94e9f2a157a80c7c49a6f5ac31aa"
+    },
+    {
+      "path": "01_BOOKS/BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md",
+      "sha256": "592bbbb1dae9cc599df2eef9cabf117b19f8566d755ad072b77beb04624271d7",
+      "git_blob": "99721fb50de66688564638f5f2b449a38675d7bd"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_EXECUTION_CLOCK_PRICE_ARCHITECTURE_2026_10_21.md",
+      "sha256": "417a8d89c66e6363c8bbe1a4615187b6683d6a3c48730602904aa640890f0b3e",
+      "git_blob": "abd896ef3b642886c0e4ff5c9dcd03b54d2e9c39"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_FULL128_RELATIVE_TRANSFER_AND_CONDENSED_DESCENT.md",
+      "sha256": "577cbc909f766468fbef8ab38a5986ae761d348b075c2f38b2e1a88b704d4b3e",
+      "git_blob": "a88f8b84a5214414bce672bd96a11ac9d205d3fa"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_record_generated_heat_v8_2026-10-14/RESULT.md",
+      "sha256": "f7ea30d997a58fa4e608d4403acae5f5e3d7e5da45116f9a7c3f62be5e99115c",
+      "git_blob": "e5b08043d3156fb30248a482e3c72342ff13add9"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_ARCHIVE_FUTURE_CAUSAL_SELF_ENERGY_AND_DETECTOR_TIME_2026_10_19.md",
+      "sha256": "00b42bf0eae3d23b7914d6d74719ffa096f5546ef0350c96cbcdb0f6a97967ea",
+      "git_blob": "4b06c4eab26c9aa93f88aae95551bfaf7bbffc41"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_execution_clock_source_2026-10-21/check_execution_clock_source.py",
+      "sha256": "e9f7b8816bb83adbdf61aecf8bf41adcbfe18121ca15c52643761de4a94ab85a",
+      "git_blob": "008b8e2aab1e14e6037a4fd77bea015c9a461c39"
+    },
+    {
+      "path": "03_FORMALIZATION/D0/Evolution/FeshbachSchurTimeDelayOwner.lean",
+      "sha256": "2e06975acfff731956536189715a7d4427a75fdfbcf7ed94b6454fd336929578",
+      "git_blob": "bf3699925e35a290e54536c47b5a916832deecfc"
+    }
+  ],
+  "scope": "Finite causal Book06 all-return of original full128 Golden reflection; no physical admission or full CQ-price equivalence"
+}

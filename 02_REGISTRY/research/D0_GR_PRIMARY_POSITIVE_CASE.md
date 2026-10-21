@@ -450,3 +450,26 @@ complete price functionals remain distinct. This excludes that concrete
 effect map; it does not exclude a paid moving encoder/decoder or another
 admitted common map. See the exact source-pinned check in
 [`car_effect/PROOF.md`](sources/d0_physical_cap1_execution_composition_2026-10-21/car_effect/PROOF.md).
+
+## Constructive native second jets, complete causal feedback, and actual weighted dynamics
+
+The [causal/native/weighted continuation](A4D_CAUSAL_NATIVE_SOURCE_AND_WEIGHTED_DYNAMICS_2026_10_21.md)
+now replaces the free two-angle report interface by a fixed finite coherent
+compiler, conditional on the original moving Julia access and genuinely
+supplied complete material copies. Its internal CAR top/clock references,
+quintic exterior-area inverse and positive paid probability tables match
+the original report through ALL ambient second derivatives on this primary
+family. With a field-independent actual supply/call baseline, the same
+all42 finite roots and full Hessian inertia transfer with a positive common
+gain. Independent input/writer charges remain explicit; this is not a
+native field-writer or compulsory Book-price theorem.
+
+For the separate original full128 reflection, the complete forward archive
+return has exactly the old v8 feedback plus its compulsory first-tick
+boundary, without an arbitrary clock-window multiplier. Its full remaining
+ledger is not identified with another execution. The actual PF-weighted
+continuum CQ law also now has its own Ward rigidity and constructive local
+positive dust inverse, with the original nonnull conformal/torsion readout
+retained and identity on null fields. This continuum result is not silently
+promoted to a discrete Ward identity or to the new compiler's off-null law.
+The existing saddle exclusion and `GR_closed=false` remain in force.

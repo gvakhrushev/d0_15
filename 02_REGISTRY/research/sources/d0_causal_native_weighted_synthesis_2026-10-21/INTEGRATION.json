@@ -1,0 +1,346 @@
+{
+  "status": "PASS_REVIEWED_SCOPED_SOURCE_COMPOSITION",
+  "research_owner": "EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE",
+  "pr": 334,
+  "scientific_input_ref": "086fab99d8aaed7f712e9a3d2858c516b61901fc",
+  "concurrent_source_ref": "ea0ea3bed801b3a5f6bb147e803c75794214577b",
+  "integration_base": "f996faae1eabd552a4f1573174bb6738a4c61c35",
+  "concurrent_preservation": "Fast-forward preserves paid Golden grids/secants, the later exact-four-setting evaluator, and current parent/three-package routing; no new claim of independently validating those existing calculations.",
+  "checks": [
+    "native_source: all current and historical source bytes match",
+    "causal_archive: all current and historical source bytes match",
+    "weighted_dynamics: all current and historical source bytes match",
+    "All frozen proof/checker/receipt/review pins match",
+    "Root native and causal replays match original receipts byte for byte",
+    "All 7 new Markdown links resolve",
+    "Affected structural guards and whitespace check pass on integrated inputs"
+  ],
+  "source_pins": [
+    {
+      "packet": "native_source",
+      "path": "02_REGISTRY/research/sources/d0_physical_cap1_execution_composition_2026-10-21/moving_query/PROOF.md",
+      "ref": "086fab99d8aaed7f712e9a3d2858c516b61901fc",
+      "git_blob": "280d4b93f3113d94691609b20cd7c27793e61499",
+      "sha256": "9dc733555100874b164e24a3dee7d73814faa4fc5a21a7b22a06ca3b23d93bd7"
+    },
+    {
+      "packet": "native_source",
+      "path": "02_REGISTRY/research/A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md",
+      "ref": "086fab99d8aaed7f712e9a3d2858c516b61901fc",
+      "git_blob": "2c9e30fc7ae5518aa958d0ee29c08ae071150c69",
+      "sha256": "a0a8a0b7389c7a6120ebbe402d111bf55cd2a00730403a00ffceca73548e7915"
+    },
+    {
+      "packet": "native_source",
+      "path": "02_REGISTRY/research/sources/d0_primary_native_domain_source_2026-10-20/check_primary_domain_source.py",
+      "ref": "086fab99d8aaed7f712e9a3d2858c516b61901fc",
+      "git_blob": "7f0b411a7d8fa6af6753109eb7057a7a375fd5ef",
+      "sha256": "c67285c7469db49ff61f3e52597d0bcc6aad991ec1f7af025d6daeb065a43edf"
+    },
+    {
+      "packet": "native_source",
+      "path": "02_REGISTRY/research/sources/d0_primary_native_domain_source_2026-10-20/RESULT.md",
+      "ref": "086fab99d8aaed7f712e9a3d2858c516b61901fc",
+      "git_blob": "ed00d6609c6f9f88391c7ff076abc65a3524dbd1",
+      "sha256": "290772fb869cfa73ed0cc419d3182048d80ea9b02312be0b9d56ad558f5c47be"
+    },
+    {
+      "packet": "native_source",
+      "path": "02_REGISTRY/research/sources/d0_global_result_composition_2026-10-20/HOLONOMY_SOURCE_AND_REFINEMENT.md",
+      "ref": "086fab99d8aaed7f712e9a3d2858c516b61901fc",
+      "git_blob": "591f598e3b98bed17e87512ec65929acf6057464",
+      "sha256": "1d38287ed2b98c782dcc8bdd82c3e267e81f6381af522c891cde6aa8c33dd8a5"
+    },
+    {
+      "packet": "native_source",
+      "path": "02_REGISTRY/gr_assembly/sources/d0_full128_order_memory_2026-10-19/owner.md",
+      "ref": "086fab99d8aaed7f712e9a3d2858c516b61901fc",
+      "git_blob": "9c1f511543f1ef26a001ffc19b30986decf87590",
+      "sha256": "4f32d226dcf38284cae32ec78937915ae6f149271097107f3078efc0ba5545f0"
+    },
+    {
+      "packet": "native_source",
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/NATIVE_FOUR_COPY_MATTER_RESPONSE.md",
+      "ref": "086fab99d8aaed7f712e9a3d2858c516b61901fc",
+      "git_blob": "a0a1419e4c733b0cb68b875e276851908088d320",
+      "sha256": "ce8d2e88d8a5669a3ef9de1a849a5e21ec0a55b3fdb253d4b990656b0062427a"
+    },
+    {
+      "packet": "native_source",
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/GOLDEN_EXACT_DETECTOR.md",
+      "ref": "086fab99d8aaed7f712e9a3d2858c516b61901fc",
+      "git_blob": "92b9003d783c24b1883a2a21f8b30625078afff7",
+      "sha256": "d33c9c2cb2322e381723f481eb1fcf58058fd05ad88eda92c5597c026d02eb77"
+    },
+    {
+      "packet": "native_source",
+      "path": "02_REGISTRY/research/A4D_LOCAL_LEFT_CODED_CAR_NULL_MATTER_EINSTEIN_2026_10_18.md",
+      "ref": "086fab99d8aaed7f712e9a3d2858c516b61901fc",
+      "git_blob": "75c40d133a23973a36ba5b95d34b4eb36ca96663",
+      "sha256": "828cba545e2c734741e7acf1509248c441de4451f9099cebee8d10c00230e35b"
+    },
+    {
+      "packet": "native_source",
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/TWO_NATIVE_8D_DETERMINANT_SOURCE.md",
+      "ref": "086fab99d8aaed7f712e9a3d2858c516b61901fc",
+      "git_blob": "63b381ca8b0abd9f03ebee2495de904c379f0736",
+      "sha256": "0ea9a175e630e0cb547aff4d25ab355b60125282645e776f23d3a98c0e7d4851"
+    },
+    {
+      "packet": "native_source",
+      "path": "02_REGISTRY/research/A4D_SAME_EXECUTION_SPATIAL_WEIGHTS_AND_COMPLETE_SOURCE_2026_10_21.md",
+      "ref": "086fab99d8aaed7f712e9a3d2858c516b61901fc",
+      "git_blob": "14867b53a1bbb006eafe2cbf90d62be03560e5a0",
+      "sha256": "42c9b9745f3c9ee78b868e991485bbaf8b77810f4261204d913fc87fc44377a1"
+    },
+    {
+      "packet": "native_source",
+      "path": "02_REGISTRY/research/A4D_PAID_GOLDEN_WORD_QUERY_SOURCE_LIMIT_2026_10_21.md",
+      "ref": "ea0ea3bed801b3a5f6bb147e803c75794214577b",
+      "git_blob": "8854d99a2752a9890430035279293a8ce85d2eb6",
+      "sha256": "9091b4ad313465098b410dca0bd9f49bc54de0b6afb33070774dffd5d5c58672"
+    },
+    {
+      "packet": "native_source",
+      "path": "02_REGISTRY/research/sources/d0_joint_preparation_compiler_clock_2026-10-21/balanced_preparation/BALANCED_NATIVE_PREPARATION.md",
+      "ref": "086fab99d8aaed7f712e9a3d2858c516b61901fc",
+      "git_blob": "47022e92ea9dbc3f94bd95b95a330552023f4c31",
+      "sha256": "7b9d3afe684f34695a4dfd6d89a8db457ba9cf47002733c65e9a2dc5c5751d68"
+    },
+    {
+      "packet": "causal_archive",
+      "path": "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md",
+      "ref": "086fab99d8aaed7f712e9a3d2858c516b61901fc",
+      "git_blob": "ecdd31abb52c94e9f2a157a80c7c49a6f5ac31aa",
+      "sha256": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d"
+    },
+    {
+      "packet": "causal_archive",
+      "path": "01_BOOKS/BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md",
+      "ref": "086fab99d8aaed7f712e9a3d2858c516b61901fc",
+      "git_blob": "99721fb50de66688564638f5f2b449a38675d7bd",
+      "sha256": "592bbbb1dae9cc599df2eef9cabf117b19f8566d755ad072b77beb04624271d7"
+    },
+    {
+      "packet": "causal_archive",
+      "path": "02_REGISTRY/research/A4D_EXECUTION_CLOCK_PRICE_ARCHITECTURE_2026_10_21.md",
+      "ref": "086fab99d8aaed7f712e9a3d2858c516b61901fc",
+      "git_blob": "abd896ef3b642886c0e4ff5c9dcd03b54d2e9c39",
+      "sha256": "417a8d89c66e6363c8bbe1a4615187b6683d6a3c48730602904aa640890f0b3e"
+    },
+    {
+      "packet": "causal_archive",
+      "path": "02_REGISTRY/research/A4D_NATIVE_FULL128_RELATIVE_TRANSFER_AND_CONDENSED_DESCENT.md",
+      "ref": "086fab99d8aaed7f712e9a3d2858c516b61901fc",
+      "git_blob": "a88f8b84a5214414bce672bd96a11ac9d205d3fa",
+      "sha256": "577cbc909f766468fbef8ab38a5986ae761d348b075c2f38b2e1a88b704d4b3e"
+    },
+    {
+      "packet": "causal_archive",
+      "path": "02_REGISTRY/research/sources/d0_record_generated_heat_v8_2026-10-14/RESULT.md",
+      "ref": "086fab99d8aaed7f712e9a3d2858c516b61901fc",
+      "git_blob": "e5b08043d3156fb30248a482e3c72342ff13add9",
+      "sha256": "f7ea30d997a58fa4e608d4403acae5f5e3d7e5da45116f9a7c3f62be5e99115c"
+    },
+    {
+      "packet": "causal_archive",
+      "path": "02_REGISTRY/research/A4D_ARCHIVE_FUTURE_CAUSAL_SELF_ENERGY_AND_DETECTOR_TIME_2026_10_19.md",
+      "ref": "086fab99d8aaed7f712e9a3d2858c516b61901fc",
+      "git_blob": "4b06c4eab26c9aa93f88aae95551bfaf7bbffc41",
+      "sha256": "00b42bf0eae3d23b7914d6d74719ffa096f5546ef0350c96cbcdb0f6a97967ea"
+    },
+    {
+      "packet": "causal_archive",
+      "path": "02_REGISTRY/research/sources/d0_execution_clock_source_2026-10-21/check_execution_clock_source.py",
+      "ref": "086fab99d8aaed7f712e9a3d2858c516b61901fc",
+      "git_blob": "008b8e2aab1e14e6037a4fd77bea015c9a461c39",
+      "sha256": "e9f7b8816bb83adbdf61aecf8bf41adcbfe18121ca15c52643761de4a94ab85a"
+    },
+    {
+      "packet": "causal_archive",
+      "path": "03_FORMALIZATION/D0/Evolution/FeshbachSchurTimeDelayOwner.lean",
+      "ref": "086fab99d8aaed7f712e9a3d2858c516b61901fc",
+      "git_blob": "bf3699925e35a290e54536c47b5a916832deecfc",
+      "sha256": "2e06975acfff731956536189715a7d4427a75fdfbcf7ed94b6454fd336929578"
+    },
+    {
+      "packet": "weighted_dynamics",
+      "path": "02_REGISTRY/research/sources/d0_native_density_rigidity_2026-10-21/PROOF.md",
+      "ref": "086fab99d8aaed7f712e9a3d2858c516b61901fc",
+      "git_blob": "afb1844803e1ea01fc7195e2d3d97f4b3b49df39",
+      "sha256": "23794bfbfbbe8c3524f370461ccc616d2c7653318e4a578250354db378fa26a2"
+    },
+    {
+      "packet": "weighted_dynamics",
+      "path": "02_REGISTRY/research/sources/d0_primary_normal_source_recovery_2026-10-21/constitutive/CONSTITUTIVE_COMPOSITION.md",
+      "ref": "086fab99d8aaed7f712e9a3d2858c516b61901fc",
+      "git_blob": "60f2a9c0b614541847e28b3a183a90c9731fcc0e",
+      "sha256": "d5fbe513d22bb130092b1ce64a69bb84bc7d72be7215462b3704b71a2ae168a7"
+    },
+    {
+      "packet": "weighted_dynamics",
+      "path": "02_REGISTRY/research/sources/d0_same_execution_spatial_source_2026-10-21/geometry/SAME_EXECUTION_LOCAL_HOMOGENEITY_AND_WEIGHT_SOURCE.md",
+      "ref": "086fab99d8aaed7f712e9a3d2858c516b61901fc",
+      "git_blob": "deff5f8879cec7d8c3989f941553b4a873c3c39c",
+      "sha256": "62aa5b45923e6e9d51e2075507cd114d42c5f7d1f5107a99e1b08be053e3c034"
+    },
+    {
+      "packet": "weighted_dynamics",
+      "path": "02_REGISTRY/research/sources/d0_same_execution_spatial_source_2026-10-21/weights/ONE_STAGE_COMPLETE_SPATIAL_WEIGHT_THEOREM.md",
+      "ref": "086fab99d8aaed7f712e9a3d2858c516b61901fc",
+      "git_blob": "58762641a26e0f6a7c22275b325e4a4016642a09",
+      "sha256": "960f2d1edc4f151607f9c4ecc76e1522d5dee08922319a3700c0cc3fc96458d1"
+    },
+    {
+      "packet": "weighted_dynamics",
+      "path": "02_REGISTRY/research/A4D_COMPLETE_PRICE_NONVACUUM_STATIONARY_NORMAL_FORM_2026_10_21.md",
+      "ref": "086fab99d8aaed7f712e9a3d2858c516b61901fc",
+      "git_blob": "25b2253436419ec0f0f63c36d40d5d728103a40c",
+      "sha256": "5ad9461c6f1b8d964f0764697a38120d19d320714bc66d99a42898171e3a01a0"
+    },
+    {
+      "packet": "weighted_dynamics",
+      "path": "02_REGISTRY/research/A4D_CONDITIONAL_NON_NULL_BIANCHI_COMPLETE_PRICE_2026_10_21.md",
+      "ref": "086fab99d8aaed7f712e9a3d2858c516b61901fc",
+      "git_blob": "98ca6dc3566831cd6ae2bbf5d4115e28c315f519",
+      "sha256": "cc856a24ded799d1c17e1ec645991f8206f187b49c61ab1debbc5e4c321a87f5"
+    }
+  ],
+  "reviewed_artifacts": [
+    {
+      "path": "02_REGISTRY/research/A4D_CAUSAL_NATIVE_SOURCE_AND_WEIGHTED_DYNAMICS_2026_10_21.md",
+      "bytes": 25630,
+      "sha256": "d3f05bc13512a518c1f0a6738d4e91952774908f1ded5727ee81c004094bbaa3"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_causal_native_weighted_synthesis_2026-10-21/INTEGRATION_REVIEW.md",
+      "bytes": 5689,
+      "sha256": "537472dc46c67f4547738298672e6f58f825e2c7f873a6450901f8efaa019166"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_causal_native_weighted_synthesis_2026-10-21/causal_archive/CHECK_RESULT.json",
+      "bytes": 5697,
+      "sha256": "38d40ba3ada024c1dcfceac823b7e7c0e67919e97525e1c9d49b973468a91df9"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_causal_native_weighted_synthesis_2026-10-21/causal_archive/FORWARD_ARCHIVE_BOOK_DETERMINANT.md",
+      "bytes": 19062,
+      "sha256": "3c75cc1c7c9928d2209fe58a930105412860aa6c2503801dadcd1ea7b10a5e70"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_causal_native_weighted_synthesis_2026-10-21/causal_archive/REVIEW.md",
+      "bytes": 5062,
+      "sha256": "96b67c7d9bff93029cee10a624e8a04126cf81e887e07373dbdfd6d5dbeac905"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_causal_native_weighted_synthesis_2026-10-21/causal_archive/SOURCE_PINS.json",
+      "bytes": 2215,
+      "sha256": "c435a168d41c9d3d20593daa7360de78671e1f7b5b491cf37c77e1d575012476"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_causal_native_weighted_synthesis_2026-10-21/causal_archive/check_forward_archive_book.py",
+      "bytes": 13390,
+      "sha256": "ad83124690c44ddbaf4c217d2d7db666a9057fd1b8a542509e88f32658a52015"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_causal_native_weighted_synthesis_2026-10-21/native_source/CHECK_RESULT.json",
+      "bytes": 1790,
+      "sha256": "155f821709c876cea31fa67daac7c46dd15947bdb3b36e664cb99109061aed2f"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_causal_native_weighted_synthesis_2026-10-21/native_source/NATIVE_POLYNOMIAL_FIRST_JET.md",
+      "bytes": 35006,
+      "sha256": "4d098d1e6ad8cb7daf477b498f808b7b962d6432f3da78ae573e321dbbcb915d"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_causal_native_weighted_synthesis_2026-10-21/native_source/REVIEW.md",
+      "bytes": 12579,
+      "sha256": "2fca839c33f27da8669b11902d1f33d4bc89ec0804d1709664411b8a57d4df2a"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_causal_native_weighted_synthesis_2026-10-21/native_source/SOURCE_PINS.json",
+      "bytes": 3422,
+      "sha256": "1fbfd90396568b69e2b0226925727f2df69ce3976382f02dd317d97e0b428ded"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_causal_native_weighted_synthesis_2026-10-21/native_source/check_native_polynomial_first_jet.py",
+      "bytes": 17887,
+      "sha256": "89219a3ca7f62413d7961ba945b437cfd71f1488b35afb3f482bd3ee5dd9f6be"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_causal_native_weighted_synthesis_2026-10-21/weighted_dynamics/RESULT.json",
+      "bytes": 6678,
+      "sha256": "7c94a1213ee6064c0cf3c86cbb7ec6dbb24d9332cca8ec5b9bbb00bf95297e2b"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_causal_native_weighted_synthesis_2026-10-21/weighted_dynamics/REVIEW.md",
+      "bytes": 10735,
+      "sha256": "7d545b65de84a0cf0b49b96cd4a98a0445084a935338a089658ca61e81acf0c7"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_causal_native_weighted_synthesis_2026-10-21/weighted_dynamics/SOURCE_PINS.json",
+      "bytes": 1869,
+      "sha256": "5c5a582e2016a04b7d65f24ec8ec9d5caccbcda4377f4dc52a19d718ad93cd94"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_causal_native_weighted_synthesis_2026-10-21/weighted_dynamics/WEIGHTED_WARD_AND_DUST.md",
+      "bytes": 23405,
+      "sha256": "dfb7ef92acbf21ea2154d9d197e9884c59ddc13fdfa912d293403696c283e01d"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_causal_native_weighted_synthesis_2026-10-21/weighted_dynamics/check_weighted_ward.py",
+      "bytes": 8597,
+      "sha256": "34eac4356cae034429aab0b4807db1cdc8506f3017b92025b3815cf70ec14582"
+    }
+  ],
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "sympy": "1.14.0"
+  },
+  "verification": {
+    "native": "Author normal + independent optimized + root narrow replay: identical bytes",
+    "causal_archive": "Author normal/optimized + root independent algebra and narrow replay: identical bytes",
+    "weighted_dynamics": "Author + independent mathematical review and narrow Decimal replay: identical bytes; root mathematical inspection",
+    "guards": {
+      "python3 tools/validate_repo.py": {
+        "returncode": 0,
+        "stdout": "claims=889 assumptions=31 aliases=58 formal_support=183 lean_closure=918\nPASS warnings=0\n",
+        "stderr": ""
+      },
+      "python3 tools/validate_work.py": {
+        "returncode": 0,
+        "stdout": "PASS work_validation: active work plane clean and enforced\n",
+        "stderr": ""
+      },
+      "python3 tools/validate_agent_protocol.py": {
+        "returncode": 0,
+        "stdout": "PASS agent_protocol: cold-start task metadata enforced\n",
+        "stderr": ""
+      },
+      "git diff --check": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      }
+    },
+    "old_geometry_rank_root_or_lean_replayed": false
+  },
+  "scope": {
+    "native_exact_primary_ambient_two_jet": true,
+    "all_42_roots_and_hessian": "conditional on actual supplied call/copy baseline jets",
+    "causal_original_full128_feedback_identity": true,
+    "weighted_continuum_arbitrary_positive_rho": true,
+    "native_two_jet_promoted_to_full_off_null_K": false,
+    "distinct_complete_prices_identified": false,
+    "physical_writer_compulsory_Book_or_minimum_selected": false,
+    "continuum_Ward_assumed_on_finite_lattice": false,
+    "GR_closed": false
+  },
+  "source_pin_counts": {
+    "native_source": 13,
+    "causal_archive": 8,
+    "weighted_dynamics": 6
+  }
+}
