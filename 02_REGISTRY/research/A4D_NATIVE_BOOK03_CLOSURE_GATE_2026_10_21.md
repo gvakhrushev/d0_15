@@ -176,6 +176,6 @@ For the original cap-one execution, produce the literal branch table `(H,q_H,c_H
 3. complete-path cycle/coboundary identity (5)–(6);
 4. the full original 16+24+2 plus internal preparation/clock source comparison.
 
-If the Book03 definition cannot determine `I_H) or its first jet from owned primitives, record the result as **valuation underdetermined at the physical interface** and identify the missing primitive—not as a failure of every possible Info law. No fit to the desired Einstein source, new action, new detector, or selector is allowed. Only after this finite same-execution map passes is continuum/refinement transport a meaningful next test.
+If the Book03 definition cannot determine `I_H` or its first jet from owned primitives, record the result as **valuation underdetermined at the physical interface** and identify the missing primitive—not as a failure of every possible Info law. No fit to the desired Einstein source, new action, new detector, or selector is allowed. Only after this finite same-execution map passes is continuum/refinement transport a meaningful next test.
 
 This section consumes, rather than duplicates, the 21 October finite-source/covariant-two-field synthesis. It changes no lifecycle, assembly, Book/CORE acceptance or GR status.
