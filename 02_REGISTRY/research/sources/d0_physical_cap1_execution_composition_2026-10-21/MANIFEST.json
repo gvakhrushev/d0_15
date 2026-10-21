@@ -3,7 +3,7 @@
   "files": [
     {
       "path": "README.md",
-      "sha256": "f67455a5f8ab9e21f977e17f79ff935387fef313058cfe11879d463c4d37ad05"
+      "sha256": "a7bc5e426b6db7bebb9c252bfede6fc00231fa4c3a631ac318a1ebcfebff3776"
     },
     {
       "path": "book_binding/PROOF.md",
@@ -87,11 +87,19 @@
     },
     {
       "path": "restricted_car/SCOPE.md",
-      "sha256": "d4c85907e5de4c2b25fa6ab8d0f76166b5f8eadaef649846965badd47a6ddbe3"
+      "sha256": "4609a264e174fc15eb706f7c4a48713eb309e785458f20e16a8eb6db65010737"
     },
     {
       "path": "restricted_car/SOURCE_PINS.json",
-      "sha256": "25d576017278be0996a374d6499285655300a3f57a61af45f32e4c8705df10f6"
+      "sha256": "265437aa82f1a290bc692621c91fefa20620d9af0eeaba64783c7c42d8d81a7e"
+    },
+    {
+      "path": "restricted_car/check_moving_solder_observer_binding.py",
+      "sha256": "e997fb19892902f7d54f11ac56f7b26f06270dbd5383e9ca7682b1eac999f1f2"
+    },
+    {
+      "path": "restricted_car/MOVING_SOLDER_OBSERVER_BINDING_RESULT.json",
+      "sha256": "1c15b1e7d59dc9477919dbbc167d2120d7cc0e1c8a2e64f66d0be8025d12edc5"
     }
   ]
 }

@@ -17,6 +17,11 @@
       "git_blob": "fda1294b8d9794a62b86faaa19e3cc1a459e031d"
     },
     {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/NATIVE_FIELD_WRITER_BRIDGE.md",
+      "sha256": "89406be7d000892ba4ac062f19bb03dd86d8c9d3f04bc8a7b8de39dd07b66a2a",
+      "git_blob": "fa59e9f59e061e6bcda0f05f29abed1e641f8ebb"
+    },
+    {
       "path": "02_REGISTRY/research/certificates/a4d_native_field_instrument_jet_check.py",
       "sha256": "4486abe0799b0a60a3191cb6bf19d85feaebaed7ace876f9132325932bfb1536",
       "git_blob": "2acc4a7f7f0832a776e255405a33cf349801987a"

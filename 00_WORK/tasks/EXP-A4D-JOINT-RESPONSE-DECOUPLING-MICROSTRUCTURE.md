@@ -21,6 +21,10 @@ Consume the new [all42 report-to-Book feedback synthesis](../../02_REGISTRY/rese
 
 This does not provide compulsory Book03 Info/work/clock valuation or the admitted common field→CAR→report→price map. Continue with that same-initial fully priced execution, its independent input/controller equations and the complete source/refinement comparison. Preserve `GR_closed=false`; no new task, action, selector or physical admission is introduced.
 
+### 22 October: test the moving-solder escape against the native CAR pairing
+
+The restricted-CAR source now has an exact symbolic check that its existing observer pairing equals the moving-solder `Q_H` on a rest-aligned timelike first-grade branch. The same branch changes `Q_H` under a nonzero profile step, while the existing endpoint-isometric transition requires `Q_+=Q`; that particular transition therefore cannot generate this candidate escape. The primary null-matter source is not identified with this branch, and the result is not a universal obstruction. The next map must derive its actual moving-pairing transition and full paid source, or arise from a separately owned admitted matter input; no transition or physical admission is selected here.
+
 ### 21 October: physical admission of the same cap-one complete source
 
 Continue the existing Draft334 / native-programme-v1 at input

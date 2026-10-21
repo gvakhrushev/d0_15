@@ -1,0 +1,18 @@
+{
+  "checks": [
+    "timelike normalization k=c^2",
+    "native observer pairing equals F F^T",
+    "F_H F_H^T equals the moving-solder Q_H",
+    "moving-pairing off-diagonal increment is -kappa eps chi/4",
+    "moving-pairing first derivative is nonzero"
+  ],
+  "count": 5,
+  "scope": {
+    "GR_closed": false,
+    "physical_admission": false,
+    "primary_null_matter_identified": false,
+    "rest_aligned_timelike_observer_only": true,
+    "same_native_endpoint_isometry_can_follow_nonzero_H_step": false
+  },
+  "status": "PASS"
+}

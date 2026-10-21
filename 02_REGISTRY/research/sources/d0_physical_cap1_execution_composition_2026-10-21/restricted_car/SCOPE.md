@@ -64,6 +64,30 @@ same admitted process to derive \(\dot R=-2(E_1-E_2)\). This is a
 candidate-specific residual; it neither proves a universal obstruction nor
 identifies this chronological price with the cap-one Book03 valuation.
 
+## Exact observer-pairing identity for the moving-solder control
+
+The moving-solder control in [`NATIVE_FIELD_WRITER_BRIDGE.md`](../../d0_native_gr_completion_synthesis_2026-10-20/book_source/NATIVE_FIELD_WRITER_BRIDGE.md) is exactly the existing native observer pairing on one explicit timelike branch. Let its solder be `F_H = sqrt(kappa) e_H^-1 T^-1`, so `q_H = F_H eta_rest F_H^T` and `Q_H = F_H F_H^T`. Choose a fixed rest-aligned initial matter vector with first grade `c e_0`, `c != 0`, and set `m_H = rho(F_H) psi_0`. Then `v_H = P_1 m_H = c F_H e_0` and `k_H = v_H^T q_H^-1 v_H = c^2`. The observer owner’s definition gives
+
+```text
+Q(q_H,m_H) = -q_H + 2 v_H v_H^T/k_H
+            = F_H(-eta_rest + 2 e_0 e_0^T)F_H^T
+            = F_H F_H^T = Q_H.
+```
+
+Thus `Q_H` is not an arbitrary positive pairing on this chart. But the
+existing whole-operator endpoint-isometry transition implies `Q_+ = Q`.
+The exact moving-solder step `H -> H + eps chi` has
+`(Q_{H+eps chi}-Q_H)_{01} = -kappa eps chi/4`, nonzero whenever the step is
+nonzero. Therefore this rest-aligned moving-solder path cannot be produced by
+that same endpoint-isometric CAR transition. This is a scoped incompatibility:
+the chosen chart is timelike and is not identified with the primary null CAR
+matter source. It neither excludes other observer inputs or transitions nor
+proves physical admission. A viable route must derive the actual moving-pairing
+transition and its full price, or identify a different admitted matter branch.
+
+Replay: `python3 check_moving_solder_observer_binding.py`; its exact symbolic
+receipt is `MOVING_SOLDER_OBSERVER_BINDING_RESULT.json`.
+
 ## Pinned owners
 
 - `A4D_NATIVE_FIELD_TO_INSTRUMENT_JET_BOUNDARY.md` and its exact checker
@@ -73,6 +97,10 @@ identifies this chronological price with the cap-one Book03 valuation.
   `A4D_NATIVE_RECORD_METRIC_CHRONOLOGY.md`: full-matter pairing, conditional
   metric update, all-slot differential, moving CAR gate and chronological
   price source.
+- `NATIVE_FIELD_WRITER_BRIDGE.md`: the pinned moving-solder control and the
+  endpoint-isometry implication used in the scoped incompatibility above.
+- `check_moving_solder_observer_binding.py`: exact algebraic replay for the
+  rest-aligned timelike branch only.
 - `a4d_native_field_instrument_jet_check.py` and
   `a4d_native_field_instrument_jet_results.json`: the original bounded exact
   certificate and its recorded admission boundary.

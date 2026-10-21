@@ -6,10 +6,10 @@
     "book_binding": 12,
     "independent_input": 20,
     "car_effect": 3,
-    "restricted_car": 5
+    "restricted_car": 6
   },
   "unique_source_files": 49,
-  "frozen_artifact_files": 23,
+  "frozen_artifact_files": 25,
   "narrow_controls": {
     "moving_query": {
       "status": "PASS",
