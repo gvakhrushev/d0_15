@@ -1,0 +1,18 @@
+{
+  "delete_retained_filter_failures": {
+    "failure": "ArithmeticError: physical post-filter retains all16384 failures and their full first source",
+    "rejected": true
+  },
+  "drop_RIGHT_in_feedback_source": {
+    "failure": "ArithmeticError: full HJR source equals original spectral plus matter operator source",
+    "rejected": true
+  },
+  "freeze_required_changed_input": {
+    "failure": "ArithmeticError: matching conditional law changes the prepared input",
+    "rejected": true
+  },
+  "omit_normalizer_jet": {
+    "failure": "ArithmeticError: complete noncommuting polar determinant and first source",
+    "rejected": true
+  }
+}

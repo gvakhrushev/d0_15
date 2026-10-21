@@ -1,99 +1,27 @@
-# Book03 source identifiability: relative branch data plus one absolute jet
+# Relative Book weights and actual source identifiability — corrected scope
 
-**Date:** 2026-10-21  
-**Owner:** existing Draft #334. Consumes the native full128 branch-binding and cost-marker results. No new Info law or physical admission. GR_closed=false.
+21 October 2026. Existing #334. This revision corrects the physical-source claims in the earlier note. The finite graph statement below remains valid; its former universal necessary-and-sufficient claim about the FULL Book source did not follow. `GR_closed=false`.
 
-## 1. Exact finite identifiability theorem
+## The valid finite graph statement
 
-Let \(\Omega\) be a finite connected support of actual native histories. Write the positive Book branch weight as
-\[
-w_\omega(y)=\varphi^{-C_\omega(y)+I_\omega(y)}.
-\]
-Assume the proposed native map supplies the relative weight ratios
-\[
-R_{\omega\eta}(y)=w_\omega(y)/w_\eta(y)>0
-\]
-for every edge of a connected graph on \(\Omega\). Then the relative data determine all \(w_\omega\) up to exactly one common positive factor \(a(y)\):
-\[
-w_\omega(y)=a(y)\widehat w_\omega(y).
-\]
-This is the only ambiguity: along a spanning tree all ratios determine \(\widehat w\), and every other edge is a cycle-consistency check. If a cycle product is not one, no branch-weight assignment exists.
+For scalar positive weights w_omega on a fixed connected support, consistent ratios R_omega,eta=w_omega/w_eta determine all weights up to one common positive factor. Products around every cycle must equal one. A spanning tree reconstructs w=a w_hat, and one specified absolute weight and its first jet determines the scalar weight values and first jets. With w=phi^(-C+I),
 
-Equivalently, the gains satisfy
-\[
-I_\omega-I_\eta
-=C_\omega-C_\eta+\log_\varphi R_{\omega\eta}.
-\tag{1}
-\]
-Thus the relative gains and their first jets are uniquely determined by the ratios and actual charge ledger. The common scalar remains:
-\[
-I_\omega=C_\omega+\log_\varphi\widehat w_\omega+J(y),
-\qquad
-a(y)=\varphi^{J(y)}.
-\tag{2}
-\]
+    I_omega-I_eta=C_omega-C_eta+log_phi R_omega,eta.
 
-**Minimal-data corollary.** On a connected positive support, the full first source is uniquely determined iff the relative ratio jets, the actual charge jets, and one absolute anchor \(J(y_0),DJ(y_0)\) (or equivalent absolute norm and its first jet) are fixed. A value-only anchor determines the price at \(y_0\) but does not determine its source.
+This is a theorem about SCALAR WEIGHTS with their representation held fixed. It does not determine the memory-operator, active-cut, heat, preparation or work maps. An absolute weight jet is not necessary for a physical source which is invariant under changing that weight convention, and those scalar jets alone are not sufficient for an unspecified full execution.
 
-This is a finite graph theorem, not a choice among amplitude, probability, or extra-marker bindings. Those are different possible sources of the ratio data \(R\); the theorem says what remains after any one is actually derived.
+## Actual original full128 application
 
-## 2. The closed loop observes the common mode
+The [executed normalization/source proof](A4D_FULL128_NORMALIZATION_AND_TRUE_BOOK_SOURCE_2026_10_21.md) uses the original complete record and complementary Book definition, not the postulated map F_a=aF_0. For W, N=W*W>0 and A=i*W, the normalized map W N^-1/2 gives
 
-Let \(F(y)\) be the actual closed-history operator assembled from the native branch weights, and let the common factor enter as \(F_a=a(y)F_0(y)\). At fixed native \(z\in(0,1)\),
-\[
-J_{\rm loop}(y)=-\log\det(I-z a(y)F_0(y)).
-\]
-Its full derivative is
-\[
-\boxed{
-DJ_{\rm loop}
-=\operatorname{Tr}\left[
-(I-zaF_0)^{-1}z\left(a\,DF_0+F_0\,Da\right)
-\right].
-}
-\tag{3}
-\]
-The second term is the common-mode source. It is generally nonzero even when every normalized open-history ratio is unchanged. Therefore relative branch data cannot determine the complete Book source without the absolute anchor jet or a separate native rule that determines it.
+    J=-128 logdet[(1-z)N+z A*A]+128 logdet N.
 
-The same statement holds for the original full128 port pair: the cost-marker ratio fixes the relative gain law, but a field-dependent common factor still contributes to the true closed-loop determinant. Rescaling \(z\) to cancel it is a change of the physical feedback calibration, not a gauge choice unless Book03 independently proves that equivalence.
+A common scalar, even field dependent, cancels EXACTLY in this value and its full source. More generally J(WL)=J(W) for every invertible input-coordinate change L; the invariant is the output range projector W N^-1 W*. The actual unmarked execution has N=I. Its analytical cost mark instead has the generally NONSCALAR operator N_n,t=(Phi_t*)^n(I), with every source term retained.
 
-## 3. Original port witness: the ratio jet is fixed, the absolute source is not
+A physically implemented attenuation is different: its failure histories must be kept, and its true complement is I-A_t*A_t. It cannot be represented by simply multiplying the old complementary F by a. The earlier assertion that the original full128 automatically inherits a common-mode source from F_a=aF_0 is withdrawn.
 
-For the actual nonblank ports,
-\[
-K_{0,k}=pL_k,\qquad K_{1,k}=\sqrt p\,L_k,\qquad
-(C_0,C_1)=(1,2),
-\]
-and the supplied marker family is
-\[
-q_t(0|k)=\frac{p}{p+e^{-t}},\qquad
-q_t(1|k)=\frac{e^{-t}}{p+e^{-t}}.
-\]
-The three typed candidate ratios already consumed in the parent are incompatible as functions of \(t\):
-\[
-\Delta I_{\rm amp}=\frac32-\frac{t}{2\ln\varphi},\quad
-\Delta I_{\rm prob}=2-\frac{t}{\ln\varphi},\quad
-\Delta I_{\rm extra}=1.
-\]
-Their derivatives are distinct. This is an exact test of relative gain, not yet the physical selection of the Book map.
+The marker gain table also depends on its base: applying an extra factor to UNMARKED Kraus operators to obtain q_t requires Delta I=1-t/(2 ln phi); Delta I=1 only preserves the record already supplied as the base. See the corrected [port note](A4D_FULL128_PORT_GAIN_MARKER_RIGIDITY_2026_10_21.md).
 
-Even after the correct ratio law is derived, the common \(J(t)\) in (2) is not determined by that law. Its contribution to (3) must be calculated from the original memory-algebra sum, quadratic response and feedback partition. It may not be set to zero because it cancels in normalized readout probabilities.
+## Parent boundary
 
-## 4. Necessary/sufficient finite gate for source recovery
-
-For a proposed physical Book03 binding on one admitted complete execution, the finite source is identified exactly when all four conditions hold:
-
-1. **Cycle consistency:** every cycle product of the proposed native relative ratios is one.
-2. **Actual relative jet:** the ratios and their first derivatives agree with the full original branch operators and actual cost ledger.
-3. **Absolute anchor jet:** the native memory-algebra/quadratic response determines the common factor \(a\) and \(Da\), or equivalently \(J,DJ\), on the same retained carrier.
-4. **Loop source:** substituting those values into (3), with the actual fixed \(z\), reproduces the original closed-feedback source including the complementary cut.
-
-Necessity follows from equality of the actual weights and differentiation of the actual determinant. Sufficiency follows by reconstructing all weights from a spanning tree, using the anchor to fix their common factor, then applying the exact determinant derivative. No separate entropy surrogate is needed.
-
-After this gate, the reconstructed source must still be compared against the 16+24+2 native field source on the same execution and admitted variation image. Passing source recovery is not itself the Einstein equation, the physical selection of the execution, a refinement theorem, or GR closure.
-
-## 5. What the next calculation must extract from Book03
-
-The unresolved object is now minimal and explicit: from the original sections 03.3.0–03.3.0a, 03.8, 03.10(c)-(f), and the actual closed-memory loop, calculate (i) the native branch-ratio cocycle \(R_{\omega\eta}\), including its phase/amplitude typing, and (ii) one absolute normalizer and its first jet on the same complete history support. Then test cycle consistency and equation (3) without altering \(z\), deleting work/clock/reference, or replacing the full128 tape with the N=1 CQ compiler.
-
-If the native memory algebra does not define such an absolute scalar jet, the correct result is non-identifiability of the source from the supplied Book data—not permission to choose a convenient one. GR_closed=false.
+The completed calculation, including all128^2 histories and the original primary preparation-source substitution, is in the linked proof and checker. It does not derive the mandatory native Info law or identify the different cap-one CQ action with Book03. The former claim that exactly one scalar was the only remaining physical datum is withdrawn. The original unnormalized graph argument is retained in Git history at ff389d3333a0067a7c9a34c0fac7514892b17968; it is not physical closure.

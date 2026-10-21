@@ -1,23 +1,23 @@
-# Absolute-source identifiability on a finite native record
+# Normalized-vector ambiguity is not automatically a physical Book source
 
-Date: 2026-10-21. Existing Draft #334. Exact structural lemma; no new Info law or physical admission. GR_closed=false.
+21 October 2026. Existing #334. Corrects the source consequence of the earlier note; no Info rule, physical admission or GR closure is introduced. `GR_closed=false`.
 
-## Theorem
+## Valid normalized-vector lemma
 
-Let a finite positive history support have probabilities q_ω(y), normalized branch vectors u_ω(y), and full coherent record V(y)=Σω √q_ω |ω〉u_ω. If a Book amplitude record is required only to reproduce the normalized V, then every compatible positive weight family is w_ω(y)=a(y)√q_ω(y), where a(y)>0 is common to all branches. With w_ω=φ^(−C_ω+I_ω), this is equivalent to I_ω=C_ω+(1/2)log_φ q_ω+J(y), a=φ^J.
+For fixed normalized branch vectors on an orthogonal positive history support, matching the normalized coherent record determines positive coefficients as w_omega=a sqrt(q_omega). Thus I_omega=C_omega+(1/2)log_phi q_omega+J, with a=phi^J. This only concerns an UNNORMALIZED vector representation. Projection onto each history summand proves it directly.
 
-Proof: project the normalized vector identity onto each orthogonal history summand. Relative branch coefficients are fixed; the common positive factor cancels. Conversely every such factor preserves the normalized vector and all its normalized predictions.
+## Correct source consequence for the actual native complement
 
-## Source consequence
+The previous formula D[-logdet(I-zaF)] is valid for a separately DEFINED operator family aF. It was not a derived map from rescaling native amplitudes to the original Book feedback F=I-A*A.
 
-For any smooth f(y), J→J+f preserves every normalized open-record prediction and every relative branch ratio, but changes the absolute log-norm source by Df. If the factor enters the actual closed-loop operator, then at fixed native z
+The [full original-instrument calculation](A4D_FULL128_NORMALIZATION_AND_TRUE_BOOK_SOURCE_2026_10_21.md) resolves this distinction. For W with N=W*W and corner A=i*W, normalized feedback is
 
-D[−log det(I−zaF)] = Tr[(I−zaF)^(−1) z(a DF+F Da)].
+    J=-128 logdet[(1-z)N+zA*A]+128 logdet N.
 
-So the normalized record alone cannot identify the complete Book source. The common-mode derivative is physically visible to the closed loop.
+For W->aW, BOTH determinant arguments scale by a^2. The common scalar cancels exactly, including its field derivative. In a prescribed complete native isometry V, V*V=I already fixes the positive amplitude scale; normalized-record log norm has zero first source.
 
-## Exact closure gate
+A real attenuation with a success flag is another execution and retains every failed history. Its corner changes to aA and its complement is I-a^2 A*A, not aF. Its value, source, failure cost and information therefore require that new execution. None can be assigned to an arbitrary normalization convention of the old record.
 
-The existing Book03 owners define a memory-algebra sum before quadratic response and a distinct feedback partition. The current normalized-record equivalence does not itself give the absolute quadratic norm and its first jet equal to the full paid Cost−Info ledger on the same complete support. The next computation must evaluate, on one original full128 execution: (1) the native memory-algebra sum, (2) its quadratic norm and derivative, (3) the absolute common factor J,DJ, (4) the original fixed-z complementary determinant and derivative, and (5) the full paid ledger including all branches, blank ports, work, clock and oldRIGHT.
+## Application and boundary
 
-If Book03 determines J,DJ, substitute them without changing z or dropping histories and test equality of value and full first source. If its actual definitions leave them unspecified on this carrier, the valid conclusion is non-identifiability from normalized record data, not permission to choose a convenient J. This is not a no-go for Book03, and does not identify the full128 tape with the distinct N=1 CQ compiler. GR_closed=false.
+The operator cost normalizer, true complementary source and primary HJR preparation test are now explicitly evaluated in the linked proof. The original small-matter primary family retains its nonzero independent HJR preparation derivative; a normalization convention cannot cancel it. The separate Book memory-algebra partition still needs its actual common-execution identification, not a chosen scalar compensator. The earlier claim that one unknown scalar alone was the remaining physical problem is withdrawn. Historical version: commit 8223d58f9b96d12749c451a551fb54b420abe1f0.
