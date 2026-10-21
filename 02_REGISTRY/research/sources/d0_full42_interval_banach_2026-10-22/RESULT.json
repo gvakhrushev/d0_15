@@ -1,0 +1,59 @@
+{
+  "status": "PASS_RIGOROUS_TAYLOR_INTERVAL_NEWTON_BANACH_ORIGINAL_FULL42_N1",
+  "date": "2026-10-22",
+  "scientific_owner": "PR #334 EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE",
+  "proof_justification": "Interval-verified full scalar price and 42-source; 1764 Hessian enclosures; a posteriori strict Banach ball; explicit rigorous Lorentz exp tail",
+  "local_replay": {
+    "tool": "Python 3 / mpmath.iv outward arithmetic, iv.dps=115; 4x4 exp Taylor 30 scaled 2^11 with exact tail <1e-120",
+    "input_sha256": {
+      "rational_collar": "b86d94a59f5b0ecfec55af3a6c0db80eec257d41b09f3a03c59e367f56093fa1",
+      "rational_center": "0258a6bc84446dd8a506479acc59f4dbf503f3417c508444c516cce9c314f2f5"
+    },
+    "rational_h": "0.183801524658179446663931692878752644250497528167344843803260291378571211",
+    "weights": [
+      1,
+      1
+    ],
+    "complex_polydisc_radius": "1e-4",
+    "abs_whole_scalar_price": "<10",
+    "real_click_bounds": [
+      "1e-6",
+      "1e-5"
+    ],
+    "first_gradient_infty_bound": "<2.001e-67",
+    "rational_preconditioner_infty_bound": "<28.883",
+    "interval_I_minus_AH_infty_bound": "<2.746e-7",
+    "center_Hessian_Lipschitz_times_ball": "8.46720e-7",
+    "strict_contraction_infty_bound": "<2.474e-5",
+    "center_drift_bound": "<5.78e-66",
+    "existence_ball_infty_radius": "1e-24",
+    "exact_solution": "EXISTS_AND_UNIQUE_IN_THIS_BALL",
+    "proven_saddle": [
+      "D2S(e00,e00)>3.0283",
+      "D2S(e11,e11)<-1.0912"
+    ],
+    "nonflat_ranktwo": [
+      "det(original e)>1",
+      "spatial P_xy[1,2]>0.001",
+      "scalar1 temporal gradient>0.08",
+      "scalar2 spatial gradient>0.1"
+    ]
+  },
+  "proof_runtime": {
+    "local_interval_execution": "COMPLETED_WITH_RIGOROUS_MATRIX_EXP_TAIL",
+    "repo_checker": "check_interval42.py --verbose; regenerates candidate rational A from pinned original native 42-source; all inequalities reverified",
+    "remote_scientific_replay": "NOT_CLAIMED",
+    "new_Lean_formalization": "NOT_CLAIMED"
+  },
+  "scope": {
+    "all42_configured_N1_finite_root": true,
+    "arbitrary_real_positive_PF_weights": false,
+    "physical_compulsory_Book03_HJR_selected": false,
+    "primitive_joint_field_writer_admitted": false,
+    "uniform_h_refinement": false,
+    "full_physical_GR_closed": false,
+    "nonflat_original_Lorentz_holonomy": true,
+    "ranktwo_original_CAR_source": true,
+    "unconstrained_minimum": false
+  }
+}
