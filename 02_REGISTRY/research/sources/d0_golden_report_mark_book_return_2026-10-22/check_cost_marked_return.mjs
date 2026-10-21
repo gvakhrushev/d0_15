@@ -2,7 +2,7 @@
 "use strict";
 // D0 #334: scoped algebraic check of a COMPLETE cost-marked terminal 0/10 reporter.
 // Test model, NOT a declaration that Book03 selects this cut, mark, or Info.
-const assert = require("node:assert/strict");
+import assert from "node:assert/strict";
 const phi = (1 + Math.sqrt(5)) / 2, p = 1 / phi, zeta = 2 ** -20;
 const L = 4 * p ** 3;
 const r0 = 1 - (1 - zeta * L) * (1 - zeta * L * (1 + p ** 6));

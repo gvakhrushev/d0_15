@@ -43,7 +43,8 @@ def coherent_arm(r):
 def full_tensor(rleft,rright):
     U = np.kron(coherent_arm(rleft),coherent_arm(rright))
     # Prepared input is the FIRST tensor column, P=|0><0| rank one.
-    assert np.linalg.norm(U.T @ U-np.eye(16)) < 1e-13
+    gram = np.einsum('ji,jk->ik',U.conj(),U,optimize=False)
+    assert np.linalg.norm(gram-np.eye(16)) < 1e-13
     t = float(U[0,0])
     f_operator = float(np.dot(U[1:,0],U[1:,0]))
     return t,f_operator
