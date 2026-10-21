@@ -127,3 +127,21 @@ The right scientific architecture is now:
 This *mathematical* source-equivalence bridges the old 42-field one-site numerical root to arbitrarily long finite temporal chains without inventing a new price, propagating artificial isolated-link corrections or discarding original full source rows. It is an exact theorem about the architecture, NOT a proof of roots for all n.
 
 The next decisive quantified mathematical gate is no longer a singular raw Hessian: on this exact quotient one must bound the gauge-fixed Schur/Green inverse and prove a validated Newton/Krawczyk ball around actual finite roots, with real two-ended collars and all site weights. Then the original Book03 clock/control/writer physical-admission problem remains fully separate. No free smoothing of PF weights or imagined fully covariant continuum selector is claimed. **GR_closed=false.**
+
+
+## 6. Five-interval all168 numerical extension and retained source receipt (22 October)
+
+The SAME unchanged original full G2STAR, TWO original real CAR gradients, same fixed price N1 Golden and exact SO+(1,3) temporal quotient extend beyond the earlier n3/n4 tests to **FIVE real temporal intervals**, all original field/source constraints and BOTH endpoint collars unchanged. The gauge deflation theorem (3)-(9) is exact for arbitrary finite n>=2; at n=5 it removes 6(n-2)=18 exact original residual-frame directions and leaves 36n-30=150 actual gauge-fixed Euler variables.
+
+An independently executed local scipy least_squares replay, seeded only by the OLD four-diagonal Cauchy reference (not by any new designed source), reached:
+
+  n=5, h=0.07352060986327169,
+  original full source dimension=168, true reduced source dimension=150,
+  max ALL 168 original Euler =3.3433302570880046e-14,
+  max 18 OMITTED ORIGINAL U_time Euler =1.8357870032583924e-14,
+  numerical min singular of reduced 150×150 Jacobian =0.0002732420555668709,
+  max singular =3849.7499934897123, 78 solver first-source evaluations.
+
+The actual based six-face f values at the five time anchors are about (-0.02956918,-0.00294534,-0.00168917,-0.00080261,-0.00022304); BOTH real CAR scalar gradients remain present and q is generically nonzero at those anchors. No f=q=0 ansatz or old 12-source pureboost test was imposed.
+
+The compact locally executed source receipts for n=3 uniform, n=3 PF[1,2,1], n=4 uniform and n=5 uniform, including exact actual site f,q and the gauge-fixed Jacobian spectra, are preserved in [RESULT_TEMPORAL_GAUGE_MULTISLAB_2026_10_22.json](sources/d0_star_rank2_seam_2026-10-21/RESULT_TEMPORAL_GAUGE_MULTISLAB_2026_10_22.json). The reproduced gauge-fixed checker now accepts --intervals 3, 4 or 5; only the original complete N1 source and the actual allowed gauge-slice field coordinates are used. The executable has its own original input Git-blob checks and an independent full ENTROPY-PRICE derivative control. Exact mathematical existence/interval validation, actual spatial descendant PF profiles and continuum uniformity remain open. The decreasing measured reduced sigma_min (n3:0.001226, n4:0.000525, n5:0.000273) is positive on these tested finite grids, but cannot be promoted to a mesh-independent bound. GR_closed=false.
