@@ -163,6 +163,16 @@ def run(weights=(1.,1.),n=2,limit=50):
     J=approx_derivative(euler,sol.x,method='3-point',abs_step=5e-6)
     vals=svdvals(J)
     assert len(vals)==42 and vals.min()>.03,(len(vals),vals.min())
+    # At a whole-source stationary point, the 16 raw coframe-coordinate
+    # rows/columns of the numerical Jacobian ARE the genuine Hessian of
+    # the same CQ price along fixed link/scalar variations. No Lie-chart
+    # correction is needed inside this pure coframe block.
+    Hco=J[:16,:16]
+    asym=float(np.max(abs(Hco-Hco.T)))
+    eig=np.linalg.eigvalsh((Hco+Hco.T)/2)
+    negative=int(np.count_nonzero(eig < -1e-3))
+    positive=int(np.count_nonzero(eig > 1e-3))
+    assert asym<1e-7 and negative==8 and positive==8,(asym,eig)
     # Genuine original metric, nonflat SO(1,3) spatial based plaquettes
     # and rank-two REAL matter are checked independently.
     sig=[];comm=[];stress=[]
@@ -192,6 +202,11 @@ def run(weights=(1.,1.),n=2,limit=50):
       scalar_source_max=float(max(abs(source['psi'][1:n].ravel()))),
       full_42by42_J_singular_min=float(vals.min()),
       full_42by42_J_singular_max=float(vals.max()),
+      fixed_link_matter_original_coframe_Hessian=dict(
+        positive=positive,negative=negative,
+        eig_min=float(eig.min()),eig_max=float(eig.max()),
+        symmetry_error_inf=asym,
+        unrestricted_16coframe_minimum=False),
       Lorentz_metric_inertia=sig,
       original_spatial_based_holonomy_norms=comm,
       two_REAL_CAR_stress_ranks=stress,
