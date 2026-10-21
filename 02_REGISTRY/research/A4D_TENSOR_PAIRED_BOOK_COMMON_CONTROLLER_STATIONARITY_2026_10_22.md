@@ -340,3 +340,34 @@ negative control and the finite code alternative.
 
 Only the new bounded test is required: historical full128/Cartan/CQ/
 Lean/GR suites are unchanged and are not claimed rerun.
+
+
+### Exact global controller classification (beyond a finite counterexample)
+
+For the full abstract complementary one-parameter paired return
+\(s\in[0,1]\), put \(d=s-1/2\). Because
+\[
+ t_Lt_R=p^4-4p^2d^2,
+\]
+its absolute magnitude is the absolute value of a LINEAR function of
+\(d^2\in[0,1/4]\). Since
+\[
+ |t_Lt_R|_{d=0}=p^4,\qquad
+ |t_Lt_R|_{|d|=1/2}=p^3>p^4,
+\]
+the exact function \(J_\otimes=-\log(1-z[1-(t_Lt_R)^2])\)
+has **global minima at the deterministic endpoints** \(s=0,1\),
+a **strict local** minimum at \(s=1/2\), and global maxima
+at the two complete-return zeros \(|d|=p/2\).
+The classification holds for every \(0<z<1\); it is not a numerical
+optimizer artifact.
+
+On the more restrictive actual original report/coin family,
+\(s=(r_0+c)/2,\ c\in[0,1]\), the native \(r_0\) from (5) satisfies
+\(0<r_0<10^{-5}\), and the \(c=0\) endpoint is strictly cheaper
+in isolated (4) than the fair \(c_0=1-r_0\); its exact difference
+is (19). Whether c=0 and c=c0 are *same-task physically admitted*
+and their remaining full Price/Info histories costed comparably
+is precisely the outstanding prospective-choice premise. Therefore
+the local positive Hessian (13) CANNOT be used as a global
+minimum/selector theorem.
