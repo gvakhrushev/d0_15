@@ -72,3 +72,27 @@ A separate original n=3 interval test with the SAME fixed continuum-Cauchy seed,
 The physical completeness gate remains: the originally defined moving-field compiler, its actual admissible field-writing image, the compulsory Book03 absolute H+J+R Cost−Info/preparation/controller/clock/oldRIGHT and fixed original AF/PF counts must be connected to this SAME mathematical field configuration before saying D0 physically selects it. No source-neutral cost term, alternate Golden sigma or fitted matter coefficient has been inserted here.
 
 **Strong positive scoped result:** the previous pureboost no-go is NOT a general obstruction to the same original full N1 CQ source; a nonflat rank-two, two-real-CAR finite *full42 numerical stationary* representative exists at short original fixed collar to high precision with real nonzero site f,q and an apparently nondegenerate Jacobian. Reproduction/validation inputs remain typed and every unproved physical/refinement claim is explicitly false. GR_closed=false.
+
+
+## 6. The first full42 positive witness is an ACTUAL coframe saddle, not an unconstrained minimum
+
+The original complete CQ price itself, on the same fixed temporal boundaries, has a numerical 16×16 **raw coframe Hessian** (all other 24 links and both material fields held fixed). There is no Lie exponential parametrization ambiguity inside this 16-dimensional block. At the numerical whole42 stationary witness its symmetric source Jacobian has eight positive and eight negative eigenvalues, with antisymmetry error <7e-10. At fixed PF weights rho=[1,1] its eigenspectrum includes
+
+  min lambda_coframe = -1.3113983206,
+  max lambda_coframe = +4.7008624440,
+  inertia=(8+,8-).
+
+At the discontinuous temporal PF weights rho=[1,2], the same independent calculation gives
+
+  min lambda_coframe = -1.3311131305,
+  max lambda_coframe = +4.6441414901,
+  inertia=(8+,8-).
+
+There is ALSO an independent original full N1 Golden CQ entropy **VALUE** second-difference test (75-digit arithmetic for the actual finite Golden function and actual six-face f and CAR q recomputed at each perturbed coframe), not merely the source Hessian again. On rho=[1,1] with real coframe increment delta=0.0003:
+
+  second derivative along e^0_t = +3.02833121...,
+  second derivative along e^1_x = -1.09126765....
+
+The predicted analytical source-Hessian diagonal entries are +3.02833051 and −1.09126755, within the numerical finite-difference truncation. The current full source/price checker now requires BOTH strict signs for both PF conditions. Thus the exhibited short-collar full42 stationary representative is **NOT A FREE FULL-OPEN-COFRAME LOCAL MINIMUM of the same configured CQ price**, notwithstanding positive implementation costs, full output retention and all42 Euler zeros. That conclusion is robust under changes of the allowed coframe coordinate norm because its negative tangent exists inside the original free space.
+
+**Architectural consequence:** do not infer physical D0 selection by unconstrained minimizing Cost−Info over raw e/links/psi. The originally documented foundational selection obstruction is now exhibited in this NEW positive rank-two full42 fixture itself, rather than just the old pp-wave family. A genuine selected native stationarity/constraint law or a PROVED restricted reachable field-writer image that excludes those negative physical directions remains a logically separate premise. The ordinary mathematical existence of a stationary root and its physics-selection theorem are distinct. This does NOT rule out a physical constrained minimum on a justified admissible submanifold or a lawful stationary principle. **GR_closed=false.**
