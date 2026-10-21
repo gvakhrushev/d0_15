@@ -555,3 +555,47 @@ native Book executions. The scalar branch-weight ratio theorem remains a
 separate statement and does not determine the full Book memory, cut, heat,
 preparation, work, or clock map. The same-history resource-writer and complete
 Book03 binding gate above remains open; `GR_closed=false`.
+
+## 21 October: causal clock, evaluated normalization and continuum-correction constraints
+
+Three new results constrain separate candidate bridges to this positive case.
+The [causal-clock minimum theorem](A4D_CAUSAL_CLOCK_MINIMUM_AND_STATIONARY_SOURCE_DESCENT_2026_10_21.md)
+shows that every minimizing cut in its admitted retained-epoch class has the
+same feedback value and field source. Its application to the literal Book03
+one-tick operator has no completed-word contrast; a minimum of the full price
+still requires the actual remaining-price comparison.
+
+The [operator-Doob normalization application](A4D_NATIVE_ABSOLUTE_NORMALIZATION_AND_FULL_SOURCE_2026_10_21.md)
+evaluates the finite normalizer, its required input transform, the true
+complement and the inherited HJR source. On the original L4 preparation, the
+same-initial RIGHT-marginal criterion fails strictly; at the L8 HJR root, the
+normalized return has a nonzero radial first source. The separate
+[full128 complement calculation](A4D_FULL128_NORMALIZATION_AND_TRUE_BOOK_SOURCE_2026_10_21.md)
+shows that an invertible right-coordinate change, including a common scalar,
+cancels from the true normalized Book determinant and its first source. The
+tested Doob transform changes the operator and, generally, the input; its
+failure is not evidence for a free scalar source. Attenuation with retained
+failures is a distinct paid execution with its own clocks and charges. Native
+Book03 selection remains open.
+
+The [two-witness source-rigidity result](A4D_TWO_WITNESS_PRICE_SOURCE_RIGIDITY_2026_10_21.md)
+excludes f(R)+beta Ricci-squared metric corrections that preserve the specified
+crossing and anisotropic scalar solutions with their original matter source,
+modulo the four-dimensional Euler boundary term. The explicit determinant
+squared of the mixed Einstein tensor remains invisible on the full rank-two
+solution class, so this does not establish general action uniqueness.
+
+These results have distinct carriers and hypotheses and have not yet been
+evaluated as one admitted, fully paid physical execution. The current
+[common-map gate](A4D_NEXT_COMMON_MAP_CONSTRUCTION_GATE_2026_10_21.md) now
+marks the physical writer from the common initial history as UNDEFINED in the
+specified Book03/#334 route: the owned actuator starts from a supplied live
+query, and the fixed processor starts from a supplied field-dependent Choi
+bank. This is a route boundary, not a no-go for every possible D0 process.
+The next admissible input must already be a finite paid history carrying its
+preparation, address control, failures, clock/work tape and absolute Book03
+valuation. Only then can the same-process source and independent-input
+equations be transported to the finite 16+24+2 system and physical
+refinement. GR_closed=false.
+Archive hashes, source revisions and bounded replay evidence are recorded in
+the [integration provenance file](sources/d0_pr334_integration_2026-10-21/IMPORT_PROVENANCE.json).

@@ -1,0 +1,134 @@
+{
+  "input_snapshot": "de6f4f9ab07e29f0df8ce6c2d92f9b8178c01e57",
+  "integrated_remote": "8223d58f9b96d12749c451a551fb54b420abe1f0",
+  "preservation": {
+    "prior_clock_handoff_blobs_verified_on_remote": 9,
+    "remote_primary_memo_retained_as_prefix": true,
+    "global_section_8_7_unchanged_across_merge": true
+  },
+  "initial_validation": {
+    "input_snapshot": "60d57f7c805eccaf827f57648c8555558cc6626b",
+    "review": {
+      "author_proof_review": true,
+      "independent_acceptance": false
+    },
+    "replay": {
+      "optimized": {
+        "status": "PASS",
+        "math_payload_matches": true,
+        "seconds": 13.33952749997843,
+        "stdout_sha256": "93f020cbfb2a3fd0416470f41489078dec96c3e879e91d0ec6b801db9dae3f37",
+        "stderr_bytes": 0
+      },
+      "mutants": [
+        {
+          "name": "wrong-clock-multiplicity",
+          "rejected_at": "endpoint: full determinant",
+          "seconds": 1.3354889000183903
+        },
+        {
+          "name": "allow-incoming-clock",
+          "rejected_at": "dark cut has lambda=0",
+          "seconds": 0.01380399998743087
+        },
+        {
+          "name": "nonstationary-scale-lift",
+          "rejected_at": "scale defect belongs to squared internal Euler ideal",
+          "seconds": 0.19967070000711828
+        }
+      ],
+      "normal_certificate_sha256": "c4a4e51ad2de1b60576e0caf77768f87a248307c291e9fa80ab6160c83fce613",
+      "normal_checks": 88,
+      "checker_sha256": "d875a8cc016c3a3499d8c0c37bdbe5a0ec2eed2392b2149761ecf296a4943fe7"
+    },
+    "structural_checks": [
+      {
+        "command": "git diff --check",
+        "exit_code": 0,
+        "output": ""
+      },
+      {
+        "command": "python -X utf8 tools/validate_repo.py",
+        "exit_code": 0,
+        "output": "claims=889 assumptions=31 aliases=58 formal_support=183 lean_closure=918\r\nPASS warnings=0"
+      },
+      {
+        "command": "python -X utf8 tools/validate_work.py",
+        "exit_code": 0,
+        "output": "PASS work_validation: active work plane clean and enforced"
+      },
+      {
+        "command": "python -X utf8 tools/validate_agent_protocol.py",
+        "exit_code": 0,
+        "output": "PASS agent_protocol: cold-start task metadata enforced"
+      },
+      {
+        "command": "python -X utf8 tools/gr_assembly.py check",
+        "exit_code": 0,
+        "output": "{\r\n  \"active_result_limit\": 54,\r\n  \"active_results\": 54,\r\n  \"discharged\": 5,\r\n  \"obligations\": 22,\r\n  \"results\": 98,\r\n  \"scientific_promotion\": false,\r\n  \"valid\": true\r\n}"
+      }
+    ],
+    "scope": "Local bounded research checkpoint. No physical G0 selection, native full price computation, GR closure, or remote publication is attested."
+  },
+  "replay": {
+    "optimized": {
+      "status": "PASS",
+      "math_payload_matches": true,
+      "seconds": 4.717361200018786,
+      "stdout_sha256": "a48819a81bb5825d85251c9aa4e319aa0e319c4e9d46bb55b802b495709dc18a",
+      "stderr_bytes": 0
+    },
+    "mutants": [
+      {
+        "name": "wrong-clock-multiplicity",
+        "rejected_at": "endpoint: full determinant",
+        "seconds": 1.3617481999681331
+      },
+      {
+        "name": "allow-incoming-clock",
+        "rejected_at": "dark cut has lambda=0",
+        "seconds": 0.014617900014854968
+      },
+      {
+        "name": "nonstationary-scale-lift",
+        "rejected_at": "scale defect belongs to squared internal Euler ideal",
+        "seconds": 0.2017022999934852
+      }
+    ],
+    "normal_certificate_sha256": "121d4b07f95bda4c5f5b4346913db8bcc6bc4d2dd0b9dad5decf7d5034d9fd77",
+    "normal_checks": 91,
+    "checker_sha256": "91e17a0d72f00231b9f05b8999083662182d1b35e575608fe2e1665ff570cfc9"
+  },
+  "structural_checks": [
+    {
+      "command": "git diff --check 8223d58f",
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "command": "python -X utf8 tools/validate_repo.py",
+      "exit_code": 0,
+      "output": "claims=889 assumptions=31 aliases=58 formal_support=183 lean_closure=918\r\nPASS warnings=0"
+    },
+    {
+      "command": "python -X utf8 tools/validate_work.py",
+      "exit_code": 0,
+      "output": "PASS work_validation: active work plane clean and enforced"
+    },
+    {
+      "command": "python -X utf8 tools/validate_agent_protocol.py",
+      "exit_code": 0,
+      "output": "PASS agent_protocol: cold-start task metadata enforced"
+    },
+    {
+      "command": "python -X utf8 tools/gr_assembly.py check",
+      "exit_code": 0,
+      "output": "{\r\n  \"active_result_limit\": 54,\r\n  \"active_results\": 54,\r\n  \"discharged\": 5,\r\n  \"obligations\": 22,\r\n  \"results\": 98,\r\n  \"scientific_promotion\": false,\r\n  \"valid\": true\r\n}"
+    }
+  ],
+  "review": {
+    "author_proof_review": true,
+    "independent_acceptance": false
+  },
+  "scope": "Local bounded research checkpoint on the integrated PR tree. Exact actual one-tick application is a feedback-functional test, not a selected Book03 U_N. No physical G0 selection, full native price computation, upstream root, GR closure, or publication of this new five-file packet is attested."
+}

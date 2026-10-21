@@ -10296,3 +10296,48 @@ other jointly solved native executions remain open. The full Book03
 memory-algebra sum, complete feedback and actual clock/work valuation must
 still be evaluated on one admitted full128 execution. This carrier remains
 distinct from the cap-one N=1 CQ compiler.
+
+
+### 21 October: causal-cut minimum, evaluated normalization and source rigidity
+
+The [causal clock-minimum synthesis](A4D_CAUSAL_CLOCK_MINIMUM_AND_STATIONARY_SOURCE_DESCENT_2026_10_21.md)
+proves that every feedback-minimizing cut in its retained-initial-epoch,
+no-return class has the same feedback value and field source. For a
+phase-dependent complete word, selection by the full price requires the
+actual remaining-price inequality. The literal Book03 one-tick application
+has the same first-gate compression in both programmes, so this minimization
+does not supply their completed-word contrast. The result is conditional on
+admission of that causal comparison class and does not solve upstream
+preparation or full Book03 valuation.
+
+The [operator-Doob application](A4D_NATIVE_ABSOLUTE_NORMALIZATION_AND_FULL_SOURCE_2026_10_21.md)
+evaluates the finite normalizer, its required input transformation, the true
+complementary determinant and the inherited HJR source. The same-initial
+RIGHT-marginal criterion fails on the tested L4 primary preparation, and the
+normalized return has a nonzero radial source at the original L8 HJR root.
+The separate [full128 complement calculation](A4D_FULL128_NORMALIZATION_AND_TRUE_BOOK_SOURCE_2026_10_21.md)
+proves that an invertible right-coordinate change, including a common scalar,
+cancels from the true normalized determinant and its first source. These
+results address different transformations: the evaluated Doob map changes
+the operator and generally the input, while a common scalar coordinate factor
+is not an independent physical correction. Retained-failure attenuation is
+a distinct paid tape with its own clock and gate charges. Physical Book03
+selection remains open.
+
+The [two-witness price-source rigidity result](A4D_TWO_WITNESS_PRICE_SOURCE_RIGIDITY_2026_10_21.md)
+computes the complete Ricci-square Euler source on the crossing witness and
+uses exact anisotropic representatives of the owned two-scalar continuum
+class. It excludes the stated f(R)+beta Ricci^2 correction class when the
+same solutions and matter normalization are preserved, modulo the Euler
+boundary term. The higher-curvature det(G^mu_nu)^2 control remains invisible
+on the entire rank-two solution class; arbitrary action uniqueness and
+Book03 selection remain open. These three results narrow candidate bridges,
+but their carriers and physical hypotheses are not yet bound into one
+admitted complete execution. The current
+[common-map gate](A4D_NEXT_COMMON_MAP_CONSTRUCTION_GATE_2026_10_21.md) marks
+the common-initial-history field writer UNDEFINED in the specified Book03
+route; its current downstream operators take a live query or Choi bank as
+input. The missing object is therefore a paid finite history that supplies
+preparation, address control, failures, clock/work and absolute Book03
+valuation on one process. This is a scoped route boundary and the immediate
+physical blocker. GR_closed=false.

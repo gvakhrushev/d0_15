@@ -1,0 +1,72 @@
+{
+  "repository": "gvakhrushev/d0_15",
+  "pull_request": "https://github.com/gvakhrushev/d0_15/pull/334",
+  "branch": "exp/a4d-joint-response-continuation-2026-10-16",
+  "integration_parent": "dae8b57dd29a9e137c2265dec2a08f181c0f09e4",
+  "integration_method": "Selective git-apply after clean preflight at d33c7bf9, then rebased onto PR heads b60a111b and dae8b57d. Preserved newer full128 normalization/source and native-writer admission-boundary results; summaries merged additively.",
+  "inputs": [
+    {
+      "attachment": "d0_15-closure-synthesis-2026-10-21.zip",
+      "sha256": "89b0178ca43741e01f4977665a0cf9d9242f291f979760ea65ee6b90536ed53e",
+      "manifest": "handoff/MANIFEST.json",
+      "patch_sha256": "abcbca4cfbf85f68cd6cb391e05e33ec5ded5ef3b79f80113f00a12886e9c8b0",
+      "source_base": "8223d58f9b96d12749c451a551fb54b420abe1f0",
+      "imported": "Causal clock minimum/source descent theorem, two original JSON receipts, and exact checker. The archived large MEMO was not copied because its version predates current additions; its new result summary was merged into the current MEMO."
+    },
+    {
+      "attachment": "d0_source_rigidity_2026-10-21.zip",
+      "sha256": "c1b2b32c78b3bc5e3ce415c61a5fa0954aa014c30dd102fa7ed1820050f9a3f2",
+      "patch_sha256": "083ab1d28158d230d0a4fc396171a20874cc9a863f3d7006a4c56c67c9a04559",
+      "source_base": "5edac80c86c17014fc83e0aa608e192f43c1fdba",
+      "imported": "Two-witness scalar/quadratic source-rigidity proof, exact checker, source pins, and original validation receipts."
+    },
+    {
+      "attachment": "additions.patch",
+      "sha256": "e1e252eb6638c58f5c6dd38a807b1721f64713091064dc237070a237ad34bcd4",
+      "preflight": "git apply --check passed against integration parent.",
+      "imported": "Absolute-normalization/full-source application, three bounded checkers, and their saved outputs, provenance, README, and validation."
+    }
+  ],
+  "composition": "The three scientific results have distinct carriers and assumptions. They narrow candidate bridges but do not constitute one admitted fully paid Book03 execution.",
+  "status": {
+    "GR_closed": false,
+    "physical_Book03_selection": false,
+    "remote_CI_at_import": false
+  },
+  "imported_route_summaries": [
+    "02_REGISTRY/research/D0_GR_PRIMARY_POSITIVE_CASE.md",
+    "02_REGISTRY/research/A4D_CAUSAL_NATIVE_SOURCE_AND_WEIGHTED_DYNAMICS_2026_10_21.md",
+    "02_REGISTRY/research/A4D_FINITE_SOURCE_AND_COVARIANT_TWO_FIELD_SYNTHESIS_2026_10_21.md",
+    "02_REGISTRY/research/MEMO_A4D_JOINT_RESPONSE_DECOUPLING_MICROSTRUCTURE.md"
+  ],
+  "replays": {
+    "causal_clock_descent": {
+      "status": "PASS",
+      "exact_checks": 91,
+      "normal_and_optimized_check_lists_equal": true,
+      "historical_source_ref": "8223d58f9b96d12749c451a551fb54b420abe1f0",
+      "source_pins_verified": 8
+    },
+    "two_witness_price_source_rigidity": {
+      "status": "PASS",
+      "exact_checks": 176,
+      "normal_and_optimized_match_saved_json_receipts": true
+    },
+    "absolute_normalization_full_source": {
+      "status": "PASS",
+      "bounded_checkers": 3,
+      "saved_receipts_match": true,
+      "tracked_source_and_receipt_bytes_unchanged": true
+    },
+    "repository_gates": {
+      "validate_repo": "PASS warnings=0",
+      "validate_work": "PASS",
+      "validate_agent_protocol": "PASS",
+      "gr_assembly_check": "PASS scientific_promotion=false",
+      "git_diff_check": "PASS"
+    }
+  },
+  "preflight_parent": "d33c7bf9d78def64bcfb7d6e55ea4c8d48cacc74",
+  "remote_convergence": "The full128 complement result proves common right-coordinate invariance for its normalized determinant. The imported operator-Doob tests concern a field-dependent normalizer and induced input change. The latest common-map gate marks the physical writer from the common initial history UNDEFINED in the specified Book03 route; this is scoped to that route.",
+  "additional_preserved_pr_head": "b60a111b43f723a841d253b1d5bd9650c46b2cf8"
+}

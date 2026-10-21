@@ -485,3 +485,51 @@ These calculations consume their immutable input owners at the pinned
 snapshot. They do not rerun or claim a fresh old full128, all40, Lean or
 raw216 validation. Reproduction, actual outputs, exact source pins and
 independent reviews are kept beside each proof.
+
+
+## 21 October continuation: full higher-curvature source and scalar-class rigidity
+
+The [source-rigidity application](A4D_TWO_WITNESS_PRICE_SOURCE_RIGIDITY_2026_10_21.md)
+now evaluates the full Ricci-square Euler tensor on this packet's rank-two
+witness, rather than inferring it from nonzero invariants. Its transverse
+ratio is strictly nonconstant. Combining that row with exact anisotropic
+representatives of the already-owned two-scalar continuum class excludes
+f(R)+beta Ricci^2 metric corrections, modulo the Euler boundary term, when
+they preserve the SAME solutions and matter normalization. The anisotropic
+row forces f''=0 without flat C2 or analytic assumptions; C1 matching to the
+crossing point fixes the remaining affine terms. Both curvature signs are
+covered only when both small kinetic sectors of the original regular model
+are retained. Constant-coefficient quadratic metric corrections are excluded
+completely in this scope.
+
+The exact higher-order control [det(G^mu_nu)]^2 is invisible on the ENTIRE
+rank-at-most-two solution class but nontrivial elsewhere. Thus neither this
+source result nor the enlarged solution set implies general off-shell action
+uniqueness. The 176-check packet retains the original finite-lattice,
+compulsory Book03, independent-input and physical-refinement gates; it does
+not replace them. No task, lifecycle or acceptance state changes.
+`GR_closed=false`.
+
+## 21 October continuation: the absolute normalizer is evaluated on the original tape
+
+The [full-source normalization application](A4D_NATIVE_ABSOLUTE_NORMALIZATION_AND_FULL_SOURCE_2026_10_21.md)
+computes the actual finite polar/Doob normalizer, its input transformation,
+the true complementary Book determinant and the inherited HJR source. On the
+original L4 primary preparation, the necessary same-initial-state condition
+for reproducing the normalized tilted record fails by a strict interval in
+two retained RIGHT entries. At the original L8 HJR root, the normalized return
+also has a nonzero radial first source. A separate construction that retains
+failure outcomes preserves the original reduced channel but has its own paid
+gates and clock duration. These calculations reject a free source-neutral
+normalization on the tested carriers; they do not select the compulsory native
+Book03 price or bind the distinct complete executions. The three bounded
+replays and immutable receipts remain in
+[absolute-normalization source package](sources/d0_native_absolute_completion_2026-10-21/README.md).
+The separate [full128 complement calculation](A4D_FULL128_NORMALIZATION_AND_TRUE_BOOK_SOURCE_2026_10_21.md)
+proves that an invertible right-coordinate change, including a common scalar,
+cancels from the true normalized determinant and its full first source. The
+operator-Doob tests above concern a specified field-dependent normalizer and
+its induced input change; they do not posit the separate family F_a=aF.
+Together, the results rule out a free scalar compensator while retaining the
+actual source and all paid failure histories. The full Book03 memory/Info/work
+valuation and physical admission remain open. GR_closed=false.
