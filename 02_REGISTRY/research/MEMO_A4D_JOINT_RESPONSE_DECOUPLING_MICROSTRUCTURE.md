@@ -10079,3 +10079,69 @@ the Gibbs/cycle owner. These two new notes contain no independent executable
 receipt; they are analytic compositions of those owners, and the parent
 memo preserves their conditions and limits rather than counting them as new
 replays. `GR_closed=false`.
+
+### Exact CQ-channel source and covariant two-field consumer
+
+The [new synthesis](A4D_FINITE_SOURCE_AND_COVARIANT_TWO_FIELD_SYNTHESIS_2026_10_21.md)
+adds two complementary consumers. On the original two-query detector, one
+Golden rotation slot obeys the exact channel identity
+`partial_theta Phi=(Phi[3 theta]-Phi[-theta])/sin(4 theta)`. Applying it to
+the eight original slots uses 16 equal-inventory forward programmes and
+reconstructs the whole retained 256-output CQ channel derivative, including
+the OR blocks' work coherences. Each query block uses 24 Golden gates and
+52 CNOTs; one launch of all 16 settings has 1,216 unit query ticks if each
+block is reached, before the real bank, preparation, abort, routing and
+repetition costs. An earlier abort may prevent a query block from running.
+The identity is for an unconditional rotation occurrence with the supplied
+known-one controller, not an arbitrary coherently bypassed control. Its
+output is the declared terminal work/OR channel with the inherited fixed
+compiler/abort instrument, not an archive of every primitive's intermediate
+state. The price source at the original common-null point is then obtained
+from the original entropy chain rule; the exact finite-z `S_y/S_x` ratio remains
+`-23.416406751884...`. This is a bounded algebraic source test, not a
+derivative of one fixed finite word, an exact finite-sample estimator, or the
+physical price of running all 16 programmes. The 4-setting evaluator remains
+the distinct shorter consumer for the known probability-price derivative.
+Each execution's query, factory, preparation, abort, routing and repetition
+ledger remains separate.
+
+For the specified continuum price, the full regular two-real-scalar
+stationary solution set is locally equivalent, sector by sector, to a
+covariant positive-multiplier Einstein/constrained-scalar system in a
+derived volume gauge, with the reverse realization and fixed-sector Jacobi
+equations. A generic regular two-density price has the same covariant
+solution class at a selected shared kinetic sector when its derivative
+ratio is positive; its fixed-volume coordinate representative can change.
+This does not imply identical fixed-coordinate critical sets or equal
+off-shell actions, sources or Hessians.
+
+The explicit rank-two witness has total kinetic norm and scalar curvature
+zero while both scalar gradients are active; its Ricci-square and Weyl-square
+invariants are positive. The same witness solves the configured continuum
+price for every fixed admitted cap. At this zero-operand point the actual
+positive PF weight cancels from the full first covector, provided `M`, `tau`
+and the nonzero first coefficients are spatially fixed and the baseline has
+no field source. This strengthens the continuum matter class and its
+weighted realization; it does not provide an exact finite-lattice root or
+the finite-to-continuum source transport.
+
+All three new bounded replays passed and reproduced their adjacent receipts:
+the covariant checker (28 controls, SHA-256
+`8cf8f99835f57688f750f2d9b6571f945446c1010ef276ef58ef9ae8f6e828f6`), the
+crossing-stream metric checker (26 controls, SHA-256
+`3306f985cb66153a984485b55a80c3ecc0e914d9a4414f121fcf22eef9c14525`), and
+the finite source checker (4,096 exact work-amplitude identities, 2,048
+outcome jets, SHA-256
+`5b40ef29c640b79f6a46121f862b5a4f00538f03f759a7d9f32ef017dcbf42dc`).
+The independent reviews bind the covariant equations and local volume map,
+derive the Bianchi-I/Weyl witness separately, and verify the finite channel
+proof's fixed archive and price boundaries. These replays do not repeat the
+historical all40, full128, Lean, raw216 or physical-experiment suites.
+
+The remaining physical bridge is now specific: admit the moving Julia/input
+interface and the same-execution writer; pull the exact query derivative
+back through actual finite coframe/link directions; include that programme's
+complete absolute Book03, clock, preparation, copy and upstream sources; and
+control the finite Ward defects under refinement. The new channel source and
+rank-two continuum witness do not supply those maps or select the physical
+Info/price. `GR_closed=false`.
