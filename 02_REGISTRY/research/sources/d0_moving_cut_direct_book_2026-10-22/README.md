@@ -10,7 +10,9 @@ This is one **bounded exact mathematical result** on the original Golden/H/contr
 
 - Canonical analytic proof: [A4D_MOVING_PREPARED_CUT_GOLDEN_BOOK_SOURCE_2026_10_22.md](../../A4D_MOVING_PREPARED_CUT_GOLDEN_BOOK_SOURCE_2026_10_22.md), including the native full128/clock and noncommuting marked generalization, conditional 42-source consumer, and complete free-input Euler classification.
 - `check_moving_cut_book.py`: 63 independent labelled exact symbolic/algebra checks on a noncommuting prepared 2×4 fixture, full original comparator, genuine noncommuting derivatives, allround 2-clock relation, moving marked-normalizer, Golden-input exceptional root, and 42-source report algebra. No assertions (`python -O` retains every test).
+- `check_split_projector_source_control.py`: 10 exact symbolic checks showing that two rank-2 retained/rank-1 traced cuts on the same 3D carrier and same unitary can produce different Book feedback values and first sources. This is scoped to the abstract split interface; it selects no physical D0 cut. Ordinary and optimized outputs are saved separately and byte identical.
 - `RESULT.json`, `RESULT_OPTIMIZED.json`: actual ordinary and optimized checker stdout; **byte identical**.
+- `CUT_CHOICE_RESULT.json`, `CUT_CHOICE_RESULT_OPTIMIZED.json`: exact same-tick/different-cut control output; **byte identical**.
 - `VALIDATION.json`: source/checker hashes and exact supported claims.
 - `SOURCE_PINS.json`: historical GitHub input commit and immutable source blob identifiers consumed.
 
@@ -20,6 +22,9 @@ Reproduce from this directory:
 python3 check_moving_cut_book.py > /tmp/moving_cut.normal.json
 python3 -O check_moving_cut_book.py > /tmp/moving_cut.optimized.json
 cmp /tmp/moving_cut.normal.json /tmp/moving_cut.optimized.json
+python3 check_split_projector_source_control.py > /tmp/cut_choice.normal.json
+python3 -O check_split_projector_source_control.py > /tmp/cut_choice.optimized.json
+cmp /tmp/cut_choice.normal.json /tmp/cut_choice.optimized.json
 python3 validate_packet.py
 ```
 

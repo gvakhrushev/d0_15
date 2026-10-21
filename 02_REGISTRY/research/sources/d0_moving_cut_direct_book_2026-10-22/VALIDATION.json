@@ -27,11 +27,27 @@
     "repository_wide_CI": false
   },
   "sha256": {
-    "README.md": "71f3b93a3b9f5c32bd1df02e8a7eac542d01f05e27d7336a3d2703d7ef3aefea",
+    "README.md": "4c181e569bf231a0d49029fb6cd7c628e34c1d39a83cf658a0d76cb0b6edfb2f",
     "RESULT.json": "2c0b328941f22b586341a243d6eabc444190297e8131712c01b7308d164dfae4",
     "RESULT_OPTIMIZED.json": "2c0b328941f22b586341a243d6eabc444190297e8131712c01b7308d164dfae4",
     "SOURCE_PINS.json": "5f902b8b639604d769fbb90f6a736b079945e1cea22c0dc114860cde37a3c0a1",
-    "check_moving_cut_book.py": "c9d93140735ca90541c8cae545f3e119f13ec3a152d6835f3e4d53efcb78dd45"
+    "check_moving_cut_book.py": "c9d93140735ca90541c8cae545f3e119f13ec3a152d6835f3e4d53efcb78dd45",
+    "validate_packet.py": "99af6bdbd3f2e6c965f696dfaead50665f3060996d3e236d0c44dbabf94ce047",
+    "check_split_projector_source_control.py": "ce45dc45766ec1f14e276bae057133746bb1d5c5c3e406050c4ea9cf854dbce8",
+    "CUT_CHOICE_RESULT.json": "a48e6c1166bbc7b257cea2ce7cbb8c3a3e747c4e5a4080297ad2c5f529fefe7a",
+    "CUT_CHOICE_RESULT_OPTIMIZED.json": "a48e6c1166bbc7b257cea2ce7cbb8c3a3e747c4e5a4080297ad2c5f529fefe7a"
   },
-  "status": "PASS"
+  "status": "PASS",
+  "cut_choice": {
+    "check_count": 10,
+    "normal": {
+      "status": "PASS",
+      "stdout_sha256": "a48e6c1166bbc7b257cea2ce7cbb8c3a3e747c4e5a4080297ad2c5f529fefe7a"
+    },
+    "normal_and_optimized_byte_identical": true,
+    "optimized": {
+      "status": "PASS",
+      "stdout_sha256": "a48e6c1166bbc7b257cea2ce7cbb8c3a3e747c4e5a4080297ad2c5f529fefe7a"
+    }
+  }
 }

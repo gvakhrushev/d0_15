@@ -325,6 +325,38 @@ This exactly exposes the tradeoff with the old two source bridges: fixed initial
 
 ## 5. Type/physical acceptance gate
 
+### The abstract retained/traced split does not determine this Book source
+
+Book 01 §01.0 names `P_N` the retained/readout projection and `Q_N=I-P_N` the archive projection; Book 02 admits that split into the finite feedback operator. Neither definition assigns its range on this READY history. The current [Lean interface](../../03_FORMALIZATION/D0/Dynamics/InternalFeedbackResolvent.lean) records only the two split dimensions and construction flags, not the operator cut or its process map.
+
+The missing information is load-bearing even at fixed split dimensions. On one carrier `H=C^3`, use the same field-dependent unitary
+
+\[
+U(t)=\begin{pmatrix}c&0&-s\\0&1&0\\s&0&c\end{pmatrix},\qquad
+c=\frac{1-t^2}{1+t^2},\quad s=\frac{2t}{1+t^2},
+\]
+
+and either `P_A=diag(1,1,0)`, `Q_A=diag(0,0,1)`, or `P_B=diag(1,0,1)`, `Q_B=diag(0,1,0)`. Both are rank-2 retained/rank-1 traced orthogonal splits on the same finite support, and `U(t)` is unitary. Direct multiplication gives
+
+\[
+F_A=P_AU^*Q_AUP_A=\operatorname{diag}(s^2,0,0),\qquad F_B=P_BU^*Q_BUP_B=0.
+\]
+
+Thus the same feedback term `J=-log det(I-zF)` is respectively
+
+\[
+J_A=-\log(1-zs^2),\qquad J_B=0,
+\]
+
+with
+
+\[
+\partial_tJ_A=\frac{8zt(1-t^2)}{(1+t^2)^3\left(1-\frac{4zt^2}{(1+t^2)^2}\right)}>0
+\quad(0<t<1,\ 0<z<1),\qquad \partial_tJ_B=0.
+\]
+
+The packet's exact control reproduces these identities and the rational value at `t=z=1/2` in ordinary and optimized runs. This is a two-completion witness for the **abstract finite split interface** only. It does not identify either projector as native D0's compulsory `P_N`, does not instantiate the K(9,11,13) scene passport, and does not complete full `H+J+R`; it proves that the retained/traced dimensions and feedback formula alone cannot supply the missing same-execution cut map.
+
 A physical D0→GR theorem using (16) must still independently establish:
 
 1. A single M1/G0-admitted, paid, field-dependent coherent preparation **from the common initial state**, its actual factory/abort/clock and all original oldRIGHT modes. A positive *finite code catalogue* and controlled field-price differences do not alone produce a smooth physical field writer or a unique field selection.
