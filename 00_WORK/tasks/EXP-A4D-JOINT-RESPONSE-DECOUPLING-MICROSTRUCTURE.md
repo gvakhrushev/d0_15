@@ -3447,6 +3447,58 @@ and all-row source calculation, noncommuting curved-background propagation.
 Independent reviews bind the frozen proofs/checker/receipt. No lifecycle,
 registry, CORE/BOOK or physical-GR acceptance change; GR_closed=false.
 
+## 21 October continuation: joint preparation, actual compiler minimum and complete return source
+
+The [joint source synthesis](../../02_REGISTRY/research/A4D_JOINT_PREPARATION_COMPILER_CLOCK_SYNTHESIS_2026_10_21.md)
+continues the same Draft #334 at input
+dfc0275eea67ebc21ffe539de9b6ea96713863a5. Its write surface is
+`sources/d0_joint_preparation_compiler_clock_2026-10-21/`, that synthesis,
+this existing brief and the existing parent memo. The three bounded
+analytical contributors remain within this owner; no child task is created.
+
+Exact removed premise: on the original full128 cap2 coherent source, the
+selected local CAR preparation is a second-arm shift of an already free
+material angle. The Golden weighted mean/relative change proves a unique
+relative zero for every nearby mean field, exact joint critical-set
+equivalence, and equality of the complete reduced field Hessian at every
+nearby selected-source-zero point. The old off-shell logarithmic force is
+p^2 d_w times the same coincident action's b_w Euler row. Genuine upstream
+terms must pass U_a-p^2 d U_b=0; anchor reduction additionally needs its
+interior section. Fixed material boundaries and other actions are not
+substituted into that theorem.
+
+On the separate original N=1 paid detector, actual-report factorization
+gives a positive monotone implementation envelope. For the declared
+common-tape/prefix-price class and separate half-readiness conditions,
+complete native atom/entropy accounting selects K9,L18 at each independent
+site, preserving the original all42 source. For the separate native
+monitored return, complete CQ entropy including abort supplies the missing
+nonlinear first-source cap estimate and a strictly nonzero limiting force.
+These are typed substitutions into their existing owners, not three prices
+summed without a binding. A composition theorem states the exact additional
+same-action factorization required to combine the positive mechanisms.
+
+Validation: full4096-by128 preparation dictionary, small expressly labelled
+entropy diagnostic, exact integer-interval readiness, original atom word
+counts, full monitored-return Decimal source enclosure and independent
+proof/checker reviews. Heavy inherited all42/native255/geometry/Lean runs
+are unchanged. The remaining application is the actually selected common
+Book/input/query/time ledger, its true coincident field source and any
+independent residual, followed by the original gain-aware/GR/raw216 gates.
+No lifecycle or scientific acceptance state is changed.
+
+Final integration also consumes the concurrent continuation through
+`d8f5901b32024bef0abd2d219f8f7228be4993e9`. The already-published
+balanced stationary-set theorem remains the canonical entry; this packet
+adds its source-zero Hessian and degenerate-type/composition refinements.
+For the same N=1 CQ execution the actual K9/L18 optimum now preserves
+the entire normalized nonlinear material law K/a and the coframe map,
+by exact positive scaling of the auxiliary equations. The actual CAR16
+return factorization supplies the previously separate representation
+input. Concurrent return-Info results count as one closed premise.
+The complete source residual of a physical admission remains required;
+the all-angle same-effect compression obstruction is preserved.
+
 ## 21 October continuation: Book03 order comparator on original CAR16
 
 Phase: native-representation support for the existing constitutive owner in

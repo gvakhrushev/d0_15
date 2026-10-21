@@ -9803,3 +9803,23 @@ are restored as immutable source evidence without replacing the current
 reconstruction. Exact and numerical checks are distinguished; independent
 reviews bind the final proofs. Existing #334/native-programme-v1 continues;
 no new task, claimed compulsory action or GR_closed promotion.
+
+## 21 October — exact joint preparation and internal-source synthesis
+
+The [joint preparation/compiler/clock synthesis](A4D_JOINT_PREPARATION_COMPILER_CLOCK_SYNTHESIS_2026_10_21.md)
+consumes the original cap2 logarithmic minimum, cap1 complete spatial
+price and native monitored-return owners at dfc0275e. Its strongest new
+result is exact stationary-set equivalence after the selected native
+preparation is eliminated: D_aA(y,0)=p^2 d_w partial_b_w A0, and
+Crit(min_a A)=Crit(A0) on the same free material chart. The complete
+field Hessian agrees at every nearby source-zero point, not only vacuum.
+The balanced mean-map argument also preserves degenerate local types.
+
+Separately, the full N=1 implementation envelope preserves its actual
+report field roots and selects K9,L18 in the stated nested paid class.
+The true monitored-return CQ source has a rigorous nonzero limit and a
+uniform complete first-source cap bound including abort. All three real
+information cuts remain distinct. The [package and independent reviews](sources/d0_joint_preparation_compiler_clock_2026-10-21/README.md)
+state the exact common-action composition condition and the remaining
+Book/input/query/time binding. No physical GR, raw216, task lifecycle or
+CORE claim is promoted.

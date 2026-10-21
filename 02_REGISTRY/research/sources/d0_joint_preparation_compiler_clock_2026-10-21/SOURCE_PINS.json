@@ -1,0 +1,178 @@
+{
+  "input_ref": "dfc0275eea67ebc21ffe539de9b6ea96713863a5",
+  "inspected_main_ref": "567133c1f1ad29e5dabf8bd9c43ca64e4fec6c8f",
+  "files": [
+    {
+      "path": "02_REGISTRY/research/A4D_EXACT_COHERENT_PREPARATION_STATIONARITY_2026_10_21.md",
+      "source_ref": "d8f5901b32024bef0abd2d219f8f7228be4993e9",
+      "git_blob": "9a0e3307fb715920931d1330c717ee4a1ae82a09",
+      "sha256": "836f82e13d7587972faaa1c5da5d8d9bf2919fd09e0f662300f15f479e7e1202"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_CLOCK_WORK_RETURN_SOURCE_SYNTHESIS_2026_10_21.md",
+      "git_blob": "1a660bc859e536137bbc6fc7f38ab4c7cfa39d26",
+      "sha256": "7184e3cd94ff501e5ac213f6d632dbf6c465ea70d3eb363b5eadd91b30761ad5"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_JOINT_FIELD_MINIMUM_EXCLUSION_2026_10_20.md",
+      "git_blob": "bd0fe57263a8bb37cec51e60c56d28730def2646",
+      "sha256": "3a13f82d4b1ef149328da05b62bd0485d1970db3ed4fb38aff044e98f2b6df1a"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_STOPPED_MINIMUM_TO_J2_SOURCE_2026_10_20.md",
+      "git_blob": "c96791ff6a768dc11f6860fe6ad82121fba95e3f",
+      "sha256": "6e73ece4f1d4312e241e91860871019689bf28017088ef6431893a3286978b0b"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_PHYSICAL_CAP1_EXECUTION_COMPOSITION_2026_10_21.md",
+      "source_ref": "d8f5901b32024bef0abd2d219f8f7228be4993e9",
+      "git_blob": "10565927bb519f30f31d19da3554bf23256ae06c",
+      "sha256": "04a77cfa3f86418a1eccf0615bd1396c0fd6e2589123d83464289fceba08d8e8",
+      "prior_sha256": "6589f3dadfbc896752dab612d38be512c83bf5224f8ab5dc91db26513aebaaed",
+      "prior_git_blob": "7047672e1500d43cf3678dab0f25bc461940184b",
+      "prior_source_ref": "8463b0a42433cc16e48546b1d62ff8859ea037e8",
+      "integration_change": "Concurrent owner adds all-angle same-effect compression boundary; mathematical source retained at its actual published revision."
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_Q8_TEMPORAL_PHASE_COMPLETE_RETURN_INFO_SOURCE_2026_10_21.md",
+      "source_ref": "d8f5901b32024bef0abd2d219f8f7228be4993e9",
+      "git_blob": "68e43f0020af71e499e7440c7e2a47de5b9f2291",
+      "sha256": "75f6265a02e1f2c18881d240132341c8e38d62416652b557f28816558ac4efc2"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_SAME_EXECUTION_SPATIAL_WEIGHTS_AND_COMPLETE_SOURCE_2026_10_21.md",
+      "git_blob": "14867b53a1bbb006eafe2cbf90d62be03560e5a0",
+      "sha256": "42c9b9745f3c9ee78b868e991485bbaf8b77810f4261204d913fc87fc44377a1",
+      "prior_sha256": "b13ef78db2ef108ce0435bc3b678822b4518d6e0eaa4d8610f4672cd5798eafd",
+      "prior_git_blob": "4d637bae96f94ab0b18c9509bcf64e8609d47375",
+      "source_ref": "8463b0a42433cc16e48546b1d62ff8859ea037e8",
+      "integration_change": "Four-line pointer appendix only; original mathematical bytes preserved as exact prefix."
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_balanced_preparation_stationarity_2026-10-21/PROOF.md",
+      "source_ref": "d8f5901b32024bef0abd2d219f8f7228be4993e9",
+      "git_blob": "816f529f159885ba78459fef80c713b78a276768",
+      "sha256": "795d53a1c0b7cadf095f10c26aba72d3c00d50e7f1d94fcb878d07c84c8493fe"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_book03_car16_q8_order_2026-10-21/README.md",
+      "source_ref": "d8f5901b32024bef0abd2d219f8f7228be4993e9",
+      "git_blob": "4e3996a9f43a07232d99a9dcc5f471894179e44d",
+      "sha256": "2bb8510087c005714ea732c350fec53ad8d3c959fb4e75cda83a9a0f1679ceb2"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/DETERMINANT_PREPARATION_BANK.md",
+      "git_blob": "e7b92fae0d6f3dc3e60499f0dd041c18003da872",
+      "sha256": "6cc9fc85ef8e238635ef24b78ddb3936f07d1a3f915558172eee8ff1c3602705"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/FINITE_FUTURE_DETERMINANT_REVIEW.md",
+      "git_blob": "062fa8895e2e0eddad98c8000bc5dd3adeacf1a1",
+      "sha256": "32bb511d4d2c6d1c8cc1d9df0a246c069d93e5794879fbfd3e1d469a1f4f48ac"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/GOLDEN_EXACT_DETECTOR.md",
+      "git_blob": "92b9003d783c24b1883a2a21f8b30625078afff7",
+      "sha256": "d33c9c2cb2322e381723f481eb1fcf58058fd05ad88eda92c5597c026d02eb77"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/NATIVE_COHERENT_CHOICE_SOURCE.md",
+      "sha256": "2e906213861d0c4d1812e1ec8608aec571aeb18230fce8f791fb4cce6b4c2c1b",
+      "git_blob": "e5841990c5becf562928115012a4dcafd25f6a87"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/PRIMARY_STOPPED_PORT_PRICE_AND_PREPARATION_EULER.md",
+      "sha256": "66108133dc615593e50e634274005a5d904b533f3a2f3fd7861a57b2557b8b50",
+      "git_blob": "829c2fafcf390f6d2d6246b46fb22cc8655756f2"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/PRIMARY_STOPPED_RIGHT_CONDITIONAL_SOURCE.md",
+      "sha256": "f45c6b301aad0d5601fc771b20550072ad8eeb579c8a701ec51c91b249d64f89",
+      "git_blob": "6afab2c3d5c8361639f2c58bddeffdfce91b3098"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/TWO_NATIVE_8D_DETERMINANT_SOURCE.md",
+      "git_blob": "63b381ca8b0abd9f03ebee2495de904c379f0736",
+      "sha256": "0ea9a175e630e0cb547aff4d25ab355b60125282645e776f23d3a98c0e7d4851"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/check_determinant_preparation_bank.py",
+      "git_blob": "440fce3ba83c2b40a3e0c69ce43ac72dcf74c6b5",
+      "sha256": "79417d85e03e6fb26cfd881f1fccdf69a043188e2a9cf2c8a686420b19682b7e"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/check_golden_exact_detector.py",
+      "git_blob": "55e1649e318bdceb11f0e56f2598a28ce1184b43",
+      "sha256": "5e1ad8cbd442cc90eef17ab61a3b97189876c4388d54f3761f6408832cafb2cd"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_logarithmic_source_reduction_2026-10-21/PROOF.md",
+      "sha256": "4b2ab4a0d80aa75dca4cd952b25e03827630cf6796e36cf6fb521aabe2eccb94",
+      "git_blob": "c00e533a56050bab649d987d85b8695c33ce4f5e"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_nested_return_source_2026-10-21/AUTHOR_RECEIPT.json",
+      "git_blob": "a3330ddf8b1e411a5cc5514dfb36e4c0d5493d59",
+      "sha256": "4943e2f23b51f1a26c5804d765b0042b40cf3aa7357c17d485bfd4128f662c7e"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_nested_return_source_2026-10-21/check_native_nested_return.py",
+      "git_blob": "81232f53b7fdf76067a35cfdd508a8fe924e2730",
+      "sha256": "727e4ae3e113f1195e0fb9c330dadeb7a01154424c80c0b2816a11b740b14cb7"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_return_info_phase_2026-10-21/CAR16_APPLICATION.md",
+      "source_ref": "d8f5901b32024bef0abd2d219f8f7228be4993e9",
+      "git_blob": "7916faa01a6a7db86f3c50017b4690650560a4a4",
+      "sha256": "eb8df243a9a7c4833e75fe92b539f24fe88ac9dfbdc322da8c6b48e3a73e50bd"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_physical_cap1_execution_composition_2026-10-21/book_binding/PROOF.md",
+      "source_ref": "8463b0a42433cc16e48546b1d62ff8859ea037e8",
+      "git_blob": "c56ec23c0f3ea46e02afbad5483c357e5367a935",
+      "sha256": "47df6a17dee97b1da3a39d34bbd56b7f27f42831bfe20d9b0c0befc6d3f95d17"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_physical_cap1_execution_composition_2026-10-21/car_effect/PROOF.md",
+      "source_ref": "d8f5901b32024bef0abd2d219f8f7228be4993e9",
+      "git_blob": "f3ca5912cc1c4f17c0e96b8b605ff7531e284c50",
+      "sha256": "82d0a871d21ea86f2d6f8e7511a273e7f0da9e49cd53e7dd4fc85c74769f7775"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_physical_cap1_execution_composition_2026-10-21/independent_input/PROOF.md",
+      "source_ref": "8463b0a42433cc16e48546b1d62ff8859ea037e8",
+      "git_blob": "cc6321a553edb9e7a574bb07c0d6af637db33de6",
+      "sha256": "47c4b21bcd4a5a47e2555578967b97a708ee50f7c3bb051211cce0cd79450e44"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_physical_cap1_execution_composition_2026-10-21/moving_query/PROOF.md",
+      "source_ref": "8463b0a42433cc16e48546b1d62ff8859ea037e8",
+      "git_blob": "280d4b93f3113d94691609b20cd7c27793e61499",
+      "sha256": "9dc733555100874b164e24a3dee7d73814faa4fc5a21a7b22a06ca3b23d93bd7"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_physical_cap1_execution_composition_2026-10-21/restricted_car/SCOPE.md",
+      "source_ref": "8463b0a42433cc16e48546b1d62ff8859ea037e8",
+      "git_blob": "75ae1d54c4cb185a3f99356dda3cbb03b4827069",
+      "sha256": "d4c85907e5de4c2b25fa6ab8d0f76166b5f8eadaef649846965badd47a6ddbe3"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_primary_native_domain_source_2026-10-20/check_primary_domain_source.py",
+      "sha256": "c67285c7469db49ff61f3e52597d0bcc6aad991ec1f7af025d6daeb065a43edf",
+      "git_blob": "7f0b411a7d8fa6af6753109eb7057a7a375fd5ef"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_primary_normal_source_recovery_2026-10-21/constitutive/CONSTITUTIVE_COMPOSITION.md",
+      "source_ref": "d8f5901b32024bef0abd2d219f8f7228be4993e9",
+      "git_blob": "60f2a9c0b614541847e28b3a183a90c9731fcc0e",
+      "sha256": "d5fbe513d22bb130092b1ce64a69bb84bc7d72be7215462b3704b71a2ae168a7"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_same_execution_spatial_source_2026-10-21/weights/ONE_STAGE_COMPLETE_SPATIAL_WEIGHT_THEOREM.md",
+      "git_blob": "58762641a26e0f6a7c22275b325e4a4016642a09",
+      "sha256": "960f2d1edc4f151607f9c4ecc76e1522d5dee08922319a3700c0cc3fc96458d1"
+    }
+  ],
+  "scope": "Exact inherited source bytes; each source_ref overrides input_ref for the concurrent publication. No historical full-suite replay is claimed.",
+  "integrated_concurrent_ref": "d8f5901b32024bef0abd2d219f8f7228be4993e9"
+}
