@@ -152,6 +152,30 @@ def vnentropy(x):
 
 def main(out):
     check('Golden normalization',abs(a*a+p*p-1)<2e-15)
+    # Exact PAID phase-quadrature preparation: no imaginary S gate is assumed.
+    # H is the existing successful Golden H-factory output; two such H are
+    # implemented before their prescribed source-independent corrections.
+    import sympy as sp
+    h=sp.Matrix([[1,1],[1,-1]])/sp.sqrt(2)
+    x=sp.Matrix([[0,1],[1,0]])
+    zq=sp.diag(1,-1)
+    jq=sp.Matrix([[0,-1],[1,0]])
+    check('exact one-rebit quarter turn XHXH equals J',x*h*x*h==jq)
+    check('exact quaternion phase relation J squared minus identity',jq*jq==-sp.eye(2))
+    cx=sp.Matrix([[1,0,0,0],[0,1,0,0],[0,0,0,1],[0,0,1,0]])
+    h2=sp.kronecker_product(sp.eye(2),h)
+    controlled_j=cx*h2*cx*h2  # chronological H,CNOT,H,CNOT
+    check('actual addressed H-CNOT-H-CNOT implements controlled J',
+          controlled_j == sp.diag(sp.eye(2),jq))
+    # Start with the Golden two-arm superposition a|0,0>+p|1,0>.
+    # The address bit serves as the CNOT control, phase rebit is the target.
+    arm=np.array([a,0,p,0],complex)
+    arm_out=np.asarray(controlled_j,dtype=float)@arm
+    close('paid conditional phase labels prepare two-quadrature real input',
+          arm_out,np.array([a,0,0,p]))
+    cap=1; ready_single=(1-(1-4*p**3)**cap)**2
+    check('two paid Golden H factories have strictly positive readiness',
+          0<ready_single**2<1)
     k,dk,N,B,dN,dB=native_effects()
     close('actual all128 Kraus completeness',sum((adj(x)@x for x in k),np.zeros_like(I)),I)
     close('Kraus first jet completeness',sum((adj(dx)@x+adj(x)@dx for x,dx in zip(k,dk)),np.zeros_like(I)),np.zeros_like(I))
@@ -218,7 +242,7 @@ def main(out):
           'full_feedback':jc,'native_feedback_field_jet':djc,
           'imaginary_effect_ambient_jet':dBook,'effect_normalizer_eigenspread':float(np.ptp(np.linalg.eigvalsh(N))),
           'probes_exact_count':len(probes)},
-        'limits':['Q8 quarter-turn and realified old CAR actuator admission not proved',
+        'limits':['paid H/CNOT Q8 input-quarter-turn compiled under addressed interface; realified old CAR channel and controller admission not proved',
            'real Golden inputs alone cannot detect imaginary effects',
            'actual cut and branchwise Info/heat/clock selection unresolved',
            'full GR closure not claimed'], 'GR_closed':False}

@@ -1,8 +1,13 @@
 {
   "GR_closed": false,
-  "checks": 50,
+  "checks": 55,
   "labels": [
     "Golden normalization",
+    "exact one-rebit quarter turn XHXH equals J",
+    "exact quaternion phase relation J squared minus identity",
+    "actual addressed H-CNOT-H-CNOT implements controlled J",
+    "paid conditional phase labels prepare two-quadrature real input",
+    "two paid Golden H factories have strictly positive readiness",
     "positive Julia defect spectrum",
     "positive Julia defect spectrum",
     "positive Julia defect spectrum",
@@ -54,7 +59,7 @@
     "same-class weights have invisible balanced fibre"
   ],
   "limits": [
-    "Q8 quarter-turn and realified old CAR actuator admission not proved",
+    "paid H/CNOT Q8 input-quarter-turn compiled under addressed interface; realified old CAR channel and controller admission not proved",
     "real Golden inputs alone cannot detect imaginary effects",
     "actual cut and branchwise Info/heat/clock selection unresolved",
     "full GR closure not claimed"

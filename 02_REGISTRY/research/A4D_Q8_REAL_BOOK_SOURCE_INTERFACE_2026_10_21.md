@@ -9,9 +9,11 @@ The earlier reverse-source theorem reconstructs the **real symmetric** effects
 ordinary unequal Golden input superpositions. It explicitly leaves the
 **complex Hermitian** Fourier/CAR case outside that real-probe theorem.
 This note closes that *mathematical phase-input gap* by combining the existing
-Golden pair with the already described real quaternion/quarter-turn memory
-representation of Book03 §03.1.3. It does **not** construct or claim the
-native physical port that implements the doubled complex instrument.
+Golden pair with the real quaternion/quarter-turn memory representation of
+Book03 §03.1.3. More strongly, §2a constructs the **actual input-quadrature
+phase operation** as a paid native H/CNOT word with all factory histories.
+It does **not** construct or claim the complete native physical channel
+implementing the doubled complex instrument or the compulsory observer cut.
 
 For a complex input space of dimension `d`, exactly **d²** explicitly
 specified realified Golden input settings recover **every entry** of an
@@ -58,9 +60,11 @@ its doubled **real** instrument obeys
 columns and field jets are transported algebraically, not thrown away.
 The original real Q8 left-multiplication carrier has a compatible
 quarter-turn; its `J` has exactly the multiplication rule used in (1).
-This is a specific **representation-level identification**. It does not
-show that a controlled `J` and every `R(K_omega)` are executable from the
-same blank state with the original paid Golden/CNOT scene controller.
+This is a specific **representation-level identification**. The controlled
+single-rebit `J` needed for the *input probes* is actually compiled below
+from the paid native Golden-H and CNOT operations. This does **not** establish
+that every original complex `R(K_omega)` is executable from the same blank
+state with the compulsory scene controller.
 
 Let `W` be the complete (possibly cost-marked) retained amplitude and `P`
 the **actual specified** active cut. Put
@@ -129,9 +133,8 @@ the existing Golden pair; the second vector uses the real quadrature
 index `J`, not a presumed native S gate or an imaginary scalar prepared
 for free. A fresh doubled real address and the same fixed Boolean
 permutations suffice to *prepare these real input vectors on the declared
-addressed interface*. The **realified effect/channel access** is an
-additional contract; existence of an algebraic representation alone does
-not supply a paid physical gate.
+addressed interface*. The **realified effect/channel access** is an additional contract; the
+paid input preparation in §2a does not by itself implement that channel.
 
 For any Hermitian `E`, measure its quadratic expectations on the
 **specified realified input effect**. With `q_j=<v_j,E v_j>` and
@@ -164,6 +167,68 @@ entire first source even against arbitrary off-parity effect jets.
 It does not preserve an arbitrary ambient Hessian; the exact defect
 from that owner remains in force. Do not discard a parity block,
 spatial sites, ports, histories, or the full oldRIGHT multiplicity.
+
+### 2a. The quadrature input itself is a paid native Golden/CNOT word
+
+A remaining doubt was whether Book03's algebraic quarter turn required an
+unlisted phase gate. It does **not** for the specific input vectors (6).
+Let `X` denote the target NOT, `H` the exact completed Golden Hadamard
+from `GOLDEN_EXACT_DETECTOR.md` §3, and `Z=HXH`. All of these are **real**
+operations. In the computational basis,
+
+\[
+J=XZ=XHXH=\begin{pmatrix}0&-1\\1&0\end{pmatrix},
+\qquad J^2=-I.\tag{7a}
+\]
+
+On an address selector bit `b` and a fresh initially zero *phase rebit*
+`r`, execute, in chronological order:
+
+\[
+H_r,\quad\mathrm{CNOT}(b,r),\quad H_r,\quad
+\mathrm{CNOT}(b,r).
+\]
+
+The complete input/output unitary on their four-dimensional carrier is
+exactly
+
+\[
+\mathrm{CX}_{b,r}(I_b\otimes H_r)
+\mathrm{CX}_{b,r}(I_b\otimes H_r)
+=|0\rangle\langle0|_b\otimes I_r
+ +|1\rangle\langle1|_b\otimes J_r.\tag{7b}
+\]
+
+In particular the **same paid word** sends the native unequal Golden arm
+
+\[
+a|0,0\rangle+p|1,0\rangle
+\longmapsto a|0,0\rangle+p|1,1\rangle.\tag{7c}
+\]
+
+Address relabeling by the already specified finite Boolean permutation
+turns this into the entire family `v^Q_jk`, with `b` indicating the k-arm.
+The real family `v^R_jk` needs no phase rebit. Computational-basis settings
+are separately admissible on the same addressed test-input interface.
+No complex `S`, imaginary numerical gate, external phase state or fitted
+quarter-turn parameter is inserted.
+
+**Complete paid accounting.** Each `H` is the already-owned exact
+Golden `CZ`+`X`-measurement instrument, not an uncharged ideal Hadamard.
+With finite cap `L`, its success probability is
+`b_2^2`, where `b_2=1-(1-4p^3)^L`. Thus the two `H` instances finish
+with input-independent probability `b_2^4>0` (also on entangled arm
+inputs). Two addressed CNOTs occur on the fully ready logical word;
+actual Golden trial words, all intermediate outcomes, timing, extra
+CNOT reads, aborts, work purifiers, and address comparison/uncomputation
+must be kept and paid according to their real branches. The known H
+byproduct corrections are applied and paid as in the owner; success
+preserves the coherent arm input. The output is not conditioned on a
+secret selection of an X sign. This result is a finite **positive
+physical preparation** for the listed input probes on the *declared*
+addressed gate interface. It does not make the full complex CAR16
+instrument or its marked return projector available as a physical
+realified query.
 
 ### An exact obstruction if quadrature is absent
 
@@ -274,7 +339,7 @@ Checks cover `sum K* K=I`, its derivative, positivity, complex-to-real
 *-homomorphism, completeness of all 128 realified outcome maps, exact
 `d²` tomography for N/B and DN/DB, whole determinant and complete first
 source, imaginary-jet blindness, max-entropy and the memory collision
-kernel. The normal and `python -O` runs have **50 scoped checks each**, with
+kernel. The normal and `python -O` runs have **55 scoped checks each**, with
 byte-identical result JSON. In the original fixture:
 
 \[
@@ -293,13 +358,17 @@ source formula, not an independently executed full original history suite.
 No external peer review, Lean build or complete original root campaign is
 claimed for this packet.
 
-**What is newly closed:** the previous complex-phase algebraic input gap
-for feedback source tomography and its exact real representation, plus
-the universal obstruction to real-only source tomography. This uses
-precisely the Q8 complex structure which Book03 already carries.
+**What is newly closed:** the previous complex-phase *algebraic* input
+gap for feedback source tomography, its exact real representation, **and
+an actual paid H/CNOT construction of the phase-quadrature input probe**.
+An exact negative control establishes why unphased real-only tomography
+is insufficient. This uses the same quarter-turn structure carried by
+Book03; matching that representation to its compulsory physical native
+observer remains an additional obligation.
 
-**Still open for GR:** one native paid preparation of the actual doubled
-input and realified primitive/observer; one actual common controller and
+**Still open for GR:** native same-history access to the **original
+realified CAR query and its active/return projector** (the phase *input*
+itself is now constructible); one actual common controller and
 retained time/Info history; the independent matter/preparation rows and
 Book03 H+J+R/source equality on that execution; and the original-carrier
 uniform refinement. There is no assertion of exact finite-code stationary
