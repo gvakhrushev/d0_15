@@ -129,3 +129,38 @@ Likewise, a uniform mixture over several code words has its OWN complete entropy
 The consumed paid-writer author script was rerun in the working container: **124 previous checks, byte-identical JSON**. The new rational-Givens, complete two-port Cost−CQ/entropy, Fannes bound and diagonal-precision author script passes **83 checks**, with ordinary and \`python -O\` outputs byte-identical. Exact rational orthogonality and unaltered oldRIGHT effects are tested in the consumed writer; the new sample diagonal budget L=4,8,16,32 uses explicitly DIAGNOSTIC finite growth constants and a synthetic gain, **not** measured native D0 uniform constants. The sampled moving Bernoulli report is a source/entropy negative-control fixture, NOT the field-independent conditional nonblank native-port law. No expensive full all42, original full128/oldRIGHT128, Lean or remote CI was rerun and no independent-agent mathematical review is claimed.
 
 **Remaining physical closure:** one compulsory same-initial execution with actually admitted field-to-code/source input, its own Book03 branchwise Info/absolute memory amplitude/clock/work and full independent upstream Euler, then physical universality and controlled refinement. The exact original L4 pure Choi writer is provably impossible in the specified palette, while the finite approximate family above is executable but has NO single physical controller law yet. Do not install a compensating Info or identify distinct CQ prices. \`GR_closed=false\`.
+
+
+## 8. A complete four-label CQ rank birth: why an ambient Hessian hypothesis is false
+
+A separate exact control uses a true fixed three-qubit unitary \(U_\varepsilon=\cos\varepsilon I+i\sin\varepsilon(X\otimes I_4)\), initial state \((|000\rangle+|111\rangle)/\sqrt2\), two measured flag bits and the third qubit retained as oldRIGHT/work. The entire recorded state has four distinct CQ blocks, each with a pure conditional work vector. Its probabilities are EXACTLY
+
+\[
+(q_{00},q_{01},q_{10},q_{11})
+=(\cos^2\varepsilon/2,\ \sin^2\varepsilon/2,\
+  \sin^2\varepsilon/2,\ \cos^2\varepsilon/2).
+\]
+
+The oldRIGHT marginal is \(I_2/2\) for every \(\varepsilon\). Two complete classical outcomes have zero probability at \(\varepsilon=0\) but become positive immediately; neither failure branch nor retained reference is dropped.
+
+With genuinely charged outcome lengths \(c=(1,2,5,8)\), the entire complete CQ Cost-minus-entropy has the exact value
+
+\[
+S_{\rm CQ}(\varepsilon)=\frac92-\sin^2\varepsilon
+ -\log_\varphi2-h_\varphi(\sin^2\varepsilon).
+\tag{9}
+\]
+
+Thus the ambient second symmetric secant obeys
+
+\[
+\frac{S_{\rm CQ}(\varepsilon)+S_{\rm CQ}(-\varepsilon)
+      -2S_{\rm CQ}(0)}{\varepsilon^2}
+=-\frac4{\ln\varphi}\ln\frac1{|\varepsilon|}+O(1)
+\longrightarrow-\infty.
+\tag{10}
+\]
+
+This is an ANALYTICAL rank-birth result, not inference from a sample plot. It disproves an automatic bounded ambient \(\Phi''\) across dark quantum/classical outcome births, even though the true complete CQ value has the floor-free continuity modulus (3) and the reference is retained. The diagonal theorem requires C4 only on the **specific owned smooth ideal physical source section**, not on the entire space of arbitrary approximate bank states.
+
+The companion executable [check_full_cq_rank_birth.py](sources/d0_diagonal_paid_source_2026-10-21/check_full_cq_rank_birth.py) confirms complete normalization, four conditional quantum blocks, oldRIGHT preservation, CPTP trace-distance contraction, entropy continuity and diverging symmetric second secants. Its sample test is **not** the original native full128 instrument. The separately executed author fixture passed 112 checks in ordinary and optimized Python with identical receipts; the all-\(\varepsilon\) conclusion follows from (9), not those six sample points.
