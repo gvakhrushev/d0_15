@@ -84,6 +84,29 @@ replace the same-execution valuation. The tested primary HJR preparation
 source remains nonzero, so this closes only that normalization-only repair,
 not the native resource-writer or Book03 gate.
 
+## Closed candidate: exact writing with the literal Golden palette
+
+The literal exact programme-writer candidate has now been decided in the
+[exact-writer obstruction](A4D_EXACT_RESOURCE_WRITER_OBSTRUCTION_2026_10_21.md).
+From initial density matrices and actual primitive Kraus matrices over
+`Q(sqrt(p),sqrt(2),i)`, the required pure aggregate programme cannot be
+prepared even at one original cost20/L4 primary point. In one genuine
+free coframe address its Choi coordinate ratio is `-s sqrt(rho_x)`, where
+`rho_x=128 n_x/(13*421)` has odd 421 valuation, outside that field.
+Retained work, heralding and almost-surely finite retries do not repair
+this pure-output obstruction. The mixed-probe extension is limited to
+finite execution trees. This rejects the specified palette/seed route;
+the general native writer remains undefined, not universally impossible.
+
+The same packet constructs the actual fixed vacuum Fourier128 input and
+computes the fixed processor's full cost-marked normalizer, plus the true
+range/cut source for any supplied complete writer. Those results do not
+construct the moving nonvacuum input or select Book03 Info. Increasing
+exact Golden word lengths for the same pure programme is therefore no
+longer a live construction gate. A different paid readout of even coframe
+moments, a generated additional input resource, or a controlled full-price
+approximation needs its own actual common-history map.
+
 ## Consumed result: the null source fibre is an additional readout test
 
 The [null two-field source-fibre classification](A4D_NULL_SOURCE_FIBRE_AND_READOUT_DESCENT_2026_10_21.md)
@@ -167,16 +190,22 @@ The equality D_y S_full = gamma_1 D J2 is the target only if all other independe
 
 ## Smallest next calculation
 
-Do not replay the fixed Bell processor or transitive-bank algebra. Start from
-that processor's exact \(|\Omega(y)\rangle\) interface and the already owned
-original finite field/material carrier. The next candidate must be an actual
-finite history from the common admitted D0 initial state, not a freely
-supplied field-dependent program state. Construct its exact preparation
-instrument and complete output tape. If the original admitted primitives do
-not determine a physical writer, record that interface as `UNDEFINED`; claim
-a scoped no-go only when a specified candidate is actually ruled out.
-For a candidate writer and its composed processor, compute, symbolically
-where possible:
+Do not replay the fixed Bell processor, transitive-bank algebra, or the
+now-excluded exact writer from the same `L`-valued seeds and palette. Any
+new candidate must identify the precise changed premise: a genuinely
+generated additional resource, a different proved input/readout using the
+required even coframe moments, or a paid finite-history approximation.
+Retain the original finite field/material carrier unless its complete
+priced transport is supplied. For an approximation, each finite stage
+must be an actual admitted history, and convergence of full-price secants
+must replace an unproved differentiable finite-word selector.
+
+Construct the candidate's actual preparation instrument and complete
+output tape from the common admitted D0 initial state. If the original
+admitted primitives do not specify such an input, keep that interface
+`UNDEFINED`; the arithmetic no-go above applies only within its stated
+contract. For a candidate writer and its composed processor, compute,
+symbolically where possible:
 
 1. the exact output state on the original primary section, including the
    programme, material, RIGHT/reference and fixed-collar resources;

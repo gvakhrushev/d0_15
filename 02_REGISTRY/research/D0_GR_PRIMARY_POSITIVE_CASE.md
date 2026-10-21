@@ -599,3 +599,37 @@ equations be transported to the finite 16+24+2 system and physical
 refinement. GR_closed=false.
 Archive hashes, source revisions and bounded replay evidence are recorded in
 the [integration provenance file](sources/d0_pr334_integration_2026-10-21/IMPORT_PROVENANCE.json).
+
+## Exact programme-writer obstruction and a constructive vacuum prefix
+
+The [exact-writer continuation](A4D_EXACT_RESOURCE_WRITER_OBSTRUCTION_2026_10_21.md)
+now rejects one specified input construction rather than leaving it as an
+unbuilt compiler. The actual cost20/L4 PF density has odd 421 valuation;
+one genuine free coframe address of the required full32 programme contains
+the relative amplitude `-s sqrt(rho_x)`, outside
+`Q(sqrt(p),sqrt(2),i)`. With initial densities and primitive raw Kraus maps
+over that field, no finite or almost-surely finite halted protocol can
+prepare the exact pure programme, including at the zero-wave primary point.
+A separate finite-tree statement excludes preserving the same linear
+creation-probe mean by a mixed resource. Neither result excludes a
+different proved even-moment interface, an explicitly generated additional
+quantum seed, or a paid approximation with controlled full-price secants.
+
+The actual vacuum Fourier128 material input does have an explicit exact
+finite preparation in the declared addressed factory interface. Its
+14 fair-bit factories, fixed phase/address computation and Golden CAR
+split retain the full Gram, all failures and their costs. This supplies
+the fixed vacuum prefix only. The downstream cost-marked normalizer and
+the conditional complete-writer Book range/cut source are also evaluated,
+with the necessary common-status charged-schedule condition retained.
+These results do not supply the moving nonvacuum writer or compulsory
+Book03 branch information, and do not remove the inherited HJR source.
+
+The all42 primary family remains consumed unchanged. The
+[common-map gate](A4D_NEXT_COMMON_MAP_CONSTRUCTION_GATE_2026_10_21.md) records
+this exact palette route as excluded and the general physical writer as
+undefined until an admitted construction is supplied. Independent
+analytic review and exact replay evidence are in the
+[writer packet](sources/d0_exact_resource_writer_2026-10-21/README.md).
+The candidate is closed at its stated scope; full GR is not established.
+`GR_closed=false`.

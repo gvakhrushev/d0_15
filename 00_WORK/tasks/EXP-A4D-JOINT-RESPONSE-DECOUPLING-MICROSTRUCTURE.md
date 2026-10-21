@@ -4119,3 +4119,73 @@ introduced. The exact remaining physical source is that of the actual
 input/Book/work/clock valuation difference. Its native stationary law,
 physical metric descent and refinement obligations remain open; the original
 field-minimum exclusion and `GR_closed=false` are unchanged.
+
+## 21 October continuation: close the actual writer and original valuation
+
+Phase: native realization on the existing constitutive/native-programme-v1
+owner. The input is `b60a111b`, including the fixed paid Bell processor and
+the corrected full128 operator-normalization calculation. The latter rules
+out a scalar-normalizer repair of its tested primary preparation row; it
+does not supply the resource writer or a full-price transport to the fixed
+processor. The user asks for actual closure, so the next bounded work must
+remove a physical input premise or reject a specified complete candidate,
+not merely rename its residual.
+
+Consume the fixed processor's exact aggregate programme and material-bank
+interfaces. Construct their preparation from the original admitted common
+initial state and literal Golden/record primitives, with every retained
+failure, controller, reference, elapsed step and preparation price. In
+parallel, trace the original Book03 definitions and owned information
+cocycles to determine the actual same-history valuation, rather than choosing
+an information law from the desired report. A separate check of the native
+stationary/admission rule asks which of these inputs are generated and which
+are genuinely independent, and whether the original HJR source can consume
+this execution. Preserve the ordered memory class and the actual active cut.
+
+The intended substitution is the supplied resource-state and uncomputed
+input-price premise of the previous joint theorem. The decisive check is
+the literal preparation output and complete first price jet on all original
+42 directions and admitted independent inputs, together with the actual
+Book03 branch/operator binding on that same tape. A precise undefined
+interface or an explicit failed candidate is recorded at its real scope;
+no new physical law, free information table, fitted counterterm or geometry
+campaign is authorized. Contributors write only disjoint scratch handoffs;
+the integrator owns repository changes under a new bounded source packet
+and this existing brief. Keep PR #334 Draft and `GR_closed=false` unless the
+unchanged complete physical obligations are actually proved.
+
+### Result: exact programme-writer candidate rejected on its actual input
+
+The [exact native writer result](../../02_REGISTRY/research/A4D_EXACT_RESOURCE_WRITER_OBSTRUCTION_2026_10_21.md)
+closes the literal Golden/Boolean programme-preparation candidate negatively.
+On the original cost20/L4 carrier, `rho_x=128 n_x/(13*421)` has odd
+421 valuation at every site. The required full32 programme has a
+same-address Choi coordinate ratio `-s sqrt(rho_x)` outside the enlarged
+palette field `Q(sqrt(p),sqrt(2),i)`. Initial density and actual raw Kraus
+entries in that field cannot produce the required pure programme, even
+with retained work, coarse heralding or almost-surely finite retries.
+The finite mixed-probe exclusion has the narrower finite-tree scope.
+This is a concrete rejection at one primary point, not a universal D0
+no-go or a rejection of controlled full-price approximation.
+
+The same proof gives a real exact fixed vacuum Fourier128 prefix: 14 paid
+H factories, the actual reversible phase/address computation and a Golden
+CAR split. Its full reference Gram and all site norms are retained;
+moving nonvacuum resources, physical address admission and their price
+remain separate. The companion operator proof establishes every marked
+processing-cost moment on the supplied processor and computes the true
+range/cut source of a genuine complete writer. Marked composition across
+writer statuses requires the same charged schedule or its actual full
+normalizer; status-dependent skipped costs are not silently scalarized.
+
+Both analytic results have independent scope review and narrow optimized
+replays. All historical scientific inputs are pinned at `b60a111b`;
+concurrent source/clock/valuation and complete-archive updates through
+`dda8f5d8` are preserved. The separate first-shell C1 archive intertwiner
+does not prepare this exact finite programme or supply its all42 input map.
+The [source packet](../../02_REGISTRY/research/sources/d0_exact_resource_writer_2026-10-21/README.md)
+contains frozen proofs, checkers and receipts. The common-map gate now
+excludes another exact compiler hunt for this same pure programme from
+the same seeds; any alternative must change a proved premise and carry
+its actual full price. Book03 information/admission and physical GR
+closure remain open; `GR_closed=false`, PR #334 stays Draft.
