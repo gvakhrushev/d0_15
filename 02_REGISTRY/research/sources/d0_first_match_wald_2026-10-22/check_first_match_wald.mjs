@@ -49,7 +49,9 @@ for(const {q,mu,cost,K} of tests){
   close(eCost,targetL*q.reduce((s,v,i)=>s+v*cost[i],0),2e-12,'every charged iid sample paid');
   close(entropy,targetL*H(q),2e-12,'full tape pointer entropy');
   close(kl,targetL*KL(q,mu),2e-12,'complete stopped KL');
-  close((eCost-entropy)/logphi,kl/logphi,5e-12,'strict original Golden code Kraft price relation for Golden reference');
+  if(q.length===2 && q.every(x=>x>0) && mu.every((x,i)=>Math.abs(x-Math.pow(p,cost[i]))<1e-14)) {
+    close((eCost-entropy)/logphi,kl/logphi,5e-12,'strict original Golden code Kraft price relation');
+  }
   const v=q.map((_,j)=>j===0?.1:j===1?-.1:0);
   const score=ph.map(a=>a.word.reduce((s,j)=>s+v[j]/q[j],0));
   const fisher=score.reduce((s,x,i)=>s+P[i]*x*x,0);
@@ -57,9 +59,9 @@ for(const {q,mu,cost,K} of tests){
   close(fisher,targetL*f1,2e-10,'complete stopped Fisher factor');
   const scoremean=score.reduce((s,x,i)=>s+P[i]*x,0);
   close(scoremean,0,3e-11,'score unbiased');
-  if(q.length===2 && mu[0]===p){
+  if(q.length===2 && mu.every((x,i)=>Math.abs(x-Math.pow(p,cost[i]))<1e-14)){
     for (const rec of ph){
-      const nativeCharge=rec.word.reduce((acc,b)=>acc+1+b,0);
+      const nativeCharge=rec.word.reduce((acc,b)=>acc+cost[b],0);
       const prior=Math.pow(p,nativeCharge);
       const real=rec.word.reduce((s,b)=>s*mu[b],1);
       close(real,prior,2e-12,'actual native 0/10 Kraft charge exact');
