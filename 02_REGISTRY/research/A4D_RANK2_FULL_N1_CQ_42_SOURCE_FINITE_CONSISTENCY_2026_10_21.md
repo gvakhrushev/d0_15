@@ -88,3 +88,30 @@ Inputs pinned at their Git blob SHA:
 - sources/d0_star_rank2_seam_2026-10-21/check_star_rank2_seam.py (all six finite based faces and independent first field directions).
 
 The source result and same-price sign theorem are mathematical; original full physical H+J+R, Book03 absolute Info/work, moving field writer, clock/collar admission, independent upstream equations, full connected gauge root and generic GR remain OPEN. GR_closed=false.
+
+
+## 7. THE GEOMETRIC CORRECTION MUST BE A COVARIANT TIME-SLAB SOLVE, NOT 24 ISOLATED LINK ROOTS
+
+The actual finite spatially homogeneous based (time,spatial) plaquette with U_time=I has P_0i(t)=U_i(t+h) U_i(t)^-1. Perturb BOTH endpoint links from their actual values by h^2 Z(t) on the LEFT. For arbitrary noncommuting matrices the exact first differential, normalized by h^2, is
+
+  delta P_0i(t) / h^2 = Z(t+h) P_0i(t) - P_0i(t) Z(t).       (7.1)
+
+This is a COVARIANT forward difference. If Z(t+h)=Z(t)+h Z'(t)+O(h^2) and P_0i(t)=I+h F(t)+O(h^2), the right side is h[Z'(t)+[Z(t),F(t)]]+O(h^2). Consequently an O(h) correction to the original physical spin omega, implemented as U_i -> exp(h^2 Z) U_i, perturbs the curvature density at O(h) PROVIDED the correction is coherently continued across its temporal neighbors. An isolated one-site spin correction with Z(t+h)=0 instead creates the O(1) normalized curvature spike -P Z(t) and cannot be promoted to a global finite solution by a local inverse theorem.
+
+This is exactly the structural reason the original one-site 24x24 nonzero Cartan determinant does not independently prove a root on a whole finite lattice with a fixed collar. It is NOT a failure of the original 24 Cartan rank, but an omitted site-to-site compatibility condition in its application.
+
+The companion original six-face numerical checker evaluates the two options on the SAME two-field rank-two background (all24 central link gradients, all16 coframe gradients):
+
+| h | local isolated link corrector: max coframe | coherent shared three-time-slice corrector: max coframe |
+|---:|---:|---:|
+| 1/8 | 0.7787523 | 0.06451725 |
+| 1/16 | 0.7788098 | 0.03403007 |
+| 1/32 | 0.7788066 | 0.01745810 |
+| 1/64 | 0.7788027 | 0.00884070 |
+
+In BOTH columns all 24 central link equations are solved to <=1e-9 and the spin adjustment is O(h). The isolated correction creates a NONVANISHING coframe error; the coherent correction retains the desired O(h) scale. This is a bounded TEST, not an all-slab theorem: neighboring link equations were not solved and the true full N=1 nonlinear scalar1 row is still nonzero O(h). The prior 42-source consistency result is preserved.
+
+Exact analytic covariant-difference identity and the bounded 24-link root controls:
+  sources/d0_star_rank2_seam_2026-10-21/check_whole_slab_cartan_compatibility.py
+
+The REAL next source inverse must be constructed on the simultaneous finite gauge-fixed coframe+link+matter slab, satisfying all anchored-face predecessor equations and the original collar. One-site Cartan invertibility or Riemannian continuum hyperbolic intuition is not a substitute for that finite operator with its actual gauge/constraint modes. Do not fit a compensating source; GR_closed=false.
