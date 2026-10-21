@@ -66,9 +66,10 @@ def actual_scene(ws, with_source=False):
     heat_eig = np.exp(-beta*(1-vals))
     heat_eig /= heat_eig.sum()
     # T=D^-1/2 S D^1/2, and m(T) has the same similarity.
-    Mt = (vecs * (heat_eig - 2*z*vals/F_eig)) @ vecs.T
+    spectral_weights = heat_eig - 2*z*vals/F_eig
+    Mt = np.einsum('ik,k,jk->ij',vecs,spectral_weights,vecs,optimize=False)
     M = Mt * np.sqrt(d[None,:]/d[:,None])
-    TM = T@M
+    TM = np.einsum('ik,kj->ij',T,M,optimize=False)
     omega = M[j,i]/d[i]+M[i,j]/d[j]-TM[i,i]/d[i]-TM[j,j]/d[j]
     return price, vals, omega
 
