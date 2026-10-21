@@ -50,7 +50,7 @@ for(const {q,mu,cost,K} of tests){
   close(entropy,targetL*H(q),2e-12,'full tape pointer entropy');
   close(kl,targetL*KL(q,mu),2e-12,'complete stopped KL');
   if(q.length===2 && q.every(x=>x>0) && mu.every((x,i)=>Math.abs(x-Math.pow(p,cost[i]))<1e-14)) {
-    close((eCost-entropy)/logphi,kl/logphi,5e-12,'strict original Golden code Kraft price relation');
+    close(eCost-entropy/logphi,kl/logphi,5e-12,'strict original Golden code Kraft price relation');
   }
   const v=q.map((_,j)=>j===0?.1:j===1?-.1:0);
   const score=ph.map(a=>a.word.reduce((s,j)=>s+v[j]/q[j],0));
