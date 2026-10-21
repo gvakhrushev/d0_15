@@ -145,3 +145,44 @@ An independently executed local scipy least_squares replay, seeded only by the O
 The actual based six-face f values at the five time anchors are about (-0.02956918,-0.00294534,-0.00168917,-0.00080261,-0.00022304); BOTH real CAR scalar gradients remain present and q is generically nonzero at those anchors. No f=q=0 ansatz or old 12-source pureboost test was imposed.
 
 The compact locally executed source receipts for n=3 uniform, n=3 PF[1,2,1], n=4 uniform and n=5 uniform, including exact actual site f,q and the gauge-fixed Jacobian spectra, are preserved in [RESULT_TEMPORAL_GAUGE_MULTISLAB_2026_10_22.json](sources/d0_star_rank2_seam_2026-10-21/RESULT_TEMPORAL_GAUGE_MULTISLAB_2026_10_22.json). The reproduced gauge-fixed checker now accepts --intervals 3, 4 or 5; only the original complete N1 source and the actual allowed gauge-slice field coordinates are used. The executable has its own original input Git-blob checks and an independent full ENTROPY-PRICE derivative control. Exact mathematical existence/interval validation, actual spatial descendant PF profiles and continuum uniformity remain open. The decreasing measured reduced sigma_min (n3:0.001226, n4:0.000525, n5:0.000273) is positive on these tested finite grids, but cannot be promoted to a mesh-independent bound. GR_closed=false.
+
+
+## 7. EXACT temporal block tridiagonality of the SAME gauge-reduced native N1 Euler map
+
+The original chosen independent-copy cap-one N1 price is not an arbitrary functional of all time nodes; it is the finite sum of the original local two-query/scene click and full retained entropy at each anchored time cell:
+
+  S=const + sum_{j=0}^{n-1} rho_j F_N(x_j,y_j),
+  x_j=-tau f_star(e_j,U_j,U_(j+1))/rho_j,
+  y_j=+tau q_CAR(e_j,psi_j,psi_(j+1))/rho_j.
+
+The actual based temporal plaquette U0(j) Ui(j+1) U0(j)^-1 Ui(j)^-1 has exactly one forward time neighbor, and all spatial faces are local to j. The two real CAR scalar first gradients use exactly psi(j),psi(j+1), no independent nonlocal physical time oracle. Thus each original complete price term S_j has true field support {j,j+1}. Its independently varied Euler source at a free interior time node j is D_{x_j}S_{j-1}+D_{x_j}S_j. Consequently, for ANY original gauge-fixed admissible field values (not only the numerical root),
+
+  BOX: partial E_j / partial x_k = 0 whenever |j-k|>1.     (7.1)
+
+This is an EXACT structural theorem for the same local N1 CQ programme, independent of smoothness, stationarity, f=q=0, original spatial PF jumps or continuum Einstein theory. It does NOT extend automatically to a globally coupled AF/oldRIGHT/clock Book03 price with correlations across nonneighbor times: such a complete physical source must be differentiated separately.
+
+Under the exact temporal Lorentz quotient (5), the true source blocks have sizes
+
+  d_j = 36 for j=1,...,n-2; d_(n-1)=42,
+
+because precisely the six original U0(j) left-link frame directions are eliminated at each of the earlier interior sites. Hence the original gauge-reduced \((36n-30)\times(36n-30)\) Hessian/source Jacobian has the actual block-tridiagonal structure
+
+  J = diag(A_j) + upper(B_j) + lower(C_j).
+
+No block diagonality, decoupled single time-site physics, diagonal dominance or positive Hessian is assumed. The exact finite block Thomas/Schur recursion is
+
+  S_1=A_1,
+  S_(j+1)=A_(j+1)-C_j S_j^-1 B_j,                           (7.2)
+
+whenever these actual indefinite invertible intermediate pivots exist. A right-hand side F is then solved by an original forward/backward substitution retaining every adjacent time link. This gives an O(n d^3), not O(n^3 d^3), bounded-size block solver and makes **which quantitative inverse bounds must be proved** explicit. If any S_j is singular or requires coupled pivoting, the unpivoted formula is not a theorem of invertibility.
+
+[The actual native block-SCHUR checker](sources/d0_star_rank2_seam_2026-10-21/check_temporal_block_schur_source.py) differentiates the pinned ORIGINAL finite 16+24+2 N1 source (not a surrogate) on gauge-fixed n4/n5 Cauchy seeds. All analytically forbidden off-tridiagonal blocks are numerical ZERO exactly in those tests. At n4: blocks (36,36,42), max intermediate Schur condition ~589370, dense-vs-block solution max error 9.19e-11. At n5: blocks (36,36,36,42), max Schur condition ~1344607, solution error 3.71e-10. No uniform time-step inverse follows from these finite tests: the intermediate conditioning is **bad**, so a true interval Newton-Krawczyk proof should work with genuine block/source-adapted norms and verified pivots, not with an optimistic unbounded pseudo-inverse.
+
+The combined exact structural route is now:
+
+  actual time-local N1 CQ PRICE + exact 6(n-2) true original frame symmetry
+    -> gauge source of size 36n-30 with exactly nearest-neighbor time support
+    -> genuine finite block Schur/Green operator with 36/42 site blocks
+    -> future quantitative validated-source/root enclosure.
+
+This is an actual consuming architecture theorem, not a new detector or physical selected Book03. GR_closed=false.
