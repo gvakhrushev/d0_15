@@ -1,0 +1,180 @@
+{
+  "status": "PASS_FULL4D_TRUE_ENTROPY_PRICE_GRADIENT_AND_JACOBIAN_CONTROLS",
+  "native_histories": 75025,
+  "native_sites": 4096,
+  "forward_cells": 2401,
+  "interior_scalar_unknowns": 2592,
+  "all_four_dimensional_dirichlet_collars_fixed": true,
+  "mp_dps": 80,
+  "solver_root": {
+    "iterations": 4,
+    "source_inf_before": 0.0015878683732417631,
+    "source_inf_after": 4.99860569602717e-15,
+    "species_source_inf_after": [
+      4.99860569602717e-15,
+      3.9268718485252485e-15
+    ],
+    "max_field_value_correction": 7.877157220895908e-05,
+    "max_resulting_nonlinear_q": 0.00018219949324060382,
+    "native_pf_minmax": [
+      0.21838053982005998,
+      2.347590803065645
+    ]
+  },
+  "price_gradient": {
+    "initial": {
+      "max_abs_price_derivative": 4.773057646477625e-13,
+      "max_normalized_euler": 0.0015878683721755442,
+      "max_delta_vs_solver_source": 8.171918626813032e-12,
+      "solver_source_inf": 0.0015878683732417631
+    },
+    "root": {
+      "max_abs_price_derivative": 3.8523448617196874e-21,
+      "max_normalized_euler": 1.2815719016408353e-11,
+      "max_delta_vs_solver_source": 1.2816455027053145e-11,
+      "solver_source_inf": 4.99860569602717e-15
+    }
+  },
+  "representative_price_secants": [
+    {
+      "state": "initial",
+      "variable": 0,
+      "site": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "species": 0,
+      "abs_secant_delta": 4.459942780442716e-22
+    },
+    {
+      "state": "initial",
+      "variable": 648,
+      "site": [
+        4,
+        1,
+        1,
+        1
+      ],
+      "species": 0,
+      "abs_secant_delta": 2.60412178060695e-22
+    },
+    {
+      "state": "initial",
+      "variable": 1295,
+      "site": [
+        6,
+        6,
+        6,
+        6
+      ],
+      "species": 0,
+      "abs_secant_delta": 1.952769309132406e-22
+    },
+    {
+      "state": "initial",
+      "variable": 1728,
+      "site": [
+        3,
+        1,
+        1,
+        1
+      ],
+      "species": 1,
+      "abs_secant_delta": 4.447145382596948e-23
+    },
+    {
+      "state": "initial",
+      "variable": 2591,
+      "site": [
+        6,
+        6,
+        6,
+        6
+      ],
+      "species": 1,
+      "abs_secant_delta": 1.7915121914473185e-24
+    },
+    {
+      "state": "root",
+      "variable": 0,
+      "site": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "species": 0,
+      "abs_secant_delta": 4.455998690925646e-22
+    },
+    {
+      "state": "root",
+      "variable": 648,
+      "site": [
+        4,
+        1,
+        1,
+        1
+      ],
+      "species": 0,
+      "abs_secant_delta": 2.613556893922145e-22
+    },
+    {
+      "state": "root",
+      "variable": 1295,
+      "site": [
+        6,
+        6,
+        6,
+        6
+      ],
+      "species": 0,
+      "abs_secant_delta": 1.9599652819781452e-22
+    },
+    {
+      "state": "root",
+      "variable": 1728,
+      "site": [
+        3,
+        1,
+        1,
+        1
+      ],
+      "species": 1,
+      "abs_secant_delta": 4.420743186262872e-23
+    },
+    {
+      "state": "root",
+      "variable": 2591,
+      "site": [
+        6,
+        6,
+        6,
+        6
+      ],
+      "species": 1,
+      "abs_secant_delta": 2.02892031611689e-24
+    }
+  ],
+  "sparse_jacobian_directional_secants": [
+    {
+      "state": "initial",
+      "step": 1e-05,
+      "directional_relative_error": 8.030802478987784e-09
+    },
+    {
+      "state": "root",
+      "step": 1e-05,
+      "directional_relative_error": 7.852862166727866e-09
+    }
+  ],
+  "scope": {
+    "fixed_geometry_matter_subsystem_only": true,
+    "coframe16_root": false,
+    "proper_link24_root": false,
+    "compulsory_Book03_price_selected": false,
+    "uniform_refinement_proved": false,
+    "physical_GR_closed": false
+  }
+}
