@@ -59,3 +59,13 @@ The nonlinear term involving \(K''(0)\) therefore vanishes on full Jacobi fields
 ## 5. Boundary
 
 The result lives in the continuum dictionary of the already constructed weighted price. It does not select the physical price, does not generate the continuum variations from the finite lattice, and does not solve the independent upstream equations. All physical selection gates remain open.
+
+The full derivation, exact finite-source substitution, independent review, and
+checker are in
+[`WEIGHTED_WARD_AND_DUST.md`](sources/d0_causal_native_weighted_synthesis_2026-10-21/weighted_dynamics/WEIGHTED_WARD_AND_DUST.md),
+[`REVIEW.md`](sources/d0_causal_native_weighted_synthesis_2026-10-21/weighted_dynamics/REVIEW.md),
+and [`check_weighted_ward.py`](sources/d0_causal_native_weighted_synthesis_2026-10-21/weighted_dynamics/check_weighted_ward.py).
+The supplied synthesis is retained in the package handoff folder with only
+trailing spaces removed; the note there pins the original attachment hash.
+Its historical publication-status sentence is intake metadata; current
+repository status is determined by the PR that carries these files.
