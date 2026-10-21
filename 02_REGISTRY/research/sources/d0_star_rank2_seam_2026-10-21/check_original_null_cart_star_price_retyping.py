@@ -147,7 +147,14 @@ assert s.simplify(kn-kc)==0
 # hence K_C(t)=K_N(t) pointwise and for EVERY higher derivative.
 t,ss,PP=s.symbols('t ss PP')
 sC=-ss;PC=-PP
-assert s.simplify(sC- t/ac*sp_diff_y(FC,sC,(PC/ac)*t))==0 if False else True
+yn=(PP/an)*t
+yc=(PC/ac)*t
+eqn1=PP-s.diff(FN,x).subs({x:ss,y:yn})
+eqn2=ss-(t/an)*s.diff(FN,y).subs({x:ss,y:yn})
+eqc1=PC-s.diff(FC,x).subs({x:sC,y:yc})
+eqc2=sC-(t/ac)*s.diff(FC,y).subs({x:sC,y:yc})
+assert s.simplify(eqc1+eqn1)==0
+assert s.simplify(eqc2+eqn2)==0
 assert s.simplify(
     (FC.subs({x:sC,y:(PC/ac)*t})-PC*sC)-
     (FN.subs({x:ss,y:(PP/an)*t})-PP*ss)
