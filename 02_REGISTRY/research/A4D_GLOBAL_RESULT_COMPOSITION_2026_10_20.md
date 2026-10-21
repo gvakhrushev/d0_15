@@ -444,6 +444,17 @@ Each route must retain its own field-writer/variation law and full source.
 The given formulas decide proposed identifications; they are not values
 to assign to Info after observing the desired source.
 
+One proposed shortcut for the N=1 primitive has now been eliminated
+exactly: at the aligned-observer point, the existing two-step chronological
+CAR feedback effect has maximum eigenvalue `4p^3`, while the retained N=1
+query effect has an eigenvalue `4p^3(1+p^6)>4p^3`. Direct same-fugacity
+isometric effect compression therefore fails before first-jet matching;
+their raw determinant factors differ as well. This is only a scoped
+exclusion of that effect map, not a statement about the complete Book/CQ
+price, physical admission, or other paid field-dependent encoders. The
+remaining N=1 completion is still one admitted common
+field→CAR→report→Book03 map with its actual independent-input equations.
+
 **Proved here:** a controlled operational geometry recovery and exact
 composition requirements for its full valuation. **Still open:** the
 compulsory native valuation/continuation, its actual variation image,

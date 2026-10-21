@@ -3543,3 +3543,23 @@ Q8 monitored return/Info result are retained with their own carriers and
 conditions; neither supplies a missing source for N=1 by analogy. The scoped
 source checkers for these results will be run on the final integrated head.
 GR_closed=false.
+
+### 21 October continuation: exact two-step CAR versus the N=1 effect
+
+The bounded exact check composes the cap-one query effect and the existing
+full16 chronological CAR feedback effect on their source-pinned carriers.
+At the regular aligned-observer point `c=1`, the query effect has eigenvalues
+`L=4p^3` and `M=L(1+p^6)`, while the complete CAR pencil is
+`det(I-zF)=(1-zL)^4`, hence its spectrum is `L` four times and zero twelve
+times. Therefore the direct isometric-compression candidate fails already
+at the value level. The raw determinant mismatch is recorded separately
+from the two different complete price functionals.
+
+The exact bounded checker and its source pins live in
+`sources/d0_physical_cap1_execution_composition_2026-10-21/car_effect/` and
+are included in the existing cap-one aggregate replay. This closes only the
+direct same-event/same-fugacity isometric-effect shortcut. A moving
+encoder/decoder, leakage, heralded execution, compulsory Book03 valuation,
+independent inputs and the common 42-direction physical map remain open.
+Do not add a physical selector, reset or new price to bypass the spectrum.
+`GR_closed=false`.

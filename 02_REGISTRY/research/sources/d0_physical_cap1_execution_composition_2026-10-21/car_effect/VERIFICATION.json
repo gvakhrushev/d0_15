@@ -1,0 +1,49 @@
+{
+  "status": "PASS",
+  "input_commit": "92c00ccbf39e6e21e4383f7a7b573ab7c7c6f1be",
+  "checks": [
+    "same_source_snapshot",
+    "source_sha:02_REGISTRY/research/A4D_NATIVE_RECORD_METRIC_CHRONOLOGY.md",
+    "source_blob:02_REGISTRY/research/A4D_NATIVE_RECORD_METRIC_CHRONOLOGY.md",
+    "working_source_matches_pin:02_REGISTRY/research/A4D_NATIVE_RECORD_METRIC_CHRONOLOGY.md",
+    "source_sha:02_REGISTRY/research/certificates/a4d_native_record_metric_chronology_check.py",
+    "source_blob:02_REGISTRY/research/certificates/a4d_native_record_metric_chronology_check.py",
+    "working_source_matches_pin:02_REGISTRY/research/certificates/a4d_native_record_metric_chronology_check.py",
+    "source_sha:02_REGISTRY/research/certificates/a4d_native_record_metric_chronology_certificate.json",
+    "source_blob:02_REGISTRY/research/certificates/a4d_native_record_metric_chronology_certificate.json",
+    "working_source_matches_pin:02_REGISTRY/research/certificates/a4d_native_record_metric_chronology_certificate.json",
+    "consumed_car_receipt_status",
+    "consumed_car_receipt_control_count",
+    "consumed_car_receipt_proof_hash",
+    "consumed_car_receipt_checker_hash",
+    "consumed_car_original_readout_scope",
+    "consumed_car_full16_scope",
+    "cap_one_query_checker_status",
+    "cap_one_query_eigenvalue_control_present",
+    "car_aligned_full16_pencil",
+    "car_aligned_active_blocks_have_value_L",
+    "car_aligned_remaining_blocks_are_zero",
+    "query_plus_effect_eigenvalue_M",
+    "query_minus_effect_eigenvalue_L",
+    "strict_effect_spectral_gap",
+    "golden_probability_lower_bound",
+    "golden_probability_upper_bound",
+    "L_lower_bound_for_compression",
+    "L_upper_bound_for_compression",
+    "determinant_gap_exact_factorization",
+    "determinant_gap_rational_lower_bound",
+    "raw_two_band_and_car_determinants_relation"
+  ],
+  "check_count": 31,
+  "target_effect_spectrum": [
+    "L=4*p^3",
+    "M=4*p^3*(1+p^6)"
+  ],
+  "car_effect_spectrum": [
+    "L=4*p^3 (multiplicity 4)",
+    "0 (multiplicity 12)"
+  ],
+  "strict_gap": "M-L=4*p^9>0",
+  "raw_determinant_relation": "det_query-det_CAR=(1-z*L)*z*(L*(2-p^6)-3*z*L^2+z^2*L^3)>0",
+  "scope": "same-z direct isometric effect compression only; no Book03 price identity, physical admission, or GR closure"
+}

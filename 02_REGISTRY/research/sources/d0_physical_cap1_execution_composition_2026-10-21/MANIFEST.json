@@ -3,7 +3,7 @@
   "files": [
     {
       "path": "README.md",
-      "sha256": "b7c091b96ed53276b7c121724d499a0e296bfbef1ff89f6b301583a41af53e7f"
+      "sha256": "1a91e9cbf25a5f01cc559e56804bcaef6846ccf43ba07debe04058dc376c1237"
     },
     {
       "path": "book_binding/PROOF.md",
@@ -28,6 +28,22 @@
     {
       "path": "book_binding/check_exact_cq_book_binding.py",
       "sha256": "ba8104d25144a486f5c3b3292435a96c0ec7f066f650bfd2d43fadee6b88cb06"
+    },
+    {
+      "path": "car_effect/PROOF.md",
+      "sha256": "a63a0f46b367ba01ec820908209ec6f0807929c90a806b5883207bf30a94c080"
+    },
+    {
+      "path": "car_effect/SOURCE_PINS.json",
+      "sha256": "8f0476392ba2803f750f3c9e16c6312ef421d93b4304dee69e35ad9f7dc57139"
+    },
+    {
+      "path": "car_effect/VERIFICATION.json",
+      "sha256": "6f6f7c34ad1c692da2675ff6b1c32d5d7506d592a677a91b6cd3ab1c51787846"
+    },
+    {
+      "path": "car_effect/check_same_effect_spectrum.py",
+      "sha256": "ed931c62519fdaad832b5dd51b902a3cfe6142218a4c564c8c5160979f4d720f"
     },
     {
       "path": "independent_input/PROOF.md",

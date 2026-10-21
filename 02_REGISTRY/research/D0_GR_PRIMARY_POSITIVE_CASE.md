@@ -407,3 +407,14 @@ requires control of \(\sup_z|\tau_hY_z/\rho_z|\). The separate Julia
 positive-pair tester, the coherent cap-two preparation execution and the
 Q8 monitored return process are not identified with this N=1 carrier.
 GR_closed=false.
+
+The existing two-step chronological CAR candidate has also been tested at
+the aligned-observer value. Its full leakage effect has spectrum
+`{4p^3 (four times), 0 (twelve times)}`, while the cap-one retained query
+effect has eigenvalues `4p^3` and `4p^3(1+p^6)`. Since the latter exceeds
+`4p^3`, no direct same-event, same-fugacity isometric compression identifies
+these effects. This excludes that concrete shortcut at the value level; it
+does not exclude a paid moving encoder/decoder or another admitted common
+map. The raw determinant factors also differ, while their complete price
+functionals are not identified. See the exact source-pinned check in
+[`car_effect/PROOF.md`](sources/d0_physical_cap1_execution_composition_2026-10-21/car_effect/PROOF.md).

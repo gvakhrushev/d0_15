@@ -5,10 +5,11 @@
     "moving_query": 19,
     "book_binding": 12,
     "independent_input": 20,
+    "car_effect": 3,
     "restricted_car": 5
   },
-  "unique_source_files": 47,
-  "frozen_artifact_files": 19,
+  "unique_source_files": 49,
+  "frozen_artifact_files": 23,
   "narrow_controls": {
     "moving_query": {
       "status": "PASS",
@@ -22,11 +23,15 @@
       "status": "PASS",
       "checks": 21
     },
+    "car_effect": {
+      "status": "PASS",
+      "checks": 31
+    },
     "restricted_car": {
       "status": "PINNED_SCOPE_ONLY",
       "recorded_exact_controls": 33,
       "replayed": false
     }
   },
-  "scope": "same cap-one algebra/source composition plus a source-pinned existing restricted CAR result; no physical admission or GR closure"
+  "scope": "same cap-one algebra/source composition, narrow CAR effect-spectrum exclusion, and a source-pinned existing restricted CAR result; no physical admission or GR closure"
 }

@@ -14,6 +14,7 @@ GROUPS={
     "moving_query":("SOURCE_PINS.json","files","VERIFICATION.json","check_native_query_value_and_jet.py",17),
     "book_binding":("SOURCE_PINS.json","sources","VERIFICATION.json","check_exact_cq_book_binding.py",17),
     "independent_input":("SOURCE_PINS.json","sources","VERIFICATION.json","check_upstream_reaction.py",21),
+    "car_effect":("SOURCE_PINS.json","sources","VERIFICATION.json","check_same_effect_spectrum.py",31),
     "restricted_car":("SOURCE_PINS.json","sources",None,None,None),
 }
 
@@ -64,7 +65,7 @@ def run():
         check_proc=subprocess.run([sys.executable,str(directory/script)],cwd=ROOT,check=True,capture_output=True,text=True)
         result=json.loads(check_proc.stdout)
         assert result["status"]=="PASS", f"narrow checker failed: {name}"
-        if name=="moving_query": count=len(result["checks"])
+        if name in ("moving_query","car_effect"): count=len(result["checks"])
         elif name=="book_binding": count=result["checks"]
         else: count=result["check_count"]
         assert count==expected_count, f"wrong check count from {name}: {count}"
@@ -76,7 +77,7 @@ def run():
       "unique_source_files":len(pinned),
       "frozen_artifact_files":len(manifest["files"]),
       "narrow_controls":controls,
-      "scope":"same cap-one algebra/source composition plus a source-pinned existing restricted CAR result; no physical admission or GR closure",
+      "scope":"same cap-one algebra/source composition, narrow CAR effect-spectrum exclusion, and a source-pinned existing restricted CAR result; no physical admission or GR closure",
     }
 
 if __name__=="__main__":

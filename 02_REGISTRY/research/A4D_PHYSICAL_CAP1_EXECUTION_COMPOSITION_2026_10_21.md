@@ -103,7 +103,7 @@ dS_1=d(C_{\rm pre}-H_{\rm pre})+(\kappa-\beta h(q))d\alpha+\alpha d\kappa-\alpha
 2. на её полном record $E_{\rm val}=0$, $DE_{\rm val}=0$, либо эквивалентная реальная Book03 $C-I$ идентификация выводит нужную абсолютную нормировку;
 3. pullback полной цены стационарен по всем admitted $\zeta$ с реакциями реальных ограничений и удовлетворяет \(D_yS_{\rm full}=\gamma_1DJ_2\) на всех42 исходных направлениях.
 
-Существующий репозиторий уже даёт положительный CQ-корень, точное значение query-оператора и отдельную подвижную 16D CAR-карту, точную цену реакции фиксированного rank-two input-cut, формулы Book03-valuation defect и решённое уравнение полного свободного input-orbit. Но **нет общей карты \(\mathfrak P\)**, связывающей эти объекты: нет принадлежащего отображения от исходных 42 CQ-направлений к restricted $(q,m)$-переходу и затем к 8D query/report-эффектам, нет его физического допуска и единой абсолютной оценки листьев/clock/cut/Book03-Info. Именно такой commuting field→CAR→report→complete-price map вместе с действительными независимыми input equations требуется для одного физического исполнения. Три проверенных части задают точные локальные условия этой композиции; они не доказывают, что она построена. Никакого нового поля, Info-закона, compensating term, selector или свободного reset не введено. `GR_closed=false`.
+Существующий репозиторий уже даёт положительный CQ-корень, точное значение query-оператора и отдельную подвижную 16D CAR-карту, точную цену реакции фиксированного rank-two input-cut, формулы Book03-valuation defect и решённое уравнение полного свободного input-orbit. Но **нет общей карты \(\mathfrak P\)**, связывающей эти объекты: нет принадлежащего отображения от исходных 42 CQ-направлений к restricted $(q,m)$-переходу и затем к 8D query/report-эффектам, нет его физического допуска и единой абсолютной оценки листьев/clock/cut/Book03-Info. Именно такой commuting field→CAR→report→complete-price map вместе с действительными независимыми input equations требуется для одного физического исполнения. Три исходных проверенных блока задают точные локальные условия этой композиции; ни они, ни новое спектральное исключение не доказывают, что общий map построен. Никакого нового поля, Info-закона, compensating term, selector или свободного reset не введено. `GR_closed=false`.
 
 ### Узкая ветвь CAR-композиции: одношаговое изометрическое сжатие исключено
 
@@ -135,6 +135,30 @@ field-dependent primitive, разные входной/выходной срез
 heralded programme. Любой такой маршрут должен вывести свой полный эффект,
 failure/work ledger и Book03 цену на том же исполнении.
 
+### Точная спектральная проверка двухшагового chronological CAR
+
+Проверен и следующий конкретный кандидат: прямое представление исходного
+двухмерного cap-one leakage effect как isometric compression полного
+chronological CAR effect при том же событии и `z=2^-20`. На совпадающих
+наблюдателях `c=1` собственный полный 16-компонентный CAR pencil даёт
+`det(I-zF_CAR)=(1-zL)^4`, `L=4p^3`; из `0<=F_CAR<=I` следует спектр
+`F_CAR={L,L,L,L,0,...,0}`. Целевой cap-one effect на retained 2D входе
+имеет точные собственные значения `M=4p^3(1+p^6)` и `L`, причём
+`M-L=4p^9>0`. Поэтому норма любого изометрического сжатия CAR-эффекта
+не выше `L`; оно не может совпасть с целевым эффектом даже по значению.
+Это строгое исключение прямой общей-effect подстановки; оно не
+отвергает подвижный encoder/decoder, leakage, иной отчёт или дополнительную
+оплаченную стадию.
+
+Для тех же `z` и события сырые determinant factors тоже различны:
+`(1-zM)(1-zL)` против `(1-zL)^4`. Их строгая разность и точный спектральный
+аргумент воспроизводятся в
+[узком пакете](sources/d0_physical_cap1_execution_composition_2026-10-21/car_effect/PROOF.md).
+Это не отождествляет chronological `-log det` с полным cap-one `Cost-Info`.
+Исходный CAR checker receipt сохранён с исходной привязкой; новая проверка
+повторяет его точный aligned-pairing pencil и целевой query effect, не
+перегенерируя старый 469-control receipt. `GR_closed=false`.
+
 ## Проверка и provenance
 
-Три новых локальных exact controls: query/encoding — 17 алгебраических проверок; Book valuation — PASS17 при 80 знаках; independent input — PASS21 exact matrix controls. Агрегатор проверяет их, provenance пакета и пять source pins уже существующего restricted CAR/field-instrument результата. Для этой старой карточки он валидирует записанный receipt и точные исходники, не повторяя остальные дорогие controls. Он не запускает старые root, Lean или continuum suites. Узкое следствие выше непосредственно композирует source-owned moving-cut lemma с CAR-frame identity; оно не заявляет новый checker или physical admission. Самостоятельные доказательства лежат рядом: [подвижный запрос](sources/d0_physical_cap1_execution_composition_2026-10-21/moving_query/PROOF.md), [Book03](sources/d0_physical_cap1_execution_composition_2026-10-21/book_binding/PROOF.md), [входные уравнения](sources/d0_physical_cap1_execution_composition_2026-10-21/independent_input/PROOF.md), [restricted native CAR](sources/d0_physical_cap1_execution_composition_2026-10-21/restricted_car/SCOPE.md).
+Агрегатор проверяет provenance пакета и пять source pins уже существующего restricted CAR/field-instrument результата. Для этой старой карточки он валидирует записанный receipt и точные исходники, не повторяя остальные дорогие controls. Четыре локальных replay включают query/encoding — 17 алгебраических проверок; Book valuation — PASS17 при 80 знаках; independent input — PASS21 exact matrix controls; effect spectrum — 31 exact/source-pin controls. Он не запускает старые root, Lean или continuum suites. Узкое следствие выше непосредственно композирует два source-owned эффекта при одном явно заданном isometric map; оно не заявляет новый physical admission. Самостоятельные доказательства лежат рядом: [подвижный запрос](sources/d0_physical_cap1_execution_composition_2026-10-21/moving_query/PROOF.md), [Book03](sources/d0_physical_cap1_execution_composition_2026-10-21/book_binding/PROOF.md), [входные уравнения](sources/d0_physical_cap1_execution_composition_2026-10-21/independent_input/PROOF.md), [restricted native CAR](sources/d0_physical_cap1_execution_composition_2026-10-21/restricted_car/SCOPE.md), [spectrum comparison](sources/d0_physical_cap1_execution_composition_2026-10-21/car_effect/PROOF.md).
