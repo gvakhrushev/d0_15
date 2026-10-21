@@ -39,3 +39,12 @@ The r=1 local-cell cancellation to O(h^2) is SPECIAL, not a global error estimat
     OPENBLAS_NUM_THREADS=1 python3 02_REGISTRY/research/sources/d0_star_rank2_seam_2026-10-21/check_global_star_pf_jump.py
 
 The checker proves its actual spatial boost commutator, symbolic leading coefficient and original sigma-minus Golden derivative, and checks the nonzero PF-jump limits using finite original CAR matter currents. The physical same-programme PF address dictionary, Book valuation, all42 exact joint finite roots and uniform compatible refinement remain separate.
+
+
+## Exact original six-face unimodular double-zero projection
+
+[Theorem](../../A4D_RANK2_EXACT_FINITE_DOUBLE_ZERO_UNIMODULAR_PF_SYNTHESIS_2026_10_21.md) and [checker](check_exact_null_sheet_unimodular.py) now construct a NONEMPTY exact finite rank-two common \`f_star=q_CAR=0\` sheet. The original six-face star scalar is an exact quadratic equation in one positive original coframe balance \`v\`, with positive derivative at \`v=1\` on the positive compact curved carrier. The unique positive \`v_h=1+O(h)\` changes existing e_t^0 and e_x^1 reciprocally (det e=r²) and the actual first scalar CAR forward gradient by \`v_h²\`. That retains exact Q=0 and both original scalar currents. The existing full local native N1 Golden source at f=q=0 reduces EXACTLY to the original affine source, independent of arbitrary fixed positive PF weight variations. One original coframe radial row and two material rows are solved. No extra field, action, controller, paid readout, adjustable coupling or scalar stress was introduced.
+
+    OPENBLAS_NUM_THREADS=1 python3 02_REGISTRY/research/sources/d0_star_rank2_seam_2026-10-21/check_exact_null_sheet_unimodular.py
+
+The script PIN-checks the preceding literal six-face checker and the original \`native_master.py\`. It symbolically checks positive local invertibility and the volume/current identities, then numerically solves EVERY free anchored time-cell \`f=0\` equation and independently evaluates its FULL original 4x4 based holonomy matrices, native two-field Q and representative all16+24 Euler derivatives. Its three curved intervals and 16/32/64/128-cell refinements are diagnostics, not a global uniform full42 root theorem. Original two-sided fixed temporal collar compatibility, other39 Euler rows, joint gauge inverse, native Book03 selection and physical writer remain OPEN.
