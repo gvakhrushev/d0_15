@@ -210,3 +210,29 @@ Consume existing source [native PF C² and nonlinear two-scalar Euler proof](A4D
 Max native72 material Euler residual 7.70066696072e-5 BEFORE vs 2.60188192606e-16 AFTER; species2 max2.498e-16. The full original scalar collar does not change, maximum field-value correction2.17121e-5, |q_new|<=3.09522e-5. Numerical 72×72 Jacobian sigma_min0.8700655, cond2=57.5610; NOT an interval certificate. Independent native full N1 entropy-price secants across both species agree with their full source before/after to 3.3e-16 absolute. The original positive PF in this actual L8 sample is genuinely irregular (rho between .54595 and1.85623), so this is not the previous smooth fake-PF diagnostic.
 
 It does NOT solve the 16 coframe+24 neighboring temporal link/collar/gauge equations WITH changed q, nor establish the 4D full matter profile, the compulsory Book03 action, absolute work or physical field writer. It does materially alter the next coupled source inverse: the transverse matter field cannot be treated as frozen or as an automatic obstruction, because a genuine simultaneous finite root was found on the source's owned price carrier. Preserve original all-slab Cartan counterexample and no-GR promotion.
+
+
+## 11. A whole-four-dimensional causal two-CAR matter inverse + a UNIFORM 42→34 Lorentz quotient (21 October)
+
+**New exact typed consumers:** [the genuine 2592-Euler causal analytic theorem](A4D_CAUSAL_TWO_SCALAR_FULL4D_EXACT_MATTER_SCHUR_2026_10_21.md) and [the nondegenerate full-two-scalar Lorentz Ward/metric34 theorem](A4D_FULL42_CAUSAL_MATTER_LORENTZ_WARD_METRIC34_BRIDGE_2026_10_21.md), with all checkers in [sources/d0_causal_full4d_scalar_schur_2026-10-21/](sources/d0_causal_full4d_scalar_schur_2026-10-21/README.md).
+
+The prior n24/L8 **2592-variable** global material Newton solves a DIFFERENT all-face-Dirichlet boundary problem and is a numerical witness. The new theorem starts from TWO complete time layers and genuine spatial inflow data and works FOR EVERY finite positive original Golden PF mesh: the exact nonlinear original N1 material Euler at each 4D site is a two-vector equation
+\[
+ W_z(g^{00}\|u\|^2+q_s)(g^{00}u+c)=
+ J^0_{\rm previous}+\sum_{a=1}^3J^a_{\rm lower\ spatial},
+\quad
+W_z(q)=F_{N1,y}(-\tau f_z/\rho_z,\tau q/\rho_z)/F_{N1,y}(0,0).
+\]
+All RHS currents are already computed by chronological/spatial lex order; no 2592D nonlinear inversion is necessary. Its local exact Jacobian is a rank-one update \(g^{00}W I_2+(2\tau g^{00}/\rho)W_y(g^{00}u+c)\otimes u\); determinant equals \((g^{00}W)^2[1+(2\tau/\rho)(W_y/W)u\cdot(g^{00}u+c)]\). At zero material this determinant is positive and analytic. The entire 2592D causal material Jacobian is therefore BLOCK LOWER TRIANGULAR with nonzero 2×2 blocks: finite analytic implicit-function induction proves small-but-NONZERO causal material Euler roots exactly, without an interval claim for the displayed large-amplitude case.
+
+The independent numerical same-N1 4D replay on ALL genuine 75025 cost24 histories and ALL 4096 original sites has 1296 local 2×2 solves, 2592 residual components below \(1.955\cdot10^{-16}\), nonzero true material \(q\) up to \(3.62\cdot10^{-4}\), and original jagged native \(\rho\in[.21838,2.34759]\). True complete N1 entropy-price independent complex-step derivatives vanish after correction and are nonzero on the original seed; both agree with the same true derivative-divergence law. This does NOT impose the two-sided boundary collar of the previous global root.
+
+**New hostile physics integration:** the corrected 4D two-field current has mixed stresses \(|T_{tx}|_{\max}\simeq1.68\cdot10^{-4}\), \(|T_{ty}|_{\max}\simeq7.36\cdot10^{-5}\), \(|T_{xy}|_{\max}\simeq9.41\cdot10^{-5}\). Thus the earlier \`42→12\` special diagonal/pureboost-support theorem is NOT the correct full source acceptance test on these corrected fields. The concurrent exact original spatial J12 pureboost no-go independently rejects the same restricted field-space plan. Do not re-use that old twelve-target root scheme.
+
+**Robust exact replacement:** for the original diagonal coframe \(e=\operatorname{diag}(A,B,C,D)\) and ALL two-scalar gradient directions, the six local SO(1,3) Ward equations admit a COFRAME-ONLY 6×6 pivot with exact determinant \(BC^2D^3\). On the rank-two positive-radius chart it equals \(r^5/A\), stays nonzero on compact time collars and DOES NOT lose \(h^3\) from \(\sinh(hk_2)^3\). The other ten lower-triangular coframe entries map bijectively into the actual metric ten with exact determinant \(-16AB^2C^3D^4=-16r^7/A\) at rank two. Thus actual coupled bulk 42 Euler reduce to 36 after proper Lorentz gauge, and, once the two exact CAUSAL material interior equations have been solved, the remaining bulk field-source type is
+\[
+\boxed{\mathrm{metric}_{10}\oplus\mathrm{Lorentz\ links}_{24}.}
+\]
+This concrete 34-type matches the previously published ORIGINAL full128 34-rank metric/link Jones tomography, but the separate carriers/observer/clock/input and process must still be shown to coincide; matching rank/type is NOT a physical price/GR theorem. The genuine causal matter outgoing-boundary symplectic/current source must be included in the reduced geometry equation before declaring full variational stationarity.
+
+**Precise next full-field task:** solve the actual gauge-fixed 34 geometric/source equations with genuine 4D matter response and boundary source, allowing the spatial rotations/offdiagonal coframes required by the new pureboost no-go, THEN attach the single Book03-selected paid writer/clock/Info/heat/root and uniform finite refinement. Existing exact null/Brinkmann positive roots remain intact, and no arbitrary 42-field root is inferred. \`GR_closed=false\`.
