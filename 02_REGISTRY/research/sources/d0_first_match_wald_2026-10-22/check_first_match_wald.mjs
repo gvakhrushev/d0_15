@@ -112,6 +112,59 @@ for(const m of [2,3,4,8,16,128]){
   close(mean,m+1,2e-13,'genuine m-outcome first-match mean m+1');
 }
 
+// Complete fail/READY0/READY1 law, retaining the unconditional failure class.
+const statusLaw=(gamma,r)=>[1-gamma,gamma*(1-r),gamma*r];
+const capLength3=(gamma,r,K)=>4-gamma**K-
+  (1-gamma*(1-r))**K-(1-gamma*r)**K;
+for(const gamma of [.2,.3416407870701547,.73]){
+  for(const r of [.15,.37,1.851242740976536e-6,1.8513157633356053e-6]){
+    const q=statusLaw(gamma,r);
+    check(q.every(x=>x>0),'all three unconditional status probabilities are positive');
+    close(q.reduce((a,b)=>a+b,0),1,2e-14,'three-status complete probability law');
+    close(1+q.reduce((a,v)=>a+v/v,0),4,2e-13,'three-status uncapped first-match mean');
+    for(const K of [1,2,4,8]){
+      const rows=paths(q,K),P=distribution(rows,q),expected=L(q,K);
+      const mass=P.reduce((a,b)=>a+b,0);
+      const trials=rows.reduce((a,row,i)=>a+P[i]*row.word.length,0);
+      close(expected,capLength3(gamma,r,K),3e-14,'three-status finite-cap length formula');
+      close(mass,1,4e-13,'three-status complete capped tape includes aborts');
+      close(trials,expected,4e-12,'three-status direct stopped-length enumeration');
+      const charges=[1,1.5,2],kappa=.4;
+      const paid=rows.reduce((a,row,i)=>a+P[i]*(
+        row.word.reduce((s,j)=>s+charges[j],0)+kappa*(row.word.length-1)),0);
+      const oneCost=q.reduce((s,v,j)=>s+v*charges[j],0);
+      close(paid,expected*oneCost+kappa*(expected-1),5e-12,
+        'three-status whole-ledger capped Wald identity');
+      const entropy=-P.reduce((a,v)=>a+(v===0?0:v*Math.log(v)),0)/logphi;
+      close(entropy,expected*H(q)/logphi,5e-12,
+        'three-status complete pointer entropy identity');
+    }
+  }
+}
+
+// Check readiness and report derivatives in every formal 42-field coordinate.
+// These are source-law controls, not a new native 42-field Euler replay.
+const gamma0=.3416407870701547,report0=.31,eps=1e-5;
+const dGammaField=Array.from({length:42},(_,j)=>.01*(j+1)/42);
+const dReportField=Array.from({length:42},(_,j)=>(j%2?1:-1)*.02*(j+1)/42);
+const dGamma=K=>-K*gamma0**(K-1)+K*(1-report0)*
+  (1-gamma0*(1-report0))**(K-1)+K*report0*(1-gamma0*report0)**(K-1);
+const dReport=K=>K*gamma0*((1-gamma0*report0)**(K-1)-
+  (1-gamma0*(1-report0))**(K-1));
+for(const K of [2,5,10]) for(let j=0;j<42;j++){
+  const dg=dGammaField[j],dr=dReportField[j];
+  const numericGamma=(capLength3(gamma0+eps*dg,report0,K)-
+    capLength3(gamma0-eps*dg,report0,K))/(2*eps);
+  const numericReport=(capLength3(gamma0,report0+eps*dr,K)-
+    capLength3(gamma0,report0-eps*dr,K))/(2*eps);
+  close(numericGamma,dGamma(K)*dg,3e-8,'finite-cap readiness source includes D gamma');
+  close(numericReport,dReport(K)*dr,3e-8,'finite-cap report source includes D r');
+  const numericBoth=(capLength3(gamma0+eps*dg,report0+eps*dr,K)-
+    capLength3(gamma0-eps*dg,report0-eps*dr,K))/(2*eps);
+  close(numericBoth,dGamma(K)*dg+dReport(K)*dr,3e-8,
+    'finite-cap three-class source in formal direction '+j);
+}
+
 // EXACT same-outcome-law fixed initialized-blank Book feedback, unlike CQ.
 for(const r of [0.03,0.17,0.33,0.62,0.81,0.98]){
   const amp=[0,Math.sqrt(1-r),Math.sqrt(r)];
