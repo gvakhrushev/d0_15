@@ -53,3 +53,14 @@ The script PIN-checks the preceding literal six-face checker and the original \`
 ### Nontrivial exact double-zero controls
 
 The exact-sheet checker now ALSO requires a nonidentity spatial SO(1,3) plaquette \(U_yU_zU_y^{-1}U_z^{-1}\) (its curvature norm divided by h² is bounded below on the sampled compact intervals) and two distinct genuinely null CAR matter covectors whose tensor source has rank2. These checks reject the invalid shortcut "both scalar densities vanish, therefore the field is flat/vacuum". Nonzero complete independent coframe/link first variations persist and are explicitly measured. They do not claim a full42 stationary root.
+
+
+## Four exact diagonal coframe and six exact temporal link zeros
+
+The [original finite rank-two diagonal Cauchy theorem](../../A4D_RANK2_EXACT_DIAGONAL_CAUCHY_AND_TEMPORAL_GAUSS_2026_10_21.md) is the stronger constructive consumer of this directory's exact f=q=0 source sheet. Material current conservation with BOTH active original CAR scalar grades FORCES X*Y=constant. On the old constant-one branch, four independently differentiated original diagonal coframe rows are solved by exactly two near-source algebraic equations and ONE coherent forward original k1 spatial boost update; all four coframe source components, both finite scalar Euler and the f=q=0 constraint are exactly zero at each free based cell. The reduced two-equation Jacobian has exact determinant -2(r^4-2r^2-1)*exp(-3r^2/4)/r^(7/2), positive for r<sqrt(1+sqrt2). No arbitrary full40 Newton inverse is assumed.
+
+A distinct exact proof using actual two neighboring based time-spatial plaquettes gives ZERO for all six original temporal-link Lorentz source entries in this homogeneous diagonal/pure-boost subsector, even off the constructed coframe root. Both initial and spatial-predecessor link variations are included. These are 12 raw zero source components (4 coframe+2 material+6 time-links), not 12 newly independent gauge conditions. Offdiagonal coframe and spatial-link source are measured nonzero.
+
+    OPENBLAS_NUM_THREADS=1 python3 02_REGISTRY/research/sources/d0_star_rank2_seam_2026-10-21/check_diagonal_coframe_cauchy_recurrence.py
+
+This checker consumes immutable existing original six-face and actual cap-one GoldenMaster files; exact SymPy algebra verifies the full diagonal Euler system, polynomial elimination, positive Jacobian, Cauchy flow and rational six-generator temporal Gauss. Separate full4 original-lattice numerical first derivatives check the original 4 diagonal coframe and six temporal link components on 3 curved intervals with 16/32/64/128 sites. It explicitly requires remaining offdiagonal coframe source NONZERO. It does not certify independent physical frame writing, the original full H+J+R Book choice, remote full all42 roots, temporal two-ended collar or generic GR.
