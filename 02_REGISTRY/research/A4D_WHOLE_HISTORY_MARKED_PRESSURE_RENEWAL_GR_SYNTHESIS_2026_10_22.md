@@ -145,6 +145,33 @@ The genuine unpadded original \`0/10\` expected code price \(g(r)=1+r-h_\varphi(
 
 The marked **complete-history** pressure response (2), unlike a fixed finite-dimensional Golden \(-\log\det\) as a function of only one scalar probability, already contains exactly the unique entropy shape demanded by (11). A fully physical Book03 law would still have to SELECT this response and solve its independent input/cut/clock equations. This theorem does not insert \(b=h_\varphi\) as a new compulsory action.
 
+
+## 4b. STRONG FINITE-NATIVE NO-GO: algebraic Golden/H feedback alone cannot equal Shannon first sources on any open report chart
+
+This is a structural necessity stronger than testing one or two specific detector polynomials. Fix a nonempty open \(I\subset(0,p^2)\), a fixed finite output rank \(d\) and fugacity \(0<\zeta<1\). Let \(F(r)\) be a finite complex matrix whose entries are analytic branches of functions **ALGEBRAIC over \(\mathbb C(r)\)** on I, with \(\det(I-\zeta F(r))\ne0\). This encompasses every fixed finite polynomial/rational Golden/H/CNOT report-effect composition built algebraically from \(r\) with fixed algebraic probabilities, square-root branches and fixed charges, but NOT a genuinely logarithmic Book Info map, a field-dependent nonalgebraic heat generator, a moving native controller with an unproved continuous resource, or a controlled infinite-time limit.
+
+Its complete fixed trace-log feedback
+\[
+J_{\rm alg}(r)=-\log\det[I-\zeta F(r)]
+\]
+has derivative
+\[
+J_{\rm alg}'(r)=-\frac{D'(r)}{D(r)},\qquad
+D(r)=\det[I-\zeta F(r)],
+\]
+which is **algebraic over \(\mathbb C(r)\)**: algebraic functions are closed under sums/products, and differentiating the polynomial equation defining \(D\) expresses \(D'\) rationally in \(r,D\) on the nonsingular germ. Finite sums of such feedback source functions, with fixed trace multiplicities, remain algebraic. In contrast
+\[
+h_\varphi'(r)=\frac{\log(1-r)-\log r}{\log\varphi}
+\]
+is **NOT algebraic over \(\mathbb C(r)\)**: analytic continuation around r=0 adds \(-2\pi i/\log\varphi\) for EVERY winding; infinitely many branches arise. A finite-degree algebraic function has only finitely many continuations under looping around a singular point (finite Puiseux branching). Hence for every fixed \(\gamma\ne0\):
+\[
+\boxed{\quad J_{\rm alg}'(r)\ne\gamma h_\varphi'(r)
+\quad\text{as germs on EVERY open nonempty }I\subset(0,p^2).\quad}\tag{12}
+\]
+No arbitrary increase of a FINITE Golden/H feedback circuit's algebraic rank or constant multiplicities removes this obstruction. The proof is an exact analytic-monodromy argument, not a numeric search or assumption of a particular detector coefficient. Independent reference: Newton–Puiseux finite branch theorem as stated in Flajolet–Sedgewick, *Analytic Combinatorics*, Theorem VII.5, https://algo.inria.fr/flajolet/Publications/book050805.pdf; the infinitely many logarithm determinations are standard complex analysis.
+
+By the TWO independently variable report-channel source-kernel theorem of §4a, no such stand-alone algebraic finite logdet can reproduce the exact CQ/entropy stationary kernels **for all independent positive two-report variations on an open interval**, even though it CAN have matching first source at one common-null root or nearly equal reports. The legitimate escape is NOT a fitted gravity prefactor: obtain the actual logarithmic response from COMPLETE measured history probabilities/Book Info or real thermal-clock dynamics (as the exact marked-source identity (2) demonstrates), a true non-algebraic physically generated input, or sufficiently controlled limits. Whether the compulsory Book03 H+J+R chooses such a mechanism remains a separate physical law; this theorem DOES NOT exclude its non-feedback pieces or universal GR. The original h=1/4 off-null numerical/interval countercheck remains a valid finite specific witness but is not required for this general theorem.
+
 ## 5. New physically decisive one-source gate
 
 The previous Book source search became unnecessarily hard by asking the **unmarked normalized scalar partition value** to reproduce entropy. It cannot: its field derivative is zero. The marked response (2)/(5) has the entire original complete measured code source across BOTH common-null and off-null reports; the finite per-actual-tick pressure (8) is an exact SOURCE-COMPATIBLE renewal implementation at every cap. Neither is an introduced gravitational action: they are mathematical functions of the real full native record and its costs.
