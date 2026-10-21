@@ -9804,6 +9804,48 @@ reconstruction. Exact and numerical checks are distinguished; independent
 reviews bind the final proofs. Existing #334/native-programme-v1 continues;
 no new task, claimed compulsory action or GR_closed promotion.
 
+## 21 October — exact joint preparation and forced complete-price densities
+
+The [joint-source synthesis](A4D_JOINT_CLOSURE_SOURCE_SYNTHESIS_2026_10_21.md)
+removes three specific remaining hypotheses on the inspected dfc0275e inputs.
+On the original coherent cap2/CAR16/RIGHT128 price, the literal material-angle
+identity and the weighted centre of the two arms give an exactly zero relative
+preparation source. The inherited logarithmic normal makes a=0 the unique
+nearby relative stationary section. All joint critical points, and those of
+the prior fixed-material reduction, are therefore exactly the diagonal-price
+critical points. The true central port/counting ledger is included. The mixed
+matrix at the matter-free base is M=p^3 P_b H_m; a material-Hessian null
+vector cannot acquire the
+formerly conceivable independent logarithmic instability. This closes the
+selected k preparation equations of this SAME action, not arbitrary Stiefel
+preparation, extra physical work or the distinct N=1 CQ price.
+
+For the precisely declared fixed-measure continuum two-density action, full
+stationarity itself now implies constant x,y. The induced-coordinate identity
+d(F-xF_x)=0 and the radial branch x=tau(y), with 9<P'_N/a_N<44, prove this
+without an assumed symmetry or homogeneous ansatz. All finite caps have the
+same complete stationary set and, with a fixed collar, the same full Jacobi
+kernel. An explicit inverse mass-coordinate construction lifts ANY local
+smooth positive irrotational Einstein dust solution in the one-real-scalar
+sector; a null-dust construction is included. Off-shell Hessians and minima
+are not identified. Native finite-lattice dictionary/admission remain open.
+
+The original monitored return apparatus now has a complete C1 entropy/source
+limit, including unresolved records, with explicit O(N^2(961/1024)^N) tail.
+At its literal c=sqrt(5)-2, interval arithmetic proves 10.61<H'_infinity<10.62,
+while mean return equals four. Thus an independently admitted c cannot be
+stationary for this specified price when both setup and compatible cycle-cost
+derivatives vanish. Any additional full-price term keeps its own derivative.
+The actual missing internal-price balance is explicit. This source cannot
+be cancelled by changing to a coherent flag information cut.
+
+The three executions are not added together. The next consumer is the full
+independent internal source on ONE selected, fully paid execution of the
+existing field root. Exact preparation elimination reduces that system;
+density rigidity specifies the continuum target; the return theorem retains
+an otherwise lost source. New proof packets have frozen input hashes,
+focused replays and independent reviews. No task/lifecycle or physical-GR
+promotion is made.
 ## 21 October — exact joint preparation and internal-source synthesis
 
 The [joint preparation/compiler/clock synthesis](A4D_JOINT_PREPARATION_COMPILER_CLOCK_SYNTHESIS_2026_10_21.md)

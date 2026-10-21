@@ -3526,6 +3526,46 @@ clock, and retained-record apparatus factors. Decisive check: the 206-check
 exact symbolic CAR16 replay, with normal/optimized stdout identical and the
 existing Book03 comparator checker still passing (88 checks). `GR_closed=false`.
 
+## 21 October continuation: joint preparation, density rigidity and full return source
+
+Phase/owner unchanged: existing #334, native-programme-v1/constitutive.
+Read head dfc0275eea67ebc21ffe539de9b6ea96713863a5. The
+[integrated proof](../../02_REGISTRY/research/A4D_JOINT_CLOSURE_SOURCE_SYNTHESIS_2026_10_21.md)
+replaces three actual missing premises with proved source statements.
+
+On the original cap2 coherent central price, the exact material-angle centre
+and positive logarithmic normal prove Crit(S)=Crit(S0), with all selected
+independent preparation coordinates zero, and Crit(F_reduced)=Crit(S0).
+The already supplied port/counting ledger is retained. At the matter-free
+base, M=p^3 P_b H_m excludes
+an independent logarithmic instability on a material-Hessian null ray.
+This consumes only the existing full128 support facts and does not identify
+the price with N=1 CQ or admit all continuous preparations physically.
+
+On the exactly declared fixed-measure continuum two-density action, full
+equations imply constant x,y, all-cap equality of stationary fields, and
+fixed-collar equality of complete Jacobi kernels. The one-real-scalar sector
+has a constructive converse from arbitrary local positive irrotational
+Einstein dust using e*rho=constant mass coordinates. Null dust is included.
+Original independent connection/coframe/matter rows are kept. The actual
+finite-lattice dictionary and spatial/internal source transport stay open.
+
+The original monitored return has a complete C1 entropy/source limit with
+explicit O(N^2(961/1024)^N) tail and strict native derivative interval
+(10.61,10.62). This closes the nonlinear cap-source estimate and gives the
+remaining setup/work balance for an independently admitted c-direction;
+the constant four-cycle mean does not cancel it. No different Info cut is
+substituted for the monitored price.
+
+Write surface: one synthesis, three proof/checker packets, narrow updates to
+this brief, its primary memo, the primary positive case and the strategic
+synthesis. Every packet pins its unchanged input bytes and has an independent
+mathematical review. Decisive replay is limited to the changed calculations;
+old full128/geometry/Lean evidence is consumed without unnecessary reruns.
+The next application is ONE selected execution's remaining independent
+internal source on its existing field root, with actual valuation/admission
+and weights. No new task, lifecycle change, Book/CORE claim or GR closure.
+
 ## 21 October continuation: exclude the single-step CAR compression shortcut
 
 The integrated cap-one synthesis composes its exact nonzero query trace jet
@@ -3640,3 +3680,35 @@ open. The historical 469-control chronology receipt remains immutable; the
 new narrow replay checks the source-pinned pencil without re-running that
 certificate. No action, selector, or physical closure claim changes.
 `GR_closed=false`.
+
+## 21 October continuation: final joint closure and strict temporal-comparison source
+
+The [final integration](../../02_REGISTRY/research/sources/d0_joint_closure_synthesis_2026-10-21/FINAL_INTEGRATION.md)
+composes the frozen joint-closure packet with the concurrent balanced
+preparation, actual N=1 CQ constitutive and CAR16 temporal-phase owners.
+The shared preparation theorem is counted once; the concurrent proof adds
+stationary field-Hessian preservation. The actual finite CQ consumer and
+the fixed-measure continuum density/Jacobi theorem retain their different
+premises and explicitly unproved physical transport.
+
+The new [temporal-comparison interval](../../02_REGISTRY/research/sources/d0_temporal_comparison_source_2026-10-21/PROOF.md)
+uses the SAME monitored joint time/bit record and fixed Golden selector.
+Including the actual finite-cap abort source, it proves
+`-10.03 < partial_c S_records,N(sqrt(5)-2) < -10.02`
+for infinity and every integer N>=320. If this analytic direction is
+physically admitted and independently variable, full interior stationarity
+requires the actual remaining price derivative strictly between 10.02 and
+10.03. That remaining cost is neither invented nor discarded.
+
+The new 27-control calculation and its five exact source pins passed normal,
+optimized, independent and integrator checks. Historical proof receipts stay
+frozen, and all concurrent research is preserved. The final integration
+receipt records exact hashes and repository guards. No lifecycle, assembly,
+Book/CORE, minimum or physical closure status is promoted. `GR_closed=false`.
+
+The publication integration also preserves concurrent `5f65e2a5` in full,
+including its actual nested compiler optimum K=9,L=18 and preservation of
+the normalized N=1 material function. The reviewed scientific core and
+interval packet stay unchanged. Exact late-merge preservation and the
+unchanged source-pin checks are recorded in
+[sources/d0_joint_closure_synthesis_2026-10-21/PUBLICATION_PRESERVATION.json](../../02_REGISTRY/research/sources/d0_joint_closure_synthesis_2026-10-21/PUBLICATION_PRESERVATION.json).

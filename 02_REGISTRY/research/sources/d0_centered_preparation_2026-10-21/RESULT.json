@@ -1,0 +1,187 @@
+{
+  "check_names": [
+    "source_PROOF.md",
+    "source_NATIVE_COHERENT_CHOICE_SOURCE.md",
+    "source_PRIMARY_STOPPED_PORT_PRICE_AND_PREPARATION_EULER.md",
+    "source_PRIMARY_STOPPED_RIGHT_CONDITIONAL_SOURCE.md",
+    "source_RESULT.md",
+    "golden_mixture_normalization",
+    "literal_generator_rank_eight",
+    "literal_full16_skew",
+    "literal_full16_rotation_orthogonal",
+    "untouched_low_CAR_complements",
+    "high_CAR_complement_is_retained",
+    "exact_full16_angle_dictionary",
+    "original_material_normalization",
+    "exact_original_top_tangent",
+    "centre_map_inverse",
+    "second_arm_centre_map",
+    "complete_density_centre_cancellation",
+    "full_source_pullback",
+    "four_term_selected_Hessian_identity_top",
+    "mixed_matrix_Golden_factor_top",
+    "four_term_selected_Hessian_identity_scalar",
+    "mixed_matrix_Golden_factor_scalar",
+    "scalar_effect_negative_control",
+    "cap2_counting_reference_complete",
+    "port_cost_is_not_double_counted",
+    "cap2_actual_occupation_effect",
+    "fixed_timestep_occupation_is_not_two",
+    "logarithmic_convexity_bound_factor",
+    "complete_fixture_effects_-0.2",
+    "strict_Gershgorin_effect_-0.2_0",
+    "strict_Gershgorin_effect_-0.2_1",
+    "strict_Gershgorin_effect_-0.2_2",
+    "complete_fixture_effects_0.2",
+    "strict_Gershgorin_effect_0.2_0",
+    "strict_Gershgorin_effect_0.2_1",
+    "strict_Gershgorin_effect_0.2_2",
+    "noncommuting_fixture_effects",
+    "cross_site_fixture_coupling",
+    "fixture_CAR_parity",
+    "full_material_norm",
+    "diagonal_same_price",
+    "exact_price_coordinate_identity",
+    "full_source_pullback_0",
+    "full_source_pullback_1",
+    "centred_relative_source_zero_0",
+    "diagonal_Ward_source_0",
+    "centred_relative_source_zero_1",
+    "diagonal_Ward_source_1",
+    "frozen_material_is_a_different_problem",
+    "projected_small_cluster_positive_0",
+    "positive_complete_centred_gap_0_4",
+    "positive_complete_centred_gap_0_12",
+    "positive_complete_centred_gap_0_30",
+    "log_gap_coefficient_convergence_0",
+    "log_gap_coefficient_final_accuracy_0",
+    "projected_small_cluster_positive_1",
+    "positive_complete_centred_gap_1_4",
+    "positive_complete_centred_gap_1_12",
+    "positive_complete_centred_gap_1_30",
+    "log_gap_coefficient_convergence_1",
+    "log_gap_coefficient_final_accuracy_1",
+    "projected_small_cluster_positive_2",
+    "positive_complete_centred_gap_2_4",
+    "positive_complete_centred_gap_2_12",
+    "positive_complete_centred_gap_2_30",
+    "log_gap_coefficient_convergence_2",
+    "log_gap_coefficient_final_accuracy_2",
+    "complete_price_mixed_Hessian_0_0",
+    "complete_price_mixed_Hessian_0_1",
+    "complete_price_mixed_Hessian_0_2",
+    "complete_price_mixed_Hessian_0_3",
+    "complete_price_mixed_Hessian_1_0",
+    "complete_price_mixed_Hessian_1_1",
+    "complete_price_mixed_Hessian_1_2",
+    "complete_price_mixed_Hessian_1_3"
+  ],
+  "checks": 75,
+  "exact": {
+    "all_255_original_leaves_retained_by_consumed_owner": true,
+    "exact_mixed_matrix": "M = p^3 P_b D_m^2 S0",
+    "exact_source_identity": "D_a S|a=0 = p^2 slack D_b S0",
+    "native_generator_rank": 8,
+    "native_stiffness": "p^5/256"
+  },
+  "numerical_fixture": {
+    "data_dimension": 8,
+    "fixed_material_sources": [
+      "-0.000083187780487985012237",
+      "0.000057436716136131537251"
+    ],
+    "leaves": 3,
+    "log_gap_diagnostics": [
+      {
+        "angle_exponent": 4,
+        "direction": [
+          1,
+          0
+        ],
+        "gap_to_log_coefficient_ratio": "1.2223900913091569198"
+      },
+      {
+        "angle_exponent": 12,
+        "direction": [
+          1,
+          0
+        ],
+        "gap_to_log_coefficient_ratio": "1.0741300314214104179"
+      },
+      {
+        "angle_exponent": 30,
+        "direction": [
+          1,
+          0
+        ],
+        "gap_to_log_coefficient_ratio": "1.029652012568564176"
+      },
+      {
+        "angle_exponent": 4,
+        "direction": [
+          0,
+          1
+        ],
+        "gap_to_log_coefficient_ratio": "1.2222921732554121874"
+      },
+      {
+        "angle_exponent": 12,
+        "direction": [
+          0,
+          1
+        ],
+        "gap_to_log_coefficient_ratio": "1.0740973908200213005"
+      },
+      {
+        "angle_exponent": 30,
+        "direction": [
+          0,
+          1
+        ],
+        "gap_to_log_coefficient_ratio": "1.0296389563280085123"
+      },
+      {
+        "angle_exponent": 4,
+        "direction": [
+          1,
+          -2
+        ],
+        "gap_to_log_coefficient_ratio": "1.2223475600036402505"
+      },
+      {
+        "angle_exponent": 12,
+        "direction": [
+          1,
+          -2
+        ],
+        "gap_to_log_coefficient_ratio": "1.0741158536709062636"
+      },
+      {
+        "angle_exponent": 30,
+        "direction": [
+          1,
+          -2
+        ],
+        "gap_to_log_coefficient_ratio": "1.0296463414683625072"
+      }
+    ],
+    "max_mixed_Hessian_error": "5.34350932243e-38",
+    "max_source_pullback_error": "1.76105091434e-133",
+    "oldRIGHT_dimension": 1,
+    "original_D0_spectral_replay": false,
+    "precision_decimal_digits": 130,
+    "sites": 2
+  },
+  "scope": {
+    "Book_price_selected": false,
+    "GR_closed": false,
+    "independent_review_performed": false,
+    "joint_stationary_equivalence_analytic_proof": "PROOF.md",
+    "refinement_uniformity_proved": false
+  },
+  "sources": {
+    "checked_input_count": 5,
+    "read_head": "dfc0275eea67ebc21ffe539de9b6ea96713863a5"
+  },
+  "status": "PASS"
+}
