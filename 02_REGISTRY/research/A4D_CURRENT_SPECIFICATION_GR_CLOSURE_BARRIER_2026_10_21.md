@@ -1,3 +1,17 @@
+> **Scope correction — 21 October 2026.** The title below should be read as a
+> barrier for deriving GR from the *current explicit Cost-Info/history
+> interfaces alone*. Book03 §03.25 already supplies a unique master bootstrap
+> action `B_N = beta^-1 log Tr exp(-beta Delta_N(V)) - log det(I-zF_N(V))`.
+> Hence the current specification is not missing an aggregation scalar at the
+> action layer. What is still absent is the native same-execution
+> identification/pullback of the bootstrap Hodge Laplacian `Delta_N(V)` and
+> feedback `F_N(V)` to the actual moving GR carrier, including all field,
+> observer, preparation, clock and refinement jets. Existing
+> `A4D_NATIVE_SOLDERED_HEAT_SOURCE.md` explicitly records
+> `bootstrap_heat_identification = OPEN`. Sections below remain valid as
+> no-shortcuts showing that mean Cost-Info, normalized coherent amplitudes,
+> endpoint allocation, or D_min cannot substitute for that pullback.
+
 # Current-specification GR closure barrier
 
 21 October 2026. Existing Draft PR #334 only.

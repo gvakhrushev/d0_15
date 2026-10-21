@@ -1,3 +1,16 @@
+> **Scope correction — 21 October 2026.** Book03 §03.25 explicitly selects a single
+> master bootstrap scalar
+> `B_N = beta^-1 log Tr exp(-beta Delta_N(V)) - log det(I-z F_N(V))`.
+> Therefore this note does **not** prove that the Book03 action layer lacks an
+> aggregation scalar. Its exact theorem is narrower: the *path Cost-Info /
+> same-record amplitude layer by itself* does not determine a unique first
+> source or prove equality to the §03.25 bootstrap. The closure burden is the
+> native same-execution pullback identifying the bootstrap `Delta_N,F_N`
+> (and its field/internal variations) with the retained history construction.
+> The Golden mean-vs-amplitude calculation below remains an exact negative
+> control against deriving that bootstrap source from normalized record data
+> or mean Cost-Info alone.
+
 # Book03 first-source underdetermination on the original Golden port
 
 21 October 2026. Existing Draft PR #334,
