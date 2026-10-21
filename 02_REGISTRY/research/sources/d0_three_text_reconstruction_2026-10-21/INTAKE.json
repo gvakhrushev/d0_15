@@ -24,5 +24,22 @@
       "bytes": 26249,
       "status": "Exact supplied text preserved; referenced zip/patch/proof/checker/receipts unavailable."
     }
+  ],
+  "reviewed_archives": [
+    {
+      "filename": "D0_recovered_research_upload_2026-10-21 (1).zip",
+      "sha256": "1306dd79a5a6a4266d2f59fce6896aeb6d81f9457bbc8de1f18a07cb063661ac",
+      "classification": "RECONSTRUCTED_RESEARCH_NOT_ORIGINAL_PATCH",
+      "claimed_lost_commit": "3bf6ca63759f0aa58441152e0e98962fa662920a",
+      "commit_lookup": "Absent from both local Git object stores; GitHub REST returned no commit.",
+      "verification": "Archive SHA256SUMS passed. Its SymPy checker passed normally and under -O, but checks only algebraic consequences of transcribed formulas; original CAR16 matrices and 233 historical checks are absent.",
+      "disposition": "No duplicate research files imported. The full-flag Fisher/QFI result, Born-Book third-jet control, variable-clock normalizer identity, and limits are already covered more completely by the owners below.",
+      "covered_by": [
+        "02_REGISTRY/research/sources/d0_three_text_reconstruction_2026-10-21/all_flag/RESTORED_ALL_FLAG_PRICE.md",
+        "02_REGISTRY/research/sources/d0_three_text_reconstruction_2026-10-21/all_flag/BORN_BOOK_SOURCE_SHAPE.md",
+        "02_REGISTRY/research/A4D_COMPLETE_RECORD_ODDS_PRICE_SYNTHESIS_2026_10_21.md",
+        "02_REGISTRY/research/sources/d0_three_text_reconstruction_2026-10-21/replay.py"
+      ]
+    }
   ]
 }
