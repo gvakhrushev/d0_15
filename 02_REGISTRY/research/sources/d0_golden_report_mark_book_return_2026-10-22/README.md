@@ -173,6 +173,22 @@ The necessary caveat is now even sharper: this is a **conditional physical-retur
 
 **Small exact address test.** At `n_z=29,39,48,78`, the literal `pi_z/rho_z` values all equal `P_READY/256 ≈ 0.001334534324492789`; the proof holds algebraically for the entire actual 256-address tree, without rerunning the owner's 10946-prefix enumeration.
 
+
+## 3b. Reverse necessity: the FULL retained-history blank cut is provably source blind
+
+There is one additional exact no-go preventing misuse of the preceding positive first-source formula. Suppose the complete actually executed tape has a faithful chronology/elapsed-label decomposition `E_out=E_empty + E_nonempty` into orthogonal subspaces, with the old initial embedding `i(H) subset E_empty` and **every** nonempty program branch (including every failure, report and clock history) in `E_nonempty`. Retaining more clocks, purifiers and work never removes this orthogonality. Then for the literal FULL-history initialized cut, `A=i†W=0` identically for EVERY field and every cost mark. Consequently `C_E=0`, and
+```
+J_init = r_R log det N-r_R log det[(1-zeta)N]
+       = -r_R*d log(1-zeta),   DJ_init=0
+```
+exactly, with **no scalar-effect hypothesis** and even for an operator-valued moving `N=W†W>0`. This is an all-jet theorem, not an approximate failure of numerical return. In particular, the cost-difference mechanism above cannot work on a full-history blank projector when that projector also tests the nonempty elapsed/record bit.
+
+**Contrapositive in the reverse GR strategy:** if an actual nonzero gravitational source is attributed to this normalized complementary feedback component, the genuine physical cut must admit a nonzero relational/active return corner that does NOT require literally restoring every historical/elapsed bit to the empty initial archive. The complete history can and must remain retained and paid in the complementary output; the READOUT cut may act on the active scene or an independently justified return subspace. Book03's `P_N` and the existing separate STAGE/ELAPSED clock owners offer mathematical candidates, but the present theorem does not select or physically admit any one of them. Nor does it prohibit a source arising from the original separate heat or material term.
+
+The original `A4D_FULL_HJR_FORWARD_CLOCK_TRANSPORT_2026_10_21.md` supplies a related exact native diagnostic: for a specifically given fixed T-stage schedule the unchanged HJR source survives one clock interval only at `M=T+1`. The original 0/10 output has variable terminal length, so a single M cannot **simultaneously** equal `T_b+1` for both differently timed alternatives. This rules out a literal branch-by-branch unchanged-HJR clock interpretation with one fixed such window. It does NOT forbid a different genuinely paid adaptive stage/elapsed process or an integrated full stochastic Book functional; its time-dependent source must be computed.
+
+**Immediate decisive physical gate:** calculate the ACTUAL selected Book03 return projector relative to the complete elapsed-work tape. If it is the full empty-history projector, the new marked-return bridge is exactly FAIL. If it is a true relational active projector, compute its *nonzero* early corner, true terminal net charges and independently moving clock/heat/Info source; do not change the projector after observing the desired Euler result.
+
 ## 4. Alternate readout cut: independently charged and unselected
 
 For completeness, if a distinct **REPORT** cut is declared with `B_t(r)=u_1,t r I_H` instead of the existing initialized-work cut, then `T=B/N` and `T'_r=u_1(v+u_0)/n^2>0`, giving `D_r J=-r_R d zeta T'_r/(1-zeta+zeta T)<0` even when early return `C_t=0`. This is a positive alternative algebraic source, **NOT** a proof the original Book03 cut may be freely changed. The initialized-work result above is stronger for the actual old-cut consumer when `C_t!=0`.
