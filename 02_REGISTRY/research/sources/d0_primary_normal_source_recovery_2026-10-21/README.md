@@ -1,4 +1,4 @@
-# Primary recovery packet: complete terminal source gain + compatible residual
+# Primary recovery packet: complete CQ constitutive law, terminal gains and compatible residuals
 
 21 October 2026. Existing scientific owner: PR #334, `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`. This composes existing results, not a new task or a physical GR promotion.
 
@@ -10,6 +10,7 @@
 4. [Normal-row recovery theorem](../../A4D_PRIMARY_NORMAL_SOURCE_RECOVERY_SYNTHESIS_2026_10_21.md). All other Euler rows must be solved, not discarded.
 5. The gain-aware substitution below, checked by [the new executable](check_source_gain_composition.py) and recorded in [INTEGRATION_RESULT.json](INTEGRATION_RESULT.json).
 6. [Protected null-source and filtered-recovery synthesis](../../A4D_PRIMARY_NULL_PROTECTION_AND_FILTERED_SOURCE_SYNTHESIS_2026_10_21.md): a conditional source-class application that separates large annihilated curvature terms from the residual that actually needs a smallness bound. See section 6 below. The actual native metric descent remains unproved.
+7. [Complete same-CQ nonlinear constitutive composition](constitutive/CONSTITUTIVE_COMPOSITION.md): apply the already-proved complete N=1 price, actual inverse-PF dictionary and stationary normal form together. Its geometric coefficient is uniform; ONE determined material function retains all nonlinear density weights. See section 7 for the current architectural consequence and executable consumer.
 
 ## 1. A known proportional archive source is not an uncontrolled small error
 
@@ -140,3 +141,35 @@ python3 02_REGISTRY/research/sources/d0_primary_normal_source_recovery_2026-10-2
 ```
 
 [NULL_PROTECTION_RESULT.json](NULL_PROTECTION_RESULT.json) is the actual local output. Normal and optimized runs matched byte-for-byte. The script checks generic Ricci/Box and material identities, the actual unchanged stencil, the exact positive-filter Green bound and49/225/961-site numerical controls. It also rejects VSI-alone reasoning using `H=x^4`, nonminimal `F(Psi)R`, finite quartic-harmonic stencil exactness, boundary misidentification and a resonant negative filter. It does not independently re-prove the cited arbitrary-order tensor theorem or execute the full all42 parent suite. No remote CI, independent review or GR promotion is asserted.
+
+## 7. Nonlinear same-CQ composition: the geometric part no longer requires a fitted microscopic price
+
+**Current input:** the [same-execution complete source](../../A4D_SAME_EXECUTION_SPATIAL_WEIGHTS_AND_COMPLETE_SOURCE_2026_10_21.md) has already proved the full N=1 CQ ledger and all42 source identity on its declared moving-query/fixed-price interface. The [constitutive application](constitutive/CONSTITUTIVE_COMPOSITION.md) now combines its actual integer copies and inverse-PF map with the existing auxiliary stationary normal form, without changing any frozen owner or receipt.
+
+For the literal complete density function F, the real grouped counts satisfy m_z=M rho_z and the common query scaling is c_z=tau/rho_z. There is ONE analytic function K, obtained from the regular auxiliary equations
+
+`P=F_x(s,(P/a)t)`, `s=(t/a)F_y(s,(P/a)t)`, `a=F_x(0,0)`,
+
+such that the SAME price is locally stationary-equivalent to
+
+`S_eff=B0+M tau a sum_z X_z+M sum_z rho_z K(tau Y_z/rho_z)`.
+
+Here X,Y are the original star/material densities evaluated at the transformed coframe; independent links and actual material differences are retained. This is a bijection of full critical points through an auxiliary extension and two reductions, NOT an off-shell equality under a physical-only metric redefinition. Constraints/collars must be transported away from the primary family. The retained baseline B0 still has its actual upstream derivatives.
+
+At X=Y=0 the coframe transformation is identity, K(0)=0 and K'(0)/a=lambda_minus(2^-20). Thus the old finite primary metric, material history and fixed collar survive unchanged. The complete nonlinear correction has zero first source there but a nonzero second source. At the actual Golden compiler caps,
+
+`K''(0)=0.0005319517369718921844129302583 >0`.
+
+More generally `K_z^(n)(0)=M tau^n rho_z^(1-n) K^(n)(0)`. PF nonuniformity cancels from the first geometry/matter source but remains in higher material terms; it has not disappeared from the theory. A uniform off-null chart must control tau_h/rho_min,h. Positive K'' is not a positive full Hessian or a repaired field minimum.
+
+**Execution-specific recovery:** this whole N=1 CQ implementation has `gamma1=-12.444292681318665714...`, not the positive 1/N_h signal of the different globally scalarized reporter in sections 1-2. It executes and pays every integer trace-copy. When the old normal-row compatibility holds for an actual additional same-execution source, substitute `|gamma1|` into the denominator: `||v||_inf<=h sup||r_rest,h||_inf/(4|gamma1 a_J,h|)`. No query/work efficiency comparison or free removal of a trace normalization is implied.
+
+Reproduce the joined calculation, which IMPORTS the original price checker only after verifying its exact Git blob and preserves all historical receipts:
+
+```bash
+python3 02_REGISTRY/research/sources/d0_primary_normal_source_recovery_2026-10-21/constitutive/check_master_material_composition.py
+```
+
+[Constitutive RESULT.json](constitutive/RESULT.json) is the actual new output. It includes the consumed 23 bounded original checks, symbolic general replication/auxiliary identities, 75-digit nonlinear branch checks, unequal diagnostic site weights and explicit false-off-shell/omitted-density/upstream-source controls. Normal and optimized runs match byte-for-byte. The same execution's whole field/source and causal proofs are consumed, not freshly re-proved by this bounded scalar calculation.
+
+The architectural next gate is now explicit: primitive moving-field-query admission and compulsory absolute Book/CQ valuation for THIS concrete programme, plus genuinely independent upstream equations. A new optional detector, a separate full128 information cut or a rank34 inverse cannot substitute for those maps. The nonlinear constitutive reduction and primary stationary recovery are already available consumers once the same physical programme is supplied. `GR_closed=false`.
