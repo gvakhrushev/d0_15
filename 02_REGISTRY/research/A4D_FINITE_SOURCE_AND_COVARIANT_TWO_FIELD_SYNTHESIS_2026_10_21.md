@@ -533,3 +533,20 @@ its induced input change; they do not posit the separate family F_a=aF.
 Together, the results rule out a free scalar compensator while retaining the
 actual source and all paid failure histories. The full Book03 memory/Info/work
 valuation and physical admission remain open. GR_closed=false.
+
+
+## 8. CRITICAL NATIVE→CONTINUUM normalization/orientation gate (21 October, subsequent same-PR intake)
+
+Consume [the exact signed face and finite rank-two audit](A4D_STAR_CONTINUUM_FACTOR_TWO_AND_RANK2_ORIENTATION_GATE_2026_10_21.md). It takes the LITERAL original accepted \(G_2/\star/\epsilon\) six-based-face density and the STANDARD curvature tensor convention used in the present continuum action, without postulating their equality. On the specified **positively oriented Cartesian +--- coframe chart** a single original face has
+
+\[
+\mathcal L_{\star,\mu\nu}=-\frac12\det(e)\,R_{\mu\nu}^{\mathrm{standard}},
+\]
+
+with exact controls on all 36 face/generator pairs on three coframes (108 rational identities). Thus the literal original finite geometry query \(x_\star=\eta_{\rm query}^2h^{-4}\mathcal P_{\star,h}\) has continuum **leading argument** \(-x_{\rm cont}/2\), not \(x_{\rm cont}\), if the \(x_{\rm cont}\) in this memo denotes \(+\eta_{\rm query}^2eR_{\mathrm{standard}}\). A name change is NOT an operational query compiler. The null-oriented old all40 theorem retains its own frame/epsilon convention and is not invalidated by a Cartesian calculation; the required oriented frame transport is now an explicit missing typed bridge.
+
+On the already-owned rank-two non-VSI metric with its exact finite two-scalar current history, the previous \(\sigma=-1\) detector slope \(\lambda_-=-\kappa\) and old \(e\mu=\kappa\) continuum calibration have **nonzero** original Cartesian finite-source limits: \(E_{e^0_t}\to3e^{-1/4}\), \(E_{e^1_x}\to-3e^{-3/4}\) at the normalized \(r=1\) site. Matter sources remain exactly zero. Thus the physical/native all42 root cannot be claimed by importing the continuum representative with this particular choice of normalization.
+
+There is a **positive constructive alternative using an ALREADY existing detector branch, NOT a newly fitted action**: \(\sigma=+1\), \(\lambda_+=+\kappa\) and the determined volume calibration \(e\mu=2\kappa\) give \(G_{\mu\nu}=2\kappa e^{-1}\sum_A\partial_\mu\psi_A\partial_\nu\psi_A\), compatible with the literal original \(f_\star+\lambda_+q\) in this chart. On the genuine noncommutative six-face local finite interior stencil, independent complex-step checks of all16 coframe+24 link tangents show coframe and *physically normalized* connection source maxima tending numerically to zero proportional to \(h\), for \(h=1/8,\dots,1/128\); both matter rows are exactly zero. The full nonlinear CQ finite-\(f_h\) source, exact finite all42 roots, uniform analytic convergence, paid orientation choice and original field writer are NOT proved.
+
+**Parent acceptance change:** before consuming this nonnull continuum class as a physical finite D0 limit, first certify the proper/oriented frame transfer and **exact first-source Jacobian** between native \(f_\star\) and the standard \(eR\); retain the genuine sigma of the SAME Golden physical programme. The old \(\sigma=-1\) positive Brinkmann/null result and this Cartesian \(\sigma=+1\) rank-two candidate are different typed hypotheses until this transport is completed. Do not silently identify them by a shared \(\kappa\) decimal or adjust it by a fitted \(-2\). This is a source-normalization classification, not a new physical gravity selection. **GR_closed=false.**
