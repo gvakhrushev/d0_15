@@ -39,6 +39,25 @@ fixed processor to deriving its **native resource writer and price on the
 same complete history**. The actual Book03 information, absolute anchor,
 and native selection remain independent obligations.
 
+## Consumed result: the null source fibre is an additional readout test
+
+The [null two-field source-fibre classification](A4D_NULL_SOURCE_FIBRE_AND_READOUT_DESCENT_2026_10_21.md)
+proves that on the regular rank-two null continuum sector every local
+representation of the same metric and complete Einstein source is related by
+\(\Psi\mapsto f(\Psi)\), \(\Lambda\mapsto\Lambda/|f'(\Psi)|^2\), with
+\(f\) holomorphic or antiholomorphic. At fixed native metric, volume and
+\(\Lambda\,\mathrm{vol}_g=k_0\mu_0\), this fibre reduces to rigid Euclidean
+target motions. A nonconstant map needs its actual positive volume Jacobian
+and any induced cut/clock shift; it is not a free gauge relabelling.
+
+This classifies a continuum source fibre; it does not say which members the
+finite D0 record distinguishes. On the actual admitted map, the complete
+record, preparation price and Book03 source must either be shown invariant
+along every admissible fibre direction or supply their genuine response,
+including volume/cut/clock transport. Do not identify this continuum scalar
+fibre with the separately supplied fixed-processor programme bank or the
+cap-one/full128 record without a priced map.
+
 ## Gate A — operator and source identity
 
 [Book03 §03.1.3](../../01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md)
@@ -86,6 +105,12 @@ Do not identify the N=1 CQ execution with the original full128 tape or the coher
 
 For every genuinely independent zeta coordinate, derive the Euler equation of the same full price and the reaction of any actual constraint. Do not treat bank-generated states as free initial inputs; do not assume every independent input lies in the paid rank-two cut. The full LEFT-orbit calculation already shows that a genuinely free orbit can screen the moving-query source, while the paid rank-two cut has a nonzero normal reaction. The admitted physical input class must therefore be stated and derived from the actual programme.
 
+On the regular rank-two null branch, also test the complete source-preserving
+target fibre above against the actual native volume, record cut, clock and
+independent preparation coordinates. Fixed native volume removes
+nonconstant target maps only when \(\mu_0\) and the metric are actually fixed;
+any permitted joint transport must carry its real Jacobian and full price.
+
 After eliminating only generated states with the causal adjoint, verify simultaneously:
 
 - all 42 original field rows;
@@ -118,7 +143,10 @@ where possible:
    separately from the vanishing downstream processing source;
 5. the literal Book03 branch data \((H,q_H,c_H,I_H)\) and its full source
    on this same tape, including the absolute anchor and clock/work terms;
-6. the residual against the original 42-source identity and all independent
+6. the response of the complete record/price along every admitted
+   same-metric/same-source null fibre direction, with the native volume,
+   cut and clock transport included;
+7. the residual against the original 42-source identity and all independent
    input equations.
 
 Reject a candidate immediately if it fails any one of these identities. Do
@@ -137,6 +165,7 @@ The covariant two-field stationary-set correspondence, explicit rank-two non-VSI
 
 The native resource writer and its genuine input price, the common admitted
 map \(P\), compulsory complete Book03 valuation, native stationary/constraint
-selection, and uniform physical refinement have NOT been established. Keep
-PR #334 Draft and `GR_closed=false`. This remains the single next closure
-gate; do not start another geometry census or repeat completed proofs.
+selection, the actual readout of the classified null source fibre, and uniform
+physical refinement have NOT been established. Keep PR #334 Draft and
+`GR_closed=false`. This remains the single next closure gate; do not start
+another geometry census or repeat completed proofs.
