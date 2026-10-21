@@ -700,3 +700,85 @@ negative first source. The actual physical cut/clock/Delta_N/beta map,
 remaining stack, Info/work and joint stationarity still must be derived.
 This supplies a typed Book-source test and route restriction, not a
 new physical action, all42 source equality or native GR/raw216 closure.
+
+## 21. Actual stage clock: phasewise corners before condensed assembly
+
+The [literal stage-clock application](NATIVE_STAGE_CLOCK_AND_POINTED_DESCENT.md)
+now applies section20's clock test to the existing Book03 fifteen-operation
+order apparatus, with its full record/spin and declared sixteen-stage
+reversible extension. A start-only cut has zero corner after15 transitions.
+A clock-spanning cut instead gives one compressed data operator for EACH
+cyclic schedule window, not one completed program times clock multiplicity.
+
+The actual identity/order corners at seed0 are I4 and p^3I4; at seed1 both
+are aI4, a=sqrt(p). These two exact windows exclude a COMMON clock factor
+T tensor D_program. Thus the owned generic stage construction/equal
+inventories do not establish section20's factorization. Off-seed windows
+belong to the full encoded cyclic extension; the reported original trial
+only executes the first15 transitions from seed0. No physical clock wrap
+or failure theorem for the unsupplied CAR stopped controller is asserted.
+
+Computing all sixteen blocks nevertheless gives an exact positive Book
+feedback difference -16log(1-4zp^3), 0<z<1. The identity feedback has
+four zero, two p^2 and ten p blocks; order replaces only the four zero
+blocks by(1-p^6)=4p^3, each on spin4. Thus full-clock pricing retains
+the order signal, with FOUR times the seed0 difference rather than
+sixteen. Failure of the shared factor calls for this complete operator,
+not deletion of the feedback or an assumed multiplicity.
+
+This positive formula evaluates the feedback on the completed macro
+argument W^15. On the SAME full-clock cut, ONE autonomous W instead
+has fourteen zero and two p^2I4 feedback blocks for BOTH programs:
+S_fb(W)=-8log(1-zp^2), with no program contrast. The stage compiler
+does not identify either W or W^15 with the physical Book03 U_N/tick.
+Actual tick-to-macro action/source transport, including the other stack
+terms, must be derived before promoting the macro penalty to that source.
+
+The existing condensed price-naturality/relative-history results are now
+applied to this precise gap. Assembly must intertwine the whole pointed
+execution (unitary, positive pairing, input embedding and active cut).
+This then transports A=i*Ui and F=I-A*A, but retains the ordinary trace
+of every new complement. It preserves a supplied clock/cut and does not
+choose a nonzero return, a compulsory P_N or a trace normalization.
+
+The next positive substitution is the actual complete CAR stopped-controller
+chronology and terminal-status/work comparison on its admitted cut. Compute
+its full corner; apply the factorized section20 bound only if it supplies
+the shared T hypothesis, otherwise retain the phasewise/unfactorized Book
+feedback and all sources on the actually identified tick argument.
+Physical elapsed-clock identification, complete
+Book Info/work and the existing joint-source/GR/raw216 obligations remain.
+
+## 22. Actual archive elimination: coherent return before price selection
+
+The [literal clock-Schur application](NATIVE_CLOCK_SCHUR_RETURN.md) now
+constructs section21's missing algebraic tick-to-return map on the owned
+apparatus. With P=clock0 tensor the COMPLETE apparatus16, the other15
+clock stages have nilpotent archive transport D^15=0. Only archive
+index14 returns. Exactly16 transitions, including the final idle wrap,
+give the full monodromy M=U15...U0. The Schur operator is I-t^16M and
+the archive determinant is1; det_256(I-tW)=det_16(I-t^16M), with NO
+extra factor16. This is a computed clock elimination, not a chosen trace
+normalization. Full resolvents/logs remain singular at t=1 here.
+
+On record-X sectors the actual identity/order monodromies are I/Z and
+(G*ZG)/G^2, each on spin4. Their determinant ratio is
+[1+4p^2 q/(1-q)^2]^4, q=t^16. Thus the marked coherent loop statistic
+-logdet(I-qM) has a negative order difference, unlike the distinct
+positive prepared Book-complement macro statistic. The return keeps
+pretrace order amplitudes and the complete record; it is not a Born
+probability or a positive feedback operator.
+
+The complete-apparatus feedback is I16 for one W and0 for the returned
+W^16. Only a separately supplied prepared cut j then gives the original
+I4/p^3I4 corners and0/(1-p^6)I4 leakage. The exact returned source
+retains16t^15 M dt+t^16 dM in actual stage order. Neither a free clock
+reset, fresh IID record, physical t/z/weight nor full Book price follows.
+
+This resolves the finite operator return map for the declared cyclic
+extension, while preserving the different original pre-wrap trial.
+The positive native consumer is to derive the ORIGINAL CAR controller's
+actual return, archive determinant and all sources on its admitted
+physical tick/cut, then bind its complete Book weight/Info/work valuation.
+Condensed assembly must transport that pointed map; it does not choose
+the valuation. Same-initial realization, all42 sources, GR and raw216 stay open.
