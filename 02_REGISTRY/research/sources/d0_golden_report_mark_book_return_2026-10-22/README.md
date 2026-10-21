@@ -92,6 +92,17 @@ For `C_t>=0`, `0<zeta<1`, `n>0`, put `b_max=||C_t||`. The exact source coefficie
 ```
 Consequently a TRUE source-normalized refinement must control more than finite-mesh `Tr C_t>0`: it needs positive uniform bounds on the actual normalized early return, readiness/net charge contrast, and clock/cut transport in the original physical source norm. The inequality is a direct eigenvalue bound, not a new native regularity assumption claimed already proved.
 
+
+### Source-size upper budget and a decisive original HJR null-shear control
+
+Because the actual marked corner obeys `0<=C_t=W†P_init W<=N=n I`, all eigenvalues satisfy `0<=b_j<=n`. The same exact source therefore also has the **upper** bound
+```
+|D_r J| <= r_R*d * [zeta/(1-zeta)] * |u_1-u_0|/n .
+```
+This pairs with the previous strict lower bound. Even though the finite-mesh source is nonzero whenever the three gates pass, it may be small or tend to zero under actual readiness/cut/refinement. The original Book fugacity and true reference rank must be retained when comparing its absolute size to the true thermal source; a nonzero multiplier alone does not prove the complete native action calibrates gravity.
+
+There is also a FIXED-NATIVE GEOMETRY negative control against simply appending this price to an unrelated whole HJR. Consume `A4D_BRINKMANN_REFERENCE_COCYCLE_GR_BREAKTHROUGH_SYNTHESIS_2026_10_20.md`, §2 and `d0_global_result_composition_2026-10-20/FULL_PRICE_COMPOSITION.md`, (18). On the exact original constant-H null shear `H=2t`, the based plaquettes are identity, the matter gradients vanish, and the selected two-band reporter's `r_a(y)` is constant: hence `D_t r_a=0` and the new marked report-feedback gives `D_t J_report=0`. But for the UNCHANGED full original HJR/positive-adjoint carrier the independently published complete normalized full source has `L^(-4) D_t S_HJR>1/200000000` for `L>=256` under its stated hypotheses. Thus a proposed genuinely ADDED `S_HJR + J_report` with no other source cannot equal the Einstein/J2 first source on that flat direction. **The full cost/heat/Info/clock/reference must be recomposed on ONE real programme**; the present positive marked-return source cannot be used as a fitted patch that cancels a distinct HJR source. This is a scoped conditional obstruction, not a no-go for a newly derived full Book programme.
+
 ## 3. Consumer: the already-owned 42-source equality, with NO fitted Einstein coupling
 
 For one genuine shared local execution (same input, report, cut, early corner and cost-mark), suppose all original spatial addresses share the SAME normalized ratio `C_t/n_t` on the primary common-null stratum up to genuinely common charged-prefix scaling, and the same `r_a(y)` are supplied by the original two-source-moment instrument. Then
