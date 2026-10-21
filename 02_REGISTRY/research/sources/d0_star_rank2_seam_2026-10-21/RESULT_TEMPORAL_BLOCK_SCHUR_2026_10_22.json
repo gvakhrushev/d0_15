@@ -1,0 +1,52 @@
+{
+  "status": "PASS_EXACT_TEMPORAL_LOCALITY_AND_NUMERICAL_BLOCK_SCHUR_DIAGNOSTIC",
+  "source": "existing configured local N=1 CQ original 6-face plus 2-real CAR independent-source",
+  "original_gauge_exact": "residual SO+(1,3)^(n-2), 6(n-2) redundancies",
+  "exact_temporal_locality": "Every time-cell price S_j depends only on fields j and j+1; D E_j / D x_k = 0 for |j-k|>1",
+  "runs": [
+    {
+      "n": 4,
+      "reduced_source_size": 114,
+      "time_block_sizes": [
+        36,
+        36,
+        42
+      ],
+      "offband_max": 0,
+      "block_schur_cond": [
+        19700.43578479487,
+        589370.3463375487,
+        428954.7505656569
+      ],
+      "block_vs_dense_inverse_error_inf": 9.188738658849616e-11,
+      "jac_min_singular_at_Cauchy_seed": 0.0005921284443624295
+    },
+    {
+      "n": 5,
+      "reduced_source_size": 150,
+      "time_block_sizes": [
+        36,
+        36,
+        36,
+        42
+      ],
+      "offband_max": 0,
+      "block_schur_cond": [
+        29295.249827883155,
+        1344606.9270007245,
+        790379.6925955198,
+        659186.4612512303
+      ],
+      "block_vs_dense_inverse_error_inf": 3.7061909097246826e-10,
+      "jac_min_singular_at_Cauchy_seed": 0.00030890367460084206
+    }
+  ],
+  "scope": {
+    "calculations_at_Cauchy_seed_not_stationary_root": true,
+    "true_original_local_price_interface": true,
+    "arbitrary_4D_correlated_original_Book_price": false,
+    "rigorous_uniform_Schur_inverse": false,
+    "interval_validated_stationary_root": false,
+    "GR_closed": false
+  }
+}
