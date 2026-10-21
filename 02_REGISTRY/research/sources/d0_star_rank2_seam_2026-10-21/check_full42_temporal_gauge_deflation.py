@@ -186,7 +186,7 @@ def run(n,weights,max_nfev=120):
 
 def main():
     ap=argparse.ArgumentParser()
-    ap.add_argument("--intervals",type=int,choices=(3,4),default=3)
+    ap.add_argument("--intervals",type=int,choices=(3,4,5),default=3)
     ap.add_argument("--pf",default="")
     ap.add_argument("--max-nfev",type=int,default=120)
     ap.add_argument("--json",type=Path)
