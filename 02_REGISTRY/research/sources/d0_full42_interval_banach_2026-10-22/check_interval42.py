@@ -41,23 +41,40 @@ def check_original_sources():
         assert got==sha, ("original owner changed",name,got,sha)
 
 def exact_rational_preconditioner():
-    """Only GENERATE a candidate A from the original native 42-row source.
+    """Only GENERATE a candidate A from the ORIGINAL whole scalar price.
 
-    All 1764 entries are then frozen into decimal rationals and verified by
-    interval I-A*H below. Thus numpy/scipy are NOT trusted for existence.
+    Real Hessian proposals use high-precision point arithmetic and imaginary
+    finite differences of that same 42-coordinate scalar CQ PRICE, never the
+    native Euler residual with a different h-scaling of matter/link rows.
+    Their truncation and floating inversion are NOT assumed mathematically
+    accurate: the rigorous interval inequality ||I-A*H||<1 independently
+    certifies the EXACT rational A constructed from these proposals.
     """
     import numpy as np
-    from scipy.optimize._numdiff import approx_derivative
-    origin=REPO/"02_REGISTRY/research/sources/d0_star_rank2_seam_2026-10-21"
-    sys.path.insert(0,str(origin))
-    from check_full42_n1_single_internal import problem
-    _,_,_,_,_,euler=problem(n=2,weights=[1.,1.])
-    witness=json.loads((origin/"FULL42_NUMERICAL_REFERENCE.json").read_text())
-    z=np.array(witness["witnesses"]["uniform"]["params42"],dtype=float)
-    Jfloat=approx_derivative(euler,z,abs_step=2e-5,method="3-point")
-    A=np.linalg.inv(Jfloat)
-    rationals=[[format(float(A[i,j]),'.17g') for j in range(N)] for i in range(N)]
-    rational_norm=max(sum(abs(Decimal(v)) for v in row) for row in rationals)
+    mp.dps=57
+    model=CQ(mp)
+    z=rational_center(mp)
+    n=42
+    delta=mp.mpf("1e-7")
+    S0=model.price(z).real
+    H=np.zeros((n,n),dtype=float)
+    def sample(i,si,j=None,sj=0):
+        t=z.copy()
+        t[i]+=1j*si
+        if j is not None:
+            t[j]+=1j*sj
+        return model.price(t).real
+    for i in range(n):
+        H[i,i]=float(-2*(sample(i,delta)-S0)/delta**2)
+        for j in range(i+1,n):
+            value=-(sample(i,delta,j,delta)-
+                    sample(i,delta,j,-delta))/(2*delta**2)
+            H[i,j]=H[j,i]=float(value)
+    A=np.linalg.inv(H)
+    rationals=[[format(float(A[i,j]),".17g") for j in range(n)]
+               for i in range(n)]
+    rational_norm=max(sum(abs(Decimal(v)) for v in row)
+                      for row in rationals)
     assert rational_norm<Decimal(40)
     return rationals,rational_norm
 
