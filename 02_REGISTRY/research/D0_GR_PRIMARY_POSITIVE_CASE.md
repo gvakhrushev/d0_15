@@ -374,3 +374,7 @@ compulsory Book03 Info/absolute valuation keep their actual source tests.
 Generated paid-bank inputs are not free initial controls, and causal
 elimination does not cancel a genuinely independent upstream derivative.
 The previous field-minimum exclusion and raw216/physical-GR scope remain.
+
+## Physical cap-one execution composition
+
+The [same-execution physical composition](A4D_PHYSICAL_CAP1_EXECUTION_COMPOSITION_2026_10_21.md) places the moving 8D query jet, absolute Book03 valuation and independent-input stationarity on one finite N=1 carrier. It finds the exact four-G/two-CNOT value word and the complete unresolved jet/price/admission equations, while solving the free full-orbit commutator and the original rank-two normal reaction. The repository also contains a separate restricted full-16D-matter field-to-CAR transition, whose endpoint metric update and chronology are differentiated on all ten metric and sixteen matter coordinates. Its endpoint-isometry is only a premise, physical admission is explicitly false, and it is not identified with the cap-one 8D two-query report or its full Book03 price. The 42-field CQ source therefore remains exact only on its declared interface; no common admitted field→CAR→report→Book03 map has been shown. `GR_closed=false`.

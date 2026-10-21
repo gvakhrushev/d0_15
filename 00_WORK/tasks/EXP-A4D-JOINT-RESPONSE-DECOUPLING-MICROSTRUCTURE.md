@@ -15,6 +15,45 @@ Assembly-Slot: `constitutive`
 
 ## Strategic synthesis continuation — 2026-10-17
 
+### 21 October: physical admission of the same cap-one complete source
+
+Continue the existing Draft334 / native-programme-v1 at input
+`92c00ccbf39e6e21e4383f7a7b573ab7c7c6f1be`. Phase: native realization and
+final composition. Consume the proved cap-N=1 complete CQ source and original
+integer spatial weights in
+`A4D_SAME_EXECUTION_SPATIAL_WEIGHTS_AND_COMPLETE_SOURCE_2026_10_21.md`.
+The integrated physical result is now
+[A4D_PHYSICAL_CAP1_EXECUTION_COMPOSITION_2026_10_21.md](../../02_REGISTRY/research/A4D_PHYSICAL_CAP1_EXECUTION_COMPOSITION_2026_10_21.md),
+with frozen proofs/checkers in
+`02_REGISTRY/research/sources/d0_physical_cap1_execution_composition_2026-10-21/`.
+It gives an exact four-G/two-CNOT query value, proves that this fixed word
+misses the required query jet, derives the complete Book03 absolute-price
+residual, and solves both the free full-orbit input equation and the original
+rank-two cut reaction. It also recovers the already existing restricted
+16D field-to-CAR transition on the full 16-component matter sector, with its
+conditional metric update and chronological price source. That transition
+is not physically admitted, is not the cap-one 8D report instrument, and is
+not joined to Book03's complete price. The remaining datum is one admitted
+and fully priced common map connecting the 42 CQ directions to this CAR
+transition, the 8D report effects and every genuinely independent upstream
+input. The same cap-one CQ source and its causal generated-state Euler lift
+remain exact. No Info rule, initial-state selector or physical constraint
+is supplied by name.
+Preserve all 16+24+2 source rows, the fixed boundary, clock and original
+refinement. `GR_closed=false`.
+Root integrated three bounded read-only proofs with their source pins and
+narrow checks into this owner; the query and input proofs also have reciprocal
+bounded reviews. No separate task or PR was created. A usable completion must
+identify the SAME witnesses, not only isomorphic operators or a matching
+scalar. The decisive tests are the literal finite native word and its
+variation image, the full absolute price difference and source, and the actual
+allowed preparation tangent including every retained upstream term. Keep each
+negative result scoped and derive the exact remaining condition; do not add
+Info, a reset, a compensating source or a physical selector. No unchanged
+root/Lean suite replay, lifecycle or GR/Book acceptance promotion is
+authorized by this supporting application.
+
+
 ### 20 October: whole-family CAR source, causal completion and absolute Book valuation
 
 Continue the same Draft334 / native-programme-v1. Input acfe3e19 joins

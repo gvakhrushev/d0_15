@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "input_commit": "92c00ccbf39e6e21e4383f7a7b573ab7c7c6f1be",
+  "source_files_pinned": {
+    "moving_query": 19,
+    "book_binding": 12,
+    "independent_input": 20,
+    "restricted_car": 5
+  },
+  "unique_source_files": 47,
+  "frozen_artifact_files": 19,
+  "narrow_controls": {
+    "moving_query": {
+      "status": "PASS",
+      "checks": 17
+    },
+    "book_binding": {
+      "status": "PASS",
+      "checks": 17
+    },
+    "independent_input": {
+      "status": "PASS",
+      "checks": 21
+    },
+    "restricted_car": {
+      "status": "PINNED_SCOPE_ONLY",
+      "recorded_exact_controls": 33,
+      "replayed": false
+    }
+  },
+  "scope": "same cap-one algebra/source composition plus a source-pinned existing restricted CAR result; no physical admission or GR closure"
+}
