@@ -448,6 +448,19 @@ herald composition is summarized in the
 [read-first primary-case update](D0_GR_PRIMARY_POSITIVE_CASE.md#native-preparation-and-the-common-price-weld-21-october).
 It closes the native port-cost component under its stated map, not the
 compulsory full Book03 valuation or same-history physical admission.
+The [retained-entropy input theorem](A4D_COMPLETE_RETAINED_ENTROPY_INPUT_EULER_2026_10_21.md)
+now solves the finite input Euler equation for the declared coherent-record
+and reference-adjoined cuts, with the paid boundary retained. It does not
+identify either cut with compulsory Book03 Info or bind it to the physical
+READY/query history; that common-execution weld remains open.
+
+The concurrent [Brinkmann all40 update](A4D_ARBITRARY_BRINKMANN_ALL40_CARTAN_DISCRETE_EINSTEIN_2026_10_19.md)
+also fixes the sign type: the configured EPS_PLUS face contraction is the
+negative of the canonical \(G_2\star\) contraction, and an explicit
+\(x\mapsto-x\) price pullback preserves the sourced equation. Do not carry
+the matter coefficient unchanged across those coordinates or identify this
+two-tick \(J_2\) with the separately pinned N=1 price. The [sign certificate](A4D_ORIGINAL_STAR_NULL_CART_SIGN_AND_ALL_ORDER_CQ_RETYPE_2026_10_21.md)
+does not provide physical Book03 selection.
 
 One proposed shortcut for the N=1 primitive has now been eliminated
 exactly over the full observer-angle interval: if the existing two-step

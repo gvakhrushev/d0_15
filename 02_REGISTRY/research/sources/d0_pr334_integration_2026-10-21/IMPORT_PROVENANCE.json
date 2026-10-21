@@ -114,7 +114,7 @@
       "archive_sha256": "c2a72fa3361dd0f09b2b17a0595e7ce2dba9769640b58f6cede7fd9a70468f46",
       "status": "Already published in this PR; no duplicate files applied.",
       "publication_commit": "fedbb1ec0386ebd045363c3a64b87966f4665850",
-      "publication_commit_is_ancestor_of_pr_head": "2b8c4860e831064bb7ddb77339a23c9aef5452f5",
+      "publication_commit_is_ancestor_of_pr_head": "44e46cfd0b43fbb18acc953584d6c62849dc8ad7",
       "repository_archive_files_byte_identical": 10,
       "replay": {
         "runtime": {
@@ -134,7 +134,80 @@
         "uniform_mesh_gap_proved": false,
         "independent_review": false,
         "GR_closed": false
-      }
+      },
+      "latest_verified_pr_head": "44e46cfd0b43fbb18acc953584d6c62849dc8ad7"
+    },
+    {
+      "attachments": [
+        "d0_retained_entropy_input_euler_2026-10-21 (1).zip",
+        "PROOF.md",
+        "VALIDATION.json"
+      ],
+      "archive_sha256": "98bafd97e239dfef5c50ba146a86d0255e12eaa18065fdcb8b0d5bd32f952424",
+      "standalone_attachment_sha256": {
+        "PROOF.md": "0842064ccb7a4b3192ccea00e7e411d8bea7454a83d53cf7145b6be7c8d76ffa",
+        "VALIDATION.json": "d55401799e07fe90c76711cd8779414ac50fe40de3bcb7009c7e24a156ae61b9"
+      },
+      "standalone_files_match_zip": true,
+      "delivery_manifest_sha256": "9b93dded16cc7246a0d1fcbde5d13bf51d53331ebf13fb71d19fc60ea15028c0",
+      "status": "Already published on PR #334; not reapplied or duplicated.",
+      "publication_commit": "931b8c123499f11d63a8a49be1ff8aa1c0d4ad40",
+      "publication_parent": "2b8c4860e831064bb7ddb77339a23c9aef5452f5",
+      "publication_commit_is_ancestor_of_latest_verified_head": "44e46cfd0b43fbb18acc953584d6c62849dc8ad7",
+      "latest_verified_head_at_import": "c28187555ef973b7bdb80e48655a2ac5ae8c85b0",
+      "committed_payload_files": 9,
+      "payload_hashes_verified_against_live_git_tree": "PASS 9/9; sizes and SHA-256 match DELIVERY.json",
+      "zip_crc": "PASS",
+      "offline_input_copy": {
+        "not_committed_as_duplicate": true,
+        "git_blob": "ee8de4635d24c668949ac9a0186616ab7d59f2ed",
+        "same_blob_in_existing_native_preparation_packet": true
+      },
+      "replay": {
+        "checker_sha256": "966d4e564790aaf5be24d8c7a2a1ec6d851a1e60d49776890fc263387dc79e2d",
+        "status": "PASS",
+        "checks_per_mode": 63,
+        "normal_and_optimized_stdout_sha256": "7de3f36be07ad5468a7812b796a729128a4f7a32f242752986d160ef2f4a441a",
+        "normal_equals_optimized": true,
+        "semantic_mutations_rejected": 4,
+        "runtime": {
+          "python": "3.13.5",
+          "numpy": "2.3.5",
+          "scipy": "1.17.0",
+          "sympy": "1.14.0"
+        }
+      },
+      "scope": {
+        "independent_review": false,
+        "fresh_Lean": false,
+        "repository_wide_CI_claimed": false,
+        "full_spatial_rank128_or_all42_root": false,
+        "physical_Book03_Info_selected": false,
+        "GR_closed": false
+      },
+      "local_replay": {
+        "runtime": {
+          "python": "3.9.6",
+          "numpy": "2.0.2",
+          "scipy": "1.13.1",
+          "sympy": "1.14.0"
+        },
+        "checker_exit": "PASS for normal and optimized modes; both report the packet check count",
+        "normal_equals_optimized_bytes": true,
+        "validate_packet": "NOT_REPRODUCED_BYTE_FOR_BYTE: its intentional frozen-stdout comparison failed under this older runtime",
+        "expected_vs_local": {
+          "json_structure_and_strings_match": true,
+          "max_numeric_absolute_difference": 0.0009339688629966814,
+          "largest_difference_path": "native_diagnostics.two_round_pointer_vs_coherent_gap",
+          "expected": 0.15301979444721897,
+          "local": 0.1520858255842223
+        },
+        "semantic_mutation_replay": "not rerun locally because validate_packet stopped at frozen-output comparison",
+        "disposition": "Published VALIDATION.json remains the attached source; no expected output was rewritten and no local exact-replay PASS is claimed.",
+        "checks_per_mode": 63,
+        "optimized_check_count": 63
+      },
+      "latest_verified_head_after_concurrent_updates": "44e46cfd0b43fbb18acc953584d6c62849dc8ad7"
     }
   ],
   "integrated_route_status": {
@@ -143,21 +216,30 @@
     "original_native_Book03_route_writer": "UNDEFINED at the original Book03/HJR gate; the paid moment writer and measured READY sampler are alternative interfaces not yet transported into that stack",
     "alternative_paid_moment_writer": "Constructed on its declared addressed Golden/CQ interface; compulsory Book03 cut/heat/Info/controller binding and physical refinement remain open",
     "measured_Golden_READY_source": "Complete measured CQ prefix Cost-Info and inverse-PF all42 source; does not provide the actual moving CAR/holonomy source input or Book03 pathwise Info",
-    "next_missing_interface": "Same-history CAR/holonomy source-effect query and complete branchwise Book03 valuation on the READY tape; for the separate Golden/Beatty selector, prove paid-history-to-return-time equivariance",
+    "next_missing_interface": "Bind the actual preparation, address history, admitted CAR/holonomy queries, branchwise Book03 H+J+R, clock/work and independent physical input equations on one tape; resolve the AB/BA controller diamond or derive a native stationary/constraint selector, then solve the compatible whole-slab 42-row system under the actual PF regularity map. Golden/Beatty still separately requires paid-history-to-return-time equivariance.",
     "native_full128_preparation": "Inverse-square invariant DATA state and exact induced first jet under stated recycling assumptions; exact port-cost component retains initial boundary, but other charges and compulsory Book03 Info remain unassigned.",
     "rank2_full_N1_source": "Correctly retyped same nonlinear N=1 price gives a bounded finite O(h) 16+24+2 source sequence on the tested non-VSI carrier; the first material row is nonzero, so this is not an exact root.",
-    "whole_slab_Cartan_test": "Coherent three-slice correction has O(h) coframe source; isolated central-link correction leaves an O(1) coframe source. Neighbor-link rows and a coupled exact root remain unsolved."
+    "whole_slab_Cartan_test": "Coherent three-slice correction has O(h) coframe source; isolated central-link correction leaves an O(1) coframe source. Neighbor-link rows and a coupled exact root remain unsolved.",
+    "retained_entropy_input_euler": "Solved for the declared complete-coherent-record E and reference-adjoined ER valuations: faithful-Choi finite free-input minimum and its exact equation, plus fixed-RIGHT/long-horizon results under stated conditions. This does not select Book03 or close the physical independent-preparation equations.",
+    "full128_dynamic_vs_variational_input": "The diagnostic has noncommuting rho_* and Y; long-horizon free-input minimizer is phi^(-Y)/Tr(phi^(-Y)), distinct from the dynamic inverse-square state. Its optimized field source is nonzero.",
+    "moment_writer_native_selection": "A strict finite complete-CQ competitor lowers the root-node price in a common catalogue if both orders are admitted; the same-initial-controller AB/BA admission is still unproved, so no physical selection conclusion follows.",
+    "rank2_all_time_PF_regularity": "Exact global six-face truncation is f_star,h=h*c(r)+O(h^2), with c(r)=3(r^4-1)exp(-r^2)/(4r^2); a positive PF lower bound alone does not control the nonlinear material source. Native PF smooth sampling or a paid source-preserving compensation is open.",
+    "brinkmann_eps_plus_sign_typing": "The concurrent all40 source types the configured EPS_PLUS contraction P_B separately from canonical P_C, with P_B=-P_C on six faces; the x_C=-x_B pullback flips both geometric coefficient and curvature ratio, preserving the sourced equation. Its configured two-tick J2 is not identified with the pinned N=1 price owner or compulsory physical Book03 selection."
   },
   "concurrent_pr_update_review": {
-    "observed_head": "2b8c4860e831064bb7ddb77339a23c9aef5452f5",
+    "observed_head": "44e46cfd0b43fbb18acc953584d6c62849dc8ad7",
     "preserved_results": [
       "Paid finite moment-field writer, counted-CQ price, and controlled all42 source secants.",
       "Original stopped Golden READY history with exact measured prefix-code Cost minus CQ entropy cancellation and inverse-PF all42 source.",
       "Correctly sign-retyped nonlinear N=1 rank-two price, with full finite 16+24+2 O(h) source and a nonzero material row.",
       "Scoped whole-slab compatibility test: coherent three-slice link transport avoids the isolated-link O(1) coframe spike, but does not solve neighboring link rows.",
-      "Exact covariant temporal link-difference identity and original-owner whole-CQ replay README; the new README is an integration guide, not an independent replay of every checker."
+      "Exact covariant temporal link-difference identity and original-owner whole-CQ replay README; the new README is an integration guide, not an independent replay of every checker.",
+      "Retained-entropy theorem solves the declared complete coherent-record and ER-adjoined input Euler problems, retaining the paid initial boundary; the actual Book03 input/valuation remains unidentified.",
+      "Exact all-time six-face truncation and hostile PF-jump control: the centered r=1 cancellation is not uniform, and positivity alone does not ensure a vanishing nonlinear material source.",
+      "Native-selection test gives a strict finite CQ competitor in a common moment catalogue, while same-controller AB/BA admission remains the physical gate.",
+      "Typed all40 Brinkmann sign convention: EPS_PLUS P_B=-canonical P_C on six faces; the explicit price pullback preserves the sourced equation and does not bind the configured J2 to physical Book03."
     ],
-    "compatibility_boundary": "The full128 preparation, measured READY history, moment writer and rank-two N=1 test remain distinct carriers; none supplies the compulsory same-tape Book03 H+J+R valuation and physical root.",
+    "compatibility_boundary": "The dynamic full128 preparation, its two variational entropy cuts, measured READY history, moment writer and rank-two field source are not yet bound to one admitted physical Book03 execution. The new input Euler is solved only for its stated cuts; actual Book03, native input/controller selection, PF regularity and compatible all42 root remain open. The new sign typing is source-coordinate bookkeeping for its configured J2 and is not a physical Book03 selection.",
     "bounded_replays": {
       "rank2_full_n1_same_price": {
         "status": "PASS_DECLARED_FINITE_N1_TWO_FIELD_SOURCE_RETYPE",
@@ -171,9 +253,42 @@
         "neighbor_link_rows_solved": false,
         "exact_full_discrete_root": false,
         "analytic_identity": "delta P_0i(t)/h^2 = Z(t+h)P_0i(t) - P_0i(t)Z(t); smooth neighbor transport cancels the O(1) term."
+      },
+      "retained_entropy_input": {
+        "status": "PASS_PER_ATTACHED_VALIDATION",
+        "checks_per_mode": 63,
+        "normal_equals_optimized": true,
+        "semantic_mutations_rejected": 4,
+        "independent_review": false,
+        "full_spatial_all42_root": false,
+        "physical_Book03_Info_selected": false,
+        "local_runtime_note": "Normal and optimized checkers pass locally and are byte-identical, but validate_packet exact frozen-output comparison is not reproducible with Python 3.9.6 / NumPy 2.0.2 / SciPy 1.13.1; the largest numeric output difference is 9.3397e-4 in two_round_pointer_vs_coherent_gap. Four mutation rejections are supported by attached VALIDATION.json, not a fresh local mutation replay."
+      },
+      "all_time_pf_jump": {
+        "status_in_published_packet": "PASS_SCOPED",
+        "exact_truncation": "f_star,h(t)=h*3*(r(t)^4-1)*exp(-r(t)^2)/(4*r(t)^2)+O(h^2)",
+        "hostile_control": "positive neighbor-jump PF weights (1,2) yield nonzero timelike and spatial material-source limits; not asserted as actual native AF weights"
+      },
+      "brinkmann_snapshot_guard_after_44e46cfd": {
+        "status": "PASS",
+        "gr_assembly": "valid true, scientific_promotion false",
+        "agent_protocol": "PASS",
+        "remote_checks_at_review": "guards and lean-build SUCCESS"
       }
     },
-    "smallest_next_weld": "Run the two admitted CAR/holonomy source-effect instruments as query on the exact measured READY history; compute the actual upstream cost and full branchwise Book03 source on the same tape. Then solve the coupled gauge- and boundary-compatible 16+24+2 whole-slab equations with independent preparation/clock/work rows retained.",
-    "separate_selector_boundary": "For Golden/Beatty, prove paid-history-to-return-time equivariance before using the hierarchy average; the K913 prospective law is not yet that transport."
-  }
+    "smallest_next_weld": "Bind the actual preparation, address history, admitted CAR/holonomy queries, branchwise Book03 H+J+R, clock/work and independent physical input equations on one tape; resolve the AB/BA controller diamond or derive a native stationary/constraint selector, then solve the compatible whole-slab 42-row system under the actual PF regularity map. Golden/Beatty still separately requires paid-history-to-return-time equivariance.",
+    "separate_selector_boundary": "For Golden/Beatty, prove paid-history-to-return-time equivariance before using the hierarchy average; K913 is not yet that transport.",
+    "previous_observed_head": "c28187555ef973b7bdb80e48655a2ac5ae8c85b0",
+    "reviewed_concurrent_commits": [
+      {
+        "commit": "2961dc6ee4abcda0a0fb2aa36dc6ecd7e62a6535",
+        "result": "typed EPS_PLUS/canonical sign and source pullback"
+      },
+      {
+        "commit": "44e46cfd0b43fbb18acc953584d6c62849dc8ad7",
+        "result": "restored immutable Brinkmann evidence snapshot; guards and Lean build pass"
+      }
+    ]
+  },
+  "latest_verified_pr_head": "44e46cfd0b43fbb18acc953584d6c62849dc8ad7"
 }

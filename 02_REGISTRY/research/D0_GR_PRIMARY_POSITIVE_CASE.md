@@ -694,11 +694,11 @@ The same-price analytic auxiliary K remains identical to all orders after retypi
 ## Native preparation and the common-price weld (21 October)
 
 The [full128 preparation packet](sources/d0_native_preparation_closure_2026-10-21/README.md)
-now determines the invariant DATA state of the original recycling process:
+determines the invariant DATA state of the original recycling process:
 \(\rho_*=(D^2)^{-1}/\operatorname{Tr}(D^{-2})\) for invertible \(D\),
 unique under its stated strict traceless-contraction condition. It retains the
-full induced preparation derivative and classifies the singular dark sector.
-The exact finite port-cost value is
+induced preparation derivative and classifies the singular dark sector. Its
+exact finite port-cost value is
 \[
 C_{\rm port,n}=n(1+\kappa)+\operatorname{Tr}(\rho_0Y)
 -\operatorname{Tr}(\Phi^n(\rho_0)Y),\qquad
@@ -706,39 +706,95 @@ C_{\rm port,n}=n(1+\kappa)+\operatorname{Tr}(\rho_0Y)
 \]
 The initial-boundary term remains after DATA relaxation. The same packet finds
 a positive noncommuting two-round complementary Book determinant defect on a
-proper-Lorentz-link direction, so the scalar-shell correction cannot be
-removed as a free normalization. This prices the original port component; it
-does not price all label/factory/work terms or select Book03 Info. Its gap is
-not proved uniform under mesh refinement, and the limit is not an exact
-finite-time preparation.
+proper-Lorentz-link direction. This prices the port component, but not all
+label/factory/work charges or compulsory Book03 Info; its gap is not uniform
+in spatial refinement and the limiting state is not an exact finite-time
+preparation.
 
-This theorem is now read against two downstream results. The [measured Golden
-READY construction](A4D_ORIGINAL_GOLDEN_READY_COMPLETE_CQ_COST_INFO_PF_SOURCE_2026_10_21.md)
-uses the original stopped F/R history, preserves overshoots and failures, and
-has exact measured-prefix Cost-minus-CQ-entropy cancellation plus the
-inverse-PF all42 source. The shared spatial marginal does not identify its
-complete AF/RIGHT history, initial state, or absolute Book03 value with the
-full128 invariant-preparation process. Separately, the [same-price rank-two
-calculation](A4D_RANK2_FULL_N1_CQ_42_SOURCE_FINITE_CONSISTENCY_2026_10_21.md)
-finds an \(O(h)\) full 16+24+2 residual on the non-VSI finite carrier; its
-first material row is genuinely nonzero. The [whole-slab Cartan test](sources/d0_star_rank2_seam_2026-10-21/check_whole_slab_cartan_compatibility.py)
-shows the missing compatibility term explicitly. For the original temporal
-plaquette, the normalized link variation is the covariant difference
-\(\delta P_{0i}(t)/h^2=Z(t+h)P_{0i}(t)-P_{0i}(t)Z(t)\). A smooth correction
-transported to its neighbors cancels the order-one term and gives an
-\(O(h)\) coframe source; an isolated correction leaves the nonvanishing
-\(-PZ(t)\) term. The bounded replay measures about 0.779 for the isolated
-case and 0.0645 at \(h=1/8\), decreasing to 0.00884 at \(h=1/64\), for
-the coherent three-slice case. Neighbor-link rows and the coupled 42-row root
-are still unsolved.
+The latest [all40 Brinkmann source update](A4D_ARBITRARY_BRINKMANN_ALL40_CARTAN_DISCRETE_EINSTEIN_2026_10_19.md)
+types its six-face EPS_PLUS contraction \(\mathcal P_B\) separately from the
+canonical \(G_2\star\) contraction \(\mathcal P_C\), with the exact finite
+identity \(\mathcal P_B=-\mathcal P_C\). Pulling the same price through
+\(x_C=-x_B\) reverses both the geometric first-source coefficient and the
+curvature ratio, so the sourced Poisson equation is invariant. Its configured
+two-tick \(J_2\) coefficient is not thereby interchangeable with the pinned
+N=1 master-price owner, and neither convention selects compulsory physical
+Book03. The [typed sign/retyping certificate](A4D_ORIGINAL_STAR_NULL_CART_SIGN_AND_ALL_ORDER_CQ_RETYPE_2026_10_21.md)
+records this boundary explicitly.
 
-The missing weld is therefore a single admitted tape that carries the actual
-invariant preparation through the READY address process, executes the two
-CAR/holonomy source-effect queries with their independent preparation, clock,
-work and failure branches, and evaluates the compulsory branchwise Book03
-\(H+J+R\) price and all42 derivative on that same history. The measured CQ
-entropy is not a substitute for that Book03 valuation. Only after that
-source is fixed can the full gauge- and boundary-compatible whole-slab
-16+24+2 equations be solved. These packets provide the components and a
-precise next test, but not their source-preserving transport into one physical
-execution. \(\mathrm{GR\_closed}=\mathrm{false}\).
+The new [retained-entropy input Euler theorem](A4D_COMPLETE_RETAINED_ENTROPY_INPUT_EULER_2026_10_21.md)
+now solves the input variation for two explicitly declared prices:
+port Cost minus the entropy of the complete coherent record \(E\), and the
+separate \(ER\)-adjoined cut. For faithful finite Choi matrix and a freely
+variable DATA density, the coherent-cut problem has a unique positive input
+minimum with a strictly positive Hessian; its exact equation retains the
+finite Poisson boundary. At long horizon the free-input minimum is
+\(\rho_\infty=\varphi^{-Y}/\operatorname{Tr}(\varphi^{-Y})\), generally
+different from the dynamical \(\rho_*\). With the whole RIGHT Gram fixed,
+the limiting orbit equation is \([Y,\rho]=0\); at finite horizon the two
+cuts differ by the actual mutual-information derivative. Neither entropy cut
+is thereby identified with Book03.
+
+This closes a real mathematical input-Euler obligation for those declared
+prices, not the independent preparation equation of a fully admitted
+physical Book03 process. In the original CAR16/proper-boost diagnostic,
+\(\|[\rho_*,Y]\|_{HS}\approx1.87\times10^{-4}\), confirming distinct
+dynamical and variational inputs. At \(n=2048\), the solved free-input
+gradient is \(2.27\times10^{-11}\) and the optimized boost-coordinate field
+source is \(-3.9900140603\), with a neighboring-minimum secant
+\(-3.9900141076\). That run uses 16 active reference columns embedded in
+oldRIGHT128; it is not the full spatial rank128 preparation or a 42-field
+root. The packet has 63 checks, byte-identical normal/optimized outputs and
+four rejected semantic mutations; it has no independent review, full Book03
+selection, new Lean run or repository-wide CI claim.
+
+The [measured Golden READY construction](A4D_ORIGINAL_GOLDEN_READY_COMPLETE_CQ_COST_INFO_PF_SOURCE_2026_10_21.md)
+uses the original stopped F/R history, retains overshoots and failures, and
+gives exact measured-prefix Cost-minus-CQ-entropy cancellation plus an
+inverse-PF all42 source. Its spatial marginal is shared with the original
+address law, but its complete AF/RIGHT history, input preparation and absolute
+Book03 value have not been transported to the full128 invariant-preparation
+execution. Measured CQ entropy remains distinct from coherent-record entropy
+and from compulsory Book03 pathwise Info.
+
+For the non-VSI rank-two carrier, the [same-price full 42-source test](A4D_RANK2_FULL_N1_CQ_42_SOURCE_FINITE_CONSISTENCY_2026_10_21.md)
+gives an \(O(h)\) finite 16+24+2 residual, with a genuinely nonzero first
+material row. The [whole-slab Cartan test](sources/d0_star_rank2_seam_2026-10-21/check_whole_slab_cartan_compatibility.py)
+identifies the exact covariant temporal difference
+\(\delta P_{0i}(t)/h^2=Z(t+h)P_{0i}(t)-P_{0i}(t)Z(t)\): coherent neighbor
+transport preserves an \(O(h)\) coframe source, whereas a one-site link
+correction leaves an \(O(1)\) source near 0.779. The coherent three-slice
+replay decreases from 0.0645 at \(h=1/8\) to 0.00884 at \(h=1/64\), but
+neighbor-link equations and the coupled root remain unsolved.
+
+A further exact truncation result prevents overgeneralizing the center-site
+test. On the full homogeneous rank-two seed,
+\(f_{\star,h}(t)=h\,3(r^4-1)e^{-r^2}/(4r^2)+O(h^2)\); the stronger
+\(O(h^2)\) estimate occurs at \(r=1\), not uniformly in time. In the full
+nonlinear N=1 price, a positive lower bound on PF weights alone does not
+control neighboring material slopes. Discontinuous positive diagnostic
+weights produce nonzero limiting scalar rows; smooth sampled weights with
+neighbor differences \(O(h)\), or a source-preserving native compensation,
+are needed for the stated \(O(h)\) source transfer. The actual native AF
+weights have not been shown to satisfy that sampling map.
+
+The paid moment writer also now has an exact finite [native-selection test](A4D_MOMENT_WRITER_NATIVE_SELECTION_TEST_2026_10_21.md).
+Within one common catalogue its root node loses to an explicitly constructed
+competitor in complete CQ price, and retained code keeps apparatus states a
+trace distance at least the readiness probability apart even when decoded
+fields approach. This defeats the inference that the writer alone selects
+the Einstein node or supplies a smooth full-state lift. The price comparison
+is conditional on both prescribed orders being admitted from the same
+physical controller state; that AB/BA controller diamond, compulsory
+Book03 binding and any native stationary/constraint law remain open.
+
+The strategic next object is one common admitted tape carrying the actual
+preparation and address history, the two CAR/holonomy queries, every failure,
+RIGHT/reference, clock and work branch, and the literal branchwise Book03
+\(H+J+R\) value and derivative. Derive its input and field equations on that
+same tape; then solve the gauge- and boundary-compatible whole-slab 42-row
+system with the actual PF sampling regularity. The new input theorem supplies
+the Euler equations only for its two stated entropy cuts; the writer test
+supplies a conditional descent, not a physical selector. No source-preserving
+transport yet combines these carriers into one physical execution.
+\(\mathrm{GR\_closed}=\mathrm{false}\).
