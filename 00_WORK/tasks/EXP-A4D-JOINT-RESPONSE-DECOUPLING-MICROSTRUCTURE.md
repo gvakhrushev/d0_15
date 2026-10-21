@@ -4490,3 +4490,12 @@ Smallest final check: replay only the six bounded entrypoints through
 exact receipts and scoped independent reviews, then run affected structural
 and link checks. The original large factory/geometry/full-history/Lean
 suites are unchanged. `GR_closed=false`; lifecycle remains IN_PROGRESS.
+
+
+### 21 October: rank-two Cauchy 12-component exact Euler reduction
+
+[Consume same-PR theorem](../../02_REGISTRY/research/A4D_RANK2_EXACT_DIAGONAL_CAUCHY_AND_TEMPORAL_GAUSS_2026_10_21.md) and its
+\`sources/d0_star_rank2_seam_2026-10-21/check_diagonal_coframe_cauchy_recurrence.py\`.
+The earlier exact f=q=0 rank-two coframe/2-scalar construction is now strengthened: the two ORIGINAL scalar Euler and q=0 FORCE XY=constant; the resulting finite 4-diagonal coframe system reduces to TWO solvable algebraic equations for (X,R) plus ONE coherent spatial-boost-link future recursion. The exactly computed algebraic determinant is positive for 0<r<sqrt(1+sqrt(2)), yielding a regular Cauchy branch with O(h) old rank-two recovery on fixed compact intervals. The original full six-face source and original 4 independent diagonal coframe derivatives vanish. An additional exact outgoing-versus-predecessor projection for the 3 spatial boost paths proves 6 time-link left-Lorentz Euler COMPONENTS zero automatically in this homogeneous diagonal sector. Together 12/42 raw components (4 diag coframe,2 scalar,6 temporal links) vanish; do NOT count gauge-redundant rows twice or claim full42 stationary field.
+
+**Target next:** compute and solve the remaining OFFDIAGONAL coframe and SPATIAL link Euler on a coherent whole finite time slab of the SAME ORIGINAL N=1 price, using the existing local SO(1,3) Noether quotient, complete based predecessor faces, actual fixed collar and two generated CAR histories. Never impose both independent temporal endpoint values on the one-sided Cauchy map, switch to a different Golden sigma detector, erase PF weights, or infer physical Book03/field-writing selection. Keep GR_closed=false. 
