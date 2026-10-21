@@ -111,6 +111,36 @@ for(const m of [2,3,4,8,16,128]){
   const mean=1+normalized.reduce((s,v)=>s+v/v,0);
   close(mean,m+1,2e-13,'genuine m-outcome first-match mean m+1');
 }
+
+// EXACT same-outcome-law fixed initialized-blank Book feedback, unlike CQ.
+for(const r of [0.03,0.17,0.33,0.62,0.81,0.98]){
+  const amp=[0,Math.sqrt(1-r),Math.sqrt(r)];
+  const v=[1-amp[0],-amp[1],-amp[2]];
+  const norm2=v.reduce((s,x)=>s+x*x,0);
+  const U=Array.from({length:3},(_,i)=>Array.from({length:3},(_,j)=>
+    +(i===j)-2*v[i]*v[j]/norm2));
+  for(let i=0;i<3;i++){
+    close(U[i][0],amp[i],2e-14,'physical full-record unitary input');
+    for(let j=0;j<3;j++){
+      const orth=U.reduce((s,row)=>s+row[i]*row[j],0);
+      close(orth,+(i===j),4e-14,'true moving complementary return unitary');
+    }
+  }
+  const F=1-U[0][0]**2;
+  close(F,1,4e-14,'true blank-cut feedback saturated');
+  const z=.15;
+  const book=-Math.log1p(-z*F);
+  close(book,-Math.log1p(-z),4e-14,'Book feedback is r-blind');
+  const nativePrice=3*s(r);
+  check(nativePrice>0,'native measured price nonzero at off-reference r');
+  check(Math.abs(3*sd(r))>0.001,'CQ source can be nonzero on same unitary tape');
+}
+const nativePrior=p*p;
+close(s(nativePrior),0,2e-13,'native Golden complete KL optimum zero');
+for(const r of [0.00000185125,0.08,0.15,0.5,0.87,0.99]){
+  check(s(r)>s(nativePrior)+1e-7,'stop programme alone does not select GR reporter');
+}
+
 console.log(JSON.stringify({status:"PASS",checks,
   theorem:"exact whole iid native first-match Cost-minus-CQ-Info and KL/Fisher m+1",
   nativeBinaryClockMean:3,
