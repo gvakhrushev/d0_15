@@ -259,3 +259,89 @@ Moreover \(\mathbb E T=3\) for the binary uncapped task does NOT give a uniform 
 \]
 
 The true native \(r\approx1.85\cdot10^{-6}\) has very large clock variance, despite the constant mean. All physical Book03 moving heat, stage/cap, oldRIGHT and verification-time derivatives are therefore still compulsory and cannot be discarded by (2) or (7).
+
+
+## 9. Exact COST-MARKED whole native first-return normalizer — the true Golden \(-\varphi\) jet and a strict Book blank-cut KILL
+
+The expected cost in §2 is insufficient to determine the TRUE marked Book input or any heat/elapsed-clock pressure, because the rare long tails change all higher moments. On the **same original binary code** \(\{0,10\}\), let \(r=\Pr(1)\), \(a=1-r\), mark EACH physically executed Golden report symbol by its OWN unchanged original charge \(c_0=1,c_1=2\). Additionally let \(\kappa\ge0\) be an actually supplied **constant charge per executed independent equality comparison** under a stated fixed-inventory compiler (not an externally fitted reward). Each uncapped successful complete leaf has:
+
+\[
+\begin{array}{c|c|c}
+\gamma&\Pr_r(\gamma)&C_\kappa(\gamma)\\
+1\,0^n\,1&r^2a^n&(4+\kappa)+(1+\kappa)n\\
+0\,1^n\,0&a^2r^n&(2+\kappa)+(2+\kappa)n
+\end{array}\quad(n\ge0).
+\]
+
+Therefore the COMPLETE unconditioned *same-execution* native charge moment is the exact elementary rational function
+
+\[
+ \boxed{
+ N_{r,t,\kappa}
+ =\mathbb E_r e^{-tC_\kappa(\Gamma)}
+ =\frac{r^2e^{-t(4+\kappa)}}{1-ae^{-t(1+\kappa)}}
+ +\frac{a^2e^{-t(2+\kappa)}}{1-re^{-t(2+\kappa)}}.
+ }                                                            \tag{21}
+\]
+
+For every \(t\ge0\), all events and all executed comparisons appear in (21); it has \(N_{r,0,\kappa}=1\), and differentiating in the **ACTUAL mark**, not replacing charge by mean,
+
+\[
+ -\left.\partial_tN_{r,t,\kappa}\right|_{t=0}
+ =3(1+r)+2\kappa,\quad
+ \partial_r\mathbb E C_\kappa=3.
+                                                                  \tag{22}
+\]
+
+At the ORIGINAL Golden code mark \(t=\ln\varphi\), with no extra comparator charge (only as a **mathematical terminal-code-only diagnostic**, not free comparison), \(e^{-t}=p=\varphi^{-1}\) and
+
+\[
+ N_{r,\ln\varphi,0}
+ =\frac{r^2p^4}{1-ap}+\frac{a^2p^2}{1-rp^2},\quad
+ \boxed{\left.\partial_r\log N_{r,\ln\varphi,0}\right|_{r=0}
+ =p^2-2=-\varphi.}                                         \tag{23}
+\]
+
+The \(-\varphi\) derivative is an **exact consequence of the unchanged primitive Golden code costs and the complete self-match history**, not numerical \(\varphi\)-fitting or a claimed universal GR coupling. For native \(r\sim1.85\cdot10^{-6}\) it is close to \(-1.61803\).
+
+For a genuine deterministic cap at **K later** tests, preserve both nonmatching **abort outcomes**. The complete marked moment is instead
+
+\[
+\begin{aligned}
+ N_{r,t,\kappa}^{(K)}
+ =&\frac{r^2e^{-t(4+\kappa)}
+       [1-(a e^{-t(1+\kappa)})^K]}{1-ae^{-t(1+\kappa)}}\\
+ &+\frac{a^2e^{-t(2+\kappa)}
+       [1-(r e^{-t(2+\kappa)})^K]}{1-re^{-t(2+\kappa)}}\\
+ &+r a^K e^{-t(K+2+\kappa K)}
+   +a r^K e^{-t(2K+1+\kappa K)} .
+\end{aligned}                                                 \tag{24}
+\]
+
+It obeys \(N^{(K)}_{r,0,\kappa}=1\) and
+\(-\partial_tN^{(K)}_{r,0,\kappa}
+ =L_K(r)(1+r)+\kappa[L_K(r)-1]\).
+Formula (24) is the **FULL native charge distribution**, not a fabricated scalar mark on only successful reports.
+
+**Decisive physical anti-shortcut on the same tape.** If the real initialized-work active Book cut is orthogonal to EVERY written complete tape leaf of (21) or (24), its actual marked early-return corner is \(A_{E,t}=0\). The full normalized original complementary formula with its TRUE positive marked normalizer \(N_{r,t,\kappa}\) then simplifies for a rank-one input to
+
+\[
+ J_{\rm blank}(r,t)
+ =\log N-\log[(1-\zeta)N+\zeta A_{E,t}^\dagger A_{E,t}]
+ =-\log(1-\zeta),\qquad
+ \boxed{D_r J_{\rm blank}=0} .                             \tag{25}
+\]
+
+Thus the SAME code has \(D_rN_{\ln\varphi}\ne0\) by (23), true whole measured-CQ Cost−Info source by (10), and yet ZERO initialized-cut Book feedback source by (25). This is the sharpest **same-execution** proof that complete native stopping, even with every cost-marked leaf, cannot identify the compulsory Book03 active return on its own. A nonzero genuine early corner, physically selected alternate prepared cut, or actual independently derived heat/Info return is required; none may be inserted solely to fit GR. If original comparator factory cost is not a deterministic constant or has label-dependent failure/work, its **actual marked transfer operator** replaces \(\kappa\) in (21)--(24).
+
+**Separate elapsed-trial clock.** Even if the native elapsed trial count \(T\) is used as a clock instead of the total Golden code cost, its COMPLETE moment is
+
+\[
+ \boxed{G_q(v)=\mathbb E[v^T]
+ =v^2\sum_a\frac{q_a^2}{1-(1-q_a)v},\quad 0<v<1.}          \tag{26}
+\]
+
+Its gradient in \(q\) is GENERICALLY nonzero although
+\(\partial_y\mathbb ET=0\). Equation (26) is an operational delay transform, **not** automatically the Book03 Hodge/scene heat \(\operatorname{Tr}e^{-\beta\Delta_N}\); equating them needs a genuinely derived operator/clock identification.
+
+Accompanying \`check_native_marked_first_return.mjs\` verifies the TRUE leaf-by-leaf cost sums and aborts, unmarked mass, first and second charge moments, Golden \(-\varphi\) log-source, and source-blind normalized blank-return even with a moving \(N_t\). Full moving Hodge heat, complete original Book path Info and independently admitted active cut remain OPEN. \`GR_closed=false\`.
