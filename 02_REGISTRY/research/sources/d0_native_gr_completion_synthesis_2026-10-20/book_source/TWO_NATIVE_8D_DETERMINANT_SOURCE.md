@@ -629,3 +629,39 @@ prefix matching cancels only genuinely held additive marks, while
 query/clock/readout/normalization and other work remain. This removes
 a conditional synthesis/source premise, not physical admission,
 compulsory Book/Info selection, joint stationarity or native GR/raw216.
+
+## 19. The actual stopped port price and nonlinear preparation balance
+
+The [actual-port application](PRIMARY_STOPPED_PORT_PRICE_AND_PREPARATION_EULER.md)
+now evaluates an original native payment left separate in section18.
+The complete cost1/2 encoder gives C_stop,2=C_port+B C_port B,
+including the full abort and actual second-round blank input. Three
+equivalent saved-leaf ledgers give a strictly negative coherent primary
+coefficient between-3.966950536807743e-9 and-3.966950536497602e-9.
+Expected rounds and abort increase, but the actual port1 surcharge
+declines enough that this known total port cost also decreases.
+Thus some finite common-initial Q^k lowers both this cost component
+and the complete coherent conditional component, under the declared
+address/prefix conditions. They are not added together as one price.
+
+For actual port cost and any fixed complete central reference, the net
+is A_coh-log_phi2+sum q_gamma(c_gamma+log_phi mu_gamma). The reference
+residual cannot be dropped or charged again as work. For the explicitly
+supplied counting/Golden-port reference mu=64^(-T)p^(c_port), it is
+-log_phi64 ET, and the full conditional net source is still negative.
+That complete reference and its physical gain/readout are not selected
+by the original port weights or Walsh normalization.
+
+The preparation equation is genuinely nonlinear in the RIGHT Gram:
+Z(C)=sum E_gamma C[(c_gamma+log_phi mu_gamma)I-log_phi(C*E_gamma C)],
+with (I-rCC*)Z=0 on the stated Stiefel interface. An exact example has
+both pointer probability derivatives zero but price source
+-(1/4)log_phi3. Freezing averaged per-leaf Info misses it.
+Actual additional Info/work and constrained tangent equations remain.
+
+The leading cost-only one-direction active-abort multiplier in a smooth
+relaxation would be about0.117424825; no task tolerance or multiplier is derived. The result
+supplies an actual preparation/control term to the global E_upstream
+equation, not writer surjectivity, all42 source equality or a physical
+stationary section. Book/Info/work selection, metric descent, the
+configured positive GR application's physical admission and raw216 stay open.
