@@ -498,3 +498,9 @@ rank, a whole-slab inverse or a solution of arbitrary terminal collars.
 Use the existing reverse-effect and paid-input maps within this same
 bootstrap pullback; do not repeat scalar amplitude fitting, derive a new
 action from entropy alone, or promote physical GR closure. `GR_closed=false`.
+
+## Original full128 complex feedback through existing Q8 memory quadrature
+
+The [new rebit/Q8 source interface](A4D_Q8_REAL_BOOK_SOURCE_INTERFACE_2026_10_21.md) composes the existing Book03 real quaternion quarter-turn with the already-owned reverse two-effect normalized Book source. The full complex Hermitian N,B effects and their first jets are reconstructed by exactly d² unequal Golden/quadrature settings on a **doubled real** input representation; the real determinant has a mandatory factor 1/2. The original full128 CAR16 two-round marked fixture passes the normal/optimized 50-control calculation. CAR parity gives a 128-setting source-sufficient interface if both eight-dimensional sectors can actually be queried. An exact 2x2 counterexample proves real-only settings can miss a nonzero Book first source.
+
+This removes the previously stated **algebraic complex-phase tomography gap** at the representation level. It does NOT implement the realified CAR channel from the common native blanks, pay for a controlled Q8 phase port, select Book03's observer/cut or branchwise Info, or solve the full physical H+J+R price. A faithful terminal Q8 class representation cannot invert individual branch weights when histories share a class; their full ordered histories must be retained. The next gate is to instantiate this doubled-real/cut-aware test on one admitted paid native history and derive its Info/clock/preparation rows. Draft #334 and `GR_closed=false` remain unchanged.
