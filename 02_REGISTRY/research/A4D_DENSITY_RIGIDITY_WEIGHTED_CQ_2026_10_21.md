@@ -34,3 +34,7 @@ This does not select the physical price. It does not prove that finite native qu
 ## Checks
 
 65 checks including variational identities, bidirectional dictionaries, source rank, and numerical controls on the original Golden function with inhomogeneous \(\rho\).
+
+## Integration note
+
+This note records the density rigidity result for the weighted CQ price. The full archives (proof, certificates, SHA256) remain in the local packages uploaded by the user and are not yet committed as separate files. The mathematical content of the result is integrated into the existing constitutive composition path.
