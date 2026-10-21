@@ -127,4 +127,38 @@ The two constructive branches now expose a precise architectural choice: **coher
 
 The accompanying `check_forward_bell.py` implements the exact fixed Golden+H+CNOT Bell state and rank-one full complementary return on four independent complete rational test states, checks the true Book/source sign against four independent original N1 local-report variations, tests complex conjugation, and verifies the universal \(1/D\) bound over six work sizes and 36 coefficient/probability cases each. Analytical equations (9)--(10), rather than the finite grid, prove the general bound. No historical all42 or Lean suite is rerun.
 
+## 6. The forward route also fails an unrestricted independent-controller Euler test
+
+The field-source identity above does not imply stationarity in the internal Book controller. Write its exact rank-one return as
+
+\[
+t(r)=\frac{p+(a-p)r}{\sqrt D},\qquad F=1-t^2,
+\quad p=\varphi^{-1},\quad a=\sqrt p,
+\quad r\in[0,1],\quad D\in\mathbb N_{>0}.
+\]
+
+Since \(p^2+p=1\), \(0<p<a<1\), and \(p\le p+(a-p)r\le a\). Hence
+
+\[
+\frac{p^2}{D}\le t^2\le\frac pD<1,
+\qquad 0<F=1-t^2<1.
+\]
+
+For a fixed rank-one active cut \(P=|\chi\rangle\langle\chi|\), let the complete unitary be varied independently as \(U(s)=Ue^{sX}\). With
+
+\[
+\xi=\frac{U^*\chi-t\chi}{\sqrt F},\qquad
+X=|\xi\rangle\langle\chi|-|\chi\rangle\langle\xi|,
+\]
+
+one has \(X^*=-X\) and \(\dot t=\sqrt F\). Therefore the true complementary feedback \(J=-\log(1-zF)\), for any \(0<z<1\), has the explicit directional derivative
+
+\[
+\boxed{D_UJ[X]=-\frac{2zt\sqrt F}{1-zF}<0.}
+\]
+
+Thus the Route B master is not stationary under the unrestricted independent \(U\)-Euler equation, for any report probability or positive work dimension. This is a strict internal-controller failure of that **unrestricted** variational interface, even though the 42 field covector vanishes on the selected Einstein--CAR root. The constructed physical word is a constrained composition, so the calculation does not prove that \(X\) is physically admitted. A full D0 conclusion requires the owned gate/code tangent constraints and every actual preparation, clock, work and information reaction on the same paid execution; freezing \(U\) by declaration is not that derivation.
+
+The updated checker replays this formula symbolically and constructs the nonzero skew-Hermitian direction on four independent \(D=2\) unitary controls. It verifies the restricted Euler obstruction, not physical admission or the complete upstream price. `GR_closed=false`.
+
 **GR_closed=false.**

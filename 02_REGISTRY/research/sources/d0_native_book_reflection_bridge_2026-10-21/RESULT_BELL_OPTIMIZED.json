@@ -1,8 +1,14 @@
 {
-  "check_count": 215,
+  "check_count": 237,
   "full_column_no_free_gain": {
     "bound": "abs(dF/dr)<=2*sqrt(2)/D",
     "universal_full_output_basis_required": true
+  },
+  "independent_controller_euler": {
+    "complement": "0<F=1-t^2<1",
+    "explicit_source": "-2*z*t*sqrt(F)/(1-z*F)",
+    "return_bounds": "p/sqrt(D)<=t<=sqrt(p/D)<1 for D>=1 and r in [0,1]",
+    "stationary_under_unrestricted_U": false
   },
   "memory": {
     "V_inverse_uses": 0,

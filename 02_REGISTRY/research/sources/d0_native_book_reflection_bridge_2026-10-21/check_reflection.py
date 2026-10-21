@@ -17,6 +17,12 @@ def ck(test, name):
         raise ArithmeticError(name)
     checks.append(name)
 
+def mm(left,right):
+    return np.einsum('ik,kj->ij',left,right,optimize=False)
+
+def mv(matrix,vector):
+    return np.einsum('ij,j->i',matrix,vector,optimize=False)
+
 p=(sp.sqrt(5)-1)/2
 phi=1/p
 z=sp.Rational(1, 2**20)
@@ -152,35 +158,39 @@ vv=np.array([[.6,-.8],[.8,.6]],dtype=complex)
 Cmat=np.kron(vv, np.eye(2,dtype=complex))
 Pimat=np.kron(np.diag([0.,1.]),np.eye(2,dtype=complex))
 ref=(np.array([1.,0.,0.,1.])+0j)/np.sqrt(2.)
-rv=float(np.real(np.vdot(ref,Cmat.conj().T@Pimat@Cmat@ref)))
-Rv=Cmat.conj().T@(np.eye(4)-2*Pimat)@Cmat
+rv=float(np.real(np.vdot(ref,mv(mm(mm(Cmat.conj().T,Pimat),Cmat),ref))))
+Rv=mm(mm(Cmat.conj().T,np.eye(4)-2*Pimat),Cmat)
 GG=np.array(Rg.evalf(),dtype=complex)
-Cmp=np.kron(GG,np.eye(4))@np.block([[np.eye(4),np.zeros((4,4))],[np.zeros((4,4)),Rv]])@np.kron(GG,np.eye(4))
+Cmp=mm(mm(np.kron(GG,np.eye(4)),
+          np.block([[np.eye(4),np.zeros((4,4))],[np.zeros((4,4)),Rv]])),
+       np.kron(GG,np.eye(4)))
 initial=np.zeros((2,4),dtype=complex);initial[0]=ref
-vout=Cmp@initial.reshape(-1)
+vout=mv(Cmp,initial.reshape(-1))
 tval=np.vdot(initial.reshape(-1),vout)
 ck(abs(tval.imag)<1e-12 and abs(tval.real-(1-2*float(p)*rv))<1e-12,
    'entangled oldRIGHT complete scalar return')
 ck(abs(1-abs(tval)**2-4*float(p)*rv*(1-float(p)*rv))<1e-12,
    'true rank1 Book feedback with nontrivial protected RIGHT')
-ck(np.linalg.norm(Cmp.conj().T@Cmp-np.eye(8))<1e-12,
+ck(np.linalg.norm(mm(Cmp.conj().T,Cmp)-np.eye(8))<1e-12,
    'fully unitary reflected circuit includes oldRIGHT spectator')
 
 # Explicit independent-U Euler obstruction for rank-one active Book cut.
 # Fair reporter r=1/2 is realized with a Hadamard work bit.
 Vfair=np.array([[1.,1.],[1.,-1.]])/np.sqrt(2.)
-Rfair=Vfair@np.diag([1.,-1.])@Vfair
-Ufair=np.kron(GG,np.eye(2))@np.block([[np.eye(2),np.zeros((2,2))],[np.zeros((2,2)),Rfair]])@np.kron(GG,np.eye(2))
+Rfair=mm(mm(Vfair,np.diag([1.,-1.])),Vfair)
+Ufair=mm(mm(np.kron(GG,np.eye(2)),
+            np.block([[np.eye(2),np.zeros((2,2))],[np.zeros((2,2)),Rfair]])),
+         np.kron(GG,np.eye(2)))
 chi=np.array([1.,0.,0.,0.],dtype=complex)
-returnamp=float(np.vdot(chi,Ufair@chi).real)
+returnamp=float(np.vdot(chi,mv(Ufair,chi)).real)
 Ffair=1-returnamp**2
 ck(abs(returnamp-float(p*p))<1e-12,'fair circuit active return amplitude p^2')
 ck(abs(Ffair-float(3*p-1))<1e-12,'fair full Book feedback is strictly between 0 and 1')
-xi=Ufair.conj().T@chi-returnamp*chi
+xi=mv(Ufair.conj().T,chi)-returnamp*chi
 xi=xi/math.sqrt(Ffair)
 Xfree=np.outer(xi,chi.conj())-np.outer(chi,xi.conj())
 ck(np.linalg.norm(Xfree+Xfree.conj().T)<1e-12,'explicit legitimate free-U skew tangent')
-ampprime=float(np.vdot(chi,Ufair@Xfree@chi).real)
+ampprime=float(np.vdot(chi,mv(Ufair,mv(Xfree,chi))).real)
 ck(abs(ampprime-math.sqrt(Ffair))<1e-12,'rank-one free-controller tangent reaches return scalar')
 controller_jprime=-2*float(z)*returnamp*math.sqrt(Ffair)/(1-float(z)*Ffair)
 ck(controller_jprime<0,'unrestricted controller Euler nonzero at useful reporter')
@@ -188,11 +198,12 @@ ck(controller_jprime<0,'unrestricted controller Euler nonzero at useful reporter
 # Actual coherent inverse is necessary: a prematurely dephased H->Z->H
 # route is a mixed channel, not the unitary reflection H Z H = X.
 Hreal=np.array([[1.,1.],[1.,-1.]])/np.sqrt(2)
-coherent=Hreal@np.diag([1.,-1.])@Hreal@np.array([1.,0.])
-rh=Hreal@np.array([1.,0.])
+coherent=mv(mm(mm(Hreal,np.diag([1.,-1.])),Hreal),np.array([1.,0.]))
+rh=mv(Hreal,np.array([1.,0.]))
 rho=np.outer(rh,rh)
 deph=np.diag(np.diag(rho))
-post=Hreal@np.diag([1.,-1.])@deph@np.diag([1.,-1.])@Hreal
+post=mm(mm(mm(mm(Hreal,np.diag([1.,-1.])),deph),
+             np.diag([1.,-1.])),Hreal)
 ck(np.linalg.norm(coherent-np.array([0.,1.]))<1e-12,
    'coherent V^dag Z V implements true reflection')
 ck(np.linalg.norm(post-np.outer(coherent,coherent))>0.5,

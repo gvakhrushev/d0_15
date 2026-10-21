@@ -18,6 +18,12 @@ def ck(t,label):
     if not bool(t): raise ArithmeticError(label)
     checks.append(label)
 
+def mm(left,right):
+    return np.einsum('ik,kj->ij',left,right,optimize=False)
+
+def mv(matrix,vector):
+    return np.einsum('ij,j->i',matrix,vector,optimize=False)
+
 def gate_on_one(gate,n,qubit):
     m=np.array([[1.0]])
     for k in range(n):m=np.kron(m,gate if k==qubit else np.eye(2))
@@ -36,9 +42,12 @@ h=np.array([[1,1],[1,-1]],float)/math.sqrt(2)
 X=np.array([[0,1],[1,0]],float)
 # Register order report,work,report-copy,work-copy; choose D=2.
 n=4
-Bprep=cnot(n,1,3)@gate_on_one(h,n,1)@cnot(n,0,2)@gate_on_one(g,n,0)
+Bprep=mm(mm(mm(cnot(n,1,3),gate_on_one(h,n,1)),
+             cnot(n,0,2)),gate_on_one(g,n,0))
 # Native X on both report legs: reference has c0=p, c1=sqrt(p).
-Bprep=cnot(n,1,3)@gate_on_one(h,n,1)@gate_on_one(X,n,0)@gate_on_one(X,n,2)@cnot(n,0,2)@gate_on_one(g,n,0)
+Bprep=mm(mm(mm(mm(mm(cnot(n,1,3),gate_on_one(h,n,1)),
+                   gate_on_one(X,n,0)),gate_on_one(X,n,2)),
+               cnot(n,0,2)),gate_on_one(g,n,0))
 Bellvec=Bprep[:,0]
 ref=np.zeros(16,complex)
 for b in (0,1):
@@ -46,7 +55,7 @@ for b in (0,1):
         idx=b*8+w*4+b*2+w
         ref[idx]=(float(p) if b==0 else float(a))/math.sqrt(2)
 ck(np.linalg.norm(Bellvec-ref)<1e-13,'fixed Golden+H+CNOT Bell inverse has correct native coefficients')
-ck(np.linalg.norm(Bprep.conj().T@Bprep-np.eye(16))<1e-13,'fixed native Bell transform unitary')
+ck(np.linalg.norm(mm(Bprep.conj().T,Bprep)-np.eye(16))<1e-13,'fixed native Bell transform unitary')
 ck(abs(np.vdot(Bellvec,Bellvec)-1)<1e-13,'Bell vector uses p+p^2 exactly')
 
 def householder(psi):
@@ -60,13 +69,33 @@ for x,y in [(.6,.8),(5/13,12/13),(.8,.6),(.96,.28)]:
     psi=np.array([x,0.,y,0.],complex)
     ck(abs(np.vdot(psi,psi)-1)<1e-12,'native two-record test state normalized')
     V=householder(psi)
-    ck(np.linalg.norm(V.conj().T@V-np.eye(4))<1e-12,'forward reporter unitary')
-    U=Bprep.conj().T@np.kron(V,np.conj(V))
+    ck(np.linalg.norm(mm(V.conj().T,V)-np.eye(4))<1e-12,'forward reporter unitary')
+    U=mm(Bprep.conj().T,np.kron(V,np.conj(V)))
     ret=U[0,0]
+    # At fixed rank-one P=|0><0|, expose an arbitrary independent U tangent.
+    # The physical D0 controller may restrict this direction; this tests only
+    # the unrestricted Book03 U Euler equation.
+    chi=np.zeros(16,complex);chi[0]=1
+    tval=np.vdot(chi,mv(U,chi))
+    fval=1-abs(tval)**2
+    ck(abs(tval.imag)<1e-12 and 0<tval.real<1,
+       'forward rank-one return remains strictly fractional')
+    xi=(mv(U.conj().T,chi)-tval.real*chi)/math.sqrt(fval)
+    Xvar=np.outer(xi,chi.conj())-np.outer(chi,xi.conj())
+    ck(np.linalg.norm(Xvar.conj().T+Xvar)<1e-12,
+       'explicit rank-one controller tangent is skew-Hermitian')
+    dtval=np.vdot(chi,mv(U,mv(Xvar,chi)))
+    ck(abs(dtval.real-math.sqrt(fval))<1e-12 and abs(dtval.imag)<1e-12,
+       'controller tangent moves the return by sqrt(complement)')
+    dfval=-2*tval.real*dtval.real
+    djval=float(z)*dfval/(1-float(z)*fval)
+    expected_dj=-2*float(z)*tval.real*math.sqrt(fval)/(1-float(z)*fval)
+    ck(abs(djval-expected_dj)<1e-15 and djval<0,
+       'unrestricted controller Euler is exactly nonzero on forward route')
     r=float(abs(psi[2])**2+abs(psi[3])**2)
     expected=(float(p)*(1-r)+float(a)*r)/math.sqrt(2)
     ck(abs(ret-expected)<1e-12,'forward-only two-copy true amplitude matches original probability')
-    ck(np.linalg.norm(U.conj().T@U-np.eye(16))<1e-12,'full two-copy U unitary')
+    ck(np.linalg.norm(mm(U.conj().T,U)-np.eye(16))<1e-12,'full two-copy U unitary')
     feedback=1-abs(ret)**2
     ck(abs(feedback-(1-(float(p)+(float(a)-float(p))*r)**2/2))<1e-12,
        'true full complement includes all Bell-failure states')
@@ -82,6 +111,24 @@ ck(sp.simplify(sp.diff(F,r)+2*(a-p)*(p+(a-p)*r)/D)==0,
    'exact forward-only complement first source')
 ck(sp.simplify(sp.diff(J,r)+2*z*(a-p)*(p+(a-p)*r)/(D*(1-z*F)))==0,
    'complete Book first jet with D penalty')
+route_base=p+(a-p)*r
+t_route=route_base/sp.sqrt(D)
+F_route=1-t_route**2
+ck(sp.simplify(p**2+p-1)==0,'exact golden relation for controller bounds')
+ck(sp.simplify(a**2-p**2-p**3)==0,
+   'sqrt(p)-p is positive from the exact golden field')
+ck(sp.simplify(route_base-p-(a-p)*r)==0,
+   'forward return interpolates from p at report zero')
+ck(sp.simplify(a-route_base-(a-p)*(1-r))==0,
+   'forward return interpolates to sqrt(p) at report one')
+ck(sp.simplify(sp.diff(J,r)-(-2*z*(a-p)*route_base/
+       (D*(1-z*F_route))))==0,
+   'forward Book source is nonzero along any changing report')
+t_ind,f_ind,z_ind=sp.symbols('t_ind f_ind z_ind', real=True)
+u_source=sp.diff(-sp.log(1-z_ind*f_ind),f_ind)*(-2*t_ind*sp.sqrt(f_ind))
+ck(sp.simplify(u_source-(-2*z_ind*t_ind*sp.sqrt(f_ind)/
+       (1-z_ind*f_ind)))==0,
+   'explicit unrestricted-U Euler formula on rank-one forward return')
 ck(float(sp.N(a-p))>0,'native Golden coefficients have strictly unequal amplitudes')
 ck(float(sp.N(sp.diff(J,r).subs({r:sp.Rational(1,2),D:2})))<0,
    'Book source orientation agrees with minus-Shannon CQ')
@@ -143,6 +190,11 @@ out={
             'forward_return':'(p+(sqrt(p)-p)*r)/sqrt(D)',
             'complete_complement':'1-(p+(sqrt(p)-p)*r)^2/D',
             'book_source_gain_D2_W10':str(sp.N(gain.subs({D:2,W:10}),20))},
+  'independent_controller_euler':{
+            'return_bounds':'p/sqrt(D)<=t<=sqrt(p/D)<1 for D>=1 and r in [0,1]',
+            'complement':'0<F=1-t^2<1',
+            'explicit_source':'-2*z*t*sqrt(F)/(1-z*F)',
+            'stationary_under_unrestricted_U':False},
   'full_column_no_free_gain':{'bound':'abs(dF/dr)<=2*sqrt(2)/D',
                              'universal_full_output_basis_required':True},
   'memory':{'V_inverse_uses':0, 'forward_conjugate_copy_required':True,
