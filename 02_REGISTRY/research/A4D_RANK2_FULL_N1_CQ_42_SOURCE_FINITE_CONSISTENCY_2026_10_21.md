@@ -115,3 +115,57 @@ Exact analytic covariant-difference identity and the bounded 24-link root contro
   sources/d0_star_rank2_seam_2026-10-21/check_whole_slab_cartan_compatibility.py
 
 The REAL next source inverse must be constructed on the simultaneous finite gauge-fixed coframe+link+matter slab, satisfying all anchored-face predecessor equations and the original collar. One-site Cartan invertibility or Riemannian continuum hyperbolic intuition is not a substitute for that finite operator with its actual gauge/constraint modes. Do not fit a compensating source; GR_closed=false.
+
+
+## 8. Global first truncation coefficient and the TRUE PF regularity obstruction
+
+The five-mesh source test above was centered at r=1. The reason f_star=O(h^2) there is NOT an all-time geometric law. The complete spatially homogeneous original six-face rank-two star has an EXACT closed noncommutative boost formula. Put
+
+  A(r)=sqrt(r) exp(-r^2/4), B(r)=exp(r^2/4)/sqrt(r),
+  dr/dt=exp(-r^2/2),
+  k1(r)=(1-r^-2)/2, k2(r)=k3(r)=exp(-r^2/4)/sqrt(r),
+  delta_i=h[k_i(t+h)-k_i(t)],
+  C(x,y)=sinh(x)sinh(y)[1-(cosh(x)-1)(cosh(y)-1)/2].
+
+The genuine odd-curvature coefficient of the spatial finite boost commutator B_i(x)B_j(y)B_i(-x)B_j(-y) is EXACTLY C(x,y) on its rotation plane. Summing ALL SIX actual complementary based faces with the literal old G2/STAR gives
+
+  f_star,h(t) =
+   [r^2 sinh(delta_1)+2 B(r) r sinh(delta_2)
+    +2 A(r) r C(h k1,h k2)+A(r) B(r) C(h k2,h k2)]/h^2.    (8.1)
+
+No continuum curvature or postulated Riemann operator is inserted. For this actual non-VSI seed, the entire O(1) coefficient cancels symbolically,
+
+  r^2 k1_t +2 B r k2_t+2 A r k1 k2+A B k2^2=0,
+
+and the LEADING global truncation coefficient is
+
+  BOX: f_star,h(t)=h c(r(t))+O(h^2),
+       c(r)=3(r^4-1)exp(-r^2)/(4r^2).                       (8.2)
+
+At r=1 it vanishes, explaining the stronger O(h^2) single-cell result in Sections 2-4. At ANY r!=1 on a compact positive-r chart it is generally NONZERO; replacing (8.2) with uniform O(h^2) would be wrong. Exact symbolic computation and independent full4 six-face numerical evaluations agree at r=0.9,1.0,1.2 across h=1/16..1/128.
+
+Now use the SAME native GoldenMaster after true sign retyping, with a=F_N,x(0)<0 and d=F_N,xy(0) !=0. Since f=h c(r)+O(h^2), the actual nonlinear material slope at any positive prescribed PF rho is
+
+  v_rho := -F_N,y(-tau f/rho,0)/a
+         = kappa + tau (d/a) h c(r)/rho +O(h^2).           (8.3)
+
+The affine old material equation had TWO exactly conserved finite currents; the FULL nonlinear price instead differentiates their SITE-DEPENDENT slopes. A merely positive lower bound rho>=rho_min DOES NOT control neighboring differences. With constant PF limits rho_left!=rho_right at neighboring space/time sites, the two independent material sources have actual NONZERO limits in the present finite positive price:
+
+  E_psi1,h -> 2 epsilon tau (d/a)c(r)
+                   [1/rho_time_previous-1/rho_time_current],
+  E_psi2,h -> 2 epsilon g^xx(r) tau (d/a)c(r)
+                   [1/rho_x_previous-1/rho_x_current],    (8.4)
+
+where epsilon=1/sqrt(2 kappa) is the same derived rank-two volume amplitude and g^xx(r)=-r exp(-r^2/2). At r=1.2, tau=1/20 and discontinuous test weights (1,2), the two predicted limits are respectively
+
+  E_psi1 -> +0.007761366203664078,
+  E_psi2 -> -0.004533435010757965.                        (8.5)
+
+These are NOT fitting parameters or claims that the actual native AF counts have such jumps. They are hostile mathematical counterexamples showing the SOURCE DOMAIN required for transferring the full native nonlinear price to a smooth spacetime. The exact original N=1 F_xy !=0, so the defect cannot be dismissed by the fact q_h=0. The spatial jump example is especially relevant if original LEFT/AF weights vary between different x-addresses.
+
+For a genuinely smooth sample rho(t,x) with rho_min>0 and uniformly bounded neighbor difference |rho(z+mu)-rho(z)|=O(h), equations (8.2)-(8.3) make these material residuals O(h) on compact rank-two slices. An alternative is to derive a SAME-programME compensation from the actual moving PF/preparation/clock field source, or a corrected finite scalar history; no such compensation is asserted. Smooth PF sampling itself is a MISSING typed native-map hypothesis. The original PF masses are not freely configurable.
+
+The companion exact-symbolic and numerical hostile-control checker is
+  sources/d0_star_rank2_seam_2026-10-21/check_global_star_pf_jump.py
+
+This strengthens the route but also corrects any interpretation that the r=1 f=O(h^2) estimate was globally uniform or that a positive PF lower bound alone ensures full42 refinement. The prior one-site Cartan correction obstruction remains separate. GR_closed=false.
