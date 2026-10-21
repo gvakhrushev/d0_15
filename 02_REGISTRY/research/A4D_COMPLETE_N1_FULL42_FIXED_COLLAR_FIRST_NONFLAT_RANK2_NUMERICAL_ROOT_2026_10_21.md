@@ -96,3 +96,24 @@ There is ALSO an independent original full N1 Golden CQ entropy **VALUE** second
 The predicted analytical source-Hessian diagonal entries are +3.02833051 and −1.09126755, within the numerical finite-difference truncation. The current full source/price checker now requires BOTH strict signs for both PF conditions. Thus the exhibited short-collar full42 stationary representative is **NOT A FREE FULL-OPEN-COFRAME LOCAL MINIMUM of the same configured CQ price**, notwithstanding positive implementation costs, full output retention and all42 Euler zeros. That conclusion is robust under changes of the allowed coframe coordinate norm because its negative tangent exists inside the original free space.
 
 **Architectural consequence:** do not infer physical D0 selection by unconstrained minimizing Cost−Info over raw e/links/psi. The originally documented foundational selection obstruction is now exhibited in this NEW positive rank-two full42 fixture itself, rather than just the old pp-wave family. A genuine selected native stationarity/constraint law or a PROVED restricted reachable field-writer image that excludes those negative physical directions remains a logically separate premise. The ordinary mathematical existence of a stationary root and its physics-selection theorem are distinct. This does NOT rule out a physical constrained minimum on a justified admissible submanifold or a lawful stationary principle. **GR_closed=false.**
+
+
+## 7. Genuine same-price full42 continuation over a finite PF-weight interval (NUMERICAL)
+
+The two endpoint source witnesses are not an accidental swap of unrelated roots. The [five-point native continuation checker](sources/d0_star_rank2_seam_2026-10-21/check_full42_pf_time_continuation.py) starts at the uniform PF[1,1] full42 root and warm-starts the SAME original complete N1 first-source zero on the neighboring positive temporal ratios. It solves all42 again at each step while the original finite time boundary field data, two REAL scalar x/time gradients and complete based face incidence stay frozen.
+
+| rho at second time cell | max FULL42 normalized first-source | min singular value of full42 Jacobian |
+|---:|---:|---:|
+| 1 | 3.92e-15 | 0.04471696 |
+| 1.25 | 3.92e-15 | 0.04470405 |
+| 1.5 | 5.22e-15 | 0.04469527 |
+| 1.75 | 1.31e-14 | 0.04468891 |
+| 2 | 6.53e-15 | 0.04468409 |
+
+Both original real CAR fields remain active and the source rank2. The actual native N1 f and q remain nonzero and within the Golden analytic operand bounds, and the full original coframe Hessian retains the 8-positive/8-negative saddle nature on BOTH independently checked endpoints. The computed curve is compatible with the ordinary implicit-function picture for isolated finite-difference roots: no numerical fold appears in these five finite tests.
+
+This is NOT a validated statement that the root exists for every real rho in [1,2]. An exact interval Jacobian/degree argument would be needed for that continuous theorem. The actual D0 AF regular PF weights can vary among spatial cells and are NOT identified with the time-only illustrative [1,rho]; this calculation establishes neither original all-space address-map stationarity nor any h->0 family.
+
+The reference includes [full 42-dimensional double precision root coordinates for both endpoints](sources/d0_star_rank2_seam_2026-10-21/FULL42_NUMERICAL_REFERENCE.json), so a worker can replay these precise historical witnesses without trusting convergence of a fresh optimizer. [Five-point actual output](sources/d0_star_rank2_seam_2026-10-21/FULL42_PF_CONTINUATION_RESULT.json) records the real local numerical test, not a remote action or independently formalized theorem.
+
+**Practical next exact target:** obtain an interval/Krawczyk inclusion for the pinned 42-coordinate finite original price source and an explicitly nonzero interval Jacobian, THEN bridge to an all-slab gauge/collar inverse and actual native AF weights. A numerical 42×42 nonsingular Jacobian plus a tiny residual is strong evidence, not an exact existence certificate. This is still a configured CQ programme, not a physical Book03/H+J+R selection. GR_closed=false.
