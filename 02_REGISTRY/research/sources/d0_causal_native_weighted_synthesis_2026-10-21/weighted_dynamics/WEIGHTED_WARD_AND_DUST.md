@@ -458,10 +458,27 @@ A finite star with fixed forward differences has no automatically exact
 compact-Lie variation or continuum contracted Bianchi identity. Therefore
 neither (10) nor (24) is imported onto it without a discrete identity.
 
-A precise structural next step is now available: evaluate the original
-finite source on sampled Lie variations of its genuine fields and keep
-the gravity and scalar-chain defects. If L_(xi,h) is such an admitted
-finite tangent, define those defects by
+This structural substitution is now carried out in
+[`CONTINUUM_TO_FINITE_WARD.md`](CONTINUUM_TO_FINITE_WARD.md). It computes the
+material product/inverse-chain defect and the geometric defect of the literal
+six-face Palatini source, then verifies the complete pullback identity with
+all 16 coframe, 24 proper-link and 2 scalar rows. It assumes no discrete
+diffeomorphism symmetry. The canonical numerical outputs are
+[`DISCRETE_MATERIAL_RESULT.json`](DISCRETE_MATERIAL_RESULT.json) and
+[`FULL_WARD_RESULT.json`](FULL_WARD_RESULT.json); input and result hashes,
+runtime and replay status are in [`WARD_SOURCE_PINS.json`](WARD_SOURCE_PINS.json).
+
+The continuation also proves a conditional smooth-field estimate. On
+uniformly C4 sampled fields with bounded inverse coframes, controlled link
+logs, complete collars and uniformly C1 actual price slope, both Ward defects
+are O(h). Therefore existing full finite stationary roots satisfying these
+regularity and gain bounds obey `q_h=q_*+O(h)` when the compatible collar
+fixes the constant mode. The checker grids themselves remain diagnostics,
+not stationary roots; no physical native family or its regularity is
+constructed or selected here.
+
+For an admitted finite tangent `L_(xi,h)`, keep the gravity and
+scalar-chain defects defined by
 
     D sum_z f_z[L_(xi,h)] = E_geom,h[xi],
     Dq_z[L_(xi,h)] = xi_z.D_h q_z+E_mat,h,z[xi].
@@ -473,18 +490,21 @@ independently been established. At that point (25) gives the EXACT identity
     sum_z k_z xi_z.D_h q_z
        =-a E_geom,h[xi]-sum_z k_z E_mat,h,z[xi].             (26)
 
-An actual norm bound for these specified stencil defects, with the actual
-nonzero gain and collar retained, would yield quantitative material-norm
-rigidity in refinement. No defect is set to zero here. This identifies the
-needed transport to the finite source more narrowly than a new search over
-geometries or an invented removal of PF weights.
+The finite identity and conditional smooth-regime norm bound now instantiate
+(25)-(26) on the original carrier. No finite defect is set to zero. What
+remains is to establish that the physically admitted execution has the stated
+regularity, nonzero gain and collar, and to transport its full Book03,
+preparation and clock source into this same root equation. This is the
+remaining physical source step, not a new search over geometries or an
+invented removal of PF weights.
 
 All exact continuum statements above are local and conditional on the
 declared continuum density dictionary. For arbitrary positive finite weights
 a common off-null chart still requires tau |q0|/rho_min within the actual
-master radius. Mesh-uniform control, original metric/readout transport,
-moving-query admission, compulsory Book valuation and genuine upstream
-stationarity remain their respective real obligations. GR_closed=false.
+master radius. The smooth-regime estimate does not establish regularity of
+native physical roots, original metric/readout transport, moving-query
+admission, compulsory Book valuation or genuine upstream stationarity. These
+remain their respective real obligations. GR_closed=false.
 
 ## 10. Consumed sources and verification scope
 
@@ -502,6 +522,12 @@ All paths below are relative to the pinned repository's `02_REGISTRY/research/`:
   stationary auxiliary equivalence, full source and Hessian transport.
 * `A4D_CONDITIONAL_NON_NULL_BIANCHI_COMPLETE_PRICE_2026_10_21.md`:
   continuum Palatini convention, full independent field equations and collars.
+* `weighted_dynamics/CONTINUUM_TO_FINITE_WARD.md`: exact finite all-42 source
+  identity and its conditional smooth-regime refinement estimate.
+* `weighted_dynamics/DISCRETE_MATERIAL_RESULT.json`,
+  `weighted_dynamics/FULL_WARD_RESULT.json`, and
+  `weighted_dynamics/WARD_SOURCE_PINS.json`: numerical outputs and replay
+  provenance for the material and full-star finite checkers.
 
 `SOURCE_PINS.json` records original bytes. The accompanying narrow checker
 checks the weighted invariant with the actual nonlinear native master law,

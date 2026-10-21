@@ -60,6 +60,20 @@ The nonlinear term involving \(K''(0)\) therefore vanishes on full Jacobi fields
 
 The result lives in the continuum dictionary of the already constructed weighted price. It does not select the physical price, does not generate the continuum variations from the finite lattice, and does not solve the independent upstream equations. All physical selection gates remain open.
 
+## 6. Finite source-pullback boundary
+
+The finite continuation computes the material and literal six-face Palatini
+defects on the original 16+24+2 carrier and verifies their complete
+source-pullback identity on diagnostic grids. The defects remain nonzero at
+those sampled fields, which are not stationary roots. For uniformly C4
+sampled fields with bounded inverse coframes, controlled link logs, complete
+collars and a uniformly C1 actual price slope, the continuation proves an
+O(h) bound and `q_h=q_*+O(h)` for full finite roots with a compatible collar
+and gain lower bound. This is conditional on those regularity assumptions;
+native physical admission and selection of the same full price remain open.
+See [`CONTINUUM_TO_FINITE_WARD.md`](sources/d0_causal_native_weighted_synthesis_2026-10-21/weighted_dynamics/CONTINUUM_TO_FINITE_WARD.md),
+the two result files, and [`WARD_SOURCE_PINS.json`](sources/d0_causal_native_weighted_synthesis_2026-10-21/weighted_dynamics/WARD_SOURCE_PINS.json).
+
 The full derivation, exact finite-source substitution, independent review, and
 checker are in
 [`WEIGHTED_WARD_AND_DUST.md`](sources/d0_causal_native_weighted_synthesis_2026-10-21/weighted_dynamics/WEIGHTED_WARD_AND_DUST.md),

@@ -21,6 +21,17 @@ bound, were read separately without rerunning any numerical check.
 
 This is an integration/scope review, not a replacement for the native
 proof's own independent mathematical review and checker.
+
+## Follow-on finite-Ward integration boundary
+
+The hash table above records the snapshot reviewed at that time. A later
+follow-on added the conditional finite-to-continuum Ward estimate and updated
+the synthesis to link it with the Book03 absolute-source and common-map gates.
+Those follow-on text edits have not received an independent scope review.
+The checkers' source/result hashes and replay conditions are recorded in
+`weighted_dynamics/WARD_SOURCE_PINS.json`; their sampled fields are not roots,
+and that replay does not certify physical selection or GR closure.
+
 The initial integrator review concerned SHA256
 `851f02c676ebb2eedb56a73ce19c5761ecca0cd434f2d1b38e5d1251fa0a908d`;
 the table records the final clarified text. The other proof pins did not
