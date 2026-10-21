@@ -48,3 +48,8 @@ The checker proves its actual spatial boost commutator, symbolic leading coeffic
     OPENBLAS_NUM_THREADS=1 python3 02_REGISTRY/research/sources/d0_star_rank2_seam_2026-10-21/check_exact_null_sheet_unimodular.py
 
 The script PIN-checks the preceding literal six-face checker and the original \`native_master.py\`. It symbolically checks positive local invertibility and the volume/current identities, then numerically solves EVERY free anchored time-cell \`f=0\` equation and independently evaluates its FULL original 4x4 based holonomy matrices, native two-field Q and representative all16+24 Euler derivatives. Its three curved intervals and 16/32/64/128-cell refinements are diagnostics, not a global uniform full42 root theorem. Original two-sided fixed temporal collar compatibility, other39 Euler rows, joint gauge inverse, native Book03 selection and physical writer remain OPEN.
+
+
+### Nontrivial exact double-zero controls
+
+The exact-sheet checker now ALSO requires a nonidentity spatial SO(1,3) plaquette \(U_yU_zU_y^{-1}U_z^{-1}\) (its curvature norm divided by h² is bounded below on the sampled compact intervals) and two distinct genuinely null CAR matter covectors whose tensor source has rank2. These checks reject the invalid shortcut "both scalar densities vanish, therefore the field is flat/vacuum". Nonzero complete independent coframe/link first variations persist and are explicitly measured. They do not claim a full42 stationary root.
