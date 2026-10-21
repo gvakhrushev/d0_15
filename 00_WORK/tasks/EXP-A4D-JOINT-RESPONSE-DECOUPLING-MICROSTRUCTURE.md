@@ -4637,3 +4637,8 @@ NEW exact mathematical owner: the first fixed temporal collar link T0 restricts 
 The measured raw n3 84x84 Hessian has six near-zero gauge singular directions; after deflation n3 78x78 min singular=0.001226 and n4 114x114 min=0.000525, with every omitted time Euler row checked near machine zero. Do not misidentify those exact orbit directions as physical propagators or claim uniform h inverse from finite numerics.
 
 NEXT: gauge-fixed quantitative block-Schur/Green inverse and interval/Krawczyk validation of one exact full finite stationary root, then genuine mesh continuation with original AF/PF leaves and physical full Book03/preparation/clock/controller/field writer admission. The configured CQ saddle is not a proved prospective native minimum. GR_closed=false.
+
+
+### 22 October: original full168 gauge-fixed finite positive witness
+
+The same original N1 CQ full-field, fixed-collar temporal-gauge quotient theorem and checker now include n=5: all168 original field Euler source components are numerically zero to 3.34e-14, while only 150 actual gauge-fixed source coordinates are independently solved (18 omitted Lorentz frame components then tested below1.84e-14). Numerical reduced Jacobian min singular ~0.00027324. Input-source receipts are committed in sources/d0_star_rank2_seam_2026-10-21/RESULT_TEMPORAL_GAUGE_MULTISLAB_2026_10_22.json. Do NOT claim a uniform mesh inverse from the positive finite singular values, an exact interval root, mandatory native Book03 price or full physical Einstein closure. Next decisive action is certified gauge-fixed Newton/Krawczyk enclosure plus valid original temporal-holonomy/collar transition and actual AF spatial source weights.
