@@ -1,0 +1,20 @@
+{
+  "check_count": 8,
+  "direct_composition_stationary": false,
+  "existing_fixed_golden_feedback_H01": 0,
+  "heat_H01": {
+    "denominator": 9,
+    "numerator": 128
+  },
+  "required_feedback_H01": {
+    "denominator": 9,
+    "numerator": -128
+  },
+  "scope": {
+    "GR_closed": false,
+    "bootstrap_heat_identified_with_soldered_square": "conditional",
+    "fixed_golden_completion_feedback": "excluded as compensator",
+    "other_feedback_pullbacks": "open"
+  },
+  "status": "PASS"
+}
