@@ -1,0 +1,14 @@
+{
+  "status": "PASS_42_ALL_DIRECTIONS_INDEPENDENT_SCALAR_PRICE_COMPLEX_STEP",
+  "root_chart": "same fixed rational collar",
+  "off_shell_probe": "42 rational shifts 0.0001 * ((k mod 7)-3)",
+  "true_complete_CQ_norm": "original N1 Golden click, p=phi^-1 z=2^-20, not Shannon substituted as Book03 Info",
+  "max_complex_step_euler_discrepancy": "4.3438097885232562205453693035e-43",
+  "complex_step": "1e-22",
+  "source_scaling": "coframe=1, link=Cayley differential left-trivialized via exact Lorentz trace Gram, scalar potential=1/h",
+  "checks_42": 42,
+  "scope": {
+    "compulsory_Book03": false,
+    "GR_closed": false
+  }
+}

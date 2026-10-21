@@ -1,0 +1,69 @@
+{
+  "status": "RIGOROUS_BANACH_NEWTON_EXACT_FULL42_ROOT_ON_RATIONAL_COLLAR",
+  "mathematical_equations": "original six-based Lorentz star density + original complete Golden cap-N1 CQ first source, 16 coframe +24 proper Lorentz +2 matter",
+  "fixed_boundary": "rational_root_center.json (exact rational decimal Cayley-Lorentz boundary and scalar amplitudes)",
+  "center": "mp_center.json (exact rational decimal 42-vector)",
+  "dimension": 42,
+  "time_intervals": 2,
+  "holomorphic_complex_polydisc_radius": "1e-7",
+  "certified_sup_on_complex_box": "0.000283945221661636675636489",
+  "used_source_bound": "0.001",
+  "actual_interval_center_source_bound": "9.07333958292653229874833e-65",
+  "claimed_coarse_center_bound": "3e-60",
+  "record_query_chart": [
+    {
+      "time_cell": 0,
+      "max_f": "0.190048830402",
+      "max_q": "0.00835966894321",
+      "report_real_min": "1.8512417713660524e-6",
+      "report_real_max": "1.85124371058701973e-6",
+      "log_argument_real_min": "540175.826400261"
+    },
+    {
+      "time_cell": 1,
+      "max_f": "0.0401455349208",
+      "max_q": "0.00169580705079",
+      "report_real_min": "1.85130177947843566e-6",
+      "report_real_max": "1.85132974719277498e-6",
+      "log_argument_real_min": "540143.128652608"
+    }
+  ],
+  "interval_jacobian_complex_step": "1e-20",
+  "complex_step_max_interval_rounding": "4.6268913585806993741629210366136068683612375626272E-43",
+  "per_entry_jacobian_error_bound": "3e-22",
+  "preconditioner_decimal_exact_row_inf_norm": "49.443815605367891073314",
+  "preconditioner_product_rational_inf_norm": "1.44847175445398299996268887960199622354185891146724927266579956993353578014556399205828075E-7",
+  "qcenter_including_error": "1.44847175446021292072896523387723378754185891146724927266579956993354578014556399205828075E-7",
+  "qchange_via_cauchy_bound": "6.97751125822951678826607168E-14",
+  "qtotal_strict_contraction": "1.44847245221133874368064406048440178754185891146724927266579956993354578014556399205828075E-7",
+  "newton_center_shift_bound": "1.48331446816103673219942E-58",
+  "root_cube_radius": "1E-30",
+  "strict_Banach_inclusion": true,
+  "unique_exact_full42_source_zero_in_cube": true,
+  "positive_coframe_determinants_numeric": [
+    1.2608775973746476,
+    2.6744270654842315,
+    1.44
+  ],
+  "min_metric_eigen_abs_numeric": 0.6106525251096988,
+  "two_real_matter_current_Gram_absdet_numeric": 0.00014103453397586903,
+  "jacobian_column_sha256": {
+    "jac_columns_21.json": "b0dcf1759b7c0c70781cec8e77e5c29d6e164509478a16467d1d338e65d7c239",
+    "jac_columns_07.json": "3360341a14d30b8d58d71f52e203d511892b4e0968e34037bc5c8eedbe6596ca",
+    "jac_columns_28.json": "dc4cb970d9e33977f5fddcc0b8094c2994dfd313e8f8f1cf76f70cc257f88fa1",
+    "jac_columns_00.json": "74c697d3b9e46e9b90113a444c3bd975fd7cdf7e994eaa4ec2e7f6914abbdebe",
+    "jac_columns_35.json": "2f6cfce7b032fb11bdf4ea169175fe123bcc47bd2e94f9a82ce1893b8a946718",
+    "jac_columns_14.json": "28415d6b5d85231866634d91886a11a7122ec20ad466357c8c718f39ba8779ae"
+  },
+  "elapsed": 2.195,
+  "scope": {
+    "native_true_G2_STAR_link_CAR_query": true,
+    "all42_mathematically_stationary": true,
+    "fixed_rational_collar_not_original_transcendental_Cauchy": true,
+    "site_weights": "uniform positive 2 time slabs only",
+    "compulsory_Book03_selected": false,
+    "common_initial_writer": false,
+    "mesh_refinement_uniform": false,
+    "GR_closed": false
+  }
+}

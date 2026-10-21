@@ -1,0 +1,72 @@
+{
+  "status": "PASS_OUTWARD_INTERVAL_NONFLAT_RANK2_ORIGINAL_NATIVE_FINITE42_ROOT",
+  "root_cube_radius": "1e-30",
+  "coframes_positive_orientation": true,
+  "metric_Lorentz_signature": "Sylvester congruence g=e^T diag(1,-1,-1,-1)e, det e>0",
+  "nonflat_original_P23": true,
+  "full_CAR_two_independent_real_scalar_currents": true,
+  "records": [
+    {
+      "kind": "oriented tetrad det>0.9",
+      "time_node": 0,
+      "lower": "1.2608775973746474482098",
+      "upper": "1.2608775973746474482098"
+    },
+    {
+      "kind": "oriented tetrad det>0.9",
+      "time_node": 1,
+      "lower": "2.6744270654842316472109",
+      "upper": "2.6744270654842316472109"
+    },
+    {
+      "kind": "oriented tetrad det>0.9",
+      "time_node": 2,
+      "lower": "1.44",
+      "upper": "1.44"
+    },
+    {
+      "name": "finite original STAR f_j0",
+      "min": "0.1900352357239589415736753",
+      "max": "0.1900352357239589415736753"
+    },
+    {
+      "name": "finite CAR two-source q_j0",
+      "min": "-0.008359528814297528292659613",
+      "max": "-0.008359528814297528292659613"
+    },
+    {
+      "name": "genuine 2x2 scalar current metric Gram determinant 0",
+      "min": "-0.00006101541076838676692283585",
+      "max": "-0.00006101541076838676692283585"
+    },
+    {
+      "name": "nontrivial full SO face P23 entry 2,3 node 0",
+      "min": "0.02062858808983863455397692",
+      "max": "0.02062858808983863455397692"
+    },
+    {
+      "name": "finite original STAR f_j1",
+      "min": "-0.03994840232224104760711689",
+      "max": "-0.03994840232224104760711689"
+    },
+    {
+      "name": "finite CAR two-source q_j1",
+      "min": "-0.001695463012844262100618582",
+      "max": "-0.001695463012844262100618582"
+    },
+    {
+      "name": "genuine 2x2 scalar current metric Gram determinant 1",
+      "min": "-0.0001410345339758691526057433",
+      "max": "-0.0001410345339758691526057433"
+    },
+    {
+      "name": "nontrivial full SO face P23 entry 2,3 node 1",
+      "min": "0.01868200676077351510838475",
+      "max": "0.01868200676077351510838475"
+    }
+  ],
+  "scope": {
+    "exact_finite_mathematical_root": true,
+    "GR_closed": false
+  }
+}
