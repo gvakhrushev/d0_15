@@ -959,3 +959,23 @@ does not cancel it. These consume old owners, including their original
 Golden constants and actual record laws. Compulsory Book Info, physical
 time, admitted field writing and upstream stationarity remain open.
 The proof and bounded review are linked from the global composition.
+
+
+## 21 October: original Golden PF C^r and exact nonlinear scalar flux — new complete-source consumers
+
+CONSUME EXACT, NOT A NEW GEOMETRY PROGRAMME:
+[A4D_NATIVE_GOLDEN_PF_C2_AND_MATERIAL_FLUX_2026_10_21.md](A4D_NATIVE_GOLDEN_PF_C2_AND_MATERIAL_FLUX_2026_10_21.md).
+
+The OWNED original 4D nested F/R Golden box histogram and READY/FRRF native Cost-Info now admit the proven SAME original native depth
+\(n_r(L)=16(\max(r,2)+2)\min\{s:\varphi^s\ge L\}+128=O_r(\log L)\)
+for any FIXED derivative order r. Exact original-box discrepancy gives
+\(\|\rho-1\|_\infty<9h^{r+1}\) and
+\(\|\nabla_h^j\log\rho\|_\infty\le18\,2^j h^{r+1-j}\)
+for 0≤j≤r; at r=2 the literal open weighted stored Dirac PF component differs from the uniform carrier by O(h²), its positive adjoint completion by O(h), with a genuine compatible reference adjoint and uniformly bounded coframe/link data. The true original site READY signal remains ≥.34164 and the complete measured Golden prefix entropy equals its actual prefix code price. The **positive-PF arbitrary fixed neighbor jump** counterexample from the rank-two same-N1 source is NOT admissible on this actual deep native tower. No physical field-PF smoothness was postulated: this is a quantitative theorem about the true integer site counts. The full Book03 heat/feedback and their mode-count-dependent source require a separate same-operator estimate.
+
+The SAME native sigma-minus FULL N1 GoldenMaster, not an affine fitted action or sigma-plus detector, has an exact discrete temporal scalar1 Euler:
+\(\partial_{\psi_j}\mathscr S=2\tau(J_{j-1}-J_j)\),
+\(J_i=F_y(-\tau f_i/\rho_i,\tau q_i/\rho_i)g_i^{00}D_0^+\psi_i\).
+On the true regular monotone interval, fix a single current J and the two original Dirichlet endpoints; this solves ALL interior nonlinear scalar1 rows exactly, even though generated q_i is nonzero. A genuine n24/L8 original site column with nonuniform native PF and exact finite six-face scalar has max residual 3.79e-4 before and 4.44e-16 after; original FULL N1 price secant ~1.4e-15; the scalar endpoints are unchanged. It is an honest one-sector finite root, not the missing gauge/collar-compatible full 16+24+2 solution. This consumes a concrete portion of the previous rank-two material source problem and has been wired directly into the existing rank-two source owner, preserving that owner's hostile one-site Cartan inversion and geometric sign controls.
+
+**Next ONE joint consumer:** at those SAME corrected scalar data and true high-depth original PF, build the original three-time-link covariant difference as a WHOLE-slAB gauge/collar coframe+connection+transverse-scalar solve; carry the actual full Golden Book03 operator/oldRIGHT/input-entropy/work source along that same execution. The open dynamic choice is not solved by showing only CQ stationarity. Do not rerun φ census, invent another detector, smooth fake integer PF or assert exact GR closure. All source/checker data are pinned in #334; physical GR_closed=false.
