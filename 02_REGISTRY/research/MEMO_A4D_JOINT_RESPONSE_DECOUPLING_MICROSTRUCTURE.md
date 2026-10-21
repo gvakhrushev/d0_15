@@ -10341,3 +10341,17 @@ input. The missing object is therefore a paid finite history that supplies
 preparation, address control, failures, clock/work and absolute Book03
 valuation on one process. This is a scoped route boundary and the immediate
 physical blocker. GR_closed=false.
+
+
+### Native READY measured-prefix source and exact rational PF coefficient admission — 21 October
+
+[Original full proof](A4D_ORIGINAL_GOLDEN_READY_COMPLETE_CQ_COST_INFO_PF_SOURCE_2026_10_21.md) and [two exact checkers](sources/d0_native_golden_ready_cq_source_2026-10-21/AUTHOR_RESULT.json) consume the old cost-n Golden F/R prefix rather than importing a separately prepared site-rank selector. At n=20,L=4 all 10946 true exact-cost native words have probability p^20; the FULL stopped tree also retains 6765 cost21 overshoots and EVERY two-symbol FF,FR,RF,RR suffix. The original READY [wFR] and [wRF] events have total unconditional probability 2 F21 p^23 >0 and exactly the previously owned nonuniform site marginal n_z/F21. This is equality of original SITE MARGINALS, not an identification of the full coherent original AF/oldRIGHT histories or their absolute Book valuation.
+
+On the declared fully measured prefix + actual original 0/10 binary report, the native Golden prefix entropy is IDENTICALLY its true expected code length for ALL complete leaves, including failures. Therefore its paid measured-CQ Code−Info source is exactly
+S_code=2p^23 sum_z n_z[1+r_z-h_phi(r_z)], with all factory/controller/field-input extra prices still chargeable. On the common-null physical family, the old inverse-PF dictionary f_w=fhat_z/rho_z, q_w=qhat_z/rho_z and rho_z=256n_z/F21 yield
+D_42 S_code=(P_READY/256)(1-h_phi'(r0)) eta_h² [r_f D_42 sum fhat_z+sigma r_q D_42 sum qhat_z].
+This is a NONZERO complete first source with the old finite lambda_minus(2^-20), ALL42 ambient variations and genuinely nonuniform actual site counts. Its own overall factor is NOT the separate cap-one/fixed-processor gamma.
+
+The exact pure full32 Choi writer no-go at the original rho_w=384/421 is respected. A nine-fair-draw positive three-way READY partition (384,37,91)/512 reproduces rho_w=384/421 only as a COARSE conditional probability, without preparing forbidden sqrt(rho_w) amplitudes. The uniform 118-bit positive herald realizes every original rational site 1/(2rho_z) with common readiness, and the already-owned Golden-prefix compiler extends finite such Q(p) selectors. This discharges the unnecessary PURE-amplitude requirement for the source COEFFICIENT/ADDRESS part, not the native field-dependent operator-input writer. Based closed plaquette endpoint square roots telescope; individual OPEN stored-Dirac endpoint weight jets do not and remain paid/source-bearing.
+
+**Exact consumed slot:** physical reproduction of native spatial READY/PF and its complete measured prefix price on one positive Golden execution, without new spatial decoder or inserted measure. **Next SAME-CARRIER parent gate remains** to attach truly admitted CAR/coframe/link effects and their full independent writer/clock/oldRIGHT to this actual prefix, derive the literal Book03 branch Info/memory+feedback absolute action instead of naming CQ Shannon, and check the real all42 plus upstream root. The document also provides the explicit complete native code-reference branch likelihood-gain formula as a TEST; no compulsory Book Info is inferred. Original pure-Choi negative scope, physical self-initiation, uniform all-mesh refinement and GR/raw216 remain open. No lifecycle promotion.
