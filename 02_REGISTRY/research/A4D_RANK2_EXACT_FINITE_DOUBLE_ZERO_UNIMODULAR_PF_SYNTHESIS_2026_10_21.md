@@ -172,3 +172,19 @@ The original canonically maintained [nonlinear local Lorentz quotient owner](MEM
 Therefore, among the full original 16+24=40 geometrical Euler *components* at each free site, there are six exact vertical Noether relations. After correctly fixing this gauge (or using the original nondegenerate solder quotient), at most 34 are independent. The projected f=q=0 construction makes ONE independent local coframe-scale relation vanish identically; hence at most **33 gauge-quotient geometric component equations** remain. The other TWO real material Euler equations are exactly satisfied. The exact local quotient relation involves neighboring incident link Euler components; it is NOT permission to throw away six arbitrary link rows or omit their backward plaquette dependence.
 
 Accordingly earlier shorthand "the remaining 39 independent Euler rows" should read "39 remaining explicit components before six Lorentz Noether identities; at most 33 quotient-geometric equations." This is an architectural rank reduction, not a source-zero result or proof of surjectivity of the full slab Jacobian. The next correct geometric numerical inverse is a **33-source gauge-fixed whole-slab system**, with original temporal collar and genuine matter/link constraints, not a blind nonsingular 39x39 linear solve. GR_closed=false.
+
+
+## 7. Nonflat curvature and TWO separately nonzero null streams despite both scalar densities being zero
+
+The exact double-zero sheet does NOT manufacture a flat vacuum. At every finite h>0 in its declared small regime the based spatial plaquette in the original boost directions y,z is
+
+  P_yz=exp(h k2 K_2) exp(h k2 K_3) exp(-h k2 K_2) exp(-h k2 K_3),
+
+with k2(r)>0 and [K_2,K_3]!=0. Thus the full original matrix P_yz is NOT identity, even while the signed trace f_star,h of ALL six original plaquettes is exactly zero. On the n=128 numerical original 4x4 group test over r=[1,1.2], the representative commutator has ||P_yz-I||/h²=0.694340941..., a manifest nontrivial finite curvature witness. Never infer a vanishing original holonomy or Weyl curvature from the single zero scalar.
+
+Likewise p1=D+psi1 and p2=D+psi2 are linearly independent genuine TWO real CAR scalar/top gradients at every site, with opposite Lorentz squared norms and zero mutual Lorentz pairing in the diagonal tetrad. Consequently the two covectors ell_+=(p1+p2)/sqrt(2), ell_-=(p1-p2)/sqrt(2) are EACH individually null and linearly independent, while
+
+  p1 tensor p1+p2 tensor p2
+      = ell_+ tensor ell_+ +ell_- tensor ell_-
+
+has exact rank TWO, not one. The executable adds BOTH negative controls: actual finite six-face nontrivial commutator, exact rank-two original scalar source with two null streams. Neither the sitewise scalar star zero nor Q=0 deletes the original gravitational or material first variations; only their contracted scalar values vanish. GR_closed=false.
