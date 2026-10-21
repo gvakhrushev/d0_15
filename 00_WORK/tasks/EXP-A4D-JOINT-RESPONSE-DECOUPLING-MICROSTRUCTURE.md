@@ -3473,3 +3473,43 @@ Carrier and source: original CAR16 Spin/Q8 factor with explicit arm, program,
 clock, and retained-record apparatus factors. Decisive check: the 206-check
 exact symbolic CAR16 replay, with normal/optimized stdout identical and the
 existing Book03 comparator checker still passing (88 checks). `GR_closed=false`.
+
+## 21 October continuation: joint preparation, density rigidity and full return source
+
+Phase/owner unchanged: existing #334, native-programme-v1/constitutive.
+Read head dfc0275eea67ebc21ffe539de9b6ea96713863a5. The
+[integrated proof](../../02_REGISTRY/research/A4D_JOINT_CLOSURE_SOURCE_SYNTHESIS_2026_10_21.md)
+replaces three actual missing premises with proved source statements.
+
+On the original cap2 coherent central price, the exact material-angle centre
+and positive logarithmic normal prove Crit(S)=Crit(S0), with all selected
+independent preparation coordinates zero, and Crit(F_reduced)=Crit(S0).
+The already supplied port/counting ledger is retained. At the matter-free
+base, M=p^3 P_b H_m excludes
+an independent logarithmic instability on a material-Hessian null ray.
+This consumes only the existing full128 support facts and does not identify
+the price with N=1 CQ or admit all continuous preparations physically.
+
+On the exactly declared fixed-measure continuum two-density action, full
+equations imply constant x,y, all-cap equality of stationary fields, and
+fixed-collar equality of complete Jacobi kernels. The one-real-scalar sector
+has a constructive converse from arbitrary local positive irrotational
+Einstein dust using e*rho=constant mass coordinates. Null dust is included.
+Original independent connection/coframe/matter rows are kept. The actual
+finite-lattice dictionary and spatial/internal source transport stay open.
+
+The original monitored return has a complete C1 entropy/source limit with
+explicit O(N^2(961/1024)^N) tail and strict native derivative interval
+(10.61,10.62). This closes the nonlinear cap-source estimate and gives the
+remaining setup/work balance for an independently admitted c-direction;
+the constant four-cycle mean does not cancel it. No different Info cut is
+substituted for the monitored price.
+
+Write surface: one synthesis, three proof/checker packets, narrow updates to
+this brief, its primary memo, the primary positive case and the strategic
+synthesis. Every packet pins its unchanged input bytes and has an independent
+mathematical review. Decisive replay is limited to the changed calculations;
+old full128/geometry/Lean evidence is consumed without unnecessary reruns.
+The next application is ONE selected execution's remaining independent
+internal source on its existing field root, with actual valuation/admission
+and weights. No new task, lifecycle change, Book/CORE claim or GR closure.

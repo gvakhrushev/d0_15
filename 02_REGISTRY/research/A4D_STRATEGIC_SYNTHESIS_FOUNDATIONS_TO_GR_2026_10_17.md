@@ -6187,3 +6187,34 @@ minimum test in `A4D_COMPLETE_FLAG_SOURCE_AND_NATIVE_MINIMUM_GATE_2026_10_20.md`
 remains binding: derive the actual remaining price/admission on the SAME
 execution and its named direction, rather than seeking another conditional
 root as a substitute for physical selection.
+
+### 7.110. Joint-source closure removes preparation and constant-density hypotheses
+
+The [21 October joint synthesis](A4D_JOINT_CLOSURE_SOURCE_SYNTHESIS_2026_10_21.md)
+consumes three existing owners at dfc0275e without identifying their distinct
+executions. In the original cap2 central coherent price, an exact change to
+the material-angle centre proves Crit(S)=Crit(S0) with a=0, including the
+supplied complete linear ledger. Positive logarithmic normal curvature keeps
+this the only relative section. At the matter-free base, M=p^3 P_b H_m turns
+the old off-shell correction
+into selected material-Euler squares; it adds no separate preparation root
+condition to a joint root of that same diagonal action. All base field
+directions remain, so saddles are not repaired.
+
+In the declared continuum two-density price, induced-coordinate and radial
+variations force dx=dy=0 with the uniform pressure inverse 9<P'_N/a_N<44.
+Every finite cap has the same full stationary set and fixed-collar Jacobi
+kernel. The Bianchi example expands to a constructive local representation
+of arbitrary positive irrotational Einstein dust in the one-real-scalar
+sector, including inhomogeneous solutions, and a separate null-dust lift.
+This uses a fixed external coordinate measure; no unproved Diff symmetry or
+finite-lattice field dictionary is inferred.
+
+For the original monitored return, a uniform complete C1 entropy tail closes
+the missing nonlinear Info estimate. The infinite native source satisfies
+10.61<H'_infinity(sqrt(5)-2)<10.62 although mean cycles are four. The source
+therefore demands a real setup/work response if that c-direction is admitted;
+constant expected time alone cannot supply internal stationarity. Coherent
+and monitored cuts stay separate. These results remove unknowns and fix an
+actual remaining balance, while compulsory absolute valuation, native field
+admission and a shared complete physical execution remain the next gate.

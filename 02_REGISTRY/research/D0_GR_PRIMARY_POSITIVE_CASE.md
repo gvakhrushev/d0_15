@@ -378,3 +378,28 @@ The previous field-minimum exclusion and raw216/physical-GR scope remain.
 ## Physical cap-one execution composition
 
 The [same-execution physical composition](A4D_PHYSICAL_CAP1_EXECUTION_COMPOSITION_2026_10_21.md) places the moving 8D query jet, absolute Book03 valuation and independent-input stationarity on one finite N=1 carrier. It finds the exact four-G/two-CNOT value word and the complete unresolved jet/price/admission equations, while solving the free full-orbit commutator and the original rank-two normal reaction. The repository also contains a separate restricted full-16D-matter field-to-CAR transition, whose endpoint metric update and chronology are differentiated on all ten metric and sixteen matter coordinates. Its endpoint-isometry is only a premise, physical admission is explicitly false, and it is not identified with the cap-one 8D two-query report or its full Book03 price. The 42-field CQ source therefore remains exact only on its declared interface; no common admitted field→CAR→report→Book03 map has been shown. `GR_closed=false`.
+
+## Joint preparation closure and the enlarged continuum consumer
+
+The [joint-source continuation](A4D_JOINT_CLOSURE_SOURCE_SYNTHESIS_2026_10_21.md)
+does not change the primary all-mesh finite roots above. It removes further
+conditional premises in their neighbouring source owners. The original cap2
+coherent central price has exact joint preparation elimination by its own
+independent material-angle centre; this result is not imported into the
+different paid N=1 CQ price without an execution map.
+
+For the precisely declared fixed-measure continuum two-density price, the
+constant-query hypothesis of the Bianchi construction is now a consequence
+of the full equations. Every finite cap has the same full stationary fields
+and fixed-collar Jacobi kernel. In the one-real-scalar sector an explicit
+mass-coordinate inverse constructs representatives of arbitrary local smooth
+positive irrotational Einstein dust, with a separate null-dust lift. These
+are conditional continuum consumers, not new finite native lattice roots or
+a newly derived compulsory Book action.
+
+The full monitored-return entropy source is also now controlled at infinite
+cap and rigorously nonzero at its native point despite a constant mean clock.
+It fixes a concrete internal-price balance if that control is physically
+admitted. The common next gate remains the actual full independent source
+on one selected, paid execution, with its original field dictionary and
+information cut. The saddle exclusion and GR_closed=false remain binding.
