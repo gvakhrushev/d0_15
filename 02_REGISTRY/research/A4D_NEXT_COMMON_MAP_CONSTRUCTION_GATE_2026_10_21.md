@@ -39,6 +39,30 @@ fixed processor to deriving its **native resource writer and price on the
 same complete history**. The actual Book03 information, its complete
 admitted price and source, and native selection remain independent obligations.
 
+## Admission boundary found in the current Book03 route
+
+The reviewed native owners do not specify the required physical writer. Book03
+§03.26.1 labels physical port addressability, initial apparatus preparation,
+and access to the local primitive actions as implementation obligations;
+§03.26.2 says that its exact matrix interaction and selective preparation do
+not by themselves establish physical actuation or M1 admission
+([Book03](../../01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md)).
+The extant [native CAR actuator](sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/NATIVE_CAR_ACTUATED_METRIC.md)
+starts from an already supplied addressed site and live field query, does not
+construct that query from a common initial history, and holds geometry and
+proper links during its matter word. The [fixed processor](sources/d0_common_execution_closure_2026-10-21/native_processor/FIXED_PROCESSOR_PROGRAM_SOURCE.md)
+then takes the field-dependent Choi bank as its input and expressly supplies
+no controlled unknown Julia action or writer from the common blank/history.
+
+Accordingly the physical writer for \(|\Omega(y)\rangle\) is **UNDEFINED in
+the presently specified Book03/#334 execution**. This is a boundary of the
+specified route, not a no-go theorem for every possible admitted D0 process.
+It prevents computing the upstream preparation price/source or promoting the
+downstream processor to a physical stationarity claim. Reopen this interface
+only with an already admitted finite history from the common initial state,
+including its preparation, address control, failures, clock/work tape, and
+absolute Book03 valuation; do not add those operations by convention.
+
 The [executed full128 normalization/source result](A4D_FULL128_NORMALIZATION_AND_TRUE_BOOK_SOURCE_2026_10_21.md)
 corrects the proposed common-scalar repair: for its true normalized
 complementary determinant, \(W\mapsto aW\) leaves both value and full first
