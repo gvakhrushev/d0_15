@@ -1,0 +1,15 @@
+{
+  "check_count": 7,
+  "default_heat_field_source": "0",
+  "moving_hodge_control_H01": "128/9",
+  "scope": {
+    "GR_closed": false,
+    "default_scene_heat_branch": true,
+    "independent_internal_euler_rows_closed": false,
+    "physical_execution_selected": false,
+    "uniform_raw216_refinement": false
+  },
+  "source_identity": "D_42 B_master = D_42 J_loc = C_* D_42 S_h",
+  "status": "PASS",
+  "zero_set_equivalence": true
+}
