@@ -153,3 +153,35 @@ This composition removes TWO actual source gates: (i) the PF-regularity exceptio
 - sources/d0_native_golden_pf_material_flux_2026-10-21/check_native_n1_scalar_flux.py — independently executed original 24/8 4D Golden histogram, genuine non-VSI based-six-face scalar, SAME true GoldenMaster N1 full price derivative, one common interior nonlinear scalar flux and native endpoint Dirichlet, independent complete-CQ scalar price secants.
 
 The signed native r-slope and other all42 geometric/matter identities are consumed from their existing owned source files; they were NOT regenerated or assumed from the above two isolated proofs. The native L4/L8 census is an actual enumeration for the narrow check; the huge high-depth schedule's theorem is an analytical consequence of the parent's exact uniform discrepancy and does not enumerate exponential path counts. Both checks are AUTHOR tests, not independent peer review, not a full GitHub scientific CI root and not a Book03 selection proof.
+
+## 5. All fixed derivative orders — a stronger tower theorem on the SAME original Golden boxes
+
+The C² diagonal above is the order-two case of a general EXACT result. For any fixed integer \(r\ge0\), set \(R=\max(r,2)\), choose \(s(L)=\min\{s:\varphi^s\ge L\}\) as before, and choose the true original Fibonacci/GOLDEN cost
+\[
+\boxed{n_r(L)=16(R+2)s(L)+128=O_r(\log L).}\tag{15}
+\]
+The unchanged owned original-box bound (2), now with \(k=n_r/4=4(R+2)s+32\), gives
+\[
+\delta_k=2p^{(R+2)s+8}\le 2p^8L^{-(R+2)},
+\quad \epsilon_{n,k}=p^{n+1}/\sqrt5,
+\quad a_n\ge a_\infty>7/10.
+\]
+Multiply the original discrepancy inequality by \(L^{R+1}\). The three terms are bounded respectively by \(p^{129}/\sqrt5\), \(256p^8\), \(p^{257}/\sqrt5\). Therefore by EXACTLY the same rational constant \(8.51494925\ldots<9\),
+\[
+\boxed{\|\rho_{n_r(L),L}-1\|_\infty<9h^{R+1}
+\le9h^{r+1}.}\tag{16}
+\]
+Because \(R\ge2\), all original site densities are at least \(55/64\) for ALL \(L\ge4\), so the logarithm and every positive coframe square root are well defined. Every coordinate, mixed or iterated j-th finite difference, \(0\le j\le r\), satisfies the UNIFORM theorem
+\[
+\boxed{
+\|\nabla_h^j\log\rho\|_\infty
+\le18\,2^j h^{R+1-j}
+\le18\,2^j h^{r+1-j}.}\tag{17}
+\]
+The proof uses only \(|\log\rho|\le2|\rho-1|\) and the \(2^j\) signed terms of a genuine j-fold difference; it does NOT assume pointwise differentiability of any unrefined integer count. Exactly the same type of bounds applies to \(1/\rho\) and \(\sqrt\rho\) with other fixed universal constants. Hence the original site density and its physically coframe-dressed metric can be made discrete \(C^r\)-close to a uniform PF carrier to any specified FIXED r, still at logarithmic authentic native history depth \(O_r(\log L)\). At r=2 the metric and Christoffel/Riemann finite-difference perturbations induced solely by this native spatial PF are \(O(h)\) on a uniformly bounded regular coframe chart, not a new claim about a generic unbounded HJR operator.
+
+**New strategic cut:** The genuine original Golden histogram is NOT itself a finite-regularity obstruction to any FIXED-ORDER continuum gravity/Dirac source, including the second-order Einstein tensor. Previously the only proof was a uniform \(C^0\) spatial discrepancy; the new theorem upgrades that SAME owned count distribution without changing the spatial decoder, original F/R alphabet, trace type or Golden source probability. The cost of the fixed desired jet order is only a larger coefficient in n_r(L), while the complete paid per-history code grows with n_r and READY signal remains nonzero. This does NOT bound the number of simultaneously required Hilbert history branches (which is enormous), the TRUE physical Book03 full entropy/heat trace with growing matrix dimensions, or prove that native M1 selects this particular refinement schedule.
+
+**Independent exact-rational and high-precision check**:
+sources/d0_native_golden_pf_material_flux_2026-10-21/check_native_golden_pf_allorders.py
+was executed with r=0,1,2,3,4,6,8,16,32,64 and L=4,8,16,64,256,1024. It verifies the exact rational majorant <9, the inherited original-box bound with the unchanged Fibonacci renewal coefficient and positive READY mass for all checked cases. The **all-order theorem is analytic** from the preceding bound; the finite parameter checks are not evidence replacing this induction.
