@@ -200,3 +200,30 @@ Differentiating the identically zero full gradient along this smooth injective f
 A separate narrow checker \`check_book03_vertex_balance.py\` verifies three non-equitable rational factor arrays. It evaluates all 359 analytic edge cancellations in exact rational arithmetic and independently recomputes the true 33×33 normalized spectrum, complete master scalar and complete per-edge source to floating accuracy. All three trials pass, with maximum full359 numerical first-source norm below 2.4e−19. The general conclusion is the projector proof above, not an extrapolation from those three controls.
 
 The original D0 **binary** 33-vertex passport still does not admit these weights without an explicit paid native extension. No new scene preparation, Book03 Info law or GR selection is derived. GR_closed=false.
+
+
+## 8. A genuine 296-dimensional positive second-variation block at the balanced scene
+
+The 31-dimensional kernel does NOT exhaust the actual transverse response. There is a directly proved 296-dimensional independent subspace with **strictly positive** Book03 second variation, at the original beta=2p², z=2^-20.
+
+For each pair of zones a,b, choose zero-sum vectors f on a and g on b and vary all their cross-edges by the symmetric matrix E=f g^T+g f^T. Linear combinations span
+
+    (9−1)(11−1)+(9−1)(13−1)+(11−1)(13−1)
+    =80+96+120=296
+
+independent real edge directions. Each E has zero row-degree sum, hence D_d is EXACTLY fixed on the straight positive-weight curve A(t)=A0+tE. Put V=D_d^-1 E. At the balanced rank-three graph, T0 V=V T0=0. Consequently the trace-exp and full-feedback factors can be differentiated explicitly on the 30-dimensional null zone-balanced subspace, yielding, for every nonzero such E,
+
+    D² B[A0](E,E)
+       =[ beta exp(-beta)/Z_beta(1/4) − 2z/(1-z)] Tr(V²),
+
+    Tr(V²)=sum_(i,j) E_ij²/(d_i d_j)>0.
+
+This is the existing exact weighted-scene Hessian mechanism evaluated at the NEW balanced full359-stationary manifold, not an assumed positive metric or an added stabilizing action. Because 7/10<beta<1, exp(-beta)>1/3 and Z_beta(1/4)<=33,
+
+    beta exp(-beta)/Z_beta(1/4)>7/990,
+
+while 2z/(1-z)<4z=1/262144. Therefore the bracket is STRICTLY positive with a fixed elementary lower bound. The previously identified 31 null tangent directions and these 296 positive directions are distinct; the two equitable shape directions also have strictly positive Hessian. The sign of the **remaining 30-dimensional transverse star block**, and therefore full359 local minimality, is not claimed by this analytic argument.
+
+A literal zero-sum edge-square fixture (f=e0−e1 on the 9-zone, g=e9−e10 on the 11-zone, actual degrees 286 and 234) has Tr(V²)=8/(286*234) and analytical second response approximately 2.7247680179231694e-6. Re-evaluating the complete 33×33 original master on the exact positive curves at step 1/4 yields 2.7247684641906744e-6; their difference has the expected even-order finite-difference truncation and is not used as proof.
+
+The entire ambient carrier is **359 edges**, with one 31-dimensional proven Hessian kernel and a separate 296-dimensional strictly positive test subspace. The remaining 32-dimensional complement (two known positive equitable shapes and 30 star directions) requires its own full mixed-sign analysis before a global full-edge minimum is asserted. Physical native binary/weighted admission, complete memory selection, and GR remain open.
