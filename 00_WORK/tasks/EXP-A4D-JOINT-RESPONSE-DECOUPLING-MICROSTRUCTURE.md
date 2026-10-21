@@ -3492,3 +3492,54 @@ another actually derived field-controlled primitive remain untested and must
 carry their own failure, preparation, clock and complete-price sources. It
 does not close the common map `𝔓`, alter any task/lifecycle/selector, or promote
 physical GR. `GR_closed=false`.
+
+
+## 21 October continuation: same-prefix Julia odds and the two Book bindings
+
+Phase: native realization, a conditional application of the existing
+Julia-positive-pair prospective-price gate on that complete history. The new composition is
+recorded in the original odds owner and the global result composition; it
+reuses the exact paired Julia odds, finite prospective law and the existing
+absolute coherent-amplitude and scalar-probability binding theorems.
+
+For equal continuation weights, the prospective gate requires
+K_-/K_+=q_-/q_+. The coherent-amplitude binding instead gives
+K_-/K_+=sqrt(q_-/q_+); its first Lorentz log-price jet is exactly half
+the nonzero original Julia Born-odds jet. It therefore FAILS this
+specific equal-continuation gate on a neighborhood of the flat base.
+The scalar-probability binding gives the required ratio only conditionally
+on its complete fixed-support native binding, which Book03 has not selected
+for this memory-algebra programme. If continuation weights differ, the
+actual Z_-/Z_+ source remains explicit and must be paid and derived.
+
+The binding comparison is conditional on applying these generic Book
+equalities to the Julia tape; it does not identify the distinct fixed
+128-port fixture as the same physical instrument. This is not physical-price
+selection. The
+actual compulsory G0/Book03 binding, same-prefix task, continuation and
+absolute full-history source remain open. The existing exact Julia odds
+checker passed, and the existing Book source-binding checker passed all
+49 checks; neither check establishes the missing physical binding. No
+task, action, selector, lifecycle or GR status changes. GR_closed=false.
+
+
+## 21 October continuation: same-CQ nonlinear constitutive consumer
+
+The latest integrated result applies the exact complete N=1 CQ source on its
+declared interface to the original inverse-PF local dictionary and the
+already-owned stationary normal form. It yields a single analytic material
+function K for all sites, a uniform geometric coefficient and the exact
+finite source ratio K'(0)/a=lambda_minus(2^-20). Its auxiliary/coframe
+reduction is stationary-equivalent rather than an off-shell physical-only
+identity; the nonlinear material curvature remains nonzero and preserves
+the actual site weights. It therefore retains the existing primary
+nonvacuum roots while supplying a concrete constitutive consumer.
+
+The primitive moving-query admission, compulsory absolute Book/CQ valuation,
+independent upstream equations and uniform off-null domain remain open.
+This carrier is not identified with the original Julia positive-pair tester.
+The separate cap-two coherent-preparation stationary-set result and the
+Q8 monitored return/Info result are retained with their own carriers and
+conditions; neither supplies a missing source for N=1 by analogy. The scoped
+source checkers for these results will be run on the final integrated head.
+GR_closed=false.

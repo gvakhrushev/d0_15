@@ -266,6 +266,22 @@ the soldered density (6). This connects the original Julia result to
 ProspectiveExecution while retaining the difference of means versus
 mean likelihood-ratio distinction.
 
+The exact two-event comparison has now been conditionally composed with
+the two generic same-history Book bindings in
+[the original Julia odds owner](sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/ORIGINAL_JULIA_FACE_ODDS_REFINEMENT_COCYCLE.md#61-exact-binding-fork-for-the-same-prefix-julia-gate).
+This does not identify the distinct fixed 128-port fixture with the Julia
+tester as one physical instrument. If a binding is instantiated on the
+Julia tape and continuation is equal, coherent amplitude binding gives
+\(K_-/K_+=\sqrt{q_-/q_+}\), so its prospective log-odds first jet is
+exactly half the Julia Born-odds jet and FAILS this gate. Scalar
+probability binding gives the required ratio, but only conditionally on a
+fixed-support probability binding that Book03 has not selected for this
+memory-algebra programme. Unequal continuation can compensate only through
+its actual partition-weight ratio, which remains a paid source. This
+narrows the missing application to selection of the real binding and
+continuation for the same Julia pair; it does not close the absolute price
+or full GR source.
+
 ## 5. What minimality can now mean
 
 The original ProspectiveExecution minimum compares admitted words with
@@ -402,15 +418,29 @@ the matter/gravity ratio. This avoids an all-metric coefficient census.
 The original second-order Lovelock route remains a valid alternative
 when its physical hypotheses, rather than (13), are established.
 
-The next bounded application is thus the complete price/source map
-of one actually admitted paired future programme, together with the
-actual joint field-writer/variation law. Apply the two-ending prospective
-identity above to the original Julia measurement and realize the
+The concrete N=1 CQ branch now has an exact nonlinear consumer in the
+[same-CQ constitutive composition](sources/d0_primary_normal_source_recovery_2026-10-21/constitutive/CONSTITUTIVE_COMPOSITION.md).
+It combines the already-derived all42 CQ source with the real inverse-PF
+site dictionary and auxiliary stationary normal form, yielding one
+universal K and the exact first-source ratio (K'(0)/a=lambda_-(2^{-20})).
+This preserves the primary nonvacuum finite roots on that declared
+fixed-query/fixed-price interface while retaining the nonzero higher
+material source and actual spatial weights. It is stationary equivalence,
+not physical-only off-shell action equality. Primitive query admission,
+compulsory absolute Book valuation, independent upstream equations and a
+uniform off-null chart remain open. This CQ execution is distinct from the
+Julia two-event tester and the separate monitored Q8 carrier.
+
+For the concrete N=1 CQ route, the immediate remaining application is its
+primitive field-query admission, compulsory absolute Book/CQ valuation and
+independent upstream equations. The separate Julia paired-future route
+requires its actual same-prefix binding and continuation. For that Julia
+branch, apply the two-ending prospective identity above and realize the
 required change of coordinate pairing in the same field dictionary.
-Evaluate its
-absolute normalization, compiler occupation, retained repeat costs,
-moving preparation/observer and real clock on the same data, and test
-the explicit differences in section 4 before applying (12) or (13).
+Evaluate its absolute normalization, compiler occupation, retained repeat
+costs, moving preparation/observer and real clock on the same data, and
+test the explicit differences in section 4 before applying (12) or (13).
+Each route must retain its own field-writer/variation law and full source.
 The given formulas decide proposed identifications; they are not values
 to assign to Info after observing the desired source.
 

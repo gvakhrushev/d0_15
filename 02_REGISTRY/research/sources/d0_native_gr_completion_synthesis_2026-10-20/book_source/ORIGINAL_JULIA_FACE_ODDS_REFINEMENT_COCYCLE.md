@@ -273,6 +273,65 @@ The plus sign in (21) is forced by \(K=\varphi^{-S}\). Equation (20) is **NOT pr
 
 Even after (20) holds, it would show the task's **relative** prospective score equals the measured odds; it does NOT by itself prove that Book's compulsory variational scalar is this difference (rather than the full expected complete Cost−Info), or that its coframe solder/Hodge star and actual all40+matter Euler have the required signs. Those are separate necessary forcing steps. This is the smallest mathematically typed question one can ask the real programme, not a claim that it is already answered.
 
+### 6.1 Exact binding fork for the same-prefix Julia gate
+
+Conditionally instantiate the two generic absolute Book bindings in
+[BOOK_SOURCE_BINDING.md](BOOK_SOURCE_BINDING.md) on this same Julia tape
+and its strict positive-support chart. This is an algebraic application,
+not evidence that the separate fixed 128-port fixture and Julia tester
+are one physical instrument. Put
+\(r=q_{a,-}^{(n)}(P)/q_{a,+}^{(n)}(P)>0\). With equal continuation
+partition weights, the prospective gate requires
+\(K_-/K_+=r\).
+
+Under the coherent **amplitude** binding (Book source eq. (5)),
+\(K_\gamma=\varphi^{-S_\gamma}
+=\varphi^{J}\sqrt{q_\gamma}\) with one common normalizer on the
+prefix. Consequently
+\[
+\frac{K_-}{K_+}=\sqrt r,\qquad
+\log_\varphi\frac{Q_-}{Q_+}
+=\frac12\log_\varphi r
+=\frac12\mathcal O_a^{(n)}(P).
+\]
+At the flat point \(r=1\), but the original Lorentz first jet is
+\[
+D_{\xi_b}\log_\varphi r|_I
+=-2\sqrt2(\ln\varphi)^{-1}\delta_{ab}\ne0.
+\]
+The amplitude-bound prospective log ratio therefore has derivative
+\(-\sqrt2(\ln\varphi)^{-1}\delta_{ab}\), exactly half the Born
+log-ratio derivative. The coherent-amplitude binding cannot satisfy the
+equal-continuation Born-to-prospective equality (20) on any neighborhood
+of the original Julia base. This
+excludes that binding as a realization of this particular two-event
+gate; it is not a no-go for other Book prices or for a nontrivial,
+physically priced continuation ratio.
+
+Under the **scalar probability** binding (Book source eq. (7)),
+\(q_\gamma=K_\gamma/N\), so \(K_-/K_+=r\) exactly and the
+two-event gate follows on that binding's fixed positive support. This is
+only a conditional algebraic pass. Book03 has not selected this
+probability binding for the memory-algebra amplitude, nor supplied the
+same-prefix physical task, full archive and equal continuation weights.
+The existing original-port binding control also shows that the squared
+probability shortcut fails on its tested native port; that different
+carrier does not decide this Julia pair and cannot promote the conditional
+pass here.
+
+If continuation values differ, (18) contributes the additional actual
+term \(\log_\varphi(Z_-/Z_+)\). Under coherent-amplitude binding,
+matching the Born ratio would require \(Z_-/Z_+=\sqrt r\) as a
+field-dependent priced identity. That is a separate physical condition,
+not equal continuation and not a term that can be dropped.
+
+**Application status:** the same-prefix two-event test is now resolved
+for the two supplied Book binding modes: FAIL for coherent amplitude at
+equal continuation; conditional PASS for scalar probability at equal
+continuation. The compulsory G0/Book03 binding and continuation for this
+actual pair remain unidentified, so the physical selection question stays
+OPEN; GR_closed=false.
+
 **New decisive physics task:** derive from the unchanged G0/Book03 prospective law which complete, actually priced paired native future question (if any) forces the SAME two positive events, all flags, observer transport, and local soldered \(\star\) pairing. Reject the proposal if it is not selected by the native Cost−Info. Do not use any after-the-fact \(\kappa_h\), new fractional weight or spectral subtraction. Existing P25/full nonlinear GR roots are not altered; \`GR_closed=false\`.
 
 **Exact independent checker:** \`02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/check_original_julia_plaquette_odds_refinement.py\`.

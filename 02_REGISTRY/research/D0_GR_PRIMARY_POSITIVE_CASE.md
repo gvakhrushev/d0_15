@@ -378,3 +378,32 @@ The previous field-minimum exclusion and raw216/physical-GR scope remain.
 ## Physical cap-one execution composition
 
 The [same-execution physical composition](A4D_PHYSICAL_CAP1_EXECUTION_COMPOSITION_2026_10_21.md) places the moving 8D query jet, absolute Book03 valuation and independent-input stationarity on one finite N=1 carrier. It finds the exact four-G/two-CNOT value word and the complete unresolved jet/price/admission equations, while solving the free full-orbit commutator and the original rank-two normal reaction. The repository also contains a separate restricted full-16D-matter field-to-CAR transition, whose endpoint metric update and chronology are differentiated on all ten metric and sixteen matter coordinates. Its endpoint-isometry is only a premise, physical admission is explicitly false, and it is not identified with the cap-one 8D two-query report or its full Book03 price. The 42-field CQ source therefore remains exact only on its declared interface; no common admitted field→CAR→report→Book03 map has been shown. `GR_closed=false`.
+
+
+## Same N=1 CQ price has one universal nonlinear stationary material reduction
+
+The [same-CQ constitutive composition](sources/d0_primary_normal_source_recovery_2026-10-21/constitutive/CONSTITUTIVE_COMPOSITION.md)
+now applies the exact complete N=1 CQ density, the original inverse-PF
+site weights and the owned auxiliary stationary normal form together. It
+produces one analytic material function K shared by every site:
+\[
+S_{\rm eff}=B_0+M\tau a\sum_z X_z
+             +M\sum_z\rho_z K(\tau Y_z/\rho_z),
+\qquad K'(0)/a=\lambda_-(2^{-20}).
+\]
+The reduction is stationary-equivalent through an invertible auxiliary
+extension and coframe coordinate, not an off-shell equality of
+physical-only actions. At X=Y=0 that coordinate is the identity, so the
+same nonvacuum finite roots and their full first-source ratio survive.
+The determined material curvature is nonzero
+(\(K''(0)=0.00053195173697\ldots>0\)); higher terms retain the actual
+inverse-PF weights and matter variations. This is not a positive full
+Hessian or a selected new matter law.
+
+This strengthens the fixed-interface N=1 CQ application. Primitive
+moving-query admission, compulsory absolute Book valuation and genuinely
+independent upstream equations remain open; off-null uniformity also
+requires control of \(\sup_z|\tau_hY_z/\rho_z|\). The separate Julia
+positive-pair tester, the coherent cap-two preparation execution and the
+Q8 monitored return process are not identified with this N=1 carrier.
+GR_closed=false.
