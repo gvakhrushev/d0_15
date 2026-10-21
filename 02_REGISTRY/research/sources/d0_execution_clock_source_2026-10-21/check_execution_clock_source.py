@@ -31,6 +31,11 @@ def adj(x: np.ndarray) -> np.ndarray:
     return x.conj().T
 
 
+def bit_parity(x: int) -> int:
+    """Parity of a bit count, compatible with the repository's Python 3.9."""
+    return bin(x).count('1') & 1
+
+
 def positive_sqrt(x: np.ndarray) -> np.ndarray:
     values, vectors = np.linalg.eigh((x + adj(x)) / 2)
     require(values.min() > 1e-9, 'strict original Julia chart')
@@ -104,7 +109,7 @@ def native_round(theta: float) -> tuple[CompleteRound, np.ndarray, np.ndarray]:
     Q=[]
     for label in range(32):
         for coefficient in range(2):
-            Q.append(sum(((-1)**((label & j).bit_count()) * words[j][coefficient] for j in range(32)), np.zeros((16,16),complex))/32)
+            Q.append(sum(((-1)**bit_parity(label & j) * words[j][coefficient] for j in range(32)), np.zeros((16,16),complex))/32)
     A=Q[0]
     require(np.linalg.norm(A-adj(A))<1e-13, 'literal selfadjoint blank SELECT block')
     K=[]
