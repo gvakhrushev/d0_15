@@ -509,3 +509,40 @@ This removes the previously stated **algebraic complex-phase tomography gap** at
 ## Paid Q8 quadrature input: existing H/CNOT resolves a phase-resource subgate
 
 The [updated complex full128 feedback source proof](A4D_Q8_REAL_BOOK_SOURCE_INTERFACE_2026_10_21.md) strengthens the earlier algebraic Q8 result: the quarter turn on one *input* phase rebit is an exact addressed finite word, chronological `H_r; CNOT(b,r); H_r; CNOT(b,r)`, using the already admitted **heralded** Golden Hadamard factory, with actual two-H readiness `b_2^4`, all failed transcripts/clock/work preserved, and paid known-one/fair-plus supplies. Its completed effect maps `a|0,0>+p|1,0>` to `a|0,0>+p|1,1>`. Consequently the previously external phase-quadrature **input-preparation** premise is discharged at the declared addressed instrument interface; 55 exact/numeric checks run identically in normal and optimized modes. This does not provide a physically admitted realification of *every* original complex CAR16 Kraus operator, the same full-history Book cut, or its branchwise Info. Source sufficiency and the original Einstein solutions remain conditional on those physical interfaces; Draft #334, `GR_closed=false`.
+
+## Conditional nonlinear pullback through a derived scene conductance
+
+The [derived-scene composition](A4D_BOOK03_DERIVED_SCENE_NONLINEAR_CRITICAL_SET_2026_10_21.md)
+adds an exact mathematical candidate for transferring the existing full42
+`J2` stationary family into the 33-vertex weighted-scene scalar. Write
+`J(Y)=J2(Y)-J2(Y*)`, `Phi(s)=B(1+s,1,1)`, and consider only the derived
+assignment `x(Y)=1+J(Y)`, `y=u=1`. At the actual full128/HJR calibration,
+
+\[
+\Phi'(0)=[c_H(2p^2)+c_F(2^{-20})]\frac{91}{2816}
+\approx -5.02989917823634\times 10^{-4}<0.
+\]
+
+The source checker
+[`check_scene_j2_transmission.py`](sources/d0_book03_scene_j2_transmission_2026-10-21/check_scene_j2_transmission.py)
+passes all 12 declared controls, including strict analytic sign bounds and
+the free-conductance obstruction. Analyticity then gives a local chart with
+`Phi'(J)<0`, where the exact chain rule yields
+`D(Phi o J)=Phi'(J) DJ2` and hence equality of the two critical sets. At
+each critical point the Hessian rank, nullity and kernel agree; the negative
+factor exchanges positive and negative inertia indices. This covers
+degenerate critical points and is stronger than matching one source jet.
+
+The physical interface remains decisive. If `x` is independently free,
+its Euler row is `partial_x B=Phi'(0) != 0`, so the canonical scene is not
+jointly stationary and the nonzero field-source transfer cannot survive.
+A multiplier equation is only a formal comparison. The route requires one
+admitted common-history writer that actually generates or genuinely
+constrains `x=1+J(Y)`, retains the reaction and every controller/preparation/
+clock/work charge, and solves all independent upstream equations. The paid
+moment and rational writers provide finite charged catalogues but do not
+establish this smooth same-initial-state law or the complete Book03 branch
+Info and absolute price. This conditional pullback is therefore entered as
+a candidate inside the existing common-map gate, not as a substitute for
+it: compulsory physical selection, same-history Book03 valuation, original
+null-fibre readout and physical refinement remain open; `GR_closed=false`.
