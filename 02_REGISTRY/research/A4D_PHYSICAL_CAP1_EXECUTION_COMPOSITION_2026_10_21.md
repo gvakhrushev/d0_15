@@ -105,6 +105,36 @@ dS_1=d(C_{\rm pre}-H_{\rm pre})+(\kappa-\beta h(q))d\alpha+\alpha d\kappa-\alpha
 
 Существующий репозиторий уже даёт положительный CQ-корень, точное значение query-оператора и отдельную подвижную 16D CAR-карту, точную цену реакции фиксированного rank-two input-cut, формулы Book03-valuation defect и решённое уравнение полного свободного input-orbit. Но **нет общей карты \(\mathfrak P\)**, связывающей эти объекты: нет принадлежащего отображения от исходных 42 CQ-направлений к restricted $(q,m)$-переходу и затем к 8D query/report-эффектам, нет его физического допуска и единой абсолютной оценки листьев/clock/cut/Book03-Info. Именно такой commuting field→CAR→report→complete-price map вместе с действительными независимыми input equations требуется для одного физического исполнения. Три проверенных части задают точные локальные условия этой композиции; они не доказывают, что она построена. Никакого нового поля, Info-закона, compensating term, selector или свободного reset не введено. `GR_closed=false`.
 
+### Узкая ветвь CAR-композиции: одношаговое изометрическое сжатие исключено
+
+Можно дополнительно закрыть одну конкретную попытку построить отсутствующую карту.
+В restricted CAR-источнике одношаговый затвор в движущемся
+`Q`-ортонормальном кадре удовлетворяет
+`dot U_n=[ρ_*(A),U_n]` ([existing field-to-instrument boundary](A4D_NATIVE_FIELD_TO_INSTRUMENT_JET_BOUNDARY.md)). Выберем локальный ортогональный CAR-кадр `V(y)` в
+том же transported positive pairing, так что `U_n(y)=V(y)U_0V(y)^T`.
+Это переводит переменный CAR-затвор в фиксированный ортогональный `U_0`.
+
+Предположим, что требуемый полный `U_b(y)` получается сжатием этого **одного**
+CAR-шага тем же движущимся входным/выходным срезом:
+`U_b(y)=i(y)^* U_n(y) i(y)`, где `i(y)` — изометрия из исходного 8D query
+носителя в CAR16. Одновременно перенесём pairing, readout и тот же input/output
+cut. Положим `j(y)=V(y)^T i(y)`; тогда `j(y)` — изометрия и
+`U_b(y)=j(y)^T U_0j(y)`. В основной точке `U_b=U_*` — унитарный
+оператор. Уже доказанная same-cut compression lemma из
+[`moving_query/PROOF.md`](sources/d0_physical_cap1_execution_composition_2026-10-21/moving_query/PROOF.md)
+требует `Tr(DU_b)=0` для любого такого moving isometry.
+
+Но фактический целевой jet имеет
+`Tr(DU_b)=-8p^5η² df_b-32σp^4η² dq_b`, и на принадлежащем активном
+coframe-направлении он строго ненулевой (там доказана точная связь
+`df_b=-Λ_σ dq_b`, `dq_b≠0`, и `Λ_σ≠4σ/p`). Следовательно, этот
+одношаговый, unitary, same-cut CAR16 compression не может воспроизвести
+даже целевой 8D first jet. Это точное исключение одного кандидата, не NO-GO
+для полного D0: оно не покрывает двухшаговый chronological CAR `K`, иной
+field-dependent primitive, разные входной/выходной срезы, leakage или
+heralded programme. Любой такой маршрут должен вывести свой полный эффект,
+failure/work ledger и Book03 цену на том же исполнении.
+
 ## Проверка и provenance
 
-Три новых локальных exact controls: query/encoding — 17 алгебраических проверок; Book valuation — PASS17 при 80 знаках; independent input — PASS21 exact matrix controls. Агрегатор проверяет их, provenance пакета и пять source pins уже существующего restricted CAR/field-instrument результата. Для этой старой карточки он валидирует записанный receipt и точные исходники, не повторяя остальные дорогие controls. Он не запускает старые root, Lean или continuum suites. Самостоятельные доказательства лежат рядом: [подвижный запрос](sources/d0_physical_cap1_execution_composition_2026-10-21/moving_query/PROOF.md), [Book03](sources/d0_physical_cap1_execution_composition_2026-10-21/book_binding/PROOF.md), [входные уравнения](sources/d0_physical_cap1_execution_composition_2026-10-21/independent_input/PROOF.md), [restricted native CAR](sources/d0_physical_cap1_execution_composition_2026-10-21/restricted_car/SCOPE.md).
+Три новых локальных exact controls: query/encoding — 17 алгебраических проверок; Book valuation — PASS17 при 80 знаках; independent input — PASS21 exact matrix controls. Агрегатор проверяет их, provenance пакета и пять source pins уже существующего restricted CAR/field-instrument результата. Для этой старой карточки он валидирует записанный receipt и точные исходники, не повторяя остальные дорогие controls. Он не запускает старые root, Lean или continuum suites. Узкое следствие выше непосредственно композирует source-owned moving-cut lemma с CAR-frame identity; оно не заявляет новый checker или physical admission. Самостоятельные доказательства лежат рядом: [подвижный запрос](sources/d0_physical_cap1_execution_composition_2026-10-21/moving_query/PROOF.md), [Book03](sources/d0_physical_cap1_execution_composition_2026-10-21/book_binding/PROOF.md), [входные уравнения](sources/d0_physical_cap1_execution_composition_2026-10-21/independent_input/PROOF.md), [restricted native CAR](sources/d0_physical_cap1_execution_composition_2026-10-21/restricted_car/SCOPE.md).

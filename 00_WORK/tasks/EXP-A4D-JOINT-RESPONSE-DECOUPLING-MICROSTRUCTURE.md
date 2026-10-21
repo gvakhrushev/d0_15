@@ -3473,3 +3473,22 @@ Carrier and source: original CAR16 Spin/Q8 factor with explicit arm, program,
 clock, and retained-record apparatus factors. Decisive check: the 206-check
 exact symbolic CAR16 replay, with normal/optimized stdout identical and the
 existing Book03 comparator checker still passing (88 checks). `GR_closed=false`.
+
+## 21 October continuation: exclude the single-step CAR compression shortcut
+
+The integrated cap-one synthesis composes its exact nonzero query trace jet
+with the existing moving-CAR-frame identity and same-cut unitary compression
+theorem. This rules out one precise candidate map: compressing a single
+conjugated CAR16 step to the same moving 8D input/output isometry cannot
+produce the required query jet, because every such compressed unitary has
+zero trace derivative at its unitary base while the target trace derivative
+is nonzero on an owned ambient field direction. The proof and active-field
+tangent are already source-owned by the cap-one query and restricted-CAR
+results; this is their scoped composition.
+
+This removes only the direct single-step isometric-compression route. A
+chronological two-step CAR map, non-isometric/leaky or heralded encodings, or
+another actually derived field-controlled primitive remain untested and must
+carry their own failure, preparation, clock and complete-price sources. It
+does not close the common map `𝔓`, alter any task/lifecycle/selector, or promote
+physical GR. `GR_closed=false`.
