@@ -1,15 +1,15 @@
 {
   "status": "PASS",
-  "input_snapshot": "de6f4f9ab07e29f0df8ce6c2d92f9b8178c01e57",
+  "input_snapshot": "43adff715186cdb9a4c8fc7fa04986600f7d24cc",
   "source_pins": {
     "02_REGISTRY/research/A4D_PAIRED_EPOCH_CLOCK_COMPLETE_SOURCE_TRANSPORT_2026_10_21.md": "bc8d9b96701c8c0096f01dc22cf717ac86a0e83741be1608b438cd5e2ed79824",
     "02_REGISTRY/research/A4D_GOLDEN_DISCRETE_BLOWUP_CONDENSED_GR_2026_10_20.md": "68ba2d4dbbf5a055b852755fcf1c811824743c096ddcf722086c4da993fd179d",
     "02_REGISTRY/research/A4D_GLOBAL_RESULT_COMPOSITION_2026_10_20.md": "808ec6a438f378bce0eb1a4d22ce80cf897291fb54b5d40eb1596cadeae56717",
     "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/NATIVE_STAGE_CLOCK_AND_POINTED_DESCENT.md": "e970dda60699b7236599c9618445fe17cb8cbb0b9bb8c8de8808a190c4c00848",
     "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/BOOK_SOURCE_BINDING.md": "2b26bf2f4c1b128731ccf14a17437ba654c046e82b5e42e55113a8b6053494ea",
-    "02_REGISTRY/research/A4D_BOOK03_SOURCE_IDENTIFIABILITY_THEOREM_2026_10_21.md": "4ce898d50bff53de17cc6d4b3fe98fa8f9af564d0fa5d6a50fdb78591ff059c0",
-    "02_REGISTRY/research/A4D_NEXT_COMMON_MAP_CONSTRUCTION_GATE_2026_10_21.md": "cf8d893fd7435dd29dc4c93aa8291e965d765e5014aaeb9d82c63d23d84ebbf7",
-    "02_REGISTRY/research/A4D_CAUSAL_NATIVE_SOURCE_AND_WEIGHTED_DYNAMICS_2026_10_21.md": "d3f05bc13512a518c1f0a6738d4e91952774908f1ded5727ee81c004094bbaa3"
+    "02_REGISTRY/research/A4D_BOOK03_SOURCE_IDENTIFIABILITY_THEOREM_2026_10_21.md": "ff50fe0d65cb2b3965affcfc528b5e7ef0a2bfe3b50682e4e4800319a8e7dc33",
+    "02_REGISTRY/research/A4D_NEXT_COMMON_MAP_CONSTRUCTION_GATE_2026_10_21.md": "0d407c28b4a2a4f969889120f01aa109d878468cb782c4019bfe68bc3a8133d5",
+    "02_REGISTRY/research/A4D_CAUSAL_NATIVE_SOURCE_AND_WEIGHTED_DYNAMICS_2026_10_21.md": "34a3339d72e77d150d9bb41f00253ea0f21e2e2fd752561bbf63c3cab6a3d937"
   },
   "checks": [
     "source pin: 02_REGISTRY/research/A4D_PAIRED_EPOCH_CLOCK_COMPLETE_SOURCE_TRANSPORT_2026_10_21.md",
@@ -119,9 +119,9 @@
     "GR_closed": false
   },
   "environment": {
-    "python": "3.11.9",
-    "sympy": "1.12.1",
+    "python": "3.9.6",
+    "sympy": "1.14.0",
     "optimized": false
   },
-  "elapsed_seconds": 0.472141099977307
+  "elapsed_seconds": 0.190058666
 }

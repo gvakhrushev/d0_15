@@ -27,11 +27,11 @@ PINS = {
     "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/BOOK_SOURCE_BINDING.md":
         "2b26bf2f4c1b128731ccf14a17437ba654c046e82b5e42e55113a8b6053494ea",
     "02_REGISTRY/research/A4D_BOOK03_SOURCE_IDENTIFIABILITY_THEOREM_2026_10_21.md":
-        "4ce898d50bff53de17cc6d4b3fe98fa8f9af564d0fa5d6a50fdb78591ff059c0",
+        "ff50fe0d65cb2b3965affcfc528b5e7ef0a2bfe3b50682e4e4800319a8e7dc33",
     "02_REGISTRY/research/A4D_NEXT_COMMON_MAP_CONSTRUCTION_GATE_2026_10_21.md":
-        "cf8d893fd7435dd29dc4c93aa8291e965d765e5014aaeb9d82c63d23d84ebbf7",
+        "0d407c28b4a2a4f969889120f01aa109d878468cb782c4019bfe68bc3a8133d5",
     "02_REGISTRY/research/A4D_CAUSAL_NATIVE_SOURCE_AND_WEIGHTED_DYNAMICS_2026_10_21.md":
-        "d3f05bc13512a518c1f0a6738d4e91952774908f1ded5727ee81c004094bbaa3",
+        "34a3339d72e77d150d9bb41f00253ea0f21e2e2fd752561bbf63c3cab6a3d937",
 }
 
 
@@ -213,7 +213,7 @@ def run() -> dict:
 
     return {
         "status": "PASS",
-        "input_snapshot": "de6f4f9ab07e29f0df8ce6c2d92f9b8178c01e57",
+        "input_snapshot": "43adff715186cdb9a4c8fc7fa04986600f7d24cc",
         "source_pins": PINS,
         "checks": checks,
         "check_count": len(checks),
@@ -246,5 +246,6 @@ if __name__ == "__main__":
     result = run()
     encoded = json.dumps(result, ensure_ascii=False, indent=2) + "\n"
     if args.output:
-        args.output.write_text(encoded, encoding="utf-8", newline="\n")
+        with args.output.open("w", encoding="utf-8", newline="\n") as output_file:
+            output_file.write(encoded)
     sys.stdout.write(encoded)
