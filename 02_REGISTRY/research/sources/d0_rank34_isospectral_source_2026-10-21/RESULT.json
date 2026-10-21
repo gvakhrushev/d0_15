@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-21",
+  "scope": "Exact finite mathematical separation and original normalized-complement principal-angle corollary; not selected physical Book03/GR closure.",
+  "status": "PASS_LOCAL_NARROW",
+  "interpreter": "CPython 3.13.5",
+  "proof_blob_sha": "33bff8e407236f0b29cebd2878f2b4d68b938d16",
+  "checks": [
+    {
+      "script": "check_rank34_isospectral.py",
+      "blob_sha": "24f3f2521b754daf4ad6fbadd5e64fbe29ae9310",
+      "status": "PASS",
+      "assertions": 1971,
+      "jacobian_rank": 34,
+      "isospectral_source": 0,
+      "anchored_hessian_rank": 34,
+      "alpha": 0.190983005625053,
+      "hessian_eigenvalue": 0.089164944001346
+    },
+    {
+      "script": "check_principal_angles.py",
+      "blob_sha": "890d093ce90b36ae6781f37eea7c002904673a35",
+      "status": "PASS",
+      "assertions": 825,
+      "surjective_unitary_feedback_source": 0,
+      "deterministic_cut_first_source": 0,
+      "max_sensitivity_z_half": 0.7071067811865476
+    }
+  ],
+  "tested_scope": "Local bounded normal Python executions on independently fixed script contents; remote content blobs fetched and verified after publication. No unchanged scientific/Lean/full128/GR suites rerun; no GitHub CI claim.",
+  "result": "No full physical Book03 source or GR acceptance is promoted."
+}
