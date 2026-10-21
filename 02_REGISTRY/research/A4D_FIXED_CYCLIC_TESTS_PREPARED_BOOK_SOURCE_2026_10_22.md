@@ -108,6 +108,61 @@ These are mathematical truncation bounds for the SAME operator, not experimental
 
 The existing ORIGINAL Hadamard comparator \(F_H=2E-E^2\) has analogous formula \(J_{H,R}=r_R\sum_{\ell\le R}(\zeta^\ell/\ell)\sum_{j\le \ell}{\ell\choose j}(-1)^j 2^{\ell-j}m_{\ell+j}\). Its first source bound uses \(DF_H=(I-E)DE+DE(I-E)\), norm at most \(2\|DE\|\). No new Golden/non-Golden feedback is introduced.
 
+
+## 2a. Stronger exact ONE-MOMENT FIRST-SOURCE THEOREM and its converse
+
+The four-test nonlinear reconstruction above is more general than the physically needed **first Euler source at one exact primary root**. For the same prepared effect E, the exact source is
+\[
+DJ_\varphi[V]=r_R\,\operatorname{Tr}\!\left[
+ k_\varphi(E)\,DE[V]\right],\qquad
+ k_\varphi(e)=\frac{4p\zeta(1-2pe)}{1-\zeta\,4pe(1-pe)}.\tag{10}
+\]
+No commutativity of E and DE is assumed. Let the actual admitted first-jet image be
+\(\mathcal T_y=\operatorname{im}(DE_y:T_yX\to\mathrm{Herm}(d))\).
+The previously constructed ONE fixed positive Π report on the prepared, genuinely purified tracial test-input state has scalar expectation
+\[
+ \bar r_y=\Pr_y(\Pi)=\operatorname{Tr}(\Pi WW^\dagger/d)
+ =\operatorname{Tr}(E_y)/d.\tag{11}
+\]
+For any fixed real c, the ENTIRE native first Book source is exactly
+\[
+ \boxed{DJ_\varphi[V]=r_R\,d\,c\,D\bar r_y[V]
+ \ \ \forall V\in T_yX
+ \iff k_\varphi(E_y)-cI_d\in\mathcal T_y^\perp,}\tag{12}
+\]
+orthogonality in the real Hilbert–Schmidt trace pairing. This is a necessary-and-sufficient **source-sufficient quotient criterion** on the truly admitted tangent image. It is strictly weaker than realizing every source matrix direction or every k-fold interferometer.
+
+**At an anchored SCALAR effect only**, \(E_{y_*}=r_*I_d\), (12) holds automatically, for ALL arbitrary original ambient first variations DE, even if E ceases to be scalar immediately off the root:
+\[
+\boxed{DJ_{\varphi,y_*}[V]
+ =r_R\,d\,\frac{4p\zeta(1-2pr_*)}
+ {1-\zeta\,4pr_*(1-pr_*)}\,D\bar r_{y_*}[V].}\tag{13}
+\]
+This eliminates the **too-strong premise** \(E_y=r(y)I_d\) on an entire open field chart in §3 of the moving-prepared-cut owner, for the FIRST SOURCE application only. At the original fair point r*=1/2,
+\[
+ \boxed{DJ_{\varphi,*}[V]
+ =\frac{4r_Rd\,p^3\zeta}{1-\zeta(3p-1)}\,D\bar r_*[V].}\tag{14}
+\]
+Its coefficient is fixed, nonzero, and has no imposed Einstein multiplier. At the Golden spectral maximum r*=1/(2p), it vanishes; this is the owned source-free exceptional eigenvalue and MUST NOT be mistaken for a nontrivial Einstein coupling. For an admitted original field input, all its moving-preparation, observer, oldRIGHT and link directions are included in the actual \(D\bar r\), not frozen.
+
+**Converse for unrestricted Hermitian effects, and a sharp hostile control.** If (12) is demanded for EVERY Hermitian \(DE\), then trace-duality forces \(k_\varphi(E)=cI_d\). For \(0<\zeta<1/3\) (in particular original \(2^{-20}\)), \(k_\varphi\) is STRICTLY decreasing on the whole [0,1]:
+\[
+ k'_\varphi(e)=\frac{\zeta[-8p^2(1-\zeta F(e))+\zeta (F'(e))^2]}
+ {(1-\zeta F(e))^2}
+ \le -\frac{8p^2\zeta(1-3\zeta)}{(1-\zeta F(e))^2}<0,\tag{15}
+\]
+where \(F(e)=4pe(1-pe)\), \(0\le F(e)\le1\), \(|F'(e)|\le4p\). Thus \(k(E)\) scalar iff E is scalar; one moment is NOT universally sufficient away from scalar anchors. Concrete actual positive effect chart: \(E(0)=\mathrm{diag}(0.2,0.7)\), \(DE=\mathrm{diag}(1,-1)\), \(\mathrm{Tr}DE=0\) but \(DJ_\varphi=k(0.2)-k(0.7)>0\). This chart has a literal isometric dilation \(W(t)\) into \(\mathbb C^4\) for all small t (use orthogonal sqrt-success/sqrt-failure columns), so the failure is not caused by a non-positive formal tangent.
+
+**Quantitative robustness, not just exact scalar equality.** If \(0\le E\le I\) and \(\|E-rI\|\le\epsilon\), then for every actual tangent
+\[
+\boxed{|DJ_\varphi[V]-r_R d\,k_\varphi(r)D\bar r[V]|
+ \le r_R d\,\frac{8p^2\zeta(1+2\zeta)}{(1-\zeta)^2}
+ \epsilon\,\|DE[V]\|.}\tag{16}
+\]
+This follows by spectral calculus and the uniform bound on \(|k'_\varphi|\), then trace Hölder. It is a certified **one-moment source transport budget** for an approximately scalar finite resource bank; it DOES NOT prove \(\epsilon_h\to0\) or source-normalized refinement in any original D0 norm. Finite measurement shot noise, actual clock and Book Info remain separately priced.
+
+**Native consequence:** the strongest operational input contract for a FIRST nonzero Einstein–CAR source is now only (i) one admitted prepared source family with a scalar effect ON THE ROOT, (ii) its genuine complete one-bit Π probability derivative on a source-separating field chart, and (iii) independently derived original Book03 use of \(J_\varphi\) plus stationary upstream reaction. The cyclic k<=4 tests supply nonlinear/away-from-root verification, not a mandatory prerequisite for the first Euler equations. **A scalar-only detector does not select the physical action or its upstream cut.**
+
 ## 3. The decisive intrinsic phase/commutator negative control
 
 A real 2-to-4 isometric input fixture uses
