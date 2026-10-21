@@ -69,11 +69,16 @@ soundness/recovery or a whole-spacetime periodic theorem.
 The broader [full arbitrary-time Brinkmann result](../gr_assembly/sources/d0_double_null_quadratic_cartan_2026-10-19/arbitrary_brinkmann_all40.md)
 already supplies an exact finite Poisson/Einstein-source reduction for
 arbitrary transverse harmonic Dirichlet data. The
-[full smooth midpoint lift](A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md#3-a-second-order-continuum-metric-and-curvature-theorem)
-additionally proves `O(h²)` `C^r` metric and `C^(r−2)` curvature
-recovery for specified analytic Fourier-harmonic waves after source/clock
-synchronization; the polynomial subfamily above strengthens that to
-literal same-metric sampling on every mesh.
+[full smooth midpoint lift](A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md#9-arbitrary-smooth-dirichlet-recovery-from-the-actual-finite-records)
+extends recovery beyond the analytic Fourier examples: for `W` in
+`C^(r+5)` and `Psi` in `C^(r+3)` on a smooth outer rectangle, it solves the
+original five-point Dirichlet problem for the harmonic part and proves
+`O(h²)` `C^r` metric, `C^(r−2)` curvature, and `C^r` matter recovery on
+compact interiors, with no frequency cutoff. Boundary-corner regularity is
+not included. The non-bandlimited rational-harmonic diagnostic passes at
+`h=1/16,1/32,1/64,1/128`; the proof supplies the uniform estimate. The
+polynomial subfamily above separately gives literal same-metric sampling on
+every mesh.
 
 ## Full equation-class shortcut: two exact witnesses + Lovelock, with a sharp VSI control
 
