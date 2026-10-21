@@ -1,8 +1,8 @@
 # D0 → ОТО: ПРОРЫВНАЯ exact 40→3→1 Palatini reduction for ARBITRARY time-dependent Brinkmann geometry, plus real CAR matter
 
-19 October 2026. **EXACT FINITE SYMBOLIC / POSITIVE UNIVERSAL CLASS / SAME scientific integrator #334.** This is a major extension, **NOT merely another special pp-wave root**. The six-plaquette Brinkmann finite action in the literal EPS_PLUS pairing convention, and all its 16 independent relative-solder plus 24 proper-Lorentz-link Euler rows, reduce EXACTLY, for arbitrary independent lattice values of the time-dependent transverse function \(H(u,x,y)\), to **THREE explicit rows**. TWO original link Euler equations determine the one-null-step staggered connection. The remaining one row becomes a **single signed discrete Poisson/Einstein equation**. The already-corrected complete TWO-tick native golden AF×scene Book03 feedback contributes a genuinely derived CAR16 null-matter source on the SAME operational density-dressed metric. Consequently there is an **infinite-dimensional family of time-dependent nonvacuum GR solutions in the smooth limit and exact finite source roots at every mesh** with arbitrary transverse harmonic wave profiles and an infinite-dimensional class of distinct retained scalar/top CAR histories.
+19 October 2026. **EXACT FINITE SYMBOLIC / POSITIVE UNIVERSAL CLASS / SAME scientific integrator #334.** This is a major extension, **NOT merely another special pp-wave root**. The original six-plaquette Lorentz \(\star\)-action and all its 16 independent relative-solder plus 24 proper-Lorentz-link Euler rows reduce EXACTLY, for arbitrary independent lattice values of the time-dependent transverse function \(H(u,x,y)\), to **THREE explicit rows**. TWO original link Euler equations determine the one-null-step staggered connection. The remaining one row becomes a **single signed discrete Poisson/Einstein equation**. The already-corrected complete TWO-tick native golden AF×scene Book03 feedback contributes a genuinely derived CAR16 null-matter source on the SAME operational density-dressed metric. Consequently there is an **infinite-dimensional family of time-dependent nonvacuum GR solutions in the smooth limit and exact finite source roots at every mesh** with arbitrary transverse harmonic wave profiles and an infinite-dimensional class of distinct retained scalar/top CAR histories.
 
-This is the user's requested REVERSE strategic synthesis: a constructive map from an extensive existing Einstein–null-matter Brinkmann sector BACK to original finite D0 coframes, proper links, recorded CAR16 material fields, true golden LEFT/RIGHT labels and ONE existing full J2 operator price, and then forward again through the full Euler. It consumes the previous [original full40 quadratic geometry owner](A4D_AF_STAR_FULL_LATTICE_STATIONARY_FAMILY_2026_10_17.md), [true twice-ticked local Book J2+CAR matter](A4D_LOCAL_LEFT_CODED_CAR_NULL_MATTER_EINSTEIN_2026_10_18.md), [fixed original CAR matter and complete reference](A4D_MICROHISTORY_EINSTEIN_QUOTIENT_AND_PRICE_EULER_UNIVERSALITY_2026_10_18.md), [density-dressed operational metric](A4D_DENSITY_DRESSED_CAR_EINSTEIN_METRIC_2026_10_18.md), and [same-detector mean/MAP Euler](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md) §6.66. It is an exact theorem about that fully specified mathematical AF-star instrument. It does **not** claim the original foundational D0 FULL history has obligatorily selected its controller/price, nor close original #216 all-periodic fixed-g/tau raw terminal.
+This is the user's requested REVERSE strategic synthesis: a constructive map from an extensive existing Einstein–null-matter Brinkmann sector BACK to original finite D0 coframes, proper links, recorded CAR16 material fields, true golden LEFT/RIGHT labels and ONE existing full J2 operator price, and then forward again through the full Euler. It consumes the previous [original full40 quadratic star owner](A4D_AF_STAR_FULL_LATTICE_STATIONARY_FAMILY_2026_10_17.md), [true twice-ticked local Book J2+CAR matter](A4D_LOCAL_LEFT_CODED_CAR_NULL_MATTER_EINSTEIN_2026_10_18.md), [fixed original CAR matter and complete reference](A4D_MICROHISTORY_EINSTEIN_QUOTIENT_AND_PRICE_EULER_UNIVERSALITY_2026_10_18.md), [density-dressed operational metric](A4D_DENSITY_DRESSED_CAR_EINSTEIN_METRIC_2026_10_18.md), and [same-detector mean/MAP Euler](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md) §6.66. It is an exact theorem about that fully specified mathematical AF-star instrument. It does **not** claim the original foundational D0 FULL history has obligatorily selected its controller/price, nor close original #216 all-periodic fixed-g/tau raw terminal.
 
 ## 1. All SIX true based plaquettes with H(u,x,y) entirely free
 
@@ -27,20 +27,13 @@ P_{rs}(z)=U_r(z)U_s(z+\hat r)U_r(z+\hat s)^{-1}U_s(z)^{-1},
 \quad {\cal R}(P)=\tfrac12(P-P^{-1}),
 \tag{3}
 \]
-For this 40→3 calculation, the Brinkmann EPS_PLUS cell functional is the literal complementary-pair contraction implemented by the pinned all40 checker:
+and its original \(\star\)-density is exactly that of the accepted owner:
 \[
-{\cal P}_{B,h}(z)=\sum_{r<s}\epsilon_{rsuv}
-\operatorname{pair}_{+}(v_u\wedge v_v,\mathfrak b({\cal R}(P_{rs}))).
+{\cal P}_{\star,h}(z)=\sum_{r<s}\epsilon_{rsuv}
+G_2(v_u\wedge v_v,\star\mathfrak b({\cal R}(P_{rs}))).
 \tag{4}
 \]
-Here \(\operatorname{pair}_{+}\) is the complementary internal-pair contraction with the literal \(+\varepsilon_{abcd}\) used by that checker; the source note records its exact matrix implementation and immutable owner pins.
-The canonical accepted density is separately
-\[
-{\cal P}_{C,h}(z)=\sum_{r<s}\epsilon_{rsuv}
-G_2(v_u\wedge v_v,\star\mathfrak b({\cal R}(P_{rs}))).
-\]
-The exact finite sign theorem in A4D_ORIGINAL_STAR_NULL_CART_SIGN_AND_ALL_ORDER_CQ_RETYPE_2026_10_21.md proves \({\cal P}_{B,h}=-{\cal P}_{C,h}\) for the same transported fields on all six based faces; the proper null-to-Cartesian frame map has determinant \(+1\), so this relative sign is not an orientation flip. Equations (5)–(9) below use \({\cal P}_{B,h}\), not the canonical \(G_2\star\) owner.
-The full functional is \(\sum_z{\cal P}_{B,h}\), with a true fixed boundary collar or periodic null u/v and fixed transverse x/y collar; **NO restricted variation along the H or K ansatz** is used to compute its 40 Euler entries.
+The full functional is \(\sum_z{\cal P}_{\star,h}\), with a true fixed boundary collar or periodic null u/v and fixed transverse x/y collar; **NO restricted variation along the H or K ansatz** is used to compute its 40 Euler entries.
 
 ## 2. EXACT symbolic universal theorem: 40 original Euler rows collapse to THREE
 
@@ -49,7 +42,7 @@ Differentiate the ORIGINAL action (3)–(4) with respect to ALL sixteen individu
 D{\cal R}(P)[dP]=\tfrac12(dP+P^{-1}dP P^{-1}).
 \tag{5}
 \]
-Then **for arbitrary algebraically independent H, K2, K3 values on the full affected stencil** the scalar density \({\cal P}_{B,h}(z)\) is identically ZERO (even off the field equations), every Euler component except the following three vanishes IDENTICALLY, and these THREE are EXACT:
+Then **for arbitrary algebraically independent H, K2, K3 values on the full affected stencil** the scalar density \({\cal P}_{\star,h}(z)\) is identically ZERO (even off the field equations), every Euler component except the following three vanishes IDENTICALLY, and these THREE are EXACT:
 
 \[
 \boxed{
@@ -98,35 +91,21 @@ E_{v_v^+}(z)
 \]
 Here
 \(\Delta_h^\perp=(T_x+T_x^{-1}+T_y+T_y^{-1}-4)/h^2\).
-Thus the Brinkmann EPS_PLUS 40-independent-direction finite system is EXACTLY equivalent on the nondegenerate Brinkmann N2/N3 ansatz to ONE two-dimensional discrete Poisson equation, no quadratic-profile assumption. The original old result \(-h^3(A+D)\) is recovered by \(H=Ax^2+2Bxy+Dy^2\) because \(\Delta_h^\perp H=2(A+D)\).
+Thus the accepted original 40-independent-direction star system is EXACTLY equivalent on the nondegenerate Brinkmann N2/N3 ansatz to ONE two-dimensional discrete Poisson equation, no quadratic-profile assumption. The original old result \(-h^3(A+D)\) is recovered by \(H=Ax^2+2Bxy+Dy^2\) because \(\Delta_h^\perp H=2(A+D)\).
 
 **Independent exact verification:** [sources/d0_arbitrary_brinkmann_all40_2026-10-19/check_all40_arbitrary_brinkmann.py](sources/d0_arbitrary_brinkmann_all40_2026-10-19/check_all40_arbitrary_brinkmann.py) uses the original η, six based faces, nilpotent full4 Lorentz matrices and unrestricted 16+24 variations with **symbolically independent H and K variables**. It verifies (6)–(9) coefficientwise, including the genuine link face from z-u. A separate direct numerical value/first-source run on independent cubic/quartic/trigonometric transverse profiles agrees, without using symbolic solver assumptions.
 
 ## 3. The SAME corrected Book-feedback supplies an arbitrarily time-dependent genuine null CAR matter source
 
-Consume the TRUE corrected two-scene-tick complete AF×scene \(J_2=-\operatorname{Tr}\log(I-zF)\), with OLD LEFT path scene control, untouched OLD RIGHT/reference128, the full scene528+22448, all failure modes retained, \(z=2^{-20}\), and \(p=\varphi^{-1}\). As proved by its owner the actual **two-tick** scene effect is \(B_i=4b_i(1-b_i)\), \(b_i=(p+\sigma p^2t^2q_i)^2\), NOT the one-tick setting b. The configured AF geometric operand is \(f_{B,i}=h^{-4}{\cal P}_{B,h}\). At the actual common \((f_{B,i},q_i)=(0,0)\) locus the FIRST source, for ALL independent field tangents, is
+Consume the TRUE corrected two-scene-tick complete AF×scene \(J_2=-\operatorname{Tr}\log(I-zF)\), with OLD LEFT path scene control, untouched OLD RIGHT/reference128, the full scene528+22448, all failure modes retained, \(z=2^{-20}\), and \(p=\varphi^{-1}\). As proved by its owner the actual **two-tick** scene effect is \(B_i=4b_i(1-b_i)\), \(b_i=(p+\sigma p^2t^2q_i)^2\), NOT the one-tick setting b. The same original AF geometric E uses \(f_i=h^{-4}{\cal P}_{\star,h}\). At the actual common \(f_i=q_i=0\) locus the FIRST source, for ALL independent field tangents, is
 \[
 \frac{DJ_2}{\nu K}
-=\bar w C_\star D\sum_z[\widehat f_{B,z}+\lambda_Bq_z],
+=\bar w C_\star D\sum_z[\widehat f_z+\lambda_\sigma(z)q_z],
 \quad
 \boxed{\lambda_-(2^{-20})=-23.416406751884\ldots},
 \tag{10}
 \]
 where \(\lambda_\sigma(z)=2\sigma p^{-5}(R/Q+p^6)\), \(Q=1-z4p^3\), \(R=1-z4p^3(1+p^6)\). Beware: the letter \(z\) denotes fugacity IN \(\lambda_\sigma(z)\), whereas a bold/site z in the geometric equations denotes the lattice node; the source coefficient is site independent. True unequal original native golden/regular weights \(w_z>0\) cancel through the exact source-compatible \(\widehat e_z=\sqrt{w_z/\bar w}\,e_z\) and the owner's inverse-PF scalar query. They are NEVER declared equal priors; the event code, RIGHT witness and full16 CAR remain in the same one feedback.
-
-**Convention for the source equations (10)–(14).** Write the measured first jet of this configured price in its EPS_PLUS argument \((x_B,y)\), with \(x_B\propto\widehat f_B\), as \(a_B D\widehat f_B+b_BDq\), with \(\lambda_B:=b_B/a_B=\lambda_\sigma(2^{-20})\); thus the displayed \(\lambda_-\) is \(\lambda_B\) at \(\sigma=-1\). For the same scalar-valued price, the canonical argument is \(\widehat f_C=-\widehat f_B\) (so \(x_C=-x_B\)), represented by the pullback \(F_C(x_C,y)=F_B(-x_C,y)\). At the first-source level \(a_C=-a_B\), \(b_C=b_B\), and \(\lambda_C=b_C/a_C=-\lambda_B\). For the null energy \(E(u)\) later defined from the CAR history, this gives
-\[
-\begin{aligned}
-D(\widehat f_B+\lambda_Bq)&=-D(\widehat f_C+\lambda_Cq),\\
--\frac{1}{2h}\Delta_h^\perp H(u+h,x,y)-\frac{2\lambda_B}{h}E
-&=0
-\quad\Longleftrightarrow\quad
-\frac{1}{2h}\Delta_h^\perp H(u+h,x,y)-\frac{2\lambda_C}{h}E=0,\\
-\Delta_h^\perp H(u+h,x,y)&=-4\lambda_BE=4\lambda_CE .
-\end{aligned}
-\]
-So (13) is the same sourced equation in both typed coordinates. Reusing \(\widehat f_B\)'s coefficient with \(\widehat f_C\), or identifying \({\cal P}_{B,h}={\cal P}_{C,h}\), reverses the matter-source sign. The linked all-order master-section conjugacy is certified for its pinned N=1 price owner; this source statement does not identify every separately configured price, including this theorem's two-scene-tick \(J_2\), with that owner or establish physical Book03 selection.
-
 
 Use the original TWO normalized scalar/top amplitudes \(\Psi=(\psi_0,\psi_4)\) of ONE full16 CAR state. Their real Lorentz Clifford square on the SAME operational \(\widehat g\) gives
 \[
@@ -147,7 +126,7 @@ Both independent scalar and top Euler rows are EXACTLY zero for ANY \(\Psi_j\) b
 \(\sum_z2(D_u^+\Psi_j)\cdot D_v^+\delta\Psi_z\)
 vanishes by exact periodic v-Stokes (or fixed v boundary); v_j may vary with u without entering this summation. Likewise matter does not depend on any independent Lorentz-link coordinate. No matter stress is inserted after the fact.
 
-Use \(\widehat f_B=h^{-4}{\cal P}_{B,h}\) and (9). The ONLY remaining joint geometry+matter first Euler row of this SAME complete Book-feedback is
+Use the original \(\widehat f=h^{-4}{\cal P}_{\star,h}\) and (9). The ONLY remaining joint geometry+matter first Euler row of this SAME complete Book-feedback is
 \[
 \bar w C_\star\left[-\frac1{2h}\Delta_h^\perp H(u+h,x,y)
                      -\frac{2\lambda_-}{h}E_j\right],
@@ -218,7 +197,7 @@ The previous exact microhistory/Euler quotient had:
 - fixed quadratic coframe metric per sector, with an \(m=L/2\) torus of independently stored Hodge matter phases and two constant Weyl polarization parameters;
 - a conditional SAME-detector strict-GOOD Golden mean/MAP Euler equivalence.
 
-Equations (6)–(16) now provide a **FIBRE FAMILY** over the genuine extensive Brinkmann sector: the base consists of (i) arbitrary nonnegative E(u), (ii) arbitrary smooth transverse harmonic W(u,x,y) and its true finite Dirichlet realization, and (iii) the resulting source-compatible operational metric. For each base E and W, the fibre contains many distinct actual normalized recorded CAR16 scalar/top histories with exactly the SAME local source E; their Hodge phases can vary independently subject only to the genuine closure condition. Importantly these microhistories remain distinguishable to their own properly paid raw CAR detector, while the ENTIRE typed Brinkmann geometry/scene feedback F and its **geometric source** are exactly identical at \(f=q=0\). This is **not erasure** of microscopic distinctions; it is a mathematical gravitational equivalence class of independent complete histories.
+Equations (6)–(16) now provide a **FIBRE FAMILY** over the genuine extensive Brinkmann sector: the base consists of (i) arbitrary nonnegative E(u), (ii) arbitrary smooth transverse harmonic W(u,x,y) and its true finite Dirichlet realization, and (iii) the resulting source-compatible operational metric. For each base E and W, the fibre contains many distinct actual normalized recorded CAR16 scalar/top histories with exactly the SAME local source E; their Hodge phases can vary independently subject only to the genuine closure condition. Importantly these microhistories remain distinguishable to their own properly paid raw CAR detector, while the ENTIRE original proper Lorentz \(\star\)/scene feedback F and its **geometric source** are exactly identical at \(f=q=0\). This is **not erasure** of microscopic distinctions; it is a mathematical gravitational equivalence class of independent complete histories.
 
 On the SAME complete Golden determinant GOOD-effect detector, with \(g=\det(I-zF)^2=e^{-2J}\), the owned Golden refined bad-event law still gives
 \[
@@ -233,7 +212,7 @@ The full upstream old Book history/source, original v8 H+J+R, moving cut/code/no
 
 ### 5.1. The entire arbitrary-Brinkmann family requires ONLY the two native source jets, not an infinite action expansion
 
-The same mathematical principle now holds on a vastly larger curved sector than the preceding constant-flux polygon. Consider ANY true complete same-carrier measured price \(\mathcal S_h\) whose genuine full first source, after *its independently resolved additional internal Euler rows*, satisfies the following **one** common-null typed-source identity in one declared curvature convention on all 16+24+2 independent field directions:
+The same mathematical principle now holds on a vastly larger curved sector than the preceding constant-flux polygon. Consider ANY true complete same-carrier measured price \(\mathcal S_h\) whose genuine full first source, after *its independently resolved additional internal Euler rows*, satisfies the following **one** common-null/star identity on all 16+24+2 independent field directions:
 \[
 D\mathcal S_h\big|_{\{f_i=q_i=0\}}
  =a_hD\sum_{z}\widehat f_z+b_hD\sum_zq_z,\qquad a_h\ne0,
