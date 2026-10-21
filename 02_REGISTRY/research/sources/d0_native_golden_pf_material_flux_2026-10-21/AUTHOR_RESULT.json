@@ -1,0 +1,63 @@
+{
+  "date": "2026-10-21",
+  "pr": 334,
+  "owner": "EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE",
+  "status": "AUTHOR_EXACT_NATIVE_PF_C2_AND_GENUINE_FINITE_N1_MATERIAL_FLUX_CHECKS_PASS",
+  "science_note": "02_REGISTRY/research/A4D_NATIVE_GOLDEN_PF_C2_AND_MATERIAL_FLUX_2026_10_21.md",
+  "code_blobs": {
+    "PF_discrepancy": "69528a94bd491a52f8b7ae58fc7817e8d7fa31ab",
+    "true_N1_material": "fd715f68c074d426e38274a73db82c1c4a7e15e3"
+  },
+  "proof_constants": {
+    "native_schedule": "n(L)=64 ceil(log_phi L)+128 for L>=4, exact s minimum in theorem",
+    "native_root": "p=(sqrt(5)-1)/2, 3/5<p<5/8",
+    "a_inf": "phi/sqrt(5)>7/10",
+    "all_grid_uniform_rho_bound": "||rho-1||<9h^3",
+    "log_PF_first_difference": "<=36h^2",
+    "log_PF_second_difference": "<=72h",
+    "original_READY_limit": "2p^3 phi/sqrt(5)=0.341640786499874...",
+    "genuine_positive_adjoint_norms": "D_PF-D_uniform=O(h^2), Delta_PF-Delta_uniform=O(h) assuming bounded original CAR/coframe/link chart"
+  },
+  "source_snapshot": "original 4D nested Golden boxes and N1 GoldenMaster owners on branch as of 2026-10-21",
+  "actual_n24_L8_material_slab": {
+    "original_histories": 75025,
+    "original_sites": 4096,
+    "original_spatial_column": [
+      4,
+      4,
+      4
+    ],
+    "actual_rho": [
+      1.637854049,
+      1.146497834,
+      1.801639454,
+      1.146497834,
+      1.583258914,
+      1.801639454,
+      0.928117294,
+      1.310283239
+    ],
+    "max_material1_before": 0.00037910883308844845,
+    "max_material1_after": 4.440892098500626e-16,
+    "independent_nonlinear_CQ_secant": 1.4107410182053128e-15,
+    "max_scalar_gradient_change": 0.00004516865978161644,
+    "max_offshell_new_q": 0.000013204284164647709,
+    "scalar_fixed_boundary_change": 0,
+    "analytic_sufficiency": "G_i'=a_i[F_y+2tau a_i u_i^2 F_yy/rho_i]>0 on bracket and matching fixed endpoint sum"
+  },
+  "scope": {
+    "original_n20L4_and_n24L8_census_preserved": true,
+    "native_high_depth_enumerated": false,
+    "original_Book_HJR_source_selected": false,
+    "exact_42_joint_finite_nonVSI_root": false,
+    "all_spatial_scalar2_Euler_solved": false,
+    "true_original_field_writer_admitted": false,
+    "physical_GR_closed": false,
+    "CI_scientific_test_run": false,
+    "independent_review": false
+  },
+  "commands": [
+    "python3 02_REGISTRY/research/sources/d0_native_golden_pf_material_flux_2026-10-21/check_native_golden_pf_c2_source.py",
+    "python3 02_REGISTRY/research/sources/d0_native_golden_pf_material_flux_2026-10-21/check_native_n1_scalar_flux.py"
+  ]
+}
