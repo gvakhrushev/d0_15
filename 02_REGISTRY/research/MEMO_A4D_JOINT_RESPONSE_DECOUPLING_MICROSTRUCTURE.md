@@ -9768,12 +9768,25 @@ orders are included by zero-padding.
 Replay with
 [a4d_y232_firstslow_laurent_scale_check.py](certificates/a4d_y232_firstslow_laurent_scale_check.py).
 This is a formal-amplitude obstruction for the designated first-slow system.
-It does not bound corrections with pole order above two, arbitrary
-non-Laurent \(h\)-dependent corrections, or the nonlinear finite-\(h\)
-Euler remainder. It supplies neither a task-level no-go nor a normalized
-response gap. The next missing estimate is a uniform control of the center
+The truncated convolution calculation by itself tests only pole order at
+most two. Combined with the already owned exact generic-amplitude calculation,
+a stronger formal consequence follows: after clearing the denominator
+\(D(t)^4\), the full polynomial system has
+\(\operatorname{rank}_{\mathbb Q(t)}M(t)=97\) and
+\(\operatorname{rank}_{\mathbb Q(t)}[M(t)\mid b(t)]=98\). These ranks are
+unchanged over \(\mathbb C((t))\) and every Puiseux extension
+\(\mathbb C((t^{1/n}))\): polynomial minors that vanish over \(\mathbb Q(t)\)
+are identically zero, while a nonzero minor remains a nonzero formal series.
+Therefore no finite-pole Laurent or Puiseux correction solves the complete
+first-slow system, regardless of pole order. The denominator is a unit at
+\(t=0\), since \(D(0)=4\).
+
+This still does not control non-series \(h\)-dependent corrections, terms
+beyond the first-slow system, or the nonlinear finite-\(h\) Euler remainder.
+It supplies neither a task-level no-go nor a normalized response gap. The
+first remaining estimate is uniform finite-\(h\) control of the center
 correction as \(t_h\to0\), or an exact finite-\(h\) reduced equation that
-replaces such a bound.
+handles such non-series sequences.
 
 ## 21 October — explicit complete-price branch and full nonnull continuum realization
 
