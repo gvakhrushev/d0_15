@@ -4189,3 +4189,76 @@ excludes another exact compiler hunt for this same pure programme from
 the same seeds; any alternative must change a proved premise and carry
 its actual full price. Book03 information/admission and physical GR
 closure remain open; `GR_closed=false`, PR #334 stays Draft.
+
+## 21 October continuation: construct an admitted replacement for the excluded writer
+
+Phase: native realization and same-execution composition, consuming scientific
+input `311b1d3f`. The exact pure full32 programme from the specified
+`Q(sqrt(p),sqrt(2),i)` seeds is excluded; this continuation must change that
+specific interface rather than retry a longer exact word. The parent premise
+is the actual field/resource writer and its complete preparation-price source
+needed by the configured original 16+24+2 source theorem.
+
+Seek a concrete original-carrier moment instrument for the required even
+coframe combinations, or an explicit paid finite-history approximation with
+full-price secant control. In particular test a fixed finite register of
+dyadic field codes, reversible sign/threshold routing, actual CAR probes and
+retained purifications: at each precision the histories must begin at the
+same declared blanks, use only the owned paid factories, carry every failure
+and controller cost, and have a uniform charged schedule. No supplied moving
+amplitude, controlled unknown Julia map, erased code/history, or freely chosen
+Book information is permitted. A different finite readout must transport the
+original all42 first jet and preserve the original collar and source gain.
+
+The smallest decisive checks are an exact one-site construction with its full
+successful/failure output, a nontrivial coframe/link/matter source transport,
+and an explicit bound for the complete price secant. If only the CQ price is
+established, keep compulsory Book03 binding and native stationary selection
+separate. Consume the fixed processor, polynomial first-jet compiler, exact
+vacuum prefix, cyclic-history secants and first-shell archive source at their
+actual scopes. Contributors write disjoint scratch proofs/checkers; the
+integrator alone edits this existing owner and the new bounded source packet.
+No root/rank census, new task, new selector or physical GR promotion.
+
+### Result: actual paid moment writer and its full finite-price graph
+
+The [constructive replacement](../../02_REGISTRY/research/A4D_PAID_MOMENT_FIELD_WRITER_2026_10_21.md)
+uses a new proved moment interface rather than attempting the excluded
+exact pure programme. The dimensionless coframe, six-coordinate Cayley
+links and same-site material coherences give an injective16+24+2 chart.
+The actual small material chart contains a nonvacuum primary member;
+the original full128 Gram and the original local report's ambient
+second jet are retained. The report/source transport and its limits
+are explicit, including the signed calibration to J2 and the separate
+positive Hessian comparison to the old complete CQ price.
+
+The finite code writer is literal: AB/BA uses one of each same-address
+CNOT, starts from the declared blanks after a paid known-one factory,
+and retains every complementary column and u=1 work bit. Exact Q(p)
+moment rows are all prepared before a fixed paid row selection.
+All unused rows, copies, instruction records, clocks and failures remain.
+The actual entire CQ preparation baseline is common between codes, so
+exact common-catalogue price secants recover every original source row
+with a quantitative error bound. This is a finite paid word family;
+an autonomous controller choosing a prescribed code is not supplied.
+The separately constructed uniform-code instrument proves reachability
+from one complete initial controller and keeps its honest average price.
+
+The actual composed writer also has a computed normalized Book
+determinant: all late branches have retained u=1, the fixed initial cut
+has u=0, and any early-abort corner is common. Its full marked code
+contrast is zero. The additional priced-block Gram equivalence supplies
+a precise sufficient heat criterion; it does not define the original
+Dirac/Hodge/scene heat map or numerical vertex Info. CQ price and this
+Book term are separately established quantities, not arbitrarily added
+parts of a purported compulsory price.
+
+The concurrent rational-orthogonal resource writer at e37991ae is
+preserved as a distinct finite-approximation route. The new
+[source packet](../../02_REGISTRY/research/sources/d0_paid_moment_field_writer_2026-10-21/README.md)
+records the actual construction, narrow exact checks and independent
+analytic reviews. The removed parent premise is supplied moving
+quantum resources and their upstream CQ price in the proved moment
+consumer. Compulsory primitive/controller admission, Book03 heat/Info
+binding, physical field selection and the original raw-216 refinement
+remain open; PR #334 stays Draft and GR_closed=false.

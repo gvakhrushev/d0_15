@@ -107,6 +107,64 @@ longer a live construction gate. A different paid readout of even coframe
 moments, a generated additional input resource, or a controlled full-price
 approximation needs its own actual common-history map.
 
+## Constructed replacement: a paid finite moment-field graph
+
+The [paid moment writer](A4D_PAID_MOMENT_FIELD_WRITER_2026_10_21.md)
+now supplies a positive alternative on the existing addressed Golden/CNOT
+and counted-CQ interface. It does not revisit the excluded pure programme.
+Its actual generated moments decode sixteen dimensionless coframe
+coordinates, four sets of six Cayley proper-link coordinates and the two
+original same-site material coherences. The original full128 reference
+Gram, all CAR grades, every unused table row and each literal local
+trace-copy implementation remain. An explicit small nonvacuum primary
+member lies inside the constructed open chart.
+
+At a fixed finite Q(p) catalogue, the row bank is prepared in full before
+live row selection. Two-CNOT AB/BA cells write each code from declared
+blanks with the same per-address paid inventory. A fixed coherent
+multiplexer and polynomial report give exact catalogue moments and the
+original report's full ambient second jet at the primary family. The
+complete all-failure CQ price is
+
+\[
+ S_m(k)=B_m-\gamma_m\sum_\lambda w_\lambda
+            h_\varphi(r_\lambda^{\rm poly}(y_k)).
+\]
+
+The writer and unused-bank price in B_m are actually computed to be
+code independent on this interface. This removes the supplied moving
+quantum-amplitude and uncomputed CQ preparation-price premise for that
+new report implementation. Exact common-catalogue price differences
+converge to all42 original source rows, with the signed original gain,
+all spatial weights and their error budget retained. It is a finite
+word graph and a controlled source limit, not a differentiable finite
+programme selector or an exact finite-code stationary point.
+
+The same actual AB/BA writer has a stronger separate Book result:
+retained code work u=1 makes every late branch orthogonal to the fixed
+initialized-work cut u=0, while all early aborts are common. Its entire
+cost-marked normalized complementary determinant therefore has exactly
+zero code contrasts, including a possible nonzero early-abort corner.
+A priced-sector-preserving Gram equivalence supplies a conditional
+heat-trace criterion. The original Book Dirac/Hodge/scene heat operator,
+compulsory cut and branch Info are not identified by this result.
+
+A separate one-controller uniform-code instrument reaches all finite
+catalogue nodes with positive probability from one complete initial
+state. Its full price includes the code entropy and average over every
+node. It does not select an Einstein code or identify a conditional
+node price with the unconditional action. The prescribed AB/BA word
+comparisons retain their actual instruction/controller-selection boundary.
+
+Thus Gates A--C now have a real finite constructive candidate and an
+evaluated upstream CQ term. The outstanding test is the compulsory
+physical Book/heat/Info/controller binding on this specified execution,
+with its real independent inputs and physical refinement. Neither the
+old pure Julia channel nor the original full128 HJR tape has been
+identified with this different moment instrument. The separate
+[rational-resource writer](A4D_PAID_RATIONAL_RESOURCE_WRITER_2026_10_21.md)
+remains an approximation route to the original pure resources.
+
 ## Consumed result: the null source fibre is an additional readout test
 
 The [null two-field source-fibre classification](A4D_NULL_SOURCE_FIBRE_AND_READOUT_DESCENT_2026_10_21.md)
@@ -238,9 +296,11 @@ substitutes for it.
 
 The covariant two-field stationary-set correspondence, explicit rank-two non-VSI solution, fixed-positive-PF-weight first-covector identity, finite four-report price-source test, and finite sixteen-setting whole-channel derivative are established within their stated mathematical interfaces. The original exact finite Cartan family remains a separate positive result.
 
-The native resource writer and its genuine input price, the common admitted
-map \(P\), compulsory complete Book03 valuation, native stationary/constraint
-selection, the actual readout of the classified null source fibre, and uniform
+The finite moment writer, its actual counted-CQ input price and its
+initialized-cut Book determinant are constructed at the scope stated
+above. The compulsory native common-history map \(P\), full Book03
+heat/Info valuation, native stationary/constraint selection, the
+physical readout of the classified null source fibre, and uniform
 physical refinement have NOT been established. Keep PR #334 Draft and
 `GR_closed=false`. This remains the single next closure gate; do not start
 another geometry census or repeat completed proofs.

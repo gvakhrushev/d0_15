@@ -633,3 +633,42 @@ analytic review and exact replay evidence are in the
 [writer packet](sources/d0_exact_resource_writer_2026-10-21/README.md).
 The candidate is closed at its stated scope; full GR is not established.
 `GR_closed=false`.
+
+## Positive replacement: exact paid moment nodes and all42 source differences
+
+The [paid moment field writer](A4D_PAID_MOMENT_FIELD_WRITER_2026_10_21.md)
+constructs a different input/readout on the declared addressed native
+factory interface. Sixteen dimensionless coframe moments, six Cayley
+coordinates for each proper link and two actual same-site CAR material
+coherences give an injective42 field chart. The forbidden pure-programme
+amplitude is not prepared. The new material purification preserves the
+actual full RIGHT128 Gram and clock population, and its open small-field
+chart contains an explicit sourced, curved member of this primary family.
+
+Every node of a finite Q(p) catalogue has an actual paid preparation.
+All rows are prepared before selection; AB/BA code words have equal
+per-address inventory; unused rows, failures, controller and work remain.
+The resulting complete counted-CQ price has a derived common preparation
+baseline. The P5 coframe and C8 link polynomials preserve the original
+report through its full ambient second jet. Exact finite-price
+differences therefore recover all42 primary source rows and the old
+CQ second variation, with the original signed source calibration and
+all spatial multiplicities. This is a controlled source limit; it does
+not declare a staircase code map differentiable or a finite-code point
+exactly stationary. The existing negative field directions survive.
+
+On the same AB/BA execution the whole cost-marked complementary Book
+determinant is also computed: it is code independent on the common
+initialized-work cut, because actual retained code work separates all
+late branches and early aborts are common. That calculation does not
+identify the compulsory Book03 cut, heat or Info law. A one-controller
+uniform-code instrument separately proves actual reachability of every
+finite node, with its code entropy and unconditioned average price
+retained; it does not select Einstein data.
+
+This removes the supplied moving quantum resource and its unknown
+upstream CQ price from the new moment implementation. Full native
+admission, ordered Book03 valuation and physical stationary selection
+remain the [same common-map gate](A4D_NEXT_COMMON_MAP_CONSTRUCTION_GATE_2026_10_21.md).
+The exact original all40+2 family is consumed unchanged; no new
+geometric root census or physical GR promotion is made.

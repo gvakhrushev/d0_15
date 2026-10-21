@@ -1,0 +1,52 @@
+{
+  "source_ref": "311b1d3fd505effe7082754bc80dd17d1097f095",
+  "verification": "git show pinned historical ref:path; no mutable routing-owner check",
+  "sources": [
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/DETERMINANT_PREPARATION_BANK.md",
+      "sha256": "6cc9fc85ef8e238635ef24b78ddb3936f07d1a3f915558172eee8ff1c3602705",
+      "bytes": 13833
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/GOLDEN_EXACT_DETECTOR.md",
+      "sha256": "d33c9c2cb2322e381723f481eb1fcf58058fd05ad88eda92c5597c026d02eb77",
+      "bytes": 16828
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_causal_native_weighted_synthesis_2026-10-21/native_source/NATIVE_POLYNOMIAL_FIRST_JET.md",
+      "sha256": "4d098d1e6ad8cb7daf477b498f808b7b962d6432f3da78ae573e321dbbcb915d",
+      "bytes": 35006
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_primary_native_domain_source_2026-10-20/check_primary_domain_source.py",
+      "sha256": "c67285c7469db49ff61f3e52597d0bcc6aad991ec1f7af025d6daeb065a43edf",
+      "bytes": 24033
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_exact_resource_writer_2026-10-21/EXACT_NATIVE_WRITER_GATE.md",
+      "sha256": "672524e7a56e25675fda6cf295acc258877729f1a4d69bf0a52d4e1425884dcc",
+      "bytes": 18821
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_exact_resource_writer_2026-10-21/FIXED_PROCESSOR_BOOK_OPERATOR.md",
+      "sha256": "cebf19d44d3ea3f8bb6bef1f9f6a2d98d01f7496ba908ba3f38f0b500875fd83",
+      "bytes": 13184
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_PAID_GOLDEN_WORD_QUERY_SOURCE_LIMIT_2026_10_21.md",
+      "sha256": "155fa5ec5478e0965884425170c9fd42e1d546d7e767e6515c170eb59dcece50",
+      "bytes": 18676
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_SAME_EXECUTION_SPATIAL_WEIGHTS_AND_COMPLETE_SOURCE_2026_10_21.md",
+      "sha256": "42c9b9745f3c9ee78b868e991485bbaf8b77810f4261204d913fc87fc44377a1",
+      "bytes": 20156
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_PAID_RATIONAL_RESOURCE_WRITER_2026_10_21.md",
+      "source_ref": "e37991ae54f34adcc2adf5efa54d29134eac3769",
+      "sha256": "b609514f9170e393b72d0df0650bfd88f93e6dd47d7a7d4d9fceb35d00a04993",
+      "bytes": 9125
+    }
+  ]
+}
