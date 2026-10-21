@@ -137,74 +137,35 @@ which already appear in the literature:
 Thus even after (1), `expected differential of path action` and
 `differential of expected path action` are not interchangeable.
 
-## 3. Exact original Golden witness: the gap is nonzero at first order
+## 3. Correction: admissible original full128 field tangent, not an arbitrary Golden-pair tangent
 
-Take the actual full128 nonblank port pair from
-`BOOK_SOURCE_BINDING.md`:
+**21 October audit corrigendum.** The earlier witness \(Dq_0=-1,Dq_1=+1\) inside a single original *nonblank* \((p^2,p)\) conditional port pair is NOT physically realizable by varying the native Lorentz field: its relative ratio is fixed exactly by its original two Kraus coefficients. The previously printed value \(-1/2\) for that inadmissible two-outcome tangent is **withdrawn as an original-full128 witness**. It remains an abstract two-probability calculation only.
 
-[
-  q_0=p^2,\qquad q_1=p,\qquad
-  (C_0,C_1)=(1,2),\qquad p=\varphi^{-1},\quad p+p^2=1.
+The corrected full128 result is proved and checked at [the actual all128 original-Kraus source](sources/d0_actual_full128_book_tangent_2026-10-21/PROOF.md). For all 63 original nonblank labels, the exact grouped probabilities obey
+\[
+q_{0,k}=p^2x_k,\quad q_{1,k}=px_k,\qquad k\ge1.
+\]
+The two genuine blank-label ports remain separate. Therefore the **complete** history entropy satisfies the exact chain rule
+\[
+H_\varphi(q_{128})=
+H_\varphi(q_{0,0},q_{1,0},x_1,\dots,x_{63})
++(2p^2+p)\sum_{k=1}^{63}x_k.
 \tag{7}
-]
+\]
+This identity and its complete first derivative are compatible with every original nonblank port ratio.
 
-Use the normalized probability tangent
-
-[
-  Dq_0=-1,\qquad Dq_1=+1.
+On the declared actual proper-Lorentz movement of the original full16 Walsh/Julia fixture, the newly supplied **analytic** Kraus/source calculation (at \(\theta=0.08\)) gives
+\[
+D_\theta H_\varphi(q_{128})\approx-0.019550941179130216,
+\qquad
+D_\theta\overline S-D_\theta P_B
+=\tfrac12D_\theta H_\varphi(q_{128})
+\approx-0.009775470589565108.
 \tag{8}
-]
+\]
+Those decimals are numerical diagnostics; a rigorous interval certificate for their sign has not been issued. The **exact** source-gap formula (5) follows algebraically under its independently stated complete amplitude-binding hypothesis. The new checker analytically differentiates every original CAR16 Julia square root and all128 Kraus rows, verifies full completeness and its derivative, and matches grouped entropy derivatives and finite secants. It does **not** select the physical Book03 aggregation.
 
-The Golden identities give
-
-[
-  \log_\varphi q_0=-2,\qquad
-  \log_\varphi q_1=-1,
-]
-
-and therefore
-
-[
-  D H_\varphi(q)
-  =\log_\varphi(q_0/q_1)
-  =\log_\varphi p
-  =-1.
-\tag{9}
-]
-
-Substituting into (5),
-
-[
-  \boxed{
-  D\overline S-DP_B=-\tfrac12 .
-  }\tag{10}
-]
-
-This is an exact native first-source separation, not a second-order or
-off-shell asymptotic effect.
-
-At the convenient common anchor (J=0), the corresponding branch gains
-are
-
-[
-  I_0=0,\qquad I_1=\tfrac32,
-\tag{11}
-]
-
-so the witness does not require a negative branch distinguishability gain.
-The branch prices are (S_0=1), (S_1=1/2).
-
-For comparison only, if the different scalar-probability binding
-(w_\omega\propto q_\omega) is used, the same tangent gives the factor-two
-gap
-
-[
-  D\overline S_{\rm prob}-DP_{\rm prob}=-1.
-\tag{12}
-]
-
-This reinforces the need to keep amplitude and probability bindings typed,
-but (10) already proves the result after the amplitude type has been granted.
+Consequently the valid theorem is the typed mathematical nonuniqueness of candidate aggregations unless native Book03 specifies the actual aggregation; a nonphysical two-port tangent is no longer offered as evidence. No field-source, physics-selection, or GR acceptance status changes.
 
 ## 4. Why normalized readout and the corrected full128 normalizer do not choose between them
 
