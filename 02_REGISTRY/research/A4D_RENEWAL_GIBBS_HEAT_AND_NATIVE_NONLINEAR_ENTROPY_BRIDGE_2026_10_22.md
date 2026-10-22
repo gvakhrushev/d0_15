@@ -265,7 +265,7 @@ even when the admitted active frame co-transports. This does **not** assert that
                  \otimes I_3^{\otimes(W-a)}.}            \tag{16}
 \]
 
-The **same** full active space has rank \(d=33\cdot3^W\). Apply the ACTUAL fixed Golden \(U_\varphi\) of (14) to it and its archive; do NOT substitute a scalar feedback by hand. For a protected simple zero-mode scene preparation, use the **generated** pointer tensor density \(\rho_{\rm ptr}=\bigotimes_a\rho_a\) in the already-owned HJR **energy-expectation type**
+The **same** full active space has rank \(d=33\cdot3^W\). Apply the ACTUAL fixed Golden \(U_\varphi\) of (14) to it and its archive; do NOT substitute a scalar feedback by hand. On that doubled full carrier, explicitly retain the archive heat as an identical paid mathematical copy: \(\widehat\Delta_{{\rm total},K}=\Delta_{{\rm total},K}\oplus\Delta_{{\rm total},K}\), so the heat trace gains its mandatory factor TWO. For a protected simple zero-mode scene preparation, use the **generated** pointer tensor density \(\rho_{\rm ptr}=\bigotimes_a\rho_a\), supported on the active block, in the already-owned HJR **energy-expectation type**
 
 \[
  {\cal A}_{W,K}(y)=
@@ -273,7 +273,7 @@ The **same** full active space has rank \(d=33\cdot3^W\). Apply the ACTUAL fixed
  (P_{\rm ground,913}\otimes\rho_{\rm ptr})
  \Delta_{{\rm total},K}(y)]
  +\beta_B^{-1}\ln\operatorname{Tr}
-       e^{-\beta_B\Delta_{{\rm total},K}(y)}
+       e^{-\beta_B\widehat\Delta_{{\rm total},K}(y)}
  -\ln\det(I-\zeta F_\varphi).                             \tag{17}
 \]
 
@@ -281,7 +281,7 @@ This is ONE mathematically complete H+J+R scalar on ONE declared finite Hilbert 
 
 \[
  \boxed{{\cal A}_{W,K}=
- \beta_B^{-1}\ln Z_{913}+
+ \beta_B^{-1}\ln(2Z_{913})+
  \sum_{a=1}^W{\cal T}(\rho_a,\Delta_{a,K})
  -33\cdot 3^W\ln(1-\zeta p^2).}                           \tag{18}
 \]
