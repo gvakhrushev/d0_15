@@ -305,3 +305,145 @@ The canonical quotient and standard future-profile laws are
 therefore now mathematically JOINED for an ACTUAL original
 instrument, but the action-value selection is explicitly
 a different proposition.
+
+
+## 7. BREAKTHROUGH COMPOSITION: the previously owned 65-label causal Book payoff is FUTURE-COMPLETE, with exact paid Golden residual
+
+This consumes the independently proved ORIGINAL **65-label** causal source
+`A4D_NATIVE65_CAUSAL_SOURCE...` (published packet
+`sources/d0_native65_causal_source_2026-10-22/THEOREM.md`).
+The 65-label construction already found the exact information/price
+split and its noncommuting preparation/source recursion. It was
+previously unclear whether merging fine labels would lose the
+future distinguishability needed for M1/VerificationCore.
+The new three-tick theorem supplies the missing answer: **NO DATA
+future information is lost.**
+
+### THEOREM E — exact original 128→65 same-history, future-faithful quotient
+
+For EVERY \(j>0\), the unchanged original actual Kraus formula gives
+\[
+\boxed{
+(K_{2j},K_{2j+1})=(p L_j,\sqrt p\,L_j),
+\qquad p^2+p=1 .
+}\tag{20}
+\]
+The 65-label effective instrument retains j=0's **separate**
+two labels with their true operators \(K_0,K_1\), and records
+a single merged label j for each original j>0 with operator \(L_j\),
+including the actual dark rows as zero slots. Its full CP outcome is
+\[
+K_{2j}XK_{2j}^\dagger+
+K_{2j+1}XK_{2j+1}^\dagger
+=\boxed{L_jXL_j^\dagger}\quad(j>0).
+\tag{21}
+\]
+Let \(\pi\) map original fine labels \((j,b)\), j>0,
+to the merged row j, while fixing the original two j=0 labels.
+For every FINITE original chronological word \(\gamma\) and any
+INPUT DATA×RIGHT state, the corresponding Kraus products satisfy
+\[
+\boxed{
+K_\gamma=c_\gamma L_{\pi(\gamma)},\qquad
+|c_\gamma|^2=
+\prod_{t:j_t>0}\mu_{b_t},\quad
+(\mu_0,\mu_1)=(p^2,p).
+}\tag{22}
+\]
+In particular for every original complete fine path,
+\(E_\gamma=|c_\gamma|^2 E^{65}_{\pi(\gamma)}\)
+with a strictly positive scalar for nonzero rows.
+Conversely the merged effect is the sum of the two port-labelled
+fine effects at every such tick. Therefore the two effect families
+have **IDENTICAL complex linear spans at every fixed horizon**
+and their entire future probability laws are equivalent after
+retaining the independent original Golden b-toss statistics.
+
+Combining (8) with (22) proves the actual NEW theorem
+\[
+\boxed{
+\operatorname{span}\{E^{65}_{z_1\ldots z_n}:1\le n\le3\}
+=\operatorname{span}\{E^{128}_{\gamma}:1\le|\gamma|\le3\}
+=M_8(\mathbb C)\oplus M_8(\mathbb C).
+}\tag{23}
+\]
+The original 65-label causal predictive state already retains
+**ALL** DATA distinctions accessible by any number of future
+full128 fine-register repetitions. It is a genuinely sufficient
+source/covector interface for those DATA futures; it is NOT
+asserted the **minimal possible label count** (some posterior
+states may still coincide at a specified initial state).
+
+### THEOREM F — the fine Golden recording COST–INFO source descends EXACTLY, with no unpaid erasure
+
+On EVERY no-reset K-tick complete fine history (fixed K or a
+stopping rule measurable in the merged-label archive), let
+\(N_{\mathrm{pair}}\) count visits to j>0. The original conditional
+port bits are **independent Golden symbols GIVEN the merged
+row history**, even with nonreset DATA: their conditional
+probabilities are \((p^2,p)\), and their normalized post-DATA×RIGHT
+states do not depend on b. Thus the classical/quantum
+complete-record entropy chain gives, for arbitrary genuinely
+prepared DATA×RIGHT \(\Omega\),
+\[
+\boxed{
+S_{\rm vN}(\chi_{\rm fine})
+=S_{\rm vN}(\chi_{65})
++\ln\varphi\,(2-p)\,\mathbb E N_{\mathrm{pair}}.
+}\tag{24}
+\]
+For the ORIGINAL charged terminal codes \(c_0=1,c_1=2\),
+\[
+\mathbb E(C_{\rm fine}-C_{65,j0})
+=(1+p)\,\mathbb E N_{\mathrm{pair}}.
+\tag{25}
+\]
+Subtract the ACTUAL complete recorded-entropy GAIN
+\([S_{\rm vN}(\chi)-S_{\rm vN}(\Omega)]/\ln\varphi\):
+\[
+\boxed{
+(\mathrm{Cost}-\mathrm{Info})_{\rm fine}
+=(\mathrm{Cost}-\mathrm{Info})_{65,\mathrm{original\ j0}}
++p^3\,\mathbb E N_{\mathrm{pair}},\quad
+p^3=2p-1>0.
+}\tag{26}
+\]
+This is an identity of COMPLETE functions on the ORIGINAL actual
+no-reset input/instrument chart and hence of ALL their genuine
+coframe/Lorentz/preparation first jets whenever the actual writer
+exists. There is NO optional fitted information coefficient or
+discarded quantum failure. It is precisely the old 65-label
+owner's effective weight \(d_{\rm pair}=p^3\), now proven to be
+**compatible with the entire canonical operational future
+quotient (23)**.
+
+Equation (26) is ONLY the true executed fine-PROGRAMME **port-code
+minus full retained cq information** component. Real factory,
+SCENE heat, return, controller, oldRIGHT and clock charges outside
+those terminal codes remain separately paid, and Book03's
+pathwise vertex Info is not automatically identified with this
+measured cq information. A stopping rule that observes the
+merged-away original port b need NOT have the same merged path
+tree; the genuine stop cut must be carried separately, as the
+old native65 owner already warned.
+
+### Why this is a real parent advance
+
+The two previously separate results are now one original
+execution fact:
+
+1. All-future verification of DATA needs no distinctions
+   beyond the operational even CAR16 quotient, with a **finite
+   three-tick witness**.
+2. The EXACT original 128 fine cost/entropy/source may be
+   transported to the fully future-sufficient 65-label quantum
+   predictor with the **FORCED** native coefficient \(p^3\),
+   not a free new Info table.
+
+This does **not** choose the total compulsory Book03 action
+or solve the remaining observable even-DATA/joint-resource
+preparation equations. It does rule out the objection that
+the exact original 65-label causal source discarded
+future-observable DATA information: the lost b bits in j>0
+are genuinely state-independent coins given the row, and
+their actual price survives unchanged through \(p^3\).
