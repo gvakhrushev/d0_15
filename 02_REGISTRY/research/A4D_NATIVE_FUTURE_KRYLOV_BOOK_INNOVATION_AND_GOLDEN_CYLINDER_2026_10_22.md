@@ -145,6 +145,47 @@ For the original Golden (9) with protected full oldRIGHT spectator \(d=128\), on
 \]
 with the ORIGINAL \(\zeta=2^{-20}\) and \(\beta>0\). Rigorous sign: \(\ln(1-x)\ge-x/(1-x)\) gives \(p^2+d\ln(1-\zeta p^2)>p^2[1-d\zeta/(1-\zeta p^2)]>0\) for \(d=128\). A first-stage price comparison inside this specifically chosen incidence master favors the **pre-future** boundary over the future-closed one, while M1 future-complete MEMORY requires that the later full archive remain. The two requirements coexist naturally in the **same evolving full carrier** but do not establish that M1 chooses (15) as the physically compulsory heat. Clock/tick work and rank changes must be paid in comparing two actual prospective programmes.
 
+### 4a. NEW: a whole-source CAPACITY theorem from the same innovation rank
+
+The exact rank identity (3) has a stronger variational corollary, absent from merely counting future-dimensional branches. Work on one fixed-rank smooth native field chart. Let \(v\) be any REAL actual native field/input tangent and \(M_v:=\|D_vC_t\|_{\rm op}\), **including all moving \(P_t\) and \(U\) terms of (7)–(8)**. Because \(\|C_t\|_{\rm op}\le1\) and \(\operatorname{rank}C_t=\delta_t\),
+\[
+\|C_t\|_1\le\delta_t,\qquad
+\|D_vF_t\|_1\le
+2\|C_t\|_1\|D_vC_t\|_{\rm op}\le2\delta_t M_v.
+\]
+The original Book \(\zeta\)-resolvent then gives the exact **universal source-rank budget**
+\[
+\boxed{|D_vJ_t|\le\frac{2\zeta}{1-\zeta}\,\delta_t M_v.}\tag{16a}
+\]
+No field-independent spectator rank or a chosen weight from an information table is inserted; any actual repeated oldRIGHT factor must already be present as native multiplicity in the full \(C_t\). This directly unifies earlier "rank-one coherent source" and "address-extensive rank" observations as consequences of ONE operator inequality. It is a bound on the REAL physical Book feedback on the declared full unitary/cut, not a claim all feedback sources are positive.
+
+For the **specific native cut-induced Hodge candidate** (13), with \(\mathsf D=\dim H\), \(\delta_t=\operatorname{rank}C_t\) and its complete positive thermal trace
+\[
+Z_t=\mathsf D-2\delta_t+2\sum_{i=1}^{\delta_t}e^{-\beta\lambda_{t,i}}
+\ge\mathsf D-2\delta_t+2\delta_t e^{-\beta}>0,
+\]
+the genuine trace derivative is
+\[
+D_v H_t=-\frac2{Z_t}\operatorname{Tr}_{H_t}\bigl[e^{-\beta F_t}D_vF_t\bigr].
+\]
+Hence its **complete original-type Hodge+Book feedback** obeys
+\[
+\boxed{
+|D_v\mathcal B_t^{\rm incidence}|
+\le2\delta_t M_v\left[
+\frac2{Z_t}+\frac{\zeta}{1-\zeta}\right].
+}\tag{16b}
+\]
+Every harmonic zero mode remains in \(Z_t\). For any original 4D address family with \(W\) native distinct source cells, an actually needed total source \(\lvert D_v\mathcal B\rvert\ge cW>0\) and truly UNIFORM \(\|D_vC_t\|_{\rm op}\le M\), \(Z_t\ge Z_{\min}>0\), the same physical first source NECESSARILY requires
+\[
+\boxed{
+\delta_t\ge
+\frac{cW}{2M\,[2/Z_{\min}+\zeta/(1-\zeta)]}.}\tag{16c}
+\]
+If the physical programme needs that extensive source for \(T\) successive native memory-growth ticks on one actual cumulative carrier, (4) implies a real memory-capacity lower bound \(\dim H_T-\dim H_0=\Omega(WT)\), with its displayed native parameters rather than an invented action renormalization.
+
+**Exact scope:** source magnitude must be measured in ONE fixed physically normalized action/tangent convention; the original CQ/Einstein source has its own real gain and must be compared only after that map is provided. In particular (16c) does NOT independently prove that gravity requires a specific \(c\), bounded native \(M\), or the cut-induced Hodge rather than the actual Book03 scene \(\Delta_N(V)\). It is a concrete PASS/FAIL for any proposed cheap rank-one Book source claimed to be order-\(W\) with uniformly bounded native first jets, and it prevents hiding missing extent in an arbitrarily large assumed derivative of the prepared projector.
+
 ## 5. Independent exact noncommuting source witness: no guessed projector derivative
 
 A concrete real 3D rational orthogonal rotation \(U=R_{01}(3/5,4/5)R_{12}(5/13,12/13)\), starting from \(J=e_0\), has the exact reached-space dimensions \(1,2,3\) at horizons \(0,1,2\). The actual Book frontier ranks are therefore \(1,1,0\), and the whole feedback novelty budget is exactly 2. On the smooth moving prepared input \(J_x=(1,x,0)/\sqrt{1+x^2}\), the genuine canonical rank2 cut \(P_1(x)\) satisfies (7). An independent exact rational symbolic evaluation at \(x=1/7\) gives a nontrivial **moving original-type field feedback source** already at horizon0:
