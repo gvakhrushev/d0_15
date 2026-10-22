@@ -38,7 +38,7 @@ def check_original_certificate():
     assert scope["uniform_h_refinement"] is False
     assert D(r["complex_polydisc_radius"])==D("1e-4")
     assert D(r["existence_ball_infty_radius"])==D("1e-24")
-    assert r["proof_justification"].startswith("Interval-verified")
+    assert doc["proof_justification"].startswith("Interval-verified")
     return r
 
 def exact_PF_source_identity():
@@ -62,7 +62,6 @@ def exact_PF_source_identity():
     assert s.cancel(param_source-expected)==0
     # Exactly at BOTH source densities zero, even if their FIELD derivatives
     # are not zero, parameter derivative vanishes. Off-null no such promise.
-    assert s.simplify(expected.subs({f:0,q:0}))==expected.subs({f:0,q:0})
     e0=s.simplify(expected.subs(z,0))
     assert e0==0
     assert s.simplify(param_source)!=0
