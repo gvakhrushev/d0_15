@@ -17,6 +17,8 @@ This is proved in \`d0_native_preparation_closure_2026-10-21/PROOF.md\` with the
 
 ## 1. Strict finite algebraic Gibbs-vs-inverse-square theorem (the original full128 carrier)
 
+**Prior-modular-proof boundary.** The existing `A4D_NATIVE_MODULAR_PREPARATION_BOUNDARY.md` (10 October) ALREADY proves the generic faithful-state Gibbs-log reconstruction, its unique positive ground-zero representative, the trivial modular flow of an abelian pointer, and the norm-isometry obstruction to directly reading the hyperbolic toral T as a modular automorphism. Those are REUSED below, not claimed as new independent results. The NEW conjunction is the *exact original full128 inverse-square prepared state*, its actual 16×16 quadratic spectral receipt, the fixed native beta, the quantitative full native thermal-source gap, and the non-iid complete-instrument predictive information source.
+
 **Theorem A (no free heat/preparation identification).** Fix a finite positive definite Hermitian matrix \(\Delta\) with ALGEBRAIC entries and at least two different eigenvalues. If \(\beta>0\) is ALGEBRAIC, then
 
 \[
