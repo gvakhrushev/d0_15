@@ -202,6 +202,72 @@ On a rank-two 42-field report chart this is **40 independent vertical source con
 \]
 At this actual native point the two numerators are about \(0.0788160\) and \(0.0398300\). For \(N_1=N_2=N\), a standard-deviation target no larger than \(v_*/5\) (a five-standard-error discrimination scale, **not a guaranteed significance probability**) therefore requires \(N\gtrsim6.0\times10^{12}\) complete runs of EACH type in this plain independent-Bernoulli readout strategy. The inequality is conditional on this estimator/model; an actually admitted coherent multi-copy native quantum strategy could change the resource requirement, and its implementation/price must be proved independently. It prevents turning an exact algebraic "two observables suffice" theorem into a false low-cost M1 preparation/clock claim.
 
+## 4b. A much stronger general theorem: EVERY finite native positive blank operator is determined by finitely many genuine forward events
+
+The special \(8+8\) CAR16 pair needs only TWO experiments because its **original native minimal polynomial has degree two**. The same idea admits a GENERAL EXACT completion on an arbitrary finite original DATA carrier of dimension \(d\), WITHOUT requiring two eigenvalues or guessing their multiplicities.
+
+**THEOREM D (full finite forward-blank moment determination).** Suppose the actually admitted complete \(A\)-outcome native instrument has a STRICTLY POSITIVE Hermitian original blank Kraus \(B_y=K_{0,y}\), \(0<B_y<I_d\), with all other Kraus outcomes retained and \(\sum_\alpha K_\alpha^\dagger K_\alpha=I_d\). On the same mathematically declared normalized trace DATA input \(I_d/d\), the \(k\)-round uninterrupted allblank event has the UNCONDITIONAL genuine probability
+\[
+\boxed{q_k(y)=\Pr(0^k)=d^{-1}\operatorname{Tr}(B_y^{2k}),\qquad k\ge1.}\tag{17}
+\]
+The \(k\)th native run uses the genuinely previous DATA output for the next \(K_0\), not an iid reset. All \(A^k-1\) nonblank strings remain in its normalized full tape, and the whole INPUT preparation, oldRIGHT and clock still must be paid to run it physically.
+
+Put \(X=B_y^2\) and \(m_k=d q_k=\operatorname{Tr}X^k\). The first **\(d\)** actual complete forward Born event probabilities \(q_1,\ldots,q_d\) determine the entire characteristic polynomial of \(X\) by the algebraic Newton–Girard recursion
+\[
+\boxed{
+e_0=1,\qquad
+k e_k=\sum_{j=1}^k(-1)^{j-1}e_{k-j}m_j,
+\quad k=1,\ldots,d,}\tag{18}
+\]
+\[
+\boxed{
+\det(\lambda I-X)=\lambda^d-e_1\lambda^{d-1}
+ +e_2\lambda^{d-2}-\cdots+(-1)^de_d.}\tag{19}
+\]
+This is one unique polynomial identity, not a fitted spectrum. Cayley–Hamilton gives for all \(n\ge0\) the fixed-order source-preserving forward recurrence
+\[
+\boxed{m_{n+d}=\sum_{j=1}^d(-1)^{j-1}e_jm_{n+d-j}.}\tag{20}
+\]
+Differentiating (18),(20) gives the EXACT first derivatives of EVERY higher \(m_n\) in terms of \(Dq_1,\ldots,Dq_d\). This derivation remains analytic through ALL eigenvalue crossings or degeneracies, requires no eigenvector gauges, and contains every actual noncommuting \(DB\) through the genuine trace jets \(D\,\operatorname{Tr}X^k=k\operatorname{Tr}(X^{k-1}DX)\).
+
+For the same original complete \(n\)-round present-input Stinespring projector of rank \(dr\) (\(r\) is the ACTUAL oldRIGHT spectator dimension) and the standard paired cut-incidence Hodge on the full \(D_n=dr A^n\) Hilbert carrier, the complete feedback and whole heat are:
+\[
+\boxed{\begin{aligned}
+J_n&=-r\log\det[(1-\zeta)I_d+\zeta X^n],\\
+Z_n&=D_n-2dr+
+ 2r e^{-\beta}\sum_{k=0}^\infty\frac{\beta^k}{k!}m_{nk},\\
+\mathcal B_n^{\rm incidence}&=\beta^{-1}\log Z_n+J_n .
+\end{aligned}}\tag{21}
+\]
+**No further spectral input is needed** beyond the first \(d\) measured short blank-event probabilities (and the fixed native constants \(r,A,\beta,\zeta\)). \(J_n\) is even a FINITE rational/algebraic expression before its outer log: recover \(m_n,\ldots,m_{dn}\) using (20), apply (18) to the spectrum of \(X^n\), and evaluate its degree-\(d\) determinant polynomial. \(Z_n\) is a rigorously convergent Poisson-weighted sum of those same measured-moment recursions.
+
+On a fixed real positive chart \(0\le X\le I\), at \(\beta>0\), the full thermal truncation at \(k=K\) obeys
+\[
+\boxed{
+0\le Z_n-Z_{n,K}
+\le2rd\,\frac{\beta^{K+1}}{(K+1)!},
+\quad
+|D_vZ_n-D_vZ_{n,K}|
+\le2rd\,n\,\|D_vX\|_{\rm op}\frac{\beta^{K+1}}{K!}.
+}\tag{22}
+\]
+The derivative estimate follows from trace cyclicity and
+\(|D_v\operatorname{Tr}X^m|
+ =|m\operatorname{Tr}(X^{m-1}D_vX)|
+ \le md\|D_vX\|_{\rm op}\) even when \([X,D_vX]\ne0\).
+Every genuine harmonic zero mode is still counted through \(D_n-2dr\).
+
+**Sharp spectral-information necessity.** At a generic simple-spectrum positive \(d\)-mode point, the Jacobian of \(m_1,\ldots,m_d\) with respect to its \(d\) native eigenvalues \(x_i\in(0,1)\) is the scaled Vandermonde
+\[
+\boxed{\det[\partial m_k/\partial x_i]_{k,i=1}^d
+=d!\prod_{i<j}(x_j-x_i)\ne0.}\tag{23}
+\]
+Thus fewer than \(d\) scalar power-moment probabilities generically leave an actual positive-dimensional spectral ambiguity; \(d\) is the sharp UNIVERSAL bound within this exact forward-blank moment method. On the original special CAR16 \(8+8\) chart, the truly proved quadratic polynomial reduces the required source tests from sixteen to TWO, and (18)–(21) reduce identically to the already derived \(T_n(a,b)\) formulas (4)–(11). This is an exact multiscale *moment-to-native-feedback* synthesis, not an assertion that \(d\) field probes physically span the 42 coframe/Lorentz/CAR writer.
+
+**Actual original raw scale:** for the generic original full DATA128 carrier, this theorem applies at \(d=128\) IF its true \(K_0\) is positive on the stated strict native chart and if the same input mixed-state witness is really admitted; the full 128 Kraus outcome alphabet stays intact. It requires at most 128 different blank-history **event types**, not enumeration of \(128^{128}\) probabilities. It emphatically does NOT claim only 128 total executed trials, a free maximally mixed/reference preparation, cheap discrimination of rare spectral splittings, or a compulsory original Book03 Hodge operator. In fact the two-event CAR16 splitting at (16) already has a large classical sampling-price CRLB (16c).
+
+**Scoped exact check:** an independent local SymPy \(\mathbb Q\) test of a genuine FOUR-distinct-eigenvalue positive matrix verifies all 89 recursively reconstructed moments, five complete determinant identities including \(n=21\), and all first field derivatives through order 11 on a smooth moving eigenvalue chart. The universal theorem is elementary finite operator algebra; it is not a new original d128 native mixing/GR certificate. A small standalone checker is committed alongside the original 128-Kraus pair checker.
+
 ## 5. Strong positive closure and decisive remaining physical gate
 
 There are now TWO complementary native operator routes, and no reason to construct a new synthetic detector:
