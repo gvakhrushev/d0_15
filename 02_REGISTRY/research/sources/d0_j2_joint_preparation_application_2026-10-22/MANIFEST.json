@@ -1,0 +1,135 @@
+{
+  "packet": "d0_j2_joint_preparation_application_2026-10-22",
+  "scientific_input_commit": "af6e7eb8952564d86ddbfe910eb5f41d4a1b4e4b",
+  "concurrent_compatibility_commit": "22ddd08389dbf00b86d8bf8a964264ae54a77ac5",
+  "publication_base_inspected": "6eb96ce95cdafbc5c1f5ab2f014f8e99d9176441",
+  "exact_literal_J2_all42_endpoint_certified": true,
+  "exact_N1_fixed_P_joint50_at_old_root": true,
+  "whole_native_input_domain_admitted": false,
+  "whole_Book03_price_selected": false,
+  "J2_independent_input_extension_proved": false,
+  "GR_closed": false,
+  "files": [
+    {
+      "path": "02_REGISTRY/research/A4D_ORIGINAL_J2_FULL42_AND_N1_PREPARATION_JOINT_ROOT_2026_10_22.md",
+      "bytes": 13984,
+      "sha256": "b0132911d365866defabfe7ccfdd5dbc9cf2514aee1acb00ba5e999d95a28500",
+      "git_blob": "b914caca66740357fb5133bac0de00098302ae4c"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_j2_joint_preparation_application_2026-10-22/INDEPENDENT_ENDPOINT_REVIEW.json",
+      "bytes": 2314,
+      "sha256": "ad7c0dd71b84f2746a2e60a6ca6bcec57fe4fc2bf4514125025b6426cb9eccd9",
+      "git_blob": "2c05d441bb659a68157f2f255ef927445d2b4a91"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_j2_joint_preparation_application_2026-10-22/README.md",
+      "bytes": 2910,
+      "sha256": "47e26f7abbb51bb64a8b49d84752bbe0fc228aa06dc80598fcc3e42df3f1615b",
+      "git_blob": "612d864ca54e3795f5d8e70d5aaf32780b41d0ab"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_j2_joint_preparation_application_2026-10-22/REVIEW.md",
+      "bytes": 14496,
+      "sha256": "c840d8e2f9655b317717fe945bba63e595417263d026c50d0ef76c568502be8e",
+      "git_blob": "5040b8028b894c8ff9e44c033a82ff4986c0924c"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_j2_joint_preparation_application_2026-10-22/certificate/ENDPOINT_PROOF.md",
+      "bytes": 10975,
+      "sha256": "bdb6f76de4f5881c15259e6936ac7bc6f04d7d08b47ea42acde654d8e0295695",
+      "git_blob": "b60f0b5e40c5c8f91bf3478ba400f7a6a4777178"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_j2_joint_preparation_application_2026-10-22/certificate/J2_CENTER_HIGH_PRECISION.json",
+      "bytes": 6606,
+      "sha256": "d344e894bdbcb5d4cf587f09f92cb43a1f87c5ebbb759249d42d6d548e38b4f0",
+      "git_blob": "3e010fd2b00551fd6a72bf6b91aa3b8064ef8b79"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_j2_joint_preparation_application_2026-10-22/certificate/J2_INERTIA_RESULT.json",
+      "bytes": 57079,
+      "sha256": "42aebb2b9ff8c8dd20fe2dcafdd621703e19d1e28bf2f6cbaa8ac7a354d914ec",
+      "git_blob": "a9dd8cedb630250c41fe606cacbfa14bf1836a8d"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_j2_joint_preparation_application_2026-10-22/certificate/J2_INTERVAL_HESSIAN_ENDPOINTS.json",
+      "bytes": 475730,
+      "sha256": "a49148c9d3d29bd06b27941d5d796407d16fb98062c0ad8a15b53bcbd23a75fc",
+      "git_blob": "f460158ce70031bbdeccbc9e5efc4380249de421"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_j2_joint_preparation_application_2026-10-22/certificate/J2_INTERVAL_RESULT.json",
+      "bytes": 5825,
+      "sha256": "0a34c3a7576d87b62b8850d2af36dc93d39ad70e33e97165dbbebe65f5630f55",
+      "git_blob": "6e0b5e3033b40525389bfa58096cd7cb8936d490"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_j2_joint_preparation_application_2026-10-22/certificate/J2_RATIONAL_CONGRUENCE_FRAME.json",
+      "bytes": 55654,
+      "sha256": "14a41136bdcd1bde6a87d5591883dc819cd4f952b479d66549b66cbfae34eaf3",
+      "git_blob": "262237e84fdd2d8451a10f6002701281be4f218e"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_j2_joint_preparation_application_2026-10-22/certificate/J2_RATIONAL_PRECONDITIONER.json",
+      "bytes": 55908,
+      "sha256": "cba6b52fc7fc1b65558aa740baa18c614367493308660314b5e80af1518c801a",
+      "git_blob": "286fee1d2ed74043319599554801521e90270243"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_j2_joint_preparation_application_2026-10-22/certificate/certified_feedback.py",
+      "bytes": 2433,
+      "sha256": "bc4437f32538b784dc9a5fc042bb9596994f616315944d1238904598350ab820",
+      "git_blob": "9b9b0f861a185fb3234f37f8b31edfd651e0cf3b"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_j2_joint_preparation_application_2026-10-22/certificate/check_feedback_inertia.py",
+      "bytes": 3937,
+      "sha256": "401d9d9963eddb9f904bc4591114910cadff5e7c601258052d0565ccbd25f8b4",
+      "git_blob": "1348798da6871abf78ff7fbbf1da58fa10d34b7c"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_j2_joint_preparation_application_2026-10-22/certificate/check_feedback_interval42.py",
+      "bytes": 12278,
+      "sha256": "3f79fd9a45c4d6311d6a84c2bfff033efeedaa9dfe2e4c0348a14c6f3fd516c5",
+      "git_blob": "f31aaab1ccf9919a1702fe3fc0cd0d59b2cd7f99"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_j2_joint_preparation_application_2026-10-22/preparation/PROOF.md",
+      "bytes": 14284,
+      "sha256": "bdb953f3edb6a28bebd028a3ab545e3b102baf0dba9ee2d6eb3da595c2481015",
+      "git_blob": "019cb1aea0cb4935eee3aa4f29e14b4152efe1e2"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_j2_joint_preparation_application_2026-10-22/preparation/RESULT.json",
+      "bytes": 5394,
+      "sha256": "d70ee56d1936b60845fdd09df5a6a983058b5e763e6a15ea703d836c7507cb70",
+      "git_blob": "4aef47b0ebef7ae29ba59bed0a4d4e9885774a38"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_j2_joint_preparation_application_2026-10-22/preparation/check_joint_input_lift.py",
+      "bytes": 10731,
+      "sha256": "668221b5892e57f41f9d2f3312e691e8d3a3710f84813473fec9901293e13bf7",
+      "git_blob": "2c00246fdfbf2b9f8535201ec98dd4b0e4649ff3"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_j2_joint_preparation_application_2026-10-22/source/J2_SOURCE_AT_UNPADDED.json",
+      "bytes": 20431,
+      "sha256": "1db62b7fdd036ebf86b7ed68af2c023c03c878e19bfd235b9897f466ffdadd0a",
+      "git_blob": "3abaf392df89c265dea334e91eddbd3fc3b700b2"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_j2_joint_preparation_application_2026-10-22/source/SOURCE_COMPARISON.md",
+      "bytes": 13656,
+      "sha256": "f01ddcf384fb171b7b4bd8bee507fcb63d9b7b389b4d1462938ebbf09ba62172",
+      "git_blob": "7c703f62df593737f9871f63625f7492381d054e"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_j2_joint_preparation_application_2026-10-22/source/compare_sources.py",
+      "bytes": 4056,
+      "sha256": "16bfd48d4dbee498f594574641f149c76a953e19ed914c5b4fa0c75fc0d4984e",
+      "git_blob": "f6b94a7296c4a98bb17db5c401a570778659d398"
+    }
+  ],
+  "later_compatibility_commit": "6eb96ce95cdafbc5c1f5ab2f014f8e99d9176441"
+}

@@ -1,5 +1,15 @@
 # A4D joint response on fixed smooth sources: PARTIAL / OPEN
 
+## 22 October 2026 — exact original addressed J2 root and independent N1 preparation lift
+
+[Actual full42 J2 continuation and preparation application](A4D_ORIGINAL_J2_FULL42_AND_N1_PREPARATION_JOINT_ROOT_2026_10_22.md) closes two concrete premises of the global existence programme. On the original unpadded h≈0.183801524658 carrier, the entire literal feedback source was evaluated. Its mismatch at the old N1 root exceeds the earlier tiny sufficient budget. A new all42 continuation instead reaches a distinct exact nonflat root of J2=-528 sum_j log(1-r_j), retaining both original eigenbands and all six Lorentz faces. The new outward interval Banach certificate encloses all 1764 Hessian entries, gives q<0.000143094791 in the radius-1e-30 cube, and rigorously protects nonflat holonomy and both matter gradients. Literal J2 has inertia 26 negative/16 positive. The comparison normalization is constant and changes no root.
+
+Separately, the constant original query eigeninputs solve all eight independent fixed-P preparation rows for the ORIGINAL unpadded N1 price. Their mixed field/preparation block vanishes identically, and the new interval preparation Hessian has four positive and four negative eigenvalues of modulus>100 over the old certified field ball. This gives an exact 50-variable joint root on that stated interface (46 for real inputs), with the omitted 48 real normal reactions explicitly retained. Physical admission of that interface and its actual preparer cost remain explicit. Its Born-score Hessian is not silently attached to the literal operator determinant.
+
+The [reviewed packet](sources/d0_j2_joint_preparation_application_2026-10-22/README.md) contains exact rational proposals, outward matrix endpoints, reproducible consumers and independent literal-two-factor verification. The full physical remainder is now written at the new endpoint as -Tr(sigma_beta dDelta_N)+dJ_extra+dP_rest, with corresponding independent upstream equations. Same-execution heat/cut/Info/writer identification and uniform refinement remain open. The concurrent paid collective preparation theorem is preserved at its own carrier scope. No original receipt, action selection, minimum, GR/raw216 or lifecycle acceptance is promoted.
+
+The subsequently published whole-word Boolean Book/recorded-price construction and original full128 primitive DATA/Holevo-rate owners are acknowledged at head `6eb96ce95cdafbc5c1f5ab2f014f8e99d9176441`. Their actual fixed-cut processor and long-run channel sources remain distinct from this addressed J2/N1 execution; the review records the precise compatibility and retains their genuine new results.
+
 ## 22 October 2026 — original stopped futures remove the two-band marginal premise
 
 [Native stopped-future entropy composition](sources/d0_native_blank_future_entropy_2026-10-22/README.md)
