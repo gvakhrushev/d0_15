@@ -14,7 +14,7 @@ The already certified strict off-null interval gives r0<r1 and |D29 r0|>2.263780
 
 Thus the actual original 2×42 Jacobian D_y(r0,r1) has RANK EXACTLY ONE at the mathematically proved full42 critical point. This does NOT say that its two reports have identical probabilities, that their operators are equal, or that the actual full128 conditional quantum work has rank one. It is an on-shell TANGENT collinearity forced by the actual stationarity equation.
 
-By contrast the original STRICT h4 interval receipt proves the configured CQ Hessian has rank EXACTLY 42 and both positive and negative real coframe directions (a mathematical saddle).
+By contrast the original STRICT h4 interval receipt proves the configured CQ Hessian has rank EXACTLY 42 while this new theorem does not rely on any unverified Hessian inertia claim for THIS h=1/4 collar.
 
 ## 2. A strong exact no-go for any FISHER-ONLY reporter metric as the whole 42-Hessian
 
@@ -26,7 +26,7 @@ Since rank D_yR=1, one has
 
   BOX: rank Q_first <= 1,  dim ker Q_first >=41.          (4)
 
-Ordinary classical Fisher makes Q_first PSD as well. Therefore this two-report first-jet metric CANNOT equal the already strict full-rank42, indefinite configured CQ action Hessian at the SAME finite root. This is a rank theorem, not a mere analogy between an information metric and Einstein gravity. Nor is it a no-go for a full quantum-state/output operator Fisher metric with many more components, which may have rank>1; the theorem applies strictly to the TWO native scalar conditional Bernoulli reports.
+Ordinary classical Fisher makes Q_first PSD as well. Therefore this two-report first-jet metric CANNOT equal the already strict full-rank42 configured CQ action Hessian at the SAME finite root. This is a rank theorem, not a mere analogy between an information metric and Einstein gravity. Nor is it a no-go for a full quantum-state/output operator Fisher metric with many more components, which may have rank>1; the theorem applies strictly to the TWO native scalar conditional Bernoulli reports.
 
 ## 3. THE 41-DIMENSIONAL MISSING PIECE IS THE SECOND FIELD→REPORT JET
 
@@ -63,7 +63,7 @@ Ordinary coordinate Hessians of an individual scalar are not tensorial under non
 
   alpha D M1 + beta D M2 = D H(y*) =0.
 
-Hence C_second transforms by congruence under ANY smooth invertible change of the original 42 field coordinates at THIS stationary point. It is a genuine critical-point bilinear-form component, not an artifact of the particular chosen coframe/link chart. Q_first separately transforms by congruence as well. The rank lower wall (7) is thus invariant under admissible local field coordinates. Its sign/inertia is NOT claimed to be positive or Einstein without the full original field equations and selected Book03 action.
+Hence C_second transforms by congruence under ANY smooth invertible change of the original 42 field coordinates at THIS stationary point. It is a genuine critical-point bilinear-form component, not an artifact of the particular chosen coframe/link chart. Q_first separately transforms by congruence as well. The rank lower wall (7) is thus invariant under admissible local field coordinates. Its sign/inertia is NOT inferred from the rank theorem or claimed to be Einstein without the full original field equations and selected Book03 action.
 
 This explains an apparent puzzle: **TWO scalar reporter moments can encode a full-rank42 action Hessian even when their first derivative has rank1 at the stationary point**. The extra rank is carried by their curved second-order dependence on the 42 underlying fields. It does NOT mean that two numbers tomographically reconstruct 42 field coordinates; local observability and nonlinear variational dynamics are different arrows.
 
