@@ -150,6 +150,60 @@ Both native source ratios are genuinely nonzero and their difference has the SAM
 
 Thus the previously proved unlimited-dimensional exact finite Brinkmann Einstein/CAR source identity is **compatible with a coherent, OR-only terminal readout**, while naive conversion of all hidden implementation flags into independently scored classical records changes the native source direction even at the null point. What M1/G0 actually chooses between these readout algebras, and whether other physical Book H+J+R/oldRIGHT/heats compensate an alternate choice, remain genuinely UNPROVED. NO statement rules out Einstein solutions for the independently priced fine-output action under its own source ratio; the physical coupling is not being fitted back to the old value.
 
+### 4a. STRONGER exact h₀ result: independent scalar1 Euler is STRICTLY nonzero for fine dephased/charged flags at the original 42-root
+
+The ratio mismatch (11) can now be promoted to a full ACTUAL independent original field equation using the previously interval-certified scalar1 material Euler and ORIGINAL fixed h₀ collar. No second physical action/root, no unsourced tangent and no numerical fitted coefficient.
+
+Write \(c_j=\partial_y k_{\rm OR}(x_j,y_j)\), \(f_j=\partial_y k_{\rm fine}(x_j,y_j)\) at the TWO genuine source cells \(j=0,1\). In the original configured actual h₀ 42-model, the six-face curvature x_j does not depend on the independent interior scalar \(\psi_1\). The exact **coarse N1 root** obeys
+
+\[
+c_0\,D_{\psi_1} y_0+c_1\,D_{\psi_1} y_1=0.
+\]
+
+Because \(c_1\neq0\) on the original full strict positive chart, eliminate \(D_{\psi_1} y_1\) to get the complete **FINE** price-source identity
+
+\[
+\boxed{
+D_{\psi_1}\!\sum_{j=0}^1k_{\rm fine}(x_j,y_j)
+=\Bigl(f_0-\frac{c_0}{c_1}f_1\Bigr) D_{\psi_1} y_0 .
+}\tag{12}
+\]
+
+The ORIGINAL first-cell true collar is \(h=h_0=0.18380152465817944666\ldots\), \(e_{0,00}=0.78144259233145152311\ldots\), \(\psi_{1,1}=0.01640091743777908745\ldots-0.00020467572184886842\ldots\). Its exact CAR field derivative (fixed coframe/link and original second scalar) is
+
+\[
+D_{\psi_1}y_0=\frac{2\tau}{h^2}e_{0,00}^{-2}(\psi_{1,1}-\psi_{1,0}),
+\quad \tau=1/20,\quad \psi_{1,0}=0.
+\tag{13}
+\]
+
+The expression (12) was evaluated with **outward 85-digit mpmath intervals** over both owner-certified original \(10^{-12}\)-wide x/y center neighborhoods, rather than merely rounding a trial Newton root. It gives the sharp, STRICT signed nonzero result
+
+\[
+\boxed{\begin{aligned}
+3.43683576\cdot10^{-11}
+&< f_0-\frac{c_0}{c_1}f_1
+<3.43689830\cdot10^{-11},\\
+2.69824047\cdot10^{-12}
+&<D_{\psi_1}\sum_j k_{\rm fine}
+<2.69828957\cdot10^{-12}.
+\end{aligned}}\tag{14}
+\]
+
+The original h₀ unpadded N1 normalization factor was already fixed in \`certified_model.py\`, \(\kappa=(\tau h_\varphi'(r_{\rm ref})r_x(0,0))^{-1}=38037163.18989398\ldots>0\). With **NO new scalar coefficient**,
+
+\[
+\boxed{
+0.0001026334<
+D_{\psi_1}S_{\rm fine,original\ normalization}
+<0.0001026353.
+}\tag{15}
+\]
+
+This is a TRUE original independent scalar1 Euler failure for the *defined alternative mathematical fine-dephased AND separately charged* two-flag future. It is **not merely a different Einstein ratio**, not an omission of a field row, and not speculation about a fixed Lorentz frame. The very same original coordinate has EXACT ZERO coarse-OR first source by the PREVIOUS fully outward-certified exact 42-root. It does NOT prove that fine-source action has no other stationary root, or that the physical Book03 actor ever chooses fine readout or lacks genuine compensating clock/heat/Info source.
+
+Executable independent control: \`sources/d0_phi_polar_free_book_2026-10-22/check_h0_coherent_or_fine_scalar1.py\`, **14 scoped outward assertions**, ordinary/-O identical, consumed old real 42 existence rather than re-running its 1764-Hessian proof.
+
 ## 5. Physical decision now much narrower, but still nontrivial
 
 The original Book03 §03.25 spectral factor and its N1 Golden OR registered event do NOT by themselves choose an observation algebra. An actual **goal requiring only a binary OR answer** has a uniquely cheapest faithful 0/10 *external report* in the original F/R prefix grammar (already proven owner). The three hidden sub-branches can stay coherent in whole old-work registers; Book06 injective information-preservation does NOT require classical dephasing of every internally distinguishable branch *at this same step*. But this designated OR goal is not yet proven the M1-mandatory physical future, and real extra stored quantum work, moving preparation and clock must be paid.
