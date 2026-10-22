@@ -247,3 +247,133 @@ Even one-port-neutral source directions require a positive missing reaction of \
 ## Bounded check
 
 \`sources/d0_full128_thermal_ward_2026-10-22/check_original_thermal_ward.mjs\` consumes the already pinned exact original \(\mu,h,\mu',h'\) and the owned native two-parameter spectral atlas, checks every strict rational source inequality in (5)--(17), the true original Golden \(B^4\) feedback factor and entire CAR16×oldRIGHT multiplicity, and independently finite-differences the actual native \(r,\nu(r)\) positive operator chart (not a new matrix spectrum). The prior original 128-Kraus and 42-root proofs are consumed; their large suites are not rerun.
+
+
+## 6. EVEN the CANONICAL native modular Gibbs repair fails the original field Ward if no real extra source is present
+
+The preceding raw-\(\Delta\)/survival-\(\log B\) failures did not yet test the strongest existing positive modular construction. The already-owned \`A4D_NATIVE_MODULAR_PREPARATION_BOUNDARY.md\` and \`A4D_NATIVE_CORRELATED_RETURN_MODULAR_HEAT_COMPATIBILITY_2026_10_22.md\` prove that, on every regular native CAR16 chart, the **unique positive ground-zero** canonical generator with the ACTUAL invariant state \(\rho_*=\Delta^{-1}/Z\) as Gibbs density at the ORIGINAL fixed \(\beta_0=t=2p^2\) is
+
+\[
+ \boxed{
+ \Lambda_{\rm mod}=\beta_0^{-1}
+  [\log\Delta-\log\lambda_{\min}(\Delta)I],\qquad
+ \sigma_{\Lambda_{\rm mod}}=\rho_*.
+ }                                                   \tag{19}
+\]
+
+The scalar generator (19) is **not** claimed selected by compulsory Book03. Crucially, it ALREADY solves ALL independent unconstrained thermal-source equations of the EXISTING energy+heat dual functional:
+
+\[
+ \mathcal T(\rho_*,\Lambda_{\rm mod})
+ =\mathrm{Tr}(\rho_*\Lambda_{\rm mod})
+ +\beta_0^{-1}\log\mathrm{Tr}e^{-\beta_0\Lambda_{\rm mod}}
+ =\frac{H_{\rm vN}(\rho_*)}{\beta_0},\qquad
+ \partial_\Lambda\mathcal T=\rho_*-\sigma_{\Lambda_{\rm mod}}=0.
+ \tag{20}
+\]
+
+This does NOT make the FIELD source automatically stationary.
+
+The old original quadratic spectral receipt has exactly two \(8\)-fold eigenvalue groups. Put \(s=\epsilon/\mu=\sqrt{1-h/\mu}\in(0,1)\); its prepared eigenvalues are \((1+s)/16\) and \((1-s)/16\), each with multiplicity 8. Consequently
+
+\[
+ H_{\rm vN}(\rho_*)=\log8+
+ h_{\rm nat}\Big(\frac{1+s}{2}\Big),
+ \quad
+ D_v s=\frac{h\,D_v\mu}{2\mu^2s}>0                 \tag{21}
+\]
+
+on the **unchanged actual one-port-null tangent** \(v\) of (14). The field/source of the already-genuine generated energy+heat term is therefore strictly
+
+\[
+ \boxed{
+ D_v\mathcal T=
+ -\frac{\operatorname{atanh}s}{\beta_0}\,
+      \frac{h\,D_v\mu}{2\mu^2s}
+ <-\frac{h\,D_v\mu}{2\beta_0\mu^2}
+ <-0.01847,}                                        \tag{22}
+\]
+because \(\operatorname{atanh}s>s\), the true original
+\(h>0.013795\), \(D_v\mu>0.00042\),
+\(\beta_0<0.8\), \(\mu<0.014\) and all bounds are strict native rational/Golden inputs. Reuse the ACTUAL already bounded feedback source (16), \(|D_vJ_2|<4.24\cdot10^{-5}\), to conclude
+
+\[
+ \boxed{
+ D_v[\mathcal T(\rho_*,\Lambda_{\rm mod})+J_2]
+ <-0.01842<0.}                                      \tag{23}
+\]
+
+The numerical value on the same true original fixture is about
+\(-0.0201128108\), but (23) is proved analytically. This is a particularly important anti-shortcut: **fixing the mismatch in the independent thermal Euler equations by canonical log-native Gibbs matching DOES NOT fix the original Lorentz/field Euler equations**. Any prospective physical modular Book03 interpretation must still identify a genuinely selected corresponding moving Hodge/spectral source, and the complete physical info/work/clock/preparation reaction of nonzero strength. The old inverse-square DATA state is genuinely native, but **its Gibbs reconstruction is not a free field-stationarity selector**.
+
+The real independent proper-Lorentz boost at fixed \(\nu\) and the original boost+amplitude one-port-null tangent have different admission statuses: (9)--(13) need only the former; (21)--(23) test the existing real two-parameter original CAR operator chart and need the two-coordinate native field-writer/controller admission before promotion to independent physical field Euler.
+
+## 7. Quantified two-port measured-Info REPAIR insufficiency (a named candidate, not a general Info no-go)
+
+Could the positive original two-PORT mutual-information correction already prove the missing physical Price−Info reaction? The concurrently owned genuine port theorem supplies, ON EXACTLY THE SAME native one-port-null tangent \(v\),
+
+\[
+ D_v q=0,\quad
+ \delta_{\rm port}=c^2h(\mu-h)>0,\quad
+ D_v\delta_{\rm port}=c^2B_*>0,\quad c=4p^3<1,
+\]
+\[
+ D_vI_2=\ln\frac{A_{\rm port}C_{\rm port}}{B_{\rm port}^2}\,
+              D_v\delta_{\rm port}>0,
+\quad
+ B_{\rm port}=q(1-q)-\delta_{\rm port}>0.
+\tag{24}
+\]
+
+No new port statistic has been introduced. The original strict
+CAR/Golden bounds give
+\[
+ q=c h\in(0.0129,0.0138),\quad
+ \delta_{\rm port}<3.1\cdot10^{-7},\quad
+ B_{\rm port}>0.012,\quad
+ 0<D_v\delta_{\rm port}<6\cdot10^{-6}.
+\]
+The exact identity
+\(A_{\rm port}C_{\rm port}-B_{\rm port}^2
+ =\delta_{\rm port}\)
+and \(\log(1+x)<x\) imply
+
+\[
+ 0<D_v I_2
+ <(6\cdot10^{-6})\frac{3.1\cdot10^{-7}}{(0.012)^2}
+ <1.32\cdot10^{-8}\quad\text{(natural nats)}.       \tag{25}
+\]
+
+Even in the **explicitly hypothesized** most favorable
+comparison that repeats this entire two-port correction
+for EACH of the original oldRIGHT128 copies, its
+maximum Golden-unit first-source magnitude is
+
+\[
+ \boxed{
+ \frac{128\,|D_v I_2|}{\ln\varphi}
+ <3.52\cdot10^{-6}.
+ }                                                   \tag{26}
+\]
+
+That is over 100 times too small to cancel the proved
+\(>0.000375\) native raw/survival HJR imbalance in
+(17), and over 5000 times too small to cancel the
+modular imbalance (23).
+This is a bounded **no-go for repairing these specific
+whole-source candidates with ONLY the already measured
+two-port mutual-information term**, even allowing all
+128 original RIGHT copies. It is NOT an upper bound
+on the FULL original predictive information from all
+remaining fine labels, arbitrary long records, conditional
+quantum work, moving Hodge heat, native clocks or
+the compulsory Book03 \(\mathrm{Info}_\omega\).
+Those genuine physical terms remain the decisive
+new operator-map obligation.
+
+**Narrow controls:** the cited checker
+\`check_original_thermal_ward.mjs\` additionally
+verifies the true native \(\log\Delta\) generated
+energy+heat source and the strict coarse two-port
+Info upper/source separation bounds, without
+pretending either scalar was Book03-selected.
