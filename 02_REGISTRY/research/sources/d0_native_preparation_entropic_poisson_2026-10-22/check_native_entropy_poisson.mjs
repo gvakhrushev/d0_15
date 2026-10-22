@@ -24,6 +24,7 @@ function nativeInstrument(a,b){
   const u=Math.sqrt(1-b*b),v=Math.sqrt(1-a*a);
   const K=[diag(a,b),[[0,u],[v,0]]];
   const DK=[diag(1,0),[[0,0],[-a/v,0]]];
+  const DDK=[zero(),[[0,0],[-1/(v*v*v),0]]];
   const Phi=x=>sum(mm(mm(K[0],x),T(K[0])),mm(mm(K[1],x),T(K[1])));
   const adj=x=>sum(mm(mm(T(K[0]),x),K[0]),mm(mm(T(K[1]),x),K[1]));
   const DPhi=x=>{
@@ -34,6 +35,16 @@ function nativeInstrument(a,b){
     }
     return ans;
   };
+
+  const D2Phi=x=>{
+    let ans=zero();
+    for(let j=0;j<2;j++){
+      ans=sum(ans,mm(mm(DDK[j],x),T(K[j])));
+      ans=sum(ans,scale(mm(mm(DK[j],x),T(DK[j])),2));
+      ans=sum(ans,mm(mm(K[j],x),T(DDK[j])));
+    }
+    return ans;
+  };
   const complete=adj(id());
   for(let i=0;i<2;i++)for(let j=0;j<2;j++)
     near(complete[i][j],+(i===j),3e-14,'same owner TRUE Kraus completeness');
@@ -41,11 +52,18 @@ function nativeInstrument(a,b){
   const pi=[(1-b*b)/delta,(1-a*a)/delta];
   const rho=diag(pi[0],pi[1]);
   const drho=diag(2*a*pi[0]/delta,-2*a*pi[0]/delta);
+  const pp=2*(1-b*b)/(delta*delta)+8*a*a*(1-b*b)/(delta**3);
+  const ddrho=diag(pp,-pp);
   for(let i=0;i<2;i++)for(let j=0;j<2;j++){
     near(Phi(rho)[i][j],rho[i][j],4e-14,'same owner moving stationary native input');
     near(sum(Phi(drho),DPhi(rho))[i][j],drho[i][j],2e-13,
       'original moving preparation differentiated stationarity equation');
   }
+  const secondPrepRHS=sum(D2Phi(rho),scale(DPhi(drho),2));
+  const secondPrepLHS=sum(ddrho,scale(Phi(ddrho),-1));
+  for(let i=0;i<2;i++)for(let j=0;j<2;j++)
+    near(secondPrepLHS[i][j],secondPrepRHS[i][j],1e-12,
+      'REAL full 2nd native preparation Poisson response Hessian');
   const comm=sum(mm(K[0],K[1]),scale(mm(K[1],K[0]),-1));
   ok(traceNorm(comm)>0.05,'two original-owner Kraus matrices genuinely do NOT commute');
   const offdiagReal=diag(0,0);offdiagReal[0][1]=1;offdiagReal[1][0]=1;
@@ -53,7 +71,7 @@ function nativeInstrument(a,b){
   near(Phi(offdiagReal)[0][1],a*b+u*v,1e-13,'original coherent offdiagonal source nontrivial');
   near(Phi(offdiagImag)[0][1],a*b-u*v,1e-13,'original coherent imaginary source');
   ok(a*b+u*v<1-1e-5&&Math.abs(a*b-u*v)<1,'strict finite native full-matrix mixing gap');
-  return {K,DK,Phi,adj,DPhi,rho,drho,pi,delta};
+  return {K,DK,DDK,Phi,adj,DPhi,D2Phi,rho,drho,ddrho,pi,delta};
 }
 function words(cap){
   const out=[];
@@ -69,38 +87,58 @@ function program(a,b,cap,observer='pointer',initialRho=null){
   const n=nativeInstrument(a,b),rho=initialRho||n.rho;
   let leaves=words(cap),costMean=0,entropy=0,score=0,firstY=0,norm=0;
   let M=zero(),dSfixed=0,refNorm=0,pureEntropy=0,leafMaxP=0;
+  let Syy=0,Syr=0,Srr=0;
   for(let leaf of leaves){
-    let L=id(),DL=zero(),cost=0;
+    let L=id(),DL=zero(),DDL=zero(),cost=0;
     for(let j of leaf.w){
+      let LDD=sum(sum(mm(n.DDK[j],L),scale(mm(n.DK[j],DL),2)),
+                  mm(n.K[j],DDL));
       let LD=sum(mm(n.DK[j],L),mm(n.K[j],DL));
       L=mm(n.K[j],L);
-      DL=LD;
+      DL=LD; DDL=LDD;
       cost+=1+j; // DECLARED 0/10 LENGTH LEDGER, not a physical Golden 2-Kraus price
     }
     let E=mm(T(L),L),DE=sum(mm(T(DL),L),mm(T(L),DL));
-    let P=td(rho,E),DP=td(rho,DE);
+    let DDE=sum(sum(mm(T(DDL),L),scale(mm(T(DL),DL),2)),mm(T(L),DDL));
+    let P=td(rho,E),DP=td(rho,DE),DDP=td(rho,DDE);
+    const Prho=td(n.drho,E),DrhoP=td(n.drho,DE);
     ok(P>0&&P<1,'every original-owner entire leaf positive on faithful input');
     norm+=P;
     leafMaxP=Math.max(leafMaxP,P);
     costMean+=P*cost;
     let shape=mm(mm(L,rho),T(L));
     let dShape=sum(mm(mm(DL,rho),T(L)),mm(mm(L,rho),T(DL)));
+    let ddShape=sum(sum(mm(mm(DDL,rho),T(L)),
+                       scale(mm(mm(DL,rho),T(DL)),2)),
+                       mm(mm(L,rho),T(DDL)));
+    let rhoShape=mm(mm(L,n.drho),T(L));
+    let drhoShape=sum(mm(mm(DL,n.drho),T(L)),
+                       mm(mm(L,n.drho),T(DL)));
     let piece=0,prime=0;
     if(observer==='pointer'){
       piece=P*Math.log(P);
       prime=(Math.log(P)+1)*DP;
       const coefficient=cost+(Math.log(P)+1)/ell;
       M=sum(M,scale(E,coefficient));
+      Syy+=DDP*coefficient+DP*DP/(P*ell);
+      Syr+=DrhoP*coefficient+DP*Prho/(P*ell);
+      Srr+=Prho*Prho/(P*ell);
     }else{
       for(let j=0;j<2;j++){
         const x=shape[j][j],dx=dShape[j][j];
         ok(x>0,'true kept DATA outputs have positive diagonal eigenmasses');
         piece+=x*Math.log(x);
         prime+=(Math.log(x)+1)*dx;
+        const ddx=ddShape[j][j],rx=rhoShape[j][j],drx=drhoShape[j][j];
+        Syy+=(ddx*(Math.log(x)+1)+dx*dx/x)/ell;
+        Syr+=(drx*(Math.log(x)+1)+dx*rx/x)/ell;
+        Srr+=rx*rx/(x*ell);
       }
       let logState=diag(Math.log(shape[0][0])+1,Math.log(shape[1][1])+1);
       M=sum(M,scale(E,cost));
       M=sum(M,scale(mm(mm(T(L),logState),L),1/ell));
+      Syy+=cost*DDP;
+      Syr+=cost*DrhoP;
     }
     score+=P*cost+piece/ell;
     entropy-=piece;
@@ -145,8 +183,13 @@ function program(a,b,cap,observer='pointer',initialRho=null){
   near(prepDirect,prepAdjoint,2e-11,'true native channel Poisson source = moving preparation source');
   const totalSource=dSfixed+prepAdjoint;
   near(totalSource,dSfixed+prepDirect,2e-11,'entire source includes no frozen preparation');
+  const trueSecondPrep=td(M,n.ddrho);
+  const adjointSecondPrep=td(Y,sum(n.D2Phi(n.rho),scale(n.DPhi(n.drho),2)));
+  near(trueSecondPrep,adjointSecondPrep,2e-10,
+    'FULL native preparation Hessian sourced via SAME adjoint Poisson, no frozen rho');
+  const Hessian=Syy+2*Syr+Srr+adjointSecondPrep;
   const own={n,score,entropy,costMean,M,Y,dSfixed,prepDirect,prepAdjoint,
-             totalSource,norm,leafMaxP};
+             totalSource,norm,leafMaxP,Hessian,Syy,Syr,Srr,adjointSecondPrep};
   return own;
 }
 for(const a of [.55,.6,.7]){
@@ -168,6 +211,9 @@ for(const a of [.55,.6,.7]){
      'actual fixed-input derivative from all complete Kraus leaf jets');
    near(totalFinite-partialFinite,p0.prepAdjoint,8e-7,
      'genuine paid-memory preparation source exact stationary dual');
+   const hessianNumerical=(pr.totalSource-pl.totalSource)/(2*h);
+   near(hessianNumerical,p0.Hessian,6e-6,
+    'SECOND source same original complete Kraus plus exact preparation Poisson Hessian');
   }
  }
 }
@@ -206,9 +252,11 @@ console.log(JSON.stringify({status:'PASS_NATIVE_STATIONARY_POISSON_FULL_STOPPED_
    stationaryRho:[.36,.64],isNoncommuting:true},
  cap:12,pointer:{S:fixture.score,H:fixture.entropy,
    actualPrepSource:fixture.prepAdjoint,fullFieldSource:fixture.totalSource,
-   fixedInputSource:fixture.dSfixed},
+   fixedInputSource:fixture.dSfixed,completeHessian:fixture.Hessian,
+   geoOnlyHessian:fixture.Syy,prepSchurSource:fixture.adjointSecondPrep},
  measuredCQ:{S:actualCQ.score,H:actualCQ.entropy,
-   actualPrepSource:actualCQ.prepAdjoint,fullFieldSource:actualCQ.totalSource},
+   actualPrepSource:actualCQ.prepAdjoint,fullFieldSource:actualCQ.totalSource,
+   completeHessian:actualCQ.Hessian},
  pureOldRIGHTFullCQEqualsFinePointerEntropy:true,
  freeGibbsInputOnlyUniformTheorem:true,
  dynamicNativePhiConstraintNotFitted:true,
