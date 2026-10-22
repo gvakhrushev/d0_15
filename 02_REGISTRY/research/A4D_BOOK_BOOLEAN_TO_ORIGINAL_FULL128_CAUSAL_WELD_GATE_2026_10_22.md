@@ -196,3 +196,163 @@ The equality for \(F_E\) follows from the ACTUAL first Stinespring column \(UJ=V
 **Decision:** physical GR closure requires deriving the actual same-initial admitted F/heat/Info action AND its 42-field/pure preparation source on this original 65+RIGHT operator carrier, or an independently proved source-preserving intertwiner. The recent canonical \(\rho_*\), future algebra, rate/Holevo bracket, and genuine full Boolean Book word resolve substantial subcomponents, but the exact obstruction (4)–(12) forbids pretending their remaining difference has already disappeared. No new fitted counterterm, clock, hidden spectator deletion, or GR promotion is made.
 
 Checker: `sources/d0_original_full128_future_even_algebra_2026-10-22/check_boolean_native128_no_intertwiner.py`.
+
+## 6. Compose the owned full native reflection before asking for another intertwiner
+
+**Concurrent input consumed, not re-proved:** the exact original
+[Golden/Halmos-Naimark full128 weld](A4D_ORIGINAL_GOLDEN_HALMOS_NAIMARK_ALL128_CAUSAL_BOOK_WELD_2026_10_22.md),
+published in `cf6be3da3bac995765ea8a89b6cae49f30352882`, and its
+original-matrix replay `1486dea4e8243dffb14f38b63e3667808e38d8d9`.
+The original [Julia/Walsh one-reflection compiler](A4D_ORIGINAL_FULL128_SINGLE_BOOST_HERALDED_JULIA_AND_GALOIS_COMPILER_2026_10_22.md)
+already supplies a work-retaining reflection as well. These positive
+constructions coexist with the invariant/no-work obstruction in section 1.
+Do not create another dilation, rank scan or replacement detector.
+
+The new weld restores EVERY original Kraus operator, posterior state,
+chronological product and genuine source jet, including the seventeen
+independent nonblank directions. It is a factorization of the original
+instrument, not a proof that G0 executes a new circuit with unchanged
+primitive costs. In particular a moving Naimark projection is not the
+previous fixed computational-basis Boolean predicate word.
+
+### The source now has one exact common operator, but still needs its physical cut
+
+On the ORIGINAL full row-resolved reflection, the whole port-zero cut
+has feedback `F_port=4p^3 Pi`, where `Pi` is a rank-16 projection.
+Its bare Book logdet is constant on a smooth fixed-rank field chart.
+The initialized PRE cut instead has the already-owned exact source:
+
+\[
+F_E=I-K_0^\dagger K_0=4p^2\Delta(I-p^2\Delta),\qquad
+J_E=-r\operatorname{Tr}\log(I-\zeta F_E),
+\]
+\[
+DJ_E=4rp^2\zeta\operatorname{Tr}
+ [(I-\zeta F_E)^{-1}(I-2p^2\Delta)D\Delta].             \tag{16}
+\]
+
+Here `r` is actual passive oldRIGHT trace multiplicity, not a fitted
+normalizer. A separately specified fixed action multiplier acts on the
+WHOLE source once. The equivalent minimal Naimark representation has the
+same rank-count versus prepared-angle distinction. The source is in
+relative position of the prepared and response subspaces, not their bare
+ranks. No physical cut selection follows from this observation.
+
+For an actually moving initialized inclusion `J_y`, set
+`B_y=J_y^dagger U_y J_y`; the complete transported derivative is
+
+\[
+F=I-B^\dagger B,\quad
+DB=(DJ)^\dagger UJ+J^\dagger(DU)J+J^\dagger U(DJ),\quad
+DF=-(DB)^\dagger B-B^\dagger DB.                        \tag{17}
+\]
+
+Thus one cannot freeze a genuinely independent observer/preparer while
+using the fixed-cut formula (16). Noncommuting `Delta,DDelta` are allowed:
+(16) follows by trace cyclicity, not by discarding eigenvector derivatives.
+
+### Consume the exact causal price and primitive DATA response together
+
+Because the full128 rows agree as functions, the existing
+[native65 complete causal ledger](sources/d0_native65_causal_source_2026-10-22/THEOREM.md)
+applies on this SAME original instrument, with effective weights
+`d_blank=1`, `d_orphan=2`, `d_pair=p^3`. Its complete source is
+
+\[
+P_n(\Omega)=\sum_w d(w)\operatorname{Tr}X_w+
+ {\sum_w\eta(X_w)-\eta(\Omega)\over\log\varphi},\quad
+ X_w=L_w\Omega L_w^\dagger,\quad
+ DP_n=A_n(\Omega)+\operatorname{Tr}[G_n(\Omega)D\Omega], \tag{18}
+\]
+
+where `eta(X)=Tr(X log X)`, `0 log 0=0`. These are owned source formulas
+on their entropy differentiability/support chart, for fixed `n` or a
+separately justified merged-label-adapted stop. A stop reading the
+merged-away port bit needs a separate transport. DATA is not reset; all
+fine tape, actual 0/10 costs and fresh instrument registers remain.
+Neither the fractional effective weight nor (18) licenses a new physical
+Info law or double payment by adding this component to a Book H+J stack.
+
+Now apply the [original three-tick primitivity theorem](A4D_ORIGINAL_FULL128_THREE_TICK_PRIMITIVE_SELF_PREPARATION_AND_EINSTEIN_SOURCE_GATE_2026_10_22.md)
+to the [complete-price entropic Poisson consumer](A4D_COMPLETE_NATIVE_FIRST_MATCH_ENTROPIC_POISSON_PREPARATION_AND_HESSIAN_2026_10_22.md).
+It discharges that consumer's DATA uniqueness/inverse premise on its
+actual regular chart. Along the original fixed-row/observer family,
+
+\[
+\rho_*={\Delta^{-1}\over Z_D},\quad Z_D=\operatorname{Tr}\Delta^{-1},
+\quad D\rho_*=-{\Delta^{-1}(D\Delta)\Delta^{-1}\over Z_D}
+ +{\rho_*\over Z_D}\operatorname{Tr}
+       [\Delta^{-1}(D\Delta)\Delta^{-1}].               \tag{19}
+\]
+
+For ANY actually selected differentiable FULL price `S(y,rho)`, solve
+
+\[
+(I-\Phi^*)Z_S=D_\rho S-
+ \operatorname{Tr}(\rho_*D_\rho S)I,\quad
+ \operatorname{Tr}(\rho_*Z_S)=0.
+\]
+
+The entire generated-input source is then
+
+\[
+DS(y,\rho_*(y))[v]=\partial_vS+
+             \operatorname{Tr}[Z_S(D_v\Phi)(\rho_*)].  \tag{20}
+\]
+
+This uses an already PROVED DATA inverse, not an assumed stationary
+preparation or a fresh Gibbs ansatz. It closes constrained DATA/adjoint
+rows, retaining their generally nonzero reaction. For changed moving
+observers, (17) alone does not establish the inverse-Delta state (19):
+recompute the actual channel and fixed point before using its Poisson
+law. Passive oldRIGHT introduces independent stationary zero modes;
+full prefix/archive, finite preparation, RIGHT and controller sources
+remain. Channel stationarity is not field stationarity or M1 selection
+of an equilibrium input.
+
+## 7. Consume the already proved GR side; do not rebuild it
+
+The other end of the composition is already stronger than one finite
+root. [The full global spectral synthesis](sources/d0_global_spectral_closure_2026-10-22/previous/GLOBAL_SYNTHESIS.md)
+proves exact all40+2 nonvacuum solutions on every sufficiently fine
+mesh for its DECLARED paired-Hodge action, including the one global
+heat trace, actual inverse-PF multiplicities and finite `zeta`.
+Its actual source ratio satisfies
+`lambda_h=lambda_-(zeta)+O(h^4)` when `W_h>=528 h^-4` and
+`W_h zeta>1`. Its real midpoint increments
+`h sqrt(lambda_-/lambda_h) Psi'(u_j+h/2)` preserve the SAME fixed
+continuum metric samples on the owned polynomial-harmonic subfamily
+and `O(h^2)` matter recovery. The broader smooth harmonic Dirichlet
+family retains its proved `O(h^2)` geometric recovery, rather than
+literal equality of metric samples. These are owned results.
+
+The [thermal Schur/Ward and actual scene-source continuation](sources/d0_global_spectral_closure_2026-10-22/THEOREM.md)
+already gives the global auxiliary equation, the regular continuum
+Einstein/constrained-two-scalar classification and a sufficient
+normalized C2 scene-source limit without demanding the false operator
+identity `Delta_scene=Delta_paired`. Its actual gain and norm must be
+retained. Its thermal Gibbs auxiliary is NOT native DATA (19).
+The separately certified exact47 off-null saddle has its own local
+response chart, not an all-mesh response inverse.
+
+The next parent substitution is therefore ONE commuting-source
+application, not another list of local scientific tasks:
+
+1. Derive the actual chronological Book cut, admitted source-bearing
+   Julia/field map, scene heat and absolute Info/work/clock valuation
+   from the same initial process and required future tests. The two
+   source laws above make cut selection a substantive physical question.
+2. Pull back that FULL source, including (17)--(20) and every independent
+   RIGHT/preparer/controller equation, through the same map. Establish
+   either the owned exact all42 source identity or its existing
+   normalized source-limit estimate with the actual nonzero gain and norm.
+3. Apply the existing all-mesh recovery/continuum theorem only at the
+   hypotheses established. Uniform coupled soundness and stronger
+   metric-only Diff/Golden universality retain their own assumptions.
+
+The mathematical full-native dilation and DATA-response interfaces are
+supplied by the cited OWNERS. This composition consumes them; it does
+not count them as new discoveries or discharge the physical cut,
+valuation and smooth-field-writing premises. A literal Boolean word
+remains a different programme. `GR_closed=false`; the original raw
+terminal and physical refinement remain open in the existing #334 owner.
