@@ -189,7 +189,7 @@ function book(census,r){
   FisherSiteMin:Math.min(...FisherSite),FisherSiteMax:Math.max(...FisherSite),
   FisherGlobalEigenvalue:FisherGlobalEig,
   HGoldenSlope,HessOpUpper,HessMinLower,
-  oneTapeCodeSource,stoppedCodeSource,
+  oneTapeCodeSource:oneCodeSource,stoppedCodeSource,
   cappedAbortAt1000:abort(1000),
   meanFirstMatchGlobal:4,meanFirstMatchAddressed:2*W+2,
   meanFirstMatchFine:M+1};
