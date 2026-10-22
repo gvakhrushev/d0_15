@@ -133,6 +133,31 @@ function book(census,r){
  const HnatSlope=a*Math.log((1-r)/r);
  const HGoldenSlope=HnatSlope/Math.log(phi);
  check(HGoldenSlope>9,'original rare report full address Info slope O(1) while Book derivative O(W^-1)');
+ // SAME original TRUE Golden self-delimiting 0/10 cost-relative one tape
+ // was already proved as a Σ a*w_z*(1+r_z-H_phi(r_z)) score.
+ // Only for genuinely IID independently PAID whole-tape first-return task:
+ // E[T]=m+1 => exact whole stopped-history Cost−Info source.
+ const gPrime=1-HGoldenSlope/a,oneCodeSource=a*gPrime;
+ const stoppedCodeSource=(2*W+2)*oneCodeSource;
+ check(gPrime<-26&&gPrime>-27,'unchanged original 0/10 Golden Price−Info source on report chart');
+ check(stoppedCodeSource<0&&da>0,
+       'true measured whole stopped price and unweighted paired-cut Book have O(W) versus O(1/W) source');
+ check(Math.abs(stoppedCodeSource)/da>100000*W*W,
+       'real original native addressed stopped-vs-Book source discrepancy grows Ω(L^8)');
+ // Complete capped iid first-match GOAL includes every aborted leaf.
+ const mAddr=qAddr.length;
+ const abort=(K)=>qAddr.reduce((s,q)=>s+q*Math.exp(K*Math.log1p(-q)),0);
+ for(const K of [1,2,10,100,1000]){
+   const A=abort(K);
+   check(A>0&&A<1,'honest full original site-addressed first-match has real finite-K aborts');
+   const length=1+qAddr.reduce((s,q)=>s+(1-Math.exp(K*Math.log1p(-q))),0);
+   const identity=mAddr+1-qAddr.reduce((s,q)=>s+Math.exp(K*Math.log1p(-q)),0);
+   approx(length,identity,1e-12,'true capped expected number of complete Golden trials incl all aborts');
+   const maxSite=a*Math.max(...w);
+   const bound=a*Math.exp(K*Math.log1p(-maxSite));
+   check(A>=bound-3e-13,'strict all-READY native site-anchor abort lower bound with actual wmax');
+ }
+
  // All probability coordinates are affine in each native local r_z.
  // Parent coupled cut Hessian h_q negative definite. Here test explicit local
  // diagonals with actual Z (including 1/Z heat) and rank-one heat source.
@@ -164,6 +189,8 @@ function book(census,r){
   FisherSiteMin:Math.min(...FisherSite),FisherSiteMax:Math.max(...FisherSite),
   FisherGlobalEigenvalue:FisherGlobalEig,
   HGoldenSlope,HessOpUpper,HessMinLower,
+  oneTapeCodeSource,stoppedCodeSource,
+  cappedAbortAt1000:abort(1000),
   meanFirstMatchGlobal:4,meanFirstMatchAddressed:2*W+2,
   meanFirstMatchFine:M+1};
 }
@@ -210,6 +237,18 @@ for(const L of [4,5,8,16,32,64,256,1024]){
  const HessScale=2*amax**2*((1+9*h**3)/W)**2*kmax;
  check(HessScale<.00035/W**2,
        'uniform native addressed report Hessian norm O(L^-8), inverse Ω(L^8)');
+ const fullKacMean=2*W+2;
+ const nativePaidPrefixMin=n*fullKacMean;
+ check(nativePaidPrefixMin>=2*W*n,
+       'each true original first-crossing F/R report costs at least n Golden units, so Ω(L^4 logL) paid repeats');
+ const coarseK=Math.ceil((80+16*s)/(6e-7));
+ const qMaxBound=amax*(1+9*h**3)/W;
+ const readyMin=2*p**3*.72;
+ const abortReadyLower=readyMin*(1-coarseK*qMaxBound);
+ if(L>=512)check(abortReadyLower>.339-0.0001,
+       'unchanged O(logL) complete GLOBAL clock gives ≳34 percent site-addressed abort probability on real PF refinement');
+ if(L>=1024)check(abortReadyLower>.3398,
+       'even high absolute Golden clock coefficient cannot solve site-READY rare return at large L');
 }
 console.log(JSON.stringify({status:"PASS_ORIGINAL_GOLDEN_ADDRESS_FISHER_AND_COMPLETE_CUT_HEAT",checks,
  originalSmall:{n20:r20,n24:r24},
