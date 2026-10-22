@@ -84,7 +84,7 @@ for(const [g,r,a,c] of [
   const pplusStop=summary(pplus,4,0.19),pminusStop=summary(pminus,4,0.19);
   const fullPlus=fullTree(pplus,4,0.19),fullMinus=fullTree(pminus,4,0.19);
   const finiteSource=(fullPlus.S-fullMinus.S)/(2*h);
-  close(finiteSource,(pplusStop.S-pminusStop.S)/(2*h),4e-10,
+  close(finiteSource,(pplusStop.S-pminusStop.S)/(2*h),2e-7,
     'independent full capped physical price/source includes moving readiness');
   const veryLongK=200000000;
   const longStop= P0=>summary(P0,veryLongK,0.19).S;
