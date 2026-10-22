@@ -232,6 +232,106 @@ There is moreover a rigorous **fixed finite polynomial EXACT no-go**: suppose fo
 The original positive eigenvalue function \(x_+(r)=t\lambda_+(r)\) is NONCONSTANT there, as its derivative is strictly positive at original \(r=1/9\). Hence on an infinite interval of scalar x,
 \(P(x)(1-x)^n=c\); polynomial identity would force a nonzero positive-degree polynomial to equal a nonzero constant. Contradiction. Thus **no fixed finite polynomial with constant exact success amplitude can undo all original field configurations exactly on an open native chart**. But (9)–(15) provide a uniform fixed finite approximation with exponentially small certified error. This is an actual constructive resolution of the source-dependent exact spectral-inverse selection issue up to the remaining finite physical compiler obligation.
 
+
+## 5a. Even stronger: the SAME fixed polynomial makes the SUCCESS-FLAG field source uniformly tiny, with the MOVING actual native stationary DATA preparation INCLUDED
+
+A scalar **value** error bound on a field-dependent instrument does not automatically bound its first variation. Here, however, the OLD ORIGINAL source has the exceptional exact two-band inverse-square stationary DATA state \(\rho_*(r)=\Delta(r)^{-1}/\operatorname{Tr}\Delta(r)^{-1}\), whose spectral weights and first Lorentz jets are already known. We can now prove the full actual **prepared success/abort flag** first source WITHOUT freezing \(\rho_*\), differentiating eigenvectors or assigning an ad hoc input reaction.
+
+Let \(s(r)=\epsilon(r)/\mu(r)\in(0,1)\).
+The complete original **stationary DATA** sector probabilities are
+\[
+ w_-=\tfrac12(1+s),\quad w_+=\tfrac12(1-s),\qquad
+ w_\pm'=\pm\tfrac12s',\quad
+ s'=\epsilon'/\mu-\epsilon\mu'/\mu^2.                 \tag{16}
+\]
+Here \(\lambda_\pm=\mu\pm\epsilon\) are the actual old CAR16 eightfold eigenvalues. Note the sign in \(w_\pm\) is OPPOSITE the operator energy: \(\rho_*\propto\Delta^{-1}\), not a hand-chosen thermal state.
+
+Write \(x_\pm=t\lambda_\pm,\ T_\pm=T_{130,16}(x_\pm)\) and \(c=(79/80)^{130}\). The exact success probability on the MOVING real invariant preparation, including its full \(D_r\rho_*\), is
+\[
+ \boxed{
+ P_{\rm succ}(r;\rho_*(r))
+ =c^2[w_-(1-T_-)^2+w_+(1-T_+)^2].
+ }                                                   \tag{17}
+\]
+Its **FULL** source, without a frozen DATA prior, is
+\[
+ \boxed{
+ P'_{\rm succ}=c^2\left\{
+ w_-'[(1-T_-)^2-(1-T_+)^2]
+ -2\sum_{\alpha=\pm}w_\alpha
+   (1-T_\alpha)T_{130,16}'(x_\alpha)x_\alpha'
+ \right\}.                                           \tag{18}
+\]
+This is the correct original native inverse-square preparation-chain rule; it exploits the actually proved noncommuting instrument's stationary density but does NOT assume \([\Delta,D\Delta]=0\) on the full CAR input. Both spectral coefficients are exactly the trace of a function of \(\Delta\), so eigenvector derivatives cancel by trace cyclicity. This is a useful special case of the general native Poisson prepared-source theorem, **not** a replacement for it in non-spectral reported effects.
+
+### Exact UNIFORM open-boost first-source bound, not a single-point finite difference
+
+All scalar derivative bounds below follow by elementary differentiation of the SAME OLD rational polynomials (2), on the ENTIRE \(r\in[.1,.12]\). Their true ranges imply
+
+\[
+ |\mu'|<0.016,\quad
+ |\epsilon'|<0.0065,\quad
+ |s'|<0.54,\quad
+ |x_\pm'|<0.018.                                     \tag{19}
+\]
+
+A strict non-floating verification is immediate from:
+\[
+ P'(r)=20r^3+3r^2-16r-1,\quad |P'|<3,\quad 0<P<4.823,
+\]
+\[
+ \mu'=\frac9{3200(1-r^2)^2}
+  [P'+4rP/(1-r^2)],
+\]
+\[
+ G'= -12r^2-4r^3+20r^4+12r^5,\quad
+ |G'|<0.185,\quad G>2.99,
+\quad
+ \epsilon'=\epsilon[1/r+4r/(1-r^2)+G'/(2G)].
+\]
+Together with \(\mu>.0136,\ \epsilon<.00061,\ t<.8\), these imply all inequalities (19) strictly. In particular
+\(\sum_\alpha|w_\alpha'|=|s'|<0.54\).
+
+From the EXACT derivative (11), its \(x^{16}(1-x)^{129}\) factor is increasing for \(0\le x\le1/80<16/145\). The accompanying exact integer test certifies
+\[
+ \boxed{\sup_{0\le x\le1/80}T_{130,16}'(x)
+       =T_{130,16}'(1/80)<8\cdot10^{-9}.}            \tag{20}
+\]
+Combine (13),(18)–(20), \(\sum_\alpha w_\alpha=1\),
+\(\sum_\alpha w_\alpha'=0\), and \(c^2<0.038\). On the ENTIRE original real native source chart we get
+\[
+\begin{aligned}
+ |P'_{\rm succ}|
+ &\le c^2[2\varepsilon\sum|w'|+
+                 2T'_{\max}\max|x'|]\\
+ &<0.038[
+      2(6.5\cdot10^{-12})(0.54)
+      +2(8\cdot10^{-9})(0.018)]\\
+ &<\boxed{1.2\cdot10^{-11}}.                          \tag{21}
+\end{aligned}
+\]
+
+This is a REAL rigorous **moving-preparation first-source estimate**, not an inference from \(|P-c^2|<\varepsilon\). At the original exact boost \(r=1/9\), the direct spectral/jets evaluation gives
+\[
+ P_{\rm succ}\simeq0.037988060204066,\quad
+ \partial_rP_{\rm succ}\simeq-3.60808\cdot10^{-14}.
+\]
+The HUGE contrast with the fixed-state spectral optimal exact filter's field-sensitive \(\partial_r\eta_{\rm opt}\simeq-0.04120085\) demonstrates why **choosing fixed polynomial coefficients rather than a moving spectral optimal success scalar** is relevant for reducing the independent source of a proposed coherent echo.
+
+For the single explicitly DECLARED additional original \(0/10\) measured success/abort flag (charge 1 for abort and 2 for success; original Golden \(p,p^2\) code), the true *report-only* Code−Info is
+\[
+ S_{\rm echo-flag}=1+P_{\rm succ}-h_\varphi(P_{\rm succ}).
+\]
+On the same actual probability interval
+\(0.03798<P_{\rm succ}<0.038\),
+\( |1-h_\varphi'(P_{\rm succ})|<7\).
+Consequently its ENTIRE **reported-flag** first source, INCLUDING the moving \(\rho_*\), satisfies
+\[
+ \boxed{|\partial_rS_{\rm echo-flag}|<8.4\cdot10^{-11}.} \tag{22}
+\]
+
+**CRITICAL paid/source boundary.** Equation (22) is ONLY the incremental success/abort REPORT score, not the absolute full native price of the original 130 rounds, initial preparation, all original failed Kraus labels, filter implementation, oldRIGHT work or elapsed clock. Those may have large real field sources. No claim is made that Book03's compulsory Info equals the 0/10 flag or that the full D0 physical Euler vanishes. This does, however, remove a specific potential mathematical objection to the COMPILER: a fixed-coefficient positive recovery map need NOT introduce a large uncontrolled prepared-state/flag first-source merely because the original optimal state-by-state inverse had a large field-dependent success probability.
+
 ## 6. What this changes in the full D0→ОТО architecture
 
 **One new positive map is now explicit:**
