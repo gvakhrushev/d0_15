@@ -100,6 +100,31 @@ for rr in (.00000185123958,.25,.7):
     psi2=np.kron(psi,psi)
     check('pure same-state pair lives in +SWAP sector',np.linalg.norm(SWAP@psi2-psi2)<1e-14)
     check('its prepared pure Book cut has zero complementary feedback',abs(psi2@Fswap@psi2)<1e-14)
+# SAME full native readout and SAME Book base projector/value, different cut JETS.
+# This is a mathematical valuation fork, not physically admitted two alternate laws.
+chi=np.array([1.,0.])
+def prepared_j(rr):
+    psi=np.array([math.sqrt(1-rr),math.sqrt(rr)])
+    prepared=np.kron(np.array([1.,0.]),np.kron(psi,chi))
+    book_amp=prepared@U@prepared
+    return -math.log1p(-z*(1-book_amp**2)),book_amp
+common,amp=prepared_j(r0)
+book_amp_expected=p+p*p*(1-r0)
+check('same native Golden 8x8 cut amplitude',abs(amp-book_amp_expected)<2e-15)
+check('fixed prepared rank-one cut same base value',abs(common+math.log1p(-z*(1-book_amp_expected**2)))<2e-15)
+moving_jet=2*z*p*p*book_amp_expected/(1-z*(1-book_amp_expected**2))
+check('strictly nonzero moving-cut physical SOURCE candidate',moving_jet>0)
+for step in (1e-7,1e-8,1e-9):
+    finite=(prepared_j(r0+step)[0]-prepared_j(r0-step)[0])/(2*step)
+    check('same-base different first Book source',abs(finite-moving_jet)<2e-12)
+for rr in (r0,.1,.7):
+    psi=np.array([math.sqrt(1-rr),math.sqrt(rr)])
+    qinput=np.kron(psi,chi)
+    state=np.kron(np.array([1.,0.]),qinput)
+    out=U@state
+    measured_flag=float(out[4:]@out[4:])
+    check('single same-circuit Born source unaffected by Book cut',abs(measured_flag-2*p**3*rr)<2e-15)
+
 # Strict absence of exact full entropy-source reconstruction by *any finite* polynomial of swap moments:
 # h'(r)=log((1-r)/r)/log(phi) diverges as r->0; a finite sum of spectral
 # moments has bounded polynomial derivative. This is an analytic proof,
