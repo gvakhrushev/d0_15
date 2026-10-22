@@ -20,6 +20,13 @@ The [exact unpadded 0/10 42-root receipt](../../02_REGISTRY/research/sources/d0_
 **NEXT physical binding:** compute the actual complete Book03 HJR/oldRIGHT/clock/controller/work/retained-history information source and independent input/preparation/field-writing equations on the SAME original full42 rational finite carrier with the SAME report code already PAID. Bind the newer stopped full128 quantum balance only through a proved actual same-execution map; it is not automatically the configured N1 full42 Cost-Info. Test the complete source norm and actual preparation/source normalization; if the small bound fails, derive an honest larger continuation, not an invented canceling term. Do not assert original Book selection, GR/raw216, prospective minimum, general gauge inverse or h-uniform refinement.
 
 
+
+### 22 October: global joint index consumes the same complete-source gate
+
+The [global joint-index composition](../../02_REGISTRY/research/A4D_GLOBAL_JOINT_INDEX_AND_GR_RIGIDITY_2026_10_22.md) strengthens the owned field-source consumer to simultaneous field and independent-preparation stationarity. If the actual preparation manifold M is compact without boundary, chi(M) is nonzero, and the COMPLETE source has no zero on the field boundary during a comparison from the existing seed to the unchanged full endpoint, its joint index is d*chi(M) != 0. Internal folds, an indefinite field Hessian and preparation derivatives of arbitrary size are allowed. An actual additional field-source bound <=1e-22 on the entire boundary would give the explicit sufficient margin >1.85506724799e-21 on the existing radius-1e-20 cube; that bound is conditional and the actual M and residual have not been certified.
+
+Consume this theorem on the SAME admitted execution, retaining every independent input/clock/oldRIGHT source or a justified Poisson/Fredholm elimination with its reaction. This global existence certificate feeds uniform physical compactness, normalized-source consistency and the already owned Golden rigidity theorem; it does not replace their hypotheses. The new exact arithmetic/control packet preserves the original root receipt, claims no fresh physical joint root or larger-cube nonflat certificate, and keeps GR_closed=false. No new task or physical action is introduced.
+
 ## Strategic synthesis continuation — 2026-10-17
 
 ### 22 October: consume the complete quantum source on the actual stopped native tape
