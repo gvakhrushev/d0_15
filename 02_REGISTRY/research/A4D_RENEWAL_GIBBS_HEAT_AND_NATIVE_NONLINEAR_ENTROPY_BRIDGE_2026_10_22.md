@@ -362,3 +362,39 @@ Golden READY/oldRIGHT tape, and whether the physically selected
 controller and active projector implement (14). If any of those maps
 fail, this exact mathematical closure is NOT the physical D0 closure.
 \`GR_closed=false\`.
+
+
+## 8. The actual native NONMATCH TRANSFER is the missing spectral generator — an operator identity, not merely an entropy trick
+
+The positive \(q_a\) above are real native Born probabilities of the COMPLETE paid N1 status. Conditional on the *already actually measured* first status \(a\), the TRUE one-more-trial nonmatch probability is \(1-q_a\). Hence on the exact orthogonal three-status pointer basis the stopped-history survival kernel is the concrete positive contraction
+
+\[
+ \boxed{T_{\rm miss}=\operatorname{diag}(1-q_a),\quad
+ B_{\rm match}=I-T_{\rm miss}
+              =\operatorname{diag}(q_a),\quad
+ 0<B_{\rm match}<I.}                                      \tag{22}
+\]
+
+It is not an external probability table or a free Einstein density. The complete positive stopped tape determines every power
+\(T_{\rm miss}^{n}\) through its honest unmatched-path probabilities.
+The SAME harmonic waiting statistic from (3) is exactly the
+**noncommutative functional-calculus log** of this genuine diagonal
+survival transfer:
+
+\[
+ \boxed{
+ M_{\rm renew}=
+   \sum_{n=1}^\infty\frac{T_{\rm miss}^{n}}n
+  =-\ln(I-T_{\rm miss})
+  =-\ln B_{\rm match},\quad
+ \Delta_{\rm renew}
+ =\beta_B^{-1}(M_{\rm renew}-\lambda_{\min}(M_{\rm renew})I).
+ }                                                            \tag{23}
+\]
+
+The series converges in operator norm at every genuine finite positive report chart because \(\|T_{\rm miss}\|<1\). The positive selfadjoint logarithm is UNIQUE: \(\exp(-M_{\rm renew})=B_{\rm match}\). This is precisely the same **log-of-native-positive-survival** operator type as the previous D0/v8 \(\Lambda=-(1/\alpha)\log B\), now with \(B_{\rm match}\) sourced by the ORIGINAL three-status paid reporter instead of a freely prescribed thermal table. It recovers every nonuniform branch and its full field derivative at once. The retained waiting tape, not a guessed value of \(\operatorname{Info}_\omega\), supplies the logarithm.
+
+**Two unavoidable distinct types:** \(T_{\rm miss}\) is a genuine *substochastic classical conditional history transfer*, whereas the Book03 \(F_N=P_NU_N^\dagger(I-P_N)U_NP_N\) is a *positive complementary return on its physically selected active Hilbert sector*. They are NOT proved equal just because both are positive contractions. In particular the compulsory Book feedback fugacity is \(\zeta=2^{-20}\), and the log in its action is \(-\log\det(I-\zeta F_N)\). Replacing it by \(-\log(I-T_{\rm miss})\), which corresponds to an effective unit factor rather than the genuine small fugacity, would be illicit. The candidate \(\Delta_{\rm renew}\) instead uses the **thermal generator** route; it must be shown source-equivalent to the selected Book03 Hodge heat and same-execution energy term.
+
+The explicit finite \(K=10^8\) root consequence is no longer only an asymptotic IFT claim: see
+\`A4D_EXPLICIT_K100M_FINITE_RENEWAL_HJR_FULL42_ROOT_2026_10_22.md\`, which uses the pre-existing **rigorously interval-certified original 42-root** and the QUADRATIC relative-entropy truncation error (not a fitted coefficient) to enclose a NEW exact configured finite-K 42-root in the SAME radius-\(10^{-30}\) cube. The original Book heat/Info/active-projector selection remains unproved; \`GR_closed=false\`.
