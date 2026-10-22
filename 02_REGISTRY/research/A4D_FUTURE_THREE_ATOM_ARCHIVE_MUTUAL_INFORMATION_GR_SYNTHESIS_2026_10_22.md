@@ -70,7 +70,7 @@ I_\varphi(Z;B\mid R)
 \]
 Proof: first use (3), where the fine native prefix/reference factors cancel ONLY inside the likelihood ratio, yielding (4). Then (5)–(6) give the coarsened value; subtract, and the linear \(1+\bar r=\sum_z w_z(1+r_z)\) costs cancel algebraically. The last identity is the standard finite Bernoulli KL chain expansion with all source terms. Jensen/strict concavity gives equality iff every \(r_z=\bar r\) on its positive site support.
 
-**ALL native first and higher jets**, including moving site weights when an admitted chart supplies them, follow by differentiating the identity of finite functions; on the original fixed-count READY source chart:
+**ALL native first and higher jets on the original fixed-count READY chart** follow by differentiating the exact identity of finite functions, retaining the true source of every \(r_z\). The original address reference and prefix probabilities do NOT move in this statement; on that chart:
 \[
 \boxed{
 D_v S_{\rm fine}
@@ -86,6 +86,20 @@ D_v I_\varphi
 At the primary common-null family ALL \(r_z=r_*\), so \(I_\varphi=0\) AND its first derivative is zero for arbitrary original independent \(16+24+2\) variations. Therefore the established three-atom common-null source equivalence is mathematically natural. Away from that family the archived term is generally nonzero and exactly restores what averaging loses. No active Book \(-\log\det\) is asserted equal to the coarse KL: these are DISTINCT native observables until the compulsory Book binding is proven.
 
 This is also an exact task-relative sufficiency statement: grouping 72,441 fine labels by \((\mathrm{READY},\mathrm{site},b)\) gives \(1+2\cdot256=513\) labelled categories whose KL against the original Golden code reference equals the full 72,441-label KL, because conditional fine prefix laws are identical under P and μ once site & b are fixed. The three-atom controller is cheaper only because it does **not** forget the other data: the full archived conditional source is explicitly carried by (8).
+
+
+### When REAL readiness/site address probabilities move
+
+Equations (7)–(10) are exact for the original **fixed** F/R prefix/address law with fixed native \(a\) and \(w_z=n_z/N\). An arbitrary separately driven reporter/factory may make \(a=a(y)\) and the ACTUAL conditional site law \(w_y(z)\) move, while the underlying ORIGINAL code reference \(\mu^0\) stays fixed. Then one may not silently make the reference \(\mu\) move with the data. For an unchanged fine-prefix conditional kernel, write its reference masses \(\mu^0_U=1-a_0\), \(\mu^0_{zb}=a_0w^0_z \mu_B(b)\) and its actual masses \(P_U=1-a_y\), \(P_{zb}=a_yw_y(z)\mathrm{Bern}(r_z)_b\). The exact universal KL chain gives
+\[
+\boxed{D_\varphi(P_{\rm fine}(y)\Vert\mu^0_{\rm fine})
+=D_\varphi(q_y\Vert\mu_A^0)
++a_yD_\varphi(w_y\Vert w^0)
++a_yI_{\varphi,y}(Z;B\mid R).}\tag{8a}
+\]
+If field evolution ALSO changes the conditional complete fine histories within a coarse \((z,b)\) atom, add their genuinely positive expected conditional relative-entropy term to the right-hand side. This is an EXACT anti-freezing rule for moving readiness/PF/address/clock preparers: the third term in (8a) is NOT always only mutual information. The original fixed-prefix source (7) is recovered because \(a_y=a_0,w_y=w^0\).
+
+This matters physically: a price/source-preserving Book03/Golden bridge may discard NEITHER the conditional address KL nor the further fine-history information if those records remain distinguishable under actual future tests. The conditional-proper-score criterion below by itself does not pay this source.
 
 ## 2. The exact off-null all42 root gets a SOURCE cancellation that is NOT fitted
 
