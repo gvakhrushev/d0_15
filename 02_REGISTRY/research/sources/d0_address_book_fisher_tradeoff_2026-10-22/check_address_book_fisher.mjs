@@ -90,6 +90,28 @@ function book(census,r){
        'entire original cut heat AND J site-vs-global native response signs');
  const concentration=census.sq/(F*F);
  const ratio=da/d3,feedbackRatio=dJaddr/dJ3;
+ // A genuine ORIGINAL PF-unequal two-site report tangent is COMPLETELY
+ // invisible to all 3 global outcomes but visible to the same complete
+ // addressed Hodge+Book return. This is not a physical 42-field writer claim.
+ let high=0,low=0;
+ for(let i=1;i<W;i++){
+   if(w[i]>w[high])high=i;
+   if(w[i]<w[low])low=i;
+ }
+ check(w[high]>w[low]&&w[low]>0,'real original F/R two sites have UNEQUAL but positive weights');
+ const dFn=weight=>c(a*weight*r,Zaddr)-c(a*weight*(1-r),Zaddr);
+ const dFnPrime=weight=>r*cp(a*weight*r,Zaddr)
+                           -(1-r)*cp(a*weight*(1-r),Zaddr);
+ check(dFnPrime(w[low])>0&&dFnPrime(w[high])>0,
+  'entire ORIGINAL coupled Hodge+Book site local contrast increasing with site mass');
+ const globalBlind=w[high]*(1/w[high])+w[low]*(-1/w[low]);
+ approx(globalBlind,0,3e-13,'actual extreme pair tangent invisible to EVERY global three-event probability');
+ const addressedWitness=a*(dFn(w[high])-dFn(w[low]));
+ check(addressedWitness>0,'FULL real F/R paired-cut Hodge+Book sees genuine PF-hidden local direction');
+ const atHalf=(w0)=>a*w0*(c(a*w0*.5,Zaddr)-c(a*w0*(1-.5),Zaddr));
+ approx(atHalf(w[high]),0,1e-14,'unique addressed report source vanishes at local exact half report');
+ check(a*w[high]*(c(a*w[high]*.75,Zaddr)-c(a*w[high]*.25,Zaddr))<0,
+   'whole paired-cut Hodge+Book report gradient changes sign across half');
  const chi=(1-eta)*(1-2*zeta)*(1-zeta)**2;
  check(chi>chi0&&chi<1,'uniform full Hodge heat source comparison constant');
  check(ratio>chi*concentration&&ratio<concentration/chi,
@@ -137,6 +159,8 @@ function book(census,r){
   feedbackRatio,Z3,Zaddr,eta,chi,
   fullMasterGap:fullAddr-full3,
   FisherGlobalRank:1,FisherAddrRank:W,
+  globalThreeBlindAddressBookWitness:addressedWitness,
+  unequalExtremeSites:[census.min,census.max],
   FisherSiteMin:Math.min(...FisherSite),FisherSiteMax:Math.max(...FisherSite),
   FisherGlobalEigenvalue:FisherGlobalEig,
   HGoldenSlope,HessOpUpper,HessMinLower,
@@ -175,6 +199,9 @@ for(const L of [4,5,8,16,32,64,256,1024]){
  const varMax=81*h**6;
  check(9*h**3<1,'strict every original native site weight positive');
  const ratioMax=(1+varMax)/(chi0*W),ratioMin=chi0/W;
+ const leakUpper=9*.35**2*(8*oldRIGHT*zeta/(1-zeta)**2)/L**7;
+ check(leakUpper<.0012/L**7,
+       'uniform native PF on hidden global source tangents has O(L^-7) original Book leakage');
  check(ratioMin>0&&ratioMax<1.03/W,
        'UNIFORM derived original PF refinement HODGE+Book source ∼1/L^4');
  const kmax=8*oldRIGHT*zeta/(1-zeta)**2+
