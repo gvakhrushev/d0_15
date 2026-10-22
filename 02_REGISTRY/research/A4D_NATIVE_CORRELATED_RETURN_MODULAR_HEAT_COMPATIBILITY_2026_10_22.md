@@ -527,3 +527,235 @@ unchanged. At 80 comparisons it yields
 in full natural-log units. This is a real quantitative
 record-correlation information deficit, not an
 alternative native geometry.
+
+
+## 7. BREAKTHROUGH: STRICT POSITIVE predictive-Info lower bound on the ORIGINAL full128 without ANY 128²-census
+
+The quantum predictive-information theorem (26) became genuinely useful
+for the ORIGINAL native full128 rather than only the rational
+two-Kraus negative control. We can PROVE
+\(\mathcal I_{\rm pred}>0\) and a nonzero proper-Lorentz
+memory-correlation derivative directly from the **actual native
+blank Kraus** \(K_{00}=B=I-t\Delta\), the original invariant
+\(\rho_*=\Delta^{-1}/Z\), and the OLD exact quadratic
+spectral polynomial, with **NO unpriced reset, no
+full128 pair enumeration, no invented Markov assumption
+or alternative detector**.
+
+Here \(\Delta=A^2>0\) is precisely the ORIGINAL full16
+Fourier native CAR operator in \`d0_native_preparation_closure\`,
+\(t=2p^2\), \(p=\varphi^{-1}\).
+On the actual strictly positive boost chart
+\(r=\tanh(\theta/2)\) the previously owned **EXACT**
+native \(\Delta\) minimal polynomial has
+
+\[
+ \boxed{\begin{aligned}
+ \Delta^2-2\mu(r)\Delta+d(r)I&=0,\\
+ \mu(r)&=\frac{9(5r^4+r^3-8r^2-r+5)}
+                  {3200(1-r^2)^2},\\
+ d(r)&=\frac{81(23r^4+6r^3-32r^2-10r+25)}
+                  {10240000(1-r^2)^2}.
+ \end{aligned}}                                         \tag{30}
+\]
+
+This is the **unchanged actual native proof owner** §7, not a
+fitted spectral density. At the already verified real native
+boost \(r=1/9\), put \(h=d/\mu\) and \(v=\mu(\mu-h)>0\),
+with eigenvalues \(\lambda_\pm=\mu\pm\sqrt v\)
+each of multiplicity eight.
+All original RIGHT128 modes are untouched spectators
+in the Kraus word: no false 128 entropy/rank factor
+appears in normalized probabilities.
+
+Define the TRUE unmarked stationary original output bit
+"blank \(00\)" on one round. Its unconditional marginal and
+two-successive-blank joint probability are EXACTLY
+
+\[
+ q_{\varnothing}
+ =\operatorname{Tr}(\rho_* B^2),\qquad
+ P_{\varnothing\varnothing}
+ =\operatorname{Tr}(\rho_* B^4).
+\]
+
+Because \(B\) and the actual \(\rho_*\) are both spectral
+functions of the SAME native \(\Delta\), their
+stationary binary covariance is a positive
+native spectral variance:
+
+\[
+ \boxed{\begin{aligned}
+ \delta_{\varnothing\varnothing}
+ &=P_{\varnothing\varnothing}-q_\varnothing^2
+   =\operatorname{Var}_{\rho_*}(B^2)\\
+ &=4t^2\,h(\mu-h)\,(1-t\mu)^2>0.
+ \end{aligned}}                                         \tag{31}
+\]
+
+The second equality follows by inserting
+\(B_\pm=1-t(\mu\pm\sqrt v)\) with exactly normalized
+native invariant eigenspace weights
+\(w_\pm=(\mu\mp\sqrt v)/(2\mu)\).
+No other original Kraus label is needed; the full
+128-outcome instrument remains exactly complete.
+
+**Exact rational/native Golden lower bound.**
+At \(r=1/9\), the owned
+\(\mu=141489/10240000\), \(h=69399/5030720\)
+obey the following STRICT rational inequalities:
+
+\[
+ t>0.76,\quad t<0.7688,\quad
+ h>0.013795,\quad\mu-h>0.00002224,\quad
+ 1-t\mu>0.989.
+\]
+
+The bound on \(t=2p^2\) follows from the exact
+polynomial \(p^2+p-1=0\) with
+\(0.617<p<0.620\). Inserting these
+pure rational estimates into (31) gives
+
+\[
+ \boxed{
+ \delta_{\varnothing\varnothing}>
+ 4(0.76)^2(0.013795)(0.00002224)(0.989)^2
+ >6.9\cdot10^{-7}.}                                    \tag{32}
+\]
+
+No transcendental numerical approximation is used for (32).
+The direct spectral value is
+\(\delta_{\varnothing\varnothing}\approx
+7.01208735774\cdot10^{-7}\).
+
+**A completely native STRICT INFORMATION wall.**
+Group each original recorded fine label into only
+\(\{\varnothing,\ne\varnothing\}\) for the following
+lower-bound TEST, without changing the stopped task
+or erasing any fine label from its full record.
+The genuine two-round stationary binary
+joint distribution has marginals \(q=q_\varnothing\)
+at both times and entries
+
+\[
+ \begin{pmatrix}
+ q^2+\delta&q(1-q)-\delta\\
+ q(1-q)-\delta&(1-q)^2+\delta
+ \end{pmatrix}.                                       \tag{33}
+\]
+
+Its total variation from the product law is exactly
+\(2\delta\). Data processing of KL and Pinsker's
+inequality for natural logarithms therefore give
+
+\[
+ \boxed{
+ \mathcal I_{\rm pred}^{\mathrm{native}}
+ \ge I_{\mathrm{fine128}}(Y_0;Y_1)
+ \ge I_{\rm binary}(\varnothing_0;\varnothing_1)
+ \ge8\delta_{\varnothing\varnothing}^{\,2}
+ >3.8088\cdot10^{-12}.}                                \tag{34}
+\]
+
+This is a **strict positivity proof for the ACTUAL
+original full128 generated process**, not a probability
+table invented to demonstrate an abstract no-go.
+The two-bit coarse MI is numerically
+\(\approx5.83214791339\cdot10^{-10}\);
+the final rational inequality (34), not that decimal,
+is the claimed rigorous native bound.
+The previous exact native label-support owner counts
+64 actual positive labels on this nonzero boost
+chart (not 128), and the unique faithful native
+preparation/transience owner applies there.
+Consequently this named full128 fixture obeys
+the ACTUAL strict measured-pointer-entropy inequality
+
+\[
+ \boxed{
+ H_{\rm nat}(\Gamma_\infty)
+ =65H_{\rm nat}(q_{\rm fine})
+   -\mathcal I_{\rm pred}
+ <65H_{\rm nat}(q_{\rm fine})
+   -3.8088\cdot10^{-12}.}                              \tag{35}
+\]
+
+The factor 65 is fixed by the ACTUAL 64-positive-label
+support and the genuine stationary return theorem,
+not a free outcome-census or iid-law guess.
+Every original dark label is retained in the finite
+instrument and every real oldRIGHT mode remains
+in the full state. The inequality is for the
+complete **measured pointer** entropy on a named
+stationary native input, not the entire Book03 Info.
+
+### Not merely a positive covariance: its original link first jet is nonzero
+
+The exact prior native functions \(\mu(r),d(r)\)
+in (30) determine the proper-boost field derivative
+of the observed memory covariance WITHOUT
+finite differences or freezing preparation.
+Let \(h=d/\mu,\ G=\mu-h,\ A=1-t\mu\).
+At \(r=1/9\), exact rational differentiation of
+(30) gives
+
+\[
+ \mu'=-\frac{328779}{204800000}<0,\qquad
+ (hG)'=
+ \frac{1470321323030360979}
+      {254636369534058496000000}>0.
+\]
+
+Since \(t>0,\ A>0,\ hG>0\), direct
+differentiation of (31) yields the STRICT
+native proper-link source
+
+\[
+ \boxed{
+ \partial_r\delta_{\varnothing\varnothing}
+ =4t^2[A^2(hG)'-2tA(hG)\mu']>0.}                        \tag{36}
+\]
+
+Its genuine native value is approximately
+\(1.31977942720\cdot10^{-5}\) per original
+\(r=\tanh(\theta/2)\) tangent; the positive
+sign follows only from exact rational inequalities.
+This proves that the **actual first two registered
+full128 outcomes carry a nonzero Lorentz-sensitive
+memory-correlation observable even at a prepared
+stationary DATA state**. It does not by itself prove
+\(D_r\mathcal I_{\rm pred}\ne0\) at precisely
+\(r=1/9\); that requires the full source of all
+native predictive labels, and is therefore
+explicitly retained as the next direct computation.
+In particular a field-independent arbitrary
+additive "Info correction" cannot reproduce the
+observed nonconstant two-step correlations on
+the whole native boost chart.
+
+**Consumer:** combine (34) and (36) with the
+EXACT source identity (29), the already-owned
+native initial/preparation adjoints, actual
+Book03 \(P_N,F_N,\Delta_N(V)\), branchwise
+Info/work and clock. The old native first-match
+\((m+1)\)-scaled Shannon shortcut is now
+mathematically EXCLUDED on this real full128
+carrier, not only on a toy non-Markov process.
+Source-normalized Einstein/CAR transport still
+requires the actual **entire**
+\(D_{42}\mathcal I_{\rm pred}\) and the
+physical Book/cut selection, not a substitution
+of the single blank covariance for full Info.
+\`GR_closed=false\`.
+
+Companion strictly rational/Gold-field checker:
+\`sources/d0_correlated_modular_bridge_2026-10-22/check_original_full128_predictive_lower_bound.mjs\`.
+It independently re-derives the old exact rational
+\(\mu,h,\mu'\) and positive \((hG)'\)
+from the original published formulas (30); proves
+(32)--(34) using BigInt rationals, and checks the
+native covariance and derivative on the exact
+two-eigenspace 16-dimensional representation.
+This is a narrow intrinsic native source theorem;
+no new full128/oldRIGHT 16,384-history
+or original 42-Euler suite is claimed rerun.
