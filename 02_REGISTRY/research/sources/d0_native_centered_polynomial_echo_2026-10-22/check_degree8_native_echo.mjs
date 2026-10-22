@@ -28,7 +28,8 @@ const eq=(x,y)=>x.a*y.b===y.a*x.b;
 // strict inequalities above always use cross-multiplied ORIGINAL integers.
 function num(x){if(x.a===0n)return 0;
  const neg=x.a<0n,na=(neg?-x.a:x.a).toString(),nb=x.b.toString();
- const v=Number(na.slice(0,16))/Number(nb.slice(0,16)) *10**(na.length-nb.length);
+ const va=na.slice(0,16),vb=nb.slice(0,16);
+ const v=Number(va)/Number(vb) *10**((na.length-va.length)-(nb.length-vb.length));
  return neg?-v:v;
 }
 function choose(n,k){n=BigInt(n);k=BigInt(k);let a=1n;for(let j=1n;j<=k;j++)a=a*(n-k+j)/j;return a}
