@@ -1055,3 +1055,20 @@ On the true regular monotone interval, fix a single current J and the two origin
 The original false assumption that all source-bearing material gradients remain stationary when q=0 is now replaced by an ACTUAL solve. On the genuine original cost24/L8 4D Golden site counts and same sigma-minus full N1 native GoldenMaster, the retained two-field 8×8 time/space slice with **both** scalar Dirichlet collars fixed has a joint 72-interior-variable numerical solution of its actual nonlinear Cost−Info Euler equations. Max source before7.70e-5, after2.60e-16; independently evaluated original price secants check the gradient; true generated q≠0 and numerical Jacobian min singular value.870>0. Source: [PF C^r and joint scalar theorem](A4D_NATIVE_GOLDEN_PF_C2_AND_MATERIAL_FLUX_2026_10_21.md#6-genuine-two-scalar-simultaneous-finite-euler-solve--same-real-n24l8-pf-and-same-full-nonlinear-n1-price), checker sources/d0_native_golden_pf_material_flux_2026-10-21/check_native_n1_two_scalar_2d.py. This is NOT an interval proof, original 4D complete all42 root or selected Book03 price.
 
 Together with the exact all-r native Golden PF regularity n_r(L)=O_r(log L), this removes the old positivity-only PF-jump continuum objection on the true deep history tower and shows that at least the 2-scalar finite source system is jointly solvable numerically without fitting matter. The genuine remaining geometry step is an all-site coframe16+proper-link24 covariant temporal-slab source solve with actual collar/gauge and the changed true q, plus physical HJR/Book03 field writer/observer/oldRIGHT/clock/selection. Do not reintroduce a fake smooth PF, skip a transverse scalar, or call this a complete finite GR root.
+
+
+### 22 October: consume native-block full128 transport; exclude the exact stopped-work escape
+
+The [native-block/whole paired-heat realization](A4D_NATIVE_BLOCK_REALIZATION_AND_COMPLETE_HEAT_TRANSPORT_2026_10_22.md)
+supplies the original minimal weld inside its old register with the actual
+1984-mode complement. [Compiler §4a](A4D_ORIGINAL_FULL128_SINGLE_BOOST_HERALDED_JULIA_AND_GALOIS_COMPILER_2026_10_22.md#4a-the-original-labelled-instrument-also-excludes-unbounded-stopped-fixed-palette-work)
+strengthens the existing Galois boundary to original label2 and arbitrary
+countable finite-success fixed-palette programmes, even unbounded stopping:
+a positive rank-one CP decomposition cannot manufacture its non-field
+projective ratio. [Parent §8](A4D_BOOK_BOOLEAN_TO_ORIGINAL_FULL128_CAUSAL_WELD_GATE_2026_10_22.md#8-native-block-transport-and-stopped-work-exclusion-select-the-remaining-realization-route)
+consumes both results and rules out enlarging rational/Golden work as an
+exact causal substitute for the missing native source-bearing operation.
+A different source-equivalent process retains its own complete-price and
+future-test transport. Actual Book03 medium/observer map, valuation,
+independent apparatus rows and gravity/refinement pullback remain open;
+GR_closed=false. No new geometry programme or physical selection is inferred.

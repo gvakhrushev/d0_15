@@ -267,6 +267,125 @@ This is **not** a no-go for approximate phase synthesis at a fixed field point, 
 
 The exact BigInt Gaussian-integer checker of all seven positive LCU Julia relations, seven 32×32 unitary involutions, \(\operatorname{Tr}L\) algebra and 12071 prime/Galois obstructions produced **33,628 PASS** in a V8-transcribed JS run; no old full128 spectrum/external field action was retuned.
 
+## 4a. The ORIGINAL labelled instrument also excludes unbounded stopped fixed-palette work
+
+This strengthens §4 by applying its owned number-field obstruction to
+the ORIGINAL conditional process, rather than a chosen Julia completion.
+The changed question is whether nonminimal rational dilation, extra paid
+memory or variable stopping can avoid its genuinely sourced operand.
+This excludes that realization route, not D0, approximation or a different
+source-equivalent interpretation.
+
+**Exact native witness.** Keep the original vacuum and one-particle
+CAR vectors \(|b_0\rangle=|{\tt 0001}\rangle\),
+\(|b_1\rangle=|{\tt 0010}\rangle\): bit values 1 and 2 in the unchanged
+constructor, not relabelled Walsh outcomes. At \(\theta=\log(5/4)\),
+put \(t=\sqrt{24142}/200\). The original Walsh root row restricts to
+
+\[
+ N_1|_{\{b_0,b_1\}}=
+ \frac1{16}\left[(t-1)
+ \frac{\begin{pmatrix}1681&369\\369&81\end{pmatrix}}{1762}
+ +\frac15|b_0\rangle\langle b_0|\right].                 \tag{14a}
+\]
+
+Indeed \((c,s)=(41/40,9/40)\), and the boosted right defect has
+eigenvalue \(t\) on the normalized vector proportional to \((c,s)\). The left defect
+equals its unboosted value on this plane; all other unboosted
+Walsh-root differences cancel. The corresponding two components of
+\(A|{\rm vac}\rangle=N_0|{\rm vac}\rangle\) are both
+\(\nu(i-1)/16\), with no coupling from the other one-particle
+components into this plane. Thus the ACTUAL label
+\(K_2=-2p^2N_1^\dagger A\) has two nonzero entries with ratio
+
+\[
+ R=\frac{(K_2)_{b_0,{\rm vac}}}{(K_2)_{b_1,{\rm vac}}}
+   =\frac{41}{9}+\frac{881}{1125(t-1)}
+   =\frac{209-160t}{81}\notin\mathbb K.                 \tag{14b}
+\]
+
+The exact simplification uses \(t^2=12071/20000\). If
+\(R\in\mathbb K\), then \(t=(209-81R)/160\in\mathbb K\), contradicting
+the OWNED (13). The obstruction is already in one original output.
+
+**Stopped-programme lemma.** Allow finite computational ancillas at
+each finite stage, coherent fixed-palette circuits, computational
+readouts, classical feedforward, retained work and coarse success.
+Every ACTUAL resolved primitive Kraus matrix, including measurements
+and decoder, must have entries in \(\mathbb K\). Arbitrary real-basis
+measurements are excluded: their effects having entries in
+\(\mathbb K\) would not alone establish this Kraus invariant.
+
+A successful output is announced after a finite transcript. No
+uniform horizon, finite expected time or eventual-halting assumption
+is required. Resolve all successful finite transcripts and final
+traced work basis into countably many unnormalized \(L_\gamma\),
+each with entries in \(\mathbb K\). If their coarse operation were
+any nonzero uniform heralded multiple of original label 2, then
+
+\[
+ \sum_\gamma |L_\gamma\rangle\!\rangle
+                  \langle\!\langle L_\gamma|
+       =a\,|K_2\rangle\!\rangle\langle\!\langle K_2|,
+       \qquad a>0.                                    \tag{14c}
+\]
+
+For every vector \(v\perp|K_2\rangle\!\rangle\), positivity gives
+\(0=\sum_\gamma|\langle v,L_\gamma\rangle\!\rangle|^2\).
+Every nonzero \(L_\gamma\) is a scalar multiple of \(K_2\). Its
+displayed entry ratio would equal \(R\), while a ratio of nonzero
+\(\mathbb K\)-entries belongs to \(\mathbb K\): contradiction.
+Extra paid flags, attenuation, tracing work, scalar conditional
+normalization and classical stopping do not change this argument.
+Finite coherent recombination is already part of \(L_\gamma\).
+
+Even vacuum-input output preservation suffices.
+\(K_2|{\rm vac}\rangle\) is odd and pure. The owned
+[canonical future algebra](A4D_ORIGINAL_FULL128_THREE_TICK_CANONICAL_FUTURE_EVEN_ALGEBRA_2026_10_22.md)
+is \(M_8\oplus M_8\): its parity effect excludes even mass and its
+full odd block fixes that pure conditional state. Every positive
+refined vacuum output must then lie on the same forbidden ray.
+This requires the SAME CAR output and original future tests;
+a different encoding needs its own transport theorem.
+
+**Parent substitution and route decision.** The
+[native Julia/Walsh realization and whole paired-heat transport](A4D_NATIVE_BLOCK_REALIZATION_AND_COMPLETE_HEAT_TRANSPORT_2026_10_22.md)
+at input aa559595e7b800af8217c58885a4710c16747444 already realizes the
+minimal Halmos/63-row factorization inside the old register, retaining
+all original labels/jets and the derived 1984-mode identity complement.
+Consume this positive operator result. It does not make its moving
+Julia resource a fixed-palette operation. Equations (14b)--(14c)
+exclude replacing that resource by larger fixed-palette rational work
+while keeping the original causal instrument. A new completion is
+not needed to decide this.
+
+A root-free replacement may retain \(K_0\), hence PRE feedback
+\(F=I-K_0^\dagger K_0\), while changing the other labelled CP outputs.
+It cannot thereby inherit the original fine entropy, no-reset process
+or native65 full price. A different programme with the same total
+Euler source is not excluded, but requires that actual complete-source
+identity, including its flags, preparation, clocks and work.
+Unbounded fair-extractor algorithms can produce scalar probabilities
+outside a finite algebraic probability field; they do not create this
+forbidden pure projective output.
+
+The remaining ORIGINAL-instrument realization route must obtain a
+genuinely source-bearing operation or input from the native physical
+process, with its price and independent equations. Approximation and
+unbounded coherent nonhalting limits are outside this exact
+finite-success theorem and retain their source-convergence obligations.
+Do not repeat exact fixed-palette full128 searches by increasing work
+or the stopping horizon. Book03 medium/observer identification, full
+valuation, actual 42-field pullback and refinement remain open;
+GR_closed=false.
+
+The smallest diagnostic used the unchanged native excerpt (source blob
+ee8de4635d24c668949ac9a0186616ab7d59f2ed): at the original fixture
+the direct \(K_2[1,0]/K_2[2,0]\) is 1.0456596447494142, differing from
+(14b) by less than \(2.3\,10^{-16}\); exact symbolic simplification
+is zero. The general conclusion is the algebraic proof, not a floating
+field test. Old compiler/prime/CAR certificates are consumed unchanged.
+
 ## 5. Book03/Einstein and paid-time synthesis: a sharp constructive boundary, not a falsely claimed gravity closure
 
 This result provides an explicit native original ARCHITECTURE, not another tuned finite model:

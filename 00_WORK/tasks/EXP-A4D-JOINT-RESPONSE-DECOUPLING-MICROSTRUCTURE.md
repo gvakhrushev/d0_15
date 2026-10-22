@@ -5267,3 +5267,47 @@ The full native65 causal ledger and original three-tick primitivity now feed the
 The GR consumer is already the published all-mesh paired-spectral nonvacuum construction, its fixed-metric midpoint recovery, and the global thermal Schur/Ward/actual-scene-source limit. Do not rerun that construction or confuse its thermal Gibbs auxiliary with native DATA. The next physical substitution is the actual admitted cut/field-Julia map and complete Book valuation on this same execution, including independent inputs, followed by the existing exact source identity or normalized source-limit estimate. No actual source bound, smooth all42 writer, physical refinement, assembly acceptance, task retirement or GR closure has been inferred. `GR_closed=false`; the original raw terminal remains open.
 
 Write paths for this checkpoint: the existing Boolean/full128 weld sections 6–7, its disjoint analytical review in the existing future-even-algebra packet, and this brief/primary-memo pointer. Validation: analytical source/scope reviews and one narrow original-matrix composition diagnostic (maximum residual below 2e-15); repository, work, agent-protocol and generated-work-view guards pass. The assembly synthesis render has an inherited manually appended scientific suffix at the input ref; rendering would delete that prior content, so it is preserved and the stale-view check is reported, not weakened. No inherited mathematical input, expected evidence, claims, task lifecycle, Lean or heavy certificate suite is changed or replayed.
+
+
+## 22 October integrator continuation: native block realization and exact stopped-programme boundary
+
+Phase: native realization / final composition, same constitutive /
+native-programme-v1 owner #334. Input aa559595e7b800af8217c58885a4710c16747444.
+Consume the new native-block full128/1984-mode heat transport rather than
+derive another completion. The changed question is whether extra rational
+work or unbounded classical stopping can remove its source-bearing operand
+while retaining the ORIGINAL fine instrument. Existing compiler §4a proves
+they cannot: original label2 has projective entry ratio outside the owned
+palette field, while any countable finite-terminal Choi decomposition of
+that pure operation must have every nonzero summand on its ray.
+
+Parent application: original Boolean/full128 weld §8 changes this exact
+realization route to deriving the native source-bearing input/operation and
+its full price/apparatus equations. A PRE-only corner match does not inherit
+native65 Cost-Info. This does not exclude approximation or a genuinely
+different fully source-equivalent process and does not select the Book cut.
+Carrier remains original CAR16/full128, fixed proper-boost r=1/9, nu=3/5,
+ordinary protected RIGHT and retained work; no altered source normalization.
+The statement is an exact operator obstruction, not an error-norm estimate.
+
+Write paths: existing compiler owner §4a, existing Boolean/full128 weld §8,
+append-only analytical review in the existing future-even-algebra packet,
+and brief/primary-memo pointers. Smallest decisive check: exact native
+two-entry ratio and positive rank-one Choi support for countably many finite
+terminal branches; one original-matrix diagnostic and symbolic simplification.
+No new task, certificate census, old heavy suite replay or physical GR
+acceptance. Book03 medium/observer map, complete valuation, actual42-field
+pullback and physical refinement remain open.
+
+
+Verification on this continuation: exact symbolic ratio simplification zero;
+the unchanged original K2 ratio agrees within 2.3e-16, and a separate direct
+original defect-block reconstruction agrees within 1.57e-17 with zero
+cross-coupling to the other single-particle states. Independent analytical
+review accepts final section hash
+3b7bc3527b87a0555369a4ca23766ab1d92bfed52211aadc05a340c07b4a541b.
+Repository/work/agent-protocol/assembly-contract/generated-work-view guards
+and whitespace check pass. No assembly input or generated assembly file is
+changed; the previously recorded inherited assembly-synthesis suffix/stale
+render is preserved rather than deleted. No heavy replay or CI result is
+claimed for this analytical extension.

@@ -115,3 +115,32 @@ their stated mathematical and conditional application scope. No unresolved
 mathematical correction was found in this revision. This is a bounded
 independent review, not an independent acceptance of physical D0→GR,
 generic recovery, raw216 or `GR_closed`.
+
+
+## Independent review of the stopped-programme extension
+
+Input: aa559595e7b800af8217c58885a4710c16747444.
+Candidate: compiler owner section 4a, through before section 5.
+Final raw UTF-8 section SHA256:
+3b7bc3527b87a0555369a4ca23766ab1d92bfed52211aadc05a340c07b4a541b
+(6,197 bytes). This reviewer did not author the candidate's derivation.
+
+The original right-defect block on the two one-particle states and equal
+vacuum components give exactly (14b); t^2-1=-9*881/20000 proves its
+simplification. The owned number-field exclusion then applies to the
+original labelled CP operation itself. Every actual resolved primitive
+measurement/decoder must have Kraus entries in K, not merely K-entry
+POVM effects. Under that condition, finite successful transcripts and
+resolved traced work give a countable positive Choi sum. A rank-one
+target forces every nonzero summand onto its forbidden projective ray.
+No bounded horizon, finite mean or eventual-halting assumption is needed.
+The vacuum-only version correctly retains the same CAR output and
+full original odd-sector future tests.
+
+Parent section 8 consumes the concurrent native block/heat construction
+and correctly excludes larger rational work or classical stopping as an
+exact causal replacement. Approximation, extra source-bearing input,
+different encodings, source-equivalent actions and nonhalting coherent
+limits are outside this conclusion. Final wording and hash were checked.
+This is analytical acceptance at the stated scope; no old certificate
+was independently replayed and no physical admission or GR closure follows.

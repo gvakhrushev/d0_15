@@ -392,3 +392,43 @@ has a nonzero genuine original source, whereas the unprepared
 all-work port cut has \(F_{\rm WIDE}=4p^3Q_\Delta\)
 and field-CONSTANT Book determinant. M1/Book03 must admit the REAL
 prepared active question to preserve this source.
+
+
+## 8. Native block transport and stopped-work exclusion select the remaining realization route
+
+At input aa559595e7b800af8217c58885a4710c16747444 the
+[native-block owner](A4D_NATIVE_BLOCK_REALIZATION_AND_COMPLETE_HEAT_TRANSPORT_2026_10_22.md)
+already realizes the minimal weld inside the original Julia/Walsh
+register. Its full paired heat retains the derived 1984-mode identity
+complement, the ordinary RIGHT trace and the real clock inventory.
+No independently executed square-root factorization is required.
+This is a consumed constructive result; it is not a proof that this
+paired Hodge is the compulsory Book03 scene operator.
+
+[The compiler owner's §4a](A4D_ORIGINAL_FULL128_SINGLE_BOOST_HERALDED_JULIA_AND_GALOIS_COMPILER_2026_10_22.md#4a-the-original-labelled-instrument-also-excludes-unbounded-stopped-fixed-palette-work)
+now applies the owned Galois obstruction to original label 2 itself.
+The non-field amplitude ratio and positivity of a rank-one Choi
+decomposition exclude ALL fixed-palette finite-success refinements,
+including unbounded classical stopping and arbitrary extra paid work.
+This closes the proposed root-free expanded-work escape for the
+SAME original conditional instrument. Matching only K0/PRE feedback
+does not transport its fine price or future states.
+
+Thus the exact original-instrument route consumes the native block
+realization and must derive its genuine source-bearing operation/input,
+complete valuation and independent apparatus equations from the actual
+process. It cannot replace that premise by more fixed-palette work.
+An alternative source-equivalent programme remains possible only through
+a proved complete-source and future-observation transport, with its
+actual new records, clocks and preparation charged.
+
+The physical projection map is still substantive. Book06's final
+two-split rule distinguishes observer and medium projections until an
+explicit functor identifies them. Unique stationary DATA or a maximal
+future-observation algebra does not supply that functor. The next
+application is one actual native-process map carrying the admitted
+field operation, medium cut/scene operator and full price into §7's
+already proved GR consumer, retaining every upstream reaction and the
+consumer's exact gain/norm. It is not another geometric root search,
+an assumed free-field tangent or a fitted cancellation. Physical
+D0-to-GR selection and refinement remain open; GR_closed=false.
