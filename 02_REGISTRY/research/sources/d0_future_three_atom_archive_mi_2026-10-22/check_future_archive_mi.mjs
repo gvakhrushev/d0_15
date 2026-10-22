@@ -75,6 +75,15 @@ function run(){
  test(Math.abs(Dcoarse+Darchive)<1e-19,"archive exactly cancels spurious mean source");
  test(Math.abs(Darchive)>ready*13/.49*2.68978050581795731e-14,
    "original certified lower wall for coarse/archived source");
+  // ANY three-atom-only scalar action misses a mean-preserving, off-null site direction.
+  const hostile=ALPHABET([4,6],[.2,.7],ready,ready,null);
+  const zeroMean=.4*.6+.6*(-.4);
+  const Jfull=ready*(.4*(1-Hp(.2))*.6+.6*(1-Hp(.7))*(-.4));
+  const Jarchive=ready*(-.4*Hp(.2)*.6-.6*Hp(.7)*(-.4));
+  test(Math.abs(zeroMean)<1e-14,"coarse three-atom probabilities have ZERO field variation");
+  test(Math.abs(Jfull)>.38,"native full fine source remains NONZERO");
+  test(Math.abs(Jfull-Jarchive)<1e-12,"archive MI exactly carries missing kernel source");
+
  const q=[.2,.3,.5],r=[.22,.28,.5];
  test(KL(q,r)>0,"three-outcome truthful logarithmic regret positive");
  const binaryBrier=(truth,guess)=>truth*(1-guess)**2+(1-truth)*guess**2;
