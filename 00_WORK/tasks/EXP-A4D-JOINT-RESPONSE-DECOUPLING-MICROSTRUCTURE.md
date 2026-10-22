@@ -5367,3 +5367,49 @@ Repository, work, agent-protocol, assembly-contract, generated-work-view
 and whitespace guards pass. The prior inherited assembly-synthesis
 suffix/stale render is preserved; its inputs/generated files are unchanged.
 No Book, CORE, claim, lifecycle or assembly acceptance status is promoted.
+
+
+## 22 October physical closure boundary of the native bootstrap
+
+Input f1d9b43a9cbc9063e974d0a5c8e6b0d6cf0d1a8a, preserving the published
+whole-history C1 theorem at a9f4954d. This is a definition/application
+intake, not a new scientific result, no-go for all D0, or task retirement.
+
+Book03 sections03.8/03.25 already state finite stack/bootstrap stationarity.
+That native law may be consumed directly once its actual operators and
+admissible variations are supplied; a separate derivation from a chosen
+history entropy is not a prerequisite for stating it. Its full Cost-Info
+interpretation remains an independent same-execution requirement when used.
+
+The unclosed physical input is the actual scene/execution realization:
+complete initial state and retained record -> admitted next scene/operator
+data (pi,D,P,U), their actual field/control tangent image, full price and
+independent apparatus equations. A deterministic unique microscopic update
+is not required: a native stochastic relation or class with a proved common
+physical source image can suffice. The present named contracts do not
+supply this weaker bridge either.
+
+This boundary was checked in the actual strongest named owners:
+- Book03 blob ecdd31abb52c94e9f2a157a80c7c49a6f5ac31aa defines the
+  bootstrap functional; its formula does not construct these arguments.
+- ProspectiveExecution.lean supplies step/allowed/price as structure fields.
+- M1ClassAdmissibility.lean checks catalogue independence and expressly
+  permits many candidates. M1Predicate.lean requires constraint satisfaction
+  and uniqueness as proof fields for M1Forced; it does not construct the
+  unknown scene constraint.
+- Book06 generative-dynamics/Feshbach owners start with supplied matrix
+  blocks; ArchivePathTerm in FeshbachSchurTimeDelayOwner.lean contains k,
+  from which tickIndex is read. This is genuine effective memory dynamics,
+  not a construction of the next source-bearing scene.
+- The new recorded cyclic-incidence heat result at f1d9b43a gives a stated
+  K(9,11,13) x C_m realization and C1/C2 winding bounds. Its sections0/8
+  expressly retain graph/cut/physical-variation selection as premises.
+
+The same physical realization input remained unclosed through the prior
+two-cut, stopped-work and C1-history continuations. Further conditional
+source estimates alone cannot fill it. Resume the FULL physical closure
+application when a native construction/constraint for that input is supplied
+or derived; independent research on explicitly stated hypotheses remains
+legitimate. Do not infer unprovability of every D0 interpretation, or
+replace this missing map by the desired Einstein equation. Existing exact
+GR consumers, physical assumptions and GR_closed=false are preserved.

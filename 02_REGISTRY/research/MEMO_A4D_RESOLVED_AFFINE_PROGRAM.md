@@ -55,6 +55,17 @@ Failure of a sufficient local budget does not rule out other controlled
 continuations. An implementation minimum at fixed fields does not make an
 indefinite field-stationary point a full-field minimum.
 
+The [physical closure intake](../../00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md#22-october-physical-closure-boundary-of-the-native-bootstrap)
+at f1d9b43a distinguishes the already stated native bootstrap stationarity
+from its unclosed scene/execution realization. Direct use of that law is
+legitimate, but requires the actual operator/variation map and independent
+apparatus equations. M1 catalogue independence and Feshbach reduction take
+the relevant constraint or matrix data as inputs. The new recorded
+cyclic-incidence heat realization retains this physical map as a premise.
+Neither another conditional spectrum calculation nor a source-fitted Info
+table supplies it; a native class with a common physical source image can
+suffice without unique microscopic dynamics.
+
 ### Methods that have already changed the argument
 
 | Reuse actively | Successful application and next use |
