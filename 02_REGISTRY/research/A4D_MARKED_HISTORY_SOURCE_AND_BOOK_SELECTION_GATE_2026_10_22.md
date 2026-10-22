@@ -120,7 +120,7 @@ so its logdet is \(-\log(1-\zeta)\) and its field derivative is identically zero
 
 Therefore complete-history normalization, correct entropy, a prefix-free stopping law and retention of all failures do **not** determine the Book active cut. A nonzero early-return corner, a physically selected alternative prepared cut, or an independently derived heat/Info contribution is required. None may be inserted solely to fit GR.
 
-The addressed rank-W alternative does not solve this selection problem by free minimization either. Its source grows by W relative to the coherent rank-one cut, but its own fair-point master satisfies
+The addressed rank-W alternative does not solve this selection problem by free minimization either. Its source grows by W relative to the coherent rank-one cut. With the original fair-point anchor \(A_0=1-\zeta(1-p^8)\in(0,1)\), its own master satisfies
 \[
 \mathcal B_{W+1}-\mathcal B_W
 =\beta^{-1}\log(1+1/W)-\log A_0>0.
