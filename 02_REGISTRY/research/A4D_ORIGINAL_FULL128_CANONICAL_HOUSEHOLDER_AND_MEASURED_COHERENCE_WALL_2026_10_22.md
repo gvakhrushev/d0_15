@@ -27,7 +27,7 @@ Let \(H\) be the ACTUAL full prepared native DATA×oldRIGHT input carrier. Let \
  }                                                       \tag{1}
 \]
 
-The original Kraus normalization proves \(V^\dagger V=I\) even with all factory/failure fine categories. The original full128 input/record ordering is fixed by its owned registered fine labels: rotating Kraus labels by an arbitrary new measurement-frame unitary would CHANGE the instrument and this theorem does NOT promote its result across such an unadmitted relabeling.
+The original Kraus normalization proves \(V^\dagger V=I\) for ALL 128 native fine labels; any separate Golden 9/20 factory failures and controller/stage work belong to different or enlarged executions and are NOT smuggled into those 128 labels free of charge. The original full128 input/record ordering is fixed by its owned registered fine labels: rotating Kraus labels by an arbitrary new measurement-frame unitary would CHANGE the instrument and this theorem does NOT promote its result across such an unadmitted relabeling.
 
 The full original initialized-work compressed map is the true native \(K_0\) with oldRIGHT spectator:
 \[
