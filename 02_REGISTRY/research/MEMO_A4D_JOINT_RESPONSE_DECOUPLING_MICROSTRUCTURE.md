@@ -10379,3 +10379,157 @@ This is a NONZERO complete first source with the old finite lambda_minus(2^-20),
 The exact pure full32 Choi writer no-go at the original rho_w=384/421 is respected. A nine-fair-draw positive three-way READY partition (384,37,91)/512 reproduces rho_w=384/421 only as a COARSE conditional probability, without preparing forbidden sqrt(rho_w) amplitudes. The uniform 118-bit positive herald realizes every original rational site 1/(2rho_z) with common readiness, and the already-owned Golden-prefix compiler extends finite such Q(p) selectors. This discharges the unnecessary PURE-amplitude requirement for the source COEFFICIENT/ADDRESS part, not the native field-dependent operator-input writer. Based closed plaquette endpoint square roots telescope; individual OPEN stored-Dirac endpoint weight jets do not and remain paid/source-bearing.
 
 **Exact consumed slot:** physical reproduction of native spatial READY/PF and its complete measured prefix price on one positive Golden execution, without new spatial decoder or inserted measure. **Next SAME-CARRIER parent gate remains** to attach truly admitted CAR/coframe/link effects and their full independent writer/clock/oldRIGHT to this actual prefix, derive the literal Book03 branch Info/memory+feedback absolute action instead of naming CQ Shannon, and check the real all42 plus upstream root. The document also provides the explicit complete native code-reference branch likelihood-gain formula as a TEST; no compulsory Book Info is inferred. Original pure-Choi negative scope, physical self-initiation, uniform all-mesh refinement and GR/raw216 remain open. No lifecycle promotion.
+
+### 22 October: fixed-carrier partition choice and original sequential first-label return
+
+This continuation consumes the existing Book03 master and the owned exact
+all-mesh nonvacuum 16+24+2 recovery. It closes specific comparison and execution
+premises within Draft #334; it does not replace the master scalar or start
+another geometric root search. The three constructions below keep their
+different preparations, event alphabets and complete sources.
+
+**1. The active partition now has an exact same-hardware price comparison.**
+Sections 6–8 of the
+[original Golden three-atom owner](A4D_ORIGINAL_GOLDEN_FUTURE_THREE_ATOM_BOOK_SOURCE_AND_FINE_LIMIT_2026_10_22.md)
+put all 72,441 original fine labels on one padded carrier, with the same
+active rank, oldRIGHT128 and retained fine WORK. Dormant comparator blocks
+are identity blocks. On the explicitly identical fixed-scene heat branch,
+merging positive atoms strictly lowers the literal feedback. The three
+atoms determined by the original READY and READY_AND_CLICK predicates are
+therefore the unique minimum among partitions preserving those tests,
+modulo zero atoms and label permutations. The original n20 gap is
+approximately 0.0002686181807940742, and the all-depth gap is rigorously
+greater than 0.00006726908. This removes the old unproved discrete comparison
+inside that programme class. It neither erases fine future tests nor proves
+equal native moving heat or full paid marking price. The field-source
+difference is nonzero and its field Hessian need not be positive.
+
+**2. The iid full-ledger comparison now permits unequal real prices.**
+Sections 11–14 of the
+[first-match owner](A4D_FIRST_MATCH_WALD_NATIVE_INFORMATION_FULL_SOURCE_2026_10_22.md)
+prove exact cell occupation \(\mathbb E N_{ab}=q_b\). Thus a supplied
+conditional net-price matrix contributes
+\(\sum_bq_b\sum_a\kappa_{ab}\), retaining all moving-price derivatives.
+For a fixed price matrix on the entire probability simplex, constant column
+sums are necessary and sufficient for probability-source neutrality; equal
+individual comparison prices are unnecessary. Complete capped laws,
+conditional factory records, aborts and joint information/cost marks are
+included. The deterministic 1/2 status encoding is a declared component,
+not a newly admitted Golden primitive. The corresponding real Boolean
+comparison skeleton is supplied, with its logical gate inventory distinct
+from physical factory price. This application still requires genuinely
+independent complete trials for its full CQ information identity.
+
+The n20 prefix probability \(a\approx0.3416407870701547\) in item 1 and the
+separate capped N1 preparation \(\gamma\approx0.4536749386818590\) in item 2
+are different actual READY constructions. Neither probabilities nor source
+gains are transferred by equating these names.
+
+**3. The original full128 stopped map is now calculated without a reset.**
+The [sequential first-label return](sources/d0_first_match_wald_2026-10-22/SEQUENTIAL_FULL128_BOOK_RETURN.md)
+uses the unchanged original Kraus constructor
+`ee8de4635d24c668949ac9a0186616ab7d59f2ed`. For each anchor it propagates the
+actual mismatch CP map, retains every matched and capped-abort leaf, and
+computes the complete marked operator normalizer \(N_K\) with its ordered
+field derivative. At zero mark \(N_K=I\) exactly for every finite cap.
+Positive marking is a charge-generating calculation; its polar-normalized
+Book diagnostic is not called an unchanged physical gate execution.
+
+A fully reversible seven-bit comparison has 28 CNOT, 15 X and 11 Toffoli
+gates, leaves its scratch clean, and records MATCH as zero. Under its
+explicit clean factory/stage interface the unique blank stopped word is
+00, with actual corner \(A=e^{-tC_{00}/2}B^2\). The full open clock is
+retained, so only its overlap enters the complementary corner; truncating
+the whole output would be a different, incomplete map. The full normalized
+determinant and its noncommuting source follow from this actual corner and
+\(N_K\), with a cap-uniform positive normalization bound. At zero mark the
+feedback is the original two-round \(B^4\) feedback, independently of cap.
+At the declared original-block diagnostic \(\theta=0.08,t=0.02,K=2\), its
+full field source is approximately \(-2.41582055\cdot10^{-6}\); suppressing
+the real normalization derivative would give
+\(-7.04592309\cdot10^{-6}\). This is a bounded Fourier-block source test,
+not an all42 or physical-price certificate.
+
+The [stationary occupation application](sources/d0_first_match_wald_2026-10-22/SEQUENTIAL_STATIONARY_OCCUPATION.md)
+then supplies a constructive alternative to iid reset for additive charges.
+For \(\Phi=\sum_a\mathcal I_a\), \(T_a=\Phi-\mathcal I_a\), actual stationary
+\(\rho_*\) and transient \(T_a\),
+
+\[
+\sum_{j\ge0}T_a^j\mathcal I_a(\rho_*)=\rho_*,
+\qquad \mathbb E N_{ab}=\operatorname{Tr}\mathcal I_b(\rho_*)=q_b.
+\]
+
+The original inverse-square invariant state, uniqueness and recycling-gap
+input are consumed from the existing
+[native preparation owner](A4D_NATIVE_PREPARATION_AND_GOLDEN_OFFSHELL_SOURCE_2026_10_21.md),
+not rediscovered or replaced by a supplied fresh state. For a general input,
+the exact correction is
+\(X_a=\rho+(I-T_a)^{-1}\delta\), \(\delta=(\Phi-I)\rho\). Its first derivative
+at a stationary base retains \((I-T_a)^{-1}D\delta\); stationarity at one
+point does not justify freezing an independent input source. Finite caps
+and a finite forward preparation retain their corresponding defects and
+actual prefix cost.
+
+The new [active-alphabet proof](sources/d0_first_match_wald_2026-10-22/NATIVE_ACTIVE_LABEL_SUPPORT.md)
+computes the count required by that occupation theorem, using the literal
+Walsh cancellations: 42 active outcomes at the original flat point, and
+64 on the specified nonzero admissible one-boost branch. Hence the exact
+stationary uncapped mean trial counts are 43 and 65, respectively. This is
+a support-birth/nonuniform-cap boundary, not a differentiable multiplier
+across the flat point. The finite capped operator source remains the correct
+object there. Occupation does not factor the correlated whole-record
+Shannon entropy or identify it with Book03 Info.
+
+**Same-execution consumer.** A retained finite preparation of length L at
+the original blank cut changes the clean return to \(B^{L+2}\), even as its
+reduced DATA approaches \(\rho_*\). The actual prefix, stage decoder,
+factories, clock and independent input derivatives therefore remain in the
+native master. The next binding is the literal field/preparation map into
+the SAME \(\Delta_N(V)\) and \(F_N(V)\), with its complete first source and
+all independent Euler rows. The present results supply partition ordering,
+actual comparison-ledger criteria, and the stopped original operator/source;
+they do not select heat, cut or Info by naming them. No full-GR, raw216,
+`positive_gr`, BOOK or lifecycle promotion is made. `GR_closed=false`.
+
+**Concurrent intake through `e608554`.** The new
+[archive-information synthesis](A4D_FUTURE_THREE_ATOM_ARCHIVE_MUTUAL_INFORMATION_GR_SYNTHESIS_2026_10_22.md)
+already derives the full measured fine-code source as the three-atom code
+source plus the retained address/report conditional mutual information,
+with moving address/fine-history KL terms when their laws change. It also
+consumes the existing universal Golden code's first-source convergence.
+The present strict comparator-partition ordering is compatible with keeping
+that archive; it does not remove the archive source, identify the two READY
+preparations, or permit a coherent inverse of a classically protected record.
+
+The concurrent
+[renewal Gibbs/heat synthesis](A4D_RENEWAL_GIBBS_HEAT_AND_NATIVE_NONLINEAR_ENTROPY_BRIDGE_2026_10_22.md)
+supplies an explicit single-carrier tensor HJR-type mathematical action.
+Its infinite-renewal scalar is a nonzero constant multiple of the complete
+N1 CQ action; the owned nondegenerate 42-field root consequently persists
+at sufficiently large finite cap by C² convergence. Thus an entropy/heat
+mathematical bridge and configured finite nonflat roots already exist. What
+remains is their physical identification with the compulsory Book03 heat,
+actual energy term, selected active cut and paid preparation on the same
+execution. The finite-cap result is a field-root theorem, not an assertion
+that its freely varied thermal rows already have exact Gibbs matching.
+
+The new no-reset occupation theorem does not remove the **iid** hypothesis
+of that owner's harmonic-energy construction. A concrete exact control is
+
+\[
+K_0=\begin{pmatrix}3/5&4/5\\0&0\end{pmatrix},\qquad
+K_1=\begin{pmatrix}0&0\\4/5&-3/5\end{pmatrix},\qquad \rho_*=I/2.
+\]
+
+This complete instrument has a unique faithful stationary state, both
+label probabilities 1/2, and mean first-label trial count 3. Nevertheless,
+conditional on either anchor, its mismatch count satisfies
+\(\Pr(N\ge k\mid a)=(16/25)(9/25)^{k-1}\), so
+\(\mathbb E H_N=-(16/9)\log(16/25)\ne\log2\).
+Equality would imply \(5^{32}=2^{73}\), which is impossible. This is a
+general correlated-instrument control, not a claim about the original
+full128 harmonic spectrum. It prevents transporting the configured iid
+renewal heat to the sequential original instrument using occupation alone.
+The exact finite CP recurrence and the actual iid harmonic construction
+retain their respective execution hypotheses.

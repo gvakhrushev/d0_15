@@ -1,0 +1,73 @@
+{
+  "status": "PASS",
+  "exact_checks": 608,
+  "arithmetic": "stdlib Fraction",
+  "finite_caps": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "preparation_prefix_lengths": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "fixtures": [
+    {
+      "name": "nonunital_two_kraus",
+      "outcomes": 2,
+      "stationary_density": [
+        [
+          "9/25",
+          "0"
+        ],
+        [
+          "0",
+          "16/25"
+        ]
+      ],
+      "one_label_probabilities": [
+        "337/625",
+        "288/625"
+      ],
+      "non_iid_joint00_minus_product": "7056/390625",
+      "uncapped_stationary_mean_trials": 3,
+      "frozen_preparation_mean_trial_first_source": "-7077/24050",
+      "largest_complete_tree_leaves": 12
+    },
+    {
+      "name": "rotated_three_kraus",
+      "outcomes": 3,
+      "stationary_density": [
+        [
+          "35615/75919",
+          "-1728/75919"
+        ],
+        [
+          "-1728/75919",
+          "40304/75919"
+        ]
+      ],
+      "one_label_probabilities": [
+        "8688591/47449375",
+        "8393184/47449375",
+        "16/25"
+      ],
+      "non_iid_joint00_minus_product": "1139441920848/450288637578125",
+      "uncapped_stationary_mean_trials": 4,
+      "frozen_preparation_mean_trial_first_source": "-8147124189448083/544975615097184542",
+      "largest_complete_tree_leaves": 189
+    }
+  ],
+  "projective_counterexample_trials": 2,
+  "native_full128_suite_rerun": false,
+  "iid_information_inferred": false,
+  "selected_physical_preparation_claimed": false,
+  "full_book_source_closed": false,
+  "script_sha256": "aade7974cb2acb2a691a24545b6954fc5a7bd35c636d22b350ed7c86e5719b6f"
+}
