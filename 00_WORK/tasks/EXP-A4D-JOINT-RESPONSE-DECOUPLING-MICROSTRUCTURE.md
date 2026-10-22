@@ -15,6 +15,59 @@ Assembly-Slot: `constitutive`
 
 ## Strategic synthesis continuation — 2026-10-17
 
+### 22 October: pull the generated thermal source back to the actual execution
+
+Continue the same native-realization / final-composition obligation at published
+input `5ed028192cee35b3b9d2b1f970c56259abb325a2`, preserving the finite configured
+K=100000000 all42 root and original sequential/occupation proofs. The literal
+Book03 master varies `Delta_N(V)` and `F_N(V)` through the admitted configuration;
+it does not state an independently free thermal matrix. Apply the existing
+causal-adjoint theorem to the actual generated probability/thermal graph before
+treating `rho-sigma_K` as an additional independent equation.
+
+The exact parent substitution sought is the complete cotangent on the SAME
+finite paid execution: source in the real field/program/preparation/clock
+variables, with generated states eliminated and all genuinely independent
+upstream reactions retained. Consume the native inverse-square preparation,
+port-price Poisson corrector, sequential occupation and new correlated/modular
+intake; do not repeat their certificates. Test both a true generated graph and
+an independently varied thermal control, so a constraint cannot be smuggled in.
+In particular the actual port energy is the mean occupation of native Delta,
+with its fixed clock coefficient; it is not the logarithmic renewal score.
+
+Root owns the existing primary memo, this brief and the bounded source packet
+`sources/d0_generated_thermal_source_2026-10-22/`. Read-only assistants examine
+the literal Hodge/log-survival identification, actual complete price/source,
+and the admissible-tangent/causal criterion; any authored subpart is assigned
+one disjoint path within that packet. The smallest decisive check compares
+full finite-tree differentiation with the derived adjoint and verifies the
+original finite native port effect with its real preparation/clock derivative.
+No old all42 optimizer, interval Hessian, full128 census or Lean build is needed.
+
+The uploaded historical Tome III and the repository's maintained BOOK_03 are
+different sources; only the latter contains the literal sections 03.25--03.26.
+No physical heat, paid energy, active cut or variation is added to either book.
+The finite configured root may consume only a proved same-action pullback;
+identifying that action with compulsory Book03 and uniform physical GR remains
+the same substantive obligation. No lifecycle or acceptance promotion follows
+from eliminating artificial independent variables.
+
+The completed bounded application also evaluates the actual cut differential
+`C=(I-P)UP`. On the original cost20 READY carrier its derived paired heat
+preserves the entire common-null 42-source with a strictly positive gain
+greater than two-thirds of the prior feedback gain. On the native positive
+blank branch the canonical inverse of `F=I-B^2` recovers the original
+`Delta` and full noncommuting source with the true epsilon. The literal
+undressed Golden and nonoverlapping-clock cuts are proved source-blind;
+the untransformed cut heat cannot equal default `L913` at its original
+scale. These are actual map applications, not a newly selected physical
+incidence. The complete rational CQ consumer retains preparation records,
+all stopped outcomes, actual port charges and conditional quantum DATA.
+Concurrent correlated/predictive-information and paid-padding results
+through `e9abd308e008ad8adfe8b66d188ec0e55736beae` are consumed with their
+finite-cap occupation source and actual per-bank/per-completed-trial units.
+No old suite is replayed; the same physical parent obligation remains.
+
 ### 22 October: complete the active-partition and comparison-price applications
 
 Continue existing Draft334 at input `ac4dc6945a1940f4067d616c45d3fc626a50d23d`,
