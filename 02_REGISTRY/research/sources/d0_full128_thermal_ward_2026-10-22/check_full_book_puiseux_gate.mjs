@@ -39,7 +39,7 @@ for(const K of [1,2,3,4,8,20,100,400,1000]){
  ok(m.d[2]>m.d[1]&&m.d[1]>m.d[0],
    'strict finite native harmonic remaining tail follows rare-category order');
  for(const q of originalQ){
-   const exact=-(1-q)**K/q;
+   const exact=-((1-q)**K)/q;
    const h=Math.min(2e-8,q*1e-4);
    const numerical=(deltaK(q+h,K)-deltaK(q-h,K))/(2*h);
    close(numerical,exact,8e-4,'actual native harmonic δ_K derivative tail negative exact');
