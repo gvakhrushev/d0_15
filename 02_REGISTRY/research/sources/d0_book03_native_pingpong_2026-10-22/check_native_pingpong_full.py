@@ -17,7 +17,7 @@ assert s.simplify((2-p)/p**3-(5+3*s.sqrt(5))/2)==0
 # Genuine old two-level Golden rotation needs NO separately invented inverse.
 X2=s.Matrix([[0,1],[1,0]])
 G=s.Matrix([[s.sqrt(p),-p],[p,s.sqrt(p)]])
-assert G.T*G==s.eye(2)
+assert s.simplify(G.T*G-s.eye(2))==s.zeros(2)
 assert s.simplify(X2*G*X2-G.T)==s.zeros(2)
 
 I=s.eye(6)
