@@ -72,6 +72,13 @@ for M in [2,64,1000]:
     check(f'M={M} h0 residual bounded in code normalization',abs(norm).b < (iv.mpf('.00001') if M==2 else iv.mpf('.01')))
     print('M',M,'source_raw',raw,'source_originalN1_normalized',norm)
 
+# SAME STOPPED TAPE: conditional no-click Book J2 is essentially C1-exact
+# at cap64 even though the COMPLETE paid data-clock source fails at h0.
+book_value_tail=528*r0**65/(65*(1-r0))
+book_j2_derivative_tail=528*r0**64/(1-r0)
+check('J2 conditional harmonic cap64 value error < 1e-369',book_value_tail.b<iv.mpf('1e-369'))
+check('J2 conditional harmonic cap64 derivative error < 1e-360',book_j2_derivative_tail.b<iv.mpf('1e-360'))
+
 # A cap large enough makes the original unbounded score C1-converge.
 M=10**7
 _,D0=capp(r0,M);_,D1=capp(r1,M)
