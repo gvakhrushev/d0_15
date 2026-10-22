@@ -101,7 +101,9 @@ for(const r of [r0,1.8513018e-6,1.85133e-6,0.12,0.49]){
  const q=[1-gamma,gamma*(1-r),gamma*r];
  const entropy=-(q.reduce((s,v)=>s+v*Math.log(v),0))/lp;
  const dEntropy=gamma*Math.log((1-r)/r)/lp;
- const h=Math.min(1e-8,r/100);
+ // The rare READY1 probability needs a smaller relative step; h/r=0.005
+ // leaves visible central-difference curvature error in the entropy source.
+ const h=Math.min(1e-8,r*1e-3);
  const entropyAt=u=>{
   const t=[1-gamma,gamma*(1-u),gamma*u];
   return -(t.reduce((s,v)=>s+v*Math.log(v),0))/lp;
