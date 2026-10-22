@@ -1086,3 +1086,23 @@ The same original full nonlinear event gives an unadjusted local geometric/matte
 The 42-Banach root consequently has a unique 4-algebraic-response full46 stationary lift. Its complete full46 Hessian is invertible from the exact negative four-dimensional response block plus the original previously certified nondegenerate 42 Schur complement: **actual original full nonlinear field dynamics and positive microscopic code stiffness coexist without new coupling or linearization**. The old original all-mesh Brinkmann Einstein/CAR wave family extends as the corresponding constant-response V=0 branch of this SAME constitutive system.
 
 Original Book03 H+J+R/Info/active-cut necessity, G0 paid field writer, independent controller/RIGHT/clock/preparation Euler, and raw216 universal GR remain OPEN; no physics-acceptance promotion. The dual is exact for the configured original native N1 measured-code price and specifies the nonlinear target for the true compulsory Book03 source weld. GR_closed=false.
+
+
+## Original Golden minimum-query off-null Palatini–CAR C² source and critical four-dimensional information — 22 October
+
+[New all-source constructive positive theorem](A4D_NATIVE_GOLDEN_MINIMAL_QUERY_C2_OFFNULL_PALATINI_FISHER_CRITICAL4_2026_10_22.md) with [independent literal p,zeta original-event test and continuous PF-moving first/second derivative replay](sources/d0_unpadded_constitutive_legendre_2026-10-22/check_golden_minimal_depth_c2_fisher.py). This consumes the original exact unpadded full42 h0 result and its new strict two-operand Legendre/Gold-hessian certificate; it does NOT fit any gravitational constant or replace Book03.
+
+A TRUE original Golden code-cost-scale query attenuation to be physically admitted if used is \(\tau_L=p^{m(L)}\), \(m(L)=\lceil2\log_\varphi L\rceil\), minimal among native cylinder weights \(p^m\le L^{-2}\), with \(p h²<\tau_L\le h²\). At original \(\sigma=-1\) cap1, with actual literal original two-tick click \(r(x,y)\), and exact paid 0/10 Cost−measured-Shannon \(c=r-h_\varphi(r)-[r_0-h_\varphi(r_0)]\), the same original source-unit normalization \(S_{\tau_L}=K_0\tau_L^{-1}\sum\rho c(\tau_L f_B/\rho,\tau_L q/\rho)\) makes the ENTIRE NON-NULL original 16+24+2 finite Palatini/CAR first AND second sources converge \(O(h²)\) to \(\gamma\,D^j\sum(f_B+\lambda_-q)\) for j=0,1,2 under explicitly quantified bounded genuine field/geometry/PF jets. No false claim of the original raw216 uniform norm without independent actual operator bounds. Exact formula retains both moving-PF first/second derivatives, not a frozen volume proxy.
+
+The actual unique leading higher-curvature/Clifford correction, fixed by the ORIGINAL positive Golden N1 Hessian, is
+\[
+\tau_L\sum_s\frac{
+1.5594385265652892\,f_s^2
+-7.726718473346808\,f_sq_s
++38.36826258946248\,q_s^2}{\rho_s}
+\]
+with \(O(\tau_L²)\) remainder; its quadratic form is strictly positive, even though the full 42-geometric action can be Lorentz-saddle. The genuine nonlinear response ratio \(\lambda_{\rm eff}(x,y)=r_y/r_x\) tends \(\lambda_-=-23.416406751884075\ldots\) at the same O(h²) rate FOR BOUNDED OFF-NULL f/q, not just the previously solved Brinkmann f=q=0 waves. This is an explicit **off-null weak-query universal source mechanism** for the previously owned actual six-face Palatini+CAR operator.
+
+A second independent D0 consistency calculation now shares the EXACT Golden depth: the entire two-branch registered Bernoulli KL of any two separated bounded finite operands is quadratic in \(\tau_L\), so for a genuinely executable one-shot-per-site IID experiment the total original L⁴ fully recorded data are of finite and nonzero information scaling, since \(p²<L⁴\tau_L²\le1\). The 4D site number is the critical information count for this specifically declared query; that is NOT a derivation of 4D from φ, a free native L⁴-copy factory, or a physically forced Book03 source. The integer Golden cost ceiling retains a measurable log-periodic sampling factor, and the tiny original native reporter derivatives demand substantial paid sampling constants.
+
+**Current correct status**: The mathematical source convergence (j<=2), exact next-order nonlinear dynamics and binary information scaling are positive original-N1 theorem. The essential physical query-strength compiler, compulsory original same-record Book03 \(P_N,\Delta_N,H+J+R,\operatorname{Info}\), full independent input/work/oldRIGHT/clock equations and original raw216 physical GR limit remain OPEN. The independently certified fixed h0 non-null full42/46 root is not silently transplanted to the variable-\(\tau_L\) family. `GR_closed=false`.
