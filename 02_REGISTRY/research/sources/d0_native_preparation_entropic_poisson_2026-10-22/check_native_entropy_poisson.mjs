@@ -105,7 +105,7 @@ function program(a,b,cap,observer='pointer',initialRho=null){
     score+=P*cost+piece/ell;
     entropy-=piece;
     dSfixed+=cost*DP+prime/ell;
-    let a0=Math.sqrt(n.pi[0]),a1=Math.sqrt(n.pi[1]);
+    let a0=Math.sqrt(rho[0][0]),a1=Math.sqrt(rho[1][1]);
     // The FULL oldRIGHT purification |psi>=sqrt(pi0)|0,0>+sqrt(pi1)|1,1>.
     // Every leaf (L tensor I_oldRIGHT)psi remains PURE; its sole eigenvalue
     // is P, so measuring fine pointer then keeping DATA+oldRIGHT adds ZERO
