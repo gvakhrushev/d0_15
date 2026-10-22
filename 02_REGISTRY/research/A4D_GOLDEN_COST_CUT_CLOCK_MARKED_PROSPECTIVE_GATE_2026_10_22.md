@@ -101,3 +101,27 @@ Original consumed source blobs on main:
 - 76dbf01e6fd8c683f294c37e96319413a859c731 — main positive nonvacuum GR primary case.
 
 Exact bounded consumer checker (no external dependencies): sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/check_golden_cost_cut_clock_marked_future.py. Historical suites and Lean were not rerun; the all-n proof above is by induction, not a numerical extrapolation.
+
+
+## 5. Positive exact scalar absolute-anchor rigidity (not a Book03 physical admission theorem)
+
+There is a useful converse that also follows from the preceding SAME original cost cut, and makes the unchosen absolute-normalization premise sharply testable.
+
+**Theorem (unique scalar martingale completion once a root is paid).** Suppose, ON THIS exact native Golden cut and a fixed smooth input field chart, an actual bare SCALAR Book law has first been independently bound to the true native Born cylinders at every cut. By §3 this gives a common absolute normalization J_n(y) on each level:
+
+w_n(gamma;y)=phi^(J_n(y)) p^(C_gamma).
+
+Suppose in addition its UNNORMALIZED weight is truly projectively consistent under the existing literal native refinement, including the cost-n -> (cost n+1, cost n+2) split:
+
+w_n(parent;y)=w_(n+1)(direct;y)+w_(n+1)(return;y).
+
+Then phi^(J_n)p^n = phi^(J_(n+1))(p^(n+1)+p^(n+2))
+=phi^(J_(n+1))p^n. Positivity implies **J_(n+1)(y)=J_n(y)** on every field chart point, not just at a root. Every n>=1 has a genuine split, so J_n(y)=J_0(y) for the entire tower. If the same absolute Book programme's empty root has its independently demonstrated paid normalization w_0(empty;y)=1 (NO hidden moving root/reference price), then J_0(y)=0 and
+
+**w_n(gamma;y)=p^(C_gamma), Info_n(gamma;y)=0, and d_y J_n=0 for ALL n.**
+
+Consequently the bare scalar native Golden cylinder law alone has ZERO gravitational/field source; any actual Einstein source must enter through proved field-dependent history maps, a physical root/reference charge, real conditional Info, or coherent noncommutative memory response. It CANNOT be recovered by taking more neutral Golden cost cuts or by declaring the identity sum Z_n=1 to be a geometric action.
+
+**What is and is not derived.** The scalar cylinder normalization w_0=1 and genuine UNNORMALIZED cross-cut consistency are explicitly the hypotheses. The owned AF Golden cylinder law supplies such a normalized mathematical measure, but Book03's algebra-valued sum does NOT automatically inherit this scalar martingale law; actual future tasks can change the physical process and its root cost. If only the normalized q_w and consistency are known, J_0(y) remains an arbitrary absolute field-dependent common source; this identifies the exact one-function root-price seam without adjusting an Info table. The theorem is a positive uniqueness result for the specified scalar binding, NOT GR closure or a claim that all physical Book programmes have Info=0.
+
+For the physical #334 test the key choice is now binary and checkable: either prove the actual same-execution Book scalarization AND its root/cylinder law (then the neutral Golden-only branch is source-free), or exhibit the REAL field-dependent absolute root/Info/memory process with its entire clock and all42 source jets. Merely increasing Golden refinement cannot manufacture that missing physical source.
