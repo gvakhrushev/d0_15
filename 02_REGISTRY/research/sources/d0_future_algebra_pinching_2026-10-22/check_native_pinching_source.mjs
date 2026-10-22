@@ -113,6 +113,25 @@ const L=4*p**3,rr=1-(1-zeta*L)*(1-zeta*L*(1+p**6));
 ok(rr>1.8e-6&&rr<1.9e-6,"original flat full native report r_star");
 ok(nativeD(rr)<-26&&nativeD(rr)>-27,"honest original unequal code remains sourced");
 ok(-dhphi(rr)<-27&&-dhphi(rr)>-28,"padded code has DIFFERENT genuine first source");
+
+// Entire SCALAR open-chart equality with the OWNED original normalized
+// N1 CQ value, not a newly fitted stress/coupling or new numerical root.
+const tau=1/20,r_x_star=4*zeta*(1-zeta*L)*p**11;
+const c_native=tau*dhphi(rr)*r_x_star;
+const S_N1=(u,v)=>-((hphi(u)-hphi(rr))+(hphi(v)-hphi(rr)))/c_native;
+const paidPair=(u,v)=>4-hphi(u)-hphi(v);
+ok(c_native>2.6e-8&&c_native<2.7e-8,
+   "original Golden normalization fixes the source factor (no fitting)");
+for(const [u,v] of [[1.85e-6,1.856e-6],[1/7,2/9],[p*p,1/7]]){
+  close(paidPair(u,v),4-2*hphi(rr)+c_native*S_N1(u,v),4e-13,
+        "EXACT full nonlinear original CQ-price scalar identity, not only a source jet");
+  const src=(du,dv)=>-dhphi(u)*du-dhphi(v)*dv;
+  const dS_N1=(du,dv)=>-(
+       dhphi(u)*du+dhphi(v)*dv)/c_native;
+  close(src(1,-1),c_native*dS_N1(1,-1),2e-12,
+        "full off-null native two-report source proportional in hostile mean-null tangent");
+}
+
 console.log(JSON.stringify({status:"PASS",checks,exact_Golden_Kraft:true,
  full_fine_label_count:fnFine,original_ready_mass:a,
  pure_pinch_controls:pins,offshell_two_report_source_difference:meanPreserving,
