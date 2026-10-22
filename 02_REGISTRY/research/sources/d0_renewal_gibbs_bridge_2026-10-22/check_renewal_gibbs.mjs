@@ -72,7 +72,7 @@ for(const rr of [r0,1.8513018e-6,.0031,.051,.17,.31,.56,.79,.91]){
   const dInfG=directional(q,ddg,'inf').d;
   close(dInfR,g*Math.log((1-rr)/rr)/b,5e-13,'all off-null r source without log fit');
   close(dInfG,(Math.log((1-g)/g)+binaryH(rr))/b,5e-13,'readiness moving source not frozen');
-  const h=Math.min(5e-7,rr/100,(1-rr)/100);
+  const h=Math.min(5e-7,rr*1e-3,(1-rr)*1e-3);
   const fp=T(q3(g,rr+h),exactEnergy(q3(g,rr+h))).v;
   const fm=T(q3(g,rr-h),exactEnergy(q3(g,rr-h))).v;
   close((fp-fm)/(2*h),dInfR,4e-7,'full unrestrained gradient via independent entropy values');
