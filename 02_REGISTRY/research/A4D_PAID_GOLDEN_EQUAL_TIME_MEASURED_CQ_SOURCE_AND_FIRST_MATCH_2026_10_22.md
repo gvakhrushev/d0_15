@@ -160,3 +160,63 @@ Thus the following *physically meaningful but still OPTIONAL* native task could 
 Under this precisely specified task, the two code branches MUST have equal completion length; among nonnegative integer charged deterministic delays the UNIQUE cheapest is d0=1,d1=0, total time2. Then raw original 0/10 is NOT an admissible task solution, so the strict cost-dominance comparison from §6 no longer applies to the *restricted timing-blind task*. The padded programme is the minimal positive-cost candidate **within that restricted class**. The matching whole off-null native N1 CQ first source follows AUTOMATICALLY from an independent timing/task constraint, not from inserting a field-dependent information counterterm.
 
 **Hard rejection gate:** No current owner has proved that M1/Book03/D0 automatically imposes this clock non-leakage requirement. The existing actual native full tape often explicitly RETAINS duration, and an observer who already reads B gains no EXTRA Shannon information from also seeing T. Constant execution duration is therefore NOT forced by data-processing, normalized probability or the Book03 entropy identity. It must be derived from an actual specified observer-equivalence, privacy, temporal-causality or compulsory fixed-latency task, including the physical charging and availability of the deterministic identity tick. Without that derivation the original raw code and its extra +Dr source remain equally legitimate mathematical executions; the physical Einstein stationarity is not selected by the optional equalizer. GR_closed=false.
+
+
+## 8. All finite alphabets, full stopped-time leakage, and the truly finite worst-case clock
+
+**Universal finite-alphabet version.** Let \(A\) denote one actually registered finite terminal alphabet of size m, with original paid self-delimiting lengths \(\ell_i\) and strictly positive conditional output probabilities \(q_i(y)>0\). Let a genuinely admitted controller execute a nonnegative integer delay \(d_i\) that depends ONLY on the already registered terminal symbol. The actual completed report time is \(T_i=\ell_i+d_i\). Because \(T\) is a deterministic function of the original observed A,
+
+\[
+I_\varphi(A;T)=H_\varphi(T).
+\]
+
+At full positive support, \(I_\varphi(A;T)=0\) **if and only if ALL completed times are identical**, independently of the probabilities or of the geometric field. Among allowed integer prices, the unique pointwise minimum is
+
+\[
+\boxed{L=\max_i\ell_i,\quad d_i=L-\ell_i\ge0.}\tag{16}
+\]
+
+It makes true paid pointer Cost \(C_{\rm report}=L\) on EVERY event, and measured-pointer Cost−Info \(L-H_\varphi(q)\), so its ENTIRE source is \(-D H_\varphi(q)\), not only a first-order null projection. No field-dependent controller coefficient, negative probability or fitted source is introduced. The actual added expected charge is
+
+\[
+L-\sum_i q_i\ell_i>0
+\]
+whenever some shorter outcome has nonzero positive probability, so the original strict prospective-minimum caveat remains. The original Golden code tree and unused orthogonal WORK columns are retained; no physical right to synthesize the deterministic delay is inferred from prefix lengths alone.
+
+A concrete independent symbolic three-outcome control uses original lengths \((1,2,4)\), giving unique minimum padding \((3,2,0)\) and exactly vanishing cost derivative along both independent probability directions. The original native full128 port/readout is another finite alphabet candidate **only after its ACTUAL per-outcome times, active positive support and permitted conditional controlled waits have been specified**; the theorem does not invent those timings.
+
+**Crucial whole-history NONLEAKAGE countercontrol.** The earlier two-outcome pad makes EACH completed native report last exactly two ticks. But the UNBOUNDED first-match verifier still stops after the random number \(T_{\rm trials}=N+2\) of trials. Its externally visible total completion time \(2T_{\rm trials}\) generally leaks the INITIAL report bit. Conditional distributions satisfy
+
+\[
+\Pr(N=0\mid B_0=0)=1-r,\qquad
+\Pr(N=0\mid B_0=1)=r.
+\]
+
+They are equal only for \(r=1/2\). For every \(0<r<1,\ r\ne1/2\), \(I_\varphi(B_0;T_{\rm trials})>0\). An independent complete-prefix numerical check gives at \(r=1/4\)
+
+\[
+\boxed{I_\varphi(B_0;T_{\rm trials})\approx0.36292843160578675>0.}\tag{17}
+\]
+
+Thus **individual-clock timing blindness DOES NOT make an adaptive stopped task globally time-blind**. In particular the original rare native Golden output does not magically hide the first-match stopping time.
+
+**Correct FINITE maximum-clock remedy and full source.** If the observer task additionally demands a deterministic worst-case finish time, fix a real cap \(K\ge1\) later macro-trials. Preserve the actual prefix-free retained first-match tape including all \(K\)-mismatch aborted paths. Run genuine report/comparison operations up to the stop, then fill the remaining clock slots with genuinely PAID, data-independent idle operations through the common completion time. The report-alone cost is now the positive constant \(2(K+1)\), not \(2L_K\). If each of the K comparison slots costs a common positive constant \(c\) in this declared model and idle-comparison slots have the same actual charge, the full time-inventory cost is \(2(K+1)+cK\). The real stopped-record entropy is still \(L_KH_\varphi(r)\), where
+
+\[
+L_K=3-r^K-(1-r)^K.
+\]
+
+Therefore the actual **fixed-HORIZON measured source** is
+
+\[
+\boxed{\begin{aligned}
+S_{K,\mathrm{fixed}}&=2(K+1)+cK-L_K H_\varphi(r),\\
+D S_{K,\mathrm{fixed}}&=-L_K\,D H_\varphi(r)-H_\varphi(r)\,D L_K.
+\end{aligned}}\tag{18}
+\]
+
+This is different from the ordinary capped first-match source \(D[L_K(2-H_\varphi)+c(L_K-1)]\) by the genuine positive after-stop payment \(D[(2+c)(K+1-L_K)]=-(2+c)D L_K\). The whole causal completion remains a DIFFERENT, extra-priced execution and has a different first source at finite K. The common deterministic worst-case time grows as \(O(K)\); an uncapped first-match language has unbounded support and cannot have a finite constant worst-case completion horizon by such padding. If comparisons are not identical-cost/field-neutral or the actual native work/clock cut moves, substitute the genuine ledger rather than this simple conditional scalar formula.
+
+**What this buys architecturally:** the original FULL measured-report source can be made exactly entropy-driven by an actual positive cost/constant-time compiler, and the exact expense/clock/privacy/selection tradeoff is now quantified for single reports, whole first-match histories, finite caps and any finite alphabet. This does NOT select Book03 §03.25 heat or change the coupled Einstein–matter field action; it exposes the specific missing observer timing/physical admission axiom needed before the source comparison could become fundamental. The short finite N1 root remains a saddle, and GR_closed=false.
+
+Reproduction: \`sources/d0_paid_binary_padding_2026-10-22/check_multisymbol_clock_cut.py\`, together with the fixed original \`check_paid_binary_padding.py\`. Its rare-bit mutual-information summation retains the exact geometric tail probability and checks the fixed-horizon source, not only the binary per-trial Cost equality.
