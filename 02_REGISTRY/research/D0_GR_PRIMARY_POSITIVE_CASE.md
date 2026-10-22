@@ -156,6 +156,14 @@ valid fallback. `positive_gr`, compulsory Book03 price and raw216 are OPEN.
 
 [Small bounded Golden scale/condensed controls](sources/d0_golden_blowup_condensed_2026-10-20/check_golden_blowup_scale.mjs).
 
+## Original two-port operational spectral source on the SAME native CAR16 (22 October)
+
+The [exact original full128 stationary two-port theorem](A4D_ORIGINAL_FULL128_STATIONARY_PORT_CORRELATION_SOURCE_2026_10_22.md) supplies a genuinely new **same-Kraus, no-DATA-reset** memory/thermal boundary. For the ACTUAL original Golden port parity on its owned regular CAR16 Fourier fixture, and its TRUE inverse-square stationary preparation, the two chronological event probabilities obey \(q_1=c h\), \(q_{11}=c^2h\mu\), \(c=4p^3\), \(h=16/\operatorname{Tr}\Delta^{-1}\), \(\mu=\operatorname{Tr}\Delta/16\). The covariance \(c^2h(\mu-h)\) is strictly positive iff the native \(\Delta\) is nonscalar. Its field source and two-port mutual-information derivative are rigorously positive at the exact original boost \(r=1/9\), NOT inferred from a toy Markov model.
+
+The actual original two-parameter (boost, Fourier amplitude) Kraus chart has an EXACT invertible Jacobian \(D(q_1,q_{11})\): a tangible proper native tangent fixes the entire one-port readout \(Dq_1=0\) but changes \(q_{11}\) and the correlated information source strictly. On the already proved native CAR16 two-eigenvalue multiplicity-8+8 fixture, these TWO genuine positive port probabilities reconstruct BOTH spectrum values and exactly reproduce the earlier \(\|\rho_*-\sigma_{\beta_0,\Delta}\|_1>0.0388\) inverse-square/Gibbs obstruction. Thus a one-port scalar price cannot automatically contain the two-port memory source, and the supposed raw-Delta thermal stationarity is operationally falsifiable without a new detector.
+
+**Scope firewall:** this is the original Fourier 16-grade native instrument, NOT a physical lift of its two parameters to all42 Einstein field-writing tangents, selection of the Book03 active cut, or proof that its Hodge \(\Delta_N\) equals this \(\Delta\). The source attaches to the real measured **coarse consecutive-port** information algebra; complete fine-record/oldRIGHT/clock/work Info and independent upstream equations remain unsolved. It closes the iid-substitution shortcut on the actual original channel and sharpens, rather than bypasses, the compulsory same-execution physical-selection gate. GR_closed=false.
+
 ## The one missing physical selection — not another geometry campaign
 
 The [whole-family CAR/Book/causal synthesis](A4D_CAUSAL_BOOK_SOURCE_TO_EXACT_GR_SYNTHESIS_2026_10_20.md)
