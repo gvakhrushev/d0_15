@@ -2,11 +2,11 @@
 
 22 October 2026 · Same original Draft PR #334. **This is a global model-identifiability theorem about a whole proposed strategy, not another finite root, gravity coefficient, report detector or fabricated physical action.** Its aim is to prevent circular claims of GR closure from already solved inverse/tomography/Info tasks. The theorem is exact under the explicitly stated premise class; it is **not** a universal no-go for all possible compulsory future Book03 implementations.
 
-Physical statuses unchanged: \`GR_closed=false\`, \`full_D0_price_selected=false\`, \`positive_gr=false\`, \`raw216_closed=false\`.
+Physical statuses unchanged: `GR_closed=false`, `full_D0_price_selected=false`, `positive_gr=false`, `raw216_closed=false`.
 
 ## 1. The attempted short-cut is logically non-selective
 
-Read the already proved \`A4D_NATIVE_BOOK03_BORN_ENTROPY_BELLMAN_VERTEX_INFORMATION_WELD_2026_10_22.md\` (scalar Born) and \`A4D_AMPLITUDE_BORN_BOOK03_BELLMAN_INFORMATION_AND_SOURCE_WELD_2026_10_22.md\` (quadratic-amplitude Born), with the latter's genuine Book03 \(\nu=2\) typing; also read \`A4D_BOOK03_BORN_HALF_ENTROPY_AGGREGATION_GATE_2026_10_21.md\`.
+Read the already proved `A4D_NATIVE_BOOK03_BORN_ENTROPY_BELLMAN_VERTEX_INFORMATION_WELD_2026_10_22.md` (scalar Born) and `A4D_AMPLITUDE_BORN_BOOK03_BELLMAN_INFORMATION_AND_SOURCE_WELD_2026_10_22.md` (quadratic-amplitude Born), with the latter's genuine Book03 \(\nu=2\) typing; also read `A4D_BOOK03_BORN_HALF_ENTROPY_AGGREGATION_GATE_2026_10_21.md`.
 
 Let \(Y\) be ANY real field/geometry/input parameter manifold, \(T\) ANY finite positive-support rooted recording tree, and \(P_y(\gamma)>0\), \(\sum_\gamma P_y(\gamma)=1\), ANY \(C^1\) true or mathematical history law over that tree (including quantum no-reset laws, if genuinely supplied). Let \(c_y(u,b)\) be ANY actual finite paid prefix edge-cost assignment. Fix the same real \(\nu>0\) at ALL nodes. Assume only:
 
@@ -164,7 +164,7 @@ both printers have been pulled back through the very same admitted
 coframe/link/matter 42-field writer and paid absolute Book stage.
 
 This strengthens the old literal full128
-\`A4D_ORIGINAL_FULL128_GOLDEN_POINTER_X_INVARIANT_BOOK_DIFFERENT_PRICE_2026_10_22.md\`:
+`A4D_ORIGINAL_FULL128_GOLDEN_POINTER_X_INVARIANT_BOOK_DIFFERENT_PRICE_2026_10_22.md`:
 the REAL original row-controlled X witness preserves its DATA quantum
 channel, oldRIGHT, selected Book F/H spectra and fine Shannon, but
 changes the actual source by \(p^3 DQ_{\rm NB}\) (nonzero at
@@ -175,7 +175,7 @@ unmarked dynamics. The gate's real cost and admission are crucial.
 ## 4. The strongest *physical* carrier still has an independent normal source
 
 The newer genuinely paid original weak-operand execution
-\`A4D_COHERENT_OPERAND_REFINEMENT_AND_FULL_PREPARATION_SOURCE_2026_10_22.md\`
+`A4D_COHERENT_OPERAND_REFINEMENT_AND_FULL_PREPARATION_SOURCE_2026_10_22.md`
 constructs the shrinking operands inside the actual reporter with
 the true code/abort/factory/source and retains the entire prepared
 bank. But its actual double-resource correlation tangent has
@@ -204,7 +204,7 @@ strictly BLOCKED. It is not an "infinite family of unexamined local
 obligations": (1)--(8) prove that the entire information-only
 strategy permits non-Einstein histories and physically distinct
 source prices. The independent native G0
-\`A4D_NATIVE_DYNAMICAL_OWNERSHIP.md\` already classifies every
+`A4D_NATIVE_DYNAMICAL_OWNERSHIP.md` already classifies every
 ActionProtocol(P) primitive-cost fibre as arbitrary excess costs
 \(A(x,y)=1+c(x,y)\) on unequal states: the verification contract
 itself does not uniquely determine those actual transition costs.
