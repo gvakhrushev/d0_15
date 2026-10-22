@@ -99,6 +99,25 @@ for tau in [mp.mpf('.05'),mp.mpf('.01'),mp.mpf('.005'),mp.mpf('.001')]:
     check('full moving native PF first source '+str(tau),
           abs(drho)<K*M*tau*(f*f+q*q)/(2*rho*rho))
 
+# ACTUAL independently interval-certified h0 Golden 0/10 nonflat six-plaquette
+# coframe/link geometry.  Make BOTH CAR scalar profiles constant FOR THE
+# OFF-SHELL scale test only: this is NOT the originally stationary root.
+root_x=[mp.mpf('0.001370578581747874'),
+        mp.mpf('-0.000127665084908232')]
+for x in root_x:
+    check('certified nonflat original scaled six-face inside convex chart',
+          abs(s*x)<mp.mpf('.01'))
+    check('true six-face scale action defect strictly positive',
+          c(s*x,0)-s*c(x,0)>0)
+root_gap=K/mp.mpf('.05')*sum(c(s*x,0)-s*c(x,0) for x in root_x)
+root_lower=K/mp.mpf('.05')*m*s*(s-1)*sum(x*x for x in root_x)/2
+check('true h0 two-cell six-face normalized action scale defect',
+      root_gap>mp.mpf('.00025'))
+check('true h0 strict certified convex Golden scale bound',
+      root_gap>root_lower>mp.mpf('.00016468'))
+print('pinned nonflat h0 six-face geometry scale gap',
+      mp.nstr(root_gap,23),'strict lower',mp.nstr(root_lower,23))
+
 print('PASS',checks,'native strict-convex Golden-scale/C1/resource controls')
 print('Golden metric scale',mp.nstr(s,22),
       'microscopic cxx at origin',mp.nstr(hx(0),22))
