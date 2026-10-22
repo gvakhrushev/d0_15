@@ -41,28 +41,34 @@ def exact_multioutcome():
       "whole_record_entropy":"H(A,T)=H(A) (deterministic clock), not 2H(A)",
       "positive_extra_cost":"max_j(ell_j)-sum_i q_i ell_i"}
 
-def firstmatch_clock_leak(r,limit=512):
-    # Native first-match full complete stopping language:
-    # (0,1^n,0) and (1,0^n,1). Each bit REPORT is paid to length two.
-    # Total number of trials T=n+2 still depends on initial b=0/1.
+def firstmatch_clock_leak(r,limit=None):
+    # Native first-match complete stopping law with every outcome retained.
+    # Per-trial completion length 2 does NOT fix the total stop clock.
     p0=1-r;p1=r
-    joint=[]
-    for n in range(limit):
-        a0=p0*p0*r**n
-        a1=p1*p1*p0**n
-        if a0+a1>0:joint.append((n,a0,a1))
-    retained=sum(x+y for _,x,y in joint)
-    require(abs(retained-1)<1e-12,"positive original stopping distribution retained")
+    if limit is None:
+        limit=max(160,int(math.ceil(36/min(p0,p1))))
+    a0=p0*p0
+    a1=p1*p1
+    retained=0.0
     phi=(1+math.sqrt(5))/2
     info=0.0
-    for n,j0,j1 in joint:
-        pn=j0+j1
-        if j0>0:info+=j0*math.log(j0/(p0*pn),phi)
-        if j1>0:info+=j1*math.log(j1/(p1*pn),phi)
+    for n in range(limit):
+        pn=a0+a1
+        retained+=pn
+        if a0>0:info+=a0*math.log(a0/(p0*pn),phi)
+        if a1>0:info+=a1*math.log(a1/(p1*pn),phi)
+        a0*=p1
+        a1*=p0
+    # Analytically account for the exact unenumerated geometric tails.
+    tail=p0*p1**limit+p1*p0**limit
+    require(abs(retained+tail-1)<1e-11,
+            "positive original stopping law plus exact geometric tail")
+    require(tail<1e-12,"numerical mutual-information tail is negligible")
     require(info>=-1e-12,"mutual information is nonnegative")
     if r!=0.5:require(info>1e-8,"whole stopped time leaks original initial bit")
     else:require(abs(info)<1e-12,"symmetric binary trial has no initial-bit clock leak")
-    return {"native_click_r":r,"firstmatch_initial_bit_vs_total_time_MI_phi":info}
+    return {"native_click_r":r,"truncation_tail_probability":tail,
+            "firstmatch_initial_bit_vs_total_time_MI_phi":info}
 
 def finite_horizon():
     r,K=sp.symbols("r K",positive=True)
