@@ -262,3 +262,73 @@ The **same native full stopped tape** also has completely explicit actual Golden
 **CRITICAL OUTSTANDING PHYSICAL WORK:** prove an ACTUAL *admitted* field-sensitive original 528/128/AF+CAR U as a prepared, paid finite word from one common D0 initial state, together with its U† or native controlled inverse, repeated midhistory P/Q measurement and all actuator/clock/oldRIGHT work; prove the original compulsory Book03 \(\Delta_N,H+J+R,\operatorname{Info}(v)\), M1-selected cut/future question and all independent input Euler on that same complete tape. The physical nonflat exact unpadded N1 42-root and all-mesh null Einstein/CAR family are CONDITIONAL consumers of that total action, not instantly physical consequences of the mathematical J observable. Raw216/universal metric-only GR and full smooth native spacetime writer remain OPEN, \`GR_closed=false\`.
 
 **PROOF REPLAY:** [exact rational noncommuting 6×6 full P/Q U/U† + true p fairbank capped 42-source demonstration](sources/d0_book03_general_pq_pingpong_2026-10-22/check_original_book_pingpong.py) tests 12 exact F^n effects, exact bank/projection stop partition, true Golden mean cost, moving noncommuting first logdet source, finite M,K certified errors, full-prefix concrete native Cost−Shannon, original Q8 forward-only inverse. Existing original J₂ Book scene 528+528 source and original h₀ all42 certificate are CONSUMED, not falsely re-run. This script is exact-rational/symbolic on 6×6 and uses analytic all-d extension for the unrestricted theorem, not a new large original 528-mode physical preparation/writer.
+
+
+## 7. EXACT full128 heat via Poisson-echo of native no-accepted B: the original Γ is the measurable fine-archive defect
+
+**A genuinely stronger NEW positive all-curvature HEAT counterpart, not the same physical already-read full128 process.** The projector proof (2) does not actually require Q=I−P: it works for ANY pair of orthogonal projectors P and Q (possibly overlapping, of different ranks) because only \(V=QUP\) and \(V^\dagger=PU^\dagger Q\) are used. On the original complete 128-outcome CAR/Julia port instrument, the independently owned \`sources/d0_same_history_price_composition_2026-10-20/FULL128_HEAT_PRICE_RECYCLING_BRIDGE.md\` proves EXACTLY on the full original site×CAR16 state space
+\[
+B=I-\alpha\Delta\succeq0,\quad
+\alpha=p²h²/128,\quad\Delta=D^\dagger D=D²,\qquad 0\le B\le I.
+\tag{25}
+\]
+It arises from one genuinely Golden-thinned complete native original port1 effect with all 128 original labels. A Stinespring unitary dilation U_full of that **particular** original port instrument on a fresh blank input flag P0, and a projection Q_no onto its combined *no-accepted* output sector, has by Naimark/Stinespring arithmetic
+\[
+\boxed{P_0U_{\rm full}^\dagger Q_{\rm no}U_{\rm full}P_0=B}
+\tag{26}
+\]
+as an operator on the initial original data. All one-step original CAR/outcome weights remain exact. This is a **mathematical** unitary completion of its already-defined Kraus isometry, not a proof it has an admitted reverse primitive that can uncompute measured fine work.
+
+Our entirely general alternating projector theorem now gives \(B^n\) exactly as the EFFECT of n successive *coarse no-accepted / back-to-blank* echo successes. Consequently the FULL original positive heat operator admits the EXACT Poisson operator identity
+\[
+\boxed{
+e^{-\beta\Delta}
+=e^{-t}e^{tB}
+=\sum_{n=0}^\infty \frac{e^{-t}t^n}{n!}\,B^n,
+\qquad t=\beta/\alpha,\;\beta>0.
+}
+\tag{27}
+\]
+This is TRUE for EVERY finite original curved, NONCOMMUTING Δ at each finite h, not just flat Fourier scalar shells and NOT a Trotter asymptotic. If N is an independently prepared Poisson(t) stopping clock and the initial physical input on that supplied old blank section is the full normalized trace, the probability of successful coarse echo after N steps satisfies
+\[
+\boxed{
+\operatorname{Tr}e^{-\beta\Delta}
+=d\,\mathbb P_{\rm Poisson+echo}(\text{all coarse returns survive}),\qquad
+H_{\rm candidate}=\beta^{-1}\log[d\,\mathbb P_{\rm Poisson+echo}(\mathrm{survive})].
+}
+\tag{28}
+\]
+This is an EXACT positive operational HEAT counterpart to the earlier exact logarithmic feedback \(J=d_J EH_N\). The same general P/Q circuit **type** realizes both with different prescribed primitive return effects. It does NOT prove that the original complete Book03 physically selects this particular full128 \(\Delta\), Poisson clock/β, same initial preparation or actor.
+
+**The whole curved thermal first-source follows with NO [Δ,DΔ] commutation assumption.** For fixed β and α, differentiate the trace of (27) termwise using cyclicity:
+\[
+\begin{aligned}
+D\operatorname{Tr} e^{-\beta\Delta}[V]
+&= e^{-t}\sum_{n\ge1}\frac{t^n}{n!}
+  \sum_{j=0}^{n-1}\operatorname{Tr}
+      [B^j(DB[V]) B^{n-1-j}]\\
+&=t\,\operatorname{Tr}[e^{-\beta\Delta}\, DB[V]]
+=-\beta\operatorname{Tr}[e^{-\beta\Delta}\,D\Delta[V]],
+\end{aligned}
+\tag{29}
+\]
+since \(DB=-\alpha D\Delta\), \(t\alpha=\beta\). Therefore the original heat **trace source** and its logarithmic H first variation are direct complete Poisson-echo effect sources on every moving coframe/link/CAR/observer tangent for which the specified B operator is actually realized. No exceptional original Fourier-shell commutation is required mathematically.
+
+**Strict source-accurate finite heat-clock cap:** put
+\(Z_K=e^{-t}\sum_{n=0}^{K}t^n\operatorname{Tr}B^n/n!\).
+For Poisson \(N\sim{\rm Poisson}(t)\) and true active dimension d,
+\[
+\boxed{0\le Z-Z_K\le d\,\Pr(N>K),\qquad
+|DZ[V]-DZ_K[V]|\le d\beta\|D\Delta[V]\|\,\Pr(N\ge K).}
+\tag{30}
+\]
+The SOURCE bound holds for arbitrary noncommuting original Δ and its first jet; the field variation of the Poisson weights if the original β or α moves must separately be restored. With any genuine positive uniform lower bound for Z (the original heat trace), the logarithm also inherits an explicit C1 bound; NO full-mesh Z lower/DF proof is imported from a flat shell. The Poisson mean \(t=\beta/\alpha=\Theta(L²)\) at fixed β; therefore the heat branch ordinarily needs **O(L²)** mean projected U_full/U_full† calls, not the O(log² L) counting achieved for J. Physically sourcing/sampling the Poisson(t) clock from original φ with its real nonalgebraic probabilities and independent finite cap is a further real controller obligation; the identity alone is an exact mathematical trace reconstruction.
+
+**EXACT FULL-FINE-HISTORY FIREWALL — do not call this already physically implemented full128.** The prior original \`FULL128_HEAT_PRICE_RECYCLING_BRIDGE.md\` proves that literal repeated **fine-label-preserving** forward original 128-port CP transitions have second no-accepted effect \(E_2=B²-\alpha²\Gamma\), where
+\[
+\Gamma=D T^*(\Delta)D-\Delta²
+\tag{31}
+\]
+has real original curved/coframe/Lorentz first sources. Our COARSE P/Q echo instead has \(E_2^{\rm echo}=B²\). It uses U_full† to recombine/coherently uncompute fresh port work. If one copies/dephases the original separately READABLE 128 fine labels before that echo, their branch coherences are generally destroyed and the complete fine-archive return effect need NOT equal B²: the known Γ mismatch measures a real original missing/changed historical source. Hence the Poisson-echo HEAT is **an exact positive alternative coarse-record PROTOCOL**, not a proved cost-preserving realization of the original full128 fine-history mandatory Book03 heat. Any actual physically admissible equality must prove the original fine-label archive/oldRIGHT preservation, not declare outcome coarse-graining reversible.
+
+**Strategic result:** Both formerly opaque thermal and feedback operator terms admit ONE general mathematical **original projected forward/reverse return history** representation; their actual complete physical task/clock/statistical cost, fine-archive-preservation and compulsory H+J+R/Info coupling are concretely exposed instead of fitting a gravitational source. To graduate to GR one must construct ONE common paid original field-sensitive U/U†/P/Q writer that admits both effects AND demonstrate its legitimate response to original fine work, or retain the literal Γ in the full action. No general-GR/physical-Book promotion follows from these operator identities.
