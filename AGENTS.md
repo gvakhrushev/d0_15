@@ -21,6 +21,15 @@ existing result or remove a named premise; no renewed geometry/certificate
 campaign without a changed mathematical input. Conditional parallel work and
 the existing scientific owners remain available.
 
+## 22 October 2026: ORIGINAL 0/10 paid-code full42 root — current strengthened physical-source gate
+
+Read the [new strict UNPADDED all42 source-robustness theorem](02_REGISTRY/research/A4D_ORIGINAL_UNPADDED_0_10_FULL42_SOURCE_ROBUSTNESS_2026_10_22.md) and the [original frozen 0/10 code certificate](02_REGISTRY/research/sources/d0_original_unpadded42_2026-10-22/RESULT.json) BEFORE another finite gravity root search. Stronger than the older equal-width/padded root: the ORIGINAL self-delimiting physical report outcomes 0 and 10 have costs 1 and 2, and their expected Cost 1+click is ALREADY in the configured full N1 CQ source. The original unrestricted six-face 16 coframe+24 SO(1,3) links+2 real CAR gradients have a STRICT EXACT nonflat stationary root with a fixed two-cell rational collar. Its certified full42 Hessian is invertible but INDEFINITE; it is not a prospective unrestricted minimum.
+
+For THAT SAME unpadded full42 chart, a new exact mathematical source-consumption theorem applies to any genuinely selected additional continuous full42 first-source whose sup-norm is <=1e-22 on B_infty(z0,1e-20): all42 stationary equations still have an exact root. Its distance from the unpadded root is <6.090e-21; source Lipschitz <=0.01 gives uniqueness. This does NOT prove the original Book03 HJR/clock/oldRIGHT/preparation/Info/work source is small or has been computed. Never count the native 0/10 reporter charge twice. If the extra source is genuinely C2 and has Hessian norm <=0.01, two opposite coframe Hessian signs survive, so this root remains a saddle. The older padded 3e-22 source theorem is a DIFFERENT configured price. Do not interchange either tolerance or its chart.
+
+**Next native challenge:** compute the true complete same-execution 42-covector Book03 residual in the unpadded original chart, with actual source normalization, original input/field writer, stopping language, every time/abort/oldRIGHT/quantum-work/cost term and independent upstream field/preparation variations. The new [stopped full128 quantum-price source](02_REGISTRY/research/A4D_NATIVE_STOPPED_QUANTUM_PRICE_AND_SOURCE_2026_10_22.md) has a real terminal DATA-return/relative-entropy formula, but it is a DIFFERENT execution until the physical map is proved. A rank42 mathematical field variation or a valid field-output readout is not a compulsory native writer. Do not revive the pure-boost obstruction as a no-go for the certified unrestricted root. GR_closed=false.
+
+
 ## 22 October 2026: strongest finite nonvacuum root and exact source-continuation interface
 
 **Read these BEFORE proposing another geometric root search:**
