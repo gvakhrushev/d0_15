@@ -171,3 +171,8 @@ The verification kernel and generic operational transfer are composed and have d
 Содержимое результата с гипотезами: `python3 tools/gr_assembly.py --json puzzle QUERY`.
 Перед запуском работы: `python3 tools/task_dispatch.py TASK-ID`.
 Во время синтеза достаточно изменённого расчёта/узкого теста; окончательная проверка — на приёмке.
+
+
+### 22 October — original full128 non-reset complete measured-information source (Draft #334)
+
+[Exact stopped-history KL/Holevo source and independent-preparation defect](../research/A4D_NATIVE_FULL128_STOPPED_KL_QUANTUM_MEMORY_BUDGET_2026_10_22.md) joins the original native noncommuting stationary full128 CAR16 channel to **whole measured stopped fine-history** Price−Info without an iid reset or a Markov reduction: \(H(\Gamma)=(m+1)H(q)-D_{\rm KL}(P_{\rm stopped}\Vert Q_{\rm iid,stopped})\), with \(I(Z_0;Z_1)\le D_{\rm KL}\le m S_{\rm vN}(\rho_*)\) and the exact native preparation-defect source. The [narrow native checker](../research/sources/d0_quantum_return_entropy_2026-10-22/check_native_return_kl.py) evaluates the original CAR16/full128 nonreset binary port-stop and its one-port-invisible source (finite differences are **numerical**, not an interval sign proof); the full 128-fine stopped entropy and physical selected Book03 Info/Hodge/cut/clock/independent inputs remain OPEN. \`GR_closed=false\`.
