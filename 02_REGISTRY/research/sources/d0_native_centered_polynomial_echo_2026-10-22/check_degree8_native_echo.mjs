@@ -124,7 +124,8 @@ function prepared(r){
  const P=cm*cm*w.reduce((a,v,i)=>a+v*(1-T[i])**2,0);
  const source=cm*cm*(wp[0]*((1-T[0])**2-(1-T[1])**2)
      -2*w.reduce((a,v,i)=>a+v*(1-T[i])*tailPrime(y[i])*x.xp[i]/num(b0),0));
- return {r,x,w,wp,y,M,T,C,P,source,corr:P/(cm*cm)-1};
+ const corr=w.reduce((sum,wi,i)=>sum+wi*(-2*T[i]+T[i]**2),0);
+ return {r,x,w,wp,y,M,T,C,P,source,corr};
 }
 const sample=[.1,.105,1/9,.115,.12].map(prepared);
 for(let k=0;k<=80;k++){
