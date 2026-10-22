@@ -51,7 +51,7 @@ ok(lt(fpoly(R(617,1000)),Z)&&gt(fpoly(R(620,1000)),Z),
   'exact polynomial bracket 0.617<p<0.620');
 const lowerT=R(76,100),upperT=R(7688,10000);
 ok(gt(mul(R(2),square(R(617,1000))),lowerT),'native t=2p² > 0.76 exactly');
-ok(lt(mul(R(2),square(R(620,1000))),upperT),'native t=2p² < 0.7688 exactly');
+ok(eq(mul(R(2),square(R(620,1000))),upperT),'exact upper envelope t=2*(.620)^2=.7688; actual p<.620 is STRICT');
 ok(gt(h,R(13795,1000000)),'native harmonic h>0.013795 exact');
 ok(gt(G,R(2224,100000000)),'native Delta mean-h gap >0.00002224 exact');
 ok(lt(originalMu,R(14,1000)),'native mu <0.014 exact');
