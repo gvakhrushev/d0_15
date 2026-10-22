@@ -262,7 +262,20 @@ Every genuine harmonic zero mode is still counted through \(D_n-2dr\).
 \boxed{\det[\partial m_k/\partial x_i]_{k,i=1}^d
 =d!\prod_{i<j}(x_j-x_i)\ne0.}\tag{23}
 \]
-Thus fewer than \(d\) scalar power-moment probabilities generically leave an actual positive-dimensional spectral ambiguity; \(d\) is the sharp UNIVERSAL bound within this exact forward-blank moment method. On the original special CAR16 \(8+8\) chart, the truly proved quadratic polynomial reduces the required source tests from sixteen to TWO, and (18)–(21) reduce identically to the already derived \(T_n(a,b)\) formulas (4)–(11). This is an exact multiscale *moment-to-native-feedback* synthesis, not an assertion that \(d\) field probes physically span the 42 coframe/Lorentz/CAR writer.
+Thus fewer than \(d\) scalar power-moment probabilities generically leave an actual positive-dimensional spectral ambiguity; \(d\) is the sharp UNIVERSAL bound within this exact forward-blank moment method.
+
+**A stronger hostile FIRST-JET witness, without inverse-function heuristics.** For any such strictly distinct \(x_i\), take the exact real native-type eigenvalue variation
+\[
+\boxed{v_i=\left[\prod_{j\ne i}(x_i-x_j)\right]^{-1}.}\tag{23a}
+\]
+The Lagrange-interpolation leading-coefficient identity then gives
+\[
+\boxed{
+D_vm_k=k\sum_i x_i^{k-1}v_i=0\quad(1\le k<d),
+\qquad D_vm_d=d\ne0.
+}\tag{23b}
+\]
+Thus an entire nonzero actual spectral SOURCE direction can be invisible to *all* of the first \(d-1\) blank-event probabilities and their jets while changing the last required moment. This is an exact constructive source-kernel no-go for any purported universal all-\(d\)-spectra feedback reconstruction based on fewer history types. The [independent exact rational generic four-eigenvalue regression](sources/d0_native_two_blank_hodge_recursion_2026-10-22/check_universal_blank_newton.py) verifies (23a,b) alongside all reconstructed feedback determinants and first sources, with a full \(4\times4\) Vandermonde rank. It does NOT assert that the original native CAR16 \(8+8\) spectral submanifold permits arbitrary four-eigenvalue variations; its TWO-moment shortcut remains valid precisely because of its already PROVED quadratic minimal polynomial. On the original special CAR16 \(8+8\) chart, the truly proved quadratic polynomial reduces the required source tests from sixteen to TWO, and (18)–(21) reduce identically to the already derived \(T_n(a,b)\) formulas (4)–(11). This is an exact multiscale *moment-to-native-feedback* synthesis, not an assertion that \(d\) field probes physically span the 42 coframe/Lorentz/CAR writer.
 
 **Actual original raw scale:** for the generic original full DATA128 carrier, this theorem applies at \(d=128\) IF its true \(K_0\) is positive on the stated strict native chart and if the same input mixed-state witness is really admitted; the full 128 Kraus outcome alphabet stays intact. It requires at most 128 different blank-history **event types**, not enumeration of \(128^{128}\) probabilities. It emphatically does NOT claim only 128 total executed trials, a free maximally mixed/reference preparation, cheap discrimination of rare spectral splittings, or a compulsory original Book03 Hodge operator. In fact the two-event CAR16 splitting at (16) already has a large classical sampling-price CRLB (16c).
 
