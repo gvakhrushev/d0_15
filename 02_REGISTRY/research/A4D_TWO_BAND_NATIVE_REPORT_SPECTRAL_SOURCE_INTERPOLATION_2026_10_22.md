@@ -89,3 +89,25 @@ Run:
   python3 02_REGISTRY/research/sources/d0_single_mean_critical_manifold_2026-10-22/check_two_band_trace_source.py --repo .
 
 The script pins the ORIGINAL h4 report/Hessian interval receipts, checks the exact two-moment polynomial map and Lagrange interpolation in exact fractions and high precision Decimal at positive unequal report bands, and checks the finite original 42-source cancellation via the frozen entropy-slope ratio. It does NOT run the expensive 1764-entry original Hessian certificate, write physical Book03 heat, execute extra paid reporters, or prove GR_closed. Never promote without the same-execution whole Book03 source and independent upstairs field equations.
+
+
+## 6. One scalar two-band spectral Book acceptance determinant
+
+The two-eigenvalue operator form gives a practical necessary-and-sufficient SOURCE TEST for ANY proposed smooth equal-weight **additive spectral** Book component \(\mathcal J_j(y)=\operatorname{Tr}j(E(y))=j(r_0(y))+j(r_1(y))\), with its cut, absolute baseline, dimension and calibration ACTUALLY fixed and field-independent. The real full42 original CQ root obeys \(h_\varphi'(r_0)Dr_0+h_\varphi'(r_1)Dr_1=0\), with \(Dr_0\ne0\). Consequently
+
+\[
+\boxed{
+D\mathcal J_j(y_*)=0
+\quad\Longleftrightarrow\quad
+\det\begin{pmatrix}
+j'(r_0)&j'(r_1)\\
+h_\varphi'(r_0)&h_\varphi'(r_1)
+\end{pmatrix}=0.
+}\tag{8}
+\]
+
+This is an exact TWO-PROBE first-source acceptance criterion, independent of the size of the full 42-coordinate chart. It is strictly more informative than matching \(j(r_0)+j(r_1)\) or any one scalar first derivative. The known fixed Golden and H two-channel comparators fail because their ratio \(j'(r)/h_\varphi'(r)\) is strictly monotone over the original reporter interval; they are rejected by the original owner \`A4D_OFF_NULL_TWO_CHANNEL_BOOK_SOURCE_RIGIDITY_2026_10_22.md\`, not re-claimed here. The generated renewal-Gibbs *mathematical* HJR candidate instead has the correct ENTIRE nonlinear score, so its first-source determinant is zero by construction on its own specified carrier.
+
+If (8) holds only at one root, it is NOT sufficient for equality of 42×42 Hessians, isolation or open-chart source equivalence. Their genuine second jets must also be transported. If original Book has independently field-moving \(\beta\), fugacity, Hodge heat, prepared cut, oldRIGHT/reference or branch-Info/work, its first source is NOT merely \(D\mathcal J_j\); all additional terms must be included before applying the root test. Nonadditive two-address operator feedback is outside (8) but can be treated via the full spectral Fréchet derivative.
+
+This is a reusable rejection/acceptance gate for candidate Book spectral components that originate on the SAME original two-band addressed reporter, not a licence to choose \(j\) to fit the CQ stationary point. Original full Book03 physical selector and global GR remain open.
