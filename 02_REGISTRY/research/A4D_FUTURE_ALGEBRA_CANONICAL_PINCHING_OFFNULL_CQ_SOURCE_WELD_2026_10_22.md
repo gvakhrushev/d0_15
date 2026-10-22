@@ -108,6 +108,32 @@ D_{42}S_{\rm record}^{\rm paid}
 \]
 It is therefore a nonzero **fixed positive scalar multiple of the ACTUAL old configured N1 entropy-price covector on the entire open field chart**, without selecting the scalar to match Einstein gravity. The original N1 normalized price carries its already fixed Golden \(\tau,h'_\varphi(r_\star),r_x^\star\); converting absolute charges to that published source normalization retains that specific nonzero factor.
 
+
+### Exact quantitative root inheritance, without a new optimizer
+
+The existing **rigorously interval-certified** original h=1/4 full42 fixed-collar independent CQ price (consumed unchanged from \`sources/d0_exact_full42_h4_2026-10-22/PROOF.md\` and its independent PRICE replay) is exactly
+\[
+S_{\rm N1}(y)=-\frac{1}{\tau\,h'_\varphi(r_\star)\,r_x^\star}
+ \sum_{j=0}^1[h_\varphi(r_j(y))-h_\varphi(r_\star)],
+\quad
+\tau=\frac1{20},\
+r_x^\star=4\zeta(1-\zeta\,4p^3)p^{11}>0.
+\]
+These constants are the **unchanged ORIGINAL Golden N1 normalization**, not tuned for this construction. Substitution into (7) with one genuinely paid terminal common cost \(c=2\) per report gives the **entire scalar open-chart identity**
+\[
+\boxed{
+S_{\rm record}^{\rm paid}(y)
+=\underbrace{4-2h_\varphi(r_\star)}_{\rm field\ independent}
++\underbrace{\tau h'_\varphi(r_\star)r_x^\star}_{c_{\rm native}>0}
+   S_{\rm N1}(y),
+\quad
+c_{\rm native}\simeq2.6290078337502135\cdot10^{-8}.
+}\tag{7a}
+\]
+It is stronger than proportionality of one first source: every 42-dimensional field jet and Hessian agrees under the SAME positive constant \(c_{\rm native}\), on the complete unequal-report chart, with no new Einstein/CAR ratio, root search, clock fit or hand-picked action counterterm. Therefore the **old rigorously certified h4 exact nonflat full42 configured field root** is also an EXACT field-stationary root of this **specifically defined two-complete-paid-report / operationally pinched record price**. Its local uniqueness and indefinite (saddle) free-field Hessian persist verbatim under multiplication by \(c_{\rm native}>0\).
+
+**No promotion:** Eq. (7a) is NOT yet the actually compulsory Book03 \(H+J+R\) executed price, M1-selected future algebra, FULL independent prepared input Euler, physical two-copy writer, original unpadded 0/10 cost, or a GR/refinement theorem. In particular an independently free reporter amplitude is NOT stationary at the rare \(r_\star\); the physical native preparation constraint/reaction remains necessary.
+
 The native paired Golden active/archive splitter \(U_\varphi\) on a field-independent **fixed-rank** active/archived scene gives exactly \(F=p^2P\), fixed \(J=-{\rm rank}(P)\ln(1-\zeta p^2)\); a genuinely fixed 33-scene heat is constant too. Thus on this specified fixed-splitter/fixed-scene candidate the entire field FIRST SOURCE can reside in (7), without demanding the physically inaccessible programme coherence to appear in the determinant. **This is one mathematically consistent same-carrier source architecture, not a proof that Book03 §03.25 automatically adds (7), or that its compulsory moving Hodge is that fixed scene.**
 
 ### Strict independent-input/admission status
