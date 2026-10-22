@@ -135,3 +135,28 @@ The complete uncapped independent first-match task executes mean THREE report ma
 **Consequently:** IF the original native prospective D_min programme admits BOTH padded and unpadded executions for the SAME observer task and counts time/work Cost as above with NO independent deadline or latency requirement, the padded policy is strictly pointwise Cost−Info dominated and CANNOT be selected as its minimizer. Merely writing a positive conditional no-op into a diagram does NOT fix that physical selection problem. To make the padding a legitimate necessary execution step one must derive an actual compulsory **fixed-duration/constant-time observable task** or independent temporal/work constraint already present in D0; a post-hoc demand introduced solely to erase the +D r source would be a fitted selection premise.
 
 Thus the theorem is a precise **sufficient mathematical source bridge plus a necessary physical-admission gate**, not a physical explanation why gravity must be Einstein. Raw code S_raw and padded S_paid belong to DIFFERENT paid programmes. The original compulsory Book03 §03.25 moving Hodge heat/complement and vertex Info are STILL unbound to the padded measured source. Keep all of these distinctions in the final GR consumer. GR_closed=false.
+
+
+## 7. Unique minimal non-leaking completion-clock theorem — a NEW task-selection route, not a native axiom
+
+There is a non-fitted operational interpretation of the charged equalizer that can be tested directly against the existing D0 full-history/observer/clock specification. Let B∈{0,1} be the true measured Golden bit, with P(B=1)=r∈(0,1). Let T be the ACTUAL PUBLIC REPORT COMPLETION TIME in Golden charged ticks, including any admitted field-independent deterministic additional delay d_B≥0. Its two values are
+
+  T0=1+d0, T1=2+d1.                                    (14)
+
+The completion clock is a deterministic function of B on this specified two-report subtask. There are exactly TWO cases, with no approximation:
+
+  I_phi(B;T) = H_phi(r)  if T0 != T1,
+             = 0         if T0 = T1.                     (15)
+
+Proof: if the two times differ then T alone identifies B, so H_phi(B|T)=0 and I=H_phi(B). If they agree, T is constant and I=0. In both cases the JOINT measured record (B,T) has entropy H_phi(B), not H_phi(B)+H_phi(T): the time mark is redundant in the first case and constant in the second. Merely retaining both does NOT double-count entropy, so no additional information penalty is inferred.
+
+Thus the following *physically meaningful but still OPTIONAL* native task could select the earlier unique source-preserving schedule WITHOUT fitting an Einstein source:
+
+  **TIMING-BLIND OBSERVER CONTRACT:** an external/less privileged clock observer,
+  who can see completion time T but not the original Golden outcome B, must not
+  distinguish the two output states through execution duration; equivalently
+  I_phi(B;T)=0 for every 0<r<1.
+
+Under this precisely specified task, the two code branches MUST have equal completion length; among nonnegative integer charged deterministic delays the UNIQUE cheapest is d0=1,d1=0, total time2. Then raw original 0/10 is NOT an admissible task solution, so the strict cost-dominance comparison from §6 no longer applies to the *restricted timing-blind task*. The padded programme is the minimal positive-cost candidate **within that restricted class**. The matching whole off-null native N1 CQ first source follows AUTOMATICALLY from an independent timing/task constraint, not from inserting a field-dependent information counterterm.
+
+**Hard rejection gate:** No current owner has proved that M1/Book03/D0 automatically imposes this clock non-leakage requirement. The existing actual native full tape often explicitly RETAINS duration, and an observer who already reads B gains no EXTRA Shannon information from also seeing T. Constant execution duration is therefore NOT forced by data-processing, normalized probability or the Book03 entropy identity. It must be derived from an actual specified observer-equivalence, privacy, temporal-causality or compulsory fixed-latency task, including the physical charging and availability of the deterministic identity tick. Without that derivation the original raw code and its extra +Dr source remain equally legitimate mathematical executions; the physical Einstein stationarity is not selected by the optional equalizer. GR_closed=false.
