@@ -138,6 +138,56 @@ close(dSurvV,Hsurvv+Jv,2e-8,"true original CAR native one-port invisible log-sur
 ok(Math.abs(nuV+.6*hp/(2*h))<2e-14,"no fitted tangent native r and ν co-transport");
 const dnu=dNumerical(nuPath);
 close(dnu,nuV,3e-9,"nonlinear exact one-port cost-preserving actual native preparation path");
+
+// THE CANONICAL log-native modular Gibbs repair is already a known,
+// previously proven native state/heat reconstruction, NOT a new physical Book selection.
+// It makes the independent heat Euler rho-Gibbs identically 0, but NOT the
+// full moving Lorentz field Euler of the SAME unmodified original J2.
+const sRatio=e/mu;
+const dsRatio=epsV/mu-e*muV/(mu*mu);
+const qHigh=(1+sRatio)/2;
+const Hbinary=x=>-x*Math.log(x)-(1-x)*Math.log1p(-x);
+const nativeEntropy=Math.log(8)+Hbinary(qHigh);
+const modularValue=nativeEntropy/beta;
+const modularSource=-Math.atanh(sRatio)*dsRatio/beta;
+const modularAnalytic=-Math.atanh(sRatio)*h*muV/(2*beta*mu*mu*sRatio);
+close(modularSource,modularAnalytic,3e-14,
+  'canonical true original DATA log-modular whole 16-eigenspace entropy source');
+const modLower=.013795*.00042/(2*.8*.014**2);
+ok(modLower>.01847,"native strict analytical modular field source >0.01847 magnitude");
+ok(modularSource < -modLower,
+  'CANONICAL log-native Gibbs matching DOES NOT make native field stationary');
+ok(modularSource+Jv<-.01842,
+  'actual original J2 fails to cancel CANONICAL Gibbs-matched native HJR source');
+function nativeModularValue(rr,nu2){
+ const n=nativeFloat(rr,nu2),ss=Math.sqrt(1-n.h/n.mu);
+ return (Math.log(8)+Hbinary((1+ss)/2))/beta;
+}
+const checkMod=dNumerical(r=>nativeModularValue(r,nuPath(r))+
+   functionals(r,nuPath(r)).feedback);
+close(checkMod,modularSource+Jv,6e-8,
+  'independent NATIVE nonlinear constant-port path modular HJR field source');
+const qNative=c*h,deltaPort=c*c*h*(mu-h);
+const Bport=qNative*(1-qNative)-deltaPort;
+const dDeltaPortV=c*c*value(x.B);
+const MI2source=Math.log1p(deltaPort/(Bport*Bport))*dDeltaPortV;
+const right128GoldenInfoSource=128*MI2source/Math.log(1/p);
+ok(qNative>.0129&&qNative<.0138,"true original stationary one-port bound");
+ok(deltaPort<3.1e-7 &&deltaPort>0,"genuine all128 port covariance small positive");
+ok(Bport>.012,"true positive original two-port offdiagonal probability");
+ok(dDeltaPortV>0&&dDeltaPortV<6e-6,"native one-port invisible two-port correlation sensitivity");
+ok(Math.log1p(deltaPort/(Bport*Bport))<.0022,
+   "exact log(AC/B^2) bound for one-port-invisible actual native 2-port MI");
+ok(MI2source<1.32e-8,"strict native old port MI source smaller than 1.32e-8 nat");
+ok(right128GoldenInfoSource<3.52e-6,
+   "even multiplied by original RIGHT128 the TWO-PORT INFO source is too small");
+ok(Hrawv+Jv+right128GoldenInfoSource<-.000371,
+  "two-port MI cannot repair raw HJR native source even with oldRIGHT128");
+ok(Hsurvv+Jv+right128GoldenInfoSource<-.000373,
+  "two-port MI cannot repair survival HJR native source even with oldRIGHT128");
+ok(modularSource+Jv+right128GoldenInfoSource<-.01841,
+  "two-port MI cannot repair canonical log-modular HJR native field source");
+
 console.log(JSON.stringify({status:"PASS_ORIGINAL_FULL128_NATIVE_HJR_THERMAL_WARD",checks,
  originalPins:{
   operator:"d0_native_preparation_closure_2026-10-21/PROOF.md §7",
@@ -150,4 +200,9 @@ console.log(JSON.stringify({status:"PASS_ORIGINAL_FULL128_NATIVE_HJR_THERMAL_WAR
  onePortInvisible:{amplitudeDirection:nuV,muDirection:muV,
   heatRaw:Hrawv,heatSurv:Hsurvv,feedback:Jv,fullRaw:Hrawv+Jv,
   fullSurv:Hsurvv+Jv},
+ canonicalModular:{value:modularValue,fieldSource:modularSource,
+    combinedWithActualBookJ:modularSource+Jv,analyticalSourceLowerBound:modLower},
+ twoPortInfoRepair:{originalStationaryPortQ:qNative,correlation:deltaPort,
+    invisibleDirectionMI2Source:MI2source,
+    originalRIGHT128MaxGoldenSource:right128GoldenInfoSource},
  nativeBookHodgeNotIdentified:true,fullPhysicalGRClosed:false}));
