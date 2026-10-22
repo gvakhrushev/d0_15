@@ -10,6 +10,19 @@ maps, and composes them into physical theories. **General relativity is
 the first complete physical specialization to finish.** Its full native
 action, admissible variations and universal refinement remain open.
 
+**Current focus (22 October):** [work backwards from the exact solution,
+then prove the physical composition forwards](02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md#source-composition-first-backward-search-and-forward-proof).
+The priority is one complete admitted execution whose full field source,
+including preparation, retained information and clock/work, consumes the
+existing nonlinear solution or a compatible residual-continuation theorem.
+Faithful physical realization can use a proved source equivalence or controlled
+remainder; it does not require uniqueness of all microscopic actions. Keep the
+actual source gain, independent internal equations and refinement norm. Reuse
+the successful exact coupled-equation, same-carrier and invariant methods;
+measure progress by a proved substitution or a concrete changed route.
+First curved realization, uniform refinement and universal GR remain distinct
+conclusions with their own hypotheses.
+
 **Current synthesis:** [one composed route from actual records to geometry,
 complete price and gravitational response](02_REGISTRY/research/A4D_GLOBAL_RESULT_COMPOSITION_2026_10_20.md).
 The results now do more than coexist: the native CAR readout reconstructs
@@ -87,7 +100,8 @@ certificate for thirteen new narrow groups. It preserves the prior
 and parallel research. It does not close `positive_gr`, `GR_closed`,
 the original raw216 terminal, or the scientific parent.
 
-The next application has two coupled physical inputs. First, derive an
+For the prospective/Julia realization route, the next application has two
+coupled physical inputs. First, derive an
 actual joint solder/pairing/link step and its complete field-and-price
 image, or an independently justified native stationary law. Second,
 test the original same-prefix Julia two-ending odds against the owned
@@ -98,6 +112,11 @@ Use the already-computed compiler and repeat-cost differences to decide
 whether the proposed complete source descends. Once it does, the existing
 exact Einstein–matter and universal-response theorems become consumers;
 they need no new geometric census.
+
+This is one sufficient realization route. A separately justified native
+stationary/constraint law or complete-source transport can use its own proved
+inputs; it need not establish this particular Julia continuation experiment.
+Every route retains the full physical source and its independent equations.
 
 The [shared TRIZ / Golden-Beatty handoff](02_REGISTRY/research/D0_TRIZ_PHI_AGENT_HANDOFF_2026_10_20.md)
 keeps the positive loop-void and matched-reference results, the exact

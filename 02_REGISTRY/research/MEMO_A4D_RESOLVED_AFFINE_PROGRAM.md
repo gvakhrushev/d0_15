@@ -7,6 +7,74 @@
 `dff7498b9071ad4d9fd1580b80829d91eb55f534`. Current research inputs retain their
 exact source pins in the [assembly](../gr_assembly/README.md#current-scientific-gate).
 
+## Source composition first: backward search and forward proof
+
+**User-confirmed focus, 22 October 2026.** Start from the existing exact
+nonvacuum solution and work backwards to the smallest missing physical
+premise that makes it a theorem about an admitted D0 execution. Prove that
+premise forwards from the original operations, records, constraints and full
+price. The target Einstein equation guides the search; it is not an input
+to native admission. This section sets the current priority of the preserved
+routes below; it introduces no new task, physical axiom or acceptance gate.
+
+The immediate goal is one faithful, complete native realization on the stated
+nonempty curved class. Uniqueness of every microscopic action is unnecessary.
+The full source, independent internal equations and actual observations must
+be preserved. Universal equation-class identification and uniform refinement
+retain their own stronger obligations; neither is supplied by another member
+of the same exact solution family.
+
+For one independently specified physical execution, derive its actual
+preparation, available future tests, active cut, clock, work and complete
+Cost/Info. On a genuinely justified internal stationary section `sigma_h`,
+or through an explicitly proved causal elimination, compute the full pulled-back
+field covector. The useful comparison has the form
+
+\[
+\mathcal F_{\mathrm{phys},h}
+=d(S_{\mathrm{phys},h}\circ\sigma_h)
+=a_h\mathcal F_{\mathrm{ref},h}+\mathcal R_h,
+\qquad |a_h|\ge a_{\min,h}>0.
+\]
+
+This is a source identity after a proved common carrier/coordinate map,
+not an assumed equality of actions. A field-dependent multiplier must be
+derived from the whole differential; differentiating `a_h S_ref` also produces
+`S_ref da_h`. Keep every independent preparation/reference/oldRIGHT equation
+unless its elimination has actually been proved. Source and residual bounds
+retain the real gain, physical norm, boundary conditions and refinement map.
+In particular, estimate `R_h/a_h` when consuming a normalized root theorem;
+small unnormalized source values alone do not establish small field corrections.
+
+Use the existing exact family if the complete residual vanishes on its actual
+admitted directions. Use a compatible proved inverse/continuation theorem
+when the complete residual satisfies that theorem's bounds. A common-null
+source identity, an off-null finite-collar root and a mesh-uniform limit have
+different hypotheses; transfer between them is itself a mathematical result.
+Failure of a sufficient local budget does not rule out other controlled
+continuations. An implementation minimum at fixed fields does not make an
+indefinite field-stationary point a full-field minimum.
+
+### Methods that have already changed the argument
+
+| Reuse actively | Successful application and next use |
+|---|---|
+| Solve the coupled original equations before restricting variations | The [all40 and exact nonvacuum recovery](D0_GR_PRIMARY_POSITIVE_CASE.md) retain ambient coframe/link/material rows. Consume their solution and source maps before starting a new root search. |
+| Keep exact nonlinear structure and the actual record/clock map | Midpoint recovery and [global source composition](A4D_GLOBAL_RESULT_COMPOSITION_2026_10_20.md) connect one fixed smooth metric to finite histories. A few Taylor coefficients do not replace that map. |
+| Compose complete operators and then differentiate the same price | The [coupled-cut application](https://github.com/gvakhrushev/d0_15/blob/438abae40fd6008e486504a31f92867084ebc1ba/02_REGISTRY/research/sources/d0_coupled_cut_partition_2026-10-22/README.md) removes the previously assumed common-heat comparison. Its stated cut/calibration remain explicit research premises. |
+| Replace an overly strong identity by the physical statement actually needed | A [same-action stationary-section comparison](https://github.com/gvakhrushev/d0_15/blob/438abae40fd6008e486504a31f92867084ebc1ba/02_REGISTRY/research/sources/d0_coupled_cut_partition_2026-10-22/STATIONARY_SECTION_AND_WRITER.md) compares complete covectors; it does not require equality of every microscopic operator. |
+| Turn a precise obstruction into a changed construction | The [field-minimum exclusion](A4D_NATIVE_JOINT_FIELD_MINIMUM_EXCLUSION_2026_10_20.md) directs work to genuine reachable variations or a native stationary law. A new candidate must address the identified mechanism, with a decisive control. |
+| Use invariant classification after establishing its native hypotheses | Golden-scale and Lovelock routes below can determine an equation class. They are alternative sufficient routes, not permission to impose a desired symmetry or add a new universal prerequisite. |
+
+The next substantial result must either supply a missing physical operation or
+source term in this comparison, prove its admissible variations, or establish
+the bound/transport that lets an existing solution theorem consume it. State
+the actual substitution or scoped route change in the existing owner. Reuse
+complete proofs and unchanged certificates; a new root, detector, census or
+PASS count is useful only through that application. Independent conditional
+work remains legitimate on declared interfaces and is not blocked until the
+whole physical realization is finished. Full physical GR remains open.
+
 ## Global composition checkpoint: actual records, geometry, price and field image
 
 The [global result composition](A4D_GLOBAL_RESULT_COMPOSITION_2026_10_20.md)
@@ -28,10 +96,11 @@ differences. The fixed-coordinate-pairing writer theorem then converts
 an observed profile difference into a distance from that writer's field
 image, with an explicit required moving-pairing escape.
 
-The current physical application is an admitted joint field-and-price
-step or independently derived native stationary law, joined to the
-same-prefix two-ending Julia/prospective valuation test. The latter
-requires equal full continuation partition weights and actual absolute
+For the prospective/Julia route, the current physical application is an
+admitted joint field-and-price step or independently derived native stationary
+law, joined to the same-prefix two-ending Julia/prospective valuation test.
+Other justified native source routes need not establish this experiment.
+The Julia test requires equal full continuation partition weights and actual absolute
 Book anchoring. The complete Info/work source must satisfy the computed
 occupation/refinement differences before descending to the observable
 geometry. The prospective field-and-price graph is one sufficient
