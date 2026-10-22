@@ -1314,3 +1314,47 @@ macro/row/Golden-bit sources; the real row entropy first source
 must be kept when attempting to transport the Boolean vacuum
 Palatini/Einstein consumer. All physical Book selection, SCENE
 Hodge and 42-field writer obligations remain open.
+
+
+## 13. The original full128 whole-history FIRST-SOURCE limit is now supplied
+
+[Section 8 of the original stationary-rate owner](A4D_ORIGINAL_FULL128_UNIQUE_STATIONARY_CQ_RATE_AND_FINITE_ENTROPY_BRACKETS_2026_10_22.md#8-strong-whole-history-first-source-limit-including-the-actual-paid-initial-prefix)
+proves the previously missing strong limit for the actual port-CQ
+component, including moving native Kraus, a nonstationary actual initial
+state, every fine prefix record and its true port charges 1 and 2.
+
+On a compact regular primitive CAR16 chart, with fixed passive RIGHT
+dimension and a bounded smooth initial purification, its actual price
+P_n satisfies
+
+\[
+ P_n/n\longrightarrow s_*,\qquad
+ \|D(P_n/n)-Ds_*\|\le C_U/\sqrt n,\qquad
+ s_*=\bar c_*-h_*/\ln\varphi.                         \tag{42}
+\]
+
+The proof combines the owned primitive/Poisson preparation and entropy
+rate with a centered sequential-purification tangent bound, a
+finite-memory block-information bound and a summable dyadic derivative
+series. A mathematical mixture flag handles the recorded initial prefix;
+no physical reset, uncharged warmup or finite-history enumeration is used.
+The fixed-dimensional terminal DR conditional entropy has an O(sqrt(n))
+source, so the actual native65 DATA and full retained-CQ versions have
+the SAME strong intensive first-source limit.
+
+This supplies the original full128 COMPONENT of (41)'s strong-history
+source interchange. Under an actual geometry map Y_h with lift norm L_h,
+its error is at most C_(U_h)L_h/sqrt(n_h), divided by the REAL nonzero
+gain in (41). Horizons n_h are fixed during each field derivative.
+Actual field-dependent prefactors retain their product-rule value-error
+term; additional stopping/clock policies require their own source.
+No uniform h-gap, C2 estimate or arbitrary physical horizon is inferred.
+
+The next source substitution is now sharper: identify the actually
+selected complete Book/Info/work valuation and its scene/cut/field map,
+then compare its TRUE intensive source with Ds_* and the owned
+Palatini--CAR consumer. The theorem does not authorize adding P_n to
+H+J without their same-valuation identity. Independent apparatus
+equations, genuine field admission, joint stationarity and physical
+refinement remain required. The original row-memory source remains;
+GR_closed=false.

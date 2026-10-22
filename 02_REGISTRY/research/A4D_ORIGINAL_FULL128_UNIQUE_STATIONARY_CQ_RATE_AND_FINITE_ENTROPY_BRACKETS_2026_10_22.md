@@ -250,3 +250,344 @@ law and uniform raw216 recovery. **Book03's compulsory pathwise
 Info is not defined by merely calling (13) the world action**.
 
 No Book/core/claim/GR flag has been promoted. `GR_closed=false`.
+
+
+[Analytical review of the continuation](sources/d0_original_full128_future_even_algebra_2026-10-22/HISTORY_C1_SOURCE_REVIEW.md) pins its exact proof, inputs and parent application.
+
+## 8. Strong whole-history FIRST-SOURCE limit, including the actual paid initial prefix
+
+This continuation consumes §§2--5 and the owned native three-tick
+primitivity/Poisson theorem. Its new substitution is the missing
+interchange of the whole-history limit with its FIELD derivative.
+It does not deduce a derivative bound from a value bound. The argument
+uses the actual sequential Kraus purification, finite DATA memory and
+an entropy-block identity; no history census or filter-stability premise
+is needed. Input: 8fb2a5af50d82e2bec9ab677c075442f01ab45c8.
+
+### 8.1 Exact scope and conclusion
+
+Let U be a compact subchart of a finite-dimensional open regular
+parameter chart of the ORIGINAL fixed CAR16/full128 instrument.
+Use its actual parameter norm. Assume bounded C1 Kraus jets, the
+owned uniform contraction with q<1, and rho_*(Y)>=a I for one a>0.
+These hypotheses hold on a sufficiently small compact neighbourhood
+of the proved original fixture; no all-mesh uniformity is asserted.
+
+The initial state Omega_DR(Y) has fixed finite passive RIGHT dimension
+and a C1 purification with bounded first jets. This includes every
+field-independent initial density matrix, pure or mixed, and regular
+moving preparations. All n fine records remain registered and all
+original charges c_alpha=1+(alpha mod2) are paid. No additional growing
+unmeasured quantum factory is put into DR by declaration.
+
+Let H_n(Y,rho_0(Y)) be (3)'s full fine-word Shannon entropy, where
+rho_0=Tr_R Omega. Define the actual efficient retained-CQ output
+
+\[
+ \Gamma_n=\bigoplus_\gamma
+ (K_\gamma\otimes I_R)\Omega(K_\gamma^\dagger\otimes I_R),
+ \qquad \ell=\ln\varphi,
+\]
+\[
+ P_n=C_n-\{S(\Gamma_n)-S(\Omega)\}/\ell.                 \tag{21}
+\]
+
+This is the same port-CQ-gain component as the native65 causal owner,
+not a newly selected Book03 Info. There exist finite chart-dependent
+constants such that, for every n>=1,
+
+\[
+ h_*,s_*\in C^1,\qquad
+ \left\|D\{H_n(\rho_0)/n\}-Dh_*\right\|\le C_U n^{-1/2},
+\]
+\[
+ \boxed{\left\|D(P_n/n)-Ds_*\right\|\le C'_U n^{-1/2},
+ \qquad s_*=\bar c_*-h_*/\ell.}                        \tag{22}
+\]
+
+The derivatives include moving Kraus AND actual initial-state jets.
+Values converge uniformly too: their error is O(log(n+1)/n), improving
+to O(1/n) for stationary DATA. The proof establishes C1, not C2 or a
+finite-horizon preparation Euler equation.
+
+### 8.2 Centered sequential tangents have a linear squared-norm bound
+
+Put V=sum_alpha |alpha> tensor K_alpha, so V^dagger V=I.
+For one actual unit parameter tangent v set
+
+\[
+ B=V^\dagger D_vV,\quad \mu=\operatorname{Tr}(\rho_*B)\in i\mathbb R,
+ \quad \dot V_c=D_vV-\mu V,\quad B_c=V^\dagger\dot V_c.
+                                                               \tag{23}
+\]
+
+Then Tr(rho_* B_c)=0 and B_c is anti-Hermitian. This is only a
+POINTWISE purification tangent gauge: at length n it subtracts
+n mu times the state, changing no physical probability derivative.
+No globally integrable phase choice or additional physical gate is used.
+
+Duality of the owned trace contraction gives, for this centered operator,
+
+\[
+ \|(\Phi^*)^j B_c\|_\infty
+       \le2q^{\lfloor j/3\rfloor}\|B_c\|_\infty.        \tag{24}
+\]
+
+Let xi_i be the purification tangent with dot V_c inserted at step i.
+For i<j, cancel the later isometries and trace the earlier records:
+
+\[
+ \langle\xi_i,\xi_j\rangle=
+ \operatorname{Tr}\{\rho_{i-1}\dot V_c^\dagger
+ [I_{\rm record}\otimes(\Phi^*)^{j-i-1}(B_c)]V\}.       \tag{25}
+\]
+
+Here rho_(i-1)=Phi^(i-1)(rho_0); stationarity of the INITIAL state
+is not needed. If ||dot V_c||<=M, then ||B_c||<=M. Diagonal terms
+are <=M^2 and the absolute cross terms are bounded by (24).
+Since sum_(j>=0)q^floor(j/3)=3/(1-q),
+
+\[
+ \left\|\sum_{i=1}^n\xi_i\right\|^2
+       \le n M^2\left(1+\frac{12}{1-q}\right).          \tag{26}
+\]
+
+Including the moving initial purification, of tangent norm <=J,
+by the squared triangle inequality yields a gauged full-history lift
+psi_n with
+
+\[
+ 4\|D_v\psi_n\|^2\le
+ 8J^2+8nM^2\left(1+\frac{12}{1-q}\right)=:F_n.         \tag{27}
+\]
+
+In particular the classical fine-record Fisher quantity
+sum_(p_gamma>0)(D_v p_gamma)^2/p_gamma is <=F_n: apply
+Cauchy--Schwarz separately to the orthogonal recorded branches.
+The same purification bound applies after fixed-basis dephasing and
+retention of any fixed passive reference. It does not reset DATA or
+replace the conditional states by their mean.
+
+### 8.3 Stationary block information has a sqrt(n+m) source bound
+
+At stationary DATA, let x,y be consecutive full words of lengths n,m.
+Their conditional DATA sigma_x is a density matrix. With E_y the
+future-word effect,
+
+\[
+ p_{xy}=p_x\operatorname{Tr}(E_y\sigma_x),\quad
+ p_y=\operatorname{Tr}(E_y\rho_*),\quad
+ 0\le r_{xy}:=\frac{p_{xy}}{p_xp_y}\le a^{-1}.          \tag{28}
+\]
+
+The last inequality follows from sigma_x<=I<=rho_*/a. On positive
+support the marginal derivative terms cancel exactly, so
+
+\[
+ D_v I_{n,m}=\sum_{x,y}D_vp_{xy}\ln r_{xy}.            \tag{29}
+\]
+
+Writing Q_xy=p_xp_y, the r<=1 contribution to
+sum p ln^2 r is at most 4/e^2, because
+max_(0<=r<=1) r ln^2 r=4/e^2. The remaining contribution is at
+most ln^2(1/a). Thus
+
+\[
+ |D_v I_{n,m}|
+ \le [\ln^2(1/a)+4/e^2]^{1/2}\sqrt{F_{n+m}}
+ \le C_U\sqrt{n+m}.                                  \tag{30}
+\]
+
+Zero/dark words remain present. Finite-word entropy is C1 in its
+smooth amplitude lift: -||z||^2 ln||z||^2 has derivative zero at
+z=0. Formula (29) is taken on positive support with zero terms
+understood by that extension. No positive lower bound on every
+history probability, and no C2 rank-birth assertion, is required.
+
+The owned stationary identity gives H_(2n)^*=2H_n^*-I_(n,n).
+For f_n=H_n^*/n,
+
+\[
+ \|Df_{2n}-Df_n\|\le C_U/\sqrt n.                     \tag{31}
+\]
+
+Dyadic iteration gives a uniformly summable derivative series
+with terms O(2^(-k/2)/sqrt(n)). Together with the already owned
+uniform value bound 0<=f_n-h_*<=ln(16)/n, this proves h_* is C1.
+Starting the same telescope at EACH integer n proves
+
+\[
+ \|D(H_n^*/n)-Dh_*\|\le C''_U/\sqrt n                 \tag{32}
+\]
+
+for all n, not only powers of two.
+
+### 8.4 The recorded initial prefix is retained and paid
+
+We now remove stationary INITIAL preparation from (32).
+Split the SAME n-tick history after a proof index k and write m=n-k.
+There is no intervention, reset, erased record or extra warmup.
+The exact identity is
+
+\[
+ H_n(\rho_0)=H_k(\rho_0)+H_m(\sigma_k)-I_{k,m}^{\rho_0},
+ \qquad \sigma_k=\Phi^k\rho_0.                        \tag{33}
+\]
+
+The owned paid-preparation estimate gives
+||sigma_k-rho_*||<=2q^floor(k/3) and
+||D(sigma_k-rho_*)||<=C(k+1)q^floor(k/3), after adjusting one
+constant for the finite three-tick offsets.
+
+Choose the FIELD-INDEPENDENT number
+epsilon_k=(4/a)q^floor(k/3), with k large enough that epsilon_k<1,
+and define a MATHEMATICAL density matrix
+
+\[
+ \tau_k=\rho_*+(\sigma_k-\rho_*)/\epsilon_k,\qquad
+ \tau_k\succeq(a/2)I,\quad \|D\tau_k\|=O(k+1).
+\]
+\[
+ \sigma_k=(1-\epsilon_k)\rho_*+\epsilon_k\tau_k.       \tag{34}
+\]
+
+The binary mixture flag X below is a proof device, not an actual
+newly prepared resource or selected physical information cut:
+
+\[
+ H_m(\sigma_k)=(1-\epsilon_k)H_m^*
+              +\epsilon_k H_m(\tau_k)+I(X:W_m).       \tag{35}
+\]
+
+For fixed k, the flag prior is field-independent.
+The canonical full-rank purification of tau_k has tangent O(k+1).
+Its weighted squared contribution epsilon_k O((k+1)^2) is uniformly
+bounded, so the FLAGGED history in (35) still obeys F_m<=C(1+m),
+uniformly in k.
+
+For ANY cq state with fixed finite-dimensional subsystem A and
+classical tape W, put L=log Gamma-I_A tensor log Gamma_W.
+Blockwise L=log sigma_w and
+
+\[
+ \operatorname{Tr}(\Gamma L^2)
+   =\sum_w p_w\operatorname{Tr}(\sigma_w\log^2\sigma_w)
+   \le 4\dim(A)/e^2.                                 \tag{36}
+\]
+
+The conditional-entropy differential is
+D S(A|W)=-Tr[(D Gamma)L]. In a normalized purification, scalar
+normalization terms cancel; Cauchy--Schwarz and (27) yield
+
+\[
+ |D_v S(A|W)|\le\sqrt{4\dim(A)/e^2}\sqrt{F_m}.         \tag{37}
+\]
+
+This also holds at eigenvalue births through the amplitude C1
+extension. Apply it to the two-dimensional CLASSICAL flag:
+DI(X:W_m)=-D H(X|W_m), since H(X) is constant. Its bound is
+O(sqrt(m)), independent of the possibly very small epsilon_k.
+No factor log(1/epsilon_k) is needed.
+
+For clarity, a crude bound suffices for the remaining weighted term.
+Any probability law with at most M^m outcomes satisfies
+
+\[
+ \mathbb E(\log p)^2\le(m\ln M)^2+2m\ln M+2.           \tag{38}
+\]
+
+One proof uses Pr(-ln p>=m ln M+t)<=e^(-t).
+With (27), M=128 and initial purification tangent O(k+1), this gives
+
+\[
+ |D H_m(\tau_k)|\le
+ C\sqrt{m+(k+1)^2}\,(m\ln128+2).                      \tag{39}
+\]
+
+The actual prefix/suffix information in (33) satisfies (30) with
+a replaced by a/2, because its unconditioned future starts at
+sigma_k>=aI/2. The full n-word Fisher bound is still (27).
+The prefix entropy source is O((k+1)^(3/2)) by (27),(38).
+
+Choose a FIELD-INDEPENDENT k=O(log(n+1)) large enough that
+epsilon_k=O(n^(-3)), and n sufficiently large that m>=n/2.
+Substitute (35)--(39) into (33) and use (32). Dividing by n gives
+the first assertion of (22): the boundary information contributes
+O(n^(-1/2)), the prefix contributes O(log(n)^(3/2)/n), and the
+weighted tau term is smaller. The stationary coefficient
+(1-epsilon_k)m/n differs from 1 by O(k/n+epsilon_k), which
+also has the required bound. Finitely many smaller n are absorbed
+in the chart constant. The uniform value convergence was already
+proved in §5. This is a C1 theorem about the whole actual history,
+not just about a process initialized at a free stationary bank.
+
+### 8.5 Full retained-CQ price and strong observer-cut equivalence
+
+The original expected port cost satisfies
+
+\[
+ C_n(\rho_0)=n\bar c_*+
+ \sum_{t=0}^{n-1}\operatorname{Tr}
+ [\widehat C\,\Phi^t(\rho_0-\rho_*)].                  \tag{40}
+\]
+
+The owned transient bounds q^floor(t/3) and
+O((t+1)q^floor(t/3)) make both this boundary sum and its derivative
+uniformly bounded. Hence D(C_n/n)-D bar c_*=O(1/n).
+
+For (21), the terminal A=DATA tensor oldRIGHT has FIXED dimension,
+and the tape is the entire fine word. Exactly,
+
+\[
+ S(\Gamma_n)=H_n(\rho_0)+S(DR|W_n),\quad
+ P_n/n=C_n/n-H_n/(n\ell)
+       -S(DR|W_n)/(n\ell)+S(\Omega)/(n\ell).           \tag{41}
+\]
+
+Apply (36)--(37) directly to the actual CQ state, not to an
+invented entropy law. The terminal conditional-entropy source is
+O(sqrt(n)), and the actual initial-entropy source is bounded.
+This proves the second assertion of (22).
+
+Consequently DATA-only, pure retained-reference and general
+fixed-dimensional retained-CQ versions have the SAME strong
+intensive first-source limit, even for nonstationary initial
+DATA. The exact native128-to-65 rewriting transports this theorem
+without modifying the physical charges 1 and 2 or enumerating 65^n
+histories. Finite-n source corrections remain present.
+
+### 8.6 Substituted parent premise and remaining physical application
+
+The [whole-process Einstein consumer](A4D_ORIGINAL_BOOK_BOOLEAN_TRACE_CLOCK_AND_GLOBAL_EINSTEIN_2026_10_22.md#12-the-precise-global-einstein-consumer-of-these-whole-process-results)
+needed a strong channel/field source rather than value convergence
+or only distributional erasure. For the ORIGINAL port-CQ intensive
+component, (22) now SUPPLIES that interchange and removes the
+stationary-initial-bank restriction. The older strong preparation
+covector theorem remains valid; this theorem additionally treats
+moving Kraus operators and the entire causal archive.
+
+For an actual geometry-to-native map Y_h with lift norm L_h,
+the corresponding source error is bounded by C_(U_h)L_h/sqrt(n_h).
+The parent's ACTUAL nonzero source gain must divide this bound.
+Each n_h is fixed during the corresponding field derivative; an
+actual changing stopping/controller policy requires its own source
+calculation. A physically selected field-dependent prefactor also has its
+product-rule contribution from the value error O(log(n_h)/n_h).
+These factors cannot be dropped. This is a usable finite-prefix
+estimate, not a declaration of a mesh-uniform primitive gap or an
+uncharged choice of horizon.
+
+Not supplied by this theorem: identification of (21) with compulsory
+Book03 heat/feedback/vertex-Info; admission of the native field/scene
+operation and every physical variation; extra factory/controller/
+clock price and its independent equations; equality of Ds_* with
+the Palatini--CAR source; actual selected horizons and the required
+uniform joint refinement/reverse recovery. No C2 or physical
+metric-only Golden law follows. In particular the real row-memory
+source is not erased by this proof. GR_closed=false.
+
+The proof uses algebraic bounds on the SAME original instrument.
+Its generic inequalities are proved above; owned primitive/rate/
+causal results are consumed, not recertified. Independent analytical
+reviews check the sequential contraction, dyadic source series,
+nonstationary mixture argument and retained-CQ differential.

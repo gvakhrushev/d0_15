@@ -5311,3 +5311,59 @@ and whitespace check pass. No assembly input or generated assembly file is
 changed; the previously recorded inherited assembly-synthesis suffix/stale
 render is preserved rather than deleted. No heavy replay or CI result is
 claimed for this analytical extension.
+
+
+## 22 October integrator continuation: whole-history C1 source, with the actual initial prefix
+
+Phase: native realization / final composition; existing constitutive,
+native-programme-v1, Draft #334. Input 8fb2a5af50d82e2bec9ab677c075442f01ab45c8.
+The earlier native128 rate and Holevo owners supplied uniform values and
+weak observer erasure, not the field-source limit required by whole-process
+Einstein consumer (41). Original rate owner section 8 now proves that
+substitution for the genuine port-CQ intensive component:
+D(P_n/n) -> Ds_* with error <=C_U/sqrt(n), including moving Kraus,
+arbitrary admitted smooth initial preparations, every no-reset prefix
+record and the actual port charges 1 and 2.
+
+Carrier/norm: unchanged CAR16/full128, fixed finite passive oldRIGHT,
+actual native parameter-chart norm and its dual source norm. Hypotheses:
+one compact regular chart with the owned uniform primitive gap q<1,
+rho_*>=aI, bounded first Kraus jets and bounded C1 initial-purification
+jets. The proof consumes original rank256/Poisson/finite-entropy-rate/
+native65 identities. New structural step: centered history tangents give
+O(n) squared norm; finite-memory mutual-information derivatives give a
+summable dyadic source series. A mathematical fixed-prior mixture flag
+handles the true initial prefix without changing the execution. The
+terminal finite-DR conditional entropy supplies the full-CQ extension.
+
+Parent substitution: original Book/whole-process paper section 13 applies
+this theorem to its section 12 equation (41), retaining the actual lift
+norm, nonzero gain, fixed differentiation horizon and any real prefactor
+source. The older weak observer owner points to this stronger theorem.
+This is supporting physical-source transport, not discharge of the whole
+constitutive premise: compulsory Book03 valuation, scene/cut/field map,
+independent apparatus equations, actual joint stationarity and uniform
+physical recovery remain. No C2 or h-uniform gap is claimed.
+
+Write paths: existing rate owner section 8, original Book/global consumer
+section 13, weak-observer owner pointer, primary-memo/brief pointers and
+one analytical review in the existing future-even packet. No new scientific
+task, registered certificate, rank scan, old geometric root or heavy replay.
+Smallest decisive check: the displayed sequential cross contraction,
+finite-memory likelihood bound, dyadic derivative sum and paid-prefix
+mixture identity, reviewed independently by two bounded reviewers.
+A narrow original-matrix control uses only four coarse PORT-pair events
+to check marginal-source cancellation and the purification/Fisher bound;
+it is not an enumeration or a proof of the infinite-horizon statement.
+
+
+Final analytical intake: section 8 SHA256
+83247fabed641b69e23687a5e3e64b6aa8dd32979edf271b4a3295b0f285c129,
+13,024 bytes. Independent proof and actual-parent reviews are recorded in
+sources/d0_original_full128_future_even_algebra_2026-10-22/HISTORY_C1_SOURCE_REVIEW.md.
+The bounded four-port diagnostic had maximum identity discrepancy2.23e-16
+and included the nonzero actual moving DATA preparation source.
+Repository, work, agent-protocol, assembly-contract, generated-work-view
+and whitespace guards pass. The prior inherited assembly-synthesis
+suffix/stale render is preserved; its inputs/generated files are unchanged.
+No Book, CORE, claim, lifecycle or assembly acceptance status is promoted.

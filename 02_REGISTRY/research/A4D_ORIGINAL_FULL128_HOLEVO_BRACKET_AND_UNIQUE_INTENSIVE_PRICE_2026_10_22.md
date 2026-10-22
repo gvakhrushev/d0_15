@@ -250,3 +250,20 @@ This is a genuine NONTRIVIAL composition: the old native65 single-tick DATA-only
 
 Companion bounded actual native replay:
 `sources/d0_original_full128_future_even_algebra_2026-10-22/check_holevo_rate_bracket.py`.
+
+
+## 7. Strong first-source upgrade on the original regular primitive chart
+
+[The original rate owner's section 8](A4D_ORIGINAL_FULL128_UNIQUE_STATIONARY_CQ_RATE_AND_FINITE_ENTROPY_BRACKETS_2026_10_22.md#8-strong-whole-history-first-source-limit-including-the-actual-paid-initial-prefix)
+now supplies the additional argument which section 4 explicitly required.
+The full native measured/retained-CQ intensive prices converge in C1,
+with derivative error O(n^(-1/2)), on a compact regular primitive chart
+with bounded Kraus/preparation jets and fixed passive reference dimension.
+This includes nonstationary actual initial DATA and the entire recorded
+paid prefix. It follows from sequential tangent/mutual-information
+estimates, not from the earlier scalar O(1/n) value bound alone.
+Thus the DATA-versus-retained-CQ observer difference vanishes strongly
+at first-source level under these hypotheses; the weak theorem remains
+valid at its originally stated scope. No C2, mesh-uniform gap, added
+growing unmeasured work, Book03 selection or source-neutral code
+reorientation follows.
