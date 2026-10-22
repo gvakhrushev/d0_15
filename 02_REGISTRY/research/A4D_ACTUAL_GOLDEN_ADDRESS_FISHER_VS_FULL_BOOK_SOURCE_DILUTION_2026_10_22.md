@@ -353,3 +353,88 @@ The independent new standard-library JS checker
 \`physical_Book03_Hodge_selected=false\`,
 \`original_full42_native_stationarity=false\`,
 \`GR_closed=false\`.
+
+
+## 9. EXACT same-original-tape first-match Cost−Info scales O(L^4), whereas its global addressed Book source scales O(L^-4)
+
+The preceding Fisher-vs-Book obstruction concerns only the actual paired-cut Hodge master. The retained **complete** native Golden STOPPED history is a different and potentially SOURCE-CARRYING object; this makes the positive escape more concrete.
+
+The old \`A4D_FUTURE_THREE_ATOM_ARCHIVE_MUTUAL_INFORMATION_GR_SYNTHESIS_2026_10_22.md\` (its equation 4) proved for one complete original n-cost F/R tape and its actual original self-delimiting \(0/10\) report the true measured-code price
+\[
+ \boxed{
+ S_{\rm one}^{\rm Golden}
+ =a\sum_z w_z g_\varphi(r_z),
+ \quad
+ g_\varphi(r)=1+r-h_\varphi(r),\quad
+ h_\varphi(r)=h_{\rm nat}(r)/\ln\varphi.
+ }                                                   \tag{23}
+\]
+It keeps every paid Golden prefix and non-READY failure, rather than replacing the absolute native Cost with \(-h_\varphi\) alone.
+
+For the DIFFERENT explicitly specified prospective task that freshly prepares another **independent, fully PAID COMPLETE original Golden tape** on every comparison and stops only upon the first recurrence of the SAME site-addressed \((U,z,b)\) status, the already owned complete Wald/first-match theorem gives
+\[
+ \boxed{
+ \mathbb ET=2W+2,\qquad
+ S_{\rm stopped}^{\rm measured}
+ =(2W+2)S_{\rm one}^{\rm Golden}
+ +(2W+1)\kappa.}                                     \tag{24}
+\]
+Here \(\kappa\) is only a **hypothetically established genuinely fixed complete net** Cost-minus-Info charge per later comparison, including its actual reference/clock/work/factory marks. The formula is an identity for the **explicit fresh-preparation self-delimiting measured task when that comparison ledger really is field neutral**. It is NOT automatically the price of using the original \`full128\` on its previous DATA output; that sequential experiment has the genuine predictive KL and preparation reactions proved in the concurrent Poisson owner. If \(\kappa\) moves, retain all \(D\kappa\).
+
+At the unchanged original common-null family \(r_z=r_\star\),
+\[
+ \boxed{
+ \partial_r S_{\rm stopped}^{\rm measured}
+ =(2W+2)a\left[
+ 1-\frac{\ln((1-r_\star)/r_\star)}{\ln\varphi}\right]
+ =\Theta(W),\qquad
+ \partial_r\mathcal B_{\rm addr}=\Theta(W^{-1}).
+ }                                                   \tag{25}
+\]
+The actual \(r_\star\simeq1.85124\cdot10^{-6}\) has \(g'_\varphi(r_\star)\simeq-26.4300\ne0\), while \(a\to0.34164\) on the genuine n(L) schedule. Thus the full original **measured complete-history source** and its candidate selected **paired-cut Book source** differ in magnitude by order \(W^2=L^8\) on this open native common-report family, before any physical selection or additionally priced comparison reactions. This is a sharp *source mismatch* for proposals that silently IDENTIFY the Book master with the completed Golden Cost−Info without evaluating the latter. It does NOT prevent the complete physical action from containing further real compensating Info/heat/clock sources.
+
+With the same lower-work coupled-cut numerical representative as §4:
+- at n20/L4, native one-trial code source \(-9.029575152\), addressed stopped-history source \(-4641.201628\), and addressed paired-cut source \(+4.5935\cdot10^{-7}\);
+- at n24/L8, stopped-history source \(-73988.33868\), paired-cut source \(+3.19356\cdot10^{-8}\).
+
+Their absolute source scales are NOT retuned into matching physical units. These are two distinct mathematical prices of two distinct declared interfaces; the discrepancy is what a same-execution physical price-selection theorem must actually resolve, not a reason to add an unexplained negative counterterm.
+
+### Exact rare-address abort lower bound and paid resource wall
+
+For a real finite maximum of \(K\) later whole-tape comparisons and full retained aborts, the probability of a cap-aborted first-match execution is EXACTLY
+\[
+ P_{\rm abort,K}
+ =\sum_{\alpha\in\mathcal A_{\rm addr}}
+ q_\alpha(1-q_\alpha)^K,\qquad
+ |\mathcal A_{\rm addr}|=2W+1 .
+ \tag{26}
+\]
+All READY-addressed atoms have \(q_{z,b}\le a w_{\max}\). Hence the original REAL READY anchor contribution satisfies
+\[
+ \boxed{
+ P_{\rm abort,K}\ge
+ a(1-a w_{\max})^K
+ \ge a\left(1-\frac{K a(1+9L^{-3})}{L^4}\right)
+ }                                                   \tag{27}
+\]
+on the **owned source-regular original PF schedule** \(n(L)\), whenever the last lower bound is nontrivial. The bound is from the full positive original tree, not a selected successful branch.
+
+Consequently a cap \(K(L)=O(\log L)\), even with a huge fixed native rare-event coefficient, has \(K(L)/L^4\to0\) and
+\[
+ \boxed{\liminf_{L\to\infty}P_{\rm abort,K(L)}
+ \ge a_\infty
+ =\frac{2p^3\varphi}{\sqrt5}
+ \simeq0.3416407865>0.}                              \tag{28}
+\]
+Thus a **single global site-complete first-match controller** cannot have both the same \(O(\log L)\) maximum clock as an individually prepared three-class future AND asymptotically negligible abortions. No neglected terminal record or successful-click postselection can cure the bound.
+
+Moreover every REAL native cost-n F/R trial has actual original Golden prefix cost at least n, so its expected native Golden-prefix payment under this admitted fresh-repeat task is
+\[
+ \mathbb E C_{\rm prefix}
+ \ge n(L)(2L^4+2)=\Omega(L^4\log L),                 \tag{29}
+\]
+not counting any genuinely positive comparator, archive, factory or oldRIGHT cost. The full fine-label first-repeat task is even more expensive, \(\Omega(L^{64}\log L)\) on the original schedule. These are conditional *paid-programme* lower bounds, not predictions that M1 selects these prospective tasks.
+
+There are now TWO mathematically available but PHYSICALLY DISTINCT repairs for the source-extensivity problem: (i) source from the actual complete recorded conditional information/paid first-match clock (23)–(29), whose physical Book03 Info identification is still open, or (ii) a truly admitted coherent, address-conditioned local Book cut that supplies (22), with its own hardware, dynamic preparation and actual full cost. Neither can be inserted gratis into the compulsory \(\mathcal B_N\).
+
+**Narrow direct check extension:** the associated \`check_address_book_fisher.mjs\` validates (24)–(29), the exact original two-census source scaling, and the large-L cap-abort lower envelope using only original Golden parameters, without calling a simulated \(10^{12}\)-cell backend or rerunning other agents' expensive physics suites.
