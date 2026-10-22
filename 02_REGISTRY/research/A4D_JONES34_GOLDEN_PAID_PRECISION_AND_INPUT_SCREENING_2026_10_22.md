@@ -148,3 +148,51 @@ If \(D_ur\) has smaller rank, the remaining report-first-source lies in the exac
 * True native PF C2 schedule: \`A4D_ORIGINAL_GOLDEN_PF_DISCRETE_C2_REGULARITY_2026_10_22.md\`, scientific #334.
 * Original Q8 prepared active-cut nonzero source and input obstruction: \`A4D_Q8_COHERENT_PROGRAM_NATIVE_BOOK42_SOURCE_FORK_2026_10_22.md\`; original future rank fork in \`A4D_NATIVE_SELECTION_FORK_Q8_FUTURE_CUT_AND_MINIMAL_GOLDEN_REPORT_2026_10_22.md\`.
 * Verification: \`sources/d0_jones34_native_price_capacity_2026-10-22/check_native34_price_capacity.py\`. Its small checks are for the NEW abstract capacity/source consequence; historical native Jones full128 exact-rank/Golden source/full42 root/Lean tests were not rerun.
+
+
+## 6. DECISIVE 34×34 NO-FIT INPUT COMPATIBILITY: one matrix residual kills arbitrary Book-score fitting
+
+Theorem (14) can be turned into a sharper exact necessary-and-sufficient **at-one-point** compatibility criterion for the ALREADY owned ORIGINAL Jones34 local probability chart. This is the missing APPLICATION of its square nonzero determinant, not a second rank test. Let \(y\in\mathbb R^{34}\) be the real metric10+proper-link24 field coordinates, let \(u\in\mathbb R^k\) be GENUINELY independent and native-admitted input/preparation variables (their existence and physical tangent image must be proved), and let \(q(y,u)\in\mathbb R^{34}\) be the SAME 34 selected original two-tick probabilities. At a proposed physical point define
+\[
+ J=D_yq\in\mathbb R^{34\times34},\quad \det J\ne0,\qquad
+ U=D_uq\in\mathbb R^{34\times k}.
+\]
+Assume only that the **report-mediated** component of the literal prospective/Book action factors through one unknown differentiable \(G(q)\), while \(B(y,u)\) is EVERY independently derived paid preparation/heat/clock/controller/work/oldRIGHT and complete-information term which actually DOES NOT factor through those 34 q:
+\[
+S(y,u)=G(q(y,u))+B(y,u).
+\tag{15}
+\]
+This decomposition is a proposed candidate class to be TESTED; Book03 does not assert it for all complete histories.
+
+For a known desired original finite geometric source covector \(g(y,u)\in\mathbb R^{34}\) (the restriction of the already owned original signed six-plaquette Palatini+CAR covector to the SAME 34 coordinates), the equations
+\[
+D_yS=g,\qquad D_uS=0
+\]
+read \(J^Tv=g-B_y\) and \(U^Tv=-B_u\), with \(v=\nabla_qG\). **Because Jones34 J is invertible, v is NOT a free fit after imposing geometry**:
+\[
+v=J^{-T}(g-B_y).
+\]
+The remaining \(k\) independent input rows reduce to ONE explicit residual, with NO unknown Book-score coefficient:
+\[
+\boxed{\ \mathscr R_{\rm input}
+=U^T J^{-T}(g-B_y)+B_u=0.\ }
+\tag{16}
+\]
+
+**Exact theorem.** (16) is NECESSARY and SUFFICIENT for the existence of some report-gradient \(v\) at that point solving all 34 geometric SOURCE rows and all k independent input Euler rows. It is necessary for ANY smooth \(G\), including arbitrarily fitted logarithms or all 34 independent likelihood coefficients; sufficiency is only **pointwise algebraic** (every v is locally the gradient of an affine scalar G), NOT a proof of an actually selected, integrable, paid Book03 action on a neighborhood. At many points, ordinary curl/integrability, common-normalizer Ward, signed memory and native clock laws remain.
+
+**Geometric/operational Ward interpretation.** A physically allowed independent preparation tangent \(a\in\mathbb R^k\) induces the unique SAME-observation geometric surrogate
+\[
+v_a=J^{-1}Ua\in\mathbb R^{34}.
+\]
+Then (16) is equivalent to the ordinary sourced-covector identity
+\[
+\boxed{\ (g-B_y)\cdot v_a+B_u\cdot a=0
+\qquad\text{for EVERY genuinely free input tangent }a.}
+\tag{17}
+\]
+Thus arbitrary data-fitting \(J^Tw=g\) misses the **preparation Ward/source reaction** on the same witnessed programme. When \(B=0\), the candidate geometric covector MUST annihilate the entire subspace \(J^{-1}\operatorname{im}U\); any one nonzero original Palatini contrast on that subspace falsifies the whole \(G(q)\) class on that proposed native programme before computing Book Info. If \(\operatorname{rank}U=s\), the geometrically matchable report source subspace after input stationarity has dimension EXACTLY \(34-s\); the \(s\) linear no-fit conditions are independent because J is invertible. This is not a global whole-D0 no-go: an actual full 16384-outcome Book functional has extra report coordinates and independently sourced memory/heat terms beyond this 34-score ansatz.
+
+**TRUE Q8 special case.** The already-owned one-real-report moving rank-four Q8 \(G(r)=J_{\rm now}(r)\) has \(G'(r)<0\). If \(u=r\) is genuinely independent and \(B_u=0\), the scalar instance of (16) is immediately nonzero, for ANY attempted nonzero geometric source \(g=J^TG'\): \(\mathscr R_{\rm input}=G'\ne0\). If REAL derived \(b(r)\) is added as paid preparation and joint input Euler holds, \((G+b)'=0\), so the report-mediated geometric first source is screened; only a genuine independent \(B_0(y,u)\) source may remain. A field-constrained writer \(r=r(y)\) is a different actual tangent problem and not covered by the free-u no-go.
+
+**Most economical actual next physical calculation:** DO NOT solve an optimization over 34 source coefficients again. On ONE admitted joint Jones/current Book programme, evaluate ONLY (i) \(U=D_uq\) from its true independent input writer, (ii) \(B_y,B_u\) from its true already-paid non-q ledger, and (iii) the existing ORIGINAL geometric source \(g\) on the same 34 coordinate chart. The existing exact Jones \(J^{-T}\) then yields \(\mathscr R_{\rm input}\) without any arbitrary info table. A nonzero \(\mathscr R_{\rm input}\) is a strict TERMINAL for that entire 34-observable scalar action candidate; a zero residual merely makes its already-open Book03 Info/cut/clock/whole42/refinement closure test eligible. Neither outcome can be declared without the ACTUAL physical U and B. \`GR_closed=false\`.
