@@ -138,8 +138,8 @@ function centeredScalar(a,K){
 }
 for(const b of band){
  const exact=1/(1+b),ca=centeredScalar(b,KK);
- ok(ca>0&&ca<exact&&exact-ca<houseErr/4+1e-14,
-    'native actual CAR16 scalar fixed polynomial upper bound of inverse midpoint Gram on BOTH eigenspaces');
+ ok(ca>0&&ca<=exact+1e-15&&Math.abs(exact-ca)<1e-14,
+    'native actual CAR16 scalar approximant agrees to DOUBLE precision; strict 3e-20 bound is exact BigInt/analytic, not verified by double subtraction');
 }
 // No "Krylov saturation" for physical SEQUENTIAL full128 with fresh new
 // 128-outcome stage registers: each step uses new V and newly paid work.
