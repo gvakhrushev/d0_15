@@ -23,6 +23,15 @@ measure progress by a proved substitution or a concrete changed route.
 First curved realization, uniform refinement and universal GR remain distinct
 conclusions with their own hypotheses.
 
+### Current strongest finite D0 gravity evidence (22 October 2026)
+
+The original six-based-face geometry and TWO genuine real CAR scalar components now have a [strictly certified nonflat stationary solution of ALL 42 Euler equations with the ORIGINAL unequally priced 0/10 Golden reporter](02_REGISTRY/research/sources/d0_original_unpadded42_2026-10-22/RESULT.json), not just the earlier configured equal-width/padded CQ root. It is an exact finite mathematical theorem for one specified two-cell rational collar; it neither selects the full physical Book03 H+J+R action nor supplies a mesh-uniform Einstein limit.
+
+A [new unpadded all42 full-source recovery theorem](02_REGISTRY/research/A4D_ORIGINAL_UNPADDED_0_10_FULL42_SOURCE_ROBUSTNESS_2026_10_22.md) proves the exact stationary root persists under ANY continuous additional full42 source bounded by 1e-22 on its original radius-1e-20 field cube, with uniqueness if the source is Lipschitz <=0.01. It consumes the previous completed strict interval certificate, not a new action or a new geometric root. The actual remaining Book03+clock+preparation+oldRIGHT+work residual has NOT been shown to satisfy this bound; double charging the 0/10 reporter would be wrong. Small genuine C2 corrections preserve the certified indefinite saddle, so stationarity and prospective full-field minimum must be kept distinct.
+
+**Research priority:** bind the complete actual physical execution and its independent preparation/clock/field-writing equations to this precise same-price finite root; calculate the true remaining 42-covector and test the existing source budget or a larger legitimate continuation method. Then address native PF/scale-uniform refinement and generic physical GR separately. No new pure-boost root scan or output-only detector closes these transitions.
+
+
 **Current synthesis:** [one composed route from actual records to geometry,
 complete price and gravitational response](02_REGISTRY/research/A4D_GLOBAL_RESULT_COMPOSITION_2026_10_20.md).
 The results now do more than coexist: the native CAR readout reconstructs
