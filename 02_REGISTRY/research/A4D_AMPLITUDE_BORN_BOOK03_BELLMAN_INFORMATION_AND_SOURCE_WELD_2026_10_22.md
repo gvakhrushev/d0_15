@@ -1,10 +1,10 @@
 # D0 → GR: exact amplitude-Born Book03 Bellman Info, UNIQUE 3/2 root anchor, full-history mean source, and the pressure/mean mismatch
 
-22 October 2026. **New analytical synthesis in existing scientific Draft PR #334**, consuming two independent already-published Book03/Golden lines. No new fundamental action, presumed full128⇔N1 identity, free initial preparation, clock/oldRIGHT cost, scene heat, selected Book observer, physical root promotion, or universal GR is asserted. \`GR_closed=false; compulsory_Book03_Info=false; raw216_closed=false\`.
+22 October 2026. **New analytical synthesis in existing scientific Draft PR #334**, consuming two independent already-published Book03/Golden lines. No new fundamental action, presumed full128⇔N1 identity, free initial preparation, clock/oldRIGHT cost, scene heat, selected Book observer, physical root promotion, or universal GR is asserted. `GR_closed=false; compulsory_Book03_Info=false; raw216_closed=false`.
 
 Actual prior sources:
-1. \`A4D_NATIVE_BOOK03_BORN_ENTROPY_BELLMAN_VERTEX_INFORMATION_WELD_2026_10_22.md\`: EXACT conditional **scalar** Born+expected-Shannon Bellman rule, original no-reset 128 Kraus/positive PORT stopping and full conditional jets; its binding assumes \(P_\gamma\propto\varphi^{-S_\gamma}\).
-2. \`A4D_BOOK03_BORN_HALF_ENTROPY_AGGREGATION_GATE_2026_10_21.md\`: original **AMPLITUDE** Book03 weight \(\varphi^{-S_\gamma}\), conditional orthogonal fine recording \(P_\gamma\propto\varphi^{-2S_\gamma}\); absolute amplitude anchor \(j=3H_\varphi/2-C\) if its **mean** is to equal counted-CQ Cost−Shannon, and the exact gap mean–pressure \(H_\varphi/2\).
+1. `A4D_NATIVE_BOOK03_BORN_ENTROPY_BELLMAN_VERTEX_INFORMATION_WELD_2026_10_22.md`: EXACT conditional **scalar** Born+expected-Shannon Bellman rule, original no-reset 128 Kraus/positive PORT stopping and full conditional jets; its binding assumes \(P_\gamma\propto\varphi^{-S_\gamma}\).
+2. `A4D_BOOK03_BORN_HALF_ENTROPY_AGGREGATION_GATE_2026_10_21.md`: original **AMPLITUDE** Book03 weight \(\varphi^{-S_\gamma}\), conditional orthogonal fine recording \(P_\gamma\propto\varphi^{-2S_\gamma}\); absolute amplitude anchor \(j=3H_\varphi/2-C\) if its **mean** is to equal counted-CQ Cost−Shannon, and the exact gap mean–pressure \(H_\varphi/2\).
 3. Book03 §§03.3.0–03.3.0a and §03.10: weight semantics, action as Cost−Info and quadratic amplitude readout. **The physical Book programme has NOT been proved to satisfy the simultaneous binding premises** below.
 
 ## 1. The missing change of exponent: one theorem, both earlier owner coefficients
@@ -113,7 +113,7 @@ j_2&=\log_\varphi\sqrt{Z_2}
 Z_2&=\varphi^{3H_\varphi(P)-2C}.
 \end{aligned}}\tag{8}
 \]
-**New explicit composition:** the formerly separately exposed necessary condition \(j=3H_\varphi/2-C\) in the OLD half-entropy aggregation theorem is now **the unique derived absolute amplitude normalization of one complete BORN2+GAIN Bellman tree**, not an independently selected source-fitted \`j\`. It reproduces the original FULL measured-code mean Price−Info \(C-H\) **on every positive open chart with all real source jets**. It does not establish that the compulsory physical Book03 operator realizes this entire orthogonal tree or selects that mean as its own finite Euler action.
+**New explicit composition:** the formerly separately exposed necessary condition \(j=3H_\varphi/2-C\) in the OLD half-entropy aggregation theorem is now **the unique derived absolute amplitude normalization of one complete BORN2+GAIN Bellman tree**, not an independently selected source-fitted `j`. It reproduces the original FULL measured-code mean Price−Info \(C-H\) **on every positive open chart with all real source jets**. It does not establish that the compulsory physical Book03 operator realizes this entire orthogonal tree or selects that mean as its own finite Euler action.
 
 ### IMPORTANT: mean action and amplitude partition pressure are DIFFERENT objects
 
@@ -211,4 +211,4 @@ a unique per-edge information allocation, unique future Bellman potential and *a
 
 **One immediately decisive physical comparison:** evaluate the ACTUAL full Book03 \(H+J+R\), complete oldRIGHT/controller/clock/Info action and its 42 + independent-input differential on ONE actually common original history; check whether its entropy source matches \(DC-DH\), \(DC-\tfrac32 DH\), or neither. The EXACT \(\tfrac12 DH\) gap is already testable using the old native moving query and 128-Kraus record, not a new rank scan or Einstein coefficient fit. Only a real SAME-EXECUTION source identity and complete physical selection can promote \(GR\).
 
-Bounded replay: \`sources/d0_book_amplitude_bellman_2026-10-22/check_amplitude_bellman.py\`. Neither Lean nor large historical/physical full128 suites is asserted freshly rerun.
+Bounded replay: `sources/d0_book_amplitude_bellman_2026-10-22/check_amplitude_bellman.py`. Neither Lean nor large historical/physical full128 suites is asserted freshly rerun.
