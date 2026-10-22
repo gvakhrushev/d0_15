@@ -203,7 +203,7 @@ for(let i=0;i<=40;i++){
  ok(Math.abs(a.wp[0])+Math.abs(a.wp[1])<.54,'native moving FULL inverse-square eigenweights');
  ok(Math.abs(a.source)<number(fieldSourceCap),'original 130-step FIXED POLYNOMIAL echo prepared source <1.2e-11');
  ok(a.prob>.03798&&a.prob<.038,'native field-dependent success chance still strict ~3.798%');
- const g=1-Math.log((1-a.prob)/a.prob)/Math.log(phi);
+ const g=1-Math.log((1-a.prob)/a.prob)/Math.log(1/p);
  ok(Math.abs(g)<7&&Math.abs(g*a.source)<8.4e-11,
   'TRUE original additional success/abort 0/10 code Price−pointerInfo source <8.4e-11');
  const fd=1e-4,plusR=preparedEcho(r+fd),minusR=preparedEcho(r-fd);
