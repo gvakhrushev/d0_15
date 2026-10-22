@@ -110,6 +110,36 @@ Because (7) defines a characteristic-zero number field (the quartic \(a^4+a^2-1\
 
 The modulus is not a physically chosen Golden length, parameter or new D0 gate. It is a computational proof technique for NONVANISHING of a determinant of actual original finite operators.
 
+
+### One fixed whole three-tick execution suffices (no clock/programme substitution)
+
+The 128 selected effects of lengths 1–3 in (10) are all genuine
+**prefix marginal effects of ONE single fixed three-tick native
+no-reset programme**. This is not a comparison of different
+field-dependent probe programs. The exact original
+\(\sum_\alpha K_\alpha^\dagger K_\alpha=I\) implies for any
+prefix \(\gamma\) of length \(k\le3\):
+\[
+\boxed{
+E_\gamma=\sum_{\eta\in\{0,\ldots,127\}^{\,3-k}}
+E_{\gamma\eta}.
+}\tag{10a}
+\]
+Therefore the ONE full three-tick fine archive (all complete
+\(128^3\) formal slots, including every zero/dark/failure label)
+allows all 128 independent selected prefix probabilities to be
+obtained by genuine classical sums. No data reset, extra control
+experiment, arbitrary new observable or changed positive clock is
+needed for this informational-completeness **statement**.
+All three original ticks, fresh pointer/work inventory, genuine
+oldRIGHT, and the whole 0/10 port charges remain PAID.
+
+This is precisely what makes (8) a plausible original
+**same-execution information-interface** result. It still does
+not prove this three-tick programme is compulsory under M1, or that
+its actual Book03 total cost equals a chosen entropy or
+geometrical action.
+
 ## 3. THEOREM C — canonical all-future data-only verification quotient
 
 For arbitrary normalized DATA density operators \(\rho,\sigma\) on the original 16-dimensional Hilbert space, define the canonical parity pinching
