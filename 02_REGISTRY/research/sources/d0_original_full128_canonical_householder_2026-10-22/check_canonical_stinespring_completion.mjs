@@ -141,6 +141,39 @@ for(const b of band){
  ok(ca>0&&ca<=exact+1e-15&&Math.abs(exact-ca)<1e-14,
     'native actual CAR16 scalar approximant agrees to DOUBLE precision; strict 3e-20 bound is exact BigInt/analytic, not verified by double subtraction');
 }
+
+// Literal native rational degree8 midpoint-inverse polynomial in the
+// ORIGINAL unmodified K0=B power basis, NOT a fabricated new register.
+// C8(B)=(511−502B+466B²−382B³+256B⁴−130B⁵+46B⁶−10B⁷+B⁸)/512.
+// Its naive LCU 1-norm is EXACT 9/2, instead of the previous
+// source-echo P8(B) huge >5e14 norm: this is a potential CONSTANT
+// original-128 SIGNAL-COMPILER pathway for the *midpoint reflection*,
+// provided original coherent block V AND V† are physically paid/admitted.
+const coeffNum=[511n,-502n,466n,-382n,256n,-130n,46n,-10n,1n];
+const exactCoeffAbs=coeffNum.reduce((s,x)=>s+(x<0n?-x:x),0n);
+ok(exactCoeffAbs===2304n&&exactCoeffAbs/512n===4n,
+ 'BIGINT exact native original full128 midpoint resolvent LCU l1=2304/512=4.5');
+function intComb(n,k){let a=1n;for(let j=1n;j<=BigInt(k);j++)a=a*(BigInt(n)-BigInt(k)+j)/j;return a}
+for(let j=0;j<=8;j++){
+ let x=0n;for(let k=j;k<=8;k++)x+=intComb(k,j)*2n**BigInt(8-k);
+ x*=j%2?-1n:1n;
+ ok(x===coeffNum[j], 'EXACT derived original Kraus power coefficient of 1/2 Σ((I−B)/2)^k');
+}
+const nativeLCUnorm=Number(exactCoeffAbs)/512;
+close(nativeLCUnorm,4.5,1e-14,'exact field-independent midpoint Gram LCU 1-norm 4.5');
+const nativeLCUSuccLower=1/81;
+const C8min=.5;
+ok((C8min/nativeLCUnorm)**2===nativeLCUSuccLower,
+ 'native 8-Kraus-power midpoint inverse block (C8/4.5) gives heralded probability >=1/81 IF SELECT(B^j) is coherently compiled');
+for(const b0 of band){
+ let value=0,pow=1;
+ for(let j=0;j<9;j++){value+=Number(coeffNum[j])*pow/512;pow*=b0}
+ const c8=centeredScalar(b0,8);
+ close(value,c8,1e-13,'ORIGINAL ACTUAL CAR16 K0 8-power fixed LCU equals positive derived midpoint inverse spectral polynomial');
+ ok(value>=.5-2e-13&&value<.504,
+  'native true original CAR16 midpoint-gram inverse LCU operates as CONSTANT-gain block, with no bad 5e14 spectral echo coefficient inflation');
+}
+
 // No "Krylov saturation" for physical SEQUENTIAL full128 with fresh new
 // 128-outcome stage registers: each step uses new V and newly paid work.
 // On the ONE unitary completion U_can on its SAME fixed work register,
@@ -186,6 +219,9 @@ console.log(JSON.stringify({status:'PASS_ORIGINAL_FULL128_CANONICAL_KRAUS_HOUSEH
   cutoff:"0<(I−B)<I/80 on old open CAR boost",
   HouseholderOpNormErrorUpper:houseErr,
   relativeJetErrorPerDV:houseJet,
+  exactLCUOriginalK0Powers:"(511−502B+466B²−382B³+256B⁴−130B⁵+46B⁶−10B⁷+B⁸)/512",
+  exactNativeLCUNorm:nativeLCUnorm,
+  conditionalLCUGramInverseOneShotSuccessLower:nativeLCUSuccLower,
   exactBigIntCertificate:"2*10^20 < 3*159*160^8",
   nativePolynomialFilterPhysicalCompilerStillOpen:true
  },
