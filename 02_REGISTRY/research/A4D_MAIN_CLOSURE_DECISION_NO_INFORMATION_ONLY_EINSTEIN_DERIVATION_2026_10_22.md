@@ -285,3 +285,72 @@ cannot change it.
 
 No new action, source fit, code patch, Book axiom, task,
 claim promotion, CI or Lean build is created by this note.
+
+
+## 6. CONSUMED UPDATE — the real Boolean Book vacuum Einstein theorem versus original CAR16 causal fidelity (22 October)
+
+Two strong NEW POSITIVE native results have now appeared in SAME Draft #334:
+`A4D_ORIGINAL_BOOK_BOOLEAN_TRACE_CLOCK_AND_GLOBAL_EINSTEIN_2026_10_22.md`
+constructs a genuinely paid Golden-Boolean Book word with exact source
+proportionality between its own complete measured-code action and its
+actual full-clock Book predicate determinant. Its specific continuum
+Palatini density (provided its physical action/scaling is selected)
+has the **ENTIRE Ricci-flat vacuum Einstein solution class**, not
+merely Brinkmann witnesses. Separately the exact original full128
+three-tick source theorem establishes a unique dynamically stationary
+DATA input, and our
+`A4D_ORIGINAL_FULL128_HOLEVO_BRACKET_AND_UNIQUE_INTENSIVE_PRICE_2026_10_22.md`
+proves the two standard original observer information cuts have one
+unique intensive Cost−Info rate, with a sharp one-tick Holevo bracket
+and distributional first-source difference O(1/n).
+
+Neither is a completed D0→GR WORLD theorem, because they refer to
+different actually admitted causal word/output carriers.
+The new
+`A4D_BOOK_BOOLEAN_TO_ORIGINAL_FULL128_CAUSAL_WELD_GATE_2026_10_22.md`
+supplies an EXACT common-carrier discriminant:
+\[
+\begin{gathered}
+\text{Boolean }Q^2=Q,\quad
+(B_0,B_1)=(I-2p^2Q,-2p\sqrt p Q),\\
+\text{real original CAR16 }\Delta^2\ne\Delta,\quad
+(K_0,K_1)=(I-2p^2\Delta,-2p\sqrt p\Delta),\\
+I-K_0^\dagger K_0-K_1^\dagger K_1
+=4p^2\Delta(I-\Delta)\succ0.
+\end{gathered}
+\]
+No fixed invariant, no-extra-work isometric embedding can
+intertwine BOTH port-branch poststates: it would force
+\(\Delta^2=\Delta\), contradicting the original spectrum.
+The omitted original nonblank CP map has **at least 17
+linearly independent Kraus directions**, with an exact 17-label
+independence witness modulo eight good split primes. On the true
+native stationary input it has probability
+\(Q_{\rm NB,*}\simeq0.0207857243509\) and a separately charged
+Golden \(p^3\) conditional source with nonzero proper-boost jet.
+A Boolean response-table match or scalar eigenvalue fit CANNOT
+by itself transport the old full128 world.
+
+**Changed single decisive task:** construct the M1/G0/Book03
+physically compelled operator/clock/Info action on the ORIGINAL
+full128 Stinespring input and genuine 65-label predictive carrier,
+including these unavoidable nonblank source and independent
+oldRIGHT/joint-bank terms; prove its exact field-source transport
+to the ALREADY solved affine Palatini/Einstein action on all 42
+directions, or an accepted controlled remainder and joint-source
+existence under uniform physical refinement. The completion-invariant
+initialized PRE-TICK Book cut
+\[
+F_{\rm pre}=I-K_0^\dagger K_0
+=4p^2\Delta(I-p^2\Delta)
+\]
+is an explicit ORIGINAL operator candidate fixed by the SAME
+Kraus column, unlike arbitrary future-support completions,
+but its compulsory choice as Book03 \(P_N\) and the real SCENE
+heat/vertex Info remain NOT derived. The parallel Boolean
+vacuum-Einstein theorem remains a positive geometric consumer
+once this physical source/writer admission genuinely holds.
+
+This update changes the parent architecture by a quantitative
+CAUSAL FIDELITY test, not by adding another numerical 42-root
+or an arbitrary counterterm. All GR statuses remain OPEN.
