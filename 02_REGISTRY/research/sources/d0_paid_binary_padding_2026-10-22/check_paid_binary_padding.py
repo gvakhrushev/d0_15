@@ -40,6 +40,11 @@ def analytic():
     c_raw=1+r
     c_pad=(1-r)*(1+1)+r*(2+0)
     demand(sp.simplify(c_pad-2)==0,"equal complete code cost")
+    demand(sp.simplify(c_pad-c_raw-(1-r))==0,"strict positive extra cost")
+    for rr in (sp.Rational(1,1000000),sp.Rational(1,3),
+               sp.Rational(999999,1000000)):
+        demand((c_pad-c_raw).subs(r,rr)>0,
+               "padded report is STRICTLY dominated without latency requirement")
     demand(sp.simplify(sp.diff(c_raw-H,r)-sp.diff(c_pad-H,r)-1)==0,
            "raw report includes extra d r")
     demand(sp.simplify(sp.diff(c_pad-H,r)+sp.diff(H,r))==0,
@@ -124,7 +129,11 @@ def original_native():
                "raw code adds genuinely nonzero gamma * d r")
         demand(abs(extra)>mp.mpf("1e-14"),
                "negative control: original unpadded Price differs in source")
+        overhead=gamma*(1-r)
+        demand(overhead>0,"physical idle Cost is strictly positive")
         controls.append({"x":xs,"y":ys,"true_native_click":mp.nstr(r,31),
+                         "extra_expected_paid_cost_per_launched_factory":
+                            mp.nstr(overhead,28),
                          "source_difference_x":mp.nstr(sx,9),
                          "source_difference_y":mp.nstr(sy,9),
                          "Hessian_difference_xx":mp.nstr(sxx,9),
@@ -147,6 +156,8 @@ if __name__=="__main__":
         "actual_unmeasured_Book03_operator_heat_price_equated":False,
         "full_field_moving_upstream_work_clock_source_solved":False,
         "source_and_Hessian_match_for_any_all42_pullback":True,
+        "same_task_unpadded_report_is_strictly_cheaper":True,
+        "latency_or_distinguishability_task_constraint_derived":False,
         "physically_compulsory_D0_selection_proved":False,
         "GR_closed":False
       }
