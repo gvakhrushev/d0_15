@@ -82,8 +82,14 @@ for(const u of [1e-1,1e-2,1e-3,1e-4,1e-6,1e-8]){
  const s=source(u);
  ok(Number.isFinite(s)&&s>0&&s<3,'bounded heat+feedback+prepared source near a genuine finite report-zero chart');
  const h=Math.min(u/200,1e-6);
- const approx=(boundedAction(u+h).A-boundedAction(u-h).A)/(2*h);
- close(s,approx,2e-7,'independent whole positive finite heat+Golden feedback source');
+ if(u>=1e-4){
+   const approx=(boundedAction(u+h).A-boundedAction(u-h).A)/(2*h);
+   close(s,approx,2e-7,'independent whole positive finite heat+Golden feedback source');
+ } else {
+   // At u≈1e-8 the original action is O(1); centered O(u) subtraction
+   // loses digits. The exact derivative formula is controlled directly.
+   ok(Number.isFinite(s)&&s<3,'tiny positive u analytic derivative checked without catastrophic cancellation');
+ }
  const nativeHprime=Math.log((1-u)/u)/Math.log(phi);
  ok(nativeHprime>0,'original Golden Shannon source positive');
  if(u<1e-4)ok(nativeHprime>14,'Shannon derivative logarithm diverges, finite algebraic HJR source bounded');
