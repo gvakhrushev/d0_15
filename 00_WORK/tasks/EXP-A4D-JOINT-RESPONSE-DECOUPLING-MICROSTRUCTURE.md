@@ -15,6 +15,64 @@ Assembly-Slot: `constitutive`
 
 ## Strategic synthesis continuation — 2026-10-17
 
+### 22 October: consume the complete quantum source on the actual stopped native tape
+
+Native-realization/final-composition continuation of the SAME Draft #334,
+with published input `e92ecb3bdc53a2b958b1cc09a7b0398f978c87f3` and the
+unchanged full128 CAR16 constructor. The completed `fa19ec4` finite-tree
+source and the existing non-reset first-match occupation theorem are inputs,
+not new replay targets. The precise missing parent application is the
+terminal conditional quantum WORK term in the full stopped Cost-minus-
+information-gain source, and its relation to a genuinely defined raw
+partition normalizer on the SAME execution.
+
+On a fixed positive-support stationary DATA chart, use the complete fine
+history, the declared coarse first-return predicate, every abort leaf at a
+finite cap, and every actual additive fine-outcome charge. Derive the exact
+terminal DATA balance and the whole CQ relative-entropy decomposition against
+the already owned iid reference on the SAME stopping language. Retain the
+independent-preparation and finite-cap boundary terms before differentiating.
+The intended substitution is the missing quantum-work contribution in
+`A4D_NATIVE_COMPLETE_SOURCE_REDUCTION_2026_10_22.md`, combined with the owned
+stopped measured-price and entropic-Poisson equations; a reference measure is
+not automatically the physical Book03 information algebra or its selected
+full H+J+R action. A fixed oldRIGHT spectator and an actual retained pure
+preparation reference remain different carriers.
+
+Root owns the parent synthesis, this brief and integration. Bounded assistants
+write disjoint files in `sources/d0_native_stopped_quantum_balance_2026-10-22/`:
+`QUANTUM_RETURN_BALANCE.md` (exact finite/uncapped and preparation identities),
+`check_native_quantum_return.py` plus its receipt (actual full128 CP-map,
+terminal/fine-label and moving-source substitution), and
+`RAW_PARTITION_APPLICATION.md` (source-typed raw trace/Gibbs normalization
+application and independent analytical review). No new task/queue/assembly
+acceptance is created. The norm is trace norm for DATA boundaries and the
+declared native parameter directional derivative; any transport to all42
+normalized field coordinates remains an explicit separate map.
+
+The smallest decisive check is the exact stationary return identity
+`rho_terminal=rho_*`, its full finite-cap defect and derivative, followed by
+the same full128 terminal-record marginal and a finite compressed-CQ
+relative-entropy calculation. A lower bound on entropy is never used as a
+bound on its derivative. No repeated geometric root, historical census,
+full Lean build, redefinition of physical Info, or GR/lifecycle promotion.
+
+**Completed substitution:** [complete stopped quantum price and source](../../02_REGISTRY/research/A4D_NATIVE_STOPPED_QUANTUM_PRICE_AND_SOURCE_2026_10_22.md)
+proves terminal DATA return and last-fine-label balance, the full relative-
+entropy price, the one-round quantum loss budget and local C1 of the entire
+history source on the owned fixed-active native chart. It consumes the actual
+Poisson preparation interface through the exact adjoint shift
+`Y_full=Y_red-B_#+Tr(rho_* B_#)I`, with the independent-preparation and finite-
+cap defects retained. The literal full-label task has64 active anchors and
+mean65 rounds on the proper-boost chart; the separately declared port-return
+diagnostic has2 classes and mean3. Their divergence/budget and caps are not
+interchanged. The 223 new native checks and 168 rational full-price/Poisson
+integration controls serve this source substitution. The remaining numerical
+term is the complete `dD` on the chosen actual stopping language; its physical
+Info selection, paid prefix/controller/clock composition and common all42
+field transport remain explicit. Concurrent intake through `f3a2bf2` is
+preserved, including the distinct full-label stopped-future marginal result.
+
 ### 22 October: consume the original stopped futures in the marginal source
 
 Phase: native realization / same-execution source composition. Continue

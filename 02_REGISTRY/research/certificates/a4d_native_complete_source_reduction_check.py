@@ -38,7 +38,7 @@ INPUTS = [
     "02_REGISTRY/research/sources/d0_native_complete_cq_source_2026-10-22/published_inputs/A4D_EXACT_FULL42_OPEN_PF_COLLAR_BRANCH_AND_CONTINUOUS_BOOK_RESIDUAL_2026_10_22.md",
     "02_REGISTRY/research/sources/d0_native_complete_cq_source_2026-10-22/published_inputs/A4D_BOOK03_STAGE_CLOCK_INTERNAL_CUT_NECESSITY_2026_10_22.md",
     "02_REGISTRY/research/sources/d0_native_complete_cq_source_2026-10-22/published_inputs/check_native_entropy_poisson.mjs",
-    "02_REGISTRY/research/A4D_NATIVE_COMPLETE_SOURCE_REDUCTION_2026_10_22.md",
+    "02_REGISTRY/research/sources/d0_native_complete_cq_source_2026-10-22/published_inputs/A4D_NATIVE_COMPLETE_SOURCE_REDUCTION_2026_10_22.md",
     "02_REGISTRY/research/sources/d0_native_complete_cq_source_2026-10-22/README.md",
     "02_REGISTRY/research/sources/d0_native_complete_cq_source_2026-10-22/CONCURRENT_INTAKE.md",
     "02_REGISTRY/research/sources/d0_native_complete_cq_source_2026-10-22/CUT_SOURCE_EQUIVALENCE.md",

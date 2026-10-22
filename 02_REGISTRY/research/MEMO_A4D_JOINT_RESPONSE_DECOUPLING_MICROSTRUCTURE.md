@@ -11029,3 +11029,97 @@ The packet supplies a new coupled price budget and two concrete source
 maps for that calculation. No residual is fitted to Einstein, no BOOK is
 edited and no assembly/lifecycle or physical GR state is promoted.
 `GR_closed=false`.
+
+## 22 October: complete stopped quantum price and preparation-exact source
+
+The [new source composition](A4D_NATIVE_STOPPED_QUANTUM_PRICE_AND_SOURCE_2026_10_22.md)
+consumes the existing complete CQ-history telescope, actual stationary
+first-return occupation and native Poisson preparation interface. The missing
+terminal quantum DATA term now has an exact operator reduction:
+\[
+ \rho_T=\rho_*,\qquad X_z^{\rm last}=\mathcal I_z\rho_*,\qquad
+ \mathfrak D=\mathcal M+\chi_T=(m+1)\chi_1-\mathcal L.
+\]
+Every fine record is retained. For actual additive fine charges and
+\(\ell=\ln\varphi\), the complete gain price is
+\[
+ S=(m+1)[C_1-H(q)/\ell]+\mathfrak D/\ell,\qquad
+ \chi_1+I(Z_0;Z_1)\le\mathfrak D\le(m+1)\chi_1-\mathcal L_{\rm first}.
+\]
+Here \(\mathcal L\) is the summed channel-relative-entropy contraction loss;
+the owned first-two-round gain gives
+\(\mathcal L_{\rm first}=I_2-2I_1\). These are complete quantum formulas,
+not pointer-only replacements or derivative inequalities.
+
+The stopping predicate is part of the physical input. On the actual
+nonzero boost chart, literal full-label equality has64 active anchors,
+mean65 rounds, and price \(65S_1+\mathfrak D_{\rm label}/\ell\).
+The separately declared port-return execution has2 anchors and mean3
+rounds, while still retaining the complete fine archive. The new native
+numerical diagnostics apply to that latter stopping rule. Their upper
+bound \(3\chi_1\) is not transferred to the literal full-label task.
+The generic theorem supplies the actual full-label bound
+\(65\chi_1-\mathcal L_{\rm first}\). The existing support-jump and
+finite-preparation obligations remain.
+
+A separate local C1 theorem controls the entire entropy/source sum.
+The stacked amplitude derivative has a polynomial-times-geometric shell
+bound, including the logarithmic small-eigenvalue factors. Original binary
+effects give explicit one-step contraction; owned full-label transience
+gives a common-power contraction on its fixed active chart. Thus the
+whole first derivative is defined locally for both declared executions.
+This is not a uniform refinement bound or C2 at a rank birth.
+
+For independently varied DATA, the exact omitted price is
+\(\operatorname{Tr}B(\Phi-I)\rho\), where \(B\) is a derived finite
+noncommuting resolvent cotangent. At comparison cap \(K\), the whole price
+is \(S_K=\mathscr R_K+\operatorname{Tr}\widehat B_K(\Phi-I)\rho\),
+with the required terminal correction
+\(-\operatorname{Tr}(GV_K)\) already included in \(\mathscr R_K\).
+These identities give the actual parent substitution:
+\[
+ Y_{\rm full}=Y_{\rm red}-B_\#
+                  +\operatorname{Tr}(\rho_*B_\#)I,\qquad
+ f_{\rm full}+\operatorname{Tr}Y_{\rm full}(d\Phi)\rho_*
+ =f_{\rm red}+\operatorname{Tr}Y_{\rm red}(d\Phi)\rho_* .
+\]
+The generated stationary source can therefore use the reduced complete
+price with this shifted adjoint. Independent preparation rows, finite paid
+preparation and all other actual ledger sources remain.
+
+The same packet applies the exact scalar Gibbs identity and the already
+owned stopped cost-marked CP normalizer to this complete quantum price.
+Full Born trace, blank survival, scalar code partition and marked Born
+operator are distinct. The reporting-only fine-code scalar partition
+diverges uncapped on the original native multiplicities; the normalized
+same-language reference and genuine marked Born operator remain valid.
+A raw scalar factor cannot be chosen to erase the whole source.
+
+The bounded native223 controls check terminal/last-label/cap identities
+and actual analytic jets. A separate rational168-control calculation
+checks full CQ prices, arbitrary faithful preparation, a nonconstant
+Gibbs normalizer and corrected Poisson transport. Direct finite prices
+agree within \(1.70\,10^{-15}\); the independent stationary source agrees
+within \(7.2\,10^{-12}\), while a stale adjoint misses by0.1390779634.
+The proofs and both implementations have independent scoped review.
+No historical geometry/full128/173-check/Lean suite is replayed.
+
+Concurrent intake through `f3a2bf2` is preserved. Its enlarged full-label
+stopped-future family makes the **marginal** retained-test entropy gain
+zero on \(\rho_*\); this does not set the complete history gain or
+\(\mathfrak D\) to zero. A fixed independent oldRIGHT spectator and an
+actually retained pure preparation reference also remain distinct carriers.
+
+The remaining next calculation is the complete \(d\mathfrak D\) on the
+chosen actual stopping language, composed by the displayed Poisson map
+with paid preparation/clock/controller and compulsory Book03 sources.
+Its comparison with the existing nonlinear GR solution still requires
+the same physical field map, true source gain/norm and independent
+internal equations. Native parameter derivatives do not supply the
+original all42 residual budget. `GR_closed=false`.
+
+The concurrent heat-monodromy and canonical pinching/source handoffs are
+[preserved verbatim in a maintained research note](A4D_CONCURRENT_BOOK_SOURCE_HANDOFF_2026_10_22.md).
+This relocates their manual tail from the generated assembly synthesis;
+the canonical view, source papers and scientific acceptance state remain
+separate, with no result or obligation promotion.

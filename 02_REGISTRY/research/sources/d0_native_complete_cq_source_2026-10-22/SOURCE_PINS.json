@@ -125,8 +125,10 @@
   ],
   "frozen_artifacts": [
     {
-      "path": "02_REGISTRY/research/A4D_NATIVE_COMPLETE_SOURCE_REDUCTION_2026_10_22.md",
-      "sha256": "5f4f889276f1516870a085d7109b0b3d72c6b0664b5628e8bdf36e78d2052c10"
+      "path": "02_REGISTRY/research/sources/d0_native_complete_cq_source_2026-10-22/published_inputs/A4D_NATIVE_COMPLETE_SOURCE_REDUCTION_2026_10_22.md",
+      "sha256": "5f4f889276f1516870a085d7109b0b3d72c6b0664b5628e8bdf36e78d2052c10",
+      "source_path": "02_REGISTRY/research/A4D_NATIVE_COMPLETE_SOURCE_REDUCTION_2026_10_22.md",
+      "published_commit": "fa19ec492174f7aea313ca08d57caccc3d481183"
     },
     {
       "path": "02_REGISTRY/research/sources/d0_native_complete_cq_source_2026-10-22/README.md",
