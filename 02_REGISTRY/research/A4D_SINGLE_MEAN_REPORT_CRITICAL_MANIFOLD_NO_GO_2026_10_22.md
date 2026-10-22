@@ -117,3 +117,13 @@ Run from repo root:
   python3 02_REGISTRY/research/sources/d0_single_mean_critical_manifold_2026-10-22/check_mean_root_obstruction.py --repo .
 
 The checker pins the ORIGINAL certified 42-root/report files at their Git blob SHAs, reads (1), checks all lower walls with high-precision decimal arithmetic, checks the strict original Hessian-invertibility receipt and the exact rank-one symbolic outer-product implication. It consumes, rather than replays, the expensive original 42×42 interval Hessian. Its actual mathematical result is the independent rank/submersion argument above; no new numerical optimized source experiment is claimed. Research-only: GR_closed=false.
+
+
+## 7. Positive repair: exact two-moment sufficient statistic and the cost of distinguishing the channels
+
+The negative theorem does NOT mean the full two-channel CQ entropy is unavailable from actual native reports. [The constructive two-moment consumer](A4D_TWO_REPORT_MEAN_COLLISION_SUFFICIENCY_AND_NATIVE_COST_WALL_2026_10_22.md) supplies the minimal **degree-two symmetric polynomial chart**, not a new detector:
+  m=(r0+r1)/2, c=r0*r1,
+  r0,1=m ∓ sqrt(m²-c).
+Because the certified h4 root has r0<r1, the true Jacobian determinant (r0-r1)/2 is strictly nonzero (>2.90344e-11 in absolute value), and the entire original score h_phi(r0)+h_phi(r1) becomes an analytic \Psi(m,c), preserving its all42 Euler source and its full Hessian EXACTLY. The missing mean-only source direction is the genuine report coincidence/contrast. A physical positive event realizes c by retaining TWO separately paid original N1 launch tapes and testing READY1 at both original addresses; independent common factory readiness yields Pr(both READY1)=gamma²r0r1. This is an observable interface, not compulsory Book03 \Delta_N, \mathrm{Info}(v), or a new heat action.
+
+The same strict certified report intervals give an operational constraint. On the *specified ordinary IID classical ternary-report discrimination task* P_i=(1-gamma,gamma(1-r_i),gamma r_i) at the original N1 cap9/20, the single-trial KL <1.9232e-15 and equal-prior Bayes error≤1/4 requires >2.59e14 **fully paid independent classical launches**, by KL≤chi² and Pinsker. This is not a bound against coherent/collective original CAR16/oldRIGHT strategies, nor a full cost-clock budget, nor the expected four launches of a DIFFERENT first-match entropy task. Source distinguishability and affordable operational estimation are two different requirements. The selected native D0 action might internally contain per-address spectral information without classical statistical estimation; this theorem does not prove otherwise.
