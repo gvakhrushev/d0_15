@@ -229,3 +229,56 @@ The Python replay `sources/d0_original_full128_golden_naymark_weld_2026-10-22/ch
 The next decisive positive test is now a **SINGLE operator-level SAME-EXECUTION variational source**: calculate the real Book03 \(H+J+R+\mathrm{Info}+\mathrm{Cost}_{\rm work}\) with \(P=P_{\rm pre}\) (if demanded by Book03), ORIGINAL full128 K and original 65-label paid future predictor. The entire K/input/Book-J coupling and quantum source are now given by (11),(15),(17) with no unknown relative Boolean-vs-CAR channel map. The only remaining native ambiguity is the selected value/physical history and truly independent SCENE/clock/observer-source law. The simultaneous existence of a Boolean vacuum Einstein theorem and a genuine full128 channel is now CONSTRUCTIVELY COMPATIBLE at the operator level, not merely similar by scalar reported probabilities.
 
 **No `GR_closed` status is promoted.**
+
+
+## 7. THEOREM E — COMPLETE classification of the whole original Golden-twin 128-Kraus constitutive fibre
+
+The previous construction is in fact a precise **bijection**, not only one instance. Fix the original Golden \(p\) and 63 original j>0 row addresses. Define the open set of "native Golden-twin" **labelled Kraus instruments** by ALL equations (1), strict \(0<\Delta<I\), positive/Hermitian \(\Delta\), literal original j0 pair and original 0/10 twin factors for every j>0, and full CPTP. No other arbitrary K's are admitted to this definition.
+
+Define the explicit operator-isometry bundle
+\[
+\mathfrak M=\{(\Delta,W_1,\ldots,W_{63}):
+0<\Delta=\Delta^\dagger<I,\ 
+\sum_{j>0}W_j^\dagger W_j=I_{16}\}.
+\tag{19}
+\]
+Then the map
+\[
+\boxed{
+\begin{aligned}
+K_0&=I-2p^2\Delta,&K_1&=-2p\sqrt p\,\Delta,\\
+K_{2j}&=-2p^2 W_j\sqrt{\Delta(I-\Delta)},&
+K_{2j+1}&=-2p\sqrt p\,W_j\sqrt{\Delta(I-\Delta)}
+\end{aligned}}
+\tag{20}
+\]
+is an EXACT bijection from \(\mathfrak M\) to the entire just-stated strict positive Golden-twin CPTP class. **Forward:** (20) has CPTP by the Golden identity and the \(W\)-isometry. **Inverse:** the labelled \(K_0\) uniquely determines \(\Delta=(I-K_0)/(2p^2)\), and every labelled \(K_{2j}\) uniquely determines \(W_j=-K_{2j}[\Delta(I-\Delta)]^{-1/2}/(2p^2)\). The original full128 Kraus from Walsh/Julia is ONE uniquely specified element of this fibre, with all ORIGINAL phases and complex noncommuting matrix orientations intact.
+
+This is useful strategically. The **entire native 128-operator** question decomposes into:
+1. a strictly positive CAR contraction \(\Delta\) that fixes the one-Golden-reflection minimal projector and the native PRE Book feedback;
+2. a strictly source-bearing **labelled Stinespring row isometry \(W\)** that preserves every residual original quantum instrument response and its fine archive.
+
+There is no longer a nameless "complete all columns" operator variable or endless family of arbitrary complement Kraus: this precisely parametrizes the WHOLE stated physical Golden-twin class. The arbitrary off-prepared extension of a unitary is a separate gauge for PRE \(F\), not an unselected new Kraus datum.
+
+### True independent source splitting, with no fake native variational freedom
+
+On smooth labelled charts the unconstrained mathematical tangent coordinates satisfy
+\[
+\delta W_j\text{ with }\ 
+\sum_j(\delta W_j^\dagger W_j+W_j^\dagger\delta W_j)=0,
+\tag{21}
+\]
+and the original full causal source is
+\[
+\delta K_{2j}
+=-2p^2\big[(\delta W_j)S+W_j\delta S\big],
+\quad
+\delta K_{2j+1}
+=-2p\sqrt p\,\big[(\delta W_j)S+W_j\delta S\big].
+\tag{22}
+\]
+Thus the already selected original PRE-Book \(J_{\rm pre}\) depends only on \(\Delta\), whereas the true full fine-row CQ record probability, conditional DATA/RIGHT outputs, controller and archive price generally depend on **BOTH \(\Delta\) and \(W\)**. The physical native coframe/link/CAR tangent maps \(D_Y\Delta,D_YW\) come from the ORIGINAL native constructors: (21) does NOT grant a free independent \(\delta W\) primitive or a new continuum input. This is a precise test for whether any claimed compulsory Book action has incorrectly frozen the genuinely moving row memory.
+
+The known ORIGINAL three-tick effects \(M_8\oplus M_8\), whole 256-dimensional three-Kraus product span, unique stationary \(\rho_*=\Delta^{-1}/\operatorname{Tr}\Delta^{-1}\) and complete 65-label causal Cost−Info source transfer VERBATIM through (20), since every ORIGINAL labelled K remains exactly identical. Those earlier proofs are consumed; there is no new unsupported rank claim.
+
+The physical next theorem is now sharpened: does the compulsory Book03 action select the **PRE** \(\Delta\)-dependent feedback plus a whole archive/Info/work term that carries the **true \(W\)-covector**, on ONE ORIGINAL physical 42-field/tick execution? If it does, the new decomposition supplies the entire native operator source without a Boolean-vs-CAR missing degree of freedom. If it does not, that exact observed \(W\)-sensitivity must be accounted for by the actual alternate Book observer, not by an Einstein-fitted compensation.
