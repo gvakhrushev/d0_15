@@ -117,3 +117,21 @@ Owners reused, not re-claimed:
 - 02_REGISTRY/research/sources/d0_weighted_two_field_rank2_2026-10-21/native_master.py, actual unchanged original cap1 Golden polynomial.
 
 **Result:** The original unpadded code-cost source discrepancy on the whole OFF-NULL measured report chart has a UNIQUE cheapest POSITIVE integer-cost schedule that removes it without deleting any original outcome or material/geometry source. The **only new physical premise** is a genuinely admitted paid deterministic one-unit conditional delay/marker after the shorter already measured outcome, plus the still-original fixed-price/preparation/readout contract. Its ability to preserve complete Book03 absolute/cut/source, or its compulsory selection by M1/D_min, is NOT established. GR_closed=false.
+
+
+## 6. Physical M1 selection negative control: positive padding is STRICTLY more expensive for the identical task
+
+The positive-cost source equality is not a derivation of a prospective native minimum. The original SHORT report, with its original outcome code 0 or 10, and the proposed extra deterministic wait record EXACTLY THE SAME binary bit with exactly the same Bernoulli measured entropy. The pad changes only physical Cost; it produces no extra Shannon/conditional work entropy in the declared deterministic measured-output model. Hence **pathwise** cost changes by one strictly positive unit if b=0 and zero if b=1; on every honest positive report chart r∈(0,1),
+
+  BOX: S_paid(r)-S_raw(r)=1-r>0.                     (13)
+
+After the fixed actual cap-one bank readiness gamma=alpha beta, the expected excess paid Cost per launched bank is gamma(1-r), not something negligible, refundable or source-neutral when compared to the true UNPADDED alternative. At the true original null click r0≈0.000001851239578488 and gamma≈0.453674938682, this is
+
+  E(extra per READY report)≈0.9999981487604,
+  E(extra per launched original bank)≈0.4536740988209.
+
+The complete uncapped independent first-match task executes mean THREE report macros, so its additional expected actual report charge over the unpadded first-match task is approximately 3(1-r0)≈2.99999444628 Golden units per complete first-match experiment. All original other bank, controller and comparison charges remain additionally payable. This is a LARGE finite charge, not a vanishing regularization error.
+
+**Consequently:** IF the original native prospective D_min programme admits BOTH padded and unpadded executions for the SAME observer task and counts time/work Cost as above with NO independent deadline or latency requirement, the padded policy is strictly pointwise Cost−Info dominated and CANNOT be selected as its minimizer. Merely writing a positive conditional no-op into a diagram does NOT fix that physical selection problem. To make the padding a legitimate necessary execution step one must derive an actual compulsory **fixed-duration/constant-time observable task** or independent temporal/work constraint already present in D0; a post-hoc demand introduced solely to erase the +D r source would be a fitted selection premise.
+
+Thus the theorem is a precise **sufficient mathematical source bridge plus a necessary physical-admission gate**, not a physical explanation why gravity must be Einstein. Raw code S_raw and padded S_paid belong to DIFFERENT paid programmes. The original compulsory Book03 §03.25 moving Hodge heat/complement and vertex Info are STILL unbound to the padded measured source. Keep all of these distinctions in the final GR consumer. GR_closed=false.
