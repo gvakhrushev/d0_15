@@ -106,3 +106,16 @@ The entire price/Hessian equality is pointwise mathematical identity; the
 checker DOES NOT newly run the original 1764-Hessian interval enclosure.
 Operational physical Book03 selection, whole conditional quantum work
 information and admitted field writer remain open. GR_closed=false.
+
+
+## Why rank 42 cannot come from a TWO-reporter first-jet Fisher metric
+
+The [original strictly certified h4 second-jet theorem](../../A4D_OFF_NULL_FISHER_RANK1_SECOND_JET_41D_GEOMETRIC_HESSIAN_2026_10_22.md) consumes both historical original receipts and the complete two-band spectral source. The old h=1/4 42-field configured CQ criticality makes Dr1=-[h'_phi(r0)/h'_phi(r1)]Dr0, with original Dr0!=0. Hence rank D(r0,r1)=1 and every pullback (two-report) first-jet Fisher/Bures-type quadratic form has rank<=1. The original configured CQ Hessian is strictly invertible rank42.
+
+Writing the whole score as H=Psi(M1,M2), with M1=Tr E,M2=Tr E²/2, gives
+  D²H=(alpha D²M1+beta D²M2)+DM^T(D²Psi)DM.
+The second term has rank<=1, forcing rank(alpha D²M1+beta D²M2)>=41. At this critical point, alpha DM1+beta DM2=0, so the weighted second-jet combination is invariant under nonlinear field coordinate changes. This proves a large intrinsic nonlinear FIELD→RECORD source component without adding a new tensor or physical information law. Rich original full128 conditional CAR-state tomography is NOT excluded by a theorem limited to two coarse Bernoulli reports.
+
+    python3 02_REGISTRY/research/sources/d0_single_mean_critical_manifold_2026-10-22/check_second_jet_rank41.py --repo .
+
+The standard-library checker pins original historical interval files, checks strict 42-rank and report-jet premises, proves first-tangent collinearity algebraically and supplies an exact rational 42D sharp rank41 second-jet example. It does NOT rerun the 1764 original h4 interval Hessian, derive a compulsory Book03 physical cut/Info or prove GR_closed.
