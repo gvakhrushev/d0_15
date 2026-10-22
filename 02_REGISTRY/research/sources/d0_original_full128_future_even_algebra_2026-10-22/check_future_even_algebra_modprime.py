@@ -284,6 +284,55 @@ def actual_future_basis(d):
     return ranks,paths,pivots
 
 
+
+def verify_original_65_merged_future(d,prime_data,selected_words):
+    """Independent exact source-algebra check for original 128->65
+    paired Golden bits on SAME no-reset paths, including dark rows."""
+    m=d["m"]
+    p=prime_data[2]
+    sqrtp=prime_data[3]
+    invp=pow(int(p),-1,m)
+    check((p*p+p-1)%m==0,"Golden pair keeps full CPTP")
+    check((p**3-(2*p-1))%m==0,"original exact p^3 paid coin residual")
+    check(len(d["K"])==128,"literal original 128 fine K")
+    L=[d["K"][0],d["K"][1]]
+    LD=[d["Kd"][0],d["Kd"][1]]
+    for row in range(1,64):
+        fine0=2*row
+        fine1=fine0+1
+        elem=(d["K"][fine0]*invp)%m
+        adj=(d["Kd"][fine0]*invp)%m
+        check(np.array_equal((sqrtp*elem)%m,d["K"][fine1]),
+              "original every j>0 twin K=(pL,sqrtp L)")
+        check(np.array_equal((sqrtp*adj)%m,d["Kd"][fine1]),
+              "original every j>0 dagger twin")
+        L.append(elem)
+        LD.append(adj)
+    check(len(L)==65,"65 precise merged native Kraus slots")
+    comp=np.zeros((16,16),dtype=np.int64)
+    for a,b in zip(L,LD):
+        comp=(comp+b@a)%m
+    check(np.array_equal(comp,d["I"]),
+          "whole 65 merged instrument keeps exact original CPTP")
+    for path in selected_words:
+        w=1
+        merged=[]
+        for a in path:
+            if a<=1:
+                merged.append(a)
+            else:
+                row=a//2
+                merged.append(row+1)
+                w=(w*(p*p if a%2==0 else p))%m
+        # Original no-reset chronological effect for these SAME outputs.
+        X=d["I"].copy()
+        for k in reversed(tuple(merged)):
+            X=(LD[k]@X@L[k])%m
+        E128=effect_of_word(path,d)
+        check(np.array_equal(E128,(w*X)%m),
+              "no original future effect lost by 65 labelled predictor")
+    return len(L)
+
 def main():
     reference=SPLIT_PRIMES[-1]
     native=original_kraus_mod(reference)
@@ -296,6 +345,8 @@ def main():
         spec=original_kraus_mod(row)
         rank=mod_span_selected(spec,words)
         check(rank==128,"same 128 physical words independent mod prime")
+        check(verify_original_65_merged_future(spec,row,words)==65,
+              "complete 65-label predictor retains all 128 effect basis rows")
         verify_primes[str(row[0])]=rank
     length_hist=dict(sorted(collections.Counter(map(len,words)).items()))
     check(length_hist=={1:11,2:111,3:6},
@@ -305,6 +356,8 @@ def main():
       "checks":TOTAL_CHECKS,
       "original_source_blob":SOURCE_BLOB,
       "actual_native_fine_Kraus_slots":128,
+      "source_faithful_native_merged_labels":65,
+      "native_pair_port_Cost_minus_Information":"p^3=2p-1 exact",
       "nonzero_Kraus_slots":64,
       "original_Kraus_even_odd_counts":native["parity_counts"],
       "modular_future_ranks_by_depth":ranks,
