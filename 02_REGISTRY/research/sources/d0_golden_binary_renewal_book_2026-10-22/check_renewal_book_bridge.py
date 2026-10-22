@@ -46,6 +46,8 @@ ck('Book original 528-mode single-block scalar cannot suffice',book_value>528*on
 ck('Book absolute feedback value cannot be realized in rank1024',book_value>1024*one_mode_max)
 ck('Book rank1025 is the sharp ceil lower bound',book_value<1025*one_mode_max)
 ck('actual two-factor 1056-mode block passes universal rank bound',1056*one_mode_max>book_value)
+ck('certified original unpadded full42 positive click bands exceed one Gram fugacity',1e-6>zeta)
+ck('certified full42 two-band local Book block rank floor is 554',553<528*(-log1p(-1e-6))/one_mode_max<554)
 ck('two primitive fugacity channels are necessary on original flat r0',log1p(-r0)/log1p(-zeta)>1 and log1p(-r0)/log1p(-zeta)<2)
 ck('native ORIGINAL 0/10 probabilities faithful',0<r0<1e-5)
 ck('native code reference normalized',close(p+p*p,1))
