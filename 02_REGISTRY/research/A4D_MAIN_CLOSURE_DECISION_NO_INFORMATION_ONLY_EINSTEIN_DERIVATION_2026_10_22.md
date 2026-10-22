@@ -172,6 +172,47 @@ the true original proper boost). Even PERFECT observation and operator
 tomography cannot infer the paid code orientation from unchanged
 unmarked dynamics. The gate's real cost and admission are crucial.
 
+
+### EVEN an optimal code-orientation rule does not select field dynamics
+
+A plausible rebuttal is that M1/MDL might select the cheaper of the
+TWO printers in §3. In the binary code-choice class that is mathematically
+true, but it **does not defeat Theorem A**. For \(P=(1-r,r)\) and
+\(0<r<1/2\), the actual cheapest of these two complete 0/10 orientations
+is \(c=(1,2)\), because \(1+r<2-r\). Therefore the **fully minimized
+orientation price** is exactly
+\[
+\boxed{
+\min\{A_\mu(P),A_{\mu'}(P)\}
+=1+r-h_\varphi(r)\quad (0<r<1/2).
+}\tag{9}
+\]
+On the TRUE native small report range \(0<r<2\zeta<p^2\),
+\[
+\boxed{
+\frac{d}{dr}\min A =1-h'_\varphi(r)<0,\qquad
+\partial_x\min A(0,0)
+=[1-h'_\varphi(r_0)]\,r_x(0,0)\ne0.
+}\tag{10}
+\]
+Thus even a mathematically stipulated **perfect least-cost
+code-orientation selection** does not choose an Einstein field
+equation or source-free physical configuration. It chooses a
+printer given P; it DOES NOT derive the finite dynamics, the
+allowed query/field preparation or why a given P is generated.
+
+Furthermore, actual alternative controllers have different primitive
+gate/clock/work costs. The separate original controlled-X owner gives
+the physically typed threshold \(c_X\ge p^3\) for preserving the
+original nonblank orientation in its declared single-tick comparison;
+this cannot be replaced by a free code-label permutation in an
+assertion about the fully admitted Book03 source.
+
+This is why **neither Bellman uniqueness NOR MDL-optimal code choice**
+is the missing gravitational selector. The specific original
+causal task, initial state, controller, native operator action and
+its true payment/variation law remain load-bearing.
+
 ## 4. The strongest *physical* carrier still has an independent normal source
 
 The newer genuinely paid original weak-operand execution
