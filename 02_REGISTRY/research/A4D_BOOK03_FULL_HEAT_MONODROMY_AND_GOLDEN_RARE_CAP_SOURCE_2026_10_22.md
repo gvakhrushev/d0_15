@@ -132,7 +132,7 @@ Therefore **necessary** for this error to vanish is
 \[
 \boxed{K_h q_{\rm rare,h}\longrightarrow\infty.}     \tag{12}
 \]
-This is NOT a uniform GR/refinement theorem. It is an exact required resource scaling for this particular native future task. When \(\gamma_h\) is bounded away from zero and one wants the **derivative of the mean count** to vanish, the rare branch contributes
+This is NOT a uniform GR/refinement theorem. It is an exact required resource scaling for this particular native future task. When \(\gamma_h\) is bounded away from zero **and held fixed under the report-coordinate derivative** (the actual declared cap9/20 report chart), and one wants the **derivative of the mean count** to vanish, the rare branch contributes
 \(K_h\gamma_h(1-\gamma_h r_h)^{K_h-1}\); the other two terms are exponentially smaller under uniform positivity. The stronger sufficient cap schedule is
 \[
 \boxed{K_h\gamma_h r_h-\log K_h\longrightarrow+\infty.} \tag{13}
