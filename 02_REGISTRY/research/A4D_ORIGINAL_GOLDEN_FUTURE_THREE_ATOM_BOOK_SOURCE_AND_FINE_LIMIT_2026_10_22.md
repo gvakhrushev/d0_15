@@ -111,3 +111,153 @@ The full fine selector therefore loses a factor O(L^-64) relative to the native 
 The new structural insight is PRECISE: simply keeping all fine registered outcomes as independently active Book return channels sends the Einstein field source to zero on genuine Golden refinement by NORMALISATION CANCELLATION. The unique minimal R/C future algebra avoids this suppression mathematically and retains an O(1) fraction of the physical target source without introducing a hand-picked preferred click. Whether M1 actually selects that active algebra (or a source-equivalent paid future comparison) remains the SINGLE admitted-history question; the already proved exact all-mesh nonvacuum null Einstein–CAR family is its mathematical consumer, not its derivation.
 
 Reproduction: sources/d0_original_golden_ready_coherent_book_2026-10-22/check_all_outcome_book.mjs (EXACT BigInt Q(p) Golden coefficient checks, full 72441 outcome normalisation, all n in selected depths, 9x9 genuine controlled Book complement, source gain lower/upper bounds). Physical GR_closed=false.
+
+## 6. NEW: exact partition-price order on ONE fixed carrier, active rank and scene heat
+
+**Phase and consumer.** This is a bounded continuation of the same native-realization owner #334, not a new scientific execution. It consumes the actual fine probabilities and complementary-return construction in §§1–3. Its new parent substitution is the previously unproved **choice between fine and three-atom comparison programmes**: within the supplied class of complete reflection comparators preserving the two existing READY/CLICK tests, the three-atom programme uniquely minimizes the literal Book feedback. The comparison retains the same full Hilbert space, active projector/rank and heat. Selection of this programme class, native task/cut, complete Info/work valuation and independent preparation equations remains open.
+
+### 6.1 Same hardware and P; dormant blocks replace a change in dimension
+
+Let the original complete fine terminal projections be `Pi_1,...,Pi_M`, where `M=72441` at n20, and let `V_y,Omega_y` be the SAME coherent complete unitary reporter and normalized prepared input used in §2. For a partition `Pcal={B_1,...,B_m}` of these labels set `Pi_B=sum_(j in B) Pi_j`. Work on the SINGLE common carrier
+
+    H = C^M_selector tensor K_fullwork tensor oldRIGHT128,
+    P_y = I_M tensor |Omega_y><Omega_y| tensor I128.
+
+Every candidate therefore has `rank(P_y)=128M`. Its complete unitary is
+
+    U_Pcal,y = [direct_sum_(l=1)^m V_y†(I-2Pi_B_l)V_y]
+               direct_sum [M-m copies of I_K],
+
+tensored with the same spectator oldRIGHT. The unused selector blocks are real identity operations. They are not deleted, normalized away, assigned negative weight or removed from P. The true full complement on each occupied block is
+
+    P_y U_Pcal,y†(I-P_y)U_Pcal,y P_y
+        = 4q_B(1-q_B) |Omega_y><Omega_y| tensor I128,
+    q_B=<Omega_y|V_y† Pi_B V_y|Omega_y>.
+
+Every dormant block has F=0 and contributes determinant1. Therefore the same full ordinary trace/determinant gives
+
+    J_Pcal = 128 sum_(B in Pcal) j_z(q_B),
+    j_z(q)=-log[1-4zq(1-q)].                              (18)
+
+All preparation derivatives are included because this is a pointwise identity for the actual `Omega_y,V_y`, not a frozen-input calculation. The construction compares two complete unitary **programmes** on the same carrier; equality of their whole physical prices is not inferred from (18).
+
+Attach the SAME original scene using `R0=|0><0|`, `U_scene=R0 tensor U_Pcal+(I-R0) tensor I`, and `P_scene=R0 tensor P_y`. For the explicitly declared common scene heat
+
+    Delta=L913 tensor I_H,
+    H_scene=beta^-1 log[dim(H) Z913(beta)],                (19)
+
+the two heat values and all their field derivatives agree EXACTLY. Thus the result does not use an arbitrary reduction of heat-trace dimension. More generally, a genuinely identical moving heat operator on the two programmes cancels in their difference, but no equality of their actual native moving Dirac operators is established here.
+
+The common reporter word can be factored out:
+
+    U_Pcal=(I_M tensor V_y†) Z_Pcal (I_M tensor V_y).
+
+Only the Boolean phase-marking `Z_Pcal` changes. On a fine label `|omega>` it computes a membership bit, applies the phase, and can uncompute that scratch bit reversibly while retaining `|omega>` itself. This is **lossless use of the fine work register**, not a quotient that declares all its other native future tests nonexistent. The two-pass construction is on the already declared coherent branch. It does not permit reversal of a previously measured, classically protected archive or identify its Info with that branch's Shannon ledger. Availability, compilation and actual prices of the Boolean markings remain physical premises.
+
+### 6.2 Strict merging theorem and its exact scope
+
+Write `D(q)=1-4zq(1-q)`. For `a,b>=0`, `a+b<=1`, and `0<z<1/2`, exact polynomial multiplication gives
+
+    D(a+b)-D(a)D(b)=8zab[1-2z(1-a)(1-b)].               (20)
+
+Since all denominators are positive,
+
+    j_z(a)+j_z(b)-j_z(a+b)
+      =log{1+8zab[1-2z(1-a)(1-b)]/[D(a)D(b)]}.          (21)
+
+This is STRICTLY POSITIVE for a,b>0 and is zero precisely when a=0 or b=0. It holds at the original z=2^-20. Repeated merging therefore strictly lowers J whenever it combines two positive atoms.
+
+Every partition preserving the two ORIGINAL predicates `R=READY`, `C=READY_AND_CLICK` refines `{1-R,R-C,C}`. Its occupied atoms can be merged within these three classes without changing either predicate. Hence
+
+    J_Pcal >= J_3,                                      (22)
+
+with equality exactly for that three-atom partition, modulo permutations, zero-probability atoms and padded dormant blocks. All three masses are positive on the original primary report with `0<r0<1`. This is a global discrete comparison across that entire partition class, not a field Hessian or an assumption that the partition was selected to fit Einstein.
+
+The requirement to preserve R,C is substantive: dropping both tests permits the single atom q=1, for which J=0. The theorem does not derive the physical necessity of these tests or forbid additional native address-specific future tasks.
+
+### 6.3 Actual original n20 price gap and a uniform all-depth bound
+
+Using the original complete multiplicities, `N=10946`, `pi=p^23`, `a=2N*pi`, and the owned r0,
+
+    J_FINE=128[6765 j_z(p^21)+N j_z(p^22)+N j_z(p^24)
+                +2N j_z(pi r0)+2N j_z(pi(1-r0))],
+    J_3=128[j_z(1-a)+j_z(a(1-r0))+j_z(ar0)].             (23)
+
+Evaluating these expressions gives
+
+    J_FINE = 0.0004882692279097756797458254730337867480...,
+    J_3    = 0.0002196510471157014774049428638604409656...,
+    GAP    = 0.00026861818079407420234088260917334578245....
+
+These are Decimal logarithm evaluations, not outward interval certificates. The exact formulas (21),(23) determine the result independently of those decimal digits.
+
+There is also a rigorous **uniform positive gap independent of the reported fields**. Let `x_n=F_(n+1)p^n`. The existing recurrence has positive coefficients p,p² summing to1, and its first two values are `x_1=p`, `x_2=2p²`. Consequently
+
+    p <= x_n <= 2p²  for EVERY n>=1.
+
+The total overshoot and FF masses, both in NOT_READY, are `A=1-x_n` and `B=p²x_n`. Since x(1-x) decreases on this interval,
+
+    AB=p²x_n(1-x_n) >= p²(2p²)(1-2p²)=2p^7.
+
+Fine-to-three-atom coarsening includes merging those two groups. All other merges have nonnegative gaps. Using `D(A)D(B)<=1`, (21) proves
+
+    J_FINE-J_3 >= 128 log[1+16zp^7(1-2z)]
+                > 0.00006726908.                       (24)
+
+The last decimal is a rigorously certified rational lower bound, not rounded numerical evidence: put `b=16zp^7(1-2z)>0`, use `log(1+b)>b/(1+b)`, and compare `128b/(1+b)` with the exact rational `1681727/25000000000` in Q(p). The preceding logarithmic bound evaluates to approximately `0.0000672690996205962006251227672781775389`. Equation (24) holds for arbitrary actual local probabilities r_z, not only r0, and does not shrink on the genuine Golden refinement depth.
+
+For the original common-null family, `J_FINE ->128*4z=0.00048828125`, while `J_3 ->0.0002196510469393153992699744146955537982...`. Thus the limiting gap is approximately `0.00026863020306068460073002558530444620175`. For the fine limit, `j_z(0)=0`, `j_z'(0)=4z`, normalization and `max q_omega ->0` suffice; no arbitrary renormalization is used.
+
+## 7. The exact first/mixed source changes; no false stationary quotient
+
+For one merge put `s=a+b`, `k=j_z'`, `Delta j=j_z(a)+j_z(b)-j_z(s)`. The actual complete chain rule is
+
+    D Delta j = [k(a)-k(s)]Da+[k(b)-k(s)]Db,             (25)
+
+    D² Delta j = [k'(a)-k'(s)]Da tensor Da
+              +[k'(b)-k'(s)]Db tensor Db
+              -k'(s)(Da tensor Db+Db tensor Da)
+              +[k(a)-k(s)]D²a+[k(b)-k(s)]D²b.           (26)
+
+The exact derivative
+
+    k'(q)=-8z[1-2z+4zq(1-q)]/[1-4zq(1-q)]²<0
+
+makes both coefficients in (25) positive in the interior, but does not constrain the signs of Da,Db. Coarsening is NOT a source-neutral change of notation. Its field Hessian is already indefinite at a=b=1/4: along (1,-1) it is `2k'(1/4)<0`, whereas along (1,1) it is `2k'(1/4)-4k'(1/2)>0`. Therefore (22) proves a minimum over partitions, not a minimum over geometries, inertia preservation or off-shell critical-set equivalence.
+
+At a two-sided smooth nonnegative Born boundary a=0, necessarily Da=0; the merge gap has zero first derivative, but a genuine birth `a(t)=t²/7`, `b=1/3` has the positive second derivative `(2/7)[k(0)-k(1/3)]`. Dark labels are retained, including their second sources.
+
+On the owned original common-null 42-coordinate carrier the source identity in §3 specializes to
+
+    D42(J_FINE-J_3)
+      =(g_FINE-g_3) eta_h²
+        [r_f D42 sum_z fhat_z+sigma r_q D42 sum_z q_z],  (27)
+
+with exact coefficients defined in §3 and
+
+    g_FINE = 2.033815860153815615921014159957...e-11,
+    g_3    = 4.452436402226714403047518597438...e-7.
+
+The checker verifies `0<g_FINE<g_3` in Q(p) at the original finite z; the displayed decimals are evaluations. The original lambda_minus ratio is retained on this common-null family. Equation (27) cannot be transported to the certified off-null unequal-report CQ root without its actual source calculation, and source-normalized refinement of the remaining full price is still required.
+
+## 8. What is now substituted and what must still be valued on the real tape
+
+The exact substitution is **partition choice within one specified same-hardware Book feedback family**. Three-atom feedback is strictly cheaper than every strict positive refinement preserving the existing R,C task. The original fine WORK, active rank, original spectator128 and common heat are retained. The coarsening is lossless event decoding inside that programme class, not a theorem identifying all admissible future observers or selecting Book03's physical P_N.
+
+For one actually admitted pair of complete programmes write
+
+    S_full=H_common+J+S_extra.
+
+Here S_extra must contain the actual marking code, branchwise Book03 Info, factory/preparation/clock/work and any other physically present terms. Then the coarse programme is cheaper if
+
+    S_extra,FINE-S_extra,3 > -(J_FINE-J_3).               (28)
+
+Equation (24) provides a rigorous uniform value budget; (23) provides the stronger specific n20 expression. A value bound alone does not establish field stationarity: every actual D42 S_extra and every independent initial/controller/preparation/clock row remains in the physical equations. In particular, equal Hilbert dimension and a common forward/inverse word do not prove equal marking cost or source, and a formally available reversible Boolean decoder is not automatically a selected M1 execution.
+
+**Small decisive check.** `sources/d0_original_golden_ready_coherent_book_2026-10-22/check_partition_price.py` uses only the Python standard library. It independently checks (20) and k' coefficientwise; computes both complete nine-dimensional rational unitaries, their common projector, all columns, literal complements and full determinants; enumerates every partition of a six-label positive fixture and proves the unique R/C-preserving minimum among its eight admissible partitions; checks (25),(26) with independent rational two-parameter jets, indefinite Hessian and dark birth; and checks native mass/gain identities and the strict rational bound (24) in Q(p). The n20 logarithms are evaluated at precision80 and100 with agreement better than 1e-70. The original full128, native histogram, geometry and prior certificate suites are consumed without replay.
+
+The ordinary command prints the new authored receipt; it does not rewrite any expected evidence or source:
+
+    python 02_REGISTRY/research/sources/d0_original_golden_ready_coherent_book_2026-10-22/check_partition_price.py
+
+Recorded output: `sources/d0_original_golden_ready_coherent_book_2026-10-22/RESULT_PARTITION_PRICE.json`. This bounded mathematical comparison is not an independent physical GR acceptance. `GR_closed=false; full_D0_price_selected=false; raw216_closed=false`.

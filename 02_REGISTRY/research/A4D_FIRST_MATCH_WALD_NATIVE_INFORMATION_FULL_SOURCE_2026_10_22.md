@@ -396,3 +396,250 @@ For a deterministic cap at K comparisons the exact complete-tree expected number
 The first term \(\gamma^K=(1-q_{\rm fail})^K\) and remaining terms are the TWO READY-status nonmatch probabilities. Formula (29), not a frozen 4, must be inserted into the full finite clock/source rule (14); its full derivative includes actual \(D\gamma\) whenever readiness moves. A claimed uniform cap/source refinement requires a strictly positive lower bound on all three true native probabilities, particularly \(\gamma r\), not just on \(r\). The numeric finite h=1/4 root persists for sufficiently high K under the explicit C²/independent-trial hypotheses of §5. This does not prove a compulsory Book03 or generic GR root.
 
 **Code:** \`check_first_match_wald.mjs\` directly tests (27)--(29) on two distinct nonzero report probabilities and multiple readiness values, and checks the \(D\gamma,D r\) chain rule across all 42 formal field-coordinate components. It does not map those formal derivatives to a native field writer or rerun an original 42-field Euler/interval certificate.
+
+## 11. Exact comparison-cell occupation: equal comparison prices are unnecessary
+
+**Parent substitution.** Sections 2 and 10 assumed a label-independent complete comparison price \(\kappa\). The following theorem replaces that sufficient assumption by the exact necessary and sufficient column-sum condition on the *same* measured first-match language. It does not choose a new action, entropy, stopping task or Book cut.
+
+Retain the complete iid trial \(Z\) and its strictly positive coarse label law \(q_a\), \(a=1,\ldots,m\). Let \(N_{ab}\) count comparisons of the initial label \(a\) with a later trial label \(b\), including the final match. A genuinely completed comparison can retain its own raw factory outcomes, retries, work and duration. Require that each such block completes without altering the compared labels or the next iid trial law, and that its fresh conditional law depends only on \((a,b)\). All actual logs remain in the full record. Write its complete conditional **net** cost as
+
+\[
+ \kappa_{ab}(y)
+ =\mathbb E[C_{\rm cmp}\mid a,b]
+   -H_\varphi(\text{raw comparison log}\mid a,b)
+   -\mathbb E[S_\varphi(\text{conditional quantum work})\mid a,b].
+ \tag{30}
+\]
+
+The last term applies only to the already stated product-CQ work setting. Independent conditional factory durations may be random; integrability is required. A factory abort that terminates the entire trial, a shared entangled work resource, or a deadline imposed on *total elapsed duration* changes this stopping language and needs its own transition law. A cap below counts completed comparisons, not physical elapsed ticks.
+
+The coarse equality bit is a deterministic function of the already retained labels, so it contributes **no extra Shannon entropy**. Raw random factory records can have conditional entropy, and that is included once in (30).
+
+**Exact occupation and its proof.** Conditional on initial label \(a\), the probability of reaching later comparison \(j\) is \((1-q_a)^{j-1}\); the new label is independently \(b\) with probability \(q_b\). Multiplying by the initial probability \(q_a\) and summing gives
+
+\[
+ \boxed{\mathbb E N_{ab}
+   =q_a\sum_{j\ge1}(1-q_a)^{j-1}q_b=q_b.}
+ \tag{31}
+\]
+
+Thus the entire comparison contribution and the complete measured price are
+
+\[
+ \boxed{S_{\rm cmp}=\sum_bq_b K_b,\qquad
+ K_b:=\sum_a\kappa_{ab},\qquad
+ S_{\infty}=(m+1)S_1+\sum_bq_bK_b+B_{\rm shared}.}
+ \tag{32}
+\]
+
+For arbitrary actual field, preparation, readiness and factory tangents,
+
+\[
+ \boxed{D S_{\infty}
+  =(m+1)D S_1+\sum_b K_bDq_b+\sum_bq_bD K_b+D B_{\rm shared}.}
+ \tag{33}
+\]
+
+For a *fixed* conditional ledger \(\kappa\), its probability source vanishes on every tangent of an open positive simplex **iff all column sums \(K_b\) agree**. Necessity follows by the tangents \(Dq=e_b-e_c\), and sufficiency by \(\sum_bDq_b=0\). On a restricted physical probability image, equality of all column sums remains sufficient, but is not claimed necessary. If the common column sum itself moves, the remaining source is exactly \(D K\); column balance does not justify freezing it. For example, \(\left(\begin{smallmatrix}1&3\\4&2\end{smallmatrix}\right)\) is neutral in every probability direction even though all four prices differ; adding a common moving charge to each entry produces its genuine nonzero price source.
+
+This removes the *equal-per-comparison-price* premise in the existing first-match transport. Establishing that an actual comparator's complete factory/work ledger is column balanced remains a concrete implementation question, not a new convention for Info.
+
+### Finite cap with every comparison and abort retained
+
+For at most \(K\) later completed comparisons, the same sum gives
+
+\[
+ \boxed{n_{ab,K}:=\mathbb E N_{ab,K}
+   =q_b[1-(1-q_a)^K],\quad
+ Dn_{ab,K}=[1-(1-q_a)^K]Dq_b
+       +Kq_b(1-q_a)^{K-1}Dq_a.}
+ \tag{34}
+\]
+
+There is no need for a guessed average comparison price. With \(L_K=m+1-\sum_a(1-q_a)^K\), the full value and first source are exactly
+
+\[
+ \boxed{\begin{aligned}
+ S_K&=L_K S_1+\sum_{a,b}n_{ab,K}\kappa_{ab}+B_{\rm shared},\\
+ DS_K&=L_K DS_1+S_1DL_K
+    +\sum_{a,b}(\kappa_{ab}Dn_{ab,K}+n_{ab,K}D\kappa_{ab})
+    +DB_{\rm shared}.
+ \end{aligned}}
+ \tag{35}
+\]
+
+This includes all failure detail through \(S_1\), and all genuinely moving raw comparison prices through \(D\kappa_{ab}\). Random conditional durations obey the same occupation law for their *additive mean*. A nonlinear delay transform or a clock-dependent heat operator cannot be replaced by that mean; section 9's clock warning remains unchanged.
+
+## 12. One explicit unequal code example, and a real fixed Boolean skeleton
+
+**Declared code example, not an already derived native comparator price.** Suppose the newly produced deterministic equality status is actually encoded as match \(\mapsto0\), mismatch \(\mapsto10\), and its stipulated code-length charge is respectively 1 and 2. This uses the same two codewords as the original report alphabet, but it does **not** turn a deterministic equality flag into an original stochastic Golden F/R gate or prove its physical cost. Preparation, Boolean gates, raw factories, time and Book Info must be accounted for separately. The next identities concern this explicitly declared status-code component.
+
+There is exactly one final match in the uncapped positive-support language, while \(\mathbb E\text{(nonmatches)}=m-1\). Equivalently, its conditional ledger has \(\kappa_{aa}=1\), \(\kappa_{ab}=2\) for \(a\ne b\), so every column sum is \(2m-1\). Therefore
+
+\[
+ \boxed{C_{\rm status,\infty}=2m-1,\qquad DC_{\rm status,\infty}=0.}
+ \tag{36}
+\]
+
+This cancellation holds for moving probabilities, including the *unconditional* native three-status law
+\(q=(1-\gamma,\gamma(1-r),\gamma r)\), with all fine factory failures retained in \(Z\). For this declared code component, \(m=3\) gives a mean of **five** units; the full-trial multiplier is **four**, even when \(\gamma,r\) both move. If an independently established, label-independent comparison-factory net charge \(g(y)\) is additionally incurred per comparison, then
+
+\[
+ \boxed{S_\infty=4S_1+3g+5+B_{\rm shared},\qquad
+ DS_\infty=4DS_1+3Dg+DB_{\rm shared}.}
+ \tag{37}
+\]
+
+Thus five is not an assertion that the whole physical comparator costs five. All genuine gate/factory/preparation sources in \(g\), or a more general matrix (30), remain. The READY probability source within \(DS_1\) is multiplied by four, not canceled or normalized away.
+
+**Constructed logical equality word.** Encode the three coarse statuses as \(00,01,10\); keep both two-bit inputs \(a,b\), two fresh difference bits \(d_0=d_1=0\), and a fresh flag \(e=0\). Execute the fixed word
+
+\[
+ \mathrm{CNOT}_{a_0,d_0},\ \mathrm{CNOT}_{b_0,d_0},\
+ \mathrm{CNOT}_{a_1,d_1},\ \mathrm{CNOT}_{b_1,d_1},\
+ X_{d_0},\ X_{d_1},\ \mathrm{Toffoli}_{d_0,d_1;e}.
+ \tag{38}
+\]
+
+It retains both inputs and gives \(e=1\iff a=b\), with all workspace retained. The actual logical inventory is **four CNOT, two X, one Toffoli: seven gates**, independent of the input. Reversing the six difference-computation gates after writing \(e\) restores the two difference bits, for **eight CNOT, four X, one Toffoli: thirteen gates**. Both are permutations on all 128 basis columns, including arbitrary ancilla inputs and the unused fourth label. The complete measured labels determine the extra clean/unclean logical bits, so these bits add no independent classical information. This establishes a finite reversible skeleton; physical primitive actuation, blank preparation, compiler factories and their complete prices are not identified with gate count. If their actual net prices are input independent, the seven-gate inventory has the honest price \(4c_{\rm CNOT}+2c_X+c_{\rm Toffoli}\), plus its actual blank/factory ledger, rather than an invented unit-cost Golden step.
+
+### The finite clock reaction for the unequal code
+
+Let \(A_K\) be the indicator that all \(K\) comparisons mismatch, and put
+\(R_K=\mathbb E A_K=\sum_aq_a(1-q_a)^K\) and
+\(T_K=\sum_a(1-q_a)^K\). Pathwise the status code length is
+\(2\,\text{(number of completed trials)}-3+A_K\). Hence
+
+\[
+ \boxed{C_{\rm status,K}=2L_K-3+R_K
+ =2m-1-T_K-T_{K+1},\quad
+ DC_{\rm status,K}=2DL_K+DR_K.}
+ \tag{39}
+\]
+
+For this status-code component and no other uncomputed comparison charge, the complete capped measured price is
+
+\[
+ \boxed{\begin{aligned}
+ S_K&=L_K S_1+2L_K-3+R_K+B_{\rm shared},\\
+ DS_K&=L_K DS_1+(S_1+2)DL_K+DR_K+DB_{\rm shared}.
+ \end{aligned}}
+ \tag{40}
+\]
+
+For one constant additive comparison charge \(g\), replace \(S_1+2\) in the second line by \(S_1+g+2\), and add \((L_K-1)Dg\) when \(g\) genuinely moves. The completely general statement is (35). Even at \(K=1\), when \(L_1=2\) is constant, the binary status-code source is \(2(1-2r)Dr\); the finite status term cannot be dropped because the trial-count source happens to vanish.
+
+## 13. Full joint marked law with conditional factories, not a mark of the mean
+
+Let \(P_y(z)\) be the entire fine trial law and \(C(z)\) its actual charge. Let \(R_{ab}(v)\) be the complete conditional comparison-factory law, including every raw outcome, with its actual comparison charge \(c_{ab}(v)\). The deterministic equality code, if actually used, belongs once in \(c_{ab}\). Define
+
+\[
+ W_a(s,t)=\sum_{z:b(z)=a}P_y(z)^{1+s}\varphi^{-tC(z)},\qquad
+ A_{ab}(s,t)=\sum_vR_{ab}(v)^{1+s}\varphi^{-tc_{ab}(v)},\qquad
+ B_a(s,t)=\sum_{b\ne a}W_b(s,t)A_{ab}(s,t).
+ \tag{41}
+\]
+
+For product-CQ conditional work, multiply each fine term by the corresponding \(\operatorname{Tr}\sigma^{1+s}\); its derivative includes the real conditional von Neumann entropy. This is not valid for coherent superpositions between stopping paths or shared entangled work. Each mark is computed from the real fine law, not from its coarse probability alone.
+
+Summing the entire prefix-free stopping language gives
+
+\[
+ \boxed{\begin{aligned}
+ \mathcal Z_\infty(s,t)&=
+   \sum_a\frac{W_a(s,t)^2 A_{aa}(s,t)}{1-B_a(s,t)},\\
+ \mathcal Z_K(s,t)&=
+   \sum_a W_a(s,t)\left[
+    W_a(s,t)A_{aa}(s,t)\sum_{j=0}^{K-1}B_a(s,t)^j
+    +B_a(s,t)^K\right].
+ \end{aligned}}
+ \tag{42}
+\]
+
+The second term in the finite bracket contains **all unmatched abort histories**. The uncapped formula holds on its genuine convergence domain \(|B_a|<1\), with the appropriate moment assumptions for derivatives. For nonnegative actual charges, nonnegative marks \(s,t\), and positive \(q_a\), this includes the one-sided physical Laplace domain. A common analytic neighborhood or higher derivatives require their own exponential-moment bounds for any countable factory. At zero mark, \(W_a=q_a\), \(A_{ab}=1\), and both complete partition sums equal one. Their directional mark derivative satisfies
+
+\[
+ (\partial_s-\partial_t)\log_\varphi\mathcal Z\big|_{(0,0)}
+  =C_{\rm complete}-I_{\rm complete}.
+ \tag{43}
+\]
+
+Equations (31)--(35) follow as the actual first derivatives of this complete transform as well as from occupation. An arbitrary nonlinear clock/Book function must retain (42), rather than replace it by a function of the mean duration.
+
+**Explicit binary code check.** For a one-trial original report code with probabilities \((1-r,r)\) and charges \((1,2)\), and the separately declared equality-status charges \((1,2)\), set \(a=1-r\), \(\xi=\varphi^{-t}\). With no further comparator charge in this component, the whole cost moment is
+
+\[
+ \boxed{\mathcal Z_\infty(0,t)
+ =\frac{r^2\xi^5}{1-a\xi^3}
+  +\frac{a^2\xi^3}{1-r\xi^4}.}
+ \tag{44}
+\]
+
+The two complete matched classes have probabilities \(r^2a^n,a^2r^n\), and total trial-plus-status charges \(5+3n,3+4n\), respectively. At finite cap,
+
+\[
+ \boxed{\begin{aligned}
+ \mathcal Z_K(0,t)=&\ r^2\xi^5\sum_{n=0}^{K-1}(a\xi^3)^n
+ +a^2\xi^3\sum_{n=0}^{K-1}(r\xi^4)^n\\
+ &+ra^K\xi^{2+3K}+ar^K\xi^{1+4K}.
+ \end{aligned}}
+ \tag{45}
+\]
+
+The last line is the two genuine abort classes. The unmarked mean code charge is \(3(1+r)+3\); the whole measured entropy is \(3h_\varphi(r)\). No second entropy is assigned to the deterministic equality status.
+
+### The actual per-trial source remains decisive
+
+For the unpadded report code alone,
+\(u_0=1+\log_\varphi(1-r)\), \(u_1=2+\log_\varphi r\), so
+
+\[
+ u_1-u_0=1-h_\varphi'(r),\qquad
+ DS_{\rm code}=[1-h_\varphi'(r)]Dr.
+ \tag{46}
+\]
+
+If actual additional conditional net prices are \(v_0,v_1\), the complete source is instead
+\([1+v_1-v_0-h_\varphi'(r)]Dr+(1-r)Dv_0+rDv_1\), plus any shared source. The new comparison cancellation does not remove the report's \(Dr\) code term or identify this ledger with the fixed-inventory N1 \(-h_\varphi'(r)Dr\) source. The ternary prefactor four transports the **actual entire trial source**, including independent-input rows; it cannot make a nonstationary upstream input stationary. No new off-null root follows without the same-ledger hypothesis already required in section 5.
+
+## 14. Uniform capped source control on the real rare-READY chart and scope
+
+For \(q_a\ge\epsilon>0\), \(\theta=1-\epsilon\), let
+\(M_q=\sum_a\|Dq_a\|\). The exact scalar tails satisfy
+
+\[
+ T_K\le m\theta^K,\qquad
+ \|DT_K\|\le K\theta^{K-1}M_q.
+ \tag{47}
+\]
+
+For the explicit status-code component (40), subtraction from its uncapped full source gives the exact remainder
+
+\[
+ DS_K-[(m+1)DS_1+DB_{\rm shared}]
+ =-T_K DS_1-(S_1+1)DT_K-DT_{K+1}.
+ \tag{48}
+\]
+
+Consequently its norm is at most
+
+\[
+ m\theta^K\|DS_1\|
+ +(|S_1|+1)K\theta^{K-1}M_q
+ +(K+1)\theta^K M_q.
+ \tag{49}
+\]
+
+Actual added factory sources use (35), not this component-only bound. On the concrete compact three-status neighborhood
+\(\gamma\in[0.45,0.46]\), \(r\in[1.8\cdot10^{-6},1.9\cdot10^{-6}]\), every original status probability has the rigorous lower bound
+\(\epsilon=8.1\cdot10^{-7}\), and
+\(M_q\le2\|D\gamma\|+2\gamma\|Dr\|\).
+For \(K=10^8\), \(T_K<2\cdot10^{-35}\) and
+\(\|DT_K\|<6.65\cdot10^{-28}M_q\), using
+\(\theta^K\le e^{-K\epsilon}\). These are absolute coefficient bounds before multiplication by the real field derivatives and division by the actual nonzero geometric gain. A refinement family in which \(\gamma_h r_h\) or that gain tends to zero needs its own uniform normalized estimate. At a support boundary the value of \(m\) changes, so the constant uncapped mean is not a uniform boundary statement.
+
+**Verification and scientific boundary.** The new standard-library-only
+\`sources/d0_first_match_wald_2026-10-22/check_comparison_ledger.py\`
+exhaustively enumerates all fine binary and ternary trees for \(K=1,\ldots,5\), checks exact Fraction-valued per-cell occupations and moving \(\gamma,r\)/fine-log first jets, checks full measured Cost-minus-Info with Decimal arithmetic, compares complete cost/probability marks including independently recorded random conditional factories and aborts, and checks the seven/thirteen-gate equality permutations on all 128 columns. The fixture prices and factory laws are declared mathematical controls, not fabricated original D0 runtime receipts. The recorded result is \`COMPARISON_LEDGER_RESULT.json\`.
+
+The substituted premise is precisely *fixed comparison price \(\kappa\)*: a supplied real comparison ledger can now be tested by its column sums, with all finite-clock and moving-price reactions retained. The original compulsory comparison task, paid primitive/factory law, Book03 active cut, moving heat, branchwise Book Info and independent input equations remain unproved. In particular the normalized initialized-work cut of section 9 remains source blind even for the exact marked law (42); evaluating that law does not select a different cut. \`GR_closed=false; full_D0_price_selected=false; raw216_closed=false\`.

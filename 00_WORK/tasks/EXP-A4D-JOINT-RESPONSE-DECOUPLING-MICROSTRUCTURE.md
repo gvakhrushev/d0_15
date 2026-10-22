@@ -15,6 +15,85 @@ Assembly-Slot: `constitutive`
 
 ## Strategic synthesis continuation — 2026-10-17
 
+### 22 October: complete the active-partition and comparison-price applications
+
+Continue existing Draft334 at input `ac4dc6945a1940f4067d616c45d3fc626a50d23d`,
+phase native realization / final composition, same `constitutive` slot and
+`native-programme-v1` carrier. The actual Book03 master scalar and its finite
+stationarity law already exist; the remaining problem is their same-execution
+pullback, including heat, active cut, complete price and admitted input tangents.
+Do not replace that problem by another choice of an aggregation functional.
+
+Consume the original complete Golden READY/all-outcome source in
+`A4D_ORIGINAL_GOLDEN_FUTURE_THREE_ATOM_BOOK_SOURCE_AND_FINE_LIMIT_2026_10_22.md`
+and the measured first-match owner
+`A4D_FIRST_MATCH_WALD_NATIVE_INFORMATION_FULL_SOURCE_2026_10_22.md`.
+Two bounded applications address explicit retained premises: compare fine and
+three-status feedback in ONE padded full-history carrier, with the actual
+master heat held equal only on its declared fixed-scene branch; and replace
+the sufficient equal-comparison-price premise by its exact conditional-ledger
+criterion, with all finite-cap and cost-marked sources retained.
+
+Root integrates the two existing proof owners and the primary memo. Bounded
+assistants use disjoint write paths inside
+`sources/d0_original_golden_ready_coherent_book_2026-10-22/` and
+`sources/d0_first_match_wald_2026-10-22/`; a separate read-only reviewer checks
+the composed mathematical scope and native application. The smallest decisive
+checks are an exact same-projector unitary block identity and merger gap, and
+complete finite stopped-tree comparison counts, marked law and derivatives.
+Do not rerun unchanged geometric roots, full128 or Lean certificates.
+
+The intended substitutions are restricted controller-partition price ordering
+and comparison-source neutrality for their specified actual ledgers. They do
+not establish M1 selection of the comparison task, native heat/cut binding,
+the complete comparator factory price, independent upstream stationarity or
+uniform GR recovery. Keeping fine history in WORK preserves future tests; it
+does not prove that only READY/CLICK tests are physically active. A deterministic
+status code is not a new stochastic Golden primitive by naming it `0/10`.
+No new task, action, BOOK edit, lifecycle change or GR promotion is introduced.
+
+The same bounded application additionally tests the reset assumption against
+the ORIGINAL sequential full128 Kraus instrument. Root owns
+`sources/d0_first_match_wald_2026-10-22/SEQUENTIAL_FULL128_BOOK_RETURN.md`
+and `check_sequential_native_return.py`. Its finite capped noncommuting renewal
+must retain match and abort leaves, actual port costs and conditional comparator
+charges. Compute the true corner on the explicitly encoded clean-blank match
+branch with an open forward-clock window; compare it with the already-owned
+orthogonal-tape zero corner. This consumes the prior forward-window determinant
+without asserting a compulsory window or that measured CQ equals Book03. A
+reset-free instrument counterexample must prevent reuse of the iid Wald source.
+
+The actual original channel also supplies a constructive stationary-input
+application. The comparison owner now writes only the disjoint
+`SEQUENTIAL_STATIONARY_OCCUPATION.md`, `check_stationary_occupation.py`, and
+`STATIONARY_OCCUPATION_RESULT.json` in the same first-match source directory.
+It consumes the EXISTING inverse-square preparation and recycling-gap proof
+from `d0_native_preparation_closure_2026-10-21/PROOF.md`; do not recertify that
+older theorem. Derive the stationary occupation telescope, its finite-cap
+version and the full stationarity-defect source. Its mathematical consumer is
+additive actual charges, not the iid Shannon/CQ information identity.
+
+The partition owner supplies the disjoint `NATIVE_ACTIVE_LABEL_SUPPORT.md`,
+`check_native_label_support.py` and `NATIVE_LABEL_SUPPORT_RESULT.json` in that
+same source directory. Only the active-label count required by this new
+occupation law is computed: original one-boost support 42 at the flat point,
+64 on its nonzero admissible branch. Do not turn this bounded calculation
+into a new geometry/rank atlas or treat the uncapped support jump as a smooth
+source. The full retained preparation prefix has its own clock, price and
+blank corner; a stationary reduced DATA density is not a replacement for it.
+Root integrates the complete cap source, clean comparison and these two
+consumed premises in the existing primary memo. Native Book03 physical
+admission and full GR acceptance remain unchanged.
+
+Concurrent intake through remote `e608554` adds the archive-MI/Book01
+description-rate synthesis, the configured tensor renewal Gibbs/HJR action
+and finite-K nonflat field-root existence, and the native temporal
+Gauss/Wilson solver contract. Preserve those results when integrating this
+checkpoint. The stationary correlated occupation theorem does not supply
+the iid conditional harmonic-energy identity; the primary memo gives an
+exact unique-stationary counterexample to that illicit substitution. The
+original native constructor and preparation inputs used here are unchanged.
+
 ### 22 October: integrate exact report-to-Book feedback routes
 
 Consume the new [all42 report-to-Book feedback synthesis](../../02_REGISTRY/research/A4D_NATIVE_GOLDEN_REPORT_TO_BOOK_FEEDBACK_ALL42_2026_10_21.md), now published in the existing PR at `3c581e83`. It constructs two true §03.25 complementary returns from the supplied N=1 binary report and derives their positive first-source multiples on the declared CQ chart: coherent reflection with a retained-history/controller obstruction, and two paid forward conjugate histories with a sharp `1/D` sensitivity bound. The primary positive case now records both routes and their limits.

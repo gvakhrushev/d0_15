@@ -1,0 +1,39 @@
+{
+  "GR_closed": false,
+  "checks": 624,
+  "exact_complete_value_and_first_jet_cases": 10,
+  "exact_joint_mark_cases": 30,
+  "exact_random_factory_complete_source_cases": 6,
+  "exact_random_factory_joint_mark_cases": 18,
+  "full_D0_price_selected": false,
+  "largest_complete_enumerated_tree": 3305,
+  "logical_equality_gate_counts": {
+    "checked_columns_each": 128,
+    "clean_difference_ancillas": {
+      "CNOT": 8,
+      "Toffoli": 1,
+      "X": 4,
+      "total": 13
+    },
+    "retained_work": {
+      "CNOT": 4,
+      "Toffoli": 1,
+      "X": 2,
+      "total": 7
+    }
+  },
+  "original_Book03_operator_price_identified": false,
+  "physical_comparator_factory_ledger_selected": false,
+  "rare_report_bounds": {
+    "D_tail_coefficient_times_sum_norm_Dq": "6.639682577721444207790541866702433625228617335150309790582657843665493E-28",
+    "K": 100000000,
+    "chart": "gamma in [0.45,0.46], r in [1.8e-6,1.9e-6]",
+    "length_tail_upper_bound": "1.991903159874220320210676581128487727175754641504858227089342711294059E-35",
+    "q_min_lower_bound": "8.10E-7",
+    "source_normalized_refinement": "requires division by the actual nonzero gain"
+  },
+  "scope": "exact classical/CQ first-match ledger; 1/2 comparison encoding is a declared code example",
+  "status": "PASS",
+  "ternary_uncapped_comparison_code_example_mean": 5,
+  "ternary_uncapped_complete_trial_multiplier": 4
+}
