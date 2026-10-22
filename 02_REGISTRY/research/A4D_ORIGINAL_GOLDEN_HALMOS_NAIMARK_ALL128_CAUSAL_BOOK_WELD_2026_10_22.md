@@ -282,3 +282,109 @@ Thus the already selected original PRE-Book \(J_{\rm pre}\) depends only on \(\D
 The known ORIGINAL three-tick effects \(M_8\oplus M_8\), whole 256-dimensional three-Kraus product span, unique stationary \(\rho_*=\Delta^{-1}/\operatorname{Tr}\Delta^{-1}\) and complete 65-label causal Cost−Info source transfer VERBATIM through (20), since every ORIGINAL labelled K remains exactly identical. Those earlier proofs are consumed; there is no new unsupported rank claim.
 
 The physical next theorem is now sharpened: does the compulsory Book03 action select the **PRE** \(\Delta\)-dependent feedback plus a whole archive/Info/work term that carries the **true \(W\)-covector**, on ONE ORIGINAL physical 42-field/tick execution? If it does, the new decomposition supplies the entire native operator source without a Boolean-vs-CAR missing degree of freedom. If it does not, that exact observed \(W\)-sensitivity must be accounted for by the actual alternate Book observer, not by an Einstein-fitted compensation.
+
+
+## 8. THEOREM F — the SAME original minimal Golden projector has an EXACT full fine-record Cost−Info/source decomposition, with no missing row payment
+
+The operator weld above has a direct, nontrivial **physical information consequence**. Work on the SAME original one-tick 128 fine instrument, preserving the original fixed 0/10 PORT lengths \(c_{jb}=1+b\) and its actual received row j. Let \(\rho\) be ANY truly prepared DATA state (including arbitrary retained passive oldRIGHT, which does not change these DATA probabilities), and write
+\[
+\begin{aligned}
+q_{00}&=\operatorname{Tr}\rho K_0^\dagger K_0,&
+q_{01}&=\operatorname{Tr}\rho K_1^\dagger K_1,\\
+q_j&=\sum_{b=0}^1q_{jb}
+=4p^2\operatorname{Tr}[W_jS\rho S W_j^\dagger],
+&Q_{\rm NB}&=\sum_{j>0}q_j
+=4p^2\operatorname{Tr}[\rho\Delta(I-\Delta)].
+\end{aligned}\tag{23}
+\]
+For the exact original j>0 fine readout, \(q_{j0}=p^2q_j\), \(q_{j1}=p q_j\), with the genuine zero/dark rows retained at probability0. Put \(R_j=q_j/Q_{\rm NB}\) on the positive support. Then the full 128-fine-pointer entropy, with \(0\log0=0\), satisfies the **exact Shannon chain**
+\[
+\boxed{
+H_\varphi(P_{\rm full128})
+=H_\varphi(q_{00},q_{01},Q_{\rm NB})
++Q_{\rm NB}\,H_\varphi(R)
++Q_{\rm NB}(2-p).
+}\tag{24}
+\]
+The three terms are **respectively** the original blank/orphan/nonblank event, the genuinely labelled original Walsh/Julia row-memory, and the golden PORT coin conditioned on the nonblank row. This is the entropy of the complete ORIGINAL fine record, not a quotient which discards the old row information.
+
+The ENTIRE ORIGINAL one-tick *terminal PORT* expected code price is, independently of the row isometry,
+\[
+\boxed{
+\mathbb EC_{\rm port}
+=1+\sum_{\alpha:\,\alpha\bmod2=1}q_\alpha
+=1+4p^3\operatorname{Tr}(\rho\Delta).
+}\tag{25}
+\]
+Indeed \(K_1^\dagger K_1+\sum_{j>0}K_{2j+1}^\dagger K_{2j+1}
+=4p^3[\Delta^2+\Delta(I-\Delta)]=4p^3\Delta\) identically. No field-dependent native free code measure has been substituted.
+
+Combining (24),(25) yields the unique complete expected original fine terminal Code-minus-measured-Shannon scalar
+\[
+\boxed{
+\begin{aligned}
+\mathcal S_{\rm fine}(\rho;\Delta,W)
+={}&1+4p^3\operatorname{Tr}(\rho\Delta)\\
+&-H_\varphi(q_{00},q_{01},Q_{\rm NB})
+-Q_{\rm NB}H_\varphi(R)-Q_{\rm NB}(2-p).
+\end{aligned}}\tag{26}
+\]
+This EXACT paid-register component is computed from the **same** Golden projector/row-isometry that gives the genuine Book pre-feedback (15)–(17); it is not an invented source-matching action. Distinct whole apparatus factory/clock/preparation/thermal tariffs still remain real and cannot be set to zero by (26).
+
+On the authentic stationary DATA \(\rho_*=\Delta^{-1}/\operatorname{Tr}\Delta^{-1}\), the observed row probabilities simplify WITHOUT a commuting-W assumption:
+\[
+\boxed{
+q_j^*=\frac{4p^2}{\operatorname{Tr}\Delta^{-1}}
+\operatorname{Tr}[W_j(I-\Delta)W_j^\dagger],\qquad
+Q_{\rm NB,*}=4p^2h(1-\mu),
+}\tag{27}
+\]
+where \(h=16/\operatorname{Tr}\Delta^{-1}\), \(\mu=\operatorname{Tr}\Delta/16\). The whole original full128 observable row source is now an explicit function of the fixed original \((\Delta,W)\), with no future Info table or original K completion variable.
+
+**Exact source splitting:** at fixed \(\Delta,\rho\), a mathematical Stiefel tangent \(\delta W\) changes neither the expected PORT code (25), nor the macro \((q_{00},q_{01},Q_{\rm NB})\), nor the Golden coin law. It can ONLY change the retained labelled row information:
+\[
+\boxed{
+D_W\mathcal S_{\rm fine}[\delta W]
+=\frac1{\ln\varphi}\sum_{j:q_j>0}
+\ln\!\frac{q_j}{Q_{\rm NB}}\,\delta q_j,\qquad
+\delta q_j=8p^2\,\mathrm{Re}\operatorname{Tr}
+[(\delta W_j)S\rho S W_j^\dagger].
+}\tag{28}
+\]
+Here \(\sum_j\delta q_j=0\) exactly by the Stiefel identity (21). At fixed \(\Delta\), (17) gives \(D_WJ_{\rm pre}=0\) while (28) is generally nonzero: this LOCATES the entire genuine moving fine-row source absent from an isolated prepared return logdet. The original physical field tangent may restrict \(D_YW\); NO independent W control is asserted admitted.
+
+For a genuine original chronological no-reset n-tick fine history, the complete cost/entropy chain rule expresses the exact finite measured component as
+\[
+\boxed{
+\mathcal S_n^{\rm fine}(\rho_0)
+=\mathbb E_{\rho_0}\sum_{t=0}^{n-1}
+\mathcal S_{\rm fine}(\sigma_t;\Delta,W),
+}\tag{29}
+\]
+where \(\sigma_t\) is the REAL conditional DATA posterior after the original prefix (with a retained oldRIGHT purification when needed). Equation (29) is the already owned native65 causal chain on its explicit original Golden \((\Delta,W)\) representation. It does NOT use \(\sigma_t=\rho_*\) on each conditioned branch, which would be a false iid reset. For any complete mixed DATA×RIGHT quantum information cut beyond classical fine entropy, use the actual already owned native65 quantum conditional entropy recursion rather than silently identifying that cut with (29).
+
+### Original source check — the W/row term is quantitatively nontrivial
+
+At the original native \(r=1/9,\nu=3/5\), \(\rho_*=\Delta^{-1}/\operatorname{Tr}\Delta^{-1}\), the independently replayed unchanged K gives the following values in ORIGINAL Golden units:
+\[
+\begin{array}{r|r}
+H_\varphi(P_{\rm full128})&0.28467814108214723\\
+H_\varphi(q_{00},q_{01},Q_{\rm NB})&0.21364732032136904\\
+Q_{\rm NB}\,H_\varphi(R)&0.042305656188623746\\
+Q_{\rm NB}(2-p)&0.028725164572154422\\
+\mathbb EC_{\rm port}&1.0130262718422078\\
+\mathcal S_{\rm fine}&0.7283481307600606
+\end{array}
+\]
+The true independent proper Lorentz source \(\theta=\log(5/4)\), including the **moving original \(\rho_*\)** and all true K/dK, yields numerically
+\[
+\boxed{
+D_\theta \mathcal S_{\rm fine}
+\simeq+0.01390292064030459,\quad
+D_\theta J_{\rm pre}/d_R
+\simeq-1.83125951900374\cdot10^{-8}.
+}\tag{30}
+\]
+The opposite signs on ONE TRUE original θ direction show WHY the actual Row/Info/Heat/Clock source cannot be deleted and the Book feedback alone cannot be relabelled as the whole measured original price. These are bounded original numerical diagnostics, NOT 42-field physical Einstein/Book source interval certificates. The exact equations (23)–(29) do not rely on decimal precision.
+
+**The principal positive consequence:** a COMPLETE original Golden action/record and its PRE Book return now live on ONE **exact** native \((\Delta,W)\) instrument without any Boolean-vs-CAR surrogate. Every previously missing original 17-plus Kraus poststate is kept; the remaining gravitational bottleneck is the genuine M1/Book03 *selection of which complete price/Info/SCENE heat/clock functional is compulsory* and the physical all42 coframe/link/material writer, NOT a missing algebraic physical-channel intertwiner.
