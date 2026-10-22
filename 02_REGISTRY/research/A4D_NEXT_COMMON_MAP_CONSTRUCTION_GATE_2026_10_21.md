@@ -739,3 +739,30 @@ More decisively the specified **complete native-code versus full classical-recor
 **Critical refinement hostile:** the theorem constructs an everywhere positive smoothly moving legal Fibonacci controller whose entire tape is EXACTLY original native Golden at field \(y=0\) for every depth, with uniform scalar intensive cost-pressure values, BUT its intensive first field source fails to converge to the derivative of the limit. Therefore a claimed Golden clock/CQ/Book physical refinement must separately prove a uniform source-jet bound, not merely preserve all base field values or the unmarked \(Z=1\). This is a restriction on an analytical alternative controller, not proof that native D0 physically admits it.
 
 **Consuming Gate B/C:** derive the SAME physical Book03 \(H+J+R\)/Info/complete clock/prior/root and full ordered-CAR report from the selected real execution; do NOT substitute the source-free neutral Golden address KL for the three-atom active price plus necessary fine archive. The TRUE field writer, observer/RIGHT/upstream equations and all 42 Euler remain the one required physical substitution. Full source selection / GR_closed still OPEN.
+
+
+## 22 October: FIRST-MATCH harmonic-clock Book Info source — one actual 72,441 tape, not a replacement entropy
+
+[New exact same-owner harmonic-clock/source theorem](A4D_HARMONIC_FIRSTMATCH_NATIVE_BOOK_INFO_SOURCE_SYNTHESIS_2026_10_22.md) with [executed all 72,441-leaf / true 256-site checker](sources/d0_harmonic_firstmatch_book_2026-10-22/check_harmonic_firstmatch_native_book.py) integrates the previously separate full coarse three-atom stopped controller, Book06 site archive and native fine Golden 0/10 code price.
+
+In the existing declared positive m-class IID first-match task, keep every original fine trial and all failed comparisons; if N is the number of unmatched trials before the first return to the initial class, the REAL archived-clock harmonic statistic H_N=sum_(k≤N)1/k has exact conditional expectation -ln q_a and unconditional expectation ln(phi) H_phi(q). It is uniquely determined by this universal self-information reconstruction requirement, not an arbitrarily fitted information gain. The same full paid trial law has E T=m+1 and true per-outcome DATA payment E C_stop^data=(m+1) E c_one; no assumption of equal native 0/10 prices is needed. These are operational readout identities of a supplied task, not proof Book03 compulsory Info=H_phi or that the real factory/controller/clock are free.
+
+On the ORIGINAL n20/L4 first-crossing Golden READY programme with exactly 72,441 complete leaves, TRUE 256 unequal PF site weights, a=2*10946*p^23, three coarse atoms q3=(1-a,a(1-rbar),a*rbar), the full measured-code Cost−Shannon is one finite FUNCTIONAL identity:
+
+\[
+\boxed{
+S_{\rm fine}
+=\underbrace{\mathbb E C_{\rm stop}^{\rm data}/4}_{\text{four expected actual complete trial codes}}
+-\underbrace{\mathbb E H_N/\ln\varphi}_{\text{three-atom real stopped clock}}
+-\underbrace{K_{\rm addr}}_{\text{original fixed prefix archive}}
++\underbrace{a I_\varphi({\rm site};{\rm bit}\mid{\rm READY})}_{\text{source-carrying retained correlation}},
+\quad
+K_{\rm addr}=H_\varphi(P_{\rm prefix})-h_\varphi(a).
+}
+\]
+
+This reproduces the whole previously owned original native \(a\sum_z w_z[1+r_z-h_\varphi(r_z)]\) with all its actual pulled-back field jets, not just at common-null and not by choosing a new GR coefficient. The 72,441->3 compression alone loses the fixed \(K_{\rm addr}\) and the genuine off-null \(a I\) source. Direct first-match on all 72,441 fine classes would cost 72,442 expected full paid trials; the existing three-class controller needs mean four but must preserve and price the conditional spatial archive source. The true 256 counts are generated and checked; no artificial equal site list is inserted.
+
+**Native FINITE cap and source budget:** for at most M later paid trials, \(L_M=\mathbb E T_M=4-\sum_{a=U,0,1}(1-q_a)^M\), \(\mathbb E C_{\mathrm{stop},M}^{\rm data}=L_M\mathbb E c_{\rm one}\), and \(\mathbb E H_{N_M}=\sum_aq_a\sum_{k=1}^M(1-q_a)^k/k\). The complete harmonic information/source error is explicitly the tail \(\Delta_M=\sum_aq_a\sum_{k>M}(1-q_a)^k/[k\ln\varphi]\), whose entire field first jet is fixed by the real \(q_a(y)\). The physical elapsed clock source has separate derivative \(D L_M=M\sum_a(1-q_a)^{M-1}Dq_a\); merely having E T≈4 does NOT make clock variation vanish for an ultra-rare class. On the bounded native-report fixture \(q_{\min}\simeq6.37\times10^{-7}\), the uncapped clock has E T=4 but variance about \(3.14\times10^6\). Actual native cap/work/Info choice remains a physically payable branch.
+
+**Exact consuming acceptance test:** On ONE really G0-required Golden/CAR/oldRIGHT/observer programme, either (A) derive that the compulsory Book03 vertex-Info and selected active/archive cut actually value this clock/correlation source (plus the literal complete factory/controller/stage/heat/work preparation terms) and their independent Euler, with no fitted coefficient, and then test the original all42/root/refinement; or (B) expose the exact nonzero complete Book03 source residual as a scoped no-go for this selected task. The harmonic expectation theorem alone does not promote Book03 Info, a physical actor/writer, whole \(H+J+R\), GR or original raw216.
