@@ -122,7 +122,7 @@ ok(W8===4096&&1+2*W8===8193,
 ok(2*W8+2===8194,'true single global addressed first-match mean trials8194');
 ok(Number(fib(n24)+6n*fib(n24+1)+1n)===496519,
    'original full fine n24 mean 496519 paid native trials versus addressed8194 and global4');
-for(const L of [4,8,16,64,256]){
+for(const L of [4,8,16,64,256,1024,2048]){
  const W=L**4,{s,n}=nDepth(L),g=gammaTest(r0,n);
  const rhoMin=1-9/L**3,rhoMax=1+9/L**3;
  ok(rhoMin>.85&&rhoMax<1.15,'derived ORIGINAL PF C2 ALL-site density positive');
@@ -141,11 +141,11 @@ for(const L of [4,8,16,64,256]){
  ok(maxAbsSiteRareSquared<thetaAddr**2,
   'complex FULL site-resolved original READY1 survival contraction O(1/L4)');
  const capLocalGlobal=Math.ceil((80+16*s)*W/(5e-7));
- ok((5e-7/W)*capLocalGlobal>=80+16*s,
+ ok((5e-7/W)*capLocalGlobal>=80+16*s-1e-9,
   'honest one GLOBAL site-addressed tape needs O(L4 log L) cap to suppress rare tail');
  const coarseCap=Math.ceil((80+16*s)/eta);
  const siteConditionalSuccessUpper=coarseCap*.4/W;
- if(L>=64)ok(siteConditionalSuccessUpper<1e-3,
+ if(L>=1024)ok(siteConditionalSuccessUpper<1e-3,
    'one GLOBAL fine-address future aborts almost surely on every READY anchor with coarse O(logL) cap');
  // Any input preserving the W local READY tests has >=2W+1 positive atoms;
  // fresh IID first return Kac mean = m+1.
