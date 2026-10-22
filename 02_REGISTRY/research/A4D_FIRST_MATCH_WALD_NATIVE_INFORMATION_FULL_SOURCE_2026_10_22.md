@@ -382,19 +382,11 @@ on that stated fixed-source chart, preserving **each** off-null local entropy sl
 
 This is a directly actionable **same ORIGINAL paid execution type**: reprepare the *complete* native factory/processor from fresh blanks per trial; always retain all failure detail; compare only the existing coarse \(\{\mathrm{fail},\mathrm{ready0},\mathrm{ready1}\}\) final status using one fixed charged reversible Boolean equality word. No new material/carrier field, tuned reporter probability, unknown-state cloning or physical postselection is requested. The task of **repeating until equality**, rather than the original one-shot task, is nevertheless a DISTINCT prospective programme and must be selected and priced as such by M1/G0, and the native Book03 active cut, spectral heat, full history Info and stationary upstream preparation are still not identified.
 
-For a deterministic cap at K comparisons its actual expected number of trials is
+For a deterministic cap at K comparisons the exact complete-tree expected number of trials is
 
 \[
  \boxed{
  L_K(\gamma,r)=4-
- \gamma^K-(1-\gamma+\gamma r)^K-(1-\gamma r)^K
- }
-\]
-
-**after correcting each survival probability exactly**:
-\[
- \boxed{
- L_K^{\rm correct}(\gamma,r)=4-
  \gamma^K-
  [1-\gamma(1-r)]^K-
  [1-\gamma r]^K .
