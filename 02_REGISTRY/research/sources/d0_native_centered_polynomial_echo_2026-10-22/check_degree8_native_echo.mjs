@@ -24,7 +24,13 @@ const pow=(x,n)=>Q(x.a**BigInt(n),x.b**BigInt(n));
 const lt=(x,y)=>x.a*y.b<y.a*x.b;
 const gt=(x,y)=>x.a*y.b>y.a*x.b;
 const eq=(x,y)=>x.a*y.b===y.a*x.b;
-const num=x=>Number(x.a)/Number(x.b);
+// Convert BIGINT rational to diagnostic double without Infinity/Infinity;
+// strict inequalities above always use cross-multiplied ORIGINAL integers.
+function num(x){if(x.a===0n)return 0;
+ const neg=x.a<0n,na=(neg?-x.a:x.a).toString(),nb=x.b.toString();
+ const v=Number(na.slice(0,16))/Number(nb.slice(0,16)) *10**(na.length-nb.length);
+ return neg?-v:v;
+}
 function choose(n,k){n=BigInt(n);k=BigInt(k);let a=1n;for(let j=1n;j<=k;j++)a=a*(n-k+j)/j;return a}
 const ONE=Q(1),TENTH=Q(1,10),TWELVE=Q(3,25),p=(Math.sqrt(5)-1)/2,phi=1/p,t=2*p*p;
 const ra=minus(ONE,pow(TWELVE,2)),rb=minus(ONE,pow(TENTH,2));
