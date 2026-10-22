@@ -5,6 +5,13 @@ physical-mathematical example** for GR synthesis and agent work. It is not a
 new task, foundational axiom, registered accepted theorem, or statement that
 all of general relativity has been derived from compulsory D0 physics.
 
+## 22 October: STRICT full 42-Euler original 0/10 paid-code finite root
+
+The former primary Brinkmann family remains a valid positive and uniform-refinement mathematical example, but it is no longer the strongest **single finite nonflat all-field stationarity witness**. The original [UNPADDED native 0/10 exact-root interval certificate](sources/d0_original_unpadded42_2026-10-22/RESULT.json) validates a genuine all42 N1 CQ finite root on one rational two-cell/three-node collar, including the TRUE unequal F/R report charges and both nonparallel real CAR sources. It is not trapped by the old pure-boost no-go, because its field chart includes ALL original 16+24+2 directions.
+
+The [new same-code complete 42-source robustness theorem](A4D_ORIGINAL_UNPADDED_0_10_FULL42_SOURCE_ROBUSTNESS_2026_10_22.md) then gives exact corrected full42 roots under a continuous extra complete first-source <=1e-22 in that very unpadded stationary chart, with quantitative perturbation and C2 saddle bounds. Neither the original full Book03 HJR physical selection nor an admitted writer or h-uniform family is inferred. This upgrades the finite SOURCE existence component while leaving the older exact Brinkmann refining family as the main known positive h→0 mathematical example. GR_closed=false.
+
+
 ## The strongest constructive result available
 
 Read the [complete imported same-carrier proof](A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md)
