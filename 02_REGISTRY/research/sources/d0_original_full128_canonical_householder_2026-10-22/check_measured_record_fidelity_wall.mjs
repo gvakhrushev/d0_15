@@ -44,6 +44,19 @@ ok(gt(infidelityLower,R(739,100000000)),
 const eps=Math.sqrt(num(eps2)),mu0=num(mu),eigens=[mu0-eps,mu0+eps];
 const blank=eigens.map(l=>1-beta*l),q=blank.map(x=>x*x);
 const Q0=q[0],Q1=q[1],dq=Q0-Q1;
+// Stronger EXACT physical success/failure obligation:
+// for an arbitrary unknown DATA qubit with its protected RIGHT,
+// every heralded EXACT UNIVERSAL correction of a fully MEASURED
+// fine outcome must have total input-independent success probability
+// η <= Σ_i lambda_min(K_i† K_i) <= min(E_0)+min(I−E_0)
+// =1−(q_minus−q_plus).  This is a CP trace-effect theorem,
+// not the entanglement-fidelity bound and not free retries.
+const maximumExactClassicalRecoverySuccess=1-dq;
+const mandatoryFailureLower=dq;
+ok(gt(deltaLower,R(1653,1000000)),
+ 'BIGINT ORIGINAL native fully measured-record exact universal postmeasurement correction MUST have >0.001653 unconditional failure mass');
+ok(mandatoryFailureLower>num(deltaLower)&&maximumExactClassicalRecoverySuccess<.99835,
+ 'SAME actual native full128 all-fine measured process forbids unit-success universal quantum echo even WITH all 128 labels and arbitrary outcome-conditioned correction');
 const Fcl=Math.sqrt(Q0*Q1)+Math.sqrt((1-Q0)*(1-Q1));
 const maxFidelity=(1+Fcl)/2;
 const defect=(1-Fcl)/2;
@@ -65,6 +78,20 @@ const identity=(a,b)=>{const k0=[[a,0],[0,b]],
  ok(noncomm>0,'unchanged inherited Kraus matrices are NONCOMMUTING despite sharp correction bound');
  return {a,b,fidel,entF,defect:1-entF};
 };
+// In the SAME owned NONCOMMUTING K0,K1 instrument this exact
+// postmeasurement herald-success upper wall is ACHIEVED:
+// K0=diag(a,b), K1=[[0,u],[v,0]], with a=u=.6,b=v=.8.
+// Apply after outcome0 R0=a K0^-1 and outcome1 R1=u K1^-1,
+// each a valid contraction. Both successful composite Kraus become
+// respectively a I and u I; total η=a²+u²=.72.
+const oldA=.6,oldB=.8,oldU=Math.sqrt(1-oldB*oldB),oldV=Math.sqrt(1-oldA*oldA);
+const oldExactHeraldOptimal=oldA*oldA+oldU*oldU;
+const oldExactHeraldUpper=Math.min(oldA*oldA,oldB*oldB)+
+                           Math.min(oldU*oldU,oldV*oldV);
+close(oldExactHeraldOptimal,oldExactHeraldUpper,2e-14,
+ 'NONCOMMUTING original 2-Kraus outcome-controlled polar+filter correction SATURATES exact universal postmeasurement herald-success wall');
+close(oldExactHeraldOptimal,.72,1e-14,'old native controlled filter η=.72 with failure .28 (not imaginary free inverse)');
+ok(oldExactHeraldOptimal<1,'true original measured classical fine-label task consumes positive loss even with filters');
 const twoK=identity(.6,.8);
 close(twoK.entF,.98,1e-13,'old native noncommuting 2-Kraus best measured-outcome correction ent Fidelity exactly .98 (not identity)');
 for(const [aa,bb] of [[.55,.8],[.6,.8],[.7,.8],[.6,.75]]){
@@ -104,11 +131,13 @@ console.log(JSON.stringify({status:"PASS_ORIGINAL_FULL128_CLASSICAL_RECORD_IRREV
   strictRationalEntanglementInfidelityLower:num(infidelityLower),
   actualMaxDeterministicFullRecordCorrectedEntanglementFidelity:maxFidelity,
   actualMinimalEntanglementInfidelity: 1-maxFidelity,
+  guaranteedMinimumUnconditionalFailureForEXACTUniversalHeraldedRecordCorrection:mandatoryFailureLower,
+  highestPossibleMeasured128RecordExactHeraldedSuccess:maximumExactClassicalRecoverySuccess,
   fullMeasuredNativeOriginalCAR16LorentzInfidelitySource:-FcPrime/2,
   originalFine128OtherKrausDetailsNotAssumed:true
  },
  theorem:"for ANY fine outcome-labeled physical DATA-only deterministic corrections, F_ent <= (1+sum_i sqrt(q_i0*q_i1))/2 <= (1+sqrt(q0*q1)+sqrt((1-q0)*(1-q1)))/2",
- nativeOld2KrausSharpness:twoK,
+ nativeOld2KrausSharpness:{...twoK,exactHeraldSuccessAchieved:oldExactHeraldOptimal,exactHeraldFailure:.28},
  fullStinespringCoherentUncomputeNotForbidden:true,
  probabilisticHeraldedFilterNotForbidden:true,
  trueOldRIGHTJointOperationsNotForbidden:true,
