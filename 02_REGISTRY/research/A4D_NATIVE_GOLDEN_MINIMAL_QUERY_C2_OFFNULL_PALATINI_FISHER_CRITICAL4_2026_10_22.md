@@ -184,3 +184,54 @@ However **physical full GR is not thereby declared:** it remains to construct/de
 - Authentic original 4D PF census/all-order depth: A4D_ORIGINAL_GOLDEN_PF_ALL_ORDER_SUPERALGEBRAIC_FINITE_EINSTEIN_2026_10_22.md.
 - Exact old all40->3->1 / genuine CAR null sourced Einstein waves and midpoint smooth result: A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md.
 - New stand-alone positive interval and numerical independent source/Fisher checker: sources/d0_unpadded_constitutive_legendre_2026-10-22/check_golden_minimal_depth_c2_fisher.py. The all-field estimates (8)-(10) are exact analytical chain-rule proofs; the checker replays an explicit OFF-NULL field chart with MOVING PF, direct independent derivatives through second order, real native query depths, and original Bernoulli likelihoods. It does not rerun the expensive full42 interval proof or claim remote CI acceptance.
+
+
+## 6. EXACT finite positive Bregman regularization — the stronger, non-asymptotic synthesis
+
+The strict convexity (3) is not only a tool for the O(h²) expansion. It implies an **EXACT identity at every finite h** on the genuine original N1 positive chart, including ALL native PF populations and every non-null CAR/Lorentz field:
+
+For \(z\in D,\ c(0)=0\) define the original-Golden Bregman remainder
+\[
+B_c(z,0):=c(z)-c(0)-\nabla c(0)\cdot z
+=\int_0^1(1-t)\,z^\top D^2c(tz)z\,dt.
+\]
+Then
+\[
+\boxed{
+S_L(Y)=\gamma\sum_s(f_s+\lambda_-q_s)
++\frac{K_0}{\tau_L}
+  \sum_s\rho_s\,B_c(\tau_Lw_s/\rho_s,0).
+}\tag{17}
+\]
+This is **not a decomposition into two separately postulated actions**: the second term is EXACTLY the original paid-unpadded Golden code remainder after subtracting its already derived flat Palatini/CAR first jet. Both functions use one and the same N1 \(r(x,y)\), p, zeta, retained F/R 0/10 records and original source normalization.
+
+Using the independently **globally certified** strict native two-operand Hessian window \(\mu:=4.48\times10^{-7}<\lambda_{\min}(D^2c)\) and \(M=5\times10^{-5}>\lambda_{\max}(D^2c)\), the remainder satisfies the **strict quantified finite native sandwich** for arbitrary f,q (no Taylor-series truncation):
+\[
+\boxed{
+\frac{K_0\mu\tau_L}{2}
+\sum_s\frac{f_s^2+q_s^2}{\rho_s}
+\le S_L-S_{\rm affine}
+\le\frac{K_0M\tau_L}{2}
+\sum_s\frac{f_s^2+q_s^2}{\rho_s}.
+}\tag{18}
+\]
+The left equality can only occur when ALL the original f and q operands are zero (the displayed numerical \(\mu\) lies strictly below the actual certified eigen lower bound). Thus the microscopic N1 Cost−measured-Info deformation is **genuinely positive and has an exact unique flat-operand zero** on the whole declared strict convexity chart. It coexists with the previously proved Lorentzian **saddle** of the full 42-field pullback: positivity of the Bregman remainder does not turn the signed Palatini action into an unrestricted D_min minimum.
+
+**Full off-null PF-pressure law, not a free added source.** Define the actual original Legendre pressure \(V(z)=z\cdot\nabla c(z)-c(z)\). It is **strictly nonnegative on D** and has exact integral representation
+\[
+\boxed{
+V(z)=\int_0^1t\,z^\top D^2c(tz)z\,dt,\quad
+\frac\mu2\|z\|_2^2\le V(z)\le\frac M2\|z\|_2^2.}\tag{19}
+\]
+At fixed actual original f,q, varying one genuinely available site density changes the complete original price by
+\[
+\boxed{
+\frac{\partial}{\partial\rho_s}
+\left[\frac{K_0}{\tau_L}
+\rho_sc\left(\frac{\tau_Lw_s}{\rho_s}\right)\right]
+=-\frac{K_0}{\tau_L}V(z_s)\le0,
+}\tag{20}
+\]
+strict when \(f_s^2+q_s^2>0\). All physically constrained site masses, total-normalization reactions, and geometric effects of moving density remain real; (20) is the exact FIXED-OPERAND partial, not a claim native D0 admits independent free \(\rho_s\) controls. In the original null Einstein wave sector f=q=0, **B_c=V=0** exactly, proving directly why the authentic code's full nonlinear and moving-PF first source reduces to the same exact Palatini/CAR null source at every finite h.
+
+Equations (17)-(20) are a positive native information-geometric synthesis: **one original fully determined Golden code action = signed Einstein/CAR linear source + a strictly positive, vanishing-on-null, quadratically controlled finite microscopic response**, with no fitted curvature-square counterterm or inserted auxiliary field. Its leading \(f²,fq,q²\) numbers are exactly the old two-operand Hessian, and its field C¹/C² derivatives are already computed in (8)-(10). The standalone original native checker now additionally enforces both sides of (18), both bounds in (19), and the genuine density-pressure sign (20) on a non-null moving-PF field chart. This Bregman identity is a mathematical theorem about the *selected measured-N1 score*, not a derivation that Book03's physically compulsory pathwise Info equals it; \`GR_closed=false\`.
