@@ -82,7 +82,13 @@ const Hsurv=Math.log(16*(1-t*mu))/t;
 const Hsurvp=-mup/(1-t*mu);
 const Rnative=h,Rp=hp;
 ok(Hrawp>0&&Hsurvp>0,"bare two native positive heat sources nonzero");
-ok(Hrawp+Jp>0&&Hsurvp+Jp>0,"BARE Book H+J source remains nonstationary");
+ok(ep<.00546,"rigorous eps source bound W/(2eps)<.00546");
+ok(2*(Math.abs(mup)+ep)<.01414,"true original source eigenvalue total absolute movement");
+const bareJBound=1024*(3.21e-6)*.01414;
+ok(bareJBound<4.65e-5&&Math.abs(Jp)<bareJBound,"source independent full128 Book J bound");
+ok(Hrawp+Jp>.00155&&Hsurvp+Jp>.00155,
+   "strict BARE compulsory-shaped Book H+J root fails original proper boost for BOTH heat choices");
+ok(Jp<0,"original fixed-scene Hodge heat gives J-only nonzero proper boost source");
 ok(Hrawp+Jp+Rp<-.0004186,"old DATA inverse-square full raw HJR strict Lorentz Ward obstruction");
 ok(Hsurvp+Jp+Rp<-.00039,"old DATA inverse-square full genuine log-survival HJR strict Lorentz Ward obstruction");
 const HrawBound=value(minus(x.hp,x.mup))+.8*value(x.W)/2;
