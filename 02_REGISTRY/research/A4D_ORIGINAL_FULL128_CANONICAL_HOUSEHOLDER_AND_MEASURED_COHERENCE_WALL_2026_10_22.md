@@ -309,6 +309,55 @@ This is checked with exact original rational BigInt bounds. The actual two-band 
 \]
 The inequality comes by the two-outcome Bell-projector test. Thus the 8e-14 fidelity-grade *heralded* recovery of §2 or the EXACT *coherent* full Stinespring inverse (10) CANNOT be declared an already physical DETERMINISTIC correction of irreversible measured outcomes.
 
+### THEOREM C: even EXACT HERALDED restoration after measuring original native labels must have a fixed nonzero failure probability
+
+The entanglement-fidelity loss (20) rules out **DETERMINISTIC** restoration. Could every original fine label instead be precisely reversed by outcome-dependent HERALDED filtering, with uniform total success probability exactly 1? No. The same original \(K_0\) effect gives a stronger **exact physical resource price floor** independent of the other 127 native labels.
+
+For an arbitrary two-dimensional encoded qubit \(\mathcal Q=\operatorname{span}\{|-\rangle,|+\rangle\}\), let \(E_i=P_{\mathcal Q}K_i^\dagger K_iP_{\mathcal Q}\) be the actual original 128 fine effects restricted to this test space; \(\sum_iE_i=I_{\mathcal Q}\). Suppose a physically attempted post-measurement correction, conditioned on the actual irrevocably classical i and acting only on DATA/work (no protected oldRIGHT access), declares a success flag and on **every unknown encoded input** returns that same state EXACTLY on success. Complete positivity and linearity force its total successful channel to be \(\mathcal S(\rho)=\eta\rho\) for one INPUT-INDEPENDENT \(0\le\eta\le1\): a source-dependent success multiplier on ALL unknown pure inputs would violate linearity on their mixtures.
+
+The identity map has CHOI rank one. Therefore each positive fine-labelled successful subchannel must itself be a nonnegative multiple \(\eta_i\,\mathrm{id}\), \(\sum_i\eta_i=\eta\). Its physically trace-nonincreasing composition with the original native \(K_i\) obeys
+\[
+ \eta_i I_{\mathcal Q}\preceq E_i,\qquad
+ \eta_i\le\lambda_{\min}(E_i).
+\]
+Summation and superadditivity of the smallest eigenvalue for positive matrices give the **native full128 measurement/recovery ceiling**
+\[
+ \begin{aligned}
+ \eta
+ &\le\sum_i\lambda_{\min}(E_i)\\
+ &\le\lambda_{\min}(E_0)
+     +\lambda_{\min}\!\Big(\sum_{i\ne0}E_i\Big)\\
+ &=q_+ +(1-q_-)
+ =1-\delta_q.
+ \end{aligned}
+\]
+Hence
+\[
+ \boxed{
+ P_{\rm abort/failure}^{\rm any\ exact,\ universal,\
+ measured\ 128\!\to\!DATA\ correction}
+ \ge\delta_q>0.0016532736 .
+ }                                                       \tag{21a}
+\]
+
+At the ORIGINAL exact native Fourier/boost point,
+\[
+ \boxed{
+ \delta_q\simeq0.001676113722198,\quad
+ \eta_{\max}^{\rm permitted}\le0.998323886278.}
+                                                               \tag{21b}
+\]
+The actual lower bound itself has a strict field dependence, \(\partial_r\delta_q\simeq0.01579926406>0\) on the genuine original proper-Lorentz direction. We do **not** equate its derivative to the derivative of the unknown true optimized physical failure price.
+
+This is a strong **first-round permanent no-free-lunch**: after the first native irreversible classical fine-record readout, ANY number of later DATA-only/record-conditioned CPTP steps, clever downstream controllers, new fresh-data-work registers or additional recorded rounds is just another correction supermap conditioned on that first i. It cannot violate (19) or (21a) on all unknown initial states. A truly coherent \(U_{\rm can}^\dagger\) acting BEFORE such irreversible dephasing, or a genuinely heralded subensemble with the required failure records, is outside this deterministic obstruction.
+
+The same exact inherited two-Kraus rational instrument from the prior owner **SATURATES** (21a) for an explicitly constructed filter: at \(a=u=3/5,b=v=4/5\), \(E_0=\mathrm{diag}(9/25,16/25)\), \(E_1=\mathrm{diag}(16/25,9/25)\). Apply the physical mathematical contractions \(R_0=aK_0^{-1}\) and \(R_1=uK_1^{-1}\) only after reading their respective native classical labels; the successful composites are \(R_0K_0=aI,\ R_1K_1=uI\), giving
+\[
+ \boxed{\eta=a^2+u^2=18/25=0.72,\quad
+ P_{\rm failure}=7/25=0.28=\delta_q.}                  \tag{21c}
+\]
+This verifies the theorem's optimality in an already owned NONCOMMUTING fine-record fixture, not a fabricated replacement instrument. The original 128-Kraus remaining 127 effects have NOT been exhaustively optimized, so (21a) is a **universal necessary bound**, not a proved equality for original full128.
+
 **Sharp narrow control on an ALREADY OWNED truly noncommuting native instrument.** The old two-Kraus rational owner has
 \(K_0=\operatorname{diag}(3/5,4/5)\),
 \(K_1=\begin{pmatrix}0&3/5\\4/5&0\end{pmatrix}\).
@@ -382,5 +431,5 @@ But if the physical outcome labels were irreversibly measured BEFORE \(R_+\) can
 ### Immutable narrow receipts
 
 - \`sources/d0_original_full128_canonical_householder_2026-10-22/check_canonical_stinespring_completion.mjs\`: **1,993 PASS assertions**, including SAME old original genuinely noncommuting rational two-Kraus V, direct Householder construction, exact full-unitary and full first source/jet, old CAR16 two-band native \(F\)/entire Hodge price with RIGHT128, BigInt \(3e-20\) midpoint tail and exact \(9/2\) original Kraus-power LCU.
-- \`sources/d0_original_full128_canonical_householder_2026-10-22/check_measured_record_fidelity_wall.mjs\`: **66 PASS assertions**, true original full128 \(K_0\) algebraic effect/boost rational entanglement recovery wall \(>7.39e-6\), sharp old noncommuting two-Kraus polar-control witness \(F_e=.98\), nonzero native Lorentz derivative of record information loss.
+- \`sources/d0_original_full128_canonical_householder_2026-10-22/check_measured_record_fidelity_wall.mjs\`: **72 PASS assertions**, true original full128 \(K_0\) algebraic effect/boost rational entanglement recovery wall \(>7.39e-6\), sharp old noncommuting two-Kraus polar-control witness \(F_e=.98\), nonzero native Lorentz derivative of record information loss.
 - Original matrix/price source: \`sources/d0_native_preparation_closure_2026-10-21/PROOF.md\` and \`sources/d0_book_uniform_source_2026-10-21/check_uniform_book_source.py\` exact CAR16 \(\Delta,\mu,h\), native 128 Kraus and real proper-boost; previous original fixed full Hodge/Book and Krylov owners consumed. **The expensive entire original 128×16 Julia matrix suite, the certified 42-root interval Hessian and M1/G0/power-compiler hardware are not rerun or claimed physically passed.**
