@@ -86,6 +86,16 @@ def run():
     recursive=I
     for U0 in (B1,R,B2):recursive=recursive*U0
     assert recursive==Wline
+    # Exact axial gauge with BOTH endpoint FRAMES fixed, and the genuine
+    # nonabelian temporal Wilson line preserved in ONE final original edge.
+    temporal=(B1,R,B2)
+    gauges=(I,B1,B1*R,I)
+    axial=[gauges[j]*temporal[j]*gauges[j+1].inv()
+           for j in range(len(temporal))]
+    assert gauges[0]==gauges[-1]==I
+    assert axial[0]==I and axial[1]==I and axial[-1]==Wline
+    assert axial[-1]!=I
+    assert axial[0]*axial[1]*axial[2]==Wline
     return dict(status="PASS_ORIGINAL_FINITE_GAUSS_AND_TWO_END_HOLONOMY",
        verified_exact_rational_two_neighbor_stars=True,
        internal_metric_and_CAR_q_invariant=True,
@@ -93,6 +103,8 @@ def run():
        unique_gauge_recursion="g_(t+1)=g_t U0(t)",
        both_end_fixed_condition="ordered product U0(t) = I",
        nontrivial_original_SO13_Wilson_counterexample=True,
+       exact_two_end_fixed_axial_gauge=True,
+       preserved_single_terminal_link_Wilson=True,
        actual_full42_root=False,physical_Book03_selection=False,GR_closed=False)
 
 if __name__=="__main__":
