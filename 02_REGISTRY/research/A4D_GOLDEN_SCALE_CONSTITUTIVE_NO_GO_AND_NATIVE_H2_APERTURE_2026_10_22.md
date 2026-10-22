@@ -273,3 +273,107 @@ Do NOT resume metric roots, isolated source tests or abstract detector designs. 
 - **Independent bounded source checker**, run with ordinary and optimized Python and identical stdout: \`sources/d0_golden_scale_constitutive_2026-10-22/check_scale_constitutive_gate.py\`. 110 scoped assertions on the exact original 0/10 polynomial, strict scale defect, original full42 root operand witnesses, native p^n aperture bounds, true source-plus-moving-PF Taylor bounds and exact Bernoulli Fisher. It does NOT rerun the expensive 100-digit original convexity interval owner, 1764-entry root proof, Lean, full128 or original raw216.
 
 GR_closed=false; full_D0_price_selected=false; raw216_closed=false.
+
+
+## 7. SHARP strengthened theorem: NO constant admixture of the original Book J₂ can repair native Golden-scale homogeneity
+
+The positive fixed-aperture obstruction cannot be escaped by simply reweighting the OLD same-event two-tick 528-fold Book J₂ log-det. This is a stronger exact **sign-level** theorem about an entire one-parameter correction class, without comparing huge whole-42 stationary root suites or relying on floating coincidence.
+
+On the original TRUE curvature-only \((x,y)=(x,0)\) chart write
+
+\[
+c(x)=r(x)-h_\varphi(r(x))-[r_0-h_\varphi(r_0)],\qquad
+j(x)=-528\{\ln(1-r(x))-\ln(1-r_0)\}.
+\]
+
+Both are actual already-constructed native scalar scores of the SAME original Golden two-band event (the constant subtraction in j is harmless for first variations). The exact original Golden \(r(x)=1-(1-\zeta B_0)(1-\zeta A(x))\) has
+
+\[
+A(x)=B_0+(1-B_0)L(x),\quad
+L(x)=4p^2(1+x)[1-p^2(1+x)],\quad B_0=4p^3,
+\]
+\[
+A_x>0,\quad A_{xx}=-8p^4(1-B_0)<0,\quad A_{xxx}=0
+\tag{22}
+\]
+throughout \(|x|\le0.01\), with all inputs unchanged. Set \(Q(x)=1-\zeta A(x)>0\). Direct differentiation of the true J₂ logdet gives
+
+\[
+\boxed{
+j''(x)=528\zeta\,\frac{A_{xx}Q+\zeta A_x^2}{Q^2}<0,
+}
+\tag{23}
+\]
+\[
+\boxed{
+j'''(x)=528\zeta^2 A_x\,
+\frac{3A_{xx}Q+2\zeta A_x^2}{Q^3}<0.
+}
+\tag{24}
+\]
+
+**Exact sign margin** without high-precision fitting: native \(3/5<p<5/8\), \(\zeta=2^{-20}<10^{-6}\), \(1-B_0=(1-2p^2)^2\ge49/1024\). Therefore \(|A_{xx}|>8(3/5)^4(49/1024)>0.049\), \(0<Q<1\), \(Q>1-\zeta\) and \(0<A_x<25/16\). Hence
+
+\[
+-A_{xx}Q>0.049(1-10^{-6}),\quad
+\zeta A_x^2<10^{-6}(25/16)^2<2.5\cdot10^{-6},
+\]
+
+so both brackets in (23)–(24) are STRICTLY negative on the entire chart (the \(j'''\) bracket is even more negative relative to the second-order test).
+
+For the real original code score, put \(C(r)=r-h_\varphi(r)\). On the actual native rare-event positive chart \(r<1/2\),
+
+\[
+C''(r)=\frac1{\ln\varphi\,r(1-r)}>0,\qquad
+C'''(r)=\frac{2r-1}{\ln\varphi\,r^2(1-r)^2}<0.
+\]
+Since original \(r_x>0,\ r_{xx}=\zeta(1-\zeta B_0)A_{xx}<0\) and \(r_{xxx}=0\),
+
+\[
+\boxed{
+c'''(x)=C'''(r)r_x^3+3C''(r)r_xr_{xx}<0.
+}\tag{25}
+\]
+
+The ENTIRE 2D original certificate independently gives \(c''(x)>1.0788\cdot10^{-6}>0\). Thus
+
+\[
+\boxed{c''>0,\ c'''<0,\quad j''<0,\ j'''<0}
+\tag{26}
+\]
+
+on the actual native positive curvature chart, not just at the flat point.
+
+Now consider **ANY constant real** \(\beta\), and any fixed nonzero overall native source scale, with a proposed combined curvature score \(f_\beta(x)=c(x)+\beta j(x)\). If \(\beta\le0\), then \(f_\beta''>0\). If \(\beta\ge0\), then \(f_\beta'''<0\). Therefore **for every** \(\beta\in\mathbb R\), at least one of the second and third field derivatives of \(f_\beta\) is NONZERO.
+
+But for any REAL-ANALYTIC scalar local action score satisfying the finite one-Golden weight law \(f_\beta(sx)=s f_\beta(x)+K_s\) on an OPEN interval containing zero with \(s=\varphi^2>1\), differentiating in x twice and three times at x=0 forces
+
+\[
+(s^2-s)f_\beta''(0)=0,\qquad
+(s^3-s)f_\beta'''(0)=0,
+\]
+
+hence \(f_\beta''(0)=f_\beta'''(0)=0\). Contradiction.
+
+\[
+\boxed{\textbf{NO constant multiple of bare original J₂ repairs the fixed-}\tau
+\textbf{ Golden scale-weight obstruction on any open curvature chart.}}
+\tag{27}
+\]
+
+This also excludes a constant linear combination with any nonzero native N1 scalar multiplier (divide by it); a *pure* J₂ scalar alone fails since \(j''<0\). The ACTUAL compulsory full physical H+J+R **may** contain independently field-sensitive heat/vertex Info/controller/clock/preparation terms, and an actually field-dependent coefficient would change its own independent input/source equations; those are outside this strict constant-mixing no-go and must be derived, not declared.
+
+On the literal original Golden origin, direct high-precision independent controls give
+
+\[
+\begin{aligned}
+c''&\simeq+1.6399104410390\cdot10^{-6},&
+c'''&\simeq-4.00862128575124\cdot10^{-9},\\
+j''&\simeq-3.27527676315723\cdot10^{-5},&
+j'''&\simeq-1.88350036121811\cdot10^{-12}.
+\end{aligned}
+\]
+
+The β that cancels the SECOND derivative, \(\beta_2=-c''/j''\simeq0.050069369999\), leaves the THIRD derivative \(\simeq-4.0087155914\cdot10^{-9}\ne0\). These numbers illustrate the analytically proved SIGN contradiction, not a fitted remedy. [New independent 92-control original-Golden checker](sources/d0_golden_scale_constitutive_2026-10-22/check_no_constant_j2_fix.py). The checker was independently executed normal and -O with identical output; previous large original 42/100-digit interval/Lean results are still pinned, NOT rerun.
+
+**Updated strict physical decision:** to recover TRUE generic Einstein through the original Golden single-scale homogeneity route, a compulsory complete Book03 action must supply a NONTRIVIAL field-dependent heat/Info/clock/work/observer/preparation source whose scale reaction cancels the real original N1 defect, **not** a constant new multiplier of existing N1 and old J₂. Alternatively a fully paid native source-query compiler must actually realize the shrinking \(\tau_L\sim h^2\) operational operand and uniform C1/metric/Ward descent. Neither physical route has been proved; GR_closed=false.
