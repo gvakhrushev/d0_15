@@ -1,0 +1,84 @@
+{
+  "status": "PASS",
+  "arithmetic": "Z[a]/(a^4+a^2-1), exact BigInt; scene integer matrices",
+  "assertions": 37,
+  "checks": [
+    "Golden defining polynomial",
+    "Golden orthogonality",
+    "native X G X inverse",
+    "controlled phase full column norm k=1 input=0",
+    "controlled phase full column norm k=1 input=1",
+    "literal controlled phase corner k=1",
+    "controlled phase full column norm k=2 input=0",
+    "controlled phase full column norm k=2 input=1",
+    "controlled phase full column norm k=2 input=2",
+    "controlled phase full column norm k=2 input=3",
+    "literal controlled phase corner k=2",
+    "controlled phase full column norm k=3 input=0",
+    "controlled phase full column norm k=3 input=1",
+    "controlled phase full column norm k=3 input=2",
+    "controlled phase full column norm k=3 input=3",
+    "controlled phase full column norm k=3 input=4",
+    "controlled phase full column norm k=3 input=5",
+    "controlled phase full column norm k=3 input=6",
+    "controlled phase full column norm k=3 input=7",
+    "literal controlled phase corner k=3",
+    "literal plus-resource corner",
+    "literal H all-work column norm 0",
+    "literal H all-work column norm 1",
+    "literal fixed-schedule H corner",
+    "fresh-work composed exact Toffoli corner",
+    "exact Toffoli success effect",
+    "actual K913 edge census",
+    "scene constant null vector",
+    "exact scene annihilating polynomial",
+    "scene spectral multiplicity trace moment 0",
+    "scene spectral multiplicity trace moment 1",
+    "scene spectral multiplicity trace moment 2",
+    "scene spectral multiplicity trace moment 3",
+    "scene spectral multiplicity trace moment 4",
+    "Golden equal-weight address capacity",
+    "exact Golden scene address coefficient",
+    "signed transposition scene decomposition"
+  ],
+  "exact": {
+    "H_corner_scale_on_integer_Hadamard": [
+      "0",
+      "-4",
+      "0",
+      "6"
+    ],
+    "Toffoli_corner_scale": [
+      "0",
+      "4608",
+      "0",
+      "-7456"
+    ],
+    "Toffoli_corner_probability": [
+      "-124306432",
+      "0",
+      "201132032",
+      "0"
+    ],
+    "scene_weight": [
+      "1597",
+      "0",
+      "-2584",
+      "0"
+    ]
+  },
+  "diagnostic_only": {
+    "Toffoli_success_probability": 0.002331490605720107,
+    "scene_weight": 0.00017307027171223962,
+    "scene_blank_norm": 0.005711318966503907,
+    "signed_terms": 718,
+    "balanced_addresses": 924
+  },
+  "scope": {
+    "actual_original_scene": "combinatorial K(9,11,13), embedded with 95 zeros in DATA128",
+    "moving_field_writer": false,
+    "default_normalized_scene_hodge_identified": false,
+    "complete_physical_price_selected": false,
+    "GR_closed": false
+  }
+}

@@ -11123,3 +11123,100 @@ The concurrent heat-monodromy and canonical pinching/source handoffs are
 This relocates their manual tail from the generated assembly synthesis;
 the canonical view, source papers and scientific acceptance state remain
 separate, with no result or obligation promotion.
+
+
+## 22 October: coherent operand refinement and the full preparation source
+
+The [whole-native closure attempt](A4D_COHERENT_OPERAND_REFINEMENT_AND_FULL_PREPARATION_SOURCE_2026_10_22.md)
+continues the same source-composition route from the exact nonvacuum
+Einstein--CAR consumer. It replaces a named physical implementation premise,
+then tests the independent equations on the resulting processor.
+
+**Actual constructive substitution.** A paid coherent conditional swap
+attenuates the sign observable exactly by alpha, including external
+entanglement. Ten independent Golden-prefix gadgets act on the two geometry
+and eight material probes BEFORE the positive report tables, so the actual
+product-bank output is r(tau*u_N,tau*v). Reusing one prefix or measuring
+these prefixes would change that law or its entropy. No majority amplifier,
+probability estimator or moving scalar rotation is introduced. The actual
+norm bounds require alpha_j=64*Lambda_j*tau<=1; if Lambda grows, the
+Golden depth grows as well.
+
+The entire measured retry/abort/clock transcript and pure conditional work
+give the complete counted CQ price B+Gamma[r-h_phi(r)], with the REAL
+terminal 0/10 charges 1 and 2. B includes the real code/factory/preparation
+baseline. Its constancy on one finite code catalogue does not make it
+constant on independent preparation directions. Growing Neumann degrees
+control the actual inverse/Cayley C2 remainder on a declared strict compact
+chart. The new algebraic-norm/Perron proof supplies an actual coefficient-row
+herald >1/(22H), so structured polynomial-height component catalogues
+admit a polynomial paid finite-cap budget under bounded per-letter costs.
+The table example's very small acceptance is reported, not normalized away.
+
+This consumes the previous shrinking-aperture C2 field theorem where its
+true density dictionary and uniform norms are supplied. Operand error enters
+as epsilon_h, not epsilon_h/tau; extra Golden depth can compensate growing
+jet constants. No raw216 bound, moving PF loader, smooth map into discrete
+words or autonomous same-initial code selection is thereby proved.
+
+**Full preparation test.** The exact physical-input source on this processor
+is Gamma[1-h_phi'(r)]Tr(R_tau dOmega). On the genuine q dictionary,
+an entangling perturbation of two separately prepared component resources
+has zero one-resource density jets and hence zero decoded 42-field jet,
+but changes their pair moment. At the owned nonvacuum fixture it gives
+
+\[
+ Dq_z=-\frac52p^6B_D^2\,2^{-20}/\rho_z,\qquad
+ \frac{D(S-B_{\rm prep})}{w\Gamma\tau}
+ =4\sigma\zeta R_0p^4[1-h_\phi'(r_0)]Dq_z\ne0 .
+\]
+
+This is an exact normal on the free joint-bank fixed-RIGHT mathematical
+domain. A compulsory native admissibility law for that domain remains
+separate. The actually constructed finite product catalogue cannot silently
+be promoted to it. If the extra preparation cost is flat, the actual
+commuting full-support subbank has no interior stationary preparation.
+An independently derived opposing preparation source or lawful restriction
+is required; the formula does not license a counterterm.
+Any C1 completion depending only on decoded fields and separate one-copy
+marginals also has zero derivative on this normal. Its cancellation must
+therefore see joint preparation information or follow a genuine constraint.
+Product symmetrization supplies a positive independent-copy theorem only
+within the product domain. Mutual information has zero first derivative
+at this product point and does not cancel the displayed normal.
+
+**Why the complete coherent history still needs its price.** The same
+original U and one original CNOT, ordered before versus after U, give
+identical across-field full coherent Grams, complete channel and initialized
+cut return. The specified fine pinching preserves full CQ entropy. The
+named 0/10 charge changes by p^3 Tr(rho E_J), with
+E_J=4p^2 a^dagger(sum_{j odd}N_jN_j^dagger)a.
+The exact proper-boost witness has derivative
+-653413779*p^5/204800000000. Its declared Choi16 RIGHT marginal has rank16;
+this number is not claimed on the original full-rank RIGHT128 input.
+General operator identities hold for every common preparation. Intermediate
+scene/Info/controller terms retain their own source. The physically marked
+operator W_-^dagger C W_+ and genuine history occupation recover the
+missing price data without a phase oracle.
+
+The concurrent normalized-scene 359-Euler elimination, actual
+Kraft/Gibbs/Holevo decomposition and same-law stopped-verification source
+are retained at their original interfaces. In particular a fixed price
+marker is outside the unmarked-history obstruction, while a same-law
+constraint still needs its genuine upstream reaction. The supporting fixed
+Golden word for the COMBINATORIAL K(9,11,13) scene is saved separately;
+it is not identified with the normalized scene or a moving field writer.
+
+Four narrow portable JavaScript calculations and exact receipts accompany
+the proofs in [the packet](sources/d0_global_native_gr_closure_2026-10-22/README.md).
+Source pins, corrected normalization/reference scope and analytical review
+are included. No unavailable shell, Python guard, historical root/full128
+suite, Lean build or CI run is claimed. The mathematical full42 positives
+are consumed rather than replayed.
+
+The full parent remains equation (1) in the synthesis: both the entire
+normal preparation source and the pulled-back field source must match on
+one admitted physical domain with its actual gain and norm. This checkpoint
+constructs the shrinking operand and exposes one exact surviving normal;
+it does not select compulsory Book03 H+J+R/Info or close GR.
+GR_closed=false; full_D0_price_selected=false.

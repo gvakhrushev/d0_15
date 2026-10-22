@@ -1,0 +1,119 @@
+{
+  "date": "2026-10-22",
+  "repository": "gvakhrushev/d0_15",
+  "task": "EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE",
+  "PR": 334,
+  "original_input_commit": "3fcabfa0688f581fbbe54c70a342c8a49b9ca5fb",
+  "concurrent_intake_commit": "420090b53e30d9ebb076d3bbdb5325e703484444",
+  "scope": "Exact source provenance; inherited numerical/Lean/CI suites are consumed, not rerun.",
+  "sources": [
+    {
+      "path": "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md",
+      "commit": "3fcabfa0688f581fbbe54c70a342c8a49b9ca5fb",
+      "blob_sha": "ecdd31abb52c94e9f2a157a80c7c49a6f5ac31aa",
+      "url": "https://github.com/gvakhrushev/d0_15/blob/3fcabfa0688f581fbbe54c70a342c8a49b9ca5fb/01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md"
+    },
+    {
+      "path": "01_BOOKS/BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md",
+      "commit": "3fcabfa0688f581fbbe54c70a342c8a49b9ca5fb",
+      "blob_sha": "99721fb50de66688564638f5f2b449a38675d7bd",
+      "url": "https://github.com/gvakhrushev/d0_15/blob/3fcabfa0688f581fbbe54c70a342c8a49b9ca5fb/01_BOOKS/BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md"
+    },
+    {
+      "path": "02_REGISTRY/research/D0_GR_PRIMARY_POSITIVE_CASE.md",
+      "commit": "3fcabfa0688f581fbbe54c70a342c8a49b9ca5fb",
+      "blob_sha": "c84a91a91e8a329bdaec6edaf1fc926c0b26dc03",
+      "url": "https://github.com/gvakhrushev/d0_15/blob/3fcabfa0688f581fbbe54c70a342c8a49b9ca5fb/02_REGISTRY/research/D0_GR_PRIMARY_POSITIVE_CASE.md"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_GOLDEN_MINIMAL_QUERY_C2_OFFNULL_PALATINI_FISHER_CRITICAL4_2026_10_22.md",
+      "commit": "3fcabfa0688f581fbbe54c70a342c8a49b9ca5fb",
+      "blob_sha": "13102b27983e66131983872e58838b78f414da61",
+      "url": "https://github.com/gvakhrushev/d0_15/blob/3fcabfa0688f581fbbe54c70a342c8a49b9ca5fb/02_REGISTRY/research/A4D_NATIVE_GOLDEN_MINIMAL_QUERY_C2_OFFNULL_PALATINI_FISHER_CRITICAL4_2026_10_22.md"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_PAID_MOMENT_FIELD_WRITER_2026_10_21.md",
+      "commit": "3fcabfa0688f581fbbe54c70a342c8a49b9ca5fb",
+      "blob_sha": "ba78731a8c55de18ad88a3fe7f65e071ffea0b65",
+      "url": "https://github.com/gvakhrushev/d0_15/blob/3fcabfa0688f581fbbe54c70a342c8a49b9ca5fb/02_REGISTRY/research/A4D_PAID_MOMENT_FIELD_WRITER_2026_10_21.md"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_paid_moment_field_writer_2026-10-21/moments/EXACT_MOMENT_SOURCE_CONSTRUCTION.md",
+      "commit": "3fcabfa0688f581fbbe54c70a342c8a49b9ca5fb",
+      "blob_sha": "eeda7c0d227eb430165b315bfe6a9186ea8b9fe5",
+      "url": "https://github.com/gvakhrushev/d0_15/blob/3fcabfa0688f581fbbe54c70a342c8a49b9ca5fb/02_REGISTRY/research/sources/d0_paid_moment_field_writer_2026-10-21/moments/EXACT_MOMENT_SOURCE_CONSTRUCTION.md"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_paid_moment_field_writer_2026-10-21/book/COMPLETE_CODE_WRITER_BOOK_PRICE.md",
+      "commit": "3fcabfa0688f581fbbe54c70a342c8a49b9ca5fb",
+      "blob_sha": "4841ee18c6d48093bd9f065e0d8a21afcb10ff23",
+      "url": "https://github.com/gvakhrushev/d0_15/blob/3fcabfa0688f581fbbe54c70a342c8a49b9ca5fb/02_REGISTRY/research/sources/d0_paid_moment_field_writer_2026-10-21/book/COMPLETE_CODE_WRITER_BOOK_PRICE.md"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_moment_writer_native_selection_2026-10-21/state_lift/RETAINED_CODE_LIFT_AND_APPARATUS_ELIMINATION.md",
+      "commit": "3fcabfa0688f581fbbe54c70a342c8a49b9ca5fb",
+      "blob_sha": "aaffe11489d5d31c26d983b5830212b4fac33be8",
+      "url": "https://github.com/gvakhrushev/d0_15/blob/3fcabfa0688f581fbbe54c70a342c8a49b9ca5fb/02_REGISTRY/research/sources/d0_moment_writer_native_selection_2026-10-21/state_lift/RETAINED_CODE_LIFT_AND_APPARATUS_ELIMINATION.md"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_causal_native_weighted_synthesis_2026-10-21/native_source/NATIVE_POLYNOMIAL_FIRST_JET.md",
+      "commit": "3fcabfa0688f581fbbe54c70a342c8a49b9ca5fb",
+      "blob_sha": "1c624843ab6cbab5173f47c80962cef9ae57e5bd",
+      "url": "https://github.com/gvakhrushev/d0_15/blob/3fcabfa0688f581fbbe54c70a342c8a49b9ca5fb/02_REGISTRY/research/sources/d0_causal_native_weighted_synthesis_2026-10-21/native_source/NATIVE_POLYNOMIAL_FIRST_JET.md"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_joint_field_minimum_2026-10-20/inputs/GOLDEN_EXACT_DETECTOR.md",
+      "commit": "3fcabfa0688f581fbbe54c70a342c8a49b9ca5fb",
+      "blob_sha": "92b9003d783c24b1883a2a21f8b30625078afff7",
+      "url": "https://github.com/gvakhrushev/d0_15/blob/3fcabfa0688f581fbbe54c70a342c8a49b9ca5fb/02_REGISTRY/research/sources/d0_native_joint_field_minimum_2026-10-20/inputs/GOLDEN_EXACT_DETECTOR.md"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_preparation_closure_2026-10-21/inputs/native_input.py",
+      "commit": "3fcabfa0688f581fbbe54c70a342c8a49b9ca5fb",
+      "blob_sha": "ee8de4635d24c668949ac9a0186616ab7d59f2ed",
+      "url": "https://github.com/gvakhrushev/d0_15/blob/3fcabfa0688f581fbbe54c70a342c8a49b9ca5fb/02_REGISTRY/research/sources/d0_native_preparation_closure_2026-10-21/inputs/native_input.py"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_ORIGINAL_FULL128_GOLDEN_POINTER_X_INVARIANT_BOOK_DIFFERENT_PRICE_2026_10_22.md",
+      "commit": "3fcabfa0688f581fbbe54c70a342c8a49b9ca5fb",
+      "blob_sha": "62df559c93ca59d948abfb0ed33db3b90b63bf80",
+      "url": "https://github.com/gvakhrushev/d0_15/blob/3fcabfa0688f581fbbe54c70a342c8a49b9ca5fb/02_REGISTRY/research/A4D_ORIGINAL_FULL128_GOLDEN_POINTER_X_INVARIANT_BOOK_DIFFERENT_PRICE_2026_10_22.md"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_BOOK03_NATIVE_PQ_PINGPONG_NO_SQRT_FULL_PAID_CLOCK_2026_10_22.md",
+      "commit": "3fcabfa0688f581fbbe54c70a342c8a49b9ca5fb",
+      "blob_sha": "bd60b26abda19e315e5ab7350844c352e943ce53",
+      "url": "https://github.com/gvakhrushev/d0_15/blob/3fcabfa0688f581fbbe54c70a342c8a49b9ca5fb/02_REGISTRY/research/A4D_BOOK03_NATIVE_PQ_PINGPONG_NO_SQRT_FULL_PAID_CLOCK_2026_10_22.md"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_EXACT_NATIVE_FULL128_HIDDEN_CHOI_INFORMATION_COEFFICIENT_2026_10_22.md",
+      "commit": "420090b53e30d9ebb076d3bbdb5325e703484444",
+      "blob_sha": "070876a02ddc9a22d80b882065f6982bd93bbdb5",
+      "url": "https://github.com/gvakhrushev/d0_15/blob/420090b53e30d9ebb076d3bbdb5325e703484444/02_REGISTRY/research/A4D_EXACT_NATIVE_FULL128_HIDDEN_CHOI_INFORMATION_COEFFICIENT_2026_10_22.md"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_LITERAL_SCENE_GLOBAL_MINIMUM_AND_SOURCE_ELIMINATION_2026_10_22.md",
+      "commit": "420090b53e30d9ebb076d3bbdb5325e703484444",
+      "blob_sha": "237907a10832883e991c156095c9e729361a08a1",
+      "url": "https://github.com/gvakhrushev/d0_15/blob/420090b53e30d9ebb076d3bbdb5325e703484444/02_REGISTRY/research/A4D_LITERAL_SCENE_GLOBAL_MINIMUM_AND_SOURCE_ELIMINATION_2026_10_22.md"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_ORIGINAL_FULL128_UNIQUE_KRAFT_GIBBS_HOLEVO_SAME_RUN_INFORMATION_PROJECTION_2026_10_22.md",
+      "commit": "420090b53e30d9ebb076d3bbdb5325e703484444",
+      "blob_sha": "157ab6e0dce75c7f3011a68649d5804edb5cd4b4",
+      "url": "https://github.com/gvakhrushev/d0_15/blob/420090b53e30d9ebb076d3bbdb5325e703484444/02_REGISTRY/research/A4D_ORIGINAL_FULL128_UNIQUE_KRAFT_GIBBS_HOLEVO_SAME_RUN_INFORMATION_PROJECTION_2026_10_22.md"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_SAME_LAW_PAID_GOLDEN_VERIFICATION_FULL42_CLOCK_REACTION_2026_10_22.md",
+      "commit": "420090b53e30d9ebb076d3bbdb5325e703484444",
+      "blob_sha": "db4578957f1bc898b9e184948e1ca6e5c8c90abf",
+      "url": "https://github.com/gvakhrushev/d0_15/blob/420090b53e30d9ebb076d3bbdb5325e703484444/02_REGISTRY/research/A4D_SAME_LAW_PAID_GOLDEN_VERIFICATION_FULL42_CLOCK_REACTION_2026_10_22.md"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_GOLDEN_SCALE_CONSTITUTIVE_NO_GO_AND_NATIVE_H2_APERTURE_2026_10_22.md",
+      "commit": "420090b53e30d9ebb076d3bbdb5325e703484444",
+      "blob_sha": "7588c017a6fbe59e9231b22943de731e1f8d969b",
+      "url": "https://github.com/gvakhrushev/d0_15/blob/420090b53e30d9ebb076d3bbdb5325e703484444/02_REGISTRY/research/A4D_GOLDEN_SCALE_CONSTITUTIVE_NO_GO_AND_NATIVE_H2_APERTURE_2026_10_22.md"
+    }
+  ]
+}

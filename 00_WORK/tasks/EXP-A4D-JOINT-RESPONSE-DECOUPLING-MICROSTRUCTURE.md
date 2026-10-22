@@ -5107,3 +5107,57 @@ Next genuine physical map: identify original compulsory Book03 H+J+R selected sp
 ### 22 October: source-second-jet rank >=41; two coarse-pointer Fisher fails
 
 Read [A4D_OFF_NULL_FISHER_RANK1_SECOND_JET_41D_GEOMETRIC_HESSIAN_2026_10_22.md](../../02_REGISTRY/research/A4D_OFF_NULL_FISHER_RANK1_SECOND_JET_41D_GEOMETRIC_HESSIAN_2026_10_22.md) after the two-band report interpolation and before inventing a new information-metric GR route. The exact certified h4 42-field configured N1 CQ root has Dr1=-[h'_phi(r0)/h'_phi(r1)]Dr0, Dr0!=0, so the ACTUAL two-reporter first Jacobian has rank1. Its first-jet Fisher pullback rank<=1, unlike the already original certified full-rank42 Hessian. The same native 2-band original addressed E permits two moments M1=Tr E, M2=Tr E²/2 and full analytic score H=Psi(M1,M2). Critical second chain rule forces rank(alpha D²M1+beta D²M2)>=41 and this bilinear combination is chart-invariant at the exact root. Thus the variational dynamics require the full nonlinear FIELD-TO-RECORD SECOND JET, not merely a classical Fisher metric of two coarse probabilities. The richer actual full128 conditional quantum CAR states are NOT tested by this no-go. Native physical Book03/HJR/writer/cut/Info selection remains the next independent source gate. GR_closed=false.
+
+
+### 22 October: whole-native closure attempt — coherent operands and independent preparation equation
+
+Phase: native realization / final composition, in the SAME Draft #334 and
+existing native-programme-v1 / constitutive binding. Input snapshot
+3fcabfa0688f581fbbe54c70a342c8a49b9ca5fb; concurrent scene, Kraft/Gibbs,
+same-law and scale owners consumed through
+420090b53e30d9ebb076d3bbdb5325e703484444.
+
+The [new synthesis](../../02_REGISTRY/research/A4D_COHERENT_OPERAND_REFINEMENT_AND_FULL_PREPARATION_SOURCE_2026_10_22.md)
+substitutes a real coherent Golden attenuator for the operational
+weak-operand premise of the owned shrinking-aperture route. Independent
+prefix flags act BEFORE the fixed positive nonlinear tables. The exact
+product-bank response is r(tau*u_N,tau*v), with actual finite-cap readiness,
+all abort/work/reference states and the original 0/10 emitter paid.
+The complete counted CQ source is dB+g(r)dGamma+Gamma*g'(r)dr.
+Growing inverse/Cayley polynomials and a quantitative Q(p)-partition
+herald >1/(22H) give a bounded-chart C2/finite-code refinement construction,
+conditional on true uniform coordinate, PF, coefficient-height and tariff
+bounds. This is not a smooth autonomous native field writer.
+
+The actual two-resource q-bank normal now gives zero decoded 42-field
+first jet but a NONZERO source after division by the true w*Gamma*tau.
+At the owned h=1/4, s=p^3, psi=2^-10(u,u/2) fixture,
+Dq=-(5/2)p^6 B_D^2*2^-20/rho. The actual first ordered slot of the second
+B-table yields 4*sigma*zeta*R0*p^4*(1-h_phi'(r0))*Dq. Its opposing
+upstream preparation derivative must be derived, or an actual constraint
+must exclude this joint tangent. Flat extra preparation price cannot
+supply an interior stationary point in that commuting full-support subbank.
+Product symmetry only closes independent PRODUCT-copy equations.
+
+A separate one-original-CNOT word comparison preserves the full coherent
+history Gram/cut but changes the named 0/10 price source. Its exact nonzero
+witness is on the DECLARED Choi16 input, not a substituted full-rank
+RIGHT128 state. The physical price-marked operator and history occupation
+supply the correct retained data. The static combinatorial-scene Golden
+word is preserved as a supporting construction, separately from the
+concurrent normalized-scene minimum.
+
+Write paths: the one new synthesis and
+sources/d0_global_native_gr_closure_2026-10-22/, plus append-only pointers
+in this brief and its primary memo. The smallest decisive checks are the
+full-input attenuator identity, exact ordered q-normal, original CAR/CNOT
+source and literal coherent gate corners; all are run in the available
+JavaScript runtime and saved with their receipts. No shell/Python/Lean/CI
+or unchanged full42/full128 replay is claimed.
+
+Next parent application is the SAME physical complete Book03/preparation/
+clock/Info/work covector on its actual admissible domain and true normalized
+refinement, not another geometric root search or fitted counterterm.
+The paid finite catalogue, supplied smooth product section and free joint
+Stiefel extension are kept distinct. GR_closed=false; no task, assembly,
+claim or lifecycle promotion.
