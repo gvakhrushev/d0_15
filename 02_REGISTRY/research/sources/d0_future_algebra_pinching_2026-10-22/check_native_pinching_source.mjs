@@ -98,12 +98,13 @@ for(const r of [1/7,2/9,1.8512395785208469e-6,p*p]){
   const fullKL=2*10946*p23*((1-r)*Math.log((1-r)/p)+r*Math.log(r/(p*p)))/ell;
   close(fullKL,a*nativeS(r),2e-11,
         "original complete Golden relative entropy = C−pinching Info, no fit");
-  const slope=(a*nativeS(r+1e-8)-a*nativeS(r-1e-8))/(2e-8);
+  const step=r<1e-4?1e-9:1e-8;
+  const slope=(a*nativeS(r+step)-a*nativeS(r-step))/(2*step);
   close(slope,a*nativeD(r),1e-7,"authentic unequal 0/10 code report source");
   const pad=a*(1-r);
   close(a*nativeS(r)+pad,a*(2-hphi(r)),1e-11,
         "exact PAID one-tick padding, not a free CQ source fix");
-  const padSlope=(a*(2-hphi(r+1e-8))-a*(2-hphi(r-1e-8)))/(2e-8);
+  const padSlope=(a*(2-hphi(r+step))-a*(2-hphi(r-step)))/(2*step);
   close(padSlope,-a*dhphi(r),1e-7,"timing-blind price has padded N1 CQ jet");
 }
 
