@@ -158,6 +158,63 @@ On the SAME M1/G0-admitted Golden READY/fixed-ten-sign programme, calculate the 
 
 No assumption that Book03 compulsory `Info` equals measured Shannon, KL, harmonic time score, or conditional MI is introduced. No new fitted action/weight, free clock/reset, terminal postselection, h4 CQ root, full field-writer admission, or uniform raw216 refinement is claimed. `full_D0_price_selected=false`, `GR_closed=false`, `raw216_closed=false`.
 
+## 6. Additional PHYSICAL obstruction: noncommuting rare-event cap/refinement and compulsory archive rank growth
+
+The previous exact uncapped first-match \(E T=4\) is **not uniform** as its rare third class disappears. On the SAME native three-atom READY code at fixed \(a\in(0,1)\), the genuine deterministic cap at \(K\) LATER trials retains **all unmatched abort histories** and has exact unconditional mean completed trials and true report-coordinate clock source:
+\[
+\boxed{
+L_K(r)=4-a^K-(1-a+ar)^K-(1-ar)^K,\qquad
+\partial_rL_K
+=aK[(1-ar)^{K-1}-(1-a+ar)^{K-1}].
+}\tag{17}
+\]
+This is not an optional clock convention: it is the stopped original first-match word law for the already declared future task. For \(r\to0^+\) with \(K\to\infty\) and \(Kr\to\lambda\in[0,\infty]\),
+\[
+\boxed{\lim L_K=4-e^{-a\lambda},\quad e^{-a\infty}=0.}\tag{18}
+\]
+Thus recovering the uncapped value four requires \(Kar\to\infty\). Recovering the **unscaled FIRST SOURCE** additionally requires
+\[
+\boxed{K(1-ar)^{K-1}\to0,}\tag{19}
+\]
+the exact necessary and sufficient clock derivative condition since the other term in (17) is exponentially suppressed for \(a\in(0,1)\). In the regular logarithmic-cap regime \(Kr^2\to0\) this is equivalent to the stronger condition \(Kar-\ln K\to+\infty\). A merely large but capped clock can have nearly-correct expected trials while its **field derivative is still large**.
+
+For the actual original native \(a=0.341640787070154\), \(r_0=1.8512395785208469\cdot10^{-6}\), third-class \(q_1=a r_0=6.324589466612822\cdot10^{-7}\):
+
+| True finite cap (later trials) | \(4-L_K\) | \(\partial_r L_K\) |
+|---|---:|---:|
+| \(K=20{,}000{,}000\) | \(3.2101819722\cdot10^{-6}\) | \(21.9345957851\) |
+| \(K=60{,}000{,}000\) | \(3.3081786498\cdot10^{-17}\) | \(6.7812568350\cdot10^{-10}\) |
+
+For the genuine fully paid capped measured-CQ ledger already derived in the first-match owner,
+\[
+D_y S_{\rm stop,K}=L_K D_yS_1+(S_1+\kappa)D_yL_K+D_yB_{\rm shared}.
+\]
+Consequently (19) is a *real first-source gate*, not only a weak tail-probability requirement. If a future native refinement has \(r_h\asymp h^2\), the cap cannot be declared fixed or simply \(K_h\asymp h^{-2}\); **source control** in the logarithmic regime requires sufficiently large \(K_h\) of order \(h^{-2}\log(1/h)\) with the actual coefficient checked. That scaling statement is conditional: the previously owned finite \(r_0\) must not be silently relabeled \(r_h\).
+
+There is an exact independent **lossless ARCHIVE capacity bound**. On the ORIGINAL complete 72,441-label tape the strictly positive fine-category alphabet counts are
+\[
+M_U=6765+2\cdot10946=28657,\qquad
+M_0=M_1=2\cdot10946=21892,\qquad
+M=72441.
+\]
+For cap \(K\), every distinct no-match abort word (one initial fine label and \(K\) later fine labels all NOT in its initial class) must remain distinguishable if the physical archived record is lossless under the already admissible fine future test. Its exact count is
+\[
+\boxed{
+A_{\rm fine}(K)
+=28657\cdot43784^K+43784\cdot50549^K.}\tag{20}
+\]
+Even if one demands retention of ONLY the THREE categorical labels rather than their 72,441 refinements, the count of distinct abort records is \(A_{\rm coarse}(K)=3\cdot2^K\). Therefore any fixed orthogonal *classical retained-register* realization has archive Hilbert-space dimension at least the applicable \(A(K)\). This is a lower bound on the **complete retained archive**, **not** an identification with Book03's physical active-projector \(\operatorname{rank}P_N\), which remains a separate unproved cut-selection problem.
+
+If the full retained classical abort labels must be losslessly encoded by actual prefix-free Golden F/R words with unchanged costs 1 and 2, the native Kraft inequality gives the **exact worst-case charge bound**
+\[
+\boxed{C_{\max}(K)\ge\log_\varphi A_{\rm fine}(K),\qquad
+\lim_{K\to\infty}\frac{C_{\max}^{\rm lower}(K)}{K}
+=\log_\varphi 50549=22.50713277986835\ldots.}\tag{21}
+\]
+At \(K=1\), \(A_{\rm fine}=3{,}467{,}955{,}504\) and \(C_{\max}\ge45.64898433784692\) native Golden-cost units. This concerns distinguishable **completed whole-history records**; it does not price a factory, continuous hardware area, or independent reference preparation, and it does not assert no finite cap is feasible.
+
+**Combined architectural result.** Three-atom future classification can remain small while its honest stored-history rank grows with \(K\). A Book03 proposal cannot simultaneously (i) use only \((A,N)\) as its retained algebra, (ii) claim the complete native measured-code source, and (iii) retain a lossless fine archive at zero rank/code/clock price. To survive it must **actually** distinguish active from archive rank, pay its growing history and finite clock, and derive the observed Book03 value/Info from that exact complete record. This is an exact finite no-shortcut theorem, not a proof of physical GR.
+
 ### Owned sources (unchanged)
 
 * `A4D_ORIGINAL_GOLDEN_READY_COMPLETE_CQ_COST_INFO_PF_SOURCE_2026_10_21.md` — original 10946 Golden exact-cost addresses, 72441 full fine classes, native \(0/10\) Golden costs and 42 field source.
@@ -167,4 +224,4 @@ No assumption that Book03 compulsory `Info` equals measured Shannon, KL, harmoni
 
 ### Independent bounded reproduction
 
-`02_REGISTRY/research/sources/d0_first_match_clock_archive_2026-10-22/check_firstmatch_clock_archive.py` uses the Python standard library. It executes 4 scoped groups: finite whole-prefix enumeration without truncation renormalization, binary/three-class KL/source and nonmatch controls, fixed-Golden-prefix site/bit KL and first jets, and direct geometric-clock Fisher plus native \(r_0\) numbers. It does NOT replay the original 72441-leaf enumeration, the h4 interval proof, Lean, or the original full Book03 physical tape.
+`02_REGISTRY/research/sources/d0_first_match_clock_archive_2026-10-22/check_firstmatch_clock_archive.py` uses the Python standard library. It executes 5 scoped groups: finite whole-prefix enumeration without truncation renormalization, binary/three-class KL/source and nonmatch controls, fixed-Golden-prefix site/bit KL and first jets, direct geometric-clock Fisher, exact bounded finite-cap source/abort-prefix enumeration and Golden Kraft-rank bounds, plus native \(r_0\) numbers. It does NOT replay the original 72441-leaf enumeration, the h4 interval proof, Lean, or the original full Book03 physical tape.
