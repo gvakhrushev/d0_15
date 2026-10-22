@@ -122,6 +122,21 @@ zero_sum=sum(vcols[j]*(per[(j+1)%3]-per[j]) for j in range(3))
 # per FIXED u slice, so each u_j is identical across transverse v.
 check('native v-Stokes using constant u-profile across v',s.simplify(sum((per[(j+1)%3]-per[j]) for j in range(3)))==0)
 
+# Same ORIGINAL one registered native Bernoulli trial has an exact OTHER
+# score: whole F/R Price - measured Shannon = native Kraft KL to (p,p^2).
+# This is not the same score as the Book J2 no-click logdet: physical
+# task/Info selection is precisely the remaining gate.
+for test_r in [rr, mp.mpf('0.003'), pp**2/2, pp**2, mp.mpf('.62')]:
+    ent=-(test_r*mp.log(test_r)+(1-test_r)*mp.log(1-test_r))/logp
+    observed=1+test_r-ent
+    kl=((1-test_r)*mp.log((1-test_r)/pp)+test_r*mp.log(test_r/pp**2))/logp
+    check('literal native Price-minus-Shannon equals exact code KL '+mp.nstr(test_r,5),
+          abs(observed-kl)<mp.mpf('1e-48'))
+check('native complete-code KL reference zero at p²',
+      abs(1+pp**2+((pp**2)*mp.log(pp**2)+pp*mp.log(pp))/logp)<mp.mpf('1e-48'))
+check('native J2 void surprisal NOT same absolute score as zero code KL',
+      -528*mp.log(1-pp**2)>0)
+
 print('PASS',len(checks),'independent exact/original-parameter controls')
 print('r0          =',mp.nstr(rr,28))
 print('J2(r) exact = -528 ln(1-r), all positive native operands')
