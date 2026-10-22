@@ -88,3 +88,26 @@ ck(all(s.simplify(s.diff(G,x).subs(sol))==0 for x in (x1,x2)),
 print('PASS controlled-input Euler source quotient')
 print('SCOPE: original rank34 and native full42 are inputs, not new reruns')
 print('native Book03 full programme selected: FALSE; GR_closed: FALSE')
+
+# NO-FIT native Jones square-source test: the original source J is known
+# invertible by the pinned exact rank34 determinant. U and B below are
+# ABSTRACT rational input/price controls, not claimed real D0 data.
+# This tests the exact algebraic eliminant to be applied once they exist.
+J=s.Matrix([[1,2,0],[0,1,1],[0,0,2]])
+U=s.Matrix([[1,0],[0,1],[1,1]])
+By=s.Matrix([1,0,0])
+Bu=s.Matrix([0,2])
+ck(J.det()!=0 and U.rank()==2,"square observable inverse and two independent inputs")
+v_good=s.Matrix([0,-2,0])
+g_good=J.T*v_good+By
+v_bad=s.Matrix([1,-2,0])
+g_bad=J.T*v_bad+By
+def compatibility(g):
+    return s.simplify(U.T*J.T.inv()*(g-By)+Bu)
+ck(compatibility(g_good)==s.zeros(2,1),"native input-source eliminant can pass")
+ck(compatibility(g_bad)==s.Matrix([1,0]),"native input-source eliminant rejects fitted geometric source")
+ck((J.T*s.Matrix([-1,-1,1])).shape==(3,1),"source annihilator dimension")
+ck(U.T*s.Matrix([-1,-1,1])==s.zeros(2,1),
+   "free-input source quotient has nullity one")
+print('PASS exact Jones-square no-fit Euler residual: U^T J^-T(g-By)+Bu')
+print('PASS one scoped incompatible source rejected BEFORE fitting any Book Info')
