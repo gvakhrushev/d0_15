@@ -7,6 +7,14 @@ Default base: `main`
 This file is the cold-start contract for any new AI agent, researcher, worker, or
 automation process entering the repository without prior chat context.
 
+## 22 October 2026: strongest finite nonvacuum root and exact source-continuation interface
+
+**Read these BEFORE proposing another geometric root search:**
+- [Original strict interval full42 rank-two configured N1 CQ root](02_REGISTRY/research/A4D_FULL42_RIGOROUS_INTERVAL_NONFLAT_N1_ROOT_2026_10_22.md), with its actual [original certificate receipt](02_REGISTRY/research/sources/d0_full42_interval_banach_2026-10-22/RESULT.json). On ONE specified two-cell rational collar at h≈0.18380152465817945 and original uniform positive two-cell PF, the complete 16+24+2 independent finite CQ first-source has a genuine exact nonflat rank-two stationary root, certified by Banach/interval arithmetic. It is an indefinite saddle, not a prospective field minimum. A separate h=1/4 strict interval certificate also exists. Neither is a physical compulsory Book03/whole-HJR theorem or mesh-uniform GR limit.
+- [NEW exact analytic open-family and complete 42-Euler source recovery](02_REGISTRY/research/A4D_EXACT_FULL42_OPEN_PF_COLLAR_BRANCH_AND_CONTINUOUS_BOOK_RESIDUAL_2026_10_22.md). The certified nondegenerate full42 Hessian forces an analytic local family of exact roots under nearby positive PF weights, fixed collars and finite h. It also supplies a quantified 42-COMPONENT continuous-source Brouwer gate: on the pinned short rational collar, any genuinely selected additional full42 first source bounded by 3e-22 on B_infty(z0,2e-20) leaves an exact stationary zero; Lipschitz bound 1e-3 yields uniqueness. The actual compulsory Book03 residual is NOT yet computed or known to satisfy these bounds. No assumption that 41 extra Euler components are zero or that additional Info has a C2 Hessian is needed for this bounded theorem.
+
+**Correct next physical route:** do not repeat the already certified N1 short-collar 42-root or old 42→12 pure-boost rank scans. Pull the ACTUAL originally defined Book03 §03.25 operator bootstrap, heat Hodge Delta_N(V), return/cut F_N(V) and original oldRIGHT/preparation/clock/controller/Info/work into the SAME admitted 42-field/independent-upstream execution. Evaluate its FULL source minus the configured CQ source with the true normalization and its independent initial-state/field-writer equations. Use the explicit full42 budget if actually justified; otherwise identify the concrete non-small component and address it without changing the action. Finite mathematical stationary roots ≠ native physical D0 action selection, minimum, generic Lorentzian GR or h→0 refinement. Preserve GR_closed=false.
+
 ## PRIMARY scientific route for every GR agent — exact positive nonvacuum recovery
 
 Read the [primary nonlinear GR proof case](02_REGISTRY/research/D0_GR_PRIMARY_POSITIVE_CASE.md)
