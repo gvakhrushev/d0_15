@@ -1,0 +1,110 @@
+{
+  "repository": "gvakhrushev/d0_15",
+  "pull_request": 334,
+  "branch": "exp/a4d-joint-response-continuation-2026-10-16",
+  "task": "EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE",
+  "phase": "native realization and full-source composition",
+  "assembly_slot": "constitutive",
+  "carrier": "native-programme-v1",
+  "scientific_input_commit": "5e3f639b447c367b46b05673731dba0931e8edfe",
+  "prior_same_owner_packet_commit": "72bdcd4da644f4df1724b706a9c407281cd27b6e",
+  "method": "Analytical scalar-refinement/finite-controller and conditional-entropy source proofs; exact rational coefficient checks; ordinary floating original-instrument diagnostic replay.",
+  "inputs": [
+    {
+      "path": "AGENTS.md",
+      "git_blob": "ae4ea5a7af484f0df9001640a90665e11e185d20"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_book_uniform_source_2026-10-21/check_uniform_book_source.py",
+      "git_blob": "ee8de4635d24c668949ac9a0186616ab7d59f2ed"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_book_uniform_source_2026-10-21/PROOF.md",
+      "git_blob": "faac1bc80e25cfbcaba951f46b22b3ba1d9f3b84"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_cq_source_2026-10-22/check_complete_history_source.py",
+      "git_blob": "c133c6aec28e2a4068b36a6d9646bc8fb04fc2a4"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_cq_source_2026-10-22/COMPLETE_HISTORY_RESULT.json",
+      "git_blob": "7530a050c3e0d4cc0aad29648f61fa3b86a524c8"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_stationary_memory_composition_2026-10-22/LITERAL_PORT_PRICE_REDUCTION.md",
+      "git_blob": "7373df36178be5004932cc300c94eaf0ed1afc68"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_stationary_memory_composition_2026-10-22/SPECTATOR_POISSON.md",
+      "git_blob": "9c334b9ae873cb23228308992983d451f0278761"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_FINITE_AGE_CLOCK_AND_PREPARATION_SOURCE_COMPOSITION_2026_10_22.md",
+      "git_blob": "e483941eaa16c617961bbeeced3989ff6f263223"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_FULL128_STOPPED_KL_QUANTUM_MEMORY_BUDGET_2026_10_22.md",
+      "git_blob": "3a17ab2819b180d63197d7591a95b20e45354a2b"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_ORIGINAL_OLDRIGHT_ARCHIVE_FREDHOLM_INFORMATION_AND_TWO_STAGE_GATE_2026_10_22.md",
+      "git_blob": "c2e897caa3416694c71bc6ddf1c3942f76e856ff"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_ORIGINAL_UNPADDED_0_10_FULL42_SOURCE_ROBUSTNESS_2026_10_22.md",
+      "git_blob": "5c3062a9ce151d754b81b7bad01ea69600d269f3"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_UNPADDED_GOLDEN_N1_CONSTITUTIVE_LEGENDRE_COMPLETE_2026_10_22.md",
+      "git_blob": "4f081ff7925b6fa2c3625ae78966929444aeff10"
+    }
+  ],
+  "primary_external_sources": [
+    {
+      "authors": "Madalin Guta; Jukka Kiukas",
+      "title": "Equivalence classes and local asymptotic normality in system identification for quantum Markov chains",
+      "url": "https://arxiv.org/abs/1402.3535",
+      "consumed": "Phase/memory-conjugation equivalence and Markov/Poisson information geometry; not claimed as a new general theorem."
+    },
+    {
+      "authors": "Francesco Buscemi; Siddhartha Das; Mark M. Wilde",
+      "title": "Approximate reversibility in the context of entropy gain, information gain, and complete positivity",
+      "url": "https://arxiv.org/abs/1601.01207",
+      "consumed": "Efficient-instrument information gain and initial-reference information interpretation; not claimed as a new general theorem."
+    }
+  ],
+  "status": {
+    "Book03_selected": false,
+    "physical_full42_source_closed": false,
+    "GR_closed": false,
+    "full_original_physical_slots": 128,
+    "fixture_live_fine_outcomes": 64,
+    "port_merged_mathematical_slots": 65,
+    "walsh_mathematical_classes_including_dark": 56,
+    "walsh_live_computational_branches": 24,
+    "finite_classical_filter_closure": false
+  },
+  "scope_boundaries": [
+    "Same original fixed native instrument; no DATA reset or iid history replacement.",
+    "Arbitrary joint-input scalar-refinement theorem; dimension16 quantum-boundary constants apply at an independent product base, including arbitrary first correlation tangents through the owned spectator cotangent identity. A genuinely nonproduct base requires separate joint analysis.",
+    "PORT-sensitive cap includes all match and abort leaves and explicitly retained controller registers.",
+    "Global small tail controls the paired-bit information difference only.",
+    "Kraus scalar grouping preserves all ambient first jets at a proportionality point; no automatic second-jet claim when the grouping breaks.",
+    "Native Poisson constants are floating diagnostics, not interval certificates or uniform physical full42 norms.",
+    "Actual extra costs, compulsory Book03 heat/information and common admitted writer to the N1 source remain open."
+  ],
+  "concurrent_owner_compatibility_review": {
+    "commit": "98355ca36b6e696614ea950569febf8592ac0a1e",
+    "scope": "Read for compatibility; these distinct experiments are not substituted into the present registered first-return proof.",
+    "files": [
+      {
+        "path": "02_REGISTRY/research/A4D_BOOK03_J2_HARMONIC_STOPPED_CLOCK_EXACT_NATIVE_OPERATOR_2026_10_22.md",
+        "git_blob": "6640afbc8e94b24a327a6313375149ed4e37c073"
+      },
+      {
+        "path": "02_REGISTRY/research/A4D_EXACT_NATIVE_FULL128_HIDDEN_CHOI_INFORMATION_COEFFICIENT_2026_10_22.md",
+        "git_blob": "070876a02ddc9a22d80b882065f6982bd93bbdb5"
+      }
+    ]
+  }
+}
