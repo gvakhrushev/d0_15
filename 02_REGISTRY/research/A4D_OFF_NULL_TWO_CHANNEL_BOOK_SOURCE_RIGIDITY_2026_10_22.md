@@ -113,3 +113,12 @@ A genuine additional original Book thermal/clock/moving-input/history term could
 - Scalar-root sufficiency and cyclic positive tests: A4D_FIXED_CYCLIC_TESTS_PREPARED_BOOK_SOURCE_2026_10_22.md (prior blob 03240627b1a93c1bc9aaa2338e82c886be0691ef; current branch adds the one-moment theorem).
 
 **Physical selection of Book03, independent preparation, clock and Info remains open. GR_closed=false.**
+
+
+## 4. General one-mean scalar obstruction: even a tuned Book response loses 41 Hessian directions
+
+The [new exact mean-critical-fiber theorem](A4D_SINGLE_MEAN_REPORT_CRITICAL_MANIFOLD_NO_GO_2026_10_22.md) strengthens the specifically named H/Golden comparator failures above to **EVERY** smooth function Phi of ONE fixed arithmetic mean m=(r0+r1)/2. It reuses the *same* certified h=1/4 two-cell CQ root and the independent interval report-29 nonzero derivative. At that exact root, the CQ weighted first source implies Dr1=-[h'(r0)/h'(r1)]Dr0. The STRICT report gap makes Dm nonzero, with the already certified |D29 m|>2.68978050581795731e-14. Therefore any C2 Book candidate B=constant+Phi(m) obeys an exhaustive dichotomy: Phi'!=0 means its full42 Euler source is nonzero; Phi'=0 means an exact **41-dimensional level set of critical points**, with Hessian rank <=1, which cannot match the certified nonsingular original 42x42 CQ Hessian. Matching a scalar value or choosing Phi so that its derivative vanishes at the root does NOT recover source dynamics.
+
+This extends to any fixed positive weighted LINEAR mean with |w0/w1-1|<=1e-6, by the certified entropy-slope ratio >1+2.37636153810748149e-6. The new lower bound for its coordinate29 derivative is >1.5578894556815e-14. At the exceptional exactly entropy-matched weight ratio the submersion hypothesis fails, and a truly separately derived moving cut/weighted comparator requires direct source analysis; no no-go for full HJR is asserted. A nonlinear statistic already encoding the full entropy H(r0)+H(r1) likewise lies OUTSIDE the fixed-linear-mean theorem. This is not a requirement for two output symbols to be physically independently measurable; it is a restriction on lossy scalar aggregation BEFORE choosing Book feedback.
+
+An exact inexpensive proof-only checker pinned to the old interval certificate and report source is at \`sources/d0_single_mean_critical_manifold_2026-10-22/check_mean_root_obstruction.py\`. Full Book03 selection, fixed factory/clock, independent preparation and field-writer equations remain open; GR_closed=false.
