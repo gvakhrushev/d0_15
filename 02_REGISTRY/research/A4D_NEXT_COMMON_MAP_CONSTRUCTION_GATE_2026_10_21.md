@@ -971,7 +971,7 @@ The practical physical Book03 link is now strongly typed: selecting the original
 
 ## 22 October — exact ORIGINAL two-tick Book event ↔ genuine unpadded N1 0/10 source, all orders
 
-[New direct cross-owner proof](A4D_ORIGINAL_UNPADDED_N1_J2_ALL42_BRINKMANN_WELD_2026_10_22.md), [49 independently executed exact controls](sources/d0_unpadded_n1_j2_brinkmann_weld_2026-10-22/check_n1_j2_brinkmann_weld.py). **Stronger than the already proven all-h null Euler and PF smoothness:** the full original N=1 two-band click and the already-owned two-tick 528-fold J2 feedback eigenblock use literally the SAME original operator operands A(x,y), B(x,y), at ORIGINAL Golden p, fugacity ζ, sigma-minus, and correct canonical-to-EPS_PLUS sign. Thus
+[New direct cross-owner proof](A4D_ORIGINAL_UNPADDED_N1_J2_ALL42_BRINKMANN_WELD_2026_10_22.md), [56 independently executed exact controls](sources/d0_unpadded_n1_j2_brinkmann_weld_2026-10-22/check_n1_j2_brinkmann_weld.py). **Stronger than the already proven all-h null Euler and PF smoothness:** the full original N=1 two-band click and the already-owned two-tick 528-fold J2 feedback eigenblock use literally the SAME original operator operands A(x,y), B(x,y), at ORIGINAL Golden p, fugacity ζ, sigma-minus, and correct canonical-to-EPS_PLUS sign. Thus
 
 \[
 r=\zeta(A+B)-\zeta^2AB,\quad
