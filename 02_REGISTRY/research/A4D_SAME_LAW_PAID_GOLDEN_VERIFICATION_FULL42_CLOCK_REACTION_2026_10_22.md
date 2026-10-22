@@ -175,6 +175,39 @@ These bounds are strict interval enclosures of ONE genuine original independent 
 
 The certified finite-clock failure gives a quantitative physics design obligation: an actual physical controller cannot replace the uncapped law by a selected finite M without paying/compensating its own FULL source in all original physical directions. Even huge M can produce nonmonotone residuals at rare r; only a GENUINE uniform source bound, not merely a clock-mean/value convergence statement, licenses the original exact/root refinement transfer.
 
+## 3a. A DECISIVE SAME-STOPPED-TAPE split: Book J₂ C¹ is essentially exact, while full Einstein–CAR input-clock Euler FAILS
+
+The existing original exact SAME-event Golden/Book identification yields, for the original 528×2 Book return block of the VERY SAME binary click,
+\[
+J_{2,\mathrm{block}}(r)=-528\ln(1-r).
+\]
+In the positive 2-class same-law stopped programme of §1, conditional on its INITIAL report \(A=0\), a later forecast mismatch happens with probability r, so \(\Pr(N\ge k\mid A=0)=r^k\) exactly. Consequently the SAME completed stopped-flag tape has
+\[
+\boxed{
+J_2=528\,\mathbb E[H_N\mid A=0],\qquad
+J_{2,M}=528\,\mathbb E[H_{\min(N,M)}\mid A=0]
+=528\sum_{k=1}^{M}\frac{r^k}{k}.}\tag{16a}
+\]
+This uses the already owned conditional harmonic identity without inserting a new history-score parameter. Do **not** conflate it with total conditional/quantum Book03 vertex Info.
+
+At every original certified \(h_0\) cell the true click is in \((1.8\cdot10^{-6},1.9\cdot10^{-6})\). Hence for the SAME finite controller with M=64 later attempts,
+\[
+\boxed{
+0<\frac{d}{dr}(J_2-J_{2,64})
+=\frac{528r^{64}}{1-r}<10^{-360}.}\tag{16b}
+\]
+The VALUE error satisfies \(J_2-J_{2,64}\le 528r^{65}/[65(1-r)]<10^{-369}\). These are absolute mathematical Book block bounds per unit r (not whole physical 42-source bounds without its true \(Dr\)).
+
+**Yet simultaneously**, on the old independent CAR scalar1 direction of the **same exact original h0 unpadded 42-root**, the COMPLETE SAME stopped-history measured \(C-H\) at the very same cap has strict original-normalization residual
+\[
+\boxed{-1.39305103\cdot10^{-4}
+<D_{\psi_1}S_{64}
+<-1.39305033\cdot10^{-4}.}\tag{16c}
+\]
+Why? The Book no-click surprisal sees the **COMMON A=0** first-match waiting tail \(r^{M}\), whereas the COMPLETE honest stopped Cost−Info source also prices the possibility of initially seeing the rare \(A=1\) and waiting up to M attempts, giving a derivative of the factor \((1-r)^M\). Small conditional Book-source error therefore gives **NO** control on a physical FULL-COST scalar Euler residual. This is a rigorous *same declared stopped programme* counterexample to the tempting all42 physical-closure inference “the Book J₂ source is approximated ⇒ the complete paid D0 source is approximated”.
+
+It also explains why the original J₂ determinant harmonic construction can be cheap to approximate at rare positive click while the complete Book03 physical clock and all independently paid READOUT/oldRIGHT/Info terms remain unclosed. Any final selected finite programme must be checked against the TRUE complete source, not only its mathematically correct positive Book return moments.
+
 ## 4. Precise remaining ONE PHYSICAL forcing and status
 
 This positive/negative pair removes a repeated misidentification of (i) genuine same-process re-use and (ii) arbitrarily free forecasting, and a second conflation of uncapped analytic clocks with finite paid hardware. The SAME original complete-history code now gives a non-fitted, *source-exact* constrained all42 continuation in one well-defined mathematical future task, but **M1/G0 has not yet selected that task or proved the requisite same-initial fresh-copy supply**.
