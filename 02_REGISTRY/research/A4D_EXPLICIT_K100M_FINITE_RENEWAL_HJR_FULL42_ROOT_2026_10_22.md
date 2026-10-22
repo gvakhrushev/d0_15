@@ -364,3 +364,10 @@ using conservative native input intervals, verifying
 (7)--(13). No separate re-run of the
 old 1764-entry interval Hessian/42-equation physics
 is claimed.
+
+
+## 6. Cap optimisation on the SAME generated finite mathematical HJR-type action (22 October)
+
+[The later strict rational cap theorem](A4D_K585M_FINITE_RENEWAL_HJR_ROOT_EFFICIENT_ALL42_2026_10_22.md) improves the **sufficient finite cap** K=100,000,000 derived above to **EVERY integer K>=58,500,000** with all original Golden/three-status/collar/CQ/42-field/Book-type operator inputs UNCHANGED. This is a 41.5% reduction in the mathematical worst-case first-match comparison horizon, **NOT an unproven 41.5% saving of physically executed expected factory/Gate clocks**. The full finite ternary KL action error is bounded by 3.872e-43 using an exact rational lower Taylor bound on exp(234/5). The old certified complex 42-polydisc R=1e-7 and source bound M=.001 also control a slightly larger real ball r=5e-26: the full preconditioned 42-field contraction is <.212 and the center drift <3.227e-26, strictly below the ball inclusion margin >3.94159e-26. Therefore Banach proves exact local uniqueness and stationarity for every K in this range, and convergence y_K->y_infty at rate O(exp(-2*8e-7*K)/(8e-7*K)^2). 
+
+The exact checker is \`sources/d0_renewal_gibbs_bridge_2026-10-22/check_k585m_exact_root_bound.py\` and pins the original three consumed Git blobs. This only optimizes the SAME generated **mathematical** HJR-type construction; the compulsory physical Book03 Hodge \`Delta_N(V)\`, original stage clock, full selected Cost−Info, input/controller Euler, field-writer and refinement gates remain UNPROVED, as in the original K100M result. Neither action is automatically the other physically selected action; GR_closed=false.
