@@ -1,0 +1,61 @@
+{
+  "status": "PASS_LOCAL_UNCHANGED_ORIGINAL_NATIVE_FORMULA_TRANSCRIPTION",
+  "date": "2026-10-22",
+  "original_full128_upstream_Git_blob": "ee8de4635d24c668949ac9a0186616ab7d59f2ed",
+  "actual_byte_pinned_new_Git_checker": "02_REGISTRY/research/sources/d0_native_golden_twin_info_2026-10-22/check_native_twin_memory.py",
+  "byte_pinned_new_Git_checker_executed_from_real_checkout": false,
+  "actual_independent_local_matrix_execution": true,
+  "all_128_kraus": "unchanged source formula all fine original Julia/Walsh/Golden CAR16; no DATA reset",
+  "twin_ratio": "K_(2j+1)=K_(2j)/sqrt(p) for all 1<=j<=63 incl dark rows",
+  "twin_norm_error_lt": 9e-17,
+  "nonblank_effect_identity": "sum_(j>0,b) K_jb^dagger K_jb=4 p^2 Delta(I-Delta)",
+  "nonblank_operator_frobenius_error_lt": 4e-16,
+  "golden_coin_entropy_nats": 0.6650183864440036,
+  "golden_coin_entropy_phi_units": 1.3819660112501053,
+  "original_0slash10_port_cost_expectation": 1.618033988749895,
+  "exact_nonblank_Golden_code_minus_Information": "p^3=(sqrt(5)-1)^3/8",
+  "native_open_boost_chart_uniform_nonblank_effect_min_gt": 0.019,
+  "uniform_all_input_quantum_conditional_history_entropy_bound_per_tick_nats_gt": 0.0126,
+  "stationary_original_boost": {
+    "r": "1/9",
+    "nu": "3/5",
+    "Delta_arithmetic_mean": "141489/10240000",
+    "Delta_harmonic_mean": "69399/5030720",
+    "Delta_mujet": "-328779/204800000",
+    "Delta_hjet": "-20040939/9885993640",
+    "nonblank_walsh_probability_per_tick": 0.020785724350897795,
+    "nonblank_walsh_source_per_tick": -0.0030206617150525237,
+    "exact_source_rational_core": "h'(1-mu)-h mu' = -32022677854092699/16197211979776000000",
+    "nonblank_port_extra_Golden_Kraft_cost_per_tick": 0.0049068439083845726,
+    "nonblank_port_extra_Golden_Kraft_field_source_per_tick": -0.0007130815017834955
+  },
+  "declared_initial_full_CAR16xRIGHT16_pure_Choi": {
+    "n1": {
+      "complete_fine_history_128_entropy_nats": 0.1371794299875146,
+      "final_DATAxRIGHT_entropy_nats": 0.11771719479898442,
+      "conditional_record_entropy_given_all_final_quantum_DR_nats": 0.019462235188530172,
+      "lower_bound_native_nats": 0.012635349342436068
+    },
+    "n2": {
+      "all_128_squared_Kraus_fine_history_entropy_nats": 0.27435846124690777,
+      "final_DATAxRIGHT_entropy_nats": 0.20457998423662385,
+      "conditional_record_entropy_given_all_final_quantum_DR_nats": 0.06977847701028392,
+      "lower_bound_native_nats": 0.025270698684872136,
+      "true_nonblank_count_expectation_with_same_initial_Choi": 0.04163746610840318,
+      "row_conditioned_full_2tick_KL_to_actual_0slash10_Kraft_nats": 0.943824680646033,
+      "EXACT_twin_component_from_true_nonblank_count_nats": 0.004729962116591902,
+      "remaining_blank_port_quantum_history_component_nats": 0.939094718529441
+    }
+  },
+  "native_paired_hodge_book_all_horizon_source_gap_r1over9": {
+    "strict_upper_abs_d_H_plus_J_per_tick": "<229/1000000 * n",
+    "strict_lower_abs_d_p3_nonblank_Kraft_per_tick": ">7/10000 * n",
+    "strict_gap_abs_d_diff_for_all_n": ">471/1000000 * n",
+    "n130_actual_nonblank_component_derivative_approx": -0.09270059523185442,
+    "n130_original_paired_H_plus_J_source_approx": -0.00005453743741656
+  },
+  "physical_native_future_task_selected": false,
+  "physical_Book03_branch_Info_or_scene_Hodge_selected": false,
+  "same_initial_complete_42_Euler_or_raw216_universality": false,
+  "GR_closed": false
+}
