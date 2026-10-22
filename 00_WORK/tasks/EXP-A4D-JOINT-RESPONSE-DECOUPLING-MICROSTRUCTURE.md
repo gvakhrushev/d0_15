@@ -13,6 +13,13 @@ Assembly: `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`
 Assembly-Carrier: `native-programme-v1`
 Assembly-Slot: `constitutive`
 
+## 22 October: consume real original 0/10 paid-code full42 root and quantified complete-source robustness
+
+The [exact unpadded 0/10 42-root receipt](../../02_REGISTRY/research/sources/d0_original_unpadded42_2026-10-22/RESULT.json) now includes ALL 16+24+2 original finite fields and literal F/R output charges 1 and 2; its open-ended nonflat rank-two exact stationary theorem renders historical pureboost all42 root searches obsolete for the full field space. The [new strict all42 source robust consumer](../../02_REGISTRY/research/A4D_ORIGINAL_UNPADDED_0_10_FULL42_SOURCE_ROBUSTNESS_2026_10_22.md) consumes its completed interval proof without changing original receipt or scientific source: ANY continuous additional correctly normalized all42 source of sup <=1e-22 on the radius-1e-20 ball has an exact mathematical root, no "other 41 compatible rows" premise; if Lip<=0.01 the root is unique. A genuine C2 correction with Hessian norm<=0.01 cannot make the still-indefinite full-field Hessian a minimum. New narrow checker: sources/d0_original_unpadded42_2026-10-22/check_unpadded42_full_source_robustness.py.
+
+**NEXT physical binding:** compute the actual complete Book03 HJR/oldRIGHT/clock/controller/work/retained-history information source and independent input/preparation/field-writing equations on the SAME original full42 rational finite carrier with the SAME report code already PAID. Bind the newer stopped full128 quantum balance only through a proved actual same-execution map; it is not automatically the configured N1 full42 Cost-Info. Test the complete source norm and actual preparation/source normalization; if the small bound fails, derive an honest larger continuation, not an invented canceling term. Do not assert original Book selection, GR/raw216, prospective minimum, general gauge inverse or h-uniform refinement.
+
+
 ## Strategic synthesis continuation — 2026-10-17
 
 ### 22 October: consume the complete quantum source on the actual stopped native tape
