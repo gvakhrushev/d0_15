@@ -1,0 +1,188 @@
+{
+  "fixture": "same rational nonunital two Kraus native-type parent, not full128",
+  "stopped_leaves": 6,
+  "checks": [
+    {
+      "name": "complete stopped tree",
+      "pass": true,
+      "value": null
+    },
+    {
+      "name": "noncommuting native-type fixture",
+      "pass": true,
+      "value": null
+    },
+    {
+      "name": "stationary DATA",
+      "pass": true,
+      "value": null
+    },
+    {
+      "name": "full fixed algebra dimension 4",
+      "pass": true,
+      "value": null
+    },
+    {
+      "name": "spectral projection idempotent",
+      "pass": true,
+      "value": null
+    },
+    {
+      "name": "spectral projection commutes with channel",
+      "pass": true,
+      "value": null
+    },
+    {
+      "name": "ambient tensor cotangent gain=False",
+      "pass": true,
+      "value": 2.437111608849711e-15
+    },
+    {
+      "name": "fixed RIGHT full operator Euler gain=False",
+      "pass": true,
+      "value": 2.225756441923294e-16
+    },
+    {
+      "name": "gauge zero conditional mean gain=False",
+      "pass": true,
+      "value": null
+    },
+    {
+      "name": "ambient correlation gradient gain=False case=0",
+      "pass": true,
+      "value": 5.663176517401892e-10
+    },
+    {
+      "name": "ambient correlation gradient gain=False case=1",
+      "pass": true,
+      "value": 2.3246389323453495e-10
+    },
+    {
+      "name": "ambient correlation gradient gain=False case=2",
+      "pass": true,
+      "value": 8.43024080089198e-10
+    },
+    {
+      "name": "ambient correlation gradient gain=False case=3",
+      "pass": true,
+      "value": 1.284000568052054e-09
+    },
+    {
+      "name": "ambient correlation gradient gain=False case=4",
+      "pass": true,
+      "value": 1.7376934147078407e-09
+    },
+    {
+      "name": "free RIGHT compatibility gain=False",
+      "pass": true,
+      "value": 0.8746745659741081
+    },
+    {
+      "name": "ambient tensor cotangent gain=True",
+      "pass": true,
+      "value": 2.9434868949707256e-15
+    },
+    {
+      "name": "fixed RIGHT full operator Euler gain=True",
+      "pass": true,
+      "value": 3.1561700832131744e-16
+    },
+    {
+      "name": "gauge zero conditional mean gain=True",
+      "pass": true,
+      "value": null
+    },
+    {
+      "name": "ambient correlation gradient gain=True case=0",
+      "pass": true,
+      "value": 5.551115123125783e-16
+    },
+    {
+      "name": "ambient correlation gradient gain=True case=1",
+      "pass": true,
+      "value": 1.5714747151860527e-09
+    },
+    {
+      "name": "ambient correlation gradient gain=True case=2",
+      "pass": true,
+      "value": 3.091219517121465e-09
+    },
+    {
+      "name": "ambient correlation gradient gain=True case=3",
+      "pass": true,
+      "value": 2.4184416869446732e-09
+    },
+    {
+      "name": "ambient correlation gradient gain=True case=4",
+      "pass": true,
+      "value": 9.644548159008954e-10
+    },
+    {
+      "name": "free RIGHT compatibility gain=True",
+      "pass": true,
+      "value": 9.467805682690002e-16
+    },
+    {
+      "name": "free CQ full operator Euler at tracial RIGHT",
+      "pass": true,
+      "value": 2.482534153247273e-16
+    },
+    {
+      "name": "free RIGHT positive Hessian 0",
+      "pass": true,
+      "value": 8.312347787864383
+    },
+    {
+      "name": "free RIGHT positive Hessian 1",
+      "pass": true,
+      "value": 8.312347787864383
+    },
+    {
+      "name": "free RIGHT positive Hessian 2",
+      "pass": true,
+      "value": 8.31234769904654
+    },
+    {
+      "name": "whole prepared Poisson source gain=False",
+      "pass": true,
+      "value": 3.4430236439675355e-11
+    },
+    {
+      "name": "whole prepared Poisson source gain=True",
+      "pass": true,
+      "value": 1.2460565912419952e-10
+    },
+    {
+      "name": "non spectator cost has genuine RIGHT obstruction",
+      "pass": true,
+      "value": null
+    },
+    {
+      "name": "scalar centering cannot remove non spectator force",
+      "pass": true,
+      "value": null
+    },
+    {
+      "name": "correlated work invisible at every tracial product",
+      "pass": true,
+      "value": null
+    },
+    {
+      "name": "correlated work ambient force is nonzero",
+      "pass": true,
+      "value": null
+    },
+    {
+      "name": "correlated Poisson force exact coefficient 25",
+      "pass": true,
+      "value": 4.263256414560601e-14
+    },
+    {
+      "name": "correlated full operator Euler",
+      "pass": true,
+      "value": null
+    }
+  ],
+  "pass_count": 36,
+  "scope": "exact derived identities checked numerically; physical native selection and full128 not claimed"
+}

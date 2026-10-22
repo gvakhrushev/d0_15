@@ -1,0 +1,283 @@
+{
+  "fixture": "parent rational two-Kraus noncommuting example, DATA2 x RIGHT2; not original full128",
+  "caps": [
+    1,
+    2,
+    3,
+    6
+  ],
+  "pass_count": 54,
+  "checks": [
+    {
+      "name": "DATA mixing inherited, joint invariant dimension four",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "native-type fixture genuinely noncommuting",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "cap1 actual complete grouped output",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "cap1 stationary values exactly agree numerically",
+      "passed": true,
+      "value": 4.440892098500626e-16
+    },
+    {
+      "name": "cap1 full ambient score difference",
+      "passed": true,
+      "value": 8.159230207710302e-16
+    },
+    {
+      "name": "cap1 exact Poisson coboundary",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "cap1 centered joint adjoint shift",
+      "passed": true,
+      "value": 1.1039603565383328e-15
+    },
+    {
+      "name": "cap1 conditional all joint Euler rows",
+      "passed": true,
+      "value": 1.7141636974475579e-15
+    },
+    {
+      "name": "cap1 gain all joint Euler rows",
+      "passed": true,
+      "value": 1.1831580707839209e-15
+    },
+    {
+      "name": "cap1 actual fixed-input residual retained",
+      "passed": true,
+      "value": 1.3271095333777794e-10
+    },
+    {
+      "name": "cap1 full native source equality after shift",
+      "passed": true,
+      "value": 1.352582490454779e-10
+    },
+    {
+      "name": "cap1 independent stationary curve derivative",
+      "passed": true,
+      "value": 1.723510223428093e-11
+    },
+    {
+      "name": "cap1 unshifted adjoint genuinely fails",
+      "passed": true,
+      "value": 0.5165236963250834
+    },
+    {
+      "name": "cap1 conditional ambient preparation jet",
+      "passed": true,
+      "value": 9.37729616179439e-10
+    },
+    {
+      "name": "cap1 gain ambient preparation jet",
+      "passed": true,
+      "value": 1.7174048572154987e-09
+    },
+    {
+      "name": "cap2 actual complete grouped output",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "cap2 stationary values exactly agree numerically",
+      "passed": true,
+      "value": 4.440892098500626e-16
+    },
+    {
+      "name": "cap2 full ambient score difference",
+      "passed": true,
+      "value": 1.5721700243586443e-15
+    },
+    {
+      "name": "cap2 exact Poisson coboundary",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "cap2 centered joint adjoint shift",
+      "passed": true,
+      "value": 2.3882701110421405e-15
+    },
+    {
+      "name": "cap2 conditional all joint Euler rows",
+      "passed": true,
+      "value": 2.152811368235634e-15
+    },
+    {
+      "name": "cap2 gain all joint Euler rows",
+      "passed": true,
+      "value": 1.3890601040317726e-15
+    },
+    {
+      "name": "cap2 actual fixed-input residual retained",
+      "passed": true,
+      "value": 2.4118596009259363e-10
+    },
+    {
+      "name": "cap2 full native source equality after shift",
+      "passed": true,
+      "value": 2.462803294633886e-10
+    },
+    {
+      "name": "cap2 independent stationary curve derivative",
+      "passed": true,
+      "value": 3.0323210609140006e-10
+    },
+    {
+      "name": "cap2 unshifted adjoint genuinely fails",
+      "passed": true,
+      "value": 0.5165236963225364
+    },
+    {
+      "name": "cap2 conditional ambient preparation jet",
+      "passed": true,
+      "value": 8.859546984929523e-10
+    },
+    {
+      "name": "cap2 gain ambient preparation jet",
+      "passed": true,
+      "value": 1.221540757434525e-09
+    },
+    {
+      "name": "cap3 actual complete grouped output",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "cap3 stationary values exactly agree numerically",
+      "passed": true,
+      "value": 4.440892098500626e-16
+    },
+    {
+      "name": "cap3 full ambient score difference",
+      "passed": true,
+      "value": 1.176069301740826e-15
+    },
+    {
+      "name": "cap3 exact Poisson coboundary",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "cap3 centered joint adjoint shift",
+      "passed": true,
+      "value": 2.2914745035407573e-15
+    },
+    {
+      "name": "cap3 conditional all joint Euler rows",
+      "passed": true,
+      "value": 2.0394708742577835e-15
+    },
+    {
+      "name": "cap3 gain all joint Euler rows",
+      "passed": true,
+      "value": 2.0978314943989153e-15
+    },
+    {
+      "name": "cap3 actual fixed-input residual retained",
+      "passed": true,
+      "value": 1.4982148854869592e-10
+    },
+    {
+      "name": "cap3 full native source equality after shift",
+      "passed": true,
+      "value": 1.5746293158258595e-10
+    },
+    {
+      "name": "cap3 independent stationary curve derivative",
+      "passed": true,
+      "value": 3.524434077917249e-10
+    },
+    {
+      "name": "cap3 unshifted adjoint genuinely fails",
+      "passed": true,
+      "value": 0.5165236963199891
+    },
+    {
+      "name": "cap3 conditional ambient preparation jet",
+      "passed": true,
+      "value": 5.832216931622725e-10
+    },
+    {
+      "name": "cap3 gain ambient preparation jet",
+      "passed": true,
+      "value": 8.625873348933055e-10
+    },
+    {
+      "name": "cap6 actual complete grouped output",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "cap6 stationary values exactly agree numerically",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "name": "cap6 full ambient score difference",
+      "passed": true,
+      "value": 1.4041326875211055e-15
+    },
+    {
+      "name": "cap6 exact Poisson coboundary",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "cap6 centered joint adjoint shift",
+      "passed": true,
+      "value": 6.467942476553249e-15
+    },
+    {
+      "name": "cap6 conditional all joint Euler rows",
+      "passed": true,
+      "value": 2.8106654359754147e-15
+    },
+    {
+      "name": "cap6 gain all joint Euler rows",
+      "passed": true,
+      "value": 4.8029315755008666e-15
+    },
+    {
+      "name": "cap6 actual fixed-input residual retained",
+      "passed": true,
+      "value": 1.421800455148059e-10
+    },
+    {
+      "name": "cap6 full native source equality after shift",
+      "passed": true,
+      "value": 1.5746204340416625e-10
+    },
+    {
+      "name": "cap6 independent stationary curve derivative",
+      "passed": true,
+      "value": 6.800120466721182e-10
+    },
+    {
+      "name": "cap6 unshifted adjoint genuinely fails",
+      "passed": true,
+      "value": 0.5165236963123485
+    },
+    {
+      "name": "cap6 conditional ambient preparation jet",
+      "passed": true,
+      "value": 4.680194010120431e-10
+    },
+    {
+      "name": "cap6 gain ambient preparation jet",
+      "passed": true,
+      "value": 5.337001951488674e-10
+    }
+  ],
+  "scope": "floating diagnostics of exact finite algebraic source identities; no physical Book selection"
+}
