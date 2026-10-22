@@ -236,3 +236,129 @@ full_Book03_HJR_selection=false;\ raw216_closed=false\`.
 ## Bounded reproducibility
 
 \`sources/d0_renewal_gibbs_bridge_2026-10-22/check_renewal_gibbs.mjs\` verifies the genuine \(\gamma,r_0,q\) and observed conditional harmonic moments, the EXACT thermal Gibbs+energy identity and its independent three thermal gradient entries, the nonlinear off-null 42-source ratio, the original nontrivial \(d_0\) calibration and the finite-K source-norm inequalities. A second short test verifies the strict algebraic unequal-native-status hypotheses; the mathematical Lindemann theorem itself is proved by the cited classical transcendence theorem, not by a numerical checker. These bounded controls do NOT claim physical Book03/M1 or original full42 interval rereplay.
+
+
+## 7. ONE fixed finite H+J+R-type composite with a genuine Golden feedback and an exact nearby finite-K nonflat 42-root
+
+The preceding thermal theorem is more useful if its feedback is NOT manufactured to vanish at an Einstein field. Book03 §03.26 already supplies the FIXED actual Golden active/archive splitter
+
+\[
+ U_\varphi=\begin{pmatrix}\sqrt p\,I&-pI\\
+ pI&\sqrt p\,I\end{pmatrix},\qquad
+ P=\begin{pmatrix}I&0\\0&0\end{pmatrix},
+ \quad \boxed{F=P U_\varphi^\dagger(I-P)U_\varphi P=p^2P}. \tag{14}
+\]
+
+For a fixed active rank \(d\) on ANY field chart, its LITERAL positive Book03 feedback is exactly
+\[
+ \boxed{J=-d\ln(1-\zeta p^2),\qquad D_yJ=0}            \tag{15}
+\]
+even when the admitted active frame co-transports. This does **not** assert that the original full128 HJR tick or compulsory Book03 chooses (14) for the changing geometry; the gate is the existing one, the physical admission is a separate question.
+
+**A single full spectral H+J+R-type mathematical execution, not an arbitrary sum of different candidate actions.** Take \(W\) independent actual N1 local site/copy reporters with their separately retained 3-valued full READY status, fixed ready probability \(\gamma\) and field probabilities \(r_a(y)\). They generate faithful diagonals \(\rho_a(y)\) by (1), and for a finite cap \(K\), positive 3-level energies \(\Delta_{a,K}(y)\) by the TRUE stopped harmonic record (11). Use the **actual unmodified fixed** 33-scene heat \(\Delta_{913}\), one native tensor status carrier \(\bigotimes_{a=1}^W\mathbb C^3\), and an OLD/ARCHIVE companion of equal rank for the Golden splitter. On the active scene×status carrier, set
+
+\[
+ \boxed{\Delta_{{\rm total},K}(y)
+ =\Delta_{913}\otimes I_{3^W}
+ +I_{33}\otimes\sum_{a=1}^W
+   I_3^{\otimes(a-1)}\otimes\Delta_{a,K}(y)
+                 \otimes I_3^{\otimes(W-a)}.}            \tag{16}
+\]
+
+The **same** full active space has rank \(d=33\cdot3^W\). Apply the ACTUAL fixed Golden \(U_\varphi\) of (14) to it and its archive; do NOT substitute a scalar feedback by hand. For a protected simple zero-mode scene preparation, use the **generated** pointer tensor density \(\rho_{\rm ptr}=\bigotimes_a\rho_a\) in the already-owned HJR **energy-expectation type**
+
+\[
+ {\cal A}_{W,K}(y)=
+ \operatorname{Tr}[
+ (P_{\rm ground,913}\otimes\rho_{\rm ptr})
+ \Delta_{{\rm total},K}(y)]
+ +\beta_B^{-1}\ln\operatorname{Tr}
+       e^{-\beta_B\Delta_{{\rm total},K}(y)}
+ -\ln\det(I-\zeta F_\varphi).                             \tag{17}
+\]
+
+This is ONE mathematically complete H+J+R scalar on ONE declared finite Hilbert carrier. The real scene heat and all \(3^W\) status modes remain in the trace, with no “sum of mutually exclusive Book actions”; \(\operatorname{Tr}\rho_{\rm ptr}=1\), and the true native fixed Golden complement is \(F_\varphi=p^2P\). Tensor factorization proves EXACTLY
+
+\[
+ \boxed{{\cal A}_{W,K}=
+ \beta_B^{-1}\ln Z_{913}+
+ \sum_{a=1}^W{\cal T}(\rho_a,\Delta_{a,K})
+ -33\cdot 3^W\ln(1-\zeta p^2).}                           \tag{18}
+\]
+
+No arbitrary coefficient or field-dependent Einstein counterterm is inserted: the only physical inputs to the new term are the ORIGINAL three-outcome report probabilities, their ACTUAL stopped nonmatch histories, and the existing original Golden \(\beta_B,p,\zeta\). The selected *tensor-sum incidence heat*, prepared scene state and coupling \(R=\operatorname{Tr}\rho\Delta\) are **not** yet proven compulsory Book03/M1. In particular \(R\) is present in the historical native HJR/v8 variational interface, **NOT an allowed free extra term in §03.25's bare \(H+J\) bootstrap**.
+
+At the exact UNBOUNDED renewal limit, using (9),
+
+\[
+ {\cal A}_{W,\infty}(y)
+ =\mathrm{constant}+\frac{\gamma}{\beta_B}
+    \sum_{a=1}^W h_{\rm nat}(r_a(y)).
+\]
+For the original cap1 N1 fixed-cost CQ action
+\(S_{\rm CQ}(y)=\mathrm{constant}
+-\gamma\sum_a h_{\rm nat}(r_a(y))/\ln\varphi\)
+(with the actual native site/copy counts included by executing each
+counted copy), this gives the ENTIRE OPEN-CHART scalar relation
+
+\[
+ \boxed{
+ {\cal A}_{W,\infty}(y)
+ =\mathrm{constant}-\frac{\ln\varphi}{\beta_B}S_{\rm CQ}(y),
+ \qquad
+ D_{42}{\cal A}_{W,\infty}
+ =-\frac{\ln\varphi}{\beta_B}D_{42}S_{\rm CQ}.
+ }                                                            \tag{19}
+\]
+
+Thus the exact original h=1/4 nonflat full42 CQ root is an EXACT root of this **specific one-carrier mathematical generated H+J+R-type action** in the limit, retaining genuinely different \(r_0\ne r_1\). All independently varied thermal-energy Euler rows vanish by (8). Since the scalar equality is off-null on an open field chart, its full 42-Hessian is a NONZERO constant multiple of the already-certified invertible 42-Hessian. The field critical point is consequently nondegenerate and still a SADDLE (positive and negative coframe directions switch roles). This is a much stronger mathematical bridge than one mean-report first-jet matching theorem.
+
+**Finite K, no reliance on an actually infinite clock.** At the already certified original h=1/4 42-field root \(y_*\), both native report probabilities \(r_0(y_*),r_1(y_*)\) lie in disjoint strictly positive intervals near \(1.85\cdot10^{-6}\). Their true finite factory \(\gamma\) is positive; hence a sufficiently small 42-coordinate neighborhood has a uniform \(\epsilon>0\) for all three actual full-status probabilities at both cells. There the unique most probable outcome remains the original FAIL, and \(m_{a,K}\) and all derivatives through order 2 converge exponentially (with at most polynomial \(K\) factors) to \(-\ln q_a\) as \(K\to\infty\). By (17)--(19),
+
+\[
+ {\cal A}_{2,K}\longrightarrow{\cal A}_{2,\infty}
+ \quad\text{in }C^2\text{ on a fixed root neighborhood}.      \tag{20}
+\]
+
+The already-owned rigorous h=1/4 Banach certificate proves
+\(D_{42}S_{\rm CQ}(y_*)=0\) and \(\det D^2_{42}S_{\rm CQ}(y_*)\ne0\).
+The ordinary parameter-uniform inverse-function/implicit-function
+theorem (or stability of simple zeros under \(C^1\) perturbation)
+therefore gives a REAL FINITE **root-existence theorem**:
+
+\[
+ \boxed{
+ \exists K_0<\infty\ \forall K\ge K_0:
+ \quad \exists!\ y_K\text{ in a fixed sufficiently small 42-ball},
+ \quad D_{42}{\cal A}_{2,K}(y_K)=0,\quad y_K\to y_* .}     \tag{21}
+\]
+
+For all sufficiently large **finite** caps \(K\), the original true
+coframe Lorentzian signature, nonflat spatial based holonomies,
+and TWO independent real CAR currents persist; the saddle's
+opposing second-variation signs also persist. This is an EXACT
+mathematical existence theorem for a *new configured finite H+J+R
+operator execution*, not a numerical small residual or another
+12-row shortcut.
+
+**Scope firewall:** (21) is NOT an interval certificate for the
+particular \(K=10^8\), and it is NOT a theorem that the D0 primitive
+compiler admits \(\Delta_{{\rm total},K}(y)\) for all varying geometric
+fields. The 3^W heat/status carrier is not the already fixed native
+\(\Delta_N(V)\), while the old full128/oldRIGHT, full scene timing,
+pathwise Book Info, state/controller preparation, active P_N and
+absolute price comparisons are not automatically those of (17).
+Furthermore the scalar feedback *value* in (18) grows as
+\(3^W\) under increasing physical address count even though its
+field SOURCE vanishes. Thus a future physical programme must fix
+actual \(W\) by its SAME TASK/verified distinctions and pay that
+rank price, not infer a free global minimizer from field stationarity.
+No physical raw216/uniform spatial refinement is claimed.
+
+**The remaining falsifiable original operator test** is to compute
+whether the actual compulsory Book03 \(\Delta_N(V)\) and inherited
+HJR R-term are source-equivalent to (16)--(17) on the same fully paid
+Golden READY/oldRIGHT tape, and whether the physically selected
+controller and active projector implement (14). If any of those maps
+fail, this exact mathematical closure is NOT the physical D0 closure.
+\`GR_closed=false\`.
