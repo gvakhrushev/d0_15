@@ -220,6 +220,45 @@ If \(\lambda\) is a fixed coefficient, the weaker local test at the certified of
 
 **Scope firewall:** this is NOT a derivation that the original physical Book03 action has the assumed decomposition (19). It is an **inverse necessary coefficient theorem** for a candidate whose active term is the actual three-atom Golden code KL, whose archive term is the ACTUAL Book06 maximum-entropy correlation defect, and whose complete source is required to agree on an open native report chart. The unit coefficient is already fixed by the same Golden log units and complete probability/cost chain rule, with no fitted gravitational prefactor; other genuinely sourced Book heat/cut/Info terms could change the target comparison and must be evaluated separately.
 
+
+## 4c. DIRECT Book01/M1 intersection: conditional mutual information is an attainable Golden description-rate and FIRST SOURCE
+
+This is the missing THIRD BOOK link, and it REUSES a PREEXISTING owned source theorem rather than re-proving or falsely promoting it. The complete-code theorem at
+\`02_REGISTRY/gr_assembly/sources/d0_complete_code_source_2026-10-19/theorem.md\` §4 already constructs one fixed universal native Golden F/R block code for any finite positive k-symbol iid input law and proves BOTH expected-code RATE and its field FIRST-JET converge to the \(\log_\varphi\)-Shannon entropy, provided the decoder/source Fisher and faithful same-object assumptions there are met:
+\[
+\frac1n\mathbb E_y L_n\longrightarrow H_\varphi(P_y),
+\quad
+D_y\left(\frac1n\mathbb E_y L_n\right)\longrightarrow D_yH_\varphi(P_y)
+\quad\text{at stated }O_*(\log n/\sqrt n)\text{ source rate}.
+\tag{21}
+\]
+The compiler uses the original unequal native one/two action-quanta Golden symbols; no new base/scale is tuned. The owner explicitly proves that mere Book01 \(\mathrm D_{\min}\) or injectivity does NOT suffice: a SINGLE admitted decoder for SAME verified history, competitive source cost, actual word grammar and all preparation resources are separate premises.
+
+Apply that ALREADY owned theorem to three fixed finite positive actual distributions on the original READY archived source chart:
+\[
+P_Z=w\ (k=256),\qquad
+P_B=(1-\bar r,\bar r)\ (k=2),\qquad
+P_{ZB}=\tau_{zb}=w_z\mathrm{Bern}(r_z)_b\ (k=512).
+\]
+For their three fixed actual *universal* code classes, define
+\[
+I^{(n)}_\varphi(y)
+=\frac1n[\mathbb E L_n^{Z}+\mathbb E L_n^{B}
+                 -\mathbb E L_n^{ZB}].
+\]
+Then on any common fixed-support faithful smooth chart with the stated true Fisher/decoder assumptions,
+\[
+\boxed{
+I^{(n)}_\varphi\longrightarrow I_\varphi(Z;B\mid R),\qquad
+D I^{(n)}_\varphi\longrightarrow D I_\varphi(Z;B\mid R),
+}\tag{22}
+\]
+with a concrete bound no larger than the SUM of the three already-owned \(C^1\) source errors (for k=256,2,512 respectively). Consequently the exact missing off-null archive SOURCE is not merely a postulated information-theory number: it is the limit of **finite, ordinary Golden, whole-history description-length first sources** under the existing checked sufficient source conditions. The physical common-input preparation, decoder/canonical-equivalence, source-normalized refinement and any new controller work remain paid and unproved where unspecified.
+
+This avoids the former excessive demand that an unknown mathematical Shannon function be independently declared compulsory as Book03 Info. It reduces that part of the bridge to a testable **native semantic code equivalence** for the *same physical fine record* and the actual Book03 instruction to value retained resolution savings. Even if that semantic test succeeds, it still does NOT automatically identify the original §03.25 heat/feedback/Book03 branch ledger with the limiting description rate, nor guarantee the uniform physical h→0/raw216 balance as k grows. The old owner's explicit full-history and Fisher hypotheses stay in force.
+
+**Physical meaning:** Book01 supplies optimal native description comparisons, Book06 supplies the uniquely constrained entropy-forgetting coupling of the SAME site/report record, and Book03 still must supply the *actual valuation and future/cut selection* linking the resulting source to its finite dynamical action. This is an exact three-book scientific interface, not an imported Einstein term.
+
 ## 5. Decision for the existing GR parent
 
 This composition DISCHARGES one mathematical conflict: the three-atom future-controller signal can remain order one, the entire 72,441-label native information remains retained and the exact off-null entropy source missing from the global mean is reproduced by measured conditional archive MI. There is NO new gravitational field, action, coupling, negative-cost book counterterm, or arbitrary factor; all identities follow from the real source probabilities, native Golden prefix, true site counts and already-owned h=1/4 CQ root.
