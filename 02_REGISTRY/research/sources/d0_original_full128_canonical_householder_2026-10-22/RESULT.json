@@ -1,0 +1,71 @@
+{
+  "status": "PASS_NARROW_NATIVE_FULL128_CANONICAL_HOUSEHOLDER_AND_MEASURED_CLASSICAL_WALL",
+  "date": "2026-10-22",
+  "scientific_branch": "exp/a4d-joint-response-continuation-2026-10-16",
+  "pr": 334,
+  "original_owner": "original complete 128-labelled Julia/Golden/CAR16 Kraus instrument, native protected oldRIGHT128 and true Lorentz r=1/9",
+  "source_proof": {
+    "path": "02_REGISTRY/research/A4D_ORIGINAL_FULL128_CANONICAL_HOUSEHOLDER_AND_MEASURED_COHERENCE_WALL_2026_10_22.md",
+    "blob": "bfcd06511eab6544b58ea428c61425428dc48d50"
+  },
+  "checkers": [
+    {
+      "path": "02_REGISTRY/research/sources/d0_original_full128_canonical_householder_2026-10-22/check_canonical_stinespring_completion.mjs",
+      "blob": "2bc3767dd94a65a771ca291487a734a7772d6c55",
+      "assertions": 1993,
+      "status": "PASS_ORIGINAL_FULL128_CANONICAL_KRAUS_HOUSEHOLDER_AND_PAID_KRYLOV_BOUNDARY"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_original_full128_canonical_householder_2026-10-22/check_measured_record_fidelity_wall.mjs",
+      "blob": "eb6977757e920efd6c3f47a3afc804f70b4b65df",
+      "assertions": 72,
+      "status": "PASS_ORIGINAL_FULL128_CLASSICAL_RECORD_IRREVERSIBILITY_FIDELITY_WALL"
+    }
+  ],
+  "assertions_total": 2065,
+  "mathematical": {
+    "literal_full128_forward_isometry": true,
+    "canonical_direct_rotation_unitary": "U_can=[(J+V)(I+K0)^-1(J+V)^†-I](2JJ^†-I)",
+    "exact_forward": "U_can J=V",
+    "exact_coherent_backward": "U_can^† V=J",
+    "oldRIGHT_not_addressed_in_full_coherent_inverse": true,
+    "fixed_input_2048_full_output_262144": true,
+    "first_future_span_rank": 4096,
+    "whole_native_hodge_zero_modes": 258048,
+    "K8_midpoint_resolvent_rational_coeffs_over_512": [
+      511,
+      -502,
+      466,
+      -382,
+      256,
+      -130,
+      46,
+      -10,
+      1
+    ],
+    "native_LCU_abs_coeff_norm": 4.5,
+    "conditional_LCU_success_lower": 0.012345679012345678,
+    "householder_operator_approx_bound": 3e-20,
+    "householder_field_jet_relative_bound": 2.2e-17,
+    "any_post_IRREVERSIBLE_128_classical_label_DATA_only_deterministic_corrected_entanglement_fidelity_loss_lower": 0.00000739,
+    "any_post_IRREVERSIBLE_128_classical_label_exact_universal_heralded_failure_probability_lower": 0.0016532736,
+    "native_actual_two_band_blank_probability_contrast": 0.0016761137221977807,
+    "native_actual_lorentz_first_source_of_blank_contrast": 0.015799264063159204,
+    "original_native_two_kraus_sharp_control": {
+      "CPTP_outcome_polar_correction_entanglement_fidelity": 0.98,
+      "CP_exact_heralded_success": 0.72,
+      "CP_exact_heralded_failure": 0.28
+    }
+  },
+  "caveats": {
+    "coherent_Stinespring_must_remain_accessible": true,
+    "native_G0_paid_Rplus_compiler_proven": false,
+    "original_full128_128labels_not_equated_to_9_20_factory_and_clock": true,
+    "original_Book03_scene_Hodge_selected": false,
+    "original_compulsory_Book03_Info_selected": false,
+    "native_same_execution_all42_stationarity_proven": false,
+    "raw216_uniform_GR_proven": false,
+    "original_dense_full128_runtime_replayed": false
+  },
+  "GR_closed": false
+}
