@@ -163,9 +163,111 @@ def construct(theta):
        "K":K,"Kr":predicted
     }
 
+
+def check_original_complete_record_source(K,dK):
+    """Original fine 128-label Shannon/Kraft, real moving inverse-square
+    input, ALL W-row entropy and true no-reset TWO-tick causal chain.
+    Not full Book03 branchwise Info, geometry heat or compiler cost.
+    """
+    Delta=(eye-K[0])/(2*p*p)
+    Delta=(Delta+dagger(Delta))/2
+    dDelta=-dK[0]/(2*p*p)
+    dDelta=(dDelta+dagger(dDelta))/2
+    inv=np.linalg.inv(Delta)
+    dinv=-inv@dDelta@inv
+    denom=np.trace(inv)
+    rho=inv/denom
+    drho=dinv/denom-inv*np.trace(dinv)/(denom**2)
+    states=np.einsum("aij,jk,alk->ail",K,rho,K.conj(),optimize=True)
+    q=np.maximum(np.trace(states,axis1=1,axis2=2).real,0)
+    dq=np.array([np.trace(
+        dK[j]@rho@dagger(K[j])+
+        K[j]@drho@dagger(K[j])+
+        K[j]@rho@dagger(dK[j])
+    ).real for j in range(128)])
+    ell=math.log(1/p)
+    def entropy(probs):
+        v=np.asarray(probs).ravel()
+        return -float(sum(float(a*math.log(a))
+                          for a in v if a>1e-17))/ell
+    def dentropy(probs,dprobs):
+        v=np.asarray(probs).ravel()
+        w=np.asarray(dprobs).ravel()
+        return -float(sum((1+math.log(float(a)))*float(b)
+                          for a,b in zip(v,w) if a>1e-17))/ell
+    row=q.reshape(64,2).sum(axis=1)[1:]
+    drow=dq.reshape(64,2).sum(axis=1)[1:]
+    qNB=float(row.sum())
+    dqNB=float(drow.sum())
+    macro=[q[0],q[1],qNB]
+    dmacro=[dq[0],dq[1],dqNB]
+    R=row/qNB
+    dR=(drow-R*dqNB)/qNB
+    for j in range(1,64):
+        near(q[2*j],p*p*row[j-1],1e-13,
+             "authentic j>0 Golden twin even probability")
+        near(q[2*j+1],p*row[j-1],1e-13,
+             "authentic j>0 Golden twin odd probability")
+    hfine=entropy(q)
+    hdecomp=entropy(macro)+qNB*(entropy(R)+(2-p))
+    near(hdecomp,hfine,1e-11,
+         "ENTIRE native fine history Shannon macro+ROW+Golden")
+    dhfine=dentropy(q,dq)
+    dhdecomp=(dentropy(macro,dmacro)+dqNB*(entropy(R)+(2-p))
+              +qNB*dentropy(R,dR))
+    near(dhdecomp,dhfine,1e-10,
+         "entire MOVING original row/source derivative")
+    cport=1+float(q[1::2].sum())
+    dcport=float(dq[1::2].sum())
+    meanFromDelta=1+4*p**3*float(np.trace(rho@Delta).real)
+    dmeanFromDelta=4*p**3*float(np.trace(
+        drho@Delta+rho@dDelta).real)
+    near(cport,meanFromDelta,1e-11,
+         "FULL native paid original PORT cost determined by Delta")
+    near(dcport,dmeanFromDelta,1e-11,
+         "FULL native moving preparation PORT first source")
+
+    effects=np.einsum("aij,aik->ajk",K.conj(),K,optimize=True)
+    fine2=np.maximum(np.einsum(
+        "aij,bji->ab",states,effects,optimize=True).real,0)
+    near(float(fine2.sum()),1,1e-11,
+         "genuine all128 by all128 NO-RESET fine history normalization")
+    near(float(np.max(np.abs(fine2.sum(axis=1)-q))),0,1e-11,
+         "original 2-tick prefix marginal")
+    price1=cport-hfine
+    price2=2*cport-entropy(fine2)
+    # EXACT true Bellman chain on the ACTUAL quantum posteriors,
+    # keeping all original 128 fine labels and no DATA reset.
+    future=0.0
+    for j in range(128):
+        if q[j]>1e-15:
+            nextlaw=fine2[j]/q[j]
+            future+=q[j]*(1+nextlaw[1::2].sum()-entropy(nextlaw))
+    near(price1+future,price2,1e-11,
+         "whole original TWO-TICK sequential fine Cost-minus-Info chain")
+    near(price1,0.7283481307600606,1e-10,
+         "original full fine source price at true stationary fixture")
+    near(dcport-dhfine,0.01390292064030459,1e-9,
+         "original full fine proper-Lorentz first source with moving rho")
+    check(0 < entropy(R) and qNB>0 and entropy(R)*qNB>0.04,
+          "genuine original 31 live row labels carry NONZERO paid entropy")
+    return {
+        "original_complete_fine_Shannon_Golden":hfine,
+        "original_macro_Shannon_Golden":entropy(macro),
+        "original_retained_ROW_Shannon_Golden":qNB*entropy(R),
+        "original_conditional_Golden_coin_Shannon":qNB*(2-p),
+        "original_paid_PORT_cost_Golden":cport,
+        "original_fine_Cost_minus_Info_Golden":price1,
+        "original_moving_INPUT_first_source":dcport-dhfine,
+        "original_2tick_fine_Cost_minus_Info":price2,
+        "nonblank_probability":qNB
+    }
+
 def main():
     theta=2*math.atanh(1/9)
     mid=construct(theta)
+    complete_record_source=check_original_complete_record_source(
+        mid["K"],native(theta,0.6,(1j,1j,-1.0,-1j))[1])
     eps=1e-4
     hi=construct(theta+eps)
     lo=construct(theta-eps)
@@ -203,6 +305,7 @@ def main():
       "present_prepared_Book_cut_source_nonzero":True,
       "unprepared_full_port_Book_cut_source_zero":True,
       "at_original_proper_boost":public_values(mid),
+      "complete_original_fine_record_source":complete_record_source,
       "compulsory_Book03_scene_HJR_selected":False,
       "GR_closed":False
     },sort_keys=True,indent=2))
