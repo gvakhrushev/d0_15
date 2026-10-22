@@ -25,6 +25,8 @@ VerificationCore composes the owned necessity, empirical and future-memory theor
 
 - [Marked-history source route and the three remaining selection obstructions](../research/A4D_MARKED_HISTORY_SOURCE_AND_BOOK_SELECTION_GATE_2026_10_22.md) — combines the exact algebraic-feedback/entropy no-go, complete-history marked pressure and first-match clock source, coherent READY common-null Book source, and the certified off-null/cut-selection controls.
 
+- [Original CAR16/full128 stationary two-port memory source and exact rank-two native atlas](../research/A4D_ORIGINAL_FULL128_STATIONARY_PORT_CORRELATION_SOURCE_2026_10_22.md) — without DATA reset, original Golden port covariance is c²h(μ−h)>0 iff native Δ is nonscalar; the true two-port mutual-Info field source is strictly nonzero, and the two native positive probabilities (q1,q11) have an exact invertible (boost, ν) Jacobian, including an explicit one-port-blind source direction. This is a measured native memory/Book-Info admission gate, not compulsory physical HJR or GR closure.
+
 **Связанные существующие задачи:** `WRK-A4D-LEAN-FOUNDATION-THEORY-TRANSFER`
 
 ## prospective-native-selection — Минимальный генератор → родной закон физического исполнения
