@@ -62,13 +62,29 @@ function fullTree(K,a=.6,b=.8){
  const weightedHeat=nodes.reduce((s,n)=>s+n.weight*n.heat,0);
  const unweightedHeat=nodes.reduce((s,n)=>s+n.heat,0);
  const meancount=rec.reduce((s,v)=>s+v.weight*v.w.length,0);
+ const live=nodes.slice(1);
+ const N=live.reduce((s,node)=>s+node.weight,0);
+ const nb=[0,1].map(b=>live.reduce((s,node)=>s+node.weight*node.qs[b],0));
+ const qbase=nodes[0].qs,Hp=h(qbase);
+ const predKL=live.reduce((s,node)=>s+node.weight*node.qs.reduce(
+   (k,v,b)=>k+v*Math.log(v/qbase[b]),0),0);
+ const capCorrection=-nb.reduce((s,x,b)=>s+(x-N*qbase[b])*Math.log(qbase[b]),0);
+ const fullPredicted=(1+N)*Hp-predKL+capCorrection;
+ close(fullPredicted,pointerH,6e-13,'exact native quantum predicted Info + finite cap source');
+ check(predKL>=-1e-13,'predictive KL of the ORIGINAL no-reset history positive');
+ const firstNodes=live.filter(node=>node.word.length===1);
+ const pairMI=firstNodes.reduce((s,node)=>s+node.weight*node.qs.reduce(
+   (k,v,b)=>k+v*Math.log(v/qbase[b]),0),0);
+ check(predKL+1e-13>=pairMI,'native predictive KL dominates actual Y0/Y1 MI');
+ close(N,meancount-1,6e-13,'true number of later native comparisons');
+ close(nb.reduce((s,x)=>s+x,0),N,5e-13,'all actual comparison outputs counted');
  close(P,1,3e-13,'full capped matching/abort leaf mass ONE');
  close(pointerH,chainH,6e-13,'exact full correlated quantum prefix tree Shannon chain rule');
  close(beta*weightedHeat,pointerH,6e-13,'source-ready full CONDITIONAL Gibbs energy+heat with TRUE occupancy weights');
  check(Math.abs(beta*unweightedHeat-pointerH)>.01,'no cheap unweighted sum of local Book heats');
  const q0=nodes[0].qs[0],q1=nodes[0].qs[1];
  const p00=rec.length>0?tr(F.apply(0,F.apply(0,F.rho))):0;
- return {F,rec,nodes,P,pointerH,chainH,weightedHeat,unweightedHeat,meancount,q0,q1,p00};
+ return {F,rec,nodes,P,pointerH,chainH,weightedHeat,unweightedHeat,meancount,q0,q1,p00,N,nb,predKL,capCorrection,fullPredicted,pairMI};
 }
 const base=fullTree(7);
 close(base.F.rho[0][0],9/25,1e-14,'SAME owned 2-Kraus stationarity rho00=9/25');
@@ -84,6 +100,8 @@ for(const cap of [1,2,3,4,6,12,24,60]){
  if(cap>=60){
   close(out.meancount,3,5e-11,"stationary uncapped native Kac3 reached without reset");
   const iid=3*h([out.q0,out.q1]);
+  close(out.predKL,iid-out.pointerH,1e-10,'full no-reset entropy deficit is KL not IID');
+  close(out.capCorrection,0,1e-10,'stationary finite-cap boundary vanishes at infinite return');
   check(Math.abs(out.pointerH-iid)>.009,
     "actual original noncommuting first-label source differs from iid whole-Shannon");
  }
@@ -97,6 +115,12 @@ for(const cap of [2,5,10,30]){
  const dThermal=(high.weightedHeat-low.weightedHeat)/(2*e);
  close(dH,dChain,1e-8,'true correlated first source of whole tape EXACT occupation derivative');
  close(dH,beta*dThermal,1e-8,'all noncommuting conditional Gibbs first source including moving native preparation');
+ const dOne=(h(high.nodes[0].qs)-h(low.nodes[0].qs))/(2*e);
+ const dN=(high.N-low.N)/(2*e);
+ const dPred=(high.predKL-low.predKL)/(2*e);
+ const dCap=(high.capCorrection-low.capCorrection)/(2*e);
+ close(dH,(1+old.N)*dOne+dN*h(old.nodes[0].qs)-dPred+dCap,1e-8,
+       'ACTUAL full first source = moving occupation & predictive KL plus finite cap');
  check(Number.isFinite(dH),'finite original native moving input/field jet');
 }
 const last=fullTree(80);
@@ -108,6 +132,9 @@ console.log(JSON.stringify({status:"PASS",checks,
  uncappedStoppedFullPointerEntropy:last.pointerH,
  falseIIDEntropy:3*h([base.q0,base.q1]),
  uncappedKacMean:last.meancount,
+ intrinsicPredictiveKL:last.predKL,
+ twoStepMutualInformationLowerWall:last.pairMI,
+ finiteCapOccupationCorrection:last.capCorrection,
  allFiniteFullTapeMarkovOrIIDAssumed:false,
  fullKrausConditionalGibbsWeightedSource:true,
  compulsoryBook03SingleHeatAndOldRIGHTInfoIdentified:false,
