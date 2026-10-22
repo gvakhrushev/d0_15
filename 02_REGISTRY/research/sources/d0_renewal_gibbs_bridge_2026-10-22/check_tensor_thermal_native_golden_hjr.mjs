@@ -26,7 +26,7 @@ const matter=e=>e.q.reduce((a,x,i)=>a+x*e.spectrum[i],0);
 const j=(m)=>-m*Math.log1p(-z*p*p);
 function master(rs){
  const eps=rs.map(E),W=rs.length,dim=33*3**W;
- const H=Math.log(zScene)/be+eps.reduce((s,e)=>s+heat(e),0);
+ const H=Math.log(2*zScene)/be+eps.reduce((s,e)=>s+heat(e),0);
  const R=eps.reduce((s,e)=>s+matter(e),0);
  return {H,R,J:j(dim),sum:H+R+j(dim),dim,eps};
 }
@@ -59,9 +59,9 @@ for(const rs of [
  const M=master(rs),W=rs.length;
  const native=rs.reduce((s,r)=>s+gamma*(-r*Math.log(r)-(1-r)*Math.log1p(-r)),0);
  const gammaEntropy=-gamma*Math.log(gamma)-(1-gamma)*Math.log1p(-gamma);
- close(M.H+M.R,(Math.log(zScene)+W*gammaEntropy+native)/be,2e-12,
+ close(M.H+M.R,(Math.log(2*zScene)+W*gammaEntropy+native)/be,2e-12,
        'ONE tensor heat+matter reconstruct all native independent report entropies');
- close(M.sum, (Math.log(zScene)+W*gammaEntropy+native)/be+j(M.dim),
+ close(M.sum, (Math.log(2*zScene)+W*gammaEntropy+native)/be+j(M.dim),
        2e-12,'ONE HJR master full original fixed Golden det');
  const hb=(r)=>Math.log((1-r)/r)/ell;
  for(let i=0;i<rs.length;i++){
