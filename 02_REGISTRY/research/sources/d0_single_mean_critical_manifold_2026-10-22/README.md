@@ -71,3 +71,38 @@ or a selected complete Book03 H+J+R heat/clock/Info source.
 The formula and source equivalence are exact algebra; computational receipt
 and remote independent replays are to be reported only after execution.
 **GR_closed=false**.
+
+
+## One original two-band addressed effect: polynomial spectral source moments
+
+[The exact original operator source theorem](../../A4D_TWO_BAND_NATIVE_REPORT_SPECTRAL_SOURCE_INTERPOLATION_2026_10_22.md)
+combines the positive and negative results in one properly typed native object.
+The ORIGINAL two independent N1 site reporter rates live as the two eigenvalues
+of the (mathematically constructed from real orthogonal address blocks)
+conditional positive addressed effect \(E=\operatorname{diag}(r_0,r_1)\).
+This is a direct-sum report effect, NOT automatically the compulsory native
+Book03 cut or physical Hodge heat.
+
+The whole reporter CQ information is \(\operatorname{Tr}h_\varphi(E)\).
+Because E has exactly TWO different positive eigenvalues, the true
+operator spectral derivative is exactly \(\alpha I+\beta E\), hence for
+**every** original 42-direction ambient tangent
+
+    D Tr h_phi(E) = alpha D Tr(E) + beta D [Tr(E^2)/2].
+
+The two *polynomial* trace moments reconstruct both eigenvalues and all
+higher source jets. The strict h4 eigenvalue gap makes their Jacobian
+invertible, but also makes direct empirical inversion poorly conditioned.
+A single fixed arithmetic trace moment is provably insufficient to reproduce
+the original isolated nondegenerate source; a nonlinear one-scalar statistic
+equal to the full entropy is a different case and is NOT ruled out.
+
+    python3 02_REGISTRY/research/sources/d0_single_mean_critical_manifold_2026-10-22/check_two_band_trace_source.py --repo .
+
+This checker pins the original h4 report/source receipts, checks exact
+two-moment/linear-spectral interpolation algebra in Fractions, verifies
+original strict interval source gaps and high-precision numerical controls.
+The entire price/Hessian equality is pointwise mathematical identity; the
+checker DOES NOT newly run the original 1764-Hessian interval enclosure.
+Operational physical Book03 selection, whole conditional quantum work
+information and admitted field writer remain open. GR_closed=false.
