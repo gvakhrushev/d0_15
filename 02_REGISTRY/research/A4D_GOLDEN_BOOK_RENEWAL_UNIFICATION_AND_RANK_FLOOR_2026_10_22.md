@@ -119,6 +119,19 @@ Much more strongly, the exact original Book BLOCK has magnitude \(J_{2,\mathrm{b
 
 This is a strict lower bound for ANY **single original-fugacity positive-contraction feedback** realizing that absolute scalar J block with no extra baseline. The actual old two-eigenfactor construction has spectral rank 2×528=1056 and satisfies the bound. Thus no rebranding of the same absolute block as a rank-528 return or one postselected click is consistent with original unitary Gram/Book law. This is not a minimal-dimension theorem for the complete D0 world, a restriction on unrelated heat/Info contributions, or a proof of compulsory return rank. It is a **new hard source-same-action capacity bound**.
 
+**NEW direct application to the ACTUAL interval-certified, NONFLAT unpadded Golden 42-root — no new Hessian computation.** The independently completed original \`A4D_EXACT_UNPADDED_NATIVE_GOLDEN_ALL42_NONFLAT_ROOT_2026_10_22.md\` / \`sources/d0_original_unpadded42_2026-10-22/RESULT.json\` proves on the *true same scalar N1 two-cell complex analysis box*, containing its exact radius \(10^{-24}\) real root, the strictly positive BOTH actual click bands \(\boxed{10^{-6}<r_i<10^{-5}}\). Since the unchanged physical fugacity is \(\zeta=2^{-20}=9.5367431640625\times10^{-7}<10^{-6}\), the one-channel contraction impossibility (8) applies to **each actual independent certified nonflat rate band**, not only to a convenient flat test:
+
+\[
+\boxed{r_i>\zeta,\qquad
+\frac{528[-\ln(1-r_i)]}{-\ln(1-\zeta)}
+>
+\frac{528[-\ln(1-10^{-6})]}{-\ln(1-\zeta)}
+=553.648140824\ldots,\qquad
+\operatorname{rank}F_i\ge554.}\tag{9a}
+\]
+
+This is a rigorous **same-fugacity necessary spectrum/memory floor of the individual original two-factor J₂ value at the original new exact nonflat 42-field Cost−Info root**. The true old J₂ block has 1056 positive return eigenvalues and passes this bound. It does NOT say a rank-554 hypothetical return necessarily exists, a physically compulsory Book03 cut equals the declared two-factor return, or that the root is stationary for full J₂ away from the common-null locus. The two-certificate relation has now strengthened the finite proof: a one-channel Book source shortcut is EXCLUDED even at the strongest genuine original nonflat unpadded 42-root.
+
 **General all-spectral extension:** for any original finite positive return F with eigenvalues λ_j∈[0,1], let the declared Bernoulli test of eigenchannel j have click ζλ_j. Then
 
 \[
@@ -282,6 +295,6 @@ One optional physically charged native **binary two-channel complete future comp
 
 This is an EXACT powerful same-programme **mathematical reconstruction**, but it is not yet one compulsory D0 physical future task, original full H+J+R selection or proof that Book03 vertex Info is the harmonic statistic. In particular the full true heat trace, selected moving active projector, rank/preparation/observer oldRIGHT and physical common-start writer must still be derived from original M1/G0 and evaluated with genuine independent input Euler. The original unpadded h0 exact 42-root and the separate all-h Brinkmann/true PF curvature recovery are consumers; neither proves their own physical admission. These strict missing inputs, not a fresh entropy or geometric model, are the highest-leverage remaining target.
 
-**Scoped reproduction:** [standalone actual full 72,441/F/R/256-site Python checker](sources/d0_golden_binary_renewal_book_2026-10-22/check_renewal_book_bridge.py) (141 independent formula/boundary/negative-control checks, ordinary and optimized Python outputs identical). It generates true original Golden 4D boxes and no synthetic balanced weights; its illustrative off-null positive site rates are labelled a mathematical diagnostic, not the original full42 field writer. The original 1764-entry h0 interval and Lean were NOT rerun here.
+**Scoped reproduction:** [standalone actual full 72,441/F/R/256-site Python checker](sources/d0_golden_binary_renewal_book_2026-10-22/check_renewal_book_bridge.py) (143 independent formula/boundary/negative-control checks, ordinary and optimized Python outputs identical). It generates true original Golden 4D boxes and no synthetic balanced weights; its illustrative off-null positive site rates are labelled a mathematical diagnostic, not the original full42 field writer. The original 1764-entry h0 interval and Lean were NOT rerun here.
 
 **Status:** same-event renewal Book/KL/all-fine entropy/positive-rank theorem mathematically PROVED; actual native Book03 compulsory selected future, full physical worker/work/clock, Info, original GR and raw216: OPEN; GR_closed=false.
