@@ -920,3 +920,17 @@ Consume both [the sharp one-mean no-go](A4D_SINGLE_MEAN_REPORT_CRITICAL_MANIFOLD
 There is an actual positive complete report interpretation of c on the already allowed independent-address N1 execution: Pr(both READY1)=gamma²c with both separately paid whole FAIL/READY0/READY1 tapes retained. This is a report statistic, NOT a theorem that compulsory native Book03 Hodge/Info chooses the scalar \Psi(m,c). Moreover the real certified gap r1-r0<8.798e-11 makes classical iid identification extremely expensive: >2.59e14 fully paid ternary launches are necessary to distinguish which original site report is in force with Bayes error≤1/4. Quantum/coherent information-bearing work is outside this specific classical lower bound.
 
 **Next typed input to build physically:** actual joint source-rich report/WORK/CAR/oldRIGHT preparation and Book active cut, with genuine per-address response (the two-score \Psi is one mathematically sufficient candidate), real native heat, full charged clock/factory ledger and independent field writer. Do NOT use a single fixed linear mean or treat c's empirical precision as free; do NOT falsely declare two elementary moments universally minimal, since the nonlinear complete entropy itself is one scalar statistic. GR_closed=false.
+
+
+## Operator source map: TWO spectral moments on ONE original addressed 2-band effect (22 October)
+
+The current strongest positive answer to the above mean-only no-go is [A4D_TWO_BAND_NATIVE_REPORT_SPECTRAL_SOURCE_INTERPOLATION_2026_10_22.md](A4D_TWO_BAND_NATIVE_REPORT_SPECTRAL_SOURCE_INTERPOLATION_2026_10_22.md). Instead of INVENTING a second detector, retain the two EXISTING original N1 conditional addressed report effects in ONE 2×2 block-diagonal positive address effect \(E(y)=\operatorname{diag}(r_0(y),r_1(y))\). It is a genuine mathematical conditional source carrier on the independent-copy N1 interface, NOT an established compulsory Book03 projector.
+
+The entire actual two-cell reporter information is the operator spectral function \(\operatorname{Tr}h_\varphi(E)\), and since the strictly interval-verified off-null h4 bands r0<r1 are distinct, one has EXACTLY
+  \(h_\varphi'(E)=\alpha I+\beta E,\)
+  \(\beta=[h_\varphi'(r_1)-h_\varphi'(r_0)]/(r_1-r_0)<0\).
+Consequently, for EVERY original unrestricted ambient 42-field first variation,
+  \(D\,\operatorname{Tr}h_\varphi(E)=\alpha D\,\operatorname{Tr}E+\beta D[\operatorname{Tr}E^2/2]\).
+TWO ordinary polynomial TRACE MOMENTS of the SAME operator preserve the ENTIRE original CQ first source and, by whole-function equality, its nonsingular Hessian and all higher field jets. The single-trace moment does NOT; its 41-dimensional critical-fiber obstruction remains exact. This is a type-safe architectural source pass: keep both eigenchannels within the same returned spectral operator before any lossy averaging.
+
+Do NOT claim this equality chooses the original Book03 Hodge heat/Info/cut. The actual full oldRIGHT/CAR conditional quantum work, paid preparation/clock/controller and source of moving field writer still have to be transported with their exact operator and independent first Euler. The tiny h4 eigenvalue gap makes naive classical eigenvalue recovery ill-conditioned; the companion >2.59e14 iid ternary launch statistical wall is scoped to the specific classical site discrimination task, NOT a prohibition on coherent Book information. Need physical SAME-EXECUTION selected spectral source, not another calibrated scalar mean.
