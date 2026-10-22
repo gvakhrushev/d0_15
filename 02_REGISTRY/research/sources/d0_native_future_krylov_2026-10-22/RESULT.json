@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "exact_checks": 32,
+  "checked_script_sha256": "35691bdc2442c9784800999e7cc662f911e911b47ad0df85d91af4546eca654c",
+  "script_blob_sha": "a968859b81802ed85bca3cab241dc58ac8d5bcb8",
+  "execution": "local Python 3.13.5; SymPy 1.14.0; NumPy 2.3.5; original Book03 Golden exact algebra and rational 3D proof fixture",
+  "native_golden_prepared_rank": 1,
+  "literal_cylinder_future_rank": 2,
+  "prepared_feedback_eigenvalue": 0.38196601125010515,
+  "cylinder_feedback_eigenvalue": 0,
+  "minimal_future_hull_equals_literal_cylinder": true,
+  "noncommuting_3D_reachability_ranks": [
+    1,
+    2,
+    3
+  ],
+  "noncommuting_3D_Book_frontier_ranks": [
+    1,
+    1,
+    0
+  ],
+  "moving_prefix_hull_derivative": "EXACT_RATIONAL_AT_x=1/7",
+  "native_first_source_3D_example": "-50568/105625",
+  "paired_Hodge_J_horizon_gap_oldRIGHT128": 0.38191938453125474,
+  "multi_action_rank_scope": "output frontier only; no claimed rank equality for summed input feedback",
+  "compulsory_Book03_P_N_selected": false,
+  "native_full42_stationary_root": false,
+  "GR_closed": false
+}
