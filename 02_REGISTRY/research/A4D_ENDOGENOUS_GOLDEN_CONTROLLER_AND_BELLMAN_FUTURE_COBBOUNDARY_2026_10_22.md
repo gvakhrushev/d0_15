@@ -1,12 +1,12 @@
 # D0 → GR: endogenous paid Golden controller retains positive nonlinear source; Bellman signed vertex gains are a zero-mean future coboundary
 
-22 October 2026. New **analytical composition** in existing Draft #334. This is a strict result about a DEFINED monitored classical controller over the already-owned original measured 0/10 Golden **mathematical aperture family**, and about the newly owned Bellman information reconstruction on an actual supplied positive finite tree. **NO compulsory Book03/H+J+R actuation, original full128-to-N1 identification, new field writer, free preparation, new coupling, GR/raw216 closure, or acceptance is asserted.** Flags: \`GR_closed=false\`, \`full_D0_price_selected=false\`.
+22 October 2026. New **analytical composition** in existing Draft #334. This is a strict result about a DEFINED monitored classical controller over the already-owned original measured 0/10 Golden **mathematical aperture family**, and about the newly owned Bellman information reconstruction on an actual supplied positive finite tree. **NO compulsory Book03/H+J+R actuation, original full128-to-N1 identification, new field writer, free preparation, new coupling, GR/raw216 closure, or acceptance is asserted.** Flags: `GR_closed=false`, `full_D0_price_selected=false`.
 
 Owned inputs:
-- \`A4D_GOLDEN_TWO_APERTURE_SOURCE_PROJECTOR_AND_PAID_SIGN_GATE_2026_10_22.md\`: exact signed projector \(\mathcal R_\varphi S=\varphi S_{\varphi^{-2}t}-pS_t\), full moving-PF source identity and fixed-positive-mixture no-go.
-- \`A4D_UNPADDED_GOLDEN_N1_CONSTITUTIVE_LEGENDRE_COMPLETE_2026_10_22.md\`: original genuine r(x,y), c(x,y), and interval-certified full-rank positive \(H=D^2c(0)\).
-- \`A4D_NATIVE_BOOK03_BORN_ENTROPY_BELLMAN_VERTEX_INFORMATION_WELD_2026_10_22.md\`: conditional Born+local-expected-Shannon unique backward vertex-Info reconstruction; the construction is NOT automatically physically selected.
-- \`sources/d0_native_joint_field_minimum_2026-10-20/inputs/PAID_RANDOM_CHOICE_MINIMUM.md\`: paid monitored mixing and correct complete entropy chain, on its DISTINCT stopped task.
+- `A4D_GOLDEN_TWO_APERTURE_SOURCE_PROJECTOR_AND_PAID_SIGN_GATE_2026_10_22.md`: exact signed projector \(\mathcal R_\varphi S=\varphi S_{\varphi^{-2}t}-pS_t\), full moving-PF source identity and fixed-positive-mixture no-go.
+- `A4D_UNPADDED_GOLDEN_N1_CONSTITUTIVE_LEGENDRE_COMPLETE_2026_10_22.md`: original genuine r(x,y), c(x,y), and interval-certified full-rank positive \(H=D^2c(0)\).
+- `A4D_NATIVE_BOOK03_BORN_ENTROPY_BELLMAN_VERTEX_INFORMATION_WELD_2026_10_22.md`: conditional Born+local-expected-Shannon unique backward vertex-Info reconstruction; the construction is NOT automatically physically selected.
+- `sources/d0_native_joint_field_minimum_2026-10-20/inputs/PAID_RANDOM_CHOICE_MINIMUM.md`: paid monitored mixing and correct complete entropy chain, on its DISTINCT stopped task.
 
 ## 1. Scope: give a classically monitored Golden controller its BEST chance
 
@@ -203,11 +203,11 @@ The original root's conditional P and primitive cost are UNCHANGED; solely the P
 
 ## 5. Combined physical decision — one missing actual action, not more artificial field roots
 
-The new result closes TWO tempting short-circuits to the existing \`gr_operational_realization\` consumer:
+The new result closes TWO tempting short-circuits to the existing `gr_operational_realization` consumer:
 1. Dynamical softmax/Born optimization of fully monitored positive Golden query choices fails the signed-source cancellation at the exact original common-null carrier, even allowing moving PF and genuine 42-direction tests. This extends the prior FIXED mixing no-go, not the full quantum/Book class.
 2. New Bellman information can have negative realized event gains, but their future-induced redistribution has identically ZERO **conditional expected first source**. To generate a different full physical first source one must really change the PAID complete programme, task/price/algebra, or obtain admitted coherent interference/relative operator feedback.
 
 The remaining decisive operational theorem is still a physically **SELECTED**, fully paid oldRIGHT/full128/SCENE Book03 history including its actual query aperture, complete initial preparation, controller, mandatory Info observer algebra, field-writer tangent, and clock/heat/work equations, on the SAME original 42 carrier; it must then establish all-metric naturality, Ward and uniform refinement to use the already proved conditional Golden tensor-rigidity route.
 
 No past numerical roots, CI, formalizations, or \(GR\)/\(positive_gr\)/raw216 acceptance flags are changed. The companion bounded checker is
-\`sources/d0_endogenous_golden_bellman_2026-10-22/check_adaptive_controller_bellman.py\`.
+`sources/d0_endogenous_golden_bellman_2026-10-22/check_adaptive_controller_bellman.py`.
