@@ -467,3 +467,6 @@ GitHub, verify its remote head and artifact blob. Preserve the source SHA and
 checker/ledger pair in checkpoint intake. The read-only history workflow exports
 published branch/tag/PR histories; its artifact has finite retention and cannot
 recover a commit that was never sent to a published ref.
+
+
+**Two-end axial-gauge improvement (22 October 2026):** The same [temporal Gauss / Wilson theorem](02_REGISTRY/research/A4D_NATIVE_TEMPORAL_GAUSS_PROPAGATION_AND_WILSON_COLLAR_2026_10_22.md) gives a positive alternative to the Wilson=I obstruction. With BOTH endpoint FRAMES fixed and W=ordered product of original U0 links, choose internal g_j=U0...U_(j−1). Then all but the last temporal links become I, while the LAST original link becomes exactly W. This is a valid exact gauge coordinate construction only when the actual boundary contract allows retyping its individual terminal link; it does not alter a separately locked link, erase W, or pay a missing Book clock. Prefer this one-link Wilson carrier to illegal all-links-identity gauge in a two-ended boundary solve.
