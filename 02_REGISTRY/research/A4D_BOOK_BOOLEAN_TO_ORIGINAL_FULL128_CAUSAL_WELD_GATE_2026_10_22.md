@@ -356,3 +356,39 @@ not count them as new discoveries or discharge the physical cut,
 valuation and smooth-field-writing premises. A literal Boolean word
 remains a different programme. `GR_closed=false`; the original raw
 terminal and physical refinement remain open in the existing #334 owner.
+
+
+## 6. New CONSTRUCTIVE resolution with the ESSENTIAL minimal work (same original PR #334)
+
+The earlier §§1–2 no-intertwiner result is correct ONLY for an invariant
+same-16-DATA-subspace, *zero-extra-work* embedding. It is NOT a no-go for
+the full original CAR16 instrument. The new
+[A4D_ORIGINAL_GOLDEN_HALMOS_NAIMARK_ALL128_CAUSAL_BOOK_WELD_2026_10_22.md](A4D_ORIGINAL_GOLDEN_HALMOS_NAIMARK_ALL128_CAUSAL_BOOK_WELD_2026_10_22.md)
+**solves that precise missing original channel weld constructively**:
+with the true strict \(0<\Delta<I\), put
+\(S=\sqrt{\Delta(I-\Delta)}\) and
+\(Q_\Delta=\begin{psmallmatrix}\Delta&S\\S&I-\Delta\end{psmallmatrix}\).
+The Q is a true projection; auxiliary dimension 16 is SHARPLY MINIMAL
+and unique up to an ancillary unitary. A single original
+\(G^\dagger[I-2|1\rangle\langle1|\otimes Q_\Delta]G\)
+yields BOTH original j0 K and the full missing nonblank effect.
+The exact original row isometry
+\(W_j=-K_{2j}S^{-1}/(2p^2)\),
+\(\sum_jW_j^\dagger W_j=I\),
+recovers EVERY one of the original 128 complex Kraus,
+including all source derivatives and the ≥17 independent original
+nonblank Choi directions.
+
+This is an EXACT original Stinespring-column factorization, NOT an
+unpaid additional primitive/physical programme. It strictly resolves
+the missing CAR/Boolean causal **operator compatibility**, but
+neither identifies Book03 compulsory P/scene Δ/H/Info nor upgrades
+the different Boolean predicate-count action to the original physical
+42-source by matching scalar outcomes.
+
+A notably decisive cut comparison on ONE constructed unitary:
+\(F_{\rm PRE}=I-K_0^\dagger K_0=4p^2\Delta(I-p^2\Delta)\)
+has a nonzero genuine original source, whereas the unprepared
+all-work port cut has \(F_{\rm WIDE}=4p^3Q_\Delta\)
+and field-CONSTANT Book determinant. M1/Book03 must admit the REAL
+prepared active question to preserve this source.
