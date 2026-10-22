@@ -68,7 +68,7 @@ def original_direct():
     drdtheta = (1-(1/9)**2)/2
     pair = np.array([[np.trace(es[j]@ys[i]).real for j in range(2)] for i in range(2)])
     dpair = np.array([[np.trace(des[j]@ys[i]+es[j]@dys[i]).real/drdtheta for j in range(2)] for i in range(2)])
-    return {"pair": pair, "dpair": dpair,
+    return {"pair": pair, "dpair": dpair, "delta_eigen": np.linalg.eigvalsh(d),
             "mu": np.trace(d).real/16, "harm": 16/z,
             "one": np.array([np.trace(y).real for y in ys]),
             "source": np.array([np.trace(dy).real/drdtheta for dy in dys])}
@@ -140,6 +140,28 @@ def main():
     rank_two = check_native_rank_two()
     require(abs(direct["mu"]-float(MU))<4e-13,"real original CAR arithmetic mean")
     require(abs(direct["harm"]-float(HARM))<4e-13,"real original CAR harmonic mean")
+    # TWO POSITIVE original sequential port probabilities reconstruct the
+    # complete 8+8 original CAR16 eigenvalue fixture, without new tomography.
+    c=4*P**3
+    u=float(direct["pair"][1,1])
+    q_native=float(direct["one"][1])
+    require(u>q_native*q_native>0,"strict original positive sequential correlation")
+    eig_low=(u-math.sqrt(u*(u-q_native*q_native)))/(c*q_native)
+    eig_high=(u+math.sqrt(u*(u-q_native*q_native)))/(c*q_native)
+    eig=direct["delta_eigen"]
+    require(np.max(abs(eig[:8]-eig_low))<5e-12,"original first 8 spectral columns decoded from ports")
+    require(np.max(abs(eig[8:]-eig_high))<5e-12,"original last 8 spectral columns decoded from ports")
+    beta=2*P*P
+    gap_from_ports=math.sqrt(1-q_native*q_native/u)-math.tanh(
+        beta*math.sqrt(u*(u-q_native*q_native))/(c*q_native))
+    rho_spectral=(1/eig)/np.sum(1/eig)
+    gibbs_spectral=np.exp(-beta*eig)/np.exp(-beta*eig).sum()
+    gap_direct=float(np.sum(abs(rho_spectral-gibbs_spectral)))
+    require(abs(gap_from_ports-gap_direct)<5e-12 and gap_direct>.0388,
+            "native full16 Gibbs-versus-inverse-square wall decoded ONLY from ports")
+    spectral={"low":eig_low,"high":eig_high,
+              "gibbs_gap_from_port_frequencies":gap_from_ports,
+              "gibbs_gap_direct_original_fullCAR16":gap_direct}
     require(np.max(abs(direct["pair"]-pair))<5e-13,"all four original ordered probabilities")
     require(np.max(abs(direct["dpair"]-dpair))<2e-12,"all four original field derivatives")
     require(np.linalg.norm(direct["source"]-np.array([-dq,dq]))<1e-12,
@@ -179,6 +201,7 @@ def main():
       "pair_mutual_info_derivative_Golden":dmut/math.log(1/P),
       "native_pair_matrix":direct["pair"].tolist(),
       "rank_two_native_chart":rank_two,
+      "operational_eigenvalue_and_gibbs_reconstruction":spectral,
       "entropy_two_round_source_nats":h2prime,
       "memory_source_sign_certified_from_rational_spectrum":True,
       "stationary_preparation_moved":True,
