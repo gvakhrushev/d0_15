@@ -1,0 +1,84 @@
+{
+  "status": "PASS_COMPOSITION_AUDIT_CONTROLS_NOT_GR_CLOSURE",
+  "checks": 33,
+  "check_names": [
+    "Legendre maximum has POSITIVE Schur correction",
+    "Auxiliary response block is negative, not positive",
+    "Strictly convex operand cost can have a saddle pullback",
+    "Exact Legendre lift retains and adds negative inertia",
+    "Block congruence: inertia(full)=inertia(reduced)+inertia(aux)",
+    "Trace-free band variation leaves proposed modular heat exactly constant",
+    "Same variation has nonzero determinant derivative for unequal bands",
+    "Unchanged native flat bands are distinct positive contractions",
+    "Native 528+528 countercheck: modular cancellation is not an operator identity",
+    "Native direct derivative matches analytic trace-free source",
+    "Exact corrected heat/logdet scale-shape decomposition",
+    "Unequal positive spectrum has positive reverse relative entropy",
+    "Original unpadded source budget uses its actual Hessian defect",
+    "Owned 1e-22 continuous source bound is a valid self-map budget",
+    "Owned extra Lipschitz bound supplies uniqueness",
+    "Inverse defect .036547 is NOT the inverse Hessian norm",
+    "Claimed displacement lies beyond original root ball by 13 orders",
+    "Upper claimed displacement lies beyond original root ball by 17 orders",
+    "Smooth remainder can destroy all real roots",
+    "No-root control still has tiny point residual and unit base inverse",
+    "Retained orthogonal macro outcome tags dephase the program marginal",
+    "Perfect work echo does not restore program-only contrast with retained tags",
+    "Joint program/archive observable can recover global coherence",
+    "Joint coherence observable does not commute with outcome archive",
+    "A globally pure state need not have a pure program marginal",
+    "Whole restored identity cycle has zero complementary feedback on the same cut",
+    "Conditional code price = aggregated code price + site/bit mutual information",
+    "Conditional price has nonzero derivative along a fixed-mean direction",
+    "Address information carries a real positive additional value",
+    "Consistency control root is exactly -1/h",
+    "Same control has O(h^2) residual at the target",
+    "Every finite Jacobian is invertible but inverse grows as h^-3",
+    "Eight missing coordinates are not identified by an arbitrary gauge label count"
+  ],
+  "results": {
+    "legendre": {
+      "reduced_toy_hessian": [[2, 0], [0, -2]],
+      "lifted_toy_hessian_diagonal": [2, -2, -1],
+      "full46_negative_inertia": "negative(H42)+4, when the four response directions are independent"
+    },
+    "modular_heat": {
+      "native_A0": "0.9968943799848581414605041486518889517245",
+      "native_B0": "0.9442719099991587856366946749251049417625",
+      "trace_free_heat_derivative": "0 (symbolic)",
+      "trace_free_logdet_derivative": "0.0000000000252700516181125154218193153020387637215",
+      "scalar_differentiation_error": "4.6022751e-91",
+      "direction_scope": "operator-space diagnostic, not an assertion that this is a supplied 42-field tangent"
+    },
+    "root_certificate": {
+      "preconditioner_norm_bound": "28883/1000",
+      "inverse_defect_bound": "36547/1000000",
+      "inverse_hessian_norm_bound": 29.978628952320456,
+      "owned_source_radius": "1e-20",
+      "owned_complete_source_sup_bound": "1e-22",
+      "q_base": 0.5256632752,
+      "self_map_radius_upper": 8.144932752e-21,
+      "new_full42_correction_evaluated": false
+    },
+    "echo_archive": {
+      "program_only_contrast": "0",
+      "joint_contrast": "2*sqrt(2)/3",
+      "actual_full_writer_echo_compiled": false,
+      "compulsory_Book03_projector_selected": false
+    },
+    "conditional_information": {
+      "fixed_mean_conditional_price_derivative": "-2.28301182858927940046602460419",
+      "this_is_not_a_logdet_identity": true,
+      "original_h0_and_hquarter_prices_kept_distinct": true
+    },
+    "refinement": {
+      "consistency_counterexample": "E_h(x)=h^3*x+h^2; exact root=-1/h",
+      "uniform_inverse_or_equivalent_stability_proven": false
+    }
+  },
+  "source_snapshot": "07a328a29843d5f21e0d5b4fec1b5ec0be923e3b",
+  "new_full42_interval_root": false,
+  "native_full_programme_constructed": false,
+  "Lean_run": false,
+  "GR_closed": false
+}
