@@ -1,18 +1,18 @@
 # D0 → GR: exact Golden two-aperture source projector, positive-mixture no-go, and paid-sign gate
 
 22 October 2026 · Mathematical research continuation of the EXISTING scientific Draft PR #334
-(\`EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE\`).
+(`EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`).
 Status **ANALYTICAL CONSTITUTIVE THEOREM, NOT SELECTED D0 PHYSICS**.
-\`GR_closed=false\`, \`full_Book03_HJR_selected=false\`, \`raw216_closed=false\`.
+`GR_closed=false`, `full_Book03_HJR_selected=false`, `raw216_closed=false`.
 
 **Exact reused owners, not new assumptions or a new field action:**
-- \`A4D_UNPADDED_GOLDEN_N1_CONSTITUTIVE_LEGENDRE_COMPLETE_2026_10_22.md\`:
+- `A4D_UNPADDED_GOLDEN_N1_CONSTITUTIVE_LEGENDRE_COMPLETE_2026_10_22.md`:
   unchanged original Golden 0/10 report polynomial, nonlinear Cost-minus-measured-Shannon, positive definite open-chart constitutive Hessian and true moving-PF derivative;
-- \`A4D_GOLDEN_SCALE_CONSTITUTIVE_NO_GO_AND_NATIVE_H2_APERTURE_2026_10_22.md\`:
-  exact fixed-aperture physical-scale obstruction and **conditional** \`tau_h=O(h^2)\` scalar escape;
-- \`A4D_GOLDEN_DISCRETE_BLOWUP_CONDENSED_GR_2026_10_20.md\`:
+- `A4D_GOLDEN_SCALE_CONSTITUTIVE_NO_GO_AND_NATIVE_H2_APERTURE_2026_10_22.md`:
+  exact fixed-aperture physical-scale obstruction and **conditional** `tau_h=O(h^2)` scalar escape;
+- `A4D_GOLDEN_DISCRETE_BLOWUP_CONDENSED_GR_2026_10_20.md`:
   existing **conditional** native metric-only/Golden-weight-zero/Ward Einstein-rigidity theorem;
-- \`A4D_BOOK03_ALL42_SOURCE_DESCENT_AND_COHERENT_SADDLE_SYNTHESIS_2026_10_22.md\`:
+- `A4D_BOOK03_ALL42_SOURCE_DESCENT_AND_COHERENT_SADDLE_SYNTHESIS_2026_10_22.md`:
   actual Book/Jones same-carrier admission, absolute Info and independent-input gate.
 
 ## 1. One actual local measured-code function, not a modified model
@@ -58,7 +58,7 @@ S_0(Y)=K\sum_i\alpha\cdot\xi_i(Y).\tag{3}
 This is exactly the original affine six-based-plaquette Palatini/CAR
 source, with the already derived ratio
 \(\alpha_y/\alpha_x=\lambda_-(2^{-20})\).
-Its mathematical \`DS_0\` is not an assertion of independent physical
+Its mathematical `DS_0` is not an assertion of independent physical
 Book03 selection or universal metric descent.
 
 ## 2. THEOREM A — exact two-Golden-scale first-source cancellation, ALL field/PF directions
@@ -295,12 +295,12 @@ real all-metric Diff naturality, off-shell Ward, metric-only descent,
 physical source normalization, common physical refinement and
 universal recovery premises of the already-owned Golden-rigidity
 theorem would still require proof. This packet neither changes
-\`positive_gr\` nor accepts the original \`raw216\` terminal.
+`positive_gr` nor accepts the original `raw216` terminal.
 
 ## 6. Bounded reproducibility and actual check scope
 
 Checker:
-\`sources/d0_golden_source_projection_2026-10-22/check_golden_source_projection.py\`.
+`sources/d0_golden_source_projection_2026-10-22/check_golden_source_projection.py`.
 
 A locally executed 100-digit mpmath test (NOT an all42 physical/root
 proof) checks:
@@ -333,3 +333,57 @@ converge to affine Einstein/CAR without a fitted coupling?" problem
 *within a precisely defined mathematical aperture family*. It
 DOES NOT remove the compulsory native Book physical selection,
 same-programme writer, Diff/Ward, or refinement premises.
+
+
+## 7. THEOREM D — even a FULLY PAID classical Golden branch does not implement the signed projector
+
+This upgrades Theorem C from an abstract convex combination to the exact
+**complete retained-record Cost-minus-measured-information** law.
+Choose any real field-independent random selector \(C\) with
+\(\Pr(C=j)=w_j>0\), \(\sum_jw_j=1\), and conditionally execute a
+legitimate fully measured branch programme with history
+\(\Gamma_j\sim P_{j,Y}\), actual charges \(c_j(\gamma,Y)\) and all work
+labels retained. Pay a real selector/branch-factory charge
+\(b_j\) independent of the field on this specified interface.
+The observed COMPLETE tape is \(\Gamma=(C,\Gamma_C)\).
+With no erased branch records,
+\[
+\begin{split}
+H_\varphi(\Gamma)
+ &=H_\varphi(C)+\sum_jw_jH_\varphi(P_{j,Y}),\\
+\mathbb E\operatorname{Cost}(\Gamma)
+ &=\sum_jw_j\,[b_j+\mathbb E_{P_{j,Y}}c_j],\\
+\boxed{
+\mathbb E\operatorname{Cost}-H_\varphi(\Gamma)
+ &=\underbrace{\sum_jw_jb_j-H_\varphi(C)}_{\text{field independent}}
+ +\sum_jw_j[\mathbb E_{P_{j,Y}}c_j-H_\varphi(P_{j,Y})].
+}
+\end{split}\tag{18}
+\]
+This is the elementary probability chain rule, and its
+**ENTIRE off-shell field differential** is a POSITIVE weighted sum of
+the actual branch Cost-minus-Info differentials. The branch entropy
+cannot secretly supply the required negative \(-p S_t\) first source
+while the genuinely recorded branch label is retained and its
+probabilities remain field independent.
+
+In particular, **IF** the entire independently paid branch actions
+are really source-equivalent to the declared normalized \(S_{\sigma t}\)
+and \(S_t\) on one original field chart (this is a further native
+identification, not claimed), a two-choice Golden controller with
+\(w=(p,p^2)\) produces \(p\,DS_{\sigma t}+p^2DS_t\), NEVER the signed
+\(\varphi\,DS_{\sigma t}-p\,DS_t\) required by (7).
+Moving selector probabilities, genuinely field-dependent preparation
+or clock costs, conditional quantum Info, or a *different* retained
+observer algebra add new terms and lie outside this no-go. Such terms
+must be explicitly computed from the SAME ACTUAL physical execution;
+they are not a free algebraic correction.
+
+Therefore merely paying and recording an authentic Golden-randomized
+two-query protocol **cannot** bypass the strict fixed-aperture scale
+obstruction. Any physical implementation of the projector requires
+a real source-bearing signed-information/relative-reference or coherent
+construction, genuinely selected and paid by Book03, or another
+independently established complete-source mechanism. This closes the
+ordinary field-independent classical randomization loophole but NOT
+the physical GR selection gate.
