@@ -106,6 +106,49 @@ Then program-only mixing remains silent even AFTER perfect echo: `Tr[(X_prog⊗I
 
 A positive 2×2 control demonstrates the theorem's sharpness: a valid X-basis projective measurement distinguishes coherent history superpositions but maps an old definite history `|0>` to a 50:50 record mixture under its nonselective update. Therefore one CANNOT call the interference check an operation that keeps *all* earlier history labels untouched. By contrast an instrument with arbitrary block-diagonal old-record Kraus maps can preserve the strict history record, but its effects cannot see inter-history coherence.
 
+## 3a. STRONGER THREE-SETTING theorem: no universal-QND premise is needed on the ORIGINAL fixed two-programme chart
+
+The preceding theorem assumed exact nondemolition for every possible quantum input. For the specific original **fixed compiled Q8 circuit**, a far weaker, genuinely finite gate suffices. Let the two original mutually orthogonal *complete, branch-tagged* input states be |u> and |v> (these live in different programme/history sectors). For a fixed future CPTP instrument with Kraus operators K_j, let P0 be the original readable archive projection with P0|u>=|u> and P0|v>=0. Supply just THREE distinct r1,r2,r3 inside the strictly positive physical programme-preparation chart and define
+
+\[
+|\psi_r\rangle=\sqrt{1-r}|u\rangle+\sqrt r|v\rangle.
+\tag{F1}
+\]
+
+Suppose the fixed future device **only** preserves the old archive probability on those three actual preparations:
+
+\[
+\operatorname{Tr}[P_0\Lambda(|\psi_{r_i}\rangle\langle\psi_{r_i}|)]=1-r_i,
+\qquad i=1,2,3.\tag{F2}
+\]
+
+Write E=\Lambda^*(P0), so 0<=E<=I, and set \alpha=\langle u|E|u\rangle, \beta=\langle v|E|v\rangle, c=\operatorname{Re}\langle u|E|v\rangle. Equation (F2) is the explicit THREE-by-THREE finite system
+
+\[
+(1-r_i)(\alpha-1)+r_i\beta+2\sqrt{r_i(1-r_i)}\,c=0,\quad i=1,2,3.
+\tag{F3}
+\]
+
+Its coefficient matrix is **invertible for ANY THREE DISTINCT numbers in (0,1)**: the graph f(r)=sqrt(r(1-r)) is strictly concave, with f''(r)=-1/[4(r(1-r))^{3/2}]<0, hence its three ordered points are not collinear. Therefore (F3) forces \alpha=1,\beta=0,c=0. Positivity does the further indispensable work: from 0<=E<=I, \langle u|(I-E)|u\rangle=0 implies E|u>=|u>, and \langle v|E|v\rangle=0 implies E|v>=0. Thus the **full complex** offdiagonal entry also vanishes, not just its real part.
+
+The equalities \alpha=1, \beta=0 imply
+
+\[
+\sum_j\|(I-P_0)K_j|u\rangle\|^2=0,
+\qquad\sum_j\|P_0K_j|v\rangle\|^2=0.
+\]
+
+Termwise positivity gives K_j|u> in ran(P0), K_j|v> in ran(I-P0). Therefore their inner products vanish for EVERY outcome j:
+
+\[
+\boxed{\langle u|K_j^*K_j|v\rangle=0,\ \forall j.}
+\tag{F4}
+\]
+
+Consequently every output probability of the fixed instrument on the TWO-DIMENSIONAL **actual programmed input span** is insensitive to programme coherence, although ONLY THREE positive r preparations were tested. No demand of nondemolition on arbitrary other states is used. This is an exact finite **native source-observability FALSIFIER** for a proposed coherent-Q8 Book reader that claims both to retain every archived bit perfectly and to distinguish coherent-vs-dephased branches through the same stage/record device.
+
+**Native numerical calibration and limitation.** For the exact demonstrative positive Golden r-settings (1/5,2/5,4/5), the determinant is `12/25 - 6sqrt(6)/25 != 0`. For three VERY RARE settings (r0,2r0,4r0) using the original `r0=1.8512395785208469e-6`, its absolute determinant is ~`1.2223345073098416e-9`; 80-digit independent inversion verifies the spectral extremes. This makes the theorem EXACT but highlights severe experimental conditioning near the original rare reporter. The physical finite D0 image must truly supply three distinct admitted preparations **with the same fixed future CPTP readout and same old branch-tag states**; three mathematical field coordinates alone are not proof of this. Genuine field-dependent controller/conditioned old-work states require their own enlarged source check.
+
 ## 4. Consequences for the original all42 geometric source and Book03 admission
 
 Prior mathematically positive [prepared-cut Q8 all42 source](A4D_Q8_COHERENT_PROGRAM_NATIVE_BOOK42_SOURCE_FORK_2026_10_22.md) gives a correct full FIRST SOURCE under an explicitly supplied **global pure prepared Q8 programme×work cut**; its difference from the dephased support cut remains exact. This new theorem says more:
@@ -123,4 +166,4 @@ On ONE real original Golden READY+CAR+oldRIGHT instrument from the common M1 ini
 
 ## Reproduction
 
-`02_REGISTRY/research/sources/d0_book03_stage_clock_selected_cut_2026-10-22/check_q8_paid_echo_archive.py` is a self-contained numpy replay on the ORIGINAL 4-spin×2-arm×2-record 16-dimensional primitive matrices. It tests both original forward/echo FIFTEEN-step schedules, all four spin columns, genuine Golden and CNOT matrices, the original Q8 click weights, supplied programme-coherent source before and after echo, independently preserved archive tag negative control, and exact archive-QND positive/negative fixtures. **111 controls** pass using the original Golden irrational numerical root. All-size inverse and QND claims are analytic; this bounded checker is not original Lean/full128/h4 interval or Book03 physical-replay acceptance.
+`02_REGISTRY/research/sources/d0_book03_stage_clock_selected_cut_2026-10-22/check_q8_paid_echo_archive.py` is a self-contained numpy replay on the ORIGINAL 4-spin×2-arm×2-record 16-dimensional primitive matrices. It tests both original forward/echo FIFTEEN-step schedules, all four spin columns, genuine Golden and CNOT matrices, the original Q8 click weights, supplied programme-coherent source before and after echo, independently preserved archive tag negative control, and exact archive-QND positive/negative fixtures. **118 controls** pass using the original Golden irrational numerical root. All-size inverse and QND claims are analytic; this bounded checker is not original Lean/full128/h4 interval or Book03 physical-replay acceptance.
