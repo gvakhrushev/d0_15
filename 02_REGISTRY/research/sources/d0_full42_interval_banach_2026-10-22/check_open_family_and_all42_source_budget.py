@@ -105,6 +105,15 @@ def explicit_budget(original):
     assert base_ball_image<radius
     assert unique_ball_image<radius
     assert missing_source_sup < ((1-q_total)*radius-drift)/A
+    # Strict ORIGINAL two opposite unrestrained coframe Hessian signs survive
+    # if the EXTRA price is actually C2 and its Hessian row norm<=1e-3.
+    # This is NOT asserted for a merely continuous/non-C2 first source.
+    Hchange=hessian_L*radius
+    lower_positive=D("3.0283")-Hchange-missing_source_lipschitz
+    upper_negative=-D("1.0912")+Hchange+missing_source_lipschitz
+    assert lower_positive==D("3.0103656")
+    assert upper_negative==-D("1.0732656")
+    assert lower_positive>0>upper_negative
     # The no-perturbation original root is known already (not reproved here).
     return {
        "field_dimension":dimension,
@@ -121,6 +130,11 @@ def explicit_budget(original):
        "Lipschitz_source_unique":"YES, if additionally Lipschitz <=1e-3",
        "non_C2_information_compatible":"YES for existence if its FIRST source is continuous and bounded",
        "assumed_41_other_Euler_rows_zero":False,
+       "extra_C2_price_if_Hessian_bound_1e_minus3":{
+          "coframe_e00_Hessian_strictly_greater_than":str(lower_positive),
+          "coframe_e11_Hessian_strictly_less_than":str(upper_negative),
+          "unrestricted_field_minimum":False,
+          "applicable_to_non_C2_residual":False},
        "actual_original_Book03_residual_proven_small":False}
 
 def main():
