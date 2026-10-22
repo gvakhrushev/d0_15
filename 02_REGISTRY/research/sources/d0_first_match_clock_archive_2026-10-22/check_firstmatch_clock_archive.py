@@ -207,13 +207,94 @@ def check_controls():
             'fisher_full':full_fisher,'fisher_goal_clock':goal_fisher,
             'fisher_nonmatch':rest_fisher,'fisher_goal_clock_fraction':goal_fisher/full_fisher}
 
+
+def check_finite_cap_rank_and_source():
+    """Exact cap clock jets and lossless-record dimension / Kraft bounds."""
+    a = 2*10946*P**23
+    z = 2**-20
+    ell = 4*P**3
+    r = 1-(1-z*ell)*(1-z*ell*(1+P**6))
+    # Positive 3-atom probabilities, same native reference as main tests.
+    q = [1-a,a*(1-r),a*r]
+    for cap in range(0,6):
+        # Compute distribution of each completed matching word plus each
+        # unresolved no-match abort without renormalizing any subset.
+        mass = mean_length = 0.0
+        for first,pr in enumerate(q):
+            others = [j for j in range(3) if j!=first]
+            for n in range(cap):
+                for seq in itertools.product(others, repeat=n):
+                    proba = pr*pr
+                    for x in seq: proba*=q[x]
+                    mass += proba
+                    mean_length += (n+2)*proba
+            for seq in itertools.product(others, repeat=cap):
+                proba = pr
+                for x in seq: proba*=q[x]
+                mass += proba
+                mean_length += (cap+1)*proba
+        close(mass,1,1e-12)
+        formula = 4-sum((1-x)**cap for x in q)
+        close(mean_length,formula,1e-11)
+
+    def cap_source(K):
+        # Stable tail and source calculations even for 60 million trials.
+        low1 = math.exp(K*math.log1p(-a*r))
+        low0 = math.exp(K*math.log(1-a+a*r))
+        lowU = math.exp(K*math.log(a))
+        shortfall=low1+low0+lowU
+        derivative=a*K*(math.exp((K-1)*math.log1p(-a*r)) -
+                        math.exp((K-1)*math.log(1-a+a*r)))
+        return shortfall, derivative
+    tail20, d20 = cap_source(20_000_000)
+    tail60, d60 = cap_source(60_000_000)
+    assert 3.20e-6<tail20<3.22e-6
+    assert 21.9<d20<22.0
+    assert tail60 < 5e-17
+    assert 0<d60<1e-9
+
+    # Singular source limit: if K*r -> lambda, full mean ->4-exp(-a*lambda),
+    # not automatically 4. The exact clock gradient remains order K.
+    for lam in [0.25, 1.5, 4.0]:
+        eps = 1e-8
+        K = max(1,round(lam/eps))
+        remaining = math.exp(K*math.log1p(-a*eps))
+        close(remaining,math.exp(-a*lam),1e-8)
+
+    # Original 72,441 fine leaf counts: U has every overshoot + FF + RR;
+    # READY 0 and READY 1 have 2*10946 leaves each. All Born masses positive.
+    M_U = 6765 + 2*10946
+    M_0 = M_1 = 2*10946
+    counts = [M_U,M_0,M_1]
+    assert sum(counts)==72441
+    for cap in range(0,5):
+        count_abort=sum(v*(72441-v)**cap for v in counts)
+        assert count_abort>=3*(2**cap)
+        if cap==1:
+            assert count_abort==3467955504
+        # For any exact Golden F/R prefix-free complete logger, Kraft
+        # implies largest code cost >= log_phi(number distinct outputs).
+        lower=math.log(count_abort)/LOGPHI
+        assert lower>=math.log(3*2**cap)/LOGPHI
+    # The original high-count type controls worst-case Golden code rate.
+    native_slope=math.log(72441-M_0)/LOGPHI
+    close(native_slope,22.50713277986835,1e-10)
+    return {'cap_20million': {'missing_expected_trials':tail20,
+                              'report_derivative_of_mean_trials':d20},
+            'cap_60million': {'missing_expected_trials':tail60,
+                              'report_derivative_of_mean_trials':d60},
+            'native_fine_abort_rank_K1':3467955504,
+            'native_worstcase_Golden_cost_slope':native_slope}
+
 def main():
     close(P+P*P,1,1e-14)
     controls=check_controls()
     check_direct_stopped_enumeration()
     check_fisher_direct()
     check_site_jet()
-    print(json.dumps({'status':'SCOPED_PASS','test_groups':4,'native':controls,
+    cap_rank=check_finite_cap_rank_and_source()
+    print(json.dumps({'status':'SCOPED_PASS','test_groups':5,'native':controls,
+          'finite_cap_and_archive_rank':cap_rank,
           'physical_selection':'UNDEFINED','Book03_Info':'UNDEFINED',
           'GR_closed':False,'raw216_closed':False},sort_keys=True,indent=2))
 
