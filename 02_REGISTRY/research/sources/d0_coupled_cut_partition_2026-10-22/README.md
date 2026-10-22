@@ -161,7 +161,7 @@ not a new primitive-admission proof or original all42 replay.
 
 The direct matrix and pulled-back sources agree within `5e-16` in the
 reported fixtures. Freezing the moving input changes one source's sign.
-The independent Hessian difference is below `2.1e-12`. A high-temperature
+The independent Hessian difference is below `2.1e-12`. A large-beta
 positive-probability control reverses the partition order, preventing an
 unjustified claim for all beta. The universal bounds and all42 composition
 are analytical proofs, not deductions from these finite tests.
