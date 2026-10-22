@@ -235,3 +235,148 @@ In particular, the origin of an earlier full native HJR failure can now be formu
 **Status:** \`original_full128_coherent_ref_archive_information_invariant=true\`, \`original_128_one_round_faithful_product_rank_obstructed=true\` (stated no-extra-work interface), \`joint_reference_Fredholm_solvability_exact=true\`, \`terminal_CQ_uniform_RIGHT_independent_Euler=true\` (conditional selected terminal observer), \`finite_original_prep_full_archive_price_selected=false\`, \`Book03_selected=false\`, \`GR_closed=false\`.
 
 **Reproduction:** \`sources/d0_full128_oldright_archive_fredholm_2026-10-22/check_oldright_archive_fredholm.mjs\` (413 assertions, no third-party libraries). Native original owner input \`sources/d0_book_uniform_source_2026-10-21/check_uniform_book_source.py\` pinned blob \`ee8de4635d24c668949ac9a0186616ab7d59f2ed\`; native stationary proof \`sources/d0_native_preparation_closure_2026-10-21/PROOF.md\`.
+
+
+## 7. NEW ORIGINAL GOLDEN ALL-FINITE theorem: \(p^3\) is a sharp memory non-erasure constant
+
+The preceding archive-rank bound excludes a **single** 128-outcome stage when the hypothetical product has full rank. A stronger theorem uses the ORIGINAL Julia/Golden decomposition itself, previously proved in \`d0_native_preparation_closure-2026-10-21/PROOF.md\` equation (2):
+
+\[
+ \boxed{\Phi=p\,{\rm Id}+p^2\mathcal R,\quad
+ p=\varphi^{-1},\ p+p^2=1,\quad
+ \mathcal R\ {\rm CPTP}.}                              \tag{19}
+\]
+
+This is the **ACTUAL full128 DATA channel**, not the abstract noncommuting two-Kraus test of §5. Crucially the untouched Golden relations imply \(p-p^2=p^3=\varphi^{-3}>0\). For EVERY Hermitian DATA operator \(X\), contractivity of CPTP maps in trace norm and the reverse triangle inequality give
+
+\[
+ \begin{split}
+ \|\Phi(X)\|_1
+ &=\|pX+p^2\mathcal R(X)\|_1\\
+ &\ge p\|X\|_1-p^2\|\mathcal R(X)\|_1\\
+ &\ge(p-p^2)\|X\|_1=p^3\|X\|_1 .
+ \end{split}
+\]
+Iterate on the Hermitian outputs:
+\[
+ \boxed{
+ \|\Phi^L(X)\|_1\ge p^{3L}\|X\|_1
+ \quad\text{for EVERY FINITE integer }L\ge0.
+ }                                                     \tag{20}
+\]
+
+In particular \(\Phi\) is invertible as a linear map of finite Hermitian matrix spaces, and its fixed point \(\rho_*\) is unreachable EXACTLY from any \(\rho_0\ne\rho_*\) in finitely many rounds:
+
+\[
+ \boxed{
+ \|\Phi^L(\rho_0)-\rho_*\|_1
+ \ge p^{3L}\|\rho_0-\rho_*\|_1>0.
+ }                                                     \tag{21}
+\]
+
+This is a **quantitative impossibility theorem**, strictly stronger than the prior owner's honest note that no finite exact stationary preparation had been asserted. It does NOT claim that \(\rho_0=\rho_*\) cannot be independently prepared at the outset by an already proven native writer; it says iterative application of the unchanged actual channel cannot reach its regular fixed point exactly from a DIFFERENT input.
+
+The factor \(p^3\) is **sharp for the stated entire Golden-lazy CPTP class**. On a two-dimensional Hermitian direction \(X=\sigma_x\), choose the legal mathematical CPTP recycling \(\mathcal R(X)=\sigma_z X\sigma_z=-X\). Then \(\Phi(X)=p^3X\) and equality in (20) holds at every round. Arbitrarily close primitive/unique-stationary channels arise by adding an arbitrarily small depolarizing component to this recycle. This is a SHARPNESS control, **not** a claim that the original physical full128 recycling equals Pauli conjugation.
+
+On the ORIGINAL positive CAR16 proper-boost fixture, the earlier quadratic polynomial gives
+\[
+ \|\tfrac1{16}I_{16}-\rho_*\|_1
+ =\frac{\epsilon}{\mu}
+ =\sqrt{1-h/\mu}\simeq0.040121263486.
+\]
+Starting with the genuinely different maximally mixed DATA16 input,
+\[
+ \boxed{
+ \bigl\|\Phi^L(I_{16}/16)-\rho_*\bigr\|_1
+ \ge\varphi^{-3L}\frac{\epsilon}{\mu}>0,
+ }                                                     \tag{22}
+\]
+and the first genuine positive Golden step has **error strictly larger than \(0.00947\)** on this exact old algebraic fixture, independently of any all-output brute force. This is the same original CAR channel, not a new heat or Gibbs state.
+
+### All finite \(\mathrm{DATA}_{128}\otimes\mathrm{oldRIGHT}_{128}\) Choi correlations are STRICTLY positive
+
+Take again the actual original pure Choi input \(|\Omega_d\rangle\), \(d=128\), and the complete \(\Phi^L\) channel; let
+\(\rho_{DR,L}=(\Phi^L\otimes{\rm id})(|\Omega_d\rangle\langle\Omega_d|)\), \(\rho_{D,L}=\Phi^L(I_d/d)\), \(\rho_R=I_R/d\).
+The product comparison state \(\rho_{D,L}\otimes I_R/d\) is the normalized Choi matrix of the **replacement** channel
+\(\mathcal P_L(X)=\operatorname{Tr}X\,\rho_{D,L}\).
+
+For a trace-zero Hermitian \(X=(|i\rangle\langle i|-|j\rangle\langle j|)/2\), \(\|X\|_1=1\), \(\|X\|_\infty=1/2\), the replacement vanishes. The normalized Choi evaluation identity and trace Hölder inequality imply
+
+\[
+ \|\Phi^L(X)\|_1
+ \le\frac d2\,\|\rho_{DR,L}-\rho_{D,L}\otimes I_R/d\|_1 .
+\]
+Combining with (20),
+
+\[
+ \boxed{
+ \|\rho_{DR,L}-\rho_{D,L}\otimes I_R/d\|_1
+ \ge\frac{2p^{3L}}{d}>0
+ \qquad \text{EVERY finite }L.
+ }                                                     \tag{23}
+\]
+
+Quantum Pinsker (natural log) then supplies an **all-horizon actual original full128 positive information lower bound**
+
+\[
+ \boxed{
+ I(R:D)_{\rho_{DR,L}}
+ =D_{\rm rel}(\rho_{DR,L}\Vert \rho_{D,L}\otimes I_R/d)
+ \ge \tfrac12\|\rho_{DR,L}-\rho_{D,L}\otimes I_R/d\|_1^2
+ \ge\frac{2p^{6L}}{d^2}>0.
+ }                                                     \tag{24}
+\]
+
+For the literal d=128:
+\(I(R:D)_L\ge2\varphi^{-6L}/128^2\).
+Therefore **even when the DATA marginal was initially or has become stationary**, an ORIGINAL finite Golden channel acting on a full Choi reference cannot erase its quantum correlations with oldRIGHT COMPLETELY. By (2), the coherent archive's conditional information can approach, but cannot exactly attain, all \(2\ln128\) nats at any finite L of this uncompensated original instrument. This statement is independent of the native gap, eigenbasis and full geometric 42-field chart.
+
+### Strong one-round native \(0.752\)-nat wall from the ACTUAL 128 fine outcomes
+
+The general lower (24) is conservative. On the ORIGINAL **single-round 128-Kraus** instrument there are at most 128 orthogonal coherent outcome slots, so the Choi output \(\rho_{DR,1}\) has rank at most \(d=128\). Its DATA marginal obeys the **same actual Golden-lazy channel** positivity
+
+\[
+ \frac p d I_D\preceq\rho_{D,1}
+ =\frac p dI_D+p^2\mathcal R(I_D/d)
+ \preceq\Bigl(\frac p d+p^2\Bigr)I_D.
+\]
+
+Let \(P_{\rm supp}\) project onto the rank≤d support of the actual \(\rho_{DR,1}\), and \(\tau=\rho_{D,1}\otimes I_R/d\). The two-outcome measurement \(P_{\rm supp},I-P_{\rm supp}\) gives
+
+\[
+ \frac12\|\rho_{DR,1}-\tau\|_1
+ \ge1-\operatorname{Tr}(P_{\rm supp}\tau)
+ \ge1-\frac{d\lambda_{\max}(\rho_{D,1})}{d}
+ \ge1-p^2-\frac pd .
+\]
+Hence the **actual original full128 first-round** quantitative floor is
+
+\[
+ \boxed{
+ \begin{aligned}
+ \|\rho_{DR,1}-\rho_{D,1}\otimes I_R/128\|_1
+ &\ge2(1-p^2-p/128)>1.2264,\\
+ I(R:D)_1
+ &\ge2(1-p^2-p/128)^2
+ >0.752\ \text{nats}.
+ \end{aligned}
+ }                                                     \tag{25}
+\]
+
+This is an exactly proved *same-genuine-channel + initial Choi* mutual information lower bound. It uses ONLY (i) the old true 128 Kraus operators, (ii) the old exact Golden laziness identity (19), (iii) actual Bell initial oldRIGHT128 and (iv) trace-distance/Pinsker elementary inequalities. It does NOT borrow a fitted state, projector, cost or information law, and it does NOT require a 128×128 dense diagonalization. Its scope is the mathematical original complete full128 instrument, with all those Kraus outcomes; adding a physically distinct hidden factory/outcome instrument changes the **rank-at-most-128** antecedent and has to be charged/rechecked. The all-horizon bound (23) does not use that Kraus-rank assumption.
+
+### REQUIRED Golden preparation depth for any proposed spatial source accuracy
+
+The forced factor \(p^{3L}\) supplies an immediate **lower** bound on how long a true nonstationary preparation must run if an analysis demands an error \(C h^k\) in trace norm, \(h=1/L_{\rm mesh}\). Whenever \(\delta_0=\|\rho_0-\rho_*\|_1>0\) remains uniformly bounded below on a specified source chart, (21) implies
+
+\[
+ \boxed{
+ L_{\rm rounds}(h)
+ \ge\frac{k\ln(1/h)+\ln(\delta_0/C)}
+          {3\ln\varphi}.
+ }                                                     \tag{26}
+\]
+
+Thus exact error \(0\) requires unbounded rounds, and \(O(h^3)\) source-grade preparation from a nonstationary original CAR16 positive chart requires at least **logarithmically growing** paid native Golden clock depth as \(h\to0\). This is a lower resource constraint, not an upper mixing rate or proof of sufficient source regularity. The old \(39/40\) recycling bound alone did not imply this exact **finite-horizon lower** wall; the original native Golden laziness does. The assumption \(\delta_0\ge\delta>0\) must NOT be asserted across arbitrary geometry refinements without its original operator/writer proof.
+
+**New narrow control:** \`sources/d0_full128_oldright_archive_fredholm_2026-10-22/check_golden_all_finite_memory_barrier.mjs\` verifies the original exact Golden p relations, native CAR16 pointwise lower bound, true first-round 128 Choi rank/laziness Info floor, sharpness on CPTP unitary recycling, and a separate nonuniform CPTP Golden-lazy replacer fixture. **593 PASS checks.** All original full128 physical matrix and old h4 42-field suites are consumed at their previous publication, not spuriously rerun. \`GR_closed=false\`.
