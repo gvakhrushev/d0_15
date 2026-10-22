@@ -259,6 +259,31 @@ This avoids the former excessive demand that an unknown mathematical Shannon fun
 
 **Physical meaning:** Book01 supplies optimal native description comparisons, Book06 supplies the uniquely constrained entropy-forgetting coupling of the SAME site/report record, and Book03 still must supply the *actual valuation and future/cut selection* linking the resulting source to its finite dynamical action. This is an exact three-book scientific interface, not an imported Einstein term.
 
+
+## 4d. Sharp REVERSE NECESSITY: no scalar three-atom action can see ALL off-null source directions
+
+The source defect is not special to the chosen Golden/H \(-\log\det\), a numerical root, or the code-reference convention. At a fixed positive READY/site law \(a>0,w_i,w_j>0\) with two site reports \(r_i\ne r_j\), assume their first variations can actually be varied independently on the admitted native effect chart. Choose the explicit tangent
+\[
+Dr_i=w_j t,\quad Dr_j=-w_i t,\quad
+Dr_k=0\ (k\ne i,j),\qquad t\ne0.
+\]
+Then
+\[
+\boxed{D\bar r=w_iDr_i+w_jDr_j=0.}\tag{23}
+\]
+Consequently **EVERY differentiable scalar action \(F(q_U,q_0,q_1)\) of ONLY the three genuine coarse future probabilities has ZERO first source in this direction**, no matter how that function is chosen.
+
+Yet the original whole **native 0/10 full measured-code** price has
+\[
+\boxed{
+D S_{\rm fine}
+= a\,w_iw_j\,t\,[h'_\varphi(r_j)-h'_\varphi(r_i)]\ne0,
+}\tag{24}
+\]
+because the linear true code-cost derivatives cancel in the same weighted zero-mean direction, and \(h_\varphi'\) is STRICTLY decreasing for \(0<r<1\). The actual archived mutual-information source is EXACTLY (24). This proves a source-kernel no-go for **every** coarse-three-probability-only variational scalar on any open native chart containing two independently source-variable unequal spatial reports. It does NOT require assuming the specific \(\varphi\) Book feedback or a special field-metric action.
+
+The missing information has one exact existing registered type: the original retained site×terminal correlation, quantified by (8)/(18). Under Book06's actual injective visible/archive conservation it may not be erased if the site×bit test remains admitted. **This is the precise conditional reverse-necessity answer:** with genuinely independently variable local report sources, an active future-only description of dimension three cannot carry the full spatial/matter dynamics; some fine retained future-observable correlation (or equivalent source-sufficient memory) is mathematically unavoidable. An actual physical Book03 scalar can still derive that source from its native ordered memory, heat or pathwise Info instead of literal Shannon MI; those different realizations require a same-execution proof. The independent off-null variations have to be established on the original admitted field-writer image, not assumed merely because the mathematical \(r_z\) are coordinates.
+
 ## 5. Decision for the existing GR parent
 
 This composition DISCHARGES one mathematical conflict: the three-atom future-controller signal can remain order one, the entire 72,441-label native information remains retained and the exact off-null entropy source missing from the global mean is reproduced by measured conditional archive MI. There is NO new gravitational field, action, coupling, negative-cost book counterterm, or arbitrary factor; all identities follow from the real source probabilities, native Golden prefix, true site counts and already-owned h=1/4 CQ root.
