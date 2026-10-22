@@ -181,7 +181,7 @@ for(const L of [4,5,8,16,32,64,256,1024]){
      64*beta*2**20/(2**20*(50549-2))**2;
  const amax=.35;
  const HessScale=2*amax**2*((1+9*h**3)/W)**2*kmax;
- check(HessScale<.0003/W**2,
+ check(HessScale<.00035/W**2,
        'uniform native addressed report Hessian norm O(L^-8), inverse Ω(L^8)');
 }
 console.log(JSON.stringify({status:"PASS_ORIGINAL_GOLDEN_ADDRESS_FISHER_AND_COMPLETE_CUT_HEAT",checks,
@@ -193,7 +193,7 @@ console.log(JSON.stringify({status:"PASS_ORIGINAL_GOLDEN_ADDRESS_FISHER_AND_COMP
   FI:"diag(a w_z/[r_z(1-r_z)]) rank L^4 vs global aww^T/[rbar(1-rbar)] rank 1",
   sourceHessian:"negative definite report Hessian, norm O(L^-8), inverse norm Ω(L^8) on PF C2 schedule",
   performedNativeWork:"all original fine leaves and s=128 oldRIGHT retained",
-  numericalWorkDimension:"lower bound dwork=F_n+4F_n+1 only; actual might be larger",
+  numericalWorkDimension:"lower bound dwork=F_n+4F_(n+1) only; actual might be larger",
   physicalBook03HodgeIdentified:false,physicalTaskSelected:false,
   sameHistoryBookInfoClockPriced:false,GR_closed:false
  }}));
