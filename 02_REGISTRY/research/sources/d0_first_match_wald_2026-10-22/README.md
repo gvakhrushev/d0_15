@@ -68,3 +68,26 @@ The three-status READY laws in the older iid application and the original
 full128 sequential alphabet are different constructions. Their trial-count
 factors, probabilities and field-source gains cannot be interchanged by
 identifying the names of their outcomes.
+
+## Committed checkpoint validation
+
+`CHECKPOINT_VALIDATION.json` pins the integrated mathematical snapshot and
+records the five new entrypoints, their source/receipt hashes, normal versus
+optimized output agreement, and the structural guards. A separate detached
+worktree reproduced all five committed receipts byte for byte and remained
+unmodified. This check consumes the unchanged native constructor and older
+preparation evidence; it does not replay their whole suites or promote
+physical GR acceptance. The historical evidence missing from the initial
+shallow clone was fetched at its published pins before the agent-protocol
+guard passed; no expected evidence or validator was changed.
+
+The pinned published snapshot also preserves the concurrent
+`A4D_EXPLICIT_K100M_FINITE_RENEWAL_HJR_FULL42_ROOT_2026_10_22.md`:
+an exact locally unique 42-field root for the explicitly configured finite
+`K=100000000` H+J+R action in the existing radius-`1e-30` cube. Its prior
+interval certificate and new analytic bounds are consumed at their stated
+scope; the five replays above do not rerun that separate proof. The required
+native Book03 operator identification, independent preparation/controller/
+clock equations and uniform physical refinement remain open. In particular,
+stationary correlated occupation does not supply the iid harmonic identity
+used by that renewal construction.

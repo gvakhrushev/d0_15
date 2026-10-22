@@ -1,0 +1,100 @@
+{
+  "GR_closed": false,
+  "author_commit": "7b5580cca8a3a66267e39ab4e4a10b3369d70b48",
+  "checks": [
+    {
+      "committed_receipt_byte_identical": true,
+      "executable": "python3",
+      "name": "partition",
+      "receipt": "02_REGISTRY/research/sources/d0_original_golden_ready_coherent_book_2026-10-22/RESULT_PARTITION_PRICE.json",
+      "receipt_sha256": "5b77b54258ea93ece89f6bb6224e753c5d81abead1a93d424bd6895e41087f75",
+      "source": "02_REGISTRY/research/sources/d0_original_golden_ready_coherent_book_2026-10-22/check_partition_price.py",
+      "source_sha256": "395eb2ea76b38ea9d979210b934c5a7cae059c413f6982d1be05478f758cf44f",
+      "status": "PASS"
+    },
+    {
+      "committed_receipt_byte_identical": true,
+      "executable": "python3",
+      "name": "comparison",
+      "receipt": "02_REGISTRY/research/sources/d0_first_match_wald_2026-10-22/COMPARISON_LEDGER_RESULT.json",
+      "receipt_sha256": "3658724eaa374298752dcc1dd4c4116b831c681cffe5c775153ddae6d8abc137",
+      "source": "02_REGISTRY/research/sources/d0_first_match_wald_2026-10-22/check_comparison_ledger.py",
+      "source_sha256": "b91a021d707f3a3dadfd2eb0c640a361cdd5449ff4a979c2fe4739d431ddb2f9",
+      "status": "PASS"
+    },
+    {
+      "committed_receipt_byte_identical": true,
+      "executable": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "name": "sequential",
+      "receipt": "02_REGISTRY/research/sources/d0_first_match_wald_2026-10-22/SEQUENTIAL_RETURN_RESULT.json",
+      "receipt_sha256": "3c5f051ff842b6eae896a1053b9112d6eb100cb7c1a43a3e639e2b8eebe7a69c",
+      "source": "02_REGISTRY/research/sources/d0_first_match_wald_2026-10-22/check_sequential_native_return.py",
+      "source_sha256": "0c72bd841cdf96cbf19923c8f9ee3d74367065fe085fcecdeb2bf983376ccf9f",
+      "status": "PASS"
+    },
+    {
+      "committed_receipt_byte_identical": true,
+      "executable": "python3",
+      "name": "stationary",
+      "receipt": "02_REGISTRY/research/sources/d0_first_match_wald_2026-10-22/STATIONARY_OCCUPATION_RESULT.json",
+      "receipt_sha256": "bba79e8aebc3ef5008f8abb1fe1051e4d4ad79754b633bc9739799fd97f75d24",
+      "source": "02_REGISTRY/research/sources/d0_first_match_wald_2026-10-22/check_stationary_occupation.py",
+      "source_sha256": "aade7974cb2acb2a691a24545b6954fc5a7bd35c636d22b350ed7c86e5719b6f",
+      "status": "PASS"
+    },
+    {
+      "committed_receipt_byte_identical": true,
+      "executable": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "name": "support",
+      "receipt": "02_REGISTRY/research/sources/d0_first_match_wald_2026-10-22/NATIVE_LABEL_SUPPORT_RESULT.json",
+      "receipt_sha256": "8a8c7181d6f7209163d3fbb59ae740c901844a3e6f172f3250ea055700e09c8f",
+      "source": "02_REGISTRY/research/sources/d0_first_match_wald_2026-10-22/check_native_label_support.py",
+      "source_sha256": "09222c2739005e9824a1c4e51c811adbf8858d46974ba3b9ba57cd412d5f92c9",
+      "status": "PASS"
+    }
+  ],
+  "concurrent_input_commit": "1659b7f8160b68be743692049c7ce52d97d89cfa",
+  "history_intake": "Agent-protocol validation first detected missing historical evidence in the shallow clone. The 21 published pinned evidence commits were fetched without changing evidence or validators; the same validation then passed.",
+  "isolated_worktree_unmodified": true,
+  "mathematical_review": {
+    "outstanding_mathematical_errors_reported": 0,
+    "resolved_items": [
+      "clock-only output-compression control",
+      "grouped factory outcomes preserve the original stopping predicate",
+      "fixed marker in the source derivative",
+      "clean-corner Gram distinguished from full Gram",
+      "DATA marginal distinguished from retained joint DATA/oldRIGHT state",
+      "stdout-only new checkers"
+    ],
+    "scope": "bounded read-only review of the two appendices and three sequential source notes; not a physical admission or whole-project acceptance"
+  },
+  "no_acceptance_promotion": true,
+  "normal_and_optimized_author_outputs_byte_identical": true,
+  "published_input_fetched_and_verified": true,
+  "python_exact_checks": "3.12.14",
+  "scope": "Five new entrypoints only; exact, floating and physical-admission scopes remain those of the source notes.",
+  "structural_checks": [
+    {
+      "command": "python3 tools/validate_repo.py",
+      "exit_code": 0,
+      "output": "claims=889 assumptions=31 aliases=58 formal_support=183 lean_closure=918\nPASS warnings=0"
+    },
+    {
+      "command": "python3 tools/validate_work.py",
+      "exit_code": 0,
+      "output": "PASS work_validation: active work plane clean and enforced"
+    },
+    {
+      "command": "python3 tools/validate_agent_protocol.py",
+      "exit_code": 0,
+      "output": "PASS agent_protocol: cold-start task metadata enforced"
+    },
+    {
+      "command": "git diff --check",
+      "exit_code": 0,
+      "output": ""
+    }
+  ],
+  "validated_commit": "98d41e47982876bedc633aadc9a63a6b1028ab94",
+  "validated_tree_sha": "8087529242a831d8ddaef3ae8d44f367013c5e1d"
+}
