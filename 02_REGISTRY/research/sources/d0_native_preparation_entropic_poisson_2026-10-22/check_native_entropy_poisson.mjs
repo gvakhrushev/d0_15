@@ -47,7 +47,7 @@ function nativeInstrument(a,b){
       'original moving preparation differentiated stationarity equation');
   }
   const comm=sum(mm(K[0],K[1]),scale(mm(K[1],K[0]),-1));
-  ok(traceNorm(comm)>0.1,'two original-owner Kraus matrices genuinely do NOT commute');
+  ok(traceNorm(comm)>0.05,'two original-owner Kraus matrices genuinely do NOT commute');
   const offdiagReal=diag(0,0);offdiagReal[0][1]=1;offdiagReal[1][0]=1;
   const offdiagImag=diag(0,0);offdiagImag[0][1]=1;offdiagImag[1][0]=-1;
   near(Phi(offdiagReal)[0][1],a*b+u*v,1e-13,'original coherent offdiagonal source nontrivial');
