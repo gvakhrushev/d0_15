@@ -140,3 +140,42 @@ The independently measured-outward bare J2 first source on original scalar1 is *
 - Scoped original local 95-check exact SymPy/interval control: seven full marked Kraus outcomes, complete F-moment sequence, exact Golden gate identities, genuine 20-bit φ-fair work and capped-source control, h0 original two-cell sign. Original 1764-entry h0 certificate and full128/Lean are CONSUMED, not rerun.
 - New independent 33-check exact mathematical complete F/R source-neutrality checker includes full capped transcript trees, exact Golden Kraft normalization, genuine variable-clock C1/C2 cancellation, original C20=117.0820 resource and the strict prior raw-work sign. The script uses exact sympy plus a bounded float entropy equality and runs ordinary/-O identically.
 - **Honest scope:** \`golden_polar_free_j2_mathematical_stop=true\`; \`golden_coin_adaptive_classical_cost_shannon_neutral=true\`; \`compulsory_Book03_vertex_Info_equals_Shannon=unknown\`; \`controlled_moving_native_gate_admitted=false\`; \`common_writer_oldRIGHT_clock_thermal_closed=false\`; \`GR_closed=false\`; \`raw216_closed=false\`.
+
+
+## E. Decisive comparison with the current TRUE native full128 stopped-PORT theorem: its nonzero p³ source is NOT a counterexample to C
+
+The simultaneous owner [A4D_NATIVE_STOPPING_CONTROLLER_AND_QUANTUM_SOURCE_REDUCTION_2026_10_22.md](A4D_NATIVE_STOPPING_CONTROLLER_AND_QUANTUM_SOURCE_REDUCTION_2026_10_22.md) is an actual original CAR16/full128 **DATA** instrument, not an independent fair-bit preparation. For every original SELECT row its two truly recorded PORT outcomes have original Born probabilities and fixed Golden tariffs
+
+\[
+q_{\rm PORT}=(p^2,p),\qquad c=(1,2),\qquad
+\mu_{\rm Kraft}=(p,p^2).
+\]
+
+Unlike the pure-Golden φ coin in (8), **the native data PORT law reverses the two Golden probabilities relative to those fixed tariff labels**. Its exact measured price-information excess is
+
+\[
+\boxed{
+D_\varphi(q_{\rm PORT}\Vert\mu_{\rm Kraft})
+=p^2\log_\varphi p+p\log_\varphi(1/p)
+=p-p^2=p^3>0.
+}\tag{E1}
+\]
+
+This is the origin of the **nonzero** original data-PORT source \(D_y[p^3\,\mathbb E_y N_{\rm pair}]\), even with an actual field-INDEPENDENT per-visited-pair excess; the visit/stop count itself moves under the true physical input. It does NOT contradict pure Golden **side-coin** neutrality because the side coin has \(q_{\rm coin}=(p,p^2)=\mu_{\rm Kraft}\), not the original SELECT data-port distribution.
+
+Even more important: on the actual PORT-sensitive first-return stopping experiment one must retain the new **stopping-language** information correction already proved in that owner. Its exact same-full128-record source/price identity is
+
+\[
+\boxed{
+P_{{\rm port},\mathcal T}
+=\mathbb E[N_{\rm blank}+2N_{\rm orphan}+p^3N_{\rm pair}]
+-\frac{S(\Gamma_{\mathcal T})-S(\Omega)}{\ln\varphi}
+-\frac{\mathbb E\ln a_Z}{\ln\varphi},
+}\tag{E2}
+\]
+
+where \(a_Z\) is the true product/marginal likelihood of the merged stopping word, NOT a fitted Book Info coefficient. \(-\mathbb E\ln a_Z/\ln\varphi\) is nonnegative but its field source can have either sign. The **independently proved** original continuous moving-preparation proper-boost first jet of p³ Npair is nonzero on its Fourier/full128 instance, whereas the separate original h0 N1 CQ configured root has a DIFFERENT native preparation/effect. Neither its first jet nor the other full128 Info/clock source may be transplanted onto h0 without a proved common-initial physical writer.
+
+**Resulting strongest type-correct measured-info source decomposition:** all purely φ-Kraft-sourced fully archived control bits are exactly neutral as in (8)-(10); ORIGINAL port LABELS can contribute their **fixed, non-fitted p³ charge per actual visited pair**; the actual PORT-sensitive stopping tree contributes its original finite \(a_Z\) compression correction; and the genuinely conditional CAR/oldRIGHT quantum block and actual heat/Book cut supply independently sourced terms. None is permitted to cancel another by postulating equal mathematical labels or ignoring clock-cap/hidden work. This is a source-classification theorem on two different typed original instruments, NOT identification of the h0 N1 and full128 physical executions.
+
+**Scope update:** the obstacle to compulsion is no longer "we cannot implement dyadic ζ" or "all native Golden preparation costs necessarily spoil the exact 42 root". ζ has an explicit true-code classical fair construction and its complete measured information contribution is exactly neutral; a no-polar stopped J2 unravelling exists. The genuine remaining barrier is the admission and **common type** of the source-bearing original DATA/Book operator and its full quantum/heat/clock/Info valuation. GR_closed=false.
