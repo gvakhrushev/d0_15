@@ -163,6 +163,53 @@ Thus the strict *native, non-iid* correction to the two-independent-port-price s
 \]
 It is a small but EXACT nonzero source. It cannot be dismissed as a normalized-score Ward zero, because it is mutual information of two actually retained sequential ports. It is NOT the whole FULL128 fine-pointer/CQ entropy, nor the compulsory Book03 vertex Info or its Hodge operator; the other 126 fine categories, clock, work, preparation and oldRIGHT information remain in the real tape and its full valuation.
 
+## 4a. Rank-two NATIVE two-parameter Golden port atlas: one-port-invisible source direction
+
+The previous result is stronger on the ORIGINAL explicit two-real-parameter Kraus input chart \((r,\nu)\), not just along a scalar boost. The original Fourier/role-1 program constructor accepts the genuine amplitude \(\nu\) of the native four CAR words as well as the proper boost \(r=\tanh(\theta/2)\). Its Walsh row \(A\) at coefficient port zero contains only the original letters \(x,-\mathrm{base},x^\dagger,-\mathrm{base}^\dagger\), each **LINEAR** in \(\nu\); none of the square-root defect rows enters this row. Therefore, for fixed original phases, \(\Delta=A^\dagger A\) scales EXACTLY like \(\nu^2\). On the same bounded positive Julia chart,
+\[
+\boxed{\partial_\nu h=\frac{2h}{\nu},\quad
+\partial_\nu\mu=\frac{2\mu}{\nu},
+\qquad q=c h,\quad q_{11}=c^2h\mu.}\tag{12}
+\]
+This is a property of the ORIGINAL full128 native operator family; it does not assert the two parameters are freely writable or independently stationary in the full physical Book03/42-field programme.
+
+Using the exact rational first derivatives (5), their determinant at \(r=1/9,\nu=3/5\) is STRICTLY NONZERO:
+\[
+\boxed{\begin{aligned}
+B_*&=h\,\partial_r\mu-\mu\,\partial_rh
+=\frac{6042018339}{1030291456000000}>0,\\
+\det\frac{\partial(h,\mu)}{\partial(r,\nu)}
+&=-\frac2\nu B_*
+=-\frac{2014006113}{103029145600000}\ne0,\\
+\det\frac{\partial(q,q_{11})}{\partial(r,\nu)}
+&=-\frac{2c^3h}{\nu}B_*\ne0.
+\end{aligned}}\tag{13}
+\]
+The middle determinant sign corresponds to row ordering \((h,\mu)\), column ordering \((r,\nu)\); using \((\nu,r)\) reverses it. The proof is direct differentiation of (12), with NO fitted determinant or extraneous native detector. In a real strictly positive two-dimensional input neighborhood, the inverse-function theorem proves that **the one-port probability and the genuine two-port joint-11 probability form local independent analytical coordinates**. A single terminal Golden-port probability cannot carry the whole two-parameter sequential source.
+
+There is an explicit exact tangent that makes the one-port limitation falsifiable. At the fixture define
+\[
+\boxed{
+v=\partial_r-\frac{\nu\,\partial_rh}{2h}\partial_\nu
+=\partial_r+0.0440855159212652\dots\,\partial_\nu.
+}\tag{14}
+\]
+The coefficient is not chosen by Einstein fitting: it is the unique tangent to a constant TRUE one-port Born probability level set \(q=c h\). It obeys
+\[
+\boxed{\begin{aligned}
+D_vq&=0,\\
+D_vq_{11}=D_v\delta
+ &=c^2B_*>0,\\
+D_v\mathcal I_2
+ &=\ln(AC/B^2)\,c^2 B_*>0.
+\end{aligned}}\tag{15}
+\]
+The last \(A,B,C\) are the **positive two-port probabilities** from §4, not Kraus matrices. Numerically the same original full128 test gives \(D_vq_{11}=5.2289691787\dots\times10^{-6}\), and \(D_v\mathcal I_2=8.6479477617\dots\times10^{-9}\) nats per native tangent unit. Their strict signs follow from exact rational \(B_*\) and \(AC-B^2=\delta>0\).
+
+**Strong scoped consequence.** Even on the same REAL original CAR16/full128 family, all one-step port probabilities and their first source can be invariant along an admitted mathematical Kraus direction while TWO complete chronological positive outcomes and their memory-entropy source change strictly. This rules out replacing a sequential physical Book Info/clock source by a function only of the terminal ONE-PORT marginal whenever this native two-parameter tangent belongs to the physically admissible image. It remains to prove the actual 42-field and initial-writer pullback of this direction, and to establish what Book03's compulsory active algebra sees. This is an operational rank-two/sufficiency obstruction, **not** GR selection or a second Einstein source.
+
+Independent native matrix checks at \(r=1/9,\nu=3/5\) reproduce the original \(2\times2\) observable Jacobian determinant \(-2.2704657992\dots\times10^{-7}\); a true small displacement along (14) gives numerical \(D_vq\simeq0\) and \(D_vq_{11}\simeq5.2289695\times10^{-6}\). The exact rational/calculus proof is independent of those finite differences.
+
 ## 5. Architectural consequence: spectral Gibbs obstruction is now visible in a real cheap native future record
 
 The previously owned original CAR16 calculation proves \(\rho_*=\Delta^{-1}/Z\ne e^{-\beta_0\Delta}/\operatorname{Tr}e^{-\beta_0\Delta}\) at its actual Golden \(\beta_0=2p^2\); its strict trace-norm separation exceeds 0.0388. The current **same-input** theorem supplies a second, operational witness of the same underlying non-scalar native \(\Delta\): the two real consecutive Golden port bits have \(\delta>0\) iff that \(\Delta\) is nonscalar, and the field derivative of their mutual information is strictly positive at the original algebraic boost.
