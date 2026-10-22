@@ -7,6 +7,20 @@ Default base: `main`
 This file is the cold-start contract for any new AI agent, researcher, worker, or
 automation process entering the repository without prior chat context.
 
+**Current scientific focus (22 October):** read and apply
+[source composition first: backward search and forward proof](02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md#source-composition-first-backward-search-and-forward-proof).
+Start from the owned nonlinear GR solution; identify the one physical
+operation, full-source term or transport that makes it applicable to an actual
+admitted execution. Prove that step from D0, retaining the same preparation,
+future tests, cut, clock/work and independent internal equations. Compare full
+physical covectors after a proved common map, with actual gain and norm;
+source equivalence or a controlled remainder can suffice without unique
+microscopic actions. Reuse exact coupled equations, stationary reduction and
+invariant classification at their stated scope. New research must consume an
+existing result or remove a named premise; no renewed geometry/certificate
+campaign without a changed mathematical input. Conditional parallel work and
+the existing scientific owners remain available.
+
 ## PRIMARY scientific route for every GR agent — exact positive nonvacuum recovery
 
 Read the [primary nonlinear GR proof case](02_REGISTRY/research/D0_GR_PRIMARY_POSITIVE_CASE.md)
@@ -50,11 +64,13 @@ provides scale-weight and off-shell Ward automatically via Noether.
 condensed/profinite naturality alone does not select the native heat
 source or physical frame/clock, and bare HJR fails the requisite
 Golden source homogeneity on the original flat Brinkmann carrier.
-Do not claim full D0→GR until the actual selected full
-Book03/oldRIGHT/CAR/controller/clock/Info/work execution supplies
-physical metric descent, smoothness, open-Diff coverage and the
-single Golden weight law. Preserve the prior J² Lovelock route as a
-legitimate independent fallback.
+Use this Golden universality route only when the actual selected full
+Book03/oldRIGHT/CAR/controller/clock/Info/work execution supplies its
+physical metric descent, smoothness, open-Diff coverage and Golden weight
+law. Preserve the prior J² Lovelock route with its own hypotheses as an
+independent alternative. Neither sufficient route adds a universal prerequisite
+to the first faithful curved realization. Full GR still requires its declared
+physical realization, dynamics and refinement obligations.
 
 **Default work:** keep this exact solution carrier and reproduce its
 actual geometry/readout/source maps; establish the ONE missing
@@ -103,10 +119,12 @@ Keep observation, ambient geometric differentiation and admitted field
 writing distinct. Preserve the actual error norm and full ambient covector;
 neutrality only along the primary family is not whole-source neutrality.
 
-The next application is the actual joint solder/pairing/link step and its
-full price, or an independently derived native stationary/constraint law,
-together with the same-prefix two-ending Julia/prospective valuation test.
-The latter needs equal continuation partition weights, not only equal
+For the prospective/Julia realization route, the next application is the
+actual joint solder/pairing/link step and its full price, or an independently
+derived native stationary/constraint law, together with the same-prefix
+two-ending Julia/prospective valuation test. Other justified native source
+routes retain their own proved inputs and need not establish this experiment.
+The Julia test needs equal continuation partition weights, not only equal
 minimum continuation prices. Test the actual complete valuation against
 the displayed compiler-occupation and repeat-cost source differences.
 Do not replace those maps by a fresh geometric root search or normalize

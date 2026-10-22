@@ -26,9 +26,10 @@ new, resumed, review and offline handoffs; it does not change launch authority.
 Before the next native application, consume the
 [global result composition](../02_REGISTRY/research/A4D_GLOBAL_RESULT_COMPOSITION_2026_10_20.md):
 operational geometry, Julia source, complete compiler/clock price and
-field-writer reachability now have explicit connecting maps. Its current
-application is the joint field-and-price/variation law and same-prefix
-two-ending valuation test. Keep its actual sensitivity, absolute Book
+field-writer reachability now have explicit connecting maps. Its prospective/
+Julia application is the joint field-and-price/variation law and same-prefix
+two-ending valuation test; other native source routes use their own justified
+inputs. Keep its actual sensitivity, absolute Book
 anchor, continuation partition weights and source residuals. The global
 result-family map supplies the parent substitution for bounded work;
 this instruction creates no additional queue or scientific owner.
@@ -66,6 +67,17 @@ A completed conditional theorem is a **usable mathematical input**;
 this result is an imported research slice, not an accepted complete
 physical GR application. Continue [#334](https://github.com/gvakhrushev/d0_15/pull/334)
 for physical realization; no duplicate work item.
+
+Apply the [current backward-search/forward-proof strategy](../02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md#source-composition-first-backward-search-and-forward-proof)
+inside that owner. Before a new calculation, substitute all already applicable
+results and choose the remaining physical operation, complete-source term or
+transport needed by the existing solution. Retain the actual source gain and
+norm, independent internal equations and same-execution semantics; an exact
+source equivalence or controlled remainder may suffice. The integrator states
+what the new result actually changes in the composed argument and applies it
+before dispatching another supporting construction. Existing conditional
+parallel work, forms, validation budgets and scientific acceptance rules stay
+in force; this focus creates no extra queue or status registry.
 
 ## One integrator, parallel bounded work
 
