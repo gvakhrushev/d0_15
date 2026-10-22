@@ -72,8 +72,8 @@ for(const [g,r,a,c] of [
  }
  // Because stopping depends only three coarse categories, movement of finer
  // failure log law a or READY1 sublabel c is also transported with factor 4.
- const h=2e-6;
  for(const dim of [0,1,2,3]){
+  const h=dim===1?Math.min(2e-6,r/20):2e-6;
   const v=[g,r,a,c],plus=v.slice(),minus=v.slice();
   plus[dim]+=h;minus[dim]-=h;
   const pplus=probs(...plus),pminus=probs(...minus);
@@ -81,8 +81,16 @@ for(const [g,r,a,c] of [
   const src=(Sone(pplus)-Sone(pminus))/(2*h);
   // K infinity exact expected cost: m+1=4 even when g moves.
   const stopped=4*src;
-  const m3=4*((Sone(pplus)-Sone(pminus))/(2*h));
-  close(stopped,m3,2e-13,'full nonselected fine/ready jet including moving readiness');
+  const pplusStop=summary(pplus,4,0.19),pminusStop=summary(pminus,4,0.19);
+  const fullPlus=fullTree(pplus,4,0.19),fullMinus=fullTree(pminus,4,0.19);
+  const finiteSource=(fullPlus.S-fullMinus.S)/(2*h);
+  close(finiteSource,(pplusStop.S-pminusStop.S)/(2*h),4e-10,
+    'independent full capped physical price/source includes moving readiness');
+  const veryLongK=200000000;
+  const longStop= P0=>summary(P0,veryLongK,0.19).S;
+  const longSource=(longStop(pplus)-longStop(pminus))/(2*h);
+  close(longSource,stopped,2e-6,
+    'uncapped native fourfold full Price-minus-CQ-Info source approached by actually finite K');
   check(Number.isFinite(src),'complete source finite');
  }
  const prior=probs(g,r,a,c);
