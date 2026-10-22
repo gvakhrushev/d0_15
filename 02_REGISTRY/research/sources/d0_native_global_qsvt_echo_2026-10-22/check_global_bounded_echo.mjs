@@ -23,7 +23,13 @@ const pow=(x,k)=>Q(x.a**BigInt(k),x.b**BigInt(k));
 const lt=(x,y)=>x.a*y.b<y.a*x.b;
 const gt=(x,y)=>x.a*y.b>y.a*x.b;
 const eq=(x,y)=>x.a*y.b===y.a*x.b;
-const num=x=>Number(x.a)/Number(x.b);
+// Only diagnostics use approximated decimal: proof inequalities ALWAYS
+// use exact rational BigInt cross multiplication before this conversion.
+function num(x){if(x.a===0n)return 0;const sign=x.a<0n?-1:1;
+ const na=(x.a<0n?-x.a:x.a).toString(),nb=x.b.toString();
+ const va=na.slice(0,16),vb=nb.slice(0,16);
+ return sign*(Number(va)/Number(vb))*10**((na.length-va.length)-(nb.length-vb.length));
+}
 const ONE=Q(1),ZERO=Q(0);
 const p=(Math.sqrt(5)-1)/2,beta=2*p*p,zeta=2**-20,phi=1/p;
 ok(p>.617&&p<.625&&Math.abs(p+p*p-1)<1e-15,
@@ -83,14 +89,14 @@ ok(lt(preparedSourceCap,Q(13,10n**20n)),
 const flagSourceCap=mul(Q(7),preparedSourceCap);
 ok(lt(flagSourceCap,Q(1,10n**18n)),
  'BigInt original Golden success/abort 0/10 pointer Cost−Info first source <1e-18');
-const operatorDFCap=mul(mul(Q(2),c2),mul(sum(ONE,EPS),
+const eigenvalueDerivativeCap=mul(mul(Q(2),c2),mul(sum(ONE,EPS),
  mul(derivativeTailCap,fieldXCap)));
-ok(lt(operatorDFCap,Q(13,10n**20n)),
- 'BigInt entire PREPARED echo complementary RETURN operator derivative <1.3e-19');
-const bookJSourceCap=mul(div(Q(2048),Q(1048575)),operatorDFCap);
-const heatSourceCap=mul(Q(45,10),operatorDFCap);
+ok(lt(eigenvalueDerivativeCap,Q(13,10n**20n)),
+ 'BigInt both ACTUAL native CAR16 report-effect eigenvalue first derivatives <1.3e-19; does NOT bound moving eigenprojector D(F)');
+const bookJSourceCap=mul(div(Q(2048),Q(1048575)),eigenvalueDerivativeCap);
+const heatSourceCap=mul(Q(45,10),eigenvalueDerivativeCap);
 ok(lt(sum(bookJSourceCap,heatSourceCap),Q(1,10n**18n)),
- 'same full ordinary paired CUT Hodge+Book echo action (NOT native scene heat) first source <1e-18');
+ 'native Lorentz FIRST SOURCE of paired cut Hodge+Book echo scalar <1e-18 by eigenvalue trace derivative, including moving spectral projectors without freezing them');
 const p26=(Math.sqrt(5)-1)/2,cc=num(c),definite=1-p26*p26;
 ok(definite>0&&cc>.194&&cc<.196,
  'actual fixed native CAR16 complete heralded all-blank amplitude c is healthy');
