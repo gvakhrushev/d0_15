@@ -1,0 +1,196 @@
+{
+  "GR_closed": false,
+  "actual_refinement": [
+    {
+      "L": 4,
+      "bound_C0_p256_Lminus128": "1.641959579699907796447212977506378105427928222831289054504646160980007204347712898723245578636488785E-127",
+      "eta": "4.580293689867772294181601286737514439619891642098869663126908505542980292726575394813078803070694344E-131",
+      "n": 320
+    },
+    {
+      "L": 8,
+      "bound_C0_p256_Lminus128": "4.825285525539447903053700389683123414892079771894250122907858854789632164964496683902889311814560329E-166",
+      "eta": "1.445630898043288742798636972812357553793445561172717614585847867684717480274130041619623533116361383E-184",
+      "n": 448
+    },
+    {
+      "L": 16,
+      "bound_C0_p256_Lminus128": "1.418023969094043430548105098035855878976018398930885335214950228081583015781867700493739310172673782E-204",
+      "eta": "2.568262851599285506502638078682309598448455830941298722773317067816517965909206032925576282595142898E-211",
+      "n": 512
+    },
+    {
+      "L": 64,
+      "bound_C0_p256_Lminus128": "1.224629401226019445525382638597938004416536934385050131831950600483592226038464450010326386384489738E-281",
+      "eta": "1.440076667899283035351595106814598450350046186233326408236339051191817135292064672006728861899085456E-291",
+      "n": 704
+    },
+    {
+      "L": 1024,
+      "bound_C0_p256_Lminus128": "9.133703343789341231717823267911469055092184658155243323070922905525352531134346290124964397357296799E-436",
+      "eta": "4.527702697352078958753648372940057497677885595891292660094293955655291580987876586455612712220500165E-452",
+      "n": 1088
+    }
+  ],
+  "check_names": [
+    "original_n20_counts",
+    "conservative_harmonic_count",
+    "exact_eta_less_than_one_over_80000",
+    "coupled_uniform_value_bound",
+    "coupled_three_status_gain_bound",
+    "rational_golden_bracket",
+    "beta0_exact_upper",
+    "all_fine_probabilities_normalized",
+    "three_status_full_padding_normalized",
+    "positive_original_report",
+    "unchanged_matter_ratio",
+    "actual_n20_heat_increases_on_coarsening",
+    "actual_n20_feedback_gap_positive",
+    "actual_n20_full_order",
+    "absolute_heat_retained",
+    "fine_strict_nonzero_all42_gain",
+    "three_status_strict_nonzero_all42_gain",
+    "exact_feedback_merge_identity_0",
+    "exact_feedback_merge_identity_1",
+    "exact_feedback_merge_identity_2",
+    "exact_feedback_merge_identity_3",
+    "merge_0_heat_bound",
+    "merge_0_feedback_bound",
+    "merge_0_coupled_bound",
+    "merge_1_heat_bound",
+    "merge_1_feedback_bound",
+    "merge_1_coupled_bound",
+    "merge_2_heat_bound",
+    "merge_2_feedback_bound",
+    "merge_2_coupled_bound",
+    "merge_3_heat_bound",
+    "merge_3_feedback_bound",
+    "merge_3_coupled_bound",
+    "fine_all_column_unitarity",
+    "fine_actual_nilpotent_cut",
+    "fine_actual_complement_spectrum",
+    "fine_full_paired_hodge_spectrum",
+    "fine_full_harmonic_trace",
+    "fine_dropped_harmonics_negative_control",
+    "coarse_all_column_unitarity",
+    "coarse_actual_nilpotent_cut",
+    "coarse_actual_complement_spectrum",
+    "coarse_full_paired_hodge_spectrum",
+    "coarse_full_harmonic_trace",
+    "coarse_dropped_harmonics_negative_control",
+    "fine_moving_cut_full_source",
+    "fine_frozen_input_is_different",
+    "coarse_moving_cut_full_source",
+    "coarse_frozen_input_is_different",
+    "full_hessian_including_normalizer",
+    "normalizer_term_material_negative_control",
+    "padded_full_hessian_strict_concavity",
+    "moving_beta_full_absolute_source",
+    "normalizing_away_dimension_changes_beta_source",
+    "L4_integer_dimension_bound",
+    "L4_actual_refinement_envelope",
+    "L4_ready_nonvanishing",
+    "L8_integer_dimension_bound",
+    "L8_actual_refinement_envelope",
+    "L8_ready_nonvanishing",
+    "L16_integer_dimension_bound",
+    "L16_actual_refinement_envelope",
+    "L16_ready_nonvanishing",
+    "L64_integer_dimension_bound",
+    "L64_actual_refinement_envelope",
+    "L64_ready_nonvanishing",
+    "L1024_integer_dimension_bound",
+    "L1024_actual_refinement_envelope",
+    "L1024_ready_nonvanishing",
+    "high_beta_exact_small_mass_condition",
+    "exp3_greater_than_16_by_exact_series",
+    "high_beta_full_trace_delta_bound",
+    "high_beta_exact_heat_lower",
+    "high_beta_feedback_upper",
+    "high_beta_reverses_full_partition_order"
+  ],
+  "checks": 75,
+  "full_matrix_fixture": {
+    "coarse": {
+      "F_spectrum_error": 2.220446049250313e-16,
+      "Hodge_spectrum_error": 3.3306690738754696e-16,
+      "full_unpadded_trace": 61.1240468940951
+    },
+    "fine": {
+      "F_spectrum_error": 2.220446049250313e-16,
+      "Hodge_spectrum_error": 3.3306690738754696e-16,
+      "full_unpadded_trace": 59.55166656585643
+    }
+  },
+  "hessian_error": 2.063904602778166e-12,
+  "high_beta_mathematical_scope_control": {
+    "beta": "1152921504606846976",
+    "feedback_decrease": "7.34682567965465367663396704621075986869246819224087605931756531341838922434182517E-40",
+    "heat_increase": "3.185701848135586996890205026010329573507305848667608204206903378315252398528438127261099831981269771E-28",
+    "heat_over_feedback": "433616093132.2566401773906235880195313055059945911521211513226191558402989761064909357766706058893024",
+    "mass": "8.67361737988403547205962240695953369140625E-19",
+    "non_right_dimension": 5247698481,
+    "not_a_claim_about_the_unknown_native_work_dimension": true
+  },
+  "merge_diagnostics": [
+    {
+      "a": "0.1428571428571428571428571428571428571428571428571428571428571428571428571428571428571428571428571429",
+      "b": "0.2222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222",
+      "heat_over_feedback": "0.000004956469755428161078369890370158064459194473082077270574055876184433993556413849933970366220511214295"
+    },
+    {
+      "a": "2.888995736571035767368522422160088061958081158805821940731359862479421031534305336860218947463099347E-11",
+      "b": "2.888995736571035767368522422160088061958081158805821940731359862479421031534305336860218947463099347E-11",
+      "heat_over_feedback": "0.00001131038725819612484692639847558937608925092709290510855225017242213226541537817939235471422328314109"
+    },
+    {
+      "a": "0.37",
+      "b": "0.63",
+      "heat_over_feedback": "0.000003200319338453536624314220400820642365473862297943096812484451117844631522528572650341604058962979901"
+    },
+    {
+      "a": "0.000001",
+      "b": "0.4",
+      "heat_over_feedback": "0.000005055604402244106528196009241237046258624814422683579014239844565238583331718171691829982249516506589"
+    }
+  ],
+  "moving_beta_source": {
+    "analytic": -46.04800992035259,
+    "direct_matrix_difference": -46.0480099203527
+  },
+  "moving_input_source": {
+    "coarse": {
+      "direct_matrix_source": 6.461497841035932e-05,
+      "incorrect_frozen_source": 7.177205872929194e-05,
+      "pulled_probability_source": 6.461497840990933e-05
+    },
+    "fine": {
+      "direct_matrix_source": 3.7911505730888146e-07,
+      "incorrect_frozen_source": -4.033753092244383e-06,
+      "pulled_probability_source": 3.791150574396841e-07
+    }
+  },
+  "original_n20": {
+    "beta0": "0.7639320225002103035908263312687237645593816403884742757291027545894790743621951005855855916212177250",
+    "eta_rational_upper": "111669149696/9598843598690745",
+    "eta_rational_upper_decimal": "0.00001163360445952378626177988927563801841021510693159602890349487086361581900892137977084295456922279601",
+    "evaluation_at_conservative_dimension_bound": {
+      "coupled_gap": "0.0002686167069880067230456266961623397375170435412151427253418992672816565570602250831999852975907556454",
+      "coupled_over_feedback_source": {
+        "fine": "0.9999886900957494257441363231836449500232110382197078317795833660326228918416760287613242685153110417",
+        "three_status": "0.9999944948340831114779672796578775347183463870888518102913209204931969833774438472214531342468363202"
+      },
+      "feedback_gap": "0.0002686181807940742023408826091733457824522244632405738179454117783554831678541170370608754624172453674",
+      "heat_increase": "1.473806067479295255913011006044935180922025431092603512511073826610793891953860890164826489722010816E-9"
+    },
+    "harmonic_lower_bound": 3661675227,
+    "lambda_minus": "-23.41640675188407497289558206489525274426317851399039183378313554535445912225019825877147532669216301",
+    "non_right_dimension_lower_bound_only": 3661820109,
+    "r0": "0.0000018512395784882030762843950549834036617169798842718979832305376579121737838124142823232724655236",
+    "ready_probability": "0.3416407870701547128226130759829726264273674948799988464514888977250641859775715915301692189545078894",
+    "selector_dimension": 72441,
+    "work_dimension_lower_bound_only": 50549
+  },
+  "scope": "Full cut Hodge+feedback on one padded READY partition carrier; no physical Book selection or new all42 root certificate.",
+  "status": "PASS"
+}

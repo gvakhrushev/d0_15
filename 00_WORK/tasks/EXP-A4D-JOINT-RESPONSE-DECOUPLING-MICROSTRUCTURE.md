@@ -15,6 +15,58 @@ Assembly-Slot: `constitutive`
 
 ## Strategic synthesis continuation — 2026-10-17
 
+### 22 October: complete the coupled cut-heat partition application
+
+Continue the same native-realization / final-composition owner at published
+input `4d14df5`, preserving the concurrent finite-algebraic Puiseux and original
+full128 Ward results. The preceding generated-source packet computed the
+actual cut Hodge heat for the complete fine/three-status READY comparators but
+explicitly left their *coupled* heat-plus-feedback ordering unproved. Close
+that precise application, rather than impose equality of unrelated operators
+or rerun an existing field root.
+
+The carrier is the SAME padded selector, complete fine WORK, original
+oldRIGHT128 and actual `C=(I-P)UP`; its full trace includes all harmonic modes.
+At the already used fixed Golden calibration `beta0=2p^2`, compare the thermal
+increase and feedback decrease of every genuine partition merge. Derive the
+entire probability Hessian, all42 common-null source gain, and a uniform
+refinement bound using the existing actual Golden prefix counts and PF depth.
+Retain the absolute rank/clock trace and all independently moving upstream
+coordinates. This is an application of the derived cut heat, not a proof that
+Book03 selects that incidence, temperature, task or complete physical ledger.
+
+Root owns this brief, the primary memo and the bounded packet
+`sources/d0_coupled_cut_partition_2026-10-22/`. Assistants independently review
+the exact merge/source estimates, the genuine stationary-section substitution,
+and the actual field-writer/price boundary; any authored pieces receive
+disjoint paths. The smallest decisive check uses full completed finite
+unitaries with moving prepared input/cut, the actual padded trace, exact
+Golden counts and rational bounds. A large-beta negative control prevents
+overstating the fixed-temperature result. Do not replay the old 42-root,
+full128 census, native PF census, interval Hessian or Lean suites.
+
+The intended parent substitutions are the previously missing full cut-heat
+partition-price comparison and a source-preserving application to the owned
+nonvacuum all42 family. Equality on a genuine stationary internal section is
+weaker than operator equality, but no source is removed merely by naming a
+section. Full paid execution/Info/work/clock selection and actual admissible
+field variations remain explicit physical premises. No BOOK, lifecycle,
+assembly acceptance or GR-closure promotion is authorized by this result.
+
+The completed application proves the entire coupled merge gain and full
+probability Hessian. At the declared fixed Golden temperature, heat removes
+less than `1/80000` of each positive feedback merge/source gain; the same
+three-status task algebra remains the unique minimizing partition while
+all fine records and harmonic trace modes stay. The actual all42 common-null
+source retains its original matter ratio, with relative heat correction
+`O(L^-128)` on the owned PF schedule. The actual paid writer's per-record
+intertwiner also closes its previously conditional heat covariance for
+`L_C` and the common transformed cut heat. Its different retained histories
+and full physical continuation/Info law are not identified by that equality.
+A new 75-check bounded consumer verifies these formulas and their required
+moving-input, absolute-beta and high-beta negative controls. No prior large
+suite is replayed; full physical Book03 selection remains open.
+
 ### 22 October: pull the generated thermal source back to the actual execution
 
 Continue the same native-realization / final-composition obligation at published
