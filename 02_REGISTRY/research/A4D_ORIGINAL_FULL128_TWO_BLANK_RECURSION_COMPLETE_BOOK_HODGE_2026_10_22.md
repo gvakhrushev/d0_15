@@ -177,6 +177,31 @@ n&J_n& D_r(H_n+J_n)\\
 \]
 The **all-n strict sign** n=1 positive/n≥2 negative and absolute native horizon minimum n=1 are CONSUMED from the separate exact original Stinespring/Hodge owner. This note does NOT reprove or claim those as new.
 
+## 4a. The decisive 42-field SOURCE-DESCENT and honest measurement-price gate
+
+Because the **entire** declared \(H_n+J_n\) is now one smooth fixed mathematical function \(\Phi_n(a(y),b(y))\), every actual geometry/matter/preparation tangent \(v\) on a common physically admitted native field chart satisfies
+\[
+\boxed{
+D_v a=D_v b=0
+\quad\Longrightarrow\quad
+D_v(H_n+J_n)=0.
+}\tag{16a}
+\]
+Therefore any claimed FULL 42-field equality to an independently owned physical source \(DS_*(y)\) plus genuinely paid remainder \(DB_{\rm rest}(y)\) requires EXACTLY
+\[
+\boxed{D_v(S_*-B_{\rm rest})=0
+\quad\text{for EVERY }v\in\ker D(a,b).}\tag{16b}
+\]
+On a rank-two 42-field report chart this is **40 independent vertical source constraints**, plus the two horizontal coefficient tests and all truly independent upstream input Euler. One actual \(v\) violating (16b) is a rigorous rejection of EVERY source claim using ONLY this fixed-input 2-blank/Hodge+J scalar, irrespective of spectral-calibration accuracy. Conversely passing these constraints is NECESSARY but does not prove that Book03 physically selects \(\Phi_n\) or that its whole 42-source matches. This is the specific rank-two counterpart of the concurrent owned Jones34+8+k horizontal/vertical source-descent theorem, *not* a duplicate numerical detector campaign or a declaration that all 42 physical fields collapse to two observables.
+
+**Two SHORT observable TYPES are not two cheap experimental SHOTS.** The original allblank probabilities are close to one, and at the literal source point (16) the spectral variance \(v_*=b-a^2\simeq7.0233930\times10^{-7}\) is extremely small. If \(N_1,N_2\) independent complete native repeats are used to estimate \(a,b\) by their Bernoulli flags, then for any regular locally unbiased estimator of \(v=b-a^2\) their classical Fisher information gives the exact Cramér–Rao inequality
+\[
+\boxed{\operatorname{Var}(\widehat v)
+\ge\frac{4a^3(1-a)}{N_1}+
+     \frac{b(1-b)}{N_2}.}\tag{16c}
+\]
+At this actual native point the two numerators are about \(0.0788160\) and \(0.0398300\). For \(N_1=N_2=N\), a standard-deviation target no larger than \(v_*/5\) (a five-standard-error discrimination scale, **not a guaranteed significance probability**) therefore requires \(N\gtrsim6.0\times10^{12}\) complete runs of EACH type in this plain independent-Bernoulli readout strategy. The inequality is conditional on this estimator/model; an actually admitted coherent multi-copy native quantum strategy could change the resource requirement, and its implementation/price must be proved independently. It prevents turning an exact algebraic "two observables suffice" theorem into a false low-cost M1 preparation/clock claim.
+
 ## 5. Strong positive closure and decisive remaining physical gate
 
 There are now TWO complementary native operator routes, and no reason to construct a new synthetic detector:
