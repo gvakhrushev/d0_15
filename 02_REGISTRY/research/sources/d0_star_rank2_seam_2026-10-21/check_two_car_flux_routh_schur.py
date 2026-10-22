@@ -233,6 +233,7 @@ def native_experiment():
     # DIRICHLET matter block: exactly a weighted TWO-component graph
     # Laplacian. Site weights are positive even for the irregular PF.
     n=len(PF)
+    native_h=H
     Hess=np.zeros((2*(n-1),2*(n-1)))
     for j in range(n):
         A=np.linalg.inv(cells[j][4]) # dJhat/d(time gradients), positive
@@ -247,6 +248,15 @@ def native_experiment():
     Hess*=2*TAU*NATIVE_B/H**2
     mateigs=np.linalg.eigvalsh(Hess)
     assert mateigs[0]>0
+    # The native matter-only Hessian is (2*tau*b/h^2) times a true
+    # two-component positive Dirichlet time-edge Laplacian. Its EXACT
+    # discrete spectral gap is >= 4*sin(pi/(2n))^2 times min local block.
+    native_gmin=min(float(v[1]*G00[j]) for j,v in enumerate(cells))
+    actual_sine_bound=8*TAU*NATIVE_B/native_h**2 * native_gmin * (
+        np.sin(np.pi/(2*n))**2)
+    coarse_uniform_bound=8*TAU*NATIVE_B*native_gmin/(n*n*native_h*native_h)
+    assert mateigs[0]+1e-14>=actual_sine_bound
+    assert actual_sine_bound+1e-14>=coarse_uniform_bound
     return {"true_original_F":"N1 cap Kpre9 Lgate20; sigma-minus included",
       "time_jagged_PF":PF.tolist(),
       "metric_time_inverses":G00.tolist(),
@@ -265,7 +275,10 @@ def native_experiment():
       "both_true_original_material_current_error":Epsi,
       "independent_FULL_N1_price_on_shell_scalar_source_max":on_shell,
       "independent_FULL_N1_price_OFFSHELL_source_error":error_off,
-      "Dirichlet_exact_matter_Hessian_min_eigen":float(mateigs[0])}
+      "Dirichlet_exact_matter_Hessian_min_eigen":float(mateigs[0]),
+      "native_Dirichlet_analytic_sine_lower_bound":float(actual_sine_bound),
+      "native_Dirichlet_uniform_coarse_lower_bound":float(coarse_uniform_bound),
+      "native_Fy_over_b_g00_min":native_gmin}
 
 def main():
     checkpins()
