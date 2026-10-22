@@ -124,8 +124,41 @@ minus=(np.eye(2)-X2)/2
 out=plus@zero@plus+minus@zero@minus
 check('phase-readout nonselective quantum operation disturbs original readable label',abs(out[0,0]-.5),1e-14)
 
+# Stronger finite audit: exactly THREE positive branch preparations suffice,
+# without assuming QND for every possible input. A fixed CPTP instrument with
+# an archived binary label must preserve that label on these three settings.
+# Strict concavity of sqrt(r(1-r)) makes the three probe rows independent.
+import sympy as sy
+rational_probes=[sy.Rational(1,5),sy.Rational(2,5),sy.Rational(4,5)]
+M3=sy.Matrix([[1-x,x,2*sy.sqrt(x*(1-x))] for x in rational_probes])
+det3=sy.simplify(M3.det())
+check('three exact positive native-grammar probes linearly independent',det3!=0)
+solution=M3.inv()*sy.Matrix([1-x for x in rational_probes])
+check('three fixed nondemolition probability constraints force E00=1,E11=0,Re E01=0',all(sy.simplify(v-w)==0 for v,w in zip(solution,[1,0,0])))
+# The actual tiny native click r0 makes the finite inference ill-conditioned,
+# hence 'three exact tests' is a theorem and NOT a robust noisy measurement.
+import mpmath as mp
+mp.mp.dps=80
+rare_str='0.0000018512395785208469'
+rare=mp.mpf(rare_str)
+rare_points=[rare,rare*2,rare*4]
+rare_M=mp.matrix([[1-x,x,2*mp.sqrt(x*(1-x))] for x in rare_points])
+rare_det=mp.det(rare_M)
+check('three distinct positive rare native report probes nonzero determinant',rare_det!=0)
+rare_sol=mp.lu_solve(rare_M,mp.matrix([1-x for x in rare_points]))
+check('80 digit rare native linear inverse gives QND spectral extremes',max(abs(rare_sol[i]-t) for i,t in enumerate([1,0,0])) < mp.mpf('1e-60'))
+# Example positive non-QND effect must change some old-programme probability.
+E_bad=np.array([[.8,.12],[.12,.2]])
+check('hostile offdiagonal effect valid positive',min(np.linalg.eigvalsh(E_bad))>0 and max(np.linalg.eigvalsh(E_bad))<1)
+errors=[float(np.array([1-x,x,2*math.sqrt(x*(1-x))])@np.array([E_bad[0,0]-1,E_bad[1,1],E_bad[0,1]])) for x in [.2,.4,.8]]
+check('non-QND effect fails at least one of the finite three exact record checks',max(abs(e) for e in errors)>1e-2)
+# Matrix with matching QND diagonal values but hidden imaginary offdiagonal is
+# NOT positive, excluding a loophole undetected by real three-probe amplitudes.
+E_im=np.array([[1.,1.j*.03],[-1.j*.03,0.]],complex)
+check('imaginary coherence loophole violates effect positivity',min(np.linalg.eigvalsh(E_im))<0)
+
 print(json.dumps({'status':'PASS','checks':len(checks),'native_p':p,'Q8_cross_overlap':p**3,
  'original_program_cost_ops':15,'echo_cost_ops':15,'combined_charged_ops':30,
  'initial_original_16stage_wrap_slot':1,
  'claim':'15 forward Q8 echo exists, but all QND archive-preserving tests are phase blind; joint phase test is not QND',
- 'physics':'no native field writer, Book03 projector or full 72441 classical archive eraser claimed'},indent=2))
+ 'physics':'no native field writer, Book03 projector or full 72441 classical archive eraser claimed','three_setting_exact_determinant':str(det3),'native_rare_3probe_abs_determinant':mp.nstr(abs(rare_det),20)},indent=2))
