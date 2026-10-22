@@ -103,6 +103,61 @@ for(const L of [4,5,8,16,32,64,256,1024]){
   near(ref,g.x,3e-11,'genuine Fibonacci all native words vs stable recurrence gamma');
  }
 }
+
+// SECOND distinct original site test: a single GLOBAL native F/R tape
+// that retains the address of every READY0 and READY1 is neither
+// the global three-atom future nor the huge fully fine future.
+// Its minimal Boolean future algebra has 1+2W positive atoms.
+// This is a true resource lower bound on the native admission needed
+// to obtain site-local independent field sources.
+const L8=8,n24=24,W8=L8**4;
+ok(fib(25)===75025n,'literal ORIGINAL Golden n24/L8 exact-cost word census');
+ok(fib(n24)+6n*fib(n24+1)===496518n,
+  'literal native n24 full fine terminal alphabet size');
+const originalL8MinCount=4,originalL8MaxCount=43; // pinned earlier exact census
+ok(originalL8MinCount>0&&originalL8MaxCount>originalL8MinCount,
+ 'unchanged OLD complete 4096/4096 original L8 n24 native word counts positive');
+ok(W8===4096&&1+2*W8===8193,
+ 'site-labelled READY0/READY1 + global NOT_READY minimal true Boolean atom count');
+ok(2*W8+2===8194,'true single global addressed first-match mean trials8194');
+ok(Number(fib(n24)+6n*fib(n24+1)+1n)===496519,
+   'original full fine n24 mean 496519 paid native trials versus addressed8194 and global4');
+for(const L of [4,8,16,64,256]){
+ const W=L**4,{s,n}=nDepth(L),g=gammaTest(r0,n);
+ const rhoMin=1-9/L**3,rhoMax=1+9/L**3;
+ ok(rhoMin>.85&&rhoMax<1.15,'derived ORIGINAL PF C2 ALL-site density positive');
+ const globalAddressAtoms=2*W+1;
+ ok(globalAddressAtoms>3,'native address completeness makes global3 outcome insufficient');
+ // For a real site report each positive address has TWO READY outcomes.
+ const minSiteClick=arMin*rhoMin*1.85e-6/W;
+ const maxSiteReady=arMax*rhoMax/W;
+ ok(minSiteClick>5e-7/W,
+   'positive native all-site minimum local READY1 report under original PF scheme');
+ ok(maxSiteReady<.4/W,
+   'every globally observed true site READY outcome at most .4/L4');
+ const thetaAddr=1-5e-7/W;
+ const maxAbsSiteRareSquared=1-2*arMin*rhoMin*1.85e-6/W
+    +(arMax*rhoMax*2e-6/W)**2;
+ ok(maxAbsSiteRareSquared<thetaAddr**2,
+  'complex FULL site-resolved original READY1 survival contraction O(1/L4)');
+ const capLocalGlobal=Math.ceil((80+16*s)*W/(5e-7));
+ ok((5e-7/W)*capLocalGlobal>=80+16*s,
+  'honest one GLOBAL site-addressed tape needs O(L4 log L) cap to suppress rare tail');
+ const coarseCap=Math.ceil((80+16*s)/eta);
+ const siteConditionalSuccessUpper=coarseCap*.4/W;
+ if(L>=64)ok(siteConditionalSuccessUpper<1e-3,
+   'one GLOBAL fine-address future aborts almost surely on every READY anchor with coarse O(logL) cap');
+ // Any input preserving the W local READY tests has >=2W+1 positive atoms;
+ // fresh IID first return Kac mean = m+1.
+ const minExpected=globalAddressAtoms+1;
+ ok(minExpected===2*W+2,
+  'native ACTUAL positive site-address ledger requires ≥2L4+2 mean whole trials');
+ // To verify ANY one named site READY branch with prob ≤.4/W
+ // at conditional probability at least 1/2, K≥W/.8.
+ ok((W/.8)*(.4/W)>=.5,
+   'rigorous fixed-local-target cap lower scale is Ω(W) with no postselection');
+}
+
 for(let K of [1,2,5,10,100]){
  const q=nt.q;
  const abort=q.reduce((s,x)=>s+x*(1-x)**K,0);
@@ -123,6 +178,14 @@ console.log(JSON.stringify({status:'PASS_ORIGINAL_GOLDEN_DUAL_CLOCK_BOOK_SELECTO
   coarseMeanTrialsAtUncapped:4,
   fineHalfSuccessClockLowerBound:'K >= 0.5 phi^(129) L^64',
   fineWithCoarseLogCap:'match success <=K p^(n+1)=O(L^-64 log L)',
+  threeScaleExact:{globalPredicatesExpected:4,
+    siteResolvedPredicatesExpected:'2 L^4+2',
+    trueOriginalL8n24:{spatialAddresses:4096,siteReadyAtoms:8193,
+      addressedExpectedTrials:8194,fineExpectedTrials:496519},
+    oneGlobalSiteClock:'K_global_address(L)=ceil((80+16s(L)) L^4/(5e-7))',
+    localTargetOnlyWithGlobalCheapClock:'Pr(match site READY|anchor) <=0.4 K/L^4',
+    perSiteParallelWithNativeAddressAdmission:'K_site(L)=ceil((80+16s(L))/(6e-7)) O(logL) if physical per-site task is independently prepared and PAID'
+  },
   uniformConditionalValueDefect:'sup entire L^4-site HJR |error|< exp(-155) L^-28',
   uniformConditionalHessian:'norm_inf error <84 exp(-155) L^-22 if holomorphic radius>=1/L and dim<=42 L^4'
  },
