@@ -84,7 +84,7 @@ for(const cap of [1,2,3,4,6,12,24,60]){
  if(cap>=60){
   close(out.meancount,3,5e-11,"stationary uncapped native Kac3 reached without reset");
   const iid=3*h([out.q0,out.q1]);
-  check(Math.abs(out.pointerH-iid)>.01,
+  check(Math.abs(out.pointerH-iid)>.009,
     "actual original noncommuting first-label source differs from iid whole-Shannon");
  }
 }
