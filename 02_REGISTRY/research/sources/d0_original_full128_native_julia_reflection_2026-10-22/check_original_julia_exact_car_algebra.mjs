@@ -76,7 +76,7 @@ for(const Y of [Ybar,Zbar]){
 // beta root b=9c/25=7929/20000,
 // s²=1−b=12071/20000=(sqrt(24142)/200)².
 ok(881n*9n===7929n,'old original real boost cosh(2theta)=881/800');
-ok(b*20000n===7929n*20000n,'boost highest spectral branch exact rational');
+ok(b===2n*7929n,'original scaled boosted eigen b=15858/40000=7929/20000 exact rational');
 ok(40000n*(20000n-7929n)===20000n*24142n,
    'one original boosted source scalar s=sqrt(24142)/200 exactly');
 const gprimeNum=29889n,gprimeDen=16000n;
