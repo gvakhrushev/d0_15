@@ -166,6 +166,24 @@ and even the stronger ball estimate
 \]
 holds. Banach then gives **one and only one** corrected exact stationary root in B. Without Lipschitz, (10) still has existence, but uniqueness is NOT claimed. If \(\mathcal R=D_zG\) for an actual C² additional price and its Hessian obeys the bound, the configured saddle's opposite signs persist by Hessian continuity; with C¹/non-C² additional price no full Hessian/inertia statement is made.
 
+
+
+### Strict nonminimum persists under any genuinely small C² Book correction
+
+The completed original certificate also gives strict OPPOSITE signs of two unrestricted original coframe Hessian diagonals at the rational center:
+\[
+H^0_{e^0_t,e^0_t}>3.0283,\qquad
+H^0_{e^1_x,e^1_x}<-1.0912.
+\]
+On the larger B_infty(z0,2e-20) ball, the actual whole42 base Hessian moves by no more than \(C r =8.4672\cdot10^{17}(2\cdot10^{-20})=0.0169344\) in induced row norm. If the missing source is the true derivative \(D_zG\) of an EXTRA *C² price* and the same accepted Lipschitz/Hessian bound \(\|D_z^2G\|_\infty\le10^{-3}\) holds, then at **every** exact corrected root established above,
+\[
+\boxed{
+(D_z^2(S_0+G))_{e^0_t,e^0_t}>3.0103656>0,\qquad
+(D_z^2(S_0+G))_{e^1_x,e^1_x}<-1.0732656<0.
+}\tag{11}
+\]
+Thus the mathematical exact stationary root of the complete corrected price remains a STRICTLY INDEFINITE saddle in two genuine freely varied coframe directions. A perturbatively small selected Book03 extra price cannot turn the already certified N1 finite stationary root into an unconstrained full-field MINIMUM. A physically admitted constrained reachable manifold, independent stationarity principle, or a genuinely NON-SMALL Hessian modification would have to be demonstrated separately. **For a merely continuous C¹ first-source the Brouwer EXISTENCE still holds but (11) is NOT asserted**: no second derivative of its additional entropy is required or inferred.
+
 ## 5. Exact acceptance gate for the ACTUAL missing native Book03 source
 
 The result specifies an immediately reusable quantitative input without requiring microscopic price equality:
