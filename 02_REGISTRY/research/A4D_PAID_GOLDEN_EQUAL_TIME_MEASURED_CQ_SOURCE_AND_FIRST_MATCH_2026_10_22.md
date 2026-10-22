@@ -49,12 +49,12 @@ with every other field-independent actual fixed-cap compiler, abort/work/readout
 
 Therefore on the ENTIRE declared original analytic input chart,
 
-  BOX: S_paid,CQ−S_CQ=gamma[2−H_phi(r0)]−B_fixed_shift, (7)
+  BOX: S_paid,CQ−S_CQ=gamma[2−H_phi(r0)],                (7)
        D_y S_paid,CQ = D_y S_CQ,
        D_y² S_paid,CQ = D_y² S_CQ,
        D_y^k S_paid,CQ=D_y^k S_CQ for every k≥1.       (8)
 
-Here B_fixed_shift is just the constant convention for whether B_fixed was included in (5) and (6): with IDENTICAL B_fixed as written, S_paid,CQ−S_CQ=gamma[2−H_phi(r0)] exactly. No change of native p, z, sigma, 16+24+2 field operands, READY weights, reporting probability, matter/geometry coupling, CAR algebra or field dependence was made.
+The equality (7) uses the IDENTICAL already-paid fixed baseline B_fixed in (5) and (6). If a different ledger accounts for the idle or factory in another column, first reconcile the absolute booked charge; do not double-count a baseline or declare it free. No change of native p, z, sigma, 16+24+2 field operands, READY weights, reporting probability, matter/geometry coupling, CAR algebra or field dependence was made.
 
 For the ORIGINAL independently paid local-copy implementations labelled a, with genuine positive INTEGER multiplicities m_a and fixed actual readiness gamma_a, the same identity is exactly
 
