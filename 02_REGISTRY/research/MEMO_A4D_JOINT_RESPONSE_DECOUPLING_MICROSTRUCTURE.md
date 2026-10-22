@@ -11220,3 +11220,79 @@ one admitted physical domain with its actual gain and norm. This checkpoint
 constructs the shrinking operand and exposes one exact surviving normal;
 it does not select compulsory Book03 H+J+R/Info or close GR.
 GR_closed=false; full_D0_price_selected=false.
+
+
+### 22 October: paid nonvacuum collective source theorem and exact field retention
+
+The [new integrated proof](A4D_NONVACUUM_COLLECTIVE_PREPARATION_SOURCE_EQUIVALENCE_2026_10_22.md)
+and [reproducible packet](sources/d0_nonvacuum_collective_preparation_2026-10-22/README.md)
+continue the same #334 native-programme-v1 / constitutive argument.
+Scientific inputs are pinned at fcfc52064737815c75bef96f7696b473ee304061;
+the concurrent joint-index and information-only nonselection results are
+preserved at their actual conditional scope.
+
+The former coherent operand preserved field equations but left a real
+joint-bank preparation source. The changed execution uses an actual paid,
+coherent, uniform injection of all polynomial operand slots into N
+independently prepared complete banks. The full logical law is EXACTLY
+the original law on product inputs for every finite N; its field source,
+material coefficient and original all-mesh nonvacuum root are unchanged.
+Every factory, cap, retry, unused bank and RIGHT reference remains paid.
+
+For the actual compressed kind-input alphabet and one coordinate query per
+slot, the WHOLE-history score satisfies
+A_1=aI+(1/k)sum_j (partial_j F)(Z_j-t_j I). Hence the full globally varied
+nonvacuum field root cancels the first conditional operator. Reusing the
+owned section-6.78 overlap lemma and proving the exact one-excitation
+projection yields the two-sided result
+
+E_h <= Q_h,N <= sqrt(E_h^2+C_h^2/(N-1)),
+Q_h,N=sqrt(N)||d_prep S||/(2 Gamma_h,N tau_h |gamma_h|).
+
+E_h is the actual weighted field covector norm, with its coframe, link
+and material Jacobians stated explicitly. This lower bound retains a
+nonzero field source off shell. At the exact field root the normalized
+full pure-preparation source is O(N^(-1/2)); an explicit diagonal N_h
+matches the owned O(h^2) material/geometric recovery. The true ten-flag
+operator estimate is linear in tau, so readiness and signal normalization
+are accounted for once, not suppressed by a false factorial success cost.
+
+The full price is B_N+Gamma_N[sum q_omega c_omega-H_phi(q_N)].
+Crucial scheduling correction: all logical reports and actual 0/10
+emitters wait until global logical success; earlier logical outputs stay
+coherent on a late abort. This proves the constant measured prefix law
+on the specified nonadaptive free-input interface. Correlated input
+entropy is joint, never replaced by a sum of binary marginals.
+
+The finite paid-normal companion also realizes the earlier Bell tangent
+by real Golden word pairs with equal decoded fields, matched complete
+preparation/failure laws and nonzero counted price secants. The new
+construction addresses that residual rather than forbidding it or
+inserting a counterterm. Mixed-density and fixed-count controls preserve
+the distinction between pure-source recovery and physical minimum/selection.
+
+Final frozen new-check replay: 5,165 enumerated exact assertions, 67
+floating-log checks, and additional complete-flag depths 1..16 / 34
+count-shell checks. Three bounded independent reviews cover the full price,
+normalization and decoder Jacobians. Exact receipts and file hashes are
+saved; historical geometric/compiler/Lean evidence is consumed without
+a fresh replay claim.
+
+Parent substitution: complete counted-CQ PURE preparation source now
+converges, in a nondegenerate declared norm, to the already owned full
+field source on this actual encoded chart. Remaining parent premise:
+compulsory physical Book03/Info/clock/preparer/controller selection and its
+other independent same-execution sources. No density-cone minimum, exact
+finite joint zero, universal physical GR or native autonomous C1 writer
+follows. GR_closed=false; full_D0_price_selected=false.
+
+
+Concurrent preservation at publication: the later
+[thermal Schur/Ward source-limit packet](A4D_GLOBAL_THERMAL_SCHUR_WARD_AND_SCENE_SOURCE_LIMIT_2026_10_22.md)
+and [native65 archival intake](A4D_LOCAL_SPECTRAL_PACKETS_REMOTE_INTAKE_2026_10_22.md)
+at af6e7eb8952564d86ddbfe910eb5f41d4a1b4e4b were read and retained.
+Their regular spectral equations and scene-source bounds need the actual
+common field/preparation map, normalization and independent apparatus
+equations before substitution here. The measured native65 execution is
+not identified with this coherent selector. Their distinct positive
+results do not silently discharge dS_other in the present source theorem.

@@ -5168,3 +5168,54 @@ refinement, not another geometric root search or fitted counterterm.
 The paid finite catalogue, supplied smooth product section and free joint
 Stiefel extension are kept distinct. GR_closed=false; no task, assembly,
 claim or lifecycle promotion.
+
+
+### 22 October: nonvacuum collective preparation — two-sided complete source recovery
+
+Phase: native realization / final composition; same Draft #334 and
+constitutive / native-programme-v1. Scientific input fcfc52064737815c75bef96f7696b473ee304061;
+concurrent information-only nonselection and joint-index owners preserved
+through f9d47475cceaebbba481bfb979be006fcef687a1.
+
+The [integrated source theorem](../../02_REGISTRY/research/A4D_NONVACUUM_COLLECTIVE_PREPARATION_SOURCE_EQUIVALENCE_2026_10_22.md)
+substitutes a paid coherent without-replacement bank selector for the
+surviving joint-preparation residual in the preceding operand construction.
+Every raw moment occurrence occupies its own slot. The actual moment
+encoders imply A_1=aI+(1/k)sum_j(dF/dt_j)(Z_j-t_j I), so the existing
+nonvacuum globally varied field root cancels the entire first conditional
+operator. A one-excitation LOWER bound and the owned full-polynomial
+overlap upper bound yield
+E_h <= sqrt(N)||d_prep S||/(2 Gamma tau |gamma|) <=
+sqrt(E_h^2+C_h^2/(N-1)).
+The field norm E_h therefore survives away from its stationary set; simple
+unscaled averaging cannot manufacture Einstein equations.
+
+At every finite N the COMPLETE logical iid law and all original field
+Euler equations are unchanged. Actual partial Fisher-Yates, real finite
+caps and all copies, failures, work, clock and RIGHT tensor factors are
+paid. Logical report measurements and 0/10 emissions are deferred until
+global logical success, making the retained abort ledger input independent
+on this nonadaptive interface. Whole-history entropy is used on correlated
+inputs. The true ten-flag attenuation gives B_h<=tau Xi_h, so Gamma and tau
+are each divided out exactly once. Explicit N_h gives an O(h^2) normalized
+pure-preparation residual on the existing nonlinear Einstein recovery.
+
+A second construction now realizes the old nonzero Bell normal by finite
+paid Golden positive/negative preparations, with identical decoded fields,
+all flag failures retained and matched complete preparation baselines.
+It cannot be discarded as gauge or excluded by an independence assertion.
+
+Write paths: the integrated note and
+sources/d0_nonvacuum_collective_preparation_2026-10-22/, plus append-only
+pointers in this brief and its primary memo. The final bounded Python
+replay records 5,165 enumerated exact checks and 67 floating-log checks,
+plus the paid-normal depth-1..16 and 34 count-shell checks. Independent
+source/gain/chart reviews are attached; no unchanged full42/full128,
+compiler, Lean or CI replay is claimed.
+
+This removes the named counted-CQ pure-preparation source-recovery premise.
+It does not establish a finite exact joint root, density-cone minimum,
+autonomous smooth code writer or compulsory same-initial Book03 selection.
+The next parent substitution is the actual complete physical source and
+its independent upstream equations on this same execution and norm.
+GR_closed=false; full_D0_price_selected=false; no lifecycle promotion.
