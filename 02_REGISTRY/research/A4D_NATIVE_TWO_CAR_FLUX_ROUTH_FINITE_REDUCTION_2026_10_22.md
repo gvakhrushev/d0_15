@@ -187,3 +187,52 @@ The numbers support the exact symbolic reduction; they are not measurements of t
 5. **No uniform full-GR refinement or exact all42 interval root:** prior n3/n4/n5 sources remain numerical and ill-conditioned after gauge deflation; an exact matter inverse does not alone invert the gravitational saddle/Hodge/Gauss block.
 
 **Next implementation** inside existing PR #334: replace the two free real scalar variables at each internal time node of \`check_full42_temporal_gauge_deflation.py\` by the per-cell local scalar solve (9), enforce only two global boundary flux equations (14), and differentiate the original 16+24 geometric Euler via the rigorous envelope (17). Carry the true temporal-Wilson Gauss constraint and original collar. Then verify the reduced Jacobian against the original full Euler Schur complement before attempting a Krawczyk/interval proof of an exact n3/n4/n5 finite root. Do not repeat the blocked pureboost 42-to-12 scan or infer universality from a single curved family. **GR_closed=false.**
+
+
+## 7. NEW uniform Dirichlet matter inverse bound from the native price
+
+The positivity in §3 is not merely a pointwise local inversion. The ORIGINAL finite scalar Hessian has an explicit mesh-stable spectral lower bound. At each site keep original geometry x_j,rho_j,g_j fixed and define
+
+  w_j=F_y(x_j,y_j)>0,
+  c_A,j=g_j^{00}v_A,j+g_j^{0i}s_Ai,
+  y_j=tau q_j/rho_j.
+
+Differentiating the *given native* local price rho_j F in both independent scalar temporal velocities yields EXACTLY, for arbitrary OFFSHELL v and non-diagonal Lorentz coframe,
+
+  d²_(vv)[rho_j F(x_j,tau q_j/rho_j)]
+    = 2tau [ w_j g_j^{00} I_2
+             +(2tau/rho_j)F_yy(x_j,y_j)c_j c_j^T ].        (19)
+
+This is a direct native all-orders Hessian formula: it does not first assume stationarity, the inverse flow, an extra scalar/matter action, or a result about continuum Einstein fields. On a declared compact faithful Golden N1 chart with g_j^{00}>0,w_j>=w_*>0 and F_yy>=0, the real 2x2 per-cell block is bounded below by w_*g_* I_2, where g_* = min_j g_j^{00}>0. The actual strict F_yy(0)>0 computed from the original cap9/20 detector makes such a native chart available around the common reference.
+
+Write D for the true n-by-(n-1) forward incidence matrix with ORIGINAL Dirichlet scalar endpoint variations zero, so its known, exact finite spectrum obeys
+
+  lambda_min(D^T D)=4 sin²(pi/(2n)).
+
+The entire original **2(n-1) by 2(n-1)** independent scalar matter Hessian at fixed geometric variables is therefore
+
+  H_(theta theta)
+    =(2 M tau/h²) D^T
+      diag_j[ w_j g_j^{00} I_2+
+              (2tau/rho_j)F_yy c_j c_j^T ] D,             (20)
+
+and the Loewner/spectral inequalities give
+
+  BOX: lambda_min(H_(theta theta))
+     >= (8 M tau w_* g_*/h²) sin²(pi/(2n))
+     >= 8 M tau w_* g_*/L² > 0,     L=n h.              (21)
+
+The LAST inequality uses sin(pi/(2n))>=1/n. The resulting inverse bound
+
+  ||H_(theta theta)^-1||_2 <= L²/(8 M tau w_*g_*)
+
+is UNIFORM across refining temporal meshes for fixed physical length L whenever the actual native signal factor M tau w_*g_* has a positive mesh-independent lower bound. If that REAL query/readiness gain shrinks with h, its reciprocal must be retained; this theorem does not silently normalize away the cost of queries or copies. In particular no sitewise smoothness of the fixed positive PF masses is required once their actual nonzero lower bound and common analytic operand chart are secured. The geometric+link full Hessian may remain singular/indefinite and its own inverse is still the genuinely open problem.
+
+**Independent numeric original-Golden control.** On the actual five-site diagnostic of §5, with rho=[1,2,1,3,1], g^{0x}!=0 and nonzero original x/y operands, the directly assembled 8×8 Dirichlet scalar Hessian has
+
+  lambda_min(H)=7.425195779115104e-5,
+  analytical sine bound=6.639513979827627e-5.
+
+Thus the real native Hessian clears its own independently computed strict bound; this is more informative than a numerical positivity label. The updated source checker re-evaluates both inequalities from the actual F_y and metric g^{00}, instead of inserting a fitted spectral gap.
+
+**Next actual Schur test:** on the already-published n3/n4/n5 FULL original gauge-fixed configured N1 numerical roots, calculate the ORIGINAL true matter block (20) and the complete geometric/matter mixed Hessian. Use the legal exact positive scalar inverse (21) to form H_geom,eff=H_GG-H_Gtheta H_thetatheta^-1 H_thetaG, not a pseudoinverse of the arbitrary old 12-source pureboost projection. Test its temporal block locality and true Wilson/Gauss boundary compatibility on the same signed star and native price. The ability to eliminate matter analytically does NOT by itself certify the remaining constrained geometric root or physical Book03 admission. GR_closed=false.
