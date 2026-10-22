@@ -23,6 +23,8 @@ VerificationCore composes the owned necessity, empirical and future-memory theor
 - [Main future-memory owner: future-stable quotient and sufficient retained memory; exact source provenance in foundation intake](https://github.com/gvakhrushev/d0_15/blob/9dabfa0f3782d51496d26784415d7896b8a7652a/03_FORMALIZATION/D0/Foundation/FutureExecution.lean) — опубликованный исследовательский вход
 - [Existing distinction between class admissibility and unique forcing](https://github.com/gvakhrushev/d0_15/blob/5d23e90af703efee7f0deb24517d3ead4780fdfc/03_FORMALIZATION/D0/Foundation/M1ClassAdmissibility.lean) — опубликованный исследовательский вход
 
+- [Marked-history source route and the three remaining selection obstructions](../research/A4D_MARKED_HISTORY_SOURCE_AND_BOOK_SELECTION_GATE_2026_10_22.md) — combines the exact algebraic-feedback/entropy no-go, complete-history marked pressure and first-match clock source, coherent READY common-null Book source, and the certified off-null/cut-selection controls.
+
 **Связанные существующие задачи:** `WRK-A4D-LEAN-FOUNDATION-THEORY-TRANSFER`
 
 ## prospective-native-selection — Минимальный генератор → родной закон физического исполнения
