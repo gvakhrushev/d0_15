@@ -130,3 +130,56 @@ The current source-selection puzzle now has a strict two-way decision:
 In either route, the already owned Jones34 inversion makes the 8+k **vertical paid-source residues** a mathematically exhaustive all-chart test for report-only scalar Book reductions. The original scalar h0/h4 42-roots and source-preserving refinement are consumers, NOT proof that Jones34/Golden READY and Book03 currently share an admitted prepared execution.
 
 **Status:** full42 horizontal iff/unique reconstruction = MATH PROVED under a common carrier; 42-saddle Gibbs no-go/complex stationary phase = MATH PROVED on stated field ensemble; Book03 finite stationarity = SOURCE-DEFINED; mandatory physical phase programme = UNDEFINED; original same-run B and 42-writer = UNDEFINED; all full physical GR/Einstein universality/raw216 = OPEN. GR_closed=false; full_D0_price_selected=false.
+
+
+## 4. NEW exact φ-phase resource: original Golden gate has infinite order, but NO moving C1 phase from pure word selection
+
+This is an exact original-gate algebraic theorem, not a new tunable quantum phase or a physical Cost−Info writer. In Book03 §03.26 the fixed primitive is
+
+\[
+G_\varphi=\begin{pmatrix}a&-p\\p&a\end{pmatrix},\quad
+p=\varphi^{-1}=(\sqrt5-1)/2,\quad a=\sqrt p,\quad a^2+p^2=1.
+\]
+
+It is an orientation-preserving real rotation by \(\theta\in(0,\pi/2)\) with
+
+\[
+\cos\theta=a,\qquad\sin\theta=p.
+\]
+
+**THEOREM 4a — exact original native infinite-order coherent phase gate.**
+\(\theta/\pi\notin\mathbb Q\). The algebraic number \(x=2\cos\theta=2\sqrt p\) has MINIMAL polynomial
+
+\[
+\boxed{x^4+4x^2-16=0.}\tag{7}
+\]
+
+It is irreducible over \(\mathbb Q\): a rational factorization into two monic quadratics either would have zero linear terms, requiring rational roots \(2\pm2\sqrt5\) for their constants, or equal quadratic constants with square \(-16\), impossible over Q. More immediately its Galois conjugates include
+
+\[
+x'=\pm i\sqrt{2+2\sqrt5}
+\]
+
+which are not real. Were \(G_\varphi\) of finite order, \(e^{i\theta}\) would be a root of unity and \(x=e^{i\theta}+e^{-i\theta}\) would be TOTALLY REAL (every conjugate \(\zeta^k+\zeta^{-k}=2\cos(k\theta)\) is real). Contradiction. Hence \(\theta/\pi\) is irrational. The powers \(\{G_\varphi^n\}_{n\in\mathbb Z}\) are DENSE in SO(2), by the standard irrational-rotation theorem. No extra independent angle parameter is mathematically required to approximate any fixed phase with a sufficiently long native Golden word.
+
+This is fully sourced from the OLD φ equation, not the unsupported assertion that φ is maximally irrational *as a rotation angle*. It also does **not** imply an efficient resource bound for obtaining a specified precision by an actually charged word; Golden maximal irrationality pertains to φ itself, not automatically to \(\theta/\pi\).
+
+**Exact phase-calibration distinction:** Book03's *formal* continuation of the positive Cost weight yields \(e^{-in\ln\varphi S}\). But the ORIGINAL Golden gate has \(\theta=\arcsin p\), and strictly
+
+\[
+\boxed{\theta>p>\ln\varphi>0.}\tag{8}
+\]
+
+Here \(\sin\theta=p<\theta\) and \(\ln\varphi<\varphi-1=p\). The actual native one-gate phase is thus NOT the formal Book03 phase \(\ln\varphi\), even modulo \(2\pi\). Numerically \(\theta\simeq0.66623943249\), \(\ln\varphi\simeq0.48121182506\). No invented equality or fitted coupling between them is licensed.
+
+**THEOREM 4b — finite-word C1 obstruction.** Let \(\mathcal U\) be a connected genuine smooth original 42-field chart and assume a would-be phase writer uses ONLY a determined integer power \(G_\varphi^{n(y)}\), no field-dependent input superposition, no new continuously moving original operation. If the resulting matrix-valued field \(y\mapsto G_\varphi^{n(y)}\) is continuous, then it is CONSTANT on \(\mathcal U\): its image is a connected subset of the COUNTABLE orbit \(\{G_\varphi^n\}\), and every connected subset of a countable subset of the circle is a singleton. Therefore
+
+\[
+\boxed{D_y[G_\varphi^{n(y)}]=0\quad\text{on any connected C1 chart}.}\tag{9}
+\]
+
+Density of the native powers does NOT make a continuously moving field-phase primitive out of discrete finite-word selection. At finite level, choosing different powers by a discontinuous field lookup supplies no legitimate C1 source either. An actually sourced φ-coherent continuation must instead use a PREPARED field-dependent quantum state, coherent superposition of genuinely charged paths, or a separate admitted continuously moving native coupling, with TRUE first source, original RIGHT/work/clock and full branch Info. That precise remaining interface is the higher-leverage phase gate; repeating the Golden mixer a large number of times is NOT it.
+
+Independent exact SymPy/standard-library checker for (7)–(9) gives 13 scoped symbolic/numeric controls. A bounded search up to 100000 powers happens to approximate the FIXED phase \(\ln\varphi\) within \(1.8\cdot10^{-6}\) at 16731 gate powers. This is a diagnostic of the dense orbit only, NOT a continuously sourced compiler or physical cheap preparation.
+
+**Physical consequence:** the same φ primitive actually supplies the **phase carrier** necessary for an eventual saddle-based coherent mechanism (no fresh angle), but its C1 field-phase SOURCE cannot arise from a bare integer step count. This consumes both sides of the strategic route without claiming \(S_{Book}\) is physically encoded by those phases. GR_closed=false.
