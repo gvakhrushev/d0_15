@@ -58,6 +58,22 @@ S_{0/10}=\nu\sum_z\rho_z\bigl[
 
 This identity is valuable precisely because it exhibits why mathematical *value* identity to an affine J₂ is FALSE off-null: `Φ(1−e^(−j/528))` is nonlinear in j. No coefficient adjustment is allowed to hide the source mismatch.
 
+### 2a. EXACT native 0/10 Cost−Shannon is Golden Kraft KL — different from the Book J2 void score
+
+The original two branch codewords are **F=0, R=10**, with *actual* lengths 1,2 and native normalized Kraft reference probabilities \(\mu=(p,p^2)\), since \(p+p^2=1\). For the SAME actual measured click r,
+
+\[
+\boxed{
+D_\varphi\bigl((1-r,r)\Vert(p,p^2)\bigr)
+=(1-r)\log_\varphi\frac{1-r}{p}
++r\log_\varphi\frac{r}{p^2}
+=1+r-h_\varphi(r).}\tag{2a}
+\]
+
+Thus *given* the actually declared complete F/R pointer-dephasing experiment, its **measured** net Price−Shannon score has no freely fitted relative-reference distribution: it is exactly the original Kraft-code KL against (p,p²). On the SAME original event, the already owned full active Book J₂ logdet is **another score**, the absolute fixed no-click surprisal \(j_2=-528\ln(1-r)\). These are TWO exact source-typed readout valuations of one physical mathematical two-factor Bernoulli law, not two different detectors. The Book03 compulsory pathwise/algebra-valued vertex Info is NOT thereby identified with that measured Shannon; it must still be selected independently.
+
+A strict original native negative control is \(r=p^2\): the whole code KL is ZERO and its derivative vanishes (the measured law equals its Kraft code), but J₂ remains strictly positive and has a nonzero derivative. Therefore value agreement and all-chart first-source agreement of the two aggregations are FALSE; only their source directions on the genuinely constant-report null sheet are proportional as proved below. The [updated original checker](sources/d0_unpadded_n1_j2_brinkmann_weld_2026-10-22/check_n1_j2_brinkmann_weld.py) includes 7 independent native all-branch KL/score/Book negative controls.
+
 ## 3. Exact algebraic coincidence of the ORIGINAL Einstein/CAR source ratio
 
 Use the ORIGINAL Golden closure `4p³+p⁶=1`. At `x=y=0` the actual factors become
@@ -198,6 +214,6 @@ while original finite spatial harmonic error is O(h²); the resulting Lorentz me
 
 **STRICT original physical missing inputs:** selecting N=1 complete measured code as the **compulsory** original Book03 H+J+R/Cost−Info action, exact physically allowed same-initial field/writer and Q8/CAR/oldRIGHT/clock/controller/preparation/failure registers, independently varied input/observer Euler, genuine Book03 active projector and Δ_N spectral heat law, a universal all-history C¹ source-normalized space-time refinement, and original raw216. The equality of the displayed Book J₂ block and the original N=1 no-click surprisal is a new MATHEMATICAL SAME-OPERAND identity, not the physical selection of its entire action stack. The old 40→3→1 proof retains literal EPS_PLUS; comparing to native N=1 canonical G2STAR requires the exact **minus** sign proved by the original owner.
 
-**Verification**: [49-control executable](sources/d0_unpadded_n1_j2_brinkmann_weld_2026-10-22/check_n1_j2_brinkmann_weld.py) independently checks original φ algebra, full nonlinear event/no-click logdet for five positive off-null operands, symbolic exact λ, original unpadded normalization, actual `Dρ` cancellation for nonuniform site weights, and separate exact discrete harmonic/Cartan/Poisson/matter stencil identities. It **consumes** but does not rerun the 40+2 old original all-plaquette checker, the expensive 1764-Hessian new h₀ interval proof or Lean/G0 physical programme. Local normal run passes all 49 checks.
+**Verification**: [56-control executable](sources/d0_unpadded_n1_j2_brinkmann_weld_2026-10-22/check_n1_j2_brinkmann_weld.py) independently checks original φ algebra, full nonlinear event/no-click logdet for five positive off-null operands, symbolic exact λ, original unpadded normalization, actual `Dρ` cancellation for nonuniform site weights, and separate exact discrete harmonic/Cartan/Poisson/matter stencil identities. It **consumes** but does not rerun the 40+2 old original all-plaquette checker, the expensive 1764-Hessian new h₀ interval proof or Lean/G0 physical programme. Local normal run passes all 56 checks.
 
 `GR_closed=false; full_D0_price_selected=false; original_raw216_closed=false`.
