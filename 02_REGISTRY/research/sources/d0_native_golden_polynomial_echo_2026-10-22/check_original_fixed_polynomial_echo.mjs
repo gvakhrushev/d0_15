@@ -63,7 +63,7 @@ function native(r){
  const f=(1-r*r)**2;
  const P=5*r**4+r**3-8*r*r-r+5;
  const Q=23*r**4+6*r**3-32*r*r-10*r+25;
- const m=9*P/(3200*f),dd=81*Q/(10240000*f*f);
+ const m=9*P/(3200*f),dd=81*Q/(10240000*f);
  const eps=Math.sqrt(m*m-dd);
  return {r,m,eps,eigen:[m-eps,m+eps],x:[t*(m-eps),t*(m+eps)]};
 }
