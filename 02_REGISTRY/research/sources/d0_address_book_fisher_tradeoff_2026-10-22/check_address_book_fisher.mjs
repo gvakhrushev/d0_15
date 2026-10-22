@@ -150,9 +150,9 @@ function book(census,r){
  for(const K of [1,2,10,100,1000]){
    const A=abort(K);
    check(A>0&&A<1,'honest full original site-addressed first-match has real finite-K aborts');
-   const length=1+qAddr.reduce((s,q)=>s+(1-Math.exp(K*Math.log1p(-q))),0);
+   const length=1+qAddr.reduce((s,q)=>s-Math.expm1(K*Math.log1p(-q)),0);
    const identity=mAddr+1-qAddr.reduce((s,q)=>s+Math.exp(K*Math.log1p(-q)),0);
-   approx(length,identity,1e-12,'true capped expected number of complete Golden trials incl all aborts');
+   approx(length,identity,5e-9,'true capped expected number of complete Golden trials incl all aborts (Kac identity; subtracting 8193 numbers loses finite precision)');
    const maxSite=a*Math.max(...w);
    const bound=a*Math.exp(K*Math.log1p(-maxSite));
    check(A>=bound-3e-13,'strict all-READY native site-anchor abort lower bound with actual wmax');
