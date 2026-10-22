@@ -24,14 +24,27 @@ ok(128n*exactInt(617,10)>exactInt(1000,10),
  'RIGOROUS BIGINT 128*(617/1000)^10 >1 certifies all original full128 n<=10 entangled');
 ok(128n*exactInt(5,11)<exactInt(8,11),
  'RIGOROUS BIGINT 128*(5/8)^11 <1, sufficient threshold not assured for n11');
+// Stronger operational JOINT-test contrast than product of SAME marginals:
+// Bell fidelity of rho_D,n x (I_R/d) is exactly 1/d² for every DATA density.
+// Native whole Choi fidelity >=p^n >1/d² for EVERY n<=20, actual p coefficient.
+// This does NOT imply D:R entangled beyond first 10 rounds.
+ok(16384n*exactInt(617,20)>exactInt(1000,20),
+ 'EXACT BIGINT 16384*(617/1000)^20>1: native same-marginal Bell test distinguishes 20 rounds');
+ok(16384n*exactInt(5,21)<exactInt(8,21),
+ 'EXACT BIGINT p^21<1/16384 with conservative p<5/8: NOT forced by this one Bell witness');
 const full128=[];
-for(let n=0;n<=18;n++){
+for(let n=0;n<=21;n++){
  const lazy=p**n,Fmin=lazy;
  const Nmin=(d*Fmin-1)/2;
  const ElogMin=Math.max(0,Math.log(d*Fmin));
  const trDistanceToSepMin=Math.max(0,2*(Fmin-1/d));
  full128.push({n,lazy,Fmin,negativityLower:Math.max(0,Nmin),
   logNegativityLower:ElogMin,traceDistanceFromAllSeparableLower:trDistanceToSepMin});
+ if(n<=20){
+   ok(Fmin>1/(d*d),
+      'entire original full128 Choi Bell probability > product with IDENTICAL DATA and right marginals');
+   ok(Fmin-1/(d*d)>0,'specific physically routable Bell observable native source distinguishes ALL n<=20');
+ }
  if(n<=10){
   ok(d*Fmin>1,'for every original R CPTP n<=10 CHOI remains entangled');
   ok(Nmin>0&&trDistanceToSepMin>0,
@@ -128,6 +141,8 @@ ok(Math.log2(bellCircuit.d)===bellCircuit.qubits,
 const information={entangledFull128Until:10,
   originalFull128ChoiNegativityN1:full128[1].negativityLower,
   originalFull128ChoiNegativityN10:full128[10].negativityLower,
+  originalFull128BellVsSameMarginalProductGuaranteedUntil:20,
+  guaranteedBellVsProductGapN20:full128[20].Fmin-1/(d*d),
   originalCAR16GuaranteedUntil:130,
   source130:car16[129].cleanLorentzSource};
 console.log(JSON.stringify({status:"PASS_NATIVE_GOLDEN_CHOI_ENTANGLEMENT_THROUGH_TEN_AND_CAR16_130",checks,
@@ -135,7 +150,7 @@ console.log(JSON.stringify({status:"PASS_NATIVE_GOLDEN_CHOI_ENTANGLEMENT_THROUGH
   full128:"Phi=p Id+p² R_CP, ORIGINAL oldRIGHT128 maximally entangled Choi",
   CAR16:"original all128-Kraus Fourier boosted ν=3/5, K0=I-2p² A², exact CAR16 µ,h,µ_r,h_r"
  },
- certifiedGoldenOriginal128:full128.filter(x=>[1,2,5,8,9,10,11].includes(x.n)),
+ certifiedGoldenOriginal128:full128.filter(x=>[1,2,5,8,9,10,11,19,20,21].includes(x.n)),
  certifiedCAR16:car16.filter(x=>[1,10,50,100,125,130,131].includes(x.n)),
  information,bellCircuit,
  actualOriginalFull128OriginalSceneAll42SourceNotReplayed:true,
