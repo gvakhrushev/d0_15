@@ -33,6 +33,16 @@ D(\rho\Vert\sigma)
 \]
 for EVERY faithful-on-support \(\sigma\in\mathfrak A_{\rm ptr}\) with finite relative entropies. This follows from \(\operatorname{Tr}\rho X=\operatorname{Tr}\bar\rho X\) for \(X\in\mathfrak A_{\rm ptr}\), particularly \(X=\log\bar\rho,\log\sigma\). Thus \(\bar\rho\) is the **UNIQUE** relative-entropy-minimal registered-result state. Neither an entropy formula nor a spectral \(-\log r\) is separately selected here; \(\log\) enters from the standard finite quantum relative-entropy comparison of TWO states actually defined by the record algebra.
 
+There is an even stronger **Book06 conditional-maximum-entropy universal property**. Among ALL density matrices \(\sigma\) preserving exactly the actual registered-result constraints
+\(\mathcal E_{\rm ptr}\sigma=\mathcal E_{\rm ptr}\rho=\bar\rho\), one has
+\[
+\boxed{S_{\rm vN}(\sigma)\le S_{\rm vN}(\bar\rho),
+\qquad \text{equality iff }\sigma=\bar\rho.}\tag{2a}
+\]
+Proof: apply (2) with \(\sigma\) in the first argument and \(\bar\rho\) in the second: since \(\mathcal E\sigma=\bar\rho\),
+\(D(\sigma\Vert\bar\rho)=S(\bar\rho)-S(\sigma)\ge0\).
+Thus the **same unique block-pinched state simultaneously** solves minimum relative information loss and maximum entropy compatible with ALL given native block observables. This consumes Book06's existing fixed-observable maximum-entropy forgetting principle rather than declaring a fresh arbitrary \(h_\varphi\) penalty. Which complete observable constraints are physically retained, and whether Book03 \(\operatorname{Info}\) values their entropy gap, remain separate typed physical tests.
+
 If the native *allowed future action/test family* has Heisenberg observable algebra \(\mathfrak A_{\rm future}\subseteq\mathfrak A_{\rm ptr}\) (i.e., none of the supplied admissible future words mixes the already protected result sectors), the corresponding trace-preserving expectation \(\mathcal E_{\rm future}\) has an EXACT additional positive defect:
 \[
 \boxed{
