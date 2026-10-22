@@ -105,6 +105,18 @@ def run():
                            +norm(dw-w*dr/r)**2/r)]
         for k in range(3):
             check(errs[k]<bounds[k],f'full native moving-PF C{k} bound')
+        # STRICT FINITE nonlinear regularization: the original unpadded
+        # price is above its tangent Palatini+CAR source, with a unique
+        # positive Legendre/PF pressure and an exact two-sided quadratic bound.
+        zt=mp.matrix([tau*f(0)/r,tau*q(0)/r]);cs=native(mp,zt[0],zt[1])
+        V=zt[0]*cs['a']+zt[1]*cs['b']-cs['c']
+        mu=mp.mpf('4.48e-7')
+        check(mu*norm(zt)**2/2 < V < M*norm(zt)**2/2,
+              'entire original microscopic Legendre-pressure bounds')
+        check(K0*mu*tau*norm(w)**2/(2*r) < S(0)-A(0)
+              < K0*M*tau*norm(w)**2/(2*r),
+              'strict native nonlinear quadratic sandwich')
+        check(-K0/tau*V<0,'increasing moving PF lowers unpadded price at fixed operands')
         correction=K0*tau/(2*r)*(w.T*mp.matrix([
                      [o['hxx'],o['hxy']],[o['hxy'],o['hyy']]])*w)[0]
         check(abs(S(0)-A(0)-correction)<2*tau**2,
