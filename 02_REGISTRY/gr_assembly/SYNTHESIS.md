@@ -23,10 +23,6 @@ VerificationCore composes the owned necessity, empirical and future-memory theor
 - [Main future-memory owner: future-stable quotient and sufficient retained memory; exact source provenance in foundation intake](https://github.com/gvakhrushev/d0_15/blob/9dabfa0f3782d51496d26784415d7896b8a7652a/03_FORMALIZATION/D0/Foundation/FutureExecution.lean) — опубликованный исследовательский вход
 - [Existing distinction between class admissibility and unique forcing](https://github.com/gvakhrushev/d0_15/blob/5d23e90af703efee7f0deb24517d3ead4780fdfc/03_FORMALIZATION/D0/Foundation/M1ClassAdmissibility.lean) — опубликованный исследовательский вход
 
-- [Marked-history source route and the three remaining selection obstructions](../research/A4D_MARKED_HISTORY_SOURCE_AND_BOOK_SELECTION_GATE_2026_10_22.md) — combines the exact algebraic-feedback/entropy no-go, complete-history marked pressure and first-match clock source, coherent READY common-null Book source, and the certified off-null/cut-selection controls.
-
-- [Original CAR16/full128 stationary two-port memory source and exact rank-two native atlas](../research/A4D_ORIGINAL_FULL128_STATIONARY_PORT_CORRELATION_SOURCE_2026_10_22.md) — without DATA reset, original Golden port covariance is c²h(μ−h)>0 iff native Δ is nonscalar; the true two-port mutual-Info field source is strictly nonzero, and the two native positive probabilities (q1,q11) have an exact invertible (boost, ν) Jacobian, including an explicit one-port-blind source direction. This is a measured native memory/Book-Info admission gate, not compulsory physical HJR or GR closure.
-
 **Связанные существующие задачи:** `WRK-A4D-LEAN-FOUNDATION-THEORY-TRANSFER`
 
 ## prospective-native-selection — Минимальный генератор → родной закон физического исполнения
@@ -171,8 +167,3 @@ The verification kernel and generic operational transfer are composed and have d
 Содержимое результата с гипотезами: `python3 tools/gr_assembly.py --json puzzle QUERY`.
 Перед запуском работы: `python3 tools/task_dispatch.py TASK-ID`.
 Во время синтеза достаточно изменённого расчёта/узкого теста; окончательная проверка — на приёмке.
-
-
-### 22 October — original full128 non-reset complete measured-information source (Draft #334)
-
-[Exact stopped-history KL/Holevo source and independent-preparation defect](../research/A4D_NATIVE_FULL128_STOPPED_KL_QUANTUM_MEMORY_BUDGET_2026_10_22.md) joins the original native noncommuting stationary full128 CAR16 channel to **whole measured stopped fine-history** Price−Info without an iid reset or a Markov reduction: \(H(\Gamma)=(m+1)H(q)-D_{\rm KL}(P_{\rm stopped}\Vert Q_{\rm iid,stopped})\), with \(I(Z_0;Z_1)\le D_{\rm KL}\le m S_{\rm vN}(\rho_*)\) and the exact native preparation-defect source. The [narrow native checker](../research/sources/d0_quantum_return_entropy_2026-10-22/check_native_return_kl.py) evaluates the original CAR16/full128 nonreset binary port-stop and its one-port-invisible source (finite differences are **numerical**, not an interval sign proof); the full 128-fine stopped entropy and physical selected Book03 Info/Hodge/cut/clock/independent inputs remain OPEN. \`GR_closed=false\`.

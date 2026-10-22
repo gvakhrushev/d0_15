@@ -1,5 +1,57 @@
 # A4D joint response on fixed smooth sources: PARTIAL / OPEN
 
+## 22 October 2026 — complete actual-cut source and original retained quantum history
+
+[Complete native source reduction](A4D_NATIVE_COMPLETE_SOURCE_REDUCTION_2026_10_22.md)
+and its [frozen proof/check packet](sources/d0_native_complete_cq_source_2026-10-22/README.md)
+consume the generated-thermal source in the existing Draft #334. On the
+owned rank-one READY apparatus, **every admitted fixed-calibration source**
+obeys `d(H_C+J)=R dJ`, with `34165/50549 <= R < 1`. This includes moving
+preparation/controller/cut directions and preserves the complete critical
+Hessian kernel/inertia. The old common-null all42 inheritance is retained;
+the theorem does not identify this apparatus with the distinct configured
+off-null CQ action or eliminate a genuine independent input reaction.
+
+For the original CAR16/full128 stationary marginal, maximum entropy under
+the actual one-port moment is solved: the native two-band inverse-square
+state is its unique maximizer and its marginal forgetting-gain first source
+is zero on every smooth tangent. The **full history** is different. The
+new calculation retains conditional DATA, all preparation derivatives and
+all outcome slots. For a specified full history-diagonal work algebra,
+the actual pinching is the unique maximum-entropy state and
+`I_gain=S(Gamma)-S(rho_initial)=D(Omega || E Omega)`. On the original
+one-round proper-boost fixture, pointer, complete-CQ and gain sources are
+approximately `-0.01446891`, `-0.03025900` and `-0.01489234` respectively.
+The two-round application and exact finite stopped-tree source are included.
+
+The [concurrent-source intake](sources/d0_native_complete_cq_source_2026-10-22/CONCURRENT_INTAKE.md)
+composes this with the separately published two-Kraus stopped-price/Poisson
+preparation result, retaining the exact CQ-to-gain input-cotangent correction.
+It also preserves the original stage-clock cut-blindness theorem: an entropy
+conditional expectation is not a selected Book active projector. Actual
+Book03 heat/cut/Info, paid preparation, field writer and independent upstream
+equations must still be identified on one execution. The new finite full42
+continuous-source budget is a distinct downstream consumer; no transport or
+bound of the present Fourier-fixture source in its coordinates is asserted.
+The packet has 173 scoped checks and independent frozen-input reviews;
+no physical GR, raw216, assembly or lifecycle status is promoted.
+
+Related same-owner source-selection inputs remain the
+[marked-history pressure and Book selection gate](A4D_MARKED_HISTORY_SOURCE_AND_BOOK_SELECTION_GATE_2026_10_22.md),
+[original stationary full128 two-port memory and native atlas](A4D_ORIGINAL_FULL128_STATIONARY_PORT_CORRELATION_SOURCE_2026_10_22.md),
+and the later [complete stopped-history KL/Holevo source with preparation defect](A4D_NATIVE_FULL128_STOPPED_KL_QUANTUM_MEMORY_BUDGET_2026_10_22.md).
+The last theorem preserves the full fine-history pointer source without
+an iid reset; its original numerical stopped control uses binary ports.
+The conditional quantum-work source in this packet and the later
+[complete preparation-Poisson/Hessian map](A4D_COMPLETE_NATIVE_FIRST_MATCH_ENTROPIC_POISSON_PREPARATION_AND_HESSIAN_2026_10_22.md)
+are complementary consumers, with the actual retained algebra and the
+stationary-state constraint still stated explicitly.
+The [later stopped-source intake](sources/d0_native_complete_cq_source_2026-10-22/LATER_STOPPED_SOURCE_INTAKE.md)
+gives the exact terminal-quantum-work/gain substitution and clarifies that
+the stationary-base-point reference-gradient cancellation holds even on
+an off-stationary tangent; the genuine extra price source is the separately
+retained preparation-defect term.
+
 **Stopped minimality/source extension, 20 October 2026:**
 [every fixed T >= 5 and ell >= 1](A4D_NATIVE_STOPPED_MINIMUM_TO_J2_SOURCE_2026_10_20.md)
 now preserves a nonzero multiplier of the original full DJ2 at every

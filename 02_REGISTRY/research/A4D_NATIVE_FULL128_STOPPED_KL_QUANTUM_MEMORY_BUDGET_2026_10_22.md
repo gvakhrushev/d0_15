@@ -85,7 +85,7 @@ D\mathcal M=\sum_w[DP(w)]D_{\rm KL}(q_{\cdot|w}\Vert q)
 \]
 Every native coframe/link/observer/initial-state dependence present in the real \(D K_z,D\rho_*\) enters here. At a fixed finite stop cap the reference derivative and all abort leaves must instead be differentiated explicitly; they do not vanish by fiat.
 
-Crucially, simply *freezing* a density at a point where it happens to be stationary does not preserve (6). For arbitrary faithful moving initial DATA \(\rho\), write
+At a stationary **base point**, (6) also holds for a tangent that leaves the stationary family, including a frozen initial density: the reference-gradient term is \(-\sum_z(Dq_z/q_z)\sum_wP(w)q_{z|w}=-m\sum_zDq_z=0\) at that point. What fails for such a tangent is differentiating the reduced price (2) while omitting the preparation-defect source below. For arbitrary faithful moving initial DATA \(\rho\), write
 \[
 \delta=(\Phi-I)\rho,\quad \mathcal R_a=(I-\mathcal T_a)^{-1},\quad
 q_z=\operatorname{Tr}\mathcal I_z(\rho),\quad

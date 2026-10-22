@@ -15,6 +15,45 @@ Assembly-Slot: `constitutive`
 
 ## Strategic synthesis continuation — 2026-10-17
 
+### 22 October: complete the original quantum history information source
+
+Continue existing Draft334 / native-programme-v1 from published
+`cd7595b0808e47c38147f25e2cabe476ecb508f8`, preserving the generated-thermal
+source application and the scoped original proper-boost tests. The missing
+parent premise is the information part of the SAME retained execution,
+including conditional quantum DATA, preparation reference, oldRIGHT and
+actual finite stopping. A coarse two-port mutual-information bound is not
+a bound on this complete source.
+
+Root owns the existing primary memo and
+`sources/d0_native_complete_cq_source_2026-10-22/`. Bounded assistants
+derive the Book06 maximum-entropy application and the complete efficient-
+instrument entropy telescope on disjoint paths in that packet; independent
+review checks the actual native-map application. Reuse the owned original
+CAR16/full128 constructor, inverse-square preparation and native source jets.
+No old geometric root, full suite or Lean build is required. The decisive
+checks compare the complete conditional quantum source with the actual
+finite history blocks and distinguish a retained purification from a
+traced reference and an oldRIGHT spectator.
+
+The consumer is the complete information residual in the generated-thermal
+source packet, not a new chosen action. The literal Book03 bare H+J, its
+actual heat/cut identification, physical selection and all independent
+upstream equations keep their existing scope. This work may solve a
+declared information/preparation subproblem but may not equate measured
+entropy with the compulsory Book scalar by definition, use an entropy
+value bound as a derivative bound, or promote GR/lifecycle status.
+
+Final application: `A4D_NATIVE_COMPLETE_SOURCE_REDUCTION_2026_10_22.md`
+composes the global actual-cut positive source multiplier, solved two-band
+maximum-entropy marginal, and complete history/work source on their distinct
+carriers. The packet contains 173 bounded checks, immutable receipts,
+independent frozen reviews and a read-only registered entrypoint. Its
+`CONCURRENT_INTAKE.md` preserves the later two-Kraus stopped-price/Poisson
+result, the CQ-versus-gain initial-state correction and the stage-only cut
+obstruction. The new finite all42 residual budget remains a downstream
+consumer requiring a genuine same-carrier normalized source map.
+
 ### 22 October: complete the coupled cut-heat partition application
 
 Continue the same native-realization / final-composition owner at published
