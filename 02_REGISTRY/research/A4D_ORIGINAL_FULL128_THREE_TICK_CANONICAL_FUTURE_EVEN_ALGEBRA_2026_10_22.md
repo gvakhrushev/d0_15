@@ -182,3 +182,96 @@ is a **mathematical** unique pinching-relative-entropy quantity; it is NOT intro
 
 No Book/CORE/formal source/status change, field action choice, fresh full128 expensive numerical simulation, physical claim promotion, source fitting or new root scan is made. The exact modular certificate (true integer arithmetic) is
 `sources/d0_original_full128_future_even_algebra_2026-10-22/check_future_even_algebra_modprime.py`.
+
+
+## 6. NEW exact composition with accepted D0 future verification semantics
+
+The accepted `03_FORMALIZATION/D0/Foundation/FutureExecution.lean` and
+`D0_VERIFICATION_CORE_COMPOSITION_2026_10_20.md` prove that the
+canonical record identity is equality of ALL future profiles for the
+**actually supplied** action/test family, and that an adequate compressed
+memory must distinguish the quotient. The present original-Kraus
+calculation gives that abstract quotient an explicit finite native
+operator meaning for a nontrivial physical CAR16 instrument:
+
+\[
+\boxed{\text{original fine cylinder history profile of }\rho
+\quad\longleftrightarrow\quad
+\mathcal E_\Pi(\rho)\in M_8\oplus M_8 .}\tag{17}
+\]
+
+This is an **operational realization of the future-profile kernel**,
+not an inference of the original quantum dynamics from the abstract
+verification contract. No additional labels are added; the three-tick
+witness uses the same original 128 alphabet, actual K, original
+chronology, and charged fresh pointer memory.
+
+There is also an exact transition congruence, **stronger than just
+equality of outcome distributions**. For each original parity-homogeneous
+Kraus map \(K_\alpha\), and every DATA operator X,
+\[
+\boxed{
+\mathcal E_\Pi(K_\alpha X K_\alpha^\dagger)
+=K_\alpha \mathcal E_\Pi(X)K_\alpha^\dagger.
+}\tag{18}
+\]
+Proof: \(\Pi K_\alpha=\varepsilon_\alpha K_\alpha\Pi\)
+with \(\varepsilon_\alpha\in\{\pm1\}\), and both signs cancel
+inside the conjugation. Thus the actual *unnormalized*
+branch CP maps descend to the canonical even quotient; the
+sum of those maps, and all their chronological compositions,
+descend as well. Branch normalization is performed only on
+positive branches. Zero/dark branches are retained and never
+divided by their probability.
+
+**Correct type for the accepted foundation:** an outcome label
+\(\alpha\) is NOT a freely executable deterministic action. To
+represent the actual native tick as a deterministic process, use
+the FULL measurement/Stinespring map that appends an orthogonal
+fine pointer register and retains it; a future test reads a
+finite cylinder of those registers. Its probability equals (1)
+without selecting a branch. On this typed complete-record
+subtheory, equality of future cylinder-test probabilities on
+the INPUT DATA factor is exactly (13), while an already stored
+physical archive can also distinguish distinct PAST labels
+even when the DATA state has the same parity-pinch. One may
+never quotient away those past records or their real code cost
+using the DATA-only equality (13).
+
+This gives an explicit **same-native-operational-process**
+substitution for the generic kernel's future-equivalence
+requirement, not yet for its compulsory physical dynamics/
+Book03 valuation, independent comparison-line preparation or
+`gr_operational_realization`. It is meaningful that the
+quotient can now be TESTED with only three finite genuine
+repetitions; the generic quotient proof did not provide such
+a native finite cutoff.
+
+### Exact physically testable source criterion for proposed Book information
+
+On THIS declared original DATA-only future process, any candidate
+state-dependent Book Info/Price functional \(I(\rho)\)
+claimed to be determined **solely** by those future
+measurement records must satisfy the exact iff factorization
+\[
+\boxed{
+I(\rho)=\widetilde I(\mathcal E_\Pi\rho)
+\quad\Longleftrightarrow\quad
+I(\rho)=I(\sigma)\ \text{whenever ALL original futures agree.}
+}\tag{19}
+\]
+This is a taut but now fully concrete and testable **128-dimensional
+quotient criterion**, not a new definition of compulsory Info.
+For differentiable I the necessary condition is
+\(DI_\rho[\delta\rho]=0\) on every parity-odd trace-zero
+tangent. If the candidate fails, it either uses genuine
+additional physical tests/resources/RIGHT correlations,
+or it uses a distinction unsupported by this complete
+original DATA-future test family. **The full Book03 may
+legitimately use those additional native objects**; it is
+not rejected without testing them.
+
+The canonical quotient and standard future-profile laws are
+therefore now mathematically JOINED for an ACTUAL original
+instrument, but the action-value selection is explicitly
+a different proposition.
