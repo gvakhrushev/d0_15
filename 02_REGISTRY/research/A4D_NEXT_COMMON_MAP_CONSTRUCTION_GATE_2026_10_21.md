@@ -1156,3 +1156,34 @@ Its TRUE first scalar curvature-source scale defect has strictly nonzero sign \(
 \boxed{c''>0,\quad c'''<0,\qquad j''<0,\quad j'''<0.}
 \]
 These SIGNS follow analytically from original native \(p+p^2=1,\ \zeta=2^{-20},\ A_{xx}=-8p^4(1-4p^3)<0\), the previous outward original \(c_{xx}>1.0788e-6\), and positive rare Bernoulli \(r\); no extra source is inserted. For ANY real constant \(\beta\), \(c+\beta j\) has positive SECOND derivative if β≤0, or negative THIRD derivative if β≥0; no constant multiplier can make both vanish. But any analytic one-Golden-scale weight-one scalar on this curvature chart MUST have both derivatives zero at flat, by differentiating \(F(\varphi^2x)=\varphi^2F(x)+K\). Thus merely choosing a new fixed coefficient in front of existing J₂ can NEVER establish generic Einstein via the already owned Golden zoom theorem. A nonconstant true Book heat/Info/oldRIGHT/clock/work source or an actually admitted \(h^2\)-aperture operand/compiler is necessary. β≈0.05006937 cancels the quadratic coefficient only; the original third jet stays \(-4.0087e-9\), strictly nonzero. This **does not exclude** the full physically selected Book03 with its independent field-dependent terms, alternate physical action or stationary solutions in other sectors. GR_closed=false.
+
+
+## 22 October — EXPLICIT Golden pointer-label selector + UNIQUE same-original Kraus Kraft/Gibbs/Holevo first-source projection
+
+[One ACTUAL native controlled Golden X label-gauge theorem](A4D_ORIGINAL_FULL128_GOLDEN_POINTER_X_INVARIANT_BOOK_DIFFERENT_PRICE_2026_10_22.md) and the [UNIQUE no-fit Kraft/Gibbs/Holevo same-run information projection](A4D_ORIGINAL_FULL128_UNIQUE_KRAFT_GIBBS_HOLEVO_SAME_RUN_INFORMATION_PROJECTION_2026_10_22.md) now close a specific formerly vague Book01/06/03 operator/Info interface ON THE EXACT UNCHANGED CAR16/full128 + oldRIGHT source. This is a positive finite **exact SAME-SOURCE decomposition**, not original Book03 physical selection.
+
+First, ALL original Walsh j>0 have K_(2j)=pL_j,K_(2j+1)=sqrt(p)L_j, with the fixed original literal 0/10 costs (1,2). Applying the **already original native X** BEFORE recording only those j>0 ports swaps two amplitudes but leaves the complete actual DATA CP channel, the actual K0, BOTH original prepared and future-P_rec THREE-MODE Book/Hodge spectra, whole fine Shannon, and actual moving inverse-square preparation **IDENTICAL on the open original CAR source chart**. Yet:
+\[
+S_{\rm original\ fine}-S_{\rm native-X\ fine}
+=p^3\,q_{\rm NB},\qquad
+D_r(S_{\rm original}-S_{\rm X})=-0.00071308150178\ldots
+\quad(r=1/9,\nu=3/5).
+\]
+The X version is a DIFFERENT pre-measurement programme and requires its own real paid row predicate/controller. An original conditional gate costing c_X extra per TRUE nonblank completed event favors the original physical readout exactly when c_X >= p^3; do not ASSUME the controller is free, or that G0 has already admitted that controlled operation. It is therefore impossible to recover original 0/10 **labelled PRICE** merely from the unlabeled CP channel, Book F, incidence-Hodge spectrum and registered Shannon: a physically selected word orientation is essential.
+
+Second, on ONE original actually measured fine cq state chi_(JB,DR), with the TRUE code reference mu_B=(p,p²), and the **declared original CAR Delta** Gibbs comparator sigma=e^(-beta Delta)/Tr e^(-beta Delta), beta=2p², minimize the cq relative entropy to eta_J mu_B sigma_D rho_R over ALL row references eta (Book06 retained-row conditional comparison). Its unique minimizer is eta=q_J, and the resulting **exact entire scalar and source** is
+\[
+\min_\eta D(\chi\Vert\tau_\eta)
+=K_{B|J}+D(\bar\rho_D\Vert\sigma_{\beta,\Delta})
+ +I(D:R)+\chi(JB:DR),
+\]
+no commuting-filter assumption, no fitted native coefficient and no omitted prepared-input derivative. On a real stationary DATA product oldRIGHT input, the Gibbs term is the **positive** inverse-square-vs-Gibbs preparation reaction, and the Holevo term is the ACTUAL original fine register state information. ORIGINAL high-precision outward source at r=1/9:
+\[
+\boxed{D_r K_{B|J}\in(0.00149446500172038,0.00149446500172039),
+\quad D_rD(\rho_*\Vert\sigma)\in(0.01504610155394310,0.01504610155394312)}
+\]
+both in natural units, **opposite to the old negative p³-only NONBLANK source**. Direct original 128 Kraus numerics give Holevo \(\chi=0.00016955914079\) and no-fit total scalar \(0.47288690714451\) nats; its total field derivative is numeric only. [Git-blobb-pinned real native checker](sources/d0_original_full128_information_projection_2026-10-22/check_native_kraft_gibbs_holevo.py), [honest local original-formula and outward interval receipt](sources/d0_original_full128_information_projection_2026-10-22/RESULT_LOCAL.json). This is a physically typed operator PROJECTION candidate, not original compulsory Book03 SCENE Hodge or Info.
+
+Third, the **actual fixed original 0/10 coarse N1 OR output** at the RIGOROUS h0 unpadded 42-root has r in (1e-6,1e-5): its code orientation **already** puts the more probable coarse outcome in the cheap 1-tick word. Unconditionally swapping that external OR bit would increase the unpadded expected code cost by \(1-2r>0\), with Shannon unchanged. This is NOT the reverse-frequency internal j>0 CAR twin. Physically merging the two instruments/label tasks before paying them is a TYPE ERROR, not a missing sign convention. It is consistent for native coarse OR to be the cheaper fixed external report while original microscopic nonblank CAR ports require a separately paid controller to change the internal orientation.
+
+**Hard full-GR acceptance:** choose same physical clock cut, actual native fine/coarse readout and its full prefix/code/oldRIGHT tasks; show physically why the compulsory Book03 Delta_N(V) is or source-equivalent to the declared Gibbs/Hodge operator, Book vertex Info values the correct registered/quantum relative-information term, and the FULL independently varied original 42 geometry+input Euler equals the UNPADDED h0 certified source with true uniform PF/raw216 continuation. Neither exact native entropy identity nor pointer controlled-X source gate establishes that final identification. GR_closed=false.
