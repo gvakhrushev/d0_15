@@ -167,3 +167,10 @@ The verification kernel and generic operational transfer are composed and have d
 Содержимое результата с гипотезами: `python3 tools/gr_assembly.py --json puzzle QUERY`.
 Перед запуском работы: `python3 tools/task_dispatch.py TASK-ID`.
 Во время синтеза достаточно изменённого расчёта/узкого теста; окончательная проверка — на приёмке.
+
+
+### 22 October: full finite Book03 heat monodromy and exact Golden clock rare-source gate
+
+[Exact whole-Hodge/feedback source-type theorem](../research/A4D_BOOK03_FULL_HEAT_MONODROMY_AND_GOLDEN_RARE_CAP_SOURCE_2026_10_22.md) extends old finite feedback-only and Gibbs-point no-go: a fixed-rank Book03 \(\beta^{-1}\log\mathrm{Tr}\exp(-\beta\Delta_N)-\log\det(I-\zeta F_N)\), with **finite algebraic-in-report** matrix entries even for a moving finite prepared cut, has a finite-cover single-valued derivative and cannot equal the original Golden measured Cost−Info \(\log(r/(1-r))\) first source on an open independently variable report chart. It does NOT exclude a physically chosen nonalgebraic Info/Hodge term, equality at one isolated root, or an unproved physical chart.
+
+[212 narrow checks](../research/sources/d0_book_analytic_clock_obstruction_2026-10-22/RESULT.json) and the [stdlib checker](../research/sources/d0_book_analytic_clock_obstruction_2026-10-22/check_book_entropy_monodromy.py) verify the new EXACT full-match/abort ternary source-coefficient theorem: finite \(K\) gives \((\gamma/\ln\varphi)[3-\gamma^K-(1-\gamma)^K]\) times \(\ln r\), strictly below the positive-alphabet uncapped \(4\gamma/\ln\varphi\). A refining rare branch requires \(K_h q_{\rm rare,h}\to\infty\) even for mean-clock convergence. Authentic cap9/20 readiness \(\gamma\) and original distinct cost20 \(a\) are never conflated. Independent input, actual Book03 selected cut/Info, full42 physically native source, PF raw216 refinement and GR remain OPEN, \`GR_closed=false\`.
