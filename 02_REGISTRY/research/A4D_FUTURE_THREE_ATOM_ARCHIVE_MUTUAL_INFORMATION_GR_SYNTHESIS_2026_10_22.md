@@ -167,6 +167,38 @@ Consequently the only such LOCAL strictly proper LOSS REGRET (for independently 
 
 Crucially, selecting a truthful local **verification loss** or its averaged regret does NOT yet identify Book03's absolute branch \(\operatorname{Info}\) and its exponential path weights: the old Born-to-Book source ambiguity remains. In particular, the Book branch choice \(I_\omega^{rel}=\log_\varphi(P_\omega/\mu_\omega)\) would make \(K_\omega=P_\omega\) and the unmarked SCALAR partition source zero; its entire GR source must come from a genuine marked response, heat/return or archive operation. One may NOT promote (16) into Book03's compulsory \(H+J+R\) by renaming \(\ell\) to \(\operatorname{Info}\). The next physical step is to derive that actual map from one complete paid experiment, its active cut and independently generated input.
 
+
+## 4a. DIRECT Book06 intersection: the missing GR source is the UNIQUE maximum-entropy coupling defect
+
+The positive native joint READY register (site,terminal b) has the exact classical density
+\[
+\tau_{zb}=w_z(1-r_z)^{1-b}r_z^b,\qquad
+\tau_Z=w,\quad \tau_B=(1-\bar r,\bar r).
+\]
+Book06 §§06.24–25 already calls for an entropy-selected coupling under specified RETAINED response constraints. If the retained tests are exactly the separately measured **site marginal** and **terminal-outcome marginal**, then the unique maximum-entropy coupling of those two REAL native marginals is
+\[
+\boxed{\sigma_{zb}=w_z\,\tau_B(b).}\tag{17}
+\]
+This is forced MATHEMATICALLY by the finite identity
+\[
+\boxed{H_\varphi(\sigma)-H_\varphi(\tau)
+   =D_\varphi(\tau\Vert\sigma)
+   =I_\varphi(Z;B\mid R)\ge0,}\tag{18}
+\]
+because all admissible joint couplings \(\tau'\) with these two marginals obey \(H_\varphi(\tau')=H_\varphi(w)+H_\varphi(\tau_B)-D_\varphi(\tau'\Vert w\otimes\tau_B)\), maximized uniquely at the positive product \(\sigma\).
+
+Consequently the off-null archive correction (8) is **exactly the loss of observed site/report correlations under Book06's fixed-marginal maximum-entropy forgetting step**. The source \(D I_\varphi\) is a bona fide finite entropy-variation object built from two old Books, not a hand-added price. Book06's max-entropy forgetting does NOT say that its entropy loss automatically appears as the **compulsory Book03 branchwise \(\operatorname{Info}\)** or its \(H+J+R\) scalar: that is the precise remaining cross-Book constitutive link. Nor does it assert that the specified pair of marginals is the full universal future test algebra.
+
+**A strict information-preservation obstruction, no hypothetical geometry:** with \(w=(1/2,1/2)\) and \(r=(\bar r-\epsilon,\bar r+\epsilon)\), \(\epsilon\ne0\), the native fine joint law \(\tau\) differs from the independent law \(\sigma\) for \(r'=(\bar r,\bar r)\); yet both have identical three-atom READY/C coarse masses \(q=(1-a,a(1-\bar r),a\bar r)\) and identical site marginals w. Any physical map keeping ONLY those coarse outputs and permanently erasing their correlation identifies two registers that the original joint site×report test distinguishes. Under Book06's declared injective (visible,archive) accounting, that erasure is disallowed if the joint register is genuinely admissible. Some complementary archive witness MUST survive. The scalar amount in (18) quantifies the lost information in Golden units, though preservation of distinctions by itself does NOT force that amount to be the gravitational action.
+
+Thus the architecture answering the reverse D0→GR question is already available at the structural level:
+\[
+\boxed{\text{3-atom minimal future controller}
+ +\text{FULL site/report archive}
+ +\text{Book06 entropy-defect response}}
+\]
+recovers the complete finite paid-code CQ source on the old measured interface, and the first-match controller needs only FOUR expected fully paid trials rather than a 513-way matched controller's 514. A genuine same-execution Book03 value/Info and independently stationary physical writer are still necessary for GR.
+
 ## 5. Decision for the existing GR parent
 
 This composition DISCHARGES one mathematical conflict: the three-atom future-controller signal can remain order one, the entire 72,441-label native information remains retained and the exact off-null entropy source missing from the global mean is reproduced by measured conditional archive MI. There is NO new gravitational field, action, coupling, negative-cost book counterterm, or arbitrary factor; all identities follow from the real source probabilities, native Golden prefix, true site counts and already-owned h=1/4 CQ root.
