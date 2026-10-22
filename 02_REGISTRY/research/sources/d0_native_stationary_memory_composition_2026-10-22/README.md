@@ -13,6 +13,7 @@ The [integration note](../../A4D_NATIVE_FINITE_AGE_CLOCK_AND_PREPARATION_SOURCE_
 | [INDEPENDENT_REVIEW.md](INDEPENDENT_REVIEW.md) | Independent analytical audit, ownership correction, input-versus-output entropy correction and exact scope of the rational/numerical checks |
 | [FINE_ARCHIVE_SOURCE.md](FINE_ARCHIVE_SOURCE.md) | Actual same-K fine-minus-age source; all-K proportional-port correction; known native tariff yields an exact whole port-CQ-gain price reduction with paired net weight phi^-3 |
 | [FINE_ARCHIVE_SPECTRAL_AUDIT.md](FINE_ARCHIVE_SPECTRAL_AUDIT.md) | Eight exact native row-spectrum classes and an independent outward rational certificate for the original K1 source sign |
+| [LITERAL_PORT_PRICE_REDUCTION.md](LITERAL_PORT_PRICE_REDUCTION.md) | Independently audited exact arbitrary-input port-price identity with the real `(1,2)` tariff, phi^-3 net pair weight, and fixed-window/stopping-rule scope |
 | [ACTUAL_ROUTH_GEOMETRY_N4.md](ACTUAL_ROUTH_GEOMETRY_N4.md) | New actual full-geometry application of the existing N1 rank-two Schur theorem at the original nonlinear n4 root; numerical, not interval-certified |
 | [PROVENANCE.json](PROVENANCE.json) | Frozen original input paths/blobs, research and publication parents, runtime, evidence scopes |
 

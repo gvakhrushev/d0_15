@@ -206,6 +206,8 @@ More strongly, for every finite K and arbitrary retained input \(\Omega\), the e
 
 This equality holds before stationarity, so all independent preparation and field sources are preserved. It is a mathematical reduction of the same complete recorded execution to a 65-label score, with a derived positive Golden residual per paired event. All actual additional stage/factory/clock/work costs remain; the identified port-report component is not declared the whole Book03 price.
 
+The independent [literal-price proof](sources/d0_native_stationary_memory_composition_2026-10-22/LITERAL_PORT_PRICE_REDUCTION.md) makes the qualification precise: derivative equality holds wherever those derivatives exist; fixed K is covered, while a stopping rule sensitive to a merged-away port bit needs its own argument. No rank-birth smoothness or free archive erasure is inferred.
+
 Proof and actual-word replay: [FINE_ARCHIVE_SOURCE.md](sources/d0_native_stationary_memory_composition_2026-10-22/FINE_ARCHIVE_SOURCE.md). Exact K1 certificate and independent audit: [FINE_ARCHIVE_SPECTRAL_AUDIT.md](sources/d0_native_stationary_memory_composition_2026-10-22/FINE_ARCHIVE_SPECTRAL_AUDIT.md).
 
 ## 5. The key composition: equal stationary values have different preparation equations
