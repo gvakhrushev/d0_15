@@ -141,3 +141,34 @@ This explains an entire class of prior false roots: a 12-target pure-boost sourc
 - Independent first full 36-component temporal-gauge restricted Hessian numerical diagnostic on the two-field non-VSI rank-two seed found a 72×72 Hessian of full rank but with smallest singular value ~\(5.03\times10^{-6}\) at h=.0893 and 108×108 smallest ~\(1.30\times10^{-6}\) at h=.0670. The corresponding naive Newton updates have maximum component ~3.51 and ~7.51 in the declared scaled coordinate charts. These are **diagnostic finite systems with approximate fixed two-end boundary data**, not proof of nonexistence or a uniform source inverse. The present algebra identifies exactly what must be redesigned in their boundary/constraint treatment before promoting a root.
 
 **Next actual finite root test**: use either a true one-sided temporal gauge with 6 initial Gauss conditions, or an exactly retained finite temporal Wilson-line modulus for fixed two-end collars; solve the genuine original *full 16 coframe +18 spatial links +2 real CAR scalar* Euler on a WHOLE connected slab, with the original full N1 source, preserving the strict PF site map, all based predecessor faces, the initial CAR/purification/clock Book gates and the proper connected-gauge norm. Then verify the SIX reconstructed temporal Gauss equations, BOTH original boundary charges and ALL42 original Euler directly. The existence and conditioning of this map remain to be proved. **GR_closed=false.**
+
+
+## 6. Constructive exact two-end-frame axial gauge: KEEP the Wilson line in ONE temporal edge
+
+A stronger *positive construction* replaces the rejected operation "fix both end frames and erase ALL temporal links." There is no need to demand \(\mathcal W=I\) if the true temporal Wilson line is allowed to remain in the existing time-link degrees of freedom.
+
+For an arbitrary chain \(U_0,\ldots,U_{N-1}\in SO^+(1,3)\), fix **both endpoint FRAME transformations** \(g_0=g_N=I\), and define the N−1 internal gauge transformations
+
+\[
+g_j=U_0U_1\cdots U_{j-1}\qquad(1\le j<N).
+\tag{11}
+\]
+
+Then the EXACT old lattice Lorentz gauge law gives
+
+\[
+\boxed{
+U'_j=g_jU_jg_{j+1}^{-1}=I\ (0\le j<N-1),\qquad
+U'_{N-1}=g_{N-1}U_{N-1}g_N^{-1}
+       =\mathcal W .
+}
+\tag{12}
+\]
+
+The original *nonabelian ordered* Wilson line is preserved, not set to a fit parameter, not replaced by a scalar anchor, and not removed as gauge. Every internal time link becomes identity, and the LAST original time link alone carries the holonomy. The old endpoint frames remain unchanged. The construction is exact for any finite N, any finite (noncommuting) original SO^+(1,3) holonomies, all six based plaquettes, and compatible transformations of original coframes, material code, spectators and actual outgoing/incoming edge states.
+
+For a periodic temporal regulator with \(g_N=g_0\), the gauge invariant data are the conjugacy class of \(\mathcal W\); setting all links to identity is permitted only in the trivial-holonomy class. For an OPEN two-end frame-fixed collar, (12) is a legal choice of *coordinates* IF the boundary contract permits transporting/reexpressing the individual original link data on the last edge. If the original collar locks an individual terminal time LINK, or fixes a boundary transition independently, no transformation of that prescribed link may be declared admissible without explicitly transporting the fixed boundary data. The example is NOT an extra physically admitted time reset/writer or a removal of the terminal Book clock.
+
+**Solver consequence:** a time-slab original 16 coframe +18 spatial link +2 scalar source solver may be built with U0=I on INTERNAL time edges and one terminal Wilson carrier W retained as a genuine finite boundary datum. The six original Gauss constraints still need a true initial zero or an equivalent admitted terminal/boundary matching condition; the single retained terminal link is not their solution. This resolves the earlier *gauge-choice* conflict in the numerical full-slab interface without claiming its nonlinear root or uniform inverse.
+
+The existing exact rational \`check_finite_temporal_gauss_exact.py\` now checks (12) on noncommuting rational Lorentz boosts and a spatial rotation with W!=I, while separately checking the literal original G2STAR action invariance under nontrivial local frame changes on both time-adjacent based-six-face cells.
