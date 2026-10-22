@@ -184,3 +184,14 @@ First executable uses exact rational native 4x4 proper-Lorentz boost/rotation ma
 ### Constructive two-end-frame axial gauge; keep ONE Wilson link
 
 The same original rational temporal-gauge checker now proves an EXACT constructive positive remedy for two-end frame fixing: for arbitrary original U0 time sequence with nontrivial W, define internal g_j=U0...U_(j−1) and retain endpoint g0=gN=I. The resulting original links are I for all but the last time edge, which becomes the FULL nonabelian W. This is an exact finite gauge coordinate map preserving endpoint frames, not permission to change a separately locked individual terminal link, reset a physical clock or make W disappear. The 36 evolution +6 initial Gauss architecture can retain W explicitly as a boundary modulus. The physical all42 stationary root and true Book03 selection remain OPEN.
+
+
+## Exact TWO-real-CAR off-null Routh reduction; no matter Newton guesses
+
+[Native exact two-CAR flux/Routh theorem](../../A4D_NATIVE_TWO_CAR_FLUX_ROUTH_FINITE_REDUCTION_2026_10_22.md) is the new general-sector consumer of the numerical original full42 N1 roots after the pureboost branch was shown algebraically blocked. The true two real scalar Euler on any spatially homogeneous original time slab are TWO exact first integrals with common flux J_A=F_y(x,y)(g^{00}D_t psi_A+g^{0i} s_Ai), even for irregular positive PF values between time cells and off the f=q=0 locus. An EXACT Lorentz metric inverse Schur identity removes both scalar temporal velocities via ONE implicit algebraic equation for y=tau q/rho on each time cell. The 2x2 global end-boundary Jacobian is strictly SPD on the declared g^{00}>0,F_y>0,G_y>0 chart; the original two-matter Dirichlet Hessian is a strict positive time-incidence Laplacian. This proves local unique matter-source elimination with actual collars/ends and no new scalar potential or price.
+
+The true N1 receipt has nine free nonnull radial Euler anchors at n3/n4/n5 and its exact second-order f/q ratio is predicted by the original GoldenMaster, not a fitted Einstein coefficient. A separate off-null literal F test with rho=[1,2,1,3,1], a genuine Lorentzian metric shift, full native price and independently perturbed scalar histories verifies both exact currents and source gradients. The test x operands are small valid diagnostics; they are NOT an independently derived entire plaquette solution. Arbitrary spatially varying PF and a null time coordinate remain outside this sector.
+
+    OPENBLAS_NUM_THREADS=1 python3 02_REGISTRY/research/sources/d0_star_rank2_seam_2026-10-21/check_two_car_flux_routh_schur.py
+
+**Next:** replace the two material variables per free time node in the owned original gauge/Wilson full42 source by this exact Routh/Schur consumer; keep every original geometrical Euler, field-writer/Book selection and fixed original collar. Do not use the old invalid off-stratum 12-source shortcut.
