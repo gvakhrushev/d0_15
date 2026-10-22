@@ -172,6 +172,9 @@ and contract with (11). The derivative \(D_v\rho_*\) is trace-zero. This proves 
 
 This does **NOT** assert physical M1 compels the input to be the infinite-time stationary fixed state; a finite paid preparation prefix is a distinct process. It says: **ONCE the original D0 dynamical stationary preparation is admitted as the actual input constraint, its independent Euler rows and source are closed constructively by the original \(\Phi\)**, not left as an unspecified input reaction.
 
+
+**Essential oldRIGHT/refinement typing of the inverse (11).** The fixed-state uniqueness and the Poisson inverse are claimed on the specified DATA (or another specifically proven primitive) carrier. Tensoring the original full128 channel with \(\mathrm{id}_{\rm oldRIGHT}\) does **not** preserve uniqueness: every \(\rho_*\otimes\omega_R\) with normalized stationary RIGHT marginal is invariant, so \((I-\Phi^*\otimes\mathrm{id})^{-1}\) on ALL trace-zero DATA×RIGHT observables does not exist. When the selected Info is genuinely joint, one MUST either fix/physically determine its RIGHT preparation and formulate the corresponding conditional source map from the primitive DATA marginal, or solve the larger invariant-algebra/adjoint compatibility problem with all RIGHT zero modes retained. Equation (11) does not magically close these separate independent reference-state Eulerians. The conditional pure oldRIGHT purification shortcut (10) also requires its own physical preparation admission. The test fixture proves the full Hermitian **DATA** 2×2 Poisson rows, not the unproved original full DATA×oldRIGHT 128² rows.
+
 ## 4. THEOREM C: complete second source / actual finite Schur-Poisson geometric Hessian
 
 On a smooth compact regular chart with a uniform local mixing inverse
