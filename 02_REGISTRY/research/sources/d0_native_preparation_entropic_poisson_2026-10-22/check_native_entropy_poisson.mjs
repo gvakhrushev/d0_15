@@ -114,7 +114,7 @@ function program(a,b,cap,observer='pointer',initialRho=null){
       L[0][0]*a0,L[0][1]*a1,
       L[1][0]*a0,L[1][1]*a1];
     let normBranch=amplitudes.reduce((s,x)=>s+x*x,0);
-    near(normBranch,td(n.rho,E),1e-14,'complete DR purifier each leaf original Kraus is PURE');
+    near(normBranch,td(rho,E),1e-14,'complete DR purifier each leaf original Kraus is PURE');
     refNorm+=normBranch;
     pureEntropy-=normBranch*Math.log(normBranch);
   }
