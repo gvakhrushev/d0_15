@@ -92,6 +92,35 @@ H(Z^n\mid DR_n)
 \]
 The coherent environment/DR entropy in (9) stays \(\le\ln(16\cdot16)=\ln256\) for ALL n, whereas (8) increases without bound; so no fixed 5-qubit Choi-minimal coherent DATA-output memory can REPLACE all actual fine-outcome history labels at arbitrarily long horizons. The quantum Choi rank13→18/four hidden birth modes owner gives a distinct local-in-r source obstruction at ONE round; (8) is a NEW time-extensive quantum-side-information obstruction at ALL n. The original oldRIGHT128 is not erased: the Choi16 is an explicitly specified 16-dimensional protected reference subspace inside it.
 
+### 2a. A genuinely PAID original archive-capacity floor — even with COMPLETE quantum side information
+
+The lower bound (8) is not merely a large Shannon number: it implies an exact information-conservation resource requirement whenever the physical future requires the *entire completed fine history* to remain recoverable. Suppose the remaining final DATA×oldRIGHT may be provided to the decoder for FREE, but the actual original already-registered fine sequence \(Z^n\) is to be reconstructed with **zero error** from that final quantum DR state and one additional truly CLASSICAL archive register \(A_n\) having \(M_n\) possible physically orthogonal values. No fixed-length code, row compression scheme or new source oracle is assumed. If \(H(Z^n\mid A_n,DR_n)=0\) (a perfect readout by some admitted physical decoder), the cq conditional mutual-information chain gives
+\[
+\begin{aligned}
+H(Z^n\mid DR_n)
+&=I(Z^n:A_n\mid DR_n)\\
+&\le H(A_n\mid DR_n)
+\le H(A_n)\le\ln M_n .
+\end{aligned}
+\]
+The first inequality uses **only** the standard positivity \(H(A_n\mid Z^n,DR_n)\ge0\) for a CLASSICAL register \(A_n\), even if DR is arbitrary quantum memory. Thus the original actual no-reset Golden device, with its TRUE same-input full fine history, forces
+\[
+\boxed{
+\ln M_n\ge n\kappa h_{\rm nat}(p^2,p)
+>0.0126\,n,\qquad
+\log_2 M_n>0.0182\,n .
+}\tag{8a}
+\]
+No classical postprocessing of the old fine record and no SIDE-INFO assistance from the entire DR can avoid this lower bound. For an actual prefix-free original Golden **archive word** satisfying the same \(\varphi\)-Kraft inequality, its expected extra stored code-length price is bounded by
+\[
+\boxed{\mathbb E C_{\rm archive}\ge
+H_\varphi(Z^n\mid DR_n)>0.0262\,n
+\quad\text{ORIGINAL Golden code units},}\tag{8b}
+\]
+provided its decoder really must recover that \(Z^n\) on the stated physical reference. This is a **necessary** budget, not a proof an optimal finite original physical compressor exists or that G0/M1 makes such a task compulsory.
+
+A coherent quantum archive may store the complete record before irreversible dephasing instead of an independently readable classical \(A_n\); its dimension/coding cost is a DIFFERENT physical interface. Thus (8a,b) do not equate a 5-qubit Choi-minimal CHANNEL environment with a selected full history memory (the former need not contain 64 orthogonal fine labels). But they give a strict operational price for any compulsory retained *classical* full archive, not just a qualitative Book01 conservation claim. The true Golden output tape \((\mathbb C^{128})^{\otimes n}\) trivially has enough space, and the theorem does not charge it twice.
+
 ## 3. Theorem C — ONE forced Golden KL excess \(p^3\) per nonblank row, exactly paid by the original 0/10 code, with a source
 
 The ORIGINAL actual outgoing 0/10 port cost is \(c_0=1,\ c_1=2\). For the real native nonblank coin (2), its expected cost and entropy are
