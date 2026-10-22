@@ -10703,3 +10703,193 @@ native heat/return coupling. The compulsory Book03 incidence, aggregation
 and admissible field/preparation/clock identification remain substantive
 physical inputs. No new action is inserted and no BOOK, raw216, lifecycle,
 `positive_gr` or full-GR acceptance is promoted. `GR_closed=false`.
+
+## 2026-10-22 — Complete coupled cut heat: actual partition choice, all42 source and stationary-section application
+
+**Exact new substitution.** The preceding cut-heat application left the
+fine-versus-three-status comparison open because the new Hodge heat moves
+with the comparator. The existing feedback-only partition theorem assumed
+a common heat. The [complete coupled proof](sources/d0_coupled_cut_partition_2026-10-22/COUPLED_PARTITION_PROOF.md)
+now removes that common-heat premise for the actual derived
+`C=(I-P)UP`, while keeping the SAME padded selector, full native WORK,
+active rank and the explicitly declared spectator oldRIGHT128. The
+three-status READY/CLICK future algebra remains the unique cheapest
+partition of this complete **cut-heat plus feedback candidate** at the
+existing fixed Golden calibration `beta0=2p^2`. This is not an assertion
+that Book03 independently selects that incidence, temperature or task.
+
+For `M` selector slots and full non-RIGHT work dimension `W`, put
+`D=M W`, `f(q)=4q(1-q)` and pad dormant cells by their actual `q=0`.
+The ordinary full heat trace and bootstrap are exactly
+
+\[
+Z=D-2M+2\sum_j e^{-\beta f(q_j)},\qquad
+\mathcal B_C=\beta^{-1}\log(128Z)
+-128\sum_j\log[1-zf(q_j)],\quad z=2^{-20}.
+\]
+
+No harmonic mode is removed or trace divided by dimension. A positive
+merge `(a,b)->(a+b,0)` increases heat by `G_H` and decreases feedback by
+`G_J`. With the true `Z_min=M(W-2)`, the proved estimates are
+
+\[
+0<G_H\le\frac{16(1+2\beta)ab}{Z_{\min}},\qquad
+G_J\ge1024z(1-2z)ab.
+\]
+
+The original n20 complete counts give `M=72441`, `W>=50549` and
+`Z_min>=3661675227`. Therefore
+
+\[
+\eta=\frac{1+2\beta_0}{64z(1-2z)Z_{\min}}<\frac1{80000},
+\qquad
+\mathcal B_{C,\rm fine}-\mathcal B_{C,\rm merge}
+\ge(1-\eta)G_J>0.
+\]
+
+Every partition preserving both actual predicates READY and
+READY_AND_CLICK refines their three Boolean atoms. Repeated application
+gives a strict minimum at those atoms, up to empty cells and relabelling,
+with every original fine record still in WORK. The original uniform
+feedback gap has a new complete-action consumer:
+`B_C,FINE-B_C,3>0.00006726823` at every depth `n>=20`.
+These are values in the declared bootstrap units, not primitive gate
+prices. Full marking, preparation and Info ledgers still require their
+actual compatible comparison.
+
+**The whole source is checked separately from price ordering.** With
+`j(q)=-log[1-zf(q)]`, `E(q)=exp(-beta f(q))` and the action's OWN actual Z,
+
+\[
+D\mathcal B_C=\sum_jc_{\beta,Z}(q_j)Dq_j,
+\qquad c_{\beta,Z}(q)=128j'(q)-2E(q)f'(q)/Z.
+\]
+
+The fixed-Z difference between two entries satisfies
+
+\[
+(1-\eta)128[j'(u)-j'(v)]
+\le c_{\beta,Z}(u)-c_{\beta,Z}(v)
+<128[j'(u)-j'(v)]\quad(u<v).
+\]
+
+This is proved from the actual derivatives, not by differentiating a
+value bound. For the entire vector the full Hessian additionally contains
+`-4 beta vv^T/Z^2`, `v_j=E(q_j)f'(q_j)`. Its sign helps strict concavity
+in the probability coordinates; the nonlinear field pullback still has
+its `sum c_j D²q_j` term. No field minimum is inferred.
+
+On the original common-null family, the real source relation
+`n_z/rho_z=N/L^4` eliminates the nonuniform PF address counts at the
+first source. Fine and three-status actions have their respective complete
+heat traces, yet each has the SAME whole 16+24+2 source direction
+
+\[
+\Xi_{42}=r_fD_{42}\sum_z\widehat f_z
+           +\sigma r_qD_{42}\sum_zq_z,\quad\sigma=-1.
+\]
+
+Their new gains lie strictly between `1-1/80000` and 1 times their own
+previous feedback gains. Thus the already proved exact nonvacuum
+Einstein–CAR family solves the field equations of this complete coupled
+candidate, with unchanged `lambda_minus=-r_q/r_f=-23.416406751884...`.
+All ambient field directions are included; this is not merely a tangent
+calculation inside the solution family. The different off-null
+unequal-report CQ root, independently variable controls and complete
+physical action are not supplied by this substitution.
+
+**Refinement uses the actual prefix, not a smooth replacement.** The owned
+counts `M_n=F_n+6F_(n+1)`, `W_n>=F_n+4F_(n+1)` imply
+`Z_min,n>=18p^(2-2n)`. At the independently owned true PF depth
+`n(L)=64 ceil(log_phi L)+128`,
+
+\[
+\eta_{n(L)}\le
+\frac{1+2\beta_0}{1152z(1-2z)p^2}\,p^{256}L^{-128}.
+\]
+
+The original fine-source suppression `O(L^-64)` remains, while the full
+three-status response stays above `0.56649` of the click-feedback
+reference. The growing absolute `log(128Z)/beta` is retained. Rank,
+temperature and actual clock changes are separate sources; for moving
+beta the proof keeps both the absolute logarithm and the energy-weighted
+heat term. A derived `beta=n epsilon` cannot use the fixed-beta theorem
+without that contribution.
+
+The temperature hypothesis is essential. On a fixed finite carrier,
+equal sufficiently small cells `a=b` and `beta=1/a` give a positive heat
+increase exceeding the feedback decrease. The exact condition is
+`a<7(1-z)^2/(4096zD)`, with `a<=1/4`. This does not infer an unknown
+actual work dimension or a global range of the primary local report;
+it is a bounded negative control against an all-temperature claim.
+
+**A stationary section replaces unnecessary operator equality, but not
+the actual source calculation.** The [section and writer application](sources/d0_coupled_cut_partition_2026-10-22/STATIONARY_SECTION_AND_WRITER.md)
+uses the same-action constrained envelope. For an actually selected
+physical section `sigma`, the required reduced source equality is
+`sigma* d(S_phys-B_C)=0` on the admitted field tangents. Its full
+Info/work/preparation/clock contribution cannot be erased by internal
+stationarity of a different scalar. Pointwise partition ordering survives
+infima over a common feasible internal set with the stated complete-price
+comparison; arbitrary stationary branches need not have the same order.
+
+For the original positive blank's canonical inverse, the actual full
+paired heat has trace `s(a+2Z)`, where `a=M0-2d` is its harmonic complement
+and `Z=Tr exp(-beta Delta)`. Against an actually supplied tensor heat with
+trace `cZ`, its entire fixed-beta thermal source defect is
+
+\[
+D(H_g-H_0)=-\frac{a}{\beta Z(a+2Z)}DZ.
+\]
+
+At `a>0`, heat-source equality on the true stationary section therefore
+reduces exactly to `D(Z circ sigma)=0` in its admitted directions.
+Neither equal operators nor a constant spectrum at every temperature is
+necessary. Internal stationarity does not itself prove this one-temperature
+trace condition. Moving beta/epsilon, the actual nonoverlapping-clock levels
+and all full traces are retained in the explicit formula.
+
+There is also a concrete positive application to the existing paid moment
+writer. Its actual per-factory Gram intertwiner fixes the common input,
+sends `V_k` to `V_l`, and preserves the complete charged record blocks.
+Consequently `C_l=R C_k R†`, and both `L_C` and the common transformed
+`g(L_C)` satisfy the heat-covariance IF left open by that writer owner.
+Their full bootstrap code contrast is zero, including all harmonic work.
+This does not make the different records interchangeable: for the retained
+measured-CQ code outputs their trace distance is exactly
+`2 P(reach code)>0`. The actual ordered-memory/scene incidence and future
+continuation map need not intertwine with R. The code writer's complete
+CQ report price and its separately scoped field source remain distinct.
+
+**Bounded verification and next consumer.** The new checker passed 75
+controls, including complete finite unitary/Hodge matrices, genuinely moving
+prepared input, exact rational count/bounds, the full Hessian normalizer,
+absolute temperature derivative and the large-beta reversal. Direct matrix
+and pulled-back sources agree within `5e-16` on the reported fixtures;
+freezing the input changes a source sign. The Hessian difference is below
+`2.1e-12`. These are structural controls, not a replay of the original
+full128, PF census, all42 root, interval or Lean owners. Independent review
+checked the analytical all42/refinement substitution and its physical scope.
+
+The concurrent intake through `3c3dc0b` is preserved. Its exact off-null
+two-cell continuation theorem accepts an actual full42 continuous source
+of sup norm at most `3e-22` on its radius-`2e-20` cube, with uniqueness
+under Lipschitz bound `1e-3`. Our relative common-null heat bound is not
+that absolute residual estimate and does not silently apply to that other
+carrier. The new stage-clock theorem strengthens the actual cut boundary:
+initialized-stage and stage-only masks have constant zero/one feedback
+spectra, hence constant spectra of these two cut heats at fixed calibration.
+The nonzero READY response requires the stated internal prepared cut.
+The new measured no-reset full128 stopped-KL/quantum-memory and Poisson
+preparation source likewise enters the genuine extra ledger; its value
+bound is not a bound on the information derivative or full42 residual.
+These concurrent sources are consumed without replaying their suites or
+identifying their distinct measured/coherent programmes.
+
+The exact remaining parent calculation is the actual full physical
+source of `S_phys-B_C` on its own admitted internal section, with the
+same incidence, active task, temperature, work, Info and variation map.
+The packet supplies a new coupled price budget and two concrete source
+maps for that calculation. No residual is fitted to Einstein, no BOOK is
+edited and no assembly/lifecycle or physical GR state is promoted.
+`GR_closed=false`.
