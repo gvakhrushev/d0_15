@@ -145,6 +145,74 @@ for(let j=0;j<=40;j++){
  ok(S<=1+1e-11 &&S>1-2e-11,
    'original spectral B^130 times finite polynomial positive almost scalar');
 }
+
+// REAL original proper-boost stationary DATA state has moving INVERSE-square
+// weights w±=(1±eps/mu)/2. The fixed polynomial echo SUCCESS source is
+// therefore a trace of scalar spectral functions with BOTH Dw terms.
+const pup=plus(plus(times(R(20),power(twelve,3)),times(R(3),power(twelve,2))),plus(times(R(16),twelve),one));
+const gup=plus(plus(times(R(12),power(twelve,2)),times(R(4),power(twelve,3))),plus(times(R(20),power(twelve,4)),times(R(12),power(twelve,5))));
+const gmin=minus(minus(R(3),times(R(4),power(twelve,3))),power(twelve,4));
+ok(lt(pup,R(3))&&lt(gup,R(185,1000))&&gt(gmin,R(299,100)),
+ 'EXACT ORIGINAL Pʹ<3, |Gʹ|<.185, G>2.99 on WHOLE open Lorentz chart');
+const muPrimeCap=times(over(R(9),times(R(3200),power(radUpper,2))),
+ plus(R(3),over(times(times(R(4),twelve),R(4823,1000)),radUpper)));
+const epsPrimeCap=times(R(61,100000),
+ plus(plus(R(10),over(times(R(4),twelve),radUpper)),over(R(185,1000),times(R(2),R(299,100)))));
+const sPrimeCap=plus(over(R(65,10000),R(136,10000)),
+ over(times(R(61,100000),R(16,1000)),power(R(136,10000),2)));
+ok(lt(muPrimeCap,R(16,1000))&&lt(epsPrimeCap,R(65,10000))&&lt(sPrimeCap,R(54,100)),
+ 'EXACT native moving inverse-square DATA total weight derivative cap=.54');
+const tailPrimeCap=times(R(n+K),times(R(binomial(n+K-1,K)),
+ times(power(R(1,80),K),power(R(79,80),n-1))));
+ok(lt(tailPrimeCap,R(8,1000000000n)),
+ 'BIGINT ORIGINAL 130-tick polynomial Tʹ(x)<8e-9 for EVERY 0<=x<=1/80');
+const fieldSourceCap=times(R(38,1000),
+ plus(times(times(R(2),epsR),R(54,100)),
+      times(times(R(2),R(8,1000000000n)),R(18,1000))));
+ok(lt(c2,R(38,1000))&&lt(fieldSourceCap,R(12,1000000000000n)),
+ 'BIGINT ENTIRE native proper-boost prepared success source <1.2e-11');
+function tailPositive(x){
+ let a=(1-x)**n;
+ for(let j=1;j<=K+1;j++)a*=x*(n+j-1)/j;
+ let tail=0;for(let k=K+1;k<K+150;k++){tail+=a;a*=x*(n+k)/(k+1)}
+ return tail;
+}
+function preparedEcho(r){
+ const v=native(r);
+ const poly=5*r**4+r**3-8*r*r-r+5;
+ const polyp=20*r**3+3*r*r-16*r-1;
+ const muv=9/(3200*(1-r*r)**2)*(polyp+4*r*poly/(1-r*r));
+ const G=3-4*r**3-r**4+4*r**5+2*r**6;
+ const Gp=-12*r*r-4*r**3+20*r**4+12*r**5;
+ const ep=v.eps*(1/r+4*r/(1-r*r)+Gp/(2*G));
+ const sv=v.eps/v.m,sp=ep/v.m-v.eps*muv/(v.m*v.m);
+ const w=[(1+sv)/2,(1-sv)/2],wp=[sp/2,-sp/2];
+ const tails=v.x.map(tailPositive);
+ const tp=v.x.map(x=>derivativeT(x,n,K));
+ const dx=[t*(muv-ep),t*(muv+ep)];
+ const corr=w.reduce((s,ww,i)=>s+ww*(-2*tails[i]+tails[i]**2),0);
+ const prob=cDouble**2*(1+corr);
+ const source=cDouble**2*(wp[0]*((1-tails[0])**2-(1-tails[1])**2)
+  -2*w.reduce((s,ww,i)=>s+ww*(1-tails[i])*tp[i]*dx[i],0));
+ return {r,prob,source,corr,w,wp,dx,tails,tp,mup:muv,epsp:ep};
+}
+for(let i=0;i<=40;i++){
+ const r=.1+i*.02/40;
+ const a=preparedEcho(r);
+ ok(Math.abs(a.mup)<.016&&Math.abs(a.epsp)<.0065,'TRUE old native field jet uniform');
+ ok(Math.abs(a.wp[0])+Math.abs(a.wp[1])<.54,'native moving FULL inverse-square eigenweights');
+ ok(Math.abs(a.source)<number(fieldSourceCap),'original 130-step FIXED POLYNOMIAL echo prepared source <1.2e-11');
+ ok(a.prob>.03798&&a.prob<.038,'native field-dependent success chance still strict ~3.798%');
+ const g=1-Math.log((1-a.prob)/a.prob)/Math.log(phi);
+ ok(Math.abs(g)<7&&Math.abs(g*a.source)<8.4e-11,
+  'TRUE original additional success/abort 0/10 code Price−pointerInfo source <8.4e-11');
+ const fd=1e-4,plusR=preparedEcho(r+fd),minusR=preparedEcho(r-fd);
+ const numericalSource=cDouble**2*(plusR.corr-minusR.corr)/(2*fd);
+ ok(Math.abs(numericalSource-a.source)<3e-15,
+  'independent original true moving preparation source finite difference of STABLE small correction');
+}
+const originalPreparedEchoSource=preparedEcho(1/9);
+
 const at= native(1/9),mu=at.m,eps=at.eps;
 const mur=-328779/204800000,h0=69399/5030720,
  hr=-20040939/9885993640,epsp=((2*mu-h0)*mur-mu*hr)/(2*eps);
@@ -188,6 +256,12 @@ const result={
   strictUpperAllOldRIGHTTraceError:traceUpper},
  nativeOptimalSingleBranch:{originalBoost:1/9,etaOpt,etaOptPrime,
   nativeHighEigen:xP,nativeHighEigenLorentzDerivative:xPr},
+ movingOriginalNativePrepEcho:{
+   sourceBound:number(fieldSourceCap),
+   firstSourceAtR1over9:originalPreparedEchoSource,
+   additionalGoldenFlagSourceBound:8.4e-11,
+   movingInverseSquareDATAFirstJetIncluded:true
+ },
  properLorentzAllInputSamples:fixtures,
  fullNativeFull128StochasticChannelDeterministicInvertible:false,
  originalPaidMomentFilterCompiled:false,
