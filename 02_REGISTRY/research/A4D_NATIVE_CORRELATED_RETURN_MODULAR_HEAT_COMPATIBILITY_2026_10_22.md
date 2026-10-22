@@ -314,3 +314,214 @@ with (i) the **actual** native Hodge/thermal or separately proved log-native mod
 - New \`sources/d0_correlated_modular_bridge_2026-10-22/check_native_gibbs_compatibility.mjs\`: exact rational native μ/d/positive-gap theorem, 16-dimensional spectral Gibbs/thermal identity and positive trace-norm gap (5).
 - New \`sources/d0_correlated_modular_bridge_2026-10-22/check_markov_native_correlation.mjs\`: exact Golden \(\mathbb Q(p)\) Markov stationary/Kraft identities, full stopped-tree entropy/count/first-source, native waiting-harmonic deviation and conditional Markov-transition Gibbs repair.
 - New \`sources/d0_correlated_modular_bridge_2026-10-22/check_native_prefix_tree.mjs\`: full original-type noncommuting explicit finite CP word/chain-rule and its complete field source vs iid shortcut. This is a NARROW mathematical native-type fixture, not an expensive original CAR16/128 full42 root suite.
+
+
+## 6. New ALL-NATIVE quantum-instrument information theorem: predictive KL is the EXACT missing no-reset source
+
+Section 3's Markov mutual information is not sufficient for the actual ORIGINAL
+full128, whose \(\rho_w=K_w\rho_*K_w^\dagger/P(w)\) depends on the WHOLE
+noncommuting record word. Section 4's prefix-tree Shannon chain rule can,
+however, be combined with the **already-proved original native stationary
+occupation theorem** to obtain a STRONGER exact identity that needs
+NO iid, NO Markov output, NO fresh resets, NO dephased DATA, and NO
+assumed pairwise factorization of oldRIGHT.
+
+### The finite live-prefix information budget
+
+Fix a complete finite first-label matching cap \(K\), and assume the
+actual stationary label support \(A=\{a:q_a>0\}\) has fixed size \(m\),
+with \(q_a=\operatorname{Tr}\mathcal I_a(\rho_*)\).
+A live prefix \(w\ne\emptyset\) is a word that has already produced its
+first anchor \(a\), has not repeated \(a\) yet, and has fewer than \(K\)
+comparisons. Define its **true complete** probability
+\(v_w=P(w)>0\) and actual conditional next-output law
+\(r_w(b)=P(wb)/P(w)\) from the ORIGINAL native Kraus CP maps (19).
+Define three real cumulative measured-history quantities:
+
+\[
+ \begin{split}
+ n_K&=\sum_{w\ {\rm live},w\ne\emptyset}v_w
+       =\mathbb E[T_K-1],\\
+ n_{b,K}&=\sum_{w\ {\rm live},w\ne\emptyset}v_w r_w(b),\\
+ \mathcal I_{{\rm pred},K}
+   &=\sum_{w\ {\rm live},w\ne\emptyset}
+         v_w D_{\rm KL}(r_w\Vert q)\ge0,\quad
+ q=(q_b)_{b\in A}.
+ \end{split}                                             \tag{23}
+\]
+
+Every actual branch/factory and abort belongs to the full source
+instrument; finer original outcomes may be included in \(A\), and
+oldRIGHT remains in the state when computing \(r_w\).
+The \(n_{b,K}\) are exactly the expected number of later occurrences
+of native label \(b\) before termination, including the last actual
+matching outcome and the last aborted mismatch.
+
+**Finite quantum prefix theorem.** The TRUE complete measured pointer
+Shannon entropy of the entire capped stopped tape is EXACTLY
+
+\[
+ \boxed{
+ H_{\rm nat}(\Gamma_K)
+ =(1+n_K)H_{\rm nat}(q)
+  -\mathcal I_{{\rm pred},K}
+  -\sum_b(n_{b,K}-n_Kq_b)\ln q_b.}                        \tag{24}
+\]
+
+Proof: §4 gives
+\(H(\Gamma_K)=H(q)+\sum_wv_wh(r_w)\).
+Insert
+\(D(r_w\Vert q)=\sum_b r_w(b)\ln r_w(b)
+ -\sum_b r_w(b)\ln q_b\), sum and use (23).
+The last term is essential for a moving finite cap; freezing it or
+using an iid clock source is wrong. Formula (24) remains exact
+for arbitrary CPTP/Kraus instruments including noncommuting
+hidden quantum DATA because only Born word probabilities and
+the exact finite prefix chain rule enter.
+
+At a moving stationary input, the established old
+\`SEQUENTIAL_STATIONARY_OCCUPATION.md\` §2 gives for every anchor
+\(\sigma_a=\mathcal I_a(\rho_*)\),
+\(\mathcal T_a=\Phi-\mathcal I_a\),
+
+\[
+ X_{a,K}=(I-\mathcal T_a^K)\rho_*,\qquad
+ n_{b,K}=m q_b-\sum_a\operatorname{Tr}
+            \mathcal I_b\,\mathcal T_a^K(\rho_*),
+ \quad
+ n_K=m-\sum_a\operatorname{Tr}\mathcal T_a^K(\rho_*).     \tag{25}
+\]
+
+Thus even the EXTRA finite-cap correction in (24) is an
+explicit complete ORIGINAL operator and first-jet expression
+on the genuine physical native channel; no unknown entropy
+scalar is needed. Its derivative retains the real
+\(D\mathcal T_a^K,\ D\mathcal I_b,\ D\rho_*\)
+and independently moving physical controller clocks.
+
+### Exact full infinite return and its entire field source
+
+On every fixed-support native chart with unique stationary
+\(\rho_*\) and transient removed-label CP maps \(\mathcal T_a\)
+(verified on the named regular full128 Fourier/native preparation
+class), all \(\mathcal T_a^K\rho_*\to0\).
+Consequently \(n_K\to m\) and \(n_{b,K}\to m q_b\).
+The actual stopped tree is almost surely finite and
+all its entropy/first-source series converge on a compact
+smooth chart with a uniform transience bound. We obtain
+
+\[
+ \boxed{
+ H_{\rm nat}(\Gamma_\infty)
+  =(m+1)H_{\rm nat}(q)-\mathcal I_{\rm pred},
+ \qquad
+ \mathcal I_{\rm pred}
+ =\sum_{w\ {\rm live},w\ne\emptyset}
+       P(w)D_{\rm KL}(r_w\Vert q)\ge0.
+ }                                                       \tag{26}
+\]
+
+Since every native \(r_w\) is a probability distribution,
+\(\mathcal I_{\rm pred}=0\) iff every truly visited
+conditional next-label law is exactly the stationary
+one-label law \(q\). Thus **the iid measured-pointer
+entropy formula holds iff this predictive-information
+defect vanishes**; simply stationary DATA is not enough.
+In particular
+
+\[
+ \boxed{\mathcal I_{\rm pred}\ge
+   I(Y_0;Y_1),}                                         \tag{27}
+\]
+
+because the first layer of live words has \(P(w)=q_a\)
+and its KL sum is precisely the actual two-step label
+mutual information. The nonnegative later layer terms
+cannot cancel it.
+
+For original per-trial observed-label native charge
+\(C=\sum_a q_a c_a\), the prior occupation theorem
+supplies \(\mathbb EC_{\rm trials}=(m+1)C\).
+The exact COMPLETE measured pointer Price−Info on
+this same correlated stopped execution, with a
+genuinely constant complete net comparison price
+\(\kappa\) per comparison, is therefore
+
+\[
+ \boxed{
+ S_{\rm stop}=(m+1)
+ \left[C-\frac{H_{\rm nat}(q)}{\ln\varphi}\right]
+ +\frac{\mathcal I_{\rm pred}}{\ln\varphi}
+ +m\kappa.}                                            \tag{28}
+\]
+
+All actual fields/observer/preparation/controller variations
+on a fixed positive support obey the exact source identity
+
+\[
+ \boxed{
+ D S_{\rm stop}=(m+1)D S_{\rm one}
+ +\frac{D\mathcal I_{\rm pred}}{\ln\varphi}
+ +mD\kappa.}                                           \tag{29}
+\]
+
+This is the **missing complete measured-information source**
+in the old full128 sequential no-reset reuse of the earlier
+iid Golden first-match theorem. It does NOT identify this
+Shannon/CQ score with Book03's **branchwise memory-valued
+physical Info**, nor account for nonadditive conditional
+quantum work/oldRIGHT or new factory charges. A native
+comparison charge \(\kappa_{ab}\) uses the older exact
+\(\sum_b q_b\sum_a\kappa_{ab}\) ledger and all its
+derivatives instead of \(m\kappa\).
+
+### Why the positive theorem materially changes the GR route
+
+The original full128 Kraus source, exact moving invariant
+preparation, genuine label support (42 at the flat
+declared fixture, 64 on the proper-boost chart), and
+actual stationary occupation now supply an unambiguous
+**entire measured-pointer Info/source functional** (26)--(29).
+This uses only *actual* monitored successful/failed
+history branches, not a fitted Book gain table or a
+fresh reset.
+
+For each real proper-link/coframe/observer tangent \(v\),
+the independent missing information source is precisely
+\(D_v\mathcal I_{\rm pred}/\ln\varphi\), plus the
+already owned complete branchwise native work/heat/clock
+and independent preparation source. A claim that the
+whole native full128 prospective Price−Info is just
+\((m+1)\) times its one-round law can now be
+REJECTED whenever its actually computed
+\(\mathcal I_{\rm pred}\ne0\).
+
+**Finite-cap acceptance test:** calculate the \(m\)
+transient CP recursions from the original full128
+\(K_a,\rho_*\); use (24)--(25), including its
+last finite-cap correction, and apply the entire native
+source (29) to the already proven 42-field source/geometry
+map. If the native Book03 Hodge/active projector
+and true branch Info are then shown source-equivalent
+to this prediction-corrected complete measured ledger,
+the older certified 42 roots can be consumed;
+otherwise the former mathematical finite HJR-root
+continues to apply only to its distinct iid/generator
+execution. This is a real, falsifiable operator-source
+gate, not an inference of GR closure.
+
+**Bounded independent control:** the exact already-owned
+two-Kraus stationary nonunital fixture has
+\(q_0=337/625,q_1=288/625\) and
+\(\Pr(00)-q_0^2=7056/390625\ne0\).
+The accompanying same-fixture
+\`check_native_prefix_tree.mjs\` now verifies
+(24)--(27) on every cap and its moving source,
+including the nonzero \(\mathcal I_{\rm pred}\);
+its original exhaustive old Fraction proof remains
+unchanged. At 80 comparisons it yields
+\(H_{\rm iid}-H_{\rm real}
+ \approx0.00920125556936>0\),
+in full natural-log units. This is a real quantitative
+record-correlation information deficit, not an
+alternative native geometry.
