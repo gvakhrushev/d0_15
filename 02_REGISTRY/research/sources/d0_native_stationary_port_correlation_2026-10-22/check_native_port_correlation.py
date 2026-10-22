@@ -83,6 +83,49 @@ def pair_closed(mu,h,dm,dh):
                     [(1-2*q)*dq-dcov,2*q*dq+dcov]])
     return q,dq,cov,dcov,pair,dpair
 
+
+def check_native_rank_two():
+    """Native real two-input chart: one-port-invisible conditional information."""
+    native = selected_original()["native"]
+    r0 = 1/9
+    nu0 = 3/5
+    b_exact = HARM*DMU-MU*DHARM
+    require(b_exact == Q(6042018339, 1030291456000000),
+            "exact full128 two-invariant Jacobian numerator")
+    require(b_exact > 0, "strict native spectral two-input rank")
+    c=4*P**3
+    h=float(HARM)
+    nuprime=-nu0*float(DHARM)/(2*h)
+    expected_joint = c*c*float(b_exact)
+    expected_det = -2*c**3*h*float(b_exact)/nu0
+    def observed(rr,nu):
+        k,_=native(2*math.atanh(rr),nu=nu)
+        d=(EYE-k[0])/(2*P*P)
+        rho=np.linalg.inv(d)
+        rho=rho/np.trace(rho)
+        adj=lambda x:x.conj().T
+        y=sum((k[j]@rho@adj(k[j]) for j in range(1,128,2)),np.zeros_like(EYE))
+        effect=sum((adj(k[j])@k[j] for j in range(1,128,2)),np.zeros_like(EYE))
+        return np.array([np.trace(y).real,np.trace(effect@y).real])
+    step=1e-4
+    secant=(observed(r0+step,nu0+nuprime*step)-
+            observed(r0-step,nu0-nuprime*step))/(2*step)
+    require(abs(secant[0])<1e-9,"true two-port one-shot invisible native tangent")
+    require(abs(secant[1]-expected_joint)<2e-10,"true two-port visible directional source")
+    dr=(observed(r0+step,nu0)-observed(r0-step,nu0))/(2*step)
+    dnu=(observed(r0,nu0+step)-observed(r0,nu0-step))/(2*step)
+    jac_det=np.linalg.det(np.column_stack([dr,dnu]))
+    require(abs(jac_det-expected_det)<1e-10,"actual full128 rank-two probability Jacobian")
+    require(jac_det<0 and expected_joint>0,"genuine independent two-port observable")
+    return {"spectral_jacobian_exact":str(b_exact),
+            "dnu_dr_on_constant_q":nuprime,
+            "joint_probability_source_on_invisible_tangent":expected_joint,
+            "joint_probability_native_secant":float(secant[1]),
+            "one_port_native_secant":float(secant[0]),
+            "pair_jacobian_determinant":float(jac_det),
+            "pair_jacobian_determinant_analytic":expected_det,
+            "native_two_port_rank":2}
+
 def main():
     require(MU>HARM>0,"original strict spectral mean gap")
     require(DMU<0 and DHARM<0,"original negative arithmetic/harmonic first jets")
@@ -94,6 +137,7 @@ def main():
     require(0<q<.5 and 0<cov<q*(1-q),"positive non-iid native binary chart")
     require(dq<0 and dcov>0,"strict original opposite first-source signs")
     direct=original_direct()
+    rank_two = check_native_rank_two()
     require(abs(direct["mu"]-float(MU))<4e-13,"real original CAR arithmetic mean")
     require(abs(direct["harm"]-float(HARM))<4e-13,"real original CAR harmonic mean")
     require(np.max(abs(direct["pair"]-pair))<5e-13,"all four original ordered probabilities")
@@ -134,6 +178,7 @@ def main():
       "pair_mutual_info_derivative_dr":dmut,
       "pair_mutual_info_derivative_Golden":dmut/math.log(1/P),
       "native_pair_matrix":direct["pair"].tolist(),
+      "rank_two_native_chart":rank_two,
       "entropy_two_round_source_nats":h2prime,
       "memory_source_sign_certified_from_rational_spectrum":True,
       "stationary_preparation_moved":True,
