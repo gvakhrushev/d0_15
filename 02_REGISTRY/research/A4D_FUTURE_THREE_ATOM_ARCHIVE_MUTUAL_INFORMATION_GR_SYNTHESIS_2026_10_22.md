@@ -199,6 +199,27 @@ Thus the architecture answering the reverse D0→GR question is already availabl
 \]
 recovers the complete finite paid-code CQ source on the old measured interface, and the first-match controller needs only FOUR expected fully paid trials rather than a 513-way matched controller's 514. A genuine same-execution Book03 value/Info and independently stationary physical writer are still necessary for GR.
 
+
+## 4b. Reverse one-coefficient necessity — the archive gain is 1, not a new Einstein coupling
+
+There is an exact uniqueness result **within this SOURCE-TYPED native measured-code class**. On a connected positive chart containing a common-null diagonal \(r_z=r\), let the real full measured-code action \(S_\mathrm{fine}\) and three-atom projected code action \(S_\mathrm{active}\) be those in (7). Suppose a proposed alternative D0/Book source **actually uses these two existing quantities** and has the form
+\[
+S_\mathrm{cand}(y)=S_\mathrm{active}(y)+\lambda(y)a I_\varphi(y),
+\tag{19}
+\]
+with no other unknown field-source term on this declared subproblem and a differentiable finite \(\lambda\). If it has the SAME first-source COVECTOR as the full native measured-code price throughout the connected chart, then
+\[
+D(S_\mathrm{cand}-S_\mathrm{fine})
+=D((\lambda-1)aI_\varphi)=0.
+\]
+Hence \((\lambda-1)aI_\varphi=\mathrm{const}\); on any common-null point \(I_\varphi=0\), so the constant is zero. Therefore
+\[
+\boxed{\lambda(y)=1\quad\text{at EVERY point where }aI_\varphi(y)>0.}\tag{20}
+\]
+If \(\lambda\) is a fixed coefficient, the weaker local test at the certified off-null pair already forces \(\lambda=1\): the true archive first source is strictly nonzero in original coordinate 29. Indeed \(\lambda\ne1\) leaves an exact nonzero residual \((\lambda-1)aD_{29}I_\varphi\) on that originally certified CQ root, bounded below in the diagnostic ready-a consumer by \(|\lambda-1|\,2.4380\times10^{-13}\).
+
+**Scope firewall:** this is NOT a derivation that the original physical Book03 action has the assumed decomposition (19). It is an **inverse necessary coefficient theorem** for a candidate whose active term is the actual three-atom Golden code KL, whose archive term is the ACTUAL Book06 maximum-entropy correlation defect, and whose complete source is required to agree on an open native report chart. The unit coefficient is already fixed by the same Golden log units and complete probability/cost chain rule, with no fitted gravitational prefactor; other genuinely sourced Book heat/cut/Info terms could change the target comparison and must be evaluated separately.
+
 ## 5. Decision for the existing GR parent
 
 This composition DISCHARGES one mathematical conflict: the three-atom future-controller signal can remain order one, the entire 72,441-label native information remains retained and the exact off-null entropy source missing from the global mean is reproduced by measured conditional archive MI. There is NO new gravitational field, action, coupling, negative-cost book counterterm, or arbitrary factor; all identities follow from the real source probabilities, native Golden prefix, true site counts and already-owned h=1/4 CQ root.
