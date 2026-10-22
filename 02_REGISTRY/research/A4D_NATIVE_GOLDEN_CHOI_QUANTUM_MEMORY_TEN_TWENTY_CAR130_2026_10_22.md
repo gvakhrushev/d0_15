@@ -247,3 +247,159 @@ The exact source diagnostic is about 0.02415553228. This is a POSITIVE field-dep
 ## Narrow independent replay
 
 \`sources/d0_native_golden_entanglement_witness_2026-10-22/check_exact_golden_chor_entanglement.mjs\` executes **696 assertions**: exact integer \(\varphi\)-bounds, d128 negativity/fidelity witnesses through ten full rounds, guaranteed d128 Bell-versus-product contrast through twenty, strict 260th power integral proof for genuine CAR16 130-round clean witness, and independent finite differences for the real native proper-boost source at n=1,2,10,50,100,130. These checks **do not rerun** any old full128 dense Choi/42-field interval/Lean/Book physical acceptance suites. The native original matrix/coupling inputs consumed are \`sources/d0_native_preparation_closure-2026-10-21/PROOF.md\` and \`sources/d0_book_uniform_source_2026-10-21/check_uniform_book_source.py\` original blob \`ee8de4635d24c668949ac9a0186616ab7d59f2ed\`. The general proof is the displayed finite operator algebra; these mathematical identities are not equivalent to a physically paid Book03 action selection.
+
+
+## 5. NEXT exact synthesis: a fixed native Bell EVENT produces a FULL paired cut-Hodge+Book source whose sign flips at precisely 33 rounds
+
+The foregoing positive entanglement statement by itself says nothing about a Book variational source. We now perform a STRICT NEW full-operator calculation using **the very same original actual CAR16 \(K_0\)** and the **previously owned paired cut-Hodge construction** \(L_C=C^\dagger C+CC^\dagger\). There is no new Golden report probability, reporter angle, numerical fit, independent action, projected-out work dimension or extra thermal scalar.
+
+### 5.1 Complete canonical same-Kraus carrier; the two actual additional physical premises
+
+Start with the ORIGINAL actual 128-label Julia/Golden/CAR16 Kraus matrices \(K_\gamma(y)\), including \(K_0=I-t\Delta\), and their **canonical unmarked complete Stinespring isometry** \(V_y^{(n)}\). It retains **every** one of the \(128^n\) possible n-step Kraus words as a separate orthogonal work label; no old word is reset. Retain **all 128 oldRIGHT modes**, declaring a **16-dimensional Bell reference subspace** embedded inside it, and prepare the actual pure CAR16×R16 Bell input in that subspace. The initial state is NOT silently identified with the distinct original fully maximally entangled DATA128×RIGHT128 Choi state; the required reference writer is a precise separately named admission premise.
+
+The full canonical carrier has
+\[
+ \boxed{
+ \dim\mathcal H_{\rm complete}
+ =D_n=(16)(128)(128^n)=2048\cdot128^n.}             \tag{27}
+\]
+All unoccupied RIGHT112 and all nonblank history modes remain inside this full carrier. Any additional truly paid physical factory/clock work enlarges the carrier and must carry its own actual output encoding; a canonical 128-Kraus Stinespring column is NOT automatically a proof that every original compiled factory output has precisely this minimal representation. That distinction remains an explicit physical premise.
+
+Define one **fixed, field-INDEPENDENT** entire-work projector \(\Pi_n\) onto the original full \(0^n\) report word AND the specified CAR16×R16 Bell effect on the final data/reference (tensor with the identity on any explicitly additional work). The actual already established Born event is
+
+\[
+ q_n(y)=\langle\Psi_{n,y}|\Pi_n|\Psi_{n,y}\rangle
+      =\left|\operatorname{Tr}_{16}K_0(y)^n/16\right|^2,
+ \quad
+ |\Psi_{n,y}\rangle=V_y^{(n)}|\Omega_{16}\rangle.     \tag{28}
+\]
+
+No branch is postselected: \(1-q_n\) includes every other original fine history and every Bell-rejected outcome.
+
+Use the physically familiar **fixed reflection** \(U_n=I-2\Pi_n\), with no executed moving inverse \(V_y^\dagger\). On this same complete original output carrier, take the specifically declared **moving pure prepared active projection**
+\[
+ P_{n,y}=|\Psi_{n,y}\rangle\langle\Psi_{n,y}|,\quad
+ C_{n,y}=(I-P_{n,y})U_nP_{n,y}.                      \tag{29}
+\]
+The **source of the moving cut is fully included**. By a direct all-column unitary calculation,
+\[
+ \boxed{
+ F_{n,y}=C^\dagger C=4q_n(1-q_n)P_{n,y},
+ \quad
+ L_{C}=C^\dagger C+CC^\dagger
+ \sim \operatorname{diag}(f_n,f_n,0^{D_n-2}),
+ \quad f_n=4q_n(1-q_n).}                              \tag{30}
+\]
+
+No arbitrary active rank enters: this declared actual prepared pure range is rank ONE. It is not the earlier fixed blank-cut source or an independently selected Book03 physical \(P_N\). The second rank-one positive heat eigenvalue lies in the full complementary work, and the remaining \(D_n-2\) harmonic zero-modes are all present.
+
+### 5.2 WHOLE bare Book03-shaped heat+feedback — exact native gradient, not just a chosen odds score
+
+For the unchanged Golden \(\beta=2p^2\) and \(\zeta=2^{-20}\), the complete **paired-cut** scalar is
+
+\[
+ \boxed{
+ \mathcal B_n(y)
+ =\frac1\beta\log\Big[D_n-2+2e^{-\beta f_n(y)}\Big]
+       -\log[1-\zeta f_n(y)].}                         \tag{31}
+\]
+
+The literal ordinary full trace includes the overwhelming zero-mode baseline; in the field derivative its constant \(\log D_n/\beta\) has zero derivative at FIXED integer n, but remains in the absolute price and its native clock/rank finite differences. The complete source is EXACTLY
+
+\[
+ \boxed{
+ \partial_r\mathcal B_n
+ =4(1-2q_n)\,\partial_rq_n
+ \left[
+ \frac{\zeta}{1-\zeta f_n}
+ -\frac{2e^{-\beta f_n}}
+        {D_n-2+2e^{-\beta f_n}}
+ \right].}                                            \tag{32}
+\]
+
+The first bracket term is the genuine full feedback resolvent, the second is the **FULL Hodge heat reaction**, not a frozen or deleted heat normalization. At \(n\ge2\), the actual \(D_n-2>4/\zeta\) and \(f_n\in(0,1)\) force the entire bracket \(>\zeta/2>0\). The original native CAR16 exact proper boost already proved \(\partial_rq_n>0\) for EVERY positive n by the strict signs \(\mu'<0,\epsilon'>0\) and \(b_->b_+>0\). Thus the sign of the COMPLETE Hodge+Book **on THIS full carrier** is just the sign of \(1-2q_n\), at every n≥2.
+
+### 5.3 RIGOROUS 32→33 clock sign transition, without numerical root sampling
+
+Because the same original \(0<K_0<I\) has two strictly positive eigenvalues below 1, \(q_n\) decreases STRICTLY as n increases. Let \(b=1-\beta\mu\) and \(x=\beta\epsilon/b\). Reusing ONLY old exact rational CAR16 \(\mu,h\), native \(p\), and \(\epsilon^2=\mu(\mu-h)\), one has the strict native rational bounds
+
+\[
+ \frac{3092}{3125}<b<\frac{989512}{10^6},
+ \qquad
+ 0<x<\frac{46}{10^5}.                                  \tag{33}
+\]
+
+For \(n=32\), Jensen and the exact BIGINT comparison
+\[
+ 2\cdot3092^{64}>3125^{64}
+\]
+give
+\[
+ \boxed{q_{32}>b^{64}>\tfrac12.}                       \tag{34}
+\]
+
+For \(n=33\), the exact two-eigenvalue expression
+\(A_{33}=\frac12[(b+\beta\epsilon)^{33}+
+(b-\beta\epsilon)^{33}]\)
+satisfies
+\[
+ A_{33}\le b^{33}\cosh(33x)
+ \le b^{33}\exp((33x)^2/2).
+\]
+Using \(e^u\le(1-u)^{-1}\) for \(0\le u<1\),
+\[
+ q_{33}\le\frac{b^{66}}{1-(33x)^2}
+ <\frac12,                                               \tag{35}
+\]
+where the last strict inequality is EXACTLY the checked BIGINT comparison
+\[
+ 2\cdot989512^{66}\cdot100000^2
+ <
+ 1000000^{66}[100000^2-(33\cdot46)^2].
+\]
+No arbitrary high-precision root scan certifies (34)–(35).
+
+Equations (32)–(35) therefore give a REAL **FULL SAME-CARRIER coupled thermal+feedback field-source sign theorem**:
+
+\[
+ \boxed{
+ \begin{aligned}
+ 2\le n\le32&:\quad\partial_r\mathcal B_n<0,\\
+ 33\le n\le130&:\quad\partial_r\mathcal B_n>0.
+ \end{aligned}}                                        \tag{36}
+\]
+
+The second line also holds at all n>130 where the exact two-band positive operator remains regular; the n≤130 range is simply the separate proved **entanglement-guarantee** region. The n=1 heat is large relative to feedback and gives a separate positive source on this declared oldRIGHT128 carrier.
+
+At the strictly native \(n=130\), the BigInt event bounds are \(1/16<q_{130}<3/40=0.075\) (the upper uses \(40\cdot99^{260}<3\cdot100^{260}\)), and the preceding \(\partial_rq_{130}>0.0158\) gives
+
+\[
+ \boxed{
+ \partial_r\mathcal B_{130}
+ >2\zeta(1-2q_{130})\,\partial_rq_{130}
+ >2\zeta(0.85)(0.0158)>2.5\cdot10^{-8}.}             \tag{37}
+\]
+
+The independently evaluated full \(H+J\) source is approximately \(+8.04344\cdot10^{-8}\), with **every** original all-outcome history and all \(D_{130}-2\) heat zero modes retained; no work scalar has been divided out.
+
+For reproducible context (NUMERICAL DIAGNOSTICS only; signs certified above):
+
+| actual number n of original full128 Kraus operations on native CAR16 | \(q_n\) | complete \(\partial_r(H_{\rm cut}+J_{\rm cut})\) |
+|---|---:|---:|
+| 1 | 0.97900048 | +5.77631 × 10^-8 |
+| 2 | 0.95844230 | −1.57224 × 10^-8 |
+| 32 | 0.50714476 | −2.28762 × 10^-9 |
+| 33 | 0.49650078 | +1.13266 × 10^-9 |
+| 130 | 0.06354940 | +8.04344 × 10^-8 |
+
+**IMPORTANT clock/scene distinction.** The integer 33 also happens to equal the number of vertices in the previously given scene \(K(9,11,13)\). Equation (36) does **NOT** derive this Book-selected clock from that scene: the native 33 crossing uses the SPECIFIC calibrated CAR16 \(\nu=3/5,\theta=\log(5/4)\) and shifts to 39 when \(\nu=0.55\), or to 28 when \(\nu=0.65\) on the same mathematical \(\nu^2\) chart. Moreover the already owned \`A4D_NATIVE_CYCLIC_MEMORY_MINIMIZATION.md\` proves that a 33-vertex Hamiltonian visit omits most of the scene's 359 edges and is not a complete native scene-memory admission. Identifying the two clocks by their integer coincidence would be a new **unsupported** physical premise, NOT the sought D0→ОТО derivation.
+
+### 5.4 This is a new positive Book operator carrier, but the compulsory selection remains a real theorem to prove
+
+The full constructed paired Hodge and its source are completely determined from unchanged original \(K_0\), the native full 128-outcome Stinespring record and one fixed joint-Bell event, **IF** the CAR16×oldRIGHT128 reference subspace, protected phase-preserving work and prepared moving cut are physically admissible. This is stronger than a mere fabricated probability gain: it is an actual mathematical full trace/logdet \(H+J\) with its moving projector/holomorphic source computed on the exact original native Kraus field family.
+
+It is **NOT** the mandatory Book03 original scene \(\Delta_N(V)\) just because we called its paired cut Laplacian a Hodge, nor is the prepared pure rank1 range the physically forced \(P_N\). A genuinely measured native fine-record factory archive may dephase this mathematical coherent preparation; its actual Stinespring embedding, work and branch costs must then be revalued. The physical circuit routing and paying Bell operations on oldRIGHT, original full scene/Clock/G0 selection, complete pathwise Info and independent preparation Euler remain unresolved.
+
+**The actionable next criterion** is precise: establish ONE G0/M1-selected archive-preserving joint oldRIGHT future and its native Hodge/feedback cut; then evaluate the literal full H+J (and any separately justified R and actual branchwise Info) on the SAME 16+24+2 input map, including Poisson/Fredholm preparation and physical stage-clock constraints. The exact (36) demonstrates that choosing a clock/cut by matching a desired Einstein sign would itself be fitting. A universal GR action must instead select the clock from the original native scene/record price before its field source is tested.
+
+**NEW check:** \`sources/d0_native_golden_entanglement_witness_2026-10-22/check_native_bell_cut_hodge_clock_sign.mjs\` performs **1,162 PASS assertions** for the exact 32/33 BIGINT bounds, full \(D_n=2048\cdot128^n\) zero-mode-retaining heat value, feedback, first source, and independent original \(\mu(r),d(r)\) proper-Lorentz field finite differences. It does NOT rerun the expensive original 128×16 producer, replace its physical factory history with a claim of free coherence, or promote the original GR status.
