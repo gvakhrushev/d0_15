@@ -134,7 +134,7 @@ for(let j=0;j<=40;j++){
     'actual oldRIGHT-entangled pure input preserves coherent relative amplitude on heralded success');
  ok(traceDistBound<2.7e-11,
     'actual original paired native CAR16/oldRIGHT common work faithful restoration');
- ok(weight>=number(loS)-2e-14&&weight<=number(c2)+2e-14,
+ ok(weight>=cDouble*cDouble*(1-epsDouble)**2-2e-14&&weight<=cDouble*cDouble+2e-14,
     'actual native common success probability independent of entangled initial state up to tail');
  const dT=derivativeT(v.x[1],n,K);
  ok(dT>0&&dT<derivativeT(u,n,K),'actual T_{n,K} increasing even at true native maximum eigenfield');
@@ -155,7 +155,9 @@ const etaOptPrime=-2*n*xPr*bPlus**(2*n-1);
 ok(etaOpt>.0566&&etaOpt<.0568,'actual exact native best possible field-tuned heralded filter 130-step probability');
 ok(etaOptPrime<-.04&&etaOptPrime>-.043,
  'original optimal heralded reverse has genuine Lorentz dependent success source, not free/neutral');
-const uniformLower=number(loS),traceUpper=number(cError);
+// Exact BigInt inequalities certified ABOVE. For DECIMAL diagnostics, avoid converting 500-digit numerator/denominator separately to Infinity/Infinity.
+const uniformLower=cDouble*cDouble*(1-epsDouble)**2;
+const traceUpper=(4*epsDouble+epsDouble**2)/(1-epsDouble)**2;
 // Every OLD native incomplete attempt and failed reverse remains a legitimate
 // complementary CP record. We do NOT claim native G0 compiler exists for M.
 function channelConsistency(q){
