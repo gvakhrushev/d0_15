@@ -182,3 +182,36 @@ The scalar first-jet was independently recomputed by the actual 8×8 matrix fini
 **Interpretation:** a full successful Born/readout source identification, an exact full42 configured CQ stationary point, the complete instrument matrix, ALL detector probabilities and even the **base value** of the Book projector and determinant are INSUFFICIENT to infer the physical Book first-source. What is missing is a **canonical physical connection/transport of \(P_N\) relative to the actual work/clock/reference and scene**, along with the independently valued \(\Delta_N\), pathwise Info and independent source-preparation equations. Without that supplied or derived transport the claim “the detector realizes Book/Einstein” is not identifiable from these data. This exact same-base *first-jet* countermodel sharply localizes the fundamental unclosed theorem; it is **not** a claim that the frozen and prepared cuts are both physically admitted D0 dynamics.
 
 **Priority decision:** stop engineering more observable reconstructions. First produce the M1/G0-native same-history theorem selecting \((P_N,D P_N,\Delta_N,D\Delta_N,\operatorname{Info},D\operatorname{Info})\) and the real clock/input data. Only then compare the FULL 42 covector against the original GR source and refine. Any route replacing this selection by a detector's observed value or by a fixed-cut “source proportionality” repeats the already falsified inference.
+
+
+## 7. THE POSITIVE STRATEGIC EXIT IS ALREADY IN THE REPOSITORY — use the ACTUAL cylinder plus complete two-preparation return, NOT yet another new comparator
+
+After the no-go above, directly inspect original Books 01–03 and the **pre-existing** \`A4D_NATIVE_COMPOSED_FEEDBACK_DYNAMICS.md\` §§6.1–6.5. This comparison materially changes the construction priority:
+
+**Book01 gives** \(P_N\) as the retained/readout projector and \(Q_N=I-P_N\); it does **not** by those three algebraic relations uniquely fix how \(P_N\) must vary when 42 external field coordinates or the native future task change. Book02 gives the feedback identity and derivative; Book03 gives the heat/logdet form and a separate pathwise \(\operatorname{Info}\). It is therefore not legitimate to declare a new spectral/Riesz \(P_N\) from the abstract words “retained projector” without identifying an actually generated spectral operator and a native selection rule.
+
+**However a conditional single-task completion is already mathematically owned.** For the actual already registered Boolean future predicate \(P_{\rm task}\) on the original retained fine history, Book01's **literal cylinder pullback** is the full replicated event \(L(P_{\rm task})\), not the hypothetical image-only prepared cut \(JPJ^\dagger\). Existing native theorem §6.1 classifies EVERY compatible projector:
+\[
+R=JPJ^\dagger+S,\quad S^2=S,\quad SJ=0,
+\]
+and proves the **literal cylinder** supplies a concrete nonzero \(S=L(P)-JPJ^\dagger\). The difference has the native Golden \(p^2\) observable witness; setting \(S=0\) without choosing a genuinely different physical task changes the readout.
+
+Even more importantly, §§6.4–6.5 already contain a **COMPLETE, finite Golden two-preparation reconstruction**, with no new angle and no arbitrary active cut: take the existing prepared inclusion \(J\) and its already native Golden-transformed partner \(GJ\). Their four exact signed cross-return matrices
+\[
+R_{ij}=J_i^\dagger U_yJ_j,\quad i,j\in\{0,1\},\quad
+[J_0,J_1]=GT,\quad
+T=\begin{pmatrix}I&aI\\0&pI\end{pmatrix}
+\]
+reconstruct the unique complete \(U_y\) (and its physical trace-feedback) by
+\[
+\boxed{U_y=G\,T^{-{\dagger}}R(y)T^{-1}G^\dagger.}\tag{16}
+\]
+The same owner constructs the **actual three-stage recorded Golden comparer** which reconstructs the full Gram feedback \(F(L(P_{\rm task}),U_y)\) and its logdet, including real moving cross-return first sources, the complementary norm, every retained record and rank/resolvent bounds. It explicitly does NOT derive that these full cross-return experiments are M1-admitted for the original Role/CAR/oldRIGHT physical programme, nor that a particular task predicate is compulsory.
+
+**This is the most economical positive route:**
+- **Reuse** the original Golden/CAR scene \(U_y\), the original truly retained future cylinder \(L(P_{\rm task})\), and pre-existing \(J,GJ\) four-cross-return reconstruction. Do not create another SWAP/echo/phase device to solve an already solved algebraic operator problem.
+- The single genuinely missing physical fact is that **G0/M1 requires precisely that future test and its paid same-boundary complete preparation/clock**, so the reconstructed \(U_y,P_y\) are the actual native Book03 arguments rather than supplied mathematical choices.
+- Once selected, **compute the complete** \(\beta^{-1}\log\operatorname{Tr}e^{-\beta\Delta_N}-\log\det(I-\zeta F_N)\) **plus the actual original pathwise Cost−Info/work/controller/oldRIGHT ledger** with all independently varied input and clock rows. Require its exact 42 covector to agree with the already owned original geometry/matter source on an OPEN relevant chart, not merely at one stationary root.
+- If no original M1/Book lemma fixes the physical task, oldRIGHT source state, P transport and compulsory Info, record **UNDERDETERMINED BY CURRENT PREMISES**; do not treat more observational sensitivity as selecting the missing physics.
+
+This consumes an ALREADY owned 215-proposition/670-control finite construction rather than presenting it as a new discovery. The new mathematical result here is the **same-base first-jet non-identifiability theorem** showing why that existing complete reconstruction, although powerful, still needs the missing M1/Book binding. The priority is a single actual physical semantic selection and full-price application, **not** a new hardware or field-action campaign. \`GR_closed=false\`.
