@@ -135,11 +135,14 @@ for(const L of [4,8,16,64,256,1024,2048]){
    'positive native all-site minimum local READY1 report under original PF scheme');
  ok(maxSiteReady<.4/W,
    'every globally observed true site READY outcome at most .4/L4');
- const thetaAddr=1-5e-7/W;
- const maxAbsSiteRareSquared=1-2*arMin*rhoMin*1.85e-6/W
-    +(arMax*rhoMax*2e-6/W)**2;
- ok(maxAbsSiteRareSquared<thetaAddr**2,
-  'complex FULL site-resolved original READY1 survival contraction O(1/L4)');
+ const epsAddr=5e-7;
+ const reMass=arMin*rhoMin*1.85e-6;
+ const absMass=arMax*rhoMax*2e-6;
+ // Strict algebraic equivalent of |1-a*r/W|² < (1-epsAddr/W)²,
+ // evaluated AFTER multiplying by W; subtraction of ~1e-19 would
+ // be lost to the floating precision at the native large-L test.
+ ok(2*(reMass-epsAddr) > (absMass**2-epsAddr**2)/W,
+  'scaled exact original READY1 complex survival contraction O(1/L4)');
  const capLocalGlobal=Math.ceil((80+16*s)*W/(5e-7));
  ok((5e-7/W)*capLocalGlobal>=80+16*s-1e-9,
   'honest one GLOBAL site-addressed tape needs O(L4 log L) cap to suppress rare tail');
