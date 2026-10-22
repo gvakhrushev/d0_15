@@ -1,0 +1,48 @@
+{
+  "status": "PASS_LOCAL_EXACT_GAUSSIAN_RATIONAL_AND_INDEPENDENT_NUMERIC_NATIVE_FORMULAS",
+  "date": "2026-10-22",
+  "native_origin": "Original CAR16 creator order (0,2,3,1), Julia positive roots, duplicated Walsh32, phase (i,i,-1,-i), Golden p; real proper boost r=tanh(theta/2)",
+  "source_script_in_git": "02_REGISTRY/research/sources/d0_full128_choi_information_birth_2026-10-22/check_exact_coherence_source_coefficient.py",
+  "source_script_already_executed_from_direct_git_checkout": false,
+  "pinned_upstream_original_git_blob": "ee8de4635d24c668949ac9a0186616ab7d59f2ed",
+  "exact_original_symbolic_method": "Q(i) low-rank Gram 13x13 inversion, original 32 Walsh live block plus one orthogonal physical Golden identity port, Sherman-Morrison",
+  "exact_Q_i_alpha": "27794439/1935392000",
+  "exact_Q_i_sigma": "64000/60481",
+  "exact_Q_i_tau": "144197172/91448784025",
+  "exact_Q_sqrt5_Cquantum": "9*(-1+sqrt(5))**2*(10254021120*sqrt(5)+163834523471)/7030242019328000",
+  "exact_Q_sqrt5_Chidden": "1701*(86495555-25214913*sqrt(5))/175756050483200",
+  "original_classical_birth": "99*((sqrt(5)-1)/2)**2/512000",
+  "strict_hidden_lower_bound_via_sqrt5_lt_9over4": ">0.000288",
+  "local_exact_Gaussian_rational_run_seconds": 12.56,
+  "local_source_matrix_transcription_pinned": false,
+  "exact_numerical_crosscheck": {
+    "original_128_Kraus_amplitude_shape": [
+      128,
+      256
+    ],
+    "original_zero_boost_choi_rank": 13,
+    "original_positive_boost_rank": 18,
+    "exact_first_order_novel_quantum_rank": 4,
+    "newborn_fine_outcome_count": 22,
+    "Cquantum": 0.0003652988272992097,
+    "Cclassical": 0.00007385670920656331,
+    "Chidden": 0.0002914421180926464,
+    "hidden_fraction": 0.7978183785789474,
+    "numerical_vs_exact_coefficient_absolute_error": "<5e-19",
+    "golden_units_rare_rlnr_differential_coefficient": 0.0024225682156214516
+  },
+  "original_true_r_one_ninth_diagnostic": {
+    "registered_pointer_entropy_nats": 0.13717942998751426,
+    "coherent_pointer_choi_entropy_nats": 0.11771719479898296,
+    "coherence_premium_nats": 0.019462235188531296,
+    "d_registered_entropy_nats_per_r": -0.010882689313586505,
+    "d_coherent_entropy_nats_per_r": -0.008379362532553749,
+    "d_coherence_premium_nats_per_r": -0.002503326781032756,
+    "d_original_one_round_native_0slash10_fine_cost_minus_info_golden_per_r": 0.02109927211217825,
+    "d_original_prepared_fixed_input_book_j_per_r": -0.000004746624673257691
+  },
+  "physical_original_Book03_vertex_info_selected": false,
+  "physical_Book03_scene_hodge_selected": false,
+  "same_preparation_compulsory_42_euler_closed": false,
+  "GR_closed": false
+}
