@@ -209,6 +209,59 @@ D_r S_{\rm NB}^{\rm Kraft}
 \]
 This is not the ENTIRE Book03 Price–Info source; the remaining row/blank port, actual original factory, controller, oldRIGHT and scene Hodge parts can have independent first jets. But a proposed physical same-execution score valuing only the final DR coherent entropy, or substituting iid Golden port laws, misses this EXACT original genuine source component.
 
+## 4a. NEW strict ALL-horizon same-native Ward: a source-carrying Golden register cannot be the bare paired Hodge+Book return
+
+The old **separately owned** original *complete forward Stinespring / fixed prepared-input cut* gives on the SAME unchanged n-round full128 hardware, with ALL \(128^n\) fine-register work slots and true oldRIGHT128 multiplicity,
+\[
+\mathcal B_n^{\rm inc}=H_n^{\rm inc}+J_n,\quad
+J_n=-1024\sum_{\sigma=\pm}\ln(1-\zeta f_{n,\sigma}),\quad
+f_{n,\sigma}=1-b_\sigma^{2n},\quad b_\sigma=1-2p^2\lambda_\sigma .
+\]
+Its full paired incidence Hodge has
+\[
+Z_n=2048\cdot128^n-4096+
+2048\sum_{\sigma=\pm}e^{-\beta f_{n,\sigma}},
+\quad H_n^{\rm inc}=\beta^{-1}\ln Z_n,\quad\beta=2p^2,
+\]
+with **every** harmonic zero retained. This fixed-input n-round cut differs from the previous note's postrecord/pre-next-tick 118272-mode cut; comparing them as if they were the SAME active \(P_N\) would be physically invalid.
+
+At the literal original \(r=1/9,\nu=3/5\), consume the strict original CAR16 source brackets \(|D_rb_\pm|<0.0064\), \(0<b_\pm<1\) and the true \(Z_n\ge2048\cdot128^n-4096\ge258048\). Each \(|D_r f_{n,\sigma}|\le2n|D_rb_\sigma|\), hence
+\[
+\boxed{\begin{aligned}
+|D_r J_n|&<
+\frac{1024}{2^{20}-1}\frac{256}{10000}\,n,\\
+|D_r H_n^{\rm inc}|&\le
+\frac{2048}{258048}\frac{256}{10000}\,n,\\
+\boxed{|D_r\mathcal B_n^{\rm inc}|}
+&<\frac{229}{10^6}\,n \qquad\text{EVERY integer }n\ge1 .
+\end{aligned}}\tag{18a}
+\]
+In fact the stronger original exact \(0<b_\pm<1\) produces exponential decay in n:
+\(\left|D_r\mathcal B_n^{\rm inc}\right|
+ \le C\,n(\max b_\pm)^{2n-1}\to0\),
+because the full thermal denominator GROWS as \(128^n\) and the feedback source saturates.
+
+By contrast the just-proved REAL **registered nonblank Golden Kraft** component (13) on the SAME native K, SAME real boost and the explicitly prepared moving stationary DATA marginal satisfies
+\[
+|D_r S_{\rm NB}^{\rm Kraft}|=
+4np^5|A_*|>
+4n(618/1000)^5
+\frac{32022677854092699}{16197211979776000000}
+>\frac7{10000}\,n.
+\]
+Therefore a complete strict first-source **SEPARATION CERTIFICATE** holds:
+\[
+\boxed{
+\left|D_r\left[S_{\rm NB}^{\rm Kraft}
+                  -\mathcal B_n^{\rm inc}\right]\right|
+>\left(\frac7{10000}-\frac{229}{10^6}\right)n
+=\frac{471}{10^6}\,n .
+}\tag{18b}
+\]
+All inequalities are analytic/rational and apply for EVERY ORIGINAL completed n, not a numerical scan. At n=130 the physical native Golden subprice source is approximately \(-0.09270\), whereas the independently owned full n130 paired Hodge+J first source is \(-5.45\times10^{-5}\). These are BOTH genuine functions of the same native \(K_\alpha(r)\); the cost term additionally specifies the moving stationary DATA input and the row-conditioned Golden reference, while the declared Hodge evaluates the whole input-bank operator spectrum.
+
+**Very important acceptance firewall.** (18b) is a strict obstruction to IDENTIFYING this one registered nonblank ledger component with the bare fixed-input paired-incidence \(H+J\) source. It is NOT a claim that the TOTAL actual measured \(Cost-Info\) source cannot contain a genuine blank-row, factory/controller/clock or quantum-information contribution that cancels part of this source; nor that compulsory Book03's SCENE \(\Delta_N(V)\) must be the paired incidence Hodge. The true Book03 physical full source remains unselected. The point is a **specific nonfit Ward constraint on any same-execution H+J-only proposed reduction**: the missing Golden memory price is an explicit original term, not a free geometric multiplier. \`GR_closed=false\`.
+
 ## 5. Narrow directly original 128×16 and 128² replay and physical closing gate
 
 The narrow checker \`sources/d0_native_golden_twin_info_2026-10-22/check_native_twin_memory.py\` AST-loads the literal original pinned 128-Kraus CAR constructor and verifies all j>0 proportional pairs (including all dark labels), the entire 128-column \(\sum K^\dagger K=I\), the exact original \(E_{\rm NB}=4p^2\Delta(I-\Delta)\) operator, genuine full CAR16 proper-boost moving DATA stationary source, and all \(n=2\) nonreset **16,384** fine history probabilities. For n=1,2 on the supplied pure reference, it computes the actual measured fine history entropy and the reduced genuine Choi/DR quantum entropy from at most a 256×256 Gram, checks their difference and the exact native \(0.019\)-bound, and independently verifies the conditional whole-history Kraft KL decomposition with the same normalized row histories. Its local original-formula test is disclosed separately from a SHA-pinned repo checkout and never masquerades as a historical original GR certificate.
