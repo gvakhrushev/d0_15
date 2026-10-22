@@ -38,6 +38,52 @@ new bounded checks consume the existing instrument and stopped recursion;
 they do not repeat the old geometric or 173-check suites. This is a
 removed marginal-source premise in existing #334, with physical GR open.
 
+## 22 October 2026 — the paid moment writer supplies actual joint phase access
+
+[Paid logical echo and complete report source](sources/d0_paid_writer_echo_source_2026-10-22/PROOF.md)
+composes the existing common moment bank, fixed all-column processor and
+native Golden/H/Toffoli factories. On every successful fine factory history,
+the logical gate factors from its retained spent work. The known inverse
+logical word can therefore be executed with fresh paid factories while all
+old measured factory records remain. The row-preparation isometry and
+already measured original 72,441-history archive are not reversed.
+
+For the literal two-row CAR masks 0/1 consumer, the code-controlled SWAP
+has orthogonal conditional work and zero code-only phase visibility.
+Its actual paid inverse followed by the existing complete Golden X
+instrument gives a strictly positive unconditional phase contrast
+`Gamma/2`, with the readiness of the whole preparation/forward/reverse/
+readout execution included. This supplies the previously missing joint
+code/work future test on the declared addressed writer interface.
+
+The same primitives have a source consumer. For the writer's fixed report
+word `A` and its true report probability `r_k`, execute
+`A; CZ(probe,click); fresh A^dagger; Golden X(probe)`. Its complete
+fixed-code counted-CQ price is `S_new(k)=B_new-Gamma h_phi(r_k)`, with all
+fine failures, aborts and conditional quantum work retained. Its full
+source is `dB_new-h_phi(r) dGamma-Gamma h'_phi(r) dr`.
+The owned common-catalogue construction makes both the prefix price and
+readiness constant across actual code secants, so exactly
+`Delta S_new=(Gamma/gamma_old) Delta S_old`. The existing full42 moment
+source/second-jet consumer retains its real gain and stated convergence
+bounds; no derivative of a finite rounded code map is invented.
+
+The uniform coherent controller has its own complete price. If its code
+is read only after a fully completed phase report, the additional entropy
+is `Gamma[log_phi M+mean_k h_phi(r_k)]`; aborted codes remain retained
+quantum work. If the code remains unmeasured and only the probe is read,
+it is `Gamma h_phi(mean_k r_k)`. Reading codes on aborted episodes would
+require their additional entropy and charges. These protocols do not
+substitute the fixed-code price for an unconditional uniform execution.
+
+This removes an operational phase-access premise for the actual paid
+writer and transports its declared complete source. Its addressed gates,
+initial/reference assumptions, actual cap costs and retained algebra
+remain explicit. Compulsory Book03 Info, active cut/heat selection and
+independent field/upstream stationarity still need their same-execution
+application; this result does not identify the alternative writer with
+the original measured full128/72,441 instrument or close physical GR.
+
 ## 22 October 2026 — complete actual-cut source and original retained quantum history
 
 [Complete native source reduction](A4D_NATIVE_COMPLETE_SOURCE_REDUCTION_2026_10_22.md)

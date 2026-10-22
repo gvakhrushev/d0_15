@@ -51,6 +51,40 @@ anchor-one stopped-subtree effect and its full first jet, with a hostile
 sign-colliding blank control. No old 173-check, all42 or full128 suite is
 replayed, and no task/assembly/GR status is promoted.
 
+### 22 October: consume paid logical inverses in the moment-writer source
+
+Phase: native realization / source transport within existing #334. The
+bounded packet `sources/d0_paid_writer_echo_source_2026-10-22/` consumes
+the immutable paid moment-writer and exact Golden factory owners pinned
+at `82d27e83b0ba0869911de80919de50c42f2944d8`. The missing parent premise
+was an actual joint programme/work phase test on that paid addressed
+interface, with its complete source and old measured work retained.
+
+Successful fine factories factor into the known logical gate and
+input-independent spent work. Fresh factories execute the reversed
+logical processor without reversing row preparation or measured records.
+The two-row CAR masks 0/1 controlled-SWAP supplies a decisive positive
+phase contrast after the echo; an inaccessible-copy control preserves
+the real boundary. The same `A; CZ; fresh A^dagger` construction returns
+the existing fixed polynomial report through the native Golden X test.
+
+The actual fixed-code price is `B_new-Gamma h_phi(r_k)`, with full
+preparation/forward/reverse/probe readiness. Preserve `dB-h dGamma` unless
+the owned fixed-catalogue equal-inventory proof applies. Its true secant
+gain `Gamma/gamma_old` is the source/second-jet consumer; refinement uses
+the actual paid caps and error bounds. Uniform-code executions keep
+their distinct complete entropy and explicit code-readout/abort schedule.
+All source, input/reference and clock assumptions remain on this actual
+carrier, with no automatic identification of a Book03 cut or Info law.
+
+Root owns the shared brief and primary memo. The bounded author owns the
+disjoint proof, source pins and read-only checker; independent review
+checks the native factory factorization, all-column/spectator action,
+source chain rule, complete abort/readout schedules and frozen replay.
+No original Q8/full128/all42 or Lean suite is repeated. The result changes
+an existing parent's operational premise and leaves scientific acceptance,
+autonomous physical selection and GR closure open.
+
 ### 22 October: complete the original quantum history information source
 
 Continue existing Draft334 / native-programme-v1 from published
