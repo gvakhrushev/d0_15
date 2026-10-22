@@ -158,6 +158,70 @@ The log-survival generator is NOT the separately owned modular generator
 \(\Lambda_{\rm mod}=\beta^{-1}(\log\Delta-\log\lambda_{\min}\Delta)\).
 It also is NOT automatically Book03's Hodge heat. The two candidate nonzero Ward residuals are independent of this terminological distinction.
 
+### The compulsory BARE Book03 H+J source also fails the SAME boost, without any R assumption
+
+The former two H+J+R tests should not obscure that
+Book03 §03.25's literal **bare** master is H+J,
+and the historical native \(R=\operatorname{Tr}\rho_*\Delta\)
+is a DISTINCT variational interface, not a freely
+insertable term in the bare §03.25 action.
+For the two EXACT candidate native heats (8),(11)
+we can show nonstationarity WITHOUT any \(R\).
+
+From the unchanged native source bounds (5),
+
+\[
+ \epsilon'=\frac{W}{2\epsilon}
+ <\frac{6\cdot10^{-6}}{2(0.00055)}
+ <0.00546,\quad
+ |\lambda_-'|+|\lambda_+'|
+ \le2(|\mu'|+\epsilon')
+ <2(0.00161+0.00546)=0.01414 .
+\]
+Since on the true positive native chart
+\(0<f'(x)<4\zeta t/(1-\zeta)<3.21\cdot10^{-6}\),
+the **actual unchanged full128** feedback satisfies
+
+\[
+ \boxed{|\partial_rJ_2|
+ <1024(3.21\cdot10^{-6})(0.01414)
+ <4.65\cdot10^{-5}.}                                  \tag{13a}
+\]
+
+Yet the real thermal source in either candidate is
+strictly \(H_{\rm raw}'>-\mu'>0.00160\)
+and \(H_{\rm surv}'>-\mu'>0.00160\).
+Therefore
+
+\[
+ \boxed{
+ \partial_r(H_{\rm raw}+J_2)>0.00155,\quad
+ \partial_r(H_{\rm surv}+J_2)>0.00155.}                 \tag{13b}
+\]
+
+Thus the BARE §03.25-shaped master fails this
+actual native proper-Lorentz source for BOTH specified
+thermal selections; adding the native stationary
+\(R\) changes the sign but does not create a zero,
+as proved in (10),(13).
+
+A third actually discussed candidate is the original
+FIXED \(K(9,11,13)\) scene heat tensored with
+the native full128 detector and no independently
+moving Hodge coupling. In that fixed-coefficient
+scene chart, \(D_rH_{\rm scene}=0\) and
+\(\partial_r(H_{\rm scene}+J_2)
+=\partial_rJ_2<0\) EXACTLY by (7).
+This is a separate **fixed-scene** negative
+control, not a theorem that a physical moving
+native scene must stay fixed.
+
+The three mutually different Hodge/heat *choices*
+have strictly different source signs and absolute
+pressures. None can be substituted for the
+compulsory selected \(\Delta_N(V)\) without a
+same-execution native identification.
+
 ## 4. Stronger source separation on the ORIGINAL one-port-invisible native tangent
 
 The concurrently owned ORIGINAL operator theorem already provided the genuine two-parameter native chart \((r,\nu)\), with \(\Delta\propto\nu^2\) and the rank-two observable \(q=\Pr(\mathrm{port1})=c h\), \(u=\Pr(11)=c^2h\mu\), \(c=4p^3\). Its **unique tangent preserving the ENTIRE one-port Born marginal** is
