@@ -1,0 +1,128 @@
+{
+  "status": "PASS_EXPLICIT_SCENE_CLOCK_INCIDENCE_HEAT_AND_FULL128_RECORD_SOURCE",
+  "checks": 105,
+  "toy_full_record_controls": {
+    "d": 2,
+    "labels": 8,
+    "full_record_word_dimension": 128,
+    "direct_clock_laplacian_dimension": 384
+  },
+  "direct_scene_controls": {
+    "direct_dimension": 198,
+    "source_direct": -5.740122324665606e-06,
+    "source_holonomy": -5.7401223246656065e-06,
+    "source_bound": 7.940967033055673e-05
+  },
+  "inhomogeneous_mixed_loop_guard": {
+    "graph": "K2 x C15",
+    "phase": 0.41,
+    "d_trace_L4": -0.03936882251697993,
+    "exact_formula": "-8 sin(y)/81",
+    "d_heat": -2.2875921082530516e-05
+  },
+  "native_original_application": {
+    "rapidity": 0.22314355131420976,
+    "boost_r": 0.1111111111111111,
+    "derivative_coordinate": "rapidity, not r",
+    "full_recorded_word_dimension": 262144,
+    "all_scene_modes": 33,
+    "norm_Dword_upper_from_Frobenius": 1.3865295507037443,
+    "clocks": [
+      {
+        "m": 3,
+        "H_graph": 21.365346638878187,
+        "d_rapidity_H_graph": 7.045580575551718e-11,
+        "abs_source_bound": 0.00011010385452495927,
+        "relative_FD_error": 9.755254963961975e-09,
+        "d_rapidity_J_pre": -2.344012184324785e-06,
+        "heat_feedback_source_ratio": 3.0057781365932894e-05
+      },
+      {
+        "m": 8,
+        "H_graph": 22.64926868453634,
+        "d_rapidity_H_graph": 4.094487852712146e-22,
+        "abs_source_bound": 8.270283330946049e-16,
+        "relative_FD_error": 9.754092097572665e-09,
+        "d_rapidity_J_pre": -2.344012184324785e-06,
+        "heat_feedback_source_ratio": 1.7467860790542783e-16
+      },
+      {
+        "m": 11,
+        "H_graph": 23.066130030492616,
+        "d_rapidity_H_graph": 1.5484355285648677e-29,
+        "abs_source_bound": 3.4975727014643943e-23,
+        "relative_FD_error": 9.754092081512891e-09,
+        "d_rapidity_J_pre": -2.344012184324785e-06,
+        "heat_feedback_source_ratio": 6.6059192819891814e-24
+      },
+      {
+        "m": 15,
+        "H_graph": 23.472128102531485,
+        "d_rapidity_H_graph": 6.150935053537599e-40,
+        "abs_source_bound": 1.5521728595801282e-33,
+        "relative_FD_error": 9.754091987102898e-09,
+        "d_rapidity_J_pre": -2.344012184324785e-06,
+        "heat_feedback_source_ratio": 2.6241054098058938e-34
+      },
+      {
+        "m": 16,
+        "H_graph": 23.556610123492394,
+        "d_rapidity_H_graph": 1.3057021858026354e-42,
+        "abs_source_bound": 3.36860595307321e-36,
+        "relative_FD_error": 9.754092081006744e-09,
+        "d_rapidity_J_pre": -2.344012184324785e-06,
+        "heat_feedback_source_ratio": 5.57037286126034e-37
+      },
+      {
+        "m": 32,
+        "H_graph": 24.46395156244844,
+        "d_rapidity_H_graph": 3.878709347256162e-88,
+        "abs_source_bound": 1.1967286078076717e-81,
+        "relative_FD_error": 9.754092004420897e-09,
+        "d_rapidity_J_pre": -2.344012184324785e-06,
+        "heat_feedback_source_ratio": 1.654730881176482e-82
+      }
+    ],
+    "bare_reflection_source": 0.0,
+    "moments": [
+      262144.0,
+      2026.3824044136936,
+      256789.86481791103,
+      1885.0039091343908,
+      257972.5787298316,
+      1977.8389577680834,
+      255790.5387651252,
+      2090.299157620382,
+      258831.03335279354
+    ],
+    "moment_derivatives": [
+      0.0,
+      1.2403200317313412,
+      -81.71409440620008,
+      14.00019179435743,
+      -63.32605315209583,
+      11.248448681744764,
+      128.57599079457952,
+      -32.08864143795575,
+      311.5457865277681
+    ]
+  },
+  "uniform_coefficient_tail_upper": "1.01343600689200780325352563422481739005066445919015885745404094584445446318365438945370985e-97",
+  "scene_graph": "K(9,11,13) x C_m, homogeneous circuit fibre, normalized degree d_v+2",
+  "heat_operator": "genuine connection-incidence D*D; not paired cut C*C+CC*",
+  "feedback_heat_added_twice": false,
+  "compulsory_Book03_graph_or_cut_selected": false,
+  "full42_field_writer_constructed": false,
+  "GR_closed": false,
+  "scope": "Exact analytical identities + interval majorants; native application double precision, not an interval root proof.",
+  "maximum_direct_discrepancy": 2.8421962994132535e-14,
+  "normal_optimized_identical": true,
+  "raw_stdout_sha256": "0ae871e73aa93245e33b5032f15d6908a3afcb73583fa545e30fd11fb0343657",
+  "register_scope": {
+    "native_fibre": 2048,
+    "appended_fine_record_A": 128,
+    "per_passive_reference_copy": true,
+    "oldRIGHT_is_not_identified_with_new_A_bank": true,
+    "oldRIGHT_rank128_effect": "H += log(128)/beta, dH unchanged, J and dJ multiply by128"
+  }
+}
