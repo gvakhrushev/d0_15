@@ -133,3 +133,52 @@ Useful routes already owned: a paid relative Q8/Julia reference with source-sens
 - Original retained-work and Q8 probe/QND negative controls preserved: \`A4D_Q8_RETAINED_WORK_COHERENCE_TEST_ALGEBRA_2026_10_22.md\` and \`A4D_Q8_PAID_ECHO_ARCHIVE_QND_SELECTION_2026_10_22.md\`.
 
 Standalone bounded local proof control: a 53-check Python/numpy test of original p, fixed Golden 8×8 unitary, exact primitive Fredkin truth table, all probabilities and synthetic-count-only inverse-PF structural identity, complete two-copy Book F spectrum/J trace and source ratios. This does NOT replay actual native 10946-address assignment, exact h4 interval root, original full128, Lean or physical Book03/M1 compiler. \`GR_closed=false; full_D0_price_selected=false; raw216_closed=false\`.
+
+
+## 6. STRONGER STRATEGIC THEOREM — same full measurement, SAME base active cut and SAME Book value, opposite FIRST-SOURCE conclusions
+
+The remaining issue is not merely choosing **different ranks** for \(P_N\). Even full operator and price data at one original source point do not determine its moving first variation without an actual **native active-cut transport rule**.
+
+Use the very same exact Golden-controlled-SWAP \(U\) from (1) on a two-qubit actual data pair, and the same supplied (not physically derived) source-dependent first input
+\[
+|\psi_r\rangle=\sqrt{1-r}|0\rangle+\sqrt r |1\rangle,\qquad
+|v_r\rangle=|\psi_r\rangle\otimes|0\rangle,\quad 0<r<1.
+\]
+Run the SAME physical mathematical circuit with SAME prepared input \(|0\rangle_{\rm anc}|v_r\rangle\), both registered outputs and genuine same primitive costs. Its entire measured flag law is
+\[
+\boxed{P_{\rm flag=1}(r)=2p^3 r,\quad D_rP_{\rm flag=1}=2p^3\ne0.}\tag{12}
+\]
+Choose an ORIGINAL positive base value \(r_*=r_0=1.8512395785208469\cdot10^{-6}\), with no new programme angle, and compare two distinct **mathematical Book valuation extensions** of the same rank-one base active projector:
+\[
+P_{\rm frozen}(r)\equiv |0,v_{r_*}\rangle\langle0,v_{r_*}|,\qquad
+P_{\rm prepared}(r)=|0,v_r\rangle\langle0,v_r|.\tag{13}
+\]
+At \(r=r_*\) both have exactly the SAME active projector \(P_*\), rank-one spectrum, whole \(U\), literal complete two-copy measured history, endpoint input, costs, AND Book J value. The only missing datum distinguishing them is the independently field-determined **jet of the physical active projector**, \(D_rP_N\).
+
+Since \(\mathsf S|v_r\rangle=|0\rangle\otimes|\psi_r\rangle\), the prepared cut's own exact return amplitude is
+\[
+A(r)=\langle0,v_r|U|0,v_r\rangle=p+p^2(1-r).
+\]
+Hence its literal rank-one complementary Book03 scalar, **on all complete output branches**, is
+\[
+F_{\rm prepared}(r)=1-A(r)^2,\qquad
+J_{\rm prepared}(r)=-\ln(1-\zeta[1-A(r)^2]),
+\]
+\[
+\boxed{D_rJ_{\rm prepared}(r)
+=\frac{2\zeta p^2[p+p^2(1-r)]}
+ {1-\zeta\{1-[p+p^2(1-r)]^2\}}>0.}\tag{14}
+\]
+The fixed rank-one cut has \(D_rJ_{\rm frozen}\equiv0\) because \(U\) and \(P_{\rm frozen}\) are constant. At the original \(r_*\) and \(\zeta=2^{-20}\),
+\[
+\boxed{
+P_{\rm frozen}(r_*)=P_{\rm prepared}(r_*),\quad
+J_{\rm frozen}(r_*)=J_{\rm prepared}(r_*),\qquad
+D_rJ_{\rm frozen}=0,\quad D_rJ_{\rm prepared}=7.285418341796987\times10^{-7}.
+}\tag{15}
+\]
+The scalar first-jet was independently recomputed by the actual 8×8 matrix finite difference at positive steps \(10^{-7},10^{-8},10^{-9}\). A native 42-field reporter \(r(y)\) simply pulls the same ambiguity back into each of the REAL 42 directions as the covectors \(0\) versus \(c(r_*)D_{42}r\); it does not require introducing any new geometry.
+
+**Interpretation:** a full successful Born/readout source identification, an exact full42 configured CQ stationary point, the complete instrument matrix, ALL detector probabilities and even the **base value** of the Book projector and determinant are INSUFFICIENT to infer the physical Book first-source. What is missing is a **canonical physical connection/transport of \(P_N\) relative to the actual work/clock/reference and scene**, along with the independently valued \(\Delta_N\), pathwise Info and independent source-preparation equations. Without that supplied or derived transport the claim “the detector realizes Book/Einstein” is not identifiable from these data. This exact same-base *first-jet* countermodel sharply localizes the fundamental unclosed theorem; it is **not** a claim that the frozen and prepared cuts are both physically admitted D0 dynamics.
+
+**Priority decision:** stop engineering more observable reconstructions. First produce the M1/G0-native same-history theorem selecting \((P_N,D P_N,\Delta_N,D\Delta_N,\operatorname{Info},D\operatorname{Info})\) and the real clock/input data. Only then compare the FULL 42 covector against the original GR source and refine. Any route replacing this selection by a detector's observed value or by a fixed-cut “source proportionality” repeats the already falsified inference.
