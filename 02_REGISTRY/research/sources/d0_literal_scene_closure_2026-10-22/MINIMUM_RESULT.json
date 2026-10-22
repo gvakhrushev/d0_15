@@ -1,0 +1,45 @@
+{
+  "status": "PASS_LITERAL_SCENE_GLOBAL_MINIMUM_AND_STATIONARY_ELIMINATION",
+  "source_commit": "5a9764b20c2b7b481ec90d06a711ce3739f4e773",
+  "independent_edge_variables": 359,
+  "retained_history_dimension": 718,
+  "rigorous_convexity_lower_rational": "95261/33554400",
+  "minimum_spectrum": [
+    1,
+    -0.5,
+    -0.5,
+    "0 x30"
+  ],
+  "minimum_weight_family": "w_uv=c r_u r_v; c>0; sum_(u in zone a) r_u=1 for each a",
+  "positive_minimizer_family_dimension": 31,
+  "minimum_heat": 3.5971312013996473,
+  "minimum_feedback": 3.0040755120817086e-05,
+  "unweighted_minus_minimum_full_price": 9.725561822059522e-05,
+  "max359_euler_at_uniform_zone_minimum": 2.365532012695646e-19,
+  "max359_euler_over40_positive_profiles": 1.4915653396622011e-18,
+  "hessian359_diagnostic": {
+    "symmetry_error": 1.4399560103323106e-20,
+    "max_abs31_smallest": 3.0081272095935757e-19,
+    "min328_positive": 2.23136417807735e-05,
+    "max_eigenvalue": 0.00011512144875725407,
+    "tangent31_error": 2.70362328851732e-19,
+    "rank_is_outward_interval_certified": false
+  },
+  "eight_sign_pinching_error": 2.782288394428139e-16,
+  "smallest_observed_gap_over_proved_lower": 7.589879303973523,
+  "scene_functional_report_test": {
+    "dimension": 99,
+    "max_sector_value_error": 8.881784197001252e-16,
+    "max_offshell_scene_euler": 3.789231835151359e-19,
+    "whole_price_report_derivative": -0.00014054293728804623,
+    "reduced_price_report_derivative": -0.00014054294172893833,
+    "is_native_full128_or_all42": false
+  },
+  "anchored_readout_source_on_minimum_family": 0.49999999999772443,
+  "scene_blind_tensor_max359_euler": 3.789231835151359e-19,
+  "checks": 182,
+  "physical_weight_admission_proved": false,
+  "all42_field_writer_compiled": false,
+  "all_independent_apparatus_equations_solved": false,
+  "GR_closed": false
+}
