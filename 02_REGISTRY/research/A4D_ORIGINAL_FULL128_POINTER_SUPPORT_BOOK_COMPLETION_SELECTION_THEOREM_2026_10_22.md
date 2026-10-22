@@ -207,3 +207,35 @@ The original h0 NEW unpadded full42 mathematical root is a strictly interval-ver
 The [new exact algebraic checker](sources/d0_full128_pointer_support_selection_2026-10-22/check_original_full128_pointer_support.py) builds unchanged original 16 CAR creators, exact rational proper boost and exact ORIGINAL Julia square roots, every original duplicated Walsh row, and computes ALL 128 ranks over the exact number field \(\mathbb Q(i,\sqrt{24142})\) using algebraic DomainMatrix elimination. It independently checks the two COMPLETION-equivalent forward columns with distinct positive Book feedback in an exact rational small orthogonal embedding, the original whole-dimension rank arithmetic, and the strict native full Hodge+Book derivative-sign inequality. The symbolic LOCAL original-formula run passed 52 assertions; that run did **not** execute a directly pinned entire upstream Git checkout and does not certify physical M1 admission of the alternative off-input extensions. [Transparent local receipt](sources/d0_full128_pointer_support_selection_2026-10-22/RESULT_LOCAL.json) records all rank counts and numeric only diagnostic master values.
 
 **Exact status:** \`native_full128_exact_fine_kraus_rank_histogram=true\`, \`native_canonical_record_support_rank=118272\`, \`native_completion_invariant_prepared_book=true\`, \`one_column_does_not_fix_postrecord_Book=true\`, \`free_math_completion_master_source_zero=true\` on fixed-rank chart and specified full paired incidence-Hodge, \`Book03_compulsory_P_N_and_scene_Delta_selected=false\`, \`physical_same_run_42_Euler_closed=false\`, \`GR_closed=false\`.
+
+
+## 7. Exact positive original projector reconciliation (concurrent 22 October)
+
+The scope of the full original pointer-support completion theorem is
+UNCHANGED: the true postregistered output support alone still does
+not determine all unprepared unitary columns or the compulsory
+Book03 scene. But its remaining constructive pre-tick route has
+now been completed at the full ORIGINAL CAR16 labelled Stinespring
+level in
+[A4D_ORIGINAL_GOLDEN_HALMOS_NAIMARK_ALL128_CAUSAL_BOOK_WELD_2026_10_22.md](A4D_ORIGINAL_GOLDEN_HALMOS_NAIMARK_ALL128_CAUSAL_BOOK_WELD_2026_10_22.md).
+
+The exact minimal work16 projector
+\(Q_\Delta=[[\Delta,\sqrt{\Delta(1-\Delta)}],
+[\sqrt{\Delta(1-\Delta)},I-\Delta]]\),
+one original Golden controlled reflection and canonical
+original row isometry reconstruct ALL old full128 K, quantum
+poststates, 65-label causal information and real C1/C2 source.
+The original protected pre-tick Book feedback therefore is
+simultaneously a return from a TRUE Boolean projection on
+its minimal enlarged work and the ORIGINAL
+\(I-K_0^\dagger K_0\) source.
+
+Crucial preservation of this owner's no-go: a hypothetical
+larger full-output-support P or a full unprepared-work port P
+is NOT proved the compulsory Book active cut; the latter
+actually has a field-INDEPENDENT logdet despite unchanged
+Golden U. The new theorem thus sharply locates physical
+selection in the **present prepared active cut**, not in
+a missing 17-Kraus surrogate. It does not assume Book03
+scene heat is the two-projector cut Hodge used in this owner's
+conditional minimax.
