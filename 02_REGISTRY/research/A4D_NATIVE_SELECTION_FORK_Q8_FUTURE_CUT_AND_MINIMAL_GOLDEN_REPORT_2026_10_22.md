@@ -149,3 +149,29 @@ The present results are REAL exact mathematical terminals for two proposed sourc
 * Original full Golden binary code and AF refinement: \`A4D_NATIVE_GOLDEN_COST_REFINEMENT.md\`, Git blob \`573e2d70c1d7cbefd35670431b1ab9b87624dbdd\`.
 * Original certified off-null h4 independent 42 root report source: \`sources/d0_exact_full42_h4_2026-10-22/REPORT_BRIDGE_RESULT.json\`, Git blob \`2c7193f54da76aaf108d2821c45daddac7457f02\`.
 * Exact standalone original-matrix + exhaustive bounded Golden code control: \`sources/d0_native_selector_fork_2026-10-22/check_golden_q8_selector_fork.py\`. This bounded test does not re-run old h4 Hessian or all historical Lean/Julia suites. The all-codebook proof and rank theorem are analytical, not numerical extrapolations.
+
+
+## 6. Master Book03 bootstrap rank-birth heat compatibility: ONE exact forced equation, not a counterterm
+
+The rank-birth result in §2 has an immediate **FULL original Book03 §03.25** consequence that does not require identifying the whole spectral heat in advance. Recall the LITERAL one-stack action
+\[
+\mathcal B_N(V)=
+\beta^{-1}\ln\operatorname{Tr}e^{-\beta\Delta_N(V)}
+-\ln\det(I-\zeta F_N(V)).
+\tag{13}
+\]
+This equality is already in Book03. It means the positive feedback jump (7) **cannot be removed by declaring a constant energy zero** when the active rank actually changes. If this selected one-stack physical action must have a continuous limit as the prepared order-arm probability \(r\downarrow0\) on the SAME complete boundary/clock section, the true full heat factor \(Z_H(V):=\operatorname{Tr}e^{-\beta\Delta_N(V)}\) MUST satisfy, exactly,
+\[
+\boxed{
+\frac1\beta\ln\frac{Z_H(8)}{Z_H(4)}
+=4\ln(1-\zeta p^6)<0,
+\qquad
+\frac{Z_H(8)}{Z_H(4)}
+=(1-\zeta p^6)^{4\beta}<1.
+}\tag{14}
+\]
+This is a **NECESSARY conditional physical PASS/FAIL**, not an assignment of \(\Delta_N\) or of \(\beta\). If the original physical heat traces are actually an unchanged-spectrum orthogonal rank extension (old heat eigenmodes retained and four extra real finite modes appended), positivity gives \(Z_H(8)>Z_H(4)\), which has the **OPPOSITE sign** and cannot cancel (7), for ANY \(\beta>0\). Thus such a naive extra-mode heat completion yields an intrinsically discontinuous one-stack physical Book action if it also chooses minimal occupied future support.
+
+An actual native \(\Delta_N(V)\) could reorganize the old eigenvalues, change reference/clock or avoid support minimization entirely; Book03 does not prove the monotone-addition premise or the required ratio (14) for the original Q8 15-stage circuit. If the physical selected active \(P_N\) remains full rank8 at r=0, the rank-birth premise is absent and (14) is not required — but the original fixed-Q8 support feedback remains r-source-blind. If \(P_N\) is the smooth coherent present-preparation rank4, (14) is likewise irrelevant; actual chronology, true preparation/source and full feedback+heat must be derived instead.
+
+**This is the highest-leverage next substitution inside the EXISTING Gate A/B/C:** pin the actual original \(\Delta_N(V)\), its physical trace carrier, the already derived \(\beta\) and the selected pre/post-record cut on ONE programme. Evaluate (14) before any further entropy score or GR root scan. A positive/negative answer is a definite terminal for the minimal-future-support Book choice; no fitted heat correction, free rank counterterm, new clock or claimed universal gravity follows from this necessary identity.
