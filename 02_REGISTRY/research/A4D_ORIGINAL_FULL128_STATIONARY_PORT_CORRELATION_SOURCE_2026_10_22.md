@@ -210,6 +210,50 @@ The last \(A,B,C\) are the **positive two-port probabilities** from §4, not Kra
 
 Independent native matrix checks at \(r=1/9,\nu=3/5\) reproduce the original \(2\times2\) observable Jacobian determinant \(-2.2704657992\dots\times10^{-7}\); a true small displacement along (14) gives numerical \(D_vq\simeq0\) and \(D_vq_{11}\simeq5.2289695\times10^{-6}\). The exact rational/calculus proof is independent of those finite differences.
 
+## 4b. Exact TWO-PORT operational inversion of the ORIGINAL CAR16 spectral pair and its thermal Gibbs discrepancy
+
+A further synthesis combines the just-proved native rank-two readout with the independently owned exact native inverse-square/Gibbs obstruction. On the algebraic original CAR16 fixture, the **actual** \(\Delta\) has exactly TWO distinct eigenvalues \(\lambda_\pm\), each of multiplicity eight (this is the already-proved exact 16×16 quadratic minimal polynomial, NOT a newly assumed spectral truncation).
+
+The one-port and two-port **genuine positive original sequential probabilities** \(q=\Pr_*(b_1=1)>0\) and \(u=\Pr_*(b_1=b_2=1)>q^2\) exactly determine the arithmetic and harmonic means:
+\[
+\boxed{
+ h=\frac q c,\qquad \mu=\frac{u}{cq},
+ \qquad c=4p^3.
+}\tag{16}
+\]
+The original quadratic spectrum then follows WITHOUT any independent matrix-eigenvalue fitting or new detector:
+\[
+\boxed{
+\lambda_\pm
+=\mu\pm\sqrt{\mu(\mu-h)}
+=\frac{u\pm\sqrt{u(u-q^2)}}{c q}.
+}\tag{17}
+\]
+All four two-round probabilities have already been shown to arise from the ORIGINAL full128 CAR16 Kraus matrices with oldRIGHT retained. Formula (17) is therefore an **operational spectral decoder** on this actual two-eigenspace native fixture, rather than a general claim that two moments determine an arbitrary 16-eigenvalue spectrum.
+
+In particular the previously proved actual native inverse-square preparation versus the SAME-\(\Delta\) Golden Gibbs state at the unchanged \(\beta_0=2p^2\) has the trace-norm discrepancy
+\[
+\boxed{
+\|\rho_*-\sigma_{\beta_0,\Delta}\|_1
+=\sqrt{1-\frac{q^2}{u}}
+-\tanh\left[
+  \frac{\beta_0\sqrt{u(u-q^2)}}{cq}
+ \right].
+}\tag{18}
+\]
+The derivation is direct finite spectral calculus: the two native energies have equal multiplicity eight, so the inverse-square sector imbalance equals \(\sqrt{1-q^2/u}\), whereas the Gibbs sector imbalance equals \(\tanh(\beta_0(\lambda_+-\lambda_-)/2)\). Both are computed from the SAME two positive port probabilities and the existing fixed Golden parameters \(c,\beta_0\). There is no new temperature, spectrum, clock or observer.
+
+At the exact original point \(r=1/9,\nu=3/5\), the two genuine probabilities reproduce
+\[
+\lambda_-\approx0.0132629182178348,\quad
+\lambda_+\approx0.0143716520946652,\quad
+\|\rho_*-\sigma_{\beta_0,\Delta}\|_1
+\approx0.03969776485485>0.0388.
+\]
+The strict \(0.0388\) bound is the separately established rational thermal obstruction of the prior owner; here the **new content** is its reconstruction from the positive two-port measurement coordinates (16)–(18).
+
+This is strategically useful: a field writer/observer can test the *native spectral-preparation versus hypothetical Gibbs heat* compatibility using only TWO ordinary port-event frequencies, without asking for a new Dirac tomography. At the same time the strict rank-two Jacobian (13) proves these two outcomes resolve distinct native spectral invariants locally. Whether the selected Book03 \(\Delta_N(V)\) equals the particular original \(\Delta\), or the original native programme selects this stationary preparation and this future test, is STILL unproved; (18) is a decisive operational **NO-GO TEST FOR THAT SPECIFIC HEAT IDENTIFICATION**, not a derivation or exclusion of physical GR.
+
 ## 5. Architectural consequence: spectral Gibbs obstruction is now visible in a real cheap native future record
 
 The previously owned original CAR16 calculation proves \(\rho_*=\Delta^{-1}/Z\ne e^{-\beta_0\Delta}/\operatorname{Tr}e^{-\beta_0\Delta}\) at its actual Golden \(\beta_0=2p^2\); its strict trace-norm separation exceeds 0.0388. The current **same-input** theorem supplies a second, operational witness of the same underlying non-scalar native \(\Delta\): the two real consecutive Golden port bits have \(\delta>0\) iff that \(\Delta\) is nonscalar, and the field derivative of their mutual information is strictly positive at the original algebraic boost.
