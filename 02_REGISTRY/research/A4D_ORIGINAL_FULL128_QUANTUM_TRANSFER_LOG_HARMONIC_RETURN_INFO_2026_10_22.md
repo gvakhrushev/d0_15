@@ -78,6 +78,32 @@ The \(k=1\) term is **exactly** \(-2\delta\), with \(\delta=P_{11}-q_1^2>0\) the
 \]
 Calling harmonic waiting "measured Info" without choosing the actual observer algebra charges a different physical source. The new operator formula determines that alternative source exactly, rather than inferring its equality from the old Kac mean \(E[T]=3\).
 
+### 2a. A positive spectral-entropy bridge: the same native quantum CP transfer has a normalized ZETA-power information generator
+
+The stationary identity (4) is stronger than a formal resemblance to a matrix log. The ORIGINAL no-reset finite transfer yields its own fully parameter-free native analytic power-functional
+\[
+\boxed{
+\mathcal Z_{\rm ret}(s;y)=
+\sum_{a=0}^1\operatorname{Tr}\bigl[
+  (I_{\mathscr B}-\mathcal T_a(y))^s\rho_*(y)
+\bigr],\qquad s\in\mathbb C
+}\tag{4a}
+\]
+with the ordinary matrix power defined by the convergent principal analytic log in the 256-dimensional CAR operator-space representation. It is **entire in s** for fixed strictly contracting \(\mathcal T_a\), and at the EXACT unmodified native normalization point it satisfies
+\[
+\boxed{
+\mathcal Z_{\rm ret}(1;y)=
+\sum_a\operatorname{Tr}\mathcal I_a(\rho_*)=1,\qquad
+\mathscr H_{\rm ret}(y)=-
+\left.\partial_s\mathcal Z_{\rm ret}(s;y)\right|_{s=1}.
+}\tag{4b}
+\]
+No independent Gibbs temperature, fitted event surprisal, extra test weight, branchwise entropy oracle, or post-hoc \(\log q_a\) is supplied. The ONLY scalar information normalization into the ORIGINAL Golden code charge is division by the existing \(\ln\varphi\).
+
+In a genuinely PAID iid fresh-preparation limit, \((I-\mathcal T_a)\rho=q_a\rho\) so \(\mathcal Z_{\rm ret}(s)=\sum_a q_a^s\) is exactly the usual classical Rényi power sum, and \(-\mathcal Z_{\rm ret}'(1)=H_{\rm nat}(q)\). On the ORIGINAL quantum no-reset execution it is a **quantum CP-transfer zeta analogue**, not the classical sum of \(q_a^s\); its explicitly computed source error (11) is therefore an operator-theoretic anomaly of the iid identification, not a missing coefficient.
+
+On any true finite-dimensional smooth native field chart with a UNIFORM original event-effect gap \(\mathcal I_a^\ast(I)\succeq\eta I\) for \(\eta>0\), \(\mathcal Z_{\rm ret}\) and \(\mathscr H_{\rm ret}\) are real analytic in the field coordinates wherever the underlying full Kraus and stationary preparation are analytic. Proof: \(\mathrm{spec}\mathcal T_a\) remains inside the disk of radius \(1-\eta\), so the matrix-log/power functional calculus is analytic on a common complexified neighbourhood and all true finite-order field derivatives of the power series have uniform \(k^m(1-\eta)^{k-m}/k\) majorants. **This removes the smoothness/source problem for the mathematical fully nonreset infinite first-return functional**—but it neither declares an infinite physically executed gate free nor provides the missing physically selected Book03 SCENE source or 42-field input writer. \(\mathcal Z_{\rm ret}(s)\) is not claimed to be a positive partition function for ALL real s since the CP superoperator is not generally selfadjoint; only its exact normalized analytic identity (4b) is used.
+
 ## 3. THEOREM B — ALL independently moving preparation, CAR and real-field first-source jets
 
 Let v be ANY admitted real original field/input/program tangent with genuine \(\dot K_\alpha,\dot\rho\), satisfying trace-normalization and CPTP differentiated. Put \(\dot{\mathcal T}_a=\sum_{\alpha:\,b(\alpha)\ne a}D_v(K_\alpha(\cdot)K_\alpha^\dagger)\), and
