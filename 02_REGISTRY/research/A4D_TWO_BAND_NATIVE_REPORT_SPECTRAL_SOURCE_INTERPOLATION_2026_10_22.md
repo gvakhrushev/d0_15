@@ -111,3 +111,14 @@ This is an exact TWO-PROBE first-source acceptance criterion, independent of the
 If (8) holds only at one root, it is NOT sufficient for equality of 42×42 Hessians, isolation or open-chart source equivalence. Their genuine second jets must also be transported. If original Book has independently field-moving \(\beta\), fugacity, Hodge heat, prepared cut, oldRIGHT/reference or branch-Info/work, its first source is NOT merely \(D\mathcal J_j\); all additional terms must be included before applying the root test. Nonadditive two-address operator feedback is outside (8) but can be treated via the full spectral Fréchet derivative.
 
 This is a reusable rejection/acceptance gate for candidate Book spectral components that originate on the SAME original two-band addressed reporter, not a licence to choose \(j\) to fit the CQ stationary point. Original full Book03 physical selector and global GR remain open.
+
+
+## 7. SECOND-JET GEOMETRIC NECESSITY: exactly rank-one report Jacobian but full-rank42 CQ Hessian
+
+The new [strict second-jet source decomposition](A4D_OFF_NULL_FISHER_RANK1_SECOND_JET_41D_GEOMETRIC_HESSIAN_2026_10_22.md) is the key D0→GR architectural consumer of the operator spectral trace identity (7). At the exact h=1/4 42-field CQ critical point, h_phi'(r0)Dr0+h_phi'(r1)Dr1=0 and independently certified Dr0!=0 imply rank D(r0,r1)=1. The two trace-moment differentials DM1,DM2 are also collinear and nonzero; in particular |D29 M1|>5.37956101163591462e-14. Therefore ANY *first-jet-only* source geometry of the two scalar reporters, including classical Bernoulli Fisher, has rank<=1, while the original 42×42 configured CQ Hessian is STRICTLY invertible.
+
+The complete source action has the exact, no-fit second chain rule
+  D² H = [alpha D²M1+beta D²M2] + DM^T (D²Psi) DM,
+where Psi(M1,M2)=h_phi(r0)+h_phi(r1). The second term has rank<=1, so rank[alpha D²M1+beta D²M2] >=41. This is a mathematically forced >=41-dimensional weighted SECOND FIELD→REPORT JET, not another introduced GR tensor. Its weighted second-jet form is coordinate-invariant at this true critical point because the extra Hessian terms under reparametrization are proportional to alpha DM1+beta DM2=DH=0.
+
+**Architectural consequence:** native action/source must retain genuine nonlinear response and source-selected history/Info; a two-pointer first-jet Fisher metric cannot be the whole finite 42-field Einstein-CAR variational source. The rich original full128 conditional quantum output is outside this restrictive two-Bernoulli claim. The known 42 Hessian is for the CONFIGURED CQ price only; compulsory physical Book03 field-to-cut/preparation/clock/Hodge selection and GR remain unproved.
