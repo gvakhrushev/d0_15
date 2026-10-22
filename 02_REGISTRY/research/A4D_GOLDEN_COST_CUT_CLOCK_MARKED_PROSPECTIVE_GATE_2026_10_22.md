@@ -125,3 +125,232 @@ Consequently the bare scalar native Golden cylinder law alone has ZERO gravitati
 **What is and is not derived.** The scalar cylinder normalization w_0=1 and genuine UNNORMALIZED cross-cut consistency are explicitly the hypotheses. The owned AF Golden cylinder law supplies such a normalized mathematical measure, but Book03's algebra-valued sum does NOT automatically inherit this scalar martingale law; actual future tasks can change the physical process and its root cost. If only the normalized q_w and consistency are known, J_0(y) remains an arbitrary absolute field-dependent common source; this identifies the exact one-function root-price seam without adjusting an Info table. The theorem is a positive uniqueness result for the specified scalar binding, NOT GR closure or a claim that all physical Book programmes have Info=0.
 
 For the physical #334 test the key choice is now binary and checkable: either prove the actual same-execution Book scalarization AND its root/cylinder law (then the neutral Golden-only branch is source-free), or exhibit the REAL field-dependent absolute root/Info/memory process with its entire clock and all42 source jets. Merely increasing Golden refinement cannot manufacture that missing physical source.
+
+
+## 6. STRONGER SAME-PROGRAMME RESULT: the entire Golden clock is a pathwise coboundary
+
+The preceding cost-cut expectation formula can be strengthened from a mean to an **identity on every single original complete cylinder**, without discarding any native direct/return or pending history.
+
+The original forbidden-11 binary encoding starts in state X_0=0. At every encoded cost depth, X_j is exactly the most recent bit (0 or pending 1). In the literal native Golden cylinder measure, the complete transition kernel is
+
+\[
+K_p=\begin{pmatrix}p&p^2\\1&0\end{pmatrix},\qquad p=\varphi^{-1},\quad p+p^2=1.
+\tag{25}
+\]
+
+The complete original shortest raw prefix at cut n has cost n if its binary word ends in 0, and n+1 if it ends in the compulsory pending 1. Therefore, **pathwise for all finite n and all completed original cost cuts**,
+
+\[
+\boxed{C_n=n+X_n,\qquad C_{j+1}-C_j=1+X_{j+1}-X_j.}
+\tag{26}
+\]
+
+The three actual cut-transition cost increments are 0→0:1, 0→1:2, 1→0:0 (carrying an already-paid pending return). The zero cost is not an uncharged physical gate: the last transition is a *cost-cut refinement*, not an independently executed native step; the two-unit raw return was already paid at its earlier crossing. Equation (26) is an exact cost-cut bookkeeping statement, NOT the statement that each physical clock transition costs one.
+
+The additive cost one-form in this cut is thus 1+dX. Its internal fluctuation is a **boundary coboundary**, bounded in absolute value by one regardless of depth. The actual complete pathwise scalar length is NOT an independent Lorentz curvature source.
+
+The statement is stronger than the native Markov model: under **any normalized history law whatsoever on the same legal original Fibonacci cut** (possibly correlated, and not necessarily Markov), the complete marked partition obeys
+
+\[
+Z_n(y,u)=\mathbb E_{P_{n,y}}e^{-uC_n}
+=e^{-un}\{1+\beta_n(y)(e^{-u}-1)\},\quad
+\beta_n(y)=P_{n,y}(X_n=1)\in[0,1],
+\tag{27}
+\]
+
+and, for fixed real u,
+
+\[
+\boxed{\lim_{n\to\infty}\frac1n\log Z_n(y,u)=-u}
+\tag{28}
+\]
+
+**uniformly in all such probability laws and field parameters y**, because the factor in braces lies between min(1,e^{-u}) and max(1,e^{-u}). This proves an exact **bulk clock-pressure rigidity** independent of the field-dependent branch law; no physical Book03.Info, amplitude or clock actuation has been selected. The pressure's pointwise limit does NOT automatically commute with field differentiation (see §9).
+
+### Exact tilted spectrum, not a fitted phi time law
+
+For the authentic native law (25), or the explicitly diagnostic stationary biased family
+
+\[
+K_q=\begin{pmatrix}q&1-q\\1&0\end{pmatrix},\quad 0<q<1,
+\tag{29}
+\]
+
+with the **same unchanged legal code costs** (26), its finite mark matrix is
+
+\[
+K_q(u)=\begin{pmatrix}qe^{-u}&(1-q)e^{-2u}\\1&0\end{pmatrix}
+=e^{-u}D_u^{-1}K_qD_u,\qquad D_u=\operatorname{diag}(1,e^{-u}).
+\tag{30}
+\]
+
+Thus its exact eigenvalues are e^{-u} and -(1-q)e^{-u}. In particular, for **every smooth homogeneous bias q(y)**, its entire scalar marked bulk cost-pressure has derivative -u and **zero field source**, without a Perron approximation or adjustment of the original phi. The original kernel is q=p and the second eigenvalue is -p²e^{-u}.
+
+The complete finite-horizon formula is
+
+\[
+\beta_n(q)=\frac{1-q}{2-q}[1-(q-1)^n],\quad
+Z_n(q,u)=e^{-un}(1-\beta_n(q)+\beta_n(q)e^{-u}).
+\tag{31}
+\]
+
+The original count identity beta_n(p)=F_n p^{n+1} follows exactly. For a fixed smooth q(y) staying in a compact subinterval of (0,1), all field jets of the *finite endpoint beta* remain bounded in n, and the 1/n bulk cost source vanishes. This is a positive controlled C1 refinement statement for this homogeneous Markov family, NOT for arbitrary stage-dependent physical continuation laws.
+
+## 7. Complete native-book CODE-SHANNON finite source: a sharp proper-price obstruction
+
+Do not identify native code cost, measured self-entropy or Book03 pathwise vertex information by name. But one exact **given-record** scalar comparison can now be calculated completely for every stage, without unknown work: retain every legal Fibonacci history and compare a fixed homogeneous K_q path law P_q^(n) with the **true original** Golden prefix-code reference mu^(n)=P_p^(n), mu(w)=p^{C_n(w)}. The actual native code cost and the *declared* measured classical pointer entropy then obey the exact finite identity
+
+\[
+\boxed{
+\mathbb E_q C_n-H_\varphi(P_q^{(n)})
+=D_\varphi(P_q^{(n)}\|\mu^{(n)})
+=V_n(q)\,d_\varphi(q\|p),}
+\tag{32}
+\]
+
+where the exact expected number of true X_j=0 branch opportunities and binary Golden relative divergence are
+
+\[
+\begin{split}
+V_n(q)&=\sum_{j=0}^{n-1}P_q(X_j=0)
+=\frac n{2-q}+\frac{1-q}{(2-q)^2}[1-(q-1)^n],\\
+d_\varphi(q\|p)&=
+q\log_\varphi\frac qp+(1-q)\log_\varphi\frac{1-q}{p^2}.
+\end{split}
+\tag{33}
+\]
+
+**Proof:** the Markov KL chain rule charges only the row X=0, because X=1→0 is deterministic for BOTH measures. The row divergence is exactly d_phi; summing the visit probabilities yields V_n. Separately, the native Kraft identity gives -log_phi mu(w)=C_n(w), so the left-hand identity is EXACT on the FULL legal retained tape. No postselection or independently normalized output bin is present.
+
+Since the two distributions match at q=p, one has for every finite n
+
+\[
+\boxed{D_n(p)=D_n'(p)=0,\qquad
+D_n''(p)=\frac{V_n(p)}{(\ln\varphi)p^3}>0,}
+\tag{34}
+\]
+
+where D_n(q)=D_phi(P_q^(n)||P_p^(n)). For an arbitrarily coupled smooth native field chart q=q(y) with q(y_0)=p,
+
+\[
+D_yD_n(y_0)=0,\quad
+D_y^2D_n(y_0)=\frac{V_n(p)}{(\ln\varphi)p^3}
+\bigl(D_yq(y_0)\bigr)\otimes\bigl(D_yq(y_0)\bigr).
+\tag{35}
+\]
+
+This Hessian is **positive semidefinite with rank at most one** on the full ambient 42-coordinate pullback. Even adding arbitrarily many *independent matched Golden address controls* gives only a sum of PSD Fisher forms at the native reference. Thus the scalar **matched complete code-relative** address action ALONE cannot equal the previously owned P25 Palatini mixed saddle S_*(a,t)=(1-a)sin t whose Hessian at (1,0) has eigenvalues +1,-1, if both original saddle tangent directions are really included in the alleged common physical pullback. It also cannot produce any nonzero first source at the matched native Golden point. This is an exact **scoped negative terminal for field-reweighting the native address/cost-cut law only**, not a no-go for Book03's noncommutative history sum, original Golden READY→CAR material reporter, a real changed terminal task, or source-bearing work/heat/clock.
+
+At any q the full intensive code-relative price has the exact limit
+
+\[
+\lim_{n\to\infty}\frac{D_n(q)}n
+=\frac{d_\varphi(q\|p)}{2-q}
+=1-\frac{h_\varphi(q)}{2-q}\ge0,
+\tag{36}
+\]
+
+with unique zero at q=p. This identifies the **entropy/record** contribution as the sole extensive *field-sensitive* term within this two-state code model; the cost-clock's bulk rate is identically one. Calling (36) compulsory physical Book03 Info would be an UNPROVED valuation choice and is not done here.
+
+## 8. A stronger no-hidden-Book-source theorem: bounded endpoint-only harmonic memory collapses
+
+The §5 rigidity assumed identical native Born weights up to one scalar at every cut. A mathematically stronger statement **does not require** that a proposed Book terminal response is already a common scalar.
+
+Let V be any normed vector space, allowing finite-matrix/operator/memory-class values. On the exact ORIGINAL K_p define h_n=(h_n^0,h_n^1) in V², n≥0, as a **terminal-state-only** correction to the scalar Golden cylinder weights. Suppose it is genuinely projectively consistent under the ORIGINAL split, i.e.
+
+\[
+\boxed{h_n=K_ph_{n+1},\qquad\sup_{n,s}\|h_n^s\|<\infty.}
+\tag{37}
+\]
+
+Then **necessarily and sufficiently**
+
+\[
+\boxed{h_n^0=h_n^1=c\in V\quad\text{for every }n.}
+\tag{38}
+\]
+
+**All-depth proof:** the exact state contrast satisfies
+
+\[
+h_n^0-h_n^1=-p^2(h_{n+1}^0-h_{n+1}^1)
+=(-p^2)^k(h_{n+k}^0-h_{n+k}^1).
+\]
+
+Boundedness and p²<1 force the contrast to zero. Then the row equations force the remaining common value independent of n. No commutativity of the elements of V was assumed; only the proposed *endpoint-state-only, scalar-kernel* form is restricted. If the physically admitted absolute root correction is the fixed identity c=1, this entire relative scalar/finite-operator correction vanishes identically, including all its field derivatives. If c=c(y) remains field dependent, it is exactly ONE unanchored paid root/terminal source and cannot be set to zero after comparing outputs.
+
+For a genuinely finite terminal vector h_N, the complete exact source decomposition is
+
+\[
+\boxed{h_n=\bar h_N\mathbf1+(-p^2)^{N-n}(h_N-\bar h_N\mathbf1),
+\quad \bar h_N=\pi_0h_N^0+\pi_1h_N^1,\quad
+(\pi_0,\pi_1)=\frac{(1,p^2)}{1+p^2}.}
+\tag{39}
+\]
+
+Thus **all endpoint-parity corrections decay at the exact rate p^{2(N-n)}; only the Perron-averaged absolute terminal factor remains**. On any compact physical field chart with positive scalar continuation centers bounded away from zero and bounded first terminal jets, the full two-ending future log-odds source has the exact structure
+
+\[
+D_y\log\frac{Z^-_{n,N}}{Z^+_{n,N}}
+=D_y\log\frac{\bar h_N^-}{\bar h_N^+}
++O\bigl(p^{2(N-n)}\bigr).
+\tag{40}
+\]
+
+This provides a sharp conditional positive sufficiency route: **if the SAME physically paid two-ending programme forces equal complete Perron-average continuation factors and their field sources**, its original positive-event odds source survives far-future neutral Fibonacci refinement, up to the explicit decaying endpoint-mode error. Merely having equal *values at one field* does not impose equal derivatives of the centers. No claim that the actual six-Lorentz Julia comparator has this scalar same-kernel continuation is made: its order-memory/oldRIGHT/observer/controller can escape (37) and must be priced in the original #334 gate.
+
+## 9. Hostile source/refinement counterexample on the EXACT original Golden base
+
+Equation (28) is UNIFORMLY true in values for **every** normalized history law. It would be incorrect to differentiate its limit without a native uniform source bound. The following explicit entire positive smooth **stage-dependent stochastic tower** makes that distinction sharp **while matching the original Golden law at the base field on every single stage**.
+
+Take the original native overshoot marginals beta_n^*=F_n p^(n+1) for n≥1, beta_0^*=0. For every real field y set
+
+\[
+\beta_0(y)=0,\qquad
+\beta_n(y)=\beta_n^*+\varepsilon\sin(ny),\quad
+\varepsilon=1/100,\ n\ge1,
+\tag{41}
+\]
+
+and choose the actual legal no-11 time-inhomogeneous transition
+
+\[
+P_y(X_{n+1}=1\mid X_n=0)
+=\frac{\beta_{n+1}(y)}{1-\beta_n(y)},\qquad
+P_y(X_{n+1}=0\mid X_n=1)=1.
+\tag{42}
+\]
+
+For all n≥1 the original exact formula gives p³≤beta_n^*≤p². Consequently the 1/100 oscillation leaves every beta_n(y) between .22 and .40, and consecutive sums below .80<1. Every probability in (42) is therefore strictly between zero and one **for every real y and all n**. The entire infinite family is a legitimate prefix-consistent, retained, strictly positive Markov law on the SAME native no-11 history grammar. At y=0, the kernels in (42) equal exactly p² and ALL finite fine histories coincide with the unmodified original Golden cylinder measure — not merely with the same final distribution.
+
+Nevertheless the exact code-cost pressure has
+
+\[
+\lim_{n\to\infty}\frac1n\mathbb E_y C_n=1
+\quad\text{uniformly in }y,\qquad
+\boxed{\left.\partial_y\frac1n\mathbb E_y C_n\right|_{y=0}
+=\varepsilon\ne0\quad\text{for every }n.}
+\tag{43}
+\]
+
+Indeed C_n=n+X_n and ∂y beta_n(0)=epsilon n. The same phenomenon survives for the full marked pressure (27):
+
+\[
+\boxed{\left.\partial_y\frac1n\log Z_n(y,u)\right|_{y=0}
+=\frac{\varepsilon(e^{-u}-1)}{1+\beta_n^*(e^{-u}-1)}
+\longrightarrow\frac{\varepsilon(e^{-u}-1)}{1+\pi_1(e^{-u}-1)}\ne0}
+\tag{44}
+\]
+
+for any fixed u≠0, while its *uniform value limit* is -u with zero field derivative. Thus even a perfectly smooth positive complete Golden-prefix stochastic continuation identical to native D0 at one background can exhibit a noncommuting h→0/field-source limit. The time-dependent controlled probability law (42) is an **adversarial mathematical variation**, not an original D0 physically admitted writer; it refutes only the unjustified shortcut C0 normalized/clock convergence => C1 source convergence without a uniform tangent/operator bound.
+
+## 10. Actual #334 source-gate consequence, not a new selector
+
+The exact intersection of (26), (32), (38), (40), and (44) now gives ONE targeted application to the EXISTING Gate A/B/C, rather than another detector, root, rank or invented gravity action:
+
+- **Native neutral clock:** the ORIGINAL F/R Fibonacci prefix-cost tower is n+terminal bit; its scalar bulk marked pressure cannot select a coframe/Lorentz/CAR first source. Even an arbitrary normalized field-dependent history law does not change the scalar bulk pressure VALUE.
+- **Native scalar code-relative Info:** if the actual complete Book03 execution chooses only this matched Golden code-versus-full-pointer Shannon KL, its native baseline first source is ZERO and its Hessian is PSD. It therefore cannot by itself replace the old P25 saddle or the already-owned nonvacuum 42-source.
+- **Potential physical escape that remains real:** Book03's compulsory H+J+R, based-loop order memory, full original CAR/oldRIGHT report, site-dependent terminal likelihood, observer transport, non-homogeneous full clock and reference/terminal task MAY contribute independent first sources. Their true compulsory selection, absolute root factor, all 42 inputs and original primitive admission must be shown on ONE execution, not assigned after observing J2.
+- **Refinement requirement:** even if a proposed paid future source matches at every finite base root, ordinary value consistency does not let one commute derivative and refinement. Demand a genuine uniform field-source estimate for the executed programme; the explicit all-native-base countercontrol (41)–(44) is a test that such an estimate is not a tautology.
+
+**No promotion:** full_D0_price_selected=false, same_execution_42_source_pass=false, physical_clock_selected=false, GR_closed=false, raw216_closed=false. The exact checker is sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/check_native_cost_markov.py; it verifies the finite algebra (including the C1 hostile), while the all-depth harmonic/pressure statements are analytical proofs. The underlying ORIGINAL historical suite, main Lean and full physical root were not rerun here.
