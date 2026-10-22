@@ -1,5 +1,43 @@
 # A4D joint response on fixed smooth sources: PARTIAL / OPEN
 
+## 22 October 2026 — original stopped futures remove the two-band marginal premise
+
+[Native stopped-future entropy composition](sources/d0_native_blank_future_entropy_2026-10-22/README.md)
+applies the existing inverse-square preparation and entropy/Poisson source
+to the original full128 first-anchor/first-match tape. Its actual fine
+outcomes are `K_0=B=I-2p^2 Delta>0` and `K_1=-2p sqrt(p) Delta`.
+The full-label comparator retains the port bit, so `(1,0^n)` contains
+only mismatches and is a genuine retained prefix for every `n<=K`.
+Summing its complete later match and cap-abort leaves gives the actual
+unconditioned effect `F_n=4p^3 Delta^2 B^(2n)`.
+
+For the declared cap `K>=d-1`, these probabilities determine all spectral
+block weights. The exact polynomial identity `log rho_* in span{F_n}`
+proves `S(rho_*)-S(sigma)=D(sigma||rho_*)` for every equal-test state,
+where `rho_*=Delta^-1/Tr(Delta^-1)`. Thus this same native invariant state
+is the unique maximum-entropy representative for **every positive native
+spectrum**, without the previous one-port/two-band restriction. A richer
+retained family has the same maximizer at this input. For CAR16, a fixed
+cap `K=15` suffices and pays for at most sixteen rounds; increasing a
+previously smaller cap remains a paid change. No stopped episode is
+continued after its actual stop.
+
+The consumed source premise is precise: for this declared marginal
+forgetting problem, `I_F(rho_*(y),y)=0` identically, all total section jets
+vanish, and the independent DATA first cotangent and its primitive-DATA
+Poisson adjoint vanish. For finite preparation the honest bound is
+`0<=I_F(rho_L,y)<=D(rho_L||rho_*(y))`; it is not a bound on every source
+derivative. Normal off-section Hessians need not vanish. The original
+one-port theorem keeps its distinct and correct scope.
+
+The actual stopped charge, full history CQ information, finite preparation
+records and independent oldRIGHT equations remain in the complete source.
+The theorem selects neither compulsory Book03 Info nor a cut/heat law,
+and supplies no unproved full42 or mesh-uniform transport. Its proof and
+new bounded checks consume the existing instrument and stopped recursion;
+they do not repeat the old geometric or 173-check suites. This is a
+removed marginal-source premise in existing #334, with physical GR open.
+
 ## 22 October 2026 — complete actual-cut source and original retained quantum history
 
 [Complete native source reduction](A4D_NATIVE_COMPLETE_SOURCE_REDUCTION_2026_10_22.md)

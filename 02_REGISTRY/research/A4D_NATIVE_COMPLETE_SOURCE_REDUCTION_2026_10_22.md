@@ -158,6 +158,34 @@ The entropy of rho* itself is a different quantity and generally has a
 nonzero derivative. Histories and system-reference correlations remain
 outside the one-moment marginal problem just solved.
 
+### 3a. Same stopped execution: the two-band premise can be removed
+
+The [later native stopped-future composition](sources/d0_native_blank_future_entropy_2026-10-22/README.md)
+uses additional responses already contained in the original full128
+first-match tape. The actual counterpart of the ordinary blank is
+`K_1=-2p sqrt(p) Delta`, while `K_0=B=I-2p^2 Delta>0`. Since the full
+label includes the port bit, a prefix `(1,0^n)` has no match. Summing all
+of its retained match/cap-abort completions gives the physical effect
+`F_n=4p^3 Delta^2 B^(2n)` without postselection or a continuation after stop.
+
+For a declared cap `K>=d-1`, these effects determine every spectral-block
+weight. Their real linear span contains `log rho_*`, so the KL identity
+proves that `rho_*` is the unique entropy representative for every
+positive native spectrum. Any larger declared retained family containing
+these tests has the same maximizer at `rho_*`. This strengthens the
+application by changing the retained response family, and preserves the
+one-port classification above on its own constraint.
+
+The gain `I_F(rho_*(y),y)` now vanishes identically on the actual section;
+all its total field jets, independent DATA first cotangent and canonical
+primitive-DATA Poisson adjoint vanish. The bound
+`0<=I_F(rho_L,y)<=D(rho_L||rho_*(y))` keeps finite preparation honest.
+Off-section normal Hessians, complete history entropy, actual stopped
+charge and independent oldRIGHT equations remain. CAR16 permits the fixed
+choice `K=15`; a larger carrier uses its actual dimension, and increasing
+a previously smaller cap is paid. No compulsory Book03 Info or uniform
+source/refinement transport is selected by this result.
+
 ## 4. Complete history information has a quantum boundary term
 
 For a finite, honestly stopped efficient-instrument tree let w label a

@@ -15,6 +15,42 @@ Assembly-Slot: `constitutive`
 
 ## Strategic synthesis continuation — 2026-10-17
 
+### 22 October: consume the original stopped futures in the marginal source
+
+Phase: native realization / same-execution source composition. Continue
+Draft #334 on `native-programme-v1`, using published input
+`82d27e83b0ba0869911de80919de50c42f2944d8` and the shared backward-search /
+forward-proof strategy. The missing parent premise was the general-spectrum
+entropy representative and its marginal contribution to the owned native
+preparation-Poisson source. The previous one-port result required two bands.
+
+The bounded application in
+`sources/d0_native_blank_future_entropy_2026-10-22/` uses the original
+full128 comparator, including the port bit. Its genuine stopped prefixes
+`(1,0^n)` have effects `4p^3 Delta^2 (I-2p^2 Delta)^(2n)` after all later
+match and capped-abort leaves are summed. For the already declared
+`K>=d-1`, weighted interpolation puts `log rho_*` in their linear span.
+The KL identity proves unique maximum entropy at the actual inverse-square
+invariant DATA state on every positive native spectrum. It removes the
+two-band premise and the specified marginal gain's whole section source;
+its independent DATA cotangent and primitive Poisson adjoint are zero.
+
+The exact carrier is the finite regular native DATA space with its full
+retained stopped tape; use its actual dimension, not CAR16 for a larger
+spatial carrier. A finite preparation retains the bound
+`I_F(rho_L)<=D(rho_L||rho_*)` and its own full source. Complete history Info,
+the original charged recursion, genuine upstream/oldRIGHT equations,
+physical Book03 selection and refinement remain. Normal off-section
+Hessians are not removed. An increased cap is a paid change.
+
+Root owns the task, primary memo and parent source application. A bounded
+author owns the disjoint proof/checker packet; an independent reviewer
+checks the actual fine outcomes, stopping semantics, weighted entropy
+certificate and frozen new replay. The decisive check is the original
+anchor-one stopped-subtree effect and its full first jet, with a hostile
+sign-colliding blank control. No old 173-check, all42 or full128 suite is
+replayed, and no task/assembly/GR status is promoted.
+
 ### 22 October: complete the original quantum history information source
 
 Continue existing Draft334 / native-programme-v1 from published
