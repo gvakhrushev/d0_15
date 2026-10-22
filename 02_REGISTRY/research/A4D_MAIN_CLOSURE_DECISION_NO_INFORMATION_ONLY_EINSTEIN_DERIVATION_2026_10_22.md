@@ -354,3 +354,53 @@ once this physical source/writer admission genuinely holds.
 This update changes the parent architecture by a quantitative
 CAUSAL FIDELITY test, not by adding another numerical 42-root
 or an arbitrary counterterm. All GR statuses remain OPEN.
+
+
+## 7. POSITIVE structural breakthrough on the ORIGINAL full128 carrier (same PR, 22 October)
+
+The old Boolean-vs-original causal incompatibility in §6 has now
+been CONSTRUCTIVELY REMOVED **within the actual fully-labelled original
+quantum instrument**, by allowing the MINIMUM physically necessary
+auxiliary work rather than insisting on a forbidden invariant
+16-dimensional Boolean embedding. Exact details and native replay:
+[A4D_ORIGINAL_GOLDEN_HALMOS_NAIMARK_ALL128_CAUSAL_BOOK_WELD_2026_10_22.md](A4D_ORIGINAL_GOLDEN_HALMOS_NAIMARK_ALL128_CAUSAL_BOOK_WELD_2026_10_22.md).
+
+For the true \(0<\Delta<I\), the ORIGINAL positive operator is the
+prepared compression of the genuine rank16 Boolean projector
+\(Q_\Delta=[[\Delta,\sqrt{\Delta(1-\Delta)}],
+[\sqrt{\Delta(1-\Delta)},I-\Delta]]\);
+the additional 16-dimensional work is PROVABLY minimal and the
+projection is unique up to ancillary gauge. One ORIGINAL Golden
+G/reflection/Gdag operation yields both true j0 K and the entire
+missing nonblank sector. Its unique original isometric row refinement
+\(W_j=-K_{2j}[\Delta(1-\Delta)]^{-1/2}/(2p^2)\)
+recovers **all original full128 complex K, conditional quantum states,
+no-reset futures and true noncommuting source jets** without fitting
+the 17-plus old nonblank degrees of freedom. The pair
+\((\Delta,W)\) even CLASSIFIES the entire strict Golden-twin
+labelled CPTP instrument fibre.
+
+The entire real original 128-fine measured code price decomposes
+exactly into the MACRO three-result entropy, labelled ROW entropy
+and native paired Golden-bit entropy; at the original stationary input
+the true retained row-Info is about \(0.0423056562\) Golden units
+per tick and its derivative is nontrivial. On the SAME instrument
+the prepared Book return is fixed,
+\(F_{\rm pre}=I-K_0^\dagger K_0\), with nonzero native source.
+If one wrongly declares the entire UNPREPARED Naimark work active,
+the return is \(4p^3 Q_\Delta\) and the Book determinant has NO
+field source. This gives a concrete physical test for the required
+Book03 present-active cut and correct archive memory.
+
+The earlier THEOREM A in this document remains true: recorded
+Born/Info inversion alone STILL does not select dynamics.
+The previous §6 no-intertwiner is a ZERO-EXTRA-WORK special-class
+negative and is fully consistent with the NEW positive minimal
+dilation. What is NOW genuinely removed is the supposed
+incompatibility of the original full128 quantum carrier with
+the Boolean/Golden PROJECTIVE MECHANISM. The compelling
+remaining theorem is physical compulsory selection of
+Book03's **full** heat/feedback/history/Info/clock action
+and source-preserving 42-field native writer with independent
+oldRIGHT/preparation equations and uniform recovery.
+No GR flag is promoted.
