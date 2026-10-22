@@ -610,3 +610,674 @@ history/active-cut valuation distinction (19)-(20), genuine independent
 apparatus/rank variations, or dynamical recovery by relabeling them.
 Those are not numerical precision issues. No Book, primitive admission,
 claim register or assembly acceptance is changed by this continuation.
+
+---
+
+## 9. Whole-history stationarity can localize without a new conditional valuation
+
+**22 October continuation of the same argument.** Equations (19)-(20) remain
+correct. Their difference does not, however, require a separate physical
+postulate selecting the value of a conditional action before one can derive
+its Euler equation. The stronger route is to keep the whole action and
+identify its genuinely admitted variations after an accessible recorded
+prefix. This section consumes the native causal adjoint of (18), rather than
+introducing a second dynamics or another stationary-root calculation.
+
+Let an actually executed prefix instrument have CP maps \(A_h\) with
+trace-preserving sum, on the complete initial boundary \(\rho_b\). All oldRIGHT,
+work and retained quantum factors are included. Put
+
+\[
+ X_h=A_h(\rho_b),\qquad \pi_h=\operatorname{Tr}X_h,
+ \qquad \sigma_h=X_h/\pi_h\quad(\pi_h>0),\qquad
+ \Omega_{\rm pre}=\bigoplus_h\pi_h\sigma_h.                 \tag{21}
+\]
+
+The direct sum denotes an actually registered classical record. An unmeasured
+coherent program cannot be silently dephased to obtain it. A complete
+continuation after h, including every success, failure, abort, clock and
+work outcome, has CQ map \(T_{h,u_h}\), conditional output
+\(\Omega_h=T_{h,u_h}(\sigma_h)\), and actual mean charge \(\bar C_h\).
+The complete final state is \(\Omega_{\rm fin}=\bigoplus_h\pi_h\Omega_h\).
+Write \(\ell=\ln\varphi\) and \(S_\varphi=S_{\rm vN}/\ell\).
+For the already specified complete measured-CQ price convention,
+
+\[
+ \mathscr S_{\rm whole}
+ =\mathbb E C-S_\varphi(\Omega_{\rm fin})+S_\varphi(\rho_b),
+\]
+
+\[
+ \mathscr S_h=\bar C_h-S_\varphi(\Omega_h)+S_\varphi(\sigma_h),
+ \qquad
+ \boxed{\mathscr S_{\rm whole}
+       =\mathscr S_{\rm pre}+\sum_h\pi_h\mathscr S_h.}       \tag{22}
+\]
+
+**Proof.** For normalized \(\tau_h\),
+\(S_\varphi(\bigoplus_h\pi_h\tau_h)
+=H_\varphi(\pi)+\sum_h\pi_hS_\varphi(\tau_h)\).
+Apply this once at the prefix and once at the terminal boundary. The
+conditional quantum entropies telescope with the real additive charge.
+No purity, tracial input, fresh posterior choice or discarded oldRIGHT is
+used. This is an identity for this actual information convention; it does
+not identify an unspecified Book03 vertex Info with CQ entropy.
+
+If a real intervention changes only the continuation after accessible h,
+the earlier \(\pi_h,\sigma_h\) remain unchanged. Therefore both finite
+comparisons and admitted differentiable variations satisfy
+
+\[
+ \boxed{\Delta_h\mathscr S_{\rm whole}
+             =\pi_h\Delta\mathscr S_h,\qquad
+ D\mathscr S_{\rm whole}[\iota_h v]
+             =\pi_hD\mathscr S_h[v].}                    \tag{23}
+\]
+
+Here \(\iota_h\) is the **actual** map from a continuation variation to an
+admitted whole-process variation. Thus whole-action stationarity implies
+conditional continuation stationarity for \(\pi_h>0\), when that map exists.
+The claim concerns the complete future process with all of its outcomes;
+it is not stationarity of the price of each realized fine future transcript.
+If only a coarser label r(h) is accessible to controls, the localized
+equation belongs to r, with finer h kept in its archive.
+
+On a regular constant-support chart, let
+\(Y_{\omega|h}=B_{\omega|h,u_h}(\sigma_h)\), with actual costs
+\(c_{\omega|h}\). The complete conditional first source is explicitly
+
+\[
+ D\mathscr S_h[v]
+ =\sum_\omega\operatorname{Tr}
+  \left[DY_{\omega|h}[v]
+     (c_{\omega|h}I+\ell^{-1}\log Y_{\omega|h})\right]
+   +\sum_\omega\operatorname{Tr}Y_{\omega|h}\,Dc_{\omega|h}[v]. \tag{24}
+\]
+
+For an efficient fine branch \(Y=K\sigma_hK^\dagger\), \(DY\) uses the
+full product rule through every actually varied Kraus factor. The omitted
+identity in \(D\operatorname{Tr}(Y\log Y)\) cancels by trace preservation.
+Identically dark blocks stay zero; a rank-birth point requires the actual
+limiting entropy derivative or the finite identity (23).
+
+The existing unnormalized native65 backward source already computes (24).
+Within subtree h its complete leaf is \(R_{h\omega}=\pi_hY_{\omega|h}\).
+Consequently its terminal costate differs from the conditional one by
+\(\ell^{-1}\log\pi_h\,I\). Trace preservation propagates that scalar
+unchanged and cancels it from every post-prefix control derivative. This
+recovers (23) without making \(\sigma_h\) an independently supplied input.
+
+Genuine upstream variables are still varied:
+
+\[
+ D\mathscr S_{\rm whole}
+ =D\mathscr S_{\rm pre}+\sum_h(D\pi_h)\mathscr S_h
+                         +\sum_h\pi_hD\mathscr S_h.        \tag{25}
+\]
+
+In particular, the input cotangent of the conditional process is
+\(C_h+\ell^{-1}T_h^*(\log\Omega_h)-\ell^{-1}\log\sigma_h\), where
+\(C_h=\sum_\omega c_{\omega|h}B_{\omega|h}^*(I)\).
+Its pairing with a generated upstream \(D\sigma_h\) stays in (25).
+
+### 9.1 The admitted control construction and its exact limit
+
+For the already assumed Boolean comparator/forward-word palette, a
+continuation change at h can be implemented by computing [H=h] from its
+accessible retained record, selecting between two real complete forward
+words, and retaining or deterministically uncomputing that comparison flag.
+All factory outcomes and true selector tariffs remain in both compared
+programmes. No adjoint of a heralded success map is required. Adding prefix
+equality to the actual predicate uses the same comparator/control admission
+as Section 2; it does not derive that admission from unitarity alone.
+
+The finite identity in (23) applies to discrete word replacements. A
+differentiable Euler equation requires a real smooth scene family, or an
+explicitly controlled finite-difference refinement as in Section 5. A
+discrete code table is not silently differentiated as an unconstrained real
+field. The code of a field already fixed in h is not a free future field.
+
+There is a sharp reason to keep this tangent condition. With equally likely
+recorded inputs \(G|0\rangle,G^\dagger|0\rangle\), a shared later word G or
+\(G^\dagger\) exchanges the two click probabilities \((f,0)\) and \((0,f)\),
+\(f=4p^3\). Their complete mean 0/10 CQ prices agree, while the conditional
+prices differ by \(f-h_\varphi(f)>0\). A record-controlled inverse is a
+different actual control schedule. Reading a record does not by itself
+create that schedule or two independent physical variables.
+
+Book03 sections 03.8/03.25 state finite stationarity on their declared scene
+variables. Book06 sections 06.3/06.4 order registration and update and define
+the active quotient. These facts do not extend a shared physical parameter
+to all independent \(u_h\). Equation (23) identifies the needed concrete
+map, and removes the stronger demand to assign a new conditional value to
+the entire action first. It does not derive saddle stationarity from
+minimum-description selection.
+
+### 9.2 The ordinary complete Book trace localizes too, with its true heat weight
+
+For actual block-diagonal \(\Delta=\bigoplus_h\Delta_h\) and
+\(F=\bigoplus_hF_h\), put
+\(Z_h=\operatorname{Tr}e^{-\beta\Delta_h}\),
+\(H_h=\beta^{-1}\ln Z_h\), \(J_h=-\ln\det(I-\zeta F_h)\).
+Then the complete action has the exact derivative
+
+\[
+ \mathcal B=\beta^{-1}\ln\sum_hZ_h+\sum_hJ_h+\mathcal R,
+ \qquad
+ \boxed{D\mathcal B[\iota_hv]
+       ={Z_h\over\sum_kZ_k}DH_h[v]+DJ_h[v]
+                                  +D\mathcal R[\iota_hv].} \tag{26}
+\]
+
+The residual \(\mathcal R\) denotes the other actually selected stack
+terms when present, not an adjustable correction. The Book trace
+multiplicity is not the Born probability \(\pi_h\). Heat is not additive;
+the displayed weight cannot be replaced by one. Thus Section 7's sum over
+all code blocks is no obstruction to branch Euler equations when the
+corresponding block variation is genuinely admitted. A fixed enumerator
+with only a moving classical input does not acquire such a variation by
+renaming that input.
+
+## 10. A retained-output echo preserves every original future test and removes the clock heat source
+
+This construction applies to one **actual full deterministic unitary word**
+U on a finite module \(\mathcal H\), with all its work and finite flags.
+It requires physical access to its whole-word inverse and a fixed register
+SWAP. A reconstructed Stinespring column, an abstract dilation of a discarded
+environment or the inverse of a successful branch does not supply that
+access. Coherent program controls are included in \(\mathcal H\); alternatively
+one works after an actually registered fixed classical control prefix.
+
+Let \(P_0\) be its original input/return cut, of rank r. Add an identical
+bank \(\mathcal H_b\), supplied at the comparison boundary in a pure blank
+\(|b\rangle\in\operatorname{ran}P_0\). Set
+
+\[
+ \bar U=U\otimes I_b,\qquad P=P_0\otimes P_0,
+ \qquad \mathcal E=\bar U^\dagger\mathsf{Swap}\bar U.        \tag{27}
+\]
+
+The chronological programme is U, SWAP, and the actual inverse word U†
+on the first module. Any untouched oldRIGHT can remain outside the two
+swapped modules. For arbitrary original input, including entanglement,
+
+\[
+ \boxed{\mathcal E(\rho_{H,R}\otimes|b\rangle\langle b|_b)
+                 \mathcal E^\dagger
+ = (U^\dagger|b\rangle\langle b|U)_H
+                         \otimes(U\rho U^\dagger)_{b,R}.} \tag{28}
+\]
+
+The entire original output has moved to the bank, with all its oldRIGHT
+correlations. Every original subsequent quantum instrument can act there.
+The original state is not cloned or reconstructed from a scalar readout.
+The additional main-register state remains present. This is an exact
+embedding of the original future tests at the new boundary, with the extra
+duration and work of the echo retained.
+
+### 10.1 The full autonomous clock has two, not zero, feedback blocks
+
+Write \(\bar U=A_{L-1}\cdots A_0\). Implement the fixed SWAP as K real
+primitive gates, run the actual inverse word, and include one idle wrap
+edge. The cyclic shift W has \(N=2L+K+1\) stages and monodromy
+\(M=\bar U^\dagger\mathsf{Swap}\bar U\).
+
+Use the transported stage cut along the forward word, compare with P
+immediately after its last gate, transport P through the middle SWAP word,
+and transport it along the entire inverse word. The final cut is
+\(\bar U^\dagger P\bar U\); the idle wrap compares it to the initial P.
+The middle endpoint is P because \([\mathsf{Swap},P]=0\).
+Switching a reference cut is **not a physical reset, projection or
+repreparation of the executing state**. No unlisted intermediate
+measurement is inserted in the unitary word.
+
+For the direct-sum stage projector \(\widehat P\), the whole
+\(\widehat P W^\dagger(I-\widehat P)W\widehat P\) has precisely two
+potentially nonzero blocks, unitarily equivalent to
+
+\[
+ F_+=P\bar U^\dagger(I-P)\bar UP,
+ \qquad F_-=P\bar U(I-P)\bar U^\dagger P.                 \tag{29}
+\]
+
+The first occurs at the forward comparison and the second at the wrap.
+All other N-2 stage blocks are zero and remain in the full carrier. On
+\(\operatorname{ran}P\), with \(A=P\bar UP\), the two blocks are
+\(I-A^\dagger A\) and \(I-AA^\dagger\). Their full spectra agree, since A
+is square. Moreover \(F_+=F(U,P_0)\otimes P_0\). Consequently
+
+\[
+ \boxed{J_{\rm echo}=2rJ(U,P_0).}                         \tag{30}
+\]
+
+This true bank-cut rank is counted once. An external spectator factor is
+also counted once, and a probability of successful bank preparation is
+never substituted for r. The identity includes every moving stage-cut
+derivative. If \(P_0\) or the apparatus is itself independently free, its
+additional equations are not removed.
+
+### 10.2 Entire clock Hodge isospectrality, including the wrap and zero modes
+
+Let \(T_t\) be the actual prefix of the complete echo word. Define
+\(\mathcal G_t=T_t\bar U^\dagger\), and let \(\mathcal G\) be their
+direct sum. Direct multiplication gives
+
+\[
+ \mathcal G^\dagger W\mathcal G=W_{\mathsf{Swap}},          \tag{31}
+\]
+
+where all interior edges of the latter are identities and its wrap is
+the same fixed SWAP. Thus the genuine chronological connection Hodge
+
+\[
+ \Delta_{\rm clock}=I-\tfrac12(W+W^\dagger)
+                   =B^\dagger B,
+ \quad (B\psi)_t=(\psi_{t+1}-A_t\psi_t)/\sqrt2,
+\]
+
+is unitarily equivalent to one fixed full operator. The complete
+0+1-cochain Dirac square, with blocks \(B^\dagger B,BB^\dagger\), has the
+same property. At fixed ranks, word lengths and \(\beta\),
+
+\[
+ \boxed{D_U\left[\beta^{-1}\ln\operatorname{Tr}
+                       e^{-\beta\Delta_{\rm clock}}\right]=0.} \tag{32}
+\]
+
+No stage, idle edge or harmonic mode is omitted. Equations (30) and (32)
+are compatible: the whole clock spectrum is fixed while its return
+source relative to the transported cut varies.
+
+The inverse is tied to U by reusing the same actual primitive controls
+in reverse. If forward and reverse gates are independent scene variables,
+normal variations away from this echo family have additional equations;
+one cannot impose their equality after variation.
+
+**Native scene scope.** Book03 section 03.1.2 specifies its actual scene
+\(\Delta_N=D^2\). It does not identify every clock connection Hodge with
+that whole spatial scene operator. Equation (32) eliminates the actual
+chronological clock contribution when the full selected heat has a proved
+factorization, or a whole operator stack proved to transform by the same
+\(\mathcal G\). Isospectrality of a clock suboperator alone does not
+neutralize cross-terms in an arbitrarily coupled spatial-clock Hodge.
+An independent spatial Hodge, moving
+conformal density, cut compression or genuinely changing graph retains
+its source. A constant clock spectrum alone does not derive a varying
+spacetime Connes metric. This is a concrete spectral construction to bind
+to the selected scene, not permission to replace its \(\Delta_N\).
+
+### 10.3 Complete CQ information, real preparation, and extra source
+
+At a common boundary already containing the bank, SWAP followed by U†
+is unitary postprocessing of the original complete CQ instrument, with
+the original record transported to the bank. It preserves its outcome
+probabilities and every conditional output entropy. This statement holds
+even for arbitrary correlated mixed \(\rho_{H,b,R}\), when the comparison
+is with the original instrument tensor the identity on that same bank.
+For an independent pure bank it also agrees with the original smaller
+task. Thus, for the same retained information cut,
+
+\[
+ \mathscr S_{\rm echo\mid boundary}
+ =\mathscr S_{\rm original\otimes id_b\mid boundary}
+                             +\mathbb E C_{\rm swap,inverse,clock}. \tag{33}
+\]
+
+All variations of that common input are included in this equality.
+Creating the bank before the comparison boundary has its own **Cost minus
+CQ information gain**, not just a positive cost. If a finite paid factory
+succeeds with probability \(\Gamma_b\), the actual whole price is instead
+
+\[
+ \mathscr S_{\rm all}=\mathscr S_{\rm factory}
+     +\Gamma_b\mathscr S_{\rm echo\mid ready}
+     +\sum_{a\in\mathrm{failure}}\pi_a\mathscr S_a.        \tag{34}
+\]
+
+Factory flags, mixed posteriors, costs and failures stay in this exact
+application of (22). Field-independent preparation contributes a constant
+only for the subsequent field variation; its own upstream equations stay.
+If the readiness predicate changes the whole feedback operator, the
+actual ready-sector rank must be recomputed as in Section 4, not replaced
+by \(\Gamma_b\). Equation (30) is the fixed-ready-boundary theorem, not
+an unproved statement about an arbitrary prefixed factory's monodromy.
+
+For the same Golden Boolean U of Sections 2-5, at the supplied ready
+boundary and a truly field-independent additional execution tariff,
+
+\[
+ J_{\rm echo}=2rmj\,n(c),\qquad
+ D\mathscr S_{\rm echo}={\Gamma\kappa\over D}\,Dn(c)
+      ={\Gamma\kappa\over2Drmj}\,DJ_{\rm echo}.           \tag{35}
+\]
+
+A field-independent factory probability and prefix probability multiply
+the CQ gain once each when (34) and (23) are used. They do not multiply
+the Book ordinary trace. A second literal paid 0/10 copy of the reporter
+has mean charge \(1+f n(c)/D\) at that report boundary; its record is
+perfectly correlated, so it adds no independent entropy, and its real
+slope adds f to \(\kappa\). More complicated extra tariffs retain their
+actual derivatives instead of being declared neutral.
+
+For any actual admitted full128 deterministic unitary word and inverse
+meeting the stated hypotheses, (27)-(33) preserve its full128 conditional
+quantum outputs and its original J. The Kraus reconstruction alone does
+not provide that inverse. Applying the construction to the
+Boolean U preserves that Boolean instrument and its J. These are valid
+specializations of one theorem; they do **not** identify the two U's or
+their complete prices. A faithful map between those two physical
+programmes cannot be inferred from their scalar reporter table.
+
+## 11. Original full128: the initial-preparation first source vanishes in the actual intensive limit
+
+This section consumes the concurrently published original stationary-rate
+and Holevo-bracket results. DATA-versus-pure-full rate equality and weak
+observer-source convergence are already owned there. The new conclusion
+below is a **strong norm bound on the initial preparation covector**, with
+arbitrary retained oldRIGHT, for the unchanged no-reset native channel.
+It is not a new C1 claim about variation of the channel itself.
+
+Use the actual original \(K_\alpha\), \(\alpha=0,\ldots,127\),
+DATA dimension d=16, and literal terminal costs
+\(c_\alpha=1+(\alpha\bmod2)\). Its actual cost observable and uniquely
+attracting DATA state are
+
+\[
+ \widehat C=I+4p^3\Delta,\qquad
+ \rho_*={\Delta^{-1}\over\operatorname{Tr}\Delta^{-1}},
+ \qquad \bar c_*=1+{16\cdot4p^3\over\operatorname{Tr}\Delta^{-1}}.
+\]
+
+The existing three-tick primitivity result supplies \(0<q<1\) with
+\(\|\Phi^{3k}(\rho)-\rho_*\|_1\le2q^k\).
+The full fine history has a unique entropy rate h*, giving the actual
+terminal price per paid tick \(s_*=\bar c_*-h_*/\ell\).
+Every oldRIGHT and every fresh fine record remains present. The costs
+here are the specified terminal component; ongoing unlisted factory,
+spatial Book, controller or clock prices are not declared zero.
+
+### 11.1 Arbitrary mixed retained inputs differ from fine-pointer gain by at most ln 16
+
+Let \(\Omega_{DR}\) be any initial joint state with passive finite R,
+and let \(\chi_n=\bigoplus_w K_w\Omega K_w^\dagger\) be the complete
+registered CQ output after n original ticks. Purify \(\Omega\) by a
+mathematical reference E. Every efficient fine conditional DRE state
+is pure, so
+
+\[
+ S_{\rm vN}(\chi_n)-S_{\rm vN}(\Omega)
+       =H(W)-I(W:E),
+ \qquad
+ 0\le I(W:E)\le I(W:RE)
+       \le S(\rho_D)\le\ln16.                            \tag{36}
+\]
+
+The middle bound follows from
+\(I(W:RE)=S(\rho_D)-\sum_wp_wS(\rho_{D\mid w})\)
+for the original pure DRE purification and efficient word instrument.
+E is only a proof device, not an assumed paid laboratory ancilla.
+Consequently
+
+\[
+ 0\le S_n^{\rm full\,CQ}(\Omega)-S_n^{\rm pointer}(\rho_D)
+       \le{\ln16\over\ell}.                             \tag{37}
+\]
+
+This bound is independent of the passive oldRIGHT dimension and does not
+discard its correlations. It consumes and extends the two information-cut
+comparison in the concurrent Holevo paper to arbitrary mixed joint inputs.
+
+### 11.2 Uniform value estimate with its actual constants
+
+Let \(V_n(\Omega)=S_n^{\rm full\,CQ}(\Omega)/n\). The published native
+cost and entropy mixing bounds, together with (37), give
+
+\[
+ \sup_\Omega|V_n(\Omega)-s_*|\le a_n,
+\]
+
+\[
+ a_n={B_C\over n}
+ +{k\ln128+\varepsilon_k(n-k)\ln128+h_2(\varepsilon_k)
+                                      +4\ln16\over n\ell},
+ \quad B_C={6\|\widehat C\|_\infty\over1-q},
+ \quad\varepsilon_k=q^{\lfloor k/3\rfloor}.              \tag{38}
+\]
+
+Use k with \(k\le n\), \(\varepsilon_k\le1/2\). For sufficiently large n,
+\(k=3\lceil\ln n/(-\ln q)\rceil\) yields
+\(a_n=O(\ln n/n)\). The four \(\ln16\) terms consist of the old
+two-sided transient bound, the stationary finite-horizon defect, and
+the arbitrary mixed-CQ correction. All are actual finite-history
+estimates, with no IID reset.
+
+### 11.3 Strong first-source theorem from convexity, without assuming C1 convergence
+
+For a faithful joint input \(\Omega\succeq aI\), \(a>0\), and any
+traceless Hermitian input tangent H,
+
+\[
+ \boxed{|D_\Omega V_n(\Omega)[H]|
+ \le{4a_n\over a}\|H\|_\infty
+                  +{\|H\|_1\over2n\ell}.}              \tag{39}
+\]
+
+**Proof.** The entire n-word registered map \(T_n\) is linear CPTP and
+the true expected terminal cost is linear in \(\Omega\). Thus
+
+\[
+ F_n(\Omega)={C_n(\Omega)\over n}
+       -{S(T_n\Omega)\over n\ell}
+       =V_n(\Omega)-{S(\Omega)\over n\ell}
+\]
+
+is convex. Take \(t=a/(2\|H\|_\infty)\) for \(H\ne0\). Both secant
+segments have minimum eigenvalue at least a/2. Their convex derivative
+inequalities and (38) imply
+
+\[
+ |DV_n[H]|\le{2a_n\over t}
+  +{\max_\pm D(\Omega\pm tH\Vert\Omega)\over n\ell t}.
+\]
+
+Here relative entropy is solely the exact remainder of the input entropy
+Taylor formula, not a new physical price. On these segments,
+
+\[
+ D\log(A)[H]=\int_0^\infty(A+sI)^{-1}H(A+sI)^{-1}ds,
+ \quad
+ 0\le\operatorname{Tr}[H D\log(A)[H]]
+                        \le{2\over a}\|H\|_2^2.
+\]
+
+Twice integrating gives
+\(D(\Omega\pm tH\Vert\Omega)\le t^2\|H\|_2^2/a\).
+Now use \(\|H\|_2^2\le\|H\|_\infty\|H\|_1\), proving (39).
+Structurally dark output blocks stay zero; on the support of every
+nonzero finite word, faithfulness of \(\Omega\) permits the derivative.
+No singular endpoint or uniform entropy Hessian in the channel parameter
+is assumed.
+
+For a **pure full retained input** \(|\Psi_{DR}\rangle\), every fine
+conditional global output is pure. Its CQ price is exactly the pointer
+price of \(\rho_D\), even though the global input has rank one. Define
+\(A_n^{\rm ptr}=a_n-\ln16/(n\ell)\). At \(\rho_D\succeq aI_{16}\),
+convexity of \(C_n(\rho_D)/n-H(P_n(\rho_D))/(n\ell)\) gives
+
+\[
+ \boxed{|D_{\rho_D}V_n[H]|
+             \le{2A_n^{\rm ptr}\over a}\|H\|_\infty,
+ \qquad
+ |D_\Psi V_n[\dot\Psi]|
+             \le{4A_n^{\rm ptr}\over a}\|\dot\Psi\|_2.}  \tag{40}
+\]
+
+Use convex secants at \(\rho_D\pm aH/\|H\|_\infty\); continuity suffices
+at their possibly lower-rank endpoints. The actual reduced tangent is
+\(H=\operatorname{Tr}_R(|\dot\Psi\rangle\langle\Psi|+
+|\Psi\rangle\langle\dot\Psi|)\), with
+\(\|H\|_1\le2\|\dot\Psi\|_2\). A purification change keeping DATA
+fixed has identically zero source for this component at every n.
+
+Thus no independent equilibrium-minimization premise is needed to remove
+the **initial-preparation** first source of this fixed-channel intensive
+component. With a uniform positive lower bound a, a bounded actual
+moving-input derivative \(D_Y\Omega\) has
+vanishing preparation reaction by (39), or by (40) for pure retained
+inputs with a uniformly faithful DATA marginal. This is stronger than
+the earlier weak field-distributional conclusion, in a different,
+explicitly stated direction of variation.
+
+The source of the unnormalized price is n times these bounds and need
+not vanish. A gravity comparison with additional true gain \(g_h\)
+must control
+\([4a_n/a+1/(2n\ell)]/|g_h|\), or its pure-input version.
+Growing dimensions may shrink a; that factor is not hidden. A bounded
+one-time preparation ledger contributes its source divided by n, whereas
+an ongoing apparatus price with nonzero per-tick source survives.
+No convergence of the separate partial channel/field derivative,
+finite jointly stationary preparation or full Book action follows from
+(39) alone.
+
+## 12. The precise global Einstein consumer of these whole-process results
+
+Let \(\mathcal A_N\) be the **one actually selected complete action** of
+an admitted execution. Fix a real prefix h and let
+\(\iota_{h,N}\) lift compactly supported variations of every coframe,
+independent Lorentz connection and matter field to its actual interior
+variables. Suppose its already derived full first source obeys
+
+\[
+ D\mathcal A_N[\iota_{h,N}v]
+       =g_{h,N}\,DI(z_N)[v]+\mathcal E_{h,N}[v],
+ \qquad g_{h,N}\ne0,
+ \qquad {\|\mathcal E_{h,N}\|\over|g_{h,N}|}\longrightarrow0. \tag{41}
+\]
+
+The norm is dual to the actual admitted test norm after its mesh/decoder
+map. It includes the true dimension, rank, probability and source gains.
+At genuine joint stationary executions, (41), compactness and continuity
+on the covered chart imply \(DI(z)[v]=0\) for every such limiting test.
+There is no need to identify the value of \(\mathcal A_N\) with a
+conditional action, and no need for a C1 section of all internal
+stationary controls merely to obtain this forward implication.
+
+Sections 9-11 now supply concrete parts of this composition:
+
+* (23) gives the actual prefix probability in the CQ gain and transports
+  the full oldRIGHT/clock/work source, including its upstream reaction.
+* (26) localizes the whole Book determinant with its actual spectral
+  multiplicity and heat weight; the conditional-value choice is bypassed.
+* (28)-(32) preserve the entire output of the same U while making its
+  chronological clock heat exactly neutral and retaining its doubled
+  return source. Equation (34) pays bank preparation and failures.
+* (39)-(40) remove the regular initial-preparation first-source term in
+  the unchanged full128 intensive component; they do not identify its
+  separate channel derivative with the Boolean reporter derivative.
+
+For the continuum action already derived in Section 6,
+
+\[
+ I=\int\mu_0\mathcal F(x,y),\qquad
+ x={\tau\over2}{\operatorname{vol}_g\over\mu_0}R(e,\omega),
+ \quad y=\tau\sum_A g^{\mu\nu}\partial_\mu\psi_A\partial_\nu\psi_A,
+\]
+
+the **entire vacuum equation-class theorem**, not merely its Brinkmann
+witness, is then available: in vacuum \(d\psi_A=0\), on the branch
+\(\mathcal F_x(x,0)\ne0\), the coframe trace equation
+\(x\mathcal F_x-y\mathcal F_y=0\) gives x=0, the independent connection
+equation gives the torsion-free connection, and the remaining coframe
+equation gives \(\operatorname{Ric}(g)=0\). The converse includes arbitrary
+Ricci-flat Weyl curvature within the declared chart. The nonvacuum
+conclusion remains the two constrained scalar sectors of Section 6,
+not arbitrary Einstein matter.
+
+For approximate whole-action stationarity, its actual pulled-back residual
+\(\|D\mathcal A_N\circ\iota_{h,N}\|/|g_{h,N}|\) must also tend to zero.
+An ambient residual bound must include the operator norm of the lift
+\(\iota_{h,N}\). In particular, (23) does not allow a
+vanishing branch probability to hide a finite conditional Euler error.
+Nor may an arbitrary normalization such as \(1/\tau\) be differentiated
+as a physical independent aperture unless the actual programme does so;
+the concurrent native aperture result retains that distinction.
+
+The concurrent literal-J2, fixed-support N1 preparation and paired-Hodge
+stationarity results are retained with their different complete prices
+and variation domains; none is substituted for the native operator in
+(41). The Golden-code grid identifiability result also supplies a sharp
+constraint here: identical grid values and secants, even with uniform
+value convergence, do not determine the continuous first source. Its
+explicit oscillatory witnesses therefore rule out inferring (41) from
+the Boolean reporter counts alone. The first-source convergence actually
+required by (41) must come from the physical implementation and its
+admitted variation map; a universal C2 requirement is not needed merely
+for the forward Euler implication.
+
+The concurrent original128 causal-weld theorem further excludes a free
+identification of the two programme carriers: an invariant isometric
+intertwiner of the Boolean projection Q with the original native j0
+Kraus pair would force \(\Delta^2=\Delta\), whereas the actual native
+\(0<\Delta<I\) has a strictly positive nonblank complement
+\(4p^2\Delta(I-\Delta)\). Its nonblank causal map and paid source must
+survive any real implementation. The echo theorem acts on each same
+complete U separately and does not evade this obstruction or select
+nontrivial field histories by itself.
+
+This continuation therefore changes the parent argument substantively:
+the earlier demand for a newly selected history-local action is stronger
+than necessary. One can use the existing whole action, actual causal
+variation maps, a future-preserving reversible implementation, and the
+strong initial-source estimate. What is **not yet established** is one
+native scene/execution in which its actual \(\Delta_N\), admitted
+field/control tangents, complete remaining price and strong channel/field
+source satisfy (41) together, with actual joint stationary refinement
+and the required reverse recovery. The echo, Boolean and original128
+specializations cannot be interchanged without that map. These are real
+remaining physical hypotheses, so this addendum does not declare full
+GR closure or promote any claim/assembly status.
+
+### Sources and analytical validation for sections 9-12
+
+The immutable base of this paper is commit
+`4f5eec1632b0d1308d192ab7ae428f7532e2153b`, blob
+`00d9994378d37334c3199380a908db82ee0175f4`; sections 1-8 are preserved.
+The continuation consumes, without repeating their calculations:
+
+- `01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md`,
+  sections 03.1.2, 03.8, 03.25 and 03.26.1, and Book06 sections 06.3-06.4.
+- `sources/d0_native65_causal_source_2026-10-22/THEOREM.md`, original
+  unnormalized whole-history and input-adjoint calculus, blob
+  `d34f0136543168ca6b8814d4baefdc10dd67b202`.
+- `A4D_ORIGINAL_FULL128_UNIQUE_STATIONARY_CQ_RATE_AND_FINITE_ENTROPY_BRACKETS_2026_10_22.md`,
+  blob `9e43dda1069df5c91914c162b06cd557fd4a2688` at commit
+  `a25faa20ad82d0275e57f08a151febf992adb1ab`.
+- `A4D_ORIGINAL_FULL128_HOLEVO_BRACKET_AND_UNIQUE_INTENSIVE_PRICE_2026_10_22.md`,
+  blob `e0366d29ff580eb81da2700938bae88498618da5`, consumed from commit
+  `9787a2d31e2c8613cc2021df5e19c2a0533260a9`.
+- `A4D_NATIVE_GOLDEN_APERTURE_SCALE_MINIMUM_MONOTONICITY_2026_10_22.md`,
+  blob `b83be3f110e389127c945dd7ab817ba96b022875` at the same commit.
+- `A4D_ORIGINAL_J2_FULL42_AND_N1_PREPARATION_JOINT_ROOT_2026_10_22.md`,
+  blob `b914caca66740357fb5133bac0de00098302ae4c`;
+  `A4D_FULL_SPECTRAL_42_ROOT_AND_THERMAL_LEGENDRE_47_LIFT_2026_10_22.md`,
+  blob `d1f1e072755d2eec99fec5813fc69c6dfcb62235`;
+  and `A4D_FULL42_GOLDEN_CODE_GRID_C2_SOURCE_IDENTIFIABILITY_GATE_2026_10_22.md`,
+  blob `3ff92dbb320b0baa4eb70e3ca468e9048b9f5fe4`, all consumed from
+  commit `a65a89627af2571feb161d0d8874cf598824cd8c` with their stated scope.
+- `A4D_BOOK_BOOLEAN_TO_ORIGINAL_FULL128_CAUSAL_WELD_GATE_2026_10_22.md`,
+  blob `98f7f43165a26b598579c25734efd80ea3872f62` at commit
+  `f090c0124c389e95e163611624a0f88b921a892a`.
+
+The use of actual sequential instruments is consistent with the primary
+quantum-network formulation of Chiribella, D'Ariano and Perinotti,
+[A theoretical framework for quantum networks](https://arxiv.org/abs/0904.4483).
+Their admissible quantum-network realization does not prove admission
+of the required controls in the smaller D0 primitive palette. The
+derivations above display their own finite entropy, spectral and convexity
+proofs; no claim of literature novelty is needed.
+
+Independent analytical review checked the two feedback blocks, the true
+rank multiplier, the cyclic conjugacy, the complete retained-output map,
+and the preparation source bound. It corrected the absolute echo price
+to retain the bank factory's CQ gain and failures in (34). No root scan,
+new numerical checker or replay of unchanged certificates was used.
