@@ -208,6 +208,31 @@ theorem topHodge_inverse_spectral_rigidity
     simpa [zoneSizeQ] using hT
   exact unordered_nat_triple_eq_of_VET_eq hV' hE' hT'
 
+/-- Concrete reuse of generic inverse-spectral rigidity at the frozen scene.
+The scene coordinates are proved from its actual top-Hodge operator in
+`TopHodgeSpectralSceneReconstruction`; this theorem applies the generic
+three-coordinate result to any positive complete-tripartite candidate with
+those same numerical readings. -/
+theorem scene_topHodge_inverse_spectral_rigidity_application
+    (p q r : ℕ)
+    (hD : topHodgeTriangleDimension p q r = 1287)
+    (hH : topHodgeHarmonicMultiplicity p q r = 960)
+    (hM2 : topHodgeSecondMoment p q r = 50193) :
+    ({p + 1, q + 1, r + 1} : Multiset ℕ) = ({9, 11, 13} : Multiset ℕ) := by
+  rcases scene_topHodge_spectral_coordinates with ⟨hD₀, hH₀, hM₂₀⟩
+  have hD' :
+      topHodgeTriangleDimension p q r =
+        topHodgeTriangleDimension 8 10 12 := by
+    rw [hD, hD₀]
+  have hH' :
+      topHodgeHarmonicMultiplicity p q r =
+        topHodgeHarmonicMultiplicity 8 10 12 := by
+    rw [hH, hH₀]
+  have hM₂' :
+      topHodgeSecondMoment p q r = topHodgeSecondMoment 8 10 12 := by
+    rw [hM2, hM₂₀]
+  simpa using topHodge_inverse_spectral_rigidity hD' hH' hM₂'
+
 /-- The theorem cannot and should not recover an ordering of the zones:
 permuting zone labels preserves all actual top-Hodge data. -/
 theorem topHodge_data_do_not_choose_zone_labels :

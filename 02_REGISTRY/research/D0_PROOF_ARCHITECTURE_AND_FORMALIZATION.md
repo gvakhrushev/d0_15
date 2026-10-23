@@ -155,6 +155,23 @@ registry locators but are not evidence that the mathematical core is fully
 formalized or that bridge assumptions have been discharged. No claim, owner,
 or status metadata changed.
 
+An independent read-only scope review at snapshot
+`709ea27c3e7dc6865708aac076e4230655ad0cce` accepts one claim-to-book-to-Lean
+correspondence: `D0-TOP-HODGE-INVERSE-SPECTRAL-RIGIDITY-001`. The exact source
+blobs are `fc24227434bc917fa40ec880e9caff9b6b6b07b4`
+(`02_REGISTRY/claims.csv`), `87f3dbd0e5e760d46a577a275aabc16623d3f09e`
+(`01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md`, §01.8.1),
+`79ad345ddef6bb06c638f41721db1a84843e4a9b`
+(`01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md`, §02.34),
+and `eaf1094cdb86260afcac2d9279ef0c2b46f15bc8`
+(`03_FORMALIZATION/D0/Synthesis/TopHodgeInverseSpectralRigidity.lean`,
+`topHodge_inverse_spectral_rigidity`). The reviewed match is equality of the
+three actual top-Hodge coordinates implying equality of unordered positive
+zone-size multisets, for the canonical positive complete-tripartite class.
+This is one scoped correspondence review only: it does not accept C0
+membership for neighboring assertions, establish coverage, extend the theorem
+to arbitrary finite complexes, or record approval from the scientific owner.
+
 The cold-start runner was replayed after the composed theorem and reduced-type
 collector changes at snapshot
 `65b4831f38eec190f81fcc9144d03f41985960a4` with `worktree_dirty=true` (28.7
@@ -195,3 +212,11 @@ The search run used snapshot `1c7e39336381658fd2d7b17f2a077e5c2fec0817` with `wo
 The existing `tools/test_gr_assembly.py` suite has 106/106 passing tests with a temporary Git `core.autocrlf=false` override. Its default native-Windows run reaches 15 errors and one secondary assertion failure because the fixture hashes a CRLF worktree `decisions.md` before Git stores the normalized blob; the resulting evidence digest differs from `git show`. The fixture is owned by open PR #398, so this branch records the environment-dependent result and leaves that file to its existing owner.
 
 Next: extend the exact candidate inventory and source/declaration crosswalk, obtain independent acceptance of the exact C0 package, and review the Eq. (26) adapter against the pinned source and consumer. All ten required cold-start cases and the additional outside-GR case pass; migrate connected mathematical blocks while preserving public imports and scopes; formalize or obtain accepted owner review for every established C0 unit; then run affected integration and one current `D0.All` build on final sources. This checkpoint is not completion.
+
+## Concrete reuse application: top-Hodge scene
+
+The generic theorem `D0.Synthesis.TopHodgeInverseSpectralRigidity.topHodge_inverse_spectral_rigidity` is now consumed by a separately named compiled application, `scene_topHodge_inverse_spectral_rigidity_application`. For any natural-number reduced zone sizes whose actual top-Hodge coordinates are `(D,H,M₂)=(1287,960,50193)`, the application concludes `{p+1,q+1,r+1}={9,11,13}`. It obtains those reference coordinates from `scene_topHodge_spectral_coordinates`, then invokes the generic theorem; the elaborated proof dependencies contain both declarations. The older scene-specific reconstruction remains available as a second proof route.
+
+This adds the application theorem to the existing `D0-TOP-HODGE-INVERSE-SPECTRAL-RIGIDITY-001` theorem locator list and regenerates `TheoremLedger/ClaimMap.lean`; it creates no claim ID or acceptance status. The source/declaration correspondence reviewed independently at PR head `709ea27c3e7dc6865708aac076e4230655ad0cce` covered only the generic theorem before this application was added. The new application itself has not received independent semantic review and does not enlarge that review or the generic theorem's positive complete-tripartite scope.
+
+Validation on the current dirty worktree: narrow `D0.Synthesis.TopHodgeInverseSpectralRigidity` build passed at Lean 4.30.0 (2,993 Lake jobs). The compiled declaration inventory resolved the new theorem under that public import with binders `p q r`, the three numeric-coordinate hypotheses, conclusion `{p+1,q+1,r+1}={9,11,13}`, and transitive axioms `Classical.choice`, `Quot.sound`, and `propext`. Inventory provenance: parent snapshot `709ea27c3e7dc6865708aac076e4230655ad0cce`, dirty Lean source digest `87ca08a0fbef5dfca4b61134d55f5e08cfac3928b86e9682ebafda895667a2bf`, collector SHA-256 `550a3d4cda78902a0a7a35b220160e524347aa0cad9a3e6f8082473d7a675f27`. `generate_lean_views.py --check` passed, and the exact-name search returned the claim locator plus direct Lean source content. A concurrent `show --lean` request was correctly rejected while the inventory held the Lake lock; it was rerun after the lock was released and completed against the same compiled public import.
