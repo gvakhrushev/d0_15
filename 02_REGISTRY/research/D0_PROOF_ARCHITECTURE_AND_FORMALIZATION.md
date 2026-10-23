@@ -69,7 +69,7 @@ Initial candidate sources and crosswalk inputs:
 
 - The 889 claims.csv IDs are claim candidates keyed initially by claim ID and exact book/section locator. Each may split, overlap, or need a source-backed disposition before becoming one unit.
 - The 31 assumption IDs are premise crosswalk inputs. Preserve the actual quantified hypotheses on results; do not count an assumption row as a result by default.
-- The 178 formal_support.csv rows are proof-support crosswalk inputs and candidate declaration locators, not 178 independently accepted results.
+- The 180 formal_support.csv rows are proof-support crosswalk inputs and candidate declaration locators, not 180 independently accepted results.
 - The 58 aliases are lookup edges: resolve the two canonical-target aliases and inspect the 56 legacy first_reference values for missing assertions.
 - The 54 assembly result pointers still require reconciliation to a claim or exact source:<commit>:<path>#<section> key. They are not already reconciled. Obligations, results, evidence, and reviewed application edges remain distinct; the application file still lacks a canonical claim-ID crosswalk.
 - Enumerate theorem-like public declarations reachable through the compiled D0.All import as candidates. Public helpers, generated declarations, definitions, and instances must be classified; inclusion in an import closure alone does not make them reusable mathematical results.
@@ -81,6 +81,13 @@ Initial candidate sources and crosswalk inputs:
 Book/section pairs are not unique units: 49 pairs contain 192 claims. Multiple theorem strings and repeated theorem atoms are review flags, not automatic merges. The starting snapshot has 715 claim rows with a Lean module, 713 with a theorem string, and 360 with semicolon-separated theorem names. The new bulk locator pass currently exposes 889 claim rows, 2700 theorem-atom mappings, 4974 unique candidate Lean names, and 176 rows without a theorem locator; exact-name resolution against the elaborated D0.All environment is still pending. An independent scope review found 174 rows without a module, 176 without a theorem string, and 23 theorem atoms shared across IDs. These are reconciliation queues, not automatic proof debts or exclusions.
 
 The freeze must bind exact source hashes, a reproducible unit list and classification, stable source keys, dispositions, exclusions and reasons, overlap/alias resolutions, public-declaration dispositions, and result-to-claim/source/application crosswalks. An independent reviewer must accept that exact package before coverage is reported. New research after freeze is a delta; do not alter C0 to improve a percentage.
+
+The existing structural `formalization_debt_audit.py` was replayed on this
+snapshot: 918 Lean modules and 148,617 source lines, with only its three
+baseline heartbeat-override findings and no proof holes, self/umbrella imports,
+duplicate imports, missing local imports, or import cycles. This is a library
+structure check, not a classification of the mathematical units above and not
+evidence that C0 is formally covered.
 ## Scientific boundary and reuse vertical
 
 This work does not select a physical implementation or close GR. Keep complete Book03/Cost-Info/source admission, same-execution clock/controller/work selection, physical metric descent/frame selection, original H+J+R, positive_gr, and raw216 open under their existing owners. Preserve #334; do not duplicate or retire its science. Conditional assumptions remain in theorem signatures. Connes reconstruction remains conditional when its needed object is a supplied field.
