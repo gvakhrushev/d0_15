@@ -3715,3 +3715,241 @@ binding must preserve. The primary exact nonvacuum solution and both
 conditional global Einstein routes remain the geometric consumers.
 No geometry/root/rank restart, new task, physical-price acceptance,
 CORE/lifecycle change, raw216 or GR closure is made.
+
+
+## 19. Direct Book03 stationarity: the actual all-n primitive programme and two different memory boundaries
+
+23 October. This consumes the original master in Book03 Section03.25,
+the existing transported-prefix calculation of Sections9.3/10.5, the
+original pointer-support owner (2), and the full recorded-clock bounds
+(83)-(85). It supplies a WHOLE-PROGRAMME source test on the literal
+original full128 copied execution. It is not another general clock,
+Krylov, support-minimum, entropy or Golden-rigidity theorem.
+
+### 19.1 Correct the parent route before applying it
+
+Book03 already states stationarity of
+\[
+ \mathcal B=\beta^{-1}\log\operatorname{Tr}e^{-\beta\Delta_{\rm heat}}
+              -\log\det(I-zF).                         \tag{129}
+\]
+A separate identification of pathwise Info with Shannon/CQ entropy is
+NOT a universal prerequisite for using this DIRECT operator route.
+The original task's physical-closure intake and the current programme
+already make that distinction. Sections14/18's complete-price bindings
+remain necessary for their claimed Cost-Info interpretation or Julia
+continuation equivalence; their missing Info map must not block (129)
+when its real operators, action sector and admitted variations are given.
+
+At fixed beta,z its entire finite differential is
+\[
+ D\mathcal B=-\operatorname{Tr}(\rho_{\beta,\rm full}D\Delta_{\rm heat})
+       +z\operatorname{Tr}[(I-zF)^{-1}DF].               \tag{130}
+\]
+This retains moving projectors, Gram/observer and every supplied
+operator jet. Actual work/record/clock factors first enter these
+operators and their complete traces. An additive work term cannot be
+invented without the real stack rule. Conversely (129) is not by itself
+the entire Book03 Section03.3/03.8 stack: coefficient, dimensional-action,
+boundary and terminal sectors retain their actual independent sources.
+The historical physical Rayleigh term and paid-port residual are not
+silently identified with one another or added to (129).
+
+### 19.2 Apply the owned primitive clock to the ORIGINAL copied word
+
+Use ALL n fresh App128/bank128 pairs preallocated in the same world,
+DATA16, actual passive oldRIGHT rank d_R, and the full33-scene operator
+of Section13.3. The literal word is V_n=(C_n U_n)...(C_1 U_1), where
+U_i is (59), and C_i is its seven serial CX copies (73). No old record
+is reset. Fix an actual finite expansion into primitive gates G_t,
+including its real idle closing stage, of length N. Write L=N-1,
+G_L=I for that already counted idle, with body gates G_0,...,G_(L-1).
+Even granting a
+whole U_i as one operation gives N>=8n; a genuine finer expansion may
+only increase this lower bound. Primitive admission of that expansion
+is not inferred from its matrix formula.
+
+P0 is identity on ALL protected DATA/oldRIGHT inputs and blank on ALL
+fresh Apps AND banks. Its rank is d=16 d_R, not the support rank of one
+pure world. A scene cut of actual rank r_S tensors these cuts; the
+complete heat still retains every33 scene mode, every work column and
+the whole actual N. We use r_S=33 for the full scene, keeping it in formulas.
+
+For Q_t=G_(t-1)...G_0, the ALREADY OWNED transported coherent cut
+P_coh=directsum_t Q_t P0 Q_t^dagger has no interior leakage. Its single
+wrap block is unitarily equivalent to F(V_n,P0). Thus the literal
+ONE-primitive-step Book feedback, without an N multiplier, is
+\[
+ J_{\rm coh,n}=-\kappa\operatorname{Tr}_{16}\log M_n,
+ \quad M_n=(1-z)I+zB^{2n},\quad B=I-2p^2\Delta_{\rm DATA},
+ \quad\kappa=r_S d_R.                                 \tag{131}
+\]
+All banks are blank in the initial P0; their later cuts are transported.
+The different App-only blank cut with
+identity on banks has the DIFFERENT coefficient r_S d_R 128^n; it is
+not used in (131). This is a specialization of Sections9/10 to the actual
+original copied word, not a newly selected native active projector.
+The all-stage coherent cut is also the finite Krylov space at horizon
+N-1 of stage0 P0: here that horizon is the specified word's real period,
+not a freely enlarged observational horizon. None of these mathematical
+identities identifies the compulsory physical P_N.
+
+### 19.3 A genuinely different retained-record boundary on the SAME word
+
+Consume, rather than reprove, the original pointer-support theorem (2).
+At each real primitive stage let D_t be the COMMUTATIVE algebra of the
+fine record bits actually written by that stage. Later primitives leave
+these old pointer bits alone. Set H_t to the least D_t-reducing subspace
+containing Q_t ran(P0), and let P_t^rec project onto H_t. A newly copied
+bit refines D_t; it does not dephase the physical world. The whole quantum
+state and every oldRIGHT correlation remain present.
+
+During a no-new-record operation the old pointer algebra is respected;
+during a copy, its refined reducing hull can only enlarge the transported
+previous hull. Consequently, for the ACTUAL serial word,
+\[
+ G_t H_t\subseteq H_{t+1},\qquad
+ P_t^{\rm rec}G_t^\dagger(I-P_{t+1}^{\rm rec})G_tP_t^{\rm rec}=0
+       \quad(t=0,...,L-1).                            \tag{132}
+\]
+This assertion uses old App/bank bits only after they have been written;
+no pointer commutation with an unfinished Julia operation is presumed.
+For completed histories omega, the terminal hull is exactly
+\[
+ H_L=\bigoplus_\omega\operatorname{ran}(K_\omega\otimes I_R)
+                         \otimes|\omega,\omega\rangle,
+ \quad K_\omega=K_{a_n}\cdots K_{a_1}.                 \tag{133}
+\]
+Every other original label, including dark ones, stays in the full
+carrier. Equation(133) is an all-input-family support, NOT the rank-one
+per-branch support of an actual complete pure world. Faithful DATA alone
+does not replace that distinction. Generally P_t^rec belongs to D_t's
+COMMUTANT and is not a Boolean predicate in D_t; no unpriced support
+measurement is claimed.
+
+The genuine all-zero completed branch has K_omega=B^n. On the strict
+chart B is invertible, hence P0<=P_L^rec. Include the actual terminal
+idle before wrap, as in the original completed-stage controller type.
+The final idle wrap of P_rec=directsum_t P_t^rec therefore has
+\[
+ F_{\rm wrap}=P_L^{\rm rec}(I-P0)P_L^{\rm rec}
+             =P_L^{\rm rec}-P0,
+ \quad
+ J_{\rm rec,n}=-r_S(\dim H_L-d)\log(1-z).              \tag{134}
+\]
+Every forward block is zero by(132); (134) counts the real wrap once.
+On every constant-rank smooth chart ALL field/preparation/projector
+jets of this feedback scalar vanish. Moving within-block supports do
+not change the spectrum {0,1} of this exact projection. Rank birth is
+a separate nonsmooth boundary, not a hidden smooth Einstein source.
+
+For n=1 the existing exact original support rank is 924 d_R, also after
+copying into the real bank. Thus (134)'s coefficient is 908 r_S d_R;
+this consumes the old rank theorem and performs no new rank census.
+It does not contradict the next-tick owner's sourced feedback: that
+owner executes a genuinely further DATA/fresh-App operation, whereas
+(134) closes the specified completed programme with an idle.
+
+Closedness and retention therefore do not identify (131) and (134).
+Both are explicit subspaces on ONE literal carrier/word; neither is
+proved the physically compulsory Book active boundary. A completed
+registration BEFORE wrap does not itself require a return-to-blank
+comparison at wrap. Memory supplies present records; the actual Query_O,
+active/archive split and controller must still specify which operation
+Book03's F prices. No third primitive history comparator is introduced.
+
+### 19.4 A strict full-master source sign for EVERY finite n on the original fixture
+
+Now apply(130)-(131), rather than another Info proxy. Keep precisely
+Section18's original phases, theta=log(5/4)=2 atanh(1/9), nu0=3/5,
+and vary the original creation legs X_r(nu)=nu X_r(1), holding their
+proper link, whitening/observer and all scene/clock ranks fixed.
+The signed row A is linear in nu, so Delta_DATA=nu^2 Delta0.
+With the actual z=2^-20 and beta=2p^2, exact differentiation gives
+\[
+ \partial_\nu J_{\rm coh,n}
+ =8\kappa nzp^2\nu\operatorname{Tr}
+       [M_n^{-1}B^{2n-1}\Delta0]>0.                    \tag{135}
+\]
+This is an ambient source test in the original lifted field coordinate,
+not a claim that every such continuous control is physically admitted.
+
+The TWO exact eigenvalues already proved in(118) are
+(141489 +/-9 sqrt(397841))/10240000. They give
+1/100<lambda_min(Delta_DATA)<=lambda_max(Delta_DATA)<1/50.
+Thus B>49/50, Tr16 Delta0>4/9, p^2>9/25 and kappa>=1 imply
+\[
+ \partial_\nu J_{\rm coh,n}
+  >{nz\over2}(49/50)^{2n-1}.                          \tag{136}
+\]
+No lower gap for an arbitrary spatial/all-site operator is imported.
+
+The COMPLETE unitary jet, including unused columns, has a simple bound.
+For the literal CAR boost, ||c_1 exp(theta gen)||^2=cosh(2theta)=881/800;
+the other unscaled blocks have norm1. Hence every X_r(1) has norm<9/8.
+At nu0, every positive Julia root is >7/10. The Sylvester derivative
+bound for that ORIGINAL Julia block is
+||partial_nu J(X)|| <9/8+(3/5)(9/8)^2/(7/10)=495/224<9/4.
+Fixed Walsh/SELECT factors and row restriction give the same bound
+for partial_nu L. The literal U=I-2LL^dagger therefore obeys
+||partial_nu U||<9, and ||partial_nu V_n||<9n.
+Copy gates contribute no field jet. This is an all-column estimate,
+not a bound inferred from the initialized Kraus column.
+
+Use EXACTLY the existing complete33-scene C1(N) in(85). With x=beta/22,
+a_N=x^N/N!, the owned Bessel majorant gives
+\[
+ C1(N)\le {2\over\beta}
+ e^{25\beta/13+x^2}{a_N\over(1-a_N)^2}
+       <64\,{22^{-N}\over N!}.                       \tag{137}
+\]
+Indeed 7/10<beta<1, 25/13+1/484<2, e^2<8 and
+(1-a_N)^-2<= (22/21)^2<2. The FULL heat, with no work-mode
+normalization or deletion, consequently satisfies
+\[
+ |\partial_\nu H_N|<576 n\,22^{-8n}.                 \tag{138}
+\]
+The actual N>=8n, not a freely chosen extra wait, is used here.
+Finally 576/22^8 <(2^-20/2)(49/50)^2, and
+22^-8<(49/50)^2. The exact first inequality propagates to every n>=1.
+Equations(136)-(138) prove the WHOLE direct master statement
+\[
+ \boxed{\partial_\nu\mathcal B_{\rm coh,n}>0
+       \quad\text{for EVERY integer }n\ge1.}          \tag{139}
+\]
+The heat cannot cancel this feedback source on this original fixture,
+even though every allocated archive/work mode is retained. This is
+stronger than the old two-event finite contrast: it is a strict complete
+first-source statement for the entire recorded n-event family and its
+actual primitive duration. It holds at any chosen finite n, including
+8192 on THIS fixture, without increasing a forced stopping horizon.
+It is NOT a uniform theorem for h-dependent spatial operators or the
+primary curved nonvacuum family, and it adds no arbitrary action gain.
+
+### 19.5 Exact parent substitution and retained physical question
+
+The source cannot be selected by conflating three different objects:
+retained-record hull, coherent prepared orbit and physical active Book
+boundary. On the literal execution, the first gives projection-valued
+wrap feedback (134); the second has the strictly nonstationary direct
+master source (139). Future completeness is a requirement on the whole
+memory, not a theorem selecting either of those active cuts.
+
+This removes the application "the coherent transported fresh-blank cut
+plus the actual full scene heat already supplies a stationary native
+Book03 programme on the original fixture". It also supplies the actual
+progressive-record source instead of assuming that its support produces
+the same B^(2n) return. These are changed-input source applications of
+owned results, not new competing executions or another generic certificate.
+
+The positive all42 paid query, exact nonvacuum solution carrier and
+conditional global Einstein rigidity remain available. The next physical
+substitution is the actual same-execution Query_O/active/archive/controller
+operator and admitted field variation in the ORIGINAL full stack, with its
+real independent preparation/observer/boundary/terminal equations. If the
+direct master is that selected sector, test(130) directly; no separate
+Shannon-Info theorem is required. If its Cost-Info or Julia equivalence is
+asserted, the actual absolute valuation/continuation binding remains.
+A new fitted cut, counterterm, source normalization or extra clock wait
+would change this question rather than solve it. No full D0, raw216,
+physical-price, assembly or GR closure is claimed.

@@ -6377,3 +6377,85 @@ All169,185 bytes of the published paid-writer atad2ac42c are unchanged.
 Final work, protocol, assembly, generated-work-view, repository and diff
 guards passed; the existing result checkpoint template was consumed.
 No registered heavy/Lean replay or scientific promotion is asserted.
+
+
+### Same-owner checkpoint: direct Book03 all-n source and progressive physical records, 23 October 2026
+
+Phase: native realization / original full-source application and final composition.
+Existing Draft#334 and constitutive/native-programme-v1 retain ownership;
+no new task, scientific execution, lifecycle, assembly or claim state.
+Checkpoint artifact: paid-writer Section19. Consumer: original-Book
+Section9.1/9.2 whole-process stationary-source application and the existing
+physical-closure intake at f1d9b43a. Write paths remain the existing paid
+writer, its original-Book consumer and this brief only.
+
+Route correction: the ORIGINAL Book03 Section03.25 stationarity may be
+consumed directly once its actual operators and admitted tangents are
+supplied. A separate identification of Info with Shannon/CQ entropy is
+not universally necessary. Such a valuation binding is still required
+when claiming that Cost-Info or the Julia continuation law is equivalent
+to the operator action. The original full stack retains its other real
+coefficient/action/boundary/terminal sources. No additive work law is
+invented; no physical Rayleigh/paid residual equality is presumed.
+
+Changed mathematical input: apply owned primitive-stage and full33-scene
+heat/source bounds to ALL n copied original full128 events, not just two
+fresh unrecorded calls or a finite contrast. Use the actual signed row
+(59), real original boost theta=log(5/4), nu=3/5, all Apps/banks blank
+and actual serial seven-CX recording. New exact result (135)-(139): the
+complete coherent-return direct master has strictly positive radial
+source for EVERY finite n. Full-column Julia derivative <9 and actual
+N>=8n make the factorial heat too small to cancel it; no freely enlarged
+horizon, discarded mode or fitted action gain is used.
+
+Second substitution: consume the existing least fine-pointer-reducing
+support theorem on each actually committed primitive record stage.
+Forward inclusions give zero interstage feedback. The actual completed
+idle wrap gives P_terminal-P0 because the true zero-ending B^n is
+invertible. Whole feedback is therefore a rank difference times
+-log(1-z), with ALL source jets zero on constant-rank charts. The old
+one-event924 support count is consumed rather than recomputed. A further
+DATA tick is different from this idle and retains its owned nonzero source.
+
+Carrier/norm/source: original DATA16, complete passive oldRIGHT d_R,
+all actual n preloaded App128/bank128 pairs, full33-scene heat and actual
+primitive clock, ordinary unnormalized traces. This is an all-protected-
+input support, not one actual pure state's support; pointer-commuting
+projectors are not automatically Boolean-only measurable predicates.
+The radial field tangent fixes observer, link, scene/ranks and beta,z;
+no physical admission of that continuous actuator is claimed. The all-n
+source sign holds on the stated FIXED fixture, not automatically on an
+h-dependent spatial refinement or primary curved nonvacuum family.
+
+Smallest decisive check: exact rational inequalities from the ALREADY
+owned two eigenvalues118, actual CAR norm881/800, Julia Sylvester bound
+495/224, full C1(N) Bessel tail and the one-step base inequality
+576/22^8 <2^-21*(49/50)^2. Nine rational controls verified locally;
+analytic induction establishes every n. No original rank, root, history,
+Lean or registered heavy certificate is replayed or new owner created.
+
+Parent result: removes the concrete stationary-source application of
+the coherent transported fresh-blank direct master on this fixture and
+supplies the actual progressive-record feedback instead of identifying
+it with I-B^(2n). The generic transported-stage/Krylov calculation was
+already owned and is not presented as a new result. Remaining physical
+map: actual Query_O/active/archive/controller operator and genuinely
+admitted field variations of the SAME original full stack, with all
+independent upstream equations. The exact positive nonvacuum and both
+conditional global Einstein consumers remain unchanged. Physical full
+price, raw216 and GR remain OPEN.
+
+
+Independent native_continuation_map, native_valuation_map and
+universal_parent_map reviewed Section19; final heading-to-EOF pin:
+12,399 UTF-8 bytes; SHA-256
+3d2a92ef8d356363c2ff3e8dc482ff70c3c0f8bdb5fe728ec39d5b9f0cb61a35.
+Review explicitly separates initial blank P0 from its later transported
+recorded cuts; fixes L=N-1 with the already counted idle G_L=I; and
+retains the complete all-input, observer, stage, action and physical
+selection scopes. All184,004 bytes of the published paid-writer at
+4eb4fd4b are an unchanged prefix. Work/protocol/assembly/work-view/repo
+and diff guards passed; the existing checkpoint template was consumed.
+The analytical and nine exact-rational changed checks need no full
+research/Lean replay. This intake is not physical-premise acceptance,
+retirement, Ready, CORE or GR promotion.

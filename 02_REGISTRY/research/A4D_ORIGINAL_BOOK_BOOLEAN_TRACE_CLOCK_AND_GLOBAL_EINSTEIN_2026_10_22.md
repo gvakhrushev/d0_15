@@ -949,6 +949,36 @@ The remaining native binding must preserve primitive Cost/Info marking,
 its actual tail norm and every input/clock/work source. Equal minima or
 unmarked unitary equality cannot replace that map.
 
+
+**Direct-master route correction and complete original source test (23 October).**
+[Paid writer Section19](A4D_PAID_MOMENT_FIELD_WRITER_2026_10_21.md#19-direct-book03-stationarity-the-actual-all-n-primitive-programme-and-two-different-memory-boundaries)
+consumes Book03 Section03.25 DIRECTLY. A separate Shannon/CQ-Info law is
+not a universal prerequisite for native operator stationarity; Sections7/18's
+valuation and continuation tests keep their own narrower purposes. Native
+operators, active cuts, admitted variations and every real stack/source
+sector are still required.
+
+On ONE literal copied full128 programme with all fresh banks blank and
+actual primitive N>=8n, the owned stage construction gives its whole
+one-step feedback without an N multiplier. The NEW all-n application
+proves that on the exact original proper-boost fixture the complete
+coherent-return master has strictly positive radial first source for
+EVERY finite n, including the full33-scene heat and all physical work
+columns. This removes that concrete stationary-source candidate; it is
+not a no-go for the primary curved family, the full stack or D0.
+
+The other NEW application is the actual progressive fine-record hull.
+Its forward-stage leakage vanishes, and the genuine completed idle wrap
+has projection feedback P_terminal-P0. Its entire feedback source is zero
+on constant-rank charts, including moving supports. The hull theorem and
+old exact924 rank are reused, not recertified. Actual pure-world support,
+the all-protected-input hull and a Boolean predicate remain distinct.
+Thus retaining every internal distinction does not equate these active
+cuts or make wrap a required new registration. The physical consumer is
+the same-execution Query_O/active/archive/controller map and real field
+variation in the original full stack; this must be derived rather than
+replaced by another normalized price, chosen cut or freely added wait.
+
 ### 9.2 The ordinary complete Book trace localizes too, with its true heat weight
 
 For actual block-diagonal \(\Delta=\bigoplus_h\Delta_h\) and
