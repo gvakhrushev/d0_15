@@ -98,7 +98,7 @@ def records(dataset: dict[str, Any]) -> list[dict[str, Any]]:
         key = row.get("claim_id", "")
         out.append({
             "kind": "claim-metadata", "key": key,
-            "label": f"{row.get('book', '')} �{row.get('section', '')}".strip(),
+            "label": f"{row.get('book', '')} §{row.get('section', '')}".strip(),
             "source": CLAIMS.as_posix(), "record": row,
             "search_terms": [key, row.get("book", ""), row.get("section", ""),
                              row.get("lean_module", ""), *_lean_atoms(row), row.get("notes", "")],
@@ -208,18 +208,18 @@ def structured_search(dataset: dict[str, Any], query: str, limit: int = MAX_SEAR
 
 
 _QUERY_SYNONYMS: tuple[tuple[str, tuple[str, ...]], ...] = (
-    ("exact", ("exact", "exactly", "precise", "����")),
-    ("raising", ("raising", "creator", "creation", "������", "������", "��������", "������")),
-    ("operator", ("operator", "��������")),
-    ("inverse", ("inverse", "invert", "reconstruct", "reconstruction", "������", "���������")),
-    ("null", ("null", "lightlike", "isotropic", "���", "����������", "�������", "pp-wave")),
-    ("leg", ("leg", "component", "���������", "����")),
-    ("coframe", ("coframe", "solder", "������", "�������")),
-    ("transverse", ("transverse", "�������")),
-    ("nonvacuum", ("nonvacuum", "non-vacuum", "��������", "��-������")),
-    ("midpoint", ("midpoint", "�������")),
-    ("radial", ("radial", "��������")),
-    ("equivalence", ("equivalence", "equivalent", "����������")),
+    ("exact", ("exact", "exactly", "precise", "точн")),
+    ("raising", ("raising", "creator", "creation", "подъем", "подъём", "создател", "создан")),
+    ("operator", ("operator", "оператор")),
+    ("inverse", ("inverse", "invert", "reconstruct", "reconstruction", "обратн", "восстанов")),
+    ("null", ("null", "lightlike", "isotropic", "нул", "светоподоб", "изотроп", "pp-wave")),
+    ("leg", ("leg", "component", "компонент", "ножк")),
+    ("coframe", ("coframe", "solder", "тетрад", "кофрейм")),
+    ("transverse", ("transverse", "попереч")),
+    ("nonvacuum", ("nonvacuum", "non-vacuum", "невакуум", "не-вакуум")),
+    ("midpoint", ("midpoint", "середин")),
+    ("radial", ("radial", "радиальн")),
+    ("equivalence", ("equivalence", "equivalent", "эквивалент")),
 )
 
 # Broad words still contribute to matching and ranking, but should not cause
@@ -228,14 +228,14 @@ _QUERY_SYNONYMS: tuple[tuple[str, tuple[str, ...]], ...] = (
 _LOW_INFORMATION_TERMS = frozenset({
     "all", "first", "full", "complete", "second", "jet", "derivative",
     "variation", "native", "actual", "operator", "source", "positive",
-    "recovery", "��������", "������", "����", "����", "����",
-    "���������", "������", "��������", "���������", "���������",
-    "�������", "������", "���������", "����������", "������",
+    "recovery", "источник", "полный", "полн", "перв", "втор",
+    "производн", "вариац", "оператор", "положител", "восстанов",
+    "настоящ", "исходн", "касательн", "окрестност", "вектор",
 })
 
 
 def _fold(text: str) -> str:
-    return text.casefold().replace("�", "�")
+    return text.casefold().replace("ё", "е")
 
 
 def _query_terms(query: str) -> list[tuple[str, tuple[str, ...]]]:
@@ -291,7 +291,7 @@ def _source_references(lines: list[str]) -> list[dict[str, Any]]:
         r"https?://github\.com/[^/\s)]+/[^/\s)]+/blob/([0-9a-f]{40})/([^\s)#)]+)",
         flags=re.IGNORECASE,
     )
-    section_pattern = re.compile(r"�{1,2}\s*([0-9]+(?:\.[0-9a-z]+)?)(?:\s*[�-]\s*([0-9]+(?:\.[0-9a-z]+)?))?",
+    section_pattern = re.compile(r"§{1,2}\s*([0-9]+(?:\.[0-9a-z]+)?)(?:\s*[–-]\s*([0-9]+(?:\.[0-9a-z]+)?))?",
                                  flags=re.IGNORECASE)
     found: dict[tuple[str, str | None, str | None], dict[str, Any]] = {}
     for line in lines:
@@ -861,7 +861,7 @@ def _render_text(value: Any) -> str:
     def bound(item: Any) -> Any:
         if isinstance(item, str) and len(item) > MAX_FIELD_CHARS:
             digest = hashlib.sha256(item.encode("utf-8")).hexdigest()
-            return item[:MAX_FIELD_CHARS] + f"� [truncated {len(item) - MAX_FIELD_CHARS} chars; sha256={digest}]"
+            return item[:MAX_FIELD_CHARS] + f"… [truncated {len(item) - MAX_FIELD_CHARS} chars; sha256={digest}]"
         if isinstance(item, list):
             values = [bound(value) for value in item[:32]]
             if len(item) > 32:
