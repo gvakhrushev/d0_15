@@ -392,6 +392,7 @@ import D0.Geometry.ArchiveHodgeDiracZeroModePollutionNoGo
 import D0.Geometry.ArchiveHodgeGradingSymmetry
 import D0.Geometry.ArchiveHodgeSpatialShellOperator
 import D0.Geometry.ArchiveJYToPlaquetteBoundary
+import D0.Geometry.ArchiveJuliaRaisingOperatorReadout
 import D0.Geometry.ArchiveLaplacianPhaseNaturality
 import D0.Geometry.ArchiveLaplacianProperties
 import D0.Geometry.ArchiveLaplacianRG
@@ -801,3 +802,4 @@ import D0.Verification.PresentCoreMaximality
 import D0.Verification.RootOperatorSemanticDependence
 import D0.Verification.TotalClosureBoundary
 import D0.Verification.TotalExtensionPrimitiveMinimality
+

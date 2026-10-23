@@ -1,0 +1,277 @@
+#!/usr/bin/env python3
+"""Extract actual Lean declaration metadata from the compiled D0.All environment."""
+from __future__ import annotations
+
+import argparse
+import csv
+import hashlib
+import json
+import pathlib
+import re
+import subprocess
+import tempfile
+from typing import Any
+
+import lean_task_build
+
+ROOT = pathlib.Path(__file__).resolve().parents[1]
+FORMAL = ROOT / "03_FORMALIZATION"
+CLAIMS = ROOT / "02_REGISTRY" / "claims.csv"
+PREFIX = "D0_DECLARATION_JSON="
+
+
+def name_expr(full_name: str) -> str:
+    """Build a Lean Name from string components without source interpolation."""
+    parts = full_name.split(".")
+    if not parts or any(not part for part in parts):
+        raise ValueError(f"invalid dotted Lean name: {full_name!r}")
+    expr = "Lean.Name.anonymous"
+    for part in parts:
+        expr = f"Lean.Name.str ({expr}) {json.dumps(part, ensure_ascii=False)}"
+    return expr
+
+
+def candidate_names(module: str, atom: str) -> list[str]:
+    """Return plausible exact names; the elaborated environment resolves them."""
+    names = []
+    if atom.startswith("D0."):
+        names.append(atom)
+    else:
+        if module:
+            names.append(f"{module}.{atom}")
+        names.append(f"D0.{atom}")
+        if not module:
+            names.append(atom)
+    return list(dict.fromkeys(names))
+
+
+def claim_requests(claim_id: str) -> tuple[dict[str, Any], list[str]]:
+    with CLAIMS.open(encoding="utf-8-sig", newline="") as stream:
+        rows = list(csv.DictReader(stream))
+    matches = [row for row in rows if row["claim_id"] == claim_id]
+    if len(matches) != 1:
+        raise ValueError(f"expected one claim row for {claim_id}, found {len(matches)}")
+    mapping, names = _claim_row_request(matches[0])
+    return {"claim_id": claim_id, "mappings": mapping}, names
+
+
+def _claim_row_request(row: dict[str, str]) -> tuple[list[dict[str, Any]], list[str]]:
+    module = row.get("lean_module", "").strip()
+    mapping = []
+    names: list[str] = []
+    for atom in filter(None, (part.strip() for part in row.get("lean_theorem", "").split(";"))):
+        candidates = candidate_names(module, atom)
+        names.extend(candidates)
+        mapping.append({"claim_id": row.get("claim_id", ""), "module_locator": module, "theorem_atom": atom,
+                        "candidate_names": candidates})
+    if not mapping:
+        mapping.append({"claim_id": row.get("claim_id", ""), "module_locator": module,
+                        "theorem_atom": None, "candidate_names": []})
+    return mapping, list(dict.fromkeys(names))
+
+
+def all_claim_requests(rows: list[dict[str, str]] | None = None) -> tuple[dict[str, Any], list[str]]:
+    """Resolve every current claims.csv locator without assigning semantic coverage."""
+    if rows is None:
+        with CLAIMS.open(encoding="utf-8-sig", newline="") as stream:
+            rows = list(csv.DictReader(stream))
+    mappings: list[dict[str, Any]] = []
+    names: list[str] = []
+    for row in rows:
+        row_mappings, row_names = _claim_row_request(row)
+        mappings.extend(row_mappings)
+        names.extend(row_names)
+    return {"claim_rows": len(rows), "mappings": mappings}, list(dict.fromkeys(names))
+
+
+def module_source_path(module_name: str | None) -> str | None:
+    if not module_name:
+        return None
+    rel = pathlib.Path(*module_name.split(".")).with_suffix(".lean")
+    roots = [FORMAL]
+    package_root = FORMAL / ".lake" / "packages"
+    if package_root.is_dir():
+        roots.extend(p for p in package_root.iterdir() if p.is_dir())
+    for root in roots:
+        source = root / rel
+        if source.is_file():
+            try:
+                return source.relative_to(ROOT).as_posix()
+            except ValueError:
+                return str(source.resolve())
+    return None
+
+
+def lean_collector(names: list[str], import_root: str) -> str:
+    if not re.fullmatch(r"[A-Za-z_][A-Za-z0-9_']*(?:\.[A-Za-z_][A-Za-z0-9_']*)*", import_root):
+        raise ValueError(f"invalid Lean import root: {import_root!r}")
+    targets = ",\n    ".join(name_expr(name) for name in names)
+    return f'''import Lean
+import {import_root}
+
+open Lean Meta Elab Command
+
+def d0PositionJson (p : Position) : Json := Json.mkObj [
+  ("line", toJson p.line), ("column", toJson p.column)
+]
+
+def d0RangeJson (r : DeclarationRange) : Json := Json.mkObj [
+  ("start", d0PositionJson r.pos), ("end", d0PositionJson r.endPos)
+]
+
+run_cmd do
+  let targets : Array Name := #[
+    {targets}
+  ]
+  let env ← getEnv
+  for target in targets do
+    let payload ← match env.find? target with
+      | none => pure <| Json.mkObj [
+          ("name", toJson target.toString), ("exists", toJson false)
+        ]
+      | some info => do
+        let typeText ← liftTermElabM do
+          let fmt ← PrettyPrinter.ppExpr info.type
+          pure fmt.pretty
+        let binders ← liftTermElabM <| forallTelescope info.type fun xs _ => do
+          xs.mapM fun fvar => do
+            let localDecl ← getFVarLocalDecl fvar
+            let binderType ← PrettyPrinter.ppExpr localDecl.type
+            let isProposition ← Meta.isProp localDecl.type
+            pure <| Json.mkObj [
+              ("name", toJson localDecl.userName.toString),
+              ("binder_info", toJson (reprStr (LocalDecl.binderInfoEx localDecl))),
+              ("type", toJson binderType.pretty),
+              ("is_proposition", toJson isProposition)
+            ]
+        let typeDependencies := info.type.getUsedConstantsAsSet.toList.map Name.toString
+        let proofDependencies := match info.value? (allowOpaque := true) with
+          | none => []
+          | some value => value.getUsedConstantsAsSet.toList.map Name.toString
+        let owner ← findModuleOf? target
+        let ranges ← findDeclarationRanges? target
+        let axioms ← collectAxioms target
+        let rangeJson := match ranges with
+          | none => Json.null
+          | some rs => Json.mkObj [
+              ("declaration", d0RangeJson rs.range),
+              ("selection", d0RangeJson rs.selectionRange)
+            ]
+        pure <| Json.mkObj [
+          ("name", toJson target.toString),
+          ("exists", toJson true),
+          ("elaborated_type", toJson typeText),
+          ("binders", toJson binders),
+          ("type_dependencies", toJson typeDependencies),
+          ("proof_dependencies", toJson proofDependencies),
+          ("axioms", toJson (axioms.toList.map Name.toString)),
+          ("module", toJson (owner.map Name.toString)),
+          ("declaration_ranges", rangeJson)
+        ]
+    liftIO <| IO.println s!"{PREFIX}{{payload.compress}}"
+'''
+
+
+def run_inventory(names: list[str], import_root: str) -> tuple[list[dict[str, Any]], str, str]:
+    if not names:
+        raise ValueError("no declaration names were requested")
+    with tempfile.TemporaryDirectory(prefix="d0-lean-inventory-") as directory:
+        script = pathlib.Path(directory) / "Collect.lean"
+        script_text = lean_collector(names, import_root)
+        script_bytes = script_text.encode("utf-8")
+        script_sha256 = hashlib.sha256(script_bytes).hexdigest()
+        script.write_bytes(script_bytes)
+        try:
+            with lean_task_build.build_lock(lean_task_build.LOCK):
+                source_digest_before_build = lean_task_build.source_digest()
+                build = subprocess.run(
+                    ["lake", "build", import_root], cwd=FORMAL,
+                    capture_output=True, text=True, encoding="utf-8", errors="replace",
+                )
+                source_digest_after_build = lean_task_build.source_digest()
+                if build.returncode:
+                    raise RuntimeError(
+                        f"Lean import root is not current/buildable ({build.returncode}):\n"
+                        f"{build.stderr}\n{build.stdout}"
+                    )
+                if source_digest_before_build != source_digest_after_build:
+                    raise RuntimeError(
+                        "Lean sources changed while the import root was being built; "
+                        "discard this result and rerun."
+                    )
+                proc = subprocess.run(
+                    ["lake", "env", "lean", str(script)], cwd=FORMAL,
+                    capture_output=True, text=True, encoding="utf-8", errors="replace",
+                )
+                source_digest_after = lean_task_build.source_digest()
+        except lean_task_build.BuildLockBusy as exc:
+            raise RuntimeError(
+                "D0 Lean build/cache is busy; retry declaration extraction after it finishes."
+            ) from exc
+    if source_digest_after_build != source_digest_after:
+        raise RuntimeError(
+            "Lean sources changed during declaration extraction; discard this result and rerun."
+        )
+    if proc.returncode:
+        raise RuntimeError(f"Lean collector failed ({proc.returncode}):\n{proc.stderr}\n{proc.stdout}")
+    records = []
+    for line in proc.stdout.splitlines():
+        if line.startswith(PREFIX):
+            records.append(json.loads(line[len(PREFIX):]))
+    if len(records) != len(names):
+        raise RuntimeError(
+            f"Lean collector returned {len(records)} rows for {len(names)} requests; "
+            f"stdout was:\n{proc.stdout}\nstderr was:\n{proc.stderr}"
+        )
+    for row in records:
+        for key in ("type_dependencies", "proof_dependencies", "axioms"):
+            if isinstance(row.get(key), list):
+                row[key] = sorted(row[key])
+    return records, script_sha256, source_digest_after_build
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    select = parser.add_mutually_exclusive_group(required=True)
+    select.add_argument("--name", help="exact full Lean declaration name")
+    select.add_argument("--claim-id", help="resolve theorem-name candidates for one claims.csv row")
+    select.add_argument("--all-claims", action="store_true",
+                        help="resolve all theorem-name candidates in claims.csv")
+    parser.add_argument("--output", type=pathlib.Path, help="write JSON to this path; default is stdout")
+    parser.add_argument("--import-root", default="D0.All", help="compiled public Lean import (default: D0.All)")
+    args = parser.parse_args()
+
+    mapping = None
+    if args.name:
+        mapping = {"full_name": args.name}
+        names = [args.name]
+    elif args.claim_id:
+        mapping, names = claim_requests(args.claim_id)
+    else:
+        mapping, names = all_claim_requests()
+    rows, collector_sha256, lean_source_digest = run_inventory(names, args.import_root)
+    for row in rows:
+        row["source_path"] = module_source_path(row.get("module"))
+    output = {
+        "schema": "d0-lean-declaration-inventory-v1",
+        "snapshot_commit": subprocess.check_output(
+            ["git", "rev-parse", "HEAD"], cwd=ROOT, text=True, encoding="utf-8"
+        ).strip(),
+        "lean_source_digest": lean_source_digest,
+        "collector_sha256": collector_sha256,
+        "toolchain": (FORMAL / "lean-toolchain").read_text(encoding="utf-8").strip(),
+        "public_import_root": args.import_root,
+        "request": mapping,
+        "declarations": rows,
+    }
+    rendered = json.dumps(output, ensure_ascii=False, indent=2) + "\n"
+    if args.output:
+        args.output.write_text(rendered, encoding="utf-8", newline="\n")
+    else:
+        print(rendered, end="")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
+
