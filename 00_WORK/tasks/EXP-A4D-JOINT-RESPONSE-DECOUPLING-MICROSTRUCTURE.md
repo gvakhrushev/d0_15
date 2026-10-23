@@ -6024,3 +6024,116 @@ consumed. No heavy registered replay or new scientific acceptance.
 All previous paid-writer proof bytes are unchanged. Section13's historical
 18,052-byte slice at published ab65f170 retains SHA-256
 a1f38a3b0232ee0378b6e1fce3025dbb4d7cdf17b3d1c267cf973469d77947bb.
+
+## 23 October closed-state memory correction and complete internal-comparer application
+
+Input df573eba5a60dea538bcbbfd32aa149887e55c73. Phase: native
+realization / final source composition; SAME #334,
+constitutive/native-programme-v1 owner. Parent consumer: Section14's
+actual same-execution Book cut/Info/work map, then primary exact
+nonvacuum recovery and existing global Einstein rigidity at their
+retained hypotheses.
+
+User steering: one closed physical state includes physical traces;
+ordinary internal Query_O and the existing distinction read them.
+No external history journal, observer or third fundamental comparison
+is assumed. The prior claim that physical primitive comparisons must
+ignore the retained trace was an incorrect APPLICATION of the
+coordinate-forgetting theorem. Its exact mathematical statements
+remain valid. The physical two-kind representation remains open;
+this correction does not prove it or derive the Golden root.
+
+Disjoint write surfaces: existing paid-writer Section15, original
+Book/global Section9.1 pointer and this brief; four interpretive
+Book01 paragraphs and ONLY module-header comments in
+D0/Foundation/DetectionCapabilityBoundary.lean and
+D0/Foundation/CurrentDataFactorization.lean. All imports/declarations/
+proof bytes from namespace through EOF are unchanged. Architecture
+#402 was inspected: its workflow/manifest/README and active tools/
+new VerificationCore work do not overlap these bounded corrections;
+its task and shared architecture files are untouched.
+
+Owned inputs consumed: FutureExecution's complete-future congruence/
+minimal-memory boundary; FiniteProtocolClock's supplied reversible
+internal programme/register; Book01 Query_O; existing Boolean
+comparer Section6.5; literal Julia/copied word and replica heat;
+canonical fine pinching/Gibbs binding; Book06 block elimination.
+The existing Feshbach Lean intake is only a finite3/30 path-grammar
+tick result, not a claimed general analytic-resolvent proof.
+
+Actual application: preallocate all registers in one initial world.
+For the declared zero-value return event E on WORK,
+C_E=Q_E tensor I+E tensor X
+and U_obs=C_E(V_n tensor I)C_E implement the before/after comparison.
+The full flag0 Book cut retains ALL work; its effect keeps BOTH
+E->Q_E and Q_E->E. Rectangular determinant/whole-unitary conjugacy
+give J_obs=-66d_R Tr log[(1-z)I+zB^(2n)] and
+Tr U_obs^q=2Tr V_n^q at actual N_obs. No arbitrary bankrankK^n
+appears in this readout, and zero modes are retained. The fine tape
+determines the flag, so its joint fine-CQ Info is unchanged; all
+additional real work/preparation/clock costs W_obs and their sources
+remain in equation(94). Actual P/Q elimination gives the finite
+memory kernel(95) with genuine initial complementary state retained.
+
+The subsequent actual native application now excludes ONE identification:
+zero tape value is not completed registration. Book06 completion is
+value-independent; the existing internal controller completes on
+both zero/nonzero branches before wrap. On 0<A^dagger A<I,
+p^3I<B<I gives0<Tr(Omega B^(2n))<1, while registration is complete
+on every branch. Thus E=[completed] and its prepared flag0 equivalent
+fail. Completion remains necessary, not sufficient for every task's
+active/readout membership; no universal prohibition on selective
+active cuts is inferred. The next parent map reuses the actual
+preparation-inclusive P_port0 tensor P_comp0 tensor I_rest and
+separate READY-in-F_query equation11a, with all actual source/rank
+and native-selection obligations preserved. This precise mismatch
+changes the proposed application, not the positive observer theorem.
+
+Smallest decisive check: direct all-input flag block algebra,
+rectangular determinant identity and conjugacy; fixed fine-block
+isometry plus exact Gibbs/Info identity; elementary finite block
+substitution; the analytic strict-probability test(96). No new scientific execution, certificate, selector,
+acceptance, status/CORE or lifecycle promotion. For the two Lean
+comment changes, compare imports and namespace-to-EOF bytes against
+the published input; no mathematical rebuild is required.
+
+Remaining native premise: the ACTUAL M1/task/continuation constraint
+must admit/select the joint interaction, internal event/readout and
+complete initial resources, and fix their full physical Cost-Info/
+work on the same reachable coframe/link/matter/apparatus image and
+actual refinement. A closed compiler and a mathematically supplied
+readiness experiment do not supply that selection. Original Book03
+H+J versus declared HJR and betaH+J units remain as Section14.
+GR_closed=false; original positive_gr/raw216 and exact nonlinear
+nonvacuum/global-rigidity scopes are unchanged.
+
+Final Section15 heading-to-EOF is20,040 UTF-8 bytes, SHA-256
+c8e40a8993be186bf3e6a89f31c5aa5be989f1ee99715a9c8a77d48f49d9dc34.
+Independent native_continuation_map, native_valuation_map and
+universal_parent_map ACCEPTED these exact final bytes. Review checked both all-input determinant
+blocks, actual scene/RIGHT/scratch ranks, longer-clock conjugacy heat,
+fine-CQ isometry, full initial entropy and genuine W_obs sources.
+All three reviewers additionally checked the final strict-probability
+completion test(96), including its regular-chart hypothesis and the
+necessary-versus-sufficient distinction for native active eligibility.
+It added two scope clarifications: a redundant flag is not a
+mandatory D_min optimum without its native task, and unchanged
+programme controls with different words are not identity spectators.
+
+All117,805 bytes of the earlier published paid-writer artifact at
+df573eba5a60dea538bcbbfd32aa149887e55c73 are an unchanged prefix.
+The two Lean changes are module-header comments only; imports and
+canonical namespace-to-EOF sources match the published input, SHA-256:
+DetectionCapabilityBoundary
+d89debcf9490f1a9e24b70e8747f78a80f7ab11ad55bd9eb672727bceab2f483;
+CurrentDataFactorization
+8ec5c8b463688bfda655018bd7a1be51bcfa6a0c5a1ca8d200a8ed626f87ba63.
+No Lean declaration/proof, scientific expected evidence or historical
+snapshot was edited. No numerical certificate or heavy replay was
+needed for this analytic composition and interpretive correction.
+
+Final work-validation, agent-protocol, assembly-contract,
+generated-work-view, repository and diff guards passed. The existing
+assembly checkpoint template was consumed; no new result acceptance
+or claim/lifecycle promotion was made. The final reviews and receipt
+do not alter the pinned analytical proof inputs.

@@ -869,6 +869,31 @@ still require proof; fixed-CAR16 convergence does not imply them. This
 supplies a common-execution comparison, not equality of physical Book03
 Cost-Info with HJR or a new Einstein selector.
 
+**Closed physical memory and its internal Book readout (23 October).**
+[Paid writer Section15](A4D_PAID_MOMENT_FIELD_WRITER_2026_10_21.md#15-closed-physical-memory-an-internal-comparer-and-its-complete-book-source)
+corrects the earlier history-invariance APPLICATION: an accessible
+physical trace belongs to the current closed state and can be read by
+the original comparison. Coordinate-access counts do not establish
+a third fundamental operation. The existing future-complete quotient
+and internal programme/clock are consumed at their actual hypotheses.
+On the declared full128 zero-value return experiment, an internal XOR flag
+gives BOTH directions of the Book effect (91), the exact squared
+return determinant (92), full conjugacy heat (93) at its longer real
+clock, and unchanged fine-CQ Info with the actual extra-work/source
+equation (94). No arbitrary protected-bank rank enters this observer;
+its event and physical admission are not thereby selected by M1.
+Finite complementary-sector elimination (95) supplies apparent memory
+inside the same closed unitary, without a separate history source.
+The native completion test(96) then excludes identifying tape-value
+zero with completed registration: both zero/nonzero outcomes complete.
+The existing preparation-inclusive cut(11a), its separate READY
+predicate and full physical sources must instead be consumed at
+their stated scope. Completion alone does not select that readout.
+The same native task/continuation constraint must still derive its
+joint gates/readout/resources and complete Cost-Info/work on the
+actual field image before the existing exact nonvacuum/global-GR
+consumers can close. No physical GR or raw216 promotion is inferred.
+
 ### 9.2 The ordinary complete Book trace localizes too, with its true heat weight
 
 For actual block-diagonal \(\Delta=\bigoplus_h\Delta_h\) and

@@ -2459,3 +2459,381 @@ and cyclic heat formula are available inputs. Repeating them, adding a
 negative heat correction or assuming a freely selected horizon supplies
 none of that physical application. Exact nonvacuum GR, the global
 Einstein-rigidity/J2 consumers, positive_gr and raw216 retain their scopes.
+
+
+## 15. Closed physical memory, an internal comparer and its complete Book source
+
+The user's closed-system correction changes the APPLICATION of the
+foundation boundary, not its Boolean theorems. This section composes
+the already owned future-memory quotient, internal programme/clock,
+recorded Boolean comparer, whole Julia word and Book return. Its consumer
+is the same-execution cut/Info/work premise in Section14 and the
+primary exact nonvacuum GR argument. It does not postulate another
+fundamental history comparison or identify a configured interaction
+with one forced by M1.
+
+### 15.1 The current physical state already includes its retained trace
+
+The three independent coordinates in DetectionCapabilityBoundary prove
+three coordinate-ACCESS capabilities in that declared model. They do
+not prove three fundamental ways of comparing physical values. A bit
+left by an earlier internal interaction is part of the PRESENT complete
+state. Query_O can read it and apply the original distinction. In fact
+[Book01](../../01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md)
+already defines O from R and an internal computable Query_O.
+
+CurrentDataFactorization is an exact theorem about forgetting a specified
+History coordinate. Its map to (member,value) need not be the complete
+physical current observation. Requiring every primitive comparison to
+ignore an accessible physical trace was therefore the WRONG physical
+application of that theorem. Both formal theorems remain valid; the
+claimed necessity of this history-invariance gate is withdrawn. A
+classification of physically primitive comparison OPERATIONS still
+needs its actual representation theorem, rather than a count of
+independently readable storage coordinates. Neither two-kind exhaustion
+nor the Golden root is proved by this correction.
+
+The appropriate already-owned memory quotient is
+[FutureExecution](../../03_FORMALIZATION/D0/Foundation/FutureExecution.lean):
+s~t iff EVERY future word of the admitted interactions and every internal
+readout has the same outcome. It includes all retained records and
+controllers in State. profile_step_congr and quotientStep show that
+the original actions descend; sufficient_memory_reflects_future shows
+that any future-sufficient compression must retain its distinctions;
+largest_observation_stable_relation makes it the coarsest such
+congruence. An uncoupled unreadable added bit has no new future profile.
+This consumes those results without claiming that they select the
+action alphabet, its realization or price.
+
+For example, on two internal bits initially00, let A flip the first
+bit and let B copy it by CX into the second. A then B gives11; B then A
+gives10. The ordinary comparison of the present second bit distinguishes
+the order. No history field, external clock or additional comparison
+operation is needed. This is an internal order witness, not a derivation
+of those gates, a universal causal cone or nontrivial dynamics from
+closedness alone.
+
+All n App/bank pairs of (73), DATA, oldRIGHT, programme, clock and any
+comparer registers can be allocated in ONE complete initial state.
+Here fresh means not yet used, not arriving from an external reservoir.
+For an actually supplied complete primitive word G_0,...,G_(N-1),
+the internal reversible clock is
+\[
+ T=\sum_{t\in{\mathbb Z}/N}|t+1\rangle\langle t|\otimes G_t,
+ \qquad T^N|0,\psi\rangle=|0,V_n\psi\rangle.          \tag{88}
+\]
+Include any supplied programme as an unchanged internal control.
+The displayed carrier/heat below uses a fixed word hardwired into
+the clock. A programme register controlling DIFFERENT words is not
+an identity spectator: all its other input sectors must enter the
+whole monodromy and trace. Unchanged programme data do not authorize
+omitting those sectors from (93).
+[FiniteProtocolClock](../../03_FORMALIZATION/D0/Representation/FiniteProtocolClock.lean)
+owns this reversible construction at its stated finite clock, together
+with programmedStep/program_is_retained and basis-label registration;
+the existing primitive-clock owner supplies the N-stage realization
+used here. Neither compiler theorem derives the supplied gates or
+blank apparatus from M1. A cyclic clock records stage modulo N,
+not an unbounded elapsed time; distinguishing a completed cycle from
+no cycle requires another retained internal effect.
+
+### 15.2 An actual internal return event fixes a comparison cut
+
+Use E for the Boolean event that ALL original Apps and their banks are
+blank at the completed-word checkpoint. E acts on WORK only; it contains
+no clock head, and is identity on DATA and oldRIGHT. Q_E=I-E. This
+is the zero-tape-VALUE return predicate of this declared experiment,
+not an arbitrary chosen rank of protected archive. It does not mean
+unused or unregistered: zero is also a valid completed outcome.
+Section15.6 below tests the native completion interpretation directly.
+
+A single internal flag f implements comparison of that event before
+and after the same work evolution U=V_n:
+\[
+ C_E=Q_E\otimes I_f+E\otimes X_f,\qquad
+ {\cal U}=C_E(U\otimes I_f)C_E.                     \tag{89}
+\]
+On an E input and f=0, f at the end is1 exactly when the zero-value
+event has changed. On general inputs it is the XOR of its before/after
+values. The two reads use the original internal Boolean comparison.
+C_E is an all-input unitary involution. This is an application of the
+[owned recorded comparer, Section6.5](A4D_NATIVE_COMPOSED_FEEDBACK_DYNAMICS.md#65-direct-feedback-reconstruction-by-the-owned-recorded-comparer),
+on the existing addressed Boolean interface, not physical actuation
+of an arbitrary abstract projector. A reversible computation of the
+predicate must include its actual compute/read/uncompute word. If its
+implementation restores a borrowed DATA wire on ALL inputs, no new
+scratch dimension is introduced. Any independently added scratch,
+its true preparation, and any un-restored state remain part of the
+actual carrier and ledger. An identity scratch still has its real
+spectator multiplicity in full traces. Foundational admission of this
+Boolean interface and the original Julia word is not inferred here.
+
+For the actual initialized column (74), (89) is exactly
+\[
+ {\cal U}|\psi;{\bf0};{\bf0};0\rangle
+ =B^n\psi\,|{\bf0},{\bf0};0\rangle+
+  \sum_{{\boldsymbol a}\ne{\bf0}}
+     M_{\boldsymbol a}\psi\,
+       |{\boldsymbol a},{\boldsymbol a};1\rangle.     \tag{90}
+\]
+The flag is a deterministic function of the ALREADY retained full
+fine-label word. It includes nonzero coefficient labels with port0;
+it is NOT the previous OR-of-port1 event. For this binary comparison
+one flag suffices and, when both outcomes are reachable, a retained
+two-outcome record cannot have only one state. This is a minimal
+readout for this event, not a classification of the whole memory.
+
+### 15.3 Both directions of the full Book effect, with no hidden bank rank
+
+At a checkpoint take the operational Book projector to be flag0 with
+ALL work states retained. In the compiled scene-clock apparatus this
+means
+P_obs=|head0><head0| tensor |flag0><flag0| tensor I_WORK
+tensor I_scene tensor I_oldRIGHT. The feedback uses the COMPLETE
+return T_obs^(N_obs), whose work/flag monodromy is (89). A single
+primitive clock step is not this return.
+
+In the work fibre its exact all-input flag0 effect is
+\[
+ F_{\rm obs}=
+ E U^\dagger Q_E U E+
+ Q_E U^\dagger E U Q_E.                             \tag{91}
+\]
+The first term describes E to Q_E, the second Q_E to E. Dropping the
+second because the prepared state starts in E would change the full
+Book operator. Write A_E=EUE restricted to E. Unitarity gives the
+first block I_E-A_E^\dagger A_E. By the rectangular determinant
+identity, the second block has determinant
+det_E[(1-z)I_E+z A_E A_E^\dagger]. A_E is square, so this equals
+det_E[(1-z)I_E+z A_E^\dagger A_E]. Consequently
+\[
+ \begin{split}
+ \det(I-zF_{\rm obs})
+   &=\det_E[(1-z)I_E+zA_E^\dagger A_E]^2,\\
+ A_E&=B^n\quad\hbox{on DATA},\\
+ J_{\rm obs}
+   &=-2\cdot33\,d_R\operatorname{Tr}_{D}
+          \log[(1-z)I+zB^{2n}].                    \tag{92}
+ \end{split}
+\]
+Here all33 scene modes and the true oldRIGHT factor are retained;
+there is no extra independent scratch in the displayed carrier.
+Extra zero eigenvalues contribute1 to the determinant. No inverse
+of B, positive Dirac gap, arbitrary protected-bank support or
+K^n bank multiplier is used. The apparent huge Q_E block has the
+same nonzero transition spectrum as the E block, not K^n
+independent copies of it.
+
+This fixes the full cut/effect for the ACTUAL binary observer (89).
+It does not prove that the original Book03 physical apparatus selects
+this observer. In particular, flag1 is the complement of this declared
+readout, not an identification of all physical memory with one direct
+summand. Tensor subsystems such as DATA/banks and direct-sum event
+sectors E/Q_E have distinct meanings.
+
+There is simultaneously an exact whole-spectrum heat transport:
+\[
+ \operatorname{Tr}{\cal U}^{q}=2\operatorname{Tr}V_n^q
+   =2\operatorname{Tr}(S_q{\mathbb T}_q^n),\qquad
+ Z_{\rm obs}=N_{\rm obs}e^{-\beta}
+ \left[2M_nc_0+
+       4\sum_{q\ge1}c_{qN_{\rm obs}}
+            \operatorname{ReTr}(S_q{\mathbb T}_q^n)\right].
+                                                               \tag{93}
+\]
+Indeed C_E^2=I, so (89) is a CONJUGATION of U tensor I_f.
+This proof also holds for a smoothly moving E: its conjugation
+derivatives cancel in the trace, while its actual work price need
+not be source-neutral. The longer actual primitive N_obs changes
+the heat coefficients. Thus (93) does not assert equality with the
+old heat at N_n. It assumes the COMPLETE all-input primitive product
+really equals (89) on the displayed carrier. A new preparation,
+routing or cleanup product cannot be inserted just by changing N.
+All these ranks and lengths are fixed during each field derivative.
+
+### 15.4 Full retained Info and the same-execution source equation
+
+On the actually supplied fine registered algebra the map adding the
+flag in (90) is an isometry within each fine block. Its coherent output
+entropy and pinched entropy equal the respective values in Section14,
+including DATA/oldRIGHT conditional entropy and the actual initial
+entropy. Therefore its Info COMPONENT is exactly mathcal I_n from
+(80), with every upstream source retained. There is no additional
+independent H(flag) to subtract. This statement concerns that same
+fine algebra; retaining only a coarse flag would be a different
+algebra and a different Info.
+
+Let W_obs be the additional ACTUAL physical cost of the two internal
+reads, predicate computation/cleanup, flag preparation, controller,
+clock and work, beyond the same C_n component. It is not set to its
+gate count or to zero. Conditional on this fine Info being the
+applicable price component, P_obs=P_n+W_obs. If the native full Info
+has more rows, retain those rows too; the following equation applies
+to the stated component, not a fictitious completed ledger.
+If the actual task does not require this binary output, the redundant
+flag is not thereby a mandatory or optimal D_min execution. A task-
+equivalent direct read of the retained tape may omit it; compare the
+actual complete prices, including W_obs, on the same native task.
+
+Embed the true birth and terminal state at checkpoint0 with the
+same scene marginal as in Section14. With tau_obs defined from (93),
+tilde Gamma_obs the fine terminal restriction, and Omega_full,obs
+the COMPLETE actual initial state, the SAME Gibbs/Info identity is
+\[
+ \begin{split}
+ \beta S_{\rm obs}+\ell(P_n+W_{\rm obs})
+   ={}&\beta J_{\rm obs}+\ell(C_n+W_{\rm obs})
+       +S(\Omega_{\rm full,obs})\\
+     &+D(\widetilde\Gamma_{\rm obs}\Vert\tau_{\rm obs}),
+ \qquad S_{\rm obs}=H_{\rm obs}+J_{\rm obs}+R_{\rm birth}.
+                                                               \tag{94}
+ \end{split}
+\]
+The comparison flag is initially pure; borrowed state is not silently
+reset. As in (82), use the full joint state if scene and work are
+correlated. The equality of birth and terminal Rayleigh values uses
+the actual common scene marginal and the stage0 block, not a free
+replacement of birth state. A preparation that fails these hypotheses
+retains its real energy and entropy differences. Differentiating
+(94) includes every actual W_obs, initial, operator, clock/cut and
+modular row. No cancellation of W_obs from the physical price, and
+no adjustment of Info to fit Einstein, follows from this identity.
+
+The all-blank return estimate (84) now applies to J_obs with its
+DERIVED coefficient kappa_obs=66d_R, on this actual readout. The
+complete heat uses (93) and the real N_obs. Thus the hypothetical
+exponential protected-bank obstruction is absent here; the real
+gain/lift/refinement bound and additional W_obs source still have
+to be supplied. The known port residual (79), Rayleigh term and
+the original full physical residual R retain their different types.
+
+### 15.5 Memory and delay are eliminations inside the same closed evolution
+
+The complete state keeps its traces. If one nevertheless describes
+only a declared active event sector, its apparent memory is obtained
+by eliminating the complementary sector of that SAME evolution.
+For the actual work/flag monodromy write
+A=P cal U P, B_a=P cal U Q, C_a=Q cal U P, D_a=Q cal U Q.
+For x_k=P psi_k and y_k=Q psi_k the exact finite block iteration gives
+\[
+ x_{k+1}=A x_k+
+   \sum_{j=0}^{k-1}B_aD_a^{\,k-1-j}C_a x_j+
+   B_aD_a^k y_0,\qquad
+ F_{\rm obs}=C_a^\dagger C_a,\quad A^\dagger A+F_{\rm obs}=P.
+                                                               \tag{95}
+\]
+This is the application of the existing
+[Book06 active/archive elimination](../../01_BOOKS/BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md#068f-phenomenological-time-as-the-feshbach-schur-archive-circulation-delay).
+It follows by substituting
+y_k=D_a^k y_0+sum_(j<k)D_a^(k-1-j)C_a x_j into the first block
+equation. The initial complementary state y_0 is retained, not
+an independently chosen history source. For the actual flag0 birth
+it is zero because of that physical preparation.
+
+The return kernel is A+s B_a(I-sD_a)^-1 C_a, with every power of
+D_a an internal excursion. For |s|<1 the series converges since
+||D_a||<=1; at s=1 no spectral gap or convergence is inferred.
+The existing FeshbachSchurTimeDelayOwner Lean module certifies its
+stated FINITE path-grammar tick identity on the 3/30 carrier; it
+does not formalize the entire analytic resolvent or supply its
+convergence on this different flag carrier. We apply the block
+elimination here without relabelling that narrower owner as a
+general analytic theorem. The iteration label is not an external
+physical clock supply: (88) supplies the actual internal stages.
+
+The future quotient, the internal clock, (90)'s physical trace and
+(95)'s effective memory now belong to ONE closed finite apparatus.
+If two complete states have the same all-future profile, there is
+no separately testable order datum left to recover. If they differ,
+a retained physical distinction and an admitted internal readout
+suffice; another primitive history comparator is unnecessary.
+
+### 15.6 Decisive native comparison: zero is a completed outcome
+
+The actual parent application now has a decisive test, not an
+unspecified wish to identify two projectors.
+[Book06 Section06.3](../../01_BOOKS/BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md#063-evolution-cannot-precede-registration)
+requires completed registration before an update, independently of
+the VALUE registered. The owned reversible register sends
+(false,false) to (false,false) on the zero label: that label is
+a valid recorded outcome, not proof that no registration occurred.
+FiniteProtocolClock.completed_stage and stage_does_not_record_arm
+put both outcomes at the SAME completed controller stage. Use that
+terminal stage BEFORE the cyclic wrap; the cyclic head alone is not
+an absolute record of elapsed cycles.
+
+This is already decisive on the original regular symbol chart.
+Write Delta=A^dagger A and assume its actual 0<Delta<I regime.
+Since B=I-2p^2 Delta and 1-2p^2=p^3,
+\[
+ p^3I<B<I,\qquad
+ 0<\operatorname{Tr}(\Omega B^{2n})<1,\qquad
+ \Pr(\hbox{completed registration})=1.              \tag{96}
+\]
+Here Omega is any normalized actual DATA/oldRIGHT state and n>=1.
+The middle probability is EXACTLY the all-zero fine history of
+(74), and every branch of that word has completed the same n
+registrations. Thus E distinguishes zero from nonzero completed
+records, not completed from uncompleted execution. Neither E nor
+its flag0 before/after test can be identified with native active
+eligibility merely by calling it readiness.
+
+The original retained/readout P_N in Book01 and the bootstrap
+Section03.25 of Book03 do not provide that identification.
+Book03 Section03.26 has its own declared detector-clock block
+U_phi=[[sqrt(p)I,-pI],[pI,sqrt(p)I]], giving F_N=p^2P_N on
+P_N=diag(I,0); it is not a proof that the full field-dependent
+Julia/readout equals this block or equals (89). The separate
+RawZone symbol Q=P-R is not the whole-system I-P_N.
+These existing owners must be transported with their actual
+domains, not merged by their letter names.
+
+The existing preparation-inclusive Boolean Book weld already keeps
+these roles distinct: its cut is
+P=|0><0|_port tensor |0><0|_comp tensor
+I_address,READY,factory,archive, whereas READY success appears
+INSIDE F_query. Its complete prepared effect is
+F_full=V_pre^dagger F_query V_pre; see the
+[existing Boolean/clock synthesis, Section4 equation11a](A4D_ORIGINAL_BOOK_BOOLEAN_TRACE_CLOCK_AND_GLOBAL_EINSTEIN_2026_10_22.md#the-preparation-itself-can-be-included-in-the-same-book-word).
+Consume that map with its actual all-input ranks, factory and source;
+neither E nor a freely chosen protected bank is a substitute for it.
+
+The internal flag construction therefore remains a positive
+RETURN-OBSERVER realization, but E=[registration completed], or its
+prepared flag0 equivalent, is EXCLUDED by (96). Completion is a
+necessary prerequisite for update, not by itself a proof that every
+completed branch belongs to every task's active/readout sector.
+A further native task may select a proper subset of completed
+records; that additional constraint still requires proof. The next
+parent application must therefore retain the actual internal
+registration-presence/controller distinction, including completed
+ZERO outcomes, and its physical access/price, together with that
+genuine selective-readout constraint. A value-zero tape or freely
+reset flag cannot replace the completion trace. No new fundamental
+comparison is needed to read a physically retained distinction.
+
+### 15.7 What this substitutes, and the remaining physical application
+
+This removes the false requirement of detector history-invariance,
+and gives a concrete internal event-to-cut-to-F-to-J-to-heat-to-Info
+map on the supplied full128 execution. Both directions, true scene/
+RIGHT dimensions, real clock and genuine added work survive.
+It is a composition application, not a new task, selector, CORE
+promotion or second geometry research programme.
+
+The remaining native premise is NOT an external history object.
+It is the actual M1/task/continuation constraint that admits and
+selects the joint interactions, physical readout/event and complete
+initial resources, and fixes their full Cost-Info/work on the SAME
+closed execution and reachable field image. A supplied closed
+compiler is not this selection law. Selecting the entire invariant
+cyclic reachable subspace as P would instead make F=0; choosing a
+cut merely to force a desired source would not resolve the premise.
+
+The next comparison must therefore use the native internal constraint
+and its complete source in (94), with the actual coframe/link/matter
+writer, metric/clock descent and refinement. Once that substitution
+is proved, the already-owned exact nonvacuum solutions and global
+Einstein-rigidity/J2 consumers apply at their stated hypotheses.
+Neither closedness alone, the flag example, nor a conditional
+source identity establishes full D0-to-GR, positive_gr or raw216.
