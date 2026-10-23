@@ -5623,3 +5623,83 @@ construction. Repository, work, agent-protocol, assembly-contract,
 generated-work-view and diff guards passed. The checkpoint assembly
 template was consumed. No heavy registered proof was replayed; the
 Section8, prior Section9.3 and runtime Section13.1 proof bytes are retained.
+
+
+## 23 October open-field whole-Book source composition and generated-prefix elimination
+
+Phase: native realization and composition, under the existing
+constitutive/native-programme-v1 owner. Input head 7af2df34.
+Primary artifact remains
+02_REGISTRY/research/A4D_PAID_MOMENT_FIELD_WRITER_2026_10_21.md,
+new Section10. The original Book/global parent receives only its
+application pointer in Section9.1. No new task, owner, checker,
+scientific acceptance or shared workflow entry is created.
+
+Exact parent substitution: Section9 supplied the all-forward raw
+coherent return-query word, actual complete cyclic clock heat,
+fixed initialized/transported cuts and primary42 source. The owned
+original weak-query theorem already had an off-null Palatini/CAR
+source estimate, but its application to this complete Book word
+and the all-chart report construction were missing. Section10
+now implements the ORIGINAL positive click (not a desired action)
+by binomial coordinate coins and a complete positive coefficient
+table on the existing generated moment chart. Exact inverse and
+Cayley decoding replace the old primary-only P5/C8 surrogate.
+For genuine fixed PF data the exact coefficients are in Q(p);
+a supplied more general smooth density map has the explicit
+coefficient-rounding derivative error instead.
+
+The full source identity uses the ACTUAL positive field-dependent
+gain Gamma_h=j'(gamma_h Q_h)*gamma_h*a0*tau_h/Omega.
+It is covector normalization, not differentiating J/Gamma_h or a
+guessed action identity. Equation(41) retains the original
+weak-query/density remainder, true coordinate norm, polynomial
+C1 error divided by tau, native finite secant truncation and
+complete all-column inverse-word error divided by actual gain.
+The uniform gamma/alpha bound(42) supplies the noncircular order:
+logical degree/table, stencil, final common field catalogue,
+then inverse power. No uniform readiness or runtime bound is used.
+
+Every generated full-column prefix and derived stage cut also
+has an explicit exact constrained adjoint for the ACTUAL whole
+Book word. The heat term uses its full Gibbs matrix, including
+all stages/work/zero modes; paired0+1 does not double its derivative.
+Every admitted control and independent initial/cut reaction
+remains. Generated-state elimination does not solve a genuinely
+free apparatus equation or create a continuous native field map.
+
+Remaining application: prove the actual Query_O/active-cut/task
+and field-variation binding, retain the true additional physical
+stack and independent apparatus rows, and establish stationary
+refinement with the existing geometric source consumer in the SAME
+norm. Equation(37) requires tau_h*T_h->0; rough independent link
+arrays do not inherit it. Moving Omega has a different leading
+covector. The original one-shot Fisher scaling is not inherited.
+Neither native physical selection nor GR_closed/raw216 is promoted.
+
+Smallest decisive checks: explicit original-event Hessian bound
+M_r=2e-5, exact full-density Taylor identity, binomial first
+difference/C1 construction, gain-normalized norm triangle and
+full cyclic-clock cotangent. A bounded inline diagnostic built
+five ORIGINAL Golden/CX gates on four real coordinates, all 20
+clock modes and every transported cut. Whole clock/corner prices
+agreed within 4.45e-16; all five true control derivatives matched
+the adjoint within 3.90e-10; a relative-cut derivative matched
+within 2.06e-11. Its auxiliary continuous perturbations test the
+matrix derivative, not native physical actuation. No new
+certificate file or expected result is introduced.
+
+Independent native_valuation_map, native_continuation_map and
+universal_parent_map accepted the actual FINAL Section10
+heading-to-EOF slice: 17,963 UTF-8 bytes, SHA-256
+6d45d57eab92b0492b9fb6e81fe3932de1b5dbb23ec6ac7819a17865ce7de22e.
+Review corrected the field-catalogue/stencil ordering and clarified
+that the comparison may uncompute fresh ACTIVE copies but never
+an archived record. The Section9 pin remains its historical
+15,523-byte slice at published head 7af2df34, unchanged before this append.
+
+Final repository, work, agent-protocol, assembly-contract, generated-work-view
+and diff guards passed. The existing checkpoint template was consumed
+without registering an acceptance or changing scientific status.
+No heavy registered proof was replayed. Prior Section9 proof bytes
+remain exactly at their published pin.

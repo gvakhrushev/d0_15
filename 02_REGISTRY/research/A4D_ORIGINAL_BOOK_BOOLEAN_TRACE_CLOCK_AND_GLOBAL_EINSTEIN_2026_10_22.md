@@ -783,6 +783,22 @@ The constructed clock/cuts, native stationarity and any additional
 physical stack/source must still be selected on the same execution;
 they are not supplied by the compiler alone.
 
+
+**Open-field source application (23 October).**
+[Paid writer Section10](A4D_PAID_MOMENT_FIELD_WRITER_2026_10_21.md#10-open-chart-weak-query-consumption-by-the-complete-native-book-word)
+now consumes the ORIGINAL weak-query click on a regular open coframe,
+proper-link and material chart. A positive native moment report uses
+exact inverse/Cayley decoding; its whole Book source, divided by the
+derived actual nonzero gain, approaches the original Palatini/CAR source
+with the explicit physical-norm error (41), including moving normalized
+density. Its complete generated-prefix equations have the explicit
+all-mode heat-plus-feedback adjoint (43)-(44). This removes the
+primary-two-jet restriction of that source comparison. It does not prove
+a selected continuous field actuator or stationary refining sequence.
+The equal-count control in Section10.6 shows why the REQUIRED terminal
+predicate/active cut still needs its native task binding; ordered
+registration alone does not provide it.
+
 ### 9.2 The ordinary complete Book trace localizes too, with its true heat weight
 
 For actual block-diagonal \(\Delta=\bigoplus_h\Delta_h\) and

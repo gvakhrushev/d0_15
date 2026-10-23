@@ -915,3 +915,382 @@ identified with this constructed one. The primary nonvacuum family and
 conditional Golden universality consumers retain their original scope.
 No new action principle, Info table, selector axiom, acceptance row,
 physical GR closure or raw216 claim is introduced.
+
+
+## 10. Open-chart weak-query consumption by the complete native Book word
+
+23 October 2026. Input 7af2df34. This composes Section9 with the
+[original weak-query source owner](A4D_NATIVE_GOLDEN_MINIMAL_QUERY_C2_OFFNULL_PALATINI_FISHER_CRITICAL4_2026_10_22.md#2-explicit-universal-off-null-source-and-hessian-convergence-including-true-moving-pf).
+It removes the PRIMARY-TWO-JET restriction from the declared Book-source
+comparison. The report below approximates the already specified native
+click, rather than encoding Einstein equations or assigning Info.
+It is still an application on the addressed generated-moment interface.
+It does not make its smooth comparison polynomial a selected physical
+actuator, prove finite stationary roots, or select the clock/cuts.
+
+### 10.1 The original click and its full off-null source
+
+Use the original sigma-minus event with p=phi^-1 and zeta=2^-20:
+\[
+ E=p^2(1+x),\quad l=4E(1-E),\quad
+ b=p-p^2y,\quad B=4b^2(1-b^2),\quad
+ A=l+(1-l)B,\quad r(x,y)=\zeta(A+B)-\zeta^2AB.
+ \tag{34}
+\]
+Let r0=r(0,0), a0=r_x(0,0)>0 and
+lambda_-=r_y(0,0)/a0, the original fixed ratio. No coefficient is
+retuned. Set tau_h=p^{ceil(2 log_phi L)}, h=1/L. This is the owned
+native-number-valued weak-query schedule, not a physical optimality
+or metric Golden-rescaling law.
+
+On a finite slab let w_s=(f_s,q_s) be the ORIGINAL six-face
+Palatini/star and two-real-CAR operands decoded by (3)-(5), with
+EXACT inverse and Cayley maps, not P5 or C8. The coframe volume is
+already inside f_s. Let mu_s>0 be the actual fixed quadrature and
+rho_s>0 the actual normalized AF/PF density, with
+Omega=sum_s mu_s rho_s constant. Fixed genuine PF data are included.
+If density moves, its actual map and derivatives are retained;
+this paragraph does not invent a new density variable or a paid
+density writer. Consider the existing normalized native click
+\[
+ R_h(Y)=\Omega^{-1}\sum_s\mu_s\rho_s(Y)
+ r\left(\tau_h f_s(Y)/\rho_s(Y),\tau_h q_s(Y)/\rho_s(Y)\right).
+ \tag{35}
+\]
+It is the marginal of a tag with its genuine weights mu_s rho_s/Omega
+and the original conditional event. The compiler below realizes this
+whole positive probability; it does not keep integer tags fixed while
+pretending their weights follow a moving rho. If total mass is an
+independently variable quantity, the fixed-Omega statements below
+do not apply to that direction. In fact a moving Omega leaves the
+leading normalized covector D I_h-(I_h/Omega)D Omega.
+
+Put I_h=sum_s mu_s(f_s+lambda_- q_s) and
+E_PC,h=D I_h. On the owned |x|,|y|<=0.01 box choose any proved finite
+M_r>=sup ||D^2 r||. One explicit choice is M_r=2*10^-5:
+on this box 0<E,b<1, 0<=l,B,A<=1, p^2<2/5 and zeta<10^-6.
+The derivative bounds |l_x|<=8/5, |l_xx|<=32/25,
+|B_y|<=16/5, |B_yy|<=32/5 imply the Hessian absolute row-sum
+bound ||D^2r||_2<=(448/25)zeta+(1088/25)zeta^2<2*10^-5.
+Direct differentiation, including every density leg,
+gives for a genuine tangent V
+\[
+ DR_h[V]=\Omega^{-1}\sum_s\mu_s\left[
+ \tau_h\nabla r(z_s)\cdot Dw_s[V]
+ +(r(z_s)-z_s\cdot\nabla r(z_s))D\rho_s[V]\right],
+ \quad z_s=\tau_h w_s/\rho_s.                         \tag{36}
+\]
+The constant r0 contribution cancels ONLY by
+sum mu_s D rho_s=0. No flat term is subtracted from Book.
+Taylor's formula and the Hessian bound give
+\[
+ \left\|{\Omega\over a_0\tau_h}DR_h-E_{\rm PC,h}\right\|_{V_h^*}
+ \le {M_r\tau_h\over a_0}\,T_h,\quad
+ T_h=\sup_{\|V\|_{V_h}\le1}
+ \sum_s\mu_s\left[
+ {\|w_s\|\|Dw_s[V]\|\over\rho_s}
+ +{\|w_s\|^2|D\rho_s[V]|\over2\rho_s^2}\right].
+ \tag{37}
+\]
+This is the same elementary full-density calculation as the owned
+Cost-minus-measured-Info theorem, applied to its ORIGINAL event r.
+No equality between that measured scalar and Book is used.
+
+The estimate concerns an open regular field chart with the displayed
+operand and tangent norms. It covers every coframe/link/material
+coordinate admitted by that norm. Uniformly bounded T_h gives O(h^2);
+on a different mesh family the actual condition is tau_h T_h ->0.
+Arbitrary rough link arrays do not satisfy this bound automatically.
+No raw216 uniformity or generic geometric continuum theorem is added.
+
+### 10.2 A positive native report on the whole regular chart
+
+At each fixed h choose a compact affine Q(p) coordinate box
+u=(u_1,...,u_D) in [0,1]^D, strictly inside the nondegenerate
+coframe-inverse/Cayley/material domain and the above weak-query box.
+Its decoded native coordinates and normalized density map, if moving,
+must be the actual specified maps. On such a box R_h is smooth.
+After shrinking the box or taking small enough tau_h, its range lies
+in [b_h,q_max] for b_h>0 and q_max<1/2; the original r0 is positive.
+These are local chart bounds, not a floor added to an event.
+
+For integer degree d prepare d genuinely fresh generated coordinate
+kind-coins of probability u_j for every j. Their value is selected
+by the same field key as the original moment resource. An affine
+Q(p) recoding of the finite row table supplies these coordinate coins
+and the original coordinate moments together. They are generated
+states, not independently given real-amplitude inputs. Retain all
+their kind registers and raw factory flags.
+
+For every multi-index i in {0,...,d}^D choose a rational
+q_i in (0,1/2) with |q_i-R_h(i/d)|<=epsilon_d. Prepare ALL coefficient
+rows by the owned common-prefix/acceptance factory before selecting
+a live row. Exact rational rows are allowed by that heralded factory;
+this is not a claim that a bounded unheralded Golden Bernoulli tree
+has a noninteger rational event probability. Its real fair/raw
+factory and row-acceptance flags all belong to READY.
+
+Reversible Boolean counters form the binomial counts i_j; the fixed
+selector routes coefficient row i to the report bit. Expand every
+gate, keep all failures and defer all readings exactly as Section9.
+All unused original material/reference resources and OLD RIGHT
+remain present. On the ALL-READY event the report is exactly
+\[
+ Q_{h,d}(u)=
+ \sum_{i\in\{0,\ldots,d\}^D}q_i
+ \prod_{j=1}^D {d\choose i_j}u_j^{i_j}(1-u_j)^{d-i_j}.
+ \tag{38}
+\]
+It is a positive Bernstein probability, bounded by the coefficient
+range. The complete all-row catalogue includes every centre and
+stencil used at this resolution, so its actual gamma_h>0, primitive
+counts, work and prefix price are the same for those alternatives.
+Dimension and duration may be enormous; no efficient or optimal
+implementation is asserted.
+
+For completeness, the derivative in coordinate j is the Bernstein
+average, with degree d-1 in j, of
+d[R_h((i+e_j)/d)-R_h(i/d)]. The integral mean-value formula and uniform
+continuity of DR_h therefore prove C1 convergence to DR_h. Coefficient
+rounding changes the value by at most epsilon_d and any coordinate
+derivative by at most 2d epsilon_d. Choose
+\[
+ e_{1,h}:=\max_j\|\partial_j(Q_{h,d}-R_h)\|_\infty
+\]
+as small as required by taking d large and then epsilon_d small.
+For the fixed genuine PF chart, all exact nodal coefficients are
+already in Q(p): matrix inversion, Cayley decoding, the native
+six-face/matter operands and (34) preserve that field at Q(p)
+coordinate nodes. The owned Q(p) row factory can therefore supply
+those nodes exactly. The rational approximation above also covers
+a more general specified smooth density map.
+
+Higher finite differences likewise bound the three derivatives
+needed below; one may choose epsilon_d=o(d^-3).
+Thus the exact inverse/Cayley functions are approximated on the
+whole chart. No claim that the old P5/C8 equals them off-primary
+survives in this continuation.
+
+This realizes the *probability* (35) to controlled first-source
+accuracy on the copied, generated-moment sector. It does not
+identify the full unknown-input original CAR channel or any
+adaptive measured factory tape with this new coherent word.
+The smooth polynomial in (38) is specified by the actual finite
+binomial circuit. Native selection of its continuous field
+variations is still a separate physical obligation.
+
+### 10.3 Exact whole-Book source factorization before the real-word error
+
+Use this new forward word V in the SAME Section9 controlled middle,
+all-column positive-power inverse and complete primitive clock.
+The ideal comparison and its ACTUAL forward probability now obey
+\[
+ x_h(u)=\gamma_h Q_{h,d}(u),\qquad
+ j_h(x)=-d_h\log[1-\zeta\alpha_K x(1-x)].
+\]
+All work dimensions, ranks and clocks are those of this catalogue.
+For q_max<1/2, alpha_K>0 and gamma_h>0 imply
+\[
+ \Gamma_h(u)=j_h'(\gamma_h Q_{h,d}(u))\,
+                {\gamma_h a_0\tau_h\over\Omega}>0,\qquad
+ {D\,j_h(\gamma_h Q_{h,d})\over\Gamma_h(u)}
+       ={\Omega\over a_0\tau_h}\,D Q_{h,d}.            \tag{39}
+\]
+This is the actual chain rule for the Book scalar, not differentiation
+of Gamma_h times a guessed gravitational action. There is no omitted
+I_h D Gamma_h term. The gain can depend on the field and become tiny.
+The complete clock heat of the reference word is field constant
+at this SAME catalogue and duration by Section9.
+
+Let c_h:Y->u be the actual inverse coordinate map and
+L_h=sup ||D c_h||_{V_h -> l1}. Pulling (39) back and using (37) gives
+\[
+ \left\|{\mathcal F_{\rm Book,ideal,h}\over\Gamma_h}
+                  -E_{\rm PC,h}\right\|_{V_h^*}
+ \le {M_r\tau_h\over a_0}T_h
+             +{\Omega L_h\over a_0\tau_h}e_{1,h}.     \tag{40}
+\]
+This is an OPEN off-null full-field source statement. It no longer
+depends on a common-null cancellation or on one primary two-jet.
+It asserts a source comparison, not finite equality of actions,
+Hessians, stationary roots or microscopic transition channels.
+
+### 10.4 Actual paid words: the full norm and ordered limits
+
+For centre/stencil native keys in the same catalogue use the actual
+complete Book values, not an interpolated price substituted as
+dynamics. Denote their central differences by q_delta^B and let
+M_3,B,h bound the pure coordinate third derivatives of
+j_h(gamma_h Q_{h,d}) on the stencil collar. Section9 supplies
+epsilon_word=(n_G,h+2m)eta_n and
+C_B,h=1+2d_h zeta/(1-zeta). The entire genuine heat/feedback secant,
+after the coordinate pullback, obeys
+\[
+ \left\|{\,(D c_h)^*q_\delta^B\over\Gamma_h(u)}
+                      -E_{\rm PC,h}\right\|_{V_h^*}
+ \le {M_r\tau_h\over a_0}T_h
+ +{\Omega L_h\over a_0\tau_h}e_{1,h}
+ +{L_h\over\Gamma_h(u)}
+       \left[{M_{3,B,h}\delta^2\over6}
+                         +{C_{B,h}\epsilon_{\rm word}\over\delta}\right].
+ \tag{41}
+\]
+Exact Q(p) centres/stencils avoid rounding. Otherwise add the actual
+inherited value/coordinate error with its source normalization.
+
+There is no hidden uniform-readiness assumption. With L1,L2,L3 from
+(33), and M_k,Q bounds for pure coordinate derivatives of Q_{h,d},
+the SAME chain-rule bound yields
+\[
+ {M_{3,B,h}\over\inf\Gamma_h}
+ \le {\Omega\over a_0\tau_h(1-2q_{\max})}
+ [L_1 M_{3,Q}+3L_2 M_{1,Q}M_{2,Q}+L_3 M_{1,Q}^3].
+ \tag{42}
+\]
+It is uniform in gamma_h and alpha_K, even if either tends to zero.
+All true mesh/coordinate/degree dependence remains on the right.
+
+The limits have a constructive order. First choose the native tau_h
+and regular field/tangent class with tau_h T_h->0. Then choose d and
+coefficient accuracy so Omega L_h e_1,h/(a0 tau_h)->0. Fix the logical degree and coefficient table. Use the
+catalogue-independent bound (42) to choose a contained Q(p) stencil
+delta making the normalized truncation term tend to zero. THEN
+build the common field-centre/stencil catalogue and obtain its
+actual gamma_h, alpha_K, gain and counts. Finally choose the positive
+inverse power n so its complete word error divided by Gamma_h
+delta/L_h tends to zero. Each choice is finite and can
+be made simultaneously for the finite catalogue. Fixed-stage heat
+offsets are paid and cancel only between these equal-duration
+alternatives. No extra clock modes, failed branches, or rank
+multiplicities are deleted.
+
+Together (40)-(42) remove the missing *open-chart query/source
+application* of the original weak-query theorem to a true declared
+whole Book word. Where the owned original Palatini/CAR geometric
+source itself has a regular continuum limit in this same norm,
+this word's normalized source has that limit. Without that
+geometric bound, (41) is the conclusion. In particular these
+estimates do not produce a native continuous actuator or an exact
+stationary refining sequence. The old exact finite primary roots
+and their different source prices retain their original scope.
+
+
+### 10.5 Every generated prefix row has an explicit whole-Book adjoint
+
+This is a same-word causal elimination, not a new free-apparatus
+stationarity premise. Write the ACTUAL positive primitive word
+T_0=I, T_{t+1}=g_t T_t, U=T_N, and impose its generated cuts
+P_t=T_t P_0 T_t^dagger. Here T_t are full-column unitaries, not only
+the successful branch vectors. The complete connection shift is
+unitarily gauge-equivalent to
+\[
+ S(U)=\sum_{t=0}^{N-2}|t+1\rangle\langle t|\otimes I
+             +|0\rangle\langle N-1|\otimes U,\quad
+ \Delta_{\rm can}=I-(S+S^\dagger)/2 .
+\]
+All interior feedback blocks vanish and the wrap block has
+A=P_0 U P_0 and
+Q=(1-zeta)I_{P_0}+zeta A^dagger A. Thus the exact reduced scalar is
+H_N(U)-log det Q, including every stage and all work columns.
+
+Use ordinary unnormalized Hilbert--Schmidt traces and define
+E(B)=|0><N-1| tensor B, so E*(X)=X_{0,N-1}. With
+rho_th=exp(-beta Delta_can)/Tr exp(-beta Delta_can), the actual
+terminal cotangent, in the convention DB=2 Re Tr(K^dagger delta U),
+is
+\[
+ K={1\over2}E^*(\rho_{\rm th})-\zeta A Q^{-1}.
+ \tag{43}
+\]
+The second term is embedded on ran P_0. Indeed
+DH=-Tr(rho_th delta Delta)=Re Tr(rho_th E(delta U));
+and DJ=-2zeta Re Tr(Q^{-1}A^dagger delta A). No zero modes or
+clock occupation terms have been dropped. A paired 0+1 Hodge
+doubles both heat trace and numerator, leaving this heat derivative
+unchanged.
+
+Set Lambda_N=K and Lambda_t=g_t^dagger Lambda_{t+1}. The constrained
+functional
+\[
+ B(T_N)+2\operatorname{Re}\sum_{t=0}^{N-1}
+ \operatorname{Tr}\Lambda_{t+1}^\dagger(g_tT_t-T_{t+1})
+\]
+has zero derivative in EVERY generated interior T_t at that
+explicit adjoint. The physical source on any genuinely admitted
+control variation is consequently
+\[
+ DB=2\operatorname{Re}\sum_t
+ \operatorname{Tr}\Lambda_{t+1}^\dagger(\delta g_t)T_t.
+ \tag{44}
+\]
+Generated coordinate coins, factory flags, clocks and prefixes
+therefore need no independently vanishing preparation Euler row.
+They remain in (43)-(44); a nonfixed initial prefix would also
+retain 2 Re Tr(Lambda_0^dagger delta T_0). The initial T0 and blank-input boundary
+are fixed by this declared experiment. This does not freeze an
+independently selectable input, observer or gate.
+
+For example, an independently admitted relative cut motion
+P0(s)=exp(sX)P0 exp(-sX), X^dagger=-X, would add the TRUE boundary
+reaction
+\[
+ DJ_{\rm cut}=-2\zeta\operatorname{Re}
+ \operatorname{Tr}Q^{-1}A^\dagger P_0[U,X]P_0.          \tag{45}
+\]
+It cannot be discarded if that physical variation is free.
+Simultaneous transport of every apparatus/clock/cut cancels by
+representation covariance, as it must. Which independent boundary
+motions D0 admits is not inferred from the existence of the
+generated prefix adjoint.
+
+### 10.6 The actual selector frontier is the terminal predicate
+
+The result above is not a new argument that ordered registration
+or Book stationarity compels this report. The scope can be checked
+on the SAME hardware family. Keep V_k, its full field writer,
+the same initial blank, all material/OLD RIGHT and all raw buffers,
+but use Pi_0=READY without the report-bit condition. Its probability
+is gamma_h, independent of k. The SAME middle-word construction
+gives nonzero F_0=alpha_{K0}gamma_h(1-gamma_h)P0 and field-independent
+complete reference heat. Thus every ideal Book field secant is
+zero despite nontrivial feedback and actual field writing. The
+real positive-power words retain the corresponding value/word
+error bounds.
+
+There is even an equal-count Book-only control. Reserve one common
+paid fresh ACTIVE blank a, and keep the SAME Pi=READY AND b=1, K,m,M.
+After V_k use either two consecutive CX(b,a), which cancel, or
+chronologically CX(b,a) then CX(a,b). The latter maps
+|b,0_a> to |0_b,b_a>: at that forward stage the report is
+coherently in a.
+Both forward words have two additional CX; their reversed words
+also have two. They therefore have identical total primitive
+counts and clock length. Their reference monodromies are conjugate
+to the SAME M, so their ENTIRE cyclic heat agrees. The first has
+J_+>0; the second has F_0=0 and J_0=0. A common sufficiently accurate
+positive-power inverse preserves this strict Book-only comparison,
+since B_+-B_0>=J_+-2C_B epsilon_word>0. All previous OLD RIGHT stays
+untouched. The complete inverse may uncompute these fresh ACTIVE
+copies; no already archived record is erased.
+
+This does not assert equal complete physical Info/work or that
+both words satisfy a physically anchored terminal-report task.
+It proves that these facts, or the actual required terminal
+predicate, cannot be replaced by nontrivial registration and
+field reachability alone. The named static-to-dynamics owner
+selects ordered rather than commuting registration, not Pi rather
+than Pi_0 or the exact geometry report. Its theorem
+[StaticToDynamicsOwner](../../03_FORMALIZATION/D0/Evolution/StaticToDynamicsOwner.lean)
+and the
+[registration-policy selector](../../03_FORMALIZATION/D0/Evolution/JYNoncommutativeOrderObstruction.lean)
+are reused at their actual types.
+
+The remaining physical substitution is now specific: identify the
+same-execution required Query_O/active cut and the admitted field
+controls in Book03's finite stationary space, retain every additional
+real stack term, and establish stationary refinement with the actual
+norm. Equations (37)-(44) supply the candidate's complete source and
+generated-state elimination once that map applies. They do not
+supply this selection, the missing independent apparatus equations,
+or a physical GR acceptance. No first-shot Fisher/runtime scaling
+or original adaptive-tape equivalence is inherited.
