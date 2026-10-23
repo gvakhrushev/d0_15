@@ -5459,3 +5459,58 @@ selection certificate. Repository/work/agent/assembly-contract and
 generated-work-view guards pass; prior expensive proofs were not replayed.
 The inherited assembly-render suffix is unchanged. No lifecycle,
 Book, claim, CORE or scientific acceptance status is promoted.
+
+
+## 23 October actual same-prefix all-field continuation application
+
+Input 356b15c3. Phase: native realization / final composition in existing
+#334, constitutive/native-programme-v1. The actual paid moment writer
+Section8 supplies the finite continuation map needed by original
+Book/global consumer (23), using its already owned comparator/CSWAP
+palette and complete16+24+2 dictionary. No independent execution or
+new compiler/certificate is registered.
+
+From one paid READY/old-code prefix, two controlled bundle-swap orders
+select the positive/negative complete field stencil while retaining
+every displaced row and purifier. Their identical primitive inventory
+does not alone equate early-abort prices. For one common readiness and
+actual charge schedule over all coordinates, the existing entire-catalogue
+multiplexer and equal-inventory later key are used. All zero-control
+slots and factory failures are paid. Original oldRIGHT is protected.
+
+The complete measured-CQ finite source is transported to the original
+primary covector with actual signed gain
+Gamma=pi_prefix gamma_remaining g_h and actual decoder norm L_h.
+The bound is L_h[M3,h delta^2/6+E_h 2^-m/delta]/|g_h|, with the rounding
+term absent for exact Q(p) nodes. No C1 finite-word selector, finite
+exact stationary point, mesh-uniform gap or off-primary polynomial
+equivalence is claimed. The proof removes a finite control-map
+construction premise within the OWNED interface, not its physical
+admission or the whole constitutive/source premise.
+
+Write paths: existing paid-writer Section8, original Book/global
+Section9.1 application pointer, this brief. Smallest decisive check:
+the complete controlled bundle permutations, the full CQ entropy-chain
+identity with the real prefix probability, and the existing all-field
+dictionary/source secant bounds. The original initialized-work Book
+contrast remains zero. Physical full Book P/Delta/Info/work/stage-clock
+binding and genuine independent upstream equations remain open.
+
+
+Checkpoint review and validation: final Section8, raw heading through EOF,
+8,872 bytes, SHA-256
+`0ce6a74439535b776ecc4ea46e64a8b78d2bf1c8671ce7973cd9a655d4537a0e`,
+was independently accepted by native_continuation_map after hostile
+price/access review. native_valuation_map and universal_parent_map
+accepted the source/control/norm derivation before the final additional
+early-abort qualification; no formula changed in that qualification.
+A bounded diagnostic verified all 128 complete controlled permutation
+columns over four-valued bundle labels. A separate dimension16 CAR
+resource/purifier instance retained both purifiers, had norm error
+3.34e-16, and gave the intended active contrasts plus/minus
+0.3819660112501049. These checks are not a physical GR certificate.
+The assembly template was consumed at this checkpoint. Repository,
+work-plane, agent-protocol, assembly-contract and generated-work-view
+guards passed; diff whitespace passed. No expensive registered proof
+was replayed, no expected evidence was rewritten, and no acceptance,
+lifecycle, CORE or physical-GR status is promoted.

@@ -753,6 +753,22 @@ map, and removes the stronger demand to assign a new conditional value to
 the entire action first. It does not derive saddle stationarity from
 minimum-description selection.
 
+
+
+**Concrete application now supplied (23 October).**
+[Paid moment writer Section8](A4D_PAID_MOMENT_FIELD_WRITER_2026_10_21.md#8-actual-post-prefix-all-field-variations-in-the-whole-paid-execution)
+constructs this finite continuation map on its existing addressed
+interface: explicit bundle-swap word orders and the fixed all-row paid
+multiplexer with a later equal-inventory key replace the complete
+coframe/link/matter resource stencil after one fixed registered prefix.
+It applies (23) to the actual full42-per-site dictionary, retains the
+gain pi_eta gamma_tail g_h and the decoder norm, and supplies the
+whole-CQ secant-to-Euler estimate. Generated bank outputs are not
+introduced as independently variable preparations. This discharges
+the finite variation-construction application on that interface; the
+same full Book valuation/cut source and physical interface admission
+remain required. The initialized-cut zero-source result is preserved.
+
 ### 9.2 The ordinary complete Book trace localizes too, with its true heat weight
 
 For actual block-diagonal \(\Delta=\bigoplus_h\Delta_h\) and
