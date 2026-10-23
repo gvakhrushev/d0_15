@@ -6541,3 +6541,51 @@ Changed exact native-table matrix controls and final work/protocol/
 assembly/work-view/repository/diff guards passed; checkpoint template
 consumed. No heavy research/Lean replay, new gate assumption hidden as
 a theorem, physics acceptance, retirement or GR promotion is asserted.
+
+
+## 23 October checkpoint: actual record-resolved state cut and native Book rank-birth boundary
+
+Phase: native realization and final composition, same #334 owner,
+constitutive/native-programme-v1; no new task or lifecycle transition.
+Checkpoint artifact: paid-writer Section21, consumed by original-Book
+parent9.1. Published input6f2493a1ec03270df9c4057eb6157503b894e2c4;
+original128 formula blobee8de4635d24c668949ac9a0186616ab7d59f2ed.
+
+Exact substitution: actual coherent state plus retained fine predicates
+now determines the least COMMUTANT-support cut151 and complete branch
+escape152. The pure e0/product-reference application supplies whole
+feedback153 and fixed-support source154 on the stated full-U event,
+SEVEN serialCX, idle clock. The original flat R1=0/root jet gives TWO
+actual vector births156, hence exact Delta J>=8r_S[-ln(1-z)]>0.
+No output-price fit, third history primitive, fresh purification,
+physical dephasing or rank census is used. This rejects automatic
+flat-smooth Book selection by that internal minimum-support rule.
+
+Carrier/source convention: originalDATA16, all128App and128bank modes,
+actual pure spectator ray with its entire ambient oldRIGHT retained,
+full stage clock and actual fixed scene-cut rankr_S. Ordinary Book
+trace; no probability weighting or extra N factor. General branch
+archive supports may have any actual rank; pure conditional branches
+have rankone. Actual heat is Section13.3's FULL33-scene connection
+Laplacian, P-independent, not the separate cut-incidence heat.
+
+Remaining assumptions: (150) is the declared record/parity-even context;
+the owned regular-chart future-algebra theorem is not promoted to a
+flat minimal-algebra theorem. U128 is one supplied event-stage, not a
+new primitive-admission proof. A finer native compilation changes the
+intermediate cuts. Equality of151 with compulsory Book P_N, actual
+admitted field domain, all independent sources/rank-sensitive stack
+terms and the same full Einstein/refinement transport remain open.
+Positive nonvacuum and all42 consumers retain their original scope.
+GR_closed=false; no acceptance, retirement or Ready transition.
+
+Independent native_continuation_map, native_valuation_map and
+universal_parent_map reviewed the exact Section21 analytical slice.
+Final heading-to-EOF:11,276 UTF-8 bytes; SHA256
+ ec72e1c1a58199dc5349a7237c7edbc9d1e67271c0c32aa8f186b49800159924.
+The review corrected the heat wording to the actual P-independent
+connection Laplacian and retained the fixed-context/event-clock scope.
+All212,868 previously published paid-writer bytes remain unchanged.
+Changed exact CAR/Sylvester/state/parity/blank check:11 controls pass.
+Final structural guards and diff checks are recorded at publication;
+no heavy mathematics/Lean replay or physical GR closure is asserted.

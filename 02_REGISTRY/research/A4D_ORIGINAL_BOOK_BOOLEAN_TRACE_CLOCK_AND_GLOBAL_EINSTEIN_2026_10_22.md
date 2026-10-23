@@ -1016,6 +1016,38 @@ equations. For the direct Book03 route, a justified configuration/tangent
 map into X_N can suffice; do not universally demand a same-initial writer
 that only the prospective-minimum route needs.
 
+
+The [record-resolved actual-state application, paid-writer Section21](A4D_PAID_MOMENT_FIELD_WRITER_2026_10_21.md#21-complete-internal-records-determine-a-state-orbit-cut-but-native-outcome-birth-prevents-its-automatic-smooth-book-selection)
+now supplies the missing explicit cut map for a declared internal context:
+P_t is the sum of the actual branch archive supports times their DATA
+parity blocks, derived on the COHERENT state using readable diagonal
+records. No dephasing or third history primitive is executed. The map
+retains every support/field jet; unconditional three-tick faithfulness
+does not imply faithful fine branches.
+
+For actual pure DATA e0/product-reference input and the stated full-U,
+seven-serial-CX, idle clock, its WHOLE feedback is exactly
+J=r_S[-Tr_even log(I-z D_dark)+8(m-1)c_z], c_z=-log(1-z),
+where m counts bright actual fine branches and D_dark is their exact
+complementary Kraus effect. Copy-stage escape vanishes, and the wrap
+is the genuine projection P_L-P0; there is no extra period multiplier.
+The original flat boost has K2=K3=0 but BOTH exact state-vector jets
+are nonzero. Hence m_near>=m_flat+2 and Delta J>=8r_S c_z>0,
+without another detector census. The specified Section13.3 full33-scene
+connection heat is continuous; the separate cut-incidence heat is not
+silently identified with it.
+
+This removes the automatic 'least internal record support => flat-smooth
+native Book cut' application. The maximal even context at flat is an
+explicit continuation test, and one U event is the stated stage alphabet;
+a different native context or finer compiler needs its actual blocks.
+Finite fixed-tariff Born means/CQ entropy cannot erase this finite jump;
+unknown genuine rank-sensitive stack terms are not classified. The
+physical selected P_N/configuration/field-domain map remains necessary.
+Neither the positive all42/nonvacuum family nor the Einstein consumer is
+promoted or discarded. This is the exact remaining application, not a
+new instruction palette or an Info counterterm.
+
 ### 9.2 The ordinary complete Book trace localizes too, with its true heat weight
 
 For actual block-diagonal \(\Delta=\bigoplus_h\Delta_h\) and

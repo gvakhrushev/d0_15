@@ -4252,3 +4252,240 @@ actual admissible X_N and tangent inclusion can suffice; a continuously
 executable field writer is not a universal additional prerequisite.
 Neither route may admit arbitrary matrix tangents or replace its actual
 constraints by the desired Einstein equation. Physical GR remains open.
+
+
+## 21. Complete internal records determine a state-orbit cut, but native outcome birth prevents its automatic smooth Book selection
+
+This is an application of Sections17 and19 to ONE closed execution,
+not a new interaction, third comparison primitive, or physical GR claim.
+It supplies the previously uncomputed record-resolved actual-state cut
+and its complete feedback on the stated clock. Its exact native birth
+witness rules out the shortcut that this least internal support is
+therefore automatically a flat-smooth Book03 configuration.
+
+Inputs: the original128 Kraus formulas in
+[same-source native()](sources/d0_book_uniform_source_2026-10-21/check_uniform_book_source.py),
+Git blob ee8de4635d24c668949ac9a0186616ab7d59f2ed at
+6f2493a1ec03270df9c4057eb6157503b894e2c4; the original parity and
+actual-state orbit maps(105)-(113); the copied full event and whole
+stage-clock construction of19.2. All unused DATA/oldRIGHT/App/bank,
+scene and clock modes remain in the original full heat trace.
+
+### 21.1 Resolve the ACTUAL retained record without physically dephasing it
+
+Let the actual complete pure state have its already registered record
+labels omega and its remaining quantum archive R:
+
+\[
+ \psi_t=\sum_\omega\psi_{\omega,t}\otimes|\omega\rangle,
+ \qquad
+ \mathcal A_t=\mathcal A_{\rm even}(D)\otimes
+                 \operatorname{Diag}(\omega)\otimes I_R.
+                                                               \tag{150}
+\]
+
+The diagonal predicates are ordinary internal readouts of those same
+records. This is an observable algebra, not a new physical pinching,
+coherent control palette, or reachable-state axiom. On the regular
+fixture Section17 identifies the DATA algebra for its specified future
+instrument. Keeping this maximal parity-even algebra at the flat birth
+point below is an EXPLICIT fixed-context continuation test; that
+identification at flat is not supplied by the regular-chart theorem.
+
+Let S_(omega,pi) be the support in R of the parity-pi component of the
+actual branch vector. The least projection in A_t' carrying psi_t is
+
+\[
+ \boxed{P_t=\sum_{\omega,\pi}
+ P_\pi\otimes|\omega\rangle\langle\omega|
+                    \otimes S_{\omega,\pi}.}                    \tag{151}
+\]
+
+Indeed the actual diagonal predicates isolate each branch, and the
+matrix units of End(H_pi) generate precisely H_pi tensor ran S_omega,pi.
+This proves the block formula on the COHERENT whole state; no conditional
+cut has been assumed to be a block of Section17's smaller DATA-only
+algebra. Nor is (151) the least support IN A_t. Both distinctions matter.
+A general conditional archive rank remains its true r_(omega,pi), not8.
+
+For a parity-homogeneous actual Kraus K_alpha, the next archive supports
+satisfy S_(omega alpha,tau_alpha pi)<=S_(omega,pi). Thus the completed-event
+escape on this branch, before any stage-clock identification, is exactly
+
+\[
+ \boxed{F_{\omega,\pi}=\sum_\alpha
+ K_{\alpha,\pi}^\dagger K_{\alpha,\pi}\otimes
+ (S_{\omega,\pi}-S_{\omega\alpha,\tau_\alpha\pi}).}   \tag{152}
+\]
+
+This is the source-bearing map, not a probability normalization rule.
+The supports are computed from the actual branch vectors. Their moving
+jets must be kept on fixed-rank charts. Singular Kraus maps can remove
+archive directions, so recording alone does not force (152) to vanish.
+Conversely three-tick unconditional DATA faithfulness does not make every
+resolved branch faithful. With a pure DATA input and product reference,
+each nonzero definite-parity branch has conditional archive rank one,
+however long the genuinely retained history.
+
+### 21.2 Apply the cut at EVERY stage of the same declared copied event
+
+Use the original declared stage alphabet: one full U128 event, its
+SEVEN serial App-to-bank CXs, then the final idle wrap. This is the
+nine-stage instance of19.2. It does not assert that U128 has been
+physically compiled into one more elementary Golden/Julia operation.
+If U is resolved into additional nontrivial native gates, their actual
+state-orbit cuts and determinant blocks must be recomputed.
+
+Take the actual initial DATA vector e0, an arbitrary fixed pure
+spectator reference zeta_R, and the specified preloaded App/bank blanks.
+This does not add a new purification or erase any previous record.
+For this application all App AND bank diagonal predicates belong to
+(150) at every stage, including before copying. Put
+
+\[
+ \mathscr B(y)=\{\alpha:K_\alpha(y)e_0\ne0\},\quad
+ m(y)=|\mathscr B(y)|,\quad c_z=-\log(1-z)>0.
+\]
+
+Each bright branch has definite parity and its orbit is the whole
+corresponding EIGHT-dimensional DATA parity block. This8 follows from
+the actual pure branch vector, NOT from rank K_alpha or a faithful
+DATA purification. Before U, the orbit is H_even on the actual blanks.
+After U it is the orthogonal sum of these m bright parity blocks.
+Every CX is a permutation normalizing the FULL diagonal App/bank algebra;
+hence P_(t+1)=CX P_t CX^dagger and its feedback escape is zero.
+No fresh record is traced out or physically dephased.
+
+Let P=direct_sum_t P_t on the actual stage clock, Q=I-P, and let T be
+its full cyclic shift with those U/CX/idle blocks. Tensor this cut with
+its stated fixed scene projection P_S, rank r_S>=1; r_S=33 for the
+whole scene. Keep all scene modes in the heat either way. Since the
+blank B=K0 is even and B e0!=0, P0<=P_L on the same physical fibre.
+The ACTUAL idle wrap therefore has F_wrap=P_L-P0. Its rank is
+8 r_S(m-1); it does not reset the world to its initial state.
+
+Block multiplication of P T^dagger(I-P)TP gives the whole feedback:
+
+\[
+ \boxed{\begin{aligned}
+ D_{\rm dark}(y)&=\sum_{\alpha\notin\mathscr B(y)}
+       P_+K_\alpha(y)^\dagger K_\alpha(y)P_+,
+       \quad0\le D_{\rm dark}\le I_{H_+},\\
+ J_{\rm rec,cyc}(y)&=r_S\left\{
+   -\operatorname{Tr}_{H_+}\log(I-zD_{\rm dark}(y))
+                 +8[m(y)-1]c_z\right\},\\
+ 0&\le J_U(y):=-\operatorname{Tr}_{H_+}
+                        \log(I-zD_{\rm dark}(y))\le8c_z.
+ \end{aligned}}                                                \tag{153}
+\]
+
+Only the U stage and actual wrap contribute. There is NO extra stage
+multiplier, independent oldRIGHT128 coefficient or probability weight
+in this ordinary Book trace. Whole heat is still the full33-mode
+scene/clock heat of the original fixed finite carrier, not a heat
+compressed to (151). Additional genuinely existing idle slots contribute
+zero escape; a different nontrivial compiler is outside this identity.
+
+Thus the complete feedback and its fixed-support field source are
+explicit. On a support-stable chart the rank term is constant and
+
+\[
+ DJ_{\rm rec,cyc}
+   =r_S z\operatorname{Tr}_{H_+}
+               [(I-zD_{\rm dark})^{-1}DD_{\rm dark}].            \tag{154}
+\]
+
+The dark set is fixed ONLY on that chart; (154) is not a derivative
+through native outcome birth. This actual-state cut differs from both
+the unconditioned coherent cut(108) and the all-INPUT pointer hull of19.3.
+
+### 21.3 An ORIGINAL zero-to-nonzero branch gives an exact finite Book jump
+
+Keep nu=3/5 and original phases(i,i,-1,-i); vary the original proper
+boost theta in native(). Let g=c0 c1^dagger+c1 c0^dagger with the actual
+CAR creator order(0,2,3,1). Write R1 for the zero-Walsh-label Julia-ROOT
+row, not the signed row A=R0. At theta=0,
+
+\[
+ R_1(0)=0,\qquad DR_1(0)=-g/80,\qquad A(0)^2=9I/640.
+                                                               \tag{155}
+\]
+
+Here R1=(1/16)sum_r(left_r+right_r-left0_r-right0_r). Only r1 moves.
+The left-root derivative vanishes because c1 g c1^dagger=0.
+For s=sqrt(1-nu^2)=4/5, the right-root Sylvester equation gives
+DR_right=-nu^2 g/(1+s)=-g/5. Dividing by16 proves(155).
+The same original odd row gives
+
+\[
+ A(0)e_0={3\over80}
+ [(i-1)(e_1+e_2)-2e_4+(-i-1)e_8].
+\]
+
+Consequently the actual DISTINCT fine port twins alpha2,alpha3 obey
+
+\[
+ \boxed{\begin{aligned}
+ K_2(0)=K_3(0)&=0,\\
+ DK_2(0)e_0&={3p^2(i-1)\over3200}(e_1+e_2)\ne0,\\
+ DK_3(0)e_0&={3p\sqrt p(i-1)\over3200}(e_1+e_2)\ne0.
+ \end{aligned}}                                                \tag{156}
+\]
+
+Both output vectors are odd. These are actual STATE-vector jets, not
+an inference from a nonzero operator derivative. Analyticity gives two
+new bright labels for all sufficiently small nonzero theta. Every
+label bright at0 remains bright nearby. Therefore m(theta)>=m(0)+2.
+The blank is nonzero since B(0)=(1-9p^2/320)I>0. Equations(153) give
+WITHOUT a census of the other126 labels
+
+\[
+ \boxed{J_{\rm rec,cyc}(\theta)-J_{\rm rec,cyc}(0)
+          \ge8r_Sc_z>0\qquad(0<|\theta|<\epsilon).}             \tag{157}
+\]
+
+The lower bound uses only 0<=J_U<=8c_z; possible simultaneous births
+or a different dark-U source cannot invalidate it. New outcomes have
+probabilities O(theta^2), yet the smallest record-resolved cyclic cut
+adds a whole8-dimensional block per nonzero branch. Indeed its operator
+norm distance from its value at0 is one. No normalization of rare
+histories was physically executed to produce this discontinuity.
+
+The original full heat is continuous here: all dimensions, actual
+stage count, beta and z are fixed. The ACTUAL Section13.3 full33-scene
+connection Laplacian L_N=I-B_S tensor I-C_S tensor(T+T^dagger)
+is independent of this cut and continuous in T(theta). It is NOT the
+separate cut-incidence heat, which could inherit a jump in P. Thus B=H+J
+application with THIS cut is discontinuous at the native flat point.
+A bounded fixed-tariff mean price and finite-dimensional CQ/Shannon
+entropy are continuous and cannot cancel a finite jump. Other genuinely
+selected rank-dependent stack terms are not classified or assumed zero.
+No derivative is asserted at the jump.
+
+### 21.4 Exact parent substitution and the surviving physical question
+
+The previously missing combination 'actual coherent state + readable
+fine memory + least future-context support + real event/copy/wrap clock'
+now has the explicit maps(151)-(154), with no third history primitive,
+free archive, all-input completion or fitted Info. Its native witness
+(155)-(157) removes the proposed automatic application to the flat-smooth
+Golden Einstein-rigidity hypothesis: this least-support rule need not
+even supply a continuous master action on that same field family.
+
+This is a scoped route change. It does not prove that M1 selects (150),
+that the maximal even context is the minimal flat future algebra, that
+these cyclic vectors are reachable physical preparations, or that Book03
+must use this P. A smaller actual flat algebra cannot create support on
+an identically zero record branch; the norm-discontinuity mechanism
+persists if the neighboring context contains the displayed even orbit.
+The exact scalar jump(157), however, is proved for the STATED fixed even
+context and declared U/CX clock. Do not transport it to another context
+or a finer compiled clock without its complete blocks and multiplicity.
+
+The positive all42/nonvacuum family and the global Einstein consumers
+remain intact at their own hypotheses. Their unresolved application is
+an ACTUAL selected Book configuration/cut/source with appropriate regularity,
+or its proved physically paid transport. Neither smallest internal
+support nor observational completeness by itself supplies that law.
+This result adds no task, selector, physical acceptance, retirement or
+GR promotion; GR_closed=false.
