@@ -102,10 +102,66 @@ def module_source_path(module_name: str | None) -> str | None:
     return None
 
 
-def lean_collector(names: list[str], import_root: str) -> str:
+def lean_collector(names: list[str], import_root: str, resolution_only: bool = False) -> str:
     if not re.fullmatch(r"[A-Za-z_][A-Za-z0-9_']*(?:\.[A-Za-z_][A-Za-z0-9_']*)*", import_root):
         raise ValueError(f"invalid Lean import root: {import_root!r}")
     targets = ",\n    ".join(name_expr(name) for name in names)
+    if resolution_only:
+        declaration_lines = [
+            "        let owner ← findModuleOf? target",
+            "        pure <| Json.mkObj [",
+            '          ("name", toJson target.toString),',
+            '          ("exists", toJson true),',
+            '          ("module", toJson (owner.map Name.toString))',
+            "        ]",
+        ]
+    else:
+        declaration_lines = [
+            "        let typeText ← liftTermElabM do",
+            "          let fmt ← PrettyPrinter.ppExpr info.type",
+            "          pure fmt.pretty",
+            "        let (binders, conclusionWhnf) ← liftTermElabM <| forallTelescope info.type fun xs target => do",
+            "          let binders ← xs.mapM fun fvar => do",
+            "            let localDecl ← getFVarLocalDecl fvar",
+            "            let binderTypeExpr ← withTransparency .default (whnf localDecl.type)",
+            "            let binderType ← PrettyPrinter.ppExpr binderTypeExpr",
+            "            let isProposition ← Meta.isProp localDecl.type",
+            "            pure <| Json.mkObj [",
+            '              ("name", toJson localDecl.userName.toString),',
+            '              ("binder_info", toJson (reprStr (LocalDecl.binderInfoEx localDecl))),',
+            '              ("type", toJson binderType.pretty),',
+            '              ("is_proposition", toJson isProposition)',
+            "            ]",
+            "          let targetExpr ← withTransparency .default (whnf target)",
+            "          let targetFormat ← PrettyPrinter.ppExpr targetExpr",
+            "          pure (binders, targetFormat.pretty)",
+            "        let typeDependencies := info.type.getUsedConstantsAsSet.toList.map Name.toString",
+            "        let proofDependencies := match info.value? (allowOpaque := true) with",
+            "          | none => []",
+            "          | some value => value.getUsedConstantsAsSet.toList.map Name.toString",
+            "        let owner ← findModuleOf? target",
+            "        let ranges ← findDeclarationRanges? target",
+            "        let axioms ← collectAxioms target",
+            "        let rangeJson := match ranges with",
+            "          | none => Json.null",
+            "          | some rs => Json.mkObj [",
+            '              ("declaration", d0RangeJson rs.range),',
+            '              ("selection", d0RangeJson rs.selectionRange)',
+            "            ]",
+            "        pure <| Json.mkObj [",
+            '          ("name", toJson target.toString),',
+            '          ("exists", toJson true),',
+            '          ("elaborated_type", toJson typeText),',
+            '          ("binders", toJson binders),',
+            '          ("conclusion_whnf", toJson conclusionWhnf),',
+            '          ("type_dependencies", toJson typeDependencies),',
+            '          ("proof_dependencies", toJson proofDependencies),',
+            '          ("axioms", toJson (axioms.toList.map Name.toString)),',
+            '          ("module", toJson (owner.map Name.toString)),',
+            '          ("declaration_ranges", rangeJson)',
+            "        ]",
+        ]
+    declaration_payload = "\n".join(declaration_lines)
     return f'''import Lean
 import {import_root}
 
@@ -130,59 +186,17 @@ run_cmd do
           ("name", toJson target.toString), ("exists", toJson false)
         ]
       | some info => do
-        let typeText ← liftTermElabM do
-          let fmt ← PrettyPrinter.ppExpr info.type
-          pure fmt.pretty
-        let (binders, conclusionWhnf) ← liftTermElabM <| forallTelescope info.type fun xs target => do
-          let binders ← xs.mapM fun fvar => do
-            let localDecl ← getFVarLocalDecl fvar
-            let binderTypeExpr ← withTransparency .default (whnf localDecl.type)
-            let binderType ← PrettyPrinter.ppExpr binderTypeExpr
-            let isProposition ← Meta.isProp localDecl.type
-            pure <| Json.mkObj [
-              ("name", toJson localDecl.userName.toString),
-              ("binder_info", toJson (reprStr (LocalDecl.binderInfoEx localDecl))),
-              ("type", toJson binderType.pretty),
-              ("is_proposition", toJson isProposition)
-            ]
-          let targetExpr ← withTransparency .default (whnf target)
-          let targetFormat ← PrettyPrinter.ppExpr targetExpr
-          pure (binders, targetFormat.pretty)
-        let typeDependencies := info.type.getUsedConstantsAsSet.toList.map Name.toString
-        let proofDependencies := match info.value? (allowOpaque := true) with
-          | none => []
-          | some value => value.getUsedConstantsAsSet.toList.map Name.toString
-        let owner ← findModuleOf? target
-        let ranges ← findDeclarationRanges? target
-        let axioms ← collectAxioms target
-        let rangeJson := match ranges with
-          | none => Json.null
-          | some rs => Json.mkObj [
-              ("declaration", d0RangeJson rs.range),
-              ("selection", d0RangeJson rs.selectionRange)
-            ]
-        pure <| Json.mkObj [
-          ("name", toJson target.toString),
-          ("exists", toJson true),
-          ("elaborated_type", toJson typeText),
-          ("binders", toJson binders),
-          ("conclusion_whnf", toJson conclusionWhnf),
-          ("type_dependencies", toJson typeDependencies),
-          ("proof_dependencies", toJson proofDependencies),
-          ("axioms", toJson (axioms.toList.map Name.toString)),
-          ("module", toJson (owner.map Name.toString)),
-          ("declaration_ranges", rangeJson)
-        ]
+{declaration_payload}
     liftIO <| IO.println s!"{PREFIX}{{payload.compress}}"
 '''
 
 
-def run_inventory(names: list[str], import_root: str) -> tuple[list[dict[str, Any]], str, str]:
+def run_inventory(names: list[str], import_root: str, resolution_only: bool = False) -> tuple[list[dict[str, Any]], str, str]:
     if not names:
         raise ValueError("no declaration names were requested")
     with tempfile.TemporaryDirectory(prefix="d0-lean-inventory-") as directory:
         script = pathlib.Path(directory) / "Collect.lean"
-        script_text = lean_collector(names, import_root)
+        script_text = lean_collector(names, import_root, resolution_only)
         script_bytes = script_text.encode("utf-8")
         script_sha256 = hashlib.sha256(script_bytes).hexdigest()
         script.write_bytes(script_bytes)
@@ -242,6 +256,8 @@ def main() -> int:
     select.add_argument("--claim-id", help="resolve theorem-name candidates for one claims.csv row")
     select.add_argument("--all-claims", action="store_true",
                         help="resolve all theorem-name candidates in claims.csv")
+    parser.add_argument("--resolution-only", action="store_true",
+                        help="return exact availability and owner module without signatures or proof dependencies")
     parser.add_argument("--output", type=pathlib.Path, help="write JSON to this path; default is stdout")
     parser.add_argument("--import-root", default="D0.All", help="compiled public Lean import (default: D0.All)")
     args = parser.parse_args()
@@ -254,7 +270,7 @@ def main() -> int:
         mapping, names = claim_requests(args.claim_id)
     else:
         mapping, names = all_claim_requests()
-    rows, collector_sha256, lean_source_digest = run_inventory(names, args.import_root)
+    rows, collector_sha256, lean_source_digest = run_inventory(names, args.import_root, args.resolution_only)
     for row in rows:
         row["source_path"] = module_source_path(row.get("module"))
     output = {
@@ -266,6 +282,7 @@ def main() -> int:
         "collector_sha256": collector_sha256,
         "toolchain": (FORMAL / "lean-toolchain").read_text(encoding="utf-8").strip(),
         "public_import_root": args.import_root,
+        "resolution_only": args.resolution_only,
         "request": mapping,
         "declarations": rows,
     }

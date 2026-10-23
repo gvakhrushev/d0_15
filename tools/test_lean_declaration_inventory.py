@@ -62,6 +62,15 @@ class DeclarationInventoryTests(unittest.TestCase):
         self.assertIn("is_proposition", script)
         self.assertIn(inventory.PREFIX, script)
 
+    def test_resolution_only_collector_skips_signature_and_proof_traversal(self):
+        script = inventory.lean_collector(["D0.Foundation.VerificationCore.verification_core"],
+                                          "D0.All", resolution_only=True)
+        self.assertIn("env.find? target", script)
+        self.assertIn('("module", toJson (owner.map Name.toString))', script)
+        self.assertNotIn("PrettyPrinter.ppExpr info.type", script)
+        self.assertNotIn("proofDependencies", script)
+        self.assertNotIn("collectAxioms target", script)
+
     def test_import_root_rejects_lean_source_injection(self):
         with self.assertRaises(ValueError):
             inventory.lean_collector([], "D0.All\n#eval IO.println 1")
