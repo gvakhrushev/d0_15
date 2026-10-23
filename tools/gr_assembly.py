@@ -909,6 +909,7 @@ def next_actions(model: dict, prs: list[dict] | None) -> list[dict]:
                 "head_sha": (pr.get("head") or {}).get("sha"),
                 "base_branch": (pr.get("base") or {}).get("ref"),
                 "base_sha": (pr.get("base") or {}).get("sha"),
+                "mergeable_state": pr.get("mergeable_state") or "unknown",
             })
         if len(live) > 1:
             stacked = stacked_pr_chain(live)
@@ -1072,8 +1073,18 @@ def next_actions(model: dict, prs: list[dict] | None) -> list[dict]:
                     })
                     continue
             lifecycle = metadata(p.get("body") or "", "Lifecycle")
-            action = "resume" if p["draft"] and lifecycle == ["IN_PROGRESS"] else "resolve-blocker" if p["draft"] and lifecycle == ["BLOCKED"] else "review" if not p["draft"] and lifecycle == ["REVIEW"] else "reconcile-lifecycle"
-            reasons = [f"existing #{p['number']}"]
+            merge_state = p.get("mergeable_state")
+            if merge_state in {"dirty", "behind"}:
+                action = "reconcile-pr-base"
+                reasons = [f"existing #{p['number']}",
+                           f"GitHub reports mergeable_state={merge_state}; update the PR against its base before resuming"]
+            elif merge_state not in {"blocked", "clean", "dirty", "behind", "unstable"}:
+                action = "verify-pr-merge-state"
+                reasons = [f"existing #{p['number']}",
+                           "GitHub merge state is unavailable or unknown; refresh it before resuming"]
+            else:
+                action = "resume" if p["draft"] and lifecycle == ["IN_PROGRESS"] else "resolve-blocker" if p["draft"] and lifecycle == ["BLOCKED"] else "review" if not p["draft"] and lifecycle == ["REVIEW"] else "reconcile-lifecycle"
+                reasons = [f"existing #{p['number']}"]
             if reconciled_source_forks:
                 reasons.append("exact source-fork comparison still matches its pinned PR heads and child set; "
                                "child evidence remains result-only and unaccepted by the parent")
@@ -1107,8 +1118,9 @@ def next_actions(model: dict, prs: list[dict] | None) -> list[dict]:
             row["reconciled_source_forks"] = reconciled_source_forks
         actions.append(row)
     priority = {"resolve-overlap": 0, "reconcile-stacked-source": 0, "reconcile-source-fork": 0,
-                "review": 1, "resolve-blocker": 2,
-                "resume": 3, "eligible-for-control": 4}
+                "reconcile-pr-base": 1, "verify-pr-merge-state": 1,
+                "review": 2, "resolve-blocker": 3,
+                "resume": 4, "eligible-for-control": 5}
     return sorted(actions, key=lambda a: (priority.get(a["action"], 4), -a["newly_ready_if_proved"], a["task"]))
 
 
@@ -1148,14 +1160,18 @@ def ready_obligations(model: dict, actions: list[dict]) -> list[dict]:
         next_step = "register-or-reopen-through-control"
         if proposed:
             next_step = "independent-scoped-review"
+        elif "resolve-overlap" in task_actions:
+            next_step = "resolve-overlap-through-control"
+        elif "reconcile-pr-base" in task_actions:
+            next_step = "update-pr-base-before-resuming"
+        elif "verify-pr-merge-state" in task_actions:
+            next_step = "refresh-live-pr-merge-state"
         elif any(item.get("reconciled_source_forks") for item in bindings):
             next_step = "resume-parent-after-source-fork-comparison"
         elif "reconcile-stacked-source" in task_actions:
             next_step = "reconcile-stacked-source-through-control"
         elif "reconcile-source-fork" in task_actions:
             next_step = "reconcile-source-fork-through-control"
-        elif "resolve-overlap" in task_actions:
-            next_step = "resolve-overlap-through-control"
         elif "review" in task_actions:
             next_step = "review-registered-pr"
         elif "resume" in task_actions:
@@ -1446,9 +1462,13 @@ def main(argv=None) -> int:
         elif args.command == "dag":
             print(diagram(model)); return 0
         elif args.command == "next":
-            from task_dispatch import commit_path_blobs, open_prs
+            from task_dispatch import commit_path_blobs, open_prs, refresh_merge_state
             prs = None if args.offline else open_prs(args.repo_root)
             if prs is not None:
+                task_ids = set(model["contract"]["task_bindings"])
+                for pr in prs:
+                    if any(task_id in task_ids for task_id in metadata(pr.get("body") or "", "Task")):
+                        refresh_merge_state(args.repo_root, pr)
                 prepare_source_fork_path_snapshots(model, prs, args.repo_root, commit_path_blobs)
             actions = next_actions(model, prs)
             data = {"live_verified": prs is not None, "actions": actions,
