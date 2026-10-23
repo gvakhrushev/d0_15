@@ -557,7 +557,7 @@ For full technical specifications, advanced mathematical integrations, and Lean 
 
 - **Tracked Queue/Control Tasks**: CONTROL: 1, EXPENSIVE: 3, WORKER: 1 (Total: 5)
 - **Runtime Execution**: see open GitHub pull requests; PR number = execution ID
-- **WIP Utilization**: CONTROL: 1/2, EXPENSIVE: 0/3, WORKER: 0/10
+- **WIP Utilization**: CONTROL: 1/2, EXPENSIVE: 0/3, WORKER: 1/10
 - **Legacy Scaffolds Remaining**: 0
 - **Detailed Status Report**: [00_WORK/STATUS.md](00_WORK/STATUS.md)
 <!-- D0-WORK-STATUS:END -->
@@ -569,3 +569,4 @@ Repository: https://github.com/gvakhrushev/d0_15
 Registry:   02_REGISTRY/claims.csv
 Contact:    g.vakhrushev1993@gmail.com
 ```
+
