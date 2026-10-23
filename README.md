@@ -569,4 +569,3 @@ Repository: https://github.com/gvakhrushev/d0_15
 Registry:   02_REGISTRY/claims.csv
 Contact:    g.vakhrushev1993@gmail.com
 ```
-
