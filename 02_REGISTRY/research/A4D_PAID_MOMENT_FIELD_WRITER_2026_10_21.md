@@ -1294,3 +1294,196 @@ generated-state elimination once that map applies. They do not
 supply this selection, the missing independent apparatus equations,
 or a physical GR acceptance. No first-shot Fisher/runtime scaling
 or original adaptive-tape equivalence is inherited.
+
+
+## 11. Applying the native metric and task rules to this source compiler
+
+23 October 2026. Input 2b904204. Sections9-10 remain positive source
+and execution results. This section tests the missing PHYSICAL
+application on that very word family. It rules out three proposed
+substitutions: using its canonical clock/site Dirac as the varying
+coframe metric; admitting every matrix tangent as a field control;
+and replacing a free future-field task by verification of a fixed
+old report. It does not prove a no-go for another spatial/path
+Dirac, an actually derived native constraint, or D0 as a whole.
+No new selection principle or universal prerequisite is introduced.
+
+### 11.1 Exact physical-site seminorm of the actual primitive clock
+
+Fix ONE common site-address representation on the complete work
+space W, a(f)=diag_x(f(x)) tensor I_other, with every other reference,
+code, meter and archive factor present. For a raw word g_0,...,g_{N-1}
+let its canonical first-order connection be
+\[
+ (d_g\psi)_t={\psi_{t+1}-g_t\psi_t\over\sqrt2},
+ \qquad t\ {\rm mod}\ N,\qquad
+ D_g=\begin{pmatrix}0&d_g^\dagger\\d_g&0\end{pmatrix}.
+ \tag{46}
+\]
+This is the natural first-order realization of the ACTUAL heat
+operator used above: d_g^dagger d_g=I-(S_g+S_g^dagger)/2. Represent
+the same physical site observable on both cochain degrees by
+pi_site(f)=I_stage tensor a(f). Then, exactly,
+\[
+ ([d_g,\pi_{\rm site}(f)]\psi)_t
+       ={[a(f),g_t]\psi_t\over\sqrt2},\qquad
+ \|[D_g,\pi_{\rm site}(f)]\|
+       ={1\over\sqrt2}\max_t\|[a(f),g_t]\| .
+ \tag{47}
+\]
+The first identity follows because a(f) is the same at adjacent
+stages. The resulting map is block diagonal from stage-t zero
+cochains to stage-t one cochains. Its norm is the maximum block
+norm; the two adjoint Dirac blocks have that same norm. This
+proof uses every work column and does not invoke isospectrality
+alone.
+
+Thus this site's entire Lipschitz seminorm depends only on the
+addressed primitive inventory, not its order or repetition.
+In the actual Sections9-10 family each field-code bit swaps the
+same two addressed CX gates (1). The complete all-row selection,
+raw factories, reference preparation and middle word are fixed.
+Reversing and replacing every inverse G by the SAME positive
+G^n preserves this common inventory. Consequently (47) agrees
+EXACTLY between all keys in a common catalogue, including the
+ACTUAL positive-power words, not just their ideal comparisons.
+No approximation or small-readiness argument is needed here.
+
+For point evaluation states omega_x(f)=f(x), the associated
+Connes distances
+\[
+ d_g(x,y)=\sup\{|f(x)-f(y)|:\|[D_g,\pi_{\rm site}(f)]\|\le1\}
+ \tag{48}
+\]
+are therefore identical between field keys, finite or infinite.
+This is a conclusion about the specified physical-site algebra,
+not merely the external clock-vertex algebra. V itself generally
+does NOT commute with this algebra: it prepares and mixes site
+labels. That earlier stronger commutation claim would be false;
+the exact proof is (47).
+
+The moment dictionary, however, has genuine coframe variations.
+It contains nearby Q(p) keys E and cE, c>0, c!=1, on a regular
+chart, with the same site labels and fixed calibration s. Their
+decoded metrics obey g_read(cE)=c^2 g_read(E). A nonzero spacelike
+length of the corresponding fixed geometric points scales by c.
+Hence one common calibration/point identification cannot identify
+BOTH of these decoded geometries with (48). Making clock inverse
+or Bernstein errors smaller cannot fix this exact mismatch.
+
+This rejects the identification of THIS clock/site triple with
+the varying coframe geometry. A separate spatial Dirac, a larger
+history/path algebra, different genuinely derived point states,
+or a paid field-dependent representation may behave differently.
+Their operator/observation map must be supplied; they are not
+silently installed by this negative test. The source construction
+and its independent native relational readouts remain valid.
+
+A bounded control uses two actual forward words G_0,CX_01 and
+CX_01,G_0, the same controlled-meter middle and positive G^3
+replacements for every inverse. Their full 120-mode primitive
+clock prices differ, approximately 6.308613599513131 and
+6.082067458574527 (beta=.7,zeta=.17), while the one-bit site
+seminorm is in BOTH cases p/sqrt2=0.4370160244488211 and its
+two-point distance is sqrt2/p=2.288245611270737. Direct full
+commutators and (47) agree. The comparison is a small actual-word
+test of order-sensitive price versus this metric, not a GR
+solution or an accurate inverse-limit source certificate.
+
+### 11.2 A faithful module does not supply the required stationary controls
+
+The literal
+[Book03 section03.26.2](../../01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md#03262-ports-and-interaction-from-the-source-operators)
+and its
+[source-port owner](../../03_FORMALIZATION/D0/Representation/SourcePortPreparation.lean)
+retain physical actuation separately from matrix-algebra membership
+and norm conservation. A statement that any faithful finite module
+may represent the algebra does not admit all its matrix tangents
+as physical controls.
+
+Such an enlargement would in fact destroy this candidate's intended
+stationarity. In the ideal full-word comparison let
+psi=V|0>, x=<psi,Pi psi> in (0,1/2), and set
+\[
+ \xi={(\Pi-x)\psi\over\sqrt{x(1-x)}},\quad
+ Y=|\xi\rangle\langle\psi|-|\psi\rangle\langle\xi|,\quad
+ V_s=e^{sY}V .
+ \tag{49}
+\]
+The vector xi has norm1 and is orthogonal to psi; Y is skew-adjoint
+and gives
+\[
+ {d x_s\over ds}\bigg|_0=2\sqrt{x(1-x)},\qquad
+ {d\mathcal B_s\over ds}\bigg|_0
+       =2j_h'(x)\sqrt{x(1-x)}>0 .                     \tag{50}
+\]
+Indeed U_s=V_s^dagger M V_s has the SAME complete monodromy spectrum
+at fixed clock length, so its whole heat is constant. The relative
+initialized cut gives the stated j_h. This is the exact declared whole-Book differential on that
+full-column comparison. Any additional physical preparation price
+retains its own source in a proposed physical implementation.
+
+Therefore unrestricted orthogonal writer admission is not a proof
+of joint stationarity, even at an encoded Einstein field. The
+direction (49) must be excluded or balanced by an ACTUAL native
+constraint/additional source if it is physically selectable.
+Conversely (49) is not asserted to be a native C1 Golden word
+variation; matrix membership alone was the proposed repair being
+tested. The actual-word value/finite-secant errors of Section10
+keep their scope and do not promote (50) to a theorem about every
+possible physical controller.
+
+### 11.3 Fixing the old query result does not recover free field equations
+
+Let Q_h be the literal implemented comparison polynomial (38) on
+a common regular field chart. Its complete ideal Book scalar is
+H_ref+j_h(gamma_h Q_h). If the supposed task is re-verification
+of one retained old value q_old, its exact constraint is
+C(Y)=Q_h(Y)-q_old=0. Every admitted task tangent then satisfies
+\[
+ DC[V]=DQ_h[V]=0,\qquad
+ D\mathcal B[V]=j_h'(\gamma_hQ_h)\gamma_h DQ_h[V]=0.
+ \tag{51}
+\]
+Thus constrained stationarity is automatic at EVERY regular point
+of that level set, including non-Einstein points. Its multiplier
+is simply -j_h'(gamma_h Q_h)gamma_h. It supplies none of the
+ambient all42 Euler equations. Fixing the complete decoded old
+geometry restricts the field tangent image still further.
+
+A truthful future computation has a different logical type.
+For an independent report-LAW variable r, the correctness constraint
+r-Q_h(Y)=0 allows delta r=DQ_h[V] while leaving future V free.
+Eliminating that generated report gives the nontrivial source
+of Section10, rather than (51). The literal execution already
+proves its computation relation; the missing application is
+whether the native physical task/scene stationarity admits
+precisely these free future fields with all independent rows.
+This distinction cannot be replaced by a prescribed old answer.
+
+The owned
+[NativeContextCoverage](../../03_FORMALIZATION/D0/Foundation/TheoryTransfer.lean)
+transports every specified future experiment and its outcomes;
+its equations do not require executing one particular experiment
+or assert stationarity in these field directions. Its theorem
+transfer also retains the imported regime premises. Those positive
+kernel/transfer results are reused, not reopened. No single
+Bernoulli outcome is equated here with an exact zero-error
+comparison of arbitrary distinct geometry states.
+
+### 11.4 Consequence for the whole argument
+
+The compiled whole-Book source cannot become a physical GR proof
+by any of the three substitutions just tested. Its genuine
+off-null source estimate, actual paid clocks/flags and generated
+adjoint remain available. On this route the next positive
+application must come from the actual native spatial/relational
+geometry and free-future task/control law, with a common map into
+the SAME complete Book valuation. An operator, point/state map
+or independent source that changes in that application must be
+included in its derivative. Another increase of compiler degree,
+inverse power or primary-family precision does not supply it.
+
+This is a scoped route change for the physical interpretation of
+Sections9-10, not a new assumption, closure row, acceptance, audit
+census or claim that no future D0 derivation can succeed.

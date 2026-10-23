@@ -5703,3 +5703,76 @@ and diff guards passed. The existing checkpoint template was consumed
 without registering an acceptance or changing scientific status.
 No heavy registered proof was replayed. Prior Section9 proof bytes
 remain exactly at their published pin.
+
+
+## 23 October native geometry and task application on the actual source compiler
+
+Phase: native realization/composition; same constitutive/native-programme-v1
+owner. Input 2b904204. Primary artifact remains the paid field writer,
+new Section11; existing original Book/global parent receives its
+Section9.1 application pointer. No new task, certificate file, lifecycle,
+CORE/claim edit or scientific acceptance is introduced.
+
+Exact parent premise tested: Sections9-10's positive full Book
+source comparison does not identify the varying decoded coframe
+metric with the native spectral geometry or supply actual stationary
+controls. Section11 now applies THREE proposed substitutions on
+THAT SAME candidate, rather than adding another source compiler.
+
+1. On the specified canonical first-order connection Dirac and SAME
+physical site-address algebra, the COMPLETE operator seminorm equals
+max_t ||[a,g_t]||/sqrt2. It is invariant under addressed primitive
+reordering/repetition. The actual field keys use the same inventory,
+including every positive inverse-power gate. Hence this site metric
+is exactly identical while E and cE decode different spacelike lengths
+at fixed calibration. The attempted clock/site metric identification
+fails; neither a separate spatial/path Dirac nor native relational
+geometry is excluded or made a new universal prerequisite.
+2. Admitting all writer matrix tangents would produce the explicit
+positive source 2j'(x)sqrt[x(1-x)] with constant ENTIRE reference
+clock heat. This excludes that proposed admission shortcut;
+it does not claim the tangent is a physically selectable C1 word.
+Any real extra preparation source/constraint remains.
+3. Constraining the ACTUAL Q_h report law to an old fixed value
+makes its task-tangent Book derivative zero everywhere, including
+non-Einstein fields. The true future-report correctness relation
+has a different tangent type and retains the field source.
+Owned coverage/theory-transfer theorems preserve supplied
+experiments and imported regimes, not compulsory execution
+or stationarity. No kernel owner is reopened.
+
+Carrier/norm/source: the actual complete G/CX word, common
+fixed site representation, all-stage Hodge/Dirac operator norm,
+old initialized/transported feedback cuts; the original dual
+V_h source norms and all positive field-source results remain.
+This is a scoped route change for the native interpretation of
+the candidate, not a no-go for D0 or completed physical GR.
+On this route further compiler/inverse precision is not the
+next application; the actual spatial/relational geometry and
+free-future task/control map must carry the same full price.
+
+Smallest decisive check: analytic all-mode block commutator;
+exact normalized-writer variation; task tangent chain rule.
+A bounded inline original-G/CX control used positive G^3
+for inverse letters and the full 120-mode clock: two equal-count
+words had Book prices 6.308613599513131 and 6.082067458574527
+(beta=.7,zeta=.17), with IDENTICAL site seminorm
+p/sqrt2=.4370160244488211 and distance sqrt2/p=2.288245611270737.
+Direct full commutator and inventory formula agreed exactly
+at displayed precision. G^3 is not claimed an accurate inverse;
+the metric theorem itself is exact for every common inverse
+power and no approximation-limit source claim uses this control.
+
+Independent native_valuation_map, native_continuation_map and
+universal_parent_map accepted FINAL Section11 heading-to-EOF:
+9,291 UTF-8 bytes, SHA-256
+93896b324f69ced149e6f0f40b40d36eacff3f0dbb471f15f668c572693bead2.
+The report-LAW and additional physical preparation-source scopes
+were clarified before final acceptance. The preceding Section10
+17,963-byte proof slice at 2b904204 remains unchanged; its historical
+heading-to-EOF pin is interpreted at that published head.
+
+Final repository, work, agent-protocol, assembly-contract, generated-work-view
+and diff guards passed; the existing checkpoint template was consumed.
+No heavy registered proof was replayed and no scientific acceptance
+was added. Prior Section10 proof bytes remain at the published pin.

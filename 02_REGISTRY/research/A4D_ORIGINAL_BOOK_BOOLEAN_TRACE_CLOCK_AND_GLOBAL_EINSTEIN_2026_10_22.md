@@ -799,6 +799,21 @@ The equal-count control in Section10.6 shows why the REQUIRED terminal
 predicate/active cut still needs its native task binding; ordered
 registration alone does not provide it.
 
+
+**Native metric/task application test (23 October).**
+[Paid writer Section11](A4D_PAID_MOMENT_FIELD_WRITER_2026_10_21.md#11-applying-the-native-metric-and-task-rules-to-this-source-compiler)
+proves that the canonical first-order CLOCK/site Connes metric is
+EXACTLY field-key independent for these actual equal-inventory words.
+That particular triple cannot be identified with the varying decoded
+coframe metric under one common point/calibration map. This does not
+exclude the original spatial/path operator or relational geometry.
+The same section rules out two proposed stationarity substitutions:
+admitting every writer matrix tangent destroys criticality; fixing the
+old report law makes task-constrained criticality vacuous. The positive
+source construction remains, but its physical application now requires
+the actual native geometry/free-future task/control map. More compiler
+precision supplies none of those substitutions.
+
 ### 9.2 The ordinary complete Book trace localizes too, with its true heat weight
 
 For actual block-diagonal \(\Delta=\bigoplus_h\Delta_h\) and
