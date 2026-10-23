@@ -6137,3 +6137,103 @@ generated-work-view, repository and diff guards passed. The existing
 assembly checkpoint template was consumed; no new result acceptance
 or claim/lifecycle promotion was made. The final reviews and receipt
 do not alter the pinned analytical proof inputs.
+
+## 23 October actual cut transport and whole two-event Book application
+
+Input31a0444422660dce7f82bc42518bf045692678f7.
+Phase: native realization / final source composition, same #334,
+constitutive/native-programme-v1. Parent premise: the proposed
+preparation-inclusive Boolean-to-original-full128 active-cut/source
+transport, with the complete absolute physical Book price retained.
+Write paths: existing paid-writer Section16, original Book/global
+Section9.1 pointer and this existing brief. No architecture/workflow
+owner, new task/carrier/certificate or acceptance is introduced.
+
+Owned inputs consumed: Halmos/Naimark Theorem D(15)-(18);
+weighted moving-cut/pairing calculus; actual row R, all-input
+reflection and flat overlap spectrum in paid-writer Section13;
+copied word and full cyclic heat in Section14; parent Boolean
+equation11a and its finite contrasts; literal fixed-processor
+Book binding Sections5-8; original Golden gate Gram condition.
+The generic contraction/determinant and entropy statements are
+reused, not credited as new theorems.
+
+Actual application: Boolean separately computed/uncomputed logical
+scratch is not the dynamic Julia coefficient, and its immutable
+address is not the mixed Walsh label. Equation97 gives the literal
+row-cut effect through T_Pi=R Pi R^dagger, with real moving support/
+observer jets in98. For the complete TWO-event copied wide-port cut,
+the exact full determinant reduces to
+det_(64D)[(1-zf)^2 I+z(1-z)f^2 C_R^dagger C_R],
+(C_R)_(mu,nu)=R_nu R_mu^dagger, f=4p^3. Both full128 banks
+remain as multiplier128^2, with actual scene/RIGHT/control ranks.
+One-success READY sectors are field-neutral one-event blocks;
+actual mixed-control commutation/factorization must be proved.
+
+The existing flat Q(s) now gives a fixed original z=2^-20 contrast
+greater than kappa D2^-50 at nu=3/5 versus the analytic nu=0
+endpoint. Whole copied heat has spectral oscillation<2^-96 at
+actual serial N>=16, including every mode: fourteen true CX stages
+plus two nonempty U bodies. Thus complete H+J cannot cancel this
+contrast. Continuity yields two regular nondegenerate alternatives;
+no singular coframe is executed. No pointwise primary-source or
+monotonicity claim, all-D0 exclusion or gain-normalized continuum
+obstruction follows from the fixed two-event L=2 comparison.
+Independent preparation, Info and actual work sources remain.
+
+Carrier/norm/source: literal finite differential in the owned
+whitened Hermitian pairing, or full weighted-adjoint jet before
+whitening. Both row jets and genuine support/preparation variations
+remain; D, d_R, scene and bank ranks are not hidden in constants.
+No all-site uniform field lift is asserted. Boolean finite-contrast
+covectors use the existing writer's real stencil/Jacobian and its
+declared physical norm; a finite word selector is not differentiated.
+
+The literal Book price consumes its actual per-record C/I and
+aggregation hypothesis, rather than assigning Info=Shannon.
+Equation104 retains Delta(W-E_q a) and its true score/intrinsic
+derivatives; a is defined only on positive support, with actual
+weighted zero limits and all dark physical branches retained.
+Changing a relative port Gram to absorb the Born factor changes
+the native U_phi unless the whole operator/readout/price is
+transported; unitarity forces equal port blocks.
+
+Smallest decisive checks: full determinant lemma and both-port
+copy commutation; convex spectral chord using the OWNED Q(s);
+owned complete heat Bessel bound at actual N; exact fixed-processor
+finite-price contrast. An inline complex Pauli DATA2/row4 fixture
+checked the full128-dimensional two-App unitary and its32-dimensional
+active determinant against the8-dimensional overlap: unitarity
+error<4.5e-16, log-determinant difference<4.7e-16 at original z.
+This is an integration diagnostic, not a native128-certificate replay.
+The rational Q(4/5)=166706057/200000000 and16!>2^40 were consumed
+exactly; neither is a new research certificate.
+
+Parent route change: the naive wide-register substitution is
+replaced by the ACTUAL full-history source map and its finite
+nonneutral bare-action contrast. The positive Boolean and exact
+nonvacuum GR results remain valid on their own typed inputs.
+The remaining application must derive the compulsory physical
+prepared/logical-work meaning of P_N, genuine memory/anchor/full
+Cost-Info/work transport and the actual freely varied field image
+and refinement. No free blank, padding, entropy counterterm,
+CORE/lifecycle/claim promotion, raw216 or GR closure is inferred.
+
+Independent native_continuation_map, native_valuation_map and
+universal_parent_map ACCEPTED the final Section16 heading-to-EOF:
+15,026 UTF-8 bytes, SHA-256
+64ce6b966a9db70e85f6bcda69b45500721803e04fa7ea3b5230c35e4674bac8.
+Review checked the true overlap dagger order, complete bank/control
+multiplicities, full-heat hierarchy, actual fixed serial schedule,
+singular-endpoint versus regular comparison, finite versus continuum
+scope, kappa in the leading series, and actual positive-support/
+zero-branch/mean-price qualifications. No registered heavy replay
+or new proof-acceptance claim is made.
+
+All137,847 bytes of the published paid-writer at31a04444 are an
+unchanged prefix. Final work, agent-protocol, assembly-contract,
+generated-work-view, repository and diff guards passed, and the
+existing checkpoint template was consumed. Live next-route CLI
+lookup timed out in its gh open-PR request; the EXISTING #334 remote
+head was independently verified through GitHub before publication.
+No new launch or dispatch was attempted from that failed lookup.

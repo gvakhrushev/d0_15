@@ -894,6 +894,25 @@ joint gates/readout/resources and complete Cost-Info/work on the
 actual field image before the existing exact nonvacuum/global-GR
 consumers can close. No physical GR or raw216 promotion is inferred.
 
+**Actual cut application and the whole two-event source (23 October).**
+[Paid writer Section16](A4D_PAID_MOMENT_FIELD_WRITER_2026_10_21.md#16-apply-the-actual-cut-complete-two-event-book-source-and-the-literal-price-frontier)
+now consumes the actual Boolean preparation-inclusive cut and applies
+the owned contraction/overlap calculus to the literal Julia row.
+Logical clean scratch, its address and the dynamic Julia coefficient
+cannot be equated by name. The exact row-cut map(97)-(98) and whole
+two-event copied wide-port determinant/source(99)-(100) retain every
+bank, scene and oldRIGHT mode. Crucially one-event wide-cut neutrality
+does not persist: the existing flat overlap spectrum gives the fixed-z
+gap(101), and the ENTIRE real-clock heat is too small to cancel it,
+as proved by(102)-(103). This is a fixed-carrier/two-event result,
+not a continuum obstruction or a failure of every D0 cut.
+The existing Boolean finite-contrast source equivalence remains on its
+own execution; literal Book mean-price transport keeps its actual
+amplitude-anchor/work covector(104), including zero-support and real
+field-lift conditions. Native P_N and full physical price/selection
+still require their actual same-execution transport before the
+nonvacuum/global GR consumers can close.
+
 ### 9.2 The ordinary complete Book trace localizes too, with its true heat weight
 
 For actual block-diagonal \(\Delta=\bigoplus_h\Delta_h\) and

@@ -2837,3 +2837,315 @@ is proved, the already-owned exact nonvacuum solutions and global
 Einstein-rigidity/J2 consumers apply at their stated hypotheses.
 Neither closedness alone, the flag example, nor a conditional
 source identity establishes full D0-to-GR, positive_gr or raw216.
+
+
+## 16. Apply the actual cut: complete two-event Book source and the literal price frontier
+
+This is the next APPLICATION of the closed-system construction, not
+another comparison grammar or a new gravity certificate. It consumes
+the [actual preparation-inclusive Boolean cut](A4D_ORIGINAL_BOOK_BOOLEAN_TRACE_CLOCK_AND_GLOBAL_EINSTEIN_2026_10_22.md#the-preparation-itself-can-be-included-in-the-same-book-word),
+[Halmos/Naimark cut/source owner, Theorem D](A4D_ORIGINAL_GOLDEN_HALMOS_NAIMARK_ALL128_CAUSAL_BOOK_WELD_2026_10_22.md#4-theorem-d--the-same-genuine-golden-word-has-two-distinct-book-cuts-the-prepared-one-is-the-source-bearing-one),
+the weighted moving-cut calculus, and Sections13-14's actual Julia
+row, overlap spectrum and complete primitive heat. The changed input
+is the full TWO-event return on that supplied copied word. One-event
+wide-cut neutrality does not decide it.
+
+### 16.1 A logical comparator and a Julia coefficient are different physical factors
+
+The Boolean cut(11a) protects port0 and separately clean logical
+scratch; its address, READY, factory and archive are retained as
+identity factors. The scratch is computed and uncomputed by its real
+word. In the original full128 Julia word, the coefficient bit c is a
+DYNAMIC dilation factor and the Walsh label is mixed. Neither is that
+unchanged Boolean address or returned logical scratch. Their names
+do not supply a carrier intertwiner.
+
+One can nevertheless apply the owned cut theorem to the ACTUAL row
+R=(R_mu), mu=(label,c), with64 row coordinates and RR^dagger=I_D.
+For a row projector Pi put
+\[
+ P_\Pi=P_{b0}\otimes\Pi,\quad X_\Pi=\Pi R^\dagger R\Pi,\quad
+ T_\Pi=R\Pi R^\dagger .
+\]
+The literal unitary(59), not a new completion, gives
+\[
+ \begin{split}
+ P_\Pi U P_\Pi&=I_\Pi-2p^2X_\Pi,\\
+ F_\Pi&=4p^2X_\Pi(I_\Pi-p^2X_\Pi),\\
+ \det_\Pi(I-zF_\Pi)
+ &=\det_D[I-4zp^2T_\Pi(I-p^2T_\Pi)].                \tag{97}
+ \end{split}
+\]
+Extra zero modes contribute1, rather than disappearing physically.
+This is the direct row substitution into the owned positive-contraction
+theorem. At fixed actual spectator ranks its complete source is
+\[
+ DJ_\Pi=4zp^2\kappa\operatorname{Tr}
+ [G_\Pi^{-1}(I-2p^2T_\Pi)\,DT_\Pi],\quad
+ G_\Pi=I-4zp^2T_\Pi(I-p^2T_\Pi),
+\]
+\[
+ DT_\Pi=(DR)\Pi R^\dagger+R(D\Pi)R^\dagger+
+           R\Pi D(R^\dagger).                       \tag{98}
+\]
+Use the actual observer whitening or the owned moving weighted-adjoint
+jet; no raw pairing is frozen.
+
+Retaining the entire row means Pi=I, T_Pi=I. The one-event nonzero
+effect spectrum is then f=4p^3 with multiplicity D and its full
+feedback source is zero. Protecting the full blank row instead gives
+T_Pi=A^2, the already owned prepared-return source. Protecting only
+c=0 and retaining all32 labels gives, by Parseval on the literal
+signed/repeated Julia words,
+\[
+ T_{c0}={1\over16}\sum_{r=1}^4
+ (P_rP_r^\dagger+P_r^\dagger P_r+
+  C_rC_r^\dagger+C_r^\dagger C_r).
+\]
+On Section13's flat ray this is (nu^2/2)I_D, not A^2.
+Thus the missing cut map cannot be replaced by naming c a comparator.
+
+For the supplied fine XOR recording, these coordinate cuts commute
+with the copy gates when the banks are retained as identities.
+For an arbitrary moving/off-diagonal Pi that commutation need not
+hold. The actual expression is then
+P U^dagger C_rec^dagger(I-P)C_rec U P, with all its jets, unless the
+copy hardware is ACTUALLY transported too.
+
+### 16.2 The whole two-event wide-port return, including its banks
+
+Now take EXACTLY the two-event copied word(73), with shared DATA,
+two fresh original Apps and two full banks. Protect both input ports0,
+retaining every row coordinate and every bank input:
+\[
+ P=P_{b_1=0}P_{b_2=0}\otimes I_{\rm rows,banks}.
+\]
+At the checkpoint the full scene and oldRIGHT remain. The feedback
+uses the completed return T^N on the primitive clock. This is a
+declared return question, not a completion predicate or an identification
+with compulsory P_N.
+
+Each compressed event is M_i=I-2p^2X_i, where X_i=R_i^dagger R_i
+is the projection on DATA and its fresh64-coordinate row factor.
+All copies commute with P and with the other event's U, so the
+compression is a final unitary bank copy times M_2 M_1. It drops
+from A^dagger A, with A=M_2M_1; it does NOT drop its full bank rank.
+
+Set r=64D and N_0=64^2D. Isometries E_i with X_i=E_iE_i^dagger
+have components R_mu^dagger. Under the natural identification of
+their two row spaces the overlap is
+\[
+ (C_R)_{\mu\nu}=R_\nu R_\mu^\dagger,\quad
+ C_R=C_R^\dagger,\quad X=C_R^\dagger C_R,\quad 0\le X\le I.
+\]
+The order of the daggers is essential. Since
+L_(mu,b)=t_b R_mu^dagger, t=(p,sqrt(p)) and ||t||=1,
+Section13's overlap is t t^dagger tensor C_R, up to ordering.
+Its NONZERO spectrum is therefore already owned, with its original
+zero modes still present.
+
+Write f=1-p^6=4p^3, a_0=(1-zf)^2 and b_0=z(1-z)f^2. The complete
+two-event determinant is
+\[
+ \boxed{\quad
+ \det_{N_0}[(1-z)I+zA^\dagger A]
+     =\det_r(a_0 I+b_0 X),\qquad
+ J_2=-\kappa\operatorname{Tr}_r\log(a_0I+b_0X).
+ \quad}                                                     \tag{99}
+\]
+Here kappa=d_R r_S 128^2, with r_S=33 for the displayed full-scene
+checkpoint, times ONLY genuine extra identity spectators.
+The factor128^2 is the actual full retained BANK space. The row
+reduction in(99) does not remove any App or DATA mode.
+
+For completeness the existing overlap calculus has a short direct
+determinant application. Since M_i^2=I-fX_i,
+I-zF=I-zfX_1-zf M_1X_2M_1. First factor
+G=I-zfX_1, use the rectangular determinant identity, and note
+M_1G^-1M_1=I-f(1-z)/(1-zf) X_1.
+The first determinant contributes(1-zf)^r; the reduced one contributes
+its inverse times det_r(a_0I+b_0X). This proves(99) also at intersection/
+dark modes, with no principal-angle gap. Its full noncommuting source is
+\[
+ DJ_2=-\kappa b_0\operatorname{Tr}
+           [(a_0I+b_0X)^{-1}DX].                    \tag{100}
+\]
+Both original row jets and genuine observer/pairing/support derivatives
+are retained in DX.
+
+A preparation prefix V_pre commuting with this ACTUAL cut conjugates
+the full feedback and leaves its determinant, as in(11a). If a separate
+READY control gates the queries, use the actual joint success-block
+rank, not its prepared probability. One-success sectors have their
+field-neutral one-event determinants; no-success sectors have F=0.
+The displayed factorization requires those actual controls to be
+independent of the mixed Julia row, or their relevant commutations
+and ranks to be proved. A Boolean immutable address does not establish
+that condition for the Walsh row. Any remaining control/preparation
+source is kept.
+
+### 16.3 A fixed-z whole-history contrast from the existing flat spectrum
+
+Use exactly Section13's regular flat ray, with identity proper links,
+rest observer and 0<nu<1. Equation(67) gives
+\[
+ \operatorname{Tr}X=D,\qquad \operatorname{Tr}X^2=DQ(s),
+ \qquad s=\sqrt{1-\nu^2},\qquad Q(s)<1.
+\]
+At the continuous nu=0 endpoint X is a rank-D projection. The endpoint
+is used to test an analytic identity; it is not an admitted nondegenerate
+coframe or a prospective physical alternative.
+
+Strict convexity of -log(a_0+b_0x), with the actual constant z in(0,1),
+gives the quantitative chord gap
+\[
+ \boxed{\quad J_2(0)-J_2(\nu)\ \ge\
+ \kappa D\,{b_0^2\over2(a_0+b_0)^2}[1-Q(s)]>0.\quad} \tag{101}
+\]
+Indeed subtract the chord between0 and1. Its curvature is at least
+b_0^2/(a_0+b_0)^2, so the chord minus the function is at least that
+constant times x(1-x)/2. Sum over the true X eigenvalues, using Tr X=D.
+No new diagonalization or small-z truncation is required.
+
+The leading expansion of J_2 depending on the field is
+kappa(b_0^2/(2a_0^2))Tr X^2, of order z^2, because Tr X is fixed.
+Thus the one-event zero source does NOT persist through the complete
+two-event history. Analyticity proves nonconstancy on every open regular
+nu interval; it does not prove pointwise monotonicity or a nonzero
+derivative at a specified primary field.
+
+### 16.4 The FULL primitive heat cannot cancel that contrast
+
+This application retains the actual copied-word heat(77), not the
+bare two-App heat or an averaged heralding probability. For ANY
+full monodromy V on the same fixed fibre M and primitive length N,
+put
+\[
+ r_N={2\sum_{q\ge1}c_{qN}\over c_0},\qquad
+ |\Delta H_N|\le {1\over\beta}
+             \log{1+r_N\over1-r_N}.                 \tag{102}
+\]
+The two compared fields have the same M, N, scene and oldRIGHT ranks.
+The bound follows from |ReTr V^q|<=M in(77).
+Since Tr B_S=0, convexity of Tr exp and averaging over theta give
+c_0>=Tr exp(beta B_S)>=33. Consume the owned Bessel bound with
+x=beta/22 and a_N=x^N/N!:
+r_N<=2 exp(12beta/13) exp(x^2) a_N/(1-a_N).
+
+For the actual two-event schedule, fourteen SERIAL CX copies plus
+two nonempty U bodies imply N>=16. This uses the real expansion whose
+ENTIRE all-input product is(73); it is not permission to pad another
+process or to treat additional nonidentity prefixes as identities.
+With 1/2<beta=2p^2<1, x<1/16 and16!>2^40, one has
+a_N<2^-104, r_N<2^-99 and hence |Delta H_N|<2^-96.
+This is a uniform spectral-oscillation bound for every full copied
+mode, independent of the huge M after its true cancellation in the
+ratio. Any actual other monodromy/prefix can use(102) only at its
+own complete carrier, fixed real N and proven feedback map.
+
+At the ORIGINAL z=2^-20, f>15/16, t=b_0/a_0 satisfies
+2^-22<t<1. The ALREADY OWNED value
+Q(4/5)=166706057/200000000 gives1-Q>1/8. Therefore(101) at nu=3/5
+has J gap greater than kappa D2^-50. Combining with(102),
+\[
+ (H+J)_N(0)-(H+J)_N(3/5)>
+                \kappa D\,2^{-50}-2^{-96}>0.        \tag{103}
+\]
+All real bank, RIGHT and scene factors stay in kappa. With a fixed
+scene preparation at stage0, the birth Rayleigh row is identical on
+this ray, so the same contrast holds for the declared HJR.
+Independent moving preparation, Info or work contributions are
+NOT covered by that equality and cannot be dropped.
+
+By continuity/analyticity there are two NONDEGENERATE regular points
+with different full bare Book actions; the claim does not depend on
+executing nu=0. Thus the proposed zero-Lambda Einstein-source
+identification of this complete wide-port history fails on the
+declared flat field carrier. This does not classify a cosmological
+term, a different selected cut, the primary curved family or full D0.
+No obstruction to a gain-normalized continuum limit is inferred from
+this fixed two-event L=2 comparison: its actual selected horizon,
+all-site field lift and refinement gain still require their own proof.
+
+A bounded integration diagnostic used a complex Pauli row on DATA2
+and four row coordinates. Its complete two-App operator was128
+dimensional, its both-port-zero block32 dimensional and its overlap
+8 dimensional. Full unitarity error was below4.5e-16 and the two
+log determinants at the original z differed by less than4.7e-16.
+The decisive inequality(103) is analytical, not inferred from this
+small fixture. No native128 history census or new certificate is used.
+
+### 16.5 Keep the actual Book price when consuming the positive Boolean bridge
+
+The positive Boolean map(11a) remains valid on ITS own full execution.
+For fixed hardware/caps and actual late-code interventions it owns
+J_c=m j_z n(c), S_CQ(c)=B+Gamma kappa_q n(c)/D, with
+j_z=-log(1-zf), kappa_q=f-h_phi(f)>0.
+Consequently its EXACT finite contrasts obey
+Delta S_CQ=alpha Delta J, alpha=Gamma kappa_q/(D m j_z)>0, and
+Delta(H_actual+J)-alpha^-1 Delta S_CQ=Delta H_actual.
+The success probability Gamma is not the trace multiplicity m.
+The literal full128 word must first pass the operator map above
+before inheriting this result; equality of a scalar report is insufficient.
+
+There is also an already-owned bridge for the LITERAL Book mean,
+[same-processor binding Sections5-8](sources/d0_common_execution_closure_2026-10-21/book_binding/BOOK_BINDING_ON_FIXED_PROCESSOR.md).
+Conditional on the actual Book histories aggregating to these complete
+fine records, use their genuine entries C_omega^B,I_omega^B and define
+mathfrak a_omega=I_omega^B-C_omega^B-(1/2)log_phi q_omega
+ONLY on the actual positive-probability support. Expectations sum
+that support; zero branches stay in the physical carrier. Their
+weighted identities use the actual q_omega s_omega and0 log0=0,
+not an assigned finite value of log0. Finite contrasts use each
+code's own support; differential sources require a fixed positive
+support or a justified actual boundary limit, with the full amplitude/
+Gram derivative retained at dark branches. Wherever that actual mean
+price exists, this gives exactly
+\[
+ \mathrm{Price}_B=\tfrac12H_\phi(q)+W-\mathbb E_q\mathfrak a .
+\]
+It assigns no Info from an output law. The actual additional ledger W
+is included only once. On the Boolean same-prefix interventions,
+\[
+ \Delta\mathrm{Price}_B=
+ {\,\Gamma h_\phi(f)\over2D m j_z}\Delta J+
+              \Delta(W-\mathbb E_q\mathfrak a).       \tag{104}
+\]
+The last contrast includes BOTH the moving probabilities and the
+actual moving prices. A source version requires an admitted smooth
+chart, or the already-owned finite-stencil covector transported by
+the writer's real Jacobian and norm. It does not differentiate a
+finite word selector.
+
+This is why the canonical CQ calculation(80) must not be silently
+declared the selected Book03 Info. Book03 supplies delta(H+J)=0
+on its native operator/variation domain, while its path Cost-Info,
+Born aggregation and absolute anchor require their actual transport.
+For example the original Golden gate with orthogonal physical port
+Gram diag(G_0,G_1) has off-diagonal block
+p sqrt(p)(G_1-G_0) in U_phi^dagger G U_phi. Keeping that ACTUAL
+gate unitary forces G_0=G_1. A relative phi^S port norm cannot
+remove a missing Born factor while preserving the same native
+operator/readout; the whole intertwiner and price must be proved.
+
+### 16.6 Parent substitution and route change
+
+The missing proposed application 'use the Boolean prepared-cut source
+as the unchanged full128 source by retaining all other registers'
+now has an exact answer. For the literal Julia row the map is(97);
+for the complete two-event copied wide-port return it is(99)-(100).
+Its full bare action has the fixed-z nonneutral flat contrast(103).
+Neither one-event neutrality nor an uncomputed thermal cancellation
+can justify the proposed Einstein-source transport.
+
+This is a scoped route change within the same #334 owner. It does
+not claim that every possible physical D0 cut fails, and does not
+remove the positive exact nonvacuum solution or the global GR
+consumers. The next application must derive the native meaning of
+the genuinely prepared/logical-work restriction, transport that
+actual P_N and all complete Book prices/anchors through the same
+closed process, and use the actual admitted field/refinement image.
+The existing positive contraction, generic memory, whole heat,
+geometry inverse and global Einstein theorems need not be repeated.
+No new selector, entropy counterterm, free blank, task, acceptance,
+CORE status or physical GR closure is introduced.
