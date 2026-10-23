@@ -2,9 +2,12 @@
 """All-preparations flat-HJR source lower bound on original full CAR16/4D.
 
 This checks ONLY the new exact rational bounds/the original normalized
-same-Einstein chart. The Fourier spectrum, full HJR action and positive
+shrinking-native-leg chart v_h=h*sqrt(rho)*e. The Fourier spectrum, full HJR action and positive
 Golden-J2 family are independently owned elsewhere. Analytic proof of the
-stationary-preparation envelope and continuous-branch no-go is in the note.
+stationary-preparation envelope and conditional continuous-branch no-go is in
+the note. 23 Oct correction: Palatini w=h*E_phys differs from native
+v=eta*E_phys^-T with d=h^-1 already. A fixed physical metric with fixed
+nu maps to rho_box=nu^2/h^2, not nu^2. The box metric is h^-2*rho^-1*eta.
 """
 from fractions import Fraction as F
 from math import factorial
@@ -14,6 +17,19 @@ p2_upper = F(2, 5)
 beta_lower = 2*p2_lower
 beta_upper = 2*p2_upper
 assert beta_lower == F(3,4) and beta_upper == F(4,5)
+# Exact normalization regression (no spectral or history replay).
+# w_h=h E_phys is an edge cochain; native v is its PHYSICAL inverse-frame
+# coefficient, so a fixed flat E_phys=I has v=nu, not h*nu.
+nu_fixed=F(3,5)
+for L_norm in (2,16,256):
+    h_norm=F(1,L_norm)
+    rho_box=nu_fixed**2/h_norm**2
+    assert h_norm**2*rho_box == nu_fixed**2
+    assert 1/(h_norm**2*rho_box) == 1/nu_fixed**2
+    assert rho_box > 1
+    assert h_norm**2*nu_fixed**2 != nu_fixed**2
+print("NORMALIZATION PASS: fixed physical nu gives rho_box=nu^2/h^2; "
+      "the fixed-rho box is not the primary fixed metric")
 # p^2 = (3-sqrt(5))/2, sqrt(5) between 11/5 and 9/4.
 assert F(11,5)**2 < 5 < F(9,4)**2
 # The original exact spectrum satisfies mu<=16, average=8.
@@ -65,5 +81,6 @@ assert 4*open_role_lower>F(196,10**10)  # >1.96e-8
 print("Four-role source lower bound on OPEN/MIXED shifted-adjoint CAR16 boxes:",
       open_role_lower, "=",float(open_role_lower))
 print("All-stationary-preparation R envelope: nonnegative PSD Rayleigh source")
-print("By C1 continuity: no stationary punctured GR family through this flat prepared base")
+print("By C1 continuity: no punctured stationary family whose actual "
+      "flat image lands in this shrinking-leg box")
 print("ALL EXACT RATIONAL / SOURCE GATES PASSED")

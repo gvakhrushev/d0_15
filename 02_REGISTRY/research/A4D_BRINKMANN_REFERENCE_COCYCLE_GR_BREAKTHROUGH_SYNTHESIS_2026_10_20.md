@@ -1,23 +1,33 @@
-# D0 → GR: NULL-BRINKMANN SOURCE GAP AND THE UNIQUE MATCHED-HISTORY COCYCLE
+# D0 → GR: BOUNDED-NATIVE-LEG SHEAR SOURCE AND THE UNIQUE MATCHED-HISTORY COCYCLE
 
 **20 October 2026. Existing parent [#334](https://github.com/gvakhrushev/d0_15/pull/334), `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`. Research synthesis / exact finite analytic theorem + a canonical conditional resolution.**
 Phase: `constitutive / native_sector / gr_operational_realization`.
 No new action, registered task, compulsory physical selector, BOOK/CORE/assembly promotion or `GR_closed` claim.
 
+**23 October 2026 — physical-type correction.** The matrix called a
+"physical Brinkmann coframe" in the original version is the matrix of
+ROWS of normalized native creation legs. Its Lorentz Gram is
+contravariant. The physical covariant metric is the INVERSE Gram of the
+actual legs, including h. Equations(3)-(8), their numerical t-source and
+the reference-cocycle theorem remain valid on that bounded-Dirac chart.
+Their identification with the same fixed physical Brinkmann jet under
+refinement is withdrawn. The inverse-Gram and cotangent maps are stated
+below; no source sign or numerical invariant is changed by convention.
+
 ## The scientific decision
 
-There is ONE fixed original geometry on which the two central D0 gravity
-routes disagree: the **flat, constant-H member of the exact nonlinear
-Einstein–CAR Brinkmann family already integrated to main**, with original
-coframe scaling v=h e, old16 fullCAR site modes, same Lorentz null links
-and independent coframe Euler directions.
+The declared conditional native H+J+R has a nonzero exact source on a
+volume-preserving shear of its bounded creation legs v=h a. Every
+physical inverse-Gram metric in this finite-h family is constant and
+flat. The family retains all16 CAR/site modes, identity Lorentz links
+and its specified rank128 preparation.
 
-The bare full conditional H+J+R carries a NONZERO source in the **same
-null Brinkmann H direction**, even though the original configured
-Golden-J2/Palatini/Einstein source vanishes exactly. The directional
-source is extensive O(L⁴), survives mesh refinement at finite
-nonzero density, and is NOT a volume-only/cosmological pressure: the
-deformation fixes the full coframe and metric determinants exactly.
+The t-source is extensive O(L⁴) in this bounded-symbol limit. It is not
+a volume-only derivative: the actual covariant metric determinant is
+constant in t at each fixed h. This does NOT identify that source with
+the original J2 H-source or a fixed-metric physical continuum source.
+The original configured Palatini/J2 flat-vacuum source and its positive
+nonvacuum recovery remain owned on their own coframe/readout map.
 
 A reference-matched two-history scalar **cocycle** instead cancels
 all coframe-only flat source rows to ALL orders at the diagonal.
@@ -28,18 +38,22 @@ relative native source rather than a counterterm tuned to Einstein.
 Actual physical execution/selection, positive records, code/clock
 cost and curved source matching remain to be proved.
 
-## 1. This is EXACTLY the original Brinkmann null deformation
+## 1. The actual native-leg shear and its inverse-Gram physical metric
 
-Use the original physical null metric and unwrapped local coframe in
+The original physical null metric and unwrapped local coframe are owned by
 the main [exact 40→3→1 all-Euler result](../gr_assembly/sources/d0_double_null_quadratic_cartan_2026-10-19/arbitrary_brinkmann_all40.md)
 and the [same fixed Einstein family](D0_GR_PRIMARY_POSITIVE_CASE.md).
+Their integrated J2 edge coframe is w_h=h E; E is the physical component
+coframe (the recovery owner explicitly writes e=v/h). It must not be
+identified with an inverse creation-leg matrix without that map.
 For every integer L>=4, h=1/L, use the original based links U_r=I,
 constant original scalar/top CAR amplitudes and a constant observer
 n=(e_++e_-)/sqrt(2). The observer-induced positive fibre makes the
 internal four reference vectors (e_+,e_-,e_2,e_3) orthonormal even though
 the *physical Lorentz metric* has eta_(+,-)=1 and eta_22=eta_33=-1.
 
-On ALL original finite site/coframe variables, take
+On the declared full native site/CAR carrier, take the actual inverse
+creation legs (columns of V_h)
 
 \[
 v_u(t)=h(e_++t e_-),\quad v_v=h e_-,\quad
@@ -47,30 +61,43 @@ v_x=h e_2,\quad v_y=h e_3,\qquad U_r=I.
 \tag{1}
 \]
 
-The same ORIGINAL physical geometry has
+Put A(t)=I+t E_(u,-), with its ROW u equal to e_++t e_-; then
+V_h=h A(t)^T. The checker previously called A a coframe and computed
+A eta A^T. Its correct type and the physical covariant metric are
 
 \[
-g_t=2du\,dv+2t\,du^2-dx^2-dy^2,\quad
-H=2t,\quad \det e(t)=1,\quad\det g_t=-1.
+q_0=A\eta A^T=
+\begin{pmatrix}2t&1&0&0\\1&0&0&0\\0&0&-1&0\\0&0&0&-1\end{pmatrix},
+\qquad g_h=(V_h^T\eta V_h)^{-1}
+=h^{-2}(2du\,dv-2t\,dv^2-dx^2-dy^2),
+\quad\det A=1,\quad\det g_h=-h^{-8}.
 \tag{2}
 \]
 
 All Christoffels vanish in these constant coordinates, so
-\(\operatorname{Riem}(g_t)=0\) for EVERY real t.
-On the actual original Palatini six based faces P=I and
-f_i(e,U)=0. Its complete 16 coframe and 24 proper-link Euler rows
-are all zero, including this variation. With constant CAR matter,
-the configured Golden-J2 + star all40+2 source is zero at each h.
+\(\operatorname{Riem}(g_h)=0\) for EVERY real t and fixed h. A compatible
+constant-coframe Palatini vacuum with P=I also has zero field source.
+This algebraic flatness does not identify the native metric/action with
+the particular original J2 representative. In particular the actual
+physical volume is h^-4, constant in t but not in h.
 
-**This is not a new geometry.** It is precisely the *constant H*
-subsector of the already main-published nonlinear GR witness.
-It is also a volume-preserving, internal-null coframe shear.
+The normalized contravariant coefficient q0^(uu) is +2t; the physical
+covariant coefficient g_(vv) is -2t/h^2. On this fixed-h coframe/observer
+section the exact cotangent pullback is E_(g_vv)=-h^2 E_t/2; it is not
+an independently established metric-only ambient equation. Replacing the old +2t label
+by a covariant H without inversion would change the tested direction.
 At fixed lattice, the full local Diff interpretation has not
 yet been proved: a shear of the physical continuum coordinates
 does not automatically act on the discrete site translation algebra.
 None is assumed in the source test.
 
-## 2. Exact same-CAR full-HJR source at the physical h scale
+For comparison, SAME_HISTORY section7 maps physical components E by
+e_native=nu^-1 S E, hence v_native=nu S eta E^-T. Fixed nondegenerate E
+and fixed nu give O(1) native legs. In v=h sqrt(rho) a this requires
+rho=nu^2/h^2 at the flat point, not rho=nu^2. The present bounded-leg
+family therefore supplies no fixed-metric refinement through that map.
+
+## 2. Exact same-CAR full-HJR source in the bounded-Dirac chart
 
 Use the **unchanged** conditional full-Lorentz positive-adjoint
 \(\mathsf H+\mathsf J+\mathsf R\) from
@@ -168,16 +195,17 @@ for every L>=2. Thus
 \tag{6}
 \]
 
-As H=2t, the ACTUAL original Brinkmann H-source per site
-is \(D_H S/L^4 >1/400000000\).
+For the normalized CONTRAVARIANT Gram coefficient q0^(uu)=2t,
+the source per site is half of (6). The physical covariant component
+instead has E_(g_vv)=-h^2 E_t/2. No physical source normalization is
+inferred by dropping this h-dependent inverse-Gram pullback.
 Translation invariance and the Riesz envelope identity
 give the SAME nonzero coframe Euler source at
-**each original site** when the corresponding local H
-coframe leg alone is varied. Thus the configured
-Einstein vacuum and the bare HJR action do not share
-even this one exact native Euler equation.
+**each site** when the corresponding local native-leg shear is varied.
+This is a genuine source of the declared conditional operator. It does
+not prove equality of that variation with the original J2 H direction.
 
-### Analytic continuum limit, independent special functions
+### Analytic bounded-symbol limit, independent special functions
 
 The thermal/source H term stays O(1), the
 reference128 R derivative is identically zero, and
@@ -212,17 +240,18 @@ the positive integral do.
 
 **Hard interpretation:** an arbitrary cosmological/volume-only
 term \(V(\det e)\) has identically ZERO derivative along (1),
-and therefore cannot cancel (5). Fixing the volume
-(unimodular constraint) also does not exclude (1).
-This is an **actual null-Brinkmann flat-source anomaly
-of the BARE conditional price at fixed site registration**,
-not only the common radial source in the previous HJR theorem.
+where e is the ACTUAL covariant coframe with |det e|=h^-4, and therefore
+cannot cancel (5). At each fixed h a fixed-volume constraint also does
+not exclude this native-leg shear. This is a volume-neutral flat-source
+test of the BARE conditional price at fixed site registration, not an
+identified fixed-metric primary Brinkmann source under refinement.
 A compensated observer/transported site/readout change is a
 different physical variation and needs its actual source.
 
 ## 3. The UNIQUE source-preserving relational replacement
 
-Let \(\mathcal A_h(e,U,\mathrm{internals})\) denote the FULL
+Here e denotes genuinely shared covariant coframe/input data, not the
+leg-row matrix A of section1. Let \(\mathcal A_h(e,U,\mathrm{internals})\) denote the FULL
 specific one-arm price of a physically supplied native
 programme, with its actual clock, preparation, reference,
 history and work charged (these inputs are not defined by
@@ -278,7 +307,7 @@ Thus **one** relative comparison of the FULL original
 price automatically cancels its entire one-arm
 volume/shear/flat metric pressure at U=U0, WITHOUT
 dropping even a single thermal or CAR mode, fitting
-the 8.2e-6 coefficient or altering link/mixed coframe-link
+the bounded-symbol 8.2e-6 coefficient or altering link/mixed coframe-link
 variation. It supplies the precise missing
 **reference-source subtraction**, conditional on its
 actual operational admission and full payment.
@@ -322,6 +351,11 @@ has an explicit positive two-history log-odds mixed source
 equal to the literal star Palatini face (owner §7).
 No external Hodge matrix or arbitrarily fitted Einstein
 coefficient is required for this representation.
+
+That signed source retains its owner's actual coframe and face
+orientation. Substituting the leg-row A of section1 for that covariant
+coframe is not justified by (11); its inverse/h and full cotangent
+transport would have to be supplied.
 
 The earlier
 [A4D_NATIVE_PAID_SOURCE_AND_PAIRED_FEEDBACK_SYNTHESIS_2026_10_20.md](A4D_NATIVE_PAID_SOURCE_AND_PAIRED_FEEDBACK_SYNTHESIS_2026_10_20.md)
@@ -370,8 +404,8 @@ whose full Cost−Info source satisfies:
 
 1. **Full reference diagonal:** for every e,
    \(\mathscr C(e;U_0,U_0)=0\), including *all*
-   recorded work and clock terms; so local H
-   source on the flat null line is zero, not
+   recorded work and clock terms; so the shared native-leg shear
+   source on the reference diagonal is zero, not
    the proven bare HJR value (6).
 2. **Signed source, no inserted geometry:** on
    original six based plaquettes, the actual
@@ -398,21 +432,22 @@ same-programme premise is UNPROVED.**
 
 `python3 02_REGISTRY/research/sources/d0_hjr_flat_density_zero_2026-10-20/check_brinkmann_reference_cocycle.py`
 
-The checker validates the ORIGINAL physical null
-coframe/metric identity symbolically, the
+The checker validates the native leg Gram, its physical INVERSE metric
+and exact cotangent pullback symbolically, the
 exact rational all-L pressure bound, independent
-high-precision Bloch/Bessel continuum values,
+high-precision bounded-symbol Bloch/Bessel limit values,
 full 16L⁴ HJR action-level directional finite
-differences at seven original L, and algebraic
+differences at the listed finite L, and algebraic
 cocycle/source-preservation equations. It
 does not pretend those finite matrices
 prove physical native admission, external
 review or general GR.
 
-**Status:** source incompatibility of **BARE**
-HJR with the SAME flat member of exact
-Golden-J2/Einstein family PROVED for the declared
-conditional operator and L>=256.
+**Corrected status (23 October):** the nonzero **BARE** HJR native-leg
+shear source is proved for the declared bounded-Dirac conditional
+operator and L>=256. Its identification with the SAME fixed physical
+Golden-J2/Einstein metric and H-direction is WITHDRAWN; no new source
+transport or physical refinement theorem is substituted for it.
 Unique comparison correction proved **inside
 the declared additive link-source preserving
 class**. Original native selector and full

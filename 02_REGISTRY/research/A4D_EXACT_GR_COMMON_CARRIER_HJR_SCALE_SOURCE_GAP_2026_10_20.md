@@ -1,24 +1,31 @@
-# Original common GR carrier: bare full H+J+R fails the exact flat Einstein-source test at physical coframe scale
+# Shrinking-native-leg full H+J+R scale source: corrected relation to the primary GR carrier
 
-**20 October 2026 — original same-carrier analytic source theorem / existing
+**20 October 2026 — conditional matrix-family analytic source theorem / existing
 research Draft [#334](https://github.com/gvakhrushev/d0_15/pull/334).**
 Parent task: `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`.
 Phase: `constitutive -> native_sector -> gr_operational_realization`.
 No new action, task, source term, claim/Book status or physical selector.
 `GR_closed=false`.
 
-This tests the actual **physical coframe scaling v=h e** on the already
-main-integrated [exact all-mesh nonvacuum Einstein–CAR Brinkmann
-family](D0_GR_PRIMARY_POSITIVE_CASE.md). It is deliberately different
-from the earlier [fixed-s=1/4 flat HJR
-source](sources/d0_hjr_flat_density_zero_2026-10-20/REFINING_UNIFORM_SOURCE.md):
-that theorem used v=s e/4 independently of h. **Here the coframe is
-literally h times the same original flat Brinkmann geometry, on every h.**
-The result is an exact **same-family no-go for identifying the BARE
-conditional HJR action with the configured Golden-J2 geometry**, not a
-no-go for a yet-unidentified complete physical D0 Cost–Info programme.
+**23 October 2026 normalization correction.** This note computes the conditional full HJR source on the explicit native creation-leg family `v_h=h sqrt(rho) e`. Its arithmetic and formulas below are retained. The former interpretation as the SAME fixed-physical-metric [primary Einstein family](D0_GR_PRIMARY_POSITIVE_CASE.md) omitted an inverse-coframe/mesh factor and is withdrawn.
 
-## 1. The same original Minkowski member of the positive GR family
+The original Palatini edge is \(w_h=hE_{\rm phys}\): see the [all40 sampling](../gr_assembly/sources/d0_double_null_quadratic_cartan_2026-10-19/arbitrary_brinkmann_all40.md), (1), and its [constructor](sources/d0_arbitrary_brinkmann_all40_2026-10-19/check_all40_arbitrary_brinkmann.py), lines 33–36. By contrast the [native coframe owner](A4D_NATIVE_COFRAME_HEAT_SOURCE_BRIDGE.md), §2, uses \(v=\eta E_{\rm phys}^{-T}\), and the [full-Lorentz owner](A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md), (4), already has the factor \(h^{-1}\) in d. These are different typed variables.
+
+For the [actual kinematic map](A4D_SAME_HISTORY_PRICE_AND_SOURCE_COMPOSITION_2026_10_20.md), §7,
+\[
+ E_N=\nu^{-1}S E_{J2},\qquad
+ v_N=\nu S\eta E_{J2}^{-T}.
+\]
+The [literal coframe check](sources/d0_same_history_price_composition_2026-10-20/check_connection_coframe_review.py), lines 26–35, uses physical E_J2 with no h. At fixed physical flat E_J2 and fixed nu this gives
+\[
+ \Delta_N=\nu^2 h^{-2}\sum_r\omega_r I_{16},\qquad
+ \rho_{\rm box}=\nu^2/h^2.
+\]
+Thus fixed \(\nu=3/5\) leaves the bounded \(0<\rho\le1\) chart on fine meshes. In contrast this note's scalar box reconstructs \(g_{h,\rho}=h^{-2}\rho^{-1}\eta\); fixed rho does not fix the physical metric.
+
+The distinct [fixed-v refinement theorem](sources/d0_hjr_flat_density_zero_2026-10-20/REFINING_UNIFORM_SOURCE.md), with \(v=s e/4\) independent of h and its correct \(L^2\) spectrum, remains unchanged. The present shrinking-leg source test is not a no-go for an unidentified complete physical D0 Cost–Info programme or for the primary fixed-metric recovery.
+
+## 1. The primary flat member and the distinct native chart
 
 Start with the original all40 finite Brinkmann carrier at H=0,
 constant original CAR scalar/top amplitudes and the original proper
@@ -47,9 +54,11 @@ v_r(x;\rho)=h\sqrt{\rho}\,e_r,\quad
 U_r=I,\quad n_x=n,\quad \rho>0.
 \tag{1}
 \]
-The scale `rho=1` is precisely the original flat coframe v=h e
-of the positive GR theorem; varying rho is one of the 16 originally
-independent coframe directions. Fix the actual old reference128 Gram
+The scale `rho=1` is a nondegenerate shrinking native creation-leg chart,
+with reconstructed metric h^-2 eta. It is not the native inverse-coframe
+image of the fixed physical flat member above. Varying rho is an actual
+coframe direction of THIS conditional matrix experiment. Fix the actual
+old reference128 Gram
 I_128/128 and take its entire eight-momentum x CAR16 isolated positive
 Riesz preparation. At EACH finite L>=4 this rank128 shell exists and
 commutes with Delta, so every fixed-Gram LEFT preparation equation
@@ -98,8 +107,9 @@ and the TRUE shifted positive adjoint give
 \mu_L(k)=\sum_{r=0}^3(2-2\cos(2\pi k_r/L)).}
 \tag{4}
 \]
-This holds on the ORIGINAL null-Brinkmann coframe (1), not a
-substituted continuum Laplacian. In particular
+This holds on the explicit native creation-leg family (1), with its
+genuine CAR differential. It does not identify (1) with the physical
+Palatini coframe or its inverse-frame image. In particular
 \[
 0\le\mu_L\le16,\quad \sum_k\mu_L(k)=8L^4,\quad
 \mu_{1,L}=2-2\cos(2\pi/L)>0.
@@ -135,10 +145,10 @@ first variation. The global `-Z_i/Z` and feedback multiplicity
 The underlying native full128/Golden preparation is a conditional
 mathematical realization, NOT proof that Book03 selects (2).
 
-## 3. Analytic all-h physical-scale conclusion
+## 3. Analytic all-h conclusion on compact shrinking-leg scale intervals
 
 For every compact interval `I subset (0,infinity)` of fixed
-physical rho values, the original strict Julia/B-positive chart is
+box-coordinate rho values, the original strict Julia/B-positive chart is
 valid for all sufficiently small h. The complete **per-site coframe
 dilation source** has an honest, uniform continuum limit
 \[
@@ -156,9 +166,9 @@ dilation source** has an honest, uniform continuum limit
 The convergence is uniform for \(\rho\in I\); it is O(h²) after
 the smooth-periodic trapezoid and finite-B estimates. Thus the
 original HJR homogeneous flat branch has NO scale-stationary point
-on any compact fixed-physical-scale interval when L is sufficiently
-large: changing the common scale of the ORIGINAL coframes strictly
-changes the action.
+on any compact fixed-rho interval of this shrinking-leg chart when L is sufficiently
+large: changing the common scale of these native creation coefficients strictly
+changes the action. No fixed-physical-metric refinement conclusion follows.
 
 **Proof.** Since `alpha_h=O(L^-2)` and
 `m_h alpha_h=beta`, the entire Bloch bands satisfy uniformly
@@ -175,7 +185,7 @@ integral is continuous and has a strictly positive minimum.
 No assumptions about a microscopic gravitational Lagrangian or
 an Einstein equation are used here.
 
-At the exact original \(\rho=1\), (8) has the independent
+At the exact box point \(\rho=1\), (8) has the independent
 convergent Bessel-series representation
 \[
 \begin{aligned}
@@ -249,7 +259,7 @@ Thus at L>=256,
 the last inequality being exact rational arithmetic. This proves
 (11) without invoking a continuum limit.
 
-## 5. This is a TRUE local coframe Euler obstruction, not just a volume fit
+## 5. Local coframe Euler obstruction on the shrinking-native-leg chart
 
 At the homogeneous flat native state, the original fullHJR functional
 and rank128 Riesz preparation are invariant under translations of
@@ -271,18 +281,17 @@ different flat chart, it remains nonzero at each finite L:
 the argument claims a FIRST derivative at the baseline, not a
 uniform preparation neighborhood.
 
-On precisely this original field configuration, every based
+On a separately specified flat Palatini configuration, every based
 plaquette is identity, every original six-face
 \(f_i(e,U)=0\), and every independent **coframe** first source
 \(DS_\star[V_x]=0\). Constant \(\Psi\) makes the original
 configured Golden-J2 scalar/top null-matter source zero as
-well. The original exact finite all40 theorem already includes
-this flat configuration as a joint geometric/material root.
-Therefore (13) is a **positive local source gap on exactly the
-same finite vacuum configuration**: no scalar multiplier of the
-flat \(\star+J_2\) Euler source can equal this bare full-HJR
-source at each h>=256 in the original unscaled source
-convention.
+well. The original exact finite all40 theorem includes such flat
+Palatini configurations as geometric/material roots. Therefore (13)
+precludes equality with a zero Palatini covector IF an actual
+same-action carrier map lands in this shrinking-leg chart and
+transports this tangent. The former claim that the fixed physical
+primary map supplies that identification is withdrawn.
 
 The claim is specifically about the CONDITIONAL (2)
 and that genuine original scale tangent, not about an
@@ -295,19 +304,20 @@ excluded from the total yet-to-be-selected native theory.
 If the actual complete paid physical D0 law on this SAME
 admitted oldCAR/oldRIGHT/controller/preparation/clock
 programme is genuinely \(\mathcal S_{\rm physical}=S_{HJR}+E\),
-and if the configured original exact flat Einstein solutions
-are required to be on shell for this law, then necessarily
+and if an actual source/tangent map places a required flat endpoint
+in THIS shrinking-native-leg chart, then necessarily
 \[
 \boxed{
 \lim_{L\to\infty}\frac1{L^4}\partial_\rho E(1)
 =-\mathcal P(1)\ne0,
 \quad
 DE[V_x]= -DS_{HJR}[V_x]
-\ \text{at every finite common flat root}.}
+\ \text{at every finite flat root in this box}.}
 \tag{14}
 \]
-A merely vanishing/o(1) extra source on these local
-directions CANNOT restore the shared vacuum Euler.
+A merely vanishing/o(1) extra source on these specified local
+directions CANNOT restore this box endpoint's stationary Euler.
+This threshold is not established at the fixed physical primary metric.
 Equation (14) is a **necessary compatibility test of an
 independently DERIVED native price**, not an instruction
 to insert \(-S_{HJR}\) or a fitted cosmological counterterm.
@@ -332,16 +342,16 @@ source still needs genuine physical admission and source
 identification; (15) alone does NOT produce signed
 Palatini curvature or its full 40 equations.
 
-**Decisive current scientific boundary:** the fullHJR
-absolute spectral price and the configured Golden-J2
-mathematical Einstein action are INCOMPATIBLE as identical
-same-source physical actions on this exact original
-common flat family. To close positive GR the existing
-`constitutive/native_sector` owner must derive actual
-paid relative history/preparation/clock/work source
-whose coframe jet passes (14), and separately prove
-the signed curvature/matter link and curved exact-root
-refinement. A geometric tensor identity, another
+**Corrected scientific boundary:** the full HJR spectral price
+has the displayed nonzero source on its shrinking-native-leg
+family. A proposed source equivalence whose ACTUAL carrier map
+lands there must satisfy (14), with all paid contributions retained.
+The fixed physical primary Einstein map instead requires its own
+full source analysis with the h^-2 spectrum; this note does not
+exclude that application. The existing `constitutive/native_sector`
+owner must establish the actual operator/tangent/price map and
+the signed curvature/matter and refinement transport. A geometric tensor
+identity, another
 rank census or a small terminal-flags error cannot
 discharge that premise. `GR_closed=false`.
 

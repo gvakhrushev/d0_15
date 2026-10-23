@@ -6710,3 +6710,56 @@ Independent review by universal_parent_map accepted the exact 3,253-byte
 UTF-8 inserted source slice, SHA256
 128e78c76d5a25e7a1cf3b52505144e00f4ce373362a2665f64e64984359250e.
 Work, agent-protocol, assembly and generated-work-view guards pass.
+
+### 23 October: correct the inverse-coframe and mesh transport in the physical GR route
+
+Input 05da195040296908eea2089c7e15ef47de1b0d7e; same Draft334 owner.
+Phase: native realization / final composition. The original Book01
+line/tick section, ArchiveCubicalDifferential and the existing labelled
+operator inverse distinguish Palatini edge cochains w=h E from native
+inverse-frame coefficients v=eta E^-T. The spatial difference already
+contains h^-1. This is an application of owned definitions, not another
+geometry theorem or a new physical scale choice.
+
+Changed parent application: the old bounded-Dirac flat-source proof used
+v=h sqrt(varrho) e with 0<varrho<=1, then identified the fixed physical
+primary map v=nu S eta E_J2^-T with varrho=nu^2. The correct value is
+varrho=nu^2/h^2. At fixed nu=3/5 it exits that box for every L>=2.
+The exact rational source estimates and conditional continuity argument
+remain; their fixed-primary-metric application is withdrawn. They still
+obstruct exact finite source equality wherever the actual map lands in
+their box and transports the tested tangent. The distinct fixed-v/Riesz
+refinement theorem is unchanged.
+
+The shear check likewise stored a contravariant leg Gram. Its actual
+covariant metric is the inverse, with g_vv=-2t/h^2 and the section
+pullback E_gvv=-h^2 E_t/2. Raw-rho scaling changes g by rho^-1, so its
+old rho-weight comparison does not establish the physical Golden-law
+defect. The conditional Golden rigidity and Lovelock theorems, complete
+reference-cocycle algebra, primary all42 recovery and independent
+inverse-pair countercontrol remain at their original hypotheses.
+
+Write paths: the existing scale/shear/all-preparation owners and their
+four checkers; paidwriter12.1; the directly consuming Golden/VSI/primary,
+variational and central route paragraphs; AGENTS and this brief.
+Open governance PRs398 and402 and their changed paths were inspected:
+these corrections do not overlap their tooling/formalization changes.
+Frozen historical inputs, receipts, expected outputs, formal/assembly
+claims and statuses are unchanged. No new task, certificate or theorem.
+
+Smallest decisive validation: exact inverse/coframe and mesh substitution;
+the four affected checkers each run once, retaining their old numerical
+and rational assertions and adding only the normalization/inverse checks;
+independent source-type reviews and final affected structural guards.
+Full physical price/admission, same-execution source identity and uniform
+stationary-solution transport remain open. This is correction of an
+invalid negative application, not positive GR acceptance or goal closure.
+
+Validation completed: the three changed Python checkers and the Golden
+Node checker each exit0 on final calculation inputs. Work, agent protocol,
+assembly, generated work-view and repository guards pass (no scientific
+promotion); git diff --check is clean. Native_valuation_map independently
+accepted the inverse-Gram/shear application and the parent map;
+universal_parent_map accepted the final combined mathematical correction,
+including preservation of the legitimate finite source obstruction.
+No unchanged heavy suite or Lean module was replayed.

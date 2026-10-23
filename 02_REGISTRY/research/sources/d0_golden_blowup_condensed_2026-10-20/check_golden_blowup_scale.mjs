@@ -5,9 +5,12 @@
  *
  * This checker does NOT prove the all-metrics natural-operator theorem,
  * full physical admission, or that native phi^n refinement is physical
- * metric unit scaling. It tests the exact algebraic finite HJR Bloch
- * source, analytic continuum Bessel representation and metric scaling
- * countermodels used in the mathematical proof.
+ * metric unit scaling. It tests the exact finite shrinking-native-leg
+ * HJR Bloch source, its continuum Bessel representation, and SEPARATE
+ * metric-weight countermodels used in the mathematical proof.
+ * 23 Oct correction: raw rho scales inverse legs, hence covariant g
+ * scales rho^-1 (and carries h^-2 at fixed rho). The raw contrast below
+ * is not a test of physical Golden metric scaling or fixed-primary GR.
  */
 function assert(ok, label) { if (!ok) throw new Error("FAILED: "+label); }
 const phi=(1+Math.sqrt(5))/2,p=(Math.sqrt(5)-1)/2,
@@ -33,8 +36,8 @@ function I1(x) {
   return sum;
 }
 function continuumPressure(rho) {
-  // Derived from the complete 16 L^4 original shifted-adjoint HJR
-  // spectrum and 128*16 feedback weight, not a fitted Einstein value.
+  // Complete 16 L^4 shifted-adjoint HJR on native v=h sqrt(rho) e,
+  // with 128*16 feedback weight; not a fixed-physical-metric limit.
   let s=0;
   for(let n=0;n<7;n++){
     let t=(n+1)*beta*rho,i=I0(2*t),j=I1(2*t);
@@ -44,14 +47,15 @@ function continuumPressure(rho) {
 }
 const P1=continuumPressure(1),Pg=continuumPressure(rhoGolden),
       defect=Pg-rhoGolden*P1;
-close(P1,8.200604436907762e-6,1e-17,"old original null source");
-close(Pg,2.67183317722466e-7,1e-18,"Golden null source");
-assert(defect<-2.1e-5,"strict continuum Golden scale source defect");
+close(P1,8.200604436907762e-6,1e-17,"raw shrinking-leg null source at rho=1");
+close(Pg,2.67183317722466e-7,1e-18,"raw shrinking-leg null source at rho=phi^2");
+assert(defect<-2.1e-5,"strict continuum raw-rho source contrast");
 assert(Pg/rhoGolden <P1,"positive integral monotonicity");
-console.log("CONTINUUM original HJR: P(1)=",P1,
-  " P(phi^2)=",Pg," phi^2 defect=",defect);
+console.log("CONTINUUM shrinking-leg HJR: P(1)=",P1,
+  " P(phi^2)=",Pg," raw-rho contrast=",defect);
 
-// Original finite physical v=h sqrt(rho) e, U=I, all modes
+// Explicit finite native creation legs v=h sqrt(rho) e, U=I, all modes.
+// Their physical covariant metric has scale h^-2 rho^-1, not rho.
 // retain H global normalization and full J feedback, moving Riesz
 // first shear=0 (all 8 first shell momenta have one active coordinate).
 function nativeFlatSource(L,rho) {
@@ -80,7 +84,7 @@ for(const L of [4,8,12,16,20]){
   assert(Number.isFinite(s1.H)&&Number.isFinite(sg.J),"finite original thermal+feedback");
   finite.push({L,source1:s1.P,sourceGolden:sg.P,defect:sg.P-rhoGolden*s1.P});
 }
-console.log("FINITE full CAR16 H+J+R source (rank128 R first jet=0):",JSON.stringify(finite));
+console.log("FINITE shrinking-leg CAR16 H+J+R source (rank128 R first jet=0):",JSON.stringify(finite));
 close(finite[finite.length-1].source1,P1,3e-6,"finite-L Fourier torus approach");
 
 // The physically relevant tensor weights under g->rho g in 4D.
@@ -133,7 +137,7 @@ for(let n=2;n<=10;n++) {
     "higher smooth jet decays under Golden zoom");
 }
 console.log("PASS mathematical checks: discrete Golden blow-up controls, ",
-  "strict bare-HJR scale defect, real R² 4jet, nondifferentiable ",
+  "strict raw-rho HJR contrast, real R² 4jet, nondifferentiable ",
   "log-periodic exception, and finite condensed source equalizer.");
 console.log("FULL native Cost-Info/oldRIGHT/clock/action selection, metric",
   " descent, open-Diff naturality and off-shell Ward remain OPEN.");

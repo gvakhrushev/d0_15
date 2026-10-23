@@ -155,8 +155,13 @@ source-visible complementary blocks even under Golden norm and
 trace-class conditions. A legitimate metric-only condensed/sheaf
 source also requires fibre-product descent of the FULL paid histories,
 actual open-Diff context coverage, and true smooth metric variations.
-The unchanged bare full-HJR source actually FAILS the necessary
-single-step physical-scale test on the same flat Brinkmann carrier.
+The [corrected bare-HJR shear result](A4D_BRINKMANN_REFERENCE_COCYCLE_GR_BREAKTHROUGH_SYNTHESIS_2026_10_20.md)
+retains a nonzero raw source on its shrinking-native-leg chart. Its former
+identification with this fixed physical Brinkmann refinement, and hence
+the claimed physical Golden-scale counterexample, is withdrawn. Use the
+inverse-coframe/mesh map in [paidwriter §12.1](A4D_PAID_MOMENT_FIELD_WRITER_2026_10_21.md#121-one-field-to-operator-map-with-the-actual-density-and-matter)
+before transporting that source; normalized native legs and Palatini
+edge coframes are different variables.
 None of these missing physical bridges may be assumed or repaired by
 an unpaid subtraction. The prior two-jet Lovelock route remains a
 valid fallback. `positive_gr`, compulsory Book03 price and raw216 are OPEN.

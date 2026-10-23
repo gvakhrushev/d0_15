@@ -228,9 +228,12 @@ coframe/metric covariance theorem. Existing condensed-compatible
 heat has free price-visible new-block directions, so physical
 source descent requires the genuine full-history fibre-product
 equalizer and local test coverage; support-level profiniteness
-does not give smooth tangent operators. Bare HJR fails the
-one-step Golden scale test on the primary flat Brinkmann
-metric. The original second-jet/Lovelock route remains an
+does not give smooth tangent operators. The earlier bare-HJR
+scale defect was calculated on shrinking native inverse legs;
+its identification with the primary fixed physical metric is
+withdrawn by the [normalization correction](A4D_PAID_MOMENT_FIELD_WRITER_2026_10_21.md#121-one-field-to-operator-map-with-the-actual-density-and-matter).
+It does not decide the physical one-step Golden law. The original
+second-jet/Lovelock route remains an
 alternative; `GR`, `positive_gr` and raw216 remain OPEN.
 This is a conditional proof architecture with one direct
 quantitative native test, NOT a promoted physical law.

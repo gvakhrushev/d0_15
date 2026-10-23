@@ -1555,6 +1555,42 @@ create a new density gauge or a free density writer; it specifies the
 data required by the actual decoder. All their genuine source legs
 remain in the composition.
 
+The spatial mesh normalization is fixed by the same decoder. The
+[original phase difference](../../03_FORMALIZATION/D0/Geometry/ArchiveCubicalDifferential.lean)
+already includes h^-1=L; its
+[metric edge scale](../../03_FORMALIZATION/D0/Geometry/ArchivePhaseEdgeMetricScale.lean)
+has length h. As the labelled owner Section8.5 explicitly distinguishes,
+the Palatini edge coframe is w_star,h=h E, whereas the spatial creation
+coefficient is a raised INVERSE physical coframe. With fixed density and
+the actual constant normalization of the
+[primary kinematic map](A4D_SAME_HISTORY_PRICE_AND_SOURCE_COMPOSITION_2026_10_20.md#7-application-to-the-accepted-exact-nonvacuum-gr-family),
+write e_sp=nu^-1 S E and v_sp=eta e_sp^-T. At its flat E=I point,
+the native legs have length nu, and on the periodic flat chart
+
+    Delta_sp(k)=nu^2 h^-2 omega_h(k) I_16,
+    omega_h(k)=sum_r (2-2 cos(2 pi k_r/L)), h=1/L.
+
+No additional h multiplies v_sp. Each fixed nonzero low momentum has
+a nonzero finite limiting eigenvalue. Inserting h into this inverse-leg
+slot instead multiplies D_sp by h and its covariant metric by h^-2.
+
+This corrects the application of the earlier
+[bounded-Dirac flat-source estimate](sources/d0_hjr_flat_density_zero_2026-10-20/ALL_PREPARATIONS_PRIMARY_GR_COLLISION.md).
+That estimate uses v_r=h sqrt(varrho_r) e_r, with 0<varrho_r<=1;
+varrho here is its scale coordinate, NOT the retained density rho in(52).
+The fixed physical flat map lands at varrho_r=nu^2/h^2, not nu^2.
+For fixed nu=3/5 it is outside that box at every L>=2. Thus the
+box's positive source bound and continuous-family exclusion do not
+exclude the actual fixed-metric primary lift. Their rational inequalities
+remain valid on their declared shrinking-inverse-leg carrier. The
+bound still obstructs exact finite source equality with a zero flat
+Palatini source wherever an actual inverse/coframe map lands in that
+box and transports the tested tangent. The distinct fixed-inverse-leg/
+Riesz source theorem is also unchanged.
+Neither an exact full-source identity nor physical GR follows from
+removing this mistaken obstruction: the actual source(55)-(57), full
+physical action and admitted tangent image still have to be composed.
+
 ### 12.2 The same paid all42 comparison on this image
 
 For every centre and stencil key of Section10 take its actual decoded

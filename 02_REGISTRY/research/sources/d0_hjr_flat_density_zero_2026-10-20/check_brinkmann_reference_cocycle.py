@@ -1,9 +1,14 @@
 #!/usr/bin/env python3
-"""Same ORIGINAL Brinkmann flat coframe: complete H+J+R null source.
+"""Bounded-native-Dirac leg shear: complete H+J+R source and reference cocycle.
 
 Inputs: native full-CAR16 shifted positive adjoint, native m/alpha/beta/zeta,
-the complete rank128 fixedRIGHT Riesz FIRST source, and the original
-null-Brinkmann Palatini coframe. This does not select the physical Book price.
+and the complete rank128 fixedRIGHT Riesz FIRST source.
+
+23 October correction: the former `coframe` matrix stores ROWS of normalized
+creation legs. Its Lorentz Gram is contravariant, not the physical covariant
+coframe metric. The actual legs are h times its transpose; their physical
+metric is the inverse Gram. The fixed-symbol large-L limit below is not a
+same-fixed-metric Brinkmann refinement. This does not select the Book price.
 
 Certifies exact rational all-L>=256 bound, entire Bloch trace finite checks,
 independent Bessel continuum value, and groupoid reference uniqueness.
@@ -16,23 +21,38 @@ import numpy as np
 import sympy as sp
 
 t = sp.symbols("t", real=True)
+h = sp.symbols("h", positive=True)
 eta = sp.Matrix([[0, 1, 0, 0], [1, 0, 0, 0],
                  [0, 0, -1, 0], [0, 0, 0, -1]])
-coframe = sp.eye(4)
-coframe[0, 1] = t
-metric = coframe * eta * coframe.T
+leg_rows = sp.eye(4)
+leg_rows[0, 1] = t
+contravariant_gram = leg_rows * eta * leg_rows.T
+native_legs = h * leg_rows.T
+physical_metric = (native_legs.T * eta * native_legs).inv()
+physical_coframe = eta * native_legs.inv().T
 
-assert metric == sp.Matrix([[2*t, 1, 0, 0],
-                            [1, 0, 0, 0],
-                            [0, 0, -1, 0],
-                            [0, 0, 0, -1]])
-assert coframe.det() == 1 and metric.det() == -1
-assert metric.diff(t) == sp.Matrix([[2, 0, 0, 0],
-                                   [0, 0, 0, 0],
-                                   [0, 0, 0, 0],
-                                   [0, 0, 0, 0]])
-print("EXACT original Brinkmann H=2t: det coframe=1, det metric=-1, "
-      "curvature=0 for constant t, Palatini link and coframe Euler=0.")
+assert contravariant_gram == sp.Matrix([[2*t, 1, 0, 0],
+                                       [1, 0, 0, 0],
+                                       [0, 0, -1, 0],
+                                       [0, 0, 0, -1]])
+assert leg_rows.det() == 1 and contravariant_gram.det() == -1
+assert physical_metric == sp.Matrix([[0, 1, 0, 0],
+                                     [1, -2*t, 0, 0],
+                                     [0, 0, -1, 0],
+                                     [0, 0, 0, -1]]) / h**2
+assert physical_coframe.T * eta * physical_coframe == physical_metric
+assert physical_coframe.det() == eta.det() / h**4
+assert physical_metric.det() == -1 / h**8
+assert physical_metric.diff(t) == sp.diag(0, -2, 0, 0) / h**2
+# At fixed h only g_vv changes: E_gvv = -h^2 E_t / 2. This sign and
+# factor follow from inverse Gram; the numerical t-source is unchanged.
+source_t = sp.symbols("source_t", real=True)
+assert sp.simplify((-h**2 * source_t / 2)
+                   * physical_metric.diff(t)[1, 1] - source_t) == 0
+print("EXACT native inverse-Gram metric: g=h^-2(2du dv-2t dv^2-dx^2-dy^2), "
+      "det g=-h^-8; flat and volume-preserving in t at each fixed h.")
+print("COTANGENT: E_gvv=-h^2 E_t/2 at fixed h; "
+      "no same-fixed-metric refinement is asserted.")
 
 # The EXACT finite counting-site/Fock spectrum at t=0:
 # Delta(t,k)=sum |e^(ikr)-1|² +2t Re(conj(z_u)z_v)
@@ -52,8 +72,8 @@ assert Q(1024, 79) < 13
 bound=Q(2, 500000)*(Q(3, 2048)-Q(500000, 256**4))
 assert bound == Q(180983, 33554432000000)
 assert bound > Q(1, 200000000)
-print("ALL-L EXACT: dS/dt per site >", str(bound),
-      "for all L>=256; dS/dH is half.")
+print("ALL-L EXACT: bounded-leg dS/dt per site >", str(bound),
+      "for all L>=256; normalized contravariant-Gram coefficient source is half.")
 
 # An independent convergent analytic Bessel series, not a fit in L.
 mp.mp.dps = 50
@@ -68,8 +88,8 @@ for n in range(14):
     value += (-zz/(1-zz))**n * mp.exp(-8*v)*i0*i0*(i0-i1)**2
 value*=4096*zz*bt/(1-zz)
 assert value > 0
-print("Exact analytic continuum dS/dt/L^4 =",mp.nstr(value,37))
-print("Exact analytic continuum dS/dH/L^4 =",mp.nstr(value/2,37))
+print("Exact bounded-symbol limit dS/dt/L^4 =",mp.nstr(value,37))
+print("Exact bounded-symbol limit for q0^uu=2t coefficient =",mp.nstr(value/2,37))
 
 # Original entire H (real global Z), 128*16 feedback J and R FIRST
 # source=0 on the lowest eight-momentum x CAR16 shell. The full
@@ -119,5 +139,5 @@ assert sp.simplify(sp.diff(contrast(e,u,v),e).subs(u,v)) == 0
 assert sp.simplify(sp.diff(contrast(e,u,v),u)-sp.diff(A(e,u),u)) == 0
 assert sp.simplify(sp.diff(contrast(e,u,v),u,e)
                    -sp.diff(A(e,u),u,e)) == 0
-print("PASS: exact Brinkmann null-H source gap, all-L rational bound, "
-      "original full spectrum and unique matched-history source cocycle.")
+print("PASS: exact inverse-Gram/cotangent types, bounded-leg shear source, "
+      "all-L rational bound, full spectrum and matched-history source cocycle.")

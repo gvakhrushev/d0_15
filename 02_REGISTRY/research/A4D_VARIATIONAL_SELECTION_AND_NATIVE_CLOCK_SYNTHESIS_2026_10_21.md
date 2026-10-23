@@ -929,9 +929,11 @@ theorem. Equivalently, a properly reduced local Diff-invariant action with
 `I[phi^2 g]=phi^2 I[g]+constant/boundary` and smooth flat source supplies
 the weight and Ward premises. This can replace an all-curved matching
 campaign **after** those source and descent premises are proved. The
-internal Golden archive scale is not the physical metric law, and the
-owned bare HJR source fails that law on its tested carrier. The theorem
-is a conditional route to use, not a licence to rename the configured
+internal Golden archive scale is not the physical metric law. The earlier
+bare-HJR raw scale comparison uses shrinking inverse legs and does not
+establish failure of that law on the primary fixed-metric lift; retain the
+[corrected inverse/coframe transport](A4D_PAID_MOMENT_FIELD_WRITER_2026_10_21.md#121-one-field-to-operator-map-with-the-actual-density-and-matter).
+The theorem is a conditional route to use, not a licence to rename the configured
 Einstein family as the compulsory bootstrap dynamics.
 
 ## 9. Evidence and replay

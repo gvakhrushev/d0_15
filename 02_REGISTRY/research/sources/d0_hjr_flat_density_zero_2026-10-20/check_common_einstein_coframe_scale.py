@@ -1,9 +1,15 @@
 #!/usr/bin/env python3
-"""SAME original flat Einstein carrier v=h*sqrt(rho)*e: bare full HJR source.
+"""Shrinking native creation legs v=h*sqrt(rho)*e: bare full HJR source.
 
 Certified: elementary rational bound, each integer L>=256, and analytic
 strict-positive continuum integral. Small-L float replays only diagnose
 the original full CAR16+normalizer+feedback+rank128 Riesz action.
+23 Oct normalization correction: these are native inverse-frame coefficients,
+not the Palatini edge w=h*E_phys. With native d=h^-1 sum C(v)(S-I),
+fixed physical E_phys and fixed nu give v=nu*eta*E_phys^-T and
+rho_box=nu^2/h^2, outside the fixed-rho box on fine meshes.
+The box metric is h^-2*rho^-1*eta. Arithmetic is unchanged; the former
+same-fixed-physical-primary interpretation is withdrawn.
 Not a proof of compulsory full native Book03 Cost-Info or GR closure.
 """
 from fractions import Fraction as Q
@@ -33,7 +39,7 @@ assert Q(64, 5) * Q(80, 79) == Q(1024, 79) < 13
 # Thermal H source >= -1280/79; 128*16 J source >=3 L^4/128M.
 lower = Q(3, 128000000) - Q(1280, 79 * 256 ** 4)
 assert lower > Q(1, 100000000)
-print("EXACT RATIONAL: every L>=256 has a nonzero SAME-SITE "
+print("EXACT RATIONAL: every L>=256 has a nonzero shrinking-leg "
       "coframe Euler DS_HJR[V_x] > 1e-8")
 print("Source certified lower bound at L=256:", float(lower))
 
@@ -93,7 +99,7 @@ for L in (8, 16, 24, 32, 40):
     if L == 40:
         assert abs(original_full-float(value)) < 2e-6
 
-# The exact all40 original star is coframe-flat at U=I:
+# A separately identified flat Palatini star is coframe-flat at U=I:
 # (P-P^{-1})/2=0 => its 16 coframe source rows vanish identically.
-print("PASS: original physical v=h e on the same flat Einstein family, "
-      "not the older unrelated fixed-v chart")
+print("PASS: bounded-Delta source on native v=h*sqrt(rho)*e; "
+      "no fixed-physical-primary identification")

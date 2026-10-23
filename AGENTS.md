@@ -79,8 +79,10 @@ provides scale-weight and off-shell Ward automatically via Noether.
 **Mandatory anti-shortcut:** an internal Bratteli scale ratio
 `Lambda_(n+1)/Lambda_n=phi` is *not* a physical metric rescaling;
 condensed/profinite naturality alone does not select the native heat
-source or physical frame/clock, and bare HJR fails the requisite
-Golden source homogeneity on the original flat Brinkmann carrier.
+source or physical frame/clock. The earlier bare-HJR scale calculation
+uses shrinking native inverse legs, not a fixed physical Brinkmann metric;
+its raw scale defect does not establish failure of the physical Golden law.
+Use the [corrected inverse/coframe map](02_REGISTRY/research/A4D_PAID_MOMENT_FIELD_WRITER_2026_10_21.md#121-one-field-to-operator-map-with-the-actual-density-and-matter).
 Use this Golden universality route only when the actual selected full
 Book03/oldRIGHT/CAR/controller/clock/Info/work execution supplies its
 physical metric descent, smoothness, open-Diff coverage and Golden weight
