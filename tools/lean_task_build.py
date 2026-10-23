@@ -86,7 +86,7 @@ def source_digest() -> str:
     for p in sorted(set(files)):
         h.update(p.relative_to(FORMAL).as_posix().encode())
         h.update(b"\0")
-        h.update(p.read_bytes())
+        h.update(p.read_bytes().replace(b"\r\n", b"\n").replace(b"\r", b"\n"))
         h.update(b"\0")
     return h.hexdigest()
 
@@ -155,4 +155,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

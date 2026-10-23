@@ -802,4 +802,3 @@ import D0.Verification.PresentCoreMaximality
 import D0.Verification.RootOperatorSemanticDependence
 import D0.Verification.TotalClosureBoundary
 import D0.Verification.TotalExtensionPrimitiveMinimality
-

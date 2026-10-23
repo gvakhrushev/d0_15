@@ -35,6 +35,24 @@ class BuildLockTests(unittest.TestCase):
         self.assertEqual(digest_with_dependency, digest_after_dependency_change)
         self.assertNotEqual(digest_after_dependency_change, digest_after_project_change)
 
+    def test_source_digest_normalizes_checkout_line_endings(self):
+        with tempfile.TemporaryDirectory(prefix="d0-source-line-endings-") as directory:
+            root = Path(directory)
+            lf_formal = root / "lf"
+            crlf_formal = root / "crlf"
+            for formal in (lf_formal, crlf_formal):
+                (formal / "D0").mkdir(parents=True)
+            source = b"theorem owned : True := by trivial\n"
+            (lf_formal / "D0" / "Owned.lean").write_bytes(source)
+            (crlf_formal / "D0" / "Owned.lean").write_bytes(source.replace(b"\n", b"\r\n"))
+
+            with patch.object(lean_task_build, "FORMAL", lf_formal):
+                lf_digest = lean_task_build.source_digest()
+            with patch.object(lean_task_build, "FORMAL", crlf_formal):
+                crlf_digest = lean_task_build.source_digest()
+
+        self.assertEqual(lf_digest, crlf_digest)
+
     def test_cross_process_exclusion_preserves_lock_file_and_releases(self):
         with tempfile.TemporaryDirectory(prefix="d0-build-lock-") as directory:
             lock_path = Path(directory) / "d0-task-build.lock"
@@ -85,4 +103,3 @@ class BuildLockTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
-

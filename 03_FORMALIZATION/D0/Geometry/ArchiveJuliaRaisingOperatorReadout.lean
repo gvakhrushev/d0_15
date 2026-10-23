@@ -83,4 +83,3 @@ theorem archiveJuliaRaisingQuery_shift_injective
 end
 
 end D0.Geometry
-
