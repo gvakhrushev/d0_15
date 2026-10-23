@@ -1809,3 +1809,116 @@ are inputs to that application; none substitutes for its equality of
 full covectors. The unresolved physical map is proof work to derive,
 not information the user must supply. The exact nonvacuum consumer,
 all independent apparatus equations and GR_closed=false are retained.
+
+### 13.2 Books00-01 application: admissible test sections and an actual return boundary
+
+23 October 2026. Same owner, input f14a255a10b04a3e03b250b6b0cfaa95f91c65cf.
+This is a composition of existing owners and a correction of the next
+application, not a new physical selection theorem. The original operational
+books supply more than an unspecified state space, but their observable
+admissibility and their physical stationarity requirements have different
+types. Neither should be replaced by the narrower requirements of one
+chosen circuit representation.
+
+**The finite operator/test representation is available.**
+[Book01 section01.4.1](../../01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#0141-the-d0-condensed-site-and-admissible-subfunctor)
+defines its observable sections as exactly those satisfying its six descent
+conditions. Apply the already owned
+[complete golden-cylinder extension](A4D_NATIVE_COMPOSED_FEEDBACK_DYNAMICS.md#6-joint-golden-refinement-and-the-exact-action-scaling)
+to a supplied finite instrument on H0. With p+p^2=1, put
+
+\[
+ \chi=(\sqrt p,p),\quad J=I\otimes|\chi\rangle,
+ \quad \pi=J^\dagger,\quad L(A)=A\otimes I_2.
+ \tag{46}
+\]
+
+In the normalized golden-cylinder basis, J is the actual pullback to both
+children and pi is its Hilbert adjoint. For a supplied unitary U and a fixed
+complete outcome family {Pi_a}, extend BOTH U and every Pi_a by L. Then
+
+\[
+ \pi L(U)=U\pi,\qquad
+ D_a=\Pi_aU,\qquad E_a=D_a^\dagger D_a\ge0,
+ \qquad\sum_a E_a=I,
+ \qquad \pi L(D_a)=D_a\pi,
+ \quad\pi L(E_a)=E_a\pi.
+ \tag{47}
+\]
+
+These are full-column identities, also for chronological products of
+supplied compatible operators. Zero-effect outcomes are retained. The
+original DATA16 times App128 starts at binary stage N0=11, or N0=18 with
+oldRIGHT128. Iteration supplies the cofinal tower N>=N0; it does NOT assert
+descent of arbitrary U to every coarser stage. Given its internal finite
+coefficient data, finite terminal test and the original single section,
+this realizes the six-condition operator/test section. No additional
+gate-palette compilation is required merely for that representation.
+
+This does not identify all such sections with executed physical actions.
+[Book00 section00.4](../../01_BOOKS/BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md#004-condensedprofinite-placement)
+also retains phi self-return, gate stationarity and the active/archive
+split. The actual scene configuration, admitted joint field variations
+and full price must still satisfy those physical requirements. In
+particular, a cylinder refinement is not the original spatial h-refinement.
+The owned ordinary determinant law is still
+S_z(L(F))=2S_z(F), including its first source; normalized cylinder response
+does not erase this factor or normalize the complete Book action.
+
+**The task boundary precedes actual-state support.** Book01 sections01.5,
+01.6 and01.17.1 define a stable terminal event class, the direct/self-return
+audit and a fixed finite family of positive effects. A branch probability
+equal to zero does not remove a coded event. For one specified finite
+protocol tau, let P_in be its allowed input sector with the genuinely
+specified work preparation, V_tau its forward operation, and Pi_done the
+sum of its terminal outcome projectors. Correct completion means
+
+\[
+ \Pi_{\rm done}V_\tau P_{\rm in}=V_\tau P_{\rm in},
+ \qquad K_a=\Pi_a V_\tau P_{\rm in}.
+ \tag{48}
+\]
+
+This supplies distinct input and output boundaries. It does not identify
+Pi_done with a blank-return port: both reports can complete the task.
+Once the SAME native self-return is identified, the actual isometric
+input/output identification must intertwine the operator compression
+P_in U P_in with K0 and preserve its native Gram/adjoint. Equality of one
+outcome probability alone is insufficient. Under
+that operator identification the already owned forward/next-tick map gives
+F restricted to P_in = I-K0^dagger K0, with all moving-field derivatives.
+The least actual-state support of paid-writer section21 is not required
+by (48); its exact rank-birth result remains scoped to that different cut.
+
+**Operational continuation is not missing in general.** Book01
+section01.8.3 and its
+[typed-memory owner](../../04_CERTIFICATES/vp_typed_memory_and_atomicity.py)
+already give M=({bottom,0,1})^2 and write(i,b):m->m[i:=b] for the declared
+independent two-line protocol. Any two distinct states are separated by
+at most one common future write and a read. The owned future quotient
+therefore carries this action without a separately stipulated transition
+table. Its atomic snapshot quotient is not a write congruence. If the
+observer can also query retained past records, the whole-world state must
+retain those records and line provenance; M alone is not its quotient.
+
+**Consumer and remaining substitution.** Use (46)-(48), the original
+history-to-scene map (43), and the existing all40+2 source/recovery owners
+in one direct application. The remaining map must identify the original
+task's self-return predicate, scene heat and full action under the SAME
+field/readout interpretation, including all independent internal Euler
+rows. A complete CAR apparatus price is compulsory only when that
+apparatus is proved to be the actual physical execution. Its auxiliary
+trace cannot be substituted for the native scene trace merely because
+it represents the same partial readout.
+
+For the separate coding route, Book01 section01.2 gives
+F0(X)=|D_min(X)| and a self-delimiting pairing upper bound, not an equality
+between state-description length and executed Cost-Info. The existing
+[complete-code source owner](A4D_COMPLETE_CODE_CLASS_SOURCE_UNIVERSALITY_2026_10_19.md)
+already handles correlated complete histories; its same-object decoder
+and resource valuation remain required. No IID hypothesis, fitted Info
+table or universal Shannon binding is added to the direct master route.
+
+This application removes an unnecessary representation demand and the
+state-support-cut detour. It does not discharge the physical common-source
+premise, assert a newly selected action, or change GR/raw216 acceptance.

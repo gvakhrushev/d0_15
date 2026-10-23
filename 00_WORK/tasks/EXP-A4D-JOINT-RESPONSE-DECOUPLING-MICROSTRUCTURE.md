@@ -6589,3 +6589,46 @@ All212,868 previously published paid-writer bytes remain unchanged.
 Changed exact CAR/Sylvester/state/parity/blank check:11 controls pass.
 Final structural guards and diff checks are recorded at publication;
 no heavy mathematics/Lean replay or physical GR closure is asserted.
+
+### 23 October: original Books00-01 applied before further physical selection
+
+Input f14a255a10b04a3e03b250b6b0cfaa95f91c65cf; same Draft334 owner.
+Phase: interpretation and native realization. The user resumed the
+original objective and directed the search to operational Books00-01.
+Consume section13.2 of
+`A4D_ORIGINAL_BOOK_BOOLEAN_TRACE_CLOCK_AND_GLOBAL_EINSTEIN_2026_10_22.md`:
+Book01's six-condition observable definition, the already proved full
+golden-cylinder operator/readout extension, the fixed terminal-event
+alphabet and the already owned two-line future-memory action.
+
+Exact parent substitution: a supplied finite full instrument is representable
+as an admissible operator/test section on its cofinal cylinder tower; a
+separate selected gate palette is not an additional requirement for THAT
+representation. Its protocol input and terminal boundaries retain zero
+outcomes and need not be least actual-state supports. This removes two
+detours from the search; it does not discharge the physical constitutive
+premise. Book00 gate stationarity, the actual return predicate and field
+variation domain, full scene heat/action and independent sources remain.
+
+Carrier/source: DATA16 times App128 (binary stage11), with oldRIGHT128
+when present (stage18); normalized golden-cylinder inclusion and its
+adjoint; every coded outcome retained. The old ordinary determinant
+doubles under binary replication. No action normalization, physical
+mesh identification or replacement of complete history by the nine-state
+current register is inferred. The code route retains its same-object
+decoder and resource valuation and is not a prerequisite of direct
+Book03 stationarity.
+
+Write surface: this existing brief and the existing parent section13.2.
+Smallest decisive check: source-definition and operator-identity review
+against the cited unchanged owners; documentation structural guards.
+No new rank scan, research task, certificate, heavy replay or Lean module.
+Physical GR/raw216, acceptance and lifecycle status remain unchanged.
+
+Independent analytical reviews by universal_parent_map and native_valuation_map
+accepted the final literal section13.2 heading-to-EOF slice: 6,093 UTF-8
+bytes; SHA256 815d0cd12e964643314b72191246b9f58952507403da8d1558be7f8a09c69d9c.
+The reviews made the actual return-compression identification explicit and
+required its native isometry/Gram/adjoint, rather than probability matching
+or an arbitrary similarity. This is review of the scoped composition,
+not assembly acceptance of the remaining physical source premise.
