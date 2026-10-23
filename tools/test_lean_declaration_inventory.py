@@ -54,6 +54,9 @@ class DeclarationInventoryTests(unittest.TestCase):
         self.assertIn("(\"exists\", toJson false)", script)
         self.assertIn("collectAxioms target", script)
         self.assertIn("forallTelescope info.type", script)
+        self.assertIn("withTransparency .default (whnf localDecl.type)", script)
+        self.assertIn("withTransparency .default (whnf target)", script)
+        self.assertIn('("conclusion_whnf", toJson conclusionWhnf)', script)
         self.assertIn("open Lean Meta Elab Command", script)
         self.assertIn("proof_dependencies", script)
         self.assertIn("is_proposition", script)
@@ -68,8 +71,9 @@ class DeclarationInventoryTests(unittest.TestCase):
         record = {
             "name": declaration,
             "exists": True,
-            "elaborated_type": "True",
+            "elaborated_type": "D0.StatusAlias",
             "binders": [],
+            "conclusion_whnf": "True",
             "type_dependencies": [],
             "proof_dependencies": [],
             "axioms": [],
@@ -92,6 +96,8 @@ class DeclarationInventoryTests(unittest.TestCase):
 
         self.assertEqual(run.call_args_list[0].args[0], ["lake", "build", "D0.Foo"])
         self.assertEqual(rows[0]["name"], declaration)
+        self.assertEqual(rows[0]["elaborated_type"], "D0.StatusAlias")
+        self.assertEqual(rows[0]["conclusion_whnf"], "True")
         self.assertEqual(source_sha, "current")
         lock.assert_called_once()
 

@@ -164,6 +164,30 @@ CASES: list[dict[str, Any]] = [
         "scope_review": "The verification kernel and generic transfer are reusable mathematical results; an incorrect decoder/operation map must fail, and no physical execution is selected.",
     },
     {
+        "id": "top-hodge-inverse-spectral-outside-gr",
+        "queries": [
+            "top Hodge inverse spectral full D H M2 equal unordered positive tripartite zone sizes Vieta roots",
+            "равные полные top Hodge D H M2 восстанавливают неупорядоченные положительные размеры трех зон Виета корни",
+        ],
+        "required_refs": [
+            "01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md",
+            "03_FORMALIZATION/D0/Synthesis/TopHodgeInverseSpectralRigidity.lean",
+        ],
+        "scope_review": "The inverse theorem covers positive complete-tripartite scenes and recovers the unordered zone multiset; it neither chooses zone labels nor extends to arbitrary finite complexes.",
+    },
+    {
+        "id": "dense-operator-scene-reconstruction-outside-gr",
+        "queries": [
+            "dense operator scene 33 vertices triangle complete tripartite support rank",
+            "распознавание dense operator scene 33 vertices triangle complete tripartite support rank",
+        ],
+        "required_refs": [
+            "01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md",
+            "03_FORMALIZATION/D0/Synthesis/DenseOperatorSceneRigidity.lean",
+        ],
+        "scope_review": "This finite recognition theorem uses the stated 33-vertex, adjacency, rank, and trace hypotheses; it does not assert a physical D0 selector or a general operator-dynamics result.",
+    },
+    {
         "id": "scoped-nogo-vs-positive-existence",
         "queries": [
             "native affine probe no-go arbitrary smooth probes physical contrast",

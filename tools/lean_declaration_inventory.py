@@ -133,10 +133,11 @@ run_cmd do
         let typeText ← liftTermElabM do
           let fmt ← PrettyPrinter.ppExpr info.type
           pure fmt.pretty
-        let binders ← liftTermElabM <| forallTelescope info.type fun xs _ => do
-          xs.mapM fun fvar => do
+        let (binders, conclusionWhnf) ← liftTermElabM <| forallTelescope info.type fun xs target => do
+          let binders ← xs.mapM fun fvar => do
             let localDecl ← getFVarLocalDecl fvar
-            let binderType ← PrettyPrinter.ppExpr localDecl.type
+            let binderTypeExpr ← withTransparency .default (whnf localDecl.type)
+            let binderType ← PrettyPrinter.ppExpr binderTypeExpr
             let isProposition ← Meta.isProp localDecl.type
             pure <| Json.mkObj [
               ("name", toJson localDecl.userName.toString),
@@ -144,6 +145,9 @@ run_cmd do
               ("type", toJson binderType.pretty),
               ("is_proposition", toJson isProposition)
             ]
+          let targetExpr ← withTransparency .default (whnf target)
+          let targetFormat ← PrettyPrinter.ppExpr targetExpr
+          pure (binders, targetFormat.pretty)
         let typeDependencies := info.type.getUsedConstantsAsSet.toList.map Name.toString
         let proofDependencies := match info.value? (allowOpaque := true) with
           | none => []
@@ -162,6 +166,7 @@ run_cmd do
           ("exists", toJson true),
           ("elaborated_type", toJson typeText),
           ("binders", toJson binders),
+          ("conclusion_whnf", toJson conclusionWhnf),
           ("type_dependencies", toJson typeDependencies),
           ("proof_dependencies", toJson proofDependencies),
           ("axioms", toJson (axioms.toList.map Name.toString)),

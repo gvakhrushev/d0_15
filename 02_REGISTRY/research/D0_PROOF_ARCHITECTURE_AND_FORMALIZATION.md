@@ -51,7 +51,7 @@ A proof dependency is not an application; a similar name is not proof; indexing 
 
 ClaimMap.lean stores theoremName as String and explicitly says it is metadata. check_claim_map_coverage.py and formalization_debt_audit.py are structural checks, not semantic theorem-to-prose verification. Add a semantic layer over current authorities; do not create another claim, assumption, status, acceptance, queue, or obligation registry.
 
-The declaration extractor queries a selected compiled public import (`D0.All` by default) and records full name, elaborated type, telescope binders with type/implicitness/proposition status, type/proof dependencies, transitive axiom footprint, source declaration range/module, snapshot, toolchain, and public import path. Before extraction it asks Lake to build the selected import root under the same shared lock; the source digest is checked across both build and query, so an old `.olean` cannot be reported against current project source. The digest includes repository-owned Lean files and the Lake configuration with line endings normalized, while `.lake` package checkouts are excluded and pinned through `lake-manifest.json`. `--all-claims` retains every current claims.csv row, including unresolved theorem locators, and batch-resolves exact candidates in one imported environment; this produces a reproducible crosswalk candidate, not semantic coverage. This is exact elaborated evidence, not a normalized semantic equivalence proof. A reviewer binds that type to the source claim's object, domain, quantifiers, and assumptions. Load-bearing applications need compiled Lean adapters over actual objects and maps; a field that assumes the desired conclusion is not an adapter.
+The declaration extractor queries a selected compiled public import (`D0.All` by default) and records full name, raw elaborated type, the telescope binders with weak-head-normalized type/implicitness/proposition status, the weak-head-normalized conclusion after opening the binders, type/proof dependencies, transitive axiom footprint, source declaration range/module, snapshot, toolchain, and public import path. Raw type and reduced conclusion are retained together so an ordinary definition alias cannot hide a trivial status proposition or erase an actual premise from the displayed conclusion. Before extraction it asks Lake to build the selected import root under the same shared lock; the source digest is checked across both build and query, so an old `.olean` cannot be reported against current project source. The digest includes repository-owned Lean files and the Lake configuration with line endings normalized, while `.lake` package checkouts are excluded and pinned through `lake-manifest.json`. `--all-claims` retains every current claims.csv row, including unresolved theorem locators, and batch-resolves exact candidates in one imported environment; this produces a reproducible crosswalk candidate, not semantic coverage. This is exact elaborated evidence, not a normalized semantic equivalence proof. A reviewer binds that type to the source claim's object, domain, quantifiers, and assumptions. Load-bearing applications need compiled Lean adapters over actual objects and maps; a field that assumes the desired conclusion is not an adapter.
 
 The collector has run successfully on `D0.Foundation.VerificationCore.verification_core` and the new `D0.Geometry.archiveJuliaRaisingQuery_vacuum_exterior`. Both are found in the compiled environment with actual types, binders, proof/type dependencies, source ranges, and axiom footprints. The verification theorem retains its quantified `FutureExecution` and `TheoryVerification` inputs and is located at lines 227–240 of its source. The Eq. (26) model theorem is located at lines 50–57 of `ArchiveJuliaRaisingOperatorReadout.lean`; its exact type is `∀ u M, archiveFockExteriorEquiv (archiveJuliaRaisingQuery u M vacuum) = ι ℝ u`, with `u : RoleSpace` and `M : RoleSpace ≃ₗ[ℝ] RoleSpace`. The collector reports `Classical.choice`, `Quot.sound`, and `propext` for both this theorem and its existing creator-on-vacuum lemma. These are exposed dependencies of the existing finite-carrier representation; this checkpoint does not claim an axiom-free kernel. The Eq. (26) inventory result was captured at HEAD `b2b73963991bb18c42766ae753bef1c70314c9ab` with `worktree_dirty=true`, Lean source digest `8993ecd144677720658cb3187ba737cb512b7c20a27d541ac93cc212b2b28f3f`, and collector script SHA-256 `4d4edc04deec3e2ad185e9fcf1ba3b7e63bfb16ba1fbc3d9905d253aa2d8ef11` under Lean 4.30.0.
 
@@ -117,29 +117,65 @@ with no binders and transitive axioms `Classical.choice`, `Quot.sound`, and
 `propext`, reflecting the existing quotient representation. It starts from
 the concrete represented state, passes through the owned verified-state/image
 equivalence, and reaches the mapped common-sector profile. At snapshot
-`b4d9681b99a18adea6967be94d3b571f4ae7fee8`, the dirty-worktree Lean source
+`65b4831f38eec190f81fcc9144d03f41985960a4`, the dirty-worktree Lean source
 digest is `ece1f667d2ce2e474ea5f6e383b03067b8968eda4da739a34e40bfc5405b021e`,
-the collector digest is
-`33528ada54bcdd4a967a6e48aee0ec14f9cb9b7b6a53baea7c627a971047a180`, and the
+the collector digest for this query is
+`c447c2952e3893855d479a19a7a1de0aa037a20dd96d46cd6fbd38cbf598cde0`, and the
 toolchain is `leanprover/lean4:v4.30.0`. The emitted declaration range is
 lines 119–129 of the new module. A current `D0.All` build is still reserved
 for the final integration run.
 
 The same collector check on
 `D0.Bridge.connes_reconstruction_conditional` reports the explicit binder
-`h : D0.Bridge.ConnesReconstruction`, type
-`∀ h, h.d0FiniteSpectralTriple ∧ h.metricEqualsSpectrum`, and no axioms. This
+`h : D0.Bridge.BridgeAssumption.ConnesReconstruction`, whose reduced type is
+`h.d0FiniteSpectralTriple ∧ h.metricEqualsSpectrum`, and no axioms. This
 confirms that the conditional bridge remains conditional in the compiled
-environment; it is not a discharged physical assumption. The same dirty
-worktree source digest `ece1f667d2ce2e474ea5f6e383b03067b8968eda4da739a34e40bfc5405b021e`
-was used for that query.
+environment; it is not a discharged physical assumption. The query uses the
+same dirty-worktree Lean source digest
+`ece1f667d2ce2e474ea5f6e383b03067b8968eda4da739a34e40bfc5405b021e`.
 
-After the adapter and generated import were added, the cold-start runner was
-replayed at the same snapshot with `worktree_dirty=true`: all 11/11 real
-scenarios found their required sources as direct content and the source-change
-impact control passed. The updated `formal_support.csv` digest is
+The exact claim crosswalk was also run against its declared owner import.
+`D0-LEAN-CORE-001` resolves to `D0.lean_core_release_candidate`; its raw type
+is `D0.LeanCoreReleaseCandidate` and its reduced conclusion is
+`D0.claimMap = [] → False`, a nonempty-generated-map status check. The
+`D0-LEAN-BRIDGE-001` locator resolves to `D0.lean_bridge_assumptions_explicit`;
+its raw type is `D0.BridgeAssumptionsExplicit` and its reduced conclusion is
+`True`. Both are in `D0/TheoremLedger/ReleaseStatus.lean` at lines 26 and 31,
+respectively, with no binders or axioms. The batch query used collector
+SHA-256 `6339cdaaea69325cf514248294b2c4bde015dd550b29798d62ea67a46222f1ec`
+and the same Lean source digest above. These declarations remain exact
+registry locators but are not evidence that the mathematical core is fully
+formalized or that bridge assumptions have been discharged. No claim, owner,
+or status metadata changed.
+
+The cold-start runner was replayed after the composed theorem and reduced-type
+collector changes at snapshot
+`65b4831f38eec190f81fcc9144d03f41985960a4` with `worktree_dirty=true` (28.7
+seconds): all 11/11 original scenarios found their required sources as direct
+content across 29 queries. The later expanded run at that same snapshot found
+all required sources in 13/13 scenarios across 33 queries; this adds the
+top-Hodge inverse theorem and dense finite-scene reconstruction outside the GR
+branch. The 14-case benchmark passed, including the control that a declared
+source edit changes its dependent result while unrelated prose does not. The
+current `formal_support.csv` digest is
 `2891e51611f95df046adf132c165822d9156666b6dae44703830e7c5b72a3d42`; the
-other authority digests are unchanged from the earlier run recorded above.
+other authority digests match the values listed for this branch below.
+
+The same public CLI was used for the exact claim
+`D0-TOP-HODGE-INVERSE-SPECTRAL-RIGIDITY-001`. Under its owner import, the
+compiled `topHodge_inverse_spectral_rigidity` at lines 170–209 has six
+implicit natural-number indices, exactly three proposition binders `hD`,
+`hH`, `hM2` for the top-Hodge coordinates, and conclusion
+`{p + 1, q + 1, r + 1} = {p' + 1, q' + 1, r' + 1}`. Its transitive axiom
+footprint is `Classical.choice`, `Quot.sound`, and `propext`. The compiled
+`topHodge_data_do_not_choose_zone_labels` control proves equal coordinates for
+permuted `(1, 2, 3)` and `(2, 1, 3)` while their ordered triples differ;
+`without_H_inverse_rigidity_fails` is an exact counterexample to dropping
+the harmonic coordinate. This is a mathematical result for the encoded
+positive complete-tripartite class; it does not choose zone labels or extend
+to arbitrary complexes. The three-declaration inventory used collector
+SHA-256 `09875ba336968932ac5f1f8f4d362092b5c7f7fbf66177d6c2f1d6c2c38876f0`
+and the same Lean source digest above.
 
 The task branch replaces the Windows-incompatible fcntl import and truncating lock-file open in tools/lean_task_build.py with non-blocking POSIX flock or Windows CRT byte-range locking over a persistent one-byte file. The source digest and Lake invocation remain serialized. tools/test_lean_task_build.py passed on native Windows/Python 3.11: its cross-process test verified exclusion, release, reacquisition, and byte preservation. This verifies locking only.
 
