@@ -1,10 +1,12 @@
 from __future__ import annotations
 
 import pathlib
+import subprocess
 import tempfile
 import unittest
 
 from tools import proof_architecture as proof
+from tools import proof_architecture_cold_start as cold_start
 
 
 def dataset(root: pathlib.Path | None = None) -> dict:
@@ -147,6 +149,37 @@ class ProofArchitectureTests(unittest.TestCase):
         data["assembly"]["applications"][0]["hypothesis_map"] = {}
         view = proof.why_view(data, "o1")
         self.assertEqual(view["declared_applications"][0]["hypothesis_mapping_gaps"], ["h"])
+        self.assertEqual(view["declared_applications"][0]["hypothesis_mapping_status"], "unmapped")
+
+    def test_why_distinguishes_unknown_empty_and_invalid_hypothesis_maps(self) -> None:
+        data = dataset()
+        del data["contract"]["obligations"][0]["hypotheses"]
+        view = proof.why_view(data, "o1")
+        self.assertEqual(view["hypotheses_status"], "unknown")
+        self.assertEqual(view["declared_applications"][0]["hypothesis_mapping_status"], "unknown")
+
+        data = dataset()
+        data["contract"]["obligations"][0]["hypotheses"] = {}
+        data["assembly"]["applications"][0]["hypothesis_map"] = {}
+        view = proof.why_view(data, "o1")
+        self.assertEqual(view["hypotheses_status"], "declared_empty")
+        self.assertEqual(view["declared_applications"][0]["hypothesis_mapping_status"],
+                         "declared_empty")
+
+        data = dataset()
+        data["assembly"]["applications"][0]["hypothesis_map"] = {
+            "h": {"target_hypothesis": "not-an-obligation-hypothesis"}
+        }
+        view = proof.why_view(data, "o1")
+        self.assertEqual(view["declared_applications"][0]["hypothesis_mapping_status"],
+                         "unknown_target")
+
+        data["assembly"]["applications"][0]["hypothesis_map"] = {
+            "h": {"target_hypothesis": 7}
+        }
+        view = proof.why_view(data, "o1")
+        self.assertEqual(view["declared_applications"][0]["hypothesis_mapping_status"], "unknown")
+        self.assertEqual(len(view["declared_applications"][0]["invalid_hypothesis_map_entries"]), 1)
 
     def test_reuse_of_application_exposes_its_exact_result_and_obligation(self) -> None:
         data = dataset()
@@ -169,6 +202,132 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertEqual(hits[0]["kind"], "text-candidate")
         self.assertEqual(hits[0]["source"], "02_REGISTRY/OWNER.md")
         self.assertEqual(hits[0]["matched_terms"], hits[0]["query_terms"])
+
+    def test_text_search_finds_russian_content_and_reports_section_line(self) -> None:
+        with tempfile.TemporaryDirectory() as temp:
+            root = pathlib.Path(temp)
+            research = root / "02_REGISTRY" / "research"
+            research.mkdir(parents=True)
+            owner = research / "A4D_NULL_LEG_INVERSE.md"
+            owner.write_text(
+                "## 8.4 Точное восстановление нулевой ножки\n"
+                "Обратный оператор восстанавливает поперечные компоненты.\n",
+                encoding="utf-8",
+            )
+            hits = proof.full_text_search(root, "точное восстановление нулевой ножки", limit=5)
+        self.assertEqual(hits[0]["source"], "02_REGISTRY/research/A4D_NULL_LEG_INVERSE.md")
+        self.assertTrue(hits[0]["direct_content"])
+        self.assertTrue(any(row["line"] == 1 and row["heading"].startswith("## 8.4")
+                            for row in hits[0]["evidence_lines"]))
+
+    def test_text_search_follows_exact_verified_git_source_pin(self) -> None:
+        with tempfile.TemporaryDirectory() as temp:
+            root = pathlib.Path(temp)
+            research = root / "02_REGISTRY" / "research"
+            research.mkdir(parents=True)
+            source_rel = "02_REGISTRY/research/NATIVE_RAISING_OWNER.md"
+            source = root / source_rel
+            source.write_text(
+                "## 8.4 Native raising operator inverse for the null leg\n"
+                "The exact inverse recovers the null component.\n",
+                encoding="utf-8",
+            )
+            subprocess.run(["git", "init", "-q"], cwd=root, check=True)
+            subprocess.run(["git", "config", "user.email", "test@example.invalid"],
+                           cwd=root, check=True)
+            subprocess.run(["git", "config", "user.name", "Proof Architecture Test"],
+                           cwd=root, check=True)
+            subprocess.run(["git", "add", source_rel], cwd=root, check=True)
+            subprocess.run(["git", "commit", "-q", "-m", "source fixture"], cwd=root, check=True)
+            commit = subprocess.run(["git", "rev-parse", "HEAD"], cwd=root, check=True,
+                                    capture_output=True, text=True).stdout.strip()
+            blob = subprocess.run(["git", "rev-parse", f"HEAD:{source_rel}"], cwd=root,
+                                  check=True, capture_output=True, text=True).stdout.strip()
+            (research / "ARCHITECTURE.md").write_text(
+                f"Native raising operator inverse null leg uses selected owner {source_rel}; "
+                f"published commit {commit}; blob {blob}; section 8.4.\n",
+                encoding="utf-8",
+            )
+            query = "native raising operator inverse null leg"
+            hits = proof.full_text_search(root, query, limit=12)
+
+        pinned = next(hit for hit in hits
+                      if hit["source"] == source_rel and hit.get("source_commit") == commit)
+        self.assertEqual(pinned["source_blob"], blob)
+        self.assertEqual(pinned["source_origin"], "pinned_snapshot")
+        self.assertTrue(pinned["direct_content"])
+        status = cold_start._required_source_status(
+            [(query, hits)], {"path": source_rel, "commit": commit, "blob": blob,
+                              "sections": ["8.4"]},
+        )
+        self.assertEqual(status["status"], "found_direct_content")
+
+    def test_text_search_resolves_github_commit_path_links(self) -> None:
+        with tempfile.TemporaryDirectory() as temp:
+            root = pathlib.Path(temp)
+            research = root / "02_REGISTRY" / "research"
+            research.mkdir(parents=True)
+            source_rel = "02_REGISTRY/research/NATIVE_RAISING_OWNER.md"
+            (root / source_rel).write_text(
+                "## 8.4. Native raising operator inverse for the null leg\n"
+                "The exact inverse recovers the null component.\n",
+                encoding="utf-8",
+            )
+            subprocess.run(["git", "init", "-q"], cwd=root, check=True)
+            subprocess.run(["git", "config", "user.email", "test@example.invalid"],
+                           cwd=root, check=True)
+            subprocess.run(["git", "config", "user.name", "Proof Architecture Test"],
+                           cwd=root, check=True)
+            subprocess.run(["git", "add", source_rel], cwd=root, check=True)
+            subprocess.run(["git", "commit", "-q", "-m", "source fixture"], cwd=root, check=True)
+            commit = subprocess.run(["git", "rev-parse", "HEAD"], cwd=root, check=True,
+                                    capture_output=True, text=True).stdout.strip()
+            url = f"https://github.com/owner/repo/blob/{commit}/{source_rel}"
+            (research / "ARCHITECTURE.md").write_text(
+                f"Native raising operator inverse null leg uses the pinned source [{source_rel}]({url}).\n",
+                encoding="utf-8",
+            )
+            query = "native raising operator inverse null leg"
+            hits_by_query = proof.full_text_search_many(root, [query, query], limit=12)
+
+        for hits in hits_by_query:
+            pinned = next(hit for hit in hits
+                          if hit["source"] == source_rel and hit.get("source_commit") == commit)
+            self.assertEqual(pinned["source_origin"], "pinned_snapshot")
+            self.assertRegex(pinned.get("source_blob", ""), r"^[0-9a-f]{40}$")
+            self.assertTrue(pinned["direct_content"])
+            self.assertIn("8.4", cold_start._section_refs(pinned))
+
+    def test_section_refs_accepts_punctuated_and_nested_heading_numbers(self) -> None:
+        refs = cold_start._section_refs({"evidence_lines": [
+            {"heading": "### 5.1. Direct native execution"},
+            {"heading": "#### 8.4.2 Full inverse map"},
+        ]})
+        self.assertIn("5.1", refs)
+        self.assertIn("8.4", refs)
+        self.assertIn("8.4.2", refs)
+
+    def test_text_citation_alone_does_not_satisfy_required_source(self) -> None:
+        with tempfile.TemporaryDirectory() as temp:
+            root = pathlib.Path(temp)
+            research = root / "02_REGISTRY" / "research"
+            research.mkdir(parents=True)
+            source_rel = "02_REGISTRY/research/NATIVE_RAISING_OWNER.md"
+            commit = "a" * 40
+            blob = "b" * 40
+            (research / "ARCHITECTURE.md").write_text(
+                f"Native raising operator inverse null leg; source {source_rel}; "
+                f"published commit {commit}; blob {blob}; section 8.4.\n",
+                encoding="utf-8",
+            )
+            query = "native raising operator inverse null leg"
+            hits = proof.full_text_search(root, query, limit=12)
+        status = cold_start._required_source_status(
+            [(query, hits)], {"path": source_rel, "commit": commit, "blob": blob,
+                              "sections": ["8.4"]},
+        )
+        self.assertFalse(status["found"])
+        self.assertEqual(status["status"], "external_reference_only")
 
     def test_text_search_prefers_current_owner_and_keeps_pin_context(self) -> None:
         with tempfile.TemporaryDirectory() as temp:
@@ -220,6 +379,9 @@ class ProofArchitectureTests(unittest.TestCase):
             hits = proof.full_text_search(root, "native pairing refinement source")
         self.assertEqual(hits[0]["source"],
                          "02_REGISTRY/research/A4D_NATIVE_PAIRING_REFINEMENT_SOURCE.md")
+        self.assertFalse(hits[0]["direct_content"])
+        self.assertEqual(hits[0]["source_origin"], "filename_only")
+        self.assertEqual(hits[0]["evidence_lines"][0]["kind"], "filename_only")
 
 
 if __name__ == "__main__":

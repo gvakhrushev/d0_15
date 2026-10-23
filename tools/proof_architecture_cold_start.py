@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import json
 import pathlib
+import re
 import sys
 import tempfile
 from typing import Any
@@ -22,16 +23,37 @@ from tools import proof_architecture as proof
 CASES: list[dict[str, Any]] = [
     {
         "id": "labelled-native-raising-inverse",
-        "queries": ["native raising operator inverse null leg"],
+        "queries": [
+            "native raising operator inverse null leg",
+            "точное восстановление тетрады из native raising operator при null leg",
+            "native raising operator transfer coframe null leg",
+            "перенос тетрада восстанавливаются native raising operator",
+            "all 16 coframe rows and 24 proper Lorentz links full tangent observer jets",
+            "все 16 coframe 24 proper Lorentz directions tangent observer jets",
+            "AF radial coframe equivalence section 5.1 direct native Julia golden execution cubic Einstein vertex",
+        ],
         "required_refs": [
             "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md",
             "02_REGISTRY/research/A4D_EXACT_AF_RADIAL_COFRAME_EQUIVALENCE_NONLINEAR_SPIN2_2026_10_18.md",
+        ],
+        "required_sources": [
+            {"path": "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md",
+             "commit": "fe5cf335da04cac14e50407b03f98b96be17dc52",
+             "blob": "1c8d59e5533b443d9a015dc4512cfbc160ae7e62",
+             "sections": ["8.4", "8.5"], "scope_query_indexes": [0, 1, 2, 3, 4, 5]},
+            {"path": "02_REGISTRY/research/A4D_EXACT_AF_RADIAL_COFRAME_EQUIVALENCE_NONLINEAR_SPIN2_2026_10_18.md",
+             "commit": "fe5cf335da04cac14e50407b03f98b96be17dc52",
+             "blob": "734e21ae6bc04ff3446ad15858936d417fdd2e55",
+             "sections": ["5.1"], "scope_query_indexes": [0, 1, 2, 3, 4, 5, 6]},
         ],
         "scope_review": "Owner all-jet null-leg inverse and the concrete consumer are distinct; this is not physical price selection.",
     },
     {
         "id": "positive-nonvacuum-recovery",
-        "queries": ["exact positive nonvacuum 16+24+2 midpoint recovery"],
+        "queries": [
+            "exact positive nonvacuum 16+24+2 midpoint recovery",
+            "точное положительное невакуумное восстановление 16 24 midpoint",
+        ],
         "required_refs": [
             "A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md",
         ],
@@ -48,22 +70,33 @@ CASES: list[dict[str, Any]] = [
     {
         "id": "fixedright-stationary-and-minimum-scopes",
         "queries": [
-            "curved fixedRIGHT128 preparation R covector",
+            "exact curved native preparation original full16 Dirac fixedRIGHT128 R covector",
             "stationary preparation minimum saddle Fredholm cutoff cusp",
         ],
         "required_refs": [
             "A4D_EXACT_CURVED_NATIVE_DIRAC_FIXED_RIGHT_PREPARATION_AND_SOURCE_2026_10_20.md",
+        ],
+        "required_sources": [
+            {"path": "02_REGISTRY/research/A4D_EXACT_CURVED_NATIVE_DIRAC_FIXED_RIGHT_PREPARATION_AND_SOURCE_2026_10_20.md",
+             "commit": "4873b3c245a91bd8c9cb25bceeb82662e9f62944",
+             "blob": "6395c736c54d0c0a704d22ffdf046dbfc2c6c84b",
+             "sections": ["5"], "scope_query_indexes": [0]},
         ],
         "scope_review": "Stationarity, minimum, saddle, Fredholm continuation, and cutoff cusp require separate owners and conclusions.",
     },
     {
         "id": "same-fields-do-not-fix-price-source",
         "queries": [
+            "same history price source composition original 128 history partition",
             "same field coframe different action cut Info clock source equivalence",
             "same-action/source map",
         ],
         "required_refs": [
             "A4D_SAME_HISTORY_PRICE_AND_SOURCE_COMPOSITION_2026_10_20.md",
+        ],
+        "required_sources": [
+            {"path": "02_REGISTRY/research/A4D_SAME_HISTORY_PRICE_AND_SOURCE_COMPOSITION_2026_10_20.md",
+             "scope_query_indexes": [0]},
         ],
         "scope_review": "Equality of geometric data does not imply action, cut, Info, clock, or source equivalence.",
     },
@@ -151,6 +184,82 @@ def _path_matches(actual: str, expected: str) -> bool:
     return actual == expected or actual.endswith("/" + expected) or expected.endswith("/" + actual)
 
 
+def _section_refs(hit: dict[str, Any]) -> set[str]:
+    found: set[str] = set()
+    for evidence in hit.get("evidence_lines", []):
+        heading = str(evidence.get("heading", ""))
+        for match in re.finditer(r"(?<![\w.])(\d+(?:\.\d+)*)(?=[.)\s:–-]|$)", heading):
+            section = match.group(1)
+            found.add(section)
+            parts = section.split(".")
+            found.update(".".join(parts[:index]) for index in range(1, len(parts)))
+    return found
+
+
+def _required_source_status(query_hits: list[tuple[str, list[dict[str, Any]]]],
+                            required: dict[str, Any]) -> dict[str, Any]:
+    """A path counts only when its own exact source content is searchable."""
+    expected_path = str(required.get("path", ""))
+    expected_commit = required.get("commit")
+    expected_blob = required.get("blob")
+    required_sections = [str(value) for value in required.get("sections", [])]
+    scope_query_indexes = required.get("scope_query_indexes")
+    considered = ([(query, hits) for index, (query, hits) in enumerate(query_hits)
+                   if scope_query_indexes is None or index in scope_query_indexes])
+    direct_candidates = []
+    citation_refs = []
+    for query, hits in considered:
+        for rank, hit in enumerate(hits, start=1):
+            if _path_matches(str(hit.get("source", "")), expected_path):
+                if hit.get("direct_content"):
+                    direct_candidates.append((query, rank, hit))
+            for reference in hit.get("source_refs", []):
+                if _path_matches(str(reference.get("path", "")), expected_path):
+                    citation_refs.append(reference)
+    exact_candidates = []
+    for query, rank, hit in direct_candidates:
+        commit_ok = expected_commit is None or hit.get("source_commit") == expected_commit
+        blob_ok = expected_blob is None or hit.get("source_blob") == expected_blob
+        if commit_ok and blob_ok:
+            exact_candidates.append((query, rank, hit))
+    sections_found: set[str] = set()
+    evidence: list[dict[str, Any]] = []
+    for _, _, hit in exact_candidates:
+        sections_found.update(_section_refs(hit))
+        evidence.extend(hit.get("evidence_lines", []))
+    missing_sections = sorted(set(required_sections) - sections_found)
+    found = bool(exact_candidates) and not missing_sections
+    if found:
+        status = "found_direct_content"
+        query, rank, hit = exact_candidates[0]
+        source_origin = hit.get("source_origin")
+    elif exact_candidates:
+        status = "missing_required_section"
+        query, rank, hit = exact_candidates[0]
+        source_origin = hit.get("source_origin")
+    elif direct_candidates and (expected_commit is not None or expected_blob is not None):
+        status = "source_pin_mismatch"
+        query, rank, hit = direct_candidates[0]
+        source_origin = hit.get("source_origin")
+    elif any(ref.get("pin_status") in {"pinned_snapshot", "verified_no_content_match"}
+             for ref in citation_refs):
+        status, query, rank, source_origin = "pinned_source_loaded_no_content_match", None, None, "pinned_snapshot"
+    elif citation_refs:
+        status, query, rank, source_origin = "external_reference_only", None, None, "citation_only"
+    else:
+        status, query, rank, source_origin = "not_found", None, None, None
+    return {
+        "path": expected_path, "status": status, "found": found,
+        "source_origin": source_origin,
+        "expected_commit": expected_commit, "expected_blob": expected_blob,
+        "required_sections": required_sections,
+        "sections_found": sorted(sections_found), "missing_sections": missing_sections,
+        "candidate_rank": rank, "query": query,
+        "evidence_lines": evidence[:5],
+        "citation_only_refs": citation_refs[:3],
+    }
+
+
 def _case10_change_impact_regression() -> dict[str, Any]:
     """Verify exact source changes alter the linked check input, prose does not."""
     with tempfile.TemporaryDirectory(prefix="d0-proof-impact-") as temp:
@@ -201,7 +310,10 @@ def _case10_change_impact_regression() -> dict[str, Any]:
 
 def run(root: pathlib.Path, limit: int = 5) -> dict[str, Any]:
     queries = [query for case in CASES for query in case["queries"]]
-    all_hits = proof.full_text_search_many(root, queries, limit)
+    # Cold-start review needs enough candidates to include verified pinned
+    # snapshots behind a top-ranked citation, while the user-facing CLI stays
+    # at its smaller default result count.
+    all_hits = proof.full_text_search_many(root, queries, max(limit, 15))
     offset = 0
     cases = []
     for case in CASES:
@@ -209,24 +321,18 @@ def run(root: pathlib.Path, limit: int = 5) -> dict[str, Any]:
         for query in case["queries"]:
             query_hits.append(all_hits[offset])
             offset += 1
+        query_pairs = list(zip(case["queries"], query_hits))
         required_status = {}
-        for required in case["required_refs"]:
-            rank = None
-            candidate_path = None
-            query_match = None
-            for query, hits in zip(case["queries"], query_hits):
-                for index, hit in enumerate(hits, start=1):
-                    referenced = [ref["path"] for ref in hit.get("source_refs", [])]
-                    candidates = [hit.get("source", ""), *referenced]
-                    if any(_path_matches(str(path), required) for path in candidates):
-                        rank, candidate_path, query_match = index, hit.get("source"), query
-                        break
-                if rank is not None:
-                    break
-            required_status[required] = {"found": rank is not None,
-                                         "candidate_rank": rank,
-                                         "citing_candidate": candidate_path,
-                                         "query": query_match}
+        for required in case.get("required_sources", []):
+            required_status[required["path"]] = _required_source_status(
+                query_pairs, required
+            )
+        for required_path in case["required_refs"]:
+            if required_path in required_status:
+                continue
+            required_status[required_path] = _required_source_status(
+                query_pairs, {"path": required_path}
+            )
         cases.append({
             "id": case["id"],
             "queries": case["queries"],
@@ -235,8 +341,18 @@ def run(root: pathlib.Path, limit: int = 5) -> dict[str, Any]:
             "query_results": [
                 {"query": query, "top_candidates": [
                     {"path": hit["source"], "matched_terms": hit["matched_terms"],
-                     "query_terms": hit["query_terms"], "source_sha256": hit["source_sha256"],
-                     "source_refs": [ref["path"] for ref in hit.get("source_refs", [])[:5]]}
+                     "matched_term_names": hit.get("matched_term_names", []),
+                     "query_terms": hit["query_terms"], "source_sha256": hit.get("source_sha256"),
+                     "source_origin": hit.get("source_origin"),
+                     "direct_content": hit.get("direct_content", False),
+                     "source_commit": hit.get("source_commit"),
+                     "source_blob": hit.get("source_blob"),
+                     "pin_status": hit.get("pin_status"),
+                     "evidence_lines": hit.get("evidence_lines", [])[:3],
+                     "source_refs": [{"path": ref.get("path"), "commit": ref.get("commit"),
+                                      "blob": ref.get("blob"), "pin_status": ref.get("pin_status"),
+                                      "section_refs": ref.get("section_refs", [])}
+                                     for ref in hit.get("source_refs", [])[:5]]}
                     for hit in hits
                 ]}
                 for query, hits in zip(case["queries"], query_hits)
@@ -249,7 +365,7 @@ def run(root: pathlib.Path, limit: int = 5) -> dict[str, Any]:
         "snapshot_commit": dataset["snapshot_commit"],
         "worktree_dirty": dataset["worktree_dirty"],
         "authority_source_digests": dataset["source_digests"],
-        "search_limit": limit,
+        "search_limit": max(limit, 15),
         "search_cases_found_all_sources": sum(c["found_all_required_sources"] for c in cases),
         "search_cases_total": len(cases),
         "benchmark_cases_total": len(cases) + 1,
