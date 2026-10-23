@@ -1100,6 +1100,180 @@ The exact nonvacuum family and conditional global GR consumers
 retain their original assumptions. No physical GR closure or
 scientific-status promotion is asserted.
 
+## 7e. Original initialized port and arbitrary Q8 spin: one complete source word
+
+24 October 2026. Native-realization application of section7d, the
+[positive paid-writer sections9-10](A4D_PAID_MOMENT_FIELD_WRITER_2026_10_21.md#9-forward-native-words-supply-the-owned-coherent-return-query-source)
+and [Book03 section03.26.1](../../01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md#03261-forward-only-order-comparison-with-an-internal-stage-register),
+at input publication 26968f5154e4f91df9050bede73f387a0f3f8325.
+The existing writer used an arbitrary two-state meter input. The
+original detector instead supplies a KNOWN port0 and an arbitrary
+real Q8 spin v. The following actual word realizes the same all42
+source consumer on THAT input family. It keeps the inherited active
+work/port G/CX placement and genuine blank preparation assumptions;
+it does not infer physical Book cut or task selection.
+
+### The native input changes the required middle word
+
+Keep the original native embedding and all genuine fresh work:
+
+    i_native(v)=|0_W,port0> tensor v,  v in R4.           (54)
+
+An untouched past factor is included only when actually present.
+The original calibrated detector record can be one of these fresh
+blanks; no archived record is reset. The Q8 spin is untouched by
+EVERY primitive operation below, so arbitrary spin and past
+entanglement is allowed. No addressable spin-bit operation or change
+of the native compatible complex structure is assumed.
+
+Let V_k be the existing full-column positive G/CX work writer,
+Pi its fixed conjunction of K READY/report flags, m=2^(K-1), and
+
+    x_k=<0_W|V_k^dagger Pi V_k|0_W>=gamma_h Q_h(c_k).
+
+Simply restricting the old symmetric middle G^(-m) W_K to port0
+would FAIL: its compressed amplitude is cos(m theta), independent
+of x_k, hence its feedback source is zero. Here G=R(theta) is the
+original Golden gate. Instead execute the ALREADY constructed
+controlled word itself, with no leading G^(-m):
+
+    M0=W_K=(I-Pi) tensor I_port+Pi tensor G_port^(2m),
+    U_k=V_k^dagger M0 V_k.                              (55)
+
+This is a change of the real programme, not an assigned F=f(x).
+V acts on work and M0 on the original port. On the task's input
+projector P=|0_W,port0><0_W,port0| tensor I_spin (and its actual
+protected past), write r=rank(P). Then
+
+    P U_k P=(1-d_K x_k)P,
+    d_K=1-cos(2m theta),       0<d_K<2,
+    F_k=[1-(1-d_K x_k)^2]P,
+    j_K(x)=-r log[1-zeta+zeta(1-d_K x)^2].              (56)
+
+These identities hold on the WHOLE input family. They follow by
+taking the 00 port entry of I and G^(2m), then using F=P-A^dagger A.
+Irrationality of theta/pi, already owned for G, gives the strict
+bounds on d_K. On the bare clock with no protected past or scene
+factor, r=4, not two. An actually protected scene projector of rank
+r_S and past projector of rank r_p instead give r=4 r_S r_p; full
+thermal scene dimension33 does not by itself set r_S. A fixed added
+pure material seed does not multiply r; true protected identity
+factors do. The four-real-coordinate trace is retained,
+without halving it by a complex-coordinate renaming.
+
+### All primitive costs, failed work and the new reference heat
+
+The literal W_K has m positive and m negative G letters and
+2^(K+1)-2 CX letters. Replace EVERY negative G in V_k^dagger and W_K
+by the same positive G^q, with eta_q=||G^q-G^dagger||. The actual
+forward word therefore has
+
+    N_G=(1+q)(n_G,h+m),
+    N_CX=2 n_CX,h+2^(K+1)-2,
+    ||Uhat_k-U_k|| <= (n_G,h+m)eta_q=:epsilon_q.        (57)
+
+All counts and flags are common to the finite field stencil.
+If only the physical port supplies G, route each work G through it
+by SWAP;G_port;SWAP. This needs SIX additional addressed work/port
+CX calls per routed letter, on all columns even when the port is
+not blank. Add 6 n_route to N_CX and use that TRUE primitive N.
+When all work G letters are routed, n_route=(1+q)n_G,h. This does
+not assume spin addressing; work/port addressing itself remains
+the inherited physical admission premise.
+
+Construct the actual clock shift and its transported cuts from
+these expanded prefixes. The ideal monodromy U_k is conjugate to
+the FIXED M0, so its full heat is field independent at common N.
+It is NOT the old symmetric-middle reference heat. For example,
+let D=dim(work), R=rank(Pi), and let D_past be the dimension of an
+actual untouched whole past factor (one if absent). With the bare
+clock character
+
+    T_N(omega)=sum_(j=0)^(N-1)
+      exp[-beta(1-cos((2pi j+omega)/N))],
+
+the whole new ideal trace is exactly
+
+    Z_ref=4 D_past {2(D-R)T_N(0)
+              +R[T_N(2m theta)+T_N(-2m theta)]}.        (58)
+
+Every failed/unprepared work column and native spin coordinate is
+counted. For the declared homogeneous 33-scene times clock carrier,
+replace each scalar clock character by its actual 33-mode character;
+do not replace that scene or normalize its trace. The fixed ordinary
+past dimension in (58) need not equal its protected rank in (56).
+At a changed N evaluate (58) at that new N. A moving beta, rank or
+clock comparison retains the corresponding absolute-price change.
+
+The existing whole-clock norm bound and determinant bound give
+
+    |B_actual-H_ref(N)-j_K(x_k)| <= C_B epsilon_q,
+    C_B=1+2r zeta/(1-zeta).                            (59)
+
+The spin identity factor cancels only between numerator and
+denominator of the HEAT DERIVATIVE, not from the absolute heat.
+All transported-prefix adjoints of paid-writer section10.5 apply
+to this actual whole word. Generated work, flags and cuts therefore
+need no separate free preparation Euler equation.
+
+### Substitute the new gain in the entire all42 source estimate
+
+For 0<=x<=q_max<1/2, put b=1-zeta and a_min=1-2q_max.
+The exact derivative is
+
+    j_K'(x)=2r zeta d_K(1-d_K x)
+             /[1-zeta+zeta(1-d_K x)^2] >0.            (60)
+
+Consequently the original weak-query/polynomial source calculation
+is unchanged after replacing its scalar j and gain by
+
+    Gamma_K(y)=j_K'(gamma_h Q_h(y))
+                 gamma_h a0 tau_h/Omega >0.           (61)
+
+In particular the SAME full42 error estimate (41) applies with
+Gamma_K, this programme's M3,B and (59). There is no D Gamma term:
+the exact FIRST source is j_K'(x) gamma_h DQ_h. This is not a claim
+of equality of the two old and new actions or Hessians.
+
+The required accuracy ordering survives arbitrarily small gamma_h
+AND d_K. Direct differentiation of (56) gives
+
+    j_K' >= 2r zeta d_K a_min,
+    |j_K^(s)| <= r zeta d_K L_s, s=1,2,3,
+    L1=2/b,     L2=4/b^2,     L3=48 zeta/b^3.           (62)
+
+For example j_K'''=4r zeta^2 d_K^3 a
+[zeta a^2-3(1-zeta)]/[1-zeta+zeta a^2]^3, a=1-d_Kx.
+With the existing pure-coordinate polynomial derivative bounds M_s,Q,
+the chain rule therefore gives
+
+    M3,B/inf Gamma_K <= Omega/(2 a0 tau_h a_min)
+      [L1 M3,Q+3 L2 M1,Q M2,Q+L3 M1,Q^3].             (63)
+
+Use gamma_h<=1 for the extra chain powers. Thus the catalogue can
+still be chosen before inverse accuracy without an invented lower
+bound on its READY probability or its d_K. The final inverse choice
+uses the ACTUAL nonzero Gamma_K, actual pullback norm and stencil.
+No finite native stationary root is inferred from a source limit.
+
+The pure CAR compiler of section7d acts on registers disjoint from
+the port and Q8 spin and satisfies its same full-column commutation:
+because it commutes with G_port^(-m), commuting with the old middle
+is equivalent to commuting with W_K. Its added work, real checkpoint
+and common material dictionary therefore compose with (55)-(63).
+The existing all42 primary roots and weak-query source-limit consumer
+are reused, without a fresh metric root or an independent matter input.
+
+**Parent substitution.** The source-bearing whole-Book return now
+works with the original KNOWN port and arbitrary Q8-spin input.
+This removes the extra unknown-meter calibration requirement and
+the proposed spin-addressing detour. It does not prove that Book
+selects the minimal projector onto this initialized input family,
+admit its complete task/scene/action identification, or supply the
+actual field-variation and stationary-refinement law. Independent
+boundary variations require their own sources if the native task
+allows them. GR_closed and raw216 remain open.
+
 ## 8. Reproduction
 
 Run from this directory:

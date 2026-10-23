@@ -7062,3 +7062,88 @@ guards pass; warnings=0 and scientific_promotion=false. The exact
 Fourier trace, positive source bound and endpoint heat estimate
 were checked analytically against their owned full-operator inputs.
 No unchanged numerical certificate or Lean suite was replayed.
+
+
+### 24 October: native initialized-port realization of the complete all42 source
+
+Input 26968f5154e4f91df9050bede73f387a0f3f8325; same Draft334 owner.
+Phase: native realization / whole-programme source composition.
+Parent: the extra unknown-meter calibration of positive paidwriter
+sections9-10, consumed by primary NONVACUUM residual section7d.
+Application: new section7e in that SAME primary residual artifact.
+
+The original detector supplies port0 and arbitrary Q8 spin. Restricting
+the previous symmetric middle to port0 erases its field source. The
+new literal programme instead uses the already owned controlled W_K
+without its leading G^(-m). It leaves every Q8-spin coordinate untouched.
+On the whole native input family its compression is (1-d_K x)P and
+its feedback is -r log[1-zeta+zeta(1-d_K x)^2], with d_K in (0,2).
+Its derivative is strictly positive throughout the inherited weak-query
+range. Replacing the gain and third-derivative bound transports the
+ENTIRE all42 source estimate, including arbitrarily small READY mass
+and d_K. The common pure-CAR checkpoint and causal adjoint compose.
+No independent matter or unknown two-state meter input is inserted.
+
+Every negative Golden letter is replaced in the actual forward word;
+expanded work/port routing, primitive clock, complete heat character,
+failed columns and real spin/protected ranks remain. The earlier
+spin-bit routing proposal is unnecessary and is not an admitted
+primitive. Physical work/port addressing and fresh blank preparation
+remain inherited hypotheses. The original one-way record copy does
+not by itself derive that addressing interface.
+
+Carrier/norm: original known port and arbitrary real Q8 spin, actual
+work/flags/CAR checkpoint, complete scene/past factors when present;
+operator error of the whole monodromy, full trace and all42 dual norm.
+The parent substitution removes an additional calibration requirement
+under this interface. It does not select the task, minimal Book cut,
+whole scene/action, admitted field variations or stationary refinement.
+The result is a complete source-limit application, not an exact finite
+native critical point or physical GR closure; raw216 remains open.
+
+Write paths: existing primary residual owner and this brief only.
+Smallest decisive check: exact Golden quotient-field matrices verify
+the literal controlled word, initialized-port compression, old-middle
+zero-source control, unchanged spin multiplicity and full monodromy
+trace powers; symbolic derivatives verify the new gain and j'''.
+This bounded development check passed. General all42 transport is the
+analytical composition (54)-(63), not a conclusion from finite samples.
+
+Independent final analytical reviews: native_continuation_map and
+universal_parent_map ACCEPT section7e, heading to before section8,
+INCLUDING all trailing LF: 8,231 UTF-8 bytes, SHA256
+a5c94a4992c35a40f0078fc7bcbb2ff7d3f2c9c4c872f6d4aab133c968bce686.
+Both retain protected scene/past rank, full-column primitive admission,
+complete heat and the source-limit/physical-selection boundary.
+Affected structural guards are the final integration check. No new
+execution, standalone certificate, Lean module or status promotion.
+
+Operational route clarification from the ORIGINAL contracts: Book00
+section00.8 (same distinguishable-class M1 rule), Book01 section01.1
+(Query_O) and its finite observable-section obligations are consumed
+at their actual types. M1ClassAdmissibility permits many internal
+programmes; M1Forced requires a separately proved unique constraint.
+For one admitted physical realization, global uniqueness of tasks or
+microscopic words is NOT an added prerequisite. Positive paidwriter
+section13.2 already provides its finite operator/test section. What
+remains is the actual Query_O/active-archive identification and native
+field-control/stationarity application, not a new generic M1 theorem
+or another stationarity equation for generated internal rows.
+
+The next primitive-admission application has an explicit existing owner:
+A4D_NATIVE_VERIFIED_ARCHIVE_ACTUATION.md section3 already proves the
+all-column two-direction register exchange and Golden-gate transport.
+For a two-cell implementation, BOTH shared-factor placements
+record_A=port_B and record_B=port_A (or an independently admitted
+reverse placement) are required for that exact routing. One overlap
+supplies the second local Golden port only; disjoint tensor copies
+supply neither overlap. The missing same-world placement/intertwining
+map retains both cells' real spin, blank, clock and other resources.
+Terminal-role exchange and computable Query_O do not themselves prove
+that physical map. Reuse this owner; do not re-prove its SWAP identity.
+
+Final targeted integration: work validation, agent protocol, assembly
+consistency and generated work views PASS; scientific_promotion=false.
+The reviewed insertion is the ONLY change to the primary residual;
+the brief is append-only. git diff --check passes. No unchanged Lean
+or full128 mathematical replay was run.
