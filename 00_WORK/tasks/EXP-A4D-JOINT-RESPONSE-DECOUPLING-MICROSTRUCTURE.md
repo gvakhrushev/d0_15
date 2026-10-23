@@ -6927,3 +6927,60 @@ operator, correct Rayleigh source and separate causal-input obligation.
 Work, agent-protocol, assembly, generated work-view and repository guards
 pass without scientific promotion. No unchanged numerical or Lean suite
 was rerun.
+
+### 24 October: generate the original pure material section and consume its causal source
+
+Input 2df9eeecf5ecd4f1d423199f91270604d3bd4146; same Draft334 owner.
+Phase: native realization / complete preparation-source composition.
+Parent: primary NONVACUUM residual section7b; application in new
+section7c of that SAME existing artifact.
+
+A single all-column Golden/CNOT character identity now implements
+every pair rotation on address+CAR. Two actual rotations per site
+generate the ORIGINAL pure four-grade material section on dense
+finite angle settings, to arbitrary accuracy at fixed finite mesh.
+This is a changed input relative to the old mixed-moment writer.
+The coherent site/RIGHT lift and both material directions are explicit;
+no measured address selection or continuously adjustable gate is used.
+The paid known-one's unshifted c=0 complement remains in the full
+operator. Actual equal-inventory cells give material covectors as
+limits of full-price secants, not derivatives of fixed finite words.
+
+The existing nonlinear CQ adjoint consumes this generator: its
+intermediate material states are generated, while every control,
+initial boundary and work source remains. The same pure counting-site
+full128 entropy residual from section7a is therefore transported,
+not canceled by reclassifying the preparation as internal.
+Book00 gate stationarity / Book03 master stationarity remain a
+legitimate direct route; the actual same-execution functional and
+admitted controls are the remaining physical application.
+
+Carrier/norm: actual address+CAR16, full RIGHT Gram and off-diagonal
+coherences, original positive grade14 normalization; operator/HS
+preparation error, full material covector through the inverse angle
+Jacobian and actual downstream norm/gain. Native runtime and initial
+address/RIGHT preparation are retained. No uniform h/time estimate,
+null-u versus execution-clock identification, compulsory price,
+field minimum or scientific-status promotion.
+
+Write paths: existing primary residual owner and this brief only.
+Smallest decisive check: exact binary character/conjugation identities,
+complete controller complement, analytical source review and affected
+structural guards. No independent task, new certificate, geometry
+scan, Lean module or unchanged mathematical-suite replay.
+
+
+Independent final analytical reviews: native_continuation_map and
+universal_parent_map accept section7c, from its heading through the byte
+before section8, INCLUDING all trailing newlines: 13,732 UTF-8 bytes,
+SHA256 2b4fbac87d3b0ebf1da7aac3e4baae0175ac3985cd4858d182697baf62d49b24.
+Both check the all-column conjugations, aggregate native gate inventory,
+coherent pure matter chart, controller complement and restricted
+source/secant conclusion. The final c=1 wording correction is included.
+
+A bounded exact-integer development check verifies the character identity
+for every nonzero a at n=2,...,6, and all128 conjugation columns in the
+four-CAR construction; the general proof is (28)-(30). Work, protocol,
+assembly, generated work-view and repository guards pass; repository
+warnings=0, assembly scientific_promotion=false. git diff --check passes.
+No unchanged full128 numerical certificate or Lean suite was rerun.

@@ -517,6 +517,281 @@ The exact primary all42 solutions, separate whole-HJR curved roots
 and their original proofs are unchanged. No physical D0 no-go,
 new constraint, whole-action GR equality or goal closure is asserted.
 
+## 7c. Generate the original pure matter section with the existing native words
+
+24 October 2026; input 2df9eeecf5ecd4f1d423199f91270604d3bd4146.
+This consumes the addressed Golden/recording palette of
+[A4D_NATIVE_GOLDEN_HISTORY_PREPARATION](A4D_NATIVE_GOLDEN_HISTORY_PREPARATION.md)
+and the equal-inventory cells of
+[A4D_PAID_GOLDEN_WORD_QUERY_SOURCE_LIMIT](A4D_PAID_GOLDEN_WORD_QUERY_SOURCE_LIMIT_2026_10_21.md#2-equal-cost-forward-cells-including-every-controller-complement).
+It supplies a concrete missing map in section7b: a coherent preparation
+of the ORIGINAL pure four-grade matter section, including its full
+site/RIGHT lift and material-control comparisons. The prior paid moment
+writer instead realizes specified moments with a generally mixed active
+CAR state; it cannot silently substitute for this preparation.
+
+The result is exact on a dense set of finite programme settings and
+approximates any prescribed finite matter section to arbitrary accuracy.
+It is not an exact finite-word compiler for arbitrary real amplitudes.
+The physical admission and pricing of the inherited addressed palette,
+fixed basis inputs and known-one resource remain its original hypotheses.
+
+### One all-column identity supplies every required local rotation
+
+Write G=exp(theta Y), Y=|1><0|-|0><1|,
+cos(theta)=sqrt(p), sin(theta)=p. On n>=2 binary registers let
+X^a|z>=|z+a> and Z^b|z>=(-1)^(b.z)|z>, with bit addition modulo2.
+For any nonzero a put H_a={b:b.a=1} and K=2^(n-1). Then
+
+    W_b=X^a Z^b,       W_b^2=-I,
+    [W_b,W_c]=0       (b,c in H_a),
+    sum_(b in H_a) W_b=K (|a><0|-|0><a|).                 (28)
+
+These are algebraic names for the proof, not newly admitted Pauli gates.
+For the sum, the character sum over H_a is K at z=0, -K at
+z=a, and zero at every other basis input. The commutation follows
+because both b.a and c.a equal1.
+
+Choose a reversible binary linear map M with M e0=a, expressed as a
+finite CNOT word of length l_M. Such an M is obtained by extending a
+to a binary basis and elementary row operations; swaps use three CNOT.
+For each b set v=M^T b-e0, so v0=0, and use the actual CNOT word
+
+    N_v=I+e0 v^T=product_(j>0, v_j=1) CX(j -> 0),
+    Q_b=M N_v.
+
+Since N_v^2=I, Q_b e0=a and Q_b^(-T)e0=b. Thus
+
+    Q_b G_0^m Q_b^dagger=exp(m theta W_b),
+    D_(a,m):=product_(b in H_a) Q_b G_0^m Q_b^dagger
+             =exp(K m theta J_(0,a)),
+    J_(0,a)=|a><0|-|0><a|.                                (29)
+
+Every one of the other 2^n-2 basis columns is fixed exactly.
+All factors use forward G and CNOT; the inverse of a CNOT word is
+its reversed word. For m>=1 the literal inventory is
+
+    K m Golden gates + K(2 l_M+n-1) CNOT.                 (30)
+
+Indeed b -> v is a bijection onto the vectors v0=0, whose total
+Hamming weight is (n-1)2^(n-2). This is a finite, potentially very
+expensive construction, not an efficient or compulsory compiler.
+
+Conjugating by X^x gives the plane (x,x+a). Implement each bit of
+X^x by CNOT from the EXISTING paid known-one c, adding 2|x| CNOT.
+On the actual c=1 input the rotation is precisely J_(x,x+a).
+The c=0 block is the UNTRANSLATED rotation J_(0,a), not identity.
+It remains part of the full unitary and any whole-operator Book price.
+
+The owned irrational-angle proof applies without change:
+2cos(2theta)=2sqrt(5)-4 has a conjugate below -2, so theta/pi
+is irrational. Consequently the positive angles K m theta are
+dense modulo2pi for every fixed finite n. Equations(28)-(30) prove
+the needed native pair rotation, rather than assuming controlled-G,
+a new arbitrary-angle gate or an unpriced address multiplexer.
+
+For n=4,a=15 one may take M=CX(0->1)CX(0->2)CX(0->3).
+This gives exactly 8m G+72 CNOT for the (0,15) plane. In
+particular it fixes the clock |1> and normalization |14> columns.
+Unlike proper exterior Lorentz transport, this actual Golden word
+can rotate the scalar/top pair.
+
+### A coherent generator for the whole original material chart
+
+Prepare the fixed CAR seed
+
+    m_seed=sqrt(p)|1>+p|14>.                              (31)
+
+From the existing paid blank |0> this is one G on bit0, the three
+fan-out CNOTs above, then CX(c->bit0) on the paid c=1 sector.
+The whole c=0 complement is retained. Preparation of the blank,
+known-one, address and RIGHT seed is not declared free or derived here.
+
+Embed the finite physical site set in r address bits and apply (29)
+with n=r+4 to the TWO pairs at each actual site x:
+
+    (x,14) -> (x,0) by angle alpha_x,
+    (x,14) -> (x,15) by angle beta_x, in this order.
+
+On c=1, each pair construction fixes every other address/CAR basis vector,
+including unused address labels. Any binary address padding remains in
+the complete physical carrier and price. Their product therefore implements
+a genuinely coherent address-diagonal unitary, with no measured
+address selection. On c=1 its output at x is exactly
+
+    m_x(alpha,beta)=sqrt(p)|1>
+       +p sin(alpha_x)|0>
+       +p cos(alpha_x)sin(beta_x)|15>
+       +p cos(alpha_x)cos(beta_x)|14>.                    (32)
+
+For psi_0,x^2+psi_4,x^2<p^2, the original positive-grade14 section
+has the regular coordinate map
+
+    alpha_x=arcsin(psi_0,x/p),
+    beta_x=arcsin(psi_4,x/sqrt(p^2-psi_0,x^2)).            (33)
+
+The material Jacobian determinant is
+p^2 cos(alpha_x)^2 cos(beta_x)>0. Thus two control angles cover
+both original material directions at every free site, including
+compact material variations with the field collar held fixed.
+This is more than matching one sinusoidal trajectory or one moment.
+
+For any ACTUAL supplied address/RIGHT seed with coefficients chi_x,
+the complete map is
+
+    C_seed=sum_x |x> m_seed chi_x^dagger
+      -> C(alpha,beta)=sum_x |x> m_x(alpha,beta) chi_x^dagger.  (34)
+
+It preserves C^dagger C exactly and transports every off-diagonal
+site block by U_x rho_xy U_y^dagger. Those coherences are retained
+and transformed, not measured away or asserted numerically unchanged.
+It applies both to the counting-site input(4) and to the different
+fixedRIGHT128 lift at their respective supplied chi_x. It does NOT
+identify those two input states, construct a free uniform counting
+seed, or prove their native initial preparation.
+
+Equations(32)-(34) hold literally for all compiled angle settings;
+density gives arbitrary finite-section accuracy. In particular the
+primary psi=(sigma r_h cos(ku),sigma r_h sin(ku)) lies in this
+chart for small sigma. Its approximate preparations need only this
+native pair construction, not a supplied continuously tunable matter
+gate. The complete finite input error is controlled by the maximum
+per-site angle error: the two rotations are norm-Lipschitz, hence
+||C_tilde-C||_HS <= (eta_alpha+eta_beta)||C_seed||_HS.
+This bound includes the real RIGHT lift.
+
+A more economical sequential word (29) with n=4 generates
+sqrt(p)|1>+c cos(j delta)|0>+c sin(j delta)|15>+d|14>
+at native delta=8m theta, from its actual generated first state.
+It is useful inside the stage-clock executor, but does not identify
+its execution-stage index with the primary null coordinate u.
+Indeed the existing all40 proof makes the scalar Euler vanish for
+ANY u-profile by v-Stokes; it does not select this waveform.
+The timelike Cauchy owner assumes g^{00}>0, whereas this chart has
+g^{uu}=0. Neither Cauchy evolution nor a cyclic-history boundary is
+being inserted by calling the address u a clock.
+
+### Material source comparisons use paid programmes, not derivatives of one fixed word
+
+Replace every G^k slot in (29) by the owned equal-inventory echo
+cell W_(N,k), with N,k of the SAME parity and |k|<=N. This is the identical
+cell-count formula; even N,k additionally allow the exact vacuum
+center k=0. It uses N forward G and
+2N CNOT at the same addresses and has full operator
+
+    |0><0|_c tensor G^N + |1><1|_c tensor G^k.
+
+After the pair translation the complete plane compiler is
+
+    |0><0|_c tensor exp(K N theta J_(0,a))
+    +|1><1|_c tensor exp(K k theta J_(x,x+a)).             (35)
+
+Its literal inventory is
+
+    K N G + [2KN+K(2 l_M+n-1)+2|x|] CNOT.                (36)
+
+Every controller column is present. A common N of the chosen parity covers any finite
+catalogue of centers and stencil endpoints on the fixed finite mesh.
+The c=0 block, full duration and additive per-address inventory are
+then the SAME across those settings. There is no uncharged inverse
+or omitted compiler clock.
+
+Let Q_j be integer returns with
+epsilon_j=2K Q_j theta-2pi l_j ->0, epsilon_j !=0.
+For a center k_j of that parity, the exponents k_j+/-2Q_j give precisely the
+two neighboring angles alpha_j+/-epsilon_j. Density permits centers
+alpha_j approaching any target alpha, and a common N_j pays every
+required endpoint. The same construction is used independently in
+all free alpha_x,beta_x slots. Prepared-state secants converge to the full
+material derivative through (33),(34). They are not the ordinary
+derivative of a fixed finite word or of nearest-programme rounding.
+
+The prepared-state statement uses the actual c=1 input. The c=0
+block is fixed across settings at one resolution but may change when
+N changes; it is not thereby negligible in the Book functional.
+No full-operator heat/source limit follows from material accuracy.
+
+For an actually fixed finite downstream execution whose ENTIRE price
+is a C1 function of these prepared states, the price secants converge
+to its true material covector as well. For the finite complete CQ tree,
+q log q=||X||^2 log||X||^2 is C1 even at a born-zero leaf, so this
+statement includes all outcomes without a probability floor. The
+inherited deterministic additive preparation charge is common at each
+resolution and cancels in its secant, while every downstream charge
+and probability remains. This uses one fixed downstream price function,
+not an uncontrolled sequence of changing whole Book valuations. It
+asserts no uniform second-derivative bound at the dark seed.
+On a controlled C3 chart, central error is O(epsilon_j^2), plus
+the error from the approximated center. The physical field-source
+norm must also include the actual inverse Jacobian of (33), true
+spatial weights, source gain and the downstream pullback norm.
+
+Here equal inventories make only the INHERITED additive fixed
+primitive ledger constant. They do not make minimal programme
+description, whole Book heat, a moving initial preparation,
+order-dependent work or an arbitrary stopping price constant.
+Different endpoints are different deterministic programmes with
+their retained actual codes; a mixture or coherent superposition
+of code settings requires its own complete price. There is no
+physical same-initial programme selector asserted in (35).
+
+### The same-source adjoint makes the gain and the remaining obstruction explicit
+
+Consume the already proved
+[N1 constrained causal completion](sources/d0_same_execution_spatial_source_2026-10-21/execution/N1_CONSTRAINED_CAUSAL_COMPLETION.md),
+rather than adding free preparation Euler equations.
+For the actual full finite CQ tree, X_w=K_e X_v, with all charges
+already included once in C_omega, it gives
+
+    P_omega=[C_omega+(ln p_omega+1)/ln(phi)]X_omega,
+    P_v=sum_(e:v->w) K_e^dagger P_w,
+    DS=sum_omega p_omega DC_omega
+       +2 Re sum_(e:v->w)<P_w,(DK_e)X_v>
+       +2 Re<P_root,DX_root>.                            (37)
+
+The zero-amplitude entropy gradient is its continuous zero limit.
+Generated material states (32) are among the internal X_v; their
+independent Rayleigh Euler is not imposed. Every actual preparation
+gate/control derivative remains in (37), together with the genuine
+initial boundary. A programme spanning a previously free preparation
+direction still has that source through its control; generating its
+state does not solve the corresponding stationarity equation. On
+finite native programme grids, (37) is the
+limiting secant covector just described, not a fictitious derivative
+of a countable processor.
+
+This is a positive substitution for the pure-material preparation
+oracle on the inherited addressed interface. It does NOT repair
+section7a's full-price mismatch simply by moving the preparation
+inside the apparatus. If the same pure counting-site input is
+prepared, its subsequent full128 fine-record probabilities are the
+same; deterministic retained preparation does not erase their entropy.
+For the actual analytic material extension its logarithmic source
+in (20)-(22) is pulled back through (33) and (37). At fixed positive
+sigma the native secants recover that source; no uniform
+sigma->0/precision interchange is claimed. Actual extra measured
+preparation histories or a different valuation add their real source,
+rather than a subtraction chosen to cancel the logarithm.
+
+Likewise, the existing N1 identity DS=gamma_1 DJ2+D B applies only
+after its actual query/preparation/baseline map has been identified.
+The current material compiler neither equates the original full128
+suffix with that different N1 detector nor proves D B=0 for Book03.
+
+The original operational books do provide a DIRECT variational route:
+Book00's admissible subfunctor includes gate stationarity, and
+Book03 sections03.8 and03.25 state finite/master stationarity.
+It need not be inferred anew from reversible computation or Shannon
+entropy. Book01 F0=|D_min|, its subadditive pairing rule and the
+internal trace F=(QUP)^dagger QUP remain the owned definitions;
+they do not identify the whole executed price with gate count.
+The remaining physical substitution is the original master/Cost-Info
+functional and admissible controls of THIS complete execution,
+including the unshifted controller blocks in (35), initial
+address/RIGHT preparation, actual clock and every independent
+upstream source. No new selection principle, independent task,
+certificate catalogue, native minimum or physical GR closure follows.
+
 ## 8. Reproduction
 
 Run from this directory:
