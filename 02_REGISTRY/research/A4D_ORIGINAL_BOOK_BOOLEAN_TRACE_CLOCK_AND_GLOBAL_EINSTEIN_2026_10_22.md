@@ -831,6 +831,26 @@ moving preparation/Gram and every actual additional stack source remain.
 The unresolved seam is the same-execution spatial/control/full-valuation
 binding, not lack of a geometric inverse or another Taylor coefficient.
 
+
+**Complete two-fresh Julia history application (23 October).**
+[Paid writer Section13](A4D_PAID_MOMENT_FIELD_WRITER_2026_10_21.md#13-the-literal-two-fresh-julia128-word-on-the-complete-scene-clock-carrier)
+now applies the OWNED negative-reflection and cyclic-holonomy lemmas to
+TWO distinct retained App128s of the literal signed-Julia implementation.
+Equations(59)-(65) give its whole scene-clock heat and true first source,
+including all33 scene modes, full App complements and separate oldRIGHT.
+Bistochasticity cancels the first winding source; it does not cancel the
+second. An exact thirteen-matrix flat-ray reduction and strict convexity
+prove FIXED-beta heat nonneutrality, without a rank scan or a small-beta
+limit. The genuine PRE feedback, original stage preparation and conditional
+whole HJR row are (71)-(72). Actual recording/environment stages, native
+primitive length, Rayleigh versus owned residual binding and every real
+Info/work source retain their scopes. This supplies the thermal operator
+on the declared homogeneous scene-clock realization; it does not identify
+it with the old spatial stopped price, the older v8 SELECT or selected
+physical Cost-Info. The remaining parent application is that SAME-execution
+source/geometry/field-admission map, with global Einstein-rigidity premises
+and original exact nonvacuum recovery preserved.
+
 ### 9.2 The ordinary complete Book trace localizes too, with its true heat weight
 
 For actual block-diagonal \(\Delta=\bigoplus_h\Delta_h\) and

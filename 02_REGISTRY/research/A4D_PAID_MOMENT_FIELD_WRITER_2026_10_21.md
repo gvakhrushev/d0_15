@@ -1753,3 +1753,349 @@ as physical evolution nor substitutes a fitted action or hand-made
 negative heat term. The original exact nonvacuum family, global
 Einstein-rigidity consumers and their physical hypotheses are
 preserved. Full D0->GR, positive_gr and raw216 remain open.
+
+
+## 13. The literal two-fresh Julia128 word on the complete scene-clock carrier
+
+This applies the already owned cyclic-holonomy heat and reflection lemmas
+to a different, explicitly specified execution: TWO original Julia128 rounds,
+with distinct fresh App128 registers and neither old register reset. It
+computes the previously unspecified thermal row on this carrier. It does
+not infer a physical scene/clock selection from an instrument. The existing
+[recorded-clock theorem](sources/d0_recorded_scene_clock_heat_2026-10-22/THEOREM.md),
+Sections2-4, supplies the holonomy/Fourier and two-reflection methods; the
+[minimal-reflection owner](A4D_NATIVE_MINIMAL_REFLECTION_TWO_TICK_INFORMATION_WARD_2026_10_22.md),
+Section1, supplies the literal negative-range isometry. These proofs are
+reused. Its minimality/uniqueness hypotheses are not needed at a zero mode.
+The new substitution is their application to two DISTINCT retained App
+factors. The older XOR-copy recording extension has a different monodromy.
+
+### 13.1 Keep the actual row of Q, including every unprepared column
+
+Use precisely the signed Julia SELECT of the full-Lorentz owner (5)-(7),
+not a completion reconstructed from its initialized Kraus column. Let
+R_(l,c)=Q_(blank,(l,c)) be the original row blocks, l=0,...,31, c=0,1,
+and A=R_(0,0)=h D_sp/16. Put p=phi^-1 and, for alpha=(l,c,b),
+\[
+ L_{l,c,0}=pR_{l,c}^\dagger,\qquad
+ L_{l,c,1}=\sqrt p R_{l,c}^\dagger,\qquad
+ L^\dagger L=I_D,\qquad U=I_{128D}-2LL^\dagger.       \tag{59}
+\]
+Here D denotes the DATA dimension, including all sites/CAR16; D_sp is the
+spatial operator. The complete blocks U_(alpha,beta), not just their blank
+column, are delta_(alpha,beta)I-2L_alpha L_beta^dagger. In particular
+\[
+ K_{l,c,0}=\delta_{l0}\delta_{c0}I-2p^2R_{l,c}^\dagger A,
+ \qquad K_{l,c,1}=-2p\sqrt p R_{l,c}^\dagger A,\qquad
+ K_0=B=I-\alpha D_{\rm sp}^2.                         \tag{60}
+\]
+Thus (59) reproduces every original fine Kraus operator. L is the NEGATIVE
+PROJECTOR isometry; it is not the Kraus isometry (K_alpha)_alpha. Equations
+(59)-(60) use no inverse of D_sp or I-B and retain their zero modes.
+
+The pair J(X),J(X)^dagger in this actual palette also gives
+sum_alpha L_alpha L_alpha^dagger=I_D: its two first rows contribute
+X^dagger X+(I-XX^dagger)+XX^dagger+(I-X^dagger X)=2I.
+Walsh mixing, duplicate labels, the fixed port vector and signed words
+preserve this sum. Hence the literal isometry channel is BISTOCHASTIC on
+the whole strict Julia chart, including nonnormal proper-link blocks.
+This is an all-column statement, not a claim about the separate K-channel.
+
+The older v8 BetaHat/ZetaHat SELECT shares A,B and conditional scalar (8),
+but equality of its whole contextual unitary with this Julia SELECT was
+never proved. The full-Lorentz owner explicitly preserves that boundary.
+No Householder/direct-rotation or minimal Kraus completion replaces (59).
+
+### 13.2 Fresh registers change the complete holonomy
+
+On DATA tensor App1 tensor App2 let U_i act by (59) on DATA/App_i and
+by identity on the other register. Both original fine registers remain.
+Put K=128, M=DK^2, r=DK and V=U_2U_1. The two negative projections each
+have rank r. Their actual overlap on a DK-dimensional space is
+\[
+ C_{jk}=L_k^\dagger L_j,\qquad C=C^\dagger,\quad\|C\|\le1,
+ \qquad X=C^2.                                        \tag{61}
+\]
+This is not L^dagger L: j,k are independent retained App indices. The
+owned two-reflection identity now gives, for every q>=1,
+\[
+ \operatorname{Tr}V^q=M-2r+2\operatorname{Tr}T_{2q}(C),\quad
+ \operatorname{Tr}C^2=D,\quad
+ \operatorname{Tr}V=M-4r+4D,\quad
+ \operatorname{Tr}V^2=M-16D+16\operatorname{Tr}C^4.       \tag{62}
+\]
+The first identity also holds at overlap eigenvalues 0 and +/-1, by its
+polynomial form. All complementary and intersection modes are included.
+In particular the first winding source is ZERO; the next one need not be.
+The second identity is Tr[(sum_j L_j L_j^dagger)^2]=D, using (59)'s actual
+bistochasticity. A single round is isospectral, but its conjugating Q acts
+on a different App factor in each fresh round. It cannot be canceled
+through the second round on the shared DATA.
+
+For DATA16, M=262144 and r=2048 before a separate oldRIGHT multiplicity.
+No App128 is identified with that oldRIGHT. For every field direction,
+\[
+ \delta C_{jk}=(\delta L_k)^\dagger L_j+L_k^\dagger\delta L_j.
+                                                               \tag{63}
+\]
+Both fresh-round sources occur. The existing Sylvester/SELECT/whitening
+jets determine delta L from the actual coframe, links and observer; a
+field-independent square root of C^2 or an eigenvector derivative is
+unnecessary.
+
+### 13.3 All 33 scene modes, the literal cyclic clock and their source
+
+Use EXACTLY the homogeneous scene-times-clock normalized incidence
+carrier of the recorded-clock theorem, not the spatial stopped heat.
+Its fixed scalar scene is K(9,11,13), with degrees 24,22,20, and
+\[
+ R_S=\operatorname{diag}(d_v+2)^{-1/2},\quad
+ B_S=R_S A_S R_S,\quad C_S=R_S^2,\quad
+ \mathcal L_N=I-B_S\otimes I-C_S\otimes(\mathcal T+\mathcal T^\dagger).
+\]
+The cyclic shift T carries each actual primitive prefix stage of the
+specified word and has closing holonomy V. Fix its length N>=3, the
+scene graph, all register ranks and beta=2phi^-2 as in that owner.
+Define its ALREADY OWNED coefficients by
+\[
+ f(\theta)=\operatorname{Tr}_{33}e^{\beta(B_S+2C_S\cos\theta)}
+       =c_0+2\sum_{j\ge1}c_j\cos(j\theta),\qquad
+ 0\le c_j\le33e^{12\beta/13}I_j(\beta/11).
+\]
+Applying (62) to the entire trace gives
+\[
+ \begin{split}
+ Z_N&=Ne^{-\beta}\left[M c_0+2\sum_{q\ge1}c_{qN}
+       \{M-2r+2\operatorname{Tr}T_{2q}(C)\}\right],\\
+ \delta H_N&={4Ne^{-\beta}\over\beta Z_N}
+       \sum_{q\ge2}c_{qN}\operatorname{Tr}
+                     [T'_{2q}(C)\delta C],\qquad
+ H_N=\beta^{-1}\log(d_R Z_N).                         \tag{64}
+ \end{split}
+\]
+The q=1 derivative vanished by (62), not by an assumed neutrality of
+history. d_R=128 is the separate passive RIGHT dimension here. It
+multiplies the actual Z; its constant logarithm drops only from this
+fixed-rank partial. No trace is normalized by the fibre dimension.
+Polynomial differentiation under the convergent series is legitimate
+by the displayed Bessel majorant. With the actual Hilbert-Schmidt norm,
+|delta Tr T_(2q)(C)|<=4q^2 sqrt(D)||delta C||_HS. Since
+Z_N>=33NM exp(-2beta), a quantitative whole-source bound is
+\[
+ |\delta H_N|\le {16e^\beta\sqrt D\over33\beta M}
+       \sum_{q\ge2}q^2c_{qN}\,\|\delta C\|_{\rm HS}.    \tag{65}
+\]
+This retains the true field-lift norm; it is not an h-uniform all42 bound.
+For a BARE normalized cyclic clock use c_j=I_j(beta), c_0=I_0(beta)
+and replace33 by1 in (65). That is a different declared graph, not a
+replacement of the 33-scene trace. Neither beta is silently identified
+with the spatial stopped beta_sp=4alpha of Section12.
+
+N is the length of the actual fixed primitive schedule, not two ticks
+or nine macro calls. Per round the literal circuit has G,G^dagger,
+four Walsh preparations, SELECT,SELECT^dagger and the port-controlled
+blank sign. Their admitted expansions and any genuine record/environment
+stages determine N. No owner has supplied all these native expansions.
+A field comparison with a different schedule has its own actual length
+and cost; it is not a differentiable change at the fixed N in (64).
+
+### 13.4 Exact flat coframe application, rather than another rank scan
+
+There is a closed native application of (62)-(64). On the periodic
+L=2 four-role grid, hold the observer at rest, links at identity and
+choose constant creation legs C_r=nu c_r, 0<nu<1. The four shifts are
+commuting Hermitian involutions. This is a regular flat coframe ray
+inside the strict Julia window, not the curved primary recovery or
+an assertion of a native C1 actuator. Put s=sqrt(1-nu^2). The actual
+row-Q channel has a mathematical Kraus representation with weights
+\[
+ w_I={(1+s)^2\over4},\qquad
+ w_{\gamma_a}={\nu^2\over16}\ (a=1,...,8),\qquad
+ w_{P_r}={(1-s)^2\over16}\ (r=1,...,4).                \tag{66}
+\]
+Here gamma_(2r-1)=c_r+c_r^dagger, gamma_(2r)=i(c_r^dagger-c_r), and
+P_r=I-2c_r^dagger c_r. On L=2 each Majorana weight is split equally
+between gamma_a and S_r gamma_a. Their commutation-sign rows coincide,
+so they recombine in the spectrum calculation below. This is a change
+of mathematical Kraus coordinates, not an admitted free physical gate
+or a discarded fine record. The original App dimension stays128.
+For a one-site carrier all shifts are identity, and the same channel
+calculation holds without shifts. That diagnostic is not substituted
+for the refining physical lattice.
+
+Let chi_ij be the commutation sign of these thirteen Hermitian unitaries:
+I commutes with all; distinct Majoranas anticommute; a parity anticommutes
+with its own two Majoranas and commutes with the others; parities commute.
+Set A_s=diag(sqrt(w)) chi diag(sqrt(w)). A block change of basis by the
+corresponding Pauli unitaries gives the EXACT full overlap spectrum
+\[
+ C\simeq(A_s\otimes I_D)\oplus0_{r-13D},\qquad
+ \operatorname{tr}A_s^2=1,\qquad
+ Q(s):=\operatorname{tr}A_s^4
+ =-{103s^8+168s^7-28s^6-72s^5-262s^4+24s^3-188s^2-120s-137\over512}.
+                                                               \tag{67}
+\]
+The extra split L=2 Kraus coordinates add zeros, then the original128
+coordinates supply the displayed total r. Thus neither the fixed stage
+count nor the actual complementary thermal multiplicity is reduced.
+All trace polynomials can equivalently use chi diag(w), avoiding weight
+square-root derivatives at the continuous nu=0 endpoint. Exactly,
+\[
+ \begin{split}
+ 1-Q(s)&={(1-s)^2(1+s)
+ (103s^5+271s^4+346s^3+442s^2+255s+375)\over512}>0,\\
+ Q'(s)&={(1-s)
+ (103s^6+250s^5+229s^4+184s^3+53s^2+62s+15)\over64}>0. \tag{68}
+ \end{split}
+\]
+For s=4/5 and3/5 the exact fourth moments per DATA mode are respectively
+166706057/200000000 and233401/390625. Consequently the SECOND winding
+moment of the actual two-fresh word has a strictly negative nu-source
+on 0<nu<1. This is a thirteen-dimensional structural reduction for an
+entire native flat ray, not a numerical rank census.
+
+This also proves nonneutrality at the FIXED beta of the scene owner,
+without taking a small-beta limit or assuming signs of individual
+Chebyshev derivatives. Define
+\[
+ g(x)=e^{-\beta}\sum_{k=0}^{N-1}
+ f((2\arccos\sqrt{x}+2\pi k)/N).
+\]
+It has strictly positive power coefficients a_j for j>=1 and hence
+is strictly convex on[0,1]. Here is a proof, including the noncommuting
+scene matrices. First for a bare clock with heat trace
+b_(N,t)(x)=sum_k exp[-t(1-cos((2acos sqrt(x)+2pi k)/N))], let
+P(z)=2^(1-N)(T_N(z)+1) be the monic characteristic polynomial of the
+Hermitian pi-twisted clock adjacency, and c=2^(2-N). Its x-sector
+characteristic polynomial is P(z)-cx. The resolvent expansion and
+integration by parts give, for j>=1,
+\[
+ [x^j]b_{N,t}=e^{-t}{t c^j\over j}
+                  \mathcal L^{-1}[P(z)^{-j}](t)>0.     \tag{69}
+\]
+All roots of P are real, including repetitions. Each inverse-Laplace
+factor is t^(j-1)exp(lambda t)/(j-1)!>0; their convolution is positive.
+This proves (69) without a principal-angle gap. N=1,2 also give the
+checks exp(-2t)exp(2tx) and2exp(-t)cosh(t sqrt(x)).
+
+For the scene, Dyson expansion in entrywise nonnegative B_S around
+diagonal2C_S y yields
+Tr exp[beta(B_S+2C_S y)]=integral exp(a y)dmu(a), with a positive finite
+measure supported on[2beta/26,2beta/22]. Its weights are products of
+B_S entries along closed scene walks, integrated over positive dwell
+time simplices. The zero-jump terms already give33 positive atoms.
+The total mass is Tr exp(beta B_S). Hence g is the positive mixture
+e^-beta integral exp(a)b_(N,a)dmu(a), proving the assertion while
+retaining every scene mode; B_S and C_S need not commute.
+
+At nu=0 the LITERAL row-Q extension has X=C^2 a rank-D projection.
+It has the SAME full M,r,N, although its decoded coframe endpoint is
+singular. For nu>0, Tr X=D but Tr X^2=D Q(s)<D. The convex chord and
+(69) therefore prove
+\[
+ Z_N(0)-Z_N(\nu)\ge2a_2D[1-Q(s)]>0,
+ \qquad H_N(\nu)<H_N(0)\quad(0<\nu<1).                \tag{70}
+\]
+No physical singular preparation or inverse at nu=0 is used: it is
+the analytic endpoint of the explicit matrices (59). Analyticity on
+the connected regular ray now excludes a constant heat on ANY open
+nu interval. This does not assert a nonzero derivative at every chosen
+primary field, monotonicity of the entire heat along the ray, or a
+stationary/nonstationary conclusion for TOTAL H+J+R. It does show why
+the fixed-beta complete history heat by itself cannot agree with aG
+on the WHOLE flat ray, where G is the zero-Lambda Einstein tensor:
+these constant coframe metrics are flat, whereas its scale source is
+not identically zero. This does not exclude a cosmological-volume term.
+A genuine full
+valuation cancellation, if present, must be proved, not prescribed.
+
+### 13.5 Same return cut, genuine preparation and the whole declared HJR row
+
+For feedback take the declared FULL-WORD return U_Book=T^N at clock
+stage0; its internal return is V, not one primitive T-step. At the joint
+PRE cut P0=I_DATA tensor |0,0><0,0|, the exact compression
+P0 V P0=B^2 and its return defect is I-B^4. For a fixed protected scene
+subspace of ACTUAL rank r_S, at that same clock stage, the feedback is
+\[
+ F_z=(1-z)I+zB^4,\qquad
+ J_{\rm PRE}=-d_R r_S\operatorname{Tr}_D\log F_z,\qquad
+ \delta J_{\rm PRE}=-4d_R r_S z\operatorname{Tr}
+                                      (F_z^{-1}B^3\delta B).     \tag{71}
+\]
+The full scene cut has r_S=33; a different protected cut must retain
+its true rank and its genuine variation. No factor N is inserted for
+a cut on ONE specified stage. For the single primitive T-step that cut
+instead has PTP=0 and defect P; it is NOT (71). NEXT/P_rec is not this
+PRE cut. Formula
+(71) consumes the existing two-tick return identity; it does not select
+that cut physically or equate a feedback determinant with a waiting law.
+
+Whenever the declared Book binding uses THIS incidence operator for its
+Rayleigh part, retain its actual normalized whitened preparation sigma,
+including oldRIGHT, on the ORIGINAL ungauged stage space. Then
+\[
+ \begin{split}
+ S_{\rm hist}&=H_N+J_{\rm PRE}+\operatorname{Tr}(\sigma\mathcal L_N),\\
+ \delta S_{\rm hist}
+ &=\delta H_N+\delta J_{\rm PRE}
+       -2\operatorname{Re}\operatorname{Tr}
+                    [\sigma(C_S\otimes\delta\mathcal T)]
+       +\operatorname{Tr}(\mathcal L_N\delta\sigma).    \tag{72}
+ \end{split}
+\]
+Here (64) gives the first term and (71) the second; every prefix gate
+contributes to delta T. If the actual R is instead the owned residual
+sum_omega xi_omega K_omega^dagger K_omega, its ACTUAL derivative is
+retained instead of this Rayleigh expression. Those are distinct R
+bindings, not interchangeable completions. Moving Gram/whitening,
+beta, graph, cut, initial density or calibration has its own true row.
+Gauging prefixes to the closing holonomy simplifies heat only: it does
+not freeze sigma or eliminate those Rayleigh/preparation sources.
+No preparation minimizer, reset or independently selectable blank is
+introduced. Any actual additional Info/work/factory/recording terms
+remain in the physical valuation; (72) is not their same-price proof.
+
+Two fresh coherent fine registers and a programme with actual intermediate
+readout/copy/dephasing stages can have the same fine probabilities and
+DIFFERENT whole holonomies. The latter stages must be included if the
+physical execution contains them. In particular deferred-measurement
+instrument equivalence does not justify deleting their heat or work.
+Approximate positive-G inverse implementations likewise retain their
+whole-word errors; exact (59) is not an admission theorem for G^dagger,
+controlled Julia gates or a smooth native field writer.
+
+A bounded inline diagnostic used the actual original signed32-word row
+with CAR16 at nu=3/5,4/5. After exact duplicate/sign compression, all256
+overlap eigenvalues agreed with (67), including its zeros, within2.0e-15;
+Tr C^2=16 and Tr C^4=13.33648456,9.56010496. The literal64-row isometry
+and unital defects were below4.5e-16. An independent generic DATA2/App2
+example, used solely to test the fresh embeddings, matched four complete
+monodromy moments within4.5e-14 and its full24-mode bare-clock partition
+exactly at displayed precision (13.538944350239994). Its moving-isometry
+heat source .03404343194567098 agreed with whole-price secants within
+1.4e-10. None of these numerical fixtures claims an actual primitive N,
+the physical primary solution, a certified refinement or new acceptance.
+The full scene integration above is analytic and consumes its owned heat
+lemma; it was not replaced by that small-clock diagnostic.
+
+### 13.6 Parent substitution and the remaining physical application
+
+For THIS literal two-fresh Julia execution on the already owned homogeneous
+scene-clock realization, the whole-history thermal operator and, for the
+declared RAYLEIGH binding, full HJR partial are now (59)-(72), with their
+true retained multiplicities and
+actual initial/preparation row. The previous single-reflection heat
+neutrality cannot be substituted here. This supplies a concrete source
+functional to compare with Section12's all40 spatial inverse and all42
+paid comparison, rather than another independent geometry construction.
+
+It still takes a proved SAME execution/valuation map to identify (72)
+with either the old spatial stopped scalar (55) or the selected physical
+Cost-Info. That map must determine actual primitive admission and clock,
+registration/cut, initial/preparation/observer/work/Info rows and the
+permitted field/control variations. The global Einstein-rigidity
+consumer still requires actual metric descent, open naturality, smoothness
+and its physical Golden weight, or the independent J2/Lovelock route.
+The exact nonvacuum recovery and strong original CQ source limit remain
+inputs with their original scopes. No fitted negative heat term, new
+selector/task, positive_gr, GR_closed or raw216 promotion is made.

@@ -5853,3 +5853,87 @@ consumed without adding a scientific acceptance. No heavy registered
 proof was replayed. The prior Section11 historical 9,291-byte slice
 at published 64a58fe0 remains byte-identical with its original SHA-256
 93896b324f69ced149e6f0f40b40d36eacff3f0dbb471f15f668c572693bead2.
+
+
+## 23 October complete two-fresh Julia history source application
+
+Input fe5cf335. Phase: native realization / final source composition;
+existing #334 constitutive/native-programme-v1 owner. Write paths:
+paid-writer Section13, original Book/global Section9.1 application pointer
+and this brief. No new scientific task, carrier, selector, acceptance,
+CORE claim, lifecycle transition or independent certificate.
+
+Owned inputs: literal full-Lorentz signed Julia128 (5)-(7), actual row-Q
+negative-reflection isometry from minimal-reflection Section1; cyclic
+holonomy/Fourier and two-reflection methods from recorded scene-clock
+THEOREM Sections2-4; original two-tick PRE return defect I-B^4. Changed
+application: embed the SAME native reflection on two DISTINCT fresh App128
+factors, retaining both complete fine registers and oldRIGHT separately.
+The previously unspecified thermal operator on this declared homogeneous
+33-scene-times-primitive-clock carrier is now explicitly evaluated by
+(59)-(65). This substitutes that conditional thermal computation, not
+physical selection of the carrier, clock or valuation. No owned generic
+lemma or geometry inverse is re-proved or credited as new.
+
+The DK overlap C_jk=L_k^dagger L_j uses the actual negative-projector
+isometry L, NOT the initialized Kraus column. It keeps every dark/zero
+and complementary mode without inverse Delta. Actual Julia-pair
+bistochasticity makes Tr C^2=D, so the FIRST winding source is exactly
+zero. The SECOND moment is M-16D+16Tr C^4. On the regular L2 flat
+coframe ray its entire spectrum reduces to a thirteen-Pauli sign matrix
+plus the TRUE zero padding. Exact polynomial (67)-(68) gives all nu,
+not a census. Positive inverse-Laplace coefficients and positive Dyson
+scene-path mixture prove strict convexity and fixed-beta heat inequality
+(70) while keeping all33 scene modes and original beta=2phi^-2.
+No heat monotonicity or pointwise-primary nonstationarity is inferred.
+
+Equations(71)-(72) keep the actual protected-scene rank, PRE stage,
+separate RIGHT, every primitive prefix and genuine moving preparation.
+The conditional incidence HJR partial is explicit for its declared
+Rayleigh binding. Feedback (71) tests the completed word T^N at stage0,
+not one primitive T-step. An actual owned
+xi-weighted residual retains its OWN derivative instead of an invented
+Rayleigh replacement. Extra physical recording/Info/work/factory charges,
+native Julia/G-adjoint admission, literal N and C1 field control remain
+unproved, as does equality with old spatial stopped scalar (55) or the
+older v8 whole SELECT. Deferred fine-outcome equivalence does not delete
+recording gates from whole heat. No negative fitted heat term is added.
+
+Smallest decisive check: exact generic fresh-reflection trace identity,
+analytic full-scene source and structural sign-matrix/convexity proof.
+Independent bounded inline symbolic arithmetic reproduced polynomial and
+both rational fourth moments. Integrator numerical diagnostic used actual
+signed Julia rows with CAR16; exact duplicate/sign compression gave all256
+overlap eigenvalues with true unused App modes restored analytically.
+Spectral discrepancy below2.0e-15; isometry/unital defects below4.5e-16;
+Tr C^4=13.33648456 and9.56010496. Generic DATA2/App2 fresh embeddings
+matched four full moments within4.5e-14 and the complete24-mode bare-clock
+partition at displayed precision. Moving-isometry heat source agreed
+with full-value secants within1.4e-10. These fixtures do not stand for
+native primitive N, primary Einstein recovery or a registered certificate.
+
+Remaining positive application: derive and apply the actual SAME execution
+and valuation map to the original spatial geometry/all42 source, with
+free-future field admission and all independent rows. The global metric
+Einstein-rigidity hypotheses, physical Golden weight, exact nonvacuum
+consumer and raw216 remain unchanged; GR_closed=false.
+
+
+Independent native_valuation_map, native_continuation_map and
+universal_parent_map ACCEPTED the FINAL Section13 heading-to-EOF:
+18,052 UTF-8 bytes, SHA-256
+a1f38a3b0232ee0378b6e1fce3025dbb4d7cdf17b3d1c267cf973469d77947bb.
+Review clarified overloaded parity/shift notation, FULL-WORD T^N
+feedback versus a primitive one-step return, the declared Rayleigh
+binding and the zero-Lambda aG comparison. No physical premise or
+formula was weakened. Reviewers checked analytic identities and exact
+bytes; the integrator ran the numerical diagnostic. The separate
+symbolic polynomial calculation was independently reproduced.
+
+Final work, agent-protocol, assembly-contract, generated-work-view,
+repository and diff guards passed; the existing assembly checkpoint
+template was consumed. No heavy registered replay, new scientific
+acceptance or lifecycle promotion was performed. Earlier paid-writer
+proof bytes are unchanged: Section12's historical13,145-byte slice
+at published fe5cf335 retains SHA-256
+7e5e7400c435973dcb3801b225e5552598b764a95c90326515b8641ef098842f.
