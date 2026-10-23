@@ -3440,3 +3440,278 @@ and the actual field-writer image, without replacing Info by a desired
 entropy. The exact nonvacuum and conditional global GR consumers retain
 their original hypotheses. There is no physical GR/raw216 closure,
 new task, claim promotion or additional action in this application.
+
+## 18. Same-prefix Julia continuations: the actual partition gate and its full completion ledger
+
+This consumes Section17 in the parent test required by the global composition:
+compare TWO endings of ONE original prefix using complete continuation
+weights, not only equal minimum future prices. The new input is the actual
+paid warmup state and its blank/orphan posteriors. No independent initial
+reference, replacement Julia row, stopping controller or entropy selector
+is introduced. The exact cost-partition conclusion below is proved
+analytically. The displayed entropy/Bellman numbers are bounded floating
+diagnostics; they are not promoted to an interval certificate or physical
+Book03 valuation.
+
+The owners consumed, rather than reproved, are the [original cost-marked
+history](A4D_SAME_HISTORY_PRICE_AND_SOURCE_COMPOSITION_2026_10_20.md#1-one-original-history-one-actually-derived-marked-operator),
+[prospective finite completion and its boundary potential](A4D_PROSPECTIVE_BOOK_FINITE_FUTURE_LAW_Q8_VERIFICATION_2026_10_20.md),
+[whole-tree amplitude-Born Bellman Info](A4D_AMPLITUDE_BORN_BOOK03_BELLMAN_INFORMATION_AND_SOURCE_WELD_2026_10_22.md),
+[real future coboundary and executed suffix payment](A4D_ENDOGENOUS_GOLDEN_CONTROLLER_AND_BELLMAN_FUTURE_COBBOUNDARY_2026_10_22.md#4-theorem-c--bellman-future-extensions-shift-realised-vertex-information-by-a-zero-mean-coboundary),
+and [fixed-processor absolute-anchor transport](sources/d0_common_execution_closure_2026-10-21/book_binding/BOOK_BINDING_ON_FIXED_PROCESSOR.md#8-positive-conditional-anchor-transport-by-the-actual-fixed-processor).
+
+### 18.1 Two real endings of the same paid prefix
+
+Use the COMPLETE pure-world regime of17.1, including the actual initial
+oldRIGHT and every work/resource factor. Purity is not inferred from
+DATA alone; mixed worlds retain(110)-(111). Use the unchanged original
+regular fixture theta=log(5/4), nu=3/5,
+phases(i,i,-1,-i), and actual K_alpha(theta), alpha=0,...,127.
+All warmup/prefix/future App+bank pairs are already parts of the same
+initial world. Begin with the specified actual pure DATA vector e0 and
+execute THREE original copied warmup rounds, retaining every output:
+\[
+ \sigma_3=\Phi^3(|e_0\rangle\langle e_0|)>0,
+ \qquad \Phi(X)=\sum_{\alpha=0}^{127}K_\alpha X K_\alpha^\dagger.
+                                                               \tag{116}
+\]
+Faithfulness is the owned three-tick theorem, not inferred from a rounded
+eigenvalue. R includes every purifying past work/register. For the next
+actual original prefix round compare its two literal fine outcomes
+K_0=B=I-2p^2 Delta and K_1=-2p sqrt(p) Delta. The second is the ORPHAN
+blank-label/port1 outcome and is never dropped. Put
+\[
+ \begin{aligned}
+ p_a&=\operatorname{Tr}K_a\sigma_3K_a^\dagger,\quad
+ \sigma_a=K_a\sigma_3K_a^\dagger/p_a,\quad a=0,1,\\
+ \sigma_0&=B\sigma_3B/\operatorname{Tr}\sigma_3B^2,\qquad
+ \sigma_1=\Delta\sigma_3\Delta/\operatorname{Tr}\sigma_3\Delta^2.
+ \end{aligned}                                                   \tag{117}
+\]
+Both outcomes have positive probability and faithful conditional DATA.
+They are ACTUAL branches, not two freely offered preparations. Their
+past costs/probabilities are retained upstream. Every other original
+prefix outcome remains present; (117) is not postselection of the
+whole physical world onto two leaves.
+
+A small exact input check makes nonscalarity explicit without a rank scan
+or numerical diagonalization. At this fixture gen=c0 c1^dagger+c1 c0^dagger
+has gen^3=gen and exp(theta gen)=I+(9/40)gen+(1/40)gen^2. The SIGNED row
+is A=(1/16)sum_r(x_r+x_r^dagger-C_r-C_r^dagger), with the actual x_r from
+the original constructor. Exact CAR arithmetic gives
+\[
+ \begin{gathered}
+ m={141489\over10240000},\qquad
+ v={32225121\over104857600000000}>0,\\
+ \Delta^2-2m\Delta+(m^2-v)I=0,\quad
+ \operatorname{Tr}\Delta/16=m,\quad
+ \operatorname{Tr}\Delta^2/16-m^2=v,\\
+ \lambda_\pm={141489\pm9\sqrt{397841}\over10240000},
+ \qquad 0<\lambda_-<\lambda_+<1.                         \tag{118}
+ \end{gathered}
+\]
+Thus this is on the faithful original open chart, with two genuinely
+distinct positive spectral masses. The same argument below works for
+any nonscalar Delta in the stated window, not just two eigenvalues.
+
+### 18.2 Equal minimum price fails the ACTUAL complete cost-partition test
+
+After either ending execute the SAME next complete original128 round,
+with the same fresh registers, controller and copied fine outcomes.
+Its known genuine PORT ledger is c_alpha=1+(alpha mod2); this is the
+complete original port sector, not a claim that the remaining physical
+Cost/Info/work has already been valued. Let
+\[
+ q_{\beta|a}=\operatorname{Tr}K_\beta\sigma_aK_\beta^\dagger,
+ \quad r_a=4p^3\operatorname{Tr}\sigma_a\Delta,\quad
+ C_a=\sum_\beta q_{\beta|a}c_\beta=1+r_a.                 \tag{119}
+\]
+B is invertible, so q_(0|a)>0: the minimum next PORT cost is exactly1
+at BOTH endings. Nonetheless C_1>C_0 strictly. Indeed in a Delta
+eigenbasis let t_i=<i|sigma_3|i>>0 and lambda_i its eigenvalues. Then
+\[
+ \operatorname{Tr}\Delta\sigma_1-\operatorname{Tr}\Delta\sigma_0
+ ={\frac12\sum_{i,j}t_it_j(\lambda_i-\lambda_j)^2
+     (\lambda_i+\lambda_j-4p^2\lambda_i\lambda_j)
+   \over
+    (\sum_it_i\lambda_i^2)(\sum_it_i(1-2p^2\lambda_i)^2)} >0.       \tag{120}
+\]
+All factors have their true sign on0<Delta<I; nonscalarity and
+faithfulness make the sum strictly positive. No entropy interpretation
+or rounding establishes this inequality.
+
+The already-owned complete marked transfer can now be applied to THESE
+two real inputs. For a true common deterministic additional future charge
+kappa, keep that price paid; its exact transform is
+\[
+ \begin{aligned}
+ \mathfrak Z_a(t)
+ &=\sum_\beta q_{\beta|a}e^{-t(\kappa+c_\beta)}
+   =e^{-t(\kappa+1)}[1-(1-e^{-t})r_a],\\
+ \boxed{\mathfrak Z_1(t)<\mathfrak Z_0(t)\quad(t>0),}\qquad
+ {\mathfrak Z_1(\ln\varphi)\over\mathfrak Z_0(\ln\varphi)}
+ &={1-p^2r_1\over1-p^2r_0}<1 .                            \tag{121}
+ \end{aligned}
+\]
+A genuinely common moving kappa and its source cancel only from the
+RATIO, not from either absolute partition. An actual input-dependent
+preparation/storage/controller charge is not such a common baseline.
+It must be retained in the full valuation. This is an exact application
+to the known cost sector of the same native process, including ALL128
+outputs; it is not a new physical sampling rule. It directly defeats
+the proposed substitution of equal minimum continuation prices for
+equal completion partition weights.
+
+### 18.3 Consume the owned completion law with its correct exponent and source
+
+For one FIXED completed positive orthogonal history task under the
+owned BORN_eta+GAIN hypotheses, write w(u,b)=phi^[-(c-I)] and the unique
+already-owned Bellman f_eta. Its genuine remaining completion factor is
+\[
+ b_\eta(u)=\varphi^{\eta f_\eta(u)},\qquad
+ w(u,b)^\eta=P(b|u){b_\eta(u)\over b_\eta(ub)}.            \tag{122}
+\]
+The prospective owner then transports the SAME complete task across
+any passive stopping antichain A by keeping
+sum_(u in A) w_prefix(u)^eta b_eta(u)=b_eta(root).
+An intermediate observation does not set b_eta(u) to1 or replace the
+physical task. This applies an existing theorem, not a new stopping
+selector. Normalized probabilities alone leave the genuine absolute
+input anchor; Book01's halt/refinement compatibility does not remove it.
+For interference-bearing Book memory, a scalar factor must instead be
+replaced by its actual tail Gram object before making this application.
+
+For the declared orthogonal BORN2+GAIN tail in(119), the owned exact
+finite formulas are
+\[
+ h_a=-\sum_\beta q_{\beta|a}\log_\varphi q_{\beta|a},\quad
+ f_{2,a}=\tfrac32 h_a-C_a,\quad
+ Z_{2,a}=\varphi^{2f_{2,a}},\quad m_a=C_a-h_a.              \tag{123}
+\]
+Any genuine common deterministic kappa shifts f2 by -kappa and m by
++kappa, preserving the Z2 ratio. No Book Info is assigned by writing
+(123): it is precisely the conditional class already owned, not an
+assertion that Book03 selects it. The actual Code/Born/Info binding
+remains to be proved.
+
+The objects needed by different consumers must not be interchanged:
+Z2 is the squared-amplitude NORM partition; the literal POSITIVE scalar
+amplitude sum is Q_amp=phi^f2 sum_beta sqrt(q_(beta|a)); the cost-marked
+Born transform is mathfrak Z of(121). A scalar prospective odds equation
+uses its genuine scalar completion weights, not a norm partition merely
+because both are called a partition function. For BORN2 prefixes it is
+instead the genuine relation
+\[
+ s_1-s_0=-\tfrac12\log_\varphi(p_1/p_0)
+               +\tfrac12\log_\varphi(Z_{2,1}/Z_{2,0}).    \tag{124}
+\]
+An amplitude sum with overlapping memory classes needs its actual Gram
+and cannot be installed into(124) by a scalar replacement.
+
+The complete moving input source is unambiguous:
+\[
+ D\sigma_3=\sum_{j=0}^{2}\Phi^{2-j}(D\Phi)\Phi^j(\sigma_{\rm in})
+                  +\Phi^3(D\sigma_{\rm in}),\qquad
+ D\sigma_a={D(K_a\sigma_3K_a^\dagger)-\sigma_aDp_a\over p_a}.
+                                                               \tag{125}
+\]
+Here sigma_in is the actual supplied initial state (constant e0 in the
+bounded calculation); every original DK and normalization reaction is
+included. Differentiate q_(beta|a) with BOTH Dsigma_a and DK_beta.
+For the complete whole-history price, retain sum_alpha[(Dp_alpha)V_alpha
++p_alpha DV_alpha] and every other prefix label. Replacing that derivative
+by an unweighted branch comparison would lose a real source.
+
+Transporting b2 alone carries amplitude PRESSURE, not the mean price.
+On an arbitrary passive cut, the actual remaining mean is
+C_tail-H_tail=H_tail/2-f2(u), hence the owned chain rule gives
+\[
+ \mathbb E S_{\rm prefix}
+   +\mathbb E[H_{\rm tail}/2-f_2(u)]
+   =H_{\rm full}/2-f_2(\mathrm{root})
+   =C_{\rm full}-H_{\rm full}.                           \tag{126}
+\]
+The tail entropy half and all upstream probability/preparation jets
+belong to the SAME complete ledger. Omitting them repeats the known
+pressure-versus-mean source error; adding them to an unchanged operator
+action by hand would be a new action, not this transport identity.
+
+### 18.4 Actual bounded values and their precise evidential scope
+
+The import-safe original constructor is
+sources/d0_native65_causal_source_2026-10-22/native_excerpt.py,
+Git blob ed8a505d00337037d7aec976098717c3a4c43308. It extracts the five
+original functions from the pinned source blob
+ee8de4635d24c668949ac9a0186616ab7d59f2ed. No native rank/history census
+was rerun: the calculation uses three16-dimensional channel updates,
+two actual posterior updates and two complete128-outcome future laws.
+The actual theta jet from that same constructor is propagated through
+(125). Exact rational CAR arithmetic also verifies(118) directly.
+
+| Actual prefix ending | p_a | h_a | C_a | f_(2,a) |
+|---|---:|---:|---:|---:|
+| blank K0 | .978632496870807 | .289478286867846 | 1.013276879714969 | -.579059449413200 |
+| orphan K1 | .000186923150636 | .290083193602698 | 1.013309934520823 | -.578185144116776 |
+
+Both future q_(0|a) exceed .9785. The computed warmup minimum eigenvalue
+is about2.274e-8; exact positivity is supplied by the owner, not this
+floating value. All128 slots remain, with64 bright/64 dark at each of
+the two evaluated next-round states. The complete next laws normalize
+to within3e-16; the numerical CPTP discrepancy is about2.1e-15.
+
+The bounded floating values give Z2,1/Z2,0 about1.000841806214834 and
+D_theta ln(Z2,1/Z2,0) about .00837880514772623, with all warmup and
+posterior jets. Q_amp,1/Q_amp,0 instead is about1.000856566134895;
+its logarithmic theta jet is about .00861331344206984. The scalar
+BORN1+GAIN partition ratio is about1.000566430545515. These numerical
+contrasts are reproducible diagnostics, NOT rigorous entropy-gap or
+first-source enclosures. The exact strictly unequal COST partitions(121)
+do not rely on them. There is no promotion to selected full Book Price.
+
+A bounded reproduction uses the stated constructor K,DK and initial
+e0. Repeat rho=sum K rho K^dagger three times, propagating
+Drho=sum(DK rho K^dagger+K Drho K^dagger+K rho DK^dagger) before each
+rho update. For a=0,1 compute(117),(125), then every q_(beta|a), its full
+jet, h,C and(123). Exact(118) uses only rational gen, C, x and A; no
+Julia square-root eigenvector is needed for that symbolic identity.
+This is the complete changed calculation, not a new certificate owner.
+
+### 18.5 What the SAME-carrier PRE theorem does and does not transport
+
+Because both conditional states in(117) are faithful pure DATA+R
+preparations, Section17 gives the SAME J_cyc for their identical future
+full-word B and n. The supplied whole future-word heat has identical
+operators and dimensions at those two inputs. This cancels preparation
+motion only from those specific spectral components. It does not set
+their actual future cost, completion norm or Info source to zero.
+
+Crucially, the two state-conditioned cyclic cuts are NOT automatically
+blocks of the rank128 cyclic cut of the coherent FULL prefix state.
+If an actual controller selects the direct-sum conditional cut, its
+determinant counts each real branch rank, not the Born weight p_a.
+For an actual mixed world use(110)-(111). No such controller/cut map or
+identification of a logdet with a Born expectation is supplied here.
+Also the return uses the complete word V1, or its actually bound T^N,
+not a single primitive clock shift T. The entire warmup+prefix+future
+Book clock, heat and other stack terms retain their physical binding.
+
+The parent route is now sharper: equal minimum cost and equal cyclic
+feedback do not discharge the actual continuation-partition premise.
+The original known cost side is explicit and strictly different(121).
+The remaining genuine Info/work contribution must pass THIS same-source
+test, together with its full absolute anchor and all field/input jets.
+A sufficient native amplitude map must preserve the original primitive
+Cost/Info marking as well as its unmarked operator on all actual work
+columns; composing only unitaries transports a norm, not the price of
+coherently summed microhistories. The Cost marking is already owned;
+there is no original Info-marked primitive supplied by the qualitative
+Book03 definition alone. Neither the Bellman class nor a fitted scalar
+correction may be inserted as that primitive.
+
+Thus this is an actual application of the global two-ending gate and
+Section17's new same-state carrier map. It removes the equal-minimum
+shortcut and fixes the concrete completion/price source that the native
+binding must preserve. The primary exact nonvacuum solution and both
+conditional global Einstein routes remain the geometric consumers.
+No geometry/root/rank restart, new task, physical-price acceptance,
+CORE/lifecycle change, raw216 or GR closure is made.

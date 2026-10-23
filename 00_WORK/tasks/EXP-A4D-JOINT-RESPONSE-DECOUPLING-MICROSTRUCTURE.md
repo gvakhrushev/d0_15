@@ -6301,3 +6301,79 @@ not physical-premise acceptance or retirement. Work, protocol, assembly,
 work-view, repository and diff guards passed; the existing checkpoint
 template was consumed. No heavy mathematical/Lean replay is warranted
 for this analytical application and documentation-only changed slice.
+
+### Same-owner checkpoint: actual Julia two-ending full continuation gate, 23 October 2026
+
+Phase: native realization / complete-price and final-source composition.
+Existing #334, original task and constitutive/native-programme-v1 retain
+ownership; no new execution/registry/claim/lifecycle state is created.
+Checkpoint artifact: paid-writer Section18; consumer: global composition
+same-prefix two-ending partition gate and original-Book Section9.1.
+Changed mathematical input: Section17's actual paid-state cyclic PRE map,
+with genuine original Phi^3(e0) and its real K0/K1 branch posteriors.
+
+Exact statement: on the actual original positive nonscalar Delta chart,
+K0=B and orphan K1=-2p sqrt(p)Delta yield faithful real conditional inputs.
+Their next complete128 port ledger has the SAME minimum1 but strictly
+different mean and strictly different cost-marked continuation partition.
+Equation120 is an exact positive covariance sum;121 retains the real
+common hardware baseline in both absolute values. This removes the equal-
+minimum proxy, not the original Info/work or physical Book-price premise.
+The actual source of all other independent charges stays required.
+
+Owned inputs consumed rather than reproved: original all128 Cost-marked
+Phi_t and complete source; future Doob/partition and clock boundary;
+full amplitude-Born+GAIN Bellman; actual future coboundary and executed
+suffix price; full primitive/input isometry-anchor transport; new Section17
+same-carrier cyclic representation. No Bellman/entropy/antichain theorem,
+rank census, new projector selection or gravitational root is registered.
+
+Carrier/norm/source: original DATA16, all warmup/prefix/future App128 and
+bank128 preloaded inside one world, all oldRIGHT/purifying work retained,
+real theta proper-link fixture, full128 fine outcomes including orphan
+and original dark labels. Exact finite operator/cost comparison. The
+physical whitening/adjoint convention remains the original constructor.
+All warmup, prefix normalization and DK future jets enter125. Conditional
+future values do not delete upstream Dp terms or other prefix branches.
+No normalized-gain/all-site/refinement extrapolation is asserted.
+
+Smallest decisive checks: symbolic CAR gen^3=gen, rational boost,
+Delta^2-2mDelta+(m^2-v)I=0 with m=141489/10240000 and
+v=32225121/104857600000000>0; explicit positive spectral covariance120;
+owned exact one-round cost transform121. The bounded numerical calculation
+uses only three16D channel updates and two original128 next-state laws.
+Native excerpt Git blob ed8a505d00337037d7aec976098717c3a4c43308 extracts
+the five constructors from original blob ee8de4635d24c668949ac9a0186616ab7d59f2ed.
+Two independent agents and CONTROL reproduced the values. CPTP discrepancy
+about2.1e-15 and future normalization within3e-16; exact faithfulness comes
+from the owned proof, not numerical eigenvalue. No heavy replay occurred.
+
+The actual conditional Bellman BORN2 norm ratio is numerically about
+1.000841806214834 with full theta logarithmic jet .00837880514772623;
+positive amplitude SUM instead has ratio1.000856566134895. Both are
+explicitly bounded floating diagnostics, not rigorous entropy enclosures
+or full physical-Info selection. Correct exponent/Gram/terminal boundary
+is retained; the mean also needs the forced tail-entropy half126.
+
+Parent substitution: equal minimum future cost is decisively insufficient
+for the original continuation-partition premise, on two genuine original
+endings rather than a synthetic process. Same conditional J_cyc/heat does
+not imply same future cost/Info valuation. The conditional cuts are not
+automatically blocks of the coherent world's rank128 cut; a direct-sum
+controller would count branch ranks, not Born probabilities. Full native
+Book cut/clock/Cost-Info/work marking, actual memory-amplitude/absolute-
+anchor map, physical field variations and uniform GR source remain open.
+The positive exact nonvacuum and conditional Einstein consumers are kept.
+
+Independent native_continuation_map, native_valuation_map and
+universal_parent_map ACCEPTED the final Section18 heading-to-EOF:
+14,818 UTF-8 bytes; SHA-256
+5c7d5ab4291db5621a86c0e006d05a280070384dbb80959f58129ba1f87829d9.
+Review covers the exact positive cost gap, correct original theta/row,
+complete pure-world versus mixed-state multiplicities, true marked costs,
+all three continuation exponents, complete upstream jets, numerical-only
+entropy evidence, conditional/global cut distinction and actual clock.
+All169,185 bytes of the published paid-writer atad2ac42c are unchanged.
+Final work, protocol, assembly, generated-work-view, repository and diff
+guards passed; the existing result checkpoint template was consumed.
+No registered heavy/Lean replay or scientific promotion is asserted.

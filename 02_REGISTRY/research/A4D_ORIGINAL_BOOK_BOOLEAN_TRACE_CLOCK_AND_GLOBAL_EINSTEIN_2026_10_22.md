@@ -931,6 +931,24 @@ return remains distinct from a single primitive clock tick. Actual native
 cut/controller/whole-price binding and field/refinement admission remain
 open on this same execution; the existing global GR consumers are unchanged.
 
+
+**Actual two-ending continuation application (23 October).**
+[Paid writer Section18](A4D_PAID_MOMENT_FIELD_WRITER_2026_10_21.md#18-same-prefix-julia-continuations-the-actual-partition-gate-and-its-full-completion-ledger)
+now tests the global composition's partition premise on the actual original
+three-round warmup followed by its blank/orphan prefix endings and one
+identical full128 continuation. Both future minimum port prices equal1;
+their complete known cost partitions are nevertheless strictly unequal by
+(120)-(121). A genuinely common paid inventory baseline stays explicit.
+The actual BORN2+GAIN tail factors and full moving-source formulas are
+supplied as an application of existing owners; their entropy contrasts
+are bounded numerical diagnostics, not certified full Book Price. The
+completion transport retains tail entropy as well as the absolute norm.
+Section17's conditional cyclic feedback equality does not transport these
+prices or identify the two conditional cuts with one global Book cut.
+The remaining native binding must preserve primitive Cost/Info marking,
+its actual tail norm and every input/clock/work source. Equal minima or
+unmarked unitary equality cannot replace that map.
+
 ### 9.2 The ordinary complete Book trace localizes too, with its true heat weight
 
 For actual block-diagonal \(\Delta=\bigoplus_h\Delta_h\) and
