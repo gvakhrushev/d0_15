@@ -2430,6 +2430,208 @@ not1. Any use of (82) for that master must first remove/derive the actual
 R and retain these units. Algebraic rewriting does not supply the
 physical Book binding or prove that fine pinching is its selected Info.
 
+### 14.3a Spatial heat, complete CQ information and the actual recycling defect
+
+24 October 2026; same owner, input c41206d4. Phase: native realization
+and source composition. Equation (82) used the CLOCK Laplacian and its
+stage0 energy identity. The spatial operator in (55) has a different
+energy transport. The following application composes the existing exact
+variational-unfolding, complete-record, source-moment and stationary
+preparation owners; it does not re-prove them or select a new Info law.
+Its consumer is (56) and the complete-valuation comparison in 12.4.
+
+Fix one actual finite h, n, complete 128-outcome word, observer-positive
+frame, cut and calibration. Let Delta=D^2, alpha=p^2 h^2/128,
+epsilon=2alpha, m=2n, beta=m alpha, B=I-alpha Delta>=b_* I>0.
+The old spatial trace has the exact mathematical Gibbs generator
+\[
+ \Lambda_h=-\alpha^{-1}\log B,\qquad
+ \sigma_h=B^m/Z=e^{-\beta\Lambda_h}/Z,\quad Z=\operatorname{Tr}B^m.
+                                                               \tag{82a}
+\]
+Lambda_h is the owned stopped-log generator, not a replacement for the
+original Rayleigh energy Delta. In particular no Gibbs DATA preparation
+is imposed. Keep C=128*128^n, the actual reference128 and all n complete
+registers of (55), rather than a multiplicity selected after the run.
+
+Let Omega_0 be the actual normalized DATA/oldRIGHT input, with pure
+initialized register blanks. Require rho_0=Tr_R Omega_0 to equal the
+actual Rayleigh density of (55), and put rho_j=Phi^j(rho_0). This is
+the same-input comparison; using a different Rayleigh density sigma
+adds beta Tr[(sigma-rho_0)Delta] to the right side of (82b). Let Gamma_n
+be the full fine-pinched output, retaining DATA, oldRIGHT and every
+registered label. It is a state on the SAME DATA x spectator carrier of
+dimension dim(DATA)*C. Define only the already declared port-CQ component
+\[
+ \ell P_n=\ell C_n-S(\Gamma_n)+S(\Omega_0),\qquad
+ \ell=\log\varphi,
+\]
+where C_n is the expected actual 1/2 port charge, including every round.
+Remaining apparatus/work charges are not assigned zero. Put
+\[
+ \tau_{\rm sp}=\sigma_h\otimes I_{\rm spectator}/C,\qquad
+ E_n=\operatorname{Tr}(\rho_n\Lambda_h)
+                  -\operatorname{Tr}(\rho_0\Delta).
+\]
+The reference tau_sp is the full spatial thermal operator already present
+in (55), normalized to trace one; it is not a physically prepared blank.
+With J denoting precisely the feedback term of (55), the exact identity is
+\[
+ \boxed{\ \beta S_{\rm sp}+\ell P_n
+ =\beta J+\ell C_n+S(\Omega_0)
+       +D(\Gamma_n\Vert\tau_{\rm sp})-\beta E_n.\ }       \tag{82b}
+\]
+Indeed
+D(Gamma_n||tau_sp)=-S(Gamma_n)+beta Tr(rho_n Lambda_h)+log(CZ);
+substitution proves (82b), with the absolute log C retained. This proof
+uses neither pure conditional outputs nor stationary input nor commuting
+field derivatives. It also retains mixed input and oldRIGHT correlations.
+For copied or enlarged work registers, use their actual heat carrier
+and spectator multiplicity. Isometric copying preserves the CQ entropy
+but does not identify that larger complete heat price; transporting the
+reference through the image only supplies an image comparison.
+
+On a fixed finite chart, differentiation of (82b) supplies ALL actual
+field, preparation, observer and controller sources. On a regular support
+chart it is the ordinary differential; at branch births use the owned
+amplitude C1 entropy extension where its hypotheses hold. Fixed n and
+fixed carrier are essential to this differential. Different integer
+durations/cuts require their full execution comparison. Genuine moving
+continuous parameters retain the product derivatives of beta and alpha.
+
+There is also a direct application of the owned same-history
+Kraft/Gibbs/Holevo projection, without a new fitted information table.
+Let bold J and bold B be the complete row and port words. Apply its
+conditional row projection to the actual Gamma_n, with the original
+port reference mu(bold B)=product(p,p^2) and Gibbs comparator sigma_h.
+Calling the resulting mathematical score L_proj,n, its chain rule gives
+the equivalent form
+\[
+ \beta S_{\rm sp}+\ell P_n
+ =\log C+\beta J+L_{\rm proj,n}-H(\boldsymbol J)
+       +S(\Omega_0)-S(\Omega_R)-\beta E_n.               \tag{82c}
+\]
+The moving row entropy and actual RIGHT entropy have NOT disappeared.
+Optimizing the mathematical row reference eta=q_J is not permission to
+change a physically fixed row code for free. For pure complete input the
+conditional branch entropy is zero, but S(Omega_R) need not be zero.
+
+**The remaining energy term is an explicit same-process operator.**
+The owned full128 channel and its adjoint are
+\[
+ \Phi^*(X)=X+\epsilon\{D\mathcal T^*(X)D-\{\Delta,X\}/2\}.
+\]
+Since any analytic f(Delta) commutes with D, define
+\[
+ \Gamma_f=D[\mathcal T^*f(\Delta)-f(\Delta)]D .
+\]
+The finite telescoping identity gives, without a reset or history truncation,
+\[
+ \begin{split}
+ E_n={}&\operatorname{Tr}\rho_0(\Lambda_h-\Delta)
+       +\epsilon\sum_{j=0}^{n-1}\operatorname{Tr}\rho_j\Gamma_{\Lambda_h},\\
+ \Gamma_\Delta={}&D\mathcal T^*(\Delta)D-\Delta^2 .
+ \end{split}                                                   \tag{82d}
+\]
+The second line is exactly the existing curved recycling defect. Its
+derivative includes the actual Julia roots, full channel, every evolving
+rho_j and the initial preparation. The owned forward/adjoint recursion
+computes that derivative; none of those terms is set by a desired source.
+
+Three already-owned applications now have one common consumer:
+
+* On the corrected physical flat map v=nu S eta E_J2^-T, E_J2=I,
+  nu=3/5, all Fourier blocks of Delta are scalar in CAR16 and the
+  original Kraus operators preserve them. Thus Gamma_f=0 for all f
+  and E_n=Tr rho_0(Lambda_h-Delta) for every actual input. For a complete
+  block-scalar Riesz preparation the source-moment owner ALSO cancels
+  the scalar recycling first jet in every ambient coframe/link/observer
+  direction. That stronger first-jet statement is not inferred for an
+  arbitrary coherent scalar/top preparation. This application uses fixed
+  native inverse legs; it does not use the old v=h e bounded-Dirac estimate.
+* On a genuinely selected smooth stationary DATA graph, rho_n=rho_0,
+  the recycling sum in (82d) vanishes identically, including
+  its full derivative along that graph. In particular, where D is
+  invertible and the original mixing hypotheses apply,
+  rho_*=Delta^-1/Tr Delta^-1 gives
+  Tr(rho_* Gamma_f)=Tr[T^*f(Delta)-f(Delta)]/Tr Delta^-1=0.
+  Bistochasticity supplies this exact curved cancellation. It does not
+  make the joint DATA/oldRIGHT state stationary, pay an infinite warmup,
+  or identify primary fixedRIGHT/matter data with rho_*.
+* The remaining spectral defect has the explicit bound
+\[
+ 0\preceq\Lambda_h-\Delta
+       \preceq {\alpha\over2b_*}\Delta^2,\qquad
+ 0\le\operatorname{Tr}\rho_0(\Lambda_h-\Delta)
+       \le{\alpha\over2b_*}\operatorname{Tr}\rho_0\Delta^2. \tag{82e}
+\]
+  Integrate the scalar identity
+  -log(1-x)-x=integral_0^x t/(1-t) dt and use spectral calculus.
+  O(h^2) in VALUE follows only with a uniform second energy moment and
+  fixed b_*. It is not an operator-norm estimate uniform in refinement,
+  a first-source bound, or a bound on the curved sum in (82d).
+  On the invertible stationary graph the actual defect is
+  [Tr(Delta^-1 Lambda_h)-dim(DATA)]/Tr Delta^-1>0; its derivative remains.
+
+For a SOURCE estimate use the actual physical variation norm V_h,
+not an unscaled matrix-coordinate norm. At fixed alpha write
+rho_0=X X^dagger, ||X||_HS=1 and R_t=(I-t alpha Delta)^-1. Suppose
+\[
+ M_2=\|\Delta X\|_{\rm HS},\quad
+ M_{\rm prep}=\sup_{\|v\|_{V_h}\le1}\|\Delta(D_v\rho_0)\Delta\|_1,
+ \quad
+ M_{\rm op}=\sup_{\|v\|_{V_h}\le1,\ 0\le t\le1}
+                       \|(D_v\Delta)R_tX\|_{\rm HS}.
+\]
+Then the spectral part e_h=Tr rho_0(Lambda_h-Delta) satisfies
+\[
+ \boxed{\ \|De_h\|_{V_h^*}
+ \le {\alpha\over2b_*}M_{\rm prep}
+       +{\alpha\over b_*}M_2 M_{\rm op}.\ }              \tag{82f}
+\]
+Indeed g_alpha(Delta)=alpha Delta^2 integral_0^1 t R_t dt, while
+Dg_alpha[E]=integral_0^1(R_t E R_t-E)dt. Split the latter as
+(R_t-I)E R_t+E(R_t-I), use R_t-I=t alpha Delta R_t and trace
+Cauchy-Schwarz. The preparation term uses the displayed trace norm.
+A genuine moving alpha adds at most
+||Dalpha||_(V_h*) M_2^2/(2b_*^2). At fixed alpha, uniform actual moment
+bounds give O(h^2) for this first source. With moving alpha the same
+order additionally requires ||Dalpha||_(V_h*)=O(h^2), for example bounded
+Dlog(alpha). Its use in GR still divides by the actual
+nonzero source gain. No such moment or gain bound is asserted here for
+the primary preparation or for the inverse-Delta stationary graph,
+and (82f) does not estimate the recycling sum.
+
+The Book00/01 Golden condition cannot silently supply an omitted reaction
+in this calculation. On the original Julia/SELECT image, for row j and
+the two ports, K_(j,0)-sqrt(p)K_(j,1)=delta_(j,0) I identically, so its
+differential is zero for every smooth field jet. The same is true of
+completeness. A constraint multiplier therefore has zero pullback on
+these image tangents. This remains valid at Dirac zero modes by the
+literal Julia construction; no inverse of D is used. The separate
+Book02 clock-sector identity F_tau=p^2 Pi_tau must not be imposed on
+the whole composite PRE cut. Structural Golden preservation is not
+proof that all represented field jets are physically writable.
+
+Consequently (82b) is the precise replacement for a presumed
+"heat + Rayleigh equals complete Info" cancellation in the spatial parent.
+If source equivalence to the specified port-CQ component is proposed,
+its remaining source is the ENTIRE differential of the displayed right
+side, with (82d), initial entropy and absolute multiplicity retained.
+Actual additional work/Info, primitive admission and the selected original
+Book03 scene pair (Delta_N,F_N) still require their real binding.
+The primitive bare Book03 H+J also omits R; it cannot consume (82b)
+as an H+J identity without the corresponding explicit subtraction.
+
+Owned inputs: [variational unfolding](A4D_NATIVE_PRICE_EXACT_VARIATIONAL_UNFOLDING.md),
+[complete channel](A4D_COMPLETE_RECORD_CHANNEL_AND_NATIVE_COST_SOURCE.md),
+[all-moment/source application](sources/d0_native_minimality_closure_2026-10-20/geometry/source_moment_collapse.md),
+[stationary preparation](A4D_NATIVE_PREPARATION_AND_GOLDEN_OFFSHELL_SOURCE_2026_10_21.md),
+[whole-history information projection](A4D_ORIGINAL_FULL128_UNIQUE_KRAFT_GIBBS_HOLEVO_SAME_RUN_INFORMATION_PROJECTION_2026_10_22.md)
+and [actual curved heat/history defect](sources/d0_same_history_price_composition_2026-10-20/FULL128_HEAT_PRICE_RECYCLING_BRIDGE.md).
+No new action, certificate, primitive constraint, stationary GR solution
+or physical acceptance is claimed.
+
 ### 14.4 The actual return, a dark-mode-safe source bound and common control
 
 Specify feedback by the full return T^N_n, not a primitive clock step.

@@ -6763,3 +6763,48 @@ accepted the inverse-Gram/shear application and the parent map;
 universal_parent_map accepted the final combined mathematical correction,
 including preservation of the legitimate finite source obstruction.
 No unchanged heavy suite or Lean module was replayed.
+
+### 24 October: one spatial full-history source comparison with the actual energy defect
+
+Input c41206d41aab4c028746ac2c36b41087f0d9bedb; same Draft334 owner.
+Phase: native realization / source composition. Consume the existing
+variational unfolding, literal full128 channel, source-moment collapse,
+stationary preparation and same-history Kraft/Gibbs/Holevo projection.
+
+Parent substitution: paidwriter14.3a applies those owners to the spatial
+source55-56, where the clock-stage energy identity of14.3 is unavailable.
+Its exact equation82b retains the complete CQ port component, actual
+input entropy, full thermal multiplicity and one computed energy defect.
+The defect splits into stopped-log minus Rayleigh energy and the actual
+finite chronological recycling sum. At a genuinely stationary DATA graph
+the latter vanishes with its complete derivative; the spectral defect
+and input/RIGHT/row source remain. At the corrected fixed-physical flat
+map the existing all-moment/source theorem applies with its true
+block-scalar preparation hypotheses. No shrinking-leg estimate is reused.
+
+Carrier: full counting-site CAR16, all128 outcomes at every finite round,
+oldRIGHT128, actual observer adjoint and fixed original h/n/alpha/beta/z.
+Source convention: original absolute spatial H+J+R and declared complete
+port-CQ component; neither is promoted to mandatory Book03 Cost-Info.
+The spectral O(h^2) value estimate retains its second-moment hypothesis;
+the source estimate additionally retains the actual weighted preparation
+and operator-derivative moments, physical variation norm and source gain.
+Neither estimate bounds the curved recycling sum.
+Actual complete valuation, source-compatible primary preparation,
+admitted variation image and physical GR/raw216 remain open.
+
+Write paths: this existing brief and paidwriter14.3a only.
+Smallest decisive check: exact Gibbs/entropy and finite-channel substitution,
+independent source/scope review, and affected documentation guards.
+No new task, certificate, Lean module, status promotion or heavy replay.
+
+Analytical validation: universal_parent_map independently accepted the
+final heading-to-next-heading parent slice: 10,791 UTF-8 bytes, SHA256
+f4c3cb8be659baa92380a4d43a3c494be0e49e41c6b77532892f451613c2c506.
+The review corrected the explicit same-Rayleigh-input identification and
+the stationary recycling-sum wording. Native_valuation_map independently
+checked the Gibbs/CQ and source estimates, correcting copied-carrier
+multiplicity and the moving-alpha asymptotic condition; both are retained.
+Work, agent-protocol, assembly, generated work-view and repository guards
+pass, with no claim/assumption/assembly promotion. No unchanged numerical
+certificate or Lean suite was replayed.
