@@ -3149,3 +3149,294 @@ The existing positive contraction, generic memory, whole heat,
 geometry inverse and global Einstein theorems need not be repeated.
 No new selector, entropy counterterm, free blank, task, acceptance,
 CORE status or physical GR closure is introduced.
+
+## 17. The future algebra on the ACTUAL paid state: a same-carrier PRE map and its complete feedback source
+
+This applies the owned future-algebra and primitive-channel results to the
+specific missing PRE representation from Section16. It supplies a physical
+Hilbert-space map, rather than another detector classification. The state,
+past tape, new blanks, field-moving U and original Book trace stay on their
+actual carrier. Mathematical identification of this cut does not by itself
+make it the compulsory Book03 cut or pay for its coherent readout.
+
+Inputs are the [original three-tick future algebra](A4D_ORIGINAL_FULL128_THREE_TICK_CANONICAL_FUTURE_EVEN_ALGEBRA_2026_10_22.md),
+the [original three-tick primitive channel](A4D_ORIGINAL_FULL128_THREE_TICK_PRIMITIVE_SELF_PREPARATION_AND_EINSTEIN_SOURCE_GATE_2026_10_22.md),
+the [canonical operational support and actual-purification boundary](A4D_FUTURE_ALGEBRA_CANONICAL_PINCHING_OFFNULL_CQ_SOURCE_WELD_2026_10_22.md),
+the [paid retained-work access theorem](A4D_Q8_RETAINED_WORK_COHERENCE_TEST_ALGEBRA_2026_10_22.md),
+and the already owned [prepared/future-boundary calculus](A4D_NATIVE_FUTURE_KRYLOV_BOOK_INNOVATION_AND_GOLDEN_CYLINDER_2026_10_22.md).
+No generic minimal-memory, GNS, Kraus-rank or future-closure theorem is
+reproved or registered as a new owner here.
+
+### 17.1 Use the real physical state, without a new purification resource
+
+Write DATA16 = H_+ direct_sum H_-, dim H_+=dim H_-=8, with the
+original fixed CAR parity Pi. On the regular original fixture and its
+owned open chart, the actual future-test algebra is
+A_even=End(H_+) direct_sum End(H_-). It concerns the specified original
+instrument, not every possible D0 operation or the full tape algebra.
+Let R denote ALL actual past archive and oldRIGHT factors. Future fresh
+App/bank pairs are preloaded parts of the same initial world, as in
+Section14. The future word does not act on R. No new purification is added.
+
+First suppose the complete actual DATA+R state is a pure vector psi with
+faithful DATA marginal sigma. This is a stated physical-state regime,
+not an inference of global purity from the DATA stationary law. Define
+\[
+ \mathcal K_\psi=(\mathcal A_{\rm even}\otimes I_R)\psi,
+ \qquad J_\psi(X)=(X\otimes I_R)\psi,
+ \qquad \langle X,Y\rangle_\sigma=\operatorname{Tr}\sigma X^\dagger Y.
+                                                        \tag{105}
+\]
+Then J_psi is an isometry from this weighted GNS space onto a subspace
+of the ORIGINAL DATA+R Hilbert space. Faithfulness makes it injective,
+so dim K_psi=128. In particular psi belongs to K_psi. This does not
+replace physical vectors by a new DATA tensor conjugate-DATA system,
+or change the physical U into U tensor conjugate-U.
+
+The faithfulness premise has a finite native application. The owned
+three-tick Kraus-word span is the full M16 on its stated chart.
+Consequently Phi^3(rho)>0 for EVERY nonzero positive DATA input rho:
+otherwise a nonzero output vector w would annihilate K_gamma v for all
+actual three-tick words and all v in the nonzero input support, contrary
+to their full matrix span. The actual copied warmup therefore produces
+such a faithful marginal after three paid rounds. If the complete
+initial state was pure, its actually retained output is the required
+psi. The real warmup records and their field/preparation sources stay
+in R. This uses neither an externally offered stationary purification,
+nor an infinite wait, nor a mandatory stationary-preparation task.
+It does not assert that M1 requires this warmup.
+
+There is a useful explicit description with no chosen Schmidt basis.
+For a physical basis e_i of H_pi, write the corresponding component
+of psi as sum_i e_i tensor chi_i. Let S_pi be the projection onto the
+span of those ACTUAL archive vectors chi_i. Then
+\[
+ P_\psi=P_+\otimes S_+ +P_-\otimes S_-,\qquad
+ \operatorname{rank}S_+=\operatorname{rank}S_-=8.           \tag{106}
+\]
+This is the unique least projection in the COMMUTANT
+(A_even tensor I_R)' whose range contains psi. It is the least
+A_even-reducing physical subspace containing that state. The owned
+operational support P_op is instead the least projection IN the
+observation algebra carrying its state; for faithful DATA sigma that
+projection is I_DATA. These two minimizations have different types.
+The coarsest future-observation quotient does not identify them.
+
+### 17.2 Exact original feedback, including the moving-state projector
+
+Tensor P_psi with the actual fresh App/bank blank projection; call the
+result P_cyc,n. These are genuine specified initial resources, not free
+new preparations. Let V_n be the full copied original n-round word
+of Section14. The return here is the COMPLETE word V_n. Equivalently, it uses T^N
+on a fixed stage IF the actual cyclic controller has monodromy V_n,
+with its real primitive period N; it is not the single-step T return.
+A stage-zero-only cut under one nontrivial clock tick simply leaves that
+stage, so this calculation must not be substituted for its feedback.
+In particular the actual warmup-plus-future controller and whole action
+still need their original clock binding. The all-fresh-blank compression
+of V_n on DATA+R is B^n tensor I_R,
+where B=I-2p^2 Delta, Delta=A^2, A=A^dagger is the SIGNED original row.
+B is parity even. Therefore B^n preserves K_psi and
+\[
+ P_{{\rm cyc},n}V_nP_{{\rm cyc},n}
+       \simeq L_{B^n}\quad\hbox{on }\mathcal A_{\rm even},
+ \qquad F_{{\rm cyc},n}\simeq I-L_{B^{2n}}.               \tag{107}
+\]
+Here L_C X=CX. This is a star representation in the actual state GNS
+inner product, so selfadjointness of L_B requires no tracial sigma
+and no detailed-balance claim about the reduced channel.
+
+Left multiplication by an 8 by8 block repeats each of its eigenvalues
+eight times. On the full physical carrier, the orthogonal complement
+of P_cyc,n contributes identity to I-zF and hence zero to its log.
+Thus, for fixed actual n and 0<z<1,
+\[
+ \boxed{J_{{\rm cyc},n}=-8\operatorname{Tr}_{16}
+           \log M_n,\qquad M_n=(1-z)I+zB^{2n}.}          \tag{108}
+\]
+The factor8 includes the actual correlated R used by psi. It must NOT
+be multiplied again by oldRIGHT128 or by the past archive dimension.
+Only genuinely independent identity spectators multiply this formula.
+Whole heat still traces the full physical carrier, including its
+unused modes; (108) is no license to compress that heat.
+
+On a smooth faithful chart, the isometry and P_cyc,n both move. For
+example put barsigma=E_Pi(sigma)>0. The ordinary HS(A_even) isometry
+W_psi(X)=(X barsigma^(-1/2) tensor I_R)psi has range K_psi and obeys
+(B tensor I_R)W_psi=W_psi L_B. This is an analytical coordinate map,
+not a physically executed inverse square root. Differentiating this
+EXACT moving-isometry identity retains the entire DP_cyc,n source.
+Alternatively one can use the owned constant-rank range-projector
+jet with columns (E_ij^pi tensor I_R)psi. The complete feedback source is
+\[
+ \boxed{D_vJ_{{\rm cyc},n}
+  =32nz p^2\operatorname{Tr}_{16}
+       [M_n^{-1}B^{2n-1}D_v\Delta],\qquad
+ D_v\Delta=A(D_vA)+(D_vA)A.}                              \tag{109}
+\]
+Indeed cyclic trace converts D(B^{2n}) into 2n B^{2n-1} DB, without
+assuming [B,DB]=0. All purification-only variations at fixed B cancel
+in this determinant identity; they have not been frozen. The actual
+weighted-adjoint/observer jet of A remains as in Sections12-16.
+No source of heat, Rayleigh matter, preparation, Info or work is removed
+by (109), and no smooth variation of the integer n is taken.
+
+This is a genuine parent application: the actual future-test algebra
+now has a same-physical-carrier prepared-cut representation with a full
+original feedback source. The earlier tracial-Liouville carrier mismatch
+is removed on this state regime. Its equality with the native Book P_N
+is still a physical identification, not a consequence of GNS notation.
+
+### 17.3 Keep mixed initial worlds and actual multiplicities distinct
+
+For a general actual positive density Omega on DATA+R, no purification
+is silently supplied. Take the least A_even-reducing physical subspace
+containing ran Omega. Formula(106) still holds, now with
+\[
+ S_\pi=\operatorname{supp}\operatorname{Tr}_{D}
+       [(P_\pi\otimes I)\Omega(P_\pi\otimes I)],\qquad
+ r_\pi=\operatorname{rank}S_\pi .                         \tag{110}
+\]
+To see minimality, expand the even matrix units acting on every vector
+in ran Omega: they generate exactly H_pi tensor ran S_pi in each block.
+The original determinant is then
+\[
+ \boxed{J_{{\rm cyc},n}
+ =-\sum_{\pi=\pm}r_\pi\operatorname{Tr}_{H_\pi}\log M_n.} \tag{111}
+\]
+On a constant-rank chart the support motion cancels by the same exact
+representation; dr_pi=0. At a rank change a separate boundary analysis
+is required. A faithful DATA marginal ALONE does not imply r_pi=8:
+Omega=(I16/16) tensor |r><r| has r_+=r_-=1. Thus the true multiplicity
+cannot be inferred from the stationary DATA law without the actual
+complete-state contract.
+
+Nor is8 a free all-site coefficient. IF an actual enlarged DATA algebra
+were the full two parity blocks M_(8S) direct_sum M_(8S), a pure faithful
+state would instead give rank K=128S^2 and coefficient8S. That algebra
+and its paid faithful-state preparation need their own application;
+they are not established by the DATA16 three-tick owner. A sitewise
+algebra cannot be substituted when the actual spatial B couples sites.
+This section asserts no all-site refinement or normalized GR gain.
+
+### 17.4 The native parity record and the coherent support are different operations
+
+The original row R_(ell,c) is odd for c=0 and even for c=1, while A is
+odd. Hence each actual K_(ell,c,b) has DATA parity (-1)^c, including a
+consistent assignment on dark slots. If the ACTUAL initial state has
+a paired parity relation (Pi_DATA tensor Pi_ref)psi_initial=psi_initial,
+with a genuinely accessible reference sign, the transported mirror is
+\[
+ Z_R=\Pi_{\rm ref}(-1)^{c_1+\cdots+c_m}.                 \tag{112}
+\]
+For a supplied definite-parity initial DATA vector the initial sign is
+just that actual parity. This reads ONE copy of each retained coefficient
+bit. XORing both App and its duplicate bank would cancel the signal.
+No third fundamental history comparison has been introduced.
+
+In this paired regime S_+ and S_- are orthogonal subspaces of the two
+Z_R sectors and S_R=S_++S_- has rank16. Thus
+\[
+ P_\psi=(I\otimes S_R){I+\Pi_D\otimes Z_R\over2}.
+                                                               \tag{113}
+\]
+The parity-matching projector alone has rank8 dim R, not128. The
+additional rank16 support restriction cannot disappear inside a full
+trace. Even a real parity-bit compiler does not implement that support.
+
+There is also an exact whole-word conservation law. Each ALL-INPUT
+block U_(mu b,nu b') has DATA parity c_mu+c_nu modulo2. Consequently U
+commutes with Pi_DATA tensor Z_c on its fresh App. Copy CXs leave that
+App control unchanged. The transported total parity including ALL
+preloaded Apps is therefore conserved by the closed word. That
+invariant projector alone has F=0. The nonzero return(108) belongs to
+the present prepared/support/fresh-blank boundary, not to the entire
+future-closed parity sector. This consumes the owned PRE versus future
+cylinder distinction rather than restarting it.
+
+The support test is in general a COHERENT archive test. One direct
+application uses the complete pure-world regime of17.1 and at least
+five of these paid rounds on 0<Delta<I, keeping every fresh pair. B is
+invertible and E_exit=I-B^2 is positive definite. Every nonzero branch
+therefore has a nonzero blank child and a positive aggregate nonblank
+child. There are at least 2^m positive blank/nonblank histories at m
+rounds, and at least as many positive fine histories. For m>=5, the
+fine-history pinch of the reduced archive has rank at least32. Here R is
+the ENTIRE purifying complement of DATA, including all retained work and
+copies; the pinch is an analytical comparison, not an extra executed
+dephasing. Yet its
+unpinched Schmidt support has rank16 once m>=3, by the owned primitivity
+application above. If that support commuted with every fine-history
+projector, pinching could not increase its support rank. Contradiction.
+Likewise P_psi cannot commute with all those projectors: such commutation
+would make both conditional supports invariant and hence their total
+support invariant. This is an exact support-rank check, not a tape census.
+
+It follows that the exact cyclic cut is not a Boolean predicate of
+already classical history labels. This does NOT prohibit a paid coherent
+joint archive test: the owned retained-work theorem explicitly separates
+retention from availability of such access. Its actual controller,
+complete outcomes and costs must be supplied. Reversing one known
+preparation word by itself is insufficient: it conjugates a chosen
+initial projector, but equality with P_psi additionally requires the
+full A_even-orbit intertwiner, not merely agreement on the single vector
+psi. The existing inverse-prefix price applies only to the actual
+implemented word.
+
+### 17.5 An actual port-click trace bridge, when the stationary marginal is supplied
+
+There is an additional useful application of the owned stationary state
+and actual port map, without a maximally mixed preparation oracle.
+IF the actual supplied DATA marginal is sigma_*=Delta^(-1)/Z, with
+Z=Tr Delta^(-1) on Delta>0, the complete ORIGINAL port1 CP map gives
+\[
+ \mathcal M_1(\sigma_*)
+  =4p^3\sum_\mu R_\mu^\dagger A\sigma_*A R_\mu
+  ={4p^3\over Z}I_D,\qquad
+ q_1={4p^3D\over Z}.                                    \tag{114}
+\]
+This follows from A sigma_* A=I/Z for the SIGNED selfadjoint A and
+the actual bistochastic row sum sum_mu R_mu^dagger R_mu=I. Every port1
+label is retained, including the blank-label port1 branch. The coarse
+conditional DATA marginal is I_D/D; the fine conditional DATA+archive
+states are generally different and are not reset or declared iid.
+For any supplied function f(B) this yields the observable identity
+\[
+ \operatorname{Tr}_D f(B)
+   ={Z\over4p^3}\operatorname{Tr}[\mathcal M_1(\sigma_*)f(B)]
+   =D\,\mathbb E[f(B)\mid\text{actual port1 click}].       \tag{115}
+\]
+For the DATA16 pure-state cyclic cut, use f=log M_n to read(108).
+The function belongs to the even algebra, whose owned three-tick
+complete effects give its linear observational reconstruction on this
+fixture. This is a mathematical expectation reconstruction; its real
+coefficients, sampling precision and paid future controls are not free.
+In an unnormalized first-source calculation BOTH DZ and D M_1 are
+retained. The gain terms cancel exactly through(114), not by deleting
+preparation or heralding price. A finite warmup supplies faithfulness,
+not exact sigma_*; it cannot inherit(114) without an actual stationary
+input or a controlled preparation limit. This bridge changes no Info,
+full Book price, stopping rule or mandatory PRE selection.
+
+### 17.6 One consuming parent map, with the physical premise still visible
+
+The synthesis is now finite and uses one closed execution:
+actual original warmup -> real state and archive -> owned DATA future
+algebra -> least physical cyclic support -> original full feedback
+and its full moving-cut source(108)-(111). It needs no external
+history register, external purification, tracial doubling, stationary
+wait or fitted Info. This supplies the mathematical PRE representation
+and feedback application for this specific proposed physical boundary.
+
+The remaining physical application is precise: prove that the actual
+Book retained/readout boundary is THIS commutant support with its real
+fresh-input condition, or derive its actual different boundary from the
+same admitted process. Future-observation minimality alone does not
+force a commutant support test. If this test is native, its coherent
+archive access and complete preparation/controller/clock/Info/work
+price enter the same original source; (108) does not pay for them.
+Use the full Book mean residual of(104), the complete heat of Section14
+and the actual field-writer image, without replacing Info by a desired
+entropy. The exact nonvacuum and conditional global GR consumers retain
+their original hypotheses. There is no physical GR/raw216 closure,
+new task, claim promotion or additional action in this application.

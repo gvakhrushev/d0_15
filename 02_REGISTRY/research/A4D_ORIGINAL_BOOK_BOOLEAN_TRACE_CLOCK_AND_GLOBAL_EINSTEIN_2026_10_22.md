@@ -913,6 +913,24 @@ field-lift conditions. Native P_N and full physical price/selection
 still require their actual same-execution transport before the
 nonvacuum/global GR consumers can close.
 
+
+**Actual-state PRE representation (23 October).**
+[Paid writer Section17](A4D_PAID_MOMENT_FIELD_WRITER_2026_10_21.md#17-the-future-algebra-on-the-actual-paid-state-a-same-carrier-pre-map-and-its-complete-feedback-source)
+places the owned future-test algebra on the REAL DATA+paid-archive state.
+An actual coherent three-round warmup gives faithfulness in the stated
+pure-world regime; no external purification or stationary wait is used.
+Its least cyclic commutant support has rank128 and complete-word feedback
+-8 Tr16 log[(1-z)+zB^(2n)], including all moving-projector jets. The mixed
+world formula keeps the actual two support ranks instead. This supplies
+the same-carrier PRE/source application, not a physical selection of P_N.
+The exact archive support requires coherent access beyond a parity-bit
+predicate; total transported parity alone is invariant and has zero
+feedback. The optional stationary port1 identity supplies a real trace
+readout with its true gain, without a reset or Info assignment. Full-word
+return remains distinct from a single primitive clock tick. Actual native
+cut/controller/whole-price binding and field/refinement admission remain
+open on this same execution; the existing global GR consumers are unchanged.
+
 ### 9.2 The ordinary complete Book trace localizes too, with its true heat weight
 
 For actual block-diagonal \(\Delta=\bigoplus_h\Delta_h\) and

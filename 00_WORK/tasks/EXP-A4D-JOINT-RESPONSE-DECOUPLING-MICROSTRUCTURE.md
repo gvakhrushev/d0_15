@@ -6237,3 +6237,67 @@ existing checkpoint template was consumed. Live next-route CLI
 lookup timed out in its gh open-PR request; the EXISTING #334 remote
 head was independently verified through GitHub before publication.
 No new launch or dispatch was attempted from that failed lookup.
+
+### Same-owner checkpoint: actual-state future-algebra PRE map, 23 October 2026
+
+Phase: native realization / existing whole-argument composition.
+Existing owner #334 and constitutive/native-programme-v1 remain unchanged.
+Checkpoint artifact: paid-writer Section17; parent consumer: original-Book
+Section9.1, actual retained boundary and whole-source application.
+No independent task or acceptance/status registry is created.
+
+Exact application: original DATA16 future algebra M8 direct_sum M8 acts
+on the ACTUAL pure DATA+retained-archive state, yielding a rank128 cyclic
+subspace inside the original physical Hilbert carrier. The already-owned
+three-tick Doeblin result supplies faithful DATA after a real paid warmup
+in the explicitly pure-world regime, without an external purification,
+stationary wait or claim of mandatory preparation. The full-word return
+is left multiplication by B^n, giving feedback -8 Tr16 log M_n and the
+complete moving-cut source(109). The real oldRIGHT/archive factor used
+by that state is not counted again. Whole heat retains all physical modes.
+
+Carrier/source: DATA16 on the owned original regular chart, full actual R
+including oldRIGHT and all copied past work, actual preloaded fresh pairs;
+fixed finite n. Exact finite operator trace, real field/adjoint/observer
+jets in the owned pairing. Moving state and support jets are included by
+an exact isometry, not frozen. Mixed physical worlds instead carry the
+actual conditional archive support ranks r_plus,r_minus, constant only
+on a fixed-rank chart; faithful DATA alone does not determine them.
+No DATA16 coefficient is promoted to all-site refinement/gain.
+
+Smallest decisive checks: actual B^n blank compression and matrix-block
+multiplicity; correct least projection in the COMMUTANT, distinct from
+owned operational support IN the algebra; exhaustive actual blank versus
+all nonblank branch split. For a real pure warmup at m>=5, at least32
+positive fine histories but archive Schmidt rank16 show the support is
+not a Boolean pointer predicate. The mathematical pinch is not executed.
+Native coefficient-bit parity transport is exact, but its invariant total
+parity sector alone has zero feedback. Coherent support access remains an
+actual priced physical operation, not inferred from tape retention.
+
+The optional same-instrument stationary port1 map sends sigma_*=Delta^-1/Z
+to (4p^3/Z)I. It gives an observed trace bridge with actual probability
+4p^3D/Z and full DZ/Dmap source. It retains orphan port1, every label and
+conditional fine state, and implies no reset, iid law or Info choice.
+Finite faithful warmup is not exact stationary preparation.
+
+Parent substitution: mathematical physical-carrier PRE representation
+and feedback transport supplied; physical P_N selection NOT discharged.
+The actual full-word V_n (or T^N when that exact monodromy/clock binding
+holds) is not the single primitive T. Native cut/controller/preparation/
+clock/full Book Cost-Info/work, actual field-writing/refinement image and
+source comparison remain. Preserve exact nonvacuum/global conditional GR,
+all prior scoped no-gos and unchanged status. No new action or closure.
+
+Independent native_continuation_map, native_valuation_map and
+universal_parent_map ACCEPTED the final Section17 heading-to-EOF:
+16,309 UTF-8 bytes; SHA-256
+a982d2bf2859d9deb7225c5ae9e0e62ccde7addf335980b0cd79bece1f37adc2.
+The final scope repair explicitly retains complete-world purity for
+the archive-rank argument; purity of DATA alone would be insufficient.
+All152,875 bytes of the published paid-writer at0226d8ea remain an
+unchanged prefix. Review is bounded same-owner research integration,
+not physical-premise acceptance or retirement. Work, protocol, assembly,
+work-view, repository and diff guards passed; the existing checkpoint
+template was consumed. No heavy mathematical/Lean replay is warranted
+for this analytical application and documentation-only changed slice.
