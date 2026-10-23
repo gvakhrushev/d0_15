@@ -6984,3 +6984,81 @@ four-CAR construction; the general proof is (28)-(30). Work, protocol,
 assembly, generated work-view and repository guards pass; repository
 warnings=0, assembly scientific_promotion=false. git diff --check passes.
 No unchanged full128 numerical certificate or Lean suite was rerun.
+
+
+### 24 October: whole-master application and same-field internal matter composition
+
+Input ebc7c9a312d14bbd381006c971267bad5761db74; same Draft334 owner.
+Phase: native realization / complete source composition.
+Parent: primary NONVACUUM residual section7c, application in new
+section7d of that SAME existing artifact.
+
+Consume the actual pure matter compiler, original copied full128
+return, full33-scene primitive-clock trace and positive paidwriter
+sections9-10. On the original blank-App/bank input family the
+compiler commutes with P0 on ALL controller columns. Its return
+effect is exactly conjugate to the old full return, so its full
+feedback has no material dependence. The owned whole-clock
+estimate now controls real compiler secants and full geometric
+covector contrasts, including the unshifted c=0 block.
+
+The decisive application uses the CURRENT physical inverse coframe
+and periodic symbol, not the withdrawn shrinking-leg transport.
+At the exact vacuum center each local interior radial feedback
+row has an explicit strictly positive lower bound. The actual
+local heat row tends to zero along the common precision catalogues.
+Thus this declared bare-master prefix realization fails even flat
+stationarity for sufficiently fine compiler catalogues at fixed
+h,n. No all-finite-N sign, h-uniform limit, full-stack/D0 no-go,
+free clock extension or native continuous-control admission is
+asserted.
+
+The positive return-query construction remains. A commuting pure
+material compiler at its real forward checkpoint leaves its ideal
+whole-unitary conjugation/source unchanged; actual paid global
+inverse, primitive duration and complete heat retain their expanded
+inventory. Its actual clock-conditioned readout is exactly the
+owned LEFT-moment material dictionary with genuine site weights.
+Matching native source catalogues with readout error eta=o(delta)
+gives the SAME material-coordinate differential in the source limit.
+Permanent terminal matter and direct reporter interaction with
+that added CAR are not extra hypotheses of the existing all42
+consumer. The actual common field key and independent controls
+still need their physical selection/constraint law.
+
+Carrier/norm: original fixed-physical spatial CAR16, complete
+Apps/banks/oldRIGHT/controller, actual protected ranks and N;
+operator monodromy/heat bounds and the existing all42 dual norm,
+gain and field pullback. Exact dark modes and all source rows
+remain. The source-limit dictionary is not a finite stationary
+root or equality of distinct pure inputs/future classes.
+
+Operational application checked at its exact type: Book00's
+internal trace assumes the retained/transition split; Book01's
+Query_O and FutureExecution quotient act on supplied actions/tests.
+They do not yet identify the positive writer's initialized input
+family with a compulsory physical medium cut or transport its full
+trace. The actual task-to-cut/control map is the next parent
+substitution; no new generic quotient or adjoint theorem is needed.
+
+Write paths: existing primary residual owner and this brief only.
+Smallest decisive check: exact conjugation and finite heat-trace
+inequalities, physical Fourier trace and local variation,
+independent final source/dictionary review, affected structural
+guards. No new task, certificate, geometry scan, Lean module,
+acceptance edge or scientific-status promotion.
+
+
+Independent final analytical reviews: universal_parent_map and
+native_continuation_map accept section7d, heading through the byte
+before section8 INCLUDING all trailing newlines: 15,334 UTF-8 bytes,
+SHA256 bc80fbfc7e909835a2bb78dbb2a108d4dcc2190031ebac16b559a4bec74a0b52.
+Review retains the free-interior collar, all-column source bounds,
+fixed-c=1 or genuine joint raw-READY mass in the material reading,
+shared field dictionary and controlled source-limit scope.
+
+Work, agent-protocol, assembly, generated-work-view and repository
+guards pass; warnings=0 and scientific_promotion=false. The exact
+Fourier trace, positive source bound and endpoint heat estimate
+were checked analytically against their owned full-operator inputs.
+No unchanged numerical certificate or Lean suite was replayed.

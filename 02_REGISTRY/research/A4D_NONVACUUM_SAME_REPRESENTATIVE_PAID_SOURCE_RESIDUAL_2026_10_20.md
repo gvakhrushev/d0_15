@@ -792,6 +792,314 @@ address/RIGHT preparation, actual clock and every independent
 upstream source. No new selection principle, independent task,
 certificate catalogue, native minimum or physical GR closure follows.
 
+## 7d. Apply the generated matter to the full primitive Book master
+
+24 October 2026; input ebc7c9a312d14bbd381006c971267bad5761db74.
+This consumes section7c and the already proved
+[complete clock and return maps, sections13.3,14.4,19](A4D_PAID_MOMENT_FIELD_WRITER_2026_10_21.md#19-direct-book03-stationarity-the-actual-all-n-primitive-programme-and-two-different-memory-boundaries).
+The changed input is the ORIGINAL pure material preparation, with its
+whole controller complement, on the CORRECT physical inverse-coframe
+map(2),(11),(23). Neither the old shrinking-leg box nor the different
+local CAR fixture of that owner's section19.4 is used.
+
+Book00 gate stationarity and Book03's direct master are legitimate
+owned inputs. Their application still requires the actual operator,
+cut, clock and admissible variations. Here the declared price sector
+is precisely H+J on the owned homogeneous 33-scene primitive clock.
+It is not the spatial stopped heat or the complete independently
+supplied Book stack. Upstream seed/known-one/address/RIGHT preparation
+and any additional stack sources are retained as separate obligations.
+
+### The original return is exactly invariant under this material prefix
+
+Write R_theta for the complete address/CAR/controller compiler(35),
+and V_n(g)=(C_n U_n)...(C_1 U_1) for the original copied full128 body.
+R_theta preserves c and touches none of its fresh Apps or banks.
+Use the actual protected support
+
+    P0=I_DATA,oldRIGHT tensor P_blank Apps,banks tensor P_C,
+
+with any genuine spectator/scene factors counted once. P_C may
+protect the c=1 sector or both sectors, with actual rank r_C=1 or2.
+Then [R_theta,P0]=0 on ALL columns, so for M_theta=V_n R_theta,
+
+    F(M_theta,P0)=R_theta^dagger F(V_n,P0) R_theta.          (38)
+
+This follows directly from F(M,P)=P M^dagger(I-P) M P.
+No inverse preparation is executed, no prepared probability replaces
+the operator, and no c=0 column is discarded. Consequently the full
+return determinant is exactly independent of theta, at every finite
+mesh and round number:
+
+    J_n(g,theta)=-kappa Tr_DATA log[(1-z)I+z B(g)^(2n)],
+    B(g)=I-alpha_h Delta_DATA(g), alpha_h=p^2 h^2/128.       (39)
+
+Here kappa is the REAL protected scene/RIGHT/controller/bank
+multiplicity. For blank banks it is r_S d_R r_C; a wider protected
+bank support has its actual additional factor. DATA includes all
+physical sites and CAR16. Unused address labels, if needed, are
+retained as the actual padded identity extension. They do not add
+a field derivative to(39), but remain in the whole heat.
+
+Use the actual primitive expansion of M_theta and its counted final
+idle, of total length N. On the already owned coherent transported
+cut P_t=Q_t P0 Q_t^dagger, every interior leakage block vanishes.
+The single idle wrap is unitarily equivalent to(38). Thus (39) is
+also the ONE-step Book feedback on that full stage cut; there is
+no extra factor N. This invokes, rather than selects, that cut.
+Primitive admission of the original moving full128 gates is not
+proved by their supplied matrix formula.
+
+### Whole-clock source estimates include the compiler complement
+
+At a fixed common catalogue in(35), the actual N, all fibre ranks
+and the c=0 operator are common to its settings. The complete
+33-scene heat is a function H_N(M) of the full unitary monodromy.
+Its owned Fourier coefficients satisfy
+
+    c_l>=0, c_l<=33 exp(12 beta/13) I_l(beta/11),
+    C1(N)=2 exp(beta)/(33 beta) sum_(q>=1) q c_(qN).         (40)
+
+For ANY two full unitaries on that same fibre and clock,
+
+    |H_N(M_+)-H_N(M_-)|
+          <=C1(N)||M_+-M_-||_op,
+    |D H_N(M)[dot M]|<=C1(N)||dot M||_op.                 (41)
+
+For completeness the endpoint estimate uses the original whole trace
+Z_N=N exp(-beta)[D c0+2 sum c_(qN) Re Tr(M^q)].
+Telescoping gives |Tr(M_+^q-M_-^q)|<=D q||M_+-M_-||.
+The owned lower bound Z_N>=33 N D exp(-2beta) and
+|log a-log b|<=|a-b|/min(a,b) give(41). The real D cancels
+in this inequality; no trace mode was deleted or normalized away.
+
+At beta=2p^2 the existing Bessel estimate gives
+
+    C1(N)<64 22^(-N)/N!,     C1(N)->0.                    (42)
+
+This estimate applies to the actual compiler length, not an unpaid
+waiting interval. At fixed finite h,n the common catalogues can
+have N_j->infinity as their source precision improves. That is a
+property of this implementation sequence, not a selected physical
+horizon, an efficiency claim or an allowed change of a prescribed
+stopping task.
+
+For two settings in ONE such catalogue, equations(38)-(41) imply
+
+    |(mathcal B_+-mathcal B_-)/(2 delta)|
+       <= C1(N) ||(R_+-R_-)/(2 delta)||_op,
+    mathcal B=H_N(V_n R)+J_n.                             (43)
+
+The c=0 block cancels EXACTLY in the full operator secant. On c=1,
+R is the address-diagonal product of the two rotations in(32).
+Hence on a compact interior of the material disk,
+
+    ||D_psi R[v]||_op
+       <= max_x (|D alpha_x[v]|+|D beta_x[v]|).             (44)
+
+The inverse Jacobian(33), actual field norm and any source gain
+remain in this bound. Applying(43) to the actual angle secants of
+section7c proves suppression of the material source by C1(N_j).
+It does not take a derivative of one fixed discrete native word.
+Across different j the c=0 block may change; (41) holds uniformly
+over those blocks and does not assume they converge.
+
+There is also a useful whole geometric-covector comparison. At
+fixed g, for two material compilers R_a,R_b independent of the
+geometric tangent, let A_h,n=||D_g V_n|| in its actual lifted norm.
+Their feedback covectors are identical by(39), and(41) gives
+
+    ||D_g mathcal B(g,R_a)-D_g mathcal B(g,R_b)||
+                         <=2 C1(N) A_h,n.                (45)
+
+This is a finite comparison of complete geometric covectors, not
+a mixed material derivative without its step denominator. In a
+gain-normalized claim every right-hand side must be divided by
+the actual nonzero gain; no lower bound on that gain is presumed.
+By contrast, the original scalar action has a real off-shell
+backreaction: on the primary metric a compact delta g^(uu)=chi
+gives D_g sum q[chi]=sum chi |D_u^+Psi|^2. Two material sections
+that agree on the collar and differ on this interior stencil can
+therefore have different geometric sources. The unnormalized
+decay in(45) cannot silently supply that nonzero source map.
+
+### A decisive flat-field row on the correct physical carrier
+
+The source test can be made pointwise, without a gain or an
+off-shell source-map assumption. Take the exact vacuum material
+center k=0 allowed by the even catalogues in section7c. The c=1
+preparation is then exactly the constant m_seed, even while its
+full c=0 complement and real compiler duration remain.
+
+At the flat physical coframe vary E_s=s^-1 E_0, holding
+nu=3/5, h, p, n, beta and z fixed. This is a geometric variation:
+the inverse legs scale by s, hence D_s=s D_0 and
+Delta_s=s^2 Delta_0. The calibration alpha_h is FIXED.
+Put B=I-alpha_h Delta_0 and M=(1-z)I+z B^(2n).
+Exact differentiation of(39) gives
+
+    dJ_n/ds|_1
+      =4 kappa n z alpha_h Tr[M^-1 B^(2n-1) Delta_0]>0.    (46)
+
+For the actual symbol(23),
+alpha_h lambda_max<=p^2 nu^2/8<1/50, so B>49/50.
+All factors in(46) are commuting positive operators; exact dark
+modes contribute zero and the nonzero Fourier modes give strict
+positivity. There is no small-gap or inverse-Dirac assumption.
+
+The full CAR16 trace is
+
+    Tr Delta_0=128 nu^2 L^6,
+    alpha_h Tr Delta_0=p^2 nu^2 L^4.                      (47)
+
+The flat original V_n and P0 are translation covariant. Therefore
+the single-site inverse-leg radial row of J_n is exactly the
+global row(46) divided by L^4. Since M<=I and
+4p^2 nu^2>27/50>1/2, each such row obeys
+
+    D_x J_n > (kappa n z/2) (49/50)^(2n-1)>0.             (48)
+
+Choose x in the free interior bounded by the fixed field collar,
+with its local variation supported there. This is an allowed ambient source
+test of the supplied field chart, not an assumption of physical
+continuous control admission.
+
+The compiler need NOT be translation invariant on all columns.
+Do not divide its global heat derivative by L^4. Instead apply
+(41) directly to this SAME local tangent. Since D_x R_j=0,
+
+    |D_x H_(N_j)(V_n R_j)|
+          <=C1(N_j)||D_x V_n||_op ->0.                   (49)
+
+The finite full-column norm on the right is fixed in j. Equations
+(48)-(49) prove D_x mathcal B>0 for all sufficiently fine compiler
+catalogues at fixed h,n. The configured Palatini-plus-scalar action
+has every field row zero at this flat, constant-matter seed.
+
+Thus prefixing the pure material compiler to the original copied
+word, with this declared transported cut and 33-scene master,
+does not produce even the required flat stationary point in this
+implementation limit. This correct physical-carrier application
+does not revive the invalid shrinking-leg application, claim a
+sign for every finite compiler, or exclude other Book realizations,
+genuine constraints or additional actual stack sources.
+
+### Preserve the positive return-query route and its internal matter reading
+
+The [existing positive construction, sections9-10](A4D_PAID_MOMENT_FIELD_WRITER_2026_10_21.md#9-forward-native-words-supply-the-owned-coherent-return-query-source)
+already realizes the complete declared H+J source with explicit
+forward words, paid approximate global inverses, all clock modes,
+the original source gain and all42 covector errors. It is a
+DIFFERENT execution/cut, not the source-free material prefix(38).
+
+Its ideal comparison word is U_k=V_k^dagger M V_k, with M the
+fixed READY/report-controlled meter word. Add a section7c compiler
+Q_k on an actual additional CAR seed, using disjoint material
+registers or shared address/control registers ONLY after verifying
+[Q_k,M]=0. Then with V'_k=Q_k V_k,
+
+    V'_k^dagger M V'_k=V_k^dagger M V_k                   (50)
+
+on every column of the enlarged carrier. The real new seed/cut
+and spectator ranks must be included. A fixed added pure CAR seed
+does not itself multiply the protected rank; identity-protected
+extra factors do. This does not replace a supplied entangled
+address/RIGHT seed by a fictitious product state.
+
+The existing all-column forward-inverse construction applies to
+V'_k with its ACTUAL increased G/CX counts. It approximates(50)
+with the same telescoping error rule and recomputed actual length,
+gain and source-error budget. The c=1 identity XGX=G^dagger is not
+a global inverse on the other controller columns. The whole heat
+comparison remains conjugate to the fixed middle spectrum at a
+fixed new N; its absolute value, physical duration and paid seed
+are retained.
+
+At the real forward checkpoint t* after Q_k, let i0 be the actual
+initial isometry and T_t* the actual prefix. The map
+J_t*=|t*> tensor T_t* i0 satisfies J_t*^dagger J_t*=I.
+For any supplied actual matter diagnostic O at that stage,
+
+    J_t*^dagger (|t*><t*| tensor O) J_t*
+                     =i0^dagger T_t*^dagger O T_t* i0.    (51)
+
+This is the existing causal execution at one REAL clock stage,
+not an added cyclic invariant state or a superposition of all
+histories. When its incoming address/RIGHT seed is(34), it gives
+the original pure material readings with all coherences retained.
+Later uncomputation does not invalidate the earlier internal
+reading. The existing GR source consumer asks for the SAME
+field/clock/weight/matter map, not permanent final-output matter.
+
+The SAME matter dictionary is explicit. The existing
+[fixed-processor material map, section4](A4D_FIXED_PROCESSOR_JOINT_RESOURCE_SOURCE_2026_10_21.md#4-от-общей-вариации-к-каждой-независимой-копии)
+reads, on the supplied fixed c=1 input of section7c and an actual
+uniform site mass 1/S,
+
+    Psi_(x,A)(rho)=S/(2 sqrt(p)) Tr rho
+        (|x,1><x,A|+|x,A><x,1|),  A=0,15.                (52)
+
+On the pure checkpoint(32) it is exactly psi_(A,x), the SAME
+coordinate consumed by the existing moment reporter. For a
+nonuniform actual site mass w_x the factor is instead
+1/(2 sqrt(p) w_x), with every genuine weight derivative retained;
+a nonexistent uniform seed is not inserted. Before Q the required
+factorization is only sum_x |x> m_seed tensor xi_x: xi_x may contain
+all report work and oldRIGHT. If the borrowed control instead is the raw READY parity of V_k,
+include P_(c=1) in the numerator and use the actual joint mass
+w_(x,c=1)>0 in the denominator. Its failed c=0 branches remain
+in the full price; this conditional readout does not remove them.
+No product between address and RIGHT
+or between the whole Q and V is needed. On c=1 the local rotations
+therefore produce sum_x |x> m_x tensor xi_x exactly. The two pair
+differences have zero address component; their c=0 completions
+also preserve address labels, although every micro-gate and all
+address coherences remain in the real execution.
+
+At a common source catalogue choose Q_k for the SAME material
+coordinate psi(c_k) used by V_k. If eta_j is the maximum actual
+readout error at its center and endpoints, choose the finite
+native angle accuracy so eta_j/delta_j->0. The readout secants
+then approach the same material-coordinate differential; combine
+this with the existing full-price bound(41) of paidwriter section10,
+its actual gain and pullback norm. Continuity of the finite
+Palatini/scalar source on the fixed compact chart transports the
+covector to these approaching physical readings. The real
+mesh-dependent constants remain in a refinement claim. This
+constructs a commuting SOURCE-LIMIT dictionary, not an exact
+finite continuous actuator or a finite native stationary root.
+
+Direct interaction of the reporter with this additional pure CAR
+is not an extra hypothesis of the all42 source consumer. Generated
+moment copies and the pure checkpoint can interpret the same
+field when(52), the common key and the complete pulled-back price
+are verified. Conversely, this does not identify the old full128
+instrument's input with an unrelated copy. Actual independently
+variable codes/resources still require their own equations; the
+linked catalogue does not prove the physical constraint linking them.
+
+Equation(51) makes no diagnostic an admitted unpaid measurement.
+Actual subsequent tests keep their operations and full price.
+The existing future-profile identity transports a later test w
+from Q seed to the PAID prefix Q;w at seed. It does not equate
+their original future classes, which also include the empty test.
+The checkpoint stage projector is a clock-conditioned READOUT,
+not a selection of the physical active Book projector P_N.
+
+**Parent application.** The original bare-master prefix route is
+now tested on the current physical metric, with every controller
+column and primitive-clock source retained. The positive full-Book
+return-query route survives and admits an explicit internal
+pure-matter checkpoint; an artificial requirement of terminal
+matter persistence is unnecessary. Neither result selects the
+active cut, initial task, controller, full stack or physical
+field variation from Book00-01. The next substitution is their
+same-execution selection/transport and actual source application,
+not another generic compiler, heat estimate or geometric root.
+The exact nonvacuum family and conditional global GR consumers
+retain their original assumptions. No physical GR closure or
+scientific-status promotion is asserted.
+
 ## 8. Reproduction
 
 Run from this directory:
