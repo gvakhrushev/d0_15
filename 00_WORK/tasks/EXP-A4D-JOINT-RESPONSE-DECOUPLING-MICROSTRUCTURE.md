@@ -5407,9 +5407,55 @@ This boundary was checked in the actual strongest named owners:
 
 The same physical realization input remained unclosed through the prior
 two-cut, stopped-work and C1-history continuations. Further conditional
-source estimates alone cannot fill it. Resume the FULL physical closure
-application when a native construction/constraint for that input is supplied
-or derived; independent research on explicitly stated hypotheses remains
-legitimate. Do not infer unprovability of every D0 interpretation, or
+source estimates alone cannot fill it. Continue deriving the native construction/constraint from the repository
+and applying it to this physical closure input. The constructive runtime
+maps consumed in the 23 October continuation below are genuine inputs;
+the user need not supply another external law. Independent research on
+explicitly stated hypotheses remains legitimate. Do not infer unprovability of every D0 interpretation, or
 replace this missing map by the desired Einstein equation. Existing exact
 GR consumers, physical assumptions and GR_closed=false are preserved.
+
+
+## 23 October constructive runtime application after the resumed search
+
+The user directed continued repository search and derivation. The prior
+physical-closure boundary is not an impossibility theorem or a request
+for the user to provide a new law. The actual missing application is
+narrower than an absent history grammar: the newer
+ScenePathHistoryCanonicity proves all-walks uniqueness under identities,
+elementary-edge inclusion, scene faithfulness and composition closure;
+SceneEndpointReynoldsExpectation constructs the normalized one-step
+maps. Original Book/global consumer section13.1 derives the literal
+Book03 scene Laplacian from them and consumes the existing full128
+stopped-clock map with its genuine PRE feedback determinant.
+
+Phase: native realization / final source composition. Input 9b153cb2.
+Carrier: the actual raw33/directed718 runtime and, separately, the
+original CAR16/full128 PRE stopped tape with passive RIGHT retained.
+No transport between those carriers is presumed. Parent: equation(41)
+of the original Book/global consumer, constitutive/native-programme-v1.
+This corrects the old boundary's overly broad history-rule language;
+it does not discharge full field admission or physical Cost-Info.
+
+Smallest decisive identities: d*d=I-T_rw, its degree-density conjugation
+to L_sym, and det(I-zeta F_PRE)=(1-zeta)^16
+det(I+[zeta/(1-zeta)]K0^2). They separate the constructed operator and
+clock from the unproved physical valuation. The task remains research
+in progress: derive the actual same-execution field variation and full
+source map, retaining moving preparation, real gains and all internal
+equations, then apply the existing exact GR consumer. No new scientific
+task, certificate, physical selector or acceptance status is introduced.
+
+
+The final section13.1 was independently reviewed by the native-valuation
+and universal-parent reviewers: raw UTF8 heading-to-EOF SHA256
+43816765f61608556b0ce6c61e688c9ed64325699ad8cc3b51d2fa5845f87c55,
+3846 bytes. The stated strict Delta chart and specified PRE-cut scope
+are included. A narrow original-matrix diagnostic checked the scene
+Laplacian, stopped-clock PGF, determinant and its moving-K0 source,
+with respective errors below 4.8e-16, 3.5e-18, 3.4e-17 and 3.4e-24.
+These are diagnostics for the displayed identities, not a physical
+selection certificate. Repository/work/agent/assembly-contract and
+generated-work-view guards pass; prior expensive proofs were not replayed.
+The inherited assembly-render suffix is unchanged. No lifecycle,
+Book, claim, CORE or scientific acceptance status is promoted.

@@ -1358,3 +1358,86 @@ H+J without their same-valuation identity. Independent apparatus
 equations, genuine field admission, joint stationarity and physical
 refinement remain required. The original row-memory source remains;
 GR_closed=false.
+
+
+### 13.1 Constructive native runtime maps, before the remaining physical application
+
+23 October 2026, continuation of the same owner from 9b153cb2. The user
+directed the integrator to find the native rule in the repository or
+derive the missing link, rather than request another external law.
+This corrects the overbroad suggestion that a general history grammar
+itself was missing. It does not discharge the physical source premise.
+
+The newer owned
+[free-path theorem](../../03_FORMALIZATION/D0/VNext2/ScenePathHistoryCanonicity.lean)
+states that a scene-faithful family containing identities and every
+elementary edge, closed under composable tick concatenation, is exactly
+all scene walks. The 718 directed edges are its generating arrows.
+This theorem's explicit runtime hypotheses must be retained; it does
+not choose a probability law or the next source-bearing spectral triple.
+The older raw Aut-subcategory result cannot negate this newer theorem.
+
+The owned
+[endpoint/Reynolds maps](../../03_FORMALIZATION/D0/VNext2/SceneEndpointReynoldsExpectation.lean)
+construct Js, Jt and C1, with C1 Jt=I and C1 Js=T_rw. In the literal
+counting Hilbert spaces mu(edge)=1/718 and nu(v)=degree(v)/718,
+Js and Jt are isometries and Js*Jt=Jt*Js=T_rw. Consequently
+
+\[
+ d=(J_t-J_s)/\sqrt2,\qquad d^*d=I-T_{\rm rw}.
+ \tag{43}
+\]
+
+Conjugating by diag(sqrt(nu)) gives exactly the Book03 normalized scene
+Laplacian. Thus a genuine history-to-scene operator map is available.
+It is a readout construction, not a declaration that later metric/link
+values are writable. The Perron bulk history measure instead gives
+Euclidean transport A/rho; its operator must not be silently identified
+with this degree-normalized one.
+
+The original full128 also supplies an actual clock map once the event is
+specified. On the original regular chart 0<Delta<I, take T>=1, n>=0
+and 0<=zeta<1. For departure from the original fine blank alpha=0, put
+A=K0=I-2p^2 Delta>0 and F_PRE=I-A^2. Every waiting zero and the entire
+terminal nonblank label remain in the existing stopped tape. Its
+survival and probability generating function, for normalized DATA rho
+and 0<s<1, are exactly
+
+\[
+ \Pr_\rho(T>n)=\operatorname{Tr}(\rho A^{2n}),\qquad
+ \mathbb E_\rho s^T
+ =s\operatorname{Tr}\!\left[\rho F_{\rm PRE}
+                      (I-sA^2)^{-1}\right].
+ \tag{44}
+\]
+
+These consume the existing
+[stopped-clock owner](sources/d0_native_minimality_closure_2026-10-20/prospective/STOPPED_CLOCK_SOURCE.md);
+they are not a new stopping controller or a repetition of its inverse.
+The Book-form DATA feedback determinant for this specified PRE cut
+satisfies the immediate identity
+
+\[
+ \det(I-\zeta F_{\rm PRE})
+ =(1-\zeta)^{16}
+   \det\!\left(I+\frac{\zeta}{1-\zeta}A^2\right).
+ \tag{45}
+\]
+
+The passive RIGHT multiplicity remains outside this DATA determinant.
+Equation (45) reconstructs the Book spectral functional from the
+specified runtime operator. It does not identify that determinant with
+the normalization of the positive waiting law (44), or with its paid
+Cost-Info. In particular the established harmonic waiting score
+-Tr(rho log F_PRE) is a different contraction and a different function.
+
+Accordingly, the next forward application of (41) does not require
+inventing a history grammar, a unique total reading functor, a new
+entropy-rate theorem or another metric root. It requires the actual
+common execution map from these records/operators to the original
+coframe/link/matter variation image and complete Book source. Equations
+(43)-(45), the generated preparation source and the strong limit (42)
+are inputs to that application; none substitutes for its equality of
+full covectors. The unresolved physical map is proof work to derive,
+not information the user must supply. The exact nonvacuum consumer,
+all independent apparatus equations and GR_closed=false are retained.
