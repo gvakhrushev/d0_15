@@ -187,6 +187,183 @@ The task has therefore been reduced from 'compare two impressive constructions' 
 
 **Remaining scope boundaries:** coherent counting-site map (4) is supplied, not physically forced; complete fixedRIGHT128 pure preparation is not selected by this calculation; native port rounds and scene-J2 ticks are different unless a clock map is proved; the complete Book action is still unknown; the numerical witness is not interval acceptance; no whole-action joint stationary recovery or GR/raw216 closure is claimed. `GR_closed=false`.
 
+## 7a. Apply the complete recorded information to the SAME material source
+
+24 October 2026; input a28019143fe4d302770e5a42df8533f89aa85794.
+This is an application to (17), not another choice of detector or a
+derivation of compulsory Book Info. It consumes the original full128
+blank-word identity, the exact primary preparation (4), and the complete
+CQ/Gibbs source identity in
+[A4D_PAID_MOMENT_FIELD_WRITER_2026_10_21.md, section14.3a](A4D_PAID_MOMENT_FIELD_WRITER_2026_10_21.md#143a-spatial-heat-complete-cq-information-and-the-actual-recycling-defect).
+All statements below are at fixed finite mesh h and positive integer n.
+Use the small-amplitude family of section5, including A_W=300 sigma^2,
+a strict Julia chart and B=I-alpha_h Delta>0, with
+alpha_h=epsilon_h/2=p^2 h^2/128.
+
+### Exact complete-history birth without enumerating the tape
+
+Write xi=partial_sigma Omega|_0. By (11)-(12),
+
+    ||xi||^2 = r_h^2,
+    Delta_0 xi = lambda_h xi,
+    lambda_h = 4 nu^2 h^-2 sin^2(kh/2) = nu^2 k^2/r_h^2,
+    D_0 Omega_0 = 0.
+
+For the ACTUAL chronological fine Kraus words M_omega, the all-blank word
+is M_(0^n)=B^n; completeness retains every other word, including zeros.
+Put b_h=1-alpha_h lambda_h and
+
+    a_(h,n) = r_h^2 (1-b_h^(2n)) > 0.                         (18)
+
+At the dark flat input every nonblank word annihilates Omega_0.
+For omega different from 0^n its output vector therefore has the expansion
+
+    v_omega(sigma) = M_omega(sigma) Omega(sigma)
+                  = sigma M_omega(0) xi + O_(h,n)(sigma^2).
+
+The geometry starts changing only at order sigma^2. Completeness gives
+
+    sum_(omega != 0^n) ||M_omega(0)xi||^2
+      = <xi,(I-B_0^(2n))xi> = a_(h,n).
+
+Consequently q_(0^n)=1-a_(h,n)sigma^2+O(sigma^3), and the Shannon
+entropy of the COMPLETE fine record, in natural logarithms, is
+
+    H_fine(sigma) = -a_(h,n) sigma^2 log(sigma^2)
+                   + O_(h,n)(sigma^2).                      (19)
+
+No positive-support assumption is imposed on each individual word.
+A word with zero leading vector has probability O(sigma^4) and does
+not contribute to the leading logarithm. No reset, coarsening of
+labels, or restriction to the occupied input Fourier modes changes
+the actual instrument in this argument.
+
+### The actual compact material Euler direction
+
+Use exactly the variation in (10),(16): at the given geometry set
+delta_chi Psi=chi(x,y)Psi, with chi supported in the free transverse
+interior, and differentiate the grade14 square root as in (7).
+The physical coframe, links, clock amplitude and collar stay fixed
+in THIS derivative. Then
+
+    delta_chi Omega = sigma chi xi + O(sigma^2).
+
+For a nonblank word the corresponding leading output derivative is
+sigma M_omega(0)chi xi. Hence the total leading probability derivative is
+
+    2 Re <xi,(I-B_0^(2n))chi xi>
+      = 2 a_(h,n) mean(chi).
+
+This uses B_0 xi=b_h xi and self-adjointness; chi need not commute
+with B_0. The mean is the original counting-site mean, the same
+normalization as (16). The complete first source is thus
+
+    D_chi H_fine
+      = -2 a_(h,n) mean(chi) sigma^2 log(sigma^2)
+        + O_(h,n,chi)(sigma^2).                              (20)
+
+For a word with vanishing leading vector, its entropy derivative is
+bounded by
+2 ||v_omega|| ||delta_chi v_omega|| |log ||v_omega||^2|
+=O(sigma^3 |log sigma|)=o(sigma^2).
+At exact zeros use the continuous extension of the entropy derivative
+along this smooth amplitude curve. Thus (20) does not differentiate
+log0 or discard a support birth. Branch-by-branch parity is unnecessary.
+
+### Which information (20) actually computes
+
+Let Theta_n be the complete coherent output of the same Stinespring
+execution and Gamma_n its restriction/pinching to the full declared
+fine-pointer algebra, retaining conditional DATA and oldRIGHT.
+For the supplied pure DATA input (4) and an untouched PRODUCT
+oldRIGHT state rho_R, every conditional DATA branch is pure. Exactly,
+
+    S(Gamma_n)-S(Omega_in) = H_fine,
+    Omega_in = |Omega><Omega| tensor rho_R.
+
+The oldRIGHT entropy, including its derivative if rho_R moves
+independently, cancels on the two sides. This does not identify
+the full fixed-Gram pure reference128 lift with (4): its nonlocal
+density kernel and Rayleigh source differ even when its local CAR
+readouts agree. The owned fixedRIGHT preparation source is preserved.
+
+The pinching here can be restriction to the specified readable
+record algebra; it is not an uncharged physical erasure operation.
+The entropy of the ENTIRE coherent closed system is instead
+preserved by its isometry. Its coherent record subsystem entropy
+also need not equal H_fine. Thus internal physical memory and
+closedness, as required by Books00-01, do not authorize replacing
+one of these entropies by another or identifying any of them
+with compulsory Book03 Info.
+
+### Substitute into the existing full-price equation
+
+For the DECLARED fine-CQ information component
+I_fine=H_fine/log(phi), equations (16),(20) give
+
+    D_chi(C_port,n-I_fine)
+      = [2 a_(h,n) mean(chi)/log(phi)]
+          sigma^2 log(sigma^2) + O_(h,n,chi)(sigma^2).          (21)
+
+For nonnegative nonzero chi this is nonzero for all sufficiently
+small positive sigma. The exact configured Einstein-CAR material
+source is zero there. Equation (17), under this information
+interpretation, now has a computed second operand: the actual
+remaining ledger would have to satisfy
+
+    D_chi C_remaining
+      = -[2 a_(h,n) mean(chi)/log(phi)]
+           sigma^2 log(sigma^2) + O_(h,n,chi)(sigma^2).         (22)
+
+The exact requirement is D_chi C_remaining =
+D_chi I_fine-D_chi C_port,n; the bounded remainder in (22) must
+not be mistaken for a known missing analytic price coefficient.
+A fixed finite inventory of real-analytic native charges has an
+analytic expected source across this dark seed and cannot supply
+the nonzero logarithm in (22). A genuine nonanalytic information
+valuation, changing stopping programme or different actual
+preparation is not excluded. Their complete source must be derived
+from that execution, not assigned from (22).
+
+This also applies the new spatial Gibbs identity82b to its actual
+primary input. At fixed h,n, the original full spatial H+J+R,
+port cost, energy defect and heat reference are smooth analytic
+functions on this strict chart. Since that reference is faithful,
+
+    D(Gamma_n || tau_sp)
+      = -H_fine - S(rho_R) - Tr Gamma_n log(tau_sp).
+
+The terms involving the product oldRIGHT cancel with the actual
+input entropy as in82b. The material logarithm (21) is retained
+in this relative-entropy operand; cancelling the recycling sum,
+or bounding the stopped-log/Rayleigh difference, does NOT cancel it.
+The spatial source identity therefore does not yet identify the
+fine-CQ price with the original spatial master action.
+
+For the separately owned amplitude-Born plus expected-Shannon
+Bellman binding, the mean remains C-H_phi and the negative
+Bellman root potential is -f_2=C-3H_phi/2=-log_phi(Z_2)/2.
+The squared-norm partition pressure -log_phi(Z_2) is twice this
+quantity; the literal sum of positive amplitudes is a different
+partition and is not used here. Thus (20) also fixes their nonzero
+half-entropy source difference on this same preparation.
+Those two binding premises and the absolute Book anchor remain
+explicit; no likelihood, amplitude pressure or coherent whole-state
+information is silently substituted for fine-CQ information.
+
+**Parent route change.** The complete fine-record operand in (17)
+has now been evaluated analytically on the SAME primary material
+direction for every fixed finite h,n. Its logarithm rules out an
+automatic cancellation by the known analytic port price and finite
+analytic completion. This removes the proposed fine-CQ shortcut to
+source equality, while retaining the exact nonvacuum solution family,
+the positive source constructions and all conditional universality
+theorems. The remaining application is the actual Book valuation
+and its same-initial preparation/constraint map, not another
+Einstein witness or another entropy coefficient. No uniform
+growing-horizon estimate, compulsory preparation, admitted field
+writer, stationary solution, or physical GR/raw216 closure follows.
+
 ## 8. Reproduction
 
 Run from this directory:

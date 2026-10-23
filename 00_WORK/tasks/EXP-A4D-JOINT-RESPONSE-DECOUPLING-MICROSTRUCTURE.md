@@ -6808,3 +6808,66 @@ multiplicity and the moving-alpha asymptotic condition; both are retained.
 Work, agent-protocol, assembly, generated work-view and repository guards
 pass, with no claim/assumption/assembly promotion. No unchanged numerical
 certificate or Lean suite was replayed.
+
+
+### 24 October: apply the full recorded Info to the actual primary material direction
+
+Input a28019143fe4d302770e5a42df8533f89aa85794; same Draft334 owner.
+Phase: native realization / source composition. Consume the original
+full128 blank word, complete Kraus law, same nonvacuum scalar/top input,
+and paidwriter14.3a's full spatial Gibbs/record identity.
+
+Exact parent application: NONVACUUM_SAME_REPRESENTATIVE section7a
+evaluates the previously uncomputed fine-CQ information operand of17.
+For every fixed finite h and n on the strict Julia chart, its complete
+fine-history birth coefficient is r_h^2[1-(1-alpha_h lambda_h)^(2n)].
+The compact normalized matter Euler carries a nonzero sigma^2 log sigma^2
+term. All128^n words remain; completeness supplies the coefficient
+without enumerating them. Zero-probability branches and moving grade14
+normalization are retained. The whole spatial relative-entropy identity
+keeps precisely this source; a stationary recycling cancellation or
+spectral defect estimate does not remove it.
+
+This is a scoped route change: known analytic port cost plus a fixed
+finite analytic completion does not automatically reproduce the exact
+primary zero material source when Info is the full fine-CQ entropy gain.
+The actual remaining price would need the displayed logarithmic source.
+No statement excludes another genuinely derived Book valuation or
+different physically admitted preparation. Fine readable-record entropy,
+coherent subsystem entropy and entropy of the closed whole remain
+distinct. The fullRIGHT128 pure lift is not replaced by a counting-site
+pure DATA input with product RIGHT. Books00-01's internal memory and
+normalized response are reused; they are not made to choose Book Info.
+
+Carrier/source: same coherent counting-site CAR16 preparation(4),
+original physical inverse coframe, proper links, all fine histories,
+untouched product oldRIGHT, fixed h/n/clock calibration, compact free
+material direction and actual grade14 normalization. No growing-horizon
+bound, all-field source equality or physical GR/raw216 acceptance.
+Write paths: the existing primary residual owner and this brief.
+Smallest decisive check: exact blank-word/completeness substitution,
+source derivative with born-zero controls, independent analytical review
+and affected work/repository guards. No new task, certificate, solver,
+Lean module, assembly edge or scientific status promotion.
+
+
+Operational-source routing checked in this application: FutureExecution
+quotientStep descends an already supplied step; the global-composition
+primary inverse preserves geometry under full future equivalence.
+Can therefore cannot choose between distinguishable field continuations.
+ConcreteRepairForcingCanonicity's shell takes an S3 conjugacy-class
+defect, not an actual Lorentz holonomy; that representation/record
+map has not been supplied by this application. The existing whole-HJR
+fixed-collar Riesz envelope already eliminates arbitrary preparation
+directions while preserving RIGHT, but does not preserve the primary
+scalar/top readouts automatically. Reuse these owners; do not rediscover
+the quotient, shell filler, purification or envelope as a new selector.
+
+Analytical validation: native_valuation_map independently accepted final
+section7a, heading-to-next-heading: 8,176 UTF-8 bytes, SHA256
+012b6595997c6c46e34a4d0c74ea95578b6fd16b76475e79d45b852be225f818.
+Its normalization review distinguishes negative Bellman root potential
+-f2 from squared-norm partition pressure and a literal amplitude sum.
+Work, agent-protocol, assembly, generated work-view and repository guards
+pass, with no scientific promotion; git diff --check is clean.
+No unchanged numerical certificate or Lean suite was rerun.
