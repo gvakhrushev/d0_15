@@ -979,6 +979,43 @@ the same-execution Query_O/active/archive/controller map and real field
 variation in the original full stack; this must be derived rather than
 replaced by another normalized price, chosen cut or freely added wait.
 
+
+**Faithful-memory interaction supplies an explicit conditional preparation/compiler map (23 October).**
+[Paid writer Section20](A4D_PAID_MOMENT_FIELD_WRITER_2026_10_21.md#20-one-faithful-memory-source-constructor-supplies-copying-reversible-and-and-the-actual-fixed-z-coherent-challenge)
+keeps the ENTIRE original Q8 path memory. The real-skew part of its
+regular group algebra has a UNIQUE element with the old spin-i image.
+Applying the existing factored quarter-turn constructor to that element
+gives an exact two-call copy cell and eight-call reversible AND on all
+columns. This removes separate copy/AND primitives INSIDE the declared
+source-constructor class, without inferring its physical admission from
+matrix algebra or the old spin-only action.
+
+The same conditional palette gives a fixed172-call coherent z=2^-20
+factory on39 regular8 factors. Its whole state is pure, although its flag
+is entangled with its work. It therefore satisfies the ACTUAL one-particle
+coin contract and the two independent original8D determinant queries.
+This supplies a bounded alternative to their already-owned capped exact
+Golden factories, not a rediscovery of those factories. The existing
+all42 first-source/nonvacuum consumer applies under its original full
+price/task/interface hypotheses. Enlarged whole Book spectra, actual
+stages, initialization and every unmeasured mode remain required.
+
+For the original n-event recording, the new full word is exactly the
+old word tensor I_(4^(7n)), on ALL columns. The heat keeps that entire
+multiplicity at the new actual duration; feedback counts the genuinely
+protected coset rank. The complete source is not inferred from a coarse
+probability: different factory readout algebras have the explicitly
+nonzero conditional-information source(149).
+
+The remaining physical map is now concrete: native actuation of that
+same real-skew source constructor on full memory, actual unconditional
+and App/class-predicate controls and routing, with paid identity-class
+resources. This does not follow from the one signalPort theorem. Keep
+the actual moving8D/material source, full stack and independent upstream
+equations. For the direct Book03 route, a justified configuration/tangent
+map into X_N can suffice; do not universally demand a same-initial writer
+that only the prospective-minimum route needs.
+
 ### 9.2 The ordinary complete Book trace localizes too, with its true heat weight
 
 For actual block-diagonal \(\Delta=\bigoplus_h\Delta_h\) and

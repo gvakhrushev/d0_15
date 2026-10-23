@@ -3953,3 +3953,302 @@ asserted, the actual absolute valuation/continuation binding remains.
 A new fitted cut, counterterm, source normalization or extra clock wait
 would change this question rather than solve it. No full D0, raw216,
 physical-price, assembly or GR closure is claimed.
+
+
+## 20. One faithful-memory source constructor supplies copying, reversible AND and the actual fixed-z coherent challenge
+
+23 October. Phase: native realization, with applications to the already
+owned recorded word(73), original two8D determinant/first-source consumer,
+and its fixed-clock preparation premise. This is a POSITIVE conditional
+whole-programme construction, not a new gravitational action or a claim
+that algebra membership grants physical actuation. It consumes the
+original Q8 regular/spin/reversal owners, SourcePortPreparation's
+factored source interaction and quarter-turn polynomial, the existing
+two-versus-eight chronological distinction, and the complete determinant
+and paid-factory results. Their mathematical statements are not reproved
+as new owners. The changed input is to RETAIN the entire faithful path
+memory and explicitly substitute its source operations into those consumers.
+
+### 20.1 Repair the carrier mismatch using the unique REAL memory-skew lift
+
+Use the ACTUAL Q8 multiplication table and class order
+(1,-1,i,-i,j,-j,k,-k) from OrderMemoryReadout. Its regular action R_g
+retains every coefficient of the native real path algebra; reversal gives
+R_g^dagger=R_(g^-1). Put z_c=R_-1 (distinct from fugacity z),
+e_minus=(I-z_c)/2 and e_plus=I-e_minus. The owned toSpin intertwiner
+annihilates e_plus and identifies e_minus with the real quaternion sector.
+It is NOT an isometry onto the entire eight-class memory.
+
+Naively putting R_i into the old spin generator is wrong:
+R_i^2=z_c, not -I_8. In particular I+R_i+R_i^2 is not the original
+orthogonal quarter-turn. The correct full-memory generator is
+\[
+ k_i={R_i-R_i^\dagger\over2}=e_-R_i,
+ \quad k_i^\dagger=-k_i,\quad k_i^2=-e_-,\quad k_i^3=-k_i.
+                                                               \tag{140}
+\]
+This is the UNIQUE real-skew element of R[Q8] with spin image L_i.
+Indeed coefficient faithfulness and reversal force a real-skew element
+to be a(R_i-R_-i)+b(R_j-R_-j)+c(R_k-R_-k); its spin image is
+2(aL_i+bL_j+cL_k), which fixes a=1/2,b=c=0. The scalar and central
+real coefficients vanish. This uniqueness is in the REAL MEMORY GROUP
+ALGEBRA with the source factor fixed. It is not uniqueness in so(8),
+the complex skew-Hermitian algebra, or all joint source-memory skew
+operators; additional source-skew tensor central-even terms are outside
+this constructor and are not excluded.
+
+For an actually available source projection A (selfadjoint in its actual
+positive Gram), use the SAME factored constructor H=A tensor k_i:
+\[
+ X_i(A)=I+H+H^2=(I-A)\otimes I+A\otimes u_i,
+ \quad u_i=e_++e_-R_i,
+ \quad u_i^\dagger u_i=I,\quad u_i^2=z_c.              \tag{141}
+\]
+H^3=-H proves orthogonality of that polynomial without any new angle,
+continuous time calibration or target-field-dependent parameter. On
+the spin quotient it is exactly the old controlled L_i source operator;
+on the formerly discarded real character sector it is identity.
+
+IMPORTANT admission boundary: (140)'s linear combination is an algebra
+element, NOT a chronological gate word in R_i and R_i^dagger. Equation
+(141) is executable only when this real source-quarterturn constructor
+is physically admitted on the full memory and on the stated control.
+The spin-only SourcePortPreparation theorem constructs its particular
+signalPort; it does not supply this stronger actuation/routing theorem.
+Uniqueness removes an off-sector choice, not that physical premise.
+
+### 20.2 Exact copy and Boolean conjunction on ALL input columns
+
+Write each regular class q=(-1)^s b, b in{1,i,j,k}. In these constant
+coordinates z_c=I_4 tensor X_sign. Thus TWO forward source operations give
+\[
+ X_i(A)^2=(I-A)\otimes I+A\otimes z_c:
+       (a,s,b)\longmapsto(a,s\mathbin{\mathrm{XOR}}a,b). \tag{142}
+\]
+This is CNOT on the real central-sign memory, including dirty signs,
+every coset, coherent inputs and all oldRIGHT entanglement. It does not
+copy an arbitrary quantum state; it creates the stated controlled
+correlation. The owned two-local-gates theorem already establishes the
+spin relative-sign identity; (142) is its faithful-memory application.
+The original eight-operation order word has the same final central
+operator but a different real clock/inventory. Do not shorten a previously
+executed or provenance-constrained eight-operation history.
+
+For two commuting actually available control projectors A,B, the i,j
+versions of(141) give
+\[
+ X_i(A)X_j(B)X_i(A)^3X_j(B)^3
+       =(I-AB)\otimes I+AB\otimes z_c.                \tag{143}
+\]
+The four joint control sectors prove the identity on ALL columns:
+only sector A=B=1 has the native quaternion commutator -1. This is
+Toffoli into a sign target in EIGHT forward quarterturn calls, without
+an independently inserted AND gate. Computing a clean Boolean AND still
+needs a genuinely initialized target sign; all target/coset resources
+remain in the world. A reversible OR into a fresh sign takes two copies
+and one(143), namely twelve source calls, since a OR b=a XOR b XOR ab.
+
+The predicates in these formulas must be ACTUALLY admitted. Native
+class-diagonal tests, App bits and computed flags are not all supplied
+by the left regular group algebra. In particular the source's one
+signalPort cannot be renamed seven App projectors or an arbitrary
+Boolean control without the routing/admission map.
+
+### 20.3 Apply that constructor to the whole original copied execution
+
+If the original seven App bit projectors have that routing, replace each
+of (73)'s seven CX by its two-operation cell(142). For n rounds the
+physical target memory consists of 7n regular8 factors. A constant basis
+permutation, not an executed free gate, gives
+\[
+ \bigotimes^{7n}\mathbb C[Q8]
+   \simeq\mathcal H_{\rm bank128}^{\otimes n}\otimes\mathbb C^{s_n},
+ \quad s_n=4^{7n},\qquad
+ \widetilde V_n=V_n\otimes I_{s_n}.                 \tag{144}
+\]
+This is equality of the COMPLETE final unitary, not just its prepared
+Kraus column. Hence Tr(tilde V_n^q)=s_n Tr(V_n^q), for every q, NOT
+s_n^q times that trace. All original conditional DATA/oldRIGHT states,
+fine labels and every field jet transport under this constant map.
+For a moving A, the real copied-block jet is DA tensor(z_c-I), with
+all actual Gram/frame reactions retained.
+
+The new source calls replace seven calls by fourteen per round. In a
+clock where the old CX and new source calls each occupy one declared
+slot, N_new=N_old+7n. Actual finer admitted decompositions use their
+TRUE lengths. Equations(144)-(145) require the COMPLETE all-input routed
+product to be V_n tensor I_s, including genuine extra identity factors.
+If added routing/preparation changes that monodromy or carrier, compute
+its actual whole heat anew; matching one prepared column or its length
+is insufficient. Intermediate cells act on
+cosets; a sign is committed only at the completed cell. Rebuild both
+transported cuts and progressive pointer hulls from these actual stages.
+The full same-scene thermal trace therefore obeys
+\[
+ \widetilde H(N_{\rm new})
+ =H_{V_n}(N_{\rm new})+\beta^{-1}\log s_n.            \tag{145}
+\]
+The right side uses the old MONODROMY at the NEW physical length, not
+its old heat value at N_old. Every auxiliary mode is counted. Moving
+beta keeps D(beta^-1 log s_n); changes of n/rank are separate comparisons.
+
+Actual all-target identity-class initialization protects one coset state,
+so its all-fresh-blank feedback equals the old J, without an s_n factor.
+Protecting all cosets as I instead multiplies J by s_n; a fixed rank-r
+coset protection multiplies it by r. Neither deletion nor multiplication
+is automatic. All new physical allocation/preparation and source calls
+remain paid. Full endpoint and specified final-CQ transport do NOT equate
+the two real programmes' branchwise physical Cost-Info or whole clocks.
+
+This supplies the algebraic copy cell needed by the entire n-event
+consumer, conditional on the SAME source constructor and actual routing.
+It needs no oldRIGHT reading or resetting. Sections19's two boundary
+calculations survive on these transported cuts; for the literal expanded
+recording word the longer true clock improves the stated heat bound.
+
+### 20.4 A bounded coherent 2^-20 factory, instead of a separate fair-coin oracle
+
+If the same source constructor is admitted with A=I (or a genuinely
+prepared, paid source eigenstate), a fresh actual identity-class input has
+\[
+ u_i|1\rangle={|1\rangle+|-1\rangle+|i\rangle-|-i\rangle\over2},
+ \quad\Pi_i=|i\rangle\langle i|+|-i\rangle\langle-i|,
+ \quad\langle\Pi_i\rangle=1/2.                       \tag{146}
+\]
+Pi_i is the full rank2 predicate on regular8, not a freely extended
+single bit on the unused j/k columns. Its coherent source control must
+be supplied. Twenty independently initialized cells, all kept pure and
+unmeasured, give the joint event product Pi_i with probability
+z=2^-20. There is no variable stopping time or Golden extractor here.
+
+Compute its AND into a flag by nineteen(143) cells on nineteen fresh
+regular sign targets. All nineteen work records remain; no uncompute
+is necessary for this query. Twenty preparation calls plus 19*8 give
+172 SOURCE QUARTERTURN CALLS, on 39 regular8 factors. This is a fixed
+finite factory with the complete 8^39 carrier, not a free pure qubit.
+Actual initialization, control routing and finer source expansion are
+additional genuine work/clock. Optional AND-compute/copy/AND-uncompute
+costs326 such calls and extra flag space; the twenty prepared coin
+registers remain. This does not uncompute their preparation and is a
+different programme.
+
+Let its complete pure output be |c_z>, including every factory/AND factor,
+and Z the physical final-flag1 projection, identity on other work.
+Then <c_z|Z|c_z>=z. The flag need not itself be pure or uncorrelated
+with its work. The original general-z determinant owner requires a pure
+WHOLE coin vector and this projector equality, which are supplied here.
+The construction does not contradict its Golden-only classical finite
+coin no-go: it uses the expressly stronger conditional real-skew source
+constructor, not a finite registered p,p^2 Bernoulli word. Nor does it
+synthesize that constructor by algebraic addition for free.
+
+### 20.5 Consume the ACTUAL determinant/source map, including the entire coin work
+
+For the original one-particle query U(y), retained P and original Q,
+let V(y)x=U(y)x tensor c_z, and B_out=I-Q tensor Z. Then EXACTLY
+\[
+ P V^\dagger B_{\rm out}VP=I_P-zF|_P.                \tag{147}
+\]
+All first jets transport for this fixed source-independent factory.
+Use(147) INSIDE the one-particle exterior construction if that is the
+consumer. One shared flag on an already filled r-particle wedge instead
+gives (1-z)+z det(I-F), generally not det(I-zF).
+
+The primary positive consumer needs no extra exterior primitive:
+TWO_NATIVE_8D_DETERMINANT_SOURCE Sections1-4 already supplies two fixed
+native8D queries for the configured J2 block, with eigenvalues L_+,L_-
+in the existing fixed basis. Give each query its OWN complete factory
+(146), retain both microscopic flags, and compute their reversible OR.
+The exact no-click law and its ambient first jet are the owned ones:
+\[
+ d=(1-zL_+)(1-zL_-)=\det(I-zF)\quad\text{on that block}.
+                                                               \tag{148}
+\]
+Off its diagonal reference the discrepancy remains exactly z^2|F_12|^2;
+all first jets agree at the original diagonal family, Hessians need not.
+The challenge moments must obey <Z_1Z_2>=z^2, proved here by two
+independent complete factories. One shared challenge gives the wrong
+z rather than z^2 coefficient of L_+L_-. Two factories plus the twelve-call
+OR use356 source calls and their real work, before counting the two
+queries, challenge/click interaction, other routing and initialization.
+
+Thus this is an explicit bounded replacement of the COIN and Boolean
+resource/gate factories in the existing two8D owner Sections6-7, within
+this stronger source-constructor class. Those old capped/heralded exact
+factories remain valid and are not declared missing or erased. Here the
+stated operations are unitary on all columns and no internal herald/abort
+factor appears once their exact input/interface premises hold. Failed
+initialization or routing in a genuine physical implementation would
+reintroduce its actual retained readiness law.
+
+At the ORIGINAL PRIMARY DIAGONAL FAMILY, when the genuine fixed-stage
+integer-cost and final binary-CQ convention applies to a genuinely
+monitored/stopped M-attempt task, the owned whole-price theorem consumes
+(148): D S_M=c_M DJ2, |c_M|>0.39 for M>=2. Here M counts attempts, not
+primitive clock length N. Off-primary each local block has its own
+c_M(d_b,tau_2q); no common multiplier of the summed DJ2 is asserted.
+This carries every original16+24+2 first Euler row and its nonvacuum
+family at that primary section. It does NOT identify
+integer source-call count with full physical Cost, choose that Info,
+select the terminal task or assert the unchanged native full Book stack.
+Actual moving8D source/material preparation and any extra upstream
+source must still meet their original interface. No new GR root is sought.
+
+### 20.6 Do not normalize away the conditional factory information or full Book trace
+
+For one factory, the twenty coset outcomes Xi are uniform. Before query,
+coarse flag pinching has entropy h(z), all-coset pinching20 log2, full
+regular-class pinching40 log2; the complete unpinched factory is pure.
+After a scalar-band query with click probability lambda conditional on
+challenge, actual click-only versus coset-plus-click laws give
+\[
+ H(C)=h(z\lambda),\qquad
+ H(\Xi,C)=20\log2+z h(\lambda),
+ \quad D[H(\Xi,C)-H(C)]
+   =z[h'(\lambda)-h'(z\lambda)]D\lambda.              \tag{149}
+\]
+Here h uses natural logs; divide by log(phi) for the native information
+unit. The difference is generally a NONZERO field source even though
+the standalone factory is field independent. Measure only the declared
+final report for the owned pure-conditional-work binary-CQ theorem.
+If the actual physical observer reads finer factory data, use its real
+information algebra; do not subtract20 log2 and drop the remaining jet.
+All oldRIGHT and all conditional factory work remain in the full state.
+
+Likewise(147)-(148) are prepared-boundary effects/probabilities, not
+identities of the WHOLE Book heat or feedback trace with a Born average.
+Every factory column, dark mode, source controller and actual primitive
+stage remains in that action. The new factory is not compressed to a
+free2D coin for computing those absolute spectra or the exterior hardware.
+Independent initial-boundary/observer equations are not solved by
+having constructed their subsequently generated states.
+
+### 20.7 Exact parent substitution and next physical application
+
+The new composable arrow is
+original path reversal + faithful memory + FIXED real-skew source rule
+-> unique full-memory quarterturn -> exact all-input copy/AND
+-> bounded coherent fixed-z factory -> the owned J2 determinant
+and full first-source consumer, with actual enlargement/clock/price.
+It supplies a common source-level constructor for previously separate
+copy, Boolean and coherent-coin inputs. Its uniqueness statement removes
+an arbitrary memory extension within that constructor, not all source
+laws and not the physical actuation premise.
+
+The remaining admission question is now explicit: does the actual native
+scene/process realize(141) on full memory, including unconditional
+operation, the real App/class-predicate controls and their routing, with
+paid initial identity-class resources? SourcePortPreparation presently
+supplies its particular source matrix and its mathematical spin action;
+it does not answer this for all those controls. The actual moving query,
+whole Book operator/action/clock map, physical source selection and
+uniform refining field family remain required. No fitted action, hidden
+coin, free gate addition, discarded complement or new selector is used.
+
+Also retain the direct-route distinction: a controller's same-initial
+reachable image is required for a prospective programme-minimum argument.
+For direct Book03 stationarity, a justified configuration map into its
+actual admissible X_N and tangent inclusion can suffice; a continuously
+executable field writer is not a universal additional prerequisite.
+Neither route may admit arbitrary matrix tangents or replace its actual
+constraints by the desired Einstein equation. Physical GR remains open.

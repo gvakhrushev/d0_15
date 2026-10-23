@@ -6459,3 +6459,85 @@ and diff guards passed; the existing checkpoint template was consumed.
 The analytical and nine exact-rational changed checks need no full
 research/Lean replay. This intake is not physical-premise acceptance,
 retirement, Ready, CORE or GR promotion.
+
+
+### Same-owner checkpoint: faithful Q8 source-to-copy/AND/coherent-coin composition, 23 October 2026
+
+Phase: native realization / missing-operation and complete-source composition.
+Existing Draft#334 and constitutive/native-programme-v1 remain owner;
+no new task, execution, queue, lifecycle or scientific acceptance.
+Checkpoint artifact: paid-writer Section20. Consumers: original recorded
+word73 and actual primitive heat, TWO_NATIVE_8D_DETERMINANT_SOURCE
+Sections2-3/6-7, and the original-Book Section9.1 parent application.
+Write paths: these existing three science/brief files only.
+
+Changed mathematical input: the original full real Q8 group algebra,
+instead of quotienting away its four real character directions before
+implementing the source interaction. The unique real-skew memory lift
+of spin-i is k_i=(R_i-R_i^dagger)/2. For the SAME fixed factored source
+constructor A tensor k_i, X=I+H+H^2 is orthogonal and its square is the
+all-input central-sign CNOT. Two commuting control projectors with i,j
+give Toffoli in eight forward calls. Existing order-control two-vs-eight
+endpoint equivalence is consumed and its paid-history distinction kept.
+Uniqueness is not extended to arbitrary joint source-memory operators.
+
+Parent substitutions: conditional exact copy/AND cells replace their
+separate algebraic gate premises, and an explicit bounded172-source-call,
+39-Q8-cell pure whole factory supplies the actual fixed-z coin contract.
+The standalone flag need not be pure. The full-input coset predicate is
+rank2 on regular8, with its unused j/k columns retained. Twenty independent
+fair events give z=2^-20; AND work remains coherent. Two such factories
+supply the original two8D determinant and every ambient first source on
+its diagonal reference. One shared challenge and a flag outside the
+one-particle exterior construction give wrong determinant coefficients.
+The old capped Golden H/Boolean/resource factories already exist and are
+preserved; this is a bounded alternative in a stronger declared source class.
+
+Carrier/norm/source: literal original Q8 table/regular8 and native reversal,
+actual positive source Gram, fixed factored control A and every oldRIGHT
+factor. Replacing seven CX copies per round gives bank128 plus genuine
+4^(7n) coset modes. Whole endpoint operator and its original field jets
+transport exactly, but the real clock changes and the full heat includes
+all those modes. Blank coset protection and identity coset protection
+have different feedback ranks. Quantum factory/output equivalence is
+not an identity of the enlarged whole Book determinant or heat.
+
+Smallest decisive check: analytic coefficient-faithful real-skew
+classification; H^3=-H quarterturn identity; all four commuting-control
+sectors; exact native-table rational8/16/32 matrix checks for generators,
+CNOT, Toffoli, fair1/2 and product2^-20. Those changed checks passed.
+No old finite rank/history/root or heavy Lean certificate was replayed;
+no new certificate owner is minted. Literal table read from existing
+Q8DedekindMinimality.lean, not a surrogate multiplication convention.
+
+Remaining assumptions: actual physical source-quarterturn actuation on
+full memory, unconditional operation, real App/class-predicate controls
+and routing, and genuinely paid initial identity-class preparation.
+The old spin source's particular signalPort does not prove these.
+Algebraic addition/division is not silently a chronological gate word.
+The moving8D query/material-resource source, physical full Cost-Info or
+direct full-stack source, independent boundary/observer/controller Euler,
+actual task selection and uniform nonvacuum/GR refinement remain open.
+Factory gates fixed independently of the field do not annihilate finer
+conditional factory Info after the query;149 retains its actual jet.
+Direct variational configuration maps are distinguished from prospective
+same-initial reachable graphs, with neither arbitrary matrix tangents
+nor desired Einstein constraints imported. No physical GR promotion.
+
+
+Independent native_continuation_map, native_valuation_map and
+universal_parent_map reviewed the Section20 analytical application.
+Final heading-to-EOF:16,461 UTF-8 bytes; SHA-256
+f7e52b937d65a6b0aeb9a3448f9d9b293ac8db1975658609460dd1ae02e8d7e2.
+Review pins the fixed REAL memory-skew uniqueness class, full all-input
+routed-monodromy requirement for145, AND-only uncomputation326 count,
+whole pure factory versus mixed flag, correct one-particle/exterior
+placement, true two-query flag moments, all factory entropy/source
+terms and native admission boundaries. The shared c_M comparison is
+restricted to the primary diagonal family; M counts stopped attempts,
+not clock N, and off-primary block factors remain distinct.
+All196,405 bytes of published paid-writer at6546ab15 stay unchanged.
+Changed exact native-table matrix controls and final work/protocol/
+assembly/work-view/repository/diff guards passed; checkpoint template
+consumed. No heavy research/Lean replay, new gate assumption hidden as
+a theorem, physics acceptance, retirement or GR promotion is asserted.
