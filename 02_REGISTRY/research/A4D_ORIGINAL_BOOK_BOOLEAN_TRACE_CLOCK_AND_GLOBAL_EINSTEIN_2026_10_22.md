@@ -814,6 +814,23 @@ source construction remains, but its physical application now requires
 the actual native geometry/free-future task/control map. More compiler
 precision supplies none of those substitutions.
 
+
+**Spatial-image and original full-price application (23 October).**
+[Paid writer Section12](A4D_PAID_MOMENT_FIELD_WRITER_2026_10_21.md#12-applying-the-complete-source-to-the-owned-spatial-operator-image)
+now composes (41) with the ALREADY owned full native raising-block
+inverse, including its null-leg and density/clock jets. Equations(51)-(54)
+give the common all42 operator-image source estimate with its actual
+inverse norm; the material coordinates are retained separately. This
+applies the whole paid comparison to the original geometry map rather
+than constructing another inverse. It does not identify the spatial
+operator with the compiler clock. For the original spatial stopped
+H+J+R, (55)-(58) compute the complete finite matrix cotangent and a
+local coframe row with actual partition denominator, feedback128 and
+RIGHT density. General-adjoint versus literal stored-domain admission,
+moving preparation/Gram and every actual additional stack source remain.
+The unresolved seam is the same-execution spatial/control/full-valuation
+binding, not lack of a geometric inverse or another Taylor coefficient.
+
 ### 9.2 The ordinary complete Book trace localizes too, with its true heat weight
 
 For actual block-diagonal \(\Delta=\bigoplus_h\Delta_h\) and

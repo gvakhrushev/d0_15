@@ -1487,3 +1487,269 @@ inverse power or primary-family precision does not supply it.
 This is a scoped route change for the physical interpretation of
 Sections9-10, not a new assumption, closure row, acceptance, audit
 census or claim that no future D0 derivation can succeed.
+
+
+## 12. Applying the complete source to the owned spatial operator image
+
+This is a composition of existing results, not a new geometry inverse.
+The [labelled native source owner](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md),
+Sections8.4-8.5, already recovers every nonzero leg and proper Lorentz
+link from X_r=C(u_r)Lambda(M_r), including an OPEN neighbourhood of
+a null leg. It already extracts these X_r from addressed off-diagonal
+raising blocks of the full spatial Dirac and proves the full first
+and second source pullback. Its Section6.25, (13br1-2), even gives a
+rational inverse with no null branch. Those results are consumed here,
+rather than rediscovered. The changed input is Sections9-10's actual
+complete Book word and its paid finite-stencil estimate (41).
+
+### 12.1 One field-to-operator map, with the actual density and matter
+
+Use the SAME positive-adjoint spatial interface of the
+[full-Lorentz owner](A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md), (1),(4):
+d=h^-1 sum_r C(v_r)[Lambda(U_r)S_r-I],
+D_sp=d+d^sharp_G. In positive frames its raising edge is X_r/h.
+Known sites, grades, endpoint frames and h are retained. The full
+operator, rather than its spectrum or one pointer distribution, is
+the input to the owned inverse. Observer/whitening data must accompany
+it when they move; unknown endpoint frames are not inferred from X.
+
+Let Phi_h(Y)=Z_h be this existing operator-data map on the regular
+field chart of Section10, augmented by its ACTUAL retained density,
+calibration/frame data and the two already owned material readouts.
+They are not new independent copies. In particular D_sp alone does
+not recover the two material coordinates. Write R_h for the existing
+decoder on this image. On the declared chart,
+\[
+ R_h\Phi_h=I,\qquad D R_h\,D\Phi_h=I.                 \tag{51}
+\]
+This identity uses every 16+24 geometric direction, not only the
+primary pp profiles. The independent affine translations, when
+present in another carrier, are not recovered by this operator:
+both original complete CAR operators are blind to them at fixed
+linear links/solder/observer. They cannot be silently added to (51).
+
+There is an important density convention in this application. Let V
+be the original native creation-coefficient matrix; the actually
+prepared dimensionless moments are V/(s sqrt(rho)), as in Section3.
+With the same fixed s,T and actual retained rho,
+\[
+ V=s\sqrt{\rho}\,\eta_R(TE)^{-T},\quad
+ F_{\rm nat}=s\sqrt{\rho}(TE)^{-1},\quad
+ q_{\rm nat}=V^T\eta_R V=\rho\,\widehat g^{-1},\quad
+ \widehat g=\rho q_{\rm nat}^{-1}.                    \tag{52}
+\]
+Thus the native inverse-metric Gram is not the covariant metric.
+This is the [owned density-compatible metric convention](A4D_DENSITY_DRESSED_CAR_EINSTEIN_METRIC_2026_10_18.md),
+applied with the present normalization. Decoding E from V requires
+the actual rho and calibration. If rho moves, even the intermediate
+undressed leg has the derivative
+\[
+ D(V/(s\sqrt{\rho}))
+ ={DV\over s\sqrt{\rho}}
+ -{V\,D\rho\over2s\rho^{3/2}}
+ -{V\,Ds\over s^2\sqrt{\rho}}.                        \tag{53}
+\]
+The last term is absent only for the genuinely fixed s used here.
+Without rho, (E,rho) and (cE,c^2 rho) give the same V. This does not
+create a new density gauge or a free density writer; it specifies the
+data required by the actual decoder. All their genuine source legs
+remain in the composition.
+
+### 12.2 The same paid all42 comparison on this image
+
+For every centre and stencil key of Section10 take its actual decoded
+field Y_k and Z_k=Phi_h(Y_k). There is no independently selected
+geometric oracle at these comparison points: R_h(Z_k)=Y_k, and the
+original click, f,q and report table are evaluated by that same
+decoder. The coefficient probabilities and actual G/CX word remain
+exactly those of Section10. The mathematical inverse is not a new
+physical operation assumed free of charge. Using actual spatial
+Julia queries instead of these generated code keys would require
+their real admission and complete additional price.
+
+Let epsilon_h denote the COMPLETE right side of (41) in V_h^*,
+including actual gain, decoder norm, density remainder, Bernstein
+error, stencil and all-column inverse-word error. Denote its actual
+paid, gain-normalized field-stencil covector by ell_h. Define on the
+operator-image tangent space
+\[
+ A_h=D\Phi_h,\quad
+ \ell_h^{\rm op}=\ell_h D R_h,\qquad
+ E_h^{\rm op}=E_{\rm PC,h}D R_h.
+\]
+Then the existing complete-word estimate now gives
+\[
+ \begin{split}
+ \ell_h^{\rm op} A_h&=\ell_h,\qquad
+ E_h^{\rm op} A_h=E_{\rm PC,h},\\
+ \|(\ell_h^{\rm op}-E_h^{\rm op})A_h\|_{V_h^*}
+     &\le\epsilon_h,\\
+ \|\ell_h^{\rm op}-E_h^{\rm op}\|_{\rm op,h}^*
+     &\le\kappa_h\epsilon_h,\qquad
+ \kappa_h=\|D R_h\|_{{\rm op},h\to V_h}.              \tag{54}
+ \end{split}
+\]
+Here the operator-data norm is specified on the retained full matrix
+blocks, density/frame and material data; it is not a spectrum norm.
+The last line follows by applying D R_h to each actual unit image
+tangent. The finite positive kappa_h is the true inverse norm on a
+regular compact chart. No h-uniform bound is inferred from mere
+injectivity, and op-norm refinement requires kappa_h epsilon_h->0.
+The second line stays in the ORIGINAL geometric source norm without
+that extra uniformity assumption.
+
+The physically executed comparisons are still the finite key words.
+For example a field stencil velocity maps to the actual operator
+chord
+\[
+ {Z(Y+\delta V)-Z(Y-\delta V)\over2\delta}
+       =A_hV+O(\delta^2\|D^3\Phi_h\|\,\|V\|^3).
+\]
+A unit operator-length normalization must divide by the actual chord
+length; replacing it by delta silently drops A_h. Formula(54) is the
+dual map that retains this calibration. It does not posit a native
+C1 selector of finite Golden words or identify a chosen smooth report
+extension with a physical actuator.
+
+This applies the complete price estimate to the already owned
+geometric inverse, where the old inverse alone supplied only the
+formal S_geo o R representation. At the original exact finite
+primary roots E_PC,h=0, the SAME paid stencil covector is therefore
+bounded by epsilon_h, or kappa_h epsilon_h in the stated operator
+norm. On the entire open chart it compares to the full original
+source, not only to a VSI solution family. Wherever the owned
+geometric/refinement estimates and the displayed error bounds hold,
+the corresponding normalized source limit is inherited. This is
+approximate stencil stationarity at those roots, not an exact native
+critical refining sequence. The actual positive Gamma_h is retained;
+Gamma_h->0 does not turn the normalized comparison into an equality
+of physical action coefficients.
+
+### 12.3 Applying the ORIGINAL spatial H+J+R instead of substituting the clock
+
+Equation(54) does not equate D_sp with the compiler-clock operator.
+Their whole prices must be compared using their actual definitions.
+For the SAME full-Lorentz stopped implementation retain its actual
+strict Julia window max(||C_r||,||X_r||)<=k<1 and
+alpha=p^2 h^2/128, p+p^2=1. Regularity of the Section10 decoder does
+not imply this instrument window or place a chosen primary
+normalization inside it. The operator-image map (51)-(54) makes
+sense without that bound; this original 128-outcome realization
+uses the intersection with the owner's window. On it equation(8)
+of that owner gives the original, complete conditional scalar
+\[
+ \begin{gathered}
+ \Delta=D^2,\quad B=I-\alpha\Delta>0,\quad m=2n,\quad
+ \beta=m\alpha,\quad F=(1-z)I+zB^m,\quad Z=\operatorname{Tr}B^m,\\
+ S_{\rm sp}={\log(CZ)\over\beta}
+       -M_{\rm fb}\operatorname{Tr}\log F
+       +\operatorname{Tr}(\sigma\Delta),\\
+ C=128\,128^n,\qquad M_{\rm fb}=128,\qquad
+ \sigma=ww^\dagger/\operatorname{Tr}(w^\dagger w).
+                                                               \tag{55}
+ \end{gathered}
+\]
+D is the full positive-frame spatial D, with ALL sites/CAR16 modes.
+The passive RIGHT and its genuine preparation remain; C and M_fb
+are not replaced by a normalized trace. Fix h,n,alpha,beta,z and the
+independent positive Gram/whitened preparation for the following
+partial. Direct finite matrix differentiation, with no commutativity
+assumption on sigma, yields
+\[
+ \begin{gathered}
+ W=-{B^{m-1}\over Z}
+       +M_{\rm fb}\beta z\,B^{m-1}F^{-1}+\sigma,\qquad
+ T=WD+DW,\\
+ \delta S_{\rm sp}=\operatorname{Tr}(W\,\delta\Delta)
+                 +\operatorname{Tr}(\Delta\,\delta\sigma),\qquad
+ \operatorname{Tr}(W\,\delta\Delta)=\operatorname{Tr}(T\,\delta D).
+                                                               \tag{56}
+ \end{gathered}
+\]
+Formula(56) includes
+the heat partition denominator, feedback and genuine Rayleigh
+density at once. It is not the compiler's feedback source with a
+spatial heat term appended afterwards.
+
+For a concrete independent local coframe direction, hold the actual
+rho,s,observer and U fixed and take E_x(t)=exp(t chi_x)E_x.
+Equations(52) and (1) then give, with M_chi diagonal on sites,
+\[
+ \delta d=-M_\chi d,\qquad
+ \delta D=-M_\chi d-d^\dagger M_\chi,\qquad
+ \left.DS_{\rm sp}[\chi]\right|_{\sigma,G\ {\rm fixed}}
+       =-2\operatorname{Re}\operatorname{Tr}(M_\chi dT).
+                                                               \tag{57}
+\]
+This is an actual full-price partial on the GENERAL ADJOINT
+COMPLETION interface. A nonconstant chi generally violates the
+literal stored-inverse own-leg constraint at fixed links, even at
+flat fields; (57) is not an admitted Euler direction of that smaller
+stored domain without the missing scene/tangent binding.
+
+For the original stopped HEAT component alone, put
+rho_B=B^m/Z in (57). It gives
+\[
+ DH_{\rm sp}[\chi]
+   =4\operatorname{Re}\operatorname{Tr}
+      (M_\chi d\,\rho_B B^{-1}D),\qquad
+ DH_{\rm sp}[1]=2\operatorname{Tr}(\rho_B B^{-1}\Delta)>0
+                                                               \tag{58}
+\]
+when D is nonzero. At a finite periodic translation-invariant flat
+background each site coefficient is exactly DH_sp[1]/|sites|>0.
+Fixed-mesh continuity preserves this positivity on a neighbourhood,
+so a free interior-site chi can have a real heat source while
+vanishing on a prescribed collar. This is not an h-uniform bound or
+a theorem for an arbitrary boundary operator. Feedback and R can
+balance it; they are already present in (56)-(57).
+
+The original prepared curved reference128 section of the
+[owned positive-adjoint theorem](A4D_EXACT_CURVED_NATIVE_DIRAC_FIXED_RIGHT_PREPARATION_AND_SOURCE_2026_10_20.md)
+can be substituted into sigma in (56), with its ACTUAL occupied
+modes and weights. Its preparation equation does not erase its
+coframe/observer covectors or the complementary thermal modes.
+If preparation or G moves, its true terms must be added by (56)
+and the existing moving-adjoint source formula. No differentiable
+minimizing preparation section is inferred across the known cutoff
+cusp/Fredholm obstruction. Any additional actual history, Info,
+controller and work source also remains.
+
+A bounded diagnostic independently differentiated (55) on the full
+16-site x CAR16 positive-adjoint matrix, with rank128 RIGHT density,
+nu=.3, h=1, n=2 and original z=2^-20. The genuine fixed-Gram
+preparation was stationary to 1.1e-18 in commutator norm. A one-site
+coframe variation gave FULL source 1.4519418377e-5; a direct entire
+price secant agreed within 1.7e-9 and the matrix cotangent within
+6.7e-18. Its heat component was 0.0900478209763, equal to the full
+heat scale source divided by16; feedback/R were retained in the
+small full result. All256 spatial modes, reference rank and actual
+C were included (absolute price 1684.025786211623). This is a finite
+algebra diagnostic, not a new certificate, primary solution, native
+admission test or refinement proof.
+
+### 12.4 The substituted premise and the remaining same-execution seam
+
+The already owned spatial inverse and the NEW complete-word source
+bound now have an explicit common map, all42 pullback and actual
+norm estimate (51)-(54). Recovering the operator/geometry map again
+is not the next missing proof. Nor does the clock/site mismatch in
+Section11 exclude this independent spatial/relational readout.
+
+What remains on this route is the actual SAME execution that binds
+these spatial data, the permitted future controls and the complete
+physical valuation. For the original conditional spatial price its
+field row is concretely (56)-(57), not a zero declared from compiler
+heat neutrality. For the constructed word its actual row is (41)
+and its generated adjoint is Section10.5. An identification must
+transport one to the other while retaining every genuine initial,
+preparation, observer, density, cut, Info/work and constraint row.
+Truthful future-report correctness does not fix the future field
+value, as Section11.3 already proved.
+
+Thus the mathematical source/geometry composition is now explicit
+on the full open chart. It neither selects the constructed programme
+as physical evolution nor substitutes a fitted action or hand-made
+negative heat term. The original exact nonvacuum family, global
+Einstein-rigidity consumers and their physical hypotheses are
+preserved. Full D0->GR, positive_gr and raw216 remain open.

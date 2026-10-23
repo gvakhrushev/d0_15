@@ -5776,3 +5776,80 @@ Final repository, work, agent-protocol, assembly-contract, generated-work-view
 and diff guards passed; the existing checkpoint template was consumed.
 No heavy registered proof was replayed and no scientific acceptance
 was added. Prior Section10 proof bytes remain at the published pin.
+
+
+## 23 October spatial-image application and complete original H+J+R source
+
+Input 64a58fe0. Phase: native realization / final source composition;
+existing #334 constitutive/native-programme-v1 owner. Write paths:
+existing paid-writer Section12, original Book/global Section9.1
+application pointer and this brief. No new task, certificate, carrier,
+selector, scientific acceptance, lifecycle or CORE/claim status.
+
+The parent application is Sections9-10's COMPLETE paid Book-source
+estimate to the already owned spatial operator/geometry inverse.
+Labelled source owner Sections8.4-8.5 already proves all40 nonlinear
+readout, including an open null-leg chart, actual D raising-block
+extraction and full source pullback; Section6.25 already has its
+rational no-null-branch implementation. Those are inputs, not a new
+observability theorem. The actual same decoded field stencil now maps
+through Phi_h and R_h, with genuine PF density/calibration and separate
+original material coordinates. Equation(54) carries the full all42
+price estimate into the operator image; the geometric dual-norm
+error is unchanged, and operator-norm error has the TRUE multiplier
+||DR_h||. Mere injectivity does not make that multiplier h-uniform.
+Finite-key comparisons do not supply a continuous native actuator.
+
+The original spatial full conditional stopped H+J+R is then applied
+by its own equation(8), not by substituting the compiler clock. Its
+actual strict Julia contraction window and alpha=p^2 h^2/128 remain
+required; regular decoding alone does not put a primary normalization
+inside that instrument domain.
+Equations(55)-(57) explicitly compute its whole finite matrix source:
+W=-B^(m-1)/Z+128 beta z B^(m-1)F^-1+sigma,
+T=WD+DW and the fixed-Gram local coframe row -2 ReTr M_chi dT.
+Moving preparation contributes Tr Delta delta sigma; moving observer,
+density, actual stage/Info/work and independent constraints retain
+their genuine source. The nonconstant coframe homothety belongs to
+the general positive-adjoint completion; it usually violates literal
+stored own-leg constraints at fixed links. No native tangent admission
+is inferred. The original stopped heat, not only an exponential proxy,
+has the exact positive global scale row and translation-invariant
+per-site coefficient (58). Feedback/R are not discarded.
+
+Smallest decisive check: compose the EXISTING left inverse with the
+actual bound(41); independently differentiate the full original scalar
+on all256 matrix modes, with complete CAR16 and rank128 RIGHT density.
+At h=1,nu=.3,n=2,z=2^-20, the fixed-Gram preparation commutator norm
+was below1.1e-18, the full local source 1.4519418377e-5 agreed with
+whole-price secants within1.7e-9, and its cotangent identity within
+6.7e-18. The heat component .0900478209763 was balanced against the
+actual feedback/R in that small full result. This bounded inline
+diagnostic does not claim a primary Einstein solution, native physical
+admission, refinement or a new registered certificate.
+
+Remaining application: derive and apply the SAME admitted execution
+that binds spatial data, future task/control variations and complete
+physical valuation, with all independent rows retained. The two
+different operator prices cannot be equated by geometry readout alone.
+Original exact nonvacuum GR, universal Einstein-rigidity hypotheses,
+native selection and raw216 scopes remain unchanged; GR_closed=false.
+
+
+Independent native_continuation_map, native_valuation_map and
+universal_parent_map accepted the FINAL Section12 heading-to-EOF:
+13,145 UTF-8 bytes, SHA-256
+7e5e7400c435973dcb3801b225e5552598b764a95c90326515b8641ef098842f.
+Review restored the owned strict Julia-window/calibration hypothesis,
+clarified creation V versus actually prepared normalized moments,
+and corrected the rational-inverse pointer to Section6.25. No formula
+or physical hypothesis was weakened. The numerical diagnostic was
+executed by the integrator; reviewers checked the analytic identities
+and exact final bytes without claiming an independent replay.
+
+Final repository, work, agent-protocol, assembly-contract, generated-work-view
+and diff guards passed. The existing assembly checkpoint template was
+consumed without adding a scientific acceptance. No heavy registered
+proof was replayed. The prior Section11 historical 9,291-byte slice
+at published 64a58fe0 remains byte-identical with its original SHA-256
+93896b324f69ced149e6f0f40b40d36eacff3f0dbb471f15f668c572693bead2.
