@@ -769,6 +769,20 @@ the finite variation-construction application on that interface; the
 same full Book valuation/cut source and physical interface admission
 remain required. The initialized-cut zero-source result is preserved.
 
+**A source-bearing continuation is now constructed (23 October).**
+[Paid writer Section9](A4D_PAID_MOMENT_FIELD_WRITER_2026_10_21.md#9-forward-native-words-supply-the-owned-coherent-return-query-source)
+removes the coherent-writer/global-inverse premise of the owned return
+bridge for a new fresh-ACTIVE implementation. Its actual all-forward
+Golden/CX word includes every raw failure column. On the explicit
+initialized meter cut and derived transported stage cuts, its ENTIRE
+primitive clock heat plus true feedback has the original primary
+42-field covector in the actual dual norm, with a finite-word error
+bound and catalogue-uniform Taylor/gain bound. This does not reverse
+the old measured writer or contradict its zero contrasts in Section9.3.
+The constructed clock/cuts, native stationarity and any additional
+physical stack/source must still be selected on the same execution;
+they are not supplied by the compiler alone.
+
 ### 9.2 The ordinary complete Book trace localizes too, with its true heat weight
 
 For actual block-diagonal \(\Delta=\bigoplus_h\Delta_h\) and

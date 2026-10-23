@@ -561,3 +561,357 @@ source on its actual P,Delta and actual stage clock therefore still needs
 the same-execution valuation/transport to (19). Equations (18)-(22)
 cannot assign that Info, select a macro return cut, infer equal prospective
 continuation partitions, or promote GR_closed.
+
+## 9. Forward native words supply the owned coherent return-query source
+
+23 October 2026. Input 76a5e8b2. This is a constructive application of
+the [owned report-to-Book return bridge](sources/d0_native_book_reflection_bridge_2026-10-21/PROOF.md)
+and the [literal Golden/CNOT factories](sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/GOLDEN_EXACT_DETECTOR.md).
+It removes the unspecified coherent-writer/inverse access for a NEW
+finite active implementation, and computes its complete declared
+clock-heat-plus-feedback price. It does not reverse the old measured
+factory tape, identify that tape's CQ price with Book, or select a
+physical observer/cut/clock from the verification kernel.
+
+### 9.1 One literal coherent forward word, including its failed branches
+
+Fix the same finite mesh/catalogue, every fresh copy and local trace
+weight of Sections3-5. Use ONE raw attempt per required factory rather
+than an adaptive retry. The already owned known-one parity circuit is
+two G and three CX. Keep its C output as c0 and include C=1 in READY.
+On that event c0=1. Thereafter use the literal unitary
+
+\[
+ \operatorname{CX}(c_0,t)\,G_t\,\operatorname{CX}(c_0,t)
+\]
+
+whenever an internal factory needs \(G^\dagger\). On READY this is
+exactly \(G^\dagger\); on c0=0 it is G. Both are actual full-column
+unitaries. No successful-column identity is asserted on the other
+columns, which remain part of the forward circuit.
+
+Expand every raw CZ/CCZ trial into the owned signed-G/CX word. Expand
+an H into its raw CZ, both raw X tests, correction and swap. Copy a
+would-be computational read to a fresh pointer by CX, retain the
+original tested register, and defer the pointer reading. On the
+successful X-cycle patterns 10 and 01, the minus correction is just
+CX from the second pointer to the H output register. Compute the
+success parity by CX into a new flag. Thus this correction needs no
+controlled-G or ideal controlled H. Expand Toffoli as raw H;CCZ;H.
+
+Execute EVERY later raw gate even when an earlier flag says failure.
+These later registers remain quantum work. Earlier pointer flags
+are never overwritten. On the conjunction of the genuine success
+flags the logical circuit is exactly the owned one, including arbitrary
+entanglement; the H two-outcome corrections retain their raw pointers.
+On the complement, no claim is made about the later data or flags.
+In particular their arbitrary padding is not identified with the old
+aborted execution or its ledger.
+
+The Q(p) coefficient, fair and row factories are likewise finite
+circuits; retain their actual acceptance bits and the flags of their
+raw Boolean gates. The full catalogue is generated before choosing
+the live field row. All conditional success laws of the logical
+factories are input independent. Therefore the all-READY probability
+\(\gamma_h>0\) is an actual finite product of the supplied raw success
+and row-acceptance probabilities, and is independent of the field key.
+It may be extremely small; no uniform lower bound is used.
+
+This construction applies to the inherited REAL source carrier.
+The [L4 material reference](sources/d0_paid_moment_field_writer_2026-10-21/moments/EXACT_MOMENT_SOURCE_CONSTRUCTION.md#5-a-genuinely-generated-material-input-with-the-original-left-moments)
+is the original 64 cosine/sine pairs,
+whose coefficients are 0 and plus/minus1/128, not a newly substituted
+complex Fourier list. Its [owned finite preparation](sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/NATIVE_FOUR_COPY_MATTER_RESPONSE.md) uses six fair
+label bits, reversible mod4 lookup, a parity/type bit and a real sign
+phase; expand their H/Boolean/CZ gates in the same raw way. Use the
+owned real dyadic refinement of that L4 seed. All fresh query copies
+remain ACTIVE until this coherent calculation ends. Any already
+registered history/OLD RIGHT is outside this word and is untouched.
+Nothing authorizes uncomputing a reference which has already become
+an immutable record.
+
+The result is one explicitly specified full unitary \(V_k\), made
+solely of positive G and CX letters, on finite new work \(W\). It
+starts from the same computational blank \(|0_W\rangle\) and writes
+the chosen key by the same AB/BA cells. The complete all-row raw
+schedule is fixed; only those two-letter orders vary. Let \(n_{G,h},n_{CX,h}\)
+be its actual numbers of G,CX letters. Both counts, its work dimension,
+all raw flags and their interpretation are fixed across the stencil.
+There is no unproved exact H/Toffoli primitive or inverse instrument.
+
+### 9.2 An unconditional raw middle word, not a fitted feedback operator
+
+The positive literal weights \(w_\lambda\) of Section5 are integers.
+Put \(W_h=\sum_\lambda w_\lambda\). A fixed fair tag with rejection
+outside \(W_h\) slots, with every raw factory/acceptance flag included
+in READY, chooses lambda with probability \(w_\lambda/W_h\) conditional
+on completion. The owned Boolean selector routes that report to b;
+its own raw flags are also included in READY. This is fixed work,
+not a supplied field-dependent random input.
+
+Let \(\Pi\) be the conjunction of all READY bits and b=1. Success
+parities have already been computed into new flags by CX. Thus \(\Pi\)
+is a positive conjunction on K distinct fresh control bits, K>=1.
+In the exact actual forward word,
+
+\[
+ x_k=\langle0_W|V_k^\dagger\Pi V_k|0_W\rangle
+     =\gamma_h\bar r_h(c_k),\qquad
+ \bar r_h=\frac1{W_h}\sum_\lambda w_\lambda
+                              r_\lambda^{\rm poly}.
+ \tag{23}
+\]
+
+No flags are measured or conditioned away in this equation. Its
+complement includes every failed raw branch. There is no free
+postselection in the programme.
+
+Add a two-dimensional meter. The owned recursive word W_K uses
+G,G-adjoint,CX and equals the K-controlled \(G^{2^K}\) on ALL input
+columns. With \(m=2^{K-1}\), put
+
+\[
+ M=G_{\rm meter}^{-m} W_K
+   =(I-\Pi)\otimes G^{-m}+\Pi\otimes G^m.
+ \tag{24}
+\]
+
+Products in (24) have their operator meaning; the chronological
+schedule starts with \(G^{-m}\) then W_K. This raw middle unitary has
+m positive G letters, 2m negative G letters and \(2^{K+1}-2\) CX
+letters before replacing its inverse letters. It is a fixed native
+factory word, not an assigned function \(F=f(r)\).
+
+As a mathematical comparison first set
+\(U_k=V_k^\dagger M V_k\). On the SAME initialized writer cut
+
+\[
+ P_0=|0_W\rangle\langle0_W|\otimes I_{\rm meter}
+                                      \otimes I_{\rm past},
+\]
+
+where the last factor is present only for an actual untouched tensor
+spectator, its complete corner is
+
+\[
+ A_k=P_0U_kP_0
+  =\big[(1-x_k)G^{-m}+x_kG^m\big]P_0.
+\]
+
+The meter is not set to a selected pure input in this calculation.
+Writing \(G=R(\theta)\), \(\alpha_K=4\sin^2(m\theta)\), gives
+
+\[
+ \boxed{F_k=P_0U_k^\dagger(I-P_0)U_kP_0
+              =\alpha_K x_k(1-x_k)P_0.}                 \tag{25}
+\]
+
+Every leakage mode is included. The actual rank is
+\(d_h=\operatorname{rank}P_0\), equal to two without an extra spectator;
+no automatic 128 or work-dimension factor is introduced. Irrationality
+of theta/pi, already owned for the original G, gives alpha_K>0.
+The complete feedback is
+
+\[
+ J_h(x)=-d_h\log[1-\zeta\alpha_K x(1-x)].                 \tag{26}
+\]
+
+This is a source-bearing return word, different from the old forward
+writer whose initialized-cut contrast was zero. No old zero-source
+result has been changed.
+
+### 9.3 A forward-only actual query and its whole primitive clock
+
+The required global adjoints are not implemented by assuming that c0=1
+outside the forward READY column. Instead choose one positive integer n
+with
+
+\[
+ \eta_n=\|G^n-G^\dagger\|_{\rm op}
+\]
+
+as small as required. Positive powers of the original G are dense in
+SO(2), by the [already owned irrational-angle proof](A4D_LITERAL_GOLDEN_CNOT_ACTIVE_LIE_COMPLETENESS_AND_C2_SOURCE_2026_10_19.md#1-буквальный-fullstep-без-нового-управляемого-оператора). Enumerating powers
+and certifying a strict algebraic norm inequality is a finite
+terminating construction at every fixed requested accuracy. No
+efficiency or new continuous angle is assumed.
+
+Reverse the LITERAL positive-G/CX list of V_k and replace every G-adjoint
+by G^n, while reversing CX exactly. Replace each negative G in (24) by
+the SAME G^n. Call the resulting actual all-forward word \(\widehat U_k\).
+Every one of its columns is specified; it reads no OLD RIGHT.
+Its actual primitive inventory is
+
+\[
+ N_G=(1+n)n_{G,h}+m(1+2n),\qquad
+ N_{CX}=2n_{CX,h}+2^{K+1}-2,\qquad N=N_G+N_{CX}.              \tag{27}
+\]
+
+This N and every addressed tariff are common to all compared keys.
+All letters, buffers, pointer work and the real duration remain.
+The increased cost is not normalized away. Its deterministic charged
+baseline is field independent on the owned counted-cost interface;
+it is not declared identical to the previous adaptive baseline.
+
+Telescoping products of unitaries gives on the entire carrier
+
+\[
+ \|\widehat U_k-U_k\|_{\rm op}
+ \le (n_{G,h}+2m)\eta_n=:\epsilon_n.                        \tag{28}
+\]
+
+Now use the complete N-stage connection shift of this actual primitive
+word, with
+\(\Delta_{\rm clk}=I-(S+S^\dagger)/2\). No macro gate is substituted
+for its stages. The exact prefix gauges reduce this shift to the
+canonical shift with one monodromy edge \(\widehat U_k\). The comparison
+N-stage shift has monodromy \(U_k=V_k^\dagger M V_k\), so its ENTIRE
+heat trace is field independent: the spectrum of M, including all
+unused work, is fixed. Both G^m and G^-m have the same two eigenvalues;
+every writer basis state contributes them with its real multiplicity.
+
+After these gauges the two full Laplacians differ in norm by at most
+epsilon_n. Eigenvalue min-max, with all N stage modes retained, implies
+
+\[
+ |H_{\rm actual}-H_{\rm ref}|
+ =\left|\beta^{-1}\log Z_{\rm actual}
+             -\beta^{-1}\log Z_{\rm ref}\right|
+ \le\epsilon_n.                                       \tag{29}
+\]
+
+There is NO omitted harmonic complement or dimension multiplier in
+this heat bound. The same estimate holds for the whole paired 0+1
+connection Hodge trace. A separately supplied scene factor keeps its
+own actual trace and hypotheses.
+
+For the same actual clock let \(T_t\) be its literal prefixes and
+declare the stage cut \(P_t=T_tP_0T_t^\dagger\), for 0<=t<N.
+Every interior feedback block is zero; the wrap block is unitarily
+equivalent to \(F(P_0,\widehat U_k)\). Thus the full feedback determinant
+counts d_h once, not N d_h. This is an exact finite transported-cut
+calculation on the actual word. Physical identification of these cuts
+with selected Book P_N is NOT derived here. No stage projection test
+or its implementation is asserted to be an unpaid executed operation.
+
+At that declared full cut/clock, contraction of the feedback and the
+resolvent bound give
+
+\[
+ \|F_{\rm actual}-F_k\|\le2\epsilon_n,\qquad
+ |J_{\rm actual}-J_h(x_k)|
+       \le\frac{2d_h\zeta}{1-\zeta}\epsilon_n .
+\]
+
+Consequently the ACTUAL full heat-plus-feedback scalar satisfies
+
+\[
+ \boxed{\left|\mathcal B_k-H_{\rm ref}(N)-J_h(x_k)\right|
+       \le C_{B,h}\epsilon_n,\quad
+ C_{B,h}=1+\frac{2d_h\zeta}{1-\zeta}.}                   \tag{30}
+\]
+
+The common heat baseline may grow with the actual word length N.
+Only its code contrast cancels. No equality of Book Info and Shannon,
+free inverse, successful-branch renormalization or removal of work
+has entered (30).
+
+### 9.4 Its full all-field source, with the actual small gain
+
+At the primary anchor every r_lambda equals the original r0 in (0,1/2).
+The owned Section5/Section8 source map says
+
+\[
+ \sum_\lambda w_\lambda D r_\lambda^{\rm poly}
+          =d_0 E_{\rm ref,h}^{c},\quad
+ d_0=(1-zL)(1-zM)>0.
+\]
+
+Put \(x_*=\gamma_h r_0\). Equations (23)-(26) yield the positive,
+DERIVED gain
+
+\[
+ \Gamma_{B,h}
+ =\frac{d_h\zeta\alpha_K(1-2x_*)}
+        {1-\zeta\alpha_K x_*(1-x_*)}
+           \frac{\gamma_h d_0}{W_h}>0,\qquad
+ D[J_h(\gamma_h\bar r_h)]_{c_*}
+       =\Gamma_{B,h}E_{\rm ref,h}^{c}.                 \tag{31}
+\]
+
+This applies on all original16+24+2 directions through their inherited
+moment-coordinate map, including the fresh material/reference copies.
+It is not an off-primary equality of the polynomial surrogate and the
+original rational action, nor an equality with the 528+528 native actor.
+
+Let \(q^B_{n,\delta}\) be central differences of the ACTUAL prices in
+(30), on one common catalogue containing the affine c-stencils.
+Let \(M_{3,B,h}\) bound the third coordinate derivatives of the ideal
+smooth scalar \(J_h(\gamma_h\bar r_h(c))\) there. Then, with the same
+actual \(J_h^{\rm coord}=D\chi_h\) and
+\(L_h=\|J_h^{\rm coord}\|_{V_h\to\ell^1}\) as Section8,
+
+\[
+ \left\|(J_h^{\rm coord})^*
+          \frac{q^B_{n,\delta}}{\Gamma_{B,h}}
+               -E_{\rm ref,h}^{\rm orig}\right\|_{V_h^*}
+ \le \frac{L_h}{|\Gamma_{B,h}|}
+       \left[\frac{M_{3,B,h}\delta^2}{6}
+                 +\frac{C_{B,h}(n_{G,h}+2m)\eta_n}{\delta}\right].
+ \tag{32}
+\]
+
+Exact Q(p) nodes have no rounding term; otherwise add the inherited
+value/rounding error divided by delta inside these brackets. Original
+nonlinear field paths use their composed third-derivative bound, as
+in Section8.
+
+The first term also remains controlled when a smaller stencil rebuilds
+the catalogue and changes gamma_h,K,m and alpha_K. Fix a compact
+logical source chart with 0<=R=bar r_h<=R_max<1/2. Let M_i bound the
+pure coordinate derivatives of R of orders i=1,2,3 there. These are
+bounds for the same logical polynomial, not for a code selector.
+Put D_min=1-zeta, A_max=4zeta and
+
+\[
+ L_1=D_{\min}^{-1},\quad
+ L_2=2D_{\min}^{-1}+A_{\max}D_{\min}^{-2},\quad
+ L_3=6A_{\max}D_{\min}^{-2}+2A_{\max}^2D_{\min}^{-3}.
+\]
+
+For j(x)=-d_h log[1-a x(1-x)], a=zeta alpha_K, every derivative
+|j^(i)|<=d_h a L_i. Also
+Gamma_B,h>=d_h a gamma_h d0(1-2R_max)/W_h. Chain rule therefore gives
+
+\[
+ \frac{M_{3,B,h}}{\Gamma_{B,h}}
+ \le \frac{W_h}{d_0(1-2R_{\max})}
+       [L_1M_3+3L_2M_1M_2+L_3M_1^3]=:C_{3,h}.
+ \tag{33}
+\]
+
+This ratio is uniform in the catalogue's readiness and alpha_K, even
+when either tends to zero. The actual mesh-dependent C3,h and L_h
+remain; they are not claimed uniform under geometric refinement.
+Choose delta_h so L_h C3,h delta_h^2 tends to zero, rebuild the common
+catalogue, then choose n against the actual nonzero Gamma_B,h,
+L_h,n_G,h,m and delta_h in (32). This order avoids assuming the gain
+stays fixed while rebuilding a finer code catalogue.
+
+Density makes the second term arbitrarily small at each finite mesh. No uniform readiness,
+word-length bound, C1 word selector or exact finite stationary point
+is presumed. This constructs an all-input forward-word approximation
+whose FULL DECLARED BOOK source, not just a harmonic score or CQ
+price, has the primary original Euler covector in the stated dual norm.
+
+What is substituted is now specific: the owned coherent return bridge
+has an explicit finite raw writer, a globally accurate paid inverse
+implementation and an all-mode clock estimate. What remains is
+physical selection of this active programme, its cuts/scene/clock and
+permitted stationary variations, plus any actually retained additional
+stack and independently variable apparatus/input sources. The real
+default-scene and original full128/528-factor executions are not
+identified with this constructed one. The primary nonvacuum family and
+conditional Golden universality consumers retain their original scope.
+No new action principle, Info table, selector axiom, acceptance row,
+physical GR closure or raw216 claim is introduced.

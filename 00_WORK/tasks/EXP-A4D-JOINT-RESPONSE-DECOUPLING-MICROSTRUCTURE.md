@@ -5551,3 +5551,75 @@ open; this is a same-execution route restriction, not GR closure.
 Affected repository/work and diff guards pass on the final application.
 The unchanged agent/assembly/work-view guards retain their prior green
 checkpoint; no heavy proof replay is required for this analytic intake.
+
+
+## 23 October native forward realization of the owned coherent return bridge
+
+Input 76a5e8b2. Phase: native realization / final composition; same
+#334, constitutive/native-programme-v1 owner. Write paths are the
+existing paid-writer Section9, original Book/global Section9.1
+application pointer and this brief. No new execution, checker,
+certificate packet, action principle, selector axiom or acceptance row.
+
+The substituted parent premise is the unspecified coherent reporter
+and global inverse access in the owned report-to-Book return bridge.
+A newly specified STATIC raw one-attempt implementation expands its
+H/Toffoli/row/tag/real material factories to a complete positive G/CX
+word V_k. Its own raw c0 source is inside the word; only READY
+requires c0=1. Other columns are literal unitary failure padding,
+not an assumed inverse of successful Kraus maps. Fresh references
+stay ACTIVE; existing OLD_RIGHT and registered histories are spectators.
+The original L4 real cosine/sine first64 seed and its inherited dyadic
+refinement are preserved. This is not an operation on an archived
+full128 input or an identity of that channel/ledger.
+
+The raw controlled-rotation middle and globally accurate positive-power
+inverse yield actual Book feedback alpha x(1-x) times the true initialized
+rank-d projector, x=gamma sum(w r_lambda)/W. The complete primitive
+N-stage connection heat is compared at the SAME N to its field-independent
+conjugate-monodromy trace; all modes and true rank multiplicities remain.
+Equation(30) bounds the actual FULL DECLARED heat+feedback price.
+Equations(31)-(33) give a positive derived original42 source gain,
+the dual-norm secant error and the catalogue-uniform derivative/gain
+ratio, even if readiness or the middle-angle factor tends to zero.
+All native gate counts and duration are paid. No efficient or
+physical-cutoff-uniform compiler bound is inferred.
+
+The remaining application is physical selection/admission of this
+programme, its declared transported cut/scene/clock and stationary
+variations, plus genuine independent apparatus/input and any actually
+retained additional stack sources. The theorem does not select
+Book03 Info, identify CQ with Book, impose a finite exact critical
+point, or establish universal GR/raw216. Original initialized-writer
+neutrality and the separately declared paired-heat result are unchanged.
+The prior Section8 pin is its published slice at 364bf60a, retained
+unchanged before the new Section9.
+
+Smallest decisive check: full raw controlled-rotation columns and
+fixed-cut corner; literal inverse-letter telescoping; full cyclic
+connection heat and transported-wrap feedback; the original all42
+moment-source map and dual-norm triangle bound. A bounded actual-G
+diagnostic checked two equal-inventory forward words: their return
+probabilities were p^2 and 0, feedback errors at most 1.12e-16,
+and the full 72-mode clock heats were both 5.27943817604799
+(beta=0.7). Their true rank-two feedbacks at z=0.17 were
+0.12655183551282317 and 0. A positive G^35921 inverse approximation
+had operator error 5.895e-5; the corresponding full 862152-mode
+clock trace satisfied the analytic all-mode bound. This diagnostic
+checks finite algebra and clock bookkeeping, not physical GR selection.
+No new test file or expected evidence is introduced.
+
+Independent native_valuation_map and native_continuation_map reviewed
+the actual final Section9 heading-to-EOF slice: 15,523 bytes, SHA-256
+48930e707e3d39a1d1451e9b43a7bf0dd2e604f1fb305b5880081a0fb88c53a6.
+They accepted the all-column construction, counts, full clock/cut
+bounds and corrected uniform convergence order. Physical selection
+boundaries remain explicit. Existing scientific/lifecycle/CORE/claim
+statuses are not promoted.
+
+The same final slice was also independently accepted by universal_parent_map
+for raw READY semantics, the fresh real material map and the full source
+construction. Repository, work, agent-protocol, assembly-contract,
+generated-work-view and diff guards passed. The checkpoint assembly
+template was consumed. No heavy registered proof was replayed; the
+Section8, prior Section9.3 and runtime Section13.1 proof bytes are retained.
