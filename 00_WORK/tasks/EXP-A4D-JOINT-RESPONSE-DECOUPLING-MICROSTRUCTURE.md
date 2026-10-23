@@ -5937,3 +5937,90 @@ acceptance or lifecycle promotion was performed. Earlier paid-writer
 proof bytes are unchanged: Section12's historical13,145-byte slice
 at published fe5cf335 retains SHA-256
 7e5e7400c435973dcb3801b225e5552598b764a95c90326515b8641ef098842f.
+
+
+## 23 October common recorded execution, canonical Info and full-source binding
+
+Input ab65f170. Phase: native realization / final source composition;
+existing #334 constitutive/native-programme-v1 owner, three existing
+write paths only: paid-writer Section14, original Book/global Section9.1
+pointer and this brief. No new task, scientific certificate, carrier,
+selector, lifecycle/CORE/claim or assembly-acceptance promotion.
+
+Parent application: compare the FULL declared scene-clock HJR and the
+actual registered-CQ native price on ONE supplied n-event execution,
+instead of keeping Info, thermal word and recording gates on different
+carriers. Inputs are the owned actual Julia isometry/return, one-round
+recorded-clock lemma, native65/cost adjoint, canonical pinching,
+Gibbs unfolding and strong-CQ C1 theorem. They are consumed, not re-proved.
+The generic Puiseux/Shannon obstruction was found and reused; it is NOT
+credited as new research. Main architecture registration #401 is now
+merged at8b94198c and its parallel execution/write paths are untouched.
+
+Actual substitution: n fresh App128/bank128 pairs on shared DATA, with
+literal seven-CX XOR recording per event. Exact replica transfer (75)
+gives all moments including the real first winding K^n Tr B^n; it keeps
+all DK^(2n) modes and oldRIGHT. Complete copied fine probabilities and
+entropy are transported isometrically, not counted twice or declared
+physically dephased. The native known port-cost operator and actual
+xi=b1*b2 cost residual are (78)-(79). Canonical pinching and its modular
+adjoint (80)-(81) give the full owner(21) Info, including moving initial
+state, not a fitted entropy law or a diagonal surrogate for coherent Info.
+
+The exact Gibbs/Info equation (82) now expresses the entire comparison
+through ONE canonical mismatch D(Gamma||tau) plus actual J, known C and
+initial entropy. Actual birth preparation is retained: on this homogeneous
+one-stage-supported interface its Rayleigh value/source agrees with the
+terminal state's because the scene marginal is preserved. Product-scene
+and correlated-scene initial states are explicitly distinguished.
+Book03 bare H+J versus declared Rayleigh HJR and logZ_fb=betaH+J versus
+H+J retain their real units and interpretation. No equality of those
+physical valuations or compulsory fine algebra is asserted.
+
+A gap-free Gram-return bound (84) controls the intensive source by
+actual rank*||DA||/sqrt(n), including exact dark modes. It composes with
+the ALREADY OWNED factorial thermal tail and strong-CQ error under one
+common real-gain/lift condition (86). Protected bankrank1 andK^n are
+different cuts; the latter's growing coefficient remains and CQ alone
+does not control it. The actual stopped calibration n_h=128h^-2 may
+not be increased freely; its test is hE_h/(sqrt128|g_h|)->0. Fixed CAR16
+primitivity/rate is not an all-site primary nonvacuum theorem. Matched
+all-blank cuts then give the positive redundant-record source transport
+(87), preserving actual copy/blank/work prices and their genuine sources.
+
+Smallest decisive check: analytic replica contraction, exact Gibbs/
+pinching source identity and dark-mode Gram bound, then common-norm
+composition. Bounded inline full DATA2/App2 copied words n1,2,3 with
+all q1,2,3,4 moments, real and complex, matched their replica traces
+within7.2e-15; full blank compression B^2 error below5e-18. No giant
+native history census, additional GR geometry/root scan or registered
+certificate was run. These numerical fixtures are not native admission,
+the primary physical family or a test of condition(86).
+
+Remaining application: derive/apply the physical full Book/Info/cost/
+scene law through that common source equation on the actual freely
+varied all42 plus independent-apparatus image, including the real work
+and clock and its fixed refinement schedule. Global Einstein rigidity,
+metric-only descent, Golden weight and original exact nonvacuum recovery
+remain inputs/premises at their original scope. GR_closed=false.
+
+
+Independent native_continuation_map, native_valuation_map and
+universal_parent_map ACCEPTED the FINAL Section14 heading-to-EOF:
+18,987 UTF-8 bytes, SHA-256
+97164a4a79b4f64c81ddfd4e485a4ad376f88d8f778fb819db019e117b9d98d6.
+Review clarified complete-product/carrier provenance for extra stages
+and gain-normalized versus unnormalized source limits. Product/correlated
+scene state, protected bank rank and actual horizon remain explicit.
+The numerical contraction diagnostic was run by the integrator; reviewers
+checked the analytical application and exact bytes, without claiming a
+separate numerical replay. The original Book03 primary definition is
+01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md,
+Sections03.3.0a,03.10(f),03.25.
+
+Final work, agent-protocol, assembly-contract, generated-work-view,
+repository and diff guards passed; the existing checkpoint template was
+consumed. No heavy registered replay or new scientific acceptance.
+All previous paid-writer proof bytes are unchanged. Section13's historical
+18,052-byte slice at published ab65f170 retains SHA-256
+a1f38a3b0232ee0378b6e1fce3025dbb4d7cdf17b3d1c267cf973469d77947bb.

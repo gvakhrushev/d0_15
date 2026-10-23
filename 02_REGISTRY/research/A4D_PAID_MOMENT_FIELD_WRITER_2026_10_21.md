@@ -2099,3 +2099,363 @@ and its physical Golden weight, or the independent J2/Lovelock route.
 The exact nonvacuum recovery and strong original CQ source limit remain
 inputs with their original scopes. No fitted negative heat term, new
 selector/task, positive_gr, GR_closed or raw216 promotion is made.
+
+
+## 14. One recorded execution: full Info, thermal source and the binding equation
+
+The next application uses the SAME original Julia word for its recorded
+channel, heat, known costs and return. It consumes the
+[canonical pinching owner](A4D_FUTURE_ALGEBRA_CANONICAL_PINCHING_OFFNULL_CQ_SOURCE_WELD_2026_10_22.md),
+[complete record/source owner](A4D_COMPLETE_RECORD_CHANNEL_AND_NATIVE_COST_SOURCE.md),
+[strong CQ source limit](A4D_ORIGINAL_FULL128_UNIQUE_STATIONARY_CQ_RATE_AND_FINITE_ENTROPY_BRACKETS_2026_10_22.md#8-strong-whole-history-first-source-limit-including-the-actual-paid-initial-prefix)
+and the recorded-clock theorem. No new generic entropy or cyclic heat
+theorem is claimed. The changed input is an explicit sequence of fresh
+App/bank pairs on the shared DATA, with the actual copy gates INCLUDED.
+The result is one source-binding equation and a common remainder test,
+not an identification of two previously distinct physical valuations.
+
+### 14.1 Actual recording, including the complete unprepared space
+
+For each chronological event i retain its original App128_i and a NEW
+128-state bank A_i, separate from oldRIGHT. Write K=128 and let
+\[
+ W_i=C_iU_i,\quad
+ C_i|a,\psi,r\rangle=|a,\psi,r\mathbin{\mathrm{XOR}}a\rangle,
+ \qquad V_n=W_n\cdots W_1,\qquad M_n=DK^{2n}.          \tag{73}
+\]
+U_i is literally (59), acting on DATA/App_i. On the declared binary
+wiring C_i consists of SEVEN fixed CX gates. Their actual serial stages
+add7n to the n-round U schedule. All true initialization, routing,
+readout, factories and closing stages, if executed, also belong to the
+primitive length N_n when they are part of the priced clock. Their
+physical work is not assigned zero. Formulas(75)-(77) require a primitive
+expansion whose COMPLETE all-input product is exactly (73) on its stated
+carrier (tensor any genuine identity spectators). Extra operations cannot
+be included by length alone: they change the full monodromy/carrier and
+its source unless that full equality is proved. An actual preparation
+prefix may instead be retained in the initial-state/price ledger; it is
+not an uncharged identity. Native admission of the original Julia/control
+gates remains as in Section13.
+No idle padding or freely chosen replacement horizon enters this word.
+
+On the actual blank App/bank input the exact prepared column is
+\[
+ V_n|\psi;0;0\rangle
+ =\sum_{\boldsymbol a}K_{a_n}\cdots K_{a_1}|\psi\rangle
+       |\boldsymbol a\rangle_{\rm App}|\boldsymbol a\rangle_A.
+                                                               \tag{74}
+\]
+Thus original fine probabilities and their source are unchanged by an
+ISOMETRIC duplication of the retained record. The redundant bank is not
+a second independent outcome or a second Shannon entropy. Global coherence
+is also not destroyed: restriction to a specified registered algebra is
+still distinct from a free physical dephasing channel. Any such additional
+environment/readout stage must itself enter (73) and its actual cost.
+
+All complete moments can be computed without enumerating K^(2n) words.
+Let S_q be the LEFT cyclic DATA permutation, with
+Tr[S_q(X_1 tensor...tensor X_q)]=Tr(X_1...X_q). Using the complete
+blocks U_ab of (59), define on DATA^tensor q
+\[
+ \mathbb T_q=K\!\sum_{a_1\mathbin{\mathrm{XOR}}\cdots
+                    \mathbin{\mathrm{XOR}}a_q=0}
+            \bigotimes_{j=1}^q U_{a_j,a_{j+1}},\quad a_{q+1}=a_1.
+ \qquad
+ \operatorname{Tr}V_n^q=\operatorname{Tr}(S_q\mathbb T_q^n).
+                                                               \tag{75}
+\]
+Indeed Tr V^q=Tr[V^tensor q S_q,total]. At each fresh pair, tracing App
+closes consecutive a labels and tracing its bank contributes exactly
+K times the displayed XOR constraint. Only the shared DATA indices
+remain between chronological events, giving the n-th power in (75).
+For q=1,2, with M_a=L_a L_a^dagger and sum_a M_a=I_D,
+\[
+ \begin{split}
+ \mathbb T_1&=KB,\qquad
+ \mathbb T_2=K[(K-4)I+4\sum_aM_a\otimes M_a],\\
+ \operatorname{Tr}V_n&=K^n\operatorname{Tr}B^n,\qquad
+ \delta\operatorname{Tr}V_n
+       =nK^n\operatorname{Tr}(B^{n-1}\delta B).         \tag{76}
+ \end{split}
+\]
+This consumes the already owned ONE-round XOR heat construction;
+(75) is its application to fresh pairs coupled through the same DATA.
+In particular the bare two-fresh q=1 cancellation of (62) MUST NOT be
+carried into the actually copied word. Its first winding source survives.
+For n=2, DATA16, the true fibre is4294967296-dimensional before oldRIGHT;
+the q=2 transfer is256-dimensional. Neither smaller matrix deletes the
+other physical modes from the trace.
+
+On the SAME homogeneous 33-scene primitive-clock realization, its whole
+heat is now the owned formula with this actual monodromy:
+\[
+ Z_{n,N_n}=N_ne^{-\beta}\left[M_nc_0+
+  2\sum_{q\ge1}c_{qN_n}\operatorname{ReTr}(S_q\mathbb T_q^n)\right],
+ \qquad H_n=\beta^{-1}\log(d_R Z_{n,N_n}).              \tag{77}
+\]
+All ranks and N_n are fixed during each field derivative. Differentiate
+the actual finite matrices in (75), or use the owned whole-unitary
+source bound. The scalar33 modes, oldRIGHT, every unprepared App/bank
+mode and real primitive duration all remain in (77).
+
+### 14.2 The actual known cost, its residual and the full registered Info
+
+Let Omega be the actual DATA/oldRIGHT initial state, M_bold a=K_an...K_a1,
+E=4p^3A^dagger A and Phi^*(X)=sum_a K_a^dagger X K_a. The original
+per-event PORT charge1+b_a has exact n-event input effect
+\[
+ G_{C,n}=nI+\sum_{j=0}^{n-1}(\Phi^*)^j(E),\quad
+ C_n=\operatorname{Tr}(\Omega G_{C,n}),\quad
+ G_{C,2}=2I+E+\Phi^*(E).                              \tag{78}
+\]
+Identity factors on oldRIGHT are understood. No preparation source is
+lost: delta C_n=Tr(Omega delta G_C,n)+Tr(delta Omega G_C,n).
+For two events the owned OR/overlap decomposition is
+\[
+ G_{C,2}=2I+E_{\rm OR}+R_{\rm port},\qquad
+ R_{\rm port}=E_{11}=\sum_{a:b_a=1}K_a^\dagger E K_a
+             =16p^6 A T^*(A^2)A,\quad
+ T^*(X)=\sum_\mu R_\mu X R_\mu^\dagger.               \tag{79}
+\]
+The final expression uses the SAME selfadjoint A=hD_sp/16. R_port is
+the known xi=b1*b2 COST component, not an arbitrary net Cost-Info R
+and not the Rayleigh term. Its actual initial and operator derivatives
+remain. Original controller, row/factory, gate and copy costs beyond
+(78) require their real ledger, not an assignment of zero.
+
+Let Theta_n be the complete output of (74), including oldRIGHT and all
+copied banks. Let E_fine pinch the actual App fine labels, leaving DATA,
+oldRIGHT and the correlated banks inside each block. Set
+\[
+ \Gamma_n=\mathcal E_{\rm fine}\Theta_n,\qquad
+ \mathcal I_n=S(\Gamma_n)-S(\Omega)
+            =D(\Theta_n\Vert\Gamma_n),\qquad
+ P_n=C_n-\mathcal I_n/\ell,\quad\ell=\log\varphi.     \tag{80}
+\]
+This applies the owned canonical-pinching identity to the actual word.
+It gives the COMPLETE owner(21) port-CQ component on this carrier,
+including the initial entropy subtraction. It is not a fitted Info
+from a desired report law. For pure initial Omega it is the entire
+fine-history Shannon entropy. For a mixed initial state the conditional
+DATA/oldRIGHT entropy remains. The isometric copy in (74) preserves
+this same component, rather than adding a second H(fine).
+
+For clarity, its full source also has a single operator adjoint. Let
+Vcal_n be the initialized-column isometry in (74), so Theta=Vcal Omega
+Vcal^dagger, and let C_hat,n be the actual diagonal port-charge operator
+on the complete fine output. On a regular fixed-support chart put
+Q_n=C_hat,n+ell^-1 log Gamma_n. Then
+\[
+ \begin{split}
+ \delta P_n={}&2\operatorname{ReTr}
+           (\Omega\mathcal V_n^\dagger Q_n\delta\mathcal V_n)
+       +\operatorname{Tr}(\Theta_n\delta\widehat C_n)\\
+ &+\operatorname{Tr}\left[\delta\Omega
+   \{\mathcal V_n^\dagger Q_n\mathcal V_n-\ell^{-1}\log\Omega\}\right].
+                                                               \tag{81}
+ \end{split}
+\]
+It follows by differentiating (80) and using self-adjointness of the
+FIXED pinching: Tr(delta Gamma log Gamma)=Tr(delta Theta log Gamma).
+It retains both actual Kraus insertions in each M_bold a and every
+upstream density source. At dark branches use the owned smooth-amplitude
+C1 entropy extension; do not divide by a zero probability. A moving
+registered algebra has its additional delta E_fine term, and additional
+actual gate/work/Info terms retain their own derivatives. For coherent
+record-price operators the owned complementary-channel pullback contains
+off-diagonal M_omega^dagger M_nu terms; diagonal xi cannot stand for them.
+
+### 14.3 One exact Gibbs/Info binding equation, with the actual birth state
+
+Embed the product initial state xi_S tensor Omega at ONE clock stage0,
+and keep that actual birth preparation in the HJR Rayleigh part.
+The word acts trivially on the scalar scene. At that stage
+\[
+ P_0\mathcal L_{N_n}P_0=(I-B_S)\otimes I_{\rm internal}.
+\]
+Consequently its birth, coherent terminal and pinched terminal states
+have exactly the SAME Rayleigh expectation R_n=Tr xi_S(I-B_S).
+This is equality of functions and all pulled-back sources, not physical
+identity or reselection of the states. It holds even with scene/internal
+correlations when the retained scene marginal is the same. For (80)-(82)
+with such correlations one must use the COMPLETE joint initial scene/DR
+state and its CQ restriction, rather than its DR marginal. Their actual
+scene-preparation source is delta R_n=-Tr(delta xi_S B_S); normalization
+removed the identity term, not this genuine independent row.
+
+Let Omega_full denote the COMPLETE initial state including scene and
+blank registers, and tilde Gamma the terminal pinching embedded at that
+stage. In a product scene embedding S(Omega_full)=S(Omega)+S(xi_S),
+even if xi_S is merely fixed and mixed. On the full scene/stage/fibre/
+RIGHT space define the faithful Gibbs state
+\[
+ \tau_n={e^{-\beta\mathcal L_{N_n}}\over d_R Z_{n,N_n}},\quad
+ S_{{\rm hist},n}=H_n+J_n+R_n,\qquad
+ \mathscr D_n=\beta J_n+\ell C_n+S(\Omega_{\rm full})
+                    +D(\widetilde\Gamma_n\Vert\tau_n).
+\]
+The owned Gibbs variational identity and pinching now give the EXACT
+common-execution equation
+\[
+ \boxed{\ \beta S_{{\rm hist},n}+\ell P_n=\mathscr D_n,\qquad
+ \beta D S_{{\rm hist},n}+\ell D P_n=D\mathscr D_n.\ } \tag{82}
+\]
+Proof: H_n I+L_N=-beta^-1 log tau_n, so beta(H_n+R_n) is the cross
+entropy of the terminal state against tau_n. Pinching preserves this
+energy expectation by its stage0 block above. Thus beta(H_n+R_n)=
+S(tilde Gamma_n)+D(tilde Gamma_n||tau_n). Also
+S(tilde Gamma_n)-S(Omega_full)=mathcal I_n. Substitute (80).
+No thermalization, Gamma=tau, independent blank variation or choice of
+an Info table is used. For a state not supported at a single stage,
+the coherence energy beta Tr[(Theta-Gamma)L_N], and any true birth/
+terminal energy difference, must be retained instead of setting them zero.
+
+Equation(82) is a computable source-binding TEST, not a new physical
+action or permission to add/subtract mathscr D. For example the exact
+renewal-type factor D S_hist=-(ell/beta)D P requires the ACTUAL full
+D mathscr D=0; matching source zeros or a first-jet plateau does not
+establish it. Added real work has its own term on both sides of this
+comparison. The finite-algebraic/Puiseux owner already rules out a naive
+open-chart equality with logarithmic Shannon source under its hypotheses;
+that theorem is reused rather than recertified here.
+
+[Book03](../../01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md),
+Sections03.3.0a,03.10(f),03.25, defines its path Cost-Info and bootstrap
+separately.
+Its §03.25 bare master is H+J, not a freely extended Rayleigh HJR.
+Moreover its Z_fb=Z_heat det(I-zF)^-1 has log Z_fb=beta H+J,
+whereas its displayed bootstrap is H+J. The original beta=2phi^-2 is
+not1. Any use of (82) for that master must first remove/derive the actual
+R and retain these units. Algebraic rewriting does not supply the
+physical Book binding or prove that fine pinching is its selected Info.
+
+### 14.4 The actual return, a dark-mode-safe source bound and common control
+
+Specify feedback by the full return T^N_n, not a primitive clock step.
+For all Apps blank and a fixed protected BANK support of actual rank r_A,n,
+\[
+ P V_nP=B^n\otimes P_A,\quad
+ J_n=-\kappa_n\operatorname{Tr}\log[(1-z)I+zB^{2n}],
+ \qquad\kappa_n=d_Rr_Sr_{A,n}.                        \tag{83}
+\]
+Here r_S is the protected scene rank at that stage. All banks blank gives
+r_A,n=1; protecting their entire Hilbert space gives r_A,n=K^n. The older
+one-round recorded owner used the latter support. These are different
+cuts. Neither a K^n multiplier nor its removal is automatic. Moving the
+cut/rank/stopping rule has its actual independent source.
+
+There is a useful uniform first-source estimate without an inverse gap.
+Write t=2p^2, B=I-tA^dagger A and keep fixed z in(0,1). Cyclic trace
+differentiation of (83) and the Gram derivative give
+\[
+ \begin{split}
+ D(J_n/n)&=-2\kappa_nz\operatorname{Tr}
+ [(1-z+zB^{2n})^{-1}B^{2n-1}DB],\\
+ \|D(J_n/n)\|&\le
+ {4\kappa_n z\sqrt t\over1-z}
+ {D\,\|DA\|\over\sqrt{4n-1}}.                        \tag{84}
+ \end{split}
+\]
+Indeed ||A f(B)|| is bounded by t^-1/2 times
+max_(0<=y<=1) sqrt(y)(1-y)^(2n-1)/(1-z), and that maximum is at most
+(4n-1)^-1/2. The TWO terms of DB=-t[(DA)^dagger A+A^dagger DA] give
+(84). Exact B=1 dark modes vanish through A; a positive minimum Dirac
+gap and a separate n*gap->infinity premise are not used. The norm in
+(84) is the actual lifted field-covector norm. Its real D, d_R, r_S and
+bank-rank factors cannot be absorbed into a claimed mesh-uniform constant.
+
+For the complete primitive heat the ALREADY OWNED recorded-clock bound
+is, if ||D U||<=A_h on that same field chart,
+\[
+ \|D(H_n/n)\|\le A_h C_1(N_n),\quad
+ C_1(N)={2e^\beta\over33\beta}\sum_{q\ge1}q c_{qN},
+ \qquad \sqrt n\,C_1(N_n)\longrightarrow0\quad(N_n\ge n).
+                                                               \tag{85}
+\]
+The product derivative bounds ||DV_n||<=nA_h, since each copy gate is
+fixed. The factorial Bessel tail in the recorded-clock theorem proves
+the limit: with x=beta/22 and a_N=x^N/N!, for sufficiently large N,
+sum_(q>=1)q I_(qN)(2x)<=exp(x^2)a_N/(1-a_N)^2.
+A_h is a FULL-unitary jet norm, not merely a prepared-Kraus-column norm.
+They are not identified on zero modes. A true primitive-prefix/observer
+lift and every source direction must be included in its actual value.
+The stage0 Rayleigh operator partial is zero; its moving scene preparation
+source remains -Tr(delta xi_S B_S)/n.
+
+These estimates can be assembled with the owned strong CQ bound in ONE
+regime. On an actual refining family/horizon where that CAR16 theorem
+and its true field lift apply, let g_h be the REAL nonzero source gain.
+Take E_h to bound its true C1 constant times lift, A_h, the coefficient
+of (84) and the scene-preparation jet. If the ACTUAL selected schedules
+and fixed-rank cuts satisfy
+\[
+ {E_h\over |g_h|\sqrt{n_h}}\longrightarrow0,            \tag{86}
+\]
+then the gain-normalized sources of heat/n, PRE feedback/n and birth
+Rayleigh/n vanish, while D(P_n/n)/g_h approaches Ds_*/g_h with the owned
+error. The thermal, return and initial remainders require no independent
+larger horizon in THIS common regime. When r_A,n=K^n, its actual factor
+must instead remain in E_(h,n); CQ convergence alone need not control it.
+No such claim is made for that exponentially growing protected cut.
+
+The owned CQ theorem is fixed CAR16 on a compact primitive chart near
+its original fixture. It is NOT automatically a theorem for all-site
+or arbitrary refining full spatial DATA operators, which can have exact
+dark/conserved sectors. Nor does (86) select a horizon. For example, if
+the original stopped calibration beta_sp=2n alpha=2p^2 is retained with
+alpha=p^2 h^2/128, its schedule is FORCED to be n_h=128h^-2 (n=8192 at
+h=1/8). In that schedule (86) means h E_h/(sqrt(128)|g_h|)->0; one may
+not silently increase n_h while preserving that stopped programme.
+This actual common estimate and the necessary all-site/CAR transport
+still have to be proved on the primary nonvacuum family.
+
+### 14.5 A positive record-transport application and the next physical step
+
+The original un-copied word on n fresh Apps and the copied word (73)
+have the isometric fine-CQ transport (74), including their initial source.
+For MATCHED all-blank feedback supports their J_n and actual birth R_n
+are IDENTICAL. Applying (85) separately to their true primitive schedules
+therefore gives
+\[
+ \left\|{D(S_{{\rm hist},n}^{\rm copy}
+                     -S_{{\rm hist},n}^{\rm bare})\over n}\right\|
+ \le A_h^{\rm copy} C_1(N_n^{\rm copy})
+       +A_h^{\rm bare} C_1(N_n^{\rm bare}).            \tag{87}
+\]
+Thus in the actual common gain-controlled regime the GAIN-NORMALIZED
+intensive source is independent of this redundant record embedding, even though the
+FINITE full heat/source is different. The true App/bank dimensions,
+clock lengths, seven-CX cost and blank-bank preparation remain in the
+absolute prices. If their additional actual ledger has a field source,
+that source must be transported too; constant gate count alone does
+not erase a field-dependent factory/preparation price. This is a scoped
+positive history-representation transport, not full observer/grid erasure.
+
+Equations(78)-(82) at the same time locate the real remaining full-Info
+comparison: it is the canonical mismatch D(tilde Gamma||tau) and its
+actual cost/initial rows, not an unspecified diagonal xi chosen to fit
+Einstein. In regime(86), the GAIN-NORMALIZED HJR/n source tends to zero; (82)
+therefore gives [D(mathscr D_n/n)-ell Ds_*]/g_h->0 with the stated
+true errors. No unnormalized limit is inferred when g_h moves. The
+canonical mismatch
+cannot be discarded when the native CQ rate has a nonzero source.
+This is why controlling thermal remainders does not by itself identify
+an Einstein action or select one information algebra.
+
+A bounded inline check tested the full copied unitaries for DATA2/App2
+and n=1,2,3, with all q=1,2,3,4 moments, including complex amplitudes.
+Complete dimensions8,32,128 matched replica dimensions2,4,8,16 within
+7.2e-15; the two-round full blank compression matched B^2 within5e-18.
+This checks the fresh-record contractions, not native K128 admission,
+primitive schedules, the all-mesh condition(86) or GR. The other steps
+are analytical applications of the already owned inputs.
+
+The next positive parent substitution is now specific: the actual full
+Book Info/cost/scene law must fix (or source-equivalently transport) the
+canonical binding equation(82), on the same freely varied coframe/link/
+matter and apparatus image, and satisfy its ACTUAL refinement test.
+The generic runtime grammar, geometry inverse, finite entropy theorem
+and cyclic heat formula are available inputs. Repeating them, adding a
+negative heat correction or assuming a freely selected horizon supplies
+none of that physical application. Exact nonvacuum GR, the global
+Einstein-rigidity/J2 consumers, positive_gr and raw216 retain their scopes.

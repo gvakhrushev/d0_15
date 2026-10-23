@@ -851,6 +851,24 @@ physical Cost-Info. The remaining parent application is that SAME-execution
 source/geometry/field-admission map, with global Einstein-rigidity premises
 and original exact nonvacuum recovery preserved.
 
+
+**One recorded execution and canonical source binding (23 October).**
+[Paid writer Section14](A4D_PAID_MOMENT_FIELD_WRITER_2026_10_21.md#14-one-recorded-execution-full-info-thermal-source-and-the-binding-equation)
+now composes the owned channel, pinching, Gibbs, full heat and strong-CQ
+maps on n fresh Julia App/bank pairs, with seven real CX recording gates
+per event. Whole-spectrum replica transfer (75) keeps every mode; the
+actual first winding source survives recording. Equations(78)-(82) give
+the known port cost/xi residual, full registered-CQ Info and one canonical
+Gibbs-mismatch source equation, including actual initial entropy and birth
+preparation. Info is no longer an arbitrary fitted diagonal table on this
+declared algebra. Equations(83)-(87) retain the real protected bank rank
+and give a dark-mode-safe return estimate plus one gain-controlled test
+for CQ, thermal, preparation and redundant-record source transport.
+The actual horizon, all-site field lift and full work/Info/cut selection
+still require proof; fixed-CAR16 convergence does not imply them. This
+supplies a common-execution comparison, not equality of physical Book03
+Cost-Info with HJR or a new Einstein selector.
+
 ### 9.2 The ordinary complete Book trace localizes too, with its true heat weight
 
 For actual block-diagonal \(\Delta=\bigoplus_h\Delta_h\) and
