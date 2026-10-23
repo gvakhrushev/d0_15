@@ -89,6 +89,58 @@ A useful cold-start reuse case is the native raising-operator inverse with a nul
 
 ## Implemented and remaining
 
+### Concrete foundation-to-transfer application
+
+Added `D0.Foundation.VerificationTransferApplication` as a vertical use of the
+owned `VerificationCore` and `TheoryTransfer` results. It constructs a concrete
+two-line verification protocol whose state carrier is the exact visible-bit
+empirical quotient, proves that the archive bit discarded by the existing
+`visibleBitSystem` is future-indistinguishable, and transfers the actual false
+profile readout through `visibleBitInterpretation` to its common native
+execution. The module is registered in the existing `formal_support.csv` and
+the generated public import list; it adds no claim, assumption, acceptance,
+or assembly status row.
+
+The same compiled slice consumes the existing hidden-bit lower-bound result to
+rule out a decoder that stores only the current visible bit, and proves that
+an interpretation with identity state map but an empty action translation
+cannot commute with the admitted archive-revealing action. These finite
+controls exercise the actual maps and hypotheses in the owned interfaces;
+they do not claim a physical D0 implementation.
+
+The new module builds narrowly under Lean 4.30.0. The generated-view check
+passes and the focused proof-architecture, declaration-inventory, and build
+lock suite passes 32/32 tests. The declaration collector reports the full
+composed theorem
+`D0.Foundation.VerificationTransferApplication.verified_visibleFalseReadout_transfers_to_common_execution`
+with no binders and transitive axioms `Classical.choice`, `Quot.sound`, and
+`propext`, reflecting the existing quotient representation. It starts from
+the concrete represented state, passes through the owned verified-state/image
+equivalence, and reaches the mapped common-sector profile. At snapshot
+`b4d9681b99a18adea6967be94d3b571f4ae7fee8`, the dirty-worktree Lean source
+digest is `ece1f667d2ce2e474ea5f6e383b03067b8968eda4da739a34e40bfc5405b021e`,
+the collector digest is
+`33528ada54bcdd4a967a6e48aee0ec14f9cb9b7b6a53baea7c627a971047a180`, and the
+toolchain is `leanprover/lean4:v4.30.0`. The emitted declaration range is
+lines 119–129 of the new module. A current `D0.All` build is still reserved
+for the final integration run.
+
+The same collector check on
+`D0.Bridge.connes_reconstruction_conditional` reports the explicit binder
+`h : D0.Bridge.ConnesReconstruction`, type
+`∀ h, h.d0FiniteSpectralTriple ∧ h.metricEqualsSpectrum`, and no axioms. This
+confirms that the conditional bridge remains conditional in the compiled
+environment; it is not a discharged physical assumption. The same dirty
+worktree source digest `ece1f667d2ce2e474ea5f6e383b03067b8968eda4da739a34e40bfc5405b021e`
+was used for that query.
+
+After the adapter and generated import were added, the cold-start runner was
+replayed at the same snapshot with `worktree_dirty=true`: all 11/11 real
+scenarios found their required sources as direct content and the source-change
+impact control passed. The updated `formal_support.csv` digest is
+`2891e51611f95df046adf132c165822d9156666b6dae44703830e7c5b72a3d42`; the
+other authority digests are unchanged from the earlier run recorded above.
+
 The task branch replaces the Windows-incompatible fcntl import and truncating lock-file open in tools/lean_task_build.py with non-blocking POSIX flock or Windows CRT byte-range locking over a persistent one-byte file. The source digest and Lake invocation remain serialized. tools/test_lean_task_build.py passed on native Windows/Python 3.11: its cross-process test verified exclusion, release, reacquisition, and byte preservation. This verifies locking only.
 
 The first narrow build `D0.Foundation.VerificationCore` completed successfully (2,968 build jobs). The subsequent narrow build `D0.Geometry.ArchiveJuliaRaisingOperatorReadout` also completed successfully (3,014 build jobs); no errors occurred in the new module. Existing linter warnings in imported modules remain with their owners. The collector's initial compile exposed an unqualified `Lean.Meta.forallTelescope`, which is now opened explicitly; its smoke run then returned the actual elaborated declarations and source metadata. The source digest was also narrowed to project-owned Lean files after the first cold build showed that including checked-out `.lake` dependency sources made freshness checks unnecessarily expensive.
