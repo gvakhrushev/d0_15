@@ -1922,3 +1922,153 @@ table or universal Shannon binding is added to the direct master route.
 This application removes an unnecessary representation demand and the
 state-support-cut detour. It does not discharge the physical common-source
 premise, assert a newly selected action, or change GR/raw216 acceptance.
+
+### 13.3 Exact primary null-source substitution before the whole-word recovery limit
+
+23 October 2026. Same owner, input d962b51d04e99c4e85bde5c805fcf29f9b17957e.
+The approximate primary-root application is ALREADY present in
+[paid-writer section12.2](A4D_PAID_MOMENT_FIELD_WRITER_2026_10_21.md#122-the-same-paid-all42-comparison-on-this-image).
+It must not be presented as a new recovery theorem. The substitution here
+removes its weak-query remainder at the exact primary centres and retains
+the actual operator norm and finite-key boundary. It composes the original
+all42 solution with the complete-word source, rather than constructing
+another gravitational root or another action.
+
+**Differentiate in the ambient fields before using the null identities.**
+The [original all40 owner](../gr_assembly/sources/d0_double_null_quadratic_cartan_2026-10-19/arbitrary_brinkmann_all40.md)
+proves that the six-face scalar density f_s vanishes identically on its
+Brinkmann/null-link ansatz. Its actual two-real-CAR operand q_s also
+vanishes because the inverse metric has g^{uu}=0. Neither statement says
+their ambient differentials vanish. In fact those differentials supply the
+nontrivial coframe and matter source. The
+[exact nonvacuum recovery](A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md)
+selects Y_h on this common-null set with ALL independent 16+24+2 equations
+E_PC,h(Y_h)=0, on its actual collars and admissible refining meshes.
+
+Use exactly paid-writer equations(34)-(36): the original click r, its
+r0=r(0,0), a0=r_x(0,0)>0 and lambda_-=r_y(0,0)/a0; actual positive density
+rho_s; fixed quadrature mu_s; and constant Omega=sum_s mu_s rho_s. For any
+ambient tangent V in that owner's field space, evaluating its full
+differential on the common-null set gives
+
+\[
+ \begin{split}
+ DR_h(Y)[V]
+ &=\frac{a_0\tau_h}{\Omega}
+       \sum_s\mu_s\{Df_s(Y)[V]+\lambda_-Dq_s(Y)[V]\}
+       +\frac{r_0}{\Omega}\sum_s\mu_sD\rho_s(Y)[V]\\
+ &=\frac{a_0\tau_h}{\Omega}E_{\rm PC,h}(Y)[V].
+ \end{split}                                                    \tag{49}
+\]
+
+The last term is zero by the actual fixed-total-mass constraint, including
+moving density directions. No flat Book term is subtracted. Equation(49)
+is equality of the FULL ambient covectors at each common-null point, not
+only their restrictions to variations along that set. It holds for every
+fixed positive operand scale allowed by the supplied execution. The
+existing native tau_h schedule is retained; this identity does not select
+a different physical clock or a fixed scale across meshes.
+
+For the exact-report mathematical comparison with the same prepared READY
+probability gamma_h, cut rank d_h and controlled-middle angle alpha_K, put
+
+\[
+ j_h(x)=-d_h\log[1-\zeta\alpha_K x(1-x)],\qquad
+ \Gamma_h^{\rm null}
+ =j_h'(\gamma_h r_0)\frac{\gamma_h a_0\tau_h}{\Omega}>0.
+                                                               \tag{50}
+\]
+
+The reference word's entire chronological heat is field constant on its
+fixed catalogue. Its ideal source at Y_h is consequently
+Gamma_h^null E_PC,h(Y_h)=0. This exact-report scalar is used only as a
+comparison; no finite circuit realizing an arbitrary real-valued report
+exactly is inferred. Source proportionality does not make the saddle a
+minimum and does not remove the existing field-minimum exclusion.
+
+**The actual finite-word estimate now has no weak-query term there.**
+For the actual Bernstein report Q_h,d, retain its own positive gain
+Gamma_h(u)=j_h'(gamma_h Q_h,d(u)) gamma_h a0 tau_h/Omega, not (50) unless
+the reports coincide. Let ell_h be the actual whole-Book central-difference
+covector pulled back by Dc_h and divided by this Gamma_h. Paid-writer
+equations(39)-(42), applied using (49), give at an exact primary centre
+
+\[
+ \|\ell_h\|_{V_h^*}\le
+ \frac{\Omega L_h}{a_0\tau_h}e_{1,h}
+ +\frac{L_h}{\Gamma_h}
+   \left(\frac{M_{3,B,h}\delta_h^2}{6}
+       +\frac{C_{B,h}\epsilon_{\rm word,h}}{\delta_h}\right).
+                                                               \tag{51}
+\]
+
+Thus the former M_r tau_h T_h/a0 term is identically absent at these
+centres, even for test norms whose off-null T_h bounds are not uniform.
+All field-coordinate amplification L_h, cut rank, READY probability,
+actual primitive duration and positive-inverse-word errors remain.
+There is no claim of a uniform lower bound on Gamma_h.
+
+For the already owned spatial operator image Phi_h and its inverse R_h^op,
+let kappa_h=||D R_h^op||_{op,h -> V_h}; this inverse is distinct from the
+click R_h in (49). Paid-writer equation(54) then gives the operator-image
+bound kappa_h times the right side of (51). No spectrum-only decoder or
+uniform inverse bound is substituted.
+
+Here is a constructive application to a fixed member of the original
+nonvacuum family. Choose eta_h decreasing to zero and
+K_h=max(1,kappa_h). At each fixed h all constants are finite on the
+regular compact chart. Choose the Bernstein degree and fixed coefficient
+accuracy to make the first term at most eta_h/(3K_h). Use the
+catalogue-independent bound(42) to choose a contained stencil with its
+normalized third-derivative term at most eta_h/(3K_h). Only then build
+the one complete centre/stencil catalogue and determine its real gain,
+work ranks and counts. Finally choose the positive inverse power so that
+the last term is at most eta_h/(3K_h). This is the existing terminating
+positive-G construction, not an assumed native inverse or a discarded
+failed branch. It yields ||ell_h|| <= eta_h/K_h and the corresponding
+operator-image residual <= eta_h for exactly representable centres.
+
+**Real geometric centres and finite native keys are not identical.**
+An arbitrary smooth primary member need not give Q(p) keys. For it,
+retain the centre/coordinate error allowed by paid-writer section10.4.
+At each fixed h the native decoder and normalized click differential are
+continuous on the regular chart; dense Q(p) keys can therefore make both
+the centre-source error and the actual decoded field/readout error as
+small as specified. The rounded centre need not satisfy f=q=0: its
+error is measured against the exact covector(49), not set to zero.
+Before choosing the key, degree or stencil, fix a regular neighbourhood
+and Kbar_h >= max(1, sup_neighbourhood ||D R_h^op||). Allocate
+eta_h/(4Kbar_h) to the centre-source error and each of the three
+remaining terms, using that SAME upper bound throughout the choices.
+The quantity controlled before the catalogue exists is
+Ehat_h(Y)=Omega DR_h(Y)/(a0 tau_h), which is zero at the exact primary
+centre. The actual ideal-source gain cancels at the chosen key; bounding
+Ehat_h there therefore needs no guessed READY probability or gain floor.
+Retain the true fixed-catalogue gain. The decoded readout
+tolerance must also be chosen in the existing recovery norm, for example
+below its O(h^2) error. The same ordered construction then gives the
+corresponding approximate comparison sequence for that fixed continuum
+metric. It does not assert exact finite-word critical points.
+
+**Parent consumption and remaining physical application.**
+Section13.2 supplies finite operator/test-section representation for these
+supplied words. Paid-writer section10.5 supplies the explicit adjoint for
+every generated prefix, factory flag, work and clock state at the declared
+fixed initial boundary. The original recovery owner supplies the same
+nonvacuum metric, curvature and matter readout. Equation(51) strengthens
+their existing comparison-level recovery without an off-null weak-query
+bound at the primary centre. It does not redo those owners or turn finite
+secants into independently admitted continuous field controls.
+
+The remaining application is still the actual native task/scene/action
+map. The compiler clock's site metric cannot be identified with the
+varying coframe metric: paid-writer section11.1 proves that mismatch.
+The independent spatial readout and full-source map in sections12.1-12.3
+must instead be used, including its actual spatial heat/feedback/R source.
+The terminal predicate and any genuinely independent observer, cut or
+preparation variables retain their equations. A fixed legitimate initial
+boundary and causally generated states do not acquire extra free Euler
+rows. No identity between the constructed word and the original full128
+execution, physical stationary refinement, GR closure, or raw216 terminal
+is asserted. This is a sharpened application of the existing global
+source/recovery chain, with that physical seam unchanged.

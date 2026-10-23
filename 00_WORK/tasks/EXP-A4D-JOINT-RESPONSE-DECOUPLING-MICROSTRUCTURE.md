@@ -6632,3 +6632,43 @@ The reviews made the actual return-compression identification explicit and
 required its native isometry/Gram/adjoint, rather than probability matching
 or an arbitrary similarity. This is review of the scoped composition,
 not assembly acceptance of the remaining physical source premise.
+
+### 23 October: exact null-source substitution in the existing whole-word recovery
+
+Input d962b51d04e99c4e85bde5c805fcf29f9b17957e; same Draft334 owner.
+Phase: native realization / final composition. Consume the original
+all40 common-null scalar identities, exact nonvacuum all42 roots and
+paid-writer equations(34)-(44),(54) in parent section13.3 of
+`A4D_ORIGINAL_BOOK_BOOLEAN_TRACE_CLOCK_AND_GLOBAL_EINSTEIN_2026_10_22.md`.
+The approximate root/stencil recovery was already proved in paid-writer
+section12.2; it is explicitly credited rather than registered again.
+
+Exact parent substitution: on the entire primary common-null family,
+the original click differential equals (a0 tau_h/Omega) E_PC,h on ALL
+ambient field directions. The weak-query remainder in the whole-word
+bound is therefore absent at the exact primary centres, without a
+uniform off-null T_h estimate. Fixed total AF/PF mass is retained;
+density differentials cancel by that constraint, not by subtraction.
+
+Carrier/norm: the actual finite complete Golden/CX word and its declared
+clock/cut/READY/retained-work carrier; V_h dual norm and the existing
+spatial operator-image inverse norm. Native key rounding, Bernstein,
+stencil and positive-inverse-word errors keep their actual gain. A local
+inverse-norm bound is fixed BEFORE selecting a rounded key. Generated
+prefix equations use their existing adjoint at the legitimate fixed
+initial boundary; no independently free variable is removed.
+
+The native task/scene/action identification and independent physical rows
+remain open. No exact native critical points, new actuator, physical
+fixed-tau schedule, positive minimum or GR/raw216 acceptance is inferred.
+Write paths: this existing brief and the existing parent section13.3.
+Decisive validation: analytical substitution against the unchanged owners,
+independent scope/source reviews and documentation integration guards.
+No new certificate, Lean module, task or replay of unchanged mathematics.
+
+Independent reviews: universal_parent_map accepted the equations and
+corrected norm-ordering application; native_valuation_map accepted the
+final literal heading-to-EOF slice of 8,491 UTF-8 bytes, SHA256
+f4af3576d6a205dee5203bdd8e9be563f70cb800fd417cf569173d25750aafeb.
+All 97,971 preceding parent bytes are preserved. The review is not a
+physical acceptance or lifecycle transition; this owner remains Draft.
