@@ -1715,6 +1715,71 @@ minimizing preparation section is inferred across the known cutoff
 cusp/Fredholm obstruction. Any additional actual history, Info,
 controller and work source also remains.
 
+A more precise substitution of that preparation uses the already owned
+[joint constrained Ward identity](A4D_NATIVE_JOINT_ADJOINT_SOURCE.md#9-joint-covector-the-gram-contribution-and-internal-ward)
+and its [full-Lorentz implementation](A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md).
+On the actual fixed whitened RIGHT-Gram manifold, the preparation owner
+gives [Delta,sigma]=0. Every preparation tangent has
+delta sigma=[K,sigma], K^dagger=-K, so
+Tr(Delta delta sigma)=Tr([sigma,Delta]K)=0. The reduced first source
+is therefore Tr(W delta Delta), with the SAME sigma still inside W.
+This removes the preparation reaction; it does not cancel the thermal,
+feedback or Rayleigh field source. No inverse preparation Hessian or
+differentiable minimizing section is used.
+
+For an admitted local Lorentz generator xi, write
+delta v_r=xi v_r, delta U_xy=xi_x U_xy-U_xy xi_y and delta n=xi n.
+Transport the raw preparation and its moving Gram simultaneously.
+In the whitened frame this is unitary and preserves the actual RIGHT
+Gram. After the stationary preparation row, the full constrained Ward
+identity is
+\[
+ E_v[\xi v]+E_U[\xi_xU-U\xi_y]+E_n[\xi n]=0.
+ \tag{58a}
+\]
+Since xi n spans the three tangents to n^T eta n=1, the observer
+equations follow once ALL coframe/link and preparation equations hold.
+They need no separate observer-Hessian inverse. The generators must
+respect the actual boundary conditions; freezing the raw preparation
+and Gram separately is not this joint variation.
+
+This has a concrete application to the owner's curved protected
+LOW-GRADE preparation, on its declared periodic/boundary carrier and
+strict Julia window. Starting at its rest-observer chart, in its null basis put
+Q=diag(1,-1,0,0), q=e_-, S_t=exp(tQ), and denote the coframe/link
+part of this joint boost by W_Q. Here I(n_t)Lambda(S_t)=I(n), so the
+whitened preparation stays exactly fixed. The owner's equations(13),(16)
+give, for the same R=Tr(sigma Delta),
+\[
+ D_{e,U}R[W_Q]=-2R,\qquad D_nR[Qn]=2R,
+ \qquad D_U R=0.
+ \tag{58b}
+\]
+Indeed delta v_u=-nu q, the other leg rows vanish, and the occupied
+mode weights sum the same identity. Thus the full joint equations
+require the equivalent, explicitly evaluable thermal/feedback balance
+\[
+ D_n(H+J)[Qn]=-2R
+ \quad\Longleftrightarrow\quad
+ D_{e,U}(H+J)[W_Q]=2R.
+ \tag{58c}
+\]
+The nonzero observer source of R alone is neither a failed preparation
+equation nor a no-go for the full H+J+R system. The complementary
+thermal/feedback row in (58c) remains to be evaluated from (55)-(56).
+
+Crucially, this Ward reduction does NOT give metric-only descent.
+The coframe/observer sector has (16+3)-6=13 local components after
+Lorentz quotient: metric10 and the three components of the physical
+unit observer u^mu=(e^-1)^mu_a n^a. Fixing internal n leaves the three
+boost-coframe directions changing u; their Euler equations remain
+among the full coframe rows. No field is removed by renaming these
+directions gauge. Nor is this protected preparation identified with
+the primary J2 matter or transported to its Dirichlet collar. The
+actual physical stack, its admitted variations and that carrier
+transport remain required. This is the application of existing
+source owners inside (56), not a new Ward theorem or physical closure.
+
 A bounded diagnostic independently differentiated (55) on the full
 16-site x CAR16 positive-adjoint matrix, with rank128 RIGHT density,
 nu=.3, h=1, n=2 and original z=2^-20. The genuine fixed-Gram

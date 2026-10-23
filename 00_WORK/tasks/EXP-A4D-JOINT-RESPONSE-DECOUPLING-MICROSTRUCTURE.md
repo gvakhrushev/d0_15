@@ -6672,3 +6672,41 @@ final literal heading-to-EOF slice of 8,491 UTF-8 bytes, SHA256
 f4af3576d6a205dee5203bdd8e9be563f70cb800fd417cf569173d25750aafeb.
 All 97,971 preceding parent bytes are preserved. The review is not a
 physical acceptance or lifecycle transition; this owner remains Draft.
+
+### 23 October: constrained preparation and observer equations in the original spatial source
+
+Input 323c5c81c8a8f60bc07221fd82a401a3dc6e8834; same Draft334 owner.
+Phase: native realization. The targeted original Books00-01 read consumes
+their existing admissible-section and self-return definitions; Book03
+already supplies finite stationarity. The direct master route needs no
+added universal prospective minimum or Shannon-Info identification.
+Those route distinctions were already recorded in paid-writer19.1 and
+parent13.2 and are not registered as new results.
+
+The actual new parent application is inside paid-writer12.3, equations
+(58a)-(58c): consume the existing curved fixedRIGHT preparation and
+full Lorentz Ward together in the original spatial cotangent(56).
+Preparation reaction vanishes on its true fixed-Gram tangent; observer
+Euler rows follow from the FULL coframe/link/preparation rows. On the
+protected low-grade curved carrier, the observer source +2R and
+coframe source -2R turn into the equivalent full H+J balance(58c).
+This is a specialization of owned proofs, not another Ward theorem.
+
+Carrier/source: the actual full positive-adjoint CAR16 spatial source,
+prescribed whitened RIGHT Gram, native positive trace, original
+calibrations, Julia window and compatible boundaries. All thermal
+complement modes remain. Gauge-fixing internal n leaves three physical
+observer directions in the coframe equations; metric-only descent is
+NOT inferred. The primary J2 matter/collar transport, full physical
+action/tangent binding and remaining field covector stay open.
+
+Write paths: this brief and the existing paid-writer12.3 paragraph.
+Smallest decisive check: exact constrained-Ward/source substitution
+against the unchanged owners, independent sign/gauge/scope review and
+affected documentation guards. No new task, certificate, Lean module,
+heavy replay, assembly acceptance or GR/raw216 status change.
+
+Independent review by universal_parent_map accepted the exact 3,253-byte
+UTF-8 inserted source slice, SHA256
+128e78c76d5a25e7a1cf3b52505144e00f4ce373362a2665f64e64984359250e.
+Work, agent-protocol, assembly and generated-work-view guards pass.
