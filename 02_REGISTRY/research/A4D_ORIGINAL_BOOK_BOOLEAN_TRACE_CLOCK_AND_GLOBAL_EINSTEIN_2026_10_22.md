@@ -794,6 +794,79 @@ corresponding block variation is genuinely admitted. A fixed enumerator
 with only a moving classical input does not acquire such a variation by
 renaming that input.
 
+### 9.3 Actual whole-Book test of the same field intervention
+
+The Section9.1 application now changes the mathematical input: the
+finite all-field continuation is constructed, rather than merely
+postulated. It does not change the whole Book operator automatically.
+Apply the [complete writer's equal-Gram owner](sources/d0_paid_moment_field_writer_2026-10-21/book/COMPLETE_CODE_WRITER_BOOK_PRICE.md#31-exact-prefix-equivalence-preserving-every-priced-factory-block)
+and its [already proved paired-heat covariance](sources/d0_coupled_cut_partition_2026-10-22/STATIONARY_SECTION_AND_WRITER.md#3-the-actual-paid-moment-writer-satisfies-the-cut-heat-covariance-if)
+to these exact later-key alternatives. Their common initialized input
+cut, generated prefix, complete factory/cost blocks, early corner and
+untouched late marker give, on ALL columns of that input carrier,
+
+\[
+ V_-=RV_+,\qquad Ri=i,\qquad [R,P_f]=[R,C_{\rm cost}]=0.
+\]
+
+The same blockwise construction can preserve the old registered prefix.
+For the declared paired cut heat, \(C=QVi^\dagger\) and
+\(L_C=C^\dagger C+CC^\dagger\), this implies
+\(C_-=RC_+R^\dagger\), \(L_{C,-}=RL_{C,+}R^\dagger\).
+Thus BOTH the complete heat trace and normalized feedback determinant
+have exactly zero late-key contrasts, at the same declared heat/mark
+parameters, for \(L_C\) or its common already-declared spectral transform. Every work mode remains present.
+Additional actual stack terms retain their own source. No equality of
+these cut heats with the original scene/ordered-memory heat is inferred.
+
+This applies an owned theorem to the actual field map and closes this
+specific heat-plus-feedback comparison. It also rules out identifying
+that neutral completion with the generally nonzero CQ field source on
+an open field chart. Agreement at the primary root alone cannot repair
+the source mismatch. The intertwiner need not preserve fixed report
+projections, original scene incidence, ordered Info or the physical
+observer cut. None of their sources has been set to zero.
+
+Registration of CQ history blocks likewise does not prove the operator
+blocks required by (26). If the actual Book blocks DO exist, its finite
+heat contrast is
+\(\beta^{-1}\log[(Z_{\rm rest}+Z_\eta^+)/
+ (Z_{\rm rest}+Z_\eta^-)]\); the differential heat weight in (26)
+is not a fixed multiplier of a finite secant.
+
+The remaining substitution can be stated on the actual finite prices,
+without a differentiable code selector or equality of action values.
+Let \(q_m^{B}\) be the central secant covector of the ACTUAL entire
+Book/Info/work/clock stack on these words, and let \(q_m^{CQ}\),
+\(\Gamma_m,J_h\) have the meanings and scope of writer(19)-(22).
+A derived common nonzero gain \(\kappa_m\) must satisfy
+
+\[
+ \epsilon_m^B=
+ \frac{\|J_h^*(q_m^B-\kappa_m q_m^{CQ})\|_{V_h^*}}
+      {|\kappa_m\Gamma_m|}\longrightarrow0.
+\]
+
+On the scope of writer(22), its error \(\epsilon_m^{\rm writer}\)
+then gives the literal composed estimate
+
+\[
+ \|E_{\rm ref,h}^{\rm orig}\|_{V_h^*}
+ \le
+ \left\|\frac{J_h^*q_m^B}{\kappa_m\Gamma_m}\right\|_{V_h^*}
+ +\epsilon_m^B+\epsilon_m^{\rm writer}.
+\]
+
+The first term still requires an actual native stationarity/constraint
+law on these admitted variations. Book03 stationarity on its own
+\(X_N\) remains available; code reachability alone does not identify
+that space or prove normalized secant stationarity. The mean-history
+[fixed-processor binding](sources/d0_common_execution_closure_2026-10-21/book_binding/BOOK_BINDING_ON_FIXED_PROCESSOR.md#6-the-amplitude-defect-as-a-literal-scalar-before-making-a-binding)
+provides a different conditional source comparison, retaining its full
+\(D(W-E_qj)\) defect and actual memory intertwiner. It is not silently
+substituted for the selected heat-plus-determinant stack. No Info table,
+new selector, acceptance row or full physical GR claim is introduced.
+
 ## 10. A retained-output echo preserves every original future test and removes the clock heat source
 
 This construction applies to one **actual full deterministic unitary word**

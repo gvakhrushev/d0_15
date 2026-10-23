@@ -5514,3 +5514,40 @@ work-plane, agent-protocol, assembly-contract and generated-work-view
 guards passed; diff whitespace passed. No expensive registered proof
 was replayed, no expected evidence was rewritten, and no acceptance,
 lifecycle, CORE or physical-GR status is promoted.
+
+
+### 23 October full-Book application of the same finite field map
+
+Input 364bf60a. Phase and owner unchanged: native realization/final
+composition, existing #334 constitutive/native-programme-v1. Original
+Book/global Section9.3 now applies the owned complete-writer equal-Gram
+proof and stationary-section paired-heat covariance to the actual new
+continuations. The initialized-cut/declared-paired-heat complete
+bootstrap has exactly zero late-key contrasts, including every work mode.
+This closes that specific heat-plus-feedback comparison and excludes
+its identification with a generally nonzero open-chart CQ field source.
+It does not identify the original scene/ordered-memory heat or suppress
+its Info/clock/other-stack sources. CQ registration does not discharge
+Book operator blocks.
+
+The same section states the actual finite full-source intertwining
+condition and composes its error, the normalized native Book secant
+residual and writer(22) into the original dual Euler norm. Native
+stationarity on the admitted variation space remains a premise; code
+reachability alone does not prove it. The mean-history amplitude bridge
+keeps its genuine memory map and complete W-E_q j defect. No new
+conditional lemma, checker, execution, counterterm or acceptance row
+is added. Write paths: existing parent Section9.3 and this brief.
+
+Smallest decisive check: direct application of the owned all-column
+Gram intertwiner and paired-heat functional calculus, followed by the
+dual-norm triangle inequality. native_valuation_map and
+universal_parent_map independently accepted the actual Section9.3
+slice, heading through the next Section10 heading (exclusive):
+3,859 bytes, SHA-256
+`b4182ce76698d05790479343a7ec113f90cb81b43f2424aa8838305c9e27c92a`.
+The physical complete-price/source and variation-law premises remain
+open; this is a same-execution route restriction, not GR closure.
+Affected repository/work and diff guards pass on the final application.
+The unchanged agent/assembly/work-view guards retain their prior green
+checkpoint; no heavy proof replay is required for this analytic intake.
