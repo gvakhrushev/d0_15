@@ -6871,3 +6871,59 @@ Its normalization review distinguishes negative Bellman root potential
 Work, agent-protocol, assembly, generated work-view and repository guards
 pass, with no scientific promotion; git diff --check is clean.
 No unchanged numerical certificate or Lean suite was rerun.
+
+
+### 24 October: apply the stationary preparation envelope to the primary carrier
+
+Input 71de007610429be2bdad2745879112e9f2232fb3; same Draft334 owner.
+Phase: native realization / preparation-source composition.
+Parent: primary NONVACUUM same-representative section7b, consuming
+the existing whole-HJR Riesz envelope and full LEFT fixedRIGHT
+commutant criterion rather than another preparation construction.
+
+On the CURRENT fixed-physical null/rest map and even periodic L>=4,
+the full first-axis Fourier shell has rank128 and gap lambda_1.
+The existing Riesz section therefore supplies a real preparation-
+stationary branch on sufficiently small fixed-L primary fields.
+It is parity-even and misses the primary clock/scalar coherences.
+More strongly, every C1 reduced density satisfying [rho,Delta]=0
+on Delta_sigma=Delta_0+O(sigma^2) has a zero first u-harmonic
+density jet: equal energies would require 2a_u-1=0 modL.
+The target scalar/top reading has a nonzero normalized norm-one
+observable jet sqrt(p) r_h/2. The obstruction therefore removes
+the factorized-lift assumption and does not wash out through
+per-site normalization under even-mesh C1 refinement.
+
+This is a scoped route change for the DECLARED H+J+R preparation
+domain; it is not an Euler law of bare Book03 H+J, a full Cost-Info
+price or a physically restricted native preparation domain.
+The old polarized equal-energy examples have different harmonics.
+The actual shifts are periodic; a fixed field collar is not a
+replacement Dirichlet operator. No singular/value-only limit or
+odd-mesh family is excluded.
+
+The owned causal execution constraint remains the positive
+alternative for genuinely generated intermediate states. It removes
+their independent preparation Euler but retains actual input,
+operation, clock and work sources. Current primary site-u matter
+is not yet identified with that execution clock; proper exterior
+Lorentz transport alone fixes scalar/top instead of generating it.
+No new history-state constraint or physical law is inserted.
+
+Write paths: the existing primary residual owner and this brief.
+Decisive check: exact Fourier energy difference and normalized
+readout, independent proof/type review, and affected structural
+guards. No new task, rank scan, solver, standalone certificate,
+Lean module or scientific/assembly status promotion.
+
+
+Independent analytical review: native_valuation_map accepted the full
+mathematics and scope; universal_parent_map accepted the final section7b
+after clarifying integer indices versus physical u. Final slice,
+heading-to-next-heading: 7,753 UTF-8 bytes, SHA256
+12d2aef881c3d7b938e4d5ff61c8164e392e5318d64f56a840a67771fbb05b46.
+The proof retains the full LEFT preparation domain, periodic boundary
+operator, correct Rayleigh source and separate causal-input obligation.
+Work, agent-protocol, assembly, generated work-view and repository guards
+pass without scientific promotion. No unchanged numerical or Lean suite
+was rerun.

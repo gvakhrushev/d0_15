@@ -364,6 +364,159 @@ Einstein witness or another entropy coefficient. No uniform
 growing-horizon estimate, compulsory preparation, admitted field
 writer, stationary solution, or physical GR/raw216 closure follows.
 
+## 7b. Apply the owned preparation envelope before replacing the actual input
+
+24 October 2026; input 71de007610429be2bdad2745879112e9f2232fb3.
+The [whole-HJR fixed-collar owner](A4D_EXACT_CURVED_WHOLE_HJR_FIXED_COLLAR_ROOT_2026_10_20.md#3-exact-preparation-section-on-the-whole-field-neighborhood)
+already gives a genuine fixedRIGHT Riesz preparation and its exact
+envelope source. It must be applied, not reproved or substituted for
+(4) solely because both states retain RIGHT. The following application
+uses the CURRENT isotropic inverse-coframe map (2),(11), the full
+periodic native operator, and even L>=4. The transverse collar fixes
+field variations; the actual shift matrices still wrap periodically.
+No Dirichlet/masked replacement operator is used.
+
+### A real rank128 stationary preparation exists on these fields
+
+At the flat seed, in the unitary four-dimensional discrete Fourier basis,
+
+    Delta_0(a) = lambda(a) I16,
+    lambda(a) = 4 nu^2 h^-2 sum_r sin^2(pi a_r/L),
+    lambda_1 = 4 nu^2 h^-2 sin^2(pi/L).                       (23)
+
+The first nonzero shell consists of the eight momenta +/-e_r, with
+all16 CAR grades, hence has rank128. Its gap to zero and every other
+energy is at least lambda_1: two occupied coordinate components cost
+at least 2lambda_1, and
+sin^2(2pi/L)>=2sin^2(pi/L) for L>=4. The owned Riesz construction
+therefore applies to every sufficiently small fixed-L perturbation
+of the actual primary geometry. It supplies P_sigma of rank128,
+rho_sigma=P_sigma/128 and a frame C_sigma with
+C_sigma^dagger C_sigma=I128/128.
+
+This is a positive application of the existing preparation theorem,
+not application of the different certified v8 stationary-field base.
+It establishes preparation stationarity on these prescribed fields,
+not their geometric Euler equations or a uniform nonlinear radius.
+
+Every proper exterior link and the actual positive observer pairing
+preserves CAR parity. D is odd and Delta=D^2 is even; consequently
+every whole-band spectral projector P_sigma is parity-even.
+The required clock/scalar coherences rho_(0,1) and rho_(15,1) are
+parity-odd and vanish on this Riesz branch. At the flat seed its
+local density is I16/(16 L^4), rather than the rank-one four-grade
+density of (4). Thus existence of this stationary preparation does
+not give the required primary matter readout.
+
+### The first material harmonic excludes ALL smooth Rayleigh-stationary lifts here
+
+The [curved fixedRIGHT preparation owner](A4D_EXACT_CURVED_NATIVE_DIRAC_FIXED_RIGHT_PREPARATION_AND_SOURCE_2026_10_20.md)
+already proves the full LEFT-unitary fixed-Gram criterion
+
+    [rho,Delta]=0.                                           (24)
+
+It is the preparation Euler of the DECLARED H+J+R when H,J are
+preparation-independent and R=Tr(rho Delta). Indeed an arbitrary
+LEFT anti-Hermitian generator K preserves the complete RIGHT Gram,
+delta rho=[K,rho], and delta R=Tr([rho,Delta]K). This is not an
+Euler equation of bare Book03 H+J, nor of a full Cost-Info functional
+with additional preparation dependence. Restricted physically
+admitted preparation tangents also require their own Euler condition.
+
+Let rho_sigma be ANY C1 family of reduced densities satisfying
+(24) on the small-amplitude geometry of section5. No particular
+rank, fixed spectrum, factorized site lift or local purity is needed
+for the next implication. Since that geometry changes by O(sigma^2),
+
+    Delta_sigma=Delta_0+O(sigma^2),
+    [rho_1,Delta_0]=0,     rho_1=partial_sigma rho_sigma|_0.   (25)
+
+Here x and a are integer site/momentum indices modulo L; the
+physical u-coordinate is h u_x. Normalize the local CAR density
+as r_rho(x)=L^4 <x|rho|x>.
+For q=(1,0,0,0), its Fourier coefficient is exactly
+
+    rhat_rho(q)=L^-4 sum_x exp(-2pi i u_x/L) r_rho(x)
+              =sum_a rhohat(a,a-q).
+
+Every contributing block of rho_1 in (25) requires equal energies.
+But on the actual symbol (23),
+
+    lambda(a)-lambda(a-q)
+       =4 nu^2 h^-2 sin(pi/L) sin(pi(2a_u-1)/L).              (26)
+
+For even L this never vanishes, since 2a_u-1 cannot be divisible
+by L. Hence rhat_rho_1(q)=0 as an entire CAR16 matrix.
+
+The primary section (3),(4), in contrast, requires
+
+    partial_sigma [rhat(q)]_(0,1)|_0 = sqrt(p) r_h/2,
+    partial_sigma [rhat(q)]_(15,1)|_0 = sqrt(p) r_h/(2i).      (27)
+
+These are already-owned linear density readings, not an extra
+purity axiom on mixed preparations. For example the first coefficient
+is the expectation of the finite norm-one diagnostic operator
+
+    O_q=sum_x exp(-2pi i u_x/L)|x><x| tensor |1><0|.
+
+Its Hermitian real/imaginary parts contract the same local readouts;
+no free physical Fourier measurement/compiler is thereby assumed.
+Equation (27) is nonzero and tends to sqrt(p)/2 in the first row
+as h tends to zero. The mismatch is not a vanishing per-site
+L^-4 artifact.
+
+Therefore no C1 Rayleigh-preparation-stationary family on this
+even periodic carrier has the required primary first material
+readout. This strengthens the application beyond the old
+factorized-lift obstruction: merely choosing another stationary
+purification or a polarized eigenspace cannot supply this particular
+first harmonic. The conclusion also prevents C1 convergence of
+these normalized readout jets along even-mesh refinement; it does
+not prevent singular/nonuniform-derivative limits or value-only
+convergence.
+
+There is no contradiction with the existing polarized equal-energy
+preparations in the full-source owner, sections6.68-6.69 and6.82:
+their k versus -k coherences have different harmonics (including
+2k), and are not the q=e_u first harmonic of (27). Odd L, changed
+spin/boundary operators, different physical readings or an additional
+actual preparation-price source remain outside this application.
+
+### Consume the causal constraint at its actual scope
+
+The surviving owned mechanism is
+[causal boundary completion](sources/d0_native_gr_completion_synthesis_2026-10-20/causal_boundary_completion.md):
+X_0=iM and X_(j+1)=V_j(y)X_j with every clock/work/output retained.
+For its supplied history price
+J=sum_j Tr(X_j^dagger O_j X_j)+W, the backward adjoint removes
+independent Euler rows of GENERATED intermediate X_j. Its remaining
+field source includes every dO_j, dV_j, di and dW. For a nonquadratic
+actual price the same elimination uses that price's actual state
+gradient; it does not assign an Info law.
+
+Thus (24) must NOT be imposed separately on every executed prefix.
+An independently selectable initial M still has its genuine source.
+In the current comparison (4), the values indexed by site-u are
+part of the initial DATA preparation; they have not been identified
+with those generated X_j. The literal proper-Lorentz transport alone
+cannot supply the identification: exterior degrees0 and4 transform
+by 1 and det(U)=1, so it leaves the scalar/top coefficients constant.
+The native clock starts at its specified initial stage; imposing a
+new cyclic invariant history state would add a boundary condition.
+
+**Parent substitution and route change.** The existing stationary
+preparation construction has now been applied to the actual primary
+operator. A legitimate rank128 branch exists, but its matter
+readings fail; (25)-(27) exclude the whole smooth Rayleigh-stationary
+replacement class at the required first harmonic. Consequently
+the same-primary argument must use an actually derived additional
+price/preparation source, or the existing causal constraint with
+a proved clock-conditioned matter map and its full source. Neither
+a free Gibbs input nor another Riesz/Schur theorem supplies that map.
+The exact primary all42 solutions, separate whole-HJR curved roots
+and their original proofs are unchanged. No physical D0 no-go,
+new constraint, whole-action GR equality or goal closure is asserted.
+
 ## 8. Reproduction
 
 Run from this directory:
