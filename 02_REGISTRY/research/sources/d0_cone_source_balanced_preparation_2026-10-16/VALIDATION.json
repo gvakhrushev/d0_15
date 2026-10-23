@@ -1,0 +1,28 @@
+{
+  "arbitrary_counterjet_partial_rank_closed": false,
+  "artifact_pins": {
+    "02_REGISTRY/research/sources/d0_cone_source_balanced_preparation_2026-10-16/check_cone_source_balanced_preparation.py": "1a84b5dbfa86c03d55dfe3db41330272e4937d2a47f30c3e0929d584996859c3"
+  },
+  "commands": [
+    "python3 02_REGISTRY/research/sources/d0_cone_source_balanced_preparation_2026-10-16/check_cone_source_balanced_preparation.py",
+    "python3 -O 02_REGISTRY/research/sources/d0_cone_source_balanced_preparation_2026-10-16/check_cone_source_balanced_preparation.py"
+  ],
+  "full_eigenspectrum_recomputed": false,
+  "matrix_source_published_ref": "e6f4701e7743952b95b5fd281bebe10106d56163",
+  "new_exact_check_count": 19,
+  "normal_and_optimized_byte_identical": true,
+  "old_entrypoints_executed": false,
+  "runtime": {
+    "python": "3.9.6",
+    "sympy": "1.14.0"
+  },
+  "scientific_output_sha256": "094b48783384cd8718e61f503fe2e56511ee1ba2cf28bf756ce99e90a3ba2f1d",
+  "scope": "NEW_BOUNDED_CONE_KERNEL_AND_COUNTERJET_COKERNEL_IDENTITIES",
+  "source_balance_first_moment_premise": "axis-pair masses=1/4, separate analytic leading-source theorem",
+  "source_pins": {
+    "02_REGISTRY/research/certificates/a4d_native_curved_soldered_heat.py": "bf13f57c902da0005634ae6834c0b4e3ffd2df1aa196a61ebc0ff3dc0351c7da",
+    "02_REGISTRY/research/sources/d0_cone_matter_corrector_2026-10-16/check_cone_matter_corrector.py": "7bbf1589f3a32af381036df64f76d720ce14a9f2e502b3a1a6f43f5b5e776d58"
+  },
+  "source_ref": "e6f4701e7743952b95b5fd281bebe10106d56163",
+  "status": "PASS"
+}

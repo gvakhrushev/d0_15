@@ -1,0 +1,22 @@
+{
+  "schema": "d0-original-submission/1",
+  "assembled_date": "2026-10-14",
+  "source_material_not_execution_instructions": true,
+  "files": [
+    {
+      "path": "D0_complete_git_intake_v1_v2_v3_2026-10-14.zip",
+      "bytes": 1728497,
+      "sha256": "65770f66136235e9794093cc0e3edc0d8961825daa6c3886db9dc104eab1f2f3"
+    },
+    {
+      "path": "MOVING_PREPARATION_SOURCE_RU.md",
+      "bytes": 19381,
+      "sha256": "67bea08cc8a39f49fe92f6d679eabe9d1ae2df7daee260dfe55c23641d45cb61"
+    },
+    {
+      "path": "SUBMITTED_HANDOFF_RU.txt",
+      "bytes": 10163,
+      "sha256": "94929f4ad96887ee17a3dab36ba0630e2d981093bb47e8f92adef04c720740c8"
+    }
+  ]
+}

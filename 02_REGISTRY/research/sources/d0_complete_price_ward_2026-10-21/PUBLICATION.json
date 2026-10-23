@@ -1,0 +1,13 @@
+{
+  "repository": "gvakhrushev/d0_15",
+  "pr": 334,
+  "branch": "exp/a4d-joint-response-continuation-2026-10-16",
+  "commit": "bd2005bb5f2ec6dfe4d1738941ff7ab36cde072e",
+  "parent_preserved": "908eaa7e58e77bf0892968dd131affb9bd7145d7",
+  "proof_path": "02_REGISTRY/research/A4D_COMPLETE_PRICE_ONSHELL_DENSITY_RIGIDITY_2026_10_21.md",
+  "source_folder": "02_REGISTRY/research/sources/d0_complete_price_ward_2026-10-21",
+  "proof_git_blob": "b51a3fc3df1c29158361ab2ee5766a15e5e21b95",
+  "executed_checker_git_blob": "74d1792798d39a04eb0753e2f18793e0d19e5223",
+  "branch_update_confirmed": true,
+  "independent_scientific_acceptance": false
+}

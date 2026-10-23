@@ -1,0 +1,50 @@
+{
+  "status": "PASS",
+  "python": "3.13.5",
+  "input_ref": "6b5fdc323b2109e7955d55dcc6f209b76835f0f4",
+  "golden_gate_owner_blob": "7b59090312c610e1e19f426d7ed8f4a982ebf296",
+  "control_owner_blob": "b7e7fb4bda7ad2d6d67ce911b042c6ac7b493cc4",
+  "checker_sha256": "e427f574970b0a3d73f91923e2b7bb430f783e3d6afb7fac79fa4a5d95318c12",
+  "exact_checks": [
+    "native Golden quartic arithmetic",
+    "all-eight-axis Q8 probe",
+    "local-i-squared reference flip",
+    "complete paired Kraus identity",
+    "zero-error both signs",
+    "all-dark identity",
+    "finite all-leaf normalization",
+    "same-reference negative control"
+  ],
+  "numerical_controls": {
+    "failure_joint_state_error": 1.3877787807814457e-17,
+    "selected_success_RIGHT_change_control": 0.00454014514067143,
+    "sign_Fisher": 0.9999999999999999,
+    "clock_entropy_phi": 0.4732617854245716,
+    "retained_entropy_source": 1.3491555633383365,
+    "mean_queries_minus": 1.118033988749895,
+    "mean_queries_plus": 2.118033988749895
+  },
+  "native_triangle_consumer": {
+    "native_edges": 359,
+    "basis_bits": 327,
+    "readout_consistency_checks": 1287,
+    "negative_basis_bits_in_fixture": 154
+  },
+  "numbers": {
+    "p": "0.61803398874989484820458683436563811772030917980576286213544862270526046281890245",
+    "success_per_cycle": "0.94427190999915878563669467492510494176247343844610289708358898164208370255121960",
+    "failure_per_cycle": "0.055728090000841214363305325074895058237526561553897102916411018357916297448780403",
+    "mean_cycles_one": "1.0590169943749474241022934171828190588601545899028814310677243113526302314094512",
+    "mean_cycles_327": "346.29855716060780768144994741878183224727055089824222795914584981231008567089055",
+    "unresolved_327_with_cap7": "5.4584174164003332938463133428323000529593401939994266438297129316686850221E-7",
+    "mean_queries_minus": "1.1180339887498948482045868343656381177203091798057628621354486227052604628189024",
+    "mean_queries_plus": "2.1180339887498948482045868343656381177203091798057628621354486227052604628189024"
+  },
+  "scope": {
+    "native_physical_admission": false,
+    "global_Dmin_optimality": false,
+    "full_Book_price_selected": false,
+    "GR_closed": false,
+    "finite_uniform_maximum_halting_time": false
+  }
+}

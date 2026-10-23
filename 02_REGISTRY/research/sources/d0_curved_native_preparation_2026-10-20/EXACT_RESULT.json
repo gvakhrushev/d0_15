@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "exact_component_equalities": 3072,
+  "finite_sites": 48,
+  "full_CAR_dimension": 16,
+  "proper_nonunitary_variable_links": true,
+  "nonidentity_original_based_u_x_plaquette": true,
+  "strict_full16_forward_Frobenius_squared_bound": "6152/15625",
+  "wrong_LambdaU_fixes_grade3_control_rejected": true,
+  "eigenvalue": "2/25",
+  "scope": "finite four-grade block; not full geometric/current/clock Euler"
+}

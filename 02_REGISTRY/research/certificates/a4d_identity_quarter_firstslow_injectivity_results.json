@@ -1,0 +1,81 @@
+{
+  "schema": "a4d-identity-quarter-firstslow-placement-control-v2",
+  "terminal": "A4D-IDENTITY-WRONG-PLACEMENT-FIRSTSLOW-CONTROL",
+  "background": "flat identity connection and solder",
+  "quarter_character": [
+    "i",
+    "i",
+    "i",
+    "i"
+  ],
+  "joint_shape": [
+    34,
+    24
+  ],
+  "joint_rank": 20,
+  "center_complex_dimension": 4,
+  "range_columns": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    6,
+    7,
+    8,
+    9,
+    10,
+    12,
+    13,
+    14,
+    15,
+    17,
+    18,
+    19,
+    20,
+    22,
+    23
+  ],
+  "range_rows": [
+    0,
+    1,
+    3,
+    4,
+    6,
+    7,
+    8,
+    9,
+    12,
+    13,
+    14,
+    15,
+    18,
+    19,
+    20,
+    22,
+    24,
+    25,
+    26,
+    28
+  ],
+  "range_chart_determinant": "4",
+  "reduced_shape": [
+    14,
+    4
+  ],
+  "gamma_sha256": "c3cd199183c1c16c647f116090f56dc828f857bbc934f3031b23bd978756024d",
+  "rank_statement": "rank_C sum_j k_j Gamma_j = 4 for every real k != 0",
+  "quantitative_consequence": "by homogeneity and compactness, sigma_min >= c |k| for some c>0 on real slow covectors",
+  "groebner_real_minor_count": 40,
+  "resultant": "b**4 + 2*b**3 + 4*b**2 - 4*b + 1",
+  "resultant_sos": "(b^2+b-1/2)^2 + 4(b-3/8)^2 + 3/16",
+  "scope_fence": [
+    "wrong-placement algebra only; no physical injectivity, isolation, or inverse-loss claim",
+    "frozen flat identity-quarter first-slow symbol only",
+    "does not prove a varying-coframe nonlinear branch",
+    "does not prove H_TORUS or an all-Bloch range inverse",
+    "does not by itself give the h^-2 metric-response limit"
+  ],
+  "operator": "NONPHYSICAL CONTROL J_wrong=(A;C); literal Euler is (A^T;C)",
+  "physical_interpretation_superseded_by": "A4D_IDENTITY_PHYSICAL_RESONANCE_CIRCLES.md"
+}

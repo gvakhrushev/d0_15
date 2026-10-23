@@ -306,6 +306,18 @@ are not silently substituted for the earlier genuinely misaligned sequence
 U_(n_next)U_(n_current) with its original retained cut. That chronology has a
 separate nonconstant price and must enter the native preparation if used.
 
+The original-observer route now has a separate exact owner in
+[the chronological stationary-descent packet](A4D_NATIVE_CHRONOLOGICAL_STATIONARY_DESCENT.md).
+It keeps that moving first-grade observer, the solved next metric and the
+original retained cut, and computes the full sixteen-grade pencil for the
+two actual successive gates. In its complete regular chart, an admitted
+scalar matter Euler equation for that feedback price implies that its whole
+feedback covector vanishes. This is conditional on admission and concerns
+the feedback term alone: it does not derive the heat source, a total
+stationary root, a physical Ward identity or an Einstein limit. The original
+observer/cut readout has not been identified with the separate CAR-current
+readout or with the base AF/CAR weld below.
+
 The next positive interaction must use full correlations and change the
 apparatus Gram or explicitly retain the old orientation interface; passive
 archive growth alone is insufficient by section 2. It must establish the
@@ -314,26 +326,26 @@ derive the complete source/Ward on genuine field variations. Quantitative
 contrast, native stationarity, curved joint roots, soundness/recovery, GR and
 the original fixed-source/raw-owner #310 terminal remain open.
 
-## 8. The closed record engine does not feed this current source
+## 8. The existing record engines do not feed this current source
 
 This cross-owner continuation binds SOURCE baseline
-`0a8e705a18b5dfc61307bd7b5e01f1436dbb9f16`, on top of the original
+`39dbaecfb6e1c316c25c6d1898711a74164559ea`, on top of the original
 correlated-current input recorded at the head of this file.
 
 Compare the actual full-CAR current in sections 3–6 with the already owned
 [closed record engine](A4D_NATIVE_CLOSED_RECORD_ENGINE.md), rather than
 identifying their seeds by name. In occupation-mask coordinates let
 
-    S=span{e_0,e_1,e_14,e_15},   P_S be its orthogonal projector.
+    V=span{e_0,e_1,e_14,e_15},   P_V be its orthogonal projector.
 
 The engine seed is `e_1+e_15`. For each of its two literal state-selected
 gates U_+ and U_-, the exact sixteen-column comparison with the native CAR
 gate gives
 
-    U_± S=S,   U_± S^perp=S^perp,
-    P_S alpha_i P_S=0, i=1,2,3.                       (18)
+    U_± V=V,   U_± V^perp=V^perp,
+    P_V alpha_i P_V=0, i=1,2,3.                       (18)
 
-Thus for every nonzero real m in S, not merely for sampled orbit states, the
+Thus for every nonzero real m in V, not merely for sampled orbit states, the
 section-3 full-current readout at q=eta is J(m)=e_0. Its observer pairing is
 h_J=I. The engine's all-time seed orbit stays in S: the two gates preserve
 that sector, its first two coordinates follow the `lowerStep` recursion in
@@ -342,44 +354,213 @@ the closed-engine Lean capsule, and the existing
 The distinct higher-grade records therefore evolve while this particular
 current, its observer pairing, the section-6 current-defined heat and the
 two-tick current feedback remain constant. For any differentiable matter
-variation confined to S at fixed geometry, the pullback of those
+variation confined to V at fixed geometry, the pullback of those
 current-mediated terms is zero. This says nothing about other native price
 terms that may depend on the retained record directly.
 
 The positive source in (17) belongs to a different state sector. The
 whole-blank curve B(x(t),y(t)) has support in masks 0,14,3,13; at the golden
 point its positive rescaling has coordinates m_0=m_14=a and m_3=m_13=p.
-It is outside S and fails the closed engine's own collinear-domain guard
+It is outside V and fails the closed engine's own collinear-domain guard
 because m_3 is nonzero (its first-grade m_1 is also zero). The engine does
 not accept this source-active state as an input. Conversely, replacing the
 engine's state by the B curve is not one of its state-selected transitions.
 
-This is an exact decoupling result for this pair of existing owners and this
-current/heat readout: the positive source curve and the indefinitely
-recording engine have not yet been composed into one dynamics. It does not
-exclude another already-owned native interaction or source term, and it is
-not a NO-GO for the D0 core. The next proof must either exhibit an already
-owned, physically admitted operation that couples the retained engine
-record into the current-active sector and derive its variation, or classify
-this engine/current route as closed to that source. No interpolation,
-mixing map or new physical selector is supplied here.
+This is an exact decoupling result for the closed-record engine and the
+autonomous scene word: neither of those prepared seeds produces the positive
+source curve by itself. It does not exclude another already-owned recording
+operation or source term, and is not a NO-GO for the D0 core. The next
+subsection checks the existing Fibonacci recording owner directly. No
+interpolation or new physical selector is supplied here.
 
-The checker pins the engine program, its exact checker, Lean capsule,
-compiler output/results and proof, compares both signs on all sixteen
-columns, tests both reducing blocks and all three compressed CAR currents,
-and includes negative controls for falsely admitting the source state. The
-all-time step is inherited only through the pinned existing Lean theorem;
-the finite orbit rows are regression controls, not the all-time argument.
+The checker pins the engine and autonomous-scene programs, their exact
+checkers, Lean capsules, compiler outputs/results and proofs. It compares the
+engine's two signs on all sixteen columns, the complete 64-column scene word,
+both reducing blocks, the current compressions and the source-curve
+cross-sector decomposition; hostile controls reject false sector exit and
+false source vanishing. The engine's all-time step is inherited only through
+the pinned existing Lean theorem; finite orbit rows are regression controls,
+not the all-time argument.
+
+### The autonomous scene word also preserves the current-null sector
+
+The other existing engine is the fixed addressed word on all scene histories
+in [the autonomous scene owner](A4D_NATIVE_AUTONOMOUS_SCENE_RECORD.md). On its
+local 64-dimensional carrier write
+
+    V_hat=R^{ {c,f} } tensor V,   V=span{e_0,e_1,e_14,e_15}.
+
+The exact 64-column word is orthogonal and preserves both V_hat and its full
+orthogonal complement. The existing prepared c=1 seed, with both f
+orientations populated, lies in S_hat. The actual scene program repeats this
+same block on all 359 reversal pairs (all 718 directed histories), so each
+complete state on the 22976-dimensional scene carrier remains in the repeated
+V_hat sector at every finite tick. The full current operator on this local
+carrier is `I_4 tensor alpha_i`; its compression to V_hat is zero for all
+three spatial components. Thus adding the actual scene memory, reversal flag
+and addressed forward word still does not generate the current-active
+component from this seed. The result concerns this exact existing word and
+seed, not every possible native scene interaction.
+
+### The positive current on the prepared curve is cross-sector
+
+For the section-6 source curve put `m(t)=U B(x(t),y(t))`,
+`m_V=P_V m` and `m_perp=(I-P_V)m`. Its norm is one. Exact substitution in the
+actual CAR matrices gives, for each spatial alpha_i and throughout the
+curve, `m_V^T alpha_i m_V=0` and
+`m_perp^T alpha_i m_perp=0`. Therefore
+
+    r_i(t)=2 m_V^T alpha_i m_perp,
+    (r_1(0),r_1'(0))=(2ap,4p^3),   r_2=r_3=0.       (19)
+
+On this candidate source, the response is carried entirely by coherence
+between the current-null sector and its complement. Neither the closed
+engine nor the autonomous scene word transfers its prepared seed out of the
+null sector, so neither owner by itself produces the nonzero term in (19).
+This sharpens the scoped decoupling: merely preserving and copying the
+engine record is insufficient for this particular readout. It does not
+exclude another native action term, another already-owned preparation, or a
+different source route.
+
+### The four-level Fibonacci recording construction has an exact base-level CAR weld
+
+The earlier [full recording inside the Fibonacci refinement](A4D_NATIVE_FIBONACCI_RECORD_ACTIVATION.md)
+proves that three AF inclusions are necessary and sufficient in its stated
+covariant four-copy GNS class. Its working module at AF level zero is
+`C^4 tensor H_0`, with `dim H_0=2`; it carries the same literal four-row
+`fullStep`, price cut `P4=diag(1,1,0,0)` and blank cut
+`B4=diag(1,0,1,0)` as the full CAR preparation. This is a four-level
+representation minimum in that class. The separate identity
+`Q(D)=phi^(D-4)` remains an algebraic normalization, not a derivation of
+four-dimensional spacetime.
+
+There is an exact operator weld at the first AF level. Write the existing
+CAR basis change from `A4D_NATIVE_REFERENCE_MEMORY_PREPARATION` as
+`C_frame=C.B0 (T^T tensor I_4)`. In its apparatus-major column order, let
+
+    K=C_frame[:, {4i+j : 0<=i<4, 0<=j<2}].
+
+Thus `K` keeps the two spectator columns `s=0,1`; its range is the eight-mask
+CAR invariant space
+`span{e_0,e_1,e_2,e_3,e_12,e_13,e_14,e_15}`. Let `V_AF` be the actual AF
+four-frame isometry at `n=0` from the Fibonacci-record activation owner, and
+put `Xi_0=K V_AF^T`. Exact multiplication gives
+
+    Xi_0 W_AF = U_CAR Xi_0,
+    Xi_0 P_AF = P_CAR Xi_0,
+    Xi_0 B_AF = B_CAR Xi_0,                          (20)
+
+with `Xi_0^T Xi_0` equal to the AF working-range projector. Thus this is a
+unitary identification of the complete eight-dimensional working module,
+not an equality of the 34-dimensional AF carrier and the full sixteen-state
+CAR carrier. The AF complement remains present, with its owned identity
+action; the CAR complement is outside this weld. In particular,
+`Xi_0 Xi_0^T=K K^T`, while `Xi_0^T Xi_0=V_AF V_AF^T`.
+
+The eight-mask space is not a reducing subspace for the entire CAR current:
+the exact leakage ranks are
+`rank((I-KK^T) alpha_i K)=(0,8,8)` for `i=1,2,3`. So (20) welds the
+record step and its cuts, while the source current is certified on the
+prepared orbit states through the full CAR readout. It does not yet extend
+the complete current-operator algebra across AF refinement.
+
+The feedback comparison also uses the actual AF complement. Write
+`Wbar=fullStep tensor I_2`, `Pbar=P4 tensor I_2`, and
+`G_2=Pbar (Wbar^2)^T (I-Pbar) Wbar^2 Pbar`. From the owned definitions
+`W_AF=V_AF Wbar V_AF^T+(I-V_AF V_AF^T)` and
+`P_AF=V_AF Pbar V_AF^T`, the full AF feedback is exactly
+`F_AF,2=V_AF G_2 V_AF^T`; it vanishes on the complement because the input
+cut `P_AF` has no support there. The exact check proves
+`G_2^2=(4p^3)G_2`, `rank(G_2)=2`, and
+`trace(G_2)/2=4p^3`. The CAR-side feedback intertwines through `K` as
+`F_CAR,2 K=K G_2`. Thus the shared coefficient is the eigenvalue of the
+owned two-tick feedback operator, not just a matching scalar in two formulas.
+
+Let `e_X,e_Y` be the normalized matrix-unit vectors of the two blocks of
+`H_0`. The whole-blank AF vector
+
+    psi_AF=V_AF(a e_0 tensor e_X+p e_2 tensor e_Y)
+
+maps exactly to the already owned CAR state `m_0=B(a,p)`. After one actual
+record step it maps to `U_CAR m_0`, whose full CAR current is
+`J=e_0+2ap e_1` and whose Lorentz norm is `p^6`. The same exact identities
+give
+
+    r_1'(0)=4p^3=L_AF=8 delta_0,
+    eta(J,J)=p^6=tau_6(e)=4 delta_0^2,
+    L_AF+eta(J,J)=1.                                  (21)
+
+Here `L_AF` is the owned two-tick feedback eigenvalue and `tau_6(e)` is the
+prepared AF corner weight. The operators, cuts, preparation vector and
+readout are fixed by existing owners; no coefficient is fitted. This
+closes the finite CAR/AF representation weld and gives an exact
+representation-level route from the base Fibonacci record to the
+source-active CAR sector.
+
+This weld is restricted to the base-level rest-frame eight-state subspace.
+It does not identify the AF complement with all sixteen CAR states, prove a
+refinement-compatible family `Xi_n` at every later AF depth, or admit the AF
+preparation as physical evolution. Nor does it supply the complete
+ten-component metric/source variation, Ward identity, stationarity, curved
+roots, soundness/recovery or GR. There is also a concrete refinement gate.
+For the actual PF-weighted one-step GNS bonds `J_n`, the passive first copy
+of the canonical AF frame is natural, but the three detail copies are not:
+
+    Delta_n=J_(n+3) V_n - V_(n+1) (I_4 tensor J_n),
+    (d_0,d_1,d_2)=(2,5,13),
+    (rank Delta_0,rank Delta_1,rank Delta_2)=(6,15,39)=3(d_0,d_1,d_2).
+
+These are exact ranks over the algebraic number field of the golden and
+normalizing coefficients. They rule out simply reusing the displayed
+canonical detail frames at every level; the defect itself is only a finite
+canonical-coordinate result.
+The full gauge question for **ordinary-bond naturality of four bimodule
+copies** is now settled by the scoped analytic no-go in
+[the AF limit-frame obstruction](A4D_NATIVE_FIBONACCI_LIMIT_FRAME_OBSTRUCTION.md):
+no allowed gauge-related frame family can be exactly natural in the standard
+multiplicity-one AF GNS limit. This does not rule out a different transition.
+
+The current/AF weld has also advanced beyond the fixed 16-state carrier: the
+[AF-CAR commutant boundary](A4D_NATIVE_AFCAR_CURRENT_COMMUTANT_BOUNDARY.md)
+now constructs a finite level-two weld on the two canonical old-`M2`
+bimodule corners. On its 32-dimensional active subspace it carries the
+doubled CAR current as an abstract operator, together with the actual record
+and cuts, the prepared blank, and the old right-`M2` action. An exact center
+test now shows that, for this fixed path
+binding, the full current components `alpha_1` and `alpha_3` cannot be
+extended as AF-left observables: they mix the two path labels that are the
+simple summands of `A_2`. Thus the Jones-tail step is downstream of finding
+an already owned joint AF/CAR observable or a compatible existing encoding;
+right-`M2` linearity alone does not supply that extension. The same owner now
+has a constructive level-three encoding: both old-`M2` copies sit in one
+`M_5` summand with a common right-column pair, and the full CAR current
+extends to an `A_9` corner as a right-`A_3` module observable. The owned
+all-level Jones homomorphism therefore transports this **operator corner** at
+every later level. A fixed-seed state test now compares the recorded CAR blank
+in regular `L^2(A_9,tau_9)` with the canonical Jones conditional vector
+`e/p^3`. The native source readout is `(1,2ap,0,0)`; the conditional vector
+reads `(1,0,0,0)`, and the source has exact off-corner mass
+`54-86p-94ap+58a-13*sqrt(2)+21*sqrt(2)*p+21*sqrt(2)*a-34*sqrt(2)*a*p`
+(`0.7295098177439909...`, `a=sqrt(p)`). Thus this owned preparation does not
+bind to the canonical conditional state under the fixed path identification.
+Other already-owned preparations, physical admission and the joint
+`(q,D,b,m)` pullback remain open.
+Throughout this proof `V` denotes
+the four-mask current-null space; the distinct ten-dimensional collinear
+carrier is `S` in the CAR joint-sector owner.
 
 ## 9. Evidence boundary
 
 The accompanying exact checker retains literal CAR matrices, all components,
 the complex eight-tick identity, full orbit invariant spaces, rotations and
 joint nonrest frame covariance, true adjoints, genuine input derivatives and
-complete Fourier multiplicities. Its named narrow Lean kernels retain their
-actual propositions and transitive assumptions. Neither finite replay nor
-generic algebraic kernels replace the all-time/all-L proofs above or the
-missing physical admission, matter equations and refinement transfer.
+complete Fourier multiplicities. It also pins the AF activation owner and
+checks the explicit `Xi_0` intertwiners, prepared whole-blank vector, CAR
+source current and feedback-jet/corner identities. Its named narrow Lean
+kernels retain their actual propositions and transitive assumptions.
+Neither finite replay nor generic algebraic kernels replace the all-time/all-L
+proofs above or the missing physical admission, matter equations and
+all-level refinement transfer.
 
 Default replay is portable: it validates the immutable compiler output,
 actual proposition/axiom requests, complete SOURCE closure and archived

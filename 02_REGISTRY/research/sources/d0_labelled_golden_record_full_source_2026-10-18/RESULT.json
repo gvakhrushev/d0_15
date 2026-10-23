@@ -1,0 +1,93 @@
+{
+  "date": "2026-10-18",
+  "scientific_input_commit": "275244e5",
+  "scope": "exact finite labelled-source algebra and local Schmidt128 lift",
+  "labelled_source": {
+    "terminal_labels": 8,
+    "old_weights_fixture": [
+      "1/3",
+      "2/3"
+    ],
+    "old_history_source": "D H(w)/log(phi)",
+    "single_flag_leading_coefficient": "p^2",
+    "PF_continuum_coefficient_before_corner": "2*p^4/sqrt(5)"
+  },
+  "balanced_preparation": {
+    "scene_dimension": 528,
+    "retained_zero_modes": 264,
+    "reference_dimension": 128,
+    "Schmidt_rank": 128,
+    "ket_nonzero_entries": 256,
+    "balanced_b": "1/2",
+    "variance": "(2*L-1)/4",
+    "right_inverse_checked": true,
+    "reference_marginal": "I_128/128",
+    "unoccupied_modes_retained_in_operator": true
+  },
+  "conditional_control": {
+    "scope": "diagnostic finite common-preparation control",
+    "individual_balance_values": [
+      "1/2",
+      "1/3"
+    ],
+    "simultaneous_balance": false,
+    "Jacobian_rank": 1
+  },
+  "corner_preparation": {
+    "success_probability": "p^6",
+    "failure_probability": "1-p^6",
+    "failure_records_retained": 2,
+    "source_multiplier": "p^6",
+    "scope": "fixed canonical prefix probability; not a free-preparation critical point",
+    "PF_continuum_coefficient_after_corner": "2*p^10/sqrt(5)"
+  },
+  "five_outcome_free_prefix_preparation": {
+    "retained_outcomes": 5,
+    "AF_address_readout": false,
+    "conditional_covariance_tangent_retained": true,
+    "source_at_scalar_product_point": "[h'(s)+h(e)+h(b)]ds+s*h'(e)de+s*h'(b)db",
+    "H_star": "h(p^2)+log(2)=(2-p)*log(phi)+log(2)",
+    "stationary_prefix_probability": "s_star=exp(H_star)/(1+exp(H_star))",
+    "canonical_p6_prefix_freely_stationary": false,
+    "star_first_source_coefficient": "s_star*p^2",
+    "PF_continuum_coefficient": "2*s_star*p^4/sqrt(5)",
+    "input_state": "sqrt(s_star)*e/p^3+sqrt(1-s_star)*(I-e)/sqrt(1-p^6)",
+    "full_Schmidt_reference_rank": 128,
+    "scope": "configured five-outcome programme, scalar AF point; native selection not proved"
+  },
+  "periodic_scalar_completion": {
+    "same_original_periodic_carrier": true,
+    "H_any_coordinate_dependence": true,
+    "u_v_face_included": true,
+    "all_sites_scalar_star": "0 exactly",
+    "exterior_coframe_link_Euler_rows_solved": false,
+    "boundary": "same fixed exterior as owned local recovery"
+  },
+  "golden_axis_query": {
+    "existing_axis_only": true,
+    "exact_first_jet": "(sqrt(p)/2)*t^2*T_(p^2)*J*D F_star",
+    "native_geometric_SELECT_supplied": false
+  },
+  "physical_admission_proved": false,
+  "full_old_history_stationarity_proved": false,
+  "same_program_simultaneous_balancing_proved": false,
+  "physical_source_selection_proved": false,
+  "GR_closed": false,
+  "input_sha256": {
+    "sources/d0_operational_car_clock_readout_2026-10-17/RESULT_RU.md": "070cc5d4a2d924b309e101b96cd871938f9f0fba4ebf520ad0d47ba63c442552",
+    "sources/d0_af_full_feedback_first_source_2026-10-17/RESULT_RU.md": "4b3b78274de1cc700dbdae605bb8fe0047e121ef55b611034162e41cea338086",
+    "sources/d0_cost_info_event_source_2026-10-17/RESULT_RU.md": "f07182f45ae12ae52dc28230a5a58408695330535202f352d8731b1c0bffd692",
+    "A4D_AF_STAR_PALATINI_NONLINEAR_EINSTEIN_COMPOSITION_2026_10_17.md": "a8a4f74f19f31bb7e36850de40c75e5a6198c813159494f79d727047f5ffb44e",
+    "A4D_NATIVE_FIBONACCI_RECORD_ACTIVATION.md": "012455bdd3845e1d95f5270bbdcf105c753013d6e0b2339e2c001332e1fe4ee6",
+    "sources/d0_af_star_full_lattice_2026-10-17/star_euler.py": "95de1dca7b7ec738a83ff74a74547a26a6e545d0e55ef601b8c1922d8112f5b5",
+    "A4D_NATIVE_JACOBIAN_CONTROLLED_RECORD_SOURCE.md": "d33ab69bfe3cfc184205e490e28aa6d933047deaccf74893ca622d63be672887",
+    "A4D_NATIVE_GOLDEN_PROGRAM_COMPILATION.md": "f09c24bb7b8ef5f512555257dcd9a335571c052b452482d2c31a3b8e586efdc5",
+    "A4D_NATIVE_COMPILER_SOURCE_AND_RESOURCE_BOUNDARY.md": "7b2121fdaa2ebd4f98be494d6062034577971d334b00bddf9ef9da8969f8f817"
+  },
+  "runtime": {
+    "python": "3.9.6",
+    "sympy": "1.14.0"
+  },
+  "explicit_checks": 379,
+  "check_names_sha256": "85e2cbafc2ba3869fa7c9508c8b513cd9baeec5dd8b4dbeaa8c0e54fb998196e"
+}

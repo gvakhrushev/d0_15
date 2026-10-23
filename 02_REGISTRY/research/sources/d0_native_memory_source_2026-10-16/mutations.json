@@ -1,0 +1,25 @@
+{
+  "expected_receipt_changed": false,
+  "mutations": [
+    {
+      "failed_check": "complete_order_01_connection_source",
+      "name": "erase_spatial_grade_memory",
+      "verdict": "REJECTED_BY_MATHEMATICS"
+    },
+    {
+      "failed_check": "owned_two_path_full_state_difference",
+      "name": "change_the_ordered_process",
+      "verdict": "REJECTED_BY_MATHEMATICS"
+    },
+    {
+      "failed_check": "exact_complete_link_source_1",
+      "name": "delete_actual_link_transport_jet",
+      "verdict": "REJECTED_BY_MATHEMATICS"
+    },
+    {
+      "failed_check": "rank_free_matter_equation",
+      "name": "impose_full_shell_rank_on_the_new_branch",
+      "verdict": "REJECTED_BY_MATHEMATICS"
+    }
+  ]
+}

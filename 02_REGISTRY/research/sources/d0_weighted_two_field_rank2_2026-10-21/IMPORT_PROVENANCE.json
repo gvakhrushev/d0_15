@@ -1,0 +1,32 @@
+{
+  "format": "d0-research-import-provenance-v1",
+  "archive": {
+    "name": "D0_WEIGHTED_TWO_FIELD_RANK2_2026_10_21.zip",
+    "sha256": "9ca3f3acaf610598d9e7a44b5265180b64cbb802d74038b26b79ad39577fb529",
+    "package_manifest_sha256": "50bccfd7a11354cd4e27e9384b4032f4c36bb17db60df74b27f6f3c5e7fcd30e",
+    "manifest_payload_files": 9
+  },
+  "integration": {
+    "date": "2026-10-21",
+    "repository": "gvakhrushev/d0_15",
+    "pull_request": 334,
+    "branch": "exp/a4d-joint-response-continuation-2026-10-16",
+    "base_commit": "c55fcde1091dc5ed5e208ec4234a717433de3505",
+    "payload_hashes_revalidated": true,
+    "pinned_source_blobs_revalidated": 6,
+    "archive_integrator_self_test_checks": 11
+  },
+  "local_replay": {
+    "scientific_checks": 122,
+    "repository_pin_checks": 4,
+    "total_checks": 126,
+    "normal_and_optimized_output_byte_identical": true
+  },
+  "scope": {
+    "full_finite_all42_root": false,
+    "physical_book03_selection": false,
+    "remote_ci": false,
+    "independent_review": false,
+    "GR_closed": false
+  }
+}

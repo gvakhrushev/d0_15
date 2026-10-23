@@ -1,0 +1,22 @@
+{
+  "schema": "d0-relative-record-cost-controls/1",
+  "source_git_blob_sha": "d9a245a97eb2240758a9ce590a4983bb77250711",
+  "source_sha256": "cc73a8a7a0d3f0890c5f16b6c7db777514f4e623f4eb082c480bfc069f41643c",
+  "normal_exit_code": 0,
+  "optimized_exit_code": 0,
+  "stdout_byte_identical": true,
+  "result": {
+    "det_A": "25/12544",
+    "exact_controls": 19,
+    "golden_p": "0.6180339887498948",
+    "min_conditional_q": "0.6180322205421559",
+    "mixed_jet": "16799/93750",
+    "native_action_selected": false,
+    "permuted_pivots": ["65/784", "33/130", "25/264"],
+    "pivots": ["17/64", "23/204", "75/1127"],
+    "raw_hm2_terminal_closed": false,
+    "status": "PASS",
+    "two_Gram_ratio": "1/60"
+  },
+  "boundary": "exact finite mathematics only; no native programme admission, physical action selection, or GR terminal"
+}

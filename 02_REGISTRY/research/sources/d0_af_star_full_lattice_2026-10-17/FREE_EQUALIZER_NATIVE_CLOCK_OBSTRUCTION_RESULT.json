@@ -1,0 +1,33 @@
+{
+  "actual_curvature": "Literal native Delta(k)=(z*Gz)I16 gives UVshiftkuL/2 gap=4h^-2[d+o sumtrans(1-cos)]. Hence Rold_second=8h^-2 average[d+o sumtrans(1-cos)]>=8d/h² for o>=0. Hgen/oldH and fixedgeometryQ/actualIIDdetectorJ are constant alongthis prepangle.",
+  "actual_prep_tangent": "Use the already-owned128 transverse characters ku0, common actual vacuum m0, and multiply everycolumn by cos(x)+(-1)^ju sin(x). For |x|<pi/4 each local factor ispositive, the current/futureclockline and normalizedlocalm0 stayfixed, all scalar/top readouts stayzero, and completeRIGHT Gram staysI128/128. Both first/second wholepreparation norms equal1.",
+  "checks": [
+    "literal oldv8 native word definition pin",
+    "literal oldv8 price and clock owner pin",
+    "actual full4Role UV energy gap exact",
+    "two Fourier planes preserve whole canonical Gram",
+    "whole normalized preparation speed equalsone",
+    "second preparation jet is genuine geodesic",
+    "original input Rayleigh second source twice actual gap",
+    "new normal is stationary at anglezero but not flat",
+    "checkerboard Fourier plane orthogonal L8",
+    "all128 RIGHT columns retained L8",
+    "checkerboard Fourier plane orthogonal L10",
+    "all128 RIGHT columns retained L10",
+    "actual current staysrest on vacuum grades 1",
+    "actual current staysrest on vacuum grades 2",
+    "actual current staysrest on vacuum grades 3",
+    "same actual scalar andtop decoders remainzero",
+    "normalized local future clock unchanged",
+    "actual integer-clock source ratio exact",
+    "owned physical signal coefficient retained",
+    "generalized r0 bound retains same native floor"
+  ],
+  "new_scale_consumer": "In the specified FREE-equalizer caseA Hgen+J+Rold, with Rold independent ofM, consume existing exact radialstationarity. At flatQ0 matrixR=I it gives sigmaJ=d_return*vartheta=epsilon/beta. With the genuine integerclock beta=m p²h²/128,m>=1, Rold_second/sigmaJ>=p²m d/(16epsilon). A physical signal sigma=owned_kappa sigmaJ retains a further1/kappa. Rank/AFmultiplicity cannot make this vanish.",
+  "scope": "A new exact C2scale obstruction for this freeequalizer caseA and chart including these genuineRIGHT prep normals, not a replay of oldradial no-go and not a fullD0 theorem. Assumes d stayspositive, epsilon and ownedkappa do not grow without actualbounds, o>=0 and literal clockbinding. Bound control M(S,Q) neednot admit the free radialvariation; linkednewRayleigh/otherhistory terms maychange it and must bepriced.",
+  "source_sha256": {
+    "oldv8_RESULT": "f7ea30d997a58fa4e608d4403acae5f5e3d7e5da45116f9a7c3f62be5e99115c",
+    "oldv8_exact_AST": "9f62da27fd64a07005a5ee30eaedbf665f309f15b3799e8049e6f7290dac27ff"
+  },
+  "status": "PASS"
+}

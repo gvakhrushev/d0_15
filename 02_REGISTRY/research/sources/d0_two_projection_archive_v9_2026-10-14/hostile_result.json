@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "executed_math_mutations": 7,
+  "rejections": [
+    {
+      "mutation": "wrong_loop_sign",
+      "rejected_at": "complete_loop_defect"
+    },
+    {
+      "mutation": "difference_not_sum_square",
+      "rejected_at": "complete_loop_defect"
+    },
+    {
+      "mutation": "wrong_golden_average",
+      "rejected_at": "same_golden_survival_full_space"
+    },
+    {
+      "mutation": "freeze_archive_frame_jet",
+      "rejected_at": "REJECT_frozen_archive_frame_jet"
+    },
+    {
+      "mutation": "zero_cutoff_weight",
+      "rejected_at": "interval_cutoff_mass_strictly_positive"
+    },
+    {
+      "mutation": "drop_reference_multiplicity",
+      "rejected_at": "strict_contraction"
+    },
+    {
+      "mutation": "freeze_coefficient_jet",
+      "rejected_at": "full_Q_jet_is_tangent"
+    },
+    {
+      "mutation": "false_GR_receipt",
+      "rejected_at": "IMMUTABLE_RECEIPT_MISMATCH"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "status": "PASS",
+  "checks": 212,
+  "runtime": "Python stdlib; original local check, exact Fraction finite stopping trees",
+  "finite_trees_exact_rational": [
+    {
+      "K": 1,
+      "leaves": 9,
+      "rlogr_coeff": "4/5",
+      "native_finite_limit_trial_count": "2",
+      "uncapped_positive_r_coeff": "8/5",
+      "missing_source_coeff": "4/5"
+    },
+    {
+      "K": 2,
+      "leaves": 21,
+      "rlogr_coeff": "124/125",
+      "native_finite_limit_trial_count": "62/25",
+      "uncapped_positive_r_coeff": "8/5",
+      "missing_source_coeff": "76/125"
+    },
+    {
+      "K": 3,
+      "leaves": 45,
+      "rlogr_coeff": "136/125",
+      "native_finite_limit_trial_count": "68/25",
+      "uncapped_positive_r_coeff": "8/5",
+      "missing_source_coeff": "64/125"
+    },
+    {
+      "K": 4,
+      "leaves": 93,
+      "rlogr_coeff": "3556/3125",
+      "native_finite_limit_trial_count": "1778/625",
+      "uncapped_positive_r_coeff": "8/5",
+      "missing_source_coeff": "1444/3125"
+    },
+    {
+      "K": 5,
+      "leaves": 189,
+      "rlogr_coeff": "728/625",
+      "native_finite_limit_trial_count": "364/125",
+      "uncapped_positive_r_coeff": "8/5",
+      "missing_source_coeff": "272/625"
+    },
+    {
+      "K": 6,
+      "leaves": 381,
+      "rlogr_coeff": "92164/78125",
+      "native_finite_limit_trial_count": "46082/15625",
+      "uncapped_positive_r_coeff": "8/5",
+      "missing_source_coeff": "32836/78125"
+    }
+  ],
+  "native_factory_readiness": 0.45367493868186265,
+  "native_ready_cost20": 0.3416407870701554,
+  "finite_return_derivative_at_r=.05": 0.00011150765618204409,
+  "finite_book_monodromy": 3.535107384337531e-22,
+  "native_golden_information_slope_monodromy_imag": 5.923636038263213,
+  "rlogr_coeff_uncapped_positive_three_class": 1.8146997547274506,
+  "rlogr_coeff_at_rare_birth_limit_K_infty_after_r0": 1.361024816045588,
+  "strict_nonuniform_coeff_gap": 0.45367493868186265,
+  "actual_fixed_rare_root": 0.0000018512395785208469,
+  "compulsory_Book03_Hodge_identified": false,
+  "uniform_mesh_C1_refinement": false,
+  "GR_closed": false
+}

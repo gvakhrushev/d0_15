@@ -1,0 +1,586 @@
+{
+  "schema": "d0-exact-research-result/v1",
+  "status": "TRUNCATED_RANGE_SOLVE_DOES_NOT_CLOSE_FULL_EULER_ROWS",
+  "scope": "local unwrapped polynomial perturbative jet only",
+  "A": [
+    1,
+    0
+  ],
+  "B": [
+    0,
+    1
+  ],
+  "quartic_amplitude_sectors": [
+    [
+      4,
+      0
+    ],
+    [
+      3,
+      1
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      0,
+      4
+    ]
+  ],
+  "cubic_kernel_parameters_fixed_to_zero_in_one_valid_affine_section": 172,
+  "quartic_link_unknowns_per_sector": 504,
+  "quartic_coframe_unknowns_per_sector": 240,
+  "quartic_operator_shape_per_sector": [
+    600,
+    744
+  ],
+  "multi_source_shape": [
+    600,
+    5
+  ],
+  "total_quartic_spatial_equations": 3000,
+  "exact_solver_message": null,
+  "all_five_sources_solved_on_one_cubic_section": true,
+  "direct_substitution_all_five_sectors": false,
+  "direct_euler_checks": {
+    "0,0": {
+      "exactly_zero_all_spatial_degrees": true,
+      "failure_row_count": 0,
+      "first_failures": []
+    },
+    "1,0": {
+      "exactly_zero_all_spatial_degrees": true,
+      "failure_row_count": 0,
+      "first_failures": []
+    },
+    "0,1": {
+      "exactly_zero_all_spatial_degrees": true,
+      "failure_row_count": 0,
+      "first_failures": []
+    },
+    "2,0": {
+      "exactly_zero_all_spatial_degrees": true,
+      "failure_row_count": 0,
+      "first_failures": []
+    },
+    "1,1": {
+      "exactly_zero_all_spatial_degrees": true,
+      "failure_row_count": 0,
+      "first_failures": []
+    },
+    "0,2": {
+      "exactly_zero_all_spatial_degrees": true,
+      "failure_row_count": 0,
+      "first_failures": []
+    },
+    "3,0": {
+      "exactly_zero_all_spatial_degrees": true,
+      "failure_row_count": 0,
+      "first_failures": []
+    },
+    "2,1": {
+      "exactly_zero_all_spatial_degrees": true,
+      "failure_row_count": 0,
+      "first_failures": []
+    },
+    "1,2": {
+      "exactly_zero_all_spatial_degrees": true,
+      "failure_row_count": 0,
+      "first_failures": []
+    },
+    "0,3": {
+      "exactly_zero_all_spatial_degrees": true,
+      "failure_row_count": 0,
+      "first_failures": []
+    },
+    "4,0": {
+      "exactly_zero_all_spatial_degrees": true,
+      "failure_row_count": 0,
+      "first_failures": []
+    },
+    "3,1": {
+      "exactly_zero_all_spatial_degrees": true,
+      "failure_row_count": 0,
+      "first_failures": []
+    },
+    "2,2": {
+      "exactly_zero_all_spatial_degrees": false,
+      "failure_row_count": 9,
+      "first_failures": [
+        {
+          "row": 0,
+          "spatial_degree": 5,
+          "nonzero_terms": 5,
+          "sample_terms": [
+            {
+              "monomial": [
+                4,
+                1
+              ],
+              "coefficient": "3/128"
+            },
+            {
+              "monomial": [
+                3,
+                2
+              ],
+              "coefficient": "3/64"
+            },
+            {
+              "monomial": [
+                2,
+                3
+              ],
+              "coefficient": "3/64"
+            }
+          ]
+        },
+        {
+          "row": 1,
+          "spatial_degree": 5,
+          "nonzero_terms": 4,
+          "sample_terms": [
+            {
+              "monomial": [
+                5,
+                0
+              ],
+              "coefficient": "-3/80"
+            },
+            {
+              "monomial": [
+                4,
+                1
+              ],
+              "coefficient": "-9/64"
+            },
+            {
+              "monomial": [
+                3,
+                2
+              ],
+              "coefficient": "-3/16"
+            }
+          ]
+        },
+        {
+          "row": 2,
+          "spatial_degree": 5,
+          "nonzero_terms": 4,
+          "sample_terms": [
+            {
+              "monomial": [
+                4,
+                1
+              ],
+              "coefficient": "3/16"
+            },
+            {
+              "monomial": [
+                3,
+                2
+              ],
+              "coefficient": "9/32"
+            },
+            {
+              "monomial": [
+                2,
+                3
+              ],
+              "coefficient": "3/16"
+            }
+          ]
+        },
+        {
+          "row": 5,
+          "spatial_degree": 5,
+          "nonzero_terms": 5,
+          "sample_terms": [
+            {
+              "monomial": [
+                4,
+                1
+              ],
+              "coefficient": "3/128"
+            },
+            {
+              "monomial": [
+                3,
+                2
+              ],
+              "coefficient": "3/64"
+            },
+            {
+              "monomial": [
+                2,
+                3
+              ],
+              "coefficient": "3/64"
+            }
+          ]
+        },
+        {
+          "row": 9,
+          "spatial_degree": 5,
+          "nonzero_terms": 4,
+          "sample_terms": [
+            {
+              "monomial": [
+                5,
+                0
+              ],
+              "coefficient": "-3/80"
+            },
+            {
+              "monomial": [
+                4,
+                1
+              ],
+              "coefficient": "-9/64"
+            },
+            {
+              "monomial": [
+                3,
+                2
+              ],
+              "coefficient": "-3/16"
+            }
+          ]
+        },
+        {
+          "row": 10,
+          "spatial_degree": 5,
+          "nonzero_terms": 4,
+          "sample_terms": [
+            {
+              "monomial": [
+                4,
+                1
+              ],
+              "coefficient": "3/16"
+            },
+            {
+              "monomial": [
+                3,
+                2
+              ],
+              "coefficient": "9/32"
+            },
+            {
+              "monomial": [
+                2,
+                3
+              ],
+              "coefficient": "3/16"
+            }
+          ]
+        },
+        {
+          "row": 15,
+          "spatial_degree": 5,
+          "nonzero_terms": 6,
+          "sample_terms": [
+            {
+              "monomial": [
+                5,
+                0
+              ],
+              "coefficient": "3/640"
+            },
+            {
+              "monomial": [
+                4,
+                1
+              ],
+              "coefficient": "3/128"
+            },
+            {
+              "monomial": [
+                3,
+                2
+              ],
+              "coefficient": "3/64"
+            }
+          ]
+        },
+        {
+          "row": 21,
+          "spatial_degree": 5,
+          "nonzero_terms": 5,
+          "sample_terms": [
+            {
+              "monomial": [
+                4,
+                1
+              ],
+              "coefficient": "-3/128"
+            },
+            {
+              "monomial": [
+                3,
+                2
+              ],
+              "coefficient": "-3/64"
+            },
+            {
+              "monomial": [
+                2,
+                3
+              ],
+              "coefficient": "-3/64"
+            }
+          ]
+        }
+      ]
+    },
+    "1,3": {
+      "exactly_zero_all_spatial_degrees": true,
+      "failure_row_count": 0,
+      "first_failures": []
+    },
+    "0,4": {
+      "exactly_zero_all_spatial_degrees": true,
+      "failure_row_count": 0,
+      "first_failures": []
+    }
+  },
+  "proper_lorentz_links_through_amplitude_degree_four": true,
+  "periodic_carrier_root": false,
+  "uniform_refinement": false,
+  "native_price_selection": false,
+  "physical_gr_closure": false,
+  "GR_closed": false
+}
+FAIL truncated response solve does not close the full finite Euler rows
+FAIL amplitude 2,2: 9 rows retain spatial residuals
+[
+  {
+    "row": 0,
+    "spatial_degree": 5,
+    "nonzero_terms": 5,
+    "sample_terms": [
+      {
+        "monomial": [
+          4,
+          1
+        ],
+        "coefficient": "3/128"
+      },
+      {
+        "monomial": [
+          3,
+          2
+        ],
+        "coefficient": "3/64"
+      },
+      {
+        "monomial": [
+          2,
+          3
+        ],
+        "coefficient": "3/64"
+      }
+    ]
+  },
+  {
+    "row": 1,
+    "spatial_degree": 5,
+    "nonzero_terms": 4,
+    "sample_terms": [
+      {
+        "monomial": [
+          5,
+          0
+        ],
+        "coefficient": "-3/80"
+      },
+      {
+        "monomial": [
+          4,
+          1
+        ],
+        "coefficient": "-9/64"
+      },
+      {
+        "monomial": [
+          3,
+          2
+        ],
+        "coefficient": "-3/16"
+      }
+    ]
+  },
+  {
+    "row": 2,
+    "spatial_degree": 5,
+    "nonzero_terms": 4,
+    "sample_terms": [
+      {
+        "monomial": [
+          4,
+          1
+        ],
+        "coefficient": "3/16"
+      },
+      {
+        "monomial": [
+          3,
+          2
+        ],
+        "coefficient": "9/32"
+      },
+      {
+        "monomial": [
+          2,
+          3
+        ],
+        "coefficient": "3/16"
+      }
+    ]
+  },
+  {
+    "row": 5,
+    "spatial_degree": 5,
+    "nonzero_terms": 5,
+    "sample_terms": [
+      {
+        "monomial": [
+          4,
+          1
+        ],
+        "coefficient": "3/128"
+      },
+      {
+        "monomial": [
+          3,
+          2
+        ],
+        "coefficient": "3/64"
+      },
+      {
+        "monomial": [
+          2,
+          3
+        ],
+        "coefficient": "3/64"
+      }
+    ]
+  },
+  {
+    "row": 9,
+    "spatial_degree": 5,
+    "nonzero_terms": 4,
+    "sample_terms": [
+      {
+        "monomial": [
+          5,
+          0
+        ],
+        "coefficient": "-3/80"
+      },
+      {
+        "monomial": [
+          4,
+          1
+        ],
+        "coefficient": "-9/64"
+      },
+      {
+        "monomial": [
+          3,
+          2
+        ],
+        "coefficient": "-3/16"
+      }
+    ]
+  },
+  {
+    "row": 10,
+    "spatial_degree": 5,
+    "nonzero_terms": 4,
+    "sample_terms": [
+      {
+        "monomial": [
+          4,
+          1
+        ],
+        "coefficient": "3/16"
+      },
+      {
+        "monomial": [
+          3,
+          2
+        ],
+        "coefficient": "9/32"
+      },
+      {
+        "monomial": [
+          2,
+          3
+        ],
+        "coefficient": "3/16"
+      }
+    ]
+  },
+  {
+    "row": 15,
+    "spatial_degree": 5,
+    "nonzero_terms": 6,
+    "sample_terms": [
+      {
+        "monomial": [
+          5,
+          0
+        ],
+        "coefficient": "3/640"
+      },
+      {
+        "monomial": [
+          4,
+          1
+        ],
+        "coefficient": "3/128"
+      },
+      {
+        "monomial": [
+          3,
+          2
+        ],
+        "coefficient": "3/64"
+      }
+    ]
+  },
+  {
+    "row": 21,
+    "spatial_degree": 5,
+    "nonzero_terms": 5,
+    "sample_terms": [
+      {
+        "monomial": [
+          4,
+          1
+        ],
+        "coefficient": "-3/128"
+      },
+      {
+        "monomial": [
+          3,
+          2
+        ],
+        "coefficient": "-3/64"
+      },
+      {
+        "monomial": [
+          2,
+          3
+        ],
+        "coefficient": "-3/64"
+      }
+    ]
+  }
+]

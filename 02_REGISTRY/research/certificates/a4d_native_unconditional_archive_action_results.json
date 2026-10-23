@@ -1,0 +1,9 @@
+{
+  "exact_controls_failed": 0,
+  "exact_controls_passed": 88,
+  "failed": [],
+  "j_at_3_5": "-108236496255820/21915981199427 + 57454120467900*sqrt(5)/21915981199427",
+  "joint_radial_derivative": "-240/17",
+  "selector_record_commutator_frobenius_sq": 16,
+  "status": "PASS"
+}

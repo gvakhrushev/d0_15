@@ -283,11 +283,11 @@
     "03_FORMALIZATION/D0/Geometry/A4DObserverPositiveExterior.lean": "3b6cc6b4d726af1ab33967d090b663ce1ae0236ba2953f43bd438c9a274a12b1",
     "03_FORMALIZATION/D0/Geometry/A4DRawSolderFrameAction.lean": "4096e0a3b132841a60907f71bb48b726399c789231b804b869708249f7087438",
     "03_FORMALIZATION/D0/Geometry/ArchiveAffineCartanConnection.lean": "9a342468ef9c04f28c68b59acb32263e141ed184f2bf49a085869632930c1549",
-    "03_FORMALIZATION/D0/Geometry/ArchiveAffineExteriorLink.lean": "be8f2a58cc7c055b6db13b4846437e89d5cc5bc979cc2ebb9429bdf82f45b1a1",
+    "03_FORMALIZATION/D0/Geometry/ArchiveAffineExteriorLink.lean": "2ccca18cf8ca66b9e1aa020301ce0d84d6fcd12563e913323482ce139928e5fe",
     "03_FORMALIZATION/D0/Geometry/ArchiveChainConnection.lean": "01bb413eefe4b1d485be1b6f4d297e7a3672d2d6db0c676e1689186e7f0729e6",
     "03_FORMALIZATION/D0/Geometry/ArchiveChainCurvature.lean": "d21e4d2fbd34ff96c0cd67426a9684f32f81901ea72026530f331a741cbe4882"
   },
-  "lean_receipt_sha256": "9ef5c18e453a84c66425bf4581c055b3921990bc04692ef6b6e9a0591001c2d9",
+  "lean_receipt_sha256": "5f0109f11587a9476d1e85c979c43263337fcf344e4a53d76b6ecbac15ef5c48",
   "matrix_readout": "nativeLink linear part acts by U, not U^-1; all affine shifts retained",
   "native_action_transfer": "OPEN; physical observable evaluation is not a native action identity",
   "native_refinement": "OPEN; no physical interlevel arrow selected",

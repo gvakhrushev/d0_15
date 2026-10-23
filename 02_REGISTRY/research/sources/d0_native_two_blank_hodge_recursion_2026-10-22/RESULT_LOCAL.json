@@ -1,0 +1,76 @@
+{
+  "status": "LOCAL_TRANSCRIPTION_SMOKE_PASS",
+  "date": "2026-10-22",
+  "source_of_original_equations": "unaltered old CAR16 128-Kraus native constructor formulas, locally transcribed 2307-byte fixture; not byte-identical to pinned upstream",
+  "original_repository_blob": "ee8de4635d24c668949ac9a0186616ab7d59f2ed",
+  "original_repository_blob_verified_by_GitHub_fetch": true,
+  "new_repository_checker": "02_REGISTRY/research/sources/d0_native_two_blank_hodge_recursion_2026-10-22/check_two_blank_complete_book.py",
+  "new_checker_run_on_pinned_repo_checkout": false,
+  "original_CAR16_matrix_completeness_norm_lt": 1e-12,
+  "symbolic_symmetric_recurrence_checks": 19,
+  "symbolic_native_CAR16_eight_plus_eight_eigeninput": true,
+  "native_point": {
+    "r": "1/9",
+    "nu": "3/5",
+    "golden_p": "phi^-1",
+    "oldRIGHT_dimension": 128
+  },
+  "native_moments": {
+    "a1_probability_blank_one": 0.9790006640363953,
+    "a2_probability_blank_two": 0.9584430025230053,
+    "variance_a2_minus_a1_squared": 7.023393026051039e-7,
+    "jet_wrt_proper_boost_r_a1": 0.002430271790351681,
+    "jet_wrt_proper_boost_r_a2": 0.004771716074734873
+  },
+  "cases": [
+    {
+      "n": 1,
+      "J": 0.000041014328465257,
+      "source": 0.00003270915378113769,
+      "absolute_feedback_difference_lt": 2e-18,
+      "absolute_H_difference": 0,
+      "absolute_DJ_difference_lt": 1e-18
+    },
+    {
+      "n": 2,
+      "J": 0.00008116601230814,
+      "source": -0.000008753178843457219,
+      "absolute_feedback_difference_lt": 2e-18,
+      "absolute_H_difference": 0,
+      "absolute_DJ_difference_lt": 1e-18
+    },
+    {
+      "n": 3,
+      "J": 0.00012047322407157,
+      "source": -0.000013717630195257797,
+      "absolute_feedback_difference_lt": 2e-18,
+      "absolute_H_difference": 0,
+      "absolute_DJ_difference_lt": 1e-18
+    },
+    {
+      "n": 33,
+      "J": 0.000983203702793,
+      "source": -0.00008652626788946492,
+      "absolute_feedback_difference_lt": 1e-17,
+      "absolute_H_difference": 0,
+      "absolute_DJ_difference_lt": 1e-17
+    },
+    {
+      "n": 130,
+      "J": 0.00182862240707,
+      "source": -0.00005453743741655615,
+      "absolute_feedback_difference_lt": 2e-17,
+      "absolute_H_difference": 0,
+      "absolute_DJ_difference_lt": 2e-17
+    }
+  ],
+  "entire_feedback_rank": 2048,
+  "Hodge_nonzero_eigen_multiplicities": [
+    2048,
+    2048
+  ],
+  "Hodge_true_zero_modes_by_n": "2048*128^n - 4096",
+  "selection_scope": "paired-cut incidence Hodge and fixed present input bank only, NOT proven compulsory Book03 scene operator",
+  "native_M1_programme_selected": false,
+  "same_execution_full42_GR_closed": false
+}

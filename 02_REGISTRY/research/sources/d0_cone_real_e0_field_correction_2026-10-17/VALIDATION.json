@@ -1,0 +1,32 @@
+{
+  "byte_identical": true,
+  "exact_checks": 128,
+  "execution_scope": "one new-helper normal/optimized pair; earlier targeted full16 definition-only derivation; no old checker, assemble, spectrum or root replay",
+  "helper_sha256": "f796705f286a55b5f6581b1c8a0e9031ec74c385c369baeb6062bc7a6cd61c76",
+  "normal_runtime_seconds": 0.41896004200000003,
+  "normal_stdout_sha256": "76983198fed4c043fd00fdcecdbb14882815328bf1aa03b55023141828f6a32d",
+  "optimized_runtime_seconds": 0.40511695799999997,
+  "optimized_stdout_sha256": "76983198fed4c043fd00fdcecdbb14882815328bf1aa03b55023141828f6a32d",
+  "proof_sha256": "51c66a09fbbd55305d98927797e46d9e5bb54fc67e929c40dbaaf271a8da3170",
+  "python": "3.9.6",
+  "readme_sha256": "86df565a5448e43397f49309949e24ab5817fd381f9bea69d32f02495b2b7539",
+  "recorded_at_utc": "2026-10-16T21:28:12.870775+00:00",
+  "scientific_scope": {
+    "GHZ_first_corrector_proved": false,
+    "all_partial_rank_or_geometry_excluded": false,
+    "arbitrary_real_smooth_first_field_jets_allowed": true,
+    "complex_or_momentum_coherent_preparations_excluded": false,
+    "independent_sigma_r_only_axis1_constrained": true,
+    "new_action_or_fit": false,
+    "old_entrypoints_or_spectra_executed": false,
+    "physical_engine_admission_selected": false,
+    "real_E0_momentum_diagonal_preparations": true
+  },
+  "source_pins": {
+    "02_REGISTRY/research/A4D_CONE_SOURCE_BALANCED_PREPARATION.md": "1b6c919602be63b2ca401426e0630c5a91808b65cedf4181df5d7e499ae18d5f",
+    "02_REGISTRY/research/certificates/a4d_native_curved_soldered_heat.py": "bf13f57c902da0005634ae6834c0b4e3ffd2df1aa196a61ebc0ff3dc0351c7da",
+    "02_REGISTRY/research/sources/d0_cone_matter_corrector_2026-10-16/check_cone_matter_corrector.py": "7bbf1589f3a32af381036df64f76d720ce14a9f2e502b3a1a6f43f5b5e776d58"
+  },
+  "status": "PASS",
+  "stderr_empty_both_modes": true
+}

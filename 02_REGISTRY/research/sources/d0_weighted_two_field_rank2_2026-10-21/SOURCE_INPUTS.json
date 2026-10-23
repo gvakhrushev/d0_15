@@ -1,0 +1,28 @@
+{
+  "input_ref": "401eafb2958e9d9626db833a25f02b35b3871c16",
+  "repository": "gvakhrushev/d0_15",
+  "existing_PR": 334,
+  "inputs": [
+    {
+      "path": "02_REGISTRY/research/sources/d0_causal_native_weighted_synthesis_2026-10-21/weighted_dynamics/WEIGHTED_WARD_AND_DUST.md",
+      "git_blob": "b72f96ec4e2e3d1413934532f5c018a68db93747",
+      "use": "Consumes the weighted invariant, full equations, original metric map and open discrete Ward step; NOT a new discovery in this package."
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_primary_normal_source_recovery_2026-10-21/constitutive/CONSTITUTIVE_COMPOSITION.md",
+      "git_blob": "60f2a9c0b614541847e28b3a183a90c9731fcc0e",
+      "use": "Actual original probability polynomial, one stationary master K and coefficients."
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_same_execution_spatial_source_2026-10-21/geometry/SAME_EXECUTION_LOCAL_HOMOGENEITY_AND_WEIGHT_SOURCE.md",
+      "git_blob": "deff5f8879cec7d8c3989f941553b4a873c3c39c",
+      "use": "Literal inverse-metric and two scalar forward-difference density; no different stencil."
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_primary_normal_source_recovery_2026-10-21/README.md",
+      "git_blob": "62af53c65861e89b1f8b146cb8f2c37ceb031f08",
+      "use": "Maintained integration consumer, only append a bounded new section if bytes match."
+    }
+  ],
+  "source_metadata_obtained": "Live GitHub connector at the pinned input; no original source suite replay claimed."
+}

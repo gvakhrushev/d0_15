@@ -1,0 +1,10 @@
+{
+  "scope": "Author-owned theorem files only; the separately authored curved consumer and independent review are not frozen here.",
+  "sha256": {
+    "PROOF.md": "e7a71e11ac1f8d6fd8fc49101aa231ccea4c5c23352f913a041d33995ebeccb2",
+    "check_covariant_multiscalar.py": "53819ac7419791d34e37732edd8fdbcad4aba49792b42adf6d975d42ceefec97",
+    "SOURCE_PINS.json": "042c79562175d09beba4b49fa4eb9edc7ec7aaecce8cbf3b0879398340b88e3d",
+    "README.md": "b5d524764a8b824440211c32f8e2ebb510fa8a60b020d673dbc97f03a69322b8",
+    "RESULT.json": "8cf8f99835f57688f750f2d9b6571f945446c1010ef276ef58ef9ae8f6e828f6"
+  }
+}

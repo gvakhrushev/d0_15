@@ -1,0 +1,321 @@
+# D0 → nonlinear GR: EXACT finite golden-AF action = original Lorentz ⋆-action after an invertible native coframe dressing
+
+18 October 2026. **POSITIVE CONSUMING THEOREM / SAME scientific integrator Draft #334**, not a new action, task, axiom, detector or theory claim. The result holds **at finite lattice spacing and any fixed admissible probe t**, not merely to a quadratic or cubic approximation. It strengthens the owned exact critical-set reduction by a *complete local action-equivalence and all-order self-interaction* theorem. It applies to BOTH the actual Book \(w=q\) second-AF entropy and the already-owned **literal Book03 two-tick AF×scene feedback J₂**; the latter does not require choosing Shannon as the whole physical price.
+
+**Direct pinned mathematical inputs:** [selected six-plaquette Lorentz star and full independent 16+24 Euler](MEMO_A4D_STAR_DENSITY_VARIATION_PRESSURE.md); [one-global AF Book action](A4D_AF_STAR_PALATINI_NONLINEAR_EINSTEIN_COMPOSITION_2026_10_17.md) §§2–5; [golden-weight all-interior 40-row curved solutions](A4D_AF_STAR_FULL_LATTICE_STATIONARY_FAMILY_2026_10_17.md) §§2–5; [native five-outcome entropy/full preparation](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md) §§3–6; and its **same-owned full Book-feedback** §6.18, (13at)–(13ax). The original physically selected full v8/AF history+matter price and original #216 raw \(h^{-2}\) refinement are not identified with any one of these conditional components.
+
+## 1. One finite operation and its forced scalar homogeneity
+
+On the original finite proper-Lorentz/relative-solder lattice let
+\[
+f_x(e,U):=h^{-4}\sum_{r<s}\epsilon_{rsuv}
+G_2\Big(v_u(x)\wedge v_v(x),\star\mathfrak b\big[(P_{rs}(x)-P_{rs}(x)^{-1})/2\big]\Big).
+\tag{1}
+\]
+The four solder legs \(e_x=(v_{x,0},\dots,v_{x,3})\) are 16 independent real coordinates on the full nondegenerate relative-solder chart, and all proper link variables \(U\) remain independent. At fixed U, the six plaquette matrices depend on U but not on the legs, while the complementary wedge uses only legs at the **same site x**. Therefore for every positive real site scale \(s_x\),
+\[
+\boxed{f_x(s_xe_x,U)=s_x^2 f_x(e_x,U),\quad
+f_y(s_xe_x,U)=f_y(e_y,U)\ (y\ne x),\quad
+df_x[Z_x]=2f_x.}
+\tag{2}
+\]
+This is a LITERAL finite identity of the already-selected star density; no smooth curvature expansion or assigned Einstein tensor enters it. The actual golden READY counts give nonnegative fixed weights \(w_x\). On an all-covered cell set \(w_x>0\). Arbitrary fixed positive weights work for the theorem, including the unbalanced real AF weights.
+
+Consider any **already-derived scalar price** of the form
+\[
+{\cal A}_\Phi(e,U)=B+\sum_xw_x\Phi(f_x(e,U)),
+\quad
+\Phi(0)=0,\quad c:=\Phi'(0)\ne0,
+\tag{3}
+\]
+where B is field-independent on the same fixed cut. Suppose \(\Phi\) is \(C^3\) on an interval \(I\ni0\), \(\Phi'(f)/c>0\), and \(\Phi(f)/(cf)>0\) on I, extended by value 1 at0. Both conditions hold on a uniform open interval for the AF functions below, with no coefficient fitting.
+
+## 2. **Exact nonlinear coframe redefinition** at every finite n,h,t
+
+Define, for f in I,
+\[
+\chi_\Phi(f)=
+\begin{cases}\Phi(f)/(cf),&f\ne0,\\1,&f=0,\end{cases}
+\quad
+\sigma_\Phi(f)=\sqrt{\chi_\Phi(f)},\quad
+\widetilde e_x=\sigma_\Phi(f_x(e,U))\,e_x,\quad
+\widetilde U=U.
+\tag{4}
+\]
+Since the *same owned star* is degree two at each site,
+\[
+f_x(\widetilde e,\widetilde U)
+=\sigma_\Phi(f_x)^2f_x
+=\Phi(f_x)/c.
+\]
+Therefore **the entire finite action**, not merely its first jet, obeys
+\[
+\boxed{\displaystyle
+{\cal A}_\Phi(e,U)-B
+=c\,{\cal P}_w(\widetilde e,U),\qquad
+{\cal P}_w(e,U)=\sum_xw_x f_x(e,U).
+}
+\tag{5}
+\]
+No new physically selected field, Einstein term, matter action, cosmological counterterm or discarded record has appeared: (4) is a **change of coordinates on the existing 16-solder-plus-links chart of the same complete AF operator price**.
+
+**Explicit inverse; no inverse-function conjecture.** Let \(h_\Phi(f)=\Phi(f)/c=f\chi_\Phi(f)\). Since \(h'_\Phi(f)=\Phi'(f)/c>0\), h is a local smooth one-to-one map. Given arbitrary transformed \((\widetilde e,U)\) in its range, compute \(\widetilde f_x=f_x(\widetilde e,U)\), then
+\[
+f_x=h_\Phi^{-1}(\widetilde f_x),\qquad
+e_x=\sigma_\Phi(f_x)^{-1}\widetilde e_x,\qquad U=\widetilde U.
+\tag{6}
+\]
+The site-local inverse is exact despite links being shared between neighboring plaquettes, because the link variables were NOT changed.
+
+On 16 independent solder components, with \(f=f_x\), the exact Jacobian is the rank-one update
+\[
+D_{e_x}\widetilde e_x
+=\sigma I_{16}+\sigma' e_x\otimes df_x,\qquad
+\boxed{\det D_{e_x}\widetilde e_x
+ =\sigma^{14}\frac{\Phi'(f)}c
+ =\chi_\Phi(f)^7\frac{\Phi'(f)}c>0.}
+\tag{7}
+\]
+Indeed \(df_x[e_x]=2f\), and \(2\sigma\sigma' f+\sigma^2=d(f\sigma^2)/df=\Phi'(f)/c\). On the full 16+link chart the Jacobian is block triangular with unchanged link diagonal, so this proves **full local invertibility** without gauge quotienting any physical link variable.
+
+## 3. **Exact finite Palatini equations**, not just Crit-set coincidence
+
+Let \(E_{\tilde e}\) and \(E_U\) be the genuine independent Euler covectors of the ORIGINAL weighted star action \({\cal P}_w\) at \((\tilde e,U)\). Differentiate the EXACT identity (5) on the SAME carrier. At every point of the regular chart,
+\[
+\begin{aligned}
+E_e^{\cal A}&=c(D_e\widetilde e)^*E_{\tilde e}^{\cal P},\\
+E_U^{\cal A}&=c E_U^{\cal P}
++c(D_U\widetilde e)^*E_{\tilde e}^{\cal P}.
+\end{aligned}
+\tag{8}
+\]
+The first operator is invertible by (7). Hence sequentially, without imposing \(\omega=\omega_{\rm LC}\) by hand,
+\[
+\boxed{
+E_e^{\cal A}=0\iff E_{\tilde e}^{\cal P}=0,\qquad
+(E_e^{\cal A},E_U^{\cal A})=0
+\iff(E_{\tilde e}^{\cal P},E_U^{\cal P})=0.
+}
+\tag{9}
+\]
+
+There is a stronger literal vacuum statement in the original physical coframe coordinates. If ALL covered sitewise radial directions \(Z_x\) are admissible, (2),(3) give
+\[
+E^{\cal A}[Z_x]=2w_x\Phi'(f_x)f_x=0\iff f_x=0.
+\tag{10}
+\]
+Therefore on **every full vacuum joint stationary point** in that chart \(\chi_\Phi(0)=1\), so \(\widetilde e=e\), \(\widetilde g=g\). The original physical vacuum stationary sets—not merely their images under an invented metric dictionary—coincide EXACTLY:
+\[
+\boxed{\operatorname{Crit}{\cal A}_\Phi
+=\operatorname{Crit}{\cal P}_w
+\quad\text{and}\quad \widetilde e=e,\ \widetilde g=g\text{ on this set}.}
+\tag{11}
+\]
+With a fixed boundary collar, (9) holds on its allowed full interior tangent space; on the actually owned pp-wave \(f_x=0\) **at all cells**, the identity map holds globally and every interior coframe and link equation transfers without using forbidden radial variations on the collar.
+
+Because \(\chi_\Phi(f_x)\) is a REAL Lorentz scalar of the original based-plaquette \(\star\)-insertion, (4) is equivariant under the original proper local Lorentz gauge and preserves its exact six-per-site finite Ward identities. The full diffeomorphism/refoliation algebra is obtained from the continuum Palatini limit on an admitted moving-coordinate chart; a fixed discrete site lattice is NOT falsely assigned exact continuum diffeomorphism invariance.
+
+## 4. The result applies **twice** to actual golden record prices
+
+### (A) The exact Book SAME-history \(w=q\) second-active AF entropy
+
+The existing full fixed-pointer owner proves, with \(p=\varphi^{-1}\), \(e_0=p^2\),
+\[
+{\cal A}_H=(S_{\rm Book,AF}-B_n)/t^2
+=\sum_x w_x\,\Phi_H(f_x),
+\quad
+\Phi_H(f)=\frac{H_0(e_0(1+t^2f))-H_0(e_0)}{t^2},
+\tag{12}
+\]
+where \(w_x=2p^{n+3}N_{n,x}>0\) on its covered cells and \(H_0\) is the TRUE five-outcome conditional entropy in golden units. Its EXACT already-owned derivatives at e0 are
+\[
+c_H=\Phi'_H(0)=p^2 H'_0(p^2)
+=-0.3348472054926093\ldots\ne0,\qquad
+H''_0(p^2)=8.002389502309384\ldots .
+\tag{13}
+\]
+The induced coframe Weyl/dressing jet is *computed*, not fitted:
+\[
+\sigma_H(0)=1,\qquad
+\sigma_H'(0)=\frac{\Phi_H''(0)}{4c_H}
+=\frac{p^2t^2 H_0''(p^2)}{4H'_0(p^2)}
+=-0.871690785035441\ldots\,t^2.
+\tag{14}
+\]
+At **any fixed admissible t**, all higher analytic entropy corrections are EXACTLY absorbed by (4). There is no need to send t to zero merely to recover the **vacuum field-equation set**.
+
+### (B) Literal Book03 two-tick AF×scene **feedback determinant**, not Shannon
+
+The already owned full-price consumer [§6.18 (13at)–(13aw)](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md) gives on the SAME geometrically controlled AF effect and the TRUE entire retained scene cut
+\[
+J_2^0=-K\operatorname{Tr}_{s}\log(I-zB)
+-\sum_jD_j\operatorname{Tr}_{old,s}
+\log[I-z(\lambda(E_j)I+(1-\lambda(E_j))B)],
+\quad\lambda(e)=4e(1-e).
+\tag{15}
+\]
+Every full scene mode (including 528 retained) and complement is retained. For a fixed scene \(0\le B\le I\), define its actually computed one-leaf scalar
+\[
+g_B(e)=-\operatorname{Tr}_s\log(I-zB)
+-\operatorname{Tr}_s\log[I-z(B+\lambda(e)(I-B))].
+\]
+Then
+\[
+g'_B(e)=4z(1-2e)\operatorname{Tr}_s
+ \left[(I-B)(I-z(B+\lambda(e)(I-B)))^{-1}\right]>0
+\tag{16}
+\]
+for \(0<e<1/2,\ 0<z<1\), and at least one eigenvalue \(B<1\), as in the actual scene (which has an owned 0 eigenspace). The original AF multiplicities yield positive leaf/site weights \(w_x^{J}\) (they are proportional across SAME-cost READY leaves, with exact Fibonacci factors), and the normalized GEOMETRIC FEEDBACK SOURCE is exactly
+\[
+{\cal A}_J
+=\frac{J_2(e,U,B)-J_2(f\equiv0,B)}
+ {\nu Kp^2t^2g'_B(e_0)}
+ =\sum_x w_x^{J}
+ \underbrace{\frac{g_B(e_0+p^2t^2f_x)-g_B(e_0)}
+                  {p^2t^2g'_B(e_0)}}_{\Phi_J(f_x)}.
+\tag{17}
+\]
+Here \(\Phi'_J(0)=1\) and \(\Phi'_J(f)>0\) THROUGHOUT the owned corridor \(e_0+p^2t^2 f\in(0,1/2)\). Thus \(\chi_J=\Phi_J(f)/f>0\), the coframe map (4) is invertible, and the **ENTIRE finite nonlinear Book feedback geometric sector** is EXACTLY the already-selected weighted Lorentz star evaluated at dressed legs. This is strictly stronger than a coefficient-level Einstein resemblance or a conditional choice of Shannon Info.
+
+For a genuinely MOVING scene B, (17) is an exact fibrewise equality at every B but the reference value \(J_2(0,B)\), normalizing factor and \(\sigma_J(f,B)\) also move. Their **actual** first scene sources must remain in the same total variation. At \(f=0\), the dressing becomes the identity for every B, and the geometric curvature source is independent of these extra fibre derivatives; the genuine scene equation is its own \(D_BJ_2(0,B)=0\) or the corresponding source of the FULL stack. This is a positive joint-reduction formula, not a claim that scene/matter/old-v8 sources vanish for arbitrary preparations.
+
+The theorem therefore applies to TWO independently owned price consumers on the same full geometric AF effect. More generally, any linear combination of these with a nonzero common weighted first derivative and no independent extra field dependence has the SAME finite Palatini vacuum critical set by (2)–(11). Which one is physically selected matters for matter/clock coupling, but **within this geometric star sector it does NOT change the vacuum Einstein dynamics**.
+
+### 4.1. A genuine **nonempty stationary SCENE** for the actual two-tick feedback, with a positive transverse Hessian
+
+The geometric identity (17) need not freeze scene as an extra unvaried background. Let its already-owned full scene return cut be \(P_s\), rank528, inside the full22976-dimensional scene carrier. For a genuinely independently variable **complete** scene unitary \(W_s\), its original two-tick feedback effect is
+\[
+B(W_s)=P_sW_s^\dagger(I-P_s)W_sP_s
+      =K_s(W_s)^\dagger K_s(W_s),\quad
+K_s(W_s)=(I-P_s)W_sP_s.
+\tag{17a}
+\]
+Choose the **existing identity unitary programme** \(W_s=I\) on that FULL carrier: this keeps all528 retained modes, 22448 complementary modes and spectators, and has \(B=0\) without postselection or a new matter state. For EVERY admissible unitary variation \(W_s(\epsilon)=I+\epsilon V+O(\epsilon^2)\), \(V^\dagger=-V\),
+\[
+K_s(I)=0,\quad DB|_{W_s=I}=0,\quad
+D^2B[V,V]=2(P_sV^\dagger(I-P_s)VP_s).
+\tag{17b}
+\]
+Thus the **actual full scene Euler** of \(J_2\) vanishes at \(W_s=I\), even though the operator derivative \(D_BJ_2\) is positive. The latter is not an independent Euler row: B is the real quadratic feedback effect of the original scene word.
+
+On the geometrically curved star vacuum \(f_x=0\), every activated AF leaf has \(e_0=p^2,\lambda(e_0)=L=4p^3,\ 1-L=p^6\). Using the original full trace (15),
+\[
+H_B:=\frac{\partial J_2}{\partial B}\bigg|_{W_s=I,f=0}
+=\nu zK\left(1+\frac{p^6}{1-zL}\right)I_{P_s}>0.
+\tag{17c}
+\]
+No higher correction enters the scene Hessian because \(DB=0\), so
+\[
+\boxed{
+D^2_{W_s}J_2[V,V]=
+2\nu zK\left(1+\frac{p^6}{1-zL}\right)
+\left\|(I-P_s)VP_s\right\|_{\rm HS}^2\ge0.
+}
+\tag{17d}
+\]
+It is STRICTLY positive on all actual scene cut-mixing directions; block-preserving scene rotations are exact unexcited orbit directions, not spectral modes thrown away. At the same vacuum root the mixed geometric/scene Hessian vanishes because \(DB|_I=0\) and \(D_eP_w=0\). Thus the joint Hessian is **block diagonal** there between the full weighted-star geometry and the genuine independent scene cut-mixing sector. At fixed \(\nu,K,z\) the scene curvature coefficient is computable; no new stabilizing scene potential is inserted.
+
+The same scene choice still has **NONZERO GR sensitivity** when the geometry moves:
+\[
+g'_0(p^2)=\frac{528\cdot4z(1-2p^2)}
+                    {1-4zp^3}
+         =\frac{2112zp^3}{1-4zp^3}>0.
+\tag{17e}
+\]
+Hence the ORIGINAL full nonflat pp-wave with all independent interior \(16+24\) star rows zero, combined with the full unperturbed identity scene word, gives an **exact joint vacuum stationary point of the SAME complete two-tick feedback functional on geometry × scene-unitary variables**, with a strictly stable scene mixing sector. This is a sharper positive conclusion than fixing B as an arbitrary supplied matrix. All scene complements and AF spectators remain physically present. Operator \(J_2\) does not depend on an independently chosen preparation density, so its preparation variations are zero for this specific price term.
+
+The statement is **not** that the older physically fixed autonomous scene word must be replaced by identity; selecting a new executable scene word changes the full historical process and its costs. Nor does this make the separate \(H_{\rm v8}+R_{\rm matter}\) terms vanish. It gives a concrete stationary scene branch of the actual \(J_2\) formula that can now be consumed in a legitimate joint-programme selection, rather than assuming an unproved generic \(D_BJ_2=0\).
+
+## 5. Full nonlinear spin-2 bootstrap is ALREADY closed on this geometric carrier, at finite n
+
+Equation (5) is an equality of functions on a **full open field domain**, so it automatically matches EVERY higher variation, not just quadratic or cubic Taylor coefficients. At any actual common critical point y0, write \(\mathcal F(y)=(\widetilde e,U)\), \(L=D\mathcal F_{y0}\). Then
+\[
+\boxed{H_{\cal A}(u,v)=c\,H_{\cal P}(Lu,Lv).}
+\tag{18}
+\]
+Consequently the **FULL coframe-plus-link Hessian**, its stationary/gauge kernel (transported through the actual tangent map), and its inertia agree with those of the original finite \(\star\) theory up to this invertible field-coordinate change. A metric-only Schur matrix at *frozen original coframe* need NOT agree entrywise without transporting the operational metric readout: \(D_U\widetilde e\) generally does not vanish. The vacuum on-shell metric DOES agree pointwise by (11). This is the precise nonlinear spin-2 equivalence, not a claim that a bare untransported lattice symbol is unchanged. The \(t^2(df)^2\) terms that appear when AF entropy is expanded directly are **not new independent graviton interactions**; they are precisely the Hessian terms generated by the invertible radial reparameterization.
+
+The cubic vertex, at the same stationary background, satisfies the **exact** relation
+\[
+\boxed{\begin{aligned}
+D^3{\cal A}(u,v,w)=c\big[
+&D^3{\cal P}(Lu,Lv,Lw)\\
+&+H_{\cal P}(D^2\mathcal F(u,v),Lw)
+ +H_{\cal P}(D^2\mathcal F(u,w),Lv)
+ +H_{\cal P}(D^2\mathcal F(v,w),Lu)\big].
+\end{aligned}}
+\tag{19}
+\]
+No \(D^3\mathcal F\) term survives because \(D{\cal P}(y_0)=0\). The three explicit Hessian-exact additions are exactly the local-field-redefinition terms allowed by nonlinear spin-2 bootstrap. Quartic and ALL later identities follow by differentiating the SAME exact functional composition (5); there is **no uncomputed independent quartic completion** for this constructed gravity sector.
+
+The target of [strategic §7.1–7.3](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md) is the full native-price spin-2 Ward/Schur germ. Equations (18)–(19) **solve its all-order self-interaction algebra for the displayed AF gravity subprogram**, consuming the already proved selected \(\star\) quadratic Fierz-Pauli/Einstein Schur owner. They do NOT infer that a different full128 literal programme or independent native matter has the same Hessian from matching one spectrum. On the continuum smooth chart the selected star tends to the full nonlinear Lorentz Palatini functional; its 24 spin-connection equations yield torsion zero and its tetrad equations yield all TEN nonlinear vacuum Einstein rows for the density/coframe variable of that limit. Equation (11) removes the Phi-radial dressing only. For nonconstant positive weights the source-compatible coframe is sqrt(w/barw) times the raw coframe, as proved in the [density/CAR owner](A4D_DENSITY_DRESSED_CAR_EINSTEIN_METRIC_2026_10_18.md). Torsion zero and Einstein equations in the raw-original metric additionally require constant weights, or a controlled refinement whose relative weights tend to a constant in C2; that premise is not inferred from (11).
+
+### 5.1. Direct native Julia/golden execution transfers the **cubic** Einstein vertex, not only the first source
+
+This is a **positive operational consumer** of an already constructed native source chain, not a geometric oracle. [Actual full-CAR operator reconstruction §§8.4–8.5](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md) recovers all four coframe legs and the original proper Lorentz links from the actual full16 raising/Julia entries \(X_r=C(u_r)\Lambda M_r\), even at the pp-wave's NULL u-leg. The map admits a smooth left inverse on the full nondegenerate bounded window, with complete 16+24 jets and actual moving-clock/observer data. In particular, **the inserted f_x of (1) is an explicitly computable smooth function of existing Julia queries**, not an external \(R\)- or \(G_{\mu\nu}\)-oracle.
+
+[Native coherent query construction §8.6](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md) supplies a word realization of the required golden angle \(\theta_x=\arcsin[p\sqrt{1+t^2f_x}]-\arcsin p\) by finite entry-polynomial operations, real flag rotations, and addressed Julia/G/CNOT controls. It keeps the entire query/control complement, CAR16, full reference128 and paid work blank as a complete output; no intermediate postselection/tomography is used. Its published C² polynomial/Trotter approximation extends to **C³ on any fixed compact strict-interior chart**: the same rational maps, square roots and \(\arcsin\) are analytic there, polynomial approximation is uniform through three derivatives, and a product of N steps with uniformly bounded derivatives through order3 has a one-step C³ defect O(N^-2) and total C³ defect O(N^-1). Constant control compilation then requires the original native C³ word/source estimate, not new field-dependent angles.
+
+For the actual two-tick operator feedback, [§6.19 (13ay)–(13ba)](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md) proves the all-data/full-work RETURN-CUT bound, with \(r\) the true full return rank and \(\epsilon\) the **whole-output** C³ operator deviation:
+\[
+\boxed{
+\|J_{2,\epsilon}-J_{2,\rm ideal}\|_{C^3}
+\le \frac{2^{14}zrL^6}{(1-z)^4}\epsilon .
+}\tag{20a}
+\]
+For the actual AF×scene carrier \(r=1056\nu K\) and the exact field-independent GR coupling normalizer \(a_N=\nu Kp^2t^2g'_B(p^2)>0\), **both AF multiplicity and spectator reference multiplicity cancel**:
+\[
+\boxed{
+\left\|\frac{J_{2,\epsilon}-J_{2,\rm ideal}}{a_N}\right\|_{C^3}
+\le \frac{2^{14}\cdot1056\,z L^6}
+           {(1-z)^4p^2t^2g'_B(p^2)}\,\epsilon .
+}\tag{20b}
+\]
+All 528 real scene return modes and 22448 scene complement positions remain as in the actual owner; work leakage is in \(I-P\). If an additional work-blank return is NOT part of the admissible physical test, its cost/cut must be derived and (20a) is not applied to an unchanged cut.
+
+Combine (20b) with the **exact action equality** (5), not with an approximate curvature coefficient: on every fixed finite native operator chart the ideal graviton Hessian AND cubic native feedback response are those of the original Lorentz star in an invertible local field coordinate; the actually compiled query's first three source jets converge to that exact nonlinear relation with error controlled by (20b). This gives a concrete FULL16 all-ten spin-2 cubic construction using only the already-owned indexed native Julia/golden apparatus **under its stated addressed-access/work-return contract**. At any fixed finite lattice, a prescribed \(\epsilon\) sufficiently small compared with \(t^2\) controls the cubic response; after a chosen spatial reconstruction one must further multiply its genuine raw norm factors. This is a compiled-source theorem, not permission to omit programme overhead or claim exact compiled stationary roots without the actual full-field inverse/gauge conditions.
+
+## 6. An exact finite GR *observable*: both physical wave polarizations from the SAME nonflat joint root
+
+Use the already-owned FULL-INTERIOR exact stationary pp-wave in [A4D_AF_STAR_FULL_LATTICE_STATIONARY_FAMILY_2026_10_17.md](A4D_AF_STAR_FULL_LATTICE_STATIONARY_FAMILY_2026_10_17.md). Its null tetrad has
+\[
+H(x,y)=A(x^2-y^2)+2Bxy,\quad A^2+B^2>0,\qquad
+P_{ux}=\exp[-h^2(A N_2+B N_3)],\
+P_{uy}=\exp[-h^2(B N_2-A N_3)],
+\tag{20}
+\]
+with \(N_i=E_{-,i}+E_{i,+}\), \(N_i^3=0\), \(N_2N_3=N_3N_2=0\). Relative to the actual coframe's null basis, \(N_i|+\rangle=|i\rangle\), \(N_i|i\rangle=|-\rangle\). Thus their full holonomies give **EXACT finite**, not limiting or linearized, transverse changes
+\[
+\begin{aligned}
+P_{ux}|+\rangle
+ &=|+\rangle-h^2(A|2\rangle+B|3\rangle)
+   +\tfrac12h^4(A^2+B^2)|-\rangle,\\
+P_{uy}|+\rangle
+ &=|+\rangle-h^2(B|2\rangle-A|3\rangle)
+   +\tfrac12h^4(A^2+B^2)|-\rangle.
+\end{aligned}\tag{21}
+\]
+The two \(h^{-2}\)-normalized transverse transport records reconstruct the **traceless symmetric tidal matrix**
+\[
+\boxed{
+\mathcal W_h=
+\begin{pmatrix} A&B\\B&-A\end{pmatrix},
+\quad\operatorname{tr}\mathcal W_h=0,\
+\det\mathcal W_h=-(A^2+B^2)<0,
+}\tag{22}
+\]
+with NO refinement error. In the smooth Lorentz pp-wave \(ds^2=2\,du\,dv+H\,du^2-dx^2-dy^2\), the physical Riemann tidal component is \(R_{uiuj}=-\mathcal W_{ij}\) in the owner's curvature convention; \(\operatorname{Ric}_{uu}=0\) and the two independent \(A,B\) are precisely the plus/cross gravitational-wave polarizations.
+
+This makes the finite D0 field solution physically nontrivial: zero \(\star\) scalar and a constant entropy baseline do **not** imply vanishing curvature or an unobservable flat field. The genuine based proper-Lorentz plaquette transport distinguishes \(A,B\) as operators on the retained full-vector (and hence full16 exterior) carrier. The already-owned CAR/query/transport owners provide the candidate operational interface. This is **not** a claim that reading only the scalar AF action outcomes measures the Weyl amplitude: a separate complete query using those original retained links must be genuinely admitted/paid.
+
+### Full exact nonlinear vacuum recovery at finite lattice
+
+The owned §3.2 finite Euler table proves **all 16 independent solder and 24 proper-link Euler rows** at each interior cell for (20), with the actual nonuniform golden weights and the owned half-step backward-gradient correction. Since \(f_x=0\) at EVERY cell of this family, (4) is identically \(e=\widetilde e\), and the new exact action equivalence (5) transfers these actual joint roots to BOTH price classes (A) and (B) without a t→0 or weak-field approximation. It therefore supplies a nonempty genuinely curved solution family for **the full finite geometric vacuum sector**, not merely the previous 25-parameter restricted solve. The boundary collar is held fixed and other physical preparation/scene/matter equations remain those of the corresponding owned protocol.
+
+## 7. What exactly moves the whole D0⇒GR proof forward
+
+**A full finite, all-order nonlinear gravity law is now proved for the actually constructed golden-AF star geometry.** The proof consumes the selected Lorentz insertion, literal complete AF effects, the ORIGINAL five-outcome Book likelihood or existing full AF×scene feedback, and genuinely independent lattice coframe/link variations. Its nonlinear field equations are *exactly* the original selected finite WEIGHTED Palatini equations for EVERY fixed admissible t. The on-shell Phi-radial map is the identity; nonconstant weights still require the separate density/coframe normalization. Full 24-component Cartan yields \(T=0\) and the complete ten-field vacuum Einstein system for that source-compatible coframe in the smooth geometric limit. A raw-original metric conclusion requires the additional constant-weight condition stated in section 5. The exact nonflat two-polarization lattice pp-wave makes this more than a formal flat graviton action.
+
+The remaining physically global interface is to identify the chosen full D0 scene/clock/CAR/reference history price and its native operation generator with this complete AF geometric subprogram, including other whole-stack source terms. In particular the original v8 H+J+R source is NOT silently equated with either of these two actions, and matter/spin currents have their own equations. The proof is a **positive nonperturbative completion of the nonlinear spin-2 sector** of the constructed carrier; it is not the full physical D0⇒OTO theorem or the original #216 raw convergence.
+
+**No new Einstein-looking action, fitted vacuum counterterm, exotic scalar potential, freely varied controller or additional physics is declared.** The only construction is an explicit invertible field-coordinate map (4) of the one already-owned finite AF price to the independently selected and variationally accepted finite Lorentz star density.

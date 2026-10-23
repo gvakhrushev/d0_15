@@ -1,0 +1,16 @@
+{
+  "schema": "a4d-y-two-center-cartan-transport-v1",
+  "ansatz": "phase-0 K0=CY(z_x) CB(-d_x); phase-2 K0=CY(z_x)^(-1) CB(+d_x); odd K0 and spatial links identity in the matrix replay",
+  "solder": "S_f=I+(f-1)P_perp; f is positive and independent of time",
+  "generator_split": "YB=BY=0; P_perp=-Y^2/3 and P_parallel=B^2/3 are complementary projectors",
+  "phase_0_role_0_B_row": "((3*d_x^2+4)/(3*d_x^2-4))*(sum_i f(x-e_i)^2-3*f(x)^2)",
+  "sitewise_parameters": "all incident Cayley-Y and Cayley-B amplitudes are independent symbols in the exact replay; only d_x remains in the row",
+  "extension": "three independent spatial role amplitudes are checked symbolically; arbitrary sitewise spatial Y links preserve the row by disjoint Y/B support and invariance of the transverse Y-area",
+  "consequence": "on a connected periodic spatial torus, stationarity of these phase-0 rows forces f^2 to be constant by the maximum principle",
+  "scope": "exact necessary-row no-go inside the commuting Y/B Cartan ansatz only",
+  "nonclaims": [
+    "no transverse or non-Y connection correction is excluded",
+    "no global A4D task terminal is claimed",
+    "no refinement-uniform response theorem is proved"
+  ]
+}

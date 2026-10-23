@@ -23,6 +23,15 @@ measure progress by a proved substitution or a concrete changed route.
 First curved realization, uniform refinement and universal GR remain distinct
 conclusions with their own hypotheses.
 
+### Current strongest finite D0 gravity evidence (22 October 2026)
+
+The original six-based-face geometry and TWO genuine real CAR scalar components now have a [strictly certified nonflat stationary solution of ALL 42 Euler equations with the ORIGINAL unequally priced 0/10 Golden reporter](02_REGISTRY/research/sources/d0_original_unpadded42_2026-10-22/RESULT.json), not just the earlier configured equal-width/padded CQ root. It is an exact finite mathematical theorem for one specified two-cell rational collar; it neither selects the full physical Book03 H+J+R action nor supplies a mesh-uniform Einstein limit.
+
+A [new unpadded all42 full-source recovery theorem](02_REGISTRY/research/A4D_ORIGINAL_UNPADDED_0_10_FULL42_SOURCE_ROBUSTNESS_2026_10_22.md) proves the exact stationary root persists under ANY continuous additional full42 source bounded by 1e-22 on its original radius-1e-20 field cube, with uniqueness if the source is Lipschitz <=0.01. It consumes the previous completed strict interval certificate, not a new action or a new geometric root. The actual remaining Book03+clock+preparation+oldRIGHT+work residual has NOT been shown to satisfy this bound; double charging the 0/10 reporter would be wrong. Small genuine C2 corrections preserve the certified indefinite saddle, so stationarity and prospective full-field minimum must be kept distinct.
+
+**Research priority:** bind the complete actual physical execution and its independent preparation/clock/field-writing equations to this precise same-price finite root; calculate the true remaining 42-covector and test the existing source budget or a larger legitimate continuation method. Then address native PF/scale-uniform refinement and generic physical GR separately. No new pure-boost root scan or output-only detector closes these transitions.
+
+
 **Current synthesis:** [one composed route from actual records to geometry,
 complete price and gravitational response](02_REGISTRY/research/A4D_GLOBAL_RESULT_COMPOSITION_2026_10_20.md).
 The results now do more than coexist: the native CAR readout reconstructs
@@ -88,6 +97,32 @@ The specified fixed-coordinate-pairing writer has the independently
 measurable gap `dist_Q >= |Delta H|/4 >= TV/(8L)` on the primary chart.
 Its exact escape requires moving the coordinate pairing in a genuinely
 admitted joint step. This is a conditional result for that writer.
+
+### 21 October: three reconstructed results on the existing #334 carrier
+
+The [three reconstructed results](02_REGISTRY/research/A4D_THREE_RECOVERED_RESULTS_INTEGRATION_2026_10_21.md)
+restore the user's missing research from preserved texts and original owners:
+full Julia-flag readout has a polynomial local estimation budget; a finite
+paid Golden17 programme realizes an oriented mixed price source; and a
+given complete two-density price has an exact local stationary normal form
+with its nonlinear matter term retained. Its signed finite coupling matches
+the original lambda_minus exactly. The same-execution preparation, spatial
+weights, full internal sources and compulsory price selection are still
+required. New checks and independent reviews have their own provenance;
+historical missing archives/commits are not claimed recovered.
+
+### Same-execution spatial weights and complete CQ source
+
+The [new primary-family application](02_REGISTRY/research/A4D_SAME_EXECUTION_SPATIAL_WEIGHTS_AND_COMPLETE_SOURCE_2026_10_21.md)
+now closes those weight/source maps for one existing paid N=1 compiler:
+the original trace-copy counts and inverse-PF dictionary give one spatial
+coefficient for gravity and matter, even with unequal field-independent
+address costs. Its complete declared CQ source is `D_42 S=gamma1 D_42 J2`,
+with `gamma1=-12.4442926813187... !=0` and the same finite lambda_minus.
+The entropy adjoint also solves every generated bank/query/work/archive
+state equation at the same specified initial boundary. Compulsory Book03
+valuation, physical moving-query admission and genuinely independent
+upstream equations remain required; no field minimum or GR closure is claimed.
 
 ### Main integration and the next proof stage
 
@@ -557,7 +592,7 @@ For full technical specifications, advanced mathematical integrations, and Lean 
 
 - **Tracked Queue/Control Tasks**: CONTROL: 1, EXPENSIVE: 3, WORKER: 0 (Total: 4)
 - **Runtime Execution**: see open GitHub pull requests; PR number = execution ID
-- **WIP Utilization**: CONTROL: 1/2, EXPENSIVE: 0/3, WORKER: 0/10
+- **WIP Utilization**: CONTROL: 1/2, EXPENSIVE: 1/3, WORKER: 0/10
 - **Legacy Scaffolds Remaining**: 0
 - **Detailed Status Report**: [00_WORK/STATUS.md](00_WORK/STATUS.md)
 <!-- D0-WORK-STATUS:END -->

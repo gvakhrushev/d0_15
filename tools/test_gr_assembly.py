@@ -11,8 +11,10 @@ import copy
 import hashlib
 import io
 import json
+import os
 from pathlib import Path
 import subprocess
+import sys
 import tempfile
 import unittest
 from unittest.mock import patch
@@ -112,8 +114,9 @@ class AssemblyTests(unittest.TestCase):
 
     def sign_record(self, app, value):
         decision = self.root / "decisions.md"
-        previous = decision.read_text() if decision.exists() else ""
-        decision.write_text(previous + f"Assembly-Acceptance: {app['id']} {value}\n")
+        previous = decision.read_text(encoding="utf-8") if decision.exists() else ""
+        decision.write_text(previous + f"Assembly-Acceptance: {app['id']} {value}\n",
+                            encoding="utf-8", newline="\n")
         if not (self.root / ".git").exists():
             self.git("init", "-q")
         self.git("add", "decisions.md")
@@ -153,6 +156,89 @@ class AssemblyTests(unittest.TestCase):
         self.assertEqual(set(model["results"]), {"legacy:old"})
         self.assertEqual(gr.evaluate(model)["closed"], set())
         self.assertFalse(gr.evaluate(model)["goals"]["GR"])
+
+    def test_utf8_contract_digests_and_render_ignore_system_encoding(self):
+        self.contract["interfaces"]["native"]["normalization"] = "The owner\u2019s fixed norm."
+        self.contract["obligations"][0]["statement"] = "Preserve the owner\u2019s conclusion."
+        self.add_result()
+        application = self.sign(self.add_app())
+        self.add_result(name="negative", outcome="negative")
+        question = gr.work_digest(self.model(), self.contract["task_bindings"][TASK])
+        attempt = {
+            "id": "dead", "result": "negative", "interface": "native", "work_key": "question-a",
+            "scope": "The owner\u2019s exact hypothesis class",
+            "reopen_when": "A proved change of hypothesis",
+            "question": {"statement": "Prove A", "assumes": []},
+            "question_digest": question, "review": {"state": "proposed"},
+        }
+        self.intake["attempts"].append(attempt)
+        self.sign_attempt(attempt)
+        title = "\u0438\u0441\u0442\u043e\u0447\u043d\u0438\u043a"
+        self.contract["synthesis"] = [{
+            "id": "source", "title": title, "contribution": "The owner\u2019s conditional input.",
+            "next_question": "Supply the physical map", "consumers": ["A"], "results": ["r"],
+        }]
+        model = self.model()
+        expected_view = gr.overview(model)
+        expected_reading = gr.gr_synthesis.render(gr.gr_synthesis.read(self.root))
+
+        # Real UTF-8 characters are essential: json.dumps' default ASCII escapes
+        # hide this bug even on a Windows host with a non-UTF-8 locale.
+        for name, data in [("contract.json", self.contract), ("applications.json", self.intake)]:
+            (self.directory / name).write_bytes(json.dumps(data, ensure_ascii=False).encode("utf-8"))
+        original_open = Path.open
+
+        def cp1251_open(path, mode="r", buffering=-1, encoding=None, errors=None, newline=None):
+            # Path.read_text resolves an omitted encoding to "locale" on Python
+            # 3.11; direct Path.open calls leave it as None.
+            if "b" not in mode and encoding in {None, "locale"}:
+                encoding = "cp1251"
+            return original_open(path, mode, buffering, encoding, errors, newline)
+
+        def cp1251_text_encoding(encoding, stacklevel=2):
+            return "cp1251" if encoding in {None, "locale"} else encoding
+
+        with patch.object(io, "text_encoding", cp1251_text_encoding), \
+             patch.object(Path, "open", cp1251_open):
+            # Exercise the hostile default even when Python UTF-8 mode is on.
+            self.assertIn("owner\u0432\u0402\u2122s",
+                          (self.directory / "contract.json").read_text())
+            loaded = gr.load(self.root)
+            self.assertEqual(loaded["contract"]["interfaces"], self.contract["interfaces"])
+            self.assertEqual(loaded["attempts"]["dead"]["question_digest"], question)
+            self.assertTrue(loaded["attempts"]["dead"]["_accepted"])
+            self.assertTrue(loaded["applications"]["app"]["_accepted"])
+            self.assertEqual(gr.application_digest(loaded, loaded["applications"]["app"]),
+                             application["review"]["digest"])
+            reading = gr.gr_synthesis.read(self.root)
+            self.assertEqual(reading["pieces"][0]["title"], title)
+            self.assertEqual(self.cli("render")[0], 0)
+            self.assertEqual(self.cli("render", "--check")[0], 0)
+            self.assertEqual((self.directory / "VIEW.md").read_text(encoding="utf-8"), expected_view)
+            self.assertEqual((self.directory / "SYNTHESIS.md").read_text(encoding="utf-8"), expected_reading)
+
+    def test_cli_emits_utf8_json_and_errors_with_cp1251_stdio(self):
+        title = "\u0438\u0441\u0442\u043e\u0447\u043d\u0438\u043a \u2192 \u0434\u0435\u0439\u0441\u0442\u0432\u0438\u0435"
+        self.contract["synthesis"] = [{
+            "id": "source", "title": title, "contribution": "The owner\u2019s conditional input.",
+            "next_question": "Supply the physical map", "consumers": ["A"], "results": [],
+        }]
+        self.save()
+        environment = dict(os.environ, PYTHONIOENCODING="cp1251")
+        command = [sys.executable, str(Path(gr.__file__).resolve()), "--repo-root", str(self.root)]
+        result = subprocess.run(command + ["--json", "puzzle", "source"], env=environment,
+                                capture_output=True, timeout=20)
+        self.assertEqual(result.returncode, 0, result.stderr.decode("utf-8", errors="replace"))
+        data = json.loads(result.stdout.decode("utf-8"))
+        self.assertEqual(data["pieces"][0]["title"], title)
+        self.assertEqual(data["pieces"][0]["contribution"], "The owner\u2019s conditional input.")
+        self.assertEqual(result.stderr, b"")
+
+        # Argument-parser failures must use the same encoding as successful output.
+        result = subprocess.run(command + [title], env=environment, capture_output=True, timeout=20)
+        self.assertEqual(result.returncode, 2)
+        self.assertIn(title, result.stderr.decode("utf-8"))
+        self.assertEqual(result.stdout, b"")
 
     def test_missing_historical_migration_is_rejected(self):
         self.intake["migration"] = {}
@@ -425,7 +511,7 @@ class AssemblyTests(unittest.TestCase):
         self.add_result()
         app = self.sign(self.add_app())
         decision = self.root / "decisions.md"
-        decision.write_text("PASS every fixture\n")
+        decision.write_text("PASS every fixture\n", encoding="utf-8", newline="\n")
         self.git("add", "decisions.md")
         self.git("-c", "user.name=Fixture", "-c", "user.email=fixture@example.invalid", "commit", "-q", "-m", "Unrelated receipt")
         app["review"]["decision"]["ref"] = self.git("rev-parse", "HEAD").strip()

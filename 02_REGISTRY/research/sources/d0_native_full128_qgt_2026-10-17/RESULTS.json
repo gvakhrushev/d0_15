@@ -1,0 +1,48 @@
+{
+  "schema": "d0-native-full128-qgt-polar/1",
+  "checked": "2026-10-17",
+  "carrier": "original golden controller 2 ports x 64 coefficients/labels; full16 eight-momentum source fixture reused",
+  "qgt": {
+    "source_git_blob": "a78d45b392c2181e8774fd96c7d6038f73da3da9",
+    "stdout_sha256": "56cf72a9bc95599562121f9c6a7e82dea5f85ba6f6d7b18c5cb4e1ec41b30994",
+    "exact_controls": 43,
+    "status": "PASS",
+    "python": "normal and -O byte identical",
+    "native_shell_f": "226/4225",
+    "native_shell_f_prime": "1736/4225",
+    "native_shell_self_f_second": "41/25",
+    "native_shell_inf_source_per_eigen": 25.75141919001683,
+    "native_shell_inf_qgt_per_eigen": 51.39158512892472
+  },
+  "polar": {
+    "source_git_blob": "2002feb9deaa29f1237362790341b27e509c999c",
+    "stdout_sha256": "ae093f35e6e4593ad9afa762c989a43bdefa4686b9e7e760882b839bf1aea2f7",
+    "exact_controls": 22,
+    "status": "PASS",
+    "python": "normal and -O byte identical",
+    "class_fixture": "SO(3) noncommuting isometry, not selected native SELECT",
+    "forward_plaquette_second_jet": "p^3 [X,Y]",
+    "berry_curvature": "-p^3 [X,Y]",
+    "curvature_rank": 2
+  },
+  "wrong_formula_controls": [
+    {
+      "mutation": "flip forward polar holonomy sign",
+      "status": "REJECTED",
+      "error": "golden Berry-polar holonomy (minus Berry F)"
+    },
+    {
+      "mutation": "replace p^3 tensor coefficient by p^2",
+      "status": "REJECTED",
+      "error": "strict golden tangent coercivity"
+    }
+  ],
+  "limitations": {
+    "physical_Cost_minus_Info_selected": false,
+    "coherent_comparison_admitted": false,
+    "spacetime_Lorentz_metric_from_QGT": false,
+    "original_all_ten_h_minus_2_comparator": false,
+    "nonempty_exact_nonflat_joint_refinement": false,
+    "remote_CI_claimed": false
+  }
+}

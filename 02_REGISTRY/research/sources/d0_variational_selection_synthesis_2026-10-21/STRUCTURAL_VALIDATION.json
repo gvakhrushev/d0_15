@@ -1,0 +1,57 @@
+{
+  "scope": "Research-only additive packet and existing-owner route notes; no scientific acceptance promotion",
+  "validation_parent_ref": "fb0f45b7af61dbc9836a69fb0ce2f4c31e94e826",
+  "final_checks": [
+    {
+      "command": "python3 tools/validate_repo.py",
+      "exit_code": 0,
+      "stdout": "claims=889 assumptions=31 aliases=58 formal_support=183 lean_closure=918\nPASS warnings=0\n"
+    },
+    {
+      "command": "python3 tools/validate_work.py",
+      "exit_code": 0,
+      "stdout": "PASS work_validation: active work plane clean and enforced\n"
+    },
+    {
+      "command": "python3 tools/render_work_status.py --check",
+      "exit_code": 0,
+      "stdout": "PASS work_views stale=0\n"
+    },
+    {
+      "command": "python3 tools/validate_agent_protocol.py",
+      "exit_code": 0,
+      "stdout": "PASS agent_protocol: cold-start task metadata enforced\n"
+    },
+    {
+      "command": "python3 tools/gr_assembly.py check",
+      "exit_code": 0,
+      "stdout": "{\n  \"active_result_limit\": 54,\n  \"active_results\": 54,\n  \"discharged\": 5,\n  \"obligations\": 22,\n  \"results\": 98,\n  \"scientific_promotion\": false,\n  \"valid\": true\n}\n"
+    },
+    {
+      "command": "Targeted Markdown file links in synthesis, README, frame and late applications/review",
+      "exit_code": 0,
+      "result": "29 local file links resolve"
+    },
+    {
+      "command": "git diff --cached --check on authored paths; exclude only the two byte-pinned immutable input roots",
+      "exit_code": 0,
+      "stdout": ""
+    }
+  ],
+  "observed_and_resolved": [
+    "The partial clone initially lacked published pinned Git evidence at77d3ab6 and4b78c41; those immutable source blobs were fetched without changing pins.",
+    "Concurrent2961dc6e had modified a pinned historical Brinkmann snapshot, producing an evidence SHA256 mismatch.",
+    "The source owner's subsequent44e46cfd restored that immutable snapshot while preserving the live sign correction. It was fast-forwarded unchanged; no historical receipt or acceptance rule was rewritten by this synthesis.",
+    "Unfiltered staged whitespace check exits2 solely because the unchanged late_inputs original-cell theorem line78 retains an upstream trailing space. Its exact original bytes, SHA256 and Git blob match the declared c7 source; no frozen scientific evidence was rewritten. All authored paths pass the separately recorded whitespace check."
+  ],
+  "unchanged_expensive_suites_replayed": false,
+  "GR_closed": false,
+  "immutable_input_whitespace_observation": {
+    "command": "git diff --cached --check",
+    "exit_code": 2,
+    "path": "late_inputs/02_REGISTRY/gr_assembly/sources/d0_original_golden_moving_mean_j2_2026-10-19/theorem.md",
+    "line": 78,
+    "source_sha256": "b7a068874351e54694c093ed67d14f488a57287ad091cd77c3ff65ef33658fe8",
+    "source_bytes_preserved": true
+  }
+}

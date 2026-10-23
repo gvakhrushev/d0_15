@@ -1,0 +1,61 @@
+{
+  "status": "PASS",
+  "checks": 22,
+  "labels": [
+    "golden p+p2=1",
+    "golden p3=p-p2",
+    "golden p6+4p3=1",
+    "G orthogonal",
+    "loop amplitude dark=p3",
+    "loop amplitude bright=-2a p",
+    "full two-port loop unitary",
+    "full loop probability identity",
+    "identity loop full return",
+    "positive path sum p+p2=1",
+    "destructive path sum p-p2=p3",
+    "raise destructive cost by 1 yields p2",
+    "price 3 to 2 under added branch cost",
+    "signed first source eta0=phi2",
+    "signed first source eta1=-phi",
+    "signed source sums to unity",
+    "negative response to greater destructive cost",
+    "orthogonal memory norm nonzero",
+    "normalizer normalized path weight sum",
+    "quaternion generators orthogonal",
+    "Q8 noncommutative commutator is minus identity",
+    "common orthogonal memory change preserves represented norm"
+  ],
+  "gauge": "common memory unitary leaves norm and source invariant",
+  "dark_amplitude": [
+    "-1",
+    "0",
+    "2",
+    "0"
+  ],
+  "bright_amplitude": [
+    "0",
+    "0",
+    "0",
+    "-2"
+  ],
+  "golden_weight_cost_response": {
+    "cost1": [
+      "2",
+      "0",
+      "1",
+      "0"
+    ],
+    "cost2": [
+      "-1",
+      "0",
+      "-1",
+      "0"
+    ]
+  },
+  "port_probabilities": {
+    "dark": "p^6",
+    "bright": "4p^3"
+  },
+  "correct_scope": "selected represented detector port; not the full Q8 regular-memory action, complete Book03 valuation or physically selected cut",
+  "GR_closed": false
+}

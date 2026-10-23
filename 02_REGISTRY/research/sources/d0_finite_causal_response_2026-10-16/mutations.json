@@ -1,0 +1,26 @@
+{
+  "expected_receipts_changed": false,
+  "mutations": [
+    {
+      "failed_at": "actual_reverse_block_adjoint",
+      "mutation": "wrong_adjoint_in_full_D_jet",
+      "verdict": "REJECTED_MATHEMATICALLY"
+    },
+    {
+      "failed_at": "exact_full16_Delta1_norm",
+      "mutation": "drop_half_squared_operator_jet",
+      "verdict": "REJECTED_MATHEMATICALLY"
+    },
+    {
+      "failed_at": "actual_complete_price_divided_difference",
+      "mutation": "remove_global_partition",
+      "verdict": "REJECTED_MATHEMATICALLY"
+    },
+    {
+      "failed_at": "actual_complete_price_divided_difference",
+      "mutation": "wrong_record_power",
+      "verdict": "REJECTED_MATHEMATICALLY"
+    }
+  ],
+  "schema": "d0-finite-causal-mutations/1"
+}

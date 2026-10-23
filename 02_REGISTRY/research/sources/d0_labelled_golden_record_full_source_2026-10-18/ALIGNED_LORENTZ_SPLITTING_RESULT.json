@@ -1,0 +1,45 @@
+{
+  "status": "PASS",
+  "checks": [
+    "literal_source_sha256",
+    "only_literal_creator_definition_loaded",
+    "actual_full16_ACDB_order",
+    "normalized_four_role_Walsh",
+    "all_parameter_values_are_true_Lorentz_jets",
+    "actual_scalar_energy_shell",
+    "Lorentz_role_0",
+    "Lorentz_role_1",
+    "Lorentz_role_2",
+    "Lorentz_role_3",
+    "Hermitian_projected_native_splitting",
+    "same_sign_energy_projection",
+    "retains_both_CAR_parities",
+    "zero_full16_trace",
+    "full_particle_hole_unitary",
+    "particle_hole_creator_0",
+    "particle_hole_creator_1",
+    "particle_hole_creator_2",
+    "particle_hole_creator_3",
+    "antiunitary_flips_actual_splitting",
+    "exact_native_even_determinant",
+    "exact_root_interval_left",
+    "exact_root_interval_right",
+    "nonsingular_control_at_x_zero"
+  ],
+  "input_sha256": {
+    "02_REGISTRY/research/certificates/a4d_native_curved_soldered_heat.py": "bf13f57c902da0005634ae6834c0b4e3ffd2df1aa196a61ebc0ff3dc0351c7da"
+  },
+  "grid": "L=4, all8 first-shell momenta, CAR16, reference128",
+  "positive_axis0_parameter": "K02+K03+x(R12+R13)",
+  "even_determinant": "(x**4 + 10*x**3 - 10*x**2 - 2*x + 5)**2/16",
+  "kernel_parameter_interval": [
+    "-1",
+    "-1/2"
+  ],
+  "scope": "Refutes state-independent six-link splitting coercivity; not finite-root or GR no-go.",
+  "full_joint_root_proved": false,
+  "physical_GR_proved": false,
+  "python": "3.9.6",
+  "sympy": "1.14.0",
+  "old_research_or_Lean_suite_replayed": false
+}

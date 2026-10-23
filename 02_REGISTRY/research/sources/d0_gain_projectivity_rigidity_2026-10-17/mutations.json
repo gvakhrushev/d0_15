@@ -1,0 +1,17 @@
+[
+  {
+    "mutation": "wrong_exponent",
+    "rejected_at": "nontrivial_normalized_local_law",
+    "result": "REJECTED_BY_CHANGED_MATHEMATICS"
+  },
+  {
+    "mutation": "drop_return_normalizer",
+    "rejected_at": "incomplete_cut_keeps_actual_normalizer",
+    "result": "REJECTED_BY_CHANGED_MATHEMATICS"
+  },
+  {
+    "mutation": "drop_birth_constant",
+    "rejected_at": "true_birth_second_source",
+    "result": "REJECTED_BY_CHANGED_MATHEMATICS"
+  }
+]

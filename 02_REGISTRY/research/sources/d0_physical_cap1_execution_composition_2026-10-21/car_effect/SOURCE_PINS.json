@@ -1,0 +1,20 @@
+{
+  "input_commit": "92c00ccbf39e6e21e4383f7a7b573ab7c7c6f1be",
+  "sources": [
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_RECORD_METRIC_CHRONOLOGY.md",
+      "sha256": "601e5bb9203789a66ad2a945aad30da92b6233ac40417d54c6b47c95dc43536b",
+      "git_blob": "fda1294b8d9794a62b86faaa19e3cc1a459e031d"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_record_metric_chronology_check.py",
+      "sha256": "16929d026206ee69e126484ed2ac7b1dfd2537c1e50c0fc4c4293408caf58527",
+      "git_blob": "193589a342f4ae843eefdbf6c950d6cd8ef8faa7"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_record_metric_chronology_certificate.json",
+      "sha256": "0b91e13d823568898a006dd468f9963ffbbc1949f0976a21e8530af465ecfbbe",
+      "git_blob": "d3a5ef420916a11dd2a277d4c0563a51fb75d2a1"
+    }
+  ]
+}

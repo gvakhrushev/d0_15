@@ -1,0 +1,115 @@
+{
+  "status": "PASS",
+  "source_head": "20d976647fa52e247d15139d3f4f14351f175b70",
+  "date": "2026-10-20",
+  "runs": [
+    {
+      "script": "check_full_record_tangent.py",
+      "exit_code": 0,
+      "stdout": "{\n  \"status\": \"PASS\",\n  \"one_trial_overlap\": \"1-2t^2\",\n  \"stopped_overlap\": \"1-2t^2/(1-c alpha0)\",\n  \"stopped_QFI\": \"16/q * dt tensor dt\",\n  \"reverse_KL_leading\": \"8 t^2/(q ln(phi))\",\n  \"forward_KL\": \"infinite for small t!=0, dirty support retained\",\n  \"stationary_field_Hessian_of_matched_information\": \"zero\",\n  \"arbitrary_smooth_record_value_Hessian\": \"c H_t\",\n  \"scope\": \"fixed-input cleaned whole-J2 output; no moving upstream programme record\"\n}\n",
+      "sha256": "85f5dd48323f8bd440a646477ebf7ae1581ab30c2f00a0b8c35792f5278476ac"
+    },
+    {
+      "script": "check_finite_cap_matched_info.py",
+      "exit_code": 0,
+      "stdout": "{\n  \"status\": \"PASS\",\n  \"finite_caps_checked\": [\n    1,\n    2,\n    3,\n    7,\n    12\n  ],\n  \"overlap\": \"1-2t^2 sum_(j<N)(c alpha0)^j\",\n  \"QFI\": \"16 E_N dt tensor dt\",\n  \"reverse_KL\": \"E_N [q ln(q/alpha1^2)+(1-q)ln((1-q)/alpha0^2)]/ln(phi)\",\n  \"abort\": \"retained exactly\",\n  \"scope\": \"different capped task, no Book binding\"\n}\n",
+      "sha256": "2112d0ef1e22928c898fa52e8438d10f4e4e2ba9e2a10f4a1c86a3c3cbde8111"
+    },
+    {
+      "script": "check_terminal_calibration_bridge.py",
+      "exit_code": 0,
+      "stdout": "PASS original complete Golden cleanup and local terminal response\nPASS exact original ridge field source and terminal-adjoint cancellation\nPASS failed logical-preparation lift rank 0 -> 1\nPASS any source-preserving live compensation cancels the field source\n",
+      "sha256": "cab17bf739bcf857e79e6c83c9a0fbef4fb92d5dd7915d992b3f24f18422067c"
+    },
+    {
+      "script": "check_equation_equivalence.py",
+      "exit_code": 0,
+      "stdout": "PASS: exact matrix equivalence, curl/kernel, ridge cancellation, Schur, same-slice native CAR information and threshold\n",
+      "sha256": "9739bf13bfb02dda6ea3c6c72e6f78145459ec2ffccb34042b4c187698de0450",
+      "note": "Initial input run; final changed input separately rerun below."
+    }
+  ],
+  "final_changed_checker": {
+    "script": "check_equation_equivalence.py",
+    "sha256": "00eba64b158a80120d052c95bf95833c8ee23c7907bcfe546f1c77ea6d0492d8",
+    "exit_code": 0,
+    "stdout": "PASS: exact matrix equivalence, curl/kernel, ridge cancellation, Schur, same-slice native CAR information and threshold\n",
+    "note": "Rerun once after explicit REST/null transport and all-address normalization were added; other three checkers unchanged."
+  },
+  "scope": "Exact algebra controls and independently reviewed analytical proofs; no physical Book binding, full-field acceptance, assembly status, refinement or Lean build claimed.",
+  "runtime": {
+    "python": "3.9.6",
+    "executable": "/Library/Developer/CommandLineTools/usr/bin/python3",
+    "sympy": "1.14.0",
+    "platform": "macOS-26.5.1-arm64-arm-64bit"
+  },
+  "artifacts": [
+    {
+      "path": "EQUATION_EQUIVALENCE_AND_RECORD_TEST.md",
+      "sha256": "45cfe4eb454a11433a08168fd20797ff861dca67ce9147dbf7f3a8c341d6de77"
+    },
+    {
+      "path": "FINITE_CAP_MATCHED_INFO.md",
+      "sha256": "86d061b77205bfb2cfef1a8ae6f1bfcaa00354c98eaafb8de8d47639c562ab06"
+    },
+    {
+      "path": "FULL_RECORD_TANGENT_AND_MATCHED_INFO.md",
+      "sha256": "9a233771fbb052057c3d3dd81b5592a67eae22b4c17ac32b17ecc24d385d585b"
+    },
+    {
+      "path": "INTEGRATION.md",
+      "sha256": "161a2efae425ab1dbd99b98daa4d5766acdc7e5b6a2fff69537818c7361bb2df"
+    },
+    {
+      "path": "README.md",
+      "sha256": "82a4ad4b944b5a8c652cad3d778c0dacec0e0297cb7a6c2fe6d9184696813f89"
+    },
+    {
+      "path": "REVIEW_EQUATION_EQUIVALENCE.md",
+      "sha256": "cb3db9f52d3456f7bce340b6f5753c013755e9776a7a5247376e785ec537de63"
+    },
+    {
+      "path": "REVIEW_FULL_RECORD_TANGENT.md",
+      "sha256": "e9bbd07817cb3fcc230b4f7ae98d5ed6751369d6cbf9e010d79545354939da6b"
+    },
+    {
+      "path": "REVIEW_NATIVE_CAR_SADDLE_PROBE.md",
+      "sha256": "33833de46ac5d5e2f0a79098d3ad0857e951f8eb04026e84b0be4d11df30d1e0"
+    },
+    {
+      "path": "REVIEW_STATIONARY_EXECUTION_BRIDGE.md",
+      "sha256": "8bb78d4437719bc3e30cbf38d45c7382ed073a88d536760f05b84480191fe5bb"
+    },
+    {
+      "path": "SOURCE_PINS.json",
+      "sha256": "e117116535a926c3b86ce3302f170576936add18d5077467321426062a8460d0"
+    },
+    {
+      "path": "STATIONARY_EXECUTION_BRIDGE.md",
+      "sha256": "7ff34c816018907410c8bd5854cfde6cfbb89de8880823120d981f0a53f0942f"
+    },
+    {
+      "path": "check_equation_equivalence.py",
+      "sha256": "00eba64b158a80120d052c95bf95833c8ee23c7907bcfe546f1c77ea6d0492d8"
+    },
+    {
+      "path": "check_finite_cap_matched_info.py",
+      "sha256": "2112d0ef1e22928c898fa52e8438d10f4e4e2ba9e2a10f4a1c86a3c3cbde8111"
+    },
+    {
+      "path": "check_full_record_tangent.py",
+      "sha256": "85f5dd48323f8bd440a646477ebf7ae1581ab30c2f00a0b8c35792f5278476ac"
+    },
+    {
+      "path": "check_terminal_calibration_bridge.py",
+      "sha256": "cab17bf739bcf857e79e6c83c9a0fbef4fb92d5dd7915d992b3f24f18422067c"
+    }
+  ],
+  "integrator_review": [
+    "Read and checked four proof/check pairs and four independent receipts.",
+    "Finite-cap general overlap and reverse-KL geometric-sum derivations checked directly; explicit abort and dirty support retained.",
+    "Source pins match 19 consumed inputs at 20d97664; three concurrent owners at 71c7c1f3 reconciled separately.",
+    "Final C3 prose qualifier added after review; corresponding checker bytes unchanged and no additional rerun required.",
+    "All real new packet Markdown links resolve; no historical proof/check/receipt overwritten."
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "checker_sha256": "966d4e564790aaf5be24d8c7a2a1ec6d851a1e60d49776890fc263387dc79e2d",
+  "environment": {
+    "numpy": "2.3.5",
+    "python": "3.13.5",
+    "scipy": "1.17.0",
+    "sympy": "1.14.0"
+  },
+  "mutations": [
+    {
+      "decisive_error": 0.0004806024263229947,
+      "name": "omit_paid_initial_boundary",
+      "property": "actual two-round paid boundary omitted",
+      "rejected": true
+    },
+    {
+      "decisive_error": 0.062227889438468964,
+      "name": "wrong_entropy_gradient_sign",
+      "property": "full matrix entropy gradient disagrees with its value differential",
+      "rejected": true
+    },
+    {
+      "decisive_error": 0.41310800605258274,
+      "name": "collapse_retained_horizon",
+      "property": "chronological two-round map collapsed to one round",
+      "rejected": true
+    },
+    {
+      "decisive_error": 0.005920040854617775,
+      "name": "erase_finite_entropy_orbit_source",
+      "property": "finite retained entropy source is missing on the protected-RIGHT orbit",
+      "rejected": true
+    }
+  ],
+  "normal_and_optimized_byte_identical": true,
+  "proof_sha256": "0842064ccb7a4b3192ccea00e7e411d8bea7454a83d53cf7145b6be7c8d76ffa",
+  "read_only_expected_outputs": true,
+  "replays": [
+    {
+      "checks": 63,
+      "mode": "normal",
+      "status": "PASS",
+      "stdout_sha256": "7de3f36be07ad5468a7812b796a729128a4f7a32f242752986d160ef2f4a441a"
+    },
+    {
+      "checks": 63,
+      "mode": "optimized",
+      "status": "PASS",
+      "stdout_sha256": "7de3f36be07ad5468a7812b796a729128a4f7a32f242752986d160ef2f4a441a"
+    }
+  ],
+  "scope": {
+    "GR_closed": false,
+    "fresh_Lean": false,
+    "full_spatial42_root": false,
+    "independent_agent_review": false,
+    "interval_certified_numerical_minima": false,
+    "new_checks_only": true,
+    "physical_Book03_Info_selected": false,
+    "repository_wide_CI": false
+  },
+  "status": "PASS"
+}

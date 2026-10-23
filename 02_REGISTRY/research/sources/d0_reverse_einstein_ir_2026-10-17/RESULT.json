@@ -1,0 +1,99 @@
+{
+  "ADM_ten_slot_jacobian_det_fixture": "-240",
+  "adm_samples": [
+    {
+      "R3": "-2048/625",
+      "R_G": "-84616/16875",
+      "R_L": "49016/16875",
+      "difference": "14848/1875",
+      "expected": "14848/1875",
+      "fixture": "static",
+      "laplace_N": "64/125"
+    },
+    {
+      "R3": "-160/81",
+      "R_G": "-80/27",
+      "R_L": "16/9",
+      "difference": "128/27",
+      "expected": "128/27",
+      "fixture": "time_dependent",
+      "laplace_N": "8/27"
+    }
+  ],
+  "checks": [
+    "full_exterior_3D_traceE",
+    "full_exterior_3D_heat_a2",
+    "full_exterior_4D_traceE",
+    "full_exterior_4D_heat_a2",
+    "rank8_plus_rank8_spatial_heat_a2_same_rank16",
+    "spectral_signature_reflection_relative_coeff",
+    "ADM_static_nonzero_shift_lapse_spatial_gap",
+    "ADM_static_spectral_relative_curvature",
+    "ADM_static_nontrivial_Lorentz_Riemann_difference",
+    "ADM_time_dependent_nonzero_shift_lapse_spatial_gap",
+    "ADM_time_dependent_spectral_relative_curvature",
+    "ADM_time_dependent_nontrivial_Lorentz_Riemann_difference",
+    "ADM_full10_nondegenerate_jacobian",
+    "ADM_full10_exact_jacobian_determinant",
+    "native_fixed_beta_nonzero_heat_curvature_and_volume",
+    "fixed_beta_relative_Lambda_EH_ratio_no_fit",
+    "full_logdet_a2_weight_1",
+    "full_logdet_a2_weight_2",
+    "full_logdet_a2_weight_3",
+    "full_logdet_a2_weight_4",
+    "full_logdet_a2_weight_5",
+    "full_logdet_a2_weight_6",
+    "Poisson_R2.0_j1_4D_exact_thermal_identity",
+    "Poisson_R2.0_j3_4D_exact_thermal_identity",
+    "Poisson_R5.0_j1_4D_exact_thermal_identity",
+    "Poisson_R5.0_j3_4D_exact_thermal_identity",
+    "fixed_beta_thermal_flat_shape_vanishes_at_large_radius",
+    "fixed_beta_feedback_flat_shape_vanishes_at_large_radius",
+    "observer_spatial_relative_source_uniqueness"
+  ],
+  "checks_count": 29,
+  "fixed_beta_flat_shape": [
+    {
+      "R": 2,
+      "feedback_shape_contrast": "-0.000020877039598198358225",
+      "thermal_shape_contrast": "0.013859158396446816422"
+    },
+    {
+      "R": 4,
+      "feedback_shape_contrast": "-0.00021759592116471449149",
+      "thermal_shape_contrast": "0.049379643228816337036"
+    },
+    {
+      "R": 8,
+      "feedback_shape_contrast": "-1.3849881703701515717e-7",
+      "thermal_shape_contrast": "2.0887387403926804537e-6"
+    }
+  ],
+  "gate": "derive physical native 3d-relative readout and on-shell retained/observer projection with full first sources and refinement; no full GR proof",
+  "heat_coeffs": {
+    "3d_double_a2_over_R": "-4/3",
+    "3d_double_rank": 16,
+    "4d_a2_over_R": "-4/3",
+    "4d_exterior_rank": 16,
+    "Lorentz_relative_coeff": -2
+  },
+  "limitations": [
+    "positive full16 Hodge and natural measure torsionfree slice",
+    "ADM foliation and boundary",
+    "macroscopic R->infty is not original fixed-volume h->0 comparator",
+    "original native complete Cost-Info law and matter are not selected",
+    "no all-ten joint-critical nonflat sequence"
+  ],
+  "native_v8_parameters": {
+    "F2_minusLi2_minus_r": "0.000000953674998527806384522439389954078568527445",
+    "F3_minusLi3_minus_r": "0.000000953675112214796697720486533101411464107104",
+    "M": 128,
+    "beta": "0.763932022500210303590826331268723764559382",
+    "positive_curvature_EH_coefficient": "0.00000134919480533112275392747092933896838886558",
+    "r": "0.000000953675225901819135493407720000953675225902",
+    "volume_coefficient_absolute": "0.0000211934296732650404713706672226650733660191",
+    "volume_to_curvature_ratio": "15.7082058050643740107925082929139897080979",
+    "z": "2^-20"
+  },
+  "owner": "D0 Draft PR334 backward IR Einstein bridge; GEOMETRIC / CONDITIONALLY SPECTRAL, not native physical selection"
+}

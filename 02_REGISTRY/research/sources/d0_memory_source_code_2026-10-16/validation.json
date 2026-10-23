@@ -1,0 +1,51 @@
+{
+  "GR_closed": false,
+  "concurrent_faithful_classification": "0dd1853a81f5ac3f9883e09d9d2f6dd8695f030e",
+  "exact_conditions": 117,
+  "file_sha256": {
+    "A4D_MEMORY_PRESERVING_SOURCE_CODE.md": "5dc7ac901b9dd6e1fc61603fc2cea860e2ca236f834a79b9399f665b3c1f264f",
+    "README.md": "2332f45b62b982c2f8b9ae300253634fb84675292af23ce6cece19a989608e91",
+    "check_memory_source_code.py": "e805d964f27e13217a68ebf35077613e25f19a507cff91e04f789b82fe66a378",
+    "result.json": "0511253755ce12d55d12c829810079fec43fbdf3d0c8820e30c394edda534e15",
+    "test_mutations.py": "00800ff4569d6e41395c007601799ecc23e50cc59bcf4fa25eb95aeaabfb232a"
+  },
+  "independent_scientific_acceptance": false,
+  "initial_source": "ec45c8cc4085e7bce888d97439251be9e578d4ff",
+  "mutations": [
+    {
+      "actual_program_changed": true,
+      "failed_at": "full_source_pullback_0",
+      "mutation": "erase_logical_term",
+      "result": "REJECTED_MATHEMATICALLY"
+    },
+    {
+      "actual_program_changed": true,
+      "failed_at": "full_sixteen_dimensional_decoder_unitary",
+      "mutation": "drop_one_syndrome",
+      "result": "REJECTED_MATHEMATICALLY"
+    },
+    {
+      "actual_program_changed": true,
+      "failed_at": "moving_source_encoding_full_normalizer",
+      "mutation": "freeze_encoding_normalizer",
+      "result": "REJECTED_MATHEMATICALLY"
+    },
+    {
+      "actual_program_changed": true,
+      "failed_at": "five_state_density_recurrence",
+      "mutation": "amplitude_recurrence_for_density",
+      "result": "REJECTED_MATHEMATICALLY"
+    }
+  ],
+  "new_Lean_proof": false,
+  "new_native_root": false,
+  "optimized": "PASS_IDENTICAL_OUTPUT",
+  "ordinary": "PASS",
+  "python": "3.13.5",
+  "result_sha256": "0511253755ce12d55d12c829810079fec43fbdf3d0c8820e30c394edda534e15",
+  "schema": "d0-memory-code-validation/1",
+  "seconds_diagnostic": 221.3033082485199,
+  "source_sha256": "e805d964f27e13217a68ebf35077613e25f19a507cff91e04f789b82fe66a378",
+  "sympy": "1.14.0",
+  "whole_repository_replay": false
+}

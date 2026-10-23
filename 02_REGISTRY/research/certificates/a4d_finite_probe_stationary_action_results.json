@@ -1,0 +1,168 @@
+{
+  "input_head": "aed0db1782184e8318cf9b150e5134be6800b177",
+  "input_sha256": {
+    "a4d_identity_quarter_nonlinear_response_check.py": "f930d5d674b62f0c500b1aa1e28c1b3076a900899767d13b2dd2cd6a59142865",
+    "a4d_stationary_response_memory_check.py": "6f6f1e32dbf47b8878d5facf2d58a78c250d84214f7dd68dfa093964b37c2b25",
+    "a4d_j2_fixed_realization_ir_check.py": "83ab02b6fffdc504ed0685fb1be0a3ccfccca5074e753825a383318b86546296"
+  },
+  "finite_probe_memo_audit_head": "f317a3b842b2d10c5a3a381b6b03cb9850e77f66",
+  "verdict": "ALL_UV_STATIONARY_ACTION_AND_FINITE_SECANT_INPUTS_PASS",
+  "proof": "A4D_NATIVE_FINITE_PROBE_COMPLETION.md; analytic theorem, finite checks only its exact inputs and hostile controls",
+  "action_bound": "12*M*(R0+R1)/h + 13824*B*M^3*h",
+  "fixed_warp_action_constant": "16384*M^3*h is a convenient strict upper bound",
+  "secant_bound": "C*h/epsilon + M3*epsilon^2/6",
+  "canonical_warp_action": "integral (f_prime)^2",
+  "canonical_warp_secant": "2 integral f_prime*psi_prime = -2 integral f_second*psi",
+  "fixed_width_exact_warp_probe": {
+    "psi": "f-1",
+    "epsilon": "1/2",
+    "f_range": "[1,53/50]",
+    "b_squared_less_than_5_over_2": true,
+    "uniform_frozen_gap": "6882/625",
+    "finite_reading": "I_h(f_plus,K_plus)-I_h(f_minus,K_minus)",
+    "continuum_reading": "pi^2/625",
+    "rate": "O(h), arbitrary independent exact small-log endpoints",
+    "metric_path": "nonlinear Gram path Q(t)=diag(1,-1,-(f+t*psi)^2,-(f+t*psi)^2)"
+  },
+  "all_phase_congruence_failure": {
+    "solder": "diag(1,1,s,s)",
+    "phase": "(1,i,1,1)",
+    "defect_entry_12_13": "-i*s^2*(s-1)",
+    "nonzero_entries": 8,
+    "scope": "refutes applying the owned zero-phase congruence at general phase"
+  },
+  "actual_controls": [
+    {
+      "family": "232_Y_null",
+      "t": "-1/7",
+      "cell_action": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "total_action": "0",
+      "curvature": "nonzero",
+      "metric_response": "zero"
+    },
+    {
+      "family": "232_Y_null",
+      "t": "1/5",
+      "cell_action": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "total_action": "0",
+      "curvature": "nonzero",
+      "metric_response": "zero"
+    },
+    {
+      "family": "232_Y_null",
+      "t": "1/4",
+      "cell_action": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "total_action": "0",
+      "curvature": "nonzero",
+      "metric_response": "zero"
+    },
+    {
+      "family": "227_B_visible",
+      "t": "-1/7",
+      "cell_action": [
+        "-84/193",
+        "-84/193",
+        "84/193",
+        "84/193"
+      ],
+      "total_action": "0",
+      "curvature": "nonzero",
+      "metric_response": "nonzero"
+    },
+    {
+      "family": "227_B_visible",
+      "t": "1/5",
+      "cell_action": [
+        "60/97",
+        "60/97",
+        "-60/97",
+        "-60/97"
+      ],
+      "total_action": "0",
+      "curvature": "nonzero",
+      "metric_response": "nonzero"
+    },
+    {
+      "family": "227_B_visible",
+      "t": "1/4",
+      "cell_action": [
+        "48/61",
+        "48/61",
+        "-48/61",
+        "-48/61"
+      ],
+      "total_action": "0",
+      "curvature": "nonzero",
+      "metric_response": "nonzero"
+    }
+  ],
+  "boost_complete_polynomial": {
+    "denominator": "D=4-3*t^2",
+    "link_numerator_degree": 2,
+    "full_Euler_numerator_degree_bound": 8,
+    "all_connection_numerator_coefficients": "zero",
+    "metric_numerator": "4*t*D^3*sigma_p*(0,0,0,0,-1,1,1,-1,1,-1)",
+    "scalar_nonzero_coefficients": [
+      [
+        1,
+        256
+      ],
+      [
+        3,
+        -576
+      ],
+      [
+        5,
+        432
+      ],
+      [
+        7,
+        -108
+      ]
+    ],
+    "method": "exact literal degree-eight denominator-cleared polynomial, not a Taylor extrapolation"
+  },
+  "hostile_polynomial_critical_values": [
+    {
+      "L": 4,
+      "degree": 17,
+      "uniform_value_gap_bound": "1/4",
+      "infinitesimal_response_at_zero": "17/4"
+    },
+    {
+      "L": 8,
+      "degree": 65,
+      "uniform_value_gap_bound": "1/8",
+      "infinitesimal_response_at_zero": "65/8"
+    },
+    {
+      "L": 12,
+      "degree": 145,
+      "uniform_value_gap_bound": "1/12",
+      "infinitesimal_response_at_zero": "145/12"
+    }
+  ],
+  "scope": "all physical link roles, generators, and frequencies; endpoint stationarity only",
+  "nonclaims": [
+    "no original raw owner-norm terminal",
+    "no instantaneous Xi convergence",
+    "no full native operator intertwiner",
+    "no fixed-source joint existence",
+    "no continuation of an arbitrary central root through metric probes"
+  ]
+}

@@ -236,9 +236,10 @@ In this schema, an obligation is the assembly slot; do not create a parallel
 `slots.json`. Add a result node only when it changes an open slot's route,
 readiness or a material substitution decision. New evidence should point to
 the existing research owner by commit/path/SHA. Copy source bytes only when
-they are otherwise unavailable at the pinned Git commit. Active result nodes
-are capped at 52; strengthen an existing node when new evidence supports the
-same scoped result.
+they are otherwise unavailable at the pinned Git commit. The authoritative
+active-result limit is `contract.json.registry_budget.max_active_results`; at
+capacity, strengthen an existing node. Increase the limit only through an
+explicit contract change tied to a concrete downstream consumer.
 
 The frozen gravity graph preserves all 44 IDs and its complete source bytes.
 `migration` maps each original ID to a searchable `legacy:ID`; unresolved

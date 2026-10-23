@@ -1,0 +1,64 @@
+{
+  "GR_closed": false,
+  "artifact_sha256": {
+    "INTEGRATION_REVIEW.md": "deb56942b7774cdc6ca4a6b28ee4f2c2e80a2cef905d3f525274ed5beaff7084",
+    "README.md": "5ef80760c87fc4cc36f3f8ab5354d885e09fbe3ea882a360b141568bcfe5cf0f",
+    "preparation/INDEPENDENT_RESULT.json": "5c8d5cd95d666dffff725e2a6e3679de18563e24bfe1fd7cbae2aaf3c838a3b2",
+    "preparation/RESULT.json": "5c8d5cd95d666dffff725e2a6e3679de18563e24bfe1fd7cbae2aaf3c838a3b2",
+    "preparation/REVIEW_TAGGED_PAID_ORBIT_INPUT.md": "db691e7b70d84ea45102eaee5050fa44f2ce9a0ecc34c477d6ccd258ae04de4c",
+    "preparation/SOURCE_PINS.json": "d0c4bd7b18989104f3d39cdfa9d5569630a0fdfa15a18998b5926d2db8ca8cda",
+    "preparation/TAGGED_PAID_ORBIT_INPUT.md": "9f4736871514683524aa8e7ca2930b8a57a637c5bc5cbbb2011be6da95951ccf",
+    "preparation/check_tagged_orbit_input.py": "4d621c8426040db3d73418d2f9115527b5057d28361355badc129f14fb6a1a7f",
+    "reverse/REVERSE_BOOK_EFFECT_RECONSTRUCTION.md": "b1a4cb07c50da60fd6e20c0217445b6aa765378fd4c42c2852fc33f7db1d8cd4",
+    "reverse/REVERSE_INDEPENDENT_RESULT.json": "788a6256794db6297ba33f41c2a62c2ceba90ae04d3f21cbcd33e63953beab0f",
+    "reverse/REVERSE_RESULT.json": "788a6256794db6297ba33f41c2a62c2ceba90ae04d3f21cbcd33e63953beab0f",
+    "reverse/REVERSE_SOURCE_PINS.json": "1df7587ddc7793eecdbd8b6eba117b3233363a52a1f12f2e82378d5db9f64232",
+    "reverse/check_reverse_book_effects.py": "cd68eae96670e934a69e8078b9ed726b0b1dbc1f54e513b71f4338065d6be83b",
+    "source_algebra/BOOK_SOURCE_SUFFICIENCY_AND_NATIVE_PARITY.md": "5a70535e168116d842eef7be902e3944ef908f22837dca5ce95c26979c0b3461",
+    "source_algebra/INDEPENDENT_RESULT.json": "7c6fabf54cab7f7d091eaa1a3b334607a4147f0d6499c3fb09dd4e13c067f775",
+    "source_algebra/RESULT.json": "7c6fabf54cab7f7d091eaa1a3b334607a4147f0d6499c3fb09dd4e13c067f775",
+    "source_algebra/REVIEW_BOOK_SOURCE_SUFFICIENCY.md": "150f3127c2e89e01a95f8bbfa9c31bd2a780910539cf536f8349af3c2500e6c7",
+    "source_algebra/SOURCE_PINS.json": "f58cafc351512631255ebff564ac610bb9e37ea249a2874ed78b7d538f47bbfe",
+    "source_algebra/check_book_source_sufficiency.py": "02b392162dc401331b7a34139dc3fc82247e1c39b3caca11bb722a8d2fa1e33e"
+  },
+  "mathematical_reviews": {
+    "composition": "INTEGRATION_REVIEW.md",
+    "preparation": "preparation/REVIEW_TAGGED_PAID_ORBIT_INPUT.md",
+    "reverse": "INTEGRATION_REVIEW.md",
+    "source_algebra": "source_algebra/REVIEW_BOOK_SOURCE_SUFFICIENCY.md"
+  },
+  "old_suites_replayed": false,
+  "parent": "EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE / existing common-map gate / Draft #334",
+  "replays": [
+    {
+      "author_receipt": "reverse/REVERSE_RESULT.json",
+      "byte_identical": true,
+      "checks": 40,
+      "independent_executor": "root",
+      "independent_receipt": "reverse/REVERSE_INDEPENDENT_RESULT.json",
+      "optimized_python": true,
+      "receipt_sha256": "788a6256794db6297ba33f41c2a62c2ceba90ae04d3f21cbcd33e63953beab0f"
+    },
+    {
+      "author_receipt": "source_algebra/RESULT.json",
+      "byte_identical": true,
+      "checks": 50,
+      "independent_executor": "native_admission",
+      "independent_receipt": "source_algebra/INDEPENDENT_RESULT.json",
+      "optimized_python": true,
+      "receipt_sha256": "7c6fabf54cab7f7d091eaa1a3b334607a4147f0d6499c3fb09dd4e13c067f775"
+    },
+    {
+      "author_receipt": "preparation/RESULT.json",
+      "byte_identical": true,
+      "checks": 119,
+      "independent_executor": "root",
+      "independent_receipt": "preparation/INDEPENDENT_RESULT.json",
+      "optimized_python": true,
+      "receipt_sha256": "5c8d5cd95d666dffff725e2a6e3679de18563e24bfe1fd7cbae2aaf3c838a3b2"
+    }
+  ],
+  "scope": "Finite inverse for real accessible effects; source sufficiency for stated algebraic jets and native parity cut; paid finite real orbit inputs for the declared tagged-E counted-price consumer. No compulsory Book03 valuation or native GR closure.",
+  "source_ref": "2961dc6ee4abcda0a0fb2aa36dc6ecd7e62a6535",
+  "status": "PASS_SCOPED"
+}

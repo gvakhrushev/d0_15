@@ -1,0 +1,44 @@
+{
+  "checker_sha256": "53b1fdb8ad989eeb9425401b44e6e10af2424949be8f983ed140486f71ea4a13",
+  "checks": [
+    "local M=2: 2",
+    "local M=2: 3",
+    "local M=2: 4",
+    "local M=2: square_of_purity",
+    "local M=2: purity_times_third_moment",
+    "local M=4: 2",
+    "local M=4: 3",
+    "local M=4: 4",
+    "local M=4: square_of_purity",
+    "local M=4: purity_times_third_moment",
+    "nonadditive whole-product source: 2",
+    "nonadditive whole-product source: 3",
+    "nonadditive whole-product source: 4",
+    "nonadditive whole-product source: square_of_purity",
+    "nonadditive whole-product source: purity_times_third_moment",
+    "measured permutation first source: 2",
+    "measured permutation first source: 3",
+    "measured permutation first source: 4",
+    "measured permutation first source: square_of_purity",
+    "measured permutation first source: purity_times_third_moment",
+    "unequal paid label charge survives with zero report source",
+    "unequal cell coefficients destroy opposite-source cancellation",
+    "unmatched abort leaves a readiness source",
+    "trace symmetry alone gives no nonzero gravitational response"
+  ],
+  "method": "exact Fraction arithmetic; analytic proof supplies the general theorem",
+  "negative_controls": {
+    "unequal_cell_source": "10/63",
+    "unequal_label_source": "2/15",
+    "unmatched_abort_purity_source": "-12/49"
+  },
+  "scope": {
+    "Book03_spectral_binding_proved": false,
+    "actual_product_spectrum_not_binary": true,
+    "general_valuation_Hessians_identified": false,
+    "local_spectral_first_source": true,
+    "measured_permutation_first_order_only": true,
+    "physical_GR_selection": false
+  },
+  "status": "PASS_EXACT_UNIFORM_RECORD_SOURCE_CONTROLS"
+}

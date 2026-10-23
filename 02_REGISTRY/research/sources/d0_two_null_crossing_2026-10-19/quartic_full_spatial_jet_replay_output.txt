@@ -1,0 +1,87 @@
+{
+  "schema": "d0-exact-replay-result/v1",
+  "status": "PASS_DIRECT_FULL_SPATIAL_EULER_REPLAY",
+  "input_solution_sha256": "443c6fe34ae9fa8251838f28cebd5705f55ab6add51e1bc38b3b54f3702ef40f",
+  "prior_four_sector_solution_sha256": "afc4e6a80611d23bdc1c0c165b13b2525f2e3affbe3f98777626321d0eacbddc",
+  "all_15_amplitude_monomials_checked": 15,
+  "all_40_euler_rows_all_spatial_coefficients_zero": true,
+  "proper_lorentz_links_through_amplitude_degree_four": true,
+  "checks": {
+    "0,0": {
+      "exactly_zero_all_spatial_degrees": true,
+      "failure_row_count": 0,
+      "failures": []
+    },
+    "1,0": {
+      "exactly_zero_all_spatial_degrees": true,
+      "failure_row_count": 0,
+      "failures": []
+    },
+    "0,1": {
+      "exactly_zero_all_spatial_degrees": true,
+      "failure_row_count": 0,
+      "failures": []
+    },
+    "2,0": {
+      "exactly_zero_all_spatial_degrees": true,
+      "failure_row_count": 0,
+      "failures": []
+    },
+    "1,1": {
+      "exactly_zero_all_spatial_degrees": true,
+      "failure_row_count": 0,
+      "failures": []
+    },
+    "0,2": {
+      "exactly_zero_all_spatial_degrees": true,
+      "failure_row_count": 0,
+      "failures": []
+    },
+    "3,0": {
+      "exactly_zero_all_spatial_degrees": true,
+      "failure_row_count": 0,
+      "failures": []
+    },
+    "2,1": {
+      "exactly_zero_all_spatial_degrees": true,
+      "failure_row_count": 0,
+      "failures": []
+    },
+    "1,2": {
+      "exactly_zero_all_spatial_degrees": true,
+      "failure_row_count": 0,
+      "failures": []
+    },
+    "0,3": {
+      "exactly_zero_all_spatial_degrees": true,
+      "failure_row_count": 0,
+      "failures": []
+    },
+    "4,0": {
+      "exactly_zero_all_spatial_degrees": true,
+      "failure_row_count": 0,
+      "failures": []
+    },
+    "3,1": {
+      "exactly_zero_all_spatial_degrees": true,
+      "failure_row_count": 0,
+      "failures": []
+    },
+    "2,2": {
+      "exactly_zero_all_spatial_degrees": true,
+      "failure_row_count": 0,
+      "failures": []
+    },
+    "1,3": {
+      "exactly_zero_all_spatial_degrees": true,
+      "failure_row_count": 0,
+      "failures": []
+    },
+    "0,4": {
+      "exactly_zero_all_spatial_degrees": true,
+      "failure_row_count": 0,
+      "failures": []
+    }
+  },
+  "GR_closed": false
+}

@@ -1,0 +1,88 @@
+{
+  "input_ref": "086fab99d8aaed7f712e9a3d2858c516b61901fc",
+  "research_owner": "EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE",
+  "pr": 334,
+  "consumer": "physical cap-one moving query: source-consistent native finite programmes",
+  "inputs": [
+    {
+      "path": "02_REGISTRY/research/sources/d0_physical_cap1_execution_composition_2026-10-21/moving_query/PROOF.md",
+      "git_blob": "280d4b93f3113d94691609b20cd7c27793e61499",
+      "use": "Original full8D query, actual required first jet, fixed-word and same-cut obstruction; preserved"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_physical_cap1_execution_composition_2026-10-21/moving_query/check_native_query_value_and_jet.py",
+      "git_blob": "1a21cac195f4f4f1a9a617695d2e327f0763ecde",
+      "use": "Literal four-tail matrix, fixed P, retained +/- effects and finite-z source coefficients"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/GOLDEN_EXACT_DETECTOR.md",
+      "git_blob": "92b9003d783c24b1883a2a21f8b30625078afff7",
+      "use": "Existing addressed G/CNOT known-one echo; full data-independent compiler transcript and N=1 CQ ledger"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/TWO_NATIVE_8D_DETERMINANT_SOURCE.md",
+      "git_blob": "63b381ca8b0abd9f03ebee2495de904c379f0736",
+      "use": "Two independent known native8D input queries, separate efficiency coins, pure retained work, actual final OR law"
+    }
+  ],
+  "actual_local_run": {
+    "checker_git_blob": "ddf80ddbeb2828a2e711a45862c99d69869a5684",
+    "checker_sha256": "04f6a44a0bdeea88e56768cc301c5411f9944b0cf295de60b121435613844664",
+    "result_git_blob": "d0d0485ca439ca5193eb0f2de2358c6735abd788",
+    "result_sha256": "7d1f9f4c155d90030922818525b2b61e608b502698c199ad92b08ed6b4d5f649",
+    "normal_and_optimized_stdout_equal": true,
+    "precision_decimal_digits": 85,
+    "numerical_results_are_interval_bounds": false,
+    "exact_symbolic_cells_and_endpoint_algebra": true,
+    "general_source_limit": "ANALYTIC_CENTRAL_TAYLOR_QUOTIENT_NOT_INFERRED_FROM_FINITE_SAMPLES",
+    "old_complete_CQ_ledger": "CONSUMED_WITH_ORIGINAL_FIXED_PRICE_ADMISSION_PREMISES"
+  },
+  "follow_up_exact_four_setting_source": {
+    "commit": "f996faae1eabd552a4f1573174bb6738a4c61c35",
+    "checker": "check_exact_four_setting_source.py",
+    "checker_git_blob": "f17b12924c17ed1cbeaeafcdcaa36420b31554d3",
+    "checker_sha256": "cbcc9d457d5b0fdd48dc9dfb8edb8c9a6c607511c1294b4da88e5f01215cd590",
+    "result": "RESULT_FOUR_SETTING.json",
+    "result_git_blob": "2f300396786527e26928bb160bc154a1b66b15f6",
+    "result_sha256": "97289b6344a7a4d78e11ce4f629cf045536b099065075d0d282b5170b526a1c9",
+    "status": "PASS_EXACT_FOUR_SETTING_NATIVE_SOURCE",
+    "normal_and_optimized_stdout_equal": true,
+    "exact": {
+      "all_operator_and_report_jets": "EXACT_IN_Q(a)[z]",
+      "distinct_probability_contexts": [[1, 1], [3, 1], [1, 3], [1, 5]],
+      "two_query_inventory_per_setting": {
+        "G": 40,
+        "CNOT": 84,
+        "unit_query_ticks": 124
+      },
+      "symbolic_source_error": 0,
+      "unconditional_abort_factor_retained": true,
+      "finite_z_source_ratio_q_over_f": "-23.416406751884074972895582064895"
+    },
+    "numeric_control": {
+      "precision_decimal_digits": 85,
+      "geometry_runs_per_nonbaseline_setting_for_1_percent_RMS": "205391028219462",
+      "finite_shot_error_eliminated": false,
+      "interval_enclosure": false
+    },
+    "scope": {
+      "exact_query_source_evaluator": true,
+      "physical_field_writer_or_autonomous_descent_proved": false,
+      "Book03_Info_or_input_constraints_selected": false,
+      "complete_bank_detector_ledger_recomputed": false,
+      "all42_stationary_solutions_proved": false,
+      "GR_closed": false
+    }
+  },
+  "parent_substitution": {
+    "old_missing_primitive": "continuously adjustable original two-angle unitary query",
+    "new_result": "exact finite native query grids with equal paid inventory and quadratically consistent source secants",
+    "ordinary_derivative_of_fixed_finite_word": false,
+    "all_physical_geometric_field_variations_executable": false,
+    "uniform_runtime_or_native_scheduler_selected": false,
+    "compulsory_Book03_CQ_identification": false,
+    "independent_scientific_acceptance": false,
+    "new_Lean_build": false,
+    "GR_closed": false
+  }
+}

@@ -1,0 +1,234 @@
+{
+  "status": "NUMERICAL_ACTUAL_ORIGINAL_N1_ALL_GEOMETRY_TWO_CAR_BORDER",
+  "n": 4,
+  "h": 0.09190076232908961,
+  "PF": [
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "full_original_rows": 126,
+  "gauge_reduced_rows": 114,
+  "geometric_rows": 108,
+  "root_full_scaled_Euler_max": 2.089581410680003e-14,
+  "root_true_scalar_price_Euler_max": 7.406684686481336e-14,
+  "root_geometric_Euler_max": 2.089581410680003e-14,
+  "max_root_update": 1.054786984490142,
+  "source_f": [
+    -0.030944898288904343,
+    -0.002763411246768488,
+    -0.000984493061920666,
+    0.00012461819433812193
+  ],
+  "source_q": [
+    -0.0001374893766238408,
+    -0.00011796134225076915,
+    -4.2036476666793346e-05,
+    5.321935012157081e-06
+  ],
+  "nfev": 46,
+  "passes": [
+    {
+      "step": 5e-06,
+      "max_raw_hessian_asymmetry": 6.3125994050061696e-09,
+      "W": {
+        "min_eigen": 76.51296330135716,
+        "max_eigen": 77.37651540469255,
+        "min_abs_eigen": 76.51296330135716,
+        "negative": 0,
+        "positive": 8,
+        "near_zero": 0
+      },
+      "Klocal": {
+        "min_eigen": -34.79332355460797,
+        "max_eigen": 376.898670813585,
+        "min_abs_eigen": 0.00023932224500945235,
+        "negative": 45,
+        "positive": 63,
+        "near_zero": 0
+      },
+      "geometric_blocks": [
+        34,
+        34,
+        40
+      ],
+      "block_pivots": [
+        {
+          "min_eigen": -19.69331881184329,
+          "max_eigen": 193.0740236142545,
+          "min_abs_eigen": 0.00047984216663670646,
+          "negative": 14,
+          "positive": 20,
+          "near_zero": 0
+        },
+        {
+          "min_eigen": -31.110868865712188,
+          "max_eigen": 218.40788002090773,
+          "min_abs_eigen": 0.0013038785662333296,
+          "negative": 14,
+          "positive": 20,
+          "near_zero": 0
+        },
+        {
+          "min_eigen": -37.719849902449134,
+          "max_eigen": 246.75758862815093,
+          "min_abs_eigen": 0.0016604251057434234,
+          "negative": 17,
+          "positive": 23,
+          "near_zero": 0
+        }
+      ],
+      "nonneighbor_Klocal_max": 0.0,
+      "B_singular_values": [
+        0.5076553889044411,
+        0.28104738341390595
+      ],
+      "current_K": [
+        [
+          0.051874571130032215,
+          9.84570141365703e-08
+        ],
+        [
+          9.84570141365703e-08,
+          0.05210168494970811
+        ]
+      ],
+      "border_2x2": [
+        [
+          -0.13081928250147198,
+          0.018797405438045263
+        ],
+        [
+          0.018797405438051817,
+          78.4204614030951
+        ]
+      ],
+      "border_spectrum": {
+        "min_eigen": -0.13082378074042983,
+        "max_eigen": 78.42046590133407,
+        "min_abs_eigen": 0.13082378074042983,
+        "negative": 1,
+        "positive": 1,
+        "near_zero": 0
+      },
+      "Heff": {
+        "min_eigen": -34.78634461529567,
+        "max_eigen": 376.89879681245213,
+        "min_abs_eigen": 0.0005275584266114785,
+        "negative": 44,
+        "positive": 64,
+        "near_zero": 0
+      },
+      "schur_identity_max": 1.4210854715202004e-14,
+      "woodbury_inverse_residual_max": 7.753711713139602e-13,
+      "wall_seconds": 18.108880705000047
+    },
+    {
+      "step": 2e-06,
+      "max_raw_hessian_asymmetry": 2.481948813137791e-08,
+      "W": {
+        "min_eigen": 76.51296330081335,
+        "max_eigen": 77.37651540442583,
+        "min_abs_eigen": 76.51296330081335,
+        "negative": 0,
+        "positive": 8,
+        "near_zero": 0
+      },
+      "Klocal": {
+        "min_eigen": -34.79332355504446,
+        "max_eigen": 376.8986708151484,
+        "min_abs_eigen": 0.00023932222868024394,
+        "negative": 45,
+        "positive": 63,
+        "near_zero": 0
+      },
+      "geometric_blocks": [
+        34,
+        34,
+        40
+      ],
+      "block_pivots": [
+        {
+          "min_eigen": -19.69331881205002,
+          "max_eigen": 193.07402360076992,
+          "min_abs_eigen": 0.0004798421417726682,
+          "negative": 14,
+          "positive": 20,
+          "near_zero": 0
+        },
+        {
+          "min_eigen": -31.110868860597503,
+          "max_eigen": 218.40787995912495,
+          "min_abs_eigen": 0.0013038785439707242,
+          "negative": 14,
+          "positive": 20,
+          "near_zero": 0
+        },
+        {
+          "min_eigen": -37.71984991847231,
+          "max_eigen": 246.7575885493456,
+          "min_abs_eigen": 0.0016604250754195119,
+          "negative": 17,
+          "positive": 23,
+          "near_zero": 0
+        }
+      ],
+      "nonneighbor_Klocal_max": 0.0,
+      "B_singular_values": [
+        0.5076553888871491,
+        0.28104738341401764
+      ],
+      "current_K": [
+        [
+          0.05187457113003519,
+          9.845706341888823e-08
+        ],
+        [
+          9.845706341888823e-08,
+          0.05210168495004111
+        ]
+      ],
+      "border_2x2": [
+        [
+          -0.13081928248010466,
+          0.01879740169600127
+        ],
+        [
+          0.018797401696002088,
+          78.42046420607521
+        ]
+      ],
+      "border_spectrum": {
+        "min_eigen": -0.13082378071711107,
+        "max_eigen": 78.42046870431221,
+        "min_abs_eigen": 0.13082378071711107,
+        "negative": 1,
+        "positive": 1,
+        "near_zero": 0
+      },
+      "Heff": {
+        "min_eigen": -34.786344615739864,
+        "max_eigen": 376.8987968140155,
+        "min_abs_eigen": 0.0005275584113207967,
+        "negative": 44,
+        "positive": 64,
+        "near_zero": 0
+      },
+      "schur_identity_max": 1.4210854715202004e-14,
+      "woodbury_inverse_residual_max": 5.546948745510106e-13,
+      "wall_seconds": 14.003783247000683
+    }
+  ],
+  "hessian_step_change_max": 1.1979010838825133e-08,
+  "effective_hessian_step_change_max": 1.1816768230588082e-08,
+  "source_notes": [
+    "Original all40 coframe/Lorentz curvature chain retained; no independent f,k substitute.",
+    "Fresh left exp(h delta X)Ustar chart at actual root.",
+    "Scalar price gradient is psi, not h psi; velocity constraint D includes 1/h.",
+    "One fixed normalized N1 CQ price; full physical Book03 and uniform continuum not asserted."
+  ],
+  "numeric_not_interval": true,
+  "GR_closed": false,
+  "wall_seconds": 237.43004239400034
+}

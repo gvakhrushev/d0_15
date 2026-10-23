@@ -1,0 +1,46 @@
+{
+  "date": "2026-10-22",
+  "pr": 334,
+  "owner": "EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE",
+  "status": "AUTHOR_EXECUTED_NATIVE_L8_N24_FLUX_AND_ANALYTIC_PF_SOURCE_THEOREM",
+  "source_github_blobs": {
+    "full_native_n1_flux_theorem": "e0ffdb826e09550db19a40a7715a8032e85e47e8",
+    "native_golden_flux_checker": "5d702d185337dac659ec016918829819f763bcec",
+    "native_pf_C2_refinement_theorem": "59f1dd791bcdbc25dac439b3b8b22ee5d2852850"
+  },
+  "actual_run": {
+    "original_golden_cost": 24,
+    "L": 8,
+    "full_original_site_words": 75025,
+    "all_site_count_min": 4,
+    "all_site_count_max": 43,
+    "spatial_column_actual_counts": [
+      16,
+      8,
+      12,
+      11,
+      7,
+      11,
+      10,
+      6
+    ],
+    "max_scalar_Euler_before": 1.5058101170286259e-10,
+    "max_scalar_Euler_after": 6.352747104407253e-23,
+    "independent_full_price_centered_diff_residual": 4.1901670402343364e-11,
+    "min_flux_slope": 0.00002048073089589527,
+    "max_matter_current_correction": 0.00009236439463104762,
+    "endpoint_error": -1.3877787807814457e-17
+  },
+  "strict_mathematical_theorem": "Within analytic chart with every site current derivative strictly positive and endpoint mass in current image, the unchanged native N1 nonlinear cost has a unique strictly Dirichlet-convex scalar1 solution; the second spatial-linear CAR scalar Euler vanishes; the reduced geometry Hessian has the exact scalar Schur complement.",
+  "true_PF_refinement": "n(L)=64 ceil(log_phi L)+128 implies sup|rho-1|<9h^3, sup|nabla_h log rho|<36h^2, sup|nabla_h² log rho|<72h, for integer L>=4, by original proved Golden cell bounds",
+  "caveats": [
+    "Only scalar rows on spatially homogeneous rank-two slab, not all42 nor selected Book03",
+    "Numerical checker is non-interval bounded control; analytic existence under explicit strict positivity conditions",
+    "PF refinement schedule not forced native resource optimum",
+    "Geometry Schur term must be retained; original gauge/collar Wilson constraints not solved",
+    "Original full32 Choi pure input obstruction and actual physical HJR writer still apply"
+  ],
+  "GR_closed": false,
+  "original_book03_selected": false,
+  "independent_review": false
+}

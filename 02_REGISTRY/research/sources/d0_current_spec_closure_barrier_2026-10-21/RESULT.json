@@ -1,0 +1,52 @@
+{
+  "actual_full128_candidate_source": {
+    "DH_phi_dnu": 0.7671427296247741,
+    "controller_admission": false,
+    "exact_sign_domain": "0<nu<sqrt(3)/2; see aggregation_audit/PROOF.md",
+    "local_replay_runtime_warning_lines": 78,
+    "nu": 0.5,
+    "parameter": "nu",
+    "physical_Book03_selection": false
+  },
+  "check_count": 6,
+  "checks": [
+    "typed Book03 source identities and actual full128 replay",
+    "typed-source result status",
+    "bootstrap-to-field pullback remains open",
+    "conditional endpoint-allocation source theta=1.0, eta=0.0",
+    "conditional endpoint-allocation source theta=0.75, eta=0.25",
+    "conditional endpoint-allocation source theta=0.0, eta=1.0"
+  ],
+  "endpoint_allocation": {
+    "cases": [
+      {
+        "endpoint_information_jet": 1.0,
+        "eta": 0.0,
+        "source_gap": 1.0,
+        "theta": 1.0
+      },
+      {
+        "endpoint_information_jet": -2.0,
+        "eta": 0.25,
+        "source_gap": -1.0,
+        "theta": 0.75
+      },
+      {
+        "endpoint_information_jet": 1.4142135623730951,
+        "eta": 1.0,
+        "source_gap": -1.4142135623730951,
+        "theta": 0.0
+      }
+    ],
+    "identity": "D(S_theta-S_eta)=(theta-eta)*D(I_final-I_initial)",
+    "physical_endpoint_jet_admission_proved": false
+  },
+  "scope": {
+    "Book03_master_action_exists": true,
+    "GR_closed": false,
+    "bootstrap_pullback_to_GR_carrier_proved": false,
+    "physical_history_and_Info_selection_proved": false,
+    "two_physical_completions_constructed": false
+  },
+  "status": "PASS_FORMAL_INTERFACE_AND_SOURCE_REPLAY"
+}

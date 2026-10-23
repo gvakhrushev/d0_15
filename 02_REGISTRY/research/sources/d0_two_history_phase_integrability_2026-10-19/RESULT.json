@@ -1,0 +1,50 @@
+{
+  "status": "PASS",
+  "input_ref": "a95927fac939230a8e9d3e124c420fb2e3929a22",
+  "carrier_dimension": 16,
+  "retained_exterior_grades": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "fixed_input_phase": [
+    "0",
+    "-sqrt(2)/2"
+  ],
+  "moving_reference_source_jacobian": [
+    [
+      "0",
+      "-1"
+    ],
+    [
+      "0",
+      "0"
+    ]
+  ],
+  "fixed_reference_scalar_hessian": [
+    [
+      "0",
+      "-1/2"
+    ],
+    [
+      "-1/2",
+      "0"
+    ]
+  ],
+  "rotation_contact_coefficient": "1",
+  "arbitrary_scalar_multiplier_contact": "c**2",
+  "latest_two_native_ray_contacts": [
+    "4/3",
+    "4/3"
+  ],
+  "constant_two_ray_combination_contact": "4*(3*a**2 + 2*a*b + 3*b**2)/9",
+  "closed_square_circulation": "sqrt(2)*r*sin(sqrt(2)*r)/2",
+  "moving_preparation_scaled_curvature": "1",
+  "missing_preparation_component_beta": "mesh**2*theta*sin(2*beta)",
+  "real_archive_factor_dimension": 718,
+  "scope": "exact source-interface controls, not native apparatus or complete physical action",
+  "GR_closed": false,
+  "raw216_closed": false
+}

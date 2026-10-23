@@ -1,0 +1,23 @@
+{
+  "status": "PASS_ORIGINAL_NONCOMMUTING_TEMPORAL_BASEDFACE",
+  "native_true_lorentz_eta": "diag(1,-1,-1,-1)",
+  "noncommuting_based_plaquette_count": 3,
+  "actual_full_link_nodes": 4,
+  "exact_Lorentz_infinitesimal_rank": 12,
+  "actual_linearized_plaquette_rows": 18,
+  "global_fixed_collar_cokernel_dimension": 6,
+  "exact_nonlinear_reconstruction": true,
+  "exact_noncommuting_ends_product_constraint": true,
+  "exact_global_lie_algebra_compatibility": true,
+  "single_plaquette_bad_target_rejected": true,
+  "one_site_normalized_spike": "O(1)",
+  "coherent_true_three_slice_curvature": "O(h)",
+  "science_scope": {
+    "original_temporal_gauge_sector_only": true,
+    "full_24_link_system_solved": false,
+    "all_16_coframe_equations_solved": false,
+    "two_real_CAR_material_temporal_block_reduced_by_separate_owner": true,
+    "Book03_full_native_action_selected": false,
+    "GR_closed": false
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "status": "PASS_EXACT_DISCRETE_MATERIAL_WARD_AND_WEIGHTED_CONSUMER",
+  "input_ref": "401eafb2958e9d9626db833a25f02b35b3871c16",
+  "symbolic": {
+    "exact_inverse_chain_identity": true,
+    "exact_forward_product_remainder": "42544506389280449404545776176468536785804380693/94331823792460783560263823893900626238621745152000",
+    "weighted_continuum_law": "d(rho*y/Fx)=0 only after full Ward and radial equations",
+    "material_fields": 2,
+    "coframe_components": 16,
+    "two_scalar_stress_rank_control": 2,
+    "finite_continuum_Ward_is_not_assumed": true
+  },
+  "native_master": {
+    "precision_digits": 75,
+    "actual_caps": [
+      9,
+      20
+    ],
+    "a": "-0.000000238542993554469388804405723890579878459581701",
+    "b": "0.00000558581976488351637278342854357033541634557317",
+    "b_over_a": "-23.4164067518840749728955820648952527442631785",
+    "Kpp0": "0.000531951736971892184412930258327746385058501836",
+    "worst_normalized_residual": "4.539046e-68",
+    "samples": [
+      {
+        "rho": "0.5",
+        "U": "1.008403127331865316650430812",
+        "e_E_times_mu": "23.64030784626503560225631526"
+      },
+      {
+        "rho": "1",
+        "U": "1.004196110795340393980281927",
+        "e_E_times_mu": "23.52813141175577651207068879"
+      },
+      {
+        "rho": "2",
+        "U": "1.002096698415987904376535669",
+        "e_E_times_mu": "23.47221287431265590710504214"
+      },
+      {
+        "rho": "3",
+        "U": "1.001397498006270705211374379",
+        "e_E_times_mu": "23.45359836894501360028780645"
+      }
+    ],
+    "native_42_row_replay": false
+  },
+  "grids": [
+    {
+      "n": 4,
+      "sites": 256,
+      "inverse_metric_chain_error": 2.7931216367571565e-15,
+      "pointwise_exact_identity_error": 1.8388068845354155e-16,
+      "weighted_adjoint_error": 3.469446951953614e-18,
+      "finite_difference_error": 2.1798507443548942e-11,
+      "omitted_weight_source_error": 2.0224992363412908e-05,
+      "ward_covector_inf": 0.12659304140471422,
+      "ward_covector_over_h": 0.5063721656188569,
+      "kinetic_gradient_inf": 0.0033132928339744943,
+      "actual_K_slope_min": 0.9995945158470214,
+      "actual_K_slope_max": 0.9998330636587653,
+      "native_master_residual": 0.0,
+      "field_source_status": "DIAGNOSTIC_SMOOTH_FIELDS_NOT_STATIONARY_ROOTS"
+    },
+    {
+      "n": 8,
+      "sites": 4096,
+      "inverse_metric_chain_error": 6.725848177013827e-15,
+      "pointwise_exact_identity_error": 5.551115123125783e-16,
+      "weighted_adjoint_error": 3.469446951953614e-18,
+      "finite_difference_error": null,
+      "omitted_weight_source_error": null,
+      "ward_covector_inf": 0.19609870840132132,
+      "ward_covector_over_h": 1.5687896672105706,
+      "kinetic_gradient_inf": 0.10952421747137538,
+      "actual_K_slope_min": 0.9979396742297474,
+      "actual_K_slope_max": 1.0011294486659592,
+      "native_master_residual": 0.0,
+      "field_source_status": "DIAGNOSTIC_SMOOTH_FIELDS_NOT_STATIONARY_ROOTS"
+    },
+    {
+      "n": 12,
+      "sites": 20736,
+      "inverse_metric_chain_error": 1.0413870286940519e-14,
+      "pointwise_exact_identity_error": 6.800116025829084e-16,
+      "weighted_adjoint_error": 0.0,
+      "finite_difference_error": null,
+      "omitted_weight_source_error": null,
+      "ward_covector_inf": 0.16476861148435576,
+      "ward_covector_over_h": 1.9772233378122692,
+      "kinetic_gradient_inf": 0.1067462951380037,
+      "actual_K_slope_min": 0.997572328408556,
+      "actual_K_slope_max": 1.001419059677579,
+      "native_master_residual": 9.992007221626409e-16,
+      "field_source_status": "DIAGNOSTIC_SMOOTH_FIELDS_NOT_STATIONARY_ROOTS"
+    },
+    {
+      "n": 16,
+      "sites": 65536,
+      "inverse_metric_chain_error": 1.4561485697783816e-14,
+      "pointwise_exact_identity_error": 1.0894063429134349e-15,
+      "weighted_adjoint_error": 3.469446951953614e-18,
+      "finite_difference_error": null,
+      "omitted_weight_source_error": null,
+      "ward_covector_inf": 0.13407417441649985,
+      "ward_covector_over_h": 2.1451867906639976,
+      "kinetic_gradient_inf": 0.12373110550566253,
+      "actual_K_slope_min": 0.9974564094548742,
+      "actual_K_slope_max": 1.001501138759491,
+      "native_master_residual": 5.995204332975845e-15,
+      "field_source_status": "DIAGNOSTIC_SMOOTH_FIELDS_NOT_STATIONARY_ROOTS"
+    }
+  ],
+  "checks_passed": 29,
+  "checks": [
+    "exact noncommuting inverse-metric chain defect",
+    "exact two-component forward product-chain remainder",
+    "continuum Leibniz shortcut fails at finite spacing",
+    "weighted invariant with radial-defect term kept",
+    "continuum full-equation residual-to-kinetic-gradient identity",
+    "comparison constraint is actual multiplier equation",
+    "no fictitious scalar pressure at constrained solution",
+    "two-field source is not automatically a single dust",
+    "mesh checkerboard hostile derivative",
+    "actual Golden N1 sign/coupling controls",
+    "actual master equations and rho*y/Fx at rho=0.5",
+    "actual master equations and rho*y/Fx at rho=1",
+    "actual master equations and rho*y/Fx at rho=2",
+    "actual master equations and rho*y/Fx at rho=3",
+    "inverse metric chain formula n=4",
+    "exact scalar Lie defect n=4",
+    "complete weighted summation by parts n=4",
+    "independent coframe+two-scalar finite difference",
+    "single-site exact covector including neighboring material rows",
+    "dropping spatial price-weight derivative detected",
+    "inverse metric chain formula n=8",
+    "exact scalar Lie defect n=8",
+    "complete weighted summation by parts n=8",
+    "inverse metric chain formula n=12",
+    "exact scalar Lie defect n=12",
+    "complete weighted summation by parts n=12",
+    "inverse metric chain formula n=16",
+    "exact scalar Lie defect n=16",
+    "complete weighted summation by parts n=16"
+  ],
+  "scope": {
+    "earlier_65_check_receipt_recovered": false,
+    "material_chain_defect_computed": true,
+    "all16_coframe_and_two_scalar_tangents": true,
+    "finite_gravitational_Lie_defect_computed": false,
+    "full42_native_roots_newly_proved": false,
+    "finite_Ward_limit_proved_without_regular_fields": false,
+    "native_writer_and_Book_selection_proved": false,
+    "GR_closed": false
+  }
+}

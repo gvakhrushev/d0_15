@@ -1,0 +1,66 @@
+{
+  "A2_normal_lift": "h=0, v=b, T_trace^a_bc=(delta_ab b_c-delta_ac b_b)/3",
+  "A2_reduced": "-4/3 integral R_G dV_G; coefficient only, not entire price",
+  "CAR_dimension": 16,
+  "boundary_scope": "periodic or compact support, no integrated Laplacian boundary flux",
+  "checks": 45,
+  "checks_sha256": "dcb0a1396ea45f6523ff76847523b18cb48c0dceb4e9e2a499119683a0a8e3c6",
+  "compensated_connection": "B_i=(1/6) sum_j b_j (hatgamma_i hatgamma_j-delta_ij I)",
+  "density_scope": "flat fixed positive G, independent b=df; no full coframe scalar Schur claim",
+  "exceptional_x": [
+    "0",
+    "2",
+    "6",
+    "-18",
+    "18/11"
+  ],
+  "finite_B_Hessian_controls": {
+    "arithmetic": "exact rational jets, not CAR truncation",
+    "cases": [
+      "distinct energies, fixed-RIGHT orbit Schur",
+      "repeated energies, opposite Dirac sign coherence"
+    ],
+    "clock": {
+      "M": 128,
+      "alpha": "1/4",
+      "beta": "1",
+      "m": 4,
+      "z": "1/7"
+    },
+    "dimension": 3,
+    "negative_controls": [
+      "omitted normalizer",
+      "omitted proper second D jet",
+      "frozen preparation",
+      "degenerate unequal weights"
+    ]
+  },
+  "full24_symbol_determinant": "-68719476736*x**16*(x - 6)**3*(x - 2)**3*(x + 18)*(11*x - 18)/10460353203",
+  "inputs": {
+    "02_REGISTRY/research/certificates/a4d_native_curved_soldered_heat.py": "bf13f57c902da0005634ae6834c0b4e3ffd2df1aa196a61ebc0ff3dc0351c7da",
+    "02_REGISTRY/research/sources/d0_coframe_heat_source_2026-10-16/GRAM_RESULTS.json": "a737b0c285cca3f0fea6d5d78c9a6e5d48fcaad3b5d2fc47c8cc557c643d3e2e"
+  },
+  "longitudinal_A4_quadratic": "2*(9*db**2 - 18*db*dv + 11*dv**2)/9",
+  "longitudinal_compensated_A4": "4/9 integral (Delta f)^2 for b=df and v=b",
+  "normal_trace_denominator": "-4*C2 + 22*C4*k2/9",
+  "normal_trace_solution": "-4*C4*b*k2/(9*(-4*C2 + 22*C4*k2/9))",
+  "quadratic_norm": "sum_(a,b<c) (T^a_bc)^2; Hessian is twice Gram",
+  "reduced_density_quadratic": "4*C4*b**2*k2*(-2*C2 + C4*k2)/(-18*C2 + 11*C4*k2)",
+  "schema": "d0-connection-normal-reduction/1",
+  "scope": [
+    "flat positive G; actual full16 CAR and owned A2/A4 coefficients",
+    "nonzero-frequency statement is quadratic normal symbol",
+    "no fixed-beta full H+J+R Hessian domination proved",
+    "actual R, global normalizer, finite-B remainder and calibration derivatives retained",
+    "not full stationary family, physical admission, Lorentz Einstein or refinement theorem"
+  ],
+  "status": "PASS_EXACT",
+  "tensor_A4_symbol_eigenvalues": {
+    "4/3 times abs(xi)^2": 10,
+    "4/9 times abs(xi)^2": 6
+  },
+  "tensor_constant_sector": "A4 positive homogeneous quartic; Hessian zero at T=0",
+  "torsion_dimension": 24,
+  "u_definition": "v-b",
+  "x_definition": "C4 abs(xi)^2/C2, C2 nonzero"
+}

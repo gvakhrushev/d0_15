@@ -1,0 +1,13 @@
+{
+  "Einstein": "G_munu=k^2*g_munu+2k^2 dx_mu dx_nu",
+  "Frobenius_3form_coefficient": "k",
+  "Lorentz_R": "-2k^2",
+  "Ricci": "Ric_xx=2k^2, all other Ric=0",
+  "check_labels_sha256": "53890a4ca0421d9f76d868b0db4ae0e6a30b4e3775e6a5946427cac19a26ee23",
+  "checks_count": 13,
+  "message": "The native positive-record heat R_G is flat yet the Lorentz metric is genuinely curved; same CAR observer bilinear supplies exact missing scalar, including twist",
+  "observer_C_spatial": "C12=k, all others zero",
+  "observer_quad": "-k^2",
+  "positive_metric_scalar": 0,
+  "scope": "exact Lorentz geometry: flat G, nonintegrable twist u, full nonzero Ricci and Einstein, NOT native stationary"
+}

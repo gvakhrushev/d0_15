@@ -1,0 +1,46 @@
+{
+  "source_revision": "41582f57ce2b4bc8c9fad322e3c2d8ecaadb8b70",
+  "python": "/Library/Developer/CommandLineTools/usr/bin/python3",
+  "python_version": "3.9.6",
+  "platform": "macOS-26.5.1-arm64-arm-64bit",
+  "source_files": {
+    "02_REGISTRY/research/A4D_FINITE_SCALAR_RECOVERY_COMPLETE_CODE_INFO_SOURCE_2026_10_20.md": {
+      "sha256": "a604957b296df1a49313fbb5a7f817b670f3036c8aaad921714adabcb210e073"
+    },
+    "02_REGISTRY/research/A4D_CAUSAL_BOOK_SOURCE_TO_EXACT_GR_SYNTHESIS_2026_10_20.md": {
+      "sha256": "d5a7ff1fae4b1752e199b285311f597ad6da2f9c356c2dd104e310d0d7162ccd"
+    }
+  },
+  "artifacts": {
+    "PROOF.md": {
+      "sha256": "5a1663eab057529797b66bc64ad8f77ab94b9385694a04c968f1402cb1a5fec8"
+    },
+    "check_record_algebras.py": {
+      "sha256": "6be887b33ee47c23f90af33fa2aac45564d4666818b9bccf12ab42eb5650f5d2"
+    },
+    "results.json": {
+      "sha256": "88c39e62490f616aa629d8b12aa4eeddd1359c2d1a67987c708711caa4c45f43"
+    },
+    "PROSPECTIVE_SELECTION_4867.md": {
+      "sha256": "8004abaa24764409d07c90dc1abbcb5cb97c3c6e56fd724f60be95a616935724"
+    },
+    "check_prospective_selection.py": {
+      "sha256": "fba6b846d9eee6560cf0b5978721e0562d34ae9cc38019915a537a4f5df34a75"
+    },
+    "prospective_results.json": {
+      "sha256": "f90a91a96ffdebd85834265eb97babb2265271d815b8ce296bc10bc2b321949b"
+    }
+  },
+  "replay": "python3 check_record_algebras.py",
+  "validation": "PASS; exact identities + finite classification + numerical diagnostics; no interval or physical acceptance asserted",
+  "repository_mutations": false,
+  "runtime_seconds": 1.01819225,
+  "continuation_revision": "4867b6d43b262da7e0e08b9b14a7a7a20d9a2ac4",
+  "continuation_inputs": {
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/MINIMAL_GOLDEN_COMPLETE_SOURCE.md": {
+      "sha256": "f6a5724e087c58b4294020a59532b7117f55247013181bcd4fd30d069a649330"
+    }
+  },
+  "prospective_runtime_seconds": 0.214363542,
+  "prospective_replay": "python3 check_prospective_selection.py"
+}

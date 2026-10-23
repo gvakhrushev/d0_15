@@ -1,0 +1,106 @@
+{
+  "checker_sha256": "63c2de4c2652e2893e77eaac422efb17977e9a1b1259f395be0dae3d93b4d4e3",
+  "checks": [
+    "historical input ref",
+    "historical bytes: six-face proof",
+    "historical bytes: six-face exact receipt",
+    "historical bytes: exact moment dictionary",
+    "historical bytes: paid code and full CQ writer",
+    "historical bytes: original positive polynomial report",
+    "historical bytes: strict domain and fixed scale",
+    "historical bytes: actual spatial weights and source",
+    "historical bytes: original unrestricted all40 dictionary",
+    "historical bytes: Book03 finite controller",
+    "historical bytes: prospective allowed and price definitions",
+    "historical bytes: prior prospective bridge scope",
+    "consumed six-face receipt: status",
+    "consumed six-face receipt: mesh_h",
+    "consumed six-face receipt: original_based_faces",
+    "consumed six-face receipt: normal_support_sites",
+    "consumed six-face receipt: profile_support_sites",
+    "consumed six-face receipt: cartan_changed_components",
+    "consumed six-face receipt: fixed_collar",
+    "consumed six-face receipt: direct_fhat",
+    "consumed six-face receipt: direct_q",
+    "consumed six-face receipt: source_combination",
+    "consumed six-face receipt: mixed_gravity_at_mesh",
+    "consumed six-face receipt: original_all40_theorem_replayed",
+    "Golden relation",
+    "3/5 < p < 5/8",
+    "actual baseline bands",
+    "0 < R0 < Q0 < 1",
+    "actual sigma-minus lambda lies in (-32,0)",
+    "k>=3 implies a<1/4",
+    "representative epsilon<2^-14",
+    "uniform k>=3 sign bound",
+    "strict signs for every positive actual rho",
+    "exact calibrated source combination",
+    "actual native material lies strictly inside |psi|<p/4",
+    "literal null/REST metric",
+    "actual rational normal D moment map",
+    "normal changes the calibrated metric",
+    "normal compound is square-zero",
+    "P5 exact VALUE on the finite normal surface",
+    "rank-one primary compound 01",
+    "rank-one primary compound 10",
+    "every Cartan-generator triple product vanishes",
+    "literal null generators are eta-skew",
+    "C8 exact VALUE and proper-link orthogonality",
+    "reverse links are exact eta-transpose inverses",
+    "actual report tables stay in their increasing branch",
+    "actual report entropy is strictly increasing",
+    "root00/competitor10 differ by one selector cell",
+    "retained fair-label whole-law replacement weights",
+    "whole-law price contrast has factor gamma/2"
+  ],
+  "checks_count": 51,
+  "exact_witness": {
+    "curvature_convention": "EPS_PLUS",
+    "diagnostic_epsilon": {
+      "constant": "5/1024",
+      "p_coefficient": "-1/128"
+    },
+    "diagnostic_scale_a": {
+      "constant": "-1",
+      "p_coefficient": "2"
+    },
+    "lambda": {
+      "constant": "-1099527356400/68720525311",
+      "p_coefficient": "-824647876594/68720525311"
+    },
+    "material_max_abs": "1/2048",
+    "mesh_h": "1/8",
+    "normal_r": "1/1099511627776",
+    "recording_orientation": "sigma=-1",
+    "rho_times_f": {
+      "constant": "1821094477797/154744866091662169371312128",
+      "p_coefficient": "16630352707355/2475917857466594709940994048"
+    },
+    "rho_times_q": {
+      "constant": "-5/72057594037927936",
+      "p_coefficient": "1/9007199254740992"
+    },
+    "spike_s": "1/1048576",
+    "z0": [
+      2,
+      0,
+      3,
+      3
+    ]
+  },
+  "pins_sha256": "4cb065fee988552852ce3ffb09ddd5a481f1a4ec6f2ed18fc747188960c715a8",
+  "proof_sha256": "dd455bb35f0a1826d75f55608a25d7db25eeee17b98f723ca4d360ea9dd15697",
+  "scope": {
+    "actual_positive_rho": "symbolic; no replacement or new L8 PF assignment",
+    "common_catalogue": "one catalogue containing all four literal nodes",
+    "continuous_full_state_lift": false,
+    "majority_and_factories": "consumed exact owners; no enormous-bank simulation",
+    "old_suites_replayed": false,
+    "physical_admission": "same-initial AB/BA controller diamond remains required",
+    "physical_price": "complete counted-CQ proven; compulsory Book binding remains open",
+    "scale": "k=3 arithmetic diagnostic; proof covers any once-fixed admitted k>=3",
+    "strict_price_sign": "analytical monotonicity after exact f>0,q<0"
+  },
+  "source_ref": "f64d4c3389b507c7e7fb66ace9480ed6191c463d",
+  "status": "PASS"
+}

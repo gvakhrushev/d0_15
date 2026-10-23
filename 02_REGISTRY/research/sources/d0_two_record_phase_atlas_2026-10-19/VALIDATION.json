@@ -1,0 +1,76 @@
+{
+  "input_refs": [
+    "90fc38d972cc8538ce6fff2912906a496733c097",
+    "d533539ba87aaddb567efa84beba765f608af296"
+  ],
+  "publication_base": "916880f9565340618b3bf0d0bae850bf8d6b3fff",
+  "command": "python 02_REGISTRY/research/sources/d0_two_record_phase_atlas_2026-10-19/check_two_record_phase.py",
+  "environment": "Python3.12.14, SymPy1.14.0 in isolated check-env",
+  "input_source_sha256": {
+    "02_REGISTRY/research/A4D_TWO_HISTORY_PHASE_HELMHOLTZ_AND_NATIVE_ACTION_GATE_2026_10_19.md": {
+      "ref": "90fc38d972cc8538ce6fff2912906a496733c097",
+      "sha256": "e2fefc4b92a0e61e5e48cd2f3db47934a87b62ee0696042aa918ba6dc5a6bbb1"
+    },
+    "02_REGISTRY/research/A4D_TWO_LINE_CAR_PROJECTIVE_LORENTZ_BARGMANN_GAUGE_FREE_2026_10_19.md": {
+      "ref": "90fc38d972cc8538ce6fff2912906a496733c097",
+      "sha256": "584cc078382d7f8b6ccdc3017119bfe4617e8138f0177ce2e2c5fa66118e65a7"
+    },
+    "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md": {
+      "ref": "d533539ba87aaddb567efa84beba765f608af296",
+      "sha256": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d"
+    },
+    "02_REGISTRY/research/A4D_NATIVE_GOLDEN_P_COMPLETE_CAR_CLOSED_HISTORY_SIX_PHASE_AND_PREPARATION_2026_10_19.md": {
+      "ref": "d533539ba87aaddb567efa84beba765f608af296",
+      "sha256": "7bcbc991f37c1d71eb97a43585537e1b2f6eb7e7a4ef929436ff1eae92bd8cb3"
+    },
+    "02_REGISTRY/research/A4D_FULL_FLAG_DEPHASED_CAR_CLOSED_HISTORY_PHASE_AND_PREPARATION_VARIATION_2026_10_19.md": {
+      "ref": "d533539ba87aaddb567efa84beba765f608af296",
+      "sha256": "1e7c8bf6e8e9d99eab870f095ffc72211672659eef01f7e463540bbc518cbcc5"
+    },
+    "02_REGISTRY/research/A4D_MINIMAL_SIX_ORIGINAL_SCENE_TRIANGLES_REPRODUCE_FULL_ROLE40_PALATINI_2026_10_20.md": {
+      "ref": "d533539ba87aaddb567efa84beba765f608af296",
+      "sha256": "8ec694e47077de7e1c908052242957144d041a045e072aead0e71c4512a7d5ca"
+    },
+    "02_REGISTRY/research/A4D_AUTOMORPHISM_NATURAL_SIX_FACE_ROLE_EMBEDDING_AND_ORDERED_MEMORY_TWIRL_2026_10_20.md": {
+      "ref": "d533539ba87aaddb567efa84beba765f608af296",
+      "sha256": "1f09e049a3175654497031d50263a672c6ed548a13e48de709b578420284789b"
+    },
+    "02_REGISTRY/research/sources/d0_native_role_face_integrability_2026-10-20/check_six_scene_triangles_role_bianchi_harmonic_wilson.mjs": {
+      "ref": "d533539ba87aaddb567efa84beba765f608af296",
+      "sha256": "bef9e67c8b9e7028da65177a67c51be8994c54a4617039caca66f4d1820cae41"
+    }
+  },
+  "artifact_sha256": {
+    "02_REGISTRY/research/A4D_TWO_RECORD_PHASE_ATLAS_AND_AUTOMATIC_PREPARATION_SOURCE_2026_10_19.md": "6b1ed68c1f503b68c211887ecca696b109b36541f181329c6e994f16dc8885a6",
+    "02_REGISTRY/research/sources/d0_two_record_phase_atlas_2026-10-19/check_two_record_phase.py": "9f6a2530c6222f3f89f5f6bd305ce614542cbc74455aca837682368b8e623e3e",
+    "02_REGISTRY/research/sources/d0_two_record_phase_atlas_2026-10-19/RESULT.json": "51facffd5d69d27e505890da2a7c9d83e48728e9d473dea08af0f08645c5071e",
+    "02_REGISTRY/research/sources/d0_two_record_phase_atlas_2026-10-19/README.md": "141e5ce0f2bf29a5ca922bcd3e1291bbb069a027591752c3ada26ffb90ef8e16"
+  },
+  "exact_checker": "PASS; saved stdout byte-identical",
+  "independent_review": {
+    "original_full32_checker_replay": "PASS",
+    "coherent_and_dephased_source_formulas": "PASS",
+    "all36_general_flag_Jacobian_entries_and_determinant": "PASS independent derivation",
+    "native_Golden_specialization_and_balanced_rank3": "PASS",
+    "quotient_source_descent_and_fixed_cost_counterexample": "PASS",
+    "scope_corrections": "Native visibility delta*p^3; full-density boost information not lost; only simultaneous full-carrier relabeling is gauge."
+  },
+  "consumed_latest_replays": {
+    "native_p_six_three_density_phases": "PASS; existing result, not new",
+    "native_p_full_preparation": "PASS; existing result, not new",
+    "six_original_scene_triangles_full_role_40": "PASS all640 rows at three primes; existing result",
+    "role_bianchi_harmonic_wilson": "PASS; existing variational-domain guard"
+  },
+  "review_is_registry_acceptance": false,
+  "full_Lean_replay": false,
+  "whole_research_replay": false,
+  "GR_closed": false,
+  "raw216_closed": false,
+  "later_consumed_source_ref": "44159549a7b0b70e76f4ed02b846facfce4e8f5a",
+  "structural_checks": {
+    "validate_repo": "PASS warnings=0",
+    "validate_work": "PASS",
+    "validate_agent_protocol": "PASS",
+    "git_diff_check": "PASS"
+  }
+}

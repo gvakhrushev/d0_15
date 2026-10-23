@@ -1,0 +1,93 @@
+{
+  "files": {
+    "BOOK_INDEPENDENT_RESULT.json": {
+      "bytes": 3107,
+      "sha256": "301ae80999b21022c11606fd7bc688866f82b406278e7ce5e412d762d72a1902"
+    },
+    "BOOK_RESULT.json": {
+      "bytes": 3107,
+      "sha256": "87a66e020d5f13e46e7ef7c772aaefbb8a27a7457351ce059e35595fc34f77c4"
+    },
+    "EXACT_NATIVE_WRITER_GATE.md": {
+      "bytes": 18821,
+      "sha256": "672524e7a56e25675fda6cf295acc258877729f1a4d69bf0a52d4e1425884dcc"
+    },
+    "FIXED_PROCESSOR_BOOK_OPERATOR.md": {
+      "bytes": 13184,
+      "sha256": "cebf19d44d3ea3f8bb6bef1f9f6a2d98d01f7496ba908ba3f38f0b500875fd83"
+    },
+    "README.md": {
+      "bytes": 5632,
+      "sha256": "9696d82c6d137b43df09a934940c9788553853979c0a3a6f25b1aa6f27f0e839"
+    },
+    "REVIEW_EXACT_WRITER_GATE.md": {
+      "bytes": 19120,
+      "sha256": "160647b3748bd1fd804b27fbef87cb0ec429f154a2c49597ff4aaee06c2ddaa1"
+    },
+    "SOURCE_PINS.json": {
+      "bytes": 1754,
+      "sha256": "d4bb28a6c6ab67db2cb4831d2eeeb420d3fc3128b0c3e953d199dc76025a220c"
+    },
+    "WRITER_INDEPENDENT_RESULT.json": {
+      "bytes": 6623,
+      "sha256": "5bf9932e0be30cf9ae7e5e474364053685fc183158a9b123b10373e46c5076ca"
+    },
+    "WRITER_RESULT.json": {
+      "bytes": 6623,
+      "sha256": "5bf9932e0be30cf9ae7e5e474364053685fc183158a9b123b10373e46c5076ca"
+    },
+    "WRITER_SOURCE_PINS.json": {
+      "bytes": 3413,
+      "sha256": "08f1b362bae8d0cf11fa4ff21d02ef349b25139504eac71b4b8a6ce258c38ad7"
+    },
+    "check_exact_native_writer_gate.py": {
+      "bytes": 9150,
+      "sha256": "9db3e6226d1e16b23295e2643931b62650db96c6924bf58ca41e8517b3cf3ac8"
+    },
+    "check_writer_book_operator.py": {
+      "bytes": 10238,
+      "sha256": "bd832ee4599604f2d4099c95b64c1d18051e0e2b64471d88ae3b2643f190a257"
+    }
+  },
+  "integration_base_ref": "dda8f5d8ce5950cce4278b1f5b7d63f826b2e8f2",
+  "rebase_note": "Preserved concurrent complete-archive source/provenance commits through dda8f5d8. Added a scoped compatibility pointer and updated integration metadata; frozen proofs, checkers, reviews and replay results are unchanged.",
+  "receipt_comparison": {
+    "book_changed_fields": [
+      "proof_sha256"
+    ],
+    "book_check_count": 46,
+    "book_final_proof_reviewed_directly": true,
+    "writer_byte_identical": true
+  },
+  "replay_policy": "Author normal and independent optimized runs consumed without repeating unchanged packet checks after byte-identical import.",
+  "scientific_source_ref": "b60a111b43f723a841d253b1d5bd9650c46b2cf8",
+  "scope": {
+    "GR_closed": false,
+    "almost_surely_finite_pure_target": "EXCLUDED",
+    "compulsory_book03_info_supplied": false,
+    "exact_same_programme_from_declared_field_inputs": "EXCLUDED",
+    "fixed_vacuum_fourier128_prefix": "CONSTRUCTED_IN_DECLARED_INTERFACE",
+    "mixed_probe_exclusion": "FINITE_TREES_ONLY",
+    "moving_nonvacuum_writer_constructed": false,
+    "physical_primitive_admission_proved": false
+  },
+  "status": "PASS",
+  "structural_guards": [
+    {
+      "command": "python3 tools/validate_repo.py",
+      "exit_code": 0,
+      "output": "claims=889 assumptions=31 aliases=58 formal_support=183 lean_closure=918\nPASS warnings=0\n"
+    },
+    {
+      "command": "python3 tools/validate_work.py",
+      "exit_code": 0,
+      "output": "PASS work_validation: active work plane clean and enforced\n"
+    },
+    {
+      "command": "python3 tools/validate_agent_protocol.py",
+      "exit_code": 0,
+      "output": "PASS agent_protocol: cold-start task metadata enforced\n"
+    }
+  ],
+  "structural_guards_base_ref": "173e525dc6004387db25aa03a8bbcdee60b69115"
+}

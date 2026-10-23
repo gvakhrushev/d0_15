@@ -1,0 +1,111 @@
+{
+  "status": "PASS_SAME_EXECUTION_CAP1_SPATIAL_WEIGHTS",
+  "created": "2026-10-21",
+  "repository_head": "c49ebdb12244943d1ec45ef6d148a0432481141e",
+  "check_count": 23,
+  "checks": [
+    {
+      "name": "actual_two_band_baseline",
+      "status": "PASS"
+    },
+    {
+      "name": "actual_full_gravity_derivative",
+      "status": "PASS"
+    },
+    {
+      "name": "actual_full_matter_derivative_both_bands",
+      "status": "PASS"
+    },
+    {
+      "name": "original_finite_z_ratio_no_retuning",
+      "status": "PASS"
+    },
+    {
+      "name": "N1_field_source_is_report_only",
+      "status": "PASS"
+    },
+    {
+      "name": "N1_address_cost_slope_cancels",
+      "status": "PASS"
+    },
+    {
+      "name": "N2_address_cost_slope_does_not_cancel",
+      "status": "PASS"
+    },
+    {
+      "name": "actual_multiplicity_cancels_density_site1",
+      "status": "PASS"
+    },
+    {
+      "name": "full_scene_reference_copies_site1",
+      "status": "PASS"
+    },
+    {
+      "name": "actual_multiplicity_cancels_density_site2",
+      "status": "PASS"
+    },
+    {
+      "name": "full_scene_reference_copies_site2",
+      "status": "PASS"
+    },
+    {
+      "name": "actual_multiplicity_cancels_density_site3",
+      "status": "PASS"
+    },
+    {
+      "name": "full_scene_reference_copies_site3",
+      "status": "PASS"
+    },
+    {
+      "name": "sitewise_normalization_wrong_for_unequal_mass",
+      "status": "PASS"
+    },
+    {
+      "name": "single_global_normalization",
+      "status": "PASS"
+    },
+    {
+      "name": "moving_density_terms_retained_off_shell",
+      "status": "PASS"
+    },
+    {
+      "name": "moving_density_cancels_by_null_values",
+      "status": "PASS"
+    },
+    {
+      "name": "raw_matter_double_inverse_is_existing_dictionary",
+      "status": "PASS"
+    },
+    {
+      "name": "complete_baseline_derivative",
+      "status": "PASS"
+    },
+    {
+      "name": "preparation_not_made_stationary",
+      "status": "PASS"
+    },
+    {
+      "name": "owned_bank_caps_positive",
+      "status": "PASS"
+    },
+    {
+      "name": "N1_nonzero_source_sign",
+      "status": "PASS"
+    },
+    {
+      "name": "finite_z_negative_matter_ratio",
+      "status": "PASS"
+    }
+  ],
+  "owned_numeric_constants": {
+    "alpha": "0.66501609961003253007439476615",
+    "beta": "0.682201436849266332969330613053",
+    "r0": "0.00000185123957848820307628439505498",
+    "gamma1_multiplier_of_DJ2": "-12.4442926813186657140646964839",
+    "Lambda_minus": "-23.4164067518840749728955820649",
+    "per_copy_gravity_at_eta_quarter": "-0.0000000149089370971543368002753577432"
+  },
+  "scope": "One existing N=1 two-query CQ compiler. Exact symbolic multiplicities and source maps; no new address census, native Info selection or upstream stationary root.",
+  "runtime_seconds": 0.1013,
+  "checker_sha256": "8ba3f1c4ed3cfb274d9c94ed950994a3a1e357281d26769cf4dd3e8b283cc0f3"
+}

@@ -1,0 +1,30 @@
+{
+  "schema": "a4d-y-spatial-equal-curvature-tangent-v1",
+  "sector": "lambda=(mu,mu*r,mu*r,mu*r); smooth tangents depend on t and s=x1+x2+x3",
+  "y_bivector": "dx1^dx2-dx1^dx3+dx2^dx3",
+  "wave_covector": "(k0,ks,ks,ks)",
+  "wave_covector_y_contraction": "0",
+  "linear_riemann_y_y_contraction": "0",
+  "y_tensor_y_self_pairing": "36",
+  "bianchi_k_wedge_y_components": {
+    "012": "k0",
+    "013": "-k0",
+    "023": "k0",
+    "123": "k1 + k2 + k3"
+  },
+  "surviving_curvature_character_torus": "lambda0=1,lambda1*lambda2*lambda3=1",
+  "conformal_realization_formal_derivative_symbol": "R[2*phi*Pperp]=-(phi*|k|^2/3)*Y tensor Y for k=(0,a,b,-a-b)",
+  "warped_mixed_curvature": {
+    "R_tutu": "f(t, s)*Derivative(f(t, s), (t, 2))",
+    "R_susu": "f(t, s)*Derivative(f(t, s), (s, 2))",
+    "R_tusu": "f(t, s)*Derivative(f(t, s), s, t)"
+  },
+  "warped_vertical_curvature": "(Derivative(f(t, s), s) - Derivative(f(t, s), t))*(Derivative(f(t, s), s) + Derivative(f(t, s), t))*f(t, s)**2",
+  "consequence": "The intersection of spatial-equal linearized metric curvatures with the owned one-dimensional -Y tensor Y normal-jet compatibility direction is zero.  A smooth periodic compatible linearized curvature has mean zero and depends only on x2-x1,x3-x1; every such profile is geometrically realizable by a metric tangent. Independently, a positive periodic scalar warp whose exact curvature is purely Y-plane is constant.",
+  "scope_fence": [
+    "linearized metric curvature at eta for the owner compatibility intersection",
+    "the finite-amplitude owner joint Euler equations are not inferred",
+    "other Fourier sectors and singular center branches remain open",
+    "neither task-level terminal is asserted"
+  ]
+}

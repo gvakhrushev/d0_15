@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-22",
+  "owner": "EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE",
+  "phase": "native realization / exact mathematical source composition",
+  "status": "NARROW_V8_PASS",
+  "source_snapshot_before_new_packet": "16f9979748dc67ecc47878c7254d5d8ec9c14da5",
+  "files": {
+    "proof": {
+      "path": "02_REGISTRY/research/A4D_ADDRESS_EXTENSIVE_FORWARD_BOOK_CONTROLLER_SYNTHESIS_2026_10_22.md",
+      "blob": "632487ba473740a59052d0548eec782abb6f1a32"
+    },
+    "addressed": {
+      "path": "02_REGISTRY/research/sources/d0_address_extensive_book_2026-10-22/check_address_book.mjs",
+      "blob": "65824d68e50432d5fb8ea976470d45f9fbe071a0"
+    },
+    "programmed_cut": {
+      "path": "02_REGISTRY/research/sources/d0_address_extensive_book_2026-10-22/check_programmed_cut.mjs",
+      "blob": "cce242ab400416951596ec6aac008a3c7372a3bb"
+    }
+  },
+  "method": "Fetched exact pinned scientific JS source from remote GitHub; executed in V8 with only Node assert import replaced by equivalent throw-on-failure helpers and console.log routed to captured output. Mathematical computations, loops, and thresholds unchanged. Independently checked symbolic field/controller derivatives with high-precision mpmath; no GitHub CI / Node CLI / Lean claim.",
+  "controls": [
+    {
+      "file": "check_address_book.mjs",
+      "pass": true,
+      "assertions": 113,
+      "native_r0": 0.0000018512395785208469,
+      "book_per_copy": 6.569268397483825e-8,
+      "source_gain": 2.394918696037114e-9,
+      "book_common_controller_hessian": 2.1258599096698767e-7
+    },
+    {
+      "file": "check_programmed_cut.mjs",
+      "pass": true,
+      "assertions": 352,
+      "optimal_false_acceptance": "1/(m+1)",
+      "tested_m": "1..8",
+      "tested_input_angles_per_m": 11
+    }
+  ],
+  "statement": "One true rank-W block-diagonal Book complement retains field source independent of W and readiness, and screens common generated controller/preparation tangents on declared null chart; no-free-rank-select and no-programmed-unknown-pure-cut lemmas. Original physically admitted Book cut, common initial preparation, full Info/heat/clock and raw216 refinement remain open.",
+  "GR_closed": false
+}

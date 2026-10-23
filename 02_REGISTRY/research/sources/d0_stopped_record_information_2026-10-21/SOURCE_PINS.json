@@ -1,0 +1,76 @@
+{
+  "commit": "f1618c2de48d851fba0c7171ef783706f41e11d3",
+  "scope": "Existing stopped native instrument and old spectral/gain owners; application, not their re-proof or physical Info selection.",
+  "inputs": [
+    {
+      "path": "02_REGISTRY/research/sources/d0_operational_gain_2026-10-15/RESULT.md",
+      "sha256": "428bdda31e27ea6e7bf18ac93528fa4bc21c28677026341af2e86a36ac67ff52",
+      "git_blob": "c1b96688e2a263bf8c3ff333a9e8ee9cb91f255a"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_coherent_af_cost_info_2026-10-14/RESULT.md",
+      "sha256": "bb918a2f27548632de3a42114ab4ed4ed3e8ade5637b853d1928e678a228a05a",
+      "git_blob": "8155bef275c50e58da468038b8d6913dcd9d5325"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_LOCAL_GAIN_PROJECTIVITY_RIGIDITY.md",
+      "sha256": "d3c07fafec2a864003e99e70e28c1a3dce4177156c671002a665780776919a1a",
+      "git_blob": "6006f5386ba7de9aec5058cf648336133e4c2aca"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_FEASIBLE_GAIN_AND_ACTION_SOURCE.md",
+      "sha256": "93f44b61c590d30bfe8205f61c477f88d9f2219ef30ecdf48e33d796966556d1",
+      "git_blob": "53ff752c260806b576445b2985299ea3d01bc3ed"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/prospective/STOPPED_CLOCK_SOURCE.md",
+      "sha256": "75845813d20ecf7b585fb7b7a7bef8b8170a711e94a56bb0df0cc3546622a036",
+      "git_blob": "21031109172282833a938a79cef2ff7dec889266"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_same_history_price_composition_2026-10-20/check_paid_port_cost.py",
+      "sha256": "36a091aff2dc826aeabfac0c60a453a80c5bbfc23ecdaf0fd554b17cd8dd1bf3",
+      "git_blob": "aae4358db059f5bc797f4b1c6d09fe7cb16d8690"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_same_history_price_composition_2026-10-20/paid_port_history.md",
+      "sha256": "ef69c2052237fbe8e916acf16691f9b14b4c1c2465a7837e838db2baeb95449d",
+      "git_blob": "c93f54125d161edc6a3775922c477a3d73db1681"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/PRIMARY_CAR_PREPARATION_SOURCE.md",
+      "sha256": "97f85701e51dcb4b920f1e317cc21efa381d79a32533246ee1a89b61ca85978d",
+      "git_blob": "6d00e72d40d767f99b2778c69cee9a984c88bad2"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/D0_ONE_SOURCE_BREAKTHROUGH_SYNTHESIS.md",
+      "sha256": "ea5e70fdd317c50df685cc5e510a2876ad2fc3bc3a8ab4ded53785b727bde67b",
+      "git_blob": "6366d1bbd3b2947b00f5b07b85feb6dafe47bf31"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_EXISTING_PARTS_TO_FULL_PRICE_SYNTHESIS_2026_10_20.md",
+      "sha256": "d1d5fb4e3c3008b94356c5cd74d2714494593dbb69b03beb53759ecfa1597b13",
+      "git_blob": "3186c9810471a067a961c0bcf9149b9759d7f2b9"
+    }
+  ],
+  "consumed_published_updates": [
+    {
+      "commit": "963a9ae0a22ac05ba13b86e66f56bae68a6ec492",
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/PRIMARY_CAR_RECORD_PRICE_SOURCE.md",
+      "sha256": "15a058cb96f5fb51d1f086a3e65459d7cfb75d0ffe69761537c8bba46ac76111",
+      "git_blob": "393971c009081fbb43581e9e9daa542434d3538f"
+    },
+    {
+      "commit": "963a9ae0a22ac05ba13b86e66f56bae68a6ec492",
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/PRIMARY_CAR_RECORD_PRICE_SOURCE_REVIEW.md",
+      "sha256": "7c0e0cd8b7b8b257443e905925a084a6f01e010331af7bf333af9d62ffaad41d",
+      "git_blob": "b80b439cc94717a31b4b3db3177caa3ccc4cec46"
+    },
+    {
+      "commit": "963a9ae0a22ac05ba13b86e66f56bae68a6ec492",
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/COMPLETE_COMPILER_COFRAME_EQUIVALENCE.md",
+      "sha256": "65b23f3b2f9e821a574b90102b1a6d60f8d8f26447971fcd073ae53ff628534b",
+      "git_blob": "4a75e7666560602ce0b13b9ec33a6864dbff84ef"
+    }
+  ]
+}

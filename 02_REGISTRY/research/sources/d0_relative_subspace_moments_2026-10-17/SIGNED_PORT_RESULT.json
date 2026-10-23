@@ -1,0 +1,31 @@
+{
+  "schema": "d0-native-signed-port-overlap-quartic-controls/1",
+  "source": "check_native_signed_port.mjs",
+  "source_git_blob_sha": "8ef79a78bca44f136d3ebc261ea7ede0aa2e069b",
+  "runtime": "Published script fetched by commit SHA and evaluated as ECMAScript in the V8 tool with console output rerouted",
+  "result": {
+    "status": "PASS",
+    "exact_controls": 58,
+    "finite_cases": 6,
+    "algebraic_ring": "Z[a]/(a^4+a^2-1)",
+    "positive_comparison": "C_signed=I-2p^2 E_port1",
+    "universal_lower_bound": "p^3 I <= C_signed <= I",
+    "exact_full_port_effect": "E_port1=p epsilon Delta",
+    "exact_native_source": "d C_signed=-2p^2 d E_port1",
+    "nonzero_first_source_witness": [
+      "0",
+      "14912",
+      "0",
+      "-24128"
+    ]
+  },
+  "boundary": {
+    "actual_native_data_for_Eport1": true,
+    "chosen_signed_coherent_program_admitted": false,
+    "physically_selected_Cost_minus_Info": false,
+    "full_Einstein_source": false,
+    "raw_hm2_original_terminal": false,
+    "remote_CI_verified": false,
+    "full16_actual_field_source_verified": false
+  }
+}

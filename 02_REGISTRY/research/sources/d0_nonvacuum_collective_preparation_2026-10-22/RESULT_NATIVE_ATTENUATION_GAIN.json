@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "exact_arithmetic": "Q(p), p^2+p-1=0",
+  "exact_checks": 2070,
+  "actual_sign_columns": 1024,
+  "depth": 12,
+  "Lambda_u": 1,
+  "Lambda_v": 2,
+  "r0": {
+    "a": "-3014703/34359738368",
+    "b": "1245203/8589934592"
+  },
+  "r_x0": {
+    "a": "-14418153/68719476736",
+    "b": "23331193/68719476736"
+  },
+  "r_y0": {
+    "a": "-24642311/34359738368",
+    "b": "19923571/17179869184"
+  },
+  "report_range_diagnostic": [
+    1.8391646497971201e-06,
+    1.8632889134784232e-06
+  ],
+  "actual_centered_norm_diagnostic": 1.2074928691082873e-08,
+  "linear_bound_diagnostic": 6.823872103583185e-06,
+  "actual_signal_ratio_bound": 114626.99762408042,
+  "floating_diagnostics_are_not_certificates": true,
+  "complete_Book_source_selected": false,
+  "GR_closed": false
+}

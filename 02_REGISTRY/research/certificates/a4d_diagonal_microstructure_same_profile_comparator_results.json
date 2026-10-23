@@ -1,0 +1,170 @@
+{
+  "checks": [
+    "pinned_input_a4d_diagonal_microstructure_connection_stationary_slow_lift_check.py",
+    "pinned_input_MEMO_A4D_J2_SMOOTH_RESONANCE_CLOSURE.md",
+    "consumed_native_h2_h3_coefficients_are_the_all24_exact_checks",
+    "consumed_designated_smooth_sheet_is_a_function_of_g",
+    "sampled_metric_is_independent_of_fast_z",
+    "profile_has_flat_limit",
+    "smooth_sheet_mixed_coefficient_zero_h**2*x0*z",
+    "smooth_sheet_mixed_coefficient_zero_h**3*x0*z",
+    "same_profile_response_gap_zero_at_h2zx0_and_h3zx0",
+    "same_profile_continuum_Einstein_series_through_h3",
+    "same_profile_is_lorentzian_in_a_local_small_h_chart"
+  ],
+  "conclusion": "The h^2*z*x0 and h^3*z*x0 response-gap coefficients vanish on the pinned 24-dimensional formal joint family. This removes this local bidegree as a response-gap witness; it proves no exact root or refinement-uniform terminal.",
+  "continuum_geometry_control": {
+    "Einstein_tensor_series_through_h3": [
+      [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "-h**3/4",
+        "0"
+      ],
+      [
+        "0",
+        "-h**3/4",
+        "h**2/4",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "h**2/4"
+      ]
+    ],
+    "coordinate_relation": "X=h*x0",
+    "metric": [
+      [
+        "-X**2*h**2/4 + 1",
+        "X*h",
+        "-X*h**2/4",
+        "0"
+      ],
+      [
+        "X*h",
+        "X**2*h**2/4 - h**2/4 - 1",
+        "h",
+        "0"
+      ],
+      [
+        "-X*h**2/4",
+        "h",
+        "-h**2/4 - 1",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "-1"
+      ]
+    ],
+    "scope": "continuum local slow-profile check; not a finite discrete root"
+  },
+  "exact_checks": 11,
+  "inputs": {
+    "02_REGISTRY/research/MEMO_A4D_J2_SMOOTH_RESONANCE_CLOSURE.md": "3ba0c4355999b147bc77048b082660558c538c48d49ef7fff98d4541069bf28a",
+    "02_REGISTRY/research/certificates/a4d_diagonal_microstructure_connection_stationary_slow_lift_check.py": "11479b60d96a8cb26ce963ac3c4c5190d3de179c433f1bb20b8ea1e5d0a1ad02"
+  },
+  "nonclaims": [
+    "no exact coupled periodic root",
+    "no fixed nonconstant smooth metric refinement sequence",
+    "no owner-sum response estimate",
+    "no physical native admission or complete Cost-Info selection",
+    "no #334 terminal and no positive GR closure"
+  ],
+  "profile": {
+    "alpha": "E12+E21",
+    "beta": "E01+E10",
+    "metric_depends_on_fast_z": false,
+    "smooth_sheet_depends_on": "Q_h and its smooth derivatives only",
+    "solder": "I + h*(alpha*eta/2)^T + h^2*x0*(beta*eta/2)^T"
+  },
+  "same_profile_mixed_coefficients": {
+    "h**2*x0*z": {
+      "designated_216_smooth_sheet": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "native_all24_directions": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "normalized_response_difference": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    "h**3*x0*z": {
+      "designated_216_smooth_sheet": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "native_all24_directions": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "normalized_response_difference": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    }
+  },
+  "status": "PASS_SCOPED_SAME_PROFILE_COMPARATOR"
+}

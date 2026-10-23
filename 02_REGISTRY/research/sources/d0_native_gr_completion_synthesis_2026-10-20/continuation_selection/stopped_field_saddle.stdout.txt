@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "native_8D_fixed_return_basis": true,
+  "full_weighted_anchor_exact_quadratic_in_f": true,
+  "original_L2_changed_faces": 6,
+  "interior_collar_changed_faces": 6,
+  "actual_signal_Hessian": "[[0,-g],[-g,-2gD]], g,D>0",
+  "determinant": "-g^2",
+  "two_exact_direction_coefficients": [
+    "-gD",
+    "+gD"
+  ],
+  "full_CAR_clock_normalized_nonvacuum_family": true,
+  "actual_price_descent": "sign(kappa) selects one direction; entropy=o(eps^2)",
+  "nonvacuum_extension": "analytic continuity at each fixed finite mesh",
+  "scope": "Supplied stopped whole-J2 component; no total-HJR or continuum claim."
+}

@@ -1,0 +1,218 @@
+{
+  "schema": "d0-complete-compiler-coframe-canonical-perron-v1",
+  "date": "2026-10-20",
+  "task": "EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE",
+  "carrier": "native-programme-v1",
+  "source_snapshot": "24eebbda2a44896970271e03bf99b9518941234b",
+  "source_pins_verified_at": "6406ee7df93fa066abe7adb7d00ba5544c72a373",
+  "runtime": "JavaScript V8 functions tool runtime; self-contained source loaded without filesystem, Node, Python, or Lean execution",
+  "source_pins": [
+    {
+      "path": "02_REGISTRY/research/sources/d0_global_result_composition_2026-10-20/FULL_PRICE_COMPOSITION.md",
+      "git_blob": "b0d4483c42e4ac8281603b1459c1f2464da1fff9"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/GOLDEN_EXACT_DETECTOR.md",
+      "git_blob": "92b9003d783c24b1883a2a21f8b30625078afff7"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_EXACT_AF_RADIAL_COFRAME_EQUIVALENCE_NONLINEAR_SPIN2_2026_10_18.md",
+      "git_blob": "734e21ae6bc04ff3446ad15858936d417fdd2e55"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_relational_coherent_synthesis_2026-10-20/coframe_equivalence.md",
+      "git_blob": "0b62260970a6ac8712d7989cf22897a5bd17dd0e"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_LOCAL_LEFT_CODED_CAR_NULL_MATTER_EINSTEIN_2026_10_18.md",
+      "git_blob": "75c40d133a23973a36ba5b95d34b4eb36ca96663"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_af_star_full_lattice_2026-10-17/star_euler.py",
+      "git_blob": "fb0d5d423e218f77ecd19d8e3acaf178e1321c79"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/PRIMARY_CAR_PREPARATION_SOURCE.md",
+      "git_blob": "6d00e72d40d767f99b2778c69cee9a984c88bad2"
+    },
+    {
+      "path": "03_FORMALIZATION/D0/Dynamics/ToralAutomorphism.lean",
+      "git_blob": "d6c7789c4cc55c24dc27de59acf574c8e1b20d36"
+    },
+    {
+      "path": "03_FORMALIZATION/D0/Dynamics/TwoTickSymplectic.lean",
+      "git_blob": "e5b35dd66cf3be3158ad662217e5ae5d7a5fe205"
+    },
+    {
+      "path": "03_FORMALIZATION/D0/Foundation/BranchSymplecticForcing.lean",
+      "git_blob": "027f552c4b14c917c307b32b00bf12ab3c29719c"
+    },
+    {
+      "path": "03_FORMALIZATION/D0/Bridge/ConstrainedHamiltonianEmbeddingPassport.lean",
+      "git_blob": "0e2e82767b15ee01eff3b00fb1f424a957d3f197"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_STATIONARY_SOURCE_COTANGENT_RELATION.md",
+      "git_blob": "4b008f7e63a050c64295d6b196582d2601499dad"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/NATIVE_FIELD_WRITER_BRIDGE.md",
+      "git_blob": "fa59e9f59e061e6bcda0f05f29abed1e641f8ebb"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/stationary_information/STATIONARY_EXECUTION_BRIDGE.md",
+      "git_blob": "15d24f331ccf4328c3a48bba52fc825fa00588dd"
+    },
+    {
+      "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_quadratic_cartan_2026-10-19/arbitrary_brinkmann_all40.md",
+      "git_blob": "050ee972efa0f2ae37206b2ef9e3b4122dbac204"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_SINGLE_RUN_PERRON_BOOK_CAR16_FRESH_FLAG_SOURCE_WELD_2026_10_19.md",
+      "git_blob": "da8bb08e96de3a25b83e56d8ad0ec769a4227268"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_SCENE_PERRON_DOOB_SINGLE_HISTORY_GOLDEN_INFO_SOURCE_2026_10_19.md",
+      "git_blob": "e212dfbc22007c6bafa10d80d38c35d51ce5b347"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_BOOK_PATH_ARCHIVE_GROWTH_AND_PERRON_PRESSURE_FORCING_2026_10_19.md",
+      "git_blob": "80b5574e1e6b3277ba0e35920cddadf1e484fb3f"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/BOOK_SOURCE_BINDING.md",
+      "git_blob": "0fc40d94bf6db0d0be49c783c902274821af5b92"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_AF_TRACE_PREPARATION.md",
+      "git_blob": "3cbb805fb72b501a0eb1d7d17b9f037dff115880"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/COMPLETE_COMPILER_COFRAME_EQUIVALENCE.md",
+      "sha256": "65b23f3b2f9e821a574b90102b1a6d60f8d8f26447971fcd073ae53ff628534b",
+      "characters": 15134
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/check_complete_compiler_coframe_equivalence.mjs",
+      "sha256": "a762c7cb52c785bd18ec617a8dcb49e91fe12cdd327a97545dff71011f40d8fa",
+      "characters": 9907
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/CANONICAL_GENERATOR_AND_PRICE_INTERFACE.md",
+      "sha256": "56c479d3329e1d45170f82df5e16ef8d6240f6745db4c975c6b0b66dad5d014e",
+      "characters": 14139
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/check_canonical_generator_and_price_interface.mjs",
+      "sha256": "13a223212061fb5cbda3e54ba18e6d715dfe7ba230d35fd629ce65ad2e51bed8",
+      "characters": 7562
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/PERRON_COMPLETE_MARKED_SOURCE.md",
+      "sha256": "2f463857471f2939c04b4d5080715f21378e390cdb0a91607dbd431227705042",
+      "characters": 17661
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/check_perron_complete_marked_source.cjs",
+      "sha256": "c079a9ae5060ae874bf9a10353c9ad0074d991a194b1ff4c44a879d94a041c6b",
+      "characters": 10358
+    }
+  ],
+  "checks": {
+    "coframe": {
+      "status": "PASS",
+      "geometry": "original six based faces, 16 sites",
+      "new_source_rows": 40,
+      "alpha": 0.6650160996100375,
+      "beta": 0.6822014368492667,
+      "nonzero_native_c": -1.4908937097154475e-8,
+      "max_omitted_link_pullback": 0.001185395436501313,
+      "exact_density_signs": "rx,ry>0; rxx,rxy,ryy<0",
+      "two_density_Hvv": 9.701339981602488e-7,
+      "finite_AMGM_gap": 4.8368825681115765e-11,
+      "scope": "new vacuum ledger/coframe composition; no physical Info, preparation root or nonvacuum all42 inference"
+    },
+    "canonical": {
+      "status": "PASS",
+      "arithmetic": "exact BigInt rational",
+      "checks": 38,
+      "scope": "Algebraic local lift, full source cotangent transport; no native Book-price, field-writer, or GR-admission claim.",
+      "passed": [
+        "owned integer two-tick matrix",
+        "two-tick symplectic identity",
+        "type-I input momentum",
+        "type-I output momentum",
+        "type-II exact Legendre value",
+        "type-II input momentum",
+        "type-II output coordinate",
+        "omitted Legendre pairing is detected",
+        "positive type-I Hessian by Sylvester",
+        "indefinite type-II Hessian",
+        "exact type-II eigenvalue square",
+        "winding input momentum",
+        "winding output momentum",
+        "winding partial Legendre value",
+        "winding type-II input momentum",
+        "winding type-II output coordinate",
+        "omitted winding term is detected",
+        "coframe shear is symplectic",
+        "endpoint-frame conjugated step",
+        "sheared type-I input momentum",
+        "sheared type-I output momentum",
+        "complete shear contribution telescopes",
+        "every interior H coefficient cancels",
+        "one-sided frame omission is detected",
+        "coframe fixture exact positive square root",
+        "full coframe/history Jacobian",
+        "full cotangent inverse transpose",
+        "Liouville identity direction 0",
+        "Liouville identity direction 1",
+        "Liouville identity direction 2",
+        "explicit full history momentum correction",
+        "history correction is not zero",
+        "exact actual normal-form value",
+        "complete source graph pullback",
+        "cotangent source graph transport",
+        "frozen history dressing loses actual source",
+        "shell shear nilpotent",
+        "shell exact inverse I-N"
+      ]
+    },
+    "perron": {
+      "result": "PASS",
+      "checks": 508,
+      "complete_three_step_leaves": 192,
+      "stopped_leaves": 66,
+      "original_supported_edges": 718,
+      "exact_mean": "267322400150037977/58904559303715125",
+      "exact_mean_derivative": "-83381814596600033645011564/645627008063417241220734375",
+      "omitted_explicit_price_source": "-3273803523763/19739532439935",
+      "omitted_final_endpoint_source": "17989256308384602151/218274116975433268750",
+      "omitted_conditional_source": "77850820417584/6676398601765625",
+      "scope": "Noncommuting Kraus + fixed oldRIGHT first-jet algebra; full718 support scalar only. No physical Info selection, old native replay, or GR claim."
+    }
+  },
+  "scope": {
+    "vacuum_complete_CQ_equation_equivalence": "proved on the declared independent local-ledger chart, with actual weighted Palatini target and DB retained",
+    "nonvacuum_single_radial_extension": "excluded on the stated independent two-density input curve; physical realizability remains separate",
+    "native_stationary_price_binding": "open",
+    "compulsory_Book_Info_selection": "open",
+    "internal_stationary_preparation": "open",
+    "native_field_writer_and_clock": "open",
+    "GR_closed": false
+  },
+  "reviews": {
+    "coframe": "review_midpoint author; action_bridge independent analytical check; root source and integration review",
+    "canonical": "action_bridge author; root exact algebra/source review, including corrected normal-coframe versus H-shear distinction",
+    "perron": "smooth_recovery author; root CP, fixed/stopped-path and full-baseline review; author accepted two clarification phrases and .cjs extension"
+  },
+  "verification_limits": [
+    "New finite checks reproduce the displayed compositions; they are not physical admission or GR evidence.",
+    "Coframe geometry dyadic identities are exact; entropy and square-root diagnostics use floating arithmetic with the stated fixed tolerance.",
+    "Canonical and Perron checks use exact BigInt rational algebra/first jets.",
+    "No old all40+2, full128 spectrum, original compiler, or Lean replay was run.",
+    "Filesystem executor was unavailable; source bytes and run results were retained through the Git connector workflow."
+  ]
+}

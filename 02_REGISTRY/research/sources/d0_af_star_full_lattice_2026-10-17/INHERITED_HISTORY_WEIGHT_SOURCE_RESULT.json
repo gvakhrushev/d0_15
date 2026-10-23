@@ -1,0 +1,40 @@
+{
+  "full_preparation": {
+    "all_normalized_preparation_tangents": "zero",
+    "frozen_flat_profile_control": "rejected",
+    "full_gradient_dimension": 20,
+    "off_shell_profile": "log(sum_i[1+2 exp(h(e_i))])/log(phi)",
+    "old_full_GNS_dimension": 5,
+    "reference_extension": "tensor identity, including reference128"
+  },
+  "history": {
+    "canonical_ready_pending_transfer_phi_source": "-epsilon",
+    "coarse_prefix_source": "zero",
+    "fine_source": "-mu_Q log(chi/c)/log(phi)",
+    "fine_source_root": "chi=1",
+    "literal_AF_embeddings": 12
+  },
+  "nonlinear_weighted_source": {
+    "matter_compatibility": "T=2*w*j_w",
+    "metric_rows": 10,
+    "non_Einstein_G_uu": "2*k^2",
+    "omitted_kinetic_source": "rejected",
+    "scalar_row": "trace-dependent",
+    "weighted_rows": "zero"
+  },
+  "physical_D0_GR": "open",
+  "retained_word": {
+    "AF_level": 1,
+    "actual_GNS_work_dimension": 10,
+    "ambient_extension_dimension": 18,
+    "left_weights": [
+      "2*p^3",
+      "2*p^4",
+      "p^3"
+    ],
+    "right_archive": "exactly preserved",
+    "word": "CNOT(W,L) G(W) CNOT(L,W); identity on M1",
+    "work_price": "must remain in the complete programme source"
+  },
+  "scope": "inherited_left_fine_leaf_binding_required"
+}

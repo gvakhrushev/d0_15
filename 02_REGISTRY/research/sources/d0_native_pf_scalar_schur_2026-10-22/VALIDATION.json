@@ -1,0 +1,64 @@
+{
+  "title": "Native Golden PF discrete C2 + two-real temporal CAR Schur source",
+  "date": "2026-10-22",
+  "pr": 334,
+  "owner": "EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE",
+  "proof_git_blob": "2cc3bd572473c6cb77f034c930592c82dbd1425c",
+  "checker_git_blob": "6d8dafd7e4fa9dc605fbcaf32085dab69148c84c",
+  "result_git_blob": "401a0b59156c1dc7d0d0f462a2b58e1fd57eb3c8",
+  "sha256": {
+    "proof": "9fe65a94203985cd8e77444febd2582c9733090f3bb7a128285b2b273da85180",
+    "script": "45c34ea9f8d2d60d97c36bcd203a5fa5f41d14e3aaa63ead1c704dc1290bdfe3",
+    "result": "dbce4ddcb38b0d52bb34b09f54515b2f332e81e1182d1564c3d412c7d172d79c"
+  },
+  "exact_math": {
+    "native_PF_depth": "n(L)=64*ceil(log_phi(L))+128, L>=4",
+    "PF_sup": "||rho-1||_inf<9h^3",
+    "PF_log_gradient": "<36h^2",
+    "PF_log_second_difference": "<72h",
+    "native_N1_full_y_analytic_rectangle": "|x|,|y|,|y-yperp|<=1/128",
+    "uniform_positive_radial_normalized_Fyy": "(F_y+2(y-yperp)F_yy)/(alpha beta)>1.06588e-5",
+    "flux_current": "J_i=g_i^{00}F_y(x_i,y_i)(u_i+b_i)",
+    "time_Euler": "J_{i-1}=J_i both real scalar components",
+    "material_reduced_hessian": "Hgg-Hgpsi Hpsipsi^-1 Hpsig, all true derivatives"
+  },
+  "executed": {
+    "command": "OPENBLAS_NUM_THREADS=1 python3 check_pf_scalar_schur.py",
+    "optimized": "OPENBLAS_NUM_THREADS=1 python3 -O check_pf_scalar_schur.py",
+    "stdout_byte_identical": true,
+    "real_original_counts_L4": [
+      38,
+      44,
+      60,
+      56
+    ],
+    "real_original_counts_L8": [
+      8,
+      5,
+      8,
+      7,
+      6,
+      7,
+      8,
+      6
+    ],
+    "real_L4_two_component_grad": 3.833038950108735e-11,
+    "real_L8_two_component_grad": 1.7009446131942938e-11,
+    "real_L4_full_scalar_hessian_min_eig": 0.00000899122831796738,
+    "real_L8_full_scalar_hessian_min_eig": 0.000009394137306587214,
+    "envelope_secant_err_L4": 9.543352277443896e-13,
+    "envelope_secant_err_L8": 1.8564242232789864e-13
+  },
+  "scope": {
+    "proved": "whole finite temporal time-material block conditional on fixed geometry and strict positive chart",
+    "independently_replayed_original_site_census": true,
+    "original_CAR_source_and_sixface_metric": true,
+    "two_scalar_spatial_Euler_solved": false,
+    "all_16_coframe_24_Lorentz_solved": false,
+    "whole_spacetime_gauge_boundary_inverse_solved": false,
+    "Book03_full_absolute_Info_and_optimal_selection_proved": false,
+    "native_field_writer_preparation_and_refinement_solved": false,
+    "GR_closed": false,
+    "independent_acceptance": false
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "read_at": "b5175db6552426ff946fc3594d46a895bfa88275",
+  "pinned_scientific_input_remains": "401eafb2958e9d9626db833a25f02b35b3871c16",
+  "entries": [
+    {
+      "path": "02_REGISTRY/research/sources/d0_covariant_multiscalar_price_2026-10-21/CROSSING_STREAMS.md",
+      "git_blob": "45329a4c9f556fcdf5321e90b2fc438bd2209a4a",
+      "relation": "Same general continuum seed with parameter d>0; this packet computes d=1 with explicit epsilon calibration. No separate discovery claim."
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_causal_native_weighted_synthesis_2026-10-21/weighted_dynamics/check_discrete_material_ward.py",
+      "git_blob": "0c9f859c7f8cf8e72ca6e915e0edadf91942e6da",
+      "relation": "Actual sampled coframe Lie variation. This packet retains its exact inverse-chain difference from the inverse-metric variant, rather than identifying them."
+    }
+  ],
+  "distinct_package_consumer": "Exact midpoint-generated finite two-material-row lift on the rank-two non-VSI original-metric representative; full geometric finite rows remain open.",
+  "independent_scientific_acceptance_claimed": false
+}

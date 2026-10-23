@@ -1,0 +1,229 @@
+{
+  "source_revision": "41582f57",
+  "full_pinned_source_revision": "41582f57 (parent supplied published pin)",
+  "cap_two_leaf_order": "A,B,E,unresolved0,C,D,F,unresolved1",
+  "classification": [
+    {
+      "partition": "ABCD",
+      "ratio": "1",
+      "coefficient_over_2p3": -1.0,
+      "coefficient": -0.4721359549995794,
+      "entropy_at_zero": -0.0,
+      "price_at_zero": 3.7082039324993694,
+      "numerical_derivative": -0.4721359550208248
+    },
+    {
+      "partition": "ABC|D",
+      "ratio": "1",
+      "coefficient_over_2p3": -1.0,
+      "coefficient": -0.4721359549995794,
+      "entropy_at_zero": 1.1356849445809898,
+      "price_at_zero": 2.5725189879183796,
+      "numerical_derivative": -0.4721359550208248
+    },
+    {
+      "partition": "ABD|C",
+      "ratio": "1 + sqrt(5)",
+      "coefficient_over_2p3": 1.440420090412557,
+      "coefficient": 0.6800741149875131,
+      "entropy_at_zero": 1.1356849445809898,
+      "price_at_zero": 2.5725189879183796,
+      "numerical_derivative": 0.6800741148449417
+    },
+    {
+      "partition": "AB|CD",
+      "ratio": "sqrt(5)/2",
+      "coefficient_over_2p3": -0.7681441522280016,
+      "coefficient": -0.3626684728895098,
+      "entropy_at_zero": 1.4371915439255152,
+      "price_at_zero": 2.2710123885738542,
+      "numerical_derivative": -0.36266847291965826
+    },
+    {
+      "partition": "AB|C|D",
+      "ratio": "sqrt(5)",
+      "coefficient_over_2p3": 0.6722759381845551,
+      "coefficient": 0.31740564209800315,
+      "entropy_at_zero": 2.117265658913028,
+      "price_at_zero": 1.5909382735863415,
+      "numerical_derivative": 0.31740564196969245
+    },
+    {
+      "partition": "ACD|B",
+      "ratio": "1",
+      "coefficient_over_2p3": -1.0,
+      "coefficient": -0.4721359549995794,
+      "entropy_at_zero": 1.3819660112501055,
+      "price_at_zero": 2.326237921249264,
+      "numerical_derivative": -0.4721359549986203
+    },
+    {
+      "partition": "AC|BD",
+      "ratio": "1",
+      "coefficient_over_2p3": -1.0,
+      "coefficient": -0.4721359549995794,
+      "entropy_at_zero": 1.3819660112501055,
+      "price_at_zero": 2.326237921249264,
+      "numerical_derivative": -0.4721359549542114
+    },
+    {
+      "partition": "AC|B|D",
+      "ratio": "1",
+      "coefficient_over_2p3": -1.0,
+      "coefficient": -0.4721359549995794,
+      "entropy_at_zero": 2.2360679774997902,
+      "price_at_zero": 1.4721359549995792,
+      "numerical_derivative": -0.47213595497641586
+    },
+    {
+      "partition": "AD|BC",
+      "ratio": "-1/2 + sqrt(5)/2",
+      "coefficient_over_2p3": -2.0,
+      "coefficient": -0.9442719099991588,
+      "entropy_at_zero": 1.3819660112501055,
+      "price_at_zero": 2.326237921249264,
+      "numerical_derivative": -0.9442719099306273
+    },
+    {
+      "partition": "A|BCD",
+      "ratio": "-1/2 + 3*sqrt(5)/10",
+      "coefficient_over_2p3": -4.672275938184555,
+      "coefficient": -2.2059494620963207,
+      "entropy_at_zero": 0.8635019005851667,
+      "price_at_zero": 2.8447020319142027,
+      "numerical_derivative": -2.205949461919765
+    },
+    {
+      "partition": "A|BC|D",
+      "ratio": "-2 + sqrt(5)",
+      "coefficient_over_2p3": -4.0,
+      "coefficient": -1.8885438199983176,
+      "entropy_at_zero": 1.9098300562505262,
+      "price_at_zero": 1.7983738762488433,
+      "numerical_derivative": -1.8885438198057434
+    },
+    {
+      "partition": "AD|B|C",
+      "ratio": "1/2 + sqrt(5)/2",
+      "coefficient_over_2p3": 0.0,
+      "coefficient": 0.0,
+      "entropy_at_zero": 2.2360679774997902,
+      "price_at_zero": 1.4721359549995792,
+      "numerical_derivative": -8.881784197001251e-11
+    },
+    {
+      "partition": "A|BD|C",
+      "ratio": "-1/2 + sqrt(5)/2",
+      "coefficient_over_2p3": -2.0,
+      "coefficient": -0.9442719099991588,
+      "entropy_at_zero": 1.9098300562505262,
+      "price_at_zero": 1.7983738762488433,
+      "numerical_derivative": -0.9442719099528317
+    },
+    {
+      "partition": "A|B|CD",
+      "ratio": "-1/4 + sqrt(5)/4",
+      "coefficient_over_2p3": -3.440420090412557,
+      "coefficient": -1.624346024986672,
+      "entropy_at_zero": 2.083857907512698,
+      "price_at_zero": 1.6243460249866715,
+      "numerical_derivative": -1.624346024819978
+    },
+    {
+      "partition": "A|B|C|D",
+      "ratio": "-1/2 + sqrt(5)/2",
+      "coefficient_over_2p3": -2.0,
+      "coefficient": -0.9442719099991588,
+      "entropy_at_zero": 2.763932022500211,
+      "price_at_zero": 0.9442719099991583,
+      "numerical_derivative": -0.9442719099528317
+    }
+  ],
+  "counts": {
+    "partitions": 15,
+    "zero": 1,
+    "positive": 2,
+    "negative": 12
+  },
+  "full_eight_leaf_partition_counts": {
+    "zero": 372,
+    "positive": 523,
+    "negative": 3245
+  },
+  "source_coefficient_classes": 9,
+  "stationary_pointer_pair_descent_control": [
+    {
+      "epsilon": 0.01,
+      "price_change": -0.0022617361941197345,
+      "normalized_by_epsilon2_logepsilon2": 2.4556488715676568,
+      "limiting_coefficient": 2.568656697799746
+    },
+    {
+      "epsilon": 0.001,
+      "price_change": -3.44465105994729e-05,
+      "normalized_by_epsilon2_logepsilon2": 2.493321579028826,
+      "limiting_coefficient": 2.568656697799746
+    },
+    {
+      "epsilon": 0.0001,
+      "price_change": -4.627561223102816e-07,
+      "normalized_by_epsilon2_logepsilon2": 2.5121553798287697,
+      "limiting_coefficient": 2.568656697799746
+    }
+  ],
+  "smooth_zero_source_algebra": {
+    "blocks": [
+      [
+        0,
+        5,
+        2,
+        6,
+        3,
+        7
+      ],
+      [
+        1
+      ],
+      [
+        4
+      ]
+    ],
+    "hessian": 2.7028983343410404,
+    "hessian_finite_difference": 2.7028974169951425,
+    "exact_formula": "4*p**2/log(phi)-2*p**3",
+    "price_at_zero": "4*p-1"
+  },
+  "exact_algebra_checks": [
+    {
+      "cap": 1,
+      "normalization": true,
+      "kraft": true,
+      "code": true,
+      "born_pointer_quadratic_coefficient": "-1/2 + sqrt(5)/2"
+    },
+    {
+      "cap": 2,
+      "normalization": true,
+      "kraft": true,
+      "code": true,
+      "born_pointer_quadratic_coefficient": "-1/2 + sqrt(5)/2"
+    },
+    {
+      "cap": 3,
+      "normalization": true,
+      "kraft": true,
+      "code": true,
+      "born_pointer_quadratic_coefficient": "-1/2 + sqrt(5)/2"
+    },
+    {
+      "cap": 5,
+      "normalization": true,
+      "kraft": true,
+      "code": true,
+      "born_pointer_quadratic_coefficient": "-1/2 + sqrt(5)/2"
+    }
+  ],
+  "max_coherent_tape_spectrum_error": 6.661338147750939e-16,
+  "scope": "Fixed unital *-subalgebras containing all rank-one pointer projections; canonical ambient trace entropy. No physical algebra selection asserted.",
+  "checker_runtime_seconds": 1.01819225
+}

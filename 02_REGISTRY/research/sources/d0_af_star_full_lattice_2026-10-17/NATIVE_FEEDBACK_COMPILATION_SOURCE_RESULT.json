@@ -1,0 +1,54 @@
+{
+  "status": "PASS",
+  "tensor_feedback": {
+    "two_tick_live_eigenvalue": "4e(1-e)",
+    "native_retained_scene_modes": 528,
+    "ambient_scene_complement": 22448,
+    "retained_scene_zero_modes": 264,
+    "flat_feedback_rank_per_K": 792,
+    "return_cut_rank_per_K": 1056,
+    "trace_weight_origin": "ordinary regular determinant; no RIGHT measurement"
+  },
+  "moving_scene": {
+    "source": "D Tr(C_E dE) + Tr(H_B dB)",
+    "noncommuting_directions": true,
+    "balanced_state_cancels_scene_row": false,
+    "spectator_factor": "multiply BOTH covectors by actual nu",
+    "whole_stack_remaining_source_proved_zero": false
+  },
+  "compiled_source": {
+    "clean_return_test_required": true,
+    "old_offblank_countercontrol": "nonzero",
+    "zero_feedback_jets": [
+      "0",
+      "0",
+      "2/3",
+      "0"
+    ],
+    "first_source_bound": "4 z r L epsilon/(1-z)^2",
+    "C3_bound_fixed_z": "2^14 z r L^6 epsilon/(1-z)^4",
+    "relative_bound": "dimension independent; true t^-2 and spatial budget remain",
+    "exact_compiled_roots_inferred": false
+  },
+  "preparation_boundary": {
+    "full_CAR_components": 16,
+    "fixed_word_seed_sector": "<H>=1/2, hence b<=L_scene/2<1/2",
+    "common_CAR_charge_all_four_Julia_primitives": "scalar for complex-linear/real16 observables",
+    "full_controllability_or_matter_stress_inferred": false
+  },
+  "same_program": {
+    "fixed_word_v8_feedback_flat_scaling_limit": "0",
+    "AF_star_retained_active_feedback_lower_bound": "L_scene>0",
+    "honest_full_AF_spectator_multiplier": "F_(2N+15)=O(F_(2N+9))",
+    "old_feedback_suppressed_by_AF_dimension": false,
+    "same_program_heat_feedback_interface_proved": false
+  },
+  "fixed_word_scaling": {
+    "periodic_boost_star_source": "2/5",
+    "native_fixed_query_word_source": "O(scale^3)",
+    "exact_open_patch_star_factorization": false,
+    "compact_C3_approximation_excluded": false,
+    "individual_exact_roots_excluded": false
+  },
+  "physical_full_D0_GR_proved": false
+}

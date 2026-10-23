@@ -1,0 +1,25 @@
+{
+  "expected_receipts_changed": false,
+  "mutations": [
+    {
+      "failed_check": "moving_noncommutative_determinants",
+      "mutation": "omit_left_normalization",
+      "result": "REJECTED_BY_MATHEMATICS"
+    },
+    {
+      "failed_check": "all_endpoint_source_jet_1",
+      "mutation": "freeze_right_endpoint_source",
+      "result": "REJECTED_BY_MATHEMATICS"
+    },
+    {
+      "failed_check": "frozen_lapse_reference_scalar",
+      "mutation": "discard_lapse_curvature",
+      "result": "REJECTED_BY_MATHEMATICS"
+    },
+    {
+      "failed_check": "full_volume_source_kept",
+      "mutation": "treat_reference_volume_as_constant",
+      "result": "REJECTED_BY_MATHEMATICS"
+    }
+  ]
+}

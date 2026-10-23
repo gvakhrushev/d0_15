@@ -1,0 +1,50 @@
+{
+  "Book03_identified": false,
+  "GR_closed": false,
+  "autonomous_prescribed_code_selection": false,
+  "checker_sha256": "b289a8b9462d082593858dcba40699aeba58c16e6a3807b689a732f8eaf04b19",
+  "geometry": {
+    "coframe_H": "1/7",
+    "coframe_coefficient_matrices": 153,
+    "coframe_variables": 16,
+    "f_total_degree_bound": 42,
+    "link_K2": "1/7",
+    "link_K3": "1/11",
+    "link_coefficient_matrices": 28,
+    "link_variables": 6,
+    "q_total_degree_bound": 4,
+    "reverse_edge_jet": "PASS"
+  },
+  "historical_sources_verified": 10,
+  "material": {
+    "actual_fourier_hash": "b771febd10092c010fbe1928149faa3d1b5f0e3835234273e2a8a9b698687166",
+    "all_local_normalizations": "1",
+    "clock_population": "p",
+    "code_table_hash": "915b54eec61b7339bb4bb71d6a7de98c22ec7edcd3b444ba88c54afe55631599",
+    "left_moment": "sqrt(p)*p*t/(2S)",
+    "local_retained_labels": 256,
+    "paid_reference_refinement": "actual L4 seed plus four fair site bits per step",
+    "psi_readout": "p*t/4",
+    "right_dimension": 128,
+    "right_gram": "I128/128",
+    "sites": 256
+  },
+  "nonvacuum_collar": {
+    "H_absolute_upper_bound": "573768587273306668854689/18360560885397180590850048",
+    "K2_K3_sum_upper_bound": "5737680574709842811593765/146884487083177444726800384",
+    "epsilon": "1/1024",
+    "h": "1/4",
+    "lambda_absolute_upper_bound": "868028125/31850496",
+    "material_chart": "abs(psi_A)<p/4",
+    "material_open_radius": "1/16",
+    "s": "p^3",
+    "unscaled_energy": "(5/4)*p^12*epsilon^2 > 0"
+  },
+  "off_primary_original_action_equality": false,
+  "proof_sha256": "8c4c3cf03ebf637de6917776f13533d8b9f20cd0e8790025cf64a092915aef15",
+  "scientific_input": "311b1d3fd505effe7082754bc80dd17d1097f095",
+  "scope": "exact new algebra and one actual L4 material/reference fixture; analytic all-family proof",
+  "source_pins_sha256": "640d1b708d578ef46b4ffa9f3ce122bcef96d712d333c64a1bfc32b3b0c75b7d",
+  "source_sign": "new CQ readiness positive; raw J2 coefficient -gamma*d0*h_phi_prime(r0)<0",
+  "status": "PASS"
+}

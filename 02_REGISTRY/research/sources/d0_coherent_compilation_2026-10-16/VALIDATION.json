@@ -1,0 +1,29 @@
+{
+  "GR_closed": false,
+  "concurrent_minimum_input": "9989b64de9f0d88e1823b4fcbe129acc681ab163",
+  "exact_checks": 100,
+  "file_sha256": {
+    "02_REGISTRY/research/A4D_COHERENT_COMPILATION_COST_DESCENT.md": "72826a840aac882d1a93acaf0e1eba5c7e7c57cd5bfc770aff26c5824375f43c",
+    "02_REGISTRY/research/sources/d0_coherent_compilation_2026-10-16/INPUTS.json": "dacc2b1e20abc633942c21440324aeb8fbd36b2b3faa604e6e5241dced15ab0b",
+    "02_REGISTRY/research/sources/d0_coherent_compilation_2026-10-16/PREPARATION_SYNTHESIS.md": "5393e25db0267ad2b5a33b211c052b877c3b896d82366405caa420e8ee7f3867",
+    "02_REGISTRY/research/sources/d0_coherent_compilation_2026-10-16/README.md": "c3d53a45426a45b2fd1f4811c44b201a2965eff683de130290c4bb79d0f5154a",
+    "02_REGISTRY/research/sources/d0_coherent_compilation_2026-10-16/check_coherent_compilation.py": "83402589240f3b7e12820eee1fdf79000f0732165662826871e632b658979425",
+    "02_REGISTRY/research/sources/d0_coherent_compilation_2026-10-16/mutations.json": "056fec9e12efd50b5cd93c4a6378ed9ad5656662d43f0695323946d4b560fbd7",
+    "02_REGISTRY/research/sources/d0_coherent_compilation_2026-10-16/result.json": "4d4c18b47d78051c8a8afc2daad22a5fd282deaafee256ca7b9af1f4e3bb89d1",
+    "02_REGISTRY/research/sources/d0_coherent_compilation_2026-10-16/test_mutations.py": "36e2f7ba25d4a22d44441e54edb1816a7a62fd1d0ea4c469f8e8d3c005834005"
+  },
+  "independent_scientific_review": false,
+  "mathematical_mutants_rejected": 5,
+  "native_normalized_measure_proved": false,
+  "native_primitive_admission": false,
+  "new_Lean_compilation": false,
+  "optimized": "PASS_IDENTICAL_JSON",
+  "ordinary": "PASS",
+  "physical_Info_selected": false,
+  "python": "3.13.5",
+  "schema": "d0-coherent-compilation-validation/1",
+  "source_base": "8d6f73012c3740d3b4113ef43ab71cb4986b9782",
+  "source_bound_certificate_local_run": false,
+  "sympy": "1.14.0",
+  "whole_repository_local_replay": false
+}

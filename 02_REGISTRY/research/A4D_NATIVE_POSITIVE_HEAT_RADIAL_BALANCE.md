@@ -384,6 +384,37 @@ test metric depending on beta. It neither assumes all these metrics are
 native-admitted nor supplies a uniform result for beta_h or a joint
 temperature-metric constraint.
 
+### Sharpened fixed-temperature continuum bound at \(\beta=\log 2\)
+
+For the same volume-preserving shape test (11), use the faster parameter
+\(Q(t)=\operatorname{diag}(4e^{2t},e^{-2t}/4,1,1)\). This only replaces
+the earlier curve parameter by \(2t\), so its continuum derivative is
+\(2(E_0^\infty-E_1^\infty)\). The two affected one-axis continuum spectra
+are \(\pi^2 n^2\) and \(16\pi^2n^2\), respectively, for
+\(n\in\mathbb Z\); the other two partition factors cancel. With
+\(r=2^{-144}\), the elementary bounds \(9<\pi^2<10\),
+\(n^2\ge n\), and the geometric-series identity give
+\[
+E_0^\infty>
+\frac{18/1024}{513/511},\qquad
+E_1^\infty<320\,\frac{r(1+r)}{(1-r)^3}.
+\]
+Therefore
+\[
+2(E_0^\infty-E_1^\infty)>
+2\left(\frac{18/1024}{513/511}-320\frac{r(1+r)}{(1-r)^3}\right)
+=0.03501918859649123\ldots>\frac1{30}.
+\]
+Direct summation gives \(0.04211000480620164319779\ldots\). The finite
+periodic values at \(L=4,16,64,256,512\) are approximately
+\(0.124513618677, 0.045362567733, 0.042307453804, 0.042122322912,
+and 0.042113084052\), respectively. These decimals are numerical checks;
+the displayed strict rational estimate is for the continuum limit. It
+sharpens that limit's quantitative margin, but does not improve the separate
+all-\(L\) lower bound (12), select a native readout, or identify this heat
+functional with the complete D0 action. The physical-admission and
+same-source coupling conditions stated above remain in force.
+
 The exact checker binds (8) to all sixteen actual CAR grades for both a
 mixed positive metric and Q_0, then computes all ten packed coefficients
 from every Fourier mode for L=2 and L=4. It checks (11), both distinct

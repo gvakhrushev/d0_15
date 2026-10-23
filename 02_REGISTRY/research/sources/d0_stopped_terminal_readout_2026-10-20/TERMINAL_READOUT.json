@@ -1,0 +1,561 @@
+{
+  "status": "PASS",
+  "exact": {
+    "complete_exact_trees": [
+      {
+        "m": 1,
+        "cap": 4,
+        "leaves": 5
+      },
+      {
+        "m": 2,
+        "cap": 7,
+        "leaves": 29
+      },
+      {
+        "m": 3,
+        "cap": 7,
+        "leaves": 64
+      }
+    ],
+    "golden_code_words": [
+      "G",
+      "BG",
+      "BBG",
+      "BBBG",
+      "BBBBG",
+      "BBBBBG",
+      "BBBBBBG",
+      "BBBBBBBG",
+      "BBBBBBBBG",
+      "BBBBBBBBBG",
+      "BBBBBBBBBBG",
+      "BBBBBBBBBBBG",
+      "BBBBBBBBBBBBG",
+      "BBBBBBBBBBBBBG",
+      "BBBBBBBBBBBBBBG",
+      "BBBBBBBBBBBBBBBG",
+      "BBBBBBBBBBBBBBBB"
+    ],
+    "golden_code_lengths": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      16
+    ],
+    "exact_dark_cos": "1/3",
+    "exact_dark_sin": "2*sqrt(2)/3",
+    "exact_dark_amplitude_jet_over_sqrt_kappa": "-sqrt(2)/2",
+    "full_rest_eigenvalues_over_kappa": {
+      "48": 1,
+      "88": 6,
+      "96": 9,
+      "0": 240
+    }
+  },
+  "carrier": {
+    "CAR_dimension": 16,
+    "joint_Choi_dimension": 256,
+    "all_grades": [
+      1,
+      4,
+      6,
+      4,
+      1
+    ],
+    "pre_readout_right_Gram": "I16/16",
+    "Kraus_count": 17,
+    "instrument": "fixed positive square roots",
+    "field_chart": "P(theta)=exp(theta*J23/m), scalar norm abs(dtheta)",
+    "prefix_jet_bound_B": 0.7071067811865475,
+    "supplied_preparation_reference_fiber_jets": "zero"
+  },
+  "tolerances": {
+    "matrix_absolute": 3e-13,
+    "source_absolute": 2e-11,
+    "SVD_roundoff_singular_value": 1e-15,
+    "finite_difference_absolute": 1e-09,
+    "probability_floor_used": false,
+    "spectral_floor_used": false
+  },
+  "numerical_resolution_scope": "spectral_floor_used=false describes the analytic theorem and the absence of positive eigenvalue replacement; numerical SVD omits singular values at or below 1e-15 with the reported source error budget, below source_absolute. Rank-birth controls retain positive eigenvalues below 1e-20.",
+  "ideal_pointer_off_diagonal_Frobenius_norm": 0.020779002163389276,
+  "ideal_pointer_Shannon_entropy": 0.002640629122018914,
+  "ideal_complementary_entropy": 0.00034840189321848325,
+  "generic_distinct_Shannon_coherent": {
+    "theta": 0.73,
+    "Shannon_entropy": 0.002657559562669368,
+    "coherent_entropy": 0.00035967202372982606,
+    "Shannon_source": -2.8401345327445263e-05,
+    "coherent_source": -1.613204567807942e-05
+  },
+  "full_leaf_checks": [
+    {
+      "cap": 3,
+      "all_leaf_words": 7,
+      "FR_dimension": 119,
+      "raw_golden_flag_code": 3.94427190999916,
+      "actual_expected_attempts": 2.854101966249685,
+      "classical_joint_entropy": 1.9006862311696393,
+      "classical_joint_source": -1.7337212770996372e-05,
+      "relative_code_source": 7.202312222319177e-05,
+      "coherent_archive_entropy": 0.32413248061793026,
+      "coherent_archive_source": 0.34286240655774025,
+      "coherent_relative_code_value": 19.2705730281393,
+      "coherent_relative_code_source": -0.7124618879636937,
+      "nonzero_complement_rank": 11
+    },
+    {
+      "cap": 4,
+      "all_leaf_words": 11,
+      "FR_dimension": 187,
+      "raw_golden_flag_code": 4.875388202501894,
+      "actual_expected_attempts": 3.5278640450004217,
+      "classical_joint_entropy": 2.3487463520961365,
+      "classical_joint_source": -2.2497470128881274e-05,
+      "relative_code_source": 9.254506279028103e-05,
+      "coherent_archive_entropy": 0.30709040244537705,
+      "coherent_archive_source": 0.32402537256280795,
+      "coherent_relative_code_value": 20.237113022119267,
+      "coherent_relative_code_source": -0.6733070955067239,
+      "nonzero_complement_rank": 11
+    },
+    {
+      "cap": 7,
+      "all_leaf_words": 29,
+      "FR_dimension": 493,
+      "raw_golden_flag_code": 6.447744098732233,
+      "actual_expected_attempts": 4.665631459994955,
+      "classical_joint_entropy": 3.1053752701411597,
+      "classical_joint_source": -3.1694644855906966e-05,
+      "relative_code_source": 0.00012879302072886842,
+      "coherent_archive_entropy": 0.16945196854523314,
+      "coherent_archive_source": 0.18552462780876644,
+      "coherent_relative_code_value": 22.0955093633469,
+      "coherent_relative_code_source": -0.38547337382261326,
+      "nonzero_complement_rank": 11
+    }
+  ],
+  "cap_source_checks": [
+    {
+      "cap": 7,
+      "failure_probability": 0.18344550751409047,
+      "shannon_source_error": 4.86494214484757e-06,
+      "shannon_source_bound": 1.5740265316735307,
+      "fixed_code_source": 0.00012879302072903655,
+      "ideal_fixed_code_source": 0.0001478032698379981,
+      "fixed_code_source_error": 1.9010249108961536e-05,
+      "fixed_code_source_bound": 12.091622188364333,
+      "coherent_entropy": 0.16945196854523373,
+      "ideal_coherent_entropy": 0.00034840189321848325,
+      "coherent_source": 0.1855246278087661,
+      "ideal_coherent_source": -2.8147873765074566e-05,
+      "coherent_source_error": 0.18555277568253117,
+      "coherent_no_floor_bound": 28.267232092043336,
+      "coherent_relative_code_source": -0.3854733738226124,
+      "ideal_coherent_relative_code_source": 0.0001303229985778215,
+      "coherent_relative_code_source_error": 0.3856036968211902,
+      "coherent_relative_code_source_bound": 67.56242354920695,
+      "channel_trace_distance": 0.17272515910121966,
+      "channel_jet_trace_distance": 0.2242903804870955,
+      "nonzero_output_rank": 11,
+      "ideal_nonzero_output_rank": 9,
+      "actual_SVD_resolution": {
+        "retained_singular_values": 11,
+        "discarded_roundoff_singular_values": 40,
+        "smallest_retained_singular_value": 0.00046017784624735267,
+        "largest_discarded_singular_value": 1.1940940237829067e-17,
+        "omitted_source_absolute_bound": 5.709017667908797e-13
+      },
+      "ideal_SVD_resolution": {
+        "retained_singular_values": 9,
+        "discarded_roundoff_singular_values": 8,
+        "smallest_retained_singular_value": 0.0004994864399770056,
+        "largest_discarded_singular_value": 2.4261012638954204e-18,
+        "omitted_source_absolute_bound": 2.763102111592855e-13
+      },
+      "regularization": [
+        {
+          "eta": 0.001,
+          "source_regularization_error": 0.003229293849532411,
+          "ideal_regularization_error": 2.022451032322709e-05,
+          "each_amplitude_bound": 0.7155417527999326,
+          "regularized_source_difference": 0.18230325732267555,
+          "regularized_difference_bound": 522.8060707130517
+        },
+        {
+          "eta": 1e-06,
+          "source_regularization_error": 2.080502130852313e-06,
+          "ideal_regularization_error": 3.843145594118491e-06,
+          "each_amplitude_bound": 0.02262741699796952,
+          "regularized_source_difference": 0.1855468520348062,
+          "regularized_difference_bound": 518869.777360474
+        },
+        {
+          "eta": 0.3228529212674234,
+          "source_regularization_error": 0.11543145238275745,
+          "ideal_regularization_error": 2.6545598700870534e-05,
+          "each_amplitude_bound": 12.856931814741833,
+          "regularized_source_difference": 0.07009477770107286,
+          "regularized_difference_bound": 2.55336846255967
+        }
+      ]
+    },
+    {
+      "cap": 20,
+      "failure_probability": 0.0008832339415208457,
+      "shannon_source_error": 2.219062391549772e-08,
+      "shannon_source_bound": 0.007578455730356956,
+      "fixed_code_source": 0.00014771716460535315,
+      "ideal_fixed_code_source": 0.0001478032698379981,
+      "fixed_code_source_error": 8.610523264494384e-08,
+      "fixed_code_source_bound": 0.058217457977212284,
+      "coherent_entropy": 0.0020844297850497553,
+      "ideal_coherent_entropy": 0.00034840189321848325,
+      "coherent_source": 0.0022032300580787203,
+      "ideal_coherent_source": -2.8147873765074566e-05,
+      "coherent_source_error": 0.002231377931843795,
+      "coherent_no_floor_bound": 4.626822173478872,
+      "coherent_relative_code_source": -0.004506714289106546,
+      "ideal_coherent_relative_code_source": 0.0001303229985778215,
+      "coherent_relative_code_source_error": 0.004637037287684368,
+      "coherent_relative_code_source_bound": 9.657407413827467,
+      "channel_trace_distance": 0.000774678639255543,
+      "channel_jet_trace_distance": 0.0010752027202208803,
+      "nonzero_output_rank": 11,
+      "ideal_nonzero_output_rank": 9,
+      "actual_SVD_resolution": {
+        "retained_singular_values": 11,
+        "discarded_roundoff_singular_values": 40,
+        "smallest_retained_singular_value": 0.0004242385547429422,
+        "largest_discarded_singular_value": 3.019705242285729e-17,
+        "omitted_source_absolute_bound": 6.176386346464868e-13
+      },
+      "ideal_SVD_resolution": {
+        "retained_singular_values": 9,
+        "discarded_roundoff_singular_values": 8,
+        "smallest_retained_singular_value": 0.0004994864399770056,
+        "largest_discarded_singular_value": 2.4261012638954204e-18,
+        "omitted_source_absolute_bound": 2.763102111592855e-13
+      },
+      "regularization": [
+        {
+          "eta": 0.001,
+          "source_regularization_error": 0.00048601272501187223,
+          "ideal_regularization_error": 2.022451032322709e-05,
+          "each_amplitude_bound": 0.7155417527999326,
+          "regularized_source_difference": 0.0017251406965086956,
+          "regularized_difference_bound": 2.5171511297514155
+        },
+        {
+          "eta": 1e-06,
+          "source_regularization_error": 3.843296585972697e-08,
+          "ideal_regularization_error": 3.843145594118491e-06,
+          "each_amplitude_bound": 0.02262741699796952,
+          "regularized_source_difference": 0.002227573219215536,
+          "regularized_difference_bound": 2498.1990826836372
+        },
+        {
+          "eta": 0.009205566084586446,
+          "source_regularization_error": 0.0010125509011834188,
+          "ideal_regularization_error": 2.2804013044950557e-05,
+          "each_amplitude_bound": 2.1710020348466417,
+          "regularized_source_difference": 0.0011960230176154254,
+          "regularized_difference_bound": 0.28481810378558736
+        }
+      ]
+    },
+    {
+      "cap": 40,
+      "failure_probability": 1.1240569373442171e-07,
+      "shannon_source_error": 2.7741392760434816e-12,
+      "shannon_source_bound": 9.64480115358284e-07,
+      "fixed_code_source": 0.00014780325909960707,
+      "ideal_fixed_code_source": 0.0001478032698379981,
+      "fixed_code_source_error": 1.0738391024913557e-11,
+      "fixed_code_source_bound": 7.4091058368012715e-06,
+      "coherent_entropy": 0.0003487750351636172,
+      "ideal_coherent_entropy": 0.00034840189321848325,
+      "coherent_source": -2.762714707749485e-05,
+      "ideal_coherent_source": -2.8147873765074566e-05,
+      "coherent_source_error": 5.207266875797143e-07,
+      "coherent_no_floor_bound": 0.2320581245122352,
+      "coherent_relative_code_source": 0.00012924087828533558,
+      "ideal_coherent_relative_code_source": 0.0001303229985778215,
+      "coherent_relative_code_source_error": 1.0821202924859205e-06,
+      "coherent_relative_code_source_bound": 0.48224235834752893,
+      "channel_trace_distance": 9.638687304194369e-08,
+      "channel_jet_trace_distance": 1.3677687764580406e-07,
+      "nonzero_output_rank": 11,
+      "ideal_nonzero_output_rank": 9,
+      "actual_SVD_resolution": {
+        "retained_singular_values": 11,
+        "discarded_roundoff_singular_values": 40,
+        "smallest_retained_singular_value": 9.677135943304005e-06,
+        "largest_discarded_singular_value": 1.6567928940124033e-17,
+        "omitted_source_absolute_bound": 6.178483886483431e-13
+      },
+      "ideal_SVD_resolution": {
+        "retained_singular_values": 9,
+        "discarded_roundoff_singular_values": 8,
+        "smallest_retained_singular_value": 0.0004994864399770056,
+        "largest_discarded_singular_value": 2.4261012638954204e-18,
+        "omitted_source_absolute_bound": 2.763102111592855e-13
+      },
+      "regularization": [
+        {
+          "eta": 0.001,
+          "source_regularization_error": 1.9918431037502394e-05,
+          "ideal_regularization_error": 2.022451032322709e-05,
+          "each_amplitude_bound": 0.7155417527999326,
+          "regularized_source_difference": 2.14647401855017e-07,
+          "regularized_difference_bound": 0.0003203478780343196
+        },
+        {
+          "eta": 1e-06,
+          "source_regularization_error": 3.7422218602994554e-06,
+          "ideal_regularization_error": 3.843145594118491e-06,
+          "each_amplitude_bound": 0.02262741699796952,
+          "regularized_source_difference": 4.198029537606786e-07,
+          "regularized_difference_bound": 0.31793592589095787
+        },
+        {
+          "eta": 2.3291218352454598e-05,
+          "source_regularization_error": 1.3585926618312992e-05,
+          "ideal_regularization_error": 1.3775946123375867e-05,
+          "each_amplitude_bound": 0.10920212358950147,
+          "regularized_source_difference": 3.3070718251683925e-07,
+          "regularized_difference_bound": 0.013653877333232258
+        }
+      ]
+    },
+    {
+      "cap": 60,
+      "failure_probability": 1.1001750258434229e-11,
+      "shannon_source_error": 2.698037106230178e-16,
+      "shannon_source_bound": 9.439886010995105e-11,
+      "fixed_code_source": 0.00014780326983695463,
+      "ideal_fixed_code_source": 0.0001478032698379981,
+      "fixed_code_source_error": 1.0434632758543616e-15,
+      "fixed_code_source_bound": 7.251690670348435e-10,
+      "coherent_entropy": 0.00034840194296038325,
+      "ideal_coherent_entropy": 0.00034840189321848325,
+      "coherent_source": -2.814780289412008e-05,
+      "ideal_coherent_source": -2.8147873765074566e-05,
+      "coherent_source_error": 7.087095448734117e-11,
+      "coherent_no_floor_bound": 0.01069418922689177,
+      "coherent_relative_code_source": 0.00013032285130133508,
+      "ideal_coherent_relative_code_source": 0.0001303229985778215,
+      "coherent_relative_code_source_error": 1.4727648641648175e-10,
+      "coherent_relative_code_source_bound": 0.022223455294616355,
+      "channel_trace_distance": 9.359537782722231e-12,
+      "channel_jet_trace_distance": 1.3386534965278372e-11,
+      "nonzero_output_rank": 11,
+      "ideal_nonzero_output_rank": 9,
+      "actual_SVD_resolution": {
+        "retained_singular_values": 11,
+        "discarded_roundoff_singular_values": 40,
+        "smallest_retained_singular_value": 8.015530809621761e-08,
+        "largest_discarded_singular_value": 1.463694988582084e-17,
+        "omitted_source_absolute_bound": 6.17848415026912e-13
+      },
+      "ideal_SVD_resolution": {
+        "retained_singular_values": 9,
+        "discarded_roundoff_singular_values": 8,
+        "smallest_retained_singular_value": 0.0004994864399770056,
+        "largest_discarded_singular_value": 2.4261012638954204e-18,
+        "omitted_source_absolute_bound": 2.763102111592855e-13
+      },
+      "regularization": [
+        {
+          "eta": 0.001,
+          "source_regularization_error": 2.0224460106475185e-05,
+          "ideal_regularization_error": 2.022451032322709e-05,
+          "each_amplitude_bound": 0.7155417527999326,
+          "regularized_source_difference": 2.065420258292401e-11,
+          "regularized_difference_bound": 3.135417106432277e-08
+        },
+        {
+          "eta": 1e-06,
+          "source_regularization_error": 3.8431151649735086e-06,
+          "ideal_regularization_error": 3.843145594118491e-06,
+          "each_amplitude_bound": 0.02262741699796952,
+          "regularized_source_difference": 4.0441809504785904e-11,
+          "regularized_difference_bound": 3.111810032595558e-05
+        },
+        {
+          "eta": 4.9466120918369764e-08,
+          "source_regularization_error": 2.892274377207768e-07,
+          "ideal_regularization_error": 2.8925086029711795e-07,
+          "each_amplitude_bound": 0.005032559379699888,
+          "regularized_source_difference": 4.7448378146170474e-11,
+          "regularized_difference_bound": 0.0006290704674919947
+        }
+      ]
+    }
+  ],
+  "owned_exponential_cap_checks": [
+    {
+      "m": 1,
+      "cap": 6,
+      "failure_probability": 0.055728090000841245,
+      "exp_minus_m_over_4": 0.7788007830714049
+    },
+    {
+      "m": 2,
+      "cap": 11,
+      "failure_probability": 0.03918681890720197,
+      "exp_minus_m_over_4": 0.6065306597126334
+    },
+    {
+      "m": 3,
+      "cap": 16,
+      "failure_probability": 0.02570207377241491,
+      "exp_minus_m_over_4": 0.4723665527410147
+    },
+    {
+      "m": 5,
+      "cap": 27,
+      "failure_probability": 0.0077475758739272045,
+      "exp_minus_m_over_4": 0.2865047968601901
+    },
+    {
+      "m": 10,
+      "cap": 53,
+      "failure_probability": 0.0007051150760080498,
+      "exp_minus_m_over_4": 0.0820849986238988
+    },
+    {
+      "m": 25,
+      "cap": 131,
+      "failure_probability": 6.930089298672807e-07,
+      "exp_minus_m_over_4": 0.0019304541362277093
+    },
+    {
+      "m": 100,
+      "cap": 524,
+      "failure_probability": 8.87611803720253e-22,
+      "exp_minus_m_over_4": 1.3887943864964021e-11
+    }
+  ],
+  "dark_outcome": {
+    "marked_label_index": 11,
+    "actual_probability_roundoff": 5.510129769479473e-40,
+    "actual_probability_jet_roundoff": -3.9859798248432946e-23,
+    "nonzero_amplitude_jet_norm": 0.000861438200845843,
+    "exact_dark_entropy_first_derivative": 0,
+    "two_sided_rank_birth_controls": [
+      {
+        "distance": 0.01,
+        "dark_entropy_derivatives": [
+          -3.3471919518497925e-07,
+          3.2790090864531864e-07
+        ]
+      },
+      {
+        "distance": 0.001,
+        "dark_entropy_derivatives": [
+          -4.0008524492350955e-08,
+          3.9925840199638735e-08
+        ]
+      },
+      {
+        "distance": 0.0001,
+        "dark_entropy_derivatives": [
+          -4.680682884489268e-09,
+          4.6797110538507666e-09
+        ]
+      },
+      {
+        "distance": 1e-05,
+        "dark_entropy_derivatives": [
+          -5.363729875795339e-10,
+          5.363618193863759e-10
+        ]
+      }
+    ],
+    "analytic_sources_at_dark": [
+      -3.655958700072109e-05,
+      0.0001478032698379981,
+      -2.8147873765074566e-05
+    ],
+    "central_difference_last": [
+      -3.6559570345054415e-05,
+      0.00014780292545424345,
+      -2.8147892767700977e-05
+    ]
+  },
+  "moving_instrument": {
+    "residual_output_unitary": {
+      "actual_channel_jet_change_trace_norm": 1.4142095932634966,
+      "entropy_source_before": -2.8147873765074566e-05,
+      "entropy_source_after": -2.8147873765074566e-05,
+      "supplied_state_plus_instrument_jet_bound": 1.7071067811865475
+    },
+    "pointer_rotation": {
+      "complement_channel_jet": 0,
+      "actual_probability_jet_norm": 0.0005413527840416867,
+      "actual_Shannon_source": 0.00544767986812034,
+      "actual_coherent_relative_code_source": -0.005359119144541306,
+      "frozen_instrument_would_give": 0
+    }
+  },
+  "coherent_rank_birth": {
+    "m": 2,
+    "cap": 7,
+    "rank_at_zero": 8,
+    "source_at_zero_roundoff": 3.6362700909153486e-17,
+    "two_sided_controls": [
+      {
+        "distance": 0.01,
+        "actual_coherent_sources": [
+          -0.00756155002277819,
+          0.007561550022777501
+        ],
+        "smallest_retained_positive_eigenvalues": [
+          5.669793364580859e-15,
+          5.669793364579282e-15
+        ],
+        "actual_output_rank": 11
+      },
+      {
+        "distance": 0.001,
+        "actual_coherent_sources": [
+          -0.0009891519233904992,
+          0.0009891519233903654
+        ],
+        "smallest_retained_positive_eigenvalues": [
+          5.671104931231158e-19,
+          5.671104931239206e-19
+        ],
+        "actual_output_rank": 11
+      },
+      {
+        "distance": 0.0001,
+        "actual_coherent_sources": [
+          -0.00011975146836910264,
+          0.00011975146836907356
+        ],
+        "smallest_retained_positive_eigenvalues": [
+          5.671118039383898e-23,
+          5.671118046555729e-23
+        ],
+        "actual_output_rank": 11
+      }
+    ]
+  },
+  "scope": "conditional mathematical terminal component; physical Book Info/admission and GR closure not derived"
+}

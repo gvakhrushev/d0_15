@@ -1,0 +1,105 @@
+{
+  "schema": "d0.reverse-book-effect-inputs.v1",
+  "source_ref": "2961dc6ee4abcda0a0fb2aa36dc6ecd7e62a6535",
+  "sources": [
+    {
+      "bytes": 28561,
+      "consumed_scope": "Accepted functional necessity; no unique native Golden realization.",
+      "label": "verification_necessity",
+      "path": "03_FORMALIZATION/D0/Foundation/VerifiabilityNecessity.lean",
+      "sha256": "e851960cf5ed7c3abdb488dc70a2ed098d9a6bfb2ca0a60d2cbecda9f93da48d"
+    },
+    {
+      "bytes": 21760,
+      "consumed_scope": "Equality kernel of supplied future profiles.",
+      "label": "verification_kernel",
+      "path": "03_FORMALIZATION/D0/Foundation/VerificationCore.lean",
+      "sha256": "382b2b506e17c6422623b6a2581756468e157def9ea783445f0943bd124a19d7"
+    },
+    {
+      "bytes": 22584,
+      "consumed_scope": "Primitive diagrams and separate full-native context coverage.",
+      "label": "theory_transfer",
+      "path": "03_FORMALIZATION/D0/Foundation/TheoryTransfer.lean",
+      "sha256": "c164818dc50de94afad690946d4c209309350340b5cb1586ddc9f91f74bcb203"
+    },
+    {
+      "bytes": 4934,
+      "consumed_scope": "Same verification apparatus does not fix allowed transitions.",
+      "label": "operational_cut_pair",
+      "path": "02_REGISTRY/research/D0_OPERATIONAL_CUT_PROTOCOL_PAIR.md",
+      "sha256": "70bbfb154bb045ea06c49dd76baea9f76d93fac8e38fe5f47190b35622aa91fb"
+    },
+    {
+      "bytes": 16673,
+      "consumed_scope": "Owned finite CAR probes recover the configured primary metric/curvature under admission hypotheses.",
+      "label": "actual_operational_recovery",
+      "path": "02_REGISTRY/research/sources/d0_global_result_composition_2026-10-20/OPERATIONAL_CURVATURE_RECOVERY.md",
+      "sha256": "79719b99ac3b24e904d90eb91a688aaad4820704f117d37fa82380aa52ed6007"
+    },
+    {
+      "bytes": 15858,
+      "consumed_scope": "Consumed two-effect determinant formula, full moving-cut source and cost mark.",
+      "label": "true_full128_normalization",
+      "path": "02_REGISTRY/research/sources/d0_full128_normalization_closure_2026-10-21/PROOF.md",
+      "sha256": "42f96fc4cdb4f47878c4d260a003dd2819741c6b4e233581e184f28e9792ebcc"
+    },
+    {
+      "bytes": 3046,
+      "consumed_scope": "Scalar weight identification does not determine all physical source data; corrected normalized scope.",
+      "label": "source_identifiability_scope",
+      "path": "02_REGISTRY/research/A4D_BOOK03_SOURCE_IDENTIFIABILITY_THEOREM_2026_10_21.md",
+      "sha256": "ff50fe0d65cb2b3965affcfc528b5e7ef0a2bfe3b50682e4e4800319a8e7dc33"
+    },
+    {
+      "bytes": 16828,
+      "consumed_scope": "Actual G/CNOT/blank/addressed/fresh-parity interface and retained finite Boolean factories.",
+      "label": "paid_golden_factories",
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/GOLDEN_EXACT_DETECTOR.md",
+      "sha256": "d33c9c2cb2322e381723f481eb1fcf58058fd05ad88eda92c5597c026d02eb77"
+    },
+    {
+      "bytes": 18821,
+      "consumed_scope": "Actual orthonormal palette and exact pure-programme obstruction; no new arbitrary amplitude gate.",
+      "label": "canonical_palette_and_basis",
+      "path": "02_REGISTRY/research/sources/d0_exact_resource_writer_2026-10-21/EXACT_NATIVE_WRITER_GATE.md",
+      "sha256": "672524e7a56e25675fda6cf295acc258877729f1a4d69bf0a52d4e1425884dcc"
+    },
+    {
+      "bytes": 31515,
+      "consumed_scope": "Generated known-one/Boolean resources and exact finite paid moment catalogue.",
+      "label": "paid_code_and_moments",
+      "path": "02_REGISTRY/research/sources/d0_paid_moment_field_writer_2026-10-21/code/PAID_CODE_AND_MOMENT_WRITER.md",
+      "sha256": "e95f0486456c53cf0ce40023bab08ac744fd6189b397d29a8773446c168244a0"
+    },
+    {
+      "bytes": 28827,
+      "consumed_scope": "Original 16+24+2 consumer, configured report jets and oldRIGHT-preserving material section.",
+      "label": "actual_moment_source_map",
+      "path": "02_REGISTRY/research/sources/d0_paid_moment_field_writer_2026-10-21/moments/EXACT_MOMENT_SOURCE_CONSTRUCTION.md",
+      "sha256": "8c4c3cf03ebf637de6917776f13533d8b9f20cd0e8790025cf64a092915aef15"
+    },
+    {
+      "bytes": 9125,
+      "consumed_scope": "Consume \u00a72 AABB/ABAB exact word/cut control; new application is prepared-input coverage only.",
+      "label": "owned_equal_inventory_control",
+      "path": "02_REGISTRY/research/A4D_PAID_RATIONAL_RESOURCE_WRITER_2026_10_21.md",
+      "sha256": "b609514f9170e393b72d0df0650bfd88f93e6dd47d7a7d4d9fceb35d00a04993"
+    },
+    {
+      "bytes": 9965,
+      "consumed_scope": "Existing full future-algebra/control result, not claimed anew.",
+      "label": "owned_future_algebra",
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/continuation_selection/FUTURE_ALGEBRA_AND_STOPPED_NORMALIZATION.md",
+      "sha256": "fa5f10facfd02a888dff41a7a9070f30a70acbe0234b135d8cc8dd03a94c6569"
+    },
+    {
+      "bytes": 21957,
+      "consumed_scope": "Operational informational completeness does not give arbitrary native POVMs.",
+      "label": "native_test_restriction",
+      "path": "02_REGISTRY/research/A4D_NATIVE_FEASIBLE_GAIN_AND_ACTION_SOURCE.md",
+      "sha256": "93f44b61c590d30bfe8205f61c477f88d9f2219ef30ecdf48e33d796966556d1"
+    }
+  ],
+  "verification": "git show source_ref:path; no requirement that future append-only owner revisions remain byte-identical"
+}

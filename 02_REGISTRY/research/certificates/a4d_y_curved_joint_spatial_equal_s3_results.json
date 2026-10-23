@@ -1,0 +1,190 @@
+{
+  "schema": "a4d-y-curved-joint-spatial-equal-s3-v1",
+  "terminal": "A4D-Y-CURVED-JOINT-SPATIAL-EQUAL-S3-REDUCTION-CERTIFIED",
+  "surface": "lambda=(mu,mu*r,mu*r,mu*r), mu*r != 0",
+  "scaled_matrix": "14*mu*r*Q",
+  "input_characters_cycle_swap": [
+    0,
+    0
+  ],
+  "output_characters_cycle_swap": [
+    4,
+    0
+  ],
+  "input_multiplicities_trivial_sign_standard": [
+    16,
+    16,
+    32
+  ],
+  "output_multiplicities_trivial_sign_standard": [
+    24,
+    24,
+    44
+  ],
+  "nonzero_bidegrees": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      2,
+      2
+    ]
+  ],
+  "standard_output_halves": [
+    44,
+    44
+  ],
+  "block_records": [
+    {
+      "name": "trivial",
+      "input_dimension": 16,
+      "basis_pivot_columns": [
+        0,
+        3,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        24,
+        27,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ],
+      "coefficient_shape": [
+        3,
+        3,
+        136,
+        16
+      ],
+      "coefficient_sha256": "e746d3bd81927b3d5e7a9452fbf6d548008bf1bf208a3c51ec37fbd5e20fd7ff",
+      "exact_point_ranks": {
+        "2,3": 16,
+        "3,2": 16,
+        "1,1": 15,
+        "1,-1": 16
+      }
+    },
+    {
+      "name": "sign",
+      "input_dimension": 16,
+      "basis_pivot_columns": [
+        0,
+        3,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        24,
+        27,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ],
+      "coefficient_shape": [
+        3,
+        3,
+        136,
+        16
+      ],
+      "coefficient_sha256": "4daecbe9c4d10b2eb3c47c139a77ea6f2ee96af17d02c68960b0ca7a673ae11e",
+      "exact_point_ranks": {
+        "2,3": 16,
+        "3,2": 16,
+        "1,1": 16,
+        "1,-1": 16
+      }
+    },
+    {
+      "name": "standard_swap_minus",
+      "input_dimension": 32,
+      "basis_pivot_columns": [
+        0,
+        1,
+        3,
+        4,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        24,
+        25,
+        27,
+        28,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41
+      ],
+      "coefficient_shape": [
+        3,
+        3,
+        136,
+        32
+      ],
+      "coefficient_sha256": "990d46491277b73b7f80047000532775265be4974442284e488abc4a25ae52ca",
+      "exact_point_ranks": {
+        "2,3": 32,
+        "3,2": 32,
+        "1,1": 32,
+        "1,-1": 32
+      }
+    }
+  ],
+  "rank_test": "full Q rank 96 iff trivial rank 16, sign rank 16, and standard-swap-minus rank 32",
+  "generic_surface_rank": 96,
+  "folded_rank_at_mu_r_one": 95,
+  "folded_kernel_contains_literal_physical_y": true,
+  "scope_fence": [
+    "exact S3 reduction on the spatial-equal two-complex-dimensional surface",
+    "finite point ranks do not classify continuous surface rank drops",
+    "not the full three-ratio physical torus or nonlinear curved response"
+  ]
+}

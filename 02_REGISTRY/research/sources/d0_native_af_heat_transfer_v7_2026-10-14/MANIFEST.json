@@ -1,0 +1,9 @@
+{
+  "NATIVE_AF_HEAT_TRANSFER_RU.md": "d88fd469cf965806489e0d90c1184fdeb652b79a95434f528d14736f03cacedd",
+  "af_heat_check.py": "b9b491ac34db33a7e5091dda0ac03297fab64b17594f535235daa0ceabf23b65",
+  "af_heat_numeric.py": "201878f980c0b35ed91ddc1d7190ccfb4a25a1a9ad5177e06f14a6a804000294",
+  "af_heat_numeric_result.json": "7d9a16e6399b80d76152ff90678ce4b1dc31a9c3fddec9a06387a9f68947e180",
+  "af_heat_receipt.json": "1a8bbd6587dcdf26a416495dbefda92a42a3ff8b055cdf983926d02f9f4cd6ee",
+  "hostile_check.py": "e4de5339d4d99b85452e70b2ae83348a8c8830cb38049aecdbe28c5f5a3d809a",
+  "hostile_receipt.json": "087767b22b8de1917e0074a55ebd46e911b46631403d779edec4eb9ac7aad2a8"
+}

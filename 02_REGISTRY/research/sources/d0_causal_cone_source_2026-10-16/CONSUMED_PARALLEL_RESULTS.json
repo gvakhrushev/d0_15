@@ -1,0 +1,635 @@
+{
+  "actual_retained_metric_and_real_e0_checkpoint": {
+    "base": "237829b10d6b2f0d7c9b5b1d768ac1bb37882cad",
+    "conclusion": "Stored-v8 actual retained equations solve over all10 constant metrics; reduced source retains7 positive directions and a same-R constant-volume witness. Real balanced coordinate-form E0 rank8 cannot cancel its first cone correction with real smooth field jets.",
+    "consumer": "Actual homogeneous retained section of complete-experiment Ward; remove excluded real E0 rank8 winding-cone continuation from the next joint branch.",
+    "new_exact_checks": {
+      "homogeneous_metric_reduction": 72,
+      "real_e0_corrector": 128
+    },
+    "new_user_input_is_identical_alias_of": "02_REGISTRY/research/sources/d0_coframe_heat_source_2026-10-16/USER_INPUT_RU.txt",
+    "normal_optimized_outputs_identical": true,
+    "old_scientific_replay": false,
+    "open": "Inhomogeneous/full-Lorentz retained section; GHZ/complex/coherent actual preparations; full native history/clock/price binding and original fixed-g/tau/raw terminal.",
+    "sha256": {
+      "02_REGISTRY/research/A4D_CONE_REAL_E0_FIELD_CORRECTION.md": "51c66a09fbbd55305d98927797e46d9e5bb54fc67e929c40dbaaf271a8da3170",
+      "02_REGISTRY/research/A4D_HOMOGENEOUS_PHYSICAL_METRIC_REDUCTION.md": "89db8d191de4f11af5c046e9d0e3a57b47412d85b54520141cdd483ecaa21dd4",
+      "02_REGISTRY/research/sources/d0_cone_real_e0_field_correction_2026-10-17/README.md": "86df565a5448e43397f49309949e24ab5817fd381f9bea69d32f02495b2b7539",
+      "02_REGISTRY/research/sources/d0_cone_real_e0_field_correction_2026-10-17/RESULTS.json": "76983198fed4c043fd00fdcecdbb14882815328bf1aa03b55023141828f6a32d",
+      "02_REGISTRY/research/sources/d0_cone_real_e0_field_correction_2026-10-17/VALIDATION.json": "42d6e8788399436dd94fd8c24d117133bf0c38fc2735b6970646e185c44d1eab",
+      "02_REGISTRY/research/sources/d0_cone_real_e0_field_correction_2026-10-17/check_real_e0_field_correction.py": "f796705f286a55b5f6581b1c8a0e9031ec74c385c369baeb6062bc7a6cd61c76",
+      "02_REGISTRY/research/sources/d0_homogeneous_metric_reduction_2026-10-17/INPUTS.json": "d2fc80681414d1a8c47babeda0d5088b992d71856e1a265b674124f872b2dbe6",
+      "02_REGISTRY/research/sources/d0_homogeneous_metric_reduction_2026-10-17/README.md": "9a08cc8b5251bbe9e1646b4192c514a400492f5294be315ee4bc55388a8a7137",
+      "02_REGISTRY/research/sources/d0_homogeneous_metric_reduction_2026-10-17/RESULTS.json": "0c2bd15454576ef786d35604b344f0493469c18e010f41ac5095dbd3abeb0c6f",
+      "02_REGISTRY/research/sources/d0_homogeneous_metric_reduction_2026-10-17/VALIDATION.json": "baeaf3f930a18e5dffbe447870a38a9c0a1d518b7f0c7f02d50ed3a8adbd2e97",
+      "02_REGISTRY/research/sources/d0_homogeneous_metric_reduction_2026-10-17/check_metric_reduction.py": "f953154f0834a9ba4bd515f7cf670f4872c0948d4b796aea6eed3a9053f2e167"
+    }
+  },
+  "balanced_path_intake": {
+    "conclusion": "balanced path is stationary on declared full-Lorentz matrix domain; 12+/1- is certified only on inherited13D stored-field restriction",
+    "replay": false,
+    "scope_review": "extra full-Lorentz boost/link Hessian and its transverse Schur map are not supplied; scientific owner asked to clarify; common primary/brief corrected",
+    "sha256": {
+      "02_REGISTRY/research/A4D_FULL_LORENTZ_BALANCED_MEMORY_PATH.md": "a7edf05024dca92222fb29266ce9e0f138b203ffae7dbe00c0e7f6048e4f88a4",
+      "02_REGISTRY/research/sources/d0_full_lorentz_balanced_memory_path_2026-10-16/INPUTS.json": "c8ce96b43ec28942c777e6ed91d2098cff4eac3ebd9a23719d5dba28e471cf62",
+      "02_REGISTRY/research/sources/d0_full_lorentz_balanced_memory_path_2026-10-16/README.md": "8e30990f8977fdee9cc3b7d3222e25285976f81ef5105f8a9cd78b6eb05d8ec6",
+      "02_REGISTRY/research/sources/d0_full_lorentz_balanced_memory_path_2026-10-16/RESULT.json": "619a151b37b560fa765c85ed5b35af5009f43ab9524c633673607d0ee8a18ecd",
+      "02_REGISTRY/research/sources/d0_full_lorentz_balanced_memory_path_2026-10-16/VALIDATION.json": "d52fbeb246293c1b4bb836ed0352675ea6dadba029f3429e31dd5338a9c4f7e0",
+      "02_REGISTRY/research/sources/d0_full_lorentz_balanced_memory_path_2026-10-16/check_balanced_path.py": "ae5dd7fd77bad4619439d1224d57e99dfb5a2d4ef2561a0606275a63d45335a2"
+    },
+    "source": "514b2074"
+  },
+  "balanced_path_scope_correction": {
+    "conclusion": "The producing owner, result, checker metadata and ledger now explicitly restrict the noncrossing certificate to the inherited13D block. Additional full-Lorentz directions remain open. Historical intake hashes above remain historical.",
+    "scientific_replay": false,
+    "sha256": {
+      "02_REGISTRY/RESEARCH_LEDGER.md": "8a6e136f4a6ec35a8f01321b028bffc158a1a20931caab2d98d97ea0f18eeb25",
+      "02_REGISTRY/research/A4D_FULL_LORENTZ_BALANCED_MEMORY_PATH.md": "14032a01d9077bdaaa19553163eb34a1c98a41ebcbbbb579894679263f38177c",
+      "02_REGISTRY/research/README.md": "e162d0b2179b690012ed9f870d00054cec762db64dee2a3d14cbe0a92de22109",
+      "02_REGISTRY/research/sources/d0_full_lorentz_balanced_memory_path_2026-10-16/INPUTS.json": "9f54ee7b1ac046687a221c77fb104169a4f135d23655a9b99c8d8e47df9df44b",
+      "02_REGISTRY/research/sources/d0_full_lorentz_balanced_memory_path_2026-10-16/README.md": "663dbacbabfb57c7da6efa00d73632a01b82772d3503123eba5e63c5036be05b",
+      "02_REGISTRY/research/sources/d0_full_lorentz_balanced_memory_path_2026-10-16/RESULT.json": "074de08190b2ace2e61f028c0af3eb7704bfac65242dbcdf31e498c12109a5be",
+      "02_REGISTRY/research/sources/d0_full_lorentz_balanced_memory_path_2026-10-16/VALIDATION.json": "3307ac02f3448e6e16febef029e74f85b88719acb280cbf10fed5cb582521d3b",
+      "02_REGISTRY/research/sources/d0_full_lorentz_balanced_memory_path_2026-10-16/check_balanced_path.py": "7b5a79e4e73de8055bc2aa83acdd62dcf3eec41c3f67d079cb963197709bb785"
+    },
+    "source": "ac79c0ed"
+  },
+  "coherent_record_regular_source_compression_checkpoint": {
+    "base": "96041dac11b79ab528acd498c7cd326431b3e01c",
+    "conclusions": [
+      "Actual global jump algebra directsum8 M16 is spanned by words of length<=22, retaining every momentum/form/reference sector.",
+      "Finite n>=22 and positive continuum beta have Choi support exactlyvecA with a uniform positive spectral floor on compact regular parameters.",
+      "K=sqrtS G(rho)sqrtS is positive2048 and has the full retained record nonzero spectrum; its ordered Sylvester differential includes both channel and normalized preparation sources.",
+      "The regular entropy/source C1 error includes h, epsilon, actual clock and actual preparation errors. The homogeneous coframe/observer/proper-link chart supplies its generator limit; neighbouring window need not remain an energy shell.",
+      "Complete record preparation quotient is the eight full16 momentum marginals. It does not imply physical superselection or erase their data coherences.",
+      "Existing operational-gain theorem is consumed only with feasible-effect/all-POVM, central-reference and maximal-gain premises; no physical Info is selected."
+    ],
+    "consumer": "Complete coherent entropy and its true preparation/homogeneous-field source, without exponential tape or assumed frozen support.",
+    "general_proofs_analytical_not_inferred_from_fixtures": true,
+    "new_exact_checks": 40,
+    "normal_optimized_byte_identical": true,
+    "old_scientific_replay": false,
+    "rank_spectrum_or_history_census": false,
+    "scope": "Regular fixed momentum window, reference128 and controlled homogeneous proper fields. No pointer/full-code continuum law, inhomogeneous leakage/rank-birth or UV theorem, native admission, Einstein equality or original terminal closure.",
+    "sha256": {
+      "02_REGISTRY/research/A4D_COMPLETE_RECORD_CHANNEL_AND_NATIVE_COST_SOURCE.md": "b150471a01a7278a5b388013016b5ba3ed5d7b69fb30947cf3e0dddc972286e8",
+      "02_REGISTRY/research/sources/d0_complete_record_channel_2026-10-17/COMPRESSION_RESULTS.json": "ceecf31863d2fccbda01c7a3b6a5544723a4ef2438eb56d745feabcb790b06ef",
+      "02_REGISTRY/research/sources/d0_complete_record_channel_2026-10-17/COMPRESSION_VALIDATION.json": "4838ec8a654682916a2120c9a10358fcc510f4c855c261ede330e41bb47e3ac6",
+      "02_REGISTRY/research/sources/d0_complete_record_channel_2026-10-17/README.md": "e1be4510fdb1e135b92885678625dbbed5e916e75823806e6f630f8cac0dc7ca",
+      "02_REGISTRY/research/sources/d0_complete_record_channel_2026-10-17/check_coherent_record_compression.py": "d75d1079efc68bebc156ffae393addfdc9d114eccc6690d92fdc6900a73d0150"
+    }
+  },
+  "complete_common_plane_joint_first_corrector": {
+    "conclusion": "Every common vacuum/top density is excluded: the complete first causal field row requires equal populations, whereas every balanced density has projected amplitude residual squared >=1/(8s^4) for arbitrary real first field corrections.",
+    "constructive_intermediate": "All resonant amplitude rows explicitly solved for real pure unbalanced lines; those solutions violate the actual causal field equation.",
+    "consumer": "Exhaust the common real coordinate-form E0 winding-cone first-jet route using the actual complete action, not only its amplitude row.",
+    "native_scope": "Owned charge-preserving word limits are balanced; dense word closure and explicit accepted ring-input families approaching GHZ do not establish physical preparation/cost or a global native no-go.",
+    "new_exact_checks": {
+      "actual_causal_field_source": 34,
+      "native_preparation_domain": 62,
+      "resonant_amplitude": 677
+    },
+    "normal_optimized_outputs_identical": true,
+    "old_scientific_replay": false,
+    "open": "Independent momentum densities/coherences, complex E0 outside the plane, changed leading state/geometry, non-C1 scaling, physical action and original fixed-source/raw terminal.",
+    "scale_balance": "full16 directed intervals; unique root in [2.4,2.5] at unchanged beta=3-sqrt5,z=2^-20,M=128",
+    "sha256": {
+      "02_REGISTRY/research/A4D_GHZ_CONE_JOINT_FIRST_CORRECTOR.md": "58182d54c399fa85932e5f60dc05c0157285c804afc2623fec97872a345295dd",
+      "02_REGISTRY/research/sources/d0_ghz_joint_first_jet_2026-10-17/AMPLITUDE_RESULTS.json": "595933fef34e0cabb4463e80188149465005dc0ecce8db85f40d678637872fc5",
+      "02_REGISTRY/research/sources/d0_ghz_joint_first_jet_2026-10-17/AMPLITUDE_VALIDATION.json": "44b81993c20dc6efb6ed1c37385df445d2f3bbcfc8260ee04a02773ba0cdb6ee",
+      "02_REGISTRY/research/sources/d0_ghz_joint_first_jet_2026-10-17/CAUSAL_RESULTS.json": "82fcd6a1e9102d93bbaa08705f319aadd0d5b46ed3df2b45ba0fa794ff1b1175",
+      "02_REGISTRY/research/sources/d0_ghz_joint_first_jet_2026-10-17/CAUSAL_VALIDATION.json": "d8157a10b505d345aeaf1b36e8c55f4f44dc0c537bc44034f53027f00b3398ac",
+      "02_REGISTRY/research/sources/d0_ghz_joint_first_jet_2026-10-17/INPUTS.json": "d0fdd8350df379d8a233d10a3aac3c52272b88b315c594f5a4f37aa747cb8bd8",
+      "02_REGISTRY/research/sources/d0_ghz_joint_first_jet_2026-10-17/PREPARATION_DOMAIN.md": "4f2f16f5fd602272e876c42040122e08317189570b098a7568bbe806ba1cf15f",
+      "02_REGISTRY/research/sources/d0_ghz_joint_first_jet_2026-10-17/PREPARATION_DOMAIN_RESULTS.json": "4f32e6c1800dfd0146e35a8fc5555900a725279d3f2edd47aa3fd21fab761c7a",
+      "02_REGISTRY/research/sources/d0_ghz_joint_first_jet_2026-10-17/PREPARATION_DOMAIN_VALIDATION.json": "1e0e0d39329a7432b631634b37514a2e334831c3363611b1bb514cf0f52536ff",
+      "02_REGISTRY/research/sources/d0_ghz_joint_first_jet_2026-10-17/README.md": "2e5bf966b162bf4c63c8fdb0e3350fb334e0983cb5d09006f9d2a9f5090b77cf",
+      "02_REGISTRY/research/sources/d0_ghz_joint_first_jet_2026-10-17/SCALE_RESULTS.json": "d32d0e5b9bb0757e03e64f1168aed027b35cef8fb7f5f0f0555b2b7e37859397",
+      "02_REGISTRY/research/sources/d0_ghz_joint_first_jet_2026-10-17/VALIDATION.json": "9e002dd80cec620912e57b526f599005dc56ad45dc5ef099b4acfe3c0ecea479",
+      "02_REGISTRY/research/sources/d0_ghz_joint_first_jet_2026-10-17/amplitude_first_jet.py": "0f0a4f2aa79f3a741d6117ea4aea789d73c24f6024f83e7125d380e70fc1f0b1",
+      "02_REGISTRY/research/sources/d0_ghz_joint_first_jet_2026-10-17/causal_first_source.py": "7a4284a6ebf33ac643d266ffcdca887089a3c322f3323f2327f88cbec3117992",
+      "02_REGISTRY/research/sources/d0_ghz_joint_first_jet_2026-10-17/preparation_domain.py": "3d11fc62d97c3a2eaa59a7bae308286f002072a2ee313ae3ddb15c2009439f00",
+      "02_REGISTRY/research/sources/d0_ghz_joint_first_jet_2026-10-17/scale_balance.py": "746c1b9a961977ceac1931fa26024e0e7856132d16590fdb674de5b568409447"
+    },
+    "source_ref": "caa90af1f67a06dab46704c80031ad98a2de699b"
+  },
+  "complete_exit_action_second_source_checkpoint": {
+    "base": "729db01f8d175a1a94cd8abdeb56cf45cfa9cbf2",
+    "conclusion": "Complete first-exit operator reconstructs unchanged v8 action and unique ambient operator covector; ordinary/rare full second sources balance exactly. Explicit full field-dependent h2 price coefficient retains actual clock and preparation. Full16 flat UV trace separates uniform and smooth preparations.",
+    "consumer": "Current route complete-history/given-action source arrow; combine finite operators before controlled heat traces, consume actual Delta2 and ordered Delta1 pair.",
+    "new_bounded_exact_checks": {
+      "complete_exit": 99,
+      "inverse_uv": 35
+    },
+    "normal_optimized_outputs_identical": true,
+    "old_scientific_replay": false,
+    "open": "Physical Cost-Info/ensemble/admission law, full admitted field-source Einstein equality and compatible joint refinement; original fixed-g/tau/raw h^-2/#216 terminal.",
+    "sha256": {
+      "02_REGISTRY/research/A4D_COMPLETE_EXIT_ACTION_AND_SECOND_SOURCE.md": "482cf99f280620e7aa6120432cd7b9764671c5ef3fb1c0c3b50d7228d66e08b3",
+      "02_REGISTRY/research/sources/d0_complete_exit_source_2026-10-17/INVERSE_UV_RESULTS.json": "f4550634377c7fd5205db944039120dfbcadea94c763e3cc0eaae46940d0bd53",
+      "02_REGISTRY/research/sources/d0_complete_exit_source_2026-10-17/README.md": "d4ceeef26a80626592a0d913550a63746ff24d21d76a0802f05ffc93d7504fb7",
+      "02_REGISTRY/research/sources/d0_complete_exit_source_2026-10-17/RESULTS.json": "79db6f2a2db4ea65dbd0147376328ae5e42acf5613651f5fb9a4dcf89488c0e1",
+      "02_REGISTRY/research/sources/d0_complete_exit_source_2026-10-17/VALIDATION.json": "f7637833ac624d4d532f91cb54492026c1237532a042e257f2cb7b6852871299",
+      "02_REGISTRY/research/sources/d0_complete_exit_source_2026-10-17/check_complete_exit_source.py": "cbd3a04b61a5e355131947df4fc3d6a6beae7ea526942868fbbf63b655ac492d",
+      "02_REGISTRY/research/sources/d0_complete_exit_source_2026-10-17/check_exit_inverse_uv.py": "d700850b4920c14229b76d09b8d589ca67c9fda6e5ea80d0a5307b89bc54d332"
+    }
+  },
+  "complete_history_information_scale_checkpoint": {
+    "analytical_cross_reviews": 3,
+    "base": "090c957fddde61946da03cac7d1e658a6197f4e5",
+    "binding_conclusion": "Under SAME-history likelihood binding, code and all code jets cancel pointwise; expected physical action is [H(q)-log N]/log(phi). Raw normalizer, test/cut and action scale are the forcing target.",
+    "coherent_conclusion": "Weighted native second output expansion with actual Euler correction gives a positive Schmidt Schur birth B and +2 Tr(B) h^2 log(1/h) entropy. Six real rare outputs bound Tr(B)>=T[2Var(theta_prime)+<theta_prime^2 cos^2(2theta)>]/(128s^4), including T/(256s^4) on winding theta=y, independently of first prep/field correctors.",
+    "consumer": "Determine actual complete information-price scale before Einstein-source comparison; fixed finite code cannot cancel coherent birth logarithm, and likelihood code changes cancel instead.",
+    "new_bounded_exact_checks": 25,
+    "old_scientific_replay": false,
+    "open": "Physical native history/test/cut, raw weights and action/clock scale; other leading preparation ranks, full admitted Einstein source, compatible joint roots/refinement and original all-ten raw h^-2/#216 terminal.",
+    "pointer_conclusion": "On the actual full128 history, H=log(1/epsilon) E total exits+O(1), and every declared smooth first source has the same bounded remainder. Normalized values/sources converge to the actual integrated Rayleigh/exit functional.",
+    "producer_normal_optimized_outputs_identical": true,
+    "scope": "Full spatial pointer source under fourth moments/actual prep jets; coherent result on controlled faithful eight-shell LC cone, reference128/full16, H24 normalized prep germ and actual normalized-link Taylor. Subleading source only distributional in smooth parameters.",
+    "sha256": {
+      "02_REGISTRY/research/A4D_COMPLETE_HISTORY_INFORMATION_SCALE.md": "6a14686fcaab0b48b78b8ff4f784d989ea3ead1edf0ee28d48b7c20f76c4a7ed",
+      "02_REGISTRY/research/A4D_COMPLETE_RECORD_NORMAL_BIRTH_SCALE.md": "ca686aba406b81cd88e78def81750d830bba151783d6ac614013b146079e5291",
+      "02_REGISTRY/research/sources/d0_complete_history_information_2026-10-17/ANALYTICAL_REVIEW.md": "1defb91281e3594f881ccf8b870b84dc5d378e23b015c52038fc6a2a190962fd",
+      "02_REGISTRY/research/sources/d0_complete_history_information_2026-10-17/INPUTS.json": "8755ca6147b21d669b258f0d2a6144c3a264bf51427ef1eca8df7c20914cb7d8",
+      "02_REGISTRY/research/sources/d0_complete_history_information_2026-10-17/INTEGRATION_VALIDATION.json": "fca63c73e078179a5b232fff911ac8882950b25f16d5dace273815adf98f944b",
+      "02_REGISTRY/research/sources/d0_complete_history_information_2026-10-17/README.md": "2108524dc0e9f810adff313693b4c8322432a586111a2fc8d77b47d96975c386",
+      "02_REGISTRY/research/sources/d0_complete_history_information_2026-10-17/RESULTS.json": "9ea20c9a1192535c5616af8154077b1a697c897eb38c511ba42f1d358571ae0f",
+      "02_REGISTRY/research/sources/d0_complete_history_information_2026-10-17/VALIDATION.json": "5e81ec118fefad0b3f6a81bb0f89649640b9003922d6210a4641a34d9b8fded3",
+      "02_REGISTRY/research/sources/d0_complete_history_information_2026-10-17/check_normal_birth_inputs.py": "373f1e20b7319269d5805672da8cc12c845d9bfced0f9ec572108f816356f231"
+    }
+  },
+  "complete_record_channel_native_cost_checkpoint": {
+    "analytic_proofs_distinct_from_finite_checks": true,
+    "base": "ec5d6a00b14dcb26026c687bc37d49b0b31f73be",
+    "conclusions": [
+      "Exact full128 GKSL Euler channel, all-count tilt and full normalized source recursion with no reset.",
+      "Existing port1 observable equals p epsilon Delta; original0/10 code yields flat port-cost n+p beta_h R0 and nonblank port information p^3 relative to original(p,p^2).",
+      "Full16 flat recycling, sharp gap, complete stationary algebra, reference correlations and strong traceclass continuum process; stationary momentum weights remain arbitrary.",
+      "Exact full pointer entropy chain with controlled first-shell C1 source; coherent record entropy equals full system/reference entropy; supplied full-code costate source is explicit.",
+      "Finite faithful system stationarity iff recycling preserves kerD; neither reference128 purification nor continuum inverse traceclass follows."
+    ],
+    "consumer": "Actual retained-history evolution, original code cost and its complete moving source in the same-process physical-action bridge.",
+    "new_exact_checks": {
+      "flat_relaxation": 57,
+      "record_channel": 60
+    },
+    "normal_optimized_byte_identical": true,
+    "old_scientific_replay": false,
+    "open": "Native primitive admission and complete physical code/Info law; source equality with intrinsic Einstein geometry, compatible joint refinement, original fixed-g/tau/all10 raw h^-2/#216 terminal.",
+    "sha256": {
+      "02_REGISTRY/research/A4D_COMPLETE_RECORD_CHANNEL_AND_NATIVE_COST_SOURCE.md": "443341f0293d301320ec740b7874a52e99ecb1aa92cb0dc407c0c18868f3b0e4",
+      "02_REGISTRY/research/sources/d0_complete_record_channel_2026-10-17/FLAT_RESULTS.json": "8e3febec6c6407bdf9a7dd0d56f0d5c643e98bdcd4c8ef01c52377403d67b596",
+      "02_REGISTRY/research/sources/d0_complete_record_channel_2026-10-17/README.md": "cfff5847e8cee1a6a5681f0169457bf3c3e92f0fdb43486785a12172b7336567",
+      "02_REGISTRY/research/sources/d0_complete_record_channel_2026-10-17/RESULTS.json": "825ad5d0a51c4e85b228f9c17881f03b82eba4138d98ffe029174b0e07428d3e",
+      "02_REGISTRY/research/sources/d0_complete_record_channel_2026-10-17/VALIDATION.json": "1dc45da820ab8d43279ac16211a0c586d0c5c407956f05496294d05fe59cf614",
+      "02_REGISTRY/research/sources/d0_complete_record_channel_2026-10-17/check_flat_relaxation.py": "0dcb79f0959ecd4f4484a500ef1c0e53e47d95b4a95feb874d16840f56cc9ec9",
+      "02_REGISTRY/research/sources/d0_complete_record_channel_2026-10-17/check_record_channel.py": "dee7ada5cf04bf961701206f65b216e1ab9c6f45ef9f9ed3258e70bed9cb13a2"
+    }
+  },
+  "complete_record_preparation_information_source_checkpoint": {
+    "analytical_proofs_distinct_from_finite_checks": true,
+    "base": "d0e49f1288126cee72996b54c9b0916b04dd1642",
+    "conclusions": [
+      "Actual label6/coefficient1 both-port effect separates faithful full128 first-shell preparations with constant R and unchanged geometric fields.",
+      "Full-tape first-exit marked event has probability C_h(1+t), C_h→(1-exp(-beta lambda0))(1-b)^2/16>0. It is a diagnostic event, not a replacement entropy.",
+      "Full pointer entropy has a strictly negative Fisher matter Hessian; full coherent relative entropy has a positive BKM Hessian, with uniform fixed-time Jensen gap.",
+      "Every fixed complete code has affine expected cost; neither full-information candidate equals unchanged v8 on a full relative-open fixed-shell preparation family.",
+      "Exact nonlinear preparation covectors and necessary preparation-dependent partition curvature are explicit; a geometry-only heat partition cannot repair the missing source."
+    ],
+    "consumer": "Actual nonlinear preparation/source law in full retained-history price; prevents importing the v8 Rayleigh preparation equation as the full information equation.",
+    "new_exact_checks": 46,
+    "normal_optimized_byte_identical": true,
+    "old_scientific_replay": false,
+    "original_code_binding_facts": "Owned lengths1/2 apply to binary direct/return; full128 terminal code and physical raw-weight binding remain unselected. The universal fixed-code curvature result does not choose them.",
+    "scope": "Off-shell action/source binding on full128 first shell, preserving Rayleigh prep EL. No all-field EL, native admission of that whole family, arbitrary physical Info, joint-root/GR no-go or original terminal is claimed.",
+    "sha256": {
+      "02_REGISTRY/research/A4D_COMPLETE_RECORD_CHANNEL_AND_NATIVE_COST_SOURCE.md": "0a56d1fe4035f3e3ec0dbba334b395fa189cce5c466363e1177e63d706479ca6",
+      "02_REGISTRY/research/sources/d0_complete_record_channel_2026-10-17/PREPARATION_RESULTS.json": "e32a18fb049f9cc6625cc984db318ae41e493ed296d45c97ec6c1f3718cc2194",
+      "02_REGISTRY/research/sources/d0_complete_record_channel_2026-10-17/PREPARATION_VALIDATION.json": "cfc7b6c57ce81ad3293d2fa98e68973b1a9994dd2ddf0a71d7f62aad00bb9131",
+      "02_REGISTRY/research/sources/d0_complete_record_channel_2026-10-17/README.md": "a15ccbd43d7e85832427181de2ea6b24df8a099ade947d9076e587555f3e4512",
+      "02_REGISTRY/research/sources/d0_complete_record_channel_2026-10-17/check_preparation_information_source.py": "1151c58f63a60fcff6528c8c58698ce2f1bc29998add1a01596ffc17f58b445f"
+    }
+  },
+  "complete_retained_causal_nonlinear_checkpoint": {
+    "conclusion": "No fixed PSD detector on labels16/8/24 with same firstexit/coefficient0/bothports/faithfulshell placement gives universal nonlinear EH up to nonzero fixed scale; principal coherent identity remains valid.",
+    "consumer": "Complete the candidate test immediately rather than extrapolate a flat principal match. Exhaust the specified fixed positive three-label class.",
+    "exact_calibrated_action_gap": "-c_beta/(192s^2)*mean(sin^2(2theta)*theta_prime^2)",
+    "exact_source": "-c_beta/(96s^2)*[(1+cos^2(2theta))*theta_second-sin(4theta)*theta_prime^2]",
+    "new_exact_checks": 19,
+    "normal_optimized_outputs_identical": true,
+    "old_scientific_replay": false,
+    "open": "Physical complete-history detector/price beyond the exhausted fixed3class, actual matter/clock, nonlinear all10 equations and joint refinement; original terminal unchanged.",
+    "principal_checkpoint": "e38747e4",
+    "prior80_receipt_preserved": true,
+    "sha256": {
+      "02_REGISTRY/research/A4D_RETAINED_HISTORY_CAUSAL_PRINCIPAL_SOURCE.md": "36dedb1923b77874d18a5db954d0f34bc3dcd19893ec73f77b65ef744f39593b",
+      "02_REGISTRY/research/sources/d0_retained_causal_principal_2026-10-17/NONLINEAR_RESULTS.json": "b8b86c3aef71d7fe031e26f79a7e033c14ef90d76e439656f19801705b0527b9",
+      "02_REGISTRY/research/sources/d0_retained_causal_principal_2026-10-17/NONLINEAR_VALIDATION.json": "48c43dfadfab170be65e2827dd07f270f5a065625d1a686bb40c2f413c20cef7",
+      "02_REGISTRY/research/sources/d0_retained_causal_principal_2026-10-17/README.md": "5229310b80d3e8c63828abfe9f9f9a0e172a06ad1c3dec71f715002074ec2d86",
+      "02_REGISTRY/research/sources/d0_retained_causal_principal_2026-10-17/check_nonlinear.py": "33de3943d66034c22d4c4bee214cd9cd17b81378fff2163017f244724b7dcb86"
+    }
+  },
+  "complete_retained_causal_principal_checkpoint": {
+    "base": "5299ddf1bf0e81b28252acf9f2729b1947cc3292",
+    "conclusion": "Coherent projector on existing labels16/8/24 yields -(1-exp(-beta/s^2))*I_EH^[2]/(192*s^4); diagonal role probabilities cannot; positive three-label detector unique up to scale under longitudinal null condition.",
+    "consumer": "Front A retained-program to geometric source: full three-field principal quotient, concrete coherent detector/source interface",
+    "latest_user_input_alias": {
+      "latest_attachment_byte_identical": true,
+      "path": "02_REGISTRY/research/sources/d0_coframe_heat_source_2026-10-16/USER_INPUT_RU.txt",
+      "sha256": "ee36bd15a6c57cd393d297918086f07faf0c0dbd8dedcdc989c0536d55d38c61"
+    },
+    "new_exact_checks": 80,
+    "normal_optimized_outputs_identical": true,
+    "old_scientific_replay": false,
+    "open": "Native coherent detector implementation/physical price, actual stationary preparation, nonlinear/all10 source and joint refinement; original fixed-g/tau/raw terminal unchanged.",
+    "rejected_mutations": 4,
+    "sha256": {
+      "02_REGISTRY/research/A4D_RETAINED_HISTORY_CAUSAL_PRINCIPAL_SOURCE.md": "72308a00ceca9d1e23d0773f025e2ecb14456d790c05a4d7c33e847174fe7e97",
+      "02_REGISTRY/research/sources/d0_retained_causal_principal_2026-10-17/MUTATIONS.json": "ee4304ecc887550de73b75a6fa7f680574bfe66f496077442fb915e5773dc13c",
+      "02_REGISTRY/research/sources/d0_retained_causal_principal_2026-10-17/NOTES_RU.md": "7f456accc6201afae135cdf846c44caf74f8b63a84c64393aa93e88203ff1116",
+      "02_REGISTRY/research/sources/d0_retained_causal_principal_2026-10-17/README.md": "dfb89b826f02a068a5f6a0a06afb5e275a27a50af4ebb2487b9b17d827a9a462",
+      "02_REGISTRY/research/sources/d0_retained_causal_principal_2026-10-17/RESULTS.json": "2b015434c676d33204d6950f4ca1df2473a9b68851f4b40e5d49b22a1e72148e",
+      "02_REGISTRY/research/sources/d0_retained_causal_principal_2026-10-17/VALIDATION.json": "840543a271fcc54d580145972e8de54223189c09346c4504c6268a2b984d55d5",
+      "02_REGISTRY/research/sources/d0_retained_causal_principal_2026-10-17/check_principal.py": "7f57f6e325defd8fda3e85667cf040f061ef8dba6a0897a127385ed8de49380d",
+      "02_REGISTRY/research/sources/d0_retained_causal_principal_2026-10-17/test_mutations.py": "1eafeb98f55d9b3579f5e1d2ca10345064048db37d971ebf8e69bc2d3feff909"
+    }
+  },
+  "complete_source_metric_image_formfactor_compiler_checkpoint": {
+    "analytic_proofs_distinct_from_finite_checks": true,
+    "base": "e397a0af8383e5026353d6d54382202bb5c57a00",
+    "conclusions": [
+      "Exact nonlinear full joint stored metric projection; generic missing Bianchi covector and fixed offdiagonal separating row, with exceptional modes retained.",
+      "Full16 actual proper-link Stieltjes h2 coefficient is nonrational; actual moving first-shell amplitude Schur/seagull corrections cannot cancel its tail at fixed beta.",
+      "Exact computational-blank integral grammar obstruction with actual seed-copy bypass; fixed palette pointwise universality cannot create field jets; C2 full-trace/global-Z accuracy budgets."
+    ],
+    "consumer": "Full native field-to-given-action source: admitted metric image, all-frequency causal coefficient and constant-control compiler/source bridge.",
+    "intermediate_metric_publication": "05180c68dc9befefbab8be3bd7e950b6c2720ba2",
+    "new_exact_checks": {
+      "causal_formfactor_vertex": 49,
+      "metric_projection": 59
+    },
+    "normal_optimized_identical": true,
+    "old_scientific_replay": false,
+    "open": "Physically derived full process/price/preparation/clock/domain and source completion; other retained sections/scales and compatible joint refinement; original fixed-g/tau/raw h^-2/#216 terminal.",
+    "readable_v5_text": {
+      "capsule_code_executed": false,
+      "capsule_sha256": "91b030d62c93afa6bf2a23be28051d764e54f12a7e5a13cd75ed732427c913be",
+      "json_sha256": "3062ab678735883022bdc011471ae438d5a30bdcb013acea549bfd572e97564f",
+      "only_one_pinned_proof_extracted": true,
+      "text_sha256": "a123c96233c62a1a05cc01b0a5be706ca4cff10765f781797b7859c4d50547e4"
+    },
+    "sha256": {
+      "02_REGISTRY/research/A4D_FULL_PRICE_CAUSAL_FORMFACTOR.md": "d8d924cf5ef56c474b99bc4d5a2385b48713da21e08b13e0e16d487b0fd18fe0",
+      "02_REGISTRY/research/A4D_NATIVE_COMPILER_SOURCE_AND_RESOURCE_BOUNDARY.md": "7b2121fdaa2ebd4f98be494d6062034577971d334b00bddf9ef9da8969f8f817",
+      "02_REGISTRY/research/A4D_STORED_METRIC_PROJECTION_AND_SOURCE_COMPLETION.md": "014be6082811753f49d20cd10adcd73693cabab1e1b44997e0ee08027b7f3bcf",
+      "02_REGISTRY/research/sources/d0_full_price_causal_formfactor_2026-10-17/README.md": "418f2395adcec614dce7682b44e3dd8d80a60d29fc113fc61e0122cd12b2451f",
+      "02_REGISTRY/research/sources/d0_full_price_causal_formfactor_2026-10-17/RESULTS.json": "48dd65e8fb83222eca4f60b84389bc70535d1d634fde89ed747fb3c5628e11d4",
+      "02_REGISTRY/research/sources/d0_full_price_causal_formfactor_2026-10-17/VALIDATION.json": "94d1bb485d5e2175f6f6e9059557db8957132018b15827829d078218d9e8cb24",
+      "02_REGISTRY/research/sources/d0_full_price_causal_formfactor_2026-10-17/check_formfactor.py": "30575f74c076f335a30524cace3015fe8d72fedfaf1aefac8ece2829ddb5c054",
+      "02_REGISTRY/research/sources/d0_native_controller_v5_2026-10-14/proofs/NATIVE_COMPILER_AND_FULL_ARCHIVE_ACTION_RU.md": "a123c96233c62a1a05cc01b0a5be706ca4cff10765f781797b7859c4d50547e4",
+      "02_REGISTRY/research/sources/d0_stored_metric_projection_2026-10-17/INPUTS.json": "e136301c1ac2d11829af79ea5026f9840ccec41706e07b493e0d8d7617ef5915",
+      "02_REGISTRY/research/sources/d0_stored_metric_projection_2026-10-17/README.md": "57ef41a05f5a79aebebc57e03576d80ce0998da87cca0c8e2e368921d3690e87",
+      "02_REGISTRY/research/sources/d0_stored_metric_projection_2026-10-17/RESULT.json": "a85ce359521b6d7ba61cc2de401f6fdfda1f2d766802a172564bcd1fe5feafeb",
+      "02_REGISTRY/research/sources/d0_stored_metric_projection_2026-10-17/VALIDATION.json": "5afedd7346063dc427e25b69e7b579c535b87263e6fc70ccbd0cb8c2a970ada1",
+      "02_REGISTRY/research/sources/d0_stored_metric_projection_2026-10-17/check_metric_projection.py": "a60a99379169f6a807ceeb9fd9fe4792a48441712212992cd9a3c08f3b0a3bce"
+    }
+  },
+  "consumers": {
+    "curved_tensor": "projected16 actual curvature source; elliptic coefficient-level inverse/local variable isolation, not fullprice or Lorentz closure",
+    "flat_moduli": "finite genuine-root second-response mismatch rules out unqualified EH+Lambda+sameR identity; fixedbeta theta source retains global shape",
+    "observer_scalar": "exact zero-shift/twist-free R_L/R_E/spatial-curvature contrast; not imposed on general twisting observer"
+  },
+  "feasible_history_gain_source_checkpoint": {
+    "base": "21f8a25fe7f254c24945536d9701a232e0454077",
+    "conclusion": "All-word pointer covariance and quantitative restricted-gain deficit; constructive compact optimum/Danskin source and nonquadratic second response. Scene-Perron source/amplitude-cut typing retained. Exact selected-six pointer component and ordinary dark-word separator consumed without claiming full entropy closure.",
+    "consumer": "Actual admitted test/Info/full-price source and complete pointer h^-2/log comparison",
+    "integration_parent": "fbde4b3476599d9eeee282d74fd14f4efb8839a3",
+    "new_bounded_exact_checks": 49,
+    "old_scientific_replay": false,
+    "open": "Actual admitted memory/test/reference/cost and amplitude-to-cut/raw-weight law; complete whole-pointer birth/count/normalizer source; Einstein equality, nonempty compatible joint refinement and original raw h^-2/#216 terminal",
+    "scope": "Supplied tensor/unchanged-pointer one-way class; central-reference qubit response not asserted native-reachable. Pointer companion is a selected component, not full entropy coefficient.",
+    "sha256": {
+      "02_REGISTRY/research/A4D_NATIVE_FEASIBLE_GAIN_AND_ACTION_SOURCE.md": "93f44b61c590d30bfe8205f61c477f88d9f2219ef30ecdf48e33d796966556d1",
+      "02_REGISTRY/research/sources/d0_feasible_gain_source_2026-10-17/ANALYTICAL_REVIEW.md": "b5b14fcf4aa2786a4c9e8b508e711f1d48a0c2f961f3c14f168bd4aea10c6793",
+      "02_REGISTRY/research/sources/d0_feasible_gain_source_2026-10-17/INPUTS.json": "fc7357e7f5554a55b4098b1ff73aa9167538a3a0eb5b5e7a5aa86a3c621fc4e0",
+      "02_REGISTRY/research/sources/d0_feasible_gain_source_2026-10-17/INTEGRATION_VALIDATION.json": "53fb99525c54c50d8f5afd2ba85a6f6909f104c71a3ccf1cd9c2305a41763090",
+      "02_REGISTRY/research/sources/d0_feasible_gain_source_2026-10-17/POINTER_BIRTH_CONTINUATION.md": "5cb666b021cac1e3e724e117ca30a524f190c3d7d106081266641cc21b200554",
+      "02_REGISTRY/research/sources/d0_feasible_gain_source_2026-10-17/README.md": "00f60bce1c654abfda0d522507ba8b9d4e06b526822319215bfaedd382b8e4a1",
+      "02_REGISTRY/research/sources/d0_feasible_gain_source_2026-10-17/RESULTS.json": "7e80c4552001a72816e36dfe0cf8040a6083b79b0e0a31ecff531a1eeecf44b8",
+      "02_REGISTRY/research/sources/d0_feasible_gain_source_2026-10-17/VALIDATION.json": "0d5baf3a0770b0005347ccb0816ebab37449023f6caba8a45f9eba5ac3e8486b",
+      "02_REGISTRY/research/sources/d0_feasible_gain_source_2026-10-17/check_feasible_gain.py": "4677a4f4fb3c546bdcfa6ddfac375e6077a61481c7d1cf6edf0645b1e6fd7341"
+    }
+  },
+  "full_preparation_and_history_checkpoint": {
+    "base": "e6f4701e7743952b95b5fd281bebe10106d56163",
+    "conclusion": "Full first-shell source constraints obstruct all ranks on the unchanged cone jet and faithful full shell even after real smooth field jets. An actual retained first-exit event has a derived h^-2 causal source and exact fixed-scale one-cone EH relation; full price/stationarity/admission remain open.",
+    "consumer": "complete native source and current GR route in the same Draft334",
+    "earlier_first_corrector_owner_append": {
+      "path": "02_REGISTRY/research/A4D_CONE_PREPARATION_FIRST_CORRECTOR.md",
+      "scope": "additive consumer to stronger theorem; original matrix helper and output unchanged",
+      "sha256": "3ca2619d7965a1090345608e2eab91020c7a4ccafd3f7253fd3576fa73e25077"
+    },
+    "new_exact_groups": {
+      "retained_history": 64,
+      "source_balanced_preparation": 19
+    },
+    "old_scientific_entrypoint_replay": false,
+    "sha256": {
+      "02_REGISTRY/research/A4D_CONE_SOURCE_BALANCED_PREPARATION.md": "1b6c919602be63b2ca401426e0630c5a91808b65cedf4181df5d7e499ae18d5f",
+      "02_REGISTRY/research/A4D_RETAINED_HISTORY_CAUSAL_SOURCE.md": "d7f8498e30e788af43edeb2bfd6e763d429e221cea76b622198687bbf4af21db",
+      "02_REGISTRY/research/sources/d0_cone_source_balanced_preparation_2026-10-16/README.md": "e444bd4f8b2f77cc9ca5e48a94f52212e1d3c84537f5e701c6461e1e383d7d76",
+      "02_REGISTRY/research/sources/d0_cone_source_balanced_preparation_2026-10-16/RESULTS.json": "094b48783384cd8718e61f503fe2e56511ee1ba2cf28bf756ce99e90a3ba2f1d",
+      "02_REGISTRY/research/sources/d0_cone_source_balanced_preparation_2026-10-16/VALIDATION.json": "f724499c2f84292c33bc826c0a291ef41f2b63b8bd0432e36112b63f4dbc87c8",
+      "02_REGISTRY/research/sources/d0_cone_source_balanced_preparation_2026-10-16/check_cone_source_balanced_preparation.py": "1a84b5dbfa86c03d55dfe3db41330272e4937d2a47f30c3e0929d584996859c3",
+      "02_REGISTRY/research/sources/d0_retained_history_causal_source_2026-10-16/README.md": "78be81114113d8bc6444520a3fc0562e10cacc38cb1f6a9883dec32a6bb57f00",
+      "02_REGISTRY/research/sources/d0_retained_history_causal_source_2026-10-16/RESULTS.json": "479494fae6f60270617b414e3bde29ad57930a5f383462f71adcfc2466c9c074",
+      "02_REGISTRY/research/sources/d0_retained_history_causal_source_2026-10-16/VALIDATION.json": "69fd5a9d68a6d3a9ecb9ba4260116eafd9f54841d5d270f7161222c4ed706875",
+      "02_REGISTRY/research/sources/d0_retained_history_causal_source_2026-10-16/check_retained_history.py": "6be5d31fc2b5a2d2f75b54071720b03c6bbebc30356260b5c823c3ef8ef88d92"
+    }
+  },
+  "full_rare_history_gauge_span_checkpoint": {
+    "base": "e505305509d175c708f797e906410aaf961fc01f",
+    "conclusion": "All24 torsionfree LC potential coefficients are spanned by actual periodic pure-diffeomorphism cone tangents across constant backgrounds. Onsite roots give one fixed pointwise full contrast map. Fixed PSD detector annihilating Einstein gauge tangents then has zero response on every LC principal variation.",
+    "consumer": "Front A complete retained-history/source arrow: exhaust the full constant positive rare-event route via genuine gauge span, not another label census.",
+    "new_exact_checks": 335,
+    "normal_optimized_outputs_identical": true,
+    "old_scientific_replay": false,
+    "previous99_receipts_preserved": true,
+    "rejected_mutations": 4,
+    "remaining_native_consumer": "Same-process Cost−Info/action source; nonzero-N0 second stencil and clock jets, moving/nonlocal detectors, signed/nonlinear price and actual admission/preparation. Original fixed-g/tau/raw terminal remains open.",
+    "scope": {
+      "fixed_positive_record_detector_only": true,
+      "nonblank_zero_N0_rows": 18,
+      "nonzero_N0_rows_excluded": 13,
+      "rare_port_outputs_including_blank_port1": 37,
+      "zero_N0_rows_including_blank": 19
+    },
+    "sha256": {
+      "02_REGISTRY/research/A4D_FULL_RARE_HISTORY_GAUGE_SPAN_BOUNDARY.md": "85becfa2696e3481d8d20e3723c92ed74c965c9fee96e871a53131117852b4aa",
+      "02_REGISTRY/research/sources/d0_full_contrast_gauge_span_2026-10-17/MUTATIONS.json": "21ccb6f655aaad12a4aee76b2c305bd7dcbfaac7afb447e45d81f71e6a31794d",
+      "02_REGISTRY/research/sources/d0_full_contrast_gauge_span_2026-10-17/README.md": "1a0e977485eb49266cefda040b6ae4b1fbecdeb946e175bb0e7a386fb921c10c",
+      "02_REGISTRY/research/sources/d0_full_contrast_gauge_span_2026-10-17/RESULTS.json": "b4e961073051041f70287294de64e128e0488eb929b662377328b56c933a8047",
+      "02_REGISTRY/research/sources/d0_full_contrast_gauge_span_2026-10-17/VALIDATION.json": "a72ffef9ad439eb0bdb5c455d2a4db3839bffc664434a3dde5468e03fd254485",
+      "02_REGISTRY/research/sources/d0_full_contrast_gauge_span_2026-10-17/check_gauge_span.py": "6ce1983a9b437dba3d49c30f290d934f9b0caa3a6cac54f758fb11fd33cfd8c5",
+      "02_REGISTRY/research/sources/d0_full_contrast_gauge_span_2026-10-17/test_mutations.py": "deae6edf3507a19d146b2a53b604e63b7044a13a0cdbf770201ccf3cd459e474"
+    }
+  },
+  "integration": "additive merge preserves all13 incoming paths; no old scientific replay",
+  "parallel_complete_preparation_descent_intake": {
+    "all_source_bytes_match": true,
+    "consumer": "Conditional retained preparation equation and envelope/Schur source for supplied coherent code; current route and primary synthesis.",
+    "old_scientific_replay": false,
+    "preserved_paths": 9,
+    "producer_reported_exact_checks_not_reexecuted": 483,
+    "producer_reported_executed_mutants_not_reexecuted": 4,
+    "scope": "Actual all-eight-momentum/all16/reference128 shell; unique interior observable extremum with invisible coherences preserved, prescribed masses retaining multipliers. No growing-spatial Hessian, physical code/Info or Einstein admission follows.",
+    "sha256": {
+      "02_REGISTRY/research/A4D_COMPLETE_RECORD_PREPARATION_DESCENT.md": "6450740a9916bc6b3334528c94c110bacee2940b63be568ff0c8f6820f1e6916",
+      "02_REGISTRY/research/sources/d0_complete_preparation_descent_2026-10-17/CURRENT_SOURCE_DELTA.md": "15e727df3c5380cd0f431156e47efb5a18882db7e0ce4fe0cec003d954f5d2de",
+      "02_REGISTRY/research/sources/d0_complete_preparation_descent_2026-10-17/INPUTS.json": "6eec99832ce6ba56a70913ff28cea21179e85d235ea94656a4f218f5d064a35f",
+      "02_REGISTRY/research/sources/d0_complete_preparation_descent_2026-10-17/README.md": "3e844325a07b5961fa7f9fa77169e31b82acfd0f6420f74a0f1f10c3743c544a",
+      "02_REGISTRY/research/sources/d0_complete_preparation_descent_2026-10-17/VALIDATION.json": "32bead258c807de96f5fb1375d14855945ec1d68f67e9e2a5e5155df37eec6a8",
+      "02_REGISTRY/research/sources/d0_complete_preparation_descent_2026-10-17/check_preparation_descent.py": "4c61a011fe3e7648d20c482f2e93b8346c26f5784ce84b35e078e8a61f585f20",
+      "02_REGISTRY/research/sources/d0_complete_preparation_descent_2026-10-17/mutations.json": "468b4a7ba5dd09efbe92f2b4abbc6e1d4987b7cea9fce8f27499125db9396e09",
+      "02_REGISTRY/research/sources/d0_complete_preparation_descent_2026-10-17/result.json": "fb90f203aa18c21b560e542951142ab3d18107cfb672a8bc3df784c326ef3707",
+      "02_REGISTRY/research/sources/d0_complete_preparation_descent_2026-10-17/test_mutations.py": "5f0ab85490c7641993ce385b3925212f7971836835355c5f8fec19a4ad067ced"
+    },
+    "source": "9366f3e82f0ce5fdca0206c96af6fd1443b12681"
+  },
+  "parallel_complete_price_and_source_intake": {
+    "all_disjoint_source_bytes_match": true,
+    "boundary": "positive fixed-beta scalar-price longitudinal source is not pure EH; Slater/no-leak price reader enlarges carrier and requires coin/preparation/admission; original fixed-g/tau terminal remains open",
+    "preserved_paths": 25,
+    "primary_appendix_preserved_exactly": true,
+    "reported_action_selection_checks": 41,
+    "reported_blank_dilation_checks": 36,
+    "reported_finite_response": {
+      "exact_groups": 41,
+      "global_sign": "analytic, not rounded2.91 diagnostic",
+      "mutations": 4
+    },
+    "reported_full_shell": {
+      "exact_groups": 23,
+      "normal_optimized": "producer PASS_IDENTICAL_JSON"
+    },
+    "scientific_replay_by_this_intake": false,
+    "sha256": {
+      "02_REGISTRY/research/A4D_CONE_FULL_SHELL_FIRST_JET_NO_GO.md": "3cd3cc9b3c459f32ca74d72bd84165c3690a4169152a1c8d8ac22d0868eb3284",
+      "02_REGISTRY/research/A4D_FINITE_CAUSAL_RESPONSE_AND_CLOSURE_TEST.md": "df750346554b41fadce85615bc0bc7cc596c497a3c01783e89df693d46a31319",
+      "02_REGISTRY/research/sources/d0_cone_full_shell_first_jet_2026-10-17/README.md": "73c946b759d132e91c2bc697d46c3ca9fd2872660b85da7d17ae2bd6427ee004",
+      "02_REGISTRY/research/sources/d0_cone_full_shell_first_jet_2026-10-17/RESULT.json": "0640081bfa65c0f131e78f254f54399d7e1616a91219a2d53b91a7aa748da401",
+      "02_REGISTRY/research/sources/d0_cone_full_shell_first_jet_2026-10-17/VALIDATION.json": "a7a84f5d7710deccfce56e61981958c9b8cda0eb087314519d7c6a76a807b757",
+      "02_REGISTRY/research/sources/d0_cone_full_shell_first_jet_2026-10-17/check_full_shell_first_jet.py": "18a677df5bdf5a926f553bfa2fef6c2660376d60d0d9744e22c9dd48959cc98e",
+      "02_REGISTRY/research/sources/d0_finite_causal_response_2026-10-16/CURRENT_SOURCE_DELTA.md": "0aa5bb8e8f4bbf65ac84957e42b7176451a35a006227817ad21bd68153b266ec",
+      "02_REGISTRY/research/sources/d0_finite_causal_response_2026-10-16/INPUTS.json": "14bb314f1342949ec6a8c581b5ee409b5b9e3d76cd8b94243b7fa96d2452b290",
+      "02_REGISTRY/research/sources/d0_finite_causal_response_2026-10-16/README.md": "aa9f2c9b48c62db0d453ebb684d72a50a2a831beab7ab109dc2e75527cf1c11d",
+      "02_REGISTRY/research/sources/d0_finite_causal_response_2026-10-16/VALIDATION.json": "f73facad236fdbcf9bf424ab8a40369c92a2a8200fba4f817d49b53c0b0be70b",
+      "02_REGISTRY/research/sources/d0_finite_causal_response_2026-10-16/check_exact.py": "4fd24445dc611aeae003140ec321da746c0933a3edebd2a981de29b3251df2d6",
+      "02_REGISTRY/research/sources/d0_finite_causal_response_2026-10-16/continuum_oblique.py": "54fd2b2a575aaef4175ba1a37697f8e8ce4aa4f107d42d4e5d4f4af938a68139",
+      "02_REGISTRY/research/sources/d0_finite_causal_response_2026-10-16/dense_check.py": "576c6c261d008ee03c371eef29379af6921bf8c7d3996a1f8fc79ddbe7b067d6",
+      "02_REGISTRY/research/sources/d0_finite_causal_response_2026-10-16/finite_symbol.py": "bc6cae0308fbd996f3a6fd9445dabaa4d9d19a5ae363b8ef111bb900f10f317e",
+      "02_REGISTRY/research/sources/d0_finite_causal_response_2026-10-16/mutations.json": "d02fb300f4ee5c040040ab13791ccef7671050061e339243c8fa9831a6c38a82",
+      "02_REGISTRY/research/sources/d0_finite_causal_response_2026-10-16/result.json": "1c3b04cc4314f62883e7f061104aec59b861dff9f5139ea0502feff8928875ce",
+      "02_REGISTRY/research/sources/d0_finite_causal_response_2026-10-16/run_validation.py": "41ee0d59644ac6c516d757d5a22bf4fdf0568a4edc8dd36ed01c71ec285e5351",
+      "02_REGISTRY/research/sources/d0_finite_causal_response_2026-10-16/test_mutations.py": "591384a2b192a0f795a4ea30b9138bb40447783307cfb46d0aa3d3b9074da650",
+      "02_REGISTRY/research/sources/d0_native_action_selection_2026-10-16/RESULT.json": "7cb72820aa19746c6ea2ad11ae7353310a6f72a57d19234bb3566351c0174c98",
+      "02_REGISTRY/research/sources/d0_native_action_selection_2026-10-16/RESULT_RU.md": "b6923278161cfbaa48a70f4cf775caca76d19bac00ff08cd8afa2e0e6a175f04",
+      "02_REGISTRY/research/sources/d0_native_action_selection_2026-10-16/check_selection_gate.py": "c9e0a74f53cd99ecd097cf731d7be79a11bd8b2912f7319b58d0d1d01df60877",
+      "02_REGISTRY/research/sources/d0_native_feedback_blank_dilation_2026-10-16/RESULT.json": "3d894b6c41a25a4749aa0ff70cbf51172f36c81e348681e7e4340adb6fa6b717",
+      "02_REGISTRY/research/sources/d0_native_feedback_blank_dilation_2026-10-16/RESULT_RU.md": "e7e3724f8b8c9622a65a1b88b96b7f44582f3d2fc873d9f0dc4d0f3ff15f15ac",
+      "02_REGISTRY/research/sources/d0_native_feedback_blank_dilation_2026-10-16/check_feedback_dilation.py": "0bdd25adbfd4c9cc99f2bf58ddbc9f6cbed07e15cef91abda729986cbf15444b"
+    },
+    "source": "9ece9146"
+  },
+  "parallel_native_cycle_morphism_intake": {
+    "all_disjoint_source_bytes_match": true,
+    "consumer": "Physical native-history-to-price morphism in current route; algebraic determinant computation no longer needs an added Fock carrier.",
+    "old_scientific_replay": false,
+    "open": "Future-test equivalence of cyclic-origin quotient, actual signed-cycle price/cost/Info, scene-to-v8 field map, complete sources and original GR refinement.",
+    "preserved_paths": 3,
+    "producer_reported_exact_checks_not_reexecuted": 81,
+    "scope": "Finite actual 33-label complete recorded scene; signed effective-F cycles lift to primitive six-step paths. Full moving-(P,U) source and finite Newton/cycle-cover identities do not select physical signed-cycle valuation or scene-to-v8 map.",
+    "sha256": {
+      "02_REGISTRY/research/sources/d0_native_cycle_morphism_2026-10-17/RESULT.json": "24c11d1008f96fa0338f903cf7cbe7b493e5d756854faa533df28e28a16ed54a",
+      "02_REGISTRY/research/sources/d0_native_cycle_morphism_2026-10-17/RESULT_RU.md": "841614f99c164455db35705b88eb54a337a7aa95c5ccbbe5db448ab9c24d86c2",
+      "02_REGISTRY/research/sources/d0_native_cycle_morphism_2026-10-17/check_native_cycle_morphism.py": "6a66d1bb9bc8964663dc445c7ed8ccdfa1e3d5cb869ce2cbb0e0bfaf611648eb"
+    },
+    "source": "03ccb728b9f3c3f95e8e28dfa3702115f8a315a4"
+  },
+  "parallel_ward_and_resource_followup": {
+    "consumer": "actual homogeneous retained section and complete native price/clock consumer",
+    "old_scientific_replay": false,
+    "reported_not_reexecuted": {
+      "feedback_exact": 39,
+      "ward_exact": 64,
+      "ward_mutations": 6
+    },
+    "resource_scope": "The literal faithful full-CAR implementation exceeds the listed carrier budget; determinant compression and other admitted resources are not excluded.",
+    "sha256": {
+      "02_REGISTRY/research/A4D_FULL_EXPERIMENT_WARD_AND_METRIC_DESCENT.md": "71fdd37eb806c72e481b9fc35f3e31dd0a1b9447c7ae59223d0d60ed56d3e8a9",
+      "02_REGISTRY/research/sources/d0_native_feedback_blank_dilation_2026-10-16/RESULT.json": "a0f09c3545fa743bfe985c856e91668b2fa4493a1b1af8a0207d87c8f7ddabc1",
+      "02_REGISTRY/research/sources/d0_native_feedback_blank_dilation_2026-10-16/RESULT_RU.md": "8241837e5364981c8aa590132682109fdff541d1195a0b40a9e648a0c9d63193",
+      "02_REGISTRY/research/sources/d0_native_feedback_blank_dilation_2026-10-16/check_feedback_dilation.py": "5a17addae009c74992e6f6fa604625dc073f43fa7a603d6e37da71dd1fa961f0",
+      "02_REGISTRY/research/sources/d0_relational_ward_descent_2026-10-16/INPUTS.json": "f0279c1910078af69e70b6e1a3d7913e572311ffb1dafb4ff391bec0d73bbf14",
+      "02_REGISTRY/research/sources/d0_relational_ward_descent_2026-10-16/README.md": "a78792d6e127da2509a992e0cb577361b78dc09038a19d3a5657e2748518c593",
+      "02_REGISTRY/research/sources/d0_relational_ward_descent_2026-10-16/VALIDATION.json": "4d5873c123246cc06ca7d23492b7e02675eb27eb5f150343b26b4b8c393c72a0",
+      "02_REGISTRY/research/sources/d0_relational_ward_descent_2026-10-16/check_relational_ward.py": "8158fd256825a722f12901d99130c52231d522d46bffcbeba9cc1c0b7fc9b5a5",
+      "02_REGISTRY/research/sources/d0_relational_ward_descent_2026-10-16/mutations.json": "6a73beb27d40d9e12859a782df324db3add3a880dfb9e7573bca13fb394d6408",
+      "02_REGISTRY/research/sources/d0_relational_ward_descent_2026-10-16/result.json": "3efb3a4bad773a3abb1d85e34ab3f952d55f0fa1f8d5aa9f19773526e07973e6",
+      "02_REGISTRY/research/sources/d0_relational_ward_descent_2026-10-16/test_mutations.py": "d99d59d37d4565eecd5733239d8de8859484a329d6c30e8642685d590af5e24e"
+    },
+    "source_refs": [
+      "4b976893",
+      "7bc607df"
+    ]
+  },
+  "reported_checks_not_reexecuted": {
+    "curved_tensor_exact": 427,
+    "curved_tensor_mutations": 4,
+    "flat_output_sha256": "53e542e245ca08915082891ea8d92b4e88f51b1294d95cd05839929cc34e4ac4"
+  },
+  "retained_history_readout_normalizer_finite_part_checkpoint": {
+    "base": "efa3f8f3b329e606e0bd6df7cdd0f72a51edb458",
+    "conclusion": "Explicit golden/registration real-coherence tests and normalized source left inverse; exact local gain/projectivity law with all jets and same-process return normalizer separator; full pointer finite-part and fixed-clock C1 source limit.",
+    "consumer": "Same complete native history/readout/cut/raw-weight source, then intrinsic Einstein comparison",
+    "integration_parent": "3f443e120d843c02c409aee6b5618847edc0ba91",
+    "new_bounded_exact_checks": 40,
+    "normal_optimized_outputs_identical": true,
+    "old_scientific_replay": false,
+    "open": "admitted history/test/cut and raw weight/gain law, physical clock/action scale, full source equality and compatible joint refinement, original all-ten raw h^-2/#216 terminal",
+    "scope": "smooth compact actual chart, fixed native clock, actual normalized Hilbert preparation jets and moment8; value needs moment4",
+    "sha256": {
+      "02_REGISTRY/research/A4D_POINTER_HISTORY_FINITE_PART_SOURCE.md": "e0a7a9139fc469568111393c9ededdc6dde86e28c4c5a7b85795731183aa371b",
+      "02_REGISTRY/research/A4D_RETAINED_HISTORY_COHERENCE_TEST.md": "3a55980ed2051b34bfba3570731622489a2e11e48d49a9f42bce034cae2ef1d6",
+      "02_REGISTRY/research/A4D_RETAINED_HISTORY_READOUT_AND_NORMALIZER.md": "98b02b22f8678be211f555c2ec0c1d8ac3d2cc43f7dd50b002b8e1424460407b",
+      "02_REGISTRY/research/sources/d0_retained_history_readout_2026-10-17/ANALYTICAL_REVIEW.md": "1d299ce77fa910355745a03ef3dcd55c099e41bfd1f0cfa6c6b7b4d92334951c",
+      "02_REGISTRY/research/sources/d0_retained_history_readout_2026-10-17/INPUTS.json": "fc951a82d49d84f99f9a07c74b9bee369d107c0f146832ec155114783925b28c",
+      "02_REGISTRY/research/sources/d0_retained_history_readout_2026-10-17/INTEGRATION_VALIDATION.json": "a709ade4c8118300be651c1547cb19e43794f62a4fea155739be0a6e003bd652",
+      "02_REGISTRY/research/sources/d0_retained_history_readout_2026-10-17/README.md": "34fce7f64716b2d86978765e9937e156d5203f937132817ec4b49865b1ca30cd",
+      "02_REGISTRY/research/sources/d0_retained_history_readout_2026-10-17/RESULTS.json": "46956ba27f2592490a989d9dcc277aa559472296c97d92103d7c2865ffc418ae",
+      "02_REGISTRY/research/sources/d0_retained_history_readout_2026-10-17/VALIDATION.json": "6e2d574475d4011cd14ecec696421fc0f0fc65b4fe28699a779fc68b847e9fd2",
+      "02_REGISTRY/research/sources/d0_retained_history_readout_2026-10-17/check_readout_splice.py": "015863a4a4968d49cb41365927dcad63d96a704da3cd6f2ab1e21b59027eeb56"
+    }
+  },
+  "second_order_source_checkpoint": {
+    "base": "ac79c0ed7cc5f2508d61bec32d2d82d323354c94",
+    "conclusion": "Controlled fixed-beta H+J raw same-grid second source remainder O(h^(9/4)); actual matter continuation and native reference law separate. First faithful exact-LC cone amplitude corrector is obstructed.",
+    "consumer": "causal bridge7.1 and original primary memo, same Draft334",
+    "new_bounded_exact_checks": {
+      "cone_first_corrector": 17,
+      "raw_link_cotangent": 47,
+      "raw_source_and_clock": 62,
+      "reference128": 138
+    },
+    "old_scientific_replay": false,
+    "sha256": {
+      "02_REGISTRY/research/A4D_CONE_PREPARATION_FIRST_CORRECTOR.md": "13e5516b88af197836a5a63f4cac31d7f0d22b77906c93f3e9ac5721abeae271",
+      "02_REGISTRY/research/A4D_RAW_LINK_COTANGENT_JET.md": "9774a430a21450010b17ef9c787014885a2ff69db2c1ba21036f02e82c2a56f5",
+      "02_REGISTRY/research/A4D_REFERENCE128_OBSERVER_READING_BOUNDARY.md": "cf7f492a44533a93cb23ba09f0cfd48da7cabf8032eed613c871b567f678d88a",
+      "02_REGISTRY/research/A4D_SECOND_ORDER_HEAT_REMAINDER.md": "749e3817e2a3c268f07fa949cc8054ed13d68c3989aedd9e8397f2d92f1e1614",
+      "02_REGISTRY/research/sources/d0_cone_matter_corrector_2026-10-16/README.md": "6a58a980ab2848026e589fdab99fa557c22254196e8241b1d7afcd65a7d6a680",
+      "02_REGISTRY/research/sources/d0_cone_matter_corrector_2026-10-16/RESULTS.json": "d6be5f95fbd203ac6fa6b1ca6b04796b91ee2349efee83b96415eaa8402819ad",
+      "02_REGISTRY/research/sources/d0_cone_matter_corrector_2026-10-16/VALIDATION.json": "a8631585828951be61a3cabd96ee7a2ddc3cfcc110f9bebbf89ba1799de9e3a2",
+      "02_REGISTRY/research/sources/d0_cone_matter_corrector_2026-10-16/check_cone_matter_corrector.py": "7bbf1589f3a32af381036df64f76d720ce14a9f2e502b3a1a6f43f5b5e776d58",
+      "02_REGISTRY/research/sources/d0_raw_link_cotangent_2026-10-16/README.md": "d4bd2aefb303bb7656b0f87a534979fdef7466b2cbb697fa0befc733a2be69fa",
+      "02_REGISTRY/research/sources/d0_raw_link_cotangent_2026-10-16/RESULTS.json": "319b78064c8ab3e1bbbb6bb4a28683093182479ec60fa75403f41201a4d1a2ed",
+      "02_REGISTRY/research/sources/d0_raw_link_cotangent_2026-10-16/VALIDATION.json": "b66b805f6725c920edb51bb57e92085dc0fafcc641f011d654be13702b9b1b75",
+      "02_REGISTRY/research/sources/d0_raw_link_cotangent_2026-10-16/check_raw_link_cotangent.py": "5c4caead41b5256119161349332dc7cef5c752bb1194d8bd0751fc598e77a491",
+      "02_REGISTRY/research/sources/d0_reference128_observer_2026-10-16/RESULTS.json": "1066adf4098a2e66c07c78951f9f2edc4d9975ff7ac9d369b9251b0e6e3f5867",
+      "02_REGISTRY/research/sources/d0_reference128_observer_2026-10-16/VALIDATION.json": "de7cd77003bc7a98f1a91a952fe885d1e888f22f21478a644cc568b7dbfe3450",
+      "02_REGISTRY/research/sources/d0_reference128_observer_2026-10-16/check_reference128_observer.py": "ded77bb671cdb2b58cec6389f5b7fe4bf697906383c0a1ae4744256b40d6d6bb",
+      "02_REGISTRY/research/sources/d0_second_order_raw_source_2026-10-16/README.md": "159ded435597e6ea3a79ba4de2ac4f705c56a82d14761b6c2fe810d5a5706f35",
+      "02_REGISTRY/research/sources/d0_second_order_raw_source_2026-10-16/RESULTS.json": "eca1ac86310b9152a6c7820513d1743652fcc4d0ed0516d6126fdac6dc325b62",
+      "02_REGISTRY/research/sources/d0_second_order_raw_source_2026-10-16/VALIDATION.json": "01dc29a5d34e74004880e27e66505e077b873294736e9dbfc882da08f73c6aa9",
+      "02_REGISTRY/research/sources/d0_second_order_raw_source_2026-10-16/check_second_order_raw_source.py": "1c6d97e72427300c69164c8f8dd90f6761d59683e6500b1c942db18d6b6c8bf0"
+    }
+  },
+  "sha256": {
+    "02_REGISTRY/research/A4D_CURVED_TENSOR_A4_SOURCE_AND_ELLIPTICITY.md": "b7f71bb40a0cba8468ff81eb69f48694e01aa8f53fd95c3d9440b3079276a8a9",
+    "02_REGISTRY/research/sources/d0_curved_tensor_a4_2026-10-16/CURRENT_SOURCE_DELTA.md": "5e78368039e106cf2e49bbf006a529f9edd9c8fec2359ec2ee66a058fe1268b4",
+    "02_REGISTRY/research/sources/d0_curved_tensor_a4_2026-10-16/INPUTS.json": "7c0af598db1b78431233b7d264475b6e5c563d20e3dcff2db07870dc4cdcb2c6",
+    "02_REGISTRY/research/sources/d0_curved_tensor_a4_2026-10-16/README.md": "498231ac88cd0075e59a55eb132ed1e33feb9e6b465700b0463923b643ab0bb5",
+    "02_REGISTRY/research/sources/d0_curved_tensor_a4_2026-10-16/VALIDATION.json": "255c1fb3797c7681b288ed6d65453520a903ba5bdf9eeb36163bacef0f45611a",
+    "02_REGISTRY/research/sources/d0_curved_tensor_a4_2026-10-16/check_curved_tensor.py": "51be3d4746ae212ab589eac5b9a58aad5f20c3e559a21777efe74d3d444a4e67",
+    "02_REGISTRY/research/sources/d0_curved_tensor_a4_2026-10-16/mutations.json": "992bb17586cffc06fa79a370eebe144d0bd0eda638adb481bc95063109b244a4",
+    "02_REGISTRY/research/sources/d0_curved_tensor_a4_2026-10-16/result.json": "8565e3dd3411918613b946cd8b398e63cf6595c823d5f1162afeb3fc807ff8bc",
+    "02_REGISTRY/research/sources/d0_curved_tensor_a4_2026-10-16/test_mutations.py": "8c6ee024c034a1c23d4d97921b587e4b0b811afe6755a27602e05acf015757e6",
+    "02_REGISTRY/research/sources/d0_native_flatmoduli_action_2026-10-16/RESULT.json": "53e542e245ca08915082891ea8d92b4e88f51b1294d95cd05839929cc34e4ac4",
+    "02_REGISTRY/research/sources/d0_native_flatmoduli_action_2026-10-16/RESULT_RU.md": "de552c72eae6ea6d7d890eb123a95899ce417fdf7d5e69acdb9246592d94c9f7",
+    "02_REGISTRY/research/sources/d0_native_flatmoduli_action_2026-10-16/check_flatmoduli.py": "52a8769a515bc433206a05fb0381bca44dc75eee40ee51cfe53330b0beb957a9",
+    "02_REGISTRY/research/sources/d0_native_flatmoduli_action_2026-10-16/check_observer_curvature.py": "be37647bb8dce0ebb652fa8da0ae6bc7d0156c4060772fd5ba51b0daeb79f700"
+  },
+  "source": "00471421",
+  "spatial_preparation_variational_checkpoint": {
+    "analytical_reviews": 3,
+    "base": "2b5bd2af3348d5c49937413580878ed046a460cb",
+    "conclusion": "Actual port-dominated positive relative code derives spatial first-energy coercivity; reference128 H1 amplitude minimum exists, actual grid minima converge with minimizing optimizer cluster points, and full weak preparation EL holds through rank births.",
+    "consumer": "Current native-price-to-Einstein route; remove assumed spatial optimizer compactness and reject preparation-only rescue of the missing unscaled Lorentz row.",
+    "geometric_consumer": "Each labelled limiting Julia row is constant on the owned exact-LC cone after the true coordinate-form isometry. The whole unscaled code/coherent functional and its full spatial minimum remain cone-independent while intrinsic Lorentz EH source is nonzero.",
+    "mechanism": "Two-sided corrected Lyapunov bound; output-cutoff positive cost liminf; fixed128-column Rellich and diagonal recovery; energy-derived logarithm vector; unchanged literal labels and waiting-time paths.",
+    "new_scientific_helper": null,
+    "old_scientific_replay": false,
+    "open": "Physical complete price/code/Info/admission and history/clock/scale binding; general optimizer field-source regularity; compatible joint refinement and original fixed-g/tau all-ten raw h^-2/#216 terminal. Actual finite-h h^2 record signal retained.",
+    "scope": "Supplied fixed per-round code/coherent coefficient, actual full16 spatial carrier, reference128, independent observer, controlled smooth chart and positive fixed time. Added positive actual Rayleigh term uses the SAME total EL.",
+    "sha256": {
+      "02_REGISTRY/research/A4D_SPATIAL_PREPARATION_VARIATIONAL_LIMIT.md": "a637d454fb2ff502c643c6ea919eb969028cfd65bda19af65486fd8c472617ac",
+      "02_REGISTRY/research/sources/d0_spatial_preparation_2026-10-17/ANALYTICAL_REVIEW.md": "d31bef2ae9a21de0ac8acc9a37f725c5c9099b34ca0e0c656e5ec6ac22cbb89e",
+      "02_REGISTRY/research/sources/d0_spatial_preparation_2026-10-17/INPUTS.json": "14baa219bab7c75b6005af13493ecaf445e66ec57e29a054f5900d4c1d01c21e",
+      "02_REGISTRY/research/sources/d0_spatial_preparation_2026-10-17/README.md": "766db1573840ee1d4ed1422348950d582209c22237a56d1b785bb2d05951238d",
+      "02_REGISTRY/research/sources/d0_spatial_preparation_2026-10-17/VALIDATION.json": "5bb5f21c8e2012285482532caeea5409697cf4a650106a0a276c3427a2f49705"
+    }
+  },
+  "variable_record_conservativity_checkpoint": {
+    "base": "aa834d4f867c1efebb6c6805bf1fccd1d37f60ec",
+    "conclusion": "Conservative minimal variable-field QDS and strongly continuous CPTP predual on all trace class, plus trace-norm convergence of actual finite-h marginal trajectories for all converging trace-class preparations on the declared full smooth compact carrier.",
+    "consumer": "Full spatial record evolution in complete native source argument; current route and primary synthesis.",
+    "mechanism": "Native fixed-phase Julia rows, full CAR gap and auxiliary order-one Lyapunov correction prove conservation; literal 127-slot first-jump contractions and positive mass tails prove actual finite-h marginal trajectory convergence.",
+    "new_bounded_exact_checks": 43,
+    "normal_optimized_outputs_identical": true,
+    "old_scientific_replay": false,
+    "open": "Uniform entropy/source and rank-birth limits, physical clock/code/Info/admission, intrinsic Einstein-source equality and the original fixed-g/tau all-10 raw h^-2/#216 terminal.",
+    "sha256": {
+      "02_REGISTRY/research/A4D_VARIABLE_RECORD_CHANNEL_CONSERVATIVITY.md": "44578338d793d96fbd8d575d182cf4087c721e3010c69a77163da0f40bef4715",
+      "02_REGISTRY/research/sources/d0_variable_record_channel_2026-10-17/README.md": "d7730d6eeed2d8511519669bff3931238bb8bef678775b3f6b077b34dc0446d0",
+      "02_REGISTRY/research/sources/d0_variable_record_channel_2026-10-17/RESULTS.json": "12b6285cd983af0081342e740d7b758a9190beabc62b69eb6b702eed7cde7aa8",
+      "02_REGISTRY/research/sources/d0_variable_record_channel_2026-10-17/VALIDATION.json": "b60f9ef7570ef33a5825da430e92a592bfa5c81bd558099917ee2374c7ea7daf",
+      "02_REGISTRY/research/sources/d0_variable_record_channel_2026-10-17/check_variable_channel.py": "e88a8f9be6cad9b6cfdca5c6a928861b7ec151589f997e5911aabae13b1d205f"
+    }
+  },
+  "variable_record_entropy_code_checkpoint": {
+    "base": "23c82df4d4ac8b9b1761fc2c79f1177fe195bd54",
+    "conclusion": "Whole-lattice uniform first/second moment bounds; first-energy coherent-entropy value limit and second-energy actual exit/port/supplied fixed per-round-code limits.",
+    "consumer": "Full spatial coherent information and actual code values in complete native price/source argument; current route and primary synthesis.",
+    "mechanism": "Exact global Hermitian Julia Kraus double commutator, uniform finite-grid Fourier calculus with aliases, periodic symbol correction and true energy-form tails.",
+    "new_bounded_exact_checks": 103,
+    "normal_optimized_outputs_identical": true,
+    "old_scientific_replay": false,
+    "open": "Field/preparation/clock derivatives, rank-birth logarithmic jets, pointer entropy, actual history-based/ensemble/workspace price, physical code/Info/admission, Einstein-source equality and original fixed-g/tau all-10 raw h^-2/#216 terminal.",
+    "scope": "Uniformly smooth actual full16 spatial chart and reference128; explicit initial first/second moment hypotheses, without selecting physical admission or Info.",
+    "sha256": {
+      "02_REGISTRY/research/A4D_VARIABLE_RECORD_ENTROPY_AND_CODE_LIMIT.md": "e934b157a7bb34c11a9ad377b32bb8838a6e342da31ab716bf0f14c4c913787f",
+      "02_REGISTRY/research/sources/d0_variable_record_entropy_2026-10-17/README.md": "78eccd09278bce500d8b3954e2ad6addbae0b02563288d0402b8b26b46a005e7",
+      "02_REGISTRY/research/sources/d0_variable_record_entropy_2026-10-17/RESULTS.json": "9c25eb9a26f526c098170b33896b9643b19dd38153c4b439ae6c738bf8d453f6",
+      "02_REGISTRY/research/sources/d0_variable_record_entropy_2026-10-17/VALIDATION.json": "9830c60b0d0d2df2adcff837986b84e9dbc1ed6c8a1c06f3c4fb83cb4ee5abbb",
+      "02_REGISTRY/research/sources/d0_variable_record_entropy_2026-10-17/check_uniform_energy_inputs.py": "7dab23195b5df5da7d101dffe3404d88de692585c92b80ac2b413f79d6a570b8"
+    }
+  },
+  "variable_record_first_source_checkpoint": {
+    "base": "5cfabc8534197beeb3d8eeedf6978bc16254eeac",
+    "conclusion": "Actual state/coherent-entropy C1 sources under third initial moment and converging actual prep jets; original port, exit and supplied fixed-round-code sources under fourth moment.",
+    "consumer": "Full spatial code/coherent-information first covectors and retained-preparation consumer in current native-price-to-Einstein route.",
+    "integration_parent": "9366f3e82f0ce5fdca0206c96af6fd1443b12681",
+    "mechanism": "Weighted CP moment propagation and exact Duhamel; true128-output orthogonal innovation bound; energy-derived Renyi/log-tail regularization across rank births.",
+    "new_bounded_exact_checks": 40,
+    "normal_optimized_outputs_identical": true,
+    "old_scientific_replay": false,
+    "open": "Physical complete history/code/Info/admission and ensemble/workspace price, full Einstein equality and nonempty joint refinement, raw rough-source uniformity and original fixed-g/tau all-10 h^-2/#216 terminal.",
+    "sha256": {
+      "02_REGISTRY/research/A4D_VARIABLE_RECORD_FIRST_SOURCE_LIMIT.md": "bacfeb70e261f600cd4d1e305612eaf3ab6fe6f71bd384aab2f04fd588493d93",
+      "02_REGISTRY/research/sources/d0_variable_record_first_source_2026-10-17/README.md": "d348d448b699a6bae9ead129e08d6167ae82d7b0980f4c60ce19f29b54b69a79",
+      "02_REGISTRY/research/sources/d0_variable_record_first_source_2026-10-17/RESULTS.json": "5e84680642103b7bcab201626f641eb924380ccaf2a3fae4c58fe7bd058265b6",
+      "02_REGISTRY/research/sources/d0_variable_record_first_source_2026-10-17/VALIDATION.json": "9e314ea92d412c29a7630fee1c43c4371d8c368ed400ed9fe070d4cf80c77bc2",
+      "02_REGISTRY/research/sources/d0_variable_record_first_source_2026-10-17/check_first_source_inputs.py": "cdb9bba674651862cfd816772b8f8f2a7af50b50f71b6ab5c63d367bc1c4c6f8"
+    }
+  }
+}

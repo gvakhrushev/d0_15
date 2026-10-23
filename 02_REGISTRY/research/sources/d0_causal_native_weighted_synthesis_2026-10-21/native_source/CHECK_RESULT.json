@@ -1,0 +1,62 @@
+{
+  "car": {
+    "all_four_outputs_exact": true,
+    "carrier": 32,
+    "full_complement_retained": true
+  },
+  "checker_sha256": "89219a3ca7f62413d7961ba945b437cfd71f1488b35afb3f482bd3ee5dd9f6be",
+  "coframe": {
+    "P3_second_jet_negative_control": true,
+    "P5_mixed_second_jet_exact": true,
+    "arbitrary_ambient_proof": "remainder run certificate",
+    "source_prefactor": "h^-2/(s^2*rho)"
+  },
+  "input_source_ref": "086fab99d8aaed7f712e9a3d2858c516b61901fc",
+  "material": {
+    "actual_first64_order_retained": true,
+    "local_diagonal_error": 2.710505431213761e-20,
+    "new_root_or_full42_numeric_scan": false,
+    "reference_shape": [
+      4096,
+      128
+    ],
+    "scope": "exact reference owner; numerical local clock fixture",
+    "source_function_ast_only": "reference_characters"
+  },
+  "proof_sha256": "4d098d1e6ad8cb7daf477b498f808b7b962d6432f3da78ae573e321dbbcb915d",
+  "report": {
+    "all_20_table_rows_exact_positive": true,
+    "all_table_heralds_reconstructed": 20,
+    "majority_controls": [
+      {
+        "N": 3,
+        "g": "3/2"
+      },
+      {
+        "N": 9,
+        "g": "315/128"
+      }
+    ],
+    "material_sign": -1,
+    "non_dyadic_herald": {
+      "D": 3,
+      "k": 2,
+      "n": 0,
+      "success": [
+        "3/4",
+        "0"
+      ]
+    },
+    "report_two_jet_exact": true
+  },
+  "scope": {
+    "actual_independent_material_copies": "input",
+    "coherent_original_moving_Julia_access": "input",
+    "exact_primary_ambient_two_jet": "proved analytically",
+    "native_field_writer_or_compulsory_price_selected": false,
+    "source_neutral_upstream_price": "conditional, never inferred from report"
+  },
+  "source_count": 13,
+  "source_pins_sha256": "1fbfd90396568b69e2b0226925727f2df69ce3976382f02dd317d97e0b428ded",
+  "status": "PASS"
+}

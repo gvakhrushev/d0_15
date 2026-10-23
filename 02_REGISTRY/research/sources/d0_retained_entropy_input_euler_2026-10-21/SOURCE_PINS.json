@@ -1,0 +1,19 @@
+{
+  "external_background": [
+    "John Watrous, The Theory of Quantum Information (2018), chapters 2 and 5",
+    "K. M. R. Audenaert, arXiv:quant-ph/0610146"
+  ],
+  "inherited_publication": "fedbb1ec0386ebd045363c3a64b87966f4665850",
+  "inputs": {
+    "02_REGISTRY/research/sources/d0_native_preparation_closure_2026-10-21/PROOF.md": {
+      "git_blob": "2dde923ce481a00db4928a9467819ccdb73cae5a",
+      "sha256": "4001c3adb8b5c7bbcea95b1795d6d847e4386191e9129e43e5c611994b64a99f"
+    },
+    "02_REGISTRY/research/sources/d0_native_preparation_closure_2026-10-21/inputs/native_input.py": {
+      "git_blob": "ee8de4635d24c668949ac9a0186616ab7d59f2ed",
+      "sha256": "1c501d5609dda3e14a3da95aad0c77ea04ef48bf94921793a403fb058a805fe9"
+    }
+  },
+  "scientific_snapshot": "f64d4c3389b507c7e7fb66ace9480ed6191c463d",
+  "scope": "Actual new proof and new bounded replay; inherited preparation theorem consumed, not re-executed. Standard entropy and rearrangement facts are not claimed as new general quantum theory."
+}

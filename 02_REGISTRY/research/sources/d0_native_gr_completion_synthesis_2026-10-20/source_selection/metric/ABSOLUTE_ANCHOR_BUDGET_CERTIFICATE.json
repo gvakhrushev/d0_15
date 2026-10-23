@@ -1,0 +1,63 @@
+{
+  "status": "PASS",
+  "input_snapshot": "2bbe9af6f3ce875898a28395c7c3ac2087a40277",
+  "source_pins": {
+    "02_REGISTRY/research/A4D_BOOK03_SOURCE_IDENTIFIABILITY_THEOREM_2026_10_21.md": "ff50fe0d65cb2b3965affcfc528b5e7ef0a2bfe3b50682e4e4800319a8e7dc33",
+    "02_REGISTRY/research/A4D_PRIMARY_NORMAL_SOURCE_RECOVERY_SYNTHESIS_2026_10_21.md": "d6ca03b9a16a352c7741eb9cb8657f34cd84c6a0a3c6f16e5b58c0b8574a3a22",
+    "02_REGISTRY/research/A4D_CAUSAL_CLOCK_MINIMUM_AND_STATIONARY_SOURCE_DESCENT_2026_10_21.md": "b2715a08183fe1d4a58ea2d747ba45ef73e22071a73f671370a1b8f8c41546cc"
+  },
+  "checks": [
+    "pin 02_REGISTRY/research/A4D_BOOK03_SOURCE_IDENTIFIABILITY_THEOREM_2026_10_21.md",
+    "pin 02_REGISTRY/research/A4D_PRIMARY_NORMAL_SOURCE_RECOVERY_SYNTHESIS_2026_10_21.md",
+    "pin 02_REGISTRY/research/A4D_CAUSAL_CLOCK_MINIMUM_AND_STATIONARY_SOURCE_DESCENT_2026_10_21.md",
+    "full relative operator is strictly positive",
+    "relative operator and its jet do not commute",
+    "positive resolvent margin at 1/7",
+    "weighted resolvent identity at 1/7",
+    "ordinary resolvent identity at 1/7",
+    "strict inverse conditioning at 1/7",
+    "absolute jet recovers common scalar derivative at 1/7",
+    "independent determinant differentiation at 1/7",
+    "moving regulator retained at 1/7",
+    "freezing actual moving regulator fails at 1/7",
+    "absolute feedback value is strictly monotone at 1/7",
+    "full source error bound at 1/7",
+    "positive resolvent margin at 1/1048576",
+    "weighted resolvent identity at 1/1048576",
+    "ordinary resolvent identity at 1/1048576",
+    "strict inverse conditioning at 1/1048576",
+    "absolute jet recovers common scalar derivative at 1/1048576",
+    "independent determinant differentiation at 1/1048576",
+    "moving regulator retained at 1/1048576",
+    "freezing actual moving regulator fails at 1/1048576",
+    "absolute feedback value is strictly monotone at 1/1048576",
+    "full source error bound at 1/1048576",
+    "h^5 residual gives h^2 profile with actual h^4 gain",
+    "ignoring gain can turn h^2 source into divergent bound"
+  ],
+  "check_count": 27,
+  "examples": [
+    {
+      "z": "1/7",
+      "chi": "688704/62519",
+      "source_error": "37269041536/314150285163",
+      "certified_bound": "18666528/19471375"
+    },
+    {
+      "z": "1/1048576",
+      "chi": "26424110976/371085036748811",
+      "source_error": "1305961131666219535294733312/2002829771935366055987168301662301",
+      "certified_bound": "30151220147232/5299092359480024875"
+    }
+  ],
+  "environment": {
+    "python": "3.11.9",
+    "sympy": "1.12.1"
+  },
+  "scope": {
+    "absolute_readout_and_binding_assumed": true,
+    "other_rows_must_vanish_for_normal_recovery": true,
+    "native_Info_derived": false,
+    "GR_closed": false
+  }
+}

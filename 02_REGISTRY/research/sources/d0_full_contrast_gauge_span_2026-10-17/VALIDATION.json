@@ -1,0 +1,65 @@
+{
+  "base": "e505305509d175c708f797e906410aaf961fc01f",
+  "commands": [
+    {
+      "argv": [
+        "python3",
+        "02_REGISTRY/research/sources/d0_full_contrast_gauge_span_2026-10-17/check_gauge_span.py"
+      ],
+      "exit": 0
+    },
+    {
+      "argv": [
+        "python3",
+        "-O",
+        "02_REGISTRY/research/sources/d0_full_contrast_gauge_span_2026-10-17/check_gauge_span.py"
+      ],
+      "exit": 0
+    },
+    {
+      "argv": [
+        "python3",
+        "02_REGISTRY/research/sources/d0_full_contrast_gauge_span_2026-10-17/test_mutations.py"
+      ],
+      "exit": 0
+    }
+  ],
+  "environment": {
+    "python": "3.9.6",
+    "sympy": "1.14.0"
+  },
+  "exact_checks": 335,
+  "full_history_price_or_original_raw_terminal_excluded": false,
+  "independent_read_only_reviews": {
+    "capsule_check": "PASS: full19 zero-N0/13 independent baselines,18nonblank/37rare count, blank special case, complex adjoints, coefficient1 kinetic cancellation, source scaling and exact helper; no old replay",
+    "geometry_consumer": "PASS: actual real periodic pure-gauge curves, all10 Einstein tangent,24 explicit coefficient span, onsite-root locality closing cross-frequency issue, positive incoming-shell normalization and37th exit; no old replay"
+  },
+  "input_pins": {
+    "02_REGISTRY/research/certificates/a4d_native_curved_soldered_heat.py": "bf13f57c902da0005634ae6834c0b4e3ffd2df1aa196a61ebc0ff3dc0351c7da",
+    "02_REGISTRY/research/sources/d0_retained_causal_principal_2026-10-17/check_principal.py": "7f57f6e325defd8fda3e85667cf040f061ef8dba6a0897a127385ed8de49380d",
+    "02_REGISTRY/research/sources/d0_retained_history_causal_source_2026-10-16/check_retained_history.py": "6be5d31fc2b5a2d2f75b54071720b03c6bbebc30356260b5c823c3ef8ef88d92"
+  },
+  "normal_optimized_byte_identical": true,
+  "old_scientific_entrypoints_executed": false,
+  "packet_sha256": {
+    "02_REGISTRY/research/A4D_FULL_RARE_HISTORY_GAUGE_SPAN_BOUNDARY.md": "85becfa2696e3481d8d20e3723c92ed74c965c9fee96e871a53131117852b4aa",
+    "02_REGISTRY/research/sources/d0_full_contrast_gauge_span_2026-10-17/MUTATIONS.json": "21ccb6f655aaad12a4aee76b2c305bd7dcbfaac7afb447e45d81f71e6a31794d",
+    "02_REGISTRY/research/sources/d0_full_contrast_gauge_span_2026-10-17/README.md": "1a0e977485eb49266cefda040b6ae4b1fbecdeb946e175bb0e7a386fb921c10c",
+    "02_REGISTRY/research/sources/d0_full_contrast_gauge_span_2026-10-17/check_gauge_span.py": "6ce1983a9b437dba3d49c30f290d934f9b0caa3a6cac54f758fb11fd33cfd8c5",
+    "02_REGISTRY/research/sources/d0_full_contrast_gauge_span_2026-10-17/test_mutations.py": "deae6edf3507a19d146b2a53b604e63b7044a13a0cdbf770201ccf3cd459e474"
+  },
+  "physical_detector_or_price_admission_claimed": false,
+  "previous99_outputs_modified_or_replayed": false,
+  "proof_not_replaced_by_finite_tests": [
+    "onsite finite-matrix root smoothness and leading locality",
+    "controlled first-exit continuum matrix-element limit",
+    "faithful plus/minus shell cancellation of kinetic and second-parameter-potential cross terms",
+    "positive detector annihilation and span implication",
+    "comparison with pure Einstein gauge tangents"
+  ],
+  "rejected_changed_calculations": 4,
+  "remote_CI_or_independent_acceptance_claimed": false,
+  "results_sha256": "b4e961073051041f70287294de64e128e0488eb929b662377328b56c933a8047",
+  "scope": "Fixed positive detector on all37 rare first-exit outputs, tensored identity on sites/forms/reference, same across constant causal backgrounds. Complete controlled leading smooth functional only.",
+  "status": "PASS_NEW_EXACT_INTERFACE_AND_ANALYTIC_REVIEW"
+}

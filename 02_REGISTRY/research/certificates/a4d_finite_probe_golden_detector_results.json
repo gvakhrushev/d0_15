@@ -1,0 +1,202 @@
+{
+  "proof": "A4D_NATIVE_FINITE_PROBE_COMPLETION.md",
+  "input_sha256": {
+    "03_FORMALIZATION/D0/CondensedAnchor/DetectorSupportGoldenWeight.lean": "643d0a1ec2c71e15bc3254211e3e24cf6b99fdf48f6ddd43a38848cd28c23307",
+    "03_FORMALIZATION/D0/Core/BornFiniteEffects.lean": "0d4fdcb7b7233191b19eb07ccab61ff1901eb26bff4147fccc4a03ab13cdf66f",
+    "03_FORMALIZATION/D0/Condensed/OperatorNaturality.lean": "8a6be8638cd52e75b612db2416eca350f487c2bdcb2368fc969f854acd774666"
+  },
+  "verdict": "PASS",
+  "checks": [
+    {
+      "name": "golden unit-vector norm",
+      "scalar_identities": 1,
+      "passed": true
+    },
+    {
+      "name": "golden contrast norm",
+      "scalar_identities": 1,
+      "passed": true
+    },
+    {
+      "name": "golden mean/contrast orthogonality",
+      "scalar_identities": 1,
+      "passed": true
+    },
+    {
+      "name": "golden mean/detail decomposition",
+      "scalar_identities": 4,
+      "passed": true
+    },
+    {
+      "name": "scalar positive-response total",
+      "scalar_identities": 1,
+      "passed": true
+    },
+    {
+      "name": "signed contrast recovers z",
+      "scalar_identities": 1,
+      "passed": true
+    },
+    {
+      "name": "prefix isometry",
+      "scalar_identities": 16,
+      "passed": true
+    },
+    {
+      "name": "prefix kills detail",
+      "scalar_identities": 16,
+      "passed": true
+    },
+    {
+      "name": "history-specific exact operator naturality",
+      "scalar_identities": 32,
+      "passed": true
+    },
+    {
+      "name": "orthogonal positive-response split",
+      "scalar_identities": 64,
+      "passed": true
+    },
+    {
+      "name": "retained positive response exactly preserved",
+      "scalar_identities": 16,
+      "passed": true
+    },
+    {
+      "name": "trace adds independent history blocks",
+      "scalar_identities": 1,
+      "passed": true
+    },
+    {
+      "name": "every historical event raw response retained",
+      "scalar_identities": 4,
+      "passed": true
+    },
+    {
+      "name": "new detail event raw response has selected gain",
+      "scalar_identities": 4,
+      "passed": true
+    },
+    {
+      "name": "old contrast survives addition and both gains",
+      "scalar_identities": 1,
+      "passed": true
+    },
+    {
+      "name": "new contrast survives addition and both gains",
+      "scalar_identities": 1,
+      "passed": true
+    },
+    {
+      "name": "Q(phi) prefix isometry",
+      "scalar_identities": 16,
+      "passed": true
+    },
+    {
+      "name": "Q(phi) weighted contrast orthogonality",
+      "scalar_identities": 16,
+      "passed": true
+    },
+    {
+      "name": "Q(phi) weighted contrast norm",
+      "scalar_identities": 16,
+      "passed": true
+    },
+    {
+      "name": "Q(phi) exact mean/detail decomposition",
+      "scalar_identities": 64,
+      "passed": true
+    },
+    {
+      "name": "Q(phi) weighted self-adjointness",
+      "scalar_identities": 64,
+      "passed": true
+    },
+    {
+      "name": "Q(phi) native prefix operator naturality",
+      "scalar_identities": 32,
+      "passed": true
+    },
+    {
+      "name": "Q(phi) retained positive response",
+      "scalar_identities": 16,
+      "passed": true
+    },
+    {
+      "name": "Q(phi) positive response trace",
+      "scalar_identities": 1,
+      "passed": true
+    },
+    {
+      "name": "Q(phi) old weighted-event contrast",
+      "scalar_identities": 1,
+      "passed": true
+    },
+    {
+      "name": "Q(phi) new weighted-event contrast",
+      "scalar_identities": 1,
+      "passed": true
+    },
+    {
+      "name": "exact rational finite-effect instances",
+      "instances": 5,
+      "passed": true
+    },
+    {
+      "name": "terminal-bin boundary controls",
+      "instances": 175,
+      "passed": true
+    },
+    {
+      "name": "gain-square finite geometric identity N=1",
+      "scalar_identities": 1,
+      "passed": true
+    },
+    {
+      "name": "gain-square finite geometric identity N=2",
+      "scalar_identities": 1,
+      "passed": true
+    },
+    {
+      "name": "gain-square finite geometric identity N=3",
+      "scalar_identities": 1,
+      "passed": true
+    },
+    {
+      "name": "gain-square finite geometric identity N=4",
+      "scalar_identities": 1,
+      "passed": true
+    },
+    {
+      "name": "gain-square finite geometric identity N=5",
+      "scalar_identities": 1,
+      "passed": true
+    },
+    {
+      "name": "gain-square finite geometric identity N=6",
+      "scalar_identities": 1,
+      "passed": true
+    },
+    {
+      "name": "gain-square finite geometric identity N=7",
+      "scalar_identities": 1,
+      "passed": true
+    },
+    {
+      "name": "gain-square finite geometric identity N=8",
+      "scalar_identities": 1,
+      "passed": true
+    },
+    {
+      "name": "golden total gain-square bound factor",
+      "scalar_identities": 1,
+      "passed": true
+    }
+  ],
+  "summary": {
+    "check_groups": 37,
+    "symbolic_scalar_identities": 400,
+    "finite_instance_controls": 180,
+    "scope": "Generic exact finite detector, prefix naturality, golden attenuation; no A4D stationary-locus enumeration or native Role map."
+  }
+}

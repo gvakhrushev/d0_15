@@ -1,0 +1,41 @@
+{
+  "status": "AUTHOR_LOCAL_REPLAY_PASS_NOT_INDEPENDENT_ACCEPTANCE",
+  "date": "2026-10-21",
+  "python": "3.13.5",
+  "command": "python3 check_native17_unknown_scale.py",
+  "input_checkpoint": "5f92d32ac405f956fc5e10c4f06649e2728881f5",
+  "script_git_blob": "456c053169b61c602c5f02f2c8c505ddf4f0e0b9",
+  "script_sha256": "bc7b3ca1c620c6a43c49f2b7908c23b28ff9a6b0f8f26756503293d5d6f78fe4",
+  "result_sha256": "2bb7dd5302099e659e89c4fda6eea4a76fde8712e4f9ef67f2881a6ed2a31a84",
+  "stdout_sha256": "79bf0383585653417833624f7bd3329ecf1a82786eaa7b2e59f45cdec74d81bb",
+  "checks": [
+    "Exact Z[p] complete scale-code Kraft mass and finite partial sums",
+    "Exact real-algebraic comparison of stopping thresholds",
+    "Original Golden17 sensitive probabilities and all fifteen neutral labels",
+    "Exact absorbing dynamic programme at five unknown sign strengths, up to 72 informative marks",
+    "Positive-drift, scale-activation and full raw native execution bound",
+    "Closed stopped Cost-minus-complete-record-Info derivative",
+    "Generic entropy-chain-rule fixture and relative code-price cancellation, explicitly not substituted for native17"
+  ],
+  "error_target": 0.1,
+  "finite_checks": [
+    {"eta": "-3/4", "plus": 0.0000005265398644356216, "minus": 0.9999982019506433, "unresolved": 0.0000012715094923568081},
+    {"eta": "-1/4", "plus": 0.00238270069641933, "minus": 0.39196385382956994, "unresolved": 0.6056534454740107},
+    {"eta": "0", "plus": 0.03606501310512046, "minus": 0.03606501310512046, "unresolved": 0.9278699737897591},
+    {"eta": "1/4", "plus": 0.39196385382956994, "minus": 0.00238270069641933, "unresolved": 0.6056534454740107},
+    {"eta": "3/4", "plus": 0.9999982019506433, "minus": 0.0000005265398644356216, "unresolved": 0.0000012715094923568081}
+  ],
+  "native_c": 0.0000014841515477530462,
+  "raw_time_upper_bounds_not_means": [
+    {"xi": 0.1, "universal_upper_bound": 407018771.2789585, "known_scale_optimal_mean": 15477249.41172043},
+    {"xi": 0.05, "universal_upper_bound": 1471932009.4562633, "known_scale_optimal_mean": 61872115.59180906},
+    {"xi": 0.02, "universal_upper_bound": 9767623233.910583, "known_scale_optimal_mean": 372379720.18394774}
+  ],
+  "all_time_guarantee": "Analytical Ville/union/drift proof; not inferred from finite regression",
+  "remaining": ["Actual controller arithmetic and compilation price", "Compulsory future task", "Book03 physical Info choice", "Finer quantum-record binding", "Full field/preparation source and stationary section"],
+  "independent_review": false,
+  "remote_CI_claimed": false,
+  "Lean_build_claimed": false,
+  "universal_policy_optimality_claimed": false,
+  "GR_closed": false
+}

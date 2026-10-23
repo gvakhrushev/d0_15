@@ -1,0 +1,250 @@
+{
+  "A1": [
+    [
+      15,
+      "-p"
+    ],
+    [
+      22,
+      "-p"
+    ]
+  ],
+  "A2": [
+    [
+      0,
+      "p**2/(2*f**2)"
+    ],
+    [
+      9,
+      "p**2/(2*f)"
+    ],
+    [
+      10,
+      "p**2/(2*f)"
+    ],
+    [
+      15,
+      "(f*q + p**2)/(2*f)"
+    ],
+    [
+      22,
+      "(f*q + p**2)/(2*f)"
+    ]
+  ],
+  "A3": [
+    [
+      0,
+      "(f*p**3 - p*q)/(2*f**2)"
+    ],
+    [
+      9,
+      "(f*p*q - p**3)/(2*f**2)"
+    ],
+    [
+      10,
+      "(f*p*q - p**3)/(2*f**2)"
+    ],
+    [
+      15,
+      "(-f*p**3 - f*r - 3*p*q)/(6*f)"
+    ],
+    [
+      17,
+      "p**3/(2*f)"
+    ],
+    [
+      22,
+      "(-f*p**3 - f*r - 3*p*q)/(6*f)"
+    ],
+    [
+      23,
+      "-p**3/(2*f)"
+    ]
+  ],
+  "all_24_connection_rows_through_order3": "zero after A1,A2,A3",
+  "arbitrary_24_A3_connection_dependency": "H_s(1) times all24 coefficients",
+  "arbitrary_24_A3_response_dependency": "zero at order3",
+  "curvature_and_readout_odd_projection": "all six W and all60 DW are eta-antisymmetric; full odd 1/2 readout equals W:P",
+  "generator_order": [
+    "K1",
+    "K2",
+    "K3",
+    "J12",
+    "J13",
+    "J23"
+  ],
+  "independent_continuum_match": "rho0=sqrt_abs_det_g * packed_raised_G_standard/2",
+  "jet_variables": {
+    "f": "f(y)",
+    "p": "f_prime(y)",
+    "q": "f_second(y)",
+    "r": "f_third(y)"
+  },
+  "metric_slot_order": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      3,
+      3
+    ]
+  ],
+  "nonclaims": [
+    "no exact prescribed-source root",
+    "no source candidate assignment",
+    "no full transverse inverse",
+    "no universal source-image theorem"
+  ],
+  "omitted_A2_negative_difference": [
+    [
+      0,
+      "-f*r/2 - 3*p*q/2"
+    ],
+    [
+      4,
+      "p*q/2"
+    ],
+    [
+      5,
+      "-p**3/(4*f)"
+    ],
+    [
+      6,
+      "-p**3/(4*f)"
+    ],
+    [
+      7,
+      "r/(4*f)"
+    ],
+    [
+      9,
+      "r/(4*f)"
+    ]
+  ],
+  "original_raw_norm_implication": "if exact fixed rho0 source roots existed, raw normalized gap would have first order h and grow like h^-3",
+  "owner_sha1": "0e5b06637359956f093e077f6172a2f4614983a3",
+  "rho0": [
+    "-f*q - p**2/2",
+    "0",
+    "0",
+    "0",
+    "p**2/2",
+    "0",
+    "0",
+    "q/(2*f)",
+    "0",
+    "q/(2*f)"
+  ],
+  "rho1": [
+    "3*p*q/2",
+    "0",
+    "0",
+    "0",
+    "-p*q/2",
+    "p**3/(2*f)",
+    "p**3/(2*f)",
+    "0",
+    "0",
+    "0"
+  ],
+  "rho1_at_generic_rational_jet_f_51_50_p_1_7_q_minus_2_11": [
+    "-3/77",
+    "0",
+    "0",
+    "0",
+    "1/77",
+    "25/17493",
+    "25/17493",
+    "0",
+    "0",
+    "0"
+  ],
+  "rho1_at_y_1_8": [
+    "3*pi**3/1250",
+    "0",
+    "0",
+    "0",
+    "-pi**3/1250",
+    "-sqrt(2)*pi**3/(-127500 + 1250*sqrt(2))",
+    "-sqrt(2)*pi**3/(-127500 + 1250*sqrt(2))",
+    "0",
+    "0",
+    "0"
+  ],
+  "sampled_trace_mean_for_L_in_4N": "pi^2/1250",
+  "sampled_trace_pi_squared_coefficient_polynomial_in_cos": "3*c**2/625 - 102*c/625 - 1/625",
+  "scalar_curvature": "(4*f*q + 2*p**2)/f**2",
+  "status": "PASS_EXACT_FORMAL_SMOOTH_SOURCE_JET; no exact prescribed-source existence claim",
+  "swapped_shared_incidence_negative_difference_order2_and3": [
+    [
+      0,
+      "f*q"
+    ],
+    [
+      7,
+      "-q/(2*f)"
+    ],
+    [
+      9,
+      "-q/(2*f)"
+    ],
+    [
+      10,
+      "(-2*f*p*q + p**3)/f"
+    ],
+    [
+      12,
+      "(2*f*p*q - p**3)/(4*f)"
+    ],
+    [
+      13,
+      "(2*f*p*q - p**3)/(4*f)"
+    ],
+    [
+      17,
+      "p*q/(2*f**2)"
+    ],
+    [
+      18,
+      "(-2*f*p*q + p**3)/(2*f**3)"
+    ],
+    [
+      19,
+      "p*q/(2*f**2)"
+    ]
+  ],
+  "trace_rho0": "-2*f*q - p**2"
+}

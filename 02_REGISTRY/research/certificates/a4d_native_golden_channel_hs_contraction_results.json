@@ -1,0 +1,103 @@
+{
+  "channel": {
+    "equal_weight": "Phi(X)=p*X+(p^2)/4*sum_r U_r*X*U_r^T",
+    "golden_relations": "a^2=p, p^2+p=1, positive roots",
+    "returns": "U_r=record(I_4,e_r), r=0..3"
+  },
+  "checker_sha256": "375249df9a8cd12146dd33ca699fb8bf8d944afcaf7826b8bb95fa4e0d50723e",
+  "checks": [
+    "PIN:02_REGISTRY/research/certificates/a4d_native_record_metric_chronology_check.py",
+    "PIN:02_REGISTRY/research/certificates/a4d_native_record_metric_chronology_certificate.json",
+    "PIN:02_REGISTRY/research/A4D_NATIVE_RECORD_METRIC_CHRONOLOGY.md",
+    "PIN:02_REGISTRY/research/certificates/a4d_native_fock_record_binding_check.py",
+    "PIN:02_REGISTRY/research/A4D_NATIVE_GOLDEN_CHANNEL_ENDOGENOUS_PREPARATION.md",
+    "PIN:02_REGISTRY/research/certificates/a4d_native_golden_channel_endogenous_preparation_check.py",
+    "PIN:02_REGISTRY/research/certificates/a4d_native_golden_channel_endogenous_preparation_results.json",
+    "POSITIVE_SQRT5_SIGN",
+    "GOLDEN_RELATIONS",
+    "POSITIVE_GOLDEN_BRACKETS",
+    "FOUR_LITERAL_RETURNS_ORTHOGONAL",
+    "KRAUS_CROSS_TERM_CANCELS",
+    "KRAUS_COEFFICIENTS",
+    "SWAPPED_COEFFICIENTS_DIFFER",
+    "KRAUS_EQUALS_SIMPLIFIED_CHANNEL_ON_EVERY_MATRIX_UNIT",
+    "SWAPPED_CHANNEL_DIFFERS_ON_A_MATRIX",
+    "ONE_RETURN_TRACELESS_COMMUTANT_WITNESS",
+    "UNEQUAL_WEIGHT_EXCEEDS_EQUAL_WEIGHT_UPPER_BOUND",
+    "EQUAL_WEIGHT_FIXES_IDENTITY",
+    "SIX_TRANSPOSITIONS",
+    "EXTERIOR_TRANSPOSITIONS_ARE_SYMMETRIC_INVOLUTIONS",
+    "COORDINATE_AD_MATCHES_MATRIX_CONJUGATION",
+    "FROBENIUS_COORDINATES_MATCH_ENTRY_SQUARES",
+    "SYMMETRIC_SKEW_ENTRY_CROSS_TERM_IS_ZERO",
+    "CLASS_SUM_KERNELS_SPAN_AND_ARE_ORTHOGONAL",
+    "NONTRIVIAL_SYMMETRIC_KERNELS_ARE_TRACELESS",
+    "CHANNEL_PRESERVES_EVERY_CLASS_SUM_KERNEL",
+    "WINNER_SQUARED_NORM_EXCEEDS_9442_OVER_10000",
+    "WINNER_SQUARED_NORM_BELOW_9443_OVER_10000",
+    "WINNER_SQUARED_NORM_BELOW_49_OVER_50_SQUARED",
+    "EVERY_OTHER_KERNEL_SQUARED_NORM_BELOW_9442_OVER_10000",
+    "SKEW_RUNNER_UP_EXCEEDS_96_OVER_100_SQUARED",
+    "WINDOW_SQUARE_BELOW_49_OVER_50_SQUARED",
+    "WINNING_BLOCK_IS_NOT_H_NORMAL"
+  ],
+  "exact_controls": 34,
+  "exact_result": {
+    "hs_norm_rational_upper_exclusive": "49/50",
+    "runner_up_hostile_pivot_sign": -1,
+    "runner_up_hostile_square": "9216/10000",
+    "skew_class_sum_kernel_dimensions": {
+      "-2": 54,
+      "-6": 8,
+      "0": 12,
+      "2": 42,
+      "6": 4
+    },
+    "squared_hs_norm_lower_exclusive": "9442/10000",
+    "squared_hs_norm_upper_exclusive": "9443/10000",
+    "symmetric_class_sum_kernel_dimensions": {
+      "-2": 42,
+      "-6": 8,
+      "0": 20,
+      "2": 54,
+      "6": 12
+    },
+    "traceless_symmetric_invariant_dimension": 11,
+    "unequal_weight_numerator": [
+      97,
+      1,
+      1,
+      1
+    ],
+    "window_times_denominator_check": [
+      23607500,
+      24010000
+    ],
+    "winner_lower_pivot_sign": -1
+  },
+  "input_sha256": {
+    "02_REGISTRY/research/A4D_NATIVE_GOLDEN_CHANNEL_ENDOGENOUS_PREPARATION.md": "73187cd2a77d3350b01a29f780d939a0a86b2e65c4622b85dc6b18ca283f7df9",
+    "02_REGISTRY/research/A4D_NATIVE_RECORD_METRIC_CHRONOLOGY.md": "601e5bb9203789a66ad2a945aad30da92b6233ac40417d54c6b47c95dc43536b",
+    "02_REGISTRY/research/certificates/a4d_native_fock_record_binding_check.py": "42e83e6f93b48ce4d4420f829d8e79c993a215d7b1a4c6a2f812bd45fd914078",
+    "02_REGISTRY/research/certificates/a4d_native_golden_channel_endogenous_preparation_check.py": "d78de07609370a307f30d1daeec9d45dd81de1eb7558654105ef32dc51ba89dd",
+    "02_REGISTRY/research/certificates/a4d_native_golden_channel_endogenous_preparation_results.json": "13be7f995f36fb53bd837b43aaca51546b124a65aeb81ce840e06d951891c000",
+    "02_REGISTRY/research/certificates/a4d_native_record_metric_chronology_certificate.json": "0b91e13d823568898a006dd468f9963ffbbc1949f0976a21e8530af465ecfbbe",
+    "02_REGISTRY/research/certificates/a4d_native_record_metric_chronology_check.py": "16929d026206ee69e126484ed2ac7b1dfd2537c1e50c0fc4c4293408caf58527"
+  },
+  "proof": "02_REGISTRY/research/A4D_NATIVE_GOLDEN_CHANNEL_HS_CONTRACTION.md",
+  "proof_sha256": "435c9efa610071cbdf71f98709db8964fe9fe92e072731e20470c2816b9c286f",
+  "schema": "d0-native-golden-channel-hs-contraction/1",
+  "scope": {
+    "G0_GR_or_parent_terminal_closed": false,
+    "channel_admitted_as_physical_law": false,
+    "contraction_for_every_positive_return_weight": false,
+    "core_owned_qDbm_admission_map_derived": false,
+    "equal_weight_traceless_hermitian_hs_contraction": true,
+    "equal_weights_selected_by_complete_core": false,
+    "hs_norm_strictly_below_49/50": true,
+    "singular_value_equals_spectral_radius": false,
+    "state_identified_with_native_joint_matter": false,
+    "trace_norm_or_diamond_norm_gap": false
+  },
+  "status": "PASS_CONDITIONAL_EQUAL_WEIGHT_HS_CONTRACTION"
+}

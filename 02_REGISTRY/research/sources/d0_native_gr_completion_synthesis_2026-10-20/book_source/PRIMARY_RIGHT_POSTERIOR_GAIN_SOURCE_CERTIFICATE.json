@@ -1,0 +1,966 @@
+{
+  "arithmetic": "outward binary64 intervals; gamma_(2k) direct matrix contractions; exact rational log tails; verified polar eigensystem residual",
+  "arithmetic_premise": "IEEE binary64 nearest arithmetic without FTZ/overflow; optimize=False direct einsum is a sum of k binary64 products and at most k-1 additions in any order, optionally FMA; no eigensolver accuracy premise",
+  "carrier": {
+    "CAR": 16,
+    "FR_words": 10946,
+    "L": 4,
+    "RIGHT": 128,
+    "sigma": "p^3",
+    "w": [
+      1,
+      1,
+      2,
+      2
+    ]
+  },
+  "complete_normalization": {
+    "active_fine_labels": 64,
+    "all_B_sum_contains_I_over128": true,
+    "all_jet_sum_contains_zero": true,
+    "exact_Walsh_dark_labels": 64,
+    "sum_q": [
+      0.9999999999990705,
+      1.0000000000009295
+    ],
+    "sum_trace_jet": [
+      -1.8596368943110795e-19,
+      1.8595832810520413e-19
+    ]
+  },
+  "finite_t_or_native_actuation_word_bound_certified": false,
+  "linear_coefficients": {
+    "RIGHT_posterior_gain_phi": [
+      2.1910472674029542e-09,
+      2.1910477557180062e-09
+    ],
+    "full_pointer_entropy_phi": [
+      -6.337357805661948e-07,
+      -6.337357805616251e-07
+    ],
+    "known_port_cost": [
+      -2.7461810898740312e-08,
+      -2.746181089819066e-08
+    ],
+    "known_port_cost_minus_RIGHT_posterior_gain": [
+      -2.965285865445832e-08,
+      -2.965285816559361e-08
+    ],
+    "wrong_omitted_conditional_normalizer_phi": [
+      6.35926827829028e-07,
+      6.359268283219129e-07
+    ]
+  },
+  "observable": "I_R:Y=log_phi128-sum q_gamma S_phi(B_gamma/q_gamma)",
+  "physical_Book_Info_identified": false,
+  "physical_RIGHT_read_admission_inferred": false,
+  "source_scope": "coefficient of angle derivative at small matter t; D(t)=D0+O(t^2)",
+  "source_sha256": {
+    "02_REGISTRY/research/A4D_COMPLETE_RECORD_CHANNEL_AND_NATIVE_COST_SOURCE.md": "2128009802edff3e111a26961f050320fd878d7412ed93bfad5d5c9e4219db79",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/check_primary_car_pointer_source.py": "63c8f13e115ee9a16c58846e7eafc268b24e5ed7659fdbfe2f72e38c1eef0d77",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/check_primary_car_preparation_source.py": "889053f6da84501769d23ab84186c2189e6c026414db623919f4934098fb6c34",
+    "02_REGISTRY/research/sources/d0_primary_full128_information_source_2026-10-20/RESULT.md": "9a441405c455adda9651f88c21fcda4d9383673a3718e88a93aeb50467133e71",
+    "02_REGISTRY/research/sources/d0_primary_native_domain_source_2026-10-20/RESULT.md": "290772fb869cfa73ed0cc419d3182048d80ea9b02312be0b9d56ad558f5c47be",
+    "02_REGISTRY/research/sources/d0_primary_native_domain_source_2026-10-20/check_primary_domain_source.py": "c67285c7469db49ff61f3e52597d0bcc6aad991ec1f7af025d6daeb065a43edf"
+  },
+  "spectral_certificates": [
+    {
+      "candidate_min_eigenvalue": 0.007772097628122145,
+      "certified_min_eigenvalue": 0.007772097627638343,
+      "certified_rank": 128,
+      "dimension": 128,
+      "matrix_log_error_op_upper": 6.72425326074606e-11,
+      "natural_source": [
+        -2.1526100953726462e-07,
+        -2.152610095107994e-07
+      ],
+      "orthogonality_defect_F_upper": 1.028710397752445e-12,
+      "paired_port_zero_by_p": false,
+      "physical_index": 0,
+      "polar_distance_op_upper": 5.143551988763551e-13,
+      "q0": [
+        0.9974443552022219,
+        0.997444355204068
+      ],
+      "reconstruction_residual_F_upper": 4.757671713887112e-13,
+      "source_spectral_error_upper": 6.820797462600415e-18,
+      "tangent_nuclear_norm_upper": 1.0143576094044445e-07,
+      "trace_jet": [
+        4.436343699484752e-08,
+        4.436343699493226e-08
+      ],
+      "true_reconstruction_error_op_upper": 4.838013976064419e-13
+    },
+    {
+      "candidate_min_eigenvalue": 3.5988759502654203e-10,
+      "certified_min_eigenvalue": 3.5988759329090224e-10,
+      "certified_rank": 128,
+      "dimension": 128,
+      "matrix_log_error_op_upper": 4.832117038030767e-09,
+      "natural_source": [
+        5.471054988334521e-10,
+        5.471055010899137e-10
+      ],
+      "orthogonality_defect_F_upper": 1.033893176990375e-12,
+      "paired_port_zero_by_p": false,
+      "physical_index": 1,
+      "polar_distance_op_upper": 5.169465884953214e-13,
+      "q0": [
+        3.165266435061305e-06,
+        3.1652664350673445e-06
+      ],
+      "reconstruction_residual_F_upper": 1.6451836605873046e-18,
+      "source_spectral_error_upper": 1.1038558330210762e-18,
+      "tangent_nuclear_norm_upper": 2.2844145212818156e-10,
+      "trace_jet": [
+        -1.1440540930875273e-10,
+        -1.1440540930840367e-10
+      ],
+      "true_reconstruction_error_op_upper": 1.7356397087303293e-18
+    },
+    {
+      "candidate_min_eigenvalue": 4.344676514328578e-13,
+      "certified_min_eigenvalue": 4.344676435241132e-13,
+      "certified_rank": 128,
+      "dimension": 128,
+      "matrix_log_error_op_upper": 1.821861426906638e-08,
+      "natural_source": [
+        5.108622859839365e-15,
+        5.108623080896111e-15
+      ],
+      "orthogonality_defect_F_upper": 2.093570793972357e-12,
+      "paired_port_zero_by_p": true,
+      "physical_index": 3,
+      "polar_distance_op_upper": 1.046785396986727e-12,
+      "q0": [
+        6.530445664533273e-10,
+        6.530445664724446e-10
+      ],
+      "reconstruction_residual_F_upper": 7.81010633662206e-21,
+      "source_spectral_error_upper": 3.953657061127791e-23,
+      "tangent_nuclear_norm_upper": 2.1701195287068325e-15,
+      "trace_jet": [
+        -9.494272938613495e-16,
+        -9.49427293512284e-16
+      ],
+      "true_reconstruction_error_op_upper": 7.908744513984375e-21
+    },
+    {
+      "candidate_min_eigenvalue": 3.613977363961849e-10,
+      "certified_min_eigenvalue": 3.6139773459340284e-10,
+      "certified_rank": 128,
+      "dimension": 128,
+      "matrix_log_error_op_upper": 4.9973872533665095e-09,
+      "natural_source": [
+        5.448875949799988e-10,
+        5.448875973087873e-10
+      ],
+      "orthogonality_defect_F_upper": 9.946741108497242e-13,
+      "paired_port_zero_by_p": true,
+      "physical_index": 9,
+      "polar_distance_op_upper": 4.973370554249861e-13,
+      "q0": [
+        3.1586308004555255e-06,
+        3.1586308004616326e-06
+      ],
+      "reconstruction_residual_F_upper": 1.7175151762076827e-18,
+      "source_spectral_error_upper": 1.1416104010059103e-18,
+      "tangent_nuclear_norm_upper": 2.2844145212818156e-10,
+      "trace_jet": [
+        -1.1440540930875273e-10,
+        -1.1440540930840367e-10
+      ],
+      "true_reconstruction_error_op_upper": 1.8027819741691557e-18
+    },
+    {
+      "candidate_min_eigenvalue": 4.344676514328578e-13,
+      "certified_min_eigenvalue": 4.3446764368899535e-13,
+      "certified_rank": 128,
+      "dimension": 128,
+      "matrix_log_error_op_upper": 1.7839106996438712e-08,
+      "natural_source": [
+        5.1086228619432516e-15,
+        5.108623078792874e-15
+      ],
+      "orthogonality_defect_F_upper": 2.0930977737282837e-12,
+      "paired_port_zero_by_p": true,
+      "physical_index": 11,
+      "polar_distance_op_upper": 1.0465488868646901e-12,
+      "q0": [
+        6.530445664535513e-10,
+        6.530445664722201e-10
+      ],
+      "reconstruction_residual_F_upper": 7.645246498755694e-21,
+      "source_spectral_error_upper": 3.871299446757943e-23,
+      "tangent_nuclear_norm_upper": 2.1701195287021845e-15,
+      "trace_jet": [
+        -9.494272938580426e-16,
+        -9.494272935157164e-16
+      ],
+      "true_reconstruction_error_op_upper": 7.74386238986198e-21
+    },
+    {
+      "candidate_min_eigenvalue": 5.670080992371185e-09,
+      "certified_min_eigenvalue": 5.670080990184391e-09,
+      "certified_rank": 128,
+      "dimension": 128,
+      "matrix_log_error_op_upper": 3.981201073460048e-10,
+      "natural_source": [
+        8.073101815664797e-13,
+        8.073104972608275e-13
+      ],
+      "orthogonality_defect_F_upper": 1.9649746034425824e-12,
+      "paired_port_zero_by_p": true,
+      "physical_index": 17,
+      "polar_distance_op_upper": 9.824873017217747e-13,
+      "q0": [
+        3.1970778021742173e-06,
+        3.197077802180398e-06
+      ],
+      "reconstruction_residual_F_upper": 2.0852185328173113e-18,
+      "source_spectral_error_upper": 4.417599814348256e-20,
+      "tangent_nuclear_norm_upper": 1.1096148455794861e-10,
+      "trace_jet": [
+        3.049295005688475e-13,
+        3.0492950125240977e-13
+      ],
+      "true_reconstruction_error_op_upper": 2.1867937872261687e-18
+    },
+    {
+      "candidate_min_eigenvalue": 1.4971115446929146e-06,
+      "certified_min_eigenvalue": 1.497111543681588e-06,
+      "certified_rank": 128,
+      "dimension": 128,
+      "matrix_log_error_op_upper": 6.825514238496205e-10,
+      "natural_source": [
+        1.2925814035486198e-07,
+        1.292581404604123e-07
+      ],
+      "orthogonality_defect_F_upper": 1.0150172817275872e-12,
+      "paired_port_zero_by_p": true,
+      "physical_index": 19,
+      "polar_distance_op_upper": 5.075086408639228e-13,
+      "q0": [
+        0.0015291717723944546,
+        0.0015291717723973307
+      ],
+      "reconstruction_residual_F_upper": 9.869373292079792e-16,
+      "source_spectral_error_upper": 4.133096316252503e-17,
+      "tangent_nuclear_norm_upper": 6.055362529231358e-08,
+      "trace_jet": [
+        -2.649221106542144e-08,
+        -2.6492211065255174e-08
+      ],
+      "true_reconstruction_error_op_upper": 1.0113264335623667e-15
+    },
+    {
+      "candidate_min_eigenvalue": 5.6650805786282295e-09,
+      "certified_min_eigenvalue": 5.665080576449121e-09,
+      "certified_rank": 128,
+      "dimension": 128,
+      "matrix_log_error_op_upper": 3.972099230042718e-10,
+      "natural_source": [
+        7.125955106394811e-13,
+        7.125958285734987e-13
+      ],
+      "orthogonality_defect_F_upper": 1.9813777620366025e-12,
+      "paired_port_zero_by_p": true,
+      "physical_index": 25,
+      "polar_distance_op_upper": 9.906888810187926e-13,
+      "q0": [
+        3.1979895647101223e-06,
+        3.197989564716316e-06
+      ],
+      "reconstruction_residual_F_upper": 2.0749002373143308e-18,
+      "source_spectral_error_upper": 4.407500273770247e-20,
+      "tangent_nuclear_norm_upper": 1.1096148455794861e-10,
+      "trace_jet": [
+        3.049295005688475e-13,
+        3.0492950125240977e-13
+      ],
+      "true_reconstruction_error_op_upper": 2.1791072323458932e-18
+    },
+    {
+      "candidate_min_eigenvalue": 8.882470034981089e-11,
+      "certified_min_eigenvalue": 8.882470007547214e-11,
+      "certified_rank": 128,
+      "dimension": 128,
+      "matrix_log_error_op_upper": 3.099186280928264e-09,
+      "natural_source": [
+        2.8919218929274588e-11,
+        2.8919219015947167e-11
+      ],
+      "orthogonality_defect_F_upper": 1.4069924888343317e-12,
+      "paired_port_zero_by_p": true,
+      "physical_index": 27,
+      "polar_distance_op_upper": 7.034962444174137e-13,
+      "q0": [
+        1.7154164376411754e-07,
+        1.7154164376475046e-07
+      ],
+      "reconstruction_residual_F_upper": 2.662603311398244e-19,
+      "source_spectral_error_upper": 3.9464183905084e-20,
+      "tangent_nuclear_norm_upper": 1.27337243804731e-11,
+      "trace_jet": [
+        -5.571004416460695e-12,
+        -5.5710044164251636e-12
+      ],
+      "true_reconstruction_error_op_upper": 2.743387362693969e-19
+    },
+    {
+      "candidate_min_eigenvalue": 3.6092430383017406e-10,
+      "certified_min_eigenvalue": 3.6092430191741123e-10,
+      "certified_rank": 128,
+      "dimension": 128,
+      "matrix_log_error_op_upper": 5.308530734557505e-09,
+      "natural_source": [
+        5.916537162506214e-10,
+        5.916537189700738e-10
+      ],
+      "orthogonality_defect_F_upper": 9.81357631112269e-13,
+      "paired_port_zero_by_p": true,
+      "physical_index": 33,
+      "polar_distance_op_upper": 4.906788155562552e-13,
+      "q0": [
+        3.158183821445373e-06,
+        3.158183821451483e-06
+      ],
+      "reconstruction_residual_F_upper": 1.8290900837451586e-18,
+      "source_spectral_error_upper": 1.3128150984311414e-18,
+      "tangent_nuclear_norm_upper": 2.4730290999070037e-10,
+      "trace_jet": [
+        -1.2403996781496929e-10,
+        -1.2403996781421766e-10
+      ],
+      "true_reconstruction_error_op_upper": 1.912762771011549e-18
+    },
+    {
+      "candidate_min_eigenvalue": 3.009475898211028e-13,
+      "certified_min_eigenvalue": 3.0094758300631933e-13,
+      "certified_rank": 128,
+      "dimension": 128,
+      "matrix_log_error_op_upper": 2.2659945654060728e-08,
+      "natural_source": [
+        5.3104609708546485e-15,
+        5.310461211141222e-15
+      ],
+      "orthogonality_defect_F_upper": 2.099567867314643e-12,
+      "paired_port_zero_by_p": true,
+      "physical_index": 35,
+      "polar_distance_op_upper": 1.0497839336578731e-12,
+      "q0": [
+        4.897690933194092e-10,
+        4.897690933359088e-10
+      ],
+      "reconstruction_residual_F_upper": 6.758559872710936e-21,
+      "source_spectral_error_upper": 4.917479058331472e-23,
+      "tangent_nuclear_norm_upper": 2.1701195287069212e-15,
+      "trace_jet": [
+        -9.494272938613976e-16,
+        -9.494272935123322e-16
+      ],
+      "true_reconstruction_error_op_upper": 6.81478342781666e-21
+    },
+    {
+      "candidate_min_eigenvalue": 3.61784452424234e-10,
+      "certified_min_eigenvalue": 3.617844503966066e-10,
+      "certified_rank": 128,
+      "dimension": 128,
+      "matrix_log_error_op_upper": 5.613401852665209e-09,
+      "natural_source": [
+        5.903914336899012e-10,
+        5.903914365605163e-10
+      ],
+      "orthogonality_defect_F_upper": 9.790605122073703e-13,
+      "paired_port_zero_by_p": true,
+      "physical_index": 41,
+      "polar_distance_op_upper": 4.895302561038054e-13,
+      "q0": [
+        3.1577438830825445e-06,
+        3.157743883088632e-06
+      ],
+      "reconstruction_residual_F_upper": 1.9444504696447196e-18,
+      "source_spectral_error_upper": 1.3882106131112952e-18,
+      "tangent_nuclear_norm_upper": 2.4730290999070037e-10,
+      "trace_jet": [
+        -1.2403996781496929e-10,
+        -1.2403996781421766e-10
+      ],
+      "true_reconstruction_error_op_upper": 2.0276272995761297e-18
+    },
+    {
+      "candidate_min_eigenvalue": 3.0094758982110204e-13,
+      "certified_min_eigenvalue": 3.0094758315233947e-13,
+      "certified_rank": 128,
+      "dimension": 128,
+      "matrix_log_error_op_upper": 2.217474030158058e-08,
+      "natural_source": [
+        5.310460973193486e-15,
+        5.310461208802402e-15
+      ],
+      "orthogonality_defect_F_upper": 2.099373093704977e-12,
+      "paired_port_zero_by_p": true,
+      "physical_index": 43,
+      "polar_distance_op_upper": 1.0496865468530402e-12,
+      "q0": [
+        4.897690933196054e-10,
+        4.897690933357127e-10
+      ],
+      "reconstruction_residual_F_upper": 6.612544147082437e-21,
+      "source_spectral_error_upper": 4.8121836972358807e-23,
+      "tangent_nuclear_norm_upper": 2.170119528702158e-15,
+      "trace_jet": [
+        -9.49427293858026e-16,
+        -9.494272935156999e-16
+      ],
+      "true_reconstruction_error_op_upper": 6.66876248641736e-21
+    },
+    {
+      "candidate_min_eigenvalue": 5.681111169458718e-09,
+      "certified_min_eigenvalue": 5.681111167194488e-09,
+      "certified_rank": 128,
+      "dimension": 128,
+      "matrix_log_error_op_upper": 4.1099103114348376e-10,
+      "natural_source": [
+        -2.740869621930034e-12,
+        -2.7408693035767385e-12
+      ],
+      "orthogonality_defect_F_upper": 1.9639516600089174e-12,
+      "paired_port_zero_by_p": true,
+      "physical_index": 49,
+      "polar_distance_op_upper": 9.819758300049414e-13,
+      "q0": [
+        3.1966838266724453e-06,
+        3.1966838266786307e-06
+      ],
+      "reconstruction_residual_F_upper": 2.162086646097617e-18,
+      "source_spectral_error_upper": 4.7408717735517294e-20,
+      "tangent_nuclear_norm_upper": 1.153521954082889e-10,
+      "trace_jet": [
+        1.1339176878886109e-12,
+        1.1339176885526158e-12
+      ],
+      "true_reconstruction_error_op_upper": 2.264228844217438e-18
+    },
+    {
+      "candidate_min_eigenvalue": 4.662683093898408e-11,
+      "certified_min_eigenvalue": 4.662683081456092e-11,
+      "certified_rank": 128,
+      "dimension": 128,
+      "matrix_log_error_op_upper": 2.680497425251939e-09,
+      "natural_source": [
+        5.193982834222747e-12,
+        5.193982853800283e-12
+      ],
+      "orthogonality_defect_F_upper": 1.715741007183576e-12,
+      "paired_port_zero_by_p": true,
+      "physical_index": 51,
+      "polar_distance_op_upper": 8.578705035921565e-13,
+      "q0": [
+        5.110206075001008e-08,
+        5.11020607503276e-08
+      ],
+      "reconstruction_residual_F_upper": 1.2203899544844428e-19,
+      "source_spectral_error_upper": 6.670974620088669e-21,
+      "tangent_nuclear_norm_upper": 2.488707714189155e-12,
+      "trace_jet": [
+        -1.0888096249616165e-12,
+        -1.088809624940174e-12
+      ],
+      "true_reconstruction_error_op_upper": 1.244231506696626e-19
+    },
+    {
+      "candidate_min_eigenvalue": 5.666786595333762e-09,
+      "certified_min_eigenvalue": 5.666786593035167e-09,
+      "certified_rank": 128,
+      "dimension": 128,
+      "matrix_log_error_op_upper": 4.18132923372731e-10,
+      "natural_source": [
+        -2.6226329553448903e-12,
+        -2.6226326337812084e-12
+      ],
+      "orthogonality_defect_F_upper": 1.9740381751620443e-12,
+      "paired_port_zero_by_p": true,
+      "physical_index": 57,
+      "polar_distance_op_upper": 9.8701908758151e-13,
+      "q0": [
+        3.1985236268180474e-06,
+        3.1985236268242527e-06
+      ],
+      "reconstruction_residual_F_upper": 2.1947557187770207e-18,
+      "source_spectral_error_upper": 4.823255068353036e-20,
+      "tangent_nuclear_norm_upper": 1.153521954082889e-10,
+      "trace_jet": [
+        1.1339176878886109e-12,
+        1.1339176885526158e-12
+      ],
+      "true_reconstruction_error_op_upper": 2.2985946644056853e-18
+    },
+    {
+      "candidate_min_eigenvalue": 4.9052630964833116e-11,
+      "certified_min_eigenvalue": 4.905263068950865e-11,
+      "certified_rank": 128,
+      "dimension": 128,
+      "matrix_log_error_op_upper": 5.625388352883089e-09,
+      "natural_source": [
+        1.3189776488383594e-11,
+        1.3189776566855555e-11
+      ],
+      "orthogonality_defect_F_upper": 1.519722253164482e-12,
+      "paired_port_zero_by_p": true,
+      "physical_index": 59,
+      "polar_distance_op_upper": 7.598611265825301e-13,
+      "q0": [
+        1.8935887230159728e-07,
+        1.8935887230227806e-07
+      ],
+      "reconstruction_residual_F_upper": 2.6546076787494495e-19,
+      "source_spectral_error_upper": 3.4369770022536727e-20,
+      "tangent_nuclear_norm_upper": 6.109759516411296e-12,
+      "trace_jet": [
+        -2.6730197884372685e-12,
+        -2.673019788397682e-12
+      ],
+      "true_reconstruction_error_op_upper": 2.753244557183041e-19
+    },
+    {
+      "candidate_min_eigenvalue": 3.623531415595288e-10,
+      "certified_min_eigenvalue": 3.62353139412482e-10,
+      "certified_rank": 128,
+      "dimension": 128,
+      "matrix_log_error_op_upper": 5.934248744728737e-09,
+      "natural_source": [
+        5.671133174571083e-10,
+        5.671133204293119e-10
+      ],
+      "orthogonality_defect_F_upper": 9.876842901726651e-13,
+      "paired_port_zero_by_p": true,
+      "physical_index": 65,
+      "polar_distance_op_upper": 4.938421450864548e-13,
+      "q0": [
+        3.1566330922606013e-06,
+        3.1566330922666745e-06
+      ],
+      "reconstruction_residual_F_upper": 2.0635095538899282e-18,
+      "source_spectral_error_upper": 1.4207554130803464e-18,
+      "tangent_nuclear_norm_upper": 2.394162216982178e-10,
+      "trace_jet": [
+        -1.194189525082665e-10,
+        -1.1941895250725642e-10
+      ],
+      "true_reconstruction_error_op_upper": 2.14704673788024e-18
+    },
+    {
+      "candidate_min_eigenvalue": 3.15507725584804e-13,
+      "certified_min_eigenvalue": 3.155077189972828e-13,
+      "certified_rank": 128,
+      "dimension": 128,
+      "matrix_log_error_op_upper": 2.0894145306039136e-08,
+      "natural_source": [
+        4.938068687321026e-15,
+        4.9380689172392554e-15
+      ],
+      "orthogonality_defect_F_upper": 2.075166433041505e-12,
+      "paired_port_zero_by_p": true,
+      "physical_index": 67,
+      "polar_distance_op_upper": 1.0375832165212914e-12,
+      "q0": [
+        4.41691178931607e-10,
+        4.416911789474874e-10
+      ],
+      "reconstruction_residual_F_upper": 6.537899948690322e-21,
+      "source_spectral_error_upper": 4.534279276427373e-23,
+      "tangent_nuclear_norm_upper": 2.1701195287068325e-15,
+      "trace_jet": [
+        -9.494272938613495e-16,
+        -9.49427293512284e-16
+      ],
+      "true_reconstruction_error_op_upper": 6.587521134486692e-21
+    },
+    {
+      "candidate_min_eigenvalue": 3.5873571569215933e-10,
+      "certified_min_eigenvalue": 3.587357139576382e-10,
+      "certified_rank": 128,
+      "dimension": 128,
+      "matrix_log_error_op_upper": 4.844208985502674e-09,
+      "natural_source": [
+        5.695142270822306e-10,
+        5.6951422953741e-10
+      ],
+      "orthogonality_defect_F_upper": 1.003388991809356e-12,
+      "paired_port_zero_by_p": true,
+      "physical_index": 73,
+      "polar_distance_op_upper": 5.016944959048042e-13,
+      "q0": [
+        3.1608712953734647e-06,
+        3.160871295379578e-06
+      ],
+      "reconstruction_residual_F_upper": 1.6482992540820697e-18,
+      "source_spectral_error_upper": 1.1597822124256071e-18,
+      "tangent_nuclear_norm_upper": 2.394162216982178e-10,
+      "trace_jet": [
+        -1.194189525082665e-10,
+        -1.1941895250725642e-10
+      ],
+      "true_reconstruction_error_op_upper": 1.734521051806057e-18
+    },
+    {
+      "candidate_min_eigenvalue": 3.155077255848018e-13,
+      "certified_min_eigenvalue": 3.155077191354987e-13,
+      "certified_rank": 128,
+      "dimension": 128,
+      "matrix_log_error_op_upper": 2.0456062877308096e-08,
+      "natural_source": [
+        4.938068689530063e-15,
+        4.9380689150308314e-15
+      ],
+      "orthogonality_defect_F_upper": 2.075042263641325e-12,
+      "paired_port_zero_by_p": true,
+      "physical_index": 75,
+      "polar_distance_op_upper": 1.0375211318212014e-12,
+      "q0": [
+        4.4169117893179197e-10,
+        4.416911789473021e-10
+      ],
+      "reconstruction_residual_F_upper": 6.399684816622014e-21,
+      "source_spectral_error_upper": 4.4392101530406105e-23,
+      "tangent_nuclear_norm_upper": 2.1701195287021845e-15,
+      "trace_jet": [
+        -9.494272938580426e-16,
+        -9.494272935157164e-16
+      ],
+      "true_reconstruction_error_op_upper": 6.449303033291292e-21
+    },
+    {
+      "candidate_min_eigenvalue": 5.6666067946761315e-09,
+      "certified_min_eigenvalue": 5.666606792510611e-09,
+      "certified_rank": 128,
+      "dimension": 128,
+      "matrix_log_error_op_upper": 3.9466475389707387e-10,
+      "natural_source": [
+        -3.461929058131e-12,
+        -3.461928748150249e-12
+      ],
+      "orthogonality_defect_F_upper": 1.9746235675974403e-12,
+      "paired_port_zero_by_p": true,
+      "physical_index": 81,
+      "polar_distance_op_upper": 9.87311783799208e-13,
+      "q0": [
+        3.1972169155436957e-06,
+        3.197216915549876e-06
+      ],
+      "reconstruction_residual_F_upper": 2.0622943677237096e-18,
+      "source_spectral_error_upper": 4.399895552525764e-20,
+      "tangent_nuclear_norm_upper": 1.1148438032734053e-10,
+      "trace_jet": [
+        1.170706592297626e-12,
+        1.1707065929613867e-12
+      ],
+      "true_reconstruction_error_op_upper": 2.1655200441797852e-18
+    },
+    {
+      "candidate_min_eigenvalue": 5.3921743139222956e-12,
+      "certified_min_eigenvalue": 5.392174277463517e-12,
+      "certified_rank": 128,
+      "dimension": 128,
+      "matrix_log_error_op_upper": 6.774554239168396e-09,
+      "natural_source": [
+        5.185080798896615e-13,
+        5.185080848490249e-13
+      ],
+      "orthogonality_defect_F_upper": 1.851106155802962e-12,
+      "paired_port_zero_by_p": true,
+      "physical_index": 83,
+      "polar_distance_op_upper": 9.2555307790191e-13,
+      "q0": [
+        6.489984996231794e-09,
+        6.48998499632312e-09
+      ],
+      "reconstruction_residual_F_upper": 3.601517263584115e-20,
+      "source_spectral_error_upper": 1.5668605485988896e-21,
+      "tangent_nuclear_norm_upper": 2.3128614714452826e-13,
+      "trace_jet": [
+        -1.011876893767263e-13,
+        -1.0118768937112712e-13
+      ],
+      "true_reconstruction_error_op_upper": 3.645877775571822e-20
+    },
+    {
+      "candidate_min_eigenvalue": 5.690973329066748e-09,
+      "certified_min_eigenvalue": 5.6909733268297885e-09,
+      "certified_rank": 128,
+      "dimension": 128,
+      "matrix_log_error_op_upper": 4.055178536078324e-10,
+      "natural_source": [
+        -3.362487873039614e-12,
+        -3.3624875621951104e-12
+      ],
+      "orthogonality_defect_F_upper": 1.9660788392997016e-12,
+      "paired_port_zero_by_p": true,
+      "physical_index": 89,
+      "polar_distance_op_upper": 9.830394196503347e-13,
+      "q0": [
+        3.195603965221348e-06,
+        3.195603965227537e-06
+      ],
+      "reconstruction_residual_F_upper": 2.135681624772326e-18,
+      "source_spectral_error_upper": 4.520890662114239e-20,
+      "tangent_nuclear_norm_upper": 1.1148438032734053e-10,
+      "trace_jet": [
+        1.170706592297626e-12,
+        1.1707065929613867e-12
+      ],
+      "true_reconstruction_error_op_upper": 2.2369582635037064e-18
+    },
+    {
+      "candidate_min_eigenvalue": 8.902065625991187e-11,
+      "certified_min_eigenvalue": 8.902065608080328e-11,
+      "certified_rank": 128,
+      "dimension": 128,
+      "matrix_log_error_op_upper": 2.021527203032683e-09,
+      "natural_source": [
+        3.4953131615800403e-13,
+        3.4953132034598514e-13
+      ],
+      "orthogonality_defect_F_upper": 1.3558366158340357e-12,
+      "paired_port_zero_by_p": true,
+      "physical_index": 91,
+      "polar_distance_op_upper": 6.779183079172481e-13,
+      "q0": [
+        1.0109938658313559e-07,
+        1.0109938658356651e-07
+      ],
+      "reconstruction_residual_F_upper": 1.7401693979959648e-19,
+      "source_spectral_error_upper": 3.4532224487583545e-22,
+      "tangent_nuclear_norm_upper": 1.7082245757454318e-13,
+      "trace_jet": [
+        -7.473482519295362e-14,
+        -7.473482517484608e-14
+      ],
+      "true_reconstruction_error_op_upper": 1.7910857233043289e-19
+    },
+    {
+      "candidate_min_eigenvalue": 3.582172142411587e-10,
+      "certified_min_eigenvalue": 3.5821721222786406e-10,
+      "certified_rank": 128,
+      "dimension": 128,
+      "matrix_log_error_op_upper": 5.629319883473614e-09,
+      "natural_source": [
+        5.895299510305348e-10,
+        5.895299539085025e-10
+      ],
+      "orthogonality_defect_F_upper": 9.909450240382399e-13,
+      "paired_port_zero_by_p": true,
+      "physical_index": 97,
+      "polar_distance_op_upper": 4.95472512019243e-13,
+      "q0": [
+        3.1578740231692175e-06,
+        3.15787402317533e-06
+      ],
+      "reconstruction_residual_F_upper": 1.929067749453362e-18,
+      "source_spectral_error_upper": 1.3918820782018045e-18,
+      "tangent_nuclear_norm_upper": 2.472558154472709e-10,
+      "trace_jet": [
+        -1.2403996781496435e-10,
+        -1.240399678142226e-10
+      ],
+      "true_reconstruction_error_op_upper": 2.0132945996860953e-18
+    },
+    {
+      "candidate_min_eigenvalue": 3.08653105599046e-13,
+      "certified_min_eigenvalue": 3.0865309897833014e-13,
+      "certified_rank": 128,
+      "dimension": 128,
+      "matrix_log_error_op_upper": 2.146591292521707e-08,
+      "natural_source": [
+        5.587506645913707e-15,
+        5.5875068830909145e-15
+      ],
+      "orthogonality_defect_F_upper": 2.1286657658544497e-12,
+      "paired_port_zero_by_p": true,
+      "physical_index": 99,
+      "polar_distance_op_upper": 1.064332882927792e-12,
+      "q0": [
+        4.6285061432947913e-10,
+        4.628506143454888e-10
+      ],
+      "reconstruction_residual_F_upper": 6.584322373840035e-21,
+      "source_spectral_error_upper": 4.658359684053588e-23,
+      "tangent_nuclear_norm_upper": 2.1701195287069212e-15,
+      "trace_jet": [
+        -9.494272938613976e-16,
+        -9.494272935123322e-16
+      ],
+      "true_reconstruction_error_op_upper": 6.620715803088408e-21
+    },
+    {
+      "candidate_min_eigenvalue": 3.6135375780986133e-10,
+      "certified_min_eigenvalue": 3.613537557657223e-10,
+      "certified_rank": 128,
+      "dimension": 128,
+      "matrix_log_error_op_upper": 5.665958492806686e-09,
+      "natural_source": [
+        5.905790442667699e-10,
+        5.905790471642516e-10
+      ],
+      "orthogonality_defect_F_upper": 9.989658653412668e-13,
+      "paired_port_zero_by_p": true,
+      "physical_index": 105,
+      "polar_distance_op_upper": 4.994829326707585e-13,
+      "q0": [
+        3.1607113930249292e-06,
+        3.1607113930310186e-06
+      ],
+      "reconstruction_residual_F_upper": 1.9585573985302882e-18,
+      "source_spectral_error_upper": 1.4009411874293072e-18,
+      "tangent_nuclear_norm_upper": 2.472558154472709e-10,
+      "trace_jet": [
+        -1.2403996781496435e-10,
+        -1.240399678142226e-10
+      ],
+      "true_reconstruction_error_op_upper": 2.044138963759745e-18
+    },
+    {
+      "candidate_min_eigenvalue": 3.0865310559904423e-13,
+      "certified_min_eigenvalue": 3.0865309912005035e-13,
+      "certified_rank": 128,
+      "dimension": 128,
+      "matrix_log_error_op_upper": 2.1006750511476187e-08,
+      "natural_source": [
+        5.587506648213133e-15,
+        5.587506880791436e-15
+      ],
+      "orthogonality_defect_F_upper": 2.1287001142550217e-12,
+      "paired_port_zero_by_p": true,
+      "physical_index": 107,
+      "polar_distance_op_upper": 1.064350057128078e-12,
+      "q0": [
+        4.6285061432966866e-10,
+        4.628506143452995e-10
+      ],
+      "reconstruction_residual_F_upper": 6.442599810100863e-21,
+      "source_spectral_error_upper": 4.558715951952853e-23,
+      "tangent_nuclear_norm_upper": 2.170119528702158e-15,
+      "trace_jet": [
+        -9.49427293858026e-16,
+        -9.494272935156999e-16
+      ],
+      "true_reconstruction_error_op_upper": 6.478993826597881e-21
+    },
+    {
+      "candidate_min_eigenvalue": 5.678518491430021e-09,
+      "certified_min_eigenvalue": 5.678518489265486e-09,
+      "certified_rank": 128,
+      "dimension": 128,
+      "matrix_log_error_op_upper": 3.936863095761732e-10,
+      "natural_source": [
+        -2.683112377205879e-12,
+        -2.6831120580173308e-12
+      ],
+      "orthogonality_defect_F_upper": 1.974829954437127e-12,
+      "paired_port_zero_by_p": true,
+      "physical_index": 113,
+      "polar_distance_op_upper": 9.874149772190517e-13,
+      "q0": [
+        3.196723277502736e-06,
+        3.196723277508913e-06
+      ],
+      "reconstruction_residual_F_upper": 2.0614429425859247e-18,
+      "source_spectral_error_upper": 4.476654794786866e-20,
+      "tangent_nuclear_norm_upper": 1.1371121336696345e-10,
+      "trace_jet": [
+        1.133917687881247e-12,
+        1.1339176885599794e-12
+      ],
+      "true_reconstruction_error_op_upper": 2.1645338949952814e-18
+    },
+    {
+      "candidate_min_eigenvalue": 4.6495497722703946e-11,
+      "certified_min_eigenvalue": 4.64954975980247e-11,
+      "certified_rank": 128,
+      "dimension": 128,
+      "matrix_log_error_op_upper": 2.693393553817498e-09,
+      "natural_source": [
+        5.31946457565361e-12,
+        5.319464595215443e-12
+      ],
+      "orthogonality_defect_F_upper": 1.6928784182253658e-12,
+      "paired_port_zero_by_p": true,
+      "physical_index": 115,
+      "polar_distance_op_upper": 8.464392091130416e-13,
+      "q0": [
+        5.128322746499009e-08,
+        5.128322746530814e-08
+      ],
+      "reconstruction_residual_F_upper": 1.2224669827334058e-19,
+      "source_spectral_error_upper": 6.703069314732951e-21,
+      "tangent_nuclear_norm_upper": 2.488707714189155e-12,
+      "trace_jet": [
+        -1.0888096249616165e-12,
+        -1.088809624940174e-12
+      ],
+      "true_reconstruction_error_op_upper": 1.2467924128553328e-19
+    },
+    {
+      "candidate_min_eigenvalue": 5.6718445848558975e-09,
+      "certified_min_eigenvalue": 5.671844582555682e-09,
+      "certified_rank": 128,
+      "dimension": 128,
+      "matrix_log_error_op_upper": 4.1795101262902203e-10,
+      "natural_source": [
+        -2.7966507825503837e-12,
+        -2.7966504601763273e-12
+      ],
+      "orthogonality_defect_F_upper": 1.9578995952614847e-12,
+      "paired_port_zero_by_p": true,
+      "physical_index": 121,
+      "polar_distance_op_upper": 9.789497976312224e-13,
+      "q0": [
+        3.1955846651435455e-06,
+        3.1955846651497424e-06
+      ],
+      "reconstruction_residual_F_upper": 2.1994107097000093e-18,
+      "source_spectral_error_upper": 4.7525716773997164e-20,
+      "tangent_nuclear_norm_upper": 1.1371121336696345e-10,
+      "trace_jet": [
+        1.133917687881247e-12,
+        1.1339176885599794e-12
+      ],
+      "true_reconstruction_error_op_upper": 2.300214614480185e-18
+    },
+    {
+      "candidate_min_eigenvalue": 4.6262151351456025e-11,
+      "certified_min_eigenvalue": 4.626215118812135e-11,
+      "certified_rank": 128,
+      "dimension": 128,
+      "matrix_log_error_op_upper": 3.542185894056789e-09,
+      "natural_source": [
+        1.2925309035734271e-11,
+        1.2925309088578792e-11
+      ],
+      "orthogonality_defect_F_upper": 1.5339896201283272e-12,
+      "paired_port_zero_by_p": true,
+      "physical_index": 123,
+      "polar_distance_op_upper": 7.669948100644582e-13,
+      "q0": [
+        8.631115255379328e-08,
+        8.63111525541879e-08
+      ],
+      "reconstruction_residual_F_upper": 1.6007298137993922e-19,
+      "source_spectral_error_upper": 2.1641903975111323e-20,
+      "tangent_nuclear_norm_upper": 6.109759516411296e-12,
+      "trace_jet": [
+        -2.6730197884372685e-12,
+        -2.673019788397682e-12
+      ],
+      "true_reconstruction_error_op_upper": 1.6333466931171267e-19
+    }
+  ],
+  "status": "PASS",
+  "support": {
+    "certified_full_fine_min_eigenvalue_lower": 1.8599583513003547e-13,
+    "every_active_posterior_rank": 128,
+    "minimum_Julia_radicand_lower": 0.7966785124909916,
+    "probability_or_eigenvalue_floor": false
+  }
+}

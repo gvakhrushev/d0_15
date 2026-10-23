@@ -1,0 +1,65 @@
+{
+  "repository_head": "92c00ccbf39e6e21e4383f7a7b573ab7c7c6f1be",
+  "sources": [
+    {
+      "path": "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md",
+      "git_blob": "ecdd31abb52c94e9f2a157a80c7c49a6f5ac31aa",
+      "sha256": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/BOOK_SOURCE_BINDING.md",
+      "git_blob": "0fc40d94bf6db0d0be49c783c902274821af5b92",
+      "sha256": "2b26bf2f4c1b128731ccf14a17437ba654c046e82b5e42e55113a8b6053494ea"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/GOLDEN_EXACT_DETECTOR.md",
+      "git_blob": "92b9003d783c24b1883a2a21f8b30625078afff7",
+      "sha256": "d33c9c2cb2322e381723f481eb1fcf58058fd05ad88eda92c5597c026d02eb77"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_global_result_composition_2026-10-20/FULL_PRICE_COMPOSITION.md",
+      "git_blob": "b0d4483c42e4ac8281603b1459c1f2464da1fff9",
+      "sha256": "dde1aab20b306afd0f515f4ccbd13d47f74cdf1e293ae6409175615332f708fb"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_same_execution_spatial_source_2026-10-21/weights/ONE_STAGE_COMPLETE_SPATIAL_WEIGHT_THEOREM.md",
+      "git_blob": "58762641a26e0f6a7c22275b325e4a4016642a09",
+      "sha256": "960f2d1edc4f151607f9c4ecc76e1522d5dee08922319a3700c0cc3fc96458d1"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/NATIVE_COHERENT_BOOK_COMPLEMENT.md",
+      "git_blob": "db279db445bcc013827773bdede3488a9461fcea",
+      "sha256": "d0cf0e29b79123410daae93e23899e824dc4746548d3c6af6da431fa1a15d04c"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/NATIVE_STAGE_CLOCK_AND_POINTED_DESCENT.md",
+      "git_blob": "0f24c6e0149a84b584130a1206cec605ed078858",
+      "sha256": "e970dda60699b7236599c9618445fe17cb8cbb0b9bb8c8de8808a190c4c00848"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/NATIVE_CLOCK_SCHUR_RETURN.md",
+      "git_blob": "c9501fa1ae11f0c30ef1ccb190c9ff7b812b5444",
+      "sha256": "0ea93feafeab40582807e4dcc21ce7e6c5f8852a898c23fa9c49d3fe565bd8e3"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_PAIRED_EPOCH_CLOCK_COMPLETE_SOURCE_TRANSPORT_2026_10_21.md",
+      "git_blob": "671a86ba65f65b86e471c9896e12cc7a576bfd93",
+      "sha256": "bc8d9b96701c8c0096f01dc22cf717ac86a0e83741be1608b438cd5e2ed79824"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/repository_puzzle/weights/FOUNDATIONAL_WEIGHT_BRIDGES.md",
+      "git_blob": "1e186511782f52cdf0b6bee8c01a93beb5d5cb37",
+      "sha256": "b8ff0a2f47cb582fb607f66b97e0048fa2cdbfd392ad153d9d46630ee0cf000f"
+    },
+    {
+      "path": "03_FORMALIZATION/D0/Foundation/ProspectiveExecution.lean",
+      "git_blob": "5bf153f4c74325366c8c57ce404dcdcb4fc87dc5",
+      "sha256": "99db926c47864c53ecf8d43caf2518f86b96e42cdffccaaf26f6c93205155ed4"
+    },
+    {
+      "path": "03_FORMALIZATION/D0/Foundation/FutureExecution.lean",
+      "git_blob": "c0cbf1d446f428e166ae30f90f9caba1ce60c091",
+      "sha256": "15143b63f2bf1cc51493e3efb36c9da57c203d7e680e2f1370cf2311eb2e9ef1"
+    }
+  ]
+}

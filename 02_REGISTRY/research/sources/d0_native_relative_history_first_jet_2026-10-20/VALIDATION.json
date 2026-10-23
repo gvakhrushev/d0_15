@@ -1,0 +1,70 @@
+{
+  "schema": "d0-native-relative-history-first-jet-validation/1",
+  "date": "2026-10-20",
+  "owner_pr": "https://github.com/gvakhrushev/d0_15/pull/334",
+  "integration_base": "57b7c37f6e136d15d7b0f89b41c9a589d8c779e9",
+  "local_mathematical_snapshot": "572608470e1e2e53fcf851883a2b17e8b56821e5",
+  "local_snapshot_is_not_publication": true,
+  "isolated_replay": {
+    "managed_worktree": "C:/Users/kmeze/.codex/worktrees/relative-history-verify/d0_15",
+    "detached_snapshot": "572608470e1e2e53fcf851883a2b17e8b56821e5",
+    "clean_before_and_after": true,
+    "command": "python -B -W error 02_REGISTRY/research/certificates/a4d_native_relative_history_first_jet_check.py",
+    "status": "PASS",
+    "checks": [
+      "Exact native zero connection, complete history derivative norm and hostile phase control",
+      "All128 original matrix jets and complete ordered-sector normalization",
+      "Separate physical coframe scaling, longer clock and all128 a-jets",
+      "Frozen proof/calibration inputs and declared carrier/scope"
+    ],
+    "python": "3.11.9",
+    "numpy": "2.2.6",
+    "sympy": "1.12.1",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "all_depth_theorem_method": "Pinned analytic proof; no word or mesh enumeration"
+  },
+  "structural_gates": [
+    {
+      "command": "python -B tools/validate_repo.py",
+      "status": "PASS",
+      "output": "claims=889 assumptions=31 aliases=58 formal_support=183 lean_closure=918; PASS warnings=0"
+    },
+    {
+      "command": "python -B tools/validate_work.py",
+      "status": "PASS",
+      "output": "PASS work_validation: active work plane clean and enforced"
+    },
+    {
+      "command": "python -B tools/validate_agent_protocol.py",
+      "status": "FAIL_EXISTING_INTEGRATION_BASE",
+      "output": "FAIL_AGENT_PROTOCOL: gravity assembly: attempt question digest does not match its scope/assumptions"
+    },
+    {
+      "command": "python -B tools/gr_assembly.py template EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE",
+      "status": "BLOCKED_BY_SAME_EXISTING_DIGEST_MISMATCH",
+      "output": "ASSEMBLY_ERROR: attempt question digest does not match its scope/assumptions",
+      "parent_substitution_recorded_in": ["RESULT.md", "REVIEW.md", "owning brief and primary memo appendices"]
+    },
+    {
+      "command": "git diff --cached --check",
+      "status": "PASS"
+    }
+  ],
+  "provenance_check": {
+    "owned_inputs_matching_exact_source_git_blobs": 7,
+    "unchanged_live_inputs_matching_remote_head": 5,
+    "clock_snapshot_ref": "be5e5bd0986850cf37f9eec36bcaec341d306b44",
+    "reporter_minimum_snapshot_ref": "c16531e386a68b1f45c9fc55cc2acb956cfdf7b7",
+    "checked_remote_head": "07ca6ace3703393f5adb1109d82fc3cc10c1a4a4",
+    "input_manifest": "SOURCE_PINS.json",
+    "independent_acceptance": "REVIEW.md"
+  },
+  "remaining_boundary": {
+    "G2_same_task_terminal_selection": "Scoped rejection retained; history completion does not repair it",
+    "actual_Book_and_clock_selection": "OPEN",
+    "nonuniform_nonvacuum_primary_spatial_transfer": "OPEN",
+    "original_all10_h_minus_2_raw_l1_source": "OPEN",
+    "lifecycle_or_assembly_promotion": false,
+    "GR_closed": false
+  }
+}

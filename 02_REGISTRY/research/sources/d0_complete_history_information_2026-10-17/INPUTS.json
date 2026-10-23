@@ -1,0 +1,68 @@
+{
+  "input_commit": "090c957fddde61946da03cac7d1e658a6197f4e5",
+  "owners": [
+    "02_REGISTRY/research/A4D_COMPLETE_HISTORY_INFORMATION_SCALE.md",
+    "02_REGISTRY/research/A4D_COMPLETE_RECORD_NORMAL_BIRTH_SCALE.md"
+  ],
+  "inputs": {
+    "02_REGISTRY/research/A4D_COMPLETE_RECORD_CHANNEL_AND_NATIVE_COST_SOURCE.md": {
+      "sha256": "2128009802edff3e111a26961f050320fd878d7412ed93bfad5d5c9e4219db79",
+      "git_blob": "df8611c7fa37fa71e883831b3f01f434532d99ce"
+    },
+    "02_REGISTRY/research/A4D_VARIABLE_RECORD_CHANNEL_CONSERVATIVITY.md": {
+      "sha256": "44578338d793d96fbd8d575d182cf4087c721e3010c69a77163da0f40bef4715",
+      "git_blob": "8fe8059b98c60425fb570a10cb8d06c8adb13073"
+    },
+    "02_REGISTRY/research/A4D_VARIABLE_RECORD_ENTROPY_AND_CODE_LIMIT.md": {
+      "sha256": "e934b157a7bb34c11a9ad377b32bb8838a6e342da31ab716bf0f14c4c913787f",
+      "git_blob": "1fda19f9e4d0d559ee134e69a863e14af8e78a09"
+    },
+    "02_REGISTRY/research/A4D_VARIABLE_RECORD_FIRST_SOURCE_LIMIT.md": {
+      "sha256": "bacfeb70e261f600cd4d1e305612eaf3ab6fe6f71bd384aab2f04fd588493d93",
+      "git_blob": "d60afe6ffc619a6464a7c40080cba14ce05c708f"
+    },
+    "02_REGISTRY/research/A4D_SPATIAL_PREPARATION_VARIATIONAL_LIMIT.md": {
+      "sha256": "a637d454fb2ff502c643c6ea919eb969028cfd65bda19af65486fd8c472617ac",
+      "git_blob": "0586834ed0cf05ee7dd39a0f327dfd278443b979"
+    },
+    "02_REGISTRY/research/A4D_RETAINED_HISTORY_CAUSAL_SOURCE.md": {
+      "sha256": "d7f8498e30e788af43edeb2bfd6e763d429e221cea76b622198687bbf4af21db",
+      "git_blob": "ead1fc7ba78eeac7c7ac232ee59535f977fa24af"
+    },
+    "02_REGISTRY/research/A4D_CONE_PREPARATION_FIRST_CORRECTOR.md": {
+      "sha256": "3ca2619d7965a1090345608e2eab91020c7a4ccafd3f7253fd3576fa73e25077",
+      "git_blob": "8f00ea5a3808025f287c326ea7984c0e8c8ea0f4"
+    },
+    "02_REGISTRY/research/A4D_NATIVE_COFRAME_HEAT_SOURCE_BRIDGE.md": {
+      "sha256": "f54810cf9cc16f2282eb602fa606381cdd9622c7f877fef5211e978c55e4956c",
+      "git_blob": "2e8a4b791e1d7adb472acf24c729d42583874a68"
+    },
+    "02_REGISTRY/research/A4D_NATIVE_CAUSAL_METRIC_SOURCE_BRIDGE.md": {
+      "sha256": "1c719378dac0baa8230366456f66ddb5315d8577afbae91521d60fef65bb9a16",
+      "git_blob": "36a87088bab15f582a7cc0dab958465b58e4f8cc"
+    },
+    "02_REGISTRY/research/A4D_NATIVE_BRANCH_INFORMATION_COCYCLE.md": {
+      "sha256": "cf77a70da503c0a58725e1470ed9b73a493ee01a82293058d49dfd6758ae735a",
+      "git_blob": "841795793134245e2beb67ea2b59b0e2a1bd730e"
+    },
+    "02_REGISTRY/research/A4D_NATIVE_PARTITION_CORRECTED_BRANCH_INFORMATION.md": {
+      "sha256": "a4e8c15de4d736366e85f0bd19a2a394f6372295426b830d8a21bd25fbb3190c",
+      "git_blob": "dd325fed87dc1284dd8ee64e86e34587be31e7d3"
+    },
+    "02_REGISTRY/research/A4D_NATIVE_OPERATIONAL_GAIN_AND_MEMORY.md": {
+      "sha256": "af0e92ebdfdadaee207070c2eef9aad889acc818c8b4ede5eb800d35b31e8d47",
+      "git_blob": "ec3ddc51837b34e72a2fd58cd1e077f0c2f1fb9f"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_curved_soldered_heat.py": {
+      "sha256": "bf13f57c902da0005634ae6834c0b4e3ffd2df1aa196a61ebc0ff3dc0351c7da",
+      "git_blob": "d76dd3775e90a982eb1cde4ce935cadb1c3ab671"
+    },
+    "02_REGISTRY/research/sources/d0_retained_history_causal_source_2026-10-16/check_retained_history.py": {
+      "sha256": "6be5d31fc2b5a2d2f75b54071720b03c6bbebc30356260b5c823c3ef8ef88d92",
+      "git_blob": "616dda4d25b5632ca1b93212e35bceed2a593036"
+    }
+  },
+  "new_helper": "check_normal_birth_inputs.py",
+  "old_scientific_entrypoints_executed": false,
+  "scope": "All128 actual outputs; full spatial pointer first sources. Coherent second stencil expansion on the controlled faithful firstshell LC cone with all16 forms/reference128 and arbitrary normalized prep/field first correctors. Physical Info/cut/normalizer/scale not selected."
+}

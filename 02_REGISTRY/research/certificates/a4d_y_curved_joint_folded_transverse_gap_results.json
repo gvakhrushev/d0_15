@@ -1,0 +1,29 @@
+{
+  "schema": "a4d-y-curved-joint-folded-transverse-gap-v1",
+  "terminal": "A4D-Y-CURVED-JOINT-FOLDED-TRANSVERSE-GAP-CERTIFIED",
+  "z": "1",
+  "domain_complement_dimension": 94,
+  "removed_subspace": "independent Y rotation directions on phase-0 and phase-2 role-0 links",
+  "basis_gram_spectrum": {
+    "1": 92,
+    "3": 2
+  },
+  "folded_base_gap": "sigma_min(Q_folded Bperp) > 1/10",
+  "folded_characters": [
+    "1",
+    "i",
+    "-1",
+    "-i"
+  ],
+  "phase_unfolding": "Q(lambda) Dcol(lambda^-p)=Drow(lambda^-p) Q(1) for lambda^4=1",
+  "global_derivative_bound": "||d_j Q||_2 <= 22/7",
+  "neighborhood": "sum_j |theta_j-theta_j_folded| <= 1/110",
+  "uniform_transverse_gap": "sigma_min(Q(theta) Bperp) > 1/20",
+  "proof": "exact LDL at one folded point + exact folded covariance + Weyl perturbation bound",
+  "scope_fence": [
+    "covers four fixed L1 neighborhoods of folded characters",
+    "does not classify the complement of those neighborhoods",
+    "does not eliminate the Y center amplitude itself",
+    "does not by itself prove nonlinear continuation or task-level response convergence"
+  ]
+}

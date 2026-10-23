@@ -1,0 +1,93 @@
+{
+  "status": "PASS",
+  "groups": 26,
+  "checks": [
+    "rectangular tangent preserves complete RIGHT Gram",
+    "explicit compensating generator is skew real",
+    "explicit generator realizes the encoder tangent",
+    "same lift includes a singular RIGHT support",
+    "literal original Golden fullStep is orthogonal",
+    "all eight coherent output coordinates match original fullStep",
+    "RIGHT Gram is constant on rotation circle",
+    "base input uses Golden constants and fair normalization",
+    "full pointer law is normalized and strictly positive at centre",
+    "Cost minus pointer Info has a genuine preparation minimum",
+    "unreduced native Hessian is nonzero",
+    "joint preparation Schur vanishes exactly",
+    "stationary section preserves ENTIRE coherent output",
+    "faithful reference128 extension keeps its complete Gram",
+    "real preparation price controls the restored response",
+    "original graph contains all 718 directed edges",
+    "original complete depths are 718 and 7722",
+    "rooted original depths are 24 and 286",
+    "three aggregate Perron polynomial is exact",
+    "full native clock ratio is fixed by exact traces",
+    "rooted clock cancels every A-zone Info derivative",
+    "full clock completion is a strict shape MAXIMUM",
+    "balanced aggregates are the ONLY stationary shapes",
+    "global maximum follows from the original Perron cubic",
+    "original Perron zone masses are strictly positive",
+    "uniform clock Ward cancellation leaves nonzero shape source"
+  ],
+  "native_golden": {
+    "pointer_centre": [
+      "1/6",
+      "1/3",
+      "1/6",
+      "1/3"
+    ],
+    "cost_minus_info_hessian_natural_units": [
+      [
+        "4",
+        "4"
+      ],
+      [
+        "4",
+        "4"
+      ]
+    ],
+    "joint_schur": "0",
+    "paid_preparation_schur": "4*kappa/(kappa + 4)"
+  },
+  "native_clock": {
+    "original_aggregate_Perron": "21.837382401125152982130638764236142713292707555704",
+    "original_zone_Perron_masses": [
+      "0.3115593200583015141286332",
+      "0.3358217919933369698138705",
+      "0.3526188879483615160574963"
+    ],
+    "original_zone_clock_covector": [
+      "143/359",
+      "117/359",
+      "99/359"
+    ],
+    "original_zone_residual": [
+      "0.086769370749497928768",
+      "-0.0099164995142283347164",
+      "-0.076852871235269594052"
+    ],
+    "balanced_log_aggregate_hessian_natural_units": [
+      [
+        "-8/27",
+        "4/27",
+        "4/27"
+      ],
+      [
+        "4/27",
+        "-8/27",
+        "4/27"
+      ],
+      [
+        "4/27",
+        "4/27",
+        "-8/27"
+      ]
+    ]
+  },
+  "scope": {
+    "physical_full_price_selected": false,
+    "all_LEFT_prep_tangents_physically_admitted": false,
+    "original_full128_Kraus_replayed": false,
+    "GR_closed": false
+  }
+}

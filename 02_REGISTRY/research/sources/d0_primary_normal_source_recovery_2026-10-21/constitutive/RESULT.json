@@ -1,0 +1,90 @@
+{
+  "status": "PASS_SAME_CQ_UNIVERSAL_MATERIAL_COMPOSITION",
+  "input_ref": "dfc0275eea67ebc21ffe539de9b6ea96713863a5",
+  "consumed_owner": {
+    "path": "02_REGISTRY/research/sources/d0_same_execution_spatial_source_2026-10-21/weights/check_same_execution_spatial_weights.py",
+    "git_blob": "7ae37d9c04ea73f9aa0d11e6b6fb290abc9881c2",
+    "bounded_checks_passed": 23
+  },
+  "exact": {
+    "common_gravity_coefficient": "M*tau*a",
+    "same_master_function": "K_z(Y)=M*rho_z*K(tau*Y/rho_z)",
+    "all_order_material_coefficients": "M*tau**n*rho_z**(1-n)*K^(n)(0)",
+    "auxiliary_determinant": "-1",
+    "auxiliary_inverse_without_Fxx_inverse": true,
+    "second_source": "F_yy+2*(b/a)*F_xy+(b/a)**2*F_xx",
+    "readout_independent_radial_curve": true,
+    "uniform_material_chart_required": "sup_z |tau*Y_z/rho_z| < delta",
+    "same_CQ_normal_recovery_bound": "h*sup||r_h||_inf/(4*|gamma1*a_J,h|)",
+    "null_first_source_not_Hessian_equality": true,
+    "independent_baseline_source_retained": true
+  },
+  "numerical": {
+    "native": {
+      "alpha": "0.6650160996100325300743947661503094647541",
+      "beta": "0.6822014368492663329693306130526506251186",
+      "r0": "0.000001851239578488203076284395054983403661717",
+      "a": "-0.0000002385429935544693888044057238905798784596",
+      "b": "0.000005585819764883516372783428543570335416346",
+      "lam": "-23.41640675188407497289558206489525274426",
+      "K2": "0.0005319517369718921844129302583277463850585",
+      "gain": "-12.44429268131866571406469648387671756745"
+    },
+    "K2_over_b": "95.23252796592609262239683261448742542827",
+    "stationary_section_checks": [
+      {
+        "Y": "-0.002",
+        "coframe_scale_squared": "0.840039327112541887778685",
+        "K": "-1.01597224683010683540232e-8"
+      },
+      {
+        "Y": "-0.0004",
+        "coframe_scale_squared": "0.966811953983255806681804",
+        "K": "-2.19221887995160924124137e-9"
+      },
+      {
+        "Y": "-0.0001",
+        "coframe_scale_squared": "0.991640098591875510278901",
+        "K": "-5.55929302041888819956331e-10"
+      },
+      {
+        "Y": "0",
+        "coframe_scale_squared": "1.0",
+        "K": "0.0"
+      },
+      {
+        "Y": "0.0001",
+        "coframe_scale_squared": "1.00840312733186531665043",
+        "K": "5.61248886092699473782045e-10"
+      },
+      {
+        "Y": "0.0004",
+        "coframe_scale_squared": "1.03387992358446263737722",
+        "K": "2.27734823307248155383522e-9"
+      },
+      {
+        "Y": "0.002",
+        "coframe_scale_squared": "1.17742770465803563273367",
+        "K": "1.22982796781360643849637e-8"
+      }
+    ],
+    "max_section_residual": "2.3235866e-61",
+    "max_unequal_site_master_discrepancy": "3.8986914e-66",
+    "second_derivative_check_abs_error": "6.667983e-25",
+    "false_offshell_rewrite_discrepancy": "4.21744827393526374058868e-10"
+  },
+  "scope": {
+    "complete_N1_CQ_price_consumed": true,
+    "original_local_density_homogeneity_consumed": true,
+    "full_stationary_normal_form_theorem_consumed": true,
+    "same_null_metric_and_finite_lambda_preserved": true,
+    "additional_nonlinear_matter_not_dropped": true,
+    "new_physical_action": false,
+    "physical_moving_query_admission_proved": false,
+    "compulsory_Book_valuation_proved": false,
+    "independent_upstream_stationarity_proved": false,
+    "generic_GR_refinement_proved": false,
+    "new_independent_review_or_Lean_claim": false,
+    "GR_closed": false
+  }
+}

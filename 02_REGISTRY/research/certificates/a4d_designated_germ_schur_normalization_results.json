@@ -1,0 +1,59 @@
+{
+  "schema": "a4d-designated-germ-schur-normalization-v1",
+  "inputs": [
+    "a4d_y_curved_normaljet_compatibility_results.json",
+    "a4d_schur_einstein_direct_identification_check.py"
+  ],
+  "normal_hessian_curvature": "normalized -Y tensor Y at z=1",
+  "coordinate_order": [
+    "q00",
+    "q01",
+    "q02",
+    "q03",
+    "q11",
+    "q12",
+    "q13",
+    "q22",
+    "q23",
+    "q33"
+  ],
+  "standard_linearized_einstein_on_pinned_hessian": [
+    "3",
+    "0",
+    "0",
+    "0",
+    "-1",
+    "-2",
+    "-2",
+    "-1",
+    "-2",
+    "-1"
+  ],
+  "flat_schur_on_pinned_hessian": [
+    "-3/2",
+    "0",
+    "0",
+    "0",
+    "1/2",
+    "1",
+    "1",
+    "1/2",
+    "1",
+    "1/2"
+  ],
+  "phase_common_metric_response": [
+    "3/2",
+    "0",
+    "0",
+    "0",
+    "-1/2",
+    "-1",
+    "-1",
+    "-1/2",
+    "-1",
+    "-1/2"
+  ],
+  "identity_on_this_input": "E_Q = G^(1)/2 = -K_Schur[J]",
+  "hostile_claim": "E_Q = G^(1) = -2*K_Schur[J] fails by a factor of two",
+  "scope": "one exact normal-Hessian input and flat linear symbols; no nonlinear finite-L operator or joint selector"
+}

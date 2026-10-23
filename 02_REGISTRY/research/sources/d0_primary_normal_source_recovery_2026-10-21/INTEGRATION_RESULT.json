@@ -1,0 +1,37 @@
+{
+  "status": "PASS_SOURCE_GAIN_TO_PRIMARY_RECOVERY",
+  "input_ref": "4920a97750a85a0cf631057ba3cf0d5b65ed9013",
+  "prior_checker_git_blob": "92ce023873ddb780439dd54dd47415c740841113",
+  "terminal_identity_owner": {
+    "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/MINIMAL_GOLDEN_COMPLETE_SOURCE.md",
+    "git_blob": "bce112de77a694809e0a9a7fa769731296148ca2",
+    "status": "CONSUMED_CONDITIONAL_ORIGINAL_PROTOCOL"
+  },
+  "exact": {
+    "complete_work_born_normalization": true,
+    "golden_reporter_jet": "8*p^(9/2)",
+    "pointer_to_coherent_gain": "4+log_phi(4)",
+    "gamma_h": "Q0*R0/(2*N_h)",
+    "matter_gravity_ratio_preserved": true,
+    "metric_bound": "h*||r_h||_inf/(4*|a_J,h|*gain_floor)",
+    "zero_gain_rejected": true,
+    "moving_gain_and_readout_terms_retained": true
+  },
+  "numerical": {
+    "pointer_to_coherent_gain": 6.880840180825113,
+    "N_h_times_coherent_gain": 0.4587909116461719,
+    "N_h_times_pointer_gain": 3.1568669394523643,
+    "diagnostic_sites": 49,
+    "same_normalized_equation_difference": 2.168404344971009e-19,
+    "same_raw_inverse_gain_difference": 2.168404344971009e-19,
+    "dimension_doubling_amplification": 2.0
+  },
+  "scope": {
+    "new_action": false,
+    "physical_price_selection_proved": false,
+    "actual_full_Info_work_remainder_computed": false,
+    "all_row_compatibility_proved_for_remainder": false,
+    "prospective_minimum_repaired": false,
+    "GR_closed": false
+  }
+}

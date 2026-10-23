@@ -1,0 +1,79 @@
+{
+  "status": "PASS",
+  "kind": "new reconstructed artifact integration validation",
+  "utc": "2026-10-20T22:11:20.097885+00:00",
+  "math_replay": [
+    {
+      "entrypoint": "all_flag/check_reconstructed_allflag.py",
+      "status": "PASS_RECONSTRUCTED_ORIGINAL_FULL_FLAG",
+      "checker_sha256": "8f9e86c1dba1bec488131df7837d166b22b486793759616fbf67270b3d612079",
+      "elapsed_seconds": 2.096017667
+    },
+    {
+      "entrypoint": "normal_form/check_nonvacuum_normal_form.py",
+      "status": "PASS",
+      "checker_sha256": "dfb40e185a203a1d815415fc91d2c75d41ad05ad754e1cfa166553481202f7aa",
+      "elapsed_seconds": 1.384176
+    },
+    {
+      "entrypoint": "oriented/check_oriented_complete_price.py",
+      "status": "PASS_NEW_ORIENTED_RECONSTRUCTION",
+      "checker_sha256": "fe6b278f81ccf5cc24be1dc7815d333ed2cc01c4325b8749a2db1e3370fc9d4a",
+      "elapsed_seconds": 0.6236290000000002
+    }
+  ],
+  "replay_receipt_sha256": "d25f7d93bc70e841a362483cb91328e7f7020b92b4cde7e8bef6bbf4b15a744f",
+  "new_local_links_checked": 27,
+  "integrity": {
+    "artifacts": 32,
+    "source_pin_checks": 29,
+    "manifest_sha256": "25207dc95bd1689344f280152d02354d6fff6dd27ada063ed6b54c1dc298d119",
+    "originals": 3
+  },
+  "independent_reviews": [
+    {
+      "file": "reviews/REVIEW_ALL_FLAG.md",
+      "sha256": "94b7cbfac77b98cb04aa9d7117f3483d56b09dc369f4f9a6d3bb0549755ef6f2",
+      "status": "ACCEPT_AT_STATED_HYPOTHESES"
+    },
+    {
+      "file": "reviews/REVIEW_NONVACUUM_NORMAL_FORM.md",
+      "sha256": "29e6b74de91075605dbcab3bbbb3b2bc3a68624bb77a84d1d1644d02300ecd8d",
+      "status": "ACCEPT_AT_STATED_HYPOTHESES"
+    },
+    {
+      "file": "reviews/REVIEW_ORIENTED.md",
+      "sha256": "bc701de788f86ee032341d903b20f969fd559c37ffb1c095cf92b7004d498a01",
+      "status": "ACCEPT_AT_STATED_HYPOTHESES"
+    },
+    {
+      "file": "reviews/REVIEW_INTEGRATION.md",
+      "sha256": "45f6a94ffb079c78b2ceab16fc2fe51c98f2c15595ecfea99a4e8f15a4fc415e",
+      "status": "ACCEPT_AT_STATED_HYPOTHESES"
+    }
+  ],
+  "structural_checks": [
+    {
+      "command": "python3 tools/validate_repo.py",
+      "result": "PASS warnings=0"
+    },
+    {
+      "command": "python3 tools/validate_work.py",
+      "result": "PASS"
+    },
+    {
+      "command": "python3 tools/validate_agent_protocol.py",
+      "result": "PASS"
+    },
+    {
+      "command": "python3 tools/gr_assembly.py check",
+      "result": "valid=true; scientific_promotion=false"
+    },
+    {
+      "command": "python3 tools/render_work_status.py --check",
+      "result": "PASS stale=0"
+    }
+  ],
+  "bootstrap_note": "The first packaging preflight checked generated-file links before MANIFEST/REPLAY_RESULT existed. The order was corrected: create manifest, run checks, then validate links. No scientific premise, fixture or expected value changed.",
+  "scope": "New narrow reconstruction only; unchanged historical scientific suites not replayed; no Lean or physical GR acceptance."
+}

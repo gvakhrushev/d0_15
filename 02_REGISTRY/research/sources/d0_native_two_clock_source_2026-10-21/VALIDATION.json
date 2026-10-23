@@ -1,0 +1,77 @@
+{
+  "check_count": 644,
+  "environment": {
+    "mpmath": "1.3.0",
+    "numpy": "2.3.5",
+    "python": "3.13.5",
+    "scipy": "1.17.0",
+    "sympy": "1.14.0"
+  },
+  "execution_note": "Current-code normal, optimized, and all four mutation commands were completed individually in bounded calls. An earlier monolithic validation attempt timed out; no pass is claimed for that interrupted attempt. validate_packet.py supplies the same read-only checks as a single replay.",
+  "mutations": [
+    {
+      "decisive_check": "paid source includes mandatory actual surplus-cost derivative",
+      "mutation": "omit_port_source",
+      "rejected": true
+    },
+    {
+      "decisive_check": "mixing and physical refinement cannot be interchanged",
+      "mutation": "replace_by_equilibrium",
+      "rejected": true
+    },
+    {
+      "decisive_check": "retained-reference information cut keeps its true field source",
+      "mutation": "freeze_information_cut",
+      "rejected": true
+    },
+    {
+      "decisive_check": "old h^-2 physical clock cannot replace h^-4",
+      "mutation": "short_clock",
+      "rejected": true
+    }
+  ],
+  "normal_and_optimized_byte_identical": true,
+  "packaging_only_change": {
+    "AST_identical": true,
+    "after_sha256": "c08832933f9860f30d221b76b062d12ac151f527b934060fac47977a35c2d05f",
+    "before_sha256": "96d8288e4717a487c2de91fff09d284e0afce31b410fe59e849be184a8dc8064",
+    "change": "removed one extra blank line at EOF",
+    "path": "spectral_price.py",
+    "scientific_expected_stdout_unchanged": true
+  },
+  "read_only_expected_outputs": true,
+  "replays": [
+    {
+      "checks": 644,
+      "mode": "normal",
+      "status": "PASS",
+      "stdout_sha256": "ee5e0fd45374e43d6685d6749960498531c2dd038117aad46564adee257f041a"
+    },
+    {
+      "checks": 644,
+      "mode": "optimized",
+      "status": "PASS",
+      "stdout_sha256": "ee5e0fd45374e43d6685d6749960498531c2dd038117aad46564adee257f041a"
+    }
+  ],
+  "scope": {
+    "GR_closed": false,
+    "all42_stationary_root": false,
+    "independent_review": false,
+    "new_Lean": false,
+    "numerical_roots_interval_certified": false,
+    "physical_Book_selection": false,
+    "repository_wide_CI": false
+  },
+  "sha256": {
+    "PROOF.md": "2edf2c32b6b59dd50348fea3b1daec2421e7f51c879012c762a5db93da4aa94c",
+    "README.md": "9ea658a94aada2440cecdb7cdd9dbbff3947db6543ede1619e59bba204547b5e",
+    "RESULT.json": "ee5e0fd45374e43d6685d6749960498531c2dd038117aad46564adee257f041a",
+    "SOURCE_PINS.json": "dde19be7d2ed0b5452cc0b4873ccd3e251d5b02f389788fb6babe70414677b05",
+    "check_two_clocks.py": "c14db932cbd593ce12c4e55a3dc46ac28b95b6a603a0ec4c336de4b91ba3801d",
+    "native_axial.py": "40c86b5c41e6f9b18cb3fb89552d10501c567b7db61143cd4ba11e428e41527f",
+    "spectral_price.py": "c08832933f9860f30d221b76b062d12ac151f527b934060fac47977a35c2d05f",
+    "validate_packet.py": "5a99d0a6479eb244549550669b4165992bd158681eff467ac9b7f8b49633aef4"
+  },
+  "status": "PASS"
+}

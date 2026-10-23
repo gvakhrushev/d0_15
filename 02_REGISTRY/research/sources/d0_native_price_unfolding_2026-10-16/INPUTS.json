@@ -1,0 +1,29 @@
+{
+  "schema": "d0-native-price-unfolding-inputs/1",
+  "repository": "gvakhrushev/d0_15",
+  "source_ref": "4cf20e47da327666302370ee42579b29048d2ca0",
+  "owners": [
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_COMPLETE_FIELD_SOURCE_AND_TRANSPORT.md",
+      "sections": "0.1,0.3",
+      "use": "same H+J_program+R and already-proved full primitive/source intertwining"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_record_generated_heat_v8_2026-10-14/RESULT.md",
+      "use": "actual full trace/reference multiplicities and fixed price; old root not replayed"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_FOUNDATION_FORCING_NOT_CATALOGUE_SEARCH.md",
+      "use": "no catalogue search; unique mathematical auxiliary reading is not physical action selection"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_JOINT_ADJOINT_SOURCE.md",
+      "use": "actual stored-adjoint constraints; no new ambient field freedom"
+    }
+  ],
+  "prior_suites_replayed": false,
+  "physical_GR_closed": false,
+  "execution_pr": 334,
+  "historical_pr": 310,
+  "publication_does_not_reopen_historical_pr": true
+}

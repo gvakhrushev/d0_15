@@ -1,0 +1,138 @@
+{
+  "schema": "d0-exact-research-result/v1",
+  "status": "PASS_LOCAL_FULL_SPATIAL_DEGREE4_40_EULER_JET",
+  "scope": "local unwrapped polynomial perturbative jet on one cubic affine section",
+  "A": [
+    1,
+    0
+  ],
+  "B": [
+    0,
+    1
+  ],
+  "quartic_amplitude_sectors": [
+    [
+      4,
+      0
+    ],
+    [
+      3,
+      1
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      0,
+      4
+    ]
+  ],
+  "mixed_sector_solved_with_all_lower_and_higher_spatial_modes_released": [
+    2,
+    2
+  ],
+  "cubic_kernel_parameters_fixed_to_zero_in_one_valid_affine_section": 172,
+  "prior_four_sector_solution_sha256": "afc4e6a80611d23bdc1c0c165b13b2525f2e3affbe3f98777626321d0eacbddc",
+  "quartic_link_spatial_degree_at_most": 6,
+  "quartic_coframe_spatial_degree_at_most": 5,
+  "quartic_link_unknowns_mixed_sector": 672,
+  "quartic_coframe_unknowns_mixed_sector": 336,
+  "spatial_output_degree": 5,
+  "response_shape": [
+    840,
+    1008
+  ],
+  "exact_solver_message": null,
+  "mixed_sector_solved_exactly": true,
+  "direct_substitution_all_40_rows_all_spatial_degrees_through_amp_degree4": true,
+  "direct_euler_checks": {
+    "0,0": {
+      "exactly_zero_all_spatial_degrees": true,
+      "failure_row_count": 0,
+      "failures": []
+    },
+    "1,0": {
+      "exactly_zero_all_spatial_degrees": true,
+      "failure_row_count": 0,
+      "failures": []
+    },
+    "0,1": {
+      "exactly_zero_all_spatial_degrees": true,
+      "failure_row_count": 0,
+      "failures": []
+    },
+    "2,0": {
+      "exactly_zero_all_spatial_degrees": true,
+      "failure_row_count": 0,
+      "failures": []
+    },
+    "1,1": {
+      "exactly_zero_all_spatial_degrees": true,
+      "failure_row_count": 0,
+      "failures": []
+    },
+    "0,2": {
+      "exactly_zero_all_spatial_degrees": true,
+      "failure_row_count": 0,
+      "failures": []
+    },
+    "3,0": {
+      "exactly_zero_all_spatial_degrees": true,
+      "failure_row_count": 0,
+      "failures": []
+    },
+    "2,1": {
+      "exactly_zero_all_spatial_degrees": true,
+      "failure_row_count": 0,
+      "failures": []
+    },
+    "1,2": {
+      "exactly_zero_all_spatial_degrees": true,
+      "failure_row_count": 0,
+      "failures": []
+    },
+    "0,3": {
+      "exactly_zero_all_spatial_degrees": true,
+      "failure_row_count": 0,
+      "failures": []
+    },
+    "4,0": {
+      "exactly_zero_all_spatial_degrees": true,
+      "failure_row_count": 0,
+      "failures": []
+    },
+    "3,1": {
+      "exactly_zero_all_spatial_degrees": true,
+      "failure_row_count": 0,
+      "failures": []
+    },
+    "2,2": {
+      "exactly_zero_all_spatial_degrees": true,
+      "failure_row_count": 0,
+      "failures": []
+    },
+    "1,3": {
+      "exactly_zero_all_spatial_degrees": true,
+      "failure_row_count": 0,
+      "failures": []
+    },
+    "0,4": {
+      "exactly_zero_all_spatial_degrees": true,
+      "failure_row_count": 0,
+      "failures": []
+    }
+  },
+  "proper_lorentz_links_through_amplitude_degree_four": true,
+  "solution_file": "quartic_full_spatial_jet_solution.json",
+  "solution_sha256": "443c6fe34ae9fa8251838f28cebd5705f55ab6add51e1bc38b3b54f3702ef40f",
+  "periodic_carrier_root": false,
+  "uniform_refinement": false,
+  "native_price_selection": false,
+  "physical_gr_closure": false,
+  "GR_closed": false
+}

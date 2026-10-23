@@ -1,0 +1,57 @@
+{
+  "status": "RECONSTRUCTION_NOT_HISTORICAL_RECOVERY",
+  "repository_head": "8ba0bd929499e639b0fe4640ffa448631f3b024b",
+  "sources": [
+    {
+      "path": "02_REGISTRY/research/A4D_OPPOSITE_NULL_LIE_COMPLETE_JULIA_ORDER_MEMORY_BOOK_SOURCE_2026_10_19.md",
+      "git_blob": "e7e8c7837ca31671d2ed9cf0ab793b5fdb1ed6c3",
+      "sha256": "6b8c3b8c17093256d5274cbaf819c7fb29bf0faf443419b8b8580c074dbd3127"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_POSITIVE_JULIA_FULL_RECORD_C2_MARGIN_2026_10_19.md",
+      "git_blob": "11832616761a06d04a101e3eaa39af3805d60454",
+      "sha256": "1e3ef5b3335e6232a908bc58a9ef566a5452332115f7effd94a69fca6f244a38"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_opposite_null_julia_order_memory_2026-10-19/check_full_tester_positive_margin.py",
+      "git_blob": "1e4fb686119bf0357f332be6d7682c77a5fef7ce",
+      "sha256": "5239b9677ff0839d781526991a93f41fe3f0d82c1d06df00f69e81e45b0a7ffb"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/ORIGINAL_JULIA_FACE_ODDS_REFINEMENT_COCYCLE.md",
+      "git_blob": "35c7a082d8c8f9c3b34934680c7271d90a44e014",
+      "sha256": "040d1f052bb1ce27f69d1e0108ef4d7e0c68456be225339ba39239bed30984b1"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/check_original_julia_plaquette_odds_refinement.py",
+      "git_blob": "bc907bf485fef4968438e8cc36c679832f4af5da",
+      "sha256": "2028d4b06e6d92ef9b59f4573e479837a64063755b4ca72eacf210eb68f3570b"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_GOLDEN_POSITIVE_EXACT_LORENTZ_AMPLITUDE_DECODER_AND_MOVING_BOOK_SOURCE_2026_10_19.md",
+      "git_blob": "71965ea0dcf6fd530c81c0c655e02adc4a5e3318",
+      "sha256": "7e2bcc4b3af9929885b49f1cb5c936bb7604e098208e73d4ec6220baf217748d"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_GOLDEN_COHERENT_BELL64_EXACT_P18_PROGRAMME_AND_BOOK_WORK_2026_10_20.md",
+      "git_blob": "2c9db85f5b3ec66df10d888ab13bc088d2d949cf",
+      "sha256": "27fb3cfcd7e91c3456f7fdd4c4668b94fa296309bcdfefcdcddfa815300415d0"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE17_OPTIMAL_STOPPED_ORIENTATION_AND_INFO_2026_10_21.md",
+      "git_blob": "a1dc780b660fad5d144c6af6c4bc8a972e89b6cb",
+      "sha256": "b5a6e70e85b12cff4e8ac3baef7e0d47788b33b7a383d7c73bb33bbd76b36105"
+    },
+    {
+      "path": "02_REGISTRY/research/D0_GR_PRIMARY_POSITIVE_CASE.md",
+      "git_blob": "12b14ee596cf5e11a41eaa0752c091154263ee78",
+      "sha256": "153f0128bd1e592a58c506afff936ecc675e0faf58a1487c84e58dab17447a24"
+    }
+  ],
+  "supplied_text": {
+    "path": "/Users/grigorijvahrusev/.codex/attachments/890e5792-cb73-466a-85c7-7e6709f1e3cd/Вставленный текст.txt",
+    "sha256": "7a4da058ac9f6bd2096d1cba67ed18ec6b487fd27ac535c090d99aefb6cafdaf"
+  },
+  "unavailable_historical_object": "3bf6ca63759f0aa58441152e0e98962fa662920a",
+  "historical_counts_reused": false
+}

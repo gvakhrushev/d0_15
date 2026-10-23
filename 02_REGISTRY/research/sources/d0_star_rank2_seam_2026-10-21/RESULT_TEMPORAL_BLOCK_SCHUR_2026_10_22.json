@@ -1,0 +1,58 @@
+{
+  "status": "PASS_EXACT_TIME_LOCALITY_AND_BOUNDED_BLOCK_SCHUR_DIAGNOSTIC",
+  "pinned_original_source_blobs": {
+    "02_REGISTRY/research/sources/d0_star_rank2_seam_2026-10-21/check_full42_n1_single_internal.py": "da83e40379867f71b598fecd8430444ea027a4da",
+    "02_REGISTRY/research/sources/d0_star_rank2_seam_2026-10-21/full_n1_euler_analytic.py": "7ea28c981826c96b01bbdda67a92010dc7221095",
+    "02_REGISTRY/research/sources/d0_star_rank2_seam_2026-10-21/check_star_rank2_seam.py": "a57f0e3e845290923c2ac88d39ba5c08af4f6fd6"
+  },
+  "proof": "Each original N1 CQ cell uses only node j,j+1, thus interior Euler at j uses only j-1,j,j+1.",
+  "rows": [
+    {
+      "intervals": 4,
+      "full_original_Euler": 126,
+      "omitted_exact_Lorentz_gauge": 12,
+      "gauge_source_dim": 114,
+      "time_block_sizes": [
+        36,
+        36,
+        42
+      ],
+      "off_tridiagonal_source_Jacobian_max": 0.0,
+      "all_block_schur_condition_numbers": [
+        19700.435794891135,
+        589370.3389289788,
+        428954.75204005267
+      ],
+      "numerical_inverse_block_vs_dense_inf_error": 1.8712853488977998e-10,
+      "seed_jacobian_min_singular": 0.000592128445400558,
+      "genuine_Schur_root_proved": false,
+      "actual_G0_Book_compulsory_selected": false,
+      "uniform_h_inverse_proved": false
+    },
+    {
+      "intervals": 5,
+      "full_original_Euler": 168,
+      "omitted_exact_Lorentz_gauge": 18,
+      "gauge_source_dim": 150,
+      "time_block_sizes": [
+        36,
+        36,
+        36,
+        42
+      ],
+      "off_tridiagonal_source_Jacobian_max": 0.0,
+      "all_block_schur_condition_numbers": [
+        29295.249814598854,
+        1344606.9382521266,
+        790379.6909531961,
+        659186.4624755225
+      ],
+      "numerical_inverse_block_vs_dense_inf_error": 2.2669155441690236e-10,
+      "seed_jacobian_min_singular": 0.000308903673059705,
+      "genuine_Schur_root_proved": false,
+      "actual_G0_Book_compulsory_selected": false,
+      "uniform_h_inverse_proved": false
+    }
+  ],
+  "GR_closed": false
+}

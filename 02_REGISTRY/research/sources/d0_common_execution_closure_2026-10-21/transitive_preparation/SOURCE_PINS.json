@@ -1,0 +1,57 @@
+{
+  "native_arithmetic": "02_REGISTRY/research/sources/d0_causal_native_weighted_synthesis_2026-10-21/native_source/check_native_polynomial_first_jet.py",
+  "note": "Companion processor normal-source interface is conditional in this proof; its final bytes are bound by the separate independent processor review, not silently treated as a frozen repo input.",
+  "source_ref": "b1870ff3ecedd02e09388bc8b6fd8df4da54b990",
+  "sources": [
+    {
+      "bytes": 35006,
+      "path": "02_REGISTRY/research/sources/d0_causal_native_weighted_synthesis_2026-10-21/native_source/NATIVE_POLYNOMIAL_FIRST_JET.md",
+      "sha256": "4d098d1e6ad8cb7daf477b498f808b7b962d6432f3da78ae573e321dbbcb915d"
+    },
+    {
+      "bytes": 17887,
+      "path": "02_REGISTRY/research/sources/d0_causal_native_weighted_synthesis_2026-10-21/native_source/check_native_polynomial_first_jet.py",
+      "sha256": "89219a3ca7f62413d7961ba945b437cfd71f1488b35afb3f482bd3ee5dd9f6be"
+    },
+    {
+      "bytes": 18782,
+      "path": "02_REGISTRY/research/sources/d0_same_execution_spatial_source_2026-10-21/weights/ONE_STAGE_COMPLETE_SPATIAL_WEIGHT_THEOREM.md",
+      "sha256": "960f2d1edc4f151607f9c4ecc76e1522d5dee08922319a3700c0cc3fc96458d1"
+    },
+    {
+      "bytes": 24033,
+      "path": "02_REGISTRY/research/sources/d0_primary_native_domain_source_2026-10-20/check_primary_domain_source.py",
+      "sha256": "c67285c7469db49ff61f3e52597d0bcc6aad991ec1f7af025d6daeb065a43edf"
+    },
+    {
+      "bytes": 15594,
+      "path": "02_REGISTRY/research/sources/d0_primary_native_domain_source_2026-10-20/RESULT.md",
+      "sha256": "290772fb869cfa73ed0cc419d3182048d80ea9b02312be0b9d56ad558f5c47be"
+    },
+    {
+      "bytes": 16828,
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/GOLDEN_EXACT_DETECTOR.md",
+      "sha256": "d33c9c2cb2322e381723f481eb1fcf58058fd05ad88eda92c5597c026d02eb77"
+    },
+    {
+      "bytes": 23131,
+      "path": "02_REGISTRY/research/sources/d0_joint_preparation_compiler_clock_2026-10-21/balanced_preparation/BALANCED_NATIVE_PREPARATION.md",
+      "sha256": "7b9d3afe684f34695a4dfd6d89a8db457ba9cf47002733c65e9a2dc5c5751d68"
+    },
+    {
+      "bytes": 11255,
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/PRIMARY_CAR_PREPARATION_SOURCE.md",
+      "sha256": "97f85701e51dcb4b920f1e317cc21efa381d79a32533246ee1a89b61ca85978d"
+    },
+    {
+      "bytes": 17207,
+      "path": "02_REGISTRY/research/sources/d0_physical_cap1_execution_composition_2026-10-21/independent_input/PROOF.md",
+      "sha256": "47c4b21bcd4a5a47e2555578967b97a708ee50f7c3bb051211cce0cd79450e44"
+    },
+    {
+      "bytes": 27255,
+      "path": "02_REGISTRY/research/D0_GR_PRIMARY_POSITIVE_CASE.md",
+      "sha256": "59ef4e5926246fe4c4b12d48d39c4ad9668e155a4fba67131bee06dd829342c4"
+    }
+  ]
+}

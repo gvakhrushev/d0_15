@@ -1,0 +1,688 @@
+{
+  "schema": "d0-native-opposite-shell-transfer-interval/1",
+  "status": "VALIDATED_OPPOSITE_SIGN_SHELL_TRANSFER_RESTRICTION",
+  "momenta": 4096,
+  "exterior_dimension": 16,
+  "reference_dimension": 128,
+  "sector": {
+    "q": [
+      1,
+      7,
+      0,
+      0
+    ],
+    "restriction_dimension": 8,
+    "validated_restriction_inertia": {
+      "positive": 6,
+      "negative": 2,
+      "zero": 0
+    },
+    "exact_decimal_preconditioner": [
+      [
+        [
+          "0.025559232186647844",
+          "0"
+        ],
+        [
+          "-2.5524055548323621",
+          "0"
+        ],
+        [
+          "-4.2837355284786778",
+          "0"
+        ],
+        [
+          "0.033688831810914928",
+          "0"
+        ],
+        [
+          "0.19639982148738144",
+          "0"
+        ],
+        [
+          "0.18654684149122841",
+          "0"
+        ],
+        [
+          "0.011158043048868771",
+          "0"
+        ],
+        [
+          "-0.014302910958550635",
+          "0"
+        ]
+      ],
+      [
+        [
+          "-0.025559232186716976",
+          "-8.2442197672531202e-17"
+        ],
+        [
+          "-2.5524055548326201",
+          "3.4650226955145635e-16"
+        ],
+        [
+          "-4.2837355284784131",
+          "-2.9392161289996442e-16"
+        ],
+        [
+          "-0.033688831810870984",
+          "4.0402941909828403e-15"
+        ],
+        [
+          "-0.19639982148739316",
+          "1.0246554396345064e-16"
+        ],
+        [
+          "-0.18654684149120349",
+          "-1.1679613799401534e-16"
+        ],
+        [
+          "-0.011158043048854429",
+          "4.2525928635801109e-17"
+        ],
+        [
+          "0.014302910958560535",
+          "1.4348100997822716e-17"
+        ]
+      ],
+      [
+        [
+          "-0.31308335863785536",
+          "3.157630251338859e-17"
+        ],
+        [
+          "6.4203679711767475e-13",
+          "5.6155664787620758e-16"
+        ],
+        [
+          "-7.6926711859592445e-14",
+          "-1.4540178597660297e-15"
+        ],
+        [
+          "-0.034507581429133391",
+          "2.7400907978828154e-15"
+        ],
+        [
+          "0.038286338424627177",
+          "-7.5119401292868437e-17"
+        ],
+        [
+          "0.0308013371997219",
+          "-2.3026160754877917e-17"
+        ],
+        [
+          "-0.09428933093819418",
+          "4.3329897932668202e-16"
+        ],
+        [
+          "0.1571315655374263",
+          "3.0906668064879125e-17"
+        ]
+      ],
+      [
+        [
+          "-0.010812745020409509",
+          "-1.6912452570040639e-17"
+        ],
+        [
+          "7.6661506615647982e-14",
+          "-4.1292260578250357e-15"
+        ],
+        [
+          "4.4072347633005301e-13",
+          "-9.0308615965723835e-15"
+        ],
+        [
+          "1.1584357919624331",
+          "-8.8417417770072001e-14"
+        ],
+        [
+          "-0.0045071832007767838",
+          "3.0074894816433472e-16"
+        ],
+        [
+          "-0.009932540727754095",
+          "-6.6077578755957118e-17"
+        ],
+        [
+          "0.17147785153836734",
+          "-6.7716179795096497e-16"
+        ],
+        [
+          "0.088262216026236268",
+          "5.8372952558807656e-17"
+        ]
+      ],
+      [
+        [
+          "-0.025559232186640236",
+          "-7.8296280209706187e-17"
+        ],
+        [
+          "2.5524055548324296",
+          "-1.5818442255063472e-13"
+        ],
+        [
+          "-4.2837355284785641",
+          "2.6294437713171026e-13"
+        ],
+        [
+          "-0.033688831810899871",
+          "3.1814509383959889e-15"
+        ],
+        [
+          "0.19639982148735582",
+          "3.5689877824432174e-15"
+        ],
+        [
+          "-0.18654684149125317",
+          "-3.5179152269379664e-15"
+        ],
+        [
+          "0.011158043048870617",
+          "3.9742657334444346e-17"
+        ],
+        [
+          "-0.014302910958550883",
+          "-1.7478339934509997e-17"
+        ]
+      ],
+      [
+        [
+          "0.025559232186724633",
+          "-1.749799875612048e-16"
+        ],
+        [
+          "2.5524055548326801",
+          "-1.5753852334937589e-13"
+        ],
+        [
+          "-4.2837355284783118",
+          "2.6606209941002674e-13"
+        ],
+        [
+          "0.033688831810883675",
+          "-2.4439060221287248e-15"
+        ],
+        [
+          "-0.19639982148736826",
+          "-3.5492385190284341e-15"
+        ],
+        [
+          "0.18654684149122605",
+          "3.4712772337633264e-15"
+        ],
+        [
+          "-0.011158043048856259",
+          "-5.0147532822620937e-17"
+        ],
+        [
+          "0.01430291095856116",
+          "-3.1453786310712073e-17"
+        ]
+      ],
+      [
+        [
+          "0.010812745020412632",
+          "5.7004116869558783e-18"
+        ],
+        [
+          "-8.1452297314396468e-14",
+          "3.1068378048764405e-15"
+        ],
+        [
+          "3.4627423872037178e-13",
+          "8.8462842315042519e-15"
+        ],
+        [
+          "-1.1584357919624337",
+          "8.8391594842197602e-14"
+        ],
+        [
+          "-0.0045071832007750655",
+          "-1.5902271076857217e-16"
+        ],
+        [
+          "0.0099325407277569954",
+          "1.9844122773264261e-17"
+        ],
+        [
+          "0.17147785153836706",
+          "-6.8635906668070932e-16"
+        ],
+        [
+          "0.08826221602623617",
+          "6.9208447355172487e-17"
+        ]
+      ],
+      [
+        [
+          "0.31308335863785536",
+          "-1.9404446526438665e-17"
+        ],
+        [
+          "-6.4623427362637492e-13",
+          "-1.1055134286793448e-15"
+        ],
+        [
+          "1.3649438209399093e-13",
+          "2.2434929409195621e-15"
+        ],
+        [
+          "0.034507581429133703",
+          "-2.6679855352827422e-15"
+        ],
+        [
+          "0.038286338424623131",
+          "6.4425316584668686e-16"
+        ],
+        [
+          "-0.030801337199728964",
+          "-6.0885893375795802e-16"
+        ],
+        [
+          "-0.094289330938195512",
+          "4.4100396811238192e-16"
+        ],
+        [
+          "0.15713156553742541",
+          "2.7609552622742163e-17"
+        ]
+      ]
+    ],
+    "comparison_signs": [
+      -1,
+      -1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "root_box": {
+      "d": [
+        "0.063635191593344535042829697433316630182693569761541",
+        "0.063635191595344535042829697433316630182693569761541"
+      ],
+      "o": [
+        "0.0040167350422317252873844519148251220686807163526359",
+        "0.0040167350442317252873844519148251220686807163526359"
+      ],
+      "center": [
+        "0.063635191594344535042829697433316630182693569761541",
+        "0.0040167350432317252873844519148251220686807163526359"
+      ],
+      "radius": "1e-12"
+    },
+    "Hermitian_operator_distance_from_signature_upper": 9.46751770254899e-05,
+    "residual_row_sum_bounds": [
+      3.3146512345155914e-12,
+      1.3901556589525293e-11,
+      2.643688064009007e-10,
+      2.3797148340046923e-12,
+      4.125434764325294e-12,
+      1.312563477232184e-12,
+      2.219224609017638e-12,
+      4.9403050816260055e-12
+    ],
+    "root_variation_and_conversion_row_sum_bounds": [
+      2.3561617803604545e-07,
+      1.8452792798317462e-06,
+      3.2272780217392973e-06,
+      6.436579628165763e-07,
+      1.614135943112246e-07,
+      1.5017098836793638e-07,
+      1.2687477628677186e-07,
+      1.4073539429151382e-07
+    ],
+    "Gram_roundoff_row_sum_bounds": [
+      6.359529502563983e-06,
+      5.276788957311776e-05,
+      9.14476346349442e-05,
+      1.7512193152993025e-05,
+      4.320904730007402e-06,
+      4.045686394146983e-06,
+      3.4291621568661366e-06,
+      3.7607990591635537e-06
+    ],
+    "total_row_sum_bounds": [
+      6.595148995251263e-06,
+      5.46131827545061e-05,
+      9.46751770254899e-05,
+      1.8155853495524433e-05,
+      4.482322449753391e-06,
+      4.195858695078396e-06,
+      3.5560391523775176e-06,
+      3.901539393760149e-06
+    ],
+    "uniform_J_HS_error_upper": [
+      6.035019975979601e-13,
+      4.6676732108735956e-12,
+      1.337098008666707e-11,
+      2.2749239174697908e-12,
+      6.185962463444818e-13,
+      3.702054120664939e-13,
+      3.0587967749860513e-13,
+      3.945536296844779e-13
+    ],
+    "uniform_D_operator_error_upper": 4.4527413222725954e-10,
+    "maximum_X_HS_error_upper": 6.938339770484547e-07,
+    "phase_root_float_error_upper": 6.835808657661923e-17,
+    "mode_phase_conversion_error_included": true,
+    "floating_operator_assembly_and_Gram_error_included": true,
+    "geometry_scope": {
+      "J_coefficients_root_independent": true,
+      "D_varies_on_entire_owned_root_box": true,
+      "coefficient_float_conversion_included": true,
+      "all16_exterior_components": true,
+      "owned_exterior_order": [
+        0,
+        2,
+        3,
+        1
+      ],
+      "source_pins": {
+        "02_REGISTRY/research/certificates/a4d_native_joint_adjoint_source.py": "71ba142e284974db57d67c91a77ccd08a7e4f9759e8fc8daef7c5938774c0b28",
+        "02_REGISTRY/research/certificates/a4d_native_curved_soldered_heat.py": "bf13f57c902da0005634ae6834c0b4e3ffd2df1aa196a61ebc0ff3dc0351c7da",
+        "03_FORMALIZATION/D0/Geometry/ArchiveAffineExteriorLink.lean": "2ccca18cf8ca66b9e1aa020301ce0d84d6fcd12563e913323482ce139928e5fe",
+        "02_REGISTRY/research/sources/d0_record_generated_heat_v8_2026-10-14/receipt.json": "da44c7393b1164ce4babcab2ea13707958364d273d2c3fa1d86d514a9ac83ae9"
+      }
+    },
+    "scalar_scope": {
+      "status": "rigorous_scalar_weights_only_not_inertia",
+      "interval_precision_decimal_digits": 80,
+      "momenta": 4096,
+      "feature_groups": 119,
+      "unordered_feature_pairs": 469,
+      "exact_equal_feature_directed_edges": 560,
+      "Fock_states_per_mode": 16,
+      "occupied_shell_states": 128,
+      "minimum_distinct_gap_lower": "0.088212835882039123556950963619960615713459718281271535635527570779662",
+      "all_Z_terms_and_signed_ground_retained": true,
+      "q": [
+        1,
+        7,
+        0,
+        0
+      ],
+      "occupied_to_occupied_directed_edges": 2,
+      "new_q_edges_independently_enumerated": true,
+      "common_owner_guards_executed_unchanged": true,
+      "common_owner_sha256": "0d8651dae3b6b7ba2049a1c71ac47895e536f9ccc5f85bf9978c133c75ccfc18"
+    },
+    "rank_T_theorem_is_an_independent_premise": true,
+    "full_unconstrained_19_or_21_field_nonsingularity_claim": false,
+    "shell_density_kernel_S_in_kerTadjoint_removed_as_gauge": false,
+    "inactive_roles": [
+      2,
+      3
+    ],
+    "independently_required_exact_rank_T": 5,
+    "numerical_preconditioner_choice": {
+      "new_algebra_slots": [
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        11
+      ],
+      "new_algebra_numerical_eigenvalues": [
+        -5.027922385420125,
+        -0.03837431590651264,
+        0.013623688593978023,
+        0.3716272599959568,
+        6.358739357450312,
+        7.077458806913779,
+        12.97214207835081,
+        15.202330465992315
+      ],
+      "weighted_J_not_stationary_shortcut": true,
+      "numerical_choice_is_not_the_inertia_proof": true
+    }
+  },
+  "restricted_heat_S4_congruence": {
+    "source_q": [
+      1,
+      7,
+      0,
+      0
+    ],
+    "target_q": [
+      0,
+      1,
+      7,
+      0
+    ],
+    "target_inactive_roles": [
+      0,
+      3
+    ],
+    "role_permutation_P": [
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "internal_orthogonal_R": [
+      [
+        0,
+        0,
+        -1,
+        0
+      ],
+      [
+        -1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "inactive_slot_signed_permutation_T": [
+      [
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "background_identity": "U=F*eta, F=(a-b)I+b11T; P*U=U*(eta*P*eta)",
+    "jet_map": "q'=Pq, k'=Pk, A'=P*A*R^T, W=exterior(R)",
+    "operator_intertwining": "D(Pk)=W*D(k)*W^*; J'=W*J*W^*; X'=W*X*W^*",
+    "scalar_trace_invariance": "lambda(Pk)=lambda(k); full Z, shell128 and Tr16 preserved",
+    "exact_congruence": "H_q=T^* H_(Pq) T; T real signed permutation",
+    "uniform_on_same_root_rectangle": true,
+    "transferred_restriction_inertia": {
+      "positive": 6,
+      "negative": 2,
+      "zero": 0
+    },
+    "full_native_SO3_chart_S4_symmetry_or_physical_gauge_claim": false
+  },
+  "full_Z": {
+    "lower": "49.337030248590270253586393876501843783182534690890239860442857753419",
+    "upper": "49.337030252595054307040223169081959459779230615850446847646280962975",
+    "width_upper": "4.0047840534538292925801156765966959249602069872034232095544018380682E-9"
+  },
+  "signed_ground_resolvent": {
+    "lower": "-0.41916340295625875680504477527198666424079468235852277603496039582843",
+    "upper": "-0.41916340294308480721998768597659038734751032153841352631829694697489",
+    "width_upper": "1.3173949585057089295396276893284360820109249716663448853538235060273E-11"
+  },
+  "two_exact_shell_transfers": [
+    [
+      [
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0
+      ]
+    ],
+    [
+      [
+        7,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        7,
+        0,
+        0
+      ]
+    ]
+  ],
+  "outward_decimal_new_q_pair_payload_sha256": "f5e7db19a22a47b56b93f0ebfe5b0859e20d35d0ea3ba69fe5dfa235549154fe",
+  "source_sha256": {
+    "native_chart_check.py": "1cb2bd82796634b414b76a5396b629c98c3679aee3ce7aa63dfc34647ab84b65",
+    "ordered_operator_check.py": "f2f9903685c2c522d4c850d335dfb9435c932182962402da499ff8a7a10a9418",
+    "full_symbol_diagnostic.py": "6084660c02a1012a4beb619e71e61015dda0d7ebb44207bf6faa7d5281404b25",
+    "nonzero_symbol_algebra.py": "b74c1a10ab6e1051dfb50942abf019cb19aeb890460bc98b919d2e848deecba1",
+    "full_symbol_interval_weights.py": "0d8651dae3b6b7ba2049a1c71ac47895e536f9ccc5f85bf9978c133c75ccfc18",
+    "full_shell_transfer_interval.py": "13632b21ddf9d0363343d319ebe949295b6cf9d46195ffe2a48dcebbfacdfb32",
+    "full_symbol_interval.py": "2bb2f26be6d6484d087a2e2e2591b681c793b5932790e3552c2b9fdc5021c84d",
+    "full_symbol_interval_geometry.py": "7fa48bf73ba7e8c51dbdf0b4a432e2801ae04cf61a018303a3f345680f5284d6",
+    "shell_transfer_all_orbits.py": "d8db3de5b34e4ee4ac7a9efb4676072d18b455dec5a72f0beb6b46b40a99eb1a",
+    "opposite_shell_transfer_interval.py": "56c965ada2d3f86e32c4053caaa3ee207ed304db712f3d5ffca7d39a6f758c53"
+  },
+  "owned_input_pins": {
+    "02_REGISTRY/research/sources/d0_native_field_transport_2026-10-16/stored_rotational_wave.py": "2b12f26d814a57cc99084e904deeac69a8f64a8d9a0eb9ee765e8104ef50bc37",
+    "02_REGISTRY/research/sources/d0_record_generated_heat_v8_2026-10-14/receipt.json": "da44c7393b1164ce4babcab2ea13707958364d273d2c3fa1d86d514a9ac83ae9",
+    "native_chart_check.py": "1cb2bd82796634b414b76a5396b629c98c3679aee3ce7aa63dfc34647ab84b65",
+    "ordered_operator_check.py": "f2f9903685c2c522d4c850d335dfb9435c932182962402da499ff8a7a10a9418",
+    "full_symbol_diagnostic.py": "6084660c02a1012a4beb619e71e61015dda0d7ebb44207bf6faa7d5281404b25",
+    "nonzero_symbol_algebra.py": "b74c1a10ab6e1051dfb50942abf019cb19aeb890460bc98b919d2e848deecba1",
+    "full_symbol_interval_weights.py": "0d8651dae3b6b7ba2049a1c71ac47895e536f9ccc5f85bf9978c133c75ccfc18",
+    "full_shell_transfer_interval.py": "13632b21ddf9d0363343d319ebe949295b6cf9d46195ffe2a48dcebbfacdfb32",
+    "full_symbol_interval.py": "2bb2f26be6d6484d087a2e2e2591b681c793b5932790e3552c2b9fdc5021c84d",
+    "full_symbol_interval_geometry.py": "7fa48bf73ba7e8c51dbdf0b4a432e2801ae04cf61a018303a3f345680f5284d6",
+    "shell_transfer_all_orbits.py": "d8db3de5b34e4ee4ac7a9efb4676072d18b455dec5a72f0beb6b46b40a99eb1a"
+  },
+  "arithmetic_environment": {
+    "python": "3.9.6",
+    "numpy": "2.0.2",
+    "mpmath": "1.3.0",
+    "float": "IEEE_binary64_with_outward_budgets"
+  },
+  "floating_Gram_real_operation_bound_per_entry": 67108864,
+  "complex_Gram_gamma_multiplier": 2,
+  "old_run_root_search_receipt_write_or_existing_file_mutation": false,
+  "all_mode_census_full_joint_kernel_physical_admission_or_GR_claim": false
+}

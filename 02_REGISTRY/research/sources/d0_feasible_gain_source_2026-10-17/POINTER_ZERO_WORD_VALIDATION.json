@@ -1,0 +1,29 @@
+{
+  "checked_at_utc": "2026-10-18T16:01:25Z",
+  "checker": "check_pointer_zero_word_language.py",
+  "checker_sha256": "94ce8bc6a98cbe34ba182308bffe682fcdc318e371884955f2098249ae802d8c",
+  "exact_support_comparisons": 699040,
+  "old_scientific_suites_run": false,
+  "ordinary_optimized_stdout_byte_identical": true,
+  "physical_gr_or_native_admission_claimed": false,
+  "remaining": "First-jet weights and full pointer h^2 log source, count correction, matched-boundary/collision strips, raw normalizer and native physical admission.",
+  "result_sha256": "4e218ea318529b193edd670556504326d51d0942b72630230e3c367ba523a4ea",
+  "runs": [
+    {
+      "command": "python3 check_pointer_zero_word_language.py",
+      "exit_code": 0,
+      "mode": "normal",
+      "stdout_sha256": "4e218ea318529b193edd670556504326d51d0942b72630230e3c367ba523a4ea"
+    },
+    {
+      "command": "python3 -O check_pointer_zero_word_language.py",
+      "exit_code": 0,
+      "mode": "optimized",
+      "stdout_sha256": "4e218ea318529b193edd670556504326d51d0942b72630230e3c367ba523a4ea"
+    }
+  ],
+  "scope": "Exact finite support classification of the four ordinary coefficient-1 rows on 16 occupations, four fixed shell axes and both momentum signs.",
+  "source_sha256": "5cb666b021cac1e3e724e117ca30a524f190c3d7d106081266641cc21b200554",
+  "status": "PASS",
+  "total_words_checked": 87380
+}

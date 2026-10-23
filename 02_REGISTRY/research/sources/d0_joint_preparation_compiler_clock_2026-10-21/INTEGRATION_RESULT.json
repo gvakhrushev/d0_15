@@ -1,0 +1,72 @@
+{
+  "status": "PASS",
+  "input_ref": "dfc0275eea67ebc21ffe539de9b6ea96713863a5",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "proof_and_review_pins": {
+    "balanced_preparation/BALANCED_NATIVE_PREPARATION.md": "7b9d3afe684f34695a4dfd6d89a8db457ba9cf47002733c65e9a2dc5c5751d68",
+    "compiler/MONOTONE_COMPILER_ENVELOPE.md": "af681cc76e2cdeec936a5e70645f4d76200c6ae0a69672fc034b424512227344",
+    "monitored_return/COMPLETE_MONITORED_CQ_SOURCE.md": "88ae2feab137fdb9f4365fa4a42d3ab91c43e6b77173c5b80da0aec78c46e4c5",
+    "COMPOSITION_THEOREM.md": "382dc8c93612e0edd5237d096c64f7938713e0702c14e282e1613c24558cedac",
+    "reviews/BALANCED_PREPARATION_INDEPENDENT_REVIEW.md": "8c2e7b747f3a04f6a728c8dea7955e211c8a70051194d45032c7f7bdd122ffc5",
+    "reviews/BALANCED_CHECKER_INDEPENDENT_REVIEW.md": "8df7700cee9961e9a6303bab7eb13325bda37c1d5fae483e16d4fdf6b9eb7059",
+    "reviews/COMPILER_ENVELOPE_INDEPENDENT_REVIEW.md": "3962a7ae14fbcc5cf980949866e7ccbfa9e6f0146b6f63b271353cfc4f39b4a9",
+    "reviews/MONITORED_RETURN_INDEPENDENT_REVIEW.md": "696910fb2dbb0ad37a703758580fe9b5008769e9ec461d83e7ca4a9e9a77505b"
+  },
+  "installed_checker_replays": {
+    "balanced": {
+      "exit_code": 0,
+      "byte_identical_reviewed_receipt": true,
+      "receipt": "balanced_preparation/CHECK_RESULT.json",
+      "sha256": "4133366b05ab68e33238804dc8b80aa046b267131446f62babfb3da3003a2a18"
+    },
+    "compiler": {
+      "exit_code": 0,
+      "byte_identical_reviewed_receipt": true,
+      "receipt": "compiler/CHECK_RESULT.json",
+      "sha256": "1487c939af6c236e5bd0456f8ca52090ce55e6bf4fce2b74d0f35e360cdb5ff2"
+    },
+    "monitored_return": {
+      "exit_code": 0,
+      "byte_identical_reviewed_receipt": true,
+      "receipt": "monitored_return/COMPLETE_MONITORED_CQ_RESULT.json",
+      "sha256": "67ccfdb933bc6de306919ed8218ff9aa8283c324ac853d0aa5d9326dadb65e57"
+    }
+  },
+  "structural_checks": {
+    "python3 tools/validate_repo.py": "PASS warnings=0",
+    "python3 tools/validate_work.py": "PASS work_validation",
+    "python3 tools/validate_agent_protocol.py": "PASS agent_protocol"
+  },
+  "new_relative_links_checked": 22,
+  "heavy_inherited_suites_replayed": false,
+  "remote_CI_claimed": false,
+  "GR_closed": false,
+  "source_files_identical_to_declared_commits": 30,
+  "integrated_concurrent_ref": "d8f5901b32024bef0abd2d219f8f7228be4993e9",
+  "compiler_strict_pin_integration": {
+    "pin_file_sha256": "db64ab97706f748cdc56eb61145e6dea0a76e7dd34fe630c46d19eedbd84e080",
+    "changed_inputs": 1,
+    "original_prefix_bytes": 18886,
+    "appended_bytes": 1270,
+    "appended_lines": 4,
+    "unchanged_inputs": 9,
+    "replayed_after_pin_change": true,
+    "receipt_byte_identical": true
+  },
+  "local_verification_merge_ref": "4fd4c9b67a1fc5681d6e2520478dc596e3cfe9ba",
+  "publication_note": "Verification commit refs are local unless independently confirmed on GitHub; publication is identified by its verified remote head and matching tree.",
+  "concurrent_composition_review": {
+    "canonical_balanced_stationarity_preserved": true,
+    "overlapping_return_info_premise_counted_once": true,
+    "compiler_constitutive_scaling": "PASS: exact implicit equations, unique local section, positive constant beta18/beta20; K/a and coframe map identical.",
+    "compiler_scope_reviewed": "Fixed common query/calibration; independent upstream rows, off-null constraints and uniform-refinement requirements retained.",
+    "original_car16_transport": "PASS: exact returned-operator interface; pure complete CAR16+reference input for the full H(T) equality; mixed-input entropy/source retained otherwise.",
+    "all_angle_effect_obstruction_preserved": true,
+    "imported_scientific_checkers_replayed": false,
+    "three_installed_checker_bytes_or_executable_inputs_changed_since_last_replay": false
+  }
+}

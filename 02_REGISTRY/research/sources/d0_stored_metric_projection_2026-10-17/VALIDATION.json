@@ -1,0 +1,23 @@
+{
+  "analytical_review": "Root plus independent read-only peer review; general theorems are analytic in owner, not inferred from finite counts.",
+  "base": "05180c68dc9befefbab8be3bd7e950b6c2720ba2",
+  "date": "2026-10-17",
+  "exact_checks": 59,
+  "helper_sha256": "a60a99379169f6a807ceeb9fd9fe4792a48441712212992cd9a3c08f3b0a3bce",
+  "normal_optimized_identical": true,
+  "old_scientific_replay": false,
+  "output_sha256": "a85ce359521b6d7ba61cc2de401f6fdfda1f2d766802a172564bcd1fe5feafeb",
+  "physical_GR_or_original_raw_terminal_closed": false,
+  "published_receipt_preserved": "RESULT.json at05180c68; repeated only after two input pins were added by concurrent publication",
+  "python": "3.9.6",
+  "remote_CI_or_independent_acceptance_claimed": false,
+  "scope": "Full joint stored-adjoint regular kinematics; all16, no Julia/root/physical-source admission.",
+  "source_pins": {
+    "02_REGISTRY/research/A4D_COMPLETE_EXIT_ACTION_AND_SECOND_SOURCE.md": "482cf99f280620e7aa6120432cd7b9764671c5ef3fb1c0c3b50d7228d66e08b3",
+    "02_REGISTRY/research/A4D_NATIVE_FULL_JOINT_KERNEL_AND_MATTER_REDUCTION.md": "cc533dc7c8d63442f9e3e52fc984d32dba4cd2e4f5f8f9c164ac46afbbfd4f20",
+    "02_REGISTRY/research/certificates/a4d_native_curved_soldered_heat.py": "bf13f57c902da0005634ae6834c0b4e3ffd2df1aa196a61ebc0ff3dc0351c7da",
+    "03_FORMALIZATION/D0/Geometry/ArchiveAffineExteriorLink.lean": "2ccca18cf8ca66b9e1aa020301ce0d84d6fcd12563e913323482ce139928e5fe"
+  },
+  "status": "PASS_NEW_BOUNDED_CALCULATION",
+  "sympy": "1.14.0"
+}

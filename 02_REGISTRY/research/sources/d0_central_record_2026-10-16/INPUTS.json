@@ -1,0 +1,30 @@
+{
+  "concurrent_source_consumed": "c1e9e30c4be653a115532d6fc8aa26a3c7670921",
+  "external_primary_context": "https://arxiv.org/abs/1806.01838",
+  "initial_source": "ef782fe3d64cd973ff2d328a01bdacb934c7c8ec",
+  "owners": [
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_PREPARATION_STATIONARY_SOURCE.md",
+      "ref": "ef782fe3d64cd973ff2d328a01bdacb934c7c8ec",
+      "use": "actual CP map, f_j, complete terminal price and amplitude ranks"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_COHERENT_COMPILATION_COST_DESCENT.md",
+      "ref": "ef782fe3d64cd973ff2d328a01bdacb934c7c8ec",
+      "use": "added coherent completion, full state/observable transport, same-type code overhead"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_HISTORY_DENSITY_PALATINI_SYNTHESIS.md",
+      "ref": "c1e9e30c4be653a115532d6fc8aa26a3c7670921",
+      "use": "child clocks, fixed-cell measure/coframe map and the declared Lorentz star form"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_COMPLETE_FIELD_SOURCE_AND_TRANSPORT.md",
+      "ref": "c1e9e30c4be653a115532d6fc8aa26a3c7670921",
+      "use": "full BKM output metric and lower bound, actual transport and spatial-measure boundary"
+    }
+  ],
+  "repository": "gvakhrushev/d0_15",
+  "schema": "d0-central-record-inputs/1",
+  "verification_scope": "Pinned documentary dependencies; no old test suite or Lean compilation is executed. New finite formulas and full derivative signs are independently computed in this packet."
+}

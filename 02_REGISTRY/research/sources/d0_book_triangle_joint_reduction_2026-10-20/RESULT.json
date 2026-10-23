@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "input_ref": "960da9344e1893888d85d41fc57bdca9bade259e",
+  "native_triangle_count": 7722,
+  "native_common_factor": "Tr(K^3)/7722; canonical p^3",
+  "source_and_joint_Hessian": "PASS exact independent product-chart control",
+  "history_Schur_cross_block_at_root": "0",
+  "all_order_coordinate_identity": "S=A(r)+P(sqrt(W(r))*e,U)",
+  "densitized_4D_massless_scalar_degree": 2,
+  "hostile_fixed_boundary_control": "P!=0, P*DW survives",
+  "hostile_local_weight_control": "original link source=w1-w2",
+  "hostile_singular_radial_map": "W=1/e^2 gives spurious constant action",
+  "higher_original_coordinate_correction": "-P^2/2 in explicit internal elimination",
+  "native_full_action_factorization_proved": false,
+  "physical_internal_root_constructed": false,
+  "GR_closed": false,
+  "raw216_closed": false
+}

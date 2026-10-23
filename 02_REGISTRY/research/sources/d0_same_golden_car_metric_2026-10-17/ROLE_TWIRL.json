@@ -1,0 +1,15 @@
+{
+  "check_labels_sha256": "333016999f2bc4049f466449bca7d5bfe1b107fefd0be7d519553faf7ac40acd",
+  "checks_count": 235,
+  "frame_invariant_trace": "22/9",
+  "full_car_dimension": 16,
+  "golden_type": "same complete CAR observer sector",
+  "group_size": 24,
+  "moving_source": "-10649/3080",
+  "observer_complete_norm": "4402091269/768398400",
+  "observer_complete_source": "21036259/85377600",
+  "physical_boundary": "a finite spatial frame twirl is an exact algebraic expectation, NOT an already physically selected Price or a free controlled native gate",
+  "quadratic_action_source": "Qobs = 2||Pi B||_tr16^2 - ||(I-Pi)B||_tr16^2",
+  "status": "EXACT FINITE SO3 SUBGROUP REYNOLDS / OBSERVER CAR SOURCE; native admission and physical Cost-Info open",
+  "twirl_theorem": "Pi(B(C)) = B((tr C/3) I3), implemented by 24 real proper signed permutations on full16 exterior algebra"
+}

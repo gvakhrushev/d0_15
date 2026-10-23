@@ -1,0 +1,81 @@
+{
+  "status": "PASS",
+  "arithmetic": "exact Q(p), p^2=1-p; rational shell checks; 90-digit log diagnostic",
+  "exact_flag_depths": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+  ],
+  "flag_return_and_every_failure_law": true,
+  "unchanged_decoded_zero_mean_exact": true,
+  "all_one_resource_first_jets_zero": true,
+  "matched_complete_counted_CQ_baseline": "analytic composition with pinned paid compiler; not a compiler replay",
+  "normal_target": "-7.81773513790959528294222635892e-12",
+  "finite_price_secants": [
+    {
+      "m": 2,
+      "flag_readiness": "0.5278640450004206071817",
+      "epsilon": "0.6180339887498948482046",
+      "actual_ledger_contrast_over_common_readiness": "-5.385145805308634526493e-13",
+      "normalized_secant": "-5.656966288800252469968e-12",
+      "relative_error_to_owned_normal": "0.276393202250021"
+    },
+    {
+      "m": 4,
+      "flag_readiness": "0.7507764050037854646349",
+      "epsilon": "0.1708203932499369089228",
+      "actual_ledger_contrast_over_common_readiness": "-2.842624847707263322090e-13",
+      "normalized_secant": "-7.596084382779785428671e-12",
+      "relative_error_to_owned_normal": "0.0283522978483865"
+    },
+    {
+      "m": 8,
+      "flag_readiness": "0.9583337352031532687382",
+      "epsilon": "0.02174919474995092916214",
+      "actual_ledger_contrast_over_common_readiness": "-4.752421600549737626640e-14",
+      "normalized_secant": "-7.814038882848611805447e-12",
+      "relative_error_to_owned_normal": "0.000472803823073984"
+    },
+    {
+      "m": 16,
+      "flag_readiness": "0.9990942028986349851693",
+      "epsilon": "0.0004533092499529320534817",
+      "actual_ledger_contrast_over_common_readiness": "-1.033145095014184023449e-15",
+      "normalized_secant": "-7.817733531449191218337e-12",
+      "relative_error_to_owned_normal": "2.05489233867056e-7"
+    },
+    {
+      "m": 32,
+      "flag_readiness": "0.9999995893938796694128",
+      "epsilon": "2.053031444640298932408e-7",
+      "actual_ledger_contrast_over_common_readiness": "-4.683341319629605291264e-19",
+      "normalized_secant": "-7.817735137909265770244e-12",
+      "relative_error_to_owned_normal": "4.21493811268166e-14"
+    },
+    {
+      "m": 64,
+      "flag_readiness": "0.9999999999999157012724",
+      "epsilon": "4.214936382002446938110e-14",
+      "actual_ledger_contrast_over_common_readiness": "-9.615046995182367275222e-26",
+      "normalized_secant": "-7.817735137909595282942e-12",
+      "relative_error_to_owned_normal": "1.77656887043279e-27"
+    }
+  ],
+  "cyclic_shells_checked": 34,
+  "native_autonomous_same_controller_selection": false,
+  "complete_Book_price_selected": false,
+  "GR_closed": false
+}

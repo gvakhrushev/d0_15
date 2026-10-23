@@ -1,0 +1,80 @@
+{
+  "status": "AUTHOR_REPLAY_PASS_NOT_INDEPENDENT_ACCEPTANCE",
+  "input_ref": "d333307d031123aedf7a49b35a12ce5f7c17fc04",
+  "exact_algebra": {
+    "null_code_cost": 3.708203932499369,
+    "null_pointer_entropy_phi": 2.76393202250021,
+    "null_net_KL_phi": 0.9442719099991588,
+    "cost_source_dt": -0.4721359549995794,
+    "pointer_entropy_source_dt": 0.4721359549995794,
+    "code_minus_pointer_source_dt": -0.9442719099991588,
+    "mean_recovery_calls_at_null": 0.6180339887498949
+  },
+  "actual_CAR_scalarization": {
+    "query_dimension": 16,
+    "selector_labels": 256,
+    "total_query_workspace_dimension": 8192,
+    "reference_columns": 128,
+    "reference_implementation": "CAR16 x untouched spectator8",
+    "actual_null_plaquette_coefficients": [
+      -0.00122444268454558,
+      -0.00062444268454558
+    ],
+    "fixed_contraction": 0.021286236252208202,
+    "t_at_null": 0.0,
+    "dt_d_opposite_null_link": 0.0038315225253974738,
+    "whole_first_jet_error": 1.3058298731281475e-11,
+    "one_attempt_unresolved_jet_norm": 0.012048626848996376,
+    "source_code": -0.0018089995468262288,
+    "source_pointer_Info_phi": 0.0018089995479364518,
+    "source_code_minus_pointer_Info_phi": -0.0036179990947626806,
+    "source_prediction": [
+      -0.0018089995466309368,
+      0.0018089995466309368,
+      -0.0036179990932618737
+    ],
+    "max_prob_error": 1.1102230246251565e-16,
+    "max_reference_Gram_error": 8.673617379884035e-19,
+    "null_code_cost": 3.7082039324993694,
+    "null_pointer_entropy_phi": 2.7639320225002106,
+    "null_KL_phi": 0.9442719099991588
+  },
+  "hostile_protected_history": {
+    "fidelity_after_forbidden_inner_readout": 0.49999999999999983,
+    "condition": "U inverse may act on fresh reversible work, never on separately protected old history"
+  },
+  "environment": {
+    "python": "3.13.5",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "sympy": "1.14.0"
+  },
+  "physical_Book03_selected": false,
+  "full128_energy_price_replaced": false,
+  "GR_closed": false,
+  "independent_acceptance": false,
+  "script_sha256": "5fbbf29b3ddfac9eac8ce8f7bfe7358b44206c48be52178ef4b730f070740d07",
+  "checks_passed": 89,
+  "proof_git_blob": "9ac845dc2c431acc4f27e957e71d2e583fba0564",
+  "script_git_blob": "6af690c71a627c803a00b39713e2c5e292aad11d",
+  "source_pins": [
+    {
+      "ref": "d333307d031123aedf7a49b35a12ce5f7c17fc04",
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/geometric_source/proof.md",
+      "git_blob": "15c7a93949cae297b28f5da0e19ade92e63dfa1f"
+    },
+    {
+      "ref": "d333307d031123aedf7a49b35a12ce5f7c17fc04",
+      "path": "02_REGISTRY/research/A4D_CAUSAL_BOOK_SOURCE_TO_EXACT_GR_SYNTHESIS_2026_10_20.md"
+    },
+    {
+      "ref": "227cbb195a952a93cd23e4049d2db5c34b75b277",
+      "path": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+      "git_blob": "f14cca26e8a2e3a937b489a66d5e4881938706f6"
+    }
+  ],
+  "commands": [
+    "OPENBLAS_NUM_THREADS=1 python check_clean_scalar_source.py --output receipt.json",
+    "python -m py_compile check_clean_scalar_source.py"
+  ]
+}

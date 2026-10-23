@@ -10,7 +10,7 @@
   },
   "Lean_capsule_sha256": "4a4f121f87cd1e56bb045ae0e0dafe3fb7c9dfd704c255b72134661ff9595377",
   "Lean_output_sha256": "29f3baae66f290899012a9e7735d2e51f94347f76404e5138b749e4c1dc9b751",
-  "Lean_receipt_sha256": "db17e7b82d056c8f241b432b081685e0001066dfda119ffe1f6621c20f4424c3",
+  "Lean_receipt_sha256": "3a8a992c451d848276e74cb0372f3a47247fb36e8e653248f029c7ff11608b0d",
   "all_local_metric_probe_admission": "OPEN",
   "all_zero_pattern_tangent_results": [
     {
@@ -959,7 +959,7 @@
     "02_REGISTRY/research/A4D_NATIVE_FIBONACCI_RECORD_ACTIVATION.md": "012455bdd3845e1d95f5270bbdcf105c753013d6e0b2339e2c001332e1fe4ee6",
     "02_REGISTRY/research/A4D_NATIVE_SOLDERED_HEAT_SOURCE.md": "be0c07f8636d051d7fe50cdbc6241a172c7148c694e93a0ba1b4140899c5321a",
     "02_REGISTRY/research/certificates/a4d_native_soldered_heat_source.py": "7794885c71088ec66963b96d1e949dd4c3c1af38322512d14434df1ec196dd26",
-    "02_REGISTRY/research/certificates/a4d_native_soldered_heat_source_lean_results.json": "1c99019091bd543fb43d1e8aafea3c83f656a1a45b5d7b54793a908d7914dc40",
+    "02_REGISTRY/research/certificates/a4d_native_soldered_heat_source_lean_results.json": "f63a2497edd9a988257307435deadef26a93a51868e9706ad1b3903649c92505",
     "03_FORMALIZATION/D0/Algebra/RoleSignature.lean": "5dfb03dc839b4c81d199ff053e57d4b9d54cd61812577078e6302bc710c4ffcf",
     "03_FORMALIZATION/D0/Claims/DimLadderCompact.lean": "c95c33e59d15b4475297660fbd85a3912848dab4be81eb0c33e80117e4859546",
     "03_FORMALIZATION/D0/Combinatorics/EulerPhi.lean": "83d9af2ead6462e454de1219cd1523d913221e5731114a5459982d25c0ff455a",
@@ -986,7 +986,7 @@
     "03_FORMALIZATION/D0/Geometry/A4DSolderMetricCompletion.lean": "43e2e55c79edae8f17e891c7ad600a7a0609e2d51ef0953d7abd11bcfecc16fa",
     "03_FORMALIZATION/D0/Geometry/A4DSymRoleCentralDifference.lean": "b7f418b6de484f391d6270cb3f1140aa3e4e0007662c0f820e899d673480d46e",
     "03_FORMALIZATION/D0/Geometry/ArchiveAffineCartanConnection.lean": "9a342468ef9c04f28c68b59acb32263e141ed184f2bf49a085869632930c1549",
-    "03_FORMALIZATION/D0/Geometry/ArchiveAffineExteriorLink.lean": "be8f2a58cc7c055b6db13b4846437e89d5cc5bc979cc2ebb9429bdf82f45b1a1",
+    "03_FORMALIZATION/D0/Geometry/ArchiveAffineExteriorLink.lean": "2ccca18cf8ca66b9e1aa020301ce0d84d6fcd12563e913323482ce139928e5fe",
     "03_FORMALIZATION/D0/Geometry/ArchiveCARDirac.lean": "d12ee600d7976228ffcb88e5c40c08d66cd361664901594ea0379bf2b97a2388",
     "03_FORMALIZATION/D0/Geometry/ArchiveCARFockCarrier.lean": "5dc96be9c2ee5c874a617f3ebe80f0da9803973c1656112fe24f31e90c2f5eb1",
     "03_FORMALIZATION/D0/Geometry/ArchiveCARRelations.lean": "846fddef981b82357bab5b1a4de72d7f27bdfc6321ed41bfdc26e410cbd0178d",

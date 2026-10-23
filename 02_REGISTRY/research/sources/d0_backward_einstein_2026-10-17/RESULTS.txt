@@ -1,0 +1,12 @@
+Exact null/source basis: verified with Fraction arithmetic and explicit exceptions.
+Convention: eta=(+---); packed tensor=(00,01,02,03,11,22,33,12,13,23).
+Nine null rows: kernel=span(eta), rank=9; rational inverse with trace is exact.
+Measurement determinant: trace row 3538944/15625; actual scale row -3538944/15625.
+Scale convention: dQ/dalpha=-tr_eta(S) for hat_e -> exp(alpha/2)*hat_e.
+Raw l1 inverse: packed10 <= (5/2)*sum(abs(null rows))+abs(trace).
+Raw l1 inverse: full16 <= (17/4)*sum(abs(null rows))+abs(trace).
+The bounds commute with a common cell sum and the unchanged h^-2 prefactor.
+Finite coframe paths: N^2=0, det(I-epsilon*N/2)=1, exact metric/inverse signs verified.
+Fixed-mass dressing: F_m(F_m(e))=e; base/a -> a*hat_e; normalized m unchanged.
+Negative controls: missing trace, wrong trace sign, unnormalized probes, mass-only multiplier detected.
+Scope: variation-basis algebra only; no action identification, source root, or optical/history balance claimed.

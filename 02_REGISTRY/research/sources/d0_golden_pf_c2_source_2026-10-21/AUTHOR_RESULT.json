@@ -1,0 +1,78 @@
+{
+  "status": "AUTHOR_PASS_NATURAL_GOLDEN_PF_C2_SOURCE_AND_NATIVE_CAR16_EDGE",
+  "date": "2026-10-21",
+  "pr": 334,
+  "owner": "EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE",
+  "basis": "Existing ORIGINAL 4D nested Golden box discrepancy eqs 6-10, true n_z; no new decoder/measure",
+  "exact_bound": "n(L)=64*min{s in N: phi^s>=L}+128; ||rho-1||_inf<9/L^3, ||nabla_h log rho||<36/L^2, ||nabla_h^2 log rho||<72/L, all L>=4",
+  "source_blobs": {
+    "theorem": "28dc837c770a6e4cfe1e6475df52167c0b3fb099",
+    "Golden_box_and_rank2": "3ba9e1aea493acdb800709f90b6275bae9f2581a",
+    "CAR16_real_adjoint": "03b1a9e3a34ee67ea417e8a43624039bbb9f7701"
+  },
+  "verification": {
+    "exact_rational_bound": "256*(619/1000)^7+(619/1000)^128+(619/1000)^256<9",
+    "original_actual_census": [
+      {
+        "n": 20,
+        "L": 4,
+        "K": 10946,
+        "min": 29,
+        "max": 78,
+        "maxPF_jump": 0.4911383153663439
+      },
+      {
+        "n": 24,
+        "L": 8,
+        "K": 75025,
+        "min": 4,
+        "max": 43,
+        "maxPF_jump": 2.0200199933355547
+      },
+      {
+        "n": 28,
+        "L": 8,
+        "K": 514229,
+        "min": 45,
+        "max": 232,
+        "maxPF_jump": 0.8283935756248675
+      }
+    ],
+    "sample_exact_owner_bound": [
+      {
+        "L": 4,
+        "n": 320,
+        "B": 0.09355015546403299
+      },
+      {
+        "L": 8,
+        "n": 448,
+        "B": 0.0039826614212764245
+      },
+      {
+        "L": 16,
+        "n": 512,
+        "B": 0.0011621249409149346
+      },
+      {
+        "L": 32,
+        "n": 640,
+        "B": 0.00004947453209379759
+      }
+    ],
+    "same_original_N1_material_PF_error": "O(h^3) by direct analytic Lipschitz from original six-face f_h=ha(t)+O_C1(h²) and native full two-band derivative",
+    "weighted_stored_D_and_positive_DstarD_error": "O(h²), O(h) on bounded original CAR16/4D operator chart, with honest adjoint"
+  },
+  "physics_scope": {
+    "positive_native_READY_probability_limit": 0.3416407864998738,
+    "no_other_site_prior": true,
+    "original_history_tree_employed": true,
+    "original_42_stress_source_claim_reused_not_reproved": true,
+    "full_current_HJR_Book_info_or_selection": false,
+    "full_42_joint_finite_nonVSI_stationary_root": false,
+    "actual_writer_oldRIGHT_and_clock_physical_source_closed": false,
+    "GR_closed": false
+  },
+  "peer_review": false,
+  "Lean_new_build": false
+}

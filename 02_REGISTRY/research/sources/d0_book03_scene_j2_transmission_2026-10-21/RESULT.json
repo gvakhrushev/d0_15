@@ -1,0 +1,34 @@
+{
+  "analytic_bounds": {
+    "cF_upper": "1/131072",
+    "minus_cH_lower": "7/2640"
+  },
+  "calibration": {
+    "beta": 0.7639320225002104,
+    "p": 0.6180339887498949,
+    "z": 9.5367431640625e-07
+  },
+  "check_count": 12,
+  "coefficients": {
+    "J2_source_multiplier": -0.000502989917823634,
+    "cF": 1.907349076190847e-06,
+    "cH": -0.015566957992937213,
+    "g": -0.015565050643861022
+  },
+  "dichotomy": {
+    "derived_x_chain_source": "g*(91/2816)*DJ2",
+    "independent_x_Euler": "g*(91/2816)=0 => g=0",
+    "simultaneous_nonzero_transfer_and_free_x_stationarity": false
+  },
+  "scene_derivatives": {
+    "kappa_u_11_13": "-1209/35200",
+    "kappa_x_9_11": "91/2816",
+    "kappa_y_9_13": "13/6400"
+  },
+  "scope": {
+    "GR_closed": false,
+    "physical_weighted_scene_admission": false,
+    "same_initial_generated_scene_writer": false
+  },
+  "status": "PASS"
+}

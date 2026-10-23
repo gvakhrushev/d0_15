@@ -1,0 +1,15 @@
+{
+  "PROOF.md": "b760e5f82c6df44687403c2d9543ba20b730a4aad99fe1393a6709b3f99736fe",
+  "README.md": "d9b6d7e8c23e78f4e266fb86ae0771cd0bc743c90ad485224b83c32087cf35c0",
+  "README_RU.md": "7f0028bfe5eedab2fbbc6d7f7f301591a879558026c85ce9031513890dacf173",
+  "SOURCES.json": "bbf229ef53560aa3bc070c38b87b6624065563138ca58a7635dbad199d587e7e",
+  "VALIDATION.json": "6aa9ae60675d0b044a80a4a4326383c1be6322e62a5a257511337915977110c2",
+  "check_absolute_completion.py": "2a945a9b1d2a93cc12cac7b7f8017fb2489e482226baea6ae2fa67c66c43f444",
+  "check_native_root_transport.py": "ef71995d3bb0f0de6e9804664f94e004b9172e5d5489b692b1cf269a07a1af86",
+  "check_primary_reference.py": "f741ee023b5376b38340dce9bdb80c06fddbcf1bba7fd58ddefbf1e00bd16b9d",
+  "matrix_result.json": "45bab2730964640908c80d7e3745337d408b6937ba7b3f3b7a9d5b5fbed05738",
+  "primary_result.json": "cf7f0b25193cb4740d71639e777129bf2f611ebaddd016d76d276bc72f932ce5",
+  "requirements.txt": "834b95f435034610a6170f1f3c530631dc21afb80ad2dbc480118f3207eee9e8",
+  "root_result.json": "091e8fe85cbf6f05150ca0cc31d567fb0f545d31dbcaa813e49882ba80d8dad6",
+  "verify.py": "d1b3e90aa07f65ee1c70f8bc13688d85c0682fdcedec552a2635b0ef2cf9ebf4"
+}

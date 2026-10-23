@@ -1179,6 +1179,8 @@ def select(repo: Path, commit: str, base: str | None) -> dict:
             reasons.append("historical-input-binding")
         if cert in historical.REPORT_ENTRYPOINTS and changed_set & historical.REPORT_SELECTION_INPUTS:
             reasons.append("historical-report-input-binding")
+        if cert in historical.SUPPORT_ENTRYPOINTS and changed_set & historical.SUPPORT_SELECTION_INPUTS:
+            reasons.append("historical-support-input-binding")
         inputs = info["transitive"]
         if any(item["path"] in changed_set for item in inputs):
             reasons.append("changed-input")

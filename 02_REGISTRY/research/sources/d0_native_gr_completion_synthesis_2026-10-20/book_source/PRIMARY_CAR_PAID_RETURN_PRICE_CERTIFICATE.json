@@ -1,0 +1,74 @@
+{
+  "arithmetic": "exact Fraction/CAR/integer/log-prime identities",
+  "code_and_work": {
+    "certain_instruction_matching_code_cost": "6",
+    "certain_instruction_matching_gain": "6",
+    "literal_autonomous_letters_per_return": 18,
+    "literal_compiled_letters_per_return": 6,
+    "matching_net": "0",
+    "one_round_sufficient_actual_uncancelled_work_difference": "3",
+    "uncancelled_work_lower_bound_proved": false
+  },
+  "history_budget_scope": "fixed frozen geometry; complete fixed-n tape<3n; deterministic finite-cap stop<3ET ifET>0",
+  "inherited_primary_source": {
+    "conditional_net_angle_coefficient_phi": [
+      -6.359268283219129e-07,
+      -6.35926827829028e-07
+    ],
+    "inherited_interval_arithmetic_premise": "IEEE binary64 nearest arithmetic without FTZ/overflow; optimize=False direct einsum is a sum of k binary64 products and at most k-1 additions in any order, optionally FMA; no eigensolver accuracy premise",
+    "numerical_t_or_uniform_word_bound_proved": false,
+    "prior_spectral_replay_performed": false
+  },
+  "native_budget": {
+    "entropy_bound_phi": "strictly below3 per original complete trial",
+    "entropy_integer_witness": {
+      "left": "7233046875000000",
+      "right": "18014398509481984"
+    },
+    "full_CAR_dimension": 16,
+    "max_count": 78,
+    "nonblank_rational_upper": "342732/2068373",
+    "probability_budget": "strictly below1/6",
+    "rho_max": "768/421",
+    "sites": 256,
+    "squared_role_norms": [
+      "1/2",
+      "2",
+      "1",
+      "1"
+    ],
+    "total_FR_words": 10946
+  },
+  "native_work_map_or_Book_Info_selected": false,
+  "refinement_or_metric_source_bound_inferred": false,
+  "same_complete_initial_controller_reachability_proved": false,
+  "source_sha256": {
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/GOLDEN_EXACT_DETECTOR.md": "d33c9c2cb2322e381723f481eb1fcf58058fd05ad88eda92c5597c026d02eb77",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/NATIVE_CAR_ACTUATED_METRIC.md": "b9dd63f0888a062941c1744d800120e47d20777f429f892f5a98c504a3c0a4be",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/PRIMARY_CAR_RECORD_PRICE_SOURCE.md": "15a058cb96f5fb51d1f086a3e65459d7cfb75d0ffe69761537c8bba46ac76111",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/PRIMARY_RIGHT_COMPLETE_CODE_SOURCE.md": "7a38155f37b98fabdd358271be52ad4919a0b28963a5fb952d91da049eba4424",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/PRIMARY_RIGHT_COMPLETE_CODE_SOURCE_CERTIFICATE.json": "d8fea994bdf698e69a44c2b1d8aae1094d9b199a1c36aded0e267399a1d2c1c9",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/check_primary_car_preparation_source.py": "889053f6da84501769d23ab84186c2189e6c026414db623919f4934098fb6c34",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/check_primary_right_complete_code_source.py": "178be2f98dd0c6a5263130ed11aa21b548812a99856a121afe43f9193c27c164",
+    "02_REGISTRY/research/sources/d0_primary_native_domain_source_2026-10-20/check_primary_domain_source.py": "c67285c7469db49ff61f3e52597d0bcc6aad991ec1f7af025d6daeb065a43edf"
+  },
+  "status": "PASS",
+  "stopped_chain": {
+    "conditional_leaf_probabilities": [
+      [
+        "1/4",
+        "3/16",
+        "9/16"
+      ],
+      [
+        "1/2",
+        "1/4",
+        "1/4"
+      ]
+    ],
+    "exact_conditional_entropy_chain": true,
+    "expected_trials": "13/8",
+    "retained_abort_mass": "13/32",
+    "scope": "small exact chain control, not the original native detector"
+  }
+}

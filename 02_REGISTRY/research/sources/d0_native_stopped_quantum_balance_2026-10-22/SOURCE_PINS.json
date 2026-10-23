@@ -1,0 +1,197 @@
+{
+  "schema": "d0-native-stopped-quantum-source/1",
+  "scientific_owner": "#334",
+  "task_id": "EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE",
+  "initial_published_input": "e92ecb3bdc53a2b958b1cc09a7b0398f978c87f3",
+  "concurrent_intake": "f3a2bf2ceb8b3d662cd641ae2988e6e0bddac4f3",
+  "native_numerical_predicate": "b(z)=port(z),m=2,full fine tape retained",
+  "literal_full_label_application": "b(z)=z,m=64 at fixed nonzero proper-boost chart; analytical substitution only",
+  "owned_inputs": [
+    {
+      "path": "requirements.txt",
+      "sha256": "1dbcf6cb3adbf2262c21494fe2e7173e7f43e58e9caa25fd4e53882a7d74339b",
+      "git_blob": "13682995ed1eb8bc07e423da78d4e0431e2d523d",
+      "published_commit": "e92ecb3bdc53a2b958b1cc09a7b0398f978c87f3"
+    },
+    {
+      "path": "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md",
+      "sha256": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d",
+      "git_blob": "ecdd31abb52c94e9f2a157a80c7c49a6f5ac31aa",
+      "published_commit": "e92ecb3bdc53a2b958b1cc09a7b0398f978c87f3"
+    },
+    {
+      "path": "01_BOOKS/BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md",
+      "sha256": "592bbbb1dae9cc599df2eef9cabf117b19f8566d755ad072b77beb04624271d7",
+      "git_blob": "99721fb50de66688564638f5f2b449a38675d7bd",
+      "published_commit": "e92ecb3bdc53a2b958b1cc09a7b0398f978c87f3"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_book_uniform_source_2026-10-21/check_uniform_book_source.py",
+      "sha256": "1c501d5609dda3e14a3da95aad0c77ea04ef48bf94921793a403fb058a805fe9",
+      "git_blob": "ee8de4635d24c668949ac9a0186616ab7d59f2ed",
+      "published_commit": "e92ecb3bdc53a2b958b1cc09a7b0398f978c87f3"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_cq_source_2026-10-22/check_complete_history_source.py",
+      "sha256": "cd0052f10bc43abb3736a1637c850c2a3d637f428dd116f6320f68bcf84e3931",
+      "git_blob": "c133c6aec28e2a4068b36a6d9646bc8fb04fc2a4",
+      "published_commit": "e92ecb3bdc53a2b958b1cc09a7b0398f978c87f3"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_cq_source_2026-10-22/COMPLETE_HISTORY_RESULT.json",
+      "sha256": "6218f76ba21a2eeba064b9a855395d3fd358cf7c4d7ae58d4f56a5c1f9ef0515",
+      "git_blob": "7530a050c3e0d4cc0aad29648f61fa3b86a524c8",
+      "published_commit": "e92ecb3bdc53a2b958b1cc09a7b0398f978c87f3"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_cq_source_2026-10-22/COMPLETE_HISTORY_SOURCE.md",
+      "sha256": "f1ee97765d7c8a82ff65f4ab81f46cb626e6780856fac34684efa8d4cac92d51",
+      "git_blob": "cbd85b5173563f0f7bc5b17a31ddef7562916dff",
+      "published_commit": "e92ecb3bdc53a2b958b1cc09a7b0398f978c87f3"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_preparation_closure_2026-10-21/PROOF.md",
+      "sha256": "4001c3adb8b5c7bbcea95b1795d6d847e4386191e9129e43e5c611994b64a99f",
+      "git_blob": "2dde923ce481a00db4928a9467819ccdb73cae5a",
+      "published_commit": "e92ecb3bdc53a2b958b1cc09a7b0398f978c87f3"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_first_match_wald_2026-10-22/SEQUENTIAL_FULL128_BOOK_RETURN.md",
+      "sha256": "975fb5bc2cc8140b8a23c4b1ec401c02d33cd65198ac4ea6d4350a3b7535f98a",
+      "git_blob": "2d5f49cf9c6c72f4da3bc5f587a3827eb30992c4",
+      "published_commit": "e92ecb3bdc53a2b958b1cc09a7b0398f978c87f3"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_first_match_wald_2026-10-22/SEQUENTIAL_STATIONARY_OCCUPATION.md",
+      "sha256": "181f9bd2f8892a122fa85611e73ec70b6764f50aaea01a2fabd1dcb0fbc0a5ce",
+      "git_blob": "5cf08b1e6b904c04615a9ae54ecb62a59e110d80",
+      "published_commit": "e92ecb3bdc53a2b958b1cc09a7b0398f978c87f3"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_first_match_wald_2026-10-22/NATIVE_ACTIVE_LABEL_SUPPORT.md",
+      "sha256": "329fe401504a985c4fbc61e0aaefb1809dffd9d9a3db5014c19eafcdf8e862a7",
+      "git_blob": "06ac234e5a7707bb3a93db028c569ba0a74fe6f3",
+      "published_commit": "e92ecb3bdc53a2b958b1cc09a7b0398f978c87f3"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_FULL128_STOPPED_KL_QUANTUM_MEMORY_BUDGET_2026_10_22.md",
+      "sha256": "78f48eead07771278d281e8f230373e621f0a09d4ccf6827dd52bf0fc8ef2bbe",
+      "git_blob": "3a17ab2819b180d63197d7591a95b20e45354a2b",
+      "published_commit": "e92ecb3bdc53a2b958b1cc09a7b0398f978c87f3"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_COMPLETE_RECORD_CHANNEL_AND_NATIVE_COST_SOURCE.md",
+      "sha256": "2128009802edff3e111a26961f050320fd878d7412ed93bfad5d5c9e4219db79",
+      "git_blob": "df8611c7fa37fa71e883831b3f01f434532d99ce",
+      "published_commit": "e92ecb3bdc53a2b958b1cc09a7b0398f978c87f3"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_COMPLETE_NATIVE_FIRST_MATCH_ENTROPIC_POISSON_PREPARATION_AND_HESSIAN_2026_10_22.md",
+      "sha256": "de0c6df82eb2ab11d57ea8c8dfa389840735a807c820d5ee990518a2d2585f80",
+      "git_blob": "789e495d670ac2c5e8d880652a8924d2bf399877",
+      "published_commit": "e92ecb3bdc53a2b958b1cc09a7b0398f978c87f3"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_PARTITION_CORRECTED_BRANCH_INFORMATION.md",
+      "sha256": "a4e8c15de4d736366e85f0bd19a2a394f6372295426b830d8a21bd25fbb3190c",
+      "git_blob": "dd325fed87dc1284dd8ee64e86e34587be31e7d3",
+      "published_commit": "e92ecb3bdc53a2b958b1cc09a7b0398f978c87f3"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/continuation_selection/STOPPED_INFORMATION_NORMALIZATION.md",
+      "sha256": "0ce5b25dc66e4a0bf591c51ba1b02b9e8ed0ed5811ec9b2d6a43314ff232c9e7",
+      "git_blob": "fcf652b546cdee657846125bd9c7fe94cecf9a5d",
+      "published_commit": "e92ecb3bdc53a2b958b1cc09a7b0398f978c87f3"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_FULL128_NORMALIZATION_AND_TRUE_BOOK_SOURCE_2026_10_21.md",
+      "sha256": "4494f6b636be534adf87f1a40c621016f85c623bef65cd0cd56f4253f584df64",
+      "git_blob": "07fbeed5cb4a81bd6c5bcbcb640db5f9fc7b77db",
+      "published_commit": "e92ecb3bdc53a2b958b1cc09a7b0398f978c87f3"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_full128_normalization_closure_2026-10-21/PROOF.md",
+      "sha256": "42f96fc4cdb4f47878c4d260a003dd2819741c6b4e233581e184f28e9792ebcc",
+      "git_blob": "eeae605705b5ee29a098ab9e14c4882034c73795",
+      "published_commit": "e92ecb3bdc53a2b958b1cc09a7b0398f978c87f3"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_cq_source_2026-10-22/published_inputs/A4D_NATIVE_COMPLETE_SOURCE_REDUCTION_2026_10_22.md",
+      "sha256": "5f4f889276f1516870a085d7109b0b3d72c6b0664b5628e8bdf36e78d2052c10",
+      "git_blob": "aca68ab0c14a16d14d5a5105b96e1ff8db49f474",
+      "published_commit": "fa19ec492174f7aea313ca08d57caccc3d481183",
+      "source_path": "02_REGISTRY/research/A4D_NATIVE_COMPLETE_SOURCE_REDUCTION_2026_10_22.md"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_blank_future_entropy_2026-10-22/PROOF.md",
+      "sha256": "c7aa1a8afd606a5bd8fe3d6dd013a41186c9f1d73739388f05cd8953cd686b7b",
+      "git_blob": "4d86f94ce6cdbf00123c1466ebd54cb8f17a4ba2",
+      "published_commit": "f3a2bf2ceb8b3d662cd641ae2988e6e0bddac4f3"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_blank_future_entropy_2026-10-22/README.md",
+      "sha256": "f6f5515c077275e6338daf5019860bfeeda3e15c07861753965b65bb6d8fadd3",
+      "git_blob": "657b9fe838799f9542b9c7e9c7c619929e444a92",
+      "published_commit": "f3a2bf2ceb8b3d662cd641ae2988e6e0bddac4f3"
+    }
+  ],
+  "frozen_artifacts": [
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_STOPPED_QUANTUM_PRICE_AND_SOURCE_2026_10_22.md",
+      "sha256": "5607d7fe34d5309e7db5705bb68fcfce8ae9a2406f8d7ca829c937216f69aebf"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_stopped_quantum_balance_2026-10-22/README.md",
+      "sha256": "b3173032e3629272edcfcd5770411d9eb51030ec93153afc333b472e0a9cf2da"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_stopped_quantum_balance_2026-10-22/QUANTUM_RETURN_BALANCE.md",
+      "sha256": "99b82adf58c874f88f42681268b889b4d153b68db5fb4e81127df38d8b84b2f0"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_stopped_quantum_balance_2026-10-22/STATIONARY_SOURCE_CONSUMER.md",
+      "sha256": "2190b37e35b9a707de6da00edf7544d0425bfae45530300e4dab9126954a4056"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_stopped_quantum_balance_2026-10-22/RAW_PARTITION_APPLICATION.md",
+      "sha256": "aa1f1ca9c91f3a5c7ef36920357aeb417227365d1e22b3176c7d7ef90fd73574"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_stopped_quantum_balance_2026-10-22/check_native_quantum_return.py",
+      "sha256": "79cbfad7027d0ea46598dfc7f881ae44476defc68f664e634e846e24fabbeb00"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_stopped_quantum_balance_2026-10-22/NATIVE_QUANTUM_RETURN_RESULT.json",
+      "sha256": "8b1a9984b0b6da9b0809fd1097010d513e0fdd0766582f5f15c27de94dd6b67b"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_stopped_quantum_balance_2026-10-22/NATIVE_IMPLEMENTATION_NOTES.md",
+      "sha256": "c2751678552a20a0f52cb63de32fb1b834312e77b2031cf9e461eb5b70edca5f"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_stopped_quantum_balance_2026-10-22/check_finite_price_reduction.py",
+      "sha256": "e9764dcf2b94e689cc47d0bd0174ff0ef42018d7c9649aed0dce7e6526ea788d"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_stopped_quantum_balance_2026-10-22/FINITE_PRICE_REDUCTION_RESULT.json",
+      "sha256": "047c8618855ea48621a875062710b896a04b61bd4e3787f198f0b54269ca34ed"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_stopped_quantum_balance_2026-10-22/INDEPENDENT_REVIEW.md",
+      "sha256": "66851b66eb30d071d7cb16e8569a1ae4e91810617b2ec914b56577bfca03be2a"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_stopped_quantum_balance_2026-10-22/PROVENANCE_CONTINUATION.md",
+      "sha256": "d32a78939f4b6293edf19fd2088cf27e276fdface4812d7b4c1d702a48e89dd1"
+    }
+  ],
+  "numerical_scope": {
+    "native_checks": 223,
+    "rational_integration_checks": 168,
+    "historical_suites_replayed": false,
+    "complete_uncapped_entropy_evaluated": false,
+    "complete_uncapped_source_evaluated": false,
+    "interval_certificate": false
+  },
+  "GR_closed": false
+}

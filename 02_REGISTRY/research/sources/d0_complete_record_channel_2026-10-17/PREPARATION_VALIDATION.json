@@ -1,0 +1,29 @@
+{
+  "analytic_review": "Root and two independent read-only reviewers: full128 event, finite-time limit, classical Fisher and BKM Hessian bounds, Jensen gap, nonlinear prep covectors and partition sign.",
+  "analytic_scope": "General all-code theorem and fixed-time source lower bound are proved analytically in owner sections8-10, distinct from finite fixtures.",
+  "base": "d0e49f1288126cee72996b54c9b0916b04dd1642",
+  "date": "2026-10-17",
+  "exact_checks": 46,
+  "full_field_EL_native_admission_GR_or_original_terminal_closed": false,
+  "helper_sha256": "1151c58f63a60fcff6528c8c58698ce2f1bc29998add1a01596ffc17f58b445f",
+  "initial_fixture_repair": "Algebraic matrix equality is expanded/reduced before zero comparison; the scientific expression was unchanged. Both modes rerun on the corrected helper.",
+  "normal_optimized_byte_identical": true,
+  "old_scientific_replay": false,
+  "output_sha256": "e32a18fb049f9cc6625cc984db318ae41e493ed296d45c97ec6c1f3718cc2194",
+  "primary_binding_source_pins": {
+    "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d",
+    "02_REGISTRY/research/A4D_NATIVE_PARTITION_CORRECTED_BRANCH_INFORMATION.md": "a4e8c15de4d736366e85f0bd19a2a394f6372295426b830d8a21bd25fbb3190c",
+    "02_REGISTRY/research/certificates/a4d_native_branch_information_cocycle.lean": "c4b5b347aea8ceff665a3ca298b50b8c3f32a27205c17dfc674b442a3c42df3d",
+    "02_REGISTRY/research/certificates/a4d_native_closed_record_engine.py": "7aead2716c7bf7899a134eedbf4b87dbe1ef9c85900189b5afc8cdfeed13f0f9",
+    "02_REGISTRY/research/sources/d0_record_generated_heat_v8_2026-10-14/RESULT.md": "f7ea30d997a58fa4e608d4403acae5f5e3d7e5da45116f9a7c3f62be5e99115c",
+    "03_FORMALIZATION/D0/CondensedAnchor/DetectorSupportGoldenWeight.lean": "643d0a1ec2c71e15bc3254211e3e24cf6b99fdf48f6ddd43a38848cd28c23307"
+  },
+  "python": "3.9.6",
+  "remote_CI_or_independent_acceptance_claimed": false,
+  "source_pins": {
+    "02_REGISTRY/research/certificates/a4d_native_curved_soldered_heat.py": "bf13f57c902da0005634ae6834c0b4e3ffd2df1aa196a61ebc0ff3dc0351c7da",
+    "02_REGISTRY/research/sources/d0_complete_record_channel_2026-10-17/check_flat_relaxation.py": "0dcb79f0959ecd4f4484a500ef1c0e53e47d95b4a95feb874d16840f56cc9ec9"
+  },
+  "status": "PASS_NEW_BOUNDED_PREPARATION_SOURCE",
+  "sympy": "1.14.0"
+}

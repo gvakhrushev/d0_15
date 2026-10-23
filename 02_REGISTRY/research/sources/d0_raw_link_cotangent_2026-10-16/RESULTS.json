@@ -1,0 +1,30 @@
+{
+  "carrier": {
+    "Lorentz_vector_dimension": 4,
+    "exterior_dimension": 16
+  },
+  "check_groups": {
+    "cotangent": 14,
+    "full16": 3,
+    "hostile": 11,
+    "path": 16,
+    "scope": 1,
+    "source": 2
+  },
+  "exact_checks": 47,
+  "inverse_second_coefficient": "1/12",
+  "jet_convention": "coefficients of h^j, no factorial in ell_j/j_j",
+  "scope": {
+    "all_grid_C0_inverse_or_remainder_is_proved": false,
+    "all_native_spatial_link_slots_apply_edgewise": true,
+    "fixed_or_explicitly_moving_smooth_background_jets": true,
+    "nonconstant_noncommuting_proper_parallel_transport": true,
+    "old_check_entrypoints_executed": false,
+    "physical_link_law_or_native_admission_is_selected": false
+  },
+  "source_pins": {
+    "02_REGISTRY/research/certificates/a4d_native_curved_soldered_heat.py": "bf13f57c902da0005634ae6834c0b4e3ffd2df1aa196a61ebc0ff3dc0351c7da",
+    "02_REGISTRY/research/certificates/a4d_native_joint_adjoint_source.py": "71ba142e284974db57d67c91a77ccd08a7e4f9759e8fc8daef7c5938774c0b28"
+  },
+  "status": "PASS"
+}

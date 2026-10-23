@@ -1,0 +1,51 @@
+{
+  "actual_Bell_zero_gain": 0.22291236000336476,
+  "actual_cap_one_H_readiness": 0.891649440013459,
+  "additional_actual_prefix_charges": "Common bank/controller/reading/storage charges are retained symbolically in the proof, not assigned zero by the diagnostic.",
+  "checker_sha256": "4d621c8426040db3d73418d2f9115527b5057d28361355badc129f14fb6a1a7f",
+  "checks": 119,
+  "fixture_rows": [
+    {
+      "abort_entropies": [
+        2.6090013997957096,
+        2.6090013997957096
+      ],
+      "baseline": 36.34218354038453,
+      "original_price": 0.5550015058270005,
+      "price": 36.46590023585385,
+      "row": 0,
+      "tagged_entropy": 5.215259324216802,
+      "untagged_entropy": 2.5875581348553935
+    },
+    {
+      "abort_entropies": [
+        2.6090013997957096,
+        2.6090013997957096
+      ],
+      "baseline": 36.34218354038453,
+      "original_price": 0.3482519394917247,
+      "price": 36.419813202092385,
+      "row": 1,
+      "tagged_entropy": 5.26134635797827,
+      "untagged_entropy": 2.5854541176561434
+    }
+  ],
+  "known_G_CNOT_branch_counts": [
+    27.0,
+    37.0,
+    42.0,
+    42.0,
+    42.0,
+    42.0,
+    43.0,
+    43.0,
+    43.0,
+    43.0
+  ],
+  "known_G_CNOT_prefix_mean_cost": 41.34679102006561,
+  "proof_sha256": "9f4736871514683524aa8e7ca2930b8a57a637c5bc5cbbb2011be6da95951ccf",
+  "scope": "Narrow cap-one paid H/Bell, literal known G/CNOT ledger including five tag copies, all reported labels, original RIGHT and coherent downstream record. Extra common actual prefix charges remain symbolic. Historical gate/GR suites not replayed; no physical cut or controller admission claimed.",
+  "source_pins_sha256": "d0c4bd7b18989104f3d39cdfa9d5569630a0fdfa15a18998b5926d2db8ca8cda",
+  "source_ref": "2961dc6ee4abcda0a0fb2aa36dc6ecd7e62a6535",
+  "status": "PASS"
+}

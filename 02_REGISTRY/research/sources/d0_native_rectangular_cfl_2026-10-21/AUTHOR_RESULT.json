@@ -1,0 +1,55 @@
+{
+  "status": "AUTHOR_RUN_PASS_FULL_NATIVE_ORIGINAL_BOX_CENSUS_AND_FROZEN_N1_ENERGY",
+  "date": "2026-10-21",
+  "scientific_owner": "EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE",
+  "pr": 334,
+  "source_main_owner_sha": "4971e037e5ec8b1b2a40ef2c458ad09e01185d9c",
+  "proof_sha": "2c65a0cf74ee8c2802c71dfc331a672d4cc9bda7",
+  "checker_sha": "f11e4a64d49f02f9f6b4ba057513ef8246752a5d",
+  "data": {
+    "status": "PASS_ORIGINAL_GOLDEN_RECTANGULAR_N1_CFL",
+    "owner_original_native_box_blob": "4971e037e5ec8b1b2a40ef2c458ad09e01185d9c",
+    "true_original_words": 75025,
+    "original_fine_L": 8,
+    "actual_rect_shape": [
+      8,
+      4,
+      4,
+      4
+    ],
+    "macro_native_counts": [
+      89,
+      260
+    ],
+    "macro_native_PF": [
+      0.6073708763745418,
+      1.7743418860379874
+    ],
+    "native_ready_mass": 0.34164078651201374,
+    "original_inverse_PF_source_error": 0,
+    "group_does_not_worsen_PF_supnorm": true,
+    "original_N1_frozen_r1_CFL_ratio": 1.5809407605967092,
+    "one_bin_checkerboard_exponential_growth": 4.078579648619218,
+    "two_bin_WmaxWmin": 1.0000915081622481,
+    "two_bin_CFL_margin": 0.6047286426049163,
+    "uniform_r_ge_three_fifths_gap": 0.041666666666666664,
+    "original_native_frozen_energy_error_140": 7.771561172376096e-16,
+    "scope": {
+      "full_nonlin_34_geometry_root": false,
+      "physical_selected_Book03": false,
+      "original_anisotropic_all42_star_calibration": false,
+      "GR_closed": false
+    }
+  },
+  "bounded_replay": "One true fine n24/L8 Golden count -> rectangular 8x4x4x4, actual N1 W(q=0) at f=.0125, 64D spatial stiffness, periodic checkerboard Rayleigh and 140-step conserved energy; algebraic all-L Golden PF comes from already owned original PF C^r theorem.",
+  "analytic_theorem": "For true linearized two-CAR N1 source on rank-two positive r>=3/5, one temporal bin per spatial h is necessarily high-frequency unstable near r=1, regardless positive spatial PF W; two genuine time bins is the least integer universal frozen-space CFL ratio and is strictly stable under native high-depth PF with Wmax/Wmin <24/23. Exact native F/R 4D boxes at 2L grouped spatially give required rectangular PF and all-site inverse-PF source coefficient P_READY/Mrect=P_READY*h_t*h_s^3.",
+  "limits": [
+    "Not absolute/compulsory Book03 HJR/Info",
+    "Not 16+24 anisotropic star Euler nor all34 coupled geometry root",
+    "Not large nonlinear two-scalar refinement",
+    "Time-varying energy needs true C1 input bounds",
+    "No exact full G0 writer/admission or physical generic GR closure",
+    "No external scientific peer review or new Lean suite"
+  ],
+  "GR_closed": false
+}

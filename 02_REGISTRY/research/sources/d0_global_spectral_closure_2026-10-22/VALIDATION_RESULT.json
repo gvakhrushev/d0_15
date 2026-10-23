@@ -1,0 +1,48 @@
+{
+  "status": "PASS_READ_ONLY_ACCEPTANCE",
+  "pinned_files": 16,
+  "new_active_checks_per_run": 190,
+  "replays": [
+    {
+      "command": [
+        "python",
+        "check_spectral_closure.py"
+      ],
+      "expected": "RESULT.json",
+      "stdout_sha256": "c215ce4d8a8cb34db64204656c86ddfab6e22f40d9cada01901ee469e1f3bc3f",
+      "returncode": 0
+    },
+    {
+      "command": [
+        "python",
+        "-O",
+        "check_spectral_closure.py"
+      ],
+      "expected": "RESULT_OPTIMIZED.json",
+      "stdout_sha256": "c215ce4d8a8cb34db64204656c86ddfab6e22f40d9cada01901ee469e1f3bc3f",
+      "returncode": 0
+    },
+    {
+      "command": [
+        "python",
+        "inputs/check_all40_arbitrary_brinkmann.py"
+      ],
+      "expected": "GEOMETRY_REPLAY.txt",
+      "stdout_sha256": "09570bf30707b6f25ad2e38b7b6be3474e0ff3c15b7e857327ebce07502b9db1",
+      "returncode": 0
+    },
+    {
+      "command": [
+        "python",
+        "previous/check_global_spectral.py"
+      ],
+      "expected": "previous/RESULT.json",
+      "stdout_sha256": "a71c4fbf00c350e8c483b8aaece8325182addc3788bb048e9f9e2ffc5c23768e",
+      "returncode": 0
+    }
+  ],
+  "sources_unchanged": true,
+  "remote_published": false,
+  "new_Lean_build": false,
+  "physical_GR_closed": false
+}

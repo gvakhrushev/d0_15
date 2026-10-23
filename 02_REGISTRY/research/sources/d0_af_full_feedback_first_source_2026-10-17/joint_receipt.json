@@ -1,0 +1,18 @@
+{
+  "check_names": [
+    "exact_same_program_refactorization",
+    "derived_fugacity_jet",
+    "hidden_compensation_preserves_joint_price",
+    "hidden_compensation_removes_source",
+    "local_radial_equation",
+    "joint_scene_row_at_vacuum",
+    "joint_link_row_at_vacuum",
+    "remaining_link_row_cannot_be_deleted",
+    "nonempty_product_control_r",
+    "nonempty_product_control_k",
+    "nonempty_product_control_y"
+  ],
+  "checks": 11,
+  "physical_GR_closed": false,
+  "status": "PASS_SCOPED_JOINT_EXTENSION"
+}

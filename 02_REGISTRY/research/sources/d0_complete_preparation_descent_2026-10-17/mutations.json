@@ -1,0 +1,26 @@
+{
+  "expected_results_modified": false,
+  "mutations": [
+    {
+      "failed_check": "central_projector_(0, -1)_(0, -1)",
+      "mutation": "wrong_signed_momentum_projector",
+      "status": "REJECTED_MATHEMATICALLY"
+    },
+    {
+      "failed_check": "full_shell_word_reconstruction_(0, -1)_1_(0, -1)",
+      "mutation": "omit_odd_word_return",
+      "status": "REJECTED_MATHEMATICALLY"
+    },
+    {
+      "failed_check": "normalized_conditional_depolarizing_weight",
+      "mutation": "drop_Fock_dimension_from_CP_weight",
+      "status": "REJECTED_MATHEMATICALLY"
+    },
+    {
+      "failed_check": "exact_preparation_response",
+      "mutation": "freeze_actual_preparation_response",
+      "status": "REJECTED_MATHEMATICALLY"
+    }
+  ],
+  "schema": "d0-complete-preparation-descent-mutations/1"
+}

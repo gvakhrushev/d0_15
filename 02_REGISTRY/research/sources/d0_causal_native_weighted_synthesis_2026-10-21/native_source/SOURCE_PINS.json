@@ -1,0 +1,73 @@
+{
+  "note": "Prior inputs unchanged at the observed fast-forward; concurrent paid-Golden-word owner consumed only for scope comparison.",
+  "observed_ref": "ea0ea3bed801b3a5f6bb147e803c75794214577b",
+  "primary_dictionary": "02_REGISTRY/research/sources/d0_primary_native_domain_source_2026-10-20/check_primary_domain_source.py",
+  "source_ref": "086fab99d8aaed7f712e9a3d2858c516b61901fc",
+  "sources": [
+    {
+      "bytes": 14517,
+      "path": "02_REGISTRY/research/sources/d0_physical_cap1_execution_composition_2026-10-21/moving_query/PROOF.md",
+      "sha256": "9dc733555100874b164e24a3dee7d73814faa4fc5a21a7b22a06ca3b23d93bd7"
+    },
+    {
+      "bytes": 28004,
+      "path": "02_REGISTRY/research/A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md",
+      "sha256": "a0a8a0b7389c7a6120ebbe402d111bf55cd2a00730403a00ffceca73548e7915"
+    },
+    {
+      "bytes": 24033,
+      "path": "02_REGISTRY/research/sources/d0_primary_native_domain_source_2026-10-20/check_primary_domain_source.py",
+      "sha256": "c67285c7469db49ff61f3e52597d0bcc6aad991ec1f7af025d6daeb065a43edf"
+    },
+    {
+      "bytes": 15594,
+      "path": "02_REGISTRY/research/sources/d0_primary_native_domain_source_2026-10-20/RESULT.md",
+      "sha256": "290772fb869cfa73ed0cc419d3182048d80ea9b02312be0b9d56ad558f5c47be"
+    },
+    {
+      "bytes": 19402,
+      "path": "02_REGISTRY/research/sources/d0_global_result_composition_2026-10-20/HOLONOMY_SOURCE_AND_REFINEMENT.md",
+      "sha256": "1d38287ed2b98c782dcc8bdd82c3e267e81f6381af522c891cde6aa8c33dd8a5"
+    },
+    {
+      "bytes": 38994,
+      "path": "02_REGISTRY/gr_assembly/sources/d0_full128_order_memory_2026-10-19/owner.md",
+      "sha256": "4f32d226dcf38284cae32ec78937915ae6f149271097107f3078efc0ba5545f0"
+    },
+    {
+      "bytes": 27944,
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/NATIVE_FOUR_COPY_MATTER_RESPONSE.md",
+      "sha256": "ce8d2e88d8a5669a3ef9de1a849a5e21ec0a55b3fdb253d4b990656b0062427a"
+    },
+    {
+      "bytes": 16828,
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/GOLDEN_EXACT_DETECTOR.md",
+      "sha256": "d33c9c2cb2322e381723f481eb1fcf58058fd05ad88eda92c5597c026d02eb77"
+    },
+    {
+      "bytes": 17162,
+      "path": "02_REGISTRY/research/A4D_LOCAL_LEFT_CODED_CAR_NULL_MATTER_EINSTEIN_2026_10_18.md",
+      "sha256": "828cba545e2c734741e7acf1509248c441de4451f9099cebee8d10c00230e35b"
+    },
+    {
+      "bytes": 51006,
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/TWO_NATIVE_8D_DETERMINANT_SOURCE.md",
+      "sha256": "0ea9a175e630e0cb547aff4d25ab355b60125282645e776f23d3a98c0e7d4851"
+    },
+    {
+      "bytes": 20156,
+      "path": "02_REGISTRY/research/A4D_SAME_EXECUTION_SPATIAL_WEIGHTS_AND_COMPLETE_SOURCE_2026_10_21.md",
+      "sha256": "42c9b9745f3c9ee78b868e991485bbaf8b77810f4261204d913fc87fc44377a1"
+    },
+    {
+      "bytes": 16039,
+      "path": "02_REGISTRY/research/A4D_PAID_GOLDEN_WORD_QUERY_SOURCE_LIMIT_2026_10_21.md",
+      "sha256": "9091b4ad313465098b410dca0bd9f49bc54de0b6afb33070774dffd5d5c58672"
+    },
+    {
+      "bytes": 23131,
+      "path": "02_REGISTRY/research/sources/d0_joint_preparation_compiler_clock_2026-10-21/balanced_preparation/BALANCED_NATIVE_PREPARATION.md",
+      "sha256": "7b9d3afe684f34695a4dfd6d89a8db457ba9cf47002733c65e9a2dc5c5751d68"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "checked_at_utc": "2026-10-17T01:07:01.006785+00:00",
+  "owner_sha256": "a637d454fb2ff502c643c6ea919eb969028cfd65bda19af65486fd8c472617ac",
+  "input_pins_verified": 10,
+  "duplicate_user_source_bytes_verified": true,
+  "new_local_links_verified": true,
+  "analytical_reviews": 3,
+  "corrections_applied": [
+    "closed H1 form restriction, no maximal L2-domain assertion",
+    "same TOTAL preparation EL when adding actual Rayleigh matter",
+    "nonstationary versus nonminimal critical preparations",
+    "independent-observer domain, no inferred current/admission invariance"
+  ],
+  "local_structural_checks": {
+    "validate_repo": "PASS warnings=0",
+    "validate_work": "PASS",
+    "validate_agent_protocol": "PASS"
+  },
+  "new_scientific_helper": null,
+  "old_scientific_replay": false,
+  "lean_build": false,
+  "independent_CONTROL_acceptance": false,
+  "remote_CI_claimed": false,
+  "physical_GR_closure": false
+}

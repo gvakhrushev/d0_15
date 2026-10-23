@@ -1,0 +1,137 @@
+{
+  "schema": "d0-native-pure-memory-complete-normal-validation/1",
+  "publication_parent_ref": "2419af86654726826cff71b2906fd4731213d48d",
+  "observed_main_ref": "1c67aac767da41ff0adc5b5d656a7ddc5f590a4a",
+  "execution_pr": 334,
+  "timestamp_utc": "2026-10-16T16:23:29.816805+00:00",
+  "commands": [
+    "python3 02_REGISTRY/research/certificates/a4d_native_pure_field_check.py",
+    "python3 -O 02_REGISTRY/research/certificates/a4d_native_pure_field_check.py"
+  ],
+  "python": "3.9.6",
+  "numpy": "2.0.2",
+  "mpmath": "1.3.0",
+  "sympy": "1.14.0",
+  "normal_optimized_scientific_output": "BYTE_IDENTICAL",
+  "scientific_output_sha256": "725eccecd242690ff124d0a067ca67e8f4e0c45f7f8e6d1adab65ae0a202f9ba",
+  "scientific_output_bytes": 1369119,
+  "new_exact_shell_checks": 203,
+  "new_outward_interval_blocks": 488,
+  "new_real_normal_directions": 40751,
+  "reused_real_normal_directions": 55,
+  "maximum_root_box_signature_distance_upper": 0.007301662519523286,
+  "maximum_root_box_signature_distance_q": [
+    4,
+    0,
+    1,
+    2
+  ],
+  "canonical_nonzero_normal_inverse_integer_upper": 681252,
+  "normal_V_inertia_real": {
+    "negative": 6852,
+    "positive": 33954,
+    "zero": 0
+  },
+  "full_normalized_amplitude_inertia": {
+    "negative": 11099,
+    "positive": 16774457,
+    "zero": 57195
+  },
+  "full_amplitude_dimension": 16842751,
+  "exact_local_flat_critical_family_dimension": 57195,
+  "analytic_normal_IFT_consumer": "PURE_MEMORY_NORMAL_FIELD_RESULT.md Sections4-5; joint owner Section14",
+  "analytic_interior_joint_kernel_consumer": {
+    "preparation_path": "rho_t=(1-t)P/128+t Pi_chi/8",
+    "same_normal_field_dimension": 40806,
+    "H_t_affine_on_fixed_V": true,
+    "faithful_normal_inertia": {
+      "positive": 39464,
+      "negative": 1342,
+      "zero": 0
+    },
+    "pure_normal_inertia": {
+      "negative": 6852,
+      "positive": 33954,
+      "zero": 0
+    },
+    "net_real_spectral_flow_toward_negative": 5510,
+    "q3300_faithful_inertia": [
+      12,
+      1
+    ],
+    "q3300_pure_inertia": [
+      11,
+      2
+    ],
+    "pure_canonical_representative": [
+      3,
+      0,
+      0,
+      3
+    ],
+    "existence_of_interior_full_joint_linearized_kernel_proved": true,
+    "floating_location_or_nonlinear_branch_certified": false
+  },
+  "full16_symbol_comparison": {
+    "normal_optimized_scientific_output": "BYTE_IDENTICAL",
+    "focused_groups": 9,
+    "excluded_field": "seconds",
+    "scientific_result_sha256": "e07e40497695cfa26ea7a0e5d4e950cf675dc5e743e69c56b6eea2c95b48ce85",
+    "point_comparison_is_not_interval_theorem": true
+  },
+  "peer_review": "independent reviews of true mixed chart jet and exterior trace reduction, sparseK99/incoming transpose, all error budgets, complete shell sections, real Fourier/inverse composition, rank-free normal IFT and interior joint-kernel spectral flow",
+  "prior_validation_owner_fingerprints_refreshed_only": [
+    "ALL_SHELL_TRANSFER_VALIDATION.json",
+    "FIELD_INVERSE_VALIDATION.json",
+    "NONZERO_ALGEBRA_VALIDATION.json",
+    "OPPOSITE_SHELL_TRANSFER_VALIDATION.json",
+    "RANK8_SOURCE_VALIDATION.json",
+    "SHELL_TRANSFER_VALIDATION.json",
+    "VALIDATION.json",
+    "ZERO_MODE_VALIDATION.json"
+  ],
+  "old_scientific_outputs_regenerated": false,
+  "old_root_matrix_or_Lean_runs_replayed": false,
+  "Ready_integration_and_two_inherited_Lean_lemmas": "DEFERRED; unchanged scope",
+  "physical_admission_refinement_or_original_fixed_g_tau_raw_GR_closed": false,
+  "sha256": {
+    "02_REGISTRY/research/sources/d0_native_field_transport_2026-10-16/stored_rotational_wave.py": "2b12f26d814a57cc99084e904deeac69a8f64a8d9a0eb9ee765e8104ef50bc37",
+    "02_REGISTRY/research/sources/d0_record_generated_heat_v8_2026-10-14/receipt.json": "da44c7393b1164ce4babcab2ea13707958364d273d2c3fa1d86d514a9ac83ae9",
+    "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/OPPOSITE_SHELL_TRANSFER_RESULTS.json": "ea994fef6edc38f4b01a98eed7379841f6a603dfbb02b641382bfa853f64db75",
+    "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/PURE_MEMORY_CHOICES.json": "be4facb35ddd2532f137db5a27a4ec6da3b97943980e93f9ddea9a8241390d6a",
+    "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/RANK8_SOURCE_RESULTS.json": "2091dfb04335648ab2229cb7730dc5d0834de68fdf2bdd2268593150f3ccb4f7",
+    "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/ZERO_MODE_RESULTS.json": "3191fff348ea6b4f16fa50013899f681c47428bca3f9e8db2bf22825bff94e38",
+    "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/field_inverse_choice.py": "1fa0f1022301d3eb529d1394a99c41849f193ea0e4980f94936674d29e7d5c8a",
+    "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/full_symbol_interval.py": "2bb2f26be6d6484d087a2e2e2591b681c793b5932790e3552c2b9fdc5021c84d",
+    "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/full_symbol_interval_weights.py": "0d8651dae3b6b7ba2049a1c71ac47895e536f9ccc5f85bf9978c133c75ccfc18",
+    "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/native_chart_check.py": "1cb2bd82796634b414b76a5396b629c98c3679aee3ce7aa63dfc34647ab84b65",
+    "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/nonzero_symbol_algebra.py": "b74c1a10ab6e1051dfb50942abf019cb19aeb890460bc98b919d2e848deecba1",
+    "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/pure_memory_choices.py": "7b26627292730abef6b36bd592398488bfea3085058570e6206c3938b078d506",
+    "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/pure_memory_curvature_check.py": "2c3ff9a9efa8920c958999e090e81fd3c2ee2f4448bc2e34868766e4ffbb6db9",
+    "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/pure_memory_interval.py": "19d4e33f7c74465da9079ec4e3c90e0b20b3b1aad448a0cdb1957a3fc61ef41f",
+    "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/pure_memory_shell_restriction_check.py": "ba1b75d8be0853f8ef047fae269b50bd3cfa86627935304dc92cdb63ca8277e2",
+    "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/pure_memory_symbol.py": "1ef97d8f72d5133c75c2c071ed75b8b9ce295322c407c49e91bf589afd2af9fd",
+    "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/rank8_source_submersion.py": "04d5fba2d34538e2c7e4b41748fafb4e88e041174f4380bd0e7990111ffc6afd",
+    "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/shell_transfer_all_orbits.py": "d8db3de5b34e4ee4ac7a9efb4676072d18b455dec5a72f0beb6b46b40a99eb1a",
+    "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/uniform_symbol_bounds.py": "53b0d77d2d2102a5960769a2be90b02760defc0602eba8a22430375c909ab4fe",
+    "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/PURE_MEMORY_NORMAL_FIELD_RESULT.md": "85dcefbabb3e828281142a8cd81d4d3d7861afe9bd198a3c758a9f1ade0969a2",
+    "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/PURE_MEMORY_SHELL_RESTRICTION.md": "57cda21d7fc228e81b357624bd3a1768b9ced6ee741de445eeea491493071585",
+    "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/PURE_MEMORY_SYMBOL_RESULTS.json": "e07e40497695cfa26ea7a0e5d4e950cf675dc5e743e69c56b6eea2c95b48ce85",
+    "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/RANK8_AMPLITUDE_FIBRE.md": "3fbdeaa3b7abffc4d2defe0aeb8b5a909487854ba992bd654a2172ea0328b2ba",
+    "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/AMPLITUDE_INERTIA_CONSUMER.md": "820432d60790ee378908402a7781dfe1c244950b4f87fa1d9ff66f7d47136cd7",
+    "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/LOCAL_CRITICAL_LOCUS_CONSUMER.md": "2c15b9ea9a06bdb84c0947df56c1019e585c3e3d6b11499471dedaf49438a969",
+    "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/FIELD_INVERSE_RESULTS.json": "1c8e100307747b0f816fe990521bb7ca59c00e072f6c1e197fc2e275f3d145eb",
+    "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/FULL_SYMBOL_Q3300.json": "cf4d196d9f26cc01ad34776f3b808431f63ca13cb6ef679325337ff04f0c1ebc",
+    "02_REGISTRY/research/sources/d0_native_joint_kernel_2026-10-16/PURE_MEMORY_FIELD_RESULTS.json": "725eccecd242690ff124d0a067ca67e8f4e0c45f7f8e6d1adab65ae0a202f9ba",
+    "02_REGISTRY/research/certificates/a4d_native_pure_field_check.py": "9155a3214e4bfd2749a5b106a6711d1769bd881a3790096ed1ddac8a18673a3b",
+    "02_REGISTRY/research/A4D_NATIVE_FULL_JOINT_KERNEL_AND_MATTER_REDUCTION.md": "cc533dc7c8d63442f9e3e52fc984d32dba4cd2e4f5f8f9c164ac46afbbfd4f20"
+  },
+  "structural_guards": {
+    "validate_repo": "PASS warnings=0",
+    "validate_work": "PASS",
+    "validate_agent_protocol": "PASS",
+    "work_views": "PASS stale=0",
+    "diff_check": "PASS",
+    "new_proof_links_and_input_hashes": "PASS"
+  }
+}

@@ -1,8 +1,9 @@
 """Historical source and report bindings for the reviewed #322 checkpoint.
 
-The source is restricted to eleven named entrypoints; the report to three
-entries, one of which receives only the report. Neither binding relaxes checks
-or removes selected consumers.
+The action source is restricted to eleven named entrypoints; the report to
+three entries, one of which receives only the report. Three source consumers
+also use two precisely pinned earlier support inputs. No binding relaxes checks
+or removes selected consumers; current-source compilation never applies them.
 """
 from __future__ import annotations
 
@@ -80,6 +81,71 @@ SELECTION_INPUTS = (ENTRYPOINTS | CAPSULES | RECEIPTS | {
 })
 
 
+# Exactly three immutable main-checkpoint consumers additionally bind the old
+# exterior source (and one receipt). Current-source Lean never uses these overlays.
+SUPPORT_MANIFEST = DIRECTORY + "/SUPPORT_INPUT.json"
+SUPPORT_SOURCE_HEAD = "b6a339c303451b18a3ff8c6c42113290fe98307c"
+SUPPORT_INPUTS = {
+    "03_FORMALIZATION/D0/Geometry/ArchiveAffineExteriorLink.lean": {
+        "snapshot_path": DIRECTORY + "/ArchiveAffineExteriorLink.lean",
+        "snapshot_sha256": "be8f2a58cc7c055b6db13b4846437e89d5cc5bc979cc2ebb9429bdf82f45b1a1",
+        "source_blob": "12cbe924b12fc756fe5a7009db01c59f02539a83",
+    },
+    CERT + "a4d_native_joint_field_quotient_certificate.json": {
+        "snapshot_path": DIRECTORY + "/a4d_native_joint_field_quotient_certificate.json",
+        "snapshot_sha256": "8807a418e67a4b2ac89495b7f80ab7e2924349067dea3f1aab5b8addf5b29f89",
+        "source_blob": "f27f8e182c1ae0d76f1b899cba99cba69dcf09d7",
+    },
+}
+SUPPORT_BINDINGS = {
+    CERT + "a4d_native_history_field_coupling_check.py": [
+        "03_FORMALIZATION/D0/Geometry/ArchiveAffineExteriorLink.lean",
+    ],
+    CERT + "a4d_native_prepared_action_check.py": [
+        "03_FORMALIZATION/D0/Geometry/ArchiveAffineExteriorLink.lean",
+        CERT + "a4d_native_joint_field_quotient_certificate.json",
+    ],
+    CERT + "a4d_native_scene_payload_action_check.py": [
+        "03_FORMALIZATION/D0/Geometry/ArchiveAffineExteriorLink.lean",
+    ],
+}
+SUPPORT_ENTRYPOINTS = set(SUPPORT_BINDINGS)
+SUPPORT_SELECTION_INPUTS = set(SUPPORT_INPUTS) | {
+    item["snapshot_path"] for item in SUPPORT_INPUTS.values()
+} | {SUPPORT_MANIFEST, "tools/native_checkpoint_inputs.py", "tools/run_research_certs.py"}
+
+
+def validate_support(root: Path) -> None:
+    # Older main snapshots predate this optional bundle and already carry the
+    # exact published inputs. Missing support is accepted only for those bytes;
+    # an extended current source cannot silently drop its replay binding.
+    if not (root / SUPPORT_MANIFEST).exists():
+        for target, binding in SUPPORT_INPUTS.items():
+            if sha(read(root, target)) != binding["snapshot_sha256"]:
+                raise ValueError("Historical support manifest required for changed input: " + target)
+        return
+    data = json.loads(read(root, SUPPORT_MANIFEST))
+    required = {
+        "schema": "d0-native-historical-support-input/1",
+        "scope": "HISTORICAL_COMPILED_INPUT_REPLAY_NOT_CURRENT_SOURCE_PROOF",
+        "source_head": SUPPORT_SOURCE_HEAD,
+        "inputs": SUPPORT_INPUTS, "entrypoints": SUPPORT_BINDINGS,
+    }
+    if data != required:
+        raise ValueError("Unexpected historical support source, paths or entrypoint set")
+    for target, binding in SUPPORT_INPUTS.items():
+        snapshot = read(root, binding["snapshot_path"])
+        if sha(snapshot) != binding["snapshot_sha256"]:
+            raise ValueError("Historical support snapshot hash mismatch: " + target)
+        if target.endswith(".lean"):
+            original = declarations(snapshot.decode())
+            maintained = declarations(read(root, target).decode())
+            changed = [name for name, body in original.items() if maintained.get(name) != body]
+            if changed:
+                raise ValueError("Maintained exterior interface changed; compatibility review required: "
+                                 + ", ".join(changed))
+
+
 def sha(data: bytes) -> str:
     return hashlib.sha256(data).hexdigest()
 
@@ -147,6 +213,7 @@ def validate(root: Path) -> tuple[dict, bytes, list[str]]:
     if set(data["compatibility_capsules"]) != CAPSULES:
         raise ValueError("Unexpected current compatibility capsule set")
     validate_report(root, data)
+    validate_support(root)
     snapshot = read(root, SNAPSHOT)
     if sha(snapshot) != SOURCE_SHA256:
         raise ValueError("Historical source snapshot hash mismatch")
@@ -195,7 +262,21 @@ def apply(root: Path, entrypoint: str) -> Overlay | None:
     else:
         data = json.loads(read(root, MANIFEST))
         validate_report(root, data)
-    report_overlay = None
+    support_overlay = None
+    support_provenance = []
+    support_targets = SUPPORT_BINDINGS.get(entrypoint, []) if (root / SUPPORT_MANIFEST).exists() else []
+    for target in reversed(support_targets):
+        binding = SUPPORT_INPUTS[target]
+        maintained = read(root, target)
+        support_snapshot = read(root, binding["snapshot_path"])
+        provenance = {
+            "mode": "HISTORICAL_COMPILED_INPUT_REPLAY_NOT_CURRENT_SOURCE_PROOF",
+            "source_head": SUPPORT_SOURCE_HEAD, "target_path": target,
+            **binding, "maintained_sha256": sha(maintained),
+        }
+        support_overlay = Overlay(root / target, maintained, support_snapshot, provenance, support_overlay)
+        support_provenance.insert(0, provenance)
+    report_overlay = support_overlay
     if entrypoint in REPORT_ENTRYPOINTS:
         report_maintained = read(root, REPORT_TARGET)
         report_snapshot = read(root, REPORT_SNAPSHOT)
@@ -211,7 +292,7 @@ def apply(root: Path, entrypoint: str) -> Overlay | None:
             "receipt_path": REPORT_BINDINGS[entrypoint],
             "receipt_sha256": data["report_input"]["receipts"][REPORT_BINDINGS[entrypoint]],
         }
-        report_overlay = Overlay(root / REPORT_TARGET, report_maintained, report_snapshot, report_provenance)
+        report_overlay = Overlay(root / REPORT_TARGET, report_maintained, report_snapshot, report_provenance, support_overlay)
     if entrypoint not in ENTRYPOINTS:
         report_overlay.target.write_bytes(report_overlay.snapshot)
         return report_overlay
@@ -226,8 +307,13 @@ def apply(root: Path, entrypoint: str) -> Overlay | None:
         "current_source_compilation": "SEPARATE_REQUIRED_LEAN_COMPATIBILITY_CHECK",
     }
     target = root / TARGET
-    if report_overlay is not None:
+    if entrypoint in REPORT_ENTRYPOINTS:
         provenance["report_input"] = report_overlay.provenance
-        report_overlay.target.write_bytes(report_overlay.snapshot)
+    if support_provenance:
+        provenance["support_inputs"] = support_provenance
+    overlay = report_overlay
+    while overlay is not None:
+        overlay.target.write_bytes(overlay.snapshot)
+        overlay = overlay.additional
     target.write_bytes(snapshot)
     return Overlay(target, maintained, snapshot, provenance, report_overlay)

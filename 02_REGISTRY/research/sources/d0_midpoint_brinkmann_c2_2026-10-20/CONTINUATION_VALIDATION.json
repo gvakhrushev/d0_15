@@ -1,0 +1,200 @@
+{
+  "date_utc": "2026-10-20T15:52:41.334600+00:00",
+  "owner": {
+    "repository": "gvakhrushev/d0_15",
+    "pull_request": 334,
+    "task": "EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE"
+  },
+  "scope": "Analytical configured-sector continuation and targeted diagnostic replay; no assembly acceptance or physical GR closure.",
+  "consumed_input": {
+    "commit": "441fac23c1da2d51d524ba96e8a18f2a1d5dc98f",
+    "all40_proof": "02_REGISTRY/gr_assembly/sources/d0_double_null_quadratic_cartan_2026-10-19/arbitrary_brinkmann_all40.md",
+    "all40_proof_git_blob": "050ee972efa0f2ae37206b2ef9e3b4122dbac204",
+    "original_midpoint_proof_git_blob": "63c36b18af67fc1f113f9e33deb13cf43ddf4556",
+    "original_midpoint_checker_git_blob": "589ab3b36a03bd848ae1f74adc3c6e7221fe40fb",
+    "unchanged_all40_replayed": false
+  },
+  "artifacts_sha256": {
+    "02_REGISTRY/research/A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md": "71497086dfad667831c77d69201aea3890909d0cf772791f7df32b8b8c3c07d4",
+    "02_REGISTRY/research/sources/d0_midpoint_brinkmann_c2_2026-10-20/check_midpoint_brinkmann_c2.py": "e099b976230480ca9f1f16d36d8cdd528e3e659364b03ce4878ad145b6069621",
+    "02_REGISTRY/research/sources/d0_midpoint_brinkmann_c2_2026-10-20/check_smooth_dirichlet_recovery.py": "a7b53ebdc2e9178b4cbe7e369fc69c23ff943f4bd5f938c329b93a03a3ad0454",
+    "02_REGISTRY/research/sources/d0_midpoint_brinkmann_c2_2026-10-20/check_brinkmann_curvature_square.py": "10a417de4883464565f09a18f6f5b2b79ccb86e62a8f9678b47cb54da6d215e4"
+  },
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "bounded_independent_reviews": [
+    {
+      "reviewer_role": "review_midpoint assistant, separate analytical and exact-checker review",
+      "reviewed_proof_sha256": "71497086dfad667831c77d69201aea3890909d0cf772791f7df32b8b8c3c07d4",
+      "scope": "Original midpoint qualifications and sections 7-8, 10; exact full-holonomy checker.",
+      "conclusion": "Accepted in stated scope; no remaining mathematical blocker.",
+      "required_corrections_retained": [
+        "CAR admission on sufficiently fine meshes and separate all-mesh sufficient condition",
+        "Separate matter and coframe time grids",
+        "Expanded sourced stencil/collar",
+        "Uniform external coefficient; no automatic Golden weight transport",
+        "On-family first covectors only; no off-shell or Hessian equivalence"
+      ],
+      "checker_sha256": "10a417de4883464565f09a18f6f5b2b79ccb86e62a8f9678b47cb54da6d215e4"
+    },
+    {
+      "reviewer_role": "action_bridge assistant, separate analytical review",
+      "reviewed_proof_sha256": "71497086dfad667831c77d69201aea3890909d0cf772791f7df32b8b8c3c07d4",
+      "scope": "Final section 9 finite-record interpolation, interior estimates, data derivatives and soundness; sections 11-12.",
+      "conclusion": "Accepted in stated scope; no remaining mathematical blocker.",
+      "required_corrections_retained": [
+        "Finite-record-only time and space reconstruction",
+        "Psi C^(r+3), W C^(r+5) regularity and full normalized CAR readout",
+        "Exact second data derivative at time nodes; O(h^2) interpolation between nodes",
+        "C^2 solution-data map distinct from full-action Hessian",
+        "Convergent-data and physical-price membership assumptions retained"
+      ]
+    }
+  ],
+  "runs": [
+    {
+      "command": "python3 02_REGISTRY/research/sources/d0_midpoint_brinkmann_c2_2026-10-20/check_midpoint_brinkmann_c2.py",
+      "sha256": "e099b976230480ca9f1f16d36d8cdd528e3e659364b03ce4878ad145b6069621",
+      "exit_code": 0,
+      "elapsed_seconds": 0.016968,
+      "stdout": "L=  8 h=0.125000 nativeEul=+6.22e-15 C0err=0.00014923729 C2err=0.0020960619 RicciError=-0.00017811499\nL= 16 h=0.062500 nativeEul=-1.09e-13 C0err=3.7399334e-05 C2err=0.00052535875 RicciError=-4.470574e-05\nL= 32 h=0.031250 nativeEul=+8.76e-13 C0err=9.3554739e-06 C2err=0.00013142387 RicciError=-1.1187557e-05\nL= 64 h=0.015625 nativeEul=+3.91e-13 C0err=2.3392212e-06 C2err=3.2861231e-05 RicciError=-2.7975855e-06\nL=128 h=0.007812 nativeEul=-1.29e-11 C0err=5.8482735e-07 C2err=8.2156368e-06 RicciError=-6.9943989e-07\nPASS: exact original reduced finite 40+2 Euler, nonflat nonvacuum, O(h^2) metric and curvature convergence on midpoint clock\nEXACT common Einstein class L=8, matter_record_err=0.00015, native_euler=+2.22e-15\nEXACT common Einstein class L=16, matter_record_err=3.74e-05, native_euler=+4.35e-14\nEXACT common Einstein class L=32, matter_record_err=9.38e-06, native_euler=-3.55e-15\nEXACT common Einstein class L=64, matter_record_err=2.34e-06, native_euler=-4.26e-13\nEXACT common Einstein class L=128, matter_record_err=5.86e-07, native_euler=-6.65e-12\nPASS: exact same continuum nonlinear sourced Einstein metric on every tested admissible lattice, O(h^2) CAR recovery at matter nodes\nPASS: coarse-mesh CAR aliasing control; all-h claim requires admissibility\n",
+      "stderr": ""
+    },
+    {
+      "command": "python3 02_REGISTRY/research/sources/d0_midpoint_brinkmann_c2_2026-10-20/check_smooth_dirichlet_recovery.py",
+      "sha256": "a7b53ebdc2e9178b4cbe7e369fc69c23ff943f4bd5f938c329b93a03a3ad0454",
+      "exit_code": 0,
+      "elapsed_seconds": 0.336202,
+      "stdout": "{\n  \"scope\": \"new smooth harmonic Dirichlet lift and native readout only; original all40+2 theorem consumed\",\n  \"rows\": [\n    {\n      \"L\": 16,\n      \"native_equation_residual\": 1.4953316362920077e-14,\n      \"naive_sample_harmonic_residual\": 0.024136257296689223,\n      \"metric_grid_error\": 0.00010598304368640565,\n      \"native_link_error\": 0.00017024251990985922,\n      \"native_curvature_error\": 0.0018736131678943335,\n      \"matter_record_error\": 6.6359000234855685e-06\n    },\n    {\n      \"L\": 32,\n      \"native_equation_residual\": 1.1944611966185903e-13,\n      \"naive_sample_harmonic_residual\": 0.008522815780395376,\n      \"metric_grid_error\": 2.6756062524002644e-05,\n      \"native_link_error\": 4.468614422944647e-05,\n      \"native_curvature_error\": 0.0004874443818593255,\n      \"matter_record_error\": 1.6587358689876906e-06\n    },\n    {\n      \"L\": 64,\n      \"native_equation_residual\": 6.184636136552513e-13,\n      \"naive_sample_harmonic_residual\": 0.0025896484637542017,\n      \"metric_grid_error\": 6.767786045538959e-06,\n      \"native_link_error\": 1.1512573396363357e-05,\n      \"native_curvature_error\": 0.000123671804101666,\n      \"matter_record_error\": 4.146690236234885e-07\n    },\n    {\n      \"L\": 128,\n      \"native_equation_residual\": 2.6081636850250334e-12,\n      \"naive_sample_harmonic_residual\": 0.0007113741721695988,\n      \"metric_grid_error\": 1.6924379392588285e-06,\n      \"native_link_error\": 2.905638017899892e-06,\n      \"native_curvature_error\": 3.102726931197841e-05,\n      \"matter_record_error\": 1.036663219773598e-07\n    }\n  ],\n  \"observed_orders\": {\n    \"metric_grid_error\": [\n      1.9858957384873264,\n      1.9831099562682863,\n      1.999581028354063\n    ],\n    \"native_link_error\": [\n      1.9296919392974805,\n      1.956617212311373,\n      1.986283464527787\n    ],\n    \"native_curvature_error\": [\n      1.942513600675798,\n      1.9787209963836532,\n      1.9949079811882802\n    ],\n    \"matter_record_error\": [\n      2.0002079756855378,\n      2.0000519901457183,\n      2.0000129971618397\n    ]\n  },\n  \"proof_status\": \"numerical diagnostic; the uniform analytical proof establishes the theorem\"\n}\n",
+      "stderr": "",
+      "result": {
+        "scope": "new smooth harmonic Dirichlet lift and native readout only; original all40+2 theorem consumed",
+        "rows": [
+          {
+            "L": 16,
+            "native_equation_residual": 1.4953316362920077e-14,
+            "naive_sample_harmonic_residual": 0.024136257296689223,
+            "metric_grid_error": 0.00010598304368640565,
+            "native_link_error": 0.00017024251990985922,
+            "native_curvature_error": 0.0018736131678943335,
+            "matter_record_error": 6.6359000234855685e-06
+          },
+          {
+            "L": 32,
+            "native_equation_residual": 1.1944611966185903e-13,
+            "naive_sample_harmonic_residual": 0.008522815780395376,
+            "metric_grid_error": 2.6756062524002644e-05,
+            "native_link_error": 4.468614422944647e-05,
+            "native_curvature_error": 0.0004874443818593255,
+            "matter_record_error": 1.6587358689876906e-06
+          },
+          {
+            "L": 64,
+            "native_equation_residual": 6.184636136552513e-13,
+            "naive_sample_harmonic_residual": 0.0025896484637542017,
+            "metric_grid_error": 6.767786045538959e-06,
+            "native_link_error": 1.1512573396363357e-05,
+            "native_curvature_error": 0.000123671804101666,
+            "matter_record_error": 4.146690236234885e-07
+          },
+          {
+            "L": 128,
+            "native_equation_residual": 2.6081636850250334e-12,
+            "naive_sample_harmonic_residual": 0.0007113741721695988,
+            "metric_grid_error": 1.6924379392588285e-06,
+            "native_link_error": 2.905638017899892e-06,
+            "native_curvature_error": 3.102726931197841e-05,
+            "matter_record_error": 1.036663219773598e-07
+          }
+        ],
+        "observed_orders": {
+          "metric_grid_error": [
+            1.9858957384873264,
+            1.9831099562682863,
+            1.999581028354063
+          ],
+          "native_link_error": [
+            1.9296919392974805,
+            1.956617212311373,
+            1.986283464527787
+          ],
+          "native_curvature_error": [
+            1.942513600675798,
+            1.9787209963836532,
+            1.9949079811882802
+          ],
+          "matter_record_error": [
+            2.0002079756855378,
+            2.0000519901457183,
+            2.0000129971618397
+          ]
+        },
+        "proof_status": "numerical diagnostic; the uniform analytical proof establishes the theorem"
+      }
+    },
+    {
+      "command": "python3 02_REGISTRY/research/sources/d0_midpoint_brinkmann_c2_2026-10-20/check_brinkmann_curvature_square.py",
+      "sha256": "10a417de4883464565f09a18f6f5b2b79ccb86e62a8f9678b47cb54da6d215e4",
+      "exit_code": 0,
+      "elapsed_seconds": 5.971047,
+      "stdout": "{\n  \"status\": \"PASS\",\n  \"arithmetic\": \"Fraction, exact\",\n  \"on_shell\": [\n    {\n      \"h\": \"1\",\n      \"site\": [\n        0,\n        0,\n        0,\n        0\n      ],\n      \"coframe_rows\": 16,\n      \"independent_link_rows\": 24,\n      \"exact_residual\": \"0\"\n    },\n    {\n      \"h\": \"1/3\",\n      \"site\": [\n        2,\n        1,\n        -1,\n        2\n      ],\n      \"coframe_rows\": 16,\n      \"independent_link_rows\": 24,\n      \"exact_residual\": \"0\"\n    }\n  ],\n  \"hostile_H_x4_Q_density\": \"0\",\n  \"hostile_H_x4_opposite_null_row\": \"-12\",\n  \"nonuniform_weight_nonzero_rows\": [\n    \"103558/3532005\",\n    \"464333/71424990\"\n  ],\n  \"incompatible_collar_opposite_null_row\": \"-3/5\",\n  \"scope\": \"Q_h unrestricted first source only; no native full-price identification\"\n}\n",
+      "stderr": "",
+      "result": {
+        "status": "PASS",
+        "arithmetic": "Fraction, exact",
+        "on_shell": [
+          {
+            "h": "1",
+            "site": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "coframe_rows": 16,
+            "independent_link_rows": 24,
+            "exact_residual": "0"
+          },
+          {
+            "h": "1/3",
+            "site": [
+              2,
+              1,
+              -1,
+              2
+            ],
+            "coframe_rows": 16,
+            "independent_link_rows": 24,
+            "exact_residual": "0"
+          }
+        ],
+        "hostile_H_x4_Q_density": "0",
+        "hostile_H_x4_opposite_null_row": "-12",
+        "nonuniform_weight_nonzero_rows": [
+          "103558/3532005",
+          "464333/71424990"
+        ],
+        "incompatible_collar_opposite_null_row": "-3/5",
+        "scope": "Q_h unrestricted first source only; no native full-price identification"
+      }
+    }
+  ],
+  "source_checks": {
+    "python_syntax": "passed for all three checkers",
+    "unique_equation_labels": 88,
+    "display_math_delimiters": "balanced"
+  },
+  "interpretation": {
+    "smooth_recovery": "The proof, not the mesh table, establishes the uniform theorem. The diagnostic checks a rational non-bandlimited harmonic target.",
+    "finite_curvature_square": "Exact Fraction arithmetic differentiates all 16 coframe and 24 link directions, with off-shell, weight and collar controls.",
+    "original_all40": "Consumed from unchanged pinned proof; numerical reduced residuals do not independently re-prove the reduction.",
+    "lean_replayed": false,
+    "github_ci": "Separate structural evidence, not included in this local mathematical replay.",
+    "GR_closed": false,
+    "native_complete_price_selected": false
+  }
+}

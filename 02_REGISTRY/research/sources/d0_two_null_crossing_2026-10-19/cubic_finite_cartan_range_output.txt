@@ -1,0 +1,13 @@
+PASS source-forced cubic link coefficient (2, 1) nonzero rows 9
+PASS source-forced cubic link coefficient (1, 2) nonzero rows 9
+PASS exact site-varying proper-Lorentz cubic correction solves all 24 links
+Before the coupled coframe response, the link-only lift leaves this 16-row source at A=(1,0), B=(0,1): [a^2*b] rows 3=-5/32,13=5/32; [a*b^2] rows 6=-5/32,8=5/32.
+PASS hostile radial H/J tuning: four mixed coframe rows remain
+PASS symbolic arbitrary orthogonal cubic 24-link closure for mesh h
+PASS exact cubic coframe residual scales as h^3 on fixed physical profiles
+PASS symbolic coupled original 24-link + 16-coframe cubic lift
+PASS all 400 Euler coefficient identities through total degree 3
+PASS proper-Lorentz link constraint through total degree 3
+SCOPE: a local polynomial finite-stencil perturbative jet on the
+unwrapped transverse lattice; no periodic-carrier root, all-order
+solution, same-programme Cost-Info selection, or physical GR closure.

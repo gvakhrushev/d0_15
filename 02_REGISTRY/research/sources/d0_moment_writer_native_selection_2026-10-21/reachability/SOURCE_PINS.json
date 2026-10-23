@@ -1,0 +1,73 @@
+{
+  "scope": "Exact finite same-catalogue CQ descent and explicit same-initial controller/price gate; no Book or native-choice promotion.",
+  "source_ref": "f64d4c3389b507c7e7fb66ace9480ed6191c463d",
+  "sources": [
+    {
+      "bytes": 27060,
+      "label": "six-face proof",
+      "path": "02_REGISTRY/research/sources/d0_native_joint_field_minimum_2026-10-20/JOINT_FIELD_MINIMUM_OBSTRUCTION.md",
+      "sha256": "d14d72318229ac6102d38aa25f84e3617116257dea6a40fb4d3a6d1d3fe1fb54"
+    },
+    {
+      "bytes": 905,
+      "label": "six-face exact receipt",
+      "path": "02_REGISTRY/research/sources/d0_native_joint_field_minimum_2026-10-20/WITNESS_RECEIPT.json",
+      "sha256": "a8c7f832e739d19a6fa7c64508c1cae314d6c6b01a2ae019ce331029ba669519"
+    },
+    {
+      "bytes": 28827,
+      "label": "exact moment dictionary",
+      "path": "02_REGISTRY/research/sources/d0_paid_moment_field_writer_2026-10-21/moments/EXACT_MOMENT_SOURCE_CONSTRUCTION.md",
+      "sha256": "8c4c3cf03ebf637de6917776f13533d8b9f20cd0e8790025cf64a092915aef15"
+    },
+    {
+      "bytes": 31515,
+      "label": "paid code and full CQ writer",
+      "path": "02_REGISTRY/research/sources/d0_paid_moment_field_writer_2026-10-21/code/PAID_CODE_AND_MOMENT_WRITER.md",
+      "sha256": "e95f0486456c53cf0ce40023bab08ac744fd6189b397d29a8773446c168244a0"
+    },
+    {
+      "bytes": 35006,
+      "label": "original positive polynomial report",
+      "path": "02_REGISTRY/research/sources/d0_causal_native_weighted_synthesis_2026-10-21/native_source/NATIVE_POLYNOMIAL_FIRST_JET.md",
+      "sha256": "4d098d1e6ad8cb7daf477b498f808b7b962d6432f3da78ae573e321dbbcb915d"
+    },
+    {
+      "bytes": 15594,
+      "label": "strict domain and fixed scale",
+      "path": "02_REGISTRY/research/sources/d0_primary_native_domain_source_2026-10-20/RESULT.md",
+      "sha256": "290772fb869cfa73ed0cc419d3182048d80ea9b02312be0b9d56ad558f5c47be"
+    },
+    {
+      "bytes": 20156,
+      "label": "actual spatial weights and source",
+      "path": "02_REGISTRY/research/A4D_SAME_EXECUTION_SPATIAL_WEIGHTS_AND_COMPLETE_SOURCE_2026_10_21.md",
+      "sha256": "42c9b9745f3c9ee78b868e991485bbaf8b77810f4261204d913fc87fc44377a1"
+    },
+    {
+      "bytes": 25208,
+      "label": "original unrestricted all40 dictionary",
+      "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_quadratic_cartan_2026-10-19/arbitrary_brinkmann_all40.md",
+      "sha256": "8dbca8ff9a4567a2baf216357b5d3ffa2d217281ced4e5d0e535257db2f5e83e"
+    },
+    {
+      "bytes": 86193,
+      "label": "Book03 finite controller",
+      "path": "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md",
+      "sha256": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d"
+    },
+    {
+      "bytes": 12448,
+      "label": "prospective allowed and price definitions",
+      "path": "03_FORMALIZATION/D0/Foundation/ProspectiveExecution.lean",
+      "sha256": "99db926c47864c53ecf8d43caf2518f86b96e42cdffccaaf26f6c93205155ed4"
+    },
+    {
+      "bytes": 19366,
+      "label": "prior prospective bridge scope",
+      "path": "02_REGISTRY/research/sources/d0_native_joint_field_minimum_2026-10-20/PROSPECTIVE_FIELD_REALIZATION_BRIDGE.md",
+      "sha256": "26c9efbe6b6ffe3db57d0a7f43911cc4fa9defd387a11bb541d59cb4b0faffb1"
+    }
+  ],
+  "verification": "git show historical source_ref:path; no old checker execution or arithmetic import"
+}

@@ -1416,7 +1416,7 @@
     {
       "id": "prospective-native-selection",
       "title": "Минимальный генератор → родной закон физического исполнения",
-      "contribution": "Центральный переход уже имеет входы: необходимое ядро проверяемости, достаточная будущая память, условные Bellman/no-detour теоремы, исходная all327 current-rate минимизация и геометрические классы. В ProspectiveExecution.optimal оптимальность пока является предпосылкой. All327 доказывает минимальную conditional relative entropy при заданном stationary current; свободный current-rate минимум находится при нулевом токе, тогда как scalar Book action в сопряжённой price-координате имеет максимум. Нужны родные условия допустимости и фактические Cost/Info, объясняющие обязательное или предпочтительное продолжение. До исполнения альтернативы с одной полной начальной конфигурацией и задачей могут иметь разные будущие часы; после сохранения истории её требуемые различимости подлежат сохранению. Краткость генератора, длина записи, число гейтов и полное действие остаются разными величинами до доказанного связывания. Нулевой ориентированный ток не означает idle: нормированный Perron-процесс может иметь симметричный положительный поток и единичную активность на завершённый шаг. Сама нормировка ещё не доказывает физическое осуществление шага.",
+      "contribution": "Центральный переход уже имеет входы: необходимое ядро проверяемости, достаточная будущая память, условные Bellman/no-detour теоремы, исходная all327 current-rate минимизация и геометрические классы. В ProspectiveExecution.optimal оптимальность пока является предпосылкой. All327 доказывает минимальную conditional relative entropy при заданном stationary current; свободный current-rate минимум находится при нулевом токе, тогда как scalar Book action в сопряжённой price-координате имеет максимум. Нужны родные условия допустимости и фактические Cost/Info, объясняющие обязательное или предпочтительное продолжение. До исполнения альтернативы с одной полной начальной конфигурацией и задачей могут иметь разные будущие часы; после сохранения истории её требуемые различимости подлежат сохранению. Краткость генератора, длина записи, число гейтов и полное действие остаются разными величинами до доказанного связывания. Нулевой ориентированный ток не означает idle: нормированный Perron-процесс может иметь симметричный положительный поток и единичную активность на завершённый шаг. Сама нормировка ещё не доказывает физическое осуществление шага. На той же точной невакуумной Brinkmann-семье вычислен ненулевой материальный источник известной двухраундовой оплачиваемой port-компоненты. Доказательство чётности даёт нулевой смешанный гессиан «материя–геометрия», поэтому одна только элиминация по Шуру внутренних направлений Lorentz-связи не может устранить этот источник. Это ограниченный результат для условного когерентного подъёма по узлам; он не является полной ценой Book03 Cost–Info, не выбирает обязательную подготовку oldRIGHT/reference128 и не отождествляет native port-раунды с scene-J2-тикками. Latest #334 composition adds a quantitative future-probability inverse for the primary metric/curvature and a subdivision-stable reconstruction of the original holonomy/star density. It also computes surviving complete-price debts: field-dependent compiler occupation and paid Julia-repeat costs are not removed by a matched reference. A fixed-coordinate-pairing writer cannot reach the decoded changed field; a genuinely admitted joint writer or native stationary/constraint law is still required. These are research-only operational maps, not physical Book selection. На исходном Golden17 21 октября добавлен точный остановочный тест ориентации для неизвестной ненулевой силы сигнала: сохраняются все 17 исходов, а информация конкретной задачи и граница полной остановленной цены выведены без заранее заданной силы. Это только результат для задачи наблюдения; её обязательность в Book03 и совпадение её Info с полным физическим источником Cost−Info остаются открытыми.",
       "results": [],
       "consumers": [
         "constitutive",
@@ -1453,9 +1453,39 @@
           "label": "Current/activity distinction and exact next physical substitution after the composed generic transfer",
           "ref": "7cb104eddfa6fa2479b3c7ee296a1be14df30b6b",
           "path": "02_REGISTRY/research/D0_FOUNDATION_THEORY_TRANSFER_COMPOSITION_2026_10_20.md"
+        },
+        {
+          "label": "Same nonvacuum Brinkmann representatives: exact paid-port material residual and parity obstruction to geometry-only cancellation; full Cost-Info remains open",
+          "ref": "227cbb195a952a93cd23e4049d2db5c34b75b277",
+          "path": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md"
+        },
+        {
+          "label": "Paired outer Book source on the same exact family: direct finite-source substitution fails; reference/preparation accounting remains open",
+          "ref": "227cbb195a952a93cd23e4049d2db5c34b75b277",
+          "path": "02_REGISTRY/research/A4D_SAME_HISTORY_PRICE_AND_SOURCE_COMPOSITION_2026_10_20.md"
+        },
+        {
+          "label": "Research-only #334: composed operational metric/curvature and holonomy reconstruction with explicit full-price debt and native-writer boundary",
+          "ref": "2c592f9b9437cd302fcd39352b85212341bff968",
+          "path": "02_REGISTRY/research/A4D_GLOBAL_RESULT_COMPOSITION_2026_10_20.md"
+        },
+        {
+          "label": "Research-only #334: exact nonzero independent primary CAR preparation Euler; direct HJR-only stationarity fails on this family",
+          "ref": "24b158a62df1af92846bc3a7fa3fada9a56b65eb",
+          "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/PRIMARY_CAR_PREPARATION_SOURCE.md"
+        },
+        {
+          "label": "Research-only #334: one compulsory full Book source, with the original stopped-clock full128 operator and preparation-safe 42-direction test; physical admission remains open",
+          "ref": "d99d965fcc87a15a1b90b74af525e383331b3928",
+          "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/D0_ONE_SOURCE_BREAKTHROUGH_SYNTHESIS.md"
+        },
+        {
+          "label": "Research-only #334: original Golden17 unknown-strength stopped orientation task; task-specific Info and full trial bound, compulsory Book03 selection remains open",
+          "ref": "e5571e21ba65c73dd60352b3611ccd43a3fd9d09",
+          "path": "02_REGISTRY/research/A4D_NATIVE17_CATALOG_FREE_STOP_AND_COMPLETE_PRICE_2026_10_21.md"
         }
       ],
-      "next_question": "Продолжить существующий constitutive/native_sector owner: на одном исходном branch/record процессе вывести полные Cost/Info и необходимые ограничения, затем доказать, почему физическое продолжение обязательно или idle не оптимален. Подставить уже имеющуюся all327/Bellman теорему только после установления её гипотез; использовать структурное неравенство, инвариант, вариационную идентичность или доказанную физическую эквивалентность. Сертификат нижней границы ещё требует родного достижения/выбора. Source-weld, P25, C2 и stationary-shell — готовые проверки предъявленного полного закона; не повторять их как самостоятельную кампанию. Цель — снять конкретную предпосылку общего GR-вывода, сохранив полный source/history/clock и исходный raw terminal. Условные независимые переносы и refinement продолжаются параллельно.",
+      "next_question": "Использовать доказанный каталог-свободный Golden17 stopped-test как задачно-специфичную лемму: неизвестная сила сигнала, все 17 исходов и граница полной цены остановленного теста уже покрыты. Это кандидат на задачу наблюдения, а не выбранная полная цена Book03/full128 и не закон выбора физического поля; повторный поиск порога и силы на этом носителе не нужен. На существующем native-programme-v1 carrier проверить один и тот же физически допущенный stopped-clock/full128 execution. Сначала вывести из неизменённого D0/Book03 и реального правила admission полную same-history привязку Cost−Info/work, absolute normalizer и same-prefix two-ending law с фактическими равными continuation partition weights; нормированные odds не фиксируют абсолютную цену. Затем вычислить на всех 128 исходах G_full = Σω(Cω−Iω)Kω†Kω + W и его полный first jet, сохранив failures/aborts, compiler/repeat work, oldRIGHT/reference, подготовку, moving observer, clock и внутренние вариации. Проверить preparation-safe source identity на тех же 16+24+2 направлениях без назначения Info по вероятностям и без подгонки связи; на том же execution доказать допуск field writer, меняющего Q, либо native stationary/constraint law. Если исходный D0 не выбирает такую цену/задачу, зафиксировать scoped no-go только для проверенного кандидата; если выбирает и тест проходит, подставить owned all40+2 Brinkmann roots, затем Ward, boundary balance и refinement. Переиспользовать уже закрытые opposite-null/full128 memory owners; не открывать задачу или статус и не повторять геометрический census.",
       "tags": [
         "minimality",
         "MDL",

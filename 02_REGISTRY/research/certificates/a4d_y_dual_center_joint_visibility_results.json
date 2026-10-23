@@ -1,0 +1,13 @@
+{
+  "schema": "a4d-y-dual-center-joint-visibility-v1",
+  "base": "z=1 exact Y vacuum; standard solder",
+  "dual_path": "phase0 U*Cayley(B,-d), phase2 U^-1*Cayley(B,+d), B=K1+K2+K3",
+  "connection_euler": "all 96 rows vanish identically",
+  "metric_coordinate_order": ["q00","q01","q02","q03","q11","q12","q13","q22","q23","q33"],
+  "phase01_response": ["0","0","0","0","-f","f","f","-f","f","-f"],
+  "phase23_response": ["0","0","0","0","f","-f","-f","f","-f","f"],
+  "f": "4*d/(3*d^2-4)",
+  "four_phase_average": "zero",
+  "smooth_source_conclusion": "for |d| small, phase erasure forces d=0",
+  "terminal": "A4D-Y-DUAL-CENTER-CONNECTION-MODULUS-BUT-SMOOTH-SOURCE-VISIBLE"
+}

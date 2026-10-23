@@ -1,0 +1,225 @@
+{
+  "status": "PASS_SAME_EXECUTION_SPATIAL_SOURCE_INTEGRATION",
+  "utc": "2026-10-21T05:51:41.869098+00:00",
+  "integrity": {
+    "artifacts": 25,
+    "source_pin_checks": 38,
+    "runtime_literal_carrier_verified": true,
+    "manifest_sha256": "64011c1af9a5a927671488077de71478dc0d676d70f54da75ebdbe217a2ccdcf"
+  },
+  "runs": [
+    {
+      "entrypoint": "weights/check_same_execution_spatial_weights.py",
+      "checker_sha256": "8ba3f1c4ed3cfb274d9c94ed950994a3a1e357281d26769cf4dd3e8b283cc0f3",
+      "elapsed_seconds": 0.3534603329999999,
+      "result": {
+        "status": "PASS_SAME_EXECUTION_CAP1_SPATIAL_WEIGHTS",
+        "created": "2026-10-21",
+        "repository_head": "c49ebdb12244943d1ec45ef6d148a0432481141e",
+        "check_count": 23,
+        "checks": [
+          {
+            "name": "actual_two_band_baseline",
+            "status": "PASS"
+          },
+          {
+            "name": "actual_full_gravity_derivative",
+            "status": "PASS"
+          },
+          {
+            "name": "actual_full_matter_derivative_both_bands",
+            "status": "PASS"
+          },
+          {
+            "name": "original_finite_z_ratio_no_retuning",
+            "status": "PASS"
+          },
+          {
+            "name": "N1_field_source_is_report_only",
+            "status": "PASS"
+          },
+          {
+            "name": "N1_address_cost_slope_cancels",
+            "status": "PASS"
+          },
+          {
+            "name": "N2_address_cost_slope_does_not_cancel",
+            "status": "PASS"
+          },
+          {
+            "name": "actual_multiplicity_cancels_density_site1",
+            "status": "PASS"
+          },
+          {
+            "name": "full_scene_reference_copies_site1",
+            "status": "PASS"
+          },
+          {
+            "name": "actual_multiplicity_cancels_density_site2",
+            "status": "PASS"
+          },
+          {
+            "name": "full_scene_reference_copies_site2",
+            "status": "PASS"
+          },
+          {
+            "name": "actual_multiplicity_cancels_density_site3",
+            "status": "PASS"
+          },
+          {
+            "name": "full_scene_reference_copies_site3",
+            "status": "PASS"
+          },
+          {
+            "name": "sitewise_normalization_wrong_for_unequal_mass",
+            "status": "PASS"
+          },
+          {
+            "name": "single_global_normalization",
+            "status": "PASS"
+          },
+          {
+            "name": "moving_density_terms_retained_off_shell",
+            "status": "PASS"
+          },
+          {
+            "name": "moving_density_cancels_by_null_values",
+            "status": "PASS"
+          },
+          {
+            "name": "raw_matter_double_inverse_is_existing_dictionary",
+            "status": "PASS"
+          },
+          {
+            "name": "complete_baseline_derivative",
+            "status": "PASS"
+          },
+          {
+            "name": "preparation_not_made_stationary",
+            "status": "PASS"
+          },
+          {
+            "name": "owned_bank_caps_positive",
+            "status": "PASS"
+          },
+          {
+            "name": "N1_nonzero_source_sign",
+            "status": "PASS"
+          },
+          {
+            "name": "finite_z_negative_matter_ratio",
+            "status": "PASS"
+          }
+        ],
+        "owned_numeric_constants": {
+          "alpha": "0.66501609961003253007439476615",
+          "beta": "0.682201436849266332969330613053",
+          "r0": "0.00000185123957848820307628439505498",
+          "gamma1_multiplier_of_DJ2": "-12.4442926813186657140646964839",
+          "Lambda_minus": "-23.4164067518840749728955820649",
+          "per_copy_gravity_at_eta_quarter": "-0.0000000149089370971543368002753577432"
+        },
+        "scope": "One existing N=1 two-query CQ compiler. Exact symbolic multiplicities and source maps; no new address census, native Info selection or upstream stationary root.",
+        "runtime_seconds": 0.0903,
+        "checker_sha256": "8ba3f1c4ed3cfb274d9c94ed950994a3a1e357281d26769cf4dd3e8b283cc0f3"
+      }
+    },
+    {
+      "entrypoint": "geometry/check_spatial_source.py",
+      "checker_sha256": "75feeeee89aa0db6069205f8116d27e89f08b1d3a595897071ec62054200235a",
+      "elapsed_seconds": 0.7067015000000001,
+      "result": {
+        "status": "PASS",
+        "scope": "new weighted input on unchanged primary carrier; no root/rank replay",
+        "runtime": {
+          "python": "3.9.6",
+          "sympy": "1.14.0"
+        },
+        "input_sha256": "d3d0b1bc92c25a0963a4ba851d9d587d2191f0bbd8cd8cd0ab58b664852b7026",
+        "weighted_link_rows": [
+          [
+            "A - A_minus_v",
+            "A - A_minus_x",
+            "A - A_minus_y",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "-A + A_minus_u",
+            "-A*H0_0_0/2 + A_minus_u*Am1_0_0 + A_minus_x*H0_m1_0/2",
+            "-A*H0_0_0/2 + A_minus_u*Bm1_0_0 + A_minus_y*H0_0_m1/2",
+            "A - A_minus_x",
+            "A - A_minus_y",
+            "0"
+          ],
+          [
+            "0",
+            "A*H0_0_0/2 - A + A_minus_u - A_minus_v*H0_0_0/2",
+            "0",
+            "-A + A_minus_v",
+            "0",
+            "A - A_minus_y"
+          ],
+          [
+            "0",
+            "0",
+            "A*H0_0_0/2 - A + A_minus_u - A_minus_v*H0_0_0/2",
+            "0",
+            "-A + A_minus_v",
+            "-A + A_minus_x"
+          ]
+        ],
+        "decisive_weight_differences": [
+          "A - A_minus_v",
+          "A - A_minus_x",
+          "A - A_minus_y",
+          "-A + A_minus_u"
+        ],
+        "checks": [
+          "all24 weighted links",
+          "independent local geometry/material homogeneity",
+          "moving inverse-PF dictionary",
+          "baseline preserved",
+          "four unequal-neighbor hostile controls",
+          "weighted material adjoint",
+          "original coframe residual",
+          "global auxiliary consistency"
+        ],
+        "elapsed_seconds": 0.5530135,
+        "checker_sha256": "75feeeee89aa0db6069205f8116d27e89f08b1d3a595897071ec62054200235a"
+      }
+    },
+    {
+      "entrypoint": "check_n1_entropy_adjoint.py",
+      "checker_sha256": "f20a91c1a7d6f486eb49284e16b4350af5222a89d64b9aff06de28c2c3217eb0",
+      "elapsed_seconds": 0.05113816699999996,
+      "result": {
+        "status": "PASS_N1_COMPLETE_ENTROPY_ADJOINT",
+        "checks": [
+          "complete original query/efficiency/OR norm",
+          "literal two-band determinant at primary",
+          "all complete prefix/abort/report probability",
+          "complete finite leaf price equals retained ledger",
+          "full entropy terminal gradient",
+          "backward projection/query adjoint",
+          "direct full price finite difference",
+          "full query preparation leakage norm",
+          "generated retained input has no false free tangent",
+          "independent full8D prep source is nonzero if admitted"
+        ],
+        "precision_digits": 80,
+        "complete_classical_terminal_labels": 7,
+        "coherent_query_work_components": 256,
+        "full_price": "48.056347220397701640479786535323345",
+        "gamma1": "-12.444292681318665714064696483876718",
+        "source": "0.0000010149312414533592507833689699038186",
+        "max_source_discrepancy": "6.75197882164048e-41",
+        "conditional_independent_preparation_source": "-0.000000073484911723931864610518503264448857",
+        "scope": "New source/adjoint control with literal native8D queries and actual alpha/beta; finite prefix refinement/costs are diagnostic, not historical native retry receipts; no native admission or Book03 selection.",
+        "elapsed_seconds": 0.017405333,
+        "checker_sha256": "f20a91c1a7d6f486eb49284e16b4350af5222a89d64b9aff06de28c2c3217eb0"
+      }
+    }
+  ]
+}

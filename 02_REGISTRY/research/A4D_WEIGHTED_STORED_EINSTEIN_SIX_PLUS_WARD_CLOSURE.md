@@ -1,0 +1,268 @@
+# D0 → Einstein: genuine weighted-adjoint clock restores both graviton polarizations and makes 6 Euler rows + Ward source-complete
+
+**SCIENTIFIC CORRECTION (17 October, consumed by A4D_WEIGHTED_STAR_CONFORMAL_ROOT_AND_OBSERVER_ACTION_REPAIR_2026_10_17.md):** The six weighted field directions and six+Ward source-completeness theorem below remain correct as **kinematic and conditional source statements**. The former §5A phrase claiming that merely pulling back the FULL-Lorentz #201/#216 Einstein-principal Hessian gives the actual **observer-preserving connection-eliminated** star Hessian is WITHDRAWN. These operations do not commute. On a full-weighted, regular nonconstant timelike conformal coframe with original stored link flat, the restricted canonical star has an exact CONTINUUM constrained stationary family while its intrinsic Lorentz Einstein tensor is nonzero; its conformal Hessian vanishes whereas EH kinetic Hessian is nonzero. Full physical Cost−Info with observer/retained terms could repair this but has NOT been selected. Do not cite this document as proof that D0 has two dynamically correct graviton polarizations or an Einstein physical action. The exact missing observer kinetic/source is now computed by the separately existing three-outcome full16 CAR observer record *as a mathematical candidate*, with genuine physical admission still open.
+
+17 October 2026. Scientific synthesis in EXISTING Draft PR #334 (EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE). Result class: EXACT WEIGHTED NATIVE JOINT-ADJOINT KINEMATICS / COMPLETE GENERIC LINEARIZED EINSTEIN SOURCE / NONLINEAR FIELD REALIZATION / SAME CANONICAL STAR CONSUMER.
+
+**Strict status.** This proves a major missing *physical-domain geometry/source-completeness interface*, NOT full D0⇒GR. Physical selection of the variable site weight/clock by the SAME native Cost−Info history, source of other fields, nonlinear exact joint stationarity/compactness and original h^-2 raw #216 terminal remain unproved. No action, coupling, detector, gate, new task/PR, BOOK/CORE/CLAIM or Einstein scalar is inserted.
+
+## 0. WHY THIS CHANGES THE PROOF RATHER THAN ADDING ANOTHER READOUT
+
+Earlier A4D_STORED_NULL_POLARIZATION_AND_ONE_CLOCK_ESCAPE.md established a genuine obstacle: for the existing FIXED-WEIGHT stored-adjoint constraints, metric perturbations satisfy H_rr=0 and lambda^THlambda=0 on a full-support Fourier mode (five dimensions). One of the TWO physical Einstein vacuum polarizations is absent. The geometric nine-null probes, full128 record QGT and rank10 positive Fourier symbol do NOT change that admission constraint.
+
+A second ALREADY OWNED input was overlooked in that route. The literal weighted-source result in sources/d0_w2_weighted_source_2026-10-16/RESULT_RU.md (source pinned at 7220f573...) derived TRUE weighted self-adjointness with full16 exterior, its endpoint sqrt(omega_x/omega_y), moving first source and the condition
+    A_xy^T h_x v_r(x) = (omega_y/omega_x) h_y v_r(y),
+    A_xy^T h_x A_xy=h_y.
+For a proper Lorentz link preserving the actual observer (h_n), these imply EXACTLY
+    A_xy v_r(y)=(omega_x/omega_y)v_r(x).                   (1)
+The weight omega>0 was a SUPPLIED site field in that owner; no one proved the complete native process selects its values. The result below CONSUMES that fact and the EXISTING M1 site measure input rather than INVENTING a new clock law.
+
+## 1. Exact nonlinear conjugacy of the weighted joint-adjoint field domain
+
+Set s_x=1/omega_x (>0), and define the rescaled old legs
+    vtilde_r(x)=omega_x v_r(x)=v_r(x)/s_x.
+Then (1) is equivalent to
+    A_xy vtilde_r(y)=vtilde_r(x).                            (2)
+If A_xy also maps the observer n_y to n_x, this is *precisely* the old proper Lorentz stored-adjoint input, now for vtilde. All of its previously solved nonlinear Gram/link feasibility construction is reusable without adjustment or an added connection.
+
+With Q=F eta F^T and tau=F n, where v_r=eta F_r^T, put
+    F_x=s_x Ftilde_x,
+    Q_x=s_x² Qtilde_x,   tau_x=s_x tautilde_x,
+    omega_x=1/s_x.                                          (3)
+At any site tau^TQ^-1tau=tautilde^T Qtilde^-1 tautilde=1. On each own edge the ACTUAL weighted laws are
+    tau_r(y)= (s_y/s_x) tau_r(x),
+    Q_rr(y)= (s_y/s_x)^2 Q_rr(x).                            (4)
+Both follow from unchanged old constant-tautilde/constant-Qtilde-rr invariants for each r; they also follow directly from (1) and Lorentz invariance of the observer pairing. The finite-node site normalization is harmless to THESE ratios:
+    omega_x=[s_x^-1]/sum_z s_z^-1
+replaces 1/s by a common factor, so (1)-(4) are unchanged. Its global normalization source in the complete price is NOT declared zero.
+
+This is an exact equivalence of two SPECIFIED kinematic models, not proof that the actual D0 engine uses variable omega or that the complete native price is just the old one conjugated. In the true-weighted adjoint the old bare source is not frozen:
+    alpha_xy=sqrt(omega_x/omega_y)=sqrt(s_y/s_x),
+    delta log alpha_xy=(delta log s_y-delta log s_x)/2.       (5)
+For smooth s=e^sigma on lattice y=x+he_r, alpha_xy=1+(h/2)partial_r sigma+O(h²). The native first-order h^-1 Dirac shift therefore retains (partial_r sigma)/2 at order one; the scalar endpoint jet is NOT a disappearing O(h) source and is NOT a Lorentz contorsion. The pure representation change I D I^-1 contributes only a commutator when its state is co-moved, whereas CHANGING the physical legs/weight law (3) changes the operator and may change the full price. Those sources must be kept distinct.
+
+## 2. One new existing SITE-MEASURE degree of freedom makes SIX physical metric directions
+
+Use the exact native regular rational coframe/observer from the owned stored-polarization packet:
+    eta=diag(+1,-1,-1,-1),
+    lambda=(205,144,96,72)/83,
+    tau0=eta lambda,
+    F0=(1/83)*[[205,-144,-96,-72],
+               [-144,155,48,36],
+               [-96,48,115,24],
+               [-72,36,24,101]].
+F0 eta F0^T=eta, detF0=1, all four own legs spatially nonzero; observer n=e0. All old regularity is retained under small s>0.
+
+For a full-support nonzero Fourier perturbation of (3), let u=delta log s. Writing H=delta Q and Htilde=delta Qtilde,
+    H=Htilde+2u eta,
+    Htilde_rr=0,  lambda^T Htilde lambda=0.              (6)
+Thus, setting t=2u,
+    **W_weighted={H=t eta+O : O_rr=0, lambda^T O lambda=0}**,
+    dim W_weighted=1+5=6.                                (7)
+The scalar is not an invented 11th metric component: it is the nodewise positive weight ALREADY present in the true weighted Hilbert pairing and normalized by the existing site-probability convention. Derivation of its PHYSICAL weight-selection from native history still required.
+
+The old missing physical null-wave solution had H0=(9/13)P02-(3/13)P03-3P12+P13, with lambda^T H0 lambda=-543024/89557. In the old chart its observer compensator had to move tau and was forbidden; now the one allowed t eta direction in (7) and a compensating old O produce a second on-shell null wave. An explicit exact rational computation for null k_N=(13,3,4,12) yields:
+
+    full linearized Einstein symbol rank=4 on Sym²(10);
+    vacuum kernel dim=6, diffeomorphism gauge rank=4;
+    OLD stored-adjoint W_old(dim5): Einstein symbol rank=4, vacuum dim1;
+    NEW weighted W(dim6): Einstein symbol rank=4, vacuum dim2.
+
+This restores BOTH physical radiative polarizations on a real regular original metric background, not an arbitrary artificial Hilbert metric. It is mathematically stronger than constructing ten freely chosen measurement vectors.
+
+## 3. The real source-closure theorem: six weighted Euler rows + four genuine Ward rows = ten Einstein rows
+
+Let E be any symmetric geometric metric Euler covector (including an independently derived matter contribution), in the fixed ordinary packed/full dual convention. For a Fourier wavevector k put a=Qk. The genuine full diffeomorphism/retained Ward identity at a FULL joint stationary point gives E a=0 only after all actual retained, matter and clock Euler rows vanish (A4D_FULL_EXPERIMENT_WARD_AND_METRIC_DESCENT.md); it is NOT an automatic identity of an arbitrary fixed-detector price.
+
+The six admitted weighted metric Euler rows are <E,H>=0 for all H in W_weighted. Define the 10x10 map
+    E -> (E a [4], <E,H1>,...,<E,H6> [6]).              (8)
+Use the standard pairing Tr(EH), including factor2 offdiag; choose six exact tangent generators H1=eta and five
+    H_ij=P_ij-(lambda_i lambda_j)/(lambda0 lambda1)P_01,
+       ij∈{02,03,12,13,23}.                             (9)
+**Exact rank/determinant checks of this ORIGINAL six-dimensional field image:**
+
+    k=(1,2,3,4)       det(8)=-3558112/615 !=0
+    k=(13,3,4,12)     det(8)=+35557056/205 !=0
+    k=(0,1,2,3)       det(8)=-736 !=0
+
+All input matrices rational; no numerical spectral threshold, fitted source or inserted Einstein residual. Therefore in each of these Fourier sectors and on the open dense set where this nonzero determinant polynomial persists,
+    [six real weighted metric stationarity equations]
+       + [FULL SAME-ACTION Ward with all other Eulers zero]
+             => E=0 in ALL TEN symmetric components.          (10)
+
+**Dual gauge interpretation, exact algebra not physical-gauge promotion:** the map xi -> a xi^T+xi a^T has four independent metric diffeomorphism gauge velocities. Since Bianchi E a=0 is (up to factor2) the adjoint of that gauge map, (8) is invertible iff W_weighted plus the gauge image spans Sym². Thus (7) is a genuine **generic transverse gauge slice** for the ten-component source. In the same k_N witness the four metric gauge-fixing conditions H00+Hii=0 (i=1..3), lambda^THlambda-H00=0 have exact determinant 2560108032/6889 !=0. This matches source-completeness, not just wave counting. The actual native finite-state **physical** gauge must still carry the clock/observer/reference; a metric-only gauge calculation cannot declare retained histories gauge.
+
+**Why this is MINIMAL.** Old W_old dim5 plus four Bianchi conditions can give rank at most9, even if all five native Euler equations are solved exactly; the known nonzero residual is structurally unavoidable. Exactly ONE existing scalar weight enlarges W_old to six, so generic rank10 becomes possible and is now actually proved.
+
+**Exceptional Fourier modes remain physical boundary, not swept away:** k=(1,1,0,0) gives rank9; k=(1,0,0,0) gives rank8. Thus (10) is NOT already a theorem for every k/whole lattice; patched native observer/gauge/source rows, genuine nonlinear Ward and proper zero/partial-support treatment are needed. Smoothness alone does not annihilate source supported on exceptional modes.
+
+## 4. Nonlinear EXISTENCE of a full six-function weighted native metric chart (not a joint Euler root)
+
+The old nonlinear projection theorem has explicit analytic Qtilde(z):
+    Qtilde(z)=eta+b(z)P01+zP02,
+    b(z)=[13824z+205sqrt(20736-39360z-12073z²)-29520]/21289,
+    Qtilde_rr=eta_rr, tau0^T Qtilde^-1 tau0=1, b(0)=0.
+For ANY smooth positive s(x), define
+    Q(x)=s(x)² Qtilde(z(x)), tau(x)=s(x)tau0,
+    omega(x)=const/s(x), F=s(x)Ftilde(z(x)).
+The old near-identity proper Lorentz own-links solve exactly (2), hence the SAME links solve the original weighted condition (1). ALL observer normalization, real Lorentz signature, nonzero leg regularity and edges are preserved at finite nonzero deformation. Pick z(x) nonconstant to obtain genuinely curved kinematic metrics; pick s(x) nonconstant to excite the missing weighted scalar. No singular zero-sheet limiting construction needed.
+
+In the elementary subfamily s(z)=exp(rho z), first metric jet is
+    dQ/dz|0=2rho eta+P02-(2/3)P01,                     (11)
+with rho arbitrary real physical weight speed; this spans the sixth tangent independent of the old five. The true weighted Dirac source retains (5). A local IFT (observer normalization derivative in P01 nonzero at the regular point) extends ANY sufficiently small chosen five offdiag shape functions plus the one positive scale s(x) to a nearby six-function smooth weighted chart, not just (11). This is actual nonlinear DOMAIN closure, not Euler stationary solvability.
+
+The normalized native SITE distribution may be defined on any finite set of sites as
+    omega_x=[1/s_x]/sum_z[1/s_z],
+positive with sum 1. This uses no extra adjustable physical constant; its difference jet is dlogomega_x-dlogomega_y=−dlogs_x+dlogs_y. Reaching these weights by actual allowed golden-history preparation/cut and paying their cost remain independent obligations, not theorems here.
+
+## 5. CONSUME THE ORIGINAL CANONICAL STAR ACTION, not a new curvature measurement
+
+The already-owned Role A-stabilizer selector (MEMO_A4D_ROLE_BIVECTOR_INSERTION_UNIQUENESS.md) fixes the oriented star insertion up to overall scale, and the original naked-star canonical action is
+    S_star=sum_(x,r<s)epsilon_r suv (v_u(x) wedge v_v(x)) G2 star b(C(P_rs)).
+It is the existing action, not a new heat three-depth diagnostic or fitted Einstein counterterm. When v_r(x)=s_x vtilde_r(x) and the proper links P_rs of the old tilde geometry are held fixed along the actual weighted scalar subfamily, every star cell density is exactly quadratic in s_x:
+    S_star[s,tilde v,L]=sum_x s_x² L_star,x[tilde v,L],       (12)
+    dS_star/d(log s_x)=2 s_x² L_star,x.                       (13)
+This is the SAME finite action's missing metric scale Euler direction, not an arbitrary extra potential. Its actual physical source needs the full chain rule when the weighted links, matter and clock/normalizer are stationary or moving; (13) is the precise partial on the stated scalar subfamily.
+
+The accepted #201 and #216 owners fix its normal-centre Einstein coefficient -1/2 G under their H-REAL/H-STAR/IR and full stationary-connection refinement hypotheses. The exact intrinsic Levi-Civita coframe reconstruction in A4D_COFRAME_TORSION_INTRINSIC_GR_RECONSTRUCTION.md supplies the nonlinear Palatini/EH comparison without importing an Einstein scalar oracle. Consequently, **IF** the original finite joint star action's metric covector genuinely refines to that SAME nonlinear Lorentz Einstein source, and full retained Ward survives with its matter/source, then (10) yields all ten Einstein equations generically from the physically allowed six weighted rows. This follows by a proved source-completeness theorem, not by demanding 10 independent variations or adding a curvature action.
+
+What this does NOT prove: BOOK Cost−Info picks star vs v8 H+J+R, the variable omega is selected as the actual site weight, full 24 link/observer/matter fields have exact joint critical roots, the selected action has a uniform original h^-2 smooth-source error, or exceptional k modes. It is a real elimination of the fixed-stored source-image obstruction, not an assertion that all remaining arrows are automatic.
+
+## 6. The one remaining scientific problem which REALLY can finish GR
+
+Do not resume another operator rank catalogue, conditional positive QGT, old full16 detector or arbitrary tensor compiler. Prove on the actual native **weighted** same-history experiment:
+(a) endogenous site-Born weight omega ∝1/s from the full retained preparation/clock (or exhibit an exact contradiction);
+(b) SAME physical action selection and its full first source, including the half-density endpoint-jet (5), independent stress/spin, observer and all finite controller/normalizer costs;
+(c) full 24 link/metric/matter stationarity + nonempty curved joint refinement with the old fixed smooth g, independent tau and 10-slot unweighted h^-2/#216 source estimate;
+(d) full source closure on the exceptional k where the six-plus-four matrix is singular.
+
+The sufficient conditional mathematical implication is now one coherent chain:
+
+REAL weighted native Hilbert pairing/self-adjointness
+  ⇒ six-dimensional conformal stored geometry (nonlinear, exact)
+  ⇒ original selected-star Palatini scalar scale Euler
+  ⇒ six native geometric Euler + actual full Ward
+  ⇒ all TEN Einstein Euler on generic k
+  ⇒ genuine GR after real action/source/refinement + exceptional sectors.
+
+No new physical scalar coupling or input EH action was used in the proved kinematic and algebraic links. Status OPEN for unconditional D0⇒GR, precisely for (a)–(d).
+
+## 5A. WITHDRAWN dynamical inference: unrestricted Lorentz Hessian is not the observer-preserving stored reduction
+
+The accepted canonical action S_star was chosen by Role-bivector spatial naturality, independently of this weighted construction. Merged #201 fixes its true Lorentz flat normal metric Hessian two-derivative coefficient \(T_1^{[2]}=\frac14E_\eta\); E-NJET establishes \(E_\eta=-2G^{(1)}_\eta\). Thus, up to the already fixed nonzero scalar, the principal quadratic Euler symbol of the SAME star action is exactly the linearized Einstein operator, not an added effective action.
+
+On the weighted original finite action field chart (7), at the flat critical configuration its Hessian pulls back by the *real admitted weighted metric Jacobian*. The extra second-derivative of chart acceleration makes no Hessian contribution at a genuinely critical flat background. At the same rational null vector \(k_N=(13,3,4,12)\) define the honest six-by-six quadratic form
+\[
+\mathcal H_{ij}(k_N)
+=\operatorname{Tr}\bigl(W_i\,G_\eta^{(1)}[W_j;k_N]\bigr),
+\quad W_1=\eta,\ W_{2\ldots6}\in\ker(\mathrm{diag},\lambda^TH\lambda).
+\]
+This is **exactly symmetric**, rank4, and has a two-dimensional kernel. The fixed-weight old five-by-five restriction had rank4 and a one-dimensional kernel. Therefore BOTH standard massless graviton polarizations are present in the leading true selected-star Hessian *provided the positive node-weight selfadjoint class is physically admitted*. There is no new curvature action, no hidden scalar source and no arbitrarily added oscillator.
+
+This is an algebraic restriction of the UNCONSTRAINED Einstein symbol, NOT a calculation of the actual observer-preserving stored connection-eliminated star Hessian. The exact conformal counterexample in the correction above invalidates that dynamical inference. It still does not prove finite-h selfadjoint actuator/clock preparation, nonlinear constrained joint roots, uniform continuum Hessian including all resonances or the full physical Cost−Info = S_star identification. Nor does positive weighted Dirac automatically turn the v8 H+J+R into S_star.
+
+A hostile control is decisive: freezing the original site weight \(u=0\) removes exactly the \(\eta\) row and returns the 5×5 Hessian with ONE surviving physical polarization. No additional arbitrary quantum-geometric measurement or better flat metric sampler can repair that dynamic absence.
+
+
+## 7. NONLINEAR analytic completion, not just individual Fourier ranks: six local Euler fields + initial Einstein constraints + genuine Ward propagate all TEN
+
+The Fourier rank10 theorem §3 detects generic modes, but a standalone Fourier symbol result is not the nonlinear Einstein law. More importantly, an exceptional Fourier mode need NOT invalidate local propagation of the four GR constraints: use the same exact weighted six-function analytic field manifold and the original full *diffeomorphism* Ward identity.
+
+**Precise theorem (conditional only on a real physical SAME action / independent matter and real link stationarity):** Let \(\mathcal U\) be a simply connected analytic Lorentz chart near the above rational flat weighted background. Assume:
+(i) the original positive site-weighted joint-adjoint domain is PHYSICALLY admitted, and its nonlinear own-leg/observer Gram construction provides six independently localized analytic geometric fields \(s\) and five non-diagonal \(O\) (the analytic local IFT from §4); real observer/link/retained variables remain present;
+(ii) one physically selected full action \(S_{\rm actual}\) has an analytic local metric Euler tensor \(E_{\mu\nu}\), and all its independent link, observer, reference, clock, spin/matter Euler equations are satisfied, so the SAME total action's true Ward identity is \(\nabla_\mu E^{\mu\nu}=0\);
+(iii) the six variational equations along the actual weighted family hold pointwise (including induced link/measure/source variations), hence \(E(x)\) annihilates the six-dimensional \(W_x\);
+(iv) on an analytic initial hypersurface \(\Sigma\), the missing FOUR initial Euler constraints vanish; the hypersurface normal is noncharacteristic for the constrained Ward system.
+
+Then the entire ten-component nonlinear metric Euler tensor vanishes in an analytic neighborhood of \(\Sigma\).
+
+**Proof (not an extra Lagrangian):** From the six independent algebraic Euler constraints and a smooth analytic rank6 field \(W_x\), the conormal bundle \(\operatorname{Ann}W_x\) has rank FOUR. Choose an analytic frame \(N_A^{\mu\nu}(x)\), \(A=1,\ldots,4\), and write
+\[
+ E^{\mu\nu}(x)=\sum_{A=1}^4 z_A(x)N_A^{\mu\nu}(x).
+\]
+The FULL on-shell Ward identity becomes the linear homogeneous FIRST-order constraint propagation system
+\[
+ A^\mu_{\nu A}(x)\partial_\mu z_A+B_{\nu A}(x)z_A=0,
+ \qquad A^\mu_{\nu A}=N_A^{\mu}{}_{\nu}
+\tag{CP1}
+\]
+with all covariant Christoffel/source terms in the analytic zero-order \(B(x)\). The normal principal matrix \(A(n)\) is invertible exactly when the 10×10 map consisting of six weighted Euler evaluations and four Ward rows \(E n\) is invertible (§3). For the explicit rational flat data an ACTUAL timelike normal
+\[
+ n=(5,1,1,1),\qquad n^\top\eta n=22>0
+\]
+has the exact determinant
+\[
+ \boxed{\det[\,6W;\,4{\rm Ward}(n)\,]=54400/41\ne0.}
+\tag{CP2}
+\]
+By continuity it remains nonzero throughout a sufficiently small analytic curved neighborhood. Choose analytic local coordinates with \(n\) normal to \(\Sigma\); solving (CP1) for the normal derivatives gives the Cauchy–Kowalevskaya system
+\[
+ \partial_t z=-A(n)^{-1}(A^i\partial_i z+Bz).
+\tag{CP3}
+\]
+Its analytic solution with the four original Einstein constraint data \(z|_{\Sigma}=0\) is UNIQUE, and identically \(z=0\) is such a solution. Therefore \(E=0\) throughout the local analytic neighborhood, not only for generic Fourier modes. This is a standard Cauchy–Kowalevskaya uniqueness consequence, NOT an assumption that four algebraic Bianchi equations alone annihilate E pointwise.
+
+**What is genuinely gained:** the original full nonlinear *field-equation propagation* needs only SIX locally admitted variational equations plus the SAME physical Ward and four INITIAL constraints. No arbitrary nine additional null variations, no scalar curvature oracle and no independent Einstein stress are inserted. The four exceptional Fourier rows do not have to be separately forced to zero by a FALSE algebraic invertibility statement: they are subject to a local propagation theorem after initial data.
+
+**Critical limitations:** Cauchy–Kowalevskaya is an analytic uniqueness theorem, not proof of global smooth hyperbolic well-posedness or existence of D0 solutions. The determinant polynomial can be nonhyperbolic for a given timelike slicing (complex spatial characteristic roots exist), so do NOT promote CP3 to a uniform Sobolev energy estimate or a physical evolution equation without a symmetrizer. Pointwise six local Euler conditions presuppose the genuine full link/observer/matter stationary descent, not only a single measured event or stored amplitude. Physical full site omega law and full Cost−Info selection still need independent forcing. The **original finite-grid** h^-2 raw metric comparator, exact nonflat joint roots and independent matter sources remain as before. The theorem proves an actual nonlinear source-completion mechanism, not those absent native premises.
+
+For the EXISTING canonical star Palatini action, if its full continuum physical limit is the intrinsic EH+matter action (already-owned coframe/Cartan theorem, with its real source and limits), then \(E=G+\Lambda g-\kappa T\). CP1–CP3 imply the *exact nonlinear Einstein equation* in this analytic weighted class whenever its six field equations, the other fields, Ward and four initially vanishing constraints hold. No desired Einstein equation is fed to the history/record instrument; this is a theorem about the consequence of its selected action. Identifying that action with the ORIGINAL complete native Cost−Info and constructing nonempty exact discrete joint-refinement sequences are still the scientifically decisive missing steps.
+
+
+## 8. MUCH STRONGER: any near-flat analytic Lorentz Einstein geometry is locally representable by the SAME weighted native stored-adjoint fields
+
+The earlier conformal extension §4 was an explicit curved example. It is actually a complete local **coordinate realization theorem**, not just a set of measured modes, and includes exact fully nonlinear two-polarization Ricci-flat waves.
+
+Fix the real regular rational original \(\eta,F_0,n=e_0,\tau_0=\eta\lambda\) of §2. For an arbitrary analytic Lorentz contravariant metric \(\bar Q\) sufficiently near \(\eta\), look for a local analytic diffeomorphism \(f\) whose transported tensor \(Q=f^*\bar Q\) obeys FOUR exact (NOT linearized) coordinate conditions:
+\[
+\boxed{
+ Q_{00}+Q_{ii}=0\ (i=1,2,3),\qquad
+ Q_{00}\,\tau_0^\top Q^{-1}\tau_0=1.
+}
+\tag{CG1}
+\]
+At \(\eta\) these constraints vanish. Their first metric derivatives are
+\[
+ d\mathcal G_i[H]=H_{00}+H_{ii},\quad
+ d\mathcal G_4[H]=H_{00}-\lambda^\top H\lambda.
+\tag{CG2}
+\]
+A coordinate change with vector generator \(\xi\) has at flat constant \(\eta\) the inverse-metric principal tangent \(H=\pm(a\xi^\top+\xi a^\top)\), \(a=\eta k\); the common sign does not change invertibility. For the ACTUAL TIMELIKE normal \(n=(5,1,1,1)\), \(n^\top\eta n=22>0\), the four-by-four matrix of (CG2) on the four coordinate generators has EXACT determinant
+\[
+ \boxed{|\det G_{\rm gauge}(n)|=19584000/6889\ne0.}
+\tag{CG3}
+\]
+(The sign of the fourth row depends on whether CG4 is written as \(Q_{00}\tau_0^\top Q^{-1}\tau_0-1\) or its negative; only the nonzero absolute value matters.)
+
+**Proof of nonlinear local realizability:** Let \(f\) be four unknown coordinate functions, with \(f|_{\Sigma}=\mathrm{id}\) on an analytic hyperplane whose conormal is \(n\). The inverse-metric pullback \(Q=f^*\bar Q\) depends analytically on \(x,f,\partial f\) near identity. CG1 therefore is a four-component first-order analytic nonlinear PDE in \(\partial f\). The normal derivative Jacobian at \((\bar Q,f)=(\eta,\mathrm{id})\) is exactly CG3, so the analytic implicit-function theorem solves all four normal derivatives as analytic functions of tangential derivatives and fields. Cauchy–Kowalevskaya then constructs a local analytic \(f\) near identity for every sufficiently near-flat analytic \(\bar Q\). The inverse function theorem keeps \(Df\) invertible. CG1 holds EXACTLY, not modulo quadratic curvature corrections. This is an ordinary coordinate gauge existence argument; native D0 physical diffeomorphism covariance of its full retained action is NOT inferred from it.
+
+Now write
+\[
+ s(x)=\sqrt{Q_{00}(x)}>0,\quad
+ \tilde Q=Q/s^2,\quad \tilde\tau=\tau_0,\quad
+ \omega_x\propto1/s_x,\quad \tau(x)=s_x\tau_0 .
+\]
+The three CG1 diagonal equalities give \(\tilde Q_{rr}=\eta_{rr}\) on ALL sites. Its fourth identity becomes \(\tau_0^\top\tilde Q^{-1}\tau_0=1\). By the ACTUAL previously proved nonlinear stored projection necessity/sufficiency theorem, every such near-regular \(\tilde Q\) has a true coframe \(\tilde F\), observer \(n\), rank3 positive Gram and near-identity own-edge proper Lorentz links that preserve \(\tilde\tau_r,\tilde Q_{rr}\) exactly. Multiplying the legs by \(s\) and setting the positive site weight \(1/s\) produces a full true-weighted selfadjoint stored Dirac as in §1. Sampling any sufficiently fine lattice retains exact weighted selfadjoint kinematic edge constraints; no continuum-only fake connection was introduced.
+
+Therefore:
+\[
+\boxed{\text{every sufficiently near-flat analytic Lorentz metric}}
+\quad\xrightarrow[\text{analytic coordinate gauge}]{CG1}
+\quad\boxed{\text{a genuine locally weighted native stored-adjoint coframe}.}
+\tag{CG4}
+\]
+
+**Explicit physical GR solution contained.** In analytic Brinkmann coordinates take
+\[
+ ds^2=2\,du\,dv-dx^2-dy^2+
+ \epsilon[f_+(u)(x^2-y^2)+2f_\times(u)xy]\,du^2.
+\tag{CG5}
+\]
+For arbitrary analytic \(f_+,f_\times\) and small \(\epsilon\), direct Christoffel/Ricci calculation gives \(\mathrm{Ric}_{\mu\nu}=0\) EXACTLY because \(\partial_x^2H+\partial_y^2H=0\), while \(\mathrm{Riem}_{uxux}\sim-\epsilon f_+\), \(\mathrm{Riem}_{uxuy}\sim-\epsilon f_\times\) are generally nonzero. Thus both independent **exact nonlinear vacuum gravitational-wave polarizations** occur in the target class, not just their first-order waves. CG1–CG4 embed their metrics and genuine weighted proper-Lorentz kinematic link/coframe data on a small analytic chart into the D0 carrier.
+
+**Boundary that MUST remain:** CG4 proves **kinematic representability** of an entire local Einstein solution family, not existence of an exact stationary solution of the original finite D0 Cost−Info/star+matter action or a source-faithful h→0 refinement. In particular the reconstructed Levi–Civita connection of the exact Einstein metric generally differs from the original observer-preserving stored links (the already-owned complete torsion-to-LC reconstruction gives the exact difference). Any physical claim must obtain their relation from actual link Euler equations and full action, not simply assert that stored links equal LC. The analytic coordinate choice is not a new physical D0 gauge operation; to identify predictions the true full retained reference/observer/clock law must transform covariantly.
+
+CG4 + §7 are the TWO nonlinear halves of a bona fide GR field-equation architecture:
+(a) nonempty exact **GR metric solution geometry** inside the weighted native domain (this section),
+(b) complete nonlinear **Einstein Euler constraint propagation** from six actual weighted field variations + full Ward (previous section).
+The only unfinished physical content lies in selection and source-equality of the SAME native action, independent matter/observer/spin and exact joint-refinement with the original strong norm. This distinction is scientifically decisive; no fake GR completion is reported.

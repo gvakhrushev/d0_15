@@ -1,0 +1,1290 @@
+{
+  "date": "2026-10-18",
+  "scope": "actual full128 retained native round on one conserved pure-time Fourierblock",
+  "carrier": {
+    "matter_dimension": 16,
+    "reference_space_dimension": 128,
+    "reference_marginal_rank": 16,
+    "fresh_outcomes": 128,
+    "new_matter_factor_added": false,
+    "scene528_effect_used": false,
+    "phases": [
+      -1,
+      1,
+      1,
+      1
+    ],
+    "full_lattice_condition": "flat translation-invariant even torus; occupied k=(L/2,0,0,0); every other momentum block retained",
+    "full_lattice_preparation_chart": "normalized pure amplitudes with reference128; unoccupied-block variations have zero first probability jet",
+    "full_positive_momentum_masses_proved": false,
+    "full_masses_condition": "q_omega=sum_k mu_k q_omega,k; occupied block entropy-score operators must share one preparation multiplier; not inferred from single-block stationarity"
+  },
+  "probability_classes": {
+    "blank_port0": {
+      "probability": "(-nu**2*p**2/32 + 1)**2",
+      "multiplicity": 1
+    },
+    "single_port0": {
+      "probability": "nu**4*p**4/1024",
+      "multiplicity": 7
+    },
+    "single_port1": {
+      "probability": "nu**4*p**3/1024",
+      "multiplicity": 8
+    },
+    "triple_port0": {
+      "probability": "3*nu**4*p**4/1024",
+      "multiplicity": 8
+    },
+    "triple_port1": {
+      "probability": "3*nu**4*p**3/1024",
+      "multiplicity": 8
+    },
+    "scalar_root_port0": {
+      "probability": "nu**2*p**4*(b + 1)**2/64",
+      "multiplicity": 1
+    },
+    "scalar_root_port1": {
+      "probability": "nu**2*p**3*(b + 1)**2/64",
+      "multiplicity": 1
+    },
+    "occupation_port0": {
+      "probability": "nu**2*p**4*(1 - b)**2/256",
+      "multiplicity": 4
+    },
+    "occupation_port1": {
+      "probability": "nu**2*p**3*(1 - b)**2/256",
+      "multiplicity": 4
+    },
+    "zero": {
+      "probability": "0",
+      "multiplicity": 86
+    }
+  },
+  "all128_outcomes": [
+    {
+      "port": 0,
+      "label": 0,
+      "coefficient": 0,
+      "class": "blank_port0",
+      "probability_at_I16_over16": "(-nu**2*p**2/32 + 1)**2",
+      "effect": "(-nu**2*p**2/32 + 1)**2 * I16",
+      "occupation_index": null
+    },
+    {
+      "port": 1,
+      "label": 0,
+      "coefficient": 0,
+      "class": "single_port1",
+      "probability_at_I16_over16": "nu**4*p**3/1024",
+      "effect": "nu**4*p**3/1024 * I16",
+      "occupation_index": null
+    },
+    {
+      "port": 0,
+      "label": 0,
+      "coefficient": 1,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 1,
+      "label": 0,
+      "coefficient": 1,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 0,
+      "label": 1,
+      "coefficient": 0,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 1,
+      "label": 1,
+      "coefficient": 0,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 0,
+      "label": 1,
+      "coefficient": 1,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 1,
+      "label": 1,
+      "coefficient": 1,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 0,
+      "label": 2,
+      "coefficient": 0,
+      "class": "single_port0",
+      "probability_at_I16_over16": "nu**4*p**4/1024",
+      "effect": "nu**4*p**4/1024 * I16",
+      "occupation_index": null
+    },
+    {
+      "port": 1,
+      "label": 2,
+      "coefficient": 0,
+      "class": "single_port1",
+      "probability_at_I16_over16": "nu**4*p**3/1024",
+      "effect": "nu**4*p**3/1024 * I16",
+      "occupation_index": null
+    },
+    {
+      "port": 0,
+      "label": 2,
+      "coefficient": 1,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 1,
+      "label": 2,
+      "coefficient": 1,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 0,
+      "label": 3,
+      "coefficient": 0,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 1,
+      "label": 3,
+      "coefficient": 0,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 0,
+      "label": 3,
+      "coefficient": 1,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 1,
+      "label": 3,
+      "coefficient": 1,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 0,
+      "label": 4,
+      "coefficient": 0,
+      "class": "triple_port0",
+      "probability_at_I16_over16": "3*nu**4*p**4/1024",
+      "effect": "3*nu**4*p**4/1024 * I16",
+      "occupation_index": null
+    },
+    {
+      "port": 1,
+      "label": 4,
+      "coefficient": 0,
+      "class": "triple_port1",
+      "probability_at_I16_over16": "3*nu**4*p**3/1024",
+      "effect": "3*nu**4*p**3/1024 * I16",
+      "occupation_index": null
+    },
+    {
+      "port": 0,
+      "label": 4,
+      "coefficient": 1,
+      "class": "scalar_root_port0",
+      "probability_at_I16_over16": "nu**2*p**4*(b + 1)**2/64",
+      "effect": "nu**2*p**4*(b + 1)**2/64 * I16",
+      "occupation_index": null
+    },
+    {
+      "port": 1,
+      "label": 4,
+      "coefficient": 1,
+      "class": "scalar_root_port1",
+      "probability_at_I16_over16": "nu**2*p**3*(b + 1)**2/64",
+      "effect": "nu**2*p**3*(b + 1)**2/64 * I16",
+      "occupation_index": null
+    },
+    {
+      "port": 0,
+      "label": 5,
+      "coefficient": 0,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 1,
+      "label": 5,
+      "coefficient": 0,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 0,
+      "label": 5,
+      "coefficient": 1,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 1,
+      "label": 5,
+      "coefficient": 1,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 0,
+      "label": 6,
+      "coefficient": 0,
+      "class": "triple_port0",
+      "probability_at_I16_over16": "3*nu**4*p**4/1024",
+      "effect": "3*nu**4*p**4/1024 * I16",
+      "occupation_index": null
+    },
+    {
+      "port": 1,
+      "label": 6,
+      "coefficient": 0,
+      "class": "triple_port1",
+      "probability_at_I16_over16": "3*nu**4*p**3/1024",
+      "effect": "3*nu**4*p**3/1024 * I16",
+      "occupation_index": null
+    },
+    {
+      "port": 0,
+      "label": 6,
+      "coefficient": 1,
+      "class": "occupation_port0",
+      "probability_at_I16_over16": "nu**2*p**4*(1 - b)**2/256",
+      "effect": "p^4*nu^2*(1-b)^2/1024 * Hprime_0^2",
+      "occupation_index": 0
+    },
+    {
+      "port": 1,
+      "label": 6,
+      "coefficient": 1,
+      "class": "occupation_port1",
+      "probability_at_I16_over16": "nu**2*p**3*(1 - b)**2/256",
+      "effect": "p^3*nu^2*(1-b)^2/1024 * Hprime_0^2",
+      "occupation_index": 0
+    },
+    {
+      "port": 0,
+      "label": 7,
+      "coefficient": 0,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 1,
+      "label": 7,
+      "coefficient": 0,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 0,
+      "label": 7,
+      "coefficient": 1,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 1,
+      "label": 7,
+      "coefficient": 1,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 0,
+      "label": 8,
+      "coefficient": 0,
+      "class": "single_port0",
+      "probability_at_I16_over16": "nu**4*p**4/1024",
+      "effect": "nu**4*p**4/1024 * I16",
+      "occupation_index": null
+    },
+    {
+      "port": 1,
+      "label": 8,
+      "coefficient": 0,
+      "class": "single_port1",
+      "probability_at_I16_over16": "nu**4*p**3/1024",
+      "effect": "nu**4*p**3/1024 * I16",
+      "occupation_index": null
+    },
+    {
+      "port": 0,
+      "label": 8,
+      "coefficient": 1,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 1,
+      "label": 8,
+      "coefficient": 1,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 0,
+      "label": 9,
+      "coefficient": 0,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 1,
+      "label": 9,
+      "coefficient": 0,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 0,
+      "label": 9,
+      "coefficient": 1,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 1,
+      "label": 9,
+      "coefficient": 1,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 0,
+      "label": 10,
+      "coefficient": 0,
+      "class": "single_port0",
+      "probability_at_I16_over16": "nu**4*p**4/1024",
+      "effect": "nu**4*p**4/1024 * I16",
+      "occupation_index": null
+    },
+    {
+      "port": 1,
+      "label": 10,
+      "coefficient": 0,
+      "class": "single_port1",
+      "probability_at_I16_over16": "nu**4*p**3/1024",
+      "effect": "nu**4*p**3/1024 * I16",
+      "occupation_index": null
+    },
+    {
+      "port": 0,
+      "label": 10,
+      "coefficient": 1,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 1,
+      "label": 10,
+      "coefficient": 1,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 0,
+      "label": 11,
+      "coefficient": 0,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 1,
+      "label": 11,
+      "coefficient": 0,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 0,
+      "label": 11,
+      "coefficient": 1,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 1,
+      "label": 11,
+      "coefficient": 1,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 0,
+      "label": 12,
+      "coefficient": 0,
+      "class": "triple_port0",
+      "probability_at_I16_over16": "3*nu**4*p**4/1024",
+      "effect": "3*nu**4*p**4/1024 * I16",
+      "occupation_index": null
+    },
+    {
+      "port": 1,
+      "label": 12,
+      "coefficient": 0,
+      "class": "triple_port1",
+      "probability_at_I16_over16": "3*nu**4*p**3/1024",
+      "effect": "3*nu**4*p**3/1024 * I16",
+      "occupation_index": null
+    },
+    {
+      "port": 0,
+      "label": 12,
+      "coefficient": 1,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 1,
+      "label": 12,
+      "coefficient": 1,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 0,
+      "label": 13,
+      "coefficient": 0,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 1,
+      "label": 13,
+      "coefficient": 0,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 0,
+      "label": 13,
+      "coefficient": 1,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 1,
+      "label": 13,
+      "coefficient": 1,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 0,
+      "label": 14,
+      "coefficient": 0,
+      "class": "triple_port0",
+      "probability_at_I16_over16": "3*nu**4*p**4/1024",
+      "effect": "3*nu**4*p**4/1024 * I16",
+      "occupation_index": null
+    },
+    {
+      "port": 1,
+      "label": 14,
+      "coefficient": 0,
+      "class": "triple_port1",
+      "probability_at_I16_over16": "3*nu**4*p**3/1024",
+      "effect": "3*nu**4*p**3/1024 * I16",
+      "occupation_index": null
+    },
+    {
+      "port": 0,
+      "label": 14,
+      "coefficient": 1,
+      "class": "occupation_port0",
+      "probability_at_I16_over16": "nu**2*p**4*(1 - b)**2/256",
+      "effect": "p^4*nu^2*(1-b)^2/1024 * Hprime_1^2",
+      "occupation_index": 1
+    },
+    {
+      "port": 1,
+      "label": 14,
+      "coefficient": 1,
+      "class": "occupation_port1",
+      "probability_at_I16_over16": "nu**2*p**3*(1 - b)**2/256",
+      "effect": "p^3*nu^2*(1-b)^2/1024 * Hprime_1^2",
+      "occupation_index": 1
+    },
+    {
+      "port": 0,
+      "label": 15,
+      "coefficient": 0,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 1,
+      "label": 15,
+      "coefficient": 0,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 0,
+      "label": 15,
+      "coefficient": 1,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 1,
+      "label": 15,
+      "coefficient": 1,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 0,
+      "label": 16,
+      "coefficient": 0,
+      "class": "single_port0",
+      "probability_at_I16_over16": "nu**4*p**4/1024",
+      "effect": "nu**4*p**4/1024 * I16",
+      "occupation_index": null
+    },
+    {
+      "port": 1,
+      "label": 16,
+      "coefficient": 0,
+      "class": "single_port1",
+      "probability_at_I16_over16": "nu**4*p**3/1024",
+      "effect": "nu**4*p**3/1024 * I16",
+      "occupation_index": null
+    },
+    {
+      "port": 0,
+      "label": 16,
+      "coefficient": 1,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 1,
+      "label": 16,
+      "coefficient": 1,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 0,
+      "label": 17,
+      "coefficient": 0,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 1,
+      "label": 17,
+      "coefficient": 0,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 0,
+      "label": 17,
+      "coefficient": 1,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 1,
+      "label": 17,
+      "coefficient": 1,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 0,
+      "label": 18,
+      "coefficient": 0,
+      "class": "single_port0",
+      "probability_at_I16_over16": "nu**4*p**4/1024",
+      "effect": "nu**4*p**4/1024 * I16",
+      "occupation_index": null
+    },
+    {
+      "port": 1,
+      "label": 18,
+      "coefficient": 0,
+      "class": "single_port1",
+      "probability_at_I16_over16": "nu**4*p**3/1024",
+      "effect": "nu**4*p**3/1024 * I16",
+      "occupation_index": null
+    },
+    {
+      "port": 0,
+      "label": 18,
+      "coefficient": 1,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 1,
+      "label": 18,
+      "coefficient": 1,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 0,
+      "label": 19,
+      "coefficient": 0,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 1,
+      "label": 19,
+      "coefficient": 0,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 0,
+      "label": 19,
+      "coefficient": 1,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 1,
+      "label": 19,
+      "coefficient": 1,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 0,
+      "label": 20,
+      "coefficient": 0,
+      "class": "triple_port0",
+      "probability_at_I16_over16": "3*nu**4*p**4/1024",
+      "effect": "3*nu**4*p**4/1024 * I16",
+      "occupation_index": null
+    },
+    {
+      "port": 1,
+      "label": 20,
+      "coefficient": 0,
+      "class": "triple_port1",
+      "probability_at_I16_over16": "3*nu**4*p**3/1024",
+      "effect": "3*nu**4*p**3/1024 * I16",
+      "occupation_index": null
+    },
+    {
+      "port": 0,
+      "label": 20,
+      "coefficient": 1,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 1,
+      "label": 20,
+      "coefficient": 1,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 0,
+      "label": 21,
+      "coefficient": 0,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 1,
+      "label": 21,
+      "coefficient": 0,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 0,
+      "label": 21,
+      "coefficient": 1,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 1,
+      "label": 21,
+      "coefficient": 1,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 0,
+      "label": 22,
+      "coefficient": 0,
+      "class": "triple_port0",
+      "probability_at_I16_over16": "3*nu**4*p**4/1024",
+      "effect": "3*nu**4*p**4/1024 * I16",
+      "occupation_index": null
+    },
+    {
+      "port": 1,
+      "label": 22,
+      "coefficient": 0,
+      "class": "triple_port1",
+      "probability_at_I16_over16": "3*nu**4*p**3/1024",
+      "effect": "3*nu**4*p**3/1024 * I16",
+      "occupation_index": null
+    },
+    {
+      "port": 0,
+      "label": 22,
+      "coefficient": 1,
+      "class": "occupation_port0",
+      "probability_at_I16_over16": "nu**2*p**4*(1 - b)**2/256",
+      "effect": "p^4*nu^2*(1-b)^2/1024 * Hprime_2^2",
+      "occupation_index": 2
+    },
+    {
+      "port": 1,
+      "label": 22,
+      "coefficient": 1,
+      "class": "occupation_port1",
+      "probability_at_I16_over16": "nu**2*p**3*(1 - b)**2/256",
+      "effect": "p^3*nu^2*(1-b)^2/1024 * Hprime_2^2",
+      "occupation_index": 2
+    },
+    {
+      "port": 0,
+      "label": 23,
+      "coefficient": 0,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 1,
+      "label": 23,
+      "coefficient": 0,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 0,
+      "label": 23,
+      "coefficient": 1,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 1,
+      "label": 23,
+      "coefficient": 1,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 0,
+      "label": 24,
+      "coefficient": 0,
+      "class": "single_port0",
+      "probability_at_I16_over16": "nu**4*p**4/1024",
+      "effect": "nu**4*p**4/1024 * I16",
+      "occupation_index": null
+    },
+    {
+      "port": 1,
+      "label": 24,
+      "coefficient": 0,
+      "class": "single_port1",
+      "probability_at_I16_over16": "nu**4*p**3/1024",
+      "effect": "nu**4*p**3/1024 * I16",
+      "occupation_index": null
+    },
+    {
+      "port": 0,
+      "label": 24,
+      "coefficient": 1,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 1,
+      "label": 24,
+      "coefficient": 1,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 0,
+      "label": 25,
+      "coefficient": 0,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 1,
+      "label": 25,
+      "coefficient": 0,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 0,
+      "label": 25,
+      "coefficient": 1,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 1,
+      "label": 25,
+      "coefficient": 1,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 0,
+      "label": 26,
+      "coefficient": 0,
+      "class": "single_port0",
+      "probability_at_I16_over16": "nu**4*p**4/1024",
+      "effect": "nu**4*p**4/1024 * I16",
+      "occupation_index": null
+    },
+    {
+      "port": 1,
+      "label": 26,
+      "coefficient": 0,
+      "class": "single_port1",
+      "probability_at_I16_over16": "nu**4*p**3/1024",
+      "effect": "nu**4*p**3/1024 * I16",
+      "occupation_index": null
+    },
+    {
+      "port": 0,
+      "label": 26,
+      "coefficient": 1,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 1,
+      "label": 26,
+      "coefficient": 1,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 0,
+      "label": 27,
+      "coefficient": 0,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 1,
+      "label": 27,
+      "coefficient": 0,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 0,
+      "label": 27,
+      "coefficient": 1,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 1,
+      "label": 27,
+      "coefficient": 1,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 0,
+      "label": 28,
+      "coefficient": 0,
+      "class": "triple_port0",
+      "probability_at_I16_over16": "3*nu**4*p**4/1024",
+      "effect": "3*nu**4*p**4/1024 * I16",
+      "occupation_index": null
+    },
+    {
+      "port": 1,
+      "label": 28,
+      "coefficient": 0,
+      "class": "triple_port1",
+      "probability_at_I16_over16": "3*nu**4*p**3/1024",
+      "effect": "3*nu**4*p**3/1024 * I16",
+      "occupation_index": null
+    },
+    {
+      "port": 0,
+      "label": 28,
+      "coefficient": 1,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 1,
+      "label": 28,
+      "coefficient": 1,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 0,
+      "label": 29,
+      "coefficient": 0,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 1,
+      "label": 29,
+      "coefficient": 0,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 0,
+      "label": 29,
+      "coefficient": 1,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 1,
+      "label": 29,
+      "coefficient": 1,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 0,
+      "label": 30,
+      "coefficient": 0,
+      "class": "triple_port0",
+      "probability_at_I16_over16": "3*nu**4*p**4/1024",
+      "effect": "3*nu**4*p**4/1024 * I16",
+      "occupation_index": null
+    },
+    {
+      "port": 1,
+      "label": 30,
+      "coefficient": 0,
+      "class": "triple_port1",
+      "probability_at_I16_over16": "3*nu**4*p**3/1024",
+      "effect": "3*nu**4*p**3/1024 * I16",
+      "occupation_index": null
+    },
+    {
+      "port": 0,
+      "label": 30,
+      "coefficient": 1,
+      "class": "occupation_port0",
+      "probability_at_I16_over16": "nu**2*p**4*(1 - b)**2/256",
+      "effect": "p^4*nu^2*(1-b)^2/1024 * Hprime_3^2",
+      "occupation_index": 3
+    },
+    {
+      "port": 1,
+      "label": 30,
+      "coefficient": 1,
+      "class": "occupation_port1",
+      "probability_at_I16_over16": "nu**2*p**3*(1 - b)**2/256",
+      "effect": "p^3*nu^2*(1-b)^2/1024 * Hprime_3^2",
+      "occupation_index": 3
+    },
+    {
+      "port": 0,
+      "label": 31,
+      "coefficient": 0,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 1,
+      "label": 31,
+      "coefficient": 0,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 0,
+      "label": 31,
+      "coefficient": 1,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    },
+    {
+      "port": 1,
+      "label": 31,
+      "coefficient": 1,
+      "class": "zero",
+      "probability_at_I16_over16": "0",
+      "effect": "0_16x16",
+      "occupation_index": null
+    }
+  ],
+  "preparation": {
+    "data_dimension": 16,
+    "data_density": "I16/16",
+    "reference_space_dimension": 128,
+    "reference_marginal_rank": 16,
+    "purification": "sum_i=0^15 |i>data|i>ref /4; all128 reference coordinates retained",
+    "complete_entropy_gradient": "G=(H(q)-1)*I16/log(phi)",
+    "all_normalized_pure_preparation_tangents_included": true,
+    "joint_nu_stationarity": false
+  },
+  "complete_source": {
+    "moving_root": "b=sqrt(1-nu^2), db/dnu=-nu/b",
+    "complete_source": "-sum_class multiplicity*dq/dnu*log(q)/log(phi)",
+    "exact_fixture": {
+      "nu": "3/5",
+      "b": "4/5"
+    },
+    "fixture_source_strictly_positive": true,
+    "fixture_sign_proof": "all nonblank dq/dnu>0 and q_blank>q_nonblank; source=sum_nonblank dq*log(q_blank/q)",
+    "entropy_phi_fixture_diagnostic": "0.1322787864384216858039991644982028917549",
+    "dnu_entropy_phi_fixture_diagnostic": "0.4320450911662761487625784382386796963921",
+    "general_nu_coarse_probabilities": {
+      "blank": "(-nu**2*p**2/32 + 1)**2",
+      "rare": "nu**4*(31*p**4/1024 + p**3/32)",
+      "root_group": "nu**2*p**2*(2 - nu**2)/32"
+    },
+    "root_group_conditional": "port law(p^2,p), then (g,(1-g)/4,(1-g)/4,(1-g)/4,(1-g)/4)",
+    "g": "1/2+b/(1+b^2)",
+    "coarse_decomposition_verified": true,
+    "general_nu_source_sign_consumer": "positive: increasing rare/root masses drawn from largest blank; internal root entropy increases as g decreases"
+  },
+  "arbitrary_preparation_complete_source": {
+    "scope": "one actual conserved pure-time Fourierblock, every fixed normalized density rho on CAR16",
+    "occupation_POVM": "D_j=Hprime_j^2/16>=0, sum_j D_j=I16",
+    "occupation_probabilities": "d_j=Tr(rho D_j), d_j>=0, sum_j d_j=1",
+    "occupation_simplex_vertices_realized_by_actual_basis_indices": [
+      1,
+      4,
+      2,
+      7
+    ],
+    "new_occupation_outcome_probabilities": "port0: p^4*nu^2*(1-b)^2*d_j/64; port1: p^3*nu^2*(1-b)^2*d_j/64",
+    "remaining_effects_scalar_and_unchanged": true,
+    "complete_entropy": "H3(q_blank,R,M)+R*H_R+M*(h(p^2)+h(g)+(1-g)*H(d))",
+    "strict_sign_proof": "R',M'>0 and q_blank>R,M; g>1/2,g'<0,H(d)>=0 imply [log((1-g)/g)-H(d)]*g'>0",
+    "full_partial_nu_source_strictly_positive_for_every_rho": true,
+    "no_joint_free_nu_root_any_preparation_on_this_block": true,
+    "independent_nu_tangent_required": true,
+    "fixed_preparation_in_partial_derivative": true,
+    "apparatus_effects_fixed_when_varying_preparation": true,
+    "preparation_constraints_coupled_to_nu_covered": false,
+    "H_d_zero_source_lower_envelope_attained": true,
+    "minimum_dnu_entropy_phi_fixture_diagnostic": "0.4293629075235365736262523073575264500732",
+    "derivative_of_H_d_weight": "p^2*nu*(1-b)^2*(1+2*b)/(32*b)>0",
+    "other_momentum_supports_or_continuum_covered": false
+  },
+  "zero_outcomes_retained": 86,
+  "zero_outcome_regularity": "C1 amplitude first source zero under rank birth; C2 not asserted",
+  "physical_admission_proved": false,
+  "native_programme_selection_proved": false,
+  "all_spacetime_closure_proved": false,
+  "GR_closed": false,
+  "input_sha256": {
+    "02_REGISTRY/research/sources/d0_complete_record_channel_2026-10-17/check_flat_relaxation.py": "0dcb79f0959ecd4f4484a500ef1c0e53e47d95b4a95feb874d16840f56cc9ec9",
+    "02_REGISTRY/research/certificates/a4d_native_curved_soldered_heat.py": "bf13f57c902da0005634ae6834c0b4e3ffd2df1aa196a61ebc0ff3dc0351c7da"
+  },
+  "runtime": {
+    "python": "3.9.6",
+    "sympy": "1.14.0"
+  },
+  "explicit_checks": 567,
+  "check_names_sha256": "e5b736fdd8cb20117f25ea6f98a93d0881cf2d8f3da23693c3088242168c158c"
+}

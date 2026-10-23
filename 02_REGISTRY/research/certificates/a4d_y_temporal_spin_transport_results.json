@@ -1,0 +1,22 @@
+{
+  "schema": "a4d-y-temporal-spin-transport-v1",
+  "background": "z=1 product-plane solder S_f=I+(f-1)P_perp",
+  "temporal_links": "phase0 CY(1) CB(-d) CR; phase2 CY(1)^-1 CB(+d) CR; R=a J12+b J13+c J23",
+  "boost_row_elimination_core": "3*d^4*(a-b+c+3)^2 + 4*(a-b+c-4)^2",
+  "real_exceptional_locus": "d=0 and a-b+c=4",
+  "exceptional_spatial_rows": [
+    "(3*f0-2*f2-f3)/3",
+    "(3*f0-f2-2*f3)/3",
+    "(f2-f3)/3",
+    "-(3*f0-2*f1-f3)/3",
+    "(f1-f3)/3",
+    "(3*f0-f1-2*f3)/3",
+    "(f1-f2)/3",
+    "-(3*f0-2*f1-f2)/3",
+    "-(3*f0-f1-2*f2)/3"
+  ],
+  "exceptional_transport_rank": 3,
+  "exceptional_transport_kernel": ["(1,1,1,1)"],
+  "conclusion": "all real temporal SO(3)-spin Cayley corrections in this ansatz force f constant on a connected periodic spatial carrier",
+  "scope_fence": ["spatial links identity", "arbitrary transverse spatial-link corrections remain open", "full nonlinear joint range uniformity remains open", "no task-level terminal"]
+}

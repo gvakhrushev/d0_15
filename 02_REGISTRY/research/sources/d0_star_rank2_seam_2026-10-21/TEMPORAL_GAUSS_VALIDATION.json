@@ -1,0 +1,56 @@
+{
+  "status": "PASS_SCOPED_ORIGINAL_TEMPORAL_GAUSS_REPLAY",
+  "date": "2026-10-22",
+  "declared_interface": "original based G2STAR six-face, native GoldenMaster cap1 K_pre=9 L_gate=20; price retyped x_null=-x_canonical; two original real CAR scalar gradients; fixed positive rho",
+  "local_exact_rational": {
+    "original_Lorentz_bivector_star": true,
+    "both_neighboring_time_based_faces": true,
+    "finite_local_SO13_transformation": true,
+    "CAR_metric_preserved": true,
+    "two_end_temporal_gauge_requires_unit_Wilson": true,
+    "tested_noncommuting_temporal_Wilson_nonidentity": true
+  },
+  "local_numerical": {
+    "independent_random_fields": 7,
+    "generators_per_field": 6,
+    "source_first_jets": 42,
+    "maximum_Ward_residual": 8.768114493062093e-23,
+    "nonzero_Gauss_component_max": 1.3986718870914094e-8,
+    "h": 0.087,
+    "fixed_PF_predecessor": 1,
+    "fixed_PF_current": 1.8,
+    "source_value_type": "derivative of given original nonlinear N1 F, not fitted Palatini source"
+  },
+  "diagnostic_separate_nonlinear_slabs": [
+    {
+      "intervals": 3,
+      "unknowns": 72,
+      "h": 0.08928712790578712,
+      "max_initial_36_source": 0.024457239103764794,
+      "hessian_min_singular_value": 0.0000050280805031959385,
+      "hessian_max_singular_value": 283.6580760354825,
+      "naive_Newton_max_component": 3.5099279377556254
+    },
+    {
+      "intervals": 4,
+      "unknowns": 108,
+      "h": 0.06696534592934034,
+      "max_initial_36_source": 0.018794421178452092,
+      "hessian_min_singular_value": 0.0000013019609624083754,
+      "hessian_max_singular_value": 590.8214607385727,
+      "naive_Newton_max_component": 7.507280270852347
+    }
+  ],
+  "scope": {
+    "exact_full_4D_finite_Gauss_theorem_from_original_gauge_covariance": true,
+    "time_slab_example_is_not_full_GR_root": true,
+    "hessian_full_rank_is_not_uniform_inverse": true,
+    "temporal_gauge_with_two_fixed_endpoint_frames_requires_Wilson_I": true,
+    "compulsory_full_Book03_valuation_proved": false,
+    "independent_upstream_sources_proved": false,
+    "whole_full42_root_proved": false,
+    "GR_closed": false,
+    "new_Lean_theorem_compiled": false,
+    "remote_scientific_replay_passed": false
+  }
+}

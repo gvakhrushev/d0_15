@@ -1,0 +1,82 @@
+{
+  "input_ref": "5edac80c86c17014fc83e0aa608e192f43c1fdba",
+  "repository": "gvakhrushev/d0_15",
+  "sources": [
+    {
+      "path": "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md",
+      "git_blob": "ecdd31abb52c94e9f2a157a80c7c49a6f5ac31aa",
+      "use": "full feedback and normalization definitions; no derived full128 Info table",
+      "url": "https://github.com/gvakhrushev/d0_15/blob/5edac80c86c17014fc83e0aa608e192f43c1fdba/01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_same_history_price_composition_2026-10-20/paid_port_history.md",
+      "git_blob": "c93f54125d161edc6a3775922c477a3d73db1681",
+      "use": "already-owned actual Kraus cost transform, all-history source and scalar-shell law",
+      "url": "https://github.com/gvakhrushev/d0_15/blob/5edac80c86c17014fc83e0aa608e192f43c1fdba/02_REGISTRY/research/sources/d0_same_history_price_composition_2026-10-20/paid_port_history.md"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/PRIMARY_CAR_PREPARATION_SOURCE.md",
+      "git_blob": "6d00e72d40d767f99b2778c69cee9a984c88bad2",
+      "use": "literal full primary preparation and entire Dirac action",
+      "url": "https://github.com/gvakhrushev/d0_15/blob/5edac80c86c17014fc83e0aa608e192f43c1fdba/02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/PRIMARY_CAR_PREPARATION_SOURCE.md"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/check_primary_car_preparation_source.py",
+      "git_blob": "9f77a326531b3007f7e3ed42907bf61a9f522dcc",
+      "use": "exact full Fourier numerators and original count-vector digest",
+      "url": "https://github.com/gvakhrushev/d0_15/blob/5edac80c86c17014fc83e0aa608e192f43c1fdba/02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/check_primary_car_preparation_source.py"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_primary_native_domain_source_2026-10-20/check_primary_domain_source.py",
+      "git_blob": "7f0b411a7d8fa6af6753109eb7057a7a375fd5ef",
+      "use": "literal exact integer F/R count routing",
+      "url": "https://github.com/gvakhrushev/d0_15/blob/5edac80c86c17014fc83e0aa608e192f43c1fdba/02_REGISTRY/research/sources/d0_primary_native_domain_source_2026-10-20/check_primary_domain_source.py"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_record_generated_heat_v8_2026-10-14/RESULT.md",
+      "git_blob": "e5b08043d3156fb30248a482e3c72342ff13add9",
+      "use": "full HJR constructor; old root enclosure and spectrum; root existence consumed",
+      "url": "https://github.com/gvakhrushev/d0_15/blob/5edac80c86c17014fc83e0aa608e192f43c1fdba/02_REGISTRY/research/sources/d0_record_generated_heat_v8_2026-10-14/RESULT.md"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/NATIVE_COHERENT_BOOK_COMPLEMENT.md",
+      "git_blob": "db279db445bcc013827773bdede3488a9461fcea",
+      "use": "actual complementary cut differs from abort effect; clock interface",
+      "url": "https://github.com/gvakhrushev/d0_15/blob/5edac80c86c17014fc83e0aa608e192f43c1fdba/02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/NATIVE_COHERENT_BOOK_COMPLEMENT.md"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/BOOK_SOURCE_BINDING.md",
+      "git_blob": "0fc40d94bf6db0d0be49c783c902274821af5b92",
+      "use": "distinct amplitude/probability/extra-marker bindings",
+      "url": "https://github.com/gvakhrushev/d0_15/blob/5edac80c86c17014fc83e0aa608e192f43c1fdba/02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/BOOK_SOURCE_BINDING.md"
+    }
+  ],
+  "prior_local_interval_helper": {
+    "file": "upstream_hjr_clock.py",
+    "sha256": "ef60b02220cf9b6b01c2166eecec1595336de59522ce5a9a1201c98f577b3a39",
+    "note": "interval helper/feature formulas adapted from prior delivered clock packet; no entire inherited suite executed"
+  },
+  "standard_background": {
+    "quantum_Doob": "F. Carollo et al., Making rare events typical in Markovian open quantum systems, arXiv:1711.10951 (prior art, not a proof of native admission)"
+  },
+  "validation_environment": {
+    "python": "3.13.5",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "mpmath": "1.3.0"
+  },
+  "fresh_claims": {
+    "primary_reference_obstruction": true,
+    "root_source_transport_test": true,
+    "original_root_existence_reproved": false,
+    "native_Book_Info_selected": false,
+    "independent_review": false,
+    "GR_closed": false
+  },
+  "concurrent_context": {
+    "observed_head": "7c3efe0a9faad4a6340ddcff9bdc9a6b165084c5",
+    "path": "02_REGISTRY/research/A4D_FIXED_PROCESSOR_JOINT_RESOURCE_SOURCE_2026_10_21.md",
+    "git_blob": "c9a3d8a5b7f00ea149cdf5d08403dc042525cb27",
+    "use": "distinct positive processing-source result; do not identify its price or input resources with this full128 tilt"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "actual_native_source": {
+    "TV_lower_limit_diagnostic": 0.028906104701066544,
+    "actual_Q_ratio": "p^2; independent fresh-coin control is 2*p^3",
+    "d_limit": "(2+p)/3",
+    "d_recurrence": "d_1=0, d_2=1; d_m=1-p^2*d_(m-1)+p^3*d_(m-2)",
+    "entropy": "h(r)+h(p^2)[(1-r) U_(m-1)+r V_(m-2)]",
+    "persistent_TV_bound": "(1-r_m)*(p^3-p^4)/2",
+    "positive_preparation_root": "r_m = 1/(1+exp(h(p^2)*d_m))",
+    "prefix_ratio": "q(FFFF)/q(FRF)=phi, for every 0<=r<1",
+    "r_limit_diagnostic": 0.35885277290671275,
+    "scope": "literal re-used active qubit with fresh retained records; not all D0"
+  },
+  "carrier_and_reachability": {
+    "conditional_fairness": "FR/RF on their retained union is exactly 1/2",
+    "exact_uniform_terminal_profile": "impossible for d>1 in this palette",
+    "finite_unconditional_palette": "G, CNOT, basis inputs; entries in Z[a]",
+    "full_GNS_control": "L(P_0) E_01 = E_01, R(P_0) E_01 = 0",
+    "proof": "finite Born sums are algebraic integers; rational algebraic integers are integers",
+    "raw_to_AF": "isometry onto the correlated diagonal subspace only",
+    "scope_limits": [
+      "does not rule out approximation by refining programs",
+      "does not restrict all real D0 field inputs",
+      "does not derive physical admission or C3 jets from circuit density"
+    ]
+  },
+  "finite_stopped_instrument": {
+    "complete_leaf_counts": [
+      2,
+      3,
+      5,
+      8,
+      13,
+      21,
+      34
+    ],
+    "cost_levels": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "expected_cost": "m + Pr(PENDING)",
+    "literal_fullStep_sha256": "6ea993e22c8b7d0b8a93b9537d51893cb4aff45af858d82ec7f9005ead96e2d7",
+    "normalizer": "identically one; all READY and PENDING outcomes retained",
+    "valuation": "H(q)/log(phi), conditional on the same pathwise Book weight=q"
+  },
+  "schema": "d0-native-stopped-history-interface/1",
+  "status": "PASS_SCOPED_NATIVE_INTERFACE_CONTROLS"
+}

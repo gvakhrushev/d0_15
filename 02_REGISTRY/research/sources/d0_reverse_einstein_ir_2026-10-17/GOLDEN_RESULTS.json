@@ -1,0 +1,40 @@
+{
+  "blockers": [
+    "native physical admission of shape-matrix controlled golden return",
+    "same physical clock/observer spatial embedding and source",
+    "selection of signed combined contrast by SAME Cost−Info programme",
+    "true local Lorentz metric, preparation, matter and uniform exact joint refinement"
+  ],
+  "checks": [
+    "golden_split_reference_normalized",
+    "all_four_golden_histories_retained",
+    "odd_golden_signed_moment_1",
+    "odd_golden_signed_moment_3",
+    "even_golden_signed_moment_2",
+    "even_golden_signed_moment_4",
+    "3D_golden_spatial_curvature_exact_finite_any_u",
+    "3D_actual_moving_shape_source_exact",
+    "3D_spatial_source_nontrivial_moving",
+    "same_original_size4_golden_compiler_reads_spatial_zero_lift",
+    "spatial_zero_lift_quartic_vanishes_without_subtraction",
+    "4D_full_golden_moment_includes_real_quartic",
+    "quartic_native_four_dimensional_obstruction_present",
+    "exact_0_u_2u_curvature_source_removes_entire_quartic",
+    "exact_moving_four_dimensional_source_no_frozen_shape",
+    "4D_moving_source_nontrivial",
+    "golden_full_lorentz_scalar_from_finite_0_u_2u_scores",
+    "golden_full_lorentz_moving_shape_source_exact",
+    "product_space_four_curvature_equals_spatial_three",
+    "product_Lorentz_spatial_sign_forced_by_reverse_EH",
+    "relative_coefficient_minus_two_unique_from_product",
+    "one_scale_4D_fails_when_quartic_is_real",
+    "intrinsic_R3_Gauss_hypersurface_example",
+    "spatial_shape_selfadjoint_real"
+  ],
+  "checks_count": 24,
+  "four_dimensional_source": "(16(M4(u)-D4)−(M4(2u)−D4))/(12 p³ u²)",
+  "native_spatial_accepted_owner": "03_FORMALIZATION/D0/Geometry/ArchiveSpatialHistorySplit.lean blob e019851589ad7e750e183ff1098c24283a093d19; literal spatial Hodge square on A-invariant cochains, full16 fibre",
+  "relative_metric_Lorentz_curvature": "R_G−2R_3 from exact 4D and 3D normal Jacobian scores",
+  "scope": "Finite geometry on existing golden four-history weights plus conditional normal-shape compiler; NOT physical native selection",
+  "three_dimensional_source": "(M3(u)-D3)/(p³ u²) with spatial shape embedded as diag(0,A3) in the existing four-dimensional compiler"
+}

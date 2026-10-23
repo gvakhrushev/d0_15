@@ -1,0 +1,20 @@
+{
+  "schema": "d0-q3300-interface-boundary/1",
+  "kind": "separately reviewed context, not an input to the interval checker",
+  "full_lorentz_owner": {
+    "path": "02_REGISTRY/research/A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md",
+    "sha256": "0ca27a97b7e8fa5653242415c4bcbe0e946fccd95bb277024fcbe79222c927a8"
+  },
+  "full_lorentz_result": {
+    "path": "02_REGISTRY/research/sources/d0_full_lorentz_adjoint_2026-10-16/RESULTS.json",
+    "sha256": "8920803d185af11132dfa274a42d0e307ad43db150ef8e87d7ab83c9bf2f4d0d",
+    "validation_path": "02_REGISTRY/research/sources/d0_full_lorentz_adjoint_2026-10-16/VALIDATION.json"
+  },
+  "interface_change": {
+    "legacy_source_rows": 4,
+    "canonical_full_lorentz_boost_rows": 12,
+    "old_pure_seed_satisfies_full_lorentz_boost_rows": false,
+    "consequence": "The faithful-to-old-pure interpolation certified here is not a feasible full-Lorentz path."
+  },
+  "interpretation": "Keep the q3300 interval result as a local legacy-interface obstruction. It is not evidence for or against a stationary branch of the expanded full-Lorentz system."
+}

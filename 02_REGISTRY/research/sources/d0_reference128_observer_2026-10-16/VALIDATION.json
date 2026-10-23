@@ -1,0 +1,28 @@
+{
+  "artifact_pins": {
+    "02_REGISTRY/research/A4D_REFERENCE128_OBSERVER_READING_BOUNDARY.md": "cf7f492a44533a93cb23ba09f0cfd48da7cabf8032eed613c871b567f678d88a",
+    "02_REGISTRY/research/sources/d0_reference128_observer_2026-10-16/check_reference128_observer.py": "ded77bb671cdb2b58cec6389f5b7fe4bf697906383c0a1ae4744256b40d6d6bb"
+  },
+  "commands": [
+    "python3 02_REGISTRY/research/sources/d0_reference128_observer_2026-10-16/check_reference128_observer.py",
+    "python3 -O 02_REGISTRY/research/sources/d0_reference128_observer_2026-10-16/check_reference128_observer.py"
+  ],
+  "new_exact_check_count": 138,
+  "normal_and_optimized_byte_identical": true,
+  "old_entrypoints_executed": false,
+  "runtime": {
+    "python": "3.9.6",
+    "sympy": "1.14.0"
+  },
+  "scientific_output_sha256": "1066adf4098a2e66c07c78951f9f2edc4d9975ff7ac9d369b9251b0e6e3f5867",
+  "scope": "NEW_SMALL_EXACT_OBSERVER_BOUNDARY_ONLY",
+  "source_pins": {
+    "02_REGISTRY/research/A4D_NATIVE_CORRELATED_CURRENT_TRANSITION.md": "040f26ba81a25959add549d01fb592c19bf102e6081e32e5b64a7102ab6fdc0c",
+    "02_REGISTRY/research/A4D_NATIVE_REFERENCE_MEMORY_PREPARATION.md": "04d38a6a126830fa857f4f7a06bf74789f21e283ed540d676ba8ea1de50e9184",
+    "02_REGISTRY/research/certificates/a4d_native_curved_soldered_heat.py": "bf13f57c902da0005634ae6834c0b4e3ffd2df1aa196a61ebc0ff3dc0351c7da",
+    "02_REGISTRY/research/certificates/a4d_native_fock_record_binding_check.py": "42e83e6f93b48ce4d4420f829d8e79c993a215d7b1a4c6a2f812bd45fd914078",
+    "02_REGISTRY/research/sources/d0_record_generated_heat_v8_2026-10-14/RESULT.md": "f7ea30d997a58fa4e608d4403acae5f5e3d7e5da45116f9a7c3f62be5e99115c"
+  },
+  "source_ref": "a4f4d4e86ae63336841337e1a93cd5296eb43792",
+  "status": "PASS"
+}

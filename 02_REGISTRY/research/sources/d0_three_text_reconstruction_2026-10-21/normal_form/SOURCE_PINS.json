@@ -1,0 +1,40 @@
+{
+  "repository_head": "8ba0bd929499e639b0fe4640ffa448631f3b024b",
+  "sources": [
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/COMPLETE_COMPILER_COFRAME_EQUIVALENCE.md",
+      "git_blob": "4a75e7666560602ce0b13b9ec33a6864dbff84ef",
+      "sha256": "65b23f3b2f9e821a574b90102b1a6d60f8d8f26447971fcd073ae53ff628534b"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/GOLDEN_EXACT_DETECTOR.md",
+      "git_blob": "92b9003d783c24b1883a2a21f8b30625078afff7",
+      "sha256": "d33c9c2cb2322e381723f481eb1fcf58058fd05ad88eda92c5597c026d02eb77"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/GOLDEN_EXACT_DETECTOR_REVIEW.md",
+      "git_blob": "0452d757fb054267f114d1e3cf77d64c7fa57542",
+      "sha256": "3592d728696bf0e4e482031525ff7c123bbadb38364512613f4b6ab02e4fe4f8"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/check_golden_exact_detector.py",
+      "git_blob": "55e1649e318bdceb11f0e56f2598a28ce1184b43",
+      "sha256": "5e1ad8cbd442cc90eef17ab61a3b97189876c4388d54f3761f6408832cafb2cd"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_LOCAL_LEFT_CODED_CAR_NULL_MATTER_EINSTEIN_2026_10_18.md",
+      "git_blob": "75c40d133a23973a36ba5b95d34b4eb36ca96663",
+      "sha256": "828cba545e2c734741e7acf1509248c441de4451f9099cebee8d10c00230e35b"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_ARBITRARY_BRINKMANN_ALL40_CARTAN_DISCRETE_EINSTEIN_2026_10_19.md",
+      "git_blob": "050ee972efa0f2ae37206b2ef9e3b4122dbac204",
+      "sha256": "8dbca8ff9a4567a2baf216357b5d3ffa2d217281ced4e5d0e535257db2f5e83e"
+    }
+  ],
+  "restoration_input": {
+    "path": "/Users/grigorijvahrusev/.codex/attachments/1bc35f5e-29eb-4c5f-91cb-fede6a1bf17b/\u0412\u0441\u0442\u0430\u0432\u043b\u0435\u043d\u043d\u044b\u0439 \u0442\u0435\u043a\u0441\u0442.txt",
+    "sha256": "17f7e9fdeae3c0f0744c61662f7bd6b4261552673f3843f32ba7aed205670b78"
+  },
+  "status": "New reconstruction; historical lost files and reviews not recovered; owned historical checkers not rerun"
+}

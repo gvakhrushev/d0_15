@@ -1,0 +1,41 @@
+{
+  "schema": "d0-native-memory-source-inputs/1",
+  "repository": "gvakhrushev/d0_15",
+  "source_ref": "0ff0a93f199a9411fbdf2470d557c6fd6c2ccc02",
+  "execution": 334,
+  "owners": [
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_COMPLETE_FIELD_SOURCE_AND_TRANSPORT.md",
+      "git_blob": "566ea0be9eab1f1a1a115711717b6f0120290f06",
+      "use": "same action, homogeneous v8 root and full stored-adjoint/source map"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_FULL_JOINT_KERNEL_AND_MATTER_REDUCTION.md",
+      "git_blob": "c6c98014159a8ff3465789223e56f0cff542c516",
+      "use": "owned energy-window Schur reconstruction; full-rank versus rank-free equations"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_CLOSED_RECORD_ENGINE.md",
+      "git_blob": "e3101fe88797778f076c14b772dbaffaabe387d6",
+      "use": "actual seed, full16 gates, fixed-sector autonomous orbit; no replay of its long suite"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_RECORD_METRIC_CHRONOLOGY.md",
+      "git_blob": "fda1294b8d9794a62b86faaa19e3cc1a459e031d",
+      "use": "literal full record formula(3)"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_AFFINE_TRANSLATION_CAR_ORDER.md",
+      "git_blob": "83e721d3703ced58b31387827e4815098e157610",
+      "use": "equal endpoints and ordered full-CAR operators"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_AFFINE_PATH_MATTER_MEMORY.md",
+      "use": "exact native seed word-pair; path confirmed in pinned commit"
+    }
+  ],
+  "parent_suites_replayed": false,
+  "actual_root_recomputed": false,
+  "new_checker": "Independently executes the displayed literal formulas and new finite identities; parent documentary SHA pins are not a whole-source replay",
+  "external_mathematical_context": "https://arxiv.org/abs/2105.02058"
+}

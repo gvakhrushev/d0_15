@@ -1,0 +1,77 @@
+{
+  "status": "PASS_ORIGINAL_FULL128_FAITHFUL_DILATION_AND_BOUNDARY_SOURCE_NOT_GR",
+  "source_commit": "f090c0124c389e95e163611624a0f88b921a892a",
+  "concurrent_minimal_dilation_consumed_at": "52aa5274533d7fc1eaacc30f4af1cfedc175e9bf",
+  "checks": 71,
+  "dimensions": {
+    "data": 16,
+    "Julia_Walsh": 1024,
+    "original_with_Golden_port": 2048,
+    "retained_oldRIGHT": 128
+  },
+  "native_boost_coordinate": {
+    "r": 0.1111111111111111,
+    "theta_rapidity": 0.22314355131420974,
+    "derivative_coordinate": "theta, not r",
+    "dtheta_dr": 2.025
+  },
+  "Delta_spectral_endpoints": [
+    0.013262918217834789,
+    0.014371652094665201
+  ],
+  "nonblank_stationary_probability": 0.020785724350897795,
+  "forward_macro_sequence": [
+    "G",
+    "W",
+    "S",
+    "Zc",
+    "W",
+    "Zc",
+    "Zp",
+    "G",
+    "Zp"
+  ],
+  "macro_count_is_not_paid_primitive_tick_count": true,
+  "all_two_tick": {
+    "full_formal_words": 16384,
+    "probability_sum": 0.9999999999999993,
+    "derivative_sum": -6.0960961213891995e-18,
+    "actual_port_cost": 2.0260525436844175,
+    "d_rapidity_port_cost": -0.001890600542203736
+  },
+  "minimal_native_carrier_composition": {
+    "minimal_U_dimension": 64,
+    "native_U_dimension": 2048,
+    "exact_extra_identity_dimension": 1984,
+    "minimal_paired_heat_zeros": 32,
+    "native_paired_heat_zeros": 2016,
+    "d_rapidity_H_minimal": 0.000596492862448003,
+    "d_rapidity_H_native": 1.8496680718219935e-05,
+    "d_rapidity_heat_difference": -0.000577996181729783,
+    "nonzero_source_if_row_refinement_frozen": 0.022220833330040466
+  },
+  "initialized_Book": {
+    "J": 4.1014328465257025e-05,
+    "dJ": -2.344012184324785e-06,
+    "H_cut": 16.33182036803625,
+    "dH_cut": 1.8496680718219935e-05,
+    "dH_plus_J": 1.615266853389515e-05,
+    "zeros": 2016,
+    "Zbase": 2047.4907560031334
+  },
+  "full_work_cut": {
+    "J": 0.001844281904630858,
+    "dJ": 6.3986411136429225e-21
+  },
+  "paired_heat_scope": "CdaggerC+CCdagger on entire declared ambient carrier; NOT identified actual scene Hodge",
+  "constructor_is_excerpt": true,
+  "full42_field_admission": false,
+  "all_coordinate_transport": "exact operator theorem for any supplied smooth native word family; only original rapidity checked numerically",
+  "physical_active_cut_selected": false,
+  "GR_closed": false,
+  "verification": "analytical identities and exact symbolic controls plus double-precision original matrix replay; not interval-certified or Lean",
+  "maximum_direct_matrix_history_discrepancy": 2.6645352591003757e-15,
+  "maximum_independent_finite_difference_discrepancy": 2.0527995473382222e-11,
+  "normal_optimized_stdout_identical": true,
+  "full_stdout_sha256": "b297732c4362535b1b845a186eece8a1a4dfb5ccf6d7570145ea468f4c38ef87"
+}

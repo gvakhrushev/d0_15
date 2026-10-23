@@ -1,0 +1,34 @@
+{
+  "author_checks": 124,
+  "normal_optimized_byte_identical": true,
+  "stdout_equals_RESULT": true,
+  "proof_status": "AUTHOR_DERIVATION_NOT_INDEPENDENT_REVIEW",
+  "mathematical_mutations_rejected": [
+    {
+      "mutation": "wrong_herald_corner",
+      "returncode": 1,
+      "detected_at": "ArithmeticError: writer 0: literal successful amplitude equals table/(d B)"
+    },
+    {
+      "mutation": "discard_sign_of_actual_entry",
+      "returncode": 1,
+      "detected_at": "ArithmeticError: writer 0: literal successful amplitude equals table/(d B)"
+    },
+    {
+      "mutation": "discard_input_Walsh_phase",
+      "returncode": 1,
+      "detected_at": "ArithmeticError: writer 0: all-output isometry"
+    },
+    {
+      "mutation": "incorrect_success_normalization",
+      "returncode": 1,
+      "detected_at": "ArithmeticError: writer 0: success preserves non-diagonal oldRIGHT"
+    }
+  ],
+  "new_all42_replay": false,
+  "new_Lean_build": false,
+  "remote_CI": false,
+  "source_precision": "exact rational/integer core; floating native Julia/log diagnostics separately labelled",
+  "main_changed": false,
+  "GR_closed": false
+}

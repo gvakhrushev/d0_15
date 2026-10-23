@@ -1,0 +1,75 @@
+{
+  "checks": [
+    "pinned_cone_corrector_owner",
+    "one_owned_run_with_final_result",
+    "owned_full128_resonance_returned",
+    "exact_invariant_shell_block_0",
+    "exact_block_spectrum_0",
+    "exact_invariant_shell_block_1",
+    "exact_block_spectrum_1",
+    "exact_invariant_shell_block_2",
+    "exact_block_spectrum_2",
+    "exact_invariant_shell_block_3",
+    "exact_block_spectrum_3",
+    "exact_invariant_shell_block_4",
+    "exact_block_spectrum_4",
+    "full_shell_resonance_trace_zero",
+    "full_shell_resonance_squared_trace_52",
+    "all_128_resonance_eigenvalues_accounted",
+    "kernel_dimension_32",
+    "first_96_shell_coordinates_are_nonsingular",
+    "no_eigenspace_has_full_four_axis_support",
+    "declared_full_shell_has_four_axis_support",
+    "full_shell_first_order_amplitude_equation_impossible",
+    "hostile_drop_opposite_axis_coupling_rejected",
+    "hostile_scalar_trace_substitution_rejected"
+  ],
+  "consequence": "No nonzero leading amplitude with support on every coordinate-axis pair can solve (A-epsilon1 I)C0=0 for this fixed cone and fixed first geometry/link jets.",
+  "exact_check_count": 23,
+  "full_shell_dimension": 128,
+  "kernel_dimension": 32,
+  "kernel_momentum_support": [
+    "-e3",
+    "+e3"
+  ],
+  "memory_fibre_consequence": "Every rho=(P_Omega/8) tensor sigma with sigma positive and trace one has full four-axis support; reducing internal rank alone cannot satisfy the first projected amplitude equation.",
+  "minimum_nonzero_absolute_eigenvalue_at_s1": "(sqrt(2)-1)/2",
+  "no_full_four_axis_eigenspace": true,
+  "not_proved": [
+    "compatibility after first geometric/link field jets derived from their own Euler equations",
+    "preparations with momentum support restricted to one spectral sector",
+    "other cones, shells, or nonlinear branches",
+    "native gate admission, refinement recovery, or Einstein dynamics"
+  ],
+  "operator": "A=P{D0,D1}P on the actual 128-dimensional first shell",
+  "owner": "02_REGISTRY/research/sources/d0_cone_matter_corrector_2026-10-16/check_cone_matter_corrector.py",
+  "owner_sha256": "7bbf1589f3a32af381036df64f76d720ce14a9f2e502b3a1a6f43f5b5e776d58",
+  "rank": 96,
+  "scale_convention": "listed spectrum is at s=1; for G=s^2 I4 multiply every eigenvalue by s^-2",
+  "schema": "d0-cone-full-shell-first-jet/1",
+  "shell_sector_spectra": [
+    {
+      "-1/2 + sqrt(2)/2": 8,
+      "-sqrt(2)/2 - 1/2": 8,
+      "1/2 + sqrt(2)/2": 8,
+      "1/2 - sqrt(2)/2": 8
+    },
+    {
+      "-1/2 + sqrt(2)/2": 8,
+      "-sqrt(2)/2 - 1/2": 8,
+      "1/2 + sqrt(2)/2": 8,
+      "1/2 - sqrt(2)/2": 8
+    },
+    {
+      "-sqrt(2)/4": 16,
+      "sqrt(2)/4": 16
+    },
+    {
+      "0": 16
+    },
+    {
+      "0": 16
+    }
+  ],
+  "status": "PASS_FULL_SHELL_FIRST_JET_NO_GO"
+}

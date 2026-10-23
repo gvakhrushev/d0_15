@@ -1,0 +1,50 @@
+{
+  "status": "PASS",
+  "stencil_sha256": "95de1dca7b7ec738a83ff74a74547a26a6e545d0e55ef601b8c1922d8112f5b5",
+  "null_translation": {
+    "symbolic_parameters": [
+      "a",
+      "b",
+      "d",
+      "cx",
+      "cy",
+      "h",
+      "x",
+      "y"
+    ],
+    "mixed_link_rows": 150,
+    "nonzero_backward_rows": 0,
+    "forward_negative_row": "-h",
+    "finite_tau_euler_identity": "coframe source linear; quadratic link change zero",
+    "physical_metric_variation": "(delta_s0 D_r^-psi + delta_r0 D_s^-psi)/h",
+    "continuum_interpretation": "v-coordinate diffeomorphism; not independent matter",
+    "Lorentz_gauge_fix_alone_gives_invertible_Hessian": false
+  },
+  "whole_frame": {
+    "whole_tuple_Gram_source": "0",
+    "ordinary_trace": true,
+    "skew_frame_generator_required": false,
+    "updated_gate_fixed_cut_inferred_equivalent": false
+  },
+  "invariant_macro": {
+    "completed_invariant_macro_covariant": true,
+    "finite_spectator_return_asserted": false,
+    "forward_gate_inverse_requires_declared_resource": true,
+    "physical_gate_admission_inferred": false
+  },
+  "full_car_scalarization": {
+    "input_columns": 16,
+    "central_scalar": "5/16",
+    "vacuum_transporter": "derived from actual proper-Lorentz edge query",
+    "physical_vacuum_state_or_postselection_used": false,
+    "supplied_controlled_query_interface_required": false
+  },
+  "scalar_controlled_square": {
+    "controlled_square_echo": "exact",
+    "analytic_branch_gap_required": true,
+    "unitary_Laurent_polynomial_assumed_primitive": false,
+    "scalar_return_and_leakage_budget_required": true
+  },
+  "exact_compiled_joint_roots_proved": false,
+  "physical_D0_GR_proved": false
+}

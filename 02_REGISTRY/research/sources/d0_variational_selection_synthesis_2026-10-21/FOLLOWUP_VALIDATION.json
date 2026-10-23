@@ -1,0 +1,124 @@
+{
+  "GR_closed": false,
+  "authored_text_control_characters_valid": true,
+  "consumed_later_sources": [
+    {
+      "git_blob": "44cb268413beaf4c1f8984de27c65b51e922a564",
+      "path": "02_REGISTRY/research/A4D_RANK2_EXACT_DIAGONAL_CAUCHY_AND_TEMPORAL_GAUSS_2026_10_21.md",
+      "ref": "9ccdb83ca9a72f279bae5e445cfa4309efa2e5ef",
+      "sha256": "042b1728d32c410dc8e9087397cd9048916aaf0d9ebb5277d97c0e25c4960c6c"
+    },
+    {
+      "git_blob": "3c104cfadd7abe7a289f6c849d35f3d84910e226",
+      "path": "02_REGISTRY/research/A4D_BOOTSTRAP_TRACEFREE_CANCELLATION_GATE_2026_10_21.md",
+      "ref": "9ccdb83ca9a72f279bae5e445cfa4309efa2e5ef",
+      "sha256": "c3a2b29a783f45ea052e65c53f7e504f910d435fbd483cc0565ee66ca55f302c"
+    },
+    {
+      "git_blob": "30697ffcfac273b4c7f5319e6cf8e4b31639c461",
+      "path": "02_REGISTRY/research/A4D_NATIVE_SOLDERED_HEAT_SOURCE.md",
+      "ref": "9ccdb83ca9a72f279bae5e445cfa4309efa2e5ef",
+      "sha256": "be0c07f8636d051d7fe50cdbc6241a172c7148c694e93a0ba1b4140899c5321a"
+    },
+    {
+      "git_blob": "b6895f33cba6ea68ae9cb2d055ec0d830a3fc12e",
+      "path": "02_REGISTRY/research/A4D_NATIVE_CONSTRAINED_PRICE_SOURCE.md",
+      "ref": "9ccdb83ca9a72f279bae5e445cfa4309efa2e5ef",
+      "sha256": "e2615abad73460950050ce529f45979b07c4ca5e011bfc203f9180a0f08674f6"
+    },
+    {
+      "git_blob": "bae5a11d0c14d6730d8b7a6191f828f1cace603d",
+      "path": "02_REGISTRY/research/A4D_GOLDEN_DISCRETE_BLOWUP_CONDENSED_GR_2026_10_20.md",
+      "ref": "9ccdb83ca9a72f279bae5e445cfa4309efa2e5ef",
+      "sha256": "68ba2d4dbbf5a055b852755fcf1c811824743c096ddcf722086c4da993fd179d"
+    },
+    {
+      "git_blob": "c376e8262fea9bbf543e089d195f2949580f4b0f",
+      "path": "02_REGISTRY/research/A4D_REVERSE_SOURCE_AND_PAID_PREPARATION_SYNTHESIS_2026_10_21.md",
+      "ref": "9ccdb83ca9a72f279bae5e445cfa4309efa2e5ef",
+      "sha256": "631c9c32e4c69277542f03b3a9c6a0dba535c5406395f5d13e7c6e5b0d0df0dd"
+    },
+    {
+      "git_blob": "02b62ea7d0216fa8914f6838bbd4a41474bdf7b6",
+      "path": "02_REGISTRY/research/A4D_BOOK03_FIRST_SOURCE_UNDERDETERMINATION_THEOREM_2026_10_21.md",
+      "ref": "9ccdb83ca9a72f279bae5e445cfa4309efa2e5ef",
+      "sha256": "28e8a7e9a708141a4eda02c4921ffa79605ac5e675a84b1c72728ee80c4e1c55"
+    },
+    {
+      "git_blob": "fbb54eef6880f5c58f8bcd0de6f96e47ac93df73",
+      "path": "02_REGISTRY/research/A4D_CURRENT_SPECIFICATION_GR_CLOSURE_BARRIER_2026_10_21.md",
+      "ref": "9ccdb83ca9a72f279bae5e445cfa4309efa2e5ef",
+      "sha256": "9103f8826b80bc85937e209e3f52ecc2dcbcd18d4ba57879cfea4b1917f0bb5b"
+    }
+  ],
+  "local_file_links_resolved": 30,
+  "new_checker": {
+    "check_count": 100,
+    "command": "PYTHONPATH=/tmp/d0_synthesis_python OPENBLAS_NUM_THREADS=1 PYTHONDONTWRITEBYTECODE=1 python3 02_REGISTRY/research/sources/d0_variational_selection_synthesis_2026-10-21/aggregation_audit/check_native_entropy_tangent.py",
+    "receipt_sha256": "aae295ca4fd45455f2dabbaf69dba2159a91de51c21f1abaae8b55f76849585c",
+    "replay": "byte-identical to RESULT.json",
+    "stderr": ""
+  },
+  "old_core": {
+    "artifacts_verified_unchanged": 35,
+    "earlier_validation_sha256": "a49fbae4ffe572f2fbd6093dcd1dea4abd724bba993dfd207e55690b75d822c1",
+    "frozen_source_files_verified": 24,
+    "manifest_sha256": "d5293e9a19b26d5127e7e9ecd4c3cbc79c25f9ef24ff4b570d027e3c0b932107",
+    "six_programs_replayed": false
+  },
+  "owner_appendices_sha256": {
+    "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md": "5529b01e24b33d999fa323ae717c4a99f97337a1743b9c2d636fbe5ca26ac64b",
+    "02_REGISTRY/research/A4D_NEXT_COMMON_MAP_CONSTRUCTION_GATE_2026_10_21.md": "84c50248de61536ada6a2fa3338c78a13ddec8934eaca2a17227b4d41f85424f"
+  },
+  "previous_published_synthesis_commit": "e04c7f13ce97a3edc6893840c3cf59deb010cb3f",
+  "previous_reviewed_main_sha256": "98280866d393a759d5ee0e5562f74b082dd060459329ee125b57eee7ee597d41",
+  "reviewed_artifacts_sha256": {
+    "02_REGISTRY/research/A4D_VARIATIONAL_SELECTION_AND_NATIVE_CLOCK_SYNTHESIS_2026_10_21.md": "d93b5da968e3b1b254171e65090226142e78c5a485628cf7f9ae5ae5c6375bcd",
+    "02_REGISTRY/research/sources/d0_variational_selection_synthesis_2026-10-21/LATER_INTEGRATION_REVIEW.md": "627ccb85600bf533fa37b4f70e332d5d700f1280c5af4f3e8175afbd35ab8603",
+    "02_REGISTRY/research/sources/d0_variational_selection_synthesis_2026-10-21/aggregation_audit/PROOF.md": "fc1e5d0dadb19bf2af71708cdfd201d057fa98b5347f33fa4be89545ecda76e5",
+    "02_REGISTRY/research/sources/d0_variational_selection_synthesis_2026-10-21/aggregation_audit/RESULT.json": "aae295ca4fd45455f2dabbaf69dba2159a91de51c21f1abaae8b55f76849585c",
+    "02_REGISTRY/research/sources/d0_variational_selection_synthesis_2026-10-21/aggregation_audit/REVIEW.md": "4d8b51de120265645baeb2e7347f8ec2f5917faa3a4df7774f4080434a7b566d",
+    "02_REGISTRY/research/sources/d0_variational_selection_synthesis_2026-10-21/aggregation_audit/check_native_entropy_tangent.py": "2c14d8035da073b19d5ea9642be396840c273542d973aee6cbe0b88a8e187667"
+  },
+  "scope": {
+    "actual_operator_family_tangent_proved": true,
+    "aggregation_identity_requires_complete_amplitude_binding": true,
+    "compulsory_bootstrap_pullback_proved": false,
+    "fixed_Golden_zero_source_is_local_at_involutive_base": true,
+    "physical_GR_closure": false,
+    "rank2_all42_stationarity_proved": false,
+    "rank2_remaining_potential_source_components": 18,
+    "rank2_support_is_on_exact_double_zero_homogeneous_branch": true
+  },
+  "status": "PASS_REVIEWED_NATIVE_AGGREGATION_AND_LATER_COMPOSITION",
+  "structural_checks": [
+    {
+      "command": "python3 tools/validate_repo.py",
+      "exit_code": 0,
+      "stdout": "claims=889 assumptions=31 aliases=58 formal_support=183 lean_closure=918\nPASS warnings=0\n"
+    },
+    {
+      "command": "python3 tools/validate_work.py",
+      "exit_code": 0,
+      "stdout": "PASS work_validation: active work plane clean and enforced\n"
+    },
+    {
+      "command": "python3 tools/render_work_status.py --check",
+      "exit_code": 0,
+      "stdout": "PASS work_views stale=0\n"
+    },
+    {
+      "command": "python3 tools/validate_agent_protocol.py",
+      "exit_code": 0,
+      "stdout": "PASS agent_protocol: cold-start task metadata enforced\n"
+    },
+    {
+      "command": "python3 tools/gr_assembly.py check",
+      "exit_code": 0,
+      "stdout": "{\n  \"active_result_limit\": 54,\n  \"active_results\": 54,\n  \"discharged\": 5,\n  \"obligations\": 22,\n  \"results\": 98,\n  \"scientific_promotion\": false,\n  \"valid\": true\n}\n"
+    }
+  ],
+  "tracked_authored_diff_whitespace": "PASS; new untracked files also checked at publication staging",
+  "unchanged_expensive_suites_replayed": false,
+  "validation_parent_ref": "9ccdb83ca9a72f279bae5e445cfa4309efa2e5ef"
+}

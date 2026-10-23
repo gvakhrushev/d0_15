@@ -1,0 +1,50 @@
+{
+  "schema": "d0-geometric-macrohistory-source/1",
+  "scientific_source_ref": "48fbb7a144b124b5ed881103d466041b317d5590",
+  "checker_git_blob": "af754848365026f712759046f6ac5bf84ef49897",
+  "owner_git_blob": "1c5df0367784f911b4684d2d1aacc87bf469ea2f",
+  "environment": {
+    "python": "3.13.5",
+    "sympy": "1.14.0"
+  },
+  "executed": {
+    "normal": true,
+    "optimized": true,
+    "byte_identical_stdout": true,
+    "stdout_sha256": "bf2d32d8257bf6cb968fa0c4f6aed056c3d98996ec4367fccc62508fa177ace6",
+    "checks": 246
+  },
+  "result": {
+    "settings": 15,
+    "metric_rank": 10,
+    "full_exterior_dimension": 16,
+    "full_reference_dimension": 128,
+    "repetitions_each_setting": 625,
+    "target_counts": [225,225,225,225,225,288,288,288,288,288,288,576,288,288,288],
+    "log_phi_times_shear_Hessian": "12751875/2696",
+    "flat_curvature": "exactly zero: every spacetime metric derivative vanishes",
+    "volume": "constant: det(g)=-1",
+    "Fisher_LDL_pivots": [
+      "13455/10784",
+      "72/337",
+      "72/337",
+      "72/337",
+      "5512473/8061040",
+      "165850416/206411489",
+      "34511488/43126227",
+      "7477683525/11630371456",
+      "224066306592/279997705325",
+      "10365651/17217328"
+    ]
+  },
+  "scope": {
+    "native_meter_admission_proved": false,
+    "full_native_source_selected": false,
+    "D0_to_GR_proved": false,
+    "general_D0_no_go_proved": false,
+    "original_raw_terminal_closed": false,
+    "old_owner_main_executed": false,
+    "Lean_or_full_CI_replayed": false
+  },
+  "note": "Summary of actual executed stdout, not a byte-for-byte stdout copy. The checker reproduces the complete output with all 246 names and the 15-by-10 probability Jacobian. Most checks are component checks of the same source, not independent physical theorems."
+}

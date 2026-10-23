@@ -1,0 +1,56 @@
+{
+  "schema": "d0-v6-executed-hostiles/1",
+  "status": "PASS",
+  "program_mutants": [
+    {
+      "name": "normalized_partial_trace",
+      "exit_code": 1,
+      "failure": "AssertionError: unnormalized_partial_Gibbs_matrix",
+      "mutant_sha256": "8150d12f7421b853b5324963b15b61eb01a6f892aa4f0cd225685fbcd60ac49d"
+    },
+    {
+      "name": "drop_moving_full_state",
+      "exit_code": 1,
+      "failure": "AssertionError: complete_moving_source_decomposition_1_0",
+      "mutant_sha256": "e1b05f08fd68784c8ae1a660f961f028668fe8fecfca5c7c326e4fe1af8b3932"
+    },
+    {
+      "name": "replace_adjoint_by_state_channel",
+      "exit_code": 1,
+      "failure": "AssertionError: partial_log_adjoint_1_1",
+      "mutant_sha256": "bd459e5baea0da1a1abd1a727e5c379ca31900b227291b4e0b593a8b4c9183e0"
+    },
+    {
+      "name": "discard_noncommuting_log_derivative",
+      "exit_code": 1,
+      "failure": "AssertionError: product_reference_all_interaction_jets_4",
+      "mutant_sha256": "2b67e0d280f143b8f97dc2acffdf48c4916b96c20583894a13af6cdc45eeb09a"
+    },
+    {
+      "name": "freeze_thermal_archive_state",
+      "exit_code": 1,
+      "failure": "AssertionError: thermal_archive_surviving_preparation_source",
+      "mutant_sha256": "b33403d7263d70656a5c19f736a7d9280cf237d1a6b2e8f75ed5c9dd6a660599"
+    },
+    {
+      "name": "replace_actual_flag_cut_by_data_cut",
+      "exit_code": 1,
+      "failure": "AssertionError: selector_preserves_actual_flag_cut",
+      "mutant_sha256": "0179f2f6e2ed174c1933dfd915ebd5e4806ac3416f00c62d3b8879ef24095217"
+    },
+    {
+      "name": "remove_one_energy_level",
+      "exit_code": 1,
+      "failure": "AssertionError: full_partition_all_four_modes",
+      "mutant_sha256": "2d09cb9ab13dba74aa643d84ebb18f946f69345c210071136883fd008c7eecbd"
+    },
+    {
+      "name": "discard_joint_correlations",
+      "exit_code": 1,
+      "failure": "AssertionError: both_thermal_marginals_leave_interaction_source",
+      "mutant_sha256": "a70d7f2b865873eae099c9b1f55ff51a277b901685afc093a8f06aafb2ed76ef"
+    }
+  ],
+  "false_physical_closure_receipt_rejected": true,
+  "checker_sha256": "9508dbb38af4e5bf45658ba0b95a863158addb45ef4b28ebde1502b0abc3e120"
+}

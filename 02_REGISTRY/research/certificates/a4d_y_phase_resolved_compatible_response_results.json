@@ -1,0 +1,46 @@
+{
+  "schema": "a4d-y-phase-resolved-compatible-response-v1",
+  "terminal": "A4D-Y-PHASE-RESOLVED-COMPATIBLE-RESPONSE-CERTIFIED",
+  "scope": "exact rational finite normal-jet response at z=1 on the t0/t1-compatible source subspace; nonlinear continuation and refinement-uniform remainder remain open",
+  "conventions": {
+    "axis": "e0",
+    "source_space": "R^40, ten metric coordinates on each of four fast phases",
+    "connection_rhs": "lambda^(-1)",
+    "metric_readout": "lambda^(+1)",
+    "full_map_extension": "Euclidean orthogonal projection onto the t0/t1-compatible source subspace, then zero on its orthogonal complement"
+  },
+  "compatibility": {
+    "t0_cokernel_rank": 1,
+    "t0_kernel_dimension": 39,
+    "t1_cokernel_rank_on_t0_kernel": 2,
+    "compatible_dimension": 37
+  },
+  "response": {
+    "t1_average_zero_on_full_compatible_class": false,
+    "t1_average_rank_on_full_compatible_class": 4,
+    "t2_defect_rank_on_compatible_class": 8,
+    "t2_defect_map_shape": [
+      10,
+      40
+    ],
+    "t2_defect_map_rank": 8,
+    "t2_defect_map_kernel_dimension": 32,
+    "single_smooth_source_defect_rank": 6,
+    "single_smooth_source_q12_defect": "-34163/118125",
+    "center_t2": [
+      [
+        "-2500/8967",
+        "0"
+      ],
+      [
+        "0",
+        "-49/356"
+      ]
+    ]
+  },
+  "nonclaims": [
+    "the finite compatible-class defect does not establish a nonlinear joint-critical branch",
+    "no refinement-uniform o(h^2) estimate is proved",
+    "the submitted scalar 2626083/44800 is not identified by this source convention and is not adopted"
+  ]
+}

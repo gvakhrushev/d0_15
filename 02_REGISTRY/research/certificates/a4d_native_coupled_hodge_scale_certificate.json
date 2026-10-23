@@ -123,7 +123,7 @@
   },
   "global_closure": "OPEN",
   "hodge_owner": "actual degree identities and cardinalities printed; no generic uniqueness or Lorentz positivity supplied",
-  "input_head": "2d3f5fff0273ae5c028c07343a72b27b54374602",
+  "input_head": "325ef1084752883707b79fdee8fced74262a5db8",
   "inputs_sha256": {
     "02_REGISTRY/research/A4D_NATIVE_CONNECTION_ACTION_BOUNDARY.md": "9ba77f4a6e97c7324834936fef2da876daf51fcf76e686e6dd23f52461c74f7c",
     "02_REGISTRY/research/A4D_NATIVE_TRANSPORTED_CONNECTION_REALIZATION.md": "898487236c81acf7de4fa232bcb86e039d9d9725141a2bc4dc4af050db4f84f7",
@@ -134,7 +134,7 @@
     "03_FORMALIZATION/D0/Geometry/A4DStarFiniteLorentzQuotient.lean": "12e9eb554f7535da65f1289894fbd91d2e5dbdf83a741873eedf092f13b72b0f",
     "03_FORMALIZATION/D0/Geometry/ArchiveMetricMeasureHodgeLift.lean": "e1f4fc672a8f9f39b389e0a907082ddd82871f582a6d31c666010f764b0ce9bd"
   },
-  "lean_receipt_sha256": "7758f2271c4bd2ff21241a90ebf9630f51d732dad02d128278a8616ab3047d6d",
+  "lean_receipt_sha256": "ae659ffd6b5f645d9d867eb8940e84e50077e8d07ca74c572dcc438decb28355",
   "metric_response": "all ten actual derivatives; packed off-diagonal weight two; scale trace zero",
   "native_action_selection": "NONE_ADDED",
   "native_connection_response": "all 24 full constant-field link rows retain both shared-curvature and transported-weight derivatives; omitting the weight term changes the gate",

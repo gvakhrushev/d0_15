@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "creator_AST_sha256": "801b33d7ef3e41f6425be16153c82b1402215f6be757ea275ff06a69010f58e4",
+  "root": "actual homogeneous full-price root; invertible F=(a-b)I+b11^T,a>b>0,n=e0,A=I;rho=P_Omega tensorI16/128; complete occupied cluster isolated for Riesz prep reduction",
+  "Gamma_types": {
+    "B01": "symmetric",
+    "B02": "symmetric",
+    "B03": "symmetric",
+    "R12": "skew",
+    "R13": "skew",
+    "R23": "skew"
+  },
+  "raw_joint_gauge": "delta v_r=omega v_r,delta n=omega n,delta A_r(q)=(1-exp(iq_r))omega,deltaPsi=Gamma(omega)Psi",
+  "whitened_joint_gauge": "omega=R+B,deltaL=-B:delta u=R u,deltaM_r=(1-exp(iq_r))R,delta w=Gamma(R)w",
+  "pure_link_gauge_at_fixed_fullcoframe": "none, since omega U=0 and U invertible imply omega=0",
+  "joint_kernel": "contains six complex Lorentz directions per paired nonzero Fourier q before gauge fixing; additional kernels not excluded; no forced pure-link Hessian kernel",
+  "coframe_gauge_quotient": "Xi=deltaV V^-1,omegaV=(Xi-eta Xi^T eta)/2;Nnormal_r=Nr-(1-exp(iq_r))omegaV;remaining metric10+observer3+normalLinks24",
+  "axial_gauge_alternative": "ifd_j=1-exp(iq_j)!=0, setlinkj0 byomega=Nj/d_j;remaininglinks18 but coframe,observer,prep allshift;not fixedcoframe reduction",
+  "puretime_q_stabilizer": "spatialS3; combined internal and role permutations preserve actual root and spectral price",
+  "link_representation": "4 trivial +4 sign +8 standard; exact characters(24,0,0)",
+  "H_link_block_sizes": "4x4 trivial,4x4 sign,8x8 standard multiplicity tensorI2 after orthonormalization",
+  "scalar_source_consumer": "for S3-invariant coframe perturbation atq=(q0,0,0,0), only4x4 trivial link block couples; no invertibility claim",
+  "trivial_link_basis": [
+    "Omega0=B01+B02+B03, spatial legs0",
+    "Omegai=B0i,i1..3;Omega0=0",
+    "Omegai=sum(j!=i)B0j,i1..3;Omega0=0",
+    "Omegai=sum(j!=i)Rij,i1..3;Omega0=0"
+  ],
+  "trivial_basis_Gram": "diag(3,3,6,6) in sum_r sum_generators coefficient^2; divide columns bysqrt(3),sqrt(3),sqrt(6),sqrt(6) toorthonormalize",
+  "two_equal_spatial_q": "S2 little group gives even12 and odd12; invariant scalar perturbations couple only even block",
+  "generic_q": "no nontrivial spatial permutation stabilizer, so no automatic24-to-smaller block",
+  "preparation_scope": "fixedRIGHT uniform128 Riesz cluster response, all16CAR retained; unrestricted sphere/common-energy Euler continuation is stronger and not inferred",
+  "full_joint_curved_root_claimed": false,
+  "block_nonsingularity_claimed": false
+}

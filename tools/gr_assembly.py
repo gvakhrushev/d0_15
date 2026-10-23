@@ -134,8 +134,8 @@ def evidence_bytes(root: Path, evidence: dict) -> bytes:
 
 def load(root: Path) -> dict:
     root = root.resolve()
-    contract = json.loads((root / DIRECTORY / "contract.json").read_text())
-    intake = json.loads((root / DIRECTORY / "applications.json").read_text())
+    contract = json.loads((root / DIRECTORY / "contract.json").read_text(encoding="utf-8"))
+    intake = json.loads((root / DIRECTORY / "applications.json").read_text(encoding="utf-8"))
     require(contract.get("schema") == "d0-gr-assembly/1", "unsupported assembly schema")
     require(intake.get("schema") == "d0-gr-applications/1", "unsupported applications schema")
     imported = json.loads(evidence_bytes(root, contract["legacy_import"]))
@@ -631,7 +631,7 @@ def brief_binding(root: Path, task: dict, model: dict | None = None) -> dict | N
         return None
     require(model is not None, f"{tid}: gravity assembly contract is missing")
     require(mapped, f"{tid}: register a scientific interface/consumer in the assembly before dispatch")
-    body = path_in(root, task["brief"]).read_text()
+    body = path_in(root, task["brief"]).read_text(encoding="utf-8")
     matches = re.findall(r"^Assembly:[ \t]*`?([^`\r\n]+)`?[ \t]*\r?$", body, re.MULTILINE)
     require(matches == [tid], f"{tid}: brief must contain exactly one Assembly: `{tid}`")
     binding = model["contract"]["task_bindings"][tid]
@@ -646,7 +646,7 @@ def brief_binding(root: Path, task: dict, model: dict | None = None) -> dict | N
 
 
 def validate_queue(root: Path, model: dict) -> None:
-    queue = json.loads((root / "00_WORK/manifest.json").read_text())
+    queue = json.loads((root / "00_WORK/manifest.json").read_text(encoding="utf-8"))
     for task in queue.get("tasks", []):
         brief_binding(root, task, model)
 
@@ -825,7 +825,7 @@ def launch_check(model: dict, task_id: str, prs: list[dict]) -> dict:
                 reopen = binding.get("reopens", {})
                 if reopen.get("attempt") != attempt["id"] or not isinstance(reopen.get("delta"), str) or not reopen["delta"].strip():
                     reasons.append(f"changed question overlaps {attempt['id']}; record reopens.attempt and the actual hypothesis/scope delta")
-    queue = json.loads((model["root"] / "00_WORK/manifest.json").read_text())
+    queue = json.loads((model["root"] / "00_WORK/manifest.json").read_text(encoding="utf-8"))
     tasks = {t["id"]: t for t in queue.get("tasks", [])}
     cls = tasks.get(task_id, {}).get("class")
     if cls:
@@ -890,7 +890,7 @@ def downstream(model: dict, name: str) -> set:
 def next_actions(model: dict, prs: list[dict] | None) -> list[dict]:
     state = evaluate(model)
     before = readiness(model, state["closed"])
-    queue = json.loads((model["root"] / "00_WORK/manifest.json").read_text())
+    queue = json.loads((model["root"] / "00_WORK/manifest.json").read_text(encoding="utf-8"))
     queued = {t["id"]: t for t in queue["tasks"]}
     actions = []
     for tid, binding in model["contract"]["task_bindings"].items():
@@ -1427,17 +1427,18 @@ def main(argv=None) -> int:
             text = overview(model)
             target = args.repo_root / DIRECTORY / "VIEW.md"
             if args.check:
-                require(target.is_file() and target.read_text() == text, "assembly view is stale; run render")
+                require(target.is_file() and target.read_text(encoding="utf-8") == text,
+                        "assembly view is stale; run render")
             else:
-                target.write_text(text)
+                target.write_text(text, encoding="utf-8")
             if model["contract"].get("synthesis"):
                 synthesis = args.repo_root / DIRECTORY / "SYNTHESIS.md"
                 reading = gr_synthesis.render(gr_synthesis.read(args.repo_root))
                 if args.check:
-                    require(synthesis.is_file() and synthesis.read_text() == reading,
+                    require(synthesis.is_file() and synthesis.read_text(encoding="utf-8") == reading,
                             "synthesis view is stale; run render")
                 else:
-                    synthesis.write_text(reading)
+                    synthesis.write_text(reading, encoding="utf-8")
             data = {"view": str(target), "checked": args.check}
         elif args.command == "show":
             if not args.json:
@@ -1486,4 +1487,6 @@ def main(argv=None) -> int:
 
 
 if __name__ == "__main__":
+    sys.stdout.reconfigure(encoding="utf-8")
+    sys.stderr.reconfigure(encoding="utf-8")
     raise SystemExit(main())

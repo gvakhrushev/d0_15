@@ -1,0 +1,199 @@
+{
+  "input_commit": "f4f88161325574e4c5750e0af4a8cc14a2f4b48e",
+  "input_owner_sha256": {
+    "a4d_identity_quarter_nonlinear_response_check.py": "f930d5d674b62f0c500b1aa1e28c1b3076a900899767d13b2dd2cd6a59142865",
+    "a4d_designated_full_gap_check.py": "fb76349e723ff532ef9b2222fd07cef5d7fa3e7e2b5d2c94b01ad4b056b8885d"
+  },
+  "curvature_pairing_audit": {
+    "weight_and_Gram_derivative_weights": "eta*W.T*eta=-W",
+    "generic_projection_identity": "<W,Z>=<W,(Z-eta*Z.T*eta)/2> for every symbolic 4x4 Z",
+    "physical_Lorentz_inverse": "P^-1=eta*P.T*eta",
+    "action_and_metric": "direct C(P) and P evaluations agree exactly for action and all ten Gram slots",
+    "connection": "all 24 rows agree with the full C(P) Lorentz derivative; every local shared-link generator variation is checked",
+    "local_full_generator_variations_checked": 144
+  },
+  "full_connection_rows": [
+    [
+      "-(am - ap + 2*cm + 2*j0)/2",
+      "(-2*H0 + 2*Hm + 4*a0*am - 4*a0*ap + 2*a0*cm + 4*a0*j0 - am**2 + 2*am*cm + ap**2 + 4*b0 + 2*cm**2 + 4*d0*e0 + 4*d0*j0 - 2*e0*gm - em**2 - 2*em*gm + ep**2 - 2*gm**2)/4",
+      "-(2*a0*d0 - a0*em + a0*ep - a0*gm - am*e0 - am*gm + ap*e0 - cm*e0 - cm*em - 2*cm*gm + d0**2 - 2*e0*j0 - 2*f0 - j0**2)/2",
+      "-(-2*H0 + 2*Hm + 4*a0*am - 4*a0*ap + 2*a0*cm + 4*a0*j0 - am**2 + 2*am*cm + ap**2 + 4*b0 + 2*cm**2 + 4*d0*e0 + 4*d0*j0 - 2*e0*gm - em**2 - 2*em*gm + ep**2 - 2*gm**2)/4",
+      "(2*a0*d0 - a0*em + a0*ep - a0*gm - am*e0 - am*gm + ap*e0 - cm*e0 - cm*em - 2*cm*gm + d0**2 - 2*e0*j0 - 2*f0 - j0**2)/2",
+      "(2*d0 - em + ep - 2*gm)/2"
+    ],
+    [
+      "-(bm - bp + 2*cm + 2*j0)/2",
+      "-(2*H0 - 2*Hm + 4*a0 - 4*b0*bm + 4*b0*bp - 2*b0*cm - 4*b0*j0 + bm**2 - 2*bm*cm - bp**2 - 2*cm**2 - 4*d0*f0 - 4*d0*j0 + 2*f0*gm + fm**2 + 2*fm*gm - fp**2 + 2*gm**2)/4",
+      "-(2*b0*d0 - b0*fm + b0*fp - b0*gm - bm*f0 - bm*gm + bp*f0 - cm*f0 - cm*fm - 2*cm*gm + d0**2 + 2*e0 - 2*f0*j0 - j0**2)/2",
+      "(2*H0 - 2*Hm + 4*a0 - 4*b0*bm + 4*b0*bp - 2*b0*cm - 4*b0*j0 + bm**2 - 2*bm*cm - bp**2 - 2*cm**2 - 4*d0*f0 - 4*d0*j0 + 2*f0*gm + fm**2 + 2*fm*gm - fp**2 + 2*gm**2)/4",
+      "(2*b0*d0 - b0*fm + b0*fp - b0*gm - bm*f0 - bm*gm + bp*f0 - cm*f0 - cm*fm - 2*cm*gm + d0**2 + 2*e0 - 2*f0*j0 - j0**2)/2",
+      "(2*d0 - fm + fp - 2*gm)/2"
+    ],
+    [
+      "ap + bp",
+      "-(a0*ap + 2*ap*c0 + b0*bp + 2*bp*c0 - e0*ep - 2*ep*g0 - f0*fp - 2*fp*g0 + 2*jp)/2",
+      "-(a0*ep + ap*e0 + 2*ap*g0 + b0*fp + bp*f0 + 2*bp*g0 + 2*c0*ep + 2*c0*fp - 2*dp)/2",
+      "(a0*ap + 2*ap*c0 + b0*bp + 2*bp*c0 - e0*ep - 2*ep*g0 - f0*fp - 2*fp*g0 + 2*jp)/2",
+      "(a0*ep + ap*e0 + 2*ap*g0 + b0*fp + bp*f0 + 2*bp*g0 + 2*c0*ep + 2*c0*fp - 2*dp)/2",
+      "ep + fp"
+    ],
+    [
+      "e0 + f0",
+      "-(2*a0*e0 + 2*a0*j0 + 2*b0*f0 + 2*b0*j0 + 2*d0*e0 + 2*d0*f0 - 2*gm - jm + jp)/2",
+      "(a0**2 + 2*a0*d0 + b0**2 + 2*b0*d0 - 2*cm - dm + dp - e0**2 - 2*e0*j0 - f0**2 - 2*f0*j0)/2",
+      "(2*a0*e0 + 2*a0*j0 + 2*b0*f0 + 2*b0*j0 + 2*d0*e0 + 2*d0*f0 - 2*gm - jm + jp)/2",
+      "-(a0**2 + 2*a0*d0 + b0**2 + 2*b0*d0 - 2*cm - dm + dp - e0**2 - 2*e0*j0 - f0**2 - 2*f0*j0)/2",
+      "-a0 - b0"
+    ]
+  ],
+  "full_gram_slots": [
+    "-(b0 - bp)/2",
+    "(a0 - ap - b0 + bp)/2",
+    "(j0 - jp)/2",
+    "-(d0 - dp)/2",
+    "(a0 - ap)/2",
+    "(j0 - jp)/2",
+    "-(d0 - dp)/2",
+    "0",
+    "-(e0 - ep + f0 - fp)/2",
+    "(a0 - ap + b0 - bp)/2"
+  ],
+  "cell_action": "-a0 + ap - b0 + bp",
+  "null_generators": [
+    [
+      [
+        0,
+        0,
+        -1,
+        0
+      ],
+      [
+        0,
+        0,
+        -1,
+        0
+      ],
+      [
+        -1,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    [
+      [
+        0,
+        0,
+        0,
+        -1
+      ],
+      [
+        0,
+        0,
+        0,
+        -1
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        -1,
+        1,
+        0,
+        0
+      ]
+    ]
+  ],
+  "variables": [
+    [
+      [
+        "am",
+        "a0",
+        "ap"
+      ],
+      [
+        "bm",
+        "b0",
+        "bp"
+      ],
+      [
+        "cm",
+        "c0",
+        "cp"
+      ],
+      [
+        "dm",
+        "d0",
+        "dp"
+      ]
+    ],
+    [
+      [
+        "em",
+        "e0",
+        "ep"
+      ],
+      [
+        "fm",
+        "f0",
+        "fp"
+      ],
+      [
+        "gm",
+        "g0",
+        "gp"
+      ],
+      [
+        "jm",
+        "j0",
+        "jp"
+      ]
+    ]
+  ],
+  "constant_reduction_rows": [
+    [
+      "0",
+      "(-H0 + Hm + a**4 - 4*a**3*e - 6*a**2*e**2 + 4*a*e**3 - 2*a + e**4)/2",
+      "(a**4 + 4*a**3*e - 6*a**2*e**2 - 4*a*e**3 + e**4 - 2*e)/2",
+      "-(-H0 + Hm + a**4 - 4*a**3*e - 6*a**2*e**2 + 4*a*e**3 - 2*a + e**4)/2",
+      "-(a**4 + 4*a**3*e - 6*a**2*e**2 - 4*a*e**3 + e**4 - 2*e)/2",
+      "0"
+    ],
+    [
+      "0",
+      "(-H0 + Hm + a**4 - 4*a**3*e - 6*a**2*e**2 + 4*a*e**3 - 2*a + e**4)/2",
+      "(a**4 + 4*a**3*e - 6*a**2*e**2 - 4*a*e**3 + e**4 - 2*e)/2",
+      "-(-H0 + Hm + a**4 - 4*a**3*e - 6*a**2*e**2 + 4*a*e**3 - 2*a + e**4)/2",
+      "-(a**4 + 4*a**3*e - 6*a**2*e**2 - 4*a*e**3 + e**4 - 2*e)/2",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ]
+  ],
+  "verdict": "For any L>=3 and periodic H_j and real coefficients depending only on x2, full stationarity implies H_j constant and Xi=0. No smallness assumption is needed.",
+  "chart_extra": "If H is constant, nonzero null stationary constant coefficients obey (a+i*e)^3=1-i and sqrt(a^2+e^2)=2^(1/6)>1; consequently they lie outside any log chart with sufficiently small coefficient bound.",
+  "scope_exclusion": "No conclusion about null-subgroup fields depending on transverse x0,x1,x3 or general Lorentz links."
+}

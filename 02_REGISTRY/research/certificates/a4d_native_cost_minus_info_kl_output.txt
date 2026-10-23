@@ -1,0 +1,9 @@
+D0.Research.CostMinusInfoKL.code_minus_info_eq_golden_kl (p r : ℝ) (hp : 0 < p) (hp1 : p < 1) (hr : 0 < r)
+  (hr1 : r < 1) : expectedCodeLength r - binaryShannonPhi p r = binaryGoldenKL p r
+D0.Research.CostMinusInfoKL.three_round_code_minus_info_eq_golden_kl (p r : ℝ) (hp : 0 < p) (hp1 : p < 1)
+  (hgolden : p + p ^ 2 = 1) (hr : 0 < r) (hr1 : r < 1) :
+  p + p ^ 2 = 1 ∧ 3 * (expectedCodeLength r - binaryShannonPhi p r) = 3 * binaryGoldenKL p r
+'D0.Research.CostMinusInfoKL.code_minus_info_eq_golden_kl' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Research.CostMinusInfoKL.three_round_code_minus_info_eq_golden_kl' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,52 @@
+{
+  "schema": "d0-cost-minus-info-kl/1",
+  "status": "PASS",
+  "proof_sha256": "b897c653e1e924c7bac7886b8f91daee64b9f42eda8b4d5bc808eb325a4da747",
+  "checker_sha256": "eaa505e230b2cedd62e6aa29c7ffd74200cf3329779e23b95b8d989f46c7ec0e",
+  "input_sha256": {
+    "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d",
+    "02_REGISTRY/research/sources/d0_direct_forcing_attack_2026-10-14/RESULT.md": "92fecc34d44a6bb22a63d09073d861ef0f5accdb866b33d658c80eaa0944832b",
+    "02_REGISTRY/research/sources/d0_direct_forcing_attack_2026-10-14/verify.py": "d5660e27d0fe2a6f46472084de30ef197fb7a187ff27c269574032a1dd189491",
+    "02_REGISTRY/research/sources/d0_direct_forcing_attack_2026-10-14/receipt.json": "ca896fa704ebd8c44d81bc7be072a969b55d6c7835d74921c4259060ca7f31db",
+    "02_REGISTRY/research/sources/d0_full_record_tape_v10_2026-10-14/RESULT.md": "df090d17a6c0fbaaccac6af9ce55ce4ae969826550cd094200c1dcdf4ae57a0a",
+    "02_REGISTRY/research/sources/d0_full_record_tape_v10_2026-10-14/receipt.json": "2ad637c39bf69f69aa30d374585e9f708b1d03fab673629dda59a326f4ea8f44",
+    "03_FORMALIZATION/D0/Foundation/EndogenousActionQuantum.lean": "692f2b5929b001361a2f22d7dc224fba46a80738036f26a1ff7bdd5175fc80c4",
+    "02_REGISTRY/research/certificates/a4d_native_cost_minus_info_kl.lean": "ae2f4698d921c7b9788e8718abae62ac98c83e2439ea69109a10eb3675c3d9d5"
+  },
+  "lean_replay": {
+    "status": "PASS",
+    "command": "lake env lean ../02_REGISTRY/research/certificates/a4d_native_cost_minus_info_kl.lean",
+    "command_cwd": "03_FORMALIZATION",
+    "compiler_exit_code": 0,
+    "output_sha256": "32babf7bb64b713180d481c87b4a2889087999749237da2fa03aa216ca74a9cc",
+    "sorryAx": false
+  },
+  "symbolic": {
+    "words": "8",
+    "code_cost_minus_info": "D_phi(q_r || mu)",
+    "normalized_radial_derivative": "-2*epsilon*log_phi(r/(p*(1-r)))",
+    "matched_reference_rate": "r=p^2",
+    "mixture_scope_control": "1/16 != 3/64"
+  },
+  "interval": {
+    "d0_box_center": "0.063635191594344535042829697433316630182693569761541",
+    "d0_box_radius": "1e-12",
+    "epsilon8": "[2.3857044602349353456948284514835, 2.3857044603099160097110722852369]",
+    "kappa": "[0.00006103515625, 0.00006103515625]",
+    "gamma": "[0.9442719099991587856366946749251, 0.9442719099991587856366946749251]",
+    "error_rate_r": "[0.00013749717452145718742353605552029, 0.00013749717452577860678532949797101]",
+    "cost_only_radial_source": "[-4.7714089206198320194221445704738, -4.771408920469870691389656902967]",
+    "negative_entropy_source_shift": "[88.165475111956217163490593552186, 88.165475115038858659714779124355]",
+    "conditional_cost_minus_info_source": "[83.394066191336385144068448981712, 83.394066194568987968325122221388]",
+    "direct_kl_derivative": "[83.394066191486346472100936649219, 83.394066194419026640292634553882]",
+    "identity_residual": "[-0.0000000030826414962241855721692428767429, 0.0000000030826414962241855721692428767429]"
+  },
+  "conditions": 32,
+  "scope": {
+    "shannon_info_selected_by_native_owner": false,
+    "actual_three_round_qnd_tape_used": true,
+    "conditional_on_qnd_eigenstate": true,
+    "native_joint_tangent_or_full_source_closed": false,
+    "physical_ward_or_gr_closed": false
+  }
+}

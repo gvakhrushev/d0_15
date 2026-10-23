@@ -1,0 +1,203 @@
+{
+  "status": "PASS",
+  "scope": "full rectangular preparation first lift at cross shell modes",
+  "carrier": "full16 CAR output and shell reference128; real even cat occupied support",
+  "parameter_domain": "all a>b>0 and ell>0",
+  "scaling": "u=b*u_tilde; delta u=b*delta u_tilde; every column scales b^2/ell^2",
+  "right_inverse": "-A(r)^(-1) times the selected14 coframe-forcing rows; other retained coordinates zero",
+  "coverage": "all q=+/-e_i+/-e_j, i!=j, by spatial3-cycle and real conjugation",
+  "not_asserted": [
+    "q=0",
+    "q=2e_i",
+    "full source stationarity",
+    "nonlinear branch",
+    "GR closure"
+  ],
+  "data_sha256": "d5f0dbeec44af8f375039a8a7bb392541bb8f8bb7a6cd0deb69d3a62c5be7e2e",
+  "literal_provider_sha256": "c1c0e05e479549d7097da5343359d5271cea3326825efaa752f62e8d989bb8a9",
+  "pinned_inputs": {
+    "02_REGISTRY/research/sources/d0_complete_record_channel_2026-10-17/check_flat_relaxation.py": "0dcb79f0959ecd4f4484a500ef1c0e53e47d95b4a95feb874d16840f56cc9ec9",
+    "02_REGISTRY/research/certificates/a4d_native_curved_soldered_heat.py": "bf13f57c902da0005634ae6834c0b4e3ffd2df1aa196a61ebc0ff3dc0351c7da"
+  },
+  "python": "3.9.6",
+  "sympy": "1.14.0",
+  "checks": 1470,
+  "cases": [
+    {
+      "q": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "ordered_pairs": [
+        [
+          [
+            -1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            -1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0
+          ]
+        ]
+      ],
+      "target_dimension": 14,
+      "links_used": 13,
+      "observer_used": 1,
+      "determinant_degree": 28,
+      "conjugate_gcd": "(r - 1)**7*(r**2 + 1)",
+      "all_r_gt_1": true
+    },
+    {
+      "q": [
+        1,
+        -1,
+        0,
+        0
+      ],
+      "ordered_pairs": [
+        [
+          [
+            -1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0
+          ]
+        ]
+      ],
+      "target_dimension": 14,
+      "links_used": 13,
+      "observer_used": 1,
+      "determinant_degree": 28,
+      "conjugate_gcd": "(r - 1)**9*(r + 1)*(r**2 + 1)",
+      "all_r_gt_1": true
+    },
+    {
+      "q": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "ordered_pairs": [
+        [
+          [
+            0,
+            -1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0
+          ]
+        ]
+      ],
+      "target_dimension": 14,
+      "links_used": 13,
+      "observer_used": 1,
+      "determinant_degree": 27,
+      "conjugate_gcd": "(r - 1)**7*(r + 1)",
+      "all_r_gt_1": true
+    },
+    {
+      "q": [
+        0,
+        1,
+        -1,
+        0
+      ],
+      "ordered_pairs": [
+        [
+          [
+            0,
+            -1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            -1,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0
+          ]
+        ]
+      ],
+      "target_dimension": 14,
+      "links_used": 13,
+      "observer_used": 1,
+      "determinant_degree": 27,
+      "conjugate_gcd": "(r - 1)**9*(r + 1)**2",
+      "all_r_gt_1": true
+    }
+  ]
+}

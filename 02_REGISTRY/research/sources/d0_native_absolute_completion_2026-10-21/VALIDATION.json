@@ -1,0 +1,33 @@
+{
+  "GR_closed": false,
+  "independent_review": false,
+  "inherited_expensive_suites_replayed": false,
+  "new_calculations": [
+    {
+      "normal_and_optimized_equal": true,
+      "saved_receipt_matches": true,
+      "script": "check_absolute_completion.py"
+    },
+    {
+      "normal_and_optimized_equal": true,
+      "saved_receipt_matches": true,
+      "script": "check_native_root_transport.py"
+    },
+    {
+      "normal_and_optimized_equal": true,
+      "saved_receipt_matches": true,
+      "script": "check_primary_reference.py"
+    }
+  ],
+  "rejected_controls": [
+    "full complementary source incl normalizer",
+    "true complementary determinant ratio",
+    "original known root scale equation",
+    "full initial RIGHT Gram",
+    "integrity: PROOF.md",
+    "integrity: primary_result.json"
+  ],
+  "remote_CI": false,
+  "status": "PASS",
+  "tracked_source_and_receipt_bytes_unchanged": true
+}

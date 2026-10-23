@@ -1,0 +1,103 @@
+{
+  "input_commit": "21f8a25fe7f254c24945536d9701a232e0454077",
+  "consumer": "Actual admitted test/Info/full-price source and complete pointer h^-2/log comparison",
+  "inputs": {
+    "02_REGISTRY/research/A4D_RETAINED_HISTORY_COHERENCE_TEST.md": {
+      "sha256": "3a55980ed2051b34bfba3570731622489a2e11e48d49a9f42bce034cae2ef1d6",
+      "git_blob": "c63eb153326009c47ed42f4d4c11808f50e0c963"
+    },
+    "02_REGISTRY/research/A4D_RETAINED_HISTORY_READOUT_AND_NORMALIZER.md": {
+      "sha256": "98b02b22f8678be211f555c2ec0c1d8ac3d2cc43f7dd50b002b8e1424460407b",
+      "git_blob": "efe9023de8f9b06fc69dbafd88eeb71962524fcf"
+    },
+    "02_REGISTRY/research/A4D_POINTER_HISTORY_FINITE_PART_SOURCE.md": {
+      "sha256": "e0a7a9139fc469568111393c9ededdc6dde86e28c4c5a7b85795731183aa371b",
+      "git_blob": "f1a5494ef96e26bb352d8a26171d9af39a8a8617"
+    },
+    "02_REGISTRY/research/A4D_NATIVE_RETAINED_RECORD_ADMISSION.md": {
+      "sha256": "05c50904b149fcffcc93d8d52ffa66da260654cf9bfc47b80354d59fef4fe336",
+      "git_blob": "d8a618ff5d439f8b21735a372f0602b51361e677"
+    },
+    "02_REGISTRY/research/A4D_NATIVE_OPERATIONAL_GAIN_AND_MEMORY.md": {
+      "sha256": "af0e92ebdfdadaee207070c2eef9aad889acc818c8b4ede5eb800d35b31e8d47",
+      "git_blob": "ec3ddc51837b34e72a2fd58cd1e077f0c2f1fb9f"
+    },
+    "02_REGISTRY/research/A4D_NATIVE_HISTORY_ACTION_BOUNDARY.md": {
+      "sha256": "14abe479decbe831e2949cfd760df42946f5e00d554add5c83192711dbab0bc4",
+      "git_blob": "b90fe7d93489b7a3616bb0d7c8740cb975583e78"
+    },
+    "02_REGISTRY/research/A4D_NATIVE_BRANCH_INFORMATION_COCYCLE.md": {
+      "sha256": "cf77a70da503c0a58725e1470ed9b73a493ee01a82293058d49dfd6758ae735a",
+      "git_blob": "841795793134245e2beb67ea2b59b0e2a1bd730e"
+    },
+    "02_REGISTRY/research/A4D_NATIVE_PARTITION_CORRECTED_BRANCH_INFORMATION.md": {
+      "sha256": "a4e8c15de4d736366e85f0bd19a2a394f6372295426b830d8a21bd25fbb3190c",
+      "git_blob": "dd325fed87dc1284dd8ee64e86e34587be31e7d3"
+    },
+    "02_REGISTRY/research/A4D_NATIVE_COMPILER_SOURCE_AND_RESOURCE_BOUNDARY.md": {
+      "sha256": "7b2121fdaa2ebd4f98be494d6062034577971d334b00bddf9ef9da8969f8f817",
+      "git_blob": "7e36683f9427fcf2e3574db45d41f7a7aca3d63b"
+    },
+    "02_REGISTRY/research/A4D_COMPLETE_RECORD_NORMAL_BIRTH_SCALE.md": {
+      "sha256": "ca686aba406b81cd88e78def81750d830bba151783d6ac614013b146079e5291",
+      "git_blob": "54003432862bae4b6565fefb94ba8be2fb5b73c7"
+    },
+    "02_REGISTRY/research/A4D_FULL_RARE_HISTORY_GAUGE_SPAN_BOUNDARY.md": {
+      "sha256": "85becfa2696e3481d8d20e3723c92ed74c965c9fee96e871a53131117852b4aa",
+      "git_blob": "770c5fc45324de0633811c3f6a6b4baef3337073"
+    },
+    "02_REGISTRY/research/A4D_VARIABLE_RECORD_FIRST_SOURCE_LIMIT.md": {
+      "sha256": "bacfeb70e261f600cd4d1e305612eaf3ab6fe6f71bd384aab2f04fd588493d93",
+      "git_blob": "d60afe6ffc619a6464a7c40080cba14ce05c708f"
+    },
+    "02_REGISTRY/research/sources/d0_native_cycle_morphism_2026-10-17/RESULT_RU.md": {
+      "sha256": "841614f99c164455db35705b88eb54a337a7aa95c5ccbbe5db448ab9c24d86c2",
+      "git_blob": "6189ec702f0bf4ea262e6ca043500ef26dbd269f"
+    },
+    "03_FORMALIZATION/D0/Foundation/VerifiabilityNecessity.lean": {
+      "sha256": "e851960cf5ed7c3abdb488dc70a2ed098d9a6bfb2ca0a60d2cbecda9f93da48d",
+      "git_blob": "f0dbfcf6e99a24346fa1d9407b4ed49cc784a2e1"
+    },
+    "03_FORMALIZATION/D0/Foundation/EndogenousActionQuantum.lean": {
+      "sha256": "692f2b5929b001361a2f22d7dc224fba46a80738036f26a1ff7bdd5175fc80c4",
+      "git_blob": "dab5b67300a70768e0211159deb2ac6e53fa7b29"
+    },
+    "03_FORMALIZATION/D0/Foundation/PhysicalComparisonRepresentation.lean": {
+      "sha256": "b6f2422cfe9245b649693681d84e8e1e857ca36d68ab6cee71fa7cab888c852d",
+      "git_blob": "1aee548e82c221d2609d54ba0f23155fc8b11f3b"
+    },
+    "03_FORMALIZATION/D0/Representation/GoldenOrderInterferometer.lean": {
+      "sha256": "76c7082b4f600f7b178579b8a2a859d6f692c96ce5a769920fb3ff427532292c",
+      "git_blob": "7b59090312c610e1e19f426d7ed8f4a982ebf296"
+    },
+    "03_FORMALIZATION/D0/Representation/FiniteProtocolClock.lean": {
+      "sha256": "955bcffc5b927faf039cb15aae13e250b71c5e7b26fa811c30c61df423c005cc",
+      "git_blob": "14e5e8404fc729eac4035ea1e708fc6ccdfea566"
+    },
+    "03_FORMALIZATION/D0/Representation/OrderMemoryReadout.lean": {
+      "sha256": "c350ead450996bfb7da20a987454b57da94dc098d17efeafc85a56b751664aa4",
+      "git_blob": "6c31b0c089869f7e6fc07185ef343c6bdce35b2d"
+    },
+    "03_FORMALIZATION/D0/Representation/OrderMemoryControl.lean": {
+      "sha256": "2f63c3701cb01a2eb67b24b62d5978f989bbd8c88ea6d1a27721dc2df5b6b382",
+      "git_blob": "e30b96797ea986121b517c518ea8c941b15a1f2a"
+    },
+    "02_REGISTRY/research/A4D_COMPLETE_HISTORY_INFORMATION_SCALE.md": {
+      "sha256": "6a14686fcaab0b48b78b8ff4f784d989ea3ead1edf0ee28d48b7c20f76c4a7ed",
+      "git_blob": "7b6cdacf4c923526593be2aa0eb20b3274da0a9c"
+    },
+    "02_REGISTRY/research/sources/d0_complete_history_information_2026-10-17/check_normal_birth_inputs.py": {
+      "sha256": "373f1e20b7319269d5805672da8cc12c845d9bfced0f9ec572108f816356f231",
+      "git_blob": "587b37c311609ede6460d177acb51e8c833f6097"
+    },
+    "02_REGISTRY/research/sources/d0_complete_record_channel_2026-10-17/check_flat_relaxation.py": {
+      "sha256": "0dcb79f0959ecd4f4484a500ef1c0e53e47d95b4a95feb874d16840f56cc9ec9",
+      "git_blob": "1b3ab5605d323364ec83dac110f294b0edd37996"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_curved_soldered_heat.py": {
+      "sha256": "bf13f57c902da0005634ae6834c0b4e3ffd2df1aa196a61ebc0ff3dc0351c7da",
+      "git_blob": "d76dd3775e90a982eb1cde4ce935cadb1c3ab671"
+    }
+  },
+  "old_scientific_replay": false
+}

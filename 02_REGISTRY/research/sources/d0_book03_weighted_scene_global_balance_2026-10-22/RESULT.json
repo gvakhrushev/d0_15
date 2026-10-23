@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "edge_count": 359,
+  "canonical_kappa": "39/160",
+  "balanced_kappa": "1/4",
+  "canonical_partial_derivatives": {
+    "x": "91/2816",
+    "y": "13/6400",
+    "u": "-1209/35200"
+  },
+  "unique_balanced_shape": "x:y:u=13:11:9",
+  "analytic_global_negative_slope_upper": "-57179/21626880",
+  "exact_price_gap_lower": "57179/3460300800",
+  "numerical_price_gap": 9.725561821971596e-05,
+  "canonical_slope": -0.015565050643861015,
+  "balanced_slope": -0.015556747438743348,
+  "max_full359_gradient_at_balance": 1.3383120566617945e-19,
+  "shape_hessian_eigenvalues": [
+    0.0009722967149214594,
+    0.0029168901447643777
+  ],
+  "max_closed_spectrum_error": 4.440892098500626e-16,
+  "max_cosh_identity_error": 2.7755575615628914e-17,
+  "scope": "all 359 mathematical weighted edge jets; native binary passport does not admit them; no GR closure"
+}

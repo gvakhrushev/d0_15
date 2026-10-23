@@ -1,0 +1,48 @@
+{
+  "arithmetic": "Q(i), exact Fraction arithmetic",
+  "ir": {
+    "rank": 24,
+    "determinant": "256"
+  },
+  "quarter": {
+    "character": [
+      "i",
+      "i",
+      "i",
+      "i"
+    ],
+    "rank": 16,
+    "nullity": 8,
+    "joint_rank": 20,
+    "joint_nullity": 4,
+    "Y_vector_nonzero": {
+      "3": 1,
+      "4": -1,
+      "5": 1
+    },
+    "connection_image_zero": true,
+    "metric_image_zero": true
+  },
+  "IR_vs_full_witness": {
+    "input_norm_squared": "3",
+    "IR_image_norm_squared": "6"
+  },
+  "checks": [
+    "IR_RANK_24",
+    "IR_DETERMINANT_256",
+    "QUARTER_RANK_16",
+    "QUARTER_JOINT_RANK_20",
+    "PHYSICAL_HERMITIAN_ONE",
+    "PHYSICAL_HERMITIAN_QUARTER",
+    "Y_QUARTER_CONNECTION_KERNEL",
+    "Y_QUARTER_METRIC_KERNEL",
+    "Y_NOT_IR_KERNEL",
+    "EXACT_QUARTER_CHARACTERS_L8_L12"
+  ],
+  "verdict": "FULL_UNIFORM_DESIGNATED_GAP_PREMISE_OBSTRUCTED",
+  "nonclaims": [
+    "no nonlinear joint-critical counterexample",
+    "no nonlinear Einstein terminal",
+    "no all-Bloch classification"
+  ]
+}

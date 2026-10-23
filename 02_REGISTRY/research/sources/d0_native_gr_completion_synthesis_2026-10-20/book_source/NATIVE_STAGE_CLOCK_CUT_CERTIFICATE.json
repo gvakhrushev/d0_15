@@ -1,0 +1,1469 @@
+{
+  "actual_programs_chronological": {
+    "identity": [
+      "B",
+      "local_i",
+      "local_i",
+      "local_i",
+      "local_i",
+      "common_j",
+      "common_j",
+      "common_j",
+      "common_j",
+      "local_i",
+      "local_i",
+      "B",
+      "local_i",
+      "local_i",
+      "write"
+    ],
+    "order": [
+      "B",
+      "local_i",
+      "common_j",
+      "local_i",
+      "local_i",
+      "local_i",
+      "common_j",
+      "common_j",
+      "common_j",
+      "local_i",
+      "local_i",
+      "B",
+      "local_i",
+      "local_i",
+      "write"
+    ]
+  },
+  "all_clock_seed_blocks": {
+    "identity": [
+      {
+        "block_id": 0,
+        "input_clock": 0,
+        "output_clock": 15
+      },
+      {
+        "block_id": 1,
+        "input_clock": 1,
+        "output_clock": 0
+      },
+      {
+        "block_id": 2,
+        "input_clock": 2,
+        "output_clock": 1
+      },
+      {
+        "block_id": 2,
+        "input_clock": 3,
+        "output_clock": 2
+      },
+      {
+        "block_id": 2,
+        "input_clock": 4,
+        "output_clock": 3
+      },
+      {
+        "block_id": 2,
+        "input_clock": 5,
+        "output_clock": 4
+      },
+      {
+        "block_id": 3,
+        "input_clock": 6,
+        "output_clock": 5
+      },
+      {
+        "block_id": 3,
+        "input_clock": 7,
+        "output_clock": 6
+      },
+      {
+        "block_id": 3,
+        "input_clock": 8,
+        "output_clock": 7
+      },
+      {
+        "block_id": 3,
+        "input_clock": 9,
+        "output_clock": 8
+      },
+      {
+        "block_id": 2,
+        "input_clock": 10,
+        "output_clock": 9
+      },
+      {
+        "block_id": 2,
+        "input_clock": 11,
+        "output_clock": 10
+      },
+      {
+        "block_id": 1,
+        "input_clock": 12,
+        "output_clock": 11
+      },
+      {
+        "block_id": 0,
+        "input_clock": 13,
+        "output_clock": 12
+      },
+      {
+        "block_id": 0,
+        "input_clock": 14,
+        "output_clock": 13
+      },
+      {
+        "block_id": 0,
+        "input_clock": 15,
+        "output_clock": 14
+      }
+    ],
+    "order": [
+      {
+        "block_id": 4,
+        "input_clock": 0,
+        "output_clock": 15
+      },
+      {
+        "block_id": 1,
+        "input_clock": 1,
+        "output_clock": 0
+      },
+      {
+        "block_id": 2,
+        "input_clock": 2,
+        "output_clock": 1
+      },
+      {
+        "block_id": 3,
+        "input_clock": 3,
+        "output_clock": 2
+      },
+      {
+        "block_id": 2,
+        "input_clock": 4,
+        "output_clock": 3
+      },
+      {
+        "block_id": 2,
+        "input_clock": 5,
+        "output_clock": 4
+      },
+      {
+        "block_id": 2,
+        "input_clock": 6,
+        "output_clock": 5
+      },
+      {
+        "block_id": 3,
+        "input_clock": 7,
+        "output_clock": 6
+      },
+      {
+        "block_id": 3,
+        "input_clock": 8,
+        "output_clock": 7
+      },
+      {
+        "block_id": 3,
+        "input_clock": 9,
+        "output_clock": 8
+      },
+      {
+        "block_id": 2,
+        "input_clock": 10,
+        "output_clock": 9
+      },
+      {
+        "block_id": 2,
+        "input_clock": 11,
+        "output_clock": 10
+      },
+      {
+        "block_id": 1,
+        "input_clock": 12,
+        "output_clock": 11
+      },
+      {
+        "block_id": 4,
+        "input_clock": 13,
+        "output_clock": 12
+      },
+      {
+        "block_id": 4,
+        "input_clock": 14,
+        "output_clock": 13
+      },
+      {
+        "block_id": 4,
+        "input_clock": 15,
+        "output_clock": 14
+      }
+    ]
+  },
+  "dimensions": {
+    "apparatus": 16,
+    "arm": 2,
+    "full_clock_corner_input": 64,
+    "input_spin_columns": 4,
+    "record": 2,
+    "spin": 4,
+    "stage_clock": 16
+  },
+  "distinct_block_registry": [
+    {
+      "I-a_transpose_a": [
+        [
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        ]
+      ],
+      "a": [
+        [
+          [
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "1",
+            "0",
+            "0",
+            "0"
+          ]
+        ]
+      ]
+    },
+    {
+      "I-a_transpose_a": [
+        [
+          [
+            "1",
+            "0",
+            "-1",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "1",
+            "0",
+            "-1",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "1",
+            "0",
+            "-1",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "1",
+            "0",
+            "-1",
+            "0"
+          ]
+        ]
+      ],
+      "a": [
+        [
+          [
+            "0",
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1",
+            "0",
+            "0"
+          ]
+        ]
+      ]
+    },
+    {
+      "I-a_transpose_a": [
+        [
+          [
+            "0",
+            "0",
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "1",
+            "0"
+          ]
+        ]
+      ],
+      "a": [
+        [
+          [
+            "0",
+            "0",
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "1",
+            "0"
+          ]
+        ]
+      ]
+    },
+    {
+      "I-a_transpose_a": [
+        [
+          [
+            "0",
+            "0",
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "1",
+            "0"
+          ]
+        ]
+      ],
+      "a": [
+        [
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "-1",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0",
+            "-1",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        ]
+      ]
+    },
+    {
+      "I-a_transpose_a": [
+        [
+          [
+            "-4",
+            "0",
+            "8",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "-4",
+            "0",
+            "8",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "-4",
+            "0",
+            "8",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "-4",
+            "0",
+            "8",
+            "0"
+          ]
+        ]
+      ],
+      "a": [
+        [
+          [
+            "-1",
+            "0",
+            "2",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "-1",
+            "0",
+            "2",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "-1",
+            "0",
+            "2",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "-1",
+            "0",
+            "2",
+            "0"
+          ]
+        ]
+      ]
+    }
+  ],
+  "field": "Q(a), a^4+a^2-1=0; a>0, p=a^2",
+  "field_coefficient_order": [
+    "1",
+    "a",
+    "a^2",
+    "a^3"
+  ],
+  "full_clock_Book_determinant": {
+    "all_feedback_blocks_scalar_I4": true,
+    "clock_cut": "all16 encoded clock phases; arm0, record0, all4 spin coordinates",
+    "identity_det_I_minus_zF": "(1-z*p^2)^8*(1-z*p)^40",
+    "identity_feedback_multiset": {
+      "0": 4,
+      "p": 10,
+      "p^2": 2
+    },
+    "natural_log_price_order_minus_identity": "-16*log(1-4*z*p^3)>0 for 0<z<1",
+    "oldRIGHT_or_selector_multiplicity_in_this_apparatus": false,
+    "operator_argument": "W^15, the fifteen-tick macrooperator",
+    "order_det_I_minus_zF": "(1-z*p^2)^8*(1-z*p)^40*(1-4*z*p^3)^16",
+    "order_feedback_multiset": {
+      "4p^3=1-p^6": 4,
+      "p": 10,
+      "p^2": 2
+    },
+    "physical_Book_U_N_binding_proved": false
+  },
+  "full_clock_complement": "direct_sum_c(I4-a_c^transpose a_c)",
+  "full_clock_corner": "sum_c |c+15><c| tensor a_c, clocks modulo16",
+  "initial_stage_cut": {
+    "compressed_W15": "0",
+    "full_Book_complement": "I4",
+    "input_stage": 0,
+    "output_stage_after15": 15
+  },
+  "one_tick_vs_fifteen_tick": {
+    "fifteen_tick_operator_argument": "W^15",
+    "fifteen_tick_price_order_contrast": "-16*log(1-4*z*p^3)>0 for 0<z<1",
+    "macro_grouping_changes_the_functional": true,
+    "one_tick_both_det_I_minus_zF": "(1-z*p^2)^8",
+    "one_tick_both_feedback_multisets": {
+      "0": 14,
+      "p^2": 2
+    },
+    "one_tick_both_natural_log_price": "-8*log(1-z*p^2)",
+    "one_tick_operator_argument": "W=sum_c |c+1><c| tensor U_c",
+    "one_tick_price_order_contrast": 0,
+    "physical_Book_U_N_binding_to_W_or_W15_proved": false,
+    "same_full_clock_cut": "I16 tensor j, j selects arm0 record0 and all4 spin coordinates"
+  },
+  "paired_common_factor_obstruction": {
+    "common_T_for_B_identity_I_B_order_p3": false,
+    "cross_product": "a*(p^3-1) I4",
+    "field_coefficient": [
+      "0",
+      "-2",
+      "0",
+      "2"
+    ],
+    "nonzero": true
+  },
+  "primitive_orthogonality": [
+    "B",
+    "local_i",
+    "common_j",
+    "write",
+    "idle"
+  ],
+  "record_erasure_sensitive_windows": [
+    [
+      "identity",
+      2
+    ],
+    [
+      "identity",
+      3
+    ],
+    [
+      "identity",
+      4
+    ],
+    [
+      "identity",
+      5
+    ],
+    [
+      "identity",
+      6
+    ],
+    [
+      "identity",
+      7
+    ],
+    [
+      "identity",
+      8
+    ],
+    [
+      "identity",
+      9
+    ],
+    [
+      "identity",
+      10
+    ],
+    [
+      "identity",
+      11
+    ],
+    [
+      "order",
+      2
+    ],
+    [
+      "order",
+      3
+    ],
+    [
+      "order",
+      4
+    ],
+    [
+      "order",
+      5
+    ],
+    [
+      "order",
+      6
+    ],
+    [
+      "order",
+      7
+    ],
+    [
+      "order",
+      8
+    ],
+    [
+      "order",
+      9
+    ],
+    [
+      "order",
+      10
+    ],
+    [
+      "order",
+      11
+    ]
+  ],
+  "scope": {
+    "actual_owned_trial": "seed0, first15 forward transitions",
+    "encoded_stage_is_physical_elapsed_clock": false,
+    "full_Book_or_physical_GR_selection_proved": false,
+    "large_clock_matrix_built": false,
+    "off_seed_windows": "literal finite cyclic extension with final idle wrap",
+    "old_certificate_main_executed": false,
+    "original_cap2_controller_clock_factor_proved": false
+  },
+  "seed0": {
+    "identity_a": "I4",
+    "identity_feedback": "0",
+    "order_a": "p^3 I4",
+    "order_feedback": "(1-p^6) I4",
+    "order_record_one": "4p^3 I4"
+  },
+  "seed1": {
+    "both_a": "a I4",
+    "both_feedback": "p^2 I4"
+  },
+  "source_sha256": {
+    "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d",
+    "02_REGISTRY/research/A4D_CONDENSED_HISTORY_SOURCE_OBSTRUCTION.md": "5698a416d80f32b865c53af72809a4638207ca5b1470736cf719520a6262138b",
+    "02_REGISTRY/research/A4D_NATIVE_CONDENSED_PRICE_NATURALITY.md": "4d90266d5f471ba3cac621e3ea3a32545b4622a16d7c0227bc771694ad851a08",
+    "02_REGISTRY/research/A4D_NATIVE_FULL128_RELATIVE_TRANSFER_AND_CONDENSED_DESCENT.md": "577cbc909f766468fbef8ab38a5986ae761d348b075c2f38b2e1a88b704d4b3e",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/NATIVE_COHERENT_BOOK_COMPLEMENT.md": "d0cf0e29b79123410daae93e23899e824dc4746548d3c6af6da431fa1a15d04c",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/check_native_car_actuated_metric.py": "72b2743f2f4c9408ceafe29dc691786c5011c4d1133d5fa6ebdb671a230bc3fa",
+    "03_FORMALIZATION/D0/Representation/FiniteProtocolClock.lean": "955bcffc5b927faf039cb15aae13e250b71c5e7b26fa811c30c61df423c005cc",
+    "03_FORMALIZATION/D0/Representation/GoldenOrderInterferometer.lean": "76c7082b4f600f7b178579b8a2a859d6f692c96ce5a769920fb3ff427532292c",
+    "03_FORMALIZATION/D0/Representation/OrderMemoryControl.lean": "2f36d015408ddac279515bde6d52dde5c8d347a8572be73c95d0046beef849dc",
+    "03_FORMALIZATION/D0/Representation/OrderMemoryReadout.lean": "c350ead450996bfb7da20a987454b57da94dc098d17efeafc85a56b751664aa4",
+    "04_CERTIFICATES/order_memory_control_verify.py": "bb72fe40326dc2d65d55f4f6d73564b7faef8f247774bf51771e3110f04e0c1a"
+  },
+  "status": "PASS"
+}

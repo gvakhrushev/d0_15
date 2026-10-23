@@ -1,0 +1,41 @@
+{
+  "scientific_input": "311b1d3fd505effe7082754bc80dd17d1097f095",
+  "scope": "Historical repository definitions and owned interfaces; new complete code-writer interface is stated explicitly in proof section1 and integrated with its peer source by parent.",
+  "sources": [
+    {
+      "path": "01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md",
+      "sha256": "90d493492834c36900baddc57c987aa5e9910ee560993a793f6d178b4d827f03",
+      "source_ref": "311b1d3fd505effe7082754bc80dd17d1097f095"
+    },
+    {
+      "path": "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md",
+      "sha256": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d",
+      "source_ref": "311b1d3fd505effe7082754bc80dd17d1097f095"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_common_execution_closure_2026-10-21/native_processor/FIXED_PROCESSOR_PROGRAM_SOURCE.md",
+      "sha256": "4a879a3bb986aca43f06cec760f882cec4e7c6446efd46d5add8a2f199e9381b",
+      "source_ref": "311b1d3fd505effe7082754bc80dd17d1097f095"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_exact_resource_writer_2026-10-21/FIXED_PROCESSOR_BOOK_OPERATOR.md",
+      "sha256": "cebf19d44d3ea3f8bb6bef1f9f6a2d98d01f7496ba908ba3f38f0b500875fd83",
+      "source_ref": "311b1d3fd505effe7082754bc80dd17d1097f095"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_CYCLIC_HISTORY_PRICE_PREPARATION.md",
+      "sha256": "d936f5633c74a5dd451496d6a15be69119cd1b80f3f3d86d6ad4d6c18d7e4e8a",
+      "source_ref": "311b1d3fd505effe7082754bc80dd17d1097f095"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_PAID_GOLDEN_WORD_QUERY_SOURCE_LIMIT_2026_10_21.md",
+      "sha256": "155fa5ec5478e0965884425170c9fd42e1d546d7e767e6515c170eb59dcece50",
+      "source_ref": "311b1d3fd505effe7082754bc80dd17d1097f095"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_PAID_RATIONAL_RESOURCE_WRITER_2026_10_21.md",
+      "sha256": "b609514f9170e393b72d0df0650bfd88f93e6dd47d7a7d4d9fceb35d00a04993",
+      "source_ref": "e37991ae54f34adcc2adf5efa54d29134eac3769"
+    }
+  ]
+}

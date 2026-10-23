@@ -1,0 +1,42 @@
+{
+  "conditions_executed": 153,
+  "exact": {
+    "exact_conditions": 144,
+    "negative_conditions": 12
+  },
+  "interval": {
+    "affine_preparation_hessian_interval": [
+      "1.1737419017800533",
+      "1.1737419017800535"
+    ],
+    "cost_info_interval": [
+      "0.3059856063173529",
+      "0.3059856063173531"
+    ],
+    "interval_conditions": 9,
+    "loop_source_interval": [
+      "-0.8803064263350401",
+      "-0.8803064263350399"
+    ]
+  },
+  "scope": {
+    "M1_forcing_of_complete_physical_action": false,
+    "actual_shared_two_outcome_instrument_coherences_retained": true,
+    "all_distinct_cuts_have_zero_source_difference": false,
+    "arbitrary_history_control_preserves_fixed_AF_inclusion": false,
+    "complete_record_tape_physically_dephased": false,
+    "constant_rank_or_faithful_stratum_required_for_log_derivative": true,
+    "full_native_AF_state_and_Radon_Nikodym_martingale": true,
+    "native_cost_minus_operator_entropy_identity": true,
+    "new_Lean_build_or_physical_Ward_or_GR": false,
+    "noncommuting_instrument_and_moving_state_jets": true,
+    "old_H_J_R_stationarity_promoted_to_Cost_Info": false,
+    "operator_entropy_is_an_explicit_readout_not_core_derived_Info": true,
+    "same_state_as_faithful_GNS_Gibbs": false
+  },
+  "source_sha256": {
+    "RESULT.md": "bb918a2f27548632de3a42114ab4ed4ed3e8ade5637b853d1928e678a228a05a",
+    "verify.py": "0d780b3ad7c0b26041cc28f45cb84c3c772ff28c2cd632c4b083b61cfbdb05c7"
+  },
+  "unique_condition_names": 144
+}

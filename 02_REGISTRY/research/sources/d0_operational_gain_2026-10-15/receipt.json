@@ -1,0 +1,31 @@
+{
+  "checks": {
+    "exact": 74,
+    "interval": 5,
+    "numeric": 58
+  },
+  "condition_name_sha256": "821275eef8baa974ed5c631eade5a493988857e5d60caa20179520316f2b8b58",
+  "exact_conditions": 74,
+  "intervals": {
+    "gain_phi_units": "[0.30598560631735300313750219948293779399709703329308631487462694796, 0.30598560631735300313750219948293779399709703329308631487462772584]",
+    "net_theta_source_phi_units": "[0.88030642633504004474293526355798853541648419344118184603471736882, 0.88030642633504004474293526355798853541648419344118184603471853563]",
+    "net_u_hessian_phi_units": "[-1.1737419017800533929905803514106513805553122579215757947129580475, -1.1737419017800533929905803514106513805553122579215757947129564918]"
+  },
+  "numeric_conditions_are_not_exact": true,
+  "proof_sha256": "428bdda31e27ea6e7bf18ac93528fa4bc21c28677026341af2e86a36ac67ff52",
+  "schema": "d0-operational-gain/1",
+  "scope": {
+    "bounded_action_implies_bounded_source": false,
+    "finite_full_algebra_measurement_optimization": true,
+    "generic_entropy_or_MPS_method_claimed_new": false,
+    "literal_cost_cut_full_gram_spectral_recurrence": true,
+    "moving_instrument_and_initial_preparation_included": true,
+    "native_Info_identified_without_maximal_gain_contract": false,
+    "new_Lean_compilation": false,
+    "original_fixed_source_terminal_or_GR_closed": false,
+    "physical_admission_of_all_algebraic_tests": false,
+    "physical_hilbert_carrier_replaced_by_compact_matrices": false
+  },
+  "source_sha256": "81a7b75b84ea23b8915eebaa054a08dbbc0573f0959a0c26661dcb775aeb4736",
+  "unique_gate_names": 137
+}

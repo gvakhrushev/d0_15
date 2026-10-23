@@ -1,0 +1,32 @@
+{
+  "repository": "gvakhrushev/d0_15",
+  "scientific_input": "c28187555ef973b7bdb80e48655a2ac5ae8c85b0",
+  "existing_owner": 334,
+  "inputs": [
+    {
+      "path": "02_REGISTRY/research/A4D_COMPLETE_RECORD_CHANNEL_AND_NATIVE_COST_SOURCE.md",
+      "git_blob": "df8611c7fa37fa71e883831b3f01f434532d99ce",
+      "consumed": "original full128 channel, native cost, flat recycling eigenvalues; no new priority claim for these"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_COMPLETE_RECORD_INFO_PRICE_SELECTION_2026_10_20.md",
+      "git_blob": "63e6e79bbbe2b6f69069e423c0fdf306e3e28d73",
+      "consumed": "physical h^-4 clock, coherent dephasing limit, limiting Lambda minimum and information-cut contrast; all pre-existing"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_COMPLETE_RETAINED_ENTROPY_INPUT_EULER_2026_10_21.md",
+      "git_blob": "f49eff95e3a6fac2edd2bfed4823f444451771c8",
+      "consumed": "faithful-Choi strict convexity and fixed-mesh preparation reduction, with no mesh-uniform premise"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_MOMENT_WRITER_NATIVE_SELECTION_TEST_2026_10_21.md",
+      "git_blob": "9ef041e939a0e531b3debdc6cf4e63040eaa311f",
+      "consumed": "concurrent same-task finite price-descent and actual Book boundary retained; no attempt to reclassify the scalar root as full GR"
+    }
+  ],
+  "external_background": [
+    "https://cs.uwaterloo.ca/~watrous/TQI/",
+    "https://arxiv.org/abs/1603.04630"
+  ],
+  "scope": "Pins identify consumed source versions, not reruns of their historical suites. New native_axial.py is an explicit independently reconstructed axial specialization, not a byte-identical imported checker."
+}

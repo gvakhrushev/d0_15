@@ -1,0 +1,35 @@
+{
+  "analytic_review": "Root and two independent read-only peers reviewed the exact written fixed-phase/global-recycling identity, full CAR gap and principal inverse, cubic-symbol correction, common H2 graph core, all CF Corollary 4.5 hypotheses, weak-integral uniqueness and reference amplification.",
+  "analytical_result": "Conservative minimal variable-field QDS and strongly continuous CPTP predual on all trace class, plus trace-norm convergence of actual finite-h marginal trajectories for all converging trace-class preparations on the declared full smooth compact carrier.",
+  "analytical_review": "Root and independent read-only peers reviewed the written native fixed-phase/global-recycling identity, full CAR gap, principal correction and common H2 graph core against CF Corollary 4.5. The trajectory proof additionally uses the exact literal 127-slot positive split, no-jump heat consistency, smooth-core adjoint consistency, strong first-jump Hilbert contractions, waiting-cube tensor composition and conserved positive mass tails. No trace-class generator-core or high-energy input assumption.",
+  "base": "aa834d4f867c1efebb6c6805bf1fccd1d37f60ec",
+  "consumed_owner_pins": {
+    "02_REGISTRY/research/A4D_NATIVE_FINITE_HEAT_SOURCE_LIMIT.md": "4b69c188dcb3571429f4b45eddb1713621014de260c6e8b2095cc2907d9e4730",
+    "02_REGISTRY/research/A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md": "a0a8a0b7389c7a6120ebbe402d111bf55cd2a00730403a00ffceca73548e7915"
+  },
+  "date": "2026-10-17",
+  "entropy_or_field_source_convergence_claimed": false,
+  "exact_checks": 43,
+  "finite_h_marginal_trajectory_convergence_proved": true,
+  "helper_sha256": "e88a8f9be6cad9b6cfdca5c6a928861b7ec151589f997e5911aabae13b1d205f",
+  "normal_optimized_byte_identical": true,
+  "old_scientific_replay": false,
+  "output_sha256": "12b6285cd983af0081342e740d7b758a9190beabc62b69eb6b702eed7cde7aa8",
+  "owner_sha256": "44578338d793d96fbd8d575d182cf4087c721e3010c69a77163da0f40bef4715",
+  "physical_Info_fullcode_or_GR_selected": false,
+  "prior_conservation_criterion": {
+    "authors": "A. M. Chebotarev and F. Fagnola",
+    "criterion": "Corollary 4.5, page 14; same G/C domains with simultaneous core graph approximation, dissipative operator bounded by C, jumps mapping core into D(C), core Lyapunov inequality",
+    "title": "Sufficient Conditions for Conservativity of Minimal Quantum Dynamical Semigroups",
+    "url": "https://arxiv.org/pdf/funct-an/9711006"
+  },
+  "python": "3.9.6",
+  "rank_spectrum_grid_or_history_census": false,
+  "remote_CI_or_independent_acceptance_claimed": false,
+  "source_pins": {
+    "02_REGISTRY/research/certificates/a4d_native_curved_soldered_heat.py": "bf13f57c902da0005634ae6834c0b4e3ffd2df1aa196a61ebc0ff3dc0351c7da",
+    "02_REGISTRY/research/sources/d0_complete_record_channel_2026-10-17/check_flat_relaxation.py": "0dcb79f0959ecd4f4484a500ef1c0e53e47d95b4a95feb874d16840f56cc9ec9"
+  },
+  "status": "PASS_BOUNDED_INPUTS_AND_REVIEWED_CONTINUUM_TRAJECTORY_PROOFS",
+  "sympy": "1.14.0"
+}

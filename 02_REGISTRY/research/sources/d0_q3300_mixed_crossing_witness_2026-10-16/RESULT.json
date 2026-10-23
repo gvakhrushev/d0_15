@@ -1,0 +1,108 @@
+{
+  "actual_mixed_second_chart_jet_included": true,
+  "carrier": {
+    "Fock_dimension": 16,
+    "L": 8,
+    "native_tangent_dimension": 13,
+    "occupied_shell_nodes": 8
+  },
+  "conclusion": "For the legacy four-source interpolation only, the unique q=(3,3,0,0) crossing in this fixed local chart has a strictly positive real pairing of the full native second-order matter operator with an exact source-neutral grade-four tangent.",
+  "external_full_lorentz_boundary": {
+    "legacy_pure_seed_fails_12_independent_boost_rows": true,
+    "owner_sha256": "0ca27a97b7e8fa5653242415c4bcbe0e946fccd95bb277024fcbe79222c927a8",
+    "result_sha256": "8920803d185af11132dfa274a42d0e307ad43db150ef8e87d7ab83c9bf2f4d0d",
+    "status": "CONTEXT_ONLY_NOT_A_CHECKER_INPUT"
+  },
+  "finite_operator_data": {
+    "directed_edges": 16,
+    "mode_error_upper_J_X": [
+      9.669566032164005e-10,
+      2.1906313065200285e-07
+    ],
+    "nodes": 16
+  },
+  "fixed_inputs": {
+    "B_sha256": "79cd5a423a68b6d47cc41853a840c3caef06895ab85e1781ef15cb2fc6a47a8d",
+    "R_sha256": "5ffe4cc73949b455c3e8643d1cae0bf35ece226179278ad05d578f67c720fc90",
+    "interval_owner_sha256": "19d4e33f7c74465da9079ec4e3c90e0b20b3b1aad448a0cdb1957a3fc61ef41f"
+  },
+  "grade4_pairing_real_interval": [
+    "0.31105746663996486",
+    "0.85944753173292943"
+  ],
+  "q": [
+    3,
+    3,
+    0,
+    0
+  ],
+  "schema": "d0-q3300-mixed-crossing-grade4-witness/1",
+  "schur": {
+    "bracket": [
+      0.43032,
+      0.430405
+    ],
+    "derivative_interval": [
+      "-0.74726317168856293",
+      "-0.74667604838673041"
+    ],
+    "kernel_coordinate_radius_upper": "4.6331165835266811e-05",
+    "lower_endpoint_interval": [
+      "2.9972740210086825e-05",
+      "3.3565437958179747e-05"
+    ],
+    "uniform_inverse_norm_upper": "1.0002708881339613",
+    "uniform_preconditioned_residual_norm_upper": "0.00027063698204101664",
+    "unique_crossing_in_bracket": true,
+    "upper_endpoint_interval": [
+      "-3.3519715990765532e-05",
+      "-2.9926939546790457e-05"
+    ]
+  },
+  "scope_limits": {
+    "canonical_full_lorentz_12_boost_rows_not_checked_here": true,
+    "does_not_close_global_D0_obligations": true,
+    "not_a_convergent_nonlinear_branch": true,
+    "not_a_feasible_full_lorentz_faithful_to_old_pure_seed_path": true,
+    "not_a_full_general_relativity_result": true,
+    "not_an_admission_or_recovery_theorem": true,
+    "only_legacy_four_source_interpolation": true,
+    "only_this_q_and_this_fixed_native_chart": true
+  },
+  "source_interface": "legacy four-link-source rows only; not the 12 canonical full-Lorentz boost Euler rows",
+  "source_neutrality": {
+    "CAR_order": [
+      0,
+      2,
+      3,
+      1
+    ],
+    "basis_intertwiner_diagonal_signs": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1,
+      -1,
+      1,
+      1,
+      -1,
+      -1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "full_rank_source_fibre_tangent": true,
+    "grade0_grade2_generator_pairings": 16,
+    "native_source_rows_checked": 4,
+    "positivity_radius": "abs(epsilon)<(1-t)/16 for 0<t<1",
+    "seed_source_expectations_zero": true,
+    "status": "PASS_EXACT",
+    "witness": "W=(gamma_0 i*kappa_0)(gamma_1 i*kappa_1)",
+    "witness_hermitian_square_identity_trace_zero": true
+  },
+  "status": "PASS_LOCAL_Q3300"
+}

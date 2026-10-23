@@ -1,0 +1,422 @@
+{
+  "status": "PASS",
+  "date": "2026-10-21",
+  "scientific_input": "f64d4c3389b507c7e7fb66ace9480ed6191c463d",
+  "integration_base": "ed00d64a8d119c7073c2606996d0587f1c440588",
+  "existing_draft_pr": 334,
+  "preserved_concurrent_bases": [
+    "6a6dba8467356df88b7a0c5d524ae1fccc119e43",
+    "ed00d64a8d119c7073c2606996d0587f1c440588"
+  ],
+  "receipt_pairs": [
+    {
+      "packet": "reachability",
+      "author_receipt": "02_REGISTRY/research/sources/d0_moment_writer_native_selection_2026-10-21/reachability/CHECK_RESULT.json",
+      "independent_optimized_receipt": "02_REGISTRY/research/sources/d0_moment_writer_native_selection_2026-10-21/reachability/INDEPENDENT_RESULT.json",
+      "author_sha256": "7b081f7ad83cf88f032de5d14f39f98c46b790e626d03ef8bac53fed5eb721ea",
+      "independent_sha256": "7b081f7ad83cf88f032de5d14f39f98c46b790e626d03ef8bac53fed5eb721ea",
+      "byte_identical": true,
+      "differing_json_fields": [],
+      "computational_payload_identical": true,
+      "check_count": 51,
+      "provenance": "One independent optimized execution on the frozen packet; byte-identical author receipt."
+    },
+    {
+      "packet": "state_lift",
+      "author_receipt": "02_REGISTRY/research/sources/d0_moment_writer_native_selection_2026-10-21/state_lift/RESULT.json",
+      "independent_optimized_receipt": "02_REGISTRY/research/sources/d0_moment_writer_native_selection_2026-10-21/state_lift/INDEPENDENT_RESULT.json",
+      "author_sha256": "c0881a7b060e1e1661fbadc1f344820d2b64c194f61e0ce2d8d5be298ad03db7",
+      "independent_sha256": "45627b6919f6b2066321f05f89e6378edb3868b2373445d0e284e1eab0198746",
+      "byte_identical": false,
+      "differing_json_fields": [
+        "proof_sha256"
+      ],
+      "computational_payload_identical": true,
+      "check_count": 75,
+      "provenance": "Single independent optimized run preserved unchanged. Later proof-only explicit-sum correction refreshed author proof hash; independent review binds final proof. No repeat run claimed."
+    },
+    {
+      "packet": "cut",
+      "author_receipt": "02_REGISTRY/research/sources/d0_moment_writer_native_selection_2026-10-21/cut/RESULT.json",
+      "independent_optimized_receipt": "02_REGISTRY/research/sources/d0_moment_writer_native_selection_2026-10-21/cut/INDEPENDENT_RESULT.json",
+      "author_sha256": "cabe61b45ef6f13d0177737c31c9eb343407f5a5057c4e6db5cab1e91e979f3d",
+      "independent_sha256": "cabe61b45ef6f13d0177737c31c9eb343407f5a5057c4e6db5cab1e91e979f3d",
+      "byte_identical": true,
+      "differing_json_fields": [],
+      "computational_payload_identical": true,
+      "check_count": 61,
+      "provenance": "One independent optimized execution on the frozen packet; byte-identical author receipt."
+    }
+  ],
+  "integration_review": {
+    "path": "02_REGISTRY/research/sources/d0_moment_writer_native_selection_2026-10-21/REVIEW_INTEGRATION.md",
+    "sha256": "0cb68ed4e7e26ac58eeeb6867eca5257223883925b9c23feec0dae7d74da7422",
+    "scope": "Independent internal mathematical and scope review; no external peer review."
+  },
+  "structural_guards": [
+    {
+      "command": "python3 tools/validate_repo.py",
+      "status": "fulfilled",
+      "value": {
+        "chunk_id": "b944b2",
+        "wall_time_seconds": 0.679739044,
+        "exit_code": 0,
+        "original_token_count": 23,
+        "output": "claims=889 assumptions=31 aliases=58 formal_support=183 lean_closure=918\nPASS warnings=0\n"
+      }
+    },
+    {
+      "command": "python3 tools/validate_work.py",
+      "status": "fulfilled",
+      "value": {
+        "chunk_id": "35a2fb",
+        "wall_time_seconds": 0.061211266,
+        "exit_code": 0,
+        "original_token_count": 15,
+        "output": "PASS work_validation: active work plane clean and enforced\n"
+      }
+    },
+    {
+      "command": "python3 tools/validate_agent_protocol.py",
+      "status": "fulfilled",
+      "value": {
+        "chunk_id": "45ae33",
+        "wall_time_seconds": 0.190565505,
+        "exit_code": 0,
+        "original_token_count": 14,
+        "output": "PASS agent_protocol: cold-start task metadata enforced\n"
+      }
+    },
+    {
+      "command": "git diff --check",
+      "status": "fulfilled",
+      "value": {
+        "chunk_id": "3634eb",
+        "wall_time_seconds": 3.6184e-05,
+        "exit_code": 0,
+        "original_token_count": 0,
+        "output": ""
+      }
+    }
+  ],
+  "integrity": {
+    "frozen_proofs_unchanged": true,
+    "receipt_payloads_match": true,
+    "illegal_control_bytes": 0,
+    "relative_links_checked": [
+      {
+        "from": "02_REGISTRY/research/sources/d0_moment_writer_native_selection_2026-10-21/README.md",
+        "target": "../../A4D_MOMENT_WRITER_NATIVE_SELECTION_TEST_2026_10_21.md"
+      },
+      {
+        "from": "02_REGISTRY/research/sources/d0_moment_writer_native_selection_2026-10-21/README.md",
+        "target": "reachability/FINITE_PAID_DESCENT_AND_CONTROLLER_GATE.md"
+      },
+      {
+        "from": "02_REGISTRY/research/sources/d0_moment_writer_native_selection_2026-10-21/README.md",
+        "target": "state_lift/RETAINED_CODE_LIFT_AND_APPARATUS_ELIMINATION.md"
+      },
+      {
+        "from": "02_REGISTRY/research/sources/d0_moment_writer_native_selection_2026-10-21/README.md",
+        "target": "cut/RETAINED_CUT_AND_PREPARED_SOURCE.md"
+      },
+      {
+        "from": "02_REGISTRY/research/sources/d0_moment_writer_native_selection_2026-10-21/README.md",
+        "target": "reachability/check_finite_paid_descent.py"
+      },
+      {
+        "from": "02_REGISTRY/research/sources/d0_moment_writer_native_selection_2026-10-21/README.md",
+        "target": "reachability/SOURCE_PINS.json"
+      },
+      {
+        "from": "02_REGISTRY/research/sources/d0_moment_writer_native_selection_2026-10-21/README.md",
+        "target": "reachability/CHECK_RESULT.json"
+      },
+      {
+        "from": "02_REGISTRY/research/sources/d0_moment_writer_native_selection_2026-10-21/README.md",
+        "target": "reachability/INDEPENDENT_RESULT.json"
+      },
+      {
+        "from": "02_REGISTRY/research/sources/d0_moment_writer_native_selection_2026-10-21/README.md",
+        "target": "reachability/REVIEW_REACHABILITY.md"
+      },
+      {
+        "from": "02_REGISTRY/research/sources/d0_moment_writer_native_selection_2026-10-21/README.md",
+        "target": "state_lift/check_retained_code_lift.py"
+      },
+      {
+        "from": "02_REGISTRY/research/sources/d0_moment_writer_native_selection_2026-10-21/README.md",
+        "target": "state_lift/STATIONARITY_SOURCE_PINS.json"
+      },
+      {
+        "from": "02_REGISTRY/research/sources/d0_moment_writer_native_selection_2026-10-21/README.md",
+        "target": "state_lift/RESULT.json"
+      },
+      {
+        "from": "02_REGISTRY/research/sources/d0_moment_writer_native_selection_2026-10-21/README.md",
+        "target": "state_lift/INDEPENDENT_RESULT.json"
+      },
+      {
+        "from": "02_REGISTRY/research/sources/d0_moment_writer_native_selection_2026-10-21/README.md",
+        "target": "state_lift/REVIEW_STATE_LIFT.md"
+      },
+      {
+        "from": "02_REGISTRY/research/sources/d0_moment_writer_native_selection_2026-10-21/README.md",
+        "target": "cut/check_retained_cut_source.py"
+      },
+      {
+        "from": "02_REGISTRY/research/sources/d0_moment_writer_native_selection_2026-10-21/README.md",
+        "target": "cut/SOURCE_PINS.json"
+      },
+      {
+        "from": "02_REGISTRY/research/sources/d0_moment_writer_native_selection_2026-10-21/README.md",
+        "target": "cut/RESULT.json"
+      },
+      {
+        "from": "02_REGISTRY/research/sources/d0_moment_writer_native_selection_2026-10-21/README.md",
+        "target": "cut/INDEPENDENT_RESULT.json"
+      },
+      {
+        "from": "02_REGISTRY/research/sources/d0_moment_writer_native_selection_2026-10-21/README.md",
+        "target": "cut/REVIEW_CUT.md"
+      },
+      {
+        "from": "02_REGISTRY/research/sources/d0_moment_writer_native_selection_2026-10-21/README.md",
+        "target": "VALIDATION.json"
+      },
+      {
+        "from": "02_REGISTRY/research/sources/d0_moment_writer_native_selection_2026-10-21/README.md",
+        "target": "REVIEW_INTEGRATION.md"
+      },
+      {
+        "from": "02_REGISTRY/research/A4D_NEXT_COMMON_MAP_CONSTRUCTION_GATE_2026_10_21.md",
+        "target": "A4D_FIXED_PROCESSOR_JOINT_RESOURCE_SOURCE_2026_10_21.md"
+      },
+      {
+        "from": "02_REGISTRY/research/A4D_NEXT_COMMON_MAP_CONSTRUCTION_GATE_2026_10_21.md",
+        "target": "../../01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md"
+      },
+      {
+        "from": "02_REGISTRY/research/A4D_NEXT_COMMON_MAP_CONSTRUCTION_GATE_2026_10_21.md",
+        "target": "sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/NATIVE_CAR_ACTUATED_METRIC.md"
+      },
+      {
+        "from": "02_REGISTRY/research/A4D_NEXT_COMMON_MAP_CONSTRUCTION_GATE_2026_10_21.md",
+        "target": "sources/d0_common_execution_closure_2026-10-21/native_processor/FIXED_PROCESSOR_PROGRAM_SOURCE.md"
+      },
+      {
+        "from": "02_REGISTRY/research/A4D_NEXT_COMMON_MAP_CONSTRUCTION_GATE_2026_10_21.md",
+        "target": "sources/d0_common_execution_closure_2026-10-21/book_binding/BOOK_BINDING_ON_FIXED_PROCESSOR.md"
+      },
+      {
+        "from": "02_REGISTRY/research/A4D_NEXT_COMMON_MAP_CONSTRUCTION_GATE_2026_10_21.md",
+        "target": "A4D_FULL128_NORMALIZATION_AND_TRUE_BOOK_SOURCE_2026_10_21.md"
+      },
+      {
+        "from": "02_REGISTRY/research/A4D_NEXT_COMMON_MAP_CONSTRUCTION_GATE_2026_10_21.md",
+        "target": "A4D_EXACT_RESOURCE_WRITER_OBSTRUCTION_2026_10_21.md"
+      },
+      {
+        "from": "02_REGISTRY/research/A4D_NEXT_COMMON_MAP_CONSTRUCTION_GATE_2026_10_21.md",
+        "target": "A4D_PAID_MOMENT_FIELD_WRITER_2026_10_21.md"
+      },
+      {
+        "from": "02_REGISTRY/research/A4D_NEXT_COMMON_MAP_CONSTRUCTION_GATE_2026_10_21.md",
+        "target": "A4D_PAID_RATIONAL_RESOURCE_WRITER_2026_10_21.md"
+      },
+      {
+        "from": "02_REGISTRY/research/A4D_NEXT_COMMON_MAP_CONSTRUCTION_GATE_2026_10_21.md",
+        "target": "A4D_MOMENT_WRITER_NATIVE_SELECTION_TEST_2026_10_21.md"
+      },
+      {
+        "from": "02_REGISTRY/research/A4D_NEXT_COMMON_MAP_CONSTRUCTION_GATE_2026_10_21.md",
+        "target": "A4D_NULL_SOURCE_FIBRE_AND_READOUT_DESCENT_2026_10_21.md"
+      },
+      {
+        "from": "02_REGISTRY/research/A4D_NEXT_COMMON_MAP_CONSTRUCTION_GATE_2026_10_21.md",
+        "target": "../../01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md"
+      },
+      {
+        "from": "02_REGISTRY/research/A4D_NEXT_COMMON_MAP_CONSTRUCTION_GATE_2026_10_21.md",
+        "target": "A4D_OPPOSITE_NULL_LIE_COMPLETE_JULIA_ORDER_MEMORY_BOOK_SOURCE_2026_10_19.md"
+      },
+      {
+        "from": "02_REGISTRY/research/A4D_NEXT_COMMON_MAP_CONSTRUCTION_GATE_2026_10_21.md",
+        "target": "../../03_FORMALIZATION/D0/Research/NativeHistoryActionResponse.lean"
+      },
+      {
+        "from": "02_REGISTRY/research/A4D_NEXT_COMMON_MAP_CONSTRUCTION_GATE_2026_10_21.md",
+        "target": "A4D_PAID_RATIONAL_RESOURCE_WRITER_2026_10_21.md"
+      },
+      {
+        "from": "02_REGISTRY/research/A4D_NEXT_COMMON_MAP_CONSTRUCTION_GATE_2026_10_21.md",
+        "target": "A4D_GOLDEN_MEAN_INFO_FIBRE_2026_10_21.md"
+      },
+      {
+        "from": "02_REGISTRY/research/A4D_NEXT_COMMON_MAP_CONSTRUCTION_GATE_2026_10_21.md",
+        "target": "sources/d0_paid_resource_writer_2026-10-21/PROOF.md"
+      },
+      {
+        "from": "02_REGISTRY/research/A4D_MOMENT_WRITER_NATIVE_SELECTION_TEST_2026_10_21.md",
+        "target": "A4D_PAID_MOMENT_FIELD_WRITER_2026_10_21.md"
+      },
+      {
+        "from": "02_REGISTRY/research/A4D_MOMENT_WRITER_NATIVE_SELECTION_TEST_2026_10_21.md",
+        "target": "sources/d0_moment_writer_native_selection_2026-10-21/README.md"
+      },
+      {
+        "from": "02_REGISTRY/research/A4D_MOMENT_WRITER_NATIVE_SELECTION_TEST_2026_10_21.md",
+        "target": "A4D_NATIVE_JOINT_FIELD_MINIMUM_EXCLUSION_2026_10_20.md"
+      },
+      {
+        "from": "02_REGISTRY/research/A4D_MOMENT_WRITER_NATIVE_SELECTION_TEST_2026_10_21.md",
+        "target": "A4D_ORIGINAL_STAR_NULL_CART_SIGN_AND_ALL_ORDER_CQ_RETYPE_2026_10_21.md"
+      },
+      {
+        "from": "02_REGISTRY/research/A4D_MOMENT_WRITER_NATIVE_SELECTION_TEST_2026_10_21.md",
+        "target": "A4D_PAIRED_EPOCH_CLOCK_COMPLETE_SOURCE_TRANSPORT_2026_10_21.md"
+      },
+      {
+        "from": "02_REGISTRY/research/A4D_MOMENT_WRITER_NATIVE_SELECTION_TEST_2026_10_21.md",
+        "target": "A4D_ORIGINAL_GOLDEN_READY_COMPLETE_CQ_COST_INFO_PF_SOURCE_2026_10_21.md"
+      }
+    ]
+  },
+  "established": {
+    "exact_finite_common_catalogue_CQ_descent": true,
+    "unconditional_fair_label_replacement_descent": true,
+    "conditional_original_0_10_code_cost_descent": true,
+    "retained_code_trace_distance_lower_bound": true,
+    "conditional_full_price_correction_with_implementation_slack": true,
+    "full16_block_rank8_Book_determinant_prepared_probability_distinction": true
+  },
+  "not_established": {
+    "same_initial_physical_controller_alternative_order_admission": true,
+    "compulsory_full_Book_cut_heat_Info_and_first_variation": true,
+    "smooth_complete_state_lift_from_finite_catalogue": true,
+    "globally_optimal_Einstein_implementation_excluded": true,
+    "physical_native_stationary_or_constraint_selection": true,
+    "original_carrier_uniform_physical_refinement": true
+  },
+  "GR_closed": false,
+  "pr_remains_draft": true,
+  "verification_limit": "Exact finite diagnostics plus analytic proofs and internal review. No whole-bank state simulation, old all40/all42/root/rank/heat replay, broad Lean suite or new physical admission is claimed.",
+  "files": [
+    {
+      "path": "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md",
+      "sha256": "6251c559477f2c205522f459cd019ddcff11b8943f34937cab58eadc5a5753fd",
+      "bytes": 280028
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_MOMENT_WRITER_NATIVE_SELECTION_TEST_2026_10_21.md",
+      "sha256": "d48975137d7b2cbe97b927355f8cc482d15363179c6c717c785b45f8dfe85b00",
+      "bytes": 15952
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NEXT_COMMON_MAP_CONSTRUCTION_GATE_2026_10_21.md",
+      "sha256": "e15e3d29f4d5825b60590d71e5234f1123024a7b3491953535d4ad23644c030d",
+      "bytes": 27279
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_moment_writer_native_selection_2026-10-21/README.md",
+      "sha256": "cdeaf44ffafdbc743225b8488c521907e0d5092b47ec65abfeef2eb83ab9a3a9",
+      "bytes": 8131
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_moment_writer_native_selection_2026-10-21/REVIEW_INTEGRATION.md",
+      "sha256": "0cb68ed4e7e26ac58eeeb6867eca5257223883925b9c23feec0dae7d74da7422",
+      "bytes": 10234
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_moment_writer_native_selection_2026-10-21/cut/INDEPENDENT_RESULT.json",
+      "sha256": "cabe61b45ef6f13d0177737c31c9eb343407f5a5057c4e6db5cab1e91e979f3d",
+      "bytes": 3790
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_moment_writer_native_selection_2026-10-21/cut/RESULT.json",
+      "sha256": "cabe61b45ef6f13d0177737c31c9eb343407f5a5057c4e6db5cab1e91e979f3d",
+      "bytes": 3790
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_moment_writer_native_selection_2026-10-21/cut/RETAINED_CUT_AND_PREPARED_SOURCE.md",
+      "sha256": "beade911fc9a51aa48cb26c2d4e74cc141c97afe96c54ce59e516d170734bc12",
+      "bytes": 14621
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_moment_writer_native_selection_2026-10-21/cut/REVIEW_CUT.md",
+      "sha256": "2c1a6489b7e9ab58bcc3a6e844d0257fd0c4dcb5519b1aa2c5ad228b458c5a45",
+      "bytes": 6579
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_moment_writer_native_selection_2026-10-21/cut/SOURCE_PINS.json",
+      "sha256": "9f25b764734619ac47acaae3edf4370aedda76b4d48999ed710a5562e4657d25",
+      "bytes": 1755
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_moment_writer_native_selection_2026-10-21/cut/check_retained_cut_source.py",
+      "sha256": "cc760def4c6c6b125150c4af5c0d8002190a097e84b31aaec1bbdecff85f52a8",
+      "bytes": 11428
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_moment_writer_native_selection_2026-10-21/reachability/CHECK_RESULT.json",
+      "sha256": "7b081f7ad83cf88f032de5d14f39f98c46b790e626d03ef8bac53fed5eb721ea",
+      "bytes": 4299
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_moment_writer_native_selection_2026-10-21/reachability/FINITE_PAID_DESCENT_AND_CONTROLLER_GATE.md",
+      "sha256": "dd455bb35f0a1826d75f55608a25d7db25eeee17b98f723ca4d360ea9dd15697",
+      "bytes": 17983
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_moment_writer_native_selection_2026-10-21/reachability/INDEPENDENT_RESULT.json",
+      "sha256": "7b081f7ad83cf88f032de5d14f39f98c46b790e626d03ef8bac53fed5eb721ea",
+      "bytes": 4299
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_moment_writer_native_selection_2026-10-21/reachability/REVIEW_REACHABILITY.md",
+      "sha256": "bb4208391ec2f5f8351c2e4c3bc17fff133bb1c9264bdf172d1d7133626634bb",
+      "bytes": 8902
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_moment_writer_native_selection_2026-10-21/reachability/SOURCE_PINS.json",
+      "sha256": "4cb065fee988552852ce3ffb09ddd5a481f1a4ec6f2ed18fc747188960c715a8",
+      "bytes": 3372
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_moment_writer_native_selection_2026-10-21/reachability/check_finite_paid_descent.py",
+      "sha256": "63c2de4c2652e2893e77eaac422efb17977e9a1b1259f395be0dae3d93b4d4e3",
+      "bytes": 11923
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_moment_writer_native_selection_2026-10-21/state_lift/INDEPENDENT_RESULT.json",
+      "sha256": "45627b6919f6b2066321f05f89e6378edb3868b2373445d0e284e1eab0198746",
+      "bytes": 2527
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_moment_writer_native_selection_2026-10-21/state_lift/RESULT.json",
+      "sha256": "c0881a7b060e1e1661fbadc1f344820d2b64c194f61e0ce2d8d5be298ad03db7",
+      "bytes": 2527
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_moment_writer_native_selection_2026-10-21/state_lift/RETAINED_CODE_LIFT_AND_APPARATUS_ELIMINATION.md",
+      "sha256": "792ee430b1fce22c132a3f7a9d5ec28b97ca0c4ba4f9ef2b1ac60f1e7c5fb698",
+      "bytes": 17965
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_moment_writer_native_selection_2026-10-21/state_lift/REVIEW_STATE_LIFT.md",
+      "sha256": "5c01ff38273cde8deeda315e3328de4034f27e5948e7ab3ba4b9c9402b72bae7",
+      "bytes": 9320
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_moment_writer_native_selection_2026-10-21/state_lift/STATIONARITY_SOURCE_PINS.json",
+      "sha256": "aacdc9459b64af1f0cea57caa435b1cb792eccb85e55649d558b19326e2562ea",
+      "bytes": 2301
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_moment_writer_native_selection_2026-10-21/state_lift/check_retained_code_lift.py",
+      "sha256": "0a078a9af6187bf29cb73f5f5f03cc97ee11fc83e32db4e701e506678044f2e2",
+      "bytes": 9891
+    }
+  ],
+  "self_hash_policy": "VALIDATION.json is excluded from its own files list and pinned separately in the publication manifest."
+}

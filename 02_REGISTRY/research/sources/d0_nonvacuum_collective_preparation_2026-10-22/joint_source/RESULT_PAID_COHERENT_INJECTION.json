@@ -1,0 +1,56 @@
+{
+  "status": "PASS",
+  "scope": "new finite coherent injection and complete-tape price identities",
+  "assertions": {
+    "exact": 2992,
+    "floating": 67
+  },
+  "groups": {
+    "coherent_partial_fisher_yates": {
+      "checks": {
+        "exact": 303,
+        "floating": 0
+      },
+      "uniform_label_cap_example": 16
+    },
+    "whole_instrument_and_iid_law": {
+      "checks": {
+        "exact": 1652,
+        "floating": 0
+      },
+      "isometry_input_dimension": 8,
+      "isometry_retained_output_dimension": 48
+    },
+    "paid_complete_tape_entropy_and_source": {
+      "checks": {
+        "exact": 6,
+        "floating": 67
+      },
+      "true_completion_probability": "11/15",
+      "correlated_minus_false_additive_price": 0.00793435312636448,
+      "fixed_marginal_correlation_price_source": 0.7952305364171486,
+      "maximum_additive_iid_score_error": 4.440892098500626e-16
+    },
+    "attenuation_gain_mixture": {
+      "checks": {
+        "exact": 1027,
+        "floating": 0
+      },
+      "exact_nonempty_flag_mass": "264919831/268435456",
+      "bound_uses_no_inverse_tau": true
+    },
+    "independent_original_report_differentiation": {
+      "checks": {
+        "exact": 4,
+        "floating": 0
+      },
+      "arithmetic": "Q[p,x,y,z] differentiation, then p^2+p-1 recurrence",
+      "root_checker_imported": false
+    }
+  },
+  "original_full128_replayed": false,
+  "golden_gate_factory_proofs_replayed": false,
+  "many_copy_degeneracy_theorem_reproved": false,
+  "full_D0_price_selected": false,
+  "GR_closed": false
+}

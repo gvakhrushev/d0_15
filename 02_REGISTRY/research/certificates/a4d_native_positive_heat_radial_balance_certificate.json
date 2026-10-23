@@ -176,7 +176,7 @@
   ],
   "input_head": "2d3a678ef308735c9c6fbcc3c5af94e45c0ba23c",
   "input_sha256": {
-    "02_REGISTRY/research/A4D_NATIVE_POSITIVE_HEAT_RADIAL_BALANCE.md": "2a5dfbbafc9c1c6fe20e31d6a99a949d25abd4f1a5dbe40bb5e08dd392f8d5b4",
+    "02_REGISTRY/research/A4D_NATIVE_POSITIVE_HEAT_RADIAL_BALANCE.md": "e9c2259b76f34a6b89728c512757e22e2113f315922146ceb68f3ea4ba2df92e",
     "02_REGISTRY/research/certificates/a4d_native_positive_heat_radial_balance.lean": "e212da4164e5aadb47a969982cbf6089c52b6ab22b7ecb44c55fe5c877520543",
     "02_REGISTRY/research/certificates/a4d_native_positive_heat_radial_balance_check.py": "59b9c56cd95e29a0924e12e11fa56f109461d7ae8c89bc6d9c8442ba8eaef7c6",
     "02_REGISTRY/research/certificates/a4d_native_positive_heat_radial_balance_output.txt": "2d74685d786f3465cacb6243ed6b53fa7f706071c2761db3255a7ac5f9efd514",

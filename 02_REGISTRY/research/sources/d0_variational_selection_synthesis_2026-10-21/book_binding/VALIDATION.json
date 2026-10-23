@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "normal_and_optimized_stdout_identical": true,
+  "checks": 54,
+  "proof_sha256": "5e605974ef2ba6d20226e34286e918171c1aaca905f9e97003e054397432e99b",
+  "checker_sha256": "20d861773c2f4c4d86636a90d738fbc13f4f144144d42ecfc33c7dd71ac7a14b",
+  "pins_sha256": "c68172d6610fe9f39c822c9ecbdd510ae6cb75df692b32efd1ddc2ce02d0f591",
+  "result_sha256": "8f79c4627784a65beb8692a73b74c679e34adc92afe5d05fa04a67c09bcbc200",
+  "scope": "Author analytic derivation and exact narrow replay. No independent review or original full physical action admission asserted."
+}

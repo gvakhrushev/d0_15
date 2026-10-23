@@ -1,0 +1,20 @@
+{
+  "actual_command": [
+    "/Users/grigorijvahrusev/.elan/bin/lake",
+    "env",
+    "lean",
+    "/Users/grigorijvahrusev/.codex/worktrees/d0-native-source/d0_15/02_REGISTRY/research/certificates/a4d_native_afcar_right_action_no_scalar.lean"
+  ],
+  "actual_cwd": "/Users/grigorijvahrusev/.codex/worktrees/d0-native-source/d0_15/03_FORMALIZATION",
+  "axioms": {
+    "D0.Research.AFCarRightAction.no_unital_matrix_two_ring_hom_to_complex": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "capsule_sha256": "f3d5e49c8e0c95ee7ca2da5a8769cb3ac5771a46bc5c9246b5150441d3fa0bd6",
+  "compiler_exit_code": 0,
+  "output_sha256": "ba437604ff3912b93dacc69227a1a62ab82b17973f94815d7d0fdbd431c7275e",
+  "status": "PASS"
+}

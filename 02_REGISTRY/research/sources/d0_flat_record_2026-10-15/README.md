@@ -46,3 +46,7 @@ Dependency: Python 3 and SymPy. Output files are directed outside the immutable 
 Use the [existing full source evaluator](https://github.com/gvakhrushev/d0_15/blob/fe2fc53fb9479aba6c8c99c8294d25b444f7a27a/02_REGISTRY/research/A4D_NATIVE_RECORD_SOURCE_JOINT_CONTINUATION.md), not a new fitted material term. The [actual AF amplitude-source owner](https://github.com/gvakhrushev/d0_15/blob/34f4e68de0e7d917d80d6c139b39dcc44f010b70/02_REGISTRY/research/A4D_NATIVE_AMPLITUDE_SOURCE_REGULARITY.md) has distinct actual-state/source scopes and is not overwritten or re-certified by this interface example.
 
 The next scientific join is an independently admitted actual-state map into the source-visible variance/phase/observer directions, followed by the full common action derivative. The present data are input to that existing #310 work; no parallel writer is appointed by this text. Do not repeat the finite algebra as a substitute for the native join.
+
+## Subsequent same-source consumer
+
+The [record-price metric/source integration](../../A4D_RECORD_PRICE_METRIC_SOURCE_INTEGRATION.md) consumes this preserved packet in the continuing #334 native programme. Its new finite conclusions do not change the source-time provenance above.

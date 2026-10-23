@@ -1,0 +1,84 @@
+{
+  "actual_abort_constraint_selected": false,
+  "actual_source_composition": {
+    "abort_multiplier_port_only": {
+      "decimal": [
+        "0.117424824661213060983677511167",
+        "0.117424824670618371000717715469"
+      ],
+      "rational": [
+        "1253840613725922601939/10677815507439990079488",
+        "13165326445151466265373/112117062827905147469824"
+      ]
+    },
+    "coherent_cap2_port_cost": {
+      "decimal": [
+        "-0.000000003966950536807742671683",
+        "-0.000000003966950536497602343566"
+      ],
+      "rational": [
+        "-24317336033973639013205381019936206862218755065/6129982163463555433433388108601236734474956488734408704",
+        "-486346720641449686673739437331372170754016641231/122599643269271108668667762172024734689499129774688174080"
+      ]
+    },
+    "coherent_expected_rounds_source": {
+      "decimal": [
+        "0.000000016945325074267259049353",
+        "0.000000016945325074299625467176"
+      ],
+      "rational": [
+        "12382810170573001596559454755408748474775/730750818665451459101842416358141509827966271488",
+        "12382810170596653382879551493873848049775/730750818665451459101842416358141509827966271488"
+      ]
+    },
+    "coherent_supplied_reference_price_source": {
+      "decimal": [
+        "-0.000000636706572562933969931260",
+        "-0.000000619761247070597527566713"
+      ],
+      "rational": [
+        "-465273849150037672738992837373576765770375/730750818665451459101842416358141509827966271488",
+        "-56611379834245034147007539750305513188097/91343852333181432387730302044767688728495783936"
+      ]
+    },
+    "independent_cost_ledgers_intersect": true,
+    "port_cost_added_again_to_matched_entropy": false,
+    "single_arm_cap2_port_cost": {
+      "decimal": [
+        "-0.000000010385611337052311106657",
+        "-0.000000010385611336240353186368"
+      ],
+      "rational": [
+        "-13165326445151466265373/1267650600228229401496703205376",
+        "-26330652888244374640719/2535301200456458802993406410752"
+      ]
+    },
+    "supplied_reference_source_formula": "p^2*(a2-log_phi64*r_blank)"
+  },
+  "new_spectral_replay": false,
+  "nonlinear_preparation": {
+    "RIGHT_dimension": 2,
+    "actual_price_source": "-(1/4)*log_phi3",
+    "both_label_probability_jets": 0,
+    "correct_stationarity": "(I-r*C*C^*)*Z(C)=0 with actual Info/work derivative retained",
+    "frozen_averaged_price_source": 0
+  },
+  "operator_and_reference": {
+    "actual_port_minus_full_gain": "A_coh-log_phi2-log_phi64*ET",
+    "cap2_polynomial": "2I+(2p-1)X+(1/4-p)X^2+(p/4)X^3; X=epsilon*Delta",
+    "noncommuting_jet_checked": true,
+    "reference_declared_leaves": 255,
+    "reference_physically_selected": false
+  },
+  "physical_Info_reference_or_work_selected": false,
+  "source_sha256": {
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/BOOK_SOURCE_BINDING.md": "2b26bf2f4c1b128731ccf14a17437ba654c046e82b5e42e55113a8b6053494ea",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/NATIVE_COHERENT_CHOICE_SOURCE.md": "2e906213861d0c4d1812e1ec8608aec571aeb18230fce8f791fb4cce6b4c2c1b",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/PRIMARY_RIGHT_COMPLETE_CODE_SOURCE.md": "7a38155f37b98fabdd358271be52ad4919a0b28963a5fb952d91da049eba4424",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/PRIMARY_RIGHT_POSTERIOR_GAIN_SOURCE_CERTIFICATE.json": "3fc747be8d27a7b581cfa7a2e9b58da5ff87058a4e3b76199dd2e9483a674b6a",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/PRIMARY_STOPPED_RIGHT_CONDITIONAL_SOURCE_CERTIFICATE.json": "9c910c2e28d02af5fd3a8642d98d01b8c58aeb0a9a55ccf3612a5bc80e397785",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/check_native_car_actuated_metric.py": "72b2743f2f4c9408ceafe29dc691786c5011c4d1133d5fa6ebdb671a230bc3fa",
+    "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/prospective/STOPPED_CLOCK_SOURCE.md": "75845813d20ecf7b585fb7b7a7bef8b8170a711e94a56bb0df0cc3546622a036"
+  },
+  "status": "PASS"
+}

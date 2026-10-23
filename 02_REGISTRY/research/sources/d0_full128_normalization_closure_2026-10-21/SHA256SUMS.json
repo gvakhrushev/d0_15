@@ -1,0 +1,12 @@
+{
+  "02_REGISTRY/research/A4D_ABSOLUTE_BOOK_SOURCE_NONIDENTIFIABILITY_2026_10_21.md": "ae60ac336c25f10481675b8de5224abffcf335de1404798f80f1e691cef56bbe",
+  "02_REGISTRY/research/A4D_BOOK03_SOURCE_IDENTIFIABILITY_THEOREM_2026_10_21.md": "ff50fe0d65cb2b3965affcfc528b5e7ef0a2bfe3b50682e4e4800319a8e7dc33",
+  "02_REGISTRY/research/A4D_FULL128_NORMALIZATION_AND_TRUE_BOOK_SOURCE_2026_10_21.md": "03e4a97a952af1b5c58a3d682bdf0c379ef37f97c9c5f0be35a900764214acb5",
+  "02_REGISTRY/research/A4D_FULL128_PORT_GAIN_MARKER_RIGIDITY_2026_10_21.md": "2e6abca5cc9c538067f5ca7655dbdff0c2de9c452dec88a7c91b6ddf3b2cfe2b",
+  "02_REGISTRY/research/sources/d0_full128_normalization_closure_2026-10-21/MUTATION_RESULTS.json": "3b7b113fcf3d23a6d47c6e12f103a558e8f86aacc843333c32649164f6059b04",
+  "02_REGISTRY/research/sources/d0_full128_normalization_closure_2026-10-21/PROOF.md": "42f96fc4cdb4f47878c4d260a003dd2819741c6b4e233581e184f28e9792ebcc",
+  "02_REGISTRY/research/sources/d0_full128_normalization_closure_2026-10-21/README.md": "95f2f42c7a1786522fd029d0b1a3f7106be1bc26589f931ac816b11161351c42",
+  "02_REGISTRY/research/sources/d0_full128_normalization_closure_2026-10-21/RESULT.json": "61954dd2897d2a663fee7d0bb2ece505906a8e6551923d6a94769018efec0261",
+  "02_REGISTRY/research/sources/d0_full128_normalization_closure_2026-10-21/SOURCE_PINS.json": "c326c7c18882ca2f0d966d17b24e4debe5cb37e865056e89cd75ec502fe2415f",
+  "02_REGISTRY/research/sources/d0_full128_normalization_closure_2026-10-21/check_normalization.py": "76f7eab95b886dc7afc41e4d889d3c223c75a8e633ca7f1e7f4e4125212e757e"
+}

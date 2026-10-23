@@ -1,0 +1,50 @@
+{
+  "status": "PASS",
+  "input_head": "af0a6d07",
+  "owner_AST_sha256": {
+    "02_REGISTRY/research/certificates/a4d_native_fock_record_binding_check.py": {
+      "creator": "801b33d7ef3e41f6425be16153c82b1402215f6be757ea275ff06a69010f58e4"
+    }
+  },
+  "carrier": "actual CAR16, rank128 projector resolved axis shell, full reference128; no extra factor",
+  "lowgrade_link_controls": 6,
+  "full16_trace_controls": 6,
+  "protected_observer_controls": 12,
+  "field_convention": "Omega_r(x)=2 Re(omega exp(i q.x)) O; DS=2 Re(omega J); cos omega=1/2, sin omega=-i/2",
+  "q": "q=kminus-kplus=-2theta1111",
+  "all_qdiag_link_rows": "rotations0; each boost B0i atleg r: J=-mu u_ri zeta exp(i theta)/(32 ell)",
+  "literal_full8mask_sums": {
+    "B01": "-8*mu*t*u1*zeta/ell",
+    "B02": "-8*mu*t*u2*zeta/ell",
+    "B03": "-8*mu*t*u3*zeta/ell",
+    "R12": "0",
+    "R13": "0",
+    "R23": "0"
+  },
+  "named_boost_cos": "sqrt(3)*nu**2*r**2*(3 - r**2)*sqrt(4*r**2 + 3)/(48*ell**2*(r**2 + 1)**3)",
+  "named_boost_sin": "-sqrt(3)*nu**2*r*(1 - 3*r**2)*sqrt(4*r**2 + 3)/(48*ell**2*(r**2 + 1)**3)",
+  "named_boost_prepared_diagonals": "sin(q.x) B01 atleg0: -mu u_10 cos(3theta/2)/ell on masks2,6,10,14;0 on masks0,4,8,12",
+  "all_q0_link_rows": "rotations0; boosts J_ri=-16 nu c u_ri [K_kappa+sin(theta/2)^2/64]/ell^2",
+  "K_kappa": "A_kappa+B_kappa, A=sum_k kappa(lambda_k) Re[t_r conj(t_r-1)], B=sum_k kappa(lambda_k) Re[t_r conj(t_s-1)] r!=s; actual full finite momentum sum",
+  "other_q": "all source rows0 by the exact momentum support of rho and translation-invariant spectral weight",
+  "fixed_RIGHT_preparation_Euler": "[rho,Delta]=0; Delta Psi=Psi Lambda, Lambda Hermitian and commuting sigma; common lambda NOT required",
+  "linearized_fixed_RIGHT_necessary": "(E-P) deltaDelta P=0 within the whole common base Delta eigenspace E",
+  "protected_pair": "eta_in=(chi_c^0+chi_s^0)/sqrt2 inP; eta_out=(chi_c^0-chi_s^0)/sqrt2 inE-P",
+  "metric_protected_offblock": "512*nu**3*r**4*(1 - r**2)/(ell**2*h*(r**2 + 1)**(11/2))",
+  "arbitrary_link_and_observer_adjustment_offblock": 0,
+  "finite_lifting_conclusion": "no C1 fixed-RIGHT preparation lift with this fixed coframe tangent and arbitrary link/observer/preparation corrections; no full-joint-base assumption",
+  "continuum_scope": "Re m=O(h) when theta=kappa h,ell=h; this finite obstruction is NOT a uniform continuum no-go",
+  "rational_witness": {
+    "boost_cos": "1572736*sqrt(9219)/206309462019",
+    "boost_sin": "-33529856*sqrt(9219)/206309462019",
+    "fixed_RIGHT_offblock": "144080003703767040*sqrt(4097)/4729288235396578172929"
+  },
+  "dilation_identity": "0=DS_scale/2=R-Tr(Delta B^(m-1))/Z+M z beta Tr(F^-1 Delta B^(m-1)) at a full scale-critical point",
+  "dilation_assumptions": "u->s u free locally; n,links,prepared w,C,alpha,m fixed; beta=m alpha>0; Delta>=0; B=I-alphaDelta>=b0 I>0; M>=0,0<=z<1",
+  "energy_bound": "R<=b0^-1 Tr(Delta exp(-betaDelta))/Z; uniform thermal moment and Zlower give R<=Rstar",
+  "Stiefel_support_bound": "if fixed_RIGHT sigma>=sigma_min I>0 and prep Euler [rho,Delta]=0, each support energy<=Rstar/sigma_min; uniformRIGHT128 gives128Rstar",
+  "extension_scope": "previous full finite-B O(h) commutator-source estimate extends to multi-energy stationary Stiefel prep under same smooth/measure hypotheses and uniform sigma_min",
+  "full_joint_root_claimed": false,
+  "uniform_continuum_no_go_claimed": false,
+  "native_preparation_admission_claimed": false
+}

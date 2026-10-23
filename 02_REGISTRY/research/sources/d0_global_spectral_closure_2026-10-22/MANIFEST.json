@@ -1,0 +1,22 @@
+{
+  "status": "FROZEN_LOCAL_PACKET",
+  "source_read_commit": "a82df288e4832d53fd52fc88a78ef2dc123bcc88",
+  "sha256": {
+    "GEOMETRY_REPLAY.txt": "09570bf30707b6f25ad2e38b7b6be3474e0ff3c15b7e857327ebce07502b9db1",
+    "README.md": "a3a81340b3f9df3c770ab33605532a7ee719fb1fd455ddd031c781af84654fa1",
+    "RESULT.json": "c215ce4d8a8cb34db64204656c86ddfab6e22f40d9cada01901ee469e1f3bc3f",
+    "RESULT_OPTIMIZED.json": "c215ce4d8a8cb34db64204656c86ddfab6e22f40d9cada01901ee469e1f3bc3f",
+    "THEOREM.md": "b84b6b98efad8bfbdddd1f8288d3f2c31e0855c62205905cb8076555b02bd5f4",
+    "VALIDATION.md": "30fdada7dc7dfbf34bd4e03e3ad1ef3f9f062b818fe95c75c38fba3a60774dfd",
+    "check_spectral_closure.py": "87b42233186310679377365f66184173227b68d0efccddd938dc59750f4e0c1e",
+    "inputs/check_all40_arbitrary_brinkmann.py": "d3d0b1bc92c25a0963a4ba851d9d587d2191f0bbd8cd8cd0ab58b664852b7026",
+    "native_spectral.py": "d04522048035bc49b842c2a8873165cb83223f5e9a1819f93e61ff151e95fd59",
+    "previous/GLOBAL_SYNTHESIS.md": "178761b551b536176bbbe76181698fdc502fa633835021c323ea9d29dadc49db",
+    "previous/MANIFEST.json": "47e6181a56bf68bd6aad7e8d2b5dabe4bf41ae4a43cc88775f380010664db0b6",
+    "previous/REPLAY.json": "a71c4fbf00c350e8c483b8aaece8325182addc3788bb048e9f9e2ffc5c23768e",
+    "previous/RESULT.json": "a71c4fbf00c350e8c483b8aaece8325182addc3788bb048e9f9e2ffc5c23768e",
+    "previous/RESULT_OPTIMIZED.json": "a71c4fbf00c350e8c483b8aaece8325182addc3788bb048e9f9e2ffc5c23768e",
+    "previous/check_global_spectral.py": "1efa6c20ef0cfb67eefb228f3a2141b4ead5623535e7e1764796d15238cd40fb",
+    "run_validation.py": "f9aefef32b1ccd7e15aab5591df38a76d902275045bdca104251388966a8ddf5"
+  }
+}

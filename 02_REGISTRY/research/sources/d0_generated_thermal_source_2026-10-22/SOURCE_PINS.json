@@ -1,0 +1,64 @@
+{
+  "scientific_owner": "#334",
+  "initial_published_intake": "5ed028192cee35b3b9d2b1f970c56259abb325a2",
+  "concurrent_published_intake": "e9abd308e008ad8adfe8b66d188ec0e55736beae",
+  "input_blobs": [
+    {
+      "path": "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md",
+      "published_commit": "5ed028192cee35b3b9d2b1f970c56259abb325a2",
+      "git_blob": "ecdd31abb52c94e9f2a157a80c7c49a6f5ac31aa"
+    },
+    {
+      "path": "01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md",
+      "published_commit": "5ed028192cee35b3b9d2b1f970c56259abb325a2",
+      "git_blob": "79ad345ddef6bb06c638f41721db1a84843e4a9b"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_book_uniform_source_2026-10-21/check_uniform_book_source.py",
+      "published_commit": "5ed028192cee35b3b9d2b1f970c56259abb325a2",
+      "git_blob": "ee8de4635d24c668949ac9a0186616ab7d59f2ed"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_preparation_closure_2026-10-21/PROOF.md",
+      "published_commit": "5ed028192cee35b3b9d2b1f970c56259abb325a2",
+      "git_blob": "2dde923ce481a00db4928a9467819ccdb73cae5a"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_exact_full42_h4_2026-10-22/PROOF.md",
+      "published_commit": "5ed028192cee35b3b9d2b1f970c56259abb325a2",
+      "git_blob": "4cc31be07fd7b64b03a255e905d089bc98373301"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_EXPLICIT_K100M_FINITE_RENEWAL_HJR_FULL42_ROOT_2026_10_22.md",
+      "published_commit": "5ed028192cee35b3b9d2b1f970c56259abb325a2",
+      "git_blob": "08f93815c4e1c1d49228cbe81bee0a22bbb71653"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_ORIGINAL_GOLDEN_READY_COHERENT_BOOK_FULL42_BRIDGE_2026_10_22.md",
+      "published_commit": "5ed028192cee35b3b9d2b1f970c56259abb325a2",
+      "git_blob": "35134d3a536450442267cda276028ec780329544"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_first_match_wald_2026-10-22/SEQUENTIAL_STATIONARY_OCCUPATION.md",
+      "published_commit": "5ed028192cee35b3b9d2b1f970c56259abb325a2",
+      "git_blob": "5cf08b1e6b904c04615a9ae54ecb62a59e110d80"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_CORRELATED_RETURN_MODULAR_HEAT_COMPATIBILITY_2026_10_22.md",
+      "published_commit": "e9abd308e008ad8adfe8b66d188ec0e55736beae",
+      "git_blob": "74a78b2f287b577b55bc0ccb3e8d8e911b95af92"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_ORIGINAL_FULL128_STATIONARY_PORT_CORRELATION_SOURCE_2026_10_22.md",
+      "published_commit": "e9abd308e008ad8adfe8b66d188ec0e55736beae",
+      "git_blob": "9b29436b33a468740774a9ba7f36ca141b504f53"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_PAID_GOLDEN_EQUAL_TIME_MEASURED_CQ_SOURCE_AND_FIRST_MATCH_2026_10_22.md",
+      "published_commit": "e9abd308e008ad8adfe8b66d188ec0e55736beae",
+      "git_blob": "a2abed060cc257f8d080a2e462f2cb980a4b6588"
+    }
+  ],
+  "old_suites_replayed": false,
+  "GR_closed": false
+}

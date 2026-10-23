@@ -1,0 +1,405 @@
+{
+  "carrier": {
+    "CAR_grades": 16,
+    "actual_FR_words": 10946,
+    "actual_unequal_FR_cost_depth": 20,
+    "compressed_vectors": 33,
+    "ell": 0.25,
+    "epsilon": 0.00037301368286143087,
+    "fixed_scale": 0.23606797749978975,
+    "fixed_scale_Golden_exponent": 3,
+    "original_exterior_order": [
+      0,
+      2,
+      3,
+      1
+    ],
+    "prepared_matrix_shape": [
+      4096,
+      128
+    ],
+    "reference_columns": 128,
+    "retained_outcomes": 128,
+    "sites": 256
+  },
+  "cases": [
+    {
+      "Rayleigh": 6.856587724813843,
+      "Rayleigh_jet": -13.713175449627686,
+      "centered_finite_difference": {
+        "coherent_entropy_eta_nats": {
+          "absolute_error": 7.224494683044647e-10,
+          "finite_difference": -0.03245602708661435,
+          "float_verification_tolerance": 2e-09
+        },
+        "pointer_entropy_eta_nats": {
+          "absolute_error": 8.390376449174397e-10,
+          "finite_difference": -0.036081154538491686,
+          "float_verification_tolerance": 2e-09
+        },
+        "primitive_port_cost": {
+          "absolute_error": 8.640551598868007e-11,
+          "finite_difference": -0.0031613688300513587,
+          "float_verification_tolerance": 2e-10
+        }
+      },
+      "coherent_entropy_eta_jet_nats": -0.032456026364164885,
+      "coherent_entropy_eta_nats": 0.01833659292680244,
+      "coherent_true_source_regularization_error_bound": 1.182297744586315e-06,
+      "exactly_zero_physical_B_rows": 64,
+      "expected_cost_from_D": 1.001580684371823,
+      "expected_cost_jet_from_D": -0.0031613687436458766,
+      "independent_global_R_scale_identity_error": 0.0,
+      "literal_all128_Walsh_probability_error": 6.661338147750939e-16,
+      "literal_all128_Walsh_probability_jet_error": 1.4401677685691242e-18,
+      "literal_all128_probability_jet_sum": -8.673617379884035e-19,
+      "literal_all128_probability_sum": 0.9999999999999997,
+      "maximum_Sylvester_residual": 1.1102230246251565e-16,
+      "minimum_FD_Gram_eigenvalue": -1.2838850859103188e-17,
+      "minimum_FD_Gram_log_argument": 9.999871611491408e-13,
+      "minimum_Gram_log_argument": 9.999903597404022e-13,
+      "minimum_pointer_log_argument": 1e-12,
+      "minimum_raw_Gram_eigenvalue": -9.640259597857953e-18,
+      "minimum_raw_probability": 0.0,
+      "pointer_entropy_eta_jet_nats": -0.03608115369945404,
+      "pointer_entropy_eta_nats": 0.020096093410789904,
+      "pointer_true_source_regularization_error_bound": 2.328492674602109e-06,
+      "port_cost_minus_coherent_eta_in_phi_units_jet": 0.06428507515898446,
+      "port_cost_minus_pointer_eta_in_phi_units_jet": 0.07181840486226045,
+      "port_minus_coherent_true_source_regularization_error_bound": 2.4569174800304924e-06,
+      "port_minus_pointer_true_source_regularization_error_bound": 4.8388101732822124e-06,
+      "primitive_port_cost": 1.0015806843718216,
+      "primitive_port_cost_jet": -0.0031613687436458427,
+      "probability_sum": 0.9999999999999987,
+      "purified_jet_HS_norm": 0.05145290500482351,
+      "variation": "uniform_coframe",
+      "wave_amplitude": null
+    },
+    {
+      "Rayleigh": 6.856587724813843,
+      "Rayleigh_jet": -1.0046937660117239,
+      "centered_finite_difference": {
+        "coherent_entropy_eta_nats": {
+          "absolute_error": 6.486698591462448e-11,
+          "finite_difference": -0.002443808271952383,
+          "float_verification_tolerance": 2e-09
+        },
+        "pointer_entropy_eta_nats": {
+          "absolute_error": 8.025223194318976e-11,
+          "finite_difference": -0.0026793210437282833,
+          "float_verification_tolerance": 2e-09
+        },
+        "primitive_port_cost": {
+          "absolute_error": 8.148185739412922e-12,
+          "finite_difference": -0.00023161722040310195,
+          "float_verification_tolerance": 2e-10
+        }
+      },
+      "coherent_entropy_eta_jet_nats": -0.002443808207085397,
+      "coherent_entropy_eta_nats": 0.01833659292680244,
+      "coherent_true_source_regularization_error_bound": 3.223219477276205e-07,
+      "exactly_zero_physical_B_rows": 64,
+      "expected_cost_from_D": 1.001580684371823,
+      "expected_cost_jet_from_D": -0.00023161721225491667,
+      "maximum_Sylvester_residual": 2.7755575615628914e-17,
+      "minimum_FD_Gram_eigenvalue": -1.4173608221574366e-17,
+      "minimum_FD_Gram_log_argument": 9.999858263917783e-13,
+      "minimum_Gram_log_argument": 9.999903597404022e-13,
+      "minimum_pointer_log_argument": 1e-12,
+      "minimum_raw_Gram_eigenvalue": -9.640259597857953e-18,
+      "minimum_raw_probability": 0.0,
+      "pointer_entropy_eta_jet_nats": -0.0026793209634760513,
+      "pointer_entropy_eta_nats": 0.020096093410789904,
+      "pointer_true_source_regularization_error_bound": 6.348014259384856e-07,
+      "port_cost_minus_coherent_eta_in_phi_units_jet": 0.004846828660896071,
+      "port_cost_minus_pointer_eta_in_phi_units_jet": 0.0053362446397355,
+      "port_minus_coherent_true_source_regularization_error_bound": 6.698130239997685e-07,
+      "port_minus_pointer_true_source_regularization_error_bound": 1.3191725408241132e-06,
+      "primitive_port_cost": 1.0015806843718216,
+      "primitive_port_cost_jet": -0.00023161721225491621,
+      "probability_sum": 0.9999999999999987,
+      "purified_jet_HS_norm": 0.014027262280874786,
+      "variation": "coframe_role_0",
+      "wave_amplitude": null
+    },
+    {
+      "Rayleigh": 6.856587724813843,
+      "Rayleigh_jet": -5.79795220011249,
+      "centered_finite_difference": {
+        "coherent_entropy_eta_nats": {
+          "absolute_error": 3.093976758822281e-10,
+          "finite_difference": -0.013684134780424587,
+          "float_verification_tolerance": 2e-09
+        },
+        "pointer_entropy_eta_nats": {
+          "absolute_error": 3.7367747438010745e-10,
+          "finite_difference": -0.015289865392068697,
+          "float_verification_tolerance": 2e-09
+        },
+        "primitive_port_cost": {
+          "absolute_error": 3.576115900801036e-11,
+          "finite_difference": -0.0013366317247465176,
+          "float_verification_tolerance": 2e-10
+        }
+      },
+      "coherent_entropy_eta_jet_nats": -0.01368413447102691,
+      "coherent_entropy_eta_nats": 0.01833659292680244,
+      "coherent_true_source_regularization_error_bound": 7.699809826431796e-07,
+      "exactly_zero_physical_B_rows": 64,
+      "expected_cost_from_D": 1.001580684371823,
+      "expected_cost_jet_from_D": -0.001336631688985363,
+      "maximum_Sylvester_residual": 1.1102230246251565e-16,
+      "minimum_FD_Gram_eigenvalue": -1.8259928646968002e-17,
+      "minimum_FD_Gram_log_argument": 9.99981740071353e-13,
+      "minimum_Gram_log_argument": 9.999903597404022e-13,
+      "minimum_pointer_log_argument": 1e-12,
+      "minimum_raw_Gram_eigenvalue": -9.640259597857953e-18,
+      "minimum_raw_probability": 0.0,
+      "pointer_entropy_eta_jet_nats": -0.015289865018391222,
+      "pointer_entropy_eta_nats": 0.020096093410789904,
+      "pointer_true_source_regularization_error_bound": 1.516449714868491e-06,
+      "port_cost_minus_coherent_eta_in_phi_units_jet": 0.02710018918367707,
+      "port_cost_minus_pointer_eta_in_phi_units_jet": 0.030437036833182406,
+      "port_minus_coherent_true_source_regularization_error_bound": 1.6000874096304865e-06,
+      "port_minus_pointer_true_source_regularization_error_bound": 3.1513143191787982e-06,
+      "primitive_port_cost": 1.0015806843718216,
+      "primitive_port_cost_jet": -0.0013366316889853586,
+      "probability_sum": 0.9999999999999987,
+      "purified_jet_HS_norm": 0.03350912114724739,
+      "variation": "coframe_role_1",
+      "wave_amplitude": null
+    },
+    {
+      "Rayleigh": 6.856587724813843,
+      "Rayleigh_jet": -3.3439317234495483,
+      "centered_finite_difference": {
+        "coherent_entropy_eta_nats": {
+          "absolute_error": 2.0505287051664212e-10,
+          "finite_difference": -0.00791077472903079,
+          "float_verification_tolerance": 2e-09
+        },
+        "pointer_entropy_eta_nats": {
+          "absolute_error": 2.2949179535880493e-10,
+          "finite_difference": -0.008772070607268936,
+          "float_verification_tolerance": 2e-09
+        },
+        "primitive_port_cost": {
+          "absolute_error": 2.216142417146849e-11,
+          "finite_difference": -0.0007708937710404484,
+          "float_verification_tolerance": 2e-10
+        }
+      },
+      "coherent_entropy_eta_jet_nats": -0.007910774523977919,
+      "coherent_entropy_eta_nats": 0.01833659292680244,
+      "coherent_true_source_regularization_error_bound": 5.827150763660092e-07,
+      "exactly_zero_physical_B_rows": 64,
+      "expected_cost_from_D": 1.001580684371823,
+      "expected_cost_jet_from_D": -0.0007708937488790246,
+      "maximum_Sylvester_residual": 1.3877787807814457e-17,
+      "minimum_FD_Gram_eigenvalue": -2.1038121082716833e-17,
+      "minimum_FD_Gram_log_argument": 9.999789618789172e-13,
+      "minimum_Gram_log_argument": 9.999903597404022e-13,
+      "minimum_pointer_log_argument": 1e-12,
+      "minimum_raw_Gram_eigenvalue": -9.640259597857953e-18,
+      "minimum_raw_probability": 0.0,
+      "pointer_entropy_eta_jet_nats": -0.008772070377777141,
+      "pointer_entropy_eta_nats": 0.020096093410789904,
+      "pointer_true_source_regularization_error_bound": 1.1476362810564448e-06,
+      "port_cost_minus_coherent_eta_in_phi_units_jet": 0.015668383326238745,
+      "port_cost_minus_pointer_eta_in_phi_units_jet": 0.017458230975332865,
+      "port_minus_coherent_true_source_regularization_error_bound": 1.2109325790026741e-06,
+      "port_minus_pointer_true_source_regularization_error_bound": 2.3848879459982046e-06,
+      "primitive_port_cost": 1.0015806843718216,
+      "primitive_port_cost_jet": -0.0007708937488790243,
+      "probability_sum": 0.9999999999999987,
+      "purified_jet_HS_norm": 0.025359418645960086,
+      "variation": "coframe_role_2",
+      "wave_amplitude": null
+    },
+    {
+      "Rayleigh": 6.856587724813843,
+      "Rayleigh_jet": -3.566597760053842,
+      "centered_finite_difference": {
+        "coherent_entropy_eta_nats": {
+          "absolute_error": 2.0347420276456418e-10,
+          "finite_difference": -0.00841730936554895,
+          "float_verification_tolerance": 2e-09
+        },
+        "pointer_entropy_eta_nats": {
+          "absolute_error": 2.3798070805658433e-10,
+          "finite_difference": -0.00933989757779044,
+          "float_verification_tolerance": 2e-09
+        },
+        "primitive_port_cost": {
+          "absolute_error": 2.311029254249697e-11,
+          "finite_difference": -0.0008222261166368483,
+          "float_verification_tolerance": 2e-10
+        }
+      },
+      "coherent_entropy_eta_jet_nats": -0.008417309162074747,
+      "coherent_entropy_eta_nats": 0.01833659292680244,
+      "coherent_true_source_regularization_error_bound": 6.012299859728658e-07,
+      "exactly_zero_physical_B_rows": 64,
+      "expected_cost_from_D": 1.001580684371823,
+      "expected_cost_jet_from_D": -0.0008222260935265536,
+      "maximum_Sylvester_residual": 1.3877787807814457e-17,
+      "minimum_FD_Gram_eigenvalue": -1.072585606819517e-17,
+      "minimum_FD_Gram_log_argument": 9.999892741439317e-13,
+      "minimum_Gram_log_argument": 9.999903597404022e-13,
+      "minimum_pointer_log_argument": 1e-12,
+      "minimum_raw_Gram_eigenvalue": -9.640259597857953e-18,
+      "minimum_raw_probability": 0.0,
+      "pointer_entropy_eta_jet_nats": -0.009339897339809732,
+      "pointer_entropy_eta_nats": 0.020096093410789904,
+      "pointer_true_source_regularization_error_bound": 1.1841007263181336e-06,
+      "port_cost_minus_coherent_eta_in_phi_units_jet": 0.016669673988172748,
+      "port_cost_minus_pointer_eta_in_phi_units_jet": 0.018586892414009876,
+      "port_minus_coherent_true_source_regularization_error_bound": 1.2494081705045318e-06,
+      "port_minus_pointer_true_source_regularization_error_bound": 2.4606642327866106e-06,
+      "primitive_port_cost": 1.0015806843718216,
+      "primitive_port_cost_jet": -0.0008222260935265558,
+      "probability_sum": 0.9999999999999987,
+      "purified_jet_HS_norm": 0.02616517666210839,
+      "variation": "coframe_role_3",
+      "wave_amplitude": null
+    },
+    {
+      "Rayleigh": 6.856693063465755,
+      "Rayleigh_jet": -0.00010163710195159215,
+      "centered_finite_difference": {
+        "coherent_entropy_eta_nats": {
+          "absolute_error": 5.897078520222657e-12,
+          "finite_difference": -2.2500348806353543e-07,
+          "float_verification_tolerance": 2e-10
+        },
+        "pointer_entropy_eta_nats": {
+          "absolute_error": 8.858813806966194e-13,
+          "finite_difference": -2.5165639537527706e-07,
+          "float_verification_tolerance": 2e-10
+        },
+        "primitive_port_cost": {
+          "absolute_error": 8.891002772317604e-13,
+          "finite_difference": -2.343181204622624e-08,
+          "float_verification_tolerance": 2e-10
+        }
+      },
+      "coherent_entropy_eta_jet_nats": -2.2500938514205565e-07,
+      "coherent_entropy_eta_nats": 0.018336842637468646,
+      "coherent_true_source_regularization_error_bound": 8.92888743092945e-09,
+      "exactly_zero_physical_B_rows": 64,
+      "expected_cost_from_D": 1.0015807086560833,
+      "expected_cost_jet_from_D": -2.3430922945949506e-08,
+      "literal_all128_Walsh_probability_error": 4.773959005888173e-15,
+      "literal_all128_Walsh_probability_jet_error": 1.4558378780933287e-22,
+      "literal_all128_probability_jet_sum": 7.279189390466644e-23,
+      "literal_all128_probability_sum": 0.9999999999999996,
+      "maximum_Sylvester_residual": 5.724587470723463e-17,
+      "minimum_FD_Gram_eigenvalue": -2.550516143603753e-17,
+      "minimum_FD_Gram_log_argument": 9.99974494838564e-13,
+      "minimum_Gram_log_argument": 9.999875187938828e-13,
+      "minimum_pointer_log_argument": 1e-12,
+      "minimum_raw_Gram_eigenvalue": -1.2481206117081091e-17,
+      "minimum_raw_probability": 0.0,
+      "pointer_entropy_eta_jet_nats": -2.5165728125665776e-07,
+      "pointer_entropy_eta_nats": 0.02009636761771199,
+      "pointer_true_source_regularization_error_bound": 1.7585121066555674e-08,
+      "port_cost_minus_coherent_eta_in_phi_units_jet": 4.4415813747289203e-07,
+      "port_cost_minus_pointer_eta_in_phi_units_jet": 4.995347818670764e-07,
+      "port_minus_coherent_true_source_regularization_error_bound": 1.855500419139432e-08,
+      "port_minus_pointer_true_source_regularization_error_bound": 3.654341009674391e-08,
+      "primitive_port_cost": 1.0015807086560775,
+      "primitive_port_cost_jet": -2.343092294594901e-08,
+      "probability_sum": 0.9999999999999946,
+      "published_primary_R_difference": 0.0,
+      "published_primary_R_jet_difference": 7.589415207398531e-19,
+      "purified_jet_HS_norm": 0.00038857994856712286,
+      "variation": "interior_u_link_N2",
+      "wave_amplitude": 0.125
+    },
+    {
+      "Rayleigh": 6.856953892798041,
+      "Rayleigh_jet": -0.00010517825246572186,
+      "centered_finite_difference": {
+        "coherent_entropy_eta_nats": {
+          "absolute_error": 1.0338781264855659e-11,
+          "finite_difference": -2.333368914753109e-07,
+          "float_verification_tolerance": 2e-10
+        },
+        "pointer_entropy_eta_nats": {
+          "absolute_error": 1.284523046232082e-13,
+          "finite_difference": -2.608870151160625e-07,
+          "float_verification_tolerance": 2e-10
+        },
+        "primitive_port_cost": {
+          "absolute_error": 5.668089183325008e-13,
+          "finite_difference": -2.4246715746301106e-08,
+          "float_verification_tolerance": 2e-10
+        }
+      },
+      "coherent_entropy_eta_jet_nats": -2.3332655269404604e-07,
+      "coherent_entropy_eta_nats": 0.018337461914394313,
+      "coherent_true_source_regularization_error_bound": 8.928894721655922e-09,
+      "exactly_zero_physical_B_rows": 64,
+      "expected_cost_from_D": 1.0015807687864084,
+      "expected_cost_jet_from_D": -2.4247282555219955e-08,
+      "literal_all128_Walsh_probability_error": 4.9960036108132044e-15,
+      "literal_all128_Walsh_probability_jet_error": 1.6543612251060553e-22,
+      "literal_all128_probability_jet_sum": 5.293955920339377e-23,
+      "literal_all128_probability_sum": 1.0,
+      "maximum_Sylvester_residual": 2.6020852139652106e-17,
+      "minimum_FD_Gram_eigenvalue": -1.416463532892453e-17,
+      "minimum_FD_Gram_log_argument": 9.99985835364671e-13,
+      "minimum_Gram_log_argument": 9.999933729444542e-13,
+      "minimum_pointer_log_argument": 1e-12,
+      "minimum_raw_Gram_eigenvalue": -6.62705554577591e-18,
+      "minimum_raw_probability": 0.0,
+      "pointer_entropy_eta_jet_nats": -2.6088688666375787e-07,
+      "pointer_entropy_eta_nats": 0.020097049019434477,
+      "pointer_true_source_regularization_error_bound": 1.7585135425377943e-08,
+      "port_cost_minus_coherent_eta_in_phi_units_jet": 4.6062557497513324e-07,
+      "port_cost_minus_pointer_eta_in_phi_units_jet": 5.178983445424608e-07,
+      "port_minus_coherent_true_source_regularization_error_bound": 1.8555019342157648e-08,
+      "port_minus_pointer_true_source_regularization_error_bound": 3.6543439935624675e-08,
+      "primitive_port_cost": 1.001580768786403,
+      "primitive_port_cost_jet": -2.424728255521944e-08,
+      "probability_sum": 0.9999999999999946,
+      "published_primary_R_difference": 0.0,
+      "published_primary_R_jet_difference": 1.2197274440461925e-19,
+      "purified_jet_HS_norm": 0.0003885802658552665,
+      "variation": "interior_u_link_N2",
+      "wave_amplitude": 0.25
+    }
+  ],
+  "compression_isometry": {
+    "Golden_identity": "p+p^2=1; cross terms cancel",
+    "exact_rational_check": "integer_G.T@integer_G=16I32",
+    "maximum_B_adjoint_B_error": 1.1391751050271941e-17,
+    "physical_record": "transpose of the vector Gram; same entropy spectrum"
+  },
+  "elapsed_seconds": 21.907480900001246,
+  "finite_difference_step": 0.0002,
+  "primary_checker_source_sha256": "c67285c7469db49ff61f3e52597d0bcc6aad991ec1f7af025d6daeb065a43edf",
+  "regularization": {
+    "analytic_source_bound": "4 sqrt(M eta) ||V_prime||HS",
+    "coherent_value_error_bound": 3.3e-11,
+    "eta": 1e-12,
+    "formula": "-Tr G log(G+eta I)",
+    "negative_eigenvalues_clipped": false,
+    "pointer_value_error_bound": 1.28e-10,
+    "probability_floor": false,
+    "roundoff_is_not_interval_certified": true
+  },
+  "scope": {
+    "GR_closed": false,
+    "all_costs_paid": false,
+    "bare_HJR_source_screening_proved": false,
+    "both_shifted_Julia_defects_and_jets_retained": true,
+    "curved_link_storage_seam_fixed": true,
+    "flat_scale_is_global_periodic": true,
+    "interior_link_tangent_has_no_seam_support": true,
+    "oldRIGHT_reference_retained": true,
+    "one_original_fresh_round": true,
+    "physical_Book_Info_identified": false
+  },
+  "status": "PASS"
+}

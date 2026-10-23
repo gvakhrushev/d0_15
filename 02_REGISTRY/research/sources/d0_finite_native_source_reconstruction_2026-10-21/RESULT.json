@@ -1,0 +1,123 @@
+{
+  "status": "PASS_FINITE_NATIVE_SOURCE_RECONSTRUCTION",
+  "input_ref": "80d3b1bac1bb9a974f365dbc4c48d3ada539d3a2",
+  "exact": {
+    "field": "Q[a]/(a^4+a^2-1), a>0",
+    "all_work_outputs": 256,
+    "full_amplitude_identities": 4096,
+    "all_outcome_first_jets": 2048,
+    "density_entries_per_slot_by_proved_polarization": 65536,
+    "slot_count": 8,
+    "separate_paid_programmes": 16,
+    "original_r_x": [
+      "-14418153/68719476736",
+      "0",
+      "23331193/68719476736",
+      "0"
+    ],
+    "original_r_y_sigma_minus": [
+      "-24642311/34359738368",
+      "0",
+      "19923571/17179869184",
+      "0"
+    ],
+    "exact_nonlinear_functional_counterexample": [
+      "0",
+      "-128",
+      "0",
+      "208"
+    ]
+  },
+  "cost": {
+    "cells_per_rotation_slot": 3,
+    "G_per_test": 24,
+    "CNOT_per_test": 52,
+    "two_query_unit_ticks_if_reached": 76,
+    "query_unit_tick_upper_bound_for_one_launch_each_setting": 1216,
+    "abort_can_prevent_query_execution": true,
+    "unconditional_mean_query_charge_identified_with_inventory": false,
+    "preparation_compiler_abort_measurement_readout_costs_additional": true,
+    "optional_baseline_additional": true,
+    "repetitions_not_free": true
+  },
+  "numerical": {
+    "decimal_precision": 70,
+    "readiness_alpha_beta": "0.45367493868185901630484471704046",
+    "baseline_r0": "0.0000018512395784882030762843950549834",
+    "hprime_phi_r0": "27.430026782799803562672466775633",
+    "source_x": "-0.00000023854299355446938880440572389058",
+    "source_y_sigma_minus": "0.0000055858197648835163727834285435703",
+    "source_ratio": "-23.416406751884074972895582064895",
+    "incorrect_entropy_shift_x": "-0.00000023898365421945090190214807671229",
+    "incorrect_entropy_shift_y": "0.0000058138659514492271683172505179946",
+    "incorrect_entropy_shift_error_x": "-4.4066066498151309774235282171483e-10",
+    "incorrect_entropy_shift_error_y": "0.00000022804618656571079553382197442422",
+    "unconditioned_unbiased_source_variance_x_times_n": "0.0037164324917265982434209955520403",
+    "unconditioned_unbiased_source_variance_y_times_n": "0.00437606760283021002882436325828",
+    "test_reports": [
+      {
+        "slot": 0,
+        "parameter": "E",
+        "plus_report": "0.000001812241705003256600382682431",
+        "minus_report": "0.00000180105492558970202676949675"
+      },
+      {
+        "slot": 1,
+        "parameter": "E",
+        "plus_report": "0.000001812241705003256600382682431",
+        "minus_report": "0.00000180105492558970202676949675"
+      },
+      {
+        "slot": 2,
+        "parameter": "b",
+        "plus_report": "0.000001812241705003256600382682431",
+        "minus_report": "0.00000180105492558970202676949675"
+      },
+      {
+        "slot": 3,
+        "parameter": "b",
+        "plus_report": "0.000001812241705003256600382682431",
+        "minus_report": "0.00000180105492558970202676949675"
+      },
+      {
+        "slot": 4,
+        "parameter": "E",
+        "plus_report": "0.000001901424228868200203292368822",
+        "minus_report": "0.000001901424228868200203292368822"
+      },
+      {
+        "slot": 5,
+        "parameter": "E",
+        "plus_report": "0.000001901424228868200203292368822",
+        "minus_report": "0.000001901424228868200203292368822"
+      },
+      {
+        "slot": 6,
+        "parameter": "b",
+        "plus_report": "0.000001151451167881280528315121222",
+        "minus_report": "0.0000009507125663612920202832261549"
+      },
+      {
+        "slot": 7,
+        "parameter": "b",
+        "plus_report": "0.000001151451167881280528315121222",
+        "minus_report": "0.0000009507125663612920202832261549"
+      }
+    ]
+  },
+  "scope": {
+    "full_retained_channel_derivative_exact": true,
+    "unconditional_R_tensor_I_or_supplied_known_one_required": true,
+    "coherent_unknown_control_bypass_rule": false,
+    "all_256_work_outputs_and_OR_coherences_retained": true,
+    "source_test_has_bounded_word_depth": true,
+    "actual_CQ_price_source_reconstructed": true,
+    "signed_estimator_equals_physical_price": false,
+    "finite_word_family_has_ordinary_field_derivative": false,
+    "field_to_programme_map_or_tangent_lift_proved": false,
+    "finite_samples_give_exact_source": false,
+    "independent_upstream_sources_zeroed": false,
+    "compulsory_Book03_Info_selected": false,
+    "GR_closed": false
+  }
+}

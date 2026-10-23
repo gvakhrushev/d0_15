@@ -104,7 +104,7 @@
     "02_REGISTRY/research/A4D_NATIVE_TRANSPORTED_CONNECTION_REALIZATION.md": "898487236c81acf7de4fa232bcb86e039d9d9725141a2bc4dc4af050db4f84f7",
     "02_REGISTRY/research/A4D_NATIVE_VECTOR_SOURCE_BOUNDARY.md": "df0e3b783fa1968c1b4a110d80f2e40edb4ee048e3e76a26143c17cbf45fd0e7",
     "02_REGISTRY/research/MEMO_A4D_ROLE_BIVECTOR_INSERTION_UNIQUENESS.md": "7791769bda293488167463bff0340ec8ed9fa1b61b8449ca6a97688b9e1fc115",
-    "02_REGISTRY/research/certificates/a4d_native_transported_connection_results.json": "9ef5c18e453a84c66425bf4581c055b3921990bc04692ef6b6e9a0591001c2d9",
+    "02_REGISTRY/research/certificates/a4d_native_transported_connection_results.json": "5f0109f11587a9476d1e85c979c43263337fcf344e4a53d76b6ecbac15ef5c48",
     "03_FORMALIZATION/D0/Gauge/MatrixRepGaugeTransform.lean": "780dec878df5a5b102faeae48fd35fb3b781a3b1011884e19620b88adccd3a43",
     "03_FORMALIZATION/D0/Gauge/NonAbelianSeamObstructionGap.lean": "f3ea4fa4a4a0f4c2291f1439066083e1d5a07d84100897f5ce2a9d07ecb19772",
     "03_FORMALIZATION/D0/Gauge/YangMillsKillingPositivity.lean": "133c7477660aac028bdbc217857ec534d843abad94adfd26df6d55d6db61c1c2",

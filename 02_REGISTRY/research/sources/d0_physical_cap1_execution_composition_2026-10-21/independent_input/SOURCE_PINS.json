@@ -1,0 +1,146 @@
+{
+  "input_commit": "92c00ccbf39e6e21e4383f7a7b573ab7c7c6f1be",
+  "source_root": "/Users/grigorijvahrusev/.codex/worktrees/same-execution-spatial-source/d0_15",
+  "sources": [
+    {
+      "path": "02_REGISTRY/gr_assembly/sources/d0_actionprotocol_book03_boundary_2026-10-19/BOOK_03.md",
+      "read_scope": "03.25-03.26.3",
+      "sha256": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d",
+      "git_blob": "ecdd31abb52c94e9f2a157a80c7c49a6f5ac31aa",
+      "verified_equal_to_input_commit": true
+    },
+    {
+      "path": "03_FORMALIZATION/D0/Representation/PreparationMemoryBound.lean",
+      "read_scope": "retention and independent detector obligations",
+      "sha256": "285fec478b3228c4e4fe314781d3d597c15e72e66ad69ca2d076526a6e8bff4c",
+      "git_blob": "5e5d9b1db886f357338b150edf20a69aa3cea1b2",
+      "verified_equal_to_input_commit": true
+    },
+    {
+      "path": "03_FORMALIZATION/D0/Representation/FiniteProtocolClock.lean",
+      "read_scope": "supplied finite programme and stored input",
+      "sha256": "955bcffc5b927faf039cb15aae13e250b71c5e7b26fa811c30c61df423c005cc",
+      "git_blob": "14e5e8404fc729eac4035ea1e708fc6ccdfea566",
+      "verified_equal_to_input_commit": true
+    },
+    {
+      "path": "02_REGISTRY/research/MEMO_SCENE_RIESZ_M1_OPERATOR_WELD.md",
+      "read_scope": "M1 representation premise",
+      "sha256": "c4ef6c9f21c6c187a416fc78c218e2bcc109a0076d5a500994654bf22f6e7ae8",
+      "git_blob": "ede503222665fc63e17a1964aa3a5fa5689a7149",
+      "verified_equal_to_input_commit": true
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_PRICE_ENCODER_SCREENING_AND_CLOCK_COMPLETION_TEST_2026_10_20.md",
+      "read_scope": "fixed-Gram LEFT lift and priced screening",
+      "sha256": "9a28a42cabd6abb1a2ad53f5aba074f141fd8a2e969c88502552ea0f87e347c8",
+      "git_blob": "646c7a84c7e11bfd55cc9d57e5f78b0aec34c441",
+      "verified_equal_to_input_commit": true
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_PREPARATION_STATIONARY_SOURCE.md",
+      "read_scope": "sections1-6; different terminal AF price",
+      "sha256": "839b6590911a3fedb1543f8314e7e19b205fe927a169c5df37cb42fa56d2a45b",
+      "git_blob": "e2475112b9e8a66e3558c828c15615d7238e1025",
+      "verified_equal_to_input_commit": true
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_EXACT_CURVED_NATIVE_DIRAC_FIXED_RIGHT_PREPARATION_AND_SOURCE_2026_10_20.md",
+      "read_scope": "sections1-4 and8-9; protected HJR preparation",
+      "sha256": "fcd8e5b637e58ed0f57dcb78cc8853a9483399eec4f2df6df9a568d69b143ee0",
+      "git_blob": "115a47ddff494c51fbae62075c135c3c7d48a511",
+      "verified_equal_to_input_commit": true
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_CURVED_REFERENCE128_FULL_HJR_PROTECTED_SOURCE_AND_PREPARATION_SADDLE_GATE_2026_10_20.md",
+      "read_scope": "I-III; source and saddle boundaries",
+      "sha256": "811278cb3512d6b2bf9feff9d1a67eadb9e5d0eb9122d1e96cef44d3a63a0456",
+      "git_blob": "78978a90da9db425fe3d8e19255372317d1cdfa7",
+      "verified_equal_to_input_commit": true
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_FULL_LORENTZ_BALANCED_MEMORY_PATH.md",
+      "read_scope": "stationary segment and declared 13D scope",
+      "sha256": "14032a01d9077bdaaa19553163eb34a1c98a41ebcbbbb579894679263f38177c",
+      "git_blob": "1aa365a7b951da8d7410c4273912a4f255475346",
+      "verified_equal_to_input_commit": true
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_AF_TRACE_PREPARATION.md",
+      "read_scope": "compatible trace versus full GNS density",
+      "sha256": "9c7e4d582d5627bf5b926a6f8ad15743ff473e9bcc22e741c42309dabb854299",
+      "git_blob": "3cbb805fb72b501a0eb1d7d17b9f037dff115880",
+      "verified_equal_to_input_commit": true
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_GNS_TWO_SIDED_PATH_UNFOLDING_AND_ARCHIVE_SOURCE_2026_10_18.md",
+      "read_scope": "sections1-4; actual RIGHT recording boundary",
+      "sha256": "f4c35e688d9aa59c5abeb62a45c9ea4c30387360921ffd2a0d259087ebea45ac",
+      "git_blob": "9005e7c3205efcfd528bb453fc806ed000e18c56",
+      "verified_equal_to_input_commit": true
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_CHRONOLOGICAL_JOINT_REDUCTION.md",
+      "read_scope": "sections1-4; full priced source pullback",
+      "sha256": "df60f9cfc0c8934c5e6a717a6d526e6d3baed7d1b2c25f980008367e4b59970b",
+      "git_blob": "c7819ef4a5a532b2c3c1da6c9b6c69bf22c049a3",
+      "verified_equal_to_input_commit": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_same_execution_spatial_source_2026-10-21/execution/SAME_EXECUTION_FULL_SOURCE.md",
+      "read_scope": "cap-one full ledger, causal elimination and full8D preparation",
+      "sha256": "287e123f75ea6f5754d2ccd63b48cb567e90901781b8a63ca130eb8cf41513f5",
+      "git_blob": "e5ced5acb82a63434d1236620fb21eee3c86801d",
+      "verified_equal_to_input_commit": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/TWO_NATIVE_8D_DETERMINANT_SOURCE.md",
+      "read_scope": "sections1-5; actual8D unit, fixedP and firstsource",
+      "sha256": "0ea9a175e630e0cb547aff4d25ab355b60125282645e776f23d3a98c0e7d4851",
+      "git_blob": "63b381ca8b0abd9f03ebee2495de904c379f0736",
+      "verified_equal_to_input_commit": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/DETERMINANT_PREPARATION_BANK.md",
+      "read_scope": "actual plus/minus output from paid blanks",
+      "sha256": "6cc9fc85ef8e238635ef24b78ddb3936f07d1a3f915558172eee8ff1c3602705",
+      "git_blob": "e7b92fae0d6f3dc3e60499f0dd041c18003da872",
+      "verified_equal_to_input_commit": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/FIXED_CLOCK_PREPARATION_BANK.md",
+      "read_scope": "fixed duration conditional controller and retained transcripts",
+      "sha256": "a922a3aeaabe8dfb68dc28e4d788c708b496a1081a3a0ab8cf241fd91fbaf88e",
+      "git_blob": "b36d96cf1698ecafd2319ac697f3c8fa2bedefc2",
+      "verified_equal_to_input_commit": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/GOLDEN_EXACT_DETECTOR.md",
+      "read_scope": "sections1-5; full native finite instrument and complete CQ ledger",
+      "sha256": "d33c9c2cb2322e381723f481eb1fcf58058fd05ad88eda92c5597c026d02eb77",
+      "git_blob": "92b9003d783c24b1883a2a21f8b30625078afff7",
+      "verified_equal_to_input_commit": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/COMPLETE_COMPILER_COFRAME_EQUIVALENCE.md",
+      "read_scope": "actual baseline and internal sensitivity",
+      "sha256": "65b23f3b2f9e821a574b90102b1a6d60f8d8f26447971fcd073ae53ff628534b",
+      "git_blob": "4a75e7666560602ce0b13b9ec33a6864dbff84ef",
+      "verified_equal_to_input_commit": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/NATIVE_STAGE_CLOCK_AND_POINTED_DESCENT.md",
+      "read_scope": "actual cuts, clock source and admission boundary",
+      "sha256": "e970dda60699b7236599c9618445fe17cb8cbb0b9bb8c8de8808a190c4c00848",
+      "git_blob": "0f24c6e0149a84b584130a1206cec605ed078858",
+      "verified_equal_to_input_commit": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/NATIVE_CLOCK_SCHUR_RETURN.md",
+      "read_scope": "full retained monodromy and archive determinant",
+      "sha256": "0ea93feafeab40582807e4dcc21ce7e6c5f8852a898c23fa9c49d3fe565bd8e3",
+      "git_blob": "c9501fa1ae11f0c30ef1ccb190c9ff7b812b5444",
+      "verified_equal_to_input_commit": true
+    }
+  ]
+}

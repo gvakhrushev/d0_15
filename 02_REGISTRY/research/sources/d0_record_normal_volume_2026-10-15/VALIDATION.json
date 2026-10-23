@@ -1,0 +1,29 @@
+{
+  "GR_closed": false,
+  "Lorentz_spacetime_derived": false,
+  "actual_mathematical_mutants_rejected": 4,
+  "all_mesh_inverse_or_raw_source_limit": false,
+  "analytic_proof": "exact fourth-degree determinant plus Gauss and Gauss-Bonnet variation; primary classical source cited",
+  "exact_checks": 74,
+  "file_sha256": {
+    "02_REGISTRY/research/A4D_RECORD_NORMAL_VOLUME_SOURCE.md": "26a167bc03432fa575e0f4b32eca5cbb6fb2e8cef0f2d44ad60080cef3b3f0e0",
+    "02_REGISTRY/research/sources/d0_record_normal_volume_2026-10-15/README.md": "630b2c945b8315e0e6353c7d0eb74c2c4ef546488dc6f0474c59606b8acb5ba7",
+    "02_REGISTRY/research/sources/d0_record_normal_volume_2026-10-15/check_normal_volume.py": "d01fdb47580d8b32fa8cfc4d25b0062d146a7ff356cba9f279fda1b6648dd98a",
+    "02_REGISTRY/research/sources/d0_record_normal_volume_2026-10-15/mutations.json": "bb17bccbd8c68044b296d6ceb4060f3194a3fb0a65af4e4353bdc6296b65bb99",
+    "02_REGISTRY/research/sources/d0_record_normal_volume_2026-10-15/result.json": "1b68a0c0f24f6c41cce6e510e6d6f50929c4f71b8e5a4c0497dd909e9538690d",
+    "02_REGISTRY/research/sources/d0_record_normal_volume_2026-10-15/test_mutations.py": "6a796005ccd70ea3b1d79e19073b1d90338aafbff2d424c739743668d3446d42"
+  },
+  "full_repository_replay": false,
+  "independent_scientific_acceptance": false,
+  "native_Cost_Info_binding": false,
+  "native_history_measure_admitted": false,
+  "new_Lean_compilation": false,
+  "new_physical_action_installed": false,
+  "optimized": "PASS_IDENTICAL_JSON",
+  "ordinary": "PASS",
+  "python": "3.13.5",
+  "schema": "d0-record-normal-volume-source/1",
+  "source_base": "0d15acde7f3b6acba4c6b9303d61532f8708bb6e",
+  "source_owner_git_blob": "06f465874f07fae82111ee9453f4b5ca0b963267",
+  "sympy": "1.14.0"
+}

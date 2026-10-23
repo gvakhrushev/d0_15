@@ -1,0 +1,114 @@
+{
+  "date": "2026-10-21",
+  "pr": 334,
+  "owner": "EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE",
+  "status": "AUTHOR_EXACT_NATIVE_PF_C2_AND_GENUINE_FINITE_N1_MATERIAL_FLUX_CHECKS_PASS",
+  "science_note": "02_REGISTRY/research/A4D_NATIVE_GOLDEN_PF_C2_AND_MATERIAL_FLUX_2026_10_21.md",
+  "code_blobs": {
+    "PF_discrepancy": "69528a94bd491a52f8b7ae58fc7817e8d7fa31ab",
+    "true_N1_material": "fd715f68c074d426e38274a73db82c1c4a7e15e3"
+  },
+  "proof_constants": {
+    "native_schedule": "n(L)=64 ceil(log_phi L)+128 for L>=4, exact s minimum in theorem",
+    "native_root": "p=(sqrt(5)-1)/2, 3/5<p<5/8",
+    "a_inf": "phi/sqrt(5)>7/10",
+    "all_grid_uniform_rho_bound": "||rho-1||<9h^3",
+    "log_PF_first_difference": "<=36h^2",
+    "log_PF_second_difference": "<=72h",
+    "original_READY_limit": "2p^3 phi/sqrt(5)=0.341640786499874...",
+    "genuine_positive_adjoint_norms": "D_PF-D_uniform=O(h^2), Delta_PF-Delta_uniform=O(h) assuming bounded original CAR/coframe/link chart"
+  },
+  "source_snapshot": "original 4D nested Golden boxes and N1 GoldenMaster owners on branch as of 2026-10-21",
+  "actual_n24_L8_material_slab": {
+    "original_histories": 75025,
+    "original_sites": 4096,
+    "original_spatial_column": [
+      4,
+      4,
+      4
+    ],
+    "actual_rho": [
+      1.637854049,
+      1.146497834,
+      1.801639454,
+      1.146497834,
+      1.583258914,
+      1.801639454,
+      0.928117294,
+      1.310283239
+    ],
+    "max_material1_before": 0.00037910883308844845,
+    "max_material1_after": 4.440892098500626e-16,
+    "independent_nonlinear_CQ_secant": 1.4107410182053128e-15,
+    "max_scalar_gradient_change": 0.00004516865978161644,
+    "max_offshell_new_q": 0.000013204284164647709,
+    "scalar_fixed_boundary_change": 0,
+    "analytic_sufficiency": "G_i'=a_i[F_y+2tau a_i u_i^2 F_yy/rho_i]>0 on bracket and matching fixed endpoint sum"
+  },
+  "scope": {
+    "original_n20L4_and_n24L8_census_preserved": true,
+    "native_high_depth_enumerated": false,
+    "original_Book_HJR_source_selected": false,
+    "exact_42_joint_finite_nonVSI_root": false,
+    "all_spatial_scalar2_Euler_solved": false,
+    "true_original_field_writer_admitted": false,
+    "physical_GR_closed": false,
+    "CI_scientific_test_run": false,
+    "independent_review": false,
+    "full_2d_scalar_Euler_numerical_root": true,
+    "actual_spatial_or_temporal_collar_4d_42_root": false
+  },
+  "commands": [
+    "python3 02_REGISTRY/research/sources/d0_native_golden_pf_material_flux_2026-10-21/check_native_golden_pf_c2_source.py",
+    "python3 02_REGISTRY/research/sources/d0_native_golden_pf_material_flux_2026-10-21/check_native_n1_scalar_flux.py"
+  ],
+  "extended_all_fixed_r_refinement": {
+    "proof": "n_r(L)=16(max(r,2)+2) min{s:phi^s>=L}+128; ||rho-1||<9 h^(r+1); ||diff_h^j log rho||<=18*2^j h^(r+1-j)",
+    "rational_majorant": 8.514949253627233,
+    "executed_script": "check_native_golden_pf_allorders.py",
+    "exact_source_blob": "40fc62da3ad4303b5e9769c6ac56f5c3c3ab6d1f",
+    "sampled_orders": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      6,
+      8,
+      16,
+      32,
+      64
+    ],
+    "proof_is_analytic": true
+  },
+  "genuine_2d_both_scalar_full_n1": {
+    "native_L": 8,
+    "original_n": 24,
+    "genuine_histories": 75025,
+    "preserved_4d_column": "i_time x j_space x 4 x 4",
+    "genuine_native_PF_interval": [
+      0.5459513495501499,
+      1.8562345884705098
+    ],
+    "all_original_scalar_Dirichlet_collars_fixed": true,
+    "independent_interior_scalar_Euler": 72,
+    "max_before": 0.00007700666960724911,
+    "max_after": 2.6018819260578696e-16,
+    "species0_after": 2.6018819260578696e-16,
+    "species1_after": 2.498001805406602e-16,
+    "max_field_value_change": 0.00002171209918990641,
+    "max_generated_true_nonlinear_q": 0.00003095216823549053,
+    "numerical_source_Jacobian_singular_min": 0.8700655068675173,
+    "numerical_source_Jacobian_cond2": 57.56104684574964,
+    "independent_price_secants_checked": 16,
+    "max_price_secant_vs_true_derivative_difference": 3.3e-16,
+    "actual_original_sigma_minus_GoldenMaster": true,
+    "original_six_face_rank2_source": true,
+    "numeric_root_not_interval_proof": true,
+    "full_4d_42_Euler_not_closed": true,
+    "source_blobs": {
+      "solver": "13eecf55657223855b3df2a6bdd09648f02daa03",
+      "independent_price": "848be08d5047a56f47ec0a601946a85b61d2e252"
+    }
+  }
+}
