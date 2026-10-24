@@ -203,6 +203,21 @@ CASES: list[dict[str, Any]] = [
         ],
         "scope_review": "A scoped negative rules out only its declared route and does not discharge positive existence.",
     },
+    {
+        "id": "finite-affine-carrier-parameter-recovery",
+        "queries": [
+            "nilpotentAffineRep_injective",
+            "exact affine semidirect representation R_nil L b T_b rho",
+            "archiveExteriorFrameLift_injective full 16-state frame action faithful",
+        ],
+        "required_refs": [
+            "02_REGISTRY/research/MEMO_A4D_AFFINE_SENSITIVE_SITE_MATTER_LINK.md",
+            "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+            "03_FORMALIZATION/D0/Geometry/A4DNilpotentAffineMatterLift.lean",
+            "03_FORMALIZATION/D0/Geometry/ArchiveExteriorFrameLift.lean",
+        ],
+        "scope_review": "The source owner supplies the affine representation; its compiled finite-carrier application recovers both parameters from equality of complete operators. Search candidates and that algebraic injectivity do not select a physical letter or price.",
+    },
 ]
 
 

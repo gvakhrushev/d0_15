@@ -1463,6 +1463,16 @@ creates no claim, owner, application-acceptance, or C0-status row.
 The updated support-map SHA-256 is
 `ddb09492ec2323a5bda54816d40bd08951c962ed3188da2c755a1c155e78e183`.
 
+The real cold-start suite now includes
+`finite-affine-carrier-parameter-recovery`: an exact Lean theorem-name query,
+an owner-theorem query, and a full-frame-action query find the research owner,
+primary application artifact, and both Lean modules as direct-content
+candidates. The suite found all four expected references in 14/14 scenarios
+(15 total including the source-impact control). This is discovery evidence
+only; the separate compiled declaration query above supplies the actual Lean
+types and trust footprint. The updated runner SHA-256 is
+`1e3724b7aee65aae644399a9769f075d5f3a302b040fd6249068458a59c52cc2`.
+
 Scope is exact: this is faithfulness of the algebraic exterior and nilpotent
 affine representations on the existing four-role, 16-state carrier. It does
 not prove that the single raising query `C†(u)ρ(M)` recovers `M` (that map has
@@ -1501,8 +1511,8 @@ Source SHA-256 values are `ArchiveExteriorFrameLift.lean`
 findings, `check_claim_map_coverage.py` passed, and
 `generate_lean_views.py --check` passed with no stale generated views. The
 focused proof-architecture suite passed 35/35 when invoked as the `tools` test
-module. GitHub CI for the code head `0307b2429ec3b36be1e5c9a7ebab1878e777d1e8`
-passed `guards` (run `40121538756`) and `lean-build` (run `40121538730`); a
-subsequent documentation/metadata-only receipt commit leaves that code
-unchanged. The PR remains OPEN/DRAFT. C0 remains unfrozen and independently
-unaccepted.
+module, and the cold-start suite passed 14/14. GitHub CI for the code head
+`0307b2429ec3b36be1e5c9a7ebab1878e777d1e8` passed `guards` (run
+`40121538756`) and `lean-build` (run `40121538730`); subsequent
+documentation/metadata-only commits leave that code unchanged. The PR remains
+OPEN/DRAFT. C0 remains unfrozen and independently unaccepted.
