@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import pathlib
+import hashlib
 import subprocess
 import tempfile
 import unittest
@@ -244,6 +245,153 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertEqual(view["compiled_claim_reuse_status"], "key_is_not_an_exact_claim_id")
         self.assertEqual([row["id"] for row in view["matches"][0]["declared_applications"]],
                          ["r1-to-o1"])
+
+    def test_result_crosswalk_keeps_compiled_candidates_separate_from_application_acceptance(self) -> None:
+        with tempfile.TemporaryDirectory() as temp:
+            root = pathlib.Path(temp)
+            source_rel = "03_FORMALIZATION/D0/Foo.lean"
+            source = root / source_rel
+            source.parent.mkdir(parents=True)
+            source.write_text("theorem bar : True := True.intro", encoding="utf-8")
+            subprocess.run(["git", "init", "-q"], cwd=root, check=True)
+            subprocess.run(["git", "add", source_rel], cwd=root, check=True)
+            subprocess.run([
+                "git", "-c", "user.name=Test", "-c", "user.email=test@example.com",
+                "commit", "-q", "-m", "pin Lean source",
+            ], cwd=root, check=True)
+            ref = subprocess.check_output(
+                ["git", "rev-parse", "HEAD"], cwd=root, text=True
+            ).strip()
+            pinned_bytes = subprocess.check_output(
+                ["git", "cat-file", "blob", f"{ref}:{source_rel}"], cwd=root
+            )
+            source_sha = hashlib.sha256(pinned_bytes).hexdigest()
+            data = dataset(root)
+            data["assembly"]["results"] = [{
+                "id": "r1", "statement": "Exact vector reconstruction",
+                "owner": "owner", "reported_state": "scoped result",
+                "evidence": [{"ref": ref, "path": source_rel, "sha256": source_sha}],
+            }]
+
+            class InventoryStub:
+                @staticmethod
+                def run_module_inventory(modules: list[str], import_root: str,
+                                         include_proof_details: bool = True):
+                    self.assertEqual(modules, ["D0.Foo"])
+                    self.assertEqual(import_root, "D0.All")
+                    self.assertFalse(include_proof_details)
+                    return ([{
+                        "name": "D0.Foo.bar", "module": "D0.Foo",
+                        "source_path": source_rel,
+                        "elaborated_type": "True", "binders": [],
+                        "conclusion_whnf": "True", "type_dependencies": ["True"],
+                        "proof_dependencies": ["True.intro"], "axioms": [],
+                        "declaration_ranges": {"declaration": {"start": {"line": 1}}},
+                        "proof_details_status": "omitted_by_bulk_mode",
+                    }], "collector-sha", "lean-source-sha")
+
+                @staticmethod
+                def run_inventory(names: list[str], import_root: str):
+                    self.assertEqual(names, ["D0.Foo.bar"])
+                    self.assertEqual(import_root, "D0.All")
+                    return ([{
+                        "name": "D0.Foo.bar", "exists": True, "module": "D0.Foo",
+                        "elaborated_type": "True", "binders": [], "conclusion_whnf": "True",
+                        "type_dependencies": ["True"], "proof_dependencies": ["True.intro"],
+                        "axioms": [],
+                        "declaration_ranges": {"declaration": {"start": {"line": 1}}},
+                    }], "detail-collector-sha", "lean-source-sha")
+
+                @staticmethod
+                def candidate_names(module: str, atom: str) -> list[str]:
+                    return [atom] if atom.startswith("D0.") else [f"{module}.{atom}"]
+
+                @staticmethod
+                def module_source_path(module: str | None) -> str | None:
+                    return source_rel if module == "D0.Foo" else None
+
+            view = proof.result_declaration_crosswalk_view(
+                data, InventoryStub, result_id="r1"
+            )
+
+        self.assertEqual(view["evidence_crosswalks"][0]["pin"]["pin_status"], "verified")
+        self.assertEqual(
+            view["evidence_crosswalks"][0]["pin"]["current_source_status"], "matches_pin"
+        )
+        self.assertEqual(view["compiled_declarations"][0]["elaborated_type"], "True")
+        self.assertEqual(view["compiled_declarations"][0]["proof_details_status"],
+                         "collected_for_exact_claim_locator")
+        self.assertEqual(view["claim_locator_candidates"][0]["claim_id"], "CLM-1")
+        self.assertEqual(view["formal_support_candidates"][0]["lean_module"], "D0.Foo")
+        self.assertEqual(view["declaration_disposition"], "candidate")
+        self.assertEqual(view["semantic_relation_status"], "unresolved")
+        self.assertFalse(view["acceptance_inferred"])
+        self.assertEqual(view["declared_relations"]["declared_applications"][0]["review"]["state"],
+                         "accepted")
+
+    def test_result_crosswalk_stale_current_source_is_citation_only(self) -> None:
+        with tempfile.TemporaryDirectory() as temp:
+            root = pathlib.Path(temp)
+            source_rel = "03_FORMALIZATION/D0/Foo.lean"
+            source = root / source_rel
+            source.parent.mkdir(parents=True)
+            source.write_text("theorem bar : True := True.intro", encoding="utf-8")
+            subprocess.run(["git", "init", "-q"], cwd=root, check=True)
+            subprocess.run(["git", "add", source_rel], cwd=root, check=True)
+            subprocess.run([
+                "git", "-c", "user.name=Test", "-c", "user.email=test@example.com",
+                "commit", "-q", "-m", "pin Lean source",
+            ], cwd=root, check=True)
+            ref = subprocess.check_output(
+                ["git", "rev-parse", "HEAD"], cwd=root, text=True
+            ).strip()
+            pinned_bytes = subprocess.check_output(
+                ["git", "cat-file", "blob", f"{ref}:{source_rel}"], cwd=root
+            )
+            pinned_sha = hashlib.sha256(pinned_bytes).hexdigest()
+            source.write_text("theorem bar : False := by trivial", encoding="utf-8")
+            data = dataset(root)
+            data["assembly"]["results"] = [{
+                "id": "r1", "evidence": [{"ref": ref, "path": source_rel,
+                                             "sha256": pinned_sha}],
+            }]
+
+            class NeverCompile:
+                @staticmethod
+                def run_module_inventory(*_args, **_kwargs):
+                    raise AssertionError("stale working sources must not be called current declarations")
+
+                @staticmethod
+                def candidate_names(module: str, atom: str) -> list[str]:
+                    return [atom] if atom.startswith("D0.") else [f"{module}.{atom}"]
+
+            view = proof.result_declaration_crosswalk_view(
+                data, NeverCompile, result_id="r1"
+            )
+
+        self.assertEqual(view["evidence_crosswalks"][0]["pin"]["pin_status"], "verified")
+        self.assertEqual(view["evidence_crosswalks"][0]["pin"]["current_source_status"],
+                         "changed_since_pin")
+        self.assertEqual(view["compiled_declarations"], [])
+        self.assertEqual(view["declaration_disposition"], "unresolved")
+
+    def test_result_crosswalk_all_summary_keeps_results_without_lean_evidence_unresolved(self) -> None:
+        data = dataset()
+
+        class NeverCompile:
+            @staticmethod
+            def run_module_inventory(*_args, **_kwargs):
+                raise AssertionError("non-Lean evidence must not trigger Lean enumeration")
+
+            @staticmethod
+            def candidate_names(module: str, atom: str) -> list[str]:
+                return [atom] if atom.startswith("D0.") else [f"{module}.{atom}"]
+
+        view = proof.result_declaration_crosswalk_view(data, NeverCompile)
+        self.assertEqual(view["result_count"], 1)
+        self.assertEqual(view["results"][0]["lean_evidence_count"], 0)
+        self.assertEqual(view["results"][0]["declaration_disposition"], "unresolved")
+        self.assertEqual(view["results"][0]["semantic_relation_status"], "unresolved")
 
     def test_text_search_returns_candidate_not_accepted_relation(self) -> None:
         with tempfile.TemporaryDirectory() as temp:

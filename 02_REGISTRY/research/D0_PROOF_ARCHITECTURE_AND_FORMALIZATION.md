@@ -51,7 +51,7 @@ A proof dependency is not an application; a similar name is not proof; indexing 
 
 ClaimMap.lean stores theoremName as String and explicitly says it is metadata. check_claim_map_coverage.py and formalization_debt_audit.py are structural checks, not semantic theorem-to-prose verification. Add a semantic layer over current authorities; do not create another claim, assumption, status, acceptance, queue, or obligation registry.
 
-The declaration extractor queries a selected compiled public import (`D0.All` by default) and records full name, raw elaborated type, the telescope binders with weak-head-normalized type/implicitness/proposition status, the weak-head-normalized conclusion after opening the binders, type/proof dependencies, transitive axiom footprint, source declaration range/module, snapshot, toolchain, and public import path. Raw type and reduced conclusion are retained together so an ordinary definition alias cannot hide a trivial status proposition or erase an actual premise from the displayed conclusion. Before extraction it asks Lake to build the selected import root under the same shared lock; the source digest is checked across both build and query, so an old `.olean` cannot be reported against current project source. The digest includes repository-owned Lean files and the Lake configuration with line endings normalized, while `.lake` package checkouts are excluded and pinned through `lake-manifest.json`. `--all-claims` retains every current claims.csv row, including unresolved theorem locators, and batch-resolves exact candidates in one imported environment; this produces a reproducible crosswalk candidate, not semantic coverage. This is exact elaborated evidence, not a normalized semantic equivalence proof. A reviewer binds that type to the source claim's object, domain, quantifiers, and assumptions. Load-bearing applications need compiled Lean adapters over actual objects and maps; a field that assumes the desired conclusion is not an adapter.
+The declaration extractor queries a selected compiled public import (`D0.All` by default) and records full name, raw elaborated type, the telescope binders with weak-head-normalized type/implicitness/proposition status, the weak-head-normalized conclusion after opening the binders, type/proof dependencies, transitive axiom footprint, source declaration range/module, snapshot, toolchain, and public import path. Raw type and reduced conclusion are retained together so an ordinary definition alias cannot hide a trivial status proposition or erase an actual premise from the displayed conclusion. Before extraction it asks Lake to build the selected import root under the same shared lock; the source digest is checked across both build and query, so an old `.olean` cannot be reported against current project source. The digest includes repository-owned Lean files and the Lake configuration with line endings normalized, while `.lake` package checkouts are excluded and pinned through `lake-manifest.json`. `--all-claims` retains every current claims.csv row, including unresolved theorem locators, and batch-resolves exact candidates in one imported environment; `--module MODULE` enumerates declarations owned by that module, while `--all-d0` enumerates D0-owned declarations reachable through the selected import. Bulk module enumeration can omit proof-term dependencies and axiom closures with `--omit-proof-details`; the crosswalk uses that bounded mode for source co-location candidates, then requests full details for exact claim-locator matches. These produce reproducible crosswalk candidates, not semantic coverage. This is exact elaborated evidence, not a normalized semantic equivalence proof. A reviewer binds that type to the source claim's object, domain, quantifiers, and assumptions. Load-bearing applications need compiled Lean adapters over actual objects and maps; a field that assumes the desired conclusion is not an adapter.
 
 The collector has run successfully on `D0.Foundation.VerificationCore.verification_core` and the new `D0.Geometry.archiveJuliaRaisingQuery_vacuum_exterior`. Both are found in the compiled environment with actual types, binders, proof/type dependencies, source ranges, and axiom footprints. The verification theorem retains its quantified `FutureExecution` and `TheoryVerification` inputs and is located at lines 227–240 of its source. The Eq. (26) model theorem is located at lines 50–57 of `ArchiveJuliaRaisingOperatorReadout.lean`; its exact type is `∀ u M, archiveFockExteriorEquiv (archiveJuliaRaisingQuery u M vacuum) = ι ℝ u`, with `u : RoleSpace` and `M : RoleSpace ≃ₗ[ℝ] RoleSpace`. The collector reports `Classical.choice`, `Quot.sound`, and `propext` for both this theorem and its existing creator-on-vacuum lemma. These are exposed dependencies of the existing finite-carrier representation; this checkpoint does not claim an axiom-free kernel. The Eq. (26) inventory result was captured at HEAD `b2b73963991bb18c42766ae753bef1c70314c9ab` with `worktree_dirty=true`, Lean source digest `8993ecd144677720658cb3187ba737cb512b7c20a27d541ac93cc212b2b28f3f`, and collector script SHA-256 `4d4edc04deec3e2ad185e9fcf1ba3b7e63bfb16ba1fbc3d9905d253aa2d8ef11` under Lean 4.30.0.
 
@@ -59,7 +59,7 @@ Search is deterministic and bounded: exact IDs/names, aliases, sections, declare
 
 `reuse --lean CLAIM-ID` joins one exact claims.csv row to its theorem-name candidates, declarations actually present in the selected compiled Lean import, and their reported proof dependencies. It also reports exact dependency-name intersections with other claim locators as candidate crosswalk edges. This compiled Lean evidence remains separate from declared assembly application edges, conceptual presuppositions, and semantic acceptance.
 
-The read-only `tools/proof_architecture.py` view composes current claims, registered assumptions, formal-support locators, aliases, assembly contracts/results/applications/attempts, conceptual presupposition edges, and bounded full-text candidates. Claims expose their registered assumption rows separately from applications and conceptual edges. Commands are `search`, `show`, `why`, `reuse`, and `impact`; `show NAME --lean --import-root MODULE` calls the elaborated declaration collector. Every answer includes source digests and a snapshot commit. Conceptual edges, assumption links, alias lookup, text matches, declared application edges, and elaborated Lean facts are distinct output kinds. `why` reports unknown hypotheses separately from explicitly empty declarations and distinguishes unmapped hypotheses, unknown targets, and invalid map entries. `impact KEY` follows only currently declared evidence/application refs; `impact --base REF` delegates to the existing assembly diff impact. Neither form claims a complete global semantic impact graph.
+The read-only `tools/proof_architecture.py` view composes current claims, registered assumptions, formal-support locators, aliases, assembly contracts/results/applications/attempts, conceptual presupposition edges, and bounded full-text candidates. Claims expose their registered assumption rows separately from applications and conceptual edges. Commands are `search`, `show`, `why`, `reuse`, `crosswalk`, and `impact`; `show NAME --lean --import-root MODULE` calls the elaborated declaration collector. `crosswalk RESULT-ID` verifies pinned Lean evidence blobs, compares them with current source, and enumerates declarations from the compiled `D0.All` environment only when the bytes match. It reports compiled types and source ranges for co-located declarations, full proof dependencies and axiom footprints for exact claim-locator matches, and formal-support module locators as candidates. `crosswalk` without a key gives a bounded all-result summary without declaration enumeration. Every answer includes source digests and a snapshot commit. Conceptual edges, assumption links, alias lookup, text matches, declared application edges, and elaborated Lean facts are distinct output kinds. `why` reports unknown hypotheses separately from explicitly empty declarations and distinguishes unmapped hypotheses, unknown targets, and invalid map entries. `impact KEY` follows only currently declared evidence/application refs; `impact --base REF` delegates to the existing assembly diff impact. Neither form claims a complete global semantic impact graph.
 
 Exact GitHub `blob/<commit>/<path>` links are now resolvable when their commit objects are already present in the local repository: the search derives the blob from `commit:path`, reads it, and returns the derived blob with direct line/section evidence. Explicit commit/path/blob references are checked against the expected blob. Git lazy fetching is disabled for this lookup, so unavailable external commits remain citation-only rather than causing a network fetch. The caller distinguishes a direct pinned source from a path mention and from a local filename match.
 
@@ -77,11 +77,11 @@ Initial candidate sources and crosswalk inputs:
 - The 31 assumption IDs are premise crosswalk inputs. Preserve the actual quantified hypotheses on results; do not count an assumption row as a result by default.
 - The 180 formal_support.csv rows are proof-support crosswalk inputs and candidate declaration locators, not 180 independently accepted results.
 - The 58 aliases are lookup edges: resolve the two canonical-target aliases and inspect the 56 legacy first_reference values for missing assertions.
-- The 54 assembly result pointers still require reconciliation to a claim or exact source:<commit>:<path>#<section> key. They are not already reconciled. Obligations, results, evidence, and reviewed application edges remain distinct; the application file still lacks a canonical claim-ID crosswalk.
+- The 54 assembly results already carry pinned evidence records with commit, path, and SHA-256. The missing crosswalk is from each result to a C0 mathematical unit (a claim ID or exact source:<commit>:<path>#<section> key), and to any relevant public declaration or application disposition. Obligations, results, evidence, and reviewed application edges remain distinct; the application file still lacks a canonical claim-ID crosswalk.
 - Enumerate theorem-like public declarations reachable through the compiled D0.All import as candidates. Public helpers, generated declarations, definitions, and instances must be classified; inclusion in an import closure alone does not make them reusable mathematical results.
 - Bounded candidates from 04_CERTIFICATES/ and 05_EXPERIMENTS/ are exact computations, certificates, constructions, and negative controls found on cited or otherwise in-scope paths. A missing mathematical-consumer edge is a reconciliation gap, not an exclusion reason; exclude raw logs and exploratory runs without a mathematical assertion.
 - The assembly attempts (4), anti_substitutions (25), synthesis (8), and source_fork_reconciliations (1 record pointing to two child PRs and four result IDs) are retrieval, provenance, and countercontrol inputs. They inform unit resolution and expose crosswalk gaps, but do not become extra result units merely by being indexed.
-- Bound the original raw response terminal to its exact existing contract key: consumer RAW-216 → obligation raw_response_terminal → interface raw-216-v1. Preserve the complete interface: carrier = original fixed smooth Q_h with genuine Lorentz quotient and independently fixed smooth τ; action = original designated geometric Euler response and declared source equations; variations = exact joint connection and metric source equations; source = original #216 comparator Xi(Q_h,K_h)=h²τ(hx); normalization = h⁻² times the unweighted raw ℓ1 sum over h⁻⁴ sites; refinement = exact samples of the same g and τ on a refining sequence in the admitted log chart; scope = original response terminal. The exact owner source path/blob/slice is not yet pinned and remains a freeze blocker. Preserve its quantifiers and owner; do not import the whole historical corpus or claim this architecture closes the terminal.
+- Bound the original raw response terminal to its exact existing contract key: consumer RAW-216 → obligation raw_response_terminal → interface raw-216-v1. Preserve the complete interface: carrier = original fixed smooth Q_h with genuine Lorentz quotient and independently fixed smooth τ; action = original designated geometric Euler response and declared source equations; variations = exact joint connection and metric source equations; source = original #216 comparator Xi(Q_h,K_h)=h²τ(hx); normalization = h⁻² times the unweighted raw ℓ1 sum over h⁻⁴ sites; refinement = exact samples of the same g and τ on a refining sequence in the admitted log chart; scope = original response terminal. Exact comparator source pin: merged PR #216, commit 5523d8f679c1ea02f9b73d757c81649740010d0a, file 02_REGISTRY/research/MEMO_A4D_J2_SMOOTH_RESONANCE_CLOSURE.md, blob 21b768681cd4bf12b9dda22fc86c43d6b831bbec, source key 5523d8f679c1ea02f9b73d757c81649740010d0a:02_REGISTRY/research/MEMO_A4D_J2_SMOOTH_RESONANCE_CLOSURE.md#Sections 4, 7-9. Sections 4 and 7 give the smooth approximate sheet and residual; Section 8 leaves the uniform full coupled normal rescue open; Section 9 states the conditional response/reconstruction. This pins the provenance of K_h^sm only. It does not provide an exact raw-terminal root sequence or close RAW-216; the full interface and its fixed source, joint variations, unweighted norm, refinement, and quantifiers remain as specified above. Preserve its quantifiers and owner; do not import the whole historical corpus or claim this architecture closes the terminal.
 - Include unrepresented book assertions and published research explicitly cited by books, active registry, assembly, and selected current GR sources. Key each by exact source commit/path/section or equation. For #334, the task-pinned slice gate is now read and pinned: published commit fe5cf335da04cac14e50407b03f98b96be17dc52, path 02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md, blob 1c8d59e5533b443d9a015dc4512cfbc160ae7e62; read §§8.4–8.5, equations (26)–(31), and §6.25, equations (13br1)–(13br2). The owner states `DR DΦ=I` on its full tangent space and preserves all 16 coframe and 24 proper-Lorentz link directions, with observer jets retained when the observer changes; it explicitly exceeds null/pp-wave-ansatz variations. По-русски: полный касательный срез содержит все 16 направлений кофрейма и 24 proper-Lorentz link-направления; jets наблюдателя сохраняются при его изменении, а вариации не ограничены null/pp-wave ansatz. Its concrete consumer is pinned in the same published snapshot: 02_REGISTRY/research/A4D_EXACT_AF_RADIAL_COFRAME_EQUIVALENCE_NONLINEAR_SPIN2_2026_10_18.md, blob 734e21ae6bc04ff3446ad15858936d417fdd2e55, §5.1. That application uses the recovered geometry to evaluate the existing star density from Julia queries and transfer its finite cubic response, conditional on the stated addressed-access, work-return, and strict-chart assumptions. This is not evidence of physical admission or mandatory price selection. The reusable mathematical scope is reconstruction of the typed native Julia raising-operator geometry on the stated charts and its full tangent pullback; it does not identify the reconstructed geometric functional with the native physical price/source or accept/retire #334.
 
 Book/section pairs are not unique units: 49 pairs contain 192 claims. Multiple theorem strings and repeated theorem atoms are review flags, not automatic merges. The starting snapshot has 715 claim rows with a Lean module, 713 with a theorem string, and 360 with semicolon-separated theorem names. The bulk locator inventory contains 889 claim rows, 2,702 theorem-atom mappings, 5,487 unique candidate Lean names, and 176 rows without a theorem locator. Exact-name resolution against the elaborated `D0.All` environment is complete for the pinned snapshot recorded below. An independent scope review found 174 rows without a module, 176 without a theorem string, and 23 theorem atoms shared across IDs. Source-unit reconciliation, semantic review, and independent C0 acceptance remain open; these queues are not automatic proof debts or exclusions.
@@ -247,6 +247,14 @@ The initial broad collector exposed Lean's code-generator recursion limit when o
 The completed `--all-claims --resolution-only` run built and imported `D0.All` at Lean 4.30.0 and resolved all 5,487 unique candidates. It found 1,823 declarations and 3,664 misses; all found declarations mapped to a source path. Of the 2,526 theorem atoms with candidate names, 1,858 had at least one declaration in the compiled public environment. This includes 471 of 889 claim rows with at least one available locator; 176 theorem atoms had no candidate name to query. These are exact locator-resolution counts and carry no claim-semantic or C0-coverage judgment.
 
 The complete machine-readable result is [claim_candidate_resolution.json](sources/d0_proof_architecture_formalization_2026-10-24/claim_candidate_resolution.json), SHA-256 `C9D244C8D8B0FEA53B9056788981C3E8E16EF6401A7E788E827B704F2DC3AF1B`. The JSON records source snapshot `5c4f77c2fb440c8eb60133b41402d73183b2a92e`, the then-published PR tree `710cce783aa66c479505d95e2f9f841247ed2b73` at head `1701ec750376ba13058e3ea3c4f101c1462a958d`, Lean source digest `dd056ebca233774b20e628d8b7efd3f94e344b18d0fa07e8abf973e229e1857d`, collector SHA-256 `021841d09e9e2ba30eff014a4b2719dd83f4b28883f66081e6806e669efd5fd8`, and public import `D0.All`. Those local and published trees matched when the inventory ran. The subsequent artifact-only publication advanced the PR to `12eae2429289a8663bc3925ba2bdeeeb17d0585e` without changing its claims, inventory/build scripts, toolchain, Lake inputs, or `D0/All.lean`.
+
+### Current parent-namespace candidate refresh
+
+The later locator refresh expands each module locator through its enclosing namespaces before the `D0.` fallback. This catches exact declarations such as `D0.Foundation.omega8_center_collapse` when the claims row points to source module `D0.Foundation.Omega8Center`. The expansion is a candidate-name rule; compiled name resolution remains exact, and no claim/application relation is accepted from it.
+
+On source snapshot `b6e624b3473682758d0fe98c48313243db8f62c8` with `worktree_dirty=true`, the 889-row `claims.csv` SHA-256 is `e986bcc75fd6a2c84a80ee61b639482af1b21464fcfe4c961491b4a97bb9037f`. The request contains 2,741 theorem-atom mappings and 8,426 candidate references, deduplicated to 8,294 exact candidate names. The compiled `D0.All` resolution-only run found 2,497 names and 5,797 exact misses; 2,537 theorem-atom mappings have at least one resolved declaration, across 705 claim rows. The 176 rows with no theorem locator remain visible. These counts use an updated claims source and candidate-generation rule, so they are not a coverage percentage or a direct continuation of the older 5,487-name snapshot.
+
+The refreshed inventory is [claim_candidate_resolution_parent_namespace.json](sources/d0_proof_architecture_formalization_2026-10-24/claim_candidate_resolution_parent_namespace.json), SHA-256 `a3ab4d9ec0ad5a77f041e2e88fa1d7d0b3a740f9ddebd8016bae87918e828a65`. It records Lean source digest `4b760603dd653cf0354beacd1d78da0879c570b744059c37115ec2ac2d8936ac`, collector SHA-256 `24289b940bc867e4ccea28cbd9771033669662dc5017f53e7a14ad780cadd30d`, toolchain Lean 4.30.0, `D0.All`, the claims source SHA, and dirty-worktree state. The generated inventory checks that every requested candidate receives exactly one response; all found names have an owning module and source path. The run does not bind claims to prose or freeze C0.
 
 An independent locator-integrity review at PR head `12eae2429289a8663bc3925ba2bdeeeb17d0585e` recomputed all 2,702 claim/theorem mappings from the 889 source rows and confirmed exact agreement. It verified 5,575 references against 5,487 ordered unique response records, including all 25 semicolon-separated module rows; all 1,823 found declarations have valid module-derived paths across 426 source files. The reviewer reproduced the collector hash and Lean source digest and checked the 128-name maximum (43 batches, last batch 111). The reviewed snapshot is not an ancestor of the PR head, but all relevant source inputs and digests match. This accepts locator expansion, completeness, ordering, path integrity, and provenance only; it does not establish semantic claim coverage or C0 acceptance. C0 remains unfrozen and has no coverage denominator or acceptance.
 
@@ -673,3 +681,98 @@ SHA-256 for the finite-step source and its registry views:
 | `03_FORMALIZATION/D0/TheoremLedger/ClaimMap.lean` | `c1a1a4757a5409973a9286b346f761d0166f9300d23702184a4fc7a0db1f16e1` |
 | `02_REGISTRY/claims.csv` | `43ae5a73034941e029a0284aec54352f9bb24ad2cf6d7d5cbb7b71f0fa3a3ff1` |
 | `02_REGISTRY/formal_support.csv` | `e90d167d4b719783b90f0e5e24d848c39fa38bfcce6d09bb40599fad8cfa0709` |
+### 24 October 2026 Perron refinement scope correction (independent review pending)
+
+The published source snapshot for this correction is execution PR #402 at
+`b6e624b3473682758d0fe98c48313243db8f62c8`. The current Lean declarations construct, for every
+Fibonacci path-count level, a finite real matrix refinement map and prove its injectivity, unital
+ring-homomorphism, and star-preservation properties. The specified real-valued Perron functional is
+transported exactly, and the resulting algebraic pairing is preserved. The generic
+`gns_refinement_isometry` theorem is conditional on supplied multiplication, star, map, and
+trace-preservation facts; it does not construct a state or Hilbert space.
+
+The retained formal boundary excludes positivity or normalization as a state, a complex AF C*-inductive
+limit, uniqueness of a trace on that limit, the GNS quotient and Hilbert completion, an isometry between
+GNS Hilbert spaces, and Dixmier normalization. The historical broader tower assertion remains open under
+`D0-VNEXT-AF-GNS-ISOMETRY-OWNER-001`; the existing owner IDs and the separate scale and comparison-map
+owners are preserved.
+
+The prior `vp_vnext_perron_gns_tower.py` association is detached from both AF/GNS claim rows. Its checks
+are floating-point scalar identities and a separate normalized `M₂(ℝ) → M₄(ℝ)` example; the hardcoded
+negative-control flags do not verify the constructed Fibonacci tower. The legacy script remains at its original path, unedited for provenance, but is no longer linked as evidence for the narrowed formal result.
+
+The related dimension certificate proves that no finite Fibonacci level has dimension 33. That blocks
+an equal-dimensional carrier identification only. It does not prove the absence of an arbitrary or
+canonical comparison map without a specified map class and compatibility conditions. Accordingly, the
+formal owner and primitive entries retain the dimension-separation result and preserve the broader
+`PRIM-COMPARISON-MAP-XI-N` question as open. The two registered scale/Xi edges are necessary downstream
+obligations and are not an exhaustive decomposition of the full Hilbert-GNS/Dirac target.
+
+**Review state:** the exact scope correction is staged in the current execution branch, but the required
+independent acceptance has not yet been received. Do not treat this C0 reclassification as complete until
+that review accepts the corrected source, dependent claim rows, detached certificate associations, and
+primitive map. The broader GNS construction and all unrelated physical premises remain open.
+### 24 October Bratteli trace-uniqueness scope and finite composition
+
+Independent scope review found that D0-BRATTELI-FIBONACCI-REFINEMENT-OWNER-001 still described the
+existence of one positive Perron vector as uniqueness of a normalized AF/cylinder trace. The claim row
+now retains the same owner ID and is PROOF-TARGET for that all-level trace statement. Its formalized
+slice records incidence recovery, the quadratic identity, the initial path-count step, and one explicit
+positive left-Perron vector. The separate D0-FIBONACCI-PERRON-PROFILE-CANONICITY-001 theorem proves
+uniqueness of the normalized positive two-component eigenprofile; a new Lean application in the
+Bratteli module consumes that result without identifying the vector theorem with uniqueness of AF
+traces.
+
+The existing high-level finite tower claim now points to the compiled
+finite_renormalization_refinement_composition: it binds the incidence recovered from the language,
+the actual all-level finite-real matrix refinement and its specified compatible functional, the
+normalized Perron profile theorem, and the scale-ratio theorem. Its scope excludes a complex AF limit,
+uniqueness of all compatible AF traces, GNS completion, Hilbert-space isometry, and the physical
+inductive spectral triple. The independent all-level compatibility derivation remains in
+A4D_NATIVE_AF_TRACE_PREPARATION.md and is still to be formalized under the retained Bratteli owner.
+
+The canonical BOOK_02 and BOOK_05 summaries now state these boundaries. The compiled narrow build of
+D0.Geometry.FibonacciBratteliRefinement passed (2,952 Lake jobs) after the new application and
+composition were added. The refreshed ClaimMap lists both the finite owner result and its reused
+profile application; the high-level finite composition is now an elaborated declaration rather than
+a metadata-only cross-reference. Independent follow-up review accepted the corrected scope: the exact
+certificate establishes only the checked transitions N=0..3, and both the all-N theorem and canonical
+selection/transport remain open. The theorem docstring in D0.Algebra.FibonacciAFTower was narrowed to
+state scalar Perron weight/functional identities, with no trace-state or AF trace-uniqueness claim;
+its narrow build passed (2,947 Lake jobs). This review accepts these wording corrections only and does
+not accept the broader AF trace or spectral-triple owners. The current full-source integration remains
+pending.
+
+### 24 October pinned assembly-to-Lean declaration crosswalk
+
+`tools/proof_architecture.py crosswalk` now produces a read-only summary over all 54 assembly results;
+`crosswalk RESULT-ID` verifies each Lean evidence blob with Git, compares its exact bytes with the current
+source, and queries the corresponding owner module through the compiled `D0.All` environment. The
+declaration inventory reads each module's imported module data directly instead of scanning every
+constant in the full import. It reports elaborated types, binders, type dependencies, source ranges,
+declaration kind, and internal-name status. For exact claims.csv name-locator matches it also extracts
+proof dependencies and axiom footprints. Other co-located declarations are labeled as candidates and
+mark bulk-omitted proof details explicitly. Parent namespace candidates allow a source module locator to
+resolve a theorem declared in its enclosing namespace; they remain exact-name locators, not application
+edges.
+
+In the current applications.json snapshot, all 13 pinned Lean evidence blobs verify against their
+recorded Git commit/path/SHA-256. Eleven working-tree files still match those pins; ten are direct
+`03_FORMALIZATION/D0` module sources across nine distinct modules. The two remaining pins are archived
+source-only references: the #334 cost-information certificate is not present at its pinned path in the
+current tree, and the future-MDL theorem file has changed since its recorded commit. They remain
+citation-only until a matching current source or another reviewed bridge is supplied. The other 45
+assembly results have no direct pinned Lean evidence and stay unresolved in this declaration crosswalk.
+
+The detailed result `original-q8-spin-sheet-current-fullstep-boundary` enumerates 30 declarations in its
+two matching current files (`Omega8Center.lean`: 14; `GoldenCoherentMemory.lean`: 16). Parent-namespace
+resolution finds the exact claim locator `D0-OMEGA8-CENTER-001` at
+`D0.Foundation.omega8_center_collapse`, a theorem at lines 59–69. The compiled theorem has three
+`native_decide`-generated axiom dependencies. This is a declaration/claim locator candidate only: the
+result's semantic relation remains unresolved, and no result-to-claim acceptance is inferred. The
+Q8 result owner, source scope, and physical admissions remain unchanged.
+
+The proof-architecture and Lean-inventory suites pass 43/43 tests. The live `D0.All` declaration
+extraction used Lean source digest `4b760603dd653cf0354beacd1d78da0879c570b744059c37115ec2ac2d8936ac`;
+the module and exact-detail collector scripts are pinned in the generated output. This crosswalk closes
+no C0 classification or physical assumption, and the exact C0 package remains unaccepted.

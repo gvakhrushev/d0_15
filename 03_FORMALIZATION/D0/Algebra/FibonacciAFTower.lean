@@ -11,29 +11,20 @@ set_option linter.unusedVariables false
 /-!
 # D0.Algebra.FibonacciAFTower
 
-Canonical Fibonacci AF-algebra inductive limit and Perron-Frobenius trace state.
-Integration of the VNext algebraic tower into the permanent CORE formalization.
+Finite-real Fibonacci Bratteli matrix levels and their Perron-weighted trace pairing.
 
-Vector 1 resolution (Closing the Dixmier trace / AlphaProfiniteTowerNoGo frontier):
-1. The golden Bratteli diagram has incidence matrix $M_\varphi = \begin{pmatrix} 1 & 1 \\ 1 & 0 \end{pmatrix}$.
-2. The finite-dimensional $C^*$-algebras $A_N = M_{d_1(N)}(\mathbb{C}) \oplus M_{d_2(N)}(\mathbb{C})$ have dimensions
-   growing as Fibonacci numbers squared: $\dim A_N = a^2 + b^2 \in \{2, 5, 13, 34, 89, \dots\}$.
-3. The right-Perron eigenvector $v = (\varphi, 1)$ satisfies $M_\varphi v = \varphi v$, which is
-   the characteristic golden equation $\varphi^2 = \varphi + 1$.
-4. The trace vectors $t_N = \varphi^{-N} v$ satisfy the inductive consistency relation:
-   $$M_\varphi t_{N+1} = t_N \iff \tau_{N+1} \circ \iota_N = \tau_N$$
-   which guarantees the existence of a UNIQUE canonical trace state $\tau$ on the inductive limit AF-algebra
-   $\mathcal{A}_\infty = \varinjlim A_N$.
-5. The GNS representation $(\mathcal{H}_\tau, \pi_\tau)$ forms an isometric tower with canonical
-   embeddings $J_N : \mathcal{H}_N \to \mathcal{H}_{N+1}$ without requiring external Feshbach cutoffs.
+This module defines the finite real matrix products at each Fibonacci path-count
+level and constructs the refinement map `(A,B) ↦ (diag(A,B), A)`. It proves the
+map's ring, injectivity, star, and unit properties, exact transport of the
+specified real-valued functional, and preservation of its algebraic pairing.
+The generic `gns_refinement_isometry` lemma is only a conditional pairing
+identity for supplied multiplication, star, map, and trace operations.
 
-This module formalizes:
-- The Bratteli incidence and dimension growth.
-- The Perron trace compatibility identities.
-- The GNS inner product isometry under trace-preserving inclusions.
-- The unique trace state normalization theorem.
+This module does not define a complex AF C*-inductive limit or a GNS quotient
+and completion. Positivity and normalization as a state, uniqueness of a trace
+on an inductive limit, a Hilbert-space isometry, and Dixmier trace normalization
+remain open under the existing scientific owner.
 -/
-
 namespace D0.Algebra.FibonacciAFTower
 
 open Matrix D0
@@ -77,9 +68,9 @@ theorem phi_ne_zero : phi ≠ 0 := ne_of_gt (by unfold phi; positivity)
 theorem perron_eigenvalue_relation : phi * phi = phi + 1 := by
   rw [← pow_two]; exact phi_sq
 
-/-- Consistency of the Perron trace state under inductive Bratteli inclusion:
-$M_\varphi t_{N+1} = t_N$ reduces to the scalar identities $1 + \varphi^{-1} = \varphi$
-and $\varphi^{-1} \cdot \varphi = 1$. -/
+/-- Perron weight/functional compatibility identities: the proved scalar identities
+`1 + phi⁻¹ = phi` and `phi⁻¹ * phi = 1`. These do not define a trace state or
+prove uniqueness of a trace on the AF inductive limit. -/
 theorem perron_trace_consistency :
     1 + phi⁻¹ = phi ∧ phi⁻¹ * phi = 1 := by
   have hp : phi ≠ 0 := phi_ne_zero
@@ -275,9 +266,9 @@ theorem fibonacciAFRefinement_trace_preserving (n : ℕ) (z : FibonacciAFLevel n
           (phi⁻¹ * (phi * (Matrix.trace A + Matrix.trace B) + Matrix.trace A)) := by ring
     _ = (phi⁻¹) ^ n * (phi * Matrix.trace A + Matrix.trace B) := by rw [hstep]
 
-/-- The canonical GNS isometry: any trace-preserving `*`-algebra inclusion $\iota : A \to B$
-induces an isometric embedding of the GNS Hilbert spaces:
-$\langle \iota(x), \iota(y) \rangle_{N+1} = \langle x, y \rangle_N$. -/
+/-- Conditional algebraic pairing identity. Given supplied multiplication and star operations, a map
+that preserves them, and functionals that agree along the map, the displayed pairings agree. This
+does not construct a positive state, a GNS quotient or completion, or a Hilbert-space isometry. -/
 theorem gns_refinement_isometry {A B : Type*} [Mul A] [Mul B] [Star A] [Star B]
     (tauA : A → ℝ) (tauB : B → ℝ) (iota : A → B)
     (hmul : ∀ x y : A, iota (x * y) = iota x * iota y)
@@ -301,13 +292,12 @@ theorem fibonacciAFRefinement_pairing (n : ℕ) :
     (by intro x; exact fibonacciAFRefinementHom_star n x)
     (fibonacciAFRefinement_trace_preserving n)
 
-/-- **D0-FIBONACCI-AF-TOWER-OWNER-001 (CORE-FORMALIZED).**
-The inductive limit of the Fibonacci AF-algebra admits a unique canonical trace state $\tau$:
-1. The algebra dimensions are strictly increasing: $\dim A_N \in \{2, 5, 13, 34, 89, \dots\}$;
-2. The Perron-Frobenius trace vectors satisfy exact inductive compatibility $1 + \varphi^{-1} = \varphi$;
-3. Every step in the tower is a GNS isometry;
-4. The trace state automatically weighs the $k$-th level by $\varphi^{-k}$, closing the Dixmier trace
-   normalization without an extrinsic cutoff. -/
+/-- **D0-FIBONACCI-AF-TOWER-OWNER-001 (CORE-FORMALIZED finite-real scope).**
+This bundled theorem records the initial path-count dimensions, golden scalar identities, and the
+two-step incidence-matrix identity. The finite-real refinement map, transported functional, and
+pairing are proved by the separate declarations in this module. None of these results constructs a
+complex AF C*-inductive limit, a positive normalized trace state, a GNS Hilbert space, or a Dixmier
+normalization. Those broader claims remain open under the same owner. -/
 theorem fibonacci_af_tower_owner :
     (dimA 0 = 2 ∧ dimA 1 = 5 ∧ dimA 2 = 13 ∧ dimA 3 = 34 ∧ dimA 4 = 89) ∧
     (1 + phi⁻¹ = phi ∧ phi⁻¹ * phi = 1) ∧

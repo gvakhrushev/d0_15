@@ -898,6 +898,312 @@ def reuse_view(dataset: dict[str, Any], key: str, *,
     return result
 
 
+def _safe_repository_path(root: pathlib.Path, relative: str) -> pathlib.Path | None:
+    """Resolve a repository-relative evidence path without allowing traversal."""
+    pure = pathlib.PurePosixPath(relative)
+    if pure.is_absolute() or ".." in pure.parts or not pure.parts:
+        return None
+    candidate = (root / pathlib.Path(*pure.parts)).resolve()
+    try:
+        candidate.relative_to(root.resolve())
+    except ValueError:
+        return None
+    return candidate
+
+
+def _pinned_evidence_view(root: pathlib.Path, evidence: dict[str, Any]) -> dict[str, Any]:
+    """Verify immutable Git bytes and compare them with the current working source."""
+    relative = str(evidence.get("path", ""))
+    ref = str(evidence.get("ref", ""))
+    expected = str(evidence.get("sha256", "")).lower()
+    candidate = _safe_repository_path(root, relative)
+    path_is_safe = candidate is not None
+    expected_is_sha = bool(re.fullmatch(r"[0-9a-f]{64}", expected))
+    pinned_digest = None
+    pin_status = "unverified"
+    if not path_is_safe:
+        pin_status = "unsafe_or_missing_path"
+    elif not re.fullmatch(r"[0-9a-fA-F]{40}", ref):
+        pin_status = "missing_or_noncommit_ref"
+    elif not expected_is_sha:
+        pin_status = "missing_or_invalid_sha256"
+    else:
+        proc = subprocess.run(
+            ["git", "cat-file", "blob", f"{ref}:{relative}"], cwd=root,
+            capture_output=True,
+        )
+        if proc.returncode:
+            pin_status = "pinned_blob_unavailable"
+        else:
+            pinned_digest = hashlib.sha256(proc.stdout).hexdigest()
+            pin_status = "verified" if pinned_digest == expected else "pinned_sha256_mismatch"
+    current_digest = None
+    if candidate is not None and candidate.is_file():
+        current_digest = sha256(candidate)
+    current_status = (
+        "matches_pin" if pin_status == "verified" and current_digest == expected
+        else "changed_since_pin" if pin_status == "verified" and current_digest is not None
+        else "source_missing" if current_digest is None
+        else "unverified_pin"
+    )
+    module = None
+    prefix = "03_FORMALIZATION/D0/"
+    normalized = pathlib.PurePosixPath(relative).as_posix()
+    if normalized.startswith(prefix) and normalized.endswith(".lean"):
+        module = "D0." + normalized[len(prefix):-len(".lean")].replace("/", ".")
+    return {
+        "ref": ref or None,
+        "path": relative or None,
+        "expected_sha256": expected or None,
+        "pinned_blob_sha256": pinned_digest,
+        "pin_status": pin_status,
+        "current_source_sha256": current_digest,
+        "current_source_status": current_status,
+        "current_module_locator": module,
+        "direct_formal_module_source": module is not None,
+    }
+
+
+def _module_source_path(module: str) -> str:
+    return "03_FORMALIZATION/" + module.replace(".", "/") + ".lean"
+
+
+def _formal_support_candidates(dataset: dict[str, Any], module: str,
+                               evidence_path: str) -> list[dict[str, str]]:
+    evidence_suffix = evidence_path.removeprefix("03_FORMALIZATION/")
+    matches = []
+    for row in dataset["formal_support"]:
+        modules = [part.strip() for part in str(row.get("lean_module", "")).split(";")
+                   if part.strip()]
+        files = [part.strip().replace("\\", "/")
+                 for part in str(row.get("lean_file", "")).split(";") if part.strip()]
+        if module in modules or evidence_path in files or evidence_suffix in files:
+            matches.append({**row, "relation": "module_or_source_co-location_candidate"})
+    return matches
+
+
+def _claim_locator_candidates(dataset: dict[str, Any], declaration_names: set[str],
+                              lean_inventory: Any) -> list[dict[str, str]]:
+    matches = []
+    for claim in dataset["claims"]:
+        module = str(claim.get("lean_module", ""))
+        for atom in _lean_atoms(claim):
+            candidates = lean_inventory.candidate_names(module, atom)
+            matched = sorted(declaration_names.intersection(candidates))
+            for declaration in matched:
+                matches.append({
+                    "declaration": declaration,
+                    "claim_id": str(claim.get("claim_id", "")),
+                    "module_locator": module,
+                    "theorem_atom": atom,
+                    "relation": "exact_declaration_name_locator_candidate",
+                })
+    return matches
+
+
+def result_declaration_crosswalk_view(dataset: dict[str, Any],
+                                      lean_inventory: Any,
+                                      result_id: str | None = None,
+                                      import_root: str = "D0.All") -> dict[str, Any]:
+    """Crosswalk pinned assembly evidence to compiled declaration candidates.
+
+    A source/declaration match is only a co-location candidate. No semantic
+    application, claim coverage, or independent acceptance is inferred.
+    """
+    root = pathlib.Path(dataset.get("root", ROOT)).resolve()
+    results = list(dataset["assembly"].get("results", []))
+    if result_id is not None:
+        results = [row for row in results if row.get("id") == result_id]
+        if not results:
+            return {"key": result_id, "status": "no_exact_assembly_result"}
+
+    per_result: dict[str, dict[str, Any]] = {}
+    modules: set[str] = set()
+    for row in results:
+        key = str(row.get("id", ""))
+        evidence_views = []
+        for evidence in row.get("evidence", []):
+            if not isinstance(evidence, dict) or not str(evidence.get("path", "")).endswith(".lean"):
+                continue
+            pin = _pinned_evidence_view(root, evidence)
+            module = pin["current_module_locator"]
+            if pin["pin_status"] == "verified" and pin["current_source_status"] == "matches_pin" and module:
+                expected_source = _module_source_path(module)
+                if expected_source == pin["path"]:
+                    modules.add(module)
+                else:
+                    module = None
+            else:
+                module = None
+            evidence_views.append({
+                "pin": pin,
+                "inventory_module": module,
+                "declarations": [],
+                "formal_support_candidates": [],
+            })
+        per_result[key] = {"record": row, "evidence": evidence_views}
+
+    inventory_rows: list[dict[str, Any]] = []
+    collector_sha = None
+    proof_detail_collector_sha = None
+    lean_digest = None
+    if modules and result_id is not None:
+        inventory_rows, collector_sha, lean_digest = lean_inventory.run_module_inventory(
+            sorted(modules), import_root, include_proof_details=False
+        )
+        by_module: dict[str, list[dict[str, Any]]] = {}
+        for declaration in inventory_rows:
+            owner = str(declaration.get("module", ""))
+            source_path = declaration.get("source_path") or _module_source_path(owner)
+            if source_path == _module_source_path(owner):
+                by_module.setdefault(owner, []).append(declaration)
+        for item in per_result.values():
+            for evidence_view in item["evidence"]:
+                module = evidence_view["inventory_module"]
+                if not module:
+                    continue
+                path = str(evidence_view["pin"].get("path", ""))
+                declarations = [row for row in by_module.get(module, [])
+                                if row.get("source_path") == path]
+                evidence_view["declarations"] = declarations
+                evidence_view["formal_support_candidates"] = _formal_support_candidates(
+                    dataset, module, path
+                )
+        declaration_names = {str(row.get("name", "")) for row in inventory_rows}
+        locator_candidates = _claim_locator_candidates(dataset, declaration_names, lean_inventory)
+        detailed_names = sorted({row["declaration"] for row in locator_candidates})
+        if detailed_names:
+            detailed_rows, proof_detail_collector_sha, detailed_source_digest = (
+                lean_inventory.run_inventory(detailed_names, import_root)
+            )
+            if detailed_source_digest != lean_digest:
+                raise RuntimeError(
+                    "Lean source digest changed between module enumeration and exact declaration extraction."
+                )
+            detailed_by_name = {
+                str(row.get("name", "")): row for row in detailed_rows if row.get("exists")
+            }
+            for declaration in inventory_rows:
+                name = str(declaration.get("name", ""))
+                if name in detailed_by_name:
+                    declaration.update(detailed_by_name[name])
+                    declaration["source_path"] = lean_inventory.module_source_path(
+                        declaration.get("module")
+                    )
+                    declaration["proof_details_status"] = "collected_for_exact_claim_locator"
+
+    detailed_rows = []
+    summary_rows = []
+    for key, item in per_result.items():
+        row = item["record"]
+        evidence = item["evidence"]
+        declarations_by_name: dict[str, dict[str, Any]] = {}
+        for evidence_view in evidence:
+            for declaration in evidence_view["declarations"]:
+                declarations_by_name[str(declaration.get("name", ""))] = declaration
+        declarations = [declarations_by_name[name] for name in sorted(declarations_by_name) if name]
+        declaration_names = set(declarations_by_name)
+        claim_candidates = _claim_locator_candidates(dataset, declaration_names, lean_inventory)
+        support_candidates = []
+        for evidence_view in evidence:
+            support_candidates.extend(evidence_view["formal_support_candidates"])
+        unique_support = {}
+        for support in support_candidates:
+            identity = (support.get("lean_module", ""), support.get("lean_file", ""),
+                        support.get("role", ""), support.get("referenced_by", ""))
+            unique_support[identity] = support
+        pin_verified_count = sum(e["pin"]["pin_status"] == "verified" for e in evidence)
+        current_match_count = sum(e["pin"]["current_source_status"] == "matches_pin" for e in evidence)
+        has_current_module_source = any(e.get("inventory_module") for e in evidence)
+        if not declarations and result_id is None and has_current_module_source:
+            disposition = "not_enumerated"
+        elif not declarations:
+            disposition = "unresolved"
+        elif len(declarations) == 1:
+            disposition = "candidate"
+        else:
+            disposition = "ambiguous"
+        matched_claim_declarations = sorted({
+            candidate["declaration"] for candidate in claim_candidates
+        })
+        if not matched_claim_declarations:
+            claim_locator_disposition = "unresolved"
+        elif len(matched_claim_declarations) == 1:
+            claim_locator_disposition = "candidate"
+        else:
+            claim_locator_disposition = "ambiguous"
+        applications = [
+            {"id": app.get("id"), "result": app.get("result"),
+             "obligation": app.get("obligation"),
+             "review_state": (app.get("review") or {}).get("state")}
+            for app in dataset["assembly"].get("applications", [])
+            if app.get("result") == key
+        ]
+        summary_rows.append({
+            "result_id": key,
+            "owner": row.get("owner"),
+            "lean_evidence_count": len(evidence),
+            "verified_pin_count": pin_verified_count,
+            "current_source_match_count": current_match_count,
+            "compiled_declaration_count": len(declarations) if result_id is not None else None,
+            "declaration_disposition": disposition,
+            "claim_locator_disposition": claim_locator_disposition,
+            "semantic_relation_status": "unresolved",
+            "declared_application_count": len(applications),
+            "evidence": [{
+                "path": e["pin"].get("path"),
+                "ref": e["pin"].get("ref"),
+                "pin_status": e["pin"].get("pin_status"),
+                "current_source_status": e["pin"].get("current_source_status"),
+                "module": e.get("inventory_module"),
+                "declaration_count": len(e.get("declarations", [])) if result_id is not None else None,
+            } for e in evidence],
+        })
+        if result_id is not None:
+            result_item = {"kind": "assembly-result", "key": key, "record": row}
+            detailed_rows.append({
+                "result_id": key,
+                "owner": row.get("owner"),
+                "statement": row.get("statement"),
+                "reported_state": row.get("reported_state"),
+                "evidence_crosswalks": evidence,
+                "compiled_declarations": declarations,
+                "claim_locator_candidates": claim_candidates,
+                "formal_support_candidates": list(unique_support.values()),
+                "declared_relations": relation_view(dataset, result_item),
+                "declaration_disposition": disposition,
+                "claim_locator_disposition": claim_locator_disposition,
+                "semantic_relation_status": "unresolved",
+                "acceptance_inferred": False,
+                "collector_sha256": collector_sha,
+                "lean_source_digest": lean_digest,
+                "public_import_root": import_root,
+                "proof_detail_collector_sha256": proof_detail_collector_sha,
+                "interpretation": (
+                    "Pinned source bytes, compiled declarations, exact claim-name locators, and "
+                    "formal-support module locators are displayed as separate evidence. Co-location "
+                    "and exact-name matches are candidates only. Declared application reviews remain "
+                    "separate; this view does not accept a result-to-declaration or result-to-claim link."
+                ),
+            })
+
+    common = {
+        "snapshot_commit": dataset["snapshot_commit"],
+        "worktree_dirty": dataset.get("worktree_dirty", False),
+        "public_import_root": import_root,
+        "collector_sha256": collector_sha,
+        "proof_detail_collector_sha256": proof_detail_collector_sha,
+        "lean_source_digest": lean_digest,
+        "interpretation": (
+            "This generated crosswalk is retrieval and review evidence. It does not infer a semantic "
+            "application, mathematical coverage, or independent acceptance."
+        ),
+    }
+    if result_id is not None:
+        return {**common, **detailed_rows[0]}
+    return {**common, "result_count": len(summary_rows), "results": summary_rows}
+
+
 def why_view(dataset: dict[str, Any], key: str) -> dict[str, Any]:
     obligation = next((x for x in records(dataset) if x["kind"] == "obligation" and x["key"] == key), None)
     if obligation:
@@ -1023,6 +1329,13 @@ def main() -> int:
                        help="compile exact theorem-name locators for a claims.csv ID")
     reuse.add_argument("--import-root", default="D0.All",
                        help="compiled public import used by --lean (default: D0.All)")
+    crosswalk = sub.add_parser(
+        "crosswalk", help="show pinned assembly Lean evidence and compiled declaration candidates"
+    )
+    crosswalk.add_argument("key", nargs="?",
+                           help="exact assembly result ID; omit for a bounded all-result summary")
+    crosswalk.add_argument("--import-root", default="D0.All",
+                           help="compiled public import used for declaration enumeration")
     impact = sub.add_parser("impact", help="show declared impact, or assembly impact since a Git base")
     impact.add_argument("key", nargs="?")
     impact.add_argument("--base")
@@ -1078,6 +1391,12 @@ def main() -> int:
                 inventory = None
             result = reuse_view(data, args.key, lean_inventory=inventory,
                                 import_root=args.import_root)
+        elif args.command == "crosswalk":
+            import lean_declaration_inventory
+            result = result_declaration_crosswalk_view(
+                data, lean_declaration_inventory, result_id=args.key,
+                import_root=args.import_root,
+            )
         else:
             if not args.key:
                 parser.error("impact requires KEY unless --base is supplied")

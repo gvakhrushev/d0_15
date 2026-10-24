@@ -20,6 +20,7 @@ class DeclarationInventoryTests(unittest.TestCase):
             inventory.candidate_names("D0.Matter.ArchiveStressCoupling", "Matter.matterStressMatrix_symmetric"),
             [
                 "D0.Matter.ArchiveStressCoupling.Matter.matterStressMatrix_symmetric",
+                "D0.Matter.Matter.matterStressMatrix_symmetric",
                 "D0.Matter.matterStressMatrix_symmetric",
             ],
         )
@@ -78,6 +79,8 @@ class DeclarationInventoryTests(unittest.TestCase):
         self.assertIn('("conclusion_whnf", toJson conclusionWhnf)', script)
         self.assertIn("open Lean Meta Elab Command", script)
         self.assertIn("proof_dependencies", script)
+        self.assertIn('("declaration_kind", toJson declarationKind)', script)
+        self.assertIn('("internal_name", toJson target.isInternal)', script)
         self.assertIn("is_proposition", script)
         self.assertIn(inventory.PREFIX, script)
 
@@ -89,6 +92,34 @@ class DeclarationInventoryTests(unittest.TestCase):
         self.assertNotIn("PrettyPrinter.ppExpr info.type", script)
         self.assertNotIn("proofDependencies", script)
         self.assertNotIn("collectAxioms target", script)
+
+    def test_module_collector_enumerates_owned_declarations_from_imported_environment(self):
+        script = inventory.lean_module_collector(
+            ["D0.Foundation.VerificationCore"], "D0.All"
+        )
+        self.assertIn("import D0.All", script)
+        self.assertIn("env.header.moduleData[moduleIdx]!", script)
+        self.assertIn("moduleData.constNames", script)
+        self.assertIn("env.find? target", script)
+        self.assertIn("ownerModules.contains owner", script)
+        self.assertIn("collectAxioms target", script)
+        self.assertIn('let declarationKind := match info with', script)
+        self.assertIn('("declaration", d0RangeJson rs.range)', script)
+        self.assertIn('("module", toJson owner.toString)', script)
+
+    def test_module_collector_can_enumerate_all_d0_owners_and_validates_selectors(self):
+        script = inventory.lean_module_collector([], "D0.All", module_prefix="D0.")
+        self.assertIn('owner.toString.startsWith "D0."', script)
+        metadata_script = inventory.lean_module_collector(
+            ["D0.Foundation.VerificationCore"], "D0.All", include_proof_details=False
+        )
+        self.assertIn('("proof_details_status", toJson proofDetailsStatus)', metadata_script)
+        self.assertIn('let proofDetailsStatus := "omitted_by_bulk_mode"', metadata_script)
+        self.assertNotIn("collectAxioms target", metadata_script)
+        with self.assertRaisesRegex(ValueError, "invalid Lean module name"):
+            inventory.lean_module_collector(["D0.Bad; #eval"], "D0.All")
+        with self.assertRaisesRegex(ValueError, "select at least one"):
+            inventory.lean_module_collector([], "D0.All")
 
     def test_import_root_rejects_lean_source_injection(self):
         with self.assertRaises(ValueError):

@@ -7,24 +7,21 @@ set_option linter.unusedSimpArgs false
 set_option linter.unusedVariables false
 
 /-!
-# D0-VNEXT-AF-GNS-ISOMETRY-OWNER-001 — canonical Perron-GNS isometric tower (Phase A2)
+# D0-VNEXT-AF-GNS-ISOMETRY-OWNER-001 — finite-real pairing scope (Phase A2)
 
-The Perron trace of the Fibonacci AF algebra is consistent under the Bratteli inclusions: with the right-
-Perron eigenvector `v = (φ, 1)` (`M_φ v = φ v`, which is exactly `φ² = φ + 1`), the trace vectors
-`t_N = φ^{-N} v` satisfy `M_φ t_{N+1} = t_N` — i.e. `τ_{N+1} ∘ ι_N = τ_N`. A trace-preserving `*`-algebra
-inclusion induces a genuine **isometry** of GNS spaces `⟨ι x, ι y⟩_{N+1} = ⟨x, y⟩_N` (with the GNS form
-`⟨x,y⟩ = τ(y* x)`). So the canonical AF/GNS isometric tower `J_N` EXISTS — the isometry half of the
-candidate primitive `PRIM-ISOMETRIC-DIRAC-J_N` is realized for free from the Perron trace, with no
-synthetic embedding and no chosen state.
+This module retains the scalar golden identities and a generic conditional algebraic pairing identity.
+Its first-step example constructs a real algebra map and checks the associated functional pairing;
+the all-level finite-real refinement and pairing are implemented in `D0.Algebra.FibonacciAFTower`.
+The generic lemma assumes multiplication, star, map, and trace-preservation facts as inputs. It does
+not construct a positive state, a complex AF C*-inductive limit, a GNS quotient/completion, or a
+Hilbert-space isometry. The broader canonical Perron-GNS tower claim remains open under this owner.
 -/
-
 namespace D0.VNext.PerronGNSTower
 
 open Matrix D0
 
-/-- **The GNS isometry from a trace-preserving `*`-inclusion** (the core of the AF/GNS tower): a
-multiplicative, `star`-preserving, trace-preserving inclusion `ι` preserves the GNS inner product
-`⟨x,y⟩ = τ(y* x)`. Hence each Bratteli level inclusion gives a genuine isometry `J_N`. -/
+/-- **Conditional algebraic pairing identity** for a supplied trace-preserving star map. This is not
+a construction of GNS spaces or an isometry of Hilbert completions. -/
 theorem gns_refinement_isometry {A B : Type*} [Mul A] [Mul B] [Star A] [Star B]
     (tauA : A → ℝ) (tauB : B → ℝ) (iota : A → B)
     (hmul : ∀ x y : A, iota (x * y) = iota x * iota y)
@@ -158,10 +155,11 @@ theorem fibonacci_first_refinement_pairing :
     (by intro x; simpa [firstRefinementRingHom] using firstRefinementMap_star x)
     (by intro x; simpa [firstRefinementRingHom] using firstRefinementMap_trace_preserving x)
 
-/-- **D0-VNEXT-AF-GNS-ISOMETRY-OWNER-001.** The canonical Perron-GNS isometric tower exists: the Perron
-trace is refinement-compatible (`1 + φ⁻¹ = φ`, the scalar form of `M_φ t_{N+1} = t_N`), and any
-trace-preserving `*`-inclusion induces an isometry of GNS spaces (`gns_refinement_isometry`). The isometry
-half of `PRIM-ISOMETRIC-DIRAC-J_N` is realized canonically — no synthetic embedding, no chosen state. -/
+/-- **D0-VNEXT-AF-GNS-ISOMETRY-OWNER-001 (retained finite-real scope).** This theorem combines the
+golden scalar identities with the generic conditional algebraic pairing identity. The finite-real
+Fibonacci refinement application is recorded by the core declarations. No positive state, AF limit,
+GNS quotient/completion, or Hilbert-space isometry is constructed; the former broader tower claim
+remains open under this owner. -/
 theorem perron_gns_tower_owner :
     (1 + phi⁻¹ = phi ∧ phi⁻¹ * phi = 1)
       ∧ (∀ {A B : Type} [inst : Mul A] [inst2 : Mul B] [inst3 : Star A] [inst4 : Star B]
