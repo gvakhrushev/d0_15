@@ -572,6 +572,65 @@ SHA-256 for the changed source and generated registry inputs:
 | `02_REGISTRY/claims.csv` | `493866102b2c4c13c9c31c502c4142abc1349178f35edeb32322f23c42314770` |
 | `02_REGISTRY/formal_support.csv` | `e90d167d4b719783b90f0e5e24d848c39fa38bfcce6d09bb40599fad8cfa0709` |
 
+### 24 October all-level finite real Bratteli map and compatibility refactor
+
+The canonical core module now owns the Fibonacci path-count and dimension
+recurrence used by the vNext compatibility API. `D0.VNext.FibonacciAFAlgebra`
+keeps its former public names as aliases and wrappers. The existing total
+33-dimension no-go proof now unfolds the core recurrence explicitly; its
+theorem statements and scope are unchanged.
+
+For every level `n`, `FibonacciAFLevel n` is the product of the two real square
+matrix algebras whose sizes are the two components of `pathCount n`.
+`fibonacciAFRefinementHom n` constructs the actual Bratteli map
+`(A,B) ↦ (diag(A,B), A)`. The core proves this map is a unital ring
+homomorphism, injective, and star-preserving. With
+`τₙ(A,B) = (φ⁻¹)^n (φ·tr(A) + tr(B))`, `fibonacciAFRefinement_trace_preserving`
+proves exact trace transport at every step. The concrete application
+`fibonacciAFRefinement_pairing` then applies the shared generic
+`gns_refinement_isometry` to prove pairing preservation for every `n` and all
+inputs, with its exact dependencies visible in the compiled declaration.
+
+The existing `D0-VNEXT-AF-GNS-ISOMETRY-OWNER-001` claim row now includes the
+core map, trace and pairing locators. `formal_support` names the vNext consumer;
+generated `ClaimMap` and views follow the source registries. The compiled
+`reuse --lean` output was regenerated against public import `D0.All`, and the
+focused compiled declaration
+`D0.Algebra.FibonacciAFTower.fibonacciAFRefinement_pairing` reports direct
+dependencies on the generic isometry, constructed ring map, star-preservation
+and trace-preservation proofs. This supplies a concrete every-level finite
+application of the reused result.
+
+Scope remains finite and real: this does not establish positivity of a trace
+state, the complex C*-inductive limit, the GNS quotient/Hilbert completion, or
+physical Hilbert-space identification. It does not freeze or accept C0, change
+the physical selection assumptions, or alter the ownership of #334.
+
+Validation on this source snapshot: narrow builds passed for the core tower
+(2,947 jobs), the vNext Perron-GNS compatibility module (2,948 jobs), and the
+updated 33-skip consumer (2,949 jobs). The final public `D0.All` build passed
+(4,564 jobs); its Lean source digest and final-build stamp are both
+`359038283894257580b8ba360cad11a27c40d0b12009e0b3ba861f8b71e76912`. The
+focused compiled pairing view has collector SHA-256
+`4224b95cee4404aecf5599339323587d6044a15071e33e594d98482374a93f36`; the full
+compiled claim-reuse view has collector SHA-256
+`71124231eb5dba16b3b98e4ca8894c7465fbd81d378fe4224934edaa69f83d0a`. Proof
+architecture tests passed 26/26, declaration-inventory tests 12/12, generated
+views report `stale=0`, ClaimMap coverage passes, formalization-debt findings
+remain at baseline (3/3), and `git diff --check` passes.
+
+SHA-256 for this checkpoint's source and generated registry inputs:
+
+| Input | SHA-256 |
+|---|---|
+| `03_FORMALIZATION/D0/Algebra/FibonacciAFTower.lean` | `aacfc863ef18e774e6f97e697e2c593a0862ede76e1be1d1e333a2469ce53f8b` |
+| `03_FORMALIZATION/D0/VNext/FibonacciAFAlgebra.lean` | `e4716d1f6f3cb393dc77b24738aeef90f6a0d186863b19c5608dd4d112241066` |
+| `03_FORMALIZATION/D0/VNext/AFD0LaplacianComparisonNoGo.lean` | `64a20335dc4a1339eed1229b4bcf3b6e29e92525c2c7474047a1f3c529b1e91c` |
+| `03_FORMALIZATION/D0/VNext/PerronGNSTower.lean` | `c317e65c0b4d239bcdf161a0c3494176a358b319e691a61064edb71e6bc3b2c5` |
+| `03_FORMALIZATION/D0/TheoremLedger/ClaimMap.lean` | `5757cbbdaacfbb6eba15694ef09769b17525002e3fe5800094725faa00e91e96` |
+| `02_REGISTRY/claims.csv` | `d70e7d4546d4cc85530be297bb75ff9384fe16b35c73137ea2b8c152e0c4d312` |
+| `02_REGISTRY/formal_support.csv` | `cea9176d163d18e9dc06523ae402286dbdbde6b310b22f96e1be83e342a88d22` |
+
 ### 24 October first finite Perron refinement application
 
 The vNext module constructs the first finite real refinement map

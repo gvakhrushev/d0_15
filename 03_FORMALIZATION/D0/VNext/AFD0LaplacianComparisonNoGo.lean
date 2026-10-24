@@ -66,7 +66,8 @@ theorem pc_pos : ∀ n, 1 ≤ (pc n).1 ∧ 1 ≤ (pc n).2 := by
 (`(a+b)² + a² = (a² + b²) + a(a + 2b)`.) -/
 theorem dimA_succ (n : ℕ) :
     dimA (n + 1) = dimA n + (pc n).1 * ((pc n).1 + 2 * (pc n).2) := by
-  simp only [dimA, pc]
+  simp only [dimA, pc, D0.Algebra.FibonacciAFTower.dimA,
+    D0.Algebra.FibonacciAFTower.pathCount]
   ring
 
 /-- **T2A.4: strict monotonicity of the AF dimension tower** — the increment `a(a+2b)` is
@@ -86,7 +87,7 @@ theorem pc_eq_fib : ∀ n, pc n = (Nat.fib (n + 2), Nat.fib (n + 1)) := by
   induction n with
   | zero => rfl
   | succ n ih =>
-      simp only [pc, ih, Prod.mk.injEq]
+      simp only [pc, D0.Algebra.FibonacciAFTower.pathCount, ih, Prod.mk.injEq]
       refine ⟨?_, trivial⟩
       rw [Nat.fib_add_two (n := n + 1), show n + 1 + 1 = n + 2 from rfl]
       exact Nat.add_comm _ _
@@ -96,7 +97,8 @@ odd-indexed Fibonacci numbers `2, 5, 13, 34, 89, 233, …` (`F(m+1)² + F(m)² =
 with `m = n+1`). -/
 theorem dimA_eq_fib (n : ℕ) : dimA n = Nat.fib (2 * n + 3) := by
   have h : 2 * n + 3 = 2 * (n + 1) + 1 := by ring
-  rw [dimA, pc_eq_fib n, h, Nat.fib_two_mul_add_one]
+  change (pc n).1 ^ 2 + (pc n).2 ^ 2 = Nat.fib (2 * n + 3)
+  rw [pc_eq_fib n, h, Nat.fib_two_mul_add_one]
 
 /-- **THE TOTAL 33-SKIP (T2A totality closure): `dimA N ≠ 33` for ALL `N`** — not just
 `N ≤ 3`. Once above (`dimA 3 = 34 > 33`), strictly-monotone stays above; below,
@@ -105,7 +107,9 @@ theorem af_skips_d0_dim_total : ∀ N, dimA N ≠ d0LaplacianDim := by
   intro N h
   rw [d0_laplacian_dim_eq] at h
   rcases Nat.lt_or_ge N 3 with hN | hN
-  · interval_cases N <;> simp_all [dimA, pc]
+  · interval_cases N <;>
+      simp_all [dimA, D0.Algebra.FibonacciAFTower.dimA,
+        D0.Algebra.FibonacciAFTower.pathCount]
   · have h34 : dimA 3 ≤ dimA N := dimA_strictMono.monotone hN
     have : dimA 3 = 34 := by decide
     omega
