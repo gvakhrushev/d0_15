@@ -1629,23 +1629,32 @@ modules. This is a targeted module build, not the final `D0.All` build.
 
 ## Fibonacci first-step block API reuse (24 October 2026)
 
-The finite scalar example in `D0.VNext.PerronGNSTower` now proves its
-diagonal-block multiplication, star and trace identities through the shared
+The finite scalar example in `D0.VNext.PerronGNSTower` now derives its
+diagonal-block multiplication, star and trace identities from the shared
 `fibonacciBlockMatrix_mul`, `fibonacciBlockMatrix_star` and
-`trace_fibonacciBlockMatrix` API from `D0.Algebra.FibonacciAFTower`. Private
-`Fin 1` scalar matrices make the specialization explicit. Existing first-step
-declarations and theorem types remain available to their current consumers;
-the finite-level map and pairing are unchanged. This does not construct an AF
-C*-limit, a positive trace state, or a completed GNS space, and it changes no
-scientific status.
+`trace_fibonacciBlockMatrix` API in `D0.Algebra.FibonacciAFTower`. Private
+`Fin 1` scalar matrices make these specializations explicit. The new compiled
+theorem `firstRefinementMap_is_level_zero_specialization` proves that the old
+scalar map is exactly the coordinate readout of
+`fibonacciAFRefinementHom 0` after embedding its two scalar inputs as
+one-by-one matrices. Its name is added to the existing finite-real owner row
+and generated `ClaimMap`; this is a locator plus a checked Lean application,
+not a new typed metadata edge or status promotion. Existing first-step theorem
+types and the finite-level map/pairing remain unchanged. No AF C*-limit,
+positive trace state or completed GNS space is constructed.
 
 Validation: `python3 tools/lean_task_build.py narrow
-D0.VNext.PerronGNSTower` passed under Lean 4.30.0 (2,948 Lake jobs) with the
-current pinned `lake-manifest.json`. The build helper's source digest is
-`8a1e469ff0de06d34d270036342488f6dd71b5f35a16fcf1b93ec88d1195819e`; the
-manifest SHA-256 remains
-`4ed211000f753c64c6b1fc155970f6b28c9500763f1ad520d8762ae165ac24fa`, and the
-updated module SHA-256 is
-`a2d33c8708c3fde630252eaef0ac3ecd71eca700b5a106d7ac37884b7dce9e5a`. This
-is the targeted module check; final `D0.All` and release integration remain
-pending at the Draft checkpoint.
+D0.VNext.PerronGNSTower` and `python3 tools/lean_task_build.py narrow
+D0.TheoremLedger.ClaimMap` passed under Lean 4.30.0 (2,948 and 2 Lake jobs).
+With the bundled Python 3.12 runtime, `generate_lean_views.py --check` reports
+`stale=0`, `check_claim_map_coverage.py` passes, and
+`formalization_debt_audit.py --check` remains at 3/3 baseline findings. The
+CRLF-aware `git diff --check` passes. The post-run Lean source digest is
+`03d15cfea66e9043f4f0d07ebd8c459aad35a048058f65bc296ef295fc31a5e0`; manifest
+SHA-256 is `4ed211000f753c64c6b1fc155970f6b28c9500763f1ad520d8762ae165ac24fa`;
+`claims.csv` SHA-256 is `6856f677e43ff5eb0b0b8f03b32b79c54c4605300dbeea1d2f13bfdc90d8ec92`;
+generated `ClaimMap.lean` SHA-256 is
+`a3ab7f9f8d3693bb6df7c52eb7c149dfcbf36ea3ea2416ed2c259e0f93150ccb`;
+and `PerronGNSTower.lean` SHA-256 is
+`191787272188bf883d6b0125f47944a915042c81797bd5d761116619c7e446c4`. This is
+targeted validation, not the final `D0.All` build or release integration.

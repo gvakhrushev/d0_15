@@ -75,10 +75,38 @@ private theorem firstRefinementDiagonal_eq_sharedBlock (x y : ℝ) :
       D0.Algebra.FibonacciAFTower.fibonacciBlockMatrix,
       Matrix.reindexAlgEquiv_apply, finSumFinEquiv, Fin.addCases]
 
+private def firstRefinementLevelZero
+    (z : ℝ × ℝ) : D0.Algebra.FibonacciAFTower.FibonacciAFLevel 0 :=
+  (firstRefinementScalarMatrix z.1, firstRefinementScalarMatrix z.2)
+
+private def firstRefinementAFStep (z : ℝ × ℝ) :
+    Matrix (Fin 2) (Fin 2) ℝ × Matrix (Fin 1) (Fin 1) ℝ := by
+  simpa [D0.Algebra.FibonacciAFTower.FibonacciAFLevel,
+    D0.Algebra.FibonacciAFTower.pathCount] using
+    D0.Algebra.FibonacciAFTower.fibonacciAFRefinementHom 0
+      (firstRefinementLevelZero z)
+
 /-- The first finite Bratteli step, from two scalar blocks to `M₂(ℝ) × ℝ`:
 `(x,y) ↦ (diag(x,y),x)`, with multiplicities given by `Mφ = !![1,1;1,0]`. -/
 def firstRefinementMap (z : ℝ × ℝ) : Matrix (Fin 2) (Fin 2) ℝ × ℝ :=
   (firstRefinementDiagonal z.1 z.2, z.1)
+
+/-- The scalar first-step map is exactly the coordinate readout of the all-level
+Fibonacci Bratteli refinement at level zero, after embedding both scalars as
+one-by-one matrices. -/
+theorem firstRefinementMap_is_level_zero_specialization (z : ℝ × ℝ) :
+    firstRefinementMap z =
+      ((firstRefinementAFStep z).1, (firstRefinementAFStep z).2 0 0) := by
+  rcases z with ⟨x, y⟩
+  apply Prod.ext
+  · change firstRefinementDiagonal x y =
+      D0.Algebra.FibonacciAFTower.fibonacciBlockMatrix
+        (firstRefinementScalarMatrix x) (firstRefinementScalarMatrix y)
+    exact firstRefinementDiagonal_eq_sharedBlock x y
+  · simp [firstRefinementMap, firstRefinementAFStep, firstRefinementLevelZero,
+      D0.Algebra.FibonacciAFTower.fibonacciAFRefinementHom,
+      D0.Algebra.FibonacciAFTower.fibonacciAFRefinement,
+      firstRefinementScalarMatrix]
 
 /-- The level-zero Perron trace functional for the finite step. -/
 noncomputable def firstRefinementTrace0 (z : ℝ × ℝ) : ℝ := phi * z.1 + z.2
