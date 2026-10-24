@@ -1505,6 +1505,115 @@ A continuous same-carrier complete source is still required before an
 owned finite-root/degree theorem may be applied. Neither secants nor a
 Palatini/CQ carrier change supplies that hypothesis.
 
+## 7g. Apply the complete preparation equation before promoting the smooth source
+
+24 October 2026. Same native-realization owner, input eebc28c1.
+The proposed shortcut is to replace the finite field-key comparison by a
+smooth work preparer and then apply Book03 stationarity. Test its ENTIRE
+source before making that replacement. This consumes sections7e-f,
+[the owned balanced internal comparison](A4D_PAID_MOMENT_FIELD_WRITER_2026_10_21.md#152-an-actual-internal-return-event-fixes-a-comparison-cut)
+and [the existing generated-prefix adjoint](A4D_PAID_MOMENT_FIELD_WRITER_2026_10_21.md#105-every-generated-prefix-row-has-an-explicit-whole-book-adjoint).
+It neither reopens the generic operator-variation theorem nor imposes a
+smooth selector of discrete words as an extra physical requirement.
+
+Book01 sections01.4.1 and01.15 allow compatible finite operator/test
+families. For example the owned interior sign-resource preparation
+beta(t) in the [collective-preparation source](A4D_NONVACUUM_COLLECTIVE_PREPARATION_SOURCE_EQUIVALENCE_2026_10_22.md)
+has an explicit smooth orthogonal completion on every |t_j|<1. The
+all42 inverse/Cayley readout supplies its field coordinates. Such a
+family has genuine mathematical tangents. Its inclusion in the SAME
+physical configuration domain X_N, with actual controls and their
+price, is a further application of Book00 section00.4 and Book03
+sections03.8/25. Finite operator admission is not that application.
+
+First remove a distraction using an ALREADY owned construction. With
+C=C_copy from (64), execute both copies and put
+
+    Ubal=C(Uhat tensor I_bank)C,  Nbal=Nold+2w.          (72)
+
+Add actual routing stages when needed. C Pnew=Pnew implies
+Ubal Pnew=Urec Pnew, so every declared terminal output/effect and
+(65) are unchanged. On ALL columns Ubal is conjugate to
+Uhat tensor I_bank. Thus at this SAME longer physical Nbal its heat
+partition function is exactly D_bank times that of Uhat. This is
+not equality to the old heat at Nold; its dimension and duration
+prices remain. The original internal bank stays at the final output.
+For the ideal U=V^dagger M0 V, the full spectrum and heat are field
+constant at common Nbal. For the ACTUAL positive-power inverse word,
+its existing approximation error remains: copying does not make that
+word exactly conjugate to M0 or supply its missing continuous tangents.
+No minimum or compulsory choice of the two-copy programme is asserted.
+
+Now test the most favorable EXACT smooth case. Fix the input projector
+of (54)-(56), native M0, protected spin/past, scene, beta, zeta and the
+whole clock inventory. Allow V to vary as a work-only orthogonal or
+unitary preparer, together with its actual coherent inverse in U.
+Put phi=V|0_W>, ||phi||=1 and x=<phi,Pi phi>. The compression (56)
+still holds on every Q8-spin column. The entire declared H+J source
+of the ideal balanced family therefore satisfies, for a real sphere
+tangent eta with Re<phi,eta>=0,
+
+    D_phi B[eta]=2 j_K'(x) Re<eta,(Pi-x)phi>,
+    ||D_phi B||=2 j_K'(x) sqrt[x(1-x)].                 (73)
+
+Here the norm is the Euclidean tangent dual norm on the unit sphere,
+not the all42 field norm. Indeed g=(Pi-x)phi is tangent,
+||g||^2=x(1-x), and eta=g/||g|| attains the bound. Every such
+real tangent is realized by a skew work-generator; it leaves the
+native spin, fixed initial P and the controlled middle untouched.
+This is variation of the PREPARER AND ITS INVERSE, not variation
+of the input state in one fixed processor. It applies when that
+preparer orbit is actually free; it does not declare this orbit
+native-admitted merely from its matrix representation.
+
+On the source-bearing chart x=gamma_h Q_h, 0<Q_h<=q_max<1/2,
+j_K'(x)>0. Thus a freely varying normalized preparer cannot satisfy
+its independent Euler equation there, even when all pulled-back
+geometric rows vanish. Equivalently its equation forces
+(Pi-x)phi=0, which has x in {0,1}; neither is in this interior chart.
+No claim about other critical points outside the chart is needed.
+Using the SAME nonzero source gain (61), evaluated at the base,
+
+    ||D_phi B||/Gamma_K
+      =2 Omega/(a0 tau_h)
+          sqrt[Q_h(1-gamma_h Q_h)/gamma_h].             (74)
+
+There is no derivative of Gamma_K in (74). With Q_h>=b_h>0,
+the right side is at least
+2 Omega sqrt[b_h(1-q_max)/gamma_h]/(a0 tau_h).
+At fixed h and a uniform positive report floor, reducing READY
+probability makes this normalized independent source grow as
+at least gamma_h^(-1/2). A small unnormalized preparation source
+does not remove this ideal row. Where the actual comparison
+stencils admit it, inverse compilation with the existing accuracy
+condition epsilon/(Gamma_K delta)->0 preserves its secant limit;
+C0 word accuracy alone is not a derivative estimate.
+If other terms of the same full stack cancel this direction, their
+preparer covector must have at least the norm (73), or (74) after
+the same normalization. No such compensating term is assigned here.
+
+This is a scoped exclusion of the FREE smooth-preparer shortcut,
+not an obstruction to generated fields. If phi is produced by the
+actual causal word from fixed initial data, the existing adjoint
+eliminates its generated state row. The remaining source is the
+pullback to the genuinely admitted controls, INCLUDING any actual
+upstream control variation. In particular a proved constrained
+field-to-configuration section could have DQ_h=0 while the ambient
+sphere covector (73) is nonzero; its normal reaction is then retained
+by the constraints. One may neither impose (73) on a generated state
+nor silently declare a free preparer generated.
+
+**Parent consequence.** The next application must derive this causal
+field/control section and its complete pullback from the SAME native
+process. Simply introducing smooth beta(t) resources, or replacing
+section7f by balanced copies, cannot supply joint stationarity.
+Conversely a C1 discrete-word selector is unnecessary when an actual
+smooth configuration map is proved. The unpadded CQ root and primary
+refining Palatini family retain their separate source contracts;
+(73)-(74) do not identify them or supply an exact stationary native
+refining sequence. GR_closed and raw216 remain open.
+
+
 ## 8. Reproduction
 
 Run from this directory:

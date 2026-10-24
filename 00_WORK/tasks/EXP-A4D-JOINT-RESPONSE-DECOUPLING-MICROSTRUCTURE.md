@@ -7252,3 +7252,72 @@ standalone certificate, Lean module or scientific/assembly promotion.
 Targeted work/protocol validation and final diff check PASS. No unchanged
 full128 certificate or Lean suite was replayed; the registry, assembly
 contract, books and scientific statuses are unchanged.
+
+
+### 24 October: apply the independent preparation equation before the smooth-source shortcut
+
+Phase: native realization / composition, same constitutive owner and
+native-programme-v1 carrier. Input publication eebc28c1. Existing primary
+artifact section7g consumes sections7e-f, paid-writer15.2 balanced
+comparison, paid-writer10.5 causal adjoint, and the original Book01 finite
+operator-family contract. No new task, certificate, operator catalogue or
+formalization is created.
+
+The Books00-01 search confirms that a smooth discrete-word selector is
+not a prerequisite of every Book03 application: an actual smooth finite
+configuration map can be differentiated. The concrete sign-resource
+chart supplies mathematical tangents, but not by itself its physical
+X_N inclusion. Test that proposed continuous-preparer replacement at
+its complete source, retaining independently admitted controls.
+
+The owned two-sided internal copy, actually paid at Nold+2w plus routing,
+retains section7f's complete input/output channel and feedback. Its full
+monodromy is conjugate to Uhat tensor I_bank at the SAME new duration,
+with the whole bank trace factor retained. Exact fixed-middle heat
+neutrality holds for the ideal coherent inverse; the actual native
+positive-power inverse retains its previous approximation boundary.
+This is application of an existing result, not a new heat theorem.
+
+For a genuinely FREE normalized work preparer phi=V|0>, varied together
+with its inverse and with fixed native P/M0, the exact full H+J sphere
+covector is 2 j'_K(x) Re<eta,(Pi-x)phi>, x=<phi,Pi phi>.
+Its norm is 2 j'_K(x) sqrt[x(1-x)]. This independent Euler equation fails
+on the source-bearing interior 0<x=gamma Q<1/2. In the SAME all42 gain
+normalization its sphere norm equals
+2 Omega sqrt[Q(1-gamma Q)/gamma]/(a0 tau).
+With a positive report floor, small readiness amplifies this source.
+This is not an all42 norm estimate without the physical admission map.
+Any actual compensating stack term would have to supply the opposite
+preparer covector; none is invented. C0 compiler error is not derivative
+control; only actual admitted secants under the owned normalized error
+condition inherit this ideal comparison.
+
+Parent route change: neither arbitrary smooth resources nor balanced
+copies close joint stationarity. Derive the same native causal
+field/control section and its complete pullback. Generated prefix states
+are still eliminated by the OWNED adjoint, and must not receive a new
+independent Euler equation. A genuinely constrained section can be
+stationary despite the ambient preparation reaction. The certified
+unpadded CQ root and primary Palatini refinement cannot be interchanged.
+Physical full action/domain selection and stationary refinement remain
+open; GR_closed/raw216 and all scientific/assembly statuses are unchanged.
+
+Smallest decisive check: exact 16-by-16 rational full-column balanced
+copy, fixed input/output and compression, complete feedback derivative,
+maximizing preparation tangent and conjugacy trace controls PASS.
+The inside-chart diagnostic has x=9/25, j'=800/881 and dB=768/881.
+It is a parameter-family algebra check, not an additional native Golden
+primitive or a physical admission certificate. The general norm and
+conjugacy argument is analytical.
+
+Write paths: primary residual owner and this brief only. Independent
+review accepted the mathematics and physical boundaries; a final scope
+repair explicitly preserves the distinction between normalized secants
+and ordinary derivatives. Final section7g, heading through before8,
+INCLUDING trailing LF: 6195 bytes; SHA256
+f321952b437ea8cba26a06eac88317d371dc823f58f56737150c3a7befa43492.
+
+Final native_valuation_map review ACCEPTs the pinned 6195-byte section.
+Universal_parent_map accepted the preceding mathematical slice before
+the final secant-scope tightening. Targeted work/protocol checks and
+diff whitespace check PASS; no unchanged full128 or Lean replay.
