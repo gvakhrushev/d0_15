@@ -4742,6 +4742,313 @@ premises. No complete stationary refinement, physical GR, positive_gr
 or raw216 closure is claimed.
 
 
+## 7s. Compose the full query programme with joint input and encoder equations
+
+24 October 2026. Same owner; input5e01fd35. This uses7r's fixed native
+query processor, rather than treating each of its coefficient programmes
+as an unrelated physical input. The consumers are the independent-input
+and implementation terms in the complete source budget(129).
+
+Two applications are distinct. First, pull the WHOLE query/report network
+back to one canonical geometry/matter bank and apply the owned collective
+source theorem there. Second, identify actual encoder/work directions
+which preserve the complete programme-response operators. Neither
+application asserts that these exhaust the native Book X_N domain.
+
+### One canonical bank supplies every coefficient programme
+
+At fixed h, chart, actual inventory and approximation accuracy, choose
+ONE independent feature for each deduplicated free coordinate. The geometry
+features t_j encode the original16 coframe and24 proper-link variables;
+the material features are s_(x,a)=2sqrt(p)w_x psi_(x,a) of(142).
+All coefficient programmes of(172), direct reports and repeated queries
+are computed from these canonical features by the SAME fixed processor.
+There is no separately preloaded independent bank for b_l(Y), no second
+unlinked encoding of one field, and no later direct read of a field key
+outside the source bank. Thus the downstream operator below is field
+independent; field dependence enters its input state alone. Logical
+WORK starts from the common declared blanks; any independently moving
+DATA/input state not carried by this bank keeps its separate source.
+
+Use real pure geometry SIGN states beta(t)=(sqrt((1+t)/2),sqrt((1-t)/2))
+in the COMPUTATIONAL Z basis. This is an actual available source on the
+dense native code grid, not a new angle gate. The owned equal-inventory
+cell W_(L,k) has c0=1 block G^k and c0=0 block G^L, using L forward G
+and2L CX for |k|<=L of the same parity. From a blank it prepares exactly
+beta(t) when k theta0 modulo2pi lies in(0,pi/2), t=cos(2k theta0).
+The existing fixed-parity density and common-catalogue construction cover
+all finite endpoints/stencils on a compact interior feature window.
+Retain the paid root c0, its full complement and actual raw inverse.
+For the material factor use the original real Fourier/CAR source of7p.
+The complete normalized conditional bank is
+
+    xi=big_tensor_j beta(t_j) tensor C_psi,
+    r=(t,s),   J_r=D_Y r.                             (176)
+
+The real field-to-feature Jacobian is locally invertible on the declared
+free42 chart, with its actual inverse-coframe/Cayley/material factors.
+Fixed collar data are supplied processor coefficients, as in7p. A
+moving frame, Gram, density, clock input or independently read collar
+adds another feature/source row; the42 equations do not annul it.
+
+Every RAW feature occurrence in the entire finite7r network is assigned
+a DISTINCT complete bank, including all samples used in Bernstein counters
+for coefficient programmes and every final report occurrence. One bank is
+read in at most ONE coordinate: Z_j on a geometry factor or A_(x,a) on
+the full original CAR factor. All other factors/purifiers of that bank
+travel with it and remain retained. For k occurrences prepare N>=k
+complete banks from fresh work using the same actual source setting.
+This counts real copies, reference128^N, code and storage; it does not
+clone an unknown input or identify them with original immutable oldRIGHT.
+
+### Read-only raw coordinates give the required operator identity
+
+Consume the ACTUAL Bernstein implementation of paid-writer10.2 and7h
+(75)-(76): raw coordinate SIGNs are retained read-only controls of
+reversible counters and preprepared-row lookup. They are not targets
+of H, swaps with data, or later raw readout reversal inside the FORWARD
+word. Programme/algorithm/work bits can interfere quantum mechanically.
+For the material moment we can now consume the OWNED exact fixed-pair
+readout of NATIVE_POLYNOMIAL_FIRST_JET sections2,5. Write A for the pair
+swap with zero complement and R=I-A^2. The two fixed signed permutation
+involutions V_+=A+R,V_-=A-R satisfy A=(V_++V_-)/2. A coherent fair
+selector and a Hadamard test of its selected FIXED involution give the
+raw SIGN effect(I+/-A)/2 on every original CAR/reference input. Expand
+all fair/H/Boolean/phase operations by paid-writer9.1, retaining their
+input-independent raw success flags, work and physical inverse. Fixed
+address/predicate scratch is reversibly uncomputed BEFORE the final
+Hadamard interference; retained input-independent factory syndrome work
+is not substituted for that scratch return. The whole successful effect
+is EXACT; this does not assert that the ideal
+constant matrix W_A of(143) is itself an exact finite Golden word.
+The raw SIGN is then retained and used only in the control role. Each later7r coupling preserves its
+derived programme Z. The closing whole-word inverse is a separate stage.
+
+Hence the entire completed logical word is block diagonal in the raw
+SIGN labels: U=sum_z |z><z| tensor U_z. Pulling back the final effect and
+compressing each fixed raw readout gives exactly(I+/-A_a)/2, or(I+/-Z_j)/2.
+Quantum target/control interference changes U_z and its coefficients,
+but cannot create an extra input operator on a slot. The full normalized successful
+kernel K therefore has the one-slot alphabet
+
+    I,   Z_j tensor I_material,
+         I_geometry tensor A_(x,a),                  (177)
+
+on the ENTIRE geometry-kind/CAR/site/reference bank. This is an operator
+identity, including correlated pure bank inputs, rather than equality of
+probabilities only on the prepared field section. It uses the new exact
+successful readout above. The alternative finite W_A,nu approximation
+keeps its actual A_nu and the stated K_impl-K implementation debt. Logical factory success
+is input independent on this domain, also for entangled inputs. This uses
+its owned all-input Kraus identities and preparing ALL coefficient rows
+before live selection. Thus the normalized successful Heisenberg map is
+unital: the final weak effect pulls back as K=bI+tau T_K, ||T_K||<=Xi.
+Its actual common success factor remains in the physical Book price.
+
+The read-only condition is necessary. If a raw A-readout is followed by
+H on its raw SIGN and then reading0, the pulled-back effect is
+I/2+P_rest/2 for the extractor(143), outside span{I,A}. Preserving only
+the later programme Z would not justify(177). Such an implementation
+keeps that additional operator and its own source; it is not covered by
+the canonical kernel claim.
+
+Use the OWNED coherent without-replacement injection to average K over
+N complete banks. Include its actual labels, flags, lookup work and all
+unused banks inside the same full raw echo. Conditional on the genuine
+common success, its kernel is K_N=(N)_k^(-1)sum_iota K_iota. On xi^tensor N
+it preserves the entire original logical output channel and all its
+reported probabilities; different injections see the same k input banks.
+The factor1/(N)_k is an alternative weight, not a physical success rate.
+The actual additional readiness is counted separately and exactly once.
+
+### All field and cross-bank preparation rows share one source bound
+
+Let q=<xi^tensor k,K xi^tensor k>, g=D_r q, with EVERY repeated raw
+use of each feature included in the derivative. The owned first-conditional
+formula now applies to the ENTIRE new query programme:
+
+    E1=qI+(1/k)[sum_j g_tj(Z_j-t_j I)
+                         +sum_a g_sa(A_a-s_a I)].      (178)
+
+It acts as identity on all unused factors and RIGHT. At the actual product
+bank(176), geometry and material covariance cross terms vanish, and
+
+    Sigma=diag(diag_j(1-t_j^2), C_mat),
+    G_all^2=g^T Sigma g,
+    g=J_r^(-T) D_Y q.                                 (179)
+
+Here C_mat is the TRUE native covariance(154), with its p^6 weighted
+lower bound(155), not an assumed independent material-bit covariance.
+On compact interior geometry features and positive material weights,
+Sigma is positive. Equation(179) gives the actual comparison with the
+declared physical field-dual norm through J_r and Sigma; no mesh-uniform
+norm bound or replacement of the raw216 norm is inferred.
+
+If the EXACT same comparison kernel has all original free field rows
+zero, J_r's invertibility forces g=0, so E1=qI as a FULL bank operator.
+The owned primary family supplies the ZERO REFERENCE geometric
+covector to(124)/(174); use those inequalities and the actual J_r^(-T)
+to bound this kernel's g. Do not assign it that reference root. The
+finite7r processor keeps its actual D_Y q and all(124)/(173)/(174) and
+finite-code errors. A field root of another price,
+redundantly constrained feature curve or read augmented normal does
+not imply g=0 here.
+
+The full-variable implication uses only the canonical feature map. If
+two independently supplied encodings r1(Y),r2(Y) are BOTH read, then
+D_Y q=J1^T g1+J2^T g2=0 need not annul either gradient. Those extra
+normal reactions cannot be discarded by calling both encodings the
+same field. In(176) every coefficient branch derives from the one
+canonical source, instead of imposing such a hidden equality constraint.
+
+Put the ENTIRE source/injection/query/report word and its actual inverse
+inside the balanced echo. At its new actual clock and carrier,
+B_N=H_ref+j_K(gamma_N q), with all root/factory/injection readiness in
+gamma_N once. Define the ACTUAL gain Gamma_N=j'_K(gamma_N q)gamma_N a0 tau/Omega,
+and E_all=Omega G_all/(a0 tau). The already proved overlap estimate gives
+
+    E_all <=sqrt(N)||D_bank B_N||/(2 Gamma_N)
+       <=sqrt[E_all^2+C_h^2/(N-1)],
+    C_h=Omega Xi k(k-1)/(sqrt(2)a0).                   (180)
+
+The derivative norm in(180) is the AMBIENT normalized pure-bank sphere
+norm AT the IID base, including correlated geometry/material, extra
+exterior grades and retained reference directions. This is not a claim
+that its full tangent sphere is physically admitted. Fixed-RIGHT-Gram
+or other boundary restrictions inherit its UPPER bound through their
+actual lift; the lower bound/converse is not automatically true for a
+smaller constrained norm. The same ambient-norm reading applies to
+(157)-(158). There is no claim about arbitrary correlated base states
+or one-sided mixed-density cone changes. At an exact comparison
+root its ordinary bank source is O(1/N); away from it the sqrt(N)-scaled
+source retains the nonzero complete field gradient through(179).
+Actual implementation effects with ||K_impl-K||<=tau epsilon_op keep
+the existing additional2Omega sqrt(N)epsilon_op/a0 debt.
+
+The actual pure conditional source chosen in(176) also supplies the
+joint lift, without assuming a fixed purifier for an old mixed packet:
+
+    ||Dxi||^2=sum_j (Dt_j)^2/[4(1-t_j^2)]
+           +sum_x w_x[||Dpsi_x||^2+(psi_x.Dpsi_x)^2/d_x^2],
+    <xi,Dxi>=0,   L_N^2=N||Dxi||^2.                  (181)
+
+This preparation metric is DISTINCT from Sigma: in particular C_mat
+contains the global -ss^T term, while the material term in(181) does
+not. Both keep their true field Jacobians. For any declared test v,
+(159) becomes2||Dxi[v]||sqrt(E_all^2+C_h^2/(N-1)), plus actual errors.
+Use its true sampling/calibration map and c_quad,h in(129), once.
+Different raw programme/key histories can be orthogonal; finite field
+code comparisons use the actual endpoint price identity(147)-(149),
+not a C1 norm claim about those full histories.
+
+For an existing exact curved reference family, one may therefore choose
+finite native code points approximating its chart coordinates, then
+outer/inner source accuracies as in7r, then N_h for this joint budget.
+The local source continuity/Jacobian/slack constants, k_h and test norm
+are computed or retained BEFORE choosing each tolerance. This constructs
+controlled versions of these FIELD and BANK source components on that
+family. It is not an exact native all-Euler root or a proof that other
+selected stack components vanish.
+
+### Actual programme-response effects identify neutral encoder directions
+
+There is a complementary application to implementation work. Let A_i be
+an ACTUAL finite programme encoder with blank-work isometry i0, programme
+bit z_i and genuine success flag R_i. Define its UNNORMALIZED effects
+on its whole source-input space:
+
+    F_i^+=i0^dagger A_i^dagger(R_i P_z=0)A_i i0,
+    F_i^-=i0^dagger A_i^dagger(R_i P_z=1)A_i i0.        (182)
+
+These are the actual finite catalogue's effects, including rounded
+coefficients and raw readiness, rather than an exact continuous mean
+function imposed as a new axiom. Fixing them still lets xi(Y) and the
+field vary; changing catalogue degree, caps or inventory has its OWN
+price/error. The flags commute as the actual computational tests. Encoders use
+disjoint source/work factors; programme bits and these flags are not
+subsequently altered. A shared root c0 is conditioned ONCE on its actual
+prepared support, with its success factor retained once. If encoders
+share further work, use the actual JOINT effects instead of multiplying
+individual F_i. No factorization of unknown quantum inputs is assumed.
+
+For a single encoder and any source/DATA entangled density rho, its
+subsequent fixed native Z-controlled collision has successful reduced
+channel
+
+    N_suc(rho)=U_+ Tr_source[(F_i^+ tensor I)rho]U_+^dagger
+                +U_- Tr_source[(F_i^- tensor I)rho]U_-^dagger.       (183)
+
+For many fresh encoders the Heisenberg map is the sum over sign strings
+of (tensor_i F_i^(sigma_i)) tensor U_sigma^dagger O U_sigma, where
+U_sigma is the actual ordered target/algorithm branch with all fixed
+interleavings. This fixes algorithm-control coherences and unknown-DATA/
+oldRIGHT action AFTER ignoring the retained programme garbage; it does
+not fix that garbage or the programme-state coherences themselves. It concerns the ACTUAL
+finite processor, not only its ideal unitary-channel limit.
+
+Consequently an implementation tangent with delta F_i^+=delta F_i^-=0
+for every component, or the analogous zero joint-effect tangent, has
+exactly delta q=0. At fixed actual inventory, cut, middle and other
+source data, full-word conjugacy gives delta H_ref=0 and hence
+
+    delta_encoder B_N=0.                              (184)
+
+This includes changes on unused/failure/garbage columns, rather than
+requiring delta A_i=0. A concrete native family appends literal CX(z,g), or sector-preserving
+G/CX words, on fresh retained garbage g
+ignored by R_i. They commute with both flag tests and preserve(182)
+exactly. Their work, common-inventory cells and actual inverses count
+in the whole word; no costless operation is asserted. Their additional
+future distinctions can remain readable even though this Book source
+is neutral. This is an actual source fibre, not a claim that the full
+future profiles or every physical law agree.
+
+The full effects in(182) are essential. Fixing only normalized mean
+allows F_i^+/- ->c F_i^+/-, changing readiness and giving the genuine
+source j'_K(gamma_N q)q Dgamma_N. Even with fixed success, equal means
+on a selected product/field curve do not generally determine F_i.
+For example J=[[0,-1],[1,0]], F=J tensor J is real symmetric, F^2=I.
+Effects I4/2 and I4/2+eta F,0<eta<1/2, agree on every real product
+state but differ on the Bell+ input. Their unknown-input programme
+channels can differ. Even two DIAGONAL effects can agree when repeated
+inputs are tied: I4/2+eta(Z1-Z2),0<eta<1/4, agrees with I4/2 at u1=u2, but not
+on independently varied input means.
+
+For this sufficient calibration test choose the encoder INPUT interface
+AFTER its fixed material-moment readout. On the actual read-only class
+the successful compressed F_i^+/- are diagonal in those raw SIGN labels,
+even though raw failure columns need not preserve them. Pullback through
+the fixed readout gives the corresponding I,A operators on CAR, not
+computationally diagonal CAR matrices. Equality of BOTH complete
+response laws on an open cube of INDEPENDENT raw-slot means then fixes
+the full effects by the multiaffine Walsh polynomial identity. Equality
+only on the physical shared-field curve is insufficient. This gives a
+usable sufficient correctness test when that input family belongs to
+the same supplied task; it does not prove the task is compulsory or
+that every physically allowed encoder variation lies in this fibre.
+For approximate equality retain delta F, the induced delta q and its
+actual gain-normalized source, rather than asserting(184) unchanged.
+
+### The combined source application and its remaining normal
+
+Equations(177)-(181) now control the joint canonical programme input,
+including geometry/matter correlations, while(182)-(184) solve the
+actual channel-preserving encoder/work directions. Generated programme
+states themselves use the existing full causal adjoint. These are
+compatible components of the SAME actual expanded Book execution,
+with unchanged reference equation and physical source normalization.
+
+Independent changes of F_i^+/- themselves, seed flags, middle, cut,
+clock, raw source frame or genuinely read extra coordinates retain
+their own complete sources. In particular readiness variation is not
+killed by the42 field rows. The remaining physical transition is the
+original endogenous configuration/variation map: show that the actual
+Book X_N has this generated/task tangent image, or compute the full
+source on every extra admitted direction. No selected field minimum,
+complete finite stationary solution, physical GR, positive_gr or
+raw216 closure is promoted by this joint source result.
+
+
 ## 8. Reproduction
 
 Run from this directory:

@@ -8525,3 +8525,65 @@ stationary_root_transfer reviews reread and ACCEPTED this exact final pin.
 
 Final work/protocol/assembly/repository and diff whitespace checks PASS.
 Scientific status and the remaining native programme/domain obligations are unchanged.
+
+
+### 24 October: joint canonical input source and actual encoder-response fibre
+
+Phase: native realization / source composition; same PR #334 owner,
+constitutive slot and native-programme-v1 carrier. Input:
+5e01fd355e58a27f5801856b1fdaed833103c3c8. Write paths: primary residual
+owner section7s and this brief. The parent is the independent-input and
+implementation budget(129); no new task, action or status promotion.
+
+Changed input:7r's whole native query/report network now derives every
+coefficient programme from ONE canonical free42 geometry/material bank.
+There are no independently preloaded duplicate coefficient coordinates.
+The exact fixed-pair signed-involution readout gives effects(I+/-A)/2
+on the entire original CAR/reference space, including its complement;
+address scratch returns before interference and actual factory flags
+remain. Raw SIGNs then act only as retained controls. This proves the
+whole kernel's one-slot alphabet(177), rather than just agreement on
+the prepared field curve. Different occurrences consume distinct complete
+banks; no unknown state is cloned.
+
+Equations(178)-(180) compose the collective theorem with the full query
+kernel and its actual field Jacobian. The covariance keeps the true
+CAR/site cross terms and actual geometry factors. The full Book gain,
+root/factory/injection readiness and whole raw inverse are counted once.
+The source norm is ambient at the IID conditional pure-bank base;
+physical constrained tangents inherit only its upper bound through their
+actual lift. The covariance and preparation metric(181) are distinct.
+The exact reference root bounds the actual finite processor through the
+owned first-jet errors; its stationary equations are not assigned to that
+processor. Code-history comparisons retain actual paid finite secants.
+
+Actual UNNORMALIZED encoder effects F_i+/- in(182) determine the reduced
+successful channel even on source-DATA entangled inputs. Their zero
+variation, at fixed actual inventory/cut/middle/source, proves exact
+encoder/work-source neutrality(184). Literal CX into retained garbage
+is a native nontrivial example, with all its work/inverse priced. The
+joint-effect form covers shared work; fixed normalized means alone do
+not fix readiness. Programme garbage and full future profiles remain
+distinct from the reduced logical channel. The Walsh correctness test
+uses independent raw-slot inputs and does not assert their compulsory
+physical task or exhaustion of the admitted encoder domain.
+
+Narrow exact checks (Python3.9.6/SymPy, exit0): full-complement signed
+involution effects and hostile raw-H readout;32-column geometry/CAR
+first conditional via the1024-dimensional two-slot contraction; native
+encoder garbage-CX effects; product/Bell and tied-diagonal controls;
+entangled source/DATA channel with changed retained garbage. No unchanged
+full128/root/Lean or registered scientific suite was replayed.
+
+Final section7s, heading through separators immediately before8:
+17510 UTF-8 bytes; SHA256
+b9bcd14363d4aa395d4a7fe941b35fe9a1fd5bf9b217aa415902605a9e236425.
+Independent native_source_application, price_geometry_bridge and
+stationary_root_transfer reviews reread and ACCEPTED this exact pin.
+
+The remaining native application is the original X_N configuration and
+variation map, or the complete source on its additional admitted rows:
+effect-changing encoders/readiness, source/seed/frame, middle, cut and
+clock. Compatible whole stationary refinement remains open. No physical
+field minimum, all-Euler root, positive_gr/GR_closed or raw216 closure
+is claimed.
