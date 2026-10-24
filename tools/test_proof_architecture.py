@@ -246,6 +246,84 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertEqual([row["id"] for row in view["matches"][0]["declared_applications"]],
                          ["r1-to-o1"])
 
+    def test_compiled_reuse_follows_explicit_canonical_claim_alias(self) -> None:
+        data = dataset()
+        data["aliases"] = [{
+            "legacy_id": "OLD-CLAIM-1", "kind": "CANONICAL_TARGET",
+            "canonical_claim_id": "CLM-1", "first_reference": "BOOK.md:10",
+            "note": "Renamed claim locator.",
+        }]
+
+        class InventoryStub:
+            @staticmethod
+            def candidate_names(module: str, atom: str) -> list[str]:
+                return [atom]
+
+            @staticmethod
+            def run_inventory(names: list[str], import_root: str):
+                self.assertEqual(names, ["D0.Foo.bar"])
+                self.assertEqual(import_root, "D0.All")
+                return ([{"name": "D0.Foo.bar", "exists": True,
+                          "module": "D0.Foo", "proof_dependencies": [],
+                          "elaborated_type": "D0.Foo.Hypothesis → D0.Result"}],
+                        "collector-sha", "lean-source-sha")
+
+            @staticmethod
+            def module_source_path(module: str | None) -> str | None:
+                return "D0/Foo.lean" if module == "D0.Foo" else None
+
+        view = proof.reuse_view(data, "OLD-CLAIM-1", lean_inventory=InventoryStub)
+
+        self.assertEqual(view["compiled_claim_reuse"], [])
+        self.assertEqual(view["compiled_claim_reuse_status"], "controlled_alias_candidate")
+        self.assertEqual(len(view["compiled_claim_alias_reuse"]), 1)
+        alias = view["compiled_claim_alias_reuse"][0]
+        self.assertEqual(alias["alias_id"], "OLD-CLAIM-1")
+        self.assertEqual(alias["canonical_claim_id"], "CLM-1")
+        self.assertTrue(alias["target_claim_found"])
+        self.assertEqual(alias["compiled_claim_reuse"]["claim_id"], "CLM-1")
+        self.assertEqual(
+            alias["compiled_claim_reuse"]["compiled_declarations"][0]["name"],
+            "D0.Foo.bar",
+        )
+        self.assertIn("no semantic equivalence", view["compiled_claim_reuse_interpretation"])
+
+    def test_compiled_reuse_does_not_expand_lookup_only_alias(self) -> None:
+        data = dataset()
+
+        class NeverCompile:
+            @staticmethod
+            def run_inventory(names: list[str], import_root: str):
+                raise AssertionError("lookup-only aliases are not claim locators")
+
+        view = proof.reuse_view(data, "OLD-1", lean_inventory=NeverCompile)
+
+        self.assertEqual(view["compiled_claim_alias_reuse"], [])
+        self.assertEqual(view["compiled_claim_reuse_status"], "key_is_not_an_exact_claim_id")
+        self.assertIn("Lookup-only aliases", view["compiled_claim_reuse_interpretation"])
+
+    def test_compiled_reuse_reports_missing_canonical_alias_target_without_compiling(self) -> None:
+        data = dataset()
+        data["aliases"] = [{
+            "legacy_id": "OLD-MISSING", "kind": "CANONICAL_TARGET",
+            "canonical_claim_id": "MISSING-CLAIM", "first_reference": "BOOK.md:11",
+            "note": "Stale canonical target control.",
+        }]
+
+        class NeverCompile:
+            @staticmethod
+            def run_inventory(names: list[str], import_root: str):
+                raise AssertionError("missing alias target must not trigger a Lean query")
+
+        view = proof.reuse_view(data, "OLD-MISSING", lean_inventory=NeverCompile)
+
+        self.assertEqual(view["compiled_claim_reuse_status"], "controlled_alias_target_missing")
+        self.assertEqual(view["compiled_claim_alias_reuse"], [{
+            "alias_id": "OLD-MISSING", "alias_kind": "CANONICAL_TARGET",
+            "canonical_claim_id": "MISSING-CLAIM", "target_claim_found": False,
+        }])
+        self.assertIn("absent from claims.csv", view["compiled_claim_reuse_interpretation"])
+
     def test_result_crosswalk_keeps_compiled_candidates_separate_from_application_acceptance(self) -> None:
         with tempfile.TemporaryDirectory() as temp:
             root = pathlib.Path(temp)

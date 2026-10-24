@@ -889,12 +889,55 @@ def reuse_view(dataset: dict[str, Any], key: str, *,
             compiled_claim_reuse_view(dataset, item, lean_inventory, import_root)
             for item in claims
         ]
+        alias_reuse = []
         if not claims:
-            result["compiled_claim_reuse_status"] = "key_is_not_an_exact_claim_id"
-            result["compiled_claim_reuse_interpretation"] = (
-                "Use a claims.csv claim ID for the joined claim-to-declaration view. "
-                "Assembly results and applications retain their own declared relation view."
+            claim_items = {item["key"]: item for item in records(dataset)
+                           if item["kind"] == "claim-metadata"}
+            for alias in hits:
+                if alias["kind"] != "alias-lookup" or alias["key"] != key:
+                    continue
+                alias_record = alias["record"]
+                target_id = str(alias_record.get("canonical_claim_id", ""))
+                if alias_record.get("kind") != "CANONICAL_TARGET" or not target_id:
+                    continue
+                target = claim_items.get(target_id)
+                alias_item = {
+                    "alias_id": alias["key"],
+                    "alias_kind": alias_record.get("kind"),
+                    "canonical_claim_id": target_id,
+                    "target_claim_found": target is not None,
+                }
+                if target is not None:
+                    alias_item["compiled_claim_reuse"] = compiled_claim_reuse_view(
+                        dataset, target, lean_inventory, import_root
+                    )
+                alias_reuse.append(alias_item)
+        result["compiled_claim_alias_reuse"] = alias_reuse
+        if alias_reuse:
+            targets_found = all(row["target_claim_found"] for row in alias_reuse)
+            result["compiled_claim_reuse_status"] = (
+                "controlled_alias_candidate" if targets_found
+                else "controlled_alias_target_missing"
             )
+            if targets_found:
+                result["compiled_claim_reuse_interpretation"] = (
+                    "The alias registry explicitly points this key to a canonical claim ID. "
+                    "The target's compiled declarations remain locator evidence; no semantic "
+                    "equivalence, application, or claim acceptance is inferred."
+                )
+            else:
+                result["compiled_claim_reuse_interpretation"] = (
+                    "The alias registry points to a canonical claim ID that is absent from "
+                    "claims.csv. No Lean query is made for the unresolved alias target."
+                )
+        if not claims:
+            if not alias_reuse:
+                result["compiled_claim_reuse_status"] = "key_is_not_an_exact_claim_id"
+                result["compiled_claim_reuse_interpretation"] = (
+                    "Use a claims.csv claim ID or an explicit CANONICAL_TARGET alias for "
+                    "the joined claim-to-declaration view. Lookup-only aliases, assembly "
+                    "results, and applications retain their separate relation views."
+                )
     return result
 
 
