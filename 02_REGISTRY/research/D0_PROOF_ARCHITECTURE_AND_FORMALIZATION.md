@@ -1798,3 +1798,70 @@ both pinned source sections and both Lean modules were found as direct content.
 `python -m unittest tools.test_proof_architecture` passed 35/35 tests, and the
 updated runner SHA-256 is
 `ddbf8ac8a0c70c6586d038e03fd586dd4eda6ebbe5444c3645df99d8c7f39138`.
+
+### Null-chart endpoint-map recovery (24 October 2026)
+
+This continues the same pinned source and consumer: #334 commit
+`fe5cf335da04cac14e50407b03f98b96be17dc52`,
+`A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md`, blob
+`1c8d59e5533b443d9a015dc4512cfbc160ae7e62`, §§8.4–8.5, Eqs. (26), (28),
+and (30a); consumer §5.1 of
+`A4D_EXACT_AF_RADIAL_COFRAME_EQUIVALENCE_NONLINEAR_SPIN2_2026_10_18.md`,
+blob `734e21ae6bc04ff3446ad15858936d417fdd2e55`. The former theorem handled
+the observed coframe after assuming that each supplied operator had the
+raising-query representation. This continuation adds a concrete query-family
+constructor and consumes the existing finite-carrier null inverse.
+
+`principalFrameJuliaQueryFamily F L M` constructs the four full finite-carrier
+queries from the repository-owned CAR creator matrices, using the four columns
+of `U_mat = L η Fᵀ` and their endpoint linear maps `M_r`. The existing
+full-carrier CAR/exterior identity supplies the exact bridge to the query
+readout. Its `columnMatrix`, coframe-recovery, and metric-invariance theorems
+specialize the prior composition without a separate operator-equality
+hypothesis. `principalFrameObservedNullQueryFrameReadout` then exposes a
+per-role endpoint decoder from the same observed operator and its
+vacuum-readout vector.
+`principalFrameJuliaQueryFamily_null_link_recovery` composes that decoder with
+the existing Eq. (28) result and recovers `M_r` for any selected role `r` on
+the null chart.
+
+The link theorem retains the actual endpoint assumptions for that selected
+role: the source form is symmetric and nondegenerate, `M_r` transports it to
+the target form, `α_r(u_r)=1`, and `u_r` is nonzero and null. The theorem does
+not require the other three shifts to be null. The canonical Euclidean witness
+supplies the separate normalized vector and fixes the positive branch at
+`q=0`. Thus this is an algebraic left-inverse application for one complete
+finite query in the four-query family. It does not prove smoothness of the
+full inverse or `D R D Φ = I`, compose the non-null chart (27), impose the
+source's proper-Lorentz endpoint family, recover observer/clock jets, or
+establish the variational pullback (31), native price/source equality,
+physical admission, or GR selection. It changes no claim status, C0
+disposition, scientific acceptance, or #334 lifecycle state.
+
+The targeted Lean 4.30.0 build of
+`D0.Geometry.A4DJuliaPrincipalFrameRecovery` passed (3,020 Lake jobs). The
+compiled declaration inventory contains 53 declarations across
+`A4DRawSolderFrameAction` and `A4DJuliaPrincipalFrameRecovery`; the new query
+and endpoint-map theorems have the standard transitive axioms
+`Classical.choice`, `Quot.sound`, and `propext`. At snapshot
+`0a613fcd6683786fa6bb2ad37463601aec0cc61c` with `worktree_dirty=true`, Lean
+source digest is
+`a6a4743b44c682c5cc6729742f65eabd2b96f45be873259312c7cdf5dd83d73f`,
+inventory SHA-256 is
+`22bec2d3c61f70d4b10208aaa16d3004c5c57c9edecdbc845a9dc0e87cd4fac2`,
+module SHA-256 is
+`124303f49c30f72bc6829206e70e8ce20e3431640ba6caaad08fca0f5bc13f39`, and
+collector SHA-256 remains
+`8e95fbfb6896de85a8d0309aa2b7ad68051cce7b7d42749b54ce4bef07131ed7`.
+
+The cold-start case now searches the null inverse as a distinct §8.4 source
+from the §8.5 coframe map and §5.1 consumer, and requires the new constructor,
+decoder, and Lean module to be discoverable. The runner SHA-256 is
+`030bbecb93338ce2f1c991d13bf17141dd8dcfdea1dcf8f113eef7599342dadf`.
+The full cold-start run found all 16/16 search cases, passed all 17 benchmark
+cases, and retained the exact-source versus unrelated-prose impact control.
+The focused proof-architecture suite passed 35/35 tests; generated-view and
+claim-map checks passed; the debt audit remains at its three baseline findings.
+The full cold-start run found all 16/16 search cases, passed all 17 benchmark
+cases, and retained the exact-source versus unrelated-prose impact control.
+The focused proof-architecture suite passed 35/35 tests.
