@@ -191,6 +191,45 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertEqual(view["target_interface"]["carrier"], "exterior-four-space")
         self.assertEqual([x["id"] for x in view["declared_applications"]], ["r1-to-o1"])
 
+    def test_compiled_reuse_joins_exact_claim_locator_and_proof_dependencies(self) -> None:
+        data = dataset()
+        data["claims"].append({"claim_id": "CLM-2", "book": "B2", "section": "3",
+                               "lean_module": "D0.Foo", "lean_theorem": "D0.Foo.lower",
+                               "lean_status": "FORMALIZED", "notes": "Supporting locator."})
+
+        class InventoryStub:
+            @staticmethod
+            def candidate_names(module: str, atom: str) -> list[str]:
+                return [atom]
+
+            @staticmethod
+            def run_inventory(names: list[str], import_root: str):
+                self.assertEqual(names, ["D0.Foo.bar"])
+                self.assertEqual(import_root, "D0.All")
+                return ([{"name": "D0.Foo.bar", "exists": True,
+                          "module": "D0.Foo", "proof_dependencies": ["D0.Foo.lower"],
+                          "elaborated_type": "D0.Foo.Hypothesis → D0.Result"}],
+                        "collector-sha", "lean-source-sha")
+
+            @staticmethod
+            def module_source_path(module: str | None) -> str | None:
+                return "D0/Foo.lean" if module == "D0.Foo" else None
+
+        view = proof.reuse_view(data, "CLM-1", lean_inventory=InventoryStub)
+        compiled = view["compiled_claim_reuse"][0]
+
+        self.assertEqual(compiled["claim_locator_mappings"][0]["resolution_status"], "resolved")
+        self.assertEqual(compiled["compiled_declarations"][0]["source_path"], "D0/Foo.lean")
+        self.assertEqual(compiled["compiled_dependency_claim_links"], [{
+            "source_claim_id": "CLM-1", "source_declaration": "D0.Foo.bar",
+            "dependency_declaration": "D0.Foo.lower",
+            "target_claim_locators": [{"claim_id": "CLM-2", "theorem_atom": "D0.Foo.lower",
+                                        "module_locator": "D0.Foo"}],
+            "relation": "compiled-proof-dependency-to-claim-locator",
+        }])
+        self.assertEqual(compiled["declared_metadata_relations"]["declared_applications"], [])
+        self.assertIn("not inferred", compiled["interpretation"])
+
     def test_text_search_returns_candidate_not_accepted_relation(self) -> None:
         with tempfile.TemporaryDirectory() as temp:
             root = pathlib.Path(temp)

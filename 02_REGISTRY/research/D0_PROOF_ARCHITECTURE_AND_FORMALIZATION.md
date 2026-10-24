@@ -57,6 +57,8 @@ The collector has run successfully on `D0.Foundation.VerificationCore.verificati
 
 Search is deterministic and bounded: exact IDs/names, aliases, sections, declared result/application links, and scoped attempts first. The content pass uses one `rg --json` scan to build query-specific concept hits, then reads evidence and follows pins only from its bounded top candidates. Russian/English concepts are grouped; low-information words are dropped from scoring when enough specific groups remain. Results include matched lines and nearest headings, with direct content, filename-only hits, and citations kept distinct. Ranking may suggest candidates but cannot set truth. Search failure is not nonexistence.
 
+`reuse --lean CLAIM-ID` joins one exact claims.csv row to its theorem-name candidates, declarations actually present in the selected compiled Lean import, and their reported proof dependencies. It also reports exact dependency-name intersections with other claim locators as candidate crosswalk edges. This compiled Lean evidence remains separate from declared assembly application edges, conceptual presuppositions, and semantic acceptance.
+
 The read-only `tools/proof_architecture.py` view composes current claims, registered assumptions, formal-support locators, aliases, assembly contracts/results/applications/attempts, conceptual presupposition edges, and bounded full-text candidates. Claims expose their registered assumption rows separately from applications and conceptual edges. Commands are `search`, `show`, `why`, `reuse`, and `impact`; `show NAME --lean --import-root MODULE` calls the elaborated declaration collector. Every answer includes source digests and a snapshot commit. Conceptual edges, assumption links, alias lookup, text matches, declared application edges, and elaborated Lean facts are distinct output kinds. `why` reports unknown hypotheses separately from explicitly empty declarations and distinguishes unmapped hypotheses, unknown targets, and invalid map entries. `impact KEY` follows only currently declared evidence/application refs; `impact --base REF` delegates to the existing assembly diff impact. Neither form claims a complete global semantic impact graph.
 
 Exact GitHub `blob/<commit>/<path>` links are now resolvable when their commit objects are already present in the local repository: the search derives the blob from `commit:path`, reads it, and returns the derived blob with direct line/section evidence. Explicit commit/path/blob references are checked against the expected blob. Git lazy fetching is disabled for this lookup, so unavailable external commits remain citation-only rather than causing a network fetch. The caller distinguishes a direct pinned source from a path mention and from a local filename match.
@@ -304,3 +306,42 @@ application and does not prove equality on arbitrary 16-state inputs, the
 full all-jet Lorentz inverse or its complete variational pullback. Independent
 C0 acceptance and the native physical Book/Cost-Info/clock/controller/source
 selection premises remain open under their existing owners.
+
+## 24 October compiled claim-reuse view
+
+The new `reuse --lean` path was run through the CLI on
+`D0-TOP-HODGE-INVERSE-SPECTRAL-RIGIDITY-001` using public import `D0.All`.
+All 11 exact theorem-name atoms in that claim row resolved to declarations in
+the compiled environment. The view finds the concrete application
+`D0.Synthesis.TopHodgeInverseSpectralRigidity.scene_topHodge_inverse_spectral_rigidity_application`
+in `03_FORMALIZATION/D0/Synthesis/TopHodgeInverseSpectralRigidity.lean`; its
+reduced conclusion is `{p + 1, q + 1, r + 1} = {9, 11, 13}`. Its compiled
+proof dependencies include the generic
+`topHodge_inverse_spectral_rigidity` result and the scene's
+`scene_topHodge_spectral_coordinates` and coordinate declarations. The exact
+dependency-to-locator join shows the application declaration consuming the
+generic result locator. The scene-coordinate declaration is visible as a
+compiled dependency but currently has no exact theorem locator in claims.csv.
+
+For this claim, the separate declared assembly-application list is empty. The
+view therefore records typed Lean proof dependencies and candidate claim
+locator crosswalks without inventing an assembly application edge or semantic
+claim acceptance. It creates no claim ID, status, or scientific owner.
+
+The current 33-query cold-start rerun still passes all 13/13 scenarios and the
+14-case source-impact benchmark. The focused proof-architecture suite passes
+25/25 tests. The claim-reuse CLI run used Lean source digest
+`f806ee18e9f9333b6c92db25c579f5843f066da1df1830e1a6ae18730ebd58ba` and
+collector SHA-256
+`0b80b2f838d2e1607d2bb93596e239802fe66edad23fbd3b0e269637b4a69881`; current
+tool digests are:
+
+| Input | SHA-256 |
+|---|---|
+| `tools/proof_architecture.py` | `d0e92e3b42e99562a151a41baad18c6569148c3195298002d213d11d96fbae71` |
+| `tools/proof_architecture_cold_start.py` | `00b8f483601c36ba3d548afca0752c9d6760db930a01dcdab4aa273b4c047d48` |
+| `tools/test_proof_architecture.py` | `c23b8fa722ff9543b771d24e93b5aa96048cf8fd3be887a9c4bca68f1fc51f3d` |
+
+This is an exact compilation and name-crosswalk example on a finite
+mathematical result. It neither closes the full D0 proof corpus nor changes the
+unresolved physical premises, C0 acceptance boundary, or #334 ownership.

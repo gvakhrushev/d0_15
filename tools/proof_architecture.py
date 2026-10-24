@@ -796,6 +796,108 @@ def relation_view(dataset: dict[str, Any], item: dict[str, Any]) -> dict[str, An
     }
 
 
+def compiled_claim_reuse_view(dataset: dict[str, Any], item: dict[str, Any],
+                             lean_inventory: Any, import_root: str) -> dict[str, Any]:
+    """Join one claim's exact name locators to compiled declarations and proof dependencies."""
+    record = item["record"]
+    claim_id = str(record.get("claim_id", ""))
+    module = str(record.get("lean_module", ""))
+    mappings: list[dict[str, Any]] = []
+    names: list[str] = []
+    for atom in _lean_atoms(record):
+        candidates = lean_inventory.candidate_names(module, atom)
+        mappings.append({"claim_id": claim_id, "module_locator": module,
+                         "theorem_atom": atom, "candidate_names": candidates})
+        names.extend(candidates)
+    if not mappings:
+        mappings.append({"claim_id": claim_id, "module_locator": module,
+                         "theorem_atom": None, "candidate_names": []})
+    names = list(dict.fromkeys(names))
+    rows, collector_sha, lean_digest = (
+        lean_inventory.run_inventory(names, import_root) if names else ([], None, None)
+    )
+    by_name = {str(row.get("name", "")): row for row in rows}
+    resolved_rows: dict[str, dict[str, Any]] = {}
+    locator_results = []
+    for locator in mappings:
+        resolved = []
+        for candidate in locator["candidate_names"]:
+            row = by_name.get(candidate)
+            if row and row.get("exists"):
+                row.setdefault("source_path", lean_inventory.module_source_path(row.get("module")))
+                resolved_rows[candidate] = row
+                resolved.append(row)
+        locator_results.append({
+            **locator,
+            "resolution_status": "resolved" if resolved else "unresolved",
+            "resolved_declarations": resolved,
+        })
+    declared_claim_locators: dict[str, list[dict[str, str]]] = {}
+    for claim in dataset["claims"]:
+        target_claim = str(claim.get("claim_id", ""))
+        target_module = str(claim.get("lean_module", ""))
+        for atom in _lean_atoms(claim):
+            for candidate in lean_inventory.candidate_names(target_module, atom):
+                target = {"claim_id": target_claim, "theorem_atom": atom,
+                          "module_locator": target_module}
+                values = declared_claim_locators.setdefault(candidate, [])
+                if target not in values:
+                    values.append(target)
+    dependency_claim_links = []
+    for name, row in resolved_rows.items():
+        for dependency in row.get("proof_dependencies", []):
+            targets = declared_claim_locators.get(dependency, [])
+            if targets:
+                dependency_claim_links.append({
+                    "source_claim_id": claim_id,
+                    "source_declaration": name,
+                    "dependency_declaration": dependency,
+                    "target_claim_locators": targets,
+                    "relation": "compiled-proof-dependency-to-claim-locator",
+                })
+    return {
+        "claim_id": claim_id,
+        "claim_locator_mappings": locator_results,
+        "compiled_declarations": list(resolved_rows.values()),
+        "compiled_dependency_claim_links": dependency_claim_links,
+        "declared_metadata_relations": relation_view(dataset, item),
+        "collector_sha256": collector_sha,
+        "lean_source_digest": lean_digest,
+        "public_import_root": import_root,
+        "interpretation": (
+            "Claim theorem strings are candidate-name locators. Compiled declaration presence and "
+            "reported Lean proof dependencies are separate evidence. A dependency joined to another "
+            "claim locator is a candidate crosswalk only; registry application links, conceptual "
+            "edges, and semantic claim acceptance are not inferred from name matches."
+        ),
+    }
+
+
+def reuse_view(dataset: dict[str, Any], key: str, *,
+               lean_inventory: Any | None = None,
+               import_root: str = "D0.All") -> dict[str, Any]:
+    """Show declared reuse relations and optionally join claim locators to compiled Lean evidence."""
+    hits = find_exact(dataset, key)
+    result = {"key": key, "matches": [
+        {"item": item, **relation_view(dataset, item)} for item in hits
+    ], "snapshot_commit": dataset["snapshot_commit"],
+        "source_digests": dataset["source_digests"]}
+    if lean_inventory is not None:
+        claims = [item for item in hits
+                  if item["kind"] == "claim-metadata" and item["key"] == key]
+        result["compiled_claim_reuse"] = [
+            compiled_claim_reuse_view(dataset, item, lean_inventory, import_root)
+            for item in claims
+        ]
+        if not claims:
+            result["compiled_claim_reuse_status"] = "key_is_not_an_exact_claim_id"
+            result["compiled_claim_reuse_interpretation"] = (
+                "Use a claims.csv claim ID for the joined claim-to-declaration view. "
+                "Assembly results and applications retain their own declared relation view."
+            )
+    return result
+
+
 def why_view(dataset: dict[str, Any], key: str) -> dict[str, Any]:
     obligation = next((x for x in records(dataset) if x["kind"] == "obligation" and x["key"] == key), None)
     if obligation:
@@ -915,8 +1017,12 @@ def main() -> int:
                       help="compiled public import used by --lean (default: D0.All)")
     why = sub.add_parser("why", help="show declared route, hypotheses, and missing application edges")
     why.add_argument("key")
-    reuse = sub.add_parser("reuse", help="show declared applications and scoped attempts for a key")
+    reuse = sub.add_parser("reuse", help="show declared reuse links and optional compiled claim dependencies")
     reuse.add_argument("key")
+    reuse.add_argument("--lean", action="store_true",
+                       help="compile exact theorem-name locators for a claims.csv ID")
+    reuse.add_argument("--import-root", default="D0.All",
+                       help="compiled public import used by --lean (default: D0.All)")
     impact = sub.add_parser("impact", help="show declared impact, or assembly impact since a Git base")
     impact.add_argument("key", nargs="?")
     impact.add_argument("--base")
@@ -965,10 +1071,13 @@ def main() -> int:
         elif args.command == "why":
             result = why_view(data, args.key)
         elif args.command == "reuse":
-            hits = find_exact(data, args.key)
-            result = {"key": args.key, "matches": [
-                {"item": item, **relation_view(data, item)} for item in hits
-            ], "snapshot_commit": data["snapshot_commit"], "source_digests": data["source_digests"]}
+            if args.lean:
+                import lean_declaration_inventory
+                inventory = lean_declaration_inventory
+            else:
+                inventory = None
+            result = reuse_view(data, args.key, lean_inventory=inventory,
+                                import_root=args.import_root)
         else:
             if not args.key:
                 parser.error("impact requires KEY unless --base is supplied")
