@@ -8123,3 +8123,102 @@ Native_valuation_map and universal_parent_map independently reread and
 ACCEPT the final14052-byte section at the pinned SHA above.
 Targeted work/protocol guards and diff whitespace check PASS on final
 inputs. No unchanged mathematical integration suite was replayed.
+
+
+### 24 October: the owned uniform geometric-query compiler acquires its complete Book source
+
+Phase: native realization / global composition; same PR334 owner and
+constitutive/native-programme-v1. Inputf410ea2f1d5a871f062a903d3627744354f1e623.
+Write paths: primary residual owner section7n and this brief only.
+No new task, source oracle, checker or physical-status promotion.
+
+Changed mathematical input: the OLD labelled source8.6 already constructs
+one uniform C2 query programme from supplied full-Lorentz Julia operations.
+Its off-dark WORK complement prevented an asserted equality of whole heat.
+The NEW consumer is the complete source-X conjugate return and balanced
+recording of7e-j. This is an actual cross-owner application, not another
+geometric reconstruction or a replacement of Book by Shannon information.
+
+The source coordinate inverse8.4-8.5/7k supplies geometric SIGN angles as
+smooth functions of actual entries on the strict compact window. Applying
+owned8.6(32)-(34) to those angles gives ONE fixed finite programme per
+accuracy; only its source queries vary with the fields. External S(t),
+field-dependent code selection and free tomography are no longer separate
+geometric inputs. Actual source access/storage/control admission remains.
+Independently moving frame/density data are augmented inputs with their
+own jets; they are not reconstructed by those40 geometric directions.
+
+Unconditional parking of the COMPLETE changing query register gives
+ Swap_D,S (Q_D,W tensor I_S) Swap_D,S=I_D tensor Q_S,W
+on ALL columns when S is untouched between the swaps. Unknown original
+CAR/oldRIGHT correlations are restored exactly, even at finite compiler
+error; all leakage remains paid WORK. Multiplexed address motion needs
+full address+CAR storage. No original RIGHT is reused as scratch.
+
+The fixed encoder ignores query garbage in its READY test; it acts on
+correlated SIGN with its existing exact effect gamma E_n. For the ACTUAL
+complete V_epsilon, its entire physical inverse and balanced bank,
+ B_epsilon=H_ref(N_epsilon,D_full)+j_K(gamma q_epsilon)
+exactly. Conjugacy makes the entire heat field constant, including dirty
+storage and failure columns. A changing accuracy changes the absolute
+heat and clock; these constants are not removed from the price.
+The old full128 action is not identified with this new full execution.
+
+Exact inverse scope is resolved in two stated versions. Julia queries
+require actual exact adjoint/J_c placement, not just its matrix formula.
+Alternatively, original full128 U=I-2LLdagger has Udagger=U on ALL columns;
+7k105-109 gives its entry-to-field map, and the same owned8.6 compiler
+uses those entries with the SAME U-call in the reverse word. Its dark
+sector supports the inherited controlled-swap construction. Measured
+Kraus access alone does not supply this coherent full-query interface.
+Source-X reverses all actual compiled constant letters. Approximate-only
+inverse implementations keep their existing complete-word source debt.
+
+The owned whole-input weak effect is E_n,tau=r0 I+tau T, ||T||<=Xi_click.
+Its identity term and normalized prepared density give
+ D(q_epsilon-q_0)/tau=Tr[T D(rho_epsilon-rho_0)].
+Using ACTUAL Gamma_epsilon=j'_K(gamma q_epsilon)gamma a0 tau/Omega,
+ ||DB_epsilon/Gamma_epsilon-Omega Dq_0/(a0 tau)||
+ <=(Omega Xi_click/a0) sup_||v||<=1 ||D_v(rho_epsilon-rho_0)||_1.
+No inverse tau, readiness or inherited-history probability appears.
+For amplitude errors e0,e1 and ideal derivative bound B_h, the density
+jet error is <=2e1+2B_h e0. All real field/source Jacobians and h,n,degree
+constants remain. Existing124 and129 consume this added error; cumulative
+execution7m uses its actual block gain with the same cancellation.
+Moving encoder/weights/initial input/rank/clock keeps its extra source.
+
+Original Book03 already states finite stationarity; the existing stationary
+execution bridge supplies its pullback. No new MDL or minimum axiom is
+needed for this master-action application. Remaining physical premises
+are actual native source/storage/control and task admission, complete
+physical variation image, other selected stack sources and stationary
+refinement. C2 approximation gives no new exact finite roots/compactness.
+
+The compiler supplies the GEOMETRIC40 map. A nonvacuum Q_epsilon must
+also contain the SAME genuine material preparer with both field jets and
+protected-factor typing; geometry queries do not determine or clone two
+independent scalar/top amplitudes. Vacuum uses its declared fixed material
+input and the full vacuum Einstein consumer. The exact nonvacuum roots
+remain preserved on their separate exact chart; full D0-to-GR stays open.
+
+Smallest decisive checks: inline rational all-column models verify complete
+parking, a field-dependent dirty complement, whole conjugacy and scalar
+protected return at finite query leakage. A symbolic normalized-density
+check verifies140; falsely requiring query garbage to be blank produces
+a nonzero baseline source, as required. A separate exact involutive-query
+parking check verifies both code controlled-U and its retained nonidentity
+dirty complement. Both runs exit0. No unchanged full128/Lean replay.
+
+Final7n heading through before8 INCLUDING trailing LF:15866 UTF-8 bytes;
+SHA256962cdcaf494ccb646358610ab7ef573cdb8b2f434d2abc3b3661ae93af117198.
+Native_continuation_map and universal_parent_map independently re-read
+and ACCEPT this exact final pin. Their repairs make the geometric/matter
+carrier, augmented inputs and exact query-adjoint scope explicit.
+
+Consumed source blobs at inputf410ea2f:
+02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md 1c8d59e5533b443d9a015dc4512cfbc160ae7e62
+02_REGISTRY/research/sources/d0_nonvacuum_collective_preparation_2026-10-22/joint_source/PAID_COHERENT_INJECTION_AND_WHOLE_TAPE_SOURCE.md fbeec045f80d42c23df2caf2a00bd37be2d531e7
+02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/stationary_information/STATIONARY_EXECUTION_BRIDGE.md 15d24f331ccf4328c3a48bba52fc825fa00588dd
+
+Final work/protocol guards and diff whitespace check PASS on these inputs.
+No unchanged mathematical integration suite was replayed.

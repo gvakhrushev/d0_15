@@ -3493,6 +3493,284 @@ compulsory. No new selector, minimum, universal Einstein equation class,
 positive_gr or raw216 closure is claimed.
 
 
+## 7n. Use the owned uniform Julia-query compiler inside the complete Book execution
+
+24 October 2026. Same owner; published inputf410ea2f. The changed input is
+an existing constructive result, not a new choice of an Einstein action:
+[the labelled source owner, section8.6](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md#86-когерентная-сборка-запроса-из-julia-операций-и-её-полный-первый-источник)
+already builds one fixed coherent programme from the ACTUAL moving Julia
+queries. Its stated unresolved whole-price issue was the field-dependent
+operator on the off-dark storage complement. Sections7e-j now supply the
+complete conjugate return that prices that entire complement. This gives
+the missing same-programme full-Book consumer of that existing compiler.
+
+### Original stationarity is consumed, rather than introduced again
+
+Book03 section03.3.0b explicitly calls finite stationarity primitive;
+sections03.8 and03.25 state the stack and master-bootstrap equations.
+The owned [stationary execution bridge, section2](sources/d0_native_gr_completion_synthesis_2026-10-20/stationary_information/STATIONARY_EXECUTION_BRIDGE.md#2-distinguish-two-legitimate-composition-routes)
+already proves their first-source pullback through an ADMITTED execution
+map. It needs no full-field minimum, positive Hessian, or surjectivity
+onto the entire stack. This application does not seek a second least-action
+principle from the endpoint ActionProtocol or ProspectiveExecution.optimal.
+It constructs an execution map on the declared source-query interface;
+its physical admission and any other stack sources keep their scope.
+
+### A uniform generated preparer from the actual geometric queries
+
+Fix one mesh and a compact regular window inside the original strict
+Julia contraction, coframe-inverse and Cayley charts. Let Y_g denote the
+40 geometric coordinates, including their actual incidence sharing and
+collar. The owned source map Phi(Y_g) consists of the original full-Lorentz
+Julia queries J(X_r(Y_g)), with the original frame/Gram/density/calibration
+premises. Its labelled inverse in sections8.4-8.5 recovers Y_g smoothly;
+section7k also reconstructs it from the marked complete clock operator.
+Independently moving frame/density data must be supplied as augmented
+source inputs with their own jets; the40 queries alone do not reconstruct
+them. A single scalar port response supplies neither this geometry nor
+those additional inputs.
+
+The SIGN coordinate functions t_j(Y_g) of(113) are therefore smooth
+functions of those actual entry queries on the chosen window. Keep their
+strict |t_j|<1 margin. The target angle preparing
+sqrt((1+t_j)/2)|0>+sqrt((1-t_j)/2)|1> is analytic there.
+Apply the ALREADY proved polynomial/entry-word/rotation construction
+of source8.6(32)-(34) to these coordinate angles. It approximates them
+and their first two field jets uniformly. For each desired accuracy,
+all polynomial coefficients, schedules, constant controls and widths
+are selected ONCE for the entire field window. Only the actual Julia
+queries move with Y_g. No field-dependent external code selector,
+tomography table, separately supplied geometric S(t), or re-preparation
+chosen after reading a desired metric is used.
+
+For a fixed finite packet count n this gives an actual complete orthogonal
+word Q_epsilon(Phi(Y_g)), acting on the true work blanks, whose generated
+GEOMETRIC SIGN factor approaches beta_g(t(Y_g))^n with its first jets.
+Polynomial degree, product-formula depth and constant-gate precision are
+chosen in the order of source8.6, with their actual finite constants.
+Its real storage, addressing, source calls and work leakage are retained.
+There is no claim of efficient complexity or mesh-uniform bounds.
+The fixed logical source encoder is the existing one in(75)-(76);
+it is not refitted to a target Einstein output table.
+
+This invocation of8.6 is on its declared addressed Julia-query interface.
+Coherent query access and actual work/control preparation are inputs of
+that owner. In particular, matrix reconstruction alone does not execute
+a query. The native single-boost compiler does not supply arbitrary
+full40 query access: its remaining source-dependent Julia block is itself
+an input, with all heralded failures retained.
+
+### Protect the original material and price the entire stored complement
+
+The source compiler temporarily parks the unknown physical CAR input,
+with all its oldRIGHT correlations, in genuine prepared work storage.
+When an address register also moves, park the FULL changing address/CAR
+register. Fixed onsite access may use the smaller stated storage.
+The original oldRIGHT is never scratch. Between the two unconditional
+parking swaps the stored original register is untouched. Hence the exact
+full-column identity is
+
+    Swap_(D,S) [Q_(D,W)(Y_g) tensor I_S] Swap_(D,S)
+                  =I_D tensor Q_(S,W)(Y_g).            (136)
+
+This holds on arbitrary dirty S columns as well as on the real blank.
+It is a relabelling identity for an actually executed pair of swaps,
+not an assertion that the physical swaps cost nothing. In particular,
+finite compiler leakage ends in S/W; the original D and all its retained
+correlations are restored EXACTLY, even before epsilon tends to zero.
+This requires that the circuit between the swaps never addresses S.
+
+Use the owned controlled-query implementation if provided. Otherwise
+source8.6's dark-state parking construction has its REAL field-dependent
+off-dark complement; retain it literally. The full128 reflection also
+has the already proved common odd-Walsh identity sector in(103)-(104).
+These constructions can remove an additional controlled-query input
+when the underlying query and actual controlled swaps are admitted.
+They do not prove native exposure of that underlying source operator.
+A READY-only Fredkin/Toffoli cannot silently replace an all-column swap.
+
+In vacuum the material slots below are fixed at their stated vacuum input.
+For the nonvacuum extension, Q_epsilon below must ALSO include the supplied
+same-physical-material preparer, with its genuine work and two field jets,
+while respecting the protected-factor identity(136). The geometric query
+compiler alone supplies no such preparer.
+
+Let rho_epsilon(Y_g) be the normalized density on the relevant SIGN and ALL
+query work after this actual generated preparation. The subsequent original
+encoder A_n acts on SIGN and its own fresh, explicitly paid factory work.
+Its READY test ignores the new query garbage: that garbage is retained,
+not required to be blank. Extend E_n by identity on it. Equation(76) then
+holds even when SIGN and query work are correlated. Write
+
+    q_epsilon=Tr(rho_epsilon E_n),
+    V_epsilon=A_n Q_epsilon,
+    U_epsilon=V_epsilon^dagger M0 V_epsilon,
+    U_bal,epsilon=C_copy(U_epsilon tensor I_bank)C_copy.             (137)
+
+Include the ENTIRE physical inverse, not only the code-subspace ideal
+inverse. On the Julia access version, source8.6 gives the matrix identity
+J(X)^dagger=J_c J(X) J_c. Exact physical use requires its actually admitted
+J_c/adjoint placement; approximate constant-control availability alone
+does not establish that exact inverse word. Section7j reverses the actual
+compiled G/CX/source-X constant letters, not an unavailable query adjoint.
+
+There is an existing exact-inverse source version requiring no additional
+moving inverse oracle: take the ORIGINAL full128 reflection(103),
+U(Y_g)=I-2L(Y_g)L(Y_g)^dagger, so U^dagger=U on every column. The smooth
+labelled inverse(105)-(109) expresses the same geometric coordinates in
+its entries. Apply source8.6's entry-polynomial/rotation construction to
+THOSE entries and reverse each U-call by the SAME U-call. Its common
+odd-Walsh identity sector supplies the stated dark parking state if a
+controlled query is needed; actual controlled swaps/storage still need
+the inherited placement interface. Fixed readout matrix operations in
+the coordinate formula are coefficients of the compiler, not new moving
+source oracles. Real-space real coframe/link matrices are the chart here.
+This uses the original all-column reflection before pointer measurement,
+not merely access to its measured Kraus instrument.
+
+The exact implemented assertions(137)-(138) use either this involutive
+source version or the Julia version with exact admitted adjoint placement.
+If only approximate inverse access is supplied, retain the existing
+full-word/source error and read exact conjugacy as the comparison theorem.
+The completed preparer/encoder acts as identity on the protected original
+D/oldRIGHT; the reused Q8 spin can move inside an inverse block as in7j
+and is restored at its endpoint. It is not counted again per query.
+
+Every operator in(137) is the REAL finite implementation, including
+failure and off-dark columns. At its actual full clock N_epsilon and
+thermal dimension, U_bal,epsilon is conjugate to the SAME fixed middle
+M0 tensor I_bank. Consequently its WHOLE heat is EXACTLY field constant,
+not merely close on an initialized code. The scalar input-return formula
+and balanced-bank intertwiner give
+
+    B_epsilon(Y_g)=H_ref(N_epsilon,D_full)
+                          +j_K(gamma q_epsilon(Y_g)),
+    D B_epsilon=j_K'(gamma q_epsilon) gamma Dq_epsilon.             (138)
+
+Here gamma is the actual fixed encoder/factory readiness, with all its
+failed columns, and the same fixed input rank is used in j_K. The query
+work's thermal dimensions remain in H_ref. No Shannon identification,
+normalization of the trace, source-fitted Info, dropped vacuum anchor
+or cancellation by an added term occurs. Changing epsilon generally
+changes both absolute H_ref and the real schedule; only field derivatives
+inside that fixed schedule vanish. Any separate genuinely selected price
+component retains its own derivative.
+
+This is the new substitution into source8.6's outstanding heat-complement
+premise: its full logical operator need NOT converge to an identity on
+dirty storage. The complete implemented conjugation prices that storage
+with field-independent spectrum, exactly. The conclusion concerns this
+new full recorded return execution, not the old unmodified full128 price.
+Previously measured histories cannot be erased by moving their gates
+inside V_epsilon and reversing them.
+
+### Structured error transfer with no inverse weak-query loss
+
+The needed operator estimate is ALREADY owned by
+[the coherent injection source, section6](sources/d0_nonvacuum_collective_preparation_2026-10-22/joint_source/PAID_COHERENT_INJECTION_AND_WHOLE_TAPE_SOURCE.md)
+and used in(80)-(81). For the original weak report, on the ENTIRE
+correlated SIGN space,
+
+    E_(n,tau)=r0 I+tau T_(n,tau),
+    ||T_(n,tau)||<=Xi_click.                           (139)
+
+Fixed normalized tags and averaging over injections preserve this bound.
+Extend it by I on query garbage. For the current Bernstein report use
+its ACTUAL coefficient bound ||E_n-b I||<=tau Xi, with a field-independent
+scalar b and the realized coefficients. Its degree/rounding can be
+chosen with the owned weak coefficient error O(tau); this is not exact
+Hermite matching at the primary roots. Moving geometric weights must
+be encoded in the original fixed coordinate processor, or their explicit
+source must be retained. An independently moving tag cannot be frozen.
+
+Let rho_0 be the corresponding ideal prepared SIGN density with its
+specified blank query work, and define the actual trace-norm derivative
+error, in the chosen geometric tangent norm V_h,
+
+    e_1,h=sup_(||v||_(V_h)<=1)
+          ||D(rho_epsilon-rho_0)[v]||_1.
+
+Both densities are normalized. Since E_n is fixed with respect to Y_g,
+D Tr(rho_epsilon-rho_0)=0 and(139) give EXACTLY
+
+    D(q_epsilon-q_0)/tau
+                    =Tr[T_(n,tau) D(rho_epsilon-rho_0)],
+    ||D(q_epsilon-q_0)||_(V_h*)<=tau Xi e_1,h.          (140)
+
+If the actual state-vector comparison satisfies ||psi_epsilon-psi_0||
+<=e_0 and sup||Dpsi_epsilon-Dpsi_0||<=e_1, with sup||Dpsi_0||<=B_h,
+then e_1,h<=2e_1+2B_h e_0 by the rank-one trace norm and product rule.
+Thus source8.6's uniform C1 compiler supplies(140), retaining the genuine
+n,h,degree and inverse-map constants. Partial trace to SIGN can only
+improve that norm. No independent copies of an unknown material state
+are made by this argument.
+
+Define the gain at the ACTUAL compiled return, not at an idealized one:
+
+    Gamma_epsilon=j_K'(gamma q_epsilon) gamma a0 tau/Omega>0.
+
+The fixed compact window and sufficiently accurate compiler keep
+q_epsilon<1/2; the original middle has 0<d_K<2. Equations(138)-(140) imply
+
+    D B_epsilon/Gamma_epsilon=Omega Dq_epsilon/(a0 tau),
+    ||D B_epsilon/Gamma_epsilon-Omega Dq_0/(a0 tau)||
+                                      <=(Omega Xi/a0)e_1,h.        (141)
+
+There is no hidden inverse tau, readiness or history-return factor.
+This differs from applying a generic O(epsilon) price bound and then
+dividing it by a small gain. If T, initial input, gamma, rank or the
+real schedule are also varied, retain their actual additional derivatives;
+(140)-(141) make no assertion that those rows vanish.
+
+The field-coordinate source bound(124) therefore composes with this
+uniform source compiler by ADDING (Omega Xi/a0)e_1,h in the same dual
+norm, after the actual coordinate/source Jacobian is included. For a
+cumulative execution as in7m, the same assertion uses its actual block
+gain from(132),(135); the inherited-history factor still cancels.
+In the continuum estimate(129), use this added error and the ACTUAL
+D Sample_h(Z_h)[v], quadrature and any remaining inverse/word debt.
+The fixed-clock source-X route has no heat-complement error to amplify.
+
+### Exact parent use and the material/admission boundary
+
+The composed map now has the form
+
+    Y_g -> original Phi(Y_g) -> ONE fixed query programme
+        -> generated SIGN/work -> complete (L_hist,P_clock,B),
+
+with all preparation derivatives generated by the same moving queries.
+The actual query stages remain marked in L_hist; (102) and the owned
+labelled inverse recover their geometric source, including its full40
+jets. Thus the geometric fields need not be independently supplied to
+this reporter as both an external S(t) and a separate readout operator.
+The causal adjoint already applies to this complete word. Its generated
+storage/preparation states are not free independent variables. If the
+physical task admits extra changes of the query/control apparatus, their
+full source equations still have to be imposed.
+
+The original Julia geometric query does NOT determine two independent
+scalar/top preparation amplitudes. Parking an unknown material state
+preserves it; it does not extract or clone the scalar data needed for
+an unrelated nonlinear material report. The new application therefore
+supplies the GEOMETRIC uniform input map. It combines with the existing
+all42 reporter only when the SAME actual material source/preparation
+map is also supplied, with its original two Euler rows and price. In
+vacuum the material branch is fixed at its declared vacuum input, so
+the full vacuum Einstein consumer of(129) applies on its stated regular
+stationary-limit assumptions. The original exact nonvacuum family stays
+available on its own exact chart; finite query approximation does not
+inherit its exact roots or prove arbitrary compactness.
+
+Remaining physical application: admit the original moving source queries,
+actual storage/control placement and this return task in ONE native
+execution; bind any other selected stack term; then supply its full
+physical variation image and stationary refinement. This is fewer
+independent inputs than external geometric preparation plus an unrelated
+operator/price, but it is not their physical derivation from M1. No native
+query is obtained just by declaring a matrix unitary. No physical GR,
+positive_gr or raw216 closure is promoted.
+
+
 ## 8. Reproduction
 
 Run from this directory:
