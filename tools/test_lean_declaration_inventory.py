@@ -60,6 +60,12 @@ class DeclarationInventoryTests(unittest.TestCase):
         self.assertEqual(script.count("run_cmd do"), 3)
         self.assertEqual(script.count("let targets : Array Name := #["), 3)
 
+    def test_collector_rows_must_round_trip_exact_requested_names(self):
+        with self.assertRaisesRegex(RuntimeError, "name mismatch.*D0.Bad.name"):
+            inventory.validate_collector_records(
+                ["D0.Bad.name"], [{"name": "D0.Other.name", "exists": False}]
+            )
+
     def test_collector_queries_elaborated_environment_and_axioms(self):
         script = inventory.lean_collector(["D0.Foundation.VerificationCore.verification_core"], "D0.All")
         self.assertIn("import D0.All", script)

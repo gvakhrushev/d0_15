@@ -38,6 +38,20 @@ def name_batches(names: list[str], batch_size: int = COLLECTOR_BATCH_SIZE) -> li
     return [names[start:start + batch_size] for start in range(0, len(names), batch_size)]
 
 
+def validate_collector_records(names: list[str], records: list[dict[str, Any]]) -> None:
+    if len(records) != len(names):
+        raise RuntimeError(
+            f"Lean collector returned {len(records)} rows for {len(names)} requests"
+        )
+    for index, (requested, row) in enumerate(zip(names, records)):
+        returned = row.get("name")
+        if returned != requested:
+            raise RuntimeError(
+                f"Lean collector name mismatch at row {index}: "
+                f"requested {requested!r}, returned {returned!r}"
+            )
+
+
 def candidate_names(module: str, atom: str) -> list[str]:
     """Return plausible exact names; the elaborated environment resolves them."""
     names = []
@@ -249,11 +263,10 @@ def run_inventory(names: list[str], import_root: str, resolution_only: bool = Fa
     for line in proc.stdout.splitlines():
         if line.startswith(PREFIX):
             records.append(json.loads(line[len(PREFIX):]))
-    if len(records) != len(names):
-        raise RuntimeError(
-            f"Lean collector returned {len(records)} rows for {len(names)} requests; "
-            f"stdout was:\n{proc.stdout}\nstderr was:\n{proc.stderr}"
-        )
+    try:
+        validate_collector_records(names, records)
+    except RuntimeError as exc:
+        raise RuntimeError(f"{exc}; stdout was:\n{proc.stdout}\nstderr was:\n{proc.stderr}") from exc
     for row in records:
         for key in ("type_dependencies", "proof_dependencies", "axioms"):
             if isinstance(row.get(key), list):
