@@ -1602,3 +1602,27 @@ both pass on PR #402: `D0 guards` run `40123581569` and `D0 Lean build` run
 semantic mutations and preservation checks passed; its isolated research
 replay and registered/Bartholdi certificate stages were skipped in Draft mode.
 The PR remains OPEN/DRAFT. C0 remains unfrozen and independently unaccepted.
+
+## Shared exterior/CAR relation reused by the Julia application (24 October 2026)
+
+The Julia-specific `archiveExteriorContraction_creator` is now a compatibility
+adapter over the already proved generic
+`archiveExterior_contraction_creator_car` in
+`D0.Geometry.ArchiveExteriorFrameLift`. The two statements differ only by
+rearranging the same real-vector-space identity. The Julia theorem keeps its
+public name and exact type for existing readout proofs, while its proof now
+depends on the shared CAR/exterior law instead of repeating the Clifford
+calculation. No claim status, carrier, source scope or C0 disposition changes.
+
+Validation used `python3 tools/lean_task_build.py cache` for the Mathlib roots
+in this module's import chain, then
+`python3 tools/lean_task_build.py narrow D0.Geometry.ArchiveJuliaRaisingOperatorReadout`.
+The narrow target compiled successfully under Lean 4.30.0 (2,992 Lake jobs).
+The build helper's post-run source digest is
+`0e5371eeaa557b23a7cb553386be192b2ea81bf765cdcd4bb449f7dc9ed7209b`; the
+manifest SHA-256 is
+`4ed211000f753c64c6b1fc155970f6b28c9500763f1ad520d8762ae165ac24fa`, and the
+updated Julia module SHA-256 is
+`416e7e552343192a2bd01c8f209a7cd743a866a51b11201ea087694bc1a4b2a3`. The
+build completed without Lean errors; warnings were existing lints in imported
+modules. This is a targeted module build, not the final `D0.All` build.

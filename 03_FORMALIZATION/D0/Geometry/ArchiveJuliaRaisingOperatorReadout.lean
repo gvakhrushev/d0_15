@@ -321,18 +321,14 @@ private theorem archiveFockExteriorEquiv_creator (u : RoleSpace)
       ι ℝ u * archiveFockExteriorEquiv ψ := by
   simp [archiveExteriorCreator]
 
-/-- CAR contraction obeys the exact contraction-creator relation on the
-existing finite carrier. -/
+/-- Compatibility name for the shared exterior/CAR contraction-creator law.
+The Julia readout keeps this name for its downstream applications, while the
+general relation is proved once in `ArchiveExteriorFrameLift`. -/
 theorem archiveExteriorContraction_creator (α : Module.Dual ℝ RoleSpace)
     (u : RoleSpace) (ψ : ArchiveFockState → ℝ) :
     archiveExteriorContraction α (archiveExteriorCreator u ψ) =
       α u • ψ - archiveExteriorCreator u (archiveExteriorContraction α ψ) := by
-  apply archiveFockExteriorEquiv.injective
-  rw [archiveFockExteriorEquiv_contraction,
-    archiveFockExteriorEquiv_creator,
-    CliffordAlgebra.contractLeft_ι_mul]
-  simp only [map_sub, map_smul, archiveFockExteriorEquiv_creator,
-    archiveFockExteriorEquiv_contraction]
+  linear_combination archiveExterior_contraction_creator_car α u ψ
 
 /-- Rank-one map `v ↦ α(v)u`, used to express the exact projected block. -/
 def archiveJuliaNullRankOne (u : RoleSpace) (α : Module.Dual ℝ RoleSpace) :
