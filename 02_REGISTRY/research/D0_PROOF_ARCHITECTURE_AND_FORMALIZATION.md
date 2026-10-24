@@ -1626,3 +1626,25 @@ updated Julia module SHA-256 is
 `416e7e552343192a2bd01c8f209a7cd743a866a51b11201ea087694bc1a4b2a3`. The
 build completed without Lean errors; warnings were existing lints in imported
 modules. This is a targeted module build, not the final `D0.All` build.
+
+## Fibonacci first-step block API reuse (24 October 2026)
+
+The finite scalar example in `D0.VNext.PerronGNSTower` now proves its
+diagonal-block multiplication and trace identities through the shared
+`fibonacciBlockMatrix_mul` and `trace_fibonacciBlockMatrix` API from
+`D0.Algebra.FibonacciAFTower`. Private `Fin 1` scalar matrices make the
+specialization explicit. Existing first-step declarations and theorem types
+remain available to their current consumers; the finite-level map and pairing
+are unchanged. This does not construct an AF C*-limit, a positive trace state,
+or a completed GNS space, and it changes no scientific status.
+
+Validation: `python3 tools/lean_task_build.py narrow
+D0.VNext.PerronGNSTower` passed under Lean 4.30.0 (2,948 Lake jobs) with the
+current pinned `lake-manifest.json`. The build helper's source digest is
+`45cbffd22354749b9fce3376715255f3c1eff0838829a723b18625a9b52dca21`; the
+manifest SHA-256 remains
+`4ed211000f753c64c6b1fc155970f6b28c9500763f1ad520d8762ae165ac24fa`, and the
+updated module SHA-256 is
+`b8033d7e3847d085f13720e491edd0282066688fa6c1c3cf6850cc726ccb89c0`. This
+is the targeted module check; final `D0.All` and release integration remain
+pending at the Draft checkpoint.

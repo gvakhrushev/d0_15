@@ -11,7 +11,8 @@ set_option linter.unusedVariables false
 
 This module retains the scalar golden identities and a generic conditional algebraic pairing identity.
 Its first-step example constructs a real algebra map and checks the associated functional pairing;
-the all-level finite-real refinement and pairing are implemented in `D0.Algebra.FibonacciAFTower`.
+its diagonal block and trace calculations are specializations of the shared all-level block API in
+`D0.Algebra.FibonacciAFTower`.
 The generic lemma assumes multiplication, star, map, and trace-preservation facts as inputs. It does
 not construct a positive state, a complex AF C*-inductive limit, a GNS quotient/completion, or a
 Hilbert-space isometry. The broader canonical Perron-GNS tower claim remains open under this owner.
@@ -46,6 +47,27 @@ theorem perron_trace_compatible_with_refinement :
 /-- The diagonal 2-by-2 block in the first Fibonacci refinement step. -/
 def firstRefinementDiagonal (x y : ℝ) : Matrix (Fin 2) (Fin 2) ℝ := !![x, 0; 0, y]
 
+private def firstRefinementScalarMatrix (x : ℝ) : Matrix (Fin 1) (Fin 1) ℝ :=
+  fun _ _ => x
+
+private theorem firstRefinementScalarMatrix_mul (x y : ℝ) :
+    firstRefinementScalarMatrix x * firstRefinementScalarMatrix y =
+      firstRefinementScalarMatrix (x * y) := by
+  ext i j
+  fin_cases i
+  fin_cases j
+  simp [firstRefinementScalarMatrix, Matrix.mul_apply]
+
+private theorem firstRefinementDiagonal_eq_sharedBlock (x y : ℝ) :
+    firstRefinementDiagonal x y =
+      D0.Algebra.FibonacciAFTower.fibonacciBlockMatrix
+        (firstRefinementScalarMatrix x) (firstRefinementScalarMatrix y) := by
+  ext i j
+  fin_cases i <;> fin_cases j <;>
+    simp [firstRefinementDiagonal, firstRefinementScalarMatrix,
+      D0.Algebra.FibonacciAFTower.fibonacciBlockMatrix,
+      Matrix.reindexAlgEquiv_apply, finSumFinEquiv, Fin.addCases]
+
 /-- The first finite Bratteli step, from two scalar blocks to `M₂(ℝ) × ℝ`:
 `(x,y) ↦ (diag(x,y),x)`, with multiplicities given by `Mφ = !![1,1;1,0]`. -/
 def firstRefinementMap (z : ℝ × ℝ) : Matrix (Fin 2) (Fin 2) ℝ × ℝ :=
@@ -61,9 +83,11 @@ noncomputable def firstRefinementTrace1 (z : Matrix (Fin 2) (Fin 2) ℝ × ℝ) 
 theorem firstRefinementDiagonal_mul (x y u v : ℝ) :
     firstRefinementDiagonal x y * firstRefinementDiagonal u v =
       firstRefinementDiagonal (x * u) (y * v) := by
-  ext i j
-  fin_cases i <;> fin_cases j <;>
-    simp [firstRefinementDiagonal, Matrix.mul_apply, Fin.sum_univ_succ]
+  rw [firstRefinementDiagonal_eq_sharedBlock x y,
+    firstRefinementDiagonal_eq_sharedBlock u v,
+    firstRefinementDiagonal_eq_sharedBlock (x * u) (y * v),
+    D0.Algebra.FibonacciAFTower.fibonacciBlockMatrix_mul,
+    firstRefinementScalarMatrix_mul, firstRefinementScalarMatrix_mul]
 
 theorem firstRefinementDiagonal_star (x y : ℝ) :
     star (firstRefinementDiagonal x y) = firstRefinementDiagonal x y := by
@@ -72,7 +96,9 @@ theorem firstRefinementDiagonal_star (x y : ℝ) :
 
 theorem firstRefinementDiagonal_trace (x y : ℝ) :
     Matrix.trace (firstRefinementDiagonal x y) = x + y := by
-  simp [firstRefinementDiagonal, Matrix.trace, Fin.sum_univ_succ]
+  rw [firstRefinementDiagonal_eq_sharedBlock,
+    D0.Algebra.FibonacciAFTower.trace_fibonacciBlockMatrix]
+  simp [firstRefinementScalarMatrix, Matrix.trace]
 
 theorem firstRefinementMap_mul (z w : ℝ × ℝ) :
     firstRefinementMap (z * w) = firstRefinementMap z * firstRefinementMap w := by
