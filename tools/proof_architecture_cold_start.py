@@ -246,6 +246,8 @@ CASES: list[dict[str, Any]] = [
             "Eq 27 nonzero Lorentz norm Gamma Clifford volume inverse recover frame from full raising query",
             "archiveJuliaRaisingQuery_nonNull_gamma_recovery chi endpoint covariance q nonzero",
             "уравнение 27 ненулевой лоренцев норм Clifford volume восстановить перенос из полного raising operator",
+            "principalFrameJuliaQueryFamily_nonzero_shift_chart_coverage Eq27 Eq28",
+            "покрытие всех ненулевых сдвигов через Eq 27 Eq 28 principalFrameJuliaQueryFamily",
         ],
         "required_refs": [
             "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md",
@@ -253,6 +255,7 @@ CASES: list[dict[str, Any]] = [
             "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
             "03_FORMALIZATION/D0/Geometry/A4DJuliaPrincipalFrameRecovery.lean",
             "03_FORMALIZATION/D0/Geometry/A4DJuliaNonNullGammaRecovery.lean",
+            "03_FORMALIZATION/D0/Geometry/A4DJuliaRecoveryComposition.lean",
             "03_FORMALIZATION/D0/Geometry/A4DRawSolderFrameAction.lean",
             "03_FORMALIZATION/D0/Geometry/ArchiveJuliaRaisingOperatorReadout.lean",
         ],
@@ -271,7 +274,7 @@ CASES: list[dict[str, Any]] = [
              "sections": ["5.1"], "scope_query_indexes": [3],
              "scope_query_sections": {"3": ["5.1"]}},
         ],
-        "scope_review": "The general compiled map keeps full-query equality and the inverse-coframe right-inverse explicit; its canonical query-family specialization removes the external query-equality premise. The Eq. (28) composition recovers M_r on its full open chart when the observed projected metric covector is nonzero and the positive square-root branch holds; its null specialization derives those conditions from nondegeneracy, normalization, and one nonzero null shift. The new Eq. (27) adapter proves the non-null-norm algebraic inverse for the actual finite query from the creator/contraction CAR, conditional on the explicit endpoint Clifford-conjugation and frame-covariance identities. Those identities have not yet been derived for the source proper-Lorentz endpoint package, and the two charts are not yet formally joined into a theorem for every u ≠ 0. Proper-Lorentz endpoint selection, smoothness of the full inverse or all-jet pullback, physical query admission, price/source selection, and GR closure remain open.",
+        "scope_review": "The general compiled map keeps full-query equality and the inverse-coframe right-inverse explicit; its canonical query-family specialization removes the external query-equality premise. The Eq. (28) composition recovers M_r on its full open chart when the observed projected metric covector is nonzero and the positive square-root branch holds; its null specialization derives those conditions from nondegeneracy, normalization, and one nonzero null shift. The Eq. (27) adapter proves the non-null-norm algebraic inverse for the actual finite query from the creator/contraction CAR, conditional on endpoint Clifford-conjugation and frame-covariance identities. `principalFrameJuliaQueryFamily_nonzero_shift_chart_coverage` now joins the algebraic charts for every nonzero shift under the explicit endpoint isometry and normalized covector: the non-null branch retains `det M = 1`, while the null branch derives Eq. (28)'s projected-covector and positive-branch conditions. The endpoint identities are still not derived for the source proper-Lorentz endpoint package. Proper-Lorentz endpoint selection, smoothness of the full inverse or all-jet pullback, physical query admission, price/source selection, and GR closure remain open.",
     },
 ]
 

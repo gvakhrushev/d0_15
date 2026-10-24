@@ -639,6 +639,32 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertEqual(hits[0]["source"], "02_REGISTRY/OWNER.md")
         self.assertEqual(hits[0]["matched_terms"], hits[0]["query_terms"])
 
+    def test_batched_search_keeps_overlapping_julia_declaration_matches(self) -> None:
+        case = next(
+            item for item in cold_start.CASES
+            if item["id"] == "julia-query-principal-frame-coframe-recovery"
+        )
+        query = next(
+            query for query in case["queries"]
+            if "principalFrameJuliaQueryFamily_nonzero_shift_chart_coverage" in query
+        )
+        with tempfile.TemporaryDirectory() as temp:
+            root = pathlib.Path(temp)
+            research = root / "02_REGISTRY" / "research"
+            research.mkdir(parents=True)
+            source = research / "chart-coverage-owner.json"
+            source.write_text(
+                '{"name":"D0.Geometry.principalFrameJuliaQueryFamily_nonzero_shift_chart_coverage", '
+                '"scope":"Eq27 Eq28"}\n',
+                encoding="utf-8",
+            )
+            hits_by_query = proof.full_text_search_many(root, case["queries"], limit=18)
+
+        hits = hits_by_query[case["queries"].index(query)]
+        direct = next(hit for hit in hits if hit["source"] == source.relative_to(root).as_posix()
+                      and hit["direct_content"])
+        self.assertEqual(direct["matched_terms"], direct["query_terms"])
+
     def test_search_candidate_card_bounds_details_and_preserves_source_pins(self) -> None:
         candidate = {
             "kind": "text-candidate", "key": "02_REGISTRY/owner.md",
@@ -954,6 +980,29 @@ class ProofArchitectureTests(unittest.TestCase):
             cold_start.run(pathlib.Path("."), limit=5)
 
         self.assertEqual(search.call_args.args[2], 18)
+
+    def test_julia_cold_start_tracks_nonzero_chart_composition_boundary(self) -> None:
+        case = next(
+            item for item in cold_start.CASES
+            if item["id"] == "julia-query-principal-frame-coframe-recovery"
+        )
+        scope = case["scope_review"]
+
+        self.assertIn(
+            "principalFrameJuliaQueryFamily_nonzero_shift_chart_coverage", scope
+        )
+        self.assertIn("det M = 1", scope)
+        self.assertIn(
+            "not derived for the source proper-Lorentz endpoint package", scope
+        )
+        self.assertIn(
+            "03_FORMALIZATION/D0/Geometry/A4DJuliaRecoveryComposition.lean",
+            case["required_refs"],
+        )
+        self.assertTrue(any(
+            "principalFrameJuliaQueryFamily_nonzero_shift_chart_coverage" in query
+            for query in case["queries"]
+        ))
 
 
 if __name__ == "__main__":

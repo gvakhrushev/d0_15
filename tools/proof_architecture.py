@@ -540,12 +540,21 @@ def full_text_search_many(root: pathlib.Path, queries: list[str],
         raw_path = data.get("path", {}).get("text")
         if not raw_path:
             continue
-        groups: set[tuple[int, str]] = set()
-        for submatch in data.get("submatches", []):
-            matched_variant = _fold(submatch.get("match", {}).get("text", ""))
-            groups.update(variant_queries.get(matched_variant, []))
-        for index, name in groups:
-            content_groups_by_query[index].setdefault(raw_path, set()).add(name)
+        # ripgrep reports non-overlapping submatches. In a batched search, a
+        # shorter term from another query can hide an overlapping declaration
+        # name, so recover each query's terms from the whole matching line.
+        line_text = _fold(data.get("lines", {}).get("text", ""))
+        if not line_text:
+            continue
+        for index, terms in enumerate(terms_by_query):
+            matched_names = {
+                name for name, variants in terms
+                if any(variant in line_text for variant in variants)
+            }
+            if matched_names:
+                content_groups_by_query[index].setdefault(raw_path, set()).update(
+                    matched_names
+                )
 
     all_files = subprocess.run(["rg", "--files", *text_globs, *roots], cwd=root,
                                capture_output=True, text=True, encoding="utf-8", errors="replace")

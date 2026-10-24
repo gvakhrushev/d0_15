@@ -2310,3 +2310,34 @@ The narrow Lean 4.30.0 build passed for
 `D0.Geometry.A4DJuliaRecoveryComposition` (3,022 Lake jobs). No full `D0.All`
 replay was run. This remains finite-carrier algebra under explicit endpoint
 hypotheses, not physical source selection or GR closure.
+
+### Cold-start scope refresh for the joined Julia charts (25 October 2026)
+
+The Julia principal-frame cold-start case now queries
+`principalFrameJuliaQueryFamily_nonzero_shift_chart_coverage` in English and
+Russian, requires the composition module as a discoverable result, and no
+longer says the Eq. (27)/(28) charts are unjoined. Its manual scope card now
+states the exact boundary: non-null Eq. (27) retains `det M = 1`; the null
+Eq. (28) branch derives its projected-covector and positive-branch conditions;
+the source proper-Lorentz endpoint identities remain unproved.
+
+At snapshot `de4cfeb1b000363d85367b0b9da6f19edad67246` with
+`worktree_dirty=true`, the full cold-start run found all 16/16 search cases
+with every required source and passed all 17 benchmark checks, including the
+exact-source-versus-unrelated-prose impact control. The exact chart-coverage
+query returned the owning-module inventory, this primary artifact, and
+`A4DJuliaRecoveryComposition.lean` as its top three direct-content candidates.
+This required a search fix: the batched query path previously trusted
+ripgrep's non-overlapping submatches, which could hide a longer declaration
+name behind a shorter term from another query. It now matches query terms
+against each complete matching line, and a regression exercises the full
+12-query Julia case. All 38 proof-architecture tests passed. This checks
+retrieval and scope routing; semantic scope acceptance remains manual. The
+search implementation SHA-256 is
+`fb15d7c2e02bb4134fd5be772ffb196e0f5fef6062a6c4f6e7e4be6b8abac11b`; the
+cold-start runner SHA-256 is
+`08ddac8d5ca7339444b07c53b5d1ea79d68d69054d15c9f05e143776aa1a01c5`.
+`python3 -m unittest tools.test_proof_architecture` passed 38/38 after adding
+regressions for the joined chart scope and batched declaration retrieval. The
+test file SHA-256 is
+`9bf1ce5075ae72733f585e09b163195cfa13c290c2c6e30ccd2984b07e50f49e`.
