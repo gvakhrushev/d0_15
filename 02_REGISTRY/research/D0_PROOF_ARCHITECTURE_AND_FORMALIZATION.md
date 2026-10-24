@@ -1367,3 +1367,48 @@ Changed Lean-source SHA-256 values: `ArchiveCARRelations.lean`
 `c609cac95402f1c477b77b5029406be1ecf0198103fd077736660405d3586d4a`, and
 `RoleFockPermutation.lean`
 `e36d3751b7aa4ebfcea135e8e5a1fc1659296ee7b2299e38fa5eee380016f3fd`.
+
+## Complete CAR/exterior creator and Julia-query equality (24 October 2026)
+
+This checkpoint supersedes the preceding statement that all-state operator
+comparison remained open. `carCreateEnd_exterior_basis` proves, for every one
+of the four roles and every one of the 16 occupation labels, that the existing
+Jordan--Wigner creator transported through `archiveFockExteriorEquiv` equals
+left multiplication by the corresponding exterior basis vector. When the
+target role is occupied, the exterior product is zero by the basis
+anti-symmetry theorem. When it is empty, `basis_mul_of_disjoint` gives the
+inserted subset and its permutation sign; `archiveCreatorPermSign` checks that
+sign against `jwSignInt` over the exact finite four-role/state domain, and the
+support update identifies the resulting exterior basis vector.
+
+Linearity now yields `archiveCARVectorCreator_basis_exterior` on each of the 16
+coefficient basis vectors and
+`archiveCARVectorCreator_eq_archiveExteriorCreatorLM` for the entire linear
+operator. Composing both creators with the same arbitrary linear frame lift
+gives `archiveJuliaCARRaisingQuery_eq_model`; the older vacuum query equality
+is now a direct specialization. This substitutes the prior finite-carrier
+vacuum-only creator/query comparison in the pinned Eq. (26), §8.4 application
+to its §5.1 consumer, for the exact existing carrier and frame map. It does
+not yet transport that identity through the full coframe/metric recovery or
+Lorentz-null inverse (27)–(28), and it establishes no variational/source/price
+map, physical admission, or GR selection.
+
+Trust boundary: `archiveCreatorPermSign` uses `native_decide +revert` for this
+finite permutation-sign identity. `#print axioms` for the basis-state
+creator, whole-creator equality, whole-query equality, and CAR-query shift
+injectivity reports `propext`, `Classical.choice`, `Quot.sound`, and the
+generated `archiveCreatorPermSign._native.native_decide.ax_1_1` certificate
+axiom. This is not a kernel-only or arbitrary-mode proof. No `sorry` or
+`admit` is used.
+
+Validation: the changed Julia module and current `D0.All` import root both
+compiled from this worktree's Lean sources with Lean 4.30.0 into
+`/private/tmp/d0-pr402-lean-overlay`; imports were resolved from the preserved
+checkout's pinned Lake package cache and the prior overlay for unchanged
+modules. This is a narrow module plus import-root overlay integration compile,
+not a fresh `lake build D0.All`. The earlier PR #402 CI results were from the
+preceding head; current-head GitHub checks are still required after publishing
+this checkpoint. C0 remains unfrozen and independently unaccepted.
+
+The updated `03_FORMALIZATION/D0/Geometry/ArchiveJuliaRaisingOperatorReadout.lean`
+has SHA-256 `5b1192c912e22e622ae535fa65a2030839ae819b4dd744165ca62010ca29c057`.

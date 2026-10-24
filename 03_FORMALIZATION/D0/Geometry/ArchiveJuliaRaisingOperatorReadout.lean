@@ -1,7 +1,7 @@
 import D0.Geometry.A4DNilpotentAffineMatterLift
 
 /-!
-# Julia raising query: exact vacuum readout on the finite carrier
+# Julia raising query: full finite-carrier creator identity
 
 This is a finite-carrier application of Eq. (26) in the published #334 source
 at commit `fe5cf335da04cac14e50407b03f98b96be17dc52`, path
@@ -10,15 +10,15 @@ blob `1c8d59e5533b443d9a015dc4512cfbc160ae7e62`, §8.4. Its exact consumer is
 §5.1 of `02_REGISTRY/research/A4D_EXACT_AF_RADIAL_COFRAME_EQUIVALENCE_NONLINEAR_SPIN2_2026_10_18.md`
 at the same commit, blob `734e21ae6bc04ff3446ad15858936d417fdd2e55`.
 
-On the existing 16-state carrier, the frame lift fixes the vacuum. The vector
-creator built from the owned Jordan--Wigner `carCreateEnd` matrices agrees with
-the exterior creator on that vacuum, so applying `ιInv` recovers `u` exactly.
-The CAR-based query and the exterior model query have the same vacuum response;
-equality of either complete query operators therefore implies equality of
-their shifts, for arbitrary linear frame equivalences.
+On the existing 16-state carrier, the owned Jordan--Wigner creator agrees with
+exterior-algebra left multiplication on every occupation basis state. Linearity
+therefore gives equality of the complete creator operators and, after the same
+frame lift, equality of the complete CAR and exterior Julia query operators for
+arbitrary shifts and linear frame equivalences. The vacuum readout follows as a
+special case and applying `ιInv` recovers `u` exactly.
 
-The proved statement covers only this finite-carrier vacuum readout. It does
-not formalize the full Lorentz null inverse (28), its all-jet extension,
+This remains a finite-carrier algebraic application of the pinned source. It
+does not formalize the full Lorentz null inverse (28), its all-jet extension,
 coframe/metric recovery, the complete variational pullback, source or price
 maps, physical admission, or GR selection.
 -/
@@ -132,6 +132,174 @@ theorem carCreateEnd_single_state (r : Role) (s : ArchiveFockState) :
       rw [hz]
       simp [hsf, hbra]
 
+private theorem archiveRoleBasis_singleton_exterior (r : Role) :
+    (archiveRoleBasis.ExteriorAlgebra) ({r} : Finset Role) =
+      ι ℝ (archiveRoleBasis r) := by
+  have hcard : ({r} : Finset Role).card = 1 := by simp
+  rw [ExteriorAlgebra.basis_apply_ofCard archiveRoleBasis hcard]
+  have harg :
+      archiveRoleBasis ∘ (Set.powersetCard.ofFinEmbEquiv.symm
+        (Set.powersetCard.ofCard hcard)) =
+        fun _ : Fin 1 => archiveRoleBasis r := by
+    funext i
+    have hi : i = 0 := Subsingleton.elim _ _
+    subst i
+    simp [Set.powersetCard.ofFinEmbEquiv_symm_apply,
+      Set.powersetCard.ofCard, Finset.orderEmbOfFin_singleton]
+  rw [ExteriorAlgebra.ιMulti_family, harg]
+  simp [ExteriorAlgebra.ιMulti_apply]
+
+/-- On the fixed four-role carrier, inserting one mode into the ordered
+exterior subset basis has the same sign as the owned Jordan--Wigner phase.
+This finite permutation-sign calculation is checked over all role/state pairs. -/
+private theorem archiveCreatorPermSign (r : Role) (s : ArchiveFockState)
+    (hs : s r = false) :
+    (Equiv.Perm.sign (Set.powersetCard.permOfDisjoint
+      (m := 1) (n := (archiveFockSupport s).card)
+      (s := (⟨{r}, by simp⟩ : Set.powersetCard Role 1))
+      (t := (⟨archiveFockSupport s, rfl⟩ :
+        Set.powersetCard Role (archiveFockSupport s).card))
+      (Finset.disjoint_singleton_left.mpr (by
+        simp [archiveFockSupport, hs])))).val = jwSignInt s r := by
+  classical
+  native_decide +revert
+
+private theorem archiveExteriorBasis_create_step (r : Role)
+    (s : ArchiveFockState) (hs : s r = false) :
+    ι ℝ (archiveRoleBasis r) * archiveFockExteriorBasis s =
+      jwPhase s r • archiveFockExteriorBasis (Function.update s r true) := by
+  classical
+  let U : Set.powersetCard Role 1 := ⟨{r}, by simp⟩
+  let T : Set.powersetCard Role (archiveFockSupport s).card :=
+    ⟨archiveFockSupport s, rfl⟩
+  have hdis : Disjoint U.val T.val :=
+    Finset.disjoint_singleton_left.mpr (by simp [T, archiveFockSupport, hs])
+  have hmul := ExteriorAlgebra.basis_mul_of_disjoint archiveRoleBasis U T hdis
+  have hsign : (Equiv.Perm.sign
+      (Set.powersetCard.permOfDisjoint hdis)).val = jwSignInt s r := by
+    simpa [U, T] using archiveCreatorPermSign r s hs
+  have hunion :
+      (Set.powersetCard.disjUnion hdis : Finset Role) =
+        archiveFockSupport (Function.update s r true) := by
+    ext q
+    simp [U, T, archiveFockSupport, Function.update]
+  calc
+    ι ℝ (archiveRoleBasis r) * archiveFockExteriorBasis s =
+        archiveRoleBasis.ExteriorAlgebra ({r} : Finset Role) *
+          archiveRoleBasis.ExteriorAlgebra (archiveFockSupport s) := by
+      rw [← archiveRoleBasis_singleton_exterior, archiveFockExteriorBasis_apply]
+    _ = Equiv.Perm.sign (Set.powersetCard.permOfDisjoint hdis) •
+        archiveRoleBasis.ExteriorAlgebra
+          (Set.powersetCard.disjUnion hdis : Finset Role) := by
+      simpa [U, T] using hmul
+    _ = jwPhase s r • archiveFockExteriorBasis (Function.update s r true) := by
+      rw [Units.smul_def, ← Int.cast_smul_eq_zsmul ℝ, hsign,
+        ← jwPhase_eq_intCast, hunion, archiveFockExteriorBasis_apply]
+
+/-- The owned CAR creator agrees with exterior-algebra left multiplication on
+every occupation basis state of the 16-state carrier. -/
+theorem carCreateEnd_exterior_basis (r : Role) (s : ArchiveFockState) :
+    archiveFockExteriorEquiv (carCreateEnd r (Pi.single s (1 : ℝ))) =
+      ι ℝ (archiveRoleBasis r) * archiveFockExteriorBasis s := by
+  classical
+  rw [carCreateEnd_single_state]
+  by_cases hs : s r = true
+  · have hnot : ¬ Disjoint
+        ({r} : Finset Role) (archiveFockSupport s) := by
+      intro hdis
+      have hr : r ∈ archiveFockSupport s := by
+        simp [archiveFockSupport, hs]
+      exact (Finset.disjoint_left.mp hdis) (by simp) hr
+    have hzero : ι ℝ (archiveRoleBasis r) * archiveFockExteriorBasis s = 0 := by
+      rw [← archiveRoleBasis_singleton_exterior, archiveFockExteriorBasis_apply]
+      simpa using ExteriorAlgebra.basis_mul_of_not_disjoint archiveRoleBasis
+        (⟨{r}, by simp⟩ : Set.powersetCard Role 1)
+        (⟨archiveFockSupport s, rfl⟩ :
+          Set.powersetCard Role (archiveFockSupport s).card) (by
+            simpa using hnot)
+    simp only [if_pos hs, map_zero]
+    exact hzero.symm
+  · have hsf : s r = false := by cases h : s r <;> simp_all
+    rw [if_neg hs]
+    simp only [map_smul, archiveFockExteriorEquiv_single]
+    rw [archiveExteriorBasis_create_step r s hsf]
+
+private theorem archiveRoleBasis_weighted_sum (u : RoleSpace) :
+    ∑ r : Role, u r • archiveRoleBasis r = u := by
+  ext q
+  simp only [Finset.sum_apply, Pi.smul_apply, archiveRoleBasis,
+    Pi.basisFun_apply]
+  rw [Finset.sum_eq_single q]
+  · simp
+  · intro r _ hrq
+    simp [hrq]
+  · intro hn
+    exact (hn (Finset.mem_univ q)).elim
+
+/-- The CAR vector creator and exterior creator agree on every occupation
+basis vector, not only the vacuum. -/
+theorem archiveCARVectorCreator_basis_exterior (u : RoleSpace)
+    (s : ArchiveFockState) :
+    archiveFockExteriorEquiv
+        (archiveCARVectorCreator u (Pi.single s (1 : ℝ))) =
+      ι ℝ u * archiveFockExteriorBasis s := by
+  have huι : ∑ r : Role, u r • ι ℝ (archiveRoleBasis r) = ι ℝ u := by
+    calc
+      ∑ r : Role, u r • ι ℝ (archiveRoleBasis r) =
+          ι ℝ (∑ r : Role, u r • archiveRoleBasis r) := by
+        simp only [map_sum, map_smul]
+      _ = ι ℝ u := by rw [archiveRoleBasis_weighted_sum]
+  calc
+    archiveFockExteriorEquiv
+        (archiveCARVectorCreator u (Pi.single s (1 : ℝ))) =
+        ∑ r : Role, u r •
+          archiveFockExteriorEquiv (carCreateEnd r (Pi.single s (1 : ℝ))) := by
+      simp only [archiveCARVectorCreator, LinearMap.sum_apply,
+        LinearMap.smul_apply, map_sum, map_smul]
+    _ = ∑ r : Role, u r •
+        (ι ℝ (archiveRoleBasis r) * archiveFockExteriorBasis s) := by
+      apply Finset.sum_congr rfl
+      intro r hr
+      rw [carCreateEnd_exterior_basis]
+    _ = (∑ r : Role, u r • ι ℝ (archiveRoleBasis r)) *
+        archiveFockExteriorBasis s := by
+      rw [Finset.sum_mul]
+      apply Finset.sum_congr rfl
+      intro r hr
+      simp only [smul_mul_assoc]
+    _ = ι ℝ u * archiveFockExteriorBasis s := by rw [huι]
+
+/-- Equality of the CAR and exterior vector creators as linear operators on the
+entire existing 16-state coefficient carrier. -/
+theorem archiveCARVectorCreator_eq_archiveExteriorCreatorLM (u : RoleSpace) :
+    archiveCARVectorCreator u = archiveExteriorCreatorLM u := by
+  classical
+  apply LinearMap.ext
+  intro ψ
+  have hrepr : ψ = ∑ s : ArchiveFockState, ψ s • Pi.single s (1 : ℝ) := by
+    ext t
+    simp [Finset.sum_apply, Pi.smul_apply, Pi.single_apply]
+  rw [hrepr]
+  simp only [map_sum, map_smul]
+  apply Finset.sum_congr rfl
+  intro s hs
+  have hbasis : archiveCARVectorCreator u (Pi.single s (1 : ℝ)) =
+      archiveExteriorCreatorLM u (Pi.single s (1 : ℝ)) := by
+    apply archiveFockExteriorEquiv.injective
+    rw [archiveCARVectorCreator_basis_exterior]
+    simp [archiveExteriorCreatorLM, archiveExteriorCreator,
+      archiveFockExteriorEquiv_single]
+  exact congrArg (fun v => ψ s • v) hbasis
+
+/-- With the same frame lift, the CAR and exterior Julia queries are identical
+as operators on the full existing finite carrier. -/
+theorem archiveJuliaCARRaisingQuery_eq_model (u : RoleSpace)
+    (M : RoleSpace ≃ₗ[ℝ] RoleSpace) :
+    archiveJuliaCARRaisingQuery u M = archiveJuliaRaisingQuery u M := by
+  change (archiveCARVectorCreator u).comp (archiveExteriorFrameLift M) =
+    (archiveExteriorCreatorLM u).comp (archiveExteriorFrameLift M)
+  rw [archiveCARVectorCreator_eq_archiveExteriorCreatorLM]
+
 /-- A Jordan--Wigner creator acting on the vacuum is the corresponding
 one-particle occupation state. -/
 theorem carCreateEnd_vacuum (r : Role) :
@@ -163,45 +331,10 @@ theorem archiveCARVectorCreator_vacuum_exterior (u : RoleSpace) :
     archiveFockExteriorEquiv
         (archiveCARVectorCreator u (Pi.single fockVacuumState (1 : ℝ))) =
       ι ℝ u := by
-  have hu : ∑ r : Role, u r • archiveRoleBasis r = u := by
-    ext s
-    simp only [Finset.sum_apply, Pi.smul_apply, archiveRoleBasis,
-      Pi.basisFun_apply]
-    rw [Finset.sum_eq_single s]
-    · simp
-    · intro r _ hrs
-      simp [hrs]
-    · intro hs
-      exact (hs (Finset.mem_univ s)).elim
-  calc
-    archiveFockExteriorEquiv
-        (archiveCARVectorCreator u (Pi.single fockVacuumState (1 : ℝ))) =
-      ∑ r : Role, u r • ι ℝ (archiveRoleBasis r) := by
-        simp only [archiveCARVectorCreator, LinearMap.sum_apply,
-          LinearMap.smul_apply, map_sum, map_smul]
-        apply Finset.sum_congr rfl
-        intro r hr
-        rw [carCreateEnd_vacuum, archiveFockExteriorEquiv_single,
-          archiveFockExteriorBasis_apply]
-        have hsupp : archiveFockSupport (fockSingletonState r) = {r} := by
-          ext s
-          simp [archiveFockSupport, fockSingletonState, eq_comm]
-        have hcard : ({r} : Finset Role).card = 1 := by simp
-        rw [hsupp, ExteriorAlgebra.basis_apply_ofCard archiveRoleBasis hcard]
-        have harg :
-            archiveRoleBasis ∘ (Set.powersetCard.ofFinEmbEquiv.symm
-              (Set.powersetCard.ofCard hcard)) =
-              fun _ : Fin 1 => archiveRoleBasis r := by
-          funext i
-          have hi : i = 0 := Subsingleton.elim _ _
-          subst i
-          simp [Set.powersetCard.ofFinEmbEquiv_symm_apply,
-            Set.powersetCard.ofCard, Finset.orderEmbOfFin_singleton]
-        rw [ExteriorAlgebra.ιMulti_family, harg]
-        simp [ExteriorAlgebra.ιMulti_apply]
-    _ = ι ℝ (∑ r : Role, u r • archiveRoleBasis r) := by
-      simp only [map_sum, map_smul]
-    _ = ι ℝ u := by rw [hu]
+  have hvac : archiveFockExteriorBasis fockVacuumState = 1 := by
+    rw [archiveFockExteriorBasis_apply, archiveFockSupport_vacuum,
+      archiveRoleBasis_ExteriorAlgebra_empty]
+  rw [archiveCARVectorCreator_basis_exterior, hvac, mul_one]
 
 /-- On the vacuum, the CAR-based and exterior-based query implementations
 agree exactly on the existing finite carrier. -/
@@ -209,14 +342,8 @@ theorem archiveJuliaCARRaisingQuery_vacuum_eq_model (u : RoleSpace)
     (M : RoleSpace ≃ₗ[ℝ] RoleSpace) :
     archiveJuliaCARRaisingQuery u M (Pi.single fockVacuumState (1 : ℝ)) =
       archiveJuliaRaisingQuery u M (Pi.single fockVacuumState (1 : ℝ)) := by
-  apply archiveFockExteriorEquiv.injective
-  simp only [archiveJuliaCARRaisingQuery, archiveJuliaRaisingQuery,
-    LinearMap.comp_apply]
-  rw [archiveExteriorFrameLift_vacuum M 1]
-  rw [archiveCARVectorCreator_vacuum_exterior]
-  change ι ℝ u = archiveFockExteriorEquiv
-    (archiveExteriorCreator u (Pi.single fockVacuumState (1 : ℝ)))
-  exact (archiveExteriorCreator_on_vacuum_eq_ι u).symm
+  exact congrArg (fun Q => Q (Pi.single fockVacuumState (1 : ℝ)))
+    (archiveJuliaCARRaisingQuery_eq_model u M)
 
 /-- The frame lift leaves the vacuum fixed before creation acts. -/
 theorem archiveJuliaRaisingQuery_on_vacuum (u : RoleSpace)
