@@ -230,6 +230,21 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertEqual(compiled["declared_metadata_relations"]["declared_applications"], [])
         self.assertIn("not inferred", compiled["interpretation"])
 
+    def test_compiled_reuse_keeps_assembly_application_metadata_separate(self) -> None:
+        data = dataset()
+
+        class NeverCompile:
+            @staticmethod
+            def run_inventory(names: list[str], import_root: str):
+                raise AssertionError("assembly application keys are not claim locators")
+
+        view = proof.reuse_view(data, "r1-to-o1", lean_inventory=NeverCompile)
+
+        self.assertEqual(view["compiled_claim_reuse"], [])
+        self.assertEqual(view["compiled_claim_reuse_status"], "key_is_not_an_exact_claim_id")
+        self.assertEqual([row["id"] for row in view["matches"][0]["declared_applications"]],
+                         ["r1-to-o1"])
+
     def test_text_search_returns_candidate_not_accepted_relation(self) -> None:
         with tempfile.TemporaryDirectory() as temp:
             root = pathlib.Path(temp)

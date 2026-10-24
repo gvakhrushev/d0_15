@@ -330,7 +330,9 @@ claim acceptance. It creates no claim ID, status, or scientific owner.
 
 The current 33-query cold-start rerun still passes all 13/13 scenarios and the
 14-case source-impact benchmark. The focused proof-architecture suite passes
-25/25 tests. The claim-reuse CLI run used Lean source digest
+26/26 tests, including a negative control that an assembly application key
+retains its metadata route without entering the claim-locator Lean join. The
+claim-reuse CLI run used Lean source digest
 `f806ee18e9f9333b6c92db25c579f5843f066da1df1830e1a6ae18730ebd58ba` and
 collector SHA-256
 `0b80b2f838d2e1607d2bb93596e239802fe66edad23fbd3b0e269637b4a69881`; current
@@ -340,7 +342,7 @@ tool digests are:
 |---|---|
 | `tools/proof_architecture.py` | `d0e92e3b42e99562a151a41baad18c6569148c3195298002d213d11d96fbae71` |
 | `tools/proof_architecture_cold_start.py` | `00b8f483601c36ba3d548afca0752c9d6760db930a01dcdab4aa273b4c047d48` |
-| `tools/test_proof_architecture.py` | `c23b8fa722ff9543b771d24e93b5aa96048cf8fd3be887a9c4bca68f1fc51f3d` |
+| `tools/test_proof_architecture.py` | `ff77f330082786867e84d0100819d6e1175f7c41901df73651e8e3ff25841029` |
 
 This is an exact compilation and name-crosswalk example on a finite
 mathematical result. It neither closes the full D0 proof corpus nor changes the
