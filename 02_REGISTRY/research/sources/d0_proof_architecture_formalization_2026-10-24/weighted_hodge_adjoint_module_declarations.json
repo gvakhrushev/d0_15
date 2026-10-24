@@ -2,7 +2,7 @@
   "schema": "d0-lean-declaration-inventory-v1",
   "snapshot_commit": "6b59bc57ca97275df9e973715cdb503ec8fc5c4e",
   "worktree_dirty": true,
-  "lean_source_digest": "692151ba3f36ceb30848a89d1eec5cc738fc68ca1944ebb2e42e7adea2e5576a",
+  "lean_source_digest": "aaab156c8747604c76004ecda7d7ec82a3e24094449100592dfe853cd0e39231",
   "collector_sha256": "ec3a29823eea0ff27ddde532d985c732063b796f1ba08052702f103a494d6300",
   "toolchain": "leanprover/lean4:v4.30.0",
   "public_import_root": "D0.All",
@@ -608,6 +608,354 @@
     },
     {
       "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "ι",
+          "type": "Type u_1"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "K",
+          "type": "Type u_2"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Algebra.FiniteWeightedAdjoint.3564971355._hygCtx._hyg.4",
+          "type": "Fintype ι"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Algebra.FiniteWeightedAdjoint.3564971355._hygCtx._hyg.7",
+          "type": "(a b : ι) → Decidable (a = b)"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Algebra.FiniteWeightedAdjoint.3564971355._hygCtx._hyg.10",
+          "type": "Field K"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "w",
+          "type": "ι → K"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hw",
+          "type": "∀ (i : ι), w i ≠ 0"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "A",
+          "type": "(ι → K) →ₗ[K] ι → K"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "B",
+          "type": "(ι → K) →ₗ[K] ι → K"
+        }
+      ],
+      "conclusion_whnf": "D0.Algebra.finiteWeightedAdjoint w (A ∘ₗ B) =\n  D0.Algebra.finiteWeightedAdjoint w B ∘ₗ D0.Algebra.finiteWeightedAdjoint w A",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 74,
+            "line": 140
+          },
+          "start": {
+            "column": 0,
+            "line": 123
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 34,
+            "line": 125
+          },
+          "start": {
+            "column": 8,
+            "line": 125
+          }
+        }
+      },
+      "elaborated_type": "∀ {ι : Type u_1} {K : Type u_2} [inst : Fintype ι] [inst_1 : DecidableEq ι] [inst_2 : Field K] (w : ι → K),\n  (∀ (i : ι), w i ≠ 0) →\n    ∀ (A B : (ι → K) →ₗ[K] ι → K),\n      D0.Algebra.finiteWeightedAdjoint w (A ∘ₗ B) =\n        D0.Algebra.finiteWeightedAdjoint w B ∘ₗ D0.Algebra.finiteWeightedAdjoint w A",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Algebra.FiniteWeightedAdjoint",
+      "name": "D0.Algebra.finiteWeightedAdjoint_comp",
+      "proof_dependencies": [
+        "CommRing.toNonUnitalCommRing",
+        "D0.Algebra.finiteWeightedAdjoint",
+        "D0.Algebra.finiteWeightedAdjoint_unique",
+        "D0.Algebra.finiteWeightedPairing",
+        "D0.Algebra.finiteWeightedPairing_adjoint",
+        "DFunLike.coe",
+        "DecidableEq",
+        "DivisionSemiring.toSemiring",
+        "Eq",
+        "Field",
+        "Field.toCommRing",
+        "Field.toSemifield",
+        "Fintype",
+        "LinearMap",
+        "LinearMap.comp",
+        "LinearMap.instFunLike",
+        "MulZeroClass.toZero",
+        "Ne",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "OfNat.ofNat",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "RingHom.id",
+        "RingHomCompTriple.ids",
+        "Semifield.toDivisionSemiring",
+        "Semiring.toModule",
+        "Semiring.toNonAssocSemiring",
+        "Trans.trans",
+        "Zero.toOfNat0",
+        "id",
+        "instMulZeroClassOfSemiring",
+        "instTransEq"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "CommRing.toNonUnitalCommRing",
+        "D0.Algebra.finiteWeightedAdjoint",
+        "DecidableEq",
+        "DivisionSemiring.toSemiring",
+        "Eq",
+        "Field",
+        "Field.toCommRing",
+        "Field.toSemifield",
+        "Fintype",
+        "LinearMap",
+        "LinearMap.comp",
+        "MulZeroClass.toZero",
+        "Ne",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "OfNat.ofNat",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "RingHom.id",
+        "RingHomCompTriple.ids",
+        "Semifield.toDivisionSemiring",
+        "Semiring.toModule",
+        "Semiring.toNonAssocSemiring",
+        "Zero.toOfNat0",
+        "instMulZeroClassOfSemiring"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Algebra/FiniteWeightedAdjoint.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "ι",
+          "type": "Type u_1"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "K",
+          "type": "Type u_2"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Algebra.FiniteWeightedAdjoint.4209209865._hygCtx._hyg.4",
+          "type": "Fintype ι"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Algebra.FiniteWeightedAdjoint.4209209865._hygCtx._hyg.7",
+          "type": "(a b : ι) → Decidable (a = b)"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Algebra.FiniteWeightedAdjoint.4209209865._hygCtx._hyg.10",
+          "type": "Field K"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "w",
+          "type": "ι → K"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hw",
+          "type": "∀ (i : ι), w i ≠ 0"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "A",
+          "type": "(ι → K) →ₗ[K] ι → K"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "B",
+          "type": "(ι → K) →ₗ[K] ι → K"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hB",
+          "type": "∀ (x y : ι → K), D0.Algebra.finiteWeightedPairing w (A x) y = D0.Algebra.finiteWeightedPairing w x (B y)"
+        }
+      ],
+      "conclusion_whnf": "D0.Algebra.finiteWeightedAdjoint w A = B",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 14,
+            "line": 121
+          },
+          "start": {
+            "column": 0,
+            "line": 104
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 36,
+            "line": 106
+          },
+          "start": {
+            "column": 8,
+            "line": 106
+          }
+        }
+      },
+      "elaborated_type": "∀ {ι : Type u_1} {K : Type u_2} [inst : Fintype ι] [inst_1 : DecidableEq ι] [inst_2 : Field K] (w : ι → K),\n  (∀ (i : ι), w i ≠ 0) →\n    ∀ (A B : (ι → K) →ₗ[K] ι → K),\n      (∀ (x y : ι → K), D0.Algebra.finiteWeightedPairing w (A x) y = D0.Algebra.finiteWeightedPairing w x (B y)) →\n        D0.Algebra.finiteWeightedAdjoint w A = B",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Algebra.FiniteWeightedAdjoint",
+      "name": "D0.Algebra.finiteWeightedAdjoint_unique",
+      "proof_dependencies": [
+        "AddGroupWithOne.toAddMonoidWithOne",
+        "AddMonoidWithOne.toOne",
+        "CommRing.toNonUnitalCommRing",
+        "D0.Algebra.finiteWeightedAdjoint",
+        "D0.Algebra.finiteWeightedPairing",
+        "D0.Algebra.finiteWeightedPairing_adjoint",
+        "DFunLike.coe",
+        "DecidableEq",
+        "Distrib.toMul",
+        "DivisionRing.toRing",
+        "DivisionSemiring.toSemiring",
+        "Eq",
+        "Eq.mp",
+        "Eq.symm",
+        "Eq.trans",
+        "False",
+        "Field",
+        "Field.toCommRing",
+        "Field.toDivisionRing",
+        "Field.toSemifield",
+        "Fintype",
+        "HMul.hMul",
+        "IsCancelMulZero.toIsLeftCancelMulZero",
+        "IsDomain.toIsCancelMulZero",
+        "LinearMap",
+        "LinearMap.ext",
+        "LinearMap.instFunLike",
+        "MulZeroClass.toMul",
+        "MulZeroClass.toZero",
+        "Ne",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Or",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "Pi.single",
+        "Ring.toAddGroupWithOne",
+        "RingHom.id",
+        "Semifield.toDivisionSemiring",
+        "Semiring.toModule",
+        "Semiring.toNonAssocSemiring",
+        "Zero.toOfNat0",
+        "_private.D0.Algebra.FiniteWeightedAdjoint.0.D0.Algebra.finiteWeightedPairing_single_left",
+        "congrArg",
+        "eq_false",
+        "funext",
+        "instDistribOfSemiring",
+        "instHMul",
+        "instIsDomain",
+        "instMulZeroClassOfSemiring",
+        "mul_eq_mul_left_iff._simp_1",
+        "or_false"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "CommRing.toNonUnitalCommRing",
+        "D0.Algebra.finiteWeightedAdjoint",
+        "D0.Algebra.finiteWeightedPairing",
+        "DFunLike.coe",
+        "DecidableEq",
+        "DivisionSemiring.toSemiring",
+        "Eq",
+        "Field",
+        "Field.toCommRing",
+        "Field.toSemifield",
+        "Fintype",
+        "LinearMap",
+        "LinearMap.instFunLike",
+        "MulZeroClass.toZero",
+        "Ne",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "OfNat.ofNat",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "RingHom.id",
+        "Semifield.toDivisionSemiring",
+        "Semiring.toModule",
+        "Semiring.toNonAssocSemiring",
+        "Zero.toOfNat0",
+        "instMulZeroClassOfSemiring"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Algebra/FiniteWeightedAdjoint.lean"
+    },
+    {
+      "axioms": [
         "Quot.sound",
         "propext"
       ],
@@ -707,6 +1055,93 @@
       "type_dependencies": [
         "Field",
         "Fintype"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Algebra/FiniteWeightedAdjoint.lean"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "ι",
+          "type": "Type u_1"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "K",
+          "type": "Type u_2"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Algebra.FiniteWeightedAdjoint.371287583._hygCtx._hyg.4",
+          "type": "Fintype ι"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Algebra.FiniteWeightedAdjoint.371287583._hygCtx._hyg.10",
+          "type": "Field K"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "w",
+          "type": "ι → K"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "x",
+          "type": "ι → K"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "y",
+          "type": "ι → K"
+        }
+      ],
+      "conclusion_whnf": "D0.Algebra.finiteWeightedPairing w x y = ∑ i, w i * x i * y i",
+      "declaration_kind": "theorem",
+      "declaration_ranges": null,
+      "elaborated_type": "∀ {ι : Type u_1} {K : Type u_2} [inst : Fintype ι] [inst_1 : Field K] (w x y : ι → K),\n  D0.Algebra.finiteWeightedPairing w x y = ∑ i, w i * x i * y i",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Algebra.FiniteWeightedAdjoint",
+      "name": "D0.Algebra.finiteWeightedPairing.eq_1",
+      "proof_dependencies": [
+        "D0.Algebra.finiteWeightedPairing",
+        "Eq.refl",
+        "Field",
+        "Fintype"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "CommRing.toNonUnitalCommRing",
+        "D0.Algebra.finiteWeightedPairing",
+        "Distrib.toMul",
+        "DivisionSemiring.toSemiring",
+        "Eq",
+        "Field",
+        "Field.toCommRing",
+        "Field.toSemifield",
+        "Finset.sum",
+        "Finset.univ",
+        "Fintype",
+        "HMul.hMul",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "Semifield.toDivisionSemiring",
+        "instDistribOfSemiring",
+        "instHMul"
       ],
       "source_path": "03_FORMALIZATION/D0/Algebra/FiniteWeightedAdjoint.lean"
     },
@@ -1596,31 +2031,31 @@
         "propext"
       ],
       "binders": [],
-      "conclusion_whnf": "D0.Geometry.formDegreeCount4D = 5 ∧\n  Fintype.card D0.Geometry.CubicalCellType = 16 ∧\n    D0.Geometry.DegreePreservingLaplacian true ∧\n      Fintype.card D0.Role = 4 ∧\n        (∀ (N : ℕ) (ψ : D0.Geometry.ArchiveCochain N),\n            D0.Geometry.cubicalCoboundary N (D0.Geometry.cubicalCoboundary N ψ) = 0) ∧\n          (∀ (N k : ℕ) (ψ : D0.Geometry.ArchiveCochain N),\n              D0.Geometry.HomogeneousCochain N k ψ →\n                D0.Geometry.HomogeneousCochain N k (D0.Geometry.hodgeCarDirac N (D0.Geometry.hodgeCarDirac N ψ))) ∧\n            (∀ (N : ℕ) (ψ φ : D0.Geometry.ArchiveCochain N),\n                D0.Geometry.cochainPairing N (D0.Geometry.hodgeCarDirac N ψ) φ =\n                  D0.Geometry.cochainPairing N ψ (D0.Geometry.hodgeCarDirac N φ)) ∧\n              ∀ (N : ℕ) (w : D0.Geometry.ArchiveCochainBasis N → ℝ) (ψ φ : D0.Geometry.ArchiveCochain N),\n                (∀ (p : D0.Geometry.ArchiveCochainBasis N), w p ≠ 0) →\n                  D0.Algebra.finiteWeightedPairing w (D0.Geometry.hodgeCarDirac N ψ) φ =\n                    D0.Algebra.finiteWeightedPairing w ψ ((D0.Geometry.hodgeCarDiracDiagonalAdjoint N w) φ)",
+      "conclusion_whnf": "D0.Geometry.formDegreeCount4D = 5 ∧\n  Fintype.card D0.Geometry.CubicalCellType = 16 ∧\n    D0.Geometry.DegreePreservingLaplacian true ∧\n      Fintype.card D0.Role = 4 ∧\n        (∀ (N : ℕ) (ψ : D0.Geometry.ArchiveCochain N),\n            D0.Geometry.cubicalCoboundary N (D0.Geometry.cubicalCoboundary N ψ) = 0) ∧\n          (∀ (N k : ℕ) (ψ : D0.Geometry.ArchiveCochain N),\n              D0.Geometry.HomogeneousCochain N k ψ →\n                D0.Geometry.HomogeneousCochain N k (D0.Geometry.hodgeCarDirac N (D0.Geometry.hodgeCarDirac N ψ))) ∧\n            (∀ (N : ℕ) (ψ φ : D0.Geometry.ArchiveCochain N),\n                D0.Geometry.cochainPairing N (D0.Geometry.hodgeCarDirac N ψ) φ =\n                  D0.Geometry.cochainPairing N ψ (D0.Geometry.hodgeCarDirac N φ)) ∧\n              (∀ (N : ℕ) (w : D0.Geometry.ArchiveCochainBasis N → ℝ) (ψ φ : D0.Geometry.ArchiveCochain N),\n                  (∀ (p : D0.Geometry.ArchiveCochainBasis N), w p ≠ 0) →\n                    D0.Algebra.finiteWeightedPairing w (D0.Geometry.hodgeCarDirac N ψ) φ =\n                      D0.Algebra.finiteWeightedPairing w ψ ((D0.Geometry.hodgeCarDiracDiagonalAdjoint N w) φ)) ∧\n                ∀ (N : ℕ) (w : D0.Geometry.ArchiveCochainBasis N → ℝ),\n                  (∀ (p : D0.Geometry.ArchiveCochainBasis N), w p ≠ 0) →\n                    D0.Algebra.finiteWeightedAdjoint w (D0.Geometry.hodgeCarDiracₗ N ∘ₗ D0.Geometry.hodgeCarDiracₗ N) =\n                      D0.Geometry.hodgeCarDiracDiagonalAdjoint N w ∘ₗ D0.Geometry.hodgeCarDiracDiagonalAdjoint N w",
       "declaration_kind": "theorem",
       "declaration_ranges": {
         "declaration": {
           "end": {
-            "column": 58,
-            "line": 105
+            "column": 61,
+            "line": 125
           },
           "start": {
             "column": 0,
-            "line": 74
+            "line": 87
           }
         },
         "selection": {
           "end": {
             "column": 42,
-            "line": 79
+            "line": 92
           },
           "start": {
             "column": 8,
-            "line": 79
+            "line": 92
           }
         }
       },
-      "elaborated_type": "D0.Geometry.formDegreeCount4D = 5 ∧\n  Fintype.card D0.Geometry.CubicalCellType = 16 ∧\n    D0.Geometry.DegreePreservingLaplacian true ∧\n      Fintype.card D0.Role = 4 ∧\n        (∀ (N : ℕ) (ψ : D0.Geometry.ArchiveCochain N),\n            D0.Geometry.cubicalCoboundary N (D0.Geometry.cubicalCoboundary N ψ) = 0) ∧\n          (∀ (N k : ℕ) (ψ : D0.Geometry.ArchiveCochain N),\n              D0.Geometry.HomogeneousCochain N k ψ →\n                D0.Geometry.HomogeneousCochain N k (D0.Geometry.hodgeCarDirac N (D0.Geometry.hodgeCarDirac N ψ))) ∧\n            (∀ (N : ℕ) (ψ φ : D0.Geometry.ArchiveCochain N),\n                D0.Geometry.cochainPairing N (D0.Geometry.hodgeCarDirac N ψ) φ =\n                  D0.Geometry.cochainPairing N ψ (D0.Geometry.hodgeCarDirac N φ)) ∧\n              ∀ (N : ℕ) (w : D0.Geometry.ArchiveCochainBasis N → ℝ) (ψ φ : D0.Geometry.ArchiveCochain N),\n                (∀ (p : D0.Geometry.ArchiveCochainBasis N), w p ≠ 0) →\n                  D0.Algebra.finiteWeightedPairing w (D0.Geometry.hodgeCarDirac N ψ) φ =\n                    D0.Algebra.finiteWeightedPairing w ψ ((D0.Geometry.hodgeCarDiracDiagonalAdjoint N w) φ)",
+      "elaborated_type": "D0.Geometry.formDegreeCount4D = 5 ∧\n  Fintype.card D0.Geometry.CubicalCellType = 16 ∧\n    D0.Geometry.DegreePreservingLaplacian true ∧\n      Fintype.card D0.Role = 4 ∧\n        (∀ (N : ℕ) (ψ : D0.Geometry.ArchiveCochain N),\n            D0.Geometry.cubicalCoboundary N (D0.Geometry.cubicalCoboundary N ψ) = 0) ∧\n          (∀ (N k : ℕ) (ψ : D0.Geometry.ArchiveCochain N),\n              D0.Geometry.HomogeneousCochain N k ψ →\n                D0.Geometry.HomogeneousCochain N k (D0.Geometry.hodgeCarDirac N (D0.Geometry.hodgeCarDirac N ψ))) ∧\n            (∀ (N : ℕ) (ψ φ : D0.Geometry.ArchiveCochain N),\n                D0.Geometry.cochainPairing N (D0.Geometry.hodgeCarDirac N ψ) φ =\n                  D0.Geometry.cochainPairing N ψ (D0.Geometry.hodgeCarDirac N φ)) ∧\n              (∀ (N : ℕ) (w : D0.Geometry.ArchiveCochainBasis N → ℝ) (ψ φ : D0.Geometry.ArchiveCochain N),\n                  (∀ (p : D0.Geometry.ArchiveCochainBasis N), w p ≠ 0) →\n                    D0.Algebra.finiteWeightedPairing w (D0.Geometry.hodgeCarDirac N ψ) φ =\n                      D0.Algebra.finiteWeightedPairing w ψ ((D0.Geometry.hodgeCarDiracDiagonalAdjoint N w) φ)) ∧\n                ∀ (N : ℕ) (w : D0.Geometry.ArchiveCochainBasis N → ℝ),\n                  (∀ (p : D0.Geometry.ArchiveCochainBasis N), w p ≠ 0) →\n                    D0.Algebra.finiteWeightedAdjoint w (D0.Geometry.hodgeCarDiracₗ N ∘ₗ D0.Geometry.hodgeCarDiracₗ N) =\n                      D0.Geometry.hodgeCarDiracDiagonalAdjoint N w ∘ₗ D0.Geometry.hodgeCarDiracDiagonalAdjoint N w",
       "exists": true,
       "internal_name": false,
       "module": "D0.Geometry.ArchiveWeightedHodgeDirac",
@@ -1631,6 +2066,8 @@
         "Bool",
         "Bool.fintype",
         "Bool.true",
+        "CommRing.toNonUnitalCommRing",
+        "D0.Algebra.finiteWeightedAdjoint",
         "D0.Algebra.finiteWeightedPairing",
         "D0.Dyad",
         "D0.Geometry.ArchiveCochain",
@@ -1650,19 +2087,30 @@
         "D0.Geometry.hodgeCarDiracDiagonalAdjoint",
         "D0.Geometry.hodgeCarDirac_diagonal_weight_adjoint",
         "D0.Geometry.hodgeCarDirac_self_adjoint",
+        "D0.Geometry.hodgeCarDirac_square_diagonal_weight_adjoint",
+        "D0.Geometry.hodgeCarDiracₗ",
         "D0.Geometry.instNeZeroArchiveFibers",
         "D0.Geometry.unweightedHodgeSquare_degree_preserving",
         "D0.Role",
         "D0.archiveFibers",
         "D0.card_role",
         "DFunLike.coe",
+        "DivisionSemiring.toSemiring",
         "Eq",
+        "Field.toCommRing",
+        "Field.toSemifield",
         "Fin.fintype",
         "Fintype.card",
+        "Fintype.decidablePiFintype",
         "LinearMap",
+        "LinearMap.comp",
         "LinearMap.instFunLike",
         "Nat",
         "Ne",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
         "OfNat.ofNat",
         "Pi.Function.module",
         "Pi.addCommMonoid",
@@ -1674,11 +2122,15 @@
         "Real.instZero",
         "Real.semiring",
         "RingHom.id",
+        "RingHomCompTriple.ids",
+        "Semifield.toDivisionSemiring",
         "Semiring.toModule",
         "Semiring.toNonAssocSemiring",
         "ZMod",
+        "ZMod.decidableEq",
         "ZMod.fintype",
         "Zero.toOfNat0",
+        "instDecidableEqBool",
         "instDecidableEqFin",
         "instDecidableEqProd",
         "instFintypeProd",
@@ -1691,6 +2143,8 @@
         "Bool",
         "Bool.fintype",
         "Bool.true",
+        "CommRing.toNonUnitalCommRing",
+        "D0.Algebra.finiteWeightedAdjoint",
         "D0.Algebra.finiteWeightedPairing",
         "D0.Dyad",
         "D0.Geometry.ArchiveCochain",
@@ -1705,17 +2159,27 @@
         "D0.Geometry.formDegreeCount4D",
         "D0.Geometry.hodgeCarDirac",
         "D0.Geometry.hodgeCarDiracDiagonalAdjoint",
+        "D0.Geometry.hodgeCarDiracₗ",
         "D0.Geometry.instNeZeroArchiveFibers",
         "D0.Role",
         "D0.archiveFibers",
         "DFunLike.coe",
+        "DivisionSemiring.toSemiring",
         "Eq",
+        "Field.toCommRing",
+        "Field.toSemifield",
         "Fin.fintype",
         "Fintype.card",
+        "Fintype.decidablePiFintype",
         "LinearMap",
+        "LinearMap.comp",
         "LinearMap.instFunLike",
         "Nat",
         "Ne",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
         "OfNat.ofNat",
         "Pi.Function.module",
         "Pi.addCommMonoid",
@@ -1727,11 +2191,15 @@
         "Real.instZero",
         "Real.semiring",
         "RingHom.id",
+        "RingHomCompTriple.ids",
+        "Semifield.toDivisionSemiring",
         "Semiring.toModule",
         "Semiring.toNonAssocSemiring",
         "ZMod",
+        "ZMod.decidableEq",
         "ZMod.fintype",
         "Zero.toOfNat0",
+        "instDecidableEqBool",
         "instDecidableEqFin",
         "instDecidableEqProd",
         "instFintypeProd",
@@ -2039,6 +2507,92 @@
           "is_proposition": false,
           "name": "w",
           "type": "D0.Geometry.ArchiveCochainBasis N → ℝ"
+        }
+      ],
+      "conclusion_whnf": "D0.Geometry.hodgeCarDiracDiagonalAdjoint N w = D0.Algebra.finiteWeightedAdjoint w (D0.Geometry.hodgeCarDiracₗ N)",
+      "declaration_kind": "theorem",
+      "declaration_ranges": null,
+      "elaborated_type": "∀ (N : ℕ) (w : D0.Geometry.ArchiveCochainBasis N → ℝ),\n  D0.Geometry.hodgeCarDiracDiagonalAdjoint N w = D0.Algebra.finiteWeightedAdjoint w (D0.Geometry.hodgeCarDiracₗ N)",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveWeightedHodgeDirac",
+      "name": "D0.Geometry.hodgeCarDiracDiagonalAdjoint.eq_1",
+      "proof_dependencies": [
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.hodgeCarDiracDiagonalAdjoint",
+        "Eq.refl",
+        "LinearMap",
+        "Nat",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.semiring",
+        "RingHom.id",
+        "Semiring.toModule",
+        "Semiring.toNonAssocSemiring"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "Bool",
+        "Bool.fintype",
+        "D0.Algebra.finiteWeightedAdjoint",
+        "D0.Dyad",
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.hodgeCarDiracDiagonalAdjoint",
+        "D0.Geometry.hodgeCarDiracₗ",
+        "D0.Geometry.instNeZeroArchiveFibers",
+        "D0.Role",
+        "D0.archiveFibers",
+        "Eq",
+        "Fin.fintype",
+        "Fintype.decidablePiFintype",
+        "LinearMap",
+        "Nat",
+        "OfNat.ofNat",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "Pi.instFintype",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.instField",
+        "Real.semiring",
+        "RingHom.id",
+        "Semiring.toModule",
+        "Semiring.toNonAssocSemiring",
+        "ZMod",
+        "ZMod.decidableEq",
+        "ZMod.fintype",
+        "instDecidableEqBool",
+        "instDecidableEqFin",
+        "instDecidableEqProd",
+        "instFintypeProd",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveWeightedHodgeDirac.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "w",
+          "type": "D0.Geometry.ArchiveCochainBasis N → ℝ"
         },
         {
           "binder_info": "Lean.BinderInfo.default",
@@ -2157,6 +2711,172 @@
         "ZMod",
         "ZMod.fintype",
         "Zero.toOfNat0",
+        "instDecidableEqFin",
+        "instDecidableEqProd",
+        "instFintypeProd",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveWeightedHodgeDirac.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "w",
+          "type": "D0.Geometry.ArchiveCochainBasis N → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hw",
+          "type": "∀ (p : D0.Geometry.ArchiveCochainBasis N), w p ≠ 0"
+        }
+      ],
+      "conclusion_whnf": "D0.Algebra.finiteWeightedAdjoint w (D0.Geometry.hodgeCarDiracₗ N ∘ₗ D0.Geometry.hodgeCarDiracₗ N) =\n  D0.Geometry.hodgeCarDiracDiagonalAdjoint N w ∘ₗ D0.Geometry.hodgeCarDiracDiagonalAdjoint N w",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 44,
+            "line": 85
+          },
+          "start": {
+            "column": 0,
+            "line": 74
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 52,
+            "line": 77
+          },
+          "start": {
+            "column": 8,
+            "line": 77
+          }
+        }
+      },
+      "elaborated_type": "∀ (N : ℕ) (w : D0.Geometry.ArchiveCochainBasis N → ℝ),\n  (∀ (p : D0.Geometry.ArchiveCochainBasis N), w p ≠ 0) →\n    D0.Algebra.finiteWeightedAdjoint w (D0.Geometry.hodgeCarDiracₗ N ∘ₗ D0.Geometry.hodgeCarDiracₗ N) =\n      D0.Geometry.hodgeCarDiracDiagonalAdjoint N w ∘ₗ D0.Geometry.hodgeCarDiracDiagonalAdjoint N w",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveWeightedHodgeDirac",
+      "name": "D0.Geometry.hodgeCarDirac_square_diagonal_weight_adjoint",
+      "proof_dependencies": [
+        "Bool",
+        "Bool.fintype",
+        "CommRing.toNonUnitalCommRing",
+        "D0.Algebra.finiteWeightedAdjoint",
+        "D0.Algebra.finiteWeightedAdjoint_comp",
+        "D0.Dyad",
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.hodgeCarDiracDiagonalAdjoint",
+        "D0.Geometry.hodgeCarDiracₗ",
+        "D0.Geometry.instNeZeroArchiveFibers",
+        "D0.Role",
+        "D0.archiveFibers",
+        "DivisionSemiring.toSemiring",
+        "Eq",
+        "Field.toCommRing",
+        "Field.toSemifield",
+        "Fin.fintype",
+        "Fintype.decidablePiFintype",
+        "LinearMap",
+        "LinearMap.comp",
+        "Nat",
+        "Ne",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "OfNat.ofNat",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "Pi.instFintype",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.instField",
+        "Real.instZero",
+        "Real.semiring",
+        "RingHom.id",
+        "RingHomCompTriple.ids",
+        "Semifield.toDivisionSemiring",
+        "Semiring.toModule",
+        "Semiring.toNonAssocSemiring",
+        "ZMod",
+        "ZMod.decidableEq",
+        "ZMod.fintype",
+        "Zero.toOfNat0",
+        "id",
+        "instDecidableEqBool",
+        "instDecidableEqFin",
+        "instDecidableEqProd",
+        "instFintypeProd",
+        "instOfNatNat"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "Bool",
+        "Bool.fintype",
+        "CommRing.toNonUnitalCommRing",
+        "D0.Algebra.finiteWeightedAdjoint",
+        "D0.Dyad",
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.hodgeCarDiracDiagonalAdjoint",
+        "D0.Geometry.hodgeCarDiracₗ",
+        "D0.Geometry.instNeZeroArchiveFibers",
+        "D0.Role",
+        "D0.archiveFibers",
+        "DivisionSemiring.toSemiring",
+        "Eq",
+        "Field.toCommRing",
+        "Field.toSemifield",
+        "Fin.fintype",
+        "Fintype.decidablePiFintype",
+        "LinearMap",
+        "LinearMap.comp",
+        "Nat",
+        "Ne",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "OfNat.ofNat",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "Pi.instFintype",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.instField",
+        "Real.instZero",
+        "Real.semiring",
+        "RingHom.id",
+        "RingHomCompTriple.ids",
+        "Semifield.toDivisionSemiring",
+        "Semiring.toModule",
+        "Semiring.toNonAssocSemiring",
+        "ZMod",
+        "ZMod.decidableEq",
+        "ZMod.fintype",
+        "Zero.toOfNat0",
+        "instDecidableEqBool",
         "instDecidableEqFin",
         "instDecidableEqProd",
         "instFintypeProd",
@@ -2313,6 +3033,182 @@
         "Nat"
       ],
       "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveWeightedHodgeDirac.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "ι",
+          "type": "Type u_1"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "K",
+          "type": "Type u_2"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Algebra.FiniteWeightedAdjoint.2480556509._hygCtx._hyg.4",
+          "type": "Fintype ι"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Algebra.FiniteWeightedAdjoint.2480556509._hygCtx._hyg.7",
+          "type": "(a b : ι) → Decidable (a = b)"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Algebra.FiniteWeightedAdjoint.2480556509._hygCtx._hyg.10",
+          "type": "Field K"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "w",
+          "type": "ι → K"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "i",
+          "type": "ι"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "z",
+          "type": "ι → K"
+        }
+      ],
+      "conclusion_whnf": "D0.Algebra.finiteWeightedPairing w (Pi.single i 1) z = w i * z i",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 39,
+            "line": 102
+          },
+          "start": {
+            "column": 0,
+            "line": 92
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 49,
+            "line": 92
+          },
+          "start": {
+            "column": 16,
+            "line": 92
+          }
+        }
+      },
+      "elaborated_type": "∀ {ι : Type u_1} {K : Type u_2} [inst : Fintype ι] [inst_1 : DecidableEq ι] [inst_2 : Field K] (w : ι → K) (i : ι)\n  (z : ι → K), D0.Algebra.finiteWeightedPairing w (Pi.single i 1) z = w i * z i",
+      "exists": true,
+      "internal_name": true,
+      "module": "D0.Algebra.FiniteWeightedAdjoint",
+      "name": "_private.D0.Algebra.FiniteWeightedAdjoint.0.D0.Algebra.finiteWeightedPairing_single_left",
+      "proof_dependencies": [
+        "AddCommMonoid.toAddMonoid",
+        "AddGroupWithOne.toAddMonoidWithOne",
+        "AddMonoid.toAddZeroClass",
+        "AddMonoidWithOne.toOne",
+        "AddZero.toZero",
+        "AddZeroClass.toAddZero",
+        "CommRing.toNonUnitalCommRing",
+        "D0.Algebra.finiteWeightedPairing",
+        "DecidableEq",
+        "Distrib.toMul",
+        "DivisionRing.toRing",
+        "DivisionSemiring.toSemiring",
+        "Eq",
+        "Eq.mpr",
+        "Eq.trans",
+        "False",
+        "False.elim",
+        "Field",
+        "Field.toCommRing",
+        "Field.toDivisionRing",
+        "Field.toSemifield",
+        "Finset",
+        "Finset.instSetLike",
+        "Finset.mem_univ",
+        "Finset.sum",
+        "Finset.sum_eq_single",
+        "Finset.univ",
+        "Fintype",
+        "HMul.hMul",
+        "Membership.mem",
+        "MulZeroClass.mul_zero",
+        "MulZeroClass.toZero",
+        "MulZeroClass.zero_mul",
+        "MulZeroOneClass.toMulOneClass",
+        "Ne",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "Not",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Pi.single",
+        "Pi.single_eq_of_ne",
+        "Pi.single_eq_same",
+        "Ring.toAddGroupWithOne",
+        "Semifield.toDivisionSemiring",
+        "SetLike.instMembership",
+        "True",
+        "Zero.toOfNat0",
+        "congrArg",
+        "congrFun'",
+        "eq_false",
+        "eq_self",
+        "id",
+        "instDistribOfSemiring",
+        "instHMul",
+        "instMulZeroClassOfSemiring",
+        "instMulZeroOneClassOfSemiring",
+        "mul_one",
+        "not_false_eq_true",
+        "of_eq_true"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "AddGroupWithOne.toAddMonoidWithOne",
+        "AddMonoidWithOne.toOne",
+        "D0.Algebra.finiteWeightedPairing",
+        "DecidableEq",
+        "Distrib.toMul",
+        "DivisionRing.toRing",
+        "DivisionSemiring.toSemiring",
+        "Eq",
+        "Field",
+        "Field.toDivisionRing",
+        "Field.toSemifield",
+        "Fintype",
+        "HMul.hMul",
+        "MulZeroClass.toZero",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Pi.single",
+        "Ring.toAddGroupWithOne",
+        "Semifield.toDivisionSemiring",
+        "instDistribOfSemiring",
+        "instHMul",
+        "instMulZeroClassOfSemiring"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Algebra/FiniteWeightedAdjoint.lean"
     },
     {
       "axioms": [

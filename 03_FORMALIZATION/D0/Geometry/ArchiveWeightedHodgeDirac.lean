@@ -71,6 +71,19 @@ theorem hodgeCarDirac_diagonal_weight_adjoint (N : ℕ)
   intro hw
   exact D0.Algebra.finiteWeightedPairing_adjoint w hw (hodgeCarDiracₗ N) ψ φ
 
+/-- The weighted adjoint of the squared Hodge/CAR operator is the square of
+the supplied-profile adjoint. This is a concrete application of the generic
+composition law and does not assert that the profile is geometrically selected. -/
+theorem hodgeCarDirac_square_diagonal_weight_adjoint (N : ℕ)
+    (w : ArchiveCochainBasis N → ℝ) (hw : ∀ p, w p ≠ 0) :
+    D0.Algebra.finiteWeightedAdjoint w
+        ((hodgeCarDiracₗ N).comp (hodgeCarDiracₗ N)) =
+      (hodgeCarDiracDiagonalAdjoint N w).comp
+        (hodgeCarDiracDiagonalAdjoint N w) := by
+  simpa [hodgeCarDiracDiagonalAdjoint] using
+    (D0.Algebra.finiteWeightedAdjoint_comp w hw
+      (hodgeCarDiracₗ N) (hodgeCarDiracₗ N))
+
 /-- **D0-ARCHIVE-WEIGHTED-HODGE-DIRAC-001 (Owner locator)**:
 The currently compiled package records finite counts and a legacy Boolean
 flag, and includes the concrete unweighted Hodge-square degree-preservation
@@ -92,9 +105,14 @@ theorem archive_weighted_hodge_dirac_owner :
       (∀ p, w p ≠ 0) →
       D0.Algebra.finiteWeightedPairing w (hodgeCarDirac N ψ) φ =
         D0.Algebra.finiteWeightedPairing w ψ
-          (hodgeCarDiracDiagonalAdjoint N w φ)) := by
+          (hodgeCarDiracDiagonalAdjoint N w φ)) ∧
+    (∀ N (w : ArchiveCochainBasis N → ℝ), (∀ p, w p ≠ 0) →
+      D0.Algebra.finiteWeightedAdjoint w
+          ((hodgeCarDiracₗ N).comp (hodgeCarDiracₗ N)) =
+        (hodgeCarDiracDiagonalAdjoint N w).comp
+          (hodgeCarDiracDiagonalAdjoint N w)) := by
   refine ⟨formDegreeCount4D_eq_five, card_archive_fock_state, rfl, card_role,
-    ?_, ?_, ?_, ?_⟩
+    ?_, ?_, ?_, ?_, ?_⟩
   · intro N ψ
     exact d_squared_eq_zero N ψ
   · intro N k ψ hψ
@@ -103,5 +121,7 @@ theorem archive_weighted_hodge_dirac_owner :
     exact hodgeCarDirac_self_adjoint N ψ φ
   · intro N w ψ φ hw
     exact hodgeCarDirac_diagonal_weight_adjoint N w ψ φ hw
+  · intro N w hw
+    exact hodgeCarDirac_square_diagonal_weight_adjoint N w hw
 
 end D0.Geometry

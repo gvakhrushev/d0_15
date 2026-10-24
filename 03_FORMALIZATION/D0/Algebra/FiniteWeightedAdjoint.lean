@@ -89,6 +89,56 @@ theorem finiteWeightedPairing_adjoint (w : ι → K) (hw : ∀ i, w i ≠ 0)
       have hwi := hw i
       field_simp [hwi]
 
+private theorem finiteWeightedPairing_single_left (w : ι → K) (i : ι)
+    (z : ι → K) :
+    finiteWeightedPairing w (Pi.single i (1 : K)) z = w i * z i := by
+  classical
+  simp only [finiteWeightedPairing]
+  rw [Finset.sum_eq_single i]
+  · simp
+  · intro j hj hji
+    simp [hji]
+  · intro hi
+    exact (hi (Finset.mem_univ i)).elim
+
+/-- The adjoint identity uniquely determines its right-hand operator when the
+diagonal pairing is nondegenerate. -/
+theorem finiteWeightedAdjoint_unique (w : ι → K) (hw : ∀ i, w i ≠ 0)
+    (A B : (ι → K) →ₗ[K] (ι → K))
+    (hB : ∀ x y, finiteWeightedPairing w (A x) y =
+      finiteWeightedPairing w x (B y)) :
+    finiteWeightedAdjoint w A = B := by
+  apply LinearMap.ext
+  intro y
+  funext i
+  have hAdj := finiteWeightedPairing_adjoint w hw A (Pi.single i 1) y
+  have hB' := hB (Pi.single i 1) y
+  have hPair := hAdj.symm.trans hB'
+  have hCoord : (finiteWeightedAdjoint w A y) i = (B y) i := by
+    rw [finiteWeightedPairing_single_left] at hPair
+    rw [finiteWeightedPairing_single_left] at hPair
+    simpa [hw i] using hPair
+  exact hCoord
+
+/-- The adjoint of a composite is the composite of the adjoints in reverse
+order. -/
+theorem finiteWeightedAdjoint_comp (w : ι → K) (hw : ∀ i, w i ≠ 0)
+    (A B : (ι → K) →ₗ[K] (ι → K)) :
+    finiteWeightedAdjoint w (A.comp B) =
+      (finiteWeightedAdjoint w B).comp (finiteWeightedAdjoint w A) := by
+  apply finiteWeightedAdjoint_unique w hw (A.comp B)
+  intro x y
+  change finiteWeightedPairing w (A (B x)) y =
+    finiteWeightedPairing w x
+      (finiteWeightedAdjoint w B (finiteWeightedAdjoint w A y))
+  calc
+    finiteWeightedPairing w (A (B x)) y =
+        finiteWeightedPairing w (B x) (finiteWeightedAdjoint w A y) :=
+      finiteWeightedPairing_adjoint w hw A (B x) y
+    _ = finiteWeightedPairing w x
+        (finiteWeightedAdjoint w B (finiteWeightedAdjoint w A y)) :=
+      finiteWeightedPairing_adjoint w hw B x (finiteWeightedAdjoint w A y)
+
 end
 
 end D0.Algebra

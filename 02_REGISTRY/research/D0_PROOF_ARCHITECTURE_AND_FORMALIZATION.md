@@ -1130,3 +1130,43 @@ scientific claim. It identified the two omitted CAR axiom entries for support
 and singleton-vacuum behavior; the full inventory already recorded them, and
 the summary above now names them explicitly. The broad registry wording and
 status remain with the existing owner.
+
+## Finite weighted-adjoint composition and Hodge-square application (24 October 2026)
+
+The generic finite weighted-adjoint module now also proves uniqueness from
+the adjoint identity for a nowhere-zero diagonal profile and the composition
+law `(A ∘ B)† = B† ∘ A†`. The uniqueness proof uses the coordinate-basis
+pairing and the nondegeneracy supplied by the nonzero weights. No positivity
+or inner-product structure is assumed.
+
+The Hodge/CAR consumer applies this law to the square of its existing linear
+operator: for every refinement and every supplied nonzero diagonal profile,
+the weighted adjoint of `hodgeCarDiracₗ.comp hodgeCarDiracₗ` equals the
+composition of its two diagonal-weight adjoints. This composes the generic
+algebra result with the registered finite Hodge operator. It does not derive
+the geometric profile, a positive metric, or the physical Hodge action.
+
+This is the latest inventory for the preceding Hodge application; it
+supersedes the earlier 21-declaration inventory and reuse hash recorded
+above. The compiled inventory at
+`sources/d0_proof_architecture_formalization_2026-10-24/weighted_hodge_adjoint_module_declarations.json`
+has SHA-256 `011f65653ca29a5390a09fd6ea606d22edb6ade79448cb712f77e2fe32aa7bf2`,
+enumerates 27 declarations through public import `D0.All`, and records Lean
+source digest `aaab156c8747604c76004ecda7d7ec82a3e24094449100592dfe853cd0e39231`,
+collector SHA-256 `ec3a29823eea0ff27ddde532d985c732063b796f1ba08052702f103a494d6300`,
+and Lean 4.30.0. The refreshed compiled reuse record at
+`sources/d0_proof_architecture_formalization_2026-10-24/weighted_hodge_claim_reuse.json`
+has SHA-256 `f046b794ea8a123c8fc7b86d3228ff51f5e0196614c32a6aa85987cb8501863c`;
+its elaborated owner type includes the new Hodge-square application. The new
+generic composition and uniqueness declarations have axiom closure
+`Classical.choice`, `Quot.sound`, and `propext`; the registered Hodge owner
+retains its explicit CAR `native_decide` footprint. These records describe
+the pre-publication source snapshot `6b59bc57ca97275df9e973715cdb503ec8fc5c4e`
+with `worktree_dirty=true`; the Lean source digest binds the exact compiled
+contents.
+
+Validation for this slice: the narrow Hodge target built successfully through
+2,988 Lake jobs. The final `D0.All` integration on this expanded source is
+still required before the checkpoint is ready. C0 remains unfrozen and
+independently unaccepted, and the existing scientific and physical owners
+remain unchanged.
