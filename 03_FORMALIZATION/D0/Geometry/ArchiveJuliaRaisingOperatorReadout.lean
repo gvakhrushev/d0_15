@@ -30,7 +30,7 @@ open ExteriorAlgebra
 open scoped BigOperators
 
 local instance archiveJuliaRoleLinearOrder : LinearOrder Role :=
-  LinearOrder.lift' roleCode roleCode_injective
+  LinearOrder.lift' roleOrderIndex roleOrderIndex_injective
 
 noncomputable section
 
@@ -70,6 +70,67 @@ private theorem carMatrixEnd_apply_single
     simp [hket]
   · intro hs
     exact (hs (Finset.mem_univ s)).elim
+
+private theorem precedingOccupationCount_update (s : ArchiveFockState) (r : Role) :
+    precedingOccupationCount (Function.update s r true) r =
+      precedingOccupationCount s r := by
+  unfold precedingOccupationCount
+  congr 1
+  ext q
+  by_cases hqr : q = r
+  · subst q
+    simp
+  · simp [Function.update_of_ne hqr]
+
+private theorem jwPhase_update (s : ArchiveFockState) (r : Role) :
+    jwPhase (Function.update s r true) r = jwPhase s r := by
+  unfold jwPhase
+  rw [precedingOccupationCount_update]
+
+/-- The owned Jordan--Wigner creator has its expected signed occupation-basis
+action on every one of the 16 carrier states.  The sign counts occupied roles
+before `r` in the same order used by the exterior basis. -/
+theorem carCreateEnd_single_state (r : Role) (s : ArchiveFockState) :
+    carCreateEnd r (Pi.single s (1 : ℝ)) =
+      if s r = true then 0 else
+        jwPhase s r • Pi.single (Function.update s r true) (1 : ℝ) := by
+  ext bra
+  unfold carCreateEnd
+  rw [carMatrixEnd_apply_single]
+  by_cases hsr : s r = true
+  · simp [carCreate, carAnnihilate, hsr]
+  · have hsf : s r = false := by cases h : s r <;> simp_all
+    by_cases hbra : bra = Function.update s r true
+    · subst bra
+      have hcond :
+          Function.update s r true r = true ∧ s r = false ∧
+            (∀ t : Role, t ≠ r → s t = Function.update s r true t) := by
+        refine ⟨by simp, hsf, ?_⟩
+        intro t ht
+        simp [Function.update_of_ne ht]
+      change (if Function.update s r true r = true ∧ s r = false ∧
+          (∀ t : Role, t ≠ r → s t = Function.update s r true t)
+        then jwPhase (Function.update s r true) r else 0) * 1 = _
+      rw [if_pos hcond]
+      rw [jwPhase_update]
+      simp [hsf]
+    · have hnot : ¬ (bra r = true ∧
+          (∀ t : Role, t ≠ r → s t = bra t)) := by
+        intro h
+        apply hbra
+        funext t
+        by_cases ht : t = r
+        · subst t
+          simp [Function.update, h.1]
+        · simp [Function.update_of_ne ht, h.2 t ht]
+      have hz : carCreate r bra s = 0 := by
+        change (if bra r = true ∧ s r = false ∧
+            (∀ t : Role, t ≠ r → s t = bra t) then jwPhase bra r else 0) = 0
+        simp only [hsf, true_and]
+        rw [if_neg hnot]
+      change carCreate r bra s * 1 = _
+      rw [hz]
+      simp [hsf, hbra]
 
 /-- A Jordan--Wigner creator acting on the vacuum is the corresponding
 one-particle occupation state. -/

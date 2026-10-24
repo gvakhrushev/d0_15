@@ -16,7 +16,7 @@ open D0
 open ExteriorAlgebra
 
 local instance nilpotentAffineRoleLinearOrder : LinearOrder Role :=
-  LinearOrder.lift' roleCode roleCode_injective
+  LinearOrder.lift' roleOrderIndex roleOrderIndex_injective
 
 set_option linter.unusedSimpArgs false
 

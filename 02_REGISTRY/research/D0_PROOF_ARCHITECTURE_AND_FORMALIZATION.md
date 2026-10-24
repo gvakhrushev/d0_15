@@ -1323,3 +1323,47 @@ matching the baseline of 3; `test_proof_architecture.py` passes 35/35 and
 and the changed `formal_support.csv` path check also pass. The current source
 remains unmerged in Draft PR #402; clean remote `D0.All` and independent
 semantic acceptance are still pending. C0 remains unfrozen and unaccepted.
+
+## CAR/exterior role-order alignment and full basis-state creator action (24 October 2026)
+
+The finite exterior lift had been ordered by `roleCode` from the role-pair
+metric carrier (`A,C,D,B`), while the owned Jordan–Wigner matrices count
+preceding occupations using `roleOrderIndex` (`A,B,C,D`). The vacuum-only
+readout does not expose this sign difference. The exterior lift, affine-matter
+lift, and Julia readout now all lift `roleOrderIndex`; the exterior module no
+longer imports the unrelated pair-metric carrier just to obtain an order. The
+duplicate injectivity proof in `RoleFockPermutation` now references the shared
+`ArchiveCARRelations.roleOrderIndex_injective` theorem.
+
+`carCreateEnd_single_state` now states the CAR creator's action on an arbitrary
+occupation basis state: occupied target modes are killed, and unoccupied
+target modes are updated with the Jordan–Wigner phase. Its auxiliary proof
+records that adding the target occupation leaves the number of *preceding*
+occupations unchanged. This characterizes the CAR creator on all 16 basis
+states and makes its sign convention explicit. It does not by itself prove
+equality of the complete CAR and exterior creator operators on non-vacuum
+states; the registered Julia CAR/exterior query equality remains the vacuum
+statement. Equations (27)–(28), Lorentz-null inversion, full coframe or metric
+recovery, variational/source/price maps, physical selection, and `GR_closed`
+remain outside this formal result.
+
+Validation: the five changed Lean modules and the current `D0.All` import root
+compiled with Lean 4.30.0 into the temporary
+`/private/tmp/d0-pr402-lean-overlay`, with unchanged imported modules resolved
+from the preserved checkout cache. This is an overlay integration compile, not
+a fresh `lake build D0.All`; the passing PR #402 CI runs are from the preceding
+head and do not validate this unpushed change. `#print axioms` for both
+`carCreateEnd_single_state` and the shared order-injectivity theorem reports
+`propext`, `Classical.choice`, and `Quot.sound`. The broader C0 freeze and
+independent acceptance remain open.
+
+Changed Lean-source SHA-256 values: `ArchiveCARRelations.lean`
+`44336838c34198e0df0680e075f7795fe0957602f6dd23c3458117f4b59661df`,
+`A4DNilpotentAffineMatterLift.lean`
+`edb86401f1efd8c1ab55020dd29ecf31a7248a91a34eb247bfb4d66f35c7f69a`,
+`ArchiveExteriorFrameLift.lean`
+`fbc55f53e75657b96f11a7752d973198df35b6542937ab636b86d104bdbda5ee`,
+`ArchiveJuliaRaisingOperatorReadout.lean`
+`c609cac95402f1c477b77b5029406be1ecf0198103fd077736660405d3586d4a`, and
+`RoleFockPermutation.lean`
+`e36d3751b7aa4ebfcea135e8e5a1fc1659296ee7b2299e38fa5eee380016f3fd`.

@@ -6,7 +6,6 @@ import Mathlib.Algebra.BigOperators.Group.Finset.Basic
 import Mathlib.Tactic
 import D0.Geometry.ArchiveCARFockCarrier
 import D0.Geometry.ArchiveCARRelations
-import D0.Geometry.A4DRolePairMetricCarrier
 import D0.Geometry.ArchiveRoleEquivalence
 
 /-!
@@ -25,7 +24,8 @@ namespace D0.Geometry
 open D0
 open scoped BigOperators
 
-local instance : LinearOrder Role := LinearOrder.lift' roleCode roleCode_injective
+local instance : LinearOrder Role :=
+  LinearOrder.lift' roleOrderIndex roleOrderIndex_injective
 
 noncomputable section
 

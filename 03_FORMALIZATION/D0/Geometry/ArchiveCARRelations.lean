@@ -34,6 +34,13 @@ def roleOrderIndex (r : Role) : ℕ :=
   else if r = D0.C then 2
   else 3
 
+theorem roleOrderIndex_injective : Function.Injective roleOrderIndex := by
+  intro r s hrs
+  match r, s with
+  | (a, b), (c, d) =>
+      fin_cases a <;> fin_cases b <;> fin_cases c <;> fin_cases d <;>
+        simp [roleOrderIndex, D0.A, D0.B, D0.C] at hrs ⊢
+
 /-- Fermionic Jordan-Wigner phase exponent: number of occupied modes preceding role `r`. -/
 def precedingOccupationCount (state : ArchiveFockState) (r : Role) : ℕ :=
   (Finset.filter (fun s : Role => roleOrderIndex s < roleOrderIndex r ∧ state s = true)
