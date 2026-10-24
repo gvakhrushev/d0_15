@@ -1216,6 +1216,50 @@ All transported-prefix adjoints of paid-writer section10.5 apply
 to this actual whole word. Generated work, flags and cuts therefore
 need no separate free preparation Euler equation.
 
+### The original Book contract already supplies the finite two-cell section
+
+At the finite OPERATOR/TEST level the register placement is explicit.
+Take one closed carrier
+
+    H=R2_x tensor R2_y tensor R4_sA tensor R4_sB,
+    i(v)=|0_x,0_y> tensor v,    v in R16.
+
+Cell A has port x and record y; cell B has port y and record x.
+The complete original matrices give G_x, G_y, CX_(x->y), CX_(y->x),
+with the two real Q8 spins untouched. Both compatible spin complex
+structures are preserved. Both initial blank conditions hold at t=0.
+After an overlapping operation a record need not still be blank:
+this constructs one full-column word, not two independently completed
+fresh-record detector tasks. No old record is reset by a projection.
+
+Consume the exact two-direction exchange of
+[verified archive actuation section3](A4D_NATIVE_VERIFIED_ARCHIVE_ACTUATION.md#3-the-minimal-basis-implementation-is-the-existing-registration)
+and the already proved
+[Books00-01 section application](A4D_ORIGINAL_BOOK_BOOLEAN_TRACE_CLOCK_AND_GLOBAL_EINSTEIN_2026_10_22.md#132-books00-01-application-admissible-test-sections-and-an-actual-return-boundary).
+For the supplied finite word and complete terminal projectors, the
+owned Golden-cylinder extension preserves the whole channel and
+positive outcome effects. This64-coordinate carrier starts at binary
+stage6 and extends to its cofinal tower, not every coarser stage.
+It therefore gives the six-condition finite operator/test section;
+no new rotation proof, gate palette or unique microscopic task is
+required merely for this representation.
+
+The second detector spin is an ACTUAL retained factor: the bare
+initialized input now has r=16, and its factor4 remains in the whole
+heat trace. Use the resulting rank, inventory and reference heat in
+(57)-(63); do not identify its normalized response with the old
+absolute price. This is the two-cell realization of the register
+interface, not a claim of minimum hardware.
+
+This closes a missing matrix representation only at the declared
+finite-section interface. It does not identify the section with an
+already executed physical task or authorize reuse of both placements
+in that task. Book00's physical phi self-return, actual active/archive
+cut, full action, admitted field variations and stationarity remain
+the application. In particular this cylinder tower is not spatial
+h-refinement. A separate unexplained matrix-admission premise should
+not be added on top of the original six-condition section contract.
+
 ### Substitute the new gain in the entire all42 source estimate
 
 For 0<=x<=q_max<1/2, put b=1-zeta and a_min=1-2q_max.

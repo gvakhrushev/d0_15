@@ -7124,7 +7124,8 @@ section00.8 (same distinguishable-class M1 rule), Book01 section01.1
 at their actual types. M1ClassAdmissibility permits many internal
 programmes; M1Forced requires a separately proved unique constraint.
 For one admitted physical realization, global uniqueness of tasks or
-microscopic words is NOT an added prerequisite. Positive paidwriter
+microscopic words is NOT an added prerequisite. The original Book application in
+A4D_ORIGINAL_BOOK_BOOLEAN_TRACE_CLOCK_AND_GLOBAL_EINSTEIN_2026_10_22.md
 section13.2 already provides its finite operator/test section. What
 remains is the actual Query_O/active-archive identification and native
 field-control/stationarity application, not a new generic M1 theorem
@@ -7147,3 +7148,32 @@ consistency and generated work views PASS; scientific_promotion=false.
 The reviewed insertion is the ONLY change to the primary residual;
 the brief is append-only. git diff --check passes. No unchanged Lean
 or full128 mathematical replay was run.
+
+
+Follow-through on the same operational application: section7e now gives
+the actual two-cell finite section on R2_x tensor R2_y tensor R4_sA
+tensor R4_sB, with opposite port/record role placements. Both native
+blank inputs hold initially; later reuse is a complete matrix word,
+not an assertion that both fresh-record tasks remain satisfied.
+Original Book Boolean owner section13.2 applies its Golden-cylinder
+extension to this supplied word and complete finite tests. Thus the
+finite operator/test representation is available without another
+matrix-admission or global-uniqueness premise. Actual physical task
+identification, reuse, cut, full action and stationary field variation
+remain. The actual extra protected spin gives r=16 and a whole-trace
+factor4; section7e retains both in the source gain and absolute price.
+
+The previous intake's ambiguous section13.2 reference is corrected to
+A4D_ORIGINAL_BOOK_BOOLEAN_TRACE_CLOCK_AND_GLOBAL_EINSTEIN_2026_10_22.md;
+paidwriter section13.2 is a different fresh-register holonomy result.
+
+Final enlarged section7e, heading to before section8 including trailing
+LF: 10,729 UTF-8 bytes, SHA256
+9fc190f663dbdd4ae5f67bef238a03e41c44c52fe0a734b667e4ffd43e8e5698.
+Independent final reviewers universal_parent_map and
+native_continuation_map ACCEPT this exact slice. Equations(54)-(63)
+are unchanged; the addition is the original-contract application.
+The broad repository check also completed: PASS, warnings=0. No
+scientific registry or executable changed; only this scoped application
+and its exact owner link followed that check. No mathematical replay
+is warranted for the reference/scope correction; final diff is checked.
