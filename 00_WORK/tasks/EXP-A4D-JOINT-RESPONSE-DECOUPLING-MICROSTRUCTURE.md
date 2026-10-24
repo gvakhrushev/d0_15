@@ -8378,3 +8378,67 @@ confirmed the exact direct Fourier family and raw success factorization.
 
 Final work/protocol/assembly/repository guards and diff whitespace check PASS.
 Scientific status and all remaining native source obligations are unchanged.
+
+
+### 24 October: the actual material source supplies the conditional lift norm
+
+Phase: native realization / source composition; same PR #334 owner,
+Assembly-Slot: constitutive, Assembly-Carrier: native-programme-v1.
+Input: a1fbb785e23d3182a9392b0b6ef8248d723b258a. Write paths: primary
+residual owner section7q and this brief. No separate task or promotion.
+
+Changed input: section7p(151) supplies the exact coherent source and
+endpoint-price factorization; (159) still required the actual normalized
+conditional-bank speed L_N. Equations(160)-(167) compute it on the original
+real material section, retaining normalization grade14 and top mask15.
+No new seed, reference approximation or generic inverse projection is used.
+
+The source gives <C,DC>=0 and
+||DC[v]||²=sum_x w_x[||v_x||²+(psi_x.v_x)²/d_x²].
+Thus L_N=√N||DC||<=√N p/d_min ||v||_w exactly. The complete Book gain
+includes all readiness; (163) bounds the actual shared-material source by
+(2p/d_min)||v||_w sqrt(E_CAR²+C_h²/(N-1)). The actual nonzero Bernstein
+residual, material slack, weights and implementation debts remain.
+
+Paid-code endpoints on the same reference have overlap r>=p³>0, so their
+conditional-bank tensor secant distance is at most √N times the one-bank
+distance. Complete retained programme/key/eta endpoints can be orthogonal.
+Their prices are compared through(147)-(149), without differentiating
+that full raw map. Precision/stencil bounds keep their N-dependence and
+all other control equations remain.
+
+For genuinely admitted post-seed CAR/site interventions with T(0)=I,
+evaluate the source at the IID base. Fixed READY and identity on RIGHT
+give L_N<=||H||. Real one-bank generators on distinct banks have squared
+speed sum_j||H_j C||². Entangling directions keep their true generator
+norm and control Jacobian; Lie closure alone does not prove admission.
+
+The consumer(129) is explicit: M_h is the actual sampled-material test
+norm, and(167) contributes
+[2p M_h/(d_min,h c_quad,h)]sqrt(E_CAR,h²+C_h²/(N_h-1)), plus the original
+errors. Choose the actual copy budget after h,k, slack, norm and source
+accuracy; no uniform complexity or stationary refinement is inferred.
+
+Narrow exact symbolic checks (Python3.9.6/SymPy, exit0): original material
+normalization derivative; tensor lift at N=1..5; Golden positive overlap;
+exact geometric-series tensor secant identity. A complex pure-phase
+control confirms that only Re<C,DC>=0 would not justify √N. No unchanged
+full128/root/Lean or registered scientific suite was replayed.
+
+Final section7q, heading through separators immediately before section8:
+9100 UTF-8 bytes; SHA256
+06481e0aefac21611347c2da5fd3f4ad991ae40abbddd71f86c13ae2061fc73c.
+Independent stationary_root_transfer and price_geometry_bridge reviews
+reread and ACCEPTED this final pin after the top-mask and IID-base fixes.
+Work/protocol/assembly/repository guards and diff whitespace checks PASS.
+
+The native-domain audit located the remaining geometric input:
+A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE section2 still supplies J(C_r),
+J(X_r) as outcome-labelled matrix gates. Section7n assumes that coherent
+query access; source-X(94) reverses existing letters without generating
+the source. Book03 names X_N in its stationarity equation without the
+actual execution/configuration/tangent map. Reuse the owned incidence
+embedding and stationary-execution bridge. The next physical parent is
+a native source-local coframe/proper-link-to-query interaction with its
+complete price and variation map. No physical field selection, complete
+on-shell family, positive_gr/GR_closed or raw216 closure is claimed.

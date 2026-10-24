@@ -4282,6 +4282,184 @@ result does not claim finite all-Euler stationarity, a selected field
 minimum, positive_gr, GR_closed or raw216 closure.
 
 
+## 7q. Supply the actual conditional material lift in the collective source budget
+
+24 October 2026. Same owner; inputa1fbb785. This applies the ACTUALLY
+executed coherent factorization(151) to the open speed L_N in(159).
+It neither replaces the exact reference by an approximate deterministic
+seed nor assumes a generic success projection has bounded inverse.
+The consumed parent is the material/input COMPONENT of the source
+budget(129), not the missing physical configuration domain X_N.
+
+### The original normalized material section fixes its own lift norm
+
+Keep the same real reference chi_x, fixed weights w_x and genuine fixed
+collar. Let v_x=Dpsi_x be a real material variation on the original disk,
+and write d_x=sqrt(p^2-||psi_x||^2)>0. Equation(3) gives exactly
+
+    Dm_x=v_x0 |0>+v_x4 |15>-(psi_x.v_x)/d_x |14>,
+    <m_x,Dm_x>=0,
+    ||DC[v]||^2=sum_x w_x[||v_x||^2+(psi_x.v_x)^2/d_x^2].            (160)
+
+Here the clock grade has its unchanged coefficient sqrt(p), the grade14
+normalization derivative is retained, and the original full16 CAR and
+RIGHT factors remain in C. Orthogonal site labels remove cross-site
+terms; no reference decoherence or deletion of other grades is used.
+On the fixed compact material chart d_x>=d_min>0, define
+||v||_w^2=sum_x w_x||v_x||^2. Since d_x^2+||psi_x||^2=p^2,
+
+    ||DC[v]||<=p/d_min ||v||_w,
+    <C,DC[v]>=0.                                      (161)
+
+The second equality is a REAL equality on this actual section, stronger
+than only Re<C,DC>=0. This matters for the tensor norm below.
+
+At each material setting the actual factorization(151) supplies the
+normalized CAR bank C(psi)^tensor N to the SAME report effect, which
+ignores the remaining source work. Readiness is field independent on
+this common catalogue. Differentiating this conditional BANK map,
+rather than applying a generic inverse projection, proves
+
+    L_N[v]^2=||D(C^tensor N)[v]||^2
+            =N ||DC[v]||^2
+            <=N p^2/d_min^2 ||v||_w^2.                (162)
+
+All cross terms contain <C,DC> and vanish. The N real copies are counted;
+the bound is not a free-copy or independent-material-setting assumption.
+The same primitive material setting is executed in every fresh call.
+The scalar seed success factor multiplies the raw successful component
+but is constant in these directions. The KNOWN endpoint/source
+factorizations(151)-(152) recover(162) as the bank lift exactly. Different
+programme/key work states eta_+,eta_- need not be equal or differentiable
+across settings; this calculation does not give their full-state norm. No norm estimate that replaces
+this map by the inverse of an arbitrary raw projection is invoked.
+
+### Use the computed speed in the complete physical source component
+
+Substitute(162) into the SAME whole-Book bound(159), with the actual
+Gamma_N including every seed/selector/encoder readiness:
+
+    |D_bank B_N[v]|/Gamma_N
+      <=(2p/d_min)||v||_w
+                      sqrt[E_CAR^2+C_h^2/(N-1)].       (163)
+
+This is an actual bound for the shared-material direction through the
+supplied repeated source word, not only an abstract unit-sphere bound.
+It retains the real material slack, spatial weights, downstream effect,
+clock and all additional first-source debts. The ordinary raw field
+source has not been redefined by dropping its preparation.
+
+If E_CAR,h->0, C_h/sqrt(N_h-1)->0 and the actual implementation/secant
+errors of7p vanish in this same lifted norm, this material bank component
+vanishes on bounded ||v_h||_w tests. At an ideal material root the
+right side is bounded by2p C_h||v||_w/(d_min sqrt(N-1)); an approximate
+Bernstein report keeps its actual nonzero E_CAR. No new finite root,
+full stationary execution or mesh-uniform gate-count estimate follows.
+### Finite paid material words obey the same tensor secant estimate
+
+Let C_+,C_- be any two actual normalized real material sections of7c
+on the SAME seed/reference. Their overlap is
+
+    r=<C_+,C_->
+      =sum_x w_x[p+psi_+,x.psi_-,x+d_+,x d_-,x],
+    p^3=p-p^2<=r<=1.                                  (164)
+
+The lower bound uses that (psi_x,d_x) has length p; the upper bound
+uses normalization. Consequently, for EVERY finite N,
+
+    ||C_+^tensor N-C_-^tensor N||^2
+        =2(1-r^N)<=2N(1-r)=N||C_+-C_-||^2.            (165)
+
+Thus the original equal-inventory paid central comparisons, with their
+actual attainable angle step delta, have conditional-bank secant speed
+at most sqrt(N) times the true one-bank secant speed. The real angle to
+material Jacobian(33), its center discrepancy and(149)'s endpoint and
+central remainders are retained. Choose the stencil/precision after
+h,N and its actual derivative constants; no uniform interchange of
+limits has been assumed.
+
+These are CONDITIONAL BANK vectors. Complete retained raw endpoints
+can have different orthogonal sharp programme/key records; their full
+norms need not obey(165) or approach each other. The actual price/source
+transport uses the proved equal-inventory divided-difference identity
+(147)-(149), not a false differentiable finite-word or full-raw-state
+map. Those code, flag, clock and independently changing control sources
+remain in their original equations.
+
+### Source-safe post-seed CAR interventions have a direct norm too
+
+There is another concrete class of source tests for(159). Insert an
+actually supplied real unitary T(theta) on the regenerated CAR/site
+banks AFTER seed preparation and BEFORE the fixed selector/report.
+Take T(0)=I and evaluate its source at theta=0, the original IID base;
+(157)-(159) do not control a finitely moved correlated base.
+It does not act on seed READY flags or any fresh/immutable RIGHT.
+On the declared source interface it therefore preserves readiness and
+the original reference Gram, including on entangled bank inputs.
+Its actual full word and raw inverse are included in V; the new actual
+clock and entire thermal complement are retained in(152).
+
+For its normalized conditional bank state, with H=T^dagger Dtheta T,
+
+    H^dagger=-H,
+    L_N[partial_theta]=||H C^tensor N||<=||H||.         (166)
+
+For real one-bank generators H_j on DISTINCT banks at the product base,
+<C,H_j C>=0, so instead
+L_N^2=sum_j||H_j C||^2. A genuinely entangling generator uses its actual
+operator norm in(166); locality or a small norm is not assumed.
+For a complete supplied actuator word, product differentiation bounds
+that norm by the sum of its actual generator speeds, or by the true
+control-to-operator Jacobian. This keeps its real control count.
+
+The existing Golden/CNOT plane construction supplies paid finite secant
+versions on its addressed active sector. The physical source-X inverse
+reverses the implemented word exactly, while all approximation, routing
+and common-inventory requirements remain. Matrix SO closure alone does
+not supply arbitrary physical access or a smooth finite-word controller.
+Under THESE source-preserving interventions, the additional q Dgamma_N
+term is exactly zero; no general readiness-normal equation is asserted.
+At an ideal root, (159),(166) bound a fixed-norm entangling bank direction
+by O(1/N). All correlated pure-bank directions remain subject to their
+actual admissible actuator/lift norm; no mixed-density or arbitrary
+raw-work stationarity has been added.
+
+For the original uniform source w_x=1/S, ||v||_w is its true normalized
+site norm, not the unweighted sum over S sites. More explicitly let
+M_h=sup_(||v||_test<=1)||Dpsi_h[v]||_w for the ACTUAL sampling and
+calibration map. The contribution to the continuum budget(129) is
+bounded by
+
+    [2p M_h/(d_min,h c_quad,h)]
+                   sqrt[E_CAR,h^2+C_h^2/(N_h-1)],                 (167)
+
+plus its genuine implementation/secant debts in the same norm. At fixed
+h these constants are finite on the stated chart: after computing
+M_h,d_min,h,k_h and the approximation error, choose N_h for this actual
+budget. If M_h already includes a sampling/test Jacobian, do not apply
+it twice. No uniform bound on M_h, native cost or source gain is inferred.
+
+### The remaining physical transition is separate and now explicit
+
+Equations(160)-(166) fill the conditional material lift which7p left
+open: shared original material code comparisons have the actual sqrt(N)
+speed, and source-preserving post-seed bank interventions have their
+real generator norm. These estimates use the existing exact seed;
+there is no Fourier-Gram approximation or inverse-readiness penalty
+for these named directions. They do not extend to a moving seed
+isometry, source flags, independently changing encoder or clock.
+
+The full geometric/query domain is still an input. Book03 names
+stationarity on X_N without an execution-to-X_N variable map; its
+rank variation alone does not define independent original coframe and
+proper-link directions. The already owned incidence embedding cannot
+by itself supply that map. A source-local original field-to-query
+interaction, its actual admissible tangents and complete selected
+source remain the next physical parent substitution. This result
+neither inserts that missing law nor promotes positive_gr, GR_closed
+or raw216 closure.
+
+
 ## 8. Reproduction
 
 Run from this directory:
