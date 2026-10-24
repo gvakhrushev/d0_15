@@ -26,7 +26,7 @@ Pinned starting inputs at that commit:
 | tools/formalization_debt_audit.py | 0e45cb38012f1948d89cb77c2e6987db50dfb13b |
 | tools/lean_task_build.py | 911df7af16c7169f1611bd5f63a80b93d283d9c1 |
 
-#334 remains an unmerged scientific owner. Its task-pinned published head is fe5cf335da04cac14e50407b03f98b96be17dc52. The selected raising-operator source and consumer slices below pass their source-pin/read gate; formalization, application review, and independent C0 acceptance remain outstanding. Any additional #334 slice must record its published commit, path, blob, read proof, scope, and reviewed slice.
+#334 remains an unmerged scientific owner. Its task-pinned published head is fe5cf335da04cac14e50407b03f98b96be17dc52. The selected raising-operator source and consumer slices below pass their source-pin/read gate; the finite Eq. (26) adapter has a scoped independent review recorded below. The full inverse, consumer transport, physical premises, and independent C0 acceptance remain open. Any additional #334 slice must record its published commit, path, blob, read proof, scope, and reviewed slice.
 
 ## Architecture
 
@@ -220,7 +220,7 @@ The search run used snapshot `1c7e39336381658fd2d7b17f2a077e5c2fec0817` with `wo
 
 The existing `tools/test_gr_assembly.py` suite has 106/106 passing tests with a temporary Git `core.autocrlf=false` override. Its default native-Windows run reaches 15 errors and one secondary assertion failure because the fixture hashes a CRLF worktree `decisions.md` before Git stores the normalized blob; the resulting evidence digest differs from `git show`. The fixture is owned by open PR #398, so this branch records the environment-dependent result and leaves that file to its existing owner.
 
-Next: reconcile the exact-name inventory with source-keyed mathematical units and dispositions, obtain independent acceptance of the exact C0 package, and obtain independent review of the Eq. (26) adapter against the pinned source and consumer. The 24 October checkpoints below record the refreshed 13-case cold-start suite, compiled claim-reuse examples, shared Vieta migration, and current `D0.All` build. Migrate connected mathematical blocks while preserving public imports and scopes; formalize or obtain accepted owner review for every established C0 unit. This checkpoint is not completion.
+Next: reconcile the exact-name inventory with source-keyed mathematical units and dispositions, obtain independent acceptance of the exact C0 package, and continue the remaining established mathematical migrations. The 24 October checkpoints below record the refreshed 13-case cold-start suite, compiled claim-reuse examples, shared Vieta migration, and current `D0.All` build. The reviewed Eq. (26) application covers the finite-carrier vacuum response; all-state operator comparison, endpoint-field binding, the §§8.4–8.5 inverse, and the §5.1 consumer transport remain with their existing owners. Migrate connected mathematical blocks while preserving public imports and scopes; formalize or obtain accepted owner review for every established C0 unit. This checkpoint is not completion.
 
 ## Concrete reuse application: top-Hodge scene
 
@@ -416,3 +416,39 @@ This checkpoint covers a finite algebraic library migration and two compiled
 uses; it makes no corpus-wide C0 coverage claim. C0 remains unfrozen and
 independently unaccepted. #334, its physical source/admission owners, and the
 open GR selection premises retain their existing scope and ownership.
+
+### Independent scope review of the finite Eq. (26) CAR adapter
+
+The read-only review of PR #402 head
+`20d5ef7915338d856dd16e5676d7cf669b04d273` returns a scoped PASS: the current
+`archiveCARVectorCreator` is the coefficient-weighted sum of the repository's
+owned Jordan--Wigner `carCreateEnd` matrices, and
+`archiveJuliaCARRaisingQuery` composes it with the 16-state exterior frame
+lift. On the vacuum, the CAR and exterior-model queries agree and their
+exterior image is `ι u`; the readout therefore returns `u`. This is a finite
+carrier application of pinned #334 Eq. (26). The result holds for the broader
+Lean parameters `u : RoleSpace` and `M : RoleSpace ≃ₗ[ℝ] RoleSpace`; the
+source's nonzero and Lorentz-endpoint hypotheses are not needed for this
+vacuum identity.
+
+The review leaves explicit boundaries: the CAR/model comparison is only on
+the vacuum, not equality of the full query operators on all 16 inputs; `u` and
+`M` are not bound to the source endpoint fields and observer maps; and the
+full inverse, its all-jet pullback, and the §5.1 consumer are not formalized by
+this slice. It changes no #334 owner, C0 disposition, scientific status, or
+physical admission premise. The reviewer did not edit files or run a build.
+The exact source was commit
+`fe5cf335da04cac14e50407b03f98b96be17dc52`, file
+`02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md`,
+§§8.4–8.5, including Eq. (26), blob
+`1c8d59e5533b443d9a015dc4512cfbc160ae7e62`.
+
+Reviewed Lean blob hashes at that PR head:
+
+| Input | Git blob |
+|---|---|
+| `03_FORMALIZATION/D0/Geometry/ArchiveJuliaRaisingOperatorReadout.lean` | `0840cf6e075274a4604695a32fae5a61e61c4ce4` |
+| `03_FORMALIZATION/D0/Geometry/ArchiveExteriorFrameLift.lean` | `087afdd443ffc02701376e00728193c020da259d` |
+| `03_FORMALIZATION/D0/Geometry/ArchiveCARRelations.lean` | `8ff68576d92ff67532733a0ca2646de9d50105e2` |
+| `03_FORMALIZATION/D0/Geometry/A4DNilpotentAffineMatterLift.lean` | `a923290e3f4e0ee7289db1142251141a25d6c42a` |
+| `03_FORMALIZATION/D0/Geometry/ArchiveCARFockCarrier.lean` | `1acfaec4d7a41b50f50dd55cced7613b80852514` |
