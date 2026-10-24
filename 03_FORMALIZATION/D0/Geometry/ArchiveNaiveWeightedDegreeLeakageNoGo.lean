@@ -447,6 +447,28 @@ theorem naiveWeightTestInput_homogeneous_degree_zero :
     simp [fockDegree, fockVacuumState] at hS
   · simp [scalarCochain, h]
 
+/-- The complete two-step output is supported in Fock degree two. The finite
+coefficient witness is therefore a nonzero part of an output with the expected
+homogeneous degree, not an isolated degree-two label. -/
+theorem naive_weighted_square_output_homogeneous_degree_two :
+    HomogeneousCochain 1 2
+      (naiveWeightedCubicalDifferential
+        (naiveWeightedCubicalDifferential
+          (scalarCochain 1 naiveWeightTestScalarProfile))) := by
+  have h1 : HomogeneousCochain 1 1
+      (naiveWeightedCubicalDifferential
+        (scalarCochain 1 naiveWeightTestScalarProfile)) := by
+    simpa [naiveWeightedCubicalDifferential] using
+      (weightedCubicalDifferential_degree_raise 1 0
+        naiveWeightTestSiteProfile
+        (scalarCochain 1 naiveWeightTestScalarProfile)
+        naiveWeightTestInput_homogeneous_degree_zero)
+  have h2 := weightedCubicalDifferential_degree_raise 1 1
+    naiveWeightTestSiteProfile
+    (naiveWeightedCubicalDifferential
+      (scalarCochain 1 naiveWeightTestScalarProfile)) h1
+  simpa [naiveWeightedCubicalDifferential] using h2
+
 /-- Current finite owner slice: the sample weights differ, the full four-role
 carrier is used, and the chosen scalar input has a nonzero degree-two output
 after two weighted steps. This is one explicit counterexample, not a universal
@@ -456,6 +478,10 @@ theorem archive_naive_weighted_car_degree_leakage_nogo_owner :
     (Fintype.card Role = 4) ∧
     (fockDegree naiveWeightTestPairState = 2) ∧
     HomogeneousCochain 1 0 (scalarCochain 1 naiveWeightTestScalarProfile) ∧
+    HomogeneousCochain 1 2
+      (naiveWeightedCubicalDifferential
+        (naiveWeightedCubicalDifferential
+          (scalarCochain 1 naiveWeightTestScalarProfile))) ∧
     (naiveWeightedCubicalDifferential
       (naiveWeightedCubicalDifferential
         (scalarCochain 1 naiveWeightTestScalarProfile))
@@ -475,6 +501,7 @@ theorem archive_naive_weighted_car_degree_leakage_nogo_owner :
   exact ⟨sqrt_naive_weights_ne, card_role,
     naiveWeightTestPairState_degree_two,
     naiveWeightTestInput_homogeneous_degree_zero,
+    naive_weighted_square_output_homogeneous_degree_two,
     naive_weighted_cubical_differential_square_witness,
     weighted_cubical_differential_square_delta_nonzero
       naiveWeightTestSiteProfile hweight0 hpaths⟩
@@ -486,6 +513,10 @@ theorem archive_naive_weighted_degree_leakage_nogo_owner :
     (Fintype.card Role = 4) ∧
     (fockDegree naiveWeightTestPairState = 2) ∧
     HomogeneousCochain 1 0 (scalarCochain 1 naiveWeightTestScalarProfile) ∧
+    HomogeneousCochain 1 2
+      (naiveWeightedCubicalDifferential
+        (naiveWeightedCubicalDifferential
+          (scalarCochain 1 naiveWeightTestScalarProfile))) ∧
     (naiveWeightedCubicalDifferential
       (naiveWeightedCubicalDifferential
         (scalarCochain 1 naiveWeightTestScalarProfile))

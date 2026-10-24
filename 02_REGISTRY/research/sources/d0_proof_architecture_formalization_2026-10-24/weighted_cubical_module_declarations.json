@@ -2,7 +2,7 @@
   "schema": "d0-lean-declaration-inventory-v1",
   "snapshot_commit": "6b59bc57ca97275df9e973715cdb503ec8fc5c4e",
   "worktree_dirty": true,
-  "lean_source_digest": "9bc7b35ec878966c68d7d025bb87037364d3d376a5dad3220e1f36f87cc0832a",
+  "lean_source_digest": "c092c246193023d8047b698d7cb62bb9c70f625c62424a41856353cd1eed0964",
   "collector_sha256": "db0648931c63054d7e9ba4546790035d61d76fc0b4e20c190794c99f197f9104",
   "toolchain": "leanprover/lean4:v4.30.0",
   "public_import_root": "D0.All",
@@ -221,21 +221,21 @@
         "declaration": {
           "end": {
             "column": 49,
-            "line": 158
+            "line": 170
           },
           "start": {
             "column": 0,
-            "line": 145
+            "line": 157
           }
         },
         "selection": {
           "end": {
             "column": 40,
-            "line": 148
+            "line": 160
           },
           "start": {
             "column": 8,
-            "line": 148
+            "line": 160
           }
         }
       },
@@ -307,6 +307,7 @@
     {
       "axioms": [
         "Classical.choice",
+        "D0.Geometry.carCreateInt_degree_raise._native.native_decide.ax_1_1",
         "D0.Geometry.carCreateInt_singleton_vacuum._native.native_decide.ax_1_1",
         "D0.Geometry.carCreateInt_support._native.native_decide.ax_1_1",
         "D0.Geometry.naiveWeightTestPairState_degree_two._native.native_decide.ax_1_1",
@@ -316,31 +317,31 @@
         "propext"
       ],
       "binders": [],
-      "conclusion_whnf": "√D0.Geometry.naiveWeight0 ≠ √D0.Geometry.naiveWeight1 ∧\n  Fintype.card D0.Role = 4 ∧\n    D0.Geometry.fockDegree D0.Geometry.naiveWeightTestPairState = 2 ∧\n      D0.Geometry.HomogeneousCochain 1 0 (D0.Geometry.scalarCochain 1 D0.Geometry.naiveWeightTestScalarProfile) ∧\n        D0.Geometry.naiveWeightedCubicalDifferential\n              (D0.Geometry.naiveWeightedCubicalDifferential\n                (D0.Geometry.scalarCochain 1 D0.Geometry.naiveWeightTestScalarProfile))\n              (D0.Geometry.naiveWeightTestOrigin, D0.Geometry.naiveWeightTestPairState) =\n            1 ∧\n          D0.Geometry.naiveWeightedCubicalDifferential\n              (D0.Geometry.naiveWeightedCubicalDifferential\n                (D0.Geometry.scalarCochain 1 D0.Geometry.naiveWeightTestScalarProfile))\n              (D0.Geometry.naiveWeightTestOrigin, D0.Geometry.naiveWeightTestPairState) ≠\n            0",
+      "conclusion_whnf": "√D0.Geometry.naiveWeight0 ≠ √D0.Geometry.naiveWeight1 ∧\n  Fintype.card D0.Role = 4 ∧\n    D0.Geometry.fockDegree D0.Geometry.naiveWeightTestPairState = 2 ∧\n      D0.Geometry.HomogeneousCochain 1 0 (D0.Geometry.scalarCochain 1 D0.Geometry.naiveWeightTestScalarProfile) ∧\n        D0.Geometry.HomogeneousCochain 1 2\n            (D0.Geometry.naiveWeightedCubicalDifferential\n              (D0.Geometry.naiveWeightedCubicalDifferential\n                (D0.Geometry.scalarCochain 1 D0.Geometry.naiveWeightTestScalarProfile))) ∧\n          D0.Geometry.naiveWeightedCubicalDifferential\n                (D0.Geometry.naiveWeightedCubicalDifferential\n                  (D0.Geometry.scalarCochain 1 D0.Geometry.naiveWeightTestScalarProfile))\n                (D0.Geometry.naiveWeightTestOrigin, D0.Geometry.naiveWeightTestPairState) =\n              1 ∧\n            D0.Geometry.naiveWeightedCubicalDifferential\n                (D0.Geometry.naiveWeightedCubicalDifferential\n                  (D0.Geometry.scalarCochain 1 D0.Geometry.naiveWeightTestScalarProfile))\n                (D0.Geometry.naiveWeightTestOrigin, D0.Geometry.naiveWeightTestPairState) ≠\n              0",
       "declaration_kind": "theorem",
       "declaration_ranges": {
         "declaration": {
           "end": {
             "column": 49,
-            "line": 480
+            "line": 507
           },
           "start": {
             "column": 0,
-            "line": 450
+            "line": 472
           }
         },
         "selection": {
           "end": {
             "column": 60,
-            "line": 454
+            "line": 476
           },
           "start": {
             "column": 8,
-            "line": 454
+            "line": 476
           }
         }
       },
-      "elaborated_type": "√D0.Geometry.naiveWeight0 ≠ √D0.Geometry.naiveWeight1 ∧\n  Fintype.card D0.Role = 4 ∧\n    D0.Geometry.fockDegree D0.Geometry.naiveWeightTestPairState = 2 ∧\n      D0.Geometry.HomogeneousCochain 1 0 (D0.Geometry.scalarCochain 1 D0.Geometry.naiveWeightTestScalarProfile) ∧\n        D0.Geometry.naiveWeightedCubicalDifferential\n              (D0.Geometry.naiveWeightedCubicalDifferential\n                (D0.Geometry.scalarCochain 1 D0.Geometry.naiveWeightTestScalarProfile))\n              (D0.Geometry.naiveWeightTestOrigin, D0.Geometry.naiveWeightTestPairState) =\n            1 ∧\n          D0.Geometry.naiveWeightedCubicalDifferential\n              (D0.Geometry.naiveWeightedCubicalDifferential\n                (D0.Geometry.scalarCochain 1 D0.Geometry.naiveWeightTestScalarProfile))\n              (D0.Geometry.naiveWeightTestOrigin, D0.Geometry.naiveWeightTestPairState) ≠\n            0",
+      "elaborated_type": "√D0.Geometry.naiveWeight0 ≠ √D0.Geometry.naiveWeight1 ∧\n  Fintype.card D0.Role = 4 ∧\n    D0.Geometry.fockDegree D0.Geometry.naiveWeightTestPairState = 2 ∧\n      D0.Geometry.HomogeneousCochain 1 0 (D0.Geometry.scalarCochain 1 D0.Geometry.naiveWeightTestScalarProfile) ∧\n        D0.Geometry.HomogeneousCochain 1 2\n            (D0.Geometry.naiveWeightedCubicalDifferential\n              (D0.Geometry.naiveWeightedCubicalDifferential\n                (D0.Geometry.scalarCochain 1 D0.Geometry.naiveWeightTestScalarProfile))) ∧\n          D0.Geometry.naiveWeightedCubicalDifferential\n                (D0.Geometry.naiveWeightedCubicalDifferential\n                  (D0.Geometry.scalarCochain 1 D0.Geometry.naiveWeightTestScalarProfile))\n                (D0.Geometry.naiveWeightTestOrigin, D0.Geometry.naiveWeightTestPairState) =\n              1 ∧\n            D0.Geometry.naiveWeightedCubicalDifferential\n                (D0.Geometry.naiveWeightedCubicalDifferential\n                  (D0.Geometry.scalarCochain 1 D0.Geometry.naiveWeightTestScalarProfile))\n                (D0.Geometry.naiveWeightTestOrigin, D0.Geometry.naiveWeightTestPairState) ≠\n              0",
       "exists": true,
       "internal_name": false,
       "module": "D0.Geometry.ArchiveNaiveWeightedDegreeLeakageNoGo",
@@ -369,6 +370,7 @@
         "D0.Geometry.naiveWeightTestSiteProfile",
         "D0.Geometry.naiveWeightedCubicalDifferential",
         "D0.Geometry.naive_weighted_cubical_differential_square_witness",
+        "D0.Geometry.naive_weighted_square_output_homogeneous_degree_two",
         "D0.Geometry.scalarCochain",
         "D0.Geometry.sqrt_naive_weights_ne",
         "D0.Geometry.weighted_cubical_differential_square_delta_nonzero",
@@ -464,6 +466,7 @@
     {
       "axioms": [
         "Classical.choice",
+        "D0.Geometry.carCreateInt_degree_raise._native.native_decide.ax_1_1",
         "D0.Geometry.carCreateInt_singleton_vacuum._native.native_decide.ax_1_1",
         "D0.Geometry.carCreateInt_support._native.native_decide.ax_1_1",
         "D0.Geometry.naiveWeightTestPairState_degree_two._native.native_decide.ax_1_1",
@@ -473,31 +476,31 @@
         "propext"
       ],
       "binders": [],
-      "conclusion_whnf": "√D0.Geometry.naiveWeight0 ≠ √D0.Geometry.naiveWeight1 ∧\n  Fintype.card D0.Role = 4 ∧\n    D0.Geometry.fockDegree D0.Geometry.naiveWeightTestPairState = 2 ∧\n      D0.Geometry.HomogeneousCochain 1 0 (D0.Geometry.scalarCochain 1 D0.Geometry.naiveWeightTestScalarProfile) ∧\n        D0.Geometry.naiveWeightedCubicalDifferential\n              (D0.Geometry.naiveWeightedCubicalDifferential\n                (D0.Geometry.scalarCochain 1 D0.Geometry.naiveWeightTestScalarProfile))\n              (D0.Geometry.naiveWeightTestOrigin, D0.Geometry.naiveWeightTestPairState) =\n            1 ∧\n          D0.Geometry.naiveWeightedCubicalDifferential\n              (D0.Geometry.naiveWeightedCubicalDifferential\n                (D0.Geometry.scalarCochain 1 D0.Geometry.naiveWeightTestScalarProfile))\n              (D0.Geometry.naiveWeightTestOrigin, D0.Geometry.naiveWeightTestPairState) ≠\n            0",
+      "conclusion_whnf": "√D0.Geometry.naiveWeight0 ≠ √D0.Geometry.naiveWeight1 ∧\n  Fintype.card D0.Role = 4 ∧\n    D0.Geometry.fockDegree D0.Geometry.naiveWeightTestPairState = 2 ∧\n      D0.Geometry.HomogeneousCochain 1 0 (D0.Geometry.scalarCochain 1 D0.Geometry.naiveWeightTestScalarProfile) ∧\n        D0.Geometry.HomogeneousCochain 1 2\n            (D0.Geometry.naiveWeightedCubicalDifferential\n              (D0.Geometry.naiveWeightedCubicalDifferential\n                (D0.Geometry.scalarCochain 1 D0.Geometry.naiveWeightTestScalarProfile))) ∧\n          D0.Geometry.naiveWeightedCubicalDifferential\n                (D0.Geometry.naiveWeightedCubicalDifferential\n                  (D0.Geometry.scalarCochain 1 D0.Geometry.naiveWeightTestScalarProfile))\n                (D0.Geometry.naiveWeightTestOrigin, D0.Geometry.naiveWeightTestPairState) =\n              1 ∧\n            D0.Geometry.naiveWeightedCubicalDifferential\n                (D0.Geometry.naiveWeightedCubicalDifferential\n                  (D0.Geometry.scalarCochain 1 D0.Geometry.naiveWeightTestScalarProfile))\n                (D0.Geometry.naiveWeightTestOrigin, D0.Geometry.naiveWeightTestPairState) ≠\n              0",
       "declaration_kind": "theorem",
       "declaration_ranges": {
         "declaration": {
           "end": {
             "column": 54,
-            "line": 497
+            "line": 528
           },
           "start": {
             "column": 0,
-            "line": 482
+            "line": 509
           }
         },
         "selection": {
           "end": {
             "column": 56,
-            "line": 484
+            "line": 511
           },
           "start": {
             "column": 8,
-            "line": 484
+            "line": 511
           }
         }
       },
-      "elaborated_type": "√D0.Geometry.naiveWeight0 ≠ √D0.Geometry.naiveWeight1 ∧\n  Fintype.card D0.Role = 4 ∧\n    D0.Geometry.fockDegree D0.Geometry.naiveWeightTestPairState = 2 ∧\n      D0.Geometry.HomogeneousCochain 1 0 (D0.Geometry.scalarCochain 1 D0.Geometry.naiveWeightTestScalarProfile) ∧\n        D0.Geometry.naiveWeightedCubicalDifferential\n              (D0.Geometry.naiveWeightedCubicalDifferential\n                (D0.Geometry.scalarCochain 1 D0.Geometry.naiveWeightTestScalarProfile))\n              (D0.Geometry.naiveWeightTestOrigin, D0.Geometry.naiveWeightTestPairState) =\n            1 ∧\n          D0.Geometry.naiveWeightedCubicalDifferential\n              (D0.Geometry.naiveWeightedCubicalDifferential\n                (D0.Geometry.scalarCochain 1 D0.Geometry.naiveWeightTestScalarProfile))\n              (D0.Geometry.naiveWeightTestOrigin, D0.Geometry.naiveWeightTestPairState) ≠\n            0",
+      "elaborated_type": "√D0.Geometry.naiveWeight0 ≠ √D0.Geometry.naiveWeight1 ∧\n  Fintype.card D0.Role = 4 ∧\n    D0.Geometry.fockDegree D0.Geometry.naiveWeightTestPairState = 2 ∧\n      D0.Geometry.HomogeneousCochain 1 0 (D0.Geometry.scalarCochain 1 D0.Geometry.naiveWeightTestScalarProfile) ∧\n        D0.Geometry.HomogeneousCochain 1 2\n            (D0.Geometry.naiveWeightedCubicalDifferential\n              (D0.Geometry.naiveWeightedCubicalDifferential\n                (D0.Geometry.scalarCochain 1 D0.Geometry.naiveWeightTestScalarProfile))) ∧\n          D0.Geometry.naiveWeightedCubicalDifferential\n                (D0.Geometry.naiveWeightedCubicalDifferential\n                  (D0.Geometry.scalarCochain 1 D0.Geometry.naiveWeightTestScalarProfile))\n                (D0.Geometry.naiveWeightTestOrigin, D0.Geometry.naiveWeightTestPairState) =\n              1 ∧\n            D0.Geometry.naiveWeightedCubicalDifferential\n                (D0.Geometry.naiveWeightedCubicalDifferential\n                  (D0.Geometry.scalarCochain 1 D0.Geometry.naiveWeightTestScalarProfile))\n                (D0.Geometry.naiveWeightTestOrigin, D0.Geometry.naiveWeightTestPairState) ≠\n              0",
       "exists": true,
       "internal_name": false,
       "module": "D0.Geometry.ArchiveNaiveWeightedDegreeLeakageNoGo",
@@ -3566,6 +3569,79 @@
     {
       "axioms": [
         "Classical.choice",
+        "D0.Geometry.carCreateInt_degree_raise._native.native_decide.ax_1_1",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [],
+      "conclusion_whnf": "∀ (x : D0.Geometry.ArchiveRolePhaseGroup 1) (S : D0.Geometry.ArchiveFockState),\n  D0.Geometry.fockDegree S ≠ 2 →\n    D0.Geometry.naiveWeightedCubicalDifferential\n        (D0.Geometry.naiveWeightedCubicalDifferential\n          (D0.Geometry.scalarCochain 1 D0.Geometry.naiveWeightTestScalarProfile))\n        (x, S) =\n      0",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 51,
+            "line": 470
+          },
+          "start": {
+            "column": 0,
+            "line": 450
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 59,
+            "line": 453
+          },
+          "start": {
+            "column": 8,
+            "line": 453
+          }
+        }
+      },
+      "elaborated_type": "D0.Geometry.HomogeneousCochain 1 2\n  (D0.Geometry.naiveWeightedCubicalDifferential\n    (D0.Geometry.naiveWeightedCubicalDifferential\n      (D0.Geometry.scalarCochain 1 D0.Geometry.naiveWeightTestScalarProfile)))",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveNaiveWeightedDegreeLeakageNoGo",
+      "name": "D0.Geometry.naive_weighted_square_output_homogeneous_degree_two",
+      "proof_dependencies": [
+        "AddMonoid.toAddZeroClass",
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.HomogeneousCochain",
+        "D0.Geometry.naiveWeightTestInput_homogeneous_degree_zero",
+        "D0.Geometry.naiveWeightTestScalarProfile",
+        "D0.Geometry.naiveWeightTestSiteProfile",
+        "D0.Geometry.naiveWeightedCubicalDifferential",
+        "D0.Geometry.scalarCochain",
+        "D0.Geometry.weightedCubicalDifferential",
+        "D0.Geometry.weightedCubicalDifferential_degree_raise",
+        "Eq.mp",
+        "HAdd.hAdd",
+        "Nat",
+        "Nat.instAddMonoid",
+        "OfNat.ofNat",
+        "congrArg",
+        "congrFun'",
+        "id",
+        "instAddNat",
+        "instHAdd",
+        "instOfNatNat",
+        "zero_add"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Geometry.HomogeneousCochain",
+        "D0.Geometry.naiveWeightTestScalarProfile",
+        "D0.Geometry.naiveWeightedCubicalDifferential",
+        "D0.Geometry.scalarCochain",
+        "Nat",
+        "OfNat.ofNat",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveNaiveWeightedDegreeLeakageNoGo.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
         "Quot.sound",
         "propext"
       ],
@@ -3999,6 +4075,128 @@
         "Real",
         "Real.instZero",
         "Zero.toOfNat0"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveCubicalCoboundary.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "D0.Geometry.carCreateInt_degree_raise._native.native_decide.ax_1_1",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "k",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "w",
+          "type": "D0.Geometry.ArchiveRolePhaseGroup N → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "ψ",
+          "type": "D0.Geometry.ArchiveCochainBasis N → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hψ",
+          "type": "∀ (x : D0.Geometry.ArchiveRolePhaseGroup N) (S : D0.Geometry.ArchiveFockState),\n  D0.Geometry.fockDegree S ≠ k → ψ (x, S) = 0"
+        }
+      ],
+      "conclusion_whnf": "∀ (x : D0.Geometry.ArchiveRolePhaseGroup N) (S : D0.Geometry.ArchiveFockState),\n  D0.Geometry.fockDegree S ≠ k + 1 → D0.Geometry.weightedCubicalDifferential N w ψ (x, S) = 0",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 6,
+            "line": 155
+          },
+          "start": {
+            "column": 0,
+            "line": 145
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 48,
+            "line": 147
+          },
+          "start": {
+            "column": 8,
+            "line": 147
+          }
+        }
+      },
+      "elaborated_type": "∀ (N k : ℕ) (w : D0.Geometry.ArchiveRolePhaseGroup N → ℝ) (ψ : D0.Geometry.ArchiveCochain N),\n  D0.Geometry.HomogeneousCochain N k ψ →\n    D0.Geometry.HomogeneousCochain N (k + 1) (D0.Geometry.weightedCubicalDifferential N w ψ)",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveCubicalCoboundary",
+      "name": "D0.Geometry.weightedCubicalDifferential_degree_raise",
+      "proof_dependencies": [
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.HomogeneousCochain",
+        "D0.Geometry.cubicalCoboundary",
+        "D0.Geometry.cubicalCoboundary_degree_raise",
+        "D0.Geometry.fockDegree",
+        "D0.Geometry.weightedCubicalDifferential",
+        "Eq",
+        "Eq.mpr",
+        "Eq.trans",
+        "HAdd.hAdd",
+        "HMul.hMul",
+        "MulZeroClass.mul_zero",
+        "MulZeroClass.toZero",
+        "Nat",
+        "Ne",
+        "OfNat.ofNat",
+        "Prod.mk",
+        "Real",
+        "Real.instMul",
+        "Real.instZero",
+        "Real.semiring",
+        "Real.sqrt",
+        "True",
+        "Zero.toOfNat0",
+        "congrArg",
+        "congrFun'",
+        "eq_self",
+        "id",
+        "instAddNat",
+        "instHAdd",
+        "instHMul",
+        "instMulZeroClassOfSemiring",
+        "instOfNatNat",
+        "of_eq_true"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.HomogeneousCochain",
+        "D0.Geometry.weightedCubicalDifferential",
+        "HAdd.hAdd",
+        "Nat",
+        "OfNat.ofNat",
+        "Real",
+        "instAddNat",
+        "instHAdd",
+        "instOfNatNat"
       ],
       "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveCubicalCoboundary.lean"
     },

@@ -1031,8 +1031,11 @@ input yields coefficient `1` at the origin in a degree-two state. The proof
 reduces the full role/state sums using the existing CAR support theorem and
 exact integer-shadow creation coefficients; it does not use floating-point
 evaluation. The shared module also proves that every constant profile remains
-nilpotent at every refinement by linearity of the base coboundary; a concrete
-unit-profile control consumes that result beside the nonconstant sample.
+nilpotent at every refinement by linearity of the base coboundary, and that an
+arbitrary site profile preserves one-step Fock-degree raising. The concrete
+two-step output is homogeneous of degree two, with the coefficient formula
+showing it is nonzero for the registered nonconstant profile; a unit-profile
+control consumes the all-level nilpotency result beside that sample.
 
 The registered locator `archive_naive_weighted_degree_leakage_nogo_owner`
 now compiles as a compatibility wrapper to the existing
@@ -1050,27 +1053,35 @@ a consumer of `ArchiveCubicalDifferential`.
 
 The compiled declaration inventory for both linked modules is preserved at
 `sources/d0_proof_architecture_formalization_2026-10-24/weighted_cubical_module_declarations.json`
-(SHA-256 `15ea2cf87066ee6b8978073e9641347137aec8963810d14c7f99b990413ed91a`).
+(SHA-256 `de5bb040a9089618a003e00c764cd2a03f61bdecc0d77121f86b72da0272a40f`).
 Under public import `D0.All` and Lean 4.30.0 it records the exact signatures,
 proof dependencies, source ranges, and axiom footprints for the shared
 operator, the generic coefficient formula, its nonzero corollary, the
-constant-profile theorem/control, and the registered owner theorem. The owner
-theorem now consumes both the formula-based exact sample and the general
-nonzero criterion.
+constant-profile theorem/control, the arbitrary-profile degree-raising
+theorem and its concrete two-step application, and the registered owner
+theorem. The owner theorem now consumes the formula-based exact sample, the
+general nonzero criterion, and the result that its complete two-step output is
+homogeneous of degree two. That application depends on the arbitrary-profile,
+all-refinement degree-raising theorem, so the exact coefficient `1` belongs to
+the complete degree-two output rather than only to a labelled component.
+The inventory binds Lean source digest
+`c092c246193023d8047b698d7cb62bb9c70f625c62424a41856353cd1eed0964` and
+collector SHA-256
+`db0648931c63054d7e9ba4546790035d61d76fc0b4e20c190794c99f197f9104`.
 
 The compiled claim-reuse record is
 `sources/d0_proof_architecture_formalization_2026-10-24/naive_weighted_leakage_claim_reuse.json`
-(SHA-256 `0ba85b9bc6229115ead668b89d42a5a3864edc67bf4605ecb19b82db3fa81312`).
+(SHA-256 `be5aba779b5acf3526276bd28794cecc72bbe6fe3faf2c400075936281d93491`).
 The exact theorem locator resolves through public import `D0.All`; its
-elaborated proof dependency is the scoped CAR owner theorem above. The record
-binds Lean source digest
-`9bc7b35ec878966c68d7d025bb87037364d3d376a5dad3220e1f36f87cc0832a`, collector
-SHA-256 `1068f73c98eddcbd75cd6ff004b0e3b68642bfd66e7417fa9be4e1f9e4c46745`,
-pre-publication local HEAD `6b59bc57ca97275df9e973715cdb503ec8fc5c4e`, and
-`worktree_dirty=true`. Its axiom footprint includes `Classical.choice`,
-`Quot.sound`, `propext`, existing CAR native-decision results, and explicit
-`native_decide` results for the finite pair degree and two creation
-coefficients.
+elaborated proof dependency is the scoped CAR owner theorem above, whose
+compiled type includes the complete degree-two output and whose dependencies
+include the generic weighted degree-raising result. The reuse record was
+queried at local source snapshot `6b59bc57ca97275df9e973715cdb503ec8fc5c4e`
+with `worktree_dirty=true`; the inventory's Lean source digest above binds the
+actual Lean contents. The transitive axiom footprint includes
+`Classical.choice`, `Quot.sound`, `propext`, and existing CAR
+`native_decide` results for degree raising, the finite pair degree, and the
+two creation coefficients; no axiom-free claim is made.
 
 Validation for this slice passed: narrow build of
 `D0.Geometry.ArchiveNaiveWeightedDegreeLeakageNoGo` (2,976 Lake jobs), compiled

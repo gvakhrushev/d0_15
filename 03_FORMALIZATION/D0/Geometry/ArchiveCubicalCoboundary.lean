@@ -142,6 +142,18 @@ theorem cubicalCoboundary_degree_raise (N k : ℕ) (ψ : ArchiveCochain N)
   exact homogeneousCochain_smul N (k + 1) (forwardDifferenceScale N)⁻¹
     (dForward N ψ) (dForward_degree_raise N k ψ hψ)
 
+/-- Multiplication by a site-dependent scalar preserves Fock-degree support,
+so the weighted coboundary also raises degree by one for every profile. -/
+theorem weightedCubicalDifferential_degree_raise (N k : ℕ)
+    (w : ArchiveRolePhaseGroup N → ℝ) (ψ : ArchiveCochain N)
+    (hψ : HomogeneousCochain N k ψ) :
+    HomogeneousCochain N (k + 1) (weightedCubicalDifferential N w ψ) := by
+  intro x S hS
+  have hD := cubicalCoboundary_degree_raise N k ψ hψ
+  change Real.sqrt (w x) * cubicalCoboundary N ψ (x, S) = 0
+  rw [hD x S hS]
+  simp
+
 /-- **D0-ARCHIVE-CUBICAL-COBOUNDARY-001 (Owner)**:
 The concrete unit-step operator has four directions, a 16-state cubical fiber,
 `d² = 0`, and maps degree `k` to degree `k + 1`. -/
