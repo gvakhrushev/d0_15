@@ -91,6 +91,7 @@ import D0.Combinatorics.PhaseTowerMinimality
 import D0.Combinatorics.SceneChromaticThree
 import D0.Combinatorics.Tripartite
 import D0.Combinatorics.TripartiteSignatureGeneral
+import D0.Combinatorics.TripartiteVieta
 import D0.Complexity.HeatTraceLyapunov
 import D0.Condensed.CondensedPhiVacuum
 import D0.Condensed.SolidPhi
@@ -260,6 +261,7 @@ import D0.Foundation.SceneStepParity
 import D0.Foundation.TheoryTransfer
 import D0.Foundation.VerifiabilityNecessity
 import D0.Foundation.VerificationCore
+import D0.Foundation.VerificationTransferApplication
 import D0.Foundation.ZoneConnectivity
 import D0.Frozen.ConservedStressProjection
 import D0.Gauge.AlbertSMProjection
@@ -392,6 +394,7 @@ import D0.Geometry.ArchiveHodgeDiracZeroModePollutionNoGo
 import D0.Geometry.ArchiveHodgeGradingSymmetry
 import D0.Geometry.ArchiveHodgeSpatialShellOperator
 import D0.Geometry.ArchiveJYToPlaquetteBoundary
+import D0.Geometry.ArchiveJuliaRaisingOperatorReadout
 import D0.Geometry.ArchiveLaplacianPhaseNaturality
 import D0.Geometry.ArchiveLaplacianProperties
 import D0.Geometry.ArchiveLaplacianRG

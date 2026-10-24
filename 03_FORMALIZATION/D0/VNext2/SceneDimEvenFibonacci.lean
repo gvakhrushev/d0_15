@@ -3,8 +3,10 @@ import Mathlib.Tactic
 /-!
 # D0-SCENE-DIM-EVEN-FIBONACCI-FORCING-001 — |V(scene)| = 33 = F₉ − 1, a forced +2-graded convergence
 
-The scene `K(9,11,13)` has `|V| = 9 + 11 + 13 = 33`. The AF Dirac² tower (golden-mean SFT, scale ratio φ,
-`D0-BRATTELI-FIBONACCI-REFINEMENT-OWNER-001` + `D0-PERRON-SCALE-FLOW-OWNER-001`, both CERT-CLOSED) has its
+The scene `K(9,11,13)` has `|V| = 9 + 11 + 13 = 33`. The finite Fibonacci incidence slice and the
+dimensionless scale ratio φ are formalized under `D0-BRATTELI-FIBONACCI-REFINEMENT-OWNER-001` and
+`D0-PERRON-SCALE-FLOW-OWNER-001`; the separate all-level compatible AF-trace statement remains open under
+the Bratteli owner. The finite Dirac² model has its
 Dirac² eigenvalues on the **even** powers `{φ⁰, φ², φ⁴, φ⁶}` with eigenspace multiplicities the
 **even-indexed Fibonacci** numbers `{F₂, F₄, F₆, F₈} = {1, 3, 8, 21}`.
 

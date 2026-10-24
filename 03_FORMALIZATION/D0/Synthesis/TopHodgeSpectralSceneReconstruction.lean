@@ -1,5 +1,6 @@
 import D0.Topology.GenericTripartiteTopHodgeSpectrum
 import D0.Synthesis.CarrierTopologicalScenePassport
+import D0.Combinatorics.TripartiteVieta
 import Mathlib.Tactic
 
 /-!
@@ -265,9 +266,6 @@ theorem reconstruct_scene_unordered_from_topHodge_spectral_data
   have hT : (p + 1) * (q + 1) * (r + 1) = 1287 := by
     rw [topHodgeTriangleDimension_formula] at hD
     exact hD
-  have hB : p * q * r = 960 := by
-    rw [topHodgeHarmonicMultiplicity_formula] at hH
-    exact hH
   have hMoment := topHodgeSecondMoment_formula p q r
   rw [hM2, hT] at hMoment
   have hVQ :
@@ -277,7 +275,48 @@ theorem reconstruct_scene_unordered_from_topHodge_spectral_data
   have hV : vertexCount (p + 1) (q + 1) (r + 1) = 33 := by
     simp only [vertexCount]
     exact_mod_cast hVQ
-  exact reduced_scene_unordered p q r hV hB
+  have hTn : triangleCount (p + 1) (q + 1) (r + 1) = 1287 := by
+    simpa [triangleCount] using hT
+  have hEnat : edgeCount (p + 1) (q + 1) (r + 1) = 359 := by
+    have hEint := edgeCount_from_topHodgeData p q r
+    rw [hD, hH] at hEint
+    have hVint : (vertexCount (p + 1) (q + 1) (r + 1) : ℤ) = 33 := by
+      exact_mod_cast hV
+    rw [hVint] at hEint
+    norm_num at hEint
+    exact_mod_cast hEint
+  have hVeq :
+      D0.Combinatorics.TripartiteVieta.tripartiteV
+          ((p + 1 : ℕ) : ℚ) ((q + 1 : ℕ) : ℚ) ((r + 1 : ℕ) : ℚ) =
+        D0.Combinatorics.TripartiteVieta.tripartiteV 9 11 13 := by
+    change (((p + 1 : ℕ) : ℚ) + ((q + 1 : ℕ) : ℚ) +
+      ((r + 1 : ℕ) : ℚ)) = (9 : ℚ) + 11 + 13
+    have hVnat : (p + 1) + (q + 1) + (r + 1) = 9 + 11 + 13 := by
+      simpa [vertexCount] using hV
+    exact_mod_cast hVnat
+  have hEeq :
+      D0.Combinatorics.TripartiteVieta.tripartiteE
+          ((p + 1 : ℕ) : ℚ) ((q + 1 : ℕ) : ℚ) ((r + 1 : ℕ) : ℚ) =
+        D0.Combinatorics.TripartiteVieta.tripartiteE 9 11 13 := by
+    change (((p + 1 : ℕ) : ℚ) * ((q + 1 : ℕ) : ℚ) +
+      ((p + 1 : ℕ) : ℚ) * ((r + 1 : ℕ) : ℚ) +
+      ((q + 1 : ℕ) : ℚ) * ((r + 1 : ℕ) : ℚ)) =
+        (9 : ℚ) * 11 + 9 * 13 + 11 * 13
+    have hEnat' : (p + 1) * (q + 1) + (p + 1) * (r + 1) +
+        (q + 1) * (r + 1) = 9 * 11 + 9 * 13 + 11 * 13 := by
+      simpa [edgeCount] using hEnat
+    exact_mod_cast hEnat'
+  have hTeq :
+      D0.Combinatorics.TripartiteVieta.tripartiteT
+          ((p + 1 : ℕ) : ℚ) ((q + 1 : ℕ) : ℚ) ((r + 1 : ℕ) : ℚ) =
+        D0.Combinatorics.TripartiteVieta.tripartiteT 9 11 13 := by
+    change (((p + 1 : ℕ) : ℚ) * ((q + 1 : ℕ) : ℚ) *
+      ((r + 1 : ℕ) : ℚ)) = (9 : ℚ) * 11 * 13
+    have hTnat : (p + 1) * (q + 1) * (r + 1) = 9 * 11 * 13 := by
+      simpa [triangleCount] using hTn
+    exact_mod_cast hTnat
+  exact D0.Combinatorics.TripartiteVieta.unordered_nat_triple_eq_of_VET_eq
+    hVeq hEeq hTeq
 
 /-- Load-bearing control: equal top-chain dimension and equal second moment do
 not determine the partition without the actual harmonic multiplicity. -/

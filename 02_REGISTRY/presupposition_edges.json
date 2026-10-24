@@ -1,8 +1,8 @@
 {
   "generated_from": "per-book extraction of conceptual presupposition edges, each carrying a quoted reason",
   "test": "claim A cannot be stated or believed unless claim B already holds; NOT proof-term reuse and NOT co-occurrence",
-  "edges_extracted": 292,
-  "edges_resolving_to_registry_claims": 190,
+  "edges_extracted": 291,
+  "edges_resolving_to_registry_claims": 189,
   "edges": [
     {
       "claim": "D0-COMPACTNESS-DEF-FORCING-001",
@@ -197,12 +197,12 @@
     {
       "claim": "D0-CANONICAL-RENORMALIZATION-SPECTRAL-TOWER-001",
       "presupposes": "D0-BRATTELI-FIBONACCI-REFINEMENT-OWNER-001",
-      "evidence": "\u00a702.15: \"golden cylinder language ... canonically determines its refinement Bratteli incidence ... **So** the present core DOES carry a canonical renormalization tower\""
+      "evidence": "\u00a702.15: the golden cylinder rule recovers the finite Bratteli incidence used by the finite refinement composition."
     },
     {
       "claim": "D0-CANONICAL-RENORMALIZATION-SPECTRAL-TOWER-001",
       "presupposes": "D0-PERRON-SCALE-FLOW-OWNER-001",
-      "evidence": "\u00a702.15: \"unique AF trace ratio `phi`, forced scale ratio `phi` (`D0-PERRON-SCALE-FLOW-OWNER-001`). So the present core DOES carry a canonical renormalization tower\""
+      "evidence": "\u00a702.15: finite positive Perron eigenprofile and forced dimensionless scale ratio phi support the finite refinement composition; this does not state uniqueness of every compatible AF trace."
     },
     {
       "claim": "D0-INDUCTIVE-SPECTRAL-TRIPLE-OWNER-001",
@@ -217,12 +217,7 @@
     {
       "claim": "D0-VNEXT-33-SCENE-ANCHOR-NOGO-001",
       "presupposes": "D0-VNEXT-AF-ONE-DIMENSIONAL-REDUCTION-CLASSIFICATION-001",
-      "evidence": "\u00a702.15: \"the unique trace=cyclic line gives a 33-dim reduction ... that does not match the tripartite scene `(9,11,13)`\""
-    },
-    {
-      "claim": "D0-VNEXT-DIRAC-LAPLACIAN-COMPATIBILITY-OWNER-001",
-      "presupposes": "D0-VNEXT-AF-GNS-ISOMETRY-OWNER-001",
-      "evidence": "\u00a702.15: \"Perron-trace compatibility ... induces genuine isometries `J_N` ... The Dirac/Laplacian defect test **then** FAILS canonically\""
+      "evidence": "\u00a702.15: within the finite two-block matrix algebra, the trace-canonical line gives a 33-dimensional algebra reduction that fails to match the tripartite scene; this uses neither AF-limit trace uniqueness nor a GNS Hilbert isometry."
     },
     {
       "claim": "D0-VNEXT-AF-D0-SPECTRAL-COMPRESSION-OWNER-001",
