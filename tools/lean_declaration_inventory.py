@@ -526,7 +526,8 @@ def main() -> int:
         }
         rendered = json.dumps(output, ensure_ascii=False, indent=2) + "\n"
         if args.output:
-            args.output.write_text(rendered, encoding="utf-8", newline="\n")
+            with args.output.open("w", encoding="utf-8", newline="\n") as inventory_file:
+                inventory_file.write(rendered)
         else:
             print(rendered, end="")
         return 0
