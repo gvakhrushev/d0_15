@@ -58,6 +58,13 @@ private theorem firstRefinementScalarMatrix_mul (x y : ℝ) :
   fin_cases j
   simp [firstRefinementScalarMatrix, Matrix.mul_apply]
 
+private theorem firstRefinementScalarMatrix_star (x : ℝ) :
+    star (firstRefinementScalarMatrix x) = firstRefinementScalarMatrix x := by
+  ext i j
+  fin_cases i
+  fin_cases j
+  simp [firstRefinementScalarMatrix]
+
 private theorem firstRefinementDiagonal_eq_sharedBlock (x y : ℝ) :
     firstRefinementDiagonal x y =
       D0.Algebra.FibonacciAFTower.fibonacciBlockMatrix
@@ -91,8 +98,10 @@ theorem firstRefinementDiagonal_mul (x y u v : ℝ) :
 
 theorem firstRefinementDiagonal_star (x y : ℝ) :
     star (firstRefinementDiagonal x y) = firstRefinementDiagonal x y := by
-  ext i j
-  fin_cases i <;> fin_cases j <;> simp [firstRefinementDiagonal]
+  rw [firstRefinementDiagonal_eq_sharedBlock x y,
+    D0.Algebra.FibonacciAFTower.fibonacciBlockMatrix_star,
+    firstRefinementScalarMatrix_star, firstRefinementScalarMatrix_star,
+    ← firstRefinementDiagonal_eq_sharedBlock x y]
 
 theorem firstRefinementDiagonal_trace (x y : ℝ) :
     Matrix.trace (firstRefinementDiagonal x y) = x + y := by
