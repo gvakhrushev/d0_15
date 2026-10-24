@@ -248,6 +248,7 @@ class ProofArchitectureTests(unittest.TestCase):
 
     def test_compiled_reuse_follows_explicit_canonical_claim_alias(self) -> None:
         data = dataset()
+        data["claims"][0]["release_status"] = "CORE-FORMALIZED"
         data["aliases"] = [{
             "legacy_id": "OLD-CLAIM-1", "kind": "CANONICAL_TARGET",
             "canonical_claim_id": "CLM-1", "first_reference": "BOOK.md:10",
@@ -281,6 +282,8 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertEqual(alias["alias_id"], "OLD-CLAIM-1")
         self.assertEqual(alias["canonical_claim_id"], "CLM-1")
         self.assertTrue(alias["target_claim_found"])
+        self.assertEqual(alias["canonical_claim"]["release_status"], "CORE-FORMALIZED")
+        self.assertEqual(alias["canonical_claim"]["lean_status"], "FORMALIZED")
         self.assertEqual(alias["compiled_claim_reuse"]["claim_id"], "CLM-1")
         self.assertEqual(
             alias["compiled_claim_reuse"]["compiled_declarations"][0]["name"],

@@ -908,6 +908,15 @@ def reuse_view(dataset: dict[str, Any], key: str, *,
                     "target_claim_found": target is not None,
                 }
                 if target is not None:
+                    claim_record = target["record"]
+                    alias_item["canonical_claim"] = {
+                        field: claim_record.get(field)
+                        for field in (
+                            "claim_id", "book", "section", "lean_module", "lean_theorem",
+                            "lean_status", "uses_bridge_assumptions", "assumption_ids",
+                            "release_status",
+                        )
+                    }
                     alias_item["compiled_claim_reuse"] = compiled_claim_reuse_view(
                         dataset, target, lean_inventory, import_root
                     )
