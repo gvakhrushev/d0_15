@@ -327,6 +327,57 @@ class ProofArchitectureTests(unittest.TestCase):
         }])
         self.assertIn("absent from claims.csv", view["compiled_claim_reuse_interpretation"])
 
+    def test_exact_claim_and_canonical_alias_target_are_reported_separately(self) -> None:
+        data = dataset()
+        data["claims"].append({
+            "claim_id": "CLM-2", "book": "B2", "section": "4",
+            "lean_module": "D0.Foo", "lean_theorem": "D0.Foo.lower",
+            "lean_status": "FORMALIZED", "release_status": "NO-GO", "notes": "Target.",
+        })
+        data["aliases"] = [{
+            "legacy_id": "CLM-1", "kind": "CANONICAL_TARGET",
+            "canonical_claim_id": "CLM-2", "first_reference": "BOOK.md:12",
+            "note": "Explicit rename target.",
+        }]
+
+        class InventoryStub:
+            declarations = {
+                "D0.Foo.bar": {"name": "D0.Foo.bar", "exists": True,
+                               "module": "D0.Foo", "proof_dependencies": [],
+                               "elaborated_type": "D0.Result"},
+                "D0.Foo.lower": {"name": "D0.Foo.lower", "exists": True,
+                                 "module": "D0.Foo", "proof_dependencies": [],
+                                 "elaborated_type": "D0.LowerResult"},
+            }
+
+            @staticmethod
+            def candidate_names(module: str, atom: str) -> list[str]:
+                return [atom]
+
+            @staticmethod
+            def run_inventory(names: list[str], import_root: str):
+                self.assertEqual(import_root, "D0.All")
+                return ([InventoryStub.declarations[name] for name in names],
+                        "collector-sha", "lean-source-sha")
+
+            @staticmethod
+            def module_source_path(module: str | None) -> str | None:
+                return "D0/Foo.lean" if module == "D0.Foo" else None
+
+        view = proof.reuse_view(data, "CLM-1", lean_inventory=InventoryStub)
+
+        self.assertEqual(view["compiled_claim_reuse"][0]["claim_id"], "CLM-1")
+        self.assertEqual(view["compiled_claim_alias_reuse_status"],
+                         "exact_claim_and_controlled_alias")
+        self.assertEqual(view["compiled_claim_alias_reuse"][0]["canonical_claim_id"], "CLM-2")
+        self.assertEqual(view["compiled_claim_alias_reuse"][0]["canonical_claim"]["release_status"],
+                         "NO-GO")
+        self.assertEqual(
+            view["compiled_claim_alias_reuse"][0]["compiled_claim_reuse"]["claim_id"],
+            "CLM-2",
+        )
+        self.assertIn("reported separately", view["compiled_claim_alias_reuse_interpretation"])
+
     def test_result_crosswalk_keeps_compiled_candidates_separate_from_application_acceptance(self) -> None:
         with tempfile.TemporaryDirectory() as temp:
             root = pathlib.Path(temp)

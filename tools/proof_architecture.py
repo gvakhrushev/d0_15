@@ -890,63 +890,72 @@ def reuse_view(dataset: dict[str, Any], key: str, *,
             for item in claims
         ]
         alias_reuse = []
-        if not claims:
-            claim_items = {item["key"]: item for item in records(dataset)
-                           if item["kind"] == "claim-metadata"}
-            for alias in hits:
-                if alias["kind"] != "alias-lookup" or alias["key"] != key:
-                    continue
-                alias_record = alias["record"]
-                target_id = str(alias_record.get("canonical_claim_id", ""))
-                if alias_record.get("kind") != "CANONICAL_TARGET" or not target_id:
-                    continue
-                target = claim_items.get(target_id)
-                alias_item = {
-                    "alias_id": alias["key"],
-                    "alias_kind": alias_record.get("kind"),
-                    "canonical_claim_id": target_id,
-                    "target_claim_found": target is not None,
-                }
-                if target is not None:
-                    claim_record = target["record"]
-                    alias_item["canonical_claim"] = {
-                        field: claim_record.get(field)
-                        for field in (
-                            "claim_id", "book", "section", "lean_module", "lean_theorem",
-                            "lean_status", "uses_bridge_assumptions", "assumption_ids",
-                            "release_status",
-                        )
-                    }
-                    alias_item["compiled_claim_reuse"] = compiled_claim_reuse_view(
-                        dataset, target, lean_inventory, import_root
+        claim_items = {item["key"]: item for item in records(dataset)
+                       if item["kind"] == "claim-metadata"}
+        for alias in hits:
+            if alias["kind"] != "alias-lookup" or alias["key"] != key:
+                continue
+            alias_record = alias["record"]
+            target_id = str(alias_record.get("canonical_claim_id", ""))
+            if alias_record.get("kind") != "CANONICAL_TARGET" or not target_id:
+                continue
+            target = claim_items.get(target_id)
+            alias_item = {
+                "alias_id": alias["key"],
+                "alias_kind": alias_record.get("kind"),
+                "canonical_claim_id": target_id,
+                "target_claim_found": target is not None,
+            }
+            if target is not None:
+                claim_record = target["record"]
+                alias_item["canonical_claim"] = {
+                    field: claim_record.get(field)
+                    for field in (
+                        "claim_id", "book", "section", "lean_module", "lean_theorem",
+                        "lean_status", "uses_bridge_assumptions", "assumption_ids",
+                        "release_status",
                     )
-                alias_reuse.append(alias_item)
+                }
+                alias_item["compiled_claim_reuse"] = compiled_claim_reuse_view(
+                    dataset, target, lean_inventory, import_root
+                )
+            alias_reuse.append(alias_item)
         result["compiled_claim_alias_reuse"] = alias_reuse
         if alias_reuse:
             targets_found = all(row["target_claim_found"] for row in alias_reuse)
-            result["compiled_claim_reuse_status"] = (
-                "controlled_alias_candidate" if targets_found
-                else "controlled_alias_target_missing"
-            )
             if targets_found:
-                result["compiled_claim_reuse_interpretation"] = (
+                alias_status = "controlled_alias_candidate"
+                alias_interpretation = (
                     "The alias registry explicitly points this key to a canonical claim ID. "
                     "The target's compiled declarations remain locator evidence; no semantic "
                     "equivalence, application, or claim acceptance is inferred."
                 )
             else:
-                result["compiled_claim_reuse_interpretation"] = (
+                alias_status = "controlled_alias_target_missing"
+                alias_interpretation = (
                     "The alias registry points to a canonical claim ID that is absent from "
                     "claims.csv. No Lean query is made for the unresolved alias target."
                 )
-        if not claims:
-            if not alias_reuse:
-                result["compiled_claim_reuse_status"] = "key_is_not_an_exact_claim_id"
-                result["compiled_claim_reuse_interpretation"] = (
-                    "Use a claims.csv claim ID or an explicit CANONICAL_TARGET alias for "
-                    "the joined claim-to-declaration view. Lookup-only aliases, assembly "
-                    "results, and applications retain their separate relation views."
-                )
+            result["compiled_claim_alias_reuse_status"] = (
+                "exact_claim_and_controlled_alias" if claims and targets_found
+                else "exact_claim_and_alias_target_missing" if claims
+                else alias_status
+            )
+            result["compiled_claim_alias_reuse_interpretation"] = (
+                "The exact claim and the explicit alias target are reported separately; "
+                "the alias does not replace or merge the exact claim. " + alias_interpretation
+                if claims else alias_interpretation
+            )
+            if not claims:
+                result["compiled_claim_reuse_status"] = alias_status
+                result["compiled_claim_reuse_interpretation"] = alias_interpretation
+        elif not claims:
+            result["compiled_claim_reuse_status"] = "key_is_not_an_exact_claim_id"
+            result["compiled_claim_reuse_interpretation"] = (
+                "Use a claims.csv claim ID or an explicit CANONICAL_TARGET alias for "
+                "the joined claim-to-declaration view. Lookup-only aliases, assembly "
+                "results, and applications retain their separate relation views."
+            )
     return result
 
 
