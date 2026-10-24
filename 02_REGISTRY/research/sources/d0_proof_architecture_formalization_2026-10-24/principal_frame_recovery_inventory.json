@@ -1,8 +1,8 @@
 {
   "schema": "d0-lean-declaration-inventory-v1",
-  "snapshot_commit": "0a613fcd6683786fa6bb2ad37463601aec0cc61c",
+  "snapshot_commit": "27f3b2bc36db1395d4339aeff3327611041daa0d",
   "worktree_dirty": true,
-  "lean_source_digest": "a6a4743b44c682c5cc6729742f65eabd2b96f45be873259312c7cdf5dd83d73f",
+  "lean_source_digest": "84c20d4b1432affa35f2552a961a175da0775a64decdd4818237cc215af0a06f",
   "collector_sha256": "8e95fbfb6896de85a8d0309aa2b7ad68051cce7b7d42749b54ce4bef07131ed7",
   "toolchain": "leanprover/lean4:v4.30.0",
   "public_import_root": "D0.Geometry.A4DJuliaPrincipalFrameRecovery",
@@ -26,21 +26,21 @@
         "declaration": {
           "end": {
             "column": 53,
-            "line": 43
+            "line": 47
           },
           "start": {
             "column": 0,
-            "line": 41
+            "line": 45
           }
         },
         "selection": {
           "end": {
             "column": 32,
-            "line": 42
+            "line": 46
           },
           "start": {
             "column": 7,
-            "line": 42
+            "line": 46
           }
         }
       },
@@ -1268,21 +1268,21 @@
         "declaration": {
           "end": {
             "column": 73,
-            "line": 65
+            "line": 69
           },
           "start": {
             "column": 0,
-            "line": 58
+            "line": 62
           }
         },
         "selection": {
           "end": {
             "column": 34,
-            "line": 60
+            "line": 64
           },
           "start": {
             "column": 4,
-            "line": 60
+            "line": 64
           }
         }
       },
@@ -1397,21 +1397,21 @@
         "declaration": {
           "end": {
             "column": 68,
-            "line": 224
+            "line": 298
           },
           "start": {
             "column": 0,
-            "line": 213
+            "line": 287
           }
         },
         "selection": {
           "end": {
             "column": 54,
-            "line": 214
+            "line": 288
           },
           "start": {
             "column": 8,
-            "line": 214
+            "line": 288
           }
         }
       },
@@ -1531,21 +1531,21 @@
         "declaration": {
           "end": {
             "column": 51,
-            "line": 116
+            "line": 120
           },
           "start": {
             "column": 0,
-            "line": 106
+            "line": 110
           }
         },
         "selection": {
           "end": {
             "column": 51,
-            "line": 108
+            "line": 112
           },
           "start": {
             "column": 8,
-            "line": 108
+            "line": 112
           }
         }
       },
@@ -1633,21 +1633,21 @@
         "declaration": {
           "end": {
             "column": 73,
-            "line": 75
+            "line": 79
           },
           "start": {
             "column": 0,
-            "line": 67
+            "line": 71
           }
         },
         "selection": {
           "end": {
             "column": 47,
-            "line": 69
+            "line": 73
           },
           "start": {
             "column": 8,
-            "line": 69
+            "line": 73
           }
         }
       },
@@ -1785,21 +1785,21 @@
         "declaration": {
           "end": {
             "column": 61,
-            "line": 241
+            "line": 315
           },
           "start": {
             "column": 0,
-            "line": 226
+            "line": 300
           }
         },
         "selection": {
           "end": {
             "column": 55,
-            "line": 228
+            "line": 302
           },
           "start": {
             "column": 8,
-            "line": 228
+            "line": 302
           }
         }
       },
@@ -1988,22 +1988,22 @@
       "declaration_ranges": {
         "declaration": {
           "end": {
-            "column": 61,
-            "line": 211
+            "column": 51,
+            "line": 285
           },
           "start": {
             "column": 0,
-            "line": 166
+            "line": 236
           }
         },
         "selection": {
           "end": {
             "column": 57,
-            "line": 171
+            "line": 239
           },
           "start": {
             "column": 8,
-            "line": 171
+            "line": 239
           }
         }
       },
@@ -2013,18 +2013,25 @@
       "module": "D0.Geometry.A4DJuliaPrincipalFrameRecovery",
       "name": "D0.Geometry.principalFrameJuliaQueryFamily_null_link_recovery",
       "proof_dependencies": [
+        "AddMonoid.toAddZeroClass",
         "D0.Dyad",
         "D0.Geometry.ArchiveFockState",
         "D0.Geometry.ArchiveJuliaQueryOperator",
         "D0.Geometry.ArchiveRoleBilinear",
         "D0.Geometry.ArchiveRoleBilinear._proof_1",
         "D0.Geometry.RoleSpace",
-        "D0.Geometry.archiveJuliaQueryNullRecoveredFrame_eq_of_null",
+        "D0.Geometry.archiveJuliaNullBlock",
+        "D0.Geometry.archiveJuliaNullBlock_covector_ne_zero",
+        "D0.Geometry.archiveJuliaQueryNullBlock",
+        "D0.Geometry.archiveJuliaQueryNullBlock_readout",
+        "D0.Geometry.archiveJuliaQueryNullCanonicalWitness",
+        "D0.Geometry.archiveJuliaQueryNullMetricCovector",
         "D0.Geometry.archiveJuliaRaisingQuery",
+        "D0.Geometry.archiveJuliaRaisingQuery._proof_1",
         "D0.Geometry.principalFrameColumnMatrix",
         "D0.Geometry.principalFrameJuliaQueryFamily",
         "D0.Geometry.principalFrameJuliaQueryFamily_eq_model",
-        "D0.Geometry.principalFrameObservedNullQueryFrameReadout",
+        "D0.Geometry.principalFrameJuliaQueryFamily_open_chart_link_recovery",
         "D0.Geometry.principalFrameObservedQueryVector",
         "D0.Geometry.principalFrameObservedQueryVector_eq",
         "D0.Role",
@@ -2033,16 +2040,22 @@
         "Eq",
         "Eq.mp",
         "Eq.mpr",
-        "Eq.refl",
         "Eq.trans",
         "EquivLike.toFunLike",
         "Fin.fintype",
         "Function.hasSMul",
+        "HAdd.hAdd",
+        "HMul.hMul",
         "HSMul.hSMul",
+        "Int.instNeZeroOfNat_mathlib",
+        "LT.lt",
         "LinearEquiv",
         "LinearMap",
         "LinearMap.addCommMonoid",
+        "LinearMap.comp",
+        "LinearMap.comp.congr_simp",
         "LinearMap.instFunLike",
+        "LinearMap.instZero",
         "LinearMap.module",
         "Matrix",
         "Matrix.col",
@@ -2056,6 +2069,7 @@
         "MulOpposite.op",
         "MulZeroClass.toOppositeSMulWithZero",
         "MulZeroClass.toZero",
+        "MulZeroClass.zero_mul",
         "Nat",
         "Ne",
         "NonAssocSemiring.toNonUnitalNonAssocSemiring",
@@ -2066,7 +2080,6 @@
         "NonUnitalNonAssocSemiring.toMulZeroClass",
         "NonUnitalNormedCommRing.toNonUnitalCommRing",
         "NormedCommRing.toNonUnitalNormedCommRing",
-        "Not",
         "OfNat.ofNat",
         "One.toOfNat1",
         "Pi.Function.module",
@@ -2075,31 +2088,48 @@
         "Pi.mulAction",
         "Pi.single",
         "Real",
+        "Real.instAdd",
         "Real.instAddCommMonoid",
+        "Real.instAddMonoid",
+        "Real.instFloorRing",
+        "Real.instLT",
         "Real.instMonoid",
+        "Real.instMul",
         "Real.instOne",
+        "Real.instRing",
         "Real.instZero",
+        "Real.instZeroLEOneClass",
+        "Real.linearOrder",
         "Real.normedCommRing",
+        "Real.partialOrder",
         "Real.semiring",
         "RingHom.id",
+        "RingHomCompTriple.ids",
         "RingHomInvPair.ids",
         "SMulWithZero.toSMulZeroClass",
         "SMulZeroClass.toSMul",
         "Semiring.toModule",
         "Semiring.toNonAssocSemiring",
-        "Trans.trans",
+        "True",
+        "True.intro",
         "Zero.toOfNat0",
-        "congr",
+        "add_zero",
         "congrArg",
         "congrFun'",
+        "eq_self",
+        "eq_true",
         "id",
         "instDecidableEqFin",
         "instDecidableEqProd",
         "instFintypeProd",
+        "instHAdd",
+        "instHMul",
         "instHSMul",
+        "instMulZeroClassOfSemiring",
         "instOfNatNat",
-        "instTransEq",
-        "one_smul"
+        "of_eq_true",
+        "one_smul",
+        "zero_lt_one._simp_1"
       ],
       "proof_details_status": "collected",
       "type_dependencies": [
@@ -2161,6 +2191,282 @@
       "axioms": [
         "Classical.choice",
         "Quot.sound",
+        "_private.D0.Geometry.ArchiveJuliaRaisingOperatorReadout.0.D0.Geometry.archiveCreatorPermSign._native.native_decide.ax_1_1",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "F",
+          "type": "D0.Role → D0.Role → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "L",
+          "type": "D0.Role → D0.Role → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "M",
+          "type": "D0.Role → D0.Geometry.RoleSpace ≃ₗ[ℝ] D0.Geometry.RoleSpace"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "Pₓ",
+          "type": "D0.Role → D0.Geometry.ArchiveRoleBilinear"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "Pᵧ",
+          "type": "D0.Role → D0.Geometry.ArchiveRoleBilinear"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "α",
+          "type": "D0.Role → Module.Dual ℝ D0.Geometry.RoleSpace"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "r",
+          "type": "D0.Dyad × D0.Dyad"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hSymm",
+          "type": "∀ (x y : D0.Geometry.RoleSpace), ((Pₓ r) x) y = ((Pₓ r) y) x"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hIso",
+          "type": "∀ (x y : D0.Geometry.RoleSpace), ((Pₓ r) ((M r) x)) ((M r) y) = ((Pᵧ r) x) y"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hα",
+          "type": "(α r) ((D0.Geometry.principalFrameColumnMatrix F L).mulVec (Pi.single r 1)) = 1"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hCovector",
+          "type": "D0.Geometry.archiveJuliaQueryNullMetricCovector (Pₓ r)\n      (D0.Geometry.principalFrameObservedQueryVector (D0.Geometry.principalFrameJuliaQueryFamily F L M) r)\n      (D0.Geometry.principalFrameJuliaQueryFamily F L M r) (α r) =\n    0 →\n  False"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hBranch",
+          "type": "Real.lt✝ 0\n  (1 +\n    ((Pₓ r) (D0.Geometry.principalFrameObservedQueryVector (D0.Geometry.principalFrameJuliaQueryFamily F L M) r))\n        (D0.Geometry.principalFrameObservedQueryVector (D0.Geometry.principalFrameJuliaQueryFamily F L M) r) *\n      (α r)\n        ((M r)\n          (D0.Geometry.archiveJuliaQueryNullCanonicalWitness (Pₓ r)\n            (D0.Geometry.principalFrameObservedQueryVector (D0.Geometry.principalFrameJuliaQueryFamily F L M) r)\n            (D0.Geometry.principalFrameJuliaQueryFamily F L M r) (α r))))"
+        }
+      ],
+      "conclusion_whnf": "D0.Geometry.principalFrameObservedNullQueryFrameReadout Pₓ Pᵧ (D0.Geometry.principalFrameJuliaQueryFamily F L M) α r =\n  ⇑(M r)",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 64,
+            "line": 234
+          },
+          "start": {
+            "column": 0,
+            "line": 171
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 63,
+            "line": 175
+          },
+          "start": {
+            "column": 8,
+            "line": 175
+          }
+        }
+      },
+      "elaborated_type": "∀ (F L : Matrix D0.Role D0.Role ℝ) (M : D0.Role → D0.Geometry.RoleSpace ≃ₗ[ℝ] D0.Geometry.RoleSpace)\n  (Pₓ Pᵧ : D0.Role → D0.Geometry.ArchiveRoleBilinear) (α : D0.Role → Module.Dual ℝ D0.Geometry.RoleSpace) (r : D0.Role),\n  (∀ (x y : D0.Geometry.RoleSpace), ((Pₓ r) x) y = ((Pₓ r) y) x) →\n    (∀ (x y : D0.Geometry.RoleSpace), ((Pₓ r) ((M r) x)) ((M r) y) = ((Pᵧ r) x) y) →\n      (α r) ((D0.Geometry.principalFrameColumnMatrix F L).mulVec (Pi.single r 1)) = 1 →\n        D0.Geometry.archiveJuliaQueryNullMetricCovector (Pₓ r)\n              (D0.Geometry.principalFrameObservedQueryVector (D0.Geometry.principalFrameJuliaQueryFamily F L M) r)\n              (D0.Geometry.principalFrameJuliaQueryFamily F L M r) (α r) ≠\n            0 →\n          0 <\n              1 +\n                ((Pₓ r)\n                      (D0.Geometry.principalFrameObservedQueryVector (D0.Geometry.principalFrameJuliaQueryFamily F L M)\n                        r))\n                    (D0.Geometry.principalFrameObservedQueryVector (D0.Geometry.principalFrameJuliaQueryFamily F L M)\n                      r) *\n                  (α r)\n                    ((M r)\n                      (D0.Geometry.archiveJuliaQueryNullCanonicalWitness (Pₓ r)\n                        (D0.Geometry.principalFrameObservedQueryVector\n                          (D0.Geometry.principalFrameJuliaQueryFamily F L M) r)\n                        (D0.Geometry.principalFrameJuliaQueryFamily F L M r) (α r))) →\n            D0.Geometry.principalFrameObservedNullQueryFrameReadout Pₓ Pᵧ\n                (D0.Geometry.principalFrameJuliaQueryFamily F L M) α r =\n              ⇑(M r)",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.A4DJuliaPrincipalFrameRecovery",
+      "name": "D0.Geometry.principalFrameJuliaQueryFamily_open_chart_link_recovery",
+      "proof_dependencies": [
+        "D0.Dyad",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.ArchiveJuliaQueryOperator",
+        "D0.Geometry.ArchiveRoleBilinear",
+        "D0.Geometry.ArchiveRoleBilinear._proof_1",
+        "D0.Geometry.RoleSpace",
+        "D0.Geometry.archiveJuliaNullEuclideanWitness",
+        "D0.Geometry.archiveJuliaNullEuclideanWitness_normalized",
+        "D0.Geometry.archiveJuliaQueryNullCanonicalWitness",
+        "D0.Geometry.archiveJuliaQueryNullMetricCovector",
+        "D0.Geometry.archiveJuliaQueryNullRecoveredFrame_eq",
+        "D0.Geometry.archiveJuliaRaisingQuery",
+        "D0.Geometry.principalFrameColumnMatrix",
+        "D0.Geometry.principalFrameJuliaQueryFamily",
+        "D0.Geometry.principalFrameJuliaQueryFamily_eq_model",
+        "D0.Geometry.principalFrameObservedNullQueryFrameReadout",
+        "D0.Geometry.principalFrameObservedQueryVector",
+        "D0.Geometry.principalFrameObservedQueryVector_eq",
+        "D0.Role",
+        "DFinsupp.instEquivLikeLinearEquiv",
+        "DFunLike.coe",
+        "Eq",
+        "Eq.mp",
+        "Eq.mpr",
+        "Eq.refl",
+        "Eq.trans",
+        "EquivLike.toFunLike",
+        "Fin.fintype",
+        "Function.hasSMul",
+        "HAdd.hAdd",
+        "HMul.hMul",
+        "HSMul.hSMul",
+        "LT.lt",
+        "LinearEquiv",
+        "LinearMap",
+        "LinearMap.addCommMonoid",
+        "LinearMap.instFunLike",
+        "LinearMap.instZero",
+        "LinearMap.module",
+        "Matrix",
+        "Matrix.col",
+        "Matrix.mulVec",
+        "Matrix.mulVec_single",
+        "Module.Dual",
+        "Monoid.toOppositeMulAction",
+        "MulOpposite",
+        "MulOpposite.instMonoid",
+        "MulOpposite.instZero",
+        "MulOpposite.op",
+        "MulZeroClass.toOppositeSMulWithZero",
+        "MulZeroClass.toZero",
+        "Nat",
+        "Ne",
+        "NonAssocSemiring.toNonUnitalNonAssocSemiring",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "NonUnitalNonAssocSemiring.toMulZeroClass",
+        "NonUnitalNormedCommRing.toNonUnitalCommRing",
+        "NormedCommRing.toNonUnitalNormedCommRing",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "Pi.mulAction",
+        "Pi.single",
+        "Real",
+        "Real.instAdd",
+        "Real.instAddCommMonoid",
+        "Real.instLT",
+        "Real.instMonoid",
+        "Real.instMul",
+        "Real.instOne",
+        "Real.instZero",
+        "Real.normedCommRing",
+        "Real.semiring",
+        "RingHom.id",
+        "RingHomInvPair.ids",
+        "SMulWithZero.toSMulZeroClass",
+        "SMulZeroClass.toSMul",
+        "Semiring.toModule",
+        "Semiring.toNonAssocSemiring",
+        "Trans.trans",
+        "Zero.toOfNat0",
+        "congrArg",
+        "congrFun'",
+        "id",
+        "instDecidableEqFin",
+        "instDecidableEqProd",
+        "instFintypeProd",
+        "instHAdd",
+        "instHMul",
+        "instHSMul",
+        "instOfNatNat",
+        "instTransEq",
+        "one_smul"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Dyad",
+        "D0.Geometry.ArchiveRoleBilinear",
+        "D0.Geometry.ArchiveRoleBilinear._proof_1",
+        "D0.Geometry.RoleSpace",
+        "D0.Geometry.archiveJuliaQueryNullCanonicalWitness",
+        "D0.Geometry.archiveJuliaQueryNullMetricCovector",
+        "D0.Geometry.principalFrameColumnMatrix",
+        "D0.Geometry.principalFrameJuliaQueryFamily",
+        "D0.Geometry.principalFrameObservedNullQueryFrameReadout",
+        "D0.Geometry.principalFrameObservedQueryVector",
+        "D0.Role",
+        "DFinsupp.instEquivLikeLinearEquiv",
+        "DFunLike.coe",
+        "Eq",
+        "EquivLike.toFunLike",
+        "Fin.fintype",
+        "HAdd.hAdd",
+        "HMul.hMul",
+        "LT.lt",
+        "LinearEquiv",
+        "LinearMap",
+        "LinearMap.addCommMonoid",
+        "LinearMap.instFunLike",
+        "LinearMap.instZero",
+        "LinearMap.module",
+        "Matrix",
+        "Matrix.mulVec",
+        "Module.Dual",
+        "Nat",
+        "Ne",
+        "NonAssocSemiring.toNonUnitalNonAssocSemiring",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "NonUnitalNormedCommRing.toNonUnitalCommRing",
+        "NormedCommRing.toNonUnitalNormedCommRing",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "Pi.single",
+        "Real",
+        "Real.instAdd",
+        "Real.instAddCommMonoid",
+        "Real.instLT",
+        "Real.instMul",
+        "Real.instOne",
+        "Real.instZero",
+        "Real.normedCommRing",
+        "Real.semiring",
+        "RingHom.id",
+        "RingHomInvPair.ids",
+        "Semiring.toModule",
+        "Semiring.toNonAssocSemiring",
+        "Zero.toOfNat0",
+        "instDecidableEqFin",
+        "instDecidableEqProd",
+        "instFintypeProd",
+        "instHAdd",
+        "instHMul",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/A4DJuliaPrincipalFrameRecovery.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
         "propext"
       ],
       "binders": [
@@ -2207,21 +2513,21 @@
         "declaration": {
           "end": {
             "column": 67,
-            "line": 164
+            "line": 169
           },
           "start": {
             "column": 0,
-            "line": 153
+            "line": 157
           }
         },
         "selection": {
           "end": {
             "column": 47,
-            "line": 156
+            "line": 161
           },
           "start": {
             "column": 4,
-            "line": 156
+            "line": 161
           }
         }
       },
@@ -2406,21 +2712,21 @@
         "declaration": {
           "end": {
             "column": 67,
-            "line": 132
+            "line": 136
           },
           "start": {
             "column": 0,
-            "line": 118
+            "line": 122
           }
         },
         "selection": {
           "end": {
             "column": 50,
-            "line": 120
+            "line": 124
           },
           "start": {
             "column": 8,
-            "line": 120
+            "line": 124
           }
         }
       },
@@ -2555,21 +2861,21 @@
         "declaration": {
           "end": {
             "column": 47,
-            "line": 50
+            "line": 54
           },
           "start": {
             "column": 0,
-            "line": 45
+            "line": 49
           }
         },
         "selection": {
           "end": {
             "column": 43,
-            "line": 47
+            "line": 51
           },
           "start": {
             "column": 4,
-            "line": 47
+            "line": 51
           }
         }
       },
@@ -2737,21 +3043,21 @@
         "declaration": {
           "end": {
             "column": 42,
-            "line": 90
+            "line": 94
           },
           "start": {
             "column": 0,
-            "line": 77
+            "line": 81
           }
         },
         "selection": {
           "end": {
             "column": 50,
-            "line": 80
+            "line": 84
           },
           "start": {
             "column": 8,
-            "line": 80
+            "line": 84
           }
         }
       },
@@ -2942,21 +3248,21 @@
         "declaration": {
           "end": {
             "column": 61,
-            "line": 151
+            "line": 155
           },
           "start": {
             "column": 0,
-            "line": 134
+            "line": 138
           }
         },
         "selection": {
           "end": {
             "column": 51,
-            "line": 136
+            "line": 140
           },
           "start": {
             "column": 8,
-            "line": 136
+            "line": 140
           }
         }
       },
@@ -3099,21 +3405,21 @@
         "declaration": {
           "end": {
             "column": 25,
-            "line": 56
+            "line": 60
           },
           "start": {
             "column": 0,
-            "line": 52
+            "line": 56
           }
         },
         "selection": {
           "end": {
             "column": 37,
-            "line": 53
+            "line": 57
           },
           "start": {
             "column": 4,
-            "line": 53
+            "line": 57
           }
         }
       },
@@ -3205,21 +3511,21 @@
         "declaration": {
           "end": {
             "column": 64,
-            "line": 104
+            "line": 108
           },
           "start": {
             "column": 0,
-            "line": 92
+            "line": 96
           }
         },
         "selection": {
           "end": {
             "column": 44,
-            "line": 94
+            "line": 98
           },
           "start": {
             "column": 8,
-            "line": 94
+            "line": 98
           }
         }
       },

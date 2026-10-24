@@ -18,18 +18,22 @@ the hypothesis that each operator equals the owned raising query for the
 corresponding principal-frame column and a linear equivalence `M_r`. The
 companion constructor `principalFrameJuliaQueryFamily` supplies that family
 directly, so its matrix, coframe, and metric corollaries need no external
-operator-representation premise. On the source's null chart, a composed
-readout also recovers the selected role's endpoint map from its complete
-query using the existing Eq. (28) inverse and its canonical witness.
+operator-representation premise. A composed readout also recovers the selected
+role's endpoint map from its complete query. The existing Eq. (28) inverse is
+now composed on its full open chart, with the observed projected covector and
+positive branch explicit; the null specialization derives those conditions
+from nondegeneracy and the canonical witness.
 
 This is finite matrix/query composition only. The module does not derive the
 raising-query representation hypothesis for an arbitrary externally supplied
 family, constrain `M_r` to the source's proper-Lorentz endpoint family, or
-prove smoothness of the full inverse and `D R D Φ = I`. The null-chart result
-retains symmetric nondegenerate endpoint forms, their isometry, a normalized
-covector, and one selected nonzero null shift. Physical observer/clock recovery, the
-all-jet and variational pullback (31), native price/source selection, and
-physical execution remain open.
+prove smoothness of the full inverse and `D R D Φ = I`. The open-chart result
+retains symmetric endpoint forms, their isometry, a normalized covector, a
+nonzero projected metric covector, and the positive square-root branch. The
+null specialization additionally retains nondegeneracy and one selected
+nonzero null shift. Physical observer/clock recovery, the non-null gamma
+formula (27), the all-jet and variational pullback (31), native price/source
+selection, and physical execution remain open.
 -/
 
 namespace D0.Geometry
@@ -150,9 +154,10 @@ theorem principalFrameObservedQueryMetric_invariant
   rw [principalFrameObservedQueryCoframeRecovery F e Λ M X hQuery hFe hΛ]
   exact principalFrame_metric_invariant_of_roleLorentz e Λ hΛ
 
-/-- The observed null-chart decoder for each complete role query. The vector
-input is read from that same operator family, so the decoder does not receive
-an independent coframe column. -/
+/-- The Eq. (28) open-chart decoder for each complete role query. The retained
+`Null` name marks its original use on the null locus; the decoder also applies
+when the projected metric covector and positive-branch conditions hold away
+from that locus. The vector is read from the same operator family. -/
 def principalFrameObservedNullQueryFrameReadout
     (Pₓ Pᵧ : Role → ArchiveRoleBilinear)
     (X : Role → ArchiveJuliaQueryOperator)
@@ -163,11 +168,74 @@ def principalFrameObservedNullQueryFrameReadout
       (archiveJuliaQueryNullCanonicalWitness
         (Pₓ r) (principalFrameObservedQueryVector X r) (X r) (α r))
 
-/-- A complete finite-carrier query recovers the selected endpoint map on the
-source's null chart. The theorem applies to any chosen role and does not
-require the other three shifts to be null. It retains the endpoint-form
-assumptions from Eq. (28); the canonical witness removes the separate
-normalization and branch inputs. -/
+/-- Query-derived endpoint recovery on the full Eq. (28) open chart. The shift
+need not be null: the actual projected metric covector must be nonzero and the
+square-root branch must remain positive. The canonical witness supplies the
+normalization from that same observed covector. -/
+theorem principalFrameJuliaQueryFamily_open_chart_link_recovery
+    (F L : Matrix Role Role ℝ)
+    (M : Role → RoleSpace ≃ₗ[ℝ] RoleSpace)
+    (Pₓ Pᵧ : Role → ArchiveRoleBilinear)
+    (α : Role → Module.Dual ℝ RoleSpace)
+    (r : Role)
+    (hSymm : ∀ x y, Pₓ r x y = Pₓ r y x)
+    (hIso : ∀ x y, Pₓ r ((M r) x) ((M r) y) = Pᵧ r x y)
+    (hα : α r ((principalFrameColumnMatrix F L).mulVec
+      (Pi.single r (1 : ℝ))) = 1)
+    (hCovector : archiveJuliaQueryNullMetricCovector (Pₓ r)
+      (principalFrameObservedQueryVector
+        (principalFrameJuliaQueryFamily F L M) r)
+      (principalFrameJuliaQueryFamily F L M r) (α r) ≠ 0)
+    (hBranch : 0 < 1 +
+      Pₓ r
+        (principalFrameObservedQueryVector
+          (principalFrameJuliaQueryFamily F L M) r)
+        (principalFrameObservedQueryVector
+          (principalFrameJuliaQueryFamily F L M) r) *
+        α r ((M r) (archiveJuliaQueryNullCanonicalWitness (Pₓ r)
+          (principalFrameObservedQueryVector
+            (principalFrameJuliaQueryFamily F L M) r)
+          (principalFrameJuliaQueryFamily F L M r) (α r)))) :
+    principalFrameObservedNullQueryFrameReadout Pₓ Pᵧ
+      (principalFrameJuliaQueryFamily F L M) α r = M r := by
+  let X := principalFrameJuliaQueryFamily F L M
+  let u := (principalFrameColumnMatrix F L).mulVec (Pi.single r (1 : ℝ))
+  have hColumn : principalFrameObservedQueryVector X r = u := by
+    exact principalFrameObservedQueryVector_eq F L M X
+      (principalFrameJuliaQueryFamily_eq_model F L M) r
+  have hQuery : X r = archiveJuliaRaisingQuery
+      (principalFrameObservedQueryVector X r) (M r) := by
+    calc
+      X r = archiveJuliaRaisingQuery u (M r) := by
+        simpa [X, u] using principalFrameJuliaQueryFamily_eq_model F L M r
+      _ = archiveJuliaRaisingQuery
+          (principalFrameObservedQueryVector X r) (M r) := by rw [hColumn]
+  have hαu : α r (principalFrameObservedQueryVector X r) = 1 := by
+    rw [hColumn]
+    exact hα
+  have hCovector' : archiveJuliaQueryNullMetricCovector (Pₓ r)
+      (principalFrameObservedQueryVector X r) (X r) (α r) ≠ 0 := by
+    simpa [X] using hCovector
+  let z := archiveJuliaQueryNullCanonicalWitness (Pₓ r)
+    (principalFrameObservedQueryVector X r) (X r) (α r)
+  have hWitness : archiveJuliaQueryNullMetricCovector (Pₓ r)
+      (principalFrameObservedQueryVector X r) (X r) (α r) z = 1 := by
+    have h := archiveJuliaNullEuclideanWitness_normalized
+      (archiveJuliaQueryNullMetricCovector (Pₓ r)
+        (principalFrameObservedQueryVector X r) (X r) (α r)) hCovector'
+    simpa [z, archiveJuliaQueryNullCanonicalWitness] using h
+  have hBranch' : 0 < 1 +
+      (Pₓ r (principalFrameObservedQueryVector X r)
+        (principalFrameObservedQueryVector X r)) * α r ((M r) z) := by
+    simpa [X, z, archiveJuliaQueryNullCanonicalWitness] using hBranch
+  simpa [principalFrameObservedNullQueryFrameReadout, X] using
+    (archiveJuliaQueryNullRecoveredFrame_eq
+      (Pₓ r) (Pᵧ r) (principalFrameObservedQueryVector X r) z
+      (M r) (α r) (X r) hQuery hαu hSymm hIso hWitness hBranch')
+
+/-- Null-chart specialization of the full Eq. (28) open-chart recovery. A
+complete finite-carrier query recovers the selected endpoint map for any
+chosen role; nullness sets the square-root branch to its positive value. -/
 theorem principalFrameJuliaQueryFamily_null_link_recovery
     (F L : Matrix Role Role ℝ)
     (M : Role → RoleSpace ≃ₗ[ℝ] RoleSpace)
@@ -191,24 +259,30 @@ theorem principalFrameJuliaQueryFamily_null_link_recovery
   have hColumn : principalFrameObservedQueryVector X r = u := by
     exact principalFrameObservedQueryVector_eq F L M X
       (principalFrameJuliaQueryFamily_eq_model F L M) r
-  have hX : X r = archiveJuliaRaisingQuery
-      (principalFrameObservedQueryVector X r) (M r) := by
-    calc
-      X r = archiveJuliaRaisingQuery u (M r) := by
-        simpa [X, u] using principalFrameJuliaQueryFamily_eq_model F L M r
-      _ = archiveJuliaRaisingQuery
-          (principalFrameObservedQueryVector X r) (M r) := by rw [hColumn]
-  have hαu : α r (principalFrameObservedQueryVector X r) = 1 := by
-    simpa [hColumn, u] using hα
-  have hu' : principalFrameObservedQueryVector X r ≠ 0 := by
-    simpa [hColumn, u] using hu
-  have hNull' : Pₓ r (principalFrameObservedQueryVector X r)
-      (principalFrameObservedQueryVector X r) = 0 := by
-    simpa [hColumn, u] using hNull
-  simpa [principalFrameObservedNullQueryFrameReadout, X] using
-    archiveJuliaQueryNullRecoveredFrame_eq_of_null
-      (Pₓ r) (Pᵧ r) (principalFrameObservedQueryVector X r) (M r)
-      (α r) (X r) hX hαu hSymm hNondegenerate hIso hu' hNull'
+  have hQuery : X r = archiveJuliaRaisingQuery u (M r) := by
+    simpa [X, u] using principalFrameJuliaQueryFamily_eq_model F L M r
+  have hBlock : archiveJuliaQueryNullBlock (X r) (α r) =
+      archiveJuliaNullBlock u (M r) (α r) := by
+    rw [hQuery]
+    exact archiveJuliaQueryNullBlock_readout u (M r) (α r) hα
+  have hObserved : archiveJuliaQueryNullMetricCovector (Pₓ r)
+      (principalFrameObservedQueryVector X r) (X r) (α r) =
+        (Pₓ r u).comp (archiveJuliaNullBlock u (M r) (α r)) := by
+    simp [archiveJuliaQueryNullMetricCovector, hColumn, hBlock]
+  have hCovector : archiveJuliaQueryNullMetricCovector (Pₓ r)
+      (principalFrameObservedQueryVector X r) (X r) (α r) ≠ 0 := by
+    rw [hObserved]
+    exact archiveJuliaNullBlock_covector_ne_zero (Pₓ r) u (M r) (α r)
+      hNondegenerate hu hNull
+  have hBranch : 0 < 1 +
+      (Pₓ r (principalFrameObservedQueryVector X r)
+        (principalFrameObservedQueryVector X r)) * α r ((M r)
+          (archiveJuliaQueryNullCanonicalWitness (Pₓ r)
+            (principalFrameObservedQueryVector X r) (X r) (α r))) := by
+    rw [hColumn, hNull]
+    norm_num
+  exact principalFrameJuliaQueryFamily_open_chart_link_recovery
+    F L M Pₓ Pᵧ α r hSymm hIso hα hCovector hBranch
 
 /-- Coframe recovery specializes to the constructed family directly. -/
 theorem principalFrameJuliaQueryFamily_coframeRecovery
