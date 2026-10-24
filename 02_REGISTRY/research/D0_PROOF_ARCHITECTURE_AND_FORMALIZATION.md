@@ -1456,6 +1456,13 @@ and types are preserved for the affine module and downstream imports. This
 lets the faithful frame theorem live with its actual representation, rather
 than depending on the higher affine construction.
 
+The existing `formal_support.csv` rows for both modules now also reference this
+primary artifact while retaining their original research-owner references.
+This makes the proof slice discoverable through the existing support map; it
+creates no claim, owner, application-acceptance, or C0-status row.
+The updated support-map SHA-256 is
+`ddb09492ec2323a5bda54816d40bd08951c962ed3188da2c755a1c155e78e183`.
+
 Scope is exact: this is faithfulness of the algebraic exterior and nilpotent
 affine representations on the existing four-role, 16-state carrier. It does
 not prove that the single raising query `C†(u)ρ(M)` recovers `M` (that map has
@@ -1491,7 +1498,11 @@ Source SHA-256 values are `ArchiveExteriorFrameLift.lean`
 `A4DNilpotentAffineMatterLift.lean`
 `61b434d7e4cfba4a41b7c2b0cb436ff1e9fd1c62b21412a61d5632c4aed2486b`.
 `formalization_debt_audit.py --check` passed with the unchanged three baseline
-findings, and `check_claim_map_coverage.py` passed. GitHub CI for the pushed PR
-head `0307b2429ec3b36be1e5c9a7ebab1878e777d1e8` passed `guards` (run
-`40121538756`) and `lean-build` (run `40121538730`). The PR remains OPEN/DRAFT.
-C0 remains unfrozen and independently unaccepted.
+findings, `check_claim_map_coverage.py` passed, and
+`generate_lean_views.py --check` passed with no stale generated views. The
+focused proof-architecture suite passed 35/35 when invoked as the `tools` test
+module. GitHub CI for the code head `0307b2429ec3b36be1e5c9a7ebab1878e777d1e8`
+passed `guards` (run `40121538756`) and `lean-build` (run `40121538730`); a
+subsequent documentation/metadata-only receipt commit leaves that code
+unchanged. The PR remains OPEN/DRAFT. C0 remains unfrozen and independently
+unaccepted.
