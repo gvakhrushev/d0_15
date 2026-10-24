@@ -7476,3 +7476,96 @@ retain additional existing scope explicitly. No new Lean/module/status.
 Native_valuation_map also ACCEPTs the final 12531-byte pin. Targeted
 work/protocol validation and diff whitespace check PASS. No unchanged
 full128, broad mathematical certificate suite or Lean replay was run.
+
+
+### 24 October: original source-X removes the whole raw inverse debt; stationary Golden tower
+
+Phase: native realization / global GR composition, same PR334 owner and
+constitutive/native-programme-v1. Source publication
+4c890fd428fcd4c5d140a65fcc499f9100359208. The primary residual owner
+section7j consumes Book03 sections03.26.1-2, OrderMemoryControl and
+SourcePortPreparation; it applies the already owned inverse to the full
+raw source programme, rather than reproving a local gate identity. It also
+consumes the composed-feedback6.6 refinement balance at the joint point
+of section7i and the Books00-01 Boolean/clock13.2 finite-section maps.
+
+First exact parent substitution: on the inherited active port/Q8 spin4
+interface, use X=diag(I4,L_i), X^2=Z and ZGZ=G^dagger to replace every
+inverse G by XXGXX. Reverse the entire raw G/CX encoder, including all
+coherent failure/scratch/preparation columns. This differs from the owned
+AFTER-BANK logical echo, which leaves measured factory histories outside
+its reversal. Same spin is reused; intermediate couplings are paid and
+retained. Dirty work/port routing needs one SWAP pair around the whole
+five-call block. Actual inventory for V^dagger W_K V is
+ N_G=2(n_G+m), N_X=4(n_G+m), N_CX=2n_CX+2^(K+1)-2;
+when all work rotations are routed add12n_G CX. Add actual key, balanced
+copy and closing stages and evaluate the entire heat at the resulting N.
+Literal RawZone12 routing and regular8 central-even extension are NOT
+silently substituted for the active port/spin4 interface.
+
+Balanced recording preserves the complete fixed-middle spectrum. Its
+literal source is H_ref(N,D_full)+j_K(gamma Q), with epsilon_inverse=0
+at a finite paid clock. Same-clock/common-gamma catalogue differences
+are a strictly positive divided difference times Q_b-Q_a; genuine smooth
+maps have source j'_K gamma DQ. This removes the inverse term from the
+existing source-normalized error budget on this X-interface. Forward,
+Bernstein, stencil and other genuine stack sources remain. One-copy
+recording retains its different heat. Selective source-X actuation in the
+same frame remains the owned physical premise; the narrower G/CX route
+and its earlier theorem are preserved. No approximate report becomes an
+exact native Einstein root.
+
+Second exact parent substitution: section7i has DH=0 on its conjugacy
+chart and DJ=0 at its constrained joint root. Therefore the actual raw
+Golden cylinder law DB_d=DH+2^d DJ gives zero at EVERY finite address
+depth on the lifted field, encoder-effect-fibre and pure-key directions,
+with generated-prefix adjoints transported. The real P tensor I2 rank,
+logdet multiplicity and heat constant remain. Fixed orthogonal padding,
+when necessary, retains Z_idle and gives DH#=Z/(Z+Z_idle)DH=0 before
+replication. This supplies a nonempty stationary cofinal operator/test
+tower. It does not identify address depth with spatial h-refinement or
+supply a faithful native path-algebra extension by padding alone.
+
+Book02's original variational contract permits declared finite differences
+OR ordinary derivatives of smooth finite-dimensional matrix families.
+Accordingly exact positive-word selection at every smooth coefficient is
+not a universal prerequisite for this operator-family theorem. The prior
+implementation requirement is restricted to its actual word route. The
+remaining common physical application is explicit: same-task self-return
+corner/Gram, same native D/path algebra and geometric interpretation, and
+compatible spatial refinement with all actual independent source rows.
+The current fixed-site clock seminorm remains code-independent even after
+exact inverse replacement; its old scoped mismatch is not ignored.
+A nonempty faithful physical realization is the first bridge; compulsory
+universal selection is stronger. GR_closed/raw216 and statuses unchanged.
+
+Carrier/norm/source: existing full raw work, active port, original spin4
+and actual protected factors/bank; real full trace and true paid clock;
+j'_K gamma gain with the original all42 field/material pullback. Write
+paths: existing primary residual owner and this brief only.
+
+Smallest decisive check: inline exact Golden arithmetic modulo
+ t^4+t^2-1, with G=[[t,-t^2],[t^2,t]] and the original real quaternion
+L_i. For V=G_work^2 and K=1, the actual routed 16-column word has
+6G+12X+26CX=44 primitive stages. It agrees on ALL columns with V^T M0 V,
+including dirty port and arbitrary spin. The 64-column balanced final
+work/port bank retains its true two copies (four further CX stages) and
+has the exact protected return amplitude 1-d_K x. Exact orthogonality,
+Golden projection/intertwining and rank doubling also pass. The stationary
+refinement formula vanishes for h=f=0; its hostile h=-f nonzero control
+fails at every tested positive depth as predicted by the general law.
+Exit0, empty stderr. This tests the new application, not a new primitive
+certificate or a replay of unchanged all42 mathematics.
+
+Final section7j pin, heading through before8 INCLUDING trailing LF:
+12663 UTF-8 bytes; SHA256
+0aa3b696a4d2a74875e30c53208ce37bed2043879c5c5bb1db59576cb8e294e0.
+Universal_parent_map independently ACCEPTs the final pin including the
+explicit padding formula. Native_continuation_map and native_valuation_map
+ACCEPT the preceding 12336-byte pin with the identical mathematics and
+physical boundaries; the only addition spells out the retained padding
+heat/source/terminal extension. No new task, standalone certificate or
+Lean module is created.
+
+Targeted work/protocol validation and diff whitespace check PASS. No
+unchanged full128, broad certificate or Lean replay was run.

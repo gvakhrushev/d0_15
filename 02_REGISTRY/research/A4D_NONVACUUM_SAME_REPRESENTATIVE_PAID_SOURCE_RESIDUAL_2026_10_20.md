@@ -2059,6 +2059,220 @@ preparation-control legs. No compulsory task, code selection, new physical
 constraint, universal GR class or raw216 closure is asserted.
 
 
+## 7j. Consume the original source inverse and complete the stationary address tower
+
+24 October 2026. Same owner, input4c890fd4. The local inverse used below
+is ALREADY proved in the original books. The new application is to the
+entire raw encoder and literal recorded Book source of sections7e-i,
+including every unsuccessful column. Separately, the existing Golden
+refinement law now applies to the joint stationary point of section7i.
+Neither application selects an Einstein action by assigning a new price.
+
+### Use the original variational contract at its actual breadth
+
+[Book02, immediately before section02.CVFT.v5](../../01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md#02cvftv5-refined-feedback-bounds-and-compressed-pole-discipline)
+explicitly permits either a declared finite difference on a finite matrix
+family OR ordinary differentiation of a smooth finite-dimensional matrix
+family. Book01's six finite-section obligations likewise concern operators
+and tests. Thus an exact positive-G word for every smooth coefficient is
+NOT a universal prerequisite for the operator-family stationarity theorem
+of section7i. That stronger implementation question belongs to the actual
+word route. Its still-open application must not be reimposed as a new
+axiom of the books or confused with an unproved smooth word selector.
+
+This correction does not turn any operator model into the physical native
+scene. It keeps the actual return/cut, path-algebra/geometry and full
+source/refinement identifications at the end of this section explicit.
+
+### The owned local source action reverses every raw letter exactly
+
+Consume [Book03 sections03.26.1-2](../../01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md#03261-forward-only-order-comparison-with-an-internal-stage-register),
+[OrderMemoryControl.reverse_mixer_from_forward/local_i_squared](../../03_FORMALIZATION/D0/Representation/OrderMemoryControl.lean),
+and [SourcePortPreparation.local_gate_from_generator/coupled_square](../../03_FORMALIZATION/D0/Representation/SourcePortPreparation.lean).
+On the SAME active port times original Q8 spin4 carrier they give
+
+    X=diag(I_4,L_i),   X^2=Z=diag(I_4,-I_4),
+    Z G Z=G^dagger,
+    G^dagger = X X G X X.                              (94)
+
+No inverse primitive, fitted rotation, known spin eigenstate or spin-bit
+addressing is introduced. This uses the declared selective source-local
+X in the SAME port frame as G. Its physical availability remains the
+explicit implementation premise retained by Book03 and its Lean owner;
+it is not inferred merely from closure of an abstract matrix algebra.
+
+On section7e's two-cell carrier use the existing spin of the physical
+port cell. For a rotation on a work bit q, the inherited routing gives
+
+    SWAP(q,port); X X G_port X X; SWAP(q,port).          (95)
+
+The two swaps are SIX CX calls around the WHOLE five-call inverse block.
+The block equals G_q^dagger tensor I on ALL columns, with arbitrary dirty
+port, arbitrary spin and past entanglement. Intermediate X calls really
+couple the spin to the port; only the completed block restores its identity
+action. Reuse that SAME spin for every block. There is no new spin factor,
+reset, postselection or discarded complement. Intermediate tests are those
+of this actual new schedule, not asserted identical to a different history.
+
+The full RawZone source operator instead lives on scene3 times spin4.
+Its neutral sector is also present: coupled_square is reversal tensor I
+on all12 columns and reversal preserves that sector. A literal RawZone
+application must retain its actual neutral modes and prove its routing
+extension. Do not count RawZone as a new independent port factor beside
+an already counted whole scene. Likewise (94) is not the same equation
+on an unrestricted regular8 path-memory module: its central-even sector
+has R_i^2=+I. The present application stays on the inherited active
+port/spin4 interface; other carriers require their actual map.
+
+This changes the input of the current inverse problem. The older
+[paid logical echo](sources/d0_paid_writer_echo_source_2026-10-22/PROOF.md#1-separate-the-logical-word-from-its-preparation-and-factory-histories)
+reversed an AFTER-BANK logical word with fresh factories. It explicitly
+left preparation and measured factory tapes outside that reversal. Here
+reverse the LITERAL complete raw G/CX list, replace each negative G by
+(94), and use CX^dagger=CX. This is an application of the owned inverse
+to every column, including coherent raw-failure and scratch columns.
+No already measured/dephased transcript is thereby erased or reversed.
+
+### The whole paid Book source is exact at a finite clock
+
+Let V have n_G positive G and n_CX CX letters, as in section7e, and let
+m=2^(K-1). The signed middle W_K has m positive and m negative G letters.
+For the COMPLETE echo V^dagger W_K V the new literal inventory is
+
+    N_G=2(n_G+m),   N_X=4(n_G+m),
+    N_CX=2 n_CX+2^(K+1)-2.                            (96)
+
+If all work rotations are routed through the one X-equipped port, add
+12 n_G CX: there are 2 n_G routed work rotations, each with one SWAP
+pair. Middle rotations already use the physical port. Add the actual
+key, balanced-copy and closing/idle stages of the chosen complete
+schedule; do not insert an uncharged idle or identify its new N with
+an old clock. General raw encoders/key preparations are covered by
+reversing their full literal list in the same way.
+
+Its endpoint is now EXACTLY U=V^dagger M0 V. In (57)-(59), the inverse
+error is zero, rather than small along a positive-power subsequence.
+Append the actual balanced recording C(U tensor I_bank)C of section7g.
+Rebuild all transported prefix cuts with the actual X/routing letters.
+The existing whole-clock spectral identity at this NEW finite N gives
+
+    B_native=H_ref(N,D_full)+j_K(gamma Q),
+    epsilon_inverse=0.                               (97)
+
+Every failed work column and native spin/past/bank mode remains in
+H_ref. No subtraction or normalization changes the physical price.
+The protected rank in j_K is the original actual rank: the reused spin
+in (94) does not multiply it. The generated prefix/source adjoint of
+paid-writer10.5 applies to this actual word, including the intermediate
+spin interactions and all new clock occupations.
+
+Use BALANCED recording in this application. The ONE-copy section7f
+word C(U tensor I_bank) is generally not isospectral to U tensor I;
+its additional heat source is not cured by exact inverse access.
+
+For a finite common catalogue with its real common N, gamma and middle,
+two actual field-code entries obey the exact finite-difference identity
+
+    B_b-B_a=j_K(gamma Q_b)-j_K(gamma Q_a)
+           =a_ab (Q_b-Q_a),   a_ab>0.                 (98)
+
+For Q_b!=Q_a use the displayed divided difference; at equality define
+a_ab=gamma j'_K(gamma Q_a)>0. Positivity follows from the actual
+0<=Q<=q_max<1/2 chart and section7e's 0<d_K<2. Thus zero/nonzero
+report differences are preserved without an inverse-precision limit.
+For genuinely supplied smooth control maps the derivative is exactly
+j'_K(gamma Q)gamma DQ. If gamma, N or any other specification moves,
+its genuine source remains as in (86); common-cost hypotheses may not
+be dropped when applying (98).
+
+The inverse part of the source-normalized debts in (63)/(82) therefore
+vanishes identically on this X-interface. Forward resource/row accuracy,
+Bernstein first-jet error, actual field-key stencil error and any genuine
+other stack contribution remain. In particular the CURRENT finite
+Bernstein programme is not silently replaced by the ORIGINAL exact report,
+and (97) does not assert an exact Einstein root for that approximation.
+The narrower G/CX-only route retains its earlier positive-power theorem;
+(94) does not prove the extra selective source control is mandatory there.
+
+### Consume the complete Golden tower, including its unnormalized price
+
+Apply the already owned [Golden-cylinder construction and whole-action law](A4D_NATIVE_COMPOSED_FEEDBACK_DYNAMICS.md#66-whole-bootstrap-joint-thermal-source-and-refinement-balance)
+and the [Books00-01 finite-section application](A4D_ORIGINAL_BOOK_BOOLEAN_TRACE_CLOCK_AND_GLOBAL_EINSTEIN_2026_10_22.md#132-books00-01-application-admissible-test-sections-and-an-actual-return-boundary)
+to the COMPLETE stationary operator family of section7i. At fixed physical
+mesh, iterate chi=(sqrt(p),p), J=I tensor |chi>, pi=J^dagger and
+L(A)=A tensor I_2 for all operators and outcome projectors. Retain the
+literal P tensor I_2 and replicated heat spectrum. After d address levels,
+
+    H_d=H_0+d beta^(-1) log 2,
+    J_d=2^d J_0,
+    D B_d=D H_0+2^d D J_0.                            (99)
+
+Section7i has D H_0=0 on its whole fixed-spectrum control chart and
+D J_0=0 at its primary stationary point on every declared field,
+encoder-fibre and pure-key direction. Consequently
+
+    D B_d=0 for EVERY finite d>=0                     (100)
+
+on those lifted directions, with the causal generated-state equations
+transported by the same maps. This is the missing application of the
+existing refinement-balance theorem, not a new scaling law. A root based
+only on cancellation D H_0=-D J_0 would NOT generally survive (99).
+
+The full-column projection/intertwining, positive response and complete
+terminal tests are exactly those of the owned cylinder extension. Together
+with the supplied internal coefficient data and single section they give
+a nonempty EXACT stationary cofinal finite-operator/test tower. Its starting
+binary depth depends on the actual complete carrier. Where needed, first
+use U#=U direct_sum I, P#=P direct_sum P_idle and
+Delta#=Delta direct_sum Delta_idle, with fixed idle data and a complete
+fixed extension of the terminal outcomes. Then F#=F direct_sum 0, J#=J,
+Z#=Z+Z_idle and D H#=Z/(Z+Z_idle) D H=0. Retain that absolute padded
+price as the starting H_0 in (99). The old prepared inputs/tests embed
+isometrically. This finite operator/test padding does not itself extend
+the native faithful path-algebra representation. No descent to arbitrary
+coarser stages, new physical control directions, or extension of the exact
+report to the approximate Bernstein branch is asserted.
+
+The rank/feedback multiplicity is real. P tensor I_2 has twice the rank;
+it is not the rank-r P tensor |chi><chi| preparation projector. The added
+heat constant and doubled determinant stay in the absolute action. On the
+corresponding lifted comparison the feedback source gain also multiplies
+by 2^d, so the properly normalized field-source comparison is unchanged.
+This address refinement is not yet the spatial h->0 refinement. Neither
+normalized Born readout nor exact address stationarity identifies those
+two maps or supplies their physical clock/record/oldRIGHT transport.
+
+### The next physical substitution is the native return and geometry map
+
+The published ideal joint roots and their admissible operator tower can
+now be consumed without asking again for a generic exact-word selector.
+On the explicit source-X implementation, whole raw inversion is also
+finite and exact. The remaining physical application has concrete data:
+
+* Identify the task's real self-return with the SAME input-family cut and
+  operator corner, preserving its Gram and all moving-source terms as in
+  Boolean/clock13.2(48). Correct completion alone does not mean blank return.
+  A transported current-state support has zero forward leakage; reusing
+  the prepared input as return reference is a separate identification.
+* Identify the SAME action's native scene/path-algebra distinguishability
+  operator and geometry. Book03 sections03.1.1-2 use the scene spectral
+  triple and Delta=D^2. The decoded coframe in a report is not by itself
+  the metric of that D. The existing paid-writer11.1 computes the current
+  fixed-site clock seminorm and shows its code-independent metric; that
+  scoped result survives the exact inverse substitution, whose common
+  primitive inventory likewise does not depend on the field code.
+* Supply the compatible spatial refinement and all actually independent
+  field/boundary/source rows on that common native family. A nonempty
+  faithful physical realization suffices for the first positive bridge;
+  compulsory universal GR selection retains its stronger hypotheses.
+
+These are the consumers of the new exact source/tower composition, not
+extra conditions invented for a convenient circuit. Arbitrary G/CX/X
+actuation, a sharp programme choice and a supplied decoder do not establish
+them. No new physical gate, cut, action, status or GR/raw216 promotion is
+introduced. The original results and their independent routes are preserved.
+
+
 ## 8. Reproduction
 
 Run from this directory:
