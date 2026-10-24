@@ -748,21 +748,25 @@ pending.
 `tools/proof_architecture.py crosswalk` now produces a read-only summary over all 54 assembly results;
 `crosswalk RESULT-ID` verifies each Lean evidence blob with Git, compares its exact bytes with the current
 source, and queries the corresponding owner module through the compiled `D0.All` environment. The
-declaration inventory reads each module's imported module data directly instead of scanning every
-constant in the full import. It reports elaborated types, binders, type dependencies, source ranges,
-declaration kind, and internal-name status. For exact claims.csv name-locator matches it also extracts
-proof dependencies and axiom footprints. Other co-located declarations are labeled as candidates and
-mark bulk-omitted proof details explicitly. Parent namespace candidates allow a source module locator to
-resolve a theorem declared in its enclosing namespace; they remain exact-name locators, not application
-edges.
+`crosswalk --all-current` mode enumerates the union of all verified current D0 owner modules in one
+compiled pass and returns a detailed row for every assembly result. Each output records the exact
+authority-source and Python-tool SHA-256 digests used to produce its candidate rows. The declaration
+inventory reads each module's imported module data directly instead of scanning every constant in the
+full import. It reports elaborated types, binders, type dependencies, source ranges, declaration kind,
+and internal-name status. For exact claims.csv name-locator matches it also extracts proof dependencies
+and axiom footprints. Other co-located declarations are labeled as candidates and mark bulk-omitted proof
+details explicitly. Parent namespace candidates allow a source module locator to resolve a theorem
+declared in its enclosing namespace; they remain exact-name locators, not application edges.
 
 In the current applications.json snapshot, all 13 pinned Lean evidence blobs verify against their
-recorded Git commit/path/SHA-256. Eleven working-tree files still match those pins; ten are direct
-`03_FORMALIZATION/D0` module sources across nine distinct modules. The two remaining pins are archived
-source-only references: the #334 cost-information certificate is not present at its pinned path in the
-current tree, and the future-MDL theorem file has changed since its recorded commit. They remain
-citation-only until a matching current source or another reviewed bridge is supplied. The other 45
-assembly results have no direct pinned Lean evidence and stay unresolved in this declaration crosswalk.
+recorded Git commit/path/SHA-256. Eleven working-tree files still match those pins: ten are direct
+`03_FORMALIZATION/D0` module sources across nine distinct modules, and one is the current research
+certificate `02_REGISTRY/research/certificates/a4d_native_retained_record_admission.lean`, outside the
+`D0.All` module tree. The two non-current D0 source pins are the missing #334 cost-information
+certificate and `D0.Foundation.EmpiricalTheoryFactorization.lean`, whose bytes changed since its
+recorded commit. They remain citation-only for current compiled-declaration purposes until a matching
+source or reviewed bridge is supplied. The other 45 assembly results have no direct pinned Lean
+evidence and stay unresolved in this declaration crosswalk.
 
 The detailed result `original-q8-spin-sheet-current-fullstep-boundary` enumerates 30 declarations in its
 two matching current files (`Omega8Center.lean`: 14; `GoldenCoherentMemory.lean`: 16). Parent-namespace
@@ -772,7 +776,17 @@ resolution finds the exact claim locator `D0-OMEGA8-CENTER-001` at
 result's semantic relation remains unresolved, and no result-to-claim acceptance is inferred. The
 Q8 result owner, source scope, and physical admissions remain unchanged.
 
-The proof-architecture and Lean-inventory suites pass 43/43 tests. The live `D0.All` declaration
+The all-current batch output contains 899 co-located declarations across six result rows and nine D0
+modules. Exact theorem-name joins produce 18 candidate declaration matches in two result rows: 17
+under `native-actionprotocol-book03-pullback-boundary` and the Q8 match above. Both rows retain
+ambiguous/candidate locator dispositions as reported by their exact match counts; neither gains a
+semantic result-to-claim relation. The machine-readable output
+`sources/d0_proof_architecture_formalization_2026-10-24/assembly_result_declaration_crosswalk.json`
+includes all 54 result rows, the three pinned but missing/changed/out-of-module source cases, all seven authority-source
+digests, tool-source digests, and collector metadata. The JSON SHA-256 is
+`4e92d2d872164344b943ca84256ffa3b028b23a211daa0f77385477f1ef9a922`. This generated view is an input to C0 review, not C0 acceptance.
+
+The proof-architecture and Lean-inventory suites pass 44/44 tests. The live `D0.All` declaration
 extraction used Lean source digest `4b760603dd653cf0354beacd1d78da0879c570b744059c37115ec2ac2d8936ac`;
 the module and exact-detail collector scripts are pinned in the generated output. This crosswalk closes
 no C0 classification or physical assumption, and the exact C0 package remains unaccepted.

@@ -393,6 +393,107 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertEqual(view["results"][0]["declaration_disposition"], "unresolved")
         self.assertEqual(view["results"][0]["semantic_relation_status"], "unresolved")
 
+    def test_all_current_crosswalk_enumerates_verified_modules_once(self) -> None:
+        with tempfile.TemporaryDirectory() as temp:
+            root = pathlib.Path(temp)
+            sources = {
+                "03_FORMALIZATION/D0/Foo.lean": "theorem bar : True := True.intro\n",
+                "03_FORMALIZATION/D0/Bar.lean": "theorem baz : True := True.intro\n",
+            }
+            for relative, content in sources.items():
+                source = root / relative
+                source.parent.mkdir(parents=True, exist_ok=True)
+                source.write_bytes(content.encode("utf-8"))
+            subprocess.run(["git", "init", "-q"], cwd=root, check=True)
+            subprocess.run(["git", "add", *sources], cwd=root, check=True)
+            subprocess.run([
+                "git", "-c", "user.name=Test", "-c", "user.email=test@example.com",
+                "commit", "-q", "-m", "pin Lean sources",
+            ], cwd=root, check=True)
+            ref = subprocess.check_output(
+                ["git", "rev-parse", "HEAD"], cwd=root, text=True
+            ).strip()
+            evidence = []
+            for relative in sources:
+                pinned = subprocess.check_output(
+                    ["git", "cat-file", "blob", f"{ref}:{relative}"], cwd=root
+                )
+                evidence.append({
+                    "ref": ref, "path": relative,
+                    "sha256": hashlib.sha256(pinned).hexdigest(),
+                })
+            data = dataset(root)
+            data["assembly"]["results"] = [
+                {"id": "r-foo", "evidence": [evidence[0]]},
+                {"id": "r-bar", "evidence": [evidence[1]]},
+            ]
+
+            class InventoryStub:
+                @staticmethod
+                def run_module_inventory(modules: list[str], import_root: str,
+                                         include_proof_details: bool = True):
+                    self.assertEqual(modules, ["D0.Bar", "D0.Foo"])
+                    self.assertEqual(import_root, "D0.All")
+                    self.assertFalse(include_proof_details)
+                    return ([{
+                        "name": "D0.Foo.bar", "module": "D0.Foo",
+                        "source_path": "03_FORMALIZATION/D0/Foo.lean",
+                        "elaborated_type": "True", "binders": [],
+                        "conclusion_whnf": "True", "type_dependencies": ["True"],
+                        "proof_dependencies": None, "axioms": None,
+                        "declaration_ranges": {"declaration": {"start": {"line": 1}}},
+                        "proof_details_status": "omitted_by_bulk_mode",
+                    }, {
+                        "name": "D0.Bar.baz", "module": "D0.Bar",
+                        "source_path": "03_FORMALIZATION/D0/Bar.lean",
+                        "elaborated_type": "True", "binders": [],
+                        "conclusion_whnf": "True", "type_dependencies": ["True"],
+                        "proof_dependencies": None, "axioms": None,
+                        "declaration_ranges": {"declaration": {"start": {"line": 1}}},
+                        "proof_details_status": "omitted_by_bulk_mode",
+                    }], "collector-sha", "lean-source-sha")
+
+                @staticmethod
+                def run_inventory(names: list[str], import_root: str):
+                    self.assertEqual(names, ["D0.Foo.bar"])
+                    self.assertEqual(import_root, "D0.All")
+                    return ([{
+                        "name": "D0.Foo.bar", "exists": True, "module": "D0.Foo",
+                        "elaborated_type": "True", "binders": [], "conclusion_whnf": "True",
+                        "type_dependencies": ["True"], "proof_dependencies": ["True.intro"],
+                        "axioms": [],
+                        "declaration_ranges": {"declaration": {"start": {"line": 1}}},
+                    }], "detail-sha", "lean-source-sha")
+
+                @staticmethod
+                def candidate_names(module: str, atom: str) -> list[str]:
+                    return [atom] if atom.startswith("D0.") else [f"{module}.{atom}"]
+
+                @staticmethod
+                def module_source_path(module: str | None) -> str | None:
+                    return f"03_FORMALIZATION/{module.replace('.', '/')}.lean" if module else None
+
+            view = proof.result_declaration_crosswalk_view(
+                data, InventoryStub, all_current=True
+            )
+
+        self.assertEqual(view["enumerated_current_modules"], ["D0.Bar", "D0.Foo"])
+        self.assertEqual(view["source_digests"], data["source_digests"])
+        self.assertEqual(
+            set(view["tool_source_digests"]),
+            {"tools/proof_architecture.py", "tools/lean_declaration_inventory.py"},
+        )
+        self.assertEqual(view["result_count"], 2)
+        by_id = {row["result_id"]: row for row in view["results"]}
+        self.assertEqual([row["name"] for row in by_id["r-foo"]["compiled_declarations"]],
+                         ["D0.Foo.bar"])
+        self.assertEqual([row["name"] for row in by_id["r-bar"]["compiled_declarations"]],
+                         ["D0.Bar.baz"])
+        self.assertEqual(by_id["r-foo"]["claim_locator_disposition"], "candidate")
+        self.assertEqual(by_id["r-bar"]["claim_locator_disposition"], "unresolved")
+        self.assertEqual(by_id["r-foo"]["semantic_relation_status"], "unresolved")
+        self.assertFalse(by_id["r-foo"]["acceptance_inferred"])
+
     def test_text_search_returns_candidate_not_accepted_relation(self) -> None:
         with tempfile.TemporaryDirectory() as temp:
             root = pathlib.Path(temp)

@@ -1004,7 +1004,8 @@ def _claim_locator_candidates(dataset: dict[str, Any], declaration_names: set[st
 def result_declaration_crosswalk_view(dataset: dict[str, Any],
                                       lean_inventory: Any,
                                       result_id: str | None = None,
-                                      import_root: str = "D0.All") -> dict[str, Any]:
+                                      import_root: str = "D0.All",
+                                      all_current: bool = False) -> dict[str, Any]:
     """Crosswalk pinned assembly evidence to compiled declaration candidates.
 
     A source/declaration match is only a co-location candidate. No semantic
@@ -1047,7 +1048,7 @@ def result_declaration_crosswalk_view(dataset: dict[str, Any],
     collector_sha = None
     proof_detail_collector_sha = None
     lean_digest = None
-    if modules and result_id is not None:
+    if modules and (result_id is not None or all_current):
         inventory_rows, collector_sha, lean_digest = lean_inventory.run_module_inventory(
             sorted(modules), import_root, include_proof_details=False
         )
@@ -1115,7 +1116,7 @@ def result_declaration_crosswalk_view(dataset: dict[str, Any],
         pin_verified_count = sum(e["pin"]["pin_status"] == "verified" for e in evidence)
         current_match_count = sum(e["pin"]["current_source_status"] == "matches_pin" for e in evidence)
         has_current_module_source = any(e.get("inventory_module") for e in evidence)
-        if not declarations and result_id is None and has_current_module_source:
+        if not declarations and result_id is None and has_current_module_source and not all_current:
             disposition = "not_enumerated"
         elif not declarations:
             disposition = "unresolved"
@@ -1145,7 +1146,9 @@ def result_declaration_crosswalk_view(dataset: dict[str, Any],
             "lean_evidence_count": len(evidence),
             "verified_pin_count": pin_verified_count,
             "current_source_match_count": current_match_count,
-            "compiled_declaration_count": len(declarations) if result_id is not None else None,
+            "compiled_declaration_count": (
+                len(declarations) if result_id is not None or all_current else None
+            ),
             "declaration_disposition": disposition,
             "claim_locator_disposition": claim_locator_disposition,
             "semantic_relation_status": "unresolved",
@@ -1156,10 +1159,12 @@ def result_declaration_crosswalk_view(dataset: dict[str, Any],
                 "pin_status": e["pin"].get("pin_status"),
                 "current_source_status": e["pin"].get("current_source_status"),
                 "module": e.get("inventory_module"),
-                "declaration_count": len(e.get("declarations", [])) if result_id is not None else None,
+                "declaration_count": (
+                    len(e.get("declarations", [])) if result_id is not None or all_current else None
+                ),
             } for e in evidence],
         })
-        if result_id is not None:
+        if result_id is not None or all_current:
             result_item = {"kind": "assembly-result", "key": key, "record": row}
             detailed_rows.append({
                 "result_id": key,
@@ -1190,7 +1195,15 @@ def result_declaration_crosswalk_view(dataset: dict[str, Any],
     common = {
         "snapshot_commit": dataset["snapshot_commit"],
         "worktree_dirty": dataset.get("worktree_dirty", False),
+        "source_digests": dataset.get("source_digests", {}),
+        "tool_source_digests": {
+            "tools/proof_architecture.py": sha256(pathlib.Path(__file__)),
+            "tools/lean_declaration_inventory.py": sha256(
+                ROOT / "tools" / "lean_declaration_inventory.py"
+            ),
+        },
         "public_import_root": import_root,
+        "enumerated_current_modules": sorted(modules) if result_id is not None or all_current else None,
         "collector_sha256": collector_sha,
         "proof_detail_collector_sha256": proof_detail_collector_sha,
         "lean_source_digest": lean_digest,
@@ -1201,6 +1214,8 @@ def result_declaration_crosswalk_view(dataset: dict[str, Any],
     }
     if result_id is not None:
         return {**common, **detailed_rows[0]}
+    if all_current:
+        return {**common, "result_count": len(detailed_rows), "results": detailed_rows}
     return {**common, "result_count": len(summary_rows), "results": summary_rows}
 
 
@@ -1336,6 +1351,8 @@ def main() -> int:
                            help="exact assembly result ID; omit for a bounded all-result summary")
     crosswalk.add_argument("--import-root", default="D0.All",
                            help="compiled public import used for declaration enumeration")
+    crosswalk.add_argument("--all-current", action="store_true",
+                           help="enumerate all verified current pinned Lean evidence sources in one pass")
     impact = sub.add_parser("impact", help="show declared impact, or assembly impact since a Git base")
     impact.add_argument("key", nargs="?")
     impact.add_argument("--base")
@@ -1392,10 +1409,12 @@ def main() -> int:
             result = reuse_view(data, args.key, lean_inventory=inventory,
                                 import_root=args.import_root)
         elif args.command == "crosswalk":
+            if args.key and args.all_current:
+                parser.error("crosswalk accepts either RESULT-ID or --all-current, not both")
             import lean_declaration_inventory
             result = result_declaration_crosswalk_view(
                 data, lean_declaration_inventory, result_id=args.key,
-                import_root=args.import_root,
+                import_root=args.import_root, all_current=args.all_current,
             )
         else:
             if not args.key:
