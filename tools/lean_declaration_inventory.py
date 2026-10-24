@@ -18,6 +18,7 @@ ROOT = pathlib.Path(__file__).resolve().parents[1]
 FORMAL = ROOT / "03_FORMALIZATION"
 CLAIMS = ROOT / "02_REGISTRY" / "claims.csv"
 PREFIX = "D0_DECLARATION_JSON="
+COLLECTOR_BATCH_SIZE = 128
 
 
 def name_expr(full_name: str) -> str:
@@ -29,6 +30,12 @@ def name_expr(full_name: str) -> str:
     for part in parts:
         expr = f"Lean.Name.str ({expr}) {json.dumps(part, ensure_ascii=False)}"
     return expr
+
+
+def name_batches(names: list[str], batch_size: int = COLLECTOR_BATCH_SIZE) -> list[list[str]]:
+    if batch_size <= 0:
+        raise ValueError("collector batch size must be positive")
+    return [names[start:start + batch_size] for start in range(0, len(names), batch_size)]
 
 
 def candidate_names(module: str, atom: str) -> list[str]:
@@ -105,7 +112,6 @@ def module_source_path(module_name: str | None) -> str | None:
 def lean_collector(names: list[str], import_root: str, resolution_only: bool = False) -> str:
     if not re.fullmatch(r"[A-Za-z_][A-Za-z0-9_']*(?:\.[A-Za-z_][A-Za-z0-9_']*)*", import_root):
         raise ValueError(f"invalid Lean import root: {import_root!r}")
-    targets = ",\n    ".join(name_expr(name) for name in names)
     if resolution_only:
         declaration_lines = [
             "        let owner ← findModuleOf? target",
@@ -162,6 +168,23 @@ def lean_collector(names: list[str], import_root: str, resolution_only: bool = F
             "        ]",
         ]
     declaration_payload = "\n".join(declaration_lines)
+    commands = []
+    for batch in name_batches(names):
+        targets = ",\n    ".join(name_expr(name) for name in batch)
+        commands.append(f'''run_cmd do
+  let targets : Array Name := #[
+    {targets}
+  ]
+  let env ← getEnv
+  for target in targets do
+    let payload ← match env.find? target with
+      | none => pure <| Json.mkObj [
+          ("name", toJson target.toString), ("exists", toJson false)
+        ]
+      | some info => do
+{declaration_payload}
+    liftIO <| IO.println s!"{PREFIX}{{payload.compress}}"
+''')
     return f'''import Lean
 import {import_root}
 
@@ -175,19 +198,7 @@ def d0RangeJson (r : DeclarationRange) : Json := Json.mkObj [
   ("start", d0PositionJson r.pos), ("end", d0PositionJson r.endPos)
 ]
 
-run_cmd do
-  let targets : Array Name := #[
-    {targets}
-  ]
-  let env ← getEnv
-  for target in targets do
-    let payload ← match env.find? target with
-      | none => pure <| Json.mkObj [
-          ("name", toJson target.toString), ("exists", toJson false)
-        ]
-      | some info => do
-{declaration_payload}
-    liftIO <| IO.println s!"{PREFIX}{{payload.compress}}"
+{''.join(commands)}
 '''
 
 

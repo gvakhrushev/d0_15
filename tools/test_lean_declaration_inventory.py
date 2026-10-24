@@ -47,6 +47,13 @@ class DeclarationInventoryTests(unittest.TestCase):
         self.assertIn('"a\\\"b"', rendered)
         self.assertTrue(rendered.startswith("Lean.Name.str ("))
 
+    def test_large_collector_requests_are_split_into_bounded_commands(self):
+        names = [f"D0.Test.declaration_{index}" for index in range(257)]
+        self.assertEqual([len(batch) for batch in inventory.name_batches(names)], [128, 128, 1])
+        script = inventory.lean_collector(names, "D0.All", resolution_only=True)
+        self.assertEqual(script.count("run_cmd do"), 3)
+        self.assertEqual(script.count("let targets : Array Name := #["), 3)
+
     def test_collector_queries_elaborated_environment_and_axioms(self):
         script = inventory.lean_collector(["D0.Foundation.VerificationCore.verification_core"], "D0.All")
         self.assertIn("import D0.All", script)
