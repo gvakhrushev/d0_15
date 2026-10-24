@@ -790,3 +790,12 @@ The proof-architecture and Lean-inventory suites pass 44/44 tests. The live `D0.
 extraction used Lean source digest `4b760603dd653cf0354beacd1d78da0879c570b744059c37115ec2ac2d8936ac`;
 the module and exact-detail collector scripts are pinned in the generated output. This crosswalk closes
 no C0 classification or physical assumption, and the exact C0 package remains unaccepted.
+
+
+### 24 October refreshed all-claims Lean locator resolution
+
+The earlier all-claims resolution above is retained at its original Lean source digest `dd056ebca233774b20e628d8b7efd3f94e344b18d0fa07e8abf973e229e1857d`. The current D0 sources have changed, so the exact-name resolution was rerun against `D0.All` on clean snapshot `1b7f1cbb5e597af31b59a83bd37edac73b0d4e47`, with Lean source digest `4b760603dd653cf0354beacd1d78da0879c570b744059c37115ec2ac2d8936ac` and claims registry SHA-256 `e986bcc75fd6a2c84a80ee61b639482af1b21464fcfe4c961491b4a97bb9037f`.
+
+Across 889 claims, the collector expands 2,741 theorem-locator atoms into 8,294 unique exact candidate names. It finds 2,497 current declarations and 5,797 exact misses. Of the locator atoms, 2,533 match one candidate declaration, four match two candidates, and 204 match none. At the claim-row level, 705 rows have at least one resolved locator and 184 have none. These are current name/module/source-path availability counts, not theorem coverage or application acceptance.
+
+The reproducible output is `sources/d0_proof_architecture_formalization_2026-10-24/claim_candidate_resolution_current.json` (2,535,647 bytes; SHA-256 `e0f4705fc20db6e236cf9c8de4a094ed97e2f7b2054891005fa82e17e1aef40c`). It records the snapshot, Lean source digest, claims registry digest, collector SHA-256 `24289b940bc867e4ccea28cbd9771033669662dc5017f53e7a14ad780cadd30d`, and toolchain `leanprover/lean4:v4.30.0`. The matching claim names remain locator candidates until their scope and application are checked; this refresh changes no status, owner, assumption, C0 disposition, or physical premise.
