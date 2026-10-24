@@ -948,3 +948,12 @@ locators; it does not itself establish that the registered `BOOK_06` source
 section and its formula have passed C0 source-key review. The C0 unit package,
 semantic source crosswalk, and independent acceptance remain open. No claim
 status, scientific owner, physical assumption, or GR premise changed.
+
+Local validation for this slice passed: narrow build of
+`D0.Geometry.ArchiveCubicalCoboundary` (2,975 Lake jobs), exact claim reuse via
+`proof_architecture.py --json reuse D0-ARCHIVE-CUBICAL-COBOUNDARY-001 --lean`
+against `D0.All`, generated-view check (`stale=0`), formalization-debt
+non-growth (3 findings, baseline 3), and `git diff --check`. On published
+commit `cd9d40e215b5697ab251912203277dfbb685a3b4`, GitHub `D0 Lean build` run
+2991 and `D0 guards` run 5029 both succeeded. The compiled-reuse record retains
+its pre-publication dirty-worktree provenance and source digests above.
