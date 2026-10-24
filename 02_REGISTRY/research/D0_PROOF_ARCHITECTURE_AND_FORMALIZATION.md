@@ -2186,3 +2186,72 @@ Lean module SHA-256 is
 `9221008fc45490aff466c435809a1f87a40edbbd34e414bb1933e87f143394b8`. The
 inventory is
 `sources/d0_proof_architecture_formalization_2026-10-24/non_null_gamma_determinant_adapter_inventory.json`.
+
+### Generic Eq. (28) decoder and Eq. (27)/(28) overlap application (25 October 2026)
+
+The source is the published #334 snapshot
+`fe5cf335da04cac14e50407b03f98b96be17dc52`, §8.4, equations (26)–(28),
+path `02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md`,
+blob `1c8d59e5533b443d9a015dc4512cfbc160ae7e62`. The declared downstream
+consumer remains §5.1 of the exact AF radial coframe equivalence source, blob
+`734e21ae6bc04ff3446ad15858936d417fdd2e55`.
+
+The Eq. (28) open-chart proof in
+`D0.Geometry.A4DJuliaPrincipalFrameRecovery` now exposes a generic reusable
+adapter, `principalFrameObservedQuery_open_chart_link_recovery`. It takes the
+actual query representation `hQuery` and the complete vacuum readout map
+`hColumn` as explicit witnesses, then proves the endpoint-map readout from the
+existing finite Eq. (28) reconstruction. The prior
+`principalFrameJuliaQueryFamily_open_chart_link_recovery` is now a specialization
+of this adapter for the owned principal-frame query constructor. This keeps
+query representation, readout transport, and the reconstruction theorem as
+separate typed inputs.
+
+The new composition module
+`D0.Geometry.A4DJuliaRecoveryComposition` adds
+`archiveJuliaSourceQuery_nonNull_open_chart_joint_recovery`: for the same
+complete role-query family, it composes the Eq. (28) endpoint-map readout with
+the Eq. (27) all-grade exterior-frame recovery. Its hypotheses explicitly bind
+the query to the same shift/map (`hQuery`, `hColumn`), require a source-chart
+isometry with `det M = 1` and nonzero Lorentz norm, and retain Eq. (28)'s
+normalized covector, nonzero projected covector, and positive square-root
+branch. The concrete
+`principalFrameJuliaQueryFamily_nonNull_open_chart_joint_recovery` supplies
+both maps from the existing principal-frame CAR query and Eq. (26) readout.
+
+This proves a finite algebraic overlap application in the common fixed source
+chart: both inverse formulas recover the same endpoint map, while Eq. (27)
+recovers its exterior lift on all grades. It does not cover the null locus by
+Eq. (27), extend the endpoint covariance to distinct endpoint forms, prove
+the physical endpoint package has determinant one, or establish all-jet,
+variational, admission, complete-price/source, or GR closure.
+
+The new owning-module inventories are
+`sources/d0_proof_architecture_formalization_2026-10-24/principal_frame_generic_decoder_refactor_2026-10-25_inventory.json`
+and
+`sources/d0_proof_architecture_formalization_2026-10-24/eq27_eq28_joint_recovery_2026-10-25_inventory.json`.
+They were collected at snapshot `0f9a94a85e5e82167db2087eec46c838fea181b1`
+with `worktree_dirty=true` under Lean 4.30.0. The first lists 18 declarations;
+the generic Eq. (28) adapter has transitive axioms `Classical.choice`,
+`Quot.sound`, and `propext`, with no `native_decide`. The second lists the two
+joint-composition declarations; both retain the existing private
+`native_decide` dependency from `archiveCreatorPermSign`, alongside
+`Classical.choice`, `Quot.sound`, and `propext`.
+
+The principal-frame source SHA-256 is
+`eea5270e1eb6b5c16ce4ac4ae86501b0490beaf2bd653f8567b25b48038105e3`; the
+composition source SHA-256 is
+`eaeae662b21e9e13c9cc9255bcd524cd6b81ff342e1a9cfd53439ba4dfd245fb`. The
+inventory SHA-256 values are
+`fc41b0ab64a3bc1b512c696852f99340ea053cf3942051fb2c7e1afb4439ce32` and
+`426784e96ed7ccb1aeb71a837953c2f33efc56c503c1d8263850601acb995c75`;
+their recorded collector digests are
+`863a320fafb6bb4bb16e1164cf84f60af198d337b8726494aa56f147ef42f43d` and
+`392354a7fdaa9e00bd00d5c4c04ebd8f656e665942bee46cd95a9f1b892eaf66`.
+
+Narrow Lean 4.30.0 builds passed for
+`D0.Geometry.A4DJuliaPrincipalFrameRecovery` (3,020 jobs) and
+`D0.Geometry.A4DJuliaRecoveryComposition` (3,022 jobs). The generated
+`D0.All` view now includes the new composition module, and
+`python3 tools/generate_lean_views.py --check` reports `PASS lean_views
+stale=0`. No full `D0.All` replay was run for this intermediate checkpoint.

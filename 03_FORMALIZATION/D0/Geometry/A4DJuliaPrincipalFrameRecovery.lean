@@ -172,6 +172,55 @@ def principalFrameObservedNullQueryFrameReadout
       (archiveJuliaQueryNullCanonicalWitness
         (Pₓ r) (principalFrameObservedQueryVector X r) (X r) (α r))
 
+/-- Generic Eq. (28) application for a complete query family. The caller
+supplies the two actual maps used by the application: the query is the native
+raising operator at `u` with endpoint map `M`, and the full vacuum readout is
+that same `u`. This separates the reusable decoder from the principal-frame
+matrix constructor below. -/
+theorem principalFrameObservedQuery_open_chart_link_recovery
+    (M : RoleSpace ≃ₗ[ℝ] RoleSpace)
+    (Pₓ Pᵧ : Role → ArchiveRoleBilinear)
+    (X : Role → ArchiveJuliaQueryOperator)
+    (u : RoleSpace)
+    (α : Role → Module.Dual ℝ RoleSpace)
+    (r : Role)
+    (hQuery : X r = archiveJuliaRaisingQuery u M)
+    (hColumn : principalFrameObservedQueryVector X r = u)
+    (hα : α r u = 1)
+    (hSymm : ∀ x y, Pₓ r x y = Pₓ r y x)
+    (hIso : ∀ x y, Pₓ r (M x) (M y) = Pᵧ r x y)
+    (hCovector : archiveJuliaQueryNullMetricCovector (Pₓ r)
+      (principalFrameObservedQueryVector X r) (X r) (α r) ≠ 0)
+    (hBranch : 0 < 1 +
+      Pₓ r (principalFrameObservedQueryVector X r)
+        (principalFrameObservedQueryVector X r) *
+        α r (M (archiveJuliaQueryNullCanonicalWitness (Pₓ r)
+          (principalFrameObservedQueryVector X r) (X r) (α r)))) :
+    principalFrameObservedNullQueryFrameReadout Pₓ Pᵧ X α r = M := by
+  let v := principalFrameObservedQueryVector X r
+  have hQuery' : X r = archiveJuliaRaisingQuery v M := by
+    calc
+      X r = archiveJuliaRaisingQuery u M := hQuery
+      _ = archiveJuliaRaisingQuery v M := by
+        dsimp [v]
+        rw [← hColumn]
+  have hα' : α r v = 1 := by
+    dsimp [v]
+    rw [hColumn]
+    exact hα
+  let z := archiveJuliaQueryNullCanonicalWitness (Pₓ r) v (X r) (α r)
+  have hWitness : archiveJuliaQueryNullMetricCovector (Pₓ r) v (X r)
+      (α r) z = 1 := by
+    have h := archiveJuliaNullEuclideanWitness_normalized
+      (archiveJuliaQueryNullMetricCovector (Pₓ r) v (X r) (α r)) hCovector
+    simpa [z, archiveJuliaQueryNullCanonicalWitness] using h
+  have hBranch' : 0 < 1 + (Pₓ r v v) * α r (M z) := by
+    simpa [z, archiveJuliaQueryNullCanonicalWitness] using hBranch
+  simpa [principalFrameObservedNullQueryFrameReadout, z, v] using
+    (archiveJuliaQueryNullRecoveredFrame_eq
+      (Pₓ r) (Pᵧ r) v z M (α r) (X r) hQuery' hα' hSymm hIso
+      hWitness hBranch')
+
 /-- Query-derived endpoint recovery on the full Eq. (28) open chart. The shift
 need not be null: the actual projected metric covector must be nonzero and the
 square-root branch must remain positive. The canonical witness supplies the
@@ -208,34 +257,10 @@ theorem principalFrameJuliaQueryFamily_open_chart_link_recovery
     exact principalFrameObservedQueryVector_eq F L M X
       (principalFrameJuliaQueryFamily_eq_model F L M) r
   have hQuery : X r = archiveJuliaRaisingQuery
-      (principalFrameObservedQueryVector X r) (M r) := by
-    calc
-      X r = archiveJuliaRaisingQuery u (M r) := by
-        simpa [X, u] using principalFrameJuliaQueryFamily_eq_model F L M r
-      _ = archiveJuliaRaisingQuery
-          (principalFrameObservedQueryVector X r) (M r) := by rw [hColumn]
-  have hαu : α r (principalFrameObservedQueryVector X r) = 1 := by
-    rw [hColumn]
-    exact hα
-  have hCovector' : archiveJuliaQueryNullMetricCovector (Pₓ r)
-      (principalFrameObservedQueryVector X r) (X r) (α r) ≠ 0 := by
-    simpa [X] using hCovector
-  let z := archiveJuliaQueryNullCanonicalWitness (Pₓ r)
-    (principalFrameObservedQueryVector X r) (X r) (α r)
-  have hWitness : archiveJuliaQueryNullMetricCovector (Pₓ r)
-      (principalFrameObservedQueryVector X r) (X r) (α r) z = 1 := by
-    have h := archiveJuliaNullEuclideanWitness_normalized
-      (archiveJuliaQueryNullMetricCovector (Pₓ r)
-        (principalFrameObservedQueryVector X r) (X r) (α r)) hCovector'
-    simpa [z, archiveJuliaQueryNullCanonicalWitness] using h
-  have hBranch' : 0 < 1 +
-      (Pₓ r (principalFrameObservedQueryVector X r)
-        (principalFrameObservedQueryVector X r)) * α r ((M r) z) := by
-    simpa [X, z, archiveJuliaQueryNullCanonicalWitness] using hBranch
-  simpa [principalFrameObservedNullQueryFrameReadout, X] using
-    (archiveJuliaQueryNullRecoveredFrame_eq
-      (Pₓ r) (Pᵧ r) (principalFrameObservedQueryVector X r) z
-      (M r) (α r) (X r) hQuery hαu hSymm hIso hWitness hBranch')
+      u (M r) := by
+    simpa [X, u] using principalFrameJuliaQueryFamily_eq_model F L M r
+  exact principalFrameObservedQuery_open_chart_link_recovery
+    (M r) Pₓ Pᵧ X u α r hQuery hColumn hα hSymm hIso hCovector hBranch
 
 /-- Null-chart specialization of the full Eq. (28) open-chart recovery. A
 complete finite-carrier query recovers the selected endpoint map for any
