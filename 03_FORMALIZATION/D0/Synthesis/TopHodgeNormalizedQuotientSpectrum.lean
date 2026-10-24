@@ -1,4 +1,5 @@
 import Mathlib.Tactic
+import D0.Combinatorics.TripartiteVieta
 import D0.Synthesis.TopHodgeSpectralSceneReconstruction
 import D0.Synthesis.PhasonActiveSceneConjugacy
 
@@ -66,14 +67,17 @@ abbrev Zone3 := Fin 3
 
 /-! ## Generic positive complete-tripartite quotient -/
 
-/-- Vertex elementary symmetric invariant. -/
-def tripartiteV (a b c : ℚ) : ℚ := a + b + c
+/-- Compatibility name for the shared tripartite vertex invariant. -/
+abbrev tripartiteV (a b c : ℚ) : ℚ :=
+  D0.Combinatorics.TripartiteVieta.tripartiteV a b c
 
-/-- Edge elementary symmetric invariant. -/
-def tripartiteE (a b c : ℚ) : ℚ := a * b + a * c + b * c
+/-- Compatibility name for the shared tripartite edge invariant. -/
+abbrev tripartiteE (a b c : ℚ) : ℚ :=
+  D0.Combinatorics.TripartiteVieta.tripartiteE a b c
 
-/-- Triangle elementary symmetric invariant. -/
-def tripartiteT (a b c : ℚ) : ℚ := a * b * c
+/-- Compatibility name for the shared tripartite triangle invariant. -/
+abbrev tripartiteT (a b c : ℚ) : ℚ :=
+  D0.Combinatorics.TripartiteVieta.tripartiteT a b c
 
 /-- Product of the three nonzero row degrees. -/
 def degreeProduct (a b c : ℚ) : ℚ :=

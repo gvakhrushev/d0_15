@@ -347,3 +347,72 @@ tool digests are:
 This is an exact compilation and name-crosswalk example on a finite
 mathematical result. It neither closes the full D0 proof corpus nor changes the
 unresolved physical premises, C0 acceptance boundary, or #334 ownership.
+
+### 24 October shared tripartite Vieta layer and compiled applications
+
+- The rational tripartite invariants and Vieta/root-multiset proof now have a
+  lower-level owner in `D0.Combinatorics.TripartiteVieta`. The normalized
+  quotient module keeps its previous `tripartiteV`, `tripartiteE` and
+  `tripartiteT` names as abbreviations. The inverse-spectral module preserves
+  its existing `zoneRootPolynomial_*` and `unordered_*` theorem locators as
+  compatibility wrappers.
+- `reconstruct_scene_unordered_from_topHodge_spectral_data` now derives the
+  triangle, vertex and edge invariants from its actual top-Hodge inputs
+  `(D,H,M₂)`, then applies the shared unordered Vieta theorem. The existing
+  finite sum/product classification remains available under its old names;
+  this capstone no longer depends on that separate enumeration route.
+- The shared invariant formula lemmas are exposed as global `[simp]` rules
+  through imports. This intentional simplifier-environment change keeps the
+  old transparent abbreviations reducible in downstream normalized-spectrum
+  proofs; the complete `D0.All` build checks those consumers.
+- Argument phase: formalization and library migration of an existing finite
+  mathematical result. Parent substitution: the scene capstone's unordered
+  reconstruction now consumes the shared `V,E,T` root theorem. Its stated
+  assumptions remain the canonical complete-tripartite class and equalities
+  for the actual `D,H,M₂` data.
+- The compiled `reuse --lean` view resolves all 11/11 exact locators for
+  `D0-TOP-HODGE-INVERSE-SPECTRAL-RIGIDITY-001` and all 7/7 for
+  `D0-TOP-HODGE-SPECTRAL-SCENE-RECONSTRUCTION-001`. The compiled scene
+  application lists dependencies on the shared rational `V`, `E`, `T`,
+  `unordered_nat_triple_eq_of_VET_eq`, and the existing Hodge edge-count
+  identity. The inverse-spectral application has compiled dependency joins to
+  its generic rigidity theorem and to the scene's actual multiplicity and
+  second-moment declarations. These remain candidate locator crosswalks; the
+  claim text and scientific status are unchanged.
+- Validation on local `HEAD=e58ef06572db3436f109359e8bd90d3cd5fbb4b9`
+  (`worktree_dirty=true`): narrow builds of
+  `D0.Synthesis.TopHodgeSpectralSceneReconstruction` (2,984 jobs) and
+  `D0.Synthesis.TopHodgeInverseSpectralRigidity` (2,994 jobs); final
+  `D0.All` build (4,564 jobs); proof-architecture tests 26/26; generated Lean
+  views, no-sorry-in-core and claim-map coverage checks passed; `git diff
+  --check` passed. The initial narrow integration exposed transparent-alias
+  simplification gaps; adding the shared invariant formula simp lemmas restored
+  the downstream normalized-spectrum proofs before the successful builds.
+- Build and compiled-reuse provenance: Lean 4.30.0, public import `D0.All`,
+  Lean source digest `bb5b03d60eb57ee1cafff2223af6fa695413dc410c57dbc9f88f557934195386`,
+  equal to the final-build stamp. The inverse-claim collector SHA-256 is
+  `0b80b2f838d2e1607d2bb93596e239802fe66edad23fbd3b0e269637b4a69881`; the
+  scene-claim collector SHA-256 is
+  `7950c99a15f0937b21f0cdc80cab0434cea08ddfbd89b9c3cae6f6602eb76dea`.
+  Source SHA-256 values:
+
+  | Input | SHA-256 |
+  |---|---|
+  | `03_FORMALIZATION/D0/Combinatorics/TripartiteVieta.lean` | `507d015725394d9c5b1b9df822f6169a0cae25ab6e6fd6057ea5af8cb6dc65e5` |
+  | `03_FORMALIZATION/D0/Synthesis/TopHodgeSpectralSceneReconstruction.lean` | `813454ca03e9ed54f3690d9916edf8916350d6db51f7fe64fae6b441a0ebc349` |
+  | `03_FORMALIZATION/D0/Synthesis/TopHodgeNormalizedQuotientSpectrum.lean` | `a94c832a5bfedd5c510024f30188b8f3f3ba6b08e567327c6cf2421c5da664bf` |
+  | `03_FORMALIZATION/D0/Synthesis/TopHodgeInverseSpectralRigidity.lean` | `419f2419e6bae0fbeaf0cd498815f5bce5ddbd70c65ff34499f49d7fd198a9ca` |
+  | `03_FORMALIZATION/D0/All.lean` | `0a584418ecd94624690eb572c4e2a9051e4afd9d9d91bad3158a318134ac170a` |
+  | `02_REGISTRY/formal_support.csv` | `d635f0a0b9c616ec38fd8e7e550ae282e9f7ab0c6953f6db29a922b123df80d2` |
+  | `tools/lean_task_build.py` | `255bd49a5211154683a698b1163bcebcaeb52b2fd125fbc0590d73d696ee3104` |
+
+- Independent read-only review: scoped PASS for the generic rational Vieta
+  theorem, natural-number specialization, scene reconstruction application,
+  preserved public locators, and acyclic imports. It noted the global `[simp]`
+  effect above and found no correctness blocker. This review does not accept
+  C0, close a physical premise, or alter the scope of #334.
+
+This checkpoint covers a finite algebraic library migration and two compiled
+uses; it makes no corpus-wide C0 coverage claim. C0 remains unfrozen and
+independently unaccepted. #334, its physical source/admission owners, and the
+open GR selection premises retain their existing scope and ownership.

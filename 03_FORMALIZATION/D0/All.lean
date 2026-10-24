@@ -91,6 +91,7 @@ import D0.Combinatorics.PhaseTowerMinimality
 import D0.Combinatorics.SceneChromaticThree
 import D0.Combinatorics.Tripartite
 import D0.Combinatorics.TripartiteSignatureGeneral
+import D0.Combinatorics.TripartiteVieta
 import D0.Complexity.HeatTraceLyapunov
 import D0.Condensed.CondensedPhiVacuum
 import D0.Condensed.SolidPhi
