@@ -1252,3 +1252,11 @@ Python 3.12, the debt audit (`python3 tools/formalization_debt_audit.py --check`
 3 findings, baseline 3), and `git -c core.whitespace=cr-at-eol diff --check`
 pass. The CRLF-aware setting matches the committed generated ClaimMap line
 endings. No scientific owner or release status was changed.
+
+
+### Published cubical weighted-Hodge checkpoint (24 October 2026)
+
+- Commit `3cbd6033583e3eb52769aa53c72cc1754dc20480` publishes the conditional `d + d†_w` application on the existing Draft PR #402. The PR remains open and Draft; no merge or readiness transition was performed.
+- GitHub `guards` completed successfully on this head (run `40115181286`). `lean-build` also completed successfully (run `40115181248`), but its log explicitly says `Draft PR: full D0.All is deferred until ready_for_review`; this is not a remote full Lean build.
+- The local current-source integration compiled all 21 PR-changed Lean modules, six cache-missing dependencies, and `D0.All` through Lean 4.30.0 using a temporary OLean overlay and the preserved local Mathlib cache. Unchanged imported modules reused cached OLean files. The exact module inventory and claim-reuse artifacts above bind the compiled source digest and axiom footprint.
+- A clean CI `D0.All` build and independent semantic acceptance remain pending. The weighted-Hodge application remains conditional on pointwise-nonzero supplied weights and does not select positive or geometric weights. C0 remains unfrozen and independently unaccepted; existing scientific owners and statuses remain unchanged.
