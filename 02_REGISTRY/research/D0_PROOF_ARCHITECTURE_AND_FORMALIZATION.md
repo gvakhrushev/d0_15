@@ -550,11 +550,11 @@ This is exact dependency evidence, not semantic claim acceptance.
 
 The type boundary remains explicit: the generic result assumes that a supplied
 map preserves multiplication and star and that supplied traces agree on that
-map. Neither this refactor nor the current `PerronGNSTower` conclusion
-constructs the Fibonacci-level algebra inclusions or proves positivity and
-completion of a GNS Hilbert space. Thus it consolidates the conditional
-isometry lemma; a concrete infinite AF/GNS tower remains outside this proof
-slice and its existing owner is preserved.
+map. The vNext owner theorem itself retains that conditional type. The finite
+application below constructs one explicit real refinement embedding, but does
+not prove positivity and completion of a GNS Hilbert space or construct all
+levels of the complex AF tower. Those remain outside this proof slice and
+with the existing owner.
 
 Local validation: narrow Lean builds passed for `D0.Algebra.FibonacciAFTower`
 (2,947 jobs) and `D0.VNext.PerronGNSTower` (2,948 jobs). The current public
@@ -570,4 +570,47 @@ SHA-256 for the changed source and generated registry inputs:
 | `03_FORMALIZATION/D0/VNext/PerronGNSTower.lean` | `3e555de788da152afad833288d0e0945da3b74ce4abe7a587bb9d8696b64f544` |
 | `03_FORMALIZATION/D0/TheoremLedger/ClaimMap.lean` | `0d0829b214e1b0a18654e5cd07a729528c2075f185b0bb23c32c9068d4411250` |
 | `02_REGISTRY/claims.csv` | `493866102b2c4c13c9c31c502c4142abc1349178f35edeb32322f23c42314770` |
+| `02_REGISTRY/formal_support.csv` | `e90d167d4b719783b90f0e5e24d848c39fa38bfcce6d09bb40599fad8cfa0709` |
+
+### 24 October first finite Perron refinement application
+
+The vNext module constructs the first finite real refinement map
+`(x,y) ↦ (diag(x,y),x)` from `ℝ × ℝ` to `M₂(ℝ) × ℝ`. Lean proves that it is
+a unital ring homomorphism, injective, and star-preserving. The explicit
+functionals
+`τ₀(x,y)=φ*x+y` and
+`τ₁(A,z)=φ⁻¹*(φ*Matrix.trace(A)+z)` satisfy exact trace preservation for this
+map. `fibonacci_first_refinement_pairing` applies the shared generic theorem
+to prove `τ₁(star(ι y)*ι x)=τ₀(star y*x)` for all inputs at this finite step.
+
+The existing vNext claim row lists the finite application and its map/trace
+locators; generated `ClaimMap` follows the same source row. Compiled
+`reuse --lean` resolves all ten locators. Its actual proof dependencies for
+the finite pairing include the canonical
+`D0.Algebra.FibonacciAFTower.gns_refinement_isometry`, the concrete ring map,
+its star-preservation theorem, and its trace-preservation theorem. The
+compiled declaration reports the existing rational quotient axioms
+`Classical.choice`, `Quot.sound`, and `propext`.
+
+This is a concrete first-step real algebra model only. It does not establish
+trace positivity, the GNS quotient/Hilbert completion, the full infinite
+complex AF tower, or any physical Hilbert-space identification. Existing
+owners and statuses are unchanged. At this source snapshot the Lean digest is
+`d56dfa1bf4dc15f6a56fb2bbba093deeffd3185a0cbc46573c98a355ba93b0b8`; the
+compiled-reuse collector SHA-256 is
+`3578878542b346af5a7f30e50f5c1927ac7f4258da1db806fceb6a747382b39a`.
+
+The final local `D0.All` build on this exact Lean digest passed (4,564 jobs);
+the `d0-final-build.sha256` stamp matches. The new finite-step module passed
+its narrow build (2,948 jobs). Proof-architecture tests pass 26/26, generated
+views report `stale=0`, claim-map coverage passes, formalization-debt findings
+remain at the existing 3/3 baseline, and `git diff --check` passes.
+
+SHA-256 for the finite-step source and its registry views:
+
+| Input | SHA-256 |
+|---|---|
+| `03_FORMALIZATION/D0/VNext/PerronGNSTower.lean` | `c317e65c0b4d239bcdf161a0c3494176a358b319e691a61064edb71e6bc3b2c5` |
+| `03_FORMALIZATION/D0/TheoremLedger/ClaimMap.lean` | `c1a1a4757a5409973a9286b346f761d0166f9300d23702184a4fc7a0db1f16e1` |
+| `02_REGISTRY/claims.csv` | `43ae5a73034941e029a0284aec54352f9bb24ad2cf6d7d5cbb7b71f0fa3a3ff1` |
 | `02_REGISTRY/formal_support.csv` | `e90d167d4b719783b90f0e5e24d848c39fa38bfcce6d09bb40599fad8cfa0709` |

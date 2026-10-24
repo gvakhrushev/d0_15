@@ -46,6 +46,118 @@ theorem perron_trace_compatible_with_refinement :
     1 + phi⁻¹ = phi ∧ phi⁻¹ * phi = 1 :=
   D0.Algebra.FibonacciAFTower.perron_trace_consistency
 
+/-- The diagonal 2-by-2 block in the first Fibonacci refinement step. -/
+def firstRefinementDiagonal (x y : ℝ) : Matrix (Fin 2) (Fin 2) ℝ := !![x, 0; 0, y]
+
+/-- The first finite Bratteli step, from two scalar blocks to `M₂(ℝ) × ℝ`:
+`(x,y) ↦ (diag(x,y),x)`, with multiplicities given by `Mφ = !![1,1;1,0]`. -/
+def firstRefinementMap (z : ℝ × ℝ) : Matrix (Fin 2) (Fin 2) ℝ × ℝ :=
+  (firstRefinementDiagonal z.1 z.2, z.1)
+
+/-- The level-zero Perron trace functional for the finite step. -/
+noncomputable def firstRefinementTrace0 (z : ℝ × ℝ) : ℝ := phi * z.1 + z.2
+
+/-- The level-one Perron trace functional, scaled by `φ⁻¹` for refinement compatibility. -/
+noncomputable def firstRefinementTrace1 (z : Matrix (Fin 2) (Fin 2) ℝ × ℝ) : ℝ :=
+  phi⁻¹ * (phi * Matrix.trace z.1 + z.2)
+
+theorem firstRefinementDiagonal_mul (x y u v : ℝ) :
+    firstRefinementDiagonal x y * firstRefinementDiagonal u v =
+      firstRefinementDiagonal (x * u) (y * v) := by
+  ext i j
+  fin_cases i <;> fin_cases j <;>
+    simp [firstRefinementDiagonal, Matrix.mul_apply, Fin.sum_univ_succ]
+
+theorem firstRefinementDiagonal_star (x y : ℝ) :
+    star (firstRefinementDiagonal x y) = firstRefinementDiagonal x y := by
+  ext i j
+  fin_cases i <;> fin_cases j <;> simp [firstRefinementDiagonal]
+
+theorem firstRefinementDiagonal_trace (x y : ℝ) :
+    Matrix.trace (firstRefinementDiagonal x y) = x + y := by
+  simp [firstRefinementDiagonal, Matrix.trace, Fin.sum_univ_succ]
+
+theorem firstRefinementMap_mul (z w : ℝ × ℝ) :
+    firstRefinementMap (z * w) = firstRefinementMap z * firstRefinementMap w := by
+  rcases z with ⟨x, y⟩
+  rcases w with ⟨u, v⟩
+  apply Prod.ext
+  · exact (firstRefinementDiagonal_mul x y u v).symm
+  · rfl
+
+theorem firstRefinementMap_star (z : ℝ × ℝ) :
+    firstRefinementMap (star z) = star (firstRefinementMap z) := by
+  rcases z with ⟨x, y⟩
+  have hsource : star (x, y) = (x, y) := by ext <;> simp
+  have htarget : star (firstRefinementMap (x, y)) = firstRefinementMap (x, y) := by
+    apply Prod.ext
+    · exact firstRefinementDiagonal_star x y
+    · simp
+  rw [hsource, htarget]
+
+/-- The concrete first refinement is a unital ring homomorphism. -/
+def firstRefinementRingHom : (ℝ × ℝ) →+* (Matrix (Fin 2) (Fin 2) ℝ × ℝ) where
+  toFun := firstRefinementMap
+  map_one' := by
+    apply Prod.ext
+    · ext i j
+      fin_cases i <;> fin_cases j <;> simp [firstRefinementMap, firstRefinementDiagonal]
+    · rfl
+  map_mul' := firstRefinementMap_mul
+  map_zero' := by
+    apply Prod.ext
+    · ext i j
+      fin_cases i <;> fin_cases j <;> simp [firstRefinementMap, firstRefinementDiagonal]
+    · rfl
+  map_add' := by
+    intro z w
+    rcases z with ⟨x, y⟩
+    rcases w with ⟨u, v⟩
+    apply Prod.ext
+    · ext i j
+      fin_cases i <;> fin_cases j <;> simp [firstRefinementMap, firstRefinementDiagonal]
+    · rfl
+
+theorem firstRefinementMap_injective : Function.Injective firstRefinementMap := by
+  intro z w h
+  rcases z with ⟨x, y⟩
+  rcases w with ⟨u, v⟩
+  have hx : x = u := congrArg Prod.snd h
+  have hmatrix : firstRefinementDiagonal x y = firstRefinementDiagonal u v := congrArg Prod.fst h
+  have hy : y = v := by
+    have hentry := congrArg (fun M : Matrix (Fin 2) (Fin 2) ℝ => M 1 1) hmatrix
+    simpa [firstRefinementDiagonal] using hentry
+  exact Prod.ext hx hy
+
+theorem firstRefinementRingHom_injective : Function.Injective firstRefinementRingHom := by
+  intro z w h
+  apply firstRefinementMap_injective
+  simpa [firstRefinementRingHom] using h
+
+theorem firstRefinementMap_trace_preserving (z : ℝ × ℝ) :
+    firstRefinementTrace1 (firstRefinementMap z) = firstRefinementTrace0 z := by
+  rcases z with ⟨x, y⟩
+  change phi⁻¹ * (phi * Matrix.trace (firstRefinementDiagonal x y) + x) = phi * x + y
+  rw [firstRefinementDiagonal_trace]
+  rcases perron_trace_compatible_with_refinement with ⟨hphi, hinv⟩
+  calc
+    phi⁻¹ * (phi * (x + y) + x) = (phi⁻¹ * phi) * (x + y) + phi⁻¹ * x := by ring
+    _ = x + y + phi⁻¹ * x := by rw [hinv]; ring
+    _ = (1 + phi⁻¹) * x + y := by ring
+    _ = phi * x + y := by rw [hphi]
+
+/-- The concrete first finite refinement preserves its Perron trace pairing, by the
+shared generic trace-preserving star-map theorem. This proves one finite step only. -/
+theorem fibonacci_first_refinement_pairing :
+    ∀ x y : ℝ × ℝ,
+      firstRefinementTrace1 (star (firstRefinementRingHom y) * firstRefinementRingHom x) =
+        firstRefinementTrace0 (star y * x) :=
+  D0.Algebra.FibonacciAFTower.gns_refinement_isometry
+    firstRefinementTrace0 firstRefinementTrace1 firstRefinementRingHom
+    (by intro x y; exact firstRefinementRingHom.map_mul x y)
+    (by intro x; simpa [firstRefinementRingHom] using firstRefinementMap_star x)
+    (by intro x; simpa [firstRefinementRingHom] using firstRefinementMap_trace_preserving x)
+
 /-- **D0-VNEXT-AF-GNS-ISOMETRY-OWNER-001.** The canonical Perron-GNS isometric tower exists: the Perron
 trace is refinement-compatible (`1 + φ⁻¹ = φ`, the scalar form of `M_φ t_{N+1} = t_N`), and any
 trace-preserving `*`-inclusion induces an isometry of GNS spaces (`gns_refinement_isometry`). The isometry

@@ -1034,7 +1034,7 @@ def claimMap : List ClaimMapEntry :=
       theoremName := "",
       leanStatus := "PYTHON_CERTIFIED", releaseStatus := "PASSPORT-CLOSED", status := ClaimStatus.pythonCertClosed },
     { claimId := "D0-VNEXT-AF-GNS-ISOMETRY-OWNER-001", moduleName := "D0.VNext.PerronGNSTower;D0.Algebra.FibonacciAFTower",
-      theoremName := "perron_gns_tower_owner;gns_refinement_isometry;phi_ne_zero;perron_trace_compatible_with_refinement",
+      theoremName := "perron_gns_tower_owner;gns_refinement_isometry;phi_ne_zero;perron_trace_compatible_with_refinement;firstRefinementRingHom;firstRefinementMap_star;firstRefinementMap_injective;firstRefinementRingHom_injective;firstRefinementMap_trace_preserving;fibonacci_first_refinement_pairing",
       leanStatus := "LEAN_PROVED", releaseStatus := "CERT-CLOSED", status := ClaimStatus.leanFactProved },
     { claimId := "D0-VNEXT-MARTINGALE-DIRAC-OWNER-001", moduleName := "D0.VNext.AFMartingaleDiracScaleNoGo",
       theoremName := "dirac_scale_underdetermined",
