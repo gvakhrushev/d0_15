@@ -2714,13 +2714,327 @@ here. The direct Book03 stationary-section route remains: prove native
 admission of (111)-(117) into its original joint action domain, with
 every genuine remaining source retained.
 
+### One complete off-null operand, tag, geometry and Book source
+
+24 October2026, input95ad336f. This consumes the existing
+[paid-writer10.1-10.4](A4D_PAID_MOMENT_FIELD_WRITER_2026_10_21.md#10-open-chart-weak-query-consumption-by-the-complete-native-book-word),
+[positive partition factory, section6](sources/d0_causal_native_weighted_synthesis_2026-10-21/native_source/NATIVE_POLYNOMIAL_FIRST_JET.md),
+[coherent operand refinement](sources/d0_global_native_gr_closure_2026-10-22/COHERENT_OPERAND_REFINEMENT.md)
+and the fixed positive
+[ten-sign table](A4D_FULL_TWO_BAND_FIXED_TEN_SIGN_CAR_CHOI_SOURCE_2026_10_21.md).
+Weak operands and the absence of an operand-error/strength amplification
+were already proved there for their declared interfaces. The application
+here binds the ORIGINAL off-null operands and a real normalized tag
+compiler to THIS complete Book price, exact inverse and marked geometry.
+It does not identify the older counted-CQ price with Book.
+
+Fix h and a compact actual affine coordinate box u=c_h(Y) strictly inside
+the regular inverse-coframe/Cayley/material chart. Use the original
+six-face operands f_s,q_s of paid-writer10.1, the actual positive density
+rho_s(Y), fixed mu_s>0 and constant Omega=sum_s mu_s rho_s. Set
+
+    a_s=f_s/rho_s, b_s=q_s/rho_s, pi_s=mu_s rho_s/Omega,
+    Lambda_h >= max(1,2 sup_s |a_s|,2 sup_s |b_s|).
+
+
+The density convention is an exact binding, not a second division.
+The older native-query formulas call a_s,b_s themselves f_z,q_z.
+Their real raw coframe is e_raw=T E/(s sqrt(rho)), whereas the
+density-dressed operational coframe is e_op=sqrt(rho)e_raw=T E/s.
+The original six-face functional is degree TWO in its coframe legs.
+Thus, with the original EPS_PLUS orientation transported with T,
+
+    f_s=rho_s a_s=h^-4 P_EPS_PLUS(h e_op,U),
+    q_s=rho_s b_s
+       =s^2 sum_(a,r,t,A) eta_R,aa D_ar D_at
+                       D_h,r psi_A D_h,t psi_A
+       =sum_A ghat^(rt) D_h,r psi_A D_h,t psi_A,
+    ghat=s^-2 E^T eta_null E.
+
+These identities hold as full field functions, including moving rho
+and their derivatives. They follow from paid-writer(3),(6),(8) and
+native-first-jet4-5 with the inverse used exactly. The fixed conversion
+T carries its inherited orientation; a new REST epsilon is not inserted.
+If using Psi_read=s^2 psi, retain the resulting s^-4 in the material
+quadratic form. No density, matter calibration or area factor is fitted.
+
+Lambda_h is a fixed finite Q(p) upper bound on this box, not a moving
+calibration. The two target sign probabilities
+(1+a_s/Lambda_h)/2,(1+b_s/Lambda_h)/2 lie in[1/4,3/4].
+Compile them SEPARATELY by the existing Bernstein counter/row circuit.
+At each node also compile the positive normalized vector (pi_s)_s by
+the same owned finite-partition factory, using an independent coordinate
+packet. With B_(d,i) the tensor Bernstein basis, its ACTUAL probabilities
+and sign means satisfy
+
+    tilde pi_s=sum_i B_(d,i)(u) pi_(s,i),  sum_s pi_(s,i)=1,
+    sum_s tilde pi_s=1 EXACTLY,
+    <Z_a,s>=tilde a_s/Lambda_h, <Z_b,s>=tilde b_s/Lambda_h. (121)
+
+All node vectors are strictly positive. Exact Q(p) nodes are available
+when the specified maps preserve Q(p); otherwise use positive rational
+node vectors with EXACT sum1 and arbitrary uniform accuracy. Such vectors
+exist by density in the interior of the finite simplex. Every node probability for the TWO OPERAND BERNOULLI rows, including
+rounded rows, is chosen in[1/4,3/4]. This preserves approximation and
+the margin used below. The tag entries only obey their strictly positive
+normalized simplex constraint; they need not lie in that interval.
+The owned Bernstein derivative formula and node rounding bound prove
+C1 convergence of tilde a,tilde b,tilde pi to a,b,pi at fixed h.
+For fixed finite dimension, choose the node error o(1/d); higher source
+differences can use the already owned o(d^-3) choice.
+
+Prepare EVERY coefficient row before live selection, including every
+tag row. The tag and EACH of the two geometric and eight material SIGN
+occurrences use fresh coordinate coins, counters, rows and factory work.
+They share the sharp field key, not an unknown quantum input or the same
+binomial samples. Conditional on that sharp key, the common ALL-READY
+event and the selected tag, these actual logical operands are independent.
+All failures, unselected rows, original material/reference resources,
+OLD RIGHT and purifiers stay in the full word and price. Conditioning
+describes the logical marginal; its physical weight is gamma times that
+marginal. No failure is discarded or free classical density loader added.
+
+Now apply (116) to the COMPUTED query signs, after those operands and
+before the unchanged ten-sign report. Use m fresh blank flags in sequence
+for EACH physical SIGN occurrence. Reusing one flag is not this channel.
+The original field-preparation prefix and its decoded geometry are
+unchanged. With the fixed table scale1/64, define
+
+    kappa=p^3, tau_0=1/(64 Lambda_h), tau_m=tau_0 kappa^m,
+    Q_m(Y)=sum_s tilde pi_s(Y)
+                   r(tau_m tilde a_s(Y),tau_m tilde b_s(Y)).       (122)
+
+Here r is the original sigma-minus polynomial (34); its material sign
+is already included. The ten-sign multilinear identity proves (122)
+exactly on the generated product sector. It is not the completed-report
+mixture (1-kappa^m)r0+kappa^m r(tau_0 tilde a,tau_0 tilde b).
+For correlated or superposed key/bank inputs retain the complete
+Heisenberg effect; their marginal means need not give (122).
+
+This reuses the exact inverse and balanced recording of sections7f-j
+on the ENTIRE new raw word, including failed columns. Attenuation flags
+are blank in the real initial inventory but are NOT required to be zero
+by READY. Thus they leave the baseline gamma_(h,d)>0 and protected rank
+unchanged. The actual tag/operand factories already contribute their own
+READY factors and work. If M flags are executed, their additional complete
+inventory is exactly that following(117), with any actual routing.
+All new prefixes enter the transported cut and the true N_(h,d,m).
+Consequently the same complete Book term and its first field source are
+
+    B_(h,d,m)=H_ref(N_(h,d,m),H_full)+j_K(gamma_(h,d) Q_m),
+    Gamma_(h,d,m)(Y)
+        =j_K'(gamma_(h,d) Q_m) gamma_(h,d) a0 tau_m/Omega >0,
+    D B_(h,d,m)/Gamma_(h,d,m)=Omega DQ_m/(a0 tau_m).     (123)
+
+The strict table bounds give Q_m<=q_max<1/2 and
+|tau_m tilde a_s|,|tau_m tilde b_s|<=1/128<0.01.
+H_ref retains the true full dimension and duration and may change with
+d or m. It is field constant only at this fixed complete specification.
+Equation(123) divides ONE covector by its actual nonzero gain; it does
+not differentiate B/Gamma, normalize the physical price, or solve an
+independently varied aperture/clock equation. No I D Gamma term is
+missing. Generated state/flag rows have the same causal adjoint as before;
+truly independent preparation/controller directions keep their sources.
+
+The operator readout (102),(111)-(114) still uses the ACTUAL original
+coordinate-preparation prefix, including its finite-field key and
+recoding when needed. Its old signs have not been attenuated. Hence
+the same marked complete operator supplies the geometry consumed by
+(123), with its true decoder/lift norm. Finite words recover their
+actual discrete moments; the smooth comparison section is not a new
+continuous selector of finite words.
+
+### Source accuracy without a hidden inverse-aperture error
+
+For the Taylor calculation define
+
+    tilde rho_s=Omega tilde pi_s/mu_s,
+    tilde w_s=tilde rho_s(tilde a_s,tilde b_s),
+    tilde I_h=Omega sum_s tilde pi_s(tilde a_s+lambda_- tilde b_s),
+    epsilon_geo,h,d=||D tilde I_h-D I_h||_(V_h^*),
+    I_h=sum_s mu_s(f_s+lambda_- q_s).
+
+tilde rho is the realized REPORT weight, not a redefinition of the
+physical PF density or of the original geometric decoder. Its error
+is included in epsilon_geo. Substitute these actual quantities in
+paid-writer(36)-(37). Because sum mu_s D tilde rho_s=0 EXACTLY,
+the r0 term cancels, with no negative counterterm or removed Book anchor.
+In the same full field dual norm the result is
+
+    ||D B/Gamma-E_PC,h|| <= epsilon_geo,h,d
+                               +(M_r tau_m/a0) tilde T_(h,d),
+    tilde T_(h,d)=sup_(||V||<=1) sum_s mu_s
+      [||tilde w_s|| ||D tilde w_s[V]||/tilde rho_s
+       +||tilde w_s||^2 |D tilde rho_s[V]|/(2 tilde rho_s^2)].
+                                                               (124)
+
+Here M_r=2*10^-5 is the owned Hessian bound, E_PC,h=D I_h,
+and every shared coframe/link/material coordinate is differentiated.
+For a genuinely moving total Omega the leading source instead contains
+D I_h-(I_h/Omega)D Omega; (124) does not erase that direction.
+
+Operand and tag C1 errors in(124) are NOT amplified by1/tau_m.
+Thus the fixed Bernstein tables can be reused while m grows, unlike
+approximating the final weak report independently at each strength.
+At fixed h, first choose degree/rounding for epsilon_geo, then increase
+m until tau_m tilde T_(h,d) reaches the required budget. This finite
+ordering needs no h-uniform assertion about a fixed P5/C8 approximation.
+Taking the smallest m with tau_0 kappa^m<=h^2 uses
+m<=ceil(2 log_phi L/3), h=1/L, Lambda_h>=1. A larger true T may
+require further depth. If m>0, kappa h^2<tau_m<=h^2 for that smallest
+choice; if m=0 only the upper bound is asserted. Neither logarithmic
+depth in a growing norm budget nor physical optimality follows without
+its actual bounds.
+
+The same cancellation controls actual price secants. At fixed h,d and
+the specified compact coordinate norm, (122) is a finite polynomial
+with Q_tau-r0=tau P(tau,u). Hence
+
+    A_j=sup_(0<tau<=tau_0) ||D^j Q_tau||/tau < infinity,
+    j=1,2,3.                                            (125)
+
+Let b=1-zeta, R=rank P, d_K in(0,2), and
+eta=1-d_K gamma q_max>0. Directly from(56),
+j_K'>=2R zeta d_K eta,
+|j_K'|<=2R zeta d_K/b,
+|j_K''|<=2R zeta d_K^2/b and
+|j_K'''|<=12R zeta^2 d_K^3/b^2.
+The complete chain rule therefore improves(63) to
+
+    M3,B/inf Gamma <= Omega/[a0(1-2q_max)]
+      [(A3+6 tau A1 A2)/(1-zeta)
+                   +24 zeta tau^2 A1^3/(1-zeta)^2].      (126)
+
+The extra gamma powers are <=1 and d_K<2; the common nonzero
+R zeta d_K gamma cancels. There is no implicit1/tau or1/gamma
+loss in this fixed-catalogue third-derivative bound. Central secants
+multiply it by delta^2/6 and their ACTUAL coordinate-to-field lift
+norm. No uniformity in h, degree or lift is inferred. The inverse-word
+debt is zero only on the exact source-X interface of section7j;
+forward finite-code, stencil and all other real errors remain in
+their correctly gain-normalized budget.
+
+### Consume the existing global Euler theorem
+
+This is an application of the
+[whole-action consumer12(41)](A4D_ORIGINAL_BOOK_BOOLEAN_TRACE_CLOCK_AND_GLOBAL_EINSTEIN_2026_10_22.md#12-the-precise-global-einstein-consumer-of-these-whole-process-results),
+not another microscopic scale-weight argument. Write delta_h for the
+right side of(124) plus the actual normalized finite-word/secant debt,
+and eta_h=||D B_h composed with its actual field lift||/|Gamma_h|
+for THIS complete Book execution. For a different selected full action,
+its same-execution first-source binding must be proved and any extra
+paid-source mismatch included in delta_h. On the stated admitted test
+space,
+
+    ||E_PC,h(Y_h)|| <= delta_h+eta_h.                     (127)
+
+Thus, when the FULL testwise error tends to zero, including the actual
+quadrature normalization and sampled-test norm specified in(129), and
+the decoded sequence has a regular limit with geometric source consistency,
+EVERY limiting coframe, independent-connection and matter Euler row
+of I_PC vanishes. The full vacuum consumer then gives the entire
+Ricci-flat class on that regular chart, including nonzero Weyl
+curvature. Its nonvacuum conclusion keeps the actual two-scalar
+density/current/volume conditions; it is not arbitrary matter.
+
+Keep CurvatureConvention=EPS_PLUS for the original Brinkmann source.
+The already proved
+[all-order sign retyping](A4D_ORIGINAL_STAR_NULL_CART_SIGN_AND_ALL_ORDER_CQ_RETYPE_2026_10_21.md)
+gives f_null=-f_canonical and the SAME price in canonical coordinates
+r(-x,y), not a newly selected sigma-plus detector. The standard
+positive-oriented leading geometry is +vol_g R/2 for this EPS_PLUS
+owner. No sign, factor of two, material coupling or source norm may
+be transferred without this owned map.
+
+
+For the actual regular four-dimensional mesh sector this geometric
+consistency premise can be supplied directly. Require uniformly C3
+interpolants Z_h=(e_op,h,omega_h,psi_h), with native samples
+Y_h=Sample_h Z_h, and compactly supported C3 tests on
+a fixed enlarged slab, a uniform inverse-coframe gap, convergence to
+Z=(e_op,omega,psi) in C2, and every varied stencil inside that slab.
+Use the existing Cayley links
+U_(r,h)=(I+h omega_r/2)(I-h omega_r/2)^(-1), in the original plaquette
+order. Require the ACTUAL quadrature mu_s=c_quad,h h^4 with c_quad,h>0
+field-independent; this includes the owned uniform reference weights
+and a known global normalization. General spatially varying quadrature
+requires its own typed continuum measure, not this replacement.
+
+Here is the whole first-source argument. Put Z(epsilon)=Z+epsilon v
+inside the same uniform regular chart. Taylor's formula for matrix
+multiplication/inversion on that compact family gives, with its
+epsilon derivative bounded at the same order,
+
+    U_(r,h)=I+h omega_r+(h^2/2)omega_r^2+O_C1(epsilon)(h^3),
+    P_(rs,h)=I+h^2 F_rs+O_C1(epsilon)(h^3),
+    f_h=vol_ghat R(ghat,omega)/2+O_C1(epsilon)(h),
+    q_h=sum_A ghat^(rt) partial_r psi_A partial_t psi_A
+                                           +O_C1(epsilon)(h).   (128)
+
+Here vol_ghat=det(E)/s^4>0 on the original oriented component.
+Since det(T)=-1, this is the transported volume -det(e_op), not
+the uncorrected REST determinant. The inherited epsilon is retained.
+The second line uses the owned ordered plaquette and inverse convention;
+the third uses its exact EPS_PLUS complementary-wedge identity and
+the h^2 coframe area. Forward material differences use the very same
+sampled scalar history. Applying Taylor to the varied family, not just
+differentiating a bare O(h) value claim, proves the displayed derivative
+remainders. Compact C3 bounds give one constant for all cells and tests.
+The true h^4 Riemann sum and its differentiated density therefore have
+error at most C h ||v||_C3. Smooth field discrepancy adds
+C ||Z_h-Z||_C2 ||v||_C3. Independent connection tests are
+delta U=D Cayley_(h omega)[h delta omega]; bare unit-link tests do
+not have this normalization.
+
+Consequently define
+I_PC=int [vol_ghat R(ghat,omega)/2
+            +lambda_- sum_A ghat^(rt) partial_r psi_A partial_t psi_A] dx
+in this fixed-calibration EPS_PLUS chart. The corresponding native
+field test is v_h=D Sample_h(Z_h)[v], the derivative of the actual
+nonlinear coframe/link sampling map. Combining(124),(127),(128) gives the explicit
+global estimate
+
+    |D I_PC(Z)[v]|
+       <= C(h+||Z_h-Z||_C2)||v||_C3
+                    +[(delta_h+eta_h)/c_quad,h] ||v_h||_(V_h).        (129)
+
+The actual lift/test norm is retained. Equivalently the geometric
+continuum source has gain c_quad,h Gamma_h, not Gamma_h when c_quad,h!=1;
+both approximation and stationary residual must use that gain.
+An unnormalized L^4-cell sum has c_quad,h=h^-4 and is not mistaken for
+a Riemann sum. In particular the exact uniform-test condition is
+
+    [(delta_h+eta_h)/c_quad,h]
+       sup_(||v||_C3<=1) ||D Sample_h(Z_h)[v]||_(V_h) -> 0.
+
+No uniform sampling/decoder bound is assumed without proof.
+This supplies source consistency for the stated smooth sampled families. It supplies no compactness of arbitrary finite roots
+and no stationary-root existence. Its vacuum conclusion is full
+Ricci-flatness on the covered chart; the material conclusion retains
+the original constrained scalar current and volume equations.
+
+Equation(129) supplies forward source soundness, not existence or
+compactness of a stationary refining sequence. The exact primary
+Brinkmann/midpoint family remains its independently proved consumer,
+with its O(h^2) matter recovery; it does not prove arbitrary all42
+compactness. This approximate operand compiler does not inherit its
+exact finite roots or the earlier exact primary two-jet identity. The constructed finite words alone do not establish the
+original Book03 physical tangent domain, its compulsory self-return
+cut, or zero sources on additional admitted controls. Fixing the entire realized marked operator AND its initial readout
+data across field comparisons removes this chart's field tangents;
+a fixed programme law alone does not do so. These are the remaining native applications,
+not permission to repeat operand, inverse or fixed-report scale searches.
+
 **Parent application.** The configured stationary reporter no longer
 needs a separate supplied geometry or a scalar-return inverse: (114)
 binds its own complete marked operator to its original full field chart
 and (115) to its existing price. This is distinct from the original
 Julia128 inverse (104)-(109), whose actual nonzero price residuals remain.
+Equations(121)-(129) now add a same-operator, complete-Book open-chart
+source construction and a smooth full-field continuum consumer. Its
+normalized approximation and stationary-residual budgets stay explicit.
 The remaining physical premise is the native admission of THIS joint
-task/cut/control image and compatible refinement, including any truly
+task/cut/control image and compatible stationary refinement, including any truly
 independent stack sources. Exact Connes-metric equality and selection
 of one unique microscopic schedule are not additional prerequisites
 for the stated TheoryTransfer interpretation. No physical action,

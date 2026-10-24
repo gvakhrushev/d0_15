@@ -7849,3 +7849,111 @@ native phi self-return block must retain its ACTUAL cut; replacing it
 by the reporter's macro prepared cut is not an automatic inheritance
 of F=p^2 P. No new primitive, schedule-uniqueness premise or free
 stationarity assumption is introduced by this handoff.
+
+
+### 24 October: same complete off-null Book source and full smooth geometric limit
+
+Phase: native realization / global composition, same PR334 owner and
+constitutive/native-programme-v1. Published input
+95ad336f3ca629f79e3c1e4314ddfc4ac236ef90. Write paths are the existing
+primary residual owner section7k and this brief only. No new task,
+standalone certificate, Lean module or physical status is created.
+
+Parent substitution: apply the OWNED positive Bernstein/partition
+factories to the original EXACT inverse/Cayley operands BEFORE the
+nonlinear report, with a separate actual normalized tag compiler.
+Each of the2+8 SIGN occurrences has its own generated coordinate/count/
+row/factory resources; only the sharp field key is shared. All node
+partitions sum1 exactly; the TWO operand Bernoulli node rows remain in
+[1/4,3/4]. Original geometry marks and preparation are retained.
+Fresh deterministic B_s=CX G flags then give tau=p^(3m)/(64 Lambda)
+inside the original fixed ten-sign table. This reuses prior weak-operand
+results rather than claiming their first construction.
+
+The same complete raw inverse, balanced bank, actual clock and
+transported cut give B=H_ref+j_K(gamma Q_tau) and
+Gamma=j_K'(gamma Q_tau)gamma a0 tau/Omega. The entire source obeys
+ ||DB/Gamma-E_PC,h|| <= epsilon_geo+(M_r tau/a0)Ttilde.
+The true realized tag weights are retained in epsilon_geo. Exact
+normalization cancels r0; neither tag nor operand C1 error is amplified
+by1/tau. The full absolute H_ref remains, including changed dimensions,
+all failures, work, oldRIGHT and true durations. This is not the older
+counted-CQ price and not a derivative of B/Gamma.
+
+The current original dictionary is bound explicitly:
+ a,b are the normalized QUERY operands, whereas (f,q)=rho(a,b)
+ are the PRE-division source operands of paid-writer10.1.
+ e_op=sqrt(rho)e_raw=TE/s,
+ f=h^-4 P_EPS_PLUS(h e_op,U),
+ q=ghat^-1(D_h psi,D_h psi), ghat=s^-2 E^T eta_null E.
+These full-function identities retain moving-density derivatives.
+The original calibrated Psi_read=s^2 psi retains its corresponding
+s^-4 material factor. The inherited T-orientation and original
+sigma-minus event are not replaced. In standard oriented conventions
+the geometry is +vol_ghat R/2; detT=-1 requires
+vol_ghat=detE/s^4=-det(e_op). The existing all-order sign owner is
+consumed, not reopened.
+
+A second parent substitution supplies geometric FIRST-SOURCE
+consistency on actual smooth sampled families, not merely value
+consistency or the primary ansatz. Uniform C3 interpolants/tests,
+a regular inverse-coframe gap, Cayley U(h omega), full stencils and
+the actual quadrature mu=c_quad,h h^4 give O_C1(epsilon)(h) local
+geometry and matter remainders by Taylor on the varied compact family.
+Riemann summation yields the full limiting Palatini/CAR source with
+the true scalar quadrature multiplier. The independent connection
+test has delta U=D Cayley_(h omega)[h delta omega].
+
+The owned whole-action consumer now has the explicit combined estimate
+ |DI_PC(Z)[v]| <= C(h+||Z_h-Z||C2)||v||C3
+                   +[(delta_h+eta_h)/c_quad,h]||D Sample_h(Z_h)[v]||V_h.
+Here eta is THIS Book execution's actual lifted source residual divided
+by its own gain; a different selected full action needs its same-source
+binding and extra paid-source debt. The continuum gain is
+c_quad,h Gamma. Required uniform-test error is
+ [(delta_h+eta_h)/c_quad,h] sup_(||v||C3<=1)||D Sample_h(Z_h)[v]||V_h ->0.
+No growing decoder/lift norm is suppressed. The existing full vacuum
+Einstein theorem now consumes the specified regular stationary limit;
+nonvacuum keeps its actual two-scalar current/volume conditions.
+
+For the same fixed catalogue Q_tau-r0=tau P(tau,u) exactly. Thus its
+first THREE derivative norms are O(tau); section7k(126) supplies the
+actual complete-Book central-secant ratio without hidden1/tau or
+1/gamma loss. Constants may grow with h/degree; the real lift and
+delta^2/6 remain. Exact source-X removes only the old inverse debt.
+
+Remaining application: original Book03 joint task/cut/valuation and
+physical tangent-domain binding, actual sources on additional admitted
+controls, and a regular stationary refining execution. Finite generated
+word availability does not prove those dynamical assertions. The old
+exact primary solution and its O(h^2) matter recovery remain valid;
+this approximate compiler does not inherit exact finite roots.
+A fixed programme law alone does not freeze internal states; fixing
+the whole realized marked operator AND readout data would freeze
+this field chart. Do not return to fixed-report Golden weights,
+P5/C8 off-null identities or another independent geometric root search.
+
+Smallest decisive changed check: inline exact Q(sqrt5) polynomial
+calculation with two moving positive normalized tags and the ORIGINAL
+r checks its first-source coefficient and all three derivative
+cancellations at tau=0. Freezing moving tags, breaking partition
+normalization and thinning completed reports each fail the matching
+identity. Exact symbolic derivatives of the real j_K validate the
+chain factors in(126). Exit0, no stderr. This is an application check,
+not native selection or a numerical substitute for the analytic C1
+geometric proof.
+
+New slice from its heading through before Parent application:
+16791 UTF-8 bytes; SHA256
+8e8bfc6c32fe98142e784977dd97da332d14e72f68452aee2b3647b61dc15b45.
+Whole section7k heading through before8 INCLUDING trailing LF:
+40881 UTF-8 bytes; SHA256
+b2593b9c4f1e1b3230ad4a3cbf16fba35d96760930d7b0d2be9aef169b82fcc8.
+Three read-only reviewers accept the source/geometry/execution composition.
+Their last type correction writes the actual tangent sampling as
+v_h=D Sample_h(Z_h)[v]; the coframe test itself is not inverted.
+
+Native_continuation_map independently verifies and ACCEPTs the exact
+final pins above after that type correction. Targeted work/protocol
+validation and diff whitespace check PASS. No unchanged full128,
+broad certificate suite or Lean replay was run.
