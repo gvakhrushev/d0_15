@@ -912,3 +912,39 @@ this read-only review alone is neither.
 The read-only scope review did not build Lean; the two touched modules were
 subsequently built separately on the working tree (2,953 jobs each), with no
 theorem changes.
+
+## Cubical coboundary transfer (24 October 2026)
+
+The registered `D0-ARCHIVE-CUBICAL-COBOUNDARY-001` module previously represented
+nilpotency by a Boolean equality and fixed the direction count to four. It now
+defines the actual unit-step operator pointwise as
+`sum_r (U_r - I) c_r†`. The implementation reuses the existing finite
+`dForward` operator, whose coefficient is the refinement scale `L = N + 2`,
+by normalizing it with the proved nonzero inverse scale. The adapter proves the
+pointwise unit-step formula, `d² = 0`, and degree raising from the existing
+compiled `dForward_sq_zero` and `dForward_degree_raise` results. The direction
+count is derived from `card_role`, and the 16-state fiber from the existing CAR
+carrier theorem. `formal_support.csv` now records the exact module dependency
+from the registered coboundary to `ArchiveCubicalDifferential`.
+
+The compiled reuse record is preserved in
+`sources/d0_proof_architecture_formalization_2026-10-24/cubical_coboundary_claim_reuse.json`
+(SHA-256 `ca1a352d0e6b4d26d2ea120413a35cf853d1025839f53955c2645f662c4b20ae`).
+Against public import `D0.All`, both registered atoms resolve to declarations in
+`ArchiveCubicalCoboundary.lean`; the owner theorem's compiled proof uses the
+Fock-carrier result and the exact `d_squared_eq_zero` declaration. The captured
+source digest is `1d10e03b6fe2451cb3c90e98050f42071cd7aad8ca7bc904bb76ad88a2398655`
+and the collector digest is
+`9e00d0e06830bb13dfb8cc53cdc4f9a12844ccd950d00782fe51b7240a829cfa`. The run
+reports the pre-publication local HEAD `6b59bc57ca97275df9e973715cdb503ec8fc5c4e`
+and `worktree_dirty=true`; the source digest binds the compiled working-tree
+content. Its axiom report includes `Classical.choice`, `Quot.sound`, `propext`,
+and the named native-decision axiom from `car_create_anticommutator_int`; the
+owner package additionally inherits the one from `carCreateInt_degree_raise`.
+These are exposed dependencies, not silently removed assumptions.
+
+This is a concrete proof transfer and compiled application for the named Lean
+locators; it does not itself establish that the registered `BOOK_06` source
+section and its formula have passed C0 source-key review. The C0 unit package,
+semantic source crosswalk, and independent acceptance remain open. No claim
+status, scientific owner, physical assumption, or GR premise changed.
