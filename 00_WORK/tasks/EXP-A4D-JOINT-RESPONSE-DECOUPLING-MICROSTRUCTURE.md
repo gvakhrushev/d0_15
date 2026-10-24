@@ -8587,3 +8587,32 @@ effect-changing encoders/readiness, source/seed/frame, middle, cut and
 clock. Compatible whole stationary refinement remains open. No physical
 field minimum, all-Euler root, positive_gr/GR_closed or raw216 closure
 is claimed.
+
+Source checkpoint after7s (78c96bb8): the execution-to-X_N domain is
+still not supplied by the checked primary owners. The existing
+sources/d0_native_gr_completion_synthesis_2026-10-20/stationary_information/
+STATIONARY_EXECUTION_BRIDGE.md already records the precise required map;
+do not re-prove that conditional bridge or the free-controller obstruction
+in the primary residual7g(73)-(74).
+
+The original repository gvakhrushev/d0 was checked at
+31712846ad07ee379bd4d7982df4f04414fd0da4. Its Book I
+books/BOOK_I_ARCHITECTURE_GOLDEN_PASS30.txt:81-89 requires a finite
+computable membership boundary chi_X (Git blob
+8add930fe27ab6bb25e5c432127a86a05bca1e6e). Book II
+books/BOOK_II_MECHANISM_GOLDEN_PASS30.txt:461-462 names the cost cap and
+computable geometry class;757-780 names the admissible-history set before
+its weight and Cost-Info formula (Git blob
+19701354c459014fb88e33aace667e0904409f17). Those passages do not define
+the actual full-execution admission/variation predicate. The maintained
+Book03:390 states X_N stationarity and1127-1137 gives the bootstrap action,
+without this map. ProspectiveExecution.lean:144-156 explicitly retains
+programme optimality as a premise. Three read-only source reviews found
+no missing proved rule that selects the7s programme and fixes/exhausts
+its complete encoder, readiness, source, cut and clock variations.
+
+This is a source gap, not a theorem that no such map can exist. The next
+input is that original full-execution predicate/derivation, followed by
+its application to this same priced programme. A request for any additional
+primary definition was sent to the user. No new predicate, physical
+postulate, task or further conditional bridge is adopted to fill the gap.
