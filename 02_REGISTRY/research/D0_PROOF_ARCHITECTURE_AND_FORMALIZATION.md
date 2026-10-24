@@ -1491,5 +1491,7 @@ Source SHA-256 values are `ArchiveExteriorFrameLift.lean`
 `A4DNilpotentAffineMatterLift.lean`
 `61b434d7e4cfba4a41b7c2b0cb436ff1e9fd1c62b21412a61d5632c4aed2486b`.
 `formalization_debt_audit.py --check` passed with the unchanged three baseline
-findings, and `check_claim_map_coverage.py` passed. C0 remains unfrozen and
-independently unaccepted; CI for the new pushed head is still to be recorded.
+findings, and `check_claim_map_coverage.py` passed. GitHub CI for the pushed PR
+head `0307b2429ec3b36be1e5c9a7ebab1878e777d1e8` passed `guards` (run
+`40121538756`) and `lean-build` (run `40121538730`). The PR remains OPEN/DRAFT.
+C0 remains unfrozen and independently unaccepted.
