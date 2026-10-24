@@ -105,6 +105,36 @@ theorem d_squared_eq_zero (N : ℕ) (ψ : ArchiveCochain N) :
   rw [dForward_smul, dForward_sq_zero]
   simp
 
+/-- The normalized cubical coboundary is linear in its cochain input. -/
+theorem cubicalCoboundary_smul (N : ℕ) (c : ℝ) (ψ : ArchiveCochain N) :
+    cubicalCoboundary N (c • ψ) = c • cubicalCoboundary N ψ := by
+  change (forwardDifferenceScale N)⁻¹ • dForward N (c • ψ) =
+    c • ((forwardDifferenceScale N)⁻¹ • dForward N ψ)
+  calc
+    _ = ((forwardDifferenceScale N)⁻¹ * c) • dForward N ψ := by
+      rw [dForward_smul, smul_smul]
+    _ = (c * (forwardDifferenceScale N)⁻¹) • dForward N ψ := by
+      rw [mul_comm]
+    _ = _ := by rw [smul_smul]
+
+/-- A constant site profile scales the coboundary by one scalar, so its square
+still vanishes at every refinement. -/
+theorem weightedCubicalDifferential_constant_square_zero (N : ℕ) (a : ℝ)
+    (ψ : ArchiveCochain N) :
+    weightedCubicalDifferential N (fun _ => a)
+      (weightedCubicalDifferential N (fun _ => a) ψ) = 0 := by
+  have hinner :
+      weightedCubicalDifferential N (fun _ => a) ψ =
+        (Real.sqrt a) • cubicalCoboundary N ψ := by
+    funext p
+    rfl
+  change (fun p => Real.sqrt a *
+      cubicalCoboundary N
+        (weightedCubicalDifferential N (fun _ => a) ψ) p) = 0
+  rw [hinner, cubicalCoboundary_smul, d_squared_eq_zero]
+  funext p
+  simp
+
 /-- The unit-step cubical coboundary raises homogeneous Fock degree by one. -/
 theorem cubicalCoboundary_degree_raise (N k : ℕ) (ψ : ArchiveCochain N)
     (hψ : HomogeneousCochain N k ψ) :

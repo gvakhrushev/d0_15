@@ -1030,7 +1030,9 @@ weight `4` at the `A` intermediate site and `1` elsewhere, the degree-zero
 input yields coefficient `1` at the origin in a degree-two state. The proof
 reduces the full role/state sums using the existing CAR support theorem and
 exact integer-shadow creation coefficients; it does not use floating-point
-evaluation.
+evaluation. The shared module also proves that every constant profile remains
+nilpotent at every refinement by linearity of the base coboundary; a concrete
+unit-profile control consumes that result beside the nonconstant sample.
 
 The registered locator `archive_naive_weighted_degree_leakage_nogo_owner`
 now compiles as a compatibility wrapper to the existing
@@ -1048,20 +1050,21 @@ a consumer of `ArchiveCubicalDifferential`.
 
 The compiled declaration inventory for both linked modules is preserved at
 `sources/d0_proof_architecture_formalization_2026-10-24/weighted_cubical_module_declarations.json`
-(SHA-256 `2befe7836dc18cda505c2d3058532eae3dbbc81544c74b9ae04c115b81040c65`).
+(SHA-256 `15ea2cf87066ee6b8978073e9641347137aec8963810d14c7f99b990413ed91a`).
 Under public import `D0.All` and Lean 4.30.0 it records the exact signatures,
 proof dependencies, source ranges, and axiom footprints for the shared
-operator, the generic coefficient formula, its nonzero corollary, and the
-registered owner theorem. The owner theorem now consumes both the
-formula-based exact sample and the general nonzero criterion.
+operator, the generic coefficient formula, its nonzero corollary, the
+constant-profile theorem/control, and the registered owner theorem. The owner
+theorem now consumes both the formula-based exact sample and the general
+nonzero criterion.
 
 The compiled claim-reuse record is
 `sources/d0_proof_architecture_formalization_2026-10-24/naive_weighted_leakage_claim_reuse.json`
-(SHA-256 `8d55cda7342a6bcf0d21a7bf0b8fa87eb04d49b85ef7879b7e9f57986c880512`).
+(SHA-256 `0ba85b9bc6229115ead668b89d42a5a3864edc67bf4605ecb19b82db3fa81312`).
 The exact theorem locator resolves through public import `D0.All`; its
 elaborated proof dependency is the scoped CAR owner theorem above. The record
 binds Lean source digest
-`4b270609c79d82a480331baa8a9e6befb2546f0a8157c03b48dfc4e94401c43a`, collector
+`9bc7b35ec878966c68d7d025bb87037364d3d376a5dad3220e1f36f87cc0832a`, collector
 SHA-256 `1068f73c98eddcbd75cd6ff004b0e3b68642bfd66e7417fa9be4e1f9e4c46745`,
 pre-publication local HEAD `6b59bc57ca97275df9e973715cdb503ec8fc5c4e`, and
 `worktree_dirty=true`. Its axiom footprint includes `Classical.choice`,

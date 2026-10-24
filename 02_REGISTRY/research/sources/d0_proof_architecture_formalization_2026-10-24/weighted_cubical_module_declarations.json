@@ -2,7 +2,7 @@
   "schema": "d0-lean-declaration-inventory-v1",
   "snapshot_commit": "6b59bc57ca97275df9e973715cdb503ec8fc5c4e",
   "worktree_dirty": true,
-  "lean_source_digest": "4b270609c79d82a480331baa8a9e6befb2546f0a8157c03b48dfc4e94401c43a",
+  "lean_source_digest": "9bc7b35ec878966c68d7d025bb87037364d3d376a5dad3220e1f36f87cc0832a",
   "collector_sha256": "db0648931c63054d7e9ba4546790035d61d76fc0b4e20c190794c99f197f9104",
   "toolchain": "leanprover/lean4:v4.30.0",
   "public_import_root": "D0.All",
@@ -221,21 +221,21 @@
         "declaration": {
           "end": {
             "column": 49,
-            "line": 128
+            "line": 158
           },
           "start": {
             "column": 0,
-            "line": 115
+            "line": 145
           }
         },
         "selection": {
           "end": {
             "column": 40,
-            "line": 118
+            "line": 148
           },
           "start": {
             "column": 8,
-            "line": 118
+            "line": 148
           }
         }
       },
@@ -322,21 +322,21 @@
         "declaration": {
           "end": {
             "column": 49,
-            "line": 472
+            "line": 480
           },
           "start": {
             "column": 0,
-            "line": 442
+            "line": 450
           }
         },
         "selection": {
           "end": {
             "column": 60,
-            "line": 446
+            "line": 454
           },
           "start": {
             "column": 8,
-            "line": 446
+            "line": 454
           }
         }
       },
@@ -479,21 +479,21 @@
         "declaration": {
           "end": {
             "column": 54,
-            "line": 489
+            "line": 497
           },
           "start": {
             "column": 0,
-            "line": 474
+            "line": 482
           }
         },
         "selection": {
           "end": {
             "column": 56,
-            "line": 476
+            "line": 484
           },
           "start": {
             "column": 8,
-            "line": 476
+            "line": 484
           }
         }
       },
@@ -1632,21 +1632,21 @@
         "declaration": {
           "end": {
             "column": 51,
-            "line": 113
+            "line": 143
           },
           "start": {
             "column": 0,
-            "line": 108
+            "line": 138
           }
         },
         "selection": {
           "end": {
             "column": 38,
-            "line": 109
+            "line": 139
           },
           "start": {
             "column": 8,
-            "line": 109
+            "line": 139
           }
         }
       },
@@ -1683,6 +1683,121 @@
         "instAddNat",
         "instHAdd",
         "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveCubicalCoboundary.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "c",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "ψ",
+          "type": "D0.Geometry.ArchiveCochainBasis N → ℝ"
+        }
+      ],
+      "conclusion_whnf": "D0.Geometry.cubicalCoboundary N (c • ψ) = c • D0.Geometry.cubicalCoboundary N ψ",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 30,
+            "line": 118
+          },
+          "start": {
+            "column": 0,
+            "line": 108
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 30,
+            "line": 109
+          },
+          "start": {
+            "column": 8,
+            "line": 109
+          }
+        }
+      },
+      "elaborated_type": "∀ (N : ℕ) (c : ℝ) (ψ : D0.Geometry.ArchiveCochain N),\n  D0.Geometry.cubicalCoboundary N (c • ψ) = c • D0.Geometry.cubicalCoboundary N ψ",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveCubicalCoboundary",
+      "name": "D0.Geometry.cubicalCoboundary_smul",
+      "proof_dependencies": [
+        "CommMagma.toMul",
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.cubicalCoboundary",
+        "D0.Geometry.dForward",
+        "D0.Geometry.dForward_smul",
+        "D0.Geometry.forwardDifferenceScale",
+        "Eq",
+        "Eq.mpr",
+        "Eq.refl",
+        "Function.hasSMul",
+        "HMul.hMul",
+        "HSMul.hSMul",
+        "Inv.inv",
+        "Monoid.toMulAction",
+        "Monoid.toMulOneClass",
+        "Monoid.toSemigroup",
+        "MulAction.toSemigroupAction",
+        "MulOne.toMul",
+        "MulOneClass.toMulOne",
+        "Nat",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocCommSemiring",
+        "NonUnitalNonAssocCommSemiring.toCommMagma",
+        "NonUnitalNormedCommRing.toNonUnitalCommRing",
+        "NormedCommRing.toNonUnitalNormedCommRing",
+        "Pi.mulAction",
+        "Real",
+        "Real.instInv",
+        "Real.instMonoid",
+        "Real.instMul",
+        "Real.normedCommRing",
+        "SemigroupAction.toSMul",
+        "Trans.trans",
+        "congrArg",
+        "id",
+        "instHMul",
+        "instHSMul",
+        "instSMulOfMul",
+        "instTransEq",
+        "mul_comm",
+        "smul_smul"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.cubicalCoboundary",
+        "Eq",
+        "Function.hasSMul",
+        "HSMul.hSMul",
+        "Nat",
+        "Real",
+        "Real.instMul",
+        "instHSMul",
+        "instSMulOfMul"
       ],
       "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveCubicalCoboundary.lean"
     },
@@ -2443,21 +2558,21 @@
         "declaration": {
           "end": {
             "column": 27,
-            "line": 440
+            "line": 448
           },
           "start": {
             "column": 0,
-            "line": 433
+            "line": 441
           }
         },
         "selection": {
           "end": {
             "column": 52,
-            "line": 434
+            "line": 442
           },
           "start": {
             "column": 8,
-            "line": 434
+            "line": 442
           }
         }
       },
@@ -2710,21 +2825,21 @@
         "declaration": {
           "end": {
             "column": 15,
-            "line": 431
+            "line": 439
           },
           "start": {
             "column": 0,
-            "line": 428
+            "line": 436
           }
         },
         "selection": {
           "end": {
             "column": 43,
-            "line": 429
+            "line": 437
           },
           "start": {
             "column": 8,
-            "line": 429
+            "line": 437
           }
         }
       },
@@ -2769,21 +2884,21 @@
         "declaration": {
           "end": {
             "column": 15,
-            "line": 431
+            "line": 439
           },
           "start": {
             "column": 2,
-            "line": 431
+            "line": 439
           }
         },
         "selection": {
           "end": {
             "column": 15,
-            "line": 431
+            "line": 439
           },
           "start": {
             "column": 2,
-            "line": 431
+            "line": 439
           }
         }
       },
@@ -3344,21 +3459,21 @@
         "declaration": {
           "end": {
             "column": 10,
-            "line": 426
+            "line": 434
           },
           "start": {
             "column": 0,
-            "line": 412
+            "line": 420
           }
         },
         "selection": {
           "end": {
             "column": 58,
-            "line": 414
+            "line": 422
           },
           "start": {
             "column": 8,
-            "line": 414
+            "line": 422
           }
         }
       },
@@ -3774,6 +3889,185 @@
         "Real.instMul",
         "Real.sqrt",
         "instHMul"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveNaiveWeightedDegreeLeakageNoGo.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "D0.Geometry.car_create_anticommutator_int._native.native_decide.ax_1_1",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "a",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "ψ",
+          "type": "D0.Geometry.ArchiveCochainBasis N → ℝ"
+        }
+      ],
+      "conclusion_whnf": "D0.Geometry.weightedCubicalDifferential N (fun x => a) (D0.Geometry.weightedCubicalDifferential N (fun x => a) ψ) = 0",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 6,
+            "line": 136
+          },
+          "start": {
+            "column": 0,
+            "line": 120
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 56,
+            "line": 122
+          },
+          "start": {
+            "column": 8,
+            "line": 122
+          }
+        }
+      },
+      "elaborated_type": "∀ (N : ℕ) (a : ℝ) (ψ : D0.Geometry.ArchiveCochain N),\n  D0.Geometry.weightedCubicalDifferential N (fun x => a) (D0.Geometry.weightedCubicalDifferential N (fun x => a) ψ) = 0",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveCubicalCoboundary",
+      "name": "D0.Geometry.weightedCubicalDifferential_constant_square_zero",
+      "proof_dependencies": [
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.cubicalCoboundary",
+        "D0.Geometry.cubicalCoboundary_smul",
+        "D0.Geometry.d_squared_eq_zero",
+        "D0.Geometry.weightedCubicalDifferential",
+        "Eq",
+        "Eq.mpr",
+        "Eq.refl",
+        "Eq.trans",
+        "Function.hasSMul",
+        "HMul.hMul",
+        "HSMul.hSMul",
+        "MulZeroClass.mul_zero",
+        "MulZeroClass.toZero",
+        "Nat",
+        "OfNat.ofNat",
+        "Pi.instZero",
+        "Real",
+        "Real.instMul",
+        "Real.instZero",
+        "Real.semiring",
+        "Real.sqrt",
+        "True",
+        "Zero.toOfNat0",
+        "congrArg",
+        "congrFun'",
+        "eq_self",
+        "funext",
+        "id",
+        "instHMul",
+        "instHSMul",
+        "instMulZeroClassOfSemiring",
+        "instSMulOfMul",
+        "of_eq_true"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.weightedCubicalDifferential",
+        "Eq",
+        "Nat",
+        "OfNat.ofNat",
+        "Pi.instZero",
+        "Real",
+        "Real.instZero",
+        "Zero.toOfNat0"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveCubicalCoboundary.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "D0.Geometry.car_create_anticommutator_int._native.native_decide.ax_1_1",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [],
+      "conclusion_whnf": "D0.Geometry.weightedCubicalDifferential 1 (fun x => 1)\n    (D0.Geometry.weightedCubicalDifferential 1 (fun x => 1)\n      (D0.Geometry.scalarCochain 1 D0.Geometry.naiveWeightTestScalarProfile)) =\n  0",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 62,
+            "line": 418
+          },
+          "start": {
+            "column": 0,
+            "line": 412
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 62,
+            "line": 414
+          },
+          "start": {
+            "column": 8,
+            "line": 414
+          }
+        }
+      },
+      "elaborated_type": "D0.Geometry.weightedCubicalDifferential 1 (fun x => 1)\n    (D0.Geometry.weightedCubicalDifferential 1 (fun x => 1)\n      (D0.Geometry.scalarCochain 1 D0.Geometry.naiveWeightTestScalarProfile)) =\n  0",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveNaiveWeightedDegreeLeakageNoGo",
+      "name": "D0.Geometry.weighted_cubical_differential_constant_profile_control",
+      "proof_dependencies": [
+        "D0.Geometry.naiveWeightTestScalarProfile",
+        "D0.Geometry.scalarCochain",
+        "D0.Geometry.weightedCubicalDifferential_constant_square_zero",
+        "Nat",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Real",
+        "Real.instOne",
+        "instOfNatNat"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.naiveWeightTestScalarProfile",
+        "D0.Geometry.scalarCochain",
+        "D0.Geometry.weightedCubicalDifferential",
+        "Eq",
+        "Nat",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Pi.instZero",
+        "Real",
+        "Real.instOne",
+        "Real.instZero",
+        "Zero.toOfNat0",
+        "instOfNatNat"
       ],
       "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveNaiveWeightedDegreeLeakageNoGo.lean"
     },

@@ -409,6 +409,14 @@ theorem weighted_cubical_differential_square_delta_nonzero
     (ne_of_gt (Real.sqrt_pos.2 h0))
     (sub_ne_zero.mpr hpaths)
 
+/-- Concrete positive control: the registered scalar input still squares to
+zero under a constant unit site profile. -/
+theorem weighted_cubical_differential_constant_profile_control :
+    weightedCubicalDifferential 1 (fun _ => (1 : ℝ))
+      (weightedCubicalDifferential 1 (fun _ => (1 : ℝ))
+        (scalarCochain 1 naiveWeightTestScalarProfile)) = 0 := by
+  exact weightedCubicalDifferential_constant_square_zero 1 1 _
+
 /-- Exact evaluation of the two-step weighted differential on the CAR16
 carrier: the selected degree-two coefficient is `1`, hence is nonzero. -/
 theorem naive_weighted_cubical_differential_square_witness :
