@@ -1406,9 +1406,24 @@ compiled from this worktree's Lean sources with Lean 4.30.0 into
 `/private/tmp/d0-pr402-lean-overlay`; imports were resolved from the preserved
 checkout's pinned Lake package cache and the prior overlay for unchanged
 modules. This is a narrow module plus import-root overlay integration compile,
-not a fresh `lake build D0.All`. The earlier PR #402 CI results were from the
-preceding head; current-head GitHub checks are still required after publishing
-this checkpoint. C0 remains unfrozen and independently unaccepted.
+not a fresh `lake build D0.All`. The public declaration collector's generated
+Lean query, run directly against this compiled overlay import root, resolved
+the three new theorem names in `D0.Geometry.ArchiveJuliaRaisingOperatorReadout`;
+it reports the basis-state theorem at lines 199–225 with binders `r : Role`,
+`s : ArchiveFockState`, and conclusion exactly
+`archiveFockExteriorEquiv (carCreateEnd r (Pi.single s 1)) =
+ι ℝ (archiveRoleBasis r) * archiveFockExteriorBasis s`. The generated query
+also records the whole-creator and whole-query signatures and their common
+axiom footprint. This direct metadata query used source digest
+`9f91c6206c8b781a506fc896c3c799415dcf44f7bd3ee046d8b629c001073ddb` and
+collector SHA-256
+`61634b3f3d9524c979d9b1092a86073b6f67c4e5bcbc27f434e3c00a7f339ff3`; it did
+not invoke the CLI wrapper's Lake rebuild/freshness gate.
+
+GitHub CI for the exact proof-source head
+`81eda63d9d3ece0a34bac92930db650a4032b7c9` passed both `guards` (run
+`40120569575`) and `lean-build` (run `40120569693`). C0 remains unfrozen and
+independently unaccepted.
 
 The updated `03_FORMALIZATION/D0/Geometry/ArchiveJuliaRaisingOperatorReadout.lean`
 has SHA-256 `5b1192c912e22e622ae535fa65a2030839ae819b4dd744165ca62010ca29c057`.
