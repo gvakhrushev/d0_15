@@ -1,0 +1,207 @@
+{
+  "checks": [
+    "4D all-input Heisenberg report effect is diagonal with exact coin weights",
+    "all-input affine effect identity including unknown reference",
+    "original native angle gives offset p squared and field scale p cubed",
+    "old bank observable retained exactly including coherence 00",
+    "old bank observable retained exactly including coherence 01",
+    "old bank observable retained exactly including coherence 10",
+    "old bank observable retained exactly including coherence 11",
+    "explicit report-bank Bell fixture keeps its old bank marginal",
+    "8D native tail keeps every c0 complement column k=-3",
+    "complete native tail commutes with genuine root READY k=-3",
+    "8D native tail keeps every c0 complement column k=-1",
+    "complete native tail commutes with genuine root READY k=-1",
+    "8D native tail keeps every c0 complement column k=1",
+    "complete native tail commutes with genuine root READY k=1",
+    "8D native tail keeps every c0 complement column k=3",
+    "complete native tail commutes with genuine root READY k=3",
+    "conditional native coin unit-u speed squared is finite at p cubed",
+    "native unit-u field aperture has an exact nonzero inverse",
+    "declared normalized query-control source is strictly nonzero",
+    "owned algebraic return certificate applied to query tail Q=33",
+    "actual native query feature endpoints straddle p cubed Q=33",
+    "actual query endpoints stay in the positive coin feature chart Q=33",
+    "exact finite conditional-query secant Q=33",
+    "actual j_K endpoint parameters satisfy the positive-return chart gamma=1/8 Q=33",
+    "complete Book j gain is positive and both endpoint prices differ gamma=1/8 Q=33",
+    "actual divided Book gain and readiness cancel exactly gamma=1/8 Q=33",
+    "actual j_K endpoint parameters satisfy the positive-return chart gamma=1048575/1048576 Q=33",
+    "complete Book j gain is positive and both endpoint prices differ gamma=1048575/1048576 Q=33",
+    "actual divided Book gain and readiness cancel exactly gamma=1048575/1048576 Q=33",
+    "actual forward/inverse/new-record inventory L=67 k=-65",
+    "two transported-middle CX are really paid L=67 k=-65",
+    "actual forward/inverse/new-record inventory L=67 k=1",
+    "two transported-middle CX are really paid L=67 k=1",
+    "actual forward/inverse/new-record inventory L=67 k=67",
+    "two transported-middle CX are really paid L=67 k=67",
+    "coin plus its recording bank multiplies full fibre by four L=67",
+    "owned algebraic return certificate applied to query tail Q=580",
+    "actual native query feature endpoints straddle p cubed Q=580",
+    "actual query endpoints stay in the positive coin feature chart Q=580",
+    "exact finite conditional-query secant Q=580",
+    "actual j_K endpoint parameters satisfy the positive-return chart gamma=1/8 Q=580",
+    "complete Book j gain is positive and both endpoint prices differ gamma=1/8 Q=580",
+    "actual divided Book gain and readiness cancel exactly gamma=1/8 Q=580",
+    "actual j_K endpoint parameters satisfy the positive-return chart gamma=1048575/1048576 Q=580",
+    "complete Book j gain is positive and both endpoint prices differ gamma=1048575/1048576 Q=580",
+    "actual divided Book gain and readiness cancel exactly gamma=1048575/1048576 Q=580",
+    "actual forward/inverse/new-record inventory L=1161 k=-1159",
+    "two transported-middle CX are really paid L=1161 k=-1159",
+    "actual forward/inverse/new-record inventory L=1161 k=1",
+    "two transported-middle CX are really paid L=1161 k=1",
+    "actual forward/inverse/new-record inventory L=1161 k=1161",
+    "two transported-middle CX are really paid L=1161 k=1161",
+    "coin plus its recording bank multiplies full fibre by four L=1161",
+    "completed native READY/report-controlled G4 middle restores arbitrary dirty source spin",
+    "native middle includes all negative-G source and routing calls",
+    "completed middle preserves the c0 sectors required for co-transport",
+    "all-column compensated middle and c0 complement restore exactly k=-1",
+    "parity report itself restores on every input column k=-1",
+    "all-column compensated middle and c0 complement restore exactly k=1",
+    "parity report itself restores on every input column k=1",
+    "all-column compensated middle and c0 complement restore exactly k=3",
+    "parity report itself restores on every input column k=3",
+    "compensated full operator preserves an explicitly entangled unknown reference",
+    "uncompensated middle was not already invariant",
+    "symbolic parity compensation preserves old effect and its complete field Jacobian"
+  ],
+  "checks_passed": 65,
+  "compensated_native_variation": {
+    "all_column_identity": "T^dagger*(C*M*C)*T=M; T=C*W",
+    "all_native_Dq_vanish": false,
+    "compensated_total_added_stages": "16*L+6",
+    "compulsory_task_selection": false,
+    "existing_field_jacobian": "D_Y E_comp=D_Y E_old; D_u E_comp=0",
+    "extra_middle_CX": 2,
+    "native_middle": "controlled G^4 on distinct meter; controls c0 and report",
+    "native_middle_stages": 32,
+    "old_and_new_absolute_prices_equal": false,
+    "required_commutators": "[M,W]=0; M coin-blind AND [M,P_c0]=0",
+    "same_task_implementation_map": true
+  },
+  "effect_and_locality": {
+    "READY_unchanged_exactly": true,
+    "all_input_effect": "E_out(u)=I/2+u*(E-I/2)",
+    "aperture": "tau_out=p^3*tau",
+    "arbitrary_raw_pulse_lift_assigned": false,
+    "conditional_coin_speed_squared_at_native_u0": "1/(16*p^3)",
+    "old_bank_excludes_report_and_new_coin": true,
+    "old_geometric_bank_marginal_unchanged": true,
+    "original_angle_effect": "p^2*I+p^3*E"
+  },
+  "finite_complete_price_source": {
+    "complete_j": "-r*log(1-zeta+zeta*(1-d_K*x)^2), r>0",
+    "configured_d_K": "2*p^2",
+    "configured_original_conditional_q": "1/4",
+    "configured_ready_probabilities": [
+      "1/8",
+      "1-2^-20"
+    ],
+    "configured_tau": "1/1024",
+    "configured_zeta": "2^-20",
+    "endpoint_certificates": [
+      {
+        "L": 67,
+        "Q": 33,
+        "codes": [
+          -65,
+          1,
+          67
+        ],
+        "inventory": [
+          {
+            "additional_record_CX": 2,
+            "compensated_total_added_stages": 1078,
+            "forward_stages": 202,
+            "inverse_stages": 872,
+            "k": -65,
+            "total_added_stages": 1076,
+            "transported_middle_CX": 2
+          },
+          {
+            "additional_record_CX": 2,
+            "compensated_total_added_stages": 1078,
+            "forward_stages": 202,
+            "inverse_stages": 872,
+            "k": 1,
+            "total_added_stages": 1076,
+            "transported_middle_CX": 2
+          },
+          {
+            "additional_record_CX": 2,
+            "compensated_total_added_stages": 1078,
+            "forward_stages": 202,
+            "inverse_stages": 872,
+            "k": 67,
+            "total_added_stages": 1076,
+            "transported_middle_CX": 2
+          }
+        ],
+        "u_a_exact_digest": "a768b8b67d0fa799a059052aab94d204381441285ddd638ec01e4ceda501d02e",
+        "u_b_exact_digest": "01b0f55b0f4545b48e110a4faa6fbdb9fa248d6bbfe640d77de63ff2b05136f4"
+      },
+      {
+        "L": 1161,
+        "Q": 580,
+        "codes": [
+          -1159,
+          1,
+          1161
+        ],
+        "inventory": [
+          {
+            "additional_record_CX": 2,
+            "compensated_total_added_stages": 18582,
+            "forward_stages": 3484,
+            "inverse_stages": 15094,
+            "k": -1159,
+            "total_added_stages": 18580,
+            "transported_middle_CX": 2
+          },
+          {
+            "additional_record_CX": 2,
+            "compensated_total_added_stages": 18582,
+            "forward_stages": 3484,
+            "inverse_stages": 15094,
+            "k": 1,
+            "total_added_stages": 18580,
+            "transported_middle_CX": 2
+          },
+          {
+            "additional_record_CX": 2,
+            "compensated_total_added_stages": 18582,
+            "forward_stages": 3484,
+            "inverse_stages": 15094,
+            "k": 1161,
+            "total_added_stages": 18580,
+            "transported_middle_CX": 2
+          }
+        ],
+        "u_a_exact_digest": "7421422b99a5467d7b0f3aa5d2b75bca03c0600cfe6771baddd6243ebfbe10d2",
+        "u_b_exact_digest": "4794fc2f968faf6828f6588965f91313bda30051c33facb46bb37de7fe0216cc"
+      }
+    ],
+    "exact_gain_normalized_source": "Omega*(q-1/2)/(a0*p^3*tau)",
+    "gamma_AA_depth_independent": true,
+    "positive_gain_scope": "0<x<1/2, 0<d_K<2, 0<zeta<1"
+  },
+  "inputs_sha256": {
+    "check_native_execution_domain.py": "6da9769a550fd9918dcb6cd3b5795aaf66cfdc21db285fb963c198d99f949190",
+    "check_query_control.py": "06b7488385898998e70da4ca3c9587ced3536f8d53f2ca6fe248d1245874c224",
+    "native_execution.py": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c"
+  },
+  "schema": "d0.native-query-control-check/1",
+  "scope": {
+    "absolute_prices_of_different_lengths_identified": false,
+    "all_existing_candidate_stationarity_disproved": false,
+    "coin_and_new_record_bank_are_paid": true,
+    "finite_controller_source_comparison": true,
+    "full_GR_closed": false,
+    "full_failures_and_c0_complement_retained": true,
+    "local_minimum_or_unrestricted_no_go": false,
+    "old_suites_or_AA_replayed": false,
+    "whole_echo_and_same_clock_required_within_each_stencil": true
+  },
+  "status": "PASS"
+}

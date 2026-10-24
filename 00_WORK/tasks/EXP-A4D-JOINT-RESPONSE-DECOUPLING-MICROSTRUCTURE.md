@@ -8810,3 +8810,86 @@ CHECK_RESULT.json bdc83ae2ca53e40b48e5ec3b83860597627314992fc31238d52325632cb4e6
 Affected work, agent-protocol, assembly, repository and whitespace checks
 pass. Scientific status, physical admission and full GR remain open;
 no formal/claim/assembly promotion or fresh Lean build is asserted.
+
+
+### 25 October: actual conditional-query source and its paid test transport
+
+Phase: native realization / source composition, same constitutive owner,
+native-programme-v1 carrier and PR #334. Input checkpoint:
+17905011461b946302fa90a144538940bdb52356. Exact parent premise:
+the conditional-query source Dq remaining after7u readiness control.
+Write paths: primary residual7v, this brief and
+02_REGISTRY/research/sources/d0_native_query_control_2026-10-25/.
+No independent execution, slot or claim is created.
+
+Changed mathematical input: a fresh ordinary coin a, an actual
+W_(L,k)(c0,a) word and CX(a,b) on the retained old report. It preserves
+READY and all old source-bank marginals, but its conditional effect is
+I/2+u(E-I/2). At u0=p^3 the field aperture is u0 tau. The complete Book
+price with a FIXED middle has the exact native finite source
+Omega(q-1/2)/(u0 a0 tau), independent of readiness-amplification depth.
+Actual Q=33,580 equal-inventory code endpoints, protected references,
+failure columns, inverse routing and a separate new coin-recording bank
+remain included. New fibre is4 times the old fibre, input rank unchanged;
+the full echo adds16L+4 primitive stages, including balanced recording.
+
+The retained coin also gives a concrete positive transport. Execute two
+more native CX around the old middle: M_parity=C M C. For the original
+coin-blind middle preserving c0 sectors, with its DISTINCT target meter,
+T^dagger M_parity T=M on ALL columns. This is the actual parity recovery
+of the old report, with16L+6 added stages. It exactly restores the old
+feedback and field source at the new actual clock/fibre. New heat stays
+paid and is constant within each common-inventory stencil; old/new
+absolute prices or entire clock profiles are not equated.
+
+Precise substitution: primary(212)-(213) supplies the missing observe-
+commutes/source map for this reversible report recoding. Primary(209)
+retains the controller row when the middle is held fixed. The generic
+verification and TheoryTransfer owners are consumed; a self-verifier
+does not independently select the physical query or spatial interpretation.
+No semantic correctness fibre is declared to exhaust native executions.
+
+Carrier/norm/source convention: complete protected input with oldRIGHT,
+true READY and all failure/work columns, the whole balanced Book echo,
+actual positive divided gain and the original field calibration. The
+conditional endpoint lift has squared unit-u speed1/[4(1-u^2)], equal
+to1/(16p^3) at the native base. This is not an admitted continuous
+native pulse or a C1 claim for different retained code/clock histories.
+
+Smallest decisive check: exact full-column tail/middle intertwining and
+parity effect; fixed-test gain-normalized source; actual native finite
+endpoints and complete forward/inverse/new-record inventories. Unchanged
+large geometry, full128, readiness and Lean suites need no replay here.
+
+Remaining parent application: actual original graded-CAR/solder/pairing/
+link and scene-operator transport with its complete physical price, or
+a native stationary/constraint law. Independent genuine query, cut,
+inverse/frame/middle/source and additional selected Info/work rows remain.
+No complete stationary refinement, unrestricted no-go, physical admission
+promotion, GR_closed or raw216 completion follows from this checkpoint.
+
+Final primary section7v:8960 UTF-8 bytes, SHA256
+e06bbbca23670dcf195e3b05a0fe1694e6f8263d3bcd2f7c3bc543cb662fa9ac.
+Preceding7t and7u retain their exact published14993/11974-byte pins.
+Actual final narrow checker: Python3.9.6/SymPy, exit0,65 checks. The
+32-stage middle is compiled from native G/CX/SourceI and checked on64
+columns with dirty source-spin;16D logical and entangled-reference tests
+verify the entire compensated operator and parity field Jacobian.
+The exact finite query-source stencils retain their separate fixed-test
+contrasts. Root verified every final input/receipt hash and reused the
+bounded run; no old suite or monolithic large programme was replayed.
+
+Final new packet SHA256 pins:
+check_query_control.py 06b7488385898998e70da4ca3c9587ced3536f8d53f2ca6fe248d1245874c224
+CHECK_RESULT.json 00451cfa5d70dcf50ab81310d6e7ae5750518afdd34adc8f921a20c652d7e7fb
+Unchanged native_execution.py input:
+222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c.
+Unchanged exact coefficient module input:
+6da9769a550fd9918dcb6cd3b5795aaf66cfdc21db285fb963c198d99f949190.
+
+Independent operator/source and implementation/source reviews reread
+and ACCEPTED the exact final8960-byte section pin. They explicitly
+distinguish the configured positive gamma fixtures from a reconstructed
+full amplified programme. Affected work, agent-protocol, assembly,
+repository and whitespace guards pass; scientific promotion remains false.
+No unchanged large-suite replay, new claim or Lean build is asserted.

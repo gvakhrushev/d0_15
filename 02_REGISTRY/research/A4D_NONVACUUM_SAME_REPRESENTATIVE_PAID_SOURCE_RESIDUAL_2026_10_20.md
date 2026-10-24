@@ -5568,6 +5568,170 @@ joint stationary refinement, positive_gr, GR_closed or raw216 closure
 is claimed by the readiness operation alone.
 
 
+## 7v. Transport the actual query test, and retain the source when that test is fixed
+
+25 October 2026; native realization / source composition, same constitutive
+owner and native-programme-v1 interface. Input is the published7u checkpoint
+17905011461b946302fa90a144538940bdb52356. The parent premise is the
+remaining conditional-query source Dq in(202)-(204). The changed input is
+one literal native report recoding AND its paid inverse test map, rather
+than another readiness operation or another geometric stationary root.
+The bounded executable witness and its receipt are in
+[d0_native_query_control_2026-10-25](sources/d0_native_query_control_2026-10-25/check_query_control.py).
+
+### A READY-preserving native edit has a non-small source at a fixed test
+
+Let A_r be the actual complete forward programme of7u, with its genuine
+READY projector R, root bit c0, final report b and all unknown protected
+DATA/reference/oldRIGHT. READY excludes b and satisfies R<=P_(c0=1).
+Append one initially blank ORDINARY coin a, with chronological tail
+
+    T_(L,k)=W_(L,k)(c0,a);CX(a,b),
+    u_k=cos(2k theta),  |k|<=L, L-k even.                (206)
+
+The W cell is the SAME literal G/CX construction used in7t. On c0=1
+it gives G^k on a; the c0=0 block is G^L, not a deleted failure block.
+Every tail commutes with R. For the original conditional report effect E,
+on EVERY protected input and arbitrary external reference, the new effect
+and its unnormalized version are exactly
+
+    E_out(u)=I/2+u(E-I/2),
+    F_out(u)=gamma_r E_out(u).                           (207)
+
+The tail acts on a,b and reads c0. It preserves the old geometric/source
+bank marginal, even when that bank is entangled with b. It preserves
+readiness exactly. It does change the bare report response and some
+retained correlations. These distinctions matter: equality of normalized
+geometry after calibration is not equality of the complete physical task.
+
+At the original k=1, u0=p^3>0. If E=b0 I+tau T_geom, its new offset is
+1/2+u0(b0-1/2) and its field aperture is u0 tau. All42 field gradients
+are multiplied by u0. Thus the old normalized geometric source and its
+field stationary roots survive, while an independent controller row can
+still be nonzero. Put the whole edited word, its actual inverse, the SAME
+fixed middle and balanced recording into the Book construction(97).
+At each common-inventory stencil its absolute price is
+
+    B_k=H_ref(N_new,D_new)+j_K(gamma_r q_out(u_k)),
+    q_out(u)=1/2+u(q-1/2).                              (208)
+
+For the ACTUAL positive divided gain A_ab of j_K, take
+Gamma_out,ab=A_ab gamma_r u0 a0 tau/Omega. Then
+
+    (B_b-B_a)/[Gamma_out,ab (u_b-u_a)]
+       =Omega(q-1/2)/(u0 a0 tau).                       (209)
+
+This is an exact finite-code equality. It is nonzero when q!=1/2 and
+does not decrease with readiness-amplification depth. The existing
+Q=33,580 native returns give codes(-65,67),(-1159,1161), with a common
+k=1 base at L=67,1161 respectively; their exact algebraic u endpoints
+straddle u0. The receipt checks the positive-return j_K chart on its
+declared q=1/4,tau=2^-10 examples and two configured gamma values. The
+symbolic identity(209) does not assert those examples exhaust all sources.
+
+The conditional endpoint lift is explicit. For any purified old output
+Psi, including its protected reference, the successful state is
+
+    Phi(alpha)=cos(alpha)|0>_a Psi+sin(alpha)|1>_a X_b Psi,
+    <Phi,D_u Phi>=0,
+    ||D_u Phi||^2=1/[4(1-u^2)]=1/(16p^3) at u0.         (210)
+
+Actual endpoint distance is 2|sin((alpha_b-alpha_a)/2)|. The raw forward
+state lift has squared norm Pr(c0=1)/[4(1-u^2)], with
+gamma_r<=Pr(c0=1)<=1. These are endpoint-state norms, not a declaration
+of a continuous native pulse or a C1 curve of full retained code/clock
+histories. Those histories retain their own topology and finite secants.
+
+Both the new coin AND one new coin-recording-bank bit are initially blank
+work. They multiply the full thermal fibre by4 and leave protected input
+rank unchanged. For a coin away from the source port, literal tail and
+inverse counts, including the two balanced recording CX, are
+
+    Delta n_G=2L, Delta n_CX=10L+4, Delta n_SourceI=4L,
+    Delta N_fixed_test=16L+4.                            (211)
+
+The inverse retains dirty source-port/spin columns. This is not the7u
+special phase rebit; no old-bank identity justifies omitting its recording
+cost here. All added modes and all primitive clock stages enter(208).
+Different L values have different absolute prices.
+
+### A concrete paid test transport exactly restores the old source
+
+The coin is retained. The ORIGINAL report can therefore be read as the
+parity a XOR b_out, since b_old=b_out XOR a. This has an actual native
+test map. Write C=CX(a,b), T=CW in operator order. The old middle M
+ignores a and PRESERVES the c0 sectors: [M,P_(c0=1)]=0. Its target meter
+is distinct from c0, a and b; READY/report are controls. Consequently
+[M,W]=0 on ALL columns, including c0=0 and every failure sector.
+Coin-blindness alone would not suffice if M changed c0. Execute
+
+    M_parity=C M C,
+    T^dagger M_parity T=W^dagger M W=M.                 (212)
+
+Both new C are real native stages. Equation(212) is an exact full-operator
+identity, not equality of one prepared expectation or a successful block.
+It supplies the explicit observe-commutes map for this report recoding,
+consuming the owned correctness/transport interface of7l and(83)-(85).
+For another old endpoint observable O, the corresponding endpoint test
+is T O T^dagger; its implementation must be paid when actually executed.
+An old future context containing further actions requires transport of
+those actions too, not just its final test while keeping incompatible
+intermediate actions fixed.
+This does not identify the complete new clock/history profile with the
+old one or make their durations equal.
+
+For this particular Book middle, the additional2 CX give
+Delta N_transported_test=16L+6 with the SAME full fibre/rank accounting
+as(211). This is the declared common recorder; it is not a proof that
+the extra coin-copy bank is necessary for the compensated programme.
+Before recording, the full echo equals the old echo tensor I_coin.
+Balanced coin recording commutes with this endpoint and cancels there
+on all columns. The full balanced endpoint is consequently the old
+balanced endpoint tensor I_coin tensor I_newbank. The old rank-r0
+return corner is unchanged, so feedback is
+exactly the old j_K(gamma_r q), not the affine bare-report version.
+At the NEW actual N and D the whole-clock theorem(97) gives
+
+    B_parity,k=H_ref(N_new,D_new)+j_K(gamma_r q),
+    D_u B_parity=0,
+    Gamma_parity=j'_K(gamma_r q) gamma_r a0 tau/Omega.    (213)
+
+Here M and the physical bootstrap parameters are fixed; all field
+dependence is inside A_r. The field source is therefore exactly the old
+one with its real new gain. This does not identify sources of arbitrary
+independently moving middles or clocks. No arbitrary compensating price, reference function or negative
+counterterm was added. The actual inverse of the record recoding carries
+the test. Heat at this common N is independent of k by full endpoint
+conjugacy, not because the moving prefixes were frozen. Its absolute
+baseline can differ from the shorter old execution and stays paid.
+
+### The substituted premise and the remaining physical application
+
+Equations(212)-(213) remove the apparent query source for this explicitly
+co-transported implementation of the SAME old report. Equations(208)-(209)
+retain its genuine source when the physical middle is instead fixed.
+They are two specified processes. A generic self-check that verifies a
+programme against its own decoded word accepts both; it does not select
+one physical query, input family or middle. Likewise the accepted generic
+TheoryTransfer supplies a transport once its interpretation/test map is
+given; it does not supply the different spatial scene interpretation.
+No correctness fibre is declared to be the entire native execution domain.
+
+The source-bearing reporter still has independent upstream queries that
+are not mere reversible recodings of the old report, and independent
+inverse/cut/frame/middle/source choices. Readiness control7u, sharp stored
+keys and a verifier do not by themselves discharge those equations.
+The next positive parent application remains an admitted joint original
+graded-CAR/solder/pairing/link step with its complete operator/price map,
+or an independently native stationary/constraint law. The existing original
+field-to-operator dictionary and complete full42 source equations are inputs
+to that application, rather than claims established by an encoded report.
+This checkpoint changes no action or physical admission rule and supplies
+no unrestricted no-go, joint stationary refinement, GR_closed or raw216
+completion. The bounded checker tests the new operator/source maps; it
+does not replay the unchanged large root, full128 or Lean suites.
+
+
 ## 8. Reproduction
 
 Run from this directory:
