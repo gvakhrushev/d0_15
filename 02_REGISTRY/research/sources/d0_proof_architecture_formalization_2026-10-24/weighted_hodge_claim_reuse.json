@@ -151,13 +151,13 @@
                 "propext"
               ],
               "binders": [],
-              "conclusion_whnf": "D0.Geometry.formDegreeCount4D = 5 ∧\n  Fintype.card D0.Geometry.CubicalCellType = 16 ∧\n    D0.Geometry.DegreePreservingLaplacian true ∧\n      Fintype.card D0.Role = 4 ∧\n        ∀ (N k : ℕ) (ψ : D0.Geometry.ArchiveCochain N),\n          D0.Geometry.HomogeneousCochain N k ψ →\n            D0.Geometry.HomogeneousCochain N k (D0.Geometry.hodgeCarDirac N (D0.Geometry.hodgeCarDirac N ψ))",
+              "conclusion_whnf": "D0.Geometry.formDegreeCount4D = 5 ∧\n  Fintype.card D0.Geometry.CubicalCellType = 16 ∧\n    D0.Geometry.DegreePreservingLaplacian true ∧\n      Fintype.card D0.Role = 4 ∧\n        (∀ (N : ℕ) (ψ : D0.Geometry.ArchiveCochain N),\n            D0.Geometry.cubicalCoboundary N (D0.Geometry.cubicalCoboundary N ψ) = 0) ∧\n          (∀ (N k : ℕ) (ψ : D0.Geometry.ArchiveCochain N),\n              D0.Geometry.HomogeneousCochain N k ψ →\n                D0.Geometry.HomogeneousCochain N k (D0.Geometry.hodgeCarDirac N (D0.Geometry.hodgeCarDirac N ψ))) ∧\n            ∀ (N : ℕ) (ψ φ : D0.Geometry.ArchiveCochain N),\n              D0.Geometry.cochainPairing N (D0.Geometry.hodgeCarDirac N ψ) φ =\n                D0.Geometry.cochainPairing N ψ (D0.Geometry.hodgeCarDirac N φ)",
               "declaration_kind": "theorem",
               "declaration_ranges": {
                 "declaration": {
                   "end": {
-                    "column": 56,
-                    "line": 63
+                    "column": 42,
+                    "line": 73
                   },
                   "start": {
                     "column": 0,
@@ -175,7 +175,7 @@
                   }
                 }
               },
-              "elaborated_type": "D0.Geometry.formDegreeCount4D = 5 ∧\n  Fintype.card D0.Geometry.CubicalCellType = 16 ∧\n    D0.Geometry.DegreePreservingLaplacian true ∧\n      Fintype.card D0.Role = 4 ∧\n        ∀ (N k : ℕ) (ψ : D0.Geometry.ArchiveCochain N),\n          D0.Geometry.HomogeneousCochain N k ψ →\n            D0.Geometry.HomogeneousCochain N k (D0.Geometry.hodgeCarDirac N (D0.Geometry.hodgeCarDirac N ψ))",
+              "elaborated_type": "D0.Geometry.formDegreeCount4D = 5 ∧\n  Fintype.card D0.Geometry.CubicalCellType = 16 ∧\n    D0.Geometry.DegreePreservingLaplacian true ∧\n      Fintype.card D0.Role = 4 ∧\n        (∀ (N : ℕ) (ψ : D0.Geometry.ArchiveCochain N),\n            D0.Geometry.cubicalCoboundary N (D0.Geometry.cubicalCoboundary N ψ) = 0) ∧\n          (∀ (N k : ℕ) (ψ : D0.Geometry.ArchiveCochain N),\n              D0.Geometry.HomogeneousCochain N k ψ →\n                D0.Geometry.HomogeneousCochain N k (D0.Geometry.hodgeCarDirac N (D0.Geometry.hodgeCarDirac N ψ))) ∧\n            ∀ (N : ℕ) (ψ φ : D0.Geometry.ArchiveCochain N),\n              D0.Geometry.cochainPairing N (D0.Geometry.hodgeCarDirac N ψ) φ =\n                D0.Geometry.cochainPairing N ψ (D0.Geometry.hodgeCarDirac N φ)",
               "exists": true,
               "internal_name": false,
               "module": "D0.Geometry.ArchiveWeightedHodgeDirac",
@@ -188,13 +188,18 @@
                 "Bool.true",
                 "D0.Dyad",
                 "D0.Geometry.ArchiveCochain",
+                "D0.Geometry.ArchiveCochainBasis",
                 "D0.Geometry.CubicalCellType",
                 "D0.Geometry.DegreePreservingLaplacian",
                 "D0.Geometry.HomogeneousCochain",
                 "D0.Geometry.card_archive_fock_state",
+                "D0.Geometry.cochainPairing",
+                "D0.Geometry.cubicalCoboundary",
+                "D0.Geometry.d_squared_eq_zero",
                 "D0.Geometry.formDegreeCount4D",
                 "D0.Geometry.formDegreeCount4D_eq_five",
                 "D0.Geometry.hodgeCarDirac",
+                "D0.Geometry.hodgeCarDirac_self_adjoint",
                 "D0.Geometry.unweightedHodgeSquare_degree_preserving",
                 "D0.Role",
                 "D0.card_role",
@@ -204,11 +209,13 @@
                 "Nat",
                 "OfNat.ofNat",
                 "Pi.instFintype",
-                "instDecidableEqFin",
-                "instDecidableEqProd",
-                "instFintypeProd",
-                "instOfNatNat",
-                "rfl"
+                "Pi.instZero",
+                "Real",
+                "Real.instZero",
+                "Zero.toOfNat0",
+                {
+                  "_omitted_items": 5
+                }
               ],
               "type_dependencies": [
                 "And",
@@ -217,9 +224,12 @@
                 "Bool.true",
                 "D0.Dyad",
                 "D0.Geometry.ArchiveCochain",
+                "D0.Geometry.ArchiveCochainBasis",
                 "D0.Geometry.CubicalCellType",
                 "D0.Geometry.DegreePreservingLaplacian",
                 "D0.Geometry.HomogeneousCochain",
+                "D0.Geometry.cochainPairing",
+                "D0.Geometry.cubicalCoboundary",
                 "D0.Geometry.formDegreeCount4D",
                 "D0.Geometry.hodgeCarDirac",
                 "D0.Role",
@@ -229,6 +239,10 @@
                 "Nat",
                 "OfNat.ofNat",
                 "Pi.instFintype",
+                "Pi.instZero",
+                "Real",
+                "Real.instZero",
+                "Zero.toOfNat0",
                 "instDecidableEqFin",
                 "instDecidableEqProd",
                 "instFintypeProd",
@@ -250,13 +264,13 @@
             "propext"
           ],
           "binders": [],
-          "conclusion_whnf": "D0.Geometry.formDegreeCount4D = 5 ∧\n  Fintype.card D0.Geometry.CubicalCellType = 16 ∧\n    D0.Geometry.DegreePreservingLaplacian true ∧\n      Fintype.card D0.Role = 4 ∧\n        ∀ (N k : ℕ) (ψ : D0.Geometry.ArchiveCochain N),\n          D0.Geometry.HomogeneousCochain N k ψ →\n            D0.Geometry.HomogeneousCochain N k (D0.Geometry.hodgeCarDirac N (D0.Geometry.hodgeCarDirac N ψ))",
+          "conclusion_whnf": "D0.Geometry.formDegreeCount4D = 5 ∧\n  Fintype.card D0.Geometry.CubicalCellType = 16 ∧\n    D0.Geometry.DegreePreservingLaplacian true ∧\n      Fintype.card D0.Role = 4 ∧\n        (∀ (N : ℕ) (ψ : D0.Geometry.ArchiveCochain N),\n            D0.Geometry.cubicalCoboundary N (D0.Geometry.cubicalCoboundary N ψ) = 0) ∧\n          (∀ (N k : ℕ) (ψ : D0.Geometry.ArchiveCochain N),\n              D0.Geometry.HomogeneousCochain N k ψ →\n                D0.Geometry.HomogeneousCochain N k (D0.Geometry.hodgeCarDirac N (D0.Geometry.hodgeCarDirac N ψ))) ∧\n            ∀ (N : ℕ) (ψ φ : D0.Geometry.ArchiveCochain N),\n              D0.Geometry.cochainPairing N (D0.Geometry.hodgeCarDirac N ψ) φ =\n                D0.Geometry.cochainPairing N ψ (D0.Geometry.hodgeCarDirac N φ)",
           "declaration_kind": "theorem",
           "declaration_ranges": {
             "declaration": {
               "end": {
-                "column": 56,
-                "line": 63
+                "column": 42,
+                "line": 73
               },
               "start": {
                 "column": 0,
@@ -274,7 +288,7 @@
               }
             }
           },
-          "elaborated_type": "D0.Geometry.formDegreeCount4D = 5 ∧\n  Fintype.card D0.Geometry.CubicalCellType = 16 ∧\n    D0.Geometry.DegreePreservingLaplacian true ∧\n      Fintype.card D0.Role = 4 ∧\n        ∀ (N k : ℕ) (ψ : D0.Geometry.ArchiveCochain N),\n          D0.Geometry.HomogeneousCochain N k ψ →\n            D0.Geometry.HomogeneousCochain N k (D0.Geometry.hodgeCarDirac N (D0.Geometry.hodgeCarDirac N ψ))",
+          "elaborated_type": "D0.Geometry.formDegreeCount4D = 5 ∧\n  Fintype.card D0.Geometry.CubicalCellType = 16 ∧\n    D0.Geometry.DegreePreservingLaplacian true ∧\n      Fintype.card D0.Role = 4 ∧\n        (∀ (N : ℕ) (ψ : D0.Geometry.ArchiveCochain N),\n            D0.Geometry.cubicalCoboundary N (D0.Geometry.cubicalCoboundary N ψ) = 0) ∧\n          (∀ (N k : ℕ) (ψ : D0.Geometry.ArchiveCochain N),\n              D0.Geometry.HomogeneousCochain N k ψ →\n                D0.Geometry.HomogeneousCochain N k (D0.Geometry.hodgeCarDirac N (D0.Geometry.hodgeCarDirac N ψ))) ∧\n            ∀ (N : ℕ) (ψ φ : D0.Geometry.ArchiveCochain N),\n              D0.Geometry.cochainPairing N (D0.Geometry.hodgeCarDirac N ψ) φ =\n                D0.Geometry.cochainPairing N ψ (D0.Geometry.hodgeCarDirac N φ)",
           "exists": true,
           "internal_name": false,
           "module": "D0.Geometry.ArchiveWeightedHodgeDirac",
@@ -287,13 +301,18 @@
             "Bool.true",
             "D0.Dyad",
             "D0.Geometry.ArchiveCochain",
+            "D0.Geometry.ArchiveCochainBasis",
             "D0.Geometry.CubicalCellType",
             "D0.Geometry.DegreePreservingLaplacian",
             "D0.Geometry.HomogeneousCochain",
             "D0.Geometry.card_archive_fock_state",
+            "D0.Geometry.cochainPairing",
+            "D0.Geometry.cubicalCoboundary",
+            "D0.Geometry.d_squared_eq_zero",
             "D0.Geometry.formDegreeCount4D",
             "D0.Geometry.formDegreeCount4D_eq_five",
             "D0.Geometry.hodgeCarDirac",
+            "D0.Geometry.hodgeCarDirac_self_adjoint",
             "D0.Geometry.unweightedHodgeSquare_degree_preserving",
             "D0.Role",
             "D0.card_role",
@@ -303,11 +322,13 @@
             "Nat",
             "OfNat.ofNat",
             "Pi.instFintype",
-            "instDecidableEqFin",
-            "instDecidableEqProd",
-            "instFintypeProd",
-            "instOfNatNat",
-            "rfl"
+            "Pi.instZero",
+            "Real",
+            "Real.instZero",
+            "Zero.toOfNat0",
+            {
+              "_omitted_items": 5
+            }
           ],
           "type_dependencies": [
             "And",
@@ -316,9 +337,12 @@
             "Bool.true",
             "D0.Dyad",
             "D0.Geometry.ArchiveCochain",
+            "D0.Geometry.ArchiveCochainBasis",
             "D0.Geometry.CubicalCellType",
             "D0.Geometry.DegreePreservingLaplacian",
             "D0.Geometry.HomogeneousCochain",
+            "D0.Geometry.cochainPairing",
+            "D0.Geometry.cubicalCoboundary",
             "D0.Geometry.formDegreeCount4D",
             "D0.Geometry.hodgeCarDirac",
             "D0.Role",
@@ -328,6 +352,10 @@
             "Nat",
             "OfNat.ofNat",
             "Pi.instFintype",
+            "Pi.instZero",
+            "Real",
+            "Real.instZero",
+            "Zero.toOfNat0",
             "instDecidableEqFin",
             "instDecidableEqProd",
             "instFintypeProd",
@@ -346,6 +374,19 @@
               "claim_id": "D0-ARCHIVE-CAR-FOCK-CARRIER-001",
               "theorem_atom": "card_archive_fock_state",
               "module_locator": "D0.Geometry.ArchiveCARFockCarrier"
+            }
+          ],
+          "relation": "compiled-proof-dependency-to-claim-locator"
+        },
+        {
+          "source_claim_id": "D0-ARCHIVE-WEIGHTED-HODGE-DIRAC-001",
+          "source_declaration": "D0.Geometry.archive_weighted_hodge_dirac_owner",
+          "dependency_declaration": "D0.Geometry.d_squared_eq_zero",
+          "target_claim_locators": [
+            {
+              "claim_id": "D0-ARCHIVE-CUBICAL-COBOUNDARY-001",
+              "theorem_atom": "d_squared_eq_zero",
+              "module_locator": "D0.Geometry.ArchiveCubicalCoboundary"
             }
           ],
           "relation": "compiled-proof-dependency-to-claim-locator"
@@ -439,7 +480,7 @@
         "warning": "Declared metadata links are not Lean type-checking or independent scientific acceptance."
       },
       "collector_sha256": "7160df1ba73e78919758cefb84b6dcbc08c04fe21caf3210d3adbfd8b8ed4f45",
-      "lean_source_digest": "f964dae2c27862dd29ba822d4368ec329998a821db96dcca080215ab63eee600",
+      "lean_source_digest": "f74092081a96038c7336f91a7efd8e7f429c0c06ac3f69d8737dc0f901cab8da",
       "public_import_root": "D0.All",
       "interpretation": "Claim theorem strings are candidate-name locators. Compiled declaration presence and reported Lean proof dependencies are separate evidence. A dependency joined to another claim locator is a candidate crosswalk only; registry application links, conceptual edges, and semantic claim acceptance are not inferred from name matches."
     }

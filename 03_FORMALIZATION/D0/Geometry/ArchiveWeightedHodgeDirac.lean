@@ -56,10 +56,20 @@ theorem archive_weighted_hodge_dirac_owner :
     (Fintype.card CubicalCellType = 16) ∧
     (DegreePreservingLaplacian true) ∧
     (Fintype.card Role = 4) ∧
+    (∀ N (ψ : ArchiveCochain N),
+      cubicalCoboundary N (cubicalCoboundary N ψ) = 0) ∧
     (∀ N k (ψ : ArchiveCochain N), HomogeneousCochain N k ψ →
-      HomogeneousCochain N k (hodgeCarDirac N (hodgeCarDirac N ψ))) := by
-  refine ⟨formDegreeCount4D_eq_five, card_archive_fock_state, rfl, card_role, ?_⟩
-  intro N k ψ hψ
-  exact unweightedHodgeSquare_degree_preserving N k ψ hψ
+      HomogeneousCochain N k (hodgeCarDirac N (hodgeCarDirac N ψ))) ∧
+    (∀ N (ψ φ : ArchiveCochain N),
+      cochainPairing N (hodgeCarDirac N ψ) φ =
+        cochainPairing N ψ (hodgeCarDirac N φ)) := by
+  refine ⟨formDegreeCount4D_eq_five, card_archive_fock_state, rfl, card_role,
+    ?_, ?_, ?_⟩
+  · intro N ψ
+    exact d_squared_eq_zero N ψ
+  · intro N k ψ hψ
+    exact unweightedHodgeSquare_degree_preserving N k ψ hψ
+  · intro N ψ φ
+    exact hodgeCarDirac_self_adjoint N ψ φ
 
 end D0.Geometry
