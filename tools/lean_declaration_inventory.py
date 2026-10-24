@@ -44,10 +44,11 @@ def candidate_names(module: str, atom: str) -> list[str]:
     if atom.startswith("D0."):
         names.append(atom)
     else:
-        if module:
-            names.append(f"{module}.{atom}")
+        modules = list(dict.fromkeys(part.strip() for part in module.split(";") if part.strip()))
+        for module_name in modules:
+            names.append(f"{module_name}.{atom}")
         names.append(f"D0.{atom}")
-        if not module:
+        if not modules:
             names.append(atom)
     return list(dict.fromkeys(names))
 

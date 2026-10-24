@@ -24,6 +24,12 @@ class DeclarationInventoryTests(unittest.TestCase):
             ],
         )
 
+    def test_candidate_names_expand_multiple_module_locators(self):
+        self.assertEqual(
+            inventory.candidate_names("D0.A; D0.B", "result"),
+            ["D0.A.result", "D0.B.result", "D0.result"],
+        )
+
     def test_all_claim_requests_keep_unresolved_rows_and_deduplicate_exact_names(self):
         mapping, names = inventory.all_claim_requests([
             {"claim_id": "CLM-1", "lean_module": "D0.Foo", "lean_theorem": "bar; D0.Baz.qux"},
