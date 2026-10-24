@@ -3771,6 +3771,250 @@ query is obtained just by declaring a matrix unitary. No physical GR,
 positive_gr or raw216 closure is promoted.
 
 
+## 7o. Feed the original generated material into the same complete Book query
+
+24 October 2026. Same owner; input `d7b85112f17412ceda8543ecdbdc13e3cab5ce77`.
+The changed input is the complete conjugate-return price of7j/n. It removes
+precisely7c's earlier whole-operator heat/complement limitation, and gives
+7n's nonvacuum material-preparer premise a concrete composition on the
+inherited addressed, repeatable-preparation interface. The physical action
+is unchanged; this is not a new scalar score or an import of the different
+unpadded CQ critical root.
+
+### Extract the owned material moments by a fixed coherent operation
+
+Use the ORIGINAL normalized pure-material/address/RIGHT section(3),(32)-(34).
+Let Z_seed=||C_seed||_HS^2, w_x=||chi_x||^2/Z_seed>0, and let rho be its normalized
+ACTIVE density, with its actual RIGHT purification retained. For A=0,15 set
+
+    A_(x,A)=|x,1><x,A|+|x,A><x,1|,
+    Pi_(x,A)=|x,1><x,1|+|x,A><x,A|.
+
+These are fixed coordinate operators, not new moving physical queries.
+The already owned moment dictionary(52) gives
+
+    s_(x,A)=Tr(rho A_(x,A))=2 sqrt(p) w_x psi_(x,A),
+    psi_(x,A)=s_(x,A)/(2 sqrt(p) w_x).                  (142)
+
+Off-diagonal address/RIGHT coherences have not been measured away: this
+identity is a diagonal-address matrix contraction on the whole state.
+It holds on the entire regular material disk, including nonzero fields.
+For genuinely moving weights its exact derivative is
+Ds=2 sqrt(p)(w_x Dpsi+psi Dw_x). Do not set Dw_x=0 except on the
+inherited fixed-seed chart. Any independently changing seed/reference
+keeps its source and, when needed, its augmented input coordinate.
+
+Here is an explicit field-INDEPENDENT coherent extractor for this moment.
+Write P_plus=(Pi+A)/2, P_minus=(Pi-A)/2, P_rest=I-Pi, and
+
+    C_A=P_plus+P_rest/sqrt(2),
+    S_A=P_minus+P_rest/sqrt(2),
+    W_A=[[C_A,-S_A],[S_A,C_A]].                         (143)
+
+The new two-dimensional factor is a real SIGN/work flag, initially blank.
+Because C_A,S_A commute and C_A^2+S_A^2=I, W_A is real orthogonal.
+On the +1,-1,0 eigenspaces of A it is respectively a flag rotation by
+0,pi/2,pi/4; hence det W_A=1. For EVERY input column, with arbitrary
+retained reference, its blank-flag effect is exactly
+
+    <0|W_A^dagger (|0><0| tensor I) W_A|0>
+                    =C_A^2=(I+A)/2.                  (144)
+
+Thus the unmeasured SIGN flag has probabilities (1+s)/2,(1-s)/2.
+The matter, normalization grade14, address and every work/reference
+factor remain present. It is not a projective preparation or a scalar
+amplitude read from a classical table.
+
+W_A is the ideal CONSTANT comparison matrix. It is not asserted to be
+an exactly available finite native sqrt(2) gate. The already owned
+Golden/CNOT closure and7c plane construction approximate this one fixed
+SO matrix on every data/flag column of its ACTUAL prepared sharp-control
+sector by finite raw words W_A,nu. Choose each word once for the entire
+material/geometry window, with actual legal address placement and its
+paid known-one/control factors. Write i_c for that sector embedding:
+the comparison bound is ||(W_A,nu-W_A)i_c||<=epsilon. The real c=0
+complement of7c need not approximate W_A; its literal full unitary is
+retained in the price and inverse. The chart fixes c=1; independently
+allowed control-sector motions retain their additional source. Reverse the actual raw
+word through7j's admitted source-X inverse interface; do not reverse
+only its ideal code action or a previously measured heralded factory.
+
+### Regenerate material inputs; preserve the protected original state
+
+For each raw material SIGN occurrence of the fixed coordinate processor,
+execute the SAME actual7c material preparation word on a fresh, genuinely
+supplied seed/work bank, then its fixed W_A,nu extractor. For(145), the
+ACTUAL seed-source preparation and its retained purifier must themselves
+be generated from the task blanks inside Q_epsilon, with their admitted
+full unitary extension and physical raw inverse. This means a genuinely
+EXECUTED coherent source word; a formal purification or Stinespring
+extension does not reverse an already measured preparation. Every such
+measured history instead keeps its full source outside this echo unless
+its own transport is proved. These actual coherent preparations keep the scalar
+input-corner hypothesis(56); supplying a mixed seed state with a wider
+protected input support would not suffice. Keep its SIGN flag coherent. Repeat calls use the same classical programme settings;
+they do not copy an unknown physical material state. Every bank, seed
+purifier, rejected or unused column and its full word is included in the
+execution. There is no interaction with immutable original oldRIGHT.
+If that original material register is also used as a geometric query
+carrier, retain the all-column parking identity(136).
+
+This construction requires an ACTUAL repeatable seed/preparation source
+on the addressed interface. Section7c constructs the material word from
+its supplied seed; it does not manufacture independent copies of an
+unknown correlated address/RIGHT input. With only one such unknown input,
+independence of multiple material SIGN trials is not established here.
+An externally supplied seed without that preparation/inverse binding
+also retains its original input-cut/preparation source debt; the scalar
+return formula(145) is not established on that larger input family.
+The same issue applies if banks share an unconditioned quantum code
+rather than the declared common sharp programme setting. Those cases
+retain their actual joint law and need their own source transport.
+
+For the declared independent fresh preparation calls, conditioned on that
+common sharp setting, the SIGN diagonals are exactly the Bernoulli product
+in the ideal extractor model. They may be entangled with their individual
+retained work. For M regenerated material banks, their true density derivative contains
+the SUM over all M differentiated factors. In trace norm it is bounded
+by M times the one-bank derivative bound. Shared programme settings
+therefore retain multiplicity; they do not make additional copies free.
+The existing encoder effect E_(n,tau) is DIAGONAL on these
+SIGN coordinates and ignores that work; hence it needs their product
+diagonal law, not a pure product SIGN state. All failure/outcome and
+factory factors remain in its actual fixed readiness gamma.
+
+Apply the existing fixed coordinate/Bernstein construction to the SAME
+original geometric and material operands, using the typed dictionary(142).
+Its relation to the former coordinate t_old=4psi/p is
+
+    t_old=2s/(p sqrt(p) w_x).
+
+This is a coordinate map, not a new material coupling. For fixed supplied
+w_x it is fixed and full rank in both material directions; otherwise
+encode the actual weight input too. Restrict to the compact original
+material disk/weight window and its true stencil domain. Compose the
+original operand functions with this map BEFORE choosing their polynomial
+degree and coefficient envelope. Bounds on an extended SIGN cube must be
+proved for that chosen extension: do not reuse old Lambda, coefficient,
+readiness or aperture constants if the coordinate range changes. One may
+use any fixed smooth bounded extension agreeing on a neighborhood of the
+actual compact window; its approximation is paid and its source error is
+included in epsilon_geo of(124). It cannot alter the physical operands
+there. No exact previous finite table, two-jet root or arbitrary scalar
+source identity is inherited by this re-encoding.
+
+### The entire material compiler now has the already proved full price
+
+Put all these ACTUAL material preparations, coherent extractors and the
+uniform geometric query compiler inside the single Q_epsilon of(137).
+Their source settings, actual work and controller complements are part
+of V_epsilon=A_n Q_epsilon. At fixed catalogue, whole clock, input rank,
+readiness and fixed middle, the complete physical raw inverse gives
+
+    B_epsilon=H_ref(N_epsilon,D_full)
+                    +j_K(gamma q_epsilon),
+    q_epsilon=Tr(rho_epsilon E_(n,tau)).                (145)
+
+This is the SAME exact full-conjugacy theorem(138), now applied to the
+original generated material. H_ref is field constant on this chart even
+when its real dirty-controller spectrum changes inside Q_epsilon. All
+storage dimensions and durations remain in H_ref. Its value may change
+between catalogues; no such absolute price is subtracted. Any other
+selected stack term keeps its independent derivative.
+
+The original barrier stated after(36) was that matching the material
+state did not control the whole Book heat on unused controller columns.
+Equation(145) supplies that control exactly for this new full return
+execution. It does not identify it with the older unmodified full128
+H+J action(38)-(48) or erase any previously measured histories.
+
+For a smooth ideal material/control comparison, write E_(n,tau)=bI+tau T
+with its ACTUAL fixed coefficient bound ||T||<=Xi. Normalization makes
+all differentiated identity terms vanish as in(140). Thus geometric AND
+material preparation errors contribute the same
+
+    ||DB_epsilon/Gamma_epsilon-Omega Dq_0/(a0 tau)||
+           <=(Omega Xi/a0) sup_||v||<=1
+                         ||D_v(rho_epsilon-rho_0)||_1,             (146)
+
+with the actual Gamma_epsilon of(141) and actual common field norm.
+For m fixed extractor placements, ||(W_A,nu-W_A)i_c||<=epsilon gives,
+by telescoping and trace duality, an extractor-only density jet error
+<=2m epsilon sup_||v||<=1||D_v sigma||_1, where sigma is the normalized
+complete moving input bank density, supported with its differentiated
+tangents in that actual sharp-control sector. Preparation/compiler errors and
+the weight-to-field Jacobian are additional explicit terms.
+
+The true material words of7c have finite code settings. They do NOT
+thereby become a continuously tunable finite native word. Their source
+is recovered by the original equal-inventory central secants. Fix one
+such catalogue and its entire echo clock. Let rho_+,rho_- be actual
+normalized prepared densities at the two paid settings, with ideal
+smooth comparison rho_0(theta+delta),rho_0(theta-delta). Let
+k(q)=j_K(gamma q), and define the positive ACTUAL divided difference
+
+    a_+,-=[k(q_+)-k(q_-)]/(q_+-q_-)>0,
+    Gamma_sec=a_+,- a0 tau/Omega.                      (147)
+
+At equal q use k'(q). The original q<1/2,0<d_K<2 regime supplies
+positivity; all actual readiness/return factors remain in a_+,-.
+Using the SAME fixed E, rank, middle, clock and heat at both settings,
+
+    (B_+-B_-)/(2delta Gamma_sec)
+            =(Omega/a0) Tr[T (rho_+-rho_-)/(2delta)].   (148)
+
+If eta_+,eta_- bound the endpoint trace errors and M3 bounds the ideal
+third density derivative on the real stencil, its error from
+(Omega/a0)Tr[T D_theta rho_0] is at most
+
+    (Omega Xi/a0)[(eta_++eta_-)/(2|delta|)
+                                      +M3 delta^2/6].              (149)
+
+Retain the actual center discrepancy and the inverse Jacobian(33) when
+converting these angle covectors to psi. Choose endpoint precision
+o(|delta|), then shrink the actual attainable stencil. This ordering
+is possible at fixed finite mesh/compact chart using7c's dense common
+catalogues and arbitrarily accurate CONSTANT extractor words. It is
+not a mesh-uniform efficiency bound, a freely differentiable discrete
+code, or a physical programme-choice law. A fixed extractor error cannot
+be divided by successively smaller steps without this error budget.
+There is no inverse tau, readiness or inherited-history probability
+loss in(146) or(149).
+
+### Apply the nonvacuum consumer at its real scope
+
+Equations(142)-(149) supply a concrete material-to-SIGN/preparation-source
+map for7n on the inherited repeatable native-word interface. Together
+with its geometric query map and(124), they give the all40 PLUS TWO
+material source comparison for the SAME complete Book execution on its inherited
+fixed-positive-seed-weight chart. For genuinely moving weights, an actual
+augmented weight query/preparer, its lower gap w_min>0 and complete
+Jacobian/source still have to be supplied; the derivative identity(142)
+does not itself execute that operation. For regular sampled nonvacuum
+fields, the continuum estimate(129) uses this joint error, its actual
+material secant/lift norms, quadrature and any remaining augmented-weight
+or stack-source debt. The existing scalar
+current/density/volume conditions of that consumer are unchanged.
+
+Sharp common-code programme settings are not a proof that every physical
+upstream control must move them together. Independent bank/code/readiness,
+seed, other exterior-grade, mixed-resource, input-cut, reference or
+cross-block variations retain
+the actual additional equations identified in7f/m and the causal adjoint.
+No extra selectable preparation is frozen merely because the repeated
+word has been specified. The source comparison above is on the declared
+shared-input chart; it does not prove stationarity in those normal rows.
+
+What has changed is the mathematical nonvacuum input map: the existing
+original material generator and fixed moment extractor now work inside
+the same full-price echo as the geometric compiler. What remains is
+actual repeatable seed/source/control and task admission, the full physical
+variation image and its independent equations, any additional selected
+stack source, and a compatible regular stationary refining family.
+No exact finite roots, compactness, compulsory selection, positive_gr,
+GR_closed or raw216 closure is promoted.
+
+
 ## 8. Reproduction
 
 Run from this directory:

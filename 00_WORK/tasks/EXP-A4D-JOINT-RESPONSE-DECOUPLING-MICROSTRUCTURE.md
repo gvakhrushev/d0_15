@@ -8222,3 +8222,85 @@ Consumed source blobs at inputf410ea2f:
 
 Final work/protocol guards and diff whitespace check PASS on these inputs.
 No unchanged mathematical integration suite was replayed.
+
+
+### 24 October: original generated material joins the complete Book query
+
+Phase: native realization / global source composition; same PR334 owner,
+Assembly-Slot constitutive and Assembly-Carrier native-programme-v1.
+Input: d7b85112f17412ceda8543ecdbdc13e3cab5ce77.
+Write paths: primary residual owner section7o and this brief only.
+
+Changed mathematical input:7n's exact full conjugate-return price controls
+precisely the whole thermal/dirty-controller complement left unresolved by
+the original material-word generator7c. The new application supplies its
+material-to-SIGN map inside that SAME complete execution, rather than
+requesting an independent material amplitude table or new source action.
+
+The already owned moment(52) is Tr(rho A_x,A)=2 sqrt(p) w_x psi_x,A.
+A fixed SO dilation with P_plus/minus=(Pi+/-A)/2,
+C=P_plus+P_rest/sqrt(2), S=P_minus+P_rest/sqrt(2),
+W=[[C,-S],[S,C]] has exact blank-flag effect (I+A)/2 on every
+column/reference. Its actual finite Golden/CNOT approximation is compared
+on the inherited sharp-control sector; the full different c=0 complement
+is retained literally in the operator, inverse and heat. No exact finite
+sqrt(2) or free spectral gate is claimed.
+
+Each raw SIGN occurrence uses a separately regenerated bank under the SAME
+sharp programme setting. Its ACTUAL coherent seed/address/purifier/control
+source, complete unitary and inverse must be generated inside Q from task
+blanks.7c does not copy an unknown correlated seed or make measured histories
+reversible. A supplied mixed seed without this input-corner binding is not
+covered by scalar price145. All real banks and derivative multiplicities
+are paid; repeated reads of one specimen do not give the product law.
+The oldRIGHT of the protected material remains untouched.
+
+The fixed coordinate dictionary psi=s/(2 sqrt(p)w) enters the ORIGINAL
+operand functions. Their coefficient envelope, approximation error,
+readiness and aperture are retained/recomputed on the true compact window;
+old finite tables or unpadded CQ roots are not transplanted. The all40+2
+comparison is on the inherited fixed positive seed-weight chart; moving
+weights require their actual augmented input/query and full source.
+No independent exterior-grade, seed/reference or control normal is frozen.
+
+Place all actual geometric/material preparations and constant extractors
+inside V. Its whole raw inverse gives EXACT
+B=H_ref(N,D_full)+j_K(gamma q), including every work dimension/column.
+The heat remains field constant at fixed actual inventory even though the
+ideal material constant matrix is only approximated. This closes the named
+old heat-complement application for this new execution, without equating
+it with the different unmodified full128 price.
+
+Equations146-149 retain the true normalized density errors and finite-code
+material secants. With k(q)=j_K(gamma q), a_+,-=k^[1](q_+,q_-)>0,
+Gamma_sec=a_+,- a0 tau/Omega, the ACTUAL equal-inventory price secant is
+(Omega/a0)Tr[T(rho_+-rho_-)/(2delta)]. Endpoint trace errors contribute
+(Omega Xi/a0)(eta_++eta_-)/(2|delta|), plus the genuine central remainder,
+center discrepancy and inverse material Jacobian. Choose endpoint errors
+o(delta). Neither weak aperture, readiness nor history-return factors
+produce a hidden inverse loss. Additional selected stack sources remain.
+
+Consumer:7n's nonvacuum input map, then124/129 with the actual joint error,
+field/test norm, quadrature and remaining source debt. No exact finite-root
+existence, regular stationary refinement, native physical admission or
+compulsory GR selection is inferred. The original all-mesh nonvacuum roots
+remain separately preserved. GR_closed and raw216 remain open.
+
+Smallest decisive symbolic check (SymPy, Python3.9.6, exit0): orthogonality,
+determinant+1, all-column flag effect and material moment142; normalized
+weak-source identity; hostile one-specimen repeated-read control. In the
+four-grade test the same-specimen joint probability is3/8+sqrt(2)/8,
+where independent fresh inputs give9/16, rejecting the false product law.
+This checks the new constant interface; no unchanged full128, root or Lean
+suite is replayed and no frozen expected evidence is rewritten.
+
+Final section7o heading through BEFORE8 INCLUDING trailing LF:
+13549 UTF-8 bytes; SHA256
+45cfccc02a6b098da6932a76fae7609af7f580b61991d3e915af26c174f085a0.
+Independent stationary_root_transfer review reread and ACCEPTED this exact
+final pin; the independent price_geometry_bridge review also accepted
+the core extractor, complete echo and real secant normalization.
+Final work validation, agent protocol, gravity assembly, repository
+validation and diff whitespace checks PASS. No scientific promotion.
+Physical repeatable seed/source/control admission, extra independent
+upstream equations and compatible stationary refinement remain open.
