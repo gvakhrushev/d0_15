@@ -13,14 +13,14 @@ blob `734e21ae6bc04ff3446ad15858936d417fdd2e55`.
 
 The gamma-square identity is derived from the existing creator/contraction
 CAR on the full 16-state exterior carrier. The recovery theorem then composes
-that identity with the exact finite query `C(u) ρ(M)`. Its two endpoint
-Clifford identities remain explicit hypotheses: conjugating the creator by
-the source volume element gives negative metric contraction, and the endpoint
-volume elements intertwine the frame lift. They are not inferred from a
-query name or from the desired recovered frame. Thus this is the compiled
-Eq. (27) algebraic adapter; proving those identities for the source's
-proper-Lorentz endpoint package and joining the non-null chart to Eq. (28)
-remain separate work. It makes no physical admission or GR-selection claim.
+that identity with the exact finite query `C(u) ρ(M)`. The fixed source-chart
+CAR volume equivalence proves its creator-conjugation identity, and
+nonidentity endpoint covariance follows from metric isometry, creator and
+contraction transport, and preservation of the oriented volume vector. Thus
+Eq. (27) is compiled for oriented isometries of this fixed source chart. The
+source's concrete endpoint package must still prove those metric/orientation
+hypotheses, and joining the non-null chart to Eq. (28) remains separate work.
+It makes no physical admission or GR-selection claim.
 -/
 
 namespace D0.Geometry
@@ -567,6 +567,312 @@ theorem archiveJuliaSourceVolumeEquiv_creator_conjugation (u : RoleSpace) :
               archiveJuliaSourceVolumeEquiv_symm_comp]
             simp
 
+/-- The oriented top-sector vector used to express properness of a source-frame
+map.  Fixing this single vector is the orientation condition; it is weaker
+than, and does not assume, covariance of the volume operator on the full
+16-state carrier. -/
+noncomputable def archiveJuliaSourceVolumeVacuum : ArchiveFockState → ℝ :=
+  archiveJuliaSourceVolumeEquiv (Pi.single fockVacuumState (1 : ℝ))
+
+private theorem archiveJuliaSourceVolume_creator_right (u : RoleSpace) :
+    archiveJuliaSourceVolumeEquiv.toLinearMap.comp
+        (archiveExteriorCreatorLM u) =
+      -(archiveExteriorContraction (archiveJuliaSourceLorentzCovector u)).comp
+        archiveJuliaSourceVolumeEquiv.toLinearMap := by
+  apply LinearMap.ext
+  intro ψ
+  have h := LinearMap.congr_fun
+    (archiveJuliaSourceVolumeEquiv_creator_conjugation u)
+    (archiveJuliaSourceVolumeEquiv ψ)
+  simpa [LinearMap.comp_apply, LinearEquiv.apply_symm_apply] using h
+
+private theorem archiveJuliaSourceVolume_inverse_contraction (u : RoleSpace) :
+    archiveJuliaSourceVolumeEquiv.symm.toLinearMap.comp
+        (archiveExteriorContraction (archiveJuliaSourceLorentzCovector u)) =
+      -(archiveExteriorCreatorLM u).comp
+        archiveJuliaSourceVolumeEquiv.symm.toLinearMap := by
+  apply LinearMap.ext
+  intro ψ
+  have h := LinearMap.congr_fun
+    (archiveJuliaSourceVolume_creator_right u)
+    (archiveJuliaSourceVolumeEquiv.symm ψ)
+  have h' := congrArg archiveJuliaSourceVolumeEquiv.symm h
+  have h'' : archiveExteriorCreatorLM u
+      (archiveJuliaSourceVolumeEquiv.symm ψ) =
+        -(archiveJuliaSourceVolumeEquiv.symm
+          (archiveExteriorContraction
+            (archiveJuliaSourceLorentzCovector u) ψ)) := by
+    simpa [LinearMap.comp_apply, LinearEquiv.apply_symm_apply,
+      map_neg] using h'
+  have hneg := congrArg (fun x : ArchiveFockState → ℝ => -x) h''
+  simpa only [neg_neg] using hneg.symm
+
+set_option maxRecDepth 2048 in
+private theorem archiveJuliaSourceVolumeEquiv_symm_toLinearMap_comp :
+    archiveJuliaSourceVolumeEquiv.symm.toLinearMap.comp
+        archiveJuliaSourceVolumeEquiv.toLinearMap = LinearMap.id := by
+  apply LinearMap.ext
+  intro ψ
+  exact archiveJuliaSourceVolumeEquiv.left_inv ψ
+
+private theorem archiveJuliaSourceLorentzCovector_preimage
+    (M : RoleSpace ≃ₗ[ℝ] RoleSpace)
+    (hIso : ∀ x y, archiveJuliaSourceLorentzForm (M x) (M y) =
+      archiveJuliaSourceLorentzForm x y) (u : RoleSpace) :
+    (archiveJuliaSourceLorentzCovector (M.symm u)).comp
+        M.symm.toLinearMap = archiveJuliaSourceLorentzCovector u := by
+  apply LinearMap.ext
+  intro v
+  change archiveJuliaSourceLorentzForm (M.symm u) (M.symm v) =
+    archiveJuliaSourceLorentzForm u v
+  simpa using (hIso (M.symm u) (M.symm v)).symm
+
+private theorem archiveJuliaSourceVolume_conjugate_creator
+    (M : RoleSpace ≃ₗ[ℝ] RoleSpace)
+    (hIso : ∀ x y, archiveJuliaSourceLorentzForm (M x) (M y) =
+      archiveJuliaSourceLorentzForm x y)
+    (u : RoleSpace) :
+    ((archiveExteriorFrameLift M).comp
+        (archiveJuliaSourceVolumeEquiv.toLinearMap.comp
+          (archiveExteriorFrameLift M.symm))).comp
+          (archiveExteriorCreatorLM u) =
+      -(archiveExteriorContraction (archiveJuliaSourceLorentzCovector u)).comp
+        ((archiveExteriorFrameLift M).comp
+          (archiveJuliaSourceVolumeEquiv.toLinearMap.comp
+            (archiveExteriorFrameLift M.symm))) := by
+  let U := archiveExteriorFrameLift M
+  let Uinv := archiveExteriorFrameLift M.symm
+  let V := archiveJuliaSourceVolumeEquiv.toLinearMap
+  let C := archiveExteriorCreatorLM
+  let I := archiveExteriorContraction
+  have hUinvCreator : Uinv.comp (C u) = (C (M.symm u)).comp Uinv := by
+    apply LinearMap.ext
+    intro ψ
+    exact archiveExteriorFrameLift_creator_covariant M.symm u ψ
+  have hUContraction : U.comp (I (archiveJuliaSourceLorentzCovector (M.symm u))) =
+      (I ((archiveJuliaSourceLorentzCovector (M.symm u)).comp
+        M.symm.toLinearMap)).comp U := by
+    apply LinearMap.ext
+    intro ψ
+    exact archiveExteriorFrameLift_contraction_covariant M
+      (archiveJuliaSourceLorentzCovector (M.symm u)) ψ
+  have hCovector := archiveJuliaSourceLorentzCovector_preimage M hIso u
+  have hV := archiveJuliaSourceVolume_creator_right (M.symm u)
+  apply LinearMap.ext
+  intro ψ
+  simp only [LinearMap.comp_apply, LinearMap.neg_apply]
+  have hCreator := LinearMap.congr_fun hUinvCreator ψ
+  have hCreator' : Uinv (C u ψ) = C (M.symm u) (Uinv ψ) := by
+    simpa only [LinearMap.comp_apply] using hCreator
+  rw [hCreator']
+  have hVolumeCreator := LinearMap.congr_fun hV (Uinv ψ)
+  have hVolumeCreator' : V (C (M.symm u) (Uinv ψ)) =
+      -(I (archiveJuliaSourceLorentzCovector (M.symm u))
+        (V (Uinv ψ))) := by
+    simpa only [LinearMap.comp_apply, LinearMap.neg_apply] using hVolumeCreator
+  rw [hVolumeCreator', map_neg]
+  have hContract := LinearMap.congr_fun hUContraction (V (Uinv ψ))
+  have hContract' : U (I (archiveJuliaSourceLorentzCovector (M.symm u))
+      (V (Uinv ψ))) =
+      I ((archiveJuliaSourceLorentzCovector (M.symm u)).comp
+        M.symm.toLinearMap) (U (V (Uinv ψ))) := by
+    simpa only [LinearMap.comp_apply] using hContract
+  rw [hContract', hCovector]
+
+private theorem archiveFockLinearMap_eq_id_of_creator_commutation
+    (T : (ArchiveFockState → ℝ) →ₗ[ℝ] (ArchiveFockState → ℝ))
+    (hCreator : ∀ v, T.comp (archiveExteriorCreatorLM v) =
+      (archiveExteriorCreatorLM v).comp T)
+    (hVacuum : T (Pi.single fockVacuumState (1 : ℝ)) =
+      Pi.single fockVacuumState (1 : ℝ)) :
+    T = LinearMap.id := by
+  let S : RoleExterior →ₗ[ℝ] RoleExterior :=
+    archiveFockExteriorEquiv.toLinearMap.comp
+      (T.comp archiveFockExteriorEquiv.symm.toLinearMap)
+  have hVacuumRep : archiveFockExteriorEquiv.symm (1 : RoleExterior) =
+      Pi.single fockVacuumState (1 : ℝ) := by
+    apply archiveFockExteriorEquiv.injective
+    calc
+      archiveFockExteriorEquiv (archiveFockExteriorEquiv.symm (1 : RoleExterior)) =
+          1 := archiveFockExteriorEquiv.apply_symm_apply _
+      _ = archiveFockExteriorEquiv (Pi.single fockVacuumState (1 : ℝ)) := by
+        simpa using (archiveFockExteriorEquiv_single_vacuum (1 : ℝ)).symm
+  have hSone : S 1 = 1 := by
+    change archiveFockExteriorEquiv
+      (T (archiveFockExteriorEquiv.symm (1 : RoleExterior))) = 1
+    rw [hVacuumRep, hVacuum]
+    simpa using archiveFockExteriorEquiv_single_vacuum (1 : ℝ)
+  have hCreatorEquiv (v : RoleSpace) (ψ : ArchiveFockState → ℝ) :
+      archiveFockExteriorEquiv (archiveExteriorCreatorLM v ψ) =
+        ExteriorAlgebra.ι ℝ v * archiveFockExteriorEquiv ψ := by
+    simp [archiveExteriorCreatorLM, archiveExteriorCreator]
+  have hScreator : ∀ v z, S (ExteriorAlgebra.ι ℝ v * z) =
+      ExteriorAlgebra.ι ℝ v * S z := by
+    intro v z
+    have harg : archiveFockExteriorEquiv.symm (ExteriorAlgebra.ι ℝ v * z) =
+        archiveExteriorCreatorLM v (archiveFockExteriorEquiv.symm z) := by
+      apply archiveFockExteriorEquiv.injective
+      calc
+        archiveFockExteriorEquiv
+            (archiveFockExteriorEquiv.symm (ExteriorAlgebra.ι ℝ v * z)) =
+              ExteriorAlgebra.ι ℝ v * z :=
+          archiveFockExteriorEquiv.apply_symm_apply _
+        _ = archiveFockExteriorEquiv
+            (archiveExteriorCreatorLM v (archiveFockExteriorEquiv.symm z)) :=
+          by simpa using (hCreatorEquiv v
+            (archiveFockExteriorEquiv.symm z)).symm
+    have hT := LinearMap.congr_fun (hCreator v)
+      (archiveFockExteriorEquiv.symm z)
+    have hT' : T (archiveExteriorCreatorLM v
+        (archiveFockExteriorEquiv.symm z)) =
+        archiveExteriorCreatorLM v
+          (T (archiveFockExteriorEquiv.symm z)) := by
+      simpa only [LinearMap.comp_apply] using hT
+    calc
+      S (ExteriorAlgebra.ι ℝ v * z) = archiveFockExteriorEquiv
+          (T (archiveFockExteriorEquiv.symm
+            (ExteriorAlgebra.ι ℝ v * z))) := rfl
+      _ = archiveFockExteriorEquiv
+          (T (archiveExteriorCreatorLM v
+            (archiveFockExteriorEquiv.symm z))) := by rw [harg]
+      _ = archiveFockExteriorEquiv
+          (archiveExteriorCreatorLM v
+            (T (archiveFockExteriorEquiv.symm z))) := by rw [hT']
+      _ = ExteriorAlgebra.ι ℝ v * S z := hCreatorEquiv v
+        (T (archiveFockExteriorEquiv.symm z))
+  have hSleft : ∀ a z : RoleExterior, S (a * z) = a * S z := by
+    intro a
+    refine ExteriorAlgebra.induction
+      (C := fun a => ∀ z : RoleExterior, S (a * z) = a * S z)
+      (fun r => ?_) (fun v => ?_) (fun a b iha ihb => ?_)
+      (fun a b iha ihb => ?_) a
+    · intro z
+      calc
+        S (algebraMap ℝ RoleExterior r * z) = S (r • z) := by
+          rw [Algebra.smul_def]
+        _ = r • S z := S.map_smul r z
+        _ = algebraMap ℝ RoleExterior r * S z := by
+          rw [Algebra.smul_def]
+    · intro z
+      exact hScreator v z
+    · intro z
+      calc
+        S ((a * b) * z) = S (a * (b * z)) := by rw [mul_assoc]
+        _ = a * S (b * z) := iha (b * z)
+        _ = a * (b * S z) := by rw [ihb z]
+        _ = (a * b) * S z := by rw [mul_assoc]
+    · intro z
+      calc
+        S ((a + b) * z) = S (a * z + b * z) := by rw [add_mul]
+        _ = S (a * z) + S (b * z) := S.map_add _ _
+        _ = a * S z + b * S z := by rw [iha z, ihb z]
+        _ = (a + b) * S z := by rw [add_mul]
+  have hSid : S = LinearMap.id := by
+    apply LinearMap.ext
+    intro z
+    have h := hSleft z 1
+    simpa [hSone] using h
+  apply LinearMap.ext
+  intro ψ
+  apply archiveFockExteriorEquiv.injective
+  have h := congrArg (fun F : RoleExterior →ₗ[ℝ] RoleExterior =>
+    F (archiveFockExteriorEquiv ψ)) hSid
+  simpa [S, LinearMap.comp_apply] using h
+
+/-- Proper source-frame transport makes the volume equivalence covariant.
+The proof uses metric preservation to transport contractions, creator
+covariance to transport the Clifford product, and preservation of the oriented
+volume vector to fix the remaining scalar. It does not assume the desired
+endpoint operator covariance. -/
+theorem archiveJuliaSourceVolumeEquiv_frameLift_commute
+    (M : RoleSpace ≃ₗ[ℝ] RoleSpace)
+    (hIso : ∀ x y, archiveJuliaSourceLorentzForm (M x) (M y) =
+      archiveJuliaSourceLorentzForm x y)
+    (hOrientation : archiveExteriorFrameLift M
+      archiveJuliaSourceVolumeVacuum = archiveJuliaSourceVolumeVacuum) :
+    archiveJuliaSourceVolumeEquiv.toLinearMap.comp
+        (archiveExteriorFrameLift M) =
+      (archiveExteriorFrameLift M).comp
+        archiveJuliaSourceVolumeEquiv.toLinearMap := by
+  let U := archiveExteriorFrameLift M
+  let Uinv := archiveExteriorFrameLift M.symm
+  let V := archiveJuliaSourceVolumeEquiv.toLinearMap
+  let Vinv := archiveJuliaSourceVolumeEquiv.symm.toLinearMap
+  let C := archiveExteriorCreatorLM
+  let I := archiveExteriorContraction
+  let Vprime := U.comp (V.comp Uinv)
+  let R := Vinv.comp Vprime
+  have hVprimeCreator : ∀ u, Vprime.comp (C u) =
+      -(I (archiveJuliaSourceLorentzCovector u)).comp Vprime := by
+    intro u
+    simpa only [Vprime, U, Uinv, V, C, I] using
+      archiveJuliaSourceVolume_conjugate_creator M hIso u
+  have hVinverseI : ∀ u, Vinv.comp (I (archiveJuliaSourceLorentzCovector u)) =
+      -(C u).comp Vinv := by
+    intro u
+    exact archiveJuliaSourceVolume_inverse_contraction u
+  have hRcreator : ∀ u, R.comp (C u) = (C u).comp R := by
+    intro u
+    calc
+      R.comp (C u) = Vinv.comp (Vprime.comp (C u)) := by
+        simp [R, LinearMap.comp_assoc]
+      _ = Vinv.comp (-(I (archiveJuliaSourceLorentzCovector u)).comp Vprime) := by
+        rw [hVprimeCreator u]
+      _ = (C u).comp (Vinv.comp Vprime) := by
+        rw [LinearMap.comp_neg, ← LinearMap.comp_assoc, hVinverseI u]
+        simp [LinearMap.comp_assoc]
+      _ = (C u).comp R := rfl
+  have hUinvVacuum : Uinv (Pi.single fockVacuumState (1 : ℝ)) =
+      Pi.single fockVacuumState (1 : ℝ) := by
+    exact archiveExteriorFrameLift_vacuum M.symm 1
+  have hOrientation' : U (V (Pi.single fockVacuumState (1 : ℝ))) =
+      V (Pi.single fockVacuumState (1 : ℝ)) := by
+    simpa only [archiveJuliaSourceVolumeVacuum, U, V] using hOrientation
+  have hVprimeVacuum : Vprime (Pi.single fockVacuumState (1 : ℝ)) =
+      V (Pi.single fockVacuumState (1 : ℝ)) := by
+    calc
+      Vprime (Pi.single fockVacuumState (1 : ℝ)) =
+          U (V (Uinv (Pi.single fockVacuumState (1 : ℝ)))) := rfl
+      _ = U (V (Pi.single fockVacuumState (1 : ℝ))) := by rw [hUinvVacuum]
+      _ = V (Pi.single fockVacuumState (1 : ℝ)) := hOrientation'
+  have hVinvV : Vinv.comp V = LinearMap.id := by
+    exact archiveJuliaSourceVolumeEquiv_symm_toLinearMap_comp
+  have hvac : R (Pi.single fockVacuumState (1 : ℝ)) =
+      Pi.single fockVacuumState (1 : ℝ) := by
+    calc
+      R (Pi.single fockVacuumState (1 : ℝ)) =
+          Vinv (Vprime (Pi.single fockVacuumState (1 : ℝ))) := rfl
+      _ = Vinv (V (Pi.single fockVacuumState (1 : ℝ))) := by rw [hVprimeVacuum]
+      _ = Pi.single fockVacuumState (1 : ℝ) := by
+        have h := LinearMap.congr_fun hVinvV
+          (Pi.single fockVacuumState (1 : ℝ))
+        simpa only [LinearMap.comp_apply, LinearMap.id_apply] using h
+  have hR : R = LinearMap.id := by
+    apply archiveFockLinearMap_eq_id_of_creator_commutation R hRcreator hvac
+  have hVprimeEq : Vprime = V := by
+    calc
+      Vprime = (V.comp Vinv).comp Vprime := by
+        rw [archiveJuliaSourceVolumeEquiv_symm_comp]
+        simp
+      _ = V.comp (Vinv.comp Vprime) := by
+        rw [LinearMap.comp_assoc]
+      _ = V.comp R := rfl
+      _ = V := by rw [hR]; simp
+  have hUU : Uinv.comp U = LinearMap.id :=
+    (archiveExteriorFrameLift_inverse M).2
+  have hCommute : U.comp V = V.comp U := by
+    apply LinearMap.ext
+    intro ψ
+    have h := LinearMap.congr_fun hVprimeEq (U ψ)
+    have h' : U (V (Uinv (U ψ))) = V (U ψ) := by
+      simpa only [Vprime, LinearMap.comp_apply] using h
+    have hUinv : Uinv (U ψ) = ψ := by
+      have h := LinearMap.congr_fun hUU ψ
+      simpa only [LinearMap.comp_apply, LinearMap.id_apply] using h
+    have h'' := congrArg (fun x => U (V x)) hUinv
+    exact h''.symm.trans h'
+  exact hCommute.symm
+
 /-- Eq. (27) on one actual finite-carrier Julia query. The endpoint volume
 identities are explicit inputs; when they hold, the nonzero Lorentz norm
 recovers the full frame lift on all 16 grades. -/
@@ -682,10 +988,35 @@ theorem archiveJuliaCARRaisingQuery_nonNull_gamma_recovery
   exact archiveJuliaRaisingQuery_nonNull_gamma_recovery
     P u M χₓ χᵧ hConjugation hEndpointCovariance hq
 
-/-- Eq. (27) is fully instantiated for the source's fixed Lorentz chart and
-identity frame transport, using the CAR volume equivalence at both endpoints.
-The theorem is a finite-carrier algebraic specialization, not a general
-proper-Lorentz endpoint transport theorem. -/
+/-- Eq. (27) for a nonidentity transport preserving the source Lorentz form
+and its oriented volume vector. The endpoint covariance is derived in
+`archiveJuliaSourceVolumeEquiv_frameLift_commute`; it is not an input to this
+application. The finite source-chart result leaves physical endpoint
+instantiation and admission open. -/
+theorem archiveJuliaSourceCARRaisingQuery_nonNull_gamma_recovery_of_oriented_isometry
+    (u : RoleSpace) (M : RoleSpace ≃ₗ[ℝ] RoleSpace)
+    (hIso : ∀ x y, archiveJuliaSourceLorentzForm (M x) (M y) =
+      archiveJuliaSourceLorentzForm x y)
+    (hOrientation : archiveExteriorFrameLift M
+      archiveJuliaSourceVolumeVacuum = archiveJuliaSourceVolumeVacuum)
+    (hq : archiveJuliaSourceLorentzForm u u ≠ 0) :
+    archiveExteriorFrameLift M =
+      (archiveJuliaSourceLorentzForm u u)⁻¹ •
+        (archiveJuliaLorentzGamma archiveJuliaSourceLorentzForm u).comp
+          (archiveJuliaCARRaisingQuery u M -
+            archiveJuliaSourceVolumeEquiv.toLinearMap.comp
+              ((archiveJuliaCARRaisingQuery u M).comp
+                archiveJuliaSourceVolumeEquiv.symm.toLinearMap)) := by
+  exact archiveJuliaCARRaisingQuery_nonNull_gamma_recovery
+    archiveJuliaSourceLorentzForm u M archiveJuliaSourceVolumeEquiv
+    archiveJuliaSourceVolumeEquiv
+    (archiveJuliaSourceVolumeEquiv_creator_conjugation u)
+    (archiveJuliaSourceVolumeEquiv_frameLift_commute M hIso hOrientation)
+    hq
+
+/-- Identity-transport corollary of the oriented-isometry Eq. (27) recovery in
+the source's fixed Lorentz chart. This is a finite-carrier algebraic result;
+it does not close physical endpoint selection. -/
 theorem archiveJuliaSourceIdentityCARRaisingQuery_nonNull_gamma_recovery
     (u : RoleSpace)
     (hq : archiveJuliaSourceLorentzForm u u ≠ 0) :
@@ -697,41 +1028,10 @@ theorem archiveJuliaSourceIdentityCARRaisingQuery_nonNull_gamma_recovery
               ((archiveJuliaCARRaisingQuery u
                 (LinearEquiv.refl ℝ RoleSpace)).comp
                 archiveJuliaSourceVolumeEquiv.symm.toLinearMap)) := by
-  let M := LinearEquiv.refl ℝ RoleSpace
-  let C := archiveExteriorCreatorLM u
-  let I := archiveExteriorContraction (archiveJuliaSourceLorentzCovector u)
-  let Γ := archiveJuliaLorentzGamma archiveJuliaSourceLorentzForm u
-  let X := archiveJuliaCARRaisingQuery u M
-  have hQuery : X = C := by
-    dsimp [X, C, M]
-    rw [archiveJuliaCARRaisingQuery_eq_model, archiveJuliaRaisingQuery,
-      archiveExteriorFrameLift_id]
-    simp
-  have hConjugation := archiveJuliaSourceVolumeEquiv_creator_conjugation u
-  have hConjugatedQuery :
-      archiveJuliaSourceVolumeEquiv.toLinearMap.comp
-          (X.comp archiveJuliaSourceVolumeEquiv.symm.toLinearMap) = -I := by
-    rw [hQuery]
-    exact hConjugation
-  have hDifference :
-      X - archiveJuliaSourceVolumeEquiv.toLinearMap.comp
-        (X.comp archiveJuliaSourceVolumeEquiv.symm.toLinearMap) = Γ := by
-    calc
-      X - archiveJuliaSourceVolumeEquiv.toLinearMap.comp
-          (X.comp archiveJuliaSourceVolumeEquiv.symm.toLinearMap) =
-        C - (-I) := by rw [hConjugatedQuery, hQuery]
-      _ = C + I := by ext ψ; simp
-      _ = Γ := rfl
-  calc
-    archiveExteriorFrameLift M = LinearMap.id := by
-      dsimp [M]
-      exact archiveExteriorFrameLift_id
-    _ = (archiveJuliaSourceLorentzForm u u)⁻¹ •
-        Γ.comp (X - archiveJuliaSourceVolumeEquiv.toLinearMap.comp
-          (X.comp archiveJuliaSourceVolumeEquiv.symm.toLinearMap)) := by
-        rw [hDifference, archiveJuliaLorentzGamma_square]
-        rw [smul_smul, inv_mul_cancel₀ hq]
-        simp
+  exact archiveJuliaSourceCARRaisingQuery_nonNull_gamma_recovery_of_oriented_isometry
+    u (LinearEquiv.refl ℝ RoleSpace)
+    (by intro x y; rfl)
+    (by rw [archiveExteriorFrameLift_id]; rfl) hq
 
 end
 end D0.Geometry

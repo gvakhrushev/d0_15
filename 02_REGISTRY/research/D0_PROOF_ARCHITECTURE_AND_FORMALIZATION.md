@@ -2057,3 +2057,52 @@ SHA-256 values. Draft policy skipped isolated research-certificate replay,
 registered certificates, release proof closure, and native checkpoint capsule
 compilation. This is therefore not a `D0.All` replay, positive physical
 selection, or GR closure.
+
+### Eq. (27) recovery under derived oriented-isometry covariance (25 October 2026)
+
+This checkpoint extends the preceding fixed-chart result on the same finite
+16-state carrier and pinned #334 §8.4 source. In
+`D0.Geometry.A4DJuliaNonNullGammaRecovery`,
+`archiveJuliaSourceVolumeEquiv_frameLift_commute` now derives endpoint
+covariance for an arbitrary linear isometry of the source chart. Its inputs are
+preservation of `archiveJuliaSourceLorentzForm` on every pair and preservation
+of the single oriented vector
+`archiveJuliaSourceVolumeVacuum`, defined as the source volume equivalence
+applied to the Fock vacuum. The proof transports creators and contractions,
+then uses that oriented vector to fix the scalar. It does not assume covariance
+of the volume operator on the full carrier.
+
+The theorem
+`archiveJuliaSourceCARRaisingQuery_nonNull_gamma_recovery_of_oriented_isometry`
+uses this derived commutation identity to establish Eq. (27) for the owned CAR
+query under those hypotheses and nonzero source Lorentz norm. The prior
+identity-transport recovery is now a corollary. This removes the arbitrary
+endpoint-covariance premise from that finite-chart application. The current
+formal hypothesis is preservation of the oriented volume vector; identifying
+it in this implementation with the coordinate condition `det M = 1` remains
+an explicit unproved adapter and is not claimed here.
+
+The result remains conditional mathematics on the fixed source chart. It does
+not instantiate the source's physical endpoint maps or prove their isometry and
+orientation hypotheses. The Eq. (27)/Eq. (28) join, all-jet and variational
+transport, physical admission, complete price/source selection, and GR closure
+remain open.
+
+The narrow Lean 4.30.0 build passed for
+`D0.Geometry.A4DJuliaNonNullGammaRecovery` (2,993 Lake jobs). The owning-module
+inventory contains 73 declarations and records transitive axioms
+`Classical.choice`, `Quot.sound`, and `propext` for the derived covariance
+theorem. The Eq. (27) application also inherits the existing private
+`native_decide` axiom from `archiveCreatorPermSign`. The inventory was generated
+against the owning-module import root, not by rebuilding public `D0.All`.
+At base snapshot `93cf621c0c561abaedcbba5112d35a3c07c2d2ec` with
+`worktree_dirty=true`, the Lean source digest is
+`a8a5616b396261313dff12f480a3c64b85d93523e424bc04bff30207d169979d`, collector
+SHA-256 is
+`d688a0e49f872a6d32941a59121c9c0ac452167608446976abccebad6b37dbb3`, inventory
+SHA-256 is
+`7282fcc4e75435ac3d979e9764bab0e615ca4a64593501ece67a8269ee2ec3e4`, and the
+Lean module SHA-256 is
+`f0ac215c92ed4957fbbde1f71d881767c7372683627e1f363b99aa4f9d1ec0de`. The
+declaration inventory is
+`sources/d0_proof_architecture_formalization_2026-10-24/non_null_gamma_oriented_isometry_inventory.json`.
