@@ -47,7 +47,8 @@ theorem perron_trace_compatible_with_refinement :
 /-- The diagonal 2-by-2 block in the first Fibonacci refinement step. -/
 def firstRefinementDiagonal (x y : ℝ) : Matrix (Fin 2) (Fin 2) ℝ := !![x, 0; 0, y]
 
-private def firstRefinementScalarMatrix (x : ℝ) : Matrix (Fin 1) (Fin 1) ℝ :=
+/-- Represents one scalar block as its one-by-one matrix. -/
+def firstRefinementScalarMatrix (x : ℝ) : Matrix (Fin 1) (Fin 1) ℝ :=
   fun _ _ => x
 
 private theorem firstRefinementScalarMatrix_mul (x y : ℝ) :
@@ -75,11 +76,13 @@ private theorem firstRefinementDiagonal_eq_sharedBlock (x y : ℝ) :
       D0.Algebra.FibonacciAFTower.fibonacciBlockMatrix,
       Matrix.reindexAlgEquiv_apply, finSumFinEquiv, Fin.addCases]
 
-private def firstRefinementLevelZero
+/-- Embeds a scalar pair as the level-zero matrix pair of the all-level tower. -/
+def firstRefinementLevelZero
     (z : ℝ × ℝ) : D0.Algebra.FibonacciAFTower.FibonacciAFLevel 0 :=
   (firstRefinementScalarMatrix z.1, firstRefinementScalarMatrix z.2)
 
-private def firstRefinementAFStep (z : ℝ × ℝ) :
+/-- Applies the canonical all-level Bratteli hom at level zero to the scalar pair. -/
+def firstRefinementAFStep (z : ℝ × ℝ) :
     Matrix (Fin 2) (Fin 2) ℝ × Matrix (Fin 1) (Fin 1) ℝ := by
   simpa [D0.Algebra.FibonacciAFTower.FibonacciAFLevel,
     D0.Algebra.FibonacciAFTower.pathCount] using
