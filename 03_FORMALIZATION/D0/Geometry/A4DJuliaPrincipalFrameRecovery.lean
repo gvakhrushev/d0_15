@@ -31,9 +31,13 @@ prove smoothness of the full inverse and `D R D Φ = I`. The open-chart result
 retains symmetric endpoint forms, their isometry, a normalized covector, a
 nonzero projected metric covector, and the positive square-root branch. The
 null specialization additionally retains nondegeneracy and one selected
-nonzero null shift. Physical observer/clock recovery, the non-null gamma
-formula (27), the all-jet and variational pullback (31), native price/source
-selection, and physical execution remain open.
+nonzero null shift. The separate
+`A4DJuliaNonNullGammaRecovery` module formalizes the Eq. (27) algebraic inverse
+for nonzero Lorentz norm, conditional on explicit endpoint Clifford
+conjugation and frame-covariance identities. Their derivation for the source's
+proper-Lorentz endpoint package remains open, as do physical observer/clock
+recovery, the all-jet and variational pullback (31), native price/source
+selection, and physical execution.
 -/
 
 namespace D0.Geometry

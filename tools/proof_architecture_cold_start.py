@@ -243,12 +243,16 @@ CASES: list[dict[str, Any]] = [
             "complete Julia raising query contraction block null inverse equation 28",
             "principalFrameJuliaQueryFamily_open_chart_link_recovery Eq 28 positive branch non-null transverse q",
             "уравнение 28 открытая окрестность null-вектора поперечные q вариации восстановление endpoint map Julia",
+            "Eq 27 nonzero Lorentz norm Gamma Clifford volume inverse recover frame from full raising query",
+            "archiveJuliaRaisingQuery_nonNull_gamma_recovery chi endpoint covariance q nonzero",
+            "уравнение 27 ненулевой лоренцев норм Clifford volume восстановить перенос из полного raising operator",
         ],
         "required_refs": [
             "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md",
             "02_REGISTRY/research/A4D_EXACT_AF_RADIAL_COFRAME_EQUIVALENCE_NONLINEAR_SPIN2_2026_10_18.md",
             "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
             "03_FORMALIZATION/D0/Geometry/A4DJuliaPrincipalFrameRecovery.lean",
+            "03_FORMALIZATION/D0/Geometry/A4DJuliaNonNullGammaRecovery.lean",
             "03_FORMALIZATION/D0/Geometry/A4DRawSolderFrameAction.lean",
             "03_FORMALIZATION/D0/Geometry/ArchiveJuliaRaisingOperatorReadout.lean",
         ],
@@ -256,17 +260,18 @@ CASES: list[dict[str, Any]] = [
             {"path": "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md",
              "commit": "fe5cf335da04cac14e50407b03f98b96be17dc52",
              "blob": "1c8d59e5533b443d9a015dc4512cfbc160ae7e62",
-             "sections": ["8.4", "8.5"], "scope_query_indexes": [1, 2, 4, 5, 6],
+             "sections": ["8.4", "8.5"], "scope_query_indexes": [1, 2, 4, 5, 6, 7, 8, 9],
              "scope_query_sections": {"1": ["8.5"], "2": ["8.5"],
                                       "4": ["8.4"], "5": ["8.4"],
-                                      "6": ["8.4"]}},
+                                      "6": ["8.4"], "7": ["8.4"],
+                                      "8": ["8.4"], "9": ["8.4"]}},
             {"path": "02_REGISTRY/research/A4D_EXACT_AF_RADIAL_COFRAME_EQUIVALENCE_NONLINEAR_SPIN2_2026_10_18.md",
              "commit": "fe5cf335da04cac14e50407b03f98b96be17dc52",
              "blob": "734e21ae6bc04ff3446ad15858936d417fdd2e55",
              "sections": ["5.1"], "scope_query_indexes": [3],
              "scope_query_sections": {"3": ["5.1"]}},
         ],
-        "scope_review": "The general compiled map keeps full-query equality and the inverse-coframe right-inverse explicit; its canonical query-family specialization removes the external query-equality premise. The new Eq. (28) composition recovers M_r on the full open chart, including non-null q values, when its observed projected metric covector is nonzero and the positive square-root branch holds. Its null specialization derives those conditions from nondegeneracy, normalization, and one nonzero null shift; it never requires the other three shifts to be null. Eq. (27), proper-Lorentz endpoint selection, smoothness of the full inverse or all-jet pullback, physical query admission, price/source selection, and GR closure remain open.",
+        "scope_review": "The general compiled map keeps full-query equality and the inverse-coframe right-inverse explicit; its canonical query-family specialization removes the external query-equality premise. The Eq. (28) composition recovers M_r on its full open chart when the observed projected metric covector is nonzero and the positive square-root branch holds; its null specialization derives those conditions from nondegeneracy, normalization, and one nonzero null shift. The new Eq. (27) adapter proves the non-null-norm algebraic inverse for the actual finite query from the creator/contraction CAR, conditional on the explicit endpoint Clifford-conjugation and frame-covariance identities. Those identities have not yet been derived for the source proper-Lorentz endpoint package, and the two charts are not yet formally joined into a theorem for every u ≠ 0. Proper-Lorentz endpoint selection, smoothness of the full inverse or all-jet pullback, physical query admission, price/source selection, and GR closure remain open.",
     },
 ]
 
@@ -465,7 +470,7 @@ def run(root: pathlib.Path, limit: int = 5) -> dict[str, Any]:
     # Cold-start review needs enough candidates to include verified pinned
     # snapshots behind a top-ranked citation, while the user-facing CLI stays
     # at its smaller default result count.
-    all_hits = proof.full_text_search_many(root, queries, max(limit, 15))
+    all_hits = proof.full_text_search_many(root, queries, max(limit, 18))
     offset = 0
     cases = []
     for case in CASES:
@@ -517,7 +522,7 @@ def run(root: pathlib.Path, limit: int = 5) -> dict[str, Any]:
         "snapshot_commit": dataset["snapshot_commit"],
         "worktree_dirty": dataset["worktree_dirty"],
         "authority_source_digests": dataset["source_digests"],
-        "search_limit": max(limit, 15),
+        "search_limit": max(limit, 18),
         "search_cases_found_all_sources": sum(c["found_all_required_sources"] for c in cases),
         "search_cases_total": len(cases),
         "benchmark_cases_total": len(cases) + 1,

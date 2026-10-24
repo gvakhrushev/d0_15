@@ -3,6 +3,8 @@
 from __future__ import annotations
 import copy
 import re
+from pathlib import Path
+import tempfile
 import unittest
 from unittest.mock import patch
 import generate_lean_views as gen
@@ -121,6 +123,23 @@ class RenderingTests(unittest.TestCase):
     def test_generator_deterministic(self):
         self.assertEqual(gen.render_claimmap(),gen.render_claimmap())
         self.assertEqual(gen.render_all(),gen.render_all())
+
+    def test_generated_view_preserves_existing_newline_style(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            crlf_path = root / 'All.lean'
+            crlf_path.write_bytes(b'old\r\n')
+            gen.write_generated_view(crlf_path, 'import D0.Example\n\n')
+            self.assertEqual(crlf_path.read_bytes(), b'import D0.Example\r\n\r\n')
+
+            lf_path = root / 'ClaimMap.lean'
+            lf_path.write_bytes(b'old\n')
+            gen.write_generated_view(lf_path, 'namespace D0\nend D0\n')
+            self.assertEqual(lf_path.read_bytes(), b'namespace D0\nend D0\n')
+
+            new_path = root / 'New.lean'
+            gen.write_generated_view(new_path, 'import D0.New\n')
+            self.assertEqual(new_path.read_bytes(), b'import D0.New\n')
 
     def test_all_actual_open_obligations_stay_open(self):
         for r in gen.rows('claims.csv'):

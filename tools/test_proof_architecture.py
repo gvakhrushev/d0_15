@@ -5,6 +5,7 @@ import hashlib
 import subprocess
 import tempfile
 import unittest
+from unittest.mock import patch
 
 from tools import proof_architecture as proof
 from tools import proof_architecture_cold_start as cold_start
@@ -940,6 +941,19 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertEqual(references[0]["commit"], commit)
         self.assertEqual(references[0]["blob"], blob)
         self.assertIn("8.5", references[0]["section_refs"])
+
+    def test_cold_start_uses_minimum_window_for_pinned_source_retrieval(self) -> None:
+        def empty_hits(_root: pathlib.Path, queries: list[str], _limit: int):
+            return [[] for _ in queries]
+
+        snapshot = {"snapshot_commit": "test", "worktree_dirty": False,
+                    "source_digests": {}}
+        with patch.object(cold_start.proof, "full_text_search_many",
+                          side_effect=empty_hits) as search, \
+             patch.object(cold_start.proof, "load_dataset", return_value=snapshot):
+            cold_start.run(pathlib.Path("."), limit=5)
+
+        self.assertEqual(search.call_args.args[2], 18)
 
 
 if __name__ == "__main__":

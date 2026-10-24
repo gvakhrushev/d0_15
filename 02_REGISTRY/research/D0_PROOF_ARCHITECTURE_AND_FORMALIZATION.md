@@ -1929,3 +1929,76 @@ the formalization-debt audit remains at its three baseline findings, and
 `c41562c5e56878cc7c4a6c2ba3266bcff8ac82cfb89733458c549b7e228623df`. This is
 the targeted Eq. (28) application, not a `D0.All` integration replay or
 physical GR acceptance.
+
+### Non-null Lorentz-Clifford recovery adapter (24 October 2026)
+
+This continues the pinned #334 source and consumer: commit
+`fe5cf335da04cac14e50407b03f98b96be17dc52`,
+`A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md`, blob
+`1c8d59e5533b443d9a015dc4512cfbc160ae7e62`, §8.4, Eq. (27), and consumer
+§5.1 of `A4D_EXACT_AF_RADIAL_COFRAME_EQUIVALENCE_NONLINEAR_SPIN2_2026_10_18.md`,
+blob `734e21ae6bc04ff3446ad15858936d417fdd2e55`.
+
+The new module `D0.Geometry.A4DJuliaNonNullGammaRecovery` defines the actual
+finite-carrier Lorentz-Clifford operator `Γ(u)=C(u)+i_(P u)` and derives
+`Γ(u)^2=P(u,u)·I` from the owned creator/contraction CAR. Its Eq. (27)
+recovery theorem takes the exact exterior-model query `C(u)ρ(M)` and proves
+the full frame-lift identity
+`U=(P(u,u))⁻¹ Γ(u)·(X−χₓXχᵧ⁻¹)` when `P(u,u)≠0`. A companion theorem applies
+the existing all-state CAR/exterior query equality to the repository-owned
+Jordan–Wigner query. These declarations operate on the complete finite
+16-state carrier.
+
+The two endpoint identities remain explicit hypotheses: conjugation of the
+creator by `χₓ` yields negative metric contraction, and the endpoint volume
+operators intertwine the frame lift. The adapter does not derive them for the
+source's proper-Lorentz endpoint package. The Eq. (27) and Eq. (28) charts are
+not yet joined into one formal theorem covering every `u ≠ 0`; smooth all-jet
+recovery, variational pullback (31), physical admission, full price/source
+selection, and GR closure remain open. This advances the compiled algebraic
+composition while preserving the endpoint and physical boundaries.
+
+The narrow Lean 4.30.0 build passed for
+`D0.Geometry.A4DJuliaNonNullGammaRecovery` (2,993 Lake jobs); the dependent
+`D0.Geometry.A4DJuliaPrincipalFrameRecovery` build also passed (3,020 jobs).
+The new-module inventory contains five declarations, including its generated
+`_abel` helper. Its main Eq. (27) recovery theorem has transitive axioms
+`Classical.choice`, `Quot.sound`, and `propext`; the CAR corollary additionally
+inherits the existing private `native_decide` axiom from
+`archiveCreatorPermSign`. At snapshot
+`5035534a54bc6c308a2f50750e14cbb6bc8c3b29` with `worktree_dirty=true`, the
+Lean source digest is
+`52bdc96a1c98eef44d209a9a8e2ca84c9ac56992615467b1ba718204f6a31516`, the
+inventory SHA-256 is
+`622ae764a7413a230b8358a6fc1742f409b2b720003e8f71bbf0394a46c984c0`, and the
+collector SHA-256 is
+`d688a0e49f872a6d32941a59121c9c0ac452167608446976abccebad6b37dbb3`.
+The new module SHA-256 is
+`6c61216a3557d41595243fe924a318e40866bfc5dd0ca6bbb55618ee3b2f6bcc`.
+
+The module is registered in existing `formal_support.csv`; the generator adds
+it to the public `D0.All` import view. The cold-start case now searches for
+both Eq. (27) and Eq. (28), pins their shared §8.4 source separately from the
+§8.5 coframe-map owner and §5.1 consumer, and states the conditional endpoint
+scope explicitly. Adding the new Lean module moved the Russian Eq. (28) query's
+pinned source behind the previous 15-candidate inspection window. The cold-start
+runner now inspects the minimum 18 candidates; the query again resolves the
+exact §8.4 commit/blob rather than accepting a citation-only match. A regression
+test pins this bounded window. The replay found all 16/16 required-source cases
+and all 17 search/impact benchmark cases; the exact-source-versus-unrelated-prose
+impact control passed. Runner SHA-256:
+`39838fa98e10dc748fdb7dca40a385605ef1eacb2efb47f65221e2573132cbba`.
+
+The generated-view writer now preserves each existing view's newline
+convention. This keeps the CRLF `D0/All.lean` change to its one added import
+instead of rewriting the full file; the regression covers CRLF, LF, and new
+files. Generator SHA-256:
+`a91f9a26ca43e083d7d470e637e075c0d94296627d3a3f8f02270f58ac8ff319`.
+
+On final local inputs, both narrow Lean builds passed: the new Eq. (27) module
+(2,993 Lake jobs) and its principal-frame dependent (3,020 jobs). The generator
+suite passed 27/27, the proof-architecture suite 36/36, generated-view and
+claim-map checks passed, the no-sorry scan passed, and the debt audit remained
+at its three baseline findings. The CRLF-aware whitespace check passed. Draft
+CI remains the next integration check; this slice is not a `D0.All` replay, C0
+acceptance, or physical GR closure.

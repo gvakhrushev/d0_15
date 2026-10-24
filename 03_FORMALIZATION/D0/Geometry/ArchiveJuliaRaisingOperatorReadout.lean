@@ -27,8 +27,9 @@ the chart normalization, and the positive branch remain explicit inputs.
 
 This remains a finite-carrier algebraic application of the pinned source. It
 does not formalize the source's concrete endpoint `Jx,Jy` realization and
-proper-Lorentz constraint as one instantiated package, the non-null gamma
-formula (27), its all-jet extension, coframe/metric recovery, the complete
+proper-Lorentz constraint as one instantiated package, the endpoint Clifford
+conjugation/covariance identities needed by the separate Eq. (27) recovery
+adapter, its all-jet extension, coframe/metric recovery, the complete
 variational pullback, source or price maps, physical admission, or GR selection.
 -/
 

@@ -108,6 +108,21 @@ def render_claimmap():
              'end D0','']
     return '\n'.join(body)
 
+def write_generated_view(path: Path, text: str) -> None:
+    """Write a generated view using its existing newline convention.
+
+    Generated imports may be updated on a checkout that stores All.lean with
+    CRLF.  Keep that file-level convention so one new import does not rewrite
+    the entire generated view as an unrelated line-ending diff.
+    """
+    old = path.read_bytes() if path.exists() else b''
+    old_lf = old.count(b'\n')
+    old_crlf = old.count(b'\r\n')
+    newline = '\r\n' if old_lf > 0 and old_lf == old_crlf else '\n'
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open('w', encoding='utf-8', newline='') as output:
+        output.write(text.replace('\n', newline))
+
 def main():
     ap=argparse.ArgumentParser(); ap.add_argument('--check',action='store_true'); a=ap.parse_args()
     wanted={ALL:render_all(),CLAIMMAP:render_claimmap()}
@@ -117,7 +132,7 @@ def main():
         if old!=text:
             stale.append(p)
             if not a.check:
-                p.parent.mkdir(parents=True,exist_ok=True); p.write_text(text,encoding='utf-8')
+                write_generated_view(p, text)
     if a.check and stale:
         for p in stale: print('STALE',p.relative_to(ROOT))
         raise SystemExit(1)
