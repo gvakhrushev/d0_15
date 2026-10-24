@@ -1,3 +1,4 @@
+import Mathlib.LinearAlgebra.Determinant
 import D0.Geometry.ArchiveJuliaRaisingOperatorReadout
 
 /-!
@@ -1176,6 +1177,269 @@ theorem archiveJuliaSourceIdentityCARRaisingQuery_nonNull_gamma_recovery
     u (LinearEquiv.refl ℝ RoleSpace)
     (by intro x y; rfl)
     (by rw [archiveExteriorFrameLift_id]; rfl) hq
+
+/-! ### Coordinate determinant adapter for the oriented volume vector
+
+The oriented vector above is the top exterior product of the four role basis
+vectors in the source order `A,B,C,D`. The next lemmas identify its frame
+action with the ordinary determinant of the role-space linear equivalence.
+This replaces vector preservation by the usual determinant-one condition;
+it does not instantiate a physical endpoint map.
+-/
+
+open ExteriorAlgebra
+
+local instance archiveJuliaSourceRoleLinearOrder : LinearOrder Role :=
+  LinearOrder.lift' roleOrderIndex roleOrderIndex_injective
+
+-- Keep sorting and the lifted order on `Role` coherent in this local adapter.
+local instance archiveJuliaSourceRoleLE : LE Role :=
+  archiveJuliaSourceRoleLinearOrder.toLE
+
+/-- The unique four-element subset of the four-role source space. -/
+def archiveJuliaSourceTopSubset : Set.powersetCard Role 4 :=
+  ⟨Finset.univ, by simp⟩
+
+private theorem archiveJuliaSourceRoleList_nodup : roleList.Nodup := by
+  simp [roleList, D0.A, D0.B, D0.C, D0.D]
+
+private theorem archiveJuliaSourceRoleList_toFinset :
+    roleList.toFinset = (Finset.univ : Finset Role) := by
+  ext r
+  fin_cases r <;> simp [roleList, D0.A, D0.B, D0.C, D0.D]
+
+private theorem archiveJuliaSourceRoleList_pairwise :
+    roleList.Pairwise (fun x y => x ≤ y) := by
+  have hAB : A ≤ B := by
+    change roleOrderIndex A ≤ roleOrderIndex B
+    norm_num [roleOrderIndex, D0.A, D0.B, D0.C, D0.D]
+  have hAC : A ≤ C := by
+    change roleOrderIndex A ≤ roleOrderIndex C
+    norm_num [roleOrderIndex, D0.A, D0.B, D0.C, D0.D]
+  have hAD : A ≤ D := by
+    change roleOrderIndex A ≤ roleOrderIndex D
+    norm_num [roleOrderIndex, D0.A, D0.B, D0.C, D0.D]
+  have hBC : B ≤ C := by
+    change roleOrderIndex B ≤ roleOrderIndex C
+    norm_num [roleOrderIndex, D0.A, D0.B, D0.C, D0.D]
+  have hBD : B ≤ D := by
+    change roleOrderIndex B ≤ roleOrderIndex D
+    norm_num [roleOrderIndex, D0.A, D0.B, D0.C, D0.D]
+  have hCD : C ≤ D := by
+    change roleOrderIndex C ≤ roleOrderIndex D
+    norm_num [roleOrderIndex, D0.A, D0.B, D0.C, D0.D]
+  simp [List.pairwise_cons, roleList, hAB, hAC, hAD, hBC, hBD, hCD]
+
+private theorem archiveJuliaSourceRoleList_sorted :
+    Finset.univ.sort (fun x y => x ≤ y) = roleList := by
+  classical
+  rw [← archiveJuliaSourceRoleList_toFinset]
+  exact
+    (List.toFinset_sort (r := fun x y => x ≤ y)
+      archiveJuliaSourceRoleList_nodup).2 archiveJuliaSourceRoleList_pairwise
+
+private theorem archiveJuliaSourceTopOrderEmbedding_apply (i : Fin 4) :
+    (Set.powersetCard.ofFinEmbEquiv.symm archiveJuliaSourceTopSubset) i =
+      roleList[i.val]! := by
+  have hmap :
+      (List.finRange 4).map
+          (Set.powersetCard.ofFinEmbEquiv.symm archiveJuliaSourceTopSubset) =
+        roleList := by
+    simp only [Set.powersetCard.ofFinEmbEquiv_symm_apply,
+      Finset.listMap_orderEmbOfFin_finRange]
+    simp only [archiveJuliaSourceTopSubset]
+    change Finset.univ.sort (fun a b => a ≤ b) = roleList
+    exact archiveJuliaSourceRoleList_sorted
+  have hi := congrArg (fun l : List Role => l[i.val]!) hmap
+  simpa using hi
+
+private theorem archiveJuliaSourceRoleBasis_top_product :
+    archiveRoleBasis.ExteriorAlgebra Finset.univ =
+      ι ℝ (archiveRoleBasis A) * ι ℝ (archiveRoleBasis B) *
+        ι ℝ (archiveRoleBasis C) * ι ℝ (archiveRoleBasis D) := by
+  change archiveRoleBasis.ExteriorAlgebra
+    (archiveJuliaSourceTopSubset : Finset Role) = _
+  rw [ExteriorAlgebra.basis_apply_powersetCard
+    (b := archiveRoleBasis) (s := archiveJuliaSourceTopSubset)]
+  simp only [ExteriorAlgebra.ιMulti_family, ExteriorAlgebra.ιMulti_apply]
+  simp only [Function.comp_apply, archiveJuliaSourceTopOrderEmbedding_apply]
+  simp [List.ofFn, Fin.foldr_succ, roleList, D0.A, D0.B, D0.C, D0.D, mul_assoc]
+
+private def archiveJuliaSourceFullyOccupiedState : ArchiveFockState := fun _ => true
+
+private theorem archiveJuliaSourceSupport_fullyOccupied :
+    archiveFockSupport archiveJuliaSourceFullyOccupiedState = Finset.univ := by
+  ext r
+  simp [archiveFockSupport, archiveJuliaSourceFullyOccupiedState]
+
+private theorem archiveJuliaSourceCreatorLM_equiv (b : RoleSpace)
+    (ψ : ArchiveFockState → ℝ) :
+    archiveFockExteriorEquiv (archiveExteriorCreatorLM b ψ) =
+      ι ℝ b * archiveFockExteriorEquiv ψ := by
+  change archiveFockExteriorEquiv (archiveExteriorCreator b ψ) = _
+  simp [archiveExteriorCreator]
+
+private theorem archiveJuliaSourceVolumeVacuum_eq_fullyOccupiedState :
+    archiveJuliaSourceVolumeVacuum =
+      Pi.single archiveJuliaSourceFullyOccupiedState (1 : ℝ) := by
+  apply archiveFockExteriorEquiv.injective
+  rw [archiveJuliaSourceVolumeVacuum_eq_ordered_creator_product,
+    archiveFockExteriorEquiv_single, archiveFockExteriorBasis_apply,
+    archiveJuliaSourceSupport_fullyOccupied]
+  rw [archiveJuliaSourceCreatorLM_equiv, archiveJuliaSourceCreatorLM_equiv,
+    archiveJuliaSourceCreatorLM_equiv, archiveJuliaSourceCreatorLM_equiv,
+    archiveFockExteriorEquiv_single_vacuum]
+  simpa [mul_assoc] using archiveJuliaSourceRoleBasis_top_product.symm
+
+private theorem archiveJuliaSourceFockExteriorBasis_fullyOccupied :
+    archiveFockExteriorBasis archiveJuliaSourceFullyOccupiedState =
+      (archiveRoleBasis.exteriorPower 4 archiveJuliaSourceTopSubset : RoleExterior) := by
+  rw [archiveFockExteriorBasis_apply, archiveJuliaSourceSupport_fullyOccupied]
+  exact ExteriorAlgebra.basis_eq_coe_basis archiveRoleBasis archiveJuliaSourceTopSubset
+
+private theorem archiveJuliaSourceTopSubset_unique
+    (T : Set.powersetCard Role 4) : T = archiveJuliaSourceTopSubset := by
+  apply Subtype.ext
+  apply Finset.eq_of_subset_of_card_le (Finset.subset_univ _)
+  have hT : T.val.card = 4 := T.property
+  have htop : (Finset.univ : Finset Role).card = 4 := by simp
+  rw [htop, hT]
+
+/-- The top exterior-power action is the determinant scalar, derived from
+the full 4-by-4 minor on the unique top basis sector. -/
+theorem archiveJuliaSourceTopExteriorMap_scale
+    (M : RoleSpace ≃ₗ[ℝ] RoleSpace) :
+    exteriorPower.map 4 M.toLinearMap
+        (archiveRoleBasis.exteriorPower 4 archiveJuliaSourceTopSubset) =
+      archiveExteriorMinor 4 M archiveJuliaSourceTopSubset
+          archiveJuliaSourceTopSubset •
+        archiveRoleBasis.exteriorPower 4 archiveJuliaSourceTopSubset := by
+  apply (archiveRoleBasis.exteriorPower 4).repr.injective
+  ext T
+  have hT := archiveJuliaSourceTopSubset_unique T
+  subst T
+  rw [archiveExteriorPower_coefficient_minor]
+  simp
+
+private def archiveJuliaSourceRoleIndex (r : Role) : Fin 4 :=
+  ⟨roleOrderIndex r, by
+    rcases r with ⟨i, j⟩
+    fin_cases i <;> fin_cases j <;>
+      norm_num [roleOrderIndex, D0.A, D0.B, D0.C, D0.D]⟩
+
+private theorem archiveJuliaSourceRoleIndex_bijective :
+    Function.Bijective archiveJuliaSourceRoleIndex := by
+  constructor
+  · intro r s h
+    apply roleOrderIndex_injective
+    exact congrArg Fin.val h
+  · intro i
+    fin_cases i
+    · exact ⟨A, by decide⟩
+    · exact ⟨B, by decide⟩
+    · exact ⟨C, by decide⟩
+    · exact ⟨D, by decide⟩
+
+private def archiveJuliaSourceRoleEquivFin : Role ≃ Fin 4 :=
+  Equiv.ofBijective archiveJuliaSourceRoleIndex
+    archiveJuliaSourceRoleIndex_bijective
+
+private def archiveJuliaSourceFiniteRoleBasis : Module.Basis (Fin 4) ℝ RoleSpace :=
+  archiveRoleBasis.reindex archiveJuliaSourceRoleEquivFin
+
+private theorem archiveJuliaSourceRoleIndex_topEmbedding (i : Fin 4) :
+    archiveJuliaSourceRoleIndex
+        ((Set.powersetCard.ofFinEmbEquiv.symm archiveJuliaSourceTopSubset) i) = i := by
+  fin_cases i <;> norm_num [archiveJuliaSourceTopOrderEmbedding_apply,
+    archiveJuliaSourceRoleIndex, roleList, roleOrderIndex,
+    D0.A, D0.B, D0.C, D0.D]
+
+private theorem archiveJuliaSourceTopEmbedding_eq_roleEquiv (i : Fin 4) :
+    (Set.powersetCard.ofFinEmbEquiv.symm archiveJuliaSourceTopSubset) i =
+      archiveJuliaSourceRoleEquivFin.symm i := by
+  apply archiveJuliaSourceRoleIndex_bijective.1
+  calc
+    archiveJuliaSourceRoleIndex
+        ((Set.powersetCard.ofFinEmbEquiv.symm archiveJuliaSourceTopSubset) i) = i :=
+      archiveJuliaSourceRoleIndex_topEmbedding i
+    _ = archiveJuliaSourceRoleIndex (archiveJuliaSourceRoleEquivFin.symm i) :=
+      (archiveJuliaSourceRoleEquivFin.apply_symm_apply i).symm
+
+/-- The full top minor uses the usual coordinate determinant on the role
+basis, so the exterior orientation scalar is exactly `LinearMap.det M`. -/
+theorem archiveJuliaSourceTopMinor_eq_linearMap_det
+    (M : RoleSpace ≃ₗ[ℝ] RoleSpace) :
+    archiveExteriorMinor 4 M archiveJuliaSourceTopSubset
+        archiveJuliaSourceTopSubset =
+      LinearMap.det M.toLinearMap := by
+  unfold archiveExteriorMinor
+  rw [← Matrix.det_transpose]
+  rw [← LinearMap.det_toMatrix archiveJuliaSourceFiniteRoleBasis M.toLinearMap]
+  congr 1
+  ext i j
+  simp [archiveJuliaSourceFiniteRoleBasis, LinearMap.toMatrix_apply,
+    archiveJuliaSourceTopEmbedding_eq_roleEquiv]
+
+/-- On the source-volume vector, the finite frame lift acts by the ordinary
+determinant of its role-space map. -/
+theorem archiveJuliaSourceVolumeVacuum_frameLift_eq_det_smul
+    (M : RoleSpace ≃ₗ[ℝ] RoleSpace) :
+    archiveExteriorFrameLift M archiveJuliaSourceVolumeVacuum =
+      (LinearMap.det M.toLinearMap) • archiveJuliaSourceVolumeVacuum := by
+  have hscaled : archiveExteriorFrameLift M archiveJuliaSourceVolumeVacuum =
+      archiveExteriorMinor 4 M archiveJuliaSourceTopSubset
+        archiveJuliaSourceTopSubset • archiveJuliaSourceVolumeVacuum := by
+    rw [archiveJuliaSourceVolumeVacuum_eq_fullyOccupiedState]
+    nth_rw 1 [show archiveJuliaSourceFullyOccupiedState =
+        archiveFockSupportEquiv.symm archiveJuliaSourceTopSubset.val by
+      funext r
+      simp [archiveJuliaSourceFullyOccupiedState, archiveFockSupportEquiv,
+        archiveJuliaSourceTopSubset]]
+    apply archiveFockExteriorEquiv.injective
+    rw [archiveExteriorFrameLift_basis_degree 4 M archiveJuliaSourceTopSubset,
+      map_smul, archiveFockExteriorEquiv_single,
+      archiveJuliaSourceFockExteriorBasis_fullyOccupied,
+      archiveJuliaSourceTopExteriorMap_scale]
+    rfl
+  rw [hscaled, archiveJuliaSourceTopMinor_eq_linearMap_det]
+
+/-- The finite oriented-vector condition is exactly determinant one. This
+replaces the vector-valued endpoint hypothesis in the non-null recovery
+corollary while retaining the separate physical endpoint-instantiation
+obligation. -/
+theorem archiveJuliaSourceVolumeVacuum_frameLift_preserved_iff_det_one
+    (M : RoleSpace ≃ₗ[ℝ] RoleSpace) :
+    archiveExteriorFrameLift M archiveJuliaSourceVolumeVacuum =
+        archiveJuliaSourceVolumeVacuum ↔
+      LinearMap.det M.toLinearMap = 1 := by
+  rw [archiveJuliaSourceVolumeVacuum_frameLift_eq_det_smul]
+  constructor
+  · intro h
+    have h' := congrArg
+      (fun z : ArchiveFockState → ℝ => z archiveJuliaSourceFullyOccupiedState) h
+    simpa [Pi.smul_apply, archiveJuliaSourceVolumeVacuum_eq_fullyOccupiedState] using h'
+  · intro h
+    rw [h, one_smul]
+
+/-- Eq. (27) recovery for the owned CAR query under a metric isometry with
+ordinary determinant one. The determinant adapter proves the oriented-vector
+hypothesis internally; endpoint maps and physical admission remain separate. -/
+theorem archiveJuliaSourceCARRaisingQuery_nonNull_gamma_recovery_of_det_one
+    (u : RoleSpace) (M : RoleSpace ≃ₗ[ℝ] RoleSpace)
+    (hIso : ∀ x y, archiveJuliaSourceLorentzForm (M x) (M y) =
+      archiveJuliaSourceLorentzForm x y)
+    (hDet : LinearMap.det M.toLinearMap = 1)
+    (hq : archiveJuliaSourceLorentzForm u u ≠ 0) :
+    archiveExteriorFrameLift M =
+      (archiveJuliaSourceLorentzForm u u)⁻¹ •
+        (archiveJuliaLorentzGamma archiveJuliaSourceLorentzForm u).comp
+          (archiveJuliaCARRaisingQuery u M -
+            archiveJuliaSourceVolumeEquiv.toLinearMap.comp
+              ((archiveJuliaCARRaisingQuery u M).comp
+                archiveJuliaSourceVolumeEquiv.symm.toLinearMap)) := by
+  exact archiveJuliaSourceCARRaisingQuery_nonNull_gamma_recovery_of_oriented_isometry
+    u M hIso
+    ((archiveJuliaSourceVolumeVacuum_frameLift_preserved_iff_det_one M).2 hDet) hq
 
 end
 end D0.Geometry

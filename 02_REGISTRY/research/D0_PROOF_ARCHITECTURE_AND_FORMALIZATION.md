@@ -2141,3 +2141,48 @@ Lean module SHA-256 is
 `d68f497fee520202de4079de95e437cd5ca84ba51488c2946ad31a18053d7237`. The
 declaration inventory is
 `sources/d0_proof_architecture_formalization_2026-10-24/non_null_gamma_volume_vector_factorization_inventory.json`.
+
+### Non-null source orientation as the coordinate determinant (25 October 2026)
+
+This closes the finite-chart adapter left open in the previous checkpoint.
+`archiveJuliaSourceTopExteriorMap_scale` identifies the action on the unique
+four-role exterior sector with its full `4×4` coordinate minor.
+`archiveJuliaSourceTopMinor_eq_linearMap_det` proves that minor is the ordinary
+`LinearMap.det` in the `A,B,C,D` role basis. Composing these with the ordered
+creator representation gives
+
+`archiveJuliaSourceVolumeVacuum_frameLift_eq_det_smul`:
+`archiveExteriorFrameLift M volume = LinearMap.det M • volume`.
+
+Consequently,
+`archiveJuliaSourceVolumeVacuum_frameLift_preserved_iff_det_one` proves that
+preservation of the oriented source-volume vector is equivalent to
+`LinearMap.det M = 1`. The new corollary
+`archiveJuliaSourceCARRaisingQuery_nonNull_gamma_recovery_of_det_one` composes
+this adapter with Eq. (27): its hypotheses are source-chart metric isometry,
+determinant one, and nonzero source Lorentz norm. The determinant premise is
+now an ordinary coordinate condition rather than an opaque vector equation.
+
+The result remains a finite algebraic statement for the owned CAR source
+chart. It does not prove that the physical endpoint maps are isometries or
+have determinant one, join Eq. (27) to Eq. (28), establish all-jet or
+variational transport, or select physical admission, price/source, or GR
+closure. The existing `native_decide` dependency in the CAR query specialization
+is inherited from `archiveCreatorPermSign`; the new determinant adapter itself
+has transitive axioms `Classical.choice`, `Quot.sound`, and `propext`.
+
+The narrow Lean 4.30.0 build passed for
+`D0.Geometry.A4DJuliaNonNullGammaRecovery` (2,993 Lake jobs). Its owning-module
+inventory contains 123 declarations and was generated against the module-only
+import root. At base snapshot
+`7d663b01b33a22d4b68550a6e79f1a228c5cd28a` with `worktree_dirty=true`, the Lean
+source digest is
+`5876470aff4fbce7b759c7084bb94cf2b53c1f58915f1d01c9278fb4840f52cb`, collector
+SHA-256 is
+`d688a0e49f872a6d32941a59121c9c0ac452167608446976abccebad6b37dbb3`, inventory
+SHA-256 is
+`5f3e206171c60e2468b755d98bc9f7861b4618b4a15f331fb5ad3242c4354317`, and the
+Lean module SHA-256 is
+`9221008fc45490aff466c435809a1f87a40edbbd34e414bb1933e87f143394b8`. The
+inventory is
+`sources/d0_proof_architecture_formalization_2026-10-24/non_null_gamma_determinant_adapter_inventory.json`.
