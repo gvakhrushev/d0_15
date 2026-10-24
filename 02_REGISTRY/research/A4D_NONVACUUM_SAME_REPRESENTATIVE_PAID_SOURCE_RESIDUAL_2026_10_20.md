@@ -2665,6 +2665,55 @@ source transport. Equation(117) keeps the actual price instead of
 assigning it the desired weight. The global rigidity theorem remains
 conditional, and physical admission of this entire task/cut remains.
 
+The same application rules out a stronger shortcut on an OPEN chart.
+Reuse the analytic dilation-coefficient argument of
+[Golden constitutive section7](A4D_GOLDEN_SCALE_CONSTITUTIVE_NO_GO_AND_NATIVE_H2_APERTURE_2026_10_22.md#7-sharp-strengthened-theorem-no-constant-admixture-of-the-original-book-j₂-can-repair-native-golden-scale-homogeneity),
+now on the ACTUAL map (116)-(117). Fix h,n, the other field operands,
+calibration, encoder, protected rank, middle and readiness. With D
+standing here for the complete centered coframe SIGN tuple, set
+
+    f(D)=j_K(gamma_0 q(D,other)), kappa=p^3,
+    d_D[f(kappa D)]=lambda d_D f(D), lambda=kappa^(-2)>1. (120)
+
+The proposed equality is the full ACTION-source weight, including the
+kappa in the pullback derivative; it is not a bare covariant-tensor
+weight. Assume its boundary variation vanishes on these directions,
+or that an actual boundary transport has proved precisely this law.
+Equation(56) makes f real-analytic on the connected SIGN cube,
+INCLUDING D=0: q is a finite polynomial and its logarithm argument is
+1-zeta+zeta(1-d_K gamma_0 q)^2 >= 1-zeta > 0. The true two programmes'
+H_ref terms may differ, but each is field-independent at this fixed
+specification; their absolute prices have not been equated.
+
+If (120) holds on any nonempty open coframe chart, the real-analytic
+identity theorem extends its derivative identity to this cube.
+Integration gives f(kappa D)-lambda f(D)=C. Write the Taylor expansion
+f(D)=sum_alpha a_alpha D^alpha at zero. For every |alpha|>=1,
+
+    (kappa^|alpha|-lambda) a_alpha=0,
+
+so ALL positive-degree coframe coefficients vanish. Analyticity then
+makes f coframe-independent throughout the connected cube. Hence any
+nonzero coframe price/source on this reporter excludes (120) on an
+open chart. With other fields fixed this conclusion is on that fibre;
+a full-field open hypothesis extends it over those other fields.
+A finite stencil or the primary solution family alone is insufficient.
+No physical inverse metric at D=0, nor physical admission of repeated
+scale steps, was used: D=0 is only the regular operator continuation
+point. This applies the owned generic argument; it adds no new selector
+or numerical certificate.
+
+Consequently (116) cannot supply the positive action weight required
+by the Golden full-action shortcut for this nontrivial fixed reporter.
+Its actual metric factor is phi^6, not literally phi^2. A physical
+scale step that changes the collar, calibration, source rank, readiness
+or actual clock-dependent field term has a DIFFERENT full source to
+compute. A separately controlled refinement limit can also lose this
+finite analytic extension. Neither possibility is excluded or supplied
+here. The direct Book03 stationary-section route remains: prove native
+admission of (111)-(117) into its original joint action domain, with
+every genuine remaining source retained.
+
 **Parent application.** The configured stationary reporter no longer
 needs a separate supplied geometry or a scalar-return inverse: (114)
 binds its own complete marked operator to its original full field chart

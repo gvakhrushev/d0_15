@@ -7757,7 +7757,8 @@ da112c8fe78f921f4c32c8d86bc5b6569964652b0a1dd377be4f25ce900f0fec.
 The same owner now applies this decoder to an actual field-changing
 word, section7k(116)-(119). A separate retained Golden flag controlling
 X on each ORIGINAL coframe SIGN bit gives the exact Heisenberg map
-Z->p^3 Z and preserves the old moment in Z_SIGN Z_flag. Insert it in
+Z->p^3 Z and preserves the old moment in Z_SIGN Z_flag at the B output,
+before the later inverse can uncompute it. Insert it in
 the already paid preparation and its complete reverse, retain flags
 in both balanced copies, and rebuild the actual transported cut.
 The whole price is H_ref(N',H_full')+j_K(gamma_0 q(T_D t)); its complete
@@ -7787,9 +7788,64 @@ chosen report law inside the candidate evaluator.
 The direct exact algebra check passes for the original unitary,
 one/two-bit Heisenberg maps, retained correlation, coherence guard
 and the existing polynomial remainder. No standalone certificate is
-created. Final section7k heading through before8 INCLUDING trailing LF:
+created. Published actuator section7k before the scale application below,
+heading through before8 INCLUDING trailing LF:
 20979 UTF-8 bytes; SHA256
 a9ac8e0064da00493d726565766f436cb87fb765dd9dbfe7417016175a935543.
-Three read-only reviewers inspect the application; affected work/
+Three read-only reviewers ACCEPT the actuator application; affected work/
 protocol and whitespace checks are used, without an unchanged full128
 research-suite or Lean replay.
+
+The same application now consumes the OWNED analytic scale-coefficient
+argument instead of trying further microscopic Golden weights.
+Section7k(120) uses the actual fixed reporter
+f(D)=j_K(gamma_0 q(D,other)). Its logarithm argument is bounded below
+by1-zeta>0, so it extends real-analytically to the SIGN point D=0.
+On any open coframe chart, a proposed whole-action source law
+d_D[f(kappa D)]=lambda d_D f(D), lambda=kappa^-2>1, would extend
+analytically and force (kappa^|alpha|-lambda)a_alpha=0 for every
+positive Taylor degree. Hence this reporter's coframe source would
+vanish identically. This rules out using the SAME nontrivial finite
+source and actuator as the full-action scale-weight gate. No physical
+admission of a degenerate metric or repeated scales was assumed.
+
+Scope remains exact: fixed other data, genuinely vanishing boundary
+variation or proved boundary transport, full ACTION source including
+the pullback factor, not an unbound metric component. Finite nodes and
+the primary solution subfamily do not replace the open-chart premise.
+The actual step is phi^6; different moving clock/rank/readiness/collar
+data or a separately controlled nonuniform refinement require their
+OWN full source. Neither is excluded or silently supplied. The next
+parent application is direct native stationary-domain inclusion of
+the existing complete marked reporter, not another fixed-report
+Golden scale search or a new geometric root certificate.
+
+Final section7k heading through before8 INCLUDING trailing LF:
+23868 UTF-8 bytes; SHA256
+7ea2d41ed110d0d1f07bd6c24702f2db0701a433dd3d4aa8a252cf3955243116.
+This is an analytical application in the existing owner, with
+independent read-only source/scale review; no new standalone test,
+Lean module or physical GR promotion.
+
+The direct-domain application already has its FINITE INCIDENCE map;
+do not dispatch another representation construction. The existing
+sources/d0_recorded_scene_clock_heat_2026-10-22/THEOREM.md section1
+places every actual g_t on the vertical edge of K913 x C_N, identity
+on horizontal edges, with normalized incidence
+partial_g psi=psi_j/sqrt(d'_j)-T_ji psi_i/sqrt(d'_i).
+Here d'_v=d_v+2 and delta partial_vertical=-delta g_t/sqrt(d_v+2).
+Keep its SAME whole programme fibre over each base-scene vertex;
+this is not an arbitrary inhomogeneous base connection. The existing
+FiniteProtocolClock.programmedStep retains the supplied programme
+internally. These supply a finite candidate and its tangent map.
+
+The remaining substitution is the original physical tangent domain:
+T_x X_N must equal the generated causal/task tangent image, or all
+additional actual directions must have proved zero full source.
+An embedding of the candidate alone does not prove this. Allowing all
+preparer coefficients instead retains section7g(73)'s nonzero normal,
+even when the inverse is varied with its forward word. Likewise the
+native phi self-return block must retain its ACTUAL cut; replacing it
+by the reporter's macro prepared cut is not an automatic inheritance
+of F=p^2 P. No new primitive, schedule-uniqueness premise or free
+stationarity assumption is introduced by this handoff.
