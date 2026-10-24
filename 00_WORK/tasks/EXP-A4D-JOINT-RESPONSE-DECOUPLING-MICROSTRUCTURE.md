@@ -7663,17 +7663,61 @@ scope, requiring two wording repairs now applied: COMPLETE round/copy
 invariance versus primitive-prefix invariance, and macro-U return
 transfer versus primitive-clock stage0 transfer. No formula was weakened.
 
-Next actual-placement application already has an owned finite map:
+The Books00-01 operational application has an owned finite source map.
 IntrinsicQuotientReconstruction supplies C^T C=G=diag(9,11,13),
 R_av=G^-1 C^T, and Pi=C R_av. A G-unitary RawZone action lifts as
-I-Pi+C T3 R_av. SourcePortPreparation therefore has a full scene33 x
-spin4 realization, retaining its neutral1 and archive30; no independent
-extra port factor is needed for this extension. This is not yet arbitrary
-auxiliary routing. Applying it to scene, instead of a commuting work fibre,
-activates the EXISTING recorded-clock theorem8 mixed-loop source guard.
-Use its actual complete heat derivative -Tr(rho_beta DL), not the old
-homogeneous H_ref constancy. No new palette or repeated geometry census
-is needed to formulate that same-execution application.
+I-Pi+C T3 R_av. In SourcePortPreparation's DECLARED maximum-degree
+frame, q=(0,1,2), K=[D_W,A_W], Kq=(126,52,-22), and
+ E=[q,Kq/sqrt2840]/sqrt63
+is a G-isometry from the two-port space to RawZone. It intertwines the
+original Golden gate with
+ G_src=P_neutral+sqrt(p)P_act+(p/sqrt2840)K
+and the source quarter-turn with
+ X_src=(I-R_signal) tensor I4+R_signal tensor L_i.
+Composing C E embeds that same port into the full counting scene33,
+retaining neutral1 and adjacency-kernel30. These are existing source
+operators, not a new palette or a state-support definition of the cut.
+The maximum-degree frame is internally constructed; its compulsory
+selection over the minimum-degree alternative is NOT proved by M1.
+SourcePortPreparation also retains the complementary preparation branch.
+
+This supplies a concrete frame inclusion for the full128 operator/readout
+map above. Its prepared scene port has rank1: a previous independent
+scene multiplicity33 must not be charged again. The full heat still
+contains every scene mode. The owned FiniteProtocolClock gives the
+actual next STATE and retained record for a supplied schedule; this
+construction does not itself change A_W, D_W or the spatial Julia operands.
+
+Placement alone DOES NOT select a new Book03 heat operator. RawZone D_W
+is degree, while Book03 section03.1.2 uses D_Book^2=L_sym by default.
+On an explicitly supplied chronological connection-incidence extension,
+the EXISTING recorded-clock theorem8 mixed-loop guard applies and its
+whole derivative is -Tr(rho_beta DL). On a fixed spectator scene the
+old heat is field independent instead. Executing X_src on that scene
+does not establish equality of these different operators. Thus another
+short-loop coefficient or the same source embedding cannot discharge
+the native joint-source premise. This corrects the overly direct next-
+application wording of the preceding checkpoint; no theorem is promoted.
+
+The physical consumer remains the existing TheoryTransfer route: prove
+the actual state/action/test/outcome maps and physical equation/source
+transport (or its controlled remainder). Exact equality of the full
+Book and spatial Connes/Lip seminorms is NOT a new universal requirement;
+it is needed only for a claim identifying those particular triples.
+The existing native coframe/causal-metric bridges identify the positive
+principal metric of the spatial operator. On labelled-source6.64's
+specified timelike-clock lift, its full-reference grade1 density also
+supplies the Lorentz readout without selecting a RIGHT column. Neither
+that lift nor its source is silently identified with the literal null
+material preparation of this residual owner.
+
+Use the actual whole original price and admitted field/configuration
+map as the next parent application. Section7d's residual survives the
+new operator inverse; internal-state stationarity on a state-independent
+cut cannot cancel a field derivative of that same bare master. The
+scalar reporter's separately stationary price remains a different
+functional. No new theorem, root, certificate, task or physical GR claim
+results from this operational-book checkpoint.
 
 Universal_parent_map independently ACCEPTs the final11664-byte pin.
 Targeted work/protocol validation and diff whitespace check PASS. No
