@@ -1318,6 +1318,193 @@ actual field-variation and stationary-refinement law. Independent
 boundary variations require their own sources if the native task
 allows them. GR_closed and raw216 remain open.
 
+## 7f. One internally recorded return task, with its complete price and all42 source
+
+24 October2026. Same native-realization owner, input publication
+f81f5e5c969c757777ec7639d8cb9dc44a7652b7. This applies section7e to
+an actual internal final-record operation and consumes the
+[original Book task boundary](A4D_ORIGINAL_BOOK_BOOLEAN_TRACE_CLOCK_AND_GLOBAL_EINSTEIN_2026_10_22.md#132-books00-01-application-admissible-test-sections-and-an-actual-return-boundary),
+its equation(48), and the ALREADY owned arbitrary-monodromy heat
+estimate. A new heat theorem, a joint-return oracle, a free output
+flag and a second independent matter input are unnecessary.
+
+### The input/output intertwiner and the actual internal bank
+
+Let A be the w COMPUTATIONAL-BLANK work/port bits of section7e,
+and K the true protected spin/past/seed carrier. Keep the actual
+fixed input projector
+
+    P=|0_A><0_A| tensor P_K,       r=rank(P).
+
+Unknown spin and oldRIGHT are not copied. A supplied noncomputational
+seed is not relabelled as blank. Include a genuine fresh bank of
+w blank bits in the COMPLETE INITIAL state, and execute the actual
+full-column copy
+
+    C_copy |a,k,b> = |a,k,b XOR a>.
+
+It is the product of w addressed native CX operations, including
+all dirty-bank columns; C_copy^2=I. For the existing actual positive
+word Uhat and its ideal comparison U, the new complete word and cut are
+
+    Urec=C_copy(Uhat tensor I_bank),
+    Pnew=P tensor |0_bank><0_bank|.                    (64)
+
+C_copy Pnew=Pnew=Pnew C_copy, so EXACTLY, without a limit,
+
+    Pnew Urec Pnew=(P Uhat P) tensor |0_bank><0_bank|,
+    F(Urec,Pnew)=F(Uhat,P) tensor |0_bank><0_bank|,
+    J(Urec,Pnew)=J(Uhat,P),       rank(Pnew)=r.          (65)
+
+The cut on the bank is blank, not identity. Its FULL thermal dimension,
+in contrast, is multiplied by 2^w. All nonreturn/failure components
+remain. This bank records the final complete computational label; it
+does not recreate factory outcomes coherently uncomputed earlier.
+Only basis labels are recorded: the operation retains coherences as
+internal system-bank correlations, not as independent cloned states.
+
+For a task whose other protected factors are invariant under Uhat,
+let i be the calibrated input isometry with i^dagger i=I and
+ii^dagger=Pnew, and let Pi_b project onto bank label b. Then
+
+    Pi_0 Urec i=i(i^dagger Urec i),
+    K_b=Pi_b Urec i,       sum_b K_b^dagger K_b=I.       (66)
+
+Both return and nonreturn complete ONE task; Pi_done=I. The return
+embedding and its native Gram are thus explicit. This is not two
+independently completed detector tasks and does not use minimum
+actual-state support. Section7e's ideal return is (1-d_K x)I; the
+actual return is its exact compression, with its original error bound.
+A moving genuine input projector or seed retains its own source.
+
+### Every copy is paid; its new whole heat need not be field constant
+
+With directly admitted addressed CX, Nrec=Nold+w and the new CX
+count is N_CX,old+w; G counts are unchanged. Keep the already counted
+idle once, at the final wrap. If physical routing is required, include
+its real added stages and resources in Nrec. Rebuild ALL clock prefixes
+and transported cuts. The fresh bank is not an external reservoir.
+The inherited two-direction placement remains a constructed finite
+section; this does not select its execution in a pre-existing task.
+
+The old fixed-middle heat argument cannot be reused: Urec generally
+has a different spectrum. Instead consume
+[paidwriter section16.4, equation102](A4D_PAID_MOMENT_FIELD_WRITER_2026_10_21.md#164-the-full-primitive-heat-cannot-cancel-that-contrast)
+and section7d equations(40)-(42), which hold for ANY complete unitary
+monodromy on the SAME fixed33-scene/fibre/clock. With the actual full
+fibre dimension Drec, the full trace is
+
+    Z_N(M)=N exp(-beta)[Drec c0
+                 +2 sum_(l>=1) c_(lN) Re Tr(M^l)],
+    H0(N,Drec)=beta^(-1) log[N exp(-beta)Drec c0].
+
+Every bank, spin, failed-work, seed and past mode occurs in Drec.
+For t_N=2 sum_(l>=1)c_(lN)/c0<1 the owned estimate gives
+
+    |H_N(M)-H0(N,Drec)| <= -log(1-t_N)/beta,
+    |H_N(M_+)-H_N(M_-)| <= 2 C1(N),
+    C1(N)<64*22^(-N)/N! at the actual beta=2p^2.         (67)
+
+The first bound is an absolute comparison, not a subtraction from the
+physical price. The true log Drec and N remain. The second is the
+owned endpoint Lipschitz estimate and ||M_+-M_-||<=2. No derivative
+of a discrete programme selector is assumed. Fields being compared
+have the SAME complete carrier, scene, beta, ranks and actual N;
+changes of these data keep their additional price/source.
+
+### The complete source survives actual final-label recording
+
+On input families for which section7e's ideal scalar compression(56)
+and its all42 field pullback are proved, fix a common catalogue and
+central stencil delta_h. Equation(65) leaves the whole feedback
+secants unchanged. Equation(67) bounds each new
+heat secant by C1(Nrec)/delta_h. Therefore the original all42 estimate
+(paidwriter equation41), with section7e's actual gain Gamma_K, becomes
+
+    ||ell_rec-E_PC,h||_(V_h*) <=
+       (M_r tau_h/a0) T_h
+       +(Omega L_h/(a0 tau_h)) e1,h
+       +(L_h/Gamma_K)[M3,j delta_h^2/6
+          +(C_J epsilon_q+C1(Nrec))/delta_h],
+    C_J=2r zeta/(1-zeta).                              (68)
+
+Here M3,j bounds the third derivative of the IDEAL feedback composition
+j_K(gamma_h Q_h); its heat is not being differentiated or substituted.
+The definition of L_h, all finite-coordinate dual-norm factors and the
+ambient42 pullback are exactly those of the original estimate. The
+old C_B>=C_J can also be used as a conservative error constant. At the
+primary common-null centres, use original Book equation(49) to remove
+the weak-query remainder; do not differentiate along the null family
+instead of in the full ambient fields.
+
+Fix the mesh, approximation catalogue, actual positive gain, material
+readout accuracy, stencil and bank BEFORE the final inverse choice.
+The already owned positive powers G^q approaching G^dagger have an
+unbounded subsequence. Along it epsilon_q->0 and
+
+    Nrec(q)>=(1+q)(n_G,h+m)+N_CX,old+w -> infinity.
+
+Use the actual inventory if routing adds more stages. Consequently
+BOTH epsilon_q/(Gamma_K delta_h) and
+C1(Nrec(q))/(Gamma_K delta_h) tend to zero. These stages implement
+the inverse and recording; no idle padding or new clock law is added.
+The existing material-checkpoint condition eta_h/delta_h->0 and all
+mesh-dependent constants remain. This transports the ENTIRE native
+source-limit construction, not just a selected coframe row.
+
+### A noncomputational protected seed keeps an explicit leakage debt
+
+Equation(65) remains exact even with a noncomputational P_K. But the
+bank tests only A=0, so bank0 need not be exact return to all of P_K.
+Define R0=|0_A><0_A| tensor I_K, so P<=R0, and use the actual word:
+
+    E_full=P Uhat^dagger P Uhat P,
+    E_bank=P Uhat^dagger R0 Uhat P,
+    L=(R0-P)Uhat P,
+    E_bank-E_full=L^dagger L >=0.                     (69)
+
+Under the EXACT ideal identity (R0-P)U P=0 and the common operator
+error ||Uhat-U||<=epsilon_q, ||L||<=epsilon_q and the effect error is
+at most epsilon_q^2. This ideal identity holds for section7d's
+commuting added-CAR construction WHEN its entire protected carrier
+is untouched by the original return word: equation(50) cancels the
+added compiler on every column. It is not inferred for an arbitrary
+entangled address/RIGHT projector; such a projector needs the same
+full identity or retains the exact L in (69).
+
+The bank0 effect supplies a comparison determinant
+J_bank=-Tr_P log[(1-zeta)I_P+zeta E_bank]. The literal Book determinant
+of (64) is J_full with E_full. Integrating the trace-log gives
+
+    0 <= J_full-J_bank
+       <= [r zeta/(1-zeta)] epsilon_q^2.              (70)
+
+Its conservative additional normalized central-secant error is
+
+    L_h r zeta epsilon_q^2
+       /[(1-zeta) Gamma_K delta_h].                   (71)
+
+It is controlled by the SAME final inverse choice. This is an effect
+and finite-secant estimate: output-state/Kraus leakage is generally
+O(epsilon_q), not O(epsilon_q^2). No derivative bound follows from
+value accuracy alone. No seed oracle, widened protected identity,
+fictitious product seed, assigned Shannon Info or new Book cut is used.
+The original pure matter checkpoint is before this final bank copy;
+its causal reading and common field dictionary are preserved.
+
+**Parent substitution.** The constructed section now has a paid internal
+record of its final labels, the exact calibrated Book compression and
+a controlled report discrepancy for protected noncomputational seeds.
+Its ACTUAL complete copied-word heat is accounted for in the same all42
+source limit. This consumes the execution/price part of the proposed
+return readout rather than treating a test projector as a free physical
+gate. It does not derive the physical task, actual Book retained cut,
+full stack or field-variation domain. The original source-identification
+and stationary-refinement application remain; GR_closed/raw216 are open.
+A continuous same-carrier complete source is still required before an
+owned finite-root/degree theorem may be applied. Neither secants nor a
+Palatini/CQ carrier change supplies that hypothesis.
+
 ## 8. Reproduction
 
 Run from this directory:

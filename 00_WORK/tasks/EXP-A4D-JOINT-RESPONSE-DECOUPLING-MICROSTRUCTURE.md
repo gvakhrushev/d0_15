@@ -7177,3 +7177,78 @@ The broad repository check also completed: PASS, warnings=0. No
 scientific registry or executable changed; only this scoped application
 and its exact owner link followed that check. No mathematical replay
 is warranted for the reference/scope correction; final diff is checked.
+
+
+### 24 October: actual internal final-record execution with the complete all42 price
+
+Input f81f5e5c969c757777ec7639d8cb9dc44a7652b7; same Draft334 owner.
+Phase: native realization / common task, record and full-source composition.
+Parent: section7e's constructed return task and original Book Boolean
+section13.2 equation48, specifically its executed readout and price.
+Application: section7f of the SAME primary NONVACUUM residual artifact.
+
+Copy every computational-blank work/port label into a preallocated bank
+by actual addressed CX operations. The whole dirty-bank permutation is
+explicit. The blank-bank retained cut leaves the ACTUAL Book compression,
+feedback and protected rank exactly unchanged. Both return/nonreturn
+complete one internal task; with an invariant protected carrier the
+native-Gram input/output intertwiner is exact. Unknown spin/oldRIGHT and
+noncomputational seeds are not copied or freely reset. All final labels
+are retained; earlier coherently uncomputed work is not called a recorded
+factory transcript.
+
+The new full heat is NOT inherited from fixed-middle conjugacy. Consume
+the ALREADY owned arbitrary-monodromy endpoint/oscillation estimate on
+the real enlarged carrier and Nrec. Actual bank dimension and its log
+price stay in the full trace. The extra normalized source is bounded by
+L_h C1(Nrec)/(Gamma_K delta_h). After catalogue, gain, stencil and bank
+are fixed, the real positive inverse powers suppress this factorial
+term and the inverse error together. No padding, new clock or free
+joint-return oracle is introduced. This transports the ENTIRE all42
+source estimate and the existing earlier pure-matter checkpoint.
+
+For a noncomputational protected seed, bank0 is not silently identified
+with full return. The exact gap E_bank-E_full=L^dagger L is retained.
+Under the stated complete ideal zero-leakage identity it is O(epsilon^2),
+with an explicit determinant/central-secant bound; output-state leakage
+is only O(epsilon). Without that identity, retain the actual L. The bank
+comparison determinant is not a new selected physical Book cut. The
+all42 estimate applies only where section7e's original scalar source
+and full field pullback have already been proved.
+
+Carrier/norm: actual blank work/port plus true protected spin/past/seed,
+full new bank, fixed33-scene primitive clock; full operator norm and
+original all42 dual pullback norm/gain. Counts include every copy and
+real routing stage. Fixed input, scene, beta and rank are explicit;
+any genuinely moving preparation, Info, work or stack term retains its
+source. Actual physical task/cut/action/field-domain selection and
+stationary spatial refinement remain open. No claim of GR_closed/raw216.
+
+The root-consumer route was checked at its exact type. Book03 does not
+require smooth dependence of a discrete gate-word selector; a genuine
+smooth finite configuration map may be differentiated directly. But
+paid secants alone do not give that map. The owned UNPADDED robustness
+theorem needs a continuous COMPLETE source on its original N1 CQ cube;
+its residual must also include E_PC-DS0 off the null sheet. No Palatini
+carrier transport, inverse or finite stationary root is asserted here.
+Reuse that existing theorem after the actual chart/source application;
+do not repeat a root or rank search.
+
+Write paths: existing primary residual owner and this brief only.
+Smallest decisive check: exact rational all-column copy/compression and
+noncomputational-seed gap, with a negative control demonstrating that
+the complete monodromy trace changes after recording. This check passed.
+General heat/source transport is the application of owned bounds,
+reviewed analytically, not inferred from that finite matrix example.
+
+Independent final reviewers universal_parent_map and native_valuation_map
+ACCEPT section7f, heading to before section8 INCLUDING all trailing LF:
+9,238 UTF-8 bytes; SHA256
+e10a0993aaf46ac27a633a105d899895c9d44f93c0ae77affd4117b8706c0a3d.
+Native_continuation_map also checked the whole-heat/source estimate and
+accuracy ordering before the final two scope tightenings. No new task,
+standalone certificate, Lean module or scientific/assembly promotion.
+
+Targeted work/protocol validation and final diff check PASS. No unchanged
+full128 certificate or Lean suite was replayed; the registry, assembly
+contract, books and scientific statuses are unchanged.
