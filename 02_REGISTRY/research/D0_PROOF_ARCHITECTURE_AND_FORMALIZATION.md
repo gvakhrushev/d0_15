@@ -1511,8 +1511,7 @@ Source SHA-256 values are `ArchiveExteriorFrameLift.lean`
 findings, `check_claim_map_coverage.py` passed, and
 `generate_lean_views.py --check` passed with no stale generated views. The
 focused proof-architecture suite passed 35/35 when invoked as the `tools` test
-module, and the cold-start suite passed 14/14. GitHub CI for the code head
-`0307b2429ec3b36be1e5c9a7ebab1878e777d1e8` passed `guards` (run
-`40121538756`) and `lean-build` (run `40121538730`); subsequent
-documentation/metadata-only commits leave that code unchanged. The PR remains
-OPEN/DRAFT. C0 remains unfrozen and independently unaccepted.
+module, and the cold-start suite passed 14/14. GitHub CI for code/retrieval
+head `f36ccfd34414c47da4f930167d6049e8e93e1994` passed `guards` (run
+`40122035588`) and `lean-build` (run `40122035591`). The PR remains OPEN/DRAFT.
+C0 remains unfrozen and independently unaccepted.
