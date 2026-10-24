@@ -7399,3 +7399,80 @@ No new task, standalone certificate, Lean module or status promotion.
 
 Targeted work/protocol validation and final diff check PASS. Unchanged
 full128 and Lean suites were not replayed for this source composition.
+
+
+### 24 October: operational joint domain, effect fibres and internal sharp compiler
+
+Phase: native realization / global GR composition, existing PR334 owner,
+constitutive/native-programme-v1; source publication a0a12aee. Section7i
+of the existing same-representative residual owner consumes Books00-01's
+actual finite-section quantifiers, Book03's X_N stationarity, section7h's
+literal whole-Book source, TheoryTransfer/FutureExecution, and the paid
+writer10.5 terminal cotangent/prefix adjoint. No independent task is added.
+
+Exact parent substitution: fixed EVERY encoder column, independently
+zero generated-state gradients and a frozen pure compiler key are not
+needed on this ideal Book chart. Replace them with the explicit operator
+fibre i0^dagger A^dagger Pi A i0=gamma0 E_n, the actual causal S(t) and
+its tied inverse, and a solved sharp-key pure-controller equation. All
+work-only effect-preserving encoder variations are allowed; protected
+spin/past placement stays exact. Universal response preservation for the
+supplied whole input family implies this fibre by polarization; equality
+of one effect does not imply preservation of every future record.
+
+For the complete paid key-preserving schedule W=direct_sum U_a, execute
+R_c^dagger W R_c, then balanced FINAL KEY+work copies. The corner is
+Bbar=sum |c_a|^2 P0 U_a P0. At a sharp key EVERY pure-controller first
+variation vanishes, including arbitrary noncommuting/nonideal corners.
+The chosen field source remains, while whole heat retains every block
+and full bank dimension at the new true clock. A work-only bank omitting
+the final key instead carries a positive matrix-variance debt. Final-key
+recording is not falsely identified with an earlier measured key history.
+Mixed-simplex variations and independent changes of the block gates retain
+their separate scope; a sharp code need not minimize or select a programme.
+
+On the ORIGINAL report, owned D_t q(t_h)=0 now supplies an EXACT constrained
+joint stationary lift for every finite n>=k and every primary mesh:
+ t fields + entire encoder effect fibre + pure key + all generated states.
+It uses the SAME nonvacuum readout and midpoint O(h^2) recovery. Arbitrary
+independent correlated resource controls retain section7h's approximate
+bound; all-work controls retain section7g's reaction. CURRENT Bernstein
+and positive-inverse errors do not become exact zeros. The actual native
+joint domain/task map, complete extra stack sources, physical refinement
+and exact admitted positive-word roots remain. GR_closed/raw216 unchanged.
+
+Carrier/norm/source: existing blank-work/port0, protected spin/past,
+full real trace and paid clock, source gain j'_K gamma0, and original
+all42 inverse-coframe/Cayley/material map. This is a pullback of literal
+H+J, without a new Info assignment, price subtraction or field restriction
+chosen by the Einstein answer. The source is not declared zero merely
+because a discrete code's diagonal field readout has zero derivative.
+
+Write paths: existing primary residual owner and this brief only.
+Smallest decisive check: inline exact SymPy rational operator controls,
+not a new standalone certificate. U0=[[D0,-F0],[F0,D0]], with
+D0=diag(3/5,5/13), F0=diag(4/5,12/13). U1 uses D1=diag(5/13,8/17),
+F1=diag(12/13,15/17), then diag(R,R), where
+R=[[3/5,-4/5],[4/5,3/5]]. Corners do not commute. At key c=(3/5,4/5)
+and zeta=1/2, explicit 32-coordinate final-key/work-bank and 16-coordinate
+work-only-bank matrices verify the complete corner, matrix variance and
+whole conjugacy, with every column present. The exact key-ray derivative
+matches the general score equation; the mixed-simplex slope is nonzero.
+An encoder left-rotation preserving Pi changes full columns but preserves
+its entire input effect. The two-resource effect E=I/4+(Z tensor Z)/16
+has q=1/4+uv/16: both causal field rows vanish at u=v=0, its off-centre
+field derivative is nonzero, and its independent sphere residual is
+nonzero. These controls PASS with exit0 and empty stderr. They test the
+new composition algebra, not primitive physical selection.
+
+Independent final section7i review ACCEPT: 12531 UTF-8 bytes, heading
+through immediately before8 INCLUDING trailing LF; SHA256
+771ea7faac352cd052c3a8d7f3a20a81d52439953faeddbc40bd3e5e81ef80ff.
+Universal_parent_map verified the final protected-factor and thermal
+scope. Native_continuation_map and native_valuation_map accepted the
+preceding identical mathematical argument; the final qualifiers only
+retain additional existing scope explicitly. No new Lean/module/status.
+
+Native_valuation_map also ACCEPTs the final 12531-byte pin. Targeted
+work/protocol validation and diff whitespace check PASS. No unchanged
+full128, broad mathematical certificate suite or Lean replay was run.
