@@ -2255,3 +2255,58 @@ Narrow Lean 4.30.0 builds passed for
 `D0.All` view now includes the new composition module, and
 `python3 tools/generate_lean_views.py --check` reports `PASS lean_views
 stale=0`. No full `D0.All` replay was run for this intermediate checkpoint.
+
+### Eq. (27)/(28) coverage for every nonzero principal-frame shift (25 October 2026)
+
+`D0.Geometry.A4DJuliaRecoveryComposition` now turns the full Eq. (27)
+exterior-frame formula into a degree-one endpoint decoder. The readout applies
+the complete query operator to creator states above the vacuum;
+`archiveExteriorFrameLiftRoleReadout_frameLift` proves that this readout of the
+full frame action is `M`. Composing it with
+`archiveJuliaSourceCARRaisingQuery_nonNull_gamma_recovery_of_det_one` recovers
+`M` from the Eq. (27) CAR formula on the non-null source chart, with source
+isometry and determinant one, and without Eq. (28)'s normalized-covector,
+projected-covector, or square-root-branch premises.
+
+The new `archiveJuliaSourceLorentzForm_symmetric` and
+`archiveJuliaSourceLorentzForm_nondegenerate` establish those properties for
+the fixed diagonal source form from its basis pairing and four nonzero
+coordinate signs. The concrete
+`principalFrameJuliaQueryFamily_nonzero_shift_chart_coverage` then covers each
+nonzero shift in two cases. For nonzero source norm, the result returns the
+Eq. (27) endpoint decoder under the explicit implication `det M = 1 → ...`.
+For a nonzero null shift, the existing Eq. (28) null-link theorem returns its
+endpoint decoder; source-form nondegeneracy and `α(u)=1` derive the projected
+covector and positive branch internally. Thus the null case does not inherit
+Eq. (27)'s determinant premise. The endpoint isometry remains an explicit
+input in both cases.
+
+The generic and concrete overlap theorems also return three facts when both
+charts apply: the Eq. (28) decoder returns `M`, the Eq. (27) degree-one
+decoder returns `M`, and the Eq. (27) operator identity holds on every grade
+of the finite carrier. This covers the algebraic nonzero-shift chart for the
+owned query family; it does not instantiate physical endpoint maps or prove
+their isometry, determinant, or covector normalization. All-jet and
+variational transport, physical admission, complete price/source selection,
+and GR closure remain open.
+
+The owning-module inventory is
+`sources/d0_proof_architecture_formalization_2026-10-24/eq27_eq28_chart_coverage_2026-10-25_inventory.json`.
+It records eight declarations at snapshot `ec43ce33d152eea718056937364b23efb0563809`
+with `worktree_dirty=true`, Lean 4.30.0, and lean-source digest
+`fc8921050dea5e545c04124655c786b584ccbb1b3afd7c0e77300ac820748bf8`. The
+collector digest is
+`392354a7fdaa9e00bd00d5c4c04ebd8f656e665942bee46cd95a9f1b892eaf66`, the
+inventory SHA-256 is
+`08a2098f28e19284882d9ec96ad4c151d9a516ec5c190beb29f7c2fb095b79ee`, and the
+composition source SHA-256 is
+`83472c7c03ef2b69d86b96bfc9f40b60b26af0bf7947f1a24febc07b70e6b36c`. The new
+source symmetry and
+nondegeneracy proofs use only `Classical.choice`, `Quot.sound`, and `propext`;
+Eq. (27) and the joint results retain the existing private `native_decide`
+dependency from `archiveCreatorPermSign`.
+
+The narrow Lean 4.30.0 build passed for
+`D0.Geometry.A4DJuliaRecoveryComposition` (3,022 Lake jobs). No full `D0.All`
+replay was run. This remains finite-carrier algebra under explicit endpoint
+hypotheses, not physical source selection or GR closure.
