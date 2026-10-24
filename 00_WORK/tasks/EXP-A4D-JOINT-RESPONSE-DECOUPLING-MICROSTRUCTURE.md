@@ -7749,8 +7749,47 @@ read-only reviewers checked the new marked-reporter composition against
 the actual preparation, diagnostic and complete-price owners. Their two
 clarifications explicitly define K_h's norm and retain the SAME moving
 transported Book cut in (115); neither changes the price or proof.
-Final section7k, heading through before8 INCLUDING trailing LF:
+Published marked-reporter composition, before the actuator application:
+section7k heading through before8 INCLUDING trailing LF:
 16984 UTF-8 bytes; SHA256
 da112c8fe78f921f4c32c8d86bc5b6569964652b0a1dd377be4f25ce900f0fec.
-Only affected work/protocol and whitespace validation is replayed;
-no unchanged full128 research suite or Lean rebuild is required.
+
+The same owner now applies this decoder to an actual field-changing
+word, section7k(116)-(119). A separate retained Golden flag controlling
+X on each ORIGINAL coframe SIGN bit gives the exact Heisenberg map
+Z->p^3 Z and preserves the old moment in Z_SIGN Z_flag. Insert it in
+the already paid preparation and its complete reverse, retain flags
+in both balanced copies, and rebuild the actual transported cut.
+The whole price is H_ref(N',H_full')+j_K(gamma_0 q(T_D t)); its complete
+source is the corresponding pullback, with the old protected rank.
+For M flags the true extra inventory is 2M G+4M X+4M CX, plus12M CX
+when both rotations require source-port routing; the full thermal
+factor is4^M at the SAME new N'. Reserved blanks belong to the same
+initial closed inventory and remain in the comparison price.
+
+This gives E->p^-3 E and g->p^-6 g for represented free coframes on
+the original component chart. An unchanged collar is not globally
+scaled; Bernstein affine-box bits instead contract about D_mid.
+No Golden action/source weight follows. The owned area polynomial
+has exact nonzero remainder -r^-1(r-1)^6 I at rI, r=p^6, so the
+original nilpotent-centre two-jet agreement cannot be reused there.
+This is a concrete finite operation/full-source map, not an Einstein
+solution-generating map or native selection of its complete task.
+
+Do not replace the remaining joint domain by a fibre of the ENTIRE
+future-state profile: the now available field diagnostics would then
+force DY=0 as well. The legitimate implementation fibre preserves a
+parameterized response function while its actual inputs may vary.
+Its identification with original physical X_N remains the application;
+M1 catalogue-independence alone does not establish it by hiding a
+chosen report law inside the candidate evaluator.
+
+The direct exact algebra check passes for the original unitary,
+one/two-bit Heisenberg maps, retained correlation, coherence guard
+and the existing polynomial remainder. No standalone certificate is
+created. Final section7k heading through before8 INCLUDING trailing LF:
+20979 UTF-8 bytes; SHA256
+a9ac8e0064da00493d726565766f436cb87fb765dd9dbfe7417016175a935543.
+Three read-only reviewers inspect the application; affected work/
+protocol and whitespace checks are used, without an unchanged full128
+research-suite or Lean replay.

@@ -2584,6 +2584,87 @@ moments, while forward/Bernstein and source-secant errors retain their
 existing budgets. Section7j removes the inverse debt, not those errors.
 There is no new exact smooth word-selector or exact finite-root claim.
 
+### An executed coframe change with its complete price
+
+The decoder now gives a concrete physical use of the original Golden
+gate, rather than identifying an address ratio with a metric scale.
+Use the ORIGINAL component SIGN operands D_ar=B_D t_ar of (113).
+For each physical coframe SIGN bit s in every packet, use a separate
+internal flag f, already present with its paid blank preparation in
+the SAME complete initial inventory. Execute only the existing word
+
+    B_s=CX_(f->s) G_f,
+    B_s(|0>_f |chi>_s)
+       =sqrt(p)|0>_f |chi>_s+p|1>_f X_s|chi>_s.
+
+No flag is measured, reset or discarded. Compressing the Heisenberg
+observable against its actual initial flag0 gives
+
+    N^*(Z_s)=(p-p^2)Z_s=p^3 Z_s,
+    N^*(Z_J)=(p^3)^(#coframe bits in J) Z_J.          (116)
+
+The second identity uses independent flags for distinct PHYSICAL bits;
+repeated polynomial factors retain the existing distinct packet slots.
+It holds as an effect identity before choosing a SIGN input. At the
+output of B_s, BEFORE the later inverse, <Z_s Z_f>=<Z_s>_input. This
+closed interaction produces a new readout while retaining the old
+physical trace at that stage, not preparing pure beta(p^3 t). The later
+full echo may uncompute this ACTIVE correlation; it is not asserted
+as a terminal-bank correlator.
+
+Write kappa=p^3 and T_D t=(kappa t_D,t_link,t_material). Extend the
+existing diagonal encoder and READY/click test as identity on the new
+flags: READY does NOT require flag0. Insert B=product_s B_s before
+A_n in the actual preparation, reverse the ENTIRE new forward word
+by section7j, and include all flags in the balanced final bank. Then
+
+    V'=A_n B(S tensor I_flags),
+    q_B(rho)=Tr[rho N^*(E_n)],
+    q_B(beta(t)^n)=q(T_D t),
+    B_new(t)=H_ref(N',H_full')+j_K(gamma_0 q(T_D t)),
+    d B_new=T_D^* d[j_K(gamma_0 q)].                  (117)
+
+The last equality is at fixed real clock/specification on this
+generated preparation family; it is the full source pullback, not
+an equality of absolute prices. Correlated SIGN inputs retain the
+effect formula in (117), not a substitution of their marginal means.
+The same protected rank, middle and gamma_0 remain. The transported
+Book cut is rebuilt from ALL new prefixes. Generated flag/state rows
+use the same adjoint; an independently varied extra controller would
+retain its own equation.
+
+For M flags the complete echo and two bank copies add 2M G, 4M X,
+and 4M CX calls before routing. Routing both flag rotations through
+the original equipped port adds 12M CX when required. At the SAME
+new N', flags and their bank multiply the full thermal dimension by
+4^M, while the protected rank is unchanged. A comparison programme
+must include these reserved modes in its original inventory too.
+Neither the added heat nor a primitive clock occupation is removed.
+
+On the original centered component decoder, fixed calibration gives
+
+    D'=kappa D, E'=kappa^(-1)E, g'=kappa^(-2)g.        (118)
+
+This applies to the represented free coframes. A fixed collar stays
+fixed; a GLOBAL homothety requires an actual transformation of the
+collar too, or a proved local restriction. On a Bernstein AFFINE box,
+flipping its u-coins instead gives D'=D_mid+kappa(D-D_mid), not (118).
+Keep the actual encoding and its chart before transporting a source.
+
+This supplies a finite field-changing operation and its whole-price
+map within the inherited addressed G/CX/X interface. It does NOT
+supply the Golden source weight sigma_lambda^* dB=lambda dB with
+lambda=kappa^(-2). In particular the existing area polynomial P_5
+from paid-writer(6) has, at Z=I and r=kappa^2,
+
+    P_5(rI)-(rI)^(-1)=-r^(-1)(r-1)^6 I != 0.         (119)
+
+Thus its exact two-jet application on the original nilpotent primary
+centres cannot be reused at this scaled endpoint without a new valid
+source transport. Equation(117) keeps the actual price instead of
+assigning it the desired weight. The global rigidity theorem remains
+conditional, and physical admission of this entire task/cut remains.
+
 **Parent application.** The configured stationary reporter no longer
 needs a separate supplied geometry or a scalar-return inverse: (114)
 binds its own complete marked operator to its original full field chart
