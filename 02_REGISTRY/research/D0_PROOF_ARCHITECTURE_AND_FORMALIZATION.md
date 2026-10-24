@@ -957,3 +957,36 @@ non-growth (3 findings, baseline 3), and `git diff --check`. On published
 commit `cd9d40e215b5697ab251912203277dfbb685a3b4`, GitHub `D0 Lean build` run
 2991 and `D0 guards` run 5029 both succeeded. The compiled-reuse record retains
 its pre-publication dirty-worktree provenance and source digests above.
+
+## Hodge degree-preservation application (24 October 2026)
+
+The registered `D0-ARCHIVE-WEIGHTED-HODGE-DIRAC-001` module previously exposed
+degree preservation only as `DegreePreservingLaplacian true`. It now also
+contains a concrete theorem for the existing unweighted Hodge/CAR operator:
+if a cochain is supported in Fock degree `k`, then `hodgeCarDirac²` remains in
+degree `k`. The proof applies the owned `hodgeCarDirac_sq_fibre` identity and
+the fact that the scalar difference Laplacian acts independently on each
+fixed Fock component. The number of degrees is now derived as
+`Fintype.card Role + 1 = 5` rather than introduced as a bare constant.
+
+The weighted operator `W`, weighted adjoint, and standard-Hilbert self-adjoint
+representative are still not constructed in this module. The legacy Boolean
+field remains visible as a scope limitation, and the weighted claim's source
+and semantic C0 review remain open. No claim status, owner, physical assumption,
+or Hodge-metric selection is changed. `formal_support.csv` records the concrete
+consumer edge from `ArchiveHodgeCARDiracSquare` to this application.
+
+The compiled reuse record is preserved at
+`sources/d0_proof_architecture_formalization_2026-10-24/weighted_hodge_claim_reuse.json`
+(SHA-256 `456a37d3eeebc5319e30559ed330e21c2716c8b9d08b78ea822f49480c2f5408`).
+The locator resolves through `D0.All`; the elaborated owner type now includes
+the exact homogeneous-degree-preservation conclusion, and its proof dependencies
+include `unweightedHodgeSquare_degree_preserving` and
+`formDegreeCount4D_eq_five`. Source digest
+`f964dae2c27862dd29ba822d4368ec329998a821db96dcca080215ab63eee600`, collector
+digest `7160df1ba73e78919758cefb84b6dcbc08c04fe21caf3210d3adbfd8b8ed4f45`,
+pre-publication local HEAD `6b59bc57ca97275df9e973715cdb503ec8fc5c4e`, and
+`worktree_dirty=true` are recorded. The axiom footprint includes the existing
+named `native_decide` axioms for the CAR creation, annihilation, and mixed
+anticommutator results, as well as `Classical.choice`, `Quot.sound`, and
+`propext`.
