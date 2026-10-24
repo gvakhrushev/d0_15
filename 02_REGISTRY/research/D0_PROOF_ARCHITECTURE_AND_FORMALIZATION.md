@@ -958,6 +958,21 @@ commit `cd9d40e215b5697ab251912203277dfbb685a3b4`, GitHub `D0 Lean build` run
 2991 and `D0 guards` run 5029 both succeeded. The compiled-reuse record retains
 its pre-publication dirty-worktree provenance and source digests above.
 
+This also updates one input to the earlier E-CARHODGE route in
+`A4D_CAR_HODGE_METRIC_ACTION.md`: that memo identified the absence of a literal
+finite cochain differential as its first blocker. The finite operator and its
+unit-step nilpotency adapter now exist in the compiled library. This changes
+only that finite premise; the metric-dependent exterior weight `W_m`, weighted
+adjoint, full Hodge action and variation, and centered Cartan/Ward compatibility
+remain open. The original research owner and its broader scope remain intact.
+
+Local validation for the operator package passed: narrow build of
+`D0.Geometry.ArchiveWeightedHodgeDirac` (2,986 Lake jobs), exact claim reuse
+through `D0.All`, generated-view check (`stale=0`), formalization-debt
+non-growth (3 findings, baseline 3), and diff check. GitHub `D0 Lean build`
+run 2994 and `D0 guards` run 5032 both succeeded on code commit
+`23f9f5c7093386a30c87386353d06ae03dace9b6`.
+
 ## Hodge degree-preservation application (24 October 2026)
 
 The registered `D0-ARCHIVE-WEIGHTED-HODGE-DIRAC-001` module previously exposed
