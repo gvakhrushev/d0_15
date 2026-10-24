@@ -1614,6 +1614,220 @@ refining Palatini family retain their separate source contracts;
 refining sequence. GR_closed and raw216 remain open.
 
 
+## 7h. Compose collective preparation with the literal complete Book source
+
+24 October 2026. Same native-realization/GR-composition owner, input
+2b3ac3af. Consume the [nonvacuum collective source theorem](A4D_NONVACUUM_COLLECTIVE_PREPARATION_SOURCE_EQUIVALENCE_2026_10_22.md),
+its [actual coherent injection](sources/d0_nonvacuum_collective_preparation_2026-10-22/joint_source/PAID_COHERENT_INJECTION_AND_WHOLE_TAPE_SOURCE.md),
+paid-writer9.1's raw/deferred word, and sections7e-g here. The collective
+owner previously retained an unbounded replacement by a different full
+Book price. The following application supplies its literal H+J source on
+one specified coherent return programme, including a full internal bank.
+It does not identify that programme with every compulsory Book execution.
+
+### One fixed encoder retains the actual correlated input effect
+
+Let a packet contain the D deduplicated free SIGN coordinates, with
+beta(t)=tensor_j[sqrt((1+t_j)/2)|+>+sqrt((1-t_j)/2)|->], |t_j|<1.
+The fixed geometry/Cayley/material encoders and their actual RIGHT
+factors are the owned ones. A raw moment occurrence has one packet
+slot and queries at most one coordinate in that slot. Use k slots,
+including repeated occurrences and all global report multiplicities.
+No assumption of independence is made about a general input to these
+slots. Product beta(t) is a section at which the source is evaluated.
+
+Let E be the symmetrized positive CLICK effect of this fixed report,
+0<=E<=q_max I with q_max<1/2. There are two already constructed inputs:
+
+* The original weak report uses a genuine positive tag selecting a
+  local click R_l with the SAME normalized site/PF/trace weights as
+  the global source. The tag, coefficient rows and acceptance are paid.
+  Only fixed actual weights are covered here. Moving weights need their
+  true encoding and their source; they cannot be frozen into this tag.
+* The current paid-writer10 Bernstein report has exactly its existing
+  coefficients q_i and polynomial Q_h(u). Assign a separate packet
+  slot to each coordinate-coin occurrence; retain its counters,
+  selector and all coefficient rows. On basis SIGN inputs its effect
+  is diagonal with entries q_i. Thus, before symmetrization,
+  ||E-r0 I||<=max_i|q_i-r0|. No geometric polynomial is changed.
+
+Prepare n>=k packets and execute the owned uniform coherent ordered
+injection of k slots into these n packets. Retain the injection labels,
+all unselected packets, purifiers and appropriate original RIGHT
+systems. The exact effect on ARBITRARY correlated SIGN input is
+
+    E_n=1/(n)_k sum_injections iota E^(iota),
+    q(t)=<beta(t)^k,E beta(t)^k>
+        =<beta(t)^n,E_n beta(t)^n>.                    (75)
+
+Use one raw attempt per factory and defer its pointer readings as in
+paid-writer9.1. Uniform-label acceptance, every raw failure flag and
+later gates on failure branches remain present. This is a new complete
+coherent schedule with its own true success gamma_{h,n}>0, not the old
+measured/capped schedule or its entropy ledger. Its input-independent
+logical factory laws and orthogonal retained labels give the OPERATOR
+identity
+
+    i_0^dagger A_n^dagger Pi_READY,click A_n i_0
+         =gamma_{h,n} E_n                              (76)
+
+on the entire correlated SIGN space. Here i_0 appends the actual blank
+scratch. This is an EFFECT compression, not an amplitude compression.
+The scalar gamma includes every real raw factory and row/label acceptance.
+No uniform lower bound or success-conditioned removal of columns is used.
+
+### Put preparation into the same return word and price it there
+
+For the smooth comparison let S_Psi be a full-column work preparer on
+SIGN alone, S_Psi|0_SIGN>=Psi; its scratch and original spin are untouched.
+Include BOTH this preparation and its coherent inverse in
+
+    V_Psi=A_n(S_Psi tensor I_scratch),
+    U_Psi=V_Psi^dagger M0 V_Psi,
+    Ubal_Psi=C(U_Psi tensor I_bank)C.                   (77)
+
+The initial cut is the fixed genuine blank-work/port0 cut of section7e,
+with its actual protected spin/past rank r. It is NOT I_SIGN tensor P.
+If SIGN were instead an arbitrary input state to a fixed processor with
+that larger identity cut, Book would trace a return OPERATOR on SIGN;
+its action would not be j_K of one state's expectation. Equation(77)
+is the preparation-control family, with fixed input, used here.
+
+Count every preparer, encoder, injection, inverse and copy stage in the
+actual common clock T_{h,n}, and keep every thermal dimension. On the
+exact coherent-inverse comparison, (56), (72) and (76) give
+
+    B_n(Psi)=H_ref(T_{h,n},D_full)
+                +j_K(gamma_{h,n}<Psi,E_n Psi>).        (78)
+
+H_ref is the full field-constant heat of this conjugacy family, including
+its bank multiplicity and longer clock. No entropy is substituted for
+Book, and no baseline is subtracted from the physical price. A varying
+S_Psi is a mathematical comparison unless its actual native control map
+is supplied. In finite native positive words its exact inverse is replaced
+by the owned positive-power approximation, with all actual costs/errors.
+Do not turn that pointwise word approximation into a smooth actuator.
+
+For resource-only normalized pure tangents eta, at Psi=beta(t)^n,
+put x=gamma_{h,n}q(t). Since the encoder/factory controls are fixed,
+
+    D_SIGN B_n[eta]
+       =2 j_K'(x) gamma_{h,n} Re<eta,(E_n-q)Psi>,
+    ||D_SIGN B_n||_sphere
+       =2 j_K'(x) gamma_{h,n} ||(E_n-q)Psi||.           (79)
+
+This includes arbitrary ENTANGLED tangents of the n input packets,
+not only product-state variations. It is not section7g's much larger
+free sphere of ALL encoder, readiness and report work. Those extra
+independent controls retain their equations if physically admitted.
+The restriction here is the unchanged fixed logical encoder, not an
+independence axiom imposed to remove the old correlation witness.
+
+### The existing overlap theorem now controls literal Book and fields together
+
+The owned one-moment-per-slot operator alphabet is I,Z_j on the ENTIRE
+kind input, including the material calibration. Its first conditional is
+
+    E_1=q I+(1/k) sum_j (partial_tj q)(Z_j-t_j I).
+
+For the Bernstein version this follows from the same one-coordinate
+slot assignment before the fixed Boolean counting/lookup. Therefore
+k^2||(E_1-q)beta||^2=sum_j(1-t_j^2)(partial_tj q)^2=:G_h(t)^2.
+Apply the ALREADY proved orthogonal one-excitation lower bound and
+shared-slot upper bound to E_n. For B_E>=||E-b I||, with a fixed scalar b,
+
+    G_h <= sqrt(n)||(E_n-q)beta^n||
+        <=sqrt[G_h^2+B_E^2 k^2(k-1)^2/(2(n-1))].       (80)
+
+Define the actual click-to-field gain g_h=a0 tau_h/Omega>0 and
+Gamma_{h,n}=j_K'(gamma_{h,n}q) gamma_{h,n} g_h.
+Use the native click coefficient a0, NOT the counted-CQ coefficient
+(1-h_phi'(r0))a0. Combining (79)-(80) gives
+
+    E_click,h := G_h/g_h,
+    Q_B,h,n := sqrt(n)||D_SIGN B_n||_sphere/(2 Gamma_{h,n}),
+    C_h := B_E k(k-1)/(sqrt(2) g_h),
+
+    E_click,h <= Q_B,h,n
+       <=sqrt[E_click,h^2+C_h^2/(n-1)].                (81)
+
+READY probability, protected rank and the native middle's small angle
+cancel in this source comparison EXACTLY ONCE. Their clock, absolute
+price, preparation and statistical costs do not disappear. The sqrt(n)
+factor prevents a false zero caused merely by averaging more packets.
+The lower bound shows that nonzero global field source is retained.
+The geometric norm is obtained through the actual original all42
+inverse/Cayley/material Jacobian and interior sign margins, as in the
+collective owner(20); the sphere norm is not relabelled that norm.
+
+For the original weak report, the existing attenuation operator bound
+is B_E<=tau_h Xi_click, with
+
+    Xi_click=128 zeta sum_l omega_l(2 Lambda_u,l+8 Lambda_v,l).
+
+Thus C_h<=Omega Xi_click k(k-1)/(sqrt(2) a0), retaining actual weights
+and scales. For the current Bernstein report, use its ACTUAL coefficient
+bound B_E<=max_i|q_i-r0|. On a fixed regular chart, the owned weak-query
+formula gives max|R_h-r0|=O(tau_h), so coefficient error O(tau_h) suffices
+for B_E=O(tau_h). Constants and degree/k dependence remain explicit;
+no uniformity over unbounded or degenerate charts is asserted.
+
+### Consume the primary root without inventing exact finite stationarity
+
+On the original common-null primary, every local report value equals r0,
+but its individual field derivative need not vanish. The collective owner
+proves GLOBAL all42 cancellation with its real weights. At this common
+value its whole counted-CQ score is scalar I plus the SAME weighted sum
+of click effects times the common nonzero number 1-h_phi'(r0). It follows
+that D_t q=0 and E_1=r0 I for that original report. This uses the old score
+only to identify its already proved zero; it does not assign its entropy
+or baseline to the new Book action. Hence (81) gives Q_B<=C_h/sqrt(n-1)
+on the same nonvacuum fields, preserving the owned midpoint recovery.
+
+For the CURRENT Bernstein report, do NOT assert exact Hermite matching.
+Its q=Q_h(u), t_j=2u_j-1, has the existing error
+ e_1,h=max_j||partial_uj(Q_h-R_h)||.
+At a primary centre D_u R_h=0 by the exact original common-null source,
+so E_click,h<=sqrt(D)e_1,h/(2g_h). Off the primary, (81) controls the
+actual click source; only the owned open-chart weak-query/C1 estimate
+transports it to Palatini. It does not identify it with the off-null
+unpadded N1 CQ source or borrow that root's inverse/Hessian tolerance.
+
+Given epsilon_h>0, choose the existing report accuracy so the first
+term of (81) is <=epsilon_h, fix k and its true B_E, then choose
+n>=max(k,2,1+(C_h/epsilon_h)^2). This gives Q_B<=sqrt(2)epsilon_h.
+Include the actual physical tangent-lift norm when one is available;
+it can require a larger n. Finite native field-key/decoder errors and
+material errors retain their own source-normalized budgets. Taking
+those errors and epsilon_h to zero composes with the SAME existing
+curved metric/material recovery. This is a controlled joint-source
+recovery sequence, not exact finite joint Euler roots or stability.
+
+For actual paid secants, fix h, report table, n, common catalogue,
+T_{h,n}, all gains and an admitted contained stencil before choosing
+inverse precision. The scaled preparation comparison requires
+
+    sqrt(n) L_prep,h,n epsilon_word/(Gamma_{h,n} delta)->0,  (82)
+
+with the actual finite dimensional contraction/lift factor L_prep,h,n;
+also retain the scaled central-difference truncation and preparation
+errors. The old unscaled all42 error condition is insufficient for
+(81). On any specified finite set of actually implemented comparisons,
+the old unbounded positive-inverse subsequence permits this strengthened
+finite accuracy after those quantities are fixed. No general native
+sphere actuator, smooth word selector or uniform polynomial cost follows.
+
+**Parent substitution.** The collective preparation-source result now
+has a literal full-Book H+J consumer on the known-port, recorded, paid
+return family. It suppresses its correlated resource-preparation source
+while preserving its global field source, without a Book/Shannon equality
+or a free negative term. Section7g still applies to any additionally
+free ALL-work control. Physical admission of the SAME field/preparer
+control domain, other independently selected stack sources, process
+refinement and exact stationary refining executions remain to be proved.
+GR_closed and raw216 are unchanged.
+
+
 ## 8. Reproduction
 
 Run from this directory:

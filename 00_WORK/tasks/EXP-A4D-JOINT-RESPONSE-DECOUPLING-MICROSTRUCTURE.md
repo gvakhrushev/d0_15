@@ -7321,3 +7321,81 @@ Final native_valuation_map review ACCEPTs the pinned 6195-byte section.
 Universal_parent_map accepted the preceding mathematical slice before
 the final secant-scope tightening. Targeted work/protocol checks and
 diff whitespace check PASS; no unchanged full128 or Lean replay.
+
+
+### 24 October: collective resource preparation now consumes the literal full Book source
+
+Phase: native realization / global GR composition, same existing owner,
+constitutive/native-programme-v1. Input publication 2b3ac3af. Primary
+artifact section7h consumes the owned nonvacuum collective preparation
+and coherent injection, paid-writer9.1 raw/deferred all-column factories,
+and the known-port/balanced-recorded return of sections7e-g.
+
+Exact parent substitution: the previous collective source estimate applied
+to a specified counted-CQ price and explicitly left a different full Book
+price uncontrolled. It now has a literal H+J consumer on this coherent
+return family. Fixed raw encoder A_n, true blank scratch i_0 and the
+retained all-READY/click projector satisfy
+ i_0^dagger A_n^dagger Pi A_n i_0 = gamma_n E_n
+on ARBITRARY correlated SIGN input. E_n is the actually executed uniform
+without-replacement average of the same report effect. All failures,
+injection labels, unused copies, purifiers and correct RIGHT factors stay.
+This is an effect compression, not an amplitude compression or reuse of
+the old measured-cap entropy ledger.
+
+Include the resource preparer AND its inverse in the full word with fixed
+blank input cut; use the actual paid balanced record. The ideal reference
+price is exactly H_ref+j_K(gamma_n <Psi,E_n Psi>), with the entire clock
+and bank trace paid. Its resource-only sphere gradient is
+2 j'_K gamma_n (E_n-q)Psi. The owned one-excitation/overlap theorem yields
+ E_click <= sqrt(n)||D_SIGN B||/(2 Gamma_B)
+          <= sqrt(E_click^2+C_h^2/(n-1)),
+where Gamma_B=j'_K gamma_n a0 tau_h/Omega is the ACTUAL click-source gain.
+Readiness, native middle angle and protected rank cancel once; no Book
+information functional is assigned from a target law.
+
+The lower bound preserves nonzero global field source. At the original
+primary report, the common r0 and actual weighted global all42 cancellation
+make its first conditional scalar; no individual cell source is set to
+zero. For the CURRENT Bernstein report the primary first-jet residual is
+retained and controlled by its existing C1 accuracy. The overlap constant
+uses the actual weak-effect/operator coefficient bounds; n may grow with
+all true mesh, degree and tangent-lift factors. The construction composes
+with the existing nonvacuum metric and midpoint material recovery.
+
+This is a joint SOURCE recovery component. It is not an exact finite
+stationary root, physical selection of the fixed encoder/control domain,
+or an off-null identification with the unpadded N1 CQ root. Section7g's
+independent ALL-work preparation source still applies if those additional
+controls are free. The new calculation fixes the actual logical encoder
+and allows arbitrary entangled variations of its resource input, rather
+than imposing product-only variations. Moving weights and any other
+independent stack source retain their actual equations.
+
+The exact smooth comparison includes the preparer and inverse. Actual
+positive native words retain their approximation and paid-code boundary.
+For specified finite admitted resource stencils, the new accuracy condition
+is sqrt(n) L_prep epsilon_word/(Gamma_B delta)->0, with scaled truncation,
+preparation and actual decoder errors also retained. An unscaled compiler
+condition cannot justify the scaled joint norm. A smooth word selector is
+not asserted or added as a universal prerequisite. Process/refinement and
+exact stationary execution obligations remain open; GR_closed/raw216 and
+scientific/assembly statuses are unchanged.
+
+Write paths: existing primary residual owner and this brief only.
+Smallest decisive check: exact rational k=2, n=2..6 symmetric effects test
+both a nonzero field-source lower bound and a primary correlation residual;
+verify actual-gain cancellation at two different readiness values, retain
+a hostile unrestricted-preparer control, and check an 8-by-8 full-column
+dilation's effect compression including input coherences. PASS. This
+parameter-family check is not a new native primitive certificate. The
+general proof applies already owned operator/overlap results analytically.
+
+Native_continuation_map and native_valuation_map independently ACCEPT the
+complete section7h, heading through before8 INCLUDING trailing LF:
+11370 UTF-8 bytes; SHA256
+d8d8566822df819af3133d86738f18975eb9f3d08f5c9410f251be2ce5a0b659.
+No new task, standalone certificate, Lean module or status promotion.
+
+Targeted work/protocol validation and final diff check PASS. Unchanged
+full128 and Lean suites were not replayed for this source composition.
