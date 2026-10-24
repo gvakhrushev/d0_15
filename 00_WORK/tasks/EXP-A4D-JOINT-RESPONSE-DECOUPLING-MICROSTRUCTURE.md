@@ -8442,3 +8442,86 @@ embedding and stationary-execution bridge. The next physical parent is
 a native source-local coframe/proper-link-to-query interaction with its
 complete price and variation map. No physical field selection, complete
 on-shell family, positive_gr/GR_closed or raw216 closure is claimed.
+
+
+### 24 October: native coordinate programmes implement the moving query channel
+
+Phase: native realization / source composition; same PR #334 owner and
+registered constitutive slot on native-programme-v1. Input:
+336d6aab8aa5bb9d1c020e9cbe4cbfdc52be85f0. Write paths: primary residual
+owner section7r and this brief. No new task, action or status promotion.
+
+Changed input: regenerated coordinate/moment programmes and the exact full
+raw echo permit a controlled query-channel approximation without requiring
+full retained-state C1 convergence. This supplies the moving unknown-input
+query ACTION previously assumed in7n; it does not select the programme or
+identify the old all-column Julia/thermal operator.
+
+For a fixed real skew generator Y and fresh independent Z-mean-s programme
+bits, the actual collision word has reduced target channel
+[cosh(A/m)+s sinh(A/m)]^m, A=theta ad_Y. Equations(169)-(170) give explicit
+dimension-independent diamond C0/C1/C2 bounds of order1/m, valid at s=+/-1.
+Controlled algorithm/DATA channels are compiled as such, preserving their
+interference and arbitrary oldRIGHT; ordinary DATA-channel convergence
+would lose the controlled global phase.
+
+Interaction(171) is a literal native word. It inserts two programme-CX
+calls in each of7c's commuting Golden plane factors. Its Z-conditional
+structure is exact at the native angle, with counts Kk G and
+K(2l_M+n+1)+2|x| CX per collision. Positive Golden powers approximate the
+fixed microangle once for the entire field window. The cumulative m-times
+angle error, known-one sector, literal complement, routing and full raw
+inverse remain in the actual price and error budget.
+
+The ORIGINAL real Julia query has analytic factorization(172):
+T=X f(X^T X), f(z)=arcsin(sqrt(z))/sqrt(z),
+J(X)=S exp([[0,-T^T],[T,0]]). The series at0 and strict contraction gap
+control its C2 field jets. It uses256 fixed cross-block planes; uniform
+coefficient bounds B_l=2 suffice. Their programme means come from the
+owned fixed Bernstein/row processor applied to the original structural
+query functions, with actual field/Gram/density jets and coefficient errors.
+No moving eigenvector, logarithm, query oracle or Einstein-fitted table is
+introduced. Controlled S is the existing CNOT on the coefficient bit.
+
+Fix the original outer query network/call count M before inner limits.
+Every logical J/Jdagger/controlled call consumes fresh programmes. The
+channel hybrid bound(173) gives its true reduced logical first-jet error;
+all call counts, input jets, field Jacobians and finite-code/secant errors
+remain. A logical adjoint simulation uses fresh programmes; the CLOSING
+Book echo instead reverses the entire ACTUAL raw word on the same retained
+registers. These operations cannot be identified.
+
+The complete expanded word still has exact heat conjugacy and price
+H_ref(N,D_full)+j_K(gamma_m q_m), with all programme/failure dimensions.
+The final weak effect ignores new programme garbage, while genuine
+success flags remain in READY. Trace preservation then proves(174),
+normalized-source debt <=(Omega Xi/a0)e1, with actual Gamma_m and no1/tau
+or readiness loss. This replaces the query-channel input in124/129 on the
+owned coordinate interface. Other selected Info/work/stack and independent
+programme/control/cut/clock rows keep their true source.
+
+Hostile controls are load bearing: reusing one programme gives a fixed
+mixture rather than the desired unitary; uncontrolled channel agreement
+cannot supply SELECT. The retained joint state has error tending to0,
+but(175) gives derivative-error squared tending to3theta²/4. Hence no
+full-joint C1 claim, old all-column reconstruction or old spatial thermal
+price is transported. Physical X_N/programme selection and compatible
+joint stationary refinement remain open. No positive_gr/GR_closed or
+raw216 completion is claimed.
+
+Narrow checks (Python3.9.6, SymPy/mpmath, exit0): exact native Golden-number-
+field sign macro, both programme sectors/all target columns; symbolic
+non-normal Julia factorization;60 qubit C0/C1/C2 spectral controls; direct
+binomial verification of the joint-C1 counterexample and programme-reuse
+control. The analytic diamond proof covers the full channel; spectral
+controls are bounded checks, not a replacement for it. No unchanged
+full128/root/Lean or registered scientific suite was replayed.
+
+Final section7r, including heading and separators immediately before8:
+14876 UTF-8 bytes; SHA256
+723608aa4f5bca585c95d0d25ec951b0f607ab3715dc0011585f8db4f53df1cc.
+Independent native_source_application, price_geometry_bridge and
+stationary_root_transfer reviews reread and ACCEPTED this exact final pin.
+
+Final work/protocol/assembly/repository and diff whitespace checks PASS.
+Scientific status and the remaining native programme/domain obligations are unchanged.

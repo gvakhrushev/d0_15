@@ -4460,6 +4460,288 @@ neither inserts that missing law nor promotes positive_gr, GR_closed
 or raw216 closure.
 
 
+## 7r. Compile the original moving Julia query channel from native coordinate programmes
+
+24 October 2026. Same owner; input336d6aab. The changed input is the
+existing regenerated coordinate/moment programme together with the full
+raw inverse and complete-Book conjugacy of7j/p. The target is the ORIGINAL
+Julia operation(5) of the full-Lorentz source, acting on arbitrary unknown
+DATA and its oldRIGHT. This constructs a query ACTION from the coordinate
+programmes, rather than assuming a moving Julia gate. The preparation and
+physical selection of those programmes keep their existing hypotheses.
+
+The earlier exact finite programming obstruction is preserved. The new
+finite processor has an approximation parameter, genuinely fresh programme
+banks and controlled channel/source errors. It is not an exact replacement
+of the old all-column Julia/full128 operator or its thermal action.
+
+### One programme coordinate produces a controlled rotation channel
+
+Let Y be a fixed real skew target generator, ||Y||<=1, and theta a fixed
+real constant. For EVERY elementary use prepare a fresh programme bit z
+with actual diagonal mean s=Tr(rho_prog Z), |s|<=1. It can be mixed or
+entangled with its own retained work; no pure square-root programme is
+required. Complete programme banks must be independent of DATA/oldRIGHT
+and of one another, conditional on the same sharp field setting.
+Execute
+
+    W_j=exp[(theta/m) Y tensor Z_j],   j=1,...,m.        (168)
+
+Keep every programme bit and its purifier. Each coupling preserves Z_j.
+Tracing them only for the logical comparison gives the target channel
+
+    Phi_(m,s)=T_s^m,
+    T_s=cosh(A/m)+s sinh(A/m),   A=theta ad_Y,
+    Psi_s=exp(s A)=Ad_(exp(theta s Y)).                 (169)
+
+No physical trace, measurement or reset occurs between the couplings.
+The target can be entangled with an arbitrary reference: use diamond
+norms throughout, so this includes original oldRIGHT. The logical
+comparison ignores the retained programme work, which remains in the
+actual complete word and price.
+
+Here are quantitative source jets, uniform on the CLOSED interval |s|<=1.
+Put a=||A||_diamond<=2|theta|||Y||. For m>=2,
+
+    ||Phi-Psi||_diamond <=a^2/(2m),
+    ||partial_s(Phi-Psi)||_diamond <=(a^2+a^3/2)/m,
+    ||partial_s^2(Phi-Psi)||_diamond
+                                  <=(a^2+2a^3+a^4/2)/m.            (170)
+
+For proof let U_s=exp(sA/m), B=sinh(A/m). T_s and U_s are CPTP,
+with diamond norm one. Taylor about the mean of z=+/-1 gives
+||T_s-U_s||<=a^2(1-s^2)/(2m^2). Also
+B=(1/2)int_(-1)^1 (A/m)exp(tA/m)dt, so
+||B-(A/m)U_s||<=a^2(1+s^2)/(2m^2), ||B||<=a/m.
+These estimates use norm-one unitary channels along the real integral,
+not an unproved inverse bound near s=+/-1. Since all maps are functions
+of A, partial_s^j T_s^m=(m)_j B^j T_s^(m-j), j=0,1,2.
+CPTP telescoping gives the first two estimates. For the second derivative,
+write D=(A/m)U_s and split
+m(m-1)[(B^2-D^2)T_s^(m-2)+D^2(T_s^(m-2)-U_s^(m-2))]
+-m D^2 U_s^(m-2).
+Its norm is at most
+2a^3(m-1)/m^2+a^4(m-1)(m-2)/(2m^3)+a^2/m,
+which proves(170). These bounds include genuinely controlled Givens
+with eigenvalues0,+i,-i and the actual gaps0,+/-1,+/-2.
+
+An uncontrolled DATA-channel bound is insufficient for coherent SELECT:
+Ad_U=Ad_(-U), while controlled-U and controlled-(-U) are distinguishable.
+For every controlled query below use Y=|1><1|_algorithm tensor Y_plane
+and apply(168)-(170) on the ENTIRE algorithm-control/DATA register.
+Thus the bound preserves its interference as well as oldRIGHT.
+
+### The small sign-controlled interaction is a literal native word
+
+The constant interaction(168) is not a new primitive. Consume7c's
+commuting plane construction. On n target bits, K=2^(n-1), it supplies
+CNOT words Q_b with Q_b G_0^k Q_b^dagger=exp(k theta0 W_b),
+[W_b,W_c]=0 and sum_b W_b=K J_(0,a). Here theta0 is the ORIGINAL
+Golden angle, and J_(0,a)=|a><0|-|0><a|. The programme bit z lies
+outside those target bits. Insert its two CNOTs in each factor:
+
+    P_k(z)=X^x product_b
+       [Q_b CX(z,0) G_0^k CX(z,0) Q_b^dagger] X^x
+       =exp[Kk theta0 J_(x,x+a) tensor Z_z]            (171)
+
+on the actual sharp known-one sector c0=1. The translations X^x are
+exactly7c's paid CX(c0,bit) words. On c0=0 the literal untranslated
+plane remains, rather than a silently removed identity block.
+Equation(171) follows from XG^kX=G^(-k), the commuting W_b and their
+sum. The programme bit is preserved EXACTLY on both z columns.
+For each use its real inventory is
+Kk Golden gates and K(2l_M+n+1)+2|x| CNOTs, before preparation,
+routing, flags and the complete inverse. Every inactive control is paid.
+
+The original irrational-angle owner makes K theta0/(2pi) irrational.
+Choose positive k and integer l ONCE at the desired accuracy, with
+alpha_eff=Kk theta0-2pi l close to theta/m. The implemented conditional
+structure is exact at that native angle. Set theta_m=m alpha_eff and
+Delta_a<=2m|alpha_eff-theta/m|||Y||. With
+R=max(||theta_m ad_Y||,||theta ad_Y||), the ideal-angle mismatch in
+channel jets j=0,1,2 is bounded by
+Delta_a times respectively1,1+R,2R+R^2. Add this to(170) evaluated at
+theta_m. In particular per-use angle precision O(m^-2) gives overall
+O(m^-1). Keep its actual finite integer k and full clock cost; no
+uniform complexity or free continuously variable native rotation is
+asserted. Algorithm control is implemented by including its0/1 label
+in the target plane addresses, not by assuming controlled-G.
+
+### The original strict Julia matrix has an explicit analytic generator
+
+Use the original REAL full16 contraction X(Y), ||X||<=kappa<1, on a
+fixed compact regular field/programme chart. It contains the true
+coframe and proper-link coordinates and any genuinely moving frame,
+Gram or density inputs; those augmented jets must not be frozen.
+The prescribed Julia matrix is
+J(X)=[[X,sqrt(I-XX^T)],[sqrt(I-X^TX),-X^T]].
+There is a global analytic formula on this strict contraction window:
+
+    f(z)=arcsin(sqrt(z))/sqrt(z),   f(0)=1,
+    T(X)=X f(X^T X),
+    B(X)=[[0,-T(X)^T],[T(X),0]],
+    S=[[0,I_16],[I_16,0]],   J(X)=S exp B(X).           (172)
+
+For verification only, take a singular-value decomposition of X.
+Then T has the same left/right factors with singular values arcsin(sigma),
+and exp B has blocks sqrt(I-X^TX),-X^T,X,sqrt(I-XX^T).
+Multiplication by S gives the original J. The processor does NOT execute
+a singular-vector catalogue or a supplied logarithm. It uses the series
+f(z)=sum_(r>=0) binom(2r,r)z^r/[4^r(2r+1)], which and its matrix/field
+first two derivatives converge uniformly for ||X||<=kappa<1.
+
+B(X) is the sum of256 FIXED cross-block skew planes with real analytic
+coefficient functions b_l(Y)=T_ij(X(Y)). Choose fixed bounds B_l>0
+strictly larger than sup|b_l| on the actual chart. One explicit uniform
+choice is B_l=2, since ||T(X)||<=arcsin(kappa)<pi/2<2. This is a
+programme-coordinate bound; theta s still equals the prescribed target
+coefficient and no action coefficient is fitted. The owned fixed
+coordinate/Bernstein/row processor of7h-o can produce programme SIGN
+means s_l(Y) approximating b_l(Y)/B_l with their first two source jets.
+Its coefficient rounding, range extension, source weights and real
+field-to-coordinate Jacobian remain in that approximation error.
+The tables derive from the ORIGINAL prescribed X-to-J function(172),
+not from a desired Einstein output law.
+
+At finite native code settings these are regenerated paid programmes;
+the C2 functions are their declared smooth comparison section and the
+old finite-code/secant obligations remain. A single unknown field or
+programme specimen cannot supply extra copies. If the actual coordinate
+banks or their repeatable source are unavailable, this construction does
+not manufacture them. It consumes their already owned explicit source.
+
+Use a product formula for exp(sum_l b_l Y_l), with each factor's
+coefficient obtained from its own programme mean and(168)-(171).
+Fix the original outer query algorithm, call count M and actual field
+window BEFORE taking these inner implementation limits. Only afterwards
+choose a diagonal sequence of outer accuracies or meshes, retaining all
+its actual constants. At each finite time slice, all gates, lookup tables
+and integer powers
+are fixed for the ENTIRE field window. Only the regenerated programme
+states change with the native field setting. First choose the analytic
+coefficient/row approximation, then the fixed product-formula depth,
+then programme count and native angle precision. Finite Taylor/product
+rules and(170) give convergence with both field jets on that compact
+chart. Constants retain kappa, actual coefficient/field derivatives,
+plane count and circuit depth. No claim is made for unbounded boosts.
+
+The fixed S is X on the Julia coefficient bit. Its controlled version
+is exactly CX(algorithm,coefficient); its unconditioned version uses the
+actual known-one control. Thus this construction supplies CONTROLLED
+J(X) on arbitrary target inputs as well. A logical J^dagger request
+uses its own fresh programmes for exp(-B)S. It does not reverse the
+programme work of a preceding logical J call.
+
+### Compare the entire logical network, then price its actual full word
+
+Fix one of the original finite coherent query networks consumed by7n.
+Replace EVERY J/J^dagger/controlled-query occurrence by the processor
+above, using fresh complete programme banks even for consecutive calls.
+Its reduced channel on all logical registers approaches that same ideal
+network with C2 source jets. The new programme/seed garbage is retained
+but not read or reused by subsequent logical gates or final READY/report.
+Genuine source/factory success flags DO remain in READY; they are not
+confused with irrelevant quantum garbage. Already measured history is
+not erased, deferred anew or placed inside an unavailable inverse.
+
+For clarity, an explicit first-jet composition budget suffices for the
+field source. Suppose there are M query calls, each reduced channel
+error bounded by epsilon0 and first field-jet error by epsilon1 in
+the chosen diamond/operator norm. Let L bound the first jets of BOTH
+actual and ideal calls, and B_in the trace-norm jet of the actual common
+input state. Fixed intervening unitaries add no derivative. Hybrid
+CPTP telescoping gives
+
+    e0<=M epsilon0,
+    e1<=M epsilon1+M epsilon0[B_in+(M-1)L].             (173)
+
+Here e1 bounds the derivative of the REDUCED final logical density.
+For heterogeneous calls use their actual summed bounds; coefficient
+bias, product-formula, native-angle and finite-code errors are included.
+Second-jet convergence follows by the same finite product rule, retaining
+second channel and input jets. A growing M or field-test norm must not
+be absorbed into a fixed O(1/m) constant.
+
+Let V_m be the ENTIRE actually executed forward word, including every
+programme source, interaction, logical inverse simulation, failure column
+and raw flag. In7n retain its exact full-register parking(136); source
+programmes do not use protected oldRIGHT or stored unknown DATA as scratch.
+The closing Book echo uses V_m^dagger on the SAME registers.
+It is obtained by7j's physical reverse of the raw G/CX list, with all
+source-X/routing requirements and its new clock counted. A fresh-bank
+approximate inverse CHANNEL is not that closing inverse.
+Consequently U_m=V_m^dagger M0 V_m has the exact full spectrum required
+by the balanced-return theorem, independently of its logical error.
+The actual complete price is
+
+    B_m=H_ref(N_m,D_full)+j_K(gamma_m q_m).
+
+All programme/garbage dimensions and failed columns remain in H_ref.
+This is the price of this actual expanded execution; it is not the old
+unmodified spatial/full128 HJR action.
+
+Use the ORIGINAL weak final effect E_tau=bI+tau T, ||T||<=Xi, on the
+logical registers, tensor identity on new programme garbage. If rho_m
+and rho_0 are actual and ideal REDUCED normalized logical states, then
+
+    D(q_m-q_0)=tau Tr[T D(rho_m-rho_0)],
+    Gamma_m=j'_K(gamma_m q_m)gamma_m a0 tau/Omega,
+    ||DB_m/Gamma_m-Omega Dq_0/(a0 tau)||
+                                    <=(Omega Xi/a0)e1.             (174)
+
+Gamma_m is the ACTUAL gain on the positive-return chart; all seed and
+factory readiness occurs once. Trace preservation cancels the identity
+part, giving no inverse tau or readiness loss. The actual programme
+source/coordinate Jacobian and physical test norm enter e1, not a free
+external derivative. Moving gamma, rank, cut, input, middle or clock
+retains its own source. Any other selected Info/work/stack contribution
+needs its actual first-source binding as before.
+
+Add(174) to the existing error in(124), then use(129) with its actual
+sampling lift and c_quad,h. Programme counts and native precision can
+be chosen after the finite network and its true field/source norm are
+fixed. This is a concrete replacement of the supplied moving query
+CHANNEL in that consumer; it does not re-run geometric roots or change
+the original Palatini/CAR comparator.
+
+### Hostile controls fix the scope of the new substitution
+
+Using one programme bit m times instead of fresh bits yields the mixture
+[(1+s)/2]Ad_(exp(theta Y))+[(1-s)/2]Ad_(exp(-theta Y)), not the limit
+in(169). At s=0 this generally differs from the identity target channel.
+Fresh regenerated copies are an actual load-bearing requirement.
+
+Reduced C2 convergence does not imply retained joint C1 convergence.
+For a real two-dimensional rotation, DATA |0> and pure programmes
+beta(s)^tensor m, beta(s)=(sqrt((1+s)/2),sqrt((1-s)/2)), compare the
+actual full state with exp(theta sY)|0> tensor beta(s)^tensor m.
+At s=0, put h=theta/m. Their joint state-error squared and joint
+first-derivative-error squared are respectively
+
+    2[1-cos(h)^m] ->0,
+    theta^2+(m/2)[1-cos(h)^m]
+      +m(m-1)sin(h)^2 cos(h)^(m-2)/2
+      -theta m sin(h)cos(h)^(m-1) ->3theta^2/4.         (175)
+
+Thus the full retained-state e1 premise of(140) is NOT supplied by
+this query simulator. Equation(174) uses its separately proved reduced
+channel jet and the effect's genuine blindness to new garbage.
+Likewise reduced-query approximation does not supply the old all-column
+Julia/reflection identities(103)-(109), an identical marked full future
+profile or equality of the old spatial thermal operators. Those original
+exact owners retain their independent scope.
+
+What is removed is the extra unknown-input moving-query ACTION on the
+supplied native coordinate-programme interface. This is stronger than
+the earlier coordinate-to-report effect writer and opposite to8.6's
+query-to-coordinate compiler: it acts on arbitrary unknown target and
+oldRIGHT with controlled source errors. The native origin/selection
+of the field programme, its independently admitted control/seed/cut
+variations and the map to actual Book X_N remain separate physical
+premises. No complete stationary refinement, physical GR, positive_gr
+or raw216 closure is claimed.
+
+
 ## 8. Reproduction
 
 Run from this directory:
