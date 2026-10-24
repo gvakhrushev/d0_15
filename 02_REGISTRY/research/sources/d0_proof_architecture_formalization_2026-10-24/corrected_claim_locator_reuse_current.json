@@ -1,0 +1,879 @@
+{
+  "snapshot_commit": "6b59bc57ca97275df9e973715cdb503ec8fc5c4e",
+  "worktree_dirty_at_query": false,
+  "query_mode": "proof_architecture.py reuse CLAIM-ID --lean",
+  "tool_source_sha256": "0d883453b8bb9ae5e8cbfe5d124c3d0cfd0c950b88f7c82dde690fc7dce6a3f6",
+  "items": [
+    {
+      "claim_id": "D0-SEDENION-BRANCH-THREESET-SCAFFOLD-001",
+      "view": {
+        "key": "D0-SEDENION-BRANCH-THREESET-SCAFFOLD-001",
+        "matches": [
+          {
+            "item": {
+              "kind": "claim-metadata",
+              "key": "D0-SEDENION-BRANCH-THREESET-SCAFFOLD-001",
+              "label": "BOOK_04 §04.matter Explicit 3-element branch set with transitive S_3 permutation action",
+              "source": "02_REGISTRY/claims.csv",
+              "record": {
+                "claim_id": "D0-SEDENION-BRANCH-THREESET-SCAFFOLD-001",
+                "book": "BOOK_04",
+                "section": "04.matter Explicit 3-element branch set with transitive S_3 permutation action",
+                "lean_module": "D0.Algebra.Sedenions",
+                "lean_theorem": "branch_label_s3_scaffold",
+                "lean_status": "LEAN_PROVED",
+                "uses_bridge_assumptions": "False",
+                "assumption_ids": "",
+                "python_cert": "",
+                "release_status": "CORE-FORMALIZED",
+                "notes": "Truthful combinatorial owner: explicit 3-element branch set with transitive S_3 permutation action. Formalizes the finite combinatorial scaffold of three octonionic branches without claiming an internal derivation of the full Cayley-Dickson multiplication algebra or minimal left ideals (branch_label_s3_scaffold)."
+              },
+              "search_terms": [
+                "D0-SEDENION-BRANCH-THREESET-SCAFFOLD-001",
+                "BOOK_04",
+                "04.matter Explicit 3-element branch set with transitive S_3 permutation action",
+                "D0.Algebra.Sedenions",
+                "branch_label_s3_scaffold",
+                "Truthful combinatorial owner: explicit 3-element branch set with transitive S_3 permutation action. Formalizes the finite combinatorial scaffold of three octonionic branches without claiming an internal derivation of the full Cayley-Dickson multiplication algebra or minimal left ideals (branch_label_s3_scaffold)."
+              ]
+            },
+            "declared_applications": [],
+            "declared_result": null,
+            "target_obligation": null,
+            "target_interface": null,
+            "registered_assumptions": [],
+            "scoped_attempts": [
+              {
+                "id": "phase-count-shortcut",
+                "result": "phase-count-counterexample",
+                "interface": "resonance-divisor-v1",
+                "work_key": "phase-count-nullity-shortcut",
+                "scope": "The proposed nullity=2 max(n_+i,n_-i) rule is false already at (-1,-1,i,i).",
+                "reopen_when": "The formula or its domain changes explicitly and no longer includes the certified counterexample. Full divisor classification is a different task.",
+                "review": {
+                  "state": "proposed"
+                },
+                "question_digest": "801c1b633ff8ca9e7bdb105091df64d28ea606631ab153af3a0c99281fdb13c8",
+                "question": {
+                  "statement": "For every z in (C*)^4, nullity A(z)=2 max(n_+i,n_-i).",
+                  "assumes": []
+                }
+              },
+              {
+                "id": "dmin-canonicality-source-bound-inference",
+                "result": "dmin-canonicality-source-bound-countermodel",
+                "interface": "complete-history-code-source-v1",
+                "work_key": "dmin-same-object-competitive-source",
+                "scope": "The literal-comparison countermodel only: canonicality, injectivity and golden word counts do not supply a Delta-equivalent same-object universal decoder or the first-source bound.",
+                "reopen_when": "A pinned construction in actual D0 proves Pair(decoder_N,U_N(X_N)) is Delta-equivalent to Enc(X_N) on the same complete history, establishes an admitted injective decoder and a cost-capacity-matched competitive bound, and controls the same moving law/Fisher source. A changed interface needs a new typed question.",
+                "question_digest": "b894222b378feb118a9e514e6fbaf9c9a27d7da296b4cc9c384f0aa0a0207c13",
+                "question": {
+                  "statement": "Do the Book 01 canonicality definition, injectivity, and golden F/R word counts alone imply a same-object competitive decoder and the normalized complete-history code-minus-entropy first-source bound?",
+                  "assumes": [
+                    "D_min=Can(Enc(X)) is minimal only within the actual Delta-equivalence class.",
+                    "No Delta-equivalence between Pair(decoder_N,U_N(X_N)) and Enc(X_N) is assumed unless proved.",
+                    "The physical code-cost unit and complete moving probability law are fixed by the native programme."
+                  ]
+                },
+                "review": {
+                  "state": "proposed"
+                }
+              },
+              {
+                "id": "affine-scalar-perron-pressure-palatiniaction-shortcut",
+                "result": "original-book-triangle-odds-960-affine-pressure-no-go",
+                "interface": "original-scene-book-triangle-odds-pressure-boundary-v1",
+                "work_key": "affine-scalar-perron-pressure-palatiniaction-shortcut",
+                "scope": "Only the affine edge-price plus scalar positive Perron-pressure route as the entire Palatini action. This says nothing about nonlinear prices or the original complete H+J+R/CAR/memory/measurement/preparation/work/clock action.",
+                "reopen_when": "A physically admitted non-affine field-to-edge price map or an independently derived additional same-history action term changes the exact action family; record that new interface and compare its full Hessian/source rather than relabeling this pressure-only route.",
+                "review": {
+                  "state": "proposed"
+                },
+                "question_digest": "ed681305328568ac87e9a07cbad484f3a377e397936e3f8cb7d8202f63676968",
+                "question": {
+                  "statement": "Can the entire original 24-link Palatini quadratic action be derived from positive scalar Perron pressure after an affine map from the Lorentz coordinates to the original directed-edge prices?",
+                  "assumes": [
+                    "The complete field-to-edge-price map is affine on the 24 independent original Lorentz directions.",
+                    "The candidate action is only positive scalar Perron pressure; no additional Cost-Info, H+J+R, CAR/memory, measurement, preparation, clock or work terms contribute.",
+                    "The same original 24-direction Palatini Hessian of inertia (12,12) is the target."
+                  ]
+                }
+              },
+              {
+                "id": "double-null-degree5-ward-selected-rref",
+                "result": "double-null-degree5-selected-rref-ward-obstruction",
+                "interface": "double-null-degree5-coframe-gradient-ward-v1",
+                "work_key": "double-null-selected-rref-degree5-ward-extension",
+                "scope": "The exact selected lower-order representative stated in the question; the nonzero fifth-order Ward projection rules out any fifth-amplitude correction for that representative.",
+                "reopen_when": "Vary the remaining joint cubic/mixed-quartic or asymmetric-quartic homogeneous modes, change the finite carrier/action, or enlarge the physical question. Any such result needs its own pinned interface and must not be inferred from this selected-representative obstruction.",
+                "review": {
+                  "state": "proposed"
+                },
+                "question_digest": "c22c3c32995ca430f378c98ea32ba1b6b20bb200772179da035d8110ec0029cb",
+                "question": {
+                  "statement": "Does the exact selected lower-order RREF representative of the perpendicular H=a*x, J=b*y branch at h=1 admit any fifth-amplitude extension, after allowing arbitrary fifth-degree corrections to the Lorentz links and coframe?",
+                  "assumes": [
+                    "The original six-plaquette Lorentz-star action and its all-40 Euler variations are fixed.",
+                    "The lower-order fields are exactly the mixed-quartic and asymmetric-quartic RREF representatives pinned by the cited checkers, with their remaining homogeneous modes set to zero.",
+                    "The fifth-order Lorentz exponential includes all terms through degree five."
+                  ]
+                }
+              }
+            ],
+            "conceptual_presupposition_edges": [],
+            "warning": "Declared metadata links are not Lean type-checking or independent scientific acceptance."
+          }
+        ],
+        "snapshot_commit": "6b59bc57ca97275df9e973715cdb503ec8fc5c4e",
+        "source_digests": {
+          "02_REGISTRY/claims.csv": "d86d7965f0cf64164cdf7536a4fb5119ec9655e5b5082e3bbe34ce6459d35003",
+          "02_REGISTRY/assumptions.csv": "2bc9f8c040a776d784fdbfdf62569b72e4f70ff0a182fc66d0ced31cb5f13a36",
+          "02_REGISTRY/formal_support.csv": "cea9176d163d18e9dc06523ae402286dbdbde6b310b22f96e1be83e342a88d22",
+          "02_REGISTRY/aliases.csv": "8cda9e7ebfa26a01a04a4d51b56eb6b93425816a5fe073aa74cbae94041f672f",
+          "02_REGISTRY/gr_assembly/applications.json": "a493c0161b2f39ec14925e38131f7c2d240cd07bd2e27404a35098bc96eb0dc8",
+          "02_REGISTRY/gr_assembly/contract.json": "72fb3bbbc320b4af217cbe7c09580b44556b354e9668cbd11e76933fa8209ba6",
+          "02_REGISTRY/presupposition_edges.json": "7ff9d1e4ac3447f321afd603eab66554468644bb5fddb33551fdfa22e3e2585d"
+        },
+        "compiled_claim_reuse": [
+          {
+            "claim_id": "D0-SEDENION-BRANCH-THREESET-SCAFFOLD-001",
+            "claim_locator_mappings": [
+              {
+                "claim_id": "D0-SEDENION-BRANCH-THREESET-SCAFFOLD-001",
+                "module_locator": "D0.Algebra.Sedenions",
+                "theorem_atom": "branch_label_s3_scaffold",
+                "candidate_names": [
+                  "D0.Algebra.Sedenions.branch_label_s3_scaffold",
+                  "D0.Algebra.branch_label_s3_scaffold",
+                  "D0.branch_label_s3_scaffold"
+                ],
+                "resolution_status": "resolved",
+                "resolved_declarations": [
+                  {
+                    "axioms": [
+                      "Classical.choice",
+                      "Quot.sound",
+                      "propext"
+                    ],
+                    "binders": [],
+                    "conclusion_whnf": "Fintype.card D0.Algebra.Sedenions.OctonionBranch = 3 ∧\n  (∀ (x y : D0.Algebra.Sedenions.OctonionBranch),\n      ∃ f,\n        (f = id ∨\n            f = D0.Algebra.Sedenions.s3_cycle ∨\n              f = D0.Algebra.Sedenions.s3_cycle ∘ D0.Algebra.Sedenions.s3_cycle ∨\n                f = D0.Algebra.Sedenions.s3_swap ∨\n                  f = D0.Algebra.Sedenions.s3_swap ∘ D0.Algebra.Sedenions.s3_cycle ∨\n                    f = D0.Algebra.Sedenions.s3_cycle ∘ D0.Algebra.Sedenions.s3_swap) ∧\n          f x = y) ∧\n    D0.Algebra.Sedenions.leftProduct ≠ D0.Algebra.Sedenions.rightProduct",
+                    "declaration_kind": "theorem",
+                    "declaration_ranges": {
+                      "declaration": {
+                        "end": {
+                          "column": 81,
+                          "line": 149
+                        },
+                        "start": {
+                          "column": 0,
+                          "line": 140
+                        }
+                      },
+                      "selection": {
+                        "end": {
+                          "column": 32,
+                          "line": 142
+                        },
+                        "start": {
+                          "column": 8,
+                          "line": 142
+                        }
+                      }
+                    },
+                    "elaborated_type": "Fintype.card D0.Algebra.Sedenions.OctonionBranch = 3 ∧\n  (∀ (x y : D0.Algebra.Sedenions.OctonionBranch),\n      ∃ f,\n        (f = id ∨\n            f = D0.Algebra.Sedenions.s3_cycle ∨\n              f = D0.Algebra.Sedenions.s3_cycle ∘ D0.Algebra.Sedenions.s3_cycle ∨\n                f = D0.Algebra.Sedenions.s3_swap ∨\n                  f = D0.Algebra.Sedenions.s3_swap ∘ D0.Algebra.Sedenions.s3_cycle ∨\n                    f = D0.Algebra.Sedenions.s3_cycle ∘ D0.Algebra.Sedenions.s3_swap) ∧\n          f x = y) ∧\n    D0.Algebra.Sedenions.leftProduct ≠ D0.Algebra.Sedenions.rightProduct",
+                    "exists": true,
+                    "internal_name": false,
+                    "module": "D0.Algebra.Sedenions",
+                    "name": "D0.Algebra.Sedenions.branch_label_s3_scaffold",
+                    "proof_dependencies": [
+                      "And",
+                      "And.intro",
+                      "D0.Algebra.Sedenions.OctonionBranch",
+                      "D0.Algebra.Sedenions.instFintypeOctonionBranch",
+                      "D0.Algebra.Sedenions.leftProduct",
+                      "D0.Algebra.Sedenions.leftProduct_ne_rightProduct",
+                      "D0.Algebra.Sedenions.octonion_branch_card",
+                      "D0.Algebra.Sedenions.rightProduct",
+                      "D0.Algebra.Sedenions.s3_action_transitive",
+                      "D0.Algebra.Sedenions.s3_cycle",
+                      "D0.Algebra.Sedenions.s3_swap",
+                      "Eq",
+                      "Exists",
+                      "Fintype.card",
+                      "Function.comp",
+                      "Nat",
+                      "Ne",
+                      "OfNat.ofNat",
+                      "Or",
+                      "id",
+                      "instOfNatNat"
+                    ],
+                    "type_dependencies": [
+                      "And",
+                      "D0.Algebra.Sedenions.OctonionBranch",
+                      "D0.Algebra.Sedenions.instFintypeOctonionBranch",
+                      "D0.Algebra.Sedenions.leftProduct",
+                      "D0.Algebra.Sedenions.rightProduct",
+                      "D0.Algebra.Sedenions.s3_cycle",
+                      "D0.Algebra.Sedenions.s3_swap",
+                      "Eq",
+                      "Exists",
+                      "Fintype.card",
+                      "Function.comp",
+                      "Nat",
+                      "Ne",
+                      "OfNat.ofNat",
+                      "Or",
+                      "id",
+                      "instOfNatNat"
+                    ],
+                    "source_path": "03_FORMALIZATION/D0/Algebra/Sedenions.lean"
+                  }
+                ]
+              }
+            ],
+            "compiled_declarations": [
+              {
+                "axioms": [
+                  "Classical.choice",
+                  "Quot.sound",
+                  "propext"
+                ],
+                "binders": [],
+                "conclusion_whnf": "Fintype.card D0.Algebra.Sedenions.OctonionBranch = 3 ∧\n  (∀ (x y : D0.Algebra.Sedenions.OctonionBranch),\n      ∃ f,\n        (f = id ∨\n            f = D0.Algebra.Sedenions.s3_cycle ∨\n              f = D0.Algebra.Sedenions.s3_cycle ∘ D0.Algebra.Sedenions.s3_cycle ∨\n                f = D0.Algebra.Sedenions.s3_swap ∨\n                  f = D0.Algebra.Sedenions.s3_swap ∘ D0.Algebra.Sedenions.s3_cycle ∨\n                    f = D0.Algebra.Sedenions.s3_cycle ∘ D0.Algebra.Sedenions.s3_swap) ∧\n          f x = y) ∧\n    D0.Algebra.Sedenions.leftProduct ≠ D0.Algebra.Sedenions.rightProduct",
+                "declaration_kind": "theorem",
+                "declaration_ranges": {
+                  "declaration": {
+                    "end": {
+                      "column": 81,
+                      "line": 149
+                    },
+                    "start": {
+                      "column": 0,
+                      "line": 140
+                    }
+                  },
+                  "selection": {
+                    "end": {
+                      "column": 32,
+                      "line": 142
+                    },
+                    "start": {
+                      "column": 8,
+                      "line": 142
+                    }
+                  }
+                },
+                "elaborated_type": "Fintype.card D0.Algebra.Sedenions.OctonionBranch = 3 ∧\n  (∀ (x y : D0.Algebra.Sedenions.OctonionBranch),\n      ∃ f,\n        (f = id ∨\n            f = D0.Algebra.Sedenions.s3_cycle ∨\n              f = D0.Algebra.Sedenions.s3_cycle ∘ D0.Algebra.Sedenions.s3_cycle ∨\n                f = D0.Algebra.Sedenions.s3_swap ∨\n                  f = D0.Algebra.Sedenions.s3_swap ∘ D0.Algebra.Sedenions.s3_cycle ∨\n                    f = D0.Algebra.Sedenions.s3_cycle ∘ D0.Algebra.Sedenions.s3_swap) ∧\n          f x = y) ∧\n    D0.Algebra.Sedenions.leftProduct ≠ D0.Algebra.Sedenions.rightProduct",
+                "exists": true,
+                "internal_name": false,
+                "module": "D0.Algebra.Sedenions",
+                "name": "D0.Algebra.Sedenions.branch_label_s3_scaffold",
+                "proof_dependencies": [
+                  "And",
+                  "And.intro",
+                  "D0.Algebra.Sedenions.OctonionBranch",
+                  "D0.Algebra.Sedenions.instFintypeOctonionBranch",
+                  "D0.Algebra.Sedenions.leftProduct",
+                  "D0.Algebra.Sedenions.leftProduct_ne_rightProduct",
+                  "D0.Algebra.Sedenions.octonion_branch_card",
+                  "D0.Algebra.Sedenions.rightProduct",
+                  "D0.Algebra.Sedenions.s3_action_transitive",
+                  "D0.Algebra.Sedenions.s3_cycle",
+                  "D0.Algebra.Sedenions.s3_swap",
+                  "Eq",
+                  "Exists",
+                  "Fintype.card",
+                  "Function.comp",
+                  "Nat",
+                  "Ne",
+                  "OfNat.ofNat",
+                  "Or",
+                  "id",
+                  "instOfNatNat"
+                ],
+                "type_dependencies": [
+                  "And",
+                  "D0.Algebra.Sedenions.OctonionBranch",
+                  "D0.Algebra.Sedenions.instFintypeOctonionBranch",
+                  "D0.Algebra.Sedenions.leftProduct",
+                  "D0.Algebra.Sedenions.rightProduct",
+                  "D0.Algebra.Sedenions.s3_cycle",
+                  "D0.Algebra.Sedenions.s3_swap",
+                  "Eq",
+                  "Exists",
+                  "Fintype.card",
+                  "Function.comp",
+                  "Nat",
+                  "Ne",
+                  "OfNat.ofNat",
+                  "Or",
+                  "id",
+                  "instOfNatNat"
+                ],
+                "source_path": "03_FORMALIZATION/D0/Algebra/Sedenions.lean"
+              }
+            ],
+            "compiled_dependency_claim_links": [],
+            "declared_metadata_relations": {
+              "declared_applications": [],
+              "declared_result": null,
+              "target_obligation": null,
+              "target_interface": null,
+              "registered_assumptions": [],
+              "scoped_attempts": [
+                {
+                  "id": "phase-count-shortcut",
+                  "result": "phase-count-counterexample",
+                  "interface": "resonance-divisor-v1",
+                  "work_key": "phase-count-nullity-shortcut",
+                  "scope": "The proposed nullity=2 max(n_+i,n_-i) rule is false already at (-1,-1,i,i).",
+                  "reopen_when": "The formula or its domain changes explicitly and no longer includes the certified counterexample. Full divisor classification is a different task.",
+                  "review": {
+                    "state": "proposed"
+                  },
+                  "question_digest": "801c1b633ff8ca9e7bdb105091df64d28ea606631ab153af3a0c99281fdb13c8",
+                  "question": {
+                    "statement": "For every z in (C*)^4, nullity A(z)=2 max(n_+i,n_-i).",
+                    "assumes": []
+                  }
+                },
+                {
+                  "id": "dmin-canonicality-source-bound-inference",
+                  "result": "dmin-canonicality-source-bound-countermodel",
+                  "interface": "complete-history-code-source-v1",
+                  "work_key": "dmin-same-object-competitive-source",
+                  "scope": "The literal-comparison countermodel only: canonicality, injectivity and golden word counts do not supply a Delta-equivalent same-object universal decoder or the first-source bound.",
+                  "reopen_when": "A pinned construction in actual D0 proves Pair(decoder_N,U_N(X_N)) is Delta-equivalent to Enc(X_N) on the same complete history, establishes an admitted injective decoder and a cost-capacity-matched competitive bound, and controls the same moving law/Fisher source. A changed interface needs a new typed question.",
+                  "question_digest": "b894222b378feb118a9e514e6fbaf9c9a27d7da296b4cc9c384f0aa0a0207c13",
+                  "question": {
+                    "statement": "Do the Book 01 canonicality definition, injectivity, and golden F/R word counts alone imply a same-object competitive decoder and the normalized complete-history code-minus-entropy first-source bound?",
+                    "assumes": [
+                      "D_min=Can(Enc(X)) is minimal only within the actual Delta-equivalence class.",
+                      "No Delta-equivalence between Pair(decoder_N,U_N(X_N)) and Enc(X_N) is assumed unless proved.",
+                      "The physical code-cost unit and complete moving probability law are fixed by the native programme."
+                    ]
+                  },
+                  "review": {
+                    "state": "proposed"
+                  }
+                },
+                {
+                  "id": "affine-scalar-perron-pressure-palatiniaction-shortcut",
+                  "result": "original-book-triangle-odds-960-affine-pressure-no-go",
+                  "interface": "original-scene-book-triangle-odds-pressure-boundary-v1",
+                  "work_key": "affine-scalar-perron-pressure-palatiniaction-shortcut",
+                  "scope": "Only the affine edge-price plus scalar positive Perron-pressure route as the entire Palatini action. This says nothing about nonlinear prices or the original complete H+J+R/CAR/memory/measurement/preparation/work/clock action.",
+                  "reopen_when": "A physically admitted non-affine field-to-edge price map or an independently derived additional same-history action term changes the exact action family; record that new interface and compare its full Hessian/source rather than relabeling this pressure-only route.",
+                  "review": {
+                    "state": "proposed"
+                  },
+                  "question_digest": "ed681305328568ac87e9a07cbad484f3a377e397936e3f8cb7d8202f63676968",
+                  "question": {
+                    "statement": "Can the entire original 24-link Palatini quadratic action be derived from positive scalar Perron pressure after an affine map from the Lorentz coordinates to the original directed-edge prices?",
+                    "assumes": [
+                      "The complete field-to-edge-price map is affine on the 24 independent original Lorentz directions.",
+                      "The candidate action is only positive scalar Perron pressure; no additional Cost-Info, H+J+R, CAR/memory, measurement, preparation, clock or work terms contribute.",
+                      "The same original 24-direction Palatini Hessian of inertia (12,12) is the target."
+                    ]
+                  }
+                },
+                {
+                  "id": "double-null-degree5-ward-selected-rref",
+                  "result": "double-null-degree5-selected-rref-ward-obstruction",
+                  "interface": "double-null-degree5-coframe-gradient-ward-v1",
+                  "work_key": "double-null-selected-rref-degree5-ward-extension",
+                  "scope": "The exact selected lower-order representative stated in the question; the nonzero fifth-order Ward projection rules out any fifth-amplitude correction for that representative.",
+                  "reopen_when": "Vary the remaining joint cubic/mixed-quartic or asymmetric-quartic homogeneous modes, change the finite carrier/action, or enlarge the physical question. Any such result needs its own pinned interface and must not be inferred from this selected-representative obstruction.",
+                  "review": {
+                    "state": "proposed"
+                  },
+                  "question_digest": "c22c3c32995ca430f378c98ea32ba1b6b20bb200772179da035d8110ec0029cb",
+                  "question": {
+                    "statement": "Does the exact selected lower-order RREF representative of the perpendicular H=a*x, J=b*y branch at h=1 admit any fifth-amplitude extension, after allowing arbitrary fifth-degree corrections to the Lorentz links and coframe?",
+                    "assumes": [
+                      "The original six-plaquette Lorentz-star action and its all-40 Euler variations are fixed.",
+                      "The lower-order fields are exactly the mixed-quartic and asymmetric-quartic RREF representatives pinned by the cited checkers, with their remaining homogeneous modes set to zero.",
+                      "The fifth-order Lorentz exponential includes all terms through degree five."
+                    ]
+                  }
+                }
+              ],
+              "conceptual_presupposition_edges": [],
+              "warning": "Declared metadata links are not Lean type-checking or independent scientific acceptance."
+            },
+            "collector_sha256": "d146548744f5fc022f2050e3c621a4a56e0738fe43795c4c830148af302c5b5b",
+            "lean_source_digest": "88032d37e72ffe0c5868a528eeb7af8da5ec61cb9d658ddaae001c707a2aa3d1",
+            "public_import_root": "D0.All",
+            "interpretation": "Claim theorem strings are candidate-name locators. Compiled declaration presence and reported Lean proof dependencies are separate evidence. A dependency joined to another claim locator is a candidate crosswalk only; registry application links, conceptual edges, and semantic claim acceptance are not inferred from name matches."
+          }
+        ],
+        "compiled_claim_alias_reuse": [],
+        "worktree_dirty": false
+      }
+    },
+    {
+      "claim_id": "D0-ARCHIVE-METRIC-MEASURE-HODGE-LIFT-001",
+      "view": {
+        "key": "D0-ARCHIVE-METRIC-MEASURE-HODGE-LIFT-001",
+        "matches": [
+          {
+            "item": {
+              "kind": "claim-metadata",
+              "key": "D0-ARCHIVE-METRIC-MEASURE-HODGE-LIFT-001",
+              "label": "BOOK_06 §06.spectral metric-measure Hodge weight formula scaffold",
+              "source": "02_REGISTRY/claims.csv",
+              "record": {
+                "claim_id": "D0-ARCHIVE-METRIC-MEASURE-HODGE-LIFT-001",
+                "book": "BOOK_06",
+                "section": "06.spectral metric-measure Hodge weight formula scaffold",
+                "lean_module": "D0.Geometry.ArchiveMetricMeasureHodgeLift",
+                "lean_theorem": "archive_metric_measure_hodge_lift_owner",
+                "lean_status": "LEAN_PROVED",
+                "uses_bridge_assumptions": "False",
+                "assumption_ids": "",
+                "python_cert": "",
+                "release_status": "FORMALISM",
+                "notes": "HONEST SCOPE: defines W(k,mu,prod_c)=mu^(1-k)*prod_c, proves the k=0 and k=1 endpoint identities, and records the 16 cell sectors. It does not prove uniqueness/canonicity of the formula across all grades or its reduction from the actual frozen refinement weights. Those stronger statements require separate theorems."
+              },
+              "search_terms": [
+                "D0-ARCHIVE-METRIC-MEASURE-HODGE-LIFT-001",
+                "BOOK_06",
+                "06.spectral metric-measure Hodge weight formula scaffold",
+                "D0.Geometry.ArchiveMetricMeasureHodgeLift",
+                "archive_metric_measure_hodge_lift_owner",
+                "HONEST SCOPE: defines W(k,mu,prod_c)=mu^(1-k)*prod_c, proves the k=0 and k=1 endpoint identities, and records the 16 cell sectors. It does not prove uniqueness/canonicity of the formula across all grades or its reduction from the actual frozen refinement weights. Those stronger statements require separate theorems."
+              ]
+            },
+            "declared_applications": [],
+            "declared_result": null,
+            "target_obligation": null,
+            "target_interface": null,
+            "registered_assumptions": [],
+            "scoped_attempts": [
+              {
+                "id": "phase-count-shortcut",
+                "result": "phase-count-counterexample",
+                "interface": "resonance-divisor-v1",
+                "work_key": "phase-count-nullity-shortcut",
+                "scope": "The proposed nullity=2 max(n_+i,n_-i) rule is false already at (-1,-1,i,i).",
+                "reopen_when": "The formula or its domain changes explicitly and no longer includes the certified counterexample. Full divisor classification is a different task.",
+                "review": {
+                  "state": "proposed"
+                },
+                "question_digest": "801c1b633ff8ca9e7bdb105091df64d28ea606631ab153af3a0c99281fdb13c8",
+                "question": {
+                  "statement": "For every z in (C*)^4, nullity A(z)=2 max(n_+i,n_-i).",
+                  "assumes": []
+                }
+              },
+              {
+                "id": "dmin-canonicality-source-bound-inference",
+                "result": "dmin-canonicality-source-bound-countermodel",
+                "interface": "complete-history-code-source-v1",
+                "work_key": "dmin-same-object-competitive-source",
+                "scope": "The literal-comparison countermodel only: canonicality, injectivity and golden word counts do not supply a Delta-equivalent same-object universal decoder or the first-source bound.",
+                "reopen_when": "A pinned construction in actual D0 proves Pair(decoder_N,U_N(X_N)) is Delta-equivalent to Enc(X_N) on the same complete history, establishes an admitted injective decoder and a cost-capacity-matched competitive bound, and controls the same moving law/Fisher source. A changed interface needs a new typed question.",
+                "question_digest": "b894222b378feb118a9e514e6fbaf9c9a27d7da296b4cc9c384f0aa0a0207c13",
+                "question": {
+                  "statement": "Do the Book 01 canonicality definition, injectivity, and golden F/R word counts alone imply a same-object competitive decoder and the normalized complete-history code-minus-entropy first-source bound?",
+                  "assumes": [
+                    "D_min=Can(Enc(X)) is minimal only within the actual Delta-equivalence class.",
+                    "No Delta-equivalence between Pair(decoder_N,U_N(X_N)) and Enc(X_N) is assumed unless proved.",
+                    "The physical code-cost unit and complete moving probability law are fixed by the native programme."
+                  ]
+                },
+                "review": {
+                  "state": "proposed"
+                }
+              },
+              {
+                "id": "affine-scalar-perron-pressure-palatiniaction-shortcut",
+                "result": "original-book-triangle-odds-960-affine-pressure-no-go",
+                "interface": "original-scene-book-triangle-odds-pressure-boundary-v1",
+                "work_key": "affine-scalar-perron-pressure-palatiniaction-shortcut",
+                "scope": "Only the affine edge-price plus scalar positive Perron-pressure route as the entire Palatini action. This says nothing about nonlinear prices or the original complete H+J+R/CAR/memory/measurement/preparation/work/clock action.",
+                "reopen_when": "A physically admitted non-affine field-to-edge price map or an independently derived additional same-history action term changes the exact action family; record that new interface and compare its full Hessian/source rather than relabeling this pressure-only route.",
+                "review": {
+                  "state": "proposed"
+                },
+                "question_digest": "ed681305328568ac87e9a07cbad484f3a377e397936e3f8cb7d8202f63676968",
+                "question": {
+                  "statement": "Can the entire original 24-link Palatini quadratic action be derived from positive scalar Perron pressure after an affine map from the Lorentz coordinates to the original directed-edge prices?",
+                  "assumes": [
+                    "The complete field-to-edge-price map is affine on the 24 independent original Lorentz directions.",
+                    "The candidate action is only positive scalar Perron pressure; no additional Cost-Info, H+J+R, CAR/memory, measurement, preparation, clock or work terms contribute.",
+                    "The same original 24-direction Palatini Hessian of inertia (12,12) is the target."
+                  ]
+                }
+              },
+              {
+                "id": "double-null-degree5-ward-selected-rref",
+                "result": "double-null-degree5-selected-rref-ward-obstruction",
+                "interface": "double-null-degree5-coframe-gradient-ward-v1",
+                "work_key": "double-null-selected-rref-degree5-ward-extension",
+                "scope": "The exact selected lower-order representative stated in the question; the nonzero fifth-order Ward projection rules out any fifth-amplitude correction for that representative.",
+                "reopen_when": "Vary the remaining joint cubic/mixed-quartic or asymmetric-quartic homogeneous modes, change the finite carrier/action, or enlarge the physical question. Any such result needs its own pinned interface and must not be inferred from this selected-representative obstruction.",
+                "review": {
+                  "state": "proposed"
+                },
+                "question_digest": "c22c3c32995ca430f378c98ea32ba1b6b20bb200772179da035d8110ec0029cb",
+                "question": {
+                  "statement": "Does the exact selected lower-order RREF representative of the perpendicular H=a*x, J=b*y branch at h=1 admit any fifth-amplitude extension, after allowing arbitrary fifth-degree corrections to the Lorentz links and coframe?",
+                  "assumes": [
+                    "The original six-plaquette Lorentz-star action and its all-40 Euler variations are fixed.",
+                    "The lower-order fields are exactly the mixed-quartic and asymmetric-quartic RREF representatives pinned by the cited checkers, with their remaining homogeneous modes set to zero.",
+                    "The fifth-order Lorentz exponential includes all terms through degree five."
+                  ]
+                }
+              }
+            ],
+            "conceptual_presupposition_edges": [],
+            "warning": "Declared metadata links are not Lean type-checking or independent scientific acceptance."
+          }
+        ],
+        "snapshot_commit": "6b59bc57ca97275df9e973715cdb503ec8fc5c4e",
+        "source_digests": {
+          "02_REGISTRY/claims.csv": "d86d7965f0cf64164cdf7536a4fb5119ec9655e5b5082e3bbe34ce6459d35003",
+          "02_REGISTRY/assumptions.csv": "2bc9f8c040a776d784fdbfdf62569b72e4f70ff0a182fc66d0ced31cb5f13a36",
+          "02_REGISTRY/formal_support.csv": "cea9176d163d18e9dc06523ae402286dbdbde6b310b22f96e1be83e342a88d22",
+          "02_REGISTRY/aliases.csv": "8cda9e7ebfa26a01a04a4d51b56eb6b93425816a5fe073aa74cbae94041f672f",
+          "02_REGISTRY/gr_assembly/applications.json": "a493c0161b2f39ec14925e38131f7c2d240cd07bd2e27404a35098bc96eb0dc8",
+          "02_REGISTRY/gr_assembly/contract.json": "72fb3bbbc320b4af217cbe7c09580b44556b354e9668cbd11e76933fa8209ba6",
+          "02_REGISTRY/presupposition_edges.json": "7ff9d1e4ac3447f321afd603eab66554468644bb5fddb33551fdfa22e3e2585d"
+        },
+        "compiled_claim_reuse": [
+          {
+            "claim_id": "D0-ARCHIVE-METRIC-MEASURE-HODGE-LIFT-001",
+            "claim_locator_mappings": [
+              {
+                "claim_id": "D0-ARCHIVE-METRIC-MEASURE-HODGE-LIFT-001",
+                "module_locator": "D0.Geometry.ArchiveMetricMeasureHodgeLift",
+                "theorem_atom": "archive_metric_measure_hodge_lift_owner",
+                "candidate_names": [
+                  "D0.Geometry.ArchiveMetricMeasureHodgeLift.archive_metric_measure_hodge_lift_owner",
+                  "D0.Geometry.archive_metric_measure_hodge_lift_owner",
+                  "D0.archive_metric_measure_hodge_lift_owner"
+                ],
+                "resolution_status": "resolved",
+                "resolved_declarations": [
+                  {
+                    "axioms": [
+                      "Classical.choice",
+                      "Quot.sound",
+                      "propext"
+                    ],
+                    "binders": [
+                      {
+                        "binder_info": "Lean.BinderInfo.default",
+                        "is_proposition": false,
+                        "name": "mu",
+                        "type": "ℝ"
+                      },
+                      {
+                        "binder_info": "Lean.BinderInfo.default",
+                        "is_proposition": false,
+                        "name": "c_r",
+                        "type": "ℝ"
+                      }
+                    ],
+                    "conclusion_whnf": "D0.Geometry.hodgeMetricMeasureWeight 0 mu 1 = mu ∧\n  D0.Geometry.hodgeMetricMeasureWeight 1 mu c_r = c_r ∧\n    Fintype.card D0.Geometry.CubicalCellType = 16 ∧ Fintype.card D0.Role = 4",
+                    "declaration_kind": "theorem",
+                    "declaration_ranges": {
+                      "declaration": {
+                        "end": {
+                          "column": 101,
+                          "line": 60
+                        },
+                        "start": {
+                          "column": 0,
+                          "line": 49
+                        }
+                      },
+                      "selection": {
+                        "end": {
+                          "column": 47,
+                          "line": 55
+                        },
+                        "start": {
+                          "column": 8,
+                          "line": 55
+                        }
+                      }
+                    },
+                    "elaborated_type": "∀ (mu c_r : ℝ),\n  D0.Geometry.hodgeMetricMeasureWeight 0 mu 1 = mu ∧\n    D0.Geometry.hodgeMetricMeasureWeight 1 mu c_r = c_r ∧\n      Fintype.card D0.Geometry.CubicalCellType = 16 ∧ Fintype.card D0.Role = 4",
+                    "exists": true,
+                    "internal_name": false,
+                    "module": "D0.Geometry.ArchiveMetricMeasureHodgeLift",
+                    "name": "D0.Geometry.archive_metric_measure_hodge_lift_owner",
+                    "proof_dependencies": [
+                      "And",
+                      "And.intro",
+                      "Bool",
+                      "Bool.fintype",
+                      "D0.Dyad",
+                      "D0.Geometry.CubicalCellType",
+                      "D0.Geometry.card_archive_fock_state",
+                      "D0.Geometry.hodgeMetricMeasureWeight",
+                      "D0.Geometry.hodge_weight_0_eq_mu",
+                      "D0.Geometry.hodge_weight_1_eq_conductance",
+                      "D0.Role",
+                      "D0.card_role",
+                      "Eq",
+                      "Fin.fintype",
+                      "Fintype.card",
+                      "Nat",
+                      "OfNat.ofNat",
+                      "One.toOfNat1",
+                      "Pi.instFintype",
+                      "Real",
+                      "Real.instOne",
+                      "instDecidableEqFin",
+                      "instDecidableEqProd",
+                      "instFintypeProd",
+                      "instOfNatNat"
+                    ],
+                    "type_dependencies": [
+                      "And",
+                      "Bool",
+                      "Bool.fintype",
+                      "D0.Dyad",
+                      "D0.Geometry.CubicalCellType",
+                      "D0.Geometry.hodgeMetricMeasureWeight",
+                      "D0.Role",
+                      "Eq",
+                      "Fin.fintype",
+                      "Fintype.card",
+                      "Nat",
+                      "OfNat.ofNat",
+                      "One.toOfNat1",
+                      "Pi.instFintype",
+                      "Real",
+                      "Real.instOne",
+                      "instDecidableEqFin",
+                      "instDecidableEqProd",
+                      "instFintypeProd",
+                      "instOfNatNat"
+                    ],
+                    "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveMetricMeasureHodgeLift.lean"
+                  }
+                ]
+              }
+            ],
+            "compiled_declarations": [
+              {
+                "axioms": [
+                  "Classical.choice",
+                  "Quot.sound",
+                  "propext"
+                ],
+                "binders": [
+                  {
+                    "binder_info": "Lean.BinderInfo.default",
+                    "is_proposition": false,
+                    "name": "mu",
+                    "type": "ℝ"
+                  },
+                  {
+                    "binder_info": "Lean.BinderInfo.default",
+                    "is_proposition": false,
+                    "name": "c_r",
+                    "type": "ℝ"
+                  }
+                ],
+                "conclusion_whnf": "D0.Geometry.hodgeMetricMeasureWeight 0 mu 1 = mu ∧\n  D0.Geometry.hodgeMetricMeasureWeight 1 mu c_r = c_r ∧\n    Fintype.card D0.Geometry.CubicalCellType = 16 ∧ Fintype.card D0.Role = 4",
+                "declaration_kind": "theorem",
+                "declaration_ranges": {
+                  "declaration": {
+                    "end": {
+                      "column": 101,
+                      "line": 60
+                    },
+                    "start": {
+                      "column": 0,
+                      "line": 49
+                    }
+                  },
+                  "selection": {
+                    "end": {
+                      "column": 47,
+                      "line": 55
+                    },
+                    "start": {
+                      "column": 8,
+                      "line": 55
+                    }
+                  }
+                },
+                "elaborated_type": "∀ (mu c_r : ℝ),\n  D0.Geometry.hodgeMetricMeasureWeight 0 mu 1 = mu ∧\n    D0.Geometry.hodgeMetricMeasureWeight 1 mu c_r = c_r ∧\n      Fintype.card D0.Geometry.CubicalCellType = 16 ∧ Fintype.card D0.Role = 4",
+                "exists": true,
+                "internal_name": false,
+                "module": "D0.Geometry.ArchiveMetricMeasureHodgeLift",
+                "name": "D0.Geometry.archive_metric_measure_hodge_lift_owner",
+                "proof_dependencies": [
+                  "And",
+                  "And.intro",
+                  "Bool",
+                  "Bool.fintype",
+                  "D0.Dyad",
+                  "D0.Geometry.CubicalCellType",
+                  "D0.Geometry.card_archive_fock_state",
+                  "D0.Geometry.hodgeMetricMeasureWeight",
+                  "D0.Geometry.hodge_weight_0_eq_mu",
+                  "D0.Geometry.hodge_weight_1_eq_conductance",
+                  "D0.Role",
+                  "D0.card_role",
+                  "Eq",
+                  "Fin.fintype",
+                  "Fintype.card",
+                  "Nat",
+                  "OfNat.ofNat",
+                  "One.toOfNat1",
+                  "Pi.instFintype",
+                  "Real",
+                  "Real.instOne",
+                  "instDecidableEqFin",
+                  "instDecidableEqProd",
+                  "instFintypeProd",
+                  "instOfNatNat"
+                ],
+                "type_dependencies": [
+                  "And",
+                  "Bool",
+                  "Bool.fintype",
+                  "D0.Dyad",
+                  "D0.Geometry.CubicalCellType",
+                  "D0.Geometry.hodgeMetricMeasureWeight",
+                  "D0.Role",
+                  "Eq",
+                  "Fin.fintype",
+                  "Fintype.card",
+                  "Nat",
+                  "OfNat.ofNat",
+                  "One.toOfNat1",
+                  "Pi.instFintype",
+                  "Real",
+                  "Real.instOne",
+                  "instDecidableEqFin",
+                  "instDecidableEqProd",
+                  "instFintypeProd",
+                  "instOfNatNat"
+                ],
+                "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveMetricMeasureHodgeLift.lean"
+              }
+            ],
+            "compiled_dependency_claim_links": [
+              {
+                "source_claim_id": "D0-ARCHIVE-METRIC-MEASURE-HODGE-LIFT-001",
+                "source_declaration": "D0.Geometry.archive_metric_measure_hodge_lift_owner",
+                "dependency_declaration": "D0.Geometry.card_archive_fock_state",
+                "target_claim_locators": [
+                  {
+                    "claim_id": "D0-ARCHIVE-CAR-FOCK-CARRIER-001",
+                    "theorem_atom": "card_archive_fock_state",
+                    "module_locator": "D0.Geometry.ArchiveCARFockCarrier"
+                  }
+                ],
+                "relation": "compiled-proof-dependency-to-claim-locator"
+              }
+            ],
+            "declared_metadata_relations": {
+              "declared_applications": [],
+              "declared_result": null,
+              "target_obligation": null,
+              "target_interface": null,
+              "registered_assumptions": [],
+              "scoped_attempts": [
+                {
+                  "id": "phase-count-shortcut",
+                  "result": "phase-count-counterexample",
+                  "interface": "resonance-divisor-v1",
+                  "work_key": "phase-count-nullity-shortcut",
+                  "scope": "The proposed nullity=2 max(n_+i,n_-i) rule is false already at (-1,-1,i,i).",
+                  "reopen_when": "The formula or its domain changes explicitly and no longer includes the certified counterexample. Full divisor classification is a different task.",
+                  "review": {
+                    "state": "proposed"
+                  },
+                  "question_digest": "801c1b633ff8ca9e7bdb105091df64d28ea606631ab153af3a0c99281fdb13c8",
+                  "question": {
+                    "statement": "For every z in (C*)^4, nullity A(z)=2 max(n_+i,n_-i).",
+                    "assumes": []
+                  }
+                },
+                {
+                  "id": "dmin-canonicality-source-bound-inference",
+                  "result": "dmin-canonicality-source-bound-countermodel",
+                  "interface": "complete-history-code-source-v1",
+                  "work_key": "dmin-same-object-competitive-source",
+                  "scope": "The literal-comparison countermodel only: canonicality, injectivity and golden word counts do not supply a Delta-equivalent same-object universal decoder or the first-source bound.",
+                  "reopen_when": "A pinned construction in actual D0 proves Pair(decoder_N,U_N(X_N)) is Delta-equivalent to Enc(X_N) on the same complete history, establishes an admitted injective decoder and a cost-capacity-matched competitive bound, and controls the same moving law/Fisher source. A changed interface needs a new typed question.",
+                  "question_digest": "b894222b378feb118a9e514e6fbaf9c9a27d7da296b4cc9c384f0aa0a0207c13",
+                  "question": {
+                    "statement": "Do the Book 01 canonicality definition, injectivity, and golden F/R word counts alone imply a same-object competitive decoder and the normalized complete-history code-minus-entropy first-source bound?",
+                    "assumes": [
+                      "D_min=Can(Enc(X)) is minimal only within the actual Delta-equivalence class.",
+                      "No Delta-equivalence between Pair(decoder_N,U_N(X_N)) and Enc(X_N) is assumed unless proved.",
+                      "The physical code-cost unit and complete moving probability law are fixed by the native programme."
+                    ]
+                  },
+                  "review": {
+                    "state": "proposed"
+                  }
+                },
+                {
+                  "id": "affine-scalar-perron-pressure-palatiniaction-shortcut",
+                  "result": "original-book-triangle-odds-960-affine-pressure-no-go",
+                  "interface": "original-scene-book-triangle-odds-pressure-boundary-v1",
+                  "work_key": "affine-scalar-perron-pressure-palatiniaction-shortcut",
+                  "scope": "Only the affine edge-price plus scalar positive Perron-pressure route as the entire Palatini action. This says nothing about nonlinear prices or the original complete H+J+R/CAR/memory/measurement/preparation/work/clock action.",
+                  "reopen_when": "A physically admitted non-affine field-to-edge price map or an independently derived additional same-history action term changes the exact action family; record that new interface and compare its full Hessian/source rather than relabeling this pressure-only route.",
+                  "review": {
+                    "state": "proposed"
+                  },
+                  "question_digest": "ed681305328568ac87e9a07cbad484f3a377e397936e3f8cb7d8202f63676968",
+                  "question": {
+                    "statement": "Can the entire original 24-link Palatini quadratic action be derived from positive scalar Perron pressure after an affine map from the Lorentz coordinates to the original directed-edge prices?",
+                    "assumes": [
+                      "The complete field-to-edge-price map is affine on the 24 independent original Lorentz directions.",
+                      "The candidate action is only positive scalar Perron pressure; no additional Cost-Info, H+J+R, CAR/memory, measurement, preparation, clock or work terms contribute.",
+                      "The same original 24-direction Palatini Hessian of inertia (12,12) is the target."
+                    ]
+                  }
+                },
+                {
+                  "id": "double-null-degree5-ward-selected-rref",
+                  "result": "double-null-degree5-selected-rref-ward-obstruction",
+                  "interface": "double-null-degree5-coframe-gradient-ward-v1",
+                  "work_key": "double-null-selected-rref-degree5-ward-extension",
+                  "scope": "The exact selected lower-order representative stated in the question; the nonzero fifth-order Ward projection rules out any fifth-amplitude correction for that representative.",
+                  "reopen_when": "Vary the remaining joint cubic/mixed-quartic or asymmetric-quartic homogeneous modes, change the finite carrier/action, or enlarge the physical question. Any such result needs its own pinned interface and must not be inferred from this selected-representative obstruction.",
+                  "review": {
+                    "state": "proposed"
+                  },
+                  "question_digest": "c22c3c32995ca430f378c98ea32ba1b6b20bb200772179da035d8110ec0029cb",
+                  "question": {
+                    "statement": "Does the exact selected lower-order RREF representative of the perpendicular H=a*x, J=b*y branch at h=1 admit any fifth-amplitude extension, after allowing arbitrary fifth-degree corrections to the Lorentz links and coframe?",
+                    "assumes": [
+                      "The original six-plaquette Lorentz-star action and its all-40 Euler variations are fixed.",
+                      "The lower-order fields are exactly the mixed-quartic and asymmetric-quartic RREF representatives pinned by the cited checkers, with their remaining homogeneous modes set to zero.",
+                      "The fifth-order Lorentz exponential includes all terms through degree five."
+                    ]
+                  }
+                }
+              ],
+              "conceptual_presupposition_edges": [],
+              "warning": "Declared metadata links are not Lean type-checking or independent scientific acceptance."
+            },
+            "collector_sha256": "19dd959eeb3c5d2d249f07e04fafdb4076ed7aafae00c6f3a595fc57c2b7dcbd",
+            "lean_source_digest": "88032d37e72ffe0c5868a528eeb7af8da5ec61cb9d658ddaae001c707a2aa3d1",
+            "public_import_root": "D0.All",
+            "interpretation": "Claim theorem strings are candidate-name locators. Compiled declaration presence and reported Lean proof dependencies are separate evidence. A dependency joined to another claim locator is a candidate crosswalk only; registry application links, conceptual edges, and semantic claim acceptance are not inferred from name matches."
+          }
+        ],
+        "compiled_claim_alias_reuse": [],
+        "worktree_dirty": false
+      }
+    }
+  ],
+  "interpretation": "Exact claims.csv locators resolved to current compiled declarations. This confirms name/module/type availability and proof dependencies; it does not independently review prose semantics or change claim status."
+}

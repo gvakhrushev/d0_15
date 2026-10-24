@@ -798,7 +798,7 @@ The earlier all-claims resolution above is retained at its original Lean source 
 
 Across 889 claims, the collector expands 2,741 theorem-locator atoms into 8,294 unique exact candidate names. It finds 2,497 current declarations and 5,797 exact misses. Of the locator atoms, 2,533 match one candidate declaration, four match two candidates, and 204 match none. At the claim-row level, 705 rows have at least one resolved locator and 184 have none. These are current name/module/source-path availability counts, not theorem coverage or application acceptance.
 
-The reproducible output is `sources/d0_proof_architecture_formalization_2026-10-24/claim_candidate_resolution_current.json` (2,535,647 bytes; SHA-256 `e0f4705fc20db6e236cf9c8de4a094ed97e2f7b2054891005fa82e17e1aef40c`). It records the snapshot, Lean source digest, claims registry digest, collector SHA-256 `24289b940bc867e4ccea28cbd9771033669662dc5017f53e7a14ad780cadd30d`, and toolchain `leanprover/lean4:v4.30.0`. The matching claim names remain locator candidates until their scope and application are checked; this refresh changes no status, owner, assumption, C0 disposition, or physical premise.
+The reproducible prior output is `sources/d0_proof_architecture_formalization_2026-10-24/claim_candidate_resolution_snapshot_1b7f1cbb.json` (2,535,647 bytes; SHA-256 `e0f4705fc20db6e236cf9c8de4a094ed97e2f7b2054891005fa82e17e1aef40c`). It records clean snapshot `1b7f1cbb5e597af31b59a83bd37edac73b0d4e47`, Lean source digest `4b760603dd653cf0354beacd1d78da0879c570b744059c37115ec2ac2d8936ac`, claims registry digest `e986bcc75fd6a2c84a80ee61b639482af1b21464fcfe4c961491b4a97bb9037f`, collector SHA-256 `24289b940bc867e4ccea28cbd9771033669662dc5017f53e7a14ad780cadd30d`, and toolchain `leanprover/lean4:v4.30.0`. The current all-claims result after the subsequent locator corrections is recorded below. The matching claim names remain locator candidates until their scope and application are checked; this refresh changes no status, owner, assumption, C0 disposition, or physical premise.
 
 
 ### 24 October compiled reuse through controlled claim aliases
@@ -811,3 +811,104 @@ Two live applications were run on clean snapshot `7156fe33397669278bf4a558c00374
 - `D0-ALBERT-SM-GAUGE-DIMENSION-ALIGNMENT-001` exists both as a direct claim and as an alias to `D0-ALBERT-SM-GAUGE-PROJECTION-001`. The direct row's one locator resolves; the canonical target's five locators resolve. Both claim records and both declaration sets remain distinct, with their existing `CORE-FORMALIZED` status.
 
 The full outputs are in `sources/d0_proof_architecture_formalization_2026-10-24/controlled_alias_compiled_reuse_current.json` (129,255 bytes; SHA-256 `225ef78202be3c4552d511d3b0f3743f17f2fe89ed1914f698689b2c1e72b370`). This verifies alias routing and current declaration availability only; it proves no semantic equivalence between the two Albert claims, no assembly application, and no new acceptance or scientific status.
+
+### 24 October exact locator repair and scope boundary
+
+After the two exact stale-name repairs, the all-claims resolution-only query was rerun against `D0.All` on working-tree snapshot `6b59bc57ca97275df9e973715cdb503ec8fc5c4e`. The worktree was dirty because the two Lean comment files and evidence artifacts had been updated. It used Lean 4.30.0, claim-registry SHA-256 `d86d7965f0cf64164cdf7536a4fb5119ec9655e5b5082e3bbe34ce6459d35003`, and current Lean source digest `3530b705e2d59e76c37b153ae6c38f36efe01570f788e052e4624dd13db9ddf7`.
+
+Across 889 claims and 2,741 claim-locator mappings it expanded 8,291 candidate names, found 2,498 exact declarations and 5,793 misses. At least one candidate resolved for 2,539 mappings; 707 claim rows have a resolved name and 182 have none. These are name-resolution counts, not semantic-coverage or claim-acceptance counts. The current output is `sources/d0_proof_architecture_formalization_2026-10-24/claim_candidate_resolution_current.json` (2,535,371 bytes; SHA-256 `60f8e0925e7ba45298b76084d5706a645c7d0851ffba2e303dd20bef13659577`; collector SHA-256 `3546dc3dc677c9a3e3d205f45fb8e8b636f2d158a05e28b84180eeb2d89ae10d`).
+Two registry locators were stale names for declarations with matching bounded
+scope, so their locator strings now point to the actual compiled owners:
+
+- `D0-SEDENION-BRANCH-THREESET-SCAFFOLD-001` resolves to
+  `D0.Algebra.Sedenions.branch_label_s3_scaffold` in
+  `03_FORMALIZATION/D0/Algebra/Sedenions.lean`. Its type gives a carrier of
+  cardinality three, transitivity under the listed six S3 permutations, and
+  distinct left- and right-projection products. It is a combinatorial
+  scaffold; it does not derive Cayley-Dickson multiplication or minimal left
+  ideals.
+- `D0-ARCHIVE-METRIC-MEASURE-HODGE-LIFT-001` resolves to
+  `D0.Geometry.archive_metric_measure_hodge_lift_owner` in
+  `03_FORMALIZATION/D0/Geometry/ArchiveMetricMeasureHodgeLift.lean`. For real
+  `mu` and `c_r`, its type proves the two endpoint weight identities and the
+  cardinalities 16 for `CubicalCellType` and 4 for `Role`. It does not prove
+  uniqueness or canonicity of the formula across grades, or derive it from
+  frozen refinement weights.
+
+Both compiled declarations report `Classical.choice`, `Quot.sound`, and
+`propext` in their axiom footprint. The saved compiled-reuse result is
+`sources/d0_proof_architecture_formalization_2026-10-24/corrected_claim_locator_reuse_current.json`
+(SHA-256 `db084ec50e7414d4d06665907d9a069e1ef1483943da5f26d75efa80903c8de4`;
+snapshot `6b59bc57ca97275df9e973715cdb503ec8fc5c4e`; Lean source digest
+`88032d37e72ffe0c5868a528eeb7af8da5ec61cb9d658ddaae001c707a2aa3d1`). This
+compiled-reuse snapshot predates the final comment-only corrections; theorem
+statements and elaborated types are unchanged.
+
+Two wider registered statements remain unmatched and were not redirected to
+nearby, insufficient theorems. For
+`D0-TRIALITY-SEDENION-S3-DISJOINTNESS-GUARD-001`, the exact registered name
+`triality_sedenion_s3_disjointness_guard` is absent from the compiled
+environment. The compiled nearby
+`D0.Algebra.Sedenions.bare_threeset_insufficient_for_sedenion_realization`
+only exhibits two distinct, fully relabeling-equivariant products on the same
+three-element carrier. It does not state the Spin(8) outer-automorphism/group
+order comparison or an intertwiner, so it cannot discharge that claim.
+For `D0-ARCHIVE-NAIVE-WEIGHTED-CAR-DEGREE-LEAKAGE-NOGO-001`, the registered
+name `archive_naive_weighted_degree_leakage_nogo_owner` is absent. The actual
+compiled `archive_naive_weighted_car_degree_leakage_nogo_owner` has type
+`Real.sqrt naiveWeight0 ≠ Real.sqrt naiveWeight1 ∧ Fintype.card Role = 4`;
+its source defines weights 1 and 4. This does not prove failure of
+nilpotency, generation of the claimed cross-terms, form-degree leakage, or
+that curvature must enter only through the Hodge metric. The earlier Lean
+comment described that broader conclusion; it has been corrected to identify
+only the two fixed sample weights used in the square-root inequality. The
+theorem statement is unchanged.
+
+The two supporting declarations were queried separately through the compiled
+`D0.All` environment. Their full elaborated types, source ranges, dependency
+lists, axiom footprints, snapshot, and input digests are preserved in
+`sources/d0_proof_architecture_formalization_2026-10-24/sedenion_scope_inventory.json`
+(SHA-256 `f2a4bbbcdb6bf95eea73e5cf02c27c87728a520bb37cd4630bdcc9dec3314b85`)
+and `sources/d0_proof_architecture_formalization_2026-10-24/weighted_degree_scope_inventory.json`
+(SHA-256 `e24d12058dd7b6741f93a38e18cfb12c9edf611c5e59bdee38155a2c32a94245`).
+Both record source snapshot `6b59bc57ca97275df9e973715cdb503ec8fc5c4e`, Lean digest
+`88032d37e72ffe0c5868a528eeb7af8da5ec61cb9d658ddaae001c707a2aa3d1`,
+and a dirty-worktree observation caused by the generated evidence outputs.
+These are preserved as historical source snapshots; the later edits changed
+comments only, not these declarations' statements or elaborated types. The
+inventory tool SHA-256 is
+`fbc15a59aa7baff75d8c0cc7ce75743301a7cfc7b15d545e0ad1c239ea1c1818`.
+
+No claim status, scientific owner, assumption, or application was changed for
+these two unmatched rows. They need owner/reviewer disposition of the exact
+scope discrepancy before the registry can state a corrected formal result.
+The two repaired locator rows retain their original claim scope and status;
+locator correction is not semantic acceptance. C0 remains unfrozen and
+unaccepted, and no physical GR selection premise is discharged by this
+checkpoint.
+
+An independent read-only scope review of source commit
+`6b59bc57ca97275df9e973715cdb503ec8fc5c4e` supports the two locator repairs
+within those scopes, with two wording qualifications: the sedenion theorem
+lists six transitive functions but does not package an abstract `S3` group
+action or construct octonionic branch embeddings; the Hodge-lift claim row is
+narrow, while the Lean module's former prologue/docstring had asserted
+all-grade uniqueness and frozen-weight reduction. The Hodge comments are now
+narrowed to the candidate formula, two endpoint identities, and carrier
+counts; the weight definition documents that its real arguments have no
+positivity precondition. Theorem statements and claim status are unchanged.
+
+The review also confirms that the separate `triality_outer_order` result is
+only `Nat.factorial 3 = 6`; it does not compare a Spin(8) triality action with
+the sedenion carrier. The current registered `LEAN_PROVED` / `NO-GO` row is
+not supported by the compiled declaration inventory. The weighted-CAR row's
+registered locator is likewise absent and its broader `LEAN_PROVED` / `NO-GO`
+statement exceeds the neighboring two-value theorem. Its Lean comments are
+now narrowed to the theorem's exact weight and cardinality facts. These are
+formalization-scope risks for the existing owners, not accepted C0
+reclassifications. Status, owner, and source history remain intact pending a scientific-owner
+decision or formal independent registry acceptance under repository process;
+this read-only review alone is neither.
+The read-only scope review did not build Lean; the two touched modules were
+subsequently built separately on the working tree (2,953 jobs each), with no
+theorem changes.

@@ -1,10 +1,10 @@
 {
   "schema": "d0-lean-declaration-inventory-v1",
-  "snapshot_commit": "1b7f1cbb5e597af31b59a83bd37edac73b0d4e47",
-  "worktree_dirty": false,
-  "claim_registry_sha256": "e986bcc75fd6a2c84a80ee61b639482af1b21464fcfe4c961491b4a97bb9037f",
-  "lean_source_digest": "4b760603dd653cf0354beacd1d78da0879c570b744059c37115ec2ac2d8936ac",
-  "collector_sha256": "24289b940bc867e4ccea28cbd9771033669662dc5017f53e7a14ad780cadd30d",
+  "snapshot_commit": "6b59bc57ca97275df9e973715cdb503ec8fc5c4e",
+  "worktree_dirty": true,
+  "claim_registry_sha256": "d86d7965f0cf64164cdf7536a4fb5119ec9655e5b5082e3bbe34ce6459d35003",
+  "lean_source_digest": "3530b705e2d59e76c37b153ae6c38f36efe01570f788e052e4624dd13db9ddf7",
+  "collector_sha256": "3546dc3dc677c9a3e3d205f45fb8e8b636f2d158a05e28b84180eeb2d89ae10d",
   "toolchain": "leanprover/lean4:v4.30.0",
   "public_import_root": "D0.All",
   "resolution_only": true,
@@ -22418,11 +22418,11 @@
       {
         "claim_id": "D0-SEDENION-BRANCH-THREESET-SCAFFOLD-001",
         "module_locator": "D0.Algebra.Sedenions",
-        "theorem_atom": "sedenion_branch_threeset_scaffold_owner",
+        "theorem_atom": "branch_label_s3_scaffold",
         "candidate_names": [
-          "D0.Algebra.Sedenions.sedenion_branch_threeset_scaffold_owner",
-          "D0.Algebra.sedenion_branch_threeset_scaffold_owner",
-          "D0.sedenion_branch_threeset_scaffold_owner"
+          "D0.Algebra.Sedenions.branch_label_s3_scaffold",
+          "D0.Algebra.branch_label_s3_scaffold",
+          "D0.branch_label_s3_scaffold"
         ]
       },
       {
@@ -23100,11 +23100,11 @@
       {
         "claim_id": "D0-ARCHIVE-METRIC-MEASURE-HODGE-LIFT-001",
         "module_locator": "D0.Geometry.ArchiveMetricMeasureHodgeLift",
-        "theorem_atom": "metric_measure_hodge_lift_owner",
+        "theorem_atom": "archive_metric_measure_hodge_lift_owner",
         "candidate_names": [
-          "D0.Geometry.ArchiveMetricMeasureHodgeLift.metric_measure_hodge_lift_owner",
-          "D0.Geometry.metric_measure_hodge_lift_owner",
-          "D0.metric_measure_hodge_lift_owner"
+          "D0.Geometry.ArchiveMetricMeasureHodgeLift.archive_metric_measure_hodge_lift_owner",
+          "D0.Geometry.archive_metric_measure_hodge_lift_owner",
+          "D0.archive_metric_measure_hodge_lift_owner"
         ]
       },
       {
@@ -62216,21 +62216,6 @@
     },
     {
       "exists": false,
-      "name": "D0.Algebra.Sedenions.sedenion_branch_threeset_scaffold_owner",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.Algebra.sedenion_branch_threeset_scaffold_owner",
-      "source_path": null
-    },
-    {
-      "exists": false,
-      "name": "D0.sedenion_branch_threeset_scaffold_owner",
-      "source_path": null
-    },
-    {
-      "exists": false,
       "name": "D0.Algebra.Sedenions.triality_sedenion_s3_disjointness_guard",
       "source_path": null
     },
@@ -63280,17 +63265,18 @@
     },
     {
       "exists": false,
-      "name": "D0.Geometry.ArchiveMetricMeasureHodgeLift.metric_measure_hodge_lift_owner",
+      "name": "D0.Geometry.ArchiveMetricMeasureHodgeLift.archive_metric_measure_hodge_lift_owner",
       "source_path": null
     },
     {
-      "exists": false,
-      "name": "D0.Geometry.metric_measure_hodge_lift_owner",
-      "source_path": null
+      "exists": true,
+      "module": "D0.Geometry.ArchiveMetricMeasureHodgeLift",
+      "name": "D0.Geometry.archive_metric_measure_hodge_lift_owner",
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveMetricMeasureHodgeLift.lean"
     },
     {
       "exists": false,
-      "name": "D0.metric_measure_hodge_lift_owner",
+      "name": "D0.archive_metric_measure_hodge_lift_owner",
       "source_path": null
     },
     {

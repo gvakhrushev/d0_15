@@ -1,0 +1,81 @@
+{
+  "schema": "d0-lean-declaration-inventory-v1",
+  "snapshot_commit": "6b59bc57ca97275df9e973715cdb503ec8fc5c4e",
+  "worktree_dirty": true,
+  "claim_registry_sha256": null,
+  "lean_source_digest": "88032d37e72ffe0c5868a528eeb7af8da5ec61cb9d658ddaae001c707a2aa3d1",
+  "collector_sha256": "9eb595fff4715dfdc95459e52c5fe392dd2fa8da8772f448d9a4fb38cc0f0f01",
+  "toolchain": "leanprover/lean4:v4.30.0",
+  "public_import_root": "D0.All",
+  "resolution_only": false,
+  "request": {
+    "full_name": "D0.Algebra.Sedenions.bare_threeset_insufficient_for_sedenion_realization"
+  },
+  "declarations": [
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [],
+      "conclusion_whnf": "D0.Algebra.Sedenions.leftProduct ≠ D0.Algebra.Sedenions.rightProduct ∧\n  (∀ (σ : Equiv.Perm D0.Algebra.Sedenions.OctonionBranch) (x y : D0.Algebra.Sedenions.OctonionBranch),\n      σ (D0.Algebra.Sedenions.leftProduct x y) = D0.Algebra.Sedenions.leftProduct (σ x) (σ y)) ∧\n    ∀ (σ : Equiv.Perm D0.Algebra.Sedenions.OctonionBranch) (x y : D0.Algebra.Sedenions.OctonionBranch),\n      σ (D0.Algebra.Sedenions.rightProduct x y) = D0.Algebra.Sedenions.rightProduct (σ x) (σ y)",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 29,
+            "line": 138
+          },
+          "start": {
+            "column": 0,
+            "line": 127
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 59,
+            "line": 130
+          },
+          "start": {
+            "column": 8,
+            "line": 130
+          }
+        }
+      },
+      "elaborated_type": "D0.Algebra.Sedenions.leftProduct ≠ D0.Algebra.Sedenions.rightProduct ∧\n  (∀ (σ : Equiv.Perm D0.Algebra.Sedenions.OctonionBranch) (x y : D0.Algebra.Sedenions.OctonionBranch),\n      σ (D0.Algebra.Sedenions.leftProduct x y) = D0.Algebra.Sedenions.leftProduct (σ x) (σ y)) ∧\n    ∀ (σ : Equiv.Perm D0.Algebra.Sedenions.OctonionBranch) (x y : D0.Algebra.Sedenions.OctonionBranch),\n      σ (D0.Algebra.Sedenions.rightProduct x y) = D0.Algebra.Sedenions.rightProduct (σ x) (σ y)",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Algebra.Sedenions",
+      "name": "D0.Algebra.Sedenions.bare_threeset_insufficient_for_sedenion_realization",
+      "proof_dependencies": [
+        "And",
+        "And.intro",
+        "D0.Algebra.Sedenions.OctonionBranch",
+        "D0.Algebra.Sedenions.leftProduct",
+        "D0.Algebra.Sedenions.leftProduct_equivariant",
+        "D0.Algebra.Sedenions.leftProduct_ne_rightProduct",
+        "D0.Algebra.Sedenions.rightProduct",
+        "D0.Algebra.Sedenions.rightProduct_equivariant",
+        "DFunLike.coe",
+        "Eq",
+        "Equiv.Perm",
+        "Equiv.instEquivLike",
+        "EquivLike.toFunLike",
+        "Ne"
+      ],
+      "type_dependencies": [
+        "And",
+        "D0.Algebra.Sedenions.OctonionBranch",
+        "D0.Algebra.Sedenions.leftProduct",
+        "D0.Algebra.Sedenions.rightProduct",
+        "DFunLike.coe",
+        "Eq",
+        "Equiv.Perm",
+        "Equiv.instEquivLike",
+        "EquivLike.toFunLike",
+        "Ne"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Algebra/Sedenions.lean"
+    }
+  ]
+}

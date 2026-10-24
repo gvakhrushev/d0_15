@@ -12,24 +12,22 @@ open D0
 
 Owner: `D0-ARCHIVE-NAIVE-WEIGHTED-CAR-DEGREE-LEAKAGE-NOGO-001`.
 
-Structural obstruction of naive variable-frame / weighted coboundary definitions:
-If one attempts to encode curvature by defining a position-dependent coboundary:
-  d_w = √w · d
-where w(x) is non-constant, the commutators [√w, U_r - I] ≠ 0 prevent nilpotency:
-  d_w² ≠ 0.
-Specifically, d_w² generates non-vanishing cross-terms:
-  d_w² = ∑_{r < s} (√w (U_r - I) √w (U_s - I) - √w (U_s - I) √w (U_r - I)) c_r† c_s† ≠ 0,
-causing form-degree leakage (mapping 0-forms to 2-forms).
-
-This proves that curvature CANNOT be introduced by directly perturbing the differential d,
-but MUST be introduced via the Hodge inner product metric W:
-  d_W† = W⁻¹ d* W,  leaving d² = 0 frozen!
+The registered research target concerns the position-dependent operator
+`d_w = sqrt(w) d` and whether its square has a nonzero two-direction
+cross-term. This file does not currently define that operator, translation
+operators, or a CAR-valued differential. Its compiled formal slice is only a
+two-value witness (`w₀ = 1`, `w₁ = 4`) that the square roots differ, together
+with the cardinality of `Role`. It therefore does not prove nilpotency
+failure, form-degree leakage, or that curvature must enter through the Hodge
+metric. Those stronger statements remain outside this formal result and need
+an exact operator construction and a proved nonzero witness before this file
+can support the registered no-go.
 -/
 
-/-- Non-zero cross-term commutator witness on 2 points with non-constant weights w_0 = 1, w_1 = 4:
-√w_0 = 1, √w_1 = 2.
-Then (√w · (U - I) · √w) applied to a constant vector produces non-zero variation. -/
+/-- The first fixed sample weight used only in the square-root inequality below. -/
 def naiveWeight0 : ℝ := 1
+
+/-- The second fixed sample weight used only in the square-root inequality below. -/
 def naiveWeight1 : ℝ := 4
 
 theorem sqrt_naive_weights_ne : Real.sqrt naiveWeight0 ≠ Real.sqrt naiveWeight1 := by
@@ -42,9 +40,10 @@ theorem sqrt_naive_weights_ne : Real.sqrt naiveWeight0 ≠ Real.sqrt naiveWeight
   rw [h1, h4]
   norm_num
 
-/-- **D0-ARCHIVE-NAIVE-WEIGHTED-CAR-DEGREE-LEAKAGE-NOGO-001 (Owner)**:
-Proves that non-constant weights break translational homogeneity, proving the necessity
-of preserving frozen d² = 0 and introducing curvature solely via the Hodge metric W. -/
+/-- Current compiled owner slice: the two fixed sample weights have distinct
+square roots and the Role carrier has four elements. This does not formalize
+the variable-weight differential or its proposed nilpotency/degree-leakage
+obstruction. -/
 theorem archive_naive_weighted_car_degree_leakage_nogo_owner :
     (Real.sqrt naiveWeight0 ≠ Real.sqrt naiveWeight1) ∧
     (Fintype.card Role = 4) :=
