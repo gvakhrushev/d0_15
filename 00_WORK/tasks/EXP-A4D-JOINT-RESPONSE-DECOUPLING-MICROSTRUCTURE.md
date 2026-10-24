@@ -8893,3 +8893,115 @@ distinguish the configured positive gamma fixtures from a reconstructed
 full amplified programme. Affected work, agent-protocol, assembly,
 repository and whitespace guards pass; scientific promotion remains false.
 No unchanged large-suite replay, new claim or Lean build is asserted.
+
+
+### 25 October: full operator and finite spatial heat in an actual native clock
+
+Phase: native realization / source composition. Same constitutive owner,
+native-programme-v1 interface and PR #334. Input:
+05c7df3a894ee8141bbd01c66b91e1435e4bc899. Exact parent application:
+7k's original signed spatial-operator map and paid-writer12.3(55)-(57),
+whose finite spatial heat was not supplied by a scalar report/channel.
+Write paths: primary residual7w, this brief and
+02_REGISTRY/research/sources/d0_native_operator_holonomy_2026-10-25/.
+Root owns integration and the quantitative external-compiler application;
+bounded assistants own PROOF.md and the native module/checker/receipt,
+with independent price/carrier review. No new execution or registry row.
+
+Changed input: a literal nonconstant clock monodromy approximating
+exp(delta J_rebit tensor K_alpha(D)) on ALL columns. Here K_alpha is
+the odd analytic transform satisfying exp(-m alpha K_alpha²)=(I-alpha D²)^m
+EXACTLY; no finite-alpha replacement of the original heat is used.
+Its inverse preserves the signed full spatial operator and zero modes.
+The true Frechet derivative and original density/observer/material
+decoder remain. Full-word approximation is stronger than7r's reduced
+query-channel comparison;7k's owned readout is reused.
+
+The native G_CX_SOURCE_I sector supplies exact all-column inverse
+macros, restoring dirty source-spin and retaining its real primitive
+prefixes. The existing SO density proof and an explicitly external
+quantitative inverse-closed compilation theorem give polylog length
+at fixed dimension and finite target data with an FPTEAS. No general
+SK implementation or formal theorem is claimed. Exact2/5-CX identity
+words pad a finite stencil catalogue to one true common N; every
+padding gate and all full auxiliary modes are paid. OldRIGHT is not
+addressed. A stored decoder would require its entire separate carrier.
+
+Carrier/norm/source: actual paired bare chronological Hodge, one
+realification rebit, whole scene, full auxiliary dimension c_H and
+actual input auxiliary rank r_P kept distinct. The temperature family
+is explicitly beta_clk=2N² beta_sp/delta², with true source gain
+Gamma_clk=delta²/(2N²). The all-mode clock sum has multiplicity4c_H,
+not an extra factorN. Its normalized heat covector approaches the
+original finite55 heat with a quantified Kdot norm, low-mode error
+O(delta²/N²) and uniform-in-N Gaussian winding tail. Actual non-power-
+two embedding retains every zero padding mode and its harmonic
+normalizer. Operator approximation error has its actual epsilon/delta
+loss; finite code sources divide by their true stencil/lift, not a
+postulated native smooth word selector.
+
+The SAME word's genuine fixed-cut feedback is also computed:
+-r_P Trlog(I-z sin²(delta K)), with normalized source leading
+2r_P z N² DTr K². It is not the original spatial feedback or Rayleigh
+term and is not small at fixed z. Full feedback compilation error
+retains N² epsilon/delta and N² epsilon²/delta²; the inverse-closed
+polylog length bound permits these errors to vanish at fixed mesh,
+delta and true stencil/gain scales. This controls approximation of
+the nonzero source; it does not cancel the source.
+
+Decisive route check(223): on a chart actually admitting uniform
+E(t)=exp(-t)E at fixed density/observer/links, Ddot=D and
+K Kdot=D²B^-1. At delta||K||<=pi/4 the full H+J scale row is at least
+(8r_P zN²/pi)Tr(D²B^-1)-A_H-E_N C_rho||D||, strictly positive for
+large actual N if D!=0 and z>0 is fixed. Hence the direct whole-H+J
+stationary application fails on that free-global-scale chart. This
+does not rescale a fixed collar or exclude actual additional physical
+source terms; it specifies the source the next construction must supply.
+
+Intended substitution: full native operator/finite-heat availability
+in this constructed clock sector, replacing the former report-only
+input to that component. The parent complete physical source is NOT
+discharged. It still needs the selected original scene/cut/temperature,
+true feedback/Info/work/Rayleigh and independent apparatus/preparation
+equations, followed by actual stationary/refinement transfer. No
+source-fitted subtraction, physical selector or changed action is added.
+
+Smallest decisive checks: exact native identity padding and all-column
+inverse; native near-identity holonomy words with original Golden
+angle; every clock mode at the actual common primitive N; exact
+feedback and its non-small normalized source; noncommuting finite
+heat/K Frechet control. These do not require unchanged full128,
+geometric-root, readiness or Lean replay. The supplied clock/valuation
+family and analytic compilation theorem keep their stated scope;
+GR_closed and raw216 remain open.
+
+Final primary7w:11205 UTF-8 bytes, SHA256
+5a39112a480014b11ce4140756fde1482028f24a7cfc76435637a6681b68ed0f.
+The preceding7t/7u/7v retain all their published byte/hash pins.
+Final packet pins:
+PROOF.md 14cfca3255ebd41984f78d371a5dcd1f3c52bf679974eab5bd6192f3f15c8e1e
+native_holonomy.py a5abcd555ff10eccccf5ba337410736415060a9e4a1281f49f2eeb533c4071b0
+check_native_operator_holonomy.py 0e78bd8bfd8dcc4ac70256d9c7c24ca56b35e1661d370c2c09337278a82e95b0
+CHECK_RESULT.json d2a5c678ccdaaadbad7d1fae4a3f36a98b963acc2683665711caa59b5df6d81b
+
+Actual final narrow run: Python3.9.6, exit0,43 checks. Exact native
+identities and rejection guards are separate from90-digit scalar/matrix
+numerics, which are NOT an interval certificate. Noncommuting2x2 D/V
+checks verify B^m=exp(-beta K²), off-diagonal Frechet divided differences,
+DK!=V and both original/transformed trace gradients. Literal Golden
+Q33/Q580 words have68/1162 stages; paid common clock1166 retains all
+37312 paired modes, full fibre16 and input rank8. The feedback is counted
+once and its N² amplification is preserved. No general SK implementation,
+selected temperature/cut or full original primary programme is claimed.
+
+Root verified the final receipt and every input hash, including unchanged
+native_execution.py and the exact coefficient module. Independent
+operator/source and price/carrier reviews accepted the exact final
+section and proof pins, including FPTEAS and fixed-collar boundaries.
+Affected work, agent-protocol, assembly, repository and whitespace guards
+pass; scientific promotion remains false. The final narrow run is reused,
+not repeated as an unchanged root/full128/Lean replay.
+
+Reproduce from repository root into a separate output:
+
+    python3 02_REGISTRY/research/sources/d0_native_operator_holonomy_2026-10-25/check_native_operator_holonomy.py --output /tmp/native_operator_holonomy.json

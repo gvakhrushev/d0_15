@@ -5732,6 +5732,216 @@ completion. The bounded checker tests the new operator/source maps; it
 does not replay the unchanged large root, full128 or Lean suites.
 
 
+## 7w. Transfer the original operator and finite heat through full native words
+
+25 October 2026; same constitutive owner/native-programme-v1 carrier,
+input05c7df3a894ee8141bbd01c66b91e1435e4bc899. This addresses a
+particular remaining application of7k and paid-writer12.3(55)-(57): the
+original spatial operator must affect the ENTIRE native thermal spectrum,
+not merely a scalar report or an initialized channel. The changed input is
+a nonconstant full clock monodromy. The construction, source bounds and
+bounded native witness are in
+[d0_native_operator_holonomy_2026-10-25](sources/d0_native_operator_holonomy_2026-10-25/PROOF.md).
+It constructs a native sector and does not select its physical temperature,
+cut, reachable field writer or complete stationary section by definition.
+
+### Preserve the original finite spatial heat exactly before compiling it
+
+Let D be the SAME finite real positive-frame spatial Dirac of7k and
+paid-writer12.1, with its actual density/observer/calibration data. The
+original stopped spatial heat uses B=I-alpha D^2>0, beta_sp=m alpha,
+Z_sp=Tr B^m and H_sp=log(C Z_sp)/beta_sp, not an independently substituted
+continuous heat. On a strict chart alpha||D||^2<=rho<1 define
+
+    K=K_alpha(D)=D sqrt[-log(I-alpha D^2)/(alpha D^2)],
+    exp(-beta_sp K^2)=B^m,
+    D=K sqrt[(I-exp(-alpha K^2))/(alpha K^2)].            (214)
+
+Both quotients have their removable value1 on zero modes. This is an
+invertible odd analytic operator map; it does not lose the signed raising
+blocks needed by the owned all16+24 decoder(51)-(53). Density, frames and
+the separate two material coordinates keep their existing roles. Its actual
+Frechet derivative Kdot=DK_alpha[Ddot] is retained. It is not Ddot. The
+proof gives a finite bound on the strict chart and verifies the exact
+original partial
+
+    D H_sp=-2 Tr[D B^(m-1) Ddot]/Z_sp.                  (215)
+
+Fixed alpha,m,C and positive-frame data are the declared partial here.
+Additional independent parameter, preparation and frame equations remain.
+
+### Compile the entire monodromy with actual inverse and clock lengths
+
+With J=[[0,-1],[1,0]] on ONE realification rebit, take the full target
+
+    U_delta=exp(delta J tensor K) tensor I_aux.           (216)
+
+It is a real special orthogonal matrix on every scene/rebit column.
+It acts on arbitrary scene input, not just a resource success subspace.
+The source-local inverse of7j realizes each G_i^dagger on ALL columns,
+including dirty source-spin, using at most11 actual primitives with
+routing. Use its declared G_CX_SOURCE_I interface, not an unsupported
+inverse on a smaller physical palette. The source-spin is restored by
+each complete inverse macro; it remains in every primitive prefix and
+in the full heat.
+
+For at least three legally addressed ACTIVE bits, the owned Golden/CX
+Lie closure supplies density in SO(2^n). The finite macro palette
+G_i,G_i^dagger,CX_ij is inverse closed. Applying the external
+[Kuperberg theorem2.4 and bounded-region remark](https://toc.cs.uchicago.edu/articles/v011a006/v011a006.pdf)
+to this compact group gives polylogarithmic word length in operator error.
+It requires FPTEAS target entries: fixed finite rational or algebraic D
+data on the strict chart, with FPTEAS alpha,delta parameters (in particular
+rational/algebraic ones), supply them through the analytic functions.
+Its constants depend on the fixed dimension and layout;
+no bound uniform in the refining mesh is inferred.
+This analytic compiler input is not a new Lean theorem or an installed
+general compiler.
+
+Thus, at fixed mesh/dimension and for a finite bounded target catalogue,
+choose actual words with full operator error epsilon and expanded length
+at most C_h(1+log(1/epsilon))^c_h. No extra prepared ancilla or initialized
+isometry replaces this FULL-column approximation. OldRIGHT is never a
+scratch/control. Source-spin lies in the retained auxiliary carrier.
+
+Common duration is physically realizable. On three distinct ACTIVE wires,
+A=CX(a,b), Bc=CX(b,c), Cc=CX(a,c), the chronological five-CX word
+A;Bc;A;Bc;Cc is exactly identity on every column. Together with two
+equal CX, it pads any length gap>=4. Pad the catalogue to the maximum
+expanded length+4 using these REAL stages. This yields
+
+    N<=C_h(1+log(1/epsilon))^c_h+4                      (217)
+
+after adjusting the fixed constant for the inverse macros. Padding is
+not a free idle. The resulting prefix cuts and clock contain every stage.
+These are finite hardwired configurations in7t's executable domain.
+For one autonomous stored-program decoder instead, its whole key carrier,
+all branches and physical preparation must be included separately. The
+construction does not read an unknown physical field through an oracle.
+
+### All clock modes recover the finite heat with its true gain
+
+Apply the OWNED whole-clock Fourier/holonomy theorem to the paired bare
+incidence clock of7t, retaining all prefixes, zero modes and full fibre.
+It is not the different33-scene Cartesian incidence of paid-writer13.
+For beta_sp fixed, delta||K||<=pi/2, set
+
+    beta_clk=2N^2 beta_sp/delta^2,
+    Gamma_clk=beta_sp/beta_clk=delta^2/(2N^2).           (218)
+
+If c_H is the full auxiliary dimension, the exact paired heat partition
+of the target monodromy is
+
+    Z_clk=4 c_H sum_i sum_(k mod N)
+      exp[-beta_clk(1-cos((2pi k+delta lambda_i(K))/N))]. (219)
+
+The factor4 is paired Hodge degrees times realification. There is no
+extra multiplier N outside the COMPLETE clock-mode sum. The proof bounds
+the source error by an O(delta^2/N^2) low-mode error and an exponentially
+small winding tail, uniformly in the actual N. After dividing the raw
+heat by the ACTUAL Gamma_clk, its field source converges to(215), with
+its actual Kdot norm. At fixed ranks the absolute baseline includes
+log(4 c_H/C)/beta_sp in those units; it is retained, not subtracted from
+the physical action. For c_H=C only the known log4/beta_sp remains.
+An input cut's auxiliary rank r_P need not equal c_H.
+
+For a power-of-two scene the construction uses exactly that scene.
+If a q-dimensional zero block is needed to embed a different scene into
+qubits, its q zero modes stay in(219). The limiting partition is Z_sp+q,
+and the old heat partial is multiplied by Z_sp/(Z_sp+q). This is the
+owned harmonic-normalizer correction, not permission to delete modes.
+
+A sufficiently small full native monodromy error epsilon, with the
+proof's strict small-angle margin, has heat value error
+O_h(epsilon/delta), in the units of(215), uniformly in N. This avoids
+the false estimate obtained by multiplying a crude operator bound by
+beta_clk without its heat weights. For actual finite field stencils,
+divide endpoint price-error bounds by their true stencil separation and
+operator/field lift. There is no nonconstant continuous selector of
+finite native words, nor a free native pulse. The proof's smooth target
+derivative and the implemented finite-code covectors retain this distinction.
+
+### The same word's genuine feedback is not the original spatial feedback
+
+Take the actual initial rebit0, arbitrary scene input and auxiliary
+projector P_aux of rank r_P, with generated prefix cuts as in7t. Its
+SINGLE-wrap return defect and bootstrap feedback are exactly
+
+    E_U=sin^2(delta K) tensor P_aux,
+    J_clk=-r_P Tr log[I-z sin^2(delta K)],
+    D J_clk/Gamma_clk=(2r_P z N^2/delta)
+       Tr[(I-z sin^2(delta K))^-1 sin(2delta K) Kdot].   (220)
+
+At small delta the last row is
+4 r_P z N^2 Tr(K Kdot)+O_h(N^2 delta^2||Kdot||).
+It is generically non-small at fixed z. A proof controlling the heat
+does not cancel this return source. In particular it is NOT the original
+128-fold spatial term -128 Tr log[(1-z)I+zB^m], and it supplies no genuine
+Rayleigh/preparation equation. Setting z or an added price by a desired
+Einstein source would not prove the missing physical binding.
+
+The compiler error can nevertheless be controlled rather than hidden.
+Writing E_U=C_U^dagger C_U with C_U=(I-P)U P gives
+
+    ||E_V-E_U||<=2delta||K|| epsilon+epsilon^2.          (221)
+
+The normalized feedback value error retains its actual input rank and
+factor O_h(N^2 epsilon/delta+N^2 epsilon^2/delta^2). Density alone would
+give no length/accuracy conclusion. The full-column inverse-closed
+compiler bound(217) DOES make this error tend to0 at fixed h,delta and
+fixed stencil/gain scales. For changing meshes or extra decaying gains,
+retain their real constants and choose/check the actual schedule; no
+uniform efficient refinement follows. Approximation of the TRUE
+feedback is not removal of its nonzero source(220).
+
+The full operator map also has a signed readout. On the principal-log
+chart of(216), before its identity auxiliary factor,
+
+    K=-(1/(2delta)) Tr_rebit[(J tensor I)log U_delta].   (222)
+
+The same extraction from a nearby actual real orthogonal word gives a
+real symmetric K_hat with error O(epsilon/delta). Apply(214)'s inverse
+and the owned spatial decoder with their real local conditioning. This
+keeps signs and zero modes, unlike a scalar heat spectrum alone. It is
+a mathematical operator readout, not a free logarithm/tomography gate.
+Other components of the compiled word's logarithm remain in the full
+thermal/feedback error bounds; this extraction does not discard them.
+
+There is a decisive full-price check WHERE the uniform coframe variation
+is actually admitted. At fixed density/calibration/observer/links,
+E(t)=exp(-t)E gives Ddot=D by paid-writer(57). Put
+T_D=Tr[D^2 B^-1]>0 for D!=0 and
+A_H=2Tr[D^2 B^(m-1)]/Z_sp. For delta||K||<=pi/4, the exact identity
+K Kdot=D^2 B^-1 and sin(2delta k)/k>=4delta/pi give
+
+    D(H_clk+J_clk)[scale]/Gamma_clk
+      >=(8r_P zN^2/pi)T_D-A_H-E_N C_rho||D||.           (223)
+
+Here E_N and C_rho are the proof's explicit heat-source and Frechet
+bounds. E_N is bounded independently of N, so this row is strictly
+positive at large actual N, fixed z>0 and D!=0. Its strict sign transfers
+to sufficiently accurate paid finite-code stencils with their actual
+separation/norm budget. Thus the direct whole H+J stationary application
+fails on this free-global-scale chart even though its heat transfer works.
+This does NOT apply the same test to a fixed collar: a global rescaling
+would change that boundary. Nor does it exclude cancellation by genuinely
+derived additional physical source terms. It identifies the component
+that the next complete-source construction must address.
+
+The precise positive substitution is now an all-column native-word and
+whole-finite-heat realization of the ORIGINAL signed spatial operator,
+with its inverse map, real norm/gain, primitive length and complete
+feedback explicitly bound. It strengthens7r's query-channel application
+and7k's operator readout; it does not replace their owned results. The
+remaining parent application is the selected same-execution complete
+source, including(220), true Info/work/Rayleigh and independent apparatus
+equations, then stationary/refinement and physical theory transfer.
+The auxiliary carrier, temperature and task are supplied for this
+constructed sector; their compulsory original physical selection remains
+unproved. Neither another exact GR root nor GR_closed/raw216 completion
+is asserted by this operator/heat construction.
+
+
 ## 8. Reproduction
 
 Run from this directory:
