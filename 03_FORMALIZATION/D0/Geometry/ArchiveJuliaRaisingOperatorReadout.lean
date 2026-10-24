@@ -17,10 +17,19 @@ frame lift, equality of the complete CAR and exterior Julia query operators for
 arbitrary shifts and linear frame equivalences. The vacuum readout follows as a
 special case and applying `ιInv` recovers `u` exactly.
 
+The module now also extracts the grade-one-to-grade-two contraction block of
+the same complete query, derives the projected endpoint-metric identity from
+Lorentz isometry, and proves the square-root/correction inverse (28) for the
+whole affine covector. The canonical Euclidean witness `z=b/(bᵀb)` is built in
+the fixed four-role basis and normalized when `b` is nonzero; in the null case,
+nondegeneracy and `u≠0` supply that nonzero premise. Endpoint-form hypotheses,
+the chart normalization, and the positive branch remain explicit inputs.
+
 This remains a finite-carrier algebraic application of the pinned source. It
-does not formalize the full Lorentz null inverse (28), its all-jet extension,
-coframe/metric recovery, the complete variational pullback, source or price
-maps, physical admission, or GR selection.
+does not formalize the source's concrete endpoint `Jx,Jy` realization and
+proper-Lorentz constraint as one instantiated package, the non-null gamma
+formula (27), its all-jet extension, coframe/metric recovery, the complete
+variational pullback, source or price maps, physical admission, or GR selection.
 -/
 
 namespace D0.Geometry
@@ -299,6 +308,317 @@ theorem archiveJuliaCARRaisingQuery_eq_model (u : RoleSpace)
   change (archiveCARVectorCreator u).comp (archiveExteriorFrameLift M) =
     (archiveExteriorCreatorLM u).comp (archiveExteriorFrameLift M)
   rw [archiveCARVectorCreator_eq_archiveExteriorCreatorLM]
+
+private theorem archiveFockExteriorEquiv_contraction
+    (α : Module.Dual ℝ RoleSpace) (ψ : ArchiveFockState → ℝ) :
+    archiveFockExteriorEquiv (archiveExteriorContraction α ψ) =
+      CliffordAlgebra.contractLeft α (archiveFockExteriorEquiv ψ) := by
+  simp [archiveExteriorContraction, LinearMap.comp_apply]
+
+private theorem archiveFockExteriorEquiv_creator (u : RoleSpace)
+    (ψ : ArchiveFockState → ℝ) :
+    archiveFockExteriorEquiv (archiveExteriorCreator u ψ) =
+      ι ℝ u * archiveFockExteriorEquiv ψ := by
+  simp [archiveExteriorCreator]
+
+/-- CAR contraction obeys the exact contraction-creator relation on the
+existing finite carrier. -/
+theorem archiveExteriorContraction_creator (α : Module.Dual ℝ RoleSpace)
+    (u : RoleSpace) (ψ : ArchiveFockState → ℝ) :
+    archiveExteriorContraction α (archiveExteriorCreator u ψ) =
+      α u • ψ - archiveExteriorCreator u (archiveExteriorContraction α ψ) := by
+  apply archiveFockExteriorEquiv.injective
+  rw [archiveFockExteriorEquiv_contraction,
+    archiveFockExteriorEquiv_creator,
+    CliffordAlgebra.contractLeft_ι_mul]
+  simp only [map_sub, map_smul, archiveFockExteriorEquiv_creator,
+    archiveFockExteriorEquiv_contraction]
+
+/-- Rank-one map `v ↦ α(v)u`, used to express the exact projected block. -/
+def archiveJuliaNullRankOne (u : RoleSpace) (α : Module.Dual ℝ RoleSpace) :
+    RoleSpace →ₗ[ℝ] RoleSpace where
+  toFun v := α v • u
+  map_add' v w := by simp [map_add, add_smul]
+  map_smul' c v := by simp [map_smul, smul_smul]
+
+/-- Bundled real bilinear form on the fixed four-role carrier. -/
+abbrev ArchiveRoleBilinear := RoleSpace →ₗ[ℝ] (RoleSpace →ₗ[ℝ] ℝ)
+
+/-- The degree-one-to-degree-two contraction block of the actual raising
+query. This is `P₁ i_α X P₁` with `X=C†(u)ρ(M)`, read in the existing role
+space; the condition `α u = 1` is the source's affine chart normalization. -/
+def archiveJuliaNullBlock (u : RoleSpace)
+    (M : RoleSpace ≃ₗ[ℝ] RoleSpace) (α : Module.Dual ℝ RoleSpace) :
+    RoleSpace →ₗ[ℝ] RoleSpace :=
+  M.toLinearMap - archiveJuliaNullRankOne u (α.comp M.toLinearMap)
+
+theorem archiveJuliaNullBlock_decomposition (u : RoleSpace)
+    (M : RoleSpace ≃ₗ[ℝ] RoleSpace) (α : Module.Dual ℝ RoleSpace)
+    (x : RoleSpace) :
+    M x = archiveJuliaNullBlock u M α x + α (M x) • u := by
+  dsimp [archiveJuliaNullBlock, archiveJuliaNullRankOne]
+  abel
+
+/-- In the null case `P(u,u)=0`, nondegeneracy of the endpoint form and
+invertibility of `M` make the projected metric covector nonzero whenever
+`u` is nonzero. This supplies the existence premise for the source's
+Euclidean normalized chart witness. -/
+theorem archiveJuliaNullBlock_covector_ne_zero
+    (P : ArchiveRoleBilinear) (u : RoleSpace)
+    (M : RoleSpace ≃ₗ[ℝ] RoleSpace) (α : Module.Dual ℝ RoleSpace)
+    (hNondegenerate : ∀ x, (∀ y, P x y = 0) → x = 0)
+    (hu : u ≠ 0) (hNull : P u u = 0) :
+    (P u).comp (archiveJuliaNullBlock u M α) ≠ 0 := by
+  intro hbzero
+  have hBzero (x : RoleSpace) : P u (archiveJuliaNullBlock u M α x) = 0 := by
+    have h := congrArg (fun f : RoleSpace →ₗ[ℝ] ℝ => f x) hbzero
+    simpa [LinearMap.comp_apply] using h
+  have hMzero (x : RoleSpace) : P u (M x) = 0 := by
+    rw [archiveJuliaNullBlock_decomposition u M α x]
+    simp only [map_add, map_smul, smul_eq_mul]
+    rw [hBzero x, hNull]
+    simp
+  have hall (y : RoleSpace) : P u y = 0 := by
+    simpa using hMzero (M.symm y)
+  exact hu (hNondegenerate u hall)
+
+/-- The projected metric identity behind the null chart in Eq. (28). `Pₓ`
+and `Pᵧ` are the two endpoint bilinear forms, `M` is their Lorentz isometry,
+and `B` is read from the complete CAR/exterior query above. -/
+theorem archiveJuliaNullProjectedMetric
+    (Pₓ Pᵧ : ArchiveRoleBilinear) (u : RoleSpace)
+    (M : RoleSpace ≃ₗ[ℝ] RoleSpace) (α : Module.Dual ℝ RoleSpace)
+    (hSymm : ∀ x y, Pₓ x y = Pₓ y x)
+    (hIso : ∀ x y, Pₓ (M x) (M y) = Pᵧ x y) :
+    ∀ x y,
+      Pᵧ x y -
+          Pₓ (archiveJuliaNullBlock u M α x)
+            (archiveJuliaNullBlock u M α y) =
+        ((Pₓ u).comp (archiveJuliaNullBlock u M α)) x * α (M y) +
+          α (M x) * ((Pₓ u).comp (archiveJuliaNullBlock u M α)) y +
+          (Pₓ u u) * α (M x) * α (M y) := by
+  let B := archiveJuliaNullBlock u M α
+  have hdecomp (x : RoleSpace) : M x = B x + α (M x) • u := by
+    simpa [B] using archiveJuliaNullBlock_decomposition u M α x
+  intro x y
+  have hexpand :
+      Pₓ (B x + α (M x) • u) (B y + α (M y) • u) =
+        Pₓ (B x) (B y) +
+          α (M y) * Pₓ (B x) u +
+          α (M x) * Pₓ u (B y) +
+          α (M x) * α (M y) * Pₓ u u := by
+    simp only [map_add, map_smul, LinearMap.add_apply,
+      LinearMap.smul_apply, smul_eq_mul]
+    ring
+  calc
+    Pᵧ x y - Pₓ (B x) (B y) =
+        Pₓ (M x) (M y) - Pₓ (B x) (B y) := by rw [hIso]
+    _ = Pₓ (B x + α (M x) • u) (B y + α (M y) • u) -
+        Pₓ (B x) (B y) := by
+          nth_rewrite 1 [hdecomp x]
+          nth_rewrite 1 [hdecomp y]
+          rfl
+    _ = ((Pₓ u).comp B) x * α (M y) +
+        α (M x) * ((Pₓ u).comp B) y +
+        (Pₓ u u) * α (M x) * α (M y) := by
+      rw [hexpand, hSymm (B x) u]
+      simp only [LinearMap.comp_apply]
+      ring
+
+/-- The diagonal scalar of the projected metric remainder, corresponding to
+`s = zᵀ S z` in the source's null-chart inverse. -/
+def archiveJuliaNullS (S : RoleSpace → RoleSpace → ℝ) (z : RoleSpace) : ℝ :=
+  S z z
+
+/-- The positive root used by the null-chart inverse. -/
+def archiveJuliaNullD (S : RoleSpace → RoleSpace → ℝ) (q : ℝ)
+    (z : RoleSpace) : ℝ :=
+  Real.sqrt (1 + q * archiveJuliaNullS S z)
+
+/-- The scalar correction `t=s/(1+d)` in the null-chart inverse. -/
+def archiveJuliaNullT (S : RoleSpace → RoleSpace → ℝ) (q : ℝ)
+    (z : RoleSpace) : ℝ :=
+  archiveJuliaNullS S z / (1 + archiveJuliaNullD S q z)
+
+/-- Coordinate vector corresponding to a covector under the fixed Euclidean
+role basis used by the source's `z=b/(bᵀb)` normalization. -/
+def archiveJuliaNullCovectorRiesz (b : Module.Dual ℝ RoleSpace) : RoleSpace :=
+  fun r => b (archiveRoleBasis r)
+
+/-- Euclidean squared norm of a covector in the fixed role basis. -/
+def archiveJuliaNullCovectorNormSq (b : Module.Dual ℝ RoleSpace) : ℝ :=
+  ∑ r : Role, (b (archiveRoleBasis r)) ^ 2
+
+/-- The canonical normalized witness `z=b/(bᵀb)` in role coordinates. -/
+noncomputable def archiveJuliaNullEuclideanWitness
+    (b : Module.Dual ℝ RoleSpace) : RoleSpace :=
+  (archiveJuliaNullCovectorNormSq b)⁻¹ • archiveJuliaNullCovectorRiesz b
+
+theorem archiveJuliaNullCovector_coordinates (b : Module.Dual ℝ RoleSpace)
+    (v : RoleSpace) :
+    b v = ∑ r : Role, v r * b (archiveRoleBasis r) := by
+  calc
+    b v = b (∑ r : Role, (archiveRoleBasis.repr v r) • archiveRoleBasis r) := by
+      rw [archiveRoleBasis.sum_repr]
+    _ = ∑ r : Role, v r * b (archiveRoleBasis r) := by
+      simp only [map_sum, map_smul, smul_eq_mul, archiveRoleBasis,
+        Pi.basisFun_repr]
+
+theorem archiveJuliaNullCovectorNormSq_pos (b : Module.Dual ℝ RoleSpace)
+    (hb : b ≠ 0) : 0 < archiveJuliaNullCovectorNormSq b := by
+  have hcoeff : ∃ r : Role, b (archiveRoleBasis r) ≠ 0 := by
+    by_contra h
+    push Not at h
+    have hzero : b = 0 := archiveRoleBasis.ext (fun r => by simp [h r])
+    exact hb hzero
+  rcases hcoeff with ⟨r, hr⟩
+  apply Finset.sum_pos'
+  · intro s hs
+    positivity
+  · exact ⟨r, Finset.mem_univ r, sq_pos_of_ne_zero hr⟩
+
+theorem archiveJuliaNullEuclideanWitness_normalized
+    (b : Module.Dual ℝ RoleSpace) (hb : b ≠ 0) :
+    b (archiveJuliaNullEuclideanWitness b) = 1 := by
+  have hcoordinates :
+      b (archiveJuliaNullCovectorRiesz b) = archiveJuliaNullCovectorNormSq b := by
+    rw [archiveJuliaNullCovector_coordinates]
+    simp [archiveJuliaNullCovectorRiesz, archiveJuliaNullCovectorNormSq,
+      pow_two]
+  have hnorm := archiveJuliaNullCovectorNormSq_pos b hb
+  rw [archiveJuliaNullEuclideanWitness, map_smul, hcoordinates,
+    smul_eq_mul]
+  exact inv_mul_cancel₀ (ne_of_gt hnorm)
+
+/-- Exact algebraic null-chart inversion. If the projected metric remainder
+has the Lorentz-isometry form
+`S(x,y)=b(x)a(y)+a(x)b(y)+q a(x)a(y)`, then any normalized witness `b(z)=1`
+recovers the complete functional `a` by the source's Eq. (28) square-root
+and correction formula. -/
+theorem archiveJuliaNullReconstructCovector
+    (a b : Module.Dual ℝ RoleSpace)
+    (S : RoleSpace → RoleSpace → ℝ) (q : ℝ) (z : RoleSpace)
+    (hS : ∀ x y, S x y = b x * a y + a x * b y + q * a x * a y)
+    (hbz : b z = 1)
+    (hbranch : 0 < 1 + q * a z) :
+    ∀ x, a x =
+      (S x z - b x * archiveJuliaNullT S q z) /
+        archiveJuliaNullD S q z := by
+  let s := archiveJuliaNullS S z
+  let d := archiveJuliaNullD S q z
+  let t := archiveJuliaNullT S q z
+  have hs : s = 2 * a z + q * a z * a z := by
+    dsimp [s, archiveJuliaNullS]
+    rw [hS z z, hbz]
+    ring
+  have hrad : 1 + q * s = (1 + q * a z) ^ 2 := by
+    rw [hs]
+    ring
+  have hd : d = 1 + q * a z := by
+    dsimp [d, archiveJuliaNullD]
+    rw [hrad, Real.sqrt_sq_eq_abs, abs_of_pos hbranch]
+  have hden : 1 + (1 + q * a z) ≠ 0 := by
+    nlinarith
+  have ht : t = a z := by
+    change s / (1 + d) = a z
+    rw [hs, hd]
+    apply (div_eq_iff hden).2
+    ring
+  have hdpos : 0 < d := by rw [hd]; exact hbranch
+  intro x
+  have hcross : S x z = b x * a z + a x + q * a x * a z := by
+    rw [hS x z, hbz]
+    ring
+  have hnum : S x z - b x * t = a x * d := by
+    rw [hcross, ht, hd]
+    ring
+  calc
+    a x = (a x * d) / d := by field_simp [ne_of_gt hdpos]
+    _ = (S x z - b x * t) / d := by rw [hnum]
+
+/-- Apply the exact scalar inversion to the actual null block read from the
+complete raising query, under the endpoint isometry, symmetry and branch
+hypotheses. The normalized witness remains an explicit chart input. -/
+theorem archiveJuliaNullBlock_reconstructsAffineFunctional
+    (Pₓ Pᵧ : ArchiveRoleBilinear) (u z : RoleSpace)
+    (M : RoleSpace ≃ₗ[ℝ] RoleSpace) (α : Module.Dual ℝ RoleSpace)
+    (hSymm : ∀ x y, Pₓ x y = Pₓ y x)
+    (hIso : ∀ x y, Pₓ (M x) (M y) = Pᵧ x y)
+    (hbz : ((Pₓ u).comp (archiveJuliaNullBlock u M α)) z = 1)
+    (hbranch : 0 < 1 + (Pₓ u u) * α (M z)) :
+    ∀ x, α (M x) =
+      ((Pᵧ x z - Pₓ (archiveJuliaNullBlock u M α x)
+        (archiveJuliaNullBlock u M α z)) -
+        ((Pₓ u).comp (archiveJuliaNullBlock u M α)) x *
+          archiveJuliaNullT
+            (fun v w => Pᵧ v w -
+              Pₓ (archiveJuliaNullBlock u M α v)
+                (archiveJuliaNullBlock u M α w))
+            (Pₓ u u) z) /
+        archiveJuliaNullD
+          (fun v w => Pᵧ v w -
+            Pₓ (archiveJuliaNullBlock u M α v)
+              (archiveJuliaNullBlock u M α w))
+          (Pₓ u u) z := by
+  let B := archiveJuliaNullBlock u M α
+  let a : Module.Dual ℝ RoleSpace := α.comp M.toLinearMap
+  let b : Module.Dual ℝ RoleSpace := (Pₓ u).comp B
+  let q : ℝ := Pₓ u u
+  let S : RoleSpace → RoleSpace → ℝ := fun x y => Pᵧ x y - Pₓ (B x) (B y)
+  have hS : ∀ x y, S x y = b x * a y + a x * b y + q * a x * a y := by
+    intro x y
+    have h := archiveJuliaNullProjectedMetric Pₓ Pᵧ u M α hSymm hIso x y
+    simpa [S, b, a, q, B, LinearMap.comp_apply]
+      using h
+  have hnorm : b z = 1 := by simpa [b, B] using hbz
+  have hbranch' : 0 < 1 + q * a z := by
+    simpa [a, q, LinearMap.comp_apply] using hbranch
+  have hrec := archiveJuliaNullReconstructCovector a b S q z hS hnorm hbranch'
+  simpa [a, b, q, S, B, archiveJuliaNullS, archiveJuliaNullD,
+    archiveJuliaNullT, LinearMap.comp_apply]
+    using hrec
+
+theorem archiveJuliaNullBlock_readout (u : RoleSpace)
+    (M : RoleSpace ≃ₗ[ℝ] RoleSpace) (α : Module.Dual ℝ RoleSpace)
+    (hαu : α u = 1) (v : RoleSpace) :
+    archiveJuliaVacuumVectorReadout
+      (archiveExteriorContraction α
+        (archiveJuliaRaisingQuery u M
+          (archiveExteriorCreator v
+            (Pi.single fockVacuumState (1 : ℝ))))) =
+      archiveJuliaNullBlock u M α v := by
+  let vacuum : ArchiveFockState → ℝ := Pi.single fockVacuumState (1 : ℝ)
+  have hframe : archiveExteriorFrameLift M
+      (archiveExteriorCreator v vacuum) =
+      archiveExteriorCreator (M v) vacuum := by
+    rw [archiveExteriorFrameLift_creator_covariant, archiveExteriorFrameLift_vacuum]
+  have hquery : archiveJuliaRaisingQuery u M
+      (archiveExteriorCreator v vacuum) =
+      archiveExteriorCreator u (archiveExteriorCreator (M v) vacuum) := by
+    change archiveExteriorCreator u
+      (archiveExteriorFrameLift M (archiveExteriorCreator v vacuum)) = _
+    rw [hframe]
+  have hvacContract : archiveExteriorContraction α vacuum = 0 := by
+    apply archiveFockExteriorEquiv.injective
+    rw [archiveFockExteriorEquiv_contraction,
+      archiveFockExteriorEquiv_single_vacuum]
+    simp
+  rw [hquery, archiveExteriorContraction_creator,
+    archiveExteriorContraction_creator, hvacContract]
+  have hcreatorNested :
+      archiveExteriorCreator u
+        (α (M v) • vacuum - archiveExteriorCreator (M v) 0) =
+      α (M v) • archiveExteriorCreator u vacuum := by
+    change archiveExteriorCreatorLM u
+        (α (M v) • vacuum - archiveExteriorCreator (M v) 0) = _
+    rw [map_sub, map_smul]
+    simp [archiveExteriorCreatorLM, archiveExteriorCreator]
+  rw [hcreatorNested]
+  simp only [archiveJuliaVacuumVectorReadout, map_sub, map_smul,
+    archiveExteriorCreator_on_vacuum_eq_ι, vacuum]
+  rw [ExteriorAlgebra.ι_leftInverse, ExteriorAlgebra.ι_leftInverse, hαu]
+  simp [archiveJuliaNullBlock, archiveJuliaNullRankOne, LinearMap.sub_apply,
+    LinearMap.comp_apply]
 
 /-- A Jordan--Wigner creator acting on the vacuum is the corresponding
 one-particle occupation state. -/

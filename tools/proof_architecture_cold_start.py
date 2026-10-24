@@ -218,6 +218,21 @@ CASES: list[dict[str, Any]] = [
         ],
         "scope_review": "The source owner supplies the affine representation; its compiled finite-carrier application recovers both parameters from equality of complete operators. Search candidates and that algebraic injectivity do not select a physical letter or price.",
     },
+    {
+        "id": "finite-julia-null-chart-inverse",
+        "queries": [
+            "archiveJuliaNullBlock_reconstructsAffineFunctional",
+            "complete Julia raising query contraction block null inverse equation 28",
+            "canonical normalized witness z=b over b transpose b positive square-root branch",
+        ],
+        "required_refs": [
+            "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md",
+            "02_REGISTRY/research/A4D_EXACT_AF_RADIAL_COFRAME_EQUIVALENCE_NONLINEAR_SPIN2_2026_10_18.md",
+            "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+            "03_FORMALIZATION/D0/Geometry/ArchiveJuliaRaisingOperatorReadout.lean",
+        ],
+        "scope_review": "The finite-carrier inverse retains symmetric endpoint forms, their isometry, a normalized witness, and the positive branch; the canonical witness exists under the stated null and nondegeneracy hypotheses. It does not establish the consumer's physical price, admission, all-jet pullback, or GR selection.",
+    },
 ]
 
 

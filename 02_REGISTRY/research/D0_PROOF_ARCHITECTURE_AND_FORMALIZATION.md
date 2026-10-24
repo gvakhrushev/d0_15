@@ -98,7 +98,7 @@ evidence that C0 is formally covered.
 
 This work does not select a physical implementation or close GR. Keep complete Book03/Cost-Info/source admission, same-execution clock/controller/work selection, physical metric descent/frame selection, original H+J+R, positive_gr, and raw216 open under their existing owners. Preserve #334; do not duplicate or retire its science. Conditional assumptions remain in theorem signatures. Connes reconstruction remains conditional when its needed object is a supplied field.
 
-A useful cold-start reuse case is the native raising-operator inverse with a null leg: published #334 labelled-record source §§8.4-8.5, equations (26)-(31), with rational alternative §6.25 (13br1)-(13br2). Its selected source gate is satisfied at commit fe5cf335da04cac14e50407b03f98b96be17dc52, path 02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md, blob 1c8d59e5533b443d9a015dc4512cfbc160ae7e62. The concrete consumer is the exact AF radial coframe equivalence source §5.1, blob 734e21ae6bc04ff3446ad15858936d417fdd2e55. In `D0.Geometry.ArchiveJuliaRaisingOperatorReadout`, the exterior model has an exact vacuum readout, and a compiled adapter now builds its vector creator from the owned Jordan--Wigner `carCreateEnd` matrices. It proves `carCreateEnd r |0⟩` is the corresponding one-particle state, that the CAR and exterior queries have the same vacuum response, and that the CAR-query vacuum readout returns `u`; equality of complete CAR query operators therefore implies equal shifts. This supplies a concrete source-to-existing-operator application for the vacuum identity in Eq. (26), accounting for the repository's four-mode role basis and real coefficients. It does not prove equality of the two query operators on arbitrary 16-state inputs, the full Lorentz null inverse (28), its all-jet extension, coframe/metric recovery, or the full variational pullback in (31). It supplies no physical price, compiler, admission, or GR selection result; the fuller consumer remains conditional on its stated assumptions.
+A useful cold-start reuse case is the native raising-operator inverse with a null leg: published #334 labelled-record source §§8.4-8.5, equations (26)-(31), with rational alternative §6.25 (13br1)-(13br2). Its selected source gate is satisfied at commit fe5cf335da04cac14e50407b03f98b96be17dc52, path 02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md, blob 1c8d59e5533b443d9a015dc4512cfbc160ae7e62. The concrete consumer is the exact AF radial coframe equivalence source §5.1, blob 734e21ae6bc04ff3446ad15858936d417fdd2e55. At the earlier vacuum-only checkpoint, `D0.Geometry.ArchiveJuliaRaisingOperatorReadout` had an exact exterior vacuum readout and a CAR adapter for the owned Jordan--Wigner `carCreateEnd` matrices; it proved the Eq. (26) shift identity but not full-query equality or the null inverse. The 24 October continuation below now supplies complete query equality and the finite-carrier null-block inverse under its explicit endpoint-form, chart and branch assumptions. The all-jet extension, coframe/metric recovery and variational pullback (31) remain open. No physical price, compiler, admission or GR-selection result follows; the fuller consumer remains conditional on its stated assumptions.
 
 At this earlier checkpoint, the added adapter and readout corollaries passed `lake build D0.Geometry.ArchiveJuliaRaisingOperatorReadout` at Lean 4.30.0 (3,014 Lake jobs), while the full `D0.All` replay after those additions was still pending. The current integrated replay and its exact source digest are recorded in the 24 October checkpoint below.
 
@@ -1474,12 +1474,14 @@ types and trust footprint. The updated runner SHA-256 is
 `1e3724b7aee65aae644399a9769f075d5f3a302b040fd6249068458a59c52cc2`.
 
 Scope is exact: this is faithfulness of the algebraic exterior and nilpotent
-affine representations on the existing four-role, 16-state carrier. It does
-not prove that the single raising query `C†(u)ρ(M)` recovers `M` (that map has
-only the one creator leg), the full Lorentz null inverse (27)–(28), all-jet or
-coframe/metric recovery, the full variational pullback, source/price maps,
-physical admission, or GR selection. It adds no claim or assumption, does not
-freeze C0, and is not a physical-source theorem.
+affine representations on the existing four-role, 16-state carrier. That
+affine-representation result by itself does not prove that the single raising
+query `C†(u)ρ(M)` recovers `M` (that map has only the one creator leg), nor the
+Lorentz null inverse, all-jet or coframe/metric recovery, the full variational
+pullback, source/price maps, physical admission, or GR selection. The next
+checkpoint below now supplies the query's degree-one contraction block and
+conditional null inverse. No claim or assumption is added, C0 is not frozen,
+and this remains no physical-source theorem.
 
 `#print axioms` for the three new public theorems reports only
 `propext`, `Classical.choice`, and `Quot.sound`; no computational certificate,
@@ -1515,3 +1517,84 @@ module, and the cold-start suite passed 14/14. GitHub CI for code/retrieval
 head `f36ccfd34414c47da4f930167d6049e8e93e1994` passed `guards` (run
 `40122035588`) and `lean-build` (run `40122035591`). The PR remains OPEN/DRAFT.
 C0 remains unfrozen and independently unaccepted.
+
+## Finite-carrier Julia null-block inverse (24 October 2026)
+
+This continuation composes the existing complete CAR/exterior query result
+with the null-leg inverse owned by published PR #334. The source is pinned at
+commit `fe5cf335da04cac14e50407b03f98b96be17dc52`, path
+`02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md`,
+blob `1c8d59e5533b443d9a015dc4512cfbc160ae7e62`, §§8.4–8.5, equations
+(26)–(31). Its concrete consumer is §5.1 of
+`02_REGISTRY/research/A4D_EXACT_AF_RADIAL_COFRAME_EQUIVALENCE_NONLINEAR_SPIN2_2026_10_18.md`,
+blob `734e21ae6bc04ff3446ad15858936d417fdd2e55`. The consumer uses the
+recovered query geometry for the declared Julia/star-density application; the
+formalization below establishes only the algebraic map, not that consumer's
+physical price, admission or selection premises.
+
+In `D0.Geometry.ArchiveJuliaRaisingOperatorReadout`,
+`archiveExteriorContraction_creator` derives the exact CAR contraction/creator
+identity. `archiveJuliaNullBlock_readout` then applies contraction to the same
+complete query `C†(u)ρ(M)` on `C†(v)|0⟩` and recovers
+`Bv=Mv-α(Mv)u`, assuming the chart normalization `α(u)=1`. Thus the block is
+read from the actual finite query, rather than introduced as an unrelated
+geometric map. `archiveJuliaNullBlock_decomposition` records the complementary
+identity `Mv=Bv+α(Mv)u`.
+
+The bilinear-form theorem `archiveJuliaNullProjectedMetric` derives
+`S(x,y)=b(x)a(y)+a(x)b(y)+q a(x)a(y)` from symmetry of the source endpoint
+form and the endpoint isometry, where `a=α∘M`, `b(x)=Pₓ(u,Bx)`,
+`q=Pₓ(u,u)`, and `S=Pᵧ-Pₓ(B·,B·)`. The coordinate theorem
+`archiveJuliaNullReconstructCovector` uses the explicit chart data `b(z)=1`
+and branch `1+q a(z)>0`; it proves `d=sqrt(1+q S(z,z))=1+q a(z)`,
+`t=S(z,z)/(1+d)=a(z)`, and recovers every component of `a` by
+`a(x)=(S(x,z)-b(x)t)/d`. `archiveJuliaNullBlock_reconstructsAffineFunctional`
+composes this inversion with the block and endpoint-form definitions.
+
+The source's normalized witness is also constructed as
+`archiveJuliaNullEuclideanWitness b=b/(bᵀb)` in `archiveRoleBasis` coordinates;
+`archiveJuliaNullEuclideanWitness_normalized` proves `b(z)=1` when `b≠0`.
+In the null case `q=Pₓ(u,u)=0`,
+`archiveJuliaNullBlock_covector_ne_zero` obtains `b≠0` from nondegeneracy of
+`Pₓ`, `u≠0`, and invertibility of `M`. The witness existence is therefore
+proved for that stated null case, not silently supplied by the reconstruction
+theorem.
+
+The carrier-specific scope is the existing four-role real vector space and
+16-state Fock query. Endpoint symmetry, endpoint isometry, nondegeneracy,
+nonzero/null data, chart normalization, and the positive branch remain explicit
+hypotheses in their respective lemmas. The proof does not instantiate the
+source's concrete `Jx,Jy` matrices and proper-Lorentz constraint together as a
+single theorem, formalize the non-null formula (27), or prove all-jet extension,
+coframe/metric recovery, the variational pullback, source/price maps, physical
+admission, or GR selection. This is not a physical-source theorem and makes no
+C0 acceptance or claim-status change.
+
+Validation: with Lean 4.30.0, the changed Julia module and the current `D0.All`
+import root compiled from this worktree into `/private/tmp/d0-pr402-lean-overlay`
+using the preserved pinned Lean/Mathlib package cache. This is a targeted
+module and import-root overlay compile, not a fresh Lake build. The direct
+generated declaration query imported that compiled `D0.All`, found all nine
+new public declarations, and reports the standard axiom set
+`propext`, `Classical.choice`, `Quot.sound` for each; it adds no computational
+certificate axiom. The project Lean source digest is
+`32ce3a83ad5c7228c7862d7105798036b09a23b3c96b7713d1a16a5ab3afbf96`. The
+generated collector script SHA-256 is
+`9085600f24ad463e88d4df76d23c5cf8ecd403a5b6e6e8cdfb36168cdaf3a397`; the
+updated Julia module SHA-256 is
+`ffa6780f5d646a9e0ed71366191316af76446d5f1e9a38416beee22f685e8135`.
+The exact declaration ranges are: contraction/creator identity 324–335;
+block decomposition and null covector nonzero 355–383; projected metric
+identity 385–426; role-coordinate evaluation 420–431; Euclidean witness
+positivity/normalization 467–491; covector inverse 493–537; block-level
+affine-functional inverse 539–579; and full-query block readout 581–621.
+The proof-architecture unit suite passed 35/35 and claim-map coverage passed
+25/25 under the bundled Python runtime. The full cold-start search found all
+15/15 cases; the new Julia-null case found all four required refs as direct
+content, and its source-change regression passed (16 total benchmark checks).
+The updated cold-start runner SHA-256 is
+`9b92abb0342a9fbbfdb239ef0375271eec4e57c795924072934c490959aa6487`.
+`formalization_debt_audit.py --check` remains at 3/3 baseline findings, and
+`generate_lean_views.py --check` reports `stale=0`. The code/retrieval head and
+GitHub CI are recorded after the checkpoint is pushed. C0 remains unfrozen and
+independently unaccepted.
