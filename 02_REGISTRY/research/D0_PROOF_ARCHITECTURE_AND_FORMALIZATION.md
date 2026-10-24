@@ -1187,3 +1187,68 @@ formatted lines; the leading direct-content candidate is
 `tools/test_proof_architecture.py` suite passed 35/35, including a new bound
 and source-pin preservation regression. This is an output-size correction,
 not semantic acceptance of the text candidate or its scientific claim.
+
+## Conditional cubical weighted Hodge-Dirac application (24 October 2026)
+
+The finite weighted-adjoint API now includes the symmetric bilinear-pairing
+identities, the equivalent right-adjoint identity, nilpotency transfer to the
+adjoint, and degree support for its lowering action. For a finite coordinate
+space and any caller-supplied pointwise-nonzero diagonal profile, the generic
+operator `A + A†_w` is self-adjoint for that bilinear pairing. When `A² = 0`,
+its square is the anticommutator `A A†_w + A†_w A`; when `A` raises the supplied
+grading by one, this square preserves each grade. These are algebraic results
+for a nondegenerate pairing and do not assume positive weights.
+
+The cubical module now exposes the normalized registered coboundary as a
+linear map, retaining its existing nilpotency and degree-raising proofs. The
+Hodge consumer constructs `d + d†_w` from that coboundary itself, and the
+compiled application `D0.Geometry.cubicalWeightedHodgeDirac_application`
+bundles bilinear self-adjointness, the Hodge anticommutator identity, and
+form-degree preservation of the square for every refinement and every supplied
+nonzero profile. This closes the earlier gap where the weighted-adjoint
+composition law was applied only to the already-composed unweighted CAR
+operator. It still does not derive a positive, canonical, or geometric weight,
+a standard-Hilbert self-adjoint representative, or physical Hodge selection.
+
+The existing claim row
+`D0-ARCHIVE-WEIGHTED-HODGE-DIRAC-001` now lists both
+`archive_weighted_hodge_dirac_owner` and
+`cubicalWeightedHodgeDirac_application` as theorem-name locators. Its existing
+`LEAN_PROVED` and `CORE-FORMALIZED` fields are unchanged; the row's scope note
+states that these locator strings are not independent semantic acceptance of
+the stronger canonical or physical properties. `generate_lean_views.py`
+regenerated `TheoremLedger/ClaimMap.lean`; only this row's theorem-name string
+changed. No claim or assumption ID was added, and C0 remains unfrozen and
+independently unaccepted.
+
+The 82-declaration module inventory is
+`sources/d0_proof_architecture_formalization_2026-10-24/weighted_cubical_hodge_module_declarations_current.json`
+(SHA-256 `7804f70e072b6fbbef10ee12b876a3a47f471a456a303c9ed3c7a85d8fe39ae5`).
+It was collected through public import `D0.All`, at source snapshot
+`91dd15ac621c7241dcc0255184569c7361eb1002` with `worktree_dirty=true`; the
+normalized Lean source digest is
+`8a5fbd369001be5d17860b56f141e6a6994e8b7c44e1a6d0e8012b69f330314f`, and the
+collector SHA-256 is
+`48f6a0da41a6c15222a97463851f43b3d7db651e3ac42868031574bc52e09f38`. The
+exact claim-reuse view is
+`sources/d0_proof_architecture_formalization_2026-10-24/weighted_cubical_hodge_claim_reuse_current.json`
+(SHA-256 `72372e889bccb5256319573874cc590db3b31e9f7562a7864c0c14908127a6fd`);
+both claim locators resolve to elaborated declarations through `D0.All`, and
+the application proof dependencies include the generic self-adjointness,
+square, and grading results together with the registered cubical nilpotency
+and degree-raising results. The application inherits `Classical.choice`,
+`Quot.sound`, `propext`, and the existing CAR `native_decide` results for
+creation degree raising and the creation anticommutator; no `sorryAx` is
+reported.
+
+Validation: the three edited Lean modules compile with Lean 4.30.0, and a
+temporary OLean overlay compiled all 21 PR-changed Lean modules, six
+cache-missing dependencies, and current `D0.All` against the preserved local
+Mathlib cache. This validates the current-source integration but is not a
+fresh Lake build: unchanged imports reuse their cached OLean files, so the
+clean CI `D0.All` build remains the publication gate. The generator check
+(`python3 tools/generate_lean_views.py --check`), ClaimMap coverage under
+Python 3.12, the debt audit (`python3 tools/formalization_debt_audit.py --check`;
+3 findings, baseline 3), and `git -c core.whitespace=cr-at-eol diff --check`
+pass. The CRLF-aware setting matches the committed generated ClaimMap line
+endings. No scientific owner or release status was changed.

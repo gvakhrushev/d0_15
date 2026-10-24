@@ -141,4 +141,221 @@ theorem finiteWeightedAdjoint_comp (w : ι → K) (hw : ∀ i, w i ≠ 0)
 
 end
 
+section Pairing
+
+variable {ι K : Type*} [Fintype ι] [Field K]
+
+/-- The diagonal bilinear pairing is symmetric, independently of the signs of
+its weights. -/
+theorem finiteWeightedPairing_symm (w : ι → K) (x y : ι → K) :
+    finiteWeightedPairing w x y = finiteWeightedPairing w y x := by
+  unfold finiteWeightedPairing
+  apply Finset.sum_congr rfl
+  intro i hi
+  ring
+
+/-- Additivity of the diagonal pairing in its left argument. -/
+theorem finiteWeightedPairing_add_left (w : ι → K) (x y z : ι → K) :
+    finiteWeightedPairing w (x + y) z =
+      finiteWeightedPairing w x z + finiteWeightedPairing w y z := by
+  simp only [finiteWeightedPairing, Pi.add_apply]
+  calc
+    (∑ i, w i * (x i + y i) * z i) =
+        ∑ i, (w i * x i * z i + w i * y i * z i) := by
+          apply Finset.sum_congr rfl
+          intro i hi
+          ring
+    _ = (∑ i, w i * x i * z i) + ∑ i, w i * y i * z i :=
+      Finset.sum_add_distrib
+
+/-- Additivity of the diagonal pairing in its right argument. -/
+theorem finiteWeightedPairing_add_right (w : ι → K) (x y z : ι → K) :
+    finiteWeightedPairing w x (y + z) =
+      finiteWeightedPairing w x y + finiteWeightedPairing w x z := by
+  simp only [finiteWeightedPairing, Pi.add_apply]
+  calc
+    (∑ i, w i * x i * (y i + z i)) =
+        ∑ i, (w i * x i * y i + w i * x i * z i) := by
+          apply Finset.sum_congr rfl
+          intro i hi
+          ring
+    _ = (∑ i, w i * x i * y i) + ∑ i, w i * x i * z i :=
+      Finset.sum_add_distrib
+
+end Pairing
+
+section
+
+variable {ι K : Type*} [Fintype ι] [DecidableEq ι] [Field K]
+
+/-- The adjoint identity in its equivalent right-operator form. -/
+theorem finiteWeightedPairing_adjoint_right (w : ι → K) (hw : ∀ i, w i ≠ 0)
+    (A : (ι → K) →ₗ[K] (ι → K)) (x y : ι → K) :
+    finiteWeightedPairing w (finiteWeightedAdjoint w A x) y =
+      finiteWeightedPairing w x (A y) := by
+  calc
+    finiteWeightedPairing w (finiteWeightedAdjoint w A x) y =
+        finiteWeightedPairing w y (finiteWeightedAdjoint w A x) :=
+      finiteWeightedPairing_symm w _ _
+    _ = finiteWeightedPairing w (A y) x :=
+      (finiteWeightedPairing_adjoint w hw A y x).symm
+    _ = finiteWeightedPairing w x (A y) := finiteWeightedPairing_symm w _ _
+
+/-- The adjoint of the zero operator is zero. -/
+theorem finiteWeightedAdjoint_zero (w : ι → K) :
+    finiteWeightedAdjoint w (0 : (ι → K) →ₗ[K] (ι → K)) = 0 := by
+  ext x i
+  simp [finiteWeightedAdjoint]
+
+/-- Nilpotency transfers to the weighted adjoint by reversing composition. -/
+theorem finiteWeightedAdjoint_comp_self_eq_zero (w : ι → K)
+    (hw : ∀ i, w i ≠ 0) (A : (ι → K) →ₗ[K] (ι → K))
+    (hA : A.comp A = 0) :
+    (finiteWeightedAdjoint w A).comp (finiteWeightedAdjoint w A) = 0 := by
+  calc
+    (finiteWeightedAdjoint w A).comp (finiteWeightedAdjoint w A) =
+        finiteWeightedAdjoint w (A.comp A) :=
+      (finiteWeightedAdjoint_comp w hw A A).symm
+    _ = finiteWeightedAdjoint w 0 := by rw [hA]
+    _ = 0 := finiteWeightedAdjoint_zero w
+
+/-- A function is supported in one grade when all coordinates of other grades
+vanish. -/
+def finiteDegreeSupported (degree : ι → ℕ) (k : ℕ) (x : ι → K) : Prop :=
+  ∀ i, degree i ≠ k → x i = 0
+
+/-- The weighted adjoint of a degree-raising operator lowers degree. The
+conclusion is stated without subtraction: its value at coordinate `i` can be
+nonzero only when `degree i + 1 = k`. -/
+theorem finiteWeightedAdjoint_degree_lower (w : ι → K) (hw : ∀ i, w i ≠ 0)
+    (A : (ι → K) →ₗ[K] (ι → K)) (degree : ι → ℕ)
+    (hA : ∀ k x, finiteDegreeSupported degree k x →
+      finiteDegreeSupported degree (k + 1) (A x))
+    (k : ℕ) (x : ι → K) (hx : finiteDegreeSupported degree k x)
+    (i : ι) (hik : degree i + 1 ≠ k) :
+    finiteWeightedAdjoint w A x i = 0 := by
+  have hei : finiteDegreeSupported degree (degree i) (Pi.single i (1 : K)) := by
+    intro j hj
+    by_cases hji : j = i
+    · subst j
+      exact (hj rfl).elim
+    · simp [Pi.single, hji]
+  have hAei := hA (degree i) (Pi.single i (1 : K)) hei
+  have hleft :
+      finiteWeightedPairing w (A (Pi.single i (1 : K))) x = 0 := by
+    unfold finiteWeightedPairing
+    apply Finset.sum_eq_zero
+    intro j hj
+    by_cases hdeg : degree j = degree i + 1
+    · have hjk : degree j ≠ k := by
+        intro heq
+        exact hik (hdeg.symm.trans heq)
+      simp [hx j hjk]
+    · simp [hAei j hdeg]
+  have hpair := finiteWeightedPairing_adjoint w hw A (Pi.single i (1 : K)) x
+  rw [finiteWeightedPairing_single_left] at hpair
+  rw [hleft] at hpair
+  have hzero : w i * finiteWeightedAdjoint w A x i = 0 := hpair.symm
+  exact (mul_eq_zero.mp hzero).resolve_left (hw i)
+
+/-- The finite weighted Hodge-Dirac symmetrization `A + A†_w`. -/
+noncomputable def finiteWeightedHodgeDirac (w : ι → K)
+    (A : (ι → K) →ₗ[K] (ι → K)) : (ι → K) →ₗ[K] (ι → K) :=
+  A + finiteWeightedAdjoint w A
+
+/-- `A + A†_w` is self-adjoint for the supplied symmetric diagonal pairing
+whenever every weight is nonzero. -/
+theorem finiteWeightedHodgeDirac_pairing_self_adjoint
+    (w : ι → K) (hw : ∀ i, w i ≠ 0) (A : (ι → K) →ₗ[K] (ι → K))
+    (x y : ι → K) :
+    finiteWeightedPairing w (finiteWeightedHodgeDirac w A x) y =
+      finiteWeightedPairing w x (finiteWeightedHodgeDirac w A y) := by
+  unfold finiteWeightedHodgeDirac
+  calc
+    finiteWeightedPairing w (A x + finiteWeightedAdjoint w A x) y =
+        finiteWeightedPairing w (A x) y +
+          finiteWeightedPairing w (finiteWeightedAdjoint w A x) y := by
+            rw [finiteWeightedPairing_add_left]
+    _ = finiteWeightedPairing w x (finiteWeightedAdjoint w A y) +
+          finiteWeightedPairing w x (A y) := by
+            rw [finiteWeightedPairing_adjoint w hw A x y,
+              finiteWeightedPairing_adjoint_right w hw A x y]
+    _ = finiteWeightedPairing w x (A y + finiteWeightedAdjoint w A y) := by
+            rw [finiteWeightedPairing_add_right]
+            ring
+
+/-- If `A² = 0`, then the square of `A + A†_w` is the Hodge
+anticommutator `A A†_w + A†_w A`. -/
+theorem finiteWeightedHodgeDirac_square
+    (w : ι → K) (hw : ∀ i, w i ≠ 0) (A : (ι → K) →ₗ[K] (ι → K))
+    (hA : A.comp A = 0) :
+    (finiteWeightedHodgeDirac w A).comp (finiteWeightedHodgeDirac w A) =
+      A.comp (finiteWeightedAdjoint w A) +
+        (finiteWeightedAdjoint w A).comp A := by
+  have hAdj := finiteWeightedAdjoint_comp_self_eq_zero w hw A hA
+  apply LinearMap.ext
+  intro x
+  change
+    A (A x + finiteWeightedAdjoint w A x) +
+        finiteWeightedAdjoint w A (A x + finiteWeightedAdjoint w A x) =
+      A (finiteWeightedAdjoint w A x) +
+        finiteWeightedAdjoint w A (A x)
+  rw [map_add, map_add]
+  have hA0 : A (A x) = 0 := by
+    have h := congrArg (fun f : (ι → K) →ₗ[K] (ι → K) => f x) hA
+    simpa [LinearMap.comp_apply] using h
+  have hAdj0 : finiteWeightedAdjoint w A (finiteWeightedAdjoint w A x) = 0 := by
+    have h := congrArg (fun f : (ι → K) →ₗ[K] (ι → K) => f x) hAdj
+    simpa [LinearMap.comp_apply] using h
+  rw [hA0, hAdj0]
+  ext i
+  abel
+
+/-- The Hodge square preserves every finite grading when `A` raises degree by
+one and is nilpotent of order two. No positivity of the diagonal weights is
+needed; only nondegeneracy is used to define the adjoint. -/
+theorem finiteWeightedHodgeDirac_square_preserves_degree
+    (w : ι → K) (hw : ∀ i, w i ≠ 0) (A : (ι → K) →ₗ[K] (ι → K))
+    (degree : ι → ℕ)
+    (hA : ∀ k x, finiteDegreeSupported degree k x →
+      finiteDegreeSupported degree (k + 1) (A x))
+    (hA2 : A.comp A = 0) (k : ℕ) (x : ι → K)
+    (hx : finiteDegreeSupported degree k x) :
+    finiteDegreeSupported degree k
+      (finiteWeightedHodgeDirac w A (finiteWeightedHodgeDirac w A x)) := by
+  let adj := finiteWeightedAdjoint w A
+  have hadjLower (q : ℕ) (y : ι → K)
+      (hy : finiteDegreeSupported degree q y) :
+      finiteDegreeSupported degree (q - 1) (adj y) := by
+    intro i hi
+    apply finiteWeightedAdjoint_degree_lower w hw A degree hA q y hy i
+    omega
+  have hadjZero (y : ι → K) (hy : finiteDegreeSupported degree 0 y) :
+      adj y = 0 := by
+    funext i
+    apply finiteWeightedAdjoint_degree_lower w hw A degree hA 0 y hy i
+    omega
+  have hAadj : finiteDegreeSupported degree k (A (adj x)) := by
+    cases k with
+    | zero => simp [finiteDegreeSupported, hadjZero x hx]
+    | succ k => exact hA k (adj x) (hadjLower (k + 1) x hx)
+  have hadjA : finiteDegreeSupported degree k (adj (A x)) :=
+    hadjLower (k + 1) (A x) (hA k x hx)
+  have hcross : finiteDegreeSupported degree k (A (adj x) + adj (A x)) := by
+    intro i hi
+    simp only [Pi.add_apply]
+    rw [hAadj i hi, hadjA i hi]
+    simp
+  have hsquare := finiteWeightedHodgeDirac_square w hw A hA2
+  have hvalue :
+      finiteWeightedHodgeDirac w A (finiteWeightedHodgeDirac w A x) =
+        A (adj x) + adj (A x) := by
+    have h := congrArg (fun f : (ι → K) →ₗ[K] (ι → K) => f x) hsquare
+    simpa [adj, finiteWeightedHodgeDirac, LinearMap.comp_apply,
+      LinearMap.add_apply] using h
+  rw [hvalue]
+  exact hcross
+
+end
+
 end D0.Algebra

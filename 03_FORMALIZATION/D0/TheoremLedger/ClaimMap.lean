@@ -2009,7 +2009,7 @@ def claimMap : List ClaimMapEntry :=
       theoremName := "archive_naive_weighted_degree_leakage_nogo_owner",
       leanStatus := "LEAN_PROVED", releaseStatus := "NO-GO", status := ClaimStatus.leanNoGoProved },
     { claimId := "D0-ARCHIVE-WEIGHTED-HODGE-DIRAC-001", moduleName := "D0.Geometry.ArchiveWeightedHodgeDirac",
-      theoremName := "archive_weighted_hodge_dirac_owner",
+      theoremName := "archive_weighted_hodge_dirac_owner;cubicalWeightedHodgeDirac_application",
       leanStatus := "LEAN_PROVED", releaseStatus := "CORE-FORMALIZED", status := ClaimStatus.leanCoreProved },
     { claimId := "D0-REFINEMENT-EXTRINSIC-CURVATURE-001", moduleName := "D0.Geometry.ArchiveExtrinsicRGCurvature",
       theoremName := "rg_curvature_identity;rg_curvature_as_gram",

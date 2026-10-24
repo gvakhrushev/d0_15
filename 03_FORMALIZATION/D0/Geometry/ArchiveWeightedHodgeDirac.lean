@@ -17,16 +17,19 @@ open D0
 Owner: `D0-ARCHIVE-WEIGHTED-HODGE-DIRAC-001`.
 
 The registered weighted-Hodge claim is broader than the current implementation:
-this file does not construct a positive weight operator `W`, a weighted adjoint,
-or a self-adjoint representative. Its legacy owner theorem contains a Boolean
+this file does not construct a positive weight operator `W` or a standard-
+Hilbert self-adjoint representative. Its legacy owner theorem contains a Boolean
 degree-preservation flag. The concrete operator result added here is only for
 the existing unweighted `hodgeCarDirac`: its square preserves every
 homogeneous Fock degree by the already-owned fibrewise Laplacian identity.
 This does not close the weighted claim or select a physical Hodge metric.
 The file also supplies the finite diagonal-weight adjoint formula and applies
-it to the existing `hodgeCarDiracₗ` for every supplied nonzero profile. This
-remains a conditional algebraic application, not a derivation of geometric
-Hodge weights.
+it to the existing `hodgeCarDiracₗ` for every supplied nonzero profile. The
+conditional `cubicalWeightedHodgeDirac_application` additionally constructs
+`d + d†_w` from the registered cubical coboundary and proves bilinear
+self-adjointness, the Hodge anticommutator, and degree preservation of its
+square. The profile may be signed; neither its positivity nor its geometric
+origin is derived here.
 -/
 
 /-- The number of form degrees, derived from the four role directions. -/
@@ -84,11 +87,111 @@ theorem hodgeCarDirac_square_diagonal_weight_adjoint (N : ℕ)
     (D0.Algebra.finiteWeightedAdjoint_comp w hw
       (hodgeCarDiracₗ N) (hodgeCarDiracₗ N))
 
+/-- The weighted codifferential of the registered cubical coboundary. The
+profile is supplied by the caller and is required to be nonzero pointwise;
+this definition does not derive a positive or geometric Hodge weight. -/
+noncomputable def cubicalCodifferentialDiagonalAdjoint (N : ℕ)
+    (w : ArchiveCochainBasis N → ℝ) :
+    ArchiveCochain N →ₗ[ℝ] ArchiveCochain N :=
+  D0.Algebra.finiteWeightedAdjoint w (cubicalCoboundaryₗ N)
+
+/-- The finite weighted Hodge-Dirac operator `d + d†_w` built from the actual
+registered unit-step cubical coboundary and its diagonal weighted adjoint. -/
+noncomputable def cubicalWeightedHodgeDiracₗ (N : ℕ)
+    (w : ArchiveCochainBasis N → ℝ) :
+    ArchiveCochain N →ₗ[ℝ] ArchiveCochain N :=
+  D0.Algebra.finiteWeightedHodgeDirac w (cubicalCoboundaryₗ N)
+
+/-- Pointwise form of `cubicalWeightedHodgeDiracₗ`. -/
+noncomputable def cubicalWeightedHodgeDirac (N : ℕ)
+    (w : ArchiveCochainBasis N → ℝ) (ψ : ArchiveCochain N) : ArchiveCochain N :=
+  cubicalWeightedHodgeDiracₗ N w ψ
+
+/-- The constructed weighted cubical Hodge-Dirac is self-adjoint for its
+supplied diagonal bilinear pairing. Nonzero weights are the only required
+algebraic condition. -/
+theorem cubicalWeightedHodgeDirac_pairing_self_adjoint (N : ℕ)
+    (w : ArchiveCochainBasis N → ℝ) (hw : ∀ p, w p ≠ 0)
+    (ψ φ : ArchiveCochain N) :
+    D0.Algebra.finiteWeightedPairing w (cubicalWeightedHodgeDirac N w ψ) φ =
+      D0.Algebra.finiteWeightedPairing w ψ (cubicalWeightedHodgeDirac N w φ) := by
+  simpa [cubicalWeightedHodgeDirac, cubicalWeightedHodgeDiracₗ] using
+    (D0.Algebra.finiteWeightedHodgeDirac_pairing_self_adjoint w hw
+      (cubicalCoboundaryₗ N) ψ φ)
+
+/-- Its square is the anticommutator `d d†_w + d†_w d`, using the actual
+nilpotency theorem for the normalized cubical coboundary. -/
+theorem cubicalWeightedHodgeDirac_square (N : ℕ)
+    (w : ArchiveCochainBasis N → ℝ) (hw : ∀ p, w p ≠ 0) :
+    (cubicalWeightedHodgeDiracₗ N w).comp (cubicalWeightedHodgeDiracₗ N w) =
+      (cubicalCoboundaryₗ N).comp (cubicalCodifferentialDiagonalAdjoint N w) +
+        (cubicalCodifferentialDiagonalAdjoint N w).comp (cubicalCoboundaryₗ N) := by
+  simpa [cubicalWeightedHodgeDiracₗ, cubicalCodifferentialDiagonalAdjoint] using
+    (D0.Algebra.finiteWeightedHodgeDirac_square w hw
+      (cubicalCoboundaryₗ N) (cubicalCoboundaryₗ_comp_self_eq_zero N))
+
+/-- The weighted Hodge square preserves the existing CAR form-degree grading
+for every supplied nonzero diagonal profile. -/
+theorem cubicalWeightedHodgeDirac_square_degree_preserving (N k : ℕ)
+    (w : ArchiveCochainBasis N → ℝ) (hw : ∀ p, w p ≠ 0)
+    (ψ : ArchiveCochain N) (hψ : HomogeneousCochain N k ψ) :
+    HomogeneousCochain N k
+      (cubicalWeightedHodgeDirac N w (cubicalWeightedHodgeDirac N w ψ)) := by
+  have hRaise : ∀ j x,
+      D0.Algebra.finiteDegreeSupported (fun p : ArchiveCochainBasis N => fockDegree p.2)
+        j x →
+      D0.Algebra.finiteDegreeSupported (fun p : ArchiveCochainBasis N => fockDegree p.2)
+        (j + 1) (cubicalCoboundaryₗ N x) := by
+    intro j x hx
+    have hHomogeneous : HomogeneousCochain N j x := by
+      intro site S hS
+      exact hx (site, S) hS
+    have hRaised := cubicalCoboundaryₗ_degree_raise N j x hHomogeneous
+    intro p hp
+    exact hRaised p.1 p.2 hp
+  have hψ' :
+      D0.Algebra.finiteDegreeSupported (fun p : ArchiveCochainBasis N => fockDegree p.2)
+        k ψ := by
+    intro p hp
+    exact hψ p.1 p.2 hp
+  have hPreserved := D0.Algebra.finiteWeightedHodgeDirac_square_preserves_degree
+    w hw (cubicalCoboundaryₗ N) (fun p : ArchiveCochainBasis N => fockDegree p.2)
+    hRaise (cubicalCoboundaryₗ_comp_self_eq_zero N) k ψ hψ'
+  intro site S hS
+  exact hPreserved (site, S) hS
+
+/-- A compiled application of the generic finite weighted-Hodge API to the
+repository's actual nilpotent, degree-raising cubical differential. These
+conditional algebraic conclusions do not establish positive metric weights,
+their geometric origin, or physical Hodge selection. -/
+theorem cubicalWeightedHodgeDirac_application :
+    (∀ N (w : ArchiveCochainBasis N → ℝ), (∀ p, w p ≠ 0) →
+      ∀ ψ φ, D0.Algebra.finiteWeightedPairing w
+        (cubicalWeightedHodgeDirac N w ψ) φ =
+          D0.Algebra.finiteWeightedPairing w ψ (cubicalWeightedHodgeDirac N w φ)) ∧
+    (∀ N (w : ArchiveCochainBasis N → ℝ), (∀ p, w p ≠ 0) →
+      (cubicalWeightedHodgeDiracₗ N w).comp (cubicalWeightedHodgeDiracₗ N w) =
+        (cubicalCoboundaryₗ N).comp (cubicalCodifferentialDiagonalAdjoint N w) +
+          (cubicalCodifferentialDiagonalAdjoint N w).comp (cubicalCoboundaryₗ N)) ∧
+    (∀ N k (w : ArchiveCochainBasis N → ℝ) (ψ : ArchiveCochain N),
+      (∀ p, w p ≠ 0) → HomogeneousCochain N k ψ →
+        HomogeneousCochain N k
+          (cubicalWeightedHodgeDirac N w (cubicalWeightedHodgeDirac N w ψ))) := by
+  refine ⟨?_, ?_, ?_⟩
+  · intro N w hw ψ φ
+    exact cubicalWeightedHodgeDirac_pairing_self_adjoint N w hw ψ φ
+  · intro N w hw
+    exact cubicalWeightedHodgeDirac_square N w hw
+  · intro N k w ψ hw hψ
+    exact cubicalWeightedHodgeDirac_square_degree_preserving N k w hw ψ hψ
+
 /-- **D0-ARCHIVE-WEIGHTED-HODGE-DIRAC-001 (Owner locator)**:
 The currently compiled package records finite counts and a legacy Boolean
 flag, and includes the concrete unweighted Hodge-square degree-preservation
-application above. It does not construct the weighted operator claimed by the
-registry row. -/
+application above. The conditional `cubicalWeightedHodgeDirac_application`
+constructs `d + d†_w` from the registered cubical differential for an
+arbitrary caller-supplied nonzero diagonal profile; positive, canonical, and
+geometrically derived weights remain outside this formalization. -/
 theorem archive_weighted_hodge_dirac_owner :
     (formDegreeCount4D = 5) ∧
     (Fintype.card CubicalCellType = 16) ∧

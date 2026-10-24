@@ -117,6 +117,30 @@ theorem cubicalCoboundary_smul (N : ℕ) (c : ℝ) (ψ : ArchiveCochain N) :
       rw [mul_comm]
     _ = _ := by rw [smul_smul]
 
+/-- Additivity of the normalized cubical coboundary. -/
+theorem cubicalCoboundary_add (N : ℕ) (ψ φ : ArchiveCochain N) :
+    cubicalCoboundary N (ψ + φ) = cubicalCoboundary N ψ + cubicalCoboundary N φ := by
+  change (forwardDifferenceScale N)⁻¹ • dForward N (ψ + φ) =
+    (forwardDifferenceScale N)⁻¹ • dForward N ψ +
+      (forwardDifferenceScale N)⁻¹ • dForward N φ
+  rw [dForward_add]
+  exact smul_add _ _ _
+
+/-- The unit-step cubical coboundary as a reusable linear operator. -/
+noncomputable def cubicalCoboundaryₗ (N : ℕ) :
+    ArchiveCochain N →ₗ[ℝ] ArchiveCochain N where
+  toFun := cubicalCoboundary N
+  map_add' := cubicalCoboundary_add N
+  map_smul' := cubicalCoboundary_smul N
+
+/-- Nilpotency of the cubical coboundary as an equality of linear operators. -/
+theorem cubicalCoboundaryₗ_comp_self_eq_zero (N : ℕ) :
+    (cubicalCoboundaryₗ N).comp (cubicalCoboundaryₗ N) = 0 := by
+  apply LinearMap.ext
+  intro ψ
+  change cubicalCoboundary N (cubicalCoboundary N ψ) = 0
+  exact d_squared_eq_zero N ψ
+
 /-- A constant site profile scales the coboundary by one scalar, so its square
 still vanishes at every refinement. -/
 theorem weightedCubicalDifferential_constant_square_zero (N : ℕ) (a : ℝ)
@@ -141,6 +165,12 @@ theorem cubicalCoboundary_degree_raise (N k : ℕ) (ψ : ArchiveCochain N)
     HomogeneousCochain N (k + 1) (cubicalCoboundary N ψ) := by
   exact homogeneousCochain_smul N (k + 1) (forwardDifferenceScale N)⁻¹
     (dForward N ψ) (dForward_degree_raise N k ψ hψ)
+
+/-- The linear-map wrapper retains the registered degree-raising property. -/
+theorem cubicalCoboundaryₗ_degree_raise (N k : ℕ) (ψ : ArchiveCochain N)
+    (hψ : HomogeneousCochain N k ψ) :
+    HomogeneousCochain N (k + 1) (cubicalCoboundaryₗ N ψ) := by
+  exact cubicalCoboundary_degree_raise N k ψ hψ
 
 /-- Multiplication by a site-dependent scalar preserves Fock-degree support,
 so the weighted coboundary also raises degree by one for every profile. -/
