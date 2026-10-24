@@ -7655,7 +7655,8 @@ Smallest decisive checks, inline without standalone certificate:
 Both checks exit0 with empty stderr. They test this new composition,
 not a new all42 root, continuum theorem or physical admission claim.
 
-Final section7k, heading through before8 INCLUDING trailing LF:
+Prior published section7k, before the marked-reporter composition below,
+heading through before8 INCLUDING trailing LF:
 11664 UTF-8 bytes; SHA256
 89c853e39a4be6afdf03f8136aa410e9356203bd10f9d8fb5a943b9bc7b43604.
 All three read-only reviewers accepted the mathematical chain and price
@@ -7711,14 +7712,45 @@ supplies the Lorentz readout without selecting a RIGHT column. Neither
 that lift nor its source is silently identified with the literal null
 material preparation of this residual owner.
 
-Use the actual whole original price and admitted field/configuration
-map as the next parent application. Section7d's residual survives the
-new operator inverse; internal-state stationarity on a state-independent
-cut cannot cancel a field derivative of that same bare master. The
-scalar reporter's separately stationary price remains a different
-functional. No new theorem, root, certificate, task or physical GR claim
-results from this operational-book checkpoint.
+The next Books00-01 application now composes the SAME stationary
+reporter with its own marked operator, instead of requiring geometry
+from its scalar return. Section7k(111)-(115) extracts the already paid
+SIGN-preparation prefix from L_hist using (102), reads its actual means
+t_j, and applies the existing inverse-coframe/Cayley/material decoder.
+Thus R_clock(L_hist(Y))=Y on section7i's exact finite operator chart,
+with D R_clock o D L_hist=I on all deduplicated16+24+2 field slots.
+The fixed-scene differential bound is 52 ell K_h in the declared field
+norm, retaining the real preparation length and inverse-chart norm.
+This is a positive geometry/source composition; no extra gate, readout
+measurement, spatial operator or price term is added to the programme.
 
-Universal_parent_map independently ACCEPTs the final11664-byte pin.
-Targeted work/protocol validation and diff whitespace check PASS. No
-unchanged full128-wide research suite or Lean rebuild was replayed.
+The same complete price remains H_ref+j_K(gamma_0 q_h), with its exact
+primary all42 zero and the already solved semantic encoder-fibre,
+sharp pure-key and generated-state equations. Its complete thermal
+complement, oldRIGHT, bank and true clock remain. The current finite
+G/CX/X realization retains forward/Bernstein and source-secant errors;
+an exact smooth word-selector or exact finite native root is not inferred.
+Equation(110)'s scalar-return blindness does not imply blindness of this
+whole marked operator. The original Julia128 price is still different:
+its section7d residual survives (104)-(109) and is not cancelled by
+this reporter's price.
+
+The remaining parent premise is the native admission of this actual
+joint task/cut/control image and compatible refinement, with any genuine
+independent stack sources. Consume Book03's separately stated finite
+stationarity law directly; uniqueness of the microscopic schedule,
+an unrestricted price minimum and equality of microscopic Connes
+triples are not additional premises for this TheoryTransfer application.
+The new composition keeps the exact ideal-operator versus finite-word
+boundary and makes no physical GR/raw216 closure claim.
+
+The prior11664-byte source pin was independently reviewed. Three
+read-only reviewers checked the new marked-reporter composition against
+the actual preparation, diagnostic and complete-price owners. Their two
+clarifications explicitly define K_h's norm and retain the SAME moving
+transported Book cut in (115); neither changes the price or proof.
+Final section7k, heading through before8 INCLUDING trailing LF:
+16984 UTF-8 bytes; SHA256
+da112c8fe78f921f4c32c8d86bc5b6569964652b0a1dd377be4f25ce900f0fec.
+Only affected work/protocol and whitespace validation is replayed;
+no unchanged full128 research suite or Lean rebuild is required.

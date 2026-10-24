@@ -2484,13 +2484,116 @@ further short. No inverse of a singular archive block is smuggled in.
 This does not prohibit finite-frequency response, the rich boundary
 (104), or native geometry on a different proved active quotient.
 
-**Parent application.** The rich original same-operator geometry map is
-now explicit, including all recorded columns and the null-safe inverse;
-the scalar prepared-return route is insufficient to supply it. Next use
-that rich native boundary (or a proved physically equivalent future-test
-map), the actual Book cut and the full SAME price together. Their native
-admission, spatial refinement/metric interpretation and complete source
-comparison remain the physical application. No new task, physical action,
+### Apply the marked-clock inverse to the existing stationary reporter
+
+The insufficiency in (110) concerns ONLY the prepared scalar return.
+It does not exclude a geometric readout from the WHOLE marked operator
+of the SAME section7i-j reporter. That programme already contains its
+paid SIGN preparation, before its fixed logical encoder:
+
+    V(t)=A_n(S(t) tensor I),
+    S(t)|0>=beta(t)^n,
+    beta(t)=tensor_j[sqrt((1+t_j)/2)|+>
+                         +sqrt((1-t_j)/2)|->].        (111)
+
+The deduplicated t_j are the actual coframe/Cayley/material operands
+of sections7h-i, not newly appended geometric labels. Extract their
+existing preparation stages by (102) and multiply that marked prefix.
+Include its actual routing and return to the logical SIGN carrier;
+keep the fixed initial blank, protected factors and chosen sharp-key
+block. For the prepared density rho_* and the existing SIGN tests,
+
+    rho_*=S rho_0 S^dagger,
+    t_j=(1/n) sum_(a=1)^n Tr(rho_* Z_(j,a)).           (112)
+
+Here rho_0 includes the actual normalized protected input and blank
+SIGN/work. The completed preparation acts trivially on the protected
+factor. Reading one packet gives the same value; averaging makes no
+new independence assumption for the prepared product section (111).
+For a perturbed native word, (112) reads its ACTUAL moments instead.
+
+Now apply the ALREADY owned field decoder in
+[collective preparation, equation(1)](A4D_NONVACUUM_COLLECTIVE_PREPARATION_SOURCE_EQUIVALENCE_2026_10_22.md#1-one-equation-for-fields-and-joint-preparations):
+
+    D_ar=B_D t_ar,       E=(D^T eta_R T)^(-1),
+    K_e=B_K sum_(a<b) t_(e,ab) G_ab,
+    U_e=(I+K_e/2)(I-K_e/2)^(-1),
+    psi_(x,A)=(p/4)t_(x,A).                           (113)
+
+All shared coordinates, collar, original calibration and the strict
+inverse/Cayley chart are those of that owner. Its section4 proves the
+coframe/link diagnostic identity V_diag^dagger O V_diag=Z and the
+corresponding material diagnostic factor. Thus (113) reuses actual
+operand/readout maps; it does not insert a second spatial Julia query
+or assume that the scalar final report is informationally complete.
+
+For the ideal finite OPERATOR family of section7i, let Y denote the
+deduplicated free 16+24+2 fields at their original free sites. Equations
+(102),(111)-(113) give the exact local left inverse
+
+    R_clock(L_hist(Y); marked stages, rho_0)=Y,
+    D R_clock o D L_hist=I_Y.                         (114)
+
+The same full operator therefore carries every original field tangent,
+including variations along the primary family for which q_h is constant.
+Uncomputing SIGN later does not remove these marked prefix blocks from
+L_hist. This is a relational operator readout with its specified stage
+and input data; it is not a spectral invariant or the scalar boundary
+resolvent. No physical intermediate measurement has been appended to
+the programme, and executing additional tomography is not declared free.
+
+The inverse has an explicit finite norm. With fixed scene data, a
+preparation segment of ell actual unitary stages obeys
+
+    ||delta S|| <= 26 ell ||delta L_hist||_op,
+    ||delta t||_infty <= 52 ell ||delta L_hist||_op.
+
+The first inequality is the unitary product rule and (102); the second
+uses ||Z_(j,a)||=1 and the two density-product terms. Let
+K_h=||D Dec_h||_(ell-infinity -> V_h), or its supremum on the declared
+compact chart, for decoder(113) and the original field norm V_h.
+Multiplication gives 52 ell K_h in that norm. Moving
+initial/marking/scene data keep their own derivatives.
+No bound uniform in clock length or spatial refinement is inferred.
+
+Consequently the SAME section7i price, without any new gate or term,
+now has an explicit marked-operator geometry consumer:
+
+Here B(L_hist(Y)) is shorthand for the SAME complete Book pair with
+P_clock(Y)=direct_sum_t Q_t(Y)P_0 Q_t(Y)^dagger, reconstructed from
+the actual full prefixes Q_t and genuine blank P_0. Its one-step
+feedback retains the single closing-wrap contribution as in section7d;
+there is no extra factor N. The cut is not independently frozen, and
+B is not a functional only of the heat spectrum.
+
+    B(L_hist(Y))=H_ref+j_K(gamma_0 q_h(t(Y))),
+    D_Y B(Y_h)=0                                     (115)
+
+on its original constrained operator chart at every primary mesh.
+Its full heat, failures, oldRIGHT, bank and clock remain unchanged.
+The semantic encoder-fibre and pure sharp-key equations, and all
+generated-state adjoints, are exactly those already solved in section7i.
+Arbitrary independent SIGN/work controls remain outside that statement
+and retain their sources. The actual nonlinear metric and midpoint
+matter recovery are the same ones decoded by (113), with their original
+boundary and O(h^2) scope. This does not assert universal off-shell
+Einstein source equality or stationarity under unrestricted cut changes.
+
+For the current finite G/CX/X words, (102),(112) recover the implemented
+moments, while forward/Bernstein and source-secant errors retain their
+existing budgets. Section7j removes the inverse debt, not those errors.
+There is no new exact smooth word-selector or exact finite-root claim.
+
+**Parent application.** The configured stationary reporter no longer
+needs a separate supplied geometry or a scalar-return inverse: (114)
+binds its own complete marked operator to its original full field chart
+and (115) to its existing price. This is distinct from the original
+Julia128 inverse (104)-(109), whose actual nonzero price residuals remain.
+The remaining physical premise is the native admission of THIS joint
+task/cut/control image and compatible refinement, including any truly
+independent stack sources. Exact Connes-metric equality and selection
+of one unique microscopic schedule are not additional prerequisites
+for the stated TheoryTransfer interpretation. No physical action,
 selector, GR_closed/raw216 promotion or standalone certificate is added.
 
 ## 8. Reproduction
