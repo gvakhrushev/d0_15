@@ -9005,3 +9005,131 @@ not repeated as an unchanged root/full128/Lean replay.
 Reproduce from repository root into a separate output:
 
     python3 02_REGISTRY/research/sources/d0_native_operator_holonomy_2026-10-25/check_native_operator_holonomy.py --output /tmp/native_operator_holonomy.json
+
+
+### 25 October: actual registered information and the FULL preparation source
+
+Phase: native realization / complete source composition. Same constitutive
+owner, native-programme-v1 interface and PR #334. Input:
+feeffbfe01ddbd01c4ec931ade04d58fe573ac36. Exact parent:
+7w's real Info/work and independent apparatus/preparation terms. Write
+paths: primary residual7x, this brief and
+02_REGISTRY/research/sources/d0_native_recorded_info_source_2026-10-25/.
+Root owns integration; bounded assistants own PROOF.md, the native
+record/seal module and checker/receipt, with independent price review.
+No separate execution, task, claim or acceptance row is created.
+
+Changed input: the ENTIRE actual native word has a balanced two-CX
+report copy and an explicit prefix/suffix archive handoff. Its global
+coherences remain. The actual copied column supplies a CQ future-memory
+decoder for suffix operations ignoring the sealed bank and terminal
+tests either ignoring it or reading only its registered basis. The same
+correlated state is retained; no prefix blank is reinitialized, no later
+gate may touch a sealed bit, and seal is not a new physical dephasing.
+The existing FutureExecution/VerificationCore and canonical registered-
+algebra owners are applied, not reproved or promoted to a forced Info law.
+
+The full mixed-input gain is S(direct_sum X_b)-S(Omega), with all actual
+conditional DATA/oldRIGHT entropies. Its exact noncommuting field
+Frechet source, input cotangent and fixedRIGHT local-unitary reaction
+are computed. Reference-complete, DATA-only, coherent and read-only
+classical-oldRIGHT observer contracts stay distinct. In particular
+h(q) is not assigned to an inaccessible quantum reference. A fixed
+actual fine-charge effect, when supplied, retains the preparation
+operator ell C_eff-G_Omega plus every true external work source.
+
+Small decisive native witness: U_Q=G_h^(4Q);CX(d,h);G_h^(2Q);CX(d,h),
+Q=33, has two DATA angles3phi_Q,phi_Q. The SAME supplied initial
+entangled Omega_0=(sqrt(p)|00>+p|11>)(adjoint) is acted on by G_d^n,
+the fixed U_Q and the actual source-I inverse, then balanced recording.
+OldRIGHT is never used as target/control. Native n1/67/1161 with all
+inverse/routing/copy/padding stages share N_window14138. At that
+supplied-input window, cut rank16, full heat and feedback are conjugacy-
+constant while the declared registered gain has a nonzero source.
+For the physically read-only classical oldRIGHT contract the source
+is exactly b_e[p h'(q_0)-p²h'(q_1)]>b_e(14p-8)>0; the finite input
+probability bounds are algebraic. No continuous native pulse is claimed.
+
+The historical preparation P=G_d;CX(d,r) is ALSO placed INSIDE the
+full initial-blank clock, before r becomes immutable. This is essential:
+its fixed word is not a constant full thermal/return contribution after
+composition. The full F_n=W_nP has N_full14140, full fibre64, initial
+cut rank4, and a true feedback E_full=(1-p g(u)²)I_spin. Its complete
+spectrum is reduced exactly to eight signed phases, each multiplicity8;
+the paired heat is32 times the four EVEN clock-kernel sums, retaining
+all128N modes. The complete heat and feedback derivatives are explicit.
+No selected branch, unprepared mode, source-spin or historical prefix
+is omitted. The registered full entropy baseline retains h(p), and
+the input spin may be mixed because its independent entropy cancels.
+
+Precise substitution: actual copied future-memory and full information/
+preparation covectors now replace an unspecified Info/work component
+in this constructed same-execution comparison. Window equation(231)
+is NOT a whole-preparation cancellation. The true full binding
+DB_full=kappa_src D(ell C_actual-I_chosen) requires
+ell DC_actual=DI_chosen+DB_full/kappa_src, primary(235).
+The real nonzero gain and chosen future algebra must come from the
+complete parent map; neither is fitted on this one plane.
+
+Carrier/norm/source convention: exact full native word, same declared
+quantum input boundary, all source-spin/oldRIGHT/record modes, real
+expanded clocks and initial cut ranks; positive/support entropy charts
+or the actual pure-amplitude formula. Hardwired configuration tests do
+not establish prospective alternatives inside one fixed decoder; that
+application needs its whole programme carrier and preparation. Equal
+N/inventory is not equality of physical Cost. A fixed-width CX archive
+does not execute the native variable-length0/10 writer. The feedback
+partition beta H+J is not silently substituted for Book03 H+J.
+
+Smallest decisive checks: exact copied-column/partial-trace and seal
+validation; actual native small-word conjugacy/inverse; noncommuting
+mixed information gradients; exact long-code probability/source signs;
+full historical preparation's return corner and spectral decomposition
+checked against the actual operator before evaluating long-clock sums.
+Large original root/full128/Lean and unchanged holonomy suites are not
+replayed for these new calculations.
+
+Remaining parent application: derive actual full Cost/work reaction(235)
+and its physical valuation/admission, together with7w's full geometric
+feedback and all other independent equations. Neither a fitted entropy
+subtraction nor an uncomputed upstream Book source is used. This is
+supporting native/source composition; GR_closed and raw216 remain open.
+
+Final primary7x:17078 UTF-8 bytes, SHA256
+9814c4e6d815421fca3f182272595cb0c5e09136bd68db9a2bc32a9f85bbfff9.
+Preceding7w remains byte-identical at its11205-byte published pin.
+Final packet pins:
+PROOF.md 30daf41733cf14b9f8a6c93ba61606ba91621c9e24edc14f2f8b6543e8e6efd9
+recorded_info.py 57b346d768c7242c114f351876a5f187f3d1b0bc431171cd7417d26080496682
+check_recorded_info.py 843a4f79ea171bf9e06e5f94ccbba406818fe55299f2a03eec906e49b4486e8d
+CHECK_RESULT.json 7f5fb2276778f30aa974578bb9583460ff670cf00ae412538c974515db485b66
+
+Actual final narrow run: Python3.9.6/SymPy/mpmath, exit0,53 checks.
+Native Q1 n-1/n1/n2 current words and Q1 n1/n2 full historical words
+are checked on ALL64 columns. The full-history phase formula and
+rank4 return corner are checked against the actual native operator
+before evaluating Q33 n1/67/1161. Long words use exact inventories,
+quadratic-field probability signs and the proved spectral reduction;
+no large unrolled matrix simulation is asserted. Noncommuting mixed
+field/input information derivatives match independent finite differences.
+Quantum/registered entropy evaluations use90-digit NON-interval
+arithmetic, distinct from exact native and algebraic sign assertions.
+
+The final configured FULL-Book gaps are also strict, independent of
+those floating entropy/heat values: at Q33,N14140,beta512N²,z1/4,
+rank4, both scalar return-defect gaps exceed10^-6 in Q(p). All128N
+heat modes have oscillation below561/(12800N²), so both stated
+Book price gaps exceed9*10^-7. This is a configured finite-code result,
+not a universal nonzero-source assertion at every beta/z.
+
+Root verified all final input hashes and reused the actual final run.
+Independent price/source review accepted the exact primary/proof pins,
+including full preparation, mixed spin, future algebra, controller scope,
+and finite-value versus asymptotic-covector boundaries. Affected work,
+agent-protocol, assembly, repository and whitespace guards pass with
+scientific promotion false. No new Lean build, changed claim or unchanged
+root/full128/holonomy replay is asserted.
+
+Reproduce from repository root into a separate output:
+
+    python3 02_REGISTRY/research/sources/d0_native_recorded_info_source_2026-10-25/check_recorded_info.py --output /tmp/native_recorded_info_source.json

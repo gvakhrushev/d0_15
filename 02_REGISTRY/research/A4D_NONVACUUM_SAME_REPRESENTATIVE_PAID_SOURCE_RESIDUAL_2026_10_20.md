@@ -5942,6 +5942,331 @@ unproved. Neither another exact GR root nor GR_closed/raw216 completion
 is asserted by this operator/heat construction.
 
 
+## 7x. Bind an actual retained record to its information and preparation source
+
+25 October 2026; same constitutive/native-programme-v1 owner, input
+feeffbfe01ddbd01c4ec931ade04d58fe573ac36. The parent application is
+7w's remaining Info/work and independent preparation reaction. The
+changed input is a literal copied record, an explicit prefix/suffix
+archive handoff and a native same-initial-state preparation orbit.
+The [proof and bounded implementation](sources/d0_native_recorded_info_source_2026-10-25/PROOF.md)
+consume the owned future-memory, canonical registered-algebra and
+complete-CQ source results; no new information axiom is introduced.
+
+### Actual copying supplies a future-memory map without erasing coherence
+
+Let V be the ENTIRE actual native forward word on report h and WORK,
+with h initially0; WORK includes DATA and every retained reference.
+Write M_b=<b_h|V|0_h>, so sum_b M_b^dagger M_b=I. Add a blank bit a
+and execute the balanced copy C(V tensor I_a)C, C=CX(h,a). The first
+C acts trivially on this prepared column but remains a real stage.
+Its complete output on input Omega is
+
+    Theta=sum_(b,c) |b_h,b_a><c_h,c_a|
+                       tensor M_b Omega M_c^dagger,
+    Tr_a Theta=sum_b |b_h><b_h| tensor X_b,
+    X_b=M_b Omega M_b^dagger.                           (224)
+
+Theta retains global cross-record coherences. The second line is an
+exact marginal of the ACTUAL word, not a physical dephasing operation.
+The copy doubles the full thermal fibre, adds two actual CX stages,
+and leaves the original protected input rank unchanged. Full endpoint
+conjugacy, rather than a prepared-column argument, gives its whole
+heat spectrum; the return corner retains the actual initial blanks.
+The new absolute clock/carrier price remains paid.
+
+The archive handoff occurs AFTER this complete prefix, including any
+actual padding. Its suffix keeps the SAME correlated Theta and enlarges
+the immutable mask by a; it does not reinitialize any prefix register.
+Suffix input blanks are not inferred from the old prefix's blank list.
+The validator rejects any later gate touching a, even as a control.
+The prefix inverse cannot be executed after sealing if it touches a.
+This is an explicit future-execution boundary, not a new unitary, reset,
+or permission to mark a fresh blank as old throughout its creation.
+
+For terminal tests ignoring a, every allowed suffix acts as I_a tensor S,
+so(224)'s marginal determines all their future probabilities. If terminal
+tests also read a in its registered basis, their effects are block diagonal
+in a; the decoder uses the same two X_b blocks and the known initial h=b.
+A joint coherence-sensitive test mixing a sectors would require a different
+future algebra. This supplies the actual sufficient-memory/test map to the
+owned FutureExecution/VerificationCore consumer. It does not infer access
+to a purifying oldRIGHT reference or select a minimal physical observer
+algebra from the gate mask alone.
+
+### Keep all conditional quantum work and its true source
+
+For the declared reference-complete CQ component Gamma=direct_sum_b X_b,
+its information GAIN in natural units is
+
+    I_ref=S(Gamma)-S(Omega)
+      =h(p_1)+sum_b p_b S(X_b/p_b)-S(Omega),
+    p_b=Tr X_b.                                        (225)
+
+The redundant record copy is not a second independent entropy. Global
+coherent output entropy is still S(Omega). On a PURE complete Omega,
+including all actual purifying oldRIGHT, every conditional block is rank1
+and I_ref=h(p_1). A mixed DATA marginal does not contradict this fact.
+For a genuinely mixed complete input, the conditional entropies and initial
+subtraction in(225) remain. No arbitrary purification is supplied for free.
+
+If the real future also ignores oldRIGHT, use the further marginal and
+I_act=S(Gamma_DATA)-S(rho_DATA), not(225) without its conditional terms.
+Their exact difference is the loss of DATA/oldRIGHT mutual information
+under this channel. For pure complete input it is
+S(rho_DATA)-sum_b p_b S(rho_DATA|b), which need not vanish. Sealing a new
+record therefore does not choose the treatment of the already retained
+reference, or identify either gain with compulsory Book03 branch Info.
+
+There is also an actual read-only CLASSICAL oldRIGHT contract: both the
+historical bit r and the new report b are readable only in their recorded
+bases. On the witness below their joint law is
+P(r,b)=p_r Bern(q_r)_b, p_r=(p,p^2), with
+q_0=(e_0+e_1)/2+(e_0-e_1)u/2 and
+q_1=(e_0+e_1)/2-(e_0-e_1)u/2. Conditional DATA work is pure, hence the
+window gain is I_reg=p h(q_0)+p^2 h(q_1). This is another specified future
+algebra, not h(q) assigned to an inaccessible quantum reference. Bringing
+the original generation of r inside the full initial-blank execution adds
+its actual constant h(p) to this registered gain; its value is retained.
+
+On a faithful fixed-support chart, differentiating the SAME actual instrument
+gives, for normalized input tangents,
+
+    G_Omega=log Omega-sum_b M_b^dagger(log X_b)M_b,
+    D I_ref=Tr(G_Omega DOmega)
+      -sum_b Tr[(DM_b Omega M_b^dagger
+                       +M_b Omega DM_b^dagger)log X_b]. (226)
+
+Constants cancel by the actual completeness relation. At the ideal7w
+operator M_0=cos(delta K), M_1=sin(delta K), these derivatives are FULL
+matrix divided differences. Compose Kdot=DK_alpha(D)[Ddot] from(214);
+replacing it by Ddot or a scalar sine derivative would omit source rows.
+For pure inputs use the actual rank-one formula h'(q)Dq on its positive
+chart; logarithms of a singular Omega are not substituted into a faithful
+ambient derivative. Support births retain the existing C1/entropy boundary.
+
+If an actual fixed fine-history charge ledger supplies an effect C_eff,
+keep all extra genuine prices in C_ext. In natural units define the
+candidate gain-price component only by
+
+    P_nat=ell[C_ext+Tr(Omega C_eff)]-I_ref,
+    ell=log phi,
+    D P_nat=ell D C_ext+ell Tr[(DOmega)C_eff+Omega DC_eff]
+                                                       -D I_ref. (227)
+
+This does not prescribe C_eff or assert every physical work term is a
+fixed linear expectation. On the native real chart the local DATA-unitary
+preparation row contains Tr_RIGHT[Omega,ell C_eff-G_Omega], together with
+ell D C_ext. It preserves the true oldRIGHT marginal. A smaller admitted
+preparation domain inherits only its actual tests; a larger affine input
+domain is not inferred from local unitary access.
+
+### The supplied-input window has a nonzero registered source at constant Book price
+
+There is an exact native witness for this remaining row. Let theta be the
+original Golden angle, Q=33, and phi_Q the small principal angle of
+G^(2Q). Execute, chronologically,
+
+    U_Q=G_h^(4Q);CX(d,h);G_h^(2Q);CX(d,h),
+    A_n=G_d^n,
+    C;A_n;U_Q;actual_inverse(A_n);C.                    (228)
+
+The gates act on ACTIVE DATA d, report h, the new bank and the declared
+source apparatus. Inverse source-spin is restored on every column;
+the existing oldRIGHT is untouched. Before
+the current immutable boundary the fixed initial state
+Omega_0=|psi_0><psi_0| was generated by the native history
+G_d;CX(d,RIGHT), with |psi_0>=sqrt(p)|00>+p|11>. That historical record
+was still fresh then. The current word never uses it as a gate target
+or control, and every n uses this SAME complete initial state.
+
+U_Q's two DATA blocks have angles3phi_Q and phi_Q. Put
+e_0=sin^2(3phi_Q), e_1=sin^2(phi_Q); the owned exact return certificate
+gives 0<e_1<e_0<1/2. On the marked interaction the operator is fixed;
+A_n changes its actual incident preparation and is undone before the
+terminal comparison. At a common paid N the FULL balanced endpoints
+are conjugate by A_n. The actual input projector contains all DATA and
+commutes with A_n. Hence the complete heat and return determinant have
+exactly the SAME values for every n, while
+
+    B_window,n=H_ref(N,D_full)+J_ref,
+    q_n=(e_0+e_1)/2+(e_0-e_1)p^3 u_n/2,
+    u_n=cos(2n theta).                                  (229)
+
+Here H_ref denotes that common full thermal value, not7j's unrelated
+fixed-middle reporter price. This window starts with Omega_0 supplied
+at its initial boundary. It does not include the earlier generation of
+that input in its clock. Its real historical preparation and price are
+not assigned zero; the FULL initial-blank clock is computed below.
+All actual modes of each declared window are retained. The example
+is a native apparatus/source witness, not a claim that its diagonal
+two-mode matrix is the original nonvacuum42-field geometry.
+
+Its ACTUAL reference-complete registered gain is h(q_n). Its comparison
+source and finite nonzero contrasts are therefore
+
+    D_u I_ref=log[(1-q)/q](e_0-e_1)p^3/2>0,
+    (I_b-I_a)/(u_b-u_a)
+      =(e_0-e_1)p^3/2 * [h(q_b)-h(q_a)]/(q_b-q_a)>0.    (230)
+
+The finite native codes n=1,67,1161 give a two-sided comparison about
+u_1=p^3. All inverses, source routing, copies and real identity padding
+are counted. At Q=33 their unpadded stage totals are202+12n; the paid
+common clock is14138. No continuously variable native pulse or equality
+between unequal-duration clocks is used. The benchmark uses exact native
+operator identities and algebraic endpoint probabilities, with separately
+labelled numerical logarithms; it does not simulate a huge heat matrix.
+
+These are hardwired native configuration comparisons on the same declared
+quantum input boundary. Their use as physical variation tests retains
+the actual controller-admission premise. They do not claim that different
+programmes are unpriced alternatives inside one fixed autonomous decoder;
+that application needs its entire stored-program carrier and preparation.
+
+The read-only CLASSICAL oldRIGHT contract also has a strictly nonzero
+gain source. Put b_e=(e_0-e_1)/2. On the local interval containing all
+three native u values,
+
+    D_u I_reg=b_e[p h'(q_0)-p^2 h'(q_1)]>0.
+
+The exact algebraic bounds are49/50000<e_0<1/1000,
+e_1>1/10000 and1/5<u<3/10. They imply q_0<1/1000,
+q_1>1/2500, hence h'(q_0)>6 and h'(q_1)<8. The elementary inequalities
+8/3<exp(1)<3 prove these logarithmic bounds. The derivative is therefore
+greater than b_e(14p-8)>0. No inaccessible oldRIGHT phase test is needed
+for this specified classical-record component.
+
+### The complete source now has an explicit required work reaction
+
+Equations(229)-(230) expose the WINDOW price-binding application. If a
+proposed binding on that supplied-input task identifies its Book covector with a
+nonzero multiple of the gain-price covector, then on this allowed
+prep/controller comparison its genuine total Cost source must obey
+
+    ell D C_actual=D I_ref.                             (231)
+
+For a full value/divided-difference binding the corresponding finite
+condition is ell(C_b-C_a)=h(q_b)-h(q_a). A merely asymptotic source
+binding instead needs its real normalized secant/lift error budget;
+it does not imply an exact value equality between arbitrary code words.
+The work reaction(231) is a result to derive from the actual ledger,
+not a compensator inserted into it. A task can exclude this relative
+preparation orbit only through its genuine admissibility/correctness map.
+
+Equal primitive inventory or a common N alone does not establish
+D C_actual=0. Minimal description length, executed stages and actual
+physical work keep their owned distinct meanings. Nor does a fixed-width
+CX bit archive execute the original variable-length0/10 writer; its
+one/two charge and branch durations cannot be assigned here. The books'
+feedback partition log Z=beta H+J and bare master H+J also keep their
+different relative coefficients at beta!=1.
+
+### Include the actual historical preparation inside the full clock as well
+
+Do not extend the window plateau to an uncomputed physical prefix.
+Execute P=G_d;CX(d,r) while historical r is still fresh, then seal r
+and execute the complete word W_n of(228), including its real padding.
+The same full initial boundary now has d,r,h,a blank and arbitrary
+protected source-spin. Its full monodromy is F_n=W_n P, its common
+actual clock length14140, and its actual initial cut rank4. No later
+gate touches r. The old supplied-input window instead had rank16.
+Both cuts are derived from their explicitly different input tasks.
+
+Let c_0=cos(3phi_Q), c_1=cos(phi_Q),
+g(u)=(c_0+c_1)/2+(c_0-c_1)u/2. With i_initial the actual blank-input
+embedding, the exact full return corner and defect are
+
+    i_initial^dagger F_n i_initial=sqrt(p)g(u_n) I_spin,
+    E_full=[1-p g(u_n)^2] I_spin,
+    J_full=-4 log[1-z(1-p g(u_n)^2)].                   (232)
+
+This includes the failure to return the historical preparation itself,
+not only the new binary report. It is generally NOT constant in n.
+
+The entire full-clock heat has a small exact spectral evaluation.
+Put c_n=cos((1-2n)theta),
+chi_+=acos(sqrt(p)cos(phi_Q)) and
+chi_-,n=asin(c_n sin(phi_Q)). Define the four phase representatives
+
+    omega_1=2phi_Q+chi_+,       omega_2=2phi_Q-chi_+,
+    omega_3=2phi_Q+chi_-,n,     omega_4=2phi_Q+pi-chi_-,n.
+    Z_full=32 sum_(j=1)^4 K_N(omega_j),
+    K_N(t)=sum_(k mod N) exp[-beta_clk(1-cos((2pi k+t)/N))]. (233)
+
+The complete eight signed phases each have multiplicity8 from the
+bank sectors and source-spin. Pairing Hodge degrees gives the factor32
+in(233), because K_N is even. All2N*64 modes remain. The decomposition
+uses mathematical Fourier frames of the historical bit and bank, not
+free physical preparations or detectors. It is checked against the
+actual native small word before using the long-clock spectral formula.
+
+On the local positive-sine u-chart,
+c(u)=sqrt(p)u+p sqrt(1-u^2) and
+chi_-'(u)=sin(phi_Q)c'(u)/sqrt[1-c(u)^2 sin^2(phi_Q)].
+With S_K=sum_j K_N(omega_j), the WHOLE prefix source is
+
+    D_u H_full=chi_-'[K_N'(omega_3)-K_N'(omega_4)]
+                                                    /(beta_clk S_K),
+    D_u J_full=4z[-p g(u)(c_0-c_1)]/[1-z(1-p g(u)^2)],
+    D_u B_full=D_u H_full+D_u J_full.                  (234)
+
+K_N' differentiates its actual complete clock-mode sum. The historical
+prefix is fixed as a word, but its full thermal/return cross-source
+in(234) cannot be set to zero; in particular D_u J_full>0. A cancellation
+in the total source at other beta,z would need its own calculation.
+In particular this is not obtained by putting a
+constant preparation charge beside the old window heat. The native
+probabilities q_n are unchanged; only the price boundary has been enlarged.
+
+For the actual configured comparison delta=1/16, beta_clk=512N^2,
+z=1/4, N=14140, nonflatness of the FULL Book price is certified without
+relying on the numerical heat sum. Both exact Q(p) return-defect gaps
+E_67-E_1 and E_1-E_1161 exceed10^-6. The feedback derivative with
+respect to E exceeds1. Every clock mode is retained in the upper heat
+bound and one genuine low branch gives its lower bound, yielding
+heat oscillation<561/(12800N^2)<10^-8. Consequently
+
+    B_full,67-B_full,1>9*10^-7,
+    B_full,1-B_full,1161>9*10^-7.                       (234a)
+
+These are strict bounds on THIS specified finite native family, not a
+nonzero-total-source theorem at arbitrary beta,z or a GR root test.
+
+For the chosen registered oldRIGHT-Z algebra the FULL gain is
+h(p)+I_reg,window. The DATA-only full gain is likewise its window value
+plus h(p), while the reference-complete gain stays h(q_n): any independent
+mixed protected-spin entropy cancels from gain. OldRIGHT was not a
+passive input reference before P created it, so the window reference-DPI
+identity is not applied across that preparation. All input/conditional
+entropy baselines and actual initial masks remain explicit.
+
+For a PROVED nonzero covector gain kappa_src, the complete source-binding
+test DB_full=kappa_src D(ell C_actual-I_chosen) therefore requires
+
+    ell D C_actual=D I_chosen+D B_full/kappa_src.        (235)
+
+I_chosen must use the actual specified future algebra. The gain is not
+fitted on this one plane; an action-level field-dependent multiplier
+would retain its product derivative as usual. A finite value binding
+with constant gain has the corresponding full DB increment, whereas an
+asymptotic covector binding retains its actual secant/lift errors.
+Equation(231) is recovered only for the old supplied-input window or
+after a genuine proof eliminating the full-prefix source. The source
+map(234), rather than an omitted preparation, is now available to the
+same-execution physical price consumer.
+
+The substituted component is precise: the actual copied native word now
+has a checked future-memory handoff, its full registered quantum gain and
+independent preparation cotangent, with a same-initial-state nonzero
+native source witness. The remaining complete-price application must
+supply the REAL full reaction(235), justify a different physical information
+algebra, or prove the actual constraint excluding that comparison.
+It must also address7w's geometric feedback source(220)/(223); a pointer
+gain computed here is not permission to append -h(q) to an already
+complete Book action. Native physical valuation/selection and full joint
+stationary refinement remain open. No GR_closed/raw216 promotion follows.
+
+
 ## 8. Reproduction
 
 Run from this directory:
