@@ -13,17 +13,19 @@ consumer is §5.1 of
 `02_REGISTRY/research/A4D_EXACT_AF_RADIAL_COFRAME_EQUIVALENCE_NONLINEAR_SPIN2_2026_10_18.md`,
 blob `734e21ae6bc04ff3446ad15858936d417fdd2e55`.
 
-The observed matrix is assembled from four separate full-query vacuum
-responses. Each query keeps its linear-equivalence argument `M_r` explicit;
-the owned vacuum-readout theorem proves that response recovers its input
-vector, independently of `M_r`. Under the stated inverse-coframe and
+The observed matrix is assembled from four full-query vacuum responses. The
+operator family `X_r` is an explicit input, together with the hypothesis that
+each `X_r` equals the owned raising query for the corresponding column and a
+linear equivalence `M_r`. The vacuum-readout theorem then recovers that input
+vector independently of `M_r`. Under the stated inverse-coframe and
 `IsRoleLorentz` hypotheses, the same observed matrix recovers `L e` and its
 Lorentz metric equals that of `e`.
 
-This is finite matrix/query composition only. The module does not constrain
-`M_r` to the source's proper-Lorentz endpoint family, recover a physical
-observer or clock, prove all-jet smoothness or the variational pullback (31),
-or select a native price/source or physical execution.
+This is finite matrix/query composition only. The module does not derive the
+raising-query representation hypothesis from arbitrary operator data,
+constrain `M_r` to the source's proper-Lorentz endpoint family, recover a
+physical observer or clock, prove all-jet smoothness or the variational
+pullback (31), or select a native price/source or physical execution.
 -/
 
 namespace D0.Geometry

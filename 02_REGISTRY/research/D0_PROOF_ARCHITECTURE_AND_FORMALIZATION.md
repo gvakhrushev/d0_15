@@ -1774,16 +1774,17 @@ passed (3,020 Lake jobs); the base module
 jobs). The declaration inventory
 `sources/d0_proof_architecture_formalization_2026-10-24/principal_frame_recovery_inventory.json`
 was queried through import root `D0.Geometry.A4DJuliaPrincipalFrameRecovery`
-from the dirty worktree at base snapshot `fafd768855adb84667702e8b00c80a7acfdb2d23`,
+from the worktree at published base commit `0cc9ba5526a80cc0e1b509af267e0f9fb3f3c96f`
+with its explicit query-representation comment update in the dirty tree,
 with Lean 4.30.0 and collector SHA-256
 `8e95fbfb6896de85a8d0309aa2b7ad68051cce7b7d42749b54ce4bef07131ed7`.
 All new matrix and query-recovery declarations report exactly
 `Classical.choice`, `Quot.sound`, and `propext`. The inventory SHA-256 is
-`5918351c8a39ae80d4bac6326edf0065949b213fb206bb2268026a6243e604ba`; its
+`44b03bdd62a8fd00b5546caedb5541cf77add6ae1082610f8a1012f5da06558c`; its
 Lean source digest is
-`dcadb3e1623c9dfd380a0c703a4d4e1fe5b3bdb0b593af8cda180ab0a348df51`. The
+`8baf2d4665ac1c3c36602a754fd4f2eca0d3e4ab4ad6f5c4bbe687c1c47cb1de`. The
 query-to-frame composition module SHA-256 is
-`9e074d4fc439195691e76320ff13cf709c2b9c252b8f72e093c24d4b272ed770`.
+`ae3a27dd27fdb72e3f04e54c4075d44812db8c3b0ec3ec3c9182a5dee1787da3`.
 `generate_lean_views.py --check` reports `stale=0`, claim-map coverage passes,
 and `formalization_debt_audit.py --check` remains at the three baseline
 findings. This is a targeted application build, not a `D0.All` integration
