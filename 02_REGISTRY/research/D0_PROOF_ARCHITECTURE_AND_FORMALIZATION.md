@@ -854,15 +854,18 @@ only exhibits two distinct, fully relabeling-equivariant products on the same
 three-element carrier. It does not state the Spin(8) outer-automorphism/group
 order comparison or an intertwiner, so it cannot discharge that claim.
 For `D0-ARCHIVE-NAIVE-WEIGHTED-CAR-DEGREE-LEAKAGE-NOGO-001`, the registered
-name `archive_naive_weighted_degree_leakage_nogo_owner` is absent. The actual
-compiled `archive_naive_weighted_car_degree_leakage_nogo_owner` has type
-`Real.sqrt naiveWeight0 ≠ Real.sqrt naiveWeight1 ∧ Fintype.card Role = 4`;
-its source defines weights 1 and 4. This does not prove failure of
-nilpotency, generation of the claimed cross-terms, form-degree leakage, or
-that curvature must enter only through the Hodge metric. The earlier Lean
-comment described that broader conclusion; it has been corrected to identify
-only the two fixed sample weights used in the square-root inequality. The
-theorem statement is unchanged.
+name `archive_naive_weighted_degree_leakage_nogo_owner` now resolves through a
+compatibility wrapper to an exact finite witness in the existing CAR16
+cubical differential. At refinement `N = 1`, the profile is `w = 4` at the
+intermediate `A` site and `w = 1` elsewhere; a scalar delta at the `A+B` site
+produces coefficient `1` in the degree-two `A∧B` component at the origin after
+two `sqrt(w)`-weighted steps. The theorem proves this one case and does not
+establish the registered universal no-go for every nonconstant profile or the
+claim that geometry must enter only through the Hodge metric. The registry
+claim row, status, and scientific owner are unchanged; this formal result is
+scoped evidence and does not independently accept the broader wording. The
+older `weighted_degree_scope_inventory.json` remains a historical snapshot of
+the preceding source and must not be used as current-source evidence.
 
 The two supporting declarations were queried separately through the compiled
 `D0.All` environment. Their full elaborated types, source ranges, dependency
@@ -997,7 +1000,6 @@ physical assumption, or Hodge-metric selection is changed.
 
 The compiled reuse record is preserved at
 `sources/d0_proof_architecture_formalization_2026-10-24/weighted_hodge_claim_reuse.json`
-(SHA-256 `456a37d3eeebc5319e30559ed330e21c2716c8b9d08b78ea822f49480c2f5408`).
 (SHA-256 `13e3a995feb22d64a61d4146cfb0a67c2816f542d20d2044a0be946445ccd345`).
 The locator resolves through `D0.All`; the elaborated owner type now includes
 the zero-square, degree-preservation, and counting-pairing self-adjointness
@@ -1011,3 +1013,51 @@ pre-publication local HEAD `6b59bc57ca97275df9e973715cdb503ec8fc5c4e`, and
 named `native_decide` axioms for the CAR creation, annihilation, and mixed
 anticommutator results, as well as `Classical.choice`, `Quot.sound`, and
 `propext`.
+
+## Exact finite weighted-differential leakage witness (24 October 2026)
+
+The registered `D0-ARCHIVE-NAIVE-WEIGHTED-CAR-DEGREE-LEAKAGE-NOGO-001` module
+now defines `naiveWeightedCubicalDifferential ψ = sqrt(w) · dψ` using the
+normalized unit-step `cubicalCoboundary` already transferred from
+`dForward`. On the existing full CAR16 carrier at refinement `N = 1`, the
+site profile is `w = 4` at the `A` intermediate site and `w = 1` elsewhere.
+A scalar delta at the `A+B` site is homogeneous of degree zero. Two weighted
+steps give the exact coefficient `1` at the origin in the pair state `A∧B`,
+whose Fock degree is two. The proof reduces the full role/state sums using the
+existing CAR support theorem and exact integer-shadow creation coefficients;
+it does not use floating-point evaluation.
+
+The registered locator `archive_naive_weighted_degree_leakage_nogo_owner`
+now compiles as a compatibility wrapper to the existing
+`archive_naive_weighted_car_degree_leakage_nogo_owner`. The wrapper's
+elaborated type contains the finite profile, degree-zero input, degree-two
+output, and exact coefficient `1`. This resolves the exact name locator; it
+does not validate the broader claim-row wording that every nonconstant
+weight breaks nilpotency or that geometry must enter only through the Hodge
+metric. The claim row, `LEAN_PROVED` label, and scientific owner were left
+unchanged. The broad semantic claim remains for review by its existing owner.
+
+`formal_support.csv` now records the source chain from the BOOK_06 locator to
+the cubical coboundary and the no-go application, and lists the no-go module as
+a consumer of `ArchiveCubicalDifferential`.
+
+The compiled claim-reuse record is
+`sources/d0_proof_architecture_formalization_2026-10-24/naive_weighted_leakage_claim_reuse.json`
+(SHA-256 `a29cdca38c09f289f426d7311121b286d6bfb98100f33b8a213b59393373fb52`).
+The exact theorem locator resolves through public import `D0.All`; its
+elaborated proof dependency is the scoped CAR owner theorem above. The record
+binds Lean source digest
+`1b132bbe38a043a900b62349943ac10c33c37835e5dbd91b1d7354bd60baeaeb`, collector
+SHA-256 `1068f73c98eddcbd75cd6ff004b0e3b68642bfd66e7417fa9be4e1f9e4c46745`,
+pre-publication local HEAD `6b59bc57ca97275df9e973715cdb503ec8fc5c4e`, and
+`worktree_dirty=true`. Its axiom footprint includes `Classical.choice`,
+`Quot.sound`, `propext`, existing CAR native-decision results, and explicit
+`native_decide` results for the finite pair degree and two creation
+coefficients.
+
+Validation for this slice passed: narrow build of
+`D0.Geometry.ArchiveNaiveWeightedDegreeLeakageNoGo` (2,976 Lake jobs), compiled
+claim reuse through `D0.All`, generated-view check (`stale=0`), formalization-
+debt non-growth (3 findings, baseline 3), and `git diff --check`. No physical
+Hodge metric, universal weight obstruction, GR premise, claim status, or
+scientific owner is selected or closed by this finite example.
