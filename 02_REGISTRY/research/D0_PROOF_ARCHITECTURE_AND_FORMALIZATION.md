@@ -1663,3 +1663,71 @@ generated `ClaimMap.lean` SHA-256 is
 and `PerronGNSTower.lean` SHA-256 is
 `3090b4db023f000f5c7c10c6e50ddede4bbcad446e359c177f02d5cc3ca2e573`. This
 is targeted validation, not the final `D0.All` build or release integration.
+
+## Full null-query frame recovery from the observed carrier block (24 October 2026)
+
+This continues the pinned raising-operator source in #334, commit
+`fe5cf335da04cac14e50407b03f98b96be17dc52`,
+`A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md`, blob
+`1c8d59e5533b443d9a015dc4512cfbc160ae7e62`, §§8.4–8.5, Eq. (28). Its
+downstream consumer is §5.1 of
+`A4D_EXACT_AF_RADIAL_COFRAME_EQUIVALENCE_NONLINEAR_SPIN2_2026_10_18.md`,
+blob `734e21ae6bc04ff3446ad15858936d417fdd2e55`. These are unchanged source
+pins; this Lean result formalizes an algebraic application and does not accept
+the scientific owner's broader application.
+
+`archiveJuliaQueryNullBlock X α` is now a linear map built from the supplied
+full 16-state operator `X`: insert a role vector into the vacuum's one-particle
+state, apply `X`, contract with `α`, and read out the degree-one coefficient.
+The compiled `archiveJuliaQueryNullBlock_readout` proves that for the actual
+`X = archiveJuliaRaisingQuery u M`, with `α u = 1`, this observed map equals
+the owned block `B = M - (α ∘ M) • u`. The recovered covector value and frame
+are defined from this observed `B` and the two endpoint bilinear forms; they do
+not use a separate frame oracle in their definitions.
+
+The compiled `archiveJuliaQueryNullRecoveredFrame_eq` composes the observed
+block identity, the projected-metric identity, the exact square-root/correction
+inverse, and `M x = B x + α(M x) • u`. Given endpoint symmetry/isometry, the
+normalized chart vector and the positive branch, it proves the recovered
+function is the complete `M`. The stronger null specialization,
+`archiveJuliaQueryNullRecoveredFrame_eq_of_null`, derives `b ≠ 0` from
+nondegeneracy of `Pₓ`, `u ≠ 0`, and `Pₓ(u,u)=0`; it constructs the canonical
+Euclidean witness `z=b/(bᵀb)`, proves `b(z)=1`, and gets the branch from
+`q=0`. Thus this null application does not take the normalized witness or the
+branch as extra inputs.
+
+The remaining hypotheses are explicit: `Pₓ` is symmetric and nondegenerate;
+`Pᵧ` is its pullback along `M`; `X` equals the actual raising query; and the
+query chart satisfies `α(u)=1`. The formalization does
+not identify `α` with a physical clock/timelike observer, instantiate the
+source's concrete `Jₓ,Jᵧ` endpoint frames or proper-orientation determinant,
+formalize the non-null formula (27), or prove all-jet smoothness, coframe and
+metric recovery (30a), the variational pullback (31), the complete physical
+price/source, or D0 admission. It adds no claim, assumption, application
+acceptance, or C0 status; the existing `formal_support.csv` row continues to
+index this Lean module and primary artifact.
+
+The targeted Lean 4.30.0 build
+`python3 tools/lean_task_build.py narrow D0.Geometry.ArchiveJuliaRaisingOperatorReadout`
+passed (2,992 Lake jobs). The declaration inventories for the two recovered
+frame theorems are
+`sources/d0_proof_architecture_formalization_2026-10-24/julia_null_query_frame_recovery_inventory.json`
+(SHA-256 `ddf187b917f103c71b911ff0c8f3abc51d21ef377f4f3429b7a1cd6a1a3b7943`)
+and
+`sources/d0_proof_architecture_formalization_2026-10-24/julia_null_query_frame_recovery_null_inventory.json`
+(SHA-256 `f1489649fe907f0ff4ad765d4135ab684253893eea2525791cd1355ba7d9cc42`).
+Both were queried from the compiled module import
+`D0.Geometry.ArchiveJuliaRaisingOperatorReadout`, at snapshot
+`8a496eabae10af441de1c4aad628a9ac56f6bf33` with `worktree_dirty=true`, under
+Lean 4.30.0 and manifest SHA-256
+`4ed211000f753c64c6b1fc155970f6b28c9500763f1ad520d8762ae165ac24fa`. The
+common project Lean source digest is
+`0f8a70695c1764fc095c260f98248e9da859fdc6948d6deb706e628eb38a8bf5`; the
+collector SHA-256 is `8cd6b7da3e1feedc07b615aa061128e19ebf51b451662e5bccb5cc5a9f3caa84`.
+Both declarations resolve to the expected module and source; their elaborated
+axiom reports are exactly `Classical.choice`, `Quot.sound`, and `propext`.
+The updated Lean module SHA-256 is
+`06cc8cce2c0aa75017b0182f095905c8e695f99ce8d70e4281c429c6188b57ad`.
+These inventories verify the declaration types and provenance through the
+module import. They are not a current-source `D0.All` replay; the final
+integration build remains for the Ready checkpoint.

@@ -616,6 +616,197 @@ theorem archiveJuliaNullBlock_readout (u : RoleSpace)
   simp [archiveJuliaNullBlock, archiveJuliaNullRankOne, LinearMap.sub_apply,
     LinearMap.comp_apply]
 
+/-- Insert a one-particle vector into the vacuum sector of the fixed carrier. -/
+def archiveJuliaVacuumInsert :
+    RoleSpace →ₗ[ℝ] (ArchiveFockState → ℝ) :=
+  archiveFockExteriorEquiv.symm.toLinearMap.comp (ι ℝ)
+
+theorem archiveJuliaVacuumInsert_eq_creator (v : RoleSpace) :
+    archiveJuliaVacuumInsert v =
+      archiveExteriorCreator v (Pi.single fockVacuumState (1 : ℝ)) := by
+  apply archiveFockExteriorEquiv.injective
+  dsimp [archiveJuliaVacuumInsert]
+  rw [LinearEquiv.apply_symm_apply,
+    archiveExteriorCreator_on_vacuum_eq_ι]
+
+/-- Linear degree-one vector readout on the finite carrier. -/
+def archiveJuliaVacuumVectorReadoutLinear :
+    (ArchiveFockState → ℝ) →ₗ[ℝ] RoleSpace where
+  toFun := archiveJuliaVacuumVectorReadout
+  map_add' ψ χ := by simp [archiveJuliaVacuumVectorReadout]
+  map_smul' c ψ := by simp [archiveJuliaVacuumVectorReadout]
+
+/-- The observed degree-one null block of an arbitrary full-carrier query.
+This map depends only on the operator supplied to the readout, not on a
+separately supplied frame map. -/
+def archiveJuliaQueryNullBlock
+    (X : (ArchiveFockState → ℝ) →ₗ[ℝ] (ArchiveFockState → ℝ))
+    (α : Module.Dual ℝ RoleSpace) : RoleSpace →ₗ[ℝ] RoleSpace :=
+  archiveJuliaVacuumVectorReadoutLinear.comp
+    ((archiveExteriorContraction α).comp (X.comp archiveJuliaVacuumInsert))
+
+set_option maxRecDepth 2048 in
+theorem archiveJuliaQueryNullBlock_apply
+    (X : (ArchiveFockState → ℝ) →ₗ[ℝ] (ArchiveFockState → ℝ))
+    (α : Module.Dual ℝ RoleSpace) (v : RoleSpace) :
+    archiveJuliaQueryNullBlock X α v =
+      archiveJuliaVacuumVectorReadout
+        (archiveExteriorContraction α (X (archiveJuliaVacuumInsert v))) := rfl
+
+/-- The observed null block specializes to the block proved from `M` when the
+operator is the actual raising query. -/
+theorem archiveJuliaQueryNullBlock_readout (u : RoleSpace)
+    (M : RoleSpace ≃ₗ[ℝ] RoleSpace) (α : Module.Dual ℝ RoleSpace)
+    (hαu : α u = 1) :
+    archiveJuliaQueryNullBlock (archiveJuliaRaisingQuery u M) α =
+      archiveJuliaNullBlock u M α := by
+  apply LinearMap.ext
+  intro v
+  rw [archiveJuliaQueryNullBlock_apply, archiveJuliaVacuumInsert_eq_creator]
+  exact archiveJuliaNullBlock_readout u M α hαu v
+
+/-- The metric remainder read from the same query block, corresponding to
+`S = J_y - Bᵀ J_x B` in Eq. (28). -/
+def archiveJuliaQueryNullMetricRemainder
+    (Pₓ Pᵧ : ArchiveRoleBilinear) (X : (ArchiveFockState → ℝ) →ₗ[ℝ]
+      (ArchiveFockState → ℝ)) (α : Module.Dual ℝ RoleSpace)
+    (x y : RoleSpace) : ℝ :=
+  Pᵧ x y - Pₓ (archiveJuliaQueryNullBlock X α x)
+    (archiveJuliaQueryNullBlock X α y)
+
+/-- The projected metric covector read from the same query block, the `b`
+input in Eq. (28). -/
+def archiveJuliaQueryNullMetricCovector
+    (Pₓ : ArchiveRoleBilinear) (u : RoleSpace)
+    (X : (ArchiveFockState → ℝ) →ₗ[ℝ] (ArchiveFockState → ℝ))
+    (α : Module.Dual ℝ RoleSpace) : Module.Dual ℝ RoleSpace :=
+  (Pₓ u).comp (archiveJuliaQueryNullBlock X α)
+
+/-- The affine functional reconstructed from the observed block and endpoint
+forms by the source's square-root/correction formula (28). -/
+def archiveJuliaQueryNullRecoveredCovectorValue
+    (Pₓ Pᵧ : ArchiveRoleBilinear) (u : RoleSpace)
+    (X : (ArchiveFockState → ℝ) →ₗ[ℝ] (ArchiveFockState → ℝ))
+    (α : Module.Dual ℝ RoleSpace) (z x : RoleSpace) : ℝ :=
+  let S := archiveJuliaQueryNullMetricRemainder Pₓ Pᵧ X α
+  let b := archiveJuliaQueryNullMetricCovector Pₓ u X α
+  (S x z - b x * archiveJuliaNullT S (Pₓ u u) z) /
+    archiveJuliaNullD S (Pₓ u u) z
+
+/-- Reconstruct the full frame action from the observed null block and the
+covector in (28). -/
+def archiveJuliaQueryNullRecoveredFrame
+    (Pₓ Pᵧ : ArchiveRoleBilinear) (u : RoleSpace)
+    (X : (ArchiveFockState → ℝ) →ₗ[ℝ] (ArchiveFockState → ℝ))
+    (α : Module.Dual ℝ RoleSpace) (z : RoleSpace) : RoleSpace → RoleSpace :=
+  fun x => archiveJuliaQueryNullBlock X α x +
+    archiveJuliaQueryNullRecoveredCovectorValue Pₓ Pᵧ u X α z x • u
+
+/-- Exact query-to-frame application of the null inverse (28). If `X` is the
+actual raising query, the normalized chart and positive branch recover the
+complete linear frame map `M`, not only its null block. -/
+theorem archiveJuliaQueryNullRecoveredFrame_eq
+    (Pₓ Pᵧ : ArchiveRoleBilinear) (u z : RoleSpace)
+    (M : RoleSpace ≃ₗ[ℝ] RoleSpace)
+    (α : Module.Dual ℝ RoleSpace)
+    (X : (ArchiveFockState → ℝ) →ₗ[ℝ] (ArchiveFockState → ℝ))
+    (hX : X = archiveJuliaRaisingQuery u M)
+    (hαu : α u = 1)
+    (hSymm : ∀ x y, Pₓ x y = Pₓ y x)
+    (hIso : ∀ x y, Pₓ (M x) (M y) = Pᵧ x y)
+    (hbz : archiveJuliaQueryNullMetricCovector Pₓ u X α z = 1)
+    (hbranch : 0 < 1 + (Pₓ u u) * α (M z)) :
+    archiveJuliaQueryNullRecoveredFrame Pₓ Pᵧ u X α z = M := by
+  have hB : archiveJuliaQueryNullBlock X α = archiveJuliaNullBlock u M α := by
+    rw [hX]
+    exact archiveJuliaQueryNullBlock_readout u M α hαu
+  have hbz' : ((Pₓ u).comp (archiveJuliaNullBlock u M α)) z = 1 := by
+    simpa [archiveJuliaQueryNullMetricCovector, hB] using hbz
+  have hrec := archiveJuliaNullBlock_reconstructsAffineFunctional
+    Pₓ Pᵧ u z M α hSymm hIso hbz' hbranch
+  have hS : archiveJuliaQueryNullMetricRemainder Pₓ Pᵧ X α =
+      (fun v w => Pᵧ v w -
+        Pₓ (archiveJuliaNullBlock u M α v) (archiveJuliaNullBlock u M α w)) := by
+    funext v w
+    simp [archiveJuliaQueryNullMetricRemainder, hB]
+  funext x
+  have hvalue :
+      archiveJuliaQueryNullRecoveredCovectorValue Pₓ Pᵧ u X α z x =
+        ((Pᵧ x z - Pₓ (archiveJuliaNullBlock u M α x)
+          (archiveJuliaNullBlock u M α z)) -
+          ((Pₓ u).comp (archiveJuliaNullBlock u M α)) x *
+            archiveJuliaNullT
+              (fun v w => Pᵧ v w -
+                Pₓ (archiveJuliaNullBlock u M α v)
+                  (archiveJuliaNullBlock u M α w))
+              (Pₓ u u) z) /
+          archiveJuliaNullD
+            (fun v w => Pᵧ v w -
+              Pₓ (archiveJuliaNullBlock u M α v)
+                (archiveJuliaNullBlock u M α w))
+          (Pₓ u u) z := by
+    dsimp [archiveJuliaQueryNullRecoveredCovectorValue]
+    simp only [archiveJuliaQueryNullMetricCovector, LinearMap.comp_apply]
+    rw [hS, hB]
+  calc
+    archiveJuliaQueryNullRecoveredFrame Pₓ Pᵧ u X α z x =
+        archiveJuliaNullBlock u M α x +
+          archiveJuliaQueryNullRecoveredCovectorValue Pₓ Pᵧ u X α z x • u := by
+            simp [archiveJuliaQueryNullRecoveredFrame, hB]
+    _ = archiveJuliaNullBlock u M α x + α (M x) • u := by
+          rw [hvalue, ← hrec x]
+    _ = M x := (archiveJuliaNullBlock_decomposition u M α x).symm
+
+/-- Canonical Euclidean witness for the observed query covector `b`. -/
+noncomputable def archiveJuliaQueryNullCanonicalWitness
+    (Pₓ : ArchiveRoleBilinear) (u : RoleSpace)
+    (X : (ArchiveFockState → ℝ) →ₗ[ℝ] (ArchiveFockState → ℝ))
+    (α : Module.Dual ℝ RoleSpace) : RoleSpace :=
+  archiveJuliaNullEuclideanWitness
+    (archiveJuliaQueryNullMetricCovector Pₓ u X α)
+
+set_option maxRecDepth 2048 in
+/-- The actual null-query application needs no externally supplied normalized
+vector or square-root branch: nondegeneracy supplies `b ≠ 0`, the canonical
+Euclidean witness normalizes it, and `q = 0` fixes the positive branch. -/
+theorem archiveJuliaQueryNullRecoveredFrame_eq_of_null
+    (Pₓ Pᵧ : ArchiveRoleBilinear) (u : RoleSpace)
+    (M : RoleSpace ≃ₗ[ℝ] RoleSpace)
+    (α : Module.Dual ℝ RoleSpace)
+    (X : (ArchiveFockState → ℝ) →ₗ[ℝ] (ArchiveFockState → ℝ))
+    (hX : X = archiveJuliaRaisingQuery u M)
+    (hαu : α u = 1)
+    (hSymm : ∀ x y, Pₓ x y = Pₓ y x)
+    (hNondegenerate : ∀ x, (∀ y, Pₓ x y = 0) → x = 0)
+    (hIso : ∀ x y, Pₓ (M x) (M y) = Pᵧ x y)
+    (hu : u ≠ 0)
+    (hNull : Pₓ u u = 0) :
+    archiveJuliaQueryNullRecoveredFrame Pₓ Pᵧ u X α
+      (archiveJuliaQueryNullCanonicalWitness Pₓ u X α) = M := by
+  have hB : archiveJuliaQueryNullBlock X α = archiveJuliaNullBlock u M α := by
+    rw [hX]
+    exact archiveJuliaQueryNullBlock_readout u M α hαu
+  have hbne : (Pₓ u).comp (archiveJuliaNullBlock u M α) ≠ 0 :=
+    archiveJuliaNullBlock_covector_ne_zero Pₓ u M α hNondegenerate hu hNull
+  have hobs : archiveJuliaQueryNullMetricCovector Pₓ u X α =
+      (Pₓ u).comp (archiveJuliaNullBlock u M α) := by
+    simp [archiveJuliaQueryNullMetricCovector, hB]
+  have hobsne : archiveJuliaQueryNullMetricCovector Pₓ u X α ≠ 0 := by
+    rw [hobs]
+    exact hbne
+  have hnorm := archiveJuliaNullEuclideanWitness_normalized
+    (archiveJuliaQueryNullMetricCovector Pₓ u X α) hobsne
+  let z : RoleSpace := archiveJuliaQueryNullCanonicalWitness Pₓ u X α
+  have hbranch :
+      0 < 1 + (Pₓ u u) * α (M z) := by
+    dsimp [z]
+    rw [hNull]
+    norm_num
+  have hrecover := archiveJuliaQueryNullRecoveredFrame_eq
+    (Pₓ := Pₓ) (Pᵧ := Pᵧ) (u := u)
+    (z := z) (M := M) (α := α) (X := X) hX hαu hSymm hIso hnorm hbranch
+  simpa [z, archiveJuliaQueryNullCanonicalWitness] using hrecover
+
 /-- A Jordan--Wigner creator acting on the vacuum is the corresponding
 one-particle occupation state. -/
 theorem carCreateEnd_vacuum (r : Role) :
