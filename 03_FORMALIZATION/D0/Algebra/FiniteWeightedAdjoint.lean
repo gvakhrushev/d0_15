@@ -184,6 +184,30 @@ theorem finiteWeightedPairing_add_right (w : ι → K) (x y z : ι → K) :
 
 end Pairing
 
+section PositivePairing
+
+variable {ι : Type*} [Fintype ι]
+
+/-- A pointwise-positive diagonal profile makes the finite weighted pairing
+positive definite. This is a conditional algebraic inner-product statement;
+it does not choose or derive a profile. -/
+theorem finiteWeightedPairing_pos_def (w x : ι → ℝ)
+    (hw : ∀ i, 0 < w i) (hx : x ≠ 0) :
+    0 < finiteWeightedPairing w x x := by
+  classical
+  obtain ⟨i, hxi⟩ := Function.ne_iff.mp hx
+  have hnonneg (j : ι) : 0 ≤ w j * x j * x j := by
+    convert mul_nonneg (le_of_lt (hw j)) (sq_nonneg (x j)) using 1
+    ring
+  have hpositive : 0 < w i * x i * x i := by
+    convert mul_pos (hw i) (sq_pos_of_ne_zero hxi) using 1
+    ring
+  unfold finiteWeightedPairing
+  exact Finset.sum_pos' (fun j _ => hnonneg j)
+    ⟨i, Finset.mem_univ i, hpositive⟩
+
+end PositivePairing
+
 section
 
 variable {ι K : Type*} [Fintype ι] [DecidableEq ι] [Field K]

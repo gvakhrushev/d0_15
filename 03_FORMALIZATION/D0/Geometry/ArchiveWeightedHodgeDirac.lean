@@ -29,7 +29,10 @@ conditional `cubicalWeightedHodgeDirac_application` additionally constructs
 `d + d†_w` from the registered cubical coboundary and proves bilinear
 self-adjointness, the Hodge anticommutator, and degree preservation of its
 square. The profile may be signed; neither its positivity nor its geometric
-origin is derived here.
+origin is derived here. A separate positive-profile specialization below
+proves positive definiteness for an auxiliary diagonal pairing supplied by
+the caller. It is not the Lorentz-induced Hodge profile, whose finite exterior
+pairing is indefinite, and gives no standard-Hilbert or physical result.
 -/
 
 /-- The number of form degrees, derived from the four role directions. -/
@@ -118,6 +121,25 @@ theorem cubicalWeightedHodgeDirac_pairing_self_adjoint (N : ℕ)
   simpa [cubicalWeightedHodgeDirac, cubicalWeightedHodgeDiracₗ] using
     (D0.Algebra.finiteWeightedHodgeDirac_pairing_self_adjoint w hw
       (cubicalCoboundaryₗ N) ψ φ)
+
+/-- For a caller-supplied positive comparison profile on the existing finite
+cochain carrier, the diagonal pairing is positive definite and the constructed
+cubical weighted Hodge-Dirac is self-adjoint for it. This profile is not the
+Lorentz-induced Hodge weight and is neither derived nor physically selected. -/
+theorem cubicalWeightedHodgeDirac_positive_profile_application :
+    (∀ N (w : ArchiveCochainBasis N → ℝ), (∀ p, 0 < w p) →
+      ∀ ψ, ψ ≠ 0 → 0 < D0.Algebra.finiteWeightedPairing w ψ ψ) ∧
+    (∀ N (w : ArchiveCochainBasis N → ℝ), (∀ p, 0 < w p) →
+      ∀ ψ φ, D0.Algebra.finiteWeightedPairing w
+        (cubicalWeightedHodgeDirac N w ψ) φ =
+          D0.Algebra.finiteWeightedPairing w ψ
+            (cubicalWeightedHodgeDirac N w φ)) := by
+  refine ⟨?_, ?_⟩
+  · intro N w hw ψ hψ
+    exact D0.Algebra.finiteWeightedPairing_pos_def w ψ hw hψ
+  · intro N w hw ψ φ
+    exact cubicalWeightedHodgeDirac_pairing_self_adjoint N w
+      (fun p => ne_of_gt (hw p)) ψ φ
 
 /-- Its square is the anticommutator `d d†_w + d†_w d`, using the actual
 nilpotency theorem for the normalized cubical coboundary. -/

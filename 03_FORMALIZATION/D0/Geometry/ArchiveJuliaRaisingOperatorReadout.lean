@@ -3,12 +3,12 @@ import D0.Geometry.A4DNilpotentAffineMatterLift
 /-!
 # Julia raising query: exact vacuum readout on the finite carrier
 
-This is a finite-carrier application of Eq. (26) in the source pinned at
-`02_REGISTRY/research/D0_GR_PRIMARY_POSITIVE_CASE.md` and recorded in PR #334,
-commit `fe5cf335da04cac14e50407b03f98b96be17dc52`, file
-`02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md`.
-The exact consumer is §5.1 of
-`02_REGISTRY/research/A4D_EXACT_AF_RADIAL_COFRAME_EQUIVALENCE_NONLINEAR_SPIN2_2026_10_18.md`.
+This is a finite-carrier application of Eq. (26) in the published #334 source
+at commit `fe5cf335da04cac14e50407b03f98b96be17dc52`, path
+`02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md`,
+blob `1c8d59e5533b443d9a015dc4512cfbc160ae7e62`, §8.4. Its exact consumer is
+§5.1 of `02_REGISTRY/research/A4D_EXACT_AF_RADIAL_COFRAME_EQUIVALENCE_NONLINEAR_SPIN2_2026_10_18.md`
+at the same commit, blob `734e21ae6bc04ff3446ad15858936d417fdd2e55`.
 
 On the existing 16-state carrier, the frame lift fixes the vacuum. The vector
 creator built from the owned Jordan--Wigner `carCreateEnd` matrices agrees with

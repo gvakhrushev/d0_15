@@ -220,7 +220,7 @@ The search run used snapshot `1c7e39336381658fd2d7b17f2a077e5c2fec0817` with `wo
 
 The existing `tools/test_gr_assembly.py` suite has 106/106 passing tests with a temporary Git `core.autocrlf=false` override. Its default native-Windows run reaches 15 errors and one secondary assertion failure because the fixture hashes a CRLF worktree `decisions.md` before Git stores the normalized blob; the resulting evidence digest differs from `git show`. The fixture is owned by open PR #398, so this branch records the environment-dependent result and leaves that file to its existing owner.
 
-Next: reconcile the exact-name inventory with source-keyed mathematical units and dispositions, obtain independent acceptance of the exact C0 package, and continue the remaining established mathematical migrations. The 24 October checkpoints below record the refreshed 13-case cold-start suite, compiled claim-reuse examples, shared Vieta migration, and current `D0.All` build. The reviewed Eq. (26) application covers the finite-carrier vacuum response; all-state operator comparison, endpoint-field binding, the §§8.4–8.5 inverse, and the §5.1 consumer transport remain with their existing owners. Migrate connected mathematical blocks while preserving public imports and scopes; formalize or obtain accepted owner review for every established C0 unit. This checkpoint is not completion.
+At that checkpoint, the next work was to reconcile the exact-name inventory with source-keyed mathematical units and dispositions, obtain independent acceptance of the exact C0 package, and continue the remaining established mathematical migrations. The 24 October checkpoints below record the refreshed 13-case cold-start suite, compiled claim-reuse examples, shared Vieta migration, and current `D0.All` build. The reviewed Eq. (26) application covers the finite-carrier vacuum response; all-state operator comparison, endpoint-field binding, the §§8.4–8.5 inverse, and the §5.1 consumer transport remain with their existing owners. Migrate connected mathematical blocks while preserving public imports and scopes; formalize or obtain accepted owner review for every established C0 unit. This checkpoint is not completion.
 
 ## Concrete reuse application: top-Hodge scene
 
@@ -1260,3 +1260,66 @@ endings. No scientific owner or release status was changed.
 - GitHub `guards` completed successfully on this head (run `40115181286`). `lean-build` also completed successfully (run `40115181248`), but its log explicitly says `Draft PR: full D0.All is deferred until ready_for_review`; this is not a remote full Lean build.
 - The local current-source integration compiled all 21 PR-changed Lean modules, six cache-missing dependencies, and `D0.All` through Lean 4.30.0 using a temporary OLean overlay and the preserved local Mathlib cache. Unchanged imported modules reused cached OLean files. The exact module inventory and claim-reuse artifacts above bind the compiled source digest and axiom footprint.
 - A clean CI `D0.All` build and independent semantic acceptance remain pending. The weighted-Hodge application remains conditional on pointwise-nonzero supplied weights and does not select positive or geometric weights. C0 remains unfrozen and independently unaccepted; existing scientific owners and statuses remain unchanged.
+
+## Positive-profile comparison specialization for cubical Hodge (24 October 2026)
+
+The generic diagonal pairing now has a positive-definiteness theorem: for any
+finite coordinate type and any caller-supplied pointwise-positive real profile,
+`x ≠ 0` implies `finiteWeightedPairing w x x > 0`. The concrete cubical
+Hodge-Dirac module applies it to `ArchiveCochainBasis N` and packages that
+result with self-adjointness of the existing `d + d†_w` operator for the same
+positive comparison profile, at every refinement. The signed-profile Hodge
+square and grading results remain in the existing application.
+
+This positive profile is an auxiliary comparison form. It is not the
+Lorentz-induced Hodge profile in `A4D_CAR_HODGE_METRIC_ACTION.md`, whose
+finite exterior pairing is indefinite with signature `(8,8)`. No positive or
+geometric metric weight is constructed, and this does not establish a
+standard-Hilbert representative or physical Hodge selection.
+
+The existing claim row
+`D0-ARCHIVE-WEIGHTED-HODGE-DIRAC-001` now lists
+`cubicalWeightedHodgeDirac_positive_profile_application` as a third exact
+theorem-name locator. Its `LEAN_PROVED` and `CORE-FORMALIZED` fields, owner,
+assumptions, and claim ID are unchanged. The locator records a conditional
+compiled application and does not independently accept the broader canonical
+claim or C0 membership. `formal_support.csv` now points the Julia readout
+module to this current artifact because its older `referenced_by` path was an
+unmerged source file; the Lean module itself now records the source and
+consumer commit/path/blob pins directly.
+
+The compiled declaration inventory is
+`sources/d0_proof_architecture_formalization_2026-10-24/weighted_cubical_hodge_positive_profile_module_declarations_current.json`
+(SHA-256 `6cb3ded2b09a15a0121b015a03ed6ba22f105edc411376e24c9e11d58ec584e2`).
+It enumerates 84 declarations in the finite weighted-adjoint, cubical
+coboundary, and weighted Hodge modules through public import `D0.All`, at
+Lean source digest `3f8df9fb7950c123c2c665de47937cb43b90b796c89c0c445e7a14bf68363126`
+and collector SHA-256 `48f6a0da41a6c15222a97463851f43b3d7db651e3ac42868031574bc52e09f38`.
+The refreshed claim-locator record is
+`sources/d0_proof_architecture_formalization_2026-10-24/weighted_cubical_hodge_positive_profile_claim_reuse_current.json`
+(SHA-256 `f5d1833f8aad3bc340773050457ff77886998c459c32efab20f9a1d991e5b256`),
+collector SHA-256 `24ba74141d67ee3f9b2474dca339fc333d559c6c29774e4b40e36aa38a670c50`.
+It pins the exact input authority bytes: `claims.csv` SHA-256
+`b0165dbcd3bd558f81506fe8b77b8c16c989448dea20341e61dfbc200833c6b5`,
+`formal_support.csv` SHA-256
+`60e86d55dc9919bfbb51a44de4844fd93e13b0a462e1b0e554b754877cf11f31`, and
+the generated ClaimMap SHA-256
+`c8602c403e359d421c7b34e2a7ebeb5b3c65996c8cfedd3ba5d6368bc0aeace2`.
+All nine generated candidate names were answered; the three exact registered
+locators resolve through `D0.All`. The new application depends on the generic
+positive-definiteness theorem and the registered cubical operator's
+self-adjointness theorem, with transitive axioms `Classical.choice`,
+`Quot.sound`, and `propext`; no `sorryAx` or `native_decide` appears in this
+new theorem's closure.
+
+Validation: Lean 4.30.0 compiled the changed generic pairing module, the
+cubical weighted-Hodge owner module, the updated Julia readout module, and the
+current `D0.All` into a temporary OLean overlay using the preserved local
+Mathlib cache. Unchanged imports reused cached OLeans, so this is not a fresh
+Lake build. `generate_lean_views.py --check` passes with `stale=0`; ClaimMap
+coverage passes; `formalization_debt_audit.py --check` reports 3 findings,
+matching the baseline of 3; `test_proof_architecture.py` passes 35/35 and
+`test_lean_declaration_inventory.py` passes 14/14. The CRLF-aware diff check
+and the changed `formal_support.csv` path check also pass. The current source
+remains unmerged in Draft PR #402; clean remote `D0.All` and independent
+semantic acceptance are still pending. C0 remains unfrozen and unaccepted.
