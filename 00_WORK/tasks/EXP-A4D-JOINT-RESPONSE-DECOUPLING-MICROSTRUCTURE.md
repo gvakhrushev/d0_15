@@ -8304,3 +8304,77 @@ Final work validation, agent protocol, gravity assembly, repository
 validation and diff whitespace checks PASS. No scientific promotion.
 Physical repeatable seed/source/control admission, extra independent
 upstream equations and compatible stationary refinement remain open.
+
+
+### 24 October: original fresh reference and full CAR preparation source
+
+Phase: native realization / full-source composition; same PR334 owner,
+Assembly-Slot constitutive and Assembly-Carrier native-programme-v1.
+Input4489d4fd1fae34c3de1c876275b6b9debba07b75. Write paths: primary
+residual owner7p and this brief. No new task or scientific promotion.
+
+Changed mathematical input:7o's all-reference effect gives the actual
+operator alphabet I,A_xa on full native CAR/site/RIGHT banks. The older
+collective theorem explicitly controlled artificial kind/sign inputs;
+its extension to true CAR required this operator-alphabet map and its
+NON-diagonal native covariance. The actual known pure seed is available
+from existing rawF preparation9.1 and original Fourier source2, avoiding
+an independent seed/preparation oracle on that interface.
+
+The known F-only source is kept distinct from mixedC_mom. At each dyadic
+mesh choose the ORIGINAL four-copy Fourier subfamily k_j=(L/4)kappa_j;
+lookup uses fineXmod4. A different high-bit nested reference is not
+identified with it, and no physical interlevel map is inferred. Its raw
+H/Boolean/CZ word includes fresh parityplus resources perH, all flags,
+failed columns and actual inverse. The conditional pure material source
+is exactly original7c C(alpha,beta), readiness independent of its fields.
+Sharedc0 probability is counted once. The entire source is inside the
+complete echo, so its whole heat and complement are priced by152.
+All seed/selector/encoder readiness enters the actual jointgamma_N.
+
+The first conditional is FULL operator153:
+E1=qI+(1/k)sum_a(partial_s_a q)(A_a-s_aI), including repeated occurrences.
+The exact native covariance154 is blockdiag w(pI+psi psi^T)-s s^T.
+Its bounds155 use p^6=5-8p=9-4sqrt5>0 and the ACTUAL spatial weights;
+156 relates it to both material Euler rows with their real Jacobian.
+At the true ideal free-material root this conditional is scalar on
+all16 CAR grades/site/RIGHT, so all one-bank pure normals vanish.
+Fixed-collar values are coefficients; independently read collar moments
+keep their boundary reactions. The present Bernstein approximation keeps
+its actual nonzero g and source error rather than inheriting a root.
+
+The OWNED overlap estimate now applies to actualCAR inputs.157-159 give
+the O1/N pure-preparation norm, correctsqrtN-normalized converse and full
+BookgainGamma_N. Constants retain k,h,weights and the real norm. There
+is no weak-tau/readiness loss in the normalized-bank algebra; however
+L_N is explicitly the actual CONDITIONAL normalized-bank lift. A generic
+raw projection can cost1/sqrt(gamma_seed,N); it remains in the physical
+source budget. The theorem covers arbitrary correlated PURE tangents at
+an IID base, not arbitrary correlated/mixed base states. Raw flag,
+readiness, clock, seed-source and downstream controller rows remain.
+
+Consumed parent substitutions: known repeatable seed existence for7o's
+explicit reference interface; fullactualCAR bank-preparation source
+control for the independent-input budget of129, beyond artificialSIGN.
+Missing application remains actual endogenous query/configuration map
+into BookX_N, with its independently admitted controls, complete selected
+source and compatible joint stationary spatial refinement. Correctness
+of an externally supplied source task cannot replace that horizontal
+physical equation. No positive_gr/GR_closed/raw216 completion is claimed.
+
+Narrow exact symbolic checks (Python3.9.6/SymPy, exit0): raw2G3CX parity
+source150 and original pure CARseed; native two-site covariance on full16;
+p^6 coercivity identities; critical two-slot finiteN scaling and the
+noncritical one-slot scaledsource control. Independent repeated-label
+three-slot contraction check also passed. These are new interface checks;
+no unchanged root/full128/Lean or registered scientific suite is replayed.
+
+Final section7p including heading and separators immediately before8:
+13991UTF8bytes, SHA256
+cb0cac9bfbc68a015e65c1f6e7007be601baeeb329fb36c7c8f87cf339031d0a.
+Independent price_geometry_bridge and stationary_root_transfer scientific
+reviews reread and ACCEPTED this final pin. The seed-source reviewer
+confirmed the exact direct Fourier family and raw success factorization.
+
+Final work/protocol/assembly/repository guards and diff whitespace check PASS.
+Scientific status and all remaining native source obligations are unchanged.
