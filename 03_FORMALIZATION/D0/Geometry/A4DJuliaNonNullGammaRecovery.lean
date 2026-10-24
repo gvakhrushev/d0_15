@@ -567,12 +567,156 @@ theorem archiveJuliaSourceVolumeEquiv_creator_conjugation (u : RoleSpace) :
               archiveJuliaSourceVolumeEquiv_symm_comp]
             simp
 
-/-- The oriented top-sector vector used to express properness of a source-frame
-map.  Fixing this single vector is the orientation condition; it is weaker
-than, and does not assume, covariance of the volume operator on the full
-16-state carrier. -/
+/-- The oriented source-volume vector used to express properness of a
+source-frame map. Fixing this single vector is the orientation condition; it
+is weaker than, and does not assume, covariance of the volume operator on the
+full 16-state carrier. -/
 noncomputable def archiveJuliaSourceVolumeVacuum : ArchiveFockState → ℝ :=
   archiveJuliaSourceVolumeEquiv (Pi.single fockVacuumState (1 : ℝ))
+
+private noncomputable def archiveJuliaSourceCreatorWord : List Role →
+    (ArchiveFockState → ℝ) → (ArchiveFockState → ℝ)
+  | [], ψ => ψ
+  | r :: rs, ψ => archiveExteriorCreatorLM (archiveRoleBasis r)
+      (archiveJuliaSourceCreatorWord rs ψ)
+
+private theorem archiveJuliaSourceContraction_vacuum
+    (α : Module.Dual ℝ RoleSpace) :
+    archiveExteriorContraction α (Pi.single fockVacuumState (1 : ℝ)) = 0 := by
+  apply archiveFockExteriorEquiv.injective
+  simp [archiveExteriorContraction, archiveFockExteriorEquiv_single,
+    archiveFockExteriorBasis_apply, archiveFockSupport_vacuum,
+    archiveRoleBasis_ExteriorAlgebra_empty]
+
+private theorem archiveJuliaSourceGamma_vacuum (r : Role) :
+    archiveJuliaSourceGamma r (Pi.single fockVacuumState (1 : ℝ)) =
+      archiveExteriorCreatorLM (archiveRoleBasis r)
+        (Pi.single fockVacuumState (1 : ℝ)) := by
+  simp only [archiveJuliaSourceGamma, archiveJuliaLorentzGamma,
+    LinearMap.add_apply]
+  rw [archiveJuliaSourceContraction_vacuum]
+  simp
+
+private theorem archiveJuliaSourceGamma_creatorWord (r : Role) :
+    ∀ rs : List Role, r ∉ rs → rs.Nodup →
+      archiveJuliaSourceGamma r
+          (archiveJuliaSourceCreatorWord rs
+            (Pi.single fockVacuumState (1 : ℝ))) =
+        archiveJuliaSourceCreatorWord (r :: rs)
+          (Pi.single fockVacuumState (1 : ℝ)) := by
+  intro rs
+  induction rs with
+  | nil =>
+      intro _ _
+      simpa [archiveJuliaSourceCreatorWord] using
+        archiveJuliaSourceGamma_vacuum r
+  | cons s rs ih =>
+      intro hr hnd
+      have hrs : r ≠ s := by
+        intro h
+        apply hr
+        simp [h]
+      have hrrest : r ∉ rs := by
+        intro h
+        exact hr (List.mem_cons_of_mem s h)
+      have hnd' := List.nodup_cons.mp hnd
+      have htail := ih hrrest hnd'.2
+      have hswap : archiveJuliaSourceGamma r
+          (archiveExteriorCreatorLM (archiveRoleBasis s)
+            (archiveJuliaSourceCreatorWord rs
+              (Pi.single fockVacuumState (1 : ℝ)))) =
+          -archiveExteriorCreatorLM (archiveRoleBasis s)
+            (archiveJuliaSourceGamma r
+              (archiveJuliaSourceCreatorWord rs
+                (Pi.single fockVacuumState (1 : ℝ)))) := by
+        simpa [hrs] using archiveJuliaSourceGamma_creator_swap_apply r s
+          (archiveJuliaSourceCreatorWord rs
+            (Pi.single fockVacuumState (1 : ℝ)))
+      have hcreator := archiveExteriorCreator_anticommute
+        (archiveRoleBasis r) (archiveRoleBasis s)
+        (archiveJuliaSourceCreatorWord rs
+          (Pi.single fockVacuumState (1 : ℝ)))
+      have hcomm : archiveExteriorCreatorLM (archiveRoleBasis r)
+          (archiveExteriorCreatorLM (archiveRoleBasis s)
+            (archiveJuliaSourceCreatorWord rs
+              (Pi.single fockVacuumState (1 : ℝ)))) =
+          -archiveExteriorCreatorLM (archiveRoleBasis s)
+            (archiveExteriorCreatorLM (archiveRoleBasis r)
+              (archiveJuliaSourceCreatorWord rs
+                (Pi.single fockVacuumState (1 : ℝ)))) := by
+        exact eq_neg_iff_add_eq_zero.mpr hcreator
+      calc
+        archiveJuliaSourceGamma r
+            (archiveJuliaSourceCreatorWord (s :: rs)
+              (Pi.single fockVacuumState (1 : ℝ))) =
+          -archiveExteriorCreatorLM (archiveRoleBasis s)
+            (archiveJuliaSourceGamma r
+              (archiveJuliaSourceCreatorWord rs
+                (Pi.single fockVacuumState (1 : ℝ)))) := by
+                simpa [archiveJuliaSourceCreatorWord] using hswap
+        _ = -archiveExteriorCreatorLM (archiveRoleBasis s)
+            (archiveJuliaSourceCreatorWord (r :: rs)
+              (Pi.single fockVacuumState (1 : ℝ))) := by
+              rw [htail]
+        _ = archiveJuliaSourceCreatorWord (r :: s :: rs)
+            (Pi.single fockVacuumState (1 : ℝ)) := by
+              simpa [archiveJuliaSourceCreatorWord] using hcomm.symm
+
+private theorem archiveJuliaSourceRole_ne_of_index_ne {r s : Role}
+    (h : roleOrderIndex r ≠ roleOrderIndex s) : r ≠ s := by
+  intro hrs
+  exact h (congrArg roleOrderIndex hrs)
+
+/-- The oriented source-volume vector is exactly the ordered product of its
+four source creators acting on the Fock vacuum. This identifies its concrete
+finite-carrier representative without yet replacing vector preservation by a
+coordinate determinant condition. -/
+theorem archiveJuliaSourceVolumeVacuum_eq_ordered_creator_product :
+    archiveJuliaSourceVolumeVacuum =
+      archiveExteriorCreatorLM (archiveRoleBasis A)
+        (archiveExteriorCreatorLM (archiveRoleBasis B)
+          (archiveExteriorCreatorLM (archiveRoleBasis C)
+            (archiveExteriorCreatorLM (archiveRoleBasis D)
+              (Pi.single fockVacuumState (1 : ℝ))))) := by
+  have hAB : A ≠ B := by
+    apply archiveJuliaSourceRole_ne_of_index_ne
+    norm_num [roleOrderIndex, D0.A, D0.B, D0.C, D0.D]
+  have hAC : A ≠ C := by
+    apply archiveJuliaSourceRole_ne_of_index_ne
+    norm_num [roleOrderIndex, D0.A, D0.B, D0.C, D0.D]
+  have hAD : A ≠ D := by
+    apply archiveJuliaSourceRole_ne_of_index_ne
+    norm_num [roleOrderIndex, D0.A, D0.B, D0.C, D0.D]
+  have hBC : B ≠ C := by
+    apply archiveJuliaSourceRole_ne_of_index_ne
+    norm_num [roleOrderIndex, D0.A, D0.B, D0.C, D0.D]
+  have hBD : B ≠ D := by
+    apply archiveJuliaSourceRole_ne_of_index_ne
+    norm_num [roleOrderIndex, D0.A, D0.B, D0.C, D0.D]
+  have hCD : C ≠ D := by
+    apply archiveJuliaSourceRole_ne_of_index_ne
+    norm_num [roleOrderIndex, D0.A, D0.B, D0.C, D0.D]
+  have hCnotD : C ∉ [D] := by simpa using hCD
+  have hBnotCD : B ∉ [C, D] := by simp [hBC, hBD]
+  have hAnotBCD : A ∉ [B, C, D] := by simp [hAB, hAC, hAD]
+  have hNCD : ([C, D] : List Role).Nodup := by
+    simp [List.nodup_cons, hCD]
+  have hNBCD : ([B, C, D] : List Role).Nodup := by
+    simp [List.nodup_cons, hBC, hBD, hCD]
+  have hD := archiveJuliaSourceGamma_creatorWord D [] (by simp) List.nodup_nil
+  have hC := archiveJuliaSourceGamma_creatorWord C [D]
+    hCnotD (by simp)
+  have hB := archiveJuliaSourceGamma_creatorWord B [C, D]
+    hBnotCD hNCD
+  have hA := archiveJuliaSourceGamma_creatorWord A [B, C, D]
+    hAnotBCD hNBCD
+  rw [archiveJuliaSourceVolumeVacuum, archiveJuliaSourceVolumeEquiv_apply]
+  rw [archiveJuliaSourceVolumeElement]
+  simp only [archiveJuliaSourceCreatorWord] at hD hC hB hA
+  change archiveJuliaSourceGamma A
+    (archiveJuliaSourceGamma B (archiveJuliaSourceGamma C
+      (archiveJuliaSourceGamma D (Pi.single fockVacuumState (1 : ℝ))))) = _
+  rw [hD, hC, hB, hA]
 
 private theorem archiveJuliaSourceVolume_creator_right (u : RoleSpace) :
     archiveJuliaSourceVolumeEquiv.toLinearMap.comp

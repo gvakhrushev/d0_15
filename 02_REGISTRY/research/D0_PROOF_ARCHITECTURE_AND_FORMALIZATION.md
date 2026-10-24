@@ -2106,3 +2106,38 @@ Lean module SHA-256 is
 `f0ac215c92ed4957fbbde1f71d881767c7372683627e1f363b99aa4f9d1ec0de`. The
 declaration inventory is
 `sources/d0_proof_architecture_formalization_2026-10-24/non_null_gamma_oriented_isometry_inventory.json`.
+
+### Exact ordered-creator form of the source-volume vector (25 October 2026)
+
+The oriented vector used in the preceding endpoint hypothesis now has an
+explicit representative on the owned finite carrier:
+`archiveJuliaSourceVolumeVacuum_eq_ordered_creator_product` proves that it is
+the ordered `A,B,C,D` creator product applied to the Fock vacuum. The proof
+first shows every exterior contraction kills the vacuum, then inducts through
+the distinct source gamma generators using their CAR anticommutation with
+creators. This records the vector itself, not merely the action of the volume
+operator on the full carrier.
+
+The owning-module inventory contains 89 declarations. The new vector
+factorization theorem has transitive axioms `Classical.choice`, `Quot.sound`,
+and `propext`; it does not inherit the older CAR sign-checker's
+`native_decide` dependency. This makes the remaining orientation step concrete
+for a determinant adapter, but does not prove that preservation of this vector
+is equivalent to the coordinate condition `det M = 1`. That adapter and the
+physical endpoint instantiation remain open; all-jet/variational transport,
+physical admission, price/source selection, and GR closure remain open as well.
+
+The narrow Lean 4.30.0 build passed again for
+`D0.Geometry.A4DJuliaNonNullGammaRecovery` (2,993 Lake jobs). The inventory was
+generated against this owning-module import root. At base snapshot
+`9fba40378f5a6c0f9176a8cd771b0f0669092b1a` with `worktree_dirty=true`, Lean
+source digest is
+`6fd381b4d89216b33fa8d3dd5018481812c145d199d650d07b739f6de772396a`, collector
+SHA-256 is
+`d688a0e49f872a6d32941a59121c9c0ac452167608446976abccebad6b37dbb3`, inventory
+SHA-256 is
+`1fea1790da7d7560646b1453eaf16b32a15842f514eff615d1b51caa50851396`, and
+Lean module SHA-256 is
+`d68f497fee520202de4079de95e437cd5ca84ba51488c2946ad31a18053d7237`. The
+declaration inventory is
+`sources/d0_proof_architecture_formalization_2026-10-24/non_null_gamma_volume_vector_factorization_inventory.json`.
