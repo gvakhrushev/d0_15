@@ -976,7 +976,7 @@ non-growth (3 findings, baseline 3), and diff check. GitHub `D0 Lean build`
 run 2994 and `D0 guards` run 5032 both succeeded on code commit
 `23f9f5c7093386a30c87386353d06ae03dace9b6`.
 
-## Hodge degree-preservation application (24 October 2026)
+## Hodge degree-preservation and diagonal-adjoint applications (24 October 2026)
 
 The registered `D0-ARCHIVE-WEIGHTED-HODGE-DIRAC-001` module previously exposed
 degree preservation only as `DegreePreservingLaplacian true`. It now also
@@ -989,30 +989,61 @@ self-adjoint result reuses `hodgeCarDirac_self_adjoint`. The number of degrees
 is now derived as `Fintype.card Role + 1 = 5` rather than introduced as a bare
 constant.
 
-The weighted operator `W`, weighted adjoint, and conjugated weighted
-self-adjoint representative are still not constructed in this module. These
-are unweighted special-case results under the existing counting pairing. The
-legacy Boolean field remains visible as a scope limitation, and the weighted
-claim's source and semantic C0 review remain open. No claim status, owner,
-physical assumption, or Hodge-metric selection is changed.
+The geometric weight operator `W_m` derived from a coframe or metric and the
+conjugated positive-Hilbert self-adjoint representative remain unconstructed.
+The module now also applies a generic finite algebraic adjoint to the existing
+`hodgeCarDirac` for an externally supplied nonzero diagonal cochain profile.
+That pairing need not be positive, and this result does not derive the actual
+geometric profile. The legacy Boolean field remains visible as a scope
+limitation, and the weighted claim's source and semantic C0 review remain open.
+No claim status, owner, physical assumption, or Hodge-metric selection is
+changed.
 `formal_support.csv` records the concrete consumer edge from
 `ArchiveHodgeCARDiracSquare` to this application.
 
-The compiled reuse record is preserved at
+The compiled reuse record and declaration inventory are refreshed below for
+the current owner type. The locator resolves through `D0.All`; the elaborated
+owner type contains the zero-square, degree-preservation, counting-pairing
+self-adjointness, and arbitrary nonzero diagonal-weight adjoint conclusions.
+The full axiom footprint remains recorded in the current inventory.
+
+The reusable algebra module `D0.Algebra.FiniteWeightedAdjoint` defines, on any
+finite coordinate type over a field, the bilinear pairing
+`Σ_i w_i x_i y_i` and its coordinate adjoint
+`(A†_w y)_i = w_i⁻¹ Σ_j w_j A(e_i)_j y_j`. Its theorem proves the adjoint
+identity for every linear operator when each `w_i ≠ 0`; it does not assume
+positivity. The application module defines
+`hodgeCarDiracDiagonalAdjoint` from the existing linear map `hodgeCarDiracₗ`
+and includes the all-refinement identity in
+`archive_weighted_hodge_dirac_owner`. `formal_support.csv` tracks the generic
+module's actual consumer, and the generated public import `D0.All` imports the
+new support module directly.
+
+The exact module inventory is
+`sources/d0_proof_architecture_formalization_2026-10-24/weighted_hodge_adjoint_module_declarations.json`
+(SHA-256 `0ae014de540605926765d158ce5850fc5396b67922a746e161ce2ee5b1d9a865`).
+It enumerates 21 declarations from the generic and application modules under
+Lean 4.30.0 and public import `D0.All`; it records Lean source digest
+`692151ba3f36ceb30848a89d1eec5cc738fc68ca1944ebb2e42e7adea2e5576a` and
+collector SHA-256
+`ec3a29823eea0ff27ddde532d985c732063b796f1ba08052702f103a494d6300`.
+The compiled claim-reuse record at
 `sources/d0_proof_architecture_formalization_2026-10-24/weighted_hodge_claim_reuse.json`
-(SHA-256 `13e3a995feb22d64a61d4146cfb0a67c2816f542d20d2044a0be946445ccd345`).
-The locator resolves through `D0.All`; the elaborated owner type now includes
-the zero-square, degree-preservation, and counting-pairing self-adjointness
-conclusions. Its proof dependencies include `d_squared_eq_zero`,
-`unweightedHodgeSquare_degree_preserving`, `hodgeCarDirac_self_adjoint`, and
-`formDegreeCount4D_eq_five`. Source digest
-`f74092081a96038c7336f91a7efd8e7f429c0c06ac3f69d8737dc0f901cab8da`, collector
-digest `7160df1ba73e78919758cefb84b6dcbc08c04fe21caf3210d3adbfd8b8ed4f45`,
-pre-publication local HEAD `6b59bc57ca97275df9e973715cdb503ec8fc5c4e`, and
-`worktree_dirty=true` are recorded. The axiom footprint includes the existing
-named `native_decide` axioms for the CAR creation, annihilation, and mixed
-anticommutator results, as well as `Classical.choice`, `Quot.sound`, and
-`propext`.
+has SHA-256 `7e259243d104ca5294e921b1cce34d8ae4cdfff53a88cd31500f9c1d98472683`.
+Its owner type includes the arbitrary nonzero-weight identity; the elaborated
+proof dependencies include `hodgeCarDirac_diagonal_weight_adjoint` and the
+generic `finiteWeightedPairing_adjoint`. The generic adjoint theorem's axiom
+closure is `Classical.choice`, `Quot.sound`, and `propext`; the owner retains
+its existing CAR `native_decide` dependencies as recorded in the full
+inventory. Both machine-readable records bind the current source digest above
+and report the pre-publication local snapshot `6b59bc57ca97275df9e973715cdb503ec8fc5c4e`
+with `worktree_dirty=true`.
+
+The final local `lake build D0.All` passed (4,565 jobs), rebuilding both the
+generic adjoint module and its Hodge consumer on the final Lean source. The
+inventory and reuse extraction also compiled through `D0.All`; the Hodge
+source remains conditional on the supplied weight and has no physical or
+metric-selection interpretation.
 
 ## Exact finite weighted-differential leakage witness (24 October 2026)
 
@@ -1080,8 +1111,9 @@ queried at local source snapshot `6b59bc57ca97275df9e973715cdb503ec8fc5c4e`
 with `worktree_dirty=true`; the inventory's Lean source digest above binds the
 actual Lean contents. The transitive axiom footprint includes
 `Classical.choice`, `Quot.sound`, `propext`, and existing CAR
-`native_decide` results for degree raising, the finite pair degree, and the
-two creation coefficients; no axiom-free claim is made.
+`native_decide` results for CAR support, singleton-vacuum behavior, degree
+raising, the finite pair degree, and the two creation coefficients; no
+axiom-free claim is made.
 
 Validation for this slice passed: narrow build of
 `D0.Geometry.ArchiveNaiveWeightedDegreeLeakageNoGo` (2,976 Lake jobs), compiled
@@ -1089,3 +1121,12 @@ claim reuse through `D0.All`, generated-view check (`stale=0`), formalization-
 debt non-growth (3 findings, baseline 3), and `git diff --check`. No physical
 Hodge metric, universal weight obstruction, GR premise, claim status, or
 scientific owner is selected or closed by this finite example.
+
+An independent read-only scope review of PR head
+`52eee9d7668ed3849b809b1f61f9a118355e5e44` supports the arbitrary-profile
+degree-raising result and the registered `N=1` complete-output application.
+The review did not build the sources and did not accept C0 or the broader
+scientific claim. It identified the two omitted CAR axiom entries for support
+and singleton-vacuum behavior; the full inventory already recorded them, and
+the summary above now names them explicitly. The broad registry wording and
+status remain with the existing owner.

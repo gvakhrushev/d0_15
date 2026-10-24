@@ -120,7 +120,7 @@
   "source_digests": {
     "02_REGISTRY/claims.csv": "d86d7965f0cf64164cdf7536a4fb5119ec9655e5b5082e3bbe34ce6459d35003",
     "02_REGISTRY/assumptions.csv": "2bc9f8c040a776d784fdbfdf62569b72e4f70ff0a182fc66d0ced31cb5f13a36",
-    "02_REGISTRY/formal_support.csv": "d3e4af39df499d8136c0fbbf99c7e6129afd0497c0d34dd6d3ef32fbd5eba139",
+    "02_REGISTRY/formal_support.csv": "dee1c98bf72c641bd34b8f4c4070fa5d1691ac3aaef01862c2d84b8ff7cd20b3",
     "02_REGISTRY/aliases.csv": "8cda9e7ebfa26a01a04a4d51b56eb6b93425816a5fe073aa74cbae94041f672f",
     "02_REGISTRY/gr_assembly/applications.json": "a493c0161b2f39ec14925e38131f7c2d240cd07bd2e27404a35098bc96eb0dc8",
     "02_REGISTRY/gr_assembly/contract.json": "72fb3bbbc320b4af217cbe7c09580b44556b354e9668cbd11e76933fa8209ba6",
@@ -151,31 +151,31 @@
                 "propext"
               ],
               "binders": [],
-              "conclusion_whnf": "D0.Geometry.formDegreeCount4D = 5 ∧\n  Fintype.card D0.Geometry.CubicalCellType = 16 ∧\n    D0.Geometry.DegreePreservingLaplacian true ∧\n      Fintype.card D0.Role = 4 ∧\n        (∀ (N : ℕ) (ψ : D0.Geometry.ArchiveCochain N),\n            D0.Geometry.cubicalCoboundary N (D0.Geometry.cubicalCoboundary N ψ) = 0) ∧\n          (∀ (N k : ℕ) (ψ : D0.Geometry.ArchiveCochain N),\n              D0.Geometry.HomogeneousCochain N k ψ →\n                D0.Geometry.HomogeneousCochain N k (D0.Geometry.hodgeCarDirac N (D0.Geometry.hodgeCarDirac N ψ))) ∧\n            ∀ (N : ℕ) (ψ φ : D0.Geometry.ArchiveCochain N),\n              D0.Geometry.cochainPairing N (D0.Geometry.hodgeCarDirac N ψ) φ =\n                D0.Geometry.cochainPairing N ψ (D0.Geometry.hodgeCarDirac N φ)",
+              "conclusion_whnf": "D0.Geometry.formDegreeCount4D = 5 ∧\n  Fintype.card D0.Geometry.CubicalCellType = 16 ∧\n    D0.Geometry.DegreePreservingLaplacian true ∧\n      Fintype.card D0.Role = 4 ∧\n        (∀ (N : ℕ) (ψ : D0.Geometry.ArchiveCochain N),\n            D0.Geometry.cubicalCoboundary N (D0.Geometry.cubicalCoboundary N ψ) = 0) ∧\n          (∀ (N k : ℕ) (ψ : D0.Geometry.ArchiveCochain N),\n              D0.Geometry.HomogeneousCochain N k ψ →\n                D0.Geometry.HomogeneousCochain N k (D0.Geometry.hodgeCarDirac N (D0.Geometry.hodgeCarDirac N ψ))) ∧\n            (∀ (N : ℕ) (ψ φ : D0.Geometry.ArchiveCochain N),\n                D0.Geometry.cochainPairing N (D0.Geometry.hodgeCarDirac N ψ) φ =\n                  D0.Geometry.cochainPairing N ψ (D0.Geometry.hodgeCarDirac N φ)) ∧\n              ∀ (N : ℕ) (w : D0.Geometry.ArchiveCochainBasis N → ℝ) (ψ φ : D0.Geometry.ArchiveCochain N),\n                (∀ (p : D0.Geometry.ArchiveCochainBasis N), w p ≠ 0) →\n                  D0.Algebra.finiteWeightedPairing w (D0.Geometry.hodgeCarDirac N ψ) φ =\n                    D0.Algebra.finiteWeightedPairing w ψ ((D0.Geometry.hodgeCarDiracDiagonalAdjoint N w) φ)",
               "declaration_kind": "theorem",
               "declaration_ranges": {
                 "declaration": {
                   "end": {
-                    "column": 42,
-                    "line": 73
+                    "column": 58,
+                    "line": 105
                   },
                   "start": {
                     "column": 0,
-                    "line": 49
+                    "line": 74
                   }
                 },
                 "selection": {
                   "end": {
                     "column": 42,
-                    "line": 54
+                    "line": 79
                   },
                   "start": {
                     "column": 8,
-                    "line": 54
+                    "line": 79
                   }
                 }
               },
-              "elaborated_type": "D0.Geometry.formDegreeCount4D = 5 ∧\n  Fintype.card D0.Geometry.CubicalCellType = 16 ∧\n    D0.Geometry.DegreePreservingLaplacian true ∧\n      Fintype.card D0.Role = 4 ∧\n        (∀ (N : ℕ) (ψ : D0.Geometry.ArchiveCochain N),\n            D0.Geometry.cubicalCoboundary N (D0.Geometry.cubicalCoboundary N ψ) = 0) ∧\n          (∀ (N k : ℕ) (ψ : D0.Geometry.ArchiveCochain N),\n              D0.Geometry.HomogeneousCochain N k ψ →\n                D0.Geometry.HomogeneousCochain N k (D0.Geometry.hodgeCarDirac N (D0.Geometry.hodgeCarDirac N ψ))) ∧\n            ∀ (N : ℕ) (ψ φ : D0.Geometry.ArchiveCochain N),\n              D0.Geometry.cochainPairing N (D0.Geometry.hodgeCarDirac N ψ) φ =\n                D0.Geometry.cochainPairing N ψ (D0.Geometry.hodgeCarDirac N φ)",
+              "elaborated_type": "D0.Geometry.formDegreeCount4D = 5 ∧\n  Fintype.card D0.Geometry.CubicalCellType = 16 ∧\n    D0.Geometry.DegreePreservingLaplacian true ∧\n      Fintype.card D0.Role = 4 ∧\n        (∀ (N : ℕ) (ψ : D0.Geometry.ArchiveCochain N),\n            D0.Geometry.cubicalCoboundary N (D0.Geometry.cubicalCoboundary N ψ) = 0) ∧\n          (∀ (N k : ℕ) (ψ : D0.Geometry.ArchiveCochain N),\n              D0.Geometry.HomogeneousCochain N k ψ →\n                D0.Geometry.HomogeneousCochain N k (D0.Geometry.hodgeCarDirac N (D0.Geometry.hodgeCarDirac N ψ))) ∧\n            (∀ (N : ℕ) (ψ φ : D0.Geometry.ArchiveCochain N),\n                D0.Geometry.cochainPairing N (D0.Geometry.hodgeCarDirac N ψ) φ =\n                  D0.Geometry.cochainPairing N ψ (D0.Geometry.hodgeCarDirac N φ)) ∧\n              ∀ (N : ℕ) (w : D0.Geometry.ArchiveCochainBasis N → ℝ) (ψ φ : D0.Geometry.ArchiveCochain N),\n                (∀ (p : D0.Geometry.ArchiveCochainBasis N), w p ≠ 0) →\n                  D0.Algebra.finiteWeightedPairing w (D0.Geometry.hodgeCarDirac N ψ) φ =\n                    D0.Algebra.finiteWeightedPairing w ψ ((D0.Geometry.hodgeCarDiracDiagonalAdjoint N w) φ)",
               "exists": true,
               "internal_name": false,
               "module": "D0.Geometry.ArchiveWeightedHodgeDirac",
@@ -186,9 +186,12 @@
                 "Bool",
                 "Bool.fintype",
                 "Bool.true",
+                "D0.Algebra.finiteWeightedPairing",
                 "D0.Dyad",
                 "D0.Geometry.ArchiveCochain",
                 "D0.Geometry.ArchiveCochainBasis",
+                "D0.Geometry.ArchiveFockState",
+                "D0.Geometry.ArchiveRolePhaseGroup",
                 "D0.Geometry.CubicalCellType",
                 "D0.Geometry.DegreePreservingLaplacian",
                 "D0.Geometry.HomogeneousCochain",
@@ -199,22 +202,19 @@
                 "D0.Geometry.formDegreeCount4D",
                 "D0.Geometry.formDegreeCount4D_eq_five",
                 "D0.Geometry.hodgeCarDirac",
+                "D0.Geometry.hodgeCarDiracDiagonalAdjoint",
+                "D0.Geometry.hodgeCarDirac_diagonal_weight_adjoint",
                 "D0.Geometry.hodgeCarDirac_self_adjoint",
+                "D0.Geometry.instNeZeroArchiveFibers",
                 "D0.Geometry.unweightedHodgeSquare_degree_preserving",
                 "D0.Role",
+                "D0.archiveFibers",
                 "D0.card_role",
+                "DFunLike.coe",
                 "Eq",
                 "Fin.fintype",
-                "Fintype.card",
-                "Nat",
-                "OfNat.ofNat",
-                "Pi.instFintype",
-                "Pi.instZero",
-                "Real",
-                "Real.instZero",
-                "Zero.toOfNat0",
                 {
-                  "_omitted_items": 5
+                  "_omitted_items": 26
                 }
               ],
               "type_dependencies": [
@@ -222,9 +222,12 @@
                 "Bool",
                 "Bool.fintype",
                 "Bool.true",
+                "D0.Algebra.finiteWeightedPairing",
                 "D0.Dyad",
                 "D0.Geometry.ArchiveCochain",
                 "D0.Geometry.ArchiveCochainBasis",
+                "D0.Geometry.ArchiveFockState",
+                "D0.Geometry.ArchiveRolePhaseGroup",
                 "D0.Geometry.CubicalCellType",
                 "D0.Geometry.DegreePreservingLaplacian",
                 "D0.Geometry.HomogeneousCochain",
@@ -232,21 +235,24 @@
                 "D0.Geometry.cubicalCoboundary",
                 "D0.Geometry.formDegreeCount4D",
                 "D0.Geometry.hodgeCarDirac",
+                "D0.Geometry.hodgeCarDiracDiagonalAdjoint",
+                "D0.Geometry.instNeZeroArchiveFibers",
                 "D0.Role",
+                "D0.archiveFibers",
+                "DFunLike.coe",
                 "Eq",
                 "Fin.fintype",
                 "Fintype.card",
+                "LinearMap",
+                "LinearMap.instFunLike",
                 "Nat",
+                "Ne",
                 "OfNat.ofNat",
-                "Pi.instFintype",
-                "Pi.instZero",
-                "Real",
-                "Real.instZero",
-                "Zero.toOfNat0",
-                "instDecidableEqFin",
-                "instDecidableEqProd",
-                "instFintypeProd",
-                "instOfNatNat"
+                "Pi.Function.module",
+                "Pi.addCommMonoid",
+                {
+                  "_omitted_items": 17
+                }
               ],
               "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveWeightedHodgeDirac.lean"
             }
@@ -264,31 +270,31 @@
             "propext"
           ],
           "binders": [],
-          "conclusion_whnf": "D0.Geometry.formDegreeCount4D = 5 ∧\n  Fintype.card D0.Geometry.CubicalCellType = 16 ∧\n    D0.Geometry.DegreePreservingLaplacian true ∧\n      Fintype.card D0.Role = 4 ∧\n        (∀ (N : ℕ) (ψ : D0.Geometry.ArchiveCochain N),\n            D0.Geometry.cubicalCoboundary N (D0.Geometry.cubicalCoboundary N ψ) = 0) ∧\n          (∀ (N k : ℕ) (ψ : D0.Geometry.ArchiveCochain N),\n              D0.Geometry.HomogeneousCochain N k ψ →\n                D0.Geometry.HomogeneousCochain N k (D0.Geometry.hodgeCarDirac N (D0.Geometry.hodgeCarDirac N ψ))) ∧\n            ∀ (N : ℕ) (ψ φ : D0.Geometry.ArchiveCochain N),\n              D0.Geometry.cochainPairing N (D0.Geometry.hodgeCarDirac N ψ) φ =\n                D0.Geometry.cochainPairing N ψ (D0.Geometry.hodgeCarDirac N φ)",
+          "conclusion_whnf": "D0.Geometry.formDegreeCount4D = 5 ∧\n  Fintype.card D0.Geometry.CubicalCellType = 16 ∧\n    D0.Geometry.DegreePreservingLaplacian true ∧\n      Fintype.card D0.Role = 4 ∧\n        (∀ (N : ℕ) (ψ : D0.Geometry.ArchiveCochain N),\n            D0.Geometry.cubicalCoboundary N (D0.Geometry.cubicalCoboundary N ψ) = 0) ∧\n          (∀ (N k : ℕ) (ψ : D0.Geometry.ArchiveCochain N),\n              D0.Geometry.HomogeneousCochain N k ψ →\n                D0.Geometry.HomogeneousCochain N k (D0.Geometry.hodgeCarDirac N (D0.Geometry.hodgeCarDirac N ψ))) ∧\n            (∀ (N : ℕ) (ψ φ : D0.Geometry.ArchiveCochain N),\n                D0.Geometry.cochainPairing N (D0.Geometry.hodgeCarDirac N ψ) φ =\n                  D0.Geometry.cochainPairing N ψ (D0.Geometry.hodgeCarDirac N φ)) ∧\n              ∀ (N : ℕ) (w : D0.Geometry.ArchiveCochainBasis N → ℝ) (ψ φ : D0.Geometry.ArchiveCochain N),\n                (∀ (p : D0.Geometry.ArchiveCochainBasis N), w p ≠ 0) →\n                  D0.Algebra.finiteWeightedPairing w (D0.Geometry.hodgeCarDirac N ψ) φ =\n                    D0.Algebra.finiteWeightedPairing w ψ ((D0.Geometry.hodgeCarDiracDiagonalAdjoint N w) φ)",
           "declaration_kind": "theorem",
           "declaration_ranges": {
             "declaration": {
               "end": {
-                "column": 42,
-                "line": 73
+                "column": 58,
+                "line": 105
               },
               "start": {
                 "column": 0,
-                "line": 49
+                "line": 74
               }
             },
             "selection": {
               "end": {
                 "column": 42,
-                "line": 54
+                "line": 79
               },
               "start": {
                 "column": 8,
-                "line": 54
+                "line": 79
               }
             }
           },
-          "elaborated_type": "D0.Geometry.formDegreeCount4D = 5 ∧\n  Fintype.card D0.Geometry.CubicalCellType = 16 ∧\n    D0.Geometry.DegreePreservingLaplacian true ∧\n      Fintype.card D0.Role = 4 ∧\n        (∀ (N : ℕ) (ψ : D0.Geometry.ArchiveCochain N),\n            D0.Geometry.cubicalCoboundary N (D0.Geometry.cubicalCoboundary N ψ) = 0) ∧\n          (∀ (N k : ℕ) (ψ : D0.Geometry.ArchiveCochain N),\n              D0.Geometry.HomogeneousCochain N k ψ →\n                D0.Geometry.HomogeneousCochain N k (D0.Geometry.hodgeCarDirac N (D0.Geometry.hodgeCarDirac N ψ))) ∧\n            ∀ (N : ℕ) (ψ φ : D0.Geometry.ArchiveCochain N),\n              D0.Geometry.cochainPairing N (D0.Geometry.hodgeCarDirac N ψ) φ =\n                D0.Geometry.cochainPairing N ψ (D0.Geometry.hodgeCarDirac N φ)",
+          "elaborated_type": "D0.Geometry.formDegreeCount4D = 5 ∧\n  Fintype.card D0.Geometry.CubicalCellType = 16 ∧\n    D0.Geometry.DegreePreservingLaplacian true ∧\n      Fintype.card D0.Role = 4 ∧\n        (∀ (N : ℕ) (ψ : D0.Geometry.ArchiveCochain N),\n            D0.Geometry.cubicalCoboundary N (D0.Geometry.cubicalCoboundary N ψ) = 0) ∧\n          (∀ (N k : ℕ) (ψ : D0.Geometry.ArchiveCochain N),\n              D0.Geometry.HomogeneousCochain N k ψ →\n                D0.Geometry.HomogeneousCochain N k (D0.Geometry.hodgeCarDirac N (D0.Geometry.hodgeCarDirac N ψ))) ∧\n            (∀ (N : ℕ) (ψ φ : D0.Geometry.ArchiveCochain N),\n                D0.Geometry.cochainPairing N (D0.Geometry.hodgeCarDirac N ψ) φ =\n                  D0.Geometry.cochainPairing N ψ (D0.Geometry.hodgeCarDirac N φ)) ∧\n              ∀ (N : ℕ) (w : D0.Geometry.ArchiveCochainBasis N → ℝ) (ψ φ : D0.Geometry.ArchiveCochain N),\n                (∀ (p : D0.Geometry.ArchiveCochainBasis N), w p ≠ 0) →\n                  D0.Algebra.finiteWeightedPairing w (D0.Geometry.hodgeCarDirac N ψ) φ =\n                    D0.Algebra.finiteWeightedPairing w ψ ((D0.Geometry.hodgeCarDiracDiagonalAdjoint N w) φ)",
           "exists": true,
           "internal_name": false,
           "module": "D0.Geometry.ArchiveWeightedHodgeDirac",
@@ -299,9 +305,12 @@
             "Bool",
             "Bool.fintype",
             "Bool.true",
+            "D0.Algebra.finiteWeightedPairing",
             "D0.Dyad",
             "D0.Geometry.ArchiveCochain",
             "D0.Geometry.ArchiveCochainBasis",
+            "D0.Geometry.ArchiveFockState",
+            "D0.Geometry.ArchiveRolePhaseGroup",
             "D0.Geometry.CubicalCellType",
             "D0.Geometry.DegreePreservingLaplacian",
             "D0.Geometry.HomogeneousCochain",
@@ -312,22 +321,19 @@
             "D0.Geometry.formDegreeCount4D",
             "D0.Geometry.formDegreeCount4D_eq_five",
             "D0.Geometry.hodgeCarDirac",
+            "D0.Geometry.hodgeCarDiracDiagonalAdjoint",
+            "D0.Geometry.hodgeCarDirac_diagonal_weight_adjoint",
             "D0.Geometry.hodgeCarDirac_self_adjoint",
+            "D0.Geometry.instNeZeroArchiveFibers",
             "D0.Geometry.unweightedHodgeSquare_degree_preserving",
             "D0.Role",
+            "D0.archiveFibers",
             "D0.card_role",
+            "DFunLike.coe",
             "Eq",
             "Fin.fintype",
-            "Fintype.card",
-            "Nat",
-            "OfNat.ofNat",
-            "Pi.instFintype",
-            "Pi.instZero",
-            "Real",
-            "Real.instZero",
-            "Zero.toOfNat0",
             {
-              "_omitted_items": 5
+              "_omitted_items": 26
             }
           ],
           "type_dependencies": [
@@ -335,9 +341,12 @@
             "Bool",
             "Bool.fintype",
             "Bool.true",
+            "D0.Algebra.finiteWeightedPairing",
             "D0.Dyad",
             "D0.Geometry.ArchiveCochain",
             "D0.Geometry.ArchiveCochainBasis",
+            "D0.Geometry.ArchiveFockState",
+            "D0.Geometry.ArchiveRolePhaseGroup",
             "D0.Geometry.CubicalCellType",
             "D0.Geometry.DegreePreservingLaplacian",
             "D0.Geometry.HomogeneousCochain",
@@ -345,21 +354,24 @@
             "D0.Geometry.cubicalCoboundary",
             "D0.Geometry.formDegreeCount4D",
             "D0.Geometry.hodgeCarDirac",
+            "D0.Geometry.hodgeCarDiracDiagonalAdjoint",
+            "D0.Geometry.instNeZeroArchiveFibers",
             "D0.Role",
+            "D0.archiveFibers",
+            "DFunLike.coe",
             "Eq",
             "Fin.fintype",
             "Fintype.card",
+            "LinearMap",
+            "LinearMap.instFunLike",
             "Nat",
+            "Ne",
             "OfNat.ofNat",
-            "Pi.instFintype",
-            "Pi.instZero",
-            "Real",
-            "Real.instZero",
-            "Zero.toOfNat0",
-            "instDecidableEqFin",
-            "instDecidableEqProd",
-            "instFintypeProd",
-            "instOfNatNat"
+            "Pi.Function.module",
+            "Pi.addCommMonoid",
+            {
+              "_omitted_items": 17
+            }
           ],
           "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveWeightedHodgeDirac.lean"
         }
@@ -480,7 +492,7 @@
         "warning": "Declared metadata links are not Lean type-checking or independent scientific acceptance."
       },
       "collector_sha256": "7160df1ba73e78919758cefb84b6dcbc08c04fe21caf3210d3adbfd8b8ed4f45",
-      "lean_source_digest": "f74092081a96038c7336f91a7efd8e7f429c0c06ac3f69d8737dc0f901cab8da",
+      "lean_source_digest": "692151ba3f36ceb30848a89d1eec5cc738fc68ca1944ebb2e42e7adea2e5576a",
       "public_import_root": "D0.All",
       "interpretation": "Claim theorem strings are candidate-name locators. Compiled declaration presence and reported Lean proof dependencies are separate evidence. A dependency joined to another claim locator is a candidate crosswalk only; registry application links, conceptual edges, and semantic claim acceptance are not inferred from name matches."
     }

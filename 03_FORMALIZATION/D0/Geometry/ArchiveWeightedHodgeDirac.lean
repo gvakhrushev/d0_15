@@ -1,9 +1,11 @@
 import Mathlib.Data.Real.Basic
 import D0.Core.FiniteTypes
 import D0.Core.DyadABCD
+import D0.Algebra.FiniteWeightedAdjoint
 import D0.Geometry.ArchiveCubicalCochainCarrier
 import D0.Geometry.ArchiveCubicalCoboundary
 import D0.Geometry.ArchiveHodgeCARDiracSquare
+import D0.Geometry.ArchiveHodgeCARDiracKernel
 
 namespace D0.Geometry
 
@@ -21,6 +23,10 @@ degree-preservation flag. The concrete operator result added here is only for
 the existing unweighted `hodgeCarDirac`: its square preserves every
 homogeneous Fock degree by the already-owned fibrewise Laplacian identity.
 This does not close the weighted claim or select a physical Hodge metric.
+The file also supplies the finite diagonal-weight adjoint formula and applies
+it to the existing `hodgeCarDiracₗ` for every supplied nonzero profile. This
+remains a conditional algebraic application, not a derivation of geometric
+Hodge weights.
 -/
 
 /-- The number of form degrees, derived from the four role directions. -/
@@ -46,6 +52,25 @@ theorem unweightedHodgeSquare_degree_preserving (N k : ℕ)
   rw [hcomponent]
   simp [scalarDifferenceLaplacian, backwardDifference, forwardDifference]
 
+/-- The adjoint of the existing Hodge/CAR operator for a supplied diagonal
+cochain weight. The weight need only be nonzero at every basis coordinate;
+this definition makes no positivity or metric-selection claim. -/
+noncomputable def hodgeCarDiracDiagonalAdjoint (N : ℕ)
+    (w : ArchiveCochainBasis N → ℝ) :
+    ArchiveCochain N →ₗ[ℝ] ArchiveCochain N :=
+  D0.Algebra.finiteWeightedAdjoint w (hodgeCarDiracₗ N)
+
+/-- Concrete application of the finite weighted-adjoint construction to the
+repository-owned Hodge/CAR operator at every lattice refinement. -/
+theorem hodgeCarDirac_diagonal_weight_adjoint (N : ℕ)
+    (w : ArchiveCochainBasis N → ℝ) (ψ φ : ArchiveCochain N) :
+    (∀ p, w p ≠ 0) →
+    D0.Algebra.finiteWeightedPairing w (hodgeCarDirac N ψ) φ =
+      D0.Algebra.finiteWeightedPairing w ψ
+        (hodgeCarDiracDiagonalAdjoint N w φ) := by
+  intro hw
+  exact D0.Algebra.finiteWeightedPairing_adjoint w hw (hodgeCarDiracₗ N) ψ φ
+
 /-- **D0-ARCHIVE-WEIGHTED-HODGE-DIRAC-001 (Owner locator)**:
 The currently compiled package records finite counts and a legacy Boolean
 flag, and includes the concrete unweighted Hodge-square degree-preservation
@@ -62,14 +87,21 @@ theorem archive_weighted_hodge_dirac_owner :
       HomogeneousCochain N k (hodgeCarDirac N (hodgeCarDirac N ψ))) ∧
     (∀ N (ψ φ : ArchiveCochain N),
       cochainPairing N (hodgeCarDirac N ψ) φ =
-        cochainPairing N ψ (hodgeCarDirac N φ)) := by
+        cochainPairing N ψ (hodgeCarDirac N φ)) ∧
+    (∀ N (w : ArchiveCochainBasis N → ℝ) (ψ φ : ArchiveCochain N),
+      (∀ p, w p ≠ 0) →
+      D0.Algebra.finiteWeightedPairing w (hodgeCarDirac N ψ) φ =
+        D0.Algebra.finiteWeightedPairing w ψ
+          (hodgeCarDiracDiagonalAdjoint N w φ)) := by
   refine ⟨formDegreeCount4D_eq_five, card_archive_fock_state, rfl, card_role,
-    ?_, ?_, ?_⟩
+    ?_, ?_, ?_, ?_⟩
   · intro N ψ
     exact d_squared_eq_zero N ψ
   · intro N k ψ hψ
     exact unweightedHodgeSquare_degree_preserving N k ψ hψ
   · intro N ψ φ
     exact hodgeCarDirac_self_adjoint N ψ φ
+  · intro N w ψ φ hw
+    exact hodgeCarDirac_diagonal_weight_adjoint N w ψ φ hw
 
 end D0.Geometry
