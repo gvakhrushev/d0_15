@@ -3040,6 +3040,203 @@ of one unique microscopic schedule are not additional prerequisites
 for the stated TheoryTransfer interpretation. No physical action,
 selector, GR_closed/raw216 promotion or standalone certificate is added.
 
+
+## 7l. Bind the cut and source to the original operational task
+
+24 October 2026. Same native-realization/global-composition owner, input
+885bdd54. This consumes Books00-01, the ORIGINAL Book03 order task and
+sections7e-k together. The parent is the native task/cut/control image in
+(129), not a new gravitational ansatz. It removes a separate mathematical
+input-cut choice WITHIN the supplied complete task and identifies exactly
+which implementation variations its existing correctness law controls.
+
+### The input family and actual return event determine the constructed cut
+
+Let S_task be the physically supplied family of complete INITIAL density
+operators in one native Hilbert space with its actual Gram. Its input cut is
+
+    P_in = join_{rho in S_task} supp(rho).
+
+This is the unique smallest orthogonal projector containing every allowed
+input. In finite dimension a finite support-spanning subfamily suffices;
+the support of any positively weighted sum of that subfamily is P_in.
+No distribution over the inputs or new price is selected by this formula.
+If i is the calibrated isometry, i^dagger i=I_K, the inputs are
+i rho_K i^dagger, and their supports span the allowed protected K, then
+P_in=i i^dagger. One actual pure state generally does
+NOT supply that task span.
+
+Apply this to the ALREADY supplied input in (54)-(56), extended by the
+actual bank blanks in (64). The initial work, SIGN, port and bank are
+blank; the allowed spin input is arbitrary, as in
+[Book03 section03.26.1](../../01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md#03261-forward-only-order-comparison-with-an-internal-stage-register).
+Retain only the actually allowed protected past/seed span, including the
+actual INITIAL key where specified; a sharp key generated inside the
+word stays inside its real preparer. Then this construction gives exactly
+P_new of (64), with the same protected rank. In particular S(t) and the
+resource preparation are executed INSIDE the word. Their generated SIGN
+states are not extra arbitrary initial inputs. Hence a fixed P_in is
+compatible with all42 variations of the existing operator chart.
+The larger complete thermal Hilbert space, unsuccessful columns and
+oldRIGHT remain in the trace; input rank is not thermal dimension.
+
+Let W_j be the actual prefixes before the closing clock edge. The same
+unconditioned closed input family at stage j has support
+
+    P_j=W_j P_in W_j^dagger,
+    delta P_j=W_j(delta P_in)W_j^dagger
+                 +[delta W_j W_j^dagger,P_j].
+
+Thus the intermediate cuts and their moving-source terms are generated
+by the SAME execution. With fixed input task delta P_in=0; this does
+not set delta W_j or delta S(t) to zero. No external diary is introduced.
+These supports must not be replaced by the reducing hull of all separately
+conditioned pointer branches: that is a different input/readout family.
+
+An INITIAL support alone does not say what is compared at the end.
+Here (65)-(66) already supply the real recorded bank0/return-corner
+intertwiner on the protected invariant sector. Consume THAT paid
+comparison as the task's return boundary, with both terminal records
+retained. Completion of either record is not a return to the blank;
+Pi_done=I does not replace P_in. The noncomputational seed case retains
+its exact leakage L and debt (69)-(71). On the exact source-X branch,
+use the whole raw inverse of section7j and the same protected-sector
+hypothesis, rather than silently extending bank0 to a larger cut.
+
+For this input/return task, the existing stage-active cut is therefore
+fixed by its input span, actual prefixes and actual closing comparison.
+Interior leakage is zero and the previously computed SINGLE wrap carries
+the feedback. Transporting P_in through the closing edge as well would
+instead identify the final subspace with a new one and erase the very
+return comparison. It is not the same task. There is no extra factor N
+in J, while the whole heat keeps its real N and full carrier.
+This removes a separate projector selector for THIS constructed task;
+it does not prove that M1 selects the task, its blanks or this stage-active
+interpretation as the physical Book03 boundary.
+
+### Primitive Golden return is not a new constraint on the whole programme
+
+[Book01 section01.6](../../01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#016-minimal-positive-response-closure-and-the-equation-pp21)
+uses one direct primitive exposure and its first positive self-return.
+Book03 section03.26 has F=p^2 P on the DECLARED splitter block.
+The very next original construction has complete record weights (1,0)
+and (p^6,4p^3). Thus the books already distinguish that primitive law
+from a compound programme's return. Algebraically, with Q=I-P,
+
+    P B A P=(P B P)(P A P)+P B Q A P.
+
+The second term is a real internal return, not an external memory.
+Consequently (56)/(115)'s macro feedback is not required to equal p^2P.
+This does not remove the need to bind the actual task boundary to Book03.
+It removes only the extra, unsupported demand that every full programme
+repeat its primitive splitter's leakage.
+
+### Consume an actual original correctness law before moving its source
+
+The original order task supplies programme c=0,1, arbitrary spin v,
+blank port/record, and two fixed chronological words. Its record1 laws
+are 0 and f=4p^3 respectively. For a REAL positive symmetric input effect e on programme
+and spin these laws force
+
+    e_Q8=f |1><1|_programme tensor I_spin.
+
+Indeed the zero diagonal block on c=0 makes the corresponding off-diagonal
+blocks zero by positivity, while the law for every v fixes the other
+block. Thus changes implementing this SAME original response law have
+delta e_Q8=0. This is a concrete native application of (83)-(85); no
+Einstein output table has been prescribed. The nonzero dark probability
+p^6 on c=1 remains part of the complete law.
+
+The original source-local X/routing and actual preparation premises
+remain; a common two-port palette alone does not implement this task.
+Its scope matters to the full-source composition. Feed the actual
+coherently computed c=(READY AND click) bit into that programme port,
+retaining its preparation, conjunction work and every other register.
+If that bit is not yet present, its real admitted Boolean computation
+and work must be included in A and the complete clock. The Q8 arm, spin
+and output record occupy separately admitted WORK factors; A retains
+the inherited identity on the final M0 target port and protected past.
+Reusing those factors without its own carrier/source proof would not
+satisfy the scalar-corner hypothesis (56). Pulling the Q8 effect back
+through this whole preparer A gives
+
+    e_total=f e_report,   e_report=i_0^dagger A^dagger P_bit1 A i_0.
+
+In the same complete exact-inverse/balanced Book construction, at its NEW
+real clock and carrier, the original encoder contribution is therefore
+
+    delta_A B=j'_K(x) f Tr(rho delta_A e_report),
+    x=f Tr(rho e_report).
+
+Here P_bit1 tests that conjunction bit, so the original READY factors
+are INSIDE e_report. They are not assigned a new value or divided out.
+Feeding an unqualified click bit instead would include failure-column
+clicks and would be a different effect. The outer Q8 implementation row is
+zero, but the upstream report/preparation row is merely multiplied by f>0.
+Leaving fields as spectators instead makes this task independent of them.
+The original task therefore supplies a genuine implementation fibre;
+it does not automatically supply the different fibre of the ten-sign
+geometric report. An additional correct audit cannot be substituted for
+that missing upstream source binding.
+
+For the existing REAL addressed ACTIVE interface, the whole-input test
+in (85) can also use actual native preparation contexts. The owned
+[Golden/CNOT Lie closure, sections1-2](A4D_LITERAL_GOLDEN_CNOT_ACTIVE_LIE_COMPLETENESS_AND_C2_SOURCE_2026_10_19.md#1-буквальный-fullstep-без-нового-управляемого-оператора)
+contains SO(2^n), n>=1. It assumes legal placement/routing on ACTIVE,
+never scratch access to immutable oldRIGHT. Finite words from the blank
+are dense on the real unit sphere, so their rank-one states span Sym_d(R).
+Therefore their Hermitian response annihilator is i so_d(R), and its
+intersection with REAL symmetric encoder-effect tangents is zero.
+Equality of the SAME response function on these contexts suffices for
+(85) on this real interface. This is a use of the owned closure theorem,
+not a continuously variable finite-word actuator, free tomography, or
+an extension to a CAR-only or differently routed interface.
+
+### The exact remaining map in the global Einstein consumer
+
+The owned FutureExecution quotient preserves all supplied actions and
+future tests. Its signature itself does not specify a Hilbert/Gram input
+span, return boundary or smooth field map. The construction above applies
+AFTER those physical task data have been supplied; it does not extract
+them from the abstract quotient.
+
+Moreover, where the actual admitted future contexts include the prefix
+readouts needed in (111)-(114), the composed decoder obeys
+
+    Decode_h pr_geom R_full = Y,
+    ker D R_full subset ker D Y.
+
+Fixing the full response profile then fixes the decoded geometry. Without
+that context coverage, the operator reconstruction (114) alone cannot be
+called an executed observational experiment. In neither case does mere
+preservation of a full profile create an open42 physical field variation.
+The correct task relation, for varying input t and implementation a, is
+
+    R_full(C(t,a))=R_task(t),
+    D R_full DC(delta t,delta a)=D_t R_task delta t.
+
+Vertical implementation changes preserve the task's answers; horizontal
+input changes may change them. Sections7i-k already supply the ideal C,
+its real preparation/adjoint terms, operational decoder and gain bounds.
+A full source descending to Y would require dB=0 on ker DY; neutrality
+on the possibly smaller ker D R_full alone does not prove that descent.
+Keep every additional admitted control row from (79)/(84)/(86).
+
+The global consumer now asks for ONE actual admitted input/return task
+and its joint physical variation map, rather than independent guesses of
+P, generated prefixes and encoder neutrality. For its declared source-X
+operator realization the input cut, generated cut derivatives, recorded
+return and ideal joint stationary tower are already composed above with
+(99)-(115); (121)-(129) supply the complete approximate source and full
+smooth-field limit with their actual error/lift norm. A native variation
+lift and a regular stationary spatial refinement still have to be
+established for the physically selected execution, with any other stack
+source included. One faithful realization suffices for the first physical
+bridge; uniqueness among all microscopic programmes is not its premise.
+Compulsory universal selection is a stronger claim. This substitution
+neither upgrades the approximate compiler to exact finite roots nor
+promotes physical GR, positive_gr or raw216 closure.
+
 ## 8. Reproduction
 
 Run from this directory:

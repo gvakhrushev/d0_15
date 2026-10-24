@@ -7957,3 +7957,76 @@ Native_continuation_map independently verifies and ACCEPTs the exact
 final pins above after that type correction. Targeted work/protocol
 validation and diff whitespace check PASS. No unchanged full128,
 broad certificate suite or Lean replay was run.
+
+
+### 24 October: original task binds the input cut and the full source domain
+
+Phase: native realization / global composition, same PR334 owner and
+constitutive/native-programme-v1. Published input885bdd54519402bc35539dc4da5413f8e8553b1f.
+Write paths: existing primary residual owner section7l and this brief only.
+No new task, certificate, Lean module or physical status.
+
+Parent substitution: within the supplied complete input/return task,
+P_in is the support join of its actual allowed initial states in the
+existing Gram. For calibrated isometry i and support-complete allowed
+protected inputs it is exactly ii^dagger. The real blanks/initial key,
+protected past/seed span and full thermal dimension retain their distinct
+roles. Generated SIGN states and generated compiler keys stay inside
+their actual preparers. Prefix cuts and their variations follow from
+P_j=W_j P_in W_j^dagger. The existing paid bank0/return intertwiner65-66
+supplies the closing comparison; it is not Pi_done=I. Protected
+noncomputational leakage69-71 remains. Thus one actual task binds these
+cut data together; a separate arbitrary P-selector is unnecessary WITHIN
+that task. Its native physical admission and Book boundary binding remain.
+
+The ORIGINAL Book01 primitive audit and Book03 Golden splitter impose
+p^2 return only on that declared block. Book03's very next two-word
+process has record weights(1,0),(p^6,4p^3). Compoundprogramme leakage
+is not required to repeat primitive leakage. No new Golden law follows.
+
+The actual original Q8 order task now supplies a concrete response fibre:
+for REAL positive symmetric input effects, its two programme inputs and
+arbitrary spin imply e_Q8=4p^3 P_programme1 tensor I_spin. This genuinely
+fixes its implementation response. Composing its input with the reporter's
+actual READY-AND-click bit gives e_total=4p^3 e_report, with all conjunction
+work paid and separately admitted WORK audit factors. Keep identity on
+the final M0 target port and protected past; otherwise the scalar-corner
+source formula cannot be used. The new true clock/heat carrier and every
+failure column remain. The upstream report normal is multiplied by4p^3,
+not removed by the correct outer audit.
+
+The owned addressed REAL ACTIVE Golden/CNOT closure supplies the
+preparation-context span Sym_d(R); the Hermitian response annihilator is
+i so_d(R), with zero REAL symmetric part. This replaces a separate
+arbitrary complex-state polarization premise on that exact interface.
+It does not provide routing, free tomography or continuous finite-word
+controls. For actual admitted prefix-reading contexts, decoder114 implies
+ker D R_full subset ker D Y. Fixed full answers would freeze geometry;
+the correct task map is R_full(C(t,a))=R_task(t), with changing input t
+and response-preserving implementation a. A neutral full-profile fibre
+is not automatically the larger fibre required for metric-only descent.
+
+Consumer129 now needs one actual native task/variation lift and regular
+stationary spatial refinement, retaining all additional physical source
+rows. The existing ideal stationary tower and approximate whole-source
+continuum theorem remain at their respective exact hypotheses. No new
+exact finite roots or physicalGR closure are claimed. Unique microscopic
+programme selection is not necessary for a first faithful realization.
+
+Smallest decisive changed checks: inline exact polynomial arithmetic
+modulo a^2=p,p^2+p=1 uses the ORIGINAL Lean quaternion/gate matrices and
+actual two fifteen-step words, including retained recording. It verifies
+the stored-programme effect, whole-word pullback, and a nonzero upstream
+normal (24/25)*4p^3 under a real rational preparation rotation. A separate
+exact reversible READY-AND-click map retains the true failure columns;
+using raw click instead fails its effect identity. Both checks exit0.
+No standalone evidence file or unchanged full128/Lean replay is added.
+
+Section7l heading through before8 INCLUDING trailing LF:
+11065 UTF-8 bytes; SHA256
+99115a2303e0e61fe8fec587455dab17b39de4205a53023568f99745a08a84d1.
+Three read-only reviews requested exact carrier/READY/isometry/placement
+repairs; the final text retains all of them.
+
+Native_valuation_map independently re-reads the final11065-byte section
+and ACCEPTs the pinned SHA above after all repairs.
