@@ -92,4 +92,63 @@ theorem unordered_nat_triple_eq_of_VET_eq
     (Nat.cast_injective : Function.Injective (fun n : ℕ => (n : ℚ)))
   simpa using unordered_triple_eq_of_VET_eq hV hE hT
 
+/-- The active spectral gap formed from the first three elementary-symmetric
+invariants of a tripartite size vector. -/
+def tripartiteGap (a b c : ℚ) : ℚ :=
+  tripartiteV a b c * tripartiteE a b c - 9 * tripartiteT a b c
+
+@[simp] theorem tripartiteGap_formula (a b c : ℚ) :
+    tripartiteGap a b c =
+      (a + b + c) * (a * b + a * c + b * c) - 9 * (a * b * c) := by
+  rfl
+
+/-- The tripartite gap is a weighted sum of squared pairwise differences. -/
+theorem tripartiteGap_sos (a b c : ℚ) :
+    tripartiteGap a b c =
+      a * (b - c) ^ 2 + b * (c - a) ^ 2 + c * (a - b) ^ 2 := by
+  simp only [tripartiteGap, tripartiteV, tripartiteE, tripartiteT]
+  ring
+
+/-- Positive zone sizes make the tripartite gap nonnegative. -/
+theorem tripartiteGap_nonneg (a b c : ℚ)
+    (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) : 0 ≤ tripartiteGap a b c := by
+  rw [tripartiteGap_sos]
+  have h1 : 0 ≤ a * (b - c) ^ 2 := mul_nonneg ha.le (sq_nonneg _)
+  have h2 : 0 ≤ b * (c - a) ^ 2 := mul_nonneg hb.le (sq_nonneg _)
+  have h3 : 0 ≤ c * (a - b) ^ 2 := mul_nonneg hc.le (sq_nonneg _)
+  linarith
+
+/-- For positive sizes, the tripartite gap vanishes exactly when all sizes are equal. -/
+theorem tripartiteGap_eq_zero_iff (a b c : ℚ)
+    (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) :
+    tripartiteGap a b c = 0 ↔ (a = b ∧ b = c) := by
+  constructor
+  · intro h
+    rw [tripartiteGap_sos] at h
+    have h1 : 0 ≤ a * (b - c) ^ 2 := mul_nonneg ha.le (sq_nonneg _)
+    have h2 : 0 ≤ b * (c - a) ^ 2 := mul_nonneg hb.le (sq_nonneg _)
+    have h3 : 0 ≤ c * (a - b) ^ 2 := mul_nonneg hc.le (sq_nonneg _)
+    have e1 : a * (b - c) ^ 2 = 0 := by linarith
+    have e3 : c * (a - b) ^ 2 = 0 := by linarith
+    have hab : a = b := by
+      have hsq : (a - b) ^ 2 = 0 := by
+        rcases mul_eq_zero.mp e3 with hzero | hzero
+        · exact absurd hzero hc.ne'
+        · exact hzero
+      have hdiff := (pow_eq_zero_iff (n := 2) (by norm_num)).mp hsq
+      linarith
+    have hbc : b = c := by
+      have hsq : (b - c) ^ 2 = 0 := by
+        rcases mul_eq_zero.mp e1 with hzero | hzero
+        · exact absurd hzero ha.ne'
+        · exact hzero
+      have hdiff := (pow_eq_zero_iff (n := 2) (by norm_num)).mp hsq
+      linarith
+    exact ⟨hab, hbc⟩
+  · rintro ⟨hab, hbc⟩
+    subst hab
+    subst hbc
+    simp only [tripartiteGap, tripartiteV, tripartiteE, tripartiteT]
+    ring
+
 end D0.Combinatorics.TripartiteVieta

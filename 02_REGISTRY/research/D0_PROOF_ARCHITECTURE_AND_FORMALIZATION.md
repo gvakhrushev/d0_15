@@ -452,3 +452,75 @@ Reviewed Lean blob hashes at that PR head:
 | `03_FORMALIZATION/D0/Geometry/ArchiveCARRelations.lean` | `8ff68576d92ff67532733a0ca2646de9d50105e2` |
 | `03_FORMALIZATION/D0/Geometry/A4DNilpotentAffineMatterLift.lean` | `a923290e3f4e0ee7289db1142251141a25d6c42a` |
 | `03_FORMALIZATION/D0/Geometry/ArchiveCARFockCarrier.lean` | `1acfaec4d7a41b50f50dd55cced7613b80852514` |
+
+### 24 October shared tripartite spectral-gap application
+
+The established claim family `D0-SYMMETRIC-FUNCTION-ACTIVE-SPECTRUM-001`
+contained the same rational degeneracy-gap definition in
+`ActiveSplittingFromDistinctness` and `ActiveSpectrumClosedForm`. Both are now
+abbreviations to the existing lower-level Vieta invariants,
+`tripartiteGap = tripartiteV * tripartiteE - 9 * tripartiteT`. The common
+`TripartiteVieta` module owns its exact weighted sum-of-squares identity,
+nonnegativity for positive sizes, and zero-if-and-only-if-equal criterion.
+The previous `gap`, `gap_sos`, `gap_nonneg`, and `gap_zero_iff_equal` names
+remain available as compatibility APIs.
+
+The spectrum module now proves its general `discriminant_eq` application by
+composing the owned `SymmetricFunctionCalculus.degree_product` with the common
+tripartite-gap formula. Its ladder identity consumes the shared sum-of-squares
+theorem; the `(9,11,13)` and `(10,11,12)` checks consume that ladder result.
+The existing claim row gained exact locators for these named applications and
+the shared API, with the original status and owner unchanged. `formal_support`
+now lists both Lean consumers, and the generated `ClaimMap` was refreshed.
+No new claim, assumption, status, physical premise, or assembly edge was added.
+
+The compiled `reuse --lean D0-SYMMETRIC-FUNCTION-ACTIVE-SPECTRUM-001
+--import-root D0.All` view resolves all 13 exact theorem-name atoms. Its
+proof-dependency evidence shows:
+
+- `ActiveSplittingFromDistinctness.gap_sos` uses
+  `TripartiteVieta.tripartiteGap_sos`, and
+  `gap_zero_iff_equal` uses `tripartiteGap_eq_zero_iff`;
+- `ActiveSpectrumClosedForm.discriminant_eq` uses
+  `SymmetricFunctionCalculus.degree_product` and the shared gap formula;
+- `gap_ladder` uses the shared sum-of-squares theorem, and this module's
+  `scene_gap` uses `gap_ladder`.
+
+The source claim atom `scene_gap` resolves to both existing scene-specific
+declarations, one in each consumer module; both remain visible as separate
+compiled sources. This does not claim that their surrounding source claims
+are semantically equivalent beyond this exact rational equality. The compiled
+footprint for these declarations reports `Classical.choice`, `Quot.sound`,
+and `propext`, as does the existing rational quotient representation; this
+checkpoint makes no axiom-free-kernel claim.
+
+Validation on the local tree at parent snapshot
+`7f5eb1d83f40a865ac18032702b907f9f331046b` (`worktree_dirty=true`): narrow
+Lean 4.30.0 builds of `TripartiteVieta` (2,946 jobs),
+`ActiveSplittingFromDistinctness` (2,947 jobs), and `ActiveSpectrumClosedForm`
+(2,948 jobs) passed. Final `D0.All` passed (4,564 jobs) with source digest
+`20302031987450765dc6c63b19fb9b968681b9c4a506534678ec54db3ee0065f`.
+The compiled-reuse collector SHA-256 is
+`06944bb4e3b3b530ac552716fa61eaaa2b4161ac85de5511f526b7dd886f9c76`; its
+Lean source digest matches the final-build stamp. The existing proof-architecture
+suite passes 26/26 tests; cold-start retrieval finds all required sources in
+13/13 cases, and the 14-case impact benchmark passes. Generated Lean views
+(stale=0), claim-map coverage, and `git diff --check` pass. No proof hole was
+added in these three modules; the only search hit for `admit` there is in a
+docstring.
+
+Exact file SHA-256 values at this checkpoint:
+
+| Input | SHA-256 |
+|---|---|
+| `03_FORMALIZATION/D0/Combinatorics/TripartiteVieta.lean` | `cf048f006496e7d0fb86eb94bdd8414739129a2e33b4b7cc3ac2337ec2dfebde` |
+| `03_FORMALIZATION/D0/Synthesis/ActiveSplittingFromDistinctness.lean` | `cc720d10d9b2881fa3c0235f428c128703d802369740a3c2e18a511282e6152c` |
+| `03_FORMALIZATION/D0/Synthesis/ActiveSpectrumClosedForm.lean` | `00280f3d52ea7b64cedbc09e29cab511678fdee90540845fb1611d917c74205c` |
+| `03_FORMALIZATION/D0/TheoremLedger/ClaimMap.lean` | `f08e64ef7243c8da2055415a2754dcde71c37a7c6d7bb95edbc258fa5ae14488` |
+| `02_REGISTRY/claims.csv` | `e7fb0e77368540e4fcb77446a63678e84867149020a7191627a2d82d565b3e87` |
+| `02_REGISTRY/formal_support.csv` | `9550a4390b13c1429dfedf61d97c2e8401bb283a04ae74de8319c3269dbfb9bf` |
+
+This is a vertical refactor and compiled reuse application inside one existing
+finite mathematical claim family. It neither freezes nor accepts C0, and it
+does not alter #334 ownership, the native physical action/source, or any open
+GR-selection assumption.
