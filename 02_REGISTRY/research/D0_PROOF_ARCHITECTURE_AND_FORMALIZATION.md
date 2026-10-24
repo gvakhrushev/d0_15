@@ -1427,3 +1427,69 @@ independently unaccepted.
 
 The updated `03_FORMALIZATION/D0/Geometry/ArchiveJuliaRaisingOperatorReadout.lean`
 has SHA-256 `5b1192c912e22e622ae535fa65a2030839ae819b4dd744165ca62010ca29c057`.
+
+## Faithful finite-carrier affine representation (24 October 2026)
+
+The next carrier-level application formalizes the exact parameter recovery
+implicit in the existing affine representation result, rather than treating
+equality of its matrices as an unexamined geometry readout. The source owner is
+`02_REGISTRY/research/MEMO_A4D_AFFINE_SENSITIVE_SITE_MATTER_LINK.md`, current
+main snapshot `8b94198c8dfbdf5983ad0b350b058fb30bb68a54`, blob
+`e278b41df9a6e555e85be0a78e6301f57d4098f5`, §19 Theorem A. That theorem gives
+the exact law for `R_nil(L,b)=T_b ρ(L)`; the Lean carrier and its defining
+maps remain the existing PR #109 formalization.
+
+`archiveExteriorFrameLift_injective` proves that equality of the complete
+16-state exterior-frame operators implies equality of the underlying linear
+equivalences. Its proof uses covariance of the creator and the exact vacuum
+identity to read `ι(L v)` for every role vector `v`, then applies the owned
+left inverse of `ι`. `nilpotentAffineTranslation_injective` cancels a complete
+translation with its already-proved inverse. These combine in
+`nilpotentAffineRep_injective`: equality of complete `R_nil` operators implies
+both `L=M` and `b=c`. The vacuum image recovers `b`; after that translation
+cancellation isolates the frame action, where the first theorem recovers `L`.
+
+The vacuum support, scalar-vacuum equivalence, frame-vacuum identity, and
+creator-vacuum identity were moved to `ArchiveExteriorFrameLift.lean`, the
+lowest existing module that owns the carrier/functor maps. Their public names
+and types are preserved for the affine module and downstream imports. This
+lets the faithful frame theorem live with its actual representation, rather
+than depending on the higher affine construction.
+
+Scope is exact: this is faithfulness of the algebraic exterior and nilpotent
+affine representations on the existing four-role, 16-state carrier. It does
+not prove that the single raising query `C†(u)ρ(M)` recovers `M` (that map has
+only the one creator leg), the full Lorentz null inverse (27)–(28), all-jet or
+coframe/metric recovery, the full variational pullback, source/price maps,
+physical admission, or GR selection. It adds no claim or assumption, does not
+freeze C0, and is not a physical-source theorem.
+
+`#print axioms` for the three new public theorems reports only
+`propext`, `Classical.choice`, and `Quot.sound`; no computational certificate,
+axiom, `sorry`, or `admit` was added. The current worktree's sources for
+`ArchiveExteriorFrameLift`, `A4DNilpotentAffineMatterLift`, and
+`ArchiveJuliaRaisingOperatorReadout`, followed by the current `D0.All` import
+root, compiled with Lean 4.30.0 into the temporary overlay using the preserved
+Lean/Mathlib package cache. This is a targeted source plus import-root compile,
+not a fresh Lake build. The generated declaration collector, run directly
+against this compiled `D0.All` overlay rather than through the CLI wrapper's
+Lake freshness gate, resolves:
+
+- `archiveExteriorFrameLift_injective : Function.Injective archiveExteriorFrameLift`
+  at source lines 204–243;
+- `nilpotentAffineTranslation_injective : ∀ b, Function.Injective (T_b)` at
+  lines 288–301;
+- `nilpotentAffineRep_injective : R_nil(L,b)=R_nil(M,c) → L=M ∧ b=c` at
+  lines 303–340.
+
+That query records source digest
+`42aee52c2ff5c28d4b66ad64ff5c60030d7d3bbfb51b46fcf4777c4e9e8f8a6d` and
+collector SHA-256
+`8cd6b7da3e1feedc07b615aa061128e19ebf51b451662e5bccb5cc5a9f3caa84`.
+Source SHA-256 values are `ArchiveExteriorFrameLift.lean`
+`f608b6851b487b6eaa2c34e640805a02eab9ff3c5af68fa742417d9a6b624b0e` and
+`A4DNilpotentAffineMatterLift.lean`
+`61b434d7e4cfba4a41b7c2b0cb436ff1e9fd1c62b21412a61d5632c4aed2486b`.
+`formalization_debt_audit.py --check` passed with the unchanged three baseline
+findings, and `check_claim_map_coverage.py` passed. C0 remains unfrozen and
+independently unaccepted; CI for the new pushed head is still to be recorded.

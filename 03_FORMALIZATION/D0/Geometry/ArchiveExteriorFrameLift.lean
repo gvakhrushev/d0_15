@@ -16,12 +16,15 @@ algebra on the four-dimensional role space.  The ordered basis uses
 `roleOrderIndex`, the same order as the owned Jordan–Wigner CAR matrices.
 The frame action is the ordinary exterior-algebra functor `ρ(g) = ⋀ g`.
 It is not a Spin representation and it is not a Dirac-spinor representation.
-No cell-energy law and no constitutive comparison `C_N` is asserted.
+Its action on the full 16-state carrier is faithful, by recovering the
+role-space map from the degree-one creator states. No cell-energy law and no
+constitutive comparison `C_N` is asserted.
 -/
 
 namespace D0.Geometry
 
 open D0
+open ExteriorAlgebra
 open scoped BigOperators
 
 local instance : LinearOrder Role :=
@@ -160,6 +163,84 @@ theorem archiveFockExteriorBasis_apply (s : ArchiveFockState) :
     archiveFockExteriorBasis s =
     (archiveRoleBasis.ExteriorAlgebra) (archiveFockSupport s) := by
   simp [archiveFockExteriorBasis, archiveFockSupportEquiv]
+
+theorem archiveFockSupport_vacuum :
+    archiveFockSupport fockVacuumState = (∅ : Finset Role) := by
+  ext r
+  simp [archiveFockSupport, fockVacuumState]
+
+theorem archiveRoleBasis_ExteriorAlgebra_empty :
+    (archiveRoleBasis.ExteriorAlgebra) (∅ : Finset Role) = (1 : RoleExterior) := by
+  rw [ExteriorAlgebra.basis_apply, ιMulti_family]
+  exact ExteriorAlgebra.ιMulti_zero_apply _
+
+theorem archiveFockExteriorEquiv_single_vacuum (α : ℝ) :
+    archiveFockExteriorEquiv (Pi.single fockVacuumState α) =
+      algebraMap ℝ RoleExterior α := by
+  have h1 : archiveFockExteriorEquiv (Pi.single fockVacuumState (1 : ℝ)) =
+      (1 : RoleExterior) := by
+    rw [archiveFockExteriorEquiv_single, archiveFockExteriorBasis_apply,
+      archiveFockSupport_vacuum, archiveRoleBasis_ExteriorAlgebra_empty]
+  have hα : Pi.single fockVacuumState α =
+      α • Pi.single fockVacuumState (1 : ℝ) := by
+    ext t
+    by_cases ht : t = fockVacuumState <;> simp [ht, Pi.smul_apply]
+  rw [hα, map_smul, h1, Algebra.algebraMap_eq_smul_one]
+
+theorem archiveExteriorFrameLift_vacuum (L : RoleSpace ≃ₗ[ℝ] RoleSpace) (α : ℝ) :
+    archiveExteriorFrameLift L (Pi.single fockVacuumState α) =
+      Pi.single fockVacuumState α := by
+  refine archiveFockExteriorEquiv.injective ?_
+  simp [archiveExteriorFrameLift_apply, archiveFockExteriorEquiv_single_vacuum]
+
+theorem archiveExteriorCreator_on_vacuum_eq_ι (b : RoleSpace) :
+    archiveFockExteriorEquiv
+        (archiveExteriorCreator b (Pi.single fockVacuumState (1 : ℝ))) =
+      ι ℝ b := by
+  simp only [archiveExteriorCreator, LinearEquiv.apply_symm_apply,
+    archiveFockExteriorEquiv_single_vacuum]
+  exact mul_one _
+
+/-- The full 16-state exterior frame action is faithful: its action on the
+degree-one creator states recovers the underlying role-space equivalence. -/
+theorem archiveExteriorFrameLift_injective :
+    Function.Injective archiveExteriorFrameLift := by
+  intro L M h
+  apply LinearEquiv.ext
+  intro v
+  let vacuum : ArchiveFockState → ℝ := Pi.single fockVacuumState (1 : ℝ)
+  have hL : archiveExteriorCreator (L v) vacuum =
+      archiveExteriorFrameLift L (archiveExteriorCreator v vacuum) := by
+    calc
+      archiveExteriorCreator (L v) vacuum =
+          archiveExteriorCreator (L v) (archiveExteriorFrameLift L vacuum) := by
+            rw [archiveExteriorFrameLift_vacuum]
+      _ = archiveExteriorFrameLift L (archiveExteriorCreator v vacuum) :=
+        (archiveExteriorFrameLift_creator_covariant L v vacuum).symm
+  have hM : archiveExteriorFrameLift M (archiveExteriorCreator v vacuum) =
+      archiveExteriorCreator (M v) vacuum := by
+    calc
+      archiveExteriorFrameLift M (archiveExteriorCreator v vacuum) =
+          archiveExteriorCreator (M v) (archiveExteriorFrameLift M vacuum) :=
+        archiveExteriorFrameLift_creator_covariant M v vacuum
+      _ = archiveExteriorCreator (M v) vacuum := by
+        rw [archiveExteriorFrameLift_vacuum]
+  have hcreator : archiveExteriorCreator (L v) vacuum =
+      archiveExteriorCreator (M v) vacuum := by
+    calc
+      _ = archiveExteriorFrameLift L (archiveExteriorCreator v vacuum) := hL
+      _ = archiveExteriorFrameLift M (archiveExteriorCreator v vacuum) := by
+        exact congrArg (fun F : _ →ₗ[ℝ] _ => F (archiveExteriorCreator v vacuum)) h
+      _ = _ := hM
+  have hι : ι ℝ (L v) = ι ℝ (M v) := by
+    have h := congrArg archiveFockExteriorEquiv hcreator
+    rw [archiveExteriorCreator_on_vacuum_eq_ι,
+      archiveExteriorCreator_on_vacuum_eq_ι] at h
+    exact h
+  calc
+    L v = ιInv (ι ℝ (L v)) := (ExteriorAlgebra.ι_leftInverse (L v)).symm
+    _ = ιInv (ι ℝ (M v)) := congrArg ιInv hι
+    _ = M v := ExteriorAlgebra.ι_leftInverse (M v)
 
 /-- The actual `k`th compound coefficient of a frame, expressed as the
 determinant of the corresponding ordered minor.  The row index is the input
