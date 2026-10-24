@@ -233,6 +233,35 @@ CASES: list[dict[str, Any]] = [
         ],
         "scope_review": "The finite-carrier inverse retains symmetric endpoint forms, their isometry, a normalized witness, and the positive branch; the canonical witness exists under the stated null and nondegeneracy hypotheses. It does not establish the consumer's physical price, admission, all-jet pullback, or GR selection.",
     },
+    {
+        "id": "julia-query-principal-frame-coframe-recovery",
+        "queries": [
+            "principalFrameObservedQueryCoframeRecovery Eq 30a four full query vacuum responses",
+            "Fbar equals U_mat transpose eta coframe inverse metric invariant IsRoleLorentz",
+            "из четырех Julia query columns восстановление кофрейма и метрики Eq 30a",
+            "AF radial coframe equivalence section 5.1 principal frame reconstruction",
+        ],
+        "required_refs": [
+            "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md",
+            "02_REGISTRY/research/A4D_EXACT_AF_RADIAL_COFRAME_EQUIVALENCE_NONLINEAR_SPIN2_2026_10_18.md",
+            "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+            "03_FORMALIZATION/D0/Geometry/A4DJuliaPrincipalFrameRecovery.lean",
+            "03_FORMALIZATION/D0/Geometry/A4DRawSolderFrameAction.lean",
+        ],
+        "required_sources": [
+            {"path": "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md",
+             "commit": "fe5cf335da04cac14e50407b03f98b96be17dc52",
+             "blob": "1c8d59e5533b443d9a015dc4512cfbc160ae7e62",
+             "sections": ["8.5"], "scope_query_indexes": [1, 2],
+             "scope_query_sections": {"1": ["8.5"], "2": ["8.5"]}},
+            {"path": "02_REGISTRY/research/A4D_EXACT_AF_RADIAL_COFRAME_EQUIVALENCE_NONLINEAR_SPIN2_2026_10_18.md",
+             "commit": "fe5cf335da04cac14e50407b03f98b96be17dc52",
+             "blob": "734e21ae6bc04ff3446ad15858936d417fdd2e55",
+             "sections": ["5.1"], "scope_query_indexes": [3],
+             "scope_query_sections": {"3": ["5.1"]}},
+        ],
+        "scope_review": "The compiled map applies under the explicit full-query equality, inverse-coframe right-inverse, and IsRoleLorentz hypotheses. It does not derive physical query admission, proper-Lorentz constraints on each M_r, all-jet pullback, price/source selection, or GR closure.",
+    },
 ]
 
 

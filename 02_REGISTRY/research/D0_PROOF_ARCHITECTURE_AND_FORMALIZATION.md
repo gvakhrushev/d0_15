@@ -1731,3 +1731,69 @@ The updated Lean module SHA-256 is
 These inventories verify the declaration types and provenance through the
 module import. They are not a current-source `D0.All` replay; the final
 integration build remains for the Ready checkpoint.
+
+## Query-to-principal-frame coframe recovery (24 October 2026)
+
+This checkpoint formalizes the next map in the same published #334 source:
+commit `fe5cf335da04cac14e50407b03f98b96be17dc52`,
+`A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md`, blob
+`1c8d59e5533b443d9a015dc4512cfbc160ae7e62`, §§8.4–8.5, Eqs. (26) and
+(30a). The identified downstream consumer is §5.1 of
+`A4D_EXACT_AF_RADIAL_COFRAME_EQUIVALENCE_NONLINEAR_SPIN2_2026_10_18.md`, blob
+`734e21ae6bc04ff3446ad15858936d417fdd2e55`.
+
+The new supported module
+`D0.Geometry.A4DJuliaPrincipalFrameRecovery` composes the existing full
+finite-carrier query and vacuum readout with the existing solder/Lorentz matrix
+convention. It takes a family of actual query operators `X_r` and retains the
+explicit hypothesis that each equals the owned raising query `C(u_r)ρ(M_r)`.
+For each role `r`, `u_r` is the `r`-th column of `U_mat = L η Fᵀ`; the readout
+theorem recovers that vector from `X_r`'s vacuum response, with its `M_r`
+linear equivalence left explicit. The four outputs therefore form the same
+`U_mat`. In the existing
+`IsRoleLorentz Λ` convention, taking `L = Λᵀ` proves
+`F̄ = U_matᵀ η = F L⁻¹`; if `F e = 1`, the recovered coframe is `L e`, and
+`(L e)ᵀ η (L e) = eᵀ η e`. The base matrix lemmas live beside the existing
+frame action in `A4DRawSolderFrameAction`; the new module is registered in
+the existing `formal_support.csv` and generated `D0.All` view.
+
+This consumes the narrow mathematical application from the pinned operator
+readout to the inverse-coframe reconstruction. Its remaining conditions and
+scope stay visible: `M_r` ranges over arbitrary finite-dimensional linear
+equivalences and is not constrained to the source's proper-Lorentz endpoint
+family; and the matrix proof does not derive the `X_r=C(u_r)ρ(M_r)` hypothesis
+or establish that an admitted D0 execution selects those inputs. It proves no
+all-jet regularity, variational pullback (31), native price/source equality,
+physical admission, or GR selection. No claim status,
+C0 disposition, scientific acceptance, or #334 lifecycle state changes.
+
+The targeted Lean 4.30.0 build
+`python3 tools/lean_task_build.py narrow D0.Geometry.A4DJuliaPrincipalFrameRecovery`
+passed (3,020 Lake jobs); the base module
+`D0.Geometry.A4DRawSolderFrameAction` also passed its narrow build (2,981
+jobs). The declaration inventory
+`sources/d0_proof_architecture_formalization_2026-10-24/principal_frame_recovery_inventory.json`
+was queried through import root `D0.Geometry.A4DJuliaPrincipalFrameRecovery`
+from the dirty worktree at base snapshot `fafd768855adb84667702e8b00c80a7acfdb2d23`,
+with Lean 4.30.0 and collector SHA-256
+`8e95fbfb6896de85a8d0309aa2b7ad68051cce7b7d42749b54ce4bef07131ed7`.
+All new matrix and query-recovery declarations report exactly
+`Classical.choice`, `Quot.sound`, and `propext`. The inventory SHA-256 is
+`5918351c8a39ae80d4bac6326edf0065949b213fb206bb2268026a6243e604ba`; its
+Lean source digest is
+`dcadb3e1623c9dfd380a0c703a4d4e1fe5b3bdb0b593af8cda180ab0a348df51`. The
+query-to-frame composition module SHA-256 is
+`9e074d4fc439195691e76320ff13cf709c2b9c252b8f72e093c24d4b272ed770`.
+`generate_lean_views.py --check` reports `stale=0`, claim-map coverage passes,
+and `formalization_debt_audit.py --check` remains at the three baseline
+findings. This is a targeted application build, not a `D0.All` integration
+replay; the latter remains deferred to Ready.
+
+The cold-start suite now includes
+`julia-query-principal-frame-coframe-recovery`, which separates the Eq. (30a)
+owner in §8.5 from its §5.1 consumer and requires the new Lean composition and
+matrix adapter to be discoverable. The full run found all 16/16 search cases;
+both pinned source sections and both Lean modules were found as direct content.
+`python -m unittest tools.test_proof_architecture` passed 35/35 tests, and the
+updated runner SHA-256 is
+`ddbf8ac8a0c70c6586d038e03fd586dd4eda6ebbe5444c3645df99d8c7f39138`.
