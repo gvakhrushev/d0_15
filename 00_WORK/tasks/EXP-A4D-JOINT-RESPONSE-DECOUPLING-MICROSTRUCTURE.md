@@ -8616,3 +8616,99 @@ input is that original full-execution predicate/derivation, followed by
 its application to this same priced programme. A request for any additional
 primary definition was sent to the user. No new predicate, physical
 postulate, task or further conditional bridge is adopted to fill the gap.
+
+
+### 24 October: construct the finite execution domain and consume its first readiness edit
+
+Phase: native realization / source composition; existing constitutive owner
+and native-programme-v1 carrier in PR #334. Input:
+cb2f08746334f524f818b46a3407e531cac2c2b7. The user answered the missing-source
+question: all materials are in the repository and an absent definition is
+to be constructed. Work therefore resumes with an explicit operational
+domain and its actual source test, rather than another search for X_N.
+
+Write paths: primary residual section7t, this brief and
+02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/.
+Root owns the definition/composition; bounded assistants own respectively
+native_execution.py, book_price.py with BOOK_MAP.md, and the independent
+check_native_execution_domain.py. These are implementation/proof parts
+of this existing parent, not separate scientific executions.
+
+Precise parent substitution: replace the opaque membership input by
+X_run(b,profile), a decidable bounded code domain of fully expanded actual
+G/CX words, with an explicit source-I profile for the exact7j inverse.
+Input blanks, arbitrary protected inputs, immutable oldRIGHT, all failed
+columns, source port/spin and primitive inventory are retained. The strict
+JSON schema and full-column matrix interpreter give concrete endpoints;
+generated prefixes determine the clock/cut rather than supplied free
+matrices. The physical availability of the selective source-I interface
+keeps its existing scope. This sector is not asserted to exhaust every
+possible D0 apparatus or select a physical continuation law by definition.
+
+The unchanged bootstrap scalar is evaluated on the complete paired
+chronological Hodge. Every2ND thermal mode and the genuine rank-r closing
+feedback are counted; no extra factorN or selected-key heat trace appears.
+This implementation does not identify the bare clock with the full native
+spatial scene. Full-scene applications retain their actual owned operator.
+Finite native edits and their complete prices are defined. A chosen finite
+minimum is not converted into an ambient Euler equation or used to erase
+the existing Lorentzian saddle scope.
+
+Changed mathematical input: an ACTUAL equal-inventory two-sided resource
+edit, obtained by replacing the two G cells of one plus-resource factory
+by the owned W_(L,k) cells controlled by the existing root c0. The accepted
+resource is exactly the same plus-state at every endpoint, but its raw
+success is s0(u)=(1-u²)/2. At the original native u0=p³,
+logarithmic readiness source is exactly -1/2. The whole conjugate-echo
+heat is constant within each actual common-clock stencil; its genuine
+feedback source is nonzero. Equations(193)-(194) keep the positive actual
+divided gain and the original field calibration; the normalized readiness
+row tends to -Omega q/(2a0 tau). It is not killed by the42 field rows or
+collective bank averaging. No arbitrary-angle primitive or field-fitted
+price is used.
+
+Smallest decisive check: literal8-column factory identity and native
+W_(L,k) endpoints; strict membership/oldRIGHT rejection; all-column routed
+inverse with dirty port/spin; direct full clock feedback/determinant/heat
+checks; the exact algebraic readiness secant. The general equal-inventory
+whole-scene cancellation is consumed from7j(97), not inferred from a small
+clock-only numerical fixture. No unchanged root/full128/Lean suite is
+required for this research/implementation checkpoint.
+
+This changes the route: undefined membership no longer stops this concrete
+sector, but the enlarged current7s programme is not joint stationary when
+these raw resource edits are allowed. The next positive premise is the
+actual full task/constraint map fixing those changes, or an admitted
+mechanism solving their retained complete source. Normalized logical
+correctness does not supply that map. The field/bank and neutral encoder
+results remain intact. No selected physical Einstein equation, full native
+Cost-Info identification, compatible stationary refinement, positive_gr,
+GR_closed or raw216 closure is promoted.
+
+Final analytical section7t, including separators before section8:
+14993 UTF-8 bytes, SHA256
+7f48b686caf7e6980339e5e2377d8cc644c5bbc9c81ba05d0bcf8766377442fb.
+All three independent source/price/variation reviews reread and ACCEPTED
+this exact pin. Section7s remains byte-identical at its original17510-byte
+pin b9bcd14363d4aa395d4a7fe941b35fe9a1fd5bf9b217aa415902605a9e236425.
+
+Actual final narrow run: Python3.9.6/SymPy, checker exit0,68 checks;
+CHECK_RESULT.json records the precise false physical-status flags.
+The root verified the final receipt and every final implementation hash,
+reusing that run rather than claiming another replay. Exact Q=33 and580
+witnesses use paired resource codes(-65,67) and(-1159,1161), respectively.
+Their common edited-resource schedules and full native inverses are
+counted; the remainder of the full7s processor and whole-scene heat law
+are consumed symbolically, not claimed as a new monolithic raw replay.
+An additional independent32-column routed-inverse/oldRIGHT check passed.
+
+Final packet SHA256 pins:
+native_execution.py 222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c
+book_price.py 7c325fe6322298e13c2380522e9645cc228d8d5db2d7741368310690b80b095c
+BOOK_MAP.md 4950d36010bd75bd26df13d9f13ff27843980a4fd35aefaac7dd950059fc21ee
+check_native_execution_domain.py 6da9769a550fd9918dcb6cd3b5795aaf66cfdc21db285fb963c198d99f949190
+CHECK_RESULT.json ff9fd0fdc0214fb125d1bfd52eddce6c3adefc4e19d8282683b086921369b342
+
+Affected work, agent-protocol, assembly, repository and whitespace guards
+pass on the final scientific inputs. No changed claim/assembly acceptance,
+full historical research replay or new Lean build is asserted.

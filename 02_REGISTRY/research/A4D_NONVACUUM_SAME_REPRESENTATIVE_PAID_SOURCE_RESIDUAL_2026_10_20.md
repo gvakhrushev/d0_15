@@ -5049,6 +5049,288 @@ complete finite stationary solution, physical GR, positive_gr or
 raw216 closure is promoted by this joint source result.
 
 
+## 7t. Construct the executable domain and test an actual native readiness variation
+
+24 October 2026. Same owner; inputcb2f0874. The user directed that an
+absent definition be constructed from the repository. We therefore replace
+an unspecified execution-membership predicate by the explicit finite
+operational sector below, and compute a previously unbound source on it.
+This is a construction and an application, not a claim that naming a
+domain proves the physical stationary solution. The consumer is7s's
+remaining native configuration/variation map and the whole budget(129).
+
+The implementation and independent bounded checks are in
+[d0_native_execution_domain_2026-10-24](sources/d0_native_execution_domain_2026-10-24/).
+No action, Einstein equation, desired root or fitted source is inserted
+into its membership test.
+
+### A finite membership algorithm with literal preparation and inverse
+
+Fix finite integer bounds on qubits and EXPANDED primitive stages. A
+code records its register count, initial zero-blank wires, immutable
+oldRIGHT wires, chronological primitive list, apparatus profile and final
+readout-bit names. Every remaining input wire is an arbitrary protected
+input, possibly entangled with the others and oldRIGHT. Preparations of
+fresh coordinates, references, flags and keys are gates INSIDE the list;
+they are not additional supplied amplitudes. Final readout names do not
+authorize a reset or a postselection operation.
+
+The G_CX profile admits precisely addressed positive G and CX letters.
+The G_CX_SOURCE_I profile additionally names ONE source port and the
+two-bit representation of its original quaternion spin4. Its only extra
+primitive is SourceI=diag(I4,L_i) in that same port frame. No individual
+G/CX addressing of the spin is admitted. These are the explicit matrices
+and availability interface already consumed in7j(94)-(95), not an arbitrary
+orthogonal gate set or the distinct full RawZone/regular8 carrier.
+Its actual source-local implementation obligation remains the one in7j;
+membership does not prove availability from abstract algebra generation.
+
+Reject unknown primitives, invalid/repeated addresses, overlapping port
+and spin, any gate touching oldRIGHT, a blank labelled oldRIGHT, and any
+resource-bound excess. In particular an oldRIGHT CONTROL is forbidden:
+controlled use can change its quantum coherences. Generated coherent
+factory flags are not relabelled immutable oldRIGHT; an already measured
+history cannot be silently put back inside an inverse.
+
+Call the resulting finite set X_run(b,profile). Its elements are the
+parsed finite records, represented by canonical JSON codes; arbitrary
+whitespace presentations are not distinct apparatuses. Its predicate is an
+algorithm on finite codes, with no numerical tolerance. Finiteness follows
+because both wire names and word length are bounded and the primitive
+alphabet is finite. Membership, inventory, initial isometry i0 and
+P0=i0 i0^dagger are computed directly. In particular
+
+    D_full=2^n,   r0=rank P0=2^(n-number_of_blank_wires).       (185)
+
+The source-spin and all failed/unused columns occur once in D_full;
+protected inputs occur in r0 as well. A blank and an unknown input are
+different data. The grammar contains no uncharged allocation or idle.
+The empty word is an identity boundary code; its N=0 object is not
+mistaken for a positive-stage Book clock. The Book action below uses
+the nonempty-word subdomain.
+
+Every admitted letter is orthogonal on ALL columns and is identity on
+oldRIGHT. Therefore every admitted word has these properties, including
+arbitrary input/reference entanglement. For the source-I profile its
+inverse is generated mechanically: reverse the list, keep CX, replace
+SourceI inverse by THREE SourceI letters, and replace G inverse by
+SourceI;SourceI;G;SourceI;SourceI. If G acts away from the source port,
+route the WHOLE five-letter block by two SWAPs, SIX additional CX.
+All intermediate port/spin work is retained. The expanded inverse must
+itself satisfy the actual resource bound. This proves a full-column
+inverse, not only the c0=1 column of a heralded word. The G_CX profile
+does not receive this inverse macro by definition.
+
+The finite constructors in7p-r supply actual codes of this grammar:
+each W_(L,k) source uses integer n_+=(L+k)/2,n_-=(L-k)/2, with
+L>=|k| and equal parity; all Bernstein counters and all rows are finite;
+fixed readouts expand by the owned factories. Thus each fixed-accuracy
+7s programme has a finite resource bound and is an endpoint in this
+sector on its declared source-port interface. This is not a continuous
+word selector for arbitrary real fields or a compiler for additional
+unproved moving geometric operations.
+
+### The actual clock, cut and Book action are functions of the code
+
+For a nonempty expanded word g_0,...,g_(N-1), let W_0=I,
+W_j=g_(j-1)...g_0, W=W_N. On the ENTIRE N-stage carrier set
+
+    T=sum_j |j+1 mod N><j| tensor g_j,
+    d=(I-T)/sqrt(2),
+    Delta_pair=diag(d^dagger d,d d^dagger),
+    P_hist=direct_sum_(j<N) W_j P0 W_j^dagger,
+    F_hist=P_hist T^dagger(I-P_hist)T P_hist.                (186)
+
+These are the already owned chronological connection Hodge and
+transported input-return cut, now generated from one validated code.
+The terminal wrap uses the last ACTUAL primitive; an extra uncharged
+closing stage is not inserted. Every interior leakage block is zero.
+The only remaining block is unitarily equivalent to
+
+    E_W=P0 W^dagger(I-P0)W P0.                            (187)
+
+Indeed an interior g_j maps range(W_j P0) onto range(W_(j+1) P0);
+on the wrap its failure to return is exactly(187). Thus F_hist has
+rank at most r0, although P_hist has rank N r0. Pair the cut as
+diag(P_hist,0) if the return is represented on the paired Hodge carrier.
+The other grade then has zero feedback; it still contributes to heat.
+
+The unchanged Book functional on this explicit clock sector is
+
+    B(e)=beta^(-1) log Tr_full exp(-beta Delta_pair)
+                 -log det_(range P0)(I-z E_W),
+    beta>0, 0<z<1.                                      (188)
+
+All 2 N D_full thermal modes remain. There is no factor N in the
+feedback, no division by r0 and no replacement of the full trace by
+the selected initial column. Positivity 0<=E_W<=P0 and Delta_pair>=0
+make this a finite real price. For fixed computable beta,z it is computable from the code:
+matrix entries are algebraic in the positive a with a^4+a^2-1=0;
+matrix exponential and positive logarithm have convergent series with
+effective finite-dimensional norm bounds. More explicitly the feedback
+series sum_(m>=1) z^m Tr(E_W^m)/m has tail at most
+r0 z^(M+1)/[(M+1)(1-z)]. Transcendental price comparison is not part
+of the syntactic membership decision.
+
+Equation(188) implements the full PAIRED CLOCK Hodge. It is not an
+identification of that clock alone with the original spatial scene or
+its physical metric. An application using the complete homogeneous
+scene-clock operator keeps its actual scene factor and ALL its modes,
+as in7j-k. Extra scene, boundary or other selected stack sources are
+not set to zero by this definition. Likewise this bootstrap valuation
+is not a proof identifying every physical Cost-Info component with it.
+The readiness application below uses7j's already proved WHOLE heat
+conjugacy, not a clock-only replacement of that action.
+
+Programme storage is included among the ordinary physical registers.
+If one actual autonomous word decodes many internally stored keys,
+its T and full heat include ALL those key blocks. A sharp input key
+does not restrict the thermal trace to its selected block. Different
+hardwired words instead describe different operator configurations;
+they must not be presented as a free key change of one decoder.
+
+### Actual code changes do not silently become smooth native controls
+
+At fixed layout, profile and input boundary, one can enumerate literal
+insertions, deletions and substitutions whose resulting word passes
+the same predicate. Equal-inventory comparison is the decidable
+subrelation having equal counts of EACH primitive and equal N.
+Changed inventory or carrier has its actual absolute price. The
+generated intermediate states and prefix cuts in(186) change with
+the code; they are not independently frozen matrices.
+
+This supplies concrete finite variations and their exact price
+differences. It does not itself produce nonconstant continuous curves
+in a finite set. Nor does a finite local minimum imply Euler equality:
+it gives inequalities and would generally exclude stationary saddles.
+Use Book02's declared finite-difference convention with its actual
+endpoints and scale, or prove a consistent source limit. For a supplied
+smooth MATRIX comparison the ordinary derivative formula in BOOK_MAP.md
+applies, retaining generated-cut derivatives and every genuinely
+independent source. That comparison is not asserted to be a native
+smooth gate primitive.
+
+Consequently the formerly opaque membership question is now testable
+on this operational sector. The next question is substantive: does a
+given family satisfy the proposed Book stationarity tests for its
+ACTUAL native edits? Merely choosing the semantic fibre in(184) as the
+entire domain would omit valid raw-code changes. The following edit
+calculates one such row rather than assuming it away.
+
+### An actual resource edit preserves the logical query and changes readiness
+
+Take ONE fresh fair/plus resource in the existing7s processor, in
+addition to its existing independent root c0. On three initially blank
+bits a,b,c, the chronological word
+
+    G_alpha(a);G_alpha(b);CX(a,c);CX(b,c);CX(a,b)
+
+has exact column
+
+    cos(alpha)^2 |000> +sin(alpha)^2 |100>
+       +sin(alpha)cos(alpha)(|011>+|111>).                (189)
+
+Thus its genuine flag c=1 has probability s0(alpha)=2sin^2(alpha)cos^2(alpha),
+and conditional resource |+>_a tensor |11>_(b,c), independent of alpha.
+No branch is discarded in the actual word. Every later raw gate is
+executed on failure too. On success this resource is exactly the one
+consumed by the owned H factory, for arbitrary DATA/oldRIGHT input,
+not merely for the original geometric field section.
+
+There is NO new variable-angle primitive in this test. Let theta be
+the ORIGINAL Golden angle, sin(theta)=p, cos(theta)=sqrt(p). Replace
+both displayed G_alpha by the actual W_(L,k) cells controlled by the
+existing c0. On c0=1 they give G^k, so alpha=k theta; on c0=0 the
+whole G^L complement remains. Each cell has exactly L G and2L CX,
+independent of k. All inverse/source/routing letters are generated
+as above. Therefore k=1 and k=1+/-2Q share any odd L>=1+2Q,
+the same complete carrier, primitive inventory and actual clock LENGTH
+within each chosen stencil. The full clock operators T_k themselves
+change. Finer stencils generally increase L and N; their
+absolute prices are not equated. The owned irrational-angle theorem
+supplies Q with G^(2Q) arbitrarily
+close to I on either side. These are finite code endpoints approaching
+the original source, with a two-sided limit; no finite angle oracle
+or equality of different clocks is used.
+
+Use the algebraic raw feature u=cos(2alpha), rather than an externally
+assigned pulse derivative. At the original source,
+
+    u0=p-p^2=p^3,
+    s0(u)=(1-u^2)/2,
+    s0(u0)=2p^3,    (d/du)log s0(u0)=-1/2.             (190)
+
+Every other logical factory and conditional output channel is unchanged.
+With their actual remaining success factor gamma_rest, including c0
+ONCE, the same forward report therefore has
+
+    gamma(u)=gamma_rest s0(u),
+    x(u)=gamma(u) q,        q independent of this edit.    (191)
+
+This statement preserves the normalized query, not the full unnormalized
+instrument: readiness is separately readable and genuinely changes.
+It is precisely the component not fixed by a normalized correctness
+contract. A contract fixing BOTH full F_i effects would prohibit this
+edit; that stronger physical constraint has to be justified independently.
+
+Put the complete edited forward word and its actual full-column inverse
+inside the SAME fixed balanced middle and recording construction. Its
+endpoint is V_k^dagger M V_k; the entire spectrum of M, including the
+failed c0/factory/complement modes, is unchanged. Equal inventory gives
+the same finite N. The WHOLE heat theorem(97), with the actual scene
+and source-spin carrier, therefore gives EXACTLY
+
+    B_k=H_ref(N,D_full)+j_K(x(u_k)).                      (192)
+
+No heat or determinant anchor has been removed. On the owned interior
+source chart, j'_K>0, q>0 and gamma_rest>0. For two actual distinct
+endpoint features u_a,u_b sufficiently near u0, let A_ab be the ACTUAL positive divided
+difference of j_K between x(u_a),x(u_b). Then
+
+    (B_b-B_a)/[A_ab(u_b-u_a)]
+           =-gamma_rest q(u_a+u_b)/2.                   (193)
+
+This exact finite-code identity uses algebraic report differences;
+it does not need a transcendental equality test or assume a continuous
+admissible angle. At u_a,u_b->u0 its source is -gamma0 q/2, nonzero.
+With the SAME field-source calibration Gamma_ab=A_ab gamma0 a0 tau/Omega,
+gamma0=gamma_rest 2p^3, it becomes
+
+    (B_b-B_a)/[Gamma_ab(u_b-u_a)]
+       =-Omega q(u_a+u_b)/(4p^3 a0 tau)
+           ->-Omega q/(2a0 tau) !=0.                    (194)
+
+The genuine readiness row survives collective bank averaging. If q
+has a positive fixed floor while the report aperture tau tends to0,
+this normalized row grows rather than vanishing. Its physical test
+norm must still use the actual code/readout lift; the displayed
+nonzero value is on the declared unit-u source test, not a claim that
+every physical norm gives that unit test for free.
+
+### What this construction changes in the parent argument
+
+X_run and its native edits now have an explicit membership procedure,
+resource inventory, full-column semantics, generated return cut and
+computable Book valuation. Undefined membership is no longer the
+reason to stop this CONCRETE operational application. The actual
+same-inventory resource test(189)-(194) supplies a specific non-small
+additional source rather than an arbitrary effect variation.
+
+It also prevents a false positive: opening the domain to these raw
+programme variations does NOT make the current interior source-bearing
+7s family a joint stationary family. Its covered field/bank estimates
+and neutral encoder fibre remain true, but do not annul this readiness
+row. A different legitimate physical task may fix the full response
+including readiness; merely preserving its conditional logical answer
+is insufficient. The remaining positive route must derive that actual
+constraint/variation image, solve the retained complete source by
+another admitted mechanism, or change this scoped physical application
+while preserving the original action. This result neither chooses an
+Einstein task nor claims an unrestricted full-D0 no-go. Physical source
+availability, spatial geometry identification and compatible stationary
+refinement keep their declared scope. GR_closed=false; raw216 is open.
+
+
 ## 8. Reproduction
 
 Run from this directory:
