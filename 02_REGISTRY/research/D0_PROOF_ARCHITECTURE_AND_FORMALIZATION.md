@@ -799,3 +799,15 @@ The earlier all-claims resolution above is retained at its original Lean source 
 Across 889 claims, the collector expands 2,741 theorem-locator atoms into 8,294 unique exact candidate names. It finds 2,497 current declarations and 5,797 exact misses. Of the locator atoms, 2,533 match one candidate declaration, four match two candidates, and 204 match none. At the claim-row level, 705 rows have at least one resolved locator and 184 have none. These are current name/module/source-path availability counts, not theorem coverage or application acceptance.
 
 The reproducible output is `sources/d0_proof_architecture_formalization_2026-10-24/claim_candidate_resolution_current.json` (2,535,647 bytes; SHA-256 `e0f4705fc20db6e236cf9c8de4a094ed97e2f7b2054891005fa82e17e1aef40c`). It records the snapshot, Lean source digest, claims registry digest, collector SHA-256 `24289b940bc867e4ccea28cbd9771033669662dc5017f53e7a14ad780cadd30d`, and toolchain `leanprover/lean4:v4.30.0`. The matching claim names remain locator candidates until their scope and application are checked; this refresh changes no status, owner, assumption, C0 disposition, or physical premise.
+
+
+### 24 October compiled reuse through controlled claim aliases
+
+The `reuse --lean` view now follows an exact `CANONICAL_TARGET` entry in aliases.csv to the named canonical claim, then compiles that claim's exact theorem locators. It returns the canonical claim's scope/status metadata separately from the compiled declarations. A legacy lookup-only alias does not trigger Lean compilation; a missing canonical target is reported without querying a guessed name. If an alias key is also an exact claims.csv ID, the direct claim and alias target compile as separate views; the alias never silently replaces or merges the direct record.
+
+Two live applications were run on clean snapshot `7156fe33397669278bf4a558c003743dc842b19a`, with `tools/proof_architecture.py` SHA-256 `0d883453b8bb9ae5e8cbfe5d124c3d0cfd0c950b88f7c82dde690fc7dce6a3f6` and Lean source digest `4b760603dd653cf0354beacd1d78da0879c570b744059c37115ec2ac2d8936ac`:
+
+- `D0-ARCHIVE-WEYL-INTERFACE-VACUITY-NOGO-001` resolves to canonical claim `D0-ARCHIVE-WEYL-DIMENSION-VACUITY-NOGO-001` (`NO-GO`); all four registered theorem locators resolve to current compiled declarations.
+- `D0-ALBERT-SM-GAUGE-DIMENSION-ALIGNMENT-001` exists both as a direct claim and as an alias to `D0-ALBERT-SM-GAUGE-PROJECTION-001`. The direct row's one locator resolves; the canonical target's five locators resolve. Both claim records and both declaration sets remain distinct, with their existing `CORE-FORMALIZED` status.
+
+The full outputs are in `sources/d0_proof_architecture_formalization_2026-10-24/controlled_alias_compiled_reuse_current.json` (129,255 bytes; SHA-256 `225ef78202be3c4552d511d3b0f3743f17f2fe89ed1914f698689b2c1e72b370`). This verifies alias routing and current declaration availability only; it proves no semantic equivalence between the two Albert claims, no assembly application, and no new acceptance or scientific status.
