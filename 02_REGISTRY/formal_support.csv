@@ -1,6 +1,7 @@
 lean_module,lean_file,role,referenced_by
 D0.Algebra.CayleyDickson,D0/Algebra/CayleyDickson.lean,EXPLICIT_SUPPORT,03_FORMALIZATION/D0/Algebra/Sedenions.lean
 D0.Algebra.GaloisComposite,D0/Algebra/GaloisComposite.lean,EXPLICIT_SUPPORT,03_FORMALIZATION/D0/Synthesis/SDECubicSpectralDisjointness.lean;03_FORMALIZATION/D0/Cosmology/PhasonWDESignNormalization.lean
+D0.Algebra.FibonacciAFTower,D0/Algebra/FibonacciAFTower.lean,EXPLICIT_SUPPORT,02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md;02_REGISTRY/claims.csv;03_FORMALIZATION/D0/VNext/PerronGNSTower.lean
 D0.Algebra.SedenionTower,D0/Algebra/SedenionTower.lean,EXPLICIT_SUPPORT,03_FORMALIZATION/D0/Algebra/CayleyDickson.lean
 D0.Bridge.T4LocalRoleFrame,D0/Bridge/T4LocalRoleFrame.lean,EXPLICIT_SUPPORT,02_REGISTRY/research/ATORUS_TYPED_RESPONSE_RECONSTRUCTION.md
 D0.Bridge.T4ResponseReconstruction,D0/Bridge/T4ResponseReconstruction.lean,EXPLICIT_SUPPORT,02_REGISTRY/research/ATORUS_TYPED_RESPONSE_RECONSTRUCTION.md

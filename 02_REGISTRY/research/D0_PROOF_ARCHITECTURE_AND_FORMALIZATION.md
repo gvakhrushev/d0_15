@@ -524,3 +524,50 @@ This is a vertical refactor and compiled reuse application inside one existing
 finite mathematical claim family. It neither freezes nor accepts C0, and it
 does not alter #334 ownership, the native physical action/source, or any open
 GR-selection assumption.
+
+### 24 October shared Perron-GNS refinement lemma
+
+`D0.Algebra.FibonacciAFTower.gns_refinement_isometry` and
+`D0.VNext.PerronGNSTower.gns_refinement_isometry` had the same generic
+statement and proof. The core module is now the single proof owner; the
+vNext theorem remains under its old public name as a compatibility wrapper.
+The duplicate nonzero-phi and Perron-trace consistency results in the vNext
+module likewise delegate to the existing core declarations. The vNext owner
+theorem still consumes the compatibility wrappers, so its public theorem type
+is unchanged.
+
+The existing vNext claim row now lists both module locators and the exact
+supporting declarations; `formal_support` records the core module's vNext
+consumer, and the generated `ClaimMap` was refreshed. The claim ID, scientific
+owner, status, and all physical assumptions are unchanged. The compiled
+`reuse --lean D0-VNEXT-AF-GNS-ISOMETRY-OWNER-001 --import-root D0.All` view
+resolves the owner, wrapper, and Perron helper locators. Its extracted proof
+dependencies show the vNext isometry wrapper calls the core isometry theorem,
+the vNext trace wrapper calls the core trace-consistency theorem, and the
+vNext owner theorem consumes those wrappers. The vNext and core declarations
+remain separate elaborated sources with the same displayed isometry type.
+This is exact dependency evidence, not semantic claim acceptance.
+
+The type boundary remains explicit: the generic result assumes that a supplied
+map preserves multiplication and star and that supplied traces agree on that
+map. Neither this refactor nor the current `PerronGNSTower` conclusion
+constructs the Fibonacci-level algebra inclusions or proves positivity and
+completion of a GNS Hilbert space. Thus it consolidates the conditional
+isometry lemma; a concrete infinite AF/GNS tower remains outside this proof
+slice and its existing owner is preserved.
+
+Local validation: narrow Lean builds passed for `D0.Algebra.FibonacciAFTower`
+(2,947 jobs) and `D0.VNext.PerronGNSTower` (2,948 jobs). The current public
+import `D0.All` passed at 4,564 jobs after the updated `ClaimMap`; the exact
+Lean source digest is `2c8ab138a4ec9315544f461df3e8eb0a2188782762a616c4c4ad651d687a5606`.
+The compiled-reuse collector SHA-256 is
+`e4dd22a88a58f03d98672c4133f742f38483a39b8f06cd71bf8dfcc11540319e`.
+
+SHA-256 for the changed source and generated registry inputs:
+
+| Input | SHA-256 |
+|---|---|
+| `03_FORMALIZATION/D0/VNext/PerronGNSTower.lean` | `3e555de788da152afad833288d0e0945da3b74ce4abe7a587bb9d8696b64f544` |
+| `03_FORMALIZATION/D0/TheoremLedger/ClaimMap.lean` | `0d0829b214e1b0a18654e5cd07a729528c2075f185b0bb23c32c9068d4411250` |
+| `02_REGISTRY/claims.csv` | `493866102b2c4c13c9c31c502c4142abc1349178f35edeb32322f23c42314770` |
+| `02_REGISTRY/formal_support.csv` | `e90d167d4b719783b90f0e5e24d848c39fa38bfcce6d09bb40599fad8cfa0709` |

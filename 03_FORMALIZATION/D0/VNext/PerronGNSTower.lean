@@ -1,5 +1,6 @@
 import Mathlib.Data.Matrix.Basic
 import Mathlib.Tactic
+import D0.Algebra.FibonacciAFTower
 import D0.Core.Phi
 
 set_option linter.unusedSimpArgs false
@@ -29,11 +30,10 @@ theorem gns_refinement_isometry {A B : Type*} [Mul A] [Mul B] [Star A] [Star B]
     (hmul : ∀ x y : A, iota (x * y) = iota x * iota y)
     (hstar : ∀ x : A, iota (star x) = star (iota x))
     (htr : ∀ a : A, tauB (iota a) = tauA a) :
-    ∀ x y : A, tauB (star (iota y) * iota x) = tauA (star y * x) := by
-  intro x y
-  rw [← hstar, ← hmul, htr]
+    ∀ x y : A, tauB (star (iota y) * iota x) = tauA (star y * x) :=
+  D0.Algebra.FibonacciAFTower.gns_refinement_isometry tauA tauB iota hmul hstar htr
 
-theorem phi_ne_zero : phi ≠ 0 := ne_of_gt (by unfold phi; positivity)
+theorem phi_ne_zero : phi ≠ 0 := D0.Algebra.FibonacciAFTower.phi_ne_zero
 
 /-- **The Perron eigenvalue relation** `M_φ v = φ v` for `v = (φ,1)`, i.e. its content `φ·φ = φ + 1`. -/
 theorem perron_eigenvalue_relation : phi * phi = phi + 1 := by
@@ -43,14 +43,8 @@ theorem perron_eigenvalue_relation : phi * phi = phi + 1 := by
 satisfy `M_φ t_{N+1} = t_N`, which reduces to the scalar identities `1 + φ⁻¹ = φ` (top component) and
 `φ⁻¹·φ = 1` (bottom component). Hence `τ_{N+1} ∘ ι_N = τ_N`. -/
 theorem perron_trace_compatible_with_refinement :
-    1 + phi⁻¹ = phi ∧ phi⁻¹ * phi = 1 := by
-  have hp : phi ≠ 0 := phi_ne_zero
-  refine ⟨?_, inv_mul_cancel₀ hp⟩
-  field_simp
-  first
-    | linear_combination phi_sq
-    | linear_combination -phi_sq
-    | nlinarith [phi_sq]
+    1 + phi⁻¹ = phi ∧ phi⁻¹ * phi = 1 :=
+  D0.Algebra.FibonacciAFTower.perron_trace_consistency
 
 /-- **D0-VNEXT-AF-GNS-ISOMETRY-OWNER-001.** The canonical Perron-GNS isometric tower exists: the Perron
 trace is refinement-compatible (`1 + φ⁻¹ = φ`, the scalar form of `M_φ t_{N+1} = t_N`), and any
