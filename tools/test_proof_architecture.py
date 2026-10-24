@@ -638,6 +638,40 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertEqual(hits[0]["source"], "02_REGISTRY/OWNER.md")
         self.assertEqual(hits[0]["matched_terms"], hits[0]["query_terms"])
 
+    def test_search_candidate_card_bounds_details_and_preserves_source_pins(self) -> None:
+        candidate = {
+            "kind": "text-candidate", "key": "02_REGISTRY/owner.md",
+            "label": "L" * 900, "source": "02_REGISTRY/owner.md",
+            "source_sha256": "a" * 64, "source_origin": "workspace",
+            "direct_content": True, "matched_terms": 4,
+            "matched_term_names": ["owner", "scope", "source", "map"],
+            "query_terms": 4, "source_commit": "b" * 40,
+            "source_blob": "c" * 40,
+            "evidence_lines": [
+                {"line": n, "heading": "H" * 400, "matched_terms": ["owner"],
+                 "text": "T" * 400, "kind": "direct_content"}
+                for n in range(10)
+            ],
+            "source_refs": [
+                {"path": f"02_REGISTRY/source-{n}.md", "commit": "d" * 40,
+                 "blob": "e" * 40, "section_refs": ["8.4"],
+                 "pin_complete": True, "hashes": ["f" * 40], "context": "C" * 400}
+                for n in range(10)
+            ],
+        }
+        card = proof._search_candidate_summary(candidate)
+        self.assertEqual(len(card["evidence_lines"]), proof.MAX_SEARCH_EVIDENCE)
+        self.assertEqual(card["evidence_lines_omitted"], 10 - proof.MAX_SEARCH_EVIDENCE)
+        self.assertLessEqual(len(card["evidence_lines"][0]["text"]),
+                             proof.MAX_SEARCH_DETAIL_CHARS)
+        self.assertEqual(len(card["source_refs"]), proof.MAX_SEARCH_SOURCE_REFS)
+        self.assertEqual(card["source_refs_omitted"], 10 - proof.MAX_SEARCH_SOURCE_REFS)
+        self.assertEqual(card["source_refs"][0]["commit"], "d" * 40)
+        self.assertEqual(card["source_refs"][0]["blob"], "e" * 40)
+        self.assertTrue(card["source_refs"][0]["pin_complete"])
+        self.assertEqual(card["source_commit"], "b" * 40)
+        self.assertEqual(card["source_blob"], "c" * 40)
+
     def test_text_search_finds_russian_content_and_reports_section_line(self) -> None:
         with tempfile.TemporaryDirectory() as temp:
             root = pathlib.Path(temp)

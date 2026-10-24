@@ -31,6 +31,9 @@ TEXT_ROOTS = ("01_BOOKS", "02_REGISTRY", "03_FORMALIZATION",
 MAX_SEARCH_RESULTS = 5
 MAX_SNIPPET = 650
 MAX_FIELD_CHARS = 8000
+MAX_SEARCH_EVIDENCE = 3
+MAX_SEARCH_SOURCE_REFS = 3
+MAX_SEARCH_DETAIL_CHARS = 160
 
 
 def read_json(root: pathlib.Path, relative: pathlib.Path) -> Any:
@@ -712,6 +715,49 @@ def _search_summary(item: dict[str, Any]) -> dict[str, Any]:
     return {"kind": item.get("kind"), "key": item.get("key"),
             "label": str(item.get("label", ""))[:MAX_SNIPPET],
             "source": item.get("source")}
+
+
+def _search_candidate_summary(item: dict[str, Any]) -> dict[str, Any]:
+    """Return a compact search card while preserving exact pin coordinates."""
+    references = item.get("source_refs", [])
+    evidence = item.get("evidence_lines", [])
+    compact_refs = []
+    for reference in references[:MAX_SEARCH_SOURCE_REFS]:
+        hashes = reference.get("hashes", [])
+        compact = {key: reference.get(key) for key in
+                   ("path", "commit", "blob", "section_refs", "pin_complete")}
+        compact["hashes"] = hashes[:4]
+        if len(hashes) > 4:
+            compact["hashes_omitted"] = len(hashes) - 4
+        context = reference.get("context")
+        if context:
+            compact["context"] = str(context)[:MAX_SEARCH_DETAIL_CHARS]
+        compact_refs.append(compact)
+    compact_evidence = [
+        {"line": row.get("line"), "heading": str(row.get("heading", ""))[:MAX_SEARCH_DETAIL_CHARS],
+         "matched_terms": row.get("matched_terms", []),
+         "text": str(row.get("text", ""))[:MAX_SEARCH_DETAIL_CHARS],
+         "kind": row.get("kind")}
+        for row in evidence[:MAX_SEARCH_EVIDENCE]
+    ]
+    summary = {
+        "kind": item.get("kind"), "key": item.get("key"),
+        "label": str(item.get("label", ""))[:MAX_SEARCH_DETAIL_CHARS],
+        "source": item.get("source"), "source_sha256": item.get("source_sha256"),
+        "source_origin": item.get("source_origin"),
+        "direct_content": item.get("direct_content"),
+        "matched_terms": item.get("matched_terms"),
+        "matched_term_names": item.get("matched_term_names", []),
+        "query_terms": item.get("query_terms"),
+        "evidence_lines": compact_evidence,
+        "evidence_lines_omitted": max(0, len(evidence) - len(compact_evidence)),
+        "source_refs": compact_refs,
+        "source_refs_omitted": max(0, len(references) - len(compact_refs)),
+    }
+    for key in ("source_commit", "source_blob"):
+        if item.get(key):
+            summary[key] = item[key]
+    return summary
 
 
 def find_exact(dataset: dict[str, Any], key: str) -> list[dict[str, Any]]:
@@ -1432,7 +1478,8 @@ def main() -> int:
             text_hits = full_text_search(root, query)
             seen = {(x["kind"], x["key"]) for x in structured}
             result = {"query": query, "structured_matches": [_search_summary(x) for x in structured],
-                      "text_candidates": [x for x in text_hits if (x["kind"], x["key"]) not in seen],
+                      "text_candidates": [_search_candidate_summary(x) for x in text_hits
+                                          if (x["kind"], x["key"]) not in seen],
                       "snapshot_commit": data["snapshot_commit"],
                       "source_digests": data["source_digests"],
                       "warning": "Text matches are retrieval candidates, not accepted mathematical relations."}

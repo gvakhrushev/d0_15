@@ -55,7 +55,7 @@ The declaration extractor queries a selected compiled public import (`D0.All` by
 
 The collector has run successfully on `D0.Foundation.VerificationCore.verification_core` and the new `D0.Geometry.archiveJuliaRaisingQuery_vacuum_exterior`. Both are found in the compiled environment with actual types, binders, proof/type dependencies, source ranges, and axiom footprints. The verification theorem retains its quantified `FutureExecution` and `TheoryVerification` inputs and is located at lines 227–240 of its source. The Eq. (26) model theorem is located at lines 50–57 of `ArchiveJuliaRaisingOperatorReadout.lean`; its exact type is `∀ u M, archiveFockExteriorEquiv (archiveJuliaRaisingQuery u M vacuum) = ι ℝ u`, with `u : RoleSpace` and `M : RoleSpace ≃ₗ[ℝ] RoleSpace`. The collector reports `Classical.choice`, `Quot.sound`, and `propext` for both this theorem and its existing creator-on-vacuum lemma. These are exposed dependencies of the existing finite-carrier representation; this checkpoint does not claim an axiom-free kernel. The Eq. (26) inventory result was captured at HEAD `b2b73963991bb18c42766ae753bef1c70314c9ab` with `worktree_dirty=true`, Lean source digest `8993ecd144677720658cb3187ba737cb512b7c20a27d541ac93cc212b2b28f3f`, and collector script SHA-256 `4d4edc04deec3e2ad185e9fcf1ba3b7e63bfb16ba1fbc3d9905d253aa2d8ef11` under Lean 4.30.0.
 
-Search is deterministic and bounded: exact IDs/names, aliases, sections, declared result/application links, and scoped attempts first. The content pass uses one `rg --json` scan to build query-specific concept hits, then reads evidence and follows pins only from its bounded top candidates. Russian/English concepts are grouped; low-information words are dropped from scoring when enough specific groups remain. Results include matched lines and nearest headings, with direct content, filename-only hits, and citations kept distinct. Ranking may suggest candidates but cannot set truth. Search failure is not nonexistence.
+Search is deterministic and bounded: exact IDs/names, aliases, sections, declared result/application links, and scoped attempts first. The content pass uses one `rg --json` scan to build query-specific concept hits, then reads evidence and follows pins only from its bounded top candidates. Russian/English concepts are grouped; low-information words are dropped from scoring when enough specific groups remain. Search cards show at most five text candidates, three matched evidence lines and three source pins per candidate, preserve exact commit/blob/section coordinates, and report omitted counts; `show` remains the full-record view. Direct content, filename-only hits, and citations stay distinct. Ranking may suggest candidates but cannot set truth. Search failure is not nonexistence.
 
 `reuse --lean CLAIM-ID` joins one exact claims.csv row to its theorem-name candidates, declarations actually present in the selected compiled Lean import, and their reported proof dependencies. It also reports exact dependency-name intersections with other claim locators as candidate crosswalk edges. This compiled Lean evidence remains separate from declared assembly application edges, conceptual presuppositions, and semantic acceptance.
 
@@ -1170,3 +1170,20 @@ Validation for this slice: the narrow Hodge target built successfully through
 still required before the checkpoint is ready. C0 remains unfrozen and
 independently unaccepted, and the existing scientific and physical owners
 remain unchanged.
+
+## Bounded search-card regression (24 October 2026)
+
+A real query for `weighted adjoint composition Hodge` exposed that the CLI
+returned more than 1,000 formatted lines despite ranking only five text
+candidates, because it repeated long evidence and reference lists. Search now
+renders at most three evidence lines and three exact source references for
+each candidate, with omitted counts and source-file digest retained. The full
+evidence remains available through the exact source and `show` view; ranking,
+pins, and mathematical status do not change.
+
+The same query now returns five text candidates in 13,412 characters and 358
+formatted lines; the leading direct-content candidate is
+`03_FORMALIZATION/D0/Geometry/ArchiveWeightedHodgeDirac.lean`. The focused
+`tools/test_proof_architecture.py` suite passed 35/35, including a new bound
+and source-pin preservation regression. This is an output-size correction,
+not semantic acceptance of the text candidate or its scientific claim.
