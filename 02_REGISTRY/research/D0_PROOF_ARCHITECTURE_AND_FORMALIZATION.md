@@ -1596,5 +1596,9 @@ The updated cold-start runner SHA-256 is
 `9b92abb0342a9fbbfdb239ef0375271eec4e57c795924072934c490959aa6487`.
 `formalization_debt_audit.py --check` remains at 3/3 baseline findings, and
 `generate_lean_views.py --check` reports `stale=0`. The code/retrieval head and
-GitHub CI are recorded after the checkpoint is pushed. C0 remains unfrozen and
-independently unaccepted.
+GitHub CI for the proof-source head `bf914625a6cc82b0c6bb37dd5e3a57d17b280a68`
+both pass on PR #402: `D0 guards` run `40123581569` and `D0 Lean build` run
+`40123581419`. The guard's unchanged-science-input check, artifact freshness,
+semantic mutations and preservation checks passed; its isolated research
+replay and registered/Bartholdi certificate stages were skipped in Draft mode.
+The PR remains OPEN/DRAFT. C0 remains unfrozen and independently unaccepted.
