@@ -993,7 +993,14 @@ class ProofArchitectureTests(unittest.TestCase):
         )
         self.assertIn("det M = 1", scope)
         self.assertIn(
-            "not derived for the source proper-Lorentz endpoint package", scope
+            "archiveJuliaSourceCARRaisingQuery_nonNull_recovery_of_proper_roleLorentz",
+            scope,
+        )
+        self.assertIn("IsRoleLorentz Λ", scope)
+        self.assertIn("physical application must still bind the admitted endpoint", scope)
+        self.assertIn(
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/proper_role_lorentz_endpoint_inventory_2026-10-25.json",
+            case["required_refs"],
         )
         self.assertIn(
             "03_FORMALIZATION/D0/Geometry/A4DJuliaRecoveryComposition.lean",

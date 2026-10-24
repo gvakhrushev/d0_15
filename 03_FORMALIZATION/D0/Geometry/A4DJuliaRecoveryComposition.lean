@@ -21,6 +21,8 @@ namespace D0.Geometry
 
 open D0
 open ExteriorAlgebra
+open Matrix
+open scoped Matrix
 
 noncomputable section
 
@@ -124,6 +126,113 @@ theorem archiveJuliaSourceLorentzForm_nondegenerate :
   have hsign : archiveJuliaSourceLorentzSign r ≠ 0 := by
     by_cases hr : r = A <;> simp [archiveJuliaSourceLorentzSign, hr]
   exact (mul_eq_zero.mp hzero).resolve_left hsign
+
+private theorem archiveJuliaSourceLorentzSign_eq_roleLorentzSign (r : Role) :
+    archiveJuliaSourceLorentzSign r = roleLorentzSign r := by
+  rcases r with ⟨i, j⟩
+  fin_cases i <;> fin_cases j <;>
+    norm_num [archiveJuliaSourceLorentzSign, roleLorentzSign,
+      roleRoleSigEquiv, roleSign, D0.A, D0.B, D0.C, D0.D]
+
+private theorem archiveJuliaSourceLorentzForm_eq_roleLorentz_dotProduct
+    (x y : RoleSpace) :
+    archiveJuliaSourceLorentzForm x y =
+      dotProduct x (roleLorentzMetric.mulVec y) := by
+  change archiveJuliaSourceLorentzCovector x y = _
+  simp [archiveJuliaSourceLorentzCovector, archiveRoleBasis,
+    Module.Basis.coord, Finsupp.lapply_apply, smul_eq_mul,
+    archiveJuliaSourceLorentzSign_eq_roleLorentzSign,
+    roleLorentzMetric, Matrix.mulVec_diagonal, dotProduct,
+    mul_left_comm, mul_comm]
+
+private theorem archiveJuliaMatrix_dot_congruence
+    {ι : Type*} [Fintype ι] [DecidableEq ι]
+    (U M : Matrix ι ι ℝ) (u v : ι → ℝ) :
+    dotProduct u ((U.transpose * M * U).mulVec v) =
+      dotProduct (U.mulVec u) (M.mulVec (U.mulVec v)) := by
+  have hmul : (U.transpose * M * U) *ᵥ v =
+      U.transpose *ᵥ (M *ᵥ (U *ᵥ v)) := by
+    calc
+      (U.transpose * M * U) *ᵥ v =
+          (U.transpose * (M * U)) *ᵥ v := by rw [Matrix.mul_assoc]
+      _ = U.transpose *ᵥ ((M * U) *ᵥ v) := by rw [← Matrix.mulVec_mulVec]
+      _ = U.transpose *ᵥ (M *ᵥ (U *ᵥ v)) := by rw [← Matrix.mulVec_mulVec]
+  calc
+    dotProduct u ((U.transpose * M * U).mulVec v) =
+        dotProduct u (U.transpose.mulVec (M.mulVec (U.mulVec v))) := by
+      rw [hmul]
+    _ = dotProduct (U.mulVec u) (M.mulVec (U.mulVec v)) := by
+      rw [Matrix.dotProduct_mulVec]
+      rw [Matrix.vecMul_transpose]
+
+/-- The concrete source-frame action associated with the repository's
+row-action Lorentz matrix is its transpose, matching the coframe convention
+in the principal-frame readout. The determinant-one input constructs the
+actual linear equivalence instead of leaving invertibility as a premise. -/
+noncomputable def archiveJuliaProperRoleLorentzEquiv
+    (Λ : Matrix Role Role ℝ) (hDet : Matrix.det Λ = 1) :
+    RoleSpace ≃ₗ[ℝ] RoleSpace :=
+  Λ.transpose.toLinearEquiv'
+    (Matrix.invertibleOfIsUnitDet Λ.transpose (by
+      rw [Matrix.det_transpose, hDet]
+      exact isUnit_one))
+
+@[simp] theorem archiveJuliaProperRoleLorentzEquiv_apply
+    (Λ : Matrix Role Role ℝ) (hDet : Matrix.det Λ = 1)
+    (x : RoleSpace) :
+    archiveJuliaProperRoleLorentzEquiv Λ hDet x = (Λ.transpose *ᵥ x) := by
+  change (Λ.transpose.toLinearEquiv' _ : RoleSpace →ₗ[ℝ] RoleSpace) x = _
+  rw [Matrix.toLinearEquiv'_apply]
+  rfl
+
+theorem archiveJuliaProperRoleLorentzEquiv_form_isometry
+    (Λ : Matrix Role Role ℝ) (hΛ : IsRoleLorentz Λ)
+    (hDet : Matrix.det Λ = 1) :
+    ∀ x y, archiveJuliaSourceLorentzForm
+        (archiveJuliaProperRoleLorentzEquiv Λ hDet x)
+        (archiveJuliaProperRoleLorentzEquiv Λ hDet y) =
+      archiveJuliaSourceLorentzForm x y := by
+  intro x y
+  rw [archiveJuliaSourceLorentzForm_eq_roleLorentz_dotProduct,
+    archiveJuliaProperRoleLorentzEquiv_apply,
+    archiveJuliaProperRoleLorentzEquiv_apply,
+    archiveJuliaSourceLorentzForm_eq_roleLorentz_dotProduct]
+  calc
+    dotProduct (Λ.transpose.mulVec x)
+        (roleLorentzMetric.mulVec (Λ.transpose.mulVec y)) =
+        dotProduct x ((Λ.transpose.transpose * roleLorentzMetric *
+          Λ.transpose).mulVec y) :=
+      (archiveJuliaMatrix_dot_congruence Λ.transpose roleLorentzMetric x y).symm
+    _ = dotProduct x (roleLorentzMetric.mulVec y) := by
+      rw [Matrix.transpose_transpose, hΛ]
+
+theorem archiveJuliaProperRoleLorentzEquiv_det_one
+    (Λ : Matrix Role Role ℝ) (hDet : Matrix.det Λ = 1) :
+    LinearMap.det (archiveJuliaProperRoleLorentzEquiv Λ hDet).toLinearMap = 1 := by
+  change LinearMap.det (Matrix.toLin' Λ.transpose) = 1
+  rw [LinearMap.det_toLin', Matrix.det_transpose, hDet]
+
+/-- Eq. (27) applied to the concrete proper row-action Lorentz endpoint
+package. The remaining assumptions are the actual proper-Lorentz matrix and
+the non-null source shift; physical query admission is still external. -/
+theorem archiveJuliaSourceCARRaisingQuery_nonNull_recovery_of_proper_roleLorentz
+    (u : RoleSpace) (Λ : Matrix Role Role ℝ)
+    (hΛ : IsRoleLorentz Λ) (hDet : Matrix.det Λ = 1)
+    (hq : archiveJuliaSourceLorentzForm u u ≠ 0) :
+    archiveExteriorFrameLiftRoleReadout
+      ((archiveJuliaSourceLorentzForm u u)⁻¹ •
+        (archiveJuliaLorentzGamma archiveJuliaSourceLorentzForm u).comp
+          (archiveJuliaCARRaisingQuery u
+              (archiveJuliaProperRoleLorentzEquiv Λ hDet) -
+            archiveJuliaSourceVolumeEquiv.toLinearMap.comp
+              ((archiveJuliaCARRaisingQuery u
+                  (archiveJuliaProperRoleLorentzEquiv Λ hDet)).comp
+                archiveJuliaSourceVolumeEquiv.symm.toLinearMap))) =
+      archiveJuliaProperRoleLorentzEquiv Λ hDet := by
+  exact archiveJuliaSourceCARRaisingQuery_nonNull_endpoint_map_recovery_of_det_one
+    u (archiveJuliaProperRoleLorentzEquiv Λ hDet)
+    (archiveJuliaProperRoleLorentzEquiv_form_isometry Λ hΛ hDet)
+    (archiveJuliaProperRoleLorentzEquiv_det_one Λ hDet) hq
 
 /-- Every nonzero principal-frame shift lies in one of the two owned inverse
 charts. Eq. (27) decodes the endpoint map when its source norm is nonzero. On

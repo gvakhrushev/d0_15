@@ -2341,3 +2341,47 @@ cold-start runner SHA-256 is
 regressions for the joined chart scope and batched declaration retrieval. The
 test file SHA-256 is
 `9bf1ce5075ae72733f585e09b163195cfa13c290c2c6e30ccd2984b07e50f49e`.
+
+### Row-action Lorentz endpoint adapter for Eq. (27) (25 October 2026)
+
+The previous composition left the source's endpoint metric-isometry and
+orientation maps as explicit hypotheses. The current repository convention
+already provides `IsRoleLorentz Λ`, meaning
+`Λ * roleLorentzMetric * Λ.transpose = roleLorentzMetric`; the principal-frame
+coframe action uses the transpose. In
+`D0.Geometry.A4DJuliaRecoveryComposition`,
+`archiveJuliaProperRoleLorentzEquiv` constructs that transposed `RoleSpace`
+linear equivalence from `det Λ = 1`. Its application theorem identifies the
+map with `Λ.transpose.mulVec`, and the adapter proves preservation of the
+fixed source Lorentz form and determinant one. The new
+`archiveJuliaSourceCARRaisingQuery_nonNull_recovery_of_proper_roleLorentz`
+then composes those facts with the owned Eq. (27) decoder on the same finite
+CAR carrier. This closes the matrix-convention transport for an
+orientation-preserving row-action Lorentz endpoint.
+
+The exact Lean theorem still assumes the endpoint matrix satisfies both
+`IsRoleLorentz Λ` and `det Λ = 1`, plus a non-null source shift. It does not
+prove that an admitted physical endpoint supplies that matrix, add a
+time-orientation premise, or establish query admission, smooth/all-jet or
+variational transport, complete price/source selection, or GR closure. Its
+Eq. (27) theorem inherits the existing `native_decide` axiom from
+`archiveCreatorPermSign`; the new matrix adapter declarations themselves
+report only `Classical.choice`, `Quot.sound`, and `propext`.
+
+The narrow Lean 4.30.0 build passed for
+`D0.Geometry.A4DJuliaRecoveryComposition` (3,022 Lake jobs). The owning-module
+inventory records 22 declarations at snapshot
+`f3ef1b81e7bba2cb458d662506bcb379f1338d6b` with `worktree_dirty=true`, Lean
+source digest
+`e2d01817a8f7a3c11b64f0e84a9a44aa58e82304715793c0fb95ddffcbae4dae`, collector
+SHA-256
+`392354a7fdaa9e00bd00d5c4c04ebd8f656e665942bee46cd95a9f1b892eaf66`, and
+toolchain `leanprover/lean4:v4.30.0`. The inventory is
+`sources/d0_proof_architecture_formalization_2026-10-24/proper_role_lorentz_endpoint_inventory_2026-10-25.json`.
+
+The updated cold-start run found all 16/16 search cases with every required
+source and passed all 17 benchmark checks, including the exact-source versus
+unrelated-prose impact regression. The exact theorem query returned this
+artifact, `A4DJuliaRecoveryComposition.lean`, and the owning-module inventory
+as its first three direct-content candidates. This validates retrieval and
+scope routing; semantic and physical acceptance remain separate.
