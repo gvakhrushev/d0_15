@@ -71,13 +71,9 @@ def naiveWeightTestScalarProfile : ArchiveRolePhaseGroup 1 → ℝ :=
 def naiveWeightTestSiteProfile : ArchiveRolePhaseGroup 1 → ℝ :=
   fun x => if x = naiveWeightTestSiteA then naiveWeight1 else naiveWeight0
 
-noncomputable def weightedCubicalDifferential
-    (w : ArchiveRolePhaseGroup 1 → ℝ) (ψ : ArchiveCochain 1) : ArchiveCochain 1 :=
-  fun p => Real.sqrt (w p.1) * cubicalCoboundary 1 ψ p
-
 noncomputable def naiveWeightedCubicalDifferential
     (ψ : ArchiveCochain 1) : ArchiveCochain 1 :=
-  weightedCubicalDifferential naiveWeightTestSiteProfile ψ
+  weightedCubicalDifferential 1 naiveWeightTestSiteProfile ψ
 
 private theorem cubicalCoboundary_scalar_singleton
     (f : ArchiveRolePhaseGroup 1 → ℝ) (r : Role) (x : ArchiveRolePhaseGroup 1) :
@@ -95,7 +91,7 @@ private theorem cubicalCoboundary_scalar_singleton
 
 private theorem weightedCubicalScalar_singleton
     (w f : ArchiveRolePhaseGroup 1 → ℝ) (r : Role) (x : ArchiveRolePhaseGroup 1) :
-    weightedCubicalDifferential w (scalarCochain 1 f) (x, singletonFockState r) =
+    weightedCubicalDifferential 1 w (scalarCochain 1 f) (x, singletonFockState r) =
       Real.sqrt (w x) * (f (roleTranslatePlus 1 r x) - f x) := by
   rw [weightedCubicalDifferential, cubicalCoboundary_scalar_singleton]
 
@@ -345,8 +341,8 @@ formula is valid for every real-valued site profile; it does not assert that
 all nonconstant profiles make the weighted differential non-nilpotent. -/
 theorem weighted_cubical_differential_square_delta_coefficient
     (w : ArchiveRolePhaseGroup 1 → ℝ) :
-    weightedCubicalDifferential w
-      (weightedCubicalDifferential w
+    weightedCubicalDifferential 1 w
+      (weightedCubicalDifferential 1 w
         (scalarCochain 1 naiveWeightTestScalarProfile))
       (naiveWeightTestOrigin, naiveWeightTestPairState) =
       Real.sqrt (w naiveWeightTestOrigin) *
@@ -354,7 +350,7 @@ theorem weighted_cubical_differential_square_delta_coefficient
           Real.sqrt (w naiveWeightTestSiteB)) := by
   classical
   let ψ : ArchiveCochain 1 :=
-    weightedCubicalDifferential w (scalarCochain 1 naiveWeightTestScalarProfile)
+    weightedCubicalDifferential 1 w (scalarCochain 1 naiveWeightTestScalarProfile)
   change Real.sqrt (w naiveWeightTestOrigin) *
       cubicalCoboundary 1 ψ (naiveWeightTestOrigin, naiveWeightTestPairState) = _
   rw [cubicalCoboundary_apply, role_sum_expand]
@@ -374,7 +370,7 @@ theorem weighted_cubical_differential_square_delta_coefficient
         (ψ (roleTranslatePlus 1 D0.D naiveWeightTestOrigin, ket) -
           ψ (naiveWeightTestOrigin, ket)))) = _
   rw [pair_sum_A, pair_sum_B, pair_sum_C, pair_sum_D]
-  rw [show ψ = weightedCubicalDifferential w
+  rw [show ψ = weightedCubicalDifferential 1 w
     (scalarCochain 1 naiveWeightTestScalarProfile) by rfl]
   rw [carCreate_pair_A_singletonB, carCreate_pair_B_singletonA,
     weightedCubicalScalar_singleton w naiveWeightTestScalarProfile D0.B
@@ -404,8 +400,8 @@ theorem weighted_cubical_differential_square_delta_nonzero
     (h0 : 0 < w naiveWeightTestOrigin)
     (hpaths : Real.sqrt (w naiveWeightTestSiteA) ≠
       Real.sqrt (w naiveWeightTestSiteB)) :
-    weightedCubicalDifferential w
-      (weightedCubicalDifferential w
+    weightedCubicalDifferential 1 w
+      (weightedCubicalDifferential 1 w
         (scalarCochain 1 naiveWeightTestScalarProfile))
       (naiveWeightTestOrigin, naiveWeightTestPairState) ≠ 0 := by
   rw [weighted_cubical_differential_square_delta_coefficient]
@@ -420,8 +416,8 @@ theorem naive_weighted_cubical_differential_square_witness :
       (naiveWeightedCubicalDifferential
         (scalarCochain 1 naiveWeightTestScalarProfile))
       (naiveWeightTestOrigin, naiveWeightTestPairState) = 1 := by
-  change weightedCubicalDifferential naiveWeightTestSiteProfile
-    (weightedCubicalDifferential naiveWeightTestSiteProfile
+  change weightedCubicalDifferential 1 naiveWeightTestSiteProfile
+    (weightedCubicalDifferential 1 naiveWeightTestSiteProfile
       (scalarCochain 1 naiveWeightTestScalarProfile))
     (naiveWeightTestOrigin, naiveWeightTestPairState) = 1
   rw [weighted_cubical_differential_square_delta_coefficient,

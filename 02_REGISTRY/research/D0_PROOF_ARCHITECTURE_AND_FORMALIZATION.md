@@ -1016,13 +1016,13 @@ anticommutator results, as well as `Classical.choice`, `Quot.sound`, and
 
 ## Exact finite weighted-differential leakage witness (24 October 2026)
 
-The registered `D0-ARCHIVE-NAIVE-WEIGHTED-CAR-DEGREE-LEAKAGE-NOGO-001` module
-now defines `naiveWeightedCubicalDifferential ψ = sqrt(w) · dψ` using the
-normalized unit-step `cubicalCoboundary` already transferred from
-`dForward`. The generic finite operator `weightedCubicalDifferential w` now
-accepts an arbitrary real-valued site profile. On the fixed full CAR16 carrier
-at refinement `N = 1`, its selected two-step coefficient for the scalar delta
-at `A+B` and output state `A∧B` is exactly
+`ArchiveCubicalCoboundary` now owns the reusable operator
+`weightedCubicalDifferential N w ψ = sqrt(w) · dψ`, with arbitrary refinement
+and real-valued site profile. The no-go module keeps
+`naiveWeightedCubicalDifferential` as a compatibility specialization at
+`N = 1` and its registered sample profile. On the fixed full CAR16 carrier,
+the selected two-step coefficient for the scalar delta at `A+B` and output
+state `A∧B` is exactly
 `sqrt(w(origin)) * (sqrt(w(siteA)) - sqrt(w(siteB)))`. The positive-output
 weight and unequal-intermediate-root corollary gives a reusable sufficient
 condition for nonzero leakage on this path. For the explicit profile with
@@ -1046,22 +1046,22 @@ unchanged. The broad semantic claim remains for review by its existing owner.
 the cubical coboundary and the no-go application, and lists the no-go module as
 a consumer of `ArchiveCubicalDifferential`.
 
-The module's compiled declaration inventory is preserved at
+The compiled declaration inventory for both linked modules is preserved at
 `sources/d0_proof_architecture_formalization_2026-10-24/weighted_cubical_module_declarations.json`
-(SHA-256 `ffda13629d581375dadf4ef4f4c66fbf6cb0968261d3efac927d10b2526554bf`).
+(SHA-256 `2befe7836dc18cda505c2d3058532eae3dbbc81544c74b9ae04c115b81040c65`).
 Under public import `D0.All` and Lean 4.30.0 it records the exact signatures,
-proof dependencies, source ranges, and axiom footprints for the generic
-coefficient formula, its nonzero corollary, and the registered owner theorem.
-The owner theorem now consumes both the formula-based exact sample and the
-general nonzero criterion.
+proof dependencies, source ranges, and axiom footprints for the shared
+operator, the generic coefficient formula, its nonzero corollary, and the
+registered owner theorem. The owner theorem now consumes both the
+formula-based exact sample and the general nonzero criterion.
 
 The compiled claim-reuse record is
 `sources/d0_proof_architecture_formalization_2026-10-24/naive_weighted_leakage_claim_reuse.json`
-(SHA-256 `7d153050d66e117805110b4a76e90fbf1a1599325acde733ff404d372928cb2d`).
+(SHA-256 `8d55cda7342a6bcf0d21a7bf0b8fa87eb04d49b85ef7879b7e9f57986c880512`).
 The exact theorem locator resolves through public import `D0.All`; its
 elaborated proof dependency is the scoped CAR owner theorem above. The record
 binds Lean source digest
-`59857b40458b8106f3526e3b338a20b2ac75d6ddfde8da006d30900320499076`, collector
+`4b270609c79d82a480331baa8a9e6befb2546f0a8157c03b48dfc4e94401c43a`, collector
 SHA-256 `1068f73c98eddcbd75cd6ff004b0e3b68642bfd66e7417fa9be4e1f9e4c46745`,
 pre-publication local HEAD `6b59bc57ca97275df9e973715cdb503ec8fc5c4e`, and
 `worktree_dirty=true`. Its axiom footprint includes `Classical.choice`,

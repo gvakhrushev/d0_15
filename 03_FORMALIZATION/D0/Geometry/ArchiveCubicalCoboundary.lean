@@ -1,4 +1,5 @@
 import Mathlib.Algebra.BigOperators.Group.Finset.Basic
+import Mathlib.Data.Real.Basic
 import Mathlib.Tactic
 import D0.Geometry.ArchiveCubicalDifferential
 import D0.Geometry.ArchiveCubicalCochainCarrier
@@ -31,6 +32,13 @@ theorem coboundary_direction_count : coboundaryDirectionCount = 4 := card_role
 /-- Exact unscaled cubical coboundary, recovered from the scaled finite operator. -/
 def cubicalCoboundary (N : ℕ) (ψ : ArchiveCochain N) : ArchiveCochain N :=
   (forwardDifferenceScale N)⁻¹ • dForward N ψ
+
+/-- Pointwise site-weighted cubical coboundary `sqrt(w) * d`. This generic
+operator is kept beside its unweighted source so concrete finite profiles can
+reuse the same typed cochain API. -/
+noncomputable def weightedCubicalDifferential (N : ℕ)
+    (w : ArchiveRolePhaseGroup N → ℝ) (ψ : ArchiveCochain N) : ArchiveCochain N :=
+  fun p => Real.sqrt (w p.1) * cubicalCoboundary N ψ p
 
 /-- The scale used by `dForward` is nonzero at every refinement. -/
 theorem forwardDifferenceScale_ne_zero (N : ℕ) : forwardDifferenceScale N ≠ 0 := by

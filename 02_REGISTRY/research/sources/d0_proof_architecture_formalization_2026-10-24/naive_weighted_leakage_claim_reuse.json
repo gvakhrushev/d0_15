@@ -159,21 +159,21 @@
                 "declaration": {
                   "end": {
                     "column": 54,
-                    "line": 493
+                    "line": 489
                   },
                   "start": {
                     "column": 0,
-                    "line": 478
+                    "line": 474
                   }
                 },
                 "selection": {
                   "end": {
                     "column": 56,
-                    "line": 480
+                    "line": 476
                   },
                   "start": {
                     "column": 8,
-                    "line": 480
+                    "line": 476
                   }
                 }
               },
@@ -240,21 +240,21 @@
             "declaration": {
               "end": {
                 "column": 54,
-                "line": 493
+                "line": 489
               },
               "start": {
                 "column": 0,
-                "line": 478
+                "line": 474
               }
             },
             "selection": {
               "end": {
                 "column": 56,
-                "line": 480
+                "line": 476
               },
               "start": {
                 "column": 8,
-                "line": 480
+                "line": 476
               }
             }
           },
@@ -389,7 +389,7 @@
         "warning": "Declared metadata links are not Lean type-checking or independent scientific acceptance."
       },
       "collector_sha256": "1068f73c98eddcbd75cd6ff004b0e3b68642bfd66e7417fa9be4e1f9e4c46745",
-      "lean_source_digest": "59857b40458b8106f3526e3b338a20b2ac75d6ddfde8da006d30900320499076",
+      "lean_source_digest": "4b270609c79d82a480331baa8a9e6befb2546f0a8157c03b48dfc4e94401c43a",
       "public_import_root": "D0.All",
       "interpretation": "Claim theorem strings are candidate-name locators. Compiled declaration presence and reported Lean proof dependencies are separate evidence. A dependency joined to another claim locator is a candidate crosswalk only; registry application links, conceptual edges, and semantic claim acceptance are not inferred from name matches."
     }
