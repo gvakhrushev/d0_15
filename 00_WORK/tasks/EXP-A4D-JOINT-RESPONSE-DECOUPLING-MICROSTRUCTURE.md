@@ -7569,3 +7569,112 @@ Lean module is created.
 
 Targeted work/protocol validation and diff whitespace check PASS. No
 unchanged full128, broad certificate or Lean replay was run.
+
+
+### 24 October: same complete recorded operator now recovers the original spatial fields
+
+Phase: native realization / global GR composition, existing PR334 owner,
+constitutive/native-programme-v1. Input publication
+01f099ee0e9d9faa19a534489a3c018fa229fffb. Primary residual section7k
+consumes the complete original Julia128 reflection/recording, actual
+scene-clock Hodge, strict Julia-root jets, and the owned null-safe
+labelled coframe/link inverse. No independent task or new price is added.
+
+Exact parent substitution: a second unrelated geometric operator is no
+longer needed for an OPERATOR READOUT of this original full128 family.
+From the actual full scene-clock L_hist, its oriented off-diagonal blocks
+recover every actual gate, including the closing edge, for N>=3. Fixed
+scene extraction has norm<=26. The true chronological Hodge then has
+whole-fibre stage0 Schur S0=(I-Re V_n)/N_n, proved by equal-increment
+Dirichlet minimization. This is NOT the Schur of the complete horizontal
+scene heat, which remains in the price.
+
+Every original copied n-round word retains a fixed reducing slice for
+one whole U_i. Each other App sits in the actual odd-Walsh dark label
+(l=1,c=0,b=0); every bank sits in its XOR-invariant uniform vector.
+Reduction holds for each COMPLETE reflection and copy, not each internal
+Walsh/SELECT primitive prefix. Thus U_i=I-N_n J_i^dagger S0 J_i, with
+all field jets and all actual primitive stages retained. The isometry is
+an algebraic readout of the complete operator, not a change to its actual
+blank initial state or a free physically executed tomography protocol.
+
+The new exact inverse leg uses a real source block. In the fixed Walsh
+coordinates of Pi_minus=(I-U_i)/2=LL^dagger, the known unstarred onsite
+word -J(C_r), coefficient1, port0 gives the NEGATIVE LEFT Julia root
+ L_a=-(p/sqrt32)sqrt(I-C_r C_r^dagger)=-sqrt(Pi_aa).
+Its strict k<1 margin permits L_b=Pi_ba L_a^-1 on EVERY full DATA block.
+This recovers the literal Julia words and signed A=hD_sp/16 without
+inverting A or Delta. Dirac zero modes and null legs therefore survive.
+Existing labelled8.4-8.5/6.25 and paid-writer12.1 then recover all16+24
+geometric directions. Actual density, observer/Gram/calibration and two
+matter readings remain separate required data of that SAME owned map.
+
+Carrier/norm/source: full App128 (32label x2coefficient x2port) tensor
+DATA, all sites/CAR16, actual banks/oldRIGHT, full real clock and full
+trace. The map retains N_n/2 and the anchor gap
+ delta=p sqrt(1-k^2)/sqrt32;
+ ||DL|| <= ||DPi||[1/delta+1/(2delta^2)].
+No hidden sqrt128 multiplicity appears in the stacked operator norm.
+Restoring D_sp retains16/h and p; actual product and field-inverse
+norms remain. All-jet equality does not imply a mesh-uniform bound.
+
+Decisive route change: the current scalar reporter's entire prepared
+return dynamics depends only x=gamma q. Its resolvent is
+ (1-x)/(1-s)+x(1-s cos(alpha))/(1-2s cos(alpha)+s^2).
+At fixed gamma/alpha/N the connected primary family with common q is
+indistinguishable by THIS return boundary, although full native future
+observations distinguish its metrics. A nonzero compression of S0 cannot
+repair this by further zero-energy elimination: for E a projection and
+T=i^dagger E i<I, (I-E)i(I-T)^-1u is a zero-energy lift of every input u.
+Hence the positive short is zero. This also scopes the cold original
+Delta compression. The rich whole boundary, finite-frequency response
+and other actually admitted quotients are not excluded.
+
+Remaining physical application: retain sufficiently rich native boundary
+access, actual native Book cut/metric-refinement interpretation and the
+COMPLETE original full128 covector on this map. Section7i's different
+stationary reporter price is not transported by relabelling its source.
+All original nonzero residuals, Info/work/preparation/oldRIGHT and native
+field-admission obligations remain. This is a concrete same-operator map,
+not physical GR closure or a new equation-class selector.
+
+Write paths: existing primary residual owner and this brief only.
+Smallest decisive checks, inline without standalone certificate:
+1. Exact rational three-stage clock with nontrivial prefixes verifies
+   S0=(I-ReU)/N, all horizontal-scene off-diagonal gate extraction,
+   and a strictly positive compression whose full short is zero.
+2. Use the actual source check_uniform_book_source.py creators, roots,
+   source convention and independent original native(theta) Kraus output.
+   Reconstruct all128 blocks and their first jets from the whole negative
+   projector column and the fixed negative-root anchor on both a signed-A
+   ZERO fixture and a nonzero proper-boost fixture. Check full2048-by16
+   isometry, odd-Walsh dark rows/jets and every XOR-bank shift. Maximum
+   inverse/jet error 2.254873622441467e-16; comparison tolerance2e-11.
+   Recovered Kraus operators and derivatives agree with the original
+   native(theta), not a replacement unitary completion.
+Both checks exit0 with empty stderr. They test this new composition,
+not a new all42 root, continuum theorem or physical admission claim.
+
+Final section7k, heading through before8 INCLUDING trailing LF:
+11664 UTF-8 bytes; SHA256
+89c853e39a4be6afdf03f8136aa410e9356203bd10f9d8fb5a943b9bc7b43604.
+All three read-only reviewers accepted the mathematical chain and price
+scope, requiring two wording repairs now applied: COMPLETE round/copy
+invariance versus primitive-prefix invariance, and macro-U return
+transfer versus primitive-clock stage0 transfer. No formula was weakened.
+
+Next actual-placement application already has an owned finite map:
+IntrinsicQuotientReconstruction supplies C^T C=G=diag(9,11,13),
+R_av=G^-1 C^T, and Pi=C R_av. A G-unitary RawZone action lifts as
+I-Pi+C T3 R_av. SourcePortPreparation therefore has a full scene33 x
+spin4 realization, retaining its neutral1 and archive30; no independent
+extra port factor is needed for this extension. This is not yet arbitrary
+auxiliary routing. Applying it to scene, instead of a commuting work fibre,
+activates the EXISTING recorded-clock theorem8 mixed-loop source guard.
+Use its actual complete heat derivative -Tr(rho_beta DL), not the old
+homogeneous H_ref constancy. No new palette or repeated geometry census
+is needed to formulate that same-execution application.
+
+Universal_parent_map independently ACCEPTs the final11664-byte pin.
+Targeted work/protocol validation and diff whitespace check PASS. No
+unchanged full128-wide research suite or Lean rebuild was replayed.

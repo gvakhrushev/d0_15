@@ -2273,6 +2273,226 @@ them. No new physical gate, cut, action, status or GR/raw216 promotion is
 introduced. The original results and their independent routes are preserved.
 
 
+## 7k. Recover the original spatial operator from the same complete recorded clock
+
+24 October 2026. Same owner, input01f099ee. This supplies an explicit
+missing map in section7j: the ORIGINAL complete Julia128 execution has
+a geometric operator readout from its own chronological Hodge. It uses
+all retained columns, a fixed structural sector and an actual Julia
+root. It does not identify the scalar reporter with the original full128
+price, replace whole heat by a boundary trace, or select a physical cut.
+
+### One real clock, three different boundary operations
+
+Let g_0,...,g_(N-1) be the actual complete unitary schedule, including
+copies and closing stages, T its cyclic shift and V its monodromy.
+For the existing chronological operator retain
+
+    L_clk=I-(T+T^dagger)/2=d_g^dagger d_g,
+    (d_g psi)_t=(psi_(t+1)-g_t psi_t)/sqrt(2).
+
+Keep the WHOLE internal fibre at stage0 and minimize the quadratic
+energy over the other N-1 fibres. Their Dirichlet block is positive
+invertible: a zero-energy vector vanishing at stage0 vanishes along
+every edge. Gauge the interior edges to identities using the actual
+prefixes. The remaining N-edge problem has endpoints v and V^dagger v.
+Cauchy-Schwarz, attained by equal increments, gives exactly
+
+    <v,S_0(V)v>=||v-V^dagger v||^2/(2N),
+    S_0(V)=(I-Re V)/N.                                (101)
+
+This is a genuine Schur operator of L_clk on the complete one-stage
+fibre. It retains zero modes of the full cycle and uses the TRUE N.
+Compression to a prepared subspace and further elimination of that
+subspace's complement are different operations, as shown below.
+
+There is also a direct readout from the OWNED whole homogeneous
+scene-clock operator of [paid-writer13 and recorded-clock theorem](A4D_PAID_MOMENT_FIELD_WRITER_2026_10_21.md#13-the-literal-two-fresh-julia128-word-on-the-complete-scene-clock-carrier):
+
+    L_hist=I-B_S-R_S(T+T^dagger)R_S,
+    R_S=(D_S+2I)^(-1/2),
+    g_t=-R_S^(-1)(L_hist)_(t+1,t)R_S^(-1).             (102)
+
+Scene identity factors are understood on the right. For N>=3 the two
+oriented clock blocks are distinct, including the cyclic closing edge;
+N=2 needs its separate combined-edge formula. The actual schedules have
+N>=3. Thus one can extract the actual T, then compute (101), from the
+SAME full L_hist. This is an operator readout, NOT a claim that (101)
+is the Schur complement of L_hist with its horizontal scene terms.
+The complete Book heat continues to trace L_hist. Since max degree+2=26,
+the fixed-scene block extraction has norm at most26 on first variations.
+Moving scene/normalization data retain their derivatives.
+
+### The recorded full128 still contains the entire original reflection
+
+Consume [paid-writer13.1(59)-(60)](A4D_PAID_MOMENT_FIELD_WRITER_2026_10_21.md#131-keep-the-actual-row-of-q-including-every-unprepared-column).
+For the actual signed32-word Julia palette, with original p=phi^-1,
+
+    L_(l,c,0)=p R_(l,c)^dagger,
+    L_(l,c,1)=sqrt(p) R_(l,c)^dagger,
+    L^dagger L=I_DATA,  U=I-2LL^dagger=U^dagger.       (103)
+
+The full carrier is App128 tensor DATA:32 labels times coefficient2
+times port2. DATA contains all sites/CAR16; passive oldRIGHT and other
+actual factors stay. This is not the smaller Julia coefficient block,
+minimal64 dilation, or an invented App8 completion.
+
+Let V_n be the actual n-round copied word with fresh App128 and retained
+bank128 for EACH round, n>=1. Each pair of adjacent signed words in the
+original palette is identical. Therefore R_(l,c)=0 for every ODD WALSH
+label l, both coefficients c, identically on the full field chart.
+The corresponding App sector is a reducing identity sector of U.
+For example l=1,c=0,b=0 is a fixed dark label, not an omitted outcome.
+
+For a chosen round i define a fixed mathematical isometry J_i: keep its
+entire App128 and DATA; put every other App in that dark label and each
+bank in Omega_128=128^(-1/2) sum_b |b>. XOR-copy fixes Omega_128 for
+EVERY App label. Consequently, for each COMPLETE reflection round and
+each XOR-copy, in forward and adjoint order,
+
+    V_n J_i=J_i U_i,   V_n^dagger J_i=J_i U_i,
+    U_i=I-N_n J_i^dagger S_0(V_n)J_i.                 (104)
+
+Internal Walsh/SELECT primitive prefixes need not preserve this fixed
+sector; their real clock stages remain present in (101). All field
+derivatives obey the same fixed-isometry identity. Re V_n
+need not determine an arbitrary unitary, but it determines THIS actual
+U_i through its genuine reducing sector. All other recorded columns
+remain in V_n and in its price. This does not change the actual blank
+initial state, discard records or execute a free Omega/dark preparation.
+A physical tomography protocol using those inputs must pay its own real
+preparation/access costs and prove admission in the native future tests.
+
+### The original negative Julia root fixes the full operator gauge
+
+The missing inverse leg from U to the owned spatial inverse is explicit.
+Set Pi_minus=(I-U)/2 and apply the FIXED Walsh H_32 on the output labels:
+Pi_hat=(H_32 tensor I) Pi_minus (H_32 tensor I)^dagger. In the literal
+[source rows](sources/d0_book_uniform_source_2026-10-21/check_uniform_book_source.py),
+
+    L_hat_(j,c,0)=(p/sqrt(32)) (W_j)_(0,c)^dagger.
+
+Choose a known unstarred onsite word W_(j*)=-J(C_r), c=1,b=0, and call
+that complete App index a. Its block is the NEGATIVE LEFT Julia root:
+
+    L_hat_a=-(p/sqrt(32)) sqrt(I-C_r C_r^dagger),
+    L_hat_a=-sqrt((Pi_hat)_aa),
+    L_hat_b=(Pi_hat)_ba (L_hat_a)^(-1) for EVERY b.    (105)
+
+The strict original chart ||C_r||<=k<1 makes the root invertible.
+Equation(105) follows from (Pi_hat)_ba=L_hat_b L_hat_a^dagger and the
+known negative sign. It fixes the right-unitary ambiguity of a projector
+factorization using an ACTUAL labelled block. No new reference vector,
+polar decomposition of the signed Dirac, or inversion of A is introduced.
+Dirac zero modes and null legs are allowed.
+
+For the known positive word J(P_r), the corresponding c=0,b=0 block gives
+
+    P_r=(sqrt(32)/p) (L_hat_(j_r,0,0))^dagger.          (106)
+
+The negative onsite blocks likewise recover C_r; undo-Walsh recovers
+all original R_(l,c), including A=R_(0,0)=h D_sp/16. Known shifts,
+addresses, grades and endpoint frames give the raising blocks
+X_r=C(v_r)Lambda(U_r). Now apply, WITHOUT re-proving it, the
+[labelled inverse8.4-8.5 and null-safe rational inverse6.25](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md),
+with [paid-writer12.1(51)-(53)](A4D_PAID_MOMENT_FIELD_WRITER_2026_10_21.md#121-one-field-to-operator-map-with-the-actual-density-and-matter).
+This recovers all16+24 geometric directions on its actual chart. The
+actual density, frame/Gram/calibration and two material readouts accompany
+the map as before; D_sp alone does not recover them or affine translations.
+
+The conditioning is explicit. Let delta=p sqrt(1-k^2)/sqrt(32).
+Then ||L_hat_a^(-1)||<=delta^(-1). The existing principal-root Sylvester
+calculus gives, for epsilon=||D Pi_hat||,
+
+    ||D L_hat|| <= epsilon [delta^(-1)+(2delta^2)^(-1)],
+    ||D Pi_minus|| <= (N_n/2)||D S_0(V_n)||.           (107)
+
+The second bound uses fixed J_i and real N_n. Restoring D_sp from A
+also retains its factor16/h and the known p factor. Fixed-scene (102)
+retains26, while differentiating a product of N_n real gates retains
+its actual product-derivative bound. All higher jets follow on the same
+strict chart from root/inverse/product differentiation, followed by the
+already owned field inverse. No mesh-uniform bound, scale cancellation
+or free access to unprepared columns is inferred from exact invertibility.
+
+### The cold compression and the full physical source keep their own types
+
+For one original reflection, on the true cold Appblank DATA isometry i_0,
+write Delta=A^dagger A with the original A=h D_sp/16. Then
+
+    i_0^dagger S_0(U)i_0=(2p^2/N)Delta.                (108)
+
+For n copied rounds the same cold corner is instead
+[I-(I-2p^2 Delta)^n]/N_n. On the original positive-B chart its known
+spectral inverse is available, but that corner alone need not recover
+all signed/ordered Julia data. Equations(104)-(106) use the WHOLE
+one-stage response and preserve those data, including their jets.
+
+The composite field map is now
+
+    same full L_hist -> actual clock -> S_0(V_n)
+    -> original U_i -> literal Julia raising blocks
+    -> owned coframe/link/density/material interpretation.          (109)
+
+At the operator-readout level this removes the need to supply a second,
+unrelated geometric operator for the original full128 family. It is not
+an equality of the full clock/scene Connes distance with the decoded
+spacetime metric. Nor does it turn the stationary positive-writer price
+of section7i into the price of this DIFFERENT original full128 programme.
+
+Compute the full covector on this SAME original family: its real whole
+heat, literal feedback cut, Info/work/preparation, clock, oldRIGHT and
+independent rows remain. Equations(101)-(109) transport that covector
+through a proved operator/field map; they do not replace it with a chosen
+boundary action. In particular no logdet or heat trace is normalized away.
+The existing nonzero full-price residuals remain where their hypotheses
+apply. Source equivalence or a controlled residual/inverse application
+is still required before the existing nonvacuum recovery can consume it.
+
+### Why the scalar reporter cannot replace this full boundary
+
+This distinguishes a viable rich readout from a losing composition. For
+section7e-j's U=V^dagger M0 V, let alpha=2m theta, c=cos(alpha),
+E=V^dagger(Pi tensor I_port)V and x=gamma q. On its prepared blank-work,
+port0 cut P, including actual protected factors, EVERY power obeys
+
+    P U^k P=[1-x+x cos(k alpha)]P,
+    P(I-sU)^(-1)P=g_x(s)P,
+    g_x(s)=(1-x)/(1-s)+x(1-sc)/(1-2sc+s^2).           (110)
+
+These are identities for |s|<1, not an unsupported s=1 Neumann limit.
+Balanced recording preserves them because its copy conjugation fixes P.
+The actual stage0 clock resolvent uses g_x(s^N), retaining N. By the owned
+active/archive block elimination, the MACRO-U prepared return transfer
+is [1-g_x(s)^(-1)]/s, with its analytic value at0. The primitive clock
+stage0 transfer instead uses [1-g_x(s^N)^(-1)]/s. Thus at common gamma,
+alpha,N the primary connected family with constant q has identical
+prepared return dynamics even when its geometric metrics differ.
+Other retained records, intermediate tests and the whole operator are
+NOT thereby indistinguishable.
+
+There is also no zero-energy escape by further eliminating work. For any
+projection E and input isometry i with T=i^dagger E i<I, the vector
+
+    v=(I-E)i(I-T)^(-1)u
+
+has i^dagger v=u and Ev=0. Hence the full positive short of E to that
+input is ZERO. This applies to (101) for the scalar reporter, where
+T=xI<1, and to the original reflection cold corner, where T=p^2 Delta<1.
+The nonzero expressions (108) and P S_0 P are COMPRESSIONS, not that
+further short. No inverse of a singular archive block is smuggled in.
+This does not prohibit finite-frequency response, the rich boundary
+(104), or native geometry on a different proved active quotient.
+
+**Parent application.** The rich original same-operator geometry map is
+now explicit, including all recorded columns and the null-safe inverse;
+the scalar prepared-return route is insufficient to supply it. Next use
+that rich native boundary (or a proved physically equivalent future-test
+map), the actual Book cut and the full SAME price together. Their native
+admission, spatial refinement/metric interpretation and complete source
+comparison remain the physical application. No new task, physical action,
+selector, GR_closed/raw216 promotion or standalone certificate is added.
+
 ## 8. Reproduction
 
 Run from this directory:
