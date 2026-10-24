@@ -5331,6 +5331,243 @@ availability, spatial geometry identification and compatible stationary
 refinement keep their declared scope. GR_closed=false; raw216 is open.
 
 
+## 7u. Suppress the native readiness source by a fully paid coherent operation
+
+24 October 2026. Same owner; input90fc7009. The exact additional readiness
+row(193)-(194) now has a constructive consumer. A finite coherent
+amplifier suppresses that row without imposing its zero value or fixing
+the raw factory probability as a new constraint. The logical query and
+the unchanged Book functional retain their original definitions.
+
+The proof, exact native phase compiler, expanded-word constructor and
+bounded independent checks are in
+[d0_native_readiness_amplification_2026-10-24](sources/d0_native_readiness_amplification_2026-10-24/).
+The mathematical guide is the known
+[fixed-point quantum search construction](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.95.150501).
+Here the implemented phases are EXACT Golden powers in the original
+coefficient field. No pi/3 gate, complex physical primitive, probability
+oracle, adaptive reset or additional physical selector is admitted.
+
+### Consume all-input readiness, rather than the desired report outcome
+
+Let A be the complete actual forward preparation/query word. Consume
+the owned raw-factory factorization of paid-writer9.1 and7p-s on its
+declared input interface:
+
+    P_ref A^dagger R A P_ref=gamma P_ref,
+    R A P_ref=sqrt(gamma) S,   S^dagger S=P_ref,
+    0<gamma<1.                                          (195)
+
+R is the conjunction of GENUINE READY flags; it EXCLUDES the report b.
+Every corrected successful factory transcript factors coherently with
+its logical isometry on all protected DATA/oldRIGHT inputs, not just
+one prepared field state. The physical raw failures remain in A.
+The source-I spin is the same existing dirty spin; the base forward
+G/CX programme is identity on it, and completed inverse blocks restore
+it. The all-input statement thus permits the algorithmic input
+projector P_ref to leave that spin arbitrary. A programme having only
+state-specific success or inaccessible spin-selective input constraints
+does not satisfy this application by declaration.
+
+Add ONE fresh realification rebit. It is physically initialized blank
+and counted in the Book input cut, while the algorithmic P_ref is
+identity on it. Define the selective phase on an actual computational
+predicate P by its real orthogonal matrix exp(beta J_rebit tensor P).
+Only addressed logical bits, excluding oldRIGHT/spin/rebit, control it.
+The actual Book cut P_Book may be smaller than this enlarged P_ref;
+they are not identified. The final READY/report test ignores the rebit.
+
+For one common phase beta, write R_P(beta) for this selective rotation.
+The recursively generated operator, in matrix order, is
+
+    A_(r+1)=A_r R_(P_ref)(beta) A_r^dagger R_R(beta) A_r,
+    A_0=A.                                              (196)
+
+It uses the literal reverse of the SAME raw word, on the same retained
+active work. No previously measured history is reversed. oldRIGHT is
+untouched at every primitive. This is a top-level amplification of the
+completed forward processor; it is not identified with a controlled
+call of A against an external idle/reference branch.
+
+### One exact native phase gives a contracting readiness law
+
+For K computational controls and prescribed bit pattern v, the native
+Walsh/parity construction gives on EVERY column
+
+    product_(S subset controls)
+      CX_S G_rebit^((-1)^(v.S) k) CX_S^dagger
+        =exp[2^K k theta J_rebit tensor P_v].             (197)
+
+Each parity is actual CX, and every negative G is expanded by7j's
+source-I inverse, including dirty-port routing. No H, Toffoli,
+known-one input or heralded phase factory is used. Choose
+Kmax=max(K_input,K_READY) and one positive integer k for which
+
+    sin(beta)>0,   1/2<cos(beta)<17/32,
+    beta=2^Kmax k theta.                                 (198)
+
+The owned irrational Golden-angle theorem makes the search terminate
+with enough finite integer/precision budget. Membership in this open
+interval is certified with rational bounds on algebraic Golden powers.
+For a smaller predicate use k_v=2^(Kmax-K_v)k. Both implemented phases
+are then EXACTLY the same native rotation, not merely approximations
+to the same target. One bounded certificate is G^624: Kmax=2,k=156;
+Kmax=3,k=78; Kmax=4,k=39 all represent that same rotation.
+
+Put c=2cos(beta)-1 and a=1-c. Thus 0<c<1/16 and a in(15/16,1).
+The interval is chosen for a generic amplifier stability estimate,
+independently of the geometry, target field or Book coefficient ratio.
+If epsilon_r=1-gamma_r, projector algebra in(195)-(196) gives EXACTLY
+
+    epsilon_(r+1)=h(epsilon_r),
+    h(e)=e(c+a e)^2,
+    h'(e)=(c+a e)(c+3a e),
+    gamma_r=1-h^r(1-gamma).                              (199)
+
+To verify the identity, decompose A_r psi=g+f into READY and failed
+parts. With w=exp(i beta) as a mathematical notation for the real
+rebit rotation, (w-1)^2=-a w. The next failed component is
+w(c+a epsilon_r) f. The successful component is one scalar times
+g for EVERY input. Therefore its normalized logical CP/isometry
+channel is the original S exactly. Its scalar phase is retained in
+the rebit and may depend on gamma; there is no assertion of equality
+of all retained future profiles.
+
+For every 0<gamma<1, h(e)<e for 0<e<1 and the failure tends to0.
+This alone would be an insufficient C0 argument. On an actual
+gamma>=gamma_min>0 chart set e_max=1-gamma_min and
+lambda=(c+a e_max)^2<1. Then epsilon_r<=e_max lambda^r.
+Choose a finite warmup R0 with e_max lambda^R0<=1/48. Thereafter
+
+    epsilon_(R0+s)<=(1/48) 144^(-s),
+    0<=D_gamma gamma_(R0+s)<=3^R0 96^(-s).               (200)
+
+Indeed h/e<(1/12)^2 and h'<(1/12)(1/8) once e<=1/48;
+before warmup h'<=3. The proof is uniform on the stated positive
+readiness chart. Its constants depend on the ACTUAL gamma_min;
+no mesh-uniform resource efficiency is asserted. Higher shared-control
+jets retain their actual chain-rule factors as in the packet proof.
+
+### All repetitions, phases and inverses count in the actual clock
+
+The constructor emits A_r;R_READY;inverse(A_r);R_initial;A_r in
+chronological order and validates the ENTIRE expanded list. If a word
+has g G, n CX and i SourceI primitives, with t<=g G acting away
+from the source port, its literal inverse has
+
+    g_inverse=g, n_inverse=n+6t, i_inverse=4g+3i.
+
+For W=5g+n+i this gives W_inverse<=3W. Both phase words have a
+fixed finite total weighted inventory C_phase on the fixed interface.
+Consequently
+
+    W_r<=5^r W_0+C_phase(5^r-1)/4,
+    N_r<=W_r.                                           (201)
+
+The semantic count 3^r of base A/A^dagger occurrences is NOT the
+raw stage count. Inverses, SourceI and routing really execute. Work
+is reused coherently, so no extra copy or fresh spin is allocated at
+each recursion; the autonomous clock still has its NEW full N_r
+modes. The outer Book echo adds its full actual inverse, middle and
+balanced recording, with the same O(5^r) inventory bound.
+
+This duration bound also controls readiness beyond the tied-u test.
+At the scalar-ready base, with algorithmic P_ref and R fixed,
+Q=A_r^dagger R A_r is a projection and
+P_ref Q P_ref=gamma_r P_ref, so its off-diagonal block has norm
+sqrt(gamma_r epsilon_r). For any unitary MATRIX comparison tangent,
+
+    Gamma_READY=P_ref A_r^dagger R A_r P_ref,
+    ||D Gamma_READY||_op
+       <=2sqrt(gamma_r epsilon_r)||D A_r||_op.           (202)
+
+The comparison is not asserted to be a free native pulse. For actual
+per-stage generator lifts K_j=g_j^dagger D g_j,
+||D A_r||<=sum_j||K_j||. Thus the logarithmic-readiness bounds are
+2sqrt(N_r epsilon_r/gamma_r) for the Euclidean generator norm and
+2N_r sqrt(epsilon_r/gamma_r) for the maximum per-stage norm.
+Both tend to0, since N_r^2 epsilon_r=O((25/144)^s) after warmup.
+This retains the time-summed norm rather than replacing the enlarged
+process by one uncharged macro. Finite endpoints keep the packet's
+actual quadratic norm remainder as well as their first source.
+
+Equation(202) bounds READY only. Independent raw controls can also
+change the successful logical query. Their Dq is not bounded by
+calling its readiness small; the free full-preparer obstruction7g
+still applies to the complete report source.
+
+### The exact same Book calibration consumes the 7t source
+
+Put the ENTIRE amplified forward word A_r inside the owned complete
+balanced echo A_r^dagger M A_r, with its true primitive clock and
+transported cuts. M and the final report ignore the rebit. Its new
+whole heat is field constant by the same7j conjugacy theorem, including
+all scene/clock/work/failure modes, not only a selected READY block.
+Choose the recorder C_new=C_old tensor I_rebit, retaining the SAME
+old recording bank. On the returned old-work block, the rebit-blind
+report and scalar success give corner(1-d_K gamma_r q)I_rebit. Thus
+an initial rebit0 has no hidden rebit1 component when those old labels
+return; no extra rebit-copy bank is needed for this declared recording.
+The rebit itself remains physical coherent work. This choice doubles
+the full fibre and leaves the protected input rank unchanged. A task
+requiring a further classical rebit copy must count that added bank
+and its actual gates separately. Retain the resulting absolute heat.
+
+The original conditional query q is unchanged on(195)'s interface,
+including all its internal algorithm-control coherences. The resulting
+price and ACTUAL gain are
+
+    B_r=H_ref(N_echo,r,D_full,new)+j_K(gamma_r q),
+    Gamma_r=j'_K(gamma_r q) gamma_r a0 tau/Omega.         (203)
+
+Here N_echo,r is the full outer-echo schedule, including its
+inverse/middle/recording; it is not just the forward count in(201).
+For the7t endpoint stencils, G counts on EACH wire, the source frame
+and phase predicates stay fixed, so the inverse and amplified schedules
+have matching actual lengths by the literal count recurrence. Aggregate
+primitive counts alone need not fix routing for unrelated programmes.
+If gamma is field independent on the owned chart, the complete field
+source divided by Gamma_r is exactly the old normalized Dq. The
+conditional bank/operator estimates can likewise be reused on their
+SAME input interface. Truly additional input/constraint equations
+are not supplied by an input-dependent success law.
+
+For the ACTUAL 7t source, D_u q=0 and D_u gamma=-gamma0/2 at u0=p^3.
+Writing F_r(gamma)=1-h^r(1-gamma), its normalized extra source is
+
+    D_u B_r/Gamma_r
+      =-Omega q/(2a0 tau) *[gamma0 F'_r(gamma0)/F_r(gamma0)]
+          ->0.                                         (204)
+
+This suppresses the named non-small term(194) by an actual finite
+native construction. For each physical mesh/copy/aperture budget,
+choose the finite amplification depth using its true gamma_min,
+source norm and tolerance. The original weak-aperture calibration
+is retained; its factor1/tau is not silently cancelled.
+
+For finite code endpoints the exact identity is instead
+
+    (B_b-B_a)/[A_ab(u_b-u_a)]
+       =q [F_r(gamma(u_b))-F_r(gamma(u_a))]/(u_b-u_a),    (205)
+
+with the actual positive divided difference A_ab of j_K. Use the
+common real clock length at EACH stencil and the actual source lift.
+Equation(200) makes this readiness secant small uniformly on the
+declared positive-readiness chart; no continuous native word selector
+or zero-priced comparison of unequal durations is presumed.
+
+The component substitution is precise: the constructed domain7t now
+has a native operation controlling its exhibited readiness source,
+with full inverse/clock costs and an actual norm. It does not establish
+stationarity under every code change in X_run. Effects changing the
+conditional query, independent inverse/frame/cut/middle/source and any genuinely
+selected extra Info/work terms retain their sources. Physical source
+availability and the original spatial operator/geometry identification
+remain at their stated scope. No Einstein task is imposed; no complete
+joint stationary refinement, positive_gr, GR_closed or raw216 closure
+is claimed by the readiness operation alone.
+
+
 ## 8. Reproduction
 
 Run from this directory:

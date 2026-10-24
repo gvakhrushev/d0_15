@@ -8712,3 +8712,101 @@ CHECK_RESULT.json ff9fd0fdc0214fb125d1bfd52eddce6c3adefc4e19d8282683b086921369b3
 Affected work, agent-protocol, assembly, repository and whitespace guards
 pass on the final scientific inputs. No changed claim/assembly acceptance,
 full historical research replay or new Lean build is asserted.
+
+
+### 24 October: exact native readiness amplification consumes the new source
+
+Phase: native realization / source composition; same constitutive owner,
+native-programme-v1 carrier and PR #334. Input:
+90fc70094679fb8ba248b75bfba523242097a109. The parent is specifically
+the actual readiness source(193)-(194), not a new geometric or field-root
+search. Write paths: primary residual7u, this brief and
+02_REGISTRY/research/sources/d0_native_readiness_amplification_2026-10-24/.
+
+Root owns the parent application and amplified_execution.py. Bounded
+assistants own READINESS_AMPLIFICATION.md, native_phase.py with
+PHASE_COMPILER.md, and check_readiness_amplification.py with its receipt.
+These disjoint implementation/proof parts continue the existing execution;
+no additional task, acceptance node or registry slot is created.
+
+The changed mathematical input is an actual coherent operation on the
+complete forward programme, using its owned ALL-input scalar READY
+factorization. READY excludes the report; all failures, raw transcripts,
+unknown DATA/reference and oldRIGHT remain. Its exact full inverse is
+expanded on the same source-I/dirty-port interface. One fresh rebit stores
+the common successful phase. The algorithmic input reflection excludes
+that rebit/source-spin; the physical Book cut still contains every actual
+blank. The rebit is ignored by the final report but remains retained work.
+
+The native Walsh/parity word gives an EXACT common phase G^(2^Kmax k),
+using the integer multiplier appropriate to each predicate arity. A finite
+certified choice has1/2<cos(beta)<17/32. Thus c=2cos(beta)-1 lies in(0,1/16)
+and the exact failure recurrence is h(e)=e[c+(1-c)e]^2. This needs no
+pi/3 primitive, supplied angle, hidden successful phase factory or
+phase-approximation debt. The known fixed-point search is only the
+mathematical guide; the native recurrence and all-input proof are explicit.
+
+The successful conditional isometry/query remains exactly the same on
+the consumed interface. After a finite warmup with e<=1/48, failure
+contracts by<1/144 and its shared first-source derivative by<1/96.
+Actual literal inverse growth is counted through W=5G+CX+SourceI,
+W_inverse<=3W and N_r<=C5^r. Consequently N_r² e_r tends to0. The
+operator readiness source therefore vanishes under the declared Euclidean
+local-generator norm AND the full time-summed per-stage norm, with their
+actual lift; no freely variable native pulse is presumed.
+
+Precise substitution: equation(204) replaces the non-small7t row by
+-Omega q/(2a0 tau) times gamma0 F'_r(gamma0)/F_r(gamma0), tending to0.
+Finite codes retain their actual divided gain and common-stencil clock.
+The whole expanded forward/inverse/middle/balanced recording remains
+inside the new Book price; H_ref changes at its actual N_echo and full
+carrier. C_new=C_old tensor I_rebit uses the original record bank. Its
+scalar returned-block corner proves that an extra rebit-copy bank is not
+required for this declared recording. The rebit doubles the full fibre
+while its blank leaves the protected input rank unchanged.
+
+Smallest decisive checks: all-input scalar amplification and external
+reference coherences; exact native predicate phases on all dirty columns;
+literal recursive word and inverse inventories; sharp operator readiness
+normal and actual finite-endpoint remainder; outward-rational suppression
+of the7t native resource with the original aperture/gain. The new bare
+clock is not substituted for the original whole scene. Absolute prices at
+different durations and different complete future profiles are not equated.
+
+This removes the exhibited readiness obstruction on the stated complete
+Book/interface family. Independent changes of the conditional query Dq,
+inverse/cut/frame/middle, extra selected Info/work and the original physical
+source/geometry map remain. The7g full-report/preparer obstruction is not
+annulled. The result does not establish all-controller stationarity,
+a complete joint stationary refinement, physical GR or raw216 closure.
+
+Final primary section7u:11974 UTF-8 bytes, SHA256
+85081d74ae0361a9cc2c5b17c98a9c492b6c4f5689d3e5bd58511510462b20ef.
+All three independent source/price/variation reviews reread and ACCEPTED
+this final pin, including the explicit old-bank/rebit recorder choice.
+The preceding7t remains unchanged at its14993-byte pin.
+
+Actual final narrow checker: Python3.9.6/SymPy, exit0,67 checks. Its
+input hashes match the final native modules. Root verified the receipt
+and those hashes; no additional replay of unchanged large suites is
+claimed. The outward-rational r=80 example uses the declared native
+resource gamma0=2p^5, gamma_min=1/8, q=1/4, tau=2^-20 and a certified
+warmup4. This computes a rigorous scalar/source/inventory bound, not
+a monolithic execution or full matrix simulation of the enormous r=80
+word. The bounded constructor actually emits the one-round4404-stage
+example; the native resource application has4494 stages at its first
+round. Exact full-column phase checks include the3752-stage word on32
+columns. No efficiency or universal original programme gamma is inferred
+from these configured witnesses.
+
+Final packet SHA256 pins:
+native_phase.py c9b764111a88d440cb76d6215de1f687713ae6c1a336768ce2bd37898fcfc98d
+amplified_execution.py e0d5d8401896d555a26c51d333926a6f2b747c34eeb24857ab9ba1730fa9a3a8
+READINESS_AMPLIFICATION.md 8d161314c96b145c2392d473a01576e32ce5238e168625b7d20bb0f46b0a2775
+PHASE_COMPILER.md f46c18b831bd5741b56950a780b97ce917e12611b45f54ccd715548c8ef47af1
+check_readiness_amplification.py e3465e6714c801dbda85cebb84718fdcafa1dcbab94e09c61ae2cf6c494b7ac3
+CHECK_RESULT.json bdc83ae2ca53e40b48e5ec3b83860597627314992fc31238d52325632cb4e667
+
+Affected work, agent-protocol, assembly, repository and whitespace checks
+pass. Scientific status, physical admission and full GR remain open;
+no formal/claim/assembly promotion or fresh Lean build is asserted.
