@@ -71,9 +71,13 @@ def naiveWeightTestScalarProfile : ArchiveRolePhaseGroup 1 → ℝ :=
 def naiveWeightTestSiteProfile : ArchiveRolePhaseGroup 1 → ℝ :=
   fun x => if x = naiveWeightTestSiteA then naiveWeight1 else naiveWeight0
 
+noncomputable def weightedCubicalDifferential
+    (w : ArchiveRolePhaseGroup 1 → ℝ) (ψ : ArchiveCochain 1) : ArchiveCochain 1 :=
+  fun p => Real.sqrt (w p.1) * cubicalCoboundary 1 ψ p
+
 noncomputable def naiveWeightedCubicalDifferential
     (ψ : ArchiveCochain 1) : ArchiveCochain 1 :=
-  fun p => Real.sqrt (naiveWeightTestSiteProfile p.1) * cubicalCoboundary 1 ψ p
+  weightedCubicalDifferential naiveWeightTestSiteProfile ψ
 
 private theorem cubicalCoboundary_scalar_singleton
     (f : ArchiveRolePhaseGroup 1 → ℝ) (r : Role) (x : ArchiveRolePhaseGroup 1) :
@@ -89,12 +93,18 @@ private theorem cubicalCoboundary_scalar_singleton
       norm_num [forwardDifference, forwardDifferenceScale, archiveFibers]
       ring
 
+private theorem weightedCubicalScalar_singleton
+    (w f : ArchiveRolePhaseGroup 1 → ℝ) (r : Role) (x : ArchiveRolePhaseGroup 1) :
+    weightedCubicalDifferential w (scalarCochain 1 f) (x, singletonFockState r) =
+      Real.sqrt (w x) * (f (roleTranslatePlus 1 r x) - f x) := by
+  rw [weightedCubicalDifferential, cubicalCoboundary_scalar_singleton]
+
 private theorem naiveWeightedScalar_singleton
     (f : ArchiveRolePhaseGroup 1 → ℝ) (r : Role) (x : ArchiveRolePhaseGroup 1) :
     naiveWeightedCubicalDifferential (scalarCochain 1 f) (x, singletonFockState r) =
       Real.sqrt (naiveWeightTestSiteProfile x) *
         (f (roleTranslatePlus 1 r x) - f x) := by
-  rw [naiveWeightedCubicalDifferential, cubicalCoboundary_scalar_singleton]
+  rw [naiveWeightedCubicalDifferential, weightedCubicalScalar_singleton]
 
 private theorem sqrt_naiveWeight1_eq_two : Real.sqrt naiveWeight1 = 2 := by
   unfold naiveWeight1
@@ -329,22 +339,27 @@ private theorem pair_sum_D (ψ : ArchiveCochain 1)
   rw [carCreate_pair_D_zero]
   simp
 
-/-- Exact evaluation of the two-step weighted differential on the CAR16
-carrier: the selected degree-two coefficient is `1`, hence is nonzero. -/
-theorem naive_weighted_cubical_differential_square_witness :
-    naiveWeightedCubicalDifferential
-      (naiveWeightedCubicalDifferential
+/-- For this fixed CAR16 two-step path, the exact square coefficient depends
+only on the two intermediate site weights and the output-site weight. The
+formula is valid for every real-valued site profile; it does not assert that
+all nonconstant profiles make the weighted differential non-nilpotent. -/
+theorem weighted_cubical_differential_square_delta_coefficient
+    (w : ArchiveRolePhaseGroup 1 → ℝ) :
+    weightedCubicalDifferential w
+      (weightedCubicalDifferential w
         (scalarCochain 1 naiveWeightTestScalarProfile))
-      (naiveWeightTestOrigin, naiveWeightTestPairState) = 1 := by
+      (naiveWeightTestOrigin, naiveWeightTestPairState) =
+      Real.sqrt (w naiveWeightTestOrigin) *
+        (Real.sqrt (w naiveWeightTestSiteA) -
+          Real.sqrt (w naiveWeightTestSiteB)) := by
   classical
   let ψ : ArchiveCochain 1 :=
-    naiveWeightedCubicalDifferential (scalarCochain 1 naiveWeightTestScalarProfile)
-  change Real.sqrt (naiveWeightTestSiteProfile naiveWeightTestOrigin) *
-      cubicalCoboundary 1 ψ (naiveWeightTestOrigin, naiveWeightTestPairState) = 1
-  rw [naiveWeightSqrt_at_origin, one_mul, cubicalCoboundary_apply]
-  rw [role_sum_expand]
-  change
-    (∑ ket : ArchiveFockState,
+    weightedCubicalDifferential w (scalarCochain 1 naiveWeightTestScalarProfile)
+  change Real.sqrt (w naiveWeightTestOrigin) *
+      cubicalCoboundary 1 ψ (naiveWeightTestOrigin, naiveWeightTestPairState) = _
+  rw [cubicalCoboundary_apply, role_sum_expand]
+  change Real.sqrt (w naiveWeightTestOrigin) *
+    ((∑ ket : ArchiveFockState,
       carCreate D0.A naiveWeightTestPairState ket *
         (ψ (naiveWeightTestSiteA, ket) - ψ (naiveWeightTestOrigin, ket))) +
     (∑ ket : ArchiveFockState,
@@ -357,13 +372,61 @@ theorem naive_weighted_cubical_differential_square_witness :
     (∑ ket : ArchiveFockState,
       carCreate D0.D naiveWeightTestPairState ket *
         (ψ (roleTranslatePlus 1 D0.D naiveWeightTestOrigin, ket) -
-          ψ (naiveWeightTestOrigin, ket))) = 1
+          ψ (naiveWeightTestOrigin, ket)))) = _
   rw [pair_sum_A, pair_sum_B, pair_sum_C, pair_sum_D]
-  rw [show ψ = naiveWeightedCubicalDifferential
+  rw [show ψ = weightedCubicalDifferential w
     (scalarCochain 1 naiveWeightTestScalarProfile) by rfl]
   rw [carCreate_pair_A_singletonB, carCreate_pair_B_singletonA,
-    weightedScalar_siteA_singletonB, weightedScalar_origin_singletonB,
-    weightedScalar_siteB_singletonA, weightedScalar_origin_singletonA]
+    weightedCubicalScalar_singleton w naiveWeightTestScalarProfile D0.B
+      naiveWeightTestSiteA,
+    weightedCubicalScalar_singleton w naiveWeightTestScalarProfile D0.B
+      naiveWeightTestOrigin,
+    weightedCubicalScalar_singleton w naiveWeightTestScalarProfile D0.A
+      naiveWeightTestSiteB,
+    weightedCubicalScalar_singleton w naiveWeightTestScalarProfile D0.A
+      naiveWeightTestOrigin]
+  rw [show roleTranslatePlus 1 D0.B naiveWeightTestSiteA =
+      naiveWeightTestSiteAB by rfl,
+    roleTranslateA_siteB_eq_siteAB,
+    show roleTranslatePlus 1 D0.B naiveWeightTestOrigin =
+      naiveWeightTestSiteB by rfl,
+    show roleTranslatePlus 1 D0.A naiveWeightTestOrigin =
+      naiveWeightTestSiteA by rfl]
+  simp only [naiveScalar_at_siteAB, naiveScalar_at_siteA,
+    naiveScalar_at_siteB, naiveScalar_at_origin]
+  ring
+
+/-- If the output-site weight is positive and the two intermediate square
+roots differ, this fixed degree-zero input has a nonzero degree-two square
+coefficient. -/
+theorem weighted_cubical_differential_square_delta_nonzero
+    (w : ArchiveRolePhaseGroup 1 → ℝ)
+    (h0 : 0 < w naiveWeightTestOrigin)
+    (hpaths : Real.sqrt (w naiveWeightTestSiteA) ≠
+      Real.sqrt (w naiveWeightTestSiteB)) :
+    weightedCubicalDifferential w
+      (weightedCubicalDifferential w
+        (scalarCochain 1 naiveWeightTestScalarProfile))
+      (naiveWeightTestOrigin, naiveWeightTestPairState) ≠ 0 := by
+  rw [weighted_cubical_differential_square_delta_coefficient]
+  exact mul_ne_zero
+    (ne_of_gt (Real.sqrt_pos.2 h0))
+    (sub_ne_zero.mpr hpaths)
+
+/-- Exact evaluation of the two-step weighted differential on the CAR16
+carrier: the selected degree-two coefficient is `1`, hence is nonzero. -/
+theorem naive_weighted_cubical_differential_square_witness :
+    naiveWeightedCubicalDifferential
+      (naiveWeightedCubicalDifferential
+        (scalarCochain 1 naiveWeightTestScalarProfile))
+      (naiveWeightTestOrigin, naiveWeightTestPairState) = 1 := by
+  change weightedCubicalDifferential naiveWeightTestSiteProfile
+    (weightedCubicalDifferential naiveWeightTestSiteProfile
+      (scalarCochain 1 naiveWeightTestScalarProfile))
+    (naiveWeightTestOrigin, naiveWeightTestPairState) = 1
+  rw [weighted_cubical_differential_square_delta_coefficient,
+    naiveWeightSqrt_at_origin, naiveWeightSqrt_at_siteA,
+    naiveWeightSqrt_at_siteB]
   norm_num
 
 /-- The selected output label is a degree-two CAR state. -/
@@ -397,11 +460,20 @@ theorem archive_naive_weighted_car_degree_leakage_nogo_owner :
       (naiveWeightedCubicalDifferential
         (scalarCochain 1 naiveWeightTestScalarProfile))
       (naiveWeightTestOrigin, naiveWeightTestPairState) ≠ 0) := by
+  have hweight0 : 0 < naiveWeightTestSiteProfile naiveWeightTestOrigin := by
+    have h := Ne.symm naiveWeightTestSiteA_ne_origin
+    simp [naiveWeightTestSiteProfile, naiveWeight0, h]
+  have hpaths :
+      Real.sqrt (naiveWeightTestSiteProfile naiveWeightTestSiteA) ≠
+        Real.sqrt (naiveWeightTestSiteProfile naiveWeightTestSiteB) := by
+    rw [naiveWeightSqrt_at_siteA, naiveWeightSqrt_at_siteB]
+    norm_num
   exact ⟨sqrt_naive_weights_ne, card_role,
     naiveWeightTestPairState_degree_two,
     naiveWeightTestInput_homogeneous_degree_zero,
     naive_weighted_cubical_differential_square_witness,
-    ne_of_eq_of_ne naive_weighted_cubical_differential_square_witness (by norm_num)⟩
+    weighted_cubical_differential_square_delta_nonzero
+      naiveWeightTestSiteProfile hweight0 hpaths⟩
 
 /-- Registry-name compatibility wrapper. It exposes the same finite witness
 and therefore does not assert the broader universal wording of the claim row. -/
