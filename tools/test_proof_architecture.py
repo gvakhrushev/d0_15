@@ -329,6 +329,48 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertFalse(status["found"])
         self.assertEqual(status["status"], "external_reference_only")
 
+    def test_required_source_scope_checks_each_query_and_shows_section_evidence(self) -> None:
+        source_rel = "02_REGISTRY/research/NATIVE_RAISING_OWNER.md"
+        commit = "a" * 40
+        blob = "b" * 40
+
+        def pinned_hit(section: str, line: int) -> dict:
+            return {
+                "source": source_rel, "direct_content": True,
+                "source_commit": commit, "source_blob": blob,
+                "source_origin": "pinned_snapshot",
+                "evidence_lines": [{
+                    "line": line, "heading": f"## {section}. Full tangent inverse",
+                    "text": "All coframe and link tangent directions are retained.",
+                    "kind": "direct_content",
+                }],
+            }
+
+        required = {
+            "path": source_rel, "commit": commit, "blob": blob,
+            "sections": ["8.4", "8.5"],
+            "scope_query_indexes": [0, 1],
+            "scope_query_sections": {"0": ["8.4"], "1": ["8.5"]},
+        }
+        incomplete = cold_start._required_source_status(
+            [("inverse null leg", [pinned_hit("8.4", 7340)]),
+             ("all 16 coframe 24 links full tangent", [])],
+            required,
+        )
+        self.assertFalse(incomplete["found"])
+        self.assertEqual(incomplete["status"], "missing_scoped_query")
+        self.assertFalse(incomplete["scoped_queries"][1]["found"])
+
+        complete = cold_start._required_source_status(
+            [("inverse null leg", [pinned_hit("8.4", 7340)]),
+             ("all 16 coframe 24 links full tangent", [pinned_hit("8.5", 7344)])],
+            required,
+        )
+        self.assertTrue(complete["found"])
+        self.assertIn("8.4", complete["sections_found"])
+        self.assertIn("8.5", complete["sections_found"])
+        self.assertIn(7344, [line["line"] for line in complete["evidence_lines"]])
+
     def test_text_search_prefers_current_owner_and_keeps_pin_context(self) -> None:
         with tempfile.TemporaryDirectory() as temp:
             root = pathlib.Path(temp)
@@ -382,6 +424,53 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertFalse(hits[0]["direct_content"])
         self.assertEqual(hits[0]["source_origin"], "filename_only")
         self.assertEqual(hits[0]["evidence_lines"][0]["kind"], "filename_only")
+
+    def test_english_scope_query_finds_russian_full_tangent_source(self) -> None:
+        with tempfile.TemporaryDirectory() as temp:
+            root = pathlib.Path(temp)
+            research = root / "02_REGISTRY" / "research"
+            research.mkdir(parents=True)
+            source = research / "NATIVE_FULL_TANGENT_SOURCE.md"
+            source.write_text(
+                "## 8.5 Полнота геометрического чтения\n"
+                "На полном касательном пространстве сохраняются все16 coframe "
+                "и24 link направления на узел, а не только null- или "
+                "pp-wave-ansatz variations. При изменении observer n сохраняются jets.\n",
+                encoding="utf-8",
+            )
+            query = ("all 16 coframe 24 link directions at node not only null "
+                     "pp-wave ansatz variations observer jets tangent")
+            hits = proof.full_text_search(root, query, limit=5)
+
+        owner = next(hit for hit in hits
+                     if hit["source"] == "02_REGISTRY/research/NATIVE_FULL_TANGENT_SOURCE.md")
+        self.assertTrue(owner["direct_content"])
+        self.assertIn("direction", owner["matched_term_names"])
+        self.assertIn("observer", owner["matched_term_names"])
+        self.assertIn("tangent", owner["matched_term_names"])
+
+    def test_source_reference_ranking_keeps_late_context_relevant_exact_pin(self) -> None:
+        query = "all 16 coframe 24 link directions at node not only null pp-wave ansatz variations"
+        terms = proof._query_terms(query)
+        pattern = proof._term_pattern(terms)
+        lines = [
+            f"all coframe direction link in broad context; source docs/archive_{index}.md"
+            for index in range(20)
+        ]
+        owner = "02_REGISTRY/research/NATIVE_FULL_TANGENT_SOURCE.md"
+        commit = "a" * 40
+        blob = "b" * 40
+        lines.append(
+            "all 16 coframe 24 link directions at node not only null pp-wave "
+            f"ansatz variations; source {owner}; published commit {commit}; blob {blob}; §8.5"
+        )
+
+        references = proof._source_references(lines, terms, pattern)
+
+        self.assertEqual(references[0]["path"], owner)
+        self.assertEqual(references[0]["commit"], commit)
+        self.assertEqual(references[0]["blob"], blob)
+        self.assertIn("8.5", references[0]["section_refs"])
 
 
 if __name__ == "__main__":

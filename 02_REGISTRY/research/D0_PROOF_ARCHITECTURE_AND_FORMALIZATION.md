@@ -63,6 +63,10 @@ Exact GitHub `blob/<commit>/<path>` links are now resolvable when their commit o
 
 ## C0 candidate boundary
 
+### Pinned #334 raising-inverse retrieval key
+
+For the direct query `Перенос и тетрада восстанавливаются из самого native raising operator`, use §8.4 of `02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md`, published commit `fe5cf335da04cac14e50407b03f98b96be17dc52`, blob `1c8d59e5533b443d9a015dc4512cfbc160ae7e62`. For the all-jet query, §8.5 states that the full tangent space retains all 16 coframe and 24 link directions on a node, including observer jets, beyond only null/pp-wave-ansatz variations. The pin covers the owner content only; the §5.1 AF radial coframe consumer has its separate exact pin below.
+
 C0 is a reviewed set of mathematical units, not files, modules, registry rows, or graph nodes. The figures below describe candidate inputs only; they are not a frozen denominator and no coverage percentage is valid before independent acceptance of the exact package.
 
 Initial candidate sources and crosswalk inputs:
@@ -76,7 +80,7 @@ Initial candidate sources and crosswalk inputs:
 - Bounded candidates from 04_CERTIFICATES/ and 05_EXPERIMENTS/ are exact computations, certificates, constructions, and negative controls found on cited or otherwise in-scope paths. A missing mathematical-consumer edge is a reconciliation gap, not an exclusion reason; exclude raw logs and exploratory runs without a mathematical assertion.
 - The assembly attempts (4), anti_substitutions (25), synthesis (8), and source_fork_reconciliations (1 record pointing to two child PRs and four result IDs) are retrieval, provenance, and countercontrol inputs. They inform unit resolution and expose crosswalk gaps, but do not become extra result units merely by being indexed.
 - Bound the original raw response terminal to its exact existing contract key: consumer RAW-216 → obligation raw_response_terminal → interface raw-216-v1. Preserve the complete interface: carrier = original fixed smooth Q_h with genuine Lorentz quotient and independently fixed smooth τ; action = original designated geometric Euler response and declared source equations; variations = exact joint connection and metric source equations; source = original #216 comparator Xi(Q_h,K_h)=h²τ(hx); normalization = h⁻² times the unweighted raw ℓ1 sum over h⁻⁴ sites; refinement = exact samples of the same g and τ on a refining sequence in the admitted log chart; scope = original response terminal. The exact owner source path/blob/slice is not yet pinned and remains a freeze blocker. Preserve its quantifiers and owner; do not import the whole historical corpus or claim this architecture closes the terminal.
-- Include unrepresented book assertions and published research explicitly cited by books, active registry, assembly, and selected current GR sources. Key each by exact source commit/path/section or equation. For #334, the task-pinned slice gate is now read and pinned: published commit fe5cf335da04cac14e50407b03f98b96be17dc52, path 02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md, blob 1c8d59e5533b443d9a015dc4512cfbc160ae7e62; read §§8.4–8.5, equations (26)–(31), and §6.25, equations (13br1)–(13br2). Its concrete consumer is pinned in the same published snapshot: 02_REGISTRY/research/A4D_EXACT_AF_RADIAL_COFRAME_EQUIVALENCE_NONLINEAR_SPIN2_2026_10_18.md, blob 734e21ae6bc04ff3446ad15858936d417fdd2e55, §5.1. That application uses the recovered geometry to evaluate the existing star density from Julia queries and transfer its finite cubic response, conditional on the stated addressed-access, work-return, and strict-chart assumptions. This is not evidence of physical admission or mandatory price selection. The reusable mathematical scope is reconstruction of the typed native Julia raising-operator geometry on the stated charts and its full tangent pullback; it does not identify the reconstructed geometric functional with the native physical price/source or accept/retire #334.
+- Include unrepresented book assertions and published research explicitly cited by books, active registry, assembly, and selected current GR sources. Key each by exact source commit/path/section or equation. For #334, the task-pinned slice gate is now read and pinned: published commit fe5cf335da04cac14e50407b03f98b96be17dc52, path 02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md, blob 1c8d59e5533b443d9a015dc4512cfbc160ae7e62; read §§8.4–8.5, equations (26)–(31), and §6.25, equations (13br1)–(13br2). The owner states `DR DΦ=I` on its full tangent space and preserves all 16 coframe and 24 proper-Lorentz link directions, with observer jets retained when the observer changes; it explicitly exceeds null/pp-wave-ansatz variations. По-русски: полный касательный срез содержит все 16 направлений кофрейма и 24 proper-Lorentz link-направления; jets наблюдателя сохраняются при его изменении, а вариации не ограничены null/pp-wave ansatz. Its concrete consumer is pinned in the same published snapshot: 02_REGISTRY/research/A4D_EXACT_AF_RADIAL_COFRAME_EQUIVALENCE_NONLINEAR_SPIN2_2026_10_18.md, blob 734e21ae6bc04ff3446ad15858936d417fdd2e55, §5.1. That application uses the recovered geometry to evaluate the existing star density from Julia queries and transfer its finite cubic response, conditional on the stated addressed-access, work-return, and strict-chart assumptions. This is not evidence of physical admission or mandatory price selection. The reusable mathematical scope is reconstruction of the typed native Julia raising-operator geometry on the stated charts and its full tangent pullback; it does not identify the reconstructed geometric functional with the native physical price/source or accept/retire #334.
 
 Book/section pairs are not unique units: 49 pairs contain 192 claims. Multiple theorem strings and repeated theorem atoms are review flags, not automatic merges. The starting snapshot has 715 claim rows with a Lean module, 713 with a theorem string, and 360 with semicolon-separated theorem names. The new bulk locator pass currently exposes 889 claim rows, 2700 theorem-atom mappings, 4974 unique candidate Lean names, and 176 rows without a theorem locator; exact-name resolution against the elaborated D0.All environment is still pending. An independent scope review found 174 rows without a module, 176 without a theorem string, and 23 theorem atoms shared across IDs. These are reconciliation queues, not automatic proof debts or exclusions.
 
@@ -92,7 +96,9 @@ evidence that C0 is formally covered.
 
 This work does not select a physical implementation or close GR. Keep complete Book03/Cost-Info/source admission, same-execution clock/controller/work selection, physical metric descent/frame selection, original H+J+R, positive_gr, and raw216 open under their existing owners. Preserve #334; do not duplicate or retire its science. Conditional assumptions remain in theorem signatures. Connes reconstruction remains conditional when its needed object is a supplied field.
 
-A useful cold-start reuse case is the native raising-operator inverse with a null leg: published #334 labelled-record source §§8.4-8.5, equations (26)-(31), with rational alternative §6.25 (13br1)-(13br2). Its selected source gate is satisfied at commit fe5cf335da04cac14e50407b03f98b96be17dc52, path 02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md, blob 1c8d59e5533b443d9a015dc4512cfbc160ae7e62. The concrete consumer is the exact AF radial coframe equivalence source §5.1, blob 734e21ae6bc04ff3446ad15858936d417fdd2e55. The new compiled module `D0.Geometry.ArchiveJuliaRaisingOperatorReadout` applies the existing vacuum-fix and creator-on-vacuum lemmas to recover `u` exactly with `ιInv`, and proves that equality of full model query operators implies equality of their shifts. The formalized scope is the finite-carrier vacuum identity in Eq. (26). It does not prove the full Lorentz null inverse (28), its all-jet extension, coframe/metric recovery, or the full variational pullback in (31). It supplies no physical price, compiler, admission, or GR selection result; the fuller consumer remains conditional on its stated assumptions.
+A useful cold-start reuse case is the native raising-operator inverse with a null leg: published #334 labelled-record source §§8.4-8.5, equations (26)-(31), with rational alternative §6.25 (13br1)-(13br2). Its selected source gate is satisfied at commit fe5cf335da04cac14e50407b03f98b96be17dc52, path 02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md, blob 1c8d59e5533b443d9a015dc4512cfbc160ae7e62. The concrete consumer is the exact AF radial coframe equivalence source §5.1, blob 734e21ae6bc04ff3446ad15858936d417fdd2e55. In `D0.Geometry.ArchiveJuliaRaisingOperatorReadout`, the exterior model has an exact vacuum readout, and a compiled adapter now builds its vector creator from the owned Jordan--Wigner `carCreateEnd` matrices. It proves `carCreateEnd r |0⟩` is the corresponding one-particle state, that the CAR and exterior queries have the same vacuum response, and that the CAR-query vacuum readout returns `u`; equality of complete CAR query operators therefore implies equal shifts. This supplies a concrete source-to-existing-operator application for the vacuum identity in Eq. (26), accounting for the repository's four-mode role basis and real coefficients. It does not prove equality of the two query operators on arbitrary 16-state inputs, the full Lorentz null inverse (28), its all-jet extension, coframe/metric recovery, or the full variational pullback in (31). It supplies no physical price, compiler, admission, or GR selection result; the fuller consumer remains conditional on its stated assumptions.
+
+At this earlier checkpoint, the added adapter and readout corollaries passed `lake build D0.Geometry.ArchiveJuliaRaisingOperatorReadout` at Lean 4.30.0 (3,014 Lake jobs), while the full `D0.All` replay after those additions was still pending. The current integrated replay and its exact source digest are recorded in the 24 October checkpoint below.
 
 ## Implemented and remaining
 
@@ -129,8 +135,9 @@ digest is `ece1f667d2ce2e474ea5f6e383b03067b8968eda4da739a34e40bfc5405b021e`,
 the collector digest for this query is
 `c447c2952e3893855d479a19a7a1de0aa037a20dd96d46cd6fbd38cbf598cde0`, and the
 toolchain is `leanprover/lean4:v4.30.0`. The emitted declaration range is
-lines 119–129 of the new module. A current `D0.All` build is still reserved
-for the final integration run.
+lines 119–129 of the new module. The final `D0.All` replay for the later
+24 October Lean source tree is recorded below; this earlier collector snapshot
+and its digest remain historical provenance.
 
 The same collector check on
 `D0.Bridge.connes_reconstruction_conditional` reports the explicit binder
@@ -211,7 +218,7 @@ The search run used snapshot `1c7e39336381658fd2d7b17f2a077e5c2fec0817` with `wo
 
 The existing `tools/test_gr_assembly.py` suite has 106/106 passing tests with a temporary Git `core.autocrlf=false` override. Its default native-Windows run reaches 15 errors and one secondary assertion failure because the fixture hashes a CRLF worktree `decisions.md` before Git stores the normalized blob; the resulting evidence digest differs from `git show`. The fixture is owned by open PR #398, so this branch records the environment-dependent result and leaves that file to its existing owner.
 
-Next: extend the exact candidate inventory and source/declaration crosswalk, obtain independent acceptance of the exact C0 package, and review the Eq. (26) adapter against the pinned source and consumer. All ten required cold-start cases and the additional outside-GR case pass; migrate connected mathematical blocks while preserving public imports and scopes; formalize or obtain accepted owner review for every established C0 unit; then run affected integration and one current `D0.All` build on final sources. This checkpoint is not completion.
+Next: extend the exact candidate inventory and source/declaration crosswalk, obtain independent acceptance of the exact C0 package, and obtain independent review of the Eq. (26) adapter against the pinned source and consumer. The 24 October checkpoint below records the refreshed 13-case cold-start suite and current `D0.All` build. Migrate connected mathematical blocks while preserving public imports and scopes; formalize or obtain accepted owner review for every established C0 unit. This checkpoint is not completion.
 
 ## Concrete reuse application: top-Hodge scene
 
@@ -242,3 +249,58 @@ The complete machine-readable result is [claim_candidate_resolution.json](source
 An independent locator-integrity review at PR head `12eae2429289a8663bc3925ba2bdeeeb17d0585e` recomputed all 2,702 claim/theorem mappings from the 889 source rows and confirmed exact agreement. It verified 5,575 references against 5,487 ordered unique response records, including all 25 semicolon-separated module rows; all 1,823 found declarations have valid module-derived paths across 426 source files. The reviewer reproduced the collector hash and Lean source digest and checked the 128-name maximum (43 batches, last batch 111). The reviewed snapshot is not an ancestor of the PR head, but all relevant source inputs and digests match. This accepts locator expansion, completeness, ordering, path integrity, and provenance only; it does not establish semantic claim coverage or C0 acceptance. C0 remains unfrozen and has no coverage denominator or acceptance.
 
 At PR head `f2e2b54cb21ac1f20c2afa4e6cbc1e86313c1ed7`, GitHub `D0 guards` passed. The `D0 Lean build` workflow completed successfully as a Draft run, with `Build release proof closure` and `Compile native checkpoint capsules` skipped. The full local `lake build D0.All` succeeded against the recorded source snapshot; therefore the skipped Draft steps are not represented as GitHub release-closure validation.
+
+## 24 October integrated retrieval and adapter checkpoint
+
+The cold-start suite was replayed at local parent snapshot
+`e58ef06572db3436f109359e8bd90d3cd5fbb4b9` (`worktree_dirty=true`) after
+adding query-scoped exact-source checks and context-ranked source references.
+The full 33-query run found every required source in 13/13 scenarios; the
+14-case benchmark also passed, including the exact-source-versus-unrelated-
+prose impact control. For the pinned #334 raising-inverse owner, all six
+owner queries resolved the exact path/commit/blob, and the two all-tangent
+queries exposed §8.5; the separate AF radial coframe consumer query resolved
+its exact §5.1 pin. The search now rejects aggregate-only coverage when an
+individual scoped query misses and no longer drops a late exact source pin
+behind unrelated references. This verifies retrieval and provenance only,
+not semantic C0 acceptance or physical selection.
+
+The focused proof-architecture suite passes 24/24 tests. The generated-view
+check (`generate_lean_views.py --check`), `check_no_sorry_in_core.py`, and
+`check_claim_map_coverage.py` pass. One initial full `D0.All` attempt exposed
+an auto-generated `LinearOrder Role` declaration collision between the new
+raising-readout module and `A4DObserverPositiveExterior`; giving the new
+module's local instance a unique name removed the integration conflict. The
+narrow raising-readout build then passed (3,014 Lake jobs), followed by the
+final current-source `D0.All` build (4,563 jobs, Lean 4.30.0). Existing
+imported-module linter warnings remain with their owners.
+
+Build provenance: local snapshot `e58ef06572db3436f109359e8bd90d3cd5fbb4b9`,
+dirty worktree; project-owned Lean source digest
+`f806ee18e9f9333b6c92db25c579f5843f066da1df1830e1a6ae18730ebd58ba`, matching
+the final-build stamp; build helper SHA-256
+`255bd49a5211154683a698b1163bcebcaeb52b2fd125fbc0590d73d696ee3104`. The
+compiled raising-readout source SHA-256 is
+`c968312ac93f8230fd3b400279e1dce9b4e030ade5444c8d7816fc1b1fec048a`. The
+search and authority inputs are pinned by these SHA-256 digests:
+
+| Input | SHA-256 |
+|---|---|
+| `tools/proof_architecture.py` | `234c428bf9b98b6adb10b16204718f91e4f6e3ae2258379587c36c3a64359c6b` |
+| `tools/proof_architecture_cold_start.py` | `00b8f483601c36ba3d548afca0752c9d6760db930a01dcdab4aa273b4c047d48` |
+| `tools/test_proof_architecture.py` | `b5efb2321910f52b549578fd55579b7a4a89e79341aa1c64801f1d1bb53560ad` |
+| `02_REGISTRY/claims.csv` | `fcc9c0b2b4a010ec3c7cf8a1a0d883a0f445320e6588f0c3e4f775dd787ad222` |
+| `02_REGISTRY/assumptions.csv` | `2bc9f8c040a776d784fdbfdf62569b72e4f70ff0a182fc66d0ced31cb5f13a36` |
+| `02_REGISTRY/formal_support.csv` | `2891e51611f95df046adf132c165822d9156666b6dae44703830e7c5b72a3d42` |
+| `02_REGISTRY/aliases.csv` | `8cda9e7ebfa26a01a04a4d51b56eb6b93425816a5fe073aa74cbae94041f672f` |
+| `02_REGISTRY/gr_assembly/applications.json` | `a493c0161b2f39ec14925e38131f7c2d240cd07bd2e27404a35098bc96eb0dc8` |
+| `02_REGISTRY/gr_assembly/contract.json` | `72fb3bbbc320b4af217cbe7c09580b44556b354e9668cbd11e76933fa8209ba6` |
+| `02_REGISTRY/presupposition_edges.json` | `9740e8192f65f674f4d82013e526cf9d8524d2d74d75eed749f48dcf43bef5c1` |
+
+The `D0.All` result is local validation of this dirty source tree; it does not
+stand for the skipped GitHub Draft release-closure or capsule jobs. #334
+remains the scientific owner. The CAR adapter is a finite vacuum-response
+application and does not prove equality on arbitrary 16-state inputs, the
+full all-jet Lorentz inverse or its complete variational pullback. Independent
+C0 acceptance and the native physical Book/Cost-Info/clock/controller/source
+selection premises remain open under their existing owners.

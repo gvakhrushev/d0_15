@@ -27,8 +27,8 @@ CASES: list[dict[str, Any]] = [
             "native raising operator inverse null leg",
             "точное восстановление тетрады из native raising operator при null leg",
             "native raising operator transfer coframe null leg",
-            "перенос тетрада восстанавливаются native raising operator",
-            "all 16 coframe rows and 24 proper Lorentz links full tangent observer jets",
+            "Перенос и тетрада восстанавливаются из самого native raising operator",
+            "all 16 coframe 24 link directions at node not only null pp-wave ansatz variations",
             "все 16 coframe 24 proper Lorentz directions tangent observer jets",
             "AF radial coframe equivalence section 5.1 direct native Julia golden execution cubic Einstein vertex",
         ],
@@ -40,11 +40,15 @@ CASES: list[dict[str, Any]] = [
             {"path": "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md",
              "commit": "fe5cf335da04cac14e50407b03f98b96be17dc52",
              "blob": "1c8d59e5533b443d9a015dc4512cfbc160ae7e62",
-             "sections": ["8.4", "8.5"], "scope_query_indexes": [0, 1, 2, 3, 4, 5]},
+             "sections": ["8.4", "8.5"], "scope_query_indexes": [0, 1, 2, 3, 4, 5],
+             "scope_query_sections": {"0": [], "1": [],
+                                      "2": [], "3": [],
+                                      "4": ["8.5"], "5": ["8.5"]}},
             {"path": "02_REGISTRY/research/A4D_EXACT_AF_RADIAL_COFRAME_EQUIVALENCE_NONLINEAR_SPIN2_2026_10_18.md",
              "commit": "fe5cf335da04cac14e50407b03f98b96be17dc52",
              "blob": "734e21ae6bc04ff3446ad15858936d417fdd2e55",
-             "sections": ["5.1"], "scope_query_indexes": [0, 1, 2, 3, 4, 5, 6]},
+             "sections": ["5.1"], "scope_query_indexes": [6],
+             "scope_query_sections": {"6": ["5.1"]}},
         ],
         "scope_review": "Owner all-jet null-leg inverse and the concrete consumer are distinct; this is not physical price selection.",
     },
@@ -228,6 +232,7 @@ def _required_source_status(query_hits: list[tuple[str, list[dict[str, Any]]]],
     expected_blob = required.get("blob")
     required_sections = [str(value) for value in required.get("sections", [])]
     scope_query_indexes = required.get("scope_query_indexes")
+    scope_query_sections = required.get("scope_query_sections", {})
     considered = ([(query, hits) for index, (query, hits) in enumerate(query_hits)
                    if scope_query_indexes is None or index in scope_query_indexes])
     direct_candidates = []
@@ -252,9 +257,56 @@ def _required_source_status(query_hits: list[tuple[str, list[dict[str, Any]]]],
         sections_found.update(_section_refs(hit))
         evidence.extend(hit.get("evidence_lines", []))
     missing_sections = sorted(set(required_sections) - sections_found)
-    found = bool(exact_candidates) and not missing_sections
+    scoped_queries = []
+    for index in scope_query_indexes or []:
+        if index >= len(query_hits):
+            scoped_queries.append({
+                "query_index": index, "query": None, "found": False,
+                "status": "query_index_out_of_range", "required_sections": [],
+                "sections_found": [], "missing_sections": [],
+                "candidate_rank": None,
+            })
+            continue
+        query, hits = query_hits[index]
+        direct = [(query, rank, hit) for rank, hit in enumerate(hits, start=1)
+                  if _path_matches(str(hit.get("source", "")), expected_path)
+                  and hit.get("direct_content")]
+        exact = [(query, rank, hit) for query, rank, hit in direct
+                 if (expected_commit is None or hit.get("source_commit") == expected_commit)
+                 and (expected_blob is None or hit.get("source_blob") == expected_blob)]
+        query_sections = [str(value) for value in
+                          scope_query_sections.get(str(index),
+                                                   scope_query_sections.get(index, []))]
+        found_for_query: set[str] = set()
+        query_evidence: list[dict[str, Any]] = []
+        for _, _, hit in exact:
+            found_for_query.update(_section_refs(hit))
+            query_evidence.extend(hit.get("evidence_lines", []))
+        query_missing = sorted(set(query_sections) - found_for_query)
+        query_found = bool(exact) and not query_missing
+        scoped_queries.append({
+            "query_index": index, "query": query, "found": query_found,
+            "status": ("found_direct_content" if query_found else
+                       "missing_required_section" if exact else
+                       "source_pin_mismatch" if direct and
+                       (expected_commit is not None or expected_blob is not None) else
+                       "not_found"),
+            "required_sections": query_sections,
+            "sections_found": sorted(found_for_query),
+            "missing_sections": query_missing,
+            "candidate_rank": exact[0][1] if exact else
+                              direct[0][1] if direct else None,
+            "evidence_lines": query_evidence[:3],
+        })
+    scoped_queries_found = (all(item["found"] for item in scoped_queries)
+                            if scope_query_indexes is not None else True)
+    found = bool(exact_candidates) and not missing_sections and scoped_queries_found
     if found:
         status = "found_direct_content"
+        query, rank, hit = exact_candidates[0]
+        source_origin = hit.get("source_origin")
+    elif exact_candidates and not scoped_queries_found:
+        status = "missing_scoped_query"
         query, rank, hit = exact_candidates[0]
         source_origin = hit.get("source_origin")
     elif exact_candidates:
@@ -272,14 +324,25 @@ def _required_source_status(query_hits: list[tuple[str, list[dict[str, Any]]]],
         status, query, rank, source_origin = "external_reference_only", None, None, "citation_only"
     else:
         status, query, rank, source_origin = "not_found", None, None, None
+    # Prefer evidence inside the required sections so the summary shows the
+    # passage that justifies its status instead of earlier, unrelated hits.
+    prioritized_evidence: list[dict[str, Any]] = []
+    for section in required_sections:
+        for line in evidence:
+            if section in _section_refs({"evidence_lines": [line]}):
+                if line not in prioritized_evidence:
+                    prioritized_evidence.append(line)
+    prioritized_evidence.extend(line for line in evidence
+                                if line not in prioritized_evidence)
     return {
         "path": expected_path, "status": status, "found": found,
         "source_origin": source_origin,
         "expected_commit": expected_commit, "expected_blob": expected_blob,
         "required_sections": required_sections,
         "sections_found": sorted(sections_found), "missing_sections": missing_sections,
+        "scoped_queries": scoped_queries,
         "candidate_rank": rank, "query": query,
-        "evidence_lines": evidence[:5],
+        "evidence_lines": prioritized_evidence[:10],
         "citation_only_refs": citation_refs[:3],
     }
 

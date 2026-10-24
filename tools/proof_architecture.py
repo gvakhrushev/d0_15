@@ -208,6 +208,7 @@ def structured_search(dataset: dict[str, Any], query: str, limit: int = MAX_SEAR
 
 
 _QUERY_SYNONYMS: tuple[tuple[str, tuple[str, ...]], ...] = (
+    ("all", ("all", "every", "все", "всех", "всем", "все16")),
     ("exact", ("exact", "exactly", "precise", "точн")),
     ("raising", ("raising", "creator", "creation", "подъем", "подъём", "создател", "создан")),
     ("operator", ("operator", "оператор")),
@@ -215,6 +216,14 @@ _QUERY_SYNONYMS: tuple[tuple[str, tuple[str, ...]], ...] = (
     ("null", ("null", "lightlike", "isotropic", "нул", "светоподоб", "изотроп", "pp-wave")),
     ("leg", ("leg", "component", "компонент", "ножк")),
     ("coframe", ("coframe", "solder", "тетрад", "кофрейм")),
+    ("link", ("link", "links", "connection", "связь", "связи", "звено", "ребро")),
+    ("direction", ("direction", "directions", "направлен")),
+    ("row", ("row", "rows", "строк", "строка", "строки")),
+    ("node", ("node", "site", "узел", "узла", "узле")),
+    ("observer", ("observer", "наблюдател")),
+    ("tangent", ("tangent", "касательн")),
+    ("jet", ("jet", "jets", "джет", "джеты", "джетов")),
+    ("lorentz", ("lorentz", "лоренц")),
     ("transverse", ("transverse", "попереч")),
     ("nonvacuum", ("nonvacuum", "non-vacuum", "невакуум", "не-вакуум")),
     ("midpoint", ("midpoint", "середин")),
@@ -278,7 +287,9 @@ def _filename_bonus(rel: str, terms: list[tuple[str, tuple[str, ...]]]) -> float
                       for _, variants in terms) / len(terms)
 
 
-def _source_references(lines: list[str]) -> list[dict[str, Any]]:
+def _source_references(lines: list[str],
+                       terms: list[tuple[str, tuple[str, ...]]] | None = None,
+                       pattern: re.Pattern[str] | None = None) -> list[dict[str, Any]]:
     """Expose exact path/commit/blob pins present in matched source lines."""
     path_pattern = re.compile(
         r"(?<![\w])(?:[\w.-]+[\\/])*[\w.-]+\.(?:md|lean|json|csv|py)(?:#[^\s,;]*)?",
@@ -301,10 +312,15 @@ def _source_references(lines: list[str]) -> list[dict[str, Any]]:
             sections = [part for match in section_pattern.finditer(line)
                         for part in match.groups() if part]
             key = (normalized, commit, None)
-            found[key] = {"path": normalized, "hashes": list(dict.fromkeys(hash_pattern.findall(line))),
-                          "commit": commit, "blob": None,
-                          "section_refs": list(dict.fromkeys(sections)),
-                          "pin_complete": True, "context": line[:MAX_SNIPPET]}
+            reference = {"path": normalized, "hashes": list(dict.fromkeys(hash_pattern.findall(line))),
+                         "commit": commit, "blob": None,
+                         "section_refs": list(dict.fromkeys(sections)),
+                         "pin_complete": True, "context": line[:MAX_SNIPPET]}
+            previous = found.get(key)
+            if (previous is None or terms is None or pattern is None or
+                    len(_matched_term_names(_fold(line[:MAX_SNIPPET]), pattern, terms)) >
+                    len(_matched_term_names(_fold(previous["context"]), pattern, terms))):
+                found[key] = reference
         paths = list(path_pattern.finditer(line))
         commits = list(commit_pattern.finditer(line))
         blobs = list(blob_pattern.finditer(line))
@@ -329,12 +345,24 @@ def _source_references(lines: list[str]) -> list[dict[str, Any]]:
             if "/blob/" in normalized or normalized.casefold().startswith("github.com/"):
                 continue
             key = (normalized, commit, blob)
-            found[key] = {"path": normalized, "hashes": list(dict.fromkeys(hash_pattern.findall(line))),
-                          "commit": commit, "blob": blob,
-                          "section_refs": list(dict.fromkeys(section_refs)),
-                          "pin_complete": bool(commit and normalized),
-                          "context": line[:MAX_SNIPPET]}
-    return list(found.values())[:12]
+            reference = {"path": normalized, "hashes": list(dict.fromkeys(hash_pattern.findall(line))),
+                         "commit": commit, "blob": blob,
+                         "section_refs": list(dict.fromkeys(section_refs)),
+                         "pin_complete": bool(commit and normalized),
+                         "context": line[:MAX_SNIPPET]}
+            previous = found.get(key)
+            if (previous is None or terms is None or pattern is None or
+                    len(_matched_term_names(_fold(line[:MAX_SNIPPET]), pattern, terms)) >
+                    len(_matched_term_names(_fold(previous["context"]), pattern, terms))):
+                found[key] = reference
+    references = list(found.values())
+    if terms is not None and pattern is not None:
+        references.sort(key=lambda item: (
+            -len(_matched_term_names(_fold(item.get("context", "")), pattern, terms)),
+            -bool(item.get("pin_complete")), str(item.get("path", "")),
+        ))
+        return references[:64]
+    return references[:12]
 
 
 def _read_pinned_source(root: pathlib.Path, reference: dict[str, Any],
@@ -595,8 +623,9 @@ def full_text_search_many(root: pathlib.Path, queries: list[str],
                 record["label"] = evidence[0]["text"]
             matching_lines = [line for line in content.splitlines()
                               if pattern.search(_fold(line))]
-            refs = _source_references(matching_lines)
+            refs = _source_references(matching_lines, terms, pattern)
             refs.sort(key=lambda item: (
+                -len(_matched_term_names(_fold(str(item.get("context", ""))), pattern, terms)),
                 -sum(any(variant in _fold(str(item.get("path", ""))) for variant in variants)
                      for _, variants in terms),
                 -bool(item.get("pin_complete")), str(item.get("path", "")),
