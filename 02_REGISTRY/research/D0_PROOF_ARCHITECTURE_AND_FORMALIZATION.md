@@ -1999,6 +1999,9 @@ On final local inputs, both narrow Lean builds passed: the new Eq. (27) module
 (2,993 Lake jobs) and its principal-frame dependent (3,020 jobs). The generator
 suite passed 27/27, the proof-architecture suite 36/36, generated-view and
 claim-map checks passed, the no-sorry scan passed, and the debt audit remained
-at its three baseline findings. The CRLF-aware whitespace check passed. Draft
-CI remains the next integration check; this slice is not a `D0.All` replay, C0
-acceptance, or physical GR closure.
+at its three baseline findings. The CRLF-aware whitespace check passed. At
+code commit `23773edd`, GitHub Draft workflows `D0 guards` (run
+`40131508206`) and `D0 Lean build` (run `40131508181`) passed. Draft policy
+skipped `Build release proof closure` and `Compile native checkpoint capsules`
+in the Lean workflow; this is therefore not a `D0.All` replay, C0 acceptance,
+or physical GR closure.
