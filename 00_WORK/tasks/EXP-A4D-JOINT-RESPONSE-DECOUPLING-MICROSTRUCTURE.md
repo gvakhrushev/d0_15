@@ -8383,7 +8383,7 @@ Scientific status and all remaining native source obligations are unchanged.
 ### 24 October: the actual material source supplies the conditional lift norm
 
 Phase: native realization / source composition; same PR #334 owner,
-Assembly-Slot: constitutive, Assembly-Carrier: native-programme-v1.
+Registered constitutive slot on the native-programme-v1 interface.
 Input: a1fbb785e23d3182a9392b0b6ef8248d723b258a. Write paths: primary
 residual owner section7q and this brief. No separate task or promotion.
 
