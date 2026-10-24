@@ -3237,6 +3237,262 @@ Compulsory universal selection is a stronger claim. This substitution
 neither upgrades the approximate compiler to exact finite roots nor
 promotes physical GR, positive_gr or raw216 closure.
 
+## 7m. Compose the exact spatial roots in one retained execution and its full price
+
+24 October 2026. Same owner; published input9d18c148. This applies
+sections7e-l to the already owned all-mesh nonvacuum roots. It supplies
+a compatible family of finite, cumulative executions with retained old
+records and exact joint stationarity on the DECLARED operator chart.
+The price is recomputed on each whole execution. This is stronger than
+separate per-mesh roots, but it is not a price-preserving projective
+quotient, an infinite finite-resource machine, or native task selection.
+
+### A single complete word and return boundary at each finite prefix
+
+Choose a cofinal h_j=2^(-j) sequence starting at a valid j0, with the
+owned primary chart, CAR slack and stencil collar on every used mesh.
+For these meshes take the exact source-X operator branch of section7i,
+with its original full42 field chart, generated resources, complete
+inverse, semantic implementation fibre and sharply generated pure key.
+Denote its complete balanced, recorded monodromy by u_j. All private
+WORK, SIGN resources, factories, target ports, keys and record banks
+are disjoint. There is one shared protected factor H_R on which EVERY
+COMPLETED block acts as identity on ALL columns. Immutable oldRIGHT/past
+is untouched throughout; the reused Q8 spin may genuinely couple to the
+port inside the source-X inverse(94)-(95). Only that completed inverse
+restores its identity action. Keep those real intermediate interactions
+in the paid prefixes and clock. No extra spin is allocated per mesh.
+Scalar compression on a prepared column alone would not imply the
+completed-block factorization. No unknown resource is copied between meshes.
+
+In the actual private input sector let p_j=|0_j><0_j|, including its
+bank blanks and actual initial key. A generated key remains inside its
+preparer. Let P_R be the supplied protected input support from section7l.
+The complete private monodromy is conjugate to a field-independent
+middle, u_j=w_j^dagger m_j w_j, with the balanced-record conjugation
+included. Its blank corner is the owned scalar
+
+    p_j u_j p_j=s_j p_j,
+    s_j=1-d_j gamma_j q_j,  0<d_j<2,
+    0<gamma_j<=1,  0<=q_j<=q_max,j<1/2.
+
+Thus 0<s_j<=1. Keep d_j and the actual readiness gamma_j fixed on this
+chart, exactly as in section7i. Independent changes of them are treated
+below, not discarded. For a block with a larger private protected input
+support, replace p_j by that supplied support and use its true rank.
+
+Concatenate the complete paid stage lists, including every real copy,
+conjunction, inverse, routing stage, retained bank and scheduled idle.
+All resources for a finite prefix M are present in its initial closed
+system. Its endpoint and input support are
+
+    U_M=I_R tensor (tensor_(j<=M) u_j),
+    P_M=P_R tensor (tensor_(j<=M) p_j),
+    a_M=product_(j<=M) s_j,   R_M=rank P_M,
+    P_M U_M P_M=a_M P_M.                                (130)
+
+The shared protected rank occurs ONCE; input rank is not full thermal
+dimension. Extending M changes the finite input carrier. Comparisons to
+the previous subsystem can embed the extra registers as initially idle
+blanks, but this does not identify their complete initial tasks or prices.
+No apparatus or resource is created from outside during an execution.
+
+Use the actual transported input supports at every interior stage and
+ONE global closing input-return comparison. A previous standalone
+closing comparison is now an interior transported stage; its retained
+record remains readable. If a different physical task keeps a separate
+closing cut at every block, it has a different feedback and is not (130).
+This choice of cumulative task boundary is stated, not inferred from M1.
+The old record of block return and the new event that ALL blocks return
+are distinct internally readable events.
+
+The actual cumulative clock length N_M is the complete stage-list length.
+Use the homogeneous whole-scene realization and the owned chronological
+holonomy gauge theorem, with all its scene, clock and fibre modes.
+Equation(130) gives joint conjugacy to I_R tensor tensor_j m_j. Therefore
+the COMPLETE heat H_M at this new N_M and full Hilbert dimension is field
+constant. Its value is generally NOT sum_j H_j. A fixed clock chart
+means the paid schedule is fixed; discrete changes of the schedule do
+not acquire a fictitious zero derivative.
+
+With the same original 0<zeta<1 and ordinary counting trace, the macro
+return defect on the initial FIBRE and complete Book action are exactly
+
+    F_M=(1-a_M^2)P_M,
+    B_M=H_M-R_M log(1-zeta+zeta a_M^2).                   (131)
+
+The actual primitive-clock feedback has F_M as its one nonzero wrap block
+up to prefix transport and zero on the interior blocks; P_M in(130) is
+not the entire stage-active projector. These zero blocks add nothing to J.
+There is no normalization of J, removed absolute anchor or extra factor
+N_M. This follows from the original whole-word return formula, not a sum
+of standalone block prices. The shared scene is counted once as well.
+
+### Exact joint roots survive the genuinely coupled full price
+
+At fixed ranks, middle and readiness, write b=1-zeta. Differentiating
+(131) on the product operator chart yields
+
+    D B_M=sum_(j<=M) c_(M,j) Dq_j,
+    c_(M,j)=2 R_M zeta a_M^2 d_j gamma_j
+                  /[(b+zeta a_M^2)s_j] >0.              (132)
+
+For independent block variables its critical set is exactly the product
+of the critical sets of q_j. Under any common generated parameterization,
+all block critical points still pull back to a critical point; the
+converse need not hold when parameterization constrains the variations.
+Although the critical sets factor, the action generally has nonzero
+mixed derivatives. Replacing it by sum_j B_j is false.
+
+Consume the OWNED exact primary roots Dq_j(t_j^*)=0 on every mesh,
+including every independent coframe, proper-Lorentz link and matter row.
+The original semantic encoder fibre preserves the full response and its
+separately readable readiness. Its rows remain zero after (132).
+Each sharp pure key has zero first derivative by(89)-(91), so those rows
+remain zero as well. Apply the owned terminal cotangent and backward
+prefix recursion to this ONE cumulative word. It solves its generated
+preparation/state/flag/copy equations with the new terminal covector.
+There is no requirement that independent state gradients vanish before
+the causal multipliers are included.
+
+Consequently the entire declared product field/control chart has an
+EXACT constrained joint root for every finite M. This uses the original
+exact operator report, not the later approximate Bernstein compiler.
+It removes the separate mathematical need to construct spatially
+compatible stationary finite executions on THAT chart. The same primary
+curved metric and O(h_j^2) midpoint matter recovery are retained.
+
+For the additional controls that the chart did not cover, the exact
+formula is instead
+
+    Ds_j=-d_j gamma_j Dq_j-d_j q_j Dgamma_j
+                                  -gamma_j q_j Dd_j.   (133)
+
+Independent readiness or middle changes have genuine sources. Equation(133)
+is the corner differential, not the complete row for a moving middle:
+its spectrum may also vary and generate D H_M. Any induced heat/cut/rank
+source is retained; constant heat was proved only on the fixed chart.
+Normalized tag motions at the common primary value q_j=r0 contribute
+r0 D(sum pi)=0, but this does not cancel(133). Independent entangled
+resource normals retain(79); unrestricted work controls retain section7g.
+Cross-block controls are not made stationary by correct marginal answers.
+They require the actual joint task-response fibre or a native proof of
+their exclusion from the variation domain. No such exclusion is assumed
+as a consequence of closedness alone. An independently free mixed-key
+simplex also keeps its different one-sided tangent.
+
+### What precisely refines: retained records and marked geometry
+
+For an arbitrary joint input density, even correlated across old and
+fresh factors, disjoint all-column action gives the exact channel identity
+
+    Tr_new composed Ad_(U_(M+1))
+       =Ad_(U_M) composed Tr_new.                       (134)
+
+Any old retained pointer effect is embedded as E_old tensor I_new.
+Summing over a complete set of new terminal outcomes therefore recovers
+the entire old terminal instrument/record marginal. The actual old marked
+prefixes and their geometry decoders(111)-(114) are retained in the stage
+list. Earlier measured transcripts, if required, must already be in
+those banks; a final-label bank does not retroactively store them.
+This is internal physical retention, with no external history primitive.
+
+The cofinal dyadic subsequence now has compatible retained observations
+and exact roots of its new cumulative prices. This is NOT the stronger
+static-coisometry condition for a whole operator tower. Already for
+blank embedding i_in=I_old tensor |0_new> and the genuinely evolved
+embedding i_out=I_old tensor u_new|0_new>,
+
+    U_(M+1) i_in=i_out U_M,
+    i_in^dagger U_(M+1) i_in=s_new U_M.
+
+The latter differs from U_M when the new return is nontrivial. Neither
+the new thermal clock nor its cyclic wrap is obtained by tracing away
+fresh WORK. Thus(134) is an exact observation/channel compatibility map,
+not proof of every Book01 static operator-refinement condition or of
+B_(M+1)=B_M. The old local return outcome and the new conjunction return
+must not be conflated. Existing address refinement(99)-(100) may also
+be used at each finite level; address depth is not spatial mesh size.
+
+### Existing source and secant bounds survive the history factor
+
+Fix all blocks except j, set C^2=product_(k!=j) s_k^2, and write
+
+    A=b+zeta C^2,  zeta_eff=zeta C^2/A,  0<zeta_eff<=zeta,
+    J_M=-R_M log A
+        -R_M log(1-zeta_eff+zeta_eff s_j^2).             (135)
+
+This is an exact factorization of the ORIGINAL price. It chooses no new
+physical feedback parameter. The absolute first term stays in B_M.
+A and zeta_eff are constant only for this single-block variation; when
+other blocks vary, differentiate them too and use(132).
+
+On the weak-operand branch q_j=Q_j of(121)-(126), with its actual fixed
+Omega_j and positive a0,tau_j, the block continuum-source gain is
+
+    G_(M,j)=c_(M,j) a0 tau_j/Omega_j,
+    D_j B_M/G_(M,j)=Omega_j DQ_j/(a0 tau_j).
+
+Therefore the entire error bound(124) survives unchanged for that block
+in its declared field dual norm. Equation(126) also applies with the
+DERIVED zeta_eff; its bound is no larger when zeta_eff is replaced by
+zeta. All common rank/readiness/history factors cancel in the ratio.
+There is no hidden inverse old-history probability in these normalized
+source or central-secant bounds. The actual lift norm, delta^2/6,
+quadrature normalization and growth with h/degree still remain.
+
+No uniform nonzero absolute gain as M grows follows. The product a_M
+can tend to zero; there is no asserted infinite-price limit. For exact
+roots this does not affect the finite-prefix zero equations. For
+approximate words every old block's normalized residual remains: adding
+finer blocks does not repair a fixed nonzero error in an old variable.
+To apply(129), use the actual block gain and the stated uniform-test
+budget on the selected mesh. Approximation cannot inherit exact roots
+merely from this composition.
+
+### The precise original operational admission consumed here
+
+[Book00 section00.3e](../../01_BOOKS/BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md#003e-popperian-bootstrap-falsifiability-forces-the-functional-tuple)
+requires injective retention until independent inspection.
+[Book01 section01.4](../../01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#014-condensedprofinite-support)
+requires finite factorization, an operator lift, positive response,
+projection-compatible readout, finite halt and one calibration;
+section01.6 permits finite channel composition and runtime descendants.
+Equation(134) is the actual old-record readout map for this supplied
+finite extension, while the original operator placement, calibration
+and finite-quotient premises remain those of sections7j-l. It does not
+turn an arbitrary matrix family into an admitted native finite word.
+
+For the supplied disjoint preparers the product state
+Psi(Y)=tensor_j S_j(Y_j)|0_j> is actually generated. Its tangent is
+D Psi(Y)[v], and its source is handled by the same causal adjoint.
+This is not an independent postulate that all preparation states factor.
+Book00 section00.3c makes independence a measured defect whose vanishing
+characterizes factorization. Book01's tensor Born uniqueness applies
+AFTER a finite product response has been fixed. Furthermore, every
+I_old tensor w commutes with every retained test E_old tensor I_new.
+Thus preserving the old record algebra alone neither excludes arbitrary
+new-WORK correlations nor proves that they are admitted physical controls.
+The exact outstanding map is the native task/constraint tangent image
+into this generated field/preparer chart, or the actual additional source
+if that image is larger. Closure and physical memory have not been
+replaced by a third comparison primitive.
+
+**Parent substitution and remaining physical application.** The ideal
+all-mesh roots, full paid inverse/recording, original task cut, operational
+geometry and whole-clock Book action now have a single cumulative
+application, with exact retained-record maps and explicit full sources.
+A separate mathematical spatial retained-execution construction is no
+longer an input on this operator chart. The original native admission of
+THIS task/boundary/control domain and any additionally admitted source
+rows remain the physical premise. Static whole-operator refinement, if
+the intended interpretation requires it, still needs its own map; record
+compatibility alone does not prove it. Books00-01's closure and internal
+memory principles are respected without declaring this supplied task
+compulsory. No new selector, minimum, universal Einstein equation class,
+positive_gr or raw216 closure is claimed.
+
+
 ## 8. Reproduction
 
 Run from this directory:
