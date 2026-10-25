@@ -1219,6 +1219,33 @@ class ProofArchitectureTests(unittest.TestCase):
             for query in case["queries"]
         ))
 
+    def test_transfer_cold_start_pins_actual_controls_and_conditional_bridge(self) -> None:
+        case = next(
+            item for item in cold_start.CASES
+            if item["id"] == "verification-kernel-transfer-outside-gr"
+        )
+        required_names = (
+            "visible_only_memory_cannot_decode_hiddenBit_futures",
+            "erased_hiddenBit_operation_map_is_impossible",
+            "verified_visibleFalseReadout_transfers_to_common_execution",
+            "connes_reconstruction_conditional",
+        )
+
+        self.assertIn(
+            "03_FORMALIZATION/D0/Foundation/VerificationTransferApplication.lean",
+            case["required_refs"],
+        )
+        self.assertIn(
+            "03_FORMALIZATION/D0/Bridge/ConnesReconstructionBridge.lean",
+            case["required_refs"],
+        )
+        for declaration in required_names:
+            self.assertTrue(any(declaration in query for query in case["queries"]))
+            self.assertIn(declaration, case["scope_review"])
+        self.assertIn("conditional on supplied ConnesReconstruction fields",
+                      case["scope_review"])
+        self.assertIn("do not select a physical execution", case["scope_review"])
+
     def test_native_weighted_dirac_cold_start_keeps_source_and_transfer_scopes(self) -> None:
         case = next(
             item for item in cold_start.CASES

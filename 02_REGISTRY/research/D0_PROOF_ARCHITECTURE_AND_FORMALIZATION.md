@@ -5164,3 +5164,35 @@ The exact-name lookup has no claim ID and creates no semantic claim edge. The
 theorem remains conditional on the declared finite-carrier operator and role
 signs; the exact null-root count, gauge quotient, physical source selection,
 and GR closure remain open under their existing owners.
+
+### Cold-start route for actual foundation/transfer controls (25 October 2026)
+
+The `verification-kernel-transfer-outside-gr` retrieval case now points to the
+existing end-to-end owner in
+`D0.Foundation.VerificationTransferApplication`. Its
+`visible_only_memory_cannot_decode_hiddenBit_futures` theorem shows that any
+decoder satisfying the complete future-profile equation would force the
+visible-only encoder to be injective, contradicting two states with the same
+visible bit and different future archives. Its
+`erased_hiddenBit_operation_map_is_impossible` theorem uses the actual
+`Interpretation` structure and rules out the identity state map paired with an
+empty action word: the archive-revealing operation contradicts
+`step_commutes`. The positive
+`verified_visibleFalseReadout_transfers_to_common_execution` theorem composes
+the real `TheoryVerification.representedState` map with
+`Interpretation.transfer_theorem` and the native common-sector readout.
+
+The same retrieval card pins
+`D0.Bridge.connes_reconstruction_conditional`. `ConnesReconstruction` carries
+the finite-spectral-triple and external metric-reconstruction statements as
+fields; the theorem only returns their supplied witnesses. The bridge therefore
+remains conditional and does not select a physical execution or close GR.
+
+The actual application owner passed its narrow build (2,971 Lake jobs under
+Lean 4.30.0). The two negative controls report only `propext`; the positive
+foundation/transfer composition reports `propext`, `Classical.choice`, and
+`Quot.sound`; the Connes projection theorem reports no axioms. The focused
+proof-architecture suite passes 44/44, and the final cold-start run found every
+required source in all 19 cases (20 benchmark cases including the impact
+regression). These checks reuse existing Lean results; no duplicate theorem or
+physical selector was added.
