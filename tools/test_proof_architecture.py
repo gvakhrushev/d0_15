@@ -11,6 +11,7 @@ from unittest.mock import patch
 
 from tools import proof_architecture as proof
 from tools import proof_architecture_cold_start as cold_start
+from tools import lean_task_build
 
 
 def dataset(root: pathlib.Path | None = None) -> dict:
@@ -1382,6 +1383,86 @@ class ProofArchitectureTests(unittest.TestCase):
         for path in case["required_refs"]:
             status = cold_start._required_source_status(query_pairs, {"path": path})
             self.assertTrue(status["found"], f"cold-start search missed {path}")
+
+        inventory_root = (
+            proof.ROOT
+            / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
+        )
+        current_lean_digest = lean_task_build.source_digest()
+
+        def declarations(filename: str) -> dict[str, dict]:
+            inventory = json.loads((inventory_root / filename).read_text(encoding="utf-8"))
+            self.assertEqual(inventory["schema"], "d0-lean-declaration-inventory-v1")
+            self.assertEqual(
+                inventory["lean_source_digest"], current_lean_digest,
+                f"stale Lean source digest in {filename}",
+            )
+            return {
+                row["name"]: row
+                for row in inventory["declarations"]
+                if row.get("exists")
+            }
+
+        def has_type(
+            filename: str, name: str, *fragments: str,
+        ) -> dict:
+            row = declarations(filename).get(name)
+            self.assertIsNotNone(row, f"compiled inventory missed {name}")
+            assert row is not None
+            signature = row.get("elaborated_type", "")
+            for fragment in fragments:
+                self.assertIn(fragment, signature, f"unexpected type for {name}")
+            self.assertEqual(row.get("declaration_kind"), "theorem")
+            self.assertIsInstance(row.get("axioms"), list)
+            return row
+
+        car_zero = "car_zero_mode_claim_declarations_2026-10-25.json"
+        car_square = "car_dirac_square_claim_declarations_2026-10-25.json"
+        car_spectrum = "car_spectrum_amplification_claim_declarations_2026-10-25.json"
+        car_heat = "dirac_heattrace_multiplicity_claim_declarations_2026-10-25.json"
+        has_type(car_zero, "D0.Geometry.car_zero_mode_independent_of_L",
+                 "carDiracKernelDim = 16")
+        has_type(car_square, "D0.Geometry.carDiracSquareScalarSectorFactor_eq_fock_dim",
+                 "carDiracSquareScalarSectorFactor = Fintype.card")
+        has_type(car_spectrum, "D0.Geometry.car_amplification_times_spinor_eq_sixteen",
+                 "carDiracAmplificationFactor * 4 = Fintype.card")
+        has_type(car_heat, "D0.Geometry.diracHeatTraceMultiplicity_eq_fock_dim",
+                 "diracHeatTraceMultiplicity = Fintype.card")
+
+        has_type(
+            "hodge_car_dirac_square_declaration_2026-10-25.json",
+            "D0.Geometry.hodgeCarDirac_sq",
+            "ArchiveCochain N",
+            "hodgeCarDirac N (D0.Geometry.hodgeCarDirac N ψ) =",
+            "cochainDifferenceLaplacian N ψ",
+        )
+        has_type(
+            "hodge_square_backward_forward_declaration_2026-10-25.json",
+            "D0.Geometry.cochainDifferenceLaplacian_eq_backward_forward",
+            "∑ r, -D0.Geometry.backwardSite",
+            "D0.Geometry.forwardSite",
+        )
+        has_type(
+            "hodge_car_dirac_l2_normalization_declaration_2026-10-25.json",
+            "D0.Geometry.hodge_difference_diagonal_double_metric_at_l2",
+            "=\n    2 * D0.Geometry.ArchiveRoleProductLaplacian.archiveMetricProductLaplacian",
+        )
+        has_type(
+            "hodge_spatial_shell_claim_declarations_2026-10-25.json",
+            "D0.Geometry.spatialShellSubmodule_finrank",
+            "3 ≤ D0.archiveFibers N",
+            "= 96",
+        )
+        has_type(
+            "hodge_shell_energy_limit_declaration_2026-10-25.json",
+            "D0.Geometry.shellEnergy_tendsto_two_pi",
+            "nhds (2 * Real.pi)",
+        )
+        has_type(
+            "hodge_shell_rank_l2_control_declaration_2026-10-25.json",
+            "D0.Geometry.spatial_shell_rank_l2",
+            "= 48",
+        )
 
         dataset = proof.load_dataset(proof.ROOT)
         support_modules = {row["lean_module"] for row in dataset["formal_support"]}
