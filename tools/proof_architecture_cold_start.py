@@ -598,6 +598,7 @@ CASES: list[dict[str, Any]] = [
             "ArchivePartialTrace density_uniform_from_commute commute_with_shift_implies_diagonal_constant",
             "Fin finRotate cyclicShiftMatrix finRotateArchiveTopology partial_trace_density_uniform_under_shift",
             "GenerationTensorExactness flavor_blindness_step_of_commute commute_with_shift_entries kronecker_C_I",
+            "GenerationTensorExactness flavor_blindness_step_k_of_commute stage2_flavor_blindness_of_commute no h_off",
         ],
         "required_refs": [
             "03_FORMALIZATION/D0/Topology/ArchiveShiftTopology.lean",
@@ -613,14 +614,15 @@ CASES: list[dict[str, Any]] = [
             {"path": "03_FORMALIZATION/D0/Matter/ArchivePartialTrace.lean",
              "scope_query_indexes": [1, 2]},
             {"path": "03_FORMALIZATION/D0/Spectrum/GenerationTensorExactness.lean",
-             "scope_query_indexes": [3]},
+             "scope_query_indexes": [3, 4]},
         ],
         "scope_review": (
             "For a finite carrier, a transitive permutation, and exact commutation with its shift matrix, "
             "the generic theorem forces constant diagonal; a stronger entrywise covariance theorem handles "
-            "the lifted Fin n × N tensor shift. ZMod n and Fin n adapters reuse the generic step, iterate "
-            "and transitivity results while retaining existing public names. This is an algebraic matrix "
-            "result only."
+            "the lifted Fin n × N tensor shift; the iterated and cross-generation flavor-blindness "
+            "applications also follow without the off-generation-zero premise. ZMod n and Fin n adapters "
+            "reuse generic step, iterate and transitivity results while retaining existing public names. "
+            "This is an algebraic matrix result only."
         ),
     },
 ]

@@ -6950,11 +6950,12 @@ the existing diagonal step is its specialization. `GenerationTensorExactness`
 adapts `cyclicShiftMatrix` to `finRotate` and identifies
 `kronecker_C_I (cyclicShiftMatrix n)` with the shift permutation on
 `Fin n × N`. This replaces the hand-expanded pair of double sums in
-`flavor_blindness_step` with the generic entrywise theorem. The existing
-`flavor_blindness_step` signature remains available; the new
-`flavor_blindness_step_of_commute` removes the off-generation-zero premise,
-which this proof does not require. The partial-trace consumer uses the shared
-Spectrum adapter for its matrix and iterate bridges.
+`flavor_blindness_step` with the generic entrywise theorem. Stronger one-step,
+iterated and cross-generation results now carry only the commutation premise;
+the prior `flavor_blindness_step`, `flavor_blindness_step_k` and
+`stage2_flavor_blindness` statements remain as compatibility wrappers with
+their original off-generation-zero premises. The partial-trace consumer uses
+the shared Spectrum adapter for its matrix and iterate bridges.
 
 The archive-shift cold-start case now resolves all three concrete consumers:
 the ZMod geometry adapter, the Fin partial-trace adapter, and the lifted

@@ -143,15 +143,16 @@ lemma flavor_blindness_step_of_commute {N : Type} [Fintype N] [DecidableEq N] {n
 
 lemma flavor_blindness_step {N : Type} [Fintype N] [DecidableEq N] {n : Nat} [NeZero n]
     (Γ_lift : Matrix (Fin n × N) (Fin n × N) ℝ)
-    (_h_off : ∀ (g1 g2 : Fin n) (n1 n2 : N), g1 ≠ g2 → Γ_lift ⟨g1, n1⟩ ⟨g2, n2⟩ = 0)
+    (h_off : ∀ (g1 g2 : Fin n) (n1 n2 : N), g1 ≠ g2 → Γ_lift ⟨g1, n1⟩ ⟨g2, n2⟩ = 0)
     (h_comm : Γ_lift * (kronecker_C_I (cyclicShiftMatrix n)) = (kronecker_C_I (cyclicShiftMatrix n)) * Γ_lift)
     (g : Fin n) (n1 n2 : N) :
     Γ_lift (g, n1) (g, n2) = Γ_lift (shift_g g 1, n1) (shift_g g 1, n2) :=
-  flavor_blindness_step_of_commute Γ_lift h_comm g n1 n2
+  by
+    let _h_off := h_off
+    exact flavor_blindness_step_of_commute Γ_lift h_comm g n1 n2
 
-lemma flavor_blindness_step_k {N : Type} [Fintype N] [DecidableEq N] {n : Nat} [NeZero n]
+lemma flavor_blindness_step_k_of_commute {N : Type} [Fintype N] [DecidableEq N] {n : Nat} [NeZero n]
     (Γ_lift : Matrix (Fin n × N) (Fin n × N) ℝ)
-    (h_off : ∀ (g1 g2 : Fin n) (n1 n2 : N), g1 ≠ g2 → Γ_lift ⟨g1, n1⟩ ⟨g2, n2⟩ = 0)
     (h_comm : Γ_lift * (kronecker_C_I (cyclicShiftMatrix n)) = (kronecker_C_I (cyclicShiftMatrix n)) * Γ_lift)
     (g : Fin n) (k : Nat) (n1 n2 : N) :
     Γ_lift (g, n1) (g, n2) = Γ_lift (shift_g g k, n1) (shift_g g k, n2) := by
@@ -160,17 +161,26 @@ lemma flavor_blindness_step_k {N : Type} [Fintype N] [DecidableEq N] {n : Nat} [
     rw [shift_g_zero]
   | succ k ih =>
     rw [ih]
-    have h_step := flavor_blindness_step Γ_lift h_off h_comm (shift_g g k) n1 n2
+    have h_step := flavor_blindness_step_of_commute Γ_lift h_comm (shift_g g k) n1 n2
     rw [shift_g_step]
     exact h_step
 
-theorem stage2_flavor_blindness {N : Type} [Fintype N] [DecidableEq N] {n : Nat} [NeZero n]
+lemma flavor_blindness_step_k {N : Type} [Fintype N] [DecidableEq N] {n : Nat} [NeZero n]
     (Γ_lift : Matrix (Fin n × N) (Fin n × N) ℝ)
     (h_off : ∀ (g1 g2 : Fin n) (n1 n2 : N), g1 ≠ g2 → Γ_lift ⟨g1, n1⟩ ⟨g2, n2⟩ = 0)
     (h_comm : Γ_lift * (kronecker_C_I (cyclicShiftMatrix n)) = (kronecker_C_I (cyclicShiftMatrix n)) * Γ_lift)
+    (g : Fin n) (k : Nat) (n1 n2 : N) :
+    Γ_lift (g, n1) (g, n2) = Γ_lift (shift_g g k, n1) (shift_g g k, n2) :=
+  by
+    let _h_off := h_off
+    exact flavor_blindness_step_k_of_commute Γ_lift h_comm g k n1 n2
+
+theorem stage2_flavor_blindness_of_commute {N : Type} [Fintype N] [DecidableEq N] {n : Nat} [NeZero n]
+    (Γ_lift : Matrix (Fin n × N) (Fin n × N) ℝ)
+    (h_comm : Γ_lift * (kronecker_C_I (cyclicShiftMatrix n)) = (kronecker_C_I (cyclicShiftMatrix n)) * Γ_lift)
     (g1 g2 : Fin n) (n1 n2 : N) :
     Γ_lift (g1, n1) (g1, n2) = Γ_lift (g2, n1) (g2, n2) := by
-  have h_eq := flavor_blindness_step_k Γ_lift h_off h_comm g1 (g2.val + n - g1.val) n1 n2
+  have h_eq := flavor_blindness_step_k_of_commute Γ_lift h_comm g1 (g2.val + n - g1.val) n1 n2
   have h_val : (g1.val + (g2.val + n - g1.val)) % n = g2.val := by
     have : g1.val + (g2.val + n - g1.val) = g2.val + n := by omega
     rw [this, Nat.add_mod_right]
@@ -178,6 +188,16 @@ theorem stage2_flavor_blindness {N : Type} [Fintype N] [DecidableEq N] {n : Nat}
   have : shift_g g1 (g2.val + n - g1.val) = g2 := Fin.ext h_val
   rw [this] at h_eq
   exact h_eq
+
+theorem stage2_flavor_blindness {N : Type} [Fintype N] [DecidableEq N] {n : Nat} [NeZero n]
+    (Γ_lift : Matrix (Fin n × N) (Fin n × N) ℝ)
+    (h_off : ∀ (g1 g2 : Fin n) (n1 n2 : N), g1 ≠ g2 → Γ_lift ⟨g1, n1⟩ ⟨g2, n2⟩ = 0)
+    (h_comm : Γ_lift * (kronecker_C_I (cyclicShiftMatrix n)) = (kronecker_C_I (cyclicShiftMatrix n)) * Γ_lift)
+    (g1 g2 : Fin n) (n1 n2 : N) :
+    Γ_lift (g1, n1) (g1, n2) = Γ_lift (g2, n1) (g2, n2) :=
+  by
+    let _h_off := h_off
+    exact stage2_flavor_blindness_of_commute Γ_lift h_comm g1 g2 n1 n2
 
 theorem stage3_tensor_exactness {N : Type} [Fintype N] [DecidableEq N] {n : Nat} [NeZero n]
     (Γ_lift : Matrix (Fin n × N) (Fin n × N) ℝ) (Γ_SM : Matrix N N ℝ)

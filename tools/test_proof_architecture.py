@@ -2045,7 +2045,7 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertEqual(inventory["public_import_root"], "D0.All")
         self.assertEqual(inventory["toolchain"], "leanprover/lean4:v4.30.0")
         declarations = {row["name"]: row for row in inventory["declarations"]}
-        self.assertEqual(len(declarations), 22)
+        self.assertEqual(len(declarations), 25)
         self.assertEqual(
             set(inventory["request"]["full_names"]), set(declarations)
         )
@@ -2140,6 +2140,28 @@ class ProofArchitectureTests(unittest.TestCase):
             "D0.Spectrum.flavor_blindness_step",
             declarations["D0.Spectrum.flavor_blindness_step_k"]["proof_dependencies"],
         )
+        flavor_step_k = declarations[
+            "D0.Spectrum.flavor_blindness_step_k_of_commute"
+        ]
+        self.assertNotIn("g1 ≠ g2", flavor_step_k["elaborated_type"])
+        self.assertIn(
+            "D0.Spectrum.flavor_blindness_step_of_commute",
+            flavor_step_k["proof_dependencies"],
+        )
+        stage2 = declarations["D0.Spectrum.stage2_flavor_blindness_of_commute"]
+        self.assertNotIn("g1 ≠ g2", stage2["elaborated_type"])
+        self.assertIn(
+            "D0.Spectrum.flavor_blindness_step_k_of_commute",
+            stage2["proof_dependencies"],
+        )
+        self.assertIn(
+            "D0.Spectrum.stage2_flavor_blindness_of_commute",
+            declarations["D0.Spectrum.stage2_flavor_blindness"]["proof_dependencies"],
+        )
+        self.assertIn(
+            "g1 ≠ g2",
+            declarations["D0.Spectrum.stage2_flavor_blindness"]["elaborated_type"],
+        )
         self.assertTrue(all(
             "sorryAx" not in axiom
             for name in (
@@ -2159,6 +2181,9 @@ class ProofArchitectureTests(unittest.TestCase):
                 "D0.Spectrum.flavor_blindness_step_of_commute",
                 "D0.Spectrum.flavor_blindness_step",
                 "D0.Spectrum.flavor_blindness_step_k",
+                "D0.Spectrum.flavor_blindness_step_k_of_commute",
+                "D0.Spectrum.stage2_flavor_blindness_of_commute",
+                "D0.Spectrum.stage2_flavor_blindness",
             )
             for axiom in declarations[name]["axioms"]
         ))
