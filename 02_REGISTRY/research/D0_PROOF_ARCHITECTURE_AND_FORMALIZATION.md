@@ -7283,3 +7283,41 @@ chart. It still does not establish source A's action-to-carrier relation,
 arbitrary sitewise field variation, physical source selection, global
 connection elimination, or independent C0 acceptance. Claim status and
 physical interpretation remain unchanged.
+
+### Arbitrary finite sitewise coframe derivative (26 October 2026)
+
+The finite solder metric now factors for an arbitrary coframe field `e` at
+each fixed site `x` through the J² source chart with linear coordinate
+`H(e,x) = centeredCoframeMatrix N e x * η`. The sitewise map
+`solderMetricMatrix_sitewise_eq_j2_path` proves this factorization using the
+same exact right-`η` isometry as the constant-frame adapter. The full
+Fréchet derivative in the finite function-space domain
+`LocalCoframeField N` is then obtained by composition with the already-proved
+matrix derivative. `solderMetricMatrix_sitewise_derivative_apply` identifies
+that derivative exactly with `(coframeMetricReadout N e x).toMatrix` for every
+sitewise perturbation `e`; no constant-field restriction remains in this
+finite-carrier statement.
+
+The field-to-matrix map is a continuous linear map because the fixed finite
+sitewise carrier is finite-dimensional. The matrix maps use the Frobenius norm;
+the field map uses the inherited finite Pi norm. The targeted
+`D0.Geometry.A4DSolderMetricCompletion` build passed **3,087/3,087** jobs.
+The subsequent crosswalk run completed `lake build D0.All` on the Lean source
+digest `e4745d297220923db4e6e2e1f5fc4b4f41d147b328fd0b5cdeb6177ac76059ab`.
+All **19/19** explicit Lean declaration locators for `metric-provenance`
+resolved in the elaborated `D0.All` environment. The current geometry source
+is pinned at `0e969d9f937d5595a351e65b403ec1fe707f9b75`, SHA-256
+`4bad77f23785564124cbfcb1731f0a8fd17c1a5c86f92ab9365c10ad67020fb0`; the
+application JSON used by that crosswalk has SHA-256
+`757f1a9547d01fae3519a52e9b8aed95ea80dab5321f125d2a5c7e5d7baa8b97`.
+The compact declaration crosswalk is
+`sources/d0_proof_architecture_formalization_2026-10-24/metric_provenance_crosswalk_2026-10-26_0e969d9f.json`,
+SHA-256
+`64351fb2a8eb0ee9d0a976dc41aa976e6650c14876cc3338843ef19fc4bdee60`.
+
+This closes the finite sitewise calculus application at each fixed site, not
+the action provenance or physical source choice. The source section keys still
+need review, claim locators and the semantic relation remain unresolved, and
+`acceptance_inferred=false`. It proves no arbitrary continuum field variation,
+global connection elimination, physical metric/source selection, or
+independent C0 acceptance; no claim status changes.
