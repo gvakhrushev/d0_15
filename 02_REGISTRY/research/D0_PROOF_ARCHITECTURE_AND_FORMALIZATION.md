@@ -4828,12 +4828,12 @@ the generated `D0.All`; no claim status, C0 acceptance, gravity obligation,
 or physical source choice changes. The focused compiled inventory is
 `sources/d0_proof_architecture_formalization_2026-10-24/native_weighted_dirac_fourier_null_modes_declarations_2026-10-25.json`
 (188 declarations across four owning modules, including 10 in the new adapter;
-SHA-256 `81437857a96ca0fc59dd5039b6a95d7f6b066951b8d7bafe08520c58e5fc0181`). It uses
+SHA-256 `67e50092ea59e8f87baa2c20d098efb7754176024b5e988e2f3760e5ed447a9b`). It uses
 import root `D0.Research.NativeWeightedDiracFourierNullModes`, Lean source
 digest `55c6b6f00ec2a945e553bf6d15dc00463d7ffb210c6e3a67b1541f3d7829db8a`,
 collector SHA-256
 `cd8acaf6fa202e54f8090f9c5fb9fc210dfe03ba3197f21115581d7b7afad0cb`, and
-pre-commit snapshot `408a74fb3118d50ec2e726eb9e47cb9fdb364f56` with a dirty
+source snapshot `a6ff3f2fc7e0e6b94d673c2cd713cb4faeb94004` with a clean
 worktree. The contraction theorem's axiom footprint includes the existing
 finite annihilation and mixed-CAR `native_decide` leaves plus
 `Classical.choice`, `propext`, and `Quot.sound`; the null-kernel application
