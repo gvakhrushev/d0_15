@@ -1,0 +1,1333 @@
+{
+  "key": "D0-VERIFIABILITY-CLASS-001",
+  "matches": [
+    {
+      "item": {
+        "kind": "claim-metadata",
+        "key": "D0-VERIFIABILITY-CLASS-001",
+        "label": "BOOK_00/01 §0.3.1 / 01.6.0 verifiable theory versus unverifiable story",
+        "source": "02_REGISTRY/claims.csv",
+        "record": {
+          "claim_id": "D0-VERIFIABILITY-CLASS-001",
+          "book": "BOOK_00/01",
+          "section": "0.3.1 / 01.6.0 verifiable theory versus unverifiable story",
+          "lean_module": "D0.Foundation.VerifiabilityNecessity;D0.Foundation.VerificationTransferApplication",
+          "lean_theorem": "operationally_verifiable_or_unverifiable_story;operationally_verifiable_not_story;protocolTheoryVerification;canonicalProtocol_verifiable;D0.Foundation.VerificationTransferApplication.visibleBitVerification;D0.Foundation.VerificationTransferApplication.visibleBit_records_follow_complete_future_equivalence;D0.Foundation.VerificationTransferApplication.verified_visibleFalseReadout_transfers_to_common_execution",
+          "lean_status": "LEAN_PROVED",
+          "uses_bridge_assumptions": "False",
+          "assumption_ids": "",
+          "python_cert": "",
+          "release_status": "CORE-FORMALIZED",
+          "notes": "Defines an empirical theory as operationally verifiable exactly when a correct protocol represents its canonical observational quotient; the complementary class is an unverifiable story. The split is exhaustive and exclusive, and a concrete Boolean two-line protocol proves non-vacuity. State may already be an observational quotient, so microscopic distinctions outside the supplied tests are not asserted. External physical realization and causal independence of line implementations remain explicit application obligations."
+        },
+        "search_terms": [
+          "D0-VERIFIABILITY-CLASS-001",
+          "BOOK_00/01",
+          "0.3.1 / 01.6.0 verifiable theory versus unverifiable story",
+          "D0.Foundation.VerifiabilityNecessity;D0.Foundation.VerificationTransferApplication",
+          "operationally_verifiable_or_unverifiable_story",
+          "operationally_verifiable_not_story",
+          "protocolTheoryVerification",
+          "canonicalProtocol_verifiable",
+          "D0.Foundation.VerificationTransferApplication.visibleBitVerification",
+          "D0.Foundation.VerificationTransferApplication.visibleBit_records_follow_complete_future_equivalence",
+          "D0.Foundation.VerificationTransferApplication.verified_visibleFalseReadout_transfers_to_common_execution",
+          "Defines an empirical theory as operationally verifiable exactly when a correct protocol represents its canonical observational quotient; the complementary class is an unverifiable story. The split is exhaustive and exclusive, and a concrete Boolean two-line protocol proves non-vacuity. State may already be an observational quotient, so microscopic distinctions outside the supplied tests are not asserted. External physical realization and causal independence of line implementations remain explicit application obligations."
+        ]
+      },
+      "declared_applications": [],
+      "declared_result": null,
+      "target_obligation": null,
+      "target_interface": null,
+      "registered_assumptions": [],
+      "scoped_attempts": [
+        {
+          "id": "phase-count-shortcut",
+          "result": "phase-count-counterexample",
+          "interface": "resonance-divisor-v1",
+          "work_key": "phase-count-nullity-shortcut",
+          "scope": "The proposed nullity=2 max(n_+i,n_-i) rule is false already at (-1,-1,i,i).",
+          "reopen_when": "The formula or its domain changes explicitly and no longer includes the certified counterexample. Full divisor classification is a different task.",
+          "review": {
+            "state": "proposed"
+          },
+          "question_digest": "801c1b633ff8ca9e7bdb105091df64d28ea606631ab153af3a0c99281fdb13c8",
+          "question": {
+            "statement": "For every z in (C*)^4, nullity A(z)=2 max(n_+i,n_-i).",
+            "assumes": []
+          }
+        },
+        {
+          "id": "dmin-canonicality-source-bound-inference",
+          "result": "dmin-canonicality-source-bound-countermodel",
+          "interface": "complete-history-code-source-v1",
+          "work_key": "dmin-same-object-competitive-source",
+          "scope": "The literal-comparison countermodel only: canonicality, injectivity and golden word counts do not supply a Delta-equivalent same-object universal decoder or the first-source bound.",
+          "reopen_when": "A pinned construction in actual D0 proves Pair(decoder_N,U_N(X_N)) is Delta-equivalent to Enc(X_N) on the same complete history, establishes an admitted injective decoder and a cost-capacity-matched competitive bound, and controls the same moving law/Fisher source. A changed interface needs a new typed question.",
+          "question_digest": "b894222b378feb118a9e514e6fbaf9c9a27d7da296b4cc9c384f0aa0a0207c13",
+          "question": {
+            "statement": "Do the Book 01 canonicality definition, injectivity, and golden F/R word counts alone imply a same-object competitive decoder and the normalized complete-history code-minus-entropy first-source bound?",
+            "assumes": [
+              "D_min=Can(Enc(X)) is minimal only within the actual Delta-equivalence class.",
+              "No Delta-equivalence between Pair(decoder_N,U_N(X_N)) and Enc(X_N) is assumed unless proved.",
+              "The physical code-cost unit and complete moving probability law are fixed by the native programme."
+            ]
+          },
+          "review": {
+            "state": "proposed"
+          }
+        },
+        {
+          "id": "affine-scalar-perron-pressure-palatiniaction-shortcut",
+          "result": "original-book-triangle-odds-960-affine-pressure-no-go",
+          "interface": "original-scene-book-triangle-odds-pressure-boundary-v1",
+          "work_key": "affine-scalar-perron-pressure-palatiniaction-shortcut",
+          "scope": "Only the affine edge-price plus scalar positive Perron-pressure route as the entire Palatini action. This says nothing about nonlinear prices or the original complete H+J+R/CAR/memory/measurement/preparation/work/clock action.",
+          "reopen_when": "A physically admitted non-affine field-to-edge price map or an independently derived additional same-history action term changes the exact action family; record that new interface and compare its full Hessian/source rather than relabeling this pressure-only route.",
+          "review": {
+            "state": "proposed"
+          },
+          "question_digest": "ed681305328568ac87e9a07cbad484f3a377e397936e3f8cb7d8202f63676968",
+          "question": {
+            "statement": "Can the entire original 24-link Palatini quadratic action be derived from positive scalar Perron pressure after an affine map from the Lorentz coordinates to the original directed-edge prices?",
+            "assumes": [
+              "The complete field-to-edge-price map is affine on the 24 independent original Lorentz directions.",
+              "The candidate action is only positive scalar Perron pressure; no additional Cost-Info, H+J+R, CAR/memory, measurement, preparation, clock or work terms contribute.",
+              "The same original 24-direction Palatini Hessian of inertia (12,12) is the target."
+            ]
+          }
+        },
+        {
+          "id": "double-null-degree5-ward-selected-rref",
+          "result": "double-null-degree5-selected-rref-ward-obstruction",
+          "interface": "double-null-degree5-coframe-gradient-ward-v1",
+          "work_key": "double-null-selected-rref-degree5-ward-extension",
+          "scope": "The exact selected lower-order representative stated in the question; the nonzero fifth-order Ward projection rules out any fifth-amplitude correction for that representative.",
+          "reopen_when": "Vary the remaining joint cubic/mixed-quartic or asymmetric-quartic homogeneous modes, change the finite carrier/action, or enlarge the physical question. Any such result needs its own pinned interface and must not be inferred from this selected-representative obstruction.",
+          "review": {
+            "state": "proposed"
+          },
+          "question_digest": "c22c3c32995ca430f378c98ea32ba1b6b20bb200772179da035d8110ec0029cb",
+          "question": {
+            "statement": "Does the exact selected lower-order RREF representative of the perpendicular H=a*x, J=b*y branch at h=1 admit any fifth-amplitude extension, after allowing arbitrary fifth-degree corrections to the Lorentz links and coframe?",
+            "assumes": [
+              "The original six-plaquette Lorentz-star action and its all-40 Euler variations are fixed.",
+              "The lower-order fields are exactly the mixed-quartic and asymmetric-quartic RREF representatives pinned by the cited checkers, with their remaining homogeneous modes set to zero.",
+              "The fifth-order Lorentz exponential includes all terms through degree five."
+            ]
+          }
+        }
+      ],
+      "conceptual_presupposition_edges": [],
+      "warning": "Declared metadata links are not Lean type-checking or independent scientific acceptance."
+    }
+  ],
+  "snapshot_commit": "c5f430df76975f9aae7d3aa48eaa9896601fd5ac",
+  "source_digests": {
+    "02_REGISTRY/claims.csv": "e64c1223d0e69c79374b592d4a289d341e64b976337ba8129fb9ab804812f718",
+    "02_REGISTRY/assumptions.csv": "2bc9f8c040a776d784fdbfdf62569b72e4f70ff0a182fc66d0ced31cb5f13a36",
+    "02_REGISTRY/formal_support.csv": "4f1e8d3c4b752133f28b381f5df2747ddc472c4c7223435100ce9c12d4410bc8",
+    "02_REGISTRY/aliases.csv": "8cda9e7ebfa26a01a04a4d51b56eb6b93425816a5fe073aa74cbae94041f672f",
+    "02_REGISTRY/gr_assembly/applications.json": "d841fe9ccbb5e578836740b46d436147f74d9eb9c92413bbc924b942be6ee511",
+    "02_REGISTRY/gr_assembly/contract.json": "72fb3bbbc320b4af217cbe7c09580b44556b354e9668cbd11e76933fa8209ba6",
+    "02_REGISTRY/presupposition_edges.json": "7ff9d1e4ac3447f321afd603eab66554468644bb5fddb33551fdfa22e3e2585d"
+  },
+  "compiled_claim_reuse": [
+    {
+      "claim_id": "D0-VERIFIABILITY-CLASS-001",
+      "claim_locator_mappings": [
+        {
+          "claim_id": "D0-VERIFIABILITY-CLASS-001",
+          "module_locator": "D0.Foundation.VerifiabilityNecessity;D0.Foundation.VerificationTransferApplication",
+          "theorem_atom": "operationally_verifiable_or_unverifiable_story",
+          "candidate_names": [
+            "D0.Foundation.VerifiabilityNecessity.operationally_verifiable_or_unverifiable_story",
+            "D0.Foundation.VerificationTransferApplication.operationally_verifiable_or_unverifiable_story",
+            "D0.Foundation.operationally_verifiable_or_unverifiable_story",
+            "D0.operationally_verifiable_or_unverifiable_story"
+          ],
+          "resolution_status": "resolved",
+          "resolved_declarations": [
+            {
+              "axioms": [
+                "Classical.choice",
+                "Quot.sound",
+                "propext"
+              ],
+              "binders": [
+                {
+                  "binder_info": "Lean.BinderInfo.default",
+                  "is_proposition": false,
+                  "name": "T",
+                  "type": "D0.Foundation.EmpiricalTheoryFactorization.EmpiricalTheory"
+                }
+              ],
+              "conclusion_whnf": "D0.Foundation.VerifiabilityNecessity.OperationallyVerifiable T ∨\n  D0.Foundation.VerifiabilityNecessity.UnverifiableStory T",
+              "declaration_kind": "theorem",
+              "declaration_ranges": {
+                "declaration": {
+                  "end": {
+                    "column": 16,
+                    "line": 307
+                  },
+                  "start": {
+                    "column": 0,
+                    "line": 304
+                  }
+                },
+                "selection": {
+                  "end": {
+                    "column": 54,
+                    "line": 305
+                  },
+                  "start": {
+                    "column": 8,
+                    "line": 305
+                  }
+                }
+              },
+              "elaborated_type": "∀ (T : D0.Foundation.EmpiricalTheoryFactorization.EmpiricalTheory),\n  D0.Foundation.VerifiabilityNecessity.OperationallyVerifiable T ∨\n    D0.Foundation.VerifiabilityNecessity.UnverifiableStory T",
+              "exists": true,
+              "internal_name": false,
+              "module": "D0.Foundation.VerifiabilityNecessity",
+              "name": "D0.Foundation.VerifiabilityNecessity.operationally_verifiable_or_unverifiable_story",
+              "proof_dependencies": [
+                "Classical.em",
+                "D0.Foundation.EmpiricalTheoryFactorization.EmpiricalTheory",
+                "D0.Foundation.VerifiabilityNecessity.OperationallyVerifiable"
+              ],
+              "type_dependencies": [
+                "D0.Foundation.EmpiricalTheoryFactorization.EmpiricalTheory",
+                "D0.Foundation.VerifiabilityNecessity.OperationallyVerifiable",
+                "D0.Foundation.VerifiabilityNecessity.UnverifiableStory",
+                "Or"
+              ],
+              "source_path": "03_FORMALIZATION/D0/Foundation/VerifiabilityNecessity.lean"
+            }
+          ]
+        },
+        {
+          "claim_id": "D0-VERIFIABILITY-CLASS-001",
+          "module_locator": "D0.Foundation.VerifiabilityNecessity;D0.Foundation.VerificationTransferApplication",
+          "theorem_atom": "operationally_verifiable_not_story",
+          "candidate_names": [
+            "D0.Foundation.VerifiabilityNecessity.operationally_verifiable_not_story",
+            "D0.Foundation.VerificationTransferApplication.operationally_verifiable_not_story",
+            "D0.Foundation.operationally_verifiable_not_story",
+            "D0.operationally_verifiable_not_story"
+          ],
+          "resolution_status": "resolved",
+          "resolved_declarations": [
+            {
+              "axioms": [],
+              "binders": [
+                {
+                  "binder_info": "Lean.BinderInfo.implicit",
+                  "is_proposition": false,
+                  "name": "T",
+                  "type": "D0.Foundation.EmpiricalTheoryFactorization.EmpiricalTheory"
+                },
+                {
+                  "binder_info": "Lean.BinderInfo.default",
+                  "is_proposition": true,
+                  "name": "h",
+                  "type": "Nonempty (D0.Foundation.VerifiabilityNecessity.TheoryVerification T)"
+                }
+              ],
+              "conclusion_whnf": "D0.Foundation.VerifiabilityNecessity.UnverifiableStory T → False",
+              "declaration_kind": "theorem",
+              "declaration_ranges": {
+                "declaration": {
+                  "end": {
+                    "column": 22,
+                    "line": 311
+                  },
+                  "start": {
+                    "column": 0,
+                    "line": 309
+                  }
+                },
+                "selection": {
+                  "end": {
+                    "column": 42,
+                    "line": 309
+                  },
+                  "start": {
+                    "column": 8,
+                    "line": 309
+                  }
+                }
+              },
+              "elaborated_type": "∀ {T : D0.Foundation.EmpiricalTheoryFactorization.EmpiricalTheory},\n  D0.Foundation.VerifiabilityNecessity.OperationallyVerifiable T →\n    ¬D0.Foundation.VerifiabilityNecessity.UnverifiableStory T",
+              "exists": true,
+              "internal_name": false,
+              "module": "D0.Foundation.VerifiabilityNecessity",
+              "name": "D0.Foundation.VerifiabilityNecessity.operationally_verifiable_not_story",
+              "proof_dependencies": [
+                "D0.Foundation.EmpiricalTheoryFactorization.EmpiricalTheory",
+                "D0.Foundation.VerifiabilityNecessity.OperationallyVerifiable",
+                "D0.Foundation.VerifiabilityNecessity.UnverifiableStory"
+              ],
+              "type_dependencies": [
+                "D0.Foundation.EmpiricalTheoryFactorization.EmpiricalTheory",
+                "D0.Foundation.VerifiabilityNecessity.OperationallyVerifiable",
+                "D0.Foundation.VerifiabilityNecessity.UnverifiableStory",
+                "Not"
+              ],
+              "source_path": "03_FORMALIZATION/D0/Foundation/VerifiabilityNecessity.lean"
+            }
+          ]
+        },
+        {
+          "claim_id": "D0-VERIFIABILITY-CLASS-001",
+          "module_locator": "D0.Foundation.VerifiabilityNecessity;D0.Foundation.VerificationTransferApplication",
+          "theorem_atom": "protocolTheoryVerification",
+          "candidate_names": [
+            "D0.Foundation.VerifiabilityNecessity.protocolTheoryVerification",
+            "D0.Foundation.VerificationTransferApplication.protocolTheoryVerification",
+            "D0.Foundation.protocolTheoryVerification",
+            "D0.protocolTheoryVerification"
+          ],
+          "resolution_status": "resolved",
+          "resolved_declarations": [
+            {
+              "axioms": [
+                "Classical.choice",
+                "Quot.sound",
+                "propext"
+              ],
+              "binders": [
+                {
+                  "binder_info": "Lean.BinderInfo.implicit",
+                  "is_proposition": false,
+                  "name": "P",
+                  "type": "D0.Foundation.VerifiabilityNecessity.VerificationProtocol"
+                },
+                {
+                  "binder_info": "Lean.BinderInfo.default",
+                  "is_proposition": true,
+                  "name": "V",
+                  "type": "D0.Foundation.VerifiabilityNecessity.VerificationContract P"
+                }
+              ],
+              "conclusion_whnf": "D0.Foundation.VerifiabilityNecessity.TheoryVerification\n  (D0.Foundation.VerifiabilityNecessity.operationalEmpiricalTheory P)",
+              "declaration_kind": "definition",
+              "declaration_ranges": {
+                "declaration": {
+                  "end": {
+                    "column": 63,
+                    "line": 319
+                  },
+                  "start": {
+                    "column": 0,
+                    "line": 313
+                  }
+                },
+                "selection": {
+                  "end": {
+                    "column": 44,
+                    "line": 315
+                  },
+                  "start": {
+                    "column": 18,
+                    "line": 315
+                  }
+                }
+              },
+              "elaborated_type": "{P : D0.Foundation.VerifiabilityNecessity.VerificationProtocol} →\n  D0.Foundation.VerifiabilityNecessity.VerificationContract P →\n    D0.Foundation.VerifiabilityNecessity.TheoryVerification\n      (D0.Foundation.VerifiabilityNecessity.operationalEmpiricalTheory P)",
+              "exists": true,
+              "internal_name": false,
+              "module": "D0.Foundation.VerifiabilityNecessity",
+              "name": "D0.Foundation.VerifiabilityNecessity.protocolTheoryVerification",
+              "proof_dependencies": [
+                "D0.Foundation.EmpiricalTheoryFactorization.EmpiricalState",
+                "D0.Foundation.VerifiabilityNecessity.TheoryVerification.mk",
+                "D0.Foundation.VerifiabilityNecessity.VerificationContract",
+                "D0.Foundation.VerifiabilityNecessity.VerificationProtocol",
+                "D0.Foundation.VerifiabilityNecessity.VerificationProtocol.State",
+                "D0.Foundation.VerifiabilityNecessity.operationalEmpiricalQuotientEquivState",
+                "D0.Foundation.VerifiabilityNecessity.operationalEmpiricalTheory",
+                "Equiv.symm"
+              ],
+              "type_dependencies": [
+                "D0.Foundation.VerifiabilityNecessity.TheoryVerification",
+                "D0.Foundation.VerifiabilityNecessity.VerificationContract",
+                "D0.Foundation.VerifiabilityNecessity.VerificationProtocol",
+                "D0.Foundation.VerifiabilityNecessity.operationalEmpiricalTheory"
+              ],
+              "source_path": "03_FORMALIZATION/D0/Foundation/VerifiabilityNecessity.lean"
+            }
+          ]
+        },
+        {
+          "claim_id": "D0-VERIFIABILITY-CLASS-001",
+          "module_locator": "D0.Foundation.VerifiabilityNecessity;D0.Foundation.VerificationTransferApplication",
+          "theorem_atom": "canonicalProtocol_verifiable",
+          "candidate_names": [
+            "D0.Foundation.VerifiabilityNecessity.canonicalProtocol_verifiable",
+            "D0.Foundation.VerificationTransferApplication.canonicalProtocol_verifiable",
+            "D0.Foundation.canonicalProtocol_verifiable",
+            "D0.canonicalProtocol_verifiable"
+          ],
+          "resolution_status": "resolved",
+          "resolved_declarations": [
+            {
+              "axioms": [],
+              "binders": [],
+              "conclusion_whnf": "D0.Foundation.VerifiabilityNecessity.VerificationContract D0.Foundation.VerifiabilityNecessity.canonicalProtocol",
+              "declaration_kind": "theorem",
+              "declaration_ranges": {
+                "declaration": {
+                  "end": {
+                    "column": 5,
+                    "line": 503
+                  },
+                  "start": {
+                    "column": 0,
+                    "line": 499
+                  }
+                },
+                "selection": {
+                  "end": {
+                    "column": 36,
+                    "line": 499
+                  },
+                  "start": {
+                    "column": 8,
+                    "line": 499
+                  }
+                }
+              },
+              "elaborated_type": "D0.Foundation.VerifiabilityNecessity.VerificationContract D0.Foundation.VerifiabilityNecessity.canonicalProtocol",
+              "exists": true,
+              "internal_name": false,
+              "module": "D0.Foundation.VerifiabilityNecessity",
+              "name": "D0.Foundation.VerifiabilityNecessity.canonicalProtocol_verifiable",
+              "proof_dependencies": [
+                "Bool",
+                "Bool.ctorIdx",
+                "Bool.false",
+                "Bool.true",
+                "D0.Foundation.VerifiabilityNecessity.VerificationContract.mk",
+                "D0.Foundation.VerifiabilityNecessity.VerificationProtocol.Catalogue",
+                "D0.Foundation.VerifiabilityNecessity.VerificationProtocol.Line",
+                "D0.Foundation.VerifiabilityNecessity.VerificationProtocol.State",
+                "D0.Foundation.VerifiabilityNecessity.VerificationProtocol.compare",
+                "D0.Foundation.VerifiabilityNecessity.VerificationProtocol.record",
+                "D0.Foundation.VerifiabilityNecessity.canonicalProtocol",
+                "Eq",
+                "Eq.casesOn",
+                "Eq.refl",
+                "Exists",
+                "Exists.intro",
+                "False",
+                "False.elim",
+                "HEq",
+                "HEq.refl",
+                "Ne",
+                "Nonempty.intro",
+                "Nontrivial.mk",
+                "PUnit.unit",
+                "noConfusion_of_Nat"
+              ],
+              "type_dependencies": [
+                "D0.Foundation.VerifiabilityNecessity.VerificationContract",
+                "D0.Foundation.VerifiabilityNecessity.canonicalProtocol"
+              ],
+              "source_path": "03_FORMALIZATION/D0/Foundation/VerifiabilityNecessity.lean"
+            }
+          ]
+        },
+        {
+          "claim_id": "D0-VERIFIABILITY-CLASS-001",
+          "module_locator": "D0.Foundation.VerifiabilityNecessity;D0.Foundation.VerificationTransferApplication",
+          "theorem_atom": "D0.Foundation.VerificationTransferApplication.visibleBitVerification",
+          "candidate_names": [
+            "D0.Foundation.VerificationTransferApplication.visibleBitVerification"
+          ],
+          "resolution_status": "resolved",
+          "resolved_declarations": [
+            {
+              "axioms": [
+                "Classical.choice",
+                "Quot.sound",
+                "propext"
+              ],
+              "binders": [],
+              "conclusion_whnf": "D0.Foundation.VerifiabilityNecessity.TheoryVerification\n  D0.Foundation.TheoryTransfer.visibleBitSystem.futureEmpiricalTheory",
+              "declaration_kind": "definition",
+              "declaration_ranges": {
+                "declaration": {
+                  "end": {
+                    "column": 49,
+                    "line": 77
+                  },
+                  "start": {
+                    "column": 0,
+                    "line": 59
+                  }
+                },
+                "selection": {
+                  "end": {
+                    "column": 40,
+                    "line": 61
+                  },
+                  "start": {
+                    "column": 18,
+                    "line": 61
+                  }
+                }
+              },
+              "elaborated_type": "D0.Foundation.VerifiabilityNecessity.TheoryVerification\n  D0.Foundation.TheoryTransfer.visibleBitSystem.futureEmpiricalTheory",
+              "exists": true,
+              "internal_name": false,
+              "module": "D0.Foundation.VerificationTransferApplication",
+              "name": "D0.Foundation.VerificationTransferApplication.visibleBitVerification",
+              "proof_dependencies": [
+                "Bool",
+                "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.futureEmpiricalTheory",
+                "D0.Foundation.TheoryTransfer.visibleBitSystem",
+                "D0.Foundation.VerifiabilityNecessity.TheoryVerification.mk",
+                "D0.Foundation.VerifiabilityNecessity.VerificationProtocol.mk",
+                "D0.Foundation.VerificationTransferApplication.visibleBitVerification._proof_1",
+                "Decidable.decide",
+                "Eq",
+                "Ne",
+                "Unit",
+                "_private.D0.Foundation.VerificationTransferApplication.0.D0.Foundation.VerificationTransferApplication.visibleBitEmpiricalRepresentation",
+                "id",
+                "instDecidableEqBool",
+                "instDecidableNot"
+              ],
+              "type_dependencies": [
+                "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.futureEmpiricalTheory",
+                "D0.Foundation.TheoryTransfer.visibleBitSystem",
+                "D0.Foundation.VerifiabilityNecessity.TheoryVerification"
+              ],
+              "source_path": "03_FORMALIZATION/D0/Foundation/VerificationTransferApplication.lean"
+            }
+          ]
+        },
+        {
+          "claim_id": "D0-VERIFIABILITY-CLASS-001",
+          "module_locator": "D0.Foundation.VerifiabilityNecessity;D0.Foundation.VerificationTransferApplication",
+          "theorem_atom": "D0.Foundation.VerificationTransferApplication.visibleBit_records_follow_complete_future_equivalence",
+          "candidate_names": [
+            "D0.Foundation.VerificationTransferApplication.visibleBit_records_follow_complete_future_equivalence"
+          ],
+          "resolution_status": "resolved",
+          "resolved_declarations": [
+            {
+              "axioms": [
+                "Classical.choice",
+                "Quot.sound",
+                "propext"
+              ],
+              "binders": [],
+              "conclusion_whnf": "D0.Foundation.VerificationCore.representedRecord D0.Foundation.VerificationTransferApplication.visibleBitVerification\n    (false, false) =\n  D0.Foundation.VerificationCore.representedRecord D0.Foundation.VerificationTransferApplication.visibleBitVerification\n    (false, true)",
+              "declaration_kind": "theorem",
+              "declaration_ranges": {
+                "declaration": {
+                  "end": {
+                    "column": 57,
+                    "line": 85
+                  },
+                  "start": {
+                    "column": 0,
+                    "line": 79
+                  }
+                },
+                "selection": {
+                  "end": {
+                    "column": 61,
+                    "line": 81
+                  },
+                  "start": {
+                    "column": 8,
+                    "line": 81
+                  }
+                }
+              },
+              "elaborated_type": "D0.Foundation.VerificationCore.representedRecord D0.Foundation.VerificationTransferApplication.visibleBitVerification\n    (false, false) =\n  D0.Foundation.VerificationCore.representedRecord D0.Foundation.VerificationTransferApplication.visibleBitVerification\n    (false, true)",
+              "exists": true,
+              "internal_name": false,
+              "module": "D0.Foundation.VerificationTransferApplication",
+              "name": "D0.Foundation.VerificationTransferApplication.visibleBit_records_follow_complete_future_equivalence",
+              "proof_dependencies": [
+                "Bool",
+                "Bool.false",
+                "Bool.true",
+                "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Action",
+                "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Outcome",
+                "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Test",
+                "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.futureEmpiricalTheory",
+                "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.profile",
+                "D0.Foundation.TheoryTransfer.visibleBitSystem",
+                "D0.Foundation.TheoryTransfer.visibleBit_same_all_source_futures",
+                "D0.Foundation.VerifiabilityNecessity.TheoryVerification.protocol",
+                "D0.Foundation.VerifiabilityNecessity.VerificationProtocol.Record",
+                "D0.Foundation.VerificationCore.representedRecord",
+                "D0.Foundation.VerificationCore.representedRecord_eq_iff",
+                "D0.Foundation.VerificationTransferApplication.visibleBitVerification",
+                "Eq",
+                "Iff.mpr",
+                "List",
+                "Prod.mk"
+              ],
+              "type_dependencies": [
+                "Bool",
+                "Bool.false",
+                "Bool.true",
+                "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.futureEmpiricalTheory",
+                "D0.Foundation.TheoryTransfer.visibleBitSystem",
+                "D0.Foundation.VerifiabilityNecessity.TheoryVerification.protocol",
+                "D0.Foundation.VerifiabilityNecessity.VerificationProtocol.Record",
+                "D0.Foundation.VerificationCore.representedRecord",
+                "D0.Foundation.VerificationTransferApplication.visibleBitVerification",
+                "Eq",
+                "Prod.mk"
+              ],
+              "source_path": "03_FORMALIZATION/D0/Foundation/VerificationTransferApplication.lean"
+            }
+          ]
+        },
+        {
+          "claim_id": "D0-VERIFIABILITY-CLASS-001",
+          "module_locator": "D0.Foundation.VerifiabilityNecessity;D0.Foundation.VerificationTransferApplication",
+          "theorem_atom": "D0.Foundation.VerificationTransferApplication.verified_visibleFalseReadout_transfers_to_common_execution",
+          "candidate_names": [
+            "D0.Foundation.VerificationTransferApplication.verified_visibleFalseReadout_transfers_to_common_execution"
+          ],
+          "resolution_status": "resolved",
+          "resolved_declarations": [
+            {
+              "axioms": [
+                "Classical.choice",
+                "Quot.sound",
+                "propext"
+              ],
+              "binders": [],
+              "conclusion_whnf": "D0.Foundation.TheoryTransfer.visibleBitInterpretation.commonExecution.quotientProfile\n    ↑((D0.Foundation.TheoryTransfer.visibleBitInterpretation.verifiedStateImageEquiv\n          D0.Foundation.VerificationTransferApplication.visibleBitVerification)\n        (D0.Foundation.VerificationCore.representedState\n          D0.Foundation.VerificationTransferApplication.visibleBitVerification (false, false)))\n    [] () =\n  D0.Foundation.TheoryTransfer.visibleBitInterpretation.outcomeMap false",
+              "declaration_kind": "theorem",
+              "declaration_ranges": {
+                "declaration": {
+                  "end": {
+                    "column": 57,
+                    "line": 129
+                  },
+                  "start": {
+                    "column": 0,
+                    "line": 119
+                  }
+                },
+                "selection": {
+                  "end": {
+                    "column": 66,
+                    "line": 121
+                  },
+                  "start": {
+                    "column": 8,
+                    "line": 121
+                  }
+                }
+              },
+              "elaborated_type": "D0.Foundation.TheoryTransfer.visibleBitInterpretation.commonExecution.quotientProfile\n    ↑((D0.Foundation.TheoryTransfer.visibleBitInterpretation.verifiedStateImageEquiv\n          D0.Foundation.VerificationTransferApplication.visibleBitVerification)\n        (D0.Foundation.VerificationCore.representedState\n          D0.Foundation.VerificationTransferApplication.visibleBitVerification (false, false)))\n    [] () =\n  D0.Foundation.TheoryTransfer.visibleBitInterpretation.outcomeMap false",
+              "exists": true,
+              "internal_name": false,
+              "module": "D0.Foundation.VerificationTransferApplication",
+              "name": "D0.Foundation.VerificationTransferApplication.verified_visibleFalseReadout_transfers_to_common_execution",
+              "proof_dependencies": [
+                "Bool",
+                "Bool.false",
+                "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Action",
+                "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.FutureClass",
+                "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Outcome",
+                "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.State",
+                "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.futureEmpiricalTheory",
+                "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.futureSetoid",
+                "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.quotientProfile",
+                "D0.Foundation.TheoryTransfer.Interpretation.EmpiricalImage",
+                "D0.Foundation.TheoryTransfer.Interpretation.commonExecution",
+                "D0.Foundation.TheoryTransfer.Interpretation.futureMap",
+                "D0.Foundation.TheoryTransfer.Interpretation.imageEquiv",
+                "D0.Foundation.TheoryTransfer.Interpretation.outcomeMap",
+                "D0.Foundation.TheoryTransfer.Interpretation.verifiedStateImageEquiv",
+                "D0.Foundation.TheoryTransfer.Interpretation.verifiedStateImageEquiv_representedState",
+                "D0.Foundation.TheoryTransfer.extraBitTestSystem",
+                "D0.Foundation.TheoryTransfer.visibleBitInterpretation",
+                "D0.Foundation.TheoryTransfer.visibleBitSystem",
+                "D0.Foundation.VerifiabilityNecessity.TheoryVerification.protocol",
+                "D0.Foundation.VerifiabilityNecessity.VerificationProtocol.State",
+                "D0.Foundation.VerificationCore.representedState",
+                "D0.Foundation.VerificationTransferApplication.visibleBitVerification",
+                "D0.Foundation.VerificationTransferApplication.visibleFalseReadout_transfers_to_common_execution",
+                "DFunLike.coe",
+                "Eq",
+                "Eq.mpr",
+                "Equiv",
+                "Equiv.instEquivLike",
+                "EquivLike.toFunLike",
+                "Exists",
+                "List.nil",
+                {
+                  "_omitted_items": 6
+                }
+              ],
+              "type_dependencies": [
+                "Bool",
+                "Bool.false",
+                "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Action",
+                "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.FutureClass",
+                "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Outcome",
+                "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.futureEmpiricalTheory",
+                "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.quotientProfile",
+                "D0.Foundation.TheoryTransfer.Interpretation.EmpiricalImage",
+                "D0.Foundation.TheoryTransfer.Interpretation.commonExecution",
+                "D0.Foundation.TheoryTransfer.Interpretation.futureMap",
+                "D0.Foundation.TheoryTransfer.Interpretation.outcomeMap",
+                "D0.Foundation.TheoryTransfer.Interpretation.verifiedStateImageEquiv",
+                "D0.Foundation.TheoryTransfer.extraBitTestSystem",
+                "D0.Foundation.TheoryTransfer.visibleBitInterpretation",
+                "D0.Foundation.TheoryTransfer.visibleBitSystem",
+                "D0.Foundation.VerifiabilityNecessity.TheoryVerification.protocol",
+                "D0.Foundation.VerifiabilityNecessity.VerificationProtocol.State",
+                "D0.Foundation.VerificationCore.representedState",
+                "D0.Foundation.VerificationTransferApplication.visibleBitVerification",
+                "DFunLike.coe",
+                "Eq",
+                "Equiv",
+                "Equiv.instEquivLike",
+                "EquivLike.toFunLike",
+                "Exists",
+                "List.nil",
+                "Prod.mk",
+                "Subtype.val",
+                "Unit.unit"
+              ],
+              "source_path": "03_FORMALIZATION/D0/Foundation/VerificationTransferApplication.lean"
+            }
+          ]
+        }
+      ],
+      "compiled_declarations": [
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "binders": [
+            {
+              "binder_info": "Lean.BinderInfo.default",
+              "is_proposition": false,
+              "name": "T",
+              "type": "D0.Foundation.EmpiricalTheoryFactorization.EmpiricalTheory"
+            }
+          ],
+          "conclusion_whnf": "D0.Foundation.VerifiabilityNecessity.OperationallyVerifiable T ∨\n  D0.Foundation.VerifiabilityNecessity.UnverifiableStory T",
+          "declaration_kind": "theorem",
+          "declaration_ranges": {
+            "declaration": {
+              "end": {
+                "column": 16,
+                "line": 307
+              },
+              "start": {
+                "column": 0,
+                "line": 304
+              }
+            },
+            "selection": {
+              "end": {
+                "column": 54,
+                "line": 305
+              },
+              "start": {
+                "column": 8,
+                "line": 305
+              }
+            }
+          },
+          "elaborated_type": "∀ (T : D0.Foundation.EmpiricalTheoryFactorization.EmpiricalTheory),\n  D0.Foundation.VerifiabilityNecessity.OperationallyVerifiable T ∨\n    D0.Foundation.VerifiabilityNecessity.UnverifiableStory T",
+          "exists": true,
+          "internal_name": false,
+          "module": "D0.Foundation.VerifiabilityNecessity",
+          "name": "D0.Foundation.VerifiabilityNecessity.operationally_verifiable_or_unverifiable_story",
+          "proof_dependencies": [
+            "Classical.em",
+            "D0.Foundation.EmpiricalTheoryFactorization.EmpiricalTheory",
+            "D0.Foundation.VerifiabilityNecessity.OperationallyVerifiable"
+          ],
+          "type_dependencies": [
+            "D0.Foundation.EmpiricalTheoryFactorization.EmpiricalTheory",
+            "D0.Foundation.VerifiabilityNecessity.OperationallyVerifiable",
+            "D0.Foundation.VerifiabilityNecessity.UnverifiableStory",
+            "Or"
+          ],
+          "source_path": "03_FORMALIZATION/D0/Foundation/VerifiabilityNecessity.lean"
+        },
+        {
+          "axioms": [],
+          "binders": [
+            {
+              "binder_info": "Lean.BinderInfo.implicit",
+              "is_proposition": false,
+              "name": "T",
+              "type": "D0.Foundation.EmpiricalTheoryFactorization.EmpiricalTheory"
+            },
+            {
+              "binder_info": "Lean.BinderInfo.default",
+              "is_proposition": true,
+              "name": "h",
+              "type": "Nonempty (D0.Foundation.VerifiabilityNecessity.TheoryVerification T)"
+            }
+          ],
+          "conclusion_whnf": "D0.Foundation.VerifiabilityNecessity.UnverifiableStory T → False",
+          "declaration_kind": "theorem",
+          "declaration_ranges": {
+            "declaration": {
+              "end": {
+                "column": 22,
+                "line": 311
+              },
+              "start": {
+                "column": 0,
+                "line": 309
+              }
+            },
+            "selection": {
+              "end": {
+                "column": 42,
+                "line": 309
+              },
+              "start": {
+                "column": 8,
+                "line": 309
+              }
+            }
+          },
+          "elaborated_type": "∀ {T : D0.Foundation.EmpiricalTheoryFactorization.EmpiricalTheory},\n  D0.Foundation.VerifiabilityNecessity.OperationallyVerifiable T →\n    ¬D0.Foundation.VerifiabilityNecessity.UnverifiableStory T",
+          "exists": true,
+          "internal_name": false,
+          "module": "D0.Foundation.VerifiabilityNecessity",
+          "name": "D0.Foundation.VerifiabilityNecessity.operationally_verifiable_not_story",
+          "proof_dependencies": [
+            "D0.Foundation.EmpiricalTheoryFactorization.EmpiricalTheory",
+            "D0.Foundation.VerifiabilityNecessity.OperationallyVerifiable",
+            "D0.Foundation.VerifiabilityNecessity.UnverifiableStory"
+          ],
+          "type_dependencies": [
+            "D0.Foundation.EmpiricalTheoryFactorization.EmpiricalTheory",
+            "D0.Foundation.VerifiabilityNecessity.OperationallyVerifiable",
+            "D0.Foundation.VerifiabilityNecessity.UnverifiableStory",
+            "Not"
+          ],
+          "source_path": "03_FORMALIZATION/D0/Foundation/VerifiabilityNecessity.lean"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "binders": [
+            {
+              "binder_info": "Lean.BinderInfo.implicit",
+              "is_proposition": false,
+              "name": "P",
+              "type": "D0.Foundation.VerifiabilityNecessity.VerificationProtocol"
+            },
+            {
+              "binder_info": "Lean.BinderInfo.default",
+              "is_proposition": true,
+              "name": "V",
+              "type": "D0.Foundation.VerifiabilityNecessity.VerificationContract P"
+            }
+          ],
+          "conclusion_whnf": "D0.Foundation.VerifiabilityNecessity.TheoryVerification\n  (D0.Foundation.VerifiabilityNecessity.operationalEmpiricalTheory P)",
+          "declaration_kind": "definition",
+          "declaration_ranges": {
+            "declaration": {
+              "end": {
+                "column": 63,
+                "line": 319
+              },
+              "start": {
+                "column": 0,
+                "line": 313
+              }
+            },
+            "selection": {
+              "end": {
+                "column": 44,
+                "line": 315
+              },
+              "start": {
+                "column": 18,
+                "line": 315
+              }
+            }
+          },
+          "elaborated_type": "{P : D0.Foundation.VerifiabilityNecessity.VerificationProtocol} →\n  D0.Foundation.VerifiabilityNecessity.VerificationContract P →\n    D0.Foundation.VerifiabilityNecessity.TheoryVerification\n      (D0.Foundation.VerifiabilityNecessity.operationalEmpiricalTheory P)",
+          "exists": true,
+          "internal_name": false,
+          "module": "D0.Foundation.VerifiabilityNecessity",
+          "name": "D0.Foundation.VerifiabilityNecessity.protocolTheoryVerification",
+          "proof_dependencies": [
+            "D0.Foundation.EmpiricalTheoryFactorization.EmpiricalState",
+            "D0.Foundation.VerifiabilityNecessity.TheoryVerification.mk",
+            "D0.Foundation.VerifiabilityNecessity.VerificationContract",
+            "D0.Foundation.VerifiabilityNecessity.VerificationProtocol",
+            "D0.Foundation.VerifiabilityNecessity.VerificationProtocol.State",
+            "D0.Foundation.VerifiabilityNecessity.operationalEmpiricalQuotientEquivState",
+            "D0.Foundation.VerifiabilityNecessity.operationalEmpiricalTheory",
+            "Equiv.symm"
+          ],
+          "type_dependencies": [
+            "D0.Foundation.VerifiabilityNecessity.TheoryVerification",
+            "D0.Foundation.VerifiabilityNecessity.VerificationContract",
+            "D0.Foundation.VerifiabilityNecessity.VerificationProtocol",
+            "D0.Foundation.VerifiabilityNecessity.operationalEmpiricalTheory"
+          ],
+          "source_path": "03_FORMALIZATION/D0/Foundation/VerifiabilityNecessity.lean"
+        },
+        {
+          "axioms": [],
+          "binders": [],
+          "conclusion_whnf": "D0.Foundation.VerifiabilityNecessity.VerificationContract D0.Foundation.VerifiabilityNecessity.canonicalProtocol",
+          "declaration_kind": "theorem",
+          "declaration_ranges": {
+            "declaration": {
+              "end": {
+                "column": 5,
+                "line": 503
+              },
+              "start": {
+                "column": 0,
+                "line": 499
+              }
+            },
+            "selection": {
+              "end": {
+                "column": 36,
+                "line": 499
+              },
+              "start": {
+                "column": 8,
+                "line": 499
+              }
+            }
+          },
+          "elaborated_type": "D0.Foundation.VerifiabilityNecessity.VerificationContract D0.Foundation.VerifiabilityNecessity.canonicalProtocol",
+          "exists": true,
+          "internal_name": false,
+          "module": "D0.Foundation.VerifiabilityNecessity",
+          "name": "D0.Foundation.VerifiabilityNecessity.canonicalProtocol_verifiable",
+          "proof_dependencies": [
+            "Bool",
+            "Bool.ctorIdx",
+            "Bool.false",
+            "Bool.true",
+            "D0.Foundation.VerifiabilityNecessity.VerificationContract.mk",
+            "D0.Foundation.VerifiabilityNecessity.VerificationProtocol.Catalogue",
+            "D0.Foundation.VerifiabilityNecessity.VerificationProtocol.Line",
+            "D0.Foundation.VerifiabilityNecessity.VerificationProtocol.State",
+            "D0.Foundation.VerifiabilityNecessity.VerificationProtocol.compare",
+            "D0.Foundation.VerifiabilityNecessity.VerificationProtocol.record",
+            "D0.Foundation.VerifiabilityNecessity.canonicalProtocol",
+            "Eq",
+            "Eq.casesOn",
+            "Eq.refl",
+            "Exists",
+            "Exists.intro",
+            "False",
+            "False.elim",
+            "HEq",
+            "HEq.refl",
+            "Ne",
+            "Nonempty.intro",
+            "Nontrivial.mk",
+            "PUnit.unit",
+            "noConfusion_of_Nat"
+          ],
+          "type_dependencies": [
+            "D0.Foundation.VerifiabilityNecessity.VerificationContract",
+            "D0.Foundation.VerifiabilityNecessity.canonicalProtocol"
+          ],
+          "source_path": "03_FORMALIZATION/D0/Foundation/VerifiabilityNecessity.lean"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "binders": [],
+          "conclusion_whnf": "D0.Foundation.VerifiabilityNecessity.TheoryVerification\n  D0.Foundation.TheoryTransfer.visibleBitSystem.futureEmpiricalTheory",
+          "declaration_kind": "definition",
+          "declaration_ranges": {
+            "declaration": {
+              "end": {
+                "column": 49,
+                "line": 77
+              },
+              "start": {
+                "column": 0,
+                "line": 59
+              }
+            },
+            "selection": {
+              "end": {
+                "column": 40,
+                "line": 61
+              },
+              "start": {
+                "column": 18,
+                "line": 61
+              }
+            }
+          },
+          "elaborated_type": "D0.Foundation.VerifiabilityNecessity.TheoryVerification\n  D0.Foundation.TheoryTransfer.visibleBitSystem.futureEmpiricalTheory",
+          "exists": true,
+          "internal_name": false,
+          "module": "D0.Foundation.VerificationTransferApplication",
+          "name": "D0.Foundation.VerificationTransferApplication.visibleBitVerification",
+          "proof_dependencies": [
+            "Bool",
+            "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.futureEmpiricalTheory",
+            "D0.Foundation.TheoryTransfer.visibleBitSystem",
+            "D0.Foundation.VerifiabilityNecessity.TheoryVerification.mk",
+            "D0.Foundation.VerifiabilityNecessity.VerificationProtocol.mk",
+            "D0.Foundation.VerificationTransferApplication.visibleBitVerification._proof_1",
+            "Decidable.decide",
+            "Eq",
+            "Ne",
+            "Unit",
+            "_private.D0.Foundation.VerificationTransferApplication.0.D0.Foundation.VerificationTransferApplication.visibleBitEmpiricalRepresentation",
+            "id",
+            "instDecidableEqBool",
+            "instDecidableNot"
+          ],
+          "type_dependencies": [
+            "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.futureEmpiricalTheory",
+            "D0.Foundation.TheoryTransfer.visibleBitSystem",
+            "D0.Foundation.VerifiabilityNecessity.TheoryVerification"
+          ],
+          "source_path": "03_FORMALIZATION/D0/Foundation/VerificationTransferApplication.lean"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "binders": [],
+          "conclusion_whnf": "D0.Foundation.VerificationCore.representedRecord D0.Foundation.VerificationTransferApplication.visibleBitVerification\n    (false, false) =\n  D0.Foundation.VerificationCore.representedRecord D0.Foundation.VerificationTransferApplication.visibleBitVerification\n    (false, true)",
+          "declaration_kind": "theorem",
+          "declaration_ranges": {
+            "declaration": {
+              "end": {
+                "column": 57,
+                "line": 85
+              },
+              "start": {
+                "column": 0,
+                "line": 79
+              }
+            },
+            "selection": {
+              "end": {
+                "column": 61,
+                "line": 81
+              },
+              "start": {
+                "column": 8,
+                "line": 81
+              }
+            }
+          },
+          "elaborated_type": "D0.Foundation.VerificationCore.representedRecord D0.Foundation.VerificationTransferApplication.visibleBitVerification\n    (false, false) =\n  D0.Foundation.VerificationCore.representedRecord D0.Foundation.VerificationTransferApplication.visibleBitVerification\n    (false, true)",
+          "exists": true,
+          "internal_name": false,
+          "module": "D0.Foundation.VerificationTransferApplication",
+          "name": "D0.Foundation.VerificationTransferApplication.visibleBit_records_follow_complete_future_equivalence",
+          "proof_dependencies": [
+            "Bool",
+            "Bool.false",
+            "Bool.true",
+            "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Action",
+            "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Outcome",
+            "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Test",
+            "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.futureEmpiricalTheory",
+            "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.profile",
+            "D0.Foundation.TheoryTransfer.visibleBitSystem",
+            "D0.Foundation.TheoryTransfer.visibleBit_same_all_source_futures",
+            "D0.Foundation.VerifiabilityNecessity.TheoryVerification.protocol",
+            "D0.Foundation.VerifiabilityNecessity.VerificationProtocol.Record",
+            "D0.Foundation.VerificationCore.representedRecord",
+            "D0.Foundation.VerificationCore.representedRecord_eq_iff",
+            "D0.Foundation.VerificationTransferApplication.visibleBitVerification",
+            "Eq",
+            "Iff.mpr",
+            "List",
+            "Prod.mk"
+          ],
+          "type_dependencies": [
+            "Bool",
+            "Bool.false",
+            "Bool.true",
+            "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.futureEmpiricalTheory",
+            "D0.Foundation.TheoryTransfer.visibleBitSystem",
+            "D0.Foundation.VerifiabilityNecessity.TheoryVerification.protocol",
+            "D0.Foundation.VerifiabilityNecessity.VerificationProtocol.Record",
+            "D0.Foundation.VerificationCore.representedRecord",
+            "D0.Foundation.VerificationTransferApplication.visibleBitVerification",
+            "Eq",
+            "Prod.mk"
+          ],
+          "source_path": "03_FORMALIZATION/D0/Foundation/VerificationTransferApplication.lean"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "binders": [],
+          "conclusion_whnf": "D0.Foundation.TheoryTransfer.visibleBitInterpretation.commonExecution.quotientProfile\n    ↑((D0.Foundation.TheoryTransfer.visibleBitInterpretation.verifiedStateImageEquiv\n          D0.Foundation.VerificationTransferApplication.visibleBitVerification)\n        (D0.Foundation.VerificationCore.representedState\n          D0.Foundation.VerificationTransferApplication.visibleBitVerification (false, false)))\n    [] () =\n  D0.Foundation.TheoryTransfer.visibleBitInterpretation.outcomeMap false",
+          "declaration_kind": "theorem",
+          "declaration_ranges": {
+            "declaration": {
+              "end": {
+                "column": 57,
+                "line": 129
+              },
+              "start": {
+                "column": 0,
+                "line": 119
+              }
+            },
+            "selection": {
+              "end": {
+                "column": 66,
+                "line": 121
+              },
+              "start": {
+                "column": 8,
+                "line": 121
+              }
+            }
+          },
+          "elaborated_type": "D0.Foundation.TheoryTransfer.visibleBitInterpretation.commonExecution.quotientProfile\n    ↑((D0.Foundation.TheoryTransfer.visibleBitInterpretation.verifiedStateImageEquiv\n          D0.Foundation.VerificationTransferApplication.visibleBitVerification)\n        (D0.Foundation.VerificationCore.representedState\n          D0.Foundation.VerificationTransferApplication.visibleBitVerification (false, false)))\n    [] () =\n  D0.Foundation.TheoryTransfer.visibleBitInterpretation.outcomeMap false",
+          "exists": true,
+          "internal_name": false,
+          "module": "D0.Foundation.VerificationTransferApplication",
+          "name": "D0.Foundation.VerificationTransferApplication.verified_visibleFalseReadout_transfers_to_common_execution",
+          "proof_dependencies": [
+            "Bool",
+            "Bool.false",
+            "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Action",
+            "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.FutureClass",
+            "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Outcome",
+            "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.State",
+            "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.futureEmpiricalTheory",
+            "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.futureSetoid",
+            "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.quotientProfile",
+            "D0.Foundation.TheoryTransfer.Interpretation.EmpiricalImage",
+            "D0.Foundation.TheoryTransfer.Interpretation.commonExecution",
+            "D0.Foundation.TheoryTransfer.Interpretation.futureMap",
+            "D0.Foundation.TheoryTransfer.Interpretation.imageEquiv",
+            "D0.Foundation.TheoryTransfer.Interpretation.outcomeMap",
+            "D0.Foundation.TheoryTransfer.Interpretation.verifiedStateImageEquiv",
+            "D0.Foundation.TheoryTransfer.Interpretation.verifiedStateImageEquiv_representedState",
+            "D0.Foundation.TheoryTransfer.extraBitTestSystem",
+            "D0.Foundation.TheoryTransfer.visibleBitInterpretation",
+            "D0.Foundation.TheoryTransfer.visibleBitSystem",
+            "D0.Foundation.VerifiabilityNecessity.TheoryVerification.protocol",
+            "D0.Foundation.VerifiabilityNecessity.VerificationProtocol.State",
+            "D0.Foundation.VerificationCore.representedState",
+            "D0.Foundation.VerificationTransferApplication.visibleBitVerification",
+            "D0.Foundation.VerificationTransferApplication.visibleFalseReadout_transfers_to_common_execution",
+            "DFunLike.coe",
+            "Eq",
+            "Eq.mpr",
+            "Equiv",
+            "Equiv.instEquivLike",
+            "EquivLike.toFunLike",
+            "Exists",
+            "List.nil",
+            {
+              "_omitted_items": 6
+            }
+          ],
+          "type_dependencies": [
+            "Bool",
+            "Bool.false",
+            "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Action",
+            "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.FutureClass",
+            "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Outcome",
+            "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.futureEmpiricalTheory",
+            "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.quotientProfile",
+            "D0.Foundation.TheoryTransfer.Interpretation.EmpiricalImage",
+            "D0.Foundation.TheoryTransfer.Interpretation.commonExecution",
+            "D0.Foundation.TheoryTransfer.Interpretation.futureMap",
+            "D0.Foundation.TheoryTransfer.Interpretation.outcomeMap",
+            "D0.Foundation.TheoryTransfer.Interpretation.verifiedStateImageEquiv",
+            "D0.Foundation.TheoryTransfer.extraBitTestSystem",
+            "D0.Foundation.TheoryTransfer.visibleBitInterpretation",
+            "D0.Foundation.TheoryTransfer.visibleBitSystem",
+            "D0.Foundation.VerifiabilityNecessity.TheoryVerification.protocol",
+            "D0.Foundation.VerifiabilityNecessity.VerificationProtocol.State",
+            "D0.Foundation.VerificationCore.representedState",
+            "D0.Foundation.VerificationTransferApplication.visibleBitVerification",
+            "DFunLike.coe",
+            "Eq",
+            "Equiv",
+            "Equiv.instEquivLike",
+            "EquivLike.toFunLike",
+            "Exists",
+            "List.nil",
+            "Prod.mk",
+            "Subtype.val",
+            "Unit.unit"
+          ],
+          "source_path": "03_FORMALIZATION/D0/Foundation/VerificationTransferApplication.lean"
+        }
+      ],
+      "compiled_dependency_claim_links": [
+        {
+          "source_claim_id": "D0-VERIFIABILITY-CLASS-001",
+          "source_declaration": "D0.Foundation.VerifiabilityNecessity.protocolTheoryVerification",
+          "dependency_declaration": "D0.Foundation.VerifiabilityNecessity.operationalEmpiricalQuotientEquivState",
+          "target_claim_locators": [
+            {
+              "claim_id": "D0-M1-REGRESS-CLOSURE-VIA-VERIFIABILITY-001",
+              "theorem_atom": "operationalEmpiricalQuotientEquivState",
+              "module_locator": "D0.Foundation.VerifiabilityNecessity"
+            }
+          ],
+          "relation": "compiled-proof-dependency-to-claim-locator"
+        },
+        {
+          "source_claim_id": "D0-VERIFIABILITY-CLASS-001",
+          "source_declaration": "D0.Foundation.VerificationTransferApplication.visibleBit_records_follow_complete_future_equivalence",
+          "dependency_declaration": "D0.Foundation.VerificationTransferApplication.visibleBitVerification",
+          "target_claim_locators": [
+            {
+              "claim_id": "D0-VERIFIABILITY-CLASS-001",
+              "theorem_atom": "D0.Foundation.VerificationTransferApplication.visibleBitVerification",
+              "module_locator": "D0.Foundation.VerifiabilityNecessity;D0.Foundation.VerificationTransferApplication"
+            }
+          ],
+          "relation": "compiled-proof-dependency-to-claim-locator"
+        },
+        {
+          "source_claim_id": "D0-VERIFIABILITY-CLASS-001",
+          "source_declaration": "D0.Foundation.VerificationTransferApplication.verified_visibleFalseReadout_transfers_to_common_execution",
+          "dependency_declaration": "D0.Foundation.VerificationTransferApplication.visibleBitVerification",
+          "target_claim_locators": [
+            {
+              "claim_id": "D0-VERIFIABILITY-CLASS-001",
+              "theorem_atom": "D0.Foundation.VerificationTransferApplication.visibleBitVerification",
+              "module_locator": "D0.Foundation.VerifiabilityNecessity;D0.Foundation.VerificationTransferApplication"
+            }
+          ],
+          "relation": "compiled-proof-dependency-to-claim-locator"
+        }
+      ],
+      "declared_metadata_relations": {
+        "declared_applications": [],
+        "declared_result": null,
+        "target_obligation": null,
+        "target_interface": null,
+        "registered_assumptions": [],
+        "scoped_attempts": [
+          {
+            "id": "phase-count-shortcut",
+            "result": "phase-count-counterexample",
+            "interface": "resonance-divisor-v1",
+            "work_key": "phase-count-nullity-shortcut",
+            "scope": "The proposed nullity=2 max(n_+i,n_-i) rule is false already at (-1,-1,i,i).",
+            "reopen_when": "The formula or its domain changes explicitly and no longer includes the certified counterexample. Full divisor classification is a different task.",
+            "review": {
+              "state": "proposed"
+            },
+            "question_digest": "801c1b633ff8ca9e7bdb105091df64d28ea606631ab153af3a0c99281fdb13c8",
+            "question": {
+              "statement": "For every z in (C*)^4, nullity A(z)=2 max(n_+i,n_-i).",
+              "assumes": []
+            }
+          },
+          {
+            "id": "dmin-canonicality-source-bound-inference",
+            "result": "dmin-canonicality-source-bound-countermodel",
+            "interface": "complete-history-code-source-v1",
+            "work_key": "dmin-same-object-competitive-source",
+            "scope": "The literal-comparison countermodel only: canonicality, injectivity and golden word counts do not supply a Delta-equivalent same-object universal decoder or the first-source bound.",
+            "reopen_when": "A pinned construction in actual D0 proves Pair(decoder_N,U_N(X_N)) is Delta-equivalent to Enc(X_N) on the same complete history, establishes an admitted injective decoder and a cost-capacity-matched competitive bound, and controls the same moving law/Fisher source. A changed interface needs a new typed question.",
+            "question_digest": "b894222b378feb118a9e514e6fbaf9c9a27d7da296b4cc9c384f0aa0a0207c13",
+            "question": {
+              "statement": "Do the Book 01 canonicality definition, injectivity, and golden F/R word counts alone imply a same-object competitive decoder and the normalized complete-history code-minus-entropy first-source bound?",
+              "assumes": [
+                "D_min=Can(Enc(X)) is minimal only within the actual Delta-equivalence class.",
+                "No Delta-equivalence between Pair(decoder_N,U_N(X_N)) and Enc(X_N) is assumed unless proved.",
+                "The physical code-cost unit and complete moving probability law are fixed by the native programme."
+              ]
+            },
+            "review": {
+              "state": "proposed"
+            }
+          },
+          {
+            "id": "affine-scalar-perron-pressure-palatiniaction-shortcut",
+            "result": "original-book-triangle-odds-960-affine-pressure-no-go",
+            "interface": "original-scene-book-triangle-odds-pressure-boundary-v1",
+            "work_key": "affine-scalar-perron-pressure-palatiniaction-shortcut",
+            "scope": "Only the affine edge-price plus scalar positive Perron-pressure route as the entire Palatini action. This says nothing about nonlinear prices or the original complete H+J+R/CAR/memory/measurement/preparation/work/clock action.",
+            "reopen_when": "A physically admitted non-affine field-to-edge price map or an independently derived additional same-history action term changes the exact action family; record that new interface and compare its full Hessian/source rather than relabeling this pressure-only route.",
+            "review": {
+              "state": "proposed"
+            },
+            "question_digest": "ed681305328568ac87e9a07cbad484f3a377e397936e3f8cb7d8202f63676968",
+            "question": {
+              "statement": "Can the entire original 24-link Palatini quadratic action be derived from positive scalar Perron pressure after an affine map from the Lorentz coordinates to the original directed-edge prices?",
+              "assumes": [
+                "The complete field-to-edge-price map is affine on the 24 independent original Lorentz directions.",
+                "The candidate action is only positive scalar Perron pressure; no additional Cost-Info, H+J+R, CAR/memory, measurement, preparation, clock or work terms contribute.",
+                "The same original 24-direction Palatini Hessian of inertia (12,12) is the target."
+              ]
+            }
+          },
+          {
+            "id": "double-null-degree5-ward-selected-rref",
+            "result": "double-null-degree5-selected-rref-ward-obstruction",
+            "interface": "double-null-degree5-coframe-gradient-ward-v1",
+            "work_key": "double-null-selected-rref-degree5-ward-extension",
+            "scope": "The exact selected lower-order representative stated in the question; the nonzero fifth-order Ward projection rules out any fifth-amplitude correction for that representative.",
+            "reopen_when": "Vary the remaining joint cubic/mixed-quartic or asymmetric-quartic homogeneous modes, change the finite carrier/action, or enlarge the physical question. Any such result needs its own pinned interface and must not be inferred from this selected-representative obstruction.",
+            "review": {
+              "state": "proposed"
+            },
+            "question_digest": "c22c3c32995ca430f378c98ea32ba1b6b20bb200772179da035d8110ec0029cb",
+            "question": {
+              "statement": "Does the exact selected lower-order RREF representative of the perpendicular H=a*x, J=b*y branch at h=1 admit any fifth-amplitude extension, after allowing arbitrary fifth-degree corrections to the Lorentz links and coframe?",
+              "assumes": [
+                "The original six-plaquette Lorentz-star action and its all-40 Euler variations are fixed.",
+                "The lower-order fields are exactly the mixed-quartic and asymmetric-quartic RREF representatives pinned by the cited checkers, with their remaining homogeneous modes set to zero.",
+                "The fifth-order Lorentz exponential includes all terms through degree five."
+              ]
+            }
+          }
+        ],
+        "conceptual_presupposition_edges": [],
+        "warning": "Declared metadata links are not Lean type-checking or independent scientific acceptance."
+      },
+      "collector_sha256": "550af8d1c80fdb9c00c16b0f9f2eb703b2d60780ba9dc56d9fb9f3a8bd1d2fb1",
+      "lean_source_digest": "c367897a077f251765b6a11ca60dd30098ea1b6c4bfe3b1dec34c213ffd5dd08",
+      "public_import_root": "D0.All",
+      "interpretation": "Claim theorem strings are candidate-name locators. Compiled declaration presence and reported Lean proof dependencies are separate evidence. A dependency joined to another claim locator is a candidate crosswalk only; registry application links, conceptual edges, and semantic claim acceptance are not inferred from name matches."
+    }
+  ],
+  "compiled_claim_alias_reuse": [],
+  "worktree_dirty": true
+}

@@ -2909,22 +2909,70 @@ the internal ratio, and the second states the represented one-tick drift law.
 These signatures expose the external protocol representation required by the
 claim. They do not establish that an actual apparatus supplies it.
 
-The regenerated all-claims resolution artifact is
-`sources/d0_proof_architecture_formalization_2026-10-24/claim_candidate_resolution_current.json`,
-SHA-256 `400cfc7f3dfe82619579bb4599fdbed9301e9f839a7a91b1d776e4b37604ba4f`.
-It records snapshot `2d839f582ffe84763a9ac487c7060a9e32f8e4e1`
+At published PR head `c5f430df76975f9aae7d3aa48eaa9896601fd5ac`, the
+all-claims artifact at
+`sources/d0_proof_architecture_formalization_2026-10-24/claim_candidate_resolution_current.json`
+had SHA-256
+`400cfc7f3dfe82619579bb4599fdbed9301e9f839a7a91b1d776e4b37604ba4f`. That
+version records snapshot `2d839f582ffe84763a9ac487c7060a9e32f8e4e1`
 (`worktree_dirty=true`), Lean source digest
 `b76d89ea4cc4e983eeb80ff1fa2784eaf147e0a8a5ec4521a60d936711d80976`, claims
 registry SHA-256 `6566b397c0ca892ea278466da1b2c717fe230bd1b87c8ee358a1f276ee8e1b57`,
 collector SHA-256
 `7d84b5232692eb49f44de507610990c584b9417c5938f7e0706049ffdba81bce`, and
-Lean 4.30.0. The two corrected names now resolve as exact single-name
-candidates. The inventory contains 889 claim rows and 2,747 locator mappings;
-2,508 of 8,313 unique exact names resolve. These are locator counts, not
-semantic coverage.
+Lean 4.30.0. Its exact contents remain recoverable from that Git commit and
+path; the next checkpoint below records the refreshed current artifact.
 
 `generate_lean_views.py --check` passes, and the compiled inventory query
 built `D0.All` successfully. The change updates no assembly result,
 application receipt, or physical assumption. No reviewed consumer edge was
 found for this claim in the current assembly registry, so no parent obligation
 is discharged by this locator correction.
+
+### Concrete visible-bit verification-to-transfer application (25 October 2026)
+
+`D0-VERIFIABILITY-CLASS-001` already states that a concrete Boolean two-line
+protocol witnesses non-vacuity. Its claim locator now lists the existing
+`D0.Foundation.VerificationTransferApplication` alongside the generic owner
+module and names three exact declarations: `visibleBitVerification`,
+`visibleBit_records_follow_complete_future_equivalence`, and
+`verified_visibleFalseReadout_transfers_to_common_execution`. The
+`formal_support.csv` entry now also points to `claims.csv`. No theorem body,
+claim status, bridge assumption, or assembly application was changed.
+
+The compiled declaration inventory places the three declarations at lines
+59–77, 79–85, and 119–129 of
+`03_FORMALIZATION/D0/Foundation/VerificationTransferApplication.lean`.
+`visibleBitVerification` constructs a `TheoryVerification` for the actual
+`visibleBitSystem.futureEmpiricalTheory`. The record-equivalence theorem
+proves equal represented records for `(false,false)` and `(false,true)` using
+the owned `visibleBit_same_all_source_futures` theorem and
+`representedRecord_eq_iff`. The transfer theorem's compiled type maps the
+verified represented state `(false,false)` through
+`verifiedStateImageEquiv` to the common execution readout, equal to
+`outcomeMap false`; its proof depends on the concrete interpretation maps and
+the `visibleFalseReadout_transfers_to_common_execution` theorem. The compiled
+trust footprint is `Classical.choice`, `Quot.sound`, and `propext`.
+
+The compiled claim-reuse record is
+`sources/d0_proof_architecture_formalization_2026-10-24/verification_transfer_claim_reuse_current.json`,
+SHA-256 `f5f8bde6236ddb4426414d28855009ccaf8c3df1067e927f13182c8f69bcd7bd`.
+It records source snapshot `c5f430df76975f9aae7d3aa48eaa9896601fd5ac`
+(`worktree_dirty=true`), Lean source digest
+`c367897a077f251765b6a11ca60dd30098ea1b6c4bfe3b1dec34c213ffd5dd08`,
+collector SHA-256
+`550af8d1c80fdb9c00c16b0f9f2eb703b2d60780ba9dc56d9fb9f3a8bd1d2fb1`, and
+public import `D0.All`. All seven exact locators on the claim now resolve.
+The all-claims refresh records 889 claim rows, 2,750 locator mappings, and
+2,511 resolved names among 8,320 unique candidates; its source, registry and
+collector digests are stored in
+`claim_candidate_resolution_current.json` (SHA-256
+`576e160eedf89e002058b1af443841f37708b1ca0195cf44e923142248858f31`).
+
+The reuse view reports proof-dependency-to-locator candidates from each
+application theorem to `visibleBitVerification`, plus the generic quotient
+equivalence dependency from `protocolTheoryVerification`. It still reports
+`declared_applications=[]`; those compiled dependency joins do not create an
+accepted application edge. This is a finite mathematical application, not an
+external physical apparatus, causal-independence proof, cost selection, or
+physical D0 realization. No physical or assembly premise is discharged.
