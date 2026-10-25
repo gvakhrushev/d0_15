@@ -10346,3 +10346,49 @@ controller obligations are recorded in
 02_REGISTRY/research/sources/d0_native_golden_stationary_extension_2026-10-25/INTEGRATION_REVIEW.md.
 No physical price, independentvariation or GR status promoted.
 GR_closed=false.
+
+### 25 October: solve the fixed Golden node reaction and extend the actual stationary chart
+
+Phase: native realization / same-execution stationary composition. SAME
+PR334, constitutive/native-programme-v1; inputbe53b7a7. Parent7am has an
+actual three-stage all-branches code writer and a positive AMBIENT
+variable-angle Book source, but explicitly does not admit that angle
+as a physical control. Consume original Book02 Golden algebra and
+Book03.26's fixed primitive, owned conormal/causal-adjoint elimination,
+7m's exact stationary product chart and7al's noncritical source/cofield.
+The exact missing application is the constraint reaction for this NEW
+fixed generated coin and its full-source stationary extension, not a
+new action or a requirement that a structural constant be freely varied.
+
+Prove in primary7an that c=(p²+p−1,a²−p,u_G−p²) has invertible Jacobian;
+the complete ambient Book coefficient covector has a uniquely derived
+conormal reaction, leaving all actual field/upstream sources intact.
+Only the original fixed primitive and GIVEN fresh blank are constrained;
+an independently prepared incoming coin, effectiveG^k/programme edits,
+source-preparer, clock/cut and additional stack rows remain independent
+where admitted. Keep the actual generated prefix/cut/Dirac equations and
+reset their owned causal adjoints to the NEW terminal Book covector.
+
+For any old field-ISOSPECTRAL scalar-return chart C=s(Y)I_r, appendK
+actual fixed native code gadgets. Retain N_new=N+3K, D_new=16^K D,
+r unchanged and every full paired heat mode. Prove exact source factor
+rho_K=p^K(1−zeta+zeta tau)/(1−zeta+zeta p^K tau)>0, tau=s².
+This preserves the old constrained critical set and Hessian inertia
+at each finite level. It does NOT preserve a generic stationary point
+whose heat and feedback sources cancel. Apply the result to7m's existing
+curved all-field chart and to7al's full off-shell finite-price source via
+the actual NEW gain, including all observed-chord/readout errors.
+The derived effective zeta retains its absolute anchor and is only an
+algebraic single-prefix identity, not a new physical coupling.
+
+Write paths: this brief and primary7an only; no packet/registry/claim/
+workflow changes. Read-only bounded assistants supply original primitive
+constraint provenance, exact stationary extension and cofield transport.
+The smallest decisive check is exact symbolic conormal reaction, full
+feedback derivative/proportionality and critical Hessian, noncritical
+local divided-slope bound, plus a genuinely FREE incoming-coin hostile
+control. Consume7am's frozen actual16-column/code/carrier receipt without
+replaying its gates. Record reproducible symbolic check in the primary.
+No oldroot/rank/READY/full128/Lean/corpus replay. This supplies the fixed
+NEW-node stationary application, not physical selection of all X_N or
+independent source-control stationarity/refinement. GR_closed=false.

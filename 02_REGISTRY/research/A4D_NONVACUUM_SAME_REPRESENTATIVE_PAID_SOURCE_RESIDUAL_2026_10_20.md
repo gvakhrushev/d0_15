@@ -9367,6 +9367,266 @@ and the stronger native GR realization/refinement remain. The direct
 Book route requires no second Info term. GR_closed=false.
 
 
+## 7an. The fixed Golden node has a derived reaction and preserves the stationary field chart
+
+25 October 2026, SAME PR334 / constitutive owner, inputbe53b7a7. The
+parent application is7am's NEW actual three-stage code writer. Its
+positive variable-angle source is a correct AMBIENT comparison, but
+that angle was never admitted as an independent primitive parameter.
+Here the original fixed Golden relations supply its precise constraint
+reaction. We then apply the actual operation to7m's stationary chart
+and7al's full-source cofield, keeping the new complete Book price.
+Neither an Einstein constraint nor a compensating action is introduced.
+
+### Original structural coefficients, distinct from a prepared probability
+
+[Book02's Golden algebra](../../01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md#025-the-theorem-chain-inherited-from-book-01)
+and [Book03.26](../../01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md#0326-golden-tick-gate)
+fix the positive root p=phi^-1 and the primitive G, rather than a family
+of freely tunable splitters. The actual native grammar has no angle
+argument. Introduce derived coordinates a=sqrt(p), u_G=|G_10|². Their
+ORIGINAL implementation equalities and Jacobian are
+
+    c(p,a,u_G)=(p²+p-1, a²-p, u_G-p²)=0,   p,a>0,
+    Dc=[[2p+1,0,0],[-1,2a,0],[-2p,0,1]],
+    det Dc=2a(2p+1)>0.                                  (347)
+
+Thus every tangent preserving these structural equalities has
+Dp=Da=Du_G=0. The last equality is a primitive COEFFICIENT equality;
+it is not a requirement that the return of an entire programme be p².
+It also does not fix an observed outcome on a freely prepared input.
+
+Consume the owned [constraint-source rule](A4D_CONSTRAINT_MULTIPLIER_SOURCE.md):
+a reaction is conormal and cannot cancel a genuine constrained tangent.
+For any full ambient coefficient covector h=(h_p,h_a,h_u), AFTER the
+ordinary generated-variable elimination, the unique reaction solving
+h+Dc^T mu=0 for this minimal independent constraint list is
+
+    mu_3=-h_u,
+    mu_2=-h_a/(2a),
+    mu_1=(-h_p-h_a/(2a)-2p h_u)/(2p+1).                 (348)
+
+Uniqueness refers to a specified ambient extension and this independent
+list. Redundant unitary identities can give nonunique multiplier
+representations without changing the constrained source. The expression
+mu.c is a bookkeeping identity that vanishes on the original domain,
+not a new physical price or an adjustable negative counterterm.
+Because D_Yc=0 for the old field/source coordinates Y,
+
+    D(B|_(c=0))[v]=D_YB[v].                              (349)
+
+In7am's unitary comparison, h_u includes BOTH its whole thermal source
+and w_new/(1-u). In particular the diagnostic extension B=B(u) has
+mu=(-2p h_u/(2p+1),0,-h_u). No thermal remainder is dropped. The
+positive h_u of(346) therefore needs no separately chosen cancellation
+when the new node is the prescribed fixed primitive on its given blank.
+This does not dispose of any actually independent source variable.
+
+### Exact full-price stationary extension on the covered old chart
+
+Let Y range in an OPEN old operator/constraint chart, with fixed true
+N,d,input isometry i,r=rank(ii^dagger),beta,zeta. Require the WHOLE old
+endpoint U(Y) to be isospectral throughout that chart and
+
+    C(Y)=i^dagger U(Y)i,
+    C(Y)^dagger C(Y)=tau(Y) I_r,    0<=tau<=1.
+
+These are the already supplied hypotheses in7m's scalar-return product
+chart and the fixed known-port/source chart of7ai/7al. Scalar Gram on
+the open chart is required; a scalar value at just one point is not
+enough. No assumption that an arbitrary stationary scene has this form
+is made.
+
+Append K fixed7am gadgets V=G_z;CX(z,t0);CX(z,lambda) on K disjoint
+four-bit known blanks, with their passive tails and all record columns.
+The old action and the NEW action both use the ORIGINAL zeta and
+ordinary full counting trace. By the actual7am full-column result(342)-(345),
+
+    U_+=U tensor V^tensorK,   i_+=i tensor|0^(4K)>,
+    N_+=N+3K,   d_+=16^K d,   r_+=r,
+    C_+=p^(K/2) C,   eta=p^K,
+    B_0=H_0-r log(b+zeta tau),
+    B_+=H_+-r log(b+zeta eta tau),   b=1-zeta>0.          (350)
+
+H_+ is the complete heat at N_+,d_+, not H_0 plus a coin heat. For
+K_N(phi)=sum_(k mod N) exp[-beta(1-cos((2pi k+phi)/N))], its trace is
+
+    Z_+=2*4^K sum_(old phases phi_j)
+       sum_(sigma in {0,pi,+theta,-theta}^K)
+          K_(N_+)(phi_j+sum sigma).
+
+This includes ALL2N_+d_+ paired modes. Isospectrality makes BOTH H_0
+and H_+ constant on Y, including at eigenvalue crossings. Their absolute
+values differ and stay in their respective complete actions.
+
+Direct differentiation, with all old chart directions retained, gives
+
+    D B_+=rho_K D B_0,
+    rho_K=eta(b+zeta tau)/(b+zeta eta tau)>0,
+    eta<=rho_K<=eta/(b+zeta eta)<=1.                     (351)
+
+Consequently the constrained critical sets on this chart are IDENTICAL.
+At every critical point the chart Hessians satisfy
+
+    Hess_Y B_+=rho_K Hess_Y B_0.                          (352)
+
+Their inertia, nullity and nondegeneracy agree. An old saddle stays a
+saddle; no unrestricted minimum or uniform inverse bound is obtained.
+The multiplier can decay with K. This theorem does not apply to an old
+stationary point obtained by cancelling nonzero DH_0 against DJ_0:
+new isospectrality is the precise hypothesis that prevents that mistake.
+
+In particular, consume7m's exact original all-mesh curved field roots
+on their OWN declared generated/operator chart, with its fixed readiness,
+middle, cut and full16+24+2 field variations. This actual code addition
+preserves every one of those finite constrained roots and their old
+retained readouts. It does not make an approximate native source table
+an exact root or remove7m's remaining original admission hypotheses.
+A nonzero free old row on the covered chart is multiplied by rho_K,
+not eliminated. Directions outside the isospectral scalar-Gram chart
+retain their actual complete sources.
+
+### New generated states get the new terminal adjoint, not an extra free bias
+
+Use the SAME actual prefix, transported-cut, paired Dirac and feedback
+maps of(336). The minimal defining constraints for generated variables
+are triangular with identity diagonal blocks: W_(t+1)=g_t W_t,
+P_t=W_t P_in W_t^dagger, and the displayed definitions of T,Dirac,Delta,F.
+Their solution is an implementation graph over the variables that were
+actually left free. The NEW coin node is chi=G|0>, followed by its two
+real copies; its given blank and fixed primitive imply Dchi=0 when
+those upstream data are held fixed. This graph is specified by executed
+operations, not by demanding an Einstein result.
+
+Apply the OWNED [paid-writer10.5 terminal cotangent and backward recursion](A4D_PAID_MOMENT_FIELD_WRITER_2026_10_21.md#105-every-generated-prefix-row-has-an-explicit-whole-book-adjoint)
+to B_+, with its NEW endpoint, full paired heat density, cut and rank.
+This solves all generated-state/prefix/operator rows. The reduced source
+is exactly the derivative in(351), plus any genuinely independent rows
+that were not part of that chart. Old costates must be recomputed:
+the new ambient thermal cotangent is not a scalar multiple of the old
+one, even though the restricted field sources obey(351).
+
+The structural reaction(348) supplies the coefficient normal of this
+NEW fixed node. It does not freeze an independently initialized source.
+For a sharp hostile control, allow the incoming coin to be the real
+pure state (|0>+epsilon|1>)/sqrt(1+epsilon²), keep all three record/tail
+bits blank, and transport the input cut with that state. The actual
+three-stage V, without changing its operator, has
+
+    C_coin(epsilon)=(a-p epsilon)/(1+epsilon²),
+    D_epsilon |C_coin|²|_0=-2ap,
+    D_epsilon J_+|_0=2a w_+>0                           (353)
+
+for one appended coin and old tau>0. Heat is unchanged because only
+the input cut moves. This row is NOT removed by(347): u_G is fixed,
+but the incoming preparation and observed probability are not. The
+control is a matrix/source test; an actually executed native preparation
+change needs its own complete gates, clock and admission. Likewise
+permitted effectiveG^k/programme edits, varying old source preparers,
+cut/clock changes and additional selected stack terms keep their rows.
+
+### The full off-shell cofield survives the actual code addition
+
+For a prefix with K fixed gadgets, the feedback in(350) factors exactly:
+
+    zeta_K=zeta eta/(b+zeta eta)<=zeta,
+    J_+=-r log(b+zeta eta)
+           -r log(1-zeta_K+zeta_K tau).                 (354)
+
+The absolute first term is retained. zeta_K is a DERIVED algebraic
+factorization, not a physical change of zeta. It is constant only for
+the stated fixed-K/r/p/zeta field comparison. Its reactions under
+changes of those data must still be differentiated.
+
+On7al's whole product tau=product_j s_j², s_j=1-x_j q_j,
+x_j=d_j gamma_j, the actual source and gain are
+
+    D J_+=w_+ sum_j a_j Dq_j,
+    w_+=r zeta eta tau/(b+zeta eta tau),
+    a_j=2x_j/s_j,  A_M=sum_j a_j gbar_j,
+    Gamma_+=w_+ A_M=rho_K Gamma_0.
+
+All original lambda_minus, inverse-coframe/quadrature maps and actual
+field decoders remain. For one actual finite fork, hold all other
+return factors fixed and put c=zeta eta product_(k!=j)s_k²>0. Then
+
+    J_q'=2r c x s/(b+c s²)=w_+ a_j,
+    d_q log J_q'=(x/s)(c s²-b)/(c s²+b),
+    |d_q log J_q'|<=x/s<=4/3                            (355)
+
+on the original q<=1/4,0<x<=1 collar. Thus the SAME exp(+-4u_j/3)
+divided-slope estimate in7al(332) holds uniformly in every old/future
+return product and in eta. The noncritical rho_j M1,j term is retained.
+The corrected observed-chord/readout estimate(332a) uses the same
+actual native field nodes and physical decoder; tracing the new
+independent registers preserves every old quantum/readout marginal.
+There is no new eta^-1 or inverse future gain in these normalized errors.
+
+If one gadget is appended per old cohort, K=M. Matched whole clocks
+on both ends of each fork have the same new isospectral heat. After
+normalization by Gamma_+, the weighted off-shell source proof(335)
+therefore retains exactly the original A_M and all its actual error
+budgets. Its limit remains D I_PC in the same C3 dual norm. This is a
+positive application of the new source theorem, not a field-equation
+claim inferred merely from small absolute Gamma_+.
+
+### Small symbolic control, with inherited native execution evidence
+
+The actual16-column V/code and enlarged135-stage inventory are the
+unchanged frozen7am receipt. They are not replayed here. The following
+small symbolic control checks the NEW reaction, source/Hessian transfer,
+its excluded heat-cancellation case, local slope, and free-input row.
+The nonconstant-heat line is a formal source countercontrol, not an
+asserted native thermal realization:
+
+```python
+import sympy as S
+p,a,u,hp,ha,hu=S.symbols('p a u hp ha hu', positive=True)
+c=S.Matrix([p*p+p-1,a*a-p,u-p*p])
+Dc=c.jacobian([p,a,u])
+mu=S.Matrix([(-hp-ha/(2*a)-2*p*hu)/(2*p+1),-ha/(2*a),-hu])
+assert S.simplify(Dc.det()-2*a*(2*p+1))==0
+assert (Dc.T*mu+S.Matrix([hp,ha,hu])).applyfunc(S.simplify)==S.zeros(3,1)
+r,z,eta,t=S.symbols('r z eta t',positive=True)
+b=1-z
+J0=-r*S.log(b+z*t); J1=-r*S.log(b+z*eta*t)
+rho=eta*(b+z*t)/(b+z*eta*t)
+assert S.simplify(S.diff(J1,t)-rho*S.diff(J0,t))==0
+w0=r*z*t/(b+z*t); w1=r*z*eta*t/(b+z*eta*t)
+assert S.simplify(w1-rho*w0)==0
+X,Y,t0=S.symbols('X Y t0',real=True)
+T=t0+X*X-Y*Y
+H0=S.hessian(J0.subs(t,T),[X,Y]).subs({X:0,Y:0})
+H1=S.hessian(J1.subs(t,T),[X,Y]).subs({X:0,Y:0})
+assert (H1-rho.subs(t,t0)*H0).applyfunc(S.simplify)==S.zeros(2)
+# A nonconstant old heat can cancel J0 but need not cancel J1.
+res=-S.diff(J0,t)+S.diff(J1,t)
+assert S.simplify(res-r*z*b*(1-eta)/((b+z*t)*(b+z*eta*t)))==0
+q,x,cc=S.symbols('q x cc',positive=True)
+s=1-x*q
+slope=S.diff(-r*S.log(b+cc*s*s),q)
+assert S.simplify(S.diff(slope,q)/slope-(x/s)*(cc*s*s-b)/(cc*s*s+b))==0
+eps=S.symbols('eps',real=True)
+coin=(a-p*eps)/(1+eps*eps)
+assert S.diff(coin*coin,eps).subs(eps,0)==-2*a*p
+jf=-r*S.log(b+z*t*coin*coin)
+free=S.diff(jf,eps).subs(eps,0).subs(a,S.sqrt(p))
+assert S.simplify(free-2*S.sqrt(p)*w1.subs(eta,p))==0
+print('PASS 9 symbolic reaction/source controls; no native gate replay')
+```
+
+**Parent substitution.** The new fixed Golden node and its generated
+state rows now have an exact constrained stationary application, and
+the complete old off-shell cofield has its real new gain. The ambient
+primitive-angle derivative is not an additional mandatory zero row.
+Original independent preparation/control equations, actual task and
+field-section admission into X_N, and full physical dynamics/refinement
+remain; this implementation graph does not declare itself all of X_N.
+The direct Book route adds no second Info action. GR_closed=false;
+positive_gr and raw216 remain open.
+
+
+
 ## 8. Reproduction
 
 Run from this directory:
