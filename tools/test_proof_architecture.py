@@ -1242,6 +1242,14 @@ class ProofArchitectureTests(unittest.TestCase):
             case["required_refs"],
         )
         self.assertIn(
+            "03_FORMALIZATION/D0/Research/NativeWeightedDiracFourierNullModes.lean",
+            case["required_refs"],
+        )
+        self.assertIn(
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/native_weighted_dirac_fourier_null_modes_declarations_2026-10-25.json",
+            case["required_refs"],
+        )
+        self.assertIn(
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/archive_lorentzian_fourier_module_declarations_2026-10-25.json",
             case["required_refs"],
         )
@@ -1255,6 +1263,7 @@ class ProofArchitectureTests(unittest.TestCase):
         )
         self.assertIn("db3091aded8f6cfe8d39dcd973ccf30ec40dfb08", case["scope_review"])
         self.assertIn("c3ceba511bab5c435d715fd56382615fc1dc1505", case["scope_review"])
+        self.assertIn("a6ff3f2fc7e0e6b94d673c2cd713cb4faeb94004", case["scope_review"])
         self.assertIn("not physically derived", case["scope_review"])
         self.assertTrue(any("weightedDiracMatrix_mulVec" in query for query in case["queries"]))
         self.assertTrue(any("hodgeCarDiracMatrix_mulVec" in query
@@ -1263,6 +1272,14 @@ class ProofArchitectureTests(unittest.TestCase):
                             for query in case["queries"]))
         self.assertTrue(any("hodgeCarDiracMatrix_symmetric" in query
                             for query in case["queries"]))
+        self.assertTrue(any(
+            "archiveLorentzian_full_cochain_kernel_finrank_ge_diagonal_family" in query
+            for query in case["queries"]
+        ))
+        self.assertTrue(any(
+            "null_mode_kernel_eq_range null_mode_kernel_half_dimension DivisionRing" in query
+            for query in case["queries"]
+        ))
         self.assertTrue(any("weightedDiracMatrix_symmetric_of_finiteHermitianAdjoint_eq_self"
                             in query for query in case["queries"]))
         self.assertTrue(any("spatialNyquist_weightedDirac_matrix_block" in query

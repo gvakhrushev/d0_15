@@ -408,6 +408,8 @@ CASES: list[dict[str, Any]] = [
             "archiveLorentzianDifferenceOperator_fourier_mode archiveFourierFockMode archiveLorentzianFourierSymbol",
             "archiveLorentzianCARDirac_square_fourier_mode roleWeightedArchiveCARDirac_square roleWeightedArchiveCodifferential_cross",
             "roleWeightedArchiveCARDirac_fourier_mode roleWeightedArchiveFourierFockAction_square archiveLorentzianCARFourierFockAction_square",
+            "archiveLorentzian_full_cochain_kernel_finrank_ge_diagonal_family archiveLorentzian_kernel_finrank_cases archiveLorentzian_nonzero_null_mode_classification",
+            "null_mode_kernel_eq_range null_mode_kernel_half_dimension DivisionRing finrank complex fibre",
             "archiveRoleFourierInversion actual archive site scalar field",
         ],
         "required_refs": [
@@ -419,6 +421,8 @@ CASES: list[dict[str, Any]] = [
             "03_FORMALIZATION/D0/Geometry/ArchiveLorentzianCARDiracApplication.lean",
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/archive_lorentzian_fourier_module_declarations_2026-10-25.json",
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/archive_lorentzian_car_fourier_fiber_action_declarations_2026-10-25.json",
+            "03_FORMALIZATION/D0/Research/NativeWeightedDiracFourierNullModes.lean",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/native_weighted_dirac_fourier_null_modes_declarations_2026-10-25.json",
         ],
         "scope_review": (
             "The generic theorem identifies matrix multiplication in the existing ArchiveCochainBasis "
@@ -435,7 +439,13 @@ CASES: list[dict[str, Any]] = [
             "composition gives the Eq. (5) all-size squared-mode law for every Fock profile. Its direct first-order "
             "Fourier action is now an explicit finite CAR map on each Fock profile, and the induced map squares to "
             "the same symbol. This does not make an arbitrary profile a first-order eigenvector; physical "
-            "action/source selection and GR closure remain open."
+            "action/source selection and GR closure remain open. The null-mode companion proves the exact "
+            "16/8/0 per-fibre dimensions, ker=range on nonconstant null fibres, at least N+1 diagonal null "
+            "momenta, and the full-cochain lower bound 16+8(N+1). Exact total root count/kernel, gauge "
+            "quotient, broader refinement classification, and physical/source selection remain open. Its "
+            "complex-fibre contraction uses the DivisionRing generalization at "
+            "a6ff3f2fc7e0e6b94d673c2cd713cb4faeb94004, capsule blob "
+            "60de6702e232d6b68fc3b707a058383c4c09b2ff."
         ),
     },
 ]
