@@ -1,16 +1,32 @@
 {
   "schema": "d0-lean-declaration-inventory-v1",
-  "snapshot_commit": "05faf0c078b74ab74d963041f52749422813b7aa",
+  "snapshot_commit": "db3a201a7e8f4529e45effa4d71e578d1d0e3733",
   "worktree_dirty": false,
-  "lean_source_digest": "ee24661fd9c5d5e5b2d78ab720422fd46eae28a5b1d786d2280a7d03b16f87f2",
-  "collector_sha256": "6a4fdcdaecc9ae9bc6a5f7b74d57d64ce6d2577a08aa91b267f3346cbda9b73b",
+  "claim_registry_sha256": null,
+  "lean_source_digest": "84495a35213e0664f044c79b1642f135386189a139d85b6d25b1cb0309d34b3b",
+  "collector_sha256": "d616cbb87efe3014152de41242a9624bb43acd51086aa6694c53f5486ba60737",
   "toolchain": "leanprover/lean4:v4.30.0",
   "public_import_root": "D0.All",
-  "inventory_mode": "owning_module_enumeration",
-  "requested_modules": [
-    "D0.Geometry.NonvacuumBrinkmannStencil"
-  ],
-  "module_prefix": null,
+  "resolution_only": false,
+  "request": {
+    "full_names": [
+      "D0.Geometry.finiteMatterForwardGradient",
+      "D0.Geometry.finiteMatterForwardGradient_midpointStep",
+      "D0.Geometry.finiteMatterMidpointStep",
+      "D0.Geometry.harmonicBrinkmannCubic",
+      "D0.Geometry.harmonicBrinkmannCubic._proof_1",
+      "D0.Geometry.harmonicBrinkmannCubic._proof_2",
+      "D0.Geometry.nonvacuumBrinkmannProfile",
+      "D0.Geometry.nonvacuumProfile_source_eq_finiteMidpointMatterNorm",
+      "D0.Geometry.transverseFivePointLaplacian",
+      "D0.Geometry.transverseFivePointLaplacian._proof_1",
+      "D0.Geometry.transverseFivePoint_harmonicBrinkmannCubic_eq_zero",
+      "D0.Geometry.transverseFivePoint_nonvacuumBrinkmannProfile_eq_source",
+      "D0.Geometry.transverseFivePoint_radialQuadratic_eq_four",
+      "D0.Geometry.twoComponentMatterNormSq",
+      "D0.Geometry.twoComponentMatterNormSq_midpointGradient_eq_rate"
+    ]
+  },
   "declarations": [
     {
       "axioms": [
@@ -87,7 +103,6 @@
         "instHSub",
         "instOfNatNat"
       ],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "Fin",
         "Nat",
@@ -316,7 +331,6 @@
         "one_ne_zero",
         "rfl"
       ],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "D0.Geometry.finiteMatterForwardGradient",
         "D0.Geometry.finiteMatterMidpointStep",
@@ -406,7 +420,6 @@
         "instHMul",
         "instOfNatNat"
       ],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "Fin",
         "Nat",
@@ -512,7 +525,6 @@
         "instOfNatAtLeastTwo",
         "instOfNatNat"
       ],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "Real"
       ],
@@ -538,7 +550,6 @@
         "OfNat.ofNat",
         "instOfNatNat"
       ],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "HAdd.hAdd",
         "Nat",
@@ -570,7 +581,6 @@
         "OfNat.ofNat",
         "instOfNatNat"
       ],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "HAdd.hAdd",
         "Nat",
@@ -686,7 +696,6 @@
         "instHPow",
         "instOfNatNat"
       ],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "Real"
       ],
@@ -826,7 +835,6 @@
         "instOfNatAtLeastTwo",
         "instOfNatNat"
       ],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "D0.Geometry.finiteMatterForwardGradient",
         "D0.Geometry.finiteMatterMidpointStep",
@@ -941,7 +949,6 @@
         "instOfNatAtLeastTwo",
         "instOfNatNat"
       ],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "Real"
       ],
@@ -967,7 +974,6 @@
         "OfNat.ofNat",
         "instOfNatNat"
       ],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "HAdd.hAdd",
         "Nat",
@@ -1263,7 +1269,6 @@
         "one_ne_zero",
         "rfl"
       ],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "D0.Geometry.harmonicBrinkmannCubic",
         "D0.Geometry.transverseFivePointLaplacian",
@@ -1582,7 +1587,6 @@
         "one_ne_zero",
         "rfl"
       ],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "D0.Geometry.nonvacuumBrinkmannProfile",
         "D0.Geometry.transverseFivePointLaplacian",
@@ -1861,7 +1865,6 @@
         "one_ne_zero",
         "rfl"
       ],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "D0.Geometry.transverseFivePointLaplacian",
         "Eq",
@@ -1944,7 +1947,6 @@
         "instHPow",
         "instOfNatNat"
       ],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "Fin",
         "Nat",
@@ -2047,7 +2049,6 @@
         "instOfNatNat",
         "rfl"
       ],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "D0.Geometry.finiteMatterForwardGradient",
         "D0.Geometry.finiteMatterMidpointStep",

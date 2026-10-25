@@ -1,16 +1,90 @@
 {
   "schema": "d0-lean-declaration-inventory-v1",
-  "snapshot_commit": "05faf0c078b74ab74d963041f52749422813b7aa",
+  "snapshot_commit": "db3a201a7e8f4529e45effa4d71e578d1d0e3733",
   "worktree_dirty": false,
-  "lean_source_digest": "ee24661fd9c5d5e5b2d78ab720422fd46eae28a5b1d786d2280a7d03b16f87f2",
-  "collector_sha256": "eada9c6f24ed4cb04c4a6d5afd1d6c229296257642a11230550bd14c2ac6cd8f",
+  "claim_registry_sha256": null,
+  "lean_source_digest": "84495a35213e0664f044c79b1642f135386189a139d85b6d25b1cb0309d34b3b",
+  "collector_sha256": "5da565478afbef6b516b2893320ce1693d851f6326eb92cf689da4b3c44ac4e2",
   "toolchain": "leanprover/lean4:v4.30.0",
   "public_import_root": "D0.All",
-  "inventory_mode": "owning_module_enumeration",
-  "requested_modules": [
-    "D0.Representation.SourcePortPreparation"
-  ],
-  "module_prefix": null,
+  "resolution_only": false,
+  "request": {
+    "full_names": [
+      "D0.Representation.SourcePortPreparation.D",
+      "D0.Representation.SourcePortPreparation.K",
+      "D0.Representation.SourcePortPreparation.M12",
+      "D0.Representation.SourcePortPreparation.M3",
+      "D0.Representation.SourcePortPreparation.V3",
+      "D0.Representation.SourcePortPreparation.compressed",
+      "D0.Representation.SourcePortPreparation.compression_normalization",
+      "D0.Representation.SourcePortPreparation.compression_normalization._native.native_decide.ax_1_1",
+      "D0.Representation.SourcePortPreparation.coupled",
+      "D0.Representation.SourcePortPreparation.coupled._proof_1",
+      "D0.Representation.SourcePortPreparation.coupled.eq_1",
+      "D0.Representation.SourcePortPreparation.coupled_fourth",
+      "D0.Representation.SourcePortPreparation.coupled_interaction_witness",
+      "D0.Representation.SourcePortPreparation.coupled_interaction_witness._native.native_decide.ax_1_3",
+      "D0.Representation.SourcePortPreparation.coupled_not_independent",
+      "D0.Representation.SourcePortPreparation.coupled_preserves_metric",
+      "D0.Representation.SourcePortPreparation.coupled_preserves_metric._native.native_decide.ax_1_2",
+      "D0.Representation.SourcePortPreparation.coupled_square",
+      "D0.Representation.SourcePortPreparation.coupled_square._native.native_decide.ax_1_3",
+      "D0.Representation.SourcePortPreparation.degreePort",
+      "D0.Representation.SourcePortPreparation.degreePort_from_spectrum",
+      "D0.Representation.SourcePortPreparation.degreePort_from_spectrum._native.native_decide.ax_1_1",
+      "D0.Representation.SourcePortPreparation.frame",
+      "D0.Representation.SourcePortPreparation.frame_from_source",
+      "D0.Representation.SourcePortPreparation.frame_from_source._native.native_decide.ax_1_1",
+      "D0.Representation.SourcePortPreparation.frame_metric",
+      "D0.Representation.SourcePortPreparation.frame_metric._native.native_decide.ax_1_1",
+      "D0.Representation.SourcePortPreparation.independent_actions_zero_minor",
+      "D0.Representation.SourcePortPreparation.inputPort",
+      "D0.Representation.SourcePortPreparation.inputPort_explicit",
+      "D0.Representation.SourcePortPreparation.inputPort_explicit._native.native_decide.ax_1_1",
+      "D0.Representation.SourcePortPreparation.inputPort_recovers_q",
+      "D0.Representation.SourcePortPreparation.interactionGenerator",
+      "D0.Representation.SourcePortPreparation.interactionGenerator.eq_1",
+      "D0.Representation.SourcePortPreparation.interactionMinor",
+      "D0.Representation.SourcePortPreparation.interactionMinor._proof_1",
+      "D0.Representation.SourcePortPreparation.interactionMinor._proof_2",
+      "D0.Representation.SourcePortPreparation.interactionMinor.eq_1",
+      "D0.Representation.SourcePortPreparation.interaction_generator_skew",
+      "D0.Representation.SourcePortPreparation.interaction_generator_skew._native.native_decide.ax_1_2",
+      "D0.Representation.SourcePortPreparation.interaction_generator_square",
+      "D0.Representation.SourcePortPreparation.interaction_generator_square._native.native_decide.ax_1_2",
+      "D0.Representation.SourcePortPreparation.jointMetric",
+      "D0.Representation.SourcePortPreparation.local_gate_from_generator",
+      "D0.Representation.SourcePortPreparation.local_gate_from_generator._native.native_decide.ax_1_3",
+      "D0.Representation.SourcePortPreparation.port_metric",
+      "D0.Representation.SourcePortPreparation.port_metric._native.native_decide.ax_1_1",
+      "D0.Representation.SourcePortPreparation.port_projectors",
+      "D0.Representation.SourcePortPreparation.port_projectors._native.native_decide.ax_1_1",
+      "D0.Representation.SourcePortPreparation.port_ranks",
+      "D0.Representation.SourcePortPreparation.port_ranks._native.native_decide.ax_1_1",
+      "D0.Representation.SourcePortPreparation.preparation_conservation",
+      "D0.Representation.SourcePortPreparation.preparation_conservation._native.native_decide.ax_1_1",
+      "D0.Representation.SourcePortPreparation.prepare_is_not_injective",
+      "D0.Representation.SourcePortPreparation.prepare_is_not_injective._native.native_decide.ax_1_1",
+      "D0.Representation.SourcePortPreparation.prepare_with_archive_recovers",
+      "D0.Representation.SourcePortPreparation.q",
+      "D0.Representation.SourcePortPreparation.q.eq_1",
+      "D0.Representation.SourcePortPreparation.r",
+      "D0.Representation.SourcePortPreparation.reversal",
+      "D0.Representation.SourcePortPreparation.reversal.eq_1",
+      "D0.Representation.SourcePortPreparation.reversal_involution",
+      "D0.Representation.SourcePortPreparation.reversal_involution._native.native_decide.ax_1_1",
+      "D0.Representation.SourcePortPreparation.reversal_metric",
+      "D0.Representation.SourcePortPreparation.reversal_metric._native.native_decide.ax_1_1",
+      "D0.Representation.SourcePortPreparation.reversal_preserves_neutral",
+      "D0.Representation.SourcePortPreparation.reversal_preserves_neutral._native.native_decide.ax_1_1",
+      "D0.Representation.SourcePortPreparation.reversal_reverses_generator",
+      "D0.Representation.SourcePortPreparation.reversal_reverses_generator._native.native_decide.ax_1_1",
+      "D0.Representation.SourcePortPreparation.signalPort",
+      "D0.Representation.SourcePortPreparation.signalPort_explicit",
+      "D0.Representation.SourcePortPreparation.signalPort_explicit._native.native_decide.ax_1_1",
+      "Matrix.kroneckerMap.eq_1"
+    ]
+  },
   "declarations": [
     {
       "axioms": [
@@ -59,7 +133,6 @@
         "Rat.instIntCast",
         "instOfNatNat"
       ],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "D0.Representation.SourcePortPreparation.M3"
       ],
@@ -113,7 +186,6 @@
         "Rat.instIntCast",
         "instOfNatNat"
       ],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "D0.Representation.SourcePortPreparation.M3"
       ],
@@ -160,7 +232,6 @@
         "Rat",
         "instOfNatNat"
       ],
-      "proof_details_status": "collected",
       "type_dependencies": [],
       "source_path": "03_FORMALIZATION/D0/Representation/SourcePortPreparation.lean"
     },
@@ -204,7 +275,6 @@
         "Rat",
         "instOfNatNat"
       ],
-      "proof_details_status": "collected",
       "type_dependencies": [],
       "source_path": "03_FORMALIZATION/D0/Representation/SourcePortPreparation.lean"
     },
@@ -247,7 +317,6 @@
         "Rat",
         "instOfNatNat"
       ],
-      "proof_details_status": "collected",
       "type_dependencies": [],
       "source_path": "03_FORMALIZATION/D0/Representation/SourcePortPreparation.lean"
     },
@@ -303,7 +372,6 @@
         "Rat.instMul",
         "instOfNatNat"
       ],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "D0.Representation.SourcePortPreparation.M3"
       ],
@@ -365,7 +433,6 @@
         "instOfNatNat",
         "of_decide_eq_true"
       ],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "D0.Representation.SourcePortPreparation.compressed",
         "Eq",
@@ -422,7 +489,6 @@
       "module": "D0.Representation.SourcePortPreparation",
       "name": "D0.Representation.SourcePortPreparation.compression_normalization._native.native_decide.ax_1_1",
       "proof_dependencies": [],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "Bool",
         "Bool.true",
@@ -519,7 +585,6 @@
         "instMulZeroClassOfSemiring",
         "instOfNatNat"
       ],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "D0.Representation.SourcePortPreparation.M12"
       ],
@@ -544,7 +609,6 @@
         "OfNat.ofNat",
         "instOfNatNat"
       ],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "HAdd.hAdd",
         "Nat",
@@ -577,7 +641,6 @@
         "D0.Representation.SourcePortPreparation.coupled",
         "Eq.refl"
       ],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "AddGroupWithOne.toAddMonoidWithOne",
         "AddMonoidWithOne.toOne",
@@ -738,7 +801,6 @@
         "pow_succ",
         "pow_zero"
       ],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "AddGroupWithOne.toAddMonoidWithOne",
         "AddMonoidWithOne.toOne",
@@ -880,7 +942,6 @@
         "instOfNatNat",
         "of_decide_eq_true"
       ],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "D0.Representation.SourcePortPreparation.coupled",
         "D0.Representation.SourcePortPreparation.interactionMinor",
@@ -932,7 +993,6 @@
       "module": "D0.Representation.SourcePortPreparation",
       "name": "D0.Representation.SourcePortPreparation.coupled_interaction_witness._native.native_decide.ax_1_3",
       "proof_dependencies": [],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "AddGroupWithOne.toAddMonoidWithOne",
         "AddMonoidWithOne.toOne",
@@ -1105,7 +1165,6 @@
         "instHMul",
         "instOfNatNat"
       ],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "D0.Algebra.finiteMatrixTensorProduct",
         "D0.Representation.SourcePortPreparation.M12",
@@ -1231,7 +1290,6 @@
         "instOfNatNat",
         "of_decide_eq_true"
       ],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "D0.Representation.SourcePortPreparation.M12",
         "D0.Representation.SourcePortPreparation.coupled",
@@ -1292,7 +1350,6 @@
       "module": "D0.Representation.SourcePortPreparation",
       "name": "D0.Representation.SourcePortPreparation.coupled_preserves_metric._native.native_decide.ax_1_2",
       "proof_dependencies": [],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "AddGroupWithOne.toAddMonoidWithOne",
         "AddMonoidWithOne.toOne",
@@ -1471,7 +1528,6 @@
         "instOfNatNat",
         "of_decide_eq_true"
       ],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "AddGroupWithOne.toAddMonoidWithOne",
         "AddMonoidWithOne.toOne",
@@ -1545,7 +1601,6 @@
       "module": "D0.Representation.SourcePortPreparation",
       "name": "D0.Representation.SourcePortPreparation.coupled_square._native.native_decide.ax_1_3",
       "proof_dependencies": [],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "AddGroupWithOne.toAddMonoidWithOne",
         "AddMonoid.toNSMul",
@@ -1693,7 +1748,6 @@
         "instOfNatNat",
         "instSMulOfMul"
       ],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "D0.Representation.SourcePortPreparation.M3"
       ],
@@ -1760,7 +1814,6 @@
         "instOfNatNat",
         "of_decide_eq_true"
       ],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "D0.Representation.SourcePortPreparation.M3",
         "D0.Representation.SourcePortPreparation.degreePort",
@@ -1820,7 +1873,6 @@
       "module": "D0.Representation.SourcePortPreparation",
       "name": "D0.Representation.SourcePortPreparation.degreePort_from_spectrum._native.native_decide.ax_1_1",
       "proof_dependencies": [],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "Bool",
         "Bool.true",
@@ -1901,7 +1953,6 @@
         "Rat.instOfNat",
         "instOfNatNat"
       ],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "Fin",
         "Matrix",
@@ -1988,7 +2039,6 @@
         "instOfNatNat",
         "of_decide_eq_true"
       ],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "And",
         "D0.Representation.SourcePortPreparation.V3",
@@ -2063,7 +2113,6 @@
       "module": "D0.Representation.SourcePortPreparation",
       "name": "D0.Representation.SourcePortPreparation.frame_from_source._native.native_decide.ax_1_1",
       "proof_dependencies": [],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "And",
         "Bool",
@@ -2172,7 +2221,6 @@
         "instOfNatNat",
         "of_decide_eq_true"
       ],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "D0.Integration.V15.RawZone.Gq",
         "D0.Representation.SourcePortPreparation.frame",
@@ -2238,7 +2286,6 @@
       "module": "D0.Representation.SourcePortPreparation",
       "name": "D0.Representation.SourcePortPreparation.frame_metric._native.native_decide.ax_1_1",
       "proof_dependencies": [],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "Bool",
         "Bool.true",
@@ -2417,7 +2464,6 @@
         "instOfNatNat",
         "rfl"
       ],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "D0.Algebra.finiteMatrixTensorProduct",
         "D0.Representation.SourcePortPreparation.M3",
@@ -2485,7 +2531,6 @@
         "instHSub",
         "instOfNatNat"
       ],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "D0.Representation.SourcePortPreparation.M3"
       ],
@@ -2555,7 +2600,6 @@
         "instOfNatNat",
         "of_decide_eq_true"
       ],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "D0.Representation.SourcePortPreparation.M3",
         "D0.Representation.SourcePortPreparation.inputPort",
@@ -2618,7 +2662,6 @@
       "module": "D0.Representation.SourcePortPreparation",
       "name": "D0.Representation.SourcePortPreparation.inputPort_explicit._native.native_decide.ax_1_1",
       "proof_dependencies": [],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "Bool",
         "Bool.true",
@@ -2872,7 +2915,6 @@
         "rfl",
         "zero_add"
       ],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "D0.Representation.SourcePortPreparation.V3",
         "D0.Representation.SourcePortPreparation.inputPort",
@@ -2960,7 +3002,6 @@
         "Rat.instMul",
         "instOfNatNat"
       ],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "D0.Representation.SourcePortPreparation.M12"
       ],
@@ -2986,7 +3027,6 @@
         "D0.Representation.SourcePortPreparation.interactionGenerator",
         "Eq.refl"
       ],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "D0.Algebra.finiteMatrixTensorProduct",
         "D0.Representation.OrderMemoryReadout.spin",
@@ -3066,7 +3106,6 @@
         "instHSub",
         "instOfNatNat"
       ],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "D0.Representation.SourcePortPreparation.M12",
         "Rat"
@@ -3092,7 +3131,6 @@
         "OfNat.ofNat",
         "instOfNatNat"
       ],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "HAdd.hAdd",
         "Nat",
@@ -3124,7 +3162,6 @@
         "OfNat.ofNat",
         "instOfNatNat"
       ],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "HAdd.hAdd",
         "Nat",
@@ -3165,7 +3202,6 @@
         "Eq.refl",
         "Rat"
       ],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "D0.Representation.SourcePortPreparation.M12",
         "D0.Representation.SourcePortPreparation.interactionMinor",
@@ -3277,7 +3313,6 @@
         "instOfNatNat",
         "of_decide_eq_true"
       ],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "D0.Representation.SourcePortPreparation.M12",
         "D0.Representation.SourcePortPreparation.interactionGenerator",
@@ -3341,7 +3376,6 @@
       "module": "D0.Representation.SourcePortPreparation",
       "name": "D0.Representation.SourcePortPreparation.interaction_generator_skew._native.native_decide.ax_1_2",
       "proof_dependencies": [],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "Bool",
         "Bool.true",
@@ -3486,7 +3520,6 @@
         "instOfNatNat",
         "of_decide_eq_true"
       ],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "AddGroupWithOne.toAddMonoidWithOne",
         "AddMonoidWithOne.toOne",
@@ -3563,7 +3596,6 @@
       "module": "D0.Representation.SourcePortPreparation",
       "name": "D0.Representation.SourcePortPreparation.interaction_generator_square._native.native_decide.ax_1_2",
       "proof_dependencies": [],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "AddGroupWithOne.toAddMonoidWithOne",
         "AddMonoidWithOne.toOne",
@@ -3679,7 +3711,6 @@
         "instMulZeroClassOfSemiring",
         "instOfNatNat"
       ],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "D0.Representation.SourcePortPreparation.M12"
       ],
@@ -3797,7 +3828,6 @@
         "instOfNatNat",
         "of_decide_eq_true"
       ],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "AddGroupWithOne.toAddMonoidWithOne",
         "AddMonoidWithOne.toOne",
@@ -3875,7 +3905,6 @@
       "module": "D0.Representation.SourcePortPreparation",
       "name": "D0.Representation.SourcePortPreparation.local_gate_from_generator._native.native_decide.ax_1_3",
       "proof_dependencies": [],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "AddGroupWithOne.toAddMonoidWithOne",
         "AddMonoidWithOne.toOne",
@@ -4000,7 +4029,6 @@
         "instOfNatNat",
         "of_decide_eq_true"
       ],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "And",
         "D0.Integration.V15.RawZone.Gq",
@@ -4061,7 +4089,6 @@
       "module": "D0.Representation.SourcePortPreparation",
       "name": "D0.Representation.SourcePortPreparation.port_metric._native.native_decide.ax_1_1",
       "proof_dependencies": [],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "And",
         "Bool",
@@ -4160,7 +4187,6 @@
         "instOfNatNat",
         "of_decide_eq_true"
       ],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "And",
         "D0.Integration.V15.RawZone.Pact",
@@ -4229,7 +4255,6 @@
       "module": "D0.Representation.SourcePortPreparation",
       "name": "D0.Representation.SourcePortPreparation.port_projectors._native.native_decide.ax_1_1",
       "proof_dependencies": [],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "And",
         "Bool",
@@ -4322,7 +4347,6 @@
         "instOfNatNat",
         "of_decide_eq_true"
       ],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "And",
         "D0.Representation.SourcePortPreparation.inputPort",
@@ -4378,7 +4402,6 @@
       "module": "D0.Representation.SourcePortPreparation",
       "name": "D0.Representation.SourcePortPreparation.port_ranks._native.native_decide.ax_1_1",
       "proof_dependencies": [],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "And",
         "Bool",
@@ -4481,7 +4504,6 @@
         "instOfNatNat",
         "of_decide_eq_true"
       ],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "AddGroupWithOne.toAddMonoidWithOne",
         "AddMonoidWithOne.toOne",
@@ -4561,7 +4583,6 @@
       "module": "D0.Representation.SourcePortPreparation",
       "name": "D0.Representation.SourcePortPreparation.preparation_conservation._native.native_decide.ax_1_1",
       "proof_dependencies": [],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "AddGroupWithOne.toAddMonoidWithOne",
         "AddMonoidWithOne.toOne",
@@ -4696,7 +4717,6 @@
         "of_decide_eq_true",
         "one_ne_zero._simp_1"
       ],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "D0.Representation.SourcePortPreparation.inputPort",
         "Fin",
@@ -4756,7 +4776,6 @@
       "module": "D0.Representation.SourcePortPreparation",
       "name": "D0.Representation.SourcePortPreparation.prepare_is_not_injective._native.native_decide.ax_1_1",
       "proof_dependencies": [],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "Bool",
         "Bool.true",
@@ -4891,7 +4910,6 @@
         "instOfNatNat",
         "of_eq_true"
       ],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "AddGroupWithOne.toAddMonoidWithOne",
         "AddMonoidWithOne.toOne",
@@ -4977,7 +4995,6 @@
         "Rat.instOfNat",
         "instOfNatNat"
       ],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "D0.Representation.SourcePortPreparation.V3"
       ],
@@ -5002,7 +5019,6 @@
         "D0.Representation.SourcePortPreparation.q",
         "Eq.refl"
       ],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "D0.Representation.SourcePortPreparation.V3",
         "D0.Representation.SourcePortPreparation.q",
@@ -5071,7 +5087,6 @@
         "Rat.instNormedField",
         "instOfNatNat"
       ],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "D0.Representation.SourcePortPreparation.V3"
       ],
@@ -5144,7 +5159,6 @@
         "instMulZeroClassOfSemiring",
         "instOfNatNat"
       ],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "D0.Representation.SourcePortPreparation.M3"
       ],
@@ -5170,7 +5184,6 @@
         "D0.Representation.SourcePortPreparation.reversal",
         "Eq.refl"
       ],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "AddGroupWithOne.toAddMonoidWithOne",
         "AddMonoid.toNSMul",
@@ -5276,7 +5289,6 @@
         "instOfNatNat",
         "of_decide_eq_true"
       ],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "AddGroupWithOne.toAddMonoidWithOne",
         "AddMonoidWithOne.toOne",
@@ -5346,7 +5358,6 @@
       "module": "D0.Representation.SourcePortPreparation",
       "name": "D0.Representation.SourcePortPreparation.reversal_involution._native.native_decide.ax_1_1",
       "proof_dependencies": [],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "AddGroupWithOne.toAddMonoidWithOne",
         "AddMonoidWithOne.toOne",
@@ -5442,7 +5453,6 @@
         "instOfNatNat",
         "of_decide_eq_true"
       ],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "D0.Integration.V15.RawZone.Gq",
         "D0.Representation.SourcePortPreparation.M3",
@@ -5501,7 +5511,6 @@
       "module": "D0.Representation.SourcePortPreparation",
       "name": "D0.Representation.SourcePortPreparation.reversal_metric._native.native_decide.ax_1_1",
       "proof_dependencies": [],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "Bool",
         "Bool.true",
@@ -5587,7 +5596,6 @@
         "instOfNatNat",
         "of_decide_eq_true"
       ],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "And",
         "D0.Integration.V15.RawZone.P0",
@@ -5646,7 +5654,6 @@
       "module": "D0.Representation.SourcePortPreparation",
       "name": "D0.Representation.SourcePortPreparation.reversal_preserves_neutral._native.native_decide.ax_1_1",
       "proof_dependencies": [],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "And",
         "Bool",
@@ -5734,7 +5741,6 @@
         "instOfNatNat",
         "of_decide_eq_true"
       ],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "D0.Representation.SourcePortPreparation.K",
         "D0.Representation.SourcePortPreparation.M3",
@@ -5795,7 +5801,6 @@
       "module": "D0.Representation.SourcePortPreparation",
       "name": "D0.Representation.SourcePortPreparation.reversal_reverses_generator._native.native_decide.ax_1_1",
       "proof_dependencies": [],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "Bool",
         "Bool.true",
@@ -5877,7 +5882,6 @@
         "instOfNatNat",
         "instSMulOfMul"
       ],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "D0.Representation.SourcePortPreparation.M3"
       ],
@@ -5949,7 +5953,6 @@
         "instOfNatNat",
         "of_decide_eq_true"
       ],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "D0.Representation.SourcePortPreparation.M3",
         "D0.Representation.SourcePortPreparation.signalPort",
@@ -6014,7 +6017,6 @@
       "module": "D0.Representation.SourcePortPreparation",
       "name": "D0.Representation.SourcePortPreparation.signalPort_explicit._native.native_decide.ax_1_1",
       "proof_dependencies": [],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "Bool",
         "Bool.true",
@@ -6127,7 +6129,6 @@
         "Matrix.kroneckerMap",
         "Prod"
       ],
-      "proof_details_status": "collected",
       "type_dependencies": [
         "DFunLike.coe",
         "Eq",

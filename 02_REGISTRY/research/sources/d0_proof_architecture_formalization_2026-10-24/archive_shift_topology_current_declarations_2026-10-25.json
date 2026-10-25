@@ -1,0 +1,1522 @@
+{
+  "schema": "d0-lean-declaration-inventory-v1",
+  "snapshot_commit": "db3a201a7e8f4529e45effa4d71e578d1d0e3733",
+  "worktree_dirty": false,
+  "claim_registry_sha256": null,
+  "lean_source_digest": "84495a35213e0664f044c79b1642f135386189a139d85b6d25b1cb0309d34b3b",
+  "collector_sha256": "4cdcc682b0b2ff80a9646052f2e275b28e211619d9cf4dbd6058734cb7b2cd8c",
+  "toolchain": "leanprover/lean4:v4.30.0",
+  "public_import_root": "D0.All",
+  "resolution_only": false,
+  "request": {
+    "full_names": [
+      "D0.Topology.shiftMatrix",
+      "D0.Topology.shift_matrix_mul_right",
+      "D0.Topology.shift_matrix_mul_left",
+      "D0.Topology.commute_with_shift_step",
+      "D0.Topology.commute_with_shift_iterate",
+      "D0.Topology.abstract_shift_commute_implies_diagonal_constant",
+      "D0.Geometry.archiveShiftMatrix",
+      "D0.Geometry.shift_matrix_mul_right",
+      "D0.Geometry.shift_matrix_mul_left",
+      "D0.Geometry.commute_with_shift_step",
+      "D0.Geometry.commute_with_shift_k",
+      "D0.Geometry.commute_with_shift_implies_diagonal_constant"
+    ]
+  },
+  "declarations": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "N",
+          "type": "Type"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Topology.ArchiveShiftTopology.1016751411._hygCtx._hyg.3",
+          "type": "Fintype N"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Topology.ArchiveShiftTopology.1016751411._hygCtx._hyg.6",
+          "type": "(a b : N) → Decidable (a = b)"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "f",
+          "type": "N ≃ N"
+        }
+      ],
+      "conclusion_whnf": "N → N → ℝ",
+      "declaration_kind": "definition",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 37,
+            "line": 16
+          },
+          "start": {
+            "column": 0,
+            "line": 15
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 15,
+            "line": 15
+          },
+          "start": {
+            "column": 4,
+            "line": 15
+          }
+        }
+      },
+      "elaborated_type": "{N : Type} → [Fintype N] → [DecidableEq N] → Equiv.Perm N → Matrix N N ℝ",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Topology.ArchiveShiftTopology",
+      "name": "D0.Topology.shiftMatrix",
+      "proof_dependencies": [
+        "DFunLike.coe",
+        "DecidableEq",
+        "Eq",
+        "Equiv.Perm",
+        "Equiv.instEquivLike",
+        "EquivLike.toFunLike",
+        "Fintype",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Real",
+        "Real.instOne",
+        "Real.instZero",
+        "Zero.toOfNat0",
+        "ite"
+      ],
+      "type_dependencies": [
+        "DecidableEq",
+        "Equiv.Perm",
+        "Fintype",
+        "Matrix",
+        "Real"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Topology/ArchiveShiftTopology.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "N",
+          "type": "Type"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Topology.ArchiveShiftTopology.4132890184._hygCtx._hyg.3",
+          "type": "Fintype N"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Topology.ArchiveShiftTopology.4132890184._hygCtx._hyg.6",
+          "type": "(a b : N) → Decidable (a = b)"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "M",
+          "type": "N → N → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "f",
+          "type": "N ≃ N"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "i",
+          "type": "N"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "j",
+          "type": "N"
+        }
+      ],
+      "conclusion_whnf": "(M * D0.Topology.shiftMatrix f) i j = M i ((Equiv.symm f) j)",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 44,
+            "line": 33
+          },
+          "start": {
+            "column": 0,
+            "line": 18
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 30,
+            "line": 18
+          },
+          "start": {
+            "column": 8,
+            "line": 18
+          }
+        }
+      },
+      "elaborated_type": "∀ {N : Type} [inst : Fintype N] [inst_1 : DecidableEq N] (M : Matrix N N ℝ) (f : Equiv.Perm N) (i j : N),\n  (M * D0.Topology.shiftMatrix f) i j = M i ((Equiv.symm f) j)",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Topology.ArchiveShiftTopology",
+      "name": "D0.Topology.shift_matrix_mul_right",
+      "proof_dependencies": [
+        "AddCommMonoid.toAddMonoid",
+        "AddMonoid.toAddZeroClass",
+        "AddZero.toZero",
+        "AddZeroClass.toAddZero",
+        "D0.Topology.shiftMatrix",
+        "DFunLike.coe",
+        "DecidableEq",
+        "Eq",
+        "Eq.mpr",
+        "Eq.refl",
+        "Eq.trans",
+        "Equiv",
+        "Equiv.Perm",
+        "Equiv.apply_symm_apply",
+        "Equiv.instEquivLike",
+        "Equiv.symm",
+        "Equiv.symm_apply_apply",
+        "EquivLike.toFunLike",
+        "False.elim",
+        "Finset",
+        "Finset.instSetLike",
+        "Finset.mem_univ",
+        "Finset.sum",
+        "Finset.sum_eq_single",
+        "Finset.univ",
+        "Fintype",
+        "HMul.hMul",
+        "Matrix",
+        "Matrix.instHMulOfFintypeOfMulOfAddCommMonoid",
+        "Matrix.mul_apply",
+        "Membership.mem",
+        "MulZeroClass.mul_zero",
+        "MulZeroClass.toMul",
+        "MulZeroClass.toZero",
+        "MulZeroOneClass.toMulOneClass",
+        "Ne",
+        "Not",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.instMul",
+        "Real.instOne",
+        "Real.instZero",
+        "Real.semiring",
+        "SetLike.instMembership",
+        "True",
+        "Zero.toOfNat0",
+        "congrArg",
+        "congrFun'",
+        "eq_self",
+        "id",
+        "if_neg",
+        "instHMul",
+        "instMulZeroClassOfSemiring",
+        "instMulZeroOneClassOfSemiring",
+        "ite",
+        "ite_cond_eq_true",
+        "mul_one",
+        "of_eq_true"
+      ],
+      "type_dependencies": [
+        "D0.Topology.shiftMatrix",
+        "DFunLike.coe",
+        "DecidableEq",
+        "Eq",
+        "Equiv",
+        "Equiv.Perm",
+        "Equiv.instEquivLike",
+        "Equiv.symm",
+        "EquivLike.toFunLike",
+        "Fintype",
+        "HMul.hMul",
+        "Matrix",
+        "Matrix.instHMulOfFintypeOfMulOfAddCommMonoid",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.instMul"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Topology/ArchiveShiftTopology.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "N",
+          "type": "Type"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Topology.ArchiveShiftTopology.427958463._hygCtx._hyg.3",
+          "type": "Fintype N"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Topology.ArchiveShiftTopology.427958463._hygCtx._hyg.6",
+          "type": "(a b : N) → Decidable (a = b)"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "M",
+          "type": "N → N → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "f",
+          "type": "N ≃ N"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "i",
+          "type": "N"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "j",
+          "type": "N"
+        }
+      ],
+      "conclusion_whnf": "(D0.Topology.shiftMatrix f * M) i j = M (f i) j",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 44,
+            "line": 44
+          },
+          "start": {
+            "column": 0,
+            "line": 35
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 29,
+            "line": 35
+          },
+          "start": {
+            "column": 8,
+            "line": 35
+          }
+        }
+      },
+      "elaborated_type": "∀ {N : Type} [inst : Fintype N] [inst_1 : DecidableEq N] (M : Matrix N N ℝ) (f : Equiv.Perm N) (i j : N),\n  (D0.Topology.shiftMatrix f * M) i j = M (f i) j",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Topology.ArchiveShiftTopology",
+      "name": "D0.Topology.shift_matrix_mul_left",
+      "proof_dependencies": [
+        "AddCommMonoid.toAddMonoid",
+        "AddMonoid.toAddZeroClass",
+        "AddZero.toZero",
+        "AddZeroClass.toAddZero",
+        "D0.Topology.shiftMatrix",
+        "DFunLike.coe",
+        "DecidableEq",
+        "Eq",
+        "Eq.mpr",
+        "Eq.refl",
+        "Eq.trans",
+        "Equiv.Perm",
+        "Equiv.instEquivLike",
+        "EquivLike.toFunLike",
+        "False.elim",
+        "Finset",
+        "Finset.instSetLike",
+        "Finset.mem_univ",
+        "Finset.sum",
+        "Finset.sum_eq_single",
+        "Finset.univ",
+        "Fintype",
+        "HMul.hMul",
+        "Matrix",
+        "Matrix.instHMulOfFintypeOfMulOfAddCommMonoid",
+        "Matrix.mul_apply",
+        "Membership.mem",
+        "MulZeroClass.toMul",
+        "MulZeroClass.toZero",
+        "MulZeroClass.zero_mul",
+        "MulZeroOneClass.toMulOneClass",
+        "Ne",
+        "Not",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.instMul",
+        "Real.instOne",
+        "Real.instZero",
+        "Real.semiring",
+        "SetLike.instMembership",
+        "True",
+        "Zero.toOfNat0",
+        "congrArg",
+        "congrFun'",
+        "eq_self",
+        "id",
+        "if_neg",
+        "instHMul",
+        "instMulZeroClassOfSemiring",
+        "instMulZeroOneClassOfSemiring",
+        "ite",
+        "ite_cond_eq_true",
+        "of_eq_true",
+        "one_mul"
+      ],
+      "type_dependencies": [
+        "D0.Topology.shiftMatrix",
+        "DFunLike.coe",
+        "DecidableEq",
+        "Eq",
+        "Equiv.Perm",
+        "Equiv.instEquivLike",
+        "EquivLike.toFunLike",
+        "Fintype",
+        "HMul.hMul",
+        "Matrix",
+        "Matrix.instHMulOfFintypeOfMulOfAddCommMonoid",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.instMul"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Topology/ArchiveShiftTopology.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "N",
+          "type": "Type"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Topology.ArchiveShiftTopology.3134392010._hygCtx._hyg.3",
+          "type": "Fintype N"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Topology.ArchiveShiftTopology.3134392010._hygCtx._hyg.6",
+          "type": "(a b : N) → Decidable (a = b)"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "M",
+          "type": "N → N → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "f",
+          "type": "N ≃ N"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "h",
+          "type": "M * D0.Topology.shiftMatrix f = D0.Topology.shiftMatrix f * M"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "i",
+          "type": "N"
+        }
+      ],
+      "conclusion_whnf": "M i i = M (f i) (f i)",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 14,
+            "line": 52
+          },
+          "start": {
+            "column": 0,
+            "line": 46
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 31,
+            "line": 46
+          },
+          "start": {
+            "column": 8,
+            "line": 46
+          }
+        }
+      },
+      "elaborated_type": "∀ {N : Type} [inst : Fintype N] [inst_1 : DecidableEq N] (M : Matrix N N ℝ) (f : Equiv.Perm N),\n  M * D0.Topology.shiftMatrix f = D0.Topology.shiftMatrix f * M → ∀ (i : N), M i i = M (f i) (f i)",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Topology.ArchiveShiftTopology",
+      "name": "D0.Topology.commute_with_shift_step",
+      "proof_dependencies": [
+        "D0.Topology.shiftMatrix",
+        "D0.Topology.shift_matrix_mul_left",
+        "D0.Topology.shift_matrix_mul_right",
+        "DFunLike.coe",
+        "DecidableEq",
+        "Eq",
+        "Eq.mp",
+        "Equiv",
+        "Equiv.Perm",
+        "Equiv.instEquivLike",
+        "Equiv.symm",
+        "Equiv.symm_apply_apply",
+        "EquivLike.toFunLike",
+        "Fintype",
+        "HMul.hMul",
+        "Matrix",
+        "Matrix.instHMulOfFintypeOfMulOfAddCommMonoid",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.instMul",
+        "congrArg",
+        "congr_fun"
+      ],
+      "type_dependencies": [
+        "D0.Topology.shiftMatrix",
+        "DFunLike.coe",
+        "DecidableEq",
+        "Eq",
+        "Equiv.Perm",
+        "Equiv.instEquivLike",
+        "EquivLike.toFunLike",
+        "Fintype",
+        "HMul.hMul",
+        "Matrix",
+        "Matrix.instHMulOfFintypeOfMulOfAddCommMonoid",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.instMul"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Topology/ArchiveShiftTopology.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "N",
+          "type": "Type"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Topology.ArchiveShiftTopology.315529186._hygCtx._hyg.3",
+          "type": "Fintype N"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Topology.ArchiveShiftTopology.315529186._hygCtx._hyg.6",
+          "type": "(a b : N) → Decidable (a = b)"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "M",
+          "type": "N → N → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "f",
+          "type": "N ≃ N"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "h",
+          "type": "M * D0.Topology.shiftMatrix f = D0.Topology.shiftMatrix f * M"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "i",
+          "type": "N"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "k",
+          "type": "ℕ"
+        }
+      ],
+      "conclusion_whnf": "M i i = M ((⇑f)^[k] i) ((⇑f)^[k] i)",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 61,
+            "line": 63
+          },
+          "start": {
+            "column": 0,
+            "line": 54
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 32,
+            "line": 54
+          },
+          "start": {
+            "column": 6,
+            "line": 54
+          }
+        }
+      },
+      "elaborated_type": "∀ {N : Type} [inst : Fintype N] [inst_1 : DecidableEq N] (M : Matrix N N ℝ) (f : Equiv.Perm N),\n  M * D0.Topology.shiftMatrix f = D0.Topology.shiftMatrix f * M → ∀ (i : N) (k : ℕ), M i i = M ((⇑f)^[k] i) ((⇑f)^[k] i)",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Topology.ArchiveShiftTopology",
+      "name": "D0.Topology.commute_with_shift_iterate",
+      "proof_dependencies": [
+        "D0.Topology.commute_with_shift_step",
+        "D0.Topology.shiftMatrix",
+        "DFunLike.coe",
+        "DecidableEq",
+        "Eq",
+        "Eq.mpr",
+        "Eq.refl",
+        "Equiv.Perm",
+        "Equiv.instEquivLike",
+        "EquivLike.toFunLike",
+        "Fintype",
+        "Function.comp",
+        "Function.iterate_succ'",
+        "HAdd.hAdd",
+        "HMul.hMul",
+        "Matrix",
+        "Matrix.instHMulOfFintypeOfMulOfAddCommMonoid",
+        "Nat",
+        "Nat.iterate",
+        "Nat.recAux",
+        "Nat.succ",
+        "OfNat.ofNat",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.instMul",
+        "congrArg",
+        "id",
+        "instAddNat",
+        "instHAdd",
+        "instOfNatNat"
+      ],
+      "type_dependencies": [
+        "D0.Topology.shiftMatrix",
+        "DFunLike.coe",
+        "DecidableEq",
+        "Eq",
+        "Equiv.Perm",
+        "Equiv.instEquivLike",
+        "EquivLike.toFunLike",
+        "Fintype",
+        "HMul.hMul",
+        "Matrix",
+        "Matrix.instHMulOfFintypeOfMulOfAddCommMonoid",
+        "Nat",
+        "Nat.iterate",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.instMul"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Topology/ArchiveShiftTopology.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "N",
+          "type": "Type"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Topology.ArchiveShiftTopology.609480789._hygCtx._hyg.3",
+          "type": "Fintype N"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Topology.ArchiveShiftTopology.609480789._hygCtx._hyg.6",
+          "type": "(a b : N) → Decidable (a = b)"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "M",
+          "type": "N → N → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "topo",
+          "type": "D0.Topology.ArchiveTopology N"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "h",
+          "type": "M * D0.Topology.shiftMatrix topo.shift = D0.Topology.shiftMatrix topo.shift * M"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "i",
+          "type": "N"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "j",
+          "type": "N"
+        }
+      ],
+      "conclusion_whnf": "M i i = M j j",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 12,
+            "line": 72
+          },
+          "start": {
+            "column": 0,
+            "line": 65
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 56,
+            "line": 65
+          },
+          "start": {
+            "column": 8,
+            "line": 65
+          }
+        }
+      },
+      "elaborated_type": "∀ {N : Type} [inst : Fintype N] [inst_1 : DecidableEq N] (M : Matrix N N ℝ) (topo : D0.Topology.ArchiveTopology N),\n  M * D0.Topology.shiftMatrix topo.shift = D0.Topology.shiftMatrix topo.shift * M → ∀ (i j : N), M i i = M j j",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Topology.ArchiveShiftTopology",
+      "name": "D0.Topology.abstract_shift_commute_implies_diagonal_constant",
+      "proof_dependencies": [
+        "D0.Topology.ArchiveTopology",
+        "D0.Topology.ArchiveTopology.is_single_orbit",
+        "D0.Topology.ArchiveTopology.shift",
+        "D0.Topology.commute_with_shift_iterate",
+        "D0.Topology.shiftMatrix",
+        "DFunLike.coe",
+        "DecidableEq",
+        "Eq",
+        "Eq.mp",
+        "Equiv.Perm",
+        "Equiv.instEquivLike",
+        "EquivLike.toFunLike",
+        "Exists",
+        "Exists.casesOn",
+        "Fintype",
+        "HMul.hMul",
+        "Matrix",
+        "Matrix.instHMulOfFintypeOfMulOfAddCommMonoid",
+        "Nat",
+        "Nat.iterate",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.instMul",
+        "congrArg"
+      ],
+      "type_dependencies": [
+        "D0.Topology.ArchiveTopology",
+        "D0.Topology.ArchiveTopology.shift",
+        "D0.Topology.shiftMatrix",
+        "DecidableEq",
+        "Eq",
+        "Fintype",
+        "HMul.hMul",
+        "Matrix",
+        "Matrix.instHMulOfFintypeOfMulOfAddCommMonoid",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.instMul"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Topology/ArchiveShiftTopology.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "n",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": true,
+          "name": "inst._@.D0.Geometry.ArchivePhaseShift.3493711816._hygCtx._hyg.5",
+          "type": "NeZero n"
+        }
+      ],
+      "conclusion_whnf": "ZMod n → ZMod n → ℝ",
+      "declaration_kind": "definition",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 46,
+            "line": 18
+          },
+          "start": {
+            "column": 0,
+            "line": 17
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 22,
+            "line": 17
+          },
+          "start": {
+            "column": 4,
+            "line": 17
+          }
+        }
+      },
+      "elaborated_type": "(n : ℕ) → [NeZero n] → Matrix (ZMod n) (ZMod n) ℝ",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchivePhaseShift",
+      "name": "D0.Geometry.archiveShiftMatrix",
+      "proof_dependencies": [
+        "D0.Topology.shiftMatrix",
+        "MulZeroClass.toZero",
+        "Nat",
+        "Nat.instMulZeroClass",
+        "NeZero",
+        "ZMod",
+        "ZMod.decidableEq",
+        "ZMod.fintype",
+        "_private.D0.Geometry.ArchivePhaseShift.0.D0.Geometry.archiveShiftPerm"
+      ],
+      "type_dependencies": [
+        "Matrix",
+        "MulZeroClass.toZero",
+        "Nat",
+        "Nat.instMulZeroClass",
+        "NeZero",
+        "Real",
+        "ZMod"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchivePhaseShift.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "n",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": true,
+          "name": "inst._@.D0.Geometry.ArchivePhaseShift.4132890184._hygCtx._hyg.5",
+          "type": "NeZero n"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "M",
+          "type": "ZMod n → ZMod n → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "i",
+          "type": "match n with\n| 0 => ℤ\n| n.succ => Fin (n + 1)"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "j",
+          "type": "match n with\n| 0 => ℤ\n| n.succ => Fin (n + 1)"
+        }
+      ],
+      "conclusion_whnf": "(M * D0.Geometry.archiveShiftMatrix n) i j = M i (j - 1)",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 67,
+            "line": 23
+          },
+          "start": {
+            "column": 0,
+            "line": 20
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 30,
+            "line": 20
+          },
+          "start": {
+            "column": 8,
+            "line": 20
+          }
+        }
+      },
+      "elaborated_type": "∀ {n : ℕ} [inst : NeZero n] (M : Matrix (ZMod n) (ZMod n) ℝ) (i j : ZMod n),\n  (M * D0.Geometry.archiveShiftMatrix n) i j = M i (j - 1)",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchivePhaseShift",
+      "name": "D0.Geometry.shift_matrix_mul_right",
+      "proof_dependencies": [
+        "AddGroup.toSubNegMonoid",
+        "AddGroupWithOne.toAddGroup",
+        "AddGroupWithOne.toAddMonoidWithOne",
+        "AddMonoidWithOne.toOne",
+        "CommRing.toRing",
+        "D0.Geometry.archiveShiftMatrix",
+        "D0.Topology.shift_matrix_mul_right",
+        "Eq",
+        "HMul.hMul",
+        "HSub.hSub",
+        "Matrix",
+        "Matrix.instHMulOfFintypeOfMulOfAddCommMonoid",
+        "MulZeroClass.toZero",
+        "Nat",
+        "Nat.instMulZeroClass",
+        "NeZero",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.instMul",
+        "Ring.toAddGroupWithOne",
+        "SubNegMonoid.toSub",
+        "ZMod",
+        "ZMod.commRing",
+        "ZMod.decidableEq",
+        "ZMod.fintype",
+        "_private.D0.Geometry.ArchivePhaseShift.0.D0.Geometry.archiveShiftPerm",
+        "id",
+        "instHSub"
+      ],
+      "type_dependencies": [
+        "AddGroup.toSubNegMonoid",
+        "AddGroupWithOne.toAddGroup",
+        "AddGroupWithOne.toAddMonoidWithOne",
+        "AddMonoidWithOne.toOne",
+        "CommRing.toRing",
+        "D0.Geometry.archiveShiftMatrix",
+        "Eq",
+        "HMul.hMul",
+        "HSub.hSub",
+        "Matrix",
+        "Matrix.instHMulOfFintypeOfMulOfAddCommMonoid",
+        "MulZeroClass.toZero",
+        "Nat",
+        "Nat.instMulZeroClass",
+        "NeZero",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.instMul",
+        "Ring.toAddGroupWithOne",
+        "SubNegMonoid.toSub",
+        "ZMod",
+        "ZMod.commRing",
+        "ZMod.fintype",
+        "instHSub"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchivePhaseShift.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "n",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": true,
+          "name": "inst._@.D0.Geometry.ArchivePhaseShift.427958463._hygCtx._hyg.5",
+          "type": "NeZero n"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "M",
+          "type": "ZMod n → ZMod n → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "i",
+          "type": "match n with\n| 0 => ℤ\n| n.succ => Fin (n + 1)"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "j",
+          "type": "match n with\n| 0 => ℤ\n| n.succ => Fin (n + 1)"
+        }
+      ],
+      "conclusion_whnf": "(D0.Geometry.archiveShiftMatrix n * M) i j = M (i + 1) j",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 66,
+            "line": 28
+          },
+          "start": {
+            "column": 0,
+            "line": 25
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 29,
+            "line": 25
+          },
+          "start": {
+            "column": 8,
+            "line": 25
+          }
+        }
+      },
+      "elaborated_type": "∀ {n : ℕ} [inst : NeZero n] (M : Matrix (ZMod n) (ZMod n) ℝ) (i j : ZMod n),\n  (D0.Geometry.archiveShiftMatrix n * M) i j = M (i + 1) j",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchivePhaseShift",
+      "name": "D0.Geometry.shift_matrix_mul_left",
+      "proof_dependencies": [
+        "AddGroupWithOne.toAddMonoidWithOne",
+        "AddMonoidWithOne.toOne",
+        "CommRing.toCommSemiring",
+        "CommRing.toRing",
+        "CommSemiring.toSemiring",
+        "D0.Geometry.archiveShiftMatrix",
+        "D0.Topology.shift_matrix_mul_left",
+        "Distrib.toAdd",
+        "Eq",
+        "HAdd.hAdd",
+        "HMul.hMul",
+        "Matrix",
+        "Matrix.instHMulOfFintypeOfMulOfAddCommMonoid",
+        "MulZeroClass.toZero",
+        "Nat",
+        "Nat.instMulZeroClass",
+        "NeZero",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.instMul",
+        "Ring.toAddGroupWithOne",
+        "ZMod",
+        "ZMod.commRing",
+        "ZMod.decidableEq",
+        "ZMod.fintype",
+        "_private.D0.Geometry.ArchivePhaseShift.0.D0.Geometry.archiveShiftPerm",
+        "id",
+        "instDistribOfSemiring",
+        "instHAdd"
+      ],
+      "type_dependencies": [
+        "AddGroupWithOne.toAddMonoidWithOne",
+        "AddMonoidWithOne.toOne",
+        "CommRing.toCommSemiring",
+        "CommRing.toRing",
+        "CommSemiring.toSemiring",
+        "D0.Geometry.archiveShiftMatrix",
+        "Distrib.toAdd",
+        "Eq",
+        "HAdd.hAdd",
+        "HMul.hMul",
+        "Matrix",
+        "Matrix.instHMulOfFintypeOfMulOfAddCommMonoid",
+        "MulZeroClass.toZero",
+        "Nat",
+        "Nat.instMulZeroClass",
+        "NeZero",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.instMul",
+        "Ring.toAddGroupWithOne",
+        "ZMod",
+        "ZMod.commRing",
+        "ZMod.fintype",
+        "instDistribOfSemiring",
+        "instHAdd"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchivePhaseShift.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "n",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": true,
+          "name": "inst._@.D0.Geometry.ArchivePhaseShift.3134392010._hygCtx._hyg.5",
+          "type": "NeZero n"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "M",
+          "type": "ZMod n → ZMod n → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "h",
+          "type": "M * D0.Geometry.archiveShiftMatrix n = D0.Geometry.archiveShiftMatrix n * M"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "i",
+          "type": "match n with\n| 0 => ℤ\n| n.succ => Fin (n + 1)"
+        }
+      ],
+      "conclusion_whnf": "M i i = M (i + 1) (i + 1)",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 68,
+            "line": 34
+          },
+          "start": {
+            "column": 0,
+            "line": 30
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 31,
+            "line": 30
+          },
+          "start": {
+            "column": 8,
+            "line": 30
+          }
+        }
+      },
+      "elaborated_type": "∀ {n : ℕ} [inst : NeZero n] (M : Matrix (ZMod n) (ZMod n) ℝ),\n  M * D0.Geometry.archiveShiftMatrix n = D0.Geometry.archiveShiftMatrix n * M →\n    ∀ (i : ZMod n), M i i = M (i + 1) (i + 1)",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchivePhaseShift",
+      "name": "D0.Geometry.commute_with_shift_step",
+      "proof_dependencies": [
+        "D0.Geometry.archiveShiftMatrix",
+        "D0.Topology.commute_with_shift_step",
+        "Eq",
+        "HMul.hMul",
+        "Matrix",
+        "Matrix.instHMulOfFintypeOfMulOfAddCommMonoid",
+        "MulZeroClass.toZero",
+        "Nat",
+        "Nat.instMulZeroClass",
+        "NeZero",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.instMul",
+        "ZMod",
+        "ZMod.decidableEq",
+        "ZMod.fintype",
+        "_private.D0.Geometry.ArchivePhaseShift.0.D0.Geometry.archiveShiftPerm"
+      ],
+      "type_dependencies": [
+        "AddGroupWithOne.toAddMonoidWithOne",
+        "AddMonoidWithOne.toOne",
+        "CommRing.toCommSemiring",
+        "CommRing.toRing",
+        "CommSemiring.toSemiring",
+        "D0.Geometry.archiveShiftMatrix",
+        "Distrib.toAdd",
+        "Eq",
+        "HAdd.hAdd",
+        "HMul.hMul",
+        "Matrix",
+        "Matrix.instHMulOfFintypeOfMulOfAddCommMonoid",
+        "MulZeroClass.toZero",
+        "Nat",
+        "Nat.instMulZeroClass",
+        "NeZero",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.instMul",
+        "Ring.toAddGroupWithOne",
+        "ZMod",
+        "ZMod.commRing",
+        "ZMod.fintype",
+        "instDistribOfSemiring",
+        "instHAdd"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchivePhaseShift.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "n",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": true,
+          "name": "inst._@.D0.Geometry.ArchivePhaseShift.2326779961._hygCtx._hyg.5",
+          "type": "NeZero n"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "M",
+          "type": "ZMod n → ZMod n → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "h",
+          "type": "M * D0.Geometry.archiveShiftMatrix n = D0.Geometry.archiveShiftMatrix n * M"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "i",
+          "type": "match n with\n| 0 => ℤ\n| n.succ => Fin (n + 1)"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "k",
+          "type": "ℕ"
+        }
+      ],
+      "conclusion_whnf": "M i i = M (i + ↑k) (i + ↑k)",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 73,
+            "line": 55
+          },
+          "start": {
+            "column": 0,
+            "line": 49
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 26,
+            "line": 49
+          },
+          "start": {
+            "column": 6,
+            "line": 49
+          }
+        }
+      },
+      "elaborated_type": "∀ {n : ℕ} [inst : NeZero n] (M : Matrix (ZMod n) (ZMod n) ℝ),\n  M * D0.Geometry.archiveShiftMatrix n = D0.Geometry.archiveShiftMatrix n * M →\n    ∀ (i : ZMod n) (k : ℕ), M i i = M (i + ↑k) (i + ↑k)",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchivePhaseShift",
+      "name": "D0.Geometry.commute_with_shift_k",
+      "proof_dependencies": [
+        "AddGroupWithOne.toAddMonoidWithOne",
+        "AddMonoidWithOne.toNatCast",
+        "CommRing.toCommSemiring",
+        "CommRing.toRing",
+        "CommSemiring.toSemiring",
+        "D0.Geometry.archiveShiftMatrix",
+        "D0.Topology.commute_with_shift_iterate",
+        "D0.Topology.shiftMatrix",
+        "DFunLike.coe",
+        "Distrib.toAdd",
+        "Eq",
+        "Eq.mp",
+        "Equiv.Perm",
+        "Equiv.instEquivLike",
+        "EquivLike.toFunLike",
+        "HAdd.hAdd",
+        "HMul.hMul",
+        "Matrix",
+        "Matrix.instHMulOfFintypeOfMulOfAddCommMonoid",
+        "MulZeroClass.toZero",
+        "Nat",
+        "Nat.cast",
+        "Nat.instMulZeroClass",
+        "Nat.iterate",
+        "NeZero",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.instMul",
+        "Ring.toAddGroupWithOne",
+        "ZMod",
+        "ZMod.commRing",
+        "ZMod.decidableEq",
+        "ZMod.fintype",
+        "_private.D0.Geometry.ArchivePhaseShift.0.D0.Geometry.archiveShiftPerm",
+        "_private.D0.Geometry.ArchivePhaseShift.0.D0.Geometry.archiveShiftPerm_iterate",
+        "congr",
+        "congrArg",
+        "id",
+        "instDistribOfSemiring",
+        "instHAdd"
+      ],
+      "type_dependencies": [
+        "AddGroupWithOne.toAddMonoidWithOne",
+        "AddMonoidWithOne.toNatCast",
+        "CommRing.toCommSemiring",
+        "CommRing.toRing",
+        "CommSemiring.toSemiring",
+        "D0.Geometry.archiveShiftMatrix",
+        "Distrib.toAdd",
+        "Eq",
+        "HAdd.hAdd",
+        "HMul.hMul",
+        "Matrix",
+        "Matrix.instHMulOfFintypeOfMulOfAddCommMonoid",
+        "MulZeroClass.toZero",
+        "Nat",
+        "Nat.cast",
+        "Nat.instMulZeroClass",
+        "NeZero",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.instMul",
+        "Ring.toAddGroupWithOne",
+        "ZMod",
+        "ZMod.commRing",
+        "ZMod.fintype",
+        "instDistribOfSemiring",
+        "instHAdd"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchivePhaseShift.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "n",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": true,
+          "name": "inst._@.D0.Geometry.ArchivePhaseShift.394159261._hygCtx._hyg.5",
+          "type": "NeZero n"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "M",
+          "type": "ZMod n → ZMod n → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "h",
+          "type": "M * D0.Geometry.archiveShiftMatrix n = D0.Geometry.archiveShiftMatrix n * M"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "i",
+          "type": "match n with\n| 0 => ℤ\n| n.succ => Fin (n + 1)"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "j",
+          "type": "match n with\n| 0 => ℤ\n| n.succ => Fin (n + 1)"
+        }
+      ],
+      "conclusion_whnf": "M i i = M j j",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 36,
+            "line": 76
+          },
+          "start": {
+            "column": 0,
+            "line": 70
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 52,
+            "line": 70
+          },
+          "start": {
+            "column": 8,
+            "line": 70
+          }
+        }
+      },
+      "elaborated_type": "∀ {n : ℕ} [inst : NeZero n] (M : Matrix (ZMod n) (ZMod n) ℝ),\n  M * D0.Geometry.archiveShiftMatrix n = D0.Geometry.archiveShiftMatrix n * M → ∀ (i j : ZMod n), M i i = M j j",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchivePhaseShift",
+      "name": "D0.Geometry.commute_with_shift_implies_diagonal_constant",
+      "proof_dependencies": [
+        "D0.Geometry.archiveShiftMatrix",
+        "D0.Topology.abstract_shift_commute_implies_diagonal_constant",
+        "D0.Topology.shiftMatrix",
+        "Eq",
+        "HMul.hMul",
+        "Matrix",
+        "Matrix.instHMulOfFintypeOfMulOfAddCommMonoid",
+        "MulZeroClass.toZero",
+        "Nat",
+        "Nat.instMulZeroClass",
+        "NeZero",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.instMul",
+        "ZMod",
+        "ZMod.decidableEq",
+        "ZMod.fintype",
+        "_private.D0.Geometry.ArchivePhaseShift.0.D0.Geometry.archiveShiftPerm",
+        "_private.D0.Geometry.ArchivePhaseShift.0.D0.Geometry.archiveShiftTopology",
+        "id"
+      ],
+      "type_dependencies": [
+        "D0.Geometry.archiveShiftMatrix",
+        "Eq",
+        "HMul.hMul",
+        "Matrix",
+        "Matrix.instHMulOfFintypeOfMulOfAddCommMonoid",
+        "MulZeroClass.toZero",
+        "Nat",
+        "Nat.instMulZeroClass",
+        "NeZero",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.instMul",
+        "ZMod",
+        "ZMod.fintype"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchivePhaseShift.lean"
+    }
+  ]
+}
