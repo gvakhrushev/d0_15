@@ -6267,6 +6267,163 @@ complete Book action. Native physical valuation/selection and full joint
 stationary refinement remain open. No GR_closed/raw216 promotion follows.
 
 
+## 7y. Execute the terminal 0/10 code and retain its complete new Book source
+
+**25 October native-realization application.** The missing output operation
+named in7x is now constructed, using only the existing native operations:
+append `CX(h,t0);CX(h,lambda)` BEFORE the final archive seal, with THREE
+actual fresh blank wires `t0,t1,lambda`. The unchanged tail `t1=0` is a real
+retained wire. A typed parser reads the legal containers `000` and `101`
+as the original binary codewords `0` and `10`. It recovers one RAW
+direct/return letter `[not b]`; Lean's `weightExp` consumes those RAW
+letters, not the encoded binary digits. Thus its encoded length is
+exactly1+b. The same all-input programme, historical preparation, protected
+spin and oldRIGHT remain. No gate touches oldRIGHT after its original seal.
+
+The implementation, complete sources and source conventions are in
+[the writer proof](sources/d0_native_terminal_code_writer_2026-10-25/WRITER_PROOF.md)
+and [the full Book proof](sources/d0_native_terminal_code_writer_2026-10-25/BOOK_PROOF.md),
+with [literal native helper](sources/d0_native_terminal_code_writer_2026-10-25/terminal_code_writer.py)
+and [bounded checker](sources/d0_native_terminal_code_writer_2026-10-25/check_terminal_code_writer.py).
+This is an application of the owned Golden code/refinement and actual7x
+execution, not a new geometric/root search. It supplies an implemented
+code/readout effect; physical inclusion of that effect in full Cost remains
+a separate binding obligation.
+
+Write `Y_n=E(F_n tensor I_8)`, with the two actual CX in `E`. For ANY old
+64-dimensional input, with only the NEW container initialized, the exact
+pullback of its declared length is
+
+\[
+ j^\dagger Y_n^\dagger(I+\Pi_{\lambda1})Y_nj
+       =I+F_n^\dagger\Pi_{h1}F_n,\qquad
+ j=I_{64}\otimes|000\rangle,\qquad C_{\rm code}=1+q_n.       (236)
+\]
+
+This all-input identity includes incident coherences; its preparation and
+operator derivatives are explicit, with moving cut/report terms retained
+when those interfaces move. It does not assign this tariff to a bare G,
+CX or SourceI. The complete output remains coherent. Its redundant code
+copies contribute ONE report; tracing them and the original bank gives
+exactly7x's CQ blocks. Reference-complete, DATA-only and registered-oldR-Z
+Info are individually preserved, with their different conditional entropies
+and full historical h(p) baseline. No extra Info is credited for the copies.
+
+The new complete fibre is512, the initial cut rank is4, and the actual
+common expanded clock is14142. All1024N=14481408 paired modes are retained.
+Two primitive CX stages are executed in BOTH branches: encoded length1/2
+is not their runtime or a proved physical proper time. A consumer requiring
+serial emission/stopping must supply its real cursor, pending0/done states
+and paid transitions. No physical decoder/work cost is declared zero.
+
+There is a useful exact full-source simplification, and a necessary change.
+Since the full blank return row already fixes h=0, its corner is unchanged:
+`i_new†Y_n i_new=i_full†F_n i_full`. Thus at the same z the rank4 feedback
+is still `J_Y=-4 log[1-z(1-p g(u)^2)]`. In contrast, diagonalizing the
+ACTUAL parity `X_t0 X_lambda` gives TWO full sectors, each multiplicity4:
+`spec(Y_n)=4 spec(F_n)+4 spec(Z_h F_n)`. The unused tail and every invalid
+unprepared container column remain in those multiplicities. In particular,
+the old heat cannot be reused as a free constant or multiplied by8.
+
+The existing four +/- phases omega_j of F_n and the four NEW +/- phases
+nu_j of Z_hF_n give the exact complete partition
+
+\[
+ Z_Y=128\left[\sum_{j=1}^{4}K_N(\omega_j)
+                    +\sum_{j=1}^{4}K_N(\nu_j)\right],\quad
+ K_N(t)=\sum_{k\bmod N}e^{-\beta_{\rm clk}[1-\cos((2\pi k+t)/N)]},
+ \qquad H_Y=\beta_{\rm clk}^{-1}\log Z_Y.                    (237)
+\]
+
+Here `nu=(psi_+,pi-psi_+,psi_-,pi-psi_-)`,
+`psi_+=acos(p-p² cos(2phi_Q))/2`,
+`psi_-=acos(c(u)²+[1-c(u)²]cos(2phi_Q))/2`, and
+`c(u)=sqrt(p)u+p sqrt(1-u²)` on the same positive-sine chart.
+The two additional CX change the true full spectrum, despite preserving
+the blank-return corner and the observed registered law. The exact small
+native factors independently confirm both old and new phase sectors;
+the long calculation uses their proved reduction, rather than claiming
+an unrolled14142-stage512-dimensional simulation.
+
+Put `B_Y=H_Y+J_Y`. On the WHOLE mathematical comparison interval
+u in[1/5,3/10], with Q33, actualN14142, fixed z1/4 and configured
+`beta_clk=512N²`, the complete raw H+J source obeys
+
+\[
+ D_uJ_Y>1/5000,\qquad |D_uH_Y|<1/10000,\qquad
+ D_uB_Y>1/10000.                                          (238)
+\]
+
+This is an analytical inequality, not a floating sign test. The original
+exact Q(p) cosine bounds give `cos(phi_Q)-cos(3phi_Q)>39/100000`,
+g>.999 and p>.6. The rank4 derivative of J then exceeds1/5000.
+For the complete heat, every eigenphase speed is bounded by
+`||D_uY|| <=1/sqrt(1-u²)`. Differentiating ALL clock roots bounds the
+raw heat source by `1/[N sqrt(1-u²)]<1/10000`; repeated eigenvalues
+do not invalidate this trace bound. Both full native finite gaps also
+remain strict: B_67-B_1 and B_1-B_1161 exceed9*10^-7. The NEW all-mode
+heat oscillation is below `159/(3200N²)<10^-8`; no old-N heat bound is
+silently reused. These bounds are scoped to this configuration/chart.
+
+The actual declared code length does not supply the missing Info reaction.
+For b_e=(e0-e1)/2>0 and ell=log(phi), the same registered algebra gives
+
+\[
+ R_{\rm code}:=D_u\mathcal I_{\rm reg,full}-\ell D_uq
+  =b_e\{p h'(q_0)-p^2h'(q_1)-\ell p^3\}
+  >b_e(14p-8-\ell p^3)>3b_e/20>0.                         (239)
+\]
+
+Thus the registered code-minus-Info component has strictly NEGATIVE source
+on that interval, whereas this full H+J component has strictly POSITIVE
+source. The implemented encoder does not erase the work/normalization
+problem exposed in(235). For example at native n1 the numerical unit-u
+sources are `DI_reg-ell Dq=0.00064777381763829...` and
+`DB_Y=0.00030092514630344...`; their strict signs follow from(238)–(239),
+independently of the displayed non-interval decimal evaluations.
+
+There is NO theorem here that `C_actual=C_rest+1+q`. A physical additive
+ledger binding, identifying this declared code length with an actually
+charged component and independently deriving all other charges, must be
+supplied. `C_rest` cannot be defined by subtracting a desired source.
+If that binding and a genuine source transport with nonzero derived gain
+kappa are established, the exact remaining equation is
+
+\[
+ \ell DC_{\rm rest}
+   =D\mathcal I_{\rm chosen}-\ell Dq
+      +\kappa^{-1}(DB_Y+DB_{\rm other}).                    (240)
+\]
+
+`B_other` retains original Rayleigh/other Book terms and every additional
+real source absent from the displayed H+J calculation. If the consumer
+binds precisely B_Y, its other source must actually vanish or be absent;
+then positive kappa forces a strictly positive rest-cost reaction on this
+registered preparation plane. An uncomputed R is not set to zero. A
+variable action-level multiplier retains its product derivative; kappa
+is not fitted from this plane. Alternate physical Info algebras retain
+their actual separate sources and future tests.
+
+**Parent substitution and remaining application.** The explicit terminal
+code operation, typed original parser, full-input length effect and
+complete new H+J source replace an unspecified output-code construction
+in7x. The zero-other-source shortcut fails on this actual model. The next
+application must derive the real all-input primitive/controller/decoder
+charge and its physical additive ledger/Info binding, then include every
+other Book term and independent upstream equation. This is supporting
+native realization, not selection of an action by a code label. The
+u-source is NOT the physical42-covector: its actual map, norm and gain
+remain necessary before either strict unpadded root tolerance can be used.
+No comparison with1e-22 or global GR no-go is inferred. Hardwired native
+configuration comparisons do not establish continuous pulse or autonomous
+controller-variation admission. Same-execution physical selection, full
+joint stationary refinement, GR_closed and raw216 remain open.
+
+Reproduce this changed operation from repository root:
+
+    python3 02_REGISTRY/research/sources/d0_native_terminal_code_writer_2026-10-25/check_terminal_code_writer.py --output /tmp/native_terminal_code_writer.json
+
+
 ## 8. Reproduction
 
 Run from this directory:

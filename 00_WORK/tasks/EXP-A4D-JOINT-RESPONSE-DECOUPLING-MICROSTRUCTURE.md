@@ -9133,3 +9133,81 @@ root/full128/holonomy replay is asserted.
 Reproduce from repository root into a separate output:
 
     python3 02_REGISTRY/research/sources/d0_native_recorded_info_source_2026-10-25/check_recorded_info.py --output /tmp/native_recorded_info_source.json
+
+### 25 October: literal terminal0/10 encoder and its complete new source
+
+Phase: native realization, existing same-PR constitutive/native-programme-v1
+owner. Inputs are primary7x's FULL historical F_n, the owned original
+Golden raw-letter/encoded-word refinement, all-column native inverse and
+actual paid clock. Write surface: primary7y and
+`sources/d0_native_terminal_code_writer_2026-10-25/` only, plus this brief.
+No new task, foundational proof, geometric root or shared workflow rewrite.
+
+Exact construction: append CX(h,t0);CX(h,lambda) before the final bank
+seal, with three actual fresh blanks(t0,t1,lambda). The unchanged t1=0
+is retained. Valid containers000/101 parse to the original binary0/10
+words; raw=[not b], so weightExp(raw)=encoded_length=1+b. The typed
+all-old-input length effect is I+F†Pi_h1F. All conditional CQ/active/
+registered Info blocks are preserved, with full historical entropy and
+independent protected-spin state. One report is not counted twice.
+
+The full carrier grows64->512 and actual common N14140->14142, with
+the same initial rank4cut and no oldRIGHT operation after its seal.
+The unchanged blank-return corner preserves J at fixedz. All new input
+columns nevertheless contribute to heat: specY=4specF+4spec(Z_hF).
+The actual full paired partition retains1024N=14481408modes through
+eight +/- phase pairs. Two real CX stages execute in both branches;
+code length1/2 is not their runtime or an asserted proper time.
+
+Precise parent substitution: the unspecified terminal0/10 code
+construction in7x now has an actual native operation, typed parser,
+all-input effect and complete new H+J source. This does NOT prove the
+physical additive identity C_actual=C_rest+1+q; that ledger inclusion
+is a separate hypothesis, and C_rest must be independently derived.
+It is not defined by subtracting a desired price/source. The literal
+original code is not reinterpreted as the tariff of every coherent G.
+
+Carrier/source convention: same complete birth-to-record initial
+boundary, full512fibre,4cut, literal commonN14142; rawH=logZ/beta,
+rank4J, actual z1/4 and configured beta512N². Unit-u sources are on the
+positive-sine mathematical plane u∈[1/5,3/10], not automatically
+admitted continuous pulses or the physical42-covector. Native finite
+n1/67/1161 words and their unequal G/CX/SourceI inventories are kept.
+The actual map/norm/gain is required before using any interval-root
+source tolerance; no1e-22 bound is claimed here.
+
+Smallest decisive checks: exact all16writer columns and initialized
+all-input length effect; actual native Q1 reduced factors for both
+phase sectors; full clock trace multiplicities; independent finite
+differences of heat, feedback and registered code-minus-Info; exact
+Q(p) inequalities on the WHOLE u interval, not merely sampled codes.
+They prove D_u(H+J)>1/10000, whereas the declared code-minus-Info
+has source below−3b_e/20. The actual full-Book finite gaps also remain
+above9e-7 using the NEW all1024N heat bound. Long words use proved
+spectral reduction plus literal inventories, not a monolithic long
+512matrix simulation. Floating values are separate non-interval
+mpmath evaluations; the strict inequalities are analytical/exact.
+
+Remaining application: if an actual physical additive code ledger
+and nonzero derived source gain kappa are proved, primary(240) demands
+ell DC_rest=DI_chosen−ellDq+(DB_Y+DB_other)/kappa. OriginalR and every
+other real Book source remain in B_other. Rest-cost positivity follows
+only when the consumer binds precisely H+J with positivekappa and
+other source genuinely absent/zero. Source-neutral missing work is
+not assumed. Full native Cost/Info/admission, independent internal
+equations and common stationary refinement remain open. No action,
+selector, fitted counterterm or GR_closed/raw216 promotion is made.
+
+Reproduce the changed operation from repository root into a separate output:
+
+    python3 02_REGISTRY/research/sources/d0_native_terminal_code_writer_2026-10-25/check_terminal_code_writer.py --output /tmp/native_terminal_code_writer.json
+
+Final packet pins (actual final42-check run; stdout equals saved receipt):
+WRITER_PROOF.md 9c513067559c9cd89ac4c911d01a21e06c9b4d2cd962d5d568b51459ae3d0866
+BOOK_PROOF.md d99017cac96509a460fa78720c3c7b279d98262f5755be5fd1a81c3e9cfef67c
+terminal_code_writer.py d3a2b0edabf58fd96bded3492fa1a481eabe83859f85a9901740ff828e28658b
+check_terminal_code_writer.py c3fccb7c99931b0d96580a51c0d03df48ccd7a3edd44cc18e7d9cede5705337b
+CHECK_RESULT.json 784f804c728f388807a78aae18225dd4e6545c3f4fe4d734eb316495d30960f9
+
+Runtime: mpmath=1.3.0, python=3.9.6, sympy=1.14.0.
+All12 recorded input hashes verified against final saved files. Primary7y remains8473bytes/SHA256 baf037aed9dfb670fe1524b9736332c42cfecd49d863243028f3558b19252409.
