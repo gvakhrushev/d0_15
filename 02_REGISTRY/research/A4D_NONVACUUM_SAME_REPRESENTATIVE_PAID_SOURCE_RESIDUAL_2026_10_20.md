@@ -21280,6 +21280,785 @@ if __name__=='__main__':
     print('PASS exact operator/source jet, retained native preparation normals and complete-heat paid-padding consumer')
 ```
 
+## 7bq. The COMPLETE terminal SOURCE price reinforces the preparation row; its Gibbs defect is not stationary
+
+26 October2026. SAME #334 / constitutive / native-programme-v1, input63df2cc7.
+Phase: native realization and complete-source composition. Consume7bp's
+literal SOURCE factory, its actual positive preparation row and the named
+missing Cost/Info/constraint application. We construct a paid archive for
+ALL256 terminal SOURCE labels and compute its complete CQ information
+source, including the conditional quantum DATA/Spin/oldRIGHT entropy. The
+calculation removes a specific possible compensation: terminal CQ Info and
+the stated stage0 Rayleigh term do not cancel that row. It also supplies the
+actual branch-WORK kernel that a remaining compensation must satisfy.
+
+This is a comparison for an explicit terminal registered-algebra interface,
+not a choice of compulsory Book03 Info or a new action. A coherent archive
+alone has zero whole-state entropy gain; pinching/readout requires its
+actual interface and price. Source-angle curves remain finite-operator
+comparisons at native gates, not new continuously tunable Golden primitives
+or an asserted identification of X_run with original X_N. All other scene,
+preparation, oldRIGHT, query, clock, controller and WORK sources remain.
+No positive_gr/raw216/GR_closed promotion occurs. All derivatives keep
+beta=2p^2, zeta, ranks, N and the registered algebra fixed; their independently
+admitted changes retain additional sources.
+
+Inputs:7bp556--562 and its fenced code17596bytes/
+SHA256c658c3f67d8e61d91a339e9ffd6ad5c1b26922979ebf707e8aaa6b9caf0f77dc;
+[paid-writer14.2--14.3](A4D_PAID_MOMENT_FIELD_WRITER_2026_10_21.md#143-one-exact-gibbsinfo-binding-equation-with-the-actual-birth-state);
+[complete stopped quantum source](A4D_NATIVE_STOPPED_QUANTUM_PRICE_AND_SOURCE_2026_10_22.md)
+at its declared CQ-gain convention, not its different stopping language;
+[causal elimination](sources/d0_native_gr_completion_synthesis_2026-10-20/causal_boundary_completion.md);
+and7bh501--505/7bi508 on their stated same-scene Hodge. No old full128 root,
+source certificate, density/geometry search or kernel proof is repeated.
+
+### Pay for the terminal record at its ACTUAL position in the word
+
+Keep7bp's SOURCE0..7, dedicated P8, CAR9..12, phase Spin13/14 and immutable
+oldRIGHT15. Add eight genuinely fresh blank archive wires16..23 and let
+D=product_a CX(SOURCE_a,archive_a). The actual word and common input cut obey
+
+    U_archive=D U_918 D, N_core=934,
+    D j_new=j_new, j_new^dagger D=j_new^dagger,
+    C_archive=j_new^dagger U_archive j_new=chi I,
+    chi=p^12, rank(j_new)=64 q_old=8192 at q_old128.       (563)
+
+The initial D is identity only on the given blanks; BOTH copies act on all
+unprepared columns and are paid. On actual input the final copy records the
+POST-core SOURCE/failure labels, not the earlier birth labels. All256 labels,
+including zero-probability labels, remain. The new registers are not an
+addressed old archive. They become the retained terminal history after this
+word; no subsequent rewrite or reset is supplied. `report_bits` alone is
+metadata, and is not the readout or sealing operation.
+
+The literal tuple has24G+656CX+254SourceI=934 stages; its actual raw inverse
+has24G+656CX+858SourceI=1538 and equals the owned inverse leaf-by-leaf.
+Every G is on physical P8, SourceI uses(8,13,14), and oldRIGHT15 is untouched.
+The full phase Spin remains LIVE for complex Hy. Balanced D on both sides
+also preserves the full physical33-scene complementary identity inherited
+from7bp; a single terminal copy would not justify that global completion.
+Archive thermal dimension multiplies by256, while its blank cut does NOT
+multiply the free input rank. At true oldRIGHT128, the active dimension is
+1073741824 and the physical33 dimension17716740096 before clock/padding.
+The checker validates the actual934-gate tuple and1538-gate inverse, a NEW
+32-column cell/copy comparison and a NEW16-column native CNOT copy.
+It does not allocate the full SOURCE/CAR/archive matrix.
+
+### Derive ALL fine Kraus operators before taking an entropy
+
+For one cell with Hermitian involution H, write P_+=(I+H)/2,
+P_-=(I-H)/2, z_j=cos2theta_j and t_j=sin2theta_j. The exact four outputs are
+
+    K00=z0 P_+ + z1 P_-, K10=-t0 P_+,
+    K01=-t1 P_-, K11=0,
+    K_h=K^(Hy)_h3 K^(Hx)_h2 K^(Z)_h1 K^(I)_h0,
+    Gamma(rho)=directsum_(ALL256 h) K_h rho K_h^dagger.    (564)
+
+Each cell is trace-preserving and the ordered products retain every
+noncommuting conditional DATA state. The archive effects equal these
+SOURCE effects on actual input by563. rho is ANY normalized complete
+DATA/Spin/oldRIGHT input, possibly mixed and entangled. It is not an
+unpaid maximally mixed preparation or a supplied thermal state. Coherent
+terminal state entropy is exactly S(rho); the CQ state564 is the restriction
+to the stated registered terminal algebra. Its physical selection/readout
+and any extra price remain required; a unitary copy does not enforce it.
+
+Set I_CQ=S(Gamma)-S(rho), using natural logarithms. The FIRST I-cell is
+stronger than a scalar cold corner: its whole completed operator is
+G(theta_I0)^dagger Z G(theta_I0) on SOURCE0, identity on its second source
+and on DATA/Spin/oldRIGHT. Hence, for arbitrary rest input and rest quantum
+histories, Gamma=Bern(u) tensor Gamma_rest (with its deterministic unused
+SOURCE1 label retained), u=sin^2(2theta_I0). Thus exactly
+
+    I_CQ=h(u)+I_rest,
+    I'_I=4sc log(c^2/s^2)=4sc log(p^3/4)<-3/2,
+    c=p^3, s=2ap, u=s^2=4p^3, c^2=p^6.                (565)
+
+This is the entropy of the COMPLETE instrument, not the Shannon entropy
+of one chosen outcome assigned as the whole Info. The factorization proves
+why all conditional quantum terms are constant on THIS row. CQ entropy is
+normalized: it has NO factor8192. That raw rank belongs to J, not to I_CQ.
+The Golden BIRTH probabilities(p,p^2) are not the TERMINAL probabilities
+(p^6,4p^3) in565; substituting the former loses the actual source.
+
+There is also an all-input quantum check on the LAST matched-angle H-cell.
+Treat the entire fixed prefix CQ state, including old reference and previous
+labels, as Omega. Then its complete increment is
+h(u)+u DeltaS_H, DeltaS_H=S(Pinch_H Omega)-S(Omega).
+The exact binary pinching identity D(Omega||Pinch_H Omega)=DeltaS_H gives
+0<=DeltaS_H<=log2: Pinch_H Omega>=Omega/2 bounds the relative entropy above
+by log2, with zero modes understood on their supports. Therefore its symmetric
+source satisfies I'_lastH<=4sc log(p^3/2)<-3/4. The source has the SAME sign
+for every prefix/input, including complex LIVE Spin; it does not require
+scalar DATA Kraus. The rational mixed, nondiagonal fixture in the checker
+has eigenvalues(1+/-1/sqrt5)/2 and explicitly verifies the6x6 nonzero-label
+CQ spectrum, the zero11 branch, input-entropy subtraction and the derivative.
+Using classical label entropy alone would overcount by u S(rho) there.
+
+### The actual WORK operator is the missing operand, not a fitted tariff
+
+Let L_h denote the COMPLETE rest instrument and W_(b,h) the genuinely
+supplied fixed record-diagonal branch-WORK observables. The exact pullback is
+
+    C_b=sum_h L_h^dagger W_(b,h) L_h,
+    C_eff(u)=(1-u)C_0+u C_1, DeltaC=C_1-C_0,
+    ell D_theta P
+      =u'[ell Tr(rho DeltaC)+log(u/(1-u))]+ell D_theta C_ext,
+    P=C-I_CQ/ell, ell=log(phi).                         (566)
+
+This local coin row fixes L_h, rho and the registered algebra. Moving W,
+rest maps, input states or the registered algebra add THEIR real source terms;
+C_ext denotes an actual additional Cost reaction, not the missing Info terms. Coherent
+cross-record WORK has the full off-diagonal pullback of paid-writer81,
+not only566. A fixed fine ledger need not have zero derivative: it gives
+Tr(rho DeltaC). Nonnegative charges alone do not imply DeltaC>=0.
+The actual difference must be computed, not chosen from the desired zero.
+
+For the supplied FIXED-width terminal storage, every output label uses all
+eight copied record bits. Its storage-length component is8 on every leaf,
+so C_storage=8 and DC_storage=0. This does not identify bit length with
+whole physical Cost or add it again to native clock payment. For any actual
+fixed ledger with Tr(rho DeltaC)>=0 and no moving external reaction,
+566 is strictly positive. P-stationarity on this row would instead require
+
+    Tr(rho DeltaC)+C_ext'/u'
+                =-log(4/p^3)/ell, about -5.88084018.
+
+That is a necessary real negative WORK reaction, not a constructed discount.
+The already charged original0/10 reporter of the unpadded full42 model is
+not charged again here; the present archive is a DIFFERENT eight-bit writer.
+If an actual0/10 writer is later used, its supplied bright-minus-quiet charge
+is+1 and also cannot cancel565. This calculation does not assert that such
+a variable-length writer was executed by the934-stage archive word.
+
+### Retain the complete Hodge, the true Rayleigh VALUE and the moving Gibbs state
+
+On7bh501's DECLARED scene-stage complex, N>=3 gives the exact stage0 block
+Delta_00=I-B_S, independent of every temporal g_t. The actual word restores
+physical P on all columns and the terminal copy/pinching preserves its scene
+marginal. Consequently the birth, coherent terminal and CQ terminal states
+embedded at stage0 have the SAME Rayleigh value
+
+    R=Tr xi_scene(I-B_S), D_SOURCE R=0,
+    tau=exp(-beta Delta01)/Z01, S_hist=H01+J+R,
+    beta S_hist+ell P=mathfrak D,
+    mathfrak D=beta J+ell C+S_in+D(Gamma||tau).           (567)
+
+R's VALUE is not set to zero. Any independently changed scene preparation
+still has its own reaction. All Hodge grades, dark modes, work/archive columns
+and the index term remain inside Z01. tau is a faithful comparison state on
+the FULL Hodge carrier, not a physically prepared DATA state. Equations567
+are the exact Gibbs/Info identity of paid-writer14.3 on this actual common
+carrier: D(Gamma||tau)=-S(Gamma)+beta R+beta H01. They do not install another
+action or identify bare Book03 H+J with Cost-Info. The native beta=2p^2 is
+not1; the default master H+J, log Z_fb=beta H+J, and S_hist retain their
+original units and scopes. No extra -I_CQ is appended to bare Book.
+
+The moving thermal reference is ESSENTIAL. On the coin row at fixed complete
+initial state and fixed scene, R'=S_in'=0 but
+
+    [D(Gamma||tau)]'=beta H01'-I_CQ',
+    mathfrak D'=beta(H01'+J')+ell C'-I_CQ'.             (568)
+
+Thus a Gibbs variational formula cannot set this discrepancy stationary
+merely because a reference normalizes, an archive is retained, or some other
+field row vanishes. It is an actual computed term with a nonzero source.
+
+### A strict full-source sign after GENUINE paid padding
+
+Reapply7bi to the changed934-stage core, not the old918 clock. Append three
+fresh QUERY-work wires24..26 and the SAME owned all-column2/5 CNOT identity
+loops. There are7471999528 two-letter loops and TWO five-letter loops, giving
+actual N=16000000*934=14944000000 with24G+14943999722CX+254SourceI. They are
+real paid stages, not free idle time. Source/oldRIGHT supports and cut rank
+are retained; all new padding rows enter the complete gate-max dual bound.
+With A_core<=1868 and the already proved C1<1, |H01'|<=1/8000000 on the
+generated coin-angle curve of raw maximum speed1. The matched inverse's
+moving G leaf is counted as well as its forward leaf.
+
+At this native centre J'_I=2j0>1/2000000. Hence
+H01'+J'>3/8000000>0. By565, for an actually constant COMPLETE scored ledger C
+(or a complete ledger with C'>=0), mathfrak D'>3/2. The
+relative-entropy part alone obeys [D(Gamma||tau)]'>3/2-1/8000000>0.
+These are source inequalities, not subtraction of floating free energies.
+The rational bounds p>3/5,a>3/4,p<2/3 and e<3 in the checker imply
+4sc>486/625, log(4/p^3)>2 and -I'_I>972/625>3/2. Similarly the final H-cell
+bound follows from log(2/p^3)>1. No entropy Hessian or faithful input is
+assumed; fixed-support structural zero branches are kept.
+
+At true oldRIGHT128 the new full physical33 dimension before clock is
+141733920768, n0=2118071711956992000000,
+n1=25160124578398208000000, and index23042052866441216000000.
+All are retained in the same H01; no such huge matrix or fourteen-billion
+Gate tuple is allocated. Exact native counts and the owned loop identities
+prove the finite padding. Actual terminal readout/seal, additional initialization
+and any actual moving work/controller terms keep their own prices.
+
+### Native copying and causal elimination do not erase the SOURCE map
+
+A genuine fanout from one source to its partner has support00/11. For the
+same M=(I,H,-H,-I), its exact cold operator is(1-2q)I; the H direction has
+vanished. One source fanned to ALL8 controls makes the four minus signs cancel
+and gives total cold I, not chi I. Keeping both BIRTH copies without uncomputing
+them instead imposes the true zero-record return condition and gives
+
+    C_birthcopy=(1-q0)(1-q1)I=p^2I at the native point,
+    C_terminal-balanced-copy=chi I for the whole4-cell word.   (569)
+
+These are different positions of actual operations and different full prices.
+A free incoming record would change the input rank rather than prove equality.
+The new checker verifies the pair support and retained birth-copy corner;
+563 verifies the different, genuine terminal archive.
+
+The owned causal state theorem already solves the introduced intermediate
+state equations, but retains sum_k 2Re<P_(k+1),(dV_k)X_k> and boundary/WORK
+reactions. Applied to the actual entropy gradient from564--566 it transmits
+the SOURCE price upstream; it does not make it zero. Nor can tangent restriction alone
+neutralize the FEEDBACK preparation covector while retaining558's original
+boost lift: its DJ on that lift is nonzero at this centre. This is not a
+contradiction with the primary genuinely curved critical family: the present
+centre is an explicit source-comparison model, not that coupled GR solution.
+
+### Parent substitution and exact remaining physical application
+
+The missing terminal quantum/source operand after7bp is now supplied for the
+complete256-label archive: actual native934-stage writer, full quantum entropy,
+all-input source formulas, its WORK-effect operator and a nonstationary Gibbs
+comparison term. Coherent entropy gain is0; the declared CQ gain has the strict
+source above. Neither exhibited information algebra supplies the hoped-for
+hidden compensation. The original full128 stopping programme is not replaced
+by this finite terminal language, and its original charges are not duplicated.
+
+The next physical step is the actual SOURCE-to-field/controller map or WORK/
+constraint reaction that satisfies566/568, with the SAME preparation, cut,
+clock and future tests. A chosen coupled tangent line, copying, pinching or
+an unexplained Gibbs plateau is not that map. Any different actual price or
+admissible source graph must carry its own full differential. Open42-field
+transport, all independent upstream equations, positive native GR and
+refinement remain; GR_closed=false. No new geometry/root/certificate campaign
+or public/CORE claim is initiated.
+
+The SINGLE checker below loads ONLY the pinned7bp helper prefix and its
+nested7bo definitions; no previous mathematical checker or fixture runs.
+It materializes934 native gates and the1538-gate inverse, checks two NEW
+copy fixtures, complete4-label/256-history structural identities, a mixed
+noncommuting quantum entropy fixture, causal-copy controls and the exact
+price/energy binding. Decimal outputs are diagnostics, not tolerances.
+Run from the repository root.
+
+```python
+"""Balanced terminal SOURCE copying for the literal 7bp cold-jet word.
+
+Only finite constructor expansion produces native G/CX/SourceI gates.  Import
+loads pinned definitions, not either old mathematical checker.  The new small
+matrix fixtures are EXPLICIT opt-in functions; the default entry point checks
+only native membership, inverse tuples, exact counts and finite dimensions.
+
+These are terminal post-core SOURCE/failure labels, not the earlier pre-middle
+birth labels.  No entropy/Cost assignment, record readout, reset, selected Hodge
+or physical variation-domain rule is inferred from the archive constructor.
+"""
+import sys
+sys.dont_write_bytecode = True
+from pathlib import Path
+import hashlib
+import json
+import types
+
+
+PRIMARY = Path('02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md').resolve()
+COLD_CODE_SHA256 = 'c658c3f67d8e61d91a339e9ffd6ad5c1b26922979ebf707e8aaa6b9caf0f77dc'
+COLD_CODE_BYTES = 17596
+COLD_MATH_MARKER = '"""Changed native cold-jet application: exact original D and native reflection frame."""'
+
+
+def load_owned_prefix():
+    """Load ONLY 7bp helper definitions from its pinned actual primary fence."""
+    source = PRIMARY.read_text(encoding='utf-8')
+    section = source.index('## 7bp. ')
+    start = source.index('```python\n', section) + len('```python\n')
+    end = source.index('\n```', start)
+    code = source[start:end].encode('utf-8')
+    if len(code) != COLD_CODE_BYTES or hashlib.sha256(code).hexdigest() != COLD_CODE_SHA256:
+        raise RuntimeError('frozen 7bp fenced code pin changed')
+    text = code.decode('utf-8')
+    if COLD_MATH_MARKER not in text:
+        raise RuntimeError('7bp helper/mathematics separation marker absent')
+    prefix = text.split(COLD_MATH_MARKER, 1)[0]
+    module = types.ModuleType('_d0_archive_owned_cold_prefix')
+    module.__file__ = str(PRIMARY)
+    sys.modules[module.__name__] = module
+    exec(compile(prefix, str(PRIMARY), 'exec'), module.__dict__)
+    module.ARCHIVE_PROVENANCE = {
+        'primary_source_path': str(PRIMARY),
+        'cold_fenced_code_bytes': len(code),
+        'cold_fenced_code_sha256': hashlib.sha256(code).hexdigest(),
+        'cold_loaded_prefix_bytes': len(prefix.encode('utf-8')),
+        'cold_loaded_prefix_sha256': hashlib.sha256(prefix.encode('utf-8')).hexdigest(),
+        'cold_math_was_executed': False,
+        'old_native_fixtures_were_executed': False,
+        'nested_7bo_builder': module.owned.PROVENANCE,
+    }
+    return module
+
+
+owned = load_owned_prefix()
+Compiler = owned.Compiler
+ne = owned.ne
+
+
+def build_balanced_archive():
+    """Chronology D;core;D, with eight actual SOURCE-to-archive CNOTs per D."""
+    original = owned.build_four_cells()
+    c = Compiler(24, 8, (13, 14), (15,))
+    source = tuple(range(8))
+    archive = tuple(range(16, 24))
+    copy = c.seq(*(c.cx(s, h) for s, h in zip(source, archive)))
+    core = original['word']
+    word = c.seq(copy, core, copy)
+    blanks = tuple(range(9)) + archive
+    return {'compiler': c, 'source': source, 'archive': archive,
+            'copy': copy, 'core': core, 'word': word,
+            'blank_wires': blanks,
+            'report_bits': archive}
+
+
+def inventory_report():
+    """Materialize the NEW 934-gate word and its 1538-gate owned inverse only."""
+    built = build_balanced_archive()
+    c, word = built['compiler'], built['word']
+    validation = c.validate(word)
+    counts = c.counts(word)
+    assert counts.as_dict() == {'G': 24, 'CX': 656, 'SourceI': 254,
+                                'N': 934, 'g_port': 24, 'g_off': 0}
+    leaves = c._leaves(word, tuple(range(c.qubits)))
+    assert all(g.wires == (8,) for g in leaves if g.op == 'G')
+    assert all(g.wires == (8, 13, 14) for g in leaves if g.op == 'SourceI')
+    assert all(set(g.wires).isdisjoint(c.old) for g in leaves)
+    assert all(set(g.wires).isdisjoint(c.spin) for g in leaves if g.op != 'SourceI')
+    for h, s in zip(built['archive'], built['source']):
+        hits = tuple(g for g in c.iter_raw(word) if h in g.wires)
+        assert hits == (ne.Gate('CX', (s, h)),) * 2
+    execution = c.execution(word, blank_wires=built['blank_wires'],
+                            report_bits=built['report_bits'],
+                            max_expanded_stages=counts.n)
+    iv = ne.inventory(execution, max_qubits=24, max_expanded_stages=counts.n)
+    assert (iv.g_count, iv.cx_count, iv.source_i_count, iv.gate_count) == (24, 656, 254, 934)
+    assert iv.cut_rank == 128 and iv.full_dimension == 2**24
+    inverse = tuple(c.iter_raw(c.inv(word)))
+    expected = ne.inverse_word(execution, max_qubits=24,
+                               max_expanded_stages=len(inverse))
+    assert inverse == expected and len(inverse) == 1538
+    assert c.counts(c.inv(word)).as_dict() == {
+        'G': 24, 'CX': 656, 'SourceI': 858,
+        'N': 1538, 'g_port': 24, 'g_off': 0}
+    d_with_old128 = 2**8 * 2**8 * 16 * 4 * 128
+    return {
+        'layout': {'qubits': 24, 'physical_port': 8, 'phase_Spin': (13, 14),
+                   'immutable_oldRIGHT': (15,), 'SOURCE': built['source'],
+                   'archive': built['archive'], 'blank_wires': built['blank_wires'],
+                   'unknown_wires': iv.unknown_wires},
+        'counts': counts.as_dict(), 'owned_inverse_counts': c.counts(c.inv(word)).as_dict(),
+        'validation': validation, 'literal_word_gates': len(execution.gates),
+        'literal_inverse_gates': len(inverse), 'inverse_leafwise_owned': True,
+        'input_rank_one_old_qubit': iv.cut_rank,
+        'full_active_dimension_one_old_qubit': iv.full_dimension,
+        'general_input_rank': '64 * genuine_oldRIGHT_rank',
+        'general_active_dimension': '8388608 * genuine_oldRIGHT_dimension',
+        'true_oldRIGHT128_input_rank': 8192,
+        'true_oldRIGHT128_active_dimension': 2*d_with_old128,
+        'true_oldRIGHT128_physical33_dimension': 33*d_with_old128,
+        'archive_kind': 'post-core terminal SOURCE/failure labels; NOT birth labels',
+        'core_and_archive_matrix_was_built': False,
+        'physical_port_restoration': 'consumed exact component identity on every input column',
+        'Spin': 'LIVE for complex Hy; not asserted completed identity',
+        'old_RIGHT_never_read': True,
+        'native_AST_is_new_primitive': False,
+        'entropy_or_Cost_assignment': False,
+    }
+
+
+def padding_report():
+    """Finite constructor/count proof of a paid N=16e6*934 clock, no expansion."""
+    built = build_balanced_archive()
+    c = Compiler(27, 8, (13, 14), (15,))
+    A = c.cx(24, 25)
+    B = c.cx(25, 26)
+    C = c.cx(24, 26)
+    pair = c.seq(A, A)
+    five = c.seq(A, B, A, B, C)
+    core_n = c.counts(built['word']).n
+    assert core_n == 934
+    N = 16_000_000 * core_n
+    remainder = N - core_n - 10
+    assert remainder >= 0 and remainder % 2 == 0
+    pair_loops = remainder // 2
+    padding = c.seq(c.repeat(pair, pair_loops), c.repeat(five, 2))
+    word = c.seq(built['word'], padding)
+    report = c.validate(word)
+    assert report['counts'] == {
+        'G': 24, 'CX': 14_943_999_722, 'SourceI': 254,
+        'N': 14_944_000_000, 'g_port': 24, 'g_off': 0}
+    blanks = built['blank_wires'] + (24, 25, 26)
+    empty_boundary = ne.Execution(27, blanks, (15,), (), ne.G_CX_SOURCE_I,
+                                  8, (13, 14), built['report_bits'])
+    ne.validate_execution(empty_boundary, max_qubits=27, max_expanded_stages=0)
+    assert 2**(27-len(blanks)) == 128
+    # The factor d excludes the physical two-plane port.  Replace that factor
+    # 2 by the genuine 33-scene completion; do not add a second Spin factor.
+    d = 2**8 * 2**8 * 16 * 4 * 128 * 8
+    return {
+        'balanced_core_N': core_n, 'actual_N': N,
+        'pair_loops': pair_loops, 'five_loops': 2,
+        'total_counts': report['counts'],
+        'unique_raw_leaves': report['unique_raw_leaves'],
+        'new_QUERY_work_wires': (24, 25, 26),
+        'new_work_input': 'all three blank; all eight columns retained thermally',
+        'true_oldRIGHT128_input_rank': 8192,
+        'true_oldRIGHT128_active_dimension_before_clock': 2*d,
+        'full_physical33_dimension_before_clock': 33*d,
+        'n0': 33*N*d, 'n1': 392*N*d, 'index': 359*N*d,
+        'Hodge_scope': 'declared owned 7bi H01; no selected physical Hodge inferred',
+        'loop_identity_owner': '7bp exact AA and ABABC all-column identities',
+        'padding_word_literal_materialized': False,
+        'padding_matrix_built': False, 'clock_matrix_built': False,
+    }
+
+
+def run_semantic_fixture():
+    """NEW 32-column semantic cell/copy check; does not replay old 64-column words."""
+    import sympy as sp
+    G = ne.G_LOCAL
+    I2 = sp.eye(2)
+    Z = sp.diag(1, -1)
+    A = sp.kronecker_product(G, G, I2)
+    M = sp.diag(I2, Z, -Z, -I2)
+    core = A.T * M * A
+    copy = sp.zeros(32)
+    for col in range(32):
+        # SOURCE wires0/1 (MSB), DATA2, archive3/4.
+        row = col ^ (((col >> 4) & 1) << 1) ^ ((col >> 3) & 1)
+        copy[row, col] = 1
+    assert copy.T * copy == sp.eye(32) and copy*copy == sp.eye(32)
+    U = copy * sp.kronecker_product(core, sp.eye(4)) * copy
+    assert ne.exact_matrix_equal(U.T*U, sp.eye(32))
+    j = sp.zeros(32, 2)
+    for data in range(2):
+        j[data << 2, data] = 1
+    out = U*j
+    assert ne.exact_matrix_equal(j.T*U*j, ne.P**3*I2)
+    source_j = sp.zeros(8, 2)
+    source_j[:2, :] = I2
+    core_out = core*source_j
+    for z in range(4):
+        P_source = sp.diag(*(int((row >> 3) == z) for row in range(32)))
+        P_archive = sp.diag(*(int((row & 3) == z) for row in range(32)))
+        Kz = core_out[2*z:2*z+2, :]
+        assert ne.exact_matrix_equal(P_source*out, P_archive*out)
+        assert ne.exact_matrix_equal(out.T*P_archive*out, Kz.T*Kz)
+    assert ne.exact_matrix_equal(out.T*out, I2)
+    return {
+        'all_columns_unitary': 32,
+        'initial_boundary': 'SOURCE00,archive00; arbitrary DATA2',
+        'middle_blocks': 'I,Z,-Z,-I', 'cold_corner_unchanged': 'p^3 I2',
+        'all_four_terminal_SOURCE_label_effects_equal_archive': True,
+        'archive_effects_are_complete_including_nonreturn': True,
+        'birth_source_labels_were_not_claimed': True,
+        'this_is_not_the_large_native_4CAR_matrix': True,
+    }
+
+
+def run_native_copy_fixture():
+    """NEW small 4-qubit native CX copy permutation on all 16 columns."""
+    import sympy as sp
+    e = ne.Execution(4, (), (), (ne.Gate('CX', (0, 2)), ne.Gate('CX', (1, 3))), ne.G_CX)
+    ne.validate_execution(e, max_qubits=4, max_expanded_stages=2)
+    actual = ne.word_matrix(e, max_qubits=4, max_expanded_stages=2)
+    wanted = sp.zeros(16)
+    for col in range(16):
+        row = col ^ (((col >> 3) & 1) << 1) ^ ((col >> 2) & 1)
+        wanted[row, col] = 1
+    assert actual == wanted and actual.T*actual == sp.eye(16)
+    assert actual*actual == sp.eye(16)
+    return {'all_columns': 16, 'native_CX_gates': 2,
+            'basis_truth_table_exact': True, 'self_inverse': True}
+
+
+def main(counts_only=True):
+    report = inventory_report()
+    padded = padding_report()
+    print('PROVENANCE', json.dumps(owned.ARCHIVE_PROVENANCE, sort_keys=True))
+    print('BALANCED_ARCHIVE_INVENTORY', json.dumps(report, sort_keys=True))
+    print('ACTUAL_PAID_PADDING', json.dumps(padded, sort_keys=True))
+    if counts_only:
+        print('PASS COUNTS ONLY: literal934 membership/inverse1538; finite paid padding; NO matrix fixtures executed')
+    else:
+        print('NEW_SEMANTIC_32', json.dumps(run_semantic_fixture(), sort_keys=True))
+        print('NEW_NATIVE_COPY_16', json.dumps(run_native_copy_fixture(), sort_keys=True))
+        print('PASS NEW balanced semantic32/native-copy16 fixtures and literal inventory')
+    return report, padded
+
+"""New exact SOURCE-CQ identities only; no old fixture or repository imports.
+
+All logarithms are natural.  The entropy identities use 0 < u < 1.
+The decimal strings at the end are diagnostics, never proof tolerances.
+No tariff, additional action term, physical record availability or native
+continuous-angle admission is inferred by this checker.
+"""
+import json
+import sympy as sp
+
+
+def run_exact_cq_math():
+    aa, pp = sp.symbols('aa pp', positive=True, real=True)
+    gb = sp.groebner((aa**2-pp, pp**2+pp-1), aa, pp)
+
+    def reduced(x):
+        return gb.reduce(sp.expand(x))[1]
+
+    def eq(A, B):
+        return A.shape == B.shape and all(reduced(x-y) == 0 for x, y in zip(A, B))
+
+    I2 = sp.eye(2)
+    Z = sp.diag(1, -1)
+    Pplus, Pminus = (I2+Z)/2, (I2-Z)/2
+    theta0, theta1 = sp.symbols('theta0 theta1', real=True)
+
+    def rotation(t):
+        return sp.Matrix(((sp.cos(t), -sp.sin(t)),
+                          (sp.sin(t), sp.cos(t))))
+
+    # Literal two-SOURCE cell.  Source indices are 00,01,10,11.
+    middle = sp.diag(I2, Z, -Z, -I2)
+    birth = sp.kronecker_product(rotation(theta0), rotation(theta1), I2)
+    cell = birth.T*middle*birth
+    expected = (sp.cos(2*theta0)*Pplus+sp.cos(2*theta1)*Pminus,
+                -sp.sin(2*theta1)*Pminus,
+                -sp.sin(2*theta0)*Pplus, sp.zeros(2))
+    for index, K in enumerate(expected):
+        difference = cell[2*index:2*index+2, :2]-K
+        assert all(sp.trigsimp(x) == 0 for x in difference)
+    assert all(sp.trigsimp(x) == 0 for x in
+               sum((K.T*K for K in expected), sp.zeros(2))-I2)
+
+    # At matched angles the four Kraus maps are cI,-sP-,-sP+,0.
+    cc = pp**3
+    ss = 2*aa*pp
+    assert reduced(cc**2+ss**2-1) == 0
+    matched = (cc*I2, -ss*Pminus, -ss*Pplus, sp.zeros(2))
+    assert eq(sum((K.T*K for K in matched), sp.zeros(2)), I2)
+
+    # A genuinely mixed, nondiagonal rational DATA input.
+    rho = sp.Matrix(((sp.Rational(3, 5), sp.Rational(1, 5)),
+                     (sp.Rational(1, 5), sp.Rational(2, 5))))
+    assert rho.trace() == 1 and rho.det() == sp.Rational(1, 5)
+    lam = (sp.Rational(1, 2)+sp.sqrt(5)/10,
+           sp.Rational(1, 2)-sp.sqrt(5)/10)
+    assert sum(lam) == 1 and sp.simplify(lam[0]*lam[1]-rho.det()) == 0
+    assert rho != Pplus*rho*Pplus+Pminus*rho*Pminus
+    Srho = -sum(x*sp.log(x) for x in lam)
+    tt = sp.Rational(3, 5)
+    h = lambda x: -x*sp.log(x)-(1-x)*sp.log(1-x)
+    deltaS = h(tt)-Srho
+    u = sp.symbols('u', positive=True, real=True)
+
+    def log_normal(x):
+        # The stated domain 0<u<1 and positive eigenvalues justify expansion.
+        return sp.simplify(sp.expand_log(sp.expand(x), force=True))
+
+    # Compute the actual complete CQ blocks, retaining K00's mixed entropy.
+    gamma_blocks = ((1-u)*rho, u*Pminus*rho*Pminus,
+                    u*Pplus*rho*Pplus, sp.zeros(2))
+    assert sp.simplify(sum(G.trace() for G in gamma_blocks)-1) == 0
+    eig_nonzero = ((1-u)*lam[0], (1-u)*lam[1], u*tt, u*(1-tt))
+    # The 6x6 CQ form records 00,10,01.  The literal four-label 8x8
+    # form has in addition the explicitly zero 11 branch, retained above.
+    gamma6 = sp.diag(gamma_blocks[0], gamma_blocks[2], gamma_blocks[1])
+    eig_parameter = sp.symbols('eig_parameter')
+    exact_eig_poly = eig_parameter**2*sp.prod(eig_parameter-x for x in eig_nonzero)
+    difference = sp.Poly(sp.expand(gamma6.charpoly(eig_parameter).as_expr()
+                                   -exact_eig_poly), eig_parameter)
+    assert all(sp.simplify(x) == 0 for x in difference.all_coeffs())
+    # The other four eigenvalues of the 8x8 CQ state are structural zeros.
+    entropy_from_blocks = -sum(x*sp.log(x) for x in eig_nonzero)
+    info_from_blocks = entropy_from_blocks-Srho
+    info_formula = h(u)+u*deltaS
+    assert log_normal(info_from_blocks-info_formula) == 0
+    derivative_formula = sp.log((1-u)/u)+deltaS
+    assert log_normal(sp.diff(info_from_blocks, u)-derivative_formula) == 0
+    # Using only the classical three-label Shannon entropy would be wrong.
+    label_shannon = h(u)+u*h(tt)
+    assert log_normal(label_shannon-info_from_blocks-u*Srho) == 0
+    assert Srho != 0
+
+    th = sp.symbols('th', real=True)
+    assert sp.trigsimp(sp.diff(sp.sin(2*th)**2, th)
+                       -4*sp.sin(2*th)*sp.cos(2*th)) == 0
+
+    # Full four-cell/256-label statement is structural, not a 512x512 allocation.
+    # I-cell contributes (cI,0,-sI,0) independently of the other three cells.
+    # On an abstract fixed rest spectrum w=(2/3,1/3), verify the tensor entropy.
+    # This is the spectral identity used for ANY Gamma_rest, not an input model.
+    rest = (sp.Rational(2, 3), sp.Rational(1, 3))
+    Srest = -sum(x*sp.log(x) for x in rest)
+    full_tensor_eigs = tuple(q*x for q in (1-u, u) for x in rest)
+    Sfull_tensor = -sum(x*sp.log(x) for x in full_tensor_eigs)
+    assert log_normal(Sfull_tensor-h(u)-Srest) == 0
+    assert log_normal(sp.diff(Sfull_tensor, u)-sp.log((1-u)/u)) == 0
+
+    # A copied COMMON source lives only in 00/11 and loses every H coefficient.
+    corr = sp.Matrix((sp.cos(th), 0, 0, sp.sin(th)))
+    jcorr = sp.kronecker_product(corr, I2)
+    corr_cold = jcorr.T*middle*jcorr
+    assert all(sp.trigsimp(x) == 0 for x in corr_cold-sp.cos(2*th)*I2)
+    assert sp.trigsimp(sp.trace(Z*sp.diff(corr_cold, th))) == 0
+
+    # Retain BOTH birth-source copies and do not uncopy them.  Their actual
+    # all-zero return condition selects SOURCE00: the corner is p^2, not p^3.
+    G = sp.Matrix(((aa, -pp), (pp, aa)))
+    Asource = sp.kronecker_product(G, G)
+    A32 = sp.kronecker_product(Asource, sp.eye(4), I2)
+    copy16 = sp.zeros(16)
+    for source in range(4):
+        for record in range(4):
+            copy16[4*source+(record ^ source), 4*source+record] = 1
+    copy32 = sp.kronecker_product(copy16, I2)
+    M32 = sp.diag(*(sp.kronecker_product(sp.eye(4), block)
+                    for block in (I2, Z, -Z, -I2)))
+    j32 = sp.zeros(32, 2)
+    j32[0, 0] = j32[1, 1] = 1
+    copied_corner = j32.T*A32.T*M32*copy32*A32*j32
+    assert eq(copied_corner, pp**2*I2)
+    assert reduced(pp**2-pp**3) != 0
+
+    # Exact rational inequalities prove the entropy-source floors.
+    pexact = (sp.sqrt(5)-1)/2
+    assert (pexact-sp.Rational(3, 5)).is_positive is True
+    assert (sp.Rational(2, 3)-pexact).is_positive is True
+    assert (sp.sqrt(pexact)-sp.Rational(3, 4)).is_positive is True
+    # Taylor to order3; every subsequent term ratio is <=1/5.
+    exp1_upper = sum(sp.Rational(1, sp.factorial(k)) for k in range(4))
+    exp1_upper += sp.Rational(1, 24)/(1-sp.Rational(1, 5))
+    assert exp1_upper == sp.Rational(87, 32) and exp1_upper < 3
+    prefactor_lower = 8*sp.Rational(3, 4)*sp.Rational(3, 5)**4
+    assert prefactor_lower == sp.Rational(486, 625)
+    assert prefactor_lower > sp.Rational(3, 4)
+    assert 2*prefactor_lower > sp.Rational(3, 2)
+    # p<2/3 implies p^3<1/3; hence 2/p^3>6>e and
+    # 4/p^3>12>e^2. With 0<=DeltaS<=log2 (binary pinching):
+    # -I'_lastH >=4sc log(2/p^3)>3/4;
+    # -I'_I=4sc log(4/p^3)>3/2.
+    assert sp.Rational(2, 3)**3 < sp.Rational(1, 3)
+    assert 6 > exp1_upper and 12 > exp1_upper**2
+
+    pref = 8*sp.sqrt(pexact)*pexact**4
+    fixture_negative_derivative = pref*(sp.log(4/pexact**3)-deltaS)
+    return {
+        'exact_new_fixtures': [
+            'all four general-angle two-source Kraus blocks and completeness',
+            'native matched Kraus completeness',
+            'mixed nondiagonal rational input CQ spectrum and input-entropy subtraction',
+            '6x6 complete nonzero-label CQ characteristic polynomial',
+            'entropy derivative from complete nonzero eigenblocks',
+            'I-cell Bernoulli tensor entropy factor',
+            'common copied SOURCE00/11 erases traceless H jet',
+            'retained complete birth copy changes all-zero corner to p^2',
+            'rational Taylor and Golden bounds for both strict source floors',
+        ],
+        'full_history_alphabet': 4**4,
+        'last_H_cell_info': 'h(u)+u*(S(Pinch_H Omega)-S(Omega))',
+        'I_cell_info': 'h(u)+I_rest',
+        'strict_minus_last_H_angle_info_derivative': '>3/4',
+        'strict_minus_I_angle_info_derivative': '>3/2',
+        'mixed_input_entropy': str(Srho),
+        'classical_Shannon_minus_actual_Info': 'u*S(rho)>0 for the mixed fixture',
+        'no_large_256_block_density_allocated': True,
+        'actual_tariff_assumed': False,
+        'new_action_term_assumed': False,
+        'native_continuous_SOURCE_angle_admission_proved': False,
+        'physical_terminal_record_availability_proved': False,
+        'numerical_diagnostics_only': {
+            'mixed_fixture_minus_Info_derivative': str(sp.N(fixture_negative_derivative, 24)),
+            'Golden_4sc': str(sp.N(pref, 24)),
+            'mixed_input_entropy': str(sp.N(Srho, 24)),
+        },
+    }
+
+# Actual common-carrier source binding; no Gibbs preparation or new action.
+def run_binding_math():
+    p=ne.P;a=ne.A;c=p**3;s=2*a*p;chi=p**12
+    z=sp.Rational(1,2**20);r=8192;bheat=2*p*p;ell=-sp.log(p)
+    u=s*s;uprime=4*s*c;Q=1-z+z*chi**2
+    assert ne.exact_matrix_equal(sp.Matrix([[u+c*c]]),sp.ones(1))
+    Iprime=uprime*sp.log(c*c/u)
+    Jprime=8*r*z*a*p*chi*c**3/Q
+    # The complete entropy is normalized. Only J carries the raw rank8192.
+    assert (p-sp.Rational(3,5)).is_positive is True
+    assert (sp.Rational(2,3)-p).is_positive is True
+    assert (a-sp.Rational(3,4)).is_positive is True
+    assert (1-bheat).is_positive is True
+    # Bounds already proved for the base jet, now on the actual copied corner.
+    assert sp.Rational(3,128)*sp.Rational(3,5)**22>sp.Rational(1,4_000_000)
+    Jlower=sp.Rational(1,2_000_000);Hupper=sp.Rational(1,8_000_000)
+    assert Jlower-Hupper==sp.Rational(3,8_000_000)>0
+    # Exact Gibbs identity on a faithful full-Hodge reference tau.
+    beta,l,C,Sin,Sout,H,J,R=sp.symbols('beta ell C Sin Sout H J R',real=True)
+    Igain=Sout-Sin;P=C-Igain/l
+    Drel=-Sout+beta*R+beta*H
+    discrepancy=beta*J+l*C+Sin+Drel
+    assert sp.expand(beta*(H+J+R)+l*P-discrepancy)==0
+    # Stage0 energy: arbitrary temporal gate blocks have no same-stage entry.
+    B=sp.Matrix(2,2,sp.symbols('b0:4',real=True))
+    Rscene=sp.diag(*sp.symbols('r0:2',real=True))
+    temporal=sp.zeros(6)
+    for stage in range(3):
+        g=sp.Matrix(2,2,sp.symbols('g%d_0:4'%stage,real=True))
+        out=2*((stage+1)%3);inc=2*stage
+        temporal[out:out+2,inc:inc+2]=g
+    metric=sp.kronecker_product(sp.eye(3),Rscene)
+    Delta=sp.eye(6)-sp.kronecker_product(sp.eye(3),B)-metric*(temporal+temporal.T)*metric
+    assert Delta[:2,:2]==sp.eye(2)-B
+    # With fixed scene marginal and input, R'=0 and Sin'=0. Keep moving tau.
+    Hp,Jp,Cp,Ip=sp.symbols('Hp Jp Cp Ip',real=True)
+    Drelp=beta*Hp-Ip
+    mathDp=beta*Jp+l*Cp+Drelp
+    assert sp.expand(mathDp-(beta*(Hp+Jp)+l*Cp-Ip))==0
+    # Fixed actual branch-WORK operators: retain their operator difference.
+    uu,dc=sp.symbols('u dc',real=True)
+    entropy_coin=-uu*sp.log(uu)-(1-uu)*sp.log(1-uu)
+    Dprice=sp.diff(l*(sp.Symbol('C0')+uu*dc)-entropy_coin,uu)
+    assert sp.simplify(sp.expand_log(Dprice,force=True)-(l*dc+sp.log(uu)-sp.log(1-uu)))==0
+    required_delta=sp.log(c*c/u)/ell
+    # This is a necessary ACTUAL work reaction, never an assigned tariff.
+    assert sp.simplify(ell*required_delta+sp.log(u/(c*c)))==0
+    return {
+        'Gibbs_identity_units':'beta*(H+J+R)+ell*P = beta*J+ell*C+Sin+D(Gamma||tau)',
+        'P_definition':'C-I_CQ/ell; not an extra term appended to bareBook',
+        'stage0_R_value':'Tr(scene_birth*(I-B_scene)); not zeroed',
+        'stage0_SOURCE_R_derivative':0,
+        'fixed_width_storage_length':8,'fixed_width_storage_derivative':0,
+        'copied_cut_rank':r,'CQ_entropy_gets_raw_rank_multiplier':False,
+        'strict_thermal_angle_upper':'1/8000000',
+        'strict_Book_angle_lower':'1/2000000',
+        'strict_H01_plus_J_angle_lower':'3/8000000',
+        'strict_minus_CQ_Info_coin_angle_lower':'3/2',
+        'strict_full_binding_discrepancy_derivative_lower':'3/2 for actual constant C',
+        'full_binding_discrepancy_was_assumed_stationary':False,
+        'fixed_branch_charge_difference_needed_for_P_stationarity':str(required_delta),
+        'moving_external_cost_and_quantum_work_sources_retained':True,
+        'numerical_diagnostics_only':{'coin_I_derivative':str(sp.N(Iprime,24)),
+            'Book_I_cell_angle_derivative':str(sp.N(Jprime,24)),
+            'necessary_work_difference':str(sp.N(required_delta,24)),
+            'ell':str(sp.N(ell,24))},
+    }
+
+if __name__=='__main__':
+    main(counts_only=False)
+    print('EXACT_COMPLETE_CQ_SOURCE',json.dumps(run_exact_cq_math(),sort_keys=True))
+    print('ACTUAL_SOURCE_BINDING',json.dumps(run_binding_math(),sort_keys=True))
+    print('PASS complete256-label CQ source, paid terminal archives, retained quantum entropy and nonstationary actual Gibbs discrepancy')
+```
+
 ## 8. Reproduction
 
 Run from this directory:

@@ -13066,3 +13066,122 @@ incomingbrief855099bytes remainsEXACTprefix SHA256
 21f96db3bceb35e9bf3713e956272fe59a53b894c4c490d01472e8e338649ed0.
 Onlythetwoownedpathschanged. Thesearelocalproof/structuralchecks,
 notremoteCI/GRacceptance. Existing#334keptDraft/unmerged.
+
+### 26 October2026 — actual terminal SOURCE archive, complete quantum Info-source and nonstationary Gibbs binding
+
+Same#334/constitutive/native-programme-v1; base63df2cc7. Phase:native
+realization/complete-sourcecomposition. Existingprimary7bq563--569
+consumes7bp's namedmissingterminalCostInfo/constraintoperand. No new
+task/action/selectedInfo/registry/physicaladmissionorGRpromotion.
+
+Literalwriter:8freshblankarchive16..23, D=productCX(SOURCEa,ha),
+actualU=D U918 D. Bothcopiespaid;firstfixesactualinitialblanks,
+lastcopiesPOST-coreSOURCE/failurehistory,notearlierbirthlabels.
+C_returnunchangedchi=p12I,fullrankr8192atold128,phaseSpinonce;
+ALL256fineSOURCEhistoriesretainedincludingzeros. Materializedword
+24G+656CX+254SI=934,rawinverse24G+656CX+858SI=1538,leafwiseEXACT
+ownedinverse. AllGphysicalP8,allSI(8,13,14),noSpinG/CXorold15action.
+NewarchivesarefreshWORKthenretainedhistory,notoldRIGHTrewriting.
+CoherentcopydoesNOTforcepinching;report_bitsmetadataaloneisnotreadout.
+
+ExactcompletecellKrausK00=z0Pplus+z1Pminus,K10=−t0Pplus,
+K01=−t1Pminus,K11zero;all256orderedproductsretained,sameunknown
+DATA/Spin/oldRinputrho,notmaxmixed/thermallyprepared. WholeCQgain
+I=S(Gamma)-S(rho) usesCOMPLETEterminalregisteredalgebraIFselected.
+Icellfulloperatorfactorization givesGamma=Bern(u)xGamma_rest,
+u=sin²2thetaI0,exactI=h(u)+IrestforANYmixed/entangledinput.
+NormalizedCQentropyhasNO8192factor;rawrankonlyinBookJ.
+
+Atnativeu=4p3,1−u=p6,4sc≈0.91758352:
+I'_I=4sc ln(p3/4)≈−2.5966969861<−3/2. NativeBIRTH(p,p²)notterminal
+(p6,4p3). LastmatchedHcellhasfullconditionalquantumterm
+Iincrement=h(u)+u[S(PinchH Omega)-S(Omega)],0<=DeltaS<=ln2,
+soI'_lastH<=4sc ln(p3/2)<−3/4forallprefixCQ/oldreferenceinputs.
+ThusCQ−InfoREINFORCESpositiveSOURCEBookreaction;coherentwhole-state
+entropygain0alsoprovidesnocancellation. NootherInfochoiceasserted.
+
+ActualWORKoperand:forcompleteRestKrausLh andfixedbranchobservables
+W_bh,C_b=sumLh†W_bhLh,Ceff(u)=(1−u)C0+uC1.
+ell*DP=u'[ell*Tr(rho DeltaC)+ln(u/(1−u))]+ell*DC_ext,
+P=C−I/ell,elllnphi. Movingrest/input/W/algebrasourcesretained;
+coherentoffdiagonalWORKusesfull81kernel. FixedfinecostsneednotDC0.
+Actual8-bitfixed-widthSTORAGEcomponentis8oneveryleaf,DC_storage0;
+it isNOTdeclaredwholephysicalCost,noraddedagainasclockpayment.
+PstationarityrequiresREALnegativeWORKreaction
+Tr(rho DeltaC)+C'_ext/u'=−ln(4/p3)/ell≈−5.8808401808;
+notatariffchosenfromdesiredcancellation. Oldunpadded0/10reporter
+notchargedagain;934writerisdifferentfixed8-bitexecution.
+
+ForDECLAREDactual7bh501stageHodge,N>=3,Delta_stage0=I−Bscene.
+CompletedP-restoration/copy/pinchingkeepthefixedscenemarginal;
+R=Trxis(I−Bscene) RETAINSitsvaluebutD_SOURCER0. Allother genuine
+scene/preparationnormalsremain. FullfaithfulGibbs tau includesboth
+Hodgegrades/dark/archive/work/clock/index,notpreparedDATA.
+Exactpaidwriter14.3unitsbeta*S_hist+ell*P=mathD,
+mathD=beta*J+ell*C+Sin+D(Gamma||tau). Movingthermalreferencegives
+D[Drel]=beta*DH−DI,not0. No extra−InfoappendedtobareBookH+J;
+betaH+JandH+Jweightsnotidentified,beta2p²not1.
+
+Actualchangedcore934paddedtoN14944000000=16e6*934by3freshQUERY
+WORK24..26:7471999528AAloops+2ABABC,usingowned2/5nativeidentities.
+Total24G+14943999722CX+254SI,allpaddingrowsintheheatcovector.
+Acore<=1868,C1<1⇒|DH_I|<=1/8000000;J'_I=2j0>1/2000000,
+soD(H01+J)>3/8000000>0. ForCOMPLETEconstantC(orwholeC'>=0),
+DmathD>3/2;relativeentropyDrel'>3/2−1/8000000. Storagecomponent
+aloneisnotthatcompleteCpremise. Fullpreclockphysicaldim141733920768;
+n0/n1/indexexplicitandkept;nobillionGate/hugeclockmatrixallocation.
+
+Simplecausalcopydoesnotderivetheinputconstraint:sourcepairfanout
+support00/11gives(1−2q)I,erasingHjet;oneSOURCEall8givescoldI.
+RetainingbothBIRTHcopiesbeforemiddlegivesp²Inotp³Ionthetrueblank
+cut;terminalbalancedcopykeepschiI. Nativecausalstateelimination
+transmitstheactualentropy/WORKadjoints,itdoesnotsource-neutralize.
+
+Preciseparentapplication:completequantumInfo-sourceandWORKkernel
+foractual934terminalarchiveafter7bp,plusstrictmovingGibbsdefect.
+Remainingphysicaloperand:actualSOURCE-to-field/controllerconstraint
+orrealWORKreactionmeeting566/568onSAMEpreparation/cut/clock/futures;
+CQtoplevelreadout/price/nativeangleadmissionnotderivedfromcopy.
+Allopen42transport,independentupstreamEuler,actualselectedCostInfo/
+Hodge/nativestationarylaw/refinementremain;GR_closed=false,
+positive_gr/raw216open. Primarycurvedfamilyunchanged,nogeometryscan.
+
+Frozen7bqINCLUDINGnext-headingseparator:40078bytes,
+SHA25694ff1a0e81ae46c8dadc98fb7ac64ede80b222a944168be1915d1d953fafc204.
+Embeddedcodeexcludingclosingnewline:24543bytes,
+SHA2564434ce4b63a1fb5fcc6e229f01e43ad622013226a4d2f3648872935efa72b2ac.
+LoadsONLYpinned7bqinput7bphelperprefix10245bytes/
+ff883e8a4fb4b9a5434b0efa3f0c63c7a09df3307089e745120aee69186aa17f,
+then7bobuilderprefix;botholdmathcheckers/oldfixturesNOTexecuted.
+Finalsource-onlyreview/finalfenceprovenance/affectedintegrationfollow.
+
+Finalsource-onlyACCEPT40078/94ff1a0e81ae46c8dadc98fb7ac64ede80b222a944168be1915d1d953fafc204:
+native_source_application,stationary_root_transfer,price_geometry_bridge.
+Readentireproofandcode;nowrites/replays. Reviewclarifiedthat
+constraint/tangentrestrictionclaimconcernsFEEDBACKcovectorJonly,
+notimpossibilityofrealother-sourcecancellation. Finalcodeunchanged.
+
+Rootfinalcombinedcheckerexit0withordinaryassertionsON:
+actual934Gateword/1538Gateinverseandownedtupletie;new32-column
+balancedterminalcopysemanticand16-columnnativecopyfixtures;
+allgeneral-angle4Kraus/completeness,requestedmixednondiagonalrho
+with6x6CQcharacteristicpolynomial,inputentropyandderivativeidentities,
+complete256historystructuralfactor/lastcellquantumentropy,strictInfo
+floors,rationalTaylorbounds;causalpairfanout/retainedbirthcopycontrols;
+updatedactualNcounts/dimensions;stage0energyblock/Gibbs/WORKbinding.
+No old7bp/7bomathcheckerorfixture/GR/root/Lean/heatcertificate replay.
+Finalcode24543/4434ce4b BYTEIDENTICALtoexecutedcode. Onlylaterprose
+scopeclarified;actualedited-primaryfence/AST/chainedhelperloadersand
+ne/originalconstructorGitblobsverified. No numericdecisiontolerance.
+
+AffectedfinalintegrationPASS:workvalidation,agentprotocol,gravity
+assembly(validtrue;54active/98results/5discharged/22obligations;
+scientific_promotionfalse),repository(889claims/31assumptions/58aliases/
+183formal_support/918Leanclosure;warnings0),whitespace/provenance;
+existingresult-checkpointtemplateconstitutive/native-programme-v1.
+Removing7bqrestoresincoming63df2cc7primaryBYTEEXACT SHA256
+f1bedbb673ab19c40193c35c0cd3dcef8e779b95740106b096b1ba85a84cd5cd;
+incomingbrief861705bytes remainsEXACTprefix SHA256
+9c44ee65ffdefc10cd317b4d0e6bc59db248f309c516d86acec4b2d1fee457a5.
+Onlytwoownedpathschanged. Localproof/structuralchecksarenotremoteCI
+orphysicalGRacceptance;existing#334remainsDraftandunmerged.
