@@ -1,6 +1,8 @@
 import D0.Geometry.A4DCoframeParentConstraint
 import D0.Geometry.ArchiveRoleEquivalence
 import D0.Algebra.FiniteGramTangent
+import Mathlib.Analysis.Calculus.FDeriv.Pow
+import Mathlib.Analysis.Matrix.Normed
 
 /-!
 # Finite solder Gram completion of the centered coframe readout
@@ -245,6 +247,66 @@ theorem j2DetectorMetricPath_symmetric_difference_quotient
     abel
   rw [hcancel]
   simp [smul_add, smul_smul, pow_two, ht]
+
+section J2MetricPathDerivative
+
+local instance : NormedAddCommGroup (Matrix Role Role ℝ) := Matrix.normedAddCommGroup
+local instance : NormedSpace ℝ (Matrix Role Role ℝ) := Matrix.normedSpace
+
+/-- Directional Fréchet derivative of the source Gram path at the flat frame.
+The derivative map sends a scalar path parameter to that scalar times the
+full linear coefficient; the exact quadratic remainder gives the limit. -/
+theorem j2DetectorMetricPath_hasFDerivAt_direction (H : Matrix Role Role ℝ) :
+    HasFDerivAt (fun t : ℝ => j2DetectorMetricPath (t • H))
+      ((1 : ℝ →L[ℝ] ℝ).smulRight
+        (H * roleLorentzMetric + roleLorentzMetric * H.transpose)) 0 := by
+  let L : Matrix Role Role ℝ := H * roleLorentzMetric + roleLorentzMetric * H.transpose
+  let R : Matrix Role Role ℝ := H * roleLorentzMetric * H.transpose
+  have hlinear : HasFDerivAt (fun t : ℝ => t • L)
+      ((1 : ℝ →L[ℝ] ℝ).smulRight L) 0 := by
+    simpa using (hasFDerivAt_id (0 : ℝ)).smul_const L
+  have hpow : HasFDerivAt (fun t : ℝ => t ^ 2)
+      (0 : ℝ →L[ℝ] ℝ) 0 := by
+    simpa using (hasFDerivAt_pow (𝕜 := ℝ) 2 (x := (0 : ℝ)))
+  have hquadratic : HasFDerivAt (fun t : ℝ => t ^ 2 • R)
+      (0 : ℝ →L[ℝ] Matrix Role Role ℝ) 0 := by
+    simpa using hpow.smul_const R
+  have hconstant : HasFDerivAt (fun _ : ℝ => roleLorentzMetric)
+      (0 : ℝ →L[ℝ] Matrix Role Role ℝ) 0 :=
+    hasFDerivAt_const _ _
+  have hpolynomial_eq :
+      (fun t : ℝ => roleLorentzMetric + t • L + t ^ 2 • R) =
+        ((fun _ : ℝ => roleLorentzMetric) + (fun t : ℝ => t • L) +
+          (fun t : ℝ => t ^ 2 • R)) := by
+    funext t
+    rfl
+  have hpolynomial_sum := (hconstant.add hlinear).add hquadratic
+  have hpolynomial : HasFDerivAt
+      (fun t : ℝ => roleLorentzMetric + t • L + t ^ 2 • R)
+      ((1 : ℝ →L[ℝ] ℝ).smulRight L) 0 := by
+    rw [hpolynomial_eq]
+    exact hpolynomial_sum.congr_fderiv (by abel)
+  have hpath : (fun t : ℝ => j2DetectorMetricPath (t • H)) =
+      (fun t : ℝ => roleLorentzMetric + t • L + t ^ 2 • R) := by
+    funext t
+    dsimp [L, R]
+    exact j2DetectorMetricPath_smul_expand H t
+  rw [hpath]
+  exact hpolynomial
+
+/-- On the pinned symmetric direction `H(q)=qη/2`, the directional
+derivative above evaluates to `q`. -/
+theorem j2DetectorMetricPath_hasFDerivAt_symmetric_direction
+    (q : Matrix Role Role ℝ) (hq : q.transpose = q) :
+    HasFDerivAt
+      (fun t : ℝ => j2DetectorMetricPath (t • j2DetectorCoframeDirection q))
+      ((1 : ℝ →L[ℝ] ℝ).smulRight q) 0 := by
+  have h := j2DetectorMetricPath_hasFDerivAt_direction
+    (j2DetectorCoframeDirection q)
+  rw [j2DetectorCoframeDirection_metric_tangent q hq] at h
+  exact h
+
+end J2MetricPathDerivative
 
 /-- The role-indexed solder carrier is the pinned flat-frame carrier after
 right multiplication by `η`, which is an exact Lorentz isometry. -/
