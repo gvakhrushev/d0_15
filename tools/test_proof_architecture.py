@@ -1940,6 +1940,57 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertIn("D0/Matter/ArchivePartialTrace.lean", consumers)
         self.assertIn("D0/Gauge/FlatTensorNoGo.lean", consumers)
 
+    def test_partial_trace_consumes_generic_finite_matrix_api(self) -> None:
+        inventory_path = (
+            proof.ROOT
+            / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
+            / "finite_matrix_partial_trace_current_declarations_2026-10-25.json"
+        )
+        inventory = json.loads(inventory_path.read_text(encoding="utf-8"))
+        self.assertFalse(inventory["worktree_dirty"])
+        self.assertEqual(inventory["lean_source_digest"], lean_task_build.source_digest())
+        self.assertEqual(inventory["public_import_root"], "D0.All")
+        declarations = {row["name"]: row for row in inventory["declarations"]}
+
+        generic_trace = declarations[
+            "D0.Algebra.finiteMatrixPartialTraceLeft_trace"
+        ]
+        self.assertIn("D0.Algebra.finiteMatrixPartialTraceLeft",
+                      generic_trace["proof_dependencies"])
+        generic_intertwiner = declarations[
+            "D0.Algebra.finiteMatrixPartialTraceLeft_commutes_rightTensor"
+        ]
+        self.assertIn("CommSemiring R", generic_intertwiner["elaborated_type"])
+        self.assertIn("D0.Algebra.finiteMatrixTensorProduct",
+                      generic_intertwiner["proof_dependencies"])
+        self.assertFalse(any(
+            "sorryAx" in axiom
+            for name in (
+                "D0.Algebra.finiteMatrixPartialTraceLeft_trace",
+                "D0.Algebra.finiteMatrixPartialTraceLeft_commutes_rightTensor",
+            )
+            for axiom in declarations[name]["axioms"]
+        ))
+
+        consumer_trace = declarations["D0.Matter.trace_partialTrace"]
+        self.assertIn("D0.Algebra.finiteMatrixPartialTraceLeft_trace",
+                      consumer_trace["proof_dependencies"])
+        consumer_intertwiner = declarations[
+            "D0.Matter.partial_trace_commutes_with_shift"
+        ]
+        self.assertIn(
+            "D0.Algebra.finiteMatrixPartialTraceLeft_commutes_rightTensor",
+            consumer_intertwiner["proof_dependencies"],
+        )
+
+        support = {
+            row["lean_module"]: row
+            for row in proof.load_dataset(proof.ROOT)["formal_support"]
+        }
+        consumers = support["D0.Algebra.FiniteMatrixPartialTrace"]["referenced_by"]
+        self.assertIn("03_FORMALIZATION/D0/Matter/ArchivePartialTrace.lean",
+                      consumers)
+
     def test_source_port_preparation_consumes_shared_tensor_api(self) -> None:
         inventory_path = (
             proof.ROOT

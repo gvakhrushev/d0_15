@@ -2,6 +2,7 @@ import Mathlib.LinearAlgebra.Matrix.Trace
 import Mathlib.Data.Matrix.Basic
 import Mathlib.Data.Fintype.Basic
 import Mathlib.Data.Real.Basic
+import D0.Algebra.FiniteMatrixPartialTrace
 import D0.Matter.LocalTraceSource
 import D0.Matter.RepresentationCarrier
 import D0.Spectrum.GenerationTensorExactness
@@ -12,14 +13,11 @@ open scoped BigOperators
 namespace D0.Matter
 
 def partialTraceV {V N : Type} [Fintype V] [Fintype N] (M : Matrix (V × N) (V × N) ℝ) : Matrix N N ℝ :=
-  fun i j => ∑ v, M (v, i) (v, j)
+  D0.Algebra.finiteMatrixPartialTraceLeft M
 
 theorem trace_partialTrace {V N : Type} [Fintype V] [Fintype N] (M : Matrix (V × N) (V × N) ℝ) :
     Matrix.trace (partialTraceV M) = Matrix.trace M := by
-  unfold Matrix.trace partialTraceV Matrix.diag
-  dsimp
-  rw [Fintype.sum_prod_type]
-  rw [Finset.sum_comm]
+  exact D0.Algebra.finiteMatrixPartialTraceLeft_trace M
 
 /-- Compatibility name for Spectrum's shared `1 ⊗ C_N` tensor operator. -/
 def kronecker_I_C {V N : Type} [Fintype V] [DecidableEq V] (C_N : Matrix N N ℝ) : Matrix (V × N) (V × N) ℝ :=
@@ -29,54 +27,8 @@ theorem partial_trace_commutes_with_shift {V N : Type} [Fintype V] [DecidableEq 
     (M : Matrix (V × N) (V × N) ℝ) (C_N : Matrix N N ℝ)
     (h_comm : M * (kronecker_I_C C_N) = (kronecker_I_C C_N) * M) :
     (partialTraceV M) * C_N = C_N * (partialTraceV M) := by
-  ext n1 n3
-  unfold partialTraceV
-  have h_eq : ∀ v : V, (∑ n2, M (v, n1) (v, n2) * C_N n2 n3) = ∑ n2, C_N n1 n2 * M (v, n2) (v, n3) := by
-    intro v
-    have h_comm_v := congr_fun (congr_fun h_comm (v, n1)) (v, n3)
-    rw [Matrix.mul_apply, Matrix.mul_apply] at h_comm_v
-    change
-      (∑ x : V × N,
-        M (v, n1) x * ((1 : Matrix V V ℝ) x.1 v * C_N x.2 n3)) =
-      (∑ x : V × N,
-        ((1 : Matrix V V ℝ) v x.1 * C_N n1 x.2) * M x (v, n3)) at h_comm_v
-    simp only [Matrix.one_apply] at h_comm_v
-    have h_lhs : (∑ x : V × N, M (v, n1) x * ((if x.1 = v then (1 : ℝ) else 0) * C_N x.2 n3)) = ∑ n2, M (v, n1) (v, n2) * C_N n2 n3 := by
-      rw [Fintype.sum_prod_type]
-      dsimp
-      rw [Finset.sum_comm]
-      apply Finset.sum_congr rfl
-      intro n2 _
-      rw [Finset.sum_eq_single v]
-      · simp
-      · intro v2 _ hne
-        simp [hne]
-      · intro h
-        exact False.elim (h (Finset.mem_univ _))
-    have h_rhs : (∑ x : V × N, ((if v = x.1 then (1 : ℝ) else 0) * C_N n1 x.2) * M x (v, n3)) = ∑ n2, C_N n1 n2 * M (v, n2) (v, n3) := by
-      rw [Fintype.sum_prod_type]
-      dsimp
-      rw [Finset.sum_eq_single v]
-      · simp
-      · intro v2 _ hne
-        simp [hne.symm]
-      · intro h
-        exact False.elim (h (Finset.mem_univ _))
-    rw [h_lhs, h_rhs] at h_comm_v
-    exact h_comm_v
-  rw [Matrix.mul_apply, Matrix.mul_apply]
-  have h_sum_comm : (∑ n2 : N, (∑ v : V, M (v, n1) (v, n2)) * C_N n2 n3) = ∑ v : V, ∑ n2 : N, M (v, n1) (v, n2) * C_N n2 n3 := by
-    rw [Finset.sum_comm]
-    apply Finset.sum_congr rfl
-    intro v _
-    rw [Finset.sum_mul]
-  have h_sum_comm2 : (∑ n2 : N, C_N n1 n2 * ∑ v : V, M (v, n2) (v, n3)) = ∑ v : V, ∑ n2 : N, C_N n1 n2 * M (v, n2) (v, n3) := by
-    simp_rw [Finset.mul_sum]
-    rw [Finset.sum_comm]
-  rw [h_sum_comm, h_sum_comm2]
-  apply Finset.sum_congr rfl
-  intro v _
-  exact h_eq v
+  apply D0.Algebra.finiteMatrixPartialTraceLeft_commutes_rightTensor
+  simpa [kronecker_I_C, D0.Spectrum.tensor_product_I] using h_comm
 
 lemma diag_eq_of_comm_shift {n : Nat} [NeZero n] (A : Matrix (Fin n) (Fin n) ℝ)
     (h : A * (D0.Spectrum.cyclicShiftMatrix n) = (D0.Spectrum.cyclicShiftMatrix n) * A) (i : Fin n) :

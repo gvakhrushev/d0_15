@@ -14,6 +14,7 @@ import D0.Algebra.FibonacciPerronTraceCanonicity
 import D0.Algebra.FiniteCoordinateBasis
 import D0.Algebra.FiniteGramTangent
 import D0.Algebra.FiniteHermitianAdjoint
+import D0.Algebra.FiniteMatrixPartialTrace
 import D0.Algebra.FiniteMatrixTensorProduct
 import D0.Algebra.FiniteWeightedAdjoint
 import D0.Algebra.GaloisComposite
