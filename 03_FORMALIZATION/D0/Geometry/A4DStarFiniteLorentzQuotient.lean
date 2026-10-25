@@ -175,26 +175,9 @@ theorem a4dDressedLink_metric_compatible
         (Θy * roleLorentzMetric * Θy.transpose) *
         (a4dDressedLink Θx L Θy).transpose =
       Θx * roleLorentzMetric * Θx.transpose := by
-  have hcancelLeft : Θy⁻¹ * Θy = (1 : Matrix Role Role ℝ) :=
-    Matrix.nonsing_inv_mul Θy hΘy
-  have hcancelRight : Θy.transpose * (Θy⁻¹).transpose =
-      (1 : Matrix Role Role ℝ) := by
-    rw [← Matrix.transpose_mul]
-    rw [Matrix.nonsing_inv_mul Θy hΘy]
-    simp
-  unfold a4dDressedLink
-  rw [Matrix.transpose_mul, Matrix.transpose_mul]
-  calc
-    (Θx * L * Θy⁻¹) * (Θy * roleLorentzMetric * Θy.transpose) *
-        ((Θy⁻¹).transpose * (L.transpose * Θx.transpose)) =
-      Θx * (L * (Θy⁻¹ * Θy) * roleLorentzMetric *
-        (Θy.transpose * (Θy⁻¹).transpose) * L.transpose) * Θx.transpose := by
-          noncomm_ring
-    _ = Θx * (L * roleLorentzMetric * L.transpose) * Θx.transpose := by
-          rw [hcancelLeft, hcancelRight]
-          noncomm_ring
-    _ = Θx * roleLorentzMetric * Θx.transpose := by
-          exact congrArg (fun M : Matrix Role Role ℝ => Θx * M * Θx.transpose) hL
+  simpa [a4dDressedLink, D0.Algebra.finiteGram] using
+    D0.Algebra.finiteGram_dressed_transport_compatible
+      roleLorentzMetric Θx L Θy hL hΘy
 
 def a4dDressedLinkField (N : ℕ) (e : LocalCoframeField N)
     (L : A4DLinearLinkField N) (x : ArchiveRolePhaseGroup N) (r : Role) :

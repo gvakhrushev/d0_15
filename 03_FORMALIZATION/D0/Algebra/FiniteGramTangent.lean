@@ -39,6 +39,35 @@ theorem finiteGram_right_invariant {ι : Type*} [Fintype ι] [DecidableEq ι]
           simp only [Matrix.mul_assoc]
     _ = Θ * η * Θ.transpose := by rw [hΛ]
 
+/-- A frame-dressed isometry transports the endpoint Gram form exactly.
+Only the frame being inverted, `Θy`, must be nondegenerate. -/
+theorem finiteGram_dressed_transport_compatible {ι : Type*}
+    [Fintype ι] [DecidableEq ι]
+    (η Θx L Θy : Matrix ι ι ℝ)
+    (hL : L * η * L.transpose = η) (hΘy : IsUnit Θy.det) :
+    (Θx * L * Θy⁻¹) * finiteGram η Θy *
+        (Θx * L * Θy⁻¹).transpose = finiteGram η Θx := by
+  have hcancelLeft : Θy⁻¹ * Θy = (1 : Matrix ι ι ℝ) :=
+    Matrix.nonsing_inv_mul Θy hΘy
+  have hcancelRight : Θy.transpose * (Θy⁻¹).transpose =
+      (1 : Matrix ι ι ℝ) := by
+    rw [← Matrix.transpose_mul]
+    rw [Matrix.nonsing_inv_mul Θy hΘy]
+    simp
+  unfold finiteGram
+  rw [Matrix.transpose_mul, Matrix.transpose_mul]
+  calc
+    (Θx * L * Θy⁻¹) * (Θy * η * Θy.transpose) *
+        ((Θy⁻¹).transpose * (L.transpose * Θx.transpose)) =
+      Θx * (L * (Θy⁻¹ * Θy) * η *
+        (Θy.transpose * (Θy⁻¹).transpose) * L.transpose) * Θx.transpose := by
+          noncomm_ring
+    _ = Θx * (L * η * L.transpose) * Θx.transpose := by
+          rw [hcancelLeft, hcancelRight]
+          noncomm_ring
+    _ = Θx * η * Θx.transpose := by
+          exact congrArg (fun M : Matrix ι ι ℝ => Θx * M * Θx.transpose) hL
+
 /-- On a nondegenerate left frame, equality of finite Gram matrices is exactly
 membership in the right orbit of the isometry group of the fixed form. The
 fixed form `η` itself need not be invertible; only the reference frame `Θ`
