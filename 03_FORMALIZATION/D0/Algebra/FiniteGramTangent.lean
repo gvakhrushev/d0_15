@@ -65,4 +65,18 @@ theorem finiteGram_smul_expand {ι : Type*} [Fintype ι] [DecidableEq ι]
     smul_smul, pow_two]
   abel
 
+/-- Exact expansion of a finite Gram matrix around the identity coframe.
+Unlike `finiteGram_smul_expand`, this keeps an arbitrary first-order frame
+perturbation `C`; its linear term is the full `C η + η Cᵀ` source convention. -/
+theorem finiteGram_one_smul_expand {ι : Type*} [Fintype ι] [DecidableEq ι]
+    (η C : Matrix ι ι ℝ) (t : ℝ) :
+    finiteGram η (1 + t • C) =
+      η + t • (C * η + η * C.transpose) +
+        t^2 • (C * η * C.transpose) := by
+  unfold finiteGram
+  rw [Matrix.transpose_add, Matrix.transpose_smul]
+  simp [Matrix.add_mul, Matrix.mul_add, Matrix.mul_assoc, smul_add,
+    smul_smul, pow_two]
+  abel
+
 end D0.Algebra

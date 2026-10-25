@@ -174,6 +174,124 @@ theorem solderMetric_realizes_symmetric_tangent (N : ℕ)
   · intro x t ht
     rw [solderMetric_flat_tangent N e t ht x, he x]
 
+/-! ## Source-convention adapter for the nonlinear J² metric tangent
+
+The pinned J² bridge writes its flat metric coordinate as
+`Q(Θ) = Θ η Θᵀ`, with source perturbation `Θ = 1 + H` and
+`H(q) = q η / 2`. The existing finite solder carrier uses the equivalent
+right-`η` frame `Θ' = Θ η`; its perturbation is therefore `E = H η = q/2`.
+The lemmas below prove this exact reindexing and retain the quadratic
+remainder. They do not prove that the selected finite action supplies this
+carrier, its nondegeneracy premise, or a physical source/metric selection.
+-/
+
+/-- The pinned flat-frame metric convention `Q(1 + H) = (1 + H)η(1 + H)ᵀ`. -/
+def j2DetectorMetricPath (H : Matrix Role Role ℝ) : Matrix Role Role ℝ :=
+  D0.Algebra.finiteGram roleLorentzMetric (1 + H)
+
+theorem j2DetectorMetricPath_smul_expand (H : Matrix Role Role ℝ) (t : ℝ) :
+    j2DetectorMetricPath (t • H) =
+      roleLorentzMetric + t • (H * roleLorentzMetric + roleLorentzMetric * H.transpose) +
+        t^2 • (H * roleLorentzMetric * H.transpose) := by
+  exact D0.Algebra.finiteGram_one_smul_expand roleLorentzMetric H t
+
+/-- The coframe perturbation used by the pinned #201 detector convention. -/
+def j2DetectorCoframeDirection (q : Matrix Role Role ℝ) : Matrix Role Role ℝ :=
+  ((2 : ℝ)⁻¹ • q) * roleLorentzMetric
+
+theorem j2DetectorCoframeDirection_right_eta (q : Matrix Role Role ℝ) :
+    j2DetectorCoframeDirection q * roleLorentzMetric = (2 : ℝ)⁻¹ • q := by
+  dsimp [j2DetectorCoframeDirection]
+  rw [Matrix.mul_assoc, roleLorentzMetric_sq, Matrix.mul_one]
+
+theorem j2DetectorCoframeDirection_metric_tangent (q : Matrix Role Role ℝ)
+    (hq : q.transpose = q) :
+    j2DetectorCoframeDirection q * roleLorentzMetric +
+      roleLorentzMetric * (j2DetectorCoframeDirection q).transpose = q := by
+  have hleft := j2DetectorCoframeDirection_right_eta q
+  have hright : roleLorentzMetric * (j2DetectorCoframeDirection q).transpose =
+      (2 : ℝ)⁻¹ • q := by
+    dsimp [j2DetectorCoframeDirection]
+    rw [Matrix.transpose_mul, Matrix.transpose_smul, roleLorentzMetric_transpose, hq]
+    rw [← Matrix.mul_assoc, roleLorentzMetric_sq, Matrix.one_mul]
+  calc
+    _ = (2 : ℝ)⁻¹ • q + (2 : ℝ)⁻¹ • q := by rw [hleft, hright]
+    _ = q := by
+      simpa [Matrix.transpose_smul, hq] using D0.Algebra.symmetricMatrix_half q hq
+
+/-- The pinned symmetric metric direction has the exact finite J² expansion;
+the displayed quadratic term is retained rather than discarded. -/
+theorem j2DetectorMetricPath_symmetric_tangent (q : Matrix Role Role ℝ)
+    (hq : q.transpose = q) (t : ℝ) :
+    j2DetectorMetricPath (t • j2DetectorCoframeDirection q) =
+      roleLorentzMetric + t • q + t^2 •
+        (j2DetectorCoframeDirection q * roleLorentzMetric *
+          (j2DetectorCoframeDirection q).transpose) := by
+  rw [j2DetectorMetricPath_smul_expand,
+    j2DetectorCoframeDirection_metric_tangent q hq]
+
+theorem j2DetectorMetricPath_symmetric_difference_quotient
+    (q : Matrix Role Role ℝ) (hq : q.transpose = q) (t : ℝ) (ht : t ≠ 0) :
+    t⁻¹ • (j2DetectorMetricPath (t • j2DetectorCoframeDirection q) -
+      roleLorentzMetric) =
+      q + t • (j2DetectorCoframeDirection q * roleLorentzMetric *
+        (j2DetectorCoframeDirection q).transpose) := by
+  rw [j2DetectorMetricPath_symmetric_tangent q hq t]
+  have hcancel : roleLorentzMetric + t • q + t^2 •
+      (j2DetectorCoframeDirection q * roleLorentzMetric *
+        (j2DetectorCoframeDirection q).transpose) - roleLorentzMetric =
+      t • q + t^2 • (j2DetectorCoframeDirection q * roleLorentzMetric *
+        (j2DetectorCoframeDirection q).transpose) := by
+    abel
+  rw [hcancel]
+  simp [smul_add, smul_smul, pow_two, ht]
+
+/-- The role-indexed solder carrier is the pinned flat-frame carrier after
+right multiplication by `η`, which is an exact Lorentz isometry. -/
+theorem solderMetricMatrix_constant_j2DetectorMetricPath
+    (N : ℕ) (H : Matrix Role Role ℝ) (t : ℝ) (x : ArchiveRolePhaseGroup N) :
+    solderMetricMatrix N (t • fun _ r a => (H * roleLorentzMetric) r a) x =
+      j2DetectorMetricPath (t • H) := by
+  have hframe : roleLorentzMetric + t • (H * roleLorentzMetric) =
+      (1 + t • H) * roleLorentzMetric := by
+    simp [Matrix.add_mul]
+  have hη_isometry : roleLorentzMetric * roleLorentzMetric *
+      roleLorentzMetric.transpose = roleLorentzMetric := by
+    simp [roleLorentzMetric_transpose, roleLorentzMetric_sq]
+  calc
+    solderMetricMatrix N (t • fun _ r a => (H * roleLorentzMetric) r a) x =
+        D0.Algebra.finiteGram roleLorentzMetric
+          (roleLorentzMetric + t • (H * roleLorentzMetric)) := by
+      simp [solderMetricMatrix, solderMatrix, centeredCoframeMatrix_smul,
+        centeredCoframeMatrix_constant]
+    _ = D0.Algebra.finiteGram roleLorentzMetric ((1 + t • H) * roleLorentzMetric) := by
+      rw [hframe]
+    _ = D0.Algebra.finiteGram roleLorentzMetric (1 + t • H) :=
+      D0.Algebra.finiteGram_right_invariant roleLorentzMetric (1 + t • H)
+        roleLorentzMetric hη_isometry
+    _ = j2DetectorMetricPath (t • H) := rfl
+
+/-- An explicit Lean adapter from the source's `q` direction into the existing
+finite solder readout and nonlinear Gram path. -/
+theorem j2DetectorMetricPath_symmetric_solder_adapter (N : ℕ)
+    (q : Matrix Role Role ℝ) (hq : q.transpose = q) :
+    ∃ e : LocalCoframeField N,
+      (∀ x : ArchiveRolePhaseGroup N, (coframeMetricReadout N e x).toMatrix = q) ∧
+      (∀ x : ArchiveRolePhaseGroup N, ∀ t : ℝ,
+        solderMetricMatrix N (t • e) x =
+          j2DetectorMetricPath (t • j2DetectorCoframeDirection q)) := by
+  let H : Matrix Role Role ℝ := j2DetectorCoframeDirection q
+  have hleft : H * roleLorentzMetric = (2 : ℝ)⁻¹ • q := by
+    dsimp [H, j2DetectorCoframeDirection]
+    rw [Matrix.mul_assoc, roleLorentzMetric_sq, Matrix.mul_one]
+  refine ⟨fun _ r a => (H * roleLorentzMetric) r a, ?_, ?_⟩
+  · intro x
+    rw [coframeMetricReadout_eq_centered_add_transpose,
+      centeredCoframeMatrix_constant, hleft]
+    exact D0.Algebra.symmetricMatrix_half q hq
+  · intro x t
+    exact solderMetricMatrix_constant_j2DetectorMetricPath N H t x
+
 theorem solderMetric_forwardGauge_flat_tangent (N : ℕ) (xi : LocalRoleVector N)
     (t : ℝ) (x : ArchiveRolePhaseGroup N) :
     solderMetricMatrix N (t • forwardGaugeCoframe N xi) x - roleLorentzMetric =
