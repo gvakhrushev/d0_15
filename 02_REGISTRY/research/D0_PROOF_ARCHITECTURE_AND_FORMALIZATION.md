@@ -6349,3 +6349,52 @@ content. Output SHA-256:
 updated runner SHA-256:
 `b157636922aec4ed3dc1a448513afa7db2b64f28fa15db3d52c5af579ba0434e`.
 The added retrieval regression brings the proof-architecture suite to **48/48**.
+
+### Literal claim-ID source coordinates remain retrieval candidates (25 October 2026)
+
+The v3 book-source view supplements heading candidates with every exact,
+boundary-aware occurrence of a current `claims.csv` ID in the ten top-level
+book files. It records the book/path/line, zero-based half-open character
+offsets, bounded source-line excerpt, nearest parsed Markdown heading, and
+whether the file blob matches the snapshot. A `candidate_coordinate_key` is
+emitted only for a matching pinned blob. Markdown code fences are excluded;
+the same corrected closing-fence rule now drives heading parsing and the
+mention scan. A literal ID can still be a citation or cross-reference, so
+this coordinate is not evidence that the surrounding text proves the claim.
+No claim status, owner, application edge, or C0 disposition changed.
+
+On the clean source snapshot `5cfb97165e2b197b3671690aada0cc2341a167ac`,
+the view records **833** literal mentions across **424** of the 889 claim rows
+and **9** of the 10 book files. The earlier unfiltered text scan counted 837;
+the four additional matches lie inside fenced code and are now omitted. The
+existing heading results remain 674 coordinates: 40 with exact-heading
+candidates, 212 with ranked-heading candidates, 23 in both groups, and 445
+with neither. The candidate view does not classify those unlocated headings
+as units or exclusions.
+
+One useful retrieval case is
+`D0-NONRECIPROCAL-ACTIVE-DYNAMICS-FORMALISM-BRIDGE-001`. Its locator still
+resolves uniquely to the `BOOK_03 §03.3` heading at line 123; the literal ID
+appears at line 238 under `03.3.2 The closed feedback action component` at
+line 226. This exposes the exact paragraph carrying its explicit
+FORMALISM/PASSPORT boundary. The current Lean declaration
+`D0.Bridge.ConstrainedHamiltonianEmbeddingPassport.nonreciprocal_active_dynamics_has_formalism_bridge`
+only proves `Jsymp * Jsymp = -I` for a 2×2 integer matrix. The typed result
+does not prove the full feedback/action-to-constrained-Hamiltonian application
+described in the book. The mention and heading are retrieval coordinates; the
+application remains partial and no CORE/physical claim is promoted.
+
+The current JSON is
+`sources/d0_proof_architecture_formalization_2026-10-24/claim_source_candidates_current.json`,
+schema `d0-claim-source-candidate-view-v3`, generated with
+`worktree_dirty=false` at the clean snapshot above. Its SHA-256 is
+`e30de22bf507c0f65f752f08b6f98c74941ff8ecd17670b4330e89f1ce083a21`; the
+collector SHA-256 is
+`aaed4194af38484de97db60c821374955f90dc5cc290d20a6fb8e53f94624262`, and
+the claim-register SHA-256 remains
+`6b19168191ad4e68e106f7b89dcd008b3ec3cabdca7b3266864f61fe64455fc8`.
+All **48/48** proof-architecture tests pass, including exact-token boundaries,
+code-fence exclusion and snapshot-key gating. Independent read-only review
+found no remaining issue in the mention mapping or its candidate-only scope.
+This is a source-retrieval improvement, not semantic coverage, independent C0
+acceptance, or physical closure.
