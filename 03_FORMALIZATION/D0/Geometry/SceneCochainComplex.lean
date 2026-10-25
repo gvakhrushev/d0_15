@@ -48,7 +48,7 @@ def sceneBoundary2 : Matrix SceneEdge SceneTriangle ℚ :=
 /-- The actual tripartite incidence matrices, read as a graded complex over ℚ.
 The transpose convention makes its generic `d₀` and `d₁` the scene cochain
 differentials `∂₁ᵀ` and `∂₂ᵀ`. -/
-noncomputable def sceneGradedComplex : D0.Topology.GradedCellComplexOver ℚ where
+noncomputable def sceneGradedComplex : D0.Topology.GradedCellComplex ℚ where
   V := SceneVertex
   E := SceneEdge
   F := SceneTriangle
