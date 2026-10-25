@@ -7248,3 +7248,38 @@ This closes only the finite matrix calculus step for source B. It does not
 connect source A's selected-action quotient to the Lean carrier, establish
 physical metric/source selection or global connection elimination, or grant
 independent C0 acceptance. No claim status or physical interpretation changes.
+
+### Transport to the finite solder readout (26 October 2026)
+
+The map-level derivative now composes with the existing constant-coframe
+adapter. `solderMetricMatrix_constant_frame_hasFDerivAt` proves that, for each
+finite carrier size `N` and site `x`, the actual solder readout map
+`H ↦ solderMetricMatrix N (fun _ r a => (Hη) r a) x` has derivative
+`Hη + ηHᵀ` at the flat frame. Its proof uses the exact equality with
+`j2DetectorMetricPath` at path parameter `t=1`. The matrix parameter uses the
+Frobenius norm. This is the constant-coframe chart only; it does not assert a
+Fréchet derivative over arbitrary sitewise `LocalCoframeField` variations.
+
+The geometry module is pinned at commit
+`8d35d3e56fbcf2142f1f5e58260a63d3bec49278`, SHA-256
+`2d1e7cdf1fc106f7b535665bd3954837417c3e820995eb8bfc71d2291e03e9d7`.
+The targeted `D0.Geometry.A4DSolderMetricCompletion` build passed
+**3,087/3,087** jobs; the full `D0.All` build invoked by the fresh crosswalk
+also completed successfully. Its clean snapshot is
+`d449696f6647adac98e35e9dbfd53fca1ed69e54`, with Lean-source digest
+`01c1b7f0208c4d4e948eb9ac5b8c64dee0ecd902b75393ae76f9a9f87fb018d8` and
+`applications.json` SHA-256
+`9a86e57e35e1556e4f2a1dcd5a8ed54bea7961a0274a2252d844b7ad7e39fa64`.
+All thirteen requested Lean declaration locators resolve in the compiled
+environment. The compact crosswalk is
+`sources/d0_proof_architecture_formalization_2026-10-24/metric_provenance_crosswalk_2026-10-26_d449696f.json`,
+SHA-256 `d57e5a9c479b61b83b41fec5d4f706c2813e07ae38d0a29469429abc24c1eafd`.
+The two source sections remain candidate locators requiring review; claim
+locators and the semantic relation remain unresolved, and
+`acceptance_inferred=false`.
+
+This transfers the finite matrix derivative to an explicit solder carrier
+chart. It still does not establish source A's action-to-carrier relation,
+arbitrary sitewise field variation, physical source selection, global
+connection elimination, or independent C0 acceptance. Claim status and
+physical interpretation remain unchanged.
