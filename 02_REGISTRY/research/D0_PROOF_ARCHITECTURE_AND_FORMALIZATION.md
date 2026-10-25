@@ -4869,3 +4869,42 @@ The full public-import Lean replay remains deferred to the task's Ready
 checkpoint. The physical CAR/source/action selection, matter compatibility,
 all-size dispersion classification, and GR closure remain open. This is a
 conditional mathematical application, not physical `GR_closed`.
+
+### Fixed-frequency null-root persistence on every archive period (25 October 2026)
+
+The adapter now defines `archiveLorentzianDiagonalMomentum N m` on the actual
+`Role → ZMod (N+2)` Fourier carrier, with coordinates `(m,m,0,0)` in the
+repository's `A/B/C/D` ordering. The Lean theorem
+`archiveLorentzian_diagonal_momentum_is_null` proves the exact Eq. (5) symbol
+is zero for every `N` and every natural `m`: the positive A and negative B
+terms are identical and cancel, while C and D vanish. This directly formalizes
+the source memo's diagonal null family rather than supplying a numerical
+root-search result.
+
+When `0 < m < N+2`,
+`archiveLorentzian_diagonal_momentum_ne_zero` proves the momentum itself is
+nonzero using the exact `ZMod` divisibility criterion. Composing it with the
+already established actual-fibre contraction and Eq. (7) classification,
+`archiveLorentzian_diagonal_null_fibre_classification` proves for the
+repository's explicit `roleLorentzSign` that the first-order CAR operator has
+`ker D = range D`, each of complex dimension eight. In particular,
+`archiveLorentzian_unit_null_fibre_classification` establishes this for the
+same unit frequency `m=1` at every period `N+2`, so one nonconstant null mode
+persists under every refinement in the declared archive sequence.
+
+This discharges the fixed-mode persistence statement in §5 of
+`A4D_NATIVE_WEIGHTED_DIRAC_BOUNDARY.md`, pinned at commit
+`db3091aded8f6cfe8d39dcd973ccf30ec40dfb08`, blob
+`2de670c0e2f9a53104be8105a3554cdd9aaa85e7`. The general fibre dimension
+theorem remains the consumer; no separate role or root is assumed in the
+unit-frequency corollary. The existing module stays registered through
+`formal_support.csv` and generated `D0.All`; no claim, physical source choice,
+or gravity acceptance changes.
+
+The narrow Lean build of
+`D0.Research.NativeWeightedDiracFourierNullModes` passed (3,410 Lake jobs).
+Other roots on the null shell, their all-grid count, total cochain kernel
+dimensions, and any physical gauge quotient remain outside this result. The
+theorem proves persistence of one explicit mathematical family on the given
+carrier; it does not prove physical selection, a continuum limit, or GR
+closure.

@@ -15,8 +15,9 @@ commit `db3091aded8f6cfe8d39dcd973ccf30ec40dfb08`, blob
 The geometric module constructs the actual sixteen-component complex fibre
 operator and proves its CAR contraction for any selected nonzero forward
 multiplier. This module composes that application with the owned generic
-nilpotent-kernel theorem. The remaining mode-selection premise is explicit:
-the caller supplies a role whose forward multiplier is nonzero.
+nilpotent-kernel theorem. A nonzero product momentum determines a role whose
+forward multiplier is nonzero. The final application below also constructs
+an explicit nonconstant null family on every archive period.
 -/
 
 noncomputable section
@@ -279,6 +280,89 @@ theorem archiveLorentzian_nonzero_null_mode_classification
   refine ⟨hker, hker_dim, ?_⟩
   rw [← hker]
   exact hker_dim
+
+/-- The fixed-frequency diagonal family `(m,m,0,0)` on the actual archive
+Fourier carrier. The same natural `m` is reduced into each period `N+2`. -/
+def archiveLorentzianDiagonalMomentum (N m : ℕ) :
+    Role → ZMod (archiveFibers N) :=
+  fun r =>
+    if r = D0.A then (m : ZMod (archiveFibers N))
+    else if r = D0.B then (m : ZMod (archiveFibers N))
+    else 0
+
+/-- The complete diagonal family is exactly null for Eq. (5), at every
+archive period. The positive A and negative B contributions cancel; C and D
+coordinates vanish. -/
+theorem archiveLorentzian_diagonal_momentum_is_null (N m : ℕ) :
+    archiveLorentzianFourierSymbol N (archiveLorentzianDiagonalMomentum N m) = 0 := by
+  have hAB : archiveLorentzianDiagonalMomentum N m D0.A =
+      archiveLorentzianDiagonalMomentum N m D0.B := by
+    simp [archiveLorentzianDiagonalMomentum, D0.A, D0.B]
+  have hC : archiveLorentzianDiagonalMomentum N m D0.C = 0 := by
+    simp [archiveLorentzianDiagonalMomentum, D0.A, D0.B, D0.C]
+  have hD : archiveLorentzianDiagonalMomentum N m D0.D = 0 := by
+    simp [archiveLorentzianDiagonalMomentum, D0.A, D0.B, D0.D]
+  unfold archiveLorentzianFourierSymbol
+  rw [hAB, hC, hD]
+  simp
+
+/-- A fixed positive natural frequency remains a nonzero momentum whenever
+it fits in the current period. -/
+theorem archiveLorentzian_diagonal_momentum_ne_zero
+    (N m : ℕ) (hm0 : 0 < m) (hmL : m < archiveFibers N) :
+    archiveLorentzianDiagonalMomentum N m ≠ 0 := by
+  intro hzero
+  have hcoordinate := congrFun hzero D0.A
+  have hcast : (m : ZMod (archiveFibers N)) = 0 := by
+    simpa [archiveLorentzianDiagonalMomentum, D0.A] using hcoordinate
+  have hdiv : archiveFibers N ∣ m :=
+    (ZMod.natCast_eq_zero_iff m (archiveFibers N)).mp hcast
+  have hperiod_le : archiveFibers N ≤ m := Nat.le_of_dvd hm0 hdiv
+  omega
+
+/-- On every period where the fixed frequency is nonzero, the actual
+role-signed CAR fibre has equal kernel and range, each of complex dimension
+eight. This composes the persistent null root with the exact Eq. (7) fibre
+classification above. -/
+theorem archiveLorentzian_diagonal_null_fibre_classification
+    (N m : ℕ) (hm0 : 0 < m) (hmL : m < archiveFibers N) :
+    LinearMap.ker
+        (roleWeightedArchiveFourierFockActionLinear N roleLorentzSign
+          (archiveLorentzianDiagonalMomentum N m)) =
+      LinearMap.range
+        (roleWeightedArchiveFourierFockActionLinear N roleLorentzSign
+          (archiveLorentzianDiagonalMomentum N m)) ∧
+    Module.finrank ℂ
+        (LinearMap.ker (roleWeightedArchiveFourierFockActionLinear N roleLorentzSign
+          (archiveLorentzianDiagonalMomentum N m))) = 8 ∧
+    Module.finrank ℂ
+        (LinearMap.range (roleWeightedArchiveFourierFockActionLinear N roleLorentzSign
+          (archiveLorentzianDiagonalMomentum N m))) = 8 := by
+  exact archiveLorentzian_nonzero_null_mode_classification N
+    (archiveLorentzianDiagonalMomentum N m)
+    (archiveLorentzian_diagonal_momentum_is_null N m)
+    (archiveLorentzian_diagonal_momentum_ne_zero N m hm0 hmL)
+
+/-- A unit-frequency nonconstant null fibre exists on every archive period
+`N+2`, and its actual first-order CAR operator has an eight-dimensional
+complex kernel equal to its range. This is the fixed-mode refinement
+persistence statement; it does not count the other roots on the grid. -/
+theorem archiveLorentzian_unit_null_fibre_classification (N : ℕ) :
+    LinearMap.ker
+        (roleWeightedArchiveFourierFockActionLinear N roleLorentzSign
+          (archiveLorentzianDiagonalMomentum N 1)) =
+      LinearMap.range
+        (roleWeightedArchiveFourierFockActionLinear N roleLorentzSign
+          (archiveLorentzianDiagonalMomentum N 1)) ∧
+    Module.finrank ℂ
+        (LinearMap.ker (roleWeightedArchiveFourierFockActionLinear N roleLorentzSign
+          (archiveLorentzianDiagonalMomentum N 1))) = 8 ∧
+    Module.finrank ℂ
+        (LinearMap.range (roleWeightedArchiveFourierFockActionLinear N roleLorentzSign
+          (archiveLorentzianDiagonalMomentum N 1))) = 8 := by
+  apply archiveLorentzian_diagonal_null_fibre_classification
+  · omega
+  · simp [archiveFibers]
 
 end
 
