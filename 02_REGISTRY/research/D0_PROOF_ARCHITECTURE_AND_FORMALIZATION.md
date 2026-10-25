@@ -6631,3 +6631,53 @@ the Draft workflows skip release-proof closure and native capsule steps.
 
 This is a finite algebra API migration with a compatibility path. It changes no
 registry claim status, source premise, or scientific acceptance boundary.
+
+### Route source preparation through the shared matrix tensor API (25 October 2026)
+
+`D0.Representation.SourcePortPreparation` now imports
+`D0.Algebra.FiniteMatrixTensorProduct` and uses
+`finiteMatrixTensorProduct` for its coupled operator, joint metric, interaction
+generator, and independent-product control. The `coupled_fourth` proof consumes
+the shared multiplication and identity laws. Existing public theorem names and
+finite rational matrices remain intact; the D0 constructor is definitionally
+Mathlib's `Matrix.kronecker`. This consolidates the operator API without
+changing the model's declared scope or promoting physical availability.
+
+The module's narrow build passed **2,956/2,956** Lake jobs. Declaration
+extraction rebuilt public `D0.All` and recorded all **73** declarations at
+clean source snapshot `efd8ffcf8fb6c0e0fc3303dd2d88d3ee40cf619e`, Lean source
+digest `7612be00391142e8332473911e83202aefe309b5b43525d10dee622da429f75c`,
+collector SHA-256 `eada9c6f24ed4cb04c4a6d5afd1d6c229296257642a11230550bd14c2ac6cd8f`,
+and inventory SHA-256
+`eac9c906b152765af63e48f68e32be6305a1e4d58e0236893cbbb1e23b847f94`.
+The elaborated `coupled`, `jointMetric`, and `interactionGenerator` depend on
+the shared D0 constructor; `coupled_fourth` depends on its multiplication and
+identity theorems; the nonfactorization application consumes both the generic
+independent-product control and the exact interaction witness. No declaration
+in this module has `sorryAx` in its recorded footprint. Existing
+`formal_support` now lists this module as a consumer of the shared API.
+
+Because the declaration collector pins the digest of the complete Lean source
+tree, the three other current inventories were refreshed together at clean
+metadata snapshot `f8430243ace312c1abc0c393b465bfa6c72b1c1b`, with the same Lean
+source digest above: the CAR/Hodge inventory retains 36 declarations (collector
+`3c41633e10ad03c3bb0a8e440f94506a632630561697a6c44f6a76cda6155b2a`, file
+SHA-256 `5007e2e3fac8e324891934e4986fe69b73c706e0fae798c6257601536f23e968`);
+the Gauge inventory retains four (collector
+`358926670c102b53cf9cec7ac88157833a32429fb28a14e7e05dbaa755232bce`, file
+SHA-256 `f3b6eef41746ca3ef36d6d2ed8a24dfebbac6c9e35e231ee223c5570a71e5035`);
+and the nonvacuum stencil inventory retains 15 (collector
+`6a4fdcdaecc9ae9bc6a5f7b74d57d64ce6d2577a08aa91b267f3346cbda9b73b`, file
+SHA-256 `216f950c64332c0996f4127331b75ebd03bbd351ef106fc65cab655ca0a20fb2`).
+The earlier inventory blobs remain available through Git history at their
+recorded snapshots.
+
+Six targeted proof-architecture regressions pass, covering the current
+CAR/Hodge and nonvacuum declaration inventories, shared coordinate and tensor
+APIs, the SourcePortPreparation application, and Gauge compatibility. Repository
+validation passes with 889 claims, 31 assumptions, 58 aliases, 200
+formal-support rows, and closure 932 with zero warnings; generated Lean views
+are current, the formalization-debt count remains five against its five-item
+baseline, and `git diff --check` is clean. This is a finite algebra/library
+slice. C0 freeze and independent acceptance, remaining mathematical
+migrations, and the physical GR premises remain open.
