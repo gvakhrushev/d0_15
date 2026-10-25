@@ -2814,3 +2814,25 @@ section key as a candidate needing review, keeps the semantic relation
 `unresolved`, and records `acceptance_inferred=false`. This does not establish
 C0 membership or its accepted denominator, validate a Lean declaration as the
 semantic proof of this research statement, or select a physical D0 realization.
+
+### Exact verification-core declaration locators need a renewed application review (25 October 2026)
+
+The compiled current-source inventory already exposes the verification-core
+declarations at their Lean source locations. I checked three precise candidates
+against the pinned module: `D0.Foundation.VerificationCore.verification_core`
+(line 230), `D0.Foundation.VerificationCore.finiteSigmaWitness` (line 375),
+and `D0.Foundation.VerificationCore.SigmaWitness.coded_verification_core`
+(line 487). Their different roles match the general representation theorem,
+the finite-code construction, and the conditional coded realization.
+
+Adding those names and their line locators to the existing result record made
+`gr_assembly.py check` reject the already accepted
+`lean-verification-core-to-foundation` receipt as having a stale acceptance
+digest. This is expected: `application_digest` includes the complete result
+record, including evidence locators. I reverted that proposed registry change
+and kept its accepted receipt intact rather than replacing its digest without
+a renewed independent review. The candidates therefore remain visible in the
+compiled inventory but are not promoted to an explicitly reviewed result-to-
+declaration mapping. Recording them in the assembly result requires review of
+the exact declarations and the unchanged application hypotheses at the
+existing consumer edge.
