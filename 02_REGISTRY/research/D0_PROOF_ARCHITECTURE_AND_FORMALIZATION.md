@@ -3931,8 +3931,8 @@ capsule at the same commit has SHA-256
 | `3. Genuine mixed metric dependence is preserved (Eqs. 2–3)` | **Partial.** `inverse_weight_derivative` proves the generic inverse-operator derivative identity. The capsule does not construct the metric compound `W_Q`, prove its minor formula or diagonal agreement, evaluate the ten metric probes, or derive `Q ↦ sQ` operator homogeneity. |
 | `Finite mixed spectral moments: a quantitative contrast obstruction (generic identities and annihilator)` | **Finite-degree identities and their generic application represented.** The capsule binds the actual trace, scalar trace homogeneity, and coefficient-independent annihilator/error-bound lemmas. The companion module now proves the arbitrary-p binomial annihilator, reciprocal-weight normalization, and total variation, then applies the capsule's annihilator to every real coefficient family independent of the scale index. It still does not instantiate the physical fibers/probes or the refinement error bound. |
 | `Finite mixed spectral moments: a quantitative contrast obstruction (physical contrast, Eq. 3c)` | **Conditional finite-probe estimate formalized; physical application remains partial.** `eq3c_finite_probe_error_bound` cancels any scale-independent inverse-scale polynomial of fixed degree, applies the owned weighted-error inequality, and returns the stated lower-bound constant under explicit base-action, weighted-remainder, per-scale-profile, and smallness hypotheses. It does not construct the two curved fibers/probes or derive those physical/source hypotheses. |
-| `4. Direct flat Lorentz binding on the owned carrier (Eqs. 4–5)` | **Not represented as a full result.** The capsule has CAR/nilpotency facts and an identity-weight specialization, but not the full signed `W_eta` and site/Fock binding, Fourier symbol/dispersion, all-size spectrum, or all-role-order intertwiners. |
-| `4. Direct flat Lorentz binding on the owned carrier (Eq. 6, spatial block)` | **Full-space implication formalized conditionally; actual application partial.** In addition to the isolated 2×2 obstruction, `matrix_adjoint_pairing` and `positive_selfadjoint_spatial_invariant_block_impossible` show that a positive full-carrier pairing and a self-adjoint full matrix are incompatible with any two nonzero vectors on which the operator acts as the Eq. (6) block. The exact CAR operator, its two vectors, and both invariant-action equations are still not represented or instantiated in Lean. |
+| `4. Direct flat Lorentz binding on the owned carrier (Eqs. 4–5)` | **Partial.** The new application module binds the existing signed Fock weight to the actual site×Fock carrier and proves its exact `L=4` B-character vacuum/singleton action. It does not formalize the full Fourier symbol/dispersion, all-size spectrum, or all-role-order intertwiners. |
+| `4. Direct flat Lorentz binding on the owned carrier (Eq. 6, spatial block)` | **Exact matrix application formalized conditionally.** The actual weighted CAR/Hodge operator is represented by `LinearMap.toMatrix'` on the complete finite cochain basis; its nonzero vacuum/B-singleton vectors obey the Eq. (6) block. Applying `positive_selfadjoint_spatial_invariant_block_impossible` shows that no positive full-carrier pairing can make this concrete matrix self-adjoint. Neither positivity nor self-adjointness is derived from a physical source, so physical selection remains open. |
 | `5. Complete constant-metric null-mode classification (Eq. 7)` | **Generic implication represented; actual classification not represented.** The kernel/range and half-dimension lemmas assume `D² = 0` and a supplied contraction `DK + KD = I`. The capsule does not construct the Fourier contraction on actual null modes, prove the dispersion classification/counts, or show refinement persistence. |
 | `6. Fixed-positive-time heat trace cannot supply the claimed refinement (Eq. 8)` | **Conditional inequality represented; spectral application not represented.** The exponential lower bound and its consequence compile from a supplied heat-trace lower bound. The capsule does not define the actual `H_L`, prove its minimum eigenvalue, or derive divergence from the Lorentz spectrum. |
 
@@ -4091,3 +4091,73 @@ and collector SHA-256 is
 `25f0569099c3e7421ca0ef146e23890b66095c5e43b96a1b007684af9608b068`.
 The inventory's public import root is `D0.All`. This is a supporting
 mathematical result, not an independent acceptance of the source application.
+
+### Exact L=4 CAR/Hodge instantiation of the spatial Nyquist block (25 October 2026)
+
+The separately registered adapter
+`D0.Research.NativeWeightedDiracNyquistApplication` in
+`03_FORMALIZATION/D0/Research/NativeWeightedDiracNyquistApplication.lean`
+consumes the pinned conditional obstruction without editing its capsule or
+receipt. It uses the existing `flatLorentzSubsetWeight` on the actual
+`ArchiveRolePhaseGroup 2 × ArchiveFockState` cochain carrier and the owned
+`dForward`/Hodge-CAR codifferential. For the period-four B character at
+`L=4`, it proves the two operator equations
+`D_W vacuum = -8 • BState` and `D_W BState = 8 • vacuum`, and proves both
+vectors are nonzero. It then represents the same linear operator using
+`LinearMap.toMatrix'` and `Matrix.mulVec`, and applies the existing full-carrier
+obstruction to conclude that any positive-definite quadratic form on this
+complete finite coordinate carrier is incompatible with self-adjointness of
+this matrix.
+
+This is an exact formal application of the source's Eq. (6), not a physical
+selection result. The theorem is conditional on a supplied positive form and
+matrix self-adjointness equation; it derives neither premise and does not
+claim that D0 selects either one. The remaining physical/source application,
+all-size Fourier/spectrum results, and native action selection remain open.
+Phase: Lean application/transport of a pinned conditional result, not native
+physical realization. Parent substitution: the prior missing step “the exact
+CAR operator, its two vectors, and both invariant-action equations are not
+instantiated” is replaced by the concrete `L=4` weighted-operator matrix and
+its two nonzero-vector equations on the full finite cochain carrier. Remaining
+assumptions: a positive full-carrier quadratic form and self-adjointness of
+that matrix are supplied only as hypotheses to the impossibility theorem; no
+physical source derives them, and the theorem establishes no D0/GR selection.
+This architecture WORKER has no scientific assembly binding; the prescribed
+`gr_assembly.py template WRK-D0-PROOF-ARCHITECTURE-FORMALIZATION` correctly
+returns `unknown scientific binding`, so no gravity assembly result/status was
+created.
+The adapter is explicitly registered by `formal_support.csv` and the generated
+`D0.All` import. The original conditional capsule and its certificate snapshot
+remain unchanged. Its source input is pinned to §4, Eq. (6) of
+`02_REGISTRY/research/A4D_NATIVE_WEIGHTED_DIRAC_BOUNDARY.md` at commit
+`db3091aded8f6cfe8d39dcd973ccf30ec40dfb08`, Git blob
+`2de670c0e2f9a53104be8105a3554cdd9aaa85e7`.
+
+The focused build of `D0.Research.NativeWeightedDiracNyquistApplication`
+passed (3,005 Lake jobs); the public-import inventory compiled `D0.All`.
+The inventory records 83 declarations (71 theorems and 12 definitions; 54
+source-ranged and 29 generated/range-less), with the operator block, matrix
+bridge, and conditional obstruction included. The exact input snapshot was
+`c3ceba511bab5c435d715fd56382615fc1dc1505` with `worktree_dirty=true`; this is
+pre-commit provenance, not a claim that the inventory was generated from the
+eventual checkpoint commit. The whole-Lean-source digest is
+`52af7566629ee534bc96f1842244f12a0a3bd324c6739b9a53c93f23c9ac553d`, the
+adapter SHA-256 is
+`d6b6f2231aea7963591f8251e2c7705d22676b0defe524a4d06120aa7e31cc40`, the
+inventory SHA-256 is
+`b3d500f042b88c40f7fa4ae0498006a31252367c7071e69fa0b124099e020ccf`, and the
+collector SHA-256 is
+`7f8d83cda9105151a2e6e07bd66a5f1cdf03fa35f9bb6a5da336ac4324593c5a`.
+The inventory file is
+`02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/native_weighted_dirac_nyquist_application_inventory_2026-10-25.json`.
+
+The main operator theorem inherits the five existing `native_decide` CAR
+proof leaves in addition to `Classical.choice`, `Quot.sound`, and `propext`;
+the matrix bridge and conditional application add no further axiom. No
+`sorryAx` occurs. Repository validation passed (`claims=889`, `assumptions=31`,
+`aliases=58`, `formal_support=192`, `lean_closure=925`, zero warnings), as did
+work/protocol, assembly check/render, generated-work-view and generated-Lean
+view checks. The generated `D0.All` file retained its repository-standard
+CRLF line endings; the EOL-aware diff check passed. This is a supporting
+mathematical result, not independent source acceptance or physical GR
+selection. The PR remains Draft and the execution remains in progress.

@@ -641,6 +641,7 @@ import D0.Research.MemoryTangentSpan
 import D0.Research.NativeHistoryActionResponse
 import D0.Research.NativeWeightedDiracBoundary
 import D0.Research.NativeWeightedDiracMomentIdentities
+import D0.Research.NativeWeightedDiracNyquistApplication
 import D0.Research.PrimitiveJetComposition
 import D0.Research.SchurStationaryTransfer
 import D0.Research.SourceReflectionKernel
