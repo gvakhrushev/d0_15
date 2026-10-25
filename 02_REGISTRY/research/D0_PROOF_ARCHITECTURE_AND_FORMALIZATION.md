@@ -792,6 +792,35 @@ the module and exact-detail collector scripts are pinned in the generated output
 no C0 classification or physical assumption, and the exact C0 package remains unaccepted.
 
 
+### 25 October complete assembly-source locator refresh
+
+The refreshed `crosswalk --all-current` output now includes every evidence record, not only the
+first 32 rows of a bounded console view. It contains all 54 assembly-result rows and all 190
+source records. An exact `source:<commit>:<path>` file key is emitted only after the immutable
+Git blob matches its recorded SHA-256. A verified historical pin remains usable if its file is
+missing or changed in the current checkout; an unavailable blob or digest mismatch yields no exact
+key. This is a provenance locator, not a C0 mathematical unit.
+
+Of the 190 source pins, 181 verify and receive file keys; eight pinned blobs are unavailable and
+one recorded SHA-256 mismatches its commit/path blob. No evidence row records section metadata,
+so the crosswalk has zero source-unit keys. All 54 result-to-unit section mappings remain
+incomplete. Current checkout status is 70 matches, 112 missing files, two changed files under
+verified historical pins, and six files whose pin is unverified. The digest mismatch is retained
+as recorded for `orthogonal-exit-conditional-gram-einstein-source-ratio`, path
+`02_REGISTRY/research/A4D_NATIVE_ORTHOGONAL_EXIT_DOUBLE_CLOCK_EINSTEIN_SOURCE_2026_10_17.md`;
+the expected and observed blob hashes remain visible in the generated JSON. The eight unavailable
+objects are also listed individually there. No expected hash was rewritten.
+
+The regenerated artifact
+`sources/d0_proof_architecture_formalization_2026-10-24/assembly_result_declaration_crosswalk.json`
+was built at snapshot `69a0c9a145923cc09b54bf655f6a99134f95dcd9` with a clean worktree and SHA-256
+`145e683b74e8a70119f1b900ddbc306e9036eee7d35fe0ff4e6ce234d7c37814`. Its `D0.All` pass enumerates
+899 co-located declarations in nine current modules; the collector and Lean source digests are
+recorded in the file. Every one of the 54 semantic result relations remains `unresolved`, and
+`acceptance_inferred` is false. C0 remains unfrozen and independently unaccepted; these counts do
+not establish coverage.
+
+
 ### 24 October refreshed all-claims Lean locator resolution
 
 The earlier all-claims resolution above is retained at its original Lean source digest `dd056ebca233774b20e628d8b7efd3f94e344b18d0fa07e8abf973e229e1857d`. The current D0 sources have changed, so the exact-name resolution was rerun against `D0.All` on clean snapshot `1b7f1cbb5e597af31b59a83bd37edac73b0d4e47`, with Lean source digest `4b760603dd653cf0354beacd1d78da0879c570b744059c37115ec2ac2d8936ac` and claims registry SHA-256 `e986bcc75fd6a2c84a80ee61b639482af1b21464fcfe4c961491b4a97bb9037f`.
