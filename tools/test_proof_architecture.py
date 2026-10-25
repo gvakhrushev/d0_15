@@ -1423,7 +1423,7 @@ class ProofArchitectureTests(unittest.TestCase):
             }
 
         current_inventory = declarations(
-            "car_hodge_current_declaration_inventory_2026-10-25.json",
+            "car_hodge_transpose_current_declaration_inventory_2026-10-25.json",
             require_current=True,
         )
 
@@ -1538,6 +1538,47 @@ class ProofArchitectureTests(unittest.TestCase):
             tensor_square_dependencies,
         )
         has_type(
+            "D0.Algebra.finiteMatrixTensorProduct_mul",
+            "D0.Algebra.finiteMatrixTensorProduct A B * "
+            "D0.Algebra.finiteMatrixTensorProduct C D",
+            "D0.Algebra.finiteMatrixTensorProduct (A * C) (B * D)",
+            expected_axioms=standard_axioms,
+        )
+        has_type(
+            "D0.Algebra.finiteMatrixTensorProduct_add_right",
+            "D0.Algebra.finiteMatrixTensorProduct A (B + C)",
+            "D0.Algebra.finiteMatrixTensorProduct A B + "
+            "D0.Algebra.finiteMatrixTensorProduct A C",
+            expected_axioms={"Quot.sound", "propext"},
+        )
+        has_type(
+            "D0.Algebra.finiteMatrixTensorProduct_smul_right",
+            "D0.Algebra.finiteMatrixTensorProduct A (c • B)",
+            "c • D0.Algebra.finiteMatrixTensorProduct A B",
+            expected_axioms={"Quot.sound", "propext"},
+        )
+        tensor_transpose = has_type(
+            "D0.Algebra.finiteMatrixTensorProduct_transpose",
+            "D0.Algebra.finiteMatrixTensorProduct A B).transpose",
+            "D0.Algebra.finiteMatrixTensorProduct A.transpose B.transpose",
+            expected_axioms={"Quot.sound", "propext"},
+        )
+        self.assertFalse(any(
+            binder["is_proposition"] for binder in tensor_transpose["binders"]
+        ))
+        spatial_identity_symmetry = has_type(
+            "D0.Geometry.spatialIdMatrix_symmetric",
+            "D0.Geometry.spatialIdMatrix n).transpose",
+            "D0.Geometry.spatialIdMatrix n",
+            expected_axioms=standard_axioms,
+        )
+        fock_parity_symmetry = has_type(
+            "D0.Geometry.fockParityMatrix_symmetric",
+            "D0.Geometry.fockParityMatrix.transpose",
+            "D0.Geometry.fockParityMatrix",
+            expected_axioms=standard_axioms,
+        )
+        has_type(
             "D0.Algebra.finiteMatrixTensorProduct_one",
             "D0.Algebra.finiteMatrixTensorProduct 1 1 = 1",
             expected_axioms={"Quot.sound", "propext"},
@@ -1551,6 +1592,27 @@ class ProofArchitectureTests(unittest.TestCase):
             "D0.Algebra.finiteMatrixTensorProduct_mul",
             tensor_mul["proof_dependencies"],
         )
+        tensor_product_transpose = has_type(
+            "D0.Geometry.tensorProduct_transpose",
+            "D0.Geometry.tensorProduct A B).transpose",
+            "D0.Geometry.tensorProduct A.transpose B.transpose",
+            expected_axioms=standard_axioms,
+        )
+        self.assertIn(
+            "D0.Algebra.finiteMatrixTensorProduct_transpose",
+            tensor_product_transpose["proof_dependencies"],
+        )
+        parity_symmetry = has_type(
+            "D0.Geometry.totalParityOperator_symmetric",
+            "Matrix.transpose (D0.Geometry.totalParityOperator n) =",
+            expected_axioms=standard_axioms,
+        )
+        for dependency in (
+            "D0.Geometry.tensorProduct_transpose",
+            spatial_identity_symmetry["name"],
+            fock_parity_symmetry["name"],
+        ):
+            self.assertIn(dependency, parity_symmetry["proof_dependencies"])
 
         dataset = proof.load_dataset(proof.ROOT)
         support_modules = {row["lean_module"] for row in dataset["formal_support"]}

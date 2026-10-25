@@ -141,6 +141,11 @@ theorem tensorProduct_mul {X Y : Type*} [Fintype X] [Fintype Y]
     tensorProduct A B * tensorProduct C D = tensorProduct (A * C) (B * D) := by
   exact D0.Algebra.finiteMatrixTensorProduct_mul A C B D
 
+theorem tensorProduct_transpose {X Y : Type*} [Fintype X] [Fintype Y]
+    (A : Matrix X X ℝ) (B : Matrix Y Y ℝ) :
+    (tensorProduct A B).transpose = tensorProduct A.transpose B.transpose := by
+  exact D0.Algebra.finiteMatrixTensorProduct_transpose A B
+
 /-- Identity matrix on the Fock factor. -/
 def fockIdMatrix : Matrix ArchiveFockState ArchiveFockState ℝ :=
   fun bra ket => if bra = ket then 1 else 0
@@ -205,6 +210,16 @@ def spatialIdMatrix (n : ℕ) :
     Matrix (ArchiveRolePhasePoint n) (ArchiveRolePhasePoint n) ℝ :=
   fun x y => if x = y then 1 else 0
 
+theorem spatialIdMatrix_symmetric (n : ℕ) :
+    (spatialIdMatrix n).transpose = spatialIdMatrix n := by
+  ext x y
+  simp only [Matrix.transpose_apply, spatialIdMatrix]
+  by_cases h : x = y
+  · subst y
+    rfl
+  · have h' : y ≠ x := Ne.symm h
+    simp [h, h']
+
 theorem spatialIdMatrix_mul {n : ℕ}
     (A : Matrix (ArchiveRolePhasePoint n) (ArchiveRolePhasePoint n) ℝ) :
     spatialIdMatrix n * A = A := by
@@ -237,18 +252,10 @@ def totalParityOperator (n : ℕ) : CARHilbertMatrix n :=
 
 theorem totalParityOperator_symmetric (n : ℕ) :
     (totalParityOperator n).transpose = totalParityOperator n := by
-  ext ⟨x, f⟩ ⟨y, g⟩
-  simp only [transpose_apply, totalParityOperator, tensorProduct,
-    D0.Algebra.finiteMatrixTensorProduct, spatialIdMatrix]
-  have hx : (if y = x then (1 : ℝ) else 0) = (if x = y then 1 else 0) := by
-    by_cases h : x = y
-    · subst h
-      rfl
-    · have h2 : y ≠ x := Ne.symm h
-      simp [h, h2]
-  have hf : fockParityMatrix g f = fockParityMatrix f g := by
-    rw [← transpose_apply fockParityMatrix f g, fockParityMatrix_symmetric]
-  rw [hx, hf]
+  change (tensorProduct (spatialIdMatrix n) fockParityMatrix).transpose =
+    tensorProduct (spatialIdMatrix n) fockParityMatrix
+  rw [tensorProduct_transpose, spatialIdMatrix_symmetric,
+    fockParityMatrix_symmetric]
 
 lemma role_cases (r : Role) :
     r = D0.A ∨ r = D0.B ∨ r = D0.C ∨ r = D0.D := by

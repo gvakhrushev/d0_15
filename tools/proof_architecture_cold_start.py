@@ -204,9 +204,11 @@ CASES: list[dict[str, Any]] = [
             "shellEnergy_tendsto_two_pi spatial_shell_rank_l2 L 2 control",
             "carDirac_square_eq_four_id_at_zero carDirac_zero_kernel_trivial_at_zero L 2 exact CAR control",
             "finiteMatrixTensorProduct_sum_square_eq_diagonal finiteMatrixTensorProduct_one "
-            "tensorProduct_mul generic finite matrix Clifford square",
+            "finiteMatrixTensorProduct_transpose tensorProduct_mul "
+            "totalParityOperator_symmetric generic finite matrix Clifford square",
             "car_dirac_square_l2_identity_declaration car_dirac_l2_zero_kernel_trivial_declaration",
             "car_hodge_current_declaration_inventory_2026-10-25 current compiled types",
+            "car_hodge_transpose_current_declaration_inventory_2026-10-25 current compiled types",
             "car zero mode claim declarations 2026 10 25",
             "hodge car dirac kernel declaration 2026 10 25",
             "car dirac square claim declarations 2026 10 25",
@@ -247,6 +249,7 @@ CASES: list[dict[str, Any]] = [
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/car_dirac_square_l2_identity_declaration_2026-10-25.json",
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/car_dirac_l2_zero_kernel_trivial_declaration_2026-10-25.json",
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/car_hodge_current_declaration_inventory_2026-10-25.json",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/car_hodge_transpose_current_declaration_inventory_2026-10-25.json",
         ],
         "scope_review": (
             "D0-ARCHIVE-CAR-ZERO-MODE-OWNER-001, D0-ARCHIVE-CAR-DIRAC-SQUARE-001, "

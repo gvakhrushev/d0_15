@@ -6079,3 +6079,35 @@ elaborated proof dependencies include the shared addition/scalar laws; the
 compatibility multiplication theorem must depend on the shared multiplication
 declaration. This rejects a type-shaped premise shell or a name-only wrapper.
 This refactor creates no new claim or acceptance row.
+
+### Generic transpose law applied to CAR parity symmetry (25 October 2026)
+
+Extended `D0.Algebra.FiniteMatrixTensorProduct` with the factorwise transpose
+law. The geometry namespace keeps a typed `tensorProduct_transpose`
+compatibility theorem whose proof dependency is the shared algebra result.
+`spatialIdMatrix_symmetric` now exposes the finite identity-factor symmetry,
+and `totalParityOperator_symmetric` composes it with the existing Fock-parity
+symmetry through the shared transpose law. The earlier coordinate-by-coordinate
+symmetry proof is removed.
+
+This is another finite algebra API -> concrete CAR application. It does not
+change any CAR/Hodge claim status, period scope, source interpretation, or
+physical conclusion.
+
+The refreshed current inventory is
+`sources/d0_proof_architecture_formalization_2026-10-24/car_hodge_transpose_current_declaration_inventory_2026-10-25.json`,
+SHA-256 `1842e4e2b586258aa30167955d13bbc855aefaf22d023345a682945d7b647694`.
+It records snapshot `6ccfa2266cded8d4a33cffe5509700068b8994eb`,
+`worktree_dirty=true`, public import `D0.All`, Lean-source digest
+`e0ccf4dc8d30118bbdc0a734247988c9696f5390577a4f31958086975d95b987`,
+collector SHA-256
+`2508e85ff81ddc89abe8eb60617dd2a5dad8ae0bdb8d24e044416d16ec6d8ae4`, and
+25 exact declarations. Its successful query built the current `D0.All` import
+before reading the elaborated environment. The generic tensor API source hash
+is `23f791dc17e0122ed2a98b704a280c8c4d56572197fe0dfabe918ebff2cf64c4`; the
+CAR consumer hash is
+`934511cf8e7b39fc7537361bd7ecea51b93b99b607adb60e7acfbc9a5e21bd0a`.
+The focused CAR/Hodge cold-start regression passes and checks exact trust
+footprints plus the compiled dependency chain from shared transpose law to
+parity symmetry. The previous current inventory remains preserved at its
+original digest and is now historical evidence.

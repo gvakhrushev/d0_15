@@ -48,6 +48,15 @@ theorem finiteMatrixTensorProduct_mul {X Y R : Type*}
     ring
   rw [h_factor]
 
+/-- Transposition acts factorwise on the finite matrix tensor product. -/
+theorem finiteMatrixTensorProduct_transpose {X Y R : Type*}
+    [Fintype X] [Fintype Y] [Mul R]
+    (A : Matrix X X R) (B : Matrix Y Y R) :
+    (finiteMatrixTensorProduct A B).transpose =
+      finiteMatrixTensorProduct A.transpose B.transpose := by
+  ext ⟨x, f⟩ ⟨y, g⟩
+  rfl
+
 /-- Additivity in the second matrix factor. -/
 theorem finiteMatrixTensorProduct_add_right {X Y R : Type*}
     [Fintype X] [Fintype Y] [Semiring R]
