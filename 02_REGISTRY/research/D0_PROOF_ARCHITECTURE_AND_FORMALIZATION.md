@@ -6625,6 +6625,9 @@ suites pass **67/67**; repository validation reports 889 claims, 31 assumptions,
 generated Lean views report `stale=0`; ClaimMap coverage passes; and the
 formalization-debt audit remains at five findings against its five-finding
 baseline. `git diff --check` is clean.
+GitHub `D0 Lean build` run 3179 and `D0 guards` run 5217 both passed on the
+published code and inventory head `1630a1d92311b7490122bb3aa25f356c64d33796`;
+the Draft workflows skip release-proof closure and native capsule steps.
 
 This is a finite algebra API migration with a compatibility path. It changes no
 registry claim status, source premise, or scientific acceptance boundary.
