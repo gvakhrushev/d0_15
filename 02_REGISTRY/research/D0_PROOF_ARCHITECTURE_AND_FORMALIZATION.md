@@ -3900,8 +3900,52 @@ action/source, or GR. The canonical weighted-Hodge source locator remains
 unresolved, and C0 freeze/independent acceptance remains open.
 
 Validation on this slice: narrow module build and public-import inventory
-passed; `validate_repo.py` (923 modules, 0 warnings), work/protocol validators,
-gravity assembly check/render, generated work/Lean views, claim-map coverage
-(Python 3.12.14), and formalization-debt non-growth (5 findings, all
-path-specific baseline) passed. The generated import preserves `All.lean`'s
-existing CRLF convention; the EOL-aware diff check passed.
+passed; `validate_repo.py` (`lean_closure=923`, 0 warnings), work/protocol
+validators, gravity assembly check/render, generated work/Lean views, and
+claim-map coverage (Python 3.12.14) passed. Formalization-debt non-growth
+passed on 926 modules / 155,195 lines (5 findings, all path-specific
+baseline). The generated import preserves `All.lean`'s
+existing CRLF convention; the EOL-aware diff check passed. GitHub `D0 guards`
+run 5115 passed on commit `db3091aded8f6cfe8d39dcd973ccf30ec40dfb08`. GitHub
+`D0 Lean build` run 3077 concluded successfully, but the Draft workflow skipped
+release-proof closure and native checkpoint-capsule steps. The declaration
+inventory's local build compiled public `D0.All`; this is an integration
+check, not the final Ready replay.
+
+### Candidate C0 source-unit map for the native weighted-Dirac capsule (25 October 2026)
+
+This is one source-unit reconciliation slice, not a C0 freeze or acceptance.
+Every key below has the common exact prefix
+`source:db3091aded8f6cfe8d39dcd973ccf30ec40dfb08:02_REGISTRY/research/A4D_NATIVE_WEIGHTED_DIRAC_BOUNDARY.md#`;
+the source file SHA-256 is
+`8c4c662f9f05430ef9f9ff91c670b15e6c678c9b2b1c0ced90e08c79f507e83c` and its
+Git blob is `2de670c0e2f9a53104be8105a3554cdd9aaa85e7`. The paired Lean
+capsule at the same commit has SHA-256
+`211f43dc97b9c809156bcb87939596757a7143b3e393d4dc4f3215c18d14cff6` and blob
+`166922e1057cc20f495393e9c53947b52912e3ce`.
+
+| Key suffix | Mathematical unit and formalization boundary |
+|---|---|
+| `2. Constructive weighted operator, with explicit hypotheses (Eq. 1)` | **Represented at the algebraic core.** For caller-supplied invertible `W` on the actual finite cochains, the capsule defines the weighted codifferential, Dirac map, and pairing, then proves the square, nilpotency, adjoint, and symmetry identities under their stated symmetry hypotheses. The CAR kernel and nilpotency leaves are also rebuilt. It does not prove positivity of `W`, the square-root representative, or the grading consequence. |
+| `2. Constructive weighted operator, with explicit hypotheses (positivity and grading consequences)` | **Not represented in this capsule.** It does not prove positivity of `W`, construct `W^{1/2}D_WW^{-1/2}`, or formalize degree preservation. The supplied equivalence `W` is not constrained to preserve degree. |
+| `3. Genuine mixed metric dependence is preserved (Eqs. 2–3)` | **Partial.** `inverse_weight_derivative` proves the generic inverse-operator derivative identity. The capsule does not construct the metric compound `W_Q`, prove its minor formula or diagonal agreement, evaluate the ten metric probes, or derive `Q ↦ sQ` operator homogeneity. |
+| `Finite mixed spectral moments: a quantitative contrast obstruction (generic identities and annihilator)` | **Partial.** The capsule proves actual trace binding, scalar trace homogeneity, and generic coefficient-independent finite-moment annihilator/error-bound lemmas. It does not formalize the explicit binomial identities. |
+| `Finite mixed spectral moments: a quantitative contrast obstruction (physical contrast, Eq. 3c)` | **Not represented as an application.** The capsule does not apply the generic tools to the two curved fibers and probes, derive the physical contrast/refinement lower bound, or prove its field/source premises. |
+| `4. Direct flat Lorentz binding on the owned carrier (Eqs. 4–5)` | **Not represented as a full result.** The capsule has CAR/nilpotency facts and an identity-weight specialization, but not the full signed `W_eta` and site/Fock binding, Fourier symbol/dispersion, all-size spectrum, or all-role-order intertwiners. |
+| `4. Direct flat Lorentz binding on the owned carrier (Eq. 6, spatial block)` | **Isolated block lemma represented; full application partial.** `rotationBlock`, its square, and `spatial_block_has_no_positive_metric` prove the 2×2 obstruction for nonzero `L`, assuming positive diagonal entries and `DᵀG = GD`. The capsule does not prove this is an invariant restriction of the actual full Lorentz operator. |
+| `5. Complete constant-metric null-mode classification (Eq. 7)` | **Generic implication represented; actual classification not represented.** The kernel/range and half-dimension lemmas assume `D² = 0` and a supplied contraction `DK + KD = I`. The capsule does not construct the Fourier contraction on actual null modes, prove the dispersion classification/counts, or show refinement persistence. |
+| `6. Fixed-positive-time heat trace cannot supply the claimed refinement (Eq. 8)` | **Conditional inequality represented; spectral application not represented.** The exponential lower bound and its consequence compile from a supplied heat-trace lower bound. The capsule does not define the actual `H_L`, prove its minimum eigenvalue, or derive divergence from the Lorentz spectrum. |
+
+An independent read-only source review verified both exact source blobs and
+accepted these scope boundaries. The 47-row inventory has 38 source-ranged
+declarations (34 theorems and 4 definitions) and 9 generated/range-less
+auxiliaries; the latter are not separate mathematical units. All collected
+declarations have only the recorded `Classical.choice`, `Quot.sound`, and/or
+`propext` footprints, with no `sorryAx`. The inventory's `snapshot_commit`
+`2b605d0592cce7a5518b704fe1da16328f049694` and `worktree_dirty=true` describe
+its pre-commit generation; its Lean-source digest
+`33e3042c75f5b7f94140dd3eb7cf43735ce90477d3142d0cd4b8865531bf86ef` was
+independently recomputed and matches the committed Lean tree at `db3091ad`.
+The review accepts this source-to-Lean scope reconciliation only. It does not
+make the C0 disposition, semantic package acceptance, physical selection, or
+GR closure.
