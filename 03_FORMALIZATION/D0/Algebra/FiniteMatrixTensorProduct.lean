@@ -1,5 +1,6 @@
 import Mathlib.Data.Matrix.Basic
 import Mathlib.Tactic
+import Mathlib.LinearAlgebra.Matrix.Trace
 
 /-!
 # Generic finite matrix tensor products
@@ -16,7 +17,7 @@ open BigOperators Matrix
 /-- Entrywise tensor product of two finite square matrices, acting on the
 product carrier. -/
 def finiteMatrixTensorProduct {X Y R : Type*}
-    [Fintype X] [Fintype Y] [Mul R]
+    [Mul R]
     (A : Matrix X X R) (B : Matrix Y Y R) :
     Matrix (X × Y) (X × Y) R :=
   fun ⟨x₁, y₁⟩ ⟨x₂, y₂⟩ => A x₁ x₂ * B y₁ y₂
@@ -84,6 +85,20 @@ theorem finiteMatrixTensorProduct_one {X Y R : Type*}
   ext ⟨x, y⟩ ⟨x', y'⟩
   by_cases hX : x = x' <;> by_cases hY : y = y' <;>
     simp [finiteMatrixTensorProduct, Matrix.one_apply, hX, hY]
+
+/-- The trace of `1 ⊗ B` is the first-factor cardinality times the trace of
+`B`. This keeps trace calculations on product carriers in the shared tensor
+API instead of repeating the coordinate sum in each application. -/
+theorem finiteMatrixTensorProduct_trace_one_left {X Y R : Type*}
+    [Fintype X] [Fintype Y] [DecidableEq X] [Semiring R]
+    (B : Matrix Y Y R) :
+    Matrix.trace (finiteMatrixTensorProduct (1 : Matrix X X R) B) =
+      Fintype.card X • Matrix.trace B := by
+  unfold Matrix.trace Matrix.diag finiteMatrixTensorProduct
+  rw [Fintype.sum_prod_type]
+  simp only [Matrix.one_apply, if_true, one_mul]
+  rw [Finset.sum_const]
+  simp only [Finset.card_univ, nsmul_eq_mul]
 
 /-- If the first-factor matrices commute and the second-factor matrices
 anticommute with a Kronecker delta, the double tensor-product sum collapses to

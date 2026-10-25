@@ -6489,3 +6489,20 @@ The key application theorem is `D0.Geometry.nonvacuumProfile_source_eq_finiteMid
 The same source is now discoverable by the existing `positive-nonvacuum-recovery` cold-start case through the pinned §§7.1–7.2 owner, the module itself, and the compiled declaration inventory. The full cold-start run on snapshot `9274b3abedd67cdc39bd33653a878e4f87a513ae` found all required sources in 20/20 cases and passed its 21-case benchmark; its compact report is `sources/d0_proof_architecture_formalization_2026-10-24/proof_architecture_cold_start_summary_2026-10-25_nonvacuum.json`, SHA-256 `16368a7a3fca73dfa2bc9973d822af20e1721a90e68cb533a11a995c8b7eb850`; runner SHA-256 `7da9ed4eec1fc1f0c6a1ec217cd89e9d09bfc05ae176384e364e0d5bdbe73285`. This remains a partial application: it does not construct the original CAR operator, substitute the original 40→3→1 Cartan classification, prove all 16 coframe + 24 proper-Lorentz link + two matter Euler rows, establish the refinement estimate, or select the physical Book, clock, source, or execution. Those parent physical premises and existing scientific owners remain open.
 
 The new module passes its narrow Lean build and the complete `D0.All` build. This checkpoint adds one exact compiled source application and its retrieval path; C0 still has no independent freeze/acceptance, and no physical claim status changes.
+### Spectrum and Matter reuse the generic finite matrix tensor API (25 October 2026)
+
+The Spectrum operators `tensor_product_I` and `kronecker_C_I` now delegate to
+`D0.Algebra.finiteMatrixTensorProduct`; Matter's `kronecker_I_C` remains
+available as a compatibility name and delegates to Spectrum's `1 ⊗ C`
+operator. The entrywise constructor no longer requires `Fintype` instances
+that its pointwise definition does not use, preserving the old public
+signatures without adding a finiteness premise to callers.
+
+The generic algebra module now also proves the finite trace identity for
+`1 ⊗ B`, and `stage3_trace_relation` consumes it instead of repeating a
+coordinate-level trace sum. The matrix-shift and partial-trace commutation
+proofs still compile against the shared operator definitions. Narrow Lean
+builds pass for `D0.Spectrum.GenerationTensorExactness`,
+`D0.Matter.ArchivePartialTrace`, `D0.Geometry.ArchiveCARDirac`, and
+`D0.Bridge.FinalBridgeIndex`. This consolidates finite matrix algebra only: it
+changes no claim status, carrier interpretation, or physical conclusion.

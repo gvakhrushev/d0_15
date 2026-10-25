@@ -2,13 +2,15 @@ import Mathlib.LinearAlgebra.Matrix.Trace
 import Mathlib.Data.Matrix.Basic
 import Mathlib.Data.Fintype.Basic
 import Mathlib.Data.Real.Basic
+import D0.Algebra.FiniteMatrixTensorProduct
 
 open scoped BigOperators
 
 namespace D0.Spectrum
 
+/-- Compatibility name for the shared finite matrix tensor product `1 ⊗ Γ_SM`. -/
 def tensor_product_I {G N : Type} [Fintype G] [DecidableEq G] (Γ_SM : Matrix N N ℝ) : Matrix (G × N) (G × N) ℝ :=
-  fun ⟨g1, n1⟩ ⟨g2, n2⟩ => (if g1 = g2 then 1 else 0) * Γ_SM n1 n2
+  D0.Algebra.finiteMatrixTensorProduct (1 : Matrix G G ℝ) Γ_SM
 
 theorem stage1_tensor_exactness {G N : Type} [Fintype G] [DecidableEq G] [Fintype N]
     (Γ_lift : Matrix (G × N) (G × N) ℝ) (Γ_SM : Matrix N N ℝ)
@@ -16,8 +18,9 @@ theorem stage1_tensor_exactness {G N : Type} [Fintype G] [DecidableEq G] [Fintyp
     (h_diag : ∀ (g : G) (n1 n2 : N), Γ_lift ⟨g, n1⟩ ⟨g, n2⟩ = Γ_SM n1 n2) :
     Γ_lift = tensor_product_I Γ_SM := by
   ext ⟨g1, n1⟩ ⟨g2, n2⟩
-  unfold tensor_product_I
-  dsimp
+  change Γ_lift (g1, n1) (g2, n2) =
+    (1 : Matrix G G ℝ) g1 g2 * Γ_SM n1 n2
+  rw [Matrix.one_apply]
   split_ifs with hg
   · subst g2
     rw [one_mul]
@@ -28,8 +31,9 @@ theorem stage1_tensor_exactness {G N : Type} [Fintype G] [DecidableEq G] [Fintyp
 def cyclicShiftMatrix (n : Nat) : Matrix (Fin n) (Fin n) ℝ :=
   fun i j => if j.val = (i.val + 1) % n then 1 else 0
 
+/-- Compatibility name for the shared finite matrix tensor product `C_G ⊗ 1`. -/
 def kronecker_C_I {G N : Type} [Fintype G] [DecidableEq G] [DecidableEq N] (C_G : Matrix G G ℝ) : Matrix (G × N) (G × N) ℝ :=
-  fun ⟨g1, n1⟩ ⟨g2, n2⟩ => C_G g1 g2 * (if n1 = n2 then 1 else 0)
+  D0.Algebra.finiteMatrixTensorProduct C_G (1 : Matrix N N ℝ)
 
 def shift_g {n : Nat} [NeZero n] (g : Fin n) (k : Nat) : Fin n :=
   ⟨(g.val + k) % n, Nat.mod_lt _ (NeZero.pos n)⟩
@@ -64,8 +68,15 @@ lemma flavor_blindness_step {N : Type} [Fintype N] [DecidableEq N] {n : Nat} [Ne
   let target_g : Fin n := shift_g g 1
   have h_comm_v := congr_fun (congr_fun h_comm (g, n1)) (target_g, n2)
   rw [Matrix.mul_apply, Matrix.mul_apply] at h_comm_v
-  unfold kronecker_C_I cyclicShiftMatrix at h_comm_v
-  dsimp at h_comm_v
+  change
+    (∑ x : Fin n × N,
+      Γ_lift (g, n1) x *
+        ((if target_g.val = (x.1.val + 1) % n then (1 : ℝ) else 0) *
+          (if x.2 = n2 then (1 : ℝ) else 0))) =
+    (∑ x : Fin n × N,
+      ((if x.1.val = (g.val + 1) % n then (1 : ℝ) else 0) *
+        (if n1 = x.2 then (1 : ℝ) else 0)) *
+        Γ_lift x (target_g, n2)) at h_comm_v
   have h_lhs_corr : (∑ x : Fin n × N, Γ_lift (g, n1) x * ((if target_g.val = (x.1.val + 1) % n then (1 : ℝ) else 0) * (if x.2 = n2 then (1 : ℝ) else 0))) = Γ_lift (g, n1) (g, n2) := by
     rw [Fintype.sum_prod_type]
     dsimp
@@ -167,12 +178,8 @@ theorem stage3_tensor_exactness {N : Type} [Fintype N] [DecidableEq N] {n : Nat}
 theorem stage3_trace_relation {G N : Type} [Fintype G] [DecidableEq G] [Fintype N]
     (Γ_SM : Matrix N N ℝ) :
     Matrix.trace (tensor_product_I (G := G) Γ_SM) = Fintype.card G * Matrix.trace Γ_SM := by
-  unfold Matrix.trace tensor_product_I Matrix.diag
-  dsimp
-  rw [Fintype.sum_prod_type]
-  simp only [if_true, one_mul]
-  rw [Finset.sum_const]
-  simp only [Finset.card_univ, nsmul_eq_mul]
+  simpa only [nsmul_eq_mul] using
+      (D0.Algebra.finiteMatrixTensorProduct_trace_one_left (X := G) Γ_SM)
 
 theorem stage3_trace_relation_three {G N : Type} [Fintype G] [DecidableEq G] [Fintype N]
     (Γ_SM : Matrix N N ℝ) (h_card : Fintype.card G = 3) :

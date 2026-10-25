@@ -21,8 +21,9 @@ theorem trace_partialTrace {V N : Type} [Fintype V] [Fintype N] (M : Matrix (V �
   rw [Fintype.sum_prod_type]
   rw [Finset.sum_comm]
 
+/-- Compatibility name for Spectrum's shared `1 ⊗ C_N` tensor operator. -/
 def kronecker_I_C {V N : Type} [Fintype V] [DecidableEq V] (C_N : Matrix N N ℝ) : Matrix (V × N) (V × N) ℝ :=
-  fun ⟨v1, n1⟩ ⟨v2, n2⟩ => (if v1 = v2 then 1 else 0) * C_N n1 n2
+  D0.Spectrum.tensor_product_I C_N
 
 theorem partial_trace_commutes_with_shift {V N : Type} [Fintype V] [DecidableEq V] [Fintype N] [DecidableEq N]
     (M : Matrix (V × N) (V × N) ℝ) (C_N : Matrix N N ℝ)
@@ -34,8 +35,12 @@ theorem partial_trace_commutes_with_shift {V N : Type} [Fintype V] [DecidableEq 
     intro v
     have h_comm_v := congr_fun (congr_fun h_comm (v, n1)) (v, n3)
     rw [Matrix.mul_apply, Matrix.mul_apply] at h_comm_v
-    unfold kronecker_I_C at h_comm_v
-    dsimp at h_comm_v
+    change
+      (∑ x : V × N,
+        M (v, n1) x * ((1 : Matrix V V ℝ) x.1 v * C_N x.2 n3)) =
+      (∑ x : V × N,
+        ((1 : Matrix V V ℝ) v x.1 * C_N n1 x.2) * M x (v, n3)) at h_comm_v
+    simp only [Matrix.one_apply] at h_comm_v
     have h_lhs : (∑ x : V × N, M (v, n1) x * ((if x.1 = v then (1 : ℝ) else 0) * C_N x.2 n3)) = ∑ n2, M (v, n1) (v, n2) * C_N n2 n3 := by
       rw [Fintype.sum_prod_type]
       dsimp
