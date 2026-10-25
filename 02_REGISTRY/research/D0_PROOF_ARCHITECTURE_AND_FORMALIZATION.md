@@ -4844,12 +4844,12 @@ the generated `D0.All`; no claim status, C0 acceptance, gravity obligation,
 or physical source choice changes. The focused compiled inventory is
 `sources/d0_proof_architecture_formalization_2026-10-24/native_weighted_dirac_fourier_null_modes_declarations_2026-10-25.json`
 (200 declarations across four owning modules, including 22 in the new adapter;
-SHA-256 `f289f58373c417e9c58a13a18d249d71d6fffa458c5745a30e639c0003869eab`). It uses
+SHA-256 `528512daf3d95794f1c43033f67bdbeef929aa2fc145da1aeb61913a07d5fbfd`). It uses
 import root `D0.Research.NativeWeightedDiracFourierNullModes`, Lean source
 digest `c038d0b12cbf6064a7a370532bba2487104e55e243577b316f71a39f9ced606a`,
 collector SHA-256
 `cd8acaf6fa202e54f8090f9c5fb9fc210dfe03ba3197f21115581d7b7afad0cb`, and
-source snapshot `86449dfab26c8d18fa904647e912de3afa2a2939` with a dirty
+source snapshot `2d0c2e2c7ffaa54d3b7d44fd6a674a7bf2619dbb` with a clean
 worktree. The non-null inverse and null-kernel classification inherit the
 existing square theorem's CAR proof leaves. The contraction theorem's axiom
 footprint includes the existing
