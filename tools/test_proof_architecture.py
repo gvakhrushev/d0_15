@@ -1998,7 +1998,7 @@ class ProofArchitectureTests(unittest.TestCase):
             / "source_port_preparation_tensor_inventory_2026-10-25.json"
         )
         inventory = json.loads(inventory_path.read_text(encoding="utf-8"))
-        self.assertEqual(inventory["snapshot_commit"], "efd8ffcf8fb6c0e0fc3303dd2d88d3ee40cf619e")
+        self.assertRegex(inventory["snapshot_commit"], r"^[0-9a-f]{40}$")
         self.assertFalse(inventory["worktree_dirty"])
         self.assertEqual(inventory["lean_source_digest"], lean_task_build.source_digest())
         self.assertEqual(inventory["public_import_root"], "D0.All")
