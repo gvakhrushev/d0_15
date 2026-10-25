@@ -2032,6 +2032,93 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertIn("03_FORMALIZATION/D0/Spectrum/GenerationTensorExactness.lean",
                       consumers)
 
+    def test_archive_shift_adapters_consume_generic_topology_theorems(self) -> None:
+        inventory_path = (
+            proof.ROOT
+            / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
+            / "archive_shift_topology_current_declarations_2026-10-25.json"
+        )
+        inventory = json.loads(inventory_path.read_text(encoding="utf-8"))
+        self.assertFalse(inventory["worktree_dirty"])
+        self.assertRegex(inventory["snapshot_commit"], r"^[0-9a-f]{40}$")
+        self.assertEqual(inventory["lean_source_digest"], lean_task_build.source_digest())
+        self.assertEqual(inventory["public_import_root"], "D0.All")
+        self.assertEqual(inventory["toolchain"], "leanprover/lean4:v4.30.0")
+        declarations = {row["name"]: row for row in inventory["declarations"]}
+
+        generic_diagonal = declarations[
+            "D0.Topology.abstract_shift_commute_implies_diagonal_constant"
+        ]
+        self.assertEqual(generic_diagonal["declaration_kind"], "theorem")
+        self.assertIn(
+            "D0.Topology.commute_with_shift_iterate",
+            generic_diagonal["proof_dependencies"],
+        )
+        self.assertIn("∀ (i j : N)", generic_diagonal["elaborated_type"])
+
+        shift_matrix = declarations["D0.Geometry.archiveShiftMatrix"]
+        self.assertIn("NeZero n", shift_matrix["elaborated_type"])
+        self.assertIn("D0.Topology.shiftMatrix", shift_matrix["proof_dependencies"])
+        right = declarations["D0.Geometry.shift_matrix_mul_right"]
+        left = declarations["D0.Geometry.shift_matrix_mul_left"]
+        self.assertIn("M i (j - 1)", right["elaborated_type"])
+        self.assertIn("M (i + 1) j", left["elaborated_type"])
+        self.assertIn("D0.Topology.shift_matrix_mul_right", right["proof_dependencies"])
+        self.assertIn("D0.Topology.shift_matrix_mul_left", left["proof_dependencies"])
+
+        commute_k = declarations["D0.Geometry.commute_with_shift_k"]
+        self.assertIn("M (i + ↑k) (i + ↑k)", commute_k["elaborated_type"])
+        self.assertIn(
+            "D0.Topology.commute_with_shift_iterate",
+            commute_k["proof_dependencies"],
+        )
+        diagonal = declarations[
+            "D0.Geometry.commute_with_shift_implies_diagonal_constant"
+        ]
+        self.assertIn("M i i = M j j", diagonal["elaborated_type"])
+        self.assertIn(
+            "D0.Topology.abstract_shift_commute_implies_diagonal_constant",
+            diagonal["proof_dependencies"],
+        )
+        self.assertTrue(all(
+            "sorryAx" not in axiom
+            for name in (
+                "D0.Topology.abstract_shift_commute_implies_diagonal_constant",
+                "D0.Geometry.archiveShiftMatrix",
+                "D0.Geometry.shift_matrix_mul_right",
+                "D0.Geometry.shift_matrix_mul_left",
+                "D0.Geometry.commute_with_shift_k",
+                "D0.Geometry.commute_with_shift_implies_diagonal_constant",
+            )
+            for axiom in declarations[name]["axioms"]
+        ))
+
+        support = {
+            row["lean_module"]: row
+            for row in proof.load_dataset(proof.ROOT)["formal_support"]
+        }
+        self.assertIn("D0/Geometry/ArchivePhaseShift.lean",
+                      support["D0.Topology.ArchiveShiftTopology"]["referenced_by"])
+
+    def test_archive_shift_reuse_is_discoverable_from_a_cold_start_query(self) -> None:
+        case = next(
+            item for item in cold_start.CASES
+            if item["id"] == "archive-phase-shift-reuses-transitive-permutation-theorem"
+        )
+        query = case["queries"][0]
+        self.assertIn(
+            "03_FORMALIZATION/D0/Topology/ArchiveShiftTopology.lean",
+            case["required_refs"],
+        )
+        hits = proof.full_text_search_many(proof.ROOT, [query], limit=24)[0]
+        sources = {hit["source"] for hit in hits}
+        for path in (
+            "03_FORMALIZATION/D0/Topology/ArchiveShiftTopology.lean",
+            "03_FORMALIZATION/D0/Geometry/ArchivePhaseShift.lean",
+            "03_FORMALIZATION/D0/Matter/ArchivePartialTrace.lean",
+        ):
+            self.assertIn(path, sources)
+
     def test_source_port_preparation_consumes_shared_tensor_api(self) -> None:
         inventory_path = (
             proof.ROOT

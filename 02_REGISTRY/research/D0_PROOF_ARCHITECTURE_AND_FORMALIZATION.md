@@ -6842,3 +6842,34 @@ passes with zero warnings, generated views have zero stale entries, and
 formalization-debt findings remain five against the five-finding baseline.
 This slice does not freeze or accept C0, change claim owners/status, select a
 physical source, or close any physical GR premise.
+
+### Cyclic archive-shift proofs reuse the transitive-permutation API (25 October 2026)
+
+`D0.Geometry.ArchivePhaseShift` now defines its `ZMod n` archive step as an
+explicit permutation and defines `archiveShiftMatrix` through the shared
+`D0.Topology.shiftMatrix`. Its public right/left multiplication laws and
+one-step diagonal law retain their existing names and elaborated statements,
+while forwarding to `D0.Topology.shift_matrix_mul_right`,
+`shift_matrix_mul_left` and `commute_with_shift_step`. The `k`-step law now
+uses the generic iterate-commutation theorem together with the exact cyclic
+iterate identity. A private `ArchiveTopology (ZMod n)` instance proves
+single-orbit reachability from `(j - i).val`; the existing public
+diagonal-constancy theorem delegates to
+`abstract_shift_commute_implies_diagonal_constant`.
+
+The concrete consumer remains `D0.Matter.density_uniform_from_commute` in
+`ArchivePartialTrace`; its public interface and retained trace premise are
+unchanged. `formal_support.csv` now records the direct dependency from the
+shared topology module to the concrete adapter, and the cold-start case asks
+for the generic theorem, its `ZMod n` specialization, and the partial-trace
+consumer together. The compiled declaration regression pins the old public
+statements and checks proof-term dependencies through the generic iterate and
+diagonal-constancy results.
+
+Both affected modules pass narrow builds: `D0.Geometry.ArchivePhaseShift`
+**1,280/1,280** jobs and `D0.Matter.ArchivePartialTrace` **2,981/2,981**.
+The result is a finite algebraic matrix statement: finiteness, a transitive
+permutation and exact commutation imply constant diagonal. It does not select
+a physical shift, source, state or GR realization. Compiled inventory,
+cold-start replay, repository checks and current PR/CI provenance are recorded
+in the following checkpoint once refreshed from the clean source snapshot.

@@ -591,6 +591,28 @@ CASES: list[dict[str, Any]] = [
             "the Lorentz-induced W_Q, geometry, or physical selection."
         ),
     },
+    {
+        "id": "archive-phase-shift-reuses-transitive-permutation-theorem",
+        "queries": [
+            "ArchiveShiftTopology ArchivePhaseShift commute_with_shift_implies_diagonal_constant",
+            "ZMod cyclic shift matrix commutant diagonal constant transitive permutation",
+        ],
+        "required_refs": [
+            "03_FORMALIZATION/D0/Topology/ArchiveShiftTopology.lean",
+            "03_FORMALIZATION/D0/Geometry/ArchivePhaseShift.lean",
+            "03_FORMALIZATION/D0/Matter/ArchivePartialTrace.lean",
+        ],
+        "required_sources": [
+            {"path": "03_FORMALIZATION/D0/Topology/ArchiveShiftTopology.lean"},
+            {"path": "03_FORMALIZATION/D0/Geometry/ArchivePhaseShift.lean"},
+            {"path": "03_FORMALIZATION/D0/Matter/ArchivePartialTrace.lean"},
+        ],
+        "scope_review": (
+            "For a finite carrier, a transitive permutation, and exact commutation with its shift matrix, "
+            "the generic theorem forces constant diagonal. The ZMod n adapter proves the cyclic action "
+            "is transitive and retains the existing public names. This is an algebraic matrix result only."
+        ),
+    },
 ]
 
 
