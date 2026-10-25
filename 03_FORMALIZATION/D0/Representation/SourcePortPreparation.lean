@@ -1,6 +1,6 @@
 import D0.Integration.V15.RawZone
 import D0.Representation.OrderMemoryReadout
-import Mathlib.LinearAlgebra.Matrix.Kronecker
+import D0.Algebra.FiniteMatrixTensorProduct
 
 /-!
 # Source-derived ports and information-preserving preparation
@@ -83,13 +83,16 @@ theorem reversal_preserves_neutral : reversal * P0 = P0 ∧ P0 * reversal = P0 :
 /-! Actual local operator on scene x Q8 coordinates, rather than a named port bit. -/
 abbrev M12 := Matrix (Fin 3 × Fin 4) (Fin 3 × Fin 4) ℚ
 def coupled : M12 :=
-  Matrix.kronecker (1 - signalPort) (1 : Matrix (Fin 4) (Fin 4) ℚ) +
-  Matrix.kronecker signalPort (spin 2)
-def jointMetric : M12 := Matrix.kronecker Gq (1 : Matrix (Fin 4) (Fin 4) ℚ)
+  D0.Algebra.finiteMatrixTensorProduct
+      (1 - signalPort) (1 : Matrix (Fin 4) (Fin 4) ℚ) +
+  D0.Algebra.finiteMatrixTensorProduct signalPort (spin 2)
+def jointMetric : M12 :=
+  D0.Algebra.finiteMatrixTensorProduct Gq (1 : Matrix (Fin 4) (Fin 4) ℚ)
 
 /-- Symmetric source projector times skew memory generator: a valid metric-skew
 interaction, unlike a tensor of two skew operators. Its availability is a bridge. -/
-def interactionGenerator : M12 := Matrix.kronecker signalPort (spin 2)
+def interactionGenerator : M12 :=
+  D0.Algebra.finiteMatrixTensorProduct signalPort (spin 2)
 
 theorem interaction_generator_skew :
     interactionGenerator.transpose * jointMetric = -(jointMetric * interactionGenerator) := by
@@ -98,7 +101,8 @@ theorem interaction_generator_skew :
 
 theorem interaction_generator_square :
     interactionGenerator * interactionGenerator =
-      -Matrix.kronecker signalPort (1 : Matrix (Fin 4) (Fin 4) ℚ) := by
+      -D0.Algebra.finiteMatrixTensorProduct
+        signalPort (1 : Matrix (Fin 4) (Fin 4) ℚ) := by
   simp only [interactionGenerator, signalPort_explicit]
   native_decide
 
@@ -114,18 +118,22 @@ theorem coupled_preserves_metric : coupled.transpose * jointMetric * coupled = j
   simp only [coupled, signalPort_explicit]
   native_decide
 theorem coupled_square :
-    coupled * coupled = Matrix.kronecker reversal (1 : Matrix (Fin 4) (Fin 4) ℚ) := by
+    coupled * coupled =
+      D0.Algebra.finiteMatrixTensorProduct
+        reversal (1 : Matrix (Fin 4) (Fin 4) ℚ) := by
   simp only [coupled, reversal, signalPort_explicit]
   native_decide
 theorem coupled_fourth : coupled ^ 4 = 1 := by
   have hs := coupled_square
   calc coupled ^ 4 = (coupled * coupled) * (coupled * coupled) := by noncomm_ring
-       _ = Matrix.kronecker (reversal * reversal)
+       _ = D0.Algebra.finiteMatrixTensorProduct (reversal * reversal)
          ((1 : Matrix (Fin 4) (Fin 4) ℚ) * 1) := by
            rw [hs]
-           exact (Matrix.mul_kronecker_mul reversal reversal
-             (1 : Matrix (Fin 4) (Fin 4) ℚ) 1).symm
-       _ = 1 := by rw [reversal_involution]; simp
+           exact D0.Algebra.finiteMatrixTensorProduct_mul reversal reversal
+             (1 : Matrix (Fin 4) (Fin 4) ℚ) 1
+       _ = 1 := by
+         rw [reversal_involution, one_mul]
+         exact D0.Algebra.finiteMatrixTensorProduct_one
 
 /-- A two-by-two minor of the operator realignment; nonzero detects interaction. -/
 def interactionMinor (M : M12) : ℚ :=
@@ -136,13 +144,14 @@ theorem coupled_interaction_witness : interactionMinor coupled = 5657/8946 := by
   native_decide
 
 theorem independent_actions_zero_minor (A : M3) (B : Matrix (Fin 4) (Fin 4) ℚ) :
-    interactionMinor (Matrix.kronecker A B) = 0 := by
-  simp [interactionMinor, Matrix.kronecker, Matrix.kroneckerMap]
+    interactionMinor (D0.Algebra.finiteMatrixTensorProduct A B) = 0 := by
+  simp [interactionMinor, D0.Algebra.finiteMatrixTensorProduct,
+    Matrix.kronecker, Matrix.kroneckerMap]
   ring
 
 /-- Even arbitrary independent scene/memory operators cannot implement this gate. -/
 theorem coupled_not_independent (A : M3) (B : Matrix (Fin 4) (Fin 4) ℚ) :
-    coupled ≠ Matrix.kronecker A B := by
+    coupled ≠ D0.Algebra.finiteMatrixTensorProduct A B := by
   intro h
   have hz := independent_actions_zero_minor A B
   rw [← h, coupled_interaction_witness] at hz
