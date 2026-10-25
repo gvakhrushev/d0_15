@@ -1,0 +1,149 @@
+{
+  "GR_closed": false,
+  "autonomous_controller_or_original_XN_admission_proved": false,
+  "checks": [
+    "old native ALL32 Y/return proof is consumed from its immutable PASS41 receipt, not replayed",
+    "new14-stage tail is I_port tensor controlled G squared tensor I_spin on ALL32 dirty columns",
+    "tail is exactly all-column orthogonal and genuinely changes unprepared control1 columns",
+    "tail fixes the full blank ancilla input column and projector exactly",
+    "the first even winding has the exact positive native coefficient1 minus cos4theta equals8p cubed",
+    "baseline pays every actual gate at commonT43 dimension128 inputrank8",
+    "edited pays every actual gate at commonT43 dimension128 inputrank8",
+    "both task fixtures have the same initial carrier cut source profile and full paired mode count",
+    "owned Y tensor the exact tail has equal full input-to-output isometry and identical rank8 feedback",
+    "all128 phase multiplicities and all11008 paired clock modes match the complete heat formula",
+    "strict heat sign follows the positive EVEN winding86 term rather than a rounded subtraction",
+    "actual same-terminal-task native edit strictly lowers complete H plus J at common clock",
+    "clock character derivatives vanish at BOTH involution phases0 and pi",
+    "nonconjugate real-unitary endpoint motion has exactly zero heat FIRST source at an involution base",
+    "owned positive winding tail and factorial majorant are consistent T3",
+    "owned positive winding tail and factorial majorant are consistent T5",
+    "owned positive winding tail and factorial majorant are consistent T8",
+    "owned positive winding tail and factorial majorant are consistent T16",
+    "owned positive winding tail and factorial majorant are consistent T43",
+    "closed majorant condition q below1 is exact and a growing-beta case falls back to1 overT",
+    "full small Gibbs clock has uniform1 overT block mass and closing-block trace norm at most1 overT",
+    "small literal full-clock trace retains every phase and both Hodge copies",
+    "exact Duhamel gate sources agree with the all-phase derivative and uniform endpoint bound",
+    "true task-preserving gate ell2 and ellinfinity dual norms have the stated real T factors",
+    "finite same-output fibre values obey log-path and chord bounds without a native smooth-word assumption",
+    "two-block coefficient is an exact positive-weight native Q(p) average and lambda2 is strictly below lambda1",
+    "literal4by4 cumulative returned-matrix logdet with shared spin4 once differentiates to lambda2 rather than lambda1"
+  ],
+  "checks_passed": 27,
+  "consumed_sections_sha256": {
+    "7ab": "a8b52951dd0990540991415ccab8563729759d2c042fea58f250be9fba94355b",
+    "7ac": "076ff074a394e37734b336e8ee171978424d07c777838150ea6366d02e406de9",
+    "7ad": "4acffc06de6fa77459bcfa1ce5ad9c8fe946970f1079a69b9d738aee65c0ebfb"
+  },
+  "continuous_native_angle_primitive_claimed": false,
+  "exact_involution_base_heat_gradient_zero": true,
+  "full_native_joint_stationarity_proved": false,
+  "full_terminal_task_isometry_equal": true,
+  "inputs_sha256": {
+    "02_REGISTRY/research/sources/d0_native_bilinear_return_echo_2026-10-25/CHECK_RESULT.json": "2d544f5fddfdb39a299b69a41813289f8837d61971664bf7d64b916eb9aa92c7",
+    "02_REGISTRY/research/sources/d0_native_bilinear_return_echo_2026-10-25/PROOF.md": "be5d20866ffded772071084d13a8c7cb36d75bd58445edf3264de2c038425470",
+    "02_REGISTRY/research/sources/d0_native_bilinear_return_echo_2026-10-25/native_echo.py": "2d836c6b89ccb8d1aeb081abb2f7ce7d392649169c7eb250a08101ccfad82841",
+    "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+    "02_REGISTRY/research/sources/d0_native_task_clock_source_2026-10-25/PROOF.md": "09c11fd8c74ed7c6e2a791bafccc3820f14b9077c2fda4e8e517e4b8d72079fd",
+    "02_REGISTRY/research/sources/d0_native_task_clock_source_2026-10-25/check_task_clock.py": "1999ee2834b2f906503f6a3d63e683d511a8913b79e35a34f2213c2744e142c5",
+    "02_REGISTRY/research/sources/d0_native_task_clock_source_2026-10-25/task_clock.py": "8dac60c3214c60485bb0cf45480cf993613467c43539f2afdf6f7f4641821215",
+    "02_REGISTRY/research/sources/d0_recorded_scene_clock_heat_2026-10-22/THEOREM.md": "da780b7bef04c9fa18e1c4ff2d6deb1e72453f63307d9976043b579191e632d9"
+  },
+  "native_fixture": [
+    {
+      "CX": 27,
+      "G": 4,
+      "SourceI": 12,
+      "actual_stages": 43,
+      "full_dimension": 128,
+      "input_cut_rank": 8,
+      "word": "baseline"
+    },
+    {
+      "CX": 21,
+      "G": 6,
+      "SourceI": 16,
+      "actual_stages": 43,
+      "full_dimension": 128,
+      "input_cut_rank": 8,
+      "word": "edited"
+    }
+  ],
+  "native_full128_or11008_clock_matrix_replayed": false,
+  "native_local_tail_all32_replayed": true,
+  "native_old_Y_suite_replayed": false,
+  "numeric_arithmetic": "220-digit mpmath non-interval; exact Q(sqrt(p)) tail/matrix identities and rational q separate",
+  "paired_clock_modes": 11008,
+  "primitive_prefix_or_code_header_history_equal_claimed": false,
+  "runtime": {
+    "mpmath": "1.3.0",
+    "python": "3.9.6",
+    "sympy": "1.14.0"
+  },
+  "schema": "d0.native-task-clock-source-check/1",
+  "small_full_clock": {
+    "T": 5,
+    "closing_Gibbs_block_trace_norm": "0.066076994814514145187418666457394253",
+    "each_gate_source": "-0.000075352214219528911568943622058187097",
+    "fibre_dimension": 3,
+    "paired_modes": 30
+  },
+  "source_bounds": [
+    {
+      "T": 3,
+      "endpoint_L_upper": "0.14600071490497970699796356516749042",
+      "gate_ell2_upper": "0.25288065615680352137266349127575697",
+      "gate_ellinf_upper": "0.43800214471493912099389069550247125",
+      "winding_tail_upper": "8.40752750667697e-26"
+    },
+    {
+      "T": 5,
+      "endpoint_L_upper": "0.0018179015684593855389685529316355068",
+      "gate_ell2_upper": "0.0040649514834786737017865437614863842",
+      "gate_ellinf_upper": "0.0090895078422969276948427646581775338",
+      "winding_tail_upper": "2.5315771003896e-50"
+    },
+    {
+      "T": 8,
+      "endpoint_L_upper": "0.00000067629723115375816021549032541422376",
+      "gate_ell2_upper": "0.0000019128574329860336918133472425535724",
+      "gate_ellinf_upper": "0.00000541037784923006528172392260331379",
+      "winding_tail_upper": "1.75437797009523e-91"
+    },
+    {
+      "T": 16,
+      "endpoint_L_upper": "5.090946974928838701456710602360973e-18",
+      "gate_ell2_upper": "2.0363787899715354805826842409443892e-17",
+      "gate_ellinf_upper": "8.1455151598861419223307369637775568e-17",
+      "winding_tail_upper": "8.76705033065092e-216"
+    },
+    {
+      "T": 43,
+      "endpoint_L_upper": "1.3135953839396903125672617555437945e-65",
+      "gate_ell2_upper": "8.6138209759914028111241616845302948e-65",
+      "gate_ellinf_upper": "5.6484601509406683440392255488383162e-64",
+      "winding_tail_upper": "2.39482303189895e-707"
+    }
+  ],
+  "status": "PASS",
+  "task_fibre_price_exactly_constant_claimed": false,
+  "two_private_DATA_cumulative_cut": {
+    "DATA_return_dimension": 4,
+    "lambda1": "-23.41640675188407497289558206489525274426317851399",
+    "lambda1_minus_lambda2": "0.0000010541748614690096693678655728849511",
+    "lambda2": "-23.416407806058936441905251432760825629214278339419",
+    "old_block_Dx": "0.0000000045111023046129109230741441034534585",
+    "old_block_Dy": "-0.00000010563381121966822546636051817791395",
+    "price_is_sum_of_two_local_prices_claimed": false,
+    "shared_spin_multiplier": 4
+  },
+  "whole_native_price_gap": {
+    "H_edit_minus_baseline": "-7.98064032278552500911178017686557783140189524880665089501741e-157",
+    "J_equal": true,
+    "T": 43,
+    "beta": "1",
+    "first_strict_even_winding_index": 86,
+    "positive_first_winding_term": "6.39334303674890053470291720887775801238718123e-155"
+  }
+}

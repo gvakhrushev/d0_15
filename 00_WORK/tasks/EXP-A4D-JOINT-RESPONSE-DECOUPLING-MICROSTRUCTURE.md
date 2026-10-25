@@ -9516,3 +9516,94 @@ RootactualfinalCLIexit0/PASS28; stdout=savedreceipt and all8input+
 rehashed every input and all new sources without another replay.
 Removing7ac recovers fabbdd9c primary exactly; old brief preserved
 as a byte-identical prefix. No scientific/physical status is promoted.
+
+### 25 October: exact controller first source and the finite clock contrast
+
+Phase: native realization / source composition, SAME PR334 and
+constitutive/native-programme-v1 owner. Input4c2b6100. Consume7ac's
+actual involutive endpoint, native raw inverse/clock operator and
+owned full-spectrum winding bounds. No new geometry, action, task
+class or independent execution is introduced.
+
+Parent substitution:7ac used fixed-V conjugacy for zero controller
+heat. At its ACTUAL endpoint all phases are0 orpi, so the complete
+clock character derivative vanishes in EVERY unitary endpoint
+direction, even outside conjugacy. On genuine complete-return/task
+fibres deltaC=0 (or deltaF=0), feedback also has zero first source.
+This proves exact first H+J neutrality on that larger set of
+comparison directions at any fixed real clock. It does not turn
+native code edits into smooth controls or fix non-fibre input rows.
+
+A literal native finite edit separates that conclusion from price
+invariance/minimality. Append fresh active blank c,t and the real
+14-stage tail G_t;CX(c,t);raw_inverse(G_t);CX(c,t). Its completed
+endpoint is I at c0, G² at c1, and restores dirty source-port/spin
+on ALL columns. Baseline uses14 actual cancelling CX instead.
+Both have T43,D128,rank8, full2TD=11008 paired modes, and identical
+terminal input-to-output isometry on arbitrary DATA/spin/reference.
+The feedback is exactly equal; full cyclic heat strictly decreases
+by a positive EVEN winding86 term. Primitive histories/headers and
+additional input contexts are not claimed identical.
+
+Off the involutive base, retain the actual uniform heat source
+L_T=min(1/T,2exp(beta)/beta sum_m m I_mT(beta)). Controller gate-ell2
+and gate-ell-infinity dual norms are bounded by sqrt(T)L_T and
+T L_T; actual physical control lifts keep their own norms. At fixed
+beta these decay factorially, with a stated computable majorant.
+Finite native endpoint values have the corresponding logarithmic
+path/chord bounds; a native divided difference keeps its true
+stencil denominator and the SAME7ac gain4a0 tau_h. No raw gate
+tariff, beta change, free padding or stopping optimum is assumed.
+
+Observable admission is now explicit for each frozen experiment:
+the original Golden weighted-L2 conditional expectation on the
+forgetful finite cylinder quotient supplies the P D/P R intertwiners.
+This does not normalize the actual counting heat trace, extend
+primitive availability or supply different spatial codes' refinement.
+An actual generated controller uses the owned causal adjoint;
+mere correctness of a comparator does not prohibit wrong physical
+implementations or impose the semantic fibre as all of X_N.
+
+The next refinement cannot copy7m's scalar-corner factorization.
+Two private DATA returns have one cumulative matrix determinant,
+with shared spin4 counted once. Its exact old-field coefficient
+lambda2 differs from lambda1; preserved old channel/records alone
+do not preserve the old normalized Euler source. Retain the actual
+cumulative price/pullback or prove a different closing boundary.
+
+Write paths: primary7ad, this existing brief and
+sources/d0_native_task_clock_source_2026-10-25/ only. Disjoint proof,
+code and read-only review assistants work inside this owned PR.
+Decisive checks: actual32-column new tail and expanded inventories;
+strict positive winding sign with high-precision complete heat;
+nonconjugate involution-base first source; small full Gibbs clock
+and gate/finite-value source bounds; two-block matrix cotangent.
+No old nativeY/root/full128/Lean or large integration suite replay.
+
+The request/source-record-to-controller-prefix map, genuinely free
+non-fibre variables, original scene/future context coverage and
+same-process geometric/source refinement remain. Exact operator
+first-source neutrality here is not full finite-code stationarity,
+prospective minimality or physical GR closure. GR_closed=false;
+raw216 remains open.
+
+Reproduce only the changed controller-clock calculation:
+
+    python3 02_REGISTRY/research/sources/d0_native_task_clock_source_2026-10-25/check_task_clock.py --output /tmp/native_task_clock_source.json
+
+Final7ad10023bytes/SHA256
+4acffc06de6fa77459bcfa1ce5ad9c8fe946970f1079a69b9d738aee65c0ebfb.
+PROOF17161bytes/SHA256
+09c11fd8c74ed7c6e2a791bafccc3820f14b9077c2fda4e8e517e4b8d72079fd.
+task_clock.py5360bytes/SHA256
+8dac60c3214c60485bb0cf45480cf993613467c43539f2afdf6f7f4641821215.
+check_task_clock.py17823bytes/SHA256
+1999ee2834b2f906503f6a3d63e683d511a8913b79e35a34f2213c2744e142c5.
+Actualfinalreceipt7883bytes/SHA256
+434be6b07845f8f1e03a337ccf7b85ebdd92a373354ebe01b3a56278a8ed09de.
+RootfinalCLIexit0/PASS27; stdout=savedreceipt;8input+3sectionpins
+verified. Independent final pinned source-only review ACCEPTS exact
+first-source neutrality, strict native finite contrast, weighted
+observable quotient and two-block cotangent non-transfer. No duplicate
+calculation/old large replay. Removing7ad recovers4c2b6100 primary;
+all previous packet bytes remain unchanged. Scientific promotion=false.

@@ -7208,6 +7208,194 @@ No product-law postulate, new action, fitted subtraction or physical
 GR acceptance is added. GR_closed=false; raw216 remains open.
 
 
+## 7ad. Full task-preserving native edits retain a controlled cyclic heat source
+
+**25 October controller-source application.** The correlated bank bound
+of7ac does not dilute a genuine independent processor variation. At an
+IID bank, delta C=<xi^k,delta K xi^k>, with no1/n. The corresponding
+matrix-feedback source is
+
+    delta J=-8 zeta ReTr(Q^(-1) C delta C).             (267)
+
+On a true complete-return implementation fibre delta C=0, this source
+vanishes. At7ac's actual involutive endpoint, the WHOLE primitive-clock
+heat FIRST source also vanishes on every unitary endpoint tangent,
+including changes outside the fixed-middle conjugacy. Finite whole-price
+neutrality is stronger and fails even for a terminally identical task.
+The new [proof](sources/d0_native_task_clock_source_2026-10-25/PROOF.md)
+and [check](sources/d0_native_task_clock_source_2026-10-25/check_task_clock.py)
+supply an actual native counterexample and a controlled replacement
+for that stronger premise. Phase: same native realization / source
+composition owner, not a new admissibility or geometry campaign.
+
+### Same initial cut and complete terminal answer, different full price
+
+Start with the literal29-stage7ab echo at kE=kB=1. Give BOTH configurations
+two new ACTIVE blank work bits c,t, keeping DATA/spin protected and all
+unused thermal columns. Append to one echo the native tail
+
+    G_t ; CX(c,t) ; actual raw inverse G_t ; CX(c,t).
+
+The completed tail is I for c=0 and G_t^2 for c=1. Its14 primitive stages
+include the dirty-port/source-spin routing and inverse; it is not a
+free inverse gate. Append14 REAL cancelling CX to the baseline instead.
+Both words have the same actual T=43, whole fibre D=128 and input rank8.
+The edited endpoint acts identically to the baseline on EVERY allowed
+input column, including unknown DATA/spin and a passive entangled past.
+Thus the whole terminal output isometry, every subsequent test on that
+same output, and J agree exactly. Intermediate primitive histories,
+programme headers and additional input contexts are not thereby equated.
+
+Let K_T denote the actual full clock character, theta satisfy sin(theta)=p,
+and S_T(alpha)=K_T(alpha)+K_T(pi+alpha). The exact heat ratio is
+
+    Z_edit/Z_base=(1+S_T(2theta)/S_T(0))/2 < 1.         (268)
+
+The positive winding expansion gives
+
+    S_T(0)-S_T(alpha)
+      =4T exp(-beta) sum_r>=1 I_(2rT)(beta)
+                                [1-cos(2r alpha)].    (269)
+
+Its first term is strictly positive because1-cos(4theta)=8p^3>0.
+This proves a strict price difference even though it is extremely small
+at beta1,T43; low precision equality is not an exact source-neutrality
+test. Both degrees and ALL2TD modes remain in Z. The comparison is on
+one common padded clock, not a subtraction of old unequal-clock prices.
+
+### Exact first-source cancellation at the actual involutive base
+
+Every7ac endpoint, including an imperfect native encoder with its EXACT
+raw inverse, is conjugate to V11 and has phases only0 andpi. The full
+character is even and2pi-periodic, so K_T'(0)=K_T'(pi)=0. Functional
+calculus therefore gives DH=0 for EVERY unitary endpoint tangent at
+that base, not merely conjugacy directions. On a true task fibre
+delta C=0, or delta F=0, the feedback source is also zero. Thus the
+complete H+J first controller source vanishes EXACTLY there at any
+fixed actual T and carrier. No long-clock approximation is needed for
+this particular base conclusion. A moving cut/task, beta, clock or
+extra physical stack term retains its own equation.
+
+The strict finite edit(268) is consistent with this cancellation: it
+detects higher-order/finite-price dependence. Stationarity is not
+task-wise price invariance or prospective minimality. The following
+bounds control general neighbourhoods and finite code contrasts.
+
+### Retain the controller source with its actual norm and gain
+
+Consume the owned complete-clock Gibbs/winding bounds, retaining all
+unprepared modes. For ANY unitary endpoint U at fixed beta,T and carrier,
+
+    |DH[delta U]| <= L_T ||delta U||_op,
+    L_T=min{1/T, (2 exp(beta)/beta)
+                       sum_m>=1 m I_(mT)(beta)}.      (270)
+
+The elementary1/T bound follows from the actual Gibbs clock marginal;
+the paired Hodge factor2 cancels in that normalized marginal. For fixed
+beta and q=[beta/(2(T+1))]^T<1, a computable majorant is
+
+    L_T <= (2 exp(beta+beta^2/4)/beta)
+                 (beta/2)^T/[T! (1-q)^2].             (271)
+
+Do not infer this factorial limit when beta also grows with T. The1/T
+bound remains available. These are existing heat estimates used here
+for a NEW controller-source consumer, not re-proved gravity equations.
+
+For a comparison varying all T primitive unitaries, the literal product
+rule gives ||delta U||<=sum_j||delta g_j||. Therefore a true task fibre
+has complete H+J controller dual norm bounded by sqrt(T)L_T for the
+gate-ell2 norm, or T L_T for gate-ell-infinity. If a physical control
+parameterization is supplied instead, retain its actual endpoint/gate
+lift norm. These smooth matrix bounds do not supply a continuous native
+angle primitive; fixed G, CX and SourceI remain their literal alphabet.
+
+There is also a finite-word version. Two same-T real-SO endpoints with
+U_a P_in=U_b P_in differ by an orthogonal map fixing P_in pointwise.
+A complementary real skew logarithm of norm<=pi gives an analytic path
+of the SAME terminal fibre. Integrating(270) proves
+
+    |B_b-B_a| <= pi L_T,
+    |B_b-B_a| <= (pi/2)L_T ||U_b-U_a||_op.             (272)
+
+This is a bound between actual code endpoints. The comparison path is
+a proof device, not an admitted native actuator. Native source secants
+keep the actual stencil spacing in the denominator. Equality only of
+one chosen input density, one marginal effect, or a normalized report
+does not imply the pointwise isometry condition used here.
+
+For7ac's comparison use its SAME Gamma_h=4a0 tau_h>0 (and any actual
+protected multiplicity once). The bank/source errors stay exactly as
+in7ac. At the exact involutive base the additionally admitted true
+task-preserving controller row is zero. In a neighbourhood or a finite
+code secant, add the relevant heat bound DIVIDED by Gamma_h, with its
+real lift/spacing.
+One may choose a sufficiently long permitted common clock AFTER these
+norms are fixed, using actual identity stages. This consumes resources:
+the absolute heat/value and complete time/work ledger remain paid.
+It does not solve a free clock, cut, beta or stopping equation or prove
+that a task with a fixed duration permits such padding. Outside the
+genuine task fibre, keep(267); the bank-copy count does not remove it.
+
+### Observable admission and refinement do not erase those equations
+
+Book01's six finite-section conditions admit a fixed supplied experiment
+without requiring M1 to choose its programme uniquely. For a frozen
+finite operator D0 its idle-cylinder extension D_m=D0 tensor I, with
+the ORIGINAL Golden vector q0=(sqrt(p),p) and projection
+P_(m+1,m)=I tensor<q0|, gives exactly P D_(m+1)=D_m P and
+P R_(m+1)=R_m P for R=D dagger D. The finite quotient forgets the last
+binary cylinder coordinate; its conditional expectation in the original
+Golden weighted L2 uses weights(p,p^2) and has precisely this Hilbert
+coisometry. This readout representation does NOT replace the full
+counting heat trace or pay for a physically executed extra preparation.
+Its finite support, actual terminal
+registration and unchanged single calibration retain the other declared
+conditions. This is observation of THAT frozen experiment, conditional
+on its existing primitive/interface premises. It is not a proof that
+different geometry-refining codes have the same intertwiners.
+
+Nor does correct task verification make every physical controller a
+correct implementation. Four complete JOINT programme effects on the
+whole legal input family determine K; two means on a tied field curve
+do not. A controller generated by an actual fixed correct process uses
+the owned causal adjoint. An independently selectable controller keeps
+its source unless an actual task/kinematic constraint or priced
+accept/reject process supplies that fibre. These alternatives need an
+explicit request/source-to-prefix map, not a universal extra selector.
+
+There is already a decisive new refinement warning. With private DATA
+for two7ac blocks, the retained old channel can be preserved, but the
+ONE cumulative closing cut has underlying DATA return c1 tensor c2,
+with the shared protected spin4 counted ONCE. Its determinant is
+
+    J_total=-4Tr log[(1-zeta)I+zeta
+                                  (c1^2 tensor c2^2)]. (273)
+
+This is not J1+J2. Put A=p^6,B=p^12,a=1-zeta, Q=a+zeta A,
+R=a+zeta B, S_A=A/(a+zeta A^2)+B/(a+zeta AB),
+S_B=A/(a+zeta AB)+B/(a+zeta B^2). At the identical common-null
+values the standalone ratio is lambda1=-2p^(-5)(R/Q+A), whereas
+the two-block old-field ratio is lambda2=-2p^(-5)(S_A/S_B+A).
+Indeed S_A/S_B is a positive weighted average of
+r(t)=(a+zeta tB)/(a+zeta tA), t=A,B. Since r is strictly decreasing
+and0<A,B<1, R/Q<S_A/S_B<1, so lambda2<lambda1 strictly.
+The old nontrivial source balance Df+lambda1 Dq=0 need not annul
+the new old-block source a2(lambda2-lambda1)Dq, with a2>0.
+Thus7m's scalar-corner stationary composition cannot be copied into
+this two-band process. A same-process price/source transport or an
+actually justified different closing boundary is still required.
+
+**Parent consequence.** The7ac involutive base has exact first-source
+neutrality on every true task-preserving controller direction, beyond
+fixed-V conjugacy. Full terminal task equality remains insufficient for
+finite whole-price neutrality even in literal native code; the general
+cyclic heat residual is uniformly controlled with the true clock, norm
+and gain. This neither imposes a task fibre on native X_N nor
+supplies exact finite joint stationarity or an admissible geometric
+refinement. The actual generated-controller graph and cumulative
+two-band source transport remain. GR_closed=false; raw216 remains open.
+
+
 ## 8. Reproduction
 
 Run from this directory:
