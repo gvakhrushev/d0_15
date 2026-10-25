@@ -1835,7 +1835,9 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertEqual(tensor["declaration_kind"], "definition")
         self.assertIn("[Mul R]", tensor["elaborated_type"])
         self.assertNotIn("[Fintype", tensor["elaborated_type"])
-        self.assertEqual(tensor["axioms"], [])
+        # The shared alias inherits Mathlib's standard quotient soundness
+        # dependency from Matrix.kronecker; pin that exact trust footprint.
+        self.assertEqual(tensor["axioms"], ["Quot.sound"])
 
         trace_law = declarations[
             "D0.Algebra.finiteMatrixTensorProduct_trace_one_left"

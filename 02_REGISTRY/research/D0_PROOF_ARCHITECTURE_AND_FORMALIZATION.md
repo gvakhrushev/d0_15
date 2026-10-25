@@ -6551,3 +6551,42 @@ the updated formal-support digest
 This validates retrieval and compiled reuse metadata on the current corpus.
 It does not accept the four OPEN CAR claims, change C0, or promote any
 physical interpretation.
+
+### Delegate the shared tensor operator to Mathlib (25 October 2026)
+
+`D0.Algebra.finiteMatrixTensorProduct` is now a stable D0 abbreviation for
+Mathlib's `Matrix.kronecker`, with the same product carrier and entry formula.
+The multiplication, transpose, additivity, scalar, identity, and trace laws
+delegate to Mathlib's compiled Kronecker results. This removes the duplicated
+entrywise constructor and its coordinate proofs while preserving the D0 API.
+The CAR-specific sum-square theorem stays in the shared algebra module; the
+CAR parity application now unfolds through Mathlib's `kroneckerMap_apply`.
+
+Narrow builds pass for `D0.Algebra.FiniteMatrixTensorProduct`,
+`D0.Spectrum.GenerationTensorExactness`, `D0.Matter.ArchivePartialTrace`,
+`D0.Geometry.ArchiveCARDirac`, and `D0.Bridge.FinalBridgeIndex`. The final
+`D0.All` integration passes **4,580/4,580** Lake jobs in 361.5 seconds.
+The current 36-declaration CAR/Hodge inventory was captured at clean source
+snapshot `a2b66422d255d6c617413b0450a1947e3c6652a8`; its Lean-source digest is
+`3149a01a3c2641979b255aaaa699b0fcf7532ddd3a20264a23a2e2100296aa8c`, collector
+SHA-256 `3c41633e10ad03c3bb0a8e440f94506a632630561697a6c44f6a76cda6155b2a`, and
+inventory SHA-256 `75c6c9fe9b0342e2c9bb8516deb909ab4d2916e85c8c83bda44c2d3c4df513b7`.
+The refreshed 15-declaration nonvacuum stencil inventory records clean source
+snapshot `7854e3fee49965689c81da4af6eba1bdf20a3ebe` and the same Lean-source
+digest; its file SHA-256 is
+`b1415113ad7844e243ba5f014d6ee1a27846e4eef8f6c0b29243194087e9fed9`.
+
+The exact trust footprint is pinned as well: direct `#print axioms` reports
+`{Quot.sound}` for Mathlib's `Matrix.kronecker`, `Matrix.kroneckerMap`, and
+the D0 abbreviation. The tensor definition's inventory assertion therefore
+records `{Quot.sound}` rather than the empty footprint of the prior local
+entrywise lambda; dependent algebraic theorems retain their recorded standard
+axioms. This is the standard Mathlib dependency introduced by the API
+delegation, not a project-local axiom or an admitted proof.
+
+The focused proof-architecture and declaration-inventory suites pass **66/66**;
+repository validation also passes with zero warnings on this integration.
+
+This is finite matrix library consolidation only. The public operator names,
+CAR/Matter/Spectrum theorem statements, carrier, and premise boundaries remain
+unchanged; no physical interpretation or scientific status changes.
