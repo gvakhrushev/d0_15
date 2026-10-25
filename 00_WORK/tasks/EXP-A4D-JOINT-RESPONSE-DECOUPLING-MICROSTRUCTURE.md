@@ -10103,3 +10103,84 @@ Replay, actual recording/cut map, inherited pins and source-review scope:
 Original primary054d5eeb and oldbrief preserved; no physical or registry
 status promoted. Actual extra scene/Cost/Info/work and independently
 selected task/variation/stopping rows remain open; GR_closed=false.
+
+### 25 October: apply the full recorded CQ price to the known-port execution
+
+Phase: native realization / complete-price source. SAME PR334,
+constitutive/native-programme-v1; inputc8c85ef1. Parent7aj retains actual
+Info/work and upstream preparation sources. Consume its native two-
+coefficient palette algebra plus OWNED7x complete-record CQ identities.
+For EVERY finalACTIVE label m, K_m=a_m I+b_m Li has K_m†K_m=p_m I.
+Conditional branches are protected isometries, so the COMPLETE registered
+CQ GAIN is H(p_m), including mixed/entangled protectedspin/passiveoldR.
+This removes conditionalquantumWORK/protected-preparation ambiguity in
+THIS sector; it does not eliminate the actual full record entropy or
+all physical work. The direct Book bootstrap may be used independently:
+this comparison is NOT permission to append a second Info term to it.
+
+Exact source application: derive the all-label scalar cost effect and
+cost-marked operator for ACTUALLY supplied scalar fine charges, full
+D(ell C-I) including Dc and C_ext, and the missing return-vs-conditional
+record entropy f D H(nonreturn). Keep independently generated ACTIVE
+preparation/encoder/control sources. Do not import the distinct full128
+stationary/stopping Poisson section or measured F/R Kraft cancellation
+without its execution map.
+
+Decisive changed native construction: the existing R_L=W_1(L) controls
+freshjunk from an initialized factoryflag c. Set A_L=A R_L† so the
+chronological R_L†;A leaves A_L j_aux=A j_aux on EVERY legal bank input
+(c0 initialized), including all raw forward outcomes. Yet the whole
+closed echo is R_L U R_L†, retaining C/F and full spectrum. After the
+actual final-label copy its fineInfo increases by p_c h(sin²2Ltheta).
+At nativeL1,L2 the exact difference is positive because
+p6<16p9<1/2 and h(4p3)=h(p6). Equalize the TRUE full primitive inventory
+using actual identity words; equal inventory is not assumed to be the
+complete physical Cost. This new control is on the SAME blank-input
+and complete-record sector, not the older supplied-input7x window.
+Its finite contrasts and any comparison source retain actual code/
+feature norms and admission. No continuous angle is granted.
+
+General originalreport consumer: for e=gamma P_n, the final initialized-
+auxiliary leakage is 2d<e-e²>. Its owned critical variance bound and
+qmin>0 imply a nonzero initializedauxflag for latecohorts. Thus the
+completion operation has a stated application to the original report,
+not only the smallnative control. The extra distinguishable labels
+are generated internally; they are neither a free external distinction
+nor extra information credited for a redundant copy. A task retaining
+all finefuture labels can distinguish this control; no falsefulltask
+fibre identity is claimed.
+
+Inputs:7x record/CQ source;7af originalreport/correlatedbank;7ai known
+input/gain;7aj task/realrecord map; original Golden primitive/source
+inverse and literalnative domain. Writepaths: primary7ak, this brief,
+sources/d0_known_port_complete_record_price_2026-10-25/ only. Disjoint
+bounded samePR authors: CQ_SOURCE.md, COMPLETION_MAP.md, nativehelper/
+checker; root integrates frozen receipt/primary/review. No new task,
+claim, registry, sourcepostulate or fittedCost/Info is introduced.
+Validation: newbounded all-column native completion/copy/effect control,
+exactpositive entropy ordering and scalarCQ/source identities; no old
+READY/root/Cartan/large128/Lean/corpus replay. The consumed parent change
+is the exact scalarfullrecord price source and solved protectedreaction;
+remaining physical scalarCost/Info/selectedtask source and jointstationary
+refinement stay open. GR_closed=false.
+
+Positive stationary consumer of the same fixed-ledger classification:
+apply the owned scalarGibbs identity to its regular completion row,
+u*=1/(1+exp(ell D_c/mu)). Keep the reduced value and actual field
+envelope derivatives; no inference from failure of open-orbit equality
+to absence of stationary points is made. For a GENUINELY supplied
+conditional0/10 ledger, charges1/2 giveu*=p² and conditionalminimum0
+becausep+p²1. Actualconditionalwriter/controllerwork and native
+attainment/approximation/physicalnorm remain typed application inputs,
+not a fittedsource or new task. Other unconditional/header/field costs
+are retained. This is one consumed lemma in the existing CQ source.
+
+Complete-record checkpoint: primary7ak10616bytes/SHA256
+fbd5dfbb3c632c621dea184acf324342616648b900a1046026f21bf224a575cd.
+RootfinalCLIexit0/PASS33; stdout equals receipt;21source and6section
+pins verified. Receipt11806bytes/SHA256
+ef6010bbd047e257e5f7ccca29b576426bb8a316d32695a9fdb4052160d4b633.
+Exact replay/charge scope, actualrecording and inherited source pins:
+02_REGISTRY/research/sources/d0_known_port_complete_record_price_2026-10-25/INTEGRATION_REVIEW.md.
+Inputprimaryc8c85ef1, oldbrief and all priorpackets preserved. No physical
+Cost/Info selection, native stationary attainment or GR status promoted.

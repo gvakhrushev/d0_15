@@ -8607,6 +8607,215 @@ physical stationary root, positive_gr, raw216 or GR_closed promotion
 is made. GR_closed=false.
 
 
+## 7ak. Compute the complete recorded quantum gain and its real cost-source remainder
+
+25 October2026, SAME PR334/constitutive owner, inputc8c85ef1. The parent
+is7aj's remaining complete-price and independent preparation reaction.
+Apply its precise native palette to EVERY final ACTIVE label, then use
+the OWNED7x CQ gain and recorded-memory formula. This supplies a source
+term and removes a quantum-preparation premise; it does not append a
+new entropy to an already complete Book action or select a physical
+Cost by subtracting a desired source.
+
+The full source is in
+[CQ_SOURCE.md](sources/d0_known_port_complete_record_price_2026-10-25/CQ_SOURCE.md)
+and the actual operation/parent application in
+[COMPLETION_MAP.md](sources/d0_known_port_complete_record_price_2026-10-25/COMPLETION_MAP.md).
+The bounded native helper and checker in that packet implement the
+changed execution, exact input/effect controls and full inventory.
+
+### All final-label branches are protected isometries
+
+For one SAME-frame validated native word, known ALL ACTIVE input0,
+protected spin4 and factorized passive oldRIGHT support, let m name
+one complete final ACTIVE computational label. The algebra(316) gives
+
+    K_m=<m|U|0>=(a_m I4+b_m L_i) tensor I_old,
+    K_m^dagger K_m=p_m I_r,
+    p_m=a_m²+b_m²,  sum_m p_m=1.                     (321)
+
+For p_m>0 the normalized K_m is an orthogonal map on protected spin,
+identity on oldRIGHT. This is stronger than the scalar RETURN corner:
+it covers every fine output. For arbitrary normalized mixed protected
+Omega, including spin/oldRIGHT-entangled STATES within the same
+factorized support, the actual registered blocks satisfy
+
+    X_m=p_m O_m Omega O_m^dagger,
+    S(X_m/p_m)=S(Omega),
+    I_CQ=S(direct_sum_m X_m)-S(Omega)=H(P),
+    H(P)=-sum_m p_m log p_m.                         (322)
+
+Logs use natural units. The coherent full output still has entropy
+S(Omega); its redundant copy is not extra independent information.
+Ignoring only passive oldRIGHT gives the SAME registered gain if all
+conditional spin/WORK is retained. Additional loss of WORK or a
+different future algebra needs its own formula. No faithful stationary
+full128 density, pure protected input or oldRIGHT quantum access is
+required for (322).
+
+In particular D_Omega I_CQ=0 at fixed word for normalized protected
+input variations. This solves that Info preparation row in this sector;
+it does not solve independently generated ACTIVE source/encoder/control
+rows, arbitrary work-energy prices or moving input/cut/Gram variables.
+
+### The full scalar charge/source map is explicit, but its physical ledger is not fitted
+
+For ACTUALLY supplied scalar fine charges c_m and additional real cost
+C_ext, the cost-marked operator and cost effect reduce exactly to
+
+    N_t=sum_m exp(-t c_m)K_m^dagger K_m
+       =[sum_m exp(-t c_m)p_m]I_r,
+    C_eff=-partial_t N_t|_0=[sum_m c_m p_m]I_r.       (323)
+
+Thus this declared charge component also has zero protected-state
+preparation reaction. A different physical quantum work operator is
+not declared scalar by (323). At a fixed regular support the full
+natural-unit gain-price source, ell=log(phi), is
+
+    D(ell C-I_CQ)
+      =sum_m(ell c_m+log p_m)Dp_m
+          +ell sum_m p_m Dc_m+ell DC_ext.            (324)
+
+The amplitude extension and its actual support/lift qualifications are
+those in CQ_SOURCE; no C2 or all-mesh entropy bound is inferred from
+finite positivity. Charges, controller/header/decoder work and stopping
+costs must be derived for this execution. Actual primitive inventory,
+minimal description length and conditional scalar fine charges are
+not equated by notation.
+
+The return law fixes p_0=tau, not the full vector P. Writing f=1-tau
+and nu_m=p_m/f for m nonzero, the exact decomposition is
+
+    I_CQ=h(f)+f H(nu),
+    DI_CQ=[h'(f)+H(nu)]Df+f D H(nu).                (325)
+
+On the primary jet Dq=0 implies Df=0 for the fixed return template;
+it does not by itself set D H(nu)=0. Fixed full joint-record fidelity
+would fix this information component, but one conditional report or
+return law need not. Nor does closeness of a prepared source column
+control its inverse on leakage columns.
+
+### An actual encoder completion leaves its whole forward task unchanged
+
+Let A be the actual report encoder, j_aux its genuine initialized
+factory input, and c one of its initialized factory bits. Add a fresh
+private known junk bit z. Use the OWNED native R_L=W_1(L), controlled
+by c and rotating z by G^(2L), with its exact counted inverse. Put
+
+    A_L=A R_L^dagger,
+    R_L^dagger j_aux=j_aux,
+    A_L j_aux=A j_aux on EVERY logical bank input,
+    U_L=R_L U R_L^dagger.                            (326)
+
+The first equality is a full forward initialized-input identity,
+including arbitrary incident bank coherences, port and protected spin.
+It is stronger than equality of a conditional or normalized report.
+R_L does not address the old sealed archive and restores shared helper/
+spin on completed columns. Its physical initial blank is fixed, so C,
+F and the whole spectrum of the closed endpoint are unchanged. At the
+SAME truly paid carrier/clock its complete H+J is therefore identical.
+All actual final-label copies stay in the operator and its heat.
+
+For a final old label with c=0 the new bit remains0; when c=1 its new
+probabilities are (1-v_L,v_L), v_L=sin²(2L theta). All old DIAGONAL
+record laws remain, while the full fine information changes by
+
+    I_fine,L=I_fine,base+mu_c h(v_L),
+    mu_c=Pr_final(c=1).
+
+For native L1,L2, v_1=4p³ and v_2=16p9. Since
+0<p6<v_2<1/2 and h(v_1)=h(p6), the information contrast is strictly
+positive whenever mu_c>0. These extra distinctions are generated by
+the executed splitter; no external information is supplied and no
+second entropy is credited for a redundant record copy. A complete
+fine future-profile task CAN distinguish this operation. It is not
+called the same full task merely because its forward reporter and
+return agree.
+
+This has a direct application to the ORIGINAL report. With
+Q=A^dagger Pi A, e=j_aux^dagger Q j_aux=gamma P_n and source Psi,
+the final initialized-auxiliary leakage probability is exactly
+
+    r_aux=2d<Psi,(e-e²)Psi>
+      =2d[gamma q-gamma²(q²+Var_actual(P_n))].        (327)
+
+The owned critical variance/whole-state error bound tends to zero,
+whereas q>=q_min>0 and gamma>=1/2. Hence r_aux>0 on late actual
+cohorts. Some genuine initialized factory bit c then has mu_c>0;
+finite exact arithmetic can identify one. A rebit left free by the
+algorithmic input predicate cannot be substituted for that c. This
+applies the completion operation to the existing full report rather
+than creating an unrelated geometric example.
+
+The small certificate uses A=G_c^5 and the original K1 middle, with
+one fresh z in BOTH compared carriers. R_L and its inverse each use
+12L+2 literal stages. For L1, TWO real G;InvG identity words match
+L2's complete inventory. Both recorded executions have132 stages,
+512 whole columns, rank4 and135168 paired clock modes, including
+all unsuccessful/unprepared columns. They have equal G/CX/SourceI
+counts; their exact full forward input law, return and heat spectrum
+agree, while fine entropy differs. The all64-column unrecorded native
+operator is checked before using the proved balanced-copy reduction;
+a giant clock or512-column unrolled simulation is not claimed.
+
+### The cost reaction is a concrete remaining source, not an unnamed quantum debt
+
+For a proposed SAME-price source binding with a genuinely derived
+nonzero gain kappa, the remaining equality has the explicit form
+
+    ell DC_actual
+       =DI_CQ+kappa^(-1)D(B_Book+B_other).            (328)
+
+On the regular completion comparison DB_Book=0, while the Info row
+is mu_c h'(v)Dv. Every independently real B_other remains. A matrix
+comparison is a source calculator; no continuously tunable native
+angle is granted. Actual finite native endpoints use their counted
+code/feature spacing and actual primitive, header and controller cost.
+
+Any FIXED scalar fine-leaf charges on this splitter have expected
+cost affine in v. A fixed primitive-inventory charge is constant on
+the matched words. Consequently their natural-unit gain price has
+second derivative mu_c/[v(1-v)]>0 on the regular comparison, whereas
+the Book conjugacy price is constant. Such a fixed ledger cannot
+supply a whole-open-orbit binding; two finite endpoints alone do not
+exclude every possible charge choice. Genuine moving/nonlinear work
+or controller cost, or an independently justified stronger task,
+retains its real application instead of a fitted compensator.
+
+This does not exclude a stationary section of that specified ledger.
+The owned scalar Gibbs principle gives its UNIQUE regular completion
+stationary point u_*=1/[1+exp(ell D_c/mu_c)], where D_c is its actual
+expected fine-charge slope. Its reduced value and field envelope keep
+the real mu_c, D_c and rest-cost derivatives as in CQ_SOURCE. If a
+genuine CONDITIONAL original0/10 ledger supplies charges1,2, then
+u_*=p² and that conditional minimum is0 by p+p²=1. This is a positive
+conditional source elimination, not an invented Cost: actual controlled
+writer, generator/header work, native attainment and its source/norm
+budget still have to be supplied. An unconditional code or other real
+work can retain an additional nonzero field source.
+
+Under the completed private cohort process, a fixed upfront choice
+of one old completion persists in all later append-only prefixes.
+Its fine entropy contrast remains; it is not multiplied by the tiny
+closing-feedback w_M. Therefore the old bank/cofield error budgets
+and vanishing raw heat cannot automatically suppress this information
+source relative to Gamma_M. No sealed old record is changed in this
+comparison: the two branches were declared before their first run.
+
+**Parent consequence.** Conditional quantum entropy and protected-input
+preparation are now eliminated EXACTLY from the registered component
+on this supplied native sector. The full fine information, scalar
+cost effect and source are explicit. The actual inverse-completion
+operation isolates the remaining physical cost reaction within the
+same original report interface. Measured F/R Kraft cancellation and
+full128 stationary/stopped Poisson balances have different executions
+and cannot be imported silently. If the direct bootstrap is selected,
+(322) is not permission to add a second -H(P) term; a Cost-Info
+representation of that same price needs its proved source transport.
+Physical ledger/Info selection, actual independent variations and
+full joint GR realization/refinement remain. GR_closed=false.
+
+
 ## 8. Reproduction
 
 Run from this directory:
