@@ -474,7 +474,11 @@ class ProofArchitectureTests(unittest.TestCase):
                 "id": "r1", "statement": "Exact vector reconstruction",
                 "owner": "owner", "reported_state": "scoped result",
                 "evidence": [
-                    {"ref": ref, "path": source_rel, "sha256": source_sha},
+                    {"ref": ref, "path": source_rel, "sha256": source_sha,
+                     "declaration_names": [
+                         "D0.Foo.bar", "D0.Foo.missing", "D0.Other.bar",
+                         "D0.Foo.owner_mismatch"
+                     ]},
                     {"ref": ref, "path": research_rel, "sha256": research_sha,
                      "section_ref": "Theorem 1"},
                     {"ref": ref, "path": research_rel, "sha256": "0" * 64,
@@ -499,17 +503,32 @@ class ProofArchitectureTests(unittest.TestCase):
                         "proof_dependencies": ["True.intro"], "axioms": [],
                         "declaration_ranges": {"declaration": {"start": {"line": 1}}},
                         "proof_details_status": "omitted_by_bulk_mode",
+                    }, {
+                        "name": "D0.Foo.owner_mismatch", "module": "D0.Foo",
+                        "source_path": source_rel,
+                        "elaborated_type": "True", "binders": [],
+                        "conclusion_whnf": "True", "type_dependencies": ["True"],
+                        "proof_dependencies": ["True.intro"], "axioms": [],
+                        "declaration_ranges": {"declaration": {"start": {"line": 1}}},
+                        "proof_details_status": "omitted_by_bulk_mode",
                     }], "collector-sha", "lean-source-sha")
 
                 @staticmethod
                 def run_inventory(names: list[str], import_root: str):
-                    self.assertEqual(names, ["D0.Foo.bar"])
+                    self.assertEqual(names, ["D0.Foo.bar", "D0.Foo.owner_mismatch"])
                     self.assertEqual(import_root, "D0.All")
                     return ([{
                         "name": "D0.Foo.bar", "exists": True, "module": "D0.Foo",
                         "elaborated_type": "True", "binders": [], "conclusion_whnf": "True",
                         "type_dependencies": ["True"], "proof_dependencies": ["True.intro"],
                         "axioms": [],
+                        "declaration_ranges": {"declaration": {"start": {"line": 1}}},
+                    }, {
+                        "name": "D0.Foo.owner_mismatch", "exists": True,
+                        "module": "D0.Other", "elaborated_type": "True",
+                        "binders": [], "conclusion_whnf": "True",
+                        "type_dependencies": ["True"],
+                        "proof_dependencies": ["True.intro"], "axioms": [],
                         "declaration_ranges": {"declaration": {"start": {"line": 1}}},
                     }], "detail-collector-sha", "lean-source-sha")
 
@@ -577,10 +596,24 @@ class ProofArchitectureTests(unittest.TestCase):
                          "ranked_heading_candidates_need_review")
         self.assertEqual(view["compiled_declarations"][0]["elaborated_type"], "True")
         self.assertEqual(view["compiled_declarations"][0]["proof_details_status"],
-                         "collected_for_exact_claim_locator")
+                         "collected_for_explicit_declaration_locator")
         self.assertEqual(view["claim_locator_candidates"][0]["claim_id"], "CLM-1")
         self.assertEqual(view["formal_support_candidates"][0]["lean_module"], "D0.Foo")
-        self.assertEqual(view["declaration_disposition"], "candidate")
+        self.assertEqual(view["declaration_disposition"], "ambiguous")
+        self.assertEqual(
+            view["explicit_declaration_locator_disposition"], "partially_resolved"
+        )
+        self.assertEqual(
+            [locator["resolution_status"] for locator in view["explicit_declaration_locators"]],
+            ["resolved", "not_found_in_pinned_module", "not_found_in_pinned_module",
+             "declaration_owner_module_mismatch"],
+        )
+        self.assertEqual(
+            view["explicit_declaration_locators"][0]["compiled_declaration"][
+                "proof_dependencies"
+            ],
+            ["True.intro"],
+        )
         self.assertEqual(view["semantic_relation_status"], "unresolved")
         self.assertFalse(view["acceptance_inferred"])
         self.assertEqual(view["declared_relations"]["declared_applications"][0]["review"]["state"],

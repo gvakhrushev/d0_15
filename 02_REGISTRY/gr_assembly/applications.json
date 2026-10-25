@@ -39,9 +39,13 @@
           ]
         },
         {
-          "ref": "981a543df11e1acc7c62ac515939692c8103ae9c",
+          "ref": "4aff58affff315eae09572640166b90cb0e5bdde",
           "path": "03_FORMALIZATION/D0/Geometry/A4DSolderMetricCompletion.lean",
-          "sha256": "64e61c514b1e57cc89fc46c879fee59540427900eb09a9a66b67d79ce8d530c2"
+          "sha256": "6234a6480aad6ca2a78caa3a64f59def4c50dc38beeb3c8ab1cc3df94c6db3cb",
+          "declaration_names": [
+            "D0.Geometry.coframeMetricReadout_realizes_symmetric",
+            "D0.Geometry.solderMetric_realizes_symmetric_tangent"
+          ]
         }
       ],
       "reported_state": "Main-owned metric provenance remains scoped: the pinned source owns the star-action quotient, and the pinned Lean module proves an all-site finite solder-Gram tangent for every symmetric Role matrix with an explicit coframe witness. Global all-mode connection elimination and physical metric/source selection remain open."

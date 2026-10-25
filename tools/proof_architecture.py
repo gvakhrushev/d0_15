@@ -1273,8 +1273,10 @@ def result_declaration_crosswalk_view(dataset: dict[str, Any],
                                       all_current: bool = False) -> dict[str, Any]:
     """Crosswalk pinned assembly evidence to compiled declaration candidates.
 
-    A source/declaration match is only a co-location candidate. No semantic
-    application, claim coverage, or independent acceptance is inferred.
+    Exact declaration names supplied with pinned evidence are elaborated against
+    that source module. Source co-location and other inferred matches remain
+    candidates; no semantic application, claim coverage, or independent
+    acceptance is inferred.
     """
     root = pathlib.Path(dataset.get("root", ROOT)).resolve()
     results = list(dataset["assembly"].get("results", []))
@@ -1310,11 +1312,32 @@ def result_declaration_crosswalk_view(dataset: dict[str, Any],
                     module = None
             else:
                 module = None
+            requested_declaration_names = evidence.get("declaration_names")
+            if requested_declaration_names is None:
+                declaration_name_locators = []
+            elif (not isinstance(requested_declaration_names, list)
+                  or any(not isinstance(name, str) or not name.strip()
+                         for name in requested_declaration_names)):
+                declaration_name_locators = [{
+                    "requested": requested_declaration_names,
+                    "resolution_status": "invalid_declaration_name_metadata",
+                }]
+            else:
+                initial_status = (
+                    "not_enumerated" if module
+                    else "pinned_source_not_current_or_not_lean"
+                )
+                declaration_name_locators = [{
+                    "name": name.strip(),
+                    "resolution_status": initial_status,
+                } for name in dict.fromkeys(requested_declaration_names)]
             evidence_views.append({
                 "pin": pin,
                 "inventory_module": module,
                 "declarations": [],
+                "declaration_name_locators": declaration_name_locators,
                 "formal_support_candidates": [],
+                "requested_declaration_names": requested_declaration_names,
             })
         per_result[key] = {"record": row, "evidence": evidence_views}
         per_result[key]["source_locators"] = source_locator_views
@@ -1336,18 +1359,53 @@ def result_declaration_crosswalk_view(dataset: dict[str, Any],
         for item in per_result.values():
             for evidence_view in item["evidence"]:
                 module = evidence_view["inventory_module"]
-                if not module:
-                    continue
+                requested_names = evidence_view["requested_declaration_names"]
                 path = str(evidence_view["pin"].get("path", ""))
                 declarations = [row for row in by_module.get(module, [])
-                                if row.get("source_path") == path]
+                                if row.get("source_path") == path] if module else []
                 evidence_view["declarations"] = declarations
-                evidence_view["formal_support_candidates"] = _formal_support_candidates(
-                    dataset, module, path
-                )
+                if module:
+                    evidence_view["formal_support_candidates"] = _formal_support_candidates(
+                        dataset, module, path
+                    )
+                if requested_names is None:
+                    continue
+                if (not isinstance(requested_names, list)
+                        or any(not isinstance(name, str) or not name.strip()
+                               for name in requested_names)):
+                    evidence_view["declaration_name_locators"] = [{
+                        "requested": requested_names,
+                        "resolution_status": "invalid_declaration_name_metadata",
+                    }]
+                    continue
+                names = list(dict.fromkeys(name.strip() for name in requested_names))
+                if not module:
+                    evidence_view["declaration_name_locators"] = [{
+                        "name": name,
+                        "resolution_status": "pinned_source_not_current_or_not_lean",
+                    } for name in names]
+                    continue
+                available_names = {str(row.get("name", "")) for row in declarations}
+                evidence_view["declaration_name_locators"] = [{
+                    "name": name,
+                    "module": module,
+                    "source_path": path,
+                    "resolution_status": (
+                        "resolved" if name in available_names
+                        else "not_found_in_pinned_module"
+                    ),
+                } for name in names]
         declaration_names = {str(row.get("name", "")) for row in inventory_rows}
         locator_candidates = _claim_locator_candidates(dataset, declaration_names, lean_inventory)
-        detailed_names = sorted({row["declaration"] for row in locator_candidates})
+        explicit_declaration_names = {
+            locator["name"]
+            for item in per_result.values()
+            for evidence_view in item["evidence"]
+            for locator in evidence_view["declaration_name_locators"]
+            if locator.get("resolution_status") == "resolved"
+        }
+        claim_declaration_names = {row["declaration"] for row in locator_candidates}
+        detailed_names = sorted(explicit_declaration_names | claim_declaration_names)
         if detailed_names:
             detailed_rows, proof_detail_collector_sha, detailed_source_digest = (
                 lean_inventory.run_inventory(detailed_names, import_root)
@@ -1366,7 +1424,36 @@ def result_declaration_crosswalk_view(dataset: dict[str, Any],
                     declaration["source_path"] = lean_inventory.module_source_path(
                         declaration.get("module")
                     )
-                    declaration["proof_details_status"] = "collected_for_exact_claim_locator"
+                    declaration["proof_details_status"] = (
+                        "collected_for_explicit_declaration_locator"
+                        if name in explicit_declaration_names
+                        else "collected_for_exact_claim_locator"
+                    )
+            for item in per_result.values():
+                for evidence_view in item["evidence"]:
+                    for locator in evidence_view["declaration_name_locators"]:
+                        if locator.get("resolution_status") != "resolved":
+                            continue
+                        declaration = detailed_by_name.get(locator["name"])
+                        if declaration is None:
+                            locator["resolution_status"] = (
+                                "not_found_in_elaborated_environment"
+                            )
+                        elif declaration.get("module") != locator.get("module"):
+                            locator["resolution_status"] = "declaration_owner_module_mismatch"
+                        else:
+                            source_path = lean_inventory.module_source_path(
+                                declaration.get("module")
+                            )
+                            if source_path != locator.get("source_path"):
+                                locator["resolution_status"] = (
+                                    "declaration_owner_source_path_mismatch"
+                                )
+                            else:
+                                locator["compiled_declaration"] = {
+                                    **declaration,
+                                    "source_path": source_path,
+                                }
 
     detailed_rows = []
     summary_rows = []
@@ -1416,6 +1503,28 @@ def result_declaration_crosswalk_view(dataset: dict[str, Any],
             for app in dataset["assembly"].get("applications", [])
             if app.get("result") == key
         ]
+        explicit_locators = [
+            {
+                "source": {
+                    "ref": evidence_view["pin"].get("ref"),
+                    "path": evidence_view["pin"].get("path"),
+                    "sha256": evidence_view["pin"].get("expected_sha256"),
+                },
+                **locator,
+            }
+            for evidence_view in evidence
+            for locator in evidence_view["declaration_name_locators"]
+        ]
+        explicit_statuses = [locator.get("resolution_status")
+                             for locator in explicit_locators]
+        if not explicit_locators:
+            explicit_locator_disposition = "not_recorded"
+        elif all(status == "resolved" for status in explicit_statuses):
+            explicit_locator_disposition = "all_resolved"
+        elif any(status == "resolved" for status in explicit_statuses):
+            explicit_locator_disposition = "partially_resolved"
+        else:
+            explicit_locator_disposition = "unresolved"
         summary_rows.append({
             "result_id": key,
             "owner": row.get("owner"),
@@ -1441,6 +1550,8 @@ def result_declaration_crosswalk_view(dataset: dict[str, Any],
                 len(declarations) if result_id is not None or all_current else None
             ),
             "declaration_disposition": disposition,
+            "explicit_declaration_locator_disposition": explicit_locator_disposition,
+            "explicit_declaration_locator_count": len(explicit_locators),
             "claim_locator_disposition": claim_locator_disposition,
             "semantic_relation_status": "unresolved",
             "declared_application_count": len(applications),
@@ -1465,10 +1576,12 @@ def result_declaration_crosswalk_view(dataset: dict[str, Any],
                 "evidence_crosswalks": evidence,
                 "source_locator_crosswalks": source_locators,
                 "compiled_declarations": declarations,
+                "explicit_declaration_locators": explicit_locators,
                 "claim_locator_candidates": claim_candidates,
                 "formal_support_candidates": list(unique_support.values()),
                 "declared_relations": relation_view(dataset, result_item),
                 "declaration_disposition": disposition,
+                "explicit_declaration_locator_disposition": explicit_locator_disposition,
                 "claim_locator_disposition": claim_locator_disposition,
                 "semantic_relation_status": "unresolved",
                 "acceptance_inferred": False,
@@ -1478,9 +1591,10 @@ def result_declaration_crosswalk_view(dataset: dict[str, Any],
                 "proof_detail_collector_sha256": proof_detail_collector_sha,
                 "interpretation": (
                     "Pinned source bytes, compiled declarations, exact claim-name locators, and "
-                    "formal-support module locators are displayed as separate evidence. Co-location "
-                    "and exact-name matches are candidates only. Declared application reviews remain "
-                    "separate; this view does not accept a result-to-declaration or result-to-claim link."
+                    "formal-support module locators are displayed as separate evidence. Explicit "
+                    "declaration names are checked against their pinned current module and elaborated "
+                    "environment, but do not establish semantic scope, an application edge, or review "
+                    "acceptance. Co-location and inferred exact-name matches remain candidates only."
                 ),
             })
 

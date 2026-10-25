@@ -139,6 +139,65 @@ inventory SHA-256
 `63d0b2f1627212726f588e8a18423aa3072b2b1e59700ee0c3b50b9e96748dbe`. The
 generic module SHA-256 is
 `5608710839870914c5ddc007f5efbe5331453a1e560ef43f311060774f24dfc8`.
+
+### Exact Lean declaration locators for `metric-provenance` (25 October 2026)
+
+The existing `metric-provenance` result combines two distinct source claims:
+the selected-action quotient coordinate in
+`source:77d3ab6059bd1a3ce48637b97b9f30aa8825fc5f:02_REGISTRY/research/MEMO_A4D_NONLINEAR_EINSTEIN_J2_BRIDGE.md#L16: A. The selected finite action already owns a nonlinear metric carrier`
+and the flat Einstein-detector tangent in
+`source:77d3ab6059bd1a3ce48637b97b9f30aa8825fc5f:02_REGISTRY/research/MEMO_A4D_NONLINEAR_EINSTEIN_J2_BRIDGE.md#L48: B. The #201 Einstein detector differentiates that genuine metric quotient`.
+Both immutable source pins verify; the section keys remain C0 candidates pending
+unit review. No exact `claims.csv` ID or declared application edge currently
+binds this result.
+
+The Lean evidence in the existing result now pins
+`03_FORMALIZATION/D0/Geometry/A4DSolderMetricCompletion.lean` at
+`4aff58affff315eae09572640166b90cb0e5bdde` (SHA-256
+`6234a6480aad6ca2a78caa3a64f59def4c50dc38beeb3c8ab1cc3df94c6db3cb`) and
+names two exact declarations. The rebuilt public `D0.All` inventory resolves
+both in that pinned module:
+
+- `D0.Geometry.coframeMetricReadout_realizes_symmetric` constructs a finite
+  coframe whose site readout equals any symmetric Role matrix `q`.
+- `D0.Geometry.solderMetric_realizes_symmetric_tangent` constructs that
+  coframe and proves the all-site finite path expansion, retaining its exact
+  quadratic remainder and the corresponding difference quotient.
+
+These declarations formalize the finite tangent calculation only. They do not
+prove that the selected star action chooses this quotient, identify its
+variation with the #201 Einstein detector, or close the global connection
+equations. The result's broader source-to-Lean relation therefore remains
+unresolved. The inventory records 173 declarations over the shared Gram API
+and its three consumers; this result's source module contributes 102. The
+selected declarations report `Classical.choice`, `Quot.sound`, and
+`propext`; full proof and type dependencies are retained in
+`sources/d0_proof_architecture_formalization_2026-10-24/finite_gram_tangent_inventory_2026-10-25.json`
+(snapshot `4aff58affff315eae09572640166b90cb0e5bdde`, Lean digest
+`6ff55724920a14097e3a4078050c6e8f1f2b15ba6e98aca48623d6691a6e7c40`,
+collector SHA-256
+`38cf062919c9e100b58cd8800f81f03ea03d26200fe3f9d414d0ed5de74150a7`,
+`worktree_dirty=true`, and inventory SHA-256
+`9deeb9580efce0a6fc93a07aba9b171ab07d586ce5f88a2ee60b6a73053cdd88`).
+
+`proof_architecture.py crosswalk` now checks explicit `declaration_names`
+against the pinned current module and stores the elaborated types, proof
+dependencies, and axiom footprint. Its regenerated all-result view records
+`all_resolved` for these two names while keeping the module-wide declaration
+set `ambiguous`, claim locator `unresolved`, semantic relation `unresolved`,
+and `acceptance_inferred=false`. It contains all 54 active results at snapshot
+`4aff58affff315eae09572640166b90cb0e5bdde` (`worktree_dirty=true`, Lean digest
+`6ff55724920a14097e3a4078050c6e8f1f2b15ba6e98aca48623d6691a6e7c40`,
+collector SHA-256
+`5e9074769ba45eb74e6ade808f9aaac82dd09454e14941d6aea6c7885051b0f1`, proof
+detail collector SHA-256
+`1899bd10c2928a66d4b961f5b4d12a884b6d721f30bcc187ffcfe02c0f07830a`). The
+refreshed crosswalk SHA-256 is
+`7a16ee71fefd69d3cd5cc8807c2a514acfa393f3b48a41c029d278c3b6d0c0df`.
+The 40 proof-architecture tests pass, and `gr_assembly.py check` remains valid
+with scientific promotion false. This is one source-keyed candidate
+reconciliation, not an accepted C0 package or coverage claim.
+
 ## Scientific boundary and reuse vertical
 
 This work does not select a physical implementation or close GR. Keep complete Book03/Cost-Info/source admission, same-execution clock/controller/work selection, physical metric descent/frame selection, original H+J+R, positive_gr, and raw216 open under their existing owners. Preserve #334; do not duplicate or retire its science. Conditional assumptions remain in theorem signatures. Connes reconstruction remains conditional when its needed object is a supplied field.
