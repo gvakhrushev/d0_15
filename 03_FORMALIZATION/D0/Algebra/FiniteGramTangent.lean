@@ -6,9 +6,9 @@ import Mathlib.Tactic
 # Generic finite Gram-matrix algebra
 
 This module owns only matrix algebra: Gram symmetry, isometry invariance, the
-exact expansion around a symmetric involutive frame, and the explicit
-half-matrix preimage of every symmetric direction. It makes no geometric or
-physical selection claim.
+exact quadratic expansion at an arbitrary finite frame and its useful
+specializations, and the explicit half-matrix preimage of every symmetric
+direction. It makes no geometric or physical selection claim.
 -/
 
 namespace D0.Algebra
@@ -186,33 +186,42 @@ theorem symmetricMatrix_half {ι : Type*}
   simp [Matrix.add_apply, Matrix.transpose_apply, Matrix.smul_apply, hsym]
   ring
 
-/-- The exact quadratic expansion of the finite Gram map at a symmetric
-involutive frame `η`. The linear metric direction is `C + Cᵀ`; the full
-quadratic remainder is retained. -/
-theorem finiteGram_smul_expand {ι : Type*} [Fintype ι] [DecidableEq ι]
-    (η C : Matrix ι ι ℝ) (t : ℝ)
-    (hη_transpose : η.transpose = η) (hη_sq : η * η = 1) :
-    finiteGram η (η + t • C) =
-      η + t • (C + C.transpose) +
-        t^2 • (C * η * C.transpose) := by
-  unfold finiteGram
-  rw [Matrix.transpose_add, Matrix.transpose_smul, hη_transpose]
-  simp [Matrix.add_mul, Matrix.mul_add, Matrix.mul_assoc, hη_sq, smul_add,
-    smul_smul, pow_two]
-  abel
-
-/-- Exact expansion of a finite Gram matrix around the identity coframe.
-Unlike `finiteGram_smul_expand`, this keeps an arbitrary first-order frame
-perturbation `C`; its linear term is the full `C η + η Cᵀ` source convention. -/
-theorem finiteGram_one_smul_expand {ι : Type*} [Fintype ι] [DecidableEq ι]
-    (η C : Matrix ι ι ℝ) (t : ℝ) :
-    finiteGram η (1 + t • C) =
-      η + t • (C * η + η * C.transpose) +
+/-- Exact quadratic expansion of the finite Gram map around any base frame.
+The first-order source is the full two-sided variation and the quadratic
+remainder is retained. -/
+theorem finiteGram_add_smul_expand {ι : Type*} [Fintype ι]
+    [DecidableEq ι] (η Θ C : Matrix ι ι ℝ) (t : ℝ) :
+    finiteGram η (Θ + t • C) =
+      finiteGram η Θ +
+        t • (C * η * Θ.transpose + Θ * η * C.transpose) +
         t^2 • (C * η * C.transpose) := by
   unfold finiteGram
   rw [Matrix.transpose_add, Matrix.transpose_smul]
   simp [Matrix.add_mul, Matrix.mul_add, Matrix.mul_assoc, smul_add,
     smul_smul, pow_two]
   abel
+
+/-- The exact quadratic expansion at a symmetric involutive frame `η`. The
+linear metric direction is `C + Cᵀ`; this compatibility theorem specializes
+the arbitrary-frame expansion above. -/
+theorem finiteGram_smul_expand {ι : Type*} [Fintype ι] [DecidableEq ι]
+    (η C : Matrix ι ι ℝ) (t : ℝ)
+    (hη_transpose : η.transpose = η) (hη_sq : η * η = 1) :
+    finiteGram η (η + t • C) =
+      η + t • (C + C.transpose) +
+        t^2 • (C * η * C.transpose) := by
+  simpa [finiteGram, Matrix.mul_assoc, hη_transpose, hη_sq] using
+    finiteGram_add_smul_expand η η C t
+
+/-- Exact expansion around the identity coframe. This compatibility theorem
+specializes `finiteGram_add_smul_expand` and keeps the source convention
+`C η + η Cᵀ`. -/
+theorem finiteGram_one_smul_expand {ι : Type*} [Fintype ι] [DecidableEq ι]
+    (η C : Matrix ι ι ℝ) (t : ℝ) :
+    finiteGram η (1 + t • C) =
+      η + t • (C * η + η * C.transpose) +
+        t^2 • (C * η * C.transpose) := by
+  simpa [finiteGram, Matrix.mul_assoc] using
+    finiteGram_add_smul_expand η 1 C t
 
 end D0.Algebra
