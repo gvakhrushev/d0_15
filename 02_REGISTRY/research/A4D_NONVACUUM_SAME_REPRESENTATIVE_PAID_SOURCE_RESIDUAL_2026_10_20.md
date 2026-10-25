@@ -6826,6 +6826,183 @@ No physical selector, arbitrary matrix tangent, reset, new action or
 GR_closed/raw216 promotion is inferred from this positive operator result.
 
 
+## 7ab. A literal native return adapter and its independent correlation source
+
+**25 October native-operation substitution.** The moving RETURN operation
+of the original J2 query has a short exact implementation in the already
+declared G/CX/SourceI profile. No moving target gate, fixed-table compiler,
+fair factory or herald is needed for the processor. The new execution
+reproduces the full rank2 returned matrix and both complementary bands.
+It also makes the remaining programme-law problem concrete: an exact
+native edit preserves both marginal inputs and changes the complete
+Book price. Field-to-programme admission and joint stationarity therefore
+remain separate from this implemented return map.
+
+The [proof](sources/d0_native_bilinear_return_echo_2026-10-25/PROOF.md),
+[literal constructor](sources/d0_native_bilinear_return_echo_2026-10-25/native_echo.py)
+and [all-column checker](sources/d0_native_bilinear_return_echo_2026-10-25/check_native_echo.py)
+consume the original returned matrix of7aa and the owned all-column
+SourceI inverse. The factorization/conjugacy method is reused from7j/m;
+the new application is the ORIGINAL two-band matrix return, rather than
+a scalar engineered report or only a reduced DATA channel.
+
+### The complete fixed processor and its actual raw word
+
+Use fresh programme bits e=0,B=1, unknown DATA d=2, and arbitrary active
+source-spin(3,4). The source port is e. Let X swap the DATA basis and
+put
+
+\[
+ V=Z_eZ_BCX(e,d)\otimes I_{\rm spin},\qquad
+ (V_{00},V_{01},V_{10},V_{11})=(I,-I,-X,X).            (255)
+\]
+
+Two SourceI operations give Z_e on ALL spin inputs. To get Z_B, route
+the WHOLE programme bit through the source port using a three-CX SWAP,
+apply two SourceI, and undo that SWAP. Then execute CX(e,d). Thus the
+fixed V has EXACTLY11 raw stages:4SourceI and7CX. It restores spin
+on all32 columns; all intermediate source interactions stay in the clock.
+No operation acts on genuine oldRIGHT, even as control.
+
+For product programme preparation A, with diagonal means E,b and no
+initial correlation with DATA, execute A;V;the ACTUAL raw inverse of A.
+The blank-programme isometry i retains DATA and all four spin inputs,
+so its rank is8, full fibre dimension32. The exact return is
+
+\[
+ C=i^\dagger A^\dagger VAi
+     =(1-2b)[(1-E)I-EX]\otimes I_4,
+ \quad F=I_8-C^\dagger C=F_{\rm original,2}\otimes I_4,
+ \quad J=4j(E,b).                                     (256)
+\]
+
+The factor4 is the real protected input rank, counted once. Programme
+leakage is in the genuine complement and is not postselected away.
+This reproduces the original RETURN operation on arbitrary DATA and
+reference-entangled input; it does not reproduce its full8D logical
+query or every subsequent test on failed/work branches.
+
+There are actual finite codes, not just matrix values. Take
+`A=G_e^kE;G_B^kB`, giving E=sin²(kE theta), b=sin²(kB theta),
+sin(theta)=p. The owned raw inverse uses5 stages per port-G and11 per
+off-port G, with its actual SWAP route. The completed body counts are
+`G=2(kE+kB)`, `SourceI=4(kE+kB+1)`, `CX=7+6kB`, hence
+`N_body=6kE+12kB+11`. The four pairs(1,1),(2,1),(1,2),(2,2) have
+lengths29,35,41,47. Real cancelling CX pairs pad all four to N51.
+There is no independently supplied programme state whose inverse is
+assumed available: these exact native words prepare it and reverse it.
+
+The fixed V is a symmetric involution, with eigenvalues+1 and−1 each
+multiplicity16. Every WHOLE echo is conjugate to it. Therefore the
+complete paired primitive-clock heat, including every programme,
+source-spin, unused column and paid stage, is exactly
+
+\[
+ Z_N=32[K_N(0)+K_N(\pi)],\quad
+ K_N(t)=\sum_{k\bmod N}e^{-\beta[1-\cos((2\pi k+t)/N)]},
+ \qquad\mathcal B=\beta^{-1}\log Z_N+4j(E,b).         (257)
+\]
+
+All64N modes occur, or3264 at N51. The heat SOURCE is zero at this
+actual common clock. The actual price changes when the clock/rank or
+middle changes; neither is treated as an independent zero-source row.
+Selective source-I availability keeps the existing apparatus-profile
+premise; syntactic membership does not prove that physical availability.
+
+### Exact original source, and the independent programme equation
+
+At kE=kB=1 both programmes are ordinary G from genuine blanks and
+E=b=p². The original two effect bands are exactly1−p12 and1−p6.
+On the explicitly stated OPERATOR comparison
+`E=p²(1+x)`, `b=(p-p²y)²`, the actual returned matrix gives
+
+\[
+ D\mathcal B|_\Sigma=4Dj=4(a_0Dx+b_0Dy),             (258)
+\]
+
+with the original a0,b0 and lambda_minus of7aa. Conditional on the
+original physical field-to-product-programme map, the same inverse-PF
+and all40+2 source theorem therefore applies with its unchanged ratio.
+No thermal correction or fitted matter coefficient is inserted.
+The continuous comparison is not an exact continuous finite-word
+selector: native values and native finite edits are checked separately.
+
+Independent programme controls do NOT become stationary. At the same
+point both J_E and J_b are positive. The original all42 field-source
+cancellation occurs only after their genuine field pullback; it cannot
+annul a freely varied controller bias. For a real or complex pure
+programme with probabilities p_w, let C=sum_w p_w V_w and
+`Q=(1-zeta)I+zeta C†C`. Its actual preparation adjoints are
+`o_w=-8zeta ReTr(Q^-1 C†V_w)`. At the product G programme every
+p_w is positive, C has positive eigenvalues p6,p³, and o00<0 while
+o01=−o00>0. Thus the programme's normalized pure-state covector is
+nonzero even in real amplitude directions. Generated programme states
+instead need their true causal constraints and terminal adjoints.
+
+There are also finite native controls. At common N51, changing(1,1)
+to(2,1) lowers J exactly. Nearer E-only native codes kE=67,1,1161,
+kB=1 have E67<E1<E1161 in(.37,.4). Their actual body lengths425,29,
+6989 pad to common N6993; exact band monotonicity gives B67<B1<B1161.
+Long-word verification uses literal inventories and exact Q(p) arithmetic,
+not an unrolled large32-column or6993-stage clock simulation. Whether
+these code edits preserve a REQUIRED field/query task is a separate
+admission statement; membership alone is not that statement.
+
+### A native same-marginal correlation edit changes the full Book price
+
+Independence in(256) is an actual hypothesis. V is programme-diagonal,
+but a general joint law with t=p11−Eb has corner
+
+\[
+ C(E,b,t)=\{(1-2b)[(1-E)I-EX]+2t(I+X)\}\otimes I_4.   (259)
+\]
+
+The product preparer gives t=0. The equally literal native preparer
+`A_corr=G_e;CX(e,B)` gives the pure state
+`sqrt(p)|00>+p|11>`, with the SAME E=b=p² but t=p³. Its complete
+echo has19 raw stages(2G,9CX,8SourceI);32 cancelling CX pad it to
+the SAME N51 and input cut. The exact return, bands and price gap are
+
+\[
+ C_{\rm corr}=(pI+p^2X)\otimes I_4,\quad
+ \operatorname{spec}F_{\rm corr}=\{0,1-p^6\}\text{ each four times},
+\]
+\[
+ \mathcal B_{\rm product}-\mathcal B_{\rm corr}
+       =-4\log[1-\zeta(1-p^{12})]>0.                 (260)
+\]
+
+The WHOLE heat is identical. Numerically this strict configured gap is
+3.802852073155...*10^-6; its sign follows from the exact formula.
+The local fixed-marginal correlation source is already nonzero:
+
+\[
+ \partial_t\mathcal B|_{E=b=p^2,t=0}
+          =-32\zeta p^6/(1-\zeta+\zeta p^{12})\ne0.  (261)
+\]
+
+This is a concrete native obstruction to identifying the complete
+programme by its two marginal means. The two preparations have different
+joint/future laws and different return effects, so(260) does not claim
+an admissible edit under an independently established product-law task.
+That law must be generated or required by the real field/control map,
+or the extra correlation source must remain in the physical equations.
+
+**Precise substitution.** A literal all-column native processor and its
+paid closing echo now supply the original two-band return; no moving
+query-return oracle is left in this adapter. Its missing physical arrow
+is the actual source of the two joint programme laws from the same
+coframe/link/CAR record and its permitted variations. A full scene/AF
+extension keeps every true cut rank, spectator and predicate; local
+rank8 is not the global scene selector. Independent controller/cut/
+clock/birth equations and the complete future-test map remain open.
+The exact new return map does not by itself prove full physical GR.
+
+Reproduce only this changed operation from repository root:
+
+    python3 02_REGISTRY/research/sources/d0_native_bilinear_return_echo_2026-10-25/check_native_echo.py --output /tmp/native_bilinear_return_echo.json
+
+
 ## 8. Reproduction
 
 Run from this directory:
