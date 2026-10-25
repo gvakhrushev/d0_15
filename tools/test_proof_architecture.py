@@ -1238,6 +1238,10 @@ class ProofArchitectureTests(unittest.TestCase):
                             for query in case["queries"]))
         self.assertTrue(any("weightedDiracLinear_identity_eq_hodgeCarDirac" in query
                             for query in case["queries"]))
+        self.assertTrue(any("hodgeCarDiracMatrix_symmetric" in query
+                            for query in case["queries"]))
+        self.assertTrue(any("weightedDiracMatrix_symmetric_of_finiteHermitianAdjoint_eq_self"
+                            in query for query in case["queries"]))
         self.assertTrue(any("spatialNyquist_weightedDirac_matrix_block" in query
                             for query in case["queries"]))
 

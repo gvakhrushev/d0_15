@@ -46,6 +46,25 @@ theorem weightedDiracMatrix_mulVec (N : ℕ)
     Matrix.mulVec (weightedDiracMatrix N W) ψ = weightedDirac N W ψ := by
   rw [weightedDiracMatrix, LinearMap.toMatrix'_mulVec, weightedDiracLinear_apply]
 
+/-- A self-adjoint finite real linear operator has a symmetric coordinate
+matrix in the actual `ArchiveCochainBasis`. -/
+theorem weightedDiracMatrix_symmetric_of_finiteHermitianAdjoint_eq_self (N : ℕ)
+    (W : ArchiveCochain N ≃ₗ[ℝ] ArchiveCochain N)
+    (hself : D0.Algebra.finiteHermitianAdjoint (weightedDiracLinear N W) =
+      weightedDiracLinear N W) :
+    (weightedDiracMatrix N W).transpose = weightedDiracMatrix N W := by
+  classical
+  ext i j
+  change (LinearMap.toMatrix' (weightedDiracLinear N W)).transpose i j =
+    LinearMap.toMatrix' (weightedDiracLinear N W) i j
+  rw [Matrix.transpose_apply, LinearMap.toMatrix'_apply,
+    LinearMap.toMatrix'_apply]
+  have hcolumn := congrArg
+    (fun T : ArchiveCochain N →ₗ[ℝ] ArchiveCochain N => T (Pi.single i 1)) hself
+  have hentry := congrFun hcolumn j
+  simpa [D0.Algebra.finiteHermitianAdjoint, star_trivial,
+    weightedDiracLinear, Pi.single_apply] using hentry.symm
+
 /-- At the identity transport, the generic weighted operator is the
 repository's existing real Hodge/CAR operator as a typed linear map. -/
 theorem weightedCodiffLinear_identity_eq_hodgeCodifferential (N : ℕ) :
@@ -78,11 +97,22 @@ theorem hodgeCarDiracMatrix_mulVec (N : ℕ) (ψ : ArchiveCochain N) :
   rw [weightedDiracMatrix_mulVec, ← weightedDiracLinear_apply,
     weightedDiracLinear_identity_eq_hodgeCarDirac, hodgeCarDiracₗ_apply]
 
+/-- The existing self-adjointness theorem for the counting Hodge/CAR
+operator transfers to its matrix in the unchanged finite cochain basis. -/
+theorem hodgeCarDiracMatrix_symmetric (N : ℕ) :
+    (weightedDiracMatrix N (LinearEquiv.refl ℝ (ArchiveCochain N))).transpose =
+      weightedDiracMatrix N (LinearEquiv.refl ℝ (ArchiveCochain N)) := by
+  apply weightedDiracMatrix_symmetric_of_finiteHermitianAdjoint_eq_self
+  rw [weightedDiracLinear_identity_eq_hodgeCarDirac]
+  exact hodgeCarDirac_finiteHermitianAdjoint_eq_self N
+
 #print axioms weightedCodiffLinear_apply
 #print axioms weightedDiracLinear_apply
 #print axioms weightedDiracMatrix_mulVec
+#print axioms weightedDiracMatrix_symmetric_of_finiteHermitianAdjoint_eq_self
 #print axioms weightedCodiffLinear_identity_eq_hodgeCodifferential
 #print axioms weightedDiracLinear_identity_eq_hodgeCarDirac
 #print axioms hodgeCarDiracMatrix_mulVec
+#print axioms hodgeCarDiracMatrix_symmetric
 end
 end D0.Research.NativeWeightedDiracLinearOperator

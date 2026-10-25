@@ -4336,3 +4336,55 @@ The checkpoint consumes an existing adjoint identity and adds one concrete
 finite-carrier application; it does not freeze C0 or independently accept
 semantic mappings. Full C0 dispositions, independent C0 acceptance, broader
 library migration, and the remaining GR/physical premises stay open.
+
+### Self-adjoint operator to symmetric matrix application (25 October 2026)
+
+The typed matrix API now exposes the finite-coordinate consequence of the
+existing adjoint interface. `weightedDiracMatrix_symmetric_of_finiteHermitianAdjoint_eq_self`
+proves that whenever the supplied weighted Dirac linear map equals its
+`finiteHermitianAdjoint`, its matrix in the same `ArchiveCochainBasis` is
+symmetric. The proof reads an entry from the adjoint identity on coordinate
+vectors, retaining the real finite-carrier convention explicitly. The
+concrete `hodgeCarDiracMatrix_symmetric` application sets the transport to the
+identity and consumes the existing
+`hodgeCarDirac_finiteHermitianAdjoint_eq_self` theorem. This is a matrix
+representation of the registered counting Hodge/CAR operator; it does not
+assert positivity of a weighted form, select a geometric Hodge profile, or
+identify the distinct nearest-neighbour hopping `carDirac` with the Hodge
+difference operator.
+
+The narrow Lean target
+`D0.Research.NativeWeightedDiracLinearOperator` passed (2,998 Lake jobs),
+including the unchanged function-action and new matrix-symmetry applications.
+The new declarations have only `Classical.choice`, `Quot.sound`, and
+`propext`. Paired enumeration of the generic API and L=4 consumer on dirty
+snapshot `d90cb89fa5c615c21db76a1cc12ba0571a4f3fb2` compiled public import
+`D0.All` with Lean 4.30.0 and source digest
+`2de2f2ab07d7a828bf5a19176904e72e6bf5457615de3e01da4d2a76edb8c14c`. It
+contains 94 declarations (80 theorems, 14 definitions), adding three names
+relative to the prior 91-row paired inventory and removing none. The additions
+are the two matrix-symmetry theorems and generated equation theorem
+`weightedDiracLinear.eq_1`. Collector SHA-256 remains
+`424ca2786503d04e4f7bbf9e02cc722fea312ac7a3eb5dc7340a38a077a42478`; paired
+inventory SHA-256 is
+`a755142a1d543389b2e2198bdf1aac8b60ed00620a9e5898394eca2d625554d2`.
+
+The all-claims resolution and 54-result assembly crosswalk were regenerated
+against that same source digest and snapshot. Name-resolution counts remain
+889 claim rows, 2,751 mappings, 8,458 references and 8,323 unique candidates;
+2,512 names resolve. These remain locator counts, not semantic coverage.
+Current JSON SHA-256 values are
+`f78a8b7cebaa2189bda821588f5541c8ec49a71d355ec81ffdc8e35347c90a42` for the
+claim resolution and
+`edfc8d3ee06ed8e575fb999a81f8dd2c9bc028aec4a6e56d9bf3c28ab27264f9` for the
+assembly crosswalk. C0 is still unfrozen and these generated views do not
+independently accept semantic edges or close a physical premise.
+
+The updated cold-start replay found all required sources in 19/19 cases;
+its 20-case exact-source versus unrelated-prose impact control passed. For
+the new matrix-symmetry query, the primary memo and then the Lean API module
+ranked as direct content, followed by the paired inventory. The focused
+proof-architecture suite passed 41/41. Runner SHA-256 is
+`e68106a1d752bc67e73ef6caf738abe603ec08b1fce8e511d99e12cfda1c70bc` and test
+SHA-256 is
+`7aae6a5920cb0c1ffa60832e65ea5f1b50fef1aecd82d99ed38fe5597392be76`.
