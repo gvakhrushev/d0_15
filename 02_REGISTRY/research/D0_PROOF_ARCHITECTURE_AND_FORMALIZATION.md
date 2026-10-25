@@ -3855,3 +3855,53 @@ rerun the build. The reviewed Lean source hashes are
 `a33d2395336ba949244f0725a1b08bef34f0602e4865be2fc47e7a2a095aff2e` for
 `ArchiveWeightedHodgeDirac.lean`. Acceptance is limited to this conditional
 algebraic slice; the geometric profile and canonical C0 claim remain open.
+
+### Public D0 import of the native weighted-Dirac capsule (25 October 2026)
+
+The existing exact research capsule
+`02_REGISTRY/research/certificates/a4d_native_weighted_dirac_boundary.lean`
+is now reachable through public import `D0.All` without copying or editing
+its pinned proof source. `D0.Research.NativeWeightedDiracBoundary.lean` is a
+relative symlink to that certificate; the existing `formal_support.csv`
+authority records the support locator, and the generated `D0/All.lean`
+imports it. The capsule remains byte-identical to its source pin at the
+starting head (`git blob 166922e1057cc20f495393e9c53947b52912e3ce`,
+SHA-256 `211f43dc97b9c809156bcb87939596757a7143b3e393d4dc4f3215c18d14cff6`).
+An independent review accepted the relative target, public import, and
+support registration for the repository's Ubuntu CI; symlink support is
+required when checking out this module.
+
+The focused `D0.Research.NativeWeightedDiracBoundary` build passed (2,997
+Lake jobs). The declaration collector then built the selected public
+`D0.All` import and extracted 47 declarations owned by the module: 38 have
+source ranges and 9 are generated auxiliaries without ranges. All 47 rows
+retain elaborated types, binder/conclusion data, type and proof dependencies,
+axiom closure, source path, and toolchain. The 34 propositions explicitly
+audited by the capsule and every other collected declaration have only the
+recorded `Classical.choice`, `Quot.sound`, and `propext` footprint; one
+generated auxiliary uses only `propext`. The exact inventory is
+`sources/d0_proof_architecture_formalization_2026-10-24/native_weighted_dirac_boundary_inventory_2026-10-25.json`
+(SHA-256 `25a98f10bf0d8abc1e9d835c8224a5fa0fdf8cebe3f7698ff4de828ab3bfabdb`,
+Lean-source digest
+`33e3042c75f5b7f94140dd3eb7cf43735ce90477d3142d0cd4b8865531bf86ef`,
+collector SHA-256
+`25f0569099c3e7421ca0ef146e23890b66095c5e43b96a1b007684af9608b068`,
+snapshot `2b605d0592cce7a5518b704fe1da16328f049694`,
+`worktree_dirty=true`, Lean `leanprover/lean4:v4.30.0`).
+
+The mirror retains the capsule's two explicit `maxHeartbeats 0` settings.
+They are recorded as exact path/line exceptions in the existing formalization
+debt baseline because changing them would change the source bytes pinned by
+the research receipts; these settings are proof-resource controls, not axioms
+or physical assumptions. No claims or claim statuses changed. The result
+formalizes a conditional finite operator family and the stated finite
+obstructions; it does not establish selection of a physical profile, an
+action/source, or GR. The canonical weighted-Hodge source locator remains
+unresolved, and C0 freeze/independent acceptance remains open.
+
+Validation on this slice: narrow module build and public-import inventory
+passed; `validate_repo.py` (923 modules, 0 warnings), work/protocol validators,
+gravity assembly check/render, generated work/Lean views, claim-map coverage
+(Python 3.12.14), and formalization-debt non-growth (5 findings, all
+path-specific baseline) passed. The generated import preserves `All.lean`'s
+existing CRLF convention; the EOL-aware diff check passed.

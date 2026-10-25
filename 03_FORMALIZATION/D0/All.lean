@@ -639,6 +639,7 @@ import D0.Research.GoldenCurvatureKernel
 import D0.Research.GoldenCylinderOneStepBridge
 import D0.Research.MemoryTangentSpan
 import D0.Research.NativeHistoryActionResponse
+import D0.Research.NativeWeightedDiracBoundary
 import D0.Research.PrimitiveJetComposition
 import D0.Research.SchurStationaryTransfer
 import D0.Research.SourceReflectionKernel
