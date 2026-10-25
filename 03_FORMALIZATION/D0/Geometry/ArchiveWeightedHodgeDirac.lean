@@ -152,6 +152,19 @@ theorem cubicalWeightedHodgeDirac_unit_profile_hermitian_self_adjoint
   exact D0.Algebra.finiteHermitianHodgeDirac_pairing_self_adjoint
     (cubicalCoboundaryₗ N) ψ φ
 
+/-- The unit-profile cubical Hodge square is the Hermitian anticommutator of
+the registered nilpotent coboundary and its standard adjoint. -/
+theorem cubicalWeightedHodgeDirac_unit_profile_square (N : ℕ) :
+    (cubicalWeightedHodgeDiracₗ N (fun _ => (1 : ℝ))).comp
+        (cubicalWeightedHodgeDiracₗ N (fun _ => (1 : ℝ))) =
+      (cubicalCoboundaryₗ N).comp
+          (D0.Algebra.finiteHermitianAdjoint (cubicalCoboundaryₗ N)) +
+        (D0.Algebra.finiteHermitianAdjoint (cubicalCoboundaryₗ N)).comp
+          (cubicalCoboundaryₗ N) := by
+  rw [cubicalWeightedHodgeDirac_unit_profile_eq_finiteHermitianHodgeDirac]
+  exact D0.Algebra.finiteHermitianHodgeDirac_square
+    (cubicalCoboundaryₗ N) (cubicalCoboundaryₗ_comp_self_eq_zero N)
+
 /-- The constructed weighted cubical Hodge-Dirac is self-adjoint for its
 supplied diagonal bilinear pairing. Nonzero weights are the only required
 algebraic condition. -/

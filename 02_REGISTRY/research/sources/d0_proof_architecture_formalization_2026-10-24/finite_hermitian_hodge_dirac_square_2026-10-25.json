@@ -1,0 +1,218 @@
+{
+  "schema": "d0-lean-declaration-inventory-v1",
+  "snapshot_commit": "20c72a70de807b44ef804595d0ef1566c6f624b9",
+  "worktree_dirty": true,
+  "claim_registry_sha256": null,
+  "lean_source_digest": "f0782da31588c76bc1aafdf95f45191dfd8757e0f666eac2c61f4997a0d7e501",
+  "collector_sha256": "92052e1ef0adf33cc5e5d5d9789df4bacc8bde192f4774d85d932fb90881b1c1",
+  "toolchain": "leanprover/lean4:v4.30.0",
+  "public_import_root": "D0.Algebra.FiniteHermitianAdjoint",
+  "resolution_only": false,
+  "request": {
+    "full_name": "D0.Algebra.finiteHermitianHodgeDirac_square"
+  },
+  "declarations": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "ι",
+          "type": "Type u_1"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "K",
+          "type": "Type u_2"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Algebra.FiniteHermitianAdjoint.879190377._hygCtx._hyg.4",
+          "type": "Fintype ι"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Algebra.FiniteHermitianAdjoint.879190377._hygCtx._hyg.7",
+          "type": "(a b : ι) → Decidable (a = b)"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Algebra.FiniteHermitianAdjoint.879190377._hygCtx._hyg.10",
+          "type": "Field K"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Algebra.FiniteHermitianAdjoint.879190377._hygCtx._hyg.13",
+          "type": "StarRing K"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "A",
+          "type": "(ι → K) →ₗ[K] ι → K"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hA",
+          "type": "A ∘ₗ A = 0"
+        }
+      ],
+      "conclusion_whnf": "D0.Algebra.finiteHermitianHodgeDirac A ∘ₗ D0.Algebra.finiteHermitianHodgeDirac A =\n  A ∘ₗ D0.Algebra.finiteHermitianAdjoint A + D0.Algebra.finiteHermitianAdjoint A ∘ₗ A",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 6,
+            "line": 236
+          },
+          "start": {
+            "column": 0,
+            "line": 213
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 40,
+            "line": 215
+          },
+          "start": {
+            "column": 8,
+            "line": 215
+          }
+        }
+      },
+      "elaborated_type": "∀ {ι : Type u_1} {K : Type u_2} [inst : Fintype ι] [inst_1 : DecidableEq ι] [inst_2 : Field K] [inst_3 : StarRing K]\n  (A : (ι → K) →ₗ[K] ι → K),\n  A ∘ₗ A = 0 →\n    D0.Algebra.finiteHermitianHodgeDirac A ∘ₗ D0.Algebra.finiteHermitianHodgeDirac A =\n      A ∘ₗ D0.Algebra.finiteHermitianAdjoint A + D0.Algebra.finiteHermitianAdjoint A ∘ₗ A",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Algebra.FiniteHermitianAdjoint",
+      "name": "D0.Algebra.finiteHermitianHodgeDirac_square",
+      "proof_dependencies": [
+        "AddCommGroup.toAddCommMonoid",
+        "AddCommGroup.toAddGroup",
+        "AddCommMagma.toAdd",
+        "AddCommMonoid.toAddCommSemigroup",
+        "AddCommSemigroup.toAddCommMagma",
+        "AddGroup.toSubNegMonoid",
+        "AddGroupWithOne.toAddMonoidWithOne",
+        "AddMonoid.toAddZeroClass",
+        "AddMonoidWithOne.toAddMonoid",
+        "CommRing.toNonUnitalCommRing",
+        "D0.Algebra.finiteHermitianAdjoint",
+        "D0.Algebra.finiteHermitianAdjoint_comp_self_eq_zero",
+        "D0.Algebra.finiteHermitianHodgeDirac",
+        "DFunLike.coe",
+        "DecidableEq",
+        "Distrib.toAdd",
+        "DivisionRing.toRing",
+        "DivisionSemiring.toSemiring",
+        "Eq",
+        "Eq.mpr",
+        "Eq.refl",
+        "Eq.trans",
+        "Field",
+        "Field.toCommRing",
+        "Field.toDivisionRing",
+        "Field.toSemifield",
+        "Fintype",
+        "HAdd.hAdd",
+        "HSMul.hSMul",
+        "Int",
+        "LinearMap",
+        "LinearMap.comp",
+        "LinearMap.ext",
+        "LinearMap.instAdd",
+        "LinearMap.instFunLike",
+        "LinearMap.instZero",
+        "LinearMap.semilinearMapClass",
+        "Mathlib.Tactic.Abel.subst_into_addg",
+        "Mathlib.Tactic.Abel.term_atomg",
+        "Mathlib.Tactic.Abel.termg",
+        "Mathlib.Tactic.Abel.termg_eq",
+        "MulZeroClass.toZero",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "OfNat.ofNat",
+        "Pi.Function.module",
+        "Pi.addCommGroup",
+        "Pi.addCommMonoid",
+        "Pi.addZeroClass",
+        "Pi.instAdd",
+        "Pi.instZero",
+        "Ring.toAddCommGroup",
+        "Ring.toAddGroupWithOne",
+        "RingHom.id",
+        "RingHomCompTriple.ids",
+        "Semifield.toDivisionSemiring",
+        "SemilinearMapClass.toAddHomClass",
+        "Semiring.toModule",
+        "Semiring.toNonAssocSemiring",
+        "StarRing",
+        "SubNegMonoid.toZSMul",
+        "True",
+        "Zero.toOfNat0",
+        "add_zero",
+        "congr",
+        "congrArg",
+        "congrFun'",
+        "eq_self",
+        "funext",
+        "id",
+        "instDistribOfSemiring",
+        "instHAdd",
+        "instHSMul",
+        "instMulZeroClassOfSemiring",
+        "instOfNat",
+        "map_add",
+        "of_eq_true",
+        "one_zsmul",
+        "zero_add"
+      ],
+      "type_dependencies": [
+        "CommRing.toNonUnitalCommRing",
+        "D0.Algebra.finiteHermitianAdjoint",
+        "D0.Algebra.finiteHermitianHodgeDirac",
+        "DecidableEq",
+        "DivisionSemiring.toSemiring",
+        "Eq",
+        "Field",
+        "Field.toCommRing",
+        "Field.toSemifield",
+        "Fintype",
+        "HAdd.hAdd",
+        "LinearMap",
+        "LinearMap.comp",
+        "LinearMap.instAdd",
+        "LinearMap.instZero",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "OfNat.ofNat",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "RingHom.id",
+        "RingHomCompTriple.ids",
+        "Semifield.toDivisionSemiring",
+        "Semiring.toModule",
+        "Semiring.toNonAssocSemiring",
+        "StarRing",
+        "Zero.toOfNat0",
+        "instHAdd"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Algebra/FiniteHermitianAdjoint.lean"
+    }
+  ]
+}

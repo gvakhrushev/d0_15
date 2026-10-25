@@ -175,6 +175,66 @@ theorem finiteHermitianAdjoint_unique
   have hPair := hAdj.symm.trans (hB (Pi.single i (1 : K)) y)
   simpa only [finiteHermitianPairing_single_left] using hPair
 
+/-- The Hermitian adjoint reverses composition order. -/
+theorem finiteHermitianAdjoint_comp
+    (A B : (ι → K) →ₗ[K] (ι → K)) :
+    finiteHermitianAdjoint (A.comp B) =
+      (finiteHermitianAdjoint B).comp (finiteHermitianAdjoint A) := by
+  apply finiteHermitianAdjoint_unique (A.comp B)
+  intro x y
+  change finiteHermitianPairing (A (B x)) y =
+    finiteHermitianPairing x
+      (finiteHermitianAdjoint B (finiteHermitianAdjoint A y))
+  calc
+    finiteHermitianPairing (A (B x)) y =
+        finiteHermitianPairing (B x) (finiteHermitianAdjoint A y) :=
+      finiteHermitianPairing_adjoint A (B x) y
+    _ = finiteHermitianPairing x
+        (finiteHermitianAdjoint B (finiteHermitianAdjoint A y)) :=
+      finiteHermitianPairing_adjoint B x (finiteHermitianAdjoint A y)
+
+/-- The Hermitian adjoint of the zero operator is zero. -/
+theorem finiteHermitianAdjoint_zero :
+    finiteHermitianAdjoint (0 : (ι → K) →ₗ[K] (ι → K)) = 0 := by
+  ext x i
+  simp [finiteHermitianAdjoint]
+
+/-- Nilpotency transfers to the Hermitian adjoint by reversing composition. -/
+theorem finiteHermitianAdjoint_comp_self_eq_zero
+    (A : (ι → K) →ₗ[K] (ι → K)) (hA : A.comp A = 0) :
+    (finiteHermitianAdjoint A).comp (finiteHermitianAdjoint A) = 0 := by
+  calc
+    (finiteHermitianAdjoint A).comp (finiteHermitianAdjoint A) =
+        finiteHermitianAdjoint (A.comp A) :=
+      (finiteHermitianAdjoint_comp A A).symm
+    _ = finiteHermitianAdjoint 0 := by rw [hA]
+    _ = 0 := finiteHermitianAdjoint_zero
+
+/-- If `A² = 0`, the square of the finite Hermitian Hodge--Dirac is the
+Hodge anticommutator `A A† + A† A`. -/
+theorem finiteHermitianHodgeDirac_square
+    (A : (ι → K) →ₗ[K] (ι → K)) (hA : A.comp A = 0) :
+    (finiteHermitianHodgeDirac A).comp (finiteHermitianHodgeDirac A) =
+      A.comp (finiteHermitianAdjoint A) +
+        (finiteHermitianAdjoint A).comp A := by
+  have hAdj := finiteHermitianAdjoint_comp_self_eq_zero A hA
+  unfold finiteHermitianHodgeDirac
+  apply LinearMap.ext
+  intro x
+  change A (A x + finiteHermitianAdjoint A x) +
+      finiteHermitianAdjoint A (A x + finiteHermitianAdjoint A x) =
+    A (finiteHermitianAdjoint A x) + finiteHermitianAdjoint A (A x)
+  rw [map_add, map_add]
+  have hA0 : A (A x) = 0 := by
+    have h := congrArg (fun f : (ι → K) →ₗ[K] (ι → K) => f x) hA
+    simpa [LinearMap.comp_apply] using h
+  have hAdj0 : finiteHermitianAdjoint A (finiteHermitianAdjoint A x) = 0 := by
+    have h := congrArg (fun f : (ι → K) →ₗ[K] (ι → K) => f x) hAdj
+    simpa [LinearMap.comp_apply] using h
+  rw [hA0, hAdj0]
+  ext i
+  abel
+
 end
 
 end D0.Algebra

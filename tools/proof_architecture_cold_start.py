@@ -324,8 +324,10 @@ CASES: list[dict[str, Any]] = [
             "finiteWeightedAdjoint_one_eq_finiteHermitianAdjoint real unit profile",
             "hodgeCarDirac_unit_profile_adjoint_eq_finiteHermitianAdjoint",
             "finiteHermitianHodgeDirac_pairing_self_adjoint",
+            "finiteHermitianHodgeDirac_square",
             "cubicalWeightedHodgeDirac_unit_profile_eq_finiteHermitianHodgeDirac",
             "cubicalWeightedHodgeDirac_unit_profile_hermitian_self_adjoint",
+            "cubicalWeightedHodgeDirac_unit_profile_square",
         ],
         "required_refs": [
             "03_FORMALIZATION/D0/Algebra/FiniteHermitianAdjoint.lean",
@@ -336,13 +338,16 @@ CASES: list[dict[str, Any]] = [
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/finite_hermitian_hodge_dirac_self_adjoint_2026-10-25.json",
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/cubical_unit_profile_hermitian_hodge_equality_2026-10-25.json",
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/cubical_unit_profile_hermitian_hodge_self_adjoint_2026-10-25.json",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/finite_hermitian_hodge_dirac_square_2026-10-25.json",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/cubical_unit_profile_hermitian_hodge_square_2026-10-25.json",
             "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
         ],
         "scope_review": (
             "The real unit-profile bilinear adjoint is identified with the standard finite Hermitian adjoint; "
-            "the generic Hermitian Hodge--Dirac API and its self-adjointness are then applied to the registered "
-            "cubical differential. The concrete equality is only at the unit profile: arbitrary nonzero weighted "
-            "profiles remain in the bilinear API, and no geometric or physical Hodge profile is selected."
+            "the generic Hermitian Hodge--Dirac self-adjointness and square/anticommutator laws are then applied to "
+            "the registered nilpotent cubical differential. The concrete equality is only at the unit profile: "
+            "arbitrary nonzero weighted profiles remain in the bilinear API, and no geometric or physical Hodge "
+            "profile is selected."
         ),
     },
 ]

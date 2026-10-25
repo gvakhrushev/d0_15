@@ -3072,6 +3072,77 @@ assembly contract
 presupposition edges
 `7ff9d1e4ac3447f321afd603eab66554468644bb5fddb33551fdfa22e3e2585d`.
 
+### Hermitian Hodge square and cubical anticommutator application (25 October 2026)
+
+The generic finite Hermitian API now also proves that adjoints reverse
+composition, that nilpotency transfers to the adjoint, and that the square of
+`A + A†` is `A A† + A† A` whenever `A² = 0`. This supplies the Hermitian
+counterpart of the already-owned weighted bilinear Hodge-square law without
+assuming a positive or geometrically selected profile.
+
+For the concrete application, the existing cubical coboundary nilpotency
+theorem is consumed directly. At the real unit profile the registered
+cubical weighted Hodge--Dirac square equals the anticommutator of that
+coboundary and its standard Hermitian adjoint for every refinement `N`. The
+statement is conditional on the unit profile identity already proved above;
+it does not transport the result to other profiles or assert physical Hodge
+selection.
+
+The narrow build of `D0.Geometry.ArchiveWeightedHodgeDirac` passes all 2,989
+jobs. The two exact-declaration inventories are
+`sources/d0_proof_architecture_formalization_2026-10-24/finite_hermitian_hodge_dirac_square_2026-10-25.json`
+(SHA-256
+`73af6e2eaaaa92d9262d04cedc9aa209433fc8d80bed6feaed945384cb42a933`, collector
+`92052e1ef0adf33cc5e5d5d9789df4bacc8bde192f4774d85d932fb90881b1c1`, import
+root `D0.Algebra.FiniteHermitianAdjoint`) and
+`sources/d0_proof_architecture_formalization_2026-10-24/cubical_unit_profile_hermitian_hodge_square_2026-10-25.json`
+(SHA-256
+`3d91554e60d8adcefb54ef32ec39d75b18c31a0c8ff0d7bcc57769d664b37f3d`, collector
+`dd5c9d0aed95485addc5d4758a5a29347633bb2a702df537f779843ed7e9a11d`, import
+root `D0.Geometry.ArchiveWeightedHodgeDirac`). Both were compiled at snapshot
+`20c72a70de807b44ef804595d0ef1566c6f624b9` with `worktree_dirty=true`, source
+digest `f0782da31588c76bc1aafdf95f45191dfd8757e0f666eac2c61f4997a0d7e501`,
+and Lean 4.30.0. Their reported trust footprint is `Classical.choice`,
+`Quot.sound`, and `propext`.
+
+The real unit-profile cold-start case has been expanded to retrieve the generic
+composition/square proof and its concrete nilpotent cubical application. Its
+final search replay is recorded below; the suite remains a retrieval check and
+manual semantic scope review is still required.
+
+### Cold-start replay after Hermitian Hodge-square application (25 October 2026)
+
+The updated unit-profile case now has seven exact-name queries: the weighted
+and Hermitian adjoint bridge, generic self-adjointness and square laws, the
+concrete cubical operator equality, and its pairing and square applications.
+All 11 required sources were found as direct content. Across the full suite,
+all 18/18 cases found every required source, and the 19/19 benchmark passed its
+exact-source-versus-unrelated-prose impact control. Semantic scope review
+remains manual.
+
+Replay used candidate limit 18 at HEAD
+`20c72a70de807b44ef804595d0ef1566c6f624b9`, `worktree_dirty=true`. Runner
+SHA-256 is
+`5f6d2f15fc46fc3ce83fc1495fe3e976dc8f62daa63135a5b23999b0ea128ae0`; the
+primary artifact at replay time had SHA-256
+`0f7348fe2b94455ce67faefe8a79d4a1c778c976974946ee21bafc28fdaed9cb`. The
+authority digests were unchanged from the preceding replay: `claims.csv`
+`e64c1223d0e69c79374b592d4a289d341e64b976337ba8129fb9ab804812f718`,
+`assumptions.csv`
+`2bc9f8c040a776d784fdbfdf62569b72e4f70ff0a182fc66d0ced31cb5f13a36`,
+`formal_support.csv`
+`aa783fa732b9a5a6e5fa351e064cb2013c394848d6e1e43f273efbeb5c3289c2`,
+`aliases.csv`
+`8cda9e7ebfa26a01a04a4d51b56eb6b93425816a5fe073aa74cbae94041f672f`,
+assembly applications
+`d841fe9ccbb5e578836740b46d436147f74d9eb9c92413bbc924b942be6ee511`,
+assembly contract
+`72fb3bbbc320b4af217cbe7c09580b44556b354e9668cbd11e76933fa8209ba6`, and
+presupposition edges
+`7ff9d1e4ac3447f321afd603eab66554468644bb5fddb33551fdfa22e3e2585d`.
+This confirms retrieval of the newly compiled square application, not semantic
+acceptance, C0 freeze, or physical Hodge/GR selection.
+
 ### Generic Hermitian Hodge--Dirac and concrete cubical application (25 October 2026)
 
 `D0.Algebra.FiniteHermitianAdjoint` now owns the equivalent right-operator
