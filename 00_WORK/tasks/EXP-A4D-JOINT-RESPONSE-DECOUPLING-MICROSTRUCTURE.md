@@ -11087,3 +11087,88 @@ assembly54active/98results/5discharged/22obligations with
 scientific_promotion=false. This is local structural validation, not
 remote CI or physical acceptance. Only7au and this brief tail differ
 from integration input96870f13.
+
+
+### 25 October: native future tests and empirical descent of the whole field source
+
+Phase: native realization / interpretation and source composition. SAME
+PR334, constitutive/native-programme-v1. Integration input
+f43a91bfdc18624260428a5e2f60e8e6cdf5dfc4; mathematical input7at402--410.
+The exact parent application is7at's source/readout into Books00--01
+finite tests, compatible response refinements and the existing empirical
+quotient theorem. Use EmpiricalTheoryFactorization.universal_factorization;
+no new generic kernel/factorization proof or independent task is created.
+
+Primary7av417--422 supplies one actual native alternative continuation
+for each marked prefix observation, with record/re-detection, inverse
+and real work costs. Such future-test admissibility does not require
+an always-on observer within the original B_M. If a reader is executed
+its own full price/reaction remains; it is not substituted for B_M.
+Generated inverse/probe derivatives commute on the stated germ graph.
+
+On the actual completed work modules, conjugated blank forgetting gives
+ALL-column operator/response intertwinings, with an explicit unitary
+presentation of the owned Golden cylinder. The changing price-clock
+Hilbert space is not confused with those observation modules. Actual
+native projectors form a full real-symmetric moment frame after one
+fixed compiler precision; inverting its actual finite matrix recovers
+the original moments exactly. Approximate ideal SIGN equality is not
+used. The true frame conditioning and reading errors are retained.
+
+The actual joint-pointer and moment probabilities reconstruct the FULL
+field cofield420. The actual middle is calibrated by its conditional
+return probability and its proved negative V00 collar. The factorw
+and nominaldelta cancel; physical chord conditioning remains. The
+fixed-context observation equality proves the existing quotient owner's
+hf hypothesis, with source/action/calibration carried from the same
+execution. This covers the full42 field directions and regular open
+chart, with original coframe/connection/material typing. It does not
+observe unreadable programme syntax or add cross-context equivalences.
+
+Old finite responses are exact cylinder coordinates; the new weighted
+cofield is a function of their retained tuple with the actual evolving
+weights. Positive averaging, effective supplied moduli and existing
+source bounds give422. Known finite outcome coefficients, not unknown
+Born means, are interval-coded. Statistical reading costs Kn actual
+trials for K possibly noncommuting test contexts; its nonzero error and
+confidence are explicit. No inverse-w measurement or free arithmetic.
+
+Write paths: primary7av and this existing brief only. The parent
+substitution is supporting empirical source/readout admission and
+refinement on the configured germ sector. Original finite stationary
+attainment/complete physical domain remains. Zero of a limiting source
+does not lift automatically to finite zeros. Concurrent7au411--416 is
+preserved byte-for-byte: whole-query normals are not admitted merely
+because observation projections exist or have norm1. No GR_closed,
+positive_gr/raw216 status or lifecycle/assembly promotion is made.
+
+Reviewed final proof:18776 UTF-8bytes, SHA256
+3080b5241700083cdfa60288f8427de1bb5da86d3f6fc5afc5574672a74b5b6a.
+Complete inserted slice including controls: 22062 bytes, SHA256
+4b90a8b1efe33dd588c9ce18c44ea758f951a619b7ce79e597063049f46d8e5e.
+Embedded checker INCLUDING final newline: 2723 bytes, SHA256
+4d6537ec1b767ccb15cf87177cc1fb507736076b0ac784a8ac7b9394ca7957fd. First complete run PASS,
+Python3.11.9/SymPy1.12.1: all-column response tower, Golden presentation,
+actual-G moment frame, chord correction and frozen-probe hostile control.
+This is a narrow interface check; no old expensive replay is claimed.
+Removing only7av and this brief tail restores f43a91bf byte-for-byte.
+
+Final independent source-only review: native_continuation_map and
+native_valuation_map accepted the 18627-byte proof at SHA256
+640ffed10bd6f7df156f68afb8991fd8cd8cfca1cff8e8daac9776242ff4df8a.
+physical_query_binding then requested only explicit scalar-probability
+trial counting: K scalar probabilities, one context per probability,
+n trials per context, Kn actual preparations/readings. That reviewer
+accepted the final 18776-byte proof pinned above, including this
+149-byte clarification. No mathematical input or checker changed; no
+reviewer edited files or replayed calculations. Acceptance is scoped
+to native future tests, response refinement and empirical factorization
+of the complete configured field cofield, not finite stationary
+attainment, whole-query admission or physical GR closure.
+
+Final affected structural validation PASS: work, agent protocol, gravity
+assembly, repository (warnings0), and diff whitespace. Repository
+counts remain claims889/assumptions31/aliases58/formal_support183/Lean
+closure918; assembly54active/98results/5discharged/22obligations with
+scientific_promotion=false. These are local structural checks, not
+remote CI or physical acceptance. No unchanged mathematics was replayed.

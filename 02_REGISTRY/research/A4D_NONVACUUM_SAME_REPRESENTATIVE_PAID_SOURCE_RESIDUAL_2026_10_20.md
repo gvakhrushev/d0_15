@@ -12089,6 +12089,428 @@ readout results remain valid; GR_closed=false, positive_gr and raw216
 remain open.
 
 
+## 7av. Native future tests and the empirical descent of the complete field source
+
+25 October 2026; same PR334 / constitutive/native-programme-v1,
+input96870f138ba6b96d0bc9bd7c320221c549216d97. This application joins
+7at's whole-price source with Books00--01's actual finite observations
+and the existing empirical-factorization owner. It supplies explicit
+test, refinement and source-reconstruction maps on the configured
+regular germ sector. It does not identify a limit of sources with a
+limit of exact finite stationary solutions.
+
+An always-on terminal reader is NOT an extra premise of these books.
+Book01 section01.4.1 and Book02 section02.6 require a realizable finite
+test, channel/operator response and stable record. Book00's verification
+contract likewise requires an executable test. Alternative future tests
+can establish observational admission without all being executed in the
+original history. When such a test is executed, its own work, record,
+clock, cut and complete Book price remain real. No neutral or free
+reader is inserted into the action of7at.
+
+### One concrete native continuation reads each required prefix effect
+
+Let U_M be the actual native unitary at the end of the M-cohort execution
+on its full work-register module H_M, including unused columns,
+helper and Spin. This is the module at the actual head0 checkpoint:
+with i_M x=|0_head> tensor x, i_M^dagger T_M^(N_M)i_M=U_M. The full
+price-clock Hilbert spaces need not form this tensor tower; every one
+of their modes remains in the price.
+Let W_a be a specified actual native observation word from the same
+initial coordinates: a marked prefix, followed when necessary by its
+finite native moment-test word below. Pi_a is its computational pointer
+projector. Include all source/extractor/algorithm work used by W_a.
+The alternative continuation executes U_M inverse, then W_a, then
+literal CX copies of the requested working bits into fresh record bits.
+For the joint request/report test its pre-record effect is
+
+    E_(a,M)=U_M W_a^dagger Pi_a W_a U_M^dagger,
+    Tr(U_M rho0 U_M^dagger E_(a,M))
+       =Tr(rho0 W_a^dagger Pi_a W_a).                  (417)
+
+This identity holds for ALL input columns, not just a scalar return
+corner. The new record is left intact. Copying its computational value
+to a further fresh verifier gives re-detection; it does not copy an
+arbitrary quantum state. All other outcomes and garbage remain. With
+r request bits, a safe native length before arithmetic is
+11 length(U_M)+length(W_a)+(r+1), using the owned native inverse words.
+This is the initial record-creation bound; full re-detection adds
+another r+1 CX operations. Any Boolean comparison/arithmetic is
+charged separately. Other pointer tests use their actual bit count. The new experiment has its own full
+Book action and terminal cut. We
+do not equate that action with the original B_M or drop its backreaction.
+
+For germs, differentiate417 using the SAME generated U_M(lambda),
+W_a(lambda), their inverses and the corresponding probe. The identity
+then includes the input, inverse and controller derivatives exactly.
+A separately frozen probe attached to independently varied hardware
+does not inherit it. The generated-inverse/support graph remains the
+one declared in7at. Finite native node comparisons use their actual
+node words; no differentiable selector of those words is inferred.
+
+### Exact projective responses for changing executions
+
+For L>=M write H_L=H_M tensor F_(L:M), in the actual chronological
+register order, with the genuine fresh blank on F. Define
+
+    p_LM=U_M (I tensor <0_F|) U_L^dagger,
+    E_(a,L)=U_L [(W_a^dagger Pi_a W_a) tensor I] U_L^dagger
+                         for a born by M.             (418)
+
+Here W_a^dagger Pi_a W_a is embedded from its birth carrier through
+the subsequent initial-coordinate tensor factors. Thus
+
+    p_LM p_LM^dagger=I,
+    p_KM p_LK=p_LM,
+    p_LM E_(a,L)=E_(a,M) p_LM.                         (419)
+
+These are ALL-vector identities. Every E is a projector, so set
+Dobs_(a,M)=E_(a,M), Robs_(a,M)=Dobs^dagger Dobs=E_(a,M).
+Both Book01:1709--1719 operator/response intertwining requirements
+follow from419. Keep a as the finite test ADDRESS of Book01:1726;
+do not sum all pointers into an unlabelled response equal to identity.
+New addresses enlarge the family; they do not modify old coordinates.
+
+There is also an all-state trace-preserving forgetting channel
+
+    P_LM(rho)=U_M Tr_F(U_L^dagger rho U_L) U_M^dagger.
+
+Its dual sends E_(a,M) to E_(a,L). On the actual prepared states
+rho_L=U_L(rho0_M tensor |0><0|_F)U_L^dagger it returns rho_M.
+For arbitrary new-input entanglement it returns the actual reduced
+state, not a fictitious independently blank state. Channel composition
+agrees with successive partial traces. The coisometry418 corresponds
+to the same canonical blank inclusion, conjugated by the actual words;
+the Book01 Golden blank frame represents it explicitly. Write
+Vphi_M=I_protected tensor G^(tensor n_M) on the adjoining work factors,
+pi_phi,LM=I tensor <Omega_phi|_F. Then
+I tensor <0_F|=Vphi_M^dagger pi_phi,LM Vphi_L, and
+p_LM=(U_M Vphi_M^dagger) pi_phi,LM (U_L Vphi_L^dagger)^dagger.
+This is a unitary presentation of the owned Golden prefix tower. Such
+a coordinate change is not an unpaid gate in the original execution.
+
+This is a projective family of native OBSERVATION operators and finite
+response tests. Its price is still computed from the original complete
+paired-clock operator. In particular no identity p Dprice_L=Dprice_M p
+is asserted. Ordinary prefix truncation fails that identity at the old
+cyclic terminal edge;419 does not conceal that failure. The whole price
+and its source enter separately through the exact reconstruction below.
+
+### Exact source moments use actual native effects
+
+The approximate SIGN extractor is not silently identified with its
+ideal moment operator. Use the owned full-column SO compiler to make
+an informationally complete finite frame on the ENTIRE padded active
+bank, of dimension d=2^b with b>=3. The original real SIGN/CAR
+representation of7as supplies real symmetric moment operators O_a.
+For any complex Hermitian presentation first use that owned realification;
+real projectors do not span an unconverted complex Hermitian space.
+
+Let m=d(d+1)/2 and consider the fixed mathematical frame
+P_i=e_i e_i^T and P_ij=(e_i+e_j)(e_i+e_j)^T/2. Its synthesis map T
+has inverse norm at most sqrt(2d), from the exact coefficients
+c_ij=2O_ij, c_i=O_ii-sum_(j!=i) O_ij. Compile one native preparation
+word for each vector to error epsilon<1/[4 sqrt(2dm)]. Its ACTUAL
+full-column vector vhat gives the actual projector Phat=vhat vhat^T.
+Then ||That-T||<=2 sqrt(m) epsilon and the smallest singular value
+of That is greater than1/[2 sqrt(2d)]. Invert the known finite actual
+frame matrix, obtaining EXACTLY
+
+    O_a=sum_t c_at Phat_t.
+
+All coefficients and conditioning factors are retained; the displayed
+bound gives ||c_a||_1<=2 sqrt(2dm)||O_a||_F. Actual finite probability
+estimation contributes at most ||c_a||_1 eta for each reconstructed
+moment. This new reading error belongs to L_M below; the original
+source-preparation error is not replaced by an ideal extractor error.
+Native words
+and their frame matrix have known finite algebraic data; there is no
+unknown-state coefficient fit. Test Phat by the literal inverse of its
+native preparation word and the zero-basis pointer, after the actual
+marked source prefix. This is417 with that specified W_a. Jointly
+record the request label when conditional branch moments are required.
+The conditional normalization uses its genuine mu_l. All padded bank
+modes, helper/Spin and record costs belong to the future experiment.
+One must not build only a frame on an unpadded subspace while allowing
+actual words to leak outside it.
+
+This expresses each original source moment as an affine combination
+of ACTUAL positive native responses, exactly on all input columns of
+this carrier. It adds no word or term to the original B_M. It consumes
+the existing compiler once at a fixed frame accuracy; no new primitive,
+exact ideal SIGN gate or new Lie-algebra census is introduced.
+
+### Reconstruct the complete field cofield, including its calibration
+
+Work fibrewise over one fixed declared native germ context: its finite
+word/support descriptions, generated constraints and calibration
+conventions are fixed context/test indices. They are not silently
+claimed to be observed programme records. At a configured point its
+source-germ signature consists of:
+actual joint probabilities p_j(l,1) from417; the source-moment pointer
+probabilities; actual request probabilities mu_jl; the middle-return
+probabilities described next; and gbar_j and the original
+decoder/sampling instructions in that declared context. The measured
+mu agrees with the actual Golden key word. The middle has its original
+real V_00 in[-1,-1/2]. At its actual post-middle checkpoint measure
+p_mid=Pr(report=1,target=000), and q=Pr(report=1)>0. Predicate
+preservation and the real blank target give p_mid/q=V_00^2, hence
+d=1+sqrt(p_mid/q). This uses the actual occupied true branch, not a
+free preparation of predicate1. Its inverse-probability conditioning
+is retained. The fixed gbar is402's actual source normalization in
+this apparatus sector. These are not newly selected physical constants. Variation labels specify the actual
+7ar/7at field lift and finite native neighbours. The unknown source is
+NOT put into those labels. Configurations without this germ information
+would not suffice: a constant lift and a varying lift can have exactly
+the same base operator but different action derivatives.
+
+On the genuine key/preparation sector, obtain entirely from that
+signature
+
+    qhat_jl=p_j(l,1)/mu_jl,      Q_j=sum_l p_j(l,1),
+    a_j=2d_j/(1-d_j Q_j),        A_M=sum_j a_j gbar_j,
+    b_j(v)=C_delta,j^(-1) Bhat_j v,
+    Ehat_M[v]=(1/A_M) sum_j a_j sum_a b_ja(v)
+                      (qhat_ja+ - qhat_ja-)/delta_j.   (420)
+
+C_delta and Bhat are the ACTUAL observed-moment decoder Jacobian and
+physical sampling map of7ar, not ideal target coordinates. All original
+quadrature, density, material and collar conventions remain. The
+source-conjugate lift407 has zero heat derivative, so420 is EXACTLY
+the full B_M field cofield divided by the same true Gamma=w A_M.
+The feedback factor w cancels; it is never silently set to one.
+The primitive cost is still H_M-rankP log(1-zeta+zeta S_M^2).
+In fact the nominal finite-difference parameter cancels too. Put
+K_j=DR(mbar_j)[mhat_(a,+)-mhat_(a,-)]_a and let Deltaq_j be the
+vector of actual report differences. Since C_delta,j=K_j/delta_j,
+its summand in420 is exactly a_j Deltaq_j^T K_j^(-1) Bhat_j v.
+The actual chord matrix and fixed decoder/canonical lift determine
+the field comparison, without an extra unobserved speed label. Its
+inverse conditioning still retains the real small-chord debt.
+
+Consequently equal complete finite observation signatures within that
+germ context imply equal420. A comparison across differently calibrated
+contexts needs its own observable context identification/transport;
+syntax alone is not an extra measured outcome.
+This proves the concrete hypothesis hf of the OWNED
+03_FORMALIZATION/D0/Foundation/EmpiricalTheoryFactorization.lean,
+universal_factorization. Apply that theorem; do not re-prove a new
+generic quotient theorem. This gives unique empirical descent of the
+full 42-field cofield on this germ sector. It neither reconstructs
+additional ambient X_N normals from 42 tests nor changes408's scope.
+
+On the compact regular chart, let L_M be an actual finite Lipschitz
+bound for reconstructing420 from its finite signature. It includes
+mu_min^(-1), delta_j^(-1), A_M^(-1), decoder inverse and sampling norms,
+the true gbar_j and s_j>=1/2. There is no w^(-1) factor. An approximate
+signature of error eta_M requires L_M eta_M plus its arithmetic error
+to be below the declared source tolerance. Numerical precision cannot
+be borrowed from an unnormalized price or an ideal geometry decoder.
+
+### Finite records and the limit use the actual response tuple
+
+For one fixed physical test v and cohort j, write b=b_j(v). Give each
+finite pointer outcome (l,t), t in{0,1}, the value
+
+    X_jv(l,t)=t/(delta_j gbar_j) sum_a b_a
+                  [1_(l=a+)/mu_ja+ - 1_(l=a-)/mu_ja-],
+    E X_jv=f_j(v)=sum_a b_a(qhat_ja+ - qhat_ja-)
+                                  /(delta_j gbar_j),
+    Ehat_M[v]=sum_j omega_jM f_j(v),
+    omega_jM=a_j gbar_j/A_M>0,    sum_j omega_jM=1.     (421)
+
+At the evaluated point these are finite calibrated numbers. Retain
+their FPTEAS and regular inverse margins. Once calibrated and frozen,
+expectation of X is an AFFINE, hence convex, function of the positive
+pointer-response tuple of Book01. Reconstruction of the calibration
+itself is420's separate finite map; no state-dependent coefficient is
+silently called a fixed linear effect. On an unknown input, a protocol
+must first estimate/calibrate with its own error and cost.
+
+Round the finite outcome values outward to dyadic intervals of width
+at most2 epsilon_j, keeping the raw finite labels and table at birth.
+The interval for the expectation then contains f_j(v) with width at
+most2 epsilon_j for ANY probability law on those outcomes. This is
+finite interval arithmetic on known outcome coefficients. It is NOT
+the impossible claim that a single finite measurement deterministically
+returns the exact dyadic bin of an unknown Born mean.
+
+An actual estimating detector can use fresh private trials of the owned
+preparation and query: their outcome laws are independent of arbitrary
+protected oldRIGHT inputs, and every trial is generated from a genuine
+fresh blank. This uses repeatable known native preparation, not cloning
+an unknown quantum state. For K required scalar pointer probabilities, use one test context per
+probability and n independent trials PER context, for Kn actually
+executed preparations and readings. This conservative count permits
+separate repetitions even when outcomes could share one context. Noncommuting
+frame projectors do not share one simultaneous trial. Each empirical
+frequency has variance at most1/(4n). The union
+and variance bounds give failure probability at most K/(4n eta^2)
+for accuracy eta. Choose finite n>=K/(4 alpha eta^2) for confidence
+1-alpha. Counters, arithmetic, copies and re-detection have finite real
+cost, included in that alternative protocol's complete action. Neither
+zero sampling error nor a free exact expectation is claimed.
+
+The exact natural object in418--419 is the retained response TUPLE.
+The weighted aggregate421 is not a fixed old cylinder coordinate:
+new cohorts change a_j/A_M. For a fixed regular continuum field Z=(e_op,omega,psi) and
+physical test,7at409 with the original source/refinement bounds gives
+certified errors
+
+    |f_j(v)-D I_PC(Z)[v]|<=e_j(v),
+    |Ehat_M[v]-D I_PC(Z)[v]|
+                      <=sum_j omega_jM e_j(v),        (422)
+
+with all actual mesh, node, decoder, strength and norm factors. The
+same applies to the retained finite outcome intervals after adding
+epsilon_j. The owned slow cofinal envelope makes the new errors tend
+to zero, while A_M diverges and every fixed old contribution has
+vanishing weight. When the stated regularity/error bounds and refinement moduli are
+supplied effectively, it can be tightened to any prescribed finite
+phi-graded tolerance. FPTEAS matrix entries alone do not supply a
+modulus for an arbitrary smooth continuum field.
+The tolerance is a budget for derived residuals, not an added correction
+term to the action. Countably many declared computable physical tests
+can be scheduled by the same finite diagonal rule and original norm
+control. All42 directions and the whole regular field chart are
+retained; this is not a response quotient fitted only to the primary
+Einstein family.
+
+Thus the source limit factors through the native future-observation
+germ signature and equals the original Palatini--CAR cofield. The
+explicit primary executions have zero limiting field source and the
+owned nonvacuum recovery, with408 additionally controlling the other
+declared local rows. Source equality, refinement and realizable testing
+are now linked by417--422 in one application of the existing kernel.
+
+### Compatibility with the concurrent whole-query boundary
+
+Input f43a91bfdc18624260428a5e2f60e8e6cdf5dfc4 adds7au411--416
+in the same owner. Preserve it: a bounded whole-private-query tangent
+has a positive normalized source, although7at controls the declared
+local stage graph. The observation coisometries here do not make that
+whole-query tangent a bounded native local variation. Their norm one
+does not bound their derivatives with respect to changing words,
+and no price-Dirac intertwining was asserted. Equations417--422
+transport the stated field-germ tests and reconstruct their original
+source; they do not enlarge the admitted variation graph or neutralize
+7au's independent controller row. Realizable future observation, an
+ambient derivative and an admitted field-writing action retain their
+different types.
+
+### The zero-fibre boundary is not erased by empirical descent
+
+Book03:201,387--393,1127--1137 already supplies the direct finite
+stationary law. No new prospective optimality or separate Cost-Info
+principle is required for its direct H+J application. A justified sector
+need not exhaust every possible native programme. Nevertheless the
+literal finite equation is exact. Factorization sends a native
+stationary representative to zero; it does NOT prove that every zero
+of the limiting source has an exact stationary finite representative.
+
+Even the analytic family F_k(x)=x^2+phi^(-k), the derivative of
+x^3/3+phi^(-k)x, converges smoothly on compact sets to x^2 but has no
+real zero at any finite k. Response separation or effective convergence
+does not reverse this implication. This elementary distinction is why
+the preceding maps are not promoted to finite stationary attainment.
+
+**Parent substitution.** The full configured field cofield now has
+explicit native future tests, all-column projective response maps,
+finite halt/re-detection protocols and a proved empirical source-germ
+factorization. No always-on reader, raw-clock naturality, uncharged
+calibration or inverse-w measurement is imported. Remaining physical
+closure is the original stationary-law application/attainment on a
+justified complete native sector, or an independently justified native
+solution notion allowing the relevant source-zero class. The latter
+is not supplied merely by this factorization. Exact finite roots,
+uncovered normals, original material scope and generic refinement keep
+their existing obligations. GR_closed, positive_gr and raw216 remain
+open; this is a supporting substitution within the existing owner.
+
+
+### Bounded exact controls for this source-observation application
+
+Run from the repository root. This tests the new all-column response
+projection maps, their Golden-frame presentation, exact recovery from
+actual native-G effects, the chord-coordinate cancellation and a
+frozen-probe hostile control. The two-dimensional effect frame is a
+small algebraic fixture; the general padded-bank statement above is
+proved by the frame bound and the already-owned compiler. No original
+root, READY, whole-query,128, heat or Lean calculation is repeated.
+
+```python
+from pathlib import Path
+import importlib.util, sys
+import sympy as S
+from sympy.polys.matrices import DomainMatrix
+
+src=Path('02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py')
+spec=importlib.util.spec_from_file_location('_germ_native',src)
+ne=importlib.util.module_from_spec(spec)
+sys.modules[spec.name]=ne
+spec.loader.exec_module(ne)
+K=ne.GOLDEN_FIELD
+def dm(A): return DomainMatrix.from_Matrix(S.Matrix(A)).convert_to(K)
+def eq(A,B): assert dm(A)==dm(B)
+G=S.Matrix(ne.G_LOCAL)
+I2=S.eye(2); zero=S.Matrix([1,0]); P0=zero*zero.T
+CX=S.Matrix([[1,0,0,0],[0,1,0,0],[0,0,0,1],[0,0,1,0]])
+U1=G*G
+U2=CX*S.kronecker_product(G,G)
+U3=S.kronecker_product(I2,CX)*S.kronecker_product(U2,G)
+J21=S.kronecker_product(I2,zero)
+J32=S.kronecker_product(S.eye(4),zero)
+J31=J32*J21
+p21=U1*J21.T*U2.T
+p32=U2*J32.T*U3.T
+p31=U1*J31.T*U3.T
+E0=G.T*P0*G
+E1=U1*E0*U1.T
+E2=U2*S.kronecker_product(E0,I2)*U2.T
+E3=U3*S.kronecker_product(E0,S.eye(4))*U3.T
+eq(p21*p21.T,I2)
+eq(p21*p32,p31)
+eq(p21*E2,E1*p21)
+eq(p32*E3,E2*p32)
+eq(E2*E2,E2)
+# The same map is the Golden-cylinder map in the stated moving frame.
+chi=G*zero
+Vphi1=G
+Vphi2=S.kronecker_product(G,G)
+pi_phi=S.kronecker_product(I2,chi.T)
+eq(J21.T,Vphi1.T*pi_phi*Vphi2)
+eq(p21,(U1*Vphi1.T)*pi_phi*(U2*Vphi2.T).T)
+# A real actual-G projector frame, not an ideal SIGN identification.
+vectors=[zero,G*zero,G*G*zero]
+effects=[v*v.T for v in vectors]
+T=S.Matrix.hstack(*[S.Matrix([P[0,0],P[1,1],P[0,1]]) for P in effects])
+Tdm=dm(T)
+assert Tdm.det()!=K.zero
+O=S.Matrix([[S.Rational(2,3),S.Rational(3,7)],
+            [S.Rational(3,7),-S.Rational(1,5)]])
+c=(Tdm.inv()*dm(S.Matrix([O[0,0],O[1,1],O[0,1]]))).to_Matrix()
+eq(sum((c[i]*effects[i] for i in range(3)),S.zeros(2)),O)
+# Source chord correction cancels nominal delta, not actual conditioning.
+delta=S.Rational(1,13)
+chord=S.Matrix([[S.Rational(2,5),S.Rational(1,17)],
+                [S.Rational(-1,11),S.Rational(3,7)]])
+B=S.Matrix([[1,S.Rational(1,9)],[0,S.Rational(4,5)]])
+v=S.Matrix([S.Rational(1,3),S.Rational(-2,7)])
+dq=S.Matrix([S.Rational(1,19),S.Rational(-1,23)])
+assert ((dq/delta).T*(chord/delta).inv()*B*v)[0]==(dq.T*chord.inv()*B*v)[0]
+# A frozen future probe does not inherit the generated-probe first jet.
+t=S.symbols('t',real=True)
+R=S.Matrix([[S.cos(t),-S.sin(t)],[S.sin(t),S.cos(t)]])
+psi=S.Matrix([S.Rational(3,5),S.Rational(4,5)])
+rho=psi*psi.T
+moving=S.trace(R*rho*R.T * (R*P0*R.T))
+frozen=S.trace(R*rho*R.T * P0)
+assert S.simplify(S.diff(moving,t))==0
+assert S.diff(frozen,t).subs(t,0)==-S.Rational(24,25)
+print('PASS all-column response tower, Golden presentation, actual-G moment frame, chord correction, and frozen-probe hostile control')
+print(sys.version.split()[0],S.__version__)
+```
+
 ## 8. Reproduction
 
 Run from this directory:
