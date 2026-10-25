@@ -6134,3 +6134,36 @@ Lean 4.30.0. The successful inventory run built the public import before
 reading its elaborated declarations. The changed CAR module SHA-256 is
 `00f497a9b6175a04efba8557f97623b52657023320696af81ccc89139f7200f5`.
 The CAR/Hodge cold-start regression passes against this current inventory.
+
+### Full cold-start replay after the compiled diagonal-symmetry update (25 October 2026)
+
+The complete bilingual cold-start runner was replayed on clean published
+snapshot `5c4a630b4d66da0671b758e40bd306f5a4b1aa90`. All required sources were
+found in **20/20** real cases; the **21/21** benchmark also passed its
+exact-source-versus-unrelated-prose impact control. The CAR/Hodge case finds
+the new 25-declaration diagonal-transpose inventory as direct content and
+matches its exact SHA-256. No required source was missing.
+
+The replay output SHA-256 is
+`b0dedf47b4d3337b654c79fb81143440880904405494c2b50358fc14460ab26f`; the
+runner SHA-256 is
+`abe71f0a30054c8ba7e41d6a0d2e329f87d7e136e0c8f161223c9f55ae96fd5d`. The
+snapshot was clean (`worktree_dirty=false`). Its seven authority inputs had
+these exact digests:
+
+| Input | SHA-256 |
+|---|---|
+| `02_REGISTRY/aliases.csv` | `8cda9e7ebfa26a01a04a4d51b56eb6b93425816a5fe073aa74cbae94041f672f` |
+| `02_REGISTRY/assumptions.csv` | `2bc9f8c040a776d784fdbfdf62569b72e4f70ff0a182fc66d0ced31cb5f13a36` |
+| `02_REGISTRY/claims.csv` | `6b19168191ad4e68e106f7b89dcd008b3ec3cabdca7b3266864f61fe64455fc8` |
+| `02_REGISTRY/formal_support.csv` | `7f7a0b308745836e8747317a52079a2b644488f181f07d34c42a93817e9a321f` |
+| `02_REGISTRY/gr_assembly/applications.json` | `d841fe9ccbb5e578836740b46d436147f74d9eb9c92413bbc924b942be6ee511` |
+| `02_REGISTRY/gr_assembly/contract.json` | `72fb3bbbc320b4af217cbe7c09580b44556b354e9668cbd11e76933fa8209ba6` |
+| `02_REGISTRY/presupposition_edges.json` | `7ff9d1e4ac3447f321afd603eab66554468644bb5fddb33551fdfa22e3e2585d` |
+
+An independent read-only review at this head found no actionable issue in
+the generic transpose theorem, its CAR compatibility/application, the two
+diagonal symmetry proofs, or the inventory provenance. The review accepts
+only this finite algebra/refactor slice; it does not accept a CAR claim, C0,
+or any physical interpretation. The final-Ready cold-start and integration
+replays remain required after the remaining task changes.
