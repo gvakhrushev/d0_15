@@ -130,7 +130,10 @@ def _claim_heading_candidates(
     query_terms = _locator_terms(section)
     if not query_terms:
         return []
-    minimum_title_matches = min(2, len(query_terms))
+    # A single title anchor is enough when the section body matches at least
+    # three quarters of the locator. This preserves strong topical candidates
+    # whose locator describes the result more precisely than the heading does.
+    minimum_title_matches = min(1, len(query_terms))
     minimum_matches = min(len(query_terms), max(minimum_title_matches,
                                                  (len(query_terms) + 1) // 2))
     ranked: list[tuple[int, int, dict[str, Any]]] = []
@@ -2259,3 +2262,4 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+
