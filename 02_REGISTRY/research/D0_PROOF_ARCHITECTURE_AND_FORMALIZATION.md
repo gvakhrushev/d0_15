@@ -2785,3 +2785,32 @@ claim or prove an application edge. The crosswalk's source records likewise
 do not establish the frozen C0 denominator or independent acceptance. The
 updated locators improve current-state reproducibility while C0 classification,
 semantic review, and the remaining mathematical migrations stay open.
+
+### Reviewed normal-chart estimator source locator (25 October 2026)
+
+The `normal-chart-estimator` result now records the exact section
+`L6: Exact estimator theorem` in its existing evidence record. I checked the
+section in the pinned Git object `77d3ab6059bd1a3ce48637b97b9f30aa8825fc5f`
+at `02_REGISTRY/research/ATORUS_NORMAL_JET_EINSTEIN_BRIDGE.md`; its blob SHA-256
+is `ad1a72868ca3122314661695943664a5e4f7377413b416c3ccef43ea2ad531b6` and
+the current file still matches that pin. The section states the centered-ray
+reconstruction of `-2G[g](x) + O(epsilon_N^2)` for smooth Lorentz inputs in
+their metric-normal chart, including the stated Ricci-sign convention.
+
+The all-result crosswalk was regenerated from snapshot
+`65fbc878959f9e5c51bb4313938de067a9618798` (`worktree_dirty=true`). Its Lean
+source digest remains
+`8cdcca1b292a651ef95a36a9ff64971c8e4b0a0b2c93da556dc208beac7a7231`; the
+updated applications source digest is
+`72b28e6e36e4ad4bab3145c497cf26540379f4eb2650b4b03c1736646ec436cb`. The
+crosswalk SHA-256 is
+`d57f7aa04bb40457e6a01fd92d85196dc4bbf3a256e9a8d386294b72246686bd`. It
+still contains all 54 results and 191 evidence records. Exact section
+locators increased from 15 to 16, and result rows with incomplete section
+mapping decreased from 39 to 38; verified pin counts are unchanged.
+
+This closes one source-provenance locator only. The crosswalk still labels the
+section key as a candidate needing review, keeps the semantic relation
+`unresolved`, and records `acceptance_inferred=false`. This does not establish
+C0 membership or its accepted denominator, validate a Lean declaration as the
+semantic proof of this research statement, or select a physical D0 realization.

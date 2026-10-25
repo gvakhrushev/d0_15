@@ -14,7 +14,10 @@
         {
           "ref": "77d3ab6059bd1a3ce48637b97b9f30aa8825fc5f",
           "path": "02_REGISTRY/research/ATORUS_NORMAL_JET_EINSTEIN_BRIDGE.md",
-          "sha256": "ad1a72868ca3122314661695943664a5e4f7377413b416c3ccef43ea2ad531b6"
+          "sha256": "ad1a72868ca3122314661695943664a5e4f7377413b416c3ccef43ea2ad531b6",
+          "section_refs": [
+            "L6: Exact estimator theorem"
+          ]
         }
       ],
       "reported_state": "ACCEPT AS RESEARCH / NORMAL-JET-EINSTEIN-ESTIMATOR-REACHED"
