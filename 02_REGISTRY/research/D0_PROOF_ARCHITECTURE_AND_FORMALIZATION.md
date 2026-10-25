@@ -3120,3 +3120,74 @@ Physical inner-product or holonomy selection and any physical Hodge/GR
 application remain outside its conclusion. This comparison measures a narrow
 lookup-route difference: `gr_assembly.search` searches its GR assembly result
 groups, while the new route also searches Lean source and compiled inventories.
+
+### Real unit-profile bridge between adjoint APIs (25 October 2026)
+
+The two finite-adjoint modules use different pairings in general: the weighted
+API is bilinear over an arbitrary field with an arbitrary nowhere-zero
+profile, while the standard API is sesquilinear over a field with `StarRing`.
+The proved overlap is deliberately limited to `K = ℝ` and `w = 1`, where real
+star is trivial. `finiteWeightedPairing_one_eq_finiteHermitianPairing` proves
+the pairing equality, and `finiteWeightedAdjoint_one_eq_finiteHermitianAdjoint`
+uses the existing uniqueness theorem to identify the operators. No equivalence
+is asserted for a nonconstant profile or a general involution.
+
+The concrete consumer is `D0.Geometry.ArchiveWeightedHodgeDirac`:
+`hodgeCarDirac_unit_profile_adjoint_eq_finiteHermitianAdjoint` applies that
+specialization to the existing `hodgeCarDiracₗ N` at every `N`. Its type fixes
+the profile to the constant one; it does not construct or select the
+Lorentz-induced Hodge weight. The existing signed/nonzero weighted theorem is
+unchanged. `formal_support.csv` now records the generic API's actual weighted
+bridge and both concrete consumers; no claim, assumption, assembly status, or
+application receipt changes.
+
+The two exact compiled declaration records are
+`sources/d0_proof_architecture_formalization_2026-10-24/finite_weighted_unit_profile_adjoint_bridge_2026-10-25.json`
+(SHA-256
+`f2c12832b0d4760e529d1f41e908ff957b6d8f10e269fae44e9d811589b45dac`) and
+`sources/d0_proof_architecture_formalization_2026-10-24/archive_weighted_hodge_hermitian_bridge_2026-10-25.json`
+(SHA-256
+`1038de80229d66c72ec5880a1b6847bf193b38c53231de44e4345b84912b312c`). Both
+were compiled at snapshot `c512a8cc5042e0b6160cfa3320665b2f3abc7cbe` with
+`worktree_dirty=true`, Lean 4.30.0, and Lean-source digest
+`fdba5314e1ef785e14b40f7c5509d1c9d2426e22f08903c5b3aa62de75aec65b`. Their
+collector SHA-256 values are `59045a2abf642c22941b4d1b74f88262456ed83538e6751bc811386d91d00d6c`
+and `919751a13135b91d8454bbc91cfb9f7cfb834378bb34dde6187e6c39beac66cd`,
+using import roots `D0.Algebra.FiniteWeightedAdjoint` and
+`D0.Geometry.ArchiveWeightedHodgeDirac`, respectively. Both report the
+existing `Classical.choice`, `Quot.sound`, and `propext` trust footprint.
+The narrow `D0.Geometry.ArchiveWeightedHodgeDirac` build passes (2,989 jobs).
+This finite compatibility result selects no physical profile or Hodge/GR
+source.
+
+### Cold-start replay after the weighted-adjoint bridge (25 October 2026)
+
+The suite now includes `real-unit-profile-weighted-hermitian-bridge`, with
+separate exact-name queries for the generic unit-profile bridge and its actual
+Hodge/CAR consumer. At the replay, all 18/18 search cases found every required
+source as direct content; the expanded 19/19 benchmark also passed the exact
+source-versus-unrelated-prose impact regression. The new case found both Lean
+modules, both compiled inventories, and this primary artifact. Manual semantic
+scope review remains required; retrieval does not select the unit profile as a
+physical metric or close any C0 or GR obligation.
+
+Replay used candidate limit 18 at HEAD
+`c512a8cc5042e0b6160cfa3320665b2f3abc7cbe` with `worktree_dirty=true`. Runner
+SHA-256 is
+`c9c0b374452cb6db31adb644d65049f3092688d4778a9ea7ce9870b2da2bf734`; the
+primary artifact at replay time had SHA-256
+`37031033e6ce0fc91a2d76299a3b21f093ef5854b3f6ff551aad656a3945f2eb`. The
+authority input digests were `claims.csv`
+`e64c1223d0e69c79374b592d4a289d341e64b976337ba8129fb9ab804812f718`,
+`assumptions.csv`
+`2bc9f8c040a776d784fdbfdf62569b72e4f70ff0a182fc66d0ced31cb5f13a36`,
+`formal_support.csv`
+`aa783fa732b9a5a6e5fa351e064cb2013c394848d6e1e43f273efbeb5c3289c2`,
+`aliases.csv`
+`8cda9e7ebfa26a01a04a4d51b56eb6b93425816a5fe073aa74cbae94041f672f`,
+assembly applications
+`d841fe9ccbb5e578836740b46d436147f74d9eb9c92413bbc924b942be6ee511`,
+assembly contract
+`72fb3bbbc320b4af217cbe7c09580b44556b354e9668cbd11e76933fa8209ba6`, and
+presupposition edges
+`7ff9d1e4ac3447f321afd603eab66554468644bb5fddb33551fdfa22e3e2585d`.

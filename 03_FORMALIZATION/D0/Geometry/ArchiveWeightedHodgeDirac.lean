@@ -77,6 +77,18 @@ theorem hodgeCarDirac_diagonal_weight_adjoint (N : ℕ)
   intro hw
   exact D0.Algebra.finiteWeightedPairing_adjoint w hw (hodgeCarDiracₗ N) ψ φ
 
+/-- At the real unit profile, the existing Hodge/CAR weighted adjoint is the
+standard finite Hermitian adjoint. This identifies the two algebraic APIs on
+their common specialization only; it does not select a profile or identify
+the Lorentz-induced geometric Hodge operation. -/
+theorem hodgeCarDirac_unit_profile_adjoint_eq_finiteHermitianAdjoint
+    (N : ℕ) :
+    hodgeCarDiracDiagonalAdjoint N (fun _ => (1 : ℝ)) =
+      D0.Algebra.finiteHermitianAdjoint (hodgeCarDiracₗ N) := by
+  simpa [hodgeCarDiracDiagonalAdjoint] using
+    (D0.Algebra.finiteWeightedAdjoint_one_eq_finiteHermitianAdjoint
+      (A := hodgeCarDiracₗ N))
+
 /-- The weighted adjoint of the squared Hodge/CAR operator is the square of
 the supplied-profile adjoint. This is a concrete application of the generic
 composition law and does not assert that the profile is geometrically selected. -/

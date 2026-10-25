@@ -1,6 +1,7 @@
 import Mathlib.Data.Real.Basic
 import Mathlib.LinearAlgebra.Dimension.Constructions
 import Mathlib.Tactic
+import D0.Algebra.FiniteHermitianAdjoint
 
 /-!
 # Finite weighted adjoints
@@ -379,6 +380,38 @@ theorem finiteWeightedHodgeDirac_square_preserves_degree
       LinearMap.add_apply] using h
   rw [hvalue]
   exact hcross
+
+section UnitRealProfile
+
+variable {ι : Type*} [Fintype ι] [DecidableEq ι]
+
+omit [DecidableEq ι] in
+/-- With the real unit profile, the weighted bilinear pairing is exactly the
+standard finite Hermitian pairing specialized to `ℝ`, whose star is trivial.
+This is a compatibility boundary only; it says nothing about nonconstant
+profiles or physical metric selection. -/
+theorem finiteWeightedPairing_one_eq_finiteHermitianPairing
+    (x y : ι → ℝ) :
+    finiteWeightedPairing (fun _ : ι => (1 : ℝ)) x y =
+      finiteHermitianPairing x y := by
+  simp [finiteWeightedPairing, finiteHermitianPairing, star_trivial]
+
+/-- The unit-profile real weighted adjoint is the specialization of the
+generic Hermitian adjoint. The arbitrary-field, arbitrary-nonzero-weight
+theorems above remain independent and strictly more general in their own
+bilinear setting. -/
+theorem finiteWeightedAdjoint_one_eq_finiteHermitianAdjoint
+    (A : (ι → ℝ) →ₗ[ℝ] (ι → ℝ)) :
+    finiteWeightedAdjoint (fun _ : ι => (1 : ℝ)) A =
+      finiteHermitianAdjoint A := by
+  apply finiteWeightedAdjoint_unique (fun _ : ι => (1 : ℝ))
+    (by intro i; norm_num) A
+  intro x y
+  rw [finiteWeightedPairing_one_eq_finiteHermitianPairing]
+  rw [finiteWeightedPairing_one_eq_finiteHermitianPairing]
+  exact finiteHermitianPairing_adjoint A x y
+
+end UnitRealProfile
 
 end
 

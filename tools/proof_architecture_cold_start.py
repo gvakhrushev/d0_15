@@ -318,6 +318,26 @@ CASES: list[dict[str, Any]] = [
             "the holonomy, an action, or a physical Hodge/GR application."
         ),
     },
+    {
+        "id": "real-unit-profile-weighted-hermitian-bridge",
+        "queries": [
+            "finiteWeightedAdjoint_one_eq_finiteHermitianAdjoint real unit profile",
+            "hodgeCarDirac_unit_profile_adjoint_eq_finiteHermitianAdjoint",
+        ],
+        "required_refs": [
+            "03_FORMALIZATION/D0/Algebra/FiniteWeightedAdjoint.lean",
+            "03_FORMALIZATION/D0/Geometry/ArchiveWeightedHodgeDirac.lean",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/finite_weighted_unit_profile_adjoint_bridge_2026-10-25.json",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/archive_weighted_hodge_hermitian_bridge_2026-10-25.json",
+            "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+        ],
+        "scope_review": (
+            "The real unit-profile bilinear adjoint is identified with the standard finite Hermitian adjoint, "
+            "and the equality is applied to the repository-owned Hodge/CAR operator. This is only the unit-profile "
+            "specialization: arbitrary nonzero weighted profiles remain in the bilinear API, and no geometric or "
+            "physical Hodge profile is selected."
+        ),
+    },
 ]
 
 
