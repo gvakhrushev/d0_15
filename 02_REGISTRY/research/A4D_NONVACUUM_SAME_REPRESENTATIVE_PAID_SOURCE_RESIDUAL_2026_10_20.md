@@ -17487,6 +17487,407 @@ Path(__file__).with_suffix('.json').write_text(json.dumps(out,indent=2),encoding
 }
 ```
 
+## 7bj. The current whole return can read fields from actual native SOURCE packets
+
+25 October2026; same PR334 / constitutive/native-programme-v1. Consume
+7s's canonical moment chart and7ac's one-slot method, applying them to
+CURRENT7bd--7bg full cold returns. The new application is a forward map
+from an ACTUALLY generated private SOURCE to its fields and full first
+covector. No external runtime field key or new physical action is used.
+The remaining original-domain inclusion is not renamed as a definition.
+
+### Fix the whole target and its cut before constructing a processor
+
+Fix h, the regular coframe/Cayley/material chart, collars, PF convention,
+and ONE target embedding i_h of rank r_h. Let
+
+    U_*(Y)^dagger=U_*(Y), U_*(Y)^2=I,
+    C_*(Y)=i_h^dagger U_*(Y)i_h.                      (514)
+
+Use the FULL geometric-plus-material targets already constructed in
+7bd--7be, with the PURE fresh source folded inside the target as in7bf.
+Then r_h=(2N_faces+1)q; its geometric blocks are the actual forward and
+reciprocal cold amplitudes, and its material block is the full four-copy
+return, including off-null dependence. Every target has the same full
+carrier and balanced involution multiplicities. Any necessary dyadic
+completion keeps its additional modes; its cut is still the stated i_h.
+A general input promise is not inferred from the zero-blank grammar.
+
+In particular one can use the ideal pure-fresh (gamma=1) target of7be,
+whose primary material return is c0=1-8p^3 and whose derived coupling is
+lambda_echo. This is NOT a claim that7bf's finite amplifier has gamma=1.
+The new programme below approximates this entire operator inside ONE
+fixed processor; it does not reuse an unpaid target preparation at run
+time. Alternatively retain a genuinely supplied fixed-readiness target
+and its actual coefficient. The same target, cut and coefficient must
+be used throughout. No old rank8/lambda_minus, gamma_r or enlarged
+rank128^8 input is silently substituted.
+
+Let d be the number of deduplicated features, r=(t,s)=r_h(Y) of7s176;
+write R_h for its existing local inverse. Its O_a are the fixed Hermitian
+contractions on one COMPLETE canonical packet: geometry Z and original
+CAR/reference moment operators, extended by identity on packet padding.
+The actual density, inverse-coframe, Cayley and material weights in r_h
+are retained. These are generally small physical CAR moments; they are
+not freely rescaled to unit range.
+
+Choose a regular feature box and a larger one still inside that chart.
+A fixed computable smooth clamp chi from[-1,1]^d into the larger box,
+identity on the smaller box, gives the target extension
+U_ext(r)=U_*(R_h(chi(r))). This is a table-extension device, not a new
+field potential. It preserves the same full unitary/complement at each
+node. C_ext=i_h^dagger U_ext i_h is C2 on the cube. All derivative bounds
+below refer to this ACTUAL extension; none are assumed mesh uniform.
+
+### Read-once SIGNs interpolate the full cold matrix, not its log or channel
+
+At degree m take k=dm distinct complete packets, m raw slots per feature.
+For each slot use the fixed coherent SIGN readout with effects
+E_(a,+/-)=(I+/-O_a)/2 on ALL packet columns. Its ideal Halmos/Naimark
+completion is one fixed computable real matrix, with raw SIGN/work
+initially blank. This use of a mathematical readout matrix does not
+claim an extra exact native Hadamard or square-root primitive.
+
+Compute the counts of its SIGNs reversibly. For z in{+,-}^k let
+r_z,a=2 count_a(+)/m-1. Apply the FULL target U_ext(r_z) to a separate
+DATA/target-WORK carrier, then undo counters and the SIGN readouts.
+All label work, unused columns and raw quantum coherences remain in
+this unitary. It is a balanced involution on the whole carrier, being
+conjugate to the controlled direct sum of the U_ext(r_z). The original
+cut on DATA is the SAME i_h at every node; none of the source packets
+is silently identified with that target DATA.
+
+Its COLD QUERY compression is exactly the DATA-valued operator
+
+    K= sum_z [tensor_slots E_(a,z_slot)] tensor C_ext(r_z). (515)
+
+Thus its one-slot operator alphabet is I,O_a on the ENTIRE packet,
+including internal geometry/CAR/reference correlations. It is not
+merely a reduced-channel statement or a scalar probability identity.
+No action values are put into the table: every entry is the existing
+full oriented/material operator. Required terminal records are not
+created by the temporary SIGNs; a permanent seal retains7bc's source.
+
+For n>=k, average over ordered injections of these slots into n private
+packets, using the owned coherent uniform-label/routing construction.
+Undo that routing and label preparation as part of the same query.
+Its exact compressed kernel is K_n=(n)_k^(-1)sum_iota K_iota, including
+all finite-n correlated components. At ANY actual normalized packet psi,
+with r_a=<psi,O_a psi>, not only on the canonical section,
+
+    C_m(r)=<psi^n,K_n psi^n>=B_m[C_ext](r).            (516)
+
+This is multivariate matrix Bernstein interpolation. The amplitude
+matrix is averaged BEFORE its determinant. Averaging J or replacing
+this full cold matrix by a reduced quantum channel gives another price.
+
+For completeness, let M2 bound the Euclidean bilinear operator norm
+of D2 C_ext on the cube, and M1 bound each coordinate derivative.
+The finite binomial Taylor/first-difference identities give
+
+    e0=||C_m-C_ext||_infty <=d M2/(2m),
+    e1=max_a||partial_a C_m-partial_a C_ext||_infty
+                      <=M2[sqrt(d/m)+2/m].
+
+For the derivative formula, replace the ath binomial by degree m-1
+and integrate partial_a C_ext along its node segment of length2/m.
+The expected displacement is bounded by sqrt(d/m)+2/m. This proves
+C1 convergence without differentiating native code choices.
+With a=1-zeta and the TRUE rank r_h,
+
+    delta_B=2r_h zeta[e1/a+(1+zeta)M1 e0/a^2],
+    |(D_r J_m-D_r J_*)[v]|<=delta_B ||v||_1,          (517)
+    J_m=-log det(aI+zeta C_m^2).
+
+Use the actual feature Jacobian when pulling517 to fields and divide
+by the actual source gain. In particular B_r,h=||D r_h||_(V_h->ell1)
+and Gamma_h=kappa0 eta_h^2 remain in delta_B B_r,h/Gamma_h. This can
+be made arbitrarily small at each fixed h by m. It is not a free uniform
+degree or complexity assertion. The target's geometric/source remainder,
+actual coupling and physical calibration retain7bd--7bf's scope.
+
+### The SOURCE is an actual unconditional packet, not a supplied field request
+
+Choose one literal positive-G/CX preparation A on a private active
+packet from its declared blank, possibly with extra packet padding.
+Owned7w/7ac supplies a finite word close enough to a canonical packet
+for its ACTUAL moments to lie in the decoder box. Prepare n copies by
+executing this SAME known word on n fresh private packets. No unknown
+input is cloned; all preparations and storage are inside the clock.
+Let psi_A be its ACTUAL unconditional endpoint, and define
+
+    r_A,a=<psi_A,(O_a tensor I_padding)psi_A>,
+    Y_A=R_h(r_A).                                    (518)
+
+No READY conditioning occurs in518. Approximation of a canonical packet
+only locates these actual moments in the existing chart and, where
+needed, preserves positive covariance. It is not an error term in the
+local differential below. The packet can have arbitrary INTERNAL
+geometry/CAR/padding correlations.
+
+The fixed ideal QUERY above is field independent. Put all forward
+packet preparations and their actual adjoints around it. The adjoint
+is the retained7j SourceI-expanded inverse; positive G/CX preparation
+alone does NOT provide it. Use one dedicated source port/spin outside the private packets and
+never address oldRIGHT. The port has its declared blank; the ORIGINAL
+source-spin keeps its actual input promise, including a genuinely free
+protected spin when it belongs to q. No second SourceI capability or
+new fixed-spin promise is added. Choose the pure-fresh target514 and
+QUERY as exact identity on this compiler-helper spin; its physical
+multiplicity is already included in r_h whenever free. Each complete inverse-letter macro restores
+those helpers on ALL columns. A raw insertion inside that macro can
+affect its one packet plus the shared helper, but other completed
+packet words act as identity on that helper. Thus its logical source
+lightcone still contains only ONE packet. A new cross-packet SOURCE
+gate or a helper not restored on all columns is outside this statement.
+All actual inverse/routing/SourceI stages count in N_SOURCE.
+
+The initial full cut is the cold source/query blanks tensor i_h. Every
+fresh RIGHT and failed/unused packet column stays in the physical heat;
+none increases the free input rank merely by being present. This is
+the supplied same-cut experiment, not proof that native Book01 selects
+that cut or those primitives compulsorily.
+
+### Exact local SOURCE covector, including the independently varied inverse
+
+Freeze the ACTUAL finite-m matrix cotangent W=(aI+zeta C_m^2)^(-1)C_m.
+It is Hermitian. The full scalar bank score L_n=-2zeta Tr_DATA(W K_n)
+retains ALL higher-order Hoeffding/correlated components. Its first
+conditional at the actual IID base satisfies
+
+    L_1=<L_n>I+(1/n)sum_a g_m,a(O_a-r_A,a I),
+    g_m=D_r J_m(r_A).                                (519)
+
+To see the coefficient, vary all n identical packet means together:
+symmetry gives n equal contributions and differentiating516 gives
+g_m. The one-slot operator law515 ensures that this first conditional
+has no other packet operator. This argument uses the actual finite
+J_m, not a target-critical gradient assigned to it.
+
+For a generated paired preparation variation, every supported local
+SOURCE row is therefore exactly
+
+    D_SOURCE J_m=g_m dot D r_bar,
+    r_bar=(1/n)sum_i <psi_i,O psi_i>.
+
+For a SINGLE independently varied forward leg its real first row is
+HALF the same Born-moment differential; the independent reverse leg
+has the other half. To retain a genuinely free protected source-spin,
+use isometries, not one supplied spin vector. Let j_S fix the packet/port
+blanks and be identity on that spin, of actual input rank d_s. Put
+Phi_f=A_tot j_S and Phi_b=B_tot^dagger j_S. Other protected target inputs
+are identity spectators of SOURCE. At B_tot=A_tot^dagger their logical
+packet state is exactly psi_A^n. Define
+
+    mu_f,a=Tr_spin[Phi_f^dagger O_bar,a Phi_f]/d_s,
+    mu_b,a=Tr_spin[Phi_b^dagger O_bar,a Phi_b]/d_s,
+    r_diamond=(mu_f+mu_b)/2, Phi=R_h(r_diamond),
+    D_SOURCE J_m=(D_Y J_m)(Y_A) D Phi.                (520)
+
+O_bar averages the same packet observable and is identity on helpers.
+Since QUERY is spin identity, the SAME protected-spin trace factors out
+of the full Book derivative; d_s is already in r_h and g_m, counted once.
+This is a spectral/operator source reader, not a free physical preparation
+of a maximally mixed helper. If its alternative contexts are physically
+read, their whole experiments are charged. For an actually fixed blank
+spin d_s=1 and the formula reduces to the two normalized vector moments.
+An input promise or target that does not have this spectator factor
+needs its operator-valued reader, not this unweighted trace formula.
+Formula520 is a first-covector identity at the matched actual execution,
+not global factorization through Phi away from that diagonal.
+
+The one-bank-plus-helper statement follows by tensoring519 with identity
+on the base helper and taking exactly this normalized protected trace. Consequently
+every local SOURCE tangent with D Phi=0 has ZERO ideal RETURN first source,
+even when g_m is nonzero. The entire finite correlated score was kept;
+its higher components are orthogonal to these one-bank lightcones.
+An arbitrary cross-bank entangled tangent can have zero D Phi but a
+NONZERO price source. The check below exhibits exactly that hostile case.
+No product restriction on every possible native variation is introduced.
+
+### Native QUERY approximation, real norms, and the precise parent substitution
+
+Compile the ONE fixed complete ideal QUERY unitary by7bg's positive-G/CX
+construction, with error e_Q on ALL columns. This compilation touches
+only logical packet/QUERY bits; the source port/spin, oldRIGHT and other
+protected factors remain exact spectators. Extra active dimensions and
+the full counter/label complements are paid. It need not remain exactly
+involutive, and it is not a free ideal readout at runtime.
+
+Choose e_Q AFTER m,n,A and its literal inverse count N_SOURCE are known.
+The general non-Hermitian resolvent estimate497 gives
+
+    |DB_SOURCE,actual[v]-(D_Y J_m)D Phi[v]|
+      <=[4r_h zeta N_SOURCE e_Q/a^2
+                 +N_SOURCE L_scene,N] ||v||_(gate-max).
+
+On the DECLARED homogeneous scene tensor internal-module placement,
+use496's weighted33-scene heat, not its bare-clock constant.
+The last term is unnecessary for a generated paired variation, since
+A_tot^dagger Q_hat A_tot has the SAME spectrum for every A_tot. Keep it
+for independent forward/reverse legs. Reserve QUERY-only padding before
+compilation as in7bg; increase the genuine N when needed, adding no new
+SOURCE stages. Thus both implementation debts divided by Gamma_h can
+be made small after the source words are fixed, with no length*error
+claim about the QUERY compiler.
+
+The incoming7bh actual RawZone application is preserved. Its500 proves
+that physical SourcePortPreparation can fail to commute with the scene
+weight. The logical packet profile used here is NOT automatically that
+RawZone realization. On the actual scene-stage graph501 the complete
+SOURCE covector instead retains its distributed heat term503:
+
+    DB_SOURCE=(D_Y J_m)D Phi+DH_actual+E_QUERY.
+
+The local return identities515--520 do not by themselves annul
+DH_actual on vertical SOURCE rows. The bound above and spectral paired
+cancellation require the homogeneous placement. Transport to RawZone
+must use its true operator/metric/cut map and all503 scene-weight rows;
+no factorial or zero-heat claim follows from the same endpoint alone.
+Primitive availability/locality for the declared7t profile likewise
+remains its existing actual-implementation premise. No new SourceI
+actuation on a copied scene or unproved physical bank is assumed.
+
+The NEW incoming7bi508--513 now supplies a stronger complete-heat
+application on7bh's DECLARED same-scene Hodge, including noncommuting
+core gates. Keep that carrier's stage0 input cut, U_hist=T^N on C0,
+identity on C1, and the whole two-grade trace including its index.
+Fix the complete source/processor core first, reserve the three genuine
+commuting QUERY-work padding wires, and let A_core=sum_t||g_t-h_t||.
+Incoming508 gives the ALL-ROW bound C_H A_core/N, counting every padding
+row. With its actual paid commonN, the source estimate here becomes
+
+    ||DB_SOURCE,actual-(D_Y J_m)D Phi||_(gate-max dual)
+      <=4r_h zeta N_SOURCE e_Q/a^2+C_H A_core/N.
+
+This bound no longer needs the core to commute with the scene weights.
+It requires the actual7bh Hodge, the proved local-bank SOURCE profile
+and genuinely commuting paid padding; these are not obtained from
+endpoint programmability alone. Its local padding feedback rows vanish
+by incoming7bi's operator calculation. Other cut/cross-register normals
+remain. Every new mode and H_base,N remains in the absolute price.
+After m,n,A,N_SOURCE and e_Q are fixed, compile the finite QUERY core,
+then choose N so A_core/(N Gamma_h) is small; SOURCE length is unchanged.
+No inverse gain or field lift is dropped. On another selected geometric
+test/placement retain its true DH_actual until a corresponding proof.
+
+The field term has its actual lift. In raw gate-max norm retain
+B_lift,h=||D Phi||_(gate-max->V_h): the error against the target field
+covector contains delta_B B_r,h B_lift,h, plus the displayed debts.
+There is NO inference B_lift,h h^4->0 or length*g_m->0. One may also
+report the covector in the explicitly defined readout-graph norm
+||v||=||D Phi[v]||_(V_h)+||v||_(gate-max); this is a mathematical norm,
+not proof that it is the original physical norm or that a bounded
+native right lift exists. On the homogeneous placement, or7bi's declared Hodge with its paid
+commuting-padding hypothesis, vertical local-source rows have the stated
+controlled heat-plus-query debt independently of g_m. Otherwise retain
+the actual vertical DH term.
+
+This supplies the previously missing CURRENT-target cold-kernel/input
+application: one fixed programme reads actual generated SOURCE moments,
+its full field-to-price first covector has520, and local independent
+preparation normals are accounted for. The old arbitrary supplied field
+request is not an input to this programme. It does NOT identify this
+readout with the original33scene metric, prove native admission of every
+needed field fork, eliminate independent QUERY/cut/clock or cross-bank
+normals, construct an exact joint finite critical point, or establish
+uniform native refinement. Those are the actual consuming obligations;
+none is closed by defining X_N as this graph. GR_closed=false.
+
+### One changed-step exact control
+
+The new check first uses a literal3-stage G/CX packet to compute actual
+noncommuting moments and positive covariance. The rational packet used
+for the subsequent full cold-matrix arithmetic is explicitly an interface
+fixture, not an exact native preparation assertion. It checks every16
+complex one-packet generator, the HALF independent-leg row, and a
+connected two-packet direction with zero decoded moment derivative but
+strictly nonzero Book source. It also retains a nonzero finite-degree
+Bernstein C1 error. No old native/compiler/GR/root/clock/Lean replay.
+
+```python
+# New local-source/cold-matrix interface. Rational packet below is not a native-word claim.
+import sympy as s
+from itertools import combinations
+from pathlib import Path
+import sys
+sys.path.insert(0,str(Path('02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24').resolve()))
+import native_execution as ne
+R=s.Rational;z=R(1,2**20);a=1-z
+G0=ne.Gate('G',(0,));CX=ne.Gate('CX',(0,1));G2=ne.Gate('G',(2,))
+e=ne.Execution(3,(0,1,2),(),(G0,CX,G2),ne.G_CX)
+ne.validate_execution(e,max_qubits=3,max_expanded_stages=10)
+pnative=ne.word_matrix(e,max_qubits=3)[:,0]
+# native_execution uses wire0 as the most significant bit.
+mask=1<<(e.qubits-1)
+Z0=s.diag(*[1 if j&mask==0 else -1 for j in range(8)])
+X0=s.zeros(8)
+for j in range(8):X0[j^mask,j]=1
+assert ne.exact_matrix_equal(s.Matrix([[(pnative.T*Z0*pnative)[0]]]),s.Matrix([[ne.P-ne.P**2]]))
+assert ne.exact_matrix_equal(s.Matrix([[(pnative.T*X0*pnative)[0]]]),s.zeros(1))
+# Anticommuting coordinates and a mixed reduced first wire give positive covariance.
+assert Z0*X0+X0*Z0==s.zeros(8)
+assert s.simplify(1-(ne.P-ne.P**2)**2).is_positive is True
+
+# Explicit correlated rational packet, used only for exact interface arithmetic.
+psi=s.Matrix([R(3,5),0,0,R(4,5)])
+O=[s.diag(1,-1,1,-1),s.Matrix([[0,1,0,0],[1,0,0,0],[0,0,0,1],[0,0,1,0]])]
+r=[(psi.T*T*psi)[0] for T in O]
+assert r==[-R(7,25),0] and psi.dot(psi)==1
+Z=s.diag(1,-1);X=s.Matrix([[0,1],[1,0]])
+B0=s.eye(2)/5;B1=Z/7;B2=X/11;B12=Z/13
+# This is the FULL cold matrix at all four SIGN nodes, never a channel or price table.
+def node(x,y):return B0+x*B1+y*B2+x*y*B12
+for x in (-1,1):
+    for y in (-1,1):
+        T=node(x,y)
+        assert T==T.T and (s.eye(2)-T*T).det()>0 and (s.eye(2)-T*T)[0,0]>0
+C=node(*r);W=(a*s.eye(2)+z*C*C).inv()*C
+Jrow=lambda dC:s.simplify(-2*z*s.re(s.trace(W*dC)))
+g=s.Matrix([Jrow(B1+r[1]*B12),Jrow(B2+r[0]*B12)])
+I=s.eye(4)
+# Conditional of symmetric injection into n=2 COMPLETE packets.
+K1=s.kronecker_product(I,B0)+s.kronecker_product((O[0]+r[0]*I)/2,B1)+s.kronecker_product((O[1]+r[1]*I)/2,B2)+s.kronecker_product((r[1]*O[0]+r[0]*O[1])/2,B12)
+L1=s.zeros(4)
+for i in range(4):
+    for j in range(4):L1[i,j]=-2*z*s.trace(W*K1[2*i:2*i+2,2*j:2*j+2])
+ell=(psi.T*L1*psi)[0]
+assert L1-ell*I==sum((g[j]*(O[j]-r[j]*I)/2 for j in range(2)),s.zeros(4))
+
+def gens(n):
+    for j in range(n):
+        T=s.zeros(n);T[j,j]=s.I;yield T
+    for j,k in combinations(range(n),2):
+        T=s.zeros(n);T[j,k]=1;T[k,j]=-1;yield T
+        T=s.zeros(n);T[j,k]=s.I;T[k,j]=s.I;yield T
+count=0;vertical=0
+for T in gens(4):
+    v=T*psi
+    dr=s.Matrix([2*s.re((v.conjugate().T*A*psi)[0]) for A in O])
+    paired=s.simplify(2*s.re((v.conjugate().T*L1*psi)[0]))
+    one=s.simplify(s.re((v.conjugate().T*L1*psi)[0]))
+    assert paired==(g.dot(dr))/2 and one==g.dot(dr)/4
+    if dr==s.zeros(2,1):assert paired==one==0;vertical+=1
+    count+=1
+assert count==16 and vertical>0
+# A genuinely connected TWO-packet tangent has all first moment rows zero,
+# yet a nonzero full Book source. Never extend the local theorem to it.
+u=(O[0]-r[0]*I)*psi;v=O[1]*psi
+eta=s.kronecker_product(u,v)+s.kronecker_product(v,u)
+base=s.kronecker_product(psi,psi)
+assert (base.T*eta)[0]==0
+for A in O:
+    bar=(s.kronecker_product(A,I)+s.kronecker_product(I,A))/2
+    assert (2*eta.T*bar*base)[0]==0
+nonlocal_dC=2*(1-r[0]**2)*B12
+assert Jrow(nonlocal_dC)!=0
+# A nonlinear scalar entry needs a real Bernstein C1 budget: degree2 maps x^2 to(1+x^2)/2.
+x=s.symbols('x',real=True)
+bern=sum(s.binomial(2,k)*((1+x)/2)**k*((1-x)/2)**(2-k)*R(2*k-2,2)**2 for k in range(3))
+assert s.expand(bern)==(1+x*x)/2 and s.diff(bern-x*x,x)==-x
+print('PASS native actual-packet moments; full cold-matrix one-slot law; all16 local generators; independent-leg half; nonlocal hostile control; genuine Bernstein C1 debt')
+```
+
 ## 8. Reproduction
 
 Run from this directory:

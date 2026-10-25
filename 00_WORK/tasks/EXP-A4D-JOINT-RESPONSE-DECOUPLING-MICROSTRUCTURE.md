@@ -12298,3 +12298,147 @@ Final scientific proof17884bytes, SHA256 d90bdd1491a82919b80ea4d2ce84bc4afe30ac3
 The new regression evaluates the full nuclear-norm dual with all raw rows, actual RawZone G/X core, paid2/5-CX identities, bright/dark8/10/12, retained PAD8 and both grades; it includes a polar/finite-difference control and the noncommuting X^4 false-baseline negative control. It is numerical support for the analytic proof, not a new exact physical certificate. No unchanged GR/root/CAR, amplifier or Lean replay. Affected integration and remote publication checks follow.
 
 Affected integration on62483da plus this exact insertion PASS: validate_work; validate_agent_protocol; gr_assembly check(valid=true,54active/98results/5discharged/22obligations,scientific_promotion=false); validate_repo(889claims/31assumptions/58aliases/183formal_support/918Leanclosure,warnings0); git diff --check. The three final reviews cover17884-byte proof pin d90bdd14. Removing only7bi restores the incoming Git primary byte-for-byte; the incoming brief is an exact prefix. All prior proof, negative control and limitation scopes remain. Only the two owned paths changed. Remote publication is checked separately from these local validations.
+
+### 25 October: actual native SOURCE packets supply the current whole-return field map
+
+Phase: native realization / actual SOURCE-to-field and full covector
+application. SAME PR334, constitutive/native-programme-v1. Scientific
+input907a470c with7bd--7bg plus OWNED7s/7ac. Only existing primary7bj
+and this brief are written; no new task, registry, action or selector.
+
+Current primary7bj514--520 applies the complete one-slot processor
+method to the CURRENT oriented geometry plus pure-fresh material cold
+return. It fixes the SAME i_h and true rankr_h=(2N_faces+1)q, full balanced
+reflection target and all complementary modes before compilation. Its
+ideal gamma1 target is NOT a claim that the finite7bf amplifier has
+readiness1. The new hardware approximates that complete operator by
+one fixed field-independent processor. The old rank8/lambda_minus are
+not imported; full target source/gain and derivedlambda_echo are kept.
+
+Missing parent application: current7bd--bg formerly consumed supplied
+field operands. The new process reads fields from ACTUAL unconditional
+native packets: psi_A=A|0>, r_A=<O>, Y_A=R_h(r_A). One private positive
+G_CX word is executed on n fresh packets; their storage, freshRIGHT,
+padding, actual adjoint and source helper/spin are inside the full price.
+No arbitrary external runtime field key or READY renormalization occurs.
+Packet approximation only locates actual moments in the existing chart;
+it is not a length-times-state-error assumption in the new differential.
+
+Fixed read-once SIGN effects and coherent ordered injections yield
+FULL DATA-valued cold kernel515 with the one-slot alphabet on every
+packet column. Table entries are FULL existing target operators, not
+action values, scalar log prices or reduced channels. Matrix Bernstein
+then approximates the actual cold return in C1; a smooth chart clamp
+is identity near the declared physical feature window. True material
+moment scales, M1/M2, r_h, feature Jacobian and Gamma_h enter517.
+No free moment amplification or mesh-uniform compiler is assumed.
+
+At the true actual IID packet base, the first Hoeffding conditional
+519 is scalar plus g_m/n times the moment operators. Higher components
+remain in the entire kernel; they are orthogonal to actual one-packet
+SOURCE lightcones. Thus the local SOURCE covector is EXACTLY the field
+pullback even when finiteg_m!=0. Vertical local RETURN rows vanish for the
+ideal processor. A SINGLE independent forward/reverse leg has HALF
+of the corresponding paired Born-moment row;520 uses the averaged
+forward/adjoint SOURCE reader and preserves both independent legs.
+The adjoint context is not a free performed additional measurement.
+
+Exact SOURCE inverse still uses7j SourceI/routing, with a dedicated
+source port/spin outside the packets and restored on all completed
+columns. Raw inverse insertions can touch one packet+helper; other
+completed packets are helper identity. No arbitrary cross-bank SOURCE
+edit is covered. QUERY approximation is selected only afterm,n,A and
+N_SOURCE; full-rank resolvent and weighted33scene heat debts are
+4r_h zeta N_SOURCE e_Q/(1-zeta)^2 and N_SOURCE L_scene,N. Real
+SOURCE liftB_lift,h remains in raw gate-max bounds. In particular
+neitherB_lift*h^4 nor length*g_m is declared small. The explicitly named
+readout-graph norm is mathematical bookkeeping, not a new physical law
+or a proved native norm equivalence.
+
+New decisive check only: literal3-stage private G/CX packet with actual
+noncommuting moments and exact positive covariance; separate rational
+full cold-matrix fixture checks all16 complex local generators, the
+independent-leg half, and a connected TWO-packet tangent with zero
+moment derivative but strictly nonzero Book source. It also retains a
+nonzero finite-degree Bernstein derivative error. The rational state
+is explicitly NOT asserted to be an exact native preparation.
+
+The first run exposed a native-wire convention mistake in the fixture:
+native_execution wire0 is MSB, not LSB. The observable mask was corrected
+after checking native_execution.py:366. No expected mathematical answer
+or scientific premise was weakened. The corrected changed-step run
+PASSed; a final rerun after replacing the floating positivity diagnostic
+by exact symbolic positivity also PASSed. Python3.9.6/SymPy1.14.0.
+No old GR/root/density/clock/compiler/amplifier/Lean replay.
+
+Frozen7bj INCLUDING next-heading separator:21348bytes,
+SHA256af9f770f35f9a4fc723240c11cdeb23e7f586ea95eba3e4e3439f7c209614b68.
+Embedded code excluding closing newline:3784bytes,
+SHA2561a159707988417219b17aef54edd754cfdf6a7b5a16f61610dad0a079d7d54d6.
+Final source-only reviews and structural validation are recorded below.
+
+Parent substitution is the CURRENT-target cold-kernel/SOURCE input law
+on the declared local preparation graph. Native ORIGINAL incidence/task
+admission, bounded field lifts, independent QUERY/cut/clock/cross-bank
+rows, joint finite critical existence and uniform physical refinement
+remain their own applications. No X_N equality is declared by definition;
+no physical GR, positive_gr or raw216 status is promoted.
+
+Protected-helper typing clarification: SOURCE spin retains its actual
+input promise. For a free spin520 uses forward/reverse ISOMETRIES and
+the normalized protected-input trace; that spin factor is already in
+the actual r_h and g_m. QUERY/target are exactly spectator on it. No
+new blank-spin promise or second SourceI capability is introduced.
+Vector moments are only the d_s=1 case. A non-spectator target needs
+its own operator-valued field reader. Code/calculations unchanged.
+
+Integration after incoming62483da5: its7bh499--507 and actual RawZone
+heat/source proof remain BYTE EXACT. At that earlier checkpoint the own insertion was7bi
+508--514; its current renumbering is stated below. Its logical packet placement does not supply RawZone source
+admission. For the actual scene-stage operator the exact full covector
+retains DH_actual from incoming503; no SOURCE-vertical heat neutrality
+or homogeneous factorial transport is inferred. This changes no
+return-kernel/source calculation or embedded code.
+
+Prior source-only reviews before the a078b107 intake: native_source_application,
+price_geometry_bridge and stationary_root_transfer all ACCEPT
+19917/3788febca5ee4c7b8324943008590ff3102387d4c9c9cf2a7d317b8925f37ecd,
+including protected-spin isometries, independent-leg half and actual
+RawZone heat. No reviewer edited or reran mathematics. Code is unchanged.
+
+Prior affected structural checks at62483da5 PASS: work, agent protocol, gravity
+assembly(valid=true;54active/98results/5discharged/22obligations;
+scientific_promotion=false), repository(889claims/31assumptions/
+58aliases/183formal_support/918Leanclosure;warnings0), and whitespace.
+This is local source/structural verification, not remote CI or physical
+acceptance. At that prior checkpoint, removing then7bi restored incoming62483da5 primary BYTE EXACT,
+SHA256c56e47768c75cfbae77498f2db4770af0b6051a55399721593120c32757a1106; incoming brief is an exact prefix.
+Only these two owned paths are changed.
+
+Integration after incominga078b107: all its7bi508--513 proof/code/
+receipts remain BYTE EXACT. Own insertion is7bj514--520. The new incoming
+all-row finite-core heat theorem composes directly with the SOURCE
+pullback on7bh's declared same-scene Hodge: retain actual stage0 cut
+and both Hodge grades; total debt is4r_h zeta N_SOURCE e_Q/a^2 plus
+C_H A_core/N with genuinely commuting paid internal QUERY padding.
+This removes homogeneous CORE as a required heat premise on that
+DECLARED graph; selected physical d_N, bank profile/locality and
+padding admission remain explicit. No new checker replay needed;
+return calculation and code are unchanged.
+
+Final integrated21348/af9f770f35f9a4fc723240c11cdeb23e7f586ea95eba3e4e3439f7c209614b68
+source-only ACCEPT: price_geometry_bridge and stationary_root_transfer.
+Both checked the new all-row heat composition, actual source count,
+full rank/cut/grade and physical-admission guards. The third reviewer
+already accepted all RETURN/Spin/local-source mathematics before this
+incoming heat-only composition; no pending review is represented as
+completed. Code unchanged; no reviewer replayed calculations or edited.
+
+Affected final integration on incominga078b107 PASS: work validation,
+agent protocol, gravity assembly(valid=true;54active/98results/
+5discharged/22obligations;scientific_promotion=false), repository
+(889claims/31assumptions/58aliases/183formal_support/918Leanclosure;
+warnings0), and whitespace. Removing7bj restores the FULL a078b107
+primary BYTE EXACT, SHA256e1740b631c5b9e8302595c938f08f2b3e6c264462e35e178009c63ea539f9315;
+incoming brief remains an exact prefix. Local checks are not remote CI
+or physical GR acceptance. Only the two owned insertion paths change.
