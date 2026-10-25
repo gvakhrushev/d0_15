@@ -811,14 +811,23 @@ as recorded for `orthogonal-exit-conditional-gram-einstein-source-ratio`, path
 the expected and observed blob hashes remain visible in the generated JSON. The eight unavailable
 objects are also listed individually there. No expected hash was rewritten.
 
+For each verified pinned Markdown source without an explicit section locator, the view now ranks
+up to three heading candidates by lexical overlap with the assembly-result statement. The candidate
+records include matched terms, overlap fraction, and the exact pinned line/heading coordinate; each
+is labeled `unreviewed_lexical_candidate`. This yields 178 review candidates across 50 result rows;
+four rows have no ranked section candidate. For example, `phase-count-counterexample` ranks the
+pinned heading `A4D resonance divisor: the phase-count nullity rule is false` at line 1 with 11 of
+12 query terms matched. These are retrieval leads only: all 54 section mappings remain incomplete,
+no C0 unit key is accepted, and all 54 semantic result relations stay unresolved.
+
 The regenerated artifact
 `sources/d0_proof_architecture_formalization_2026-10-24/assembly_result_declaration_crosswalk.json`
-was built at snapshot `69a0c9a145923cc09b54bf655f6a99134f95dcd9` with a clean worktree and SHA-256
-`145e683b74e8a70119f1b900ddbc306e9036eee7d35fe0ff4e6ce234d7c37814`. Its `D0.All` pass enumerates
-899 co-located declarations in nine current modules; the collector and Lean source digests are
-recorded in the file. Every one of the 54 semantic result relations remains `unresolved`, and
-`acceptance_inferred` is false. C0 remains unfrozen and independently unaccepted; these counts do
-not establish coverage.
+was built at snapshot `7114f99052963f00ed9a78510a75ce38a4e9665e` with a clean worktree and SHA-256
+`b1cbbc923dc02907d817e5288729713cdfc9e68cfe4f1972594768bb3f6aa920`. Its `D0.All` pass enumerates
+899 co-located declarations in nine current modules; Lean source digest
+`e2d01817a8f7a3c11b64f0e84a9a44aa58e82304715793c0fb95ddffcbae4dae` and collector digests are
+recorded in the file. `acceptance_inferred` is false for every result. C0 remains unfrozen and
+independently unaccepted; these counts do not establish coverage.
 
 
 ### 24 October refreshed all-claims Lean locator resolution
