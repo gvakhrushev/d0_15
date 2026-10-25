@@ -6189,3 +6189,57 @@ invalidates its declared application while unrelated prose does not, and the
 real cold-start replay above found every required source. This audits the
 current controls; it does not mean the full C0 package has been reviewed or
 accepted. No claim status or scientific owner changed.
+
+### Shared finite-coordinate expansion in ordinary and weighted adjoints (25 October 2026)
+
+The repeated private proof that a finite function is the sum of its
+coordinates times `Pi.single` has one canonical home now:
+`D0.Algebra.FiniteCoordinateBasis.finiteCoordinate_eq_sum_single`. Its exact
+scope is `[Fintype ι] [DecidableEq ι] [Semiring K]`; it depends on neither an
+inner product nor a weight profile.
+
+Both existing adjoint derivations consume this result in their actual proof
+terms: `finiteHermitianPairing_adjoint` and
+`finiteWeightedPairing_adjoint`. Their local duplicate `pi_eq_sum_single`
+proofs were removed. The compiled proof-dependency inventory confirms both
+edges. The statement and proof closures remain honest: the weighted identity
+retains its sole proposition input `hw : ∀ i, w i ≠ 0`, the unweighted
+identity has no proposition input, and each declaration reports exactly the
+standard trust footprint `{Classical.choice, Quot.sound, propext}`.
+
+The module is listed in `formal_support.csv` for both consumers and included
+in the generated `D0.All` public import. A source-bound regression checks the
+current compiled theorem types, trust footprints, proposition binders,
+proof-dependency edges, and inventory source digest. The inventory uses the
+existing CAR/Hodge snapshot path and contains 28 declarations: its previous
+25 declaration version is preserved at commit
+`4cfded11970445e0ed8efa58f5b3d2d9bd63fca1`, path
+`02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/car_hodge_diagonal_transpose_current_declaration_inventory_2026-10-25.json`,
+Git blob `37c595d9354b44ec2bb80832df287e26cf9cd103`, SHA-256
+`611f1f7f538d0b387c299a5428a444a7d1d8f6cc2e3dc14374e32f8aeecb1c64`.
+
+The refreshed 28 declaration inventory is the same file path, SHA-256
+`0e71add500f8db5d4b3548d639536f68813043b9f0f9ef86c9e90d05c803e8d9`.
+It records clean snapshot `3126540dc7afb80c25682a12e47c37e8ec7d062f`,
+`worktree_dirty=false`, public import `D0.All`, Lean 4.30.0, Lean-source
+digest `ecc3a835e2b3f285916eedd7d14f04bf8a08e89f0797940b4fc3434acc9a8a6a`,
+and collector SHA-256
+`5873b6dae017975ee7f5c3e20cb703ae422b18ae32c8611894b6f249d69e53a5`.
+The new module SHA-256 is
+`e2dd31f9bbb4e2fd29ac631cbdf4f21c61464cacfc4306e588563f74c13c5dc1`;
+the two consumer source hashes are
+`0481115fd1d32e571fc5bfadd1eebb880e4d07daef6f8b84841e287a2032216c` and
+`f07fceb849a48657dffa8165b6570109016adfc817322605e09b27d9812712d2`.
+
+The narrow `D0.Algebra.FiniteWeightedAdjoint` build compiled the new shared
+module and both adjoint consumers (2,948 Lake jobs). Generated Lean views and
+claim-map coverage pass; `tools.test_proof_architecture.py` passes **46/46**
+and `tools.test_lean_declaration_inventory.py` passes **16/16**. GitHub
+`guards` and `lean-build` both pass at PR head `3126540d`. An independent
+read-only API review found no actionable issue in the theorem scope, consumer
+dependencies, or support/import wiring.
+
+This is a finite algebra API and reuse refactor only. It changes no claim row,
+C0 disposition, application acceptance, adjoint interpretation, weight
+selection, or physical status. C0 freeze and final D0.All/Ready integration
+remain outstanding.
