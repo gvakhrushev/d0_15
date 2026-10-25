@@ -9211,3 +9211,70 @@ CHECK_RESULT.json 784f804c728f388807a78aae18225dd4e6545c3f4fe4d734eb316495d30960
 
 Runtime: mpmath=1.3.0, python=3.9.6, sympy=1.14.0.
 All12 recorded input hashes verified against final saved files. Primary7y remains8473bytes/SHA256 baf037aed9dfb670fe1524b9736332c42cfecd49d863243028f3558b19252409.
+
+### 25 October: direct Book source and the actual clock-Rayleigh application
+
+Phase: native realization, same constitutive owner/PR. This consumes
+primary7y's implemented complete clock and strict source, its frozen
+BOOK_PROOF(B14–B17), and the owned full unitary-orbit preparation Euler.
+Full Cost–Info identification is NOT made a universal GR prerequisite:
+the direct selected Book03§03.25 H+J route remains an independent route.
+Its actual operators, admissible variation map and physical selection
+are still required. Book03's bare master does not itself add a Rayleigh R.
+
+Exact new question/parent substitution: can the REAL same-clock Rayleigh
+term R=Tr(sigma Delta_clk), when that binding actually applies, cancel
+the new H+J source? On literal stage0 it is identically1. On ANY smooth
+FULL fixed-spectrum preparation orbit stationary at each u, the owned
+Euler gives[sigma,Delta_clk]=0 and Tr(Delta_clk Dsigma)=0. The all-root
+phase-speed bound then implies |D_uR|≤||Y′||/N. It is a spectral-block
+bound, not a matrix-root derivative bound. With N14142,u∈[1/5,3/10],
+the same bound for H and J′>1/5000 give
+D_u(H+J+R)>3/65000. Fixed-spectrum optimized Rayleigh envelopes have
+the same Lipschitz bound even at mode crossings; the pure/all-density
+relaxation is lambda_min, whereas fixed mixed spectrum uses ordered
+weighted eigenvalues. This removes only the putative clock-Rayleigh
+source cancellation, not an arbitrary originalR/work/constraint law.
+
+Carrier/norm/source: same full512fibre, rank4cut, N14142 and all14481408
+paired modes, rawH/logZ normalization, fixed beta512N² and z1/4;
+unit-u source, no physical42 norm or source-gain inference. Sigma has
+normalized nonnegative fixed spectrum on the same clock/fibre. A
+physical full active-unitary orbit or an external fixedRIGHT purification
+must actually admit the required tangents; immutable internal records,
+blank/stage constraints and generated preparations can restrict them.
+No permission to rotate sealed oldRIGHT follows from the mathematical
+orbit. The theorem is conditional on that orbit/Euler, and the stage0
+application uses its own exact diagonal-block identity instead.
+
+Write paths: primary7z, this existing brief, and
+sources/d0_native_clock_rayleigh_source_2026-10-25/ only. Smallest
+decisive check: exact rational source margin and native u-gap bounds,
+generic small FULL clock matrices verifying the stationary spectral
+bound and hostile controls showing why stationary commutation plus
+fixed occupations are both necessary. Actual native ground values use
+the owned ALL-spectrum reduction and frozen source receipt; no42-check,
+large native512/clock, original root, full128 or Lean replay is needed.
+
+Remaining application: direct Book03 requires the actual selected X_N
+and admitted field/cut/preparation tangent. A constrained orbit, moving
+RIGHT Gram, genuine spatial Rayleigh operator or another real stack
+source needs its own computed pullback; none is set to zero or fitted.
+No new action, Cost tariff, physical selector or GR_closed/raw216
+promotion is introduced.
+
+Final7z:9138bytes/SHA256
+2fa5d80f67afbedac07e486da9e7e1e423abd4ae35a7ab0d92d41d20ba57c46f.
+Finalchecker:12718bytes/SHA256
+98e75b76fa0b62d718aae8b90e38065bb747215b16456e6aae0000fa879316cf.
+Actualfinalreceipt:6150bytes/SHA256
+d3da6443b694bf3acc12c197085d027856f95054f29adfa072642c529b950a2f.
+Rootfinalrun exit0/PASS26; stdout=savedreceipt, all8inputpins verified.
+Independent analytical and final written-section review ACCEPT the
+exact pins, including full-orbit admission and fixed-occupation scope.
+Removing only7z recovers the36b0a857 primary byte-for-byte; every old
+packet is unchanged. No old42-check or expensive mathematical replay.
+
+Reproduce the changed application from repository root:
+
+    python3 02_REGISTRY/research/sources/d0_native_clock_rayleigh_source_2026-10-25/check_clock_rayleigh_source.py --output /tmp/native_clock_rayleigh_source.json

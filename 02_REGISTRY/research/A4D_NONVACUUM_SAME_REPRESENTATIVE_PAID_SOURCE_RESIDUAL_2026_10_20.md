@@ -6424,6 +6424,188 @@ Reproduce this changed operation from repository root:
     python3 02_REGISTRY/research/sources/d0_native_terminal_code_writer_2026-10-25/check_terminal_code_writer.py --output /tmp/native_terminal_code_writer.json
 
 
+## 7z. The same clock-Rayleigh source cannot supply the missing compensation
+
+**25 October direct-Book application.** Full identification of Cost−Info
+is NOT a universal prerequisite for a faithful native GR realization.
+The independently owned direct route in
+[paid-writer19.1](A4D_PAID_MOMENT_FIELD_WRITER_2026_10_21.md#191-correct-the-parent-route-before-applying-it)
+uses the actual selected Book03§03.25 operators and admitted variations.
+That bare master is H+J. A Rayleigh term R is a DIFFERENT binding, with
+its own state/operator and independent preparation equation. This section
+applies the owned same-clock HJR interface(72) of that writer to the
+implemented7y clock; it does not append R to the original bare master.
+
+The missing operand in(240) therefore cannot be filled by naming it
+Rayleigh without computing its source. For the literal clock of7y, the
+two natural proposals can now be decided. At the actual stage0 birth,
+its clock energy is constant. Even if that fixed birth preparation is
+relaxed to ANY full fixed-spectrum preparation orbit and its independent
+Euler equations solved, its energy source is too small to cancel7y's
+strict H+J source. This is a new application of the owned all-clock-root
+bound and preparation Euler, not another Cost-assignment ambiguity proof.
+
+Let T be the actual primitive cyclic unitary shift, retaining every gate
+and wire, with T^N containing Y_n. Its bare paired Hodge operator is
+`Delta_clk=I-(T+T†)/2`, on BOTH degrees. Keep7y's full512 fibre,
+actualN14142, rank4return cut, fixed z1/4 and beta512N². A normalized
+Rayleigh density gives
+
+\[
+ R_{\rm clk}(u)=\operatorname{Tr}[\sigma(u)\Delta_{\rm clk}(u)],
+ \qquad
+ DR_{\rm clk}=\operatorname{Tr}(\sigma D\Delta_{\rm clk})
+                         +\operatorname{Tr}(\Delta_{\rm clk}D\sigma).
+                                                               (241)
+\]
+
+All operators and states are in the ORIGINAL stage coordinates. For
+N>1 the stage0 diagonal block of Delta_clk is identity. Consequently
+`sigma=|0><0| tensor rho`, with ANY normalized incident rho, has
+R_clk=1 and D_uR_clk=0, including moving rho and its correlations.
+Both Hodge degrees retain this identity for a normalized density on
+their direct sum. No factor2 is inserted in this expectation. Thus
+THIS stage0 term leaves the strict source(238) unchanged. Such a birth
+state need not solve an unrestricted preparation Euler; this is a
+separate exact application on the fixed birth constraint.
+
+### All independently stationary preparations on one fixed-spectrum orbit
+
+For the alternative preparation domain, assume explicitly that sigma(u)
+stays on ONE normalized fixed-spectrum unitary orbit across u, and is
+stationary with respect to EVERY independent full unitary preparation
+at fixed operators/cut. The already-owned Euler then gives
+
+\[
+ [\sigma,\Delta_{\rm clk}]=0,\qquad
+ D\sigma=[A,\sigma]\ (A^\dagger=-A),\qquad
+ \operatorname{Tr}(\Delta_{\rm clk}D\sigma)=0.            (242)
+\]
+
+Commutation alone is insufficient if occupation weights change along
+the proposed section. The fixed orbit, or a separate proof that the
+last trace vanishes, is essential. For example, transferring occupation
+between two distinct clock eigenvalues preserves commutation at every
+point but adds their energy difference times the transfer velocity.
+The equation is therefore not imposed on a changing RIGHT Gram.
+
+The COMPLETE clock eigenvalues are
+
+\[
+ \lambda_{jk}(u)=1-\cos[(2\pi k+\theta_j(u))/N],
+ \qquad k\bmod N,
+ \qquad e^{i\theta_j(u)}\in\operatorname{spec}Y(u).       (243)
+\]
+
+Every local phase speed is bounded by ||Y′||. Thus every eigenvalue
+speed of Delta_clk is at most ||Y′||/N, including all repeated modes.
+At an eigenvalue of multiplicity>1, the first-order speeds are the
+eigenvalues of the compression of DDelta_clk to that eigenspace.
+Since sigma commutes with Delta_clk, only those spectral diagonal
+blocks contribute to Tr(sigma DDelta_clk). Their positive normalized
+weights give the bound
+
+\[
+ |D_uR_{\rm clk}|
+       \le {\|Y'(u)\|\over N}
+       \le {1\over N\sqrt{1-u^2}}.                    (244)
+\]
+
+This uses the existing phase-speed theorem of
+[BOOK_PROOF(B14–B15)](sources/d0_native_terminal_code_writer_2026-10-25/BOOK_PROOF.md#5-a-strict-configured-source-bound-including-every-heat-mode).
+It is NOT a bound on the norm of the derivative of an arbitrary
+matrix Nth root; noncommuting directions need not obey that bound.
+Gauging actual prefixes to a closing holonomy is only a calculation
+basis. Its moving commutator has zero trace against stationary sigma;
+the state is transported too. It is not frozen or replaced physically.
+Without preparation stationarity, a moving prefix gauge can produce
+a large R derivative even when the whole monodromy is constant. The
+bounded checker retains exactly this hostile control.
+
+On the WHOLE comparison interval u in[1/5,3/10], N14142 gives
+`1/[N sqrt(1-u²)] <=10/(14142 sqrt(91)) <1/13000`.
+The same bound applies to raw H by the already-owned complete thermal
+trace identity. Combining it with the actual rank4 return lower bound
+J′>1/5000, every smooth section satisfying(242) therefore obeys
+
+\[
+ D_u(H_Y+J_Y+R_{\rm clk})
+ >{1\over5000}-{2\over13000}
+ ={3\over65000}>0.                                    (245)
+\]
+
+This keeps the genuine unit-coefficient Rayleigh interface when that
+interface is actually selected. A different coefficient, operator,
+moving clock/cut/temperature or additional stack term keeps its own
+source; it is not absorbed into this estimate.
+
+### Optimized preparations, including eigenvalue crossings
+
+Fix any normalized nonnegative density spectrum w once for the whole
+interval. Its Rayleigh minimum over the full unitary orbit is exactly
+
+\[
+ E_w(u)=\min_{\sigma\in\mathcal O_w}\operatorname{Tr}(\sigma\Delta_{\rm clk})
+       =\sum_j w_j^\downarrow\lambda_j^\uparrow(u).       (246)
+\]
+
+For pure preparations, or minimization over all densities, this is
+lambda_min(Delta_clk). For a fixed MIXED spectrum it is the displayed
+weighted ordered sum, not in general lambda_min. Every ordered clock
+eigenvalue has the same Lipschitz bound(244); normalized positive
+weights preserve it. Hence H+J+E_w is strictly increasing, even at
+crossings where no differentiable eigenvector/preparation selector
+exists. More explicitly, for u<v in this common chart,
+
+\[
+ (H_Y+J_Y+E_w)(v)-(H_Y+J_Y+E_w)(u)
+             >{3\over65000}(v-u).                        (247)
+\]
+
+No physical ground-state preparation or reset is claimed. This is the
+value of the stated mathematical relaxation and an all-orbit bound.
+The same fixed-spectrum hypothesis is crucial here too.
+
+The native Q33 endpoints n1,67,1161 satisfy the exact Q(p) inequalities
+`u_67-u_1>1/50` and `u_1-u_1161>1/100`, on the same positive-sine
+branch. Consequently BOTH corresponding optimized HJR gaps exceed
+4*10^-7 for EVERY fixed w, including the pure relaxation. These are
+finite configuration comparisons at the actual common clock, not a
+claim that an autonomous programme already varies a hardwired n.
+The full modes underlying(246) remain the original14481408; evaluating
+the pure ground via principal phases deletes none of them.
+
+**Parent route change.** Under the actual same-clock Rayleigh binding,
+neither stage0 birth nor independently stationary FULL fixed-spectrum
+clock preparations supply the unknown cancellation in(240). This rules
+out those two proposed completions of THIS execution. It does not prove
+that its physical preparation domain is that full orbit. Sealed internal
+oldRIGHT, source-spin-only operations, a fixed stage/blank sector and
+causally generated states can restrict variations and need not imply
+(242). A genuinely external spectator reference with fixed Gram may
+realize the orbit only after that active/reference map is proved; no
+rotation of the internal immutable records is thereby authorized.
+
+The next direct-Book application must exhibit its actual selected X_N,
+one admitted field/cut/preparation tangent and the complete source on
+that tangent. A spatial residual operator, moving RIGHT Gram, actual
+constraint reaction or another original stack term may differ; those
+sources must be computed on the same process. Cost−Info remains one
+separate sufficient route rather than a newly imposed universal gate.
+No flat/global-scale argument is transplanted to a fixed curved collar.
+This unit-u theorem is not the physical42-covector or its tiny-source
+budget, and is not a no-go for other native actions or GR. Selection,
+all independent equations and common GR refinement remain open.
+
+The new [bounded application checker](sources/d0_native_clock_rayleigh_source_2026-10-25/check_clock_rayleigh_source.py)
+uses small full clock controls and consumes the frozen7y source
+receipt. It does not replay the old42 checks or unroll a long512/clock
+matrix. Its floating examples are distinct from the analytical bound
+and exact native u-gap arithmetic. Reproduce from repository root:
+
+    python3 02_REGISTRY/research/sources/d0_native_clock_rayleigh_source_2026-10-25/check_clock_rayleigh_source.py --output /tmp/native_clock_rayleigh_source.json
+
+
 ## 8. Reproduction
 
 Run from this directory:
