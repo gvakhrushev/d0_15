@@ -2634,3 +2634,39 @@ artifact SHA-256
 `gr_assembly.py check` reports a valid 54-result assembly with
 `scientific_promotion=false`. These are pin, build, and routing checks only;
 they do not accept a semantic or physical link.
+
+### `smooth-parametrix` exact owner-source reconciliation (25 October 2026)
+
+The existing `smooth-parametrix` result now pins the final merge commit for
+PR #216, `5523d8f679c1ea02f9b73d757c81649740010d0a`, rather than the earlier
+commit that happened to carry the same memo bytes. Its SHA-256 remains
+`3ba0c4355999b147bc77048b082660558c538c48d49ef7fff98d4541069bf28a`; the
+crosswalk verifies the immutable pin and confirms that the current checkout
+matches it. The evidence now names the memo's exact section locators for the
+partial verdict, smooth Fourier tails, IR parametrix, normal-center
+cancellation, summed remainder, arbitrary fixed smooth realizations, and the
+still-open coupled normal-rescue certificate.
+
+The locator emits seven
+`source:5523d8f679c1ea02f9b73d757c81649740010d0a:02_REGISTRY/research/MEMO_A4D_J2_SMOOTH_RESONANCE_CLOSURE.md#...`
+section-key candidates with status `candidate_section_keys_need_review`.
+The result still has unresolved declaration, claim, and semantic dispositions,
+with `acceptance_inferred=false`; it has no pinned Lean declaration or declared
+application edge. PR #216 itself records only
+`J2-SMOOTH-PARTIAL-CLOSURE` and leaves its refinement-uniform full coupled
+normal rescue unresolved. Therefore this pin does not bind the memo to the
+separate RAW-216 exact-source terminal and does not close that obligation.
+
+The regenerated all-result crosswalk retains 54 results and 191 evidence
+references, of which 182 pins verify; its source-locator summary explicitly
+states that these are not accepted C0 units or semantic source relations. The
+artifact is at
+`sources/d0_proof_architecture_formalization_2026-10-24/assembly_result_declaration_crosswalk.json`,
+snapshot `136e47add98e4ccc6b4d1f3eaa9401b648d0f66f` (`worktree_dirty=true`),
+Lean source digest
+`6ff55724920a14097e3a4078050c6e8f1f2b15ba6e98aca48623d6691a6e7c40`, and
+artifact SHA-256
+`6e119be67b78c0d5484e9db7c49f8c2ae0c265157bf54086ed2ab719e3d60bc5`.
+`gr_assembly.py check` remains valid for 54 active results with
+`scientific_promotion=false`. This is a source-provenance refinement only;
+RAW-216 and physical GR selection remain open.

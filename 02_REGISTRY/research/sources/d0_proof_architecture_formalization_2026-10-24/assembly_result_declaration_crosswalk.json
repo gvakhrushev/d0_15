@@ -1,12 +1,12 @@
 {
-  "snapshot_commit": "4aff58affff315eae09572640166b90cb0e5bdde",
+  "snapshot_commit": "136e47add98e4ccc6b4d1f3eaa9401b648d0f66f",
   "worktree_dirty": true,
   "source_digests": {
     "02_REGISTRY/claims.csv": "8ba9bfbac99a5fe0d8e8f2b6ef8d69f3190f8c1073051eca9f005e5a93b578cf",
     "02_REGISTRY/assumptions.csv": "2bc9f8c040a776d784fdbfdf62569b72e4f70ff0a182fc66d0ced31cb5f13a36",
     "02_REGISTRY/formal_support.csv": "6b1ba0ee5954ffcabea30b672391a062f6ace687eb9aaaf204278e292c067476",
     "02_REGISTRY/aliases.csv": "8cda9e7ebfa26a01a04a4d51b56eb6b93425816a5fe073aa74cbae94041f672f",
-    "02_REGISTRY/gr_assembly/applications.json": "a27ee96b1801d0548a2cec0f85c94626148e1ccee971e489efd59f239e607165",
+    "02_REGISTRY/gr_assembly/applications.json": "0fdf82182b4acb4775323cacdee8d8b4d476cf8a24b9c516394b63fc04cad1bb",
     "02_REGISTRY/gr_assembly/contract.json": "72fb3bbbc320b4af217cbe7c09580b44556b354e9668cbd11e76933fa8209ba6",
     "02_REGISTRY/presupposition_edges.json": "7ff9d1e4ac3447f321afd603eab66554468644bb5fddb33551fdfa22e3e2585d"
   },
@@ -13471,12 +13471,24 @@
       "source_locator_crosswalks": [
         {
           "locator": {
-            "source_file_key": "source:77d3ab6059bd1a3ce48637b97b9f30aa8825fc5f:02_REGISTRY/research/MEMO_A4D_J2_SMOOTH_RESONANCE_CLOSURE.md",
+            "source_file_key": "source:5523d8f679c1ea02f9b73d757c81649740010d0a:02_REGISTRY/research/MEMO_A4D_J2_SMOOTH_RESONANCE_CLOSURE.md",
             "exact_unit_key_candidates": [
-              "source:77d3ab6059bd1a3ce48637b97b9f30aa8825fc5f:02_REGISTRY/research/MEMO_A4D_J2_SMOOTH_RESONANCE_CLOSURE.md#L9: 0. Verdict and proof boundary"
+              "source:5523d8f679c1ea02f9b73d757c81649740010d0a:02_REGISTRY/research/MEMO_A4D_J2_SMOOTH_RESONANCE_CLOSURE.md#L9: 0. Verdict and proof boundary",
+              "source:5523d8f679c1ea02f9b73d757c81649740010d0a:02_REGISTRY/research/MEMO_A4D_J2_SMOOTH_RESONANCE_CLOSURE.md#L99: 2. Choose the realization once; smooth tails and aliasing",
+              "source:5523d8f679c1ea02f9b73d757c81649740010d0a:02_REGISTRY/research/MEMO_A4D_J2_SMOOTH_RESONANCE_CLOSURE.md#L206: 4. Analytic IR construction and its exact limitation",
+              "source:5523d8f679c1ea02f9b73d757c81649740010d0a:02_REGISTRY/research/MEMO_A4D_J2_SMOOTH_RESONANCE_CLOSURE.md#L314: 5. Constant branch and nonlinear normal-center locality",
+              "source:5523d8f679c1ea02f9b73d757c81649740010d0a:02_REGISTRY/research/MEMO_A4D_J2_SMOOTH_RESONANCE_CLOSURE.md#L355: 6. Full summed IR remainder for a fixed realization",
+              "source:5523d8f679c1ea02f9b73d757c81649740010d0a:02_REGISTRY/research/MEMO_A4D_J2_SMOOTH_RESONANCE_CLOSURE.md#L403: 7. Arbitrary fixed smooth realizations: amplitude versus refinement",
+              "source:5523d8f679c1ea02f9b73d757c81649740010d0a:02_REGISTRY/research/MEMO_A4D_J2_SMOOTH_RESONANCE_CLOSURE.md#L447: 8. UV normal theorem: what a sufficient certificate must actually say"
             ],
             "section_refs": [
-              "L9: 0. Verdict and proof boundary"
+              "L9: 0. Verdict and proof boundary",
+              "L99: 2. Choose the realization once; smooth tails and aliasing",
+              "L206: 4. Analytic IR construction and its exact limitation",
+              "L314: 5. Constant branch and nonlinear normal-center locality",
+              "L355: 6. Full summed IR remainder for a fixed realization",
+              "L403: 7. Arbitrary fixed smooth realizations: amplitude versus refinement",
+              "L447: 8. UV normal theorem: what a sufficient certificate must actually say"
             ],
             "ranked_section_candidates": [],
             "unit_locator_status": "candidate_section_keys_need_review",
@@ -13485,7 +13497,7 @@
             "snapshot_path": null
           },
           "pin": {
-            "ref": "77d3ab6059bd1a3ce48637b97b9f30aa8825fc5f",
+            "ref": "5523d8f679c1ea02f9b73d757c81649740010d0a",
             "path": "02_REGISTRY/research/MEMO_A4D_J2_SMOOTH_RESONANCE_CLOSURE.md",
             "expected_sha256": "3ba0c4355999b147bc77048b082660558c538c48d49ef7fff98d4541069bf28a",
             "pinned_blob_sha256": "3ba0c4355999b147bc77048b082660558c538c48d49ef7fff98d4541069bf28a",
@@ -13514,10 +13526,18 @@
           "hypotheses": {},
           "evidence": [
             {
-              "ref": "77d3ab6059bd1a3ce48637b97b9f30aa8825fc5f",
+              "ref": "5523d8f679c1ea02f9b73d757c81649740010d0a",
               "path": "02_REGISTRY/research/MEMO_A4D_J2_SMOOTH_RESONANCE_CLOSURE.md",
               "sha256": "3ba0c4355999b147bc77048b082660558c538c48d49ef7fff98d4541069bf28a",
-              "section_ref": "L9: 0. Verdict and proof boundary"
+              "section_refs": [
+                "L9: 0. Verdict and proof boundary",
+                "L99: 2. Choose the realization once; smooth tails and aliasing",
+                "L206: 4. Analytic IR construction and its exact limitation",
+                "L314: 5. Constant branch and nonlinear normal-center locality",
+                "L355: 6. Full summed IR remainder for a fixed realization",
+                "L403: 7. Arbitrary fixed smooth realizations: amplitude versus refinement",
+                "L447: 8. UV normal theorem: what a sufficient certificate must actually say"
+              ]
             }
           ],
           "reported_state": "PARTIAL / refinement-uniform full coupled stationary estimate unresolved"

@@ -61,10 +61,18 @@
       "hypotheses": {},
       "evidence": [
         {
-          "ref": "77d3ab6059bd1a3ce48637b97b9f30aa8825fc5f",
+          "ref": "5523d8f679c1ea02f9b73d757c81649740010d0a",
           "path": "02_REGISTRY/research/MEMO_A4D_J2_SMOOTH_RESONANCE_CLOSURE.md",
           "sha256": "3ba0c4355999b147bc77048b082660558c538c48d49ef7fff98d4541069bf28a",
-          "section_ref": "L9: 0. Verdict and proof boundary"
+          "section_refs": [
+            "L9: 0. Verdict and proof boundary",
+            "L99: 2. Choose the realization once; smooth tails and aliasing",
+            "L206: 4. Analytic IR construction and its exact limitation",
+            "L314: 5. Constant branch and nonlinear normal-center locality",
+            "L355: 6. Full summed IR remainder for a fixed realization",
+            "L403: 7. Arbitrary fixed smooth realizations: amplitude versus refinement",
+            "L447: 8. UV normal theorem: what a sufficient certificate must actually say"
+          ]
         }
       ],
       "reported_state": "PARTIAL / refinement-uniform full coupled stationary estimate unresolved"
