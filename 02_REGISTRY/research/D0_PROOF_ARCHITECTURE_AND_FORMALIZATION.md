@@ -7639,3 +7639,62 @@ references, and finds all six sources for the shared-Gram/Lorentz case. Its
 source-change versus unrelated-prose impact control passes. This is retrieval
 and compiled-API reuse evidence; the independent C0 disposition and selected
 physical-action map remain open.
+
+### Shared endpoint Gram-transport API (26 October 2026)
+
+The generic finite-matrix layer now also owns the exact frame-dressed
+transport identity. `D0.Algebra.finiteGram_dressed_transport_compatible`
+proves
+
+`(Theta_x * L * Theta_y⁻¹) * finiteGram eta Theta_y *
+ (Theta_x * L * Theta_y⁻¹)ᵀ = finiteGram eta Theta_x`
+
+from `L * eta * Lᵀ = eta` and `IsUnit Theta_y.det`. It requires neither
+invertibility of `eta` nor of `Theta_x`. The geometric result
+`a4dDressedLink_metric_compatible` now specializes this API; its original
+Lorentz-link premise and target-solder invertibility hypothesis are unchanged.
+The generic theorem and specialization have an elaborated dependency edge in
+the current compiled inventory and application crosswalk. A read-only
+independent review returned scoped PASS on the statement, proof hypotheses,
+and specialization.
+
+Lean source commit `fe15cd8c9df4dccda2957e22acd66365e6908469` pins
+`FiniteGramTangent.lean` SHA-256
+`c696c95e7280ee5c814b82009ef866f31e54c9c82bbce88620ecb83dccb41b8c` and
+`A4DStarFiniteLorentzQuotient.lean` SHA-256
+`6e3ac022152a2d6c3f2e5274626e9b9d223e830e2ebf5b26bb3dbbeaf158cbc0`. Both
+narrow builds passed (**2,946/2,946** and **3,215/3,215**); final public
+`D0.All` passed **4,581/4,581**.
+
+Eight refreshed compiled inventories and the `metric-provenance` crosswalk
+were generated at clean snapshot `e89fbab65d24613875fcbbde4cf5b14dcffee760`,
+with Lean-source digest
+`0cac96c00908285378d7eb922ac268eb69cc67737afad40f0a7b41cb83b95df5` and
+`worktree_dirty=false`:
+
+| Compiled inventory | Resolved | SHA-256 |
+|---|---:|---|
+| `nonvacuum_brinkmann_stencil_declarations_2026-10-26_gram_transport.json` | 15/15 | `69156b6f1c3a38a6a02cab8834351ccafcd255ca647b96c93ffe1248ba4bd896` |
+| `car_hodge_diagonal_transpose_current_declaration_inventory_2026-10-26_gram_transport.json` | 36/36 | `3cc05f663606e73601b264342544e97c7fd365b6f38ba24bf5a99f8fcf90efe3` |
+| `finite_matrix_partial_trace_current_declarations_2026-10-26_gram_transport.json` | 9/9 | `5988b1f9c114e6074537c61ad6ea76a439af49ded4714feb4b5092e5b7b92bc0` |
+| `archive_shift_topology_current_declarations_2026-10-26_gram_transport.json` | 26/26 | `6c577f9d7b0bdc6aad1939cfdf357d7b74a0f777a40eba10acf32d14333b198d` |
+| `source_port_preparation_tensor_inventory_2026-10-26_gram_transport.json` | 73/73 | `d77224157db26e62cee38540ed180436116163e351da27c89e5e3591add8bb16` |
+| `flat_tensor_shared_api_declarations_2026-10-26_gram_transport.json` | 4/4 | `a3edf5f97ce885a34eeb5b239f8ce0544b024f9d26612ff28311f91f1b615130` |
+| `proper_role_lorentz_orbit_declarations_2026-10-26_gram_transport.json` | 5/5 | `874d031cc37a28c90ef0fe920416017f6c0cb6ac3a43baf7f8432683d6fb3452` |
+| `finite_gram_orbit_shared_api_declarations_2026-10-26_gram_transport.json` | 13/13 | `529dc6ee3706cb14f5aac9b6261204a2dbb6ec02142345760f44bdd5102af208` |
+
+The current crosswalk is
+`metric_provenance_crosswalk_2026-10-26_fe15cd8c.json`, SHA-256
+`e03dc4170d2df4626d8e3f630856b4f5074f67878c7100cb2332b582c53724fc`.
+All explicit Lean declaration locators resolve, including the new API edge;
+the claim locator and semantic source relation remain unresolved and
+`acceptance_inferred=false`.
+
+The updated cold-start receipt is
+`proof_architecture_cold_start_summary_2026-10-26_gram_transport.json`. The
+replay found every source in **22/22** cases, passed the **23-case** benchmark,
+checked **133** required-source references, and passed the source-change versus
+unrelated-prose impact control. Its semantic scope review remains manual. This
+is generic matrix algebra and a finite Lorentz application; it adds no physical
+selection or C0 acceptance, and leaves time orientation and the
+selected-action-to-carrier map open.

@@ -696,9 +696,16 @@ class ProofArchitectureTests(unittest.TestCase):
             / "proper_role_lorentz_orbit_declarations_2026-10-26.json"
         )
         supplement = json.loads(supplement_path.read_text(encoding="utf-8"))
-        self.assertRegex(supplement["snapshot_commit"], r"^[0-9a-f]{40}$")
+        # Preserve this clean source receipt as historical evidence.
+        self.assertEqual(
+            supplement["snapshot_commit"],
+            "32d9281e3f22d2d1bb5c7b919c8578f7599aef46",
+        )
         self.assertFalse(supplement["worktree_dirty"])
-        self.assertEqual(supplement["lean_source_digest"], lean_task_build.source_digest())
+        self.assertEqual(
+            supplement["lean_source_digest"],
+            "dabf250dc4288c227cfc51c8f6b2352dae221b14717d78c8b08d705445db19de",
+        )
         self.assertEqual(supplement["public_import_root"], "D0.All")
         declarations = {row["name"]: row for row in supplement["declarations"]}
         self.assertEqual(set(declarations), required | {
