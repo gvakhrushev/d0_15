@@ -5124,3 +5124,35 @@ It does not freeze C0, assign semantic coverage, change claim/owner status,
 or discharge the open scientific and physical premises. C0 remains open and
 independently unaccepted; #334 and the existing physical owners remain
 preserved.
+
+### Exact compiled lookup and dependency record for the full-cochain bound (25 October 2026)
+
+The bounded `show --lean` query resolved
+`D0.Research.NativeWeightedDiracFourierNullModes.archiveLorentzian_full_cochain_kernel_finrank_ge_diagonal_family`
+in the compiled public import `D0.All`. The elaborated type is
+`∀ (N : ℕ), 16 + 8 * (D0.archiveFibers N - 1) ≤ Module.finrank ℂ ↥(D0.Geometry.archiveLorentzianCARDiracLinear N).ker`.
+The declaration lives in
+`03_FORMALIZATION/D0/Research/NativeWeightedDiracFourierNullModes.lean`
+(declaration lines 568–708; selected name at line 572). The exact-name query
+returns a compiled declaration, while the source map still classifies the
+broader Eq. (7) unit as partial: this theorem supplies a full-cochain kernel
+lower bound, not an exact total kernel dimension.
+
+The unabridged single-declaration inventory is
+`02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/archive_lorentzian_full_cochain_kernel_declaration_2026-10-25.json`
+(12,883 bytes; SHA-256
+`e9f2e85c138cfb022745ca4ca61bdddd9c2d95a0f82870aa716f2ba138552277`). It
+records snapshot `49f7f3f506286860c82c5960bf4735fb123095f2` with a clean
+worktree, Lean source digest
+`66ef38e495f22833eab58841ce5365575e96e2ecef382473d47b4986b2a07a8b`,
+collector SHA-256
+`05223c192382c3e084fd44d452c3dd11559bc5f0460b455604493635f2247c57`,
+toolchain `leanprover/lean4:v4.30.0`, and public import `D0.All`. It contains
+265 proof dependencies and 42 type dependencies. The axiom closure lists
+`Classical.choice`, `Quot.sound`, `propext`, and the three existing CAR
+anticommutator `native_decide` leaves; `sorryAx` is absent.
+
+The exact-name lookup has no claim ID and creates no semantic claim edge. The
+theorem remains conditional on the declared finite-carrier operator and role
+signs; the exact null-root count, gauge quotient, physical source selection,
+and GR closure remain open under their existing owners.
