@@ -3,6 +3,7 @@ import Mathlib.Data.Matrix.Basic
 import Mathlib.Data.Fintype.Basic
 import Mathlib.Data.Real.Basic
 import D0.Algebra.FiniteMatrixTensorProduct
+import D0.Algebra.FiniteMatrixPartialTrace
 
 open scoped BigOperators
 
@@ -178,8 +179,20 @@ theorem stage3_tensor_exactness {N : Type} [Fintype N] [DecidableEq N] {n : Nat}
 theorem stage3_trace_relation {G N : Type} [Fintype G] [DecidableEq G] [Fintype N]
     (Γ_SM : Matrix N N ℝ) :
     Matrix.trace (tensor_product_I (G := G) Γ_SM) = Fintype.card G * Matrix.trace Γ_SM := by
-  simpa only [nsmul_eq_mul] using
-      (D0.Algebra.finiteMatrixTensorProduct_trace_one_left (X := G) Γ_SM)
+  calc
+    Matrix.trace (tensor_product_I (G := G) Γ_SM) =
+        Matrix.trace (D0.Algebra.finiteMatrixPartialTraceLeft
+          (tensor_product_I (G := G) Γ_SM)) := by
+      symm
+      exact D0.Algebra.finiteMatrixPartialTraceLeft_trace
+        (tensor_product_I (G := G) Γ_SM)
+    _ = Matrix.trace (Matrix.trace (1 : Matrix G G ℝ) • Γ_SM) := by
+      congr 1
+      simpa [tensor_product_I] using
+        (D0.Algebra.finiteMatrixPartialTraceLeft_tensorProduct
+          (A := (1 : Matrix G G ℝ)) Γ_SM)
+    _ = Fintype.card G * Matrix.trace Γ_SM := by
+      simp [Matrix.trace_smul, Matrix.trace_one]
 
 theorem stage3_trace_relation_three {G N : Type} [Fintype G] [DecidableEq G] [Fintype N]
     (Γ_SM : Matrix N N ℝ) (h_card : Fintype.card G = 3) :

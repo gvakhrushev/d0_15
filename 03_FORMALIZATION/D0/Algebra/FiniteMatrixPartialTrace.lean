@@ -30,6 +30,17 @@ theorem finiteMatrixPartialTraceLeft_trace {V N R : Type*}
   rw [Fintype.sum_prod_type]
   rw [Finset.sum_comm]
 
+/-- Tracing out the left factor of a tensor product returns the trace of
+that factor times the retained operator. -/
+theorem finiteMatrixPartialTraceLeft_tensorProduct
+    {V N R : Type*} [Fintype V] [CommSemiring R]
+    (A : Matrix V V R) (B : Matrix N N R) :
+    finiteMatrixPartialTraceLeft (finiteMatrixTensorProduct A B) =
+      Matrix.trace A • B := by
+  ext i j
+  simp [finiteMatrixPartialTraceLeft, finiteMatrixTensorProduct,
+    Matrix.trace, Matrix.diag, Finset.sum_mul]
+
 /-- If a product-carrier operator commutes with `1 ⊗ C`, its partial trace
 over the first factor commutes with `C`. -/
 theorem finiteMatrixPartialTraceLeft_commutes_rightTensor

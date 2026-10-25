@@ -1933,7 +1933,9 @@ class ProofArchitectureTests(unittest.TestCase):
                       matter_wrapper["proof_dependencies"])
 
         spectrum_trace = declarations["D0.Spectrum.stage3_trace_relation"]
-        self.assertIn("D0.Algebra.finiteMatrixTensorProduct_trace_one_left",
+        self.assertIn("D0.Algebra.finiteMatrixPartialTraceLeft_trace",
+                      spectrum_trace["proof_dependencies"])
+        self.assertIn("D0.Algebra.finiteMatrixPartialTraceLeft_tensorProduct",
                       spectrum_trace["proof_dependencies"])
         partial_trace = declarations[
             "D0.Matter.partial_trace_commutes_with_shift"
@@ -1967,6 +1969,12 @@ class ProofArchitectureTests(unittest.TestCase):
         ]
         self.assertIn("D0.Algebra.finiteMatrixPartialTraceLeft",
                       generic_trace["proof_dependencies"])
+        generic_tensor = declarations[
+            "D0.Algebra.finiteMatrixPartialTraceLeft_tensorProduct"
+        ]
+        self.assertIn("CommSemiring R", generic_tensor["elaborated_type"])
+        self.assertIn("D0.Algebra.finiteMatrixTensorProduct",
+                      generic_tensor["proof_dependencies"])
         generic_intertwiner = declarations[
             "D0.Algebra.finiteMatrixPartialTraceLeft_commutes_rightTensor"
         ]
@@ -1977,6 +1985,7 @@ class ProofArchitectureTests(unittest.TestCase):
             "sorryAx" in axiom
             for name in (
                 "D0.Algebra.finiteMatrixPartialTraceLeft_trace",
+                "D0.Algebra.finiteMatrixPartialTraceLeft_tensorProduct",
                 "D0.Algebra.finiteMatrixPartialTraceLeft_commutes_rightTensor",
             )
             for axiom in declarations[name]["axioms"]
@@ -1992,6 +2001,26 @@ class ProofArchitectureTests(unittest.TestCase):
             "D0.Algebra.finiteMatrixPartialTraceLeft_commutes_rightTensor",
             consumer_intertwiner["proof_dependencies"],
         )
+        generation_lift = declarations[
+            "D0.Matter.partial_trace_generation_lift"
+        ]
+        self.assertIn("Fintype.card G", generation_lift["elaborated_type"])
+        self.assertIn(
+            "D0.Algebra.finiteMatrixPartialTraceLeft_tensorProduct",
+            generation_lift["proof_dependencies"],
+        )
+        generation_neutrality = declarations[
+            "D0.Matter.generation_trace_neutrality_connection"
+        ]
+        self.assertIn(
+            "D0.Matter.partial_trace_generation_lift",
+            generation_neutrality["proof_dependencies"],
+        )
+        for name in (
+            "D0.Matter.partial_trace_generation_lift",
+            "D0.Matter.generation_trace_neutrality_connection",
+        ):
+            self.assertNotIn("sorryAx", declarations[name]["axioms"])
 
         support = {
             row["lean_module"]: row
@@ -1999,6 +2028,8 @@ class ProofArchitectureTests(unittest.TestCase):
         }
         consumers = support["D0.Algebra.FiniteMatrixPartialTrace"]["referenced_by"]
         self.assertIn("03_FORMALIZATION/D0/Matter/ArchivePartialTrace.lean",
+                      consumers)
+        self.assertIn("03_FORMALIZATION/D0/Spectrum/GenerationTensorExactness.lean",
                       consumers)
 
     def test_source_port_preparation_consumes_shared_tensor_api(self) -> None:

@@ -137,6 +137,16 @@ theorem partial_trace_commutes_with_phase_shift {V : Type} [Fintype V] [Decidabl
     (partialTraceV Γ_tot) * (D0.Geometry.archiveShiftMatrix n) = (D0.Geometry.archiveShiftMatrix n) * (partialTraceV Γ_tot) :=
   partial_trace_commutes_with_shift Γ_tot (D0.Geometry.archiveShiftMatrix n) h_comm
 
+/-- The archive component of `1 ⊗ Γ_SM` is the exact generation
+multiplicity times `Γ_SM`. -/
+theorem partial_trace_generation_lift {G : Type} [Fintype G] [DecidableEq G] {n : Nat}
+    (Γ_SM : Matrix (archivePhaseIndex n) (archivePhaseIndex n) ℝ) :
+    partialTraceV (D0.Spectrum.tensor_product_I (G := G) Γ_SM) =
+      Fintype.card G • Γ_SM := by
+  rw [partialTraceV, D0.Spectrum.tensor_product_I]
+  rw [D0.Algebra.finiteMatrixPartialTraceLeft_tensorProduct, Matrix.trace_one]
+  rw [← Nat.cast_smul_eq_nsmul ℝ (Fintype.card G) Γ_SM]
+
 theorem density_uniform_from_commute {V : Type} [Fintype V] [DecidableEq V] {n : ℕ} [NeZero n]
     (Γ_tot : Matrix (V × ZMod n) (V × ZMod n) ℝ)
     (h_comm : Γ_tot * (kronecker_I_C (D0.Geometry.archiveShiftMatrix n)) = (kronecker_I_C (D0.Geometry.archiveShiftMatrix n)) * Γ_tot) :
@@ -196,10 +206,9 @@ theorem generation_trace_neutrality_connection {G : Type} [Fintype G] [Decidable
     NeutralSource (localTraceDensity (partialTraceV Γ_lift)) := by
   unfold NeutralSource
   rw [sum_localTraceDensity_eq_trace]
-  rw [trace_partialTrace]
   rw [h_lift]
-  rw [D0.Spectrum.stage3_trace_relation Γ_SM]
-  rw [h_zero]
+  rw [partial_trace_generation_lift]
+  rw [Matrix.trace_smul, h_zero]
   simp
 
 end D0.Matter
