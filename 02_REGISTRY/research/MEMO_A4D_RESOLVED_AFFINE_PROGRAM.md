@@ -7,6 +7,25 @@
 `dff7498b9071ad4d9fd1580b80829d91eb55f534`. Current research inputs retain their
 exact source pins in the [assembly](../gr_assembly/README.md#current-scientific-gate).
 
+## 25 October — CLOSED operator-to-Born Book feedback and involutive reference; the precise endogenous selection gate
+
+[The full operator theorem and TWO exact checkers](A4D_CLOSED_FEEDBACK_NO_RETURN_PROBABILITY_AND_CANONICAL_RECIPROCAL_DUALITY_2026_10_25.md) consume the real closed P/Q/finite U, ORIGINAL \(F=PU^\dagger(I-P)UP\) and fixed Book \(\zeta=2^{-20}\). They prove exactly, in ALL finite dimensions and including noncommuting field jets:
+\[
+J(F)=-\ln\det(I-\zeta F)=-\ln p_{\emptyset}(F),\quad
+p_{\emptyset}(F)=\Pr_{\Lambda^d V_F}(\hbox{no internal archive occupancy}),
+\quad V_F=\begin{pmatrix}\sqrt{I-\zeta F}&-\sqrt{\zeta F}\\
+\sqrt{\zeta F}&\sqrt{I-\zeta F}\end{pmatrix}.
+\]
+The last equality is a **finite closed fermionic filled-state Born construction** on the doubled one-particle carrier: \(\Lambda^d V_F\) is unitary, its no-archive amplitude is \(\det\sqrt{I-\zeta F}\), all other sectors survive, and its one Born probability is EXACTLY the original Book determinant. It is NOT claimed to be an admitted original G/CX/CAR16 hardware word; its potentially large new fermionic carrier, full preparation, clock and end-test are still physical admission/pricing obligations. The **one-mode Born response alone is insufficient**: a single-particle mixture on \(F_1\oplus F_2\) does NOT produce the determinant; the multi-mode Slater / repeated-history sector is load-bearing.
+
+The same Book J is \(\log\sum_n\zeta^n\operatorname{Tr}(\mathrm{Sym}^nF)\), with an exact basis-free cyclic trace recursion and rigorous value/source tails. Those repeatable symmetric occupancy labels are another *mathematical* representation of the SAME no-archive probability, NOT the same full fine quantum instrument as the fermionic Slater model or the original Julia/full128. Thus physical future-faithful retention must select which entire actual process is required.
+
+**New reciprocity:** \(R_\zeta(F)=(I-F)(I-\zeta F)^{-1}\) is an involutive POSITIVE contraction, swaps 0 and 1, obeys \(J(F)+J(R_\zeta F)=-d\ln(1-\zeta)\), and has full noncommuting derivative \(DR_\zeta(F)[H]=-(1-\zeta)(I-\zeta F)^{-1}H(I-\zeta F)^{-1}\). In the concurrent genuine spatial paired-return owner §7bb, this identifies its *one positive paid direct-sum determinant* as the no-archive surprisal of \(F_A\oplus R_\zeta(F_B)\), not a negative external counterterm or a source fitted to Einstein. The original mixed Lorentz/coframe source is preserved; unrestricted independent-arm normals remain nonzero.
+
+**Parent logic sharpened:** One-mode survival \(1-\zeta f\), true ALL-MODE factorization/Slater closure and basis invariance force the whole determinant UNIQUELY; but the original M1/CORE has not yet selected this exact closed return task/filled-sector price, its actual native admissible word, protected input/clock and independent physical variations. Therefore the determinant's *mathematical form* is no longer mysterious, but its *physical compulsory realization* remains the decisive gate. The earlier [three paid-word D_min/Euler fork](A4D_DMIN_THREE_PAID_WORDS_TO_EULER_FORK_2026_10_25.md) is a conditional second-stage falsifier ONLY: its competitor words must be actual equivalent required tasks under the same closed history, and the real whole-history D_min versus Book price order must be proved, not inferred from identical gate counts. In particular different physical metric outcomes may belong to different future-test tasks. Do NOT replace the physical task selection with arbitrary smooth action-germ embedding.
+
+No original Book/action/claims/selection statuses changed; `GR_closed=false`.
+
 ## 25 October — a finite D_min → Euler *binary fork* on the already paid #334 native source
 
 [Exact three-paid-native-word theorem and 461 rational hostile controls](A4D_DMIN_THREE_PAID_WORDS_TO_EULER_FORK_2026_10_25.md) change the final physical proof search. Consume the EXISTING original-native *common-clock* actual 0,+,− finite-word comparisons of the main source owner §7ay (431)–(435). No new continuum programme variations, action, geometry detector, clock or history are introduced.
