@@ -72,38 +72,16 @@ theorem a4dRightLorentz_gram_complete
         IsRoleLorentz Λ ∧ Ψ = Θ * Λ := by
   constructor
   · intro hgram
-    let Λ : Matrix Role Role ℝ := Θ⁻¹ * Ψ
-    have hgram' : Θ * roleLorentzMetric * Θ.transpose =
-        Ψ * roleLorentzMetric * Ψ.transpose := by
-      simpa [D0.Algebra.finiteGram] using hgram
-    have hright : Θ.transpose * (Θ⁻¹).transpose = 1 := by
-      rw [← Matrix.transpose_mul]
-      rw [Matrix.nonsing_inv_mul Θ hΘ]
-      simp
-    have hΛ : IsRoleLorentz Λ := by
-      unfold IsRoleLorentz
-      dsimp [Λ]
-      calc
-        (Θ⁻¹ * Ψ) * roleLorentzMetric * (Θ⁻¹ * Ψ).transpose =
-            Θ⁻¹ * (Ψ * roleLorentzMetric * Ψ.transpose) * (Θ⁻¹).transpose := by
-              rw [Matrix.transpose_mul]
-              simp only [Matrix.mul_assoc]
-        _ = Θ⁻¹ * (Θ * roleLorentzMetric * Θ.transpose) * (Θ⁻¹).transpose := by
-              rw [hgram']
-        _ = (Θ⁻¹ * Θ) * roleLorentzMetric *
-              (Θ.transpose * (Θ⁻¹).transpose) := by
-              simp only [Matrix.mul_assoc]
-        _ = roleLorentzMetric := by
-              rw [Matrix.nonsing_inv_mul Θ hΘ, hright]
-              simp
-    refine ⟨Λ, hΛ, ?_⟩
-    dsimp [Λ]
-    calc
-      Ψ = 1 * Ψ := by simp
-      _ = (Θ * Θ⁻¹) * Ψ := by rw [Matrix.mul_nonsing_inv Θ hΘ]
-      _ = Θ * (Θ⁻¹ * Ψ) := by rw [Matrix.mul_assoc]
-  · rintro ⟨Λ, hΛ, rfl⟩
-    exact (D0.Algebra.finiteGram_right_invariant roleLorentzMetric Θ Λ hΛ).symm
+    rcases
+      (D0.Algebra.finiteGram_right_orbit_complete roleLorentzMetric Θ Ψ hΘ).mp
+        hgram with
+      ⟨Λ, hΛ, hΨ⟩
+    exact ⟨Λ, by simpa [D0.Algebra.finiteGram, IsRoleLorentz] using hΛ, hΨ⟩
+  · rintro ⟨Λ, hΛ, hΨ⟩
+    apply
+      (D0.Algebra.finiteGram_right_orbit_complete roleLorentzMetric Θ Ψ hΘ).mpr
+    refine ⟨Λ, ?_, hΨ⟩
+    simpa [D0.Algebra.finiteGram, IsRoleLorentz] using hΛ
 
 /-- The determinant-one subgroup of the finite Lorentz isometries. This
 records spatial orientation; it does not impose a time-orientation component. -/

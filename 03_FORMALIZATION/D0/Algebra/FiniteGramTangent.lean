@@ -1,4 +1,5 @@
 import Mathlib.Data.Matrix.Basic
+import Mathlib.LinearAlgebra.Matrix.NonsingularInverse
 import Mathlib.Tactic
 
 /-!
@@ -37,6 +38,50 @@ theorem finiteGram_right_invariant {ι : Type*} [Fintype ι] [DecidableEq ι]
         Θ * (Λ * η * Λ.transpose) * Θ.transpose := by
           simp only [Matrix.mul_assoc]
     _ = Θ * η * Θ.transpose := by rw [hΛ]
+
+/-- On a nondegenerate left frame, equality of finite Gram matrices is exactly
+membership in the right orbit of the isometry group of the fixed form. The
+fixed form `η` itself need not be invertible; only the reference frame `Θ`
+must be. -/
+theorem finiteGram_right_orbit_complete {ι : Type*} [Fintype ι]
+    [DecidableEq ι] (η Θ Ψ : Matrix ι ι ℝ) (hΘ : IsUnit Θ.det) :
+    finiteGram η Θ = finiteGram η Ψ ↔
+      ∃ Λ : Matrix ι ι ℝ, finiteGram η Λ = η ∧ Ψ = Θ * Λ := by
+  constructor
+  · intro hgram
+    let Λ : Matrix ι ι ℝ := Θ⁻¹ * Ψ
+    have hgram' : Θ * η * Θ.transpose = Ψ * η * Ψ.transpose := by
+      simpa [finiteGram] using hgram
+    have hright : Θ.transpose * (Θ⁻¹).transpose = 1 := by
+      rw [← Matrix.transpose_mul]
+      rw [Matrix.nonsing_inv_mul Θ hΘ]
+      simp
+    have hΛ : finiteGram η Λ = η := by
+      unfold finiteGram
+      dsimp [Λ]
+      calc
+        (Θ⁻¹ * Ψ) * η * (Θ⁻¹ * Ψ).transpose =
+            Θ⁻¹ * (Ψ * η * Ψ.transpose) * (Θ⁻¹).transpose := by
+              rw [Matrix.transpose_mul]
+              simp only [Matrix.mul_assoc]
+        _ = Θ⁻¹ * (Θ * η * Θ.transpose) * (Θ⁻¹).transpose := by
+              rw [hgram']
+        _ = (Θ⁻¹ * Θ) * η *
+              (Θ.transpose * (Θ⁻¹).transpose) := by
+              simp only [Matrix.mul_assoc]
+        _ = η := by
+              rw [Matrix.nonsing_inv_mul Θ hΘ, hright]
+              simp
+    refine ⟨Λ, hΛ, ?_⟩
+    dsimp [Λ]
+    calc
+      Ψ = 1 * Ψ := by simp
+      _ = (Θ * Θ⁻¹) * Ψ := by rw [Matrix.mul_nonsing_inv Θ hΘ]
+      _ = Θ * (Θ⁻¹ * Ψ) := by rw [Matrix.mul_assoc]
+  · rintro ⟨Λ, hΛ, hΨ⟩
+    rw [hΨ]
+    exact (finiteGram_right_invariant η Θ Λ (by
+      simpa [finiteGram] using hΛ)).symm
 
 /-- Exact symmetrization witness: every symmetric matrix is `C + Cᵀ` for
 `C = q/2`. -/
