@@ -12987,6 +12987,663 @@ the task/role graph, uncovered normal equations and general refinement
 scope remain. GR_closed=false; positive_gr and raw216 stay open.
 
 
+## 7ay. Whole-price native secants: a constructive bridge with an exact admission boundary
+
+25 October2026; SAME PR334, input a7063ecb708e1cad695754ccb3811419cdbfd7f2. Compose the
+actual inverse/clock owners7j/7w/NG6, the joint source407--410, the
+native observation maps417--422 and the original regularized solution
+protocol423. The parent question is whether the formal field cofield
+can be obtained from prices of ACTUAL fixed-alphabet executions. It
+can, on the declared task interface. This construction also admits a
+specific extra source, so programme realizability cannot by itself
+select the proposed physical variation domain.
+
+Original Book02:78--82 and201 permits finite differences of the whole
+partition/pressure on a declared finite operator family; a C1 selector
+of finite native words is not required. Book02:580--588 still requires
+an admissible typed family. The following supplies actual endpoints,
+common paid clocks and the exact source comparison. It does not
+silently identify its parameter with original X_N.
+
+### One finite catalogue, the same paid inventory, and exact whole heat
+
+At fixed finite resolution and the owned regular collars take a finite
+catalogue of real native encoder words B_sigma, sigma=0,+,-, on the
+SAME padded active module. The initial protected factor and blank
+factory are common. Preserve the existing private-cohort, physical
+cut and fixed-middle requirements; use balanced recording C. Every
+inverse is its actual all-column native inverse7j, with restored
+helper/Spin. The complete logical endpoints have form
+
+    E_sigma=C (B_sigma^dagger M B_sigma tensor I_bank) C,
+    P_(t,sigma)=W_(t,sigma) P_in W_(t,sigma)^dagger.      (431)
+
+Do not freeze P_t across different programmes. Blank scratch adds
+columns to the full operator but does not increase rank P_in. The
+scene factor, if present, keeps its own owned compatibility conditions;
+this statement does not permit arbitrary new scene mixing.
+
+A literal equal-inventory completion exists. Before each sigma echo,
+execute B_tau followed by its exact inverse for every other catalogue
+entry tau. These are real identity excursions. Each completed word
+then executes exactly one forward and one inverse copy of EVERY B_tau,
+the same M, C and closing stages. Thus G, SourceI, CX inventory, full
+carrier and clock length N agree. This is paid before execution, with
+the entire catalogue declared in the task. It is not retrospective
+padding or a claim that generating an unknown programme is free.
+Additional synthesis/preparation work actually required by a task must
+be included in its common paid prefix/interface; its existence is not
+inferred from the catalogue formula. For fixed-middle echoes the more
+economical even-parity/CX^2 completion in NG6 also suffices;7w's exact
+2/5-CX identities handle general length residues on legal ACTIVE wires.
+No protected oldRIGHT wire is used as padding.
+
+All431 are conjugate to the SAME full M tensor I_bank. The owned prefix
+gauge theorem at common N therefore makes their entire counting heat
+exactly equal, INCLUDING the added work, unused columns and every
+clock mode. It is not a discarded constant or an approximate heat
+calculation. With the actual wrap cut the feedback rank is r=rank P_in,
+without a fictitious factor N. On the existing positive collar,
+
+    B_sigma=H_N(M)+J(Qhat_sigma),
+    J(Q)=-r log(1-zeta+zeta S(Q)^2),
+    S(Q)=product_j(1-d_j Q_j),
+    B_+-B_-=J(Qhat_+)-J(Qhat_-).                        (432)
+
+Any allowed N dependence in the original parameters is evaluated at
+this COMMON N. Equal operation counts alone do not assert equality of
+arbitrary extra valuations;432 concerns the complete specified Book
+action. All prior absolute-price and same-programme scopes remain.
+
+### A finite-word source contrast, with the correct gain and errors
+
+Include the original B_0 in the same catalogue and compute its actual
+w0, a_j0 and A0=sum_j a_j0 gbar_j as in408. Set Gamma0=w0 A0>0 at this
+completed clock. Suppose the target endpoint family is the source-
+conjugate physical lift407 at the fixed catalogue centre. Compile its
+endpoints at +/-t into B_+,B_- with actual mean errors at most epsilon_Q.
+Use the existing compiler at this FIXED finite carrier; a smooth choice
+of words as t varies is unnecessary. True inverse, all input columns,
+private middle and shared-factor restrictions remain as above.
+
+Let C_J be a finite bound for wa_j/(w0 a_j0) along the compact common
+collar. The mean-value formula for J gives
+
+    |[B_+-B_-]/(2t Gamma0) - E_M[v]|
+      <= C_J epsilon_Q/(|t| gbar_min)
+         + |t|^2 sup_|u|<=|t| |(J(Q(u)))'''|/(6 Gamma0).
+                                                               (433)
+
+A safely enlarged C_J may absorb the two endpoint error conventions.
+Both constants are evaluated for this fixed finite context. Heat
+contributes ZERO error because every compiled complete endpoint is an
+exact conjugate, even if its encoder only approximates the target.
+The w factor cancels in the first term; no inverse-w precision is
+required from a crude absolute-price error estimate. Choose t and the
+native precision so that epsilon_Q=o(|t| gbar_min); keep the true Taylor
+bound. Then433 converges to420, the SAME complete field cofield. This
+is a constructive price-source bridge without retuning primitive G.
+The common clock can grow with precision; costs and constants are not
+silently held at the earlier uncompleted N. At fixed finite M and a
+strict report collar the normalized derivatives through order3 have
+bounds uniform in r>0 and 0<zeta<1: each derivative is w times a
+polynomial in bounded s_j^(-1), d_j and
+rho=zeta S^2/(1-zeta+zeta S^2), with 0<rho<1; w(u)/w0 is bounded by
+the compact bounds on S(u)/S(0). Division by Gamma0 cancels w0. Thus
+a permitted clock dependence of r or zeta alone does not create a
+precision/clock circularity in433. Other changed parameters require
+their own supplied uniform bounds.
+
+There are two DIFFERENT task applications. Separate prospective
+alternatives use the full B_+-B_- in432. Putting both endpoints inside
+one internally branching programme instead gives
+
+    Q_j=sum_l mu_jl qhat_jl,
+    B=H_N+J(Q),
+    D B=w sum_j a_j sum_l qhat_jl D mu_jl.               (434)
+
+This is not sum_l mu_l J(qhat_l). Its source is the already proved420
+when the actual key variation407 is supplied. Two Born endings alone
+do not provide that variation. Common initial task data and a common
+catalogue also do not prove autonomous selection of its continuation.
+If a transcript is irreversibly sealed between branches, its full
+operator is different and must be recomputed; an unsealed request and
+a generated inverse cannot be substituted for that physical record.
+
+### The same bridge realizes the nonzero whole-query source
+
+For the actual unconditional7at encoder gamma=1, put
+
+    P=A i i^dagger A^dagger,
+    H=(1/2)[Pi_1,P].                                    (435)
+
+This is EXACTLY7au412, with all algorithmic input columns, no fit to
+the chosen source state and identity on oldRIGHT. Its sign convention
+gives DE=E(I-E) and ||H||<=1/4. A full-matrix compiler is sufficient,
+but an explicit structural implementation avoids that representation.
+Introduce a fresh PRIVATE real rotation bit with J2^2=-I, and put
+X=J2 tensor Pi_1, Y=J2 tensor P. Then
+
+    [X,Y]=-2 I tensor H,
+    C(s)=exp(sY) exp(sX) exp(-sY) exp(-sX),
+    C(s)=I+2s^2 I tensor H+O(s^3).
+
+For |s|<=1 the elementary third-derivative product bound gives
+||C(s)-exp(2s^2 I tensor H)||<=13|s|^3. Indeed the third derivative
+norm of the product is at most4^3; its first derivative at0 is zero
+and its quadratic term is [Y,X]. The exponential remainder is at
+most2s^4. Orthogonal telescoping then bounds n repetitions by
+13 n|s|^3. Taking s=sqrt(|t|/(2n)) gives error at most
+13|t|^(3/2)/(2^(3/2)sqrt(n)). Use the inverse word for negative t.
+
+The P-controlled rotation is
+(I tensor A) exp(s J2 tensor i i^dagger)(I tensor A^dagger).
+Compute the finite factory-blank predicate with private reversible
+work, rotate the private bit, and uncompute. The original free bank
+and oldRIGHT are not tested as blanks. Bounded-arity real reversible
+logic with clean work and the owned full-column native SO compiler
+supply these operations, with their actual errors and expanded word
+lengths. At fixed arity each compiled operation can be made accurate
+enough that their telescoped total is at most the assigned budget.
+The other work columns remain real unitary columns in the full heat;
+they are not projected away. This gives a finite structural algorithm,
+with polynomial logical cost in the actual encoder length, number of
+factory bits and inverse error budget, before its stated native
+precision overhead. No polylogarithmic total-error claim is made.
+
+Thus apply431--433 to exp(+/-tH)A, using actual inverse words and paid
+completion. With epsilon_Q=o(t), the normalized full-price contrast
+converges, at each fixed finite cohort context, to
+
+    sum_j a_j <Psi_j,E_j(I-E_j)Psi_j> / A_M.
+
+The positive operator margin and actual primary mean in413--414 give
+the SAME strictly positive lower bound. It is not removed by accurate
+compilation, matched inventory, a common clock, full heat, or improved
+source readout. A free-query exclusion based only on the cost of
+storing a general matrix is therefore unavailable.
+
+Preservation of an independently fixed retained record algebra is a
+real possible boundary: W^dagger R W=R, or [H,R]=0 to first order.
+It permits controlled reading; it does not mean tensor identity.
+The present H preserves oldRIGHT but can change active query labels.
+For example, at psi=sqrt(1-q)|00>+sqrt(q)|11> (report,label),
+H=sqrt(q(1-q))/2 (|11><00|-|00><11|) changes the label projector.
+The labels are new private work in the echo; declaring them immutable
+solely to exclude435 would add the desired constraint rather than
+derive it. An actual retained-task/role law must establish that boundary.
+
+### Parent substitution and route decision
+
+The field cofield is now the limit of whole-price contrasts between
+actual fixed-alphabet words on a common paid interface. Continuous G
+calibration and a smooth selector of native words are unnecessary for
+THIS contrast construction. The same interface realizes the additional
+positive source435. Consequently, adopting realizable price contrasts
+as physical admission without further task typing cannot single out
+the local graph or establish full stationary closure of this family.
+
+Neither statement identifies these growing-clock comparisons with a
+bounded tangent of the former fixed-N raw-stage Dirac graph. An altered
+primitive letter may remain a finite operator distance away even when
+the compiled endpoint is very close; dividing that distance by t is
+not controlled by433. In particular408 cannot be promoted from its
+specified norm/domain to all native programme differences.
+
+The next parent application is the original closed task/record/role
+constraint and its native dynamics, or a different justified physical
+source/domain construction. It must preserve434 and explain the status
+of435. Merely compiling more accurately, replacing the original action
+by a branch average, or relabelling an endpoint norm as the primitive
+Dirac norm cannot supply it. The positive regularized field theorem423
+remains valid at its stated scope. No exact-root requirement is restored;
+no GR_closed, positive_gr/raw216 or registry promotion is made.
+
+
+## 7az. Exact native spectral stationarity and the Palatini--CAR germ application
+
+25 October2026; SAME PR334 / constitutive/native-programme-v1.
+Consume the original Book01 complement, the complete P/U variation
+owner, the paid clock TC1--TC2,7ad and the existing primary all42
+Palatini--CAR equations. This changes the response to7au/7ay: an
+unsharp return is not the only native carrier. A different exact native
+corner removes its positive whole-query first-source obstruction.
+The resulting construction is a realization of a supplied action;
+its physical constitutive selection remains a separate application.
+
+### One native operation supplies the full stationary base
+
+Use ACTIVE tag, blank ancilla a and blank spectator s, with a genuinely
+free ACTIVE channel input of full dimension C. It may be a power-of-two
+padding of the required channels; retain every padding column. Genuine
+oldRIGHT and any inherited inert protected input factors are untouched.
+Let q be their actual input multiplicity in the original counting trace.
+The full fibre has dimension8Cq and the initial/closing cut is
+
+    U0=CX(tag,a) tensor I_channel tensor I_s tensor I_protected,
+    P0=I_tag tensor |0a><0a| tensor I_channel
+                    tensor |0s><0s| tensor I_protected,
+    rankP0=2Cq,    C0=i0^dagger U0 i0=diag(1,0) tensor I_Cq,
+    F0=I-C0^dagger C0=diag(0,1) tensor I_Cq.           (436)
+
+The spectator keeps the full real gate in SO. It is blank on the
+input cut but BOTH its columns remain in the heat. CX is the actual
+registration primitive of FiniteProtocolClock.register, which acts on
+an arbitrary arm and blank record. A genuinely prepared blank tag
+cannot be renamed a free input to obtain436. This is a registration
+input sector, not automatically the initial port cut of the complete
+Book03 fifteen-stage order experiment. Its original addressability
+and primitive-admission hypotheses remain.
+
+Crucially the original feedback is the ESCAPE F=P U^dagger(I-P)UP,
+not the retained compression C^dagger C. On the full fibre F0 is a
+projection, extended by zero outside P0. For every smooth unitary U
+and fixed-rank orthogonal P, 0<=F<=I. At a projection-valued base the
+diagonal blocks of DF in kerF0 and imF0 vanish: expectations of a
+positive contraction at either endpoint0 or1 have zero two-sided first
+derivative. Since zeta(I-zeta F0)^(-1) is scalar on these two blocks,
+
+    D[-log det(I-zeta F)]|0=0                         (437)
+
+for ALL unitary and fixed-rank-cut tangents, including their simultaneous
+variation. This is exactly the full constrained Euler system of
+A4D_NATIVE_BOOK03_OPERATOR_VARIATION_BOUNDARY.md:63--76. No normalized
+query is frozen and no small source gain is invoked.
+
+The actual paid clock is the existing book_price.py construction:
+tick depends on every primitive gate; d=(I-tick)/sqrt2;
+Delta0=Delta1=I-(tick+tick^dagger)/2. Its full counting heat is TC2,
+including both Hodge degrees and all work/Spin/record columns. For
+U0=U0^dagger=U0^(-1), all endpoint phases are0 orpi. The even periodic
+clock kernel has zero derivative at both, so7ad gives DH=0 for EVERY
+independent primitive-edge tangent on a fixed clock. This is not limited
+to generated echo variations. Heat is independent of P in this actual
+clock map, so all cut first rows vanish as well. Thus437 is a full H+J
+stationary base on this declared clock sector.
+
+At generated interior cuts the history leakage is zero; the closing
+leakage is unitarily equivalent to436. The whole history feedback is
+therefore also a projection. The same437 argument covers even
+independent fixed-rank history-cut variations at this base. This does
+not make arbitrary changes of the entire clock-shift matrix into
+primitive-edge variations. Arbitrary independent spatial/Hodge
+variations are not covered by the endpoint phase argument.
+
+The exact absolute anchor is
+
+    B0=H_N(U0)-Cq log(1-zeta).                         (438)
+
+It is not assigned to a desired geometric action value. Fixed N,beta,
+zeta and rank are part of the assertion. In particular
+partial_zeta J=Cq/(1-zeta)>0: that additional equation has not vanished.
+
+### Saturation preserves complete records and permits paid re-detection
+
+For tag1,436 sends |1,0a,0s> to |1,1a,0s>. F=1 means transfer to the
+complement Q, not loss under the complete unitary. The original closing
+cut is the initial comparison cut, not the entire transported record
+image. Permanently discarding Q would lose these distinctions and
+would be a different, inadequate process. All Q columns and the true
+archive remain in the present execution. The owned native future tests
+can read them with their own paid continuation.
+
+There is also an exact finite same-price-stack registration/re-detection
+example. Add blank verifier v, put V=CX(a,v), and execute V;U0;V.
+V fixes the actual initial cut. The endpoint V U0 V is a symmetric
+involution and has the same compressed C0 on that cut. On actual basis
+inputs it produces |tag,a,v>=|t,t,t>: the last V reads the registered
+ancilla and writes the verifier without erasing it. It correlates a
+superposition rather than cloning an arbitrary state. All three native
+operations and both verifier heat columns are paid; the new absolute
+H_N and carrier are retained. Its full first-source cancellation follows
+again from437 and7ad. No equality with the old shorter-clock price or
+unbounded sealed-history compatibility is asserted.
+
+### The same native corner has both signs needed by the complete action
+
+In one three-bit sector put u=|000>, v=|100>, w=|110>,
+r=(|101>-|111>)/sqrt2. Here U0u=u, U0v=w, U0w=v, U0r=-r.
+The fixed-rank cuts
+
+    i_plus(theta)=(cos(theta)u+sin(theta)r, v),
+    i_minus(eta)=(u, cos(eta)v+sin(eta)w)
+
+have respective compressions diag(cos2theta,0) and diag(1,sin2eta).
+Their actual feedback eigenvalues are (sin^2(2theta),1) and
+(0,cos^2(2eta)). Thus the positive and negative price increments are
+
+    j_plus(theta)=-q log(1-zeta sin^2(2theta)),
+    j_minus(eta)=-q log(1+zeta sin^2(2eta)/(1-zeta)).   (439)
+
+Their second derivatives at zero are8q zeta and-8q zeta/(1-zeta).
+The negative sign is an actual maximum channel of the original
+positive logdet feedback; it is not a negative counterterm.
+
+Full orthogonal operators generating these cuts are
+O_plus=I+(cos(theta)-1)(uu^T+rr^T)+sin(theta)(ru^T-ur^T)
+and O_minus=I+(cos(eta)-1)(vv^T+ww^T)+sin(eta)(wv^T-vw^T).
+They are the identity at zero. Their sqrt2 eigenvector notation does
+not require an exact pi/4 gate at the native base. Use disjoint channel
+sectors for the two signs and identity on unused sectors, giving O(y).
+Equivalently keep the original P0 and use the conjugate endpoint
+O(y)^dagger U0 O(y). Its entire spectrum is fixed, so the WHOLE paid
+clock heat at the same N is exactly constant, including spectators.
+For the moving-cut presentation this follows directly because the
+owned clock Delta is independent of that cut. The smooth matrix chart
+and its physically admitted native realization are distinct assertions.
+
+### Exact action-germ synthesis, without a Morse or gauge-rank assumption
+
+Let f be a supplied smooth action on an n-dimensional regular local
+field chart with Df(0)=0. On a compact star-shaped neighbourhood put
+
+    H_f(y)=integral_0^1 (1-t) D^2 f(ty) dt,
+    f(y)-f(0)=y^T H_f(y)y,
+    c>sup_y ||H_f(y)||,
+    a(y)=(H_f(y)+cI)^(1/2)y,     b(y)=sqrt(c)y.
+
+Thus f-f(0)=sum_i a_i^2-sum_i b_i^2. Allocate n positive and n negative
+free channel sectors; C>=2n, including actual padding. Use439 with
+
+    theta_i=(1/2)asin[a_i sqrt((1-exp(-a_i^2/q))/(zeta a_i^2))],
+    eta_i=(1/2)asin[b_i sqrt((1-zeta)(exp(b_i^2/q)-1)
+                                                   /(zeta b_i^2))].
+
+The values at zero are removable; these are smooth odd scalar
+calibrations. Shrink the neighbourhood so that every a_i^2,b_i^2 is
+less than -q log(1-zeta). Substitution gives EXACTLY
+
+    B(y)-B0=f(y)-f(0),        D_y B=D_y f,
+    O(0)=I,     full D_(U,P) B|0=0.                   (440)
+
+The value identity keeps the real anchor438. No positive definiteness,
+isolated critical point or Morse nondegeneracy is required, so the
+usual gauge-degenerate field action is not excluded. A smooth germ is
+not an exact finite Golden word at every real y. Native density and
+7ay finite contrasts do not by themselves identify its derivatives
+with a physically selected field writer. All channel inputs, synthesis
+work and the actual fixed clock belong to any claimed implementation.
+
+### Apply it to the owned curved source, with the actual codec error visible
+
+Fix one mesh and an owned primary nonvacuum representative Y_h*.
+Use the original coframe/proper-link/CAR chart and original independent
+INTERIOR variations and boundary convention. In finite dimension,
+let f_h(y)=I_h(Y_h*+y), where I_h is the already-owned configured
+Palatini--CAR action and the addition denotes that regular local chart.
+Its all16+24+2 Euler equations, including every site variation, give
+Df_h(0)=0. Apply440 with n equal to the full number of independent
+finite coordinates, not merely42 when several sites are present.
+The result is exact equality of the ENTIRE field covector on the
+open matrix chart, and exact full unitary/cut stationarity at its
+curved centre. This is the promised parent application of the generic
+germ result; it does not re-prove the primary equations or find a root.
+It has its own unit source identity440. The old scalar-collar gain
+Gamma=w A of7at is not transported to this different matrix corner.
+
+The actual marked geometry/material preparation can be part of the
+same paid tape. Any new blank scratch of full dimension d_W extends
+U0 by I_W and P0 by |0W><0W|: the full fibre becomes8Cq d_W and H_N
+is recomputed with ALL its columns, while rankP=2Cq, J0=-Cq log(1-zeta)
+and the input multiplicity q in439 stay unchanged. Blank scratch is
+not an extra free protected input. Insert the native word W_h, acting
+on its actual source apparatus and private scratch, followed by its exact
+all-column raw inverse, with its marked prefix retained in the owned
+history construction/decoder of7k. Then execute the required echo.
+The excursion has endpoint identity; every forward/inverse stage and
+work column still changes the actual absolute clock budget. At the
+native centre O=I the completed endpoint is EXACTLY U0 for any actual
+finite encoder W_h. Even independent first perturbations of the
+preparer and inverse are covered by437 and the full edge heat result;
+the conclusion does not depend on freezing their relation in variation.
+A future observer of the marked prefix uses7av's paid tests and reading
+errors. A record actually written inside this tape must be included
+in its full endpoint; the paid three-CX example is one compatible
+finite case, not a licence to ignore arbitrary reader reactions.
+
+Use the existing native codec/recovery maps to obtain actual decoded
+Yhat_h with error e_geo,h in the declared field norm V_h. The finite
+word is exactly stationary in its U/P clock domain even when the
+codec is imperfect. But its decoded field is not thereby an exact
+Palatini root. If L_h bounds the Hessian on the segment in the same
+chart and dual norm, then
+
+    ||D I_h(Yhat_h)||_(V_h*) <= L_h e_geo,h.            (441)
+
+Choose the real compiler precision so that L_h e_geo,h tends to zero,
+using its effective bounds and the owned nonvacuum mesh/material
+recovery. This constructs exact finite native stationary centres
+with a nonvacuum geometric readout limit on the declared sector.
+It does NOT assert finite source equality440 at the imperfect decoded
+centre: exact equality there would require D I_h(Yhat_h)=0. No fitted
+linear subtraction or silently shifted physical decoder is introduced.
+
+There is a stronger SAME-FAMILY application, not merely a separate
+chosen germ at each root.7at's exact operand dictionary is
+I_h=Phi_h=sum_s mu_s(f_s+lambda_minus q_s), with original quadrature,
+PF, orientation, inverse/Cayley maps and density conventions. The owned
+arbitrary_brinkmann_all40.md:200--209 and local CAR owner:187 put the
+ENTIRE primary family on the pointwise stratum f_s=q_s=0. Hence
+I_h(Y_h*(lambda))=0 at every member of the same stencil sum, even when
+the prescribed Brinkmann collar moves within that family.
+
+On one finite-dimensional compact regular parameter patch take
+pi_h(lambda,y)=Y_h*(lambda)+y in the common chart, with y containing
+ALL original free interior coordinates. Apply the SAME integral Hessian
+construction to f_h(lambda,y)=I_h(pi_h(lambda,y)). One strict uniform
+c_h exists at fixed h on this compact patch;440 then gives one smooth
+O_h(lambda,y), O_h(lambda,0)=I for every lambda, and
+
+    B_h(lambda,y)-B0=I_h(pi_h(lambda,y)),
+    D_(lambda,y) B_h=D_(lambda,y)(I_h composed with pi_h).
+
+The redundant lambda coordinates do not remove any free y direction.
+No Morse--Bott assumption on the critical family is used. The constant
+baseline follows from the actual pointwise-null operands, NOT merely
+from interior Euler equations. If a different action had baseline
+g(lambda), subtracting it would erase dg; that would not prove the
+claimed full source identity. No such subtraction is needed here.
+
+Lambda is explicit family/context data, not a hidden freely fitted
+selector. A prospective comparison must still hold the same complete
+initial task/data fixed. Its derivatives above describe the stated
+family's collar motion, not all independent boundary Euler equations.
+Additional boundary, HJR, R or Info terms are not made constant by this
+argument. A single smooth matrix encoder is not one exact finite word
+on a continuum of lambda. Actual finite native catalogues retain their
+true clocks, precision and441; uniformity at fixed h does not supply
+uniform refinement bounds or a compatible clock tower. The same
+constitutive-encoder selection remains open.
+
+### Integrate the concurrent terminal meters without losing spectral stationarity
+
+Concurrent input90a5c940 adds7ax424--430: actual paid terminal geometry
+and complete field-source responses on its original scalar-corner
+carrier, with the new detector source retained. Preserve that result.
+Its near-identity meters do not automatically preserve the present
+projection/involution corner. The following SAME-programme map supplies
+terminal storage on this new carrier instead of ignoring those rows.
+
+Use the FIXED-CUT presentation E(y)=O(y)^dagger U0 O(y), extended by
+identity on a fresh geometry/detector bank. The germ O acts outside
+that bank. The existing7aq exact-predicate-readonly compiler, extended
+to the full bank as in7at, supplies an ACTUAL native unitary
+
+    V(Y)=(I-P_a) tensor I_bank + P_a tensor W(Y),
+    P_a=|1a><1a|,       V(Y)P0=V(Y)^dagger P0=P0.
+
+The false branch is exactly identity. W is its ACTUAL true-branch
+unitary approximating the specified complete preparation/reader, not
+an ideal operator silently inserted into a controlled native gate.
+The control a is separate from target/helper/Spin. Every raw stage
+preserves a; every completed controlled block restores the compiler
+helpers/Spin on all columns.
+All extra blank bank columns enter the heat, not the input q.
+
+Execute the actual raw inverse of V, the E body, then V. Its endpoint
+and complete compression are
+
+    U_term=V(Y) E(y) V(Y)^dagger,
+    i0^dagger U_term i0=i0^dagger E(y)i0.              (442)
+
+Consequently the ENTIRE original feedback J is identical, and the
+spectrum is conjugate. At the NEW true completed fixed length and
+carrier, full heat is constant along the entire field chart. Its
+absolute value includes both V words and every extra work column;
+it is not equated with a shorter-clock price. This identity also
+allows Y-dependent V as long as V P0=P0 pointwise. It preserves440's
+whole field covector. Actual native catalogues still need one genuinely
+paid common length/carrier; the pointwise operator identity supplies no
+C1 native selector on a continuum of field values. For a moving-cut presentation BOTH U and P
+must be conjugated; fixing P0 alone would not justify keeping an old
+P(y) unchanged. At the centre all independent primitive and cut rows
+again vanish by437; off centre only the stated generated conjugation
+identity is asserted, not arbitrary independent inverse faults.
+
+On the native central input tag1,a0 with blank bank, the terminal state
+has tag1,a1 and the actual W-prepared geometry/record bank. There is
+NO final W uncomputation erasing its data. On a general input the
+actual a1 probability is retained. The input counting-state P0/rankP0
+has probability1/2 AT THE NATIVE CENTRE as a mathematical response
+identity; it is
+not asserted to be a freely prepared physical ensemble. A specified
+allowed tag1 input has probability1 at that same centre. All
+alternatives, including a0,
+remain in the price; conditional decoding does not condition the
+logdet or discard failures.
+
+More generally E(y) leaves the initially blank bank untouched. Thus
+conditional on a1 WHEN Pr(a1)>0, its final bank is the actual
+W-prepared state, with the genuine conditioning margin retained,
+with its real compiler, calibration and detection errors, throughout
+the fixed-cut chart. The terminal geometry responses and the joint
+field-source germ can therefore inhabit the SAME complete programme.
+Actual future estimation/re-detection has the existing finite costs.
+This is a source-neutral terminal-storage substitution on this new
+carrier; the independently priced7ax construction remains unchanged.
+
+The limitation is equally concrete. V can vary its terminal decoded
+geometry while leaving the full price unchanged. Without the selected
+relation between that decoded geometry and O, exact native stationary
+centres can also accompany non-Einstein readouts. So442 removes the
+marked-prefix-only limitation; it cannot promote a programmable record
+to the intrinsic metric of the same scene Dirac operator. The actual
+field-decoder/constitutive/source binding is still the parent premise.
+
+### What this changes, and the precise remaining application
+
+This new subsector is typed differently from7at's unsharp scalar return:
+F0 has eigenvalues0 and1, and F0(I-F0)=0. The positive whole-query
+source in7au/7ay therefore has no positive gap here. It is not cancelled
+by normalization, cost padding or an omitted independent query row.
+The native stationary corner, whole-price signed pullback and existing
+curved solution are now composed by436--442, with a genuine native
+central programme and a separately declared smooth field chart.
+
+This removes a universal impossibility interpretation of the old
+whole-query obstruction. It supplies a configured action realization
+and exact centre normals, not a selection of the action being encoded.
+Indeed440 works for OTHER smooth critical actions too. The exact
+remaining same-execution map is
+
+    actual marked field decoder Y=Dec(W_h)
+        -> the admitted germ control O_h(Y)
+        -> its SAME full physical D,U,P and variation domain.
+
+Our formula constructs O_h from the requested I_h; no native law has
+yet been proved to choose that formula. Neither readable history,
+condensed response descent nor compile-time endpoint approximation
+alone supplies that constitutive arrow. The owned empirical source
+factorization can be applied once this arrow and its calibrated germ
+are justified; it cannot choose the arrow. The actual scene/spatial
+Dirac operator is not identified with the declared tape-clock operator
+by this construction. Additional HJR/full128/Cost-Info sources, freely
+varied beta/zeta/rank/clock and mesh-compatibility keep their original
+obligations. Book03's direct H+J law does not require a new Info axiom,
+but it does require its own physical domain application.
+
+Thus no GR_closed, positive_gr, generic GR or raw216 promotion follows.
+The next application is that field-decoder/constitutive/source binding,
+not another local curvature expansion, native density proof, centre
+root search or artificial restriction of the whole query.
+
+### Bounded exact check
+
+The following independent algebraic fixture uses ONE actual CX with
+its blank spectator, keeps every column and both Hodge degrees, checks
+the complete constrained feedback Euler equations and all real unitary
+heat directions, and retains noninvolutive, unsharp-cut and fugacity
+controls. For the N=1 clock at beta=log2 its full heat trace is13;
+the hostile noninvolutive control has trace11 and heat derivative-2/11.
+The general fixed-clock statement is the analytical TC2/7ad application
+above, not an extrapolation from those finite numbers. Extra protected
+multiplicity is the explicit q in436--441, never a discarded heat mode.
+
+```python
+import sympy as S
+import sys
+z=S.symbols('z', positive=True)
+t=S.symbols('t', real=True)
+I=S.eye(8)
+CX=S.Matrix([[1,0,0,0],[0,1,0,0],[0,0,0,1],[0,0,1,0]])
+U=S.kronecker_product(CX,S.eye(2))
+u,v,w=I[:,0],I[:,4],I[:,6]
+r=(I[:,5]-I[:,7])/S.sqrt(2)
+i=S.Matrix.hstack(u,v)
+P=i*i.T
+Q=I-P
+C=i.T*U*i
+F=P*U.T*Q*U*P
+assert U.T==U and U*U==I and U.det()==1
+assert C==S.diag(1,0)
+assert i.T*F*i==S.diag(0,1) and F*F==F
+# These are the complete constrained Book P and U equations.
+Pi=z*(I-z*F).inv()
+R=U.T*Q*U
+GP=R*P*Pi+Pi*P*R
+GQ=U*P*Pi*P*U.T
+assert P*(GP-GQ)-(GP-GQ)*P==S.zeros(8)
+assert Q*GQ-GQ*Q==S.zeros(8)
+# The complete ONE-CX paired clock has 12 zero and 4 eigenvalue-2 modes.
+D=I-U
+heat=I-S.Rational(3,8)*D  # exp(-log(2) D), exact since D^2=2D
+assert D*D==2*D and 2*S.trace(heat)==13
+for a in range(8):
+    for b in range(a+1,8):
+        K=S.zeros(8); K[a,b]=1; K[b,a]=-1
+        dU=K*U
+        dD=-(dU+dU.T)/2
+        assert 2*S.trace(heat*dD)==0
+# A noninvolutive native-ambient point does NOT have heat neutrality.
+K=S.zeros(8); K[2,0]=1; K[0,2]=-1
+Uq=S.MutableDenseMatrix(U); Uq[0,0]=Uq[2,2]=0; Uq[2,0]=1; Uq[0,2]=-1
+Dq=I-(Uq+Uq.T)/2
+heatq=I-S.Rational(5,8)*Dq+S.Rational(1,8)*Dq*Dq
+assert Uq.T*Uq==I and 2*S.trace(heatq)==11
+dUq=K*Uq; dDq=-(dUq+dUq.T)/2
+assert -2*S.trace(heatq*dDq)/11==-S.Rational(2,11)
+# Check the signed cut paths with the original escape, not return, F.
+ip=S.Matrix.hstack(S.cos(t)*u+S.sin(t)*r,v)
+im=S.Matrix.hstack(u,S.cos(t)*v+S.sin(t)*w)
+def escape(j):
+    A=j.T*U*j
+    return S.simplify(S.eye(2)-A.T*A)
+assert S.simplify(escape(ip)-S.diag(S.sin(2*t)**2,1))==S.zeros(2)
+assert S.simplify(escape(im)-S.diag(0,S.cos(2*t)**2))==S.zeros(2)
+Jp=-S.log(1-z*S.sin(2*t)**2)-S.log(1-z)
+Jm=-S.log(1-z*S.cos(2*t)**2)
+assert S.diff(Jp,t).subs(t,0)==0
+assert S.diff(Jm,t).subs(t,0)==0
+assert S.simplify(S.diff(Jp,t,2).subs(t,0)-8*z)==0
+assert S.simplify(S.diff(Jm,t,2).subs(t,0)+8*z/(1-z))==0
+# An unsharp point has a nonzero normal: saturation is essential.
+assert S.simplify(S.diff(Jm,t).subs({z:S.Rational(2,3),t:S.pi/12})+4*S.sqrt(3)/3)==0
+# Fugacity is NOT a cancelled source at the anchor.
+assert S.diff(-S.log(1-z),z)==1/(1-z)
+print('PASS exact native CX, complete P/U feedback Euler equations, full paired heat rows, signed cut paths, unsharp/noninvolutive/fugacity controls')
+print(sys.version.split()[0],S.__version__)
+```
+
 ## 8. Reproduction
 
 Run from this directory:

@@ -11337,3 +11337,149 @@ unchanged54active/98totalresults,5discharged/22obligations. Whitespace
 check PASS. No remote CI, physical acceptance or status promotion is
 inferred. Original support/role-domain admission and uncovered normals
 remain the next native parent application; no new geometry search.
+
+### 25 October: native full-price secants and exact spectral stationary synthesis
+
+Phase: native realization / same-source final composition. SAME PR334,
+constitutive/native-programme-v1; integration input 90a5c94062ec32925488349e0a2f0755e7bde948.
+Write paths: primary7ay--7az and this existing brief only. No new task,
+assembly/status/claim, lifecycle or public scientific promotion.
+
+7ay431--435 consumes the original full native alphabet, true raw inverses,
+7at/7av field lifts and7au whole-query direction. A finite catalogue of
+actual alternative programmes can have identical primitive inventory,
+clock, complete work carrier and full heat by genuinely paid identity
+excursions and endpoint conjugacy. Its finite whole-price contrasts
+recover the configured normalized field cofield with the explicit
+compilation/finite-difference errors and no inverse-w precision factor.
+The same bridge realizes the old positive whole-query contrast; it
+therefore does not select the physical variation domain. Internal Born
+branch aggregation still uses J(sum mu q), not sum mu J(q). A finite
+endpoint contrast is not a bounded raw-stage tangent at fixed N.
+
+7az436--442 changes that old obstruction's carrier. A genuine ACTIVE
+free-tag/free-channel registration task, blank ancilla/spectator and
+actual CX give exact F0=diag(0,1), with the ORIGINAL escape convention
+F=P U^dagger(I-P)UP. Its projection endpoints force every constrained
+unitary/cut feedback first row to vanish. The already-owned involutive
+clock theorem gives every primitive-edge heat first row, including
+independent preparation/inverse changes. Generated history leakage is
+also a projection; independent history-cut first rows vanish at this
+base. All heat/Hodge/work columns and the true absolute anchor remain.
+
+The actual three-CX conjugation with a blank verifier supplies paid
+registration and re-detection on this same type of critical carrier.
+F=1 transfers a complete input to Q; discarding Q would be a different
+process. This witness proves finite compatibility, not an unbounded
+sealed-history tower. Free ACTIVE input channels cannot be substituted
+for a genuinely prepared blank. Primitive addressability remains the
+original input hypothesis.
+
+Disjoint actual positive/negative cut channels have exact logdet
+increments439. Integral Taylor Hessian and smooth odd calibration
+produce one signed-square action-germ pullback440 for ANY supplied
+smooth critical action, without Morse/gauge-nondegeneracy assumptions.
+The negative sign comes from the real maximum channel, not a fitted
+negative counterterm. A genuine native CX centre exists exactly; the
+whole smooth field encoder is a separate finite-matrix construction.
+
+Apply it to the ORIGINAL I_h=Phi_h=sum mu(f+lambda_minus q), retaining
+all finite free coframe/link/CAR coordinates, site weights, inverse
+maps and source convention. The primary all42-per-site equations are
+consumed, not replayed. The same pointwise-null operands f=q=0 imply
+I_h=0 on the entire family. Thus one compact-parametric encoder covers
+that family patch with exact full field-source identity and all centres
+ambient-critical; no lambda-dependent boundary subtraction or absent
+boundary Euler equation is imported. This is stronger than isolated
+curve matching, but fixed-h compact uniformity is not a refinement
+modulus or a globally physically selected encoder.
+
+A paid native marked preparation/exact-inverse excursion keeps the
+original operational geometry and material readout in the same tape.
+Every actual native centre remains EXACTLY stationary, even with its
+finite decoder error; the decoded Palatini source is bounded separately
+by441, L_h e_geo,h, using the original norm. New blank scratch multiplies
+full heat dimension, not free-input q or logdet multiplicity. Complete
+physical source equality at an imperfect decoded centre is not claimed.
+Existing recovery plus actual effective compiler/Hessian bounds gives
+the corresponding nonvacuum readout limit. The old scalar-collar gain
+Gamma=w A is not transported to this new matrix corner.
+
+Exact parent substitution: the native centre and independent unitary/
+query/cut normal obstruction are removed ON THIS typed clock carrier,
+and its full matrix field-source realization is composed with the owned
+nonvacuum family. The whole-query positive-gap result remains true on
+its old unsharp carrier. The remaining application is the actual marked
+field decoder -> admitted constitutive encoder -> SAME physical D,U,P
+and variation domain.440 constructs the encoder from I_h, so it is not
+native selection of I_h; it works for other actions too. The scene/
+spatial Dirac identification, additional HJR/full128/Cost-Info terms,
+freely varied calibration/clock/rank and refinement stay open. Original
+GR_closed, positive_gr, generic GR and raw216 are unchanged.
+
+Pinned analytical proofs:
+-7ay:11428 UTF-8bytes, SHA256
+4675ec42c06cce32bbad489b63fd510a090af65a1736800a2933af3024e09beb.
+The three read-only source reviewers accepted the predecessor proof;
+this pin only renames its section/equation references after intake. No
+native/heat/root calculation was replayed for that analytical bridge.
+-7az proof:20586 bytes, SHA256
+721115834e383351291adcc7daf1915f9483ce9f8f35b7387ff32eba5d0b7468.
+-7az including exact control code:22942 bytes, SHA256
+aefe211d39257cf2e6e9d77666d0417b7e198caaf60b60f62521d431b4f27c0f.
+-Complete inserted7ay/7az slice:34372 bytes, SHA256
+497f2994c953fb0e2065629823954253600490478b8539d96933a2d304b9dd62.
+Removing exactly that slice and this brief tail restores90a5c940
+byte-for-byte. No existing proof/source/receipt pin or other path changes.
+
+New bounded check: embedded7az Python2342bytes, SHA256
+477a8aeb6b1022ca3c87baf644abce6c6cc9018f2d36e07b58ed38f2d9788dd0.
+Final run PASS, Python3.11.9/SymPy1.12.1. It checks exact native CX,
+complete constrained P/U feedback Euler equations, all28 real unitary
+paired-heat rows, both signed cut paths and unsharp/noninvolutive/
+fugacity controls. Full paired trace13 at the base and11 with derivative
+-2/11 at the hostile heat control are exact. The initial extension of
+the heat fixture hit SymPy's immutable matrix assignment; using an
+explicit mutable copy corrected that implementation error. No expected
+value or mathematical assertion was weakened. The final exact checker
+and analytical all-dimension argument have distinct stated scopes.
+
+Final independent source-only review: native_continuation_map,
+native_valuation_map and physical_query_binding all ACCEPTED the exact
+20586-byte7az proof above. Review consumed the original pointwise-null
+operand owners and clock definitions. It prompted explicit blank-scratch, completed-helper restoration,
+local equation-reference and conditional-probability clarifications,
+all already in the final pin. Reviewers
+made no edits and ran no mathematical calculations.
+
+Integration with concurrent90a5c940 is substantive, not a section-name
+merge. Its incoming7ax424--430 paid terminal geometry/source result is
+preserved BYTE-FOR-BYTE. Our already-reviewed secants are now7ay431--435,
+and spectral synthesis is7az436--442. The new442 application uses an
+ACTUAL exact-predicate-readonly conjugation V fixing P0. It preserves
+the complete germ compression/logdet and full spectrum at the NEW
+paid length/carrier, while leaving actual geometry/detector records
+in the terminal bank. Thus the same programme has terminal geometry
+and the complete source germ without requiring final uncomputation
+of those records. Conditional branch probability and readout errors
+remain; no physical ensemble is freely prepared. The fixed-cut/moving-
+cut distinction and independent off-centre inverse rows are explicit.
+
+This also makes the remaining premise testable: varying V independently
+changes the terminal geometry without changing the full price. An
+actual off-Einstein readout can accompany a stationary native centre.
+Hence terminal storage is realized, but intrinsic scene-metric/source
+binding and selection of O(Dec(W)) are not inferred. Incoming7ax's
+scalar-source and local-meter bounds are not transported onto this
+projection corner; each keeps its own full source and exact scope.
+No new calculation was required for442: its exact all-column operator
+identity was independently reviewed against7aq/7at compiler typing.
+
+Final affected structural validation on the integrated90a5c940 intake
+PASS: work, agent protocol, gravity assembly, repository(warnings0),
+and diff whitespace. Counts remain claims889/assumptions31/aliases58/
+formal_support183/Lean closure918; assembly54active/98results/5discharged/
+22obligations, scientific_promotion=false. This is local validation,
+not remote CI or physical acceptance. The embedded mathematical check
+is byte-identical to its passed input; no unchanged mathematics was
+replayed for intake, renumbering or the analytical conjugation identity.
