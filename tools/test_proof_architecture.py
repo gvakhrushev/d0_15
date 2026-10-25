@@ -1248,7 +1248,7 @@ class ProofArchitectureTests(unittest.TestCase):
         summary_path = (
             proof.ROOT
             / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
-            / "proof_architecture_cold_start_summary_2026-10-25_cc5f4e92.json"
+            / "proof_architecture_cold_start_summary_2026-10-25_be64f646.json"
         )
         summary_bytes = summary_path.read_bytes()
         summary = json.loads(summary_bytes)
@@ -1258,12 +1258,12 @@ class ProofArchitectureTests(unittest.TestCase):
         )
         self.assertEqual(
             summary["snapshot_commit"],
-            "cc5f4e9280493c9ab5a18143b39a006b35e1e6f5",
+            "be64f646016706dfb6e92fea173a3b3a8cb281e7",
         )
         self.assertFalse(summary["worktree_dirty"])
-        self.assertEqual(summary["search_cases_found_all_sources"], 20)
-        self.assertEqual(summary["search_cases_total"], 20)
-        self.assertEqual(summary["benchmark_cases_total"], 21)
+        self.assertEqual(summary["search_cases_found_all_sources"], 21)
+        self.assertEqual(summary["search_cases_total"], 21)
+        self.assertEqual(summary["benchmark_cases_total"], 22)
         self.assertTrue(summary["change_impact_regression"]["status"] == "pass")
         self.assertEqual(
             summary["authority_source_digests"]["02_REGISTRY/formal_support.csv"],
@@ -1280,7 +1280,7 @@ class ProofArchitectureTests(unittest.TestCase):
             for row in summary["cases"]
         ))
         self.assertEqual(
-            sum(row["required_source_count"] for row in summary["cases"]), 123
+            sum(row["required_source_count"] for row in summary["cases"]), 126
         )
         self.assertTrue(summary["semantic_scope_review_is_manual"])
         replay = summary["replay"]

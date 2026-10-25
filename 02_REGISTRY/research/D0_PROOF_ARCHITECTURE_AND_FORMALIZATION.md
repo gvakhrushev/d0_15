@@ -6871,5 +6871,47 @@ Both affected modules pass narrow builds: `D0.Geometry.ArchivePhaseShift`
 The result is a finite algebraic matrix statement: finiteness, a transitive
 permutation and exact commutation imply constant diagonal. It does not select
 a physical shift, source, state or GR realization. Compiled inventory,
-cold-start replay, repository checks and current PR/CI provenance are recorded
-in the following checkpoint once refreshed from the clean source snapshot.
+cold-start replay and repository checks are pinned below.
+
+The twelve-declaration ArchiveShift inventory and the five existing
+digest-gated inventories were extracted through public import `D0.All` at
+clean Lean-source snapshot `db3a201a7e8f4529e45effa4d71e578d1d0e3733`, with
+Lean 4.30.0 and common source digest
+`84495a35213e0664f044c79b1642f135386189a139d85b6d25b1cb0309d34b3b`. The new
+inventory is
+`sources/d0_proof_architecture_formalization_2026-10-24/archive_shift_topology_current_declarations_2026-10-25.json`,
+SHA-256 `61380c29b71a74acfbc63b90b7e11ddfa15e2e71a5a7d29661f3075a035fce22`,
+collected by tool SHA-256
+`4cdcc682b0b2ff80a9646052f2e275b28e211619d9cf4dbd6058734cb7b2cd8c`. The
+CAR/Hodge, partial-trace, Gauge, nonvacuum and SourcePort inventories contain
+36, 9, 4, 15 and 73 declarations; their refreshed file SHA-256 values are
+`1db92b9a60ab5e76f3385c30bf7f219ed95d53a942f52e1c5c77358df0be74c8`,
+`1096f7df96ee7147fa367bd35fd4a250c5c02e6d9a5dc672250a0c7c9010c0bf`,
+`ceaf3a0c79037fa7f15c4b8a713416b5cb00ea54dfafea4fc7fde6ab549d87b1`,
+`e9582d503d838430f396f74f2bdf22025b028fcb8085a12a9a5dc5662509187d` and
+`fa8fbb1a3a1d68eec05e94aa97c776e116de9bc6911910c169e84619b468d40f`.
+
+The full cold-start replay on clean snapshot
+`be64f646016706dfb6e92fea173a3b3a8cb281e7` found all required sources in
+**21/21** cases and passed **22/22** benchmarks, including exact-source versus
+unrelated-prose impact. It found all **126** required source records. The new
+archive-shift case resolves the generic topology theorem, the concrete `ZMod n`
+adapter and its partial-trace consumer with direct-content evidence. Its
+compact report is
+`sources/d0_proof_architecture_formalization_2026-10-24/proof_architecture_cold_start_summary_2026-10-25_be64f646.json`,
+SHA-256 `f13c36721d4f0442ed492f4794cdc1952b6a0a6fa53caddf66287d75d967aa90`;
+the full replay output SHA-256 is
+`4666168f786c9d437b2180d368a1657f9cdeaf218ee33363f96efaf18987bf8a`. The
+replay binds `formal_support.csv` SHA-256
+`411acc91cbd78104ee85b613170ca19ebf8bb9ec2da028cc0967e963da26c9f4`, runner
+SHA-256 `087f556e9280da7ce502f4f1413ce58b51405e5dee5810e9227b4b0f169d2904`
+and search-engine SHA-256
+`aaed4194af38484de97db60c821374955f90dc5cc290d20a6fb8e53f94624262`.
+
+The proof-architecture regression suite passes **56/56**, compiled declaration
+inventory tests **16/16**, and generated-view tests **27/27** under the
+bundled Python 3.12 runtime. `validate_repo.py` passes with 889 claims, 31
+assumptions, 58 aliases, 202 formal-support rows, closure 933 and zero
+warnings. Generated Lean views are current, formalization-debt findings remain
+five against the five-finding baseline, and `git diff --check` is clean. No
+claim owner/status, physical selector or GR closure status changed.
