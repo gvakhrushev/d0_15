@@ -7211,3 +7211,40 @@ selected finite action's quotient provenance in source A, its nondegeneracy
 sector, global connection elimination, physical metric/source selection, or
 independent C0 acceptance. The two source units remain candidates; no claim
 status or physical interpretation changes.
+
+### Full matrix-variable Fréchet derivative of the finite J² metric (26 October 2026)
+
+The geometry module now proves the map-level statement
+`HasFDerivAt j2DetectorMetricPath j2DetectorMetricPath_tangent 0`, where
+`j2DetectorMetricPath H = (1+H)η(1+H)ᵀ`. Both the matrix variable and the
+codomain use the Frobenius norm. The pinned tangent is an explicit continuous
+linear map, and `j2DetectorMetricPath_tangent_apply` proves its action is
+`Hη + ηHᵀ`; the transpose isometry used by that map also has an explicit
+application lemma. This supplements the already-proved scalar path derivatives
+and exact quadratic remainder with a Fréchet derivative of the matrix-valued
+map itself.
+
+The geometry source is pinned at commit
+`5057775c28a3ff04fe827aed883debf90d8bccb9`, SHA-256
+`04d2ac86ae3c91f771a29171ea328297615fa31443c9954294e1a27314bf58ff`.
+The shared `D0.Algebra.finiteGram_one_smul_expand` API remains pinned at
+`150c34ad0ff1a1f4eb0edfb06363d7d6bfa45bab`, SHA-256
+`26864e383f68dc793907ae14d07982c967346459500aad92d057cfa81c13f900`.
+The targeted `D0.Geometry.A4DSolderMetricCompletion` build passed
+**3,087/3,087** jobs, and the crosswalk's full `D0.All` build completed
+successfully. The clean crosswalk snapshot is
+`fcf89ad048992d71a89bc838a0eb10921db5707e`, Lean-source digest
+`c333de44ffd644df0fb3ffbd8bfbe59e6b65e903359c40427d38022396f564a2`, and
+`applications.json` SHA-256
+`8c752a9ff8f2e48a81030d5306606172526601570857a6271e3a4fc6ac122fef`.
+All twelve requested explicit Lean declaration locators resolve in the
+compiled environment. The compact crosswalk is
+`sources/d0_proof_architecture_formalization_2026-10-24/metric_provenance_crosswalk_2026-10-26_fcf89ad0.json`,
+SHA-256 `1d347faf34489d7bd5fc7fe059a8e5bd0c676665c49f0a8b0d52ff6f88254937`.
+Both source sections remain candidate locators requiring review; the semantic
+relation and claim locators remain unresolved, and `acceptance_inferred=false`.
+
+This closes only the finite matrix calculus step for source B. It does not
+connect source A's selected-action quotient to the Lean carrier, establish
+physical metric/source selection or global connection elimination, or grant
+independent C0 acceptance. No claim status or physical interpretation changes.
