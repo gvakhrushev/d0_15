@@ -108,6 +108,54 @@ def _claim_section_tokens(value: str) -> list[str]:
     return [value]
 
 
+def _claim_heading_candidates(
+    section: str,
+    headings: list[dict[str, Any]],
+    heading_texts: dict[tuple[str, int], str],
+) -> list[dict[str, Any]]:
+    """Return exact or lexical heading candidates without accepting a source map."""
+    exact = [dict(heading) for heading in headings
+             if _section_matches_heading(section, heading["heading"])]
+    if exact:
+        for candidate in exact:
+            candidate["match_kind"] = "exact_heading"
+            candidate["review_status"] = "unreviewed_exact_heading_candidate"
+        return exact
+
+    # Numeric section labels already make a precise claim. If that heading is
+    # absent, lexical matches would only obscure the actual locator failure.
+    if _SECTION_ID_RE.fullmatch(section):
+        return []
+
+    query_terms = _locator_terms(section)
+    if not query_terms:
+        return []
+    minimum_title_matches = min(2, len(query_terms))
+    minimum_matches = min(len(query_terms), max(minimum_title_matches,
+                                                 (len(query_terms) + 1) // 2))
+    ranked: list[tuple[int, int, dict[str, Any]]] = []
+    for heading in headings:
+        text = heading_texts.get((heading["path"], heading["line"]), heading["heading"])
+        title_shared = query_terms & _locator_terms(heading["heading"])
+        shared = query_terms & _locator_terms(text)
+        body_only_minimum = max(minimum_matches, (3 * len(query_terms) + 3) // 4)
+        if (len(title_shared) < minimum_title_matches or len(shared) < minimum_matches
+                or len(shared) < body_only_minimum):
+            continue
+        candidate = dict(heading)
+        candidate.update({
+            "match_kind": "lexical_heading_candidate",
+            "title_matched_terms": sorted(title_shared),
+            "matched_terms": sorted(shared),
+            "query_term_count": len(query_terms),
+            "overlap_fraction": round(len(shared) / len(query_terms), 4),
+            "review_status": "unreviewed_lexical_candidate",
+        })
+        ranked.append((len(title_shared), len(shared), candidate))
+    ranked.sort(key=lambda item: (-item[0], -item[1], item[2]["line"], item[2]["path"]))
+    return [candidate for _title_count, _count, candidate in ranked[:3]]
+
+
 def _normalize_heading_label(value: str) -> str:
     value = re.sub(r"^§\s*", "", value.strip(), flags=re.IGNORECASE)
     value = re.sub(r"\s+", " ", value)
@@ -157,6 +205,7 @@ def claim_source_candidate_view(dataset: dict[str, Any]) -> dict[str, Any]:
     book_paths: dict[str, list[pathlib.Path]] = {}
     book_sources: dict[str, dict[str, Any]] = {}
     book_headings: dict[str, list[dict[str, Any]]] = {}
+    book_heading_texts: dict[str, dict[tuple[str, int], str]] = {}
     for path in sorted((root / "01_BOOKS").glob("BOOK_*.md")):
         match = _BOOK_HEADING_RE.match(path.name)
         if not match:
@@ -166,7 +215,7 @@ def claim_source_candidate_view(dataset: dict[str, Any]) -> dict[str, Any]:
         pin = _book_source_pin(root, path)
         book_sources[pin["path"]] = pin
         book_text = path.read_text(encoding="utf-8-sig")
-        for line_number, heading, _body in _markdown_sections(book_text):
+        for line_number, heading, body in _markdown_sections(book_text):
             book_headings.setdefault(key, []).append({
                 "path": pin["path"],
                 "line": line_number,
@@ -176,6 +225,9 @@ def claim_source_candidate_view(dataset: dict[str, Any]) -> dict[str, Any]:
                 "snapshot_blob_sha1": pin["snapshot_blob_sha1"],
                 "matches_snapshot_commit": pin["matches_snapshot_commit"],
             })
+            book_heading_texts.setdefault(key, {})[(pin["path"], line_number)] = (
+                heading + "\n" + body
+            )
 
     rows: list[dict[str, Any]] = []
     counts = {
@@ -190,6 +242,9 @@ def claim_source_candidate_view(dataset: dict[str, Any]) -> dict[str, Any]:
         "unique_locator_pairs": 0,
         "ambiguous_locator_pairs": 0,
         "unresolved_locator_pairs": 0,
+        "unpaired_multi_book_claim_rows": 0,
+        "claim_rows_with_ranked_heading_candidates": 0,
+        "ranked_heading_candidate_count": 0,
     }
 
     for claim in dataset["claims"]:
@@ -214,6 +269,46 @@ def claim_source_candidate_view(dataset: dict[str, Any]) -> dict[str, Any]:
         parse_error = book_error
         if not section_tokens:
             parse_error = parse_error or "missing_section_locator"
+        elif book_tokens and len(book_tokens) > 1 and len(section_tokens) == 1:
+            counts["unpaired_multi_book_claim_rows"] += 1
+            book_candidates = []
+            row_has_ranked_candidates = False
+            for book_key in book_tokens:
+                candidates = _claim_heading_candidates(
+                    section_tokens[0], book_headings.get(book_key, []),
+                    book_heading_texts.get(book_key, {}),
+                )
+                for candidate in candidates:
+                    candidate["candidate_source_unit_key"] = (
+                        f"source:{dataset['snapshot_commit']}:{candidate['path']}"
+                        f"#L{candidate['line']}: {candidate['heading']}"
+                        if candidate["matches_snapshot_commit"] else None
+                    )
+                    if candidate["match_kind"] == "lexical_heading_candidate":
+                        row_has_ranked_candidates = True
+                        counts["ranked_heading_candidate_count"] += 1
+                book_candidates.append({
+                    "book_locator": book_key,
+                    "candidate_count": len(candidates),
+                    "candidates": candidates,
+                })
+            if row_has_ranked_candidates:
+                counts["claim_rows_with_ranked_heading_candidates"] += 1
+            counts["unresolved_claim_rows"] += 1
+            rows.append({
+                "claim_id": claim_id,
+                "book_locator": book_field,
+                "section_locator": section_field,
+                "resolution_status": "unresolved",
+                "resolution_reason": "multiple_books_share_one_unpaired_section_locator",
+                "locator_pairs": [],
+                "book_heading_candidates": book_candidates,
+                "interpretation": (
+                    "Multiple books share one section locator, so no book/section pairing was inferred. "
+                    "Heading matches are retrieval candidates requiring source-unit review."
+                ),
+            })
+            continue
         elif book_tokens and len(book_tokens) != 1 and len(book_tokens) != len(section_tokens):
             parse_error = "book_section_count_mismatch"
 
@@ -235,10 +330,14 @@ def claim_source_candidate_view(dataset: dict[str, Any]) -> dict[str, Any]:
         pair_rows: list[dict[str, Any]] = []
         for book_key, section in pairs:
             paths = book_paths.get(book_key, [])
-            candidates = [
-                dict(heading) for heading in book_headings.get(book_key, [])
-                if _section_matches_heading(section, heading["heading"])
-            ]
+            heading_candidates = _claim_heading_candidates(
+                section, book_headings.get(book_key, []),
+                book_heading_texts.get(book_key, {}),
+            )
+            candidates = [candidate for candidate in heading_candidates
+                          if candidate["match_kind"] == "exact_heading"]
+            ranked_candidates = [candidate for candidate in heading_candidates
+                                 if candidate["match_kind"] == "lexical_heading_candidate"]
             for candidate in candidates:
                 candidate["candidate_source_unit_key"] = (
                     f"source:{dataset['snapshot_commit']}:{candidate['path']}"
@@ -265,6 +364,15 @@ def claim_source_candidate_view(dataset: dict[str, Any]) -> dict[str, Any]:
                 "resolution_status": status,
                 "candidates": candidates,
             }
+            if ranked_candidates:
+                for candidate in ranked_candidates:
+                    candidate["candidate_source_unit_key"] = (
+                        f"source:{dataset['snapshot_commit']}:{candidate['path']}"
+                        f"#L{candidate['line']}: {candidate['heading']}"
+                        if candidate["matches_snapshot_commit"] else None
+                    )
+                pair_row["ranked_heading_candidates"] = ranked_candidates
+                counts["ranked_heading_candidate_count"] += len(ranked_candidates)
             if reason:
                 pair_row["reason"] = reason
             pair_rows.append(pair_row)
@@ -282,6 +390,8 @@ def claim_source_candidate_view(dataset: dict[str, Any]) -> dict[str, Any]:
         else:
             overall = "unresolved"
             counts["unresolved_claim_rows"] += 1
+        if any(pair.get("ranked_heading_candidates") for pair in pair_rows):
+            counts["claim_rows_with_ranked_heading_candidates"] += 1
         rows.append({
             "claim_id": claim_id,
             "book_locator": book_field,
@@ -303,7 +413,8 @@ def claim_source_candidate_view(dataset: dict[str, Any]) -> dict[str, Any]:
         "rows": rows,
         "interpretation": (
             "Derived locator view only. Exact heading matches identify candidate source coordinates; "
-            "they do not accept the claim statement, prove semantic coverage, freeze C0, or change owner/status."
+            "ranked headings are retrieval candidates, not exact source links. Neither form accepts the "
+            "claim statement, proves semantic coverage, freezes C0, or changes owner/status."
         ),
     }
 

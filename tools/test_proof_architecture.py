@@ -1535,7 +1535,9 @@ class ProofArchitectureTests(unittest.TestCase):
             books = root / "01_BOOKS"
             books.mkdir()
             (books / "BOOK_01_TEST.md").write_bytes(
-                b"### 01.8.1 Main source\n## 01.20 First section\n## 01.24 Second section\n"
+                b"### 01.8.1 Primitive positive response source\n"
+                b"The cited result has a unique positive root.\n"
+                b"## 01.20 First section\n## 01.24 Second section\n"
             )
             (books / "BOOK_02_TEST.md").write_bytes(b"## 02.34 Master section\n")
             (books / "BOOK_03_TEST.md").write_bytes(
@@ -1558,6 +1560,8 @@ class ProofArchitectureTests(unittest.TestCase):
                 {"claim_id": "BODY-ONLY", "book": "BOOK_04", "section": "04.7"},
                 {"claim_id": "NON-BOOK", "book": "METROLOGY", "section": "scope"},
                 {"claim_id": "MISMATCH", "book": "BOOK_01/02", "section": "01.8.1"},
+                {"claim_id": "SHARED-DESCRIPTION", "book": "BOOK_01/02",
+                 "section": "primitive positive response"},
             ]
 
             view = proof.claim_source_candidate_view(data)
@@ -1577,14 +1581,43 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertEqual(len(by_id["AMBIGUOUS"]["locator_pairs"][0]["candidates"]), 2)
         self.assertEqual(by_id["BODY-ONLY"]["resolution_status"], "unresolved")
         self.assertEqual(by_id["BODY-ONLY"]["locator_pairs"][0]["candidates"], [])
+        self.assertNotIn(
+            "ranked_heading_candidates",
+            by_id["BODY-ONLY"]["locator_pairs"][0],
+        )
         self.assertEqual(by_id["NON-BOOK"]["resolution_status"], "non_book_locator")
-        self.assertEqual(by_id["MISMATCH"]["resolution_status"], "malformed_locator")
+        self.assertEqual(by_id["MISMATCH"]["resolution_status"], "unresolved")
+        self.assertEqual(
+            by_id["MISMATCH"]["resolution_reason"],
+            "multiple_books_share_one_unpaired_section_locator",
+        )
+        self.assertEqual(by_id["MISMATCH"]["locator_pairs"], [])
+        self.assertEqual(
+            by_id["MISMATCH"]["book_heading_candidates"][0]["candidates"][0]["match_kind"],
+            "exact_heading",
+        )
+        self.assertEqual(by_id["SHARED-DESCRIPTION"]["resolution_status"], "unresolved")
+        self.assertEqual(
+            by_id["SHARED-DESCRIPTION"]["book_heading_candidates"][0]["candidates"][0][
+                "match_kind"
+            ],
+            "lexical_heading_candidate",
+        )
+        self.assertEqual(
+            by_id["SHARED-DESCRIPTION"]["book_heading_candidates"][0]["candidates"][0][
+                "review_status"
+            ],
+            "unreviewed_lexical_candidate",
+        )
         self.assertEqual(view["counts"]["fully_unique_claim_rows"], 2)
         self.assertEqual(view["counts"]["ambiguous_claim_rows"], 1)
         self.assertEqual(view["counts"]["non_book_claim_rows"], 1)
-        self.assertEqual(view["counts"]["malformed_claim_rows"], 1)
-        self.assertEqual(view["counts"]["unresolved_claim_rows"], 1)
-        self.assertIn("do not accept the claim statement", view["interpretation"])
+        self.assertEqual(view["counts"]["malformed_claim_rows"], 0)
+        self.assertEqual(view["counts"]["unresolved_claim_rows"], 3)
+        self.assertEqual(view["counts"]["unpaired_multi_book_claim_rows"], 2)
+        self.assertEqual(view["counts"]["claim_rows_with_ranked_heading_candidates"], 1)
+        self.assertEqual(view["counts"]["ranked_heading_candidate_count"], 1)
+        self.assertIn("Neither form accepts the claim statement", view["interpretation"])
 
 
 if __name__ == "__main__":
