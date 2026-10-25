@@ -63,6 +63,29 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertEqual(len(bounded["results"]), 33)
         self.assertEqual(bounded["results"][-1], {"_omitted_items": 8})
 
+    def test_source_locator_preserves_multiple_explicit_sections(self) -> None:
+        commit = "a" * 40
+        path = "02_REGISTRY/research/example.md"
+        evidence = {"section_refs": ["L5: The event record", "L30: The inverse"]}
+        pin = {
+            "ref": commit,
+            "path": path,
+            "pin_status": "verified",
+            "current_source_status": "source_missing",
+        }
+
+        locator = proof._source_locator_crosswalk(
+            pathlib.Path("."), evidence, pin, "Recover the complete source"
+        )
+
+        source = f"source:{commit}:{path}"
+        self.assertEqual(locator["section_refs"], ["L5: The event record", "L30: The inverse"])
+        self.assertEqual(locator["exact_unit_key_candidates"], [
+            f"{source}#L5: The event record",
+            f"{source}#L30: The inverse",
+        ])
+        self.assertEqual(locator["ranked_section_candidates"], [])
+
     def test_exact_identifier_ranks_before_textual_candidate(self) -> None:
         data = dataset()
         hits = proof.structured_search(data, "r1")

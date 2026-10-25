@@ -32,7 +32,11 @@
         {
           "ref": "77d3ab6059bd1a3ce48637b97b9f30aa8825fc5f",
           "path": "02_REGISTRY/research/MEMO_A4D_NONLINEAR_EINSTEIN_J2_BRIDGE.md",
-          "sha256": "ce56193edac787640840921310d265e5ebb5a0bd4d628414109dacaa6836b7bc"
+          "sha256": "ce56193edac787640840921310d265e5ebb5a0bd4d628414109dacaa6836b7bc",
+          "section_refs": [
+            "L16: A. The selected finite action already owns a nonlinear metric carrier",
+            "L48: B. The #201 Einstein detector differentiates that genuine metric quotient"
+          ]
         }
       ],
       "reported_state": "Main-owned metric provenance; global all-mode elimination remains obstructed."
@@ -50,7 +54,8 @@
         {
           "ref": "77d3ab6059bd1a3ce48637b97b9f30aa8825fc5f",
           "path": "02_REGISTRY/research/MEMO_A4D_J2_SMOOTH_RESONANCE_CLOSURE.md",
-          "sha256": "3ba0c4355999b147bc77048b082660558c538c48d49ef7fff98d4541069bf28a"
+          "sha256": "3ba0c4355999b147bc77048b082660558c538c48d49ef7fff98d4541069bf28a",
+          "section_ref": "L9: 0. Verdict and proof boundary"
         }
       ],
       "reported_state": "PARTIAL / refinement-uniform full coupled stationary estimate unresolved"
@@ -1021,7 +1026,11 @@
         {
           "ref": "518ee207d790fdf9c13692a784ba3255625fd001",
           "path": "02_REGISTRY/research/A4D_COMPLETE_STAGED_143484_BOOK_CLOCK_ABSOLUTE_SOURCE_SELF_CALIBRATION_2026_10_20.md",
-          "sha256": "73e4ce4a68649840544cda3d125c1c50d9c782d50cf86f4731a471e242892bef"
+          "sha256": "73e4ce4a68649840544cda3d125c1c50d9c782d50cf86f4731a471e242892bef",
+          "section_refs": [
+            "L5: 1. The correct archived clock variable is WHERE the run stopped, not only the final depth",
+            "L30: 2. NEW full-source inverse — not even the clock priors, early acceptances or κ are external numerical inputs"
+          ]
         },
         {
           "ref": "518ee207d790fdf9c13692a784ba3255625fd001",

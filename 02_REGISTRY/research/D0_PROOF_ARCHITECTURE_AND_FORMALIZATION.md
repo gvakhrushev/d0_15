@@ -812,7 +812,7 @@ the expected and observed blob hashes remain visible in the generated JSON.
 The eight unavailable objects are listed individually there. No expected hash
 was rewritten.
 
-Twelve evidence records now have explicit `section_ref` values for twelve result
+Fifteen evidence records now have explicit section references for fifteen result
 rows: `phase-count-counterexample`, `brinkmann-j2-null-family`,
 `original-golden-inverse-pf-moving-mean-j2`,
 `two-line-full-julia-car-observability`, and the eight existing double-null results
@@ -833,6 +833,9 @@ assembly-result statement and recorded the following scope boundaries:
 | Result | Supported statement and retained boundary |
 |---|---|
 | `phase-count-counterexample` | The witness `(-1,-1,i,i)` has rank 22 and nullity 2 where the proposed phase-count rule predicts 4. This refutes that rule; it does not classify the full divisor or its rank strata. |
+| `smooth-parametrix` | The fixed smooth realization has Fourier-tail, normal-center, summable-remainder, and uniform IR-parametrix controls. A refinement-uniform coupled normal rescue remains unresolved, so the Einstein operator statement is conditional. |
+| `original-stage-resolved-book-selector-143484` | The full two-depth, stage-labelled 143,484-event record recovers attempts, acceptances, the shared verifier, closed-path weights, the absolute Book action modulo 32 endpoint similarities, and its source jets. The event record and inverse are pinned in adjacent sections. The shared positive verifier is a substantive hypothesis; this does not identify the full H+J+R cost or establish physical selection. |
+| `metric-provenance` | Sections A and B support the exact nonlinear quotient coordinate `Q=Theta eta Theta^T` and the owned Einstein flat-metric tangent. Global all-mode connection elimination remains obstructed. |
 | `brinkmann-j2-null-family` | On the declared six-plaquette Lorentz-star family, all 16+24 geometric rows reduce to three, with the link equations fixing the one-u-step connection and the remaining equation a transverse Poisson equation. The composed corrected two-tick Golden AF×scene J2 gives the stated finite roots and smooth Einstein-scalar family. This is a mathematical AF-star instrument result; compulsory foundational D0 selection and the original fixed-g/tau raw terminal remain open. |
 | `original-golden-inverse-pf-moving-mean-j2` | On original golden-box addresses with true nonuniform weights, the specified inverse-PF and moving-volume operand of the same two-tick AF×scene J2 transfers Brinkmann roots with exact finite first-source equality and yields the conditional off-null mean source. The original weights, source-compatible factor, moving-volume map, and J2 are hypotheses; physical programme selection, full H+J+R/clock/preparation Euler, and raw #216 remain open. |
 | `two-line-full-julia-car-observability` | For two specified grade-one CAR16 probes, the complete positive Julia GOOD/BAD instrument gives a nonsingular six-by-six Jacobian from the original proper-Lorentz directions to unconditioned CAR responses, with determinant `1/373248`. The result is local and does not select probes, measurements, or their cost, or identify the response with the full Book action or Palatini link Euler. |
@@ -847,7 +850,7 @@ assembly-result statement and recorded the following scope boundaries:
 
 These are evidence-to-result matches with explicit mathematical scope, not
 accepted C0 dispositions or result-to-parent applications. The assembly
-registry makes these nine results C0 candidates; independent acceptance of
+registry makes these fifteen results C0 candidates; independent acceptance of
 the C0 denominator and dispositions remains pending.
 
 For verified pinned Markdown sources without an explicit section locator, the
