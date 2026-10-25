@@ -402,6 +402,7 @@ CASES: list[dict[str, Any]] = [
             "actual full-cochain matrix B-singleton vacuum spatial Nyquist positive self-adjoint weighted Dirac Eq. 6",
             "spatialNyquistEven_weightedDirac_matrix_block every even archive period N+2",
             "flatLorentzWeightedDiracEven_no_positive_selfadjoint_pairing",
+            "spatial_block_has_no_positive_metric rotationBlock hadj h0 h1 matrix Fin 2",
             "roleWeightedArchiveDifferenceLaplacian_fourier all-size role weighted difference eigenvalue",
             "archiveLorentzianDifferenceLaplacian_fourier roleWeightedArchiveFourierSymbol_lorentzian",
             "archiveLorentzianDifferenceOperator_fourier_mode archiveFourierFockMode archiveLorentzianFourierSymbol",
