@@ -6484,7 +6484,7 @@ Source unit key:
 
 `D0.Geometry.NonvacuumBrinkmannStencil` is now an explicit support root in `formal_support.csv` and is imported by generated `D0.All`. It defines the exact centered five-point transverse Laplacian, the source's harmonic quadratic/cubic family, the radial quadratic profile, the real two-component norm, and the actual finite midpoint update/forward gradient. The compiled theorems prove: (1) the displayed harmonic terms are annihilated for every nonzero mesh width; (2) the radial quadratic reads as four; (3) the combined profile reads as `-4 * coupling * energy`; (4) the forward difference of the same finite midpoint matter update equals its midpoint rate; and (5) the sourced profile's energy is exactly the squared norm of that record's forward gradient.
 
-The key application theorem is `D0.Geometry.nonvacuumProfile_source_eq_finiteMidpointMatterNorm`. Its elaborated type retains `h ≠ 0`, and its compiled proof depends on both `transverseFivePoint_nonvacuumBrinkmannProfile_eq_source` and `twoComponentMatterNormSq_midpointGradient_eq_rate`. The owning-module inventory records all 15 declarations visible from this module: 12 source declarations and three generated `_proof_` auxiliaries, which are not separately counted as mathematical result units. The six source-level theorem declarations report axiom footprint `{Classical.choice, Quot.sound, propext}`. Inventory: `sources/d0_proof_architecture_formalization_2026-10-24/nonvacuum_brinkmann_stencil_declarations_2026-10-25.json`, SHA-256 `34d04902ab1a98b6b03f6e8bc1a401c5ce7fd9df89b2680329c7be059d2cd514`; captured at source snapshot `9274b3abedd67cdc39bd33653a878e4f87a513ae`, worktree dirty, Lean 4.30.0, source digest `b7589a9549138f5b2e4ecdf7ff1dc7d9056cec6fcbc3fcd1f9440ef51cb5053a`, collector SHA-256 `6a4fdcdaecc9ae9bc6a5f7b74d57d64ce6d2577a08aa91b267f3346cbda9b73b`. The current 29-entry CAR/Hodge declaration inventory was also recollected against this Lean source digest; its SHA-256 is `6e5e059dfd3f48efa948a62e50a7c8857c4e3c69c11343be43f1d35609391162`.
+The key application theorem is `D0.Geometry.nonvacuumProfile_source_eq_finiteMidpointMatterNorm`. Its elaborated type retains `h ≠ 0`, and its compiled proof depends on both `transverseFivePoint_nonvacuumBrinkmannProfile_eq_source` and `twoComponentMatterNormSq_midpointGradient_eq_rate`. The owning-module inventory records all 15 declarations visible from this module: 12 source declarations and three generated `_proof_` auxiliaries, which are not separately counted as mathematical result units. The six source-level theorem declarations report axiom footprint `{Classical.choice, Quot.sound, propext}`. Inventory: `sources/d0_proof_architecture_formalization_2026-10-24/nonvacuum_brinkmann_stencil_declarations_2026-10-25.json`, SHA-256 `34d04902ab1a98b6b03f6e8bc1a401c5ce7fd9df89b2680329c7be059d2cd514`; captured at source snapshot `9274b3abedd67cdc39bd33653a878e4f87a513ae`, worktree dirty, Lean 4.30.0, source digest `b7589a9549138f5b2e4ecdf7ff1dc7d9056cec6fcbc3fcd1f9440ef51cb5053a`, collector SHA-256 `6a4fdcdaecc9ae9bc6a5f7b74d57d64ce6d2577a08aa91b267f3346cbda9b73b`. The 29-entry CAR/Hodge declaration inventory at this checkpoint was collected against this earlier Lean source digest; its SHA-256 is `6e5e059dfd3f48efa948a62e50a7c8857c4e3c69c11343be43f1d35609391162` and its snapshot remains in the branch history at `9274b3abedd67cdc39bd33653a878e4f87a513ae`. The combined post-refactor inventory is recorded below.
 
 The same source is now discoverable by the existing `positive-nonvacuum-recovery` cold-start case through the pinned §§7.1–7.2 owner, the module itself, and the compiled declaration inventory. The full cold-start run on snapshot `9274b3abedd67cdc39bd33653a878e4f87a513ae` found all required sources in 20/20 cases and passed its 21-case benchmark; its compact report is `sources/d0_proof_architecture_formalization_2026-10-24/proof_architecture_cold_start_summary_2026-10-25_nonvacuum.json`, SHA-256 `16368a7a3fca73dfa2bc9973d822af20e1721a90e68cb533a11a995c8b7eb850`; runner SHA-256 `7da9ed4eec1fc1f0c6a1ec217cd89e9d09bfc05ae176384e364e0d5bdbe73285`. This remains a partial application: it does not construct the original CAR operator, substitute the original 40→3→1 Cartan classification, prove all 16 coframe + 24 proper-Lorentz link + two matter Euler rows, establish the refinement estimate, or select the physical Book, clock, source, or execution. Those parent physical premises and existing scientific owners remain open.
 
@@ -6507,18 +6507,24 @@ builds pass for `D0.Spectrum.GenerationTensorExactness`,
 `D0.Bridge.FinalBridgeIndex`. This consolidates finite matrix algebra only: it
 changes no claim status, carrier interpretation, or physical conclusion.
 
-The public `D0.All` integration build passes **4,579/4,579** Lake jobs. The
-compiled declaration inventory at source commit
-`952b799dd6a85e38a39a3cca6f1a9f16c7121ba1` now records **36** declarations,
+The merged public `D0.All` integration build passes **4,580/4,580** Lake
+jobs. The combined compiled declaration inventory at source snapshot
+`472436ef795f7f6ad096eb711b8987e4d89fb13c` records **36** declarations,
 including the shared operator, its trace law, the preserved Spectrum/Matter
 names, and their consuming theorems. It pins Lean source digest
-`ae2dc4936267b987e3e543ccadd4b746de899ddeb949e362710ab6aeb2fb3d52`, collector
+`a077fdd36281e539c7ec4a9dbea51cc6152268928ab1679b17b95135d3425578`, collector
 SHA-256 `3c41633e10ad03c3bb0a8e440f94506a632630561697a6c44f6a76cda6155b2a`, and
 inventory SHA-256
-`476f074c18c6fa701cf512b5b5d28a1080aba4a31d903d198719f44787fda8d5`.
-The proof-architecture suite passes **49/49**; the added regression checks
-actual elaborated signatures and dependency edges. No theorem status or
-scientific acceptance boundary changed.
+`9b0a22b100858f88ae0c215940ea9e0a515f045277633f30d7c9a3f0ba307b2b`. The
+nonvacuum stencil inventory was refreshed at clean snapshot
+`6c01ea00f084271116faf61e7d608b859f14f6dc`; it retains all 15 owning-module
+declarations and pins the same Lean source digest, with file SHA-256
+`5da75971dce0b383e151110098468c7d7aa755de9c0114918ebabd21fa1e7c80`.
+The proof-architecture suite passes **50/50**, including checks of actual
+elaborated signatures, dependency edges, and current source digests. Repository
+validation passes with 889 claims, 31 assumptions, 58 aliases, 200 formal
+support rows, and closure 932. No theorem status or scientific acceptance
+boundary changed.
 
 ### Clean cold-start replay after the shared tensor API integration (25 October 2026)
 
