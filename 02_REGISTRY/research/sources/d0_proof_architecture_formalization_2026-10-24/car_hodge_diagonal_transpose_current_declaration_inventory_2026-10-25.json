@@ -1,10 +1,10 @@
 {
   "schema": "d0-lean-declaration-inventory-v1",
-  "snapshot_commit": "9274b3abedd67cdc39bd33653a878e4f87a513ae",
-  "worktree_dirty": true,
+  "snapshot_commit": "952b799dd6a85e38a39a3cca6f1a9f16c7121ba1",
+  "worktree_dirty": false,
   "claim_registry_sha256": null,
-  "lean_source_digest": "b7589a9549138f5b2e4ecdf7ff1dc7d9056cec6fcbc3fcd1f9440ef51cb5053a",
-  "collector_sha256": "2a41ca981b50bd5131a022d1315e5fca68b0f696651ff6b441f4f80016e434b7",
+  "lean_source_digest": "ae2dc4936267b987e3e543ccadd4b746de899ddeb949e362710ab6aeb2fb3d52",
+  "collector_sha256": "3c41633e10ad03c3bb0a8e440f94506a632630561697a6c44f6a76cda6155b2a",
   "toolchain": "leanprover/lean4:v4.30.0",
   "public_import_root": "D0.All",
   "resolution_only": false,
@@ -38,7 +38,14 @@
       "D0.Algebra.finiteCoordinate_eq_sum_single",
       "D0.Algebra.finiteHermitianPairing_adjoint",
       "D0.Algebra.finiteWeightedPairing_adjoint",
-      "D0.Algebra.finiteLinearMap_apply_eq_sum_single"
+      "D0.Algebra.finiteLinearMap_apply_eq_sum_single",
+      "D0.Algebra.finiteMatrixTensorProduct",
+      "D0.Algebra.finiteMatrixTensorProduct_trace_one_left",
+      "D0.Spectrum.tensor_product_I",
+      "D0.Spectrum.kronecker_C_I",
+      "D0.Spectrum.stage3_trace_relation",
+      "D0.Matter.kronecker_I_C",
+      "D0.Matter.partial_trace_commutes_with_shift"
     ]
   },
   "declarations": [
@@ -2243,21 +2250,21 @@
         "declaration": {
           "end": {
             "column": 11,
-            "line": 149
+            "line": 164
           },
           "start": {
             "column": 0,
-            "line": 88
+            "line": 103
           }
         },
         "selection": {
           "end": {
             "column": 56,
-            "line": 91
+            "line": 106
           },
           "start": {
             "column": 8,
-            "line": 91
+            "line": 106
           }
         }
       },
@@ -2570,25 +2577,25 @@
         "declaration": {
           "end": {
             "column": 62,
-            "line": 86
+            "line": 87
           },
           "start": {
             "column": 0,
-            "line": 78
+            "line": 79
           }
         },
         "selection": {
           "end": {
             "column": 37,
-            "line": 80
+            "line": 81
           },
           "start": {
             "column": 8,
-            "line": 80
+            "line": 81
           }
         }
       },
-      "elaborated_type": "∀ {X : Type u_1} {Y : Type u_2} {R : Type u_3} [inst : Fintype X] [inst_1 : Fintype Y] [inst_2 : DecidableEq X]\n  [inst_3 : DecidableEq Y] [inst_4 : Semiring R], D0.Algebra.finiteMatrixTensorProduct 1 1 = 1",
+      "elaborated_type": "∀ {X : Type u_1} {Y : Type u_2} {R : Type u_3} [Fintype X] [Fintype Y] [inst : DecidableEq X] [inst_1 : DecidableEq Y]\n  [inst_2 : Semiring R], D0.Algebra.finiteMatrixTensorProduct 1 1 = 1",
       "exists": true,
       "internal_name": false,
       "module": "D0.Algebra.FiniteMatrixTensorProduct",
@@ -2848,21 +2855,21 @@
         "declaration": {
           "end": {
             "column": 15,
-            "line": 49
+            "line": 50
           },
           "start": {
             "column": 0,
-            "line": 24
+            "line": 25
           }
         },
         "selection": {
           "end": {
             "column": 37,
-            "line": 26
+            "line": 27
           },
           "start": {
             "column": 8,
-            "line": 26
+            "line": 27
           }
         }
       },
@@ -3027,25 +3034,25 @@
         "declaration": {
           "end": {
             "column": 43,
-            "line": 67
+            "line": 68
           },
           "start": {
             "column": 0,
-            "line": 60
+            "line": 61
           }
         },
         "selection": {
           "end": {
             "column": 43,
-            "line": 61
+            "line": 62
           },
           "start": {
             "column": 8,
-            "line": 61
+            "line": 62
           }
         }
       },
-      "elaborated_type": "∀ {X : Type u_1} {Y : Type u_2} {R : Type u_3} [inst : Fintype X] [inst_1 : Fintype Y] [inst_2 : Semiring R]\n  (A : Matrix X X R) (B C : Matrix Y Y R),\n  D0.Algebra.finiteMatrixTensorProduct A (B + C) =\n    D0.Algebra.finiteMatrixTensorProduct A B + D0.Algebra.finiteMatrixTensorProduct A C",
+      "elaborated_type": "∀ {X : Type u_1} {Y : Type u_2} {R : Type u_3} [Fintype X] [Fintype Y] [inst : Semiring R] (A : Matrix X X R)\n  (B C : Matrix Y Y R),\n  D0.Algebra.finiteMatrixTensorProduct A (B + C) =\n    D0.Algebra.finiteMatrixTensorProduct A B + D0.Algebra.finiteMatrixTensorProduct A C",
       "exists": true,
       "internal_name": false,
       "module": "D0.Algebra.FiniteMatrixTensorProduct",
@@ -3160,25 +3167,25 @@
         "declaration": {
           "end": {
             "column": 62,
-            "line": 76
+            "line": 77
           },
           "start": {
             "column": 0,
-            "line": 69
+            "line": 70
           }
         },
         "selection": {
           "end": {
             "column": 44,
-            "line": 70
+            "line": 71
           },
           "start": {
             "column": 8,
-            "line": 70
+            "line": 71
           }
         }
       },
-      "elaborated_type": "∀ {X : Type u_1} {Y : Type u_2} {R : Type u_3} [inst : Fintype X] [inst_1 : Fintype Y] [inst_2 : CommSemiring R]\n  (A : Matrix X X R) (c : R) (B : Matrix Y Y R),\n  D0.Algebra.finiteMatrixTensorProduct A (c • B) = c • D0.Algebra.finiteMatrixTensorProduct A B",
+      "elaborated_type": "∀ {X : Type u_1} {Y : Type u_2} {R : Type u_3} [Fintype X] [Fintype Y] [inst : CommSemiring R] (A : Matrix X X R)\n  (c : R) (B : Matrix Y Y R),\n  D0.Algebra.finiteMatrixTensorProduct A (c • B) = c • D0.Algebra.finiteMatrixTensorProduct A B",
       "exists": true,
       "internal_name": false,
       "module": "D0.Algebra.FiniteMatrixTensorProduct",
@@ -3292,25 +3299,25 @@
         "declaration": {
           "end": {
             "column": 5,
-            "line": 58
+            "line": 59
           },
           "start": {
             "column": 0,
-            "line": 51
+            "line": 52
           }
         },
         "selection": {
           "end": {
             "column": 43,
-            "line": 52
+            "line": 53
           },
           "start": {
             "column": 8,
-            "line": 52
+            "line": 53
           }
         }
       },
-      "elaborated_type": "∀ {X : Type u_1} {Y : Type u_2} {R : Type u_3} [inst : Fintype X] [inst_1 : Fintype Y] [inst_2 : Mul R]\n  (A : Matrix X X R) (B : Matrix Y Y R),\n  (D0.Algebra.finiteMatrixTensorProduct A B).transpose = D0.Algebra.finiteMatrixTensorProduct A.transpose B.transpose",
+      "elaborated_type": "∀ {X : Type u_1} {Y : Type u_2} {R : Type u_3} [Fintype X] [Fintype Y] [inst : Mul R] (A : Matrix X X R)\n  (B : Matrix Y Y R),\n  (D0.Algebra.finiteMatrixTensorProduct A B).transpose = D0.Algebra.finiteMatrixTensorProduct A.transpose B.transpose",
       "exists": true,
       "internal_name": false,
       "module": "D0.Algebra.FiniteMatrixTensorProduct",
@@ -4514,6 +4521,870 @@
         "instMulZeroClassOfSemiring"
       ],
       "source_path": "03_FORMALIZATION/D0/Algebra/FiniteCoordinateBasis.lean"
+    },
+    {
+      "axioms": [],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "X",
+          "type": "Type u_1"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "Y",
+          "type": "Type u_2"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "R",
+          "type": "Type u_3"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Algebra.FiniteMatrixTensorProduct.46014950._hygCtx._hyg.5",
+          "type": "Mul R"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "A",
+          "type": "X → X → R"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "B",
+          "type": "Y → Y → R"
+        }
+      ],
+      "conclusion_whnf": "X × Y → X × Y → R",
+      "declaration_kind": "definition",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 44,
+            "line": 23
+          },
+          "start": {
+            "column": 0,
+            "line": 17
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 29,
+            "line": 19
+          },
+          "start": {
+            "column": 4,
+            "line": 19
+          }
+        }
+      },
+      "elaborated_type": "{X : Type u_1} → {Y : Type u_2} → {R : Type u_3} → [Mul R] → Matrix X X R → Matrix Y Y R → Matrix (X × Y) (X × Y) R",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Algebra.FiniteMatrixTensorProduct",
+      "name": "D0.Algebra.finiteMatrixTensorProduct",
+      "proof_dependencies": [
+        "D0.Algebra.finiteMatrixTensorProduct.match_1",
+        "HMul.hMul",
+        "Matrix",
+        "Mul",
+        "Prod",
+        "instHMul"
+      ],
+      "type_dependencies": [
+        "Matrix",
+        "Mul",
+        "Prod"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Algebra/FiniteMatrixTensorProduct.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "X",
+          "type": "Type u_1"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "Y",
+          "type": "Type u_2"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "R",
+          "type": "Type u_3"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Algebra.FiniteMatrixTensorProduct.3082347243._hygCtx._hyg.5",
+          "type": "Fintype X"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Algebra.FiniteMatrixTensorProduct.3082347243._hygCtx._hyg.8",
+          "type": "Fintype Y"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Algebra.FiniteMatrixTensorProduct.3082347243._hygCtx._hyg.11",
+          "type": "(a b : X) → Decidable (a = b)"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Algebra.FiniteMatrixTensorProduct.3082347243._hygCtx._hyg.14",
+          "type": "Semiring R"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "B",
+          "type": "Y → Y → R"
+        }
+      ],
+      "conclusion_whnf": "(D0.Algebra.finiteMatrixTensorProduct 1 B).trace = Fintype.card X • B.trace",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 44,
+            "line": 101
+          },
+          "start": {
+            "column": 0,
+            "line": 89
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 48,
+            "line": 92
+          },
+          "start": {
+            "column": 8,
+            "line": 92
+          }
+        }
+      },
+      "elaborated_type": "∀ {X : Type u_1} {Y : Type u_2} {R : Type u_3} [inst : Fintype X] [inst_1 : Fintype Y] [inst_2 : DecidableEq X]\n  [inst_3 : Semiring R] (B : Matrix Y Y R), (D0.Algebra.finiteMatrixTensorProduct 1 B).trace = Fintype.card X • B.trace",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Algebra.FiniteMatrixTensorProduct",
+      "name": "D0.Algebra.finiteMatrixTensorProduct_trace_one_left",
+      "proof_dependencies": [
+        "AddCommMonoid.toAddMonoid",
+        "AddCommMonoidWithOne.toAddMonoidWithOne",
+        "AddMonoid.toNSMul",
+        "AddMonoidWithOne.toAddMonoid",
+        "AddMonoidWithOne.toNatCast",
+        "AddMonoidWithOne.toOne",
+        "D0.Algebra.finiteMatrixTensorProduct",
+        "D0.Algebra.finiteMatrixTensorProduct.match_1",
+        "DecidableEq",
+        "Distrib.toMul",
+        "Eq",
+        "Eq.mpr",
+        "Eq.refl",
+        "Eq.trans",
+        "Finset",
+        "Finset.card",
+        "Finset.instSetLike",
+        "Finset.sum",
+        "Finset.sum_congr",
+        "Finset.sum_const",
+        "Finset.univ",
+        "Fintype",
+        "Fintype.card",
+        "Fintype.sum_prod_type",
+        "HMul.hMul",
+        "HSMul.hSMul",
+        "Matrix",
+        "Matrix.diag",
+        "Matrix.one",
+        "Matrix.trace",
+        "Membership.mem",
+        "MulZeroClass.toZero",
+        "MulZeroOneClass.toMulOneClass",
+        "Nat",
+        "Nat.cast",
+        "NonAssocSemiring.toAddCommMonoidWithOne",
+        "NonAssocSemiring.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "NonUnitalNonAssocSemiring.toDistrib",
+        "Not",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Prod",
+        "Prod.mk",
+        "Semiring",
+        "Semiring.toNonAssocSemiring",
+        "SetLike.instMembership",
+        "True",
+        "Zero.toOfNat0",
+        "congr",
+        "congrArg",
+        "congrFun'",
+        "eq_self",
+        "id",
+        "if_true",
+        "instDecidableTrue",
+        "instDistribOfSemiring",
+        "instFintypeProd",
+        "instHMul",
+        "instHSMul",
+        "instMulZeroClassOfSemiring",
+        "instMulZeroOneClassOfSemiring",
+        "ite",
+        "ite_congr",
+        "nsmul_eq_mul",
+        "of_eq_true",
+        "one_mul"
+      ],
+      "type_dependencies": [
+        "AddCommMonoidWithOne.toAddMonoidWithOne",
+        "AddMonoid.toNSMul",
+        "AddMonoidWithOne.toAddMonoid",
+        "AddMonoidWithOne.toOne",
+        "D0.Algebra.finiteMatrixTensorProduct",
+        "DecidableEq",
+        "Distrib.toMul",
+        "Eq",
+        "Fintype",
+        "Fintype.card",
+        "HSMul.hSMul",
+        "Matrix",
+        "Matrix.one",
+        "Matrix.trace",
+        "MulZeroClass.toZero",
+        "Nat",
+        "NonAssocSemiring.toAddCommMonoidWithOne",
+        "NonAssocSemiring.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Prod",
+        "Semiring",
+        "Semiring.toNonAssocSemiring",
+        "instDistribOfSemiring",
+        "instFintypeProd",
+        "instHSMul",
+        "instMulZeroClassOfSemiring"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Algebra/FiniteMatrixTensorProduct.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "G",
+          "type": "Type"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "N",
+          "type": "Type"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Spectrum.GenerationTensorExactness.169878422._hygCtx._hyg.4",
+          "type": "Fintype G"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Spectrum.GenerationTensorExactness.169878422._hygCtx._hyg.7",
+          "type": "(a b : G) → Decidable (a = b)"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "Γ_SM",
+          "type": "N → N → ℝ"
+        }
+      ],
+      "conclusion_whnf": "G × N → G × N → ℝ",
+      "declaration_kind": "definition",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 62,
+            "line": 13
+          },
+          "start": {
+            "column": 0,
+            "line": 11
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 20,
+            "line": 12
+          },
+          "start": {
+            "column": 4,
+            "line": 12
+          }
+        }
+      },
+      "elaborated_type": "{G N : Type} → [Fintype G] → [DecidableEq G] → Matrix N N ℝ → Matrix (G × N) (G × N) ℝ",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Spectrum.GenerationTensorExactness",
+      "name": "D0.Spectrum.tensor_product_I",
+      "proof_dependencies": [
+        "D0.Algebra.finiteMatrixTensorProduct",
+        "DecidableEq",
+        "Fintype",
+        "Matrix",
+        "Matrix.one",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Real",
+        "Real.instMul",
+        "Real.instOne",
+        "Real.instZero"
+      ],
+      "type_dependencies": [
+        "DecidableEq",
+        "Fintype",
+        "Matrix",
+        "Prod",
+        "Real"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Spectrum/GenerationTensorExactness.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "G",
+          "type": "Type"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "N",
+          "type": "Type"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Spectrum.GenerationTensorExactness.1996324173._hygCtx._hyg.4",
+          "type": "Fintype G"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Spectrum.GenerationTensorExactness.1996324173._hygCtx._hyg.7",
+          "type": "(a b : G) → Decidable (a = b)"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Spectrum.GenerationTensorExactness.1996324173._hygCtx._hyg.10",
+          "type": "(a b : N) → Decidable (a = b)"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "C_G",
+          "type": "G → G → ℝ"
+        }
+      ],
+      "conclusion_whnf": "G × N → G × N → ℝ",
+      "declaration_kind": "definition",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 61,
+            "line": 36
+          },
+          "start": {
+            "column": 0,
+            "line": 34
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 17,
+            "line": 35
+          },
+          "start": {
+            "column": 4,
+            "line": 35
+          }
+        }
+      },
+      "elaborated_type": "{G N : Type} → [Fintype G] → [DecidableEq G] → [DecidableEq N] → Matrix G G ℝ → Matrix (G × N) (G × N) ℝ",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Spectrum.GenerationTensorExactness",
+      "name": "D0.Spectrum.kronecker_C_I",
+      "proof_dependencies": [
+        "D0.Algebra.finiteMatrixTensorProduct",
+        "DecidableEq",
+        "Fintype",
+        "Matrix",
+        "Matrix.one",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Real",
+        "Real.instMul",
+        "Real.instOne",
+        "Real.instZero"
+      ],
+      "type_dependencies": [
+        "DecidableEq",
+        "Fintype",
+        "Matrix",
+        "Prod",
+        "Real"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Spectrum/GenerationTensorExactness.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "G",
+          "type": "Type"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "N",
+          "type": "Type"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Spectrum.GenerationTensorExactness.4078274256._hygCtx._hyg.4",
+          "type": "Fintype G"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Spectrum.GenerationTensorExactness.4078274256._hygCtx._hyg.7",
+          "type": "(a b : G) → Decidable (a = b)"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Spectrum.GenerationTensorExactness.4078274256._hygCtx._hyg.10",
+          "type": "Fintype N"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "Γ_SM",
+          "type": "N → N → ℝ"
+        }
+      ],
+      "conclusion_whnf": "(D0.Spectrum.tensor_product_I Γ_SM).trace = ↑(Fintype.card G) * Γ_SM.trace",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 73,
+            "line": 182
+          },
+          "start": {
+            "column": 0,
+            "line": 178
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 29,
+            "line": 178
+          },
+          "start": {
+            "column": 8,
+            "line": 178
+          }
+        }
+      },
+      "elaborated_type": "∀ {G N : Type} [inst : Fintype G] [inst_1 : DecidableEq G] [inst_2 : Fintype N] (Γ_SM : Matrix N N ℝ),\n  (D0.Spectrum.tensor_product_I Γ_SM).trace = ↑(Fintype.card G) * Γ_SM.trace",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Spectrum.GenerationTensorExactness",
+      "name": "D0.Spectrum.stage3_trace_relation",
+      "proof_dependencies": [
+        "AddCommMonoidWithOne.toAddMonoidWithOne",
+        "AddMonoid.toNSMul",
+        "AddMonoidWithOne.toAddMonoid",
+        "AddMonoidWithOne.toNatCast",
+        "AddMonoidWithOne.toOne",
+        "D0.Algebra.finiteMatrixTensorProduct",
+        "D0.Algebra.finiteMatrixTensorProduct_trace_one_left",
+        "DecidableEq",
+        "Distrib.toMul",
+        "Eq",
+        "Eq.mp",
+        "Fintype",
+        "Fintype.card",
+        "HMul.hMul",
+        "HSMul.hSMul",
+        "Matrix",
+        "Matrix.one",
+        "Matrix.trace",
+        "MulZeroClass.toZero",
+        "Nat",
+        "Nat.cast",
+        "NonAssocSemiring.toAddCommMonoidWithOne",
+        "NonAssocSemiring.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "NonUnitalNonAssocSemiring.toDistrib",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Prod",
+        "Real",
+        "Real.semiring",
+        "Semiring.toNonAssocSemiring",
+        "congrArg",
+        "instDistribOfSemiring",
+        "instFintypeProd",
+        "instHMul",
+        "instHSMul",
+        "instMulZeroClassOfSemiring",
+        "nsmul_eq_mul"
+      ],
+      "type_dependencies": [
+        "D0.Spectrum.tensor_product_I",
+        "DecidableEq",
+        "Eq",
+        "Fintype",
+        "Fintype.card",
+        "HMul.hMul",
+        "Matrix",
+        "Matrix.trace",
+        "Nat.cast",
+        "Prod",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.instMul",
+        "Real.instNatCast",
+        "instFintypeProd",
+        "instHMul"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Spectrum/GenerationTensorExactness.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "V",
+          "type": "Type"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "N",
+          "type": "Type"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Matter.ArchivePartialTrace.2058038132._hygCtx._hyg.4",
+          "type": "Fintype V"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Matter.ArchivePartialTrace.2058038132._hygCtx._hyg.7",
+          "type": "(a b : V) → Decidable (a = b)"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "C_N",
+          "type": "N → N → ℝ"
+        }
+      ],
+      "conclusion_whnf": "V × N → V × N → ℝ",
+      "declaration_kind": "definition",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 34,
+            "line": 26
+          },
+          "start": {
+            "column": 0,
+            "line": 24
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 17,
+            "line": 25
+          },
+          "start": {
+            "column": 4,
+            "line": 25
+          }
+        }
+      },
+      "elaborated_type": "{V N : Type} → [Fintype V] → [DecidableEq V] → Matrix N N ℝ → Matrix (V × N) (V × N) ℝ",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Matter.ArchivePartialTrace",
+      "name": "D0.Matter.kronecker_I_C",
+      "proof_dependencies": [
+        "D0.Spectrum.tensor_product_I",
+        "DecidableEq",
+        "Fintype",
+        "Matrix",
+        "Real"
+      ],
+      "type_dependencies": [
+        "DecidableEq",
+        "Fintype",
+        "Matrix",
+        "Prod",
+        "Real"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Matter/ArchivePartialTrace.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "V",
+          "type": "Type"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "N",
+          "type": "Type"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Matter.ArchivePartialTrace.3928026421._hygCtx._hyg.4",
+          "type": "Fintype V"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Matter.ArchivePartialTrace.3928026421._hygCtx._hyg.7",
+          "type": "(a b : V) → Decidable (a = b)"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Matter.ArchivePartialTrace.3928026421._hygCtx._hyg.10",
+          "type": "Fintype N"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Matter.ArchivePartialTrace.3928026421._hygCtx._hyg.13",
+          "type": "(a b : N) → Decidable (a = b)"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "M",
+          "type": "V × N → V × N → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "C_N",
+          "type": "N → N → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "h_comm",
+          "type": "M * D0.Matter.kronecker_I_C C_N = D0.Matter.kronecker_I_C C_N * M"
+        }
+      ],
+      "conclusion_whnf": "D0.Matter.partialTraceV M * C_N = C_N * D0.Matter.partialTraceV M",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 14,
+            "line": 79
+          },
+          "start": {
+            "column": 0,
+            "line": 28
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 41,
+            "line": 28
+          },
+          "start": {
+            "column": 8,
+            "line": 28
+          }
+        }
+      },
+      "elaborated_type": "∀ {V N : Type} [inst : Fintype V] [inst_1 : DecidableEq V] [inst_2 : Fintype N] [DecidableEq N]\n  (M : Matrix (V × N) (V × N) ℝ) (C_N : Matrix N N ℝ),\n  M * D0.Matter.kronecker_I_C C_N = D0.Matter.kronecker_I_C C_N * M →\n    D0.Matter.partialTraceV M * C_N = C_N * D0.Matter.partialTraceV M",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Matter.ArchivePartialTrace",
+      "name": "D0.Matter.partial_trace_commutes_with_shift",
+      "proof_dependencies": [
+        "AddCommMonoid.toAddMonoid",
+        "AddMonoid.toAddZeroClass",
+        "AddZero.toZero",
+        "AddZeroClass.toAddZero",
+        "D0.Matter.kronecker_I_C",
+        "D0.Matter.partialTraceV",
+        "DecidableEq",
+        "Distrib.toMul",
+        "Eq",
+        "Eq.mp",
+        "Eq.mpr",
+        "Eq.refl",
+        "Eq.trans",
+        "False.elim",
+        "Finset",
+        "Finset.instSetLike",
+        "Finset.mem_univ",
+        "Finset.mul_sum",
+        "Finset.sum",
+        "Finset.sum_comm",
+        "Finset.sum_congr",
+        "Finset.sum_const_zero",
+        "Finset.sum_eq_single",
+        "Finset.sum_mul",
+        "Finset.univ",
+        "Fintype",
+        "Fintype.sum_prod_type",
+        "HMul.hMul",
+        "Matrix",
+        "Matrix.ext",
+        "Matrix.instHMulOfFintypeOfMulOfAddCommMonoid",
+        "Matrix.instMulOfFintypeOfAddCommMonoid",
+        "Matrix.mul_apply",
+        "Matrix.one",
+        "Membership.mem",
+        "MulZeroClass.mul_zero",
+        "MulZeroClass.toZero",
+        "MulZeroClass.zero_mul",
+        "MulZeroOneClass.toMulOneClass",
+        "Ne",
+        "Ne.symm",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "NonUnitalNonAssocSemiring.toDistrib",
+        "NonUnitalNormedCommRing.toNonUnitalCommRing",
+        "NormedCommRing.toNonUnitalNormedCommRing",
+        "Not",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Prod",
+        "Prod.fst",
+        "Prod.mk",
+        "Prod.snd",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.instMul",
+        "Real.instOne",
+        "Real.instZero",
+        "Real.normedCommRing",
+        "Real.semiring",
+        "SetLike.instMembership",
+        "True",
+        "Zero.toOfNat0",
+        "congr",
+        "congrArg",
+        "congrFun'",
+        "congr_fun",
+        "eq_false",
+        "eq_self",
+        "id",
+        "instFintypeProd",
+        "instHMul",
+        "instMulZeroClassOfSemiring",
+        "instMulZeroOneClassOfSemiring",
+        "ite",
+        "ite_cond_eq_false",
+        "ite_cond_eq_true",
+        "of_eq_true",
+        "one_mul",
+        "rfl"
+      ],
+      "type_dependencies": [
+        "D0.Matter.kronecker_I_C",
+        "D0.Matter.partialTraceV",
+        "DecidableEq",
+        "Eq",
+        "Fintype",
+        "HMul.hMul",
+        "Matrix",
+        "Matrix.instHMulOfFintypeOfMulOfAddCommMonoid",
+        "Matrix.instMulOfFintypeOfAddCommMonoid",
+        "Prod",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.instMul",
+        "instFintypeProd",
+        "instHMul"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Matter/ArchivePartialTrace.lean"
     }
   ]
 }

@@ -1820,6 +1820,70 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertIn("FiniteHermitianAdjoint.lean", consumers)
         self.assertIn("FiniteWeightedAdjoint.lean", consumers)
 
+    def test_spectrum_and_matter_wrappers_consume_shared_finite_matrix_tensor_api(self) -> None:
+        inventory_path = (
+            proof.ROOT
+            / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
+            / "car_hodge_diagonal_transpose_current_declaration_inventory_2026-10-25.json"
+        )
+        inventory = json.loads(inventory_path.read_text(encoding="utf-8"))
+        self.assertEqual(inventory["lean_source_digest"], lean_task_build.source_digest())
+        self.assertEqual(inventory["public_import_root"], "D0.All")
+        declarations = {row["name"]: row for row in inventory["declarations"]}
+
+        tensor = declarations["D0.Algebra.finiteMatrixTensorProduct"]
+        self.assertEqual(tensor["declaration_kind"], "definition")
+        self.assertIn("[Mul R]", tensor["elaborated_type"])
+        self.assertNotIn("[Fintype", tensor["elaborated_type"])
+        self.assertEqual(tensor["axioms"], [])
+
+        trace_law = declarations[
+            "D0.Algebra.finiteMatrixTensorProduct_trace_one_left"
+        ]
+        self.assertEqual(trace_law["declaration_kind"], "theorem")
+        self.assertIn("(D0.Algebra.finiteMatrixTensorProduct 1 B).trace",
+                      trace_law["elaborated_type"])
+        self.assertIn("Fintype.card X • B.trace", trace_law["elaborated_type"])
+        self.assertEqual(
+            set(trace_law["axioms"]),
+            {"Classical.choice", "Quot.sound", "propext"},
+        )
+        self.assertIn("D0.Algebra.finiteMatrixTensorProduct",
+                      trace_law["proof_dependencies"])
+
+        for name in (
+            "D0.Spectrum.tensor_product_I",
+            "D0.Spectrum.kronecker_C_I",
+        ):
+            wrapper = declarations[name]
+            self.assertEqual(wrapper["declaration_kind"], "definition")
+            self.assertNotIn("[Fintype N]", wrapper["elaborated_type"])
+            self.assertIn("D0.Algebra.finiteMatrixTensorProduct",
+                          wrapper["proof_dependencies"])
+
+        matter_wrapper = declarations["D0.Matter.kronecker_I_C"]
+        self.assertEqual(matter_wrapper["declaration_kind"], "definition")
+        self.assertNotIn("[Fintype N]", matter_wrapper["elaborated_type"])
+        self.assertIn("D0.Spectrum.tensor_product_I",
+                      matter_wrapper["proof_dependencies"])
+
+        spectrum_trace = declarations["D0.Spectrum.stage3_trace_relation"]
+        self.assertIn("D0.Algebra.finiteMatrixTensorProduct_trace_one_left",
+                      spectrum_trace["proof_dependencies"])
+        partial_trace = declarations[
+            "D0.Matter.partial_trace_commutes_with_shift"
+        ]
+        self.assertIn("D0.Matter.kronecker_I_C",
+                      partial_trace["proof_dependencies"])
+
+        support = {
+            row["lean_module"]: row
+            for row in proof.load_dataset(proof.ROOT)["formal_support"]
+        }
+        consumers = support["D0.Algebra.FiniteMatrixTensorProduct"]["referenced_by"]
+        self.assertIn("D0/Spectrum/GenerationTensorExactness.lean", consumers)
+        self.assertIn("D0/Matter/ArchivePartialTrace.lean", consumers)
+
     def test_claim_source_candidates_use_exact_headings_and_preserve_ambiguity(self) -> None:
         with tempfile.TemporaryDirectory() as temp:
             root = pathlib.Path(temp)

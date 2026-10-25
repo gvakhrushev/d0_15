@@ -6506,3 +6506,16 @@ builds pass for `D0.Spectrum.GenerationTensorExactness`,
 `D0.Matter.ArchivePartialTrace`, `D0.Geometry.ArchiveCARDirac`, and
 `D0.Bridge.FinalBridgeIndex`. This consolidates finite matrix algebra only: it
 changes no claim status, carrier interpretation, or physical conclusion.
+
+The public `D0.All` integration build passes **4,579/4,579** Lake jobs. The
+compiled declaration inventory at source commit
+`952b799dd6a85e38a39a3cca6f1a9f16c7121ba1` now records **36** declarations,
+including the shared operator, its trace law, the preserved Spectrum/Matter
+names, and their consuming theorems. It pins Lean source digest
+`ae2dc4936267b987e3e543ccadd4b746de899ddeb949e362710ab6aeb2fb3d52`, collector
+SHA-256 `3c41633e10ad03c3bb0a8e440f94506a632630561697a6c44f6a76cda6155b2a`, and
+inventory SHA-256
+`476f074c18c6fa701cf512b5b5d28a1080aba4a31d903d198719f44787fda8d5`.
+The proof-architecture suite passes **49/49**; the added regression checks
+actual elaborated signatures and dependency edges. No theorem status or
+scientific acceptance boundary changed.
