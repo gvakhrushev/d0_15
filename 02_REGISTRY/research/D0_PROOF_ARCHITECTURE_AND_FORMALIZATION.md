@@ -6329,3 +6329,11 @@ tests **25/25**, generated Lean-view check, and EOL-aware diff check. An
 independent read-only API review found no actionable scope or dependency
 issue. This is reusable finite algebra only; it does not select a weight
 profile or physical pairing, accept a C0 unit, or change any physical status.
+
+The full bilingual cold-start runner on this clean published snapshot found
+all required pinned sources in **20/20** real cases and passed the **21/21**
+benchmark, including the exact-source versus unrelated-prose impact control.
+Its output SHA-256 is
+`39848e8d9170d51f3e9945c270036a1b5d4cde08ce4c10fefc9536a06ec92533`; the
+runner SHA-256 is
+`abe71f0a30054c8ba7e41d6a0d2e329f87d7e136e0c8f161223c9f55ae96fd5d`.
