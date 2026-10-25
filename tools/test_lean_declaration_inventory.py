@@ -182,6 +182,29 @@ class DeclarationInventoryTests(unittest.TestCase):
                             inventory.run_inventory(["D0.Foo.bar"], "D0.Foo")
         run.assert_called_once()
 
+    def test_cli_batches_repeated_exact_names_into_one_current_snapshot(self):
+        names = ["D0.Foo.first", "D0.Foo.second", "D0.Foo.first"]
+        records = [{"name": name, "exists": True} for name in names[:2]]
+        with tempfile.TemporaryDirectory() as directory:
+            output = pathlib.Path(directory) / "current.json"
+            with patch.object(sys, "argv", [
+                "lean_declaration_inventory.py",
+                "--name", names[0], "--name", names[1], "--name", names[2],
+                "--output", str(output), "--import-root", "D0.Foo",
+            ]):
+                with patch.object(
+                    inventory, "run_inventory", return_value=(records, "collector", "source")
+                ) as run:
+                    with patch.object(
+                        inventory.subprocess, "check_output", side_effect=["commit", ""]
+                    ):
+                        self.assertEqual(inventory.main(), 0)
+
+            run.assert_called_once_with(names[:2], "D0.Foo", False)
+            snapshot = json.loads(output.read_text(encoding="utf-8"))
+            self.assertEqual(snapshot["request"], {"full_names": names[:2]})
+            self.assertEqual([row["name"] for row in snapshot["declarations"]], names[:2])
+
 
 if __name__ == "__main__":
     unittest.main()

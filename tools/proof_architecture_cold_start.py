@@ -203,7 +203,10 @@ CASES: list[dict[str, Any]] = [
             "spatialShellSubmodule_finrank hodgeSquare_on_spatialShell shell rank 96 A invariant",
             "shellEnergy_tendsto_two_pi spatial_shell_rank_l2 L 2 control",
             "carDirac_square_eq_four_id_at_zero carDirac_zero_kernel_trivial_at_zero L 2 exact CAR control",
+            "finiteMatrixTensorProduct_sum_square_eq_diagonal finiteMatrixTensorProduct_one "
+            "tensorProduct_mul generic finite matrix Clifford square",
             "car_dirac_square_l2_identity_declaration car_dirac_l2_zero_kernel_trivial_declaration",
+            "car_hodge_current_declaration_inventory_2026-10-25 current compiled types",
             "car zero mode claim declarations 2026 10 25",
             "hodge car dirac kernel declaration 2026 10 25",
             "car dirac square claim declarations 2026 10 25",
@@ -222,6 +225,7 @@ CASES: list[dict[str, Any]] = [
             "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
             "02_REGISTRY/claims.csv",
             "03_FORMALIZATION/D0/TheoremLedger/ClaimMap.lean",
+            "03_FORMALIZATION/D0/Algebra/FiniteMatrixTensorProduct.lean",
             "03_FORMALIZATION/D0/Geometry/ArchiveCARDirac.lean",
             "03_FORMALIZATION/D0/Geometry/ArchiveHodgeCARDirac.lean",
             "03_FORMALIZATION/D0/Geometry/ArchiveHodgeCARDiracSquare.lean",
@@ -242,6 +246,7 @@ CASES: list[dict[str, Any]] = [
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/car_dirac_square_l2_no_go_declaration_followup_2026-10-25.json",
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/car_dirac_square_l2_identity_declaration_2026-10-25.json",
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/car_dirac_l2_zero_kernel_trivial_declaration_2026-10-25.json",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/car_hodge_current_declaration_inventory_2026-10-25.json",
         ],
         "scope_review": (
             "D0-ARCHIVE-CAR-ZERO-MODE-OWNER-001, D0-ARCHIVE-CAR-DIRAC-SQUARE-001, "

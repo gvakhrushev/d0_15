@@ -6020,3 +6020,57 @@ The regression now checks the exact `L=2` square and kernel types and their
 axiom closures together with the existing CAR/Hodge declarations. This
 checkpoint is scoped finite mathematics; it does not promote either OPEN
 claim or change physical D0 status.
+
+### Generic finite tensor algebra consumed by the CAR square (25 October 2026)
+
+Added `D0.Algebra.FiniteMatrixTensorProduct` as a geometry-independent home
+for finite matrix tensor products, their multiplication/addition/scalar laws,
+the product identity, and the finite Clifford-square reduction for commuting
+first-factor blocks and Kronecker-anticommuting second-factor blocks. The CAR
+module now keeps `D0.Geometry.tensorProduct` and `tensorProduct_mul` as
+compatibility names while delegating their implementation to this shared API.
+Its former private add/scalar proofs and 60-line CAR-specific square
+rearrangement are replaced by an application of the generic square theorem.
+
+The consumer is the literal hopping CAR operator. The existing `L=2` spatial
+coordinate-flip identities and owned CAR anticommutators instantiate the
+generic reduction, yielding the exact `D²=4I` theorem; the zero-kernel result
+then follows on that same finite carrier. This is one algebra API -> real
+consumer refactor with an executable compatibility path. It says nothing
+about other periods, the distinct Hodge operator, the all-period claim, or
+physical selection. The associated zero-mode and square claims remain OPEN,
+and no C0 denominator or physical status changes.
+
+The new module is listed in `formal_support.csv` and the generated `D0.All`
+public import. `lean_declaration_inventory.py --name` now accepts repeated
+exact names, allowing one current compiled-source inventory to replace
+per-result re-enumeration. The CAR/Hodge scope regression checks one such
+17-declaration inventory; prior crosswalk files remain historical snapshots
+at their original source pins. This avoids regenerating the fourteen
+versioned candidate inventories for every unrelated Lean-source edit.
+
+The current inventory is
+`sources/d0_proof_architecture_formalization_2026-10-24/car_hodge_current_declaration_inventory_2026-10-25.json`,
+SHA-256 `95c7fdb21d78009edc81f16bba1b8d3fe7a15e9e0384286907ef0d749b5eb829`.
+It records snapshot `81577a0eee9c383f10900fed92fea12e99c920f7`,
+`worktree_dirty=true`, public import root `D0.All`, Lean-source digest
+`a88e5ddb1f0dae71e62e9f7a093c19060dd5465ee9dfcaed2c24e51f5f976901`, and
+collector SHA-256 `9d8f81a6de74511e2d215c5837f192b0e8e851771ea7d99e592560a0f8f8f289`.
+It includes the generic square/identity laws, the compatibility multiplication
+theorem, and the exact CAR/Hodge declarations used by the cold-start control,
+with elaborated types and axiom footprints. The collector's successful query
+also built `D0.All` before reading declarations. The Lean 4.30.0 narrow builds
+passed for `D0.Algebra.FiniteMatrixTensorProduct` and
+`D0.Geometry.ArchiveCARDirac`; the full import replay is an integration
+checkpoint, not a Ready or final publication build.
+
+Source SHA-256 values are `d26f5ccbfdd0e01566a49ccf46ce4ac0c78f223a35e05fae6d544dbee9d320d2`
+for `FiniteMatrixTensorProduct.lean`, `bbdf412934a471e67890f2b230bf1e6a65de0d55cd03ef23ed129a0f0bc4b1df`
+for `ArchiveCARDirac.lean`, and `fa8ef745339d45a22d539a899f5be7f3e92d3abe19f47bbc0be5e618c8c8553d`
+for the generated `D0/All.lean`. The exact declaration scope regression
+passes with the consolidated current inventory; `test_proof_architecture.py`
+passes 45/45 and `test_lean_declaration_inventory.py` passes 16/16.
+`check_claim_map_coverage.py`, `check_no_sorry_in_core.py --all`, generated
+Lean-view checks and the formalization-debt audit pass (`findings=5`,
+`baseline=5`). `gr_assembly.py check` remains valid with scientific promotion
+false. This refactor creates no new claim or acceptance row.

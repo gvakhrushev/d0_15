@@ -2,6 +2,7 @@ import Mathlib.Data.Real.Basic
 import Mathlib.Data.Matrix.Basic
 import Mathlib.Algebra.BigOperators.Fin
 import Mathlib.Tactic
+import D0.Algebra.FiniteMatrixTensorProduct
 import D0.Core.FiniteTypes
 import D0.Core.DyadABCD
 import D0.Geometry.ArchiveRefinementTower
@@ -129,34 +130,16 @@ theorem carDirac_self_adjoint (n : ℕ) :
     exact h
   rw [hs, hg]
 
-/-- Kronecker product used to state the typed total parity operator. -/
-def tensorProduct {X Y : Type*} [Fintype X] [Fintype Y]
+/-- Compatibility name for the shared finite matrix tensor product. -/
+abbrev tensorProduct {X Y : Type*} [Fintype X] [Fintype Y]
     (A : Matrix X X ℝ) (B : Matrix Y Y ℝ) :
     Matrix (X × Y) (X × Y) ℝ :=
-  fun ⟨x1, y1⟩ ⟨x2, y2⟩ => A x1 x2 * B y1 y2
+  D0.Algebra.finiteMatrixTensorProduct A B
 
 theorem tensorProduct_mul {X Y : Type*} [Fintype X] [Fintype Y]
     (A C : Matrix X X ℝ) (B D : Matrix Y Y ℝ) :
     tensorProduct A B * tensorProduct C D = tensorProduct (A * C) (B * D) := by
-  ext ⟨x, f⟩ ⟨y, g⟩
-  simp only [Matrix.mul_apply, tensorProduct]
-  have h_sum_split :
-      (∑ mid : X × Y, A x mid.1 * B f mid.2 * (C mid.1 y * D mid.2 g)) =
-        ∑ a : X, ∑ b : Y, A x a * B f b * (C a y * D b g) := by
-    exact Fintype.sum_prod_type
-      (fun p : X × Y => A x p.1 * B f p.2 * (C p.1 y * D p.2 g))
-  rw [h_sum_split]
-  have h_factor :
-      (∑ a : X, ∑ b : Y, A x a * B f b * (C a y * D b g)) =
-        (∑ a : X, A x a * C a y) * (∑ b : Y, B f b * D b g) := by
-    rw [Finset.sum_mul]
-    apply Finset.sum_congr rfl
-    intro a _
-    rw [Finset.mul_sum]
-    apply Finset.sum_congr rfl
-    intro b _
-    ring
-  rw [h_factor]
+  exact D0.Algebra.finiteMatrixTensorProduct_mul A C B D
 
 /-- Identity matrix on the Fock factor. -/
 def fockIdMatrix : Matrix ArchiveFockState ArchiveFockState ℝ :=
@@ -255,7 +238,8 @@ def totalParityOperator (n : ℕ) : CARHilbertMatrix n :=
 theorem totalParityOperator_symmetric (n : ℕ) :
     (totalParityOperator n).transpose = totalParityOperator n := by
   ext ⟨x, f⟩ ⟨y, g⟩
-  simp only [transpose_apply, totalParityOperator, tensorProduct, spatialIdMatrix]
+  simp only [transpose_apply, totalParityOperator, tensorProduct,
+    D0.Algebra.finiteMatrixTensorProduct, spatialIdMatrix]
   have hx : (if y = x then (1 : ℝ) else 0) = (if x = y then 1 else 0) := by
     by_cases h : x = y
     · subst h
@@ -413,7 +397,8 @@ theorem carDirac_parity_anticommutation (n : ℕ) :
   rw [spatialIdMatrix_mul (spatialDiracComponent n r)]
   rw [mul_spatialIdMatrix (spatialDiracComponent n r)]
   ext ⟨x, f⟩ ⟨y, g⟩
-  simp only [Matrix.add_apply, Matrix.zero_apply, tensorProduct]
+  simp only [Matrix.add_apply, Matrix.zero_apply, tensorProduct,
+    D0.Algebra.finiteMatrixTensorProduct]
   have h_anti := fock_parity_anticommutes_with_gamma r
   have h_entry :
       (fockParityMatrix * fockGamma r + fockGamma r * fockParityMatrix) f g = 0 := by
@@ -497,7 +482,8 @@ theorem tensorProduct_fockId_mulVec_constant_vacuum (n : ℕ)
         (M *ᵥ (fun _ => (1 : ℝ))) p.1 else 0 := by
   classical
   funext ⟨x, f⟩
-  simp only [Matrix.mulVec, dotProduct, tensorProduct]
+  simp only [Matrix.mulVec, dotProduct, tensorProduct,
+    D0.Algebra.finiteMatrixTensorProduct]
   rw [Fintype.sum_prod_type]
   by_cases hf : f = fockVacuumState
   · subst f
@@ -695,22 +681,6 @@ private theorem fockGamma_anticommutator (r s : Role) :
   rw [fockGamma_anticommutator_entry]
   simp [fockIdMatrix, roleDelta, fockIdentity]
 
-private theorem tensorProduct_add_right
-    {X Y : Type*} [Fintype X] [Fintype Y]
-    (A : Matrix X X ℝ) (B C : Matrix Y Y ℝ) :
-    tensorProduct A (B + C) = tensorProduct A B + tensorProduct A C := by
-  ext ⟨x, f⟩ ⟨y, g⟩
-  simp [tensorProduct]
-  ring
-
-private theorem tensorProduct_smul_right
-    {X Y : Type*} [Fintype X] [Fintype Y]
-    (A : Matrix X X ℝ) (c : ℝ) (B : Matrix Y Y ℝ) :
-    tensorProduct A (c • B) = c • tensorProduct A B := by
-  ext ⟨x, f⟩ ⟨y, g⟩
-  simp [tensorProduct]
-  ring
-
 /-- Factorized Clifford square: commuting spatial blocks paired with CAR
 anticommuting Fock blocks leave only the diagonal role terms. -/
 private theorem sum_tensor_square_eq_sum_diagonal
@@ -724,61 +694,28 @@ private theorem sum_tensor_square_eq_sum_diagonal
     (∑ r : Role, ∑ s : Role,
       tensorProduct (A r * A s) (G r * G s)) =
       ∑ r : Role, tensorProduct (A r * A r) J := by
-  let S : Matrix (X × Y) (X × Y) ℝ :=
-    ∑ r : Role, ∑ s : Role,
-      tensorProduct (A r * A s) (G r * G s)
-  let T : Matrix (X × Y) (X × Y) ℝ :=
-    ∑ r : Role, ∑ s : Role,
-      tensorProduct (A r * A s) (G s * G r)
-  let Q : Matrix (X × Y) (X × Y) ℝ :=
-    ∑ r : Role, tensorProduct (A r * A r) J
-  have hswap : S = T := by
-    dsimp [S, T]
-    calc
-      (∑ r : Role, ∑ s : Role,
-        tensorProduct (A r * A s) (G r * G s)) =
-          ∑ s : Role, ∑ r : Role,
-            tensorProduct (A r * A s) (G r * G s) := Finset.sum_comm
-      _ = ∑ r : Role, ∑ s : Role,
-            tensorProduct (A r * A s) (G s * G r) := by
-        apply Finset.sum_congr rfl
-        intro r hr
-        apply Finset.sum_congr rfl
-        intro s hs
-        rw [hAcomm s r]
-  have hcombine : S + T =
-      ∑ r : Role, ∑ s : Role,
-        tensorProduct (A r * A s) (G r * G s + G s * G r) := by
-    dsimp [S, T]
-    rw [← Finset.sum_add_distrib]
-    apply Finset.sum_congr rfl
-    intro r hr
-    rw [← Finset.sum_add_distrib]
-    apply Finset.sum_congr rfl
-    intro s hs
-    exact (tensorProduct_add_right (A r * A s)
-      (G r * G s) (G s * G r)).symm
-  have hreduce :
-      (∑ r : Role, ∑ s : Role,
-        tensorProduct (A r * A s) (G r * G s + G s * G r)) = 2 • Q := by
-    dsimp [Q]
-    simp_rw [hGanti, tensorProduct_smul_right]
-    simp [roleDelta, two_smul, Finset.sum_add_distrib]
-  have hdouble : S + S = 2 • Q := by
-    calc
-      S + S = S + T := by rw [hswap]
-      _ = 2 • Q := hcombine.trans hreduce
-  ext i j
-  have hentry := congrArg (fun M : Matrix (X × Y) (X × Y) ℝ => M i j) hdouble
-  simp only [Matrix.add_apply, two_smul] at hentry
-  nlinarith
+  have hGanti' : ∀ r s,
+      G r * G s + G s * G r =
+        (if r = s then (2 : ℝ) else 0) • J := by
+    intro r s
+    simpa [roleDelta] using hGanti r s
+  simpa [tensorProduct] using
+    (D0.Algebra.finiteMatrixTensorProduct_sum_square_eq_diagonal
+      A G J hAcomm hGanti')
 
 private theorem tensorProduct_spatialId_fockId :
     tensorProduct (spatialIdMatrix 0) fockIdMatrix =
       (1 : CARHilbertMatrix 0) := by
-  ext ⟨x, f⟩ ⟨y, g⟩
-  by_cases hxy : x = y <;> by_cases hfg : f = g <;>
-    simp [tensorProduct, spatialIdMatrix, fockIdMatrix, Matrix.one_apply, hxy, hfg]
+  change D0.Algebra.finiteMatrixTensorProduct
+    (spatialIdMatrix 0) fockIdMatrix = _
+  rw [show spatialIdMatrix 0 = (1 : Matrix (ArchiveRolePhasePoint 0)
+      (ArchiveRolePhasePoint 0) ℝ) by
+        ext x y
+        simp [spatialIdMatrix, Matrix.one_apply],
+    show fockIdMatrix = (1 : Matrix ArchiveFockState ArchiveFockState ℝ) by
+        ext f g
+        simp [fockIdMatrix, Matrix.one_apply]]
+  exact D0.Algebra.finiteMatrixTensorProduct_one
 
 /-- Exact square of the literal hopping matrix at the smallest period:
 `carDirac 0 ^ 2 = 4 I`. -/

@@ -13,6 +13,7 @@ import D0.Algebra.FibonacciAFTower
 import D0.Algebra.FibonacciPerronTraceCanonicity
 import D0.Algebra.FiniteGramTangent
 import D0.Algebra.FiniteHermitianAdjoint
+import D0.Algebra.FiniteMatrixTensorProduct
 import D0.Algebra.FiniteWeightedAdjoint
 import D0.Algebra.GaloisComposite
 import D0.Algebra.GaloisPhiNontrivial

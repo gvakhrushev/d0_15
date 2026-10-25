@@ -486,7 +486,8 @@ def run_module_inventory(modules: list[str], import_root: str,
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     select = parser.add_mutually_exclusive_group(required=True)
-    select.add_argument("--name", help="exact full Lean declaration name")
+    select.add_argument("--name", action="append", dest="names",
+                        help="exact full Lean declaration name; repeat to collect a compact current-source set")
     select.add_argument("--claim-id", help="resolve theorem-name candidates for one claims.csv row")
     select.add_argument("--all-claims", action="store_true",
                         help="resolve all theorem-name candidates in claims.csv")
@@ -503,9 +504,9 @@ def main() -> int:
     args = parser.parse_args()
 
     mapping = None
-    if args.name:
-        mapping = {"full_name": args.name}
-        names = [args.name]
+    if args.names:
+        names = list(dict.fromkeys(args.names))
+        mapping = {"full_name": names[0]} if len(names) == 1 else {"full_names": names}
     elif args.claim_id:
         mapping, names = claim_requests(args.claim_id)
     elif args.modules or args.all_d0:
