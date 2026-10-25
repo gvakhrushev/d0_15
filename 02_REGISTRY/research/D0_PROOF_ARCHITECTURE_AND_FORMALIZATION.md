@@ -3931,8 +3931,8 @@ capsule at the same commit has SHA-256
 | `3. Genuine mixed metric dependence is preserved (Eqs. 2–3)` | **Partial.** `inverse_weight_derivative` proves the generic inverse-operator derivative identity. The capsule does not construct the metric compound `W_Q`, prove its minor formula or diagonal agreement, evaluate the ten metric probes, or derive `Q ↦ sQ` operator homogeneity. |
 | `Finite mixed spectral moments: a quantitative contrast obstruction (generic identities and annihilator)` | **Finite-degree identities and their generic application represented.** The capsule binds the actual trace, scalar trace homogeneity, and coefficient-independent annihilator/error-bound lemmas. The companion module now proves the arbitrary-p binomial annihilator, reciprocal-weight normalization, and total variation, then applies the capsule's annihilator to every real coefficient family independent of the scale index. It still does not instantiate the physical fibers/probes or the refinement error bound. |
 | `Finite mixed spectral moments: a quantitative contrast obstruction (physical contrast, Eq. 3c)` | **Conditional finite-probe estimate formalized; physical application remains partial.** `eq3c_finite_probe_error_bound` cancels any scale-independent inverse-scale polynomial of fixed degree, applies the owned weighted-error inequality, and returns the stated lower-bound constant under explicit base-action, weighted-remainder, per-scale-profile, and smallness hypotheses. It does not construct the two curved fibers/probes or derive those physical/source hypotheses. |
-| `4. Direct flat Lorentz binding on the owned carrier (Eqs. 4–5)` | **Partial.** The new application module binds the existing signed Fock weight to the actual site×Fock carrier and proves its exact `L=4` B-character vacuum/singleton action. It does not formalize the full Fourier symbol/dispersion, all-size spectrum, or all-role-order intertwiners. |
-| `4. Direct flat Lorentz binding on the owned carrier (Eq. 6, spatial block)` | **Exact L=4 matrix application, conditional on a separately recorded transfer formalization.** The exact pinned capsule supplies the isolated `spatial_block_has_no_positive_metric` 2×2 result. The PR branch adds the full-carrier restriction lemma at `c3ceba511bab5c435d715fd56382615fc1dc1505` (capsule blob `7bb3b8e92c8d9b816ab61f9cb8027061b4820dd9`): from a positive form, full-matrix self-adjointness, and the two nonzero invariant-vector equations, it derives the contradiction on the entire finite carrier. The L=4 application represents the actual weighted CAR/Hodge operator by `LinearMap.toMatrix'` on the complete finite cochain basis and proves its vacuum/B-singleton block. Neither positivity nor self-adjointness is derived from a physical source, so physical selection remains open. |
+| `4. Direct flat Lorentz binding on the owned carrier (Eqs. 4–5)` | **Partial.** The application module binds the existing signed Fock weight to the actual site×Fock carrier and proves the B-character vacuum/singleton action at `L=4` and every even archive period `L=N+2`. It still does not formalize the full Eq. (5) Fourier symbol/dispersion, all-size spectrum, or all-role-order intertwiners. |
+| `4. Direct flat Lorentz binding on the owned carrier (Eq. 6, spatial block)` | **Exact all-even-period matrix application, conditional on a separately recorded transfer formalization.** The exact pinned capsule supplies the isolated `spatial_block_has_no_positive_metric` 2×2 result. The PR branch adds the full-carrier restriction lemma at `c3ceba511bab5c435d715fd56382615fc1dc1505` (capsule blob `7bb3b8e92c8d9b816ab61f9cb8027061b4820dd9`): from a positive form, full-matrix self-adjointness, and the two nonzero invariant-vector equations, it derives the contradiction on the entire finite carrier. The application represents the actual weighted CAR/Hodge operator by `LinearMap.toMatrix'` on the complete finite cochain basis and proves the vacuum/B-singleton block for every even archive period `L=N+2`; the earlier L=4 result is an explicit specialization. Neither positivity nor self-adjointness is derived from a physical source, so physical selection remains open. |
 | `5. Complete constant-metric null-mode classification (Eq. 7)` | **Generic implication represented; actual classification not represented.** The kernel/range and half-dimension lemmas assume `D² = 0` and a supplied contraction `DK + KD = I`. The capsule does not construct the Fourier contraction on actual null modes, prove the dispersion classification/counts, or show refinement persistence. |
 | `6. Fixed-positive-time heat trace cannot supply the claimed refinement (Eq. 8)` | **Conditional inequality represented; spectral application not represented.** The exponential lower bound and its consequence compile from a supplied heat-trace lower bound. The capsule does not define the actual `H_L`, prove its minimum eigenvalue, or derive divergence from the Lorentz spectrum. |
 
@@ -4388,3 +4388,103 @@ proof-architecture suite passed 41/41. Runner SHA-256 is
 `e68106a1d752bc67e73ef6caf738abe603ec08b1fce8e511d99e12cfda1c70bc` and test
 SHA-256 is
 `7aae6a5920cb0c1ffa60832e65ea5f1b50fef1aecd82d99ed38fe5597392be76`.
+
+### All-even-period CAR/Hodge Nyquist block on the full archive carrier (25 October 2026)
+
+The `L=4` application is generalized to every even archive period
+`L = archiveFibers N = N + 2`. For `Even (archiveFibers N)`,
+`evenGridAlternatingSign` defines the alternating character from the actual
+`ZMod L` representative. Its translation lemma handles wraparound using
+evenness of `L`; the character flips under the spatial B translation and is
+unchanged under the other Role translations. The owned forward and backward
+differences therefore act by `-2L` and `+2L` on the scalar character. On the
+actual archive cochains, the CAR/Hodge weighted Dirac action is
+`vacuum ↦ -(2L) • BState` and `BState ↦ (2L) • vacuum`.
+`spatialNyquistEven_weightedDirac_matrix_block` transfers these equations to
+the existing matrix in the unchanged `ArchiveCochainBasis` coordinates, and
+`spatialNyquistEven_weightedDirac_matrix_block_L4` proves compatibility with
+the prior `-8/+8` specialization.
+
+The companion theorem
+`flatLorentzWeightedDiracEven_no_positive_selfadjoint_pairing` applies the
+existing invariant-block argument at every such even period: any supplied
+matrix `G` that is positive on every nonzero real cochain and satisfies
+`DᵀG = GD` yields a contradiction. This is conditional on those two
+hypotheses; it derives neither the positive pairing nor self-adjointness from
+a physical source. The formalized parent substitution is specifically the
+all-even finite-carrier extension of Eq. (6). Eq. (5)'s Fourier dispersion,
+the complete all-size spectrum, all-role-order intertwiners, physical action
+or source selection, independent source acceptance, and GR closure remain
+open. No C0 disposition or acceptance is inferred.
+
+The source remains pinned to §4, Eq. (6) of
+`02_REGISTRY/research/A4D_NATIVE_WEIGHTED_DIRAC_BOUNDARY.md` at commit
+`db3091aded8f6cfe8d39dcd973ccf30ec40dfb08`, blob
+`2de670c0e2f9a53104be8105a3554cdd9aaa85e7`; the original source pin is
+unchanged. The result is a branch-local Lean extension that composes the
+previous full-carrier L=4 adapter with the same conditional transfer on each
+even `N+2` carrier.
+
+The focused build of `D0.Research.NativeWeightedDiracNyquistApplication`
+passed (3,006 Lake jobs). On the pre-commit snapshot
+`fdebdc21a54eafe4fa877e51fdc684e657b4dd03` with `worktree_dirty=true`, the
+public-import inventories compiled `D0.All` under
+`leanprover/lean4:v4.30.0`. The module-only inventory contains 135 declarations
+(117 theorems, 18 definitions); the paired linear-operator/application
+inventory contains 152 declarations (131 theorems, 21 definitions). Their
+shared whole-Lean source digest is
+`e156d37e8100174bed48b1db6fdc5f0b5dc97f411700b0c312cc3576ffd32c9c`.
+The application source SHA-256 is
+`d00f24cef74cf117c2f085527101ff195aa5e5140b1f52d190e2f1f503b691f2`.
+The module-only and paired inventory JSON SHA-256 values are
+`5b74c0cf477804eb1a0f894005a86ebb8310c6a00ebceb79371330cea050a28f` and
+`6572199b500e49ee456c3f4e34af675d93226816d3cd85f0072f4b25e18758c8`,
+respectively. The paired declarations contain no `sorryAx`; the concrete
+CAR/Hodge equations retain the same five existing CAR `native_decide` leaves,
+with no new axiom introduced by the even-period extension.
+
+The all-claims name-resolution view and 54-result assembly crosswalk were
+refreshed against the same Lean digest and snapshot. The 889 claim rows still
+produce 2,751 locator mappings and 8,458 candidate references over 8,323
+unique names; 2,512 names resolve and 5,811 do not. At the mapping level,
+2,553 have at least one name match, four are ambiguous, 176 have no candidate
+names, and 22 have candidates but no match. These locator counts are not
+semantic coverage or C0 acceptance. The crosswalk retains 191 evidence
+records (182 verified source pins, eight unavailable blobs, one pinned hash
+mismatch), 22 exact section references, and 140 ranked section candidates
+across 35 results; 37 results have incomplete section mapping. All 54 semantic
+relations remain unresolved and `acceptance_inferred=false`. The refreshed
+claim-resolution and crosswalk JSON SHA-256 values are
+`7101999f010f11cfb9bb73fb5e24cddccccac58c69bfc99befe55a38ff178e25` and
+`a5375df20f1bfc1468ee7fa5813f1f1e876a96328317aaef976bc9be15c47daa`; the
+declaration, name-resolution, and crosswalk collectors remain
+`424ca2786503d04e4f7bbf9e02cc722fea312ac7a3eb5dc7340a38a077a42478`,
+`dd33d4ab45852eb1d2aef0311f00db6249832d41f9957a50e29b5e3e51f953a8`, and
+`5e9074769ba45eb74e6ade808f9aaac82dd09454e14941d6aea6c7885051b0f1`.
+The views are current name and source-locator evidence only; they accept no
+semantic edge and close no scientific or physical premise.
+
+The native weighted-Dirac cold-start case now asks for both the all-even
+matrix block and the conditional positive-self-adjointness no-go. In the
+19-case replay, all 19 cases found every required source directly within the
+18-candidate window, and the 20th exact-source/unrelated-prose impact control
+passed. For both new exact-name queries the primary memo ranked first and the
+Lean application module ranked second; the source memo, capsule mirror, typed
+matrix API, and application module were all retrieved. The semantic scope
+review remains manual; these search results are candidates, not accepted
+relations. `tools/test_proof_architecture.py` passed 41/41 tests. The runner
+SHA-256 is
+`37bfb2769d2a913d87889c82cccac2b008801746de6d44e171b476611393c128` and the
+focused test SHA-256 is
+`030b5248d3c01115697ddf5dae57c2af7b0b04967340ba8d8cc1ac8808837273`.
+
+The affected structural checks passed: `validate_repo.py` reports 889 claims,
+31 assumptions, 58 aliases, 193 formal-support rows, 926 Lean-closure rows,
+and zero warnings; `validate_work.py`, `validate_agent_protocol.py`,
+`gr_assembly.py check`, `gr_assembly.py render --check`,
+`render_work_status.py --check`, `generate_lean_views.py --check`, and
+`git diff --check` also pass. The task remains in progress: C0 is unfrozen,
+the 54 compiled semantic relations are unresolved, and full C0 dispositions,
+independent acceptance, remaining library migration, and physical GR/source
+selection remain open. This intermediate checkpoint does not satisfy the
+WRK-401 completion conditions.

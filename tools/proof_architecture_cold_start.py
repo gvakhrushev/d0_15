@@ -400,6 +400,8 @@ CASES: list[dict[str, Any]] = [
             "weightedDiracMatrix_symmetric_of_finiteHermitianAdjoint_eq_self hodgeCarDiracMatrix_symmetric",
             "spatialNyquist_weightedDirac_matrix_block L=4 flatLorentzWeightedDiracMatrix",
             "actual full-cochain matrix B-singleton vacuum spatial Nyquist positive self-adjoint weighted Dirac Eq. 6",
+            "spatialNyquistEven_weightedDirac_matrix_block every even archive period N+2",
+            "flatLorentzWeightedDiracEven_no_positive_selfadjoint_pairing",
         ],
         "required_refs": [
             "02_REGISTRY/research/A4D_NATIVE_WEIGHTED_DIRAC_BOUNDARY.md",
@@ -413,8 +415,10 @@ CASES: list[dict[str, Any]] = [
             "contains the isolated 2x2 obstruction; the full-carrier transfer is a separate branch formalization "
             "delta at c3ceba511bab5c435d715fd56382615fc1dc1505. The exact L=4 application proves the vacuum and "
             "B-singleton action equations and applies that conditional transfer. The supplied positive form and "
-            "self-adjointness premise are not physically derived; no profile, action, source, all-size spectrum, "
-            "or GR selection is inferred."
+            "self-adjointness premise are not physically derived. The all-even extension requires an even "
+            "archive period N+2 and proves the same full-carrier block and conditional obstruction there; it "
+            "does not prove the Eq. (5) Fourier dispersion, the complete all-size spectrum, role-order "
+            "intertwiners, physical action/source selection, or GR closure."
         ),
     },
 ]

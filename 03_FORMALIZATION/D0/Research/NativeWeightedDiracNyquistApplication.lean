@@ -3,9 +3,10 @@ import D0.Research.NativeWeightedDiracLinearOperator
 import D0.Geometry.A4DMetricStarSignatureBoundary
 import Mathlib.Tactic
 
-/-! Exact L=4 application of the source's flat-Lorentz spatial Nyquist block
-on the existing Archive cochain/Fock carrier. This is a mathematical operator
-binding; it selects no physical action, matter sector, or observer pairing. -/
+/-! Exact L=4 and all-even-period applications of the source's flat-Lorentz
+spatial Nyquist block on the existing Archive cochain/Fock carrier. These are
+mathematical operator bindings; they select no physical action, matter sector,
+or observer pairing. -/
 namespace D0.Research.NativeWeightedDiracNyquistApplication
 open D0 D0.Geometry D0.Research.NativeWeightedDiracBoundary
 open scoped BigOperators
@@ -489,10 +490,503 @@ theorem flatLorentzWeightedDirac_no_positive_selfadjoint_pairing
     flatLorentzWeightedDiracMatrix G spatialNyquistVacuum spatialNyquistBState
     spatialNyquistVacuum_ne_zero spatialNyquistBState_ne_zero hpos hadj hTu hTv
 
+/-! The same exact Nyquist obstruction applies at every even archive period,
+not only the concrete L = 4 refinement. The parity character is defined on
+the actual ZMod L carrier; evenness is explicit because wraparound makes the
+sign character alternate. -/
+
+private def evenGridAlternatingSign {L : ℕ} [NeZero L] (z : ZMod L) : ℝ :=
+  if z.val % 2 = 0 then 1 else -1
+
+private theorem evenGridAlternatingSign_add_one {L : ℕ} [NeZero L]
+    (hEven : Even L) (hL : 2 ≤ L) (z : ZMod L) :
+    evenGridAlternatingSign (z + 1) = -evenGridAlternatingSign z := by
+  letI : Fact (1 < L) := ⟨by omega⟩
+  have hval : (z + 1).val = (z.val + 1) % L := by
+    rw [ZMod.val_add]
+    simp [ZMod.val_one]
+  have hzlt : z.val < L := ZMod.val_lt z
+  obtain ⟨k, hk⟩ := hEven
+  by_cases hzEven : z.val % 2 = 0
+  · have hnoWrap : z.val + 1 < L := by
+      by_contra hn
+      have heq : z.val + 1 = L := by omega
+      omega
+    rw [evenGridAlternatingSign, evenGridAlternatingSign,
+      if_pos hzEven, hval, Nat.mod_eq_of_lt hnoWrap]
+    have hodd : (z.val + 1) % 2 = 1 := by omega
+    simp [hodd]
+  · have hzOdd : z.val % 2 = 1 := by omega
+    by_cases hnoWrap : z.val + 1 < L
+    · rw [evenGridAlternatingSign, evenGridAlternatingSign,
+        if_neg hzEven, hval, Nat.mod_eq_of_lt hnoWrap]
+      have heven : (z.val + 1) % 2 = 0 := by omega
+      simp [heven]
+    · have hwrap : z.val + 1 = L := by omega
+      rw [evenGridAlternatingSign, evenGridAlternatingSign,
+        if_neg hzEven, hval, hwrap, Nat.mod_self]
+      simp
+
+private theorem evenGridAlternatingSign_sub_one {L : ℕ} [NeZero L]
+    (hEven : Even L) (hL : 2 ≤ L) (z : ZMod L) :
+    evenGridAlternatingSign (z - 1) = -evenGridAlternatingSign z := by
+  have h := evenGridAlternatingSign_add_one hEven hL (z - 1)
+  have hz : (z - 1) + 1 = z := by abel
+  rw [hz] at h
+  linarith
+
+def spatialNyquistBCharacterAt (N : ℕ) : ArchiveRolePhaseGroup N → ℝ :=
+  fun x => evenGridAlternatingSign (x B)
+
+def spatialNyquistVacuumAt (N : ℕ) : ArchiveCochain N :=
+  scalarCochain N (spatialNyquistBCharacterAt N)
+
+private def spatialNyquistBAlphaAt (N : ℕ) : LocalRoleVector N :=
+  fun x r => if r = B then spatialNyquistBCharacterAt N x else 0
+
+def spatialNyquistBStateAt (N : ℕ) : ArchiveCochain N :=
+  fun p => if p.2 = singletonFockState B then spatialNyquistBCharacterAt N p.1 else 0
+
+private theorem evenGridAlternatingSign_four_eq (z : ZMod 4) :
+    evenGridAlternatingSign z = z4AlternatingSign z := by
+  fin_cases z <;> norm_num
+    [evenGridAlternatingSign, z4AlternatingSign, periodFourAlternatingSign,
+      ZMod.val]
+
+theorem spatialNyquistBCharacterAt_two_eq :
+    spatialNyquistBCharacterAt 2 = spatialNyquistBCharacter := by
+  funext x
+  exact evenGridAlternatingSign_four_eq (x B)
+
+theorem spatialNyquistVacuumAt_two_eq :
+    spatialNyquistVacuumAt 2 = spatialNyquistVacuum := by
+  change scalarCochain 2 (spatialNyquistBCharacterAt 2) =
+    scalarCochain 2 spatialNyquistBCharacter
+  rw [spatialNyquistBCharacterAt_two_eq]
+
+theorem spatialNyquistBStateAt_two_eq :
+    spatialNyquistBStateAt 2 = spatialNyquistBState := by
+  funext (p : ArchiveCochainBasis 2)
+  change (if p.2 = singletonFockState B then
+      spatialNyquistBCharacterAt 2 p.1 else 0) =
+    (if p.2 = singletonFockState B then
+      spatialNyquistBCharacter p.1 else 0)
+  rw [spatialNyquistBCharacterAt_two_eq]
+
+def spatialNyquistEvenScale (N : ℕ) : ℝ :=
+  2 * (archiveFibers N : ℝ)
+
+private theorem spatialNyquistAt_plus_B (N : ℕ)
+    (hEven : Even (archiveFibers N)) (x : ArchiveRolePhaseGroup N) :
+    spatialNyquistBCharacterAt N (roleTranslatePlus N B x) =
+      -spatialNyquistBCharacterAt N x := by
+  have hcoord : roleTranslatePlus N B x B = x B + 1 := by
+    simp [roleTranslatePlus, roleTranslate, roleStep]
+  change evenGridAlternatingSign (roleTranslatePlus N B x B) = _
+  rw [hcoord]
+  exact evenGridAlternatingSign_add_one hEven (by simp [archiveFibers]) (x B)
+
+private theorem spatialNyquistAt_minus_B (N : ℕ)
+    (hEven : Even (archiveFibers N)) (x : ArchiveRolePhaseGroup N) :
+    spatialNyquistBCharacterAt N (roleTranslateMinus N B x) =
+      -spatialNyquistBCharacterAt N x := by
+  have hcoord : roleTranslateMinus N B x B = x B - 1 := by
+    simp [roleTranslateMinus, roleTranslate, roleStep, sub_eq_add_neg]
+  change evenGridAlternatingSign (roleTranslateMinus N B x B) = _
+  rw [hcoord]
+  exact evenGridAlternatingSign_sub_one hEven (by simp [archiveFibers]) (x B)
+
+private theorem spatialNyquistAt_plus_other (N : ℕ)
+    (r : Role) (hr : r ≠ B) (x : ArchiveRolePhaseGroup N) :
+    spatialNyquistBCharacterAt N (roleTranslatePlus N r x) =
+      spatialNyquistBCharacterAt N x := by
+  have hcoord : roleTranslatePlus N r x B = x B := by
+    simp [roleTranslatePlus, roleTranslate, roleStep, Ne.symm hr]
+  change evenGridAlternatingSign (roleTranslatePlus N r x B) =
+    evenGridAlternatingSign (x B)
+  rw [hcoord]
+
+private theorem spatialNyquistAt_minus_other (N : ℕ)
+    (r : Role) (hr : r ≠ B) (x : ArchiveRolePhaseGroup N) :
+    spatialNyquistBCharacterAt N (roleTranslateMinus N r x) =
+      spatialNyquistBCharacterAt N x := by
+  have hcoord : roleTranslateMinus N r x B = x B := by
+    simp [roleTranslateMinus, roleTranslate, roleStep, sub_eq_add_neg, Ne.symm hr]
+  change evenGridAlternatingSign (roleTranslateMinus N r x B) =
+    evenGridAlternatingSign (x B)
+  rw [hcoord]
+
+private theorem spatialNyquistAt_forward_B (N : ℕ)
+    (hEven : Even (archiveFibers N)) (x : ArchiveRolePhaseGroup N) :
+    forwardDifference N B (spatialNyquistBCharacterAt N) x =
+      -(spatialNyquistEvenScale N) * spatialNyquistBCharacterAt N x := by
+  simp [forwardDifference, forwardDifferenceScale, spatialNyquistEvenScale,
+    archiveFibers, spatialNyquistAt_plus_B N hEven]
+  ring
+
+private theorem spatialNyquistAt_backward_B (N : ℕ)
+    (hEven : Even (archiveFibers N)) (x : ArchiveRolePhaseGroup N) :
+    backwardDifference N B (spatialNyquistBCharacterAt N) x =
+      spatialNyquistEvenScale N * spatialNyquistBCharacterAt N x := by
+  simp [backwardDifference, forwardDifferenceScale, spatialNyquistEvenScale,
+    archiveFibers, spatialNyquistAt_minus_B N hEven]
+  ring
+
+private theorem spatialNyquistAt_forward_other (N : ℕ)
+    (r : Role) (hr : r ≠ B) (x : ArchiveRolePhaseGroup N) :
+    forwardDifference N r (spatialNyquistBCharacterAt N) x = 0 := by
+  simp [forwardDifference, forwardDifferenceScale, archiveFibers,
+    spatialNyquistAt_plus_other N r hr]
+
+private theorem spatialNyquistAt_backward_other (N : ℕ)
+    (r : Role) (hr : r ≠ B) (x : ArchiveRolePhaseGroup N) :
+    backwardDifference N r (spatialNyquistBCharacterAt N) x = 0 := by
+  simp [backwardDifference, forwardDifferenceScale, archiveFibers,
+    spatialNyquistAt_minus_other N r hr]
+
+private theorem spatialNyquistAt_forward_function (N : ℕ)
+    (hEven : Even (archiveFibers N)) :
+    forwardDifference N B (spatialNyquistBCharacterAt N) =
+      fun x => -(spatialNyquistEvenScale N) * spatialNyquistBCharacterAt N x := by
+  funext x
+  exact spatialNyquistAt_forward_B N hEven x
+
+private theorem backwardDifference_smul_real (N : ℕ) (r : Role) (c : ℝ)
+    (f : ArchiveRolePhaseGroup N → ℝ) :
+    backwardDifference N r (fun y => c * f y) =
+      fun x => c * backwardDifference N r f x := by
+  funext x
+  unfold backwardDifference
+  ring
+
+private theorem spatialNyquistAt_scalar_laplacian (N : ℕ)
+    (hEven : Even (archiveFibers N)) (x : ArchiveRolePhaseGroup N) :
+    scalarDifferenceLaplacian N (spatialNyquistBCharacterAt N) x =
+      (spatialNyquistEvenScale N) ^ 2 * spatialNyquistBCharacterAt N x := by
+  unfold scalarDifferenceLaplacian
+  rw [Finset.sum_eq_single B]
+  · rw [spatialNyquistAt_forward_function N hEven]
+    have hscale := congrFun
+      (backwardDifference_smul_real N B
+        (-(spatialNyquistEvenScale N)) (spatialNyquistBCharacterAt N)) x
+    rw [hscale, spatialNyquistAt_backward_B N hEven]
+    ring
+  · intro r hr hne
+    have hrB : r ≠ B := by
+      intro h
+      exact hne h
+    have hzero : forwardDifference N r (spatialNyquistBCharacterAt N) = fun _ => 0 := by
+      funext y
+      exact spatialNyquistAt_forward_other N r hrB y
+    rw [hzero]
+    simp [backwardDifference]
+  · simp
+
+private theorem spatialNyquistAt_cochain_laplacian (N : ℕ)
+    (hEven : Even (archiveFibers N)) :
+    cochainDifferenceLaplacian N (spatialNyquistVacuumAt N) =
+      (spatialNyquistEvenScale N) ^ 2 • spatialNyquistVacuumAt N := by
+  funext p
+  rcases p with ⟨x, S⟩
+  by_cases hS : S = vacuumFockState
+  · subst S
+    simp only [cochainDifferenceLaplacian, spatialNyquistVacuumAt,
+      scalarCochain, if_true]
+    simpa [spatialNyquistVacuumAt, scalarCochain, smul_eq_mul] using
+      spatialNyquistAt_scalar_laplacian N hEven x
+  · simp [cochainDifferenceLaplacian, spatialNyquistVacuumAt,
+      scalarCochain, scalarDifferenceLaplacian, forwardDifference,
+      backwardDifference, hS]
+
+private theorem spatialNyquistBOneFormAt_eq_direct (N : ℕ) :
+    oneFormCochain N (spatialNyquistBAlphaAt N) =
+      spatialNyquistBStateAt N := by
+  classical
+  funext p
+  rcases p with ⟨x, S⟩
+  by_cases hS : S = singletonFockState B
+  · subst S
+    unfold oneFormCochain spatialNyquistBAlphaAt spatialNyquistBStateAt
+    rw [Finset.sum_eq_single B]
+    · simp
+    · intro r hr hne
+      by_cases hrB : r = B
+      · subst r
+        exact (hne rfl).elim
+      · simp [hrB]
+    · simp
+  · unfold oneFormCochain spatialNyquistBAlphaAt spatialNyquistBStateAt
+    rw [if_neg hS]
+    apply Finset.sum_eq_zero
+    intro r hr
+    by_cases hrB : r = B
+    · subst r
+      simp [hS]
+    · simp [hrB]
+
+private theorem dForward_spatialNyquistVacuumAt (N : ℕ)
+    (hEven : Even (archiveFibers N)) :
+    dForward N (spatialNyquistVacuumAt N) =
+      (-(spatialNyquistEvenScale N)) • spatialNyquistBStateAt N := by
+  rw [show spatialNyquistVacuumAt N =
+      scalarCochain N (spatialNyquistBCharacterAt N) by rfl,
+    dForward_scalar_eq_oneForm']
+  have hα : (fun x r => forwardDifference N r
+      (spatialNyquistBCharacterAt N) x) =
+      fun x r => (-(spatialNyquistEvenScale N)) *
+        spatialNyquistBAlphaAt N x r := by
+    funext x r
+    by_cases hr : r = B
+    · subst r
+      simpa [spatialNyquistBAlphaAt] using spatialNyquistAt_forward_B N hEven x
+    · simpa [spatialNyquistBAlphaAt, hr] using
+        spatialNyquistAt_forward_other N r hr x
+  rw [hα]
+  calc
+    oneFormCochain N (fun x r => (-(spatialNyquistEvenScale N)) *
+        spatialNyquistBAlphaAt N x r) =
+      (-(spatialNyquistEvenScale N)) •
+        oneFormCochain N (spatialNyquistBAlphaAt N) :=
+          oneFormCochain_smul' N (-(spatialNyquistEvenScale N)) _
+    _ = (-(spatialNyquistEvenScale N)) • spatialNyquistBStateAt N :=
+      congrArg (fun ψ : ArchiveCochain N =>
+        (-(spatialNyquistEvenScale N)) • ψ)
+        (spatialNyquistBOneFormAt_eq_direct N)
+
+private lemma flatLorentzW_spatialNyquistBStateAt (N : ℕ) :
+    flatLorentzWeightEquiv N (spatialNyquistBStateAt N) =
+      -spatialNyquistBStateAt N := by
+  funext p
+  rcases p with ⟨x, S⟩
+  by_cases hS : S = singletonFockState B
+  · subst S
+    simp [flatLorentzWeightEquiv, spatialNyquistBStateAt,
+      flatLorentzSubsetWeight_singletonB']
+  · simp [flatLorentzWeightEquiv, spatialNyquistBStateAt, hS]
+
+private lemma flatLorentzWsymm_spatialNyquistVacuumAt (N : ℕ) :
+    (flatLorentzWeightEquiv N).symm (spatialNyquistVacuumAt N) =
+      spatialNyquistVacuumAt N := by
+  simpa [spatialNyquistVacuumAt] using
+    flatLorentzWsymm_scalar N (spatialNyquistBCharacterAt N)
+
+private lemma hodgeCarDirac_spatialNyquistVacuumAt (N : ℕ)
+    (hEven : Even (archiveFibers N)) :
+    hodgeCarDirac N (spatialNyquistVacuumAt N) =
+      (-(spatialNyquistEvenScale N)) • spatialNyquistBStateAt N := by
+  unfold hodgeCarDirac
+  rw [dForward_spatialNyquistVacuumAt N hEven]
+  have hcod : hodgeCodifferential N (spatialNyquistVacuumAt N) = 0 := by
+    simpa [spatialNyquistVacuumAt] using
+      hodgeCodifferential_scalar_zero' N (spatialNyquistBCharacterAt N)
+  rw [hcod]
+  simp
+
+private lemma dForward_spatialNyquistBStateAt_zero (N : ℕ)
+    (hEven : Even (archiveFibers N)) :
+    dForward N (spatialNyquistBStateAt N) = 0 := by
+  have h := D0.Research.NativeWeightedDiracBoundary.kernel_d_sq N
+    (spatialNyquistVacuumAt N)
+  rw [dForward_spatialNyquistVacuumAt N hEven, dForward_smul] at h
+  have hc : (-(spatialNyquistEvenScale N)) ≠ 0 := by
+    have hgrid : 0 < archiveFibers N := by simp [archiveFibers]
+    have hpos : 0 < (2 : ℝ) * (archiveFibers N : ℝ) := by
+      exact mul_pos (by norm_num) (by exact_mod_cast hgrid)
+    change -(2 * (archiveFibers N : ℝ)) ≠ 0
+    exact neg_ne_zero.mpr (ne_of_gt hpos)
+  funext p
+  have hp : (-(spatialNyquistEvenScale N)) *
+      dForward N (spatialNyquistBStateAt N) p = 0 := by
+    simpa only [Pi.smul_apply, smul_eq_mul] using congrFun h p
+  rcases mul_eq_zero.mp hp with hc0 | hz
+  · exact (hc hc0).elim
+  · exact hz
+
+private lemma hodgeCarDirac_spatialNyquistBStateAt (N : ℕ)
+    (hEven : Even (archiveFibers N)) :
+    hodgeCarDirac N (spatialNyquistBStateAt N) =
+      (-(spatialNyquistEvenScale N)) • spatialNyquistVacuumAt N := by
+  have hsq := hodgeCarDirac_sq N (spatialNyquistVacuumAt N)
+  rw [hodgeCarDirac_spatialNyquistVacuumAt N hEven,
+    hodgeCarDirac_smul, spatialNyquistAt_cochain_laplacian N hEven] at hsq
+  have hc : (-(spatialNyquistEvenScale N)) ≠ 0 := by
+    have hgrid : 0 < archiveFibers N := by simp [archiveFibers]
+    have hpos : 0 < (2 : ℝ) * (archiveFibers N : ℝ) := by
+      exact mul_pos (by norm_num) (by exact_mod_cast hgrid)
+    change -(2 * (archiveFibers N : ℝ)) ≠ 0
+    exact neg_ne_zero.mpr (ne_of_gt hpos)
+  funext p
+  have hp : (-(spatialNyquistEvenScale N)) *
+      hodgeCarDirac N (spatialNyquistBStateAt N) p =
+      (spatialNyquistEvenScale N) ^ 2 * spatialNyquistVacuumAt N p := by
+    simpa only [Pi.smul_apply, smul_eq_mul] using congrFun hsq p
+  have hfactor :
+      (spatialNyquistEvenScale N) ^ 2 * spatialNyquistVacuumAt N p =
+        (-(spatialNyquistEvenScale N)) *
+          ((-(spatialNyquistEvenScale N)) * spatialNyquistVacuumAt N p) := by
+    ring
+  have hmul := hp.trans hfactor
+  have hcancel := mul_left_cancel₀ hc hmul
+  simpa only [Pi.smul_apply, smul_eq_mul] using hcancel
+
+private lemma hodgeCodifferential_spatialNyquistBStateAt (N : ℕ)
+    (hEven : Even (archiveFibers N)) :
+    hodgeCodifferential N (spatialNyquistBStateAt N) =
+      (-(spatialNyquistEvenScale N)) • spatialNyquistVacuumAt N := by
+  have h := hodgeCarDirac_spatialNyquistBStateAt N hEven
+  unfold hodgeCarDirac at h
+  rw [dForward_spatialNyquistBStateAt_zero N hEven] at h
+  simpa using h
+
+private lemma weightedCodiff_spatialNyquistVacuumAt (N : ℕ) :
+    weightedCodiff N (flatLorentzWeightEquiv N)
+      (spatialNyquistVacuumAt N) = 0 := by
+  unfold weightedCodiff
+  have hW : flatLorentzWeightEquiv N (spatialNyquistVacuumAt N) =
+      spatialNyquistVacuumAt N := by
+    simpa [spatialNyquistVacuumAt] using
+      flatLorentzW_scalar N (spatialNyquistBCharacterAt N)
+  rw [hW]
+  have hcod : hodgeCodifferential N (spatialNyquistVacuumAt N) = 0 := by
+    simpa [spatialNyquistVacuumAt] using
+      hodgeCodifferential_scalar_zero' N (spatialNyquistBCharacterAt N)
+  rw [hcod]
+  simp
+
+private lemma weightedCodiff_spatialNyquistBStateAt (N : ℕ)
+    (hEven : Even (archiveFibers N)) :
+    weightedCodiff N (flatLorentzWeightEquiv N)
+      (spatialNyquistBStateAt N) =
+        spatialNyquistEvenScale N • spatialNyquistVacuumAt N := by
+  unfold weightedCodiff
+  rw [flatLorentzW_spatialNyquistBStateAt N]
+  rw [show -spatialNyquistBStateAt N =
+      (-1 : ℝ) • spatialNyquistBStateAt N by simp]
+  rw [hodgeCodifferential_smul,
+    hodgeCodifferential_spatialNyquistBStateAt N hEven]
+  rw [smul_smul]
+  norm_num
+  rw [flatLorentzWsymm_spatialNyquistVacuumAt N]
+
+theorem spatialNyquistEven_weightedDirac_block (N : ℕ)
+    (hEven : Even (archiveFibers N)) :
+    weightedDirac N (flatLorentzWeightEquiv N)
+        (spatialNyquistVacuumAt N) =
+      (-(spatialNyquistEvenScale N)) • spatialNyquistBStateAt N ∧
+    weightedDirac N (flatLorentzWeightEquiv N)
+        (spatialNyquistBStateAt N) =
+      spatialNyquistEvenScale N • spatialNyquistVacuumAt N := by
+  constructor
+  · unfold weightedDirac
+    rw [dForward_spatialNyquistVacuumAt N hEven,
+      weightedCodiff_spatialNyquistVacuumAt N]
+    simp
+  · unfold weightedDirac
+    rw [dForward_spatialNyquistBStateAt_zero N hEven,
+      weightedCodiff_spatialNyquistBStateAt N hEven]
+    simp
+
+noncomputable def flatLorentzWeightedDiracMatrixAt (N : ℕ) :
+    Matrix (ArchiveCochainBasis N) (ArchiveCochainBasis N) ℝ :=
+  D0.Research.NativeWeightedDiracLinearOperator.weightedDiracMatrix N
+    (flatLorentzWeightEquiv N)
+
+theorem spatialNyquistEven_weightedDirac_matrix_block (N : ℕ)
+    (hEven : Even (archiveFibers N)) :
+    Matrix.mulVec (flatLorentzWeightedDiracMatrixAt N)
+        (spatialNyquistVacuumAt N) =
+      (-(spatialNyquistEvenScale N)) • spatialNyquistBStateAt N ∧
+    Matrix.mulVec (flatLorentzWeightedDiracMatrixAt N)
+        (spatialNyquistBStateAt N) =
+      spatialNyquistEvenScale N • spatialNyquistVacuumAt N := by
+  have hblock := spatialNyquistEven_weightedDirac_block N hEven
+  constructor
+  · calc
+      Matrix.mulVec (flatLorentzWeightedDiracMatrixAt N)
+          (spatialNyquistVacuumAt N) =
+        weightedDirac N (flatLorentzWeightEquiv N)
+          (spatialNyquistVacuumAt N) := by
+            simpa only [flatLorentzWeightedDiracMatrixAt] using
+              D0.Research.NativeWeightedDiracLinearOperator.weightedDiracMatrix_mulVec
+                N (flatLorentzWeightEquiv N) (spatialNyquistVacuumAt N)
+      _ = (-(spatialNyquistEvenScale N)) •
+        spatialNyquistBStateAt N := hblock.1
+  · calc
+      Matrix.mulVec (flatLorentzWeightedDiracMatrixAt N)
+          (spatialNyquistBStateAt N) =
+        weightedDirac N (flatLorentzWeightEquiv N)
+          (spatialNyquistBStateAt N) := by
+            simpa only [flatLorentzWeightedDiracMatrixAt] using
+              D0.Research.NativeWeightedDiracLinearOperator.weightedDiracMatrix_mulVec
+                N (flatLorentzWeightEquiv N) (spatialNyquistBStateAt N)
+      _ = spatialNyquistEvenScale N •
+        spatialNyquistVacuumAt N := hblock.2
+
+theorem spatialNyquistEven_weightedDirac_matrix_block_L4 :
+    Matrix.mulVec flatLorentzWeightedDiracMatrix spatialNyquistVacuum =
+      (-8 : ℝ) • spatialNyquistBState ∧
+    Matrix.mulVec flatLorentzWeightedDiracMatrix spatialNyquistBState =
+      (8 : ℝ) • spatialNyquistVacuum := by
+  have h := spatialNyquistEven_weightedDirac_matrix_block 2 (by norm_num [archiveFibers])
+  rw [show flatLorentzWeightedDiracMatrixAt 2 = flatLorentzWeightedDiracMatrix by rfl,
+    spatialNyquistVacuumAt_two_eq, spatialNyquistBStateAt_two_eq,
+    show spatialNyquistEvenScale 2 = 8 by
+      norm_num [spatialNyquistEvenScale, archiveFibers]] at h
+  simpa using h
+
+theorem spatialNyquistVacuumAt_ne_zero (N : ℕ) :
+    spatialNyquistVacuumAt N ≠ 0 := by
+  intro h
+  have hh := congrFun h ((0 : ArchiveRolePhaseGroup N), vacuumFockState)
+  change spatialNyquistBCharacterAt N 0 = 0 at hh
+  norm_num [spatialNyquistBCharacterAt, evenGridAlternatingSign] at hh
+
+theorem spatialNyquistBStateAt_ne_zero (N : ℕ) :
+    spatialNyquistBStateAt N ≠ 0 := by
+  intro h
+  have hh := congrFun h ((0 : ArchiveRolePhaseGroup N), singletonFockState B)
+  change spatialNyquistBCharacterAt N 0 = 0 at hh
+  norm_num [spatialNyquistBCharacterAt, evenGridAlternatingSign] at hh
+
+theorem flatLorentzWeightedDiracEven_no_positive_selfadjoint_pairing
+    (N : ℕ) (hEven : Even (archiveFibers N))
+    (G : Matrix (ArchiveCochainBasis N) (ArchiveCochainBasis N) ℝ)
+    (hpos : ∀ x, x ≠ 0 → 0 < dotProduct x (G.mulVec x))
+    (hadj : (flatLorentzWeightedDiracMatrixAt N).transpose * G =
+      G * flatLorentzWeightedDiracMatrixAt N) : False := by
+  have hblock := spatialNyquistEven_weightedDirac_matrix_block N hEven
+  have hposL : 0 < (archiveFibers N : ℝ) := by
+    have hgrid : 0 < archiveFibers N := by simp [archiveFibers]
+    exact_mod_cast hgrid
+  have hL : (archiveFibers N : ℝ) ≠ 0 := ne_of_gt hposL
+  have hTu : Matrix.mulVec (flatLorentzWeightedDiracMatrixAt N)
+      (spatialNyquistVacuumAt N) =
+      -(2 * (archiveFibers N : ℝ)) • spatialNyquistBStateAt N := by
+    simpa [spatialNyquistEvenScale] using hblock.1
+  have hTv : Matrix.mulVec (flatLorentzWeightedDiracMatrixAt N)
+      (spatialNyquistBStateAt N) =
+      (2 * (archiveFibers N : ℝ)) • spatialNyquistVacuumAt N := by
+    simpa [spatialNyquistEvenScale] using hblock.2
+  exact positive_selfadjoint_spatial_invariant_block_impossible
+    (i := ArchiveCochainBasis N) (archiveFibers N : ℝ) hL
+    (flatLorentzWeightedDiracMatrixAt N) G
+    (spatialNyquistVacuumAt N) (spatialNyquistBStateAt N)
+    (spatialNyquistVacuumAt_ne_zero N)
+    (spatialNyquistBStateAt_ne_zero N) hpos hadj hTu hTv
+
 #print axioms spatialNyquist_weightedDirac_block
 #print axioms spatialNyquist_weightedDirac_matrix_block
 #print axioms flatLorentzWeightedDirac_no_positive_selfadjoint_pairing
 #print axioms spatialNyquistVacuum_ne_zero
 #print axioms spatialNyquistBState_ne_zero
+#print axioms spatialNyquistEven_weightedDirac_block
+#print axioms spatialNyquistEven_weightedDirac_matrix_block
+#print axioms spatialNyquistEven_weightedDirac_matrix_block_L4
+#print axioms flatLorentzWeightedDiracEven_no_positive_selfadjoint_pairing
+#print axioms spatialNyquistVacuumAt_ne_zero
+#print axioms spatialNyquistBStateAt_ne_zero
+#print axioms spatialNyquistBCharacterAt_two_eq
+#print axioms spatialNyquistVacuumAt_two_eq
+#print axioms spatialNyquistBStateAt_two_eq
 end
 end D0.Research.NativeWeightedDiracNyquistApplication

@@ -1244,6 +1244,13 @@ class ProofArchitectureTests(unittest.TestCase):
                             in query for query in case["queries"]))
         self.assertTrue(any("spatialNyquist_weightedDirac_matrix_block" in query
                             for query in case["queries"]))
+        self.assertTrue(any("spatialNyquistEven_weightedDirac_matrix_block" in query
+                            for query in case["queries"]))
+        self.assertTrue(any("flatLorentzWeightedDiracEven_no_positive_selfadjoint_pairing"
+                            in query for query in case["queries"]))
+        self.assertIn("even archive period N+2", case["scope_review"])
+        self.assertIn("Eq. (5) Fourier dispersion", case["scope_review"])
+        self.assertIn("physical action/source selection", case["scope_review"])
 
 
 if __name__ == "__main__":
