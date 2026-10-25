@@ -83,6 +83,14 @@ theorem coframeMetricReadout_eq_centered_add_transpose (N : ℕ) (e : LocalCofra
   simp [centeredCoframeMatrix, backwardAverage]
   ring
 
+@[simp] theorem centeredCoframeMatrix_add (N : ℕ) (e f : LocalCoframeField N)
+    (x : ArchiveRolePhaseGroup N) :
+    centeredCoframeMatrix N (e + f) x =
+      centeredCoframeMatrix N e x + centeredCoframeMatrix N f x := by
+  ext r a
+  simp [centeredCoframeMatrix, backwardAverage]
+  ring
+
 def solderMatrix (N : ℕ) (e : LocalCoframeField N) (x : ArchiveRolePhaseGroup N) :
     Matrix Role Role ℝ := roleLorentzMetric + centeredCoframeMatrix N e x
 @[simp] theorem solderMatrix_zero (N : ℕ) (x : ArchiveRolePhaseGroup N) :
@@ -452,6 +460,123 @@ theorem solderMetricMatrix_constant_frame_hasFDerivAt
   exact j2DetectorMetricPath_hasFDerivAt_flat
 
 end J2SolderFullDerivative
+
+section J2SitewiseSolderDerivative
+
+local notation "RoleMat" => Matrix Role Role ℝ
+
+local instance : NormedAddCommGroup RoleMat := Matrix.normedAddCommGroup
+local instance : NormedSpace ℝ RoleMat := Matrix.normedSpace
+local instance : NormedRing RoleMat := Matrix.frobeniusNormedRing
+local instance : NormedAlgebra ℝ RoleMat := Matrix.frobeniusNormedAlgebra
+
+/-- The complete finite coframe field enters the J² matrix chart through its
+centered coframe followed by the right-`η` source-convention map. -/
+def solderCoframeFieldToJ2Direction (N : ℕ) (x : ArchiveRolePhaseGroup N) :
+    LocalCoframeField N →ₗ[ℝ] RoleMat where
+  toFun e := centeredCoframeMatrix N e x * roleLorentzMetric
+  map_add' e f := by
+    rw [centeredCoframeMatrix_add]
+    exact Matrix.add_mul _ _ _
+  map_smul' c e := by
+    rw [centeredCoframeMatrix_smul]
+    exact Matrix.smul_mul _ _ _
+
+/-- Finite dimensionality of the sitewise carrier promotes its linear source
+map to a continuous map for the full finite-field Fréchet derivative. -/
+noncomputable def solderCoframeFieldToJ2DirectionCLM (N : ℕ)
+    (x : ArchiveRolePhaseGroup N) : LocalCoframeField N →L[ℝ] RoleMat :=
+  (solderCoframeFieldToJ2Direction N x).toContinuousLinearMap
+
+@[simp] theorem solderCoframeFieldToJ2DirectionCLM_apply (N : ℕ)
+    (x : ArchiveRolePhaseGroup N) (e : LocalCoframeField N) :
+    solderCoframeFieldToJ2DirectionCLM N x e =
+      centeredCoframeMatrix N e x * roleLorentzMetric := rfl
+
+/-- The complete finite solder readout factors through the same J² source
+chart as the constant-coframe specialization. -/
+theorem solderMetricMatrix_sitewise_eq_j2_path (N : ℕ)
+    (e : LocalCoframeField N) (x : ArchiveRolePhaseGroup N) :
+    solderMetricMatrix N e x = j2DetectorMetricPath
+      (solderCoframeFieldToJ2Direction N x e) := by
+  let C : RoleMat := centeredCoframeMatrix N e x
+  have hframe : (1 + C * roleLorentzMetric) * roleLorentzMetric =
+      roleLorentzMetric + C := by
+    calc
+      (1 + C * roleLorentzMetric) * roleLorentzMetric =
+          1 * roleLorentzMetric + (C * roleLorentzMetric) * roleLorentzMetric :=
+            Matrix.add_mul _ _ _
+      _ = roleLorentzMetric + C * (roleLorentzMetric * roleLorentzMetric) := by
+            rw [Matrix.one_mul, Matrix.mul_assoc]
+      _ = roleLorentzMetric + C := by
+            rw [roleLorentzMetric_sq, Matrix.mul_one]
+  have hη_isometry : roleLorentzMetric * roleLorentzMetric *
+      roleLorentzMetric.transpose = roleLorentzMetric := by
+    rw [roleLorentzMetric_transpose, Matrix.mul_assoc,
+      roleLorentzMetric_sq, Matrix.mul_one]
+  change D0.Algebra.finiteGram roleLorentzMetric
+      (roleLorentzMetric + C) =
+    D0.Algebra.finiteGram roleLorentzMetric
+      (1 + C * roleLorentzMetric)
+  calc
+    D0.Algebra.finiteGram roleLorentzMetric (roleLorentzMetric + C) =
+        D0.Algebra.finiteGram roleLorentzMetric
+          ((1 + C * roleLorentzMetric) * roleLorentzMetric) := by
+            rw [← hframe]
+    _ = D0.Algebra.finiteGram roleLorentzMetric
+          (1 + C * roleLorentzMetric) :=
+        D0.Algebra.finiteGram_right_invariant roleLorentzMetric
+          (1 + C * roleLorentzMetric) roleLorentzMetric hη_isometry
+    _ = D0.Algebra.finiteGram roleLorentzMetric
+          (1 + solderCoframeFieldToJ2Direction N x e) := by rfl
+
+/-- The composed finite-field derivative is exactly the existing linear
+coframe metric readout at the fixed site. -/
+theorem solderMetricMatrix_sitewise_derivative_apply (N : ℕ)
+    (x : ArchiveRolePhaseGroup N) (e : LocalCoframeField N) :
+    (j2DetectorMetricPath_tangent.comp
+      (solderCoframeFieldToJ2DirectionCLM N x)) e =
+        (coframeMetricReadout N e x).toMatrix := by
+  rw [ContinuousLinearMap.comp_apply, j2DetectorMetricPath_tangent_apply,
+    solderCoframeFieldToJ2DirectionCLM_apply]
+  have hleft : (centeredCoframeMatrix N e x * roleLorentzMetric) *
+      roleLorentzMetric = centeredCoframeMatrix N e x := by
+    rw [Matrix.mul_assoc, roleLorentzMetric_sq, Matrix.mul_one]
+  have hright : roleLorentzMetric *
+      (centeredCoframeMatrix N e x * roleLorentzMetric).transpose =
+        (centeredCoframeMatrix N e x).transpose := by
+    rw [Matrix.transpose_mul, roleLorentzMetric_transpose,
+      ← Matrix.mul_assoc, roleLorentzMetric_sq, Matrix.one_mul]
+  rw [hleft, hright, ← coframeMetricReadout_eq_centered_add_transpose]
+
+/-- Fréchet derivative of the actual finite solder metric with respect to
+arbitrary sitewise coframe perturbations at the flat field. The derivative is
+the original coframe readout. This is a finite-carrier statement; it does not
+select a physical action or assert a continuum field variation. -/
+theorem solderMetricMatrix_sitewise_hasFDerivAt_flat (N : ℕ)
+    (x : ArchiveRolePhaseGroup N) :
+    HasFDerivAt (fun e : LocalCoframeField N => solderMetricMatrix N e x)
+      (j2DetectorMetricPath_tangent.comp
+        (solderCoframeFieldToJ2DirectionCLM N x)) 0 := by
+  have houter : HasFDerivAt j2DetectorMetricPath
+      j2DetectorMetricPath_tangent 0 := j2DetectorMetricPath_hasFDerivAt_flat
+  have hinner : HasFDerivAt (solderCoframeFieldToJ2DirectionCLM N x)
+      (solderCoframeFieldToJ2DirectionCLM N x) 0 :=
+        (solderCoframeFieldToJ2DirectionCLM N x).hasFDerivAt
+  have hzero : solderCoframeFieldToJ2DirectionCLM N x 0 = 0 := by simp
+  have houter' : HasFDerivAt j2DetectorMetricPath
+      j2DetectorMetricPath_tangent
+      (solderCoframeFieldToJ2DirectionCLM N x 0) := by
+    simpa [hzero] using houter
+  have hcomp := houter'.comp (0 : LocalCoframeField N) hinner
+  have hmap : (fun e : LocalCoframeField N => solderMetricMatrix N e x) =
+      fun e => j2DetectorMetricPath (solderCoframeFieldToJ2DirectionCLM N x e) := by
+    funext e
+    exact solderMetricMatrix_sitewise_eq_j2_path N e x
+  rw [hmap]
+  simpa [Function.comp] using hcomp
+
+end J2SitewiseSolderDerivative
 
 theorem solderMetric_forwardGauge_flat_tangent (N : ℕ) (xi : LocalRoleVector N)
     (t : ℝ) (x : ArchiveRolePhaseGroup N) :
