@@ -6243,3 +6243,42 @@ This is a finite algebra API and reuse refactor only. It changes no claim row,
 C0 disposition, application acceptance, adjoint interpretation, weight
 selection, or physical status. C0 freeze and final D0.All/Ready integration
 remain outstanding.
+
+### Exhaustive book-heading source candidates for C0 reconciliation (25 October 2026)
+
+The current locator view now enumerates every Markdown heading found in the
+ten pinned top-level book sources. For each heading it records the path, line,
+text, whether that source blob matches the snapshot, and claim IDs with either
+an exact-heading or ranked lexical-heading candidate. The v2 view contains
+674 heading coordinates: 40 with exact-heading candidates, 212 with ranked
+heading candidates, 23 in both sets, and 445 with neither candidate type.
+
+These are retrieval coordinates only. The 445 unlocated headings remain
+unclassified; they are not excluded source units. Exact and ranked links do
+not accept claim statements, pair multi-book rows with sections, establish
+semantic coverage, change claim status, or freeze C0. The current claim view
+still has 781 unresolved rows and 170 unpaired multi-book rows. No C0
+disposition or owner changed.
+
+The generated snapshot is clean at commit
+`1b6f5e964f75a28b97e44e4a46346e5703b6b6c6`, schema
+`d0-claim-source-candidate-view-v2`, with `worktree_dirty=false`. Its path is
+`sources/d0_proof_architecture_formalization_2026-10-24/claim_source_candidates_current.json`;
+SHA-256 is
+`2a5bd779f41d2dab918356e740ccdf243d5752b949b04b6758d791a8d19d17af`.
+The collector SHA-256 is
+`3e2f3e0fc64457515d458b4e655405c28dedc060bb4fe48598cb7c16f6457dd6`; the
+claim-register SHA-256 is
+`6b19168191ad4e68e106f7b89dcd008b3ec3cabdca7b3266864f61fe64455fc8`.
+The previous v1 view remains recoverable at commit
+`5182ad8a1534e4e49cce7826122f9e1c1081237e`, same path, Git blob
+`aad69da53407a57b7de58aae99795924cee94cc9`, SHA-256
+`218ef724270ae90c4cf88a6d6e6b10c9ccd2dde1bb841713a62d08920fbacf8d`.
+
+The source-view regressions pass **47/47**, declaration-inventory tests
+**16/16**, and claim-map coverage tests **25/25**; generated Lean views are
+current. An independent read-only review found no actionable issue in the
+674-coordinate enumeration, source pins, candidate counts, or unresolved
+multi-book boundary. This is a source-locator checkpoint only. It does not
+accept any C0 unit or replace the remaining source reconciliation and final
+Ready checks.
