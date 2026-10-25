@@ -6775,3 +6775,54 @@ with 889 claims, 31 assumptions, 58 aliases, 201 formal-support rows, closure
 findings remain five against the five-finding baseline; the EOL-aware diff
 check is clean. C0 freeze and independent acceptance, remaining mathematical
 migrations, final Ready integration, and physical GR premises remain open.
+
+### Partial trace factors through an exact lifted generation operator (25 October 2026)
+
+The shared `D0.Algebra.finiteMatrixPartialTraceLeft` API now includes the
+factorization
+`partialTraceLeft (A ⊗ B) = Matrix.trace A • B` for a finite left carrier and
+any commutative semiring. The actual type retains the `CommSemiring R`
+hypothesis and does not require the retained carrier to be finite. It adds no
+positivity, state, or physical-selection premise.
+
+Two existing consumers now use this result. `D0.Spectrum.stage3_trace_relation`
+derives the trace of `1 ⊗ Γ_SM` from generic partial-trace preservation and
+the tensor-product factorization. `D0.Matter.partial_trace_generation_lift`
+computes the full retained operator as `Fintype.card G • Γ_SM`. The existing
+`generation_trace_neutrality_connection` uses that operator identity and keeps
+both inputs explicit: the lift is `1 ⊗ Γ_SM`, and `trace Γ_SM = 0`. This
+strengthens the consumer from a trace-only shortcut to the exact operator map;
+the conclusion remains source-neutrality under those mathematical premises.
+
+The established Matter public definitions and theorem names are unchanged.
+The former spectrum proof's specialized tensor-trace call is replaced by the
+shared partial-trace API. Formal support now lists both Spectrum and Matter as
+consumers. The regression checks inspect compiled theorem types and proof
+dependencies for the generic factorization, both applications, the retained
+cardinality factor, and absence of `sorryAx`.
+
+The three changed modules pass narrow builds: `D0.Algebra.FiniteMatrixPartialTrace`
+**2,947/2,947** jobs, `D0.Spectrum.GenerationTensorExactness` **2,948/2,948**,
+and `D0.Matter.ArchivePartialTrace` **2,980/2,980**. Compiled declaration
+extraction through public import `D0.All` records nine partial-trace API and
+consumer declarations at clean Lean-source snapshot
+`05faf0c078b74ab74d963041f52749422813b7aa`, Lean 4.30.0, source digest
+`ee24661fd9c5d5e5b2d78ab720422fd46eae28a5b1d786d2280a7d03b16f87f2`;
+collector SHA-256 is
+`41b6ae7c600534ec0142643958aca0a5d5281afa53c3863e7ec828f5caafdc6d`, and the
+inventory SHA-256 is
+`84e95c91481b25a66a57f0391c475c4ef6780e0b47e96e236b7a7edd16de59e8`.
+The four current CAR/Hodge, Gauge, nonvacuum and SourcePort inventories were
+also refreshed against that same Lean-source digest; their respective file
+SHA-256 values are `cfcc5264e70fb2e707825a02fd351c51db518c468f0102956f0912664b873559`,
+`9774fd2aba215b1088d19749226f55953e1e920d5af987a5aae85a11e3b5af01`,
+`04276baddecb224dcf54dcc52672468f2bb13a30b356cde33deebf6a3c662dfd`, and
+`4aae92f6bd7763386835024fee4bcb3cd24db9842cd7d31ccd4eee8a9f865453`.
+
+Repository validation passes with 889 claims, 31 assumptions, 58 aliases, 201
+formal-support rows and closure 933; generated Lean views remain current, and
+formalization-debt findings remain five against the five-finding baseline. A
+full cold-start replay against the updated formal-support digest is the
+remaining check for this retrieval checkpoint. This slice does not freeze or
+accept C0, change claim owners/status, select a physical source, or close any
+physical GR premise.

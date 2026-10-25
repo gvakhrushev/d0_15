@@ -1,10 +1,10 @@
 {
   "schema": "d0-lean-declaration-inventory-v1",
-  "snapshot_commit": "f191c30475281622bcae0901856e66f05aff8ef9",
+  "snapshot_commit": "05faf0c078b74ab74d963041f52749422813b7aa",
   "worktree_dirty": false,
   "claim_registry_sha256": null,
-  "lean_source_digest": "d972c29cfa1de8b86778da6e6311ef02efd370a6039b9a1cfa73f509b4bccb88",
-  "collector_sha256": "8f19aae5e1e058bd8e3724f6a5033d405600edbc46ae35083fcd7732e6b932c5",
+  "lean_source_digest": "ee24661fd9c5d5e5b2d78ab720422fd46eae28a5b1d786d2280a7d03b16f87f2",
+  "collector_sha256": "41b6ae7c600534ec0142643958aca0a5d5281afa53c3863e7ec828f5caafdc6d",
   "toolchain": "leanprover/lean4:v4.30.0",
   "public_import_root": "D0.All",
   "resolution_only": false,
@@ -12,10 +12,13 @@
     "full_names": [
       "D0.Algebra.finiteMatrixPartialTraceLeft",
       "D0.Algebra.finiteMatrixPartialTraceLeft_trace",
+      "D0.Algebra.finiteMatrixPartialTraceLeft_tensorProduct",
       "D0.Algebra.finiteMatrixPartialTraceLeft_commutes_rightTensor",
       "D0.Matter.partialTraceV",
       "D0.Matter.trace_partialTrace",
-      "D0.Matter.partial_trace_commutes_with_shift"
+      "D0.Matter.partial_trace_commutes_with_shift",
+      "D0.Matter.partial_trace_generation_lift",
+      "D0.Matter.generation_trace_neutrality_connection"
     ]
   },
   "declarations": [
@@ -221,6 +224,146 @@
     },
     {
       "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "V",
+          "type": "Type u_1"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "N",
+          "type": "Type u_2"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "R",
+          "type": "Type u_3"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Algebra.FiniteMatrixPartialTrace.562889137._hygCtx._hyg.5",
+          "type": "Fintype V"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Algebra.FiniteMatrixPartialTrace.562889137._hygCtx._hyg.8",
+          "type": "CommSemiring R"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "A",
+          "type": "V → V → R"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "B",
+          "type": "N → N → R"
+        }
+      ],
+      "conclusion_whnf": "D0.Algebra.finiteMatrixPartialTraceLeft (D0.Algebra.finiteMatrixTensorProduct A B) = A.trace • B",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 46,
+            "line": 42
+          },
+          "start": {
+            "column": 0,
+            "line": 33
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 50,
+            "line": 35
+          },
+          "start": {
+            "column": 8,
+            "line": 35
+          }
+        }
+      },
+      "elaborated_type": "∀ {V : Type u_1} {N : Type u_2} {R : Type u_3} [inst : Fintype V] [inst_1 : CommSemiring R] (A : Matrix V V R)\n  (B : Matrix N N R), D0.Algebra.finiteMatrixPartialTraceLeft (D0.Algebra.finiteMatrixTensorProduct A B) = A.trace • B",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Algebra.FiniteMatrixPartialTrace",
+      "name": "D0.Algebra.finiteMatrixPartialTraceLeft_tensorProduct",
+      "proof_dependencies": [
+        "CommSemiring",
+        "CommSemiring.toSemiring",
+        "D0.Algebra.finiteMatrixPartialTraceLeft",
+        "D0.Algebra.finiteMatrixTensorProduct",
+        "Distrib.toMul",
+        "Eq",
+        "Eq.refl",
+        "Eq.trans",
+        "Finset",
+        "Finset.instSetLike",
+        "Finset.sum",
+        "Finset.sum_congr",
+        "Finset.sum_mul",
+        "Finset.univ",
+        "Fintype",
+        "HMul.hMul",
+        "HSMul.hSMul",
+        "Matrix",
+        "Matrix.diag",
+        "Matrix.ext",
+        "Matrix.smul",
+        "Matrix.trace",
+        "Membership.mem",
+        "NonAssocSemiring.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "NonUnitalNonAssocSemiring.toDistrib",
+        "Prod.mk",
+        "Semiring.toNonAssocSemiring",
+        "SetLike.instMembership",
+        "True",
+        "congr",
+        "congrArg",
+        "congrFun'",
+        "eq_self",
+        "instDistribOfSemiring",
+        "instHMul",
+        "instHSMul",
+        "instSMulOfMul",
+        "of_eq_true"
+      ],
+      "type_dependencies": [
+        "CommSemiring",
+        "CommSemiring.toSemiring",
+        "D0.Algebra.finiteMatrixPartialTraceLeft",
+        "D0.Algebra.finiteMatrixTensorProduct",
+        "Distrib.toMul",
+        "Eq",
+        "Fintype",
+        "HSMul.hSMul",
+        "Matrix",
+        "Matrix.smul",
+        "Matrix.trace",
+        "NonAssocSemiring.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "Semiring.toNonAssocSemiring",
+        "instDistribOfSemiring",
+        "instHSMul",
+        "instSMulOfMul"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Algebra/FiniteMatrixPartialTrace.lean"
+    },
+    {
+      "axioms": [
         "Classical.choice",
         "Quot.sound",
         "propext"
@@ -299,21 +442,21 @@
         "declaration": {
           "end": {
             "column": 14,
-            "line": 104
+            "line": 115
           },
           "start": {
             "column": 0,
-            "line": 33
+            "line": 44
           }
         },
         "selection": {
           "end": {
             "column": 57,
-            "line": 35
+            "line": 46
           },
           "start": {
             "column": 8,
-            "line": 35
+            "line": 46
           }
         }
       },
@@ -725,6 +868,324 @@
         "Real.instMul",
         "instFintypeProd",
         "instHMul"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Matter/ArchivePartialTrace.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "G",
+          "type": "Type"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Matter.ArchivePartialTrace.2053747175._hygCtx._hyg.3",
+          "type": "Fintype G"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Matter.ArchivePartialTrace.2053747175._hygCtx._hyg.6",
+          "type": "(a b : G) → Decidable (a = b)"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "n",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "Γ_SM",
+          "type": "D0.archivePhaseIndex n → D0.archivePhaseIndex n → ℝ"
+        }
+      ],
+      "conclusion_whnf": "D0.Matter.partialTraceV (D0.Spectrum.tensor_product_I Γ_SM) = Fintype.card G • Γ_SM",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 55,
+            "line": 148
+          },
+          "start": {
+            "column": 0,
+            "line": 140
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 37,
+            "line": 142
+          },
+          "start": {
+            "column": 8,
+            "line": 142
+          }
+        }
+      },
+      "elaborated_type": "∀ {G : Type} [inst : Fintype G] [inst_1 : DecidableEq G] {n : ℕ}\n  (Γ_SM : Matrix (D0.archivePhaseIndex n) (D0.archivePhaseIndex n) ℝ),\n  D0.Matter.partialTraceV (D0.Spectrum.tensor_product_I Γ_SM) = Fintype.card G • Γ_SM",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Matter.ArchivePartialTrace",
+      "name": "D0.Matter.partial_trace_generation_lift",
+      "proof_dependencies": [
+        "AddCommMonoid.toAddMonoid",
+        "AddCommMonoidWithOne.toAddCommMonoid",
+        "AddCommMonoidWithOne.toAddMonoidWithOne",
+        "AddMonoid.toAddZeroClass",
+        "AddMonoid.toNSMul",
+        "AddMonoidWithOne.toAddMonoid",
+        "AddMonoidWithOne.toNatCast",
+        "AddMonoidWithOne.toOne",
+        "AddZero.toZero",
+        "AddZeroClass.toAddZero",
+        "CommSemiring.toSemiring",
+        "D0.Algebra.finiteMatrixPartialTraceLeft",
+        "D0.Algebra.finiteMatrixPartialTraceLeft_tensorProduct",
+        "D0.Algebra.finiteMatrixTensorProduct",
+        "D0.Matter.partialTraceV",
+        "D0.Matter.partialTraceV.eq_1",
+        "D0.Spectrum.tensor_product_I",
+        "D0.Spectrum.tensor_product_I.eq_1",
+        "D0.archiveFibers",
+        "D0.archivePhaseIndex",
+        "DecidableEq",
+        "Distrib.toMul",
+        "DistribMulAction.toDistribSMul",
+        "DistribSMul.toSMulZeroClass",
+        "Eq",
+        "Eq.mpr",
+        "Eq.refl",
+        "Eq.symm",
+        "Fin.fintype",
+        "Fintype",
+        "Fintype.card",
+        "HSMul.hSMul",
+        "Matrix",
+        "Matrix.addCommMonoid",
+        "Matrix.addMonoid",
+        "Matrix.module",
+        "Matrix.one",
+        "Matrix.smul",
+        "Matrix.trace",
+        "Matrix.trace_one",
+        "Module.toDistribMulAction",
+        "Nat",
+        "Nat.cast",
+        "Nat.cast_smul_eq_nsmul",
+        "NonAssocSemiring.toAddCommMonoidWithOne",
+        "NonAssocSemiring.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Prod",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.instAddMonoid",
+        "Real.instCommSemiring",
+        "Real.instMul",
+        "Real.instOne",
+        "Real.instZero",
+        "Real.semiring",
+        "SMulZeroClass.toSMul",
+        "Semiring.toModule",
+        "Semiring.toMonoid",
+        "Semiring.toNonAssocSemiring",
+        "congrArg",
+        "id",
+        "instDistribOfSemiring",
+        "instHSMul",
+        "instSMulOfMul"
+      ],
+      "type_dependencies": [
+        "AddMonoid.toNSMul",
+        "D0.Matter.partialTraceV",
+        "D0.Spectrum.tensor_product_I",
+        "D0.archiveFibers",
+        "D0.archivePhaseIndex",
+        "DecidableEq",
+        "Eq",
+        "Fin.fintype",
+        "Fintype",
+        "Fintype.card",
+        "HSMul.hSMul",
+        "Matrix",
+        "Matrix.addMonoid",
+        "Nat",
+        "Real",
+        "Real.instAddMonoid",
+        "instHSMul"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Matter/ArchivePartialTrace.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "G",
+          "type": "Type"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Matter.ArchivePartialTrace.293202558._hygCtx._hyg.3",
+          "type": "Fintype G"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Matter.ArchivePartialTrace.293202558._hygCtx._hyg.6",
+          "type": "(a b : G) → Decidable (a = b)"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "n",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "Γ_SM",
+          "type": "D0.archivePhaseIndex n → D0.archivePhaseIndex n → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "Γ_lift",
+          "type": "G × D0.archivePhaseIndex n → G × D0.archivePhaseIndex n → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "h_lift",
+          "type": "Γ_lift = D0.Spectrum.tensor_product_I Γ_SM"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "h_zero",
+          "type": "Γ_SM.trace = 0"
+        }
+      ],
+      "conclusion_whnf": "∑ i, D0.Matter.localTraceDensity (D0.Matter.partialTraceV Γ_lift) i = 0",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 6,
+            "line": 212
+          },
+          "start": {
+            "column": 0,
+            "line": 202
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 46,
+            "line": 202
+          },
+          "start": {
+            "column": 8,
+            "line": 202
+          }
+        }
+      },
+      "elaborated_type": "∀ {G : Type} [inst : Fintype G] [inst_1 : DecidableEq G] {n : ℕ}\n  (Γ_SM : Matrix (D0.archivePhaseIndex n) (D0.archivePhaseIndex n) ℝ)\n  (Γ_lift : Matrix (G × D0.archivePhaseIndex n) (G × D0.archivePhaseIndex n) ℝ),\n  Γ_lift = D0.Spectrum.tensor_product_I Γ_SM →\n    Γ_SM.trace = 0 → D0.NeutralSource (D0.Matter.localTraceDensity (D0.Matter.partialTraceV Γ_lift))",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Matter.ArchivePartialTrace",
+      "name": "D0.Matter.generation_trace_neutrality_connection",
+      "proof_dependencies": [
+        "AddCommMonoid.toAddMonoid",
+        "AddCommMonoid.toNatModule",
+        "AddMonoid.toAddZeroClass",
+        "AddMonoid.toNSMul",
+        "AddZero.toZero",
+        "AddZeroClass.toAddZero",
+        "D0.Matter.localTraceDensity",
+        "D0.Matter.partialTraceV",
+        "D0.Matter.partial_trace_generation_lift",
+        "D0.Matter.sum_localTraceDensity_eq_trace",
+        "D0.NeutralSource",
+        "D0.Spectrum.tensor_product_I",
+        "D0.archiveFibers",
+        "D0.archivePhaseIndex",
+        "DecidableEq",
+        "DistribMulAction.toDistribSMul",
+        "DistribSMul.toSMulZeroClass",
+        "Eq",
+        "Eq.mpr",
+        "Eq.trans",
+        "Fin.fintype",
+        "Finset.sum",
+        "Finset.univ",
+        "Fintype",
+        "Fintype.card",
+        "HSMul.hSMul",
+        "Matrix",
+        "Matrix.addMonoid",
+        "Matrix.smul",
+        "Matrix.trace",
+        "Matrix.trace_smul",
+        "Module.toDistribMulAction",
+        "Nat",
+        "Nat.instMonoid",
+        "Nat.instSemiring",
+        "OfNat.ofNat",
+        "Prod",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.instAddMonoid",
+        "Real.instZero",
+        "SMulZeroClass.toSMul",
+        "True",
+        "Zero.toOfNat0",
+        "congrArg",
+        "congrFun'",
+        "eq_self",
+        "id",
+        "instHSMul",
+        "nsmul_zero",
+        "of_eq_true"
+      ],
+      "type_dependencies": [
+        "D0.Matter.localTraceDensity",
+        "D0.Matter.partialTraceV",
+        "D0.NeutralSource",
+        "D0.Spectrum.tensor_product_I",
+        "D0.archiveFibers",
+        "D0.archivePhaseIndex",
+        "DecidableEq",
+        "Eq",
+        "Fin.fintype",
+        "Fintype",
+        "Matrix",
+        "Matrix.trace",
+        "Nat",
+        "OfNat.ofNat",
+        "Prod",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.instZero",
+        "Zero.toOfNat0"
       ],
       "source_path": "03_FORMALIZATION/D0/Matter/ArchivePartialTrace.lean"
     }
