@@ -2727,3 +2727,16 @@ SHA-256 is
 `0768c3c5c974044ab7853c5ce70cf6bf48f80f5b4d172d85fc4066efe7f54813`.
 These build and inventory checks verify the Lean application and its recorded
 trust boundary; physical admission and semantic source acceptance remain open.
+
+The updated Julia cold-start replay on snapshot
+`7283fc0ac68ee5a1a7f0a12e2a87f1a25258d28f` (`worktree_dirty=true`) found all
+16/16 required-source cases and passed all 17 search/impact benchmarks. The
+new exact declaration query returns this primary artifact and the Lean module
+as its first two direct-content candidates; the separate Russian Eq. (27)/(28)
+query finds the pinned §8.4 source and exact commit/blob. The exact-source
+versus unrelated-prose impact control passed. Cold-start runner SHA-256 is
+`f1ac1d58e1b8318ad6688315c415243d7150c5c3de97a03dfbc8f0246d22545d`, and the
+updated proof-architecture test SHA-256 is
+`03f1fc5fd21e18efcf0be84b44533d54bbb121afde34b7f8c30eacdbd352fd62`.
+This replay verifies retrieval and pin routing; source-to-claim semantic
+acceptance and physical endpoint binding remain separate.

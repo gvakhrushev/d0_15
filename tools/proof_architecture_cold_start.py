@@ -250,12 +250,15 @@ CASES: list[dict[str, Any]] = [
             "покрытие всех ненулевых сдвигов через Eq 27 Eq 28 principalFrameJuliaQueryFamily",
             "archiveJuliaSourceCARRaisingQuery_nonNull_recovery_of_proper_roleLorentz IsRoleLorentz",
             "proper row action Lorentz endpoint det one CAR Julia recovery adapter",
+            "principalFrameJuliaQueryFamily_nonNull_open_chart_joint_recovery_of_proper_roleLorentz Eq27 Eq28",
+            "правый Lorentz endpoint одновременно CAR Eq 27 и query Eq 28 один recovered endpoint",
         ],
         "required_refs": [
             "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md",
             "02_REGISTRY/research/A4D_EXACT_AF_RADIAL_COFRAME_EQUIVALENCE_NONLINEAR_SPIN2_2026_10_18.md",
             "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/proper_role_lorentz_endpoint_inventory_2026-10-25.json",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/proper_role_lorentz_joint_recovery_inventory_2026-10-25.json",
             "03_FORMALIZATION/D0/Geometry/A4DJuliaPrincipalFrameRecovery.lean",
             "03_FORMALIZATION/D0/Geometry/A4DJuliaNonNullGammaRecovery.lean",
             "03_FORMALIZATION/D0/Geometry/A4DJuliaRecoveryComposition.lean",
@@ -266,18 +269,37 @@ CASES: list[dict[str, Any]] = [
             {"path": "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md",
              "commit": "fe5cf335da04cac14e50407b03f98b96be17dc52",
              "blob": "1c8d59e5533b443d9a015dc4512cfbc160ae7e62",
-             "sections": ["8.4", "8.5"], "scope_query_indexes": [1, 2, 4, 5, 6, 7, 8, 9],
+             "sections": ["8.4", "8.5"], "scope_query_indexes": [1, 2, 4, 5, 6, 7, 8, 9, 15],
              "scope_query_sections": {"1": ["8.5"], "2": ["8.5"],
                                       "4": ["8.4"], "5": ["8.4"],
                                       "6": ["8.4"], "7": ["8.4"],
-                                      "8": ["8.4"], "9": ["8.4"]}},
+                                      "8": ["8.4"], "9": ["8.4"],
+                                      "15": ["8.4"]}},
             {"path": "02_REGISTRY/research/A4D_EXACT_AF_RADIAL_COFRAME_EQUIVALENCE_NONLINEAR_SPIN2_2026_10_18.md",
              "commit": "fe5cf335da04cac14e50407b03f98b96be17dc52",
              "blob": "734e21ae6bc04ff3446ad15858936d417fdd2e55",
              "sections": ["5.1"], "scope_query_indexes": [3],
              "scope_query_sections": {"3": ["5.1"]}},
         ],
-        "scope_review": "The general compiled map keeps full-query equality and the inverse-coframe right-inverse explicit; its canonical query-family specialization removes the external query-equality premise. The Eq. (28) composition recovers M_r on its full open chart when the observed projected metric covector is nonzero and the positive square-root branch holds; its null specialization derives those conditions from nondegeneracy, normalization, and one nonzero null shift. `archiveJuliaSourceCARRaisingQuery_nonNull_recovery_of_proper_roleLorentz` now applies Eq. (27) to the source's row-action `IsRoleLorentz Λ` convention with `det Λ = 1`: the transposed endpoint map preserves the same source form and has determinant one. `principalFrameJuliaQueryFamily_nonzero_shift_chart_coverage` joins the algebraic charts for every nonzero shift under the explicit endpoint isometry and normalized covector: the non-null branch retains `det M = 1`, while the null branch derives Eq. (28)'s projected-covector and positive-branch conditions. A physical application must still bind the admitted endpoint to this matrix and prove its properness; smoothness of the full inverse or all-jet pullback, physical query admission, price/source selection, and GR closure remain open.",
+        "scope_review": (
+            "The general compiled map keeps full-query equality and the inverse-coframe right-inverse explicit; "
+            "its canonical query-family specialization removes the external query-equality premise. The Eq. (28) "
+            "composition recovers M_r on its full open chart when the observed projected metric covector is "
+            "nonzero and the positive square-root branch holds; its null specialization derives those conditions "
+            "from nondegeneracy, normalization, and one nonzero null shift. `archiveJuliaSourceCARRaisingQuery_"
+            "nonNull_recovery_of_proper_roleLorentz` applies Eq. (27) to the source's row-action `IsRoleLorentz Λ` "
+            "convention with `det Λ = 1`: the transposed endpoint map preserves the same source form and has "
+            "determinant one. `principalFrameJuliaQueryFamily_nonNull_open_chart_joint_recovery_of_proper_"
+            "roleLorentz` composes this same role-indexed endpoint with Eq. (28), and the CAR decoder, query "
+            "decoder, and full exterior lift return that one map on the non-null chart under the explicit source "
+            "norm, normalized covector, projected-covector, and positive-branch assumptions. "
+            "`principalFrameJuliaQueryFamily_nonzero_shift_chart_coverage` joins the algebraic charts for every "
+            "nonzero shift under the explicit endpoint isometry and normalized covector: the non-null branch "
+            "retains `det M = 1`, while the null branch derives Eq. (28)'s projected-covector and positive-branch "
+            "conditions. A physical application must still bind the admitted endpoint to the row-action matrix "
+            "and prove its properness; smoothness of the full inverse or all-jet pullback, physical query admission, "
+            "price/source selection, and GR closure remain open."
+        ),
     },
 ]
 

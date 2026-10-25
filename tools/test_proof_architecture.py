@@ -821,26 +821,31 @@ class ProofArchitectureTests(unittest.TestCase):
             item for item in cold_start.CASES
             if item["id"] == "julia-query-principal-frame-coframe-recovery"
         )
-        query = next(
-            query for query in case["queries"]
-            if "principalFrameJuliaQueryFamily_nonzero_shift_chart_coverage" in query
-        )
+        declarations = [
+            "principalFrameJuliaQueryFamily_nonzero_shift_chart_coverage",
+            "principalFrameJuliaQueryFamily_nonNull_open_chart_joint_recovery_of_proper_roleLorentz",
+        ]
+        queries = {
+            declaration: next(query for query in case["queries"] if declaration in query)
+            for declaration in declarations
+        }
         with tempfile.TemporaryDirectory() as temp:
             root = pathlib.Path(temp)
             research = root / "02_REGISTRY" / "research"
             research.mkdir(parents=True)
             source = research / "chart-coverage-owner.json"
             source.write_text(
-                '{"name":"D0.Geometry.principalFrameJuliaQueryFamily_nonzero_shift_chart_coverage", '
-                '"scope":"Eq27 Eq28"}\n',
+                json.dumps({"names": declarations, "scope": "Eq27 Eq28"}) + "\n",
                 encoding="utf-8",
             )
             hits_by_query = proof.full_text_search_many(root, case["queries"], limit=18)
 
-        hits = hits_by_query[case["queries"].index(query)]
-        direct = next(hit for hit in hits if hit["source"] == source.relative_to(root).as_posix()
-                      and hit["direct_content"])
-        self.assertEqual(direct["matched_terms"], direct["query_terms"])
+        for query in queries.values():
+            hits = hits_by_query[case["queries"].index(query)]
+            direct = next(hit for hit in hits
+                          if hit["source"] == source.relative_to(root).as_posix()
+                          and hit["direct_content"])
+            self.assertEqual(direct["matched_terms"], direct["query_terms"])
 
     def test_search_candidate_card_bounds_details_and_preserves_source_pins(self) -> None:
         candidate = {
@@ -1164,6 +1169,10 @@ class ProofArchitectureTests(unittest.TestCase):
             if item["id"] == "julia-query-principal-frame-coframe-recovery"
         )
         scope = case["scope_review"]
+        source_pin = next(
+            source for source in case["required_sources"]
+            if source["path"].endswith("A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md")
+        )
 
         self.assertIn(
             "principalFrameJuliaQueryFamily_nonzero_shift_chart_coverage", scope
@@ -1173,10 +1182,20 @@ class ProofArchitectureTests(unittest.TestCase):
             "archiveJuliaSourceCARRaisingQuery_nonNull_recovery_of_proper_roleLorentz",
             scope,
         )
+        self.assertIn(
+            "principalFrameJuliaQueryFamily_nonNull_open_chart_joint_recovery_of_proper_roleLorentz",
+            scope,
+        )
+        self.assertIn(15, source_pin["scope_query_indexes"])
+        self.assertNotIn(14, source_pin["scope_query_indexes"])
         self.assertIn("IsRoleLorentz Λ", scope)
         self.assertIn("physical application must still bind the admitted endpoint", scope)
         self.assertIn(
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/proper_role_lorentz_endpoint_inventory_2026-10-25.json",
+            case["required_refs"],
+        )
+        self.assertIn(
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/proper_role_lorentz_joint_recovery_inventory_2026-10-25.json",
             case["required_refs"],
         )
         self.assertIn(
@@ -1185,6 +1204,11 @@ class ProofArchitectureTests(unittest.TestCase):
         )
         self.assertTrue(any(
             "principalFrameJuliaQueryFamily_nonzero_shift_chart_coverage" in query
+            for query in case["queries"]
+        ))
+        self.assertTrue(any(
+            "principalFrameJuliaQueryFamily_nonNull_open_chart_joint_recovery_of_proper_roleLorentz"
+            in query
             for query in case["queries"]
         ))
 
