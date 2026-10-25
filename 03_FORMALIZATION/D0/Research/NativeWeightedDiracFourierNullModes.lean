@@ -112,6 +112,41 @@ theorem archiveFockProfile_complex_finrank :
     Module.finrank ℂ (ArchiveFockState → ℂ) = 16 := by
   rw [Module.finrank_fintype_fun_eq_card, card_archive_fock_state]
 
+/-- Typed linear-map API for embedding one Fock coefficient profile into its
+actual site × Fock Fourier cochain. -/
+def archiveFourierFockModeLinear (N : ℕ)
+    (k : Role → ZMod (archiveFibers N)) :
+    (ArchiveFockState → ℂ) →ₗ[ℂ] ArchiveCochainC N where
+  toFun := archiveFourierFockMode N k
+  map_add' := by
+    intro v w
+    funext p
+    simp [archiveFourierFockMode, add_mul]
+  map_smul' := by
+    intro c v
+    funext p
+    simp [archiveFourierFockMode, smul_eq_mul]
+    ring
+
+/-- Applying the typed mode embedding is the existing function-level
+compatibility map. -/
+theorem archiveFourierFockModeLinear_apply (N : ℕ)
+    (k : Role → ZMod (archiveFibers N)) (v : ArchiveFockState → ℂ) :
+    archiveFourierFockModeLinear N k v = archiveFourierFockMode N k v := rfl
+
+/-- The full typed CAR operator intertwines with the existing finite
+sixteen-component operator on every Fourier subspace. -/
+theorem archiveLorentzianCARDiracLinear_fourier_mode (N : ℕ)
+    (k : Role → ZMod (archiveFibers N)) (v : ArchiveFockState → ℂ) :
+    archiveLorentzianCARDiracLinear N (archiveFourierFockModeLinear N k v) =
+      archiveFourierFockModeLinear N k
+        (roleWeightedArchiveFourierFockActionLinear N roleLorentzSign k v) := by
+  change archiveLorentzianCARDirac N (archiveFourierFockMode N k v) =
+      archiveFourierFockMode N k
+        (roleWeightedArchiveFourierFockActionLinear N roleLorentzSign k v)
+  rw [archiveLorentzianCARDirac_fourier_mode]
+  rw [roleWeightedArchiveFourierFockActionLinear_apply]
+
 /-- The zero-momentum Fourier fibre has no forward or backward difference,
 so its actual profile operator is zero. -/
 theorem roleWeightedArchiveFourierFockActionLinear_eq_zero_at_zero (N : ℕ)
@@ -280,6 +315,46 @@ theorem archiveLorentzian_nonzero_null_mode_classification
   refine ⟨hker, hker_dim, ?_⟩
   rw [← hker]
   exact hker_dim
+
+/-- Every nonconstant null Fourier fibre contributes its full eight-dimensional
+kernel to the kernel of the actual site × Fock cochain operator. The proof is
+an explicit injective map of kernels through the typed Fourier-mode embedding;
+it makes no claim about adding contributions from distinct momenta. -/
+theorem archiveLorentzian_full_cochain_kernel_finrank_ge_eight
+    (N : ℕ) (k : Role → ZMod (archiveFibers N))
+    (hsymbol : archiveLorentzianFourierSymbol N k = 0) (hk : k ≠ 0) :
+    8 ≤ Module.finrank ℂ
+      (LinearMap.ker (archiveLorentzianCARDiracLinear N)) := by
+  classical
+  let T := roleWeightedArchiveFourierFockActionLinear N roleLorentzSign k
+  let M := archiveFourierFockModeLinear N k
+  let K := LinearMap.ker T
+  have hdim : Module.finrank ℂ K = 8 := by
+    simpa [K, T] using
+      (archiveLorentzian_nonzero_null_mode_classification N k hsymbol hk).2.1
+  let restricted := M.comp K.subtype
+  have hrestricted : ∀ x : K,
+      restricted x ∈ LinearMap.ker (archiveLorentzianCARDiracLinear N) := by
+    intro x
+    change archiveLorentzianCARDiracLinear N (M x) = 0
+    rw [archiveLorentzianCARDiracLinear_fourier_mode N k x]
+    change M (T x) = 0
+    rw [x.property]
+    simp [M]
+  let lift : K →ₗ[ℂ] LinearMap.ker (archiveLorentzianCARDiracLinear N) :=
+    LinearMap.codRestrict _ restricted hrestricted
+  have hlift : Function.Injective lift := by
+    intro x y hxy
+    apply Subtype.ext
+    have hval := congrArg Subtype.val hxy
+    have hmode : M x = M y := by
+      simpa [lift, restricted, LinearMap.codRestrict_apply] using hval
+    exact archiveFourierFockMode_injective N k hmode
+  have hdimle := LinearMap.finrank_le_finrank_of_injective hlift
+  calc
+    8 = Module.finrank ℂ K := hdim.symm
+    _ ≤ Module.finrank ℂ
+          (LinearMap.ker (archiveLorentzianCARDiracLinear N)) := hdimle
 
 /-- The fixed-frequency diagonal family `(m,m,0,0)` on the actual archive
 Fourier carrier. The same natural `m` is reduced into each period `N+2`. -/

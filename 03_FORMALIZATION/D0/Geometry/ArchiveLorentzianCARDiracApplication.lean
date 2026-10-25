@@ -101,6 +101,51 @@ theorem roleWeightedArchiveCodifferential_smul (N : ℕ) (w : Role → ℝ)
           twistedAnnihilateDirection N (fun _ => 1) r ψ p := by
           rw [Finset.mul_sum]
 
+/-- The complete first-order CAR operator is linear on the actual site × Fock
+cochain carrier. This keeps the supplied role weights explicit and makes the
+full operator available to finite-dimensional kernel and image arguments. -/
+theorem roleWeightedArchiveCARDirac_add (N : ℕ) (w : Role → ℝ)
+    (ψ φ : ArchiveCochainC N) :
+    roleWeightedArchiveCARDirac N w (ψ + φ) =
+      roleWeightedArchiveCARDirac N w ψ + roleWeightedArchiveCARDirac N w φ := by
+  unfold roleWeightedArchiveCARDirac
+  rw [dTwisted_add, roleWeightedArchiveCodifferential_add]
+  funext p
+  simp only [Pi.add_apply]
+  abel
+
+/-- Scalar compatibility for the full-carrier CAR operator. -/
+theorem roleWeightedArchiveCARDirac_smul (N : ℕ) (w : Role → ℝ)
+    (c : ℂ) (ψ : ArchiveCochainC N) :
+    roleWeightedArchiveCARDirac N w (c • ψ) =
+      c • roleWeightedArchiveCARDirac N w ψ := by
+  unfold roleWeightedArchiveCARDirac
+  rw [dTwisted_smul, roleWeightedArchiveCodifferential_smul, smul_add]
+
+/-- Typed linear-map API for the full site × Fock CAR operator. The existing
+function-level definition remains the compatibility interface. -/
+def roleWeightedArchiveCARDiracLinear (N : ℕ) (w : Role → ℝ) :
+    ArchiveCochainC N →ₗ[ℂ] ArchiveCochainC N where
+  toFun := roleWeightedArchiveCARDirac N w
+  map_add' := roleWeightedArchiveCARDirac_add N w
+  map_smul' := roleWeightedArchiveCARDirac_smul N w
+
+/-- The typed operator preserves the established function-level API. -/
+theorem roleWeightedArchiveCARDiracLinear_apply (N : ℕ) (w : Role → ℝ)
+    (ψ : ArchiveCochainC N) :
+    roleWeightedArchiveCARDiracLinear N w ψ = roleWeightedArchiveCARDirac N w ψ := rfl
+
+/-- Typed full-carrier operator for the repository's explicit Lorentzian role
+signs. The signs remain mathematical input, not physical selection. -/
+def archiveLorentzianCARDiracLinear (N : ℕ) :
+    ArchiveCochainC N →ₗ[ℂ] ArchiveCochainC N :=
+  roleWeightedArchiveCARDiracLinear N roleLorentzSign
+
+/-- Compatibility theorem for the typed Lorentzian operator. -/
+theorem archiveLorentzianCARDiracLinear_apply (N : ℕ)
+    (ψ : ArchiveCochainC N) :
+    archiveLorentzianCARDiracLinear N ψ = archiveLorentzianCARDirac N ψ := rfl
+
 theorem roleWeightedArchiveCodifferential_square (N : ℕ) (w : Role → ℝ)
     (ψ : ArchiveCochainC N) :
     roleWeightedArchiveCodifferential N w
