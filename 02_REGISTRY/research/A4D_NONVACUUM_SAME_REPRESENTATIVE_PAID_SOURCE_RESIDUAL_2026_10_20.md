@@ -16807,6 +16807,686 @@ Final directed receipt (elapsed runtime is not a proof input):
 }
 ```
 
+## 7bi. A finite noncommuting core controls the whole paid heat source
+
+25 October2026. Same existing PR334 / native realization and final composition; input62483da582be1f4b5df233e3725c65ed1819e48c. This is a
+structural application to the declared same-scene Hodge of7bh, not another
+homogeneous-clock theorem, new physical task, or selected-history claim.
+It preserves7bg's finite positive-word compiler and7bf's paid SOURCE estimates.
+
+### Statement and carrier
+
+Fix the ORIGINAL scalar scene K(9,11,13), beta>0, all ranks, and the actual
+N-stage cyclic word g=(g_t), N>=3. Put m=33d, n0=mN,
+n1=392Nd, R=(D_S+2I)^(-1/2) tensor I_d, c=||R||^2=1/22,
+B=R A_S R and T_g=sum_t |t+1><t| tensor g_t. Every g_t is a
+full-column unitary on the SAME scene times retained work; it need NOT commute
+with B or R. Use exactly
+
+    Delta_g=I-B-R(T_g+T_g*)R,     E_g=exp(-beta Delta_g),
+    Z_g=Tr E_g,                 H0_g=beta^(-1)log Z_g,
+    Z01_g=2Z_g+359Nd,            H01_g=beta^(-1)log Z01_g.
+
+The raw/normalized differential and both Hodge grades are exactly7bh501-502.
+Thus0<=Delta_g<=2I. The one-cochain surplus is inside Z01, not removed from
+the action. The actual initial cut and U_hist=T_g^N direct_sum I_C1 remain
+those of7bh; the heat estimates below do not require moving that cut.
+
+Let h=(h_t) be a mathematical reference word on this SAME carrier and clock,
+such that EACH h_t commutes with B and R and product_t h_t=I. Define
+
+    A(g,h)=sum_t ||g_t-h_t||_op.
+
+The reference is not asserted to be another allowed physical history or a
+chosen cheaper programme. In the application it has identity at the finite
+core and the actual paid internal-work padding gates elsewhere. The actual
+word g, all its padding, its clock, and its absolute price remain physical.
+
+For variations delta g_t=X_t g_t with arbitrary INDEPENDENT skew-Hermitian
+X_t and max_t||X_t||_op<=1, both H0 and H01 satisfy
+
+    |H_g-H_h| <= C0 A(g,h)/N,
+    ||D H_g||_(gate-max dual) <= C1 A(g,h)/N,
+
+    C0=2 exp(2 beta)c,
+    C1=2 exp(2 beta)c(1+2 beta c).                    (508)
+
+This is the complete ambient gate covector: every padding row is included.
+For a restricted physical support/Lie algebra it remains an upper bound.
+If g_t=h_t outside a finite core of S actual raw stages, A<=2S.
+No involutive endpoint, efficient compiler, homogeneous placement of the core,
+or commutation of B with R is assumed.
+
+### Why the reference has zero source in ALL raw directions
+
+Consume the existing recorded-clock prefix gauge only for h. Its prefixes
+H_t=h_(t-1)...h_0 commute with B,R, and H_N=I. The periodic block frame
+diag(H_t) therefore carries Delta_h to the identity-shift Hodge without
+changing the scene tests or normalization. At that identity reference, clock
+translation and reflection imply E_(t,t+1)=E_(t+1,t). Since E=E*, this
+neighbor block is Hermitian, as is R E_(t,t+1) R.
+
+Equivalently, with W_h,t=R(E_h)_(t,t+1)R, the matrix h_t W_h,t is
+Hermitian in the original frame. Hence
+
+    Re Tr[h_t W_h,t X_t]=0
+
+for EVERY independent skew-Hermitian X_t, including directions mixing scene,
+source, work or padding. This is stronger than invariance along tied padding
+identities. It is a zero numerator, so comparing with g introduces no hidden
+derivative of Z_h or ratio Z_h/Z_g.
+
+Product(h_t)=I ALONE is insufficient. The individual commutation with B,R
+is required; the checker has an adverse source-X^4 identity loop.
+
+### The full covector, not a collection of random directions
+
+Write W_g,t=R(E_g)_(t,t+1)R and skew(M)=(M-M*)/2. Direct7bh503 gives
+
+    D H0_g = (2/Z_g) Re sum_t Tr[g_t W_g,t X_t],
+    ||D H0_g||_(gate-max dual)
+       =(2/Z_g) sum_t ||skew(g_t W_g,t)||_1.           (509)
+
+For H01 replace2/Z_g by4/Z01_g. Equality in509 quantifies all independent
+ambient skew generators; a polar/sign generator attains each summand.
+It is not equality for an arbitrarily restricted native Lie subspace.
+For local generators tensored with spectators, the exact restricted dual
+uses the appropriate partial trace/projection instead. The full expression
+still bounds it.
+
+By positivity and Duhamel's formula,
+
+    ||Delta_g-Delta_h||_1 <=2c ||T_g-T_h||_1 <=2mc A,
+    ||E_g-E_h||_1 <= beta ||Delta_g-Delta_h||_1 <=2 beta mc A,
+    Z_g,Z_h >=Nm exp(-2 beta).                       (510)
+
+Both exponential factors in the Duhamel integral are contractions. There
+is no exp(N) or extra clock-size factor.
+
+For completeness, the trace-norm pinching step is also dimension safe.
+Multiplying E_g-E_h by a cyclic clock permutation and pinching to clock
+diagonal blocks proves
+
+    sum_t ||(E_g-E_h)_(t,t+1)||_1 <=||E_g-E_h||_1.
+
+Use skew(h_t W_h,t)=0, ||W_h,t||_op<=c and unitarity of g_t. Then
+
+    sum_t ||skew(g_t W_g,t)||_1
+      <=mc A+c ||E_g-E_h||_1
+      <=mc(1+2 beta c)A.
+
+Together with509-510 this is exactly the covector constant in508, with no
+additional N from summing raw rows. An equivalent proof contracts the
+difference with arbitrary max-norm X_t: ||D T_g||_op<=1 and
+||D T_g-D T_h||_1<=m A.
+
+The value bound follows from
+|Z_g-Z_h|<=2 beta mc A and the lower bound for min(Z_g,Z_h).
+For H01 the derivative multiplier is2Z_g/Z01_g<=1; directly, its value
+difference has the same bound because the trace difference doubles while
+Z01>=2Nm exp(-2 beta). No H0/H1 zero mode or multiplicity is dropped.
+
+### Paid finite-catalogue application
+
+Allocate three fresh INTERNAL QUERY-work bits before compiling any target.
+Their initialized blanks do not multiply the input rank; their eight complete
+modes DO multiply every appropriate heat trace and the one-cochain index.
+They are not oldRIGHT, protected records, or the literal RawZone signal port.
+
+On these three wires, the already-owned identities are two equal CX and
+
+    A;B;A;B;C,  A=CX(a,b), B=CX(b,c), C=CX(a,c).
+
+The five-letter word is exactly identity on ALL columns. Every integer>=4
+is2u+5v. All these actual padding primitives commute with the scene B,R,
+and each complete block has productI. If an implementation instead routes
+through the SAME RawZone port or source primitive, its FULL raw expansion
+must be examined: macro identity does not establish individual commutation.
+Noncommuting routing stages belong in the core S. This theorem does not
+silently supply that routing/admission map.
+
+First choose a finite catalogue's endpoint precisions from7bg's actual
+ranks, gains, geometric remainders and field-stencil steps. Run the finite
+compiler; obtain actual core lengths S_i and all extra controller/routing
+lengths. Only THEN choose a common real N>=max_i S_i+4 and execute the
+2/5-CX padding. All core targets act identity on the fresh padding factor.
+
+For each word, h_i is identity on its core and equals its actual padding
+elsewhere. The h_i have the SAME heat baseline at common N,d: every one
+is periodically gauge-equivalent to the identity-shift reference. They
+need not have identical distributions of two/five identity blocks.
+A_i<=2S_i, where S_i counts every changed RAW primitive. A controller used
+throughout the added duration is not outside S merely by being called
+padding; its actual primitive placement must satisfy the assumptions.
+
+Let A_max=max_i A_i, a_min>0 be the actual smallest source gain in this
+finite context, and let L=max||Dg_t|| be the actual field-to-gate lift on
+the compared test directions, if that lift is supplied. Then
+
+    heat covector /a_min <=C1 A_max/(N a_min),
+    lifted field covector /a_min <=C1 A_max L/(N a_min).
+
+For a centered two-endpoint stencil of step delta, its heat contribution
+after normalization is at most C0 A_max/(N a_min delta).
+For a general constant-annihilating stencil use the ACTUAL sum of absolute
+stencil coefficients; a forward difference has the extra factor2.
+Since the finite core, a_min, stencil coefficients and any required lift
+are fixed BEFORE N, one may choose an effective common N satisfying all
+these positive budgets simultaneously. All inverse-gain, face-count and
+norm factors remain. A vanishing gain is not a solution.
+
+This is no assertion of a smooth selector of discrete words, exact finite
+roots, or a native law preferring arbitrarily long programmes. H_h(N)
+remains inside every absolute Book price and changes with the ACTUAL clock.
+It cancels only in comparisons of the common-N catalogue, not as a fitted
+counterterm. Duration/rank variations remain separate actual comparisons.
+
+The estimate concerns HEAT. It neither sets arbitrary QUERY feedback
+normals to zero nor erases additional genuinely selected price terms.
+For the new padding's own declared LOCAL control support, its feedback
+first source is zero: at the base its total pad word isI, core is
+U_core tensor I_pad, and the input pad is pure blank. A local pad tangent
+therefore gives delta C=alpha C_core with alpha+alpha*=0, hence
+delta(C*C)=0. Broader normals mixing padding and logical registers are
+not removed by this observation; the heat bound nevertheless covers them.
+
+### Compose the actual SOURCE, local padding and whole absolute Book price
+
+Apply this theorem to7bf/7bg's actual compiled word, including BOTH paid
+SOURCE legs and its entire finite QUERY core. Reserve the three padding
+wires as true spectators of that core; count every one of their eight modes
+in d. Padding at the end is enough. It is not a new independently frozen
+physical blank. On the genuine factorized input i=i_c tensor |0>_p,
+write U=U_c tensor W_p and C=i*Ui. At the actual padding word W_p=I,
+ANY independently varied padding gate on that factor gives
+
+    delta W_p=p_>t X_t p_>t*,     (delta W_p)*=-delta W_p,
+    z=<0|delta W_p|0>,            z+conj(z)=0,
+    delta C=z C_c,               delta(C*C)=0.
+
+For the ACTUAL complementary Book cut Q=I-ii*, F=I-C*C and
+J=-log det(I-zeta F), this proves delta F=delta J=0 as an OPERATOR
+identity on every input column. The varied word need NOT remain identity
+away from its base point. Simultaneous independent local padding rows also
+vanish. Likewise, if only the normalized product pad ray varies and its
+cut follows, C_(psi)=C_c exactly for U_c tensor I, so DJ=0 on that actual
+factorized input variation. This does not remove entangled input/cut
+normals or generators coupling the padding to the logical core. Those
+additional directions retain their original admission and source problem.
+
+Let a=1-zeta>0, N_s count both actual SOURCE legs, q be the material-arm
+input rank, r_h the true whole-input rank, epsilon_r the paid factory
+failure, e_Q the whole endpoint compiler error and c0 the null-query
+corner of7bf. Put C_V=C0 and C_H=C1 from508. The existing7bg497 source
+estimate and the NEW entire heat estimate compose to
+
+    ||D B_hat|_(SOURCE direct_sum PAD_local)||_(gate-max dual)
+       <= [2q zeta(1-c0)/a] N_s sqrt(epsilon_r)
+          +[4r_h zeta/a^2] N_s e_Q
+          +C_H A(g,h)/N.                            (511)
+
+The total-rank coefficient is required when the whole multi-arm endpoint
+is approximated. A separately proved arm-preserving layout may use q
+instead; a generic compiler does not prove that layout. The last term
+controls ALL heat rows, including arbitrary full-fibre padding directions;
+only their feedback part uses the stated local-padding support. Core
+QUERY feedback normals are not included in511. The ideal material term
+retains q and its actual readiness coefficient as before.
+
+At the same actual N, the whole-price comparison is
+
+    |B_hat-(H_base,N+J_*,r)|
+       <= C_V A(g,h)/N +[2r_h zeta/a] e_Q.            (512)
+
+Here J_*,r is the ideal query with the SAME paid finite factory. For the
+pointer-preserving unconditioned variant7bg498, comparing further to
+its conditioned target adds the retained4q zeta epsilon_r/a term.
+Geometry, source approximation, the actual material coefficient
+lambda_r-lambda_echo=O(epsilon_r), and field secants keep their existing
+budgets.512 does not replace the finite factory by its limiting density.
+
+On the common7bh carrier take P_hist=|0><0|_clock tensor P_input,
+zero on C1, and U_hist=T^N direct_sum I_C1. The extra clock stages
+have zero cut support but their full heat modes remain. Padding preserves
+the whole endpoint and input rank, so J and the ACTUAL gain Gamma_h
+are unchanged. There is no extra factor N or freely initialized RIGHT
+multiplicity. An all-stage cut with single-T return is a DIFFERENT
+interface. If the selected physical cut/clock differs, this invariance
+must be proved for that selection before using511-512.
+
+The ordering now has no compiler-length circularity. Fix the mesh,
+field-stencil step delta_h and actual positive gain Gamma_h (for the
+owned material normalization, kappa0 eta_h^2). Choose the paid source
+depth so N_s sqrt(epsilon_r)/Gamma_h and any required
+q epsilon_r/(delta_h Gamma_h) are small. Next choose finite QUERY
+precision e_Q controlling N_s r_h e_Q/Gamma_h and
+r_h e_Q/(delta_h Gamma_h), with their actual displayed constants.
+Find the finite core; ONLY THEN choose one genuine common paid N for
+the finite catalogue so A_max/(N Gamma_h) and
+A_max/(N delta_h Gamma_h) are small. The padding does not increase N_s.
+No effective rate for the finite compiler or N e_Q bound is used.
+If the actual endpoint/gain convention depends on N, use it instead;
+the preceding stage0 completion is what prevents that dependence here.
+
+The norm transfer also has no hidden clock-length loss. On the fixed-scene
+gate-generated subspace of7bh, in its original temporal-row coordinates,
+delta d=(0,-S_clock* delta T R), where S_clock is the bare cyclic shift.
+Thus the paired Dirac variation has norm ||delta D_01||=||delta T R||;
+the fixed temporal-row reindexing is unitary. Since the smallest
+singular value of R is1/sqrt(26),
+
+    max_t||X_t|| <= sqrt(26)||delta D_01||.           (513)
+
+Thus the full heat bound transfers to this Dirac norm with factor sqrt(26).
+An actual field lift with a larger known norm retains that factor as well.
+This is not a bound on arbitrary moving-R, scene, coframe or cut directions.
+The absolute H_base,N grows with the paid clock and remains in the price;
+source control is not a proof that such long words are selected minima.
+
+### What this substitutes in the complete argument
+
+This composes7bf's source suppression,7bg's finite native QUERY compilation
+and7bh's genuine noncommuting scene-stage heat. The former homogeneous-core
+requirement is removed on the declared7bh Hodge. The replacement is an
+explicit admitted commuting PADDING primitive, not commuting core gates,
+an exact inverse, an involutive endpoint or a cheap compiler. All newly
+added heat rows and local padding feedback rows have been accounted for.
+
+The direct Book03 bootstrap already states its stationary law on its native
+variation domain; closed feedback by itself does not prove that law. The
+next physical substitution is the SAME execution's selected d_N and joint
+field/control/cut map, including the independent core QUERY directions.
+The known truthful task relation r=Q_h(Y) can let fields vary, but mere
+strict-slack approximate correctness imposes no tangent constraint and
+cannot delete a QUERY normal. Reusing a fixed-Q isometric writer also
+cannot supply a genuinely moving native pairing.
+
+For clarity, a conditional filter K=F/sqrt(M_F), M_F>||F||^2, can change a branch Gram
+while its retained failure restores total isometry. That observation does
+not identify its columns with the native solder F=eta+e of
+[A4DRawSolderFrameAction](../../03_FORMALIZATION/D0/Geometry/A4DRawSolderFrameAction.lean). The required actual all-column intertwiner is
+T_x=Lambda(F_x), with q=F eta F^T, D_e=F_x U_e F_y^(-1), and
+
+    (T d_native T^(-1)m)_x
+       =ell^(-1) sum_r C(q_x e_r)
+          [Lambda(D_e)m_y-m_x].
+
+Here C(v) denotes exterior creation on the full16-dimensional CAR module;
+the adjoint must use the SAME moving positive pairing Q^(-1) and density.
+This identity is already the algebraic transport of the native raising
+operator in [ArchiveAffineExteriorLink](../../03_FORMALIZATION/D0/Geometry/ArchiveAffineExteriorLink.lean). Making an actually executed filter/transport realize it is the
+remaining application, not a consequence of an arbitrary effect readout
+or endpoint programmability. No new hypothetical writer is substituted.
+Original native admission, selected geometric test, joint stationary
+attainment and refinement remain; GR_closed=false and positive_gr=false.
+
+### Changed logical verification and parent substitution
+
+The companion TEMP checker uses the ACTUAL whitened RawZone G and
+X=(I-R_port) tensor I4+R_port tensor L_i as a two-stage noncommuting core.
+It retains all33 scene modes via bright3 plus dark multiplicities8,10,12,
+a physical spin4 and three fresh internal padding bits. Its passive
+padding gauge is a calculation only; every2/5-CX primitive still counts inN.
+
+It checks both heats, the analytic full gate-max nuclear-norm formula509, evaluated numerically,
+a numerical skew polar attainer and one finite-difference attainer control, the
+Duhamel trace-norm inequality, baseline neutrality for ALL raw rows, both
+identity padding blocks and N=6,7,10,18,34. Padding rows are included and
+nonzero. The noncommuting source-X^4 loop has endpointI but a nonzero full
+covector; it rejects the wrong endpoint-only baseline shortcut.
+This is a numerical logical regression, not the analytic proof or a new
+original-D0 physical certificate.
+
+The substituted parent premise is precise: the7bg heat budget no longer
+requires the FINITE compiled core to act in a homogeneous commuting fibre.
+On7bh's declared normalized same-scene Hodge, a finite noncommuting core
+plus genuinely commuting paid work padding has controlled complete HEAT
+value and all-row source.7bf/7bg feedback and source-error estimates retain
+their original hypotheses. Selected d_N, physical clock/control admission,
+genuine field/record/cut mapping, full joint stationary refinement and
+GR_closed remain separate. No new apparatus or Einstein selector is inferred.
+
+### Reproduction and pinned source review
+
+Final proof17884 UTF8 bytes, SHA256 d90bdd1491a82919b80ea4d2ce84bc4afe30ac38a6dfb37979a3dab9b891fd49. All three independent read-only reviews ACCEPT this exact final proof: full-covector derivation, SOURCE/price composition, and original-field/source typing. The temporal-row factor S_clock* was restored before this final pin; its unitarity leaves513 unchanged. These are scoped research reviews, not physical GR acceptance.
+
+The changed logical regression below passed with Python3.11.9, NumPy2.2.6 and SciPy1.16.3. It numerically evaluates the analytic full dual, not randomly sampled directions or an interval-certified physics claim. AllN rows are included. For N6 and N34, the full H01 dual is respectively about2.70307e-7 and4.77013e-8; the padding contribution is NONZERO. The wrong noncommuting identity loop has dual about8.20117e-7, so identity endpoint alone fails. The proof of508-513 is analytic and does not depend on these floating-point values. No old GR/root, source-amplifier, original-CAR or Lean replay was repeated.
+
+Checker6382bytes (excluding the fence separator newline), SHA256 fdb1aaf5d1cd4fe02d7a64042866a4e3742d7f64fb6b940bc9445aa6b349e77d. Save and run the code; it writes its JSON receipt alongside itself. The original Windows receipt is5941bytes, SHA256 ce1c52918bbad62bf5c1e7903cd980de2f4433f9b21ca58c924fc3f5d1137428; the same JSON below uses canonical LF (5756bytes, SHA256 cabfbd18a688caefda7f64e320ad94b2ee1cf50b74f92cbeda2836aa8b4ca7fd). Only line endings differ.
+
+```python
+from pathlib import Path
+import json, math, platform
+import numpy as np
+from scipy.linalg import eigh, expm
+
+# Logical verification of the theorem on the actual RawZone bright module.
+# Fresh3-wire padding is an INTERNAL factor; no original-incidence admission is inferred.
+p=(math.sqrt(5)-1)/2; beta=2*p*p; c=1/22; spin=4; pad=8; S=2
+sizes=np.array([9,11,13]); deg=np.array([24.,22.,20.])
+D=np.diag(deg); A=np.array([[0.,11,13],[9,0,13],[9,11,0.]])
+Wsqrt=np.diag(np.sqrt(sizes)); Wi=np.diag(1/np.sqrt(sizes))
+K=D@A-A@D; P=-K@K/2840; Rport=(710/567)*P@np.diag([1.,0,0])@P
+G3=np.eye(3)-P+math.sqrt(p)*P+p*K/math.sqrt(2840)
+G3=Wsqrt@G3@Wi; Rport=Wsqrt@Rport@Wi; Ah=Wsqrt@A@Wi
+Li=np.array([[0.,-1,0,0],[1,0,0,0],[0,0,0,-1],[0,0,1,0]])
+G=np.kron(G3,np.eye(4)); X=np.kron(np.eye(3)-Rport,np.eye(4))+np.kron(Rport,Li)
+core=[G,X]; mr=12; I=np.eye(mr); r=np.diag(1/np.sqrt(deg+2)); rr=np.kron(r,np.eye(4)); B=np.kron(r@Ah@r,np.eye(4))
+
+def cx(a,b):
+    out=np.zeros((8,8))
+    for k in range(8): out[k ^ (((k>>a)&1)<<b),k]=1
+    return out
+ca,cb,cc=cx(0,1),cx(1,2),cx(0,2)
+block2=[ca,ca]; block5=[ca,cb,ca,cb,cc]
+def prod(gs):
+    z=np.eye(gs[0].shape[0])
+    for g in gs: z=g@z
+    return z
+assert np.array_equal(prod(block2),np.eye(8)) and np.array_equal(prod(block5),np.eye(8))
+def padding(k):
+    assert k>=4
+    n5=0 if k%2==0 else 1
+    n2=(k-5*n5)//2
+    out=block2*n2+block5*n5
+    assert len(out)==k and np.array_equal(prod(out),np.eye(8))
+    return out,n2,n5
+
+# Gauge away the ACTUAL paid padding only for computation: the full96-dim
+# prefix conjugates commute with scene weights and the core, and close toI.
+def verify_padding_map(N):
+    ps,n2,n5=padding(N-S); pq=np.eye(8)
+    assert np.linalg.norm(np.kron(I,np.eye(8)))>0
+    for h in ps:
+        nxt=h@pq
+        assert np.linalg.norm(nxt.T@h@pq-np.eye(8))<1e-14
+        pq=nxt
+    assert np.array_equal(pq,np.eye(8))
+    for h in (ca,cb,cc):
+        hh=np.kron(I,h)
+        assert np.linalg.norm(hh@np.kron(rr,np.eye(8))-np.kron(rr,np.eye(8))@hh)<1e-14
+        for k in core: assert np.linalg.norm(hh@np.kron(k,np.eye(8))-np.kron(k,np.eye(8))@hh)<1e-14
+    return n2,n5
+
+Adef=sum(np.linalg.norm(g-I,2) for g in core)
+Kvalue=2*math.exp(2*beta)*c
+Kdual=Kvalue*(1+2*beta*c)
+
+def data(gs):
+    N=len(gs); n=N*mr
+    R=np.kron(np.eye(N),rr)
+    T=np.zeros((n,n))
+    for t,g in enumerate(gs): T[((t+1)%N)*mr:((t+1)%N+1)*mr,t*mr:(t+1)*mr]=g
+    L=np.eye(n)-np.kron(np.eye(N),B)-R@(T+T.T)@R
+    ev,V=eigh(L,driver='evr')
+    assert ev[0]>-3e-12 and ev[-1]<2+3e-12
+    E=(V*np.exp(-beta*ev))@V.T
+    angles=2*np.pi*np.arange(N)/N
+    zdark=sum((int(a)-1)*spin*np.exp(-beta*(1-2*np.cos(angles)/(d+2))).sum() for a,d in zip(sizes,deg))
+    Z0=pad*(np.trace(E)+zdark)
+    n0=33*spin*pad*N; n1=(359+33)*spin*pad*N
+    Z01=2*Z0+n1-n0
+    vals=[]; att=[]; raw=[]
+    for t,g in enumerate(gs):
+        Wt=rr@E[t*mr:(t+1)*mr,((t+1)%N)*mr:((t+1)%N+1)*mr]@rr
+        M=g@Wt
+        skew=(M-M.T)/2
+        u,s,vh=np.linalg.svd(skew)
+        vals.append(float(s.sum()))
+        mask=(s>1e-11).astype(float)
+        xt=-(u*mask)@vh
+        assert np.linalg.norm(xt+xt.T)<2e-8 and np.linalg.norm(xt,2)<1+2e-10
+        att.append(xt);raw.append(float(np.trace(M@xt)))
+    pref0=2*pad/Z0; pref01=4*pad/Z01
+    return {'H0':math.log(Z0)/beta,'H01':math.log(Z01)/beta,'Z0':Z0,'Z01':Z01,
+      'dual0':pref0*sum(vals),'dual01':pref01*sum(vals),
+      'pad_dual01':pref01*sum(vals[S:]),'attainer01':pref01*sum(raw),
+      'attainers':att,'eigen_range':[float(ev[0]),float(ev[-1])],
+      'n0':n0,'n1':n1,'index':n1-n0,'_E':E,'_L':L}
+
+results=[]
+for N in [6,7,10,18,34]:
+    n2,n5=verify_padding_map(N)
+    gs=core+[I]*(N-S); hs=[I]*N
+    dg,dh=data(gs),data(hs)
+    assert dh['dual0']<2e-12 and dh['dual01']<2e-12
+    assert dg['dual0']<=Kdual*Adef/N+1e-12
+    assert dg['dual01']<=Kdual*Adef/N+1e-12
+    assert abs(dg['H0']-dh['H0'])<=Kvalue*Adef/N+2e-12
+    assert abs(dg['H01']-dh['H01'])<=Kvalue*Adef/N+2e-12
+    assert abs(dg['attainer01']-dg['dual01'])<1e-12
+    assert dg['pad_dual01']>1e-13
+    if N==6:
+        eps=3e-4
+        plus=[expm(eps*k)@g for k,g in zip(dg['attainers'],gs)]
+        minus=[expm(-eps*k)@g for k,g in zip(dg['attainers'],gs)]
+        fd=(data(plus)['H01']-data(minus)['H01'])/(2*eps)
+        assert abs(fd-dg['attainer01'])<1e-10
+        trace_delta=pad*np.abs(np.linalg.eigvalsh(dg['_L']-dh['_L'])).sum()
+        trace_exp=pad*np.abs(np.linalg.eigvalsh(dg['_E']-dh['_E'])).sum()
+        assert trace_exp<=beta*trace_delta+2e-10
+        assert trace_delta<=2*c*(33*spin*pad)*Adef+2e-10
+    result={k:v for k,v in dg.items() if k!='attainers' and not k.startswith('_')}
+    result.update(N=N,padding_two_blocks=n2,padding_five_blocks=n5,
+      baseline_dual0=dh['dual0'],baseline_dual01=dh['dual01'],
+      value_difference0=dg['H0']-dh['H0'],value_difference01=dg['H01']-dh['H01'],
+      value_bound=Kvalue*Adef/N,dual_bound=Kdual*Adef/N,
+      total_raw_gate_rows=N,all_padding_rows_included=N-S)
+    if N==6:
+        result['attainer_central_difference01']=fd
+        result['trace_norm_Delta_difference']=float(trace_delta)
+        result['trace_norm_exp_difference']=float(trace_exp)
+    results.append(result)
+
+# Hostile control: a source-port quarter-turn loop closes toI but its
+# individual gates do NOT commute with scene weights. Calling it a zero
+# baseline would incorrectly set A=0 and predict a zero full covector.
+assert np.linalg.norm(np.linalg.matrix_power(X,4)-I)<2e-14
+wrong=data([X]*4)
+assert wrong['dual01']>1e-8
+assert np.linalg.norm(rr@X-X@rr)>1e-3
+out={'scope':'logical changed theorem checker, not original selected history/admission or GR closure',
+ 'python':platform.python_version(),'numpy':np.__version__,'beta':beta,'c':c,
+ 'core':['actual RawZone G','actual source X(scene,Li)'],'core_size':S,'defect_A':Adef,
+ 'physical_spin_dimension':spin,'fresh_internal_padding_dimension':pad,
+ 'padding_2_and_5_identity_exact':True,'full_gate_max_dual_uses_all_independent_real_skews':True,
+ 'dual_formula':'H0=2/Z0 sum_t ||skew(g_t(R exp(-beta Delta) R)_(t,t+1))||_1; H01=4/Z01',
+ 'full_scene_dark_multiplicities':[8,10,12],
+ 'wrong_noncommuting_identity_loop':{k:v for k,v in wrong.items() if k!='attainers' and not k.startswith('_')},
+ 'cases':results,'checks_passed':True}
+print(json.dumps(out,indent=2))
+Path(__file__).with_suffix('.json').write_text(json.dumps(out,indent=2),encoding='utf8')
+```
+
+```json
+{
+  "scope": "logical changed theorem checker, not original selected history/admission or GR closure",
+  "python": "3.11.9",
+  "numpy": "2.2.6",
+  "beta": 0.7639320225002104,
+  "c": 0.045454545454545456,
+  "core": [
+    "actual RawZone G",
+    "actual source X(scene,Li)"
+  ],
+  "core_size": 2,
+  "defect_A": 2.06819922313727,
+  "physical_spin_dimension": 4,
+  "fresh_internal_padding_dimension": 8,
+  "padding_2_and_5_identity_exact": true,
+  "full_gate_max_dual_uses_all_independent_real_skews": true,
+  "dual_formula": "H0=2/Z0 sum_t ||skew(g_t(R exp(-beta Delta) R)_(t,t+1))||_1; H01=4/Z01",
+  "full_scene_dark_multiplicities": [
+    8,
+    10,
+    12
+  ],
+  "wrong_noncommuting_identity_loop": {
+    "H0": 9.946485143427696,
+    "H01": 14.16175840643298,
+    "Z0": 1995.0781717422801,
+    "Z01": 49942.15634348456,
+    "dual0": 1.0264859982536557e-05,
+    "dual01": 8.201166944535118e-07,
+    "pad_dual01": 4.100583472267425e-07,
+    "attainer01": 8.201166944535153e-07,
+    "eigen_range": [
+      0.027728089050349247,
+      1.5932353388555804
+    ],
+    "n0": 4224,
+    "n1": 50176,
+    "index": 45952
+  },
+  "cases": [
+    {
+      "H0": 10.477248021721133,
+      "H01": 14.692519296239356,
+      "Z0": 2992.6221983525,
+      "Z01": 74913.244396705,
+      "dual0": 3.383252125351828e-06,
+      "dual01": 2.7030721989118625e-07,
+      "pad_dual01": 1.646597003838695e-11,
+      "attainer01": 2.703071930644234e-07,
+      "eigen_range": [
+        0.005494256130500443,
+        1.6118280014767452
+      ],
+      "n0": 6336,
+      "n1": 75264,
+      "index": 68928,
+      "N": 6,
+      "padding_two_blocks": 2,
+      "padding_five_blocks": 0,
+      "baseline_dual0": 7.299391741966971e-18,
+      "baseline_dual01": 5.831903528795174e-19,
+      "value_difference0": -1.2345746007724756e-06,
+      "value_difference01": -9.863721572855866e-08,
+      "value_bound": 0.14440803516566367,
+      "dual_bound": 0.15443693719924428,
+      "total_raw_gate_rows": 6,
+      "all_padding_rows_included": 4,
+      "attainer_central_difference01": 2.703052596568038e-07,
+      "trace_norm_Delta_difference": 5.718898335123341,
+      "trace_norm_exp_difference": 2.5846418937990183
+    },
+    {
+      "H0": 10.6790340576731,
+      "H01": 14.894305169918383,
+      "Z0": 3491.3930351393387,
+      "Z01": 87398.78607027867,
+      "dual0": 2.899929248760792e-06,
+      "dual01": 2.3169184005321965e-07,
+      "pad_dual01": 1.4075548015046554e-11,
+      "attainer01": 2.3169183951125882e-07,
+      "eigen_range": [
+        0.004399110946954948,
+        1.607812106047976
+      ],
+      "n0": 7392,
+      "n1": 87808,
+      "index": 80416,
+      "N": 7,
+      "padding_two_blocks": 0,
+      "padding_five_blocks": 1,
+      "baseline_dual0": 3.828717809544797e-18,
+      "baseline_dual01": 3.0589826787621513e-19,
+      "value_difference0": -1.0582065836928223e-06,
+      "value_difference01": -8.454617450581736e-08,
+      "value_bound": 0.12377831585628314,
+      "dual_bound": 0.13237451759935223,
+      "total_raw_gate_rows": 7,
+      "all_padding_rows_included": 5
+    },
+    {
+      "H0": 11.145927938218676,
+      "H01": 15.361198758365765,
+      "Z0": 4987.705545528658,
+      "Z01": 124855.41109105732,
+      "dual0": 2.029949978788406e-06,
+      "dual01": 1.6218428465170296e-07,
+      "pad_dual01": 9.852726631548235e-12,
+      "attainer01": 1.6218428435251925e-07,
+      "eigen_range": [
+        0.0025530438753098624,
+        1.6138828541891532
+      ],
+      "n0": 10560,
+      "n1": 125440,
+      "index": 114880,
+      "N": 10,
+      "padding_two_blocks": 4,
+      "padding_five_blocks": 0,
+      "baseline_dual0": 5.533950726078304e-18,
+      "baseline_dual01": 4.421391248525874e-19,
+      "value_difference0": -7.407445163920556e-07,
+      "value_difference01": -5.9182321265893734e-08,
+      "value_bound": 0.0866448210993982,
+      "dual_bound": 0.09266216231954658,
+      "total_raw_gate_rows": 10,
+      "all_padding_rows_included": 8
+    },
+    {
+      "H0": 11.91535100086236,
+      "H01": 16.130621518092866,
+      "Z0": 8977.872239900318,
+      "Z01": 224739.74447980063,
+      "dual0": 1.1277497045855409e-06,
+      "dual01": 9.010237855159899e-08,
+      "pad_dual01": 5.473736941467235e-12,
+      "attainer01": 9.010237838699285e-08,
+      "eigen_range": [
+        0.0009612989575993535,
+        1.6150879293780498
+      ],
+      "n0": 19008,
+      "n1": 225792,
+      "index": 206784,
+      "N": 18,
+      "padding_two_blocks": 8,
+      "padding_five_blocks": 0,
+      "baseline_dual0": 5.009869173510216e-18,
+      "baseline_dual01": 4.0026723793608615e-19,
+      "value_difference0": -4.115246792224525e-07,
+      "value_difference01": -3.2879068356805874e-08,
+      "value_bound": 0.04813601172188789,
+      "dual_bound": 0.051478979066414764,
+      "total_raw_gate_rows": 18,
+      "all_padding_rows_included": 16
+    },
+    {
+      "H0": 12.747871298389088,
+      "H01": 16.96314163743341,
+      "Z0": 16958.205628643642,
+      "Z01": 424508.41125728725,
+      "dual0": 5.97043872924616e-07,
+      "dual01": 4.770125866948233e-08,
+      "pad_dual01": 2.8978608022058992e-12,
+      "attainer01": 4.77012585859471e-08,
+      "eigen_range": [
+        0.0003067803788670021,
+        1.6156362267295459
+      ],
+      "n0": 35904,
+      "n1": 426496,
+      "index": 390592,
+      "N": 34,
+      "padding_two_blocks": 16,
+      "padding_five_blocks": 0,
+      "baseline_dual0": 6.415512311891254e-18,
+      "baseline_dual01": 5.125721459162235e-19,
+      "value_difference0": -2.1786599191386813e-07,
+      "value_difference01": -1.740655974913352e-08,
+      "value_bound": 0.025483770911587704,
+      "dual_bound": 0.027253577152807816,
+      "total_raw_gate_rows": 34,
+      "all_padding_rows_included": 32
+    }
+  ],
+  "checks_passed": true
+}
+```
+
 ## 8. Reproduction
 
 Run from this directory:
