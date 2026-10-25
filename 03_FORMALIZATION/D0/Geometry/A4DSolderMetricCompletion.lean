@@ -100,11 +100,12 @@ theorem solderMetric_expand (N : ℕ) (e : LocalCoframeField N) (x : ArchiveRole
     solderMetricMatrix N e x = roleLorentzMetric + centeredCoframeMatrix N e x +
       (centeredCoframeMatrix N e x).transpose +
       centeredCoframeMatrix N e x * roleLorentzMetric * (centeredCoframeMatrix N e x).transpose := by
-  unfold solderMetricMatrix solderMatrix D0.Algebra.finiteGram
-  rw [Matrix.transpose_add, roleLorentzMetric_transpose]
-  simp only [Matrix.add_mul, Matrix.mul_add, roleLorentzMetric_sq, Matrix.one_mul]
-  rw [Matrix.mul_assoc (centeredCoframeMatrix N e x) roleLorentzMetric roleLorentzMetric,
-    roleLorentzMetric_sq, Matrix.mul_one]
+  rw [solderMetricMatrix, solderMatrix]
+  have hExpand := D0.Algebra.finiteGram_smul_expand roleLorentzMetric
+    (centeredCoframeMatrix N e x) (1 : ℝ)
+    roleLorentzMetric_transpose roleLorentzMetric_sq
+  simp only [one_smul, one_pow] at hExpand
+  rw [hExpand]
   abel
 
 theorem solderMetric_minus_background (N : ℕ) (e : LocalCoframeField N)

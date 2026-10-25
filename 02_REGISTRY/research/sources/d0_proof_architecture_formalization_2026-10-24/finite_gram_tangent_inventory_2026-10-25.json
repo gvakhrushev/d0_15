@@ -1,8 +1,8 @@
 {
   "schema": "d0-lean-declaration-inventory-v1",
-  "snapshot_commit": "858f173b350581dc9e0e7f76bb0d7a952bf89441",
+  "snapshot_commit": "844985b1da25b33884afe5b2fce3701a983a3a29",
   "worktree_dirty": true,
-  "lean_source_digest": "5b2bfa98058fb71261314f61934a2a3947641bbeb9beddef4ea8afba4ebbe93c",
+  "lean_source_digest": "6ff55724920a14097e3a4078050c6e8f1f2b15ba6e98aca48623d6691a6e7c40",
   "collector_sha256": "38cf062919c9e100b58cd8800f81f03ea03d26200fe3f9d414d0ed5de74150a7",
   "toolchain": "leanprover/lean4:v4.30.0",
   "public_import_root": "D0.All",
@@ -1174,21 +1174,21 @@
         "declaration": {
           "end": {
             "column": 57,
-            "line": 185
+            "line": 186
           },
           "start": {
             "column": 0,
-            "line": 184
+            "line": 185
           }
         },
         "selection": {
           "end": {
             "column": 17,
-            "line": 184
+            "line": 185
           },
           "start": {
             "column": 4,
-            "line": 184
+            "line": 185
           }
         }
       },
@@ -1294,21 +1294,21 @@
         "declaration": {
           "end": {
             "column": 61,
-            "line": 195
+            "line": 196
           },
           "start": {
             "column": 0,
-            "line": 193
+            "line": 194
           }
         },
         "selection": {
           "end": {
             "column": 24,
-            "line": 194
+            "line": 195
           },
           "start": {
             "column": 4,
-            "line": 194
+            "line": 195
           }
         }
       },
@@ -1421,21 +1421,21 @@
         "declaration": {
           "end": {
             "column": 52,
-            "line": 268
+            "line": 269
           },
           "start": {
             "column": 0,
-            "line": 268
+            "line": 269
           }
         },
         "selection": {
           "end": {
             "column": 25,
-            "line": 268
+            "line": 269
           },
           "start": {
             "column": 7,
-            "line": 268
+            "line": 269
           }
         }
       },
@@ -3598,21 +3598,21 @@
         "declaration": {
           "end": {
             "column": 54,
-            "line": 150
+            "line": 151
           },
           "start": {
             "column": 0,
-            "line": 138
+            "line": 139
           }
         },
         "selection": {
           "end": {
             "column": 47,
-            "line": 141
+            "line": 142
           },
           "start": {
             "column": 8,
-            "line": 141
+            "line": 142
           }
         }
       },
@@ -6723,21 +6723,21 @@
         "declaration": {
           "end": {
             "column": 63,
-            "line": 355
+            "line": 356
           },
           "start": {
             "column": 0,
-            "line": 351
+            "line": 352
           }
         },
         "selection": {
           "end": {
             "column": 40,
-            "line": 352
+            "line": 353
           },
           "start": {
             "column": 8,
-            "line": 352
+            "line": 353
           }
         }
       },
@@ -6921,21 +6921,21 @@
         "declaration": {
           "end": {
             "column": 68,
-            "line": 291
+            "line": 292
           },
           "start": {
             "column": 0,
-            "line": 270
+            "line": 271
           }
         },
         "selection": {
           "end": {
             "column": 27,
-            "line": 270
+            "line": 271
           },
           "start": {
             "column": 4,
-            "line": 270
+            "line": 271
           }
         }
       },
@@ -9447,21 +9447,21 @@
         "declaration": {
           "end": {
             "column": 48,
-            "line": 224
+            "line": 225
           },
           "start": {
             "column": 0,
-            "line": 216
+            "line": 217
           }
         },
         "selection": {
           "end": {
             "column": 48,
-            "line": 217
+            "line": 218
           },
           "start": {
             "column": 8,
-            "line": 217
+            "line": 218
           }
         }
       },
@@ -9573,21 +9573,21 @@
         "declaration": {
           "end": {
             "column": 47,
-            "line": 233
+            "line": 234
           },
           "start": {
             "column": 0,
-            "line": 226
+            "line": 227
           }
         },
         "selection": {
           "end": {
             "column": 43,
-            "line": 227
+            "line": 228
           },
           "start": {
             "column": 8,
-            "line": 227
+            "line": 228
           }
         }
       },
@@ -9693,21 +9693,21 @@
         "declaration": {
           "end": {
             "column": 71,
-            "line": 199
+            "line": 200
           },
           "start": {
             "column": 0,
-            "line": 197
+            "line": 198
           }
         },
         "selection": {
           "end": {
             "column": 39,
-            "line": 197
+            "line": 198
           },
           "start": {
             "column": 8,
-            "line": 197
+            "line": 198
           }
         }
       },
@@ -9817,21 +9817,21 @@
         "declaration": {
           "end": {
             "column": 6,
-            "line": 214
+            "line": 215
           },
           "start": {
             "column": 0,
-            "line": 201
+            "line": 202
           }
         },
         "selection": {
           "end": {
             "column": 38,
-            "line": 203
+            "line": 204
           },
           "start": {
             "column": 8,
-            "line": 203
+            "line": 204
           }
         }
       },
@@ -13219,21 +13219,21 @@
         "declaration": {
           "end": {
             "column": 52,
-            "line": 266
+            "line": 267
           },
           "start": {
             "column": 0,
-            "line": 250
+            "line": 251
           }
         },
         "selection": {
           "end": {
             "column": 27,
-            "line": 250
+            "line": 251
           },
           "start": {
             "column": 4,
-            "line": 250
+            "line": 251
           }
         }
       },
@@ -13870,21 +13870,21 @@
         "declaration": {
           "end": {
             "column": 82,
-            "line": 349
+            "line": 350
           },
           "start": {
             "column": 0,
-            "line": 348
+            "line": 349
           }
         },
         "selection": {
           "end": {
             "column": 34,
-            "line": 348
+            "line": 349
           },
           "start": {
             "column": 8,
-            "line": 348
+            "line": 349
           }
         }
       },
@@ -13975,21 +13975,21 @@
         "declaration": {
           "end": {
             "column": 55,
-            "line": 346
+            "line": 347
           },
           "start": {
             "column": 0,
-            "line": 344
+            "line": 345
           }
         },
         "selection": {
           "end": {
             "column": 32,
-            "line": 345
+            "line": 346
           },
           "start": {
             "column": 4,
-            "line": 345
+            "line": 346
           }
         }
       },
@@ -14101,21 +14101,21 @@
         "declaration": {
           "end": {
             "column": 38,
-            "line": 342
+            "line": 343
           },
           "start": {
             "column": 0,
-            "line": 315
+            "line": 316
           }
         },
         "selection": {
           "end": {
             "column": 22,
-            "line": 315
+            "line": 316
           },
           "start": {
             "column": 4,
-            "line": 315
+            "line": 316
           }
         }
       },
@@ -15156,21 +15156,21 @@
         "declaration": {
           "end": {
             "column": 8,
-            "line": 248
+            "line": 249
           },
           "start": {
             "column": 0,
-            "line": 237
+            "line": 238
           }
         },
         "selection": {
           "end": {
             "column": 20,
-            "line": 238
+            "line": 239
           },
           "start": {
             "column": 4,
-            "line": 238
+            "line": 239
           }
         }
       },
@@ -15710,21 +15710,21 @@
         "declaration": {
           "end": {
             "column": 38,
-            "line": 298
+            "line": 299
           },
           "start": {
             "column": 0,
-            "line": 293
+            "line": 294
           }
         },
         "selection": {
           "end": {
             "column": 21,
-            "line": 295
+            "line": 296
           },
           "start": {
             "column": 4,
-            "line": 295
+            "line": 296
           }
         }
       },
@@ -15857,21 +15857,21 @@
         "declaration": {
           "end": {
             "column": 38,
-            "line": 309
+            "line": 310
           },
           "start": {
             "column": 0,
-            "line": 300
+            "line": 301
           }
         },
         "selection": {
           "end": {
             "column": 30,
-            "line": 300
+            "line": 301
           },
           "start": {
             "column": 8,
-            "line": 300
+            "line": 301
           }
         }
       },
@@ -15998,21 +15998,21 @@
         "declaration": {
           "end": {
             "column": 81,
-            "line": 313
+            "line": 314
           },
           "start": {
             "column": 0,
-            "line": 311
+            "line": 312
           }
         },
         "selection": {
           "end": {
             "column": 39,
-            "line": 311
+            "line": 312
           },
           "start": {
             "column": 16,
-            "line": 311
+            "line": 312
           }
         }
       },
@@ -16118,21 +16118,21 @@
         "declaration": {
           "end": {
             "column": 66,
-            "line": 191
+            "line": 192
           },
           "start": {
             "column": 0,
-            "line": 187
+            "line": 188
           }
         },
         "selection": {
           "end": {
             "column": 42,
-            "line": 188
+            "line": 189
           },
           "start": {
             "column": 8,
-            "line": 188
+            "line": 189
           }
         }
       },
@@ -16618,7 +16618,7 @@
         "declaration": {
           "end": {
             "column": 6,
-            "line": 108
+            "line": 109
           },
           "start": {
             "column": 0,
@@ -16642,9 +16642,8 @@
       "module": "D0.Geometry.A4DSolderMetricCompletion",
       "name": "D0.Geometry.solderMetric_expand",
       "proof_dependencies": [
-        "AddCommMonoidWithOne.toAddMonoidWithOne",
-        "AddMonoidWithOne.toOne",
         "D0.Algebra.finiteGram",
+        "D0.Algebra.finiteGram_smul_expand",
         "D0.Dyad",
         "D0.Geometry.ArchiveRolePhaseGroup",
         "D0.Geometry.LocalCoframeField",
@@ -16653,54 +16652,40 @@
         "D0.Geometry.roleLorentzMetric_sq",
         "D0.Geometry.roleLorentzMetric_transpose",
         "D0.Geometry.solderMatrix",
+        "D0.Geometry.solderMatrix.eq_1",
         "D0.Geometry.solderMetricMatrix",
-        "D0.Geometry.solderMetric_expand._abel_1_1",
+        "D0.Geometry.solderMetricMatrix.eq_1",
+        "D0.Geometry.solderMetric_expand._abel_1_3",
         "D0.Role",
-        "Distrib.toAdd",
-        "Distrib.toMul",
         "Eq",
+        "Eq.mp",
         "Eq.mpr",
         "Eq.trans",
         "Fin.fintype",
         "HAdd.hAdd",
         "HMul.hMul",
+        "HPow.hPow",
+        "HSMul.hSMul",
         "Matrix",
         "Matrix.add",
-        "Matrix.add_mul",
         "Matrix.instHMulOfFintypeOfMulOfAddCommMonoid",
-        "Matrix.mul_add",
-        "Matrix.mul_assoc",
-        "Matrix.mul_one",
-        "Matrix.one",
-        "Matrix.one_mul",
+        "Matrix.mulAction",
+        "Matrix.smul",
         "Matrix.transpose",
-        "Matrix.transpose_add",
-        "MulZeroClass.toZero",
+        "Monoid.toMulAction",
+        "Monoid.toMulOneClass",
+        "Monoid.toPow",
+        "MulOne.toOne",
+        "MulOneClass.toMulOne",
         "Nat",
-        "NonAssocSemiring.toAddCommMonoidWithOne",
-        "NonAssocSemiring.toNonUnitalNonAssocSemiring",
-        "NonUnitalCommRing.toNonUnitalCommSemiring",
-        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
-        "NonUnitalCommSemiring.toNonUnitalSemiring",
-        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
-        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
-        "NonUnitalNonAssocSemiring.toAddCommMonoid",
-        "NonUnitalNonAssocSemiring.toDistrib",
-        "NonUnitalNonAssocSemiring.toMulZeroClass",
-        "NonUnitalNormedCommRing.toNonUnitalCommRing",
-        "NonUnitalSemiring.toNonUnitalNonAssocSemiring",
-        "NormedCommRing.toNonUnitalNormedCommRing",
         "OfNat.ofNat",
         "One.toOfNat1",
         "Real",
         "Real.instAdd",
         "Real.instAddCommMonoid",
+        "Real.instMonoid",
         "Real.instMul",
         "Real.instOne",
-        "Real.instZero",
-        "Real.normedCommRing",
-        "Real.semiring",
-        "Semiring.toNonAssocSemiring",
         "congr",
         "congrArg",
         "congrFun'",
@@ -16709,7 +16694,12 @@
         "instDecidableEqProd",
         "instFintypeProd",
         "instHAdd",
-        "instOfNatNat"
+        "instHPow",
+        "instHSMul",
+        "instOfNatNat",
+        "instSMulOfMul",
+        "one_pow",
+        "one_smul"
       ],
       "proof_details_status": "collected",
       "type_dependencies": [
@@ -16766,14 +16756,14 @@
           "type": "D0.Role → ZMod (D0.archiveFibers N)"
         }
       ],
-      "conclusion_whnf": "D0.Geometry.roleLorentzMetric + D0.Geometry.centeredCoframeMatrix N e x +\n    ((D0.Geometry.centeredCoframeMatrix N e x).transpose +\n      D0.Geometry.centeredCoframeMatrix N e x * D0.Geometry.roleLorentzMetric *\n        (D0.Geometry.centeredCoframeMatrix N e x).transpose) =\n  D0.Geometry.roleLorentzMetric + D0.Geometry.centeredCoframeMatrix N e x +\n      (D0.Geometry.centeredCoframeMatrix N e x).transpose +\n    D0.Geometry.centeredCoframeMatrix N e x * D0.Geometry.roleLorentzMetric *\n      (D0.Geometry.centeredCoframeMatrix N e x).transpose",
+      "conclusion_whnf": "D0.Geometry.roleLorentzMetric +\n      (D0.Geometry.centeredCoframeMatrix N e x + (D0.Geometry.centeredCoframeMatrix N e x).transpose) +\n    D0.Geometry.centeredCoframeMatrix N e x * D0.Geometry.roleLorentzMetric *\n      (D0.Geometry.centeredCoframeMatrix N e x).transpose =\n  D0.Geometry.roleLorentzMetric + D0.Geometry.centeredCoframeMatrix N e x +\n      (D0.Geometry.centeredCoframeMatrix N e x).transpose +\n    D0.Geometry.centeredCoframeMatrix N e x * D0.Geometry.roleLorentzMetric *\n      (D0.Geometry.centeredCoframeMatrix N e x).transpose",
       "declaration_kind": "theorem",
       "declaration_ranges": null,
-      "elaborated_type": "∀ (N : ℕ) (e : D0.Geometry.LocalCoframeField N) (x : D0.Geometry.ArchiveRolePhaseGroup N),\n  D0.Geometry.roleLorentzMetric + D0.Geometry.centeredCoframeMatrix N e x +\n      ((D0.Geometry.centeredCoframeMatrix N e x).transpose +\n        D0.Geometry.centeredCoframeMatrix N e x * D0.Geometry.roleLorentzMetric *\n          (D0.Geometry.centeredCoframeMatrix N e x).transpose) =\n    D0.Geometry.roleLorentzMetric + D0.Geometry.centeredCoframeMatrix N e x +\n        (D0.Geometry.centeredCoframeMatrix N e x).transpose +\n      D0.Geometry.centeredCoframeMatrix N e x * D0.Geometry.roleLorentzMetric *\n        (D0.Geometry.centeredCoframeMatrix N e x).transpose",
+      "elaborated_type": "∀ (N : ℕ) (e : D0.Geometry.LocalCoframeField N) (x : D0.Geometry.ArchiveRolePhaseGroup N),\n  D0.Geometry.roleLorentzMetric +\n        (D0.Geometry.centeredCoframeMatrix N e x + (D0.Geometry.centeredCoframeMatrix N e x).transpose) +\n      D0.Geometry.centeredCoframeMatrix N e x * D0.Geometry.roleLorentzMetric *\n        (D0.Geometry.centeredCoframeMatrix N e x).transpose =\n    D0.Geometry.roleLorentzMetric + D0.Geometry.centeredCoframeMatrix N e x +\n        (D0.Geometry.centeredCoframeMatrix N e x).transpose +\n      D0.Geometry.centeredCoframeMatrix N e x * D0.Geometry.roleLorentzMetric *\n        (D0.Geometry.centeredCoframeMatrix N e x).transpose",
       "exists": true,
       "internal_name": true,
       "module": "D0.Geometry.A4DSolderMetricCompletion",
-      "name": "D0.Geometry.solderMetric_expand._abel_1_1",
+      "name": "D0.Geometry.solderMetric_expand._abel_1_3",
       "proof_dependencies": [
         "AddCommGroup.toAddCommMonoid",
         "AddCommMagma.toAdd",
@@ -16786,8 +16776,6 @@
         "D0.Geometry.centeredCoframeMatrix",
         "D0.Geometry.roleLorentzMetric",
         "D0.Role",
-        "Distrib.toAdd",
-        "Distrib.toMul",
         "Eq.symm",
         "Eq.trans",
         "Fin.fintype",
@@ -16806,13 +16794,6 @@
         "Matrix.transpose",
         "Matrix.zero",
         "Nat",
-        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
-        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
-        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
-        "NonUnitalNonAssocSemiring.toAddCommMonoid",
-        "NonUnitalNonAssocSemiring.toDistrib",
-        "NonUnitalNormedCommRing.toNonUnitalCommRing",
-        "NormedCommRing.toNonUnitalNormedCommRing",
         "OfNat.ofNat",
         "Real",
         "Real.instAdd",
@@ -16821,7 +16802,6 @@
         "Real.instAddMonoid",
         "Real.instMul",
         "Real.instZero",
-        "Real.normedCommRing",
         "Zero.toOfNat0",
         "instFintypeProd",
         "instHAdd",
@@ -16837,8 +16817,6 @@
         "D0.Geometry.centeredCoframeMatrix",
         "D0.Geometry.roleLorentzMetric",
         "D0.Role",
-        "Distrib.toAdd",
-        "Distrib.toMul",
         "Eq",
         "Fin.fintype",
         "HAdd.hAdd",
@@ -16848,19 +16826,11 @@
         "Matrix.instHMulOfFintypeOfMulOfAddCommMonoid",
         "Matrix.transpose",
         "Nat",
-        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
-        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
-        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
-        "NonUnitalNonAssocSemiring.toAddCommMonoid",
-        "NonUnitalNonAssocSemiring.toDistrib",
-        "NonUnitalNormedCommRing.toNonUnitalCommRing",
-        "NormedCommRing.toNonUnitalNormedCommRing",
         "OfNat.ofNat",
         "Real",
         "Real.instAdd",
         "Real.instAddCommMonoid",
         "Real.instMul",
-        "Real.normedCommRing",
         "instFintypeProd",
         "instHAdd",
         "instOfNatNat"
@@ -16911,21 +16881,21 @@
         "declaration": {
           "end": {
             "column": 41,
-            "line": 136
+            "line": 137
           },
           "start": {
             "column": 0,
-            "line": 129
+            "line": 130
           }
         },
         "selection": {
           "end": {
             "column": 33,
-            "line": 130
+            "line": 131
           },
           "start": {
             "column": 8,
-            "line": 130
+            "line": 131
           }
         }
       },
@@ -17117,21 +17087,21 @@
         "declaration": {
           "end": {
             "column": 66,
-            "line": 182
+            "line": 183
           },
           "start": {
             "column": 0,
-            "line": 176
+            "line": 177
           }
         },
         "selection": {
           "end": {
             "column": 46,
-            "line": 176
+            "line": 177
           },
           "start": {
             "column": 8,
-            "line": 176
+            "line": 177
           }
         }
       },
@@ -17269,21 +17239,21 @@
         "declaration": {
           "end": {
             "column": 6,
-            "line": 115
+            "line": 116
           },
           "start": {
             "column": 0,
-            "line": 110
+            "line": 111
           }
         },
         "selection": {
           "end": {
             "column": 37,
-            "line": 110
+            "line": 111
           },
           "start": {
             "column": 8,
-            "line": 110
+            "line": 111
           }
         }
       },
@@ -17546,21 +17516,21 @@
         "declaration": {
           "end": {
             "column": 51,
-            "line": 174
+            "line": 175
           },
           "start": {
             "column": 0,
-            "line": 152
+            "line": 153
           }
         },
         "selection": {
           "end": {
             "column": 47,
-            "line": 155
+            "line": 156
           },
           "start": {
             "column": 8,
-            "line": 155
+            "line": 156
           }
         }
       },
@@ -17716,21 +17686,21 @@
         "declaration": {
           "end": {
             "column": 6,
-            "line": 127
+            "line": 128
           },
           "start": {
             "column": 0,
-            "line": 117
+            "line": 118
           }
         },
         "selection": {
           "end": {
             "column": 32,
-            "line": 118
+            "line": 119
           },
           "start": {
             "column": 8,
-            "line": 118
+            "line": 119
           }
         }
       },

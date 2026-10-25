@@ -130,13 +130,13 @@ owning-module inventory records 173 declarations across the algebra module
 and three concrete consumers; the selected declarations report the standard
 `Classical.choice`, `Quot.sound`, and `propext` footprint. Its path is
 `sources/d0_proof_architecture_formalization_2026-10-24/finite_gram_tangent_inventory_2026-10-25.json`,
-captured at snapshot `858f173b350581dc9e0e7f76bb0d7a952bf89441` with
+captured at snapshot `844985b1da25b33884afe5b2fce3701a983a3a29` with
 `worktree_dirty=true`, Lean source digest
-`5b2bfa98058fb71261314f61934a2a3947641bbeb9beddef4ea8afba4ebbe93c`,
+`6ff55724920a14097e3a4078050c6e8f1f2b15ba6e98aca48623d6691a6e7c40`,
 collector SHA-256
 `38cf062919c9e100b58cd8800f81f03ea03d26200fe3f9d414d0ed5de74150a`, and
 inventory SHA-256
-`6e2b4d3c40cc9363ac5571994681c5ffebb315940d92b6b2d8c18ab6dcac6570`. The
+`63d0b2f1627212726f588e8a18423aa3072b2b1e59700ee0c3b50b9e96748dbe`. The
 generic module SHA-256 is
 `5608710839870914c5ddc007f5efbe5331453a1e560ef43f311060774f24dfc8`.
 ## Scientific boundary and reuse vertical
