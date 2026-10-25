@@ -1,9 +1,9 @@
 {
   "schema": "d0-lean-declaration-inventory-v1",
-  "snapshot_commit": "cacb895eb20616a36043b25d0e500b9a28128ac1",
+  "snapshot_commit": "1fa15d5584144813c8b2811ebeb48ba7fbccd23b",
   "worktree_dirty": false,
   "claim_registry_sha256": null,
-  "lean_source_digest": "11f1d22fac61ca5f1090ba2bad4432661ab28e5c11abe32bdda79d13c2c317cd",
+  "lean_source_digest": "aef360e0b6f96eae699c8d9f96ed448289c817327711892f23ef999ec20761a6",
   "collector_sha256": "41b6ae7c600534ec0142643958aca0a5d5281afa53c3863e7ec828f5caafdc6d",
   "toolchain": "leanprover/lean4:v4.30.0",
   "public_import_root": "D0.All",
@@ -915,21 +915,21 @@
         "declaration": {
           "end": {
             "column": 55,
-            "line": 154
+            "line": 119
           },
           "start": {
             "column": 0,
-            "line": 146
+            "line": 111
           }
         },
         "selection": {
           "end": {
             "column": 37,
-            "line": 148
+            "line": 113
           },
           "start": {
             "column": 8,
-            "line": 148
+            "line": 113
           }
         }
       },
@@ -1090,21 +1090,21 @@
         "declaration": {
           "end": {
             "column": 6,
-            "line": 218
+            "line": 183
           },
           "start": {
             "column": 0,
-            "line": 208
+            "line": 173
           }
         },
         "selection": {
           "end": {
             "column": 46,
-            "line": 208
+            "line": 173
           },
           "start": {
             "column": 8,
-            "line": 208
+            "line": 173
           }
         }
       },

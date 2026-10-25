@@ -1248,7 +1248,7 @@ class ProofArchitectureTests(unittest.TestCase):
         summary_path = (
             proof.ROOT
             / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
-            / "proof_architecture_cold_start_summary_2026-10-25_cacb895e.json"
+            / "proof_architecture_cold_start_summary_2026-10-25_1fa15d55.json"
         )
         summary_bytes = summary_path.read_bytes()
         summary = json.loads(summary_bytes)
@@ -1258,7 +1258,7 @@ class ProofArchitectureTests(unittest.TestCase):
         )
         self.assertEqual(
             summary["snapshot_commit"],
-            "cacb895eb20616a36043b25d0e500b9a28128ac1",
+            "1fa15d5584144813c8b2811ebeb48ba7fbccd23b",
         )
         self.assertFalse(summary["worktree_dirty"])
         self.assertEqual(summary["search_cases_found_all_sources"], 21)
@@ -1280,7 +1280,7 @@ class ProofArchitectureTests(unittest.TestCase):
             for row in summary["cases"]
         ))
         self.assertEqual(
-            sum(row["required_source_count"] for row in summary["cases"]), 126
+            sum(row["required_source_count"] for row in summary["cases"]), 127
         )
         self.assertTrue(summary["semantic_scope_review_is_manual"])
         replay = summary["replay"]
@@ -2045,6 +2045,10 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertEqual(inventory["public_import_root"], "D0.All")
         self.assertEqual(inventory["toolchain"], "leanprover/lean4:v4.30.0")
         declarations = {row["name"]: row for row in inventory["declarations"]}
+        self.assertEqual(len(declarations), 22)
+        self.assertEqual(
+            set(inventory["request"]["full_names"]), set(declarations)
+        )
 
         generic_diagonal = declarations[
             "D0.Topology.abstract_shift_commute_implies_diagonal_constant"
@@ -2114,6 +2118,14 @@ class ProofArchitectureTests(unittest.TestCase):
             "D0.Topology.shiftMatrix",
             spectrum_adapter["proof_dependencies"],
         )
+        self.assertIn(
+            "D0.Spectrum.shift_g_one_eq_finRotate",
+            declarations["D0.Spectrum.shift_g_eq_finRotate_iterate"]["proof_dependencies"],
+        )
+        self.assertIn(
+            "D0.Spectrum.shift_g_eq_finRotate_iterate",
+            declarations["D0.Matter.diag_eq_of_comm_shift_k"]["proof_dependencies"],
+        )
         flavor_step = declarations["D0.Spectrum.flavor_blindness_step_of_commute"]
         self.assertNotIn("h_off", flavor_step["elaborated_type"])
         self.assertIn(
@@ -2142,6 +2154,8 @@ class ProofArchitectureTests(unittest.TestCase):
                 "D0.Matter.partial_trace_density_uniform_under_shift",
                 "D0.Topology.commute_with_shift_entries",
                 "D0.Spectrum.cyclicShiftMatrix_eq_topology_shift",
+                "D0.Spectrum.shift_g_one_eq_finRotate",
+                "D0.Spectrum.shift_g_eq_finRotate_iterate",
                 "D0.Spectrum.flavor_blindness_step_of_commute",
                 "D0.Spectrum.flavor_blindness_step",
                 "D0.Spectrum.flavor_blindness_step_k",

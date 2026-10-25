@@ -1,9 +1,9 @@
 {
   "schema": "d0-lean-declaration-inventory-v1",
-  "snapshot_commit": "cacb895eb20616a36043b25d0e500b9a28128ac1",
+  "snapshot_commit": "1fa15d5584144813c8b2811ebeb48ba7fbccd23b",
   "worktree_dirty": false,
   "claim_registry_sha256": null,
-  "lean_source_digest": "11f1d22fac61ca5f1090ba2bad4432661ab28e5c11abe32bdda79d13c2c317cd",
+  "lean_source_digest": "aef360e0b6f96eae699c8d9f96ed448289c817327711892f23ef999ec20761a6",
   "collector_sha256": "3c41633e10ad03c3bb0a8e440f94506a632630561697a6c44f6a76cda6155b2a",
   "toolchain": "leanprover/lean4:v4.30.0",
   "public_import_root": "D0.All",
@@ -4667,21 +4667,21 @@
         "declaration": {
           "end": {
             "column": 62,
-            "line": 14
+            "line": 16
           },
           "start": {
             "column": 0,
-            "line": 12
+            "line": 14
           }
         },
         "selection": {
           "end": {
             "column": 20,
-            "line": 13
+            "line": 15
           },
           "start": {
             "column": 4,
-            "line": 13
+            "line": 15
           }
         }
       },
@@ -4762,21 +4762,21 @@
         "declaration": {
           "end": {
             "column": 61,
-            "line": 37
+            "line": 56
           },
           "start": {
             "column": 0,
-            "line": 35
+            "line": 54
           }
         },
         "selection": {
           "end": {
             "column": 17,
-            "line": 36
+            "line": 55
           },
           "start": {
             "column": 4,
-            "line": 36
+            "line": 55
           }
         }
       },
@@ -4857,21 +4857,21 @@
         "declaration": {
           "end": {
             "column": 48,
-            "line": 195
+            "line": 209
           },
           "start": {
             "column": 0,
-            "line": 179
+            "line": 193
           }
         },
         "selection": {
           "end": {
             "column": 29,
-            "line": 179
+            "line": 193
           },
           "start": {
             "column": 8,
-            "line": 179
+            "line": 193
           }
         }
       },

@@ -1,9 +1,9 @@
 {
   "schema": "d0-lean-declaration-inventory-v1",
-  "snapshot_commit": "cacb895eb20616a36043b25d0e500b9a28128ac1",
+  "snapshot_commit": "1fa15d5584144813c8b2811ebeb48ba7fbccd23b",
   "worktree_dirty": false,
   "claim_registry_sha256": null,
-  "lean_source_digest": "11f1d22fac61ca5f1090ba2bad4432661ab28e5c11abe32bdda79d13c2c317cd",
+  "lean_source_digest": "aef360e0b6f96eae699c8d9f96ed448289c817327711892f23ef999ec20761a6",
   "collector_sha256": "5da565478afbef6b516b2893320ce1693d851f6326eb92cf689da4b3c44ac4e2",
   "toolchain": "leanprover/lean4:v4.30.0",
   "public_import_root": "D0.All",

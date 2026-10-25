@@ -6998,3 +6998,43 @@ inventory tests pass **16/16**, repository validation passes with zero
 warnings, generated Lean views have zero stale entries, and formalization-debt
 findings remain five against the five-finding baseline. No claim status or
 physical interpretation changed.
+
+### Lifted tensor shift covariance: compiled evidence
+
+The generalized entrywise shift covariance and its three consumers are
+recorded at clean Lean-source snapshot
+`1fa15d5584144813c8b2811ebeb48ba7fbccd23b`, Lean 4.30.0, with common source
+digest
+`aef360e0b6f96eae699c8d9f96ed448289c817327711892f23ef999ec20761a6`.
+The 22-declaration ArchiveShift inventory has SHA-256
+`efdff53749a0d65cad65d553e33afea48af556aef5d22f67a174dd5ddeb1f0df`; collector
+SHA-256 is
+`d10e1c5a6bd9ac9930968f6a5db22a94255d93374ddb4f759de6bd72f6c95386`. The
+refreshed nonvacuum, CAR/Hodge, partial-trace, SourcePort and flat-tensor
+inventories contain 15, 36, 9, 73 and 4 declarations and have SHA-256 values
+`2c054839ba7332b9c099a57f4d0225944ce8148805a48ca837f60600d00b03a9`,
+`8dde2b4c81dacf8d9bb55867b48489e66427486dd437045011a2a0387219e641`,
+`dfea67d5828e37a6deab579aef04fd08c7d4f08cebc6fcc35bb13332118edf1a`,
+`2fcd65a99793ed52ce92a8a72da64ac431d86dbd29f98071eab520778f20a774` and
+`e99790dac9b9f32f478ded4936746049aa2f19570b0483c20b4f78d7310f153f`.
+
+The clean-snapshot cold-start replay found every required source in **21/21**
+cases, passed **22/22** benchmarks and resolved **127/127** required source
+records. Its compact summary
+`proof_architecture_cold_start_summary_2026-10-25_1fa15d55.json` has SHA-256
+`46f64627a03c2ebd15e38215a96eb82ef9d0a6445505cc9055a9cee94ffdcb93`; the
+6,966,448-byte full output has SHA-256
+`9498779977407b2953a0c380c656567f7bf729c42df332bced3394c88c8256c5`. The
+replay binds `formal_support.csv` SHA-256
+`b538abd4bfbb919f948cbf619dbf2e24859223532e0443ece644c512d050568a`, runner
+SHA-256 `1ae378b9ca27e4389f1006ca9f98424a0ae1573c7cea79c8a515ceab6e6be8b0`
+and search-engine SHA-256
+`aaed4194af38484de97db60c821374955f90dc5cc290d20a6fb8e53f94624262`.
+
+The proof-architecture regression passes **56/56**, compiled declaration
+inventory tests pass **16/16**, `validate_repo.py` reports 889 claims, 31
+assumptions, 58 aliases, 202 formal-support rows and zero warnings, generated
+Lean views have zero stale entries, and formalization-debt findings remain
+five against baseline five. The three narrow builds pass: Spectrum **2,949**,
+Matter **2,981** and Geometry **1,280** jobs. This remains finite algebraic
+covariance; no physical selector, claim status or GR closure changed.
