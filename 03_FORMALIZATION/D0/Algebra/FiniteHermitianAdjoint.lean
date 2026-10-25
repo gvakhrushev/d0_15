@@ -107,6 +107,61 @@ theorem finiteHermitianPairing_adjoint
             intro i hi
             rw [← Finset.mul_sum]
 
+/-- The equivalent right-operator form of the Hermitian-adjoint identity. -/
+theorem finiteHermitianPairing_adjoint_right
+    (A : (ι → K) →ₗ[K] (ι → K)) (x y : ι → K) :
+    finiteHermitianPairing (finiteHermitianAdjoint A x) y =
+      finiteHermitianPairing x (A y) := by
+  have h := finiteHermitianPairing_adjoint A y x
+  calc
+    finiteHermitianPairing (finiteHermitianAdjoint A x) y =
+        star (finiteHermitianPairing y (finiteHermitianAdjoint A x)) :=
+      (finiteHermitianPairing_conj y (finiteHermitianAdjoint A x)).symm
+    _ = star (finiteHermitianPairing (A y) x) := congrArg star h.symm
+    _ = finiteHermitianPairing x (A y) := finiteHermitianPairing_conj (A y) x
+
+omit [DecidableEq ι] in
+/-- Additivity of the finite Hermitian pairing in its conjugate-linear
+left argument. -/
+theorem finiteHermitianPairing_add_left (x y z : ι → K) :
+    finiteHermitianPairing (x + y) z =
+      finiteHermitianPairing x z + finiteHermitianPairing y z := by
+  simp [finiteHermitianPairing, Pi.add_apply, star_add,
+    Finset.sum_add_distrib, add_mul]
+
+omit [DecidableEq ι] in
+/-- Additivity of the finite Hermitian pairing in its linear right argument. -/
+theorem finiteHermitianPairing_add_right (x y z : ι → K) :
+    finiteHermitianPairing x (y + z) =
+      finiteHermitianPairing x y + finiteHermitianPairing x z := by
+  simp [finiteHermitianPairing, Pi.add_apply, Finset.sum_add_distrib, mul_add]
+
+/-- The finite Hermitian Hodge--Dirac operator `A + A†`. -/
+noncomputable def finiteHermitianHodgeDirac
+    (A : (ι → K) →ₗ[K] (ι → K)) : (ι → K) →ₗ[K] (ι → K) :=
+  A + finiteHermitianAdjoint A
+
+/-- The finite Hermitian Hodge--Dirac operator is self-adjoint for the standard
+finite-coordinate Hermitian pairing. -/
+theorem finiteHermitianHodgeDirac_pairing_self_adjoint
+    (A : (ι → K) →ₗ[K] (ι → K)) (x y : ι → K) :
+    finiteHermitianPairing (finiteHermitianHodgeDirac A x) y =
+      finiteHermitianPairing x (finiteHermitianHodgeDirac A y) := by
+  unfold finiteHermitianHodgeDirac
+  change finiteHermitianPairing (A x + finiteHermitianAdjoint A x) y =
+    finiteHermitianPairing x (A y + finiteHermitianAdjoint A y)
+  rw [finiteHermitianPairing_add_left]
+  calc
+    finiteHermitianPairing (A x) y +
+        finiteHermitianPairing (finiteHermitianAdjoint A x) y =
+      finiteHermitianPairing x (finiteHermitianAdjoint A y) +
+        finiteHermitianPairing x (A y) := by
+          rw [finiteHermitianPairing_adjoint A x y,
+            finiteHermitianPairing_adjoint_right A x y]
+    _ = finiteHermitianPairing x (A y + finiteHermitianAdjoint A y) := by
+          rw [finiteHermitianPairing_add_right]
+          abel
+
 /-- Nondegeneracy makes the adjoint identity characterize its operator. -/
 theorem finiteHermitianAdjoint_unique
     (A B : (ι → K) →ₗ[K] (ι → K))

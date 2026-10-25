@@ -122,6 +122,36 @@ noncomputable def cubicalWeightedHodgeDirac (N : ℕ)
     (w : ArchiveCochainBasis N → ℝ) (ψ : ArchiveCochain N) : ArchiveCochain N :=
   cubicalWeightedHodgeDiracₗ N w ψ
 
+/-- At the unit profile, the weighted cubical Hodge--Dirac built from the
+registered finite cubical coboundary is exactly the generic Hermitian
+Hodge--Dirac specialization. -/
+theorem cubicalWeightedHodgeDirac_unit_profile_eq_finiteHermitianHodgeDirac
+    (N : ℕ) :
+    cubicalWeightedHodgeDiracₗ N (fun _ => (1 : ℝ)) =
+      D0.Algebra.finiteHermitianHodgeDirac (cubicalCoboundaryₗ N) := by
+  change cubicalCoboundaryₗ N +
+      D0.Algebra.finiteWeightedAdjoint (fun _ => (1 : ℝ))
+        (cubicalCoboundaryₗ N) =
+    cubicalCoboundaryₗ N +
+      D0.Algebra.finiteHermitianAdjoint (cubicalCoboundaryₗ N)
+  rw [D0.Algebra.finiteWeightedAdjoint_one_eq_finiteHermitianAdjoint]
+
+/-- The same concrete unit-profile cubical Hodge--Dirac application is
+self-adjoint under the standard finite Hermitian pairing. -/
+theorem cubicalWeightedHodgeDirac_unit_profile_hermitian_self_adjoint
+    (N : ℕ) (ψ φ : ArchiveCochain N) :
+    D0.Algebra.finiteHermitianPairing
+        (cubicalWeightedHodgeDirac N (fun _ => (1 : ℝ)) ψ) φ =
+      D0.Algebra.finiteHermitianPairing ψ
+        (cubicalWeightedHodgeDirac N (fun _ => (1 : ℝ)) φ) := by
+  change D0.Algebra.finiteHermitianPairing
+      (cubicalWeightedHodgeDiracₗ N (fun _ => (1 : ℝ)) ψ) φ =
+    D0.Algebra.finiteHermitianPairing ψ
+      (cubicalWeightedHodgeDiracₗ N (fun _ => (1 : ℝ)) φ)
+  rw [cubicalWeightedHodgeDirac_unit_profile_eq_finiteHermitianHodgeDirac]
+  exact D0.Algebra.finiteHermitianHodgeDirac_pairing_self_adjoint
+    (cubicalCoboundaryₗ N) ψ φ
+
 /-- The constructed weighted cubical Hodge-Dirac is self-adjoint for its
 supplied diagonal bilinear pairing. Nonzero weights are the only required
 algebraic condition. -/

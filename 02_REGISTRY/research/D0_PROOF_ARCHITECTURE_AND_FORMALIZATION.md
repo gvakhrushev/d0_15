@@ -3072,6 +3072,83 @@ assembly contract
 presupposition edges
 `7ff9d1e4ac3447f321afd603eab66554468644bb5fddb33551fdfa22e3e2585d`.
 
+### Generic Hermitian Hodge--Dirac and concrete cubical application (25 October 2026)
+
+`D0.Algebra.FiniteHermitianAdjoint` now owns the equivalent right-operator
+adjoint identity, additivity of its finite sesquilinear pairing, the generic
+operator `finiteHermitianHodgeDirac A = A + A†`, and its self-adjointness proof.
+The right-operator identity is derived from conjugate symmetry and the existing
+left-form adjoint theorem; the Hodge result is therefore a composition of
+already established adjoint laws, not a premise asserting self-adjointness.
+
+The actual consumer is the registered finite cubical coboundary in
+`D0.Geometry.ArchiveWeightedHodgeDirac`. At profile `w = 1`, its existing
+weighted cubical Hodge--Dirac is proved equal as a linear operator to the new
+generic Hermitian specialization. The pointwise application then proves
+self-adjointness for the standard finite Hermitian pairing for every lattice
+size `N`. The exact type carries no claim about a nonconstant profile or its
+physical/geometric origin; the arbitrary nonzero profile continues to use the
+separate bilinear weighted API.
+
+The narrow build `python3 tools/lean_task_build.py narrow
+D0.Geometry.ArchiveWeightedHodgeDirac` passes all 2,989 dependency jobs.
+Three exact-declaration inventories record the generic theorem and both
+concrete application declarations, with elaborated types, proof dependencies
+and trust footprints:
+
+- `sources/d0_proof_architecture_formalization_2026-10-24/finite_hermitian_hodge_dirac_self_adjoint_2026-10-25.json`, SHA-256 `db29932e9a252f6d85426b6f3705f1bc9ee70b221059774609c71a490d0922f2`, collector `687214e1bcf7ffce794095a40b9152053805424e49f9847fd52e9ddb1a11b824`, public import root `D0.Algebra.FiniteHermitianAdjoint`;
+- `sources/d0_proof_architecture_formalization_2026-10-24/cubical_unit_profile_hermitian_hodge_equality_2026-10-25.json`, SHA-256 `33dca7028428c2342198f74f493b7ee4d4146e2b22a0fdf3209b633d132e4d88`, collector `28949a22bba7399afa6901c9182c342b0052799b02d8f9380378f7f3c6a9e41b`, public import root `D0.Geometry.ArchiveWeightedHodgeDirac`;
+- `sources/d0_proof_architecture_formalization_2026-10-24/cubical_unit_profile_hermitian_hodge_self_adjoint_2026-10-25.json`, SHA-256 `adda5d8fffa98b7f2ee980ac75edee56bcbdc3beaeb93e6ae9fd47198e9cc4e6`, collector `7ef0ecb23290c4f883a7a7667f2b1c90e3ab31e3ea35c55f015e2ff90c6ae98e`, public import root `D0.Geometry.ArchiveWeightedHodgeDirac`.
+
+All three were built at snapshot `e063c098ce6b62a496b7226e664fb1bae25deab3`
+with `worktree_dirty=true`, Lean source digest
+`6901e9eadb25230df7bac4f3814c2caf0159c043ad5e3c72226c6fdb6e467e65`, and
+toolchain `leanprover/lean4:v4.30.0`. Their selected declarations report
+`Classical.choice`, `Quot.sound`, and `propext`, matching the explicit trust
+boundary.
+
+The existing unit-profile cold-start case now asks for the generic Hodge
+self-adjointness theorem, the exact cubical operator equality, and its concrete
+pairing application. Search replay for the expanded case is recorded in the
+following checkpoint. C0 remains unfrozen and independently unaccepted; this
+algebraic slice changes no claim, assumption, assembly result, physical source,
+or GR status.
+
+### Cold-start replay after the Hermitian Hodge--Dirac application (25 October 2026)
+
+The existing `real-unit-profile-weighted-hermitian-bridge` case now checks
+five exact-name lookups across the generic weighted/Hermitian bridge, generic
+Hermitian Hodge--Dirac theorem, concrete operator equality, and concrete
+self-adjoint application. Its required sources include all three Lean modules,
+all five compiled inventories, and this primary artifact. Replay found every
+required source directly in all 18/18 real cases; the 19/19 total benchmark
+also passed its exact-source-versus-unrelated-prose impact control. Semantic
+scope review remains explicitly manual.
+
+Replay used candidate limit 18 at HEAD
+`e063c098ce6b62a496b7226e664fb1bae25deab3`, `worktree_dirty=true`. Runner
+SHA-256 is
+`f216047eabcbf9d0bab51bc181280a4936ed7771c8a2b709f6b980ee3242c02b`; the
+primary artifact at replay time had SHA-256
+`7a6dcf1e5473f234d81c4dbee77925ec6b0b282388273847fd1e7d8d891ef410`. The
+authority digests remained: `claims.csv`
+`e64c1223d0e69c79374b592d4a289d341e64b976337ba8129fb9ab804812f718`,
+`assumptions.csv`
+`2bc9f8c040a776d784fdbfdf62569b72e4f70ff0a182fc66d0ced31cb5f13a36`,
+`formal_support.csv`
+`aa783fa732b9a5a6e5fa351e064cb2013c394848d6e1e43f273efbeb5c3289c2`,
+`aliases.csv`
+`8cda9e7ebfa26a01a04a4d51b56eb6b93425816a5fe073aa74cbae94041f672f`,
+assembly applications
+`d841fe9ccbb5e578836740b46d436147f74d9eb9c92413bbc924b942be6ee511`,
+assembly contract
+`72fb3bbbc320b4af217cbe7c09580b44556b354e9668cbd11e76933fa8209ba6`, and
+presupposition edges
+`7ff9d1e4ac3447f321afd603eab66554468644bb5fddb33551fdfa22e3e2585d`.
+The new case found all three Lean module sources, all five exact compiled
+declaration inventories, and this artifact as direct content; this is retrieval
+evidence, not scientific acceptance or a C0 freeze.
+
 ### Cold-start case for the finite-adjoint application (25 October 2026)
 
 The replay above was extended with the real case
