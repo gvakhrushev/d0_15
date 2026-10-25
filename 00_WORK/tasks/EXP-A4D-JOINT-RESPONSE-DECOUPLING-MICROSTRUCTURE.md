@@ -10888,3 +10888,66 @@ native_valuation_map both ACCEPT the exact19488-byte proof
 Removing the compatibility paragraph and reversing only section/equation
 renumbering restores the previously accepted18181 bytes exactly.
 No independent calculation replay or physical promotion is claimed.
+
+
+### 25 October: join the internal field catalogue and complete query source
+
+Phase: native realization / global source composition. SAME PR334 and
+constitutive/native-programme-v1, input d29871e0d39434f810eaac2da523d3912f491105.
+Consume7ar's internal mean geometry and same-point cofield,7as's
+unfrozen query,7aq's middle/whole heat and7al's original open-field
+reserve. The exact missing parent application is their SAME report,
+controlled source preparation and local-support field lift.
+
+Primary7at402--410 matches the original finite I_h=Phi_h with actual
+quadrature mu_s=c_s, preserving g_h versus continuum gbar_h. A positive
+extension on genuine SIGN probabilities supplies one Bernstein report
+on the whole regular field chart. Its genuine O(tau) primary gradient
+debt stays in the joint bound. A polynomial-size, unconditioned sampler
+and coefficient evaluator permit simultaneous weak strength and
+compiler accuracy with the true paid lengths. Retained request labels
+close every controlled-source row. The complete bound406 includes
+branch gradients, packet errors, the whole-table2nL_pref eta debt,
+request rows, Golden coin source and4M_raw Delta.
+
+Equation407 realizes the formerly global key lift as actual local
+Walsh identity cells built only from the owned native signed-G words
+and CNOT. The exact new clock and raw paired-Dirac norm are retained.
+Equations408--410 put the full Book derivative and physical cofield
+on the SAME execution and actual mean-readout point. The physical
+restriction is estimated directly, never by multiplying a vanishing
+operator residual by an uncontrolled delta^-1 lift. Executable source
+catalogues retain the original FPTEAS hypothesis.
+
+Write paths: existing primary7at and this brief only. No new task or
+claim/status/governance change. The substituted premise is a supporting
+source/interface application: joint normalized asymptotic stationarity
+on the specified local comparison graph and its original off-shell
+Palatini restriction. Original physical admission of the graph and
+stationary/constraint law, exact finite joint-root existence where
+required, and arbitrary-sequence compactness remain. No native
+continuous-angle grammar or physical GR closure is inferred.
+
+Proof checkpoint:17840 UTF-8bytes, SHA256
+848f0b30a4289ef6b8311e7edd8fab3448267df4d2c8082216cc1336a6b56cce.
+Three read-only reviewers examined the composition. Review corrected
+the quadrature double-count in402, retained FPTEAS, specified full
+native address exclusion for permanent labels, and kept tau_(0,h).
+The final exact pin was accepted by physical_query_binding; the other
+reviewers accepted the proof before these scope clarifications.
+Complete7at slice including this new checker: 21593 UTF-8bytes,
+SHA256 d9d5df6b35cbc91847813862e5e790e5621b4b7d2f78085359fdf3aca423e5ea.
+Embedded checker including final newline: 3242 bytes, SHA256
+32cc787fbf2604acb17a36d8b33aa9dd4e4b448ac5faf9369b005a8d6e5bd7d5.
+The first complete run passed in Python3.11.9 / SymPy1.12.1: actual
+96-stage full64-column identity and Walsh lift, first-distinct law,
+and request-label hostile control. No old expensive replay or
+independent physical acceptance is claimed.
+
+Removing only7at and this brief tail restores d29871e0 byte-for-byte;
+all prior source and evidence files remain unchanged. GR_closed=false.
+
+Affected structural validation PASS: work, agent protocol, assembly,
+repository(warnings0), and diff whitespace. No mathematical replay was
+needed after the final scope clarifications. This is local structural
+validation, not remote CI or accepted physical closure.

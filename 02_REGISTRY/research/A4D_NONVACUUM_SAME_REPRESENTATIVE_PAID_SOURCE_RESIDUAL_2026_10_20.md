@@ -11374,6 +11374,418 @@ print('PASS complete-vector conditional, unsymmetrized hostile control, real SIG
 ```
 
 
+## 7at. One internal catalogue, one open-field source and all local implementation rows
+
+25 October2026; SAME PR334 / constitutive/native-programme-v1, input
+d29871e0d39434f810eaac2da523d3912f491105. Compose7ar's SAME-point
+field source with7as's unfrozen native query. The old exact-primary
+report and the open-field report were different; their equations were
+not interchangeable. We now use ONE positive open-field report, retain
+its genuine primary gradient defect, and suppress that defect together
+with the real compiler length. A local native-word lift supplies the
+previously global request-matrix comparison. No new action or field
+constraint is introduced.
+
+The resulting theorem is joint normalized ASYMPTOTIC stationarity of
+an explicit family on a specified local finite-matrix comparison graph,
+with the full same-programme off-shell Palatini source on physical tests.
+It is not exact finite on-shell existence or a proof that the fixed
+Golden grammar physically admits continuous gate calibration. Those
+original physical requirements remain, rather than being renamed by a
+closure status.
+
+### Match the original functional and use one positive report everywhere
+
+Fix the original finite regular free-feature chart, fixed PF data,
+orientation EPS_PLUS, genuine collars and lambda_minus. Use the SAME
+six-face Palatini and two real CAR operands in paid-writer10.1(34)--(37)
+and the exact-report PROOF RC4--RC5. Choose the actual quadrature
+mu_s=c_s. Keep the original uniform-mesh conversion
+mu_s=c_quad,h h^4 of7k129 separately. Then, as
+an identity of the decoded original operands BEFORE taking variations,
+
+    I_h=sum_s mu_s(f_s+lambda_minus q_s)=Phi_h.
+
+This is the explicit coefficient/interface match; arbitrary new site
+weights, a moving independent PF or a different density convention do
+not inherit it. The owned primary solves D Phi_h=0 in ALL free field
+rows. The invertible7s field/feature Jacobian consequently gives
+D_mu I_h=0 at that same primary, not merely continuum weak stationarity.
+Use the original exact inverse/Cayley maps in I_h, not the P5/C8
+surrogate away from the primary.
+
+With the genuine reserve of7al329 and its fixed Omegabar, set
+R_tau=r0+sum_s pi_s[r(tau f_s/rho_s,tau q_s/rho_s)-r0].
+It is positive in the same strict report collar; the tag0 branch stays
+real. Its complete first derivative is7al330, with original
+lambda_minus. Set g_h=a0 tau/Omegabar in the FINITE I_h source
+convention and gbar_h=c_quad,h g_h as in7al331 for the physical
+continuum source. At fixed h the finite report satisfies
+
+    R_tau=r0+g_h I_h+O_h(tau^2),
+    ||D_mu R_tau(primary)||_1/gbar<=C_h tau.            (402)
+
+Thus B_h^* D R_tau/gbar_h approximates
+B_h^* D I_h/c_quad,h, the original continuum-source convention. The
+constants include the actual feature map, density, c_quad,h and derivative norms.
+All needed estimates are on the fixed compact regular chart.
+
+Use genuine raw SIGN probabilities z_a=(1+mu_a)/2. A rescaled affine
+chart coordinate need NOT be a positive observable on all CAR inputs.
+Choose nested compact feature boxes B inside B' inside the regular
+feature chart and(-1,1)^D, and a computable C4 cutoff chi, equal to1 on B and0 outside B'. Define
+R_ext=r0+chi(R_tau-r0) on B', and r0 outside. A piecewise polynomial
+cutoff with four vanishing endpoint derivatives suffices. This stays
+in the positive collar and equals the SAME report on B. Its nonconstant
+derivatives through4 are O_h(tau). The extension is an implementation
+outside the declared field chart, not a source change inside it.
+
+Let q_m be its tensor Bernstein polynomial in z of degree m per
+coordinate, with rational node error epsilon_node. It is an all-input
+positive report with k=Dm distinct raw feature occurrences. The owned
+finite-difference proof in paid-writer10.2, with the integral remainder,
+gives C1 and C3 errors bounded by C_h tau m^(-1/2) plus, respectively,
+C_h m epsilon_node and C_h m^3 epsilon_node. In particular
+
+    ||D_mu q_m(primary)||_1/gbar
+       <=C_h[tau+m^(-1/2)+m epsilon_node/tau].           (403)
+
+The weak-strength defect tau is not silently set to zero. On a nearby
+catalogue branch c_l at distance O(delta), add C_h delta to403.
+Choose tau_m=tau_(0,h) p^(3s_m) comparable to m^(-1), with
+s_m=O(log m) and the actual fixed source normalization tau_(0,h)
+(including the original aperture factor where it is used). This is the
+new table's target strength; it does not license a continuous primitive
+angle. Every coefficient/evaluation action actually used is paid; both
+g_h and gbar_h use this exact tau_m.
+
+### A polynomial-size unconditioned evaluator avoids a length circularity
+
+Use7as's complete SIGN packets and distinct occurrence convention.
+Choose n a power of2 with 2k^2<=n<4k^2. A uniform k-tuple of n indices
+has a collision with probability at most k(k-1)/(2n)<=1/4. Generate L
+independent candidates, choose the first with distinct entries, and
+use one fixed distinct tuple if all fail. Conditional on a success the
+tuple is EXACTLY uniform among ordered injections; the unconditional
+fallback error is at most4^(-L). Keep EVERY candidate, flag and work
+bit. There is no postselection and gamma=1.
+
+Counters compute the D binomial counts and a reversible lookup of the
+(m+1)^D Bernstein coefficients; compare a T_c-bit integer to each
+dyadic coefficient threshold. This is polynomial in m at fixed D,
+rather than a truth table on all nD signs. All logic uses bounded-arity
+permutations, the retained never-read labels of7as and its full-column
+native compiler. Supply all T=L k log2(n)+T_c proposed fair bits by
+r_c Golden coins per bit as in7as. With b=p^3,
+
+    eta=4^(-L)+2^(-T_c)+(T/2)b^r_c                     (404)
+
+bounds the ENTIRE report-table error uniformly on all SIGN arrays.
+The independent coin-prefix source is still T r_c L_coin b^(r_c-1).
+Every fallback, unused coin and inverse remains in the full action.
+
+### A request-preserving preparation graph with all first sources
+
+Use7ar384's ACTUAL Golden key weights and simultaneous neighbours
+c_(a,+)=c0+p^2 delta e_a, c_(a,-)=c0-p delta e_a.
+Unused key prefixes prepare c0. Before preparing ANY packet, copy the
+request working bits into permanent labels that are never read or
+written until the outer inverse. The forward process has order
+
+    B=A_query (product_(i=1)^n S_req,i) C_req K_req,
+    S_req,i=sum_l |l><l| tensor Shat_(l,i),
+    U=B^dagger Mhat B.                                 (405)
+
+Source observables for the mean geometry are marked BEFORE extractors,
+on genuine designated prepared coordinate banks, as in7ar. They are
+not replaced by the disturbed post-extractor bank or its terminal echo.
+All copies, helper, source-spin and every unused column are retained.
+
+Compile each S_req,i in the EXACT request-preserving group, with
+per-complete-packet full-column source error e. Specifically apply
+7aq374--376 to predicate1_request=l, on the fixed complete packet
+dimension (at least three ACTIVE bits), and take the finite product
+over l. Its controlled even-G/CNOT letters have exact false blocks;
+the same owned density argument gives SO in each true block. The
+already imported compact-group compiler supplies polylogarithmic
+length at this fixed dimension and finite key layout. It restores
+helper/Spin on ALL columns at completed blocks. NR5's bare integer
+search alone would not supply this precision/length conclusion.
+The executable catalogue retains7w/7ap's FPTEAS target-entry hypothesis,
+for example rational/algebraic finite primary data. The open-chart
+identities hold mathematically on the full regular chart; a general
+noncomputable smooth field is a comparison target, not an executable
+finite input supplied for free. The n-packet branch error is at most
+n e, not e.
+
+Let L_pref be one packet's TRUE expanded controlled preparation,
+all extraction and initial SIGN fanout length. For the exact symmetric
+report q_m the one-packet conditional on a branch is
+
+    C_i=q_m I+(1/n)sum_a g_a(X_a-mu_a I),
+    g=D_mu q_m.
+
+Subtract its scalar part before differentiating a trace-preserving
+packet channel. Since ||sum g_a X_a||<=||g||_1, its first source is
+at most2||g||_1 nu/n per stage, nu=max_t||Dg_t||.
+After request labels are complete, off-diagonal request insertions
+have zero first contraction: a label outside the macro support stays
+different. Diagonal request insertions act on one packet and helper;
+later completed blocks on other packets cannot spread them through a
+helper on which they are identity on ALL columns. All source/algorithm
+words have full native address support disjoint from the permanent
+labels. Choose enough copies for the fixed
+macro supports, and keep their creation in the preceding prefix.
+Thus the weighted branch conditional, not the coincident-packet rule
+applied without proof, controls every controlled source row.
+
+Before the request-label frontier, contract the entire actual future
+against its actual packet blanks. The effect is diag(qhat_l) on the
+working request, tensor identity on labels/helper. Therefore every
+key/preparation/fanout stage has source at most2 epsilon_req nu. Inside
+a partial identity cell the effect is unitarily conjugated, preserving
+its distance to the same scalar. Here
+
+    Gbar=sum_l mu_l ||D_mu q_m(c_l)||_1,
+    epsilon_req=max_l |qhat_l-q_m(c0)|
+      <=M1 delta+(M2/2)delta^2+2ne+eta+2Delta.
+
+M1,M2 are actual derivatives of q_m; errors from new source/extractor
+or query columns stay present. Let N_req include every request stage
+and the identity cells below. Delta is the SUM of all other full-column
+macro errors; M_raw counts actual primitive stages, safely both legs.
+The complete query/source bound is
+
+    |DQ|<=epsilon_joint nu,
+    epsilon_joint=2L_pref Gbar+4k(k-1)L_pref e
+      +2nL_pref eta+2N_req epsilon_req
+      +T r_c L_coin b^(r_c-1)+4M_raw Delta.             (406)
+
+The packet error estimate is the trace-norm telescoping of the other
+k-1 packets; the full-table eta term has no fictitious k/n factor.
+The last two terms are7as's ALL-input coin and classical-compilation
+bounds, which also cover this coherent request input. The displayed
+mean readout uses a separate per-branch moment error from the same
+actual preparations. No coin/source/control row is discarded.
+
+### The physical key lift is now a sum of actual local stage variations
+
+The global matrix L(b) of7ar387 can be produced inside the same local
+stage graph. Let z be the last request bit, q its r prefix bits,
+P_S=product_(i in S)CX(q_i,z), and chi_S(q)=(-1)^(sum_(i in S)q_i).
+After the original key generator, BEFORE all request copies, insert
+all chronological cells
+
+    C_S=P_S;G_z^+;G_z^-;P_S=I.
+
+Both signed-G words are the actual11-stage7aq375 implementations,
+restoring shared helper/Spin on all columns. Each cell is a physically
+executed identity, not a free clock pad. Vary only the raw G inside its
+G_z^+ by exp(t alpha_S J_helper)G. Then exactly
+
+    C_S(t)=exp(t alpha_S chi_S(q)J_z),
+    ell_a=-b_a/(2delta m_a p^(3/2)),
+    alpha_S=2^(-r)sum_a ell_a chi_S(a),
+    product_S C_S(t)=exp(t L(b)),
+    ||D Dirac_pair||=max_S|alpha_S|/sqrt(2),
+    max_S|alpha_S|<=2^(-r)sum_a|ell_a|<=||L(b)||.       (407)
+
+Unused prefixes have ell_a=0. The generators commute and the Walsh
+inverse gives the identity exactly. In the actual outer inverse,
+vary the corresponding raw G in the inverse signed-G word with the
+same alpha_S; conjugation by the native Z gives the opposite rotation.
+All other stages remain fixed. The new forward length is exactly
+2^r(22+r), and the reverse has the same length. Request copies must be
+AFTER these cells: rotating only a key already recorded into untouched
+labels would not generate the required first probability change.
+
+Thus7ar's h(b), actual mean-readout Jacobian C_delta and the lift with
+b=C_delta^(-1) Bhat v now belong to this concrete LOCAL-support
+comparison graph, with the norm407 and new true clock. This is not
+physical permission to vary the coefficient of fixed native G: it is
+a proved map between the two stated finite-matrix comparison domains.
+Its original Book02/Book03 physical-admission question remains.
+
+### One whole Book derivative and the off-shell geometric restriction
+
+For each actual cohort use the non-postselected report probability Q_j,
+7aq's predicate-preserving middle with d_j in[3/2,2], s_j=1-d_jQ_j,
+a_j=2d_j/s_j, S=product s_j, w=rankP zeta S^2/(1-zeta+zeta S^2),
+A=sum a_j gbar_j, Gamma=w A. All actual Q_j stay in the strict<1/4
+collar. The SAME complete action is H-rankP log(1-zeta+zeta S^2).
+All new key/label/candidate/coin/target columns are in H; blank work
+does not increase protected rank. Source inverse and generated-state
+rows use the whole-action adjoint. From406 and7aq's middle and thermal
+bounds,
+
+    ||DB_M||_(local graph,Dirac op dual)/Gamma_M
+     <=sqrt(2)/A sum_j a_j[epsilon_joint,j
+                         +4delta_mid,j L_mid,j
+                         +16delta_mid,j M_raw,j]
+       +sqrt(2)N L_N(beta)/Gamma_M.                    (408)
+
+The local graph frees all actual key/source/query stages on their
+stated supports and the predicate-preserving middle. Inverses remain
+generated; initial physical cut, record interface and stage addresses
+are fixed. Extra independent directions are not declared absent.
+
+For the physical restriction use407, not the product of408 with a
+possibly divergent delta^(-1) lift norm. The exact same-point identity
+remains DQ[h(b)]=sum_a b_a(qhat_(a,+)-qhat_(a,-))/delta.
+If v_q bounds per-branch report error from q_m(c_l), replace7ar's
+4eta/delta by2v_q/delta. Safely v_q<=2ne+eta+2Delta. The marked moment
+error v_m is supplied by the actual designated source bank (2ne is a
+safe larger bound). Use v_m, not v_q, in the mean decoder estimates.
+The actual C_delta, its inverse, Bhat and M1 correction of7ar388--389
+remain. At fixed h their combined finite constants give
+
+    ||F_actual/gbar-B^*Dq_m(c0)/gbar||_(C3*)
+       <=C_h[delta+v_m/delta+v_q/(gbar delta)],          (409)
+
+on chi_delta<1/2. Constants retain the source derivative/gbar,
+quadrature, decoder and sampling norms; they are not mesh-uniform.
+Combine409 with403's full C1/C3 consistency to R_tau,402/7al330 and
+the owned geometric limit7k128--129. This is ONE source on ONE internal
+catalogue, for arbitrary regular centre fields, not just a test on
+Einstein solutions or a price difference between different laws.
+
+### A simultaneous diagonal limit exists with the actual paid lengths
+
+At each fixed h take m to infinity, tau_m comparable to m^(-1),
+epsilon_node<=tau_m m^(-5), delta=m^(-1), n=O(m^2), L,T_c,r_c=O(log m)
+with sufficiently large constants. Then T=O_h(m(log m)^2). Fixed-D
+coefficient lookup, selection, counters and every retained copy have
+polynomial size in m. All source/extractor dimensions and controlled
+predicates are fixed at this h. Consequently L_pref is polylogarithmic
+in m; M_raw is polynomial in m times polylogarithms. Choose per-macro
+source/query errors m^(-K_h), with K_h larger than the finitely many
+true circuit-degree exponents and all displayed source/readout factors.
+Increase r_c,L,T_c by fixed logarithmic factors as necessary. This makes
+all error terms in406 divided by gbar tend to zero and makes409 tend
+to zero, including v_q/(gbar delta), n e and M_raw Delta/gbar.
+
+The leading source term is controlled by
+
+    Gbar/gbar<=C_h[tau_m+m^(-1/2)+delta
+                                      +m epsilon_node/tau_m],
+    L_pref Gbar/gbar ->0.                              (410)
+
+This is why the strengthened polynomial evaluator and simultaneous
+weak-strength limit are needed: mere convergence of an arbitrary
+report, followed by an uncontrolled longer compiler, would not prove410.
+Near the actual primary, M1/gbar is bounded and epsilon_req/gbar tends
+to zero as well. Choose the middle precision after the true query length
+so delta_mid(L_mid+4M_raw)/gbar is arbitrarily small, using7aq.
+
+Now use the existing slow cofinal mesh/precision envelope and actual
+repetitions of each finite level, so A_M diverges and, for example,
+gbar_j>=c j^(-1/64). Finite old errors remain in the numerator; the
+positive weighted means of the new relative errors tend to zero.
+Every prefix is an actual finite execution with its own original price.
+The new true N>=M and S^2>=4^(-M) give the same factorial heat bound
+as7aq381--382 at its actual Gamma. None of these estimates deletes a
+large absolute heat or a small source gain.
+
+It follows, on the declared graph, that the primary refining executions
+have normalized joint local source tending to zero and actual geometry
+converging to the owned nonvacuum solution, with its material recovery.
+For general regular fields the SAME executions' physical restriction
+converges to D I_PC. An EXACT stationary sequence on this graph, if one
+exists with the stated regular geometry and consistency budgets, must
+therefore have an Einstein/Palatini limit in the original material
+scope. The explicit primary family proves the ASYMPTOTIC source and
+readout statement, not exact finite joint-root existence or compactness
+of arbitrary sequences. Its physical-test residual is controlled by409,
+not inferred solely from the operator-dual residual in408.
+
+**Parent substitution.** The fixed-query, distinct-catalogue source and
+global-key-support gaps between7ar and7as are replaced by405--410 on one
+paid execution with one open-field report. Original all42 criticality
+is used through the exact I_h/ Phi_h dictionary; no primary-only report
+is substituted for the off-shell target. Remaining: original physical
+admission of this cut/support/calibration graph, actual stationary or
+constraint dynamics and exact finite on-shell/refinement requirements
+where those are demanded. Continuous comparison directions are still
+not a continuously tunable native alphabet. No GR_closed, positive_gr
+or raw216 completion is asserted.
+
+### Bounded exact test of the new native map
+
+Run the following from the repository root. It checks the actual local
+signed-G/CNOT/SourceI cells on all64 columns, their Walsh derivative
+and real96-stage inventory, the unconditioned first-distinct sampler,
+and a request-label fault with its nonzero unprotected control. This
+checks the new interface application, not a synthesis of the full GR
+execution or physical admission. The existing root, compiler,128,
+READY and Lean evidence is reused.
+
+```python
+from pathlib import Path
+import importlib.util,sys
+import sympy as S
+from sympy.polys.matrices import DomainMatrix
+from itertools import product,combinations,permutations
+src=Path('02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py')
+spec=importlib.util.spec_from_file_location('_joint_native',src)
+ne=importlib.util.module_from_spec(spec);sys.modules[spec.name]=ne;spec.loader.exec_module(ne)
+def eq(A,B):
+    assert DomainMatrix.from_Matrix(S.Matrix(A)).convert_to(ne.GOLDEN_FIELD)==DomainMatrix.from_Matrix(S.Matrix(B)).convert_to(ne.GOLDEN_FIELD)
+def swap(a,b): return [ne.Gate('CX',(a,b)),ne.Gate('CX',(b,a)),ne.Gate('CX',(a,b))]
+si=ne.Gate('SourceI',(0,4,5))
+def rot(sign):
+    mid=[ne.Gate('G',(0,))]+[si]*4 if sign==1 else [si]*2+[ne.Gate('G',(0,))]+[si]*2
+    return swap(0,3)+mid+swap(0,3)
+def exe(w): return ne.Execution(6,(0,1,2,3),(),tuple(w),ne.G_CX_SOURCE_I,0,(4,5))
+def matrix(w): return ne.word_matrix(exe(w),max_qubits=6,max_expanded_stages=1000)
+J=S.Matrix([[0,-1],[1,0]])
+Jh=S.kronecker_product(J,S.eye(32))
+Jz=S.kronecker_product(S.eye(8),J,S.eye(4))
+subsets=[(),(1,),(2,),(1,2)]
+ell=[S.Integer(1),S.Integer(2),S.Integer(-3),S.Integer(4)]
+def chi(sub,a): return (-1)**sum((a>>(2-bit))&1 for bit in sub)
+alpha=[sum(ell[a]*chi(sub,a) for a in range(4))/4 for sub in subsets]
+whole=[];derivative=S.zeros(64)
+for sub,coef in zip(subsets,alpha):
+    P=[ne.Gate('CX',(bit,3)) for bit in sub]
+    cell=P+rot(1)+rot(-1)+P
+    eq(matrix(cell),S.eye(64));whole+=cell
+    pos=len(P)+3 # raw G in G+ after its first SWAP
+    before=matrix(cell[:pos]);after=matrix(cell[pos+1:])
+    Gstage=matrix([cell[pos]])
+    dcell=after*(coef*Jh*Gstage)*before
+    diag=S.diag(*[chi(sub,(i>>3)&3) for i in range(64)])
+    eq(dcell,coef*diag*Jz);derivative+=dcell
+counts=ne.inventory(exe(whole),max_qubits=6,max_expanded_stages=1000)
+assert counts.gate_count==4*(22+2)==96
+eq(derivative,S.diag(*[ell[(i>>3)&3] for i in range(64)])*Jz)
+assert max(abs(x) for x in alpha)<=max(abs(x) for x in ell)
+# Exact first-distinct tuple law, with a paid fallback rather than postselection.
+n,k=4,2
+candidates=list(product(range(n),repeat=k))
+valid=list(permutations(range(n),k));fallback=valid[0]
+counts2={x:0 for x in valid};failed=0
+for x,y in product(candidates,repeat=2):
+    if len(set(x))==k: out=x
+    elif len(set(y))==k: out=y
+    else: out=fallback;failed+=1
+    counts2[out]+=1
+for out in valid:
+    assert counts2[out]-(failed if out==fallback else 0)==(len(candidates)**2-failed)//len(valid)
+assert S.Rational(failed,len(candidates)**2)==S.Rational(1,16)
+# Key labels kill an off-diagonal request/source fault; omitting them does not.
+# key q, source x, label l. Controlled source creates x=q.
+psi=S.zeros(8,1);psi[0]=S.Rational(3,5);psi[7]=S.Rational(4,5)
+Pi=S.diag(*[(i>>1)&1 for i in range(8)])
+Kqx=S.zeros(4);Kqx[3,0]=1;Kqx[0,3]=-1
+Kfull=S.kronecker_product(Kqx,S.eye(2))
+assert (psi.T*(Pi*Kfull-Kfull*Pi)*psi)[0]==0
+psi0=S.Matrix([S.Rational(3,5),0,0,S.Rational(4,5)])
+Pi0=S.diag(0,1,0,1)
+assert (psi0.T*(Pi0*Kqx-Kqx*Pi0)*psi0)[0]==S.Rational(24,25)
+print('PASS actual96-stage full64 identity/Walsh lift, first-distinct law, and request-label hostile control')
+print(sys.version.split()[0],S.__version__)
+```
+
 ## 8. Reproduction
 
 Run from this directory:
