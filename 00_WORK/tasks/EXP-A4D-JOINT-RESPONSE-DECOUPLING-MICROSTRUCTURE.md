@@ -12656,3 +12656,108 @@ SHA256ec9459d74a6cff807ca557823fda486694291f26bca5b19a3c6a117bb3926d1d;
 incoming brief831388bytes is an exact prefix. Only the two owned paths
 change. These are local structural/source checks, not remote CI or physical
 GR acceptance.
+
+
+### 25 October: align the CAR reader with actual SourceI and compose an encoded-control bus
+
+Phase: native realization / same-execution source composition, same
+#334 constitutive/native-programme-v1 owner, input042bc426. Primary7bm
+535--541 consumes7bl reader, originalU59--60, existing SourcePort
+selective-I interface, full CAR--Spin Q8 frame and7bk branch/error
+proof. Root writes only the primary insertion and this brief; bounded
+read-only assistants supply independent algebra/source review. No
+newtask/primitive/action/selector or physical admission is introduced.
+
+Changed decisive input: choose invariantC_I=(mask0,mask12), instead
+of trying to shuttle incompatible0,5. The full signed frameT maps
+Spin4xmult4 to allCAR16 with T(L_i x I4)Tdagger=Ihat. Ihat actsJ
+onCI; sameoriginalhistories19->27 and19->91 give+alphaP0,+alphaP1,
+alpha=5nu^4p^3/128. Under the literal jointinterface, twoPRIVATE
+readerApp128s (including bothGoldenflags) are distinct from livebusP,
+and actI_P on unknown port/code entanglement. SourceI and its3forward
+inverse calls then compose every GOOD bus branch. FineApp records
+canremaincoherent until terminalread; no extra code->recorder gate
+and no b-dependentfeedforward are required. Every FAIL stays physical.
+
+Exact positive applications: k=l1,j0 gives identity-success2gamma p^3.
+NearfairfiniteGoldenpowers give bothc1 branchesalphaG^(-j)/2 plus
+operatorerror<=alpha(e_k+e_l), retaining actualsuccess~gamma/2.
+ReplacingmiddleG^j by originalallcolumnport->Rcopy gives exact
+K01=alpha ap CX_(CI,R), K11=alpha ap X_R CX_(CI,R), withunknownR
+andoldRIGHT allowed. Byproducts arenotcorrectedfree. This isone-way
+encodedcontrol->R, not unknownRactivation; X_Rcommutant still holds.
+The chosenmu0full-Q8frame is(0,12,10,-6); nativeGOODonthatFREE
+Spin4copyisgamma diag(1,1,0,0), notgammaI4. CI support remains an
+input/preparationpromise; originalfreeSpin rows/cuts arenotshrunk.
+
+OriginalcompleteBookcut ispreserved: fullfreeCAR16,blankbusandboth
+privateApps,oldRIGHTq128 countedonce; physical33-scene completion
+retains its31inactive modes and all nativefactory space. Ordinarybus
+quietcorner=b^2(uI+vIhat), fullgram=b^4tauI, tau=u^2+v^2. Its actual
+nativefieldsource is4q zeta t b^3tau/Q_tau Tr16DDelta, without anyalpha.
+The exactCXword withFREE R hasquietcorner=b^2I16 x(pI-p^2X_R),
+J=-16q[logQ1+logQp6] and the genuine source541. Code-free2,codeblank1,
+freeSpin4,fullCAR16 andfree/blankR remain distinct inputcuts.
+The old match-stoppedCQ law, zeroheat, native9-stageclock and7t
+G/CX/SourceI membershipareNOT inferred from displayingmacro calls.
+
+The priorcoherenttwo-App candidate wasdecided once and discarded:
+sharedportfourforwardreflections have coldM=127771337/128000000 I16
+by exactoriginalPauli-channelcontraction. This isnot a multi-Appno-go
+or a newwordcensus. The first naiveSymPycontraction was deliberately
+terminated after confirmed4+minCPU expressiongrowth; normalized
+Gaussian-rationalPauli evaluation of the SAME contraction passes.
+No scientificexpectedvalue/tolerance was weakened. Finalnewcalculation
+Python3.9.6/SymPy1.14.0 exit0/PASS: rowParseval,535,fullsignedframe,
+537,allsymbolic538branches,identity/CXsuccess,540--541quietand
+noncommutingoriginalboostsource. Ordinaryassertionsenabled. No old
+GR/root/Lean/clock/density/stoppedCQ replay.
+
+Parent substitution is a concrete aligned localreader/control and
+original coherentrecordercomposition. Remainingphysicalapplication:
+actual simultaneousSourcePort/CAR/App placement, expandednative
+factoryadmission/clock andpaidCIpreparation(or provedfreeinput
+replacement), all genuineindependentapparatus/preparation/cut/source
+rows. PassiveT transportsALLops/tests; it isnot an unchargedphysical
+shuttle.7bj arbitraryaddressedprivatepacket admissionstillopen.
+Actualgain/norm andfullHJR remain; no finitejointstationaryroot,
+GR selection/dynamics/refinement orraw216 completionclaimed.
+GR_closed=false,positive_gr/raw216 remainopen.
+
+Added actualcode-support preparation542 before publication. For NEW
+freshsourceSpin/multiplicity work, m cellsG_P;SourceI;G_P;CX(P,hj)
+belong to the EXISTING7t profile(4mrawletters), and preserveCIonALL
+coherentfailures. m1/m2 actualownedgateevaluator, allunknownoldRIGHT
+columns, inventory/isometry/support/coldcuts pass. Allhistory0 gives
+L0^m withGramrho^m; ACTUALblankreturn isc_m, notrho^(m/2).
+Theunconditionalport remainscorrelatedwithhistory; combinednativebus
+runs onALLcolumns, and ONLYterminalGOOD withprefixhistory0 factors
+asKbusL0^m. Noreset/secondliveport orintermediatepostselection.
+Fullsourceblank versusfreeSpin cutsandallwholewordfeedback542 are
+explicit; metadatareportbits doesnotadmitphysicalreadout. This is
+newknownworkpreparationwithpaidinitialresource, not shrinkage of
+originalunknownSpin or an unconditionalpurepacketwriter. Finaltest
+exit0/PASS afterthisaddition; nomath/codechangesafterthe successful
+run. Finalfrozenpins/reviews/integrationfollow.
+
+Final checkpoint recorded26October after calculation/source drafting25October.
+Frozen7bm INCLUDING next-heading separator:24464bytes,
+SHA256069dab19ee4494e76dd5f0221b3a6bf53201e6be69ba5c2eacb4e49f5956fc62.
+Embeddedcode excludingclosingnewline:7521bytes,
+SHA25622901bc1ddaea79ddc7a454ff9d3e226e52aa678432de0eb216056583854b174.
+Ownednative_execution import blob9a32a3fa2e594c087d24b9d5dec497c4c5e03f44.
+Finalsource-onlyACCEPT24464/069dab19: native_source_application and
+price_geometry_bridge; bothchecked542andactualm1/m2 evaluatorcode
+withoutwrites/replay. stationary_root_transfer accepted18937/98a2b591
+before542; all535--541math/codewereunchanged, and nopendingreview
+isrepresented ascomplete. Finalexpandedtest exit0/PASS3.9.6/SymPy1.14.0.
+
+Affected finalintegrationPASS: workvalidation,cold-startagentprotocol,
+gravityassembly(validtrue;54active/98results/5discharged/22obligations;
+scientific_promotionfalse), repository(889claims/31assumptions/58aliases/
+183formal_support/918Leanclosure;warnings0), whitespace and finalfrozen
+byte/AST/provenance checks. No oldmathematical/Lean/clock/rootreplay.
+Removing7bm restoresincoming042bc primary BYTEEXACT SHA256
+55dee476c00004cc9ca6234db6a393dc6af32d6c3a862424563037a556477d07;
+incomingbrief837666bytes isanexactprefix. Onlythetwoownedpathschange.
+Thesearelocalstructural/sourcechecks,notremoteCI orphysicalGRacceptance.

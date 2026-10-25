@@ -18638,6 +18638,489 @@ assert eq(E.H*dDel*E,s.zeros(2))
 print('PASS original Walsh Parseval; exact full16 encoded reader/general-nu family; complete failures; nonscalar boost jet and leakage; named full-CAR rotors and phases; fixed-code Book jet')
 ```
 
+## 7bm. Align the native reader with the source quaternion: an exact encoded-control bus and its unchanged full Book obligation
+
+25 October2026, SAME #334/constitutive/native-programme-v1, input042bc426.
+Phase: native realization and complete-source composition. The parent is
+7bl's missing reader/port coupling for7bk525. The changed mathematical
+input is a reader plane INVARIANT under the already owned source
+quaternion, instead of trying to move the incompatible0,5 code.
+This gives a concrete positive composition and removes its extra
+abstract record-to-recorder gate at the declared joint interface.
+It does not grant a new primitive or accept the physical joint placement.
+
+Inputs are7bl528--534, the same original constructor blob
+ee8de4635d24c668949ac9a0186616ab7d59f2ed,
+[full original U(59)--(60)](A4D_PAID_MOMENT_FIELD_WRITER_2026_10_21.md#131-keep-the-actual-row-of-q-including-every-unprepared-column),
+[SourcePortPreparation](../../03_FORMALIZATION/D0/Representation/SourcePortPreparation.lean),
+[the existing CAR--Spin representation](A4D_NATIVE_CAR16_REAL_SPIN13_Q8_GOLDEN_COHERENT_SHEET_BRIDGE_2026_10_20.md)
+and7bk's all-input branch/error proof. All equations below are on complete
+finite carriers, with operator norms and actual unnormalized amplitudes.
+Original nonlinear GR/root/refinement and stopped-price owners are reused.
+
+### Dispose of one failed coherent route, then change the code
+
+Reusing just ONE fullU with its label-App initially blank cannot replace
+a non-port App operation. Write its negative projector as
+Pi=sum_(mu,nu)|mu><nu| tensor N_mu^dagger N_nu on App64 times CAR,
+P_t=|t><t|, t=(p,sqrt(p)). Then U=(I-P_t)tensorI+P_t tensor(I-2Pi).
+Pi commutes with port-only operations and copies from that port. Every
+such word is therefore block diagonal in Pi; its initial label-blank
+compression depends only on <0|Pi|0>=kappa I at flat. This is a
+ONE-App obstruction, not a theorem for every multi-App construction.
+
+The smallest tested escape uses TWO distinct label-App64 registers,
+the SAME live port, and the four forward calls U1,U2,U1,U2. Set
+Ri=I-2Pi_i. Its cold-label return on the P_t port block is
+
+    M=<00|R2 R1 R2 R1|00>=I-16kappa^2 I+16Q,
+    Q=<00|Pi2 Pi1 Pi2 Pi1|00>
+      =(2177/5000)kappa^2 I16,
+    M=(127771337/128000000)I16 at nu3/5.             (535)
+
+This follows from the literal bistochastic row channel
+Phi(X)=(81/100)X+(9/400)sum_(8 Majoranas) gamma X gamma
++(1/400)sum_(4 modes) Z_r X Z_r and its exact four-projector
+contraction. The identity is verified on all16 columns, not just0,5.
+It kills THIS shared-port candidate as a distinguishing coupling.
+It neither erases its full heat/source nor starts another word census.
+The positive route below instead consumes the already owned SourceI.
+
+### A complete signed frame aligns an ACTUAL source action with the new reader
+
+Keep creator order(0,2,3,1), original phases and the flat common-nu
+family of528. Use the existing real CAR--Spin definition, with c_r
+here denoting the literal CREATOR:
+Gamma0=c0+c0^dagger, Gammaj=cj^dagger-cj forj1,2,3.
+Put Ihat=Gamma2 Gamma3, Jhat=Gamma3 Gamma1, Khat=Ihat Jhat.
+For mu0,...,3 define the full16 signed frame
+
+    T(|1,i,j,k> tensor |mu>)
+       =(|mu>,Ihat|mu>,Jhat|mu>,Khat|mu>),
+    T^dagger T=I16,
+    T(L_i tensor I4)T^dagger=Ihat,
+    i_I=(|0>,|12>), Ihat i_I=i_I J,
+    J=[[0,-1],[1,0]].                              (536)
+
+T is a signed permutation: its four orbits are
+{0,6,10,12},{1,7,11,13},{2,4,8,14},{3,5,9,15}.
+In the mu0 copy its ordered quaternion basis is
+(|0>,|12>,|10>,-|6>). Hence C_I=range i_I is exactly its source
+Spin pair{1,i}, and is invariant under Ihat. Unlike7bl's old0,5 pair,
+the actual source quaternion does act within it.
+
+T is used as a PASSIVE simultaneous representation map. All operations,
+cuts, metrics and future tests must be transported with it; no free
+physical shuttle or manufactured T gate has been inserted. On the
+full sourceSpin4 times multiplicity4 representation, the original
+SourceI tensor I4 is exactly
+C_J=P_port0 tensor I16+P_port1 tensor Ihat.
+Its inverse is THREE forward SourceI calls, since Ihat^2=-I16.
+This is the owned source action, not an invented controlled logical X.
+In the full33-scene frame it is
+(I33-R_signal)tensorI16+R_signal tensorIhat, retaining every
+complementary scene mode. Actual joint all-column CAR/App placement
+of this representation with the original physical SourcePort remains
+a premise; an algebraic map alone does not supply that hardware.
+
+The SAME literal two-tick instrument now supplies
+
+    K27 K19 i_I=alpha i_I P0,
+    K91 K19 i_I=alpha i_I P1,
+    alpha=5nu^4 p^3/128, gamma=alpha^2.              (537)
+
+Here91=(label22,coefficient1,port1). Its defect row is
+(1-s)(Z0+Z1-Z2-Z3)/8. The two records have POSITIVE amplitudes
+on this ordered code. GOOD is still heralded, with all other128^2
+fine records retained. This construction uses a chosen code INPUT
+promise, not a preparation of an arbitrary unknown Spin into it.
+On the mu0 FREE Spin4 copy the GOOD effect is
+gamma diag(1,1,0,0), not gamma I4. Other full-CAR inputs have their
+own effects. No free protected Spin cut or upstream equation is shrunk.
+
+### The native instrument itself supplies the recorder in the encoded bus
+
+Let P be the live bus port. The two original full128 reader App
+registers, INCLUDING their own Golden flags, must be DISTINCT fresh
+work and the reader must act as I_BUSPORT tensor original CAR
+instrument. This is essential for an input entangled with the live P:
+one cannot reset or reuse P as a supposedly blank reader flag.
+Use the actual complete coherent U(59) on each private App. Then run
+the following chronological word, on ALL branches:
+
+    G_P^k; C_J; U_reader,1; U_reader,2;
+    G_P^j; C_J^3; G_P^l; final read(P,App1,App2),
+    K_bc^GOOD=alpha F_b E_c(l)G^j D_k F_b,
+    F0=Z, F1=X, D_k=diag(c_k,s_k),
+    E_c(l)=diag(G^l_(c,0),G^l_(c,1)).                (538)
+
+The labels b0/b1 mean the two histories in537, and c is the final
+live-port outcome. Each K includes the native alpha. The same
+post-reader operations exclude both App registers, so their fine
+readout can be deferred to the end with no change of the instrument.
+There is NO separately assumed C_(code,B) recorder, no outcome-dependent
+correction and no inverse of a dephased tape. Full U already supplies
+all its App columns and every failure of this fixed-depth programme.
+This is a concrete improvement over the missing recorder in7bk525.
+
+At k=l1,j0 both c1 branches are exactly alpha p sqrt(p)I on C_I;
+their total success is2gamma p^3 on any unknown code/reference input.
+For near-balanced k,l let e_t=max(|c_t-1/sqrt2|,|s_t-1/sqrt2|),
+delta=e_k+e_l. BOTH c1 branches differ from(alpha/2)G^(-j) by at
+most alpha delta, since ZG^jZ=XG^jX=G^(-j). Their total success is
+within2gamma(delta+delta^2) of gamma/2. If delta+delta^2<1/4,
+the normalized output's trace distance, including unknown oldRIGHT,
+is at most(delta+delta^2)/(1/4-delta-delta^2). Golden recurrence
+provides finite k,l; all lengths and failures remain paid.
+This does not assert an exact balanced primitive or exact finite G.
+Port G inverse, when needed, is the existing forward word
+C_J^2;G_P;C_J^2, not a newly granted inverse. Spin rotations already
+present in the scalar return algebra7aj316--317 are reused; no new
+universality is inferred from this reader calculation.
+
+There is a sharper exact control application: replace the middle G^j
+in538 by the ORIGINAL all-column outward copy C_(P,R), with R a
+mutable, possibly unknown work target. At k=l1 the accepted maps are
+
+    K_01=alpha p sqrt(p) CX_(C_I,R),
+    K_11=alpha p sqrt(p) X_R CX_(C_I,R),
+    CX_(C_I,R)=P0 tensorI_R+P1 tensorX_R.             (539)
+
+Each leaf has probability gamma p^3 on every joint code/R/oldRIGHT
+input. One may select b0,c1 as the direct exact CX; the b1 byproduct
+is not corrected for free. A copy promised ONLY on blank targets
+would not justify the unknown-R assertion. This is a one-way
+encoded-control-to-R gate, not an activation or transfer of unknown
+R into CAR. It commutes with X_R, consistently with7bk's invariant.
+No sequence of CAR/App-only operations and such outward copies can
+implement a full Z_R reader while preserving that commutant. The
+intrinsic-code route is the route change, not a supposed reverse copy.
+
+### Price the ACTUAL quiet branch, not the successful gate
+
+Use the original full free-CAR cut, busP initially0, both App initially0,
+and genuine oldRIGHT multiplicity q_old=128 ONCE. Before additional
+factory registers the active bus carrier has dimension
+2*16*128^2*q_old; the physical33-scene completion replaces2 by33,
+rather than deleting the other31 scene modes. SourceSpin4 times its
+multiplicity4 is CAR16 here, not an extra factor16. Any unknown R
+in539 multiplies both the full carrier and input rank by2.
+
+The two native App-zero returns yield B(Y)^2, B=I-tDelta, t=2p^2.
+They do NOT yield alpha P_b. For538 the exact cold corner is
+C(Y)=<0|G^l C_J^(-1)G^j [I_P tensor B(Y)^2]C_J G^k|0>.
+At flat B=bI, b=1-5p^2nu^2/64, it reduces to
+
+    C=b^2(uI16+vIhat),
+    u=c_j(c_l c_k-s_l s_k),
+    v=s_j(s_l c_k-c_l s_k), tau=u^2+v^2,
+    C^dagger C=b^4 tau I16,
+    J16=-16q_old log Q_tau, Q_tau=1-zeta+zeta b^4 tau,
+    DJ16|_nativefield=(4q_old zeta t b^3 tau/Q_tau)
+                         Tr16(DDelta).             (540)
+
+The last formula fixes the utility port/source frame while varying
+the original native CAR field. It does NOT assume DDelta commutes
+with Ihat: cyclicity and Ihat^2=-I make the full trace contract to
+tau Tr(DDelta). In the original theta jet atnu3/5, it equals
+-9q_old zeta t b^3 tau/(100Q_tau). Independent changes of the port
+word/frame additionally change tau or the full noncommuting corner;
+their covectors are not discarded. For k=l1, tau=c_j^2 p^6.
+A code-free2 cut has a different compressed derivative; a codeblank
+has corner b^2u and its v component is true leakage. Neither cut is
+substituted for the original free-CAR input.
+
+For the exact CX word539 with R also FREE, the actual quiet corner
+and full feedback are different again:
+
+    C_quiet=b^2 I16 tensor(pI_R-p^2X_R),
+    J_freeR=-16q_old[log Q_1+log Q_(p^6)],
+    DJ_freeR|_nativefield
+      =4q_old zeta t b^3[1/Q_1+p^6/Q_(p^6)]Tr16(DDelta).
+                                                        (541)
+
+Thus its native theta source is
+-9q_old zeta t b^3[1/Q_1+p^6/Q_(p^6)]/100, nonzero.
+If R is a fresh blank instead, its DIFFERENT cut has corner b^2pI16
+and feedback-16q_old log(1-zeta+zeta b^4p^2).
+Neither expression carries a compensating alpha or alpha^-1.
+The successful exact gate does not make the complete Book source
+neutral, and the actual gain in a later GR consumer must be retained.
+
+The full action still includes its genuine H(Delta_actual), quantum
+work/R and all observer, preparation, cut, recorder and clock rows.
+For539 the displayed macro inventory is2 Golden letters,4 forward
+SourceI,1 copy and2 complete original U128 calls. This is NOT a
+claim of9 elementary native clock stages. The full U's SELECT,
+factory and actual physical clocks remain to be compiled/paid.
+In particular the old bounded G/CX/SourceI grammar7t does not silently
+receive U128 as a new primitive or a membership proof. Source-local
+admission, joint physical placement and the real expanded factory
+must supply that application. The actual full heat includes every
+App column and scene complement; no zero heat or unjustified padding
+limit is inferred from a quiet corner. The old match-stopped CQ
+price is a different language and is not imported.
+
+### Construct a literal native source-work preparation, retaining its true blank return
+
+The code-support promise has a constructive consumer in the EXISTING7t
+profile when the source spin and its multiplicity are genuinely FRESH
+known work. Start port0, quaternion1, mu0, m fresh history blanks and
+arbitrary immutable oldRIGHT. For each new history wire h_j execute
+
+    G_P; SourceI; G_P; CX(P,h_j),  j=1,...,m,
+    L0=pI-p^2 Ihat, L1=p sqrt(p)(I+Ihat),
+    rho=p^2+p^4, L0^m=c_m I+d_m Ihat,
+    c_m^2+d_m^2=rho^m,
+    C_prefix,blank=c_m,
+    C_prefix+bus,blank=b^2(u c_m-v d_m),
+    C_prefix+CX,sourceblank/freeR
+       =b^2 c_m(pI_R-p^2X_R).                       (542)
+
+This word has exactly2m G, m SourceI and m CX letters, hence4m
+stages of that explicitly declared profile. Spin gets no individual
+G/CX; multiplicity and oldRIGHT are untouched. Its finite membership
+and inventory are evaluated by the existing native_execution module,
+not by extending its alphabet with U128. Under536 its source blank
+is exactly CAR|0>. All branch operators on CAR are polynomials in
+Ihat, so every coherent failure ALSO stays in C_I. The complete
+port/CAR/history state is pure, with oldRIGHT preserved; CAR alone
+need not be pure after ignoring the retained records.
+
+The FINAL all-zero history outcome forces port0 at each copied
+boundary and gives L0^m on live CAR, with actual success rho^m.
+No reset, intermediate measurement or free inverse is used. Histories
+are never read back as controls. Crucially the UNCONDITIONAL port is
+not returned to0: it is correlated with its records. To concatenate
+538/539 on the SAME live port, execute their full all-column words
+on every prefix branch and retain the entire correlated state. Only
+the combined terminal GOOD event additionally requiring all prefix
+history0 factors as K_bus^GOOD L0^m. Later gates exclude those old
+history wires, so this factorization does not require an intermediate
+reset or a second live bus port. All other rows remain failures of
+the full programme, not discarded inputs to its price.
+
+The prepared support is now generated by actual raw letters from
+the stated FRESH-work boundary. This is not a preparation of an
+arbitrary original protected Spin or an unconditional pure packet
+writer. Availability/price of that initial work and actual terminal
+readout retain their physical interface; report_bits metadata alone
+does not authorize a physical measurement. In particular a code's
+membership does not establish M1 selection or the SourcePort/CAR
+joint factory. m is a finite programme integer, not a new tunable
+gate or a smooth real-field selector.
+
+Keep the input cuts in542 exactly typed. With CAR FREE the prefix
+Gram is rho^m I16 and feedback is
+-16q_old log(1-zeta+zeta rho^m). In the actual fresh source-blank
+experiment its rank is q_old and feedback is instead
+-q_old log(1-zeta+zeta c_m^2). Thus neither probability rho^m nor
+the conditional normalized output replaces the actual blank return.
+For the WHOLE prepared-prefix/CX word with R FREE, put
+Q'_d=1-zeta+zeta b^4 c_m^2 d; its feedback is
+-q_old[log Q'_1+log Q'_(p^6)], with BOTH R bands. The ordinary
+prefix/bus blank feedback uses the squared scalar corner in542.
+These are new known-work cuts, not replacements for the unchanged
+original full-CAR/free-Spin prices540--541. Do not add the isolated
+prefix and bus feedbacks; the displayed corners are for the whole
+composed word. Every prefix record column and its4m stages enter
+the complete thermal clock/carrier. Full H+J+R is not a sum of
+conditional successful-channel prices.
+
+### Parent consequence and narrow verification
+
+The concrete previously mismatched local reader and source action now
+have a common invariant code, a full signed frame, the original
+coherent recorder, exact conditional identity/CX operations and an
+explicit full Book covector. This contracts a named algebraic
+application of7bk525; it does not discharge physical primitive
+admission or7bj's arbitrary addressed private-packet premise.
+The next application is the actual simultaneous SourcePort/CAR/App
+placement and expanded factory/initial-work realization of542, or a
+proved free-input replacement when that is the original task, with
+its full source. Original free Spin/input/cut
+equations, field selection/dynamics and nonlinear refinement remain.
+No new action, physical selector, task, acceptance registry or
+GR status is introduced: GR_closed=false; positive_gr/raw216 remain open.
+
+The changed check computes just535 and536--542: literal row Parseval,
+one fixed four-reflection contraction, signed frame, new19->27/91
+code, every symbolic GOOD branch, exact unknown-target CX and actual
+quiet/source identities and literal m1/m2 prefix codes using the
+owned evaluator on all unknown-oldRIGHT input columns. It allocates
+at most256-dimensional prefix gate matrices, retaining larger factors
+by proved tensor/contraction
+identities, not by pretending they are absent. The first naive535
+symbolic contraction was deliberately terminated after confirmed CPU
+expression growth; the same contraction was then evaluated using its
+exact Pauli-channel representation and normalized Gaussian-rational
+entries. No expected scientific result or tolerance was weakened.
+Ordinary assertions are enabled, without -O. Unchanged old root,
+GR, clock, density, Lean and stopped-CQ checks are not replayed.
+
+```python
+"""One changed word: shared-port four-reflection bridge from two original App64s."""
+import sympy as s
+I=s.eye(16);O=s.zeros(16);nu=s.Rational(3,5)
+order=(0,2,3,1);cs=[]
+for r in range(4):
+    c=s.zeros(16)
+    for mask in range(16):
+        if not (mask>>r)&1:
+            c[mask|(1<<r),mask]=(-1)**sum((mask>>a)&1 for a in order[:order.index(r)])
+    cs.append(c)
+ns=[c*c.H for c in cs];zs=[I-2*n for n in ns]
+ph=(s.I,s.I,-1,-s.I);words=[]
+for r,c in enumerate(cs):
+    x=nu*ph[r]*c;L=I-ns[r]/5;R=4*I/5+ns[r]/5
+    for w in ((x,L),(x.H,R),(-nu*c,-L),(-nu*c.H,-R)):words.extend((w,w))
+rows=[]
+for lab in range(32):
+    signs=[(-1)**(bin(lab&j).count('1')&1) for j in range(32)]
+    for b in (0,1):rows.append(sum((signs[j]*words[j][b] for j in range(32)),s.zeros(16))/32)
+A=rows[0];kap=s.Rational(9,640)
+eq=lambda X,Y:all(s.simplify(x-y)==0 for x,y in zip(X,Y))
+assert eq(A*A,kap*I)
+assert eq(sum((N.H*N for N in rows),s.zeros(16)),I)
+assert eq(sum((N*N.H for N in rows),s.zeros(16)),I)
+# Exact original bistochastic row channel, using the literal flat defect roots.
+def Phi(X):
+    X=X.applyfunc(s.expand)
+    return (sum((nu**2*(c*X*c.H+c.H*X*c)+(I-n/5)*X*(I-n/5)+(4*I/5+n/5)*X*(4*I/5+n/5) for c,n in zip(cs,ns)),s.zeros(16))/8).applyfunc(s.expand)
+assert eq(Phi(A),s.Rational(17,25)*A)
+# <00|Pi2 Pi1 Pi2 Pi1|00>, computed by contraction, no large allocation or search.
+# Parseval permits this Pauli Kraus form of THE SAME row channel in the contraction.
+# Normalize intermediate Gaussian-rational entries to avoid expression growth.
+majoranas=[m for c in cs for m in (c+c.H,s.I*(c-c.H))]
+paulis=[(s.Rational(81,100),I)]+[(s.Rational(9,400),g) for g in majoranas]+[(s.Rational(1,400),z) for z in zs]
+assert eq(Phi(A),sum((w*g*A*g.H for w,g in paulis),O).applyfunc(s.expand))
+Q=s.zeros(16)
+for w,g in paulis:
+    H=Phi(g.H*A)
+    Q+=(w*A*g*A*H*A).applyfunc(s.expand)
+Q=Q.applyfunc(s.expand)
+assert eq(Q.H,Q)
+assert eq(Q,s.Rational(2177,5000)*kap**2*I)
+M=s.simplify((1-16*kap**2)*I+16*Q)
+E=s.zeros(16,2);E[0,0]=E[5,1]=1
+leak=s.simplify((I-E*E.H)*M*E)
+print('cold Q on code:',E.H*Q*E)
+print('M code:',E.H*M*E)
+print('M scalar?',eq(M,M[0,0]*I))
+print('code leakage:',[(i,j,leak[i,j]) for i in range(16) for j in range(2) if leak[i,j]!=0])
+print('M00,M55:',M[0,0],M[5,5])
+# Positive route: use the reader code preserved by the OWNED source quaternion.
+gam=[cs[0]+cs[0].H]+[cs[r].H-cs[r] for r in (1,2,3)]
+Hi=gam[2]*gam[3];Hj=gam[3]*gam[1];Hk=Hi*Hj
+assert eq(Hi.H,-Hi) and eq(Hi*Hi,-I)
+Li=s.Matrix([[0,-1,0,0],[1,0,0,0],[0,0,0,-1],[0,0,1,0]])
+T=s.zeros(16)
+for q,U in enumerate((I,Hi,Hj,Hk)):
+    for mu in range(4):T[:,4*q+mu]=U[:,mu]
+assert eq(T.H*T,I) and eq(T*s.kronecker_product(Li,s.eye(4))*T.H,Hi)
+EC=s.zeros(16,2);EC[0,0]=EC[12,1]=1
+J=s.Matrix([[0,-1],[1,0]]);Z2=s.diag(1,-1);X2=s.Matrix([[0,1],[1,0]])
+assert eq(Hi*EC,EC*J)
+alpha0=s.Rational(81,16000)
+reader=[(4*rows[j].H*A*rows[9].H*A).applyfunc(s.expand) for j in (13,45)]
+P=[s.diag(1,0),s.diag(0,1)]
+assert eq(reader[0]*EC,alpha0*EC*P[0])
+assert eq(reader[1]*EC,alpha0*EC*P[1])
+Q0=T[:,[0,4,8,12]]
+assert eq(Q0.H*(reader[0].H*reader[0]+reader[1].H*reader[1])*Q0,alpha0**2*s.diag(1,1,0,0))
+
+# Every symbolic GOOD branch, with the actual controlledJ and its THREE-call inverse.
+ck,sk,cl,sl,cj,sj=s.symbols('ck sk cl sl cj sj',real=True)
+Gk=s.Matrix([[ck,-sk],[sk,ck]]);Gl=s.Matrix([[cl,-sl],[sl,cl]])
+Gj=s.Matrix([[cj,-sj],[sj,cj]])
+kp=s.kronecker_product
+CJ=s.diag(s.eye(2),J)
+assert eq(CJ**3,CJ.H)
+def sub_port(W,c):return W[2*c:2*c+2,0:2]
+for b in (0,1):
+    W=kp(Gl,s.eye(2))*(CJ**3)*kp(Gj,s.eye(2))*kp(s.eye(2),P[b])*CJ*kp(Gk,s.eye(2))
+    F=Z2 if b==0 else X2
+    for c in (0,1):
+        Ec=s.diag(Gl[c,0],Gl[c,1])
+        assert eq(sub_port(W,c),F*Ec*Gj*s.diag(ck,sk)*F)
+
+# At the native k=l1,j0 fixture, c1 gives exact identity with alpha*ap per branch.
+p,a=s.symbols('p a',real=True)
+gb=s.groebner([a*a-p,p*p+p-1],a,p)
+red=lambda z:gb.reduce(s.expand(z))[1]
+eqg=lambda X,Y:all(red(x-y)==0 for x,y in zip(X,Y))
+G=s.Matrix([[a,-p],[p,a]])
+for b in (0,1):
+    W=kp(G,s.eye(2))*CJ**3*kp(s.eye(2),P[b])*CJ*kp(G,s.eye(2))
+    assert eqg(sub_port(W,1),a*p*s.eye(2))
+
+# Exact logical source-control->unknown target CX, with all source signs kept.
+CJ3=s.diag(s.eye(4),kp(J,s.eye(2)))
+Copy=s.diag(s.eye(4),kp(s.eye(2),X2))
+CX=kp(P[0],s.eye(2))+kp(P[1],X2)
+for b in (0,1):
+    W=kp(G,s.eye(4))*(CJ3**3)*Copy*kp(s.eye(2),P[b],s.eye(2))*CJ3*kp(G,s.eye(4))
+    K=W[4:8,0:4]
+    assert eqg(K,a*p*kp(s.eye(2),X2**b)*CX)
+
+# REAL quiet native-App history: B^2, not either GOOD projector.
+C16=s.diag(I,Hi)
+Wcold=kp(Gl,I)*(C16**3)*kp(Gj,I)*C16*kp(Gk,I)
+u=cj*(cl*ck-sl*sk);v=sj*(sl*ck-cl*sk)
+H=Wcold[0:16,0:16]
+assert eq(H,u*I+v*Hi)
+assert eq(H.H*H,(u*u+v*v)*I)
+# Noncommuting full boost delta stays in the free-CAR first source.
+gen=cs[0]*cs[1].H+cs[1]*cs[0].H;dx=nu*s.I*cs[1]*gen
+dA=(dx+dx.H)/16;dDel=(A*dA+dA*A).applyfunc(s.expand)
+assert s.expand(s.trace(dDel))==-s.Rational(9,400)
+uu=cl*cj*ck;vv=-cl*sj*sk;ww=sl*sj*ck;zz=sl*cj*sk
+dC=uu*dDel+vv*dDel*Hi+ww*Hi*dDel+zz*Hi*dDel*Hi
+assert s.expand(s.trace(H.H*dC)-(u*u+v*v)*s.trace(dDel))==0
+# The exact CX word has a DIFFERENT full free-target quiet corner.
+Cbig=s.diag(s.eye(32),kp(Hi,s.eye(2)))
+CPbig=s.diag(s.eye(32),kp(I,X2))
+Wq=kp(G,s.eye(32))*(Cbig**3)*CPbig*Cbig*kp(G,s.eye(32))
+assert eqg(Wq[:32,:32],kp(I,p*s.eye(2)-p*p*X2))
+for sign in (-1,1):
+    dCx=p*dDel+sign*p*p*Hi*dDel*Hi
+    assert s.expand(s.trace(dCx)-(p-sign*p*p)*s.trace(dDel))==0
+assert red((p+p*p)**2-1)==0 and red((p-p*p)**2-p**6)==0
+# Native source-work blank prefix: a literal 7t code, never a reset of unknown Spin.
+from pathlib import Path
+import sys
+sys.path.insert(0,str(Path('02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24').resolve()))
+import native_execution as ne
+for m in (1,2):
+    n=6+m;history=tuple(range(5,5+m));old=(n-1,)
+    gates=[]
+    for h in history:
+        gates.extend((ne.Gate('G',(0,)),ne.Gate('SourceI',(0,1,2)),ne.Gate('G',(0,)),ne.Gate('CX',(0,h))))
+    execution=ne.Execution(n,tuple(range(n-1)),old,tuple(gates),ne.G_CX_SOURCE_I,0,(1,2),(0,*history))
+    inv=ne.inventory(execution,max_qubits=n,max_expanded_stages=4*m)
+    assert (inv.g_count,inv.cx_count,inv.source_i_count,inv.cut_rank)==(2*m,m,m,2)
+    inj=ne.input_isometry(execution,max_qubits=n,max_expanded_stages=4*m)
+    V=inj
+    for g in execution.gates:
+        V=ne.gate_matrix(execution,g,max_qubits=n,max_expanded_stages=4*m)*V
+    assert ne.exact_matrix_equal(V.T*V,s.eye(2))
+    assert ne.exact_matrix_equal(V,kp(s.Matrix([V[2*i,0] for i in range(2**(n-1))]),s.eye(2)))
+    # Spin coordinate1/i only and untouched mu0, on EVERY failure branch too.
+    for mask in range(2**n):
+        spin=(mask>>(n-3))&3;mu=(mask>>(n-5))&3
+        if spin not in (0,1) or mu!=0:assert all(v==0 for v in V[mask,:])
+    cold=s.zeros(8,2)
+    for spin in range(4):
+        for r in range(2):cold[2*spin+r,:]=V[(spin<<(n-3))|r,:]
+    L0=ne.P*s.eye(4)-ne.P**2*Li
+    assert ne.exact_matrix_equal(cold,kp((L0**m)[:,0],s.eye(2)))
+    cm=(L0**m)[0,0]
+    assert ne.exact_matrix_equal(inj.T*V,cm*s.eye(2))
+    assert ne.exact_matrix_equal(cold.T*cold,(ne.P**2+ne.P**4)**m*s.eye(2))
+print('PASS fixed four-reflection scalar route-change; exact full-Q8 signed frame; native19->27/91 reader; all GOOD bus branches; identity/CX successes; actual free-CAR quiet corner and noncommuting boost source')
+print('PASS native m1/m2 blank-prefix membership/inventory, all-failure CI support, untouched oldRIGHT, conditional preparation and actual blank-cut return')
+```
+
 ## 8. Reproduction
 
 Run from this directory:
