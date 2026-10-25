@@ -5844,3 +5844,51 @@ snapshot `4443d184663c99ea09f003ff9fed6dd50ef17184`; their 57 declaration rows
 were unchanged. The proof-architecture suite then passed 45/45, and the
 focused Lean module build passed. This refresh records source provenance; it
 does not revise any claim, assembly edge, or physical interpretation.
+
+
+### Current CAR/Hodge inventories and D0.All Bianchi reuse (25 October 2026)
+
+The common Lean source digest after the Bianchi wrapper refactor is
+`d775d429420bea2867f256924cdb55389f29c4dc4653cddfba4576629c9db3bb`.
+All eleven CAR/Hodge declaration inventories now match it and record clean
+generation. Their 57 elaborated declaration records are unchanged from the
+previous inventories. Five were generated at clean snapshot
+`60e4007f7dda87d106b3d54a545a5d03294d30c1`; the remaining six at clean
+snapshot `f9afa4bcfffd8212fc23a3f5ba415aab0c3d3ad0`. Their published Git
+blobs were verified on PR head `29ce093a9596089a522b9a066caa351af8a53fc6`:
+
+| Inventory | Git blob |
+|---|---|
+| `car_zero_mode_claim_declarations_2026-10-25.json` | `bca39a85559d4f4f2dd5131c5724141f0b214ecd` |
+| `car_dirac_square_claim_declarations_2026-10-25.json` | `67dda6f1046549588e47c03225c9f07ca8f671b8` |
+| `car_spectrum_amplification_claim_declarations_2026-10-25.json` | `011e23017ecd0e37ac52617ce60214ce0e6ac5f9` |
+| `dirac_heattrace_multiplicity_claim_declarations_2026-10-25.json` | `3ef683cd63d8f42d7f6902915f0bbf533c9b0cd0` |
+| `hodge_car_dirac_kernel_declaration_2026-10-25.json` | `b6ba36f7861b66ce014fef548575446c511349fa` |
+| `hodge_car_dirac_l2_normalization_declaration_2026-10-25.json` | `43a6ebb12fb17647d8f3cb4bc4e783458bc64727` |
+| `hodge_car_dirac_square_declaration_2026-10-25.json` | `98e13ff7db89f3d8a503975927c985a0e25c9392` |
+| `hodge_shell_energy_limit_declaration_2026-10-25.json` | `3ba6ea8f76f3041cb7f4734bacdcf80e73623760` |
+| `hodge_shell_rank_l2_control_declaration_2026-10-25.json` | `674e0dd696120e816fc4b56004a0c62cb4381e20` |
+| `hodge_spatial_shell_claim_declarations_2026-10-25.json` | `e6a5d1902df9d8386273f590006891a674267a72` |
+| `hodge_square_backward_forward_declaration_2026-10-25.json` | `82288267f25b4f865b5789b0e2fa6cb4591c7ab1` |
+
+The Bianchi claim-reuse command was also rerun against public import
+`D0.All` at clean snapshot `60e4007f7dda87d106b3d54a545a5d03294d30c1`.
+The view is
+`02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/d0_graded_bianchi_proof_architecture_reuse_d0_all_2026-10-25.json`
+(Git blob `b5da6a98169ec9cf1dae9ca8eccbcddba68adceb`), with Lean source
+digest `d775d429420bea2867f256924cdb55389f29c4dc4653cddfba4576629c9db3bb`
+and collector SHA-256
+`6d3b9fc7e65a135a5727905b22b83c1f18131e51639b6e1daaa7420267ab8cb5`.
+It resolves the same five declarations under `D0.All`; their elaborated
+types, proof dependencies and axiom sets are unchanged. The two Gauge
+wrapper source ranges now end at lines 15 and 20 after the direct-core
+refactor. The dependency-to-claim-locator joins remain candidates, not
+accepted application edges.
+
+On this source tree the full proof-architecture suite passes 45/45. The
+narrow `D0.Gauge.GradedBianchiIdentity` build passes (2,949 Lake jobs).
+GitHub `D0 guards` run 5188 and `D0 Lean build` run 3150 both passed on
+`29ce093a9596089a522b9a066caa351af8a53fc6`. These results establish
+reproducible finite declarations and retrieval; they do not freeze or
+accept C0, change claim statuses or owners, select a physical source, or
+close the remaining physical GR premises.
