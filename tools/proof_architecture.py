@@ -404,8 +404,77 @@ def claim_source_candidate_view(dataset: dict[str, Any]) -> dict[str, Any]:
             "interpretation": "Exact heading coordinates are source candidates, not semantic claim acceptance or C0 disposition.",
         })
 
+    heading_claim_links: dict[tuple[str, int], dict[str, set[str]]] = {}
+    for claim_row in rows:
+        claim_id = claim_row.get("claim_id", "")
+        candidate_lists: list[list[dict[str, Any]]] = []
+        for pair in claim_row.get("locator_pairs", []):
+            candidate_lists.append(pair.get("candidates", []))
+            candidate_lists.append(pair.get("ranked_heading_candidates", []))
+        for group in claim_row.get("book_heading_candidates", []):
+            candidate_lists.append(group.get("candidates", []))
+        for candidates in candidate_lists:
+            for candidate in candidates:
+                if not candidate.get("path") or not isinstance(candidate.get("line"), int):
+                    continue
+                link = heading_claim_links.setdefault(
+                    (candidate["path"], candidate["line"]),
+                    {"exact_claim_ids": set(), "ranked_claim_ids": set()},
+                )
+                relation = (
+                    "exact_claim_ids"
+                    if candidate.get("match_kind") == "exact_heading"
+                    else "ranked_claim_ids"
+                )
+                link[relation].add(claim_id)
+
+    book_heading_source_candidates: list[dict[str, Any]] = []
+    for book_key, headings in sorted(book_headings.items()):
+        for heading in headings:
+            link = heading_claim_links.get(
+                (heading["path"], heading["line"]),
+                {"exact_claim_ids": set(), "ranked_claim_ids": set()},
+            )
+            source_unit_key = (
+                f"source:{dataset['snapshot_commit']}:{heading['path']}"
+                f"#L{heading['line']}: {heading['heading']}"
+                if heading["matches_snapshot_commit"] else None
+            )
+            book_heading_source_candidates.append({
+                "book_locator": book_key,
+                "path": heading["path"],
+                "line": heading["line"],
+                "heading": heading["heading"],
+                "candidate_source_unit_key": source_unit_key,
+                "matches_snapshot_commit": heading["matches_snapshot_commit"],
+                "exact_heading_candidate_claim_ids": sorted(link["exact_claim_ids"]),
+                "ranked_heading_candidate_claim_ids": sorted(link["ranked_claim_ids"]),
+            })
+
+    counts.update({
+        "book_heading_count": len(book_heading_source_candidates),
+        "book_headings_with_exact_heading_candidate": sum(
+            bool(row["exact_heading_candidate_claim_ids"])
+            for row in book_heading_source_candidates
+        ),
+        "book_headings_with_ranked_heading_candidate": sum(
+            bool(row["ranked_heading_candidate_claim_ids"])
+            for row in book_heading_source_candidates
+        ),
+        "book_headings_with_both_exact_and_ranked_heading_candidates": sum(
+            bool(row["exact_heading_candidate_claim_ids"]
+                 and row["ranked_heading_candidate_claim_ids"])
+            for row in book_heading_source_candidates
+        ),
+        "book_headings_without_claim_heading_candidate": sum(
+            not row["exact_heading_candidate_claim_ids"]
+            and not row["ranked_heading_candidate_claim_ids"]
+            for row in book_heading_source_candidates
+        ),
+    })
+
     return {
-        "schema": "d0-claim-source-candidate-view-v1",
+        "schema": "d0-claim-source-candidate-view-v2",
         "snapshot_commit": dataset["snapshot_commit"],
         "worktree_dirty": dataset.get("worktree_dirty"),
         "collector_sha256": sha256(pathlib.Path(__file__).resolve()),
@@ -414,10 +483,12 @@ def claim_source_candidate_view(dataset: dict[str, Any]) -> dict[str, Any]:
         "book_source_count": len(book_sources),
         "counts": counts,
         "rows": rows,
+        "book_heading_source_candidates": book_heading_source_candidates,
         "interpretation": (
             "Derived locator view only. Exact heading matches identify candidate source coordinates; "
-            "ranked headings are retrieval candidates, not exact source links. Neither form accepts the "
-            "claim statement, proves semantic coverage, freezes C0, or changes owner/status."
+            "ranked headings are retrieval candidates, not exact source links. The exhaustive heading list "
+            "contains source coordinates, not accepted mathematical units or C0 dispositions. None of these "
+            "fields accepts a claim statement, proves semantic coverage, freezes C0, or changes owner/status."
         ),
     }
 
