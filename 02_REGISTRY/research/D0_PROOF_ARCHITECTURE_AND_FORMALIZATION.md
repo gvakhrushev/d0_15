@@ -6167,3 +6167,25 @@ diagonal symmetry proofs, or the inventory provenance. The review accepts
 only this finite algebra/refactor slice; it does not accept a CAR claim, C0,
 or any physical interpretation. The final-Ready cold-start and integration
 replays remain required after the remaining task changes.
+
+### Hostile-control coverage audit at the current proof-architecture head (25 October 2026)
+
+On clean tree `d66fede1844a66d4e24c3e51df787167fe4f1ec6`, the four relevant
+Python suites pass: proof architecture **45/45**, declaration inventory
+**16/16**, gravity assembly **106/106**, and task dispatch **19/19**. The
+existing tests cover the required fail-closed cases as follows:
+
+| Failure mode | Existing controls |
+|---|---|
+| Missing/incorrect Lean target and stale source | `test_compiled_reuse_reports_missing_canonical_alias_target_without_compiling`; `test_result_crosswalk_stale_current_source_is_citation_only`; `test_inventory_discards_build_when_lean_sources_change` |
+| Goal smuggled in as a premise or unresolved hypothesis | `test_every_hypothesis_needs_a_binding`; `test_unlisted_target_hypothesis_is_rejected`; `test_retained_assumption_prevents_closure_even_after_review`; the CAR inventory regression checks the Clifford-square theorem has exactly the two structural proposition binders |
+| Carrier, action, or normalization mismatch | `test_application_cannot_switch_carrier_without_typed_edge`; `test_same_carrier_different_action_needs_transport`; `test_acceptance_is_invalidated_by_interface_or_statement_change`; `test_complete_proved_transport_can_be_accepted` checks all declared interface fields are mapped |
+| Finite result or no-go inflated to a family/existence result | `test_finite_certificate_cannot_claim_uniform_family`; `test_finite_result_does_not_fill_family_premise`; `test_negative_result_cannot_fill_positive_existence`; `test_classification_cannot_be_relabelled_as_a_positive_goal` |
+| Cycle or dangling proof path | `test_cycle_and_dangling_input_fail`; `test_hidden_cycle_in_hypothesis_bindings_fails` |
+| False obligation closure from PASS, partial evidence, or one AND input | `test_passing_or_proposed_evidence_does_not_discharge_premise`; `test_and_dependencies_do_not_close_from_only_one_premise`; `test_acceptance_marker_cannot_be_replaced_by_arbitrary_green_receipt`; `test_self_review_is_rejected` |
+
+The exact-source and scoping regressions also pass: changing a linked source
+invalidates its declared application while unrelated prose does not, and the
+real cold-start replay above found every required source. This audits the
+current controls; it does not mean the full C0 package has been reviewed or
+accepted. No claim status or scientific owner changed.
