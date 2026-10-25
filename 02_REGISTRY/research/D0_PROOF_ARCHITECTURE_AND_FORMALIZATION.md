@@ -7139,3 +7139,64 @@ partial-trace build passed **2,981/2,981**. Proof-architecture tests pass
 zero warnings, generated Lean views have zero stale entries, and debt remains
 five findings against baseline five. This is a checked mathematical reuse
 improvement; it does not remove the physical-source or GR-selection premises.
+
+### Candidate C0 source-unit reconciliation: nonlinear J² metric tangent (25 October 2026)
+
+This crosswalk separates two adjacent units in the pinned J² bridge instead of
+treating them as one statement. The immutable source is
+`77d3ab6059bd1a3ce48637b97b9f30aa8825fc5f:02_REGISTRY/research/MEMO_A4D_NONLINEAR_EINSTEIN_J2_BRIDGE.md`,
+blob SHA-256 `ce56193edac787640840921310d265e5ebb5a0bd4d628414109dacaa6836b7bc`:
+
+1. Section A, line 16, states that the selected nondegenerate star-action
+   quotient has the nonlinear carrier `Q = ΘηΘᵀ`.
+2. Section B, line 48, states the flat detector tangent
+   `DQ_flat[H] = Hη + ηHᵀ` and the symmetric-direction convention
+   `H(q) = qη/2`, giving the first-order coefficient `q`.
+
+The previous Lean pin is retained as historical provenance:
+`4aff58affff315eae09572640166b90cb0e5bdde`,
+`03_FORMALIZATION/D0/Geometry/A4DSolderMetricCompletion.lean`, SHA-256
+`6234a6480aad6ca2a78caa3a64f59def4c50dc38beeb3c8ab1cc3df94c6db3cb`.
+It proved the finite Role-indexed solder-Gram symmetric tangent, but did not
+encode the source convention or its map to `Q`.
+
+The new vertical slice adds the shared
+`D0.Algebra.finiteGram_one_smul_expand` API and uses it in the current
+`D0.Geometry.A4DSolderMetricCompletion` source adapter. The exact source path
+`Q(1+tH) = (1+tH)η(1+tH)ᵀ` expands with linear term `Hη+ηHᵀ` and retains the
+quadratic remainder. For `H(q)=qη/2`, the Lean theorem proves the linear
+coefficient is `q` and the exact difference quotient is `q+tR`. The adapter
+maps the source frame to the existing solder carrier by `Θ' = Θη`; the
+identity `ηηηᵀ=η` proves this right multiplication preserves the finite Gram
+matrix. `j2DetectorMetricPath_symmetric_solder_adapter` supplies an explicit
+coframe whose existing readout is `q` and whose nonlinear solder-Gram path
+equals the source path. No topological limit theorem is claimed by the
+difference-quotient identity.
+
+The code snapshot is `150c34ad0ff1a1f4eb0edfb06363d7d6bfa45bab`. The geometry
+module SHA-256 is
+`deab902987ff9c518407b637a633547672ca78d6f8dd36a24d6f9879d74fde49`; the
+generic Gram module SHA-256 is
+`26864e383f68dc793907ae14d07982c967346459500aad92d057cfa81c13f900`. The
+targeted `D0.Geometry.A4DSolderMetricCompletion` build passed **2,980/2,980**
+jobs. The updated `metric-provenance` record splits source A and B and pins
+the new declarations without changing its owner or outcome.
+
+The clean `D0.All` crosswalk snapshot is `199a35de3f31c19d3ea193cce046fb3ebda46418`,
+with Lean-source digest
+`7838ba5057e0fc4850096d56ffdafa42f0d471594008de8311d18f6af881aa94` and
+`applications.json` SHA-256
+`fef562348c1009b4b91b80970c6ef277f1e6534c0ddc0c7ec860b267bf32094b`. Both
+source sections are verified but remain candidate section locators requiring
+review. All seven requested explicit Lean declaration locators resolve in the
+compiled environment. The compact recorded crosswalk is
+`sources/d0_proof_architecture_formalization_2026-10-24/metric_provenance_crosswalk_2026-10-25_199a35de.json`,
+SHA-256 `18609f5bb0359260e4d45148fc0b45e08674f9ccac9240699de56198bbd700b5`.
+The semantic relation remains unresolved, claim locators remain unresolved,
+and `acceptance_inferred=false`.
+
+This formalizes a finite matrix bridge for source B. It does not formalize the
+selected finite action's quotient provenance in source A, its nondegeneracy
+sector, global connection elimination, physical metric/source selection, or
+independent C0 acceptance. The two source units remain candidates; no claim
+status or physical interpretation changes.
