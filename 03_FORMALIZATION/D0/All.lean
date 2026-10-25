@@ -11,6 +11,7 @@ import D0.Algebra.CliffordThreeFamilies
 import D0.Algebra.D0InternalDimensionSelector
 import D0.Algebra.FibonacciAFTower
 import D0.Algebra.FibonacciPerronTraceCanonicity
+import D0.Algebra.FiniteCoordinateBasis
 import D0.Algebra.FiniteGramTangent
 import D0.Algebra.FiniteHermitianAdjoint
 import D0.Algebra.FiniteMatrixTensorProduct

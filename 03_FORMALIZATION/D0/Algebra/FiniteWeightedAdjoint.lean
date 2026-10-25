@@ -1,6 +1,7 @@
 import Mathlib.Data.Real.Basic
 import Mathlib.LinearAlgebra.Dimension.Constructions
 import Mathlib.Tactic
+import D0.Algebra.FiniteCoordinateBasis
 import D0.Algebra.FiniteHermitianAdjoint
 
 /-!
@@ -39,16 +40,6 @@ def finiteWeightedAdjoint (w : ι → K)
     intro j hj
     ring
 
-private theorem pi_eq_sum_single (x : ι → K) :
-    x = ∑ i, x i • Pi.single i (1 : K) := by
-  funext j
-  simp only [Finset.sum_apply, Pi.smul_apply, smul_eq_mul]
-  rw [Finset.sum_eq_single j]
-  · simp
-  · intro i hi hij
-    simp [hij]
-  · simp
-
 /-- The defining adjoint identity, valid for every finite linear operator and
 every nowhere-zero diagonal weight profile. -/
 theorem finiteWeightedPairing_adjoint (w : ι → K) (hw : ∀ i, w i ≠ 0)
@@ -58,7 +49,7 @@ theorem finiteWeightedPairing_adjoint (w : ι → K) (hw : ∀ i, w i ≠ 0)
   have hAx : A x = ∑ i, x i • A (Pi.single i (1 : K)) := by
     calc
       A x = A (∑ i, x i • Pi.single i (1 : K)) :=
-        congrArg A (pi_eq_sum_single x)
+        congrArg A (finiteCoordinate_eq_sum_single x)
       _ = ∑ i, x i • A (Pi.single i (1 : K)) := by simp
   have hAx_apply (j : ι) :
       A x j = ∑ i, x i * A (Pi.single i (1 : K)) j := by

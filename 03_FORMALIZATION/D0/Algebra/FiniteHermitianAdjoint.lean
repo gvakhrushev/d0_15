@@ -1,5 +1,6 @@
 import Mathlib.Data.Real.Basic
 import Mathlib.Tactic
+import D0.Algebra.FiniteCoordinateBasis
 
 /-!
 # Finite Hermitian adjoints
@@ -40,17 +41,6 @@ def finiteHermitianAdjoint
     simp [Pi.smul_apply, smul_eq_mul, Finset.mul_sum, mul_assoc,
       mul_comm]
 
-omit [StarRing K] in
-private theorem pi_eq_sum_single (x : ι → K) :
-    x = ∑ i, x i • Pi.single i (1 : K) := by
-  funext j
-  simp only [Finset.sum_apply, Pi.smul_apply, smul_eq_mul]
-  rw [Finset.sum_eq_single j]
-  · simp
-  · intro i hi hij
-    simp [hij]
-  · simp
-
 /-- Pairing against a coordinate basis vector reads that coordinate. This is
 the nondegeneracy witness used to characterize the adjoint uniquely. -/
 theorem finiteHermitianPairing_single_left (i : ι) (z : ι → K) :
@@ -73,7 +63,7 @@ theorem finiteHermitianPairing_adjoint
   have hAx : A x = ∑ i, x i • A (Pi.single i (1 : K)) := by
     calc
       A x = A (∑ i, x i • Pi.single i (1 : K)) :=
-        congrArg A (pi_eq_sum_single x)
+        congrArg A (finiteCoordinate_eq_sum_single x)
       _ = ∑ i, x i • A (Pi.single i (1 : K)) := by simp
   have hAx_apply (j : ι) :
       A x j = ∑ i, x i * A (Pi.single i (1 : K)) j := by
