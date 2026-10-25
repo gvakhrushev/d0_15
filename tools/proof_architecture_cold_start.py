@@ -301,6 +301,23 @@ CASES: list[dict[str, Any]] = [
             "price/source selection, and GR closure remain open."
         ),
     },
+    {
+        "id": "finite-hermitian-adjoint-twisted-car-application",
+        "queries": [
+            "finiteHermitianAdjoint_unique coordinate finite Hermitian pairing conjugate transpose",
+            "dTwistedAdjoint_eq_finiteHermitianAdjoint unit holonomy CAR annihilation formula",
+        ],
+        "required_refs": [
+            "03_FORMALIZATION/D0/Algebra/FiniteHermitianAdjoint.lean",
+            "03_FORMALIZATION/D0/Geometry/ArchiveTwistedHodgeDirac.lean",
+            "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+        ],
+        "scope_review": (
+            "The generic finite-coordinate adjoint is applied to the actual site×Fock twisted CAR differential "
+            "under the explicit unit-holonomy premise. Retrieval does not select a weighted or physical inner product, "
+            "the holonomy, an action, or a physical Hodge/GR application."
+        ),
+    },
 ]
 
 

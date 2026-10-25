@@ -3035,3 +3035,88 @@ The narrow `D0.Geometry.ArchiveTwistedHodgeDirac` target builds with the new
 API imported. This is a compiled finite mathematical adapter, not a positive
 metric theorem or a physical Hodge/GR application. No assembly receipt is
 created from a matching declaration name.
+
+### Real-case cold-start retrieval replay (25 October 2026)
+
+The repository's existing `tools/proof_architecture_cold_start.py` runner was
+replayed against clean snapshot `57c7e64b6bb4ef4fba42eb294a3d110d255e5637`
+with a bounded candidate window of 18. All 16 real search cases found every
+required source as direct searchable content. Where a case declares an exact
+pin or section scope, the runner also checked its pinned commit/blob and
+required sections for the designated queries. The combined 17-check benchmark
+passed: the 16 retrieval cases plus the exact-source-vs-unrelated-prose
+change-impact regression. That control observed the linked source hash change,
+kept it stable after unrelated prose changed, and retained the declared
+application ID `native-result-to-obligation`.
+
+This validates retrieval and source-impact routing only. The runner continues
+to mark semantic scope review as manual; candidate matches, pinned retrieval,
+and the synthetic impact control do not freeze C0, accept a source-to-claim
+application, or discharge a physical obligation. The replay was evaluated on
+the clean committed tree before recording this checkpoint.
+
+Replay provenance: runner SHA-256
+`f1ac1d58e1b8318ad6688315c415243d7150c5c3de97a03dfbc8f0246d22545d`;
+authority digests at the replay snapshot were `claims.csv`
+`e64c1223d0e69c79374b592d4a289d341e64b976337ba8129fb9ab804812f718`,
+`assumptions.csv`
+`2bc9f8c040a776d784fdbfdf62569b72e4f70ff0a182fc66d0ced31cb5f13a36`,
+`formal_support.csv`
+`8e26f20f22698af3761f969556b16e13755f42cd3b910b51cfab15c1bc125c39`,
+`aliases.csv`
+`8cda9e7ebfa26a01a04a4d51b56eb6b93425816a5fe073aa74cbae94041f672f`,
+assembly applications
+`d841fe9ccbb5e578836740b46d436147f74d9eb9c92413bbc924b942be6ee511`,
+assembly contract
+`72fb3bbbc320b4af217cbe7c09580b44556b354e9668cbd11e76933fa8209ba6`, and
+presupposition edges
+`7ff9d1e4ac3447f321afd603eab66554468644bb5fddb33551fdfa22e3e2585d`.
+
+### Cold-start case for the finite-adjoint application (25 October 2026)
+
+The replay above was extended with the real case
+`finite-hermitian-adjoint-twisted-car-application`. Its two queries require
+direct retrieval of the generic finite-coordinate adjoint module, the concrete
+site×Fock twisted-CAR consumer, and this primary artifact. The query-specific
+scope note retains the explicit unit-holonomy premise and says that retrieval
+does not select a weighted/physical inner product, holonomy, action, or physical
+Hodge/GR application.
+
+The expanded runner replay found all 17/17 required-source cases; all required
+paths returned `found_direct_content`. The combined benchmark passed 18/18,
+including the exact-source-versus-unrelated-prose impact regression. The
+semantic scope review remains manual. Snapshot was HEAD
+`57c7e64b6bb4ef4fba42eb294a3d110d255e5637` with `worktree_dirty=true`; the
+runner SHA-256 was
+`b3a5dc1dd53d0dcaf3d9302a0200eb4a14d42a9c3c70dcc5d10e7f6a62ea3791`, and the
+primary artifact at replay time had SHA-256
+`c1009f21ae292db81c4cebbc0fc973a06f94bfce63b153a5e4bedb30cbb5b78d`. The
+seven authority-table digests matched the immediately preceding cold-start
+replay record. As above, this is a retrieval/application-discovery check, not
+a semantic acceptance, C0 freeze, or physical-obligation closure.
+
+### Same-query legacy/new search comparison (25 October 2026)
+
+I compared the existing GR-only `gr_assembly.search` route with the new
+`proof_architecture.full_text_search` route (`limit=5`) on the same two exact
+Lean-name questions. For `finiteHermitianAdjoint_unique` and
+`dTwistedAdjoint_eq_finiteHermitianAdjoint`, the legacy assembly search
+returned zero result groups. The new search returned three direct-content
+candidates for each query, with the exact owning Lean module at rank 2. The
+other two candidates were the primary artifact and the corresponding compiled
+declaration inventory; none of the three returned sources was unrelated. The
+serialized compact-card sizes were 2,488 and 3,330 characters respectively.
+These lengths measure returned candidate cards, not human reading time or
+model token consumption.
+
+The compiled types preserve the relevant scope: the generic uniqueness result
+is over a finite index and a field with `StarRing`, and assumes the candidate
+map satisfies the pairing adjoint identity. The concrete application retains
+`N`, the holonomy `H`, the quantified unit condition
+`∀ r, star (H r) * H r = 1`, and the cochain `φ`; it equates the existing CAR
+annihilation formula with the generic adjoint of `dTwistedLinear`. The scope
+does not require new mathematics for this already compiled finite adapter.
+Physical inner-product or holonomy selection and any physical Hodge/GR
+application remain outside its conclusion. This comparison measures a narrow
+lookup-route difference: `gr_assembly.search` searches its GR assembly result
+groups, while the new route also searches Lean source and compiled inventories.
