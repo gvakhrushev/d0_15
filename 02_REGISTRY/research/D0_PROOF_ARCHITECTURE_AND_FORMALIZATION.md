@@ -5566,3 +5566,42 @@ These are locator-resolution counts only. The existing full cold-start
 summary remains pinned to its earlier registry snapshot; regenerate it with
 the expanded case set at final Ready. No C0 freeze, coverage acceptance,
 operator transfer, or physical closure follows from this note correction.
+
+### Candidate C0 source-unit map: finite Hodge complex core (25 October 2026)
+
+This is a source-map reconciliation for `D0-HODGE-001`, not claim acceptance,
+C0 acceptance, or a coverage result. An independent read-only source review
+was performed at the previous PR head
+`efb6423281c83d206fcf3f085b80471fc85510a6`. The only subsequent `claims.csv`
+edit is row 815; row 192 and the Book/Lean sources below are unchanged. The
+regenerated exact-heading candidate view at source snapshot
+`4b0630b1b3220857e5ef52f3e4041803277b71c7` still marks the registered Book 07
+locator unresolved. Current source identities at that snapshot are:
+
+| Candidate source | Git blob | SHA-256 | Scope |
+|---|---|---|---|
+| `02_REGISTRY/claims.csv` | `f5a01cd7a74ea8940dc40e0ddfd511f1b7d88611` | `f6d0b25659f137fda4ba35f17dbfba00899ec384a42fbad601ebaf1feb4f2003` | Row 192 keeps `D0-HODGE-001` at `BOOK_07 / finite Hodge complex core`, `LEAN_PROVED` / `CORE-FORMALIZED` |
+| `01_BOOKS/BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md` | `a5a0d800d906c3cd02713bab42ab80722fd799a8` | `d02a7fc25034c914a70b70a30339a509e1196b9300cfe2ee4f071409e77737fb` | No exact heading; lines 184–185 only say the finite TT carrier is compatible with a finite Hodge complex |
+| `01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md` | `bea003880b42666ce9568dfa98c8a09b5d6cd852` | `051234590ec6f8cf8d93f84b4ab91779af2925000d2b73edde19091d9f7a70d1` | Line 175 heading “Finite cochain complex and Hodge Laplacian” gives the general carrier; §02.27 at line 1883 records the `K(9,11,13)` cochain complex and `∂₁∂₂=0` at lines 1885–1893, but not the scene ranks, middle exactness, adjoints, or full Hodge results |
+| `03_FORMALIZATION/D0/Topology/BoundaryBoundary.lean` | `7fba27d1d9f680ebb7e63a49b6eae9cefbcba03c` | `c2ad42e5cdb4177a1fa78a2d6fd1a4ba87b305f365bcbba3d1cd44b33630a8e5` | Generic incidence identity `boundary_boundary_zero`, lines 5–7 |
+| `03_FORMALIZATION/D0/Topology/FiniteCochainNoAxion.lean` | `2d9a4175d89b26a9e387fb0bebfad2d9d8df651a` | `c24876d440a0a9f806bbb64ed431d37b5ff51da26444bc8d60ae5285ce397d37` | Generic graded cochain identity `finite_d_d_zero`, lines 10–18 |
+| `03_FORMALIZATION/D0/Geometry/SceneCochainComplex.lean` | `08bc045297b3bb839e7aabfba0ee438280f822ff` | `13798b43d8bca20c0d9bc42efbeb03cc8a9196e4a9316dafff085cc5d9a5f12d` | Lines 10–19 define actual rational tripartite incidence maps for `(p,q,r)=(8,10,12)`, i.e. zone sizes `(9,11,13)`; lines 39–134 prove carrier counts, incidence ranks, nilpotency, and exactness |
+| `03_FORMALIZATION/D0/Geometry/SceneHodgeDecomposition.lean` | `f2ca68e267f6ad86536933249908456160175eef` | `50fd6322248017048bb1b3053d0aad24f4af9588acb0947d2c7545ff6466dd3c` | Lines 10–14 bound this to literal Euclidean cochains; lines 35–163 prove adjoint identities, codifferential nilpotency, exact/co-exact orthogonality, and `H¹=0` |
+| `05_EXPERIMENTS/FiniteHodgeComplex/finite_hodge_manifest.json` | `d250fd7b0eac92056d9e4e1443fdd78feafae068` | `66f6b6c8b39be1cc1bed6ae49fbab7c03abc5e731116cea81e50755642abd7fb` | Historical manifest explicitly says its Book update is in Book 02 |
+| `04_CERTIFICATES/vp_finite_hodge_complex_core.py` | `2dddecaabb44334faaed97af0a36a8972dc55d3a` | `de53f90de28540769321c27848ed7ed3d367044fa5a13493d10113be52a51e44` | Exact certificate is only the tetrahedron (`4,6,4` carriers), `d₁d₂=0`, `L₀`, and `b₀=1`; it does not certify the `K(9,11,13)` specialization |
+
+The independent review concluded that Book 02 is a valid candidate source, but
+the current locator does not resolve and a Book 02 citation alone does not
+cover the whole claim. The appropriate candidate is a composite source map:
+the two Book 02 passages for general context and the scene cochain identity,
+plus the exact generic and specialized Lean modules for the formal claims. The
+exact-heading resolver cannot turn this semantic composite into an accepted
+source automatically. Do not append the current Book 07 body-text locator to
+Book 02 as if both were exact headings, or treat the tetrahedron certificate
+as evidence for the scene specialization.
+
+The source map does not change `claims.csv`, the existing owner, theorem
+locators, release labels, or the explicit limits in the claim: no `B₊`,
+`ker B₊`, `Q_H`, weighted metrics, spatial propagator, or TT dynamics. Source
+owner review and independent C0 disposition remain open; no coverage is
+reported.
