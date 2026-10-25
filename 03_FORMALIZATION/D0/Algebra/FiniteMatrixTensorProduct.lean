@@ -1,13 +1,15 @@
 import Mathlib.Data.Matrix.Basic
 import Mathlib.Tactic
 import Mathlib.LinearAlgebra.Matrix.Trace
+import Mathlib.LinearAlgebra.Matrix.Kronecker
 
 /-!
 # Generic finite matrix tensor products
 
-This module owns finite matrix algebra for product carriers. It is independent
-of any geometric or physical interpretation; concrete operators may retain
-compatibility aliases in their domain modules.
+This module provides stable D0 names for finite matrix algebra on product
+carriers. The tensor constructor delegates to Mathlib's `Matrix.kronecker`;
+CAR-specific identities remain here without geometric or physical
+interpretation.
 -/
 
 namespace D0.Algebra
@@ -16,11 +18,11 @@ open BigOperators Matrix
 
 /-- Entrywise tensor product of two finite square matrices, acting on the
 product carrier. -/
-def finiteMatrixTensorProduct {X Y R : Type*}
+abbrev finiteMatrixTensorProduct {X Y R : Type*}
     [Mul R]
     (A : Matrix X X R) (B : Matrix Y Y R) :
     Matrix (X × Y) (X × Y) R :=
-  fun ⟨x₁, y₁⟩ ⟨x₂, y₂⟩ => A x₁ x₂ * B y₁ y₂
+  Matrix.kronecker A B
 
 /-- Matrix multiplication distributes across the two factors of the finite
 matrix tensor product. -/
@@ -29,25 +31,7 @@ theorem finiteMatrixTensorProduct_mul {X Y R : Type*}
     (A C : Matrix X X R) (B D : Matrix Y Y R) :
     finiteMatrixTensorProduct A B * finiteMatrixTensorProduct C D =
       finiteMatrixTensorProduct (A * C) (B * D) := by
-  ext ⟨x, f⟩ ⟨y, g⟩
-  simp only [Matrix.mul_apply, finiteMatrixTensorProduct]
-  have h_sum_split :
-      (∑ mid : X × Y, A x mid.1 * B f mid.2 * (C mid.1 y * D mid.2 g)) =
-        ∑ a : X, ∑ b : Y, A x a * B f b * (C a y * D b g) := by
-    exact Fintype.sum_prod_type
-      (fun p : X × Y => A x p.1 * B f p.2 * (C p.1 y * D p.2 g))
-  rw [h_sum_split]
-  have h_factor :
-      (∑ a : X, ∑ b : Y, A x a * B f b * (C a y * D b g)) =
-        (∑ a : X, A x a * C a y) * (∑ b : Y, B f b * D b g) := by
-    rw [Finset.sum_mul]
-    apply Finset.sum_congr rfl
-    intro a _
-    rw [Finset.mul_sum]
-    apply Finset.sum_congr rfl
-    intro b _
-    ring
-  rw [h_factor]
+  exact (Matrix.mul_kronecker_mul A C B D).symm
 
 /-- Transposition acts factorwise on the finite matrix tensor product. -/
 theorem finiteMatrixTensorProduct_transpose {X Y R : Type*}
@@ -55,8 +39,7 @@ theorem finiteMatrixTensorProduct_transpose {X Y R : Type*}
     (A : Matrix X X R) (B : Matrix Y Y R) :
     (finiteMatrixTensorProduct A B).transpose =
       finiteMatrixTensorProduct A.transpose B.transpose := by
-  ext ⟨x, f⟩ ⟨y, g⟩
-  rfl
+  exact (Matrix.kroneckerMap_transpose (· * ·) A B).symm
 
 /-- Additivity in the second matrix factor. -/
 theorem finiteMatrixTensorProduct_add_right {X Y R : Type*}
@@ -64,8 +47,7 @@ theorem finiteMatrixTensorProduct_add_right {X Y R : Type*}
     (A : Matrix X X R) (B C : Matrix Y Y R) :
     finiteMatrixTensorProduct A (B + C) =
       finiteMatrixTensorProduct A B + finiteMatrixTensorProduct A C := by
-  ext ⟨x, f⟩ ⟨y, g⟩
-  simp [finiteMatrixTensorProduct, mul_add]
+  exact Matrix.kronecker_add A B C
 
 /-- Scalar compatibility in the second matrix factor. -/
 theorem finiteMatrixTensorProduct_smul_right {X Y R : Type*}
@@ -73,8 +55,7 @@ theorem finiteMatrixTensorProduct_smul_right {X Y R : Type*}
     (A : Matrix X X R) (c : R) (B : Matrix Y Y R) :
     finiteMatrixTensorProduct A (c • B) =
       c • finiteMatrixTensorProduct A B := by
-  ext ⟨x, f⟩ ⟨y, g⟩
-  simp [finiteMatrixTensorProduct, smul_eq_mul, mul_left_comm]
+  exact Matrix.kronecker_smul c A B
 
 /-- The tensor product of identity matrices is the identity on the product
 carrier. -/
@@ -82,9 +63,7 @@ theorem finiteMatrixTensorProduct_one {X Y R : Type*}
     [Fintype X] [Fintype Y] [DecidableEq X] [DecidableEq Y] [Semiring R] :
     finiteMatrixTensorProduct (1 : Matrix X X R) (1 : Matrix Y Y R) =
       (1 : Matrix (X × Y) (X × Y) R) := by
-  ext ⟨x, y⟩ ⟨x', y'⟩
-  by_cases hX : x = x' <;> by_cases hY : y = y' <;>
-    simp [finiteMatrixTensorProduct, Matrix.one_apply, hX, hY]
+  exact Matrix.one_kronecker_one
 
 /-- The trace of `1 ⊗ B` is the first-factor cardinality times the trace of
 `B`. This keeps trace calculations on product carriers in the shared tensor
@@ -94,11 +73,9 @@ theorem finiteMatrixTensorProduct_trace_one_left {X Y R : Type*}
     (B : Matrix Y Y R) :
     Matrix.trace (finiteMatrixTensorProduct (1 : Matrix X X R) B) =
       Fintype.card X • Matrix.trace B := by
-  unfold Matrix.trace Matrix.diag finiteMatrixTensorProduct
-  rw [Fintype.sum_prod_type]
-  simp only [Matrix.one_apply, if_true, one_mul]
-  rw [Finset.sum_const]
-  simp only [Finset.card_univ, nsmul_eq_mul]
+  change Matrix.trace (Matrix.kroneckerMap (· * ·) (1 : Matrix X X R) B) = _
+  rw [Matrix.trace_kronecker, Matrix.trace_one]
+  simp [nsmul_eq_mul]
 
 /-- If the first-factor matrices commute and the second-factor matrices
 anticommute with a Kronecker delta, the double tensor-product sum collapses to

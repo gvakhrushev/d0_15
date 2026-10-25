@@ -396,7 +396,8 @@ theorem carDirac_parity_anticommutation (n : ℕ) :
   rw [mul_spatialIdMatrix (spatialDiracComponent n r)]
   ext ⟨x, f⟩ ⟨y, g⟩
   simp only [Matrix.add_apply, Matrix.zero_apply, tensorProduct,
-    D0.Algebra.finiteMatrixTensorProduct]
+    D0.Algebra.finiteMatrixTensorProduct, Matrix.kronecker,
+    Matrix.kroneckerMap_apply]
   have h_anti := fock_parity_anticommutes_with_gamma r
   have h_entry :
       (fockParityMatrix * fockGamma r + fockGamma r * fockParityMatrix) f g = 0 := by
