@@ -4655,3 +4655,77 @@ non-BOOK sources, malformed composite pairs, and UTF-8 CLI output on a legacy
 Windows code page. C0 remains unfrozen and unaccepted; existing scientific
 owners, physical premises, and the 54 unresolved assembly semantic relations
 remain unchanged.
+
+### Exact first-order CAR action on each archive Fourier fibre (25 October 2026)
+
+`D0.Geometry.ArchiveLorentzianCARDiracApplication` now formalizes the
+first-order Fourier action that the preceding squared-mode result left open.
+On the actual `ArchiveCochainC N` site × Fock carrier, a mode is the product
+character `piCycleChar k` tensored with an arbitrary `ArchiveFockState → ℂ`
+profile. The profile retains all sixteen Fock components.
+
+The forward and backward role multipliers are
+`L * (cycleChar (k r) 1 - 1)` and
+`L * (1 - cycleChar (k r) (-1))`, respectively, where `L = archiveFibers N`.
+The induced `roleWeightedArchiveFourierFockAction` applies the actual CAR
+creation and annihilation maps to the profile, with the supplied role weights
+acting on the backward term. `roleWeightedArchiveCARDirac_fourier_mode`
+proves, for every archive period, momentum, real role-weight function and
+profile, that the full operator maps this Fourier subspace to itself and
+acts by exactly that finite Fock-profile map.
+
+The map's square is also exact:
+`roleWeightedArchiveFourierFockAction_square` gives the real weighted Fourier
+symbol times the identity on every profile. Its proof factors through the
+already-proved full-carrier CAR square and the generic weighted Fourier
+operator theorem, so it does not introduce a second independent symbol
+calculation. `archiveLorentzianCARDirac_fourier_mode` and
+`archiveLorentzianCARFourierFockAction_square` specialize to the repository's
+`roleLorentzSign` and Eq. (5) symbol. The first-order operator generally
+changes the internal Fock profile; this does not make an arbitrary profile a
+first-order eigenvector.
+
+The exact formalization claim is carrier-level operator algebra conditional
+on the explicit role weights. It does not prove that a physical admitted D0
+execution selects the sign assignment, CAR action, metric, source, matter
+coupling or refinement. GR closure and the remaining full-source premises
+remain open. The compiled axiom inventory for the square explicitly reports
+the existing finite CAR anticommutator proofs' `native_decide` trust
+dependencies (`car_create_anticommutator_int`, `car_annihilate_anticommutator_int`
+and `car_mixed_anticommutator_int`), alongside `Classical.choice`,
+`propext` and `Quot.sound`; the declarations are not represented as
+axiom-free. The direct first-order mode-map theorems have only the usual
+classical finite-carrier footprint in their extracted inventory.
+
+The complete compiled declaration inventory is
+`02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/archive_lorentzian_car_fourier_fiber_action_declarations_2026-10-25.json`
+(31 declarations, 142,132 bytes, SHA-256
+`4e5e2af64f2312c32851deec89006836e4fd6cea2d481b93b222730a13bcb1f4`).
+Its Lean source digest is
+`760d0201ef6f1d9cdbebbaa97816e299124a8570660366036deae456b2efcb73`,
+collector SHA-256
+`4dfa08c1502dc0ee81bc9eb590811a536e5367dbfb39c9e552e6ec48051e388d`,
+public import root `D0.All`, and compiled snapshot
+`9c9053ab31f3a669cf1174bb47ded5cf89377d8e` with the worktree dirty.
+The source file SHA-256 is
+`326bdc85b448f8042544a7ee90eaf102e606991246df917585a2591749f79153`.
+The focused Lean build passed all 3,395 jobs, and the final `D0.All` build
+passed all 4,576 jobs. The exact Lean `show --lean` query resolves
+`roleWeightedArchiveCARDirac_fourier_mode` from `D0.All` with its full
+signature, source location and axiom footprint.
+
+The updated cold-start replay found all required sources in 19/19 cases and
+passed the exact-source/unrelated-prose impact control (20 benchmark cases).
+The new three-name query surfaces the primary memo first, the compiled Lean
+module second, and its declaration inventory third; both direct source and
+compiled inventory are present. The compact replay record is
+`02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/archive_lorentzian_car_fourier_fiber_cold_start_2026-10-25.json`
+and carries the runner checksum and the bounded exact-name query evidence.
+The focused proof-architecture tests passed 43/43. `validate_repo.py` reports
+889 claims, 31 assumptions, 58 aliases, 195 formal-support rows, 928
+Lean-closure rows, zero warnings; formalization debt remains at the five-item
+baseline. Work validation, agent-protocol validation, gravity-assembly check,
+generated-view check and the CRLF-aware diff check passed. The goal remains
+in progress: C0 and independent acceptance are still open, as are the 54
+assembly semantic relations, native source/physical selection, matter
+compatibility and GR closure.

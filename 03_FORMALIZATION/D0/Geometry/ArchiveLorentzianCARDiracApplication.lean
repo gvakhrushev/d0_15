@@ -19,9 +19,10 @@ their square on the existing complex site × Fock carrier. It does not select
 the role signs as a physical metric.
 
 Together with the companion Fourier application, this gives the exact
-all-period Fourier eigenvalue of the squared first-order operator on every
-sixteen-component Fock fibre. It remains a conditional operator theorem for
-the explicit role-sign assignment, not a physical source-selection result.
+all-period Fourier action of the first-order operator on every
+sixteen-component Fock fibre and the eigenvalue of its square. It remains a
+conditional operator theorem for the explicit role-sign assignment, not a
+physical source-selection result.
 -/
 
 /-- Role-weighted annihilation part of the source's first-order CAR operator.
@@ -355,8 +356,8 @@ theorem archiveLorentzianCARDirac_square (N : ℕ) (ψ : ArchiveCochainC N) :
 
 /-- On every product-cycle character and arbitrary Fock profile, the actual
 role-signed first-order CAR operator squares to the Eq. (5) Fourier symbol.
-The claim is about the composed square; it does not assert that the first-order
-operator preserves a single character profile. -/
+The claim is about the composed square; the first-order operator generally
+updates the internal Fock profile instead of acting by a scalar. -/
 theorem archiveLorentzianCARDirac_square_fourier_mode (N : ℕ)
     (k : Role → ZMod (archiveFibers N)) (v : ArchiveFockState → ℂ) :
     archiveLorentzianCARDirac N
@@ -366,6 +367,341 @@ theorem archiveLorentzianCARDirac_square_fourier_mode (N : ℕ)
   rw [archiveLorentzianCARDirac_square N
     (archiveFourierFockMode N k v)]
   exact archiveLorentzianDifferenceOperator_fourier_mode N k v
+
+/-! ## Exact first-order action on one Fourier fibre
+
+The second-order symbol alone does not describe the first-order operator on a
+Fourier mode: creation and annihilation change the internal Fock coefficient.
+The definitions below retain that sixteen-component profile and prove that
+the first-order operator preserves the corresponding Fourier subspace.
+-/
+
+/-- The forward shift multiplier of a product character in one archive role. -/
+noncomputable def archiveFourierForwardMultiplier (N : ℕ)
+    (k : Role → ZMod (archiveFibers N)) (r : Role) : ℂ :=
+  (archiveFibers N : ℂ) * (FiniteCycleFourier.cycleChar (k r) 1 - 1)
+
+/-- The backward shift multiplier of a product character in one archive role. -/
+noncomputable def archiveFourierBackwardMultiplier (N : ℕ)
+    (k : Role → ZMod (archiveFibers N)) (r : Role) : ℂ :=
+  (archiveFibers N : ℂ) * (1 - FiniteCycleFourier.cycleChar (k r) (-1))
+
+/-- Creation on the sixteen-component Fock coefficient at fixed momentum. -/
+def archiveFourierCreateProfile (r : Role) (v : ArchiveFockState → ℂ) :
+    ArchiveFockState → ℂ :=
+  fun S => ∑ ket, (carCreate r S ket : ℂ) * v ket
+
+/-- Annihilation on the sixteen-component Fock coefficient at fixed momentum. -/
+def archiveFourierAnnihilateProfile (r : Role) (v : ArchiveFockState → ℂ) :
+    ArchiveFockState → ℂ :=
+  fun S => ∑ ket, (carAnnihilate r S ket : ℂ) * v ket
+
+/-- Exact finite-dimensional CAR action induced on one archive Fourier fibre.
+The source weights act only on the backward annihilation term. -/
+def roleWeightedArchiveFourierFockAction (N : ℕ) (w : Role → ℝ)
+    (k : Role → ZMod (archiveFibers N)) (v : ArchiveFockState → ℂ) :
+    ArchiveFockState → ℂ :=
+  fun S => ∑ r : Role, (
+    archiveFourierForwardMultiplier N k r * archiveFourierCreateProfile r v S -
+      (w r : ℂ) * archiveFourierBackwardMultiplier N k r *
+        archiveFourierAnnihilateProfile r v S)
+
+private theorem archiveFourierCharacter_zero (N : ℕ)
+    (k : Role → ZMod (archiveFibers N)) :
+    FiniteCycleFourier.piCycleChar k (0 : ArchiveRolePhaseGroup N) = 1 := by
+  unfold FiniteCycleFourier.piCycleChar
+  simp [FiniteCycleFourier.cycleChar_zero_right]
+
+private theorem archiveFourierCharacter_roleStep (N : ℕ)
+    (k : Role → ZMod (archiveFibers N)) (r : Role) :
+    FiniteCycleFourier.piCycleChar k (roleStep N r) =
+      FiniteCycleFourier.cycleChar (k r) 1 := by
+  classical
+  unfold FiniteCycleFourier.piCycleChar roleStep
+  rw [Finset.prod_eq_single r]
+  · simp
+  · intro s _ hsr
+    simp [hsr, FiniteCycleFourier.cycleChar_zero_right]
+  · simp
+
+private theorem archiveFourierCharacter_negRoleStep (N : ℕ)
+    (k : Role → ZMod (archiveFibers N)) (r : Role) :
+    FiniteCycleFourier.piCycleChar k (-(roleStep N r)) =
+      FiniteCycleFourier.cycleChar (k r) (-1) := by
+  classical
+  unfold FiniteCycleFourier.piCycleChar roleStep
+  rw [Finset.prod_eq_single r]
+  · simp
+  · intro s _ hsr
+    simp [hsr, FiniteCycleFourier.cycleChar_zero_right]
+  · simp
+
+private theorem archiveFourierCharacter_forwardShift (N : ℕ)
+    (k : Role → ZMod (archiveFibers N)) (r : Role)
+    (x : ArchiveRolePhaseGroup N) :
+    FiniteCycleFourier.piCycleChar k (roleTranslatePlus N r x) =
+      FiniteCycleFourier.cycleChar (k r) 1 * FiniteCycleFourier.piCycleChar k x := by
+  rw [roleTranslatePlus_apply, FiniteCycleFourier.piCycleChar_add_right,
+    archiveFourierCharacter_roleStep]
+  ring
+
+private theorem archiveFourierCharacter_backwardShift (N : ℕ)
+    (k : Role → ZMod (archiveFibers N)) (r : Role)
+    (x : ArchiveRolePhaseGroup N) :
+    FiniteCycleFourier.piCycleChar k (roleTranslateMinus N r x) =
+      FiniteCycleFourier.cycleChar (k r) (-1) * FiniteCycleFourier.piCycleChar k x := by
+  rw [roleTranslateMinus_apply, show x - roleStep N r =
+      x + -(roleStep N r) by rw [sub_eq_add_neg],
+    FiniteCycleFourier.piCycleChar_add_right,
+    archiveFourierCharacter_negRoleStep]
+  ring
+
+private theorem twistedRoleShiftInv_one_archive (N : ℕ) (r : Role)
+    (f : ArchiveRolePhaseGroup N → ℂ) :
+    twistedRoleShiftInv N r 1 f = fun x => f (roleTranslateMinus N r x) := by
+  funext x
+  simp [twistedRoleShiftInv]
+
+private theorem archiveFourierCharacter_forwardDifference (N : ℕ)
+    (k : Role → ZMod (archiveFibers N)) (r : Role) :
+    twistedForwardDifference N r 1 (FiniteCycleFourier.piCycleChar k) =
+      fun x => archiveFourierForwardMultiplier N k r *
+        FiniteCycleFourier.piCycleChar k x := by
+  funext x
+  rw [twistedForward_one, archiveFourierCharacter_forwardShift]
+  unfold archiveFourierForwardMultiplier
+  ring
+
+private theorem archiveFourierCharacter_backwardDifference (N : ℕ)
+    (k : Role → ZMod (archiveFibers N)) (r : Role) :
+    twistedBackwardDifference N r 1 (FiniteCycleFourier.piCycleChar k) =
+      fun x => archiveFourierBackwardMultiplier N k r *
+        FiniteCycleFourier.piCycleChar k x := by
+  funext x
+  change (archiveFibers N : ℂ) *
+      (FiniteCycleFourier.piCycleChar k x -
+        twistedRoleShiftInv N r 1 (FiniteCycleFourier.piCycleChar k) x) = _
+  rw [twistedRoleShiftInv_one_archive]
+  change (archiveFibers N : ℂ) *
+      (FiniteCycleFourier.piCycleChar k x -
+        FiniteCycleFourier.piCycleChar k (roleTranslateMinus N r x)) = _
+  rw [archiveFourierCharacter_backwardShift]
+  unfold archiveFourierBackwardMultiplier
+  ring
+
+/-- The archive forward creation term acts within a single Fourier fibre and
+updates only its Fock profile. -/
+theorem twistedCreateDirection_fourier_mode (N : ℕ)
+    (k : Role → ZMod (archiveFibers N)) (r : Role)
+    (v : ArchiveFockState → ℂ) :
+    twistedCreateDirection N (fun _ => 1) r (archiveFourierFockMode N k v) =
+      archiveFourierFockMode N k
+        (fun S => archiveFourierForwardMultiplier N k r *
+          archiveFourierCreateProfile r v S) := by
+  classical
+  funext p
+  change (∑ ket, (carCreate r p.2 ket : ℂ) *
+      twistedForwardDifference N r 1
+        (fun x => v ket * FiniteCycleFourier.piCycleChar k x) p.1) = _
+  have hdiff (ket : ArchiveFockState) :
+      twistedForwardDifference N r 1
+          (fun x => v ket * FiniteCycleFourier.piCycleChar k x) p.1 =
+        v ket * archiveFourierForwardMultiplier N k r *
+          FiniteCycleFourier.piCycleChar k p.1 := by
+    calc
+      twistedForwardDifference N r 1
+          (fun x => v ket * FiniteCycleFourier.piCycleChar k x) p.1 =
+        v ket * twistedForwardDifference N r 1
+          (FiniteCycleFourier.piCycleChar k) p.1 := by
+            rw [twistedForwardDifference_const_mul]
+      _ = v ket * (archiveFourierForwardMultiplier N k r *
+          FiniteCycleFourier.piCycleChar k p.1) := by
+            rw [archiveFourierCharacter_forwardDifference]
+      _ = v ket * archiveFourierForwardMultiplier N k r *
+          FiniteCycleFourier.piCycleChar k p.1 := by ring
+  simp_rw [hdiff]
+  unfold archiveFourierFockMode archiveFourierCreateProfile
+  calc
+    (∑ ket, (carCreate r p.2 ket : ℂ) *
+        (v ket * archiveFourierForwardMultiplier N k r *
+          FiniteCycleFourier.piCycleChar k p.1)) =
+        ∑ ket, ((carCreate r p.2 ket : ℂ) * v ket) *
+          (archiveFourierForwardMultiplier N k r *
+            FiniteCycleFourier.piCycleChar k p.1) := by
+              apply Finset.sum_congr rfl
+              intro ket _
+              ring
+    _ = (∑ ket, (carCreate r p.2 ket : ℂ) * v ket) *
+          (archiveFourierForwardMultiplier N k r *
+            FiniteCycleFourier.piCycleChar k p.1) := by rw [← Finset.sum_mul]
+    _ = (archiveFourierForwardMultiplier N k r *
+          (∑ ket, (carCreate r p.2 ket : ℂ) * v ket)) *
+          FiniteCycleFourier.piCycleChar k p.1 := by ring
+
+/-- The archive backward annihilation term acts within a single Fourier fibre
+and updates only its Fock profile. -/
+theorem twistedAnnihilateDirection_fourier_mode (N : ℕ)
+    (k : Role → ZMod (archiveFibers N)) (r : Role)
+    (v : ArchiveFockState → ℂ) :
+    twistedAnnihilateDirection N (fun _ => 1) r (archiveFourierFockMode N k v) =
+      archiveFourierFockMode N k
+        (fun S => archiveFourierBackwardMultiplier N k r *
+          archiveFourierAnnihilateProfile r v S) := by
+  classical
+  funext p
+  change (∑ ket, (carAnnihilate r p.2 ket : ℂ) *
+      twistedBackwardDifference N r 1
+        (fun x => v ket * FiniteCycleFourier.piCycleChar k x) p.1) = _
+  have hdiff (ket : ArchiveFockState) :
+      twistedBackwardDifference N r 1
+          (fun x => v ket * FiniteCycleFourier.piCycleChar k x) p.1 =
+        v ket * archiveFourierBackwardMultiplier N k r *
+          FiniteCycleFourier.piCycleChar k p.1 := by
+    calc
+      twistedBackwardDifference N r 1
+          (fun x => v ket * FiniteCycleFourier.piCycleChar k x) p.1 =
+        v ket * twistedBackwardDifference N r 1
+          (FiniteCycleFourier.piCycleChar k) p.1 := by
+            rw [twistedBackwardDifference_const_mul]
+      _ = v ket * (archiveFourierBackwardMultiplier N k r *
+          FiniteCycleFourier.piCycleChar k p.1) := by
+            rw [archiveFourierCharacter_backwardDifference]
+      _ = v ket * archiveFourierBackwardMultiplier N k r *
+          FiniteCycleFourier.piCycleChar k p.1 := by ring
+  simp_rw [hdiff]
+  unfold archiveFourierFockMode archiveFourierAnnihilateProfile
+  calc
+    (∑ ket, (carAnnihilate r p.2 ket : ℂ) *
+        (v ket * archiveFourierBackwardMultiplier N k r *
+          FiniteCycleFourier.piCycleChar k p.1)) =
+        ∑ ket, ((carAnnihilate r p.2 ket : ℂ) * v ket) *
+          (archiveFourierBackwardMultiplier N k r *
+            FiniteCycleFourier.piCycleChar k p.1) := by
+              apply Finset.sum_congr rfl
+              intro ket _
+              ring
+    _ = (∑ ket, (carAnnihilate r p.2 ket : ℂ) * v ket) *
+          (archiveFourierBackwardMultiplier N k r *
+            FiniteCycleFourier.piCycleChar k p.1) := by rw [← Finset.sum_mul]
+    _ = (archiveFourierBackwardMultiplier N k r *
+          (∑ ket, (carAnnihilate r p.2 ket : ℂ) * v ket)) *
+          FiniteCycleFourier.piCycleChar k p.1 := by ring
+
+/-- The full role-weighted first-order operator leaves each product Fourier
+subspace invariant. Its action is the displayed finite CAR map on the Fock
+profile, not scalar multiplication on an arbitrary profile. -/
+theorem roleWeightedArchiveCARDirac_fourier_mode (N : ℕ)
+    (w : Role → ℝ) (k : Role → ZMod (archiveFibers N))
+    (v : ArchiveFockState → ℂ) :
+    roleWeightedArchiveCARDirac N w (archiveFourierFockMode N k v) =
+      archiveFourierFockMode N k (roleWeightedArchiveFourierFockAction N w k v) := by
+  classical
+  funext p
+  unfold roleWeightedArchiveCARDirac dTwisted roleWeightedArchiveCodifferential
+    roleWeightedArchiveFourierFockAction
+  simp only [Pi.add_apply, Finset.sum_apply]
+  simp_rw [twistedCreateDirection_fourier_mode,
+    twistedAnnihilateDirection_fourier_mode]
+  simp only [Pi.smul_apply, smul_eq_mul, archiveFourierFockMode]
+  calc
+    (∑ r : Role, archiveFourierForwardMultiplier N k r *
+        archiveFourierCreateProfile r v p.2 *
+          FiniteCycleFourier.piCycleChar k p.1) +
+      ∑ r : Role, -(w r : ℂ) *
+        (archiveFourierBackwardMultiplier N k r *
+          archiveFourierAnnihilateProfile r v p.2 *
+            FiniteCycleFourier.piCycleChar k p.1) =
+      ∑ r : Role, (
+        (archiveFourierForwardMultiplier N k r *
+            archiveFourierCreateProfile r v p.2 *
+            FiniteCycleFourier.piCycleChar k p.1) +
+          (-(w r : ℂ) * (archiveFourierBackwardMultiplier N k r *
+            archiveFourierAnnihilateProfile r v p.2 *
+            FiniteCycleFourier.piCycleChar k p.1))) := by
+              rw [← Finset.sum_add_distrib]
+    _ = ∑ r : Role,
+          ((archiveFourierForwardMultiplier N k r *
+              archiveFourierCreateProfile r v p.2 -
+            (w r : ℂ) * archiveFourierBackwardMultiplier N k r *
+              archiveFourierAnnihilateProfile r v p.2) *
+            FiniteCycleFourier.piCycleChar k p.1) := by
+              apply Finset.sum_congr rfl
+              intro r _
+              ring
+    _ = (∑ r : Role, (
+          archiveFourierForwardMultiplier N k r *
+              archiveFourierCreateProfile r v p.2 -
+            (w r : ℂ) * archiveFourierBackwardMultiplier N k r *
+              archiveFourierAnnihilateProfile r v p.2)) *
+            FiniteCycleFourier.piCycleChar k p.1 := by rw [← Finset.sum_mul]
+
+/-- The explicit repository Lorentz-sign assignment specializes the generic
+first-order fibre action. This is an operator specialization, not a proof that
+the assignment is physically selected. -/
+theorem archiveLorentzianCARDirac_fourier_mode (N : ℕ)
+    (k : Role → ZMod (archiveFibers N)) (v : ArchiveFockState → ℂ) :
+    archiveLorentzianCARDirac N (archiveFourierFockMode N k v) =
+      archiveFourierFockMode N k
+        (roleWeightedArchiveFourierFockAction N roleLorentzSign k v) := by
+  exact roleWeightedArchiveCARDirac_fourier_mode N roleLorentzSign k v
+
+/-- The generic weighted second-order operator acts on the actual site × Fock
+carrier with its role-weighted scalar Fourier symbol. -/
+theorem roleWeightedArchiveDifferenceOperator_fourier_mode (N : ℕ)
+    (w : Role → ℝ) (k : Role → ZMod (archiveFibers N))
+    (v : ArchiveFockState → ℂ) :
+    roleWeightedArchiveDifferenceOperator N w (archiveFourierFockMode N k v) =
+      fun p => Complex.ofReal (roleWeightedArchiveFourierSymbol N w k) *
+        archiveFourierFockMode N k v p := by
+  funext p
+  change roleWeightedArchiveDifferenceLaplacian N w
+      (fun x => v p.2 * FiniteCycleFourier.piCycleChar k x) p.1 = _
+  rw [roleWeightedArchiveDifferenceLaplacian_const_mul]
+  change v p.2 * roleWeightedArchiveDifferenceLaplacian N w
+      (FiniteCycleFourier.piCycleChar k) p.1 = _
+  rw [roleWeightedArchiveDifferenceLaplacian_fourier]
+  simp only [archiveFourierFockMode]
+  ring
+
+/-- The induced finite CAR map has the same signed second-order Fourier symbol
+as the full archive operator. This is an operator identity on the Fock fibre;
+the role weights remain explicit inputs. -/
+theorem roleWeightedArchiveFourierFockAction_square (N : ℕ)
+    (w : Role → ℝ) (k : Role → ZMod (archiveFibers N))
+    (v : ArchiveFockState → ℂ) :
+    roleWeightedArchiveFourierFockAction N w k
+        (roleWeightedArchiveFourierFockAction N w k v) =
+      fun S => Complex.ofReal (roleWeightedArchiveFourierSymbol N w k) * v S := by
+  apply archiveFourierFockMode_injective N k
+  calc
+    archiveFourierFockMode N k
+        (roleWeightedArchiveFourierFockAction N w k
+          (roleWeightedArchiveFourierFockAction N w k v)) =
+        roleWeightedArchiveCARDirac N w
+          (roleWeightedArchiveCARDirac N w (archiveFourierFockMode N k v)) := by
+            rw [← roleWeightedArchiveCARDirac_fourier_mode,
+              ← roleWeightedArchiveCARDirac_fourier_mode]
+    _ = roleWeightedArchiveDifferenceOperator N w
+          (archiveFourierFockMode N k v) :=
+            roleWeightedArchiveCARDirac_square N w (archiveFourierFockMode N k v)
+    _ = fun p => Complex.ofReal (roleWeightedArchiveFourierSymbol N w k) *
+          archiveFourierFockMode N k v p :=
+            roleWeightedArchiveDifferenceOperator_fourier_mode N w k v
+    _ = archiveFourierFockMode N k
+          (fun S => Complex.ofReal (roleWeightedArchiveFourierSymbol N w k) * v S) := by
+            funext p
+            simp [archiveFourierFockMode]
+            ring
+
+/-- With the repository role signs, the induced Fock-fibre map squares to the
+Eq. (5) symbol on every profile and every archive Fourier momentum. -/
+theorem archiveLorentzianCARFourierFockAction_square (N : ℕ)
+    (k : Role → ZMod (archiveFibers N)) (v : ArchiveFockState → ℂ) :
+    roleWeightedArchiveFourierFockAction N roleLorentzSign k
+        (roleWeightedArchiveFourierFockAction N roleLorentzSign k v) =
+      fun S => Complex.ofReal (archiveLorentzianFourierSymbol N k) * v S := by
+  rw [roleWeightedArchiveFourierFockAction_square,
+    roleWeightedArchiveFourierSymbol_lorentzian]
 
 end
 

@@ -1246,6 +1246,10 @@ class ProofArchitectureTests(unittest.TestCase):
             case["required_refs"],
         )
         self.assertIn(
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/archive_lorentzian_car_fourier_fiber_action_declarations_2026-10-25.json",
+            case["required_refs"],
+        )
+        self.assertIn(
             "02_REGISTRY/research/certificates/a4d_native_weighted_dirac_boundary.lean",
             case["required_refs"],
         )
@@ -1271,13 +1275,22 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertIn("all-size character eigenbasis", case["scope_review"])
         self.assertIn("explicitly role-signed first-order CAR operator", case["scope_review"])
         self.assertIn("all-size squared-mode law", case["scope_review"])
-        self.assertIn("Direct first-order character-profile action", case["scope_review"])
+        self.assertIn("direct first-order Fourier action", case["scope_review"])
+        self.assertIn("finite CAR map on each Fock profile", case["scope_review"])
+        self.assertIn("does not make an arbitrary profile a first-order eigenvector",
+                      case["scope_review"])
         self.assertIn("physical action/source selection", case["scope_review"])
         self.assertTrue(any("archiveLorentzianDifferenceLaplacian_fourier" in query
                             for query in case["queries"]))
         self.assertTrue(any("archiveLorentzianDifferenceOperator_fourier_mode" in query
                             for query in case["queries"]))
         self.assertTrue(any("archiveLorentzianCARDirac_square_fourier_mode" in query
+                            for query in case["queries"]))
+        self.assertTrue(any("roleWeightedArchiveCARDirac_fourier_mode" in query
+                            for query in case["queries"]))
+        self.assertTrue(any("roleWeightedArchiveFourierFockAction_square" in query
+                            for query in case["queries"]))
+        self.assertTrue(any("archiveLorentzianCARFourierFockAction_square" in query
                             for query in case["queries"]))
         self.assertTrue(any("archiveRoleFourierInversion" in query
                             for query in case["queries"]))

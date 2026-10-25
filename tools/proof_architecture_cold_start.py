@@ -406,6 +406,7 @@ CASES: list[dict[str, Any]] = [
             "archiveLorentzianDifferenceLaplacian_fourier roleWeightedArchiveFourierSymbol_lorentzian",
             "archiveLorentzianDifferenceOperator_fourier_mode archiveFourierFockMode archiveLorentzianFourierSymbol",
             "archiveLorentzianCARDirac_square_fourier_mode roleWeightedArchiveCARDirac_square roleWeightedArchiveCodifferential_cross",
+            "roleWeightedArchiveCARDirac_fourier_mode roleWeightedArchiveFourierFockAction_square archiveLorentzianCARFourierFockAction_square",
             "archiveRoleFourierInversion actual archive site scalar field",
         ],
         "required_refs": [
@@ -416,6 +417,7 @@ CASES: list[dict[str, Any]] = [
             "03_FORMALIZATION/D0/Geometry/ArchiveLorentzianFourierApplication.lean",
             "03_FORMALIZATION/D0/Geometry/ArchiveLorentzianCARDiracApplication.lean",
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/archive_lorentzian_fourier_module_declarations_2026-10-25.json",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/archive_lorentzian_car_fourier_fiber_action_declarations_2026-10-25.json",
         ],
         "scope_review": (
             "The generic theorem identifies matrix multiplication in the existing ArchiveCochainBasis "
@@ -429,8 +431,10 @@ CASES: list[dict[str, Any]] = [
             "an all-size character eigenbasis, a complete scalar site Fourier inversion, and an injective "
             "sixteen-label Fock coefficient embedding per momentum. A companion module defines the explicitly "
             "role-signed first-order CAR operator and proves its square equals that operator on the full carrier; "
-            "composition gives the Eq. (5) all-size squared-mode law for every Fock profile. Direct first-order "
-            "character-profile action, physical action/source selection, and GR closure remain open."
+            "composition gives the Eq. (5) all-size squared-mode law for every Fock profile. Its direct first-order "
+            "Fourier action is now an explicit finite CAR map on each Fock profile, and the induced map squares to "
+            "the same symbol. This does not make an arbitrary profile a first-order eigenvector; physical "
+            "action/source selection and GR closure remain open."
         ),
     },
 ]
