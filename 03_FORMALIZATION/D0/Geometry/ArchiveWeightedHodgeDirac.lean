@@ -106,13 +106,9 @@ counting-pairing theorem and its exact finite-carrier bridge. -/
 theorem hodgeCarDirac_finiteHermitianAdjoint_eq_self (N : ℕ) :
     D0.Algebra.finiteHermitianAdjoint (hodgeCarDiracₗ N) =
       hodgeCarDiracₗ N := by
-  apply D0.Algebra.finiteHermitianAdjoint_unique
-  intro ψ φ
-  change D0.Algebra.finiteHermitianPairing (hodgeCarDirac N ψ) φ =
-    D0.Algebra.finiteHermitianPairing ψ (hodgeCarDirac N φ)
-  rw [← cochainPairing_eq_finiteHermitianPairing N (hodgeCarDirac N ψ) φ,
-    ← cochainPairing_eq_finiteHermitianPairing N ψ (hodgeCarDirac N φ)]
-  exact hodgeCarDirac_self_adjoint N ψ φ
+  rw [hodgeCarDiracₗ_eq_finiteHermitianHodgeDirac]
+  exact D0.Algebra.finiteHermitianAdjoint_finiteHermitianHodgeDirac_eq_self
+    (dForwardₗ N)
 
 /-- At the real unit profile, the supplied weighted adjoint of the existing
 Hodge/CAR operator is the operator itself, via the standard Hermitian API. -/

@@ -353,6 +353,7 @@ CASES: list[dict[str, Any]] = [
             "hodgeCarDiracHermitian_square",
             "hodgeCarDirac_sq generic Hodge anticommutator",
             "hodgeCarDiracₗ_eq_finiteHermitianHodgeDirac",
+            "finiteHermitianAdjoint_finiteHermitianHodgeDirac_eq_self",
         ],
         "required_refs": [
             "03_FORMALIZATION/D0/Algebra/FiniteHermitianAdjoint.lean",
@@ -371,6 +372,7 @@ CASES: list[dict[str, Any]] = [
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/real_hodge_car_hermitian_adjoint_self_2026-10-25.json",
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/real_hodge_car_unit_profile_adjoint_self_2026-10-25.json",
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/real_hodge_car_square_from_generic_hermitian_2026-10-25.json",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/real_hodge_car_generic_adjoint_self_2026-10-25.json",
             "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
         ],
         "scope_review": (
@@ -379,9 +381,10 @@ CASES: list[dict[str, Any]] = [
             "counting-pairing theorem. The generic Hermitian Hodge--Dirac self-adjointness and square/anticommutator "
             "laws are applied to the registered nilpotent cubical differential, and the real CAR codifferential is "
             "identified as the standard Hermitian adjoint of its forward differential. The existing function-level "
-            "square is then recovered from the generic anticommutator and the owned CAR cross-term Laplacian. The "
-            "concrete profile equality is only at the unit profile: arbitrary nonzero weighted profiles remain in "
-            "the bilinear API, and no geometric or physical Hodge profile is selected."
+            "square is then recovered from the generic anticommutator and the owned CAR cross-term Laplacian. A "
+            "generic typed adjoint-equality corollary is also consumed by the real Hodge/CAR self-adjoint theorem. "
+            "The concrete profile equality is only at the unit profile: arbitrary nonzero weighted profiles remain "
+            "in the bilinear API, and no geometric or physical Hodge profile is selected."
         ),
     },
 ]

@@ -3651,3 +3651,61 @@ assembly contract
 `72fb3bbbc320b4af217cbe7c09580b44556b354e9668cbd11e76933fa8209ba6`, and
 presupposition edges
 `7ff9d1e4ac3447f321afd603eab66554468644bb5fddb33551fdfa22e3e2585d`.
+
+### Generic typed adjoint equality for finite Hodge--Dirac operators (25 October 2026)
+
+The generic finite Hermitian API now upgrades Hodge--Dirac self-adjointness
+from the pairing identity to the typed operator equality
+`finiteHermitianAdjoint (A + A†) = A + A†`. It follows directly from the
+existing pairing theorem and finite adjoint uniqueness. The real Hodge/CAR
+application now rewrites its established linear map through the registered
+`dForwardₗ` Hodge--Dirac adapter and consumes this generic equality, replacing
+its custom coordinate-pairing uniqueness proof. The existing unit-profile
+weighted corollary remains unchanged.
+
+The five exact declarations are recorded in
+`sources/d0_proof_architecture_formalization_2026-10-24/real_hodge_car_generic_adjoint_self_2026-10-25.json`
+(SHA-256 `a78c3e153a16a3f3fb4590bef2f3b88de0e2fe08c76a52445ea2ab623bbb423e`,
+collector SHA-256 `c256bf5b97bd04bb7927b0786a4c25cb0d72b912adb4aa9016f3f3db3bf72f0e`,
+public import root `D0.Geometry.ArchiveWeightedHodgeDirac`). The inventory was
+compiled at snapshot `81057d96d2bb04c9d081a10835ab3eb827537e40` with
+`worktree_dirty=true`, Lean 4.30.0, and Lean-source digest
+`9673ad896d3bf6e9f0f43ff45db0b3b19bad01975506800a9d5df79173769e80`. Its
+trust footprint for all five declarations is `Classical.choice`, `Quot.sound`,
+and `propext`. Narrow builds passed for
+`D0.Algebra.FiniteHermitianAdjoint` and
+`D0.Geometry.ArchiveWeightedHodgeDirac` (2,989 dependency jobs). No physical
+profile or source is selected by this operator identity.
+
+
+### Cold-start replay after generic Hodge/CAR adjoint equality (25 October 2026)
+
+The expanded `real-unit-profile-weighted-hermitian-bridge` case now searches the
+new generic typed operator-adjoint equality and the real Hodge/CAR application
+that consumes it. Every required Lean source, prior inventory, the new
+five-declaration inventory and this primary artifact were found as direct
+content. The complete suite passed 18/18 search cases and the 19/19 benchmark,
+including the exact-source-versus-unrelated-prose impact regression. The
+semantic scope review remains manual; no physical profile or GR obligation is
+closed by these algebraic equalities.
+
+Replay used candidate limit 18 at HEAD
+`81057d96d2bb04c9d081a10835ab3eb827537e40`, `worktree_dirty=true`. Runner
+SHA-256 is
+`e5b63ce1cebcf4e1d376c9a0e51f1f45788458ef3004f5822312fceed47c17a1`; the
+primary artifact at replay time had SHA-256
+`374eb5975b32939d81946b00fe08abce766fda609902a4ccc64b411de8702bf9`. The
+authority input digests were `claims.csv`
+`e64c1223d0e69c79374b592d4a289d341e64b976337ba8129fb9ab804812f718`,
+`assumptions.csv`
+`2bc9f8c040a776d784fdbfdf62569b72e4f70ff0a182fc66d0ced31cb5f13a36`,
+`formal_support.csv`
+`e6ca1a5ea0d3272ff3967da52a5885fe95d2ffd2f96fb5ff77449eca27079a56`,
+`aliases.csv`
+`8cda9e7ebfa26a01a04a4d51b56eb6b93425816a5fe073aa74cbae94041f672f`,
+assembly applications
+`d841fe9ccbb5e578836740b46d436147f74d9eb9c92413bbc924b942be6ee511`,
+assembly contract
+`72fb3bbbc320b4af217cbe7c09580b44556b354e9668cbd11e76933fa8209ba6`, and
+presupposition edges
+`7ff9d1e4ac3447f321afd603eab66554468644bb5fddb33551fdfa22e3e2585d`.

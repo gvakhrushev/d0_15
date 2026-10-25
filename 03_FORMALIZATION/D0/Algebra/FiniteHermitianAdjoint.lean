@@ -175,6 +175,16 @@ theorem finiteHermitianAdjoint_unique
   have hPair := hAdj.symm.trans (hB (Pi.single i (1 : K)) y)
   simpa only [finiteHermitianPairing_single_left] using hPair
 
+/-- The generic finite Hermitian Hodge--Dirac operator is its own typed
+Hermitian adjoint, as an operator equality rather than only a pairing law. -/
+theorem finiteHermitianAdjoint_finiteHermitianHodgeDirac_eq_self
+    (A : (ι → K) →ₗ[K] (ι → K)) :
+    finiteHermitianAdjoint (finiteHermitianHodgeDirac A) =
+      finiteHermitianHodgeDirac A := by
+  apply finiteHermitianAdjoint_unique
+  intro x y
+  exact finiteHermitianHodgeDirac_pairing_self_adjoint A x y
+
 /-- The Hermitian adjoint reverses composition order. -/
 theorem finiteHermitianAdjoint_comp
     (A B : (ι → K) →ₗ[K] (ι → K)) :
