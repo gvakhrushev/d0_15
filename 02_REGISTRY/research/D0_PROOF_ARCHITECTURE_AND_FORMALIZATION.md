@@ -3584,3 +3584,70 @@ assembly contract
 `72fb3bbbc320b4af217cbe7c09580b44556b354e9668cbd11e76933fa8209ba6`, and
 presupposition edges
 `7ff9d1e4ac3447f321afd603eab66554468644bb5fddb33551fdfa22e3e2585d`.
+
+### Real Hodge/CAR square through the generic Hermitian API (25 October 2026)
+
+`ArchiveHodgeCARDiracSquare` now packages the registered real forward CAR
+differential and counting codifferential as finite linear maps on the actual
+site × Fock carrier. The existing counting-pairing identity, converted to the
+standard real finite Hermitian pairing, proves that this codifferential is
+exactly the Hermitian adjoint of `dForwardₗ`. Nilpotency is transferred from
+the existing function-level theorem, so the generic Hermitian Hodge-square
+theorem yields the typed CAR anticommutator. The previous function-level
+`hodgeCarDirac_sq` is now recovered from that anticommutator and the already
+owned `hodgeCarDirac_cross` identity; its theorem statement and fibre corollary
+are preserved. The linearity lemmas for the backward CAR summand and the
+codifferential now live beside their operator and square laws, with their
+public theorem names retained for existing consumers.
+
+`ArchiveHodgeCARDiracKernel` also proves that its pre-existing
+`hodgeCarDiracₗ` is the pointwise generic Hermitian adapter. The exact
+declaration inventory records all eleven adapter and refactor declarations,
+including their elaborated types, dependencies and trust footprints:
+
+- `sources/d0_proof_architecture_formalization_2026-10-24/real_hodge_car_square_from_generic_hermitian_2026-10-25.json`, SHA-256 `b72fef51de38cb26b27852170236e8a28cc3c2669d1859a179cc4f0f7e90546f`, collector SHA-256 `5371efd69f4423aa2a60238f8190002b923d4e6dcb24c7034f66122bb7f9e4a9`, public import root `D0.Geometry.ArchiveHodgeCARDiracKernel`.
+
+The inventory was compiled at snapshot `00c5209a6da14b7b9d40bcb66deb395a965bb3c5` with `worktree_dirty=true`, Lean 4.30.0, and Lean-source digest `b7bcb4e77a930c6a0d0c922b8677d0a1be4d6fc888f9145ce7eaa957368c1af1`. The established `native_decide` dependency in the CAR anticommutator enters through the existing nilpotency and square proofs and is retained in the inventory. `formal_support.csv` names the square module as a direct consumer of the generic API. This is an algebraic real-carrier refactor: it selects no weighted/geometric profile, source, dynamics, or physical Hodge metric and changes no C0 or GR status.
+
+Narrow builds passed for `ArchiveHodgeCARDiracSquare` (2,984 jobs),
+`ArchiveHodgeCARDiracKernel` (2,985), `ArchiveWeightedHodgeDirac` (2,989),
+`A4DLocatedTopologicalStar` (2,991), `ArchiveHodgeCARDiracShell` (3,398),
+`ArchiveHodgeGradingSymmetry` (2,989), `ArchiveSpatialHistorySplit` (3,400),
+and `A4DDiscreteEnergyKernel` (3,073). `validate_repo.py`,
+`generate_lean_views.py --check`, `formalization_debt_audit.py --check`
+(3 findings, unchanged from the baseline), `validate_work.py`, and
+`validate_agent_protocol.py` also pass. The PR remains Draft, so the final
+`D0.All` build is reserved for the Ready checkpoint.
+
+### Cold-start replay after the real Hodge/CAR square refactor (25 October 2026)
+
+The expanded `real-unit-profile-weighted-hermitian-bridge` case now includes
+the actual forward/codifferential adjoint map, typed nilpotency, generic
+Hodge-square application, preserved Laplacian theorem, and kernel-facing
+linear-map adapter. Its Lean sources, the eleven-declaration compiled
+inventory, and this primary artifact were all found as direct content. The
+full suite passed 18/18 search cases and the 19/19 benchmark, including the
+exact-source-versus-unrelated-prose impact regression. Semantic scope review
+remains manual; retrieval does not establish physical profile selection or
+C0/GR closure.
+
+Replay used candidate limit 18 at HEAD
+`00c5209a6da14b7b9d40bcb66deb395a965bb3c5`, `worktree_dirty=true`. Runner
+SHA-256 is
+`fce4fdecc4c026a94517d8363af85e3197d023a2911ce29080f22c90089ee16e`; the
+primary artifact at replay time had SHA-256
+`26ff2daacf2571aed39b370af82a2eebd12c624ed831e696b069d4e8344cd3c1`. The
+authority input digests were `claims.csv`
+`e64c1223d0e69c79374b592d4a289d341e64b976337ba8129fb9ab804812f718`,
+`assumptions.csv`
+`2bc9f8c040a776d784fdbfdf62569b72e4f70ff0a182fc66d0ced31cb5f13a36`,
+`formal_support.csv`
+`e6ca1a5ea0d3272ff3967da52a5885fe95d2ffd2f96fb5ff77449eca27079a56`,
+`aliases.csv`
+`8cda9e7ebfa26a01a04a4d51b56eb6b93425816a5fe073aa74cbae94041f672f`,
+assembly applications
+`d841fe9ccbb5e578836740b46d436147f74d9eb9c92413bbc924b942be6ee511`,
+assembly contract
+`72fb3bbbc320b4af217cbe7c09580b44556b354e9668cbd11e76933fa8209ba6`, and
+presupposition edges
+`7ff9d1e4ac3447f321afd603eab66554468644bb5fddb33551fdfa22e3e2585d`.

@@ -348,11 +348,18 @@ CASES: list[dict[str, Any]] = [
             "cochainPairing_eq_finiteHermitianPairing",
             "hodgeCarDirac_finiteHermitianAdjoint_eq_self",
             "hodgeCarDirac_unit_profile_adjoint_eq_self",
+            "hodgeCodifferential_smul backwardAnnihilateDirection_smul",
+            "finiteHermitianAdjoint_dForwardₗ_eq_hodgeCodifferentialₗ",
+            "hodgeCarDiracHermitian_square",
+            "hodgeCarDirac_sq generic Hodge anticommutator",
+            "hodgeCarDiracₗ_eq_finiteHermitianHodgeDirac",
         ],
         "required_refs": [
             "03_FORMALIZATION/D0/Algebra/FiniteHermitianAdjoint.lean",
             "03_FORMALIZATION/D0/Algebra/FiniteWeightedAdjoint.lean",
             "03_FORMALIZATION/D0/Geometry/ArchiveWeightedHodgeDirac.lean",
+            "03_FORMALIZATION/D0/Geometry/ArchiveHodgeCARDiracSquare.lean",
+            "03_FORMALIZATION/D0/Geometry/ArchiveHodgeCARDiracKernel.lean",
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/finite_weighted_unit_profile_adjoint_bridge_2026-10-25.json",
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/archive_weighted_hodge_hermitian_bridge_2026-10-25.json",
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/finite_hermitian_hodge_dirac_self_adjoint_2026-10-25.json",
@@ -363,15 +370,18 @@ CASES: list[dict[str, Any]] = [
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/real_counting_pairing_hermitian_adapter_2026-10-25.json",
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/real_hodge_car_hermitian_adjoint_self_2026-10-25.json",
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/real_hodge_car_unit_profile_adjoint_self_2026-10-25.json",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/real_hodge_car_square_from_generic_hermitian_2026-10-25.json",
             "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
         ],
         "scope_review": (
             "The real unit-profile bilinear adjoint is identified with the standard finite Hermitian adjoint; the "
             "registered real Hodge/CAR operator's own adjoint is proved equal to itself through its existing "
             "counting-pairing theorem. The generic Hermitian Hodge--Dirac self-adjointness and square/anticommutator "
-            "laws are also applied to the registered nilpotent cubical differential. The concrete profile equality "
-            "is only at the unit profile: arbitrary nonzero weighted profiles remain in the bilinear API, and no "
-            "geometric or physical Hodge profile is selected."
+            "laws are applied to the registered nilpotent cubical differential, and the real CAR codifferential is "
+            "identified as the standard Hermitian adjoint of its forward differential. The existing function-level "
+            "square is then recovered from the generic anticommutator and the owned CAR cross-term Laplacian. The "
+            "concrete profile equality is only at the unit profile: arbitrary nonzero weighted profiles remain in "
+            "the bilinear API, and no geometric or physical Hodge profile is selected."
         ),
     },
 ]

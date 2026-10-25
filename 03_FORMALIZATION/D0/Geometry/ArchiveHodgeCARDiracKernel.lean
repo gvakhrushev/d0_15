@@ -19,26 +19,6 @@ identifies that kernel with `ker D_H`. The parameter space is one real
 amplitude for each of the 16 Fock states.
 -/
 
-theorem backwardAnnihilateDirection_smul (N : ℕ) (r : Role) (a : ℝ)
-    (ψ : ArchiveCochain N) :
-    backwardAnnihilateDirection N r (a • ψ) =
-      a • backwardAnnihilateDirection N r ψ := by
-  unfold backwardAnnihilateDirection
-  have hsite : backwardSite N r (a • ψ) = a • backwardSite N r ψ := by
-    funext p
-    simp only [backwardSite, backwardDifference_apply, Pi.smul_apply, smul_eq_mul]
-    ring
-  rw [hsite, annihilateAction_smul]
-
-theorem hodgeCodifferential_smul (N : ℕ) (a : ℝ) (ψ : ArchiveCochain N) :
-    hodgeCodifferential N (a • ψ) = a • hodgeCodifferential N ψ := by
-  rw [hodgeCodifferential_eq_sum, hodgeCodifferential_eq_sum]
-  simp_rw [codiffDirection_eq_neg, backwardAnnihilateDirection_smul]
-  rw [Finset.smul_sum]
-  refine Finset.sum_congr rfl ?_
-  intro r _
-  simp [smul_neg]
-
 theorem hodgeCarDirac_add (N : ℕ) (ψ φ : ArchiveCochain N) :
     hodgeCarDirac N (ψ + φ) = hodgeCarDirac N ψ + hodgeCarDirac N φ := by
   unfold hodgeCarDirac
@@ -332,6 +312,15 @@ def hodgeCarDiracₗ (N : ℕ) : ArchiveCochain N →ₗ[ℝ] ArchiveCochain N w
   toFun := hodgeCarDirac N
   map_add' := hodgeCarDirac_add N
   map_smul' := hodgeCarDirac_smul N
+
+/-- The pre-existing kernel-facing linear map is exactly the generic Hermitian
+Hodge--Dirac adapter of the registered real forward CAR differential. -/
+theorem hodgeCarDiracₗ_eq_finiteHermitianHodgeDirac (N : ℕ) :
+    hodgeCarDiracₗ N = hodgeCarDiracHermitianₗ N := by
+  apply LinearMap.ext
+  intro ψ
+  change hodgeCarDirac N ψ = hodgeCarDiracHermitianₗ N ψ
+  exact hodgeCarDirac_eq_finiteHermitianHodgeDirac N ψ
 
 def hodgeKernelSectionₗ (N : ℕ) :
     (ArchiveFockState → ℝ) →ₗ[ℝ] ArchiveCochain N where
