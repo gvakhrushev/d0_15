@@ -1,10 +1,10 @@
 {
   "schema": "d0-lean-declaration-inventory-v1",
-  "snapshot_commit": "6b59bc57ca97275df9e973715cdb503ec8fc5c4e",
+  "snapshot_commit": "5c1d07ab4a743eefcf6d42b9f9c47c6f53ccb50d",
   "worktree_dirty": true,
-  "claim_registry_sha256": "d86d7965f0cf64164cdf7536a4fb5119ec9655e5b5082e3bbe34ce6459d35003",
-  "lean_source_digest": "3530b705e2d59e76c37b153ae6c38f36efe01570f788e052e4624dd13db9ddf7",
-  "collector_sha256": "3546dc3dc677c9a3e3d205f45fb8e8b636f2d158a05e28b84180eeb2d89ae10d",
+  "claim_registry_sha256": "8ba9bfbac99a5fe0d8e8f2b6ef8d69f3190f8c1073051eca9f005e5a93b578cf",
+  "lean_source_digest": "8cdcca1b292a651ef95a36a9ff64971c8e4b0a0b2c93da556dc208beac7a7231",
+  "collector_sha256": "2ceba4405c8b46ac0cc924318d33955e59b7a3296be9a88afb57dfb8f4451818",
   "toolchain": "leanprover/lean4:v4.30.0",
   "public_import_root": "D0.All",
   "resolution_only": true,
@@ -8816,6 +8816,54 @@
           "D0.VNext.fibonacci_first_refinement_pairing",
           "D0.Algebra.fibonacci_first_refinement_pairing",
           "D0.fibonacci_first_refinement_pairing"
+        ]
+      },
+      {
+        "claim_id": "D0-VNEXT-AF-GNS-ISOMETRY-OWNER-001",
+        "module_locator": "D0.VNext.PerronGNSTower;D0.Algebra.FibonacciAFTower",
+        "theorem_atom": "firstRefinementScalarMatrix",
+        "candidate_names": [
+          "D0.VNext.PerronGNSTower.firstRefinementScalarMatrix",
+          "D0.Algebra.FibonacciAFTower.firstRefinementScalarMatrix",
+          "D0.VNext.firstRefinementScalarMatrix",
+          "D0.Algebra.firstRefinementScalarMatrix",
+          "D0.firstRefinementScalarMatrix"
+        ]
+      },
+      {
+        "claim_id": "D0-VNEXT-AF-GNS-ISOMETRY-OWNER-001",
+        "module_locator": "D0.VNext.PerronGNSTower;D0.Algebra.FibonacciAFTower",
+        "theorem_atom": "firstRefinementLevelZero",
+        "candidate_names": [
+          "D0.VNext.PerronGNSTower.firstRefinementLevelZero",
+          "D0.Algebra.FibonacciAFTower.firstRefinementLevelZero",
+          "D0.VNext.firstRefinementLevelZero",
+          "D0.Algebra.firstRefinementLevelZero",
+          "D0.firstRefinementLevelZero"
+        ]
+      },
+      {
+        "claim_id": "D0-VNEXT-AF-GNS-ISOMETRY-OWNER-001",
+        "module_locator": "D0.VNext.PerronGNSTower;D0.Algebra.FibonacciAFTower",
+        "theorem_atom": "firstRefinementAFStep",
+        "candidate_names": [
+          "D0.VNext.PerronGNSTower.firstRefinementAFStep",
+          "D0.Algebra.FibonacciAFTower.firstRefinementAFStep",
+          "D0.VNext.firstRefinementAFStep",
+          "D0.Algebra.firstRefinementAFStep",
+          "D0.firstRefinementAFStep"
+        ]
+      },
+      {
+        "claim_id": "D0-VNEXT-AF-GNS-ISOMETRY-OWNER-001",
+        "module_locator": "D0.VNext.PerronGNSTower;D0.Algebra.FibonacciAFTower",
+        "theorem_atom": "firstRefinementMap_is_level_zero_specialization",
+        "candidate_names": [
+          "D0.VNext.PerronGNSTower.firstRefinementMap_is_level_zero_specialization",
+          "D0.Algebra.FibonacciAFTower.firstRefinementMap_is_level_zero_specialization",
+          "D0.VNext.firstRefinementMap_is_level_zero_specialization",
+          "D0.Algebra.firstRefinementMap_is_level_zero_specialization",
+          "D0.firstRefinementMap_is_level_zero_specialization"
         ]
       },
       {
@@ -23125,6 +23173,26 @@
           "D0.Geometry.ArchiveWeightedHodgeDirac.archive_weighted_hodge_dirac_owner",
           "D0.Geometry.archive_weighted_hodge_dirac_owner",
           "D0.archive_weighted_hodge_dirac_owner"
+        ]
+      },
+      {
+        "claim_id": "D0-ARCHIVE-WEIGHTED-HODGE-DIRAC-001",
+        "module_locator": "D0.Geometry.ArchiveWeightedHodgeDirac",
+        "theorem_atom": "cubicalWeightedHodgeDirac_application",
+        "candidate_names": [
+          "D0.Geometry.ArchiveWeightedHodgeDirac.cubicalWeightedHodgeDirac_application",
+          "D0.Geometry.cubicalWeightedHodgeDirac_application",
+          "D0.cubicalWeightedHodgeDirac_application"
+        ]
+      },
+      {
+        "claim_id": "D0-ARCHIVE-WEIGHTED-HODGE-DIRAC-001",
+        "module_locator": "D0.Geometry.ArchiveWeightedHodgeDirac",
+        "theorem_atom": "cubicalWeightedHodgeDirac_positive_profile_application",
+        "candidate_names": [
+          "D0.Geometry.ArchiveWeightedHodgeDirac.cubicalWeightedHodgeDirac_positive_profile_application",
+          "D0.Geometry.cubicalWeightedHodgeDirac_positive_profile_application",
+          "D0.cubicalWeightedHodgeDirac_positive_profile_application"
         ]
       },
       {
@@ -41002,6 +41070,110 @@
     {
       "exists": false,
       "name": "D0.fibonacci_first_refinement_pairing",
+      "source_path": null
+    },
+    {
+      "exists": true,
+      "module": "D0.VNext.PerronGNSTower",
+      "name": "D0.VNext.PerronGNSTower.firstRefinementScalarMatrix",
+      "source_path": "03_FORMALIZATION/D0/VNext/PerronGNSTower.lean"
+    },
+    {
+      "exists": false,
+      "name": "D0.Algebra.FibonacciAFTower.firstRefinementScalarMatrix",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.VNext.firstRefinementScalarMatrix",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Algebra.firstRefinementScalarMatrix",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.firstRefinementScalarMatrix",
+      "source_path": null
+    },
+    {
+      "exists": true,
+      "module": "D0.VNext.PerronGNSTower",
+      "name": "D0.VNext.PerronGNSTower.firstRefinementLevelZero",
+      "source_path": "03_FORMALIZATION/D0/VNext/PerronGNSTower.lean"
+    },
+    {
+      "exists": false,
+      "name": "D0.Algebra.FibonacciAFTower.firstRefinementLevelZero",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.VNext.firstRefinementLevelZero",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Algebra.firstRefinementLevelZero",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.firstRefinementLevelZero",
+      "source_path": null
+    },
+    {
+      "exists": true,
+      "module": "D0.VNext.PerronGNSTower",
+      "name": "D0.VNext.PerronGNSTower.firstRefinementAFStep",
+      "source_path": "03_FORMALIZATION/D0/VNext/PerronGNSTower.lean"
+    },
+    {
+      "exists": false,
+      "name": "D0.Algebra.FibonacciAFTower.firstRefinementAFStep",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.VNext.firstRefinementAFStep",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Algebra.firstRefinementAFStep",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.firstRefinementAFStep",
+      "source_path": null
+    },
+    {
+      "exists": true,
+      "module": "D0.VNext.PerronGNSTower",
+      "name": "D0.VNext.PerronGNSTower.firstRefinementMap_is_level_zero_specialization",
+      "source_path": "03_FORMALIZATION/D0/VNext/PerronGNSTower.lean"
+    },
+    {
+      "exists": false,
+      "name": "D0.Algebra.FibonacciAFTower.firstRefinementMap_is_level_zero_specialization",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.VNext.firstRefinementMap_is_level_zero_specialization",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Algebra.firstRefinementMap_is_level_zero_specialization",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.firstRefinementMap_is_level_zero_specialization",
       "source_path": null
     },
     {
@@ -63145,9 +63317,10 @@
       "source_path": null
     },
     {
-      "exists": false,
+      "exists": true,
+      "module": "D0.Geometry.ArchiveCubicalCoboundary",
       "name": "D0.Geometry.d_squared_eq_zero",
-      "source_path": null
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveCubicalCoboundary.lean"
     },
     {
       "exists": false,
@@ -63285,9 +63458,10 @@
       "source_path": null
     },
     {
-      "exists": false,
+      "exists": true,
+      "module": "D0.Geometry.ArchiveNaiveWeightedDegreeLeakageNoGo",
       "name": "D0.Geometry.archive_naive_weighted_degree_leakage_nogo_owner",
-      "source_path": null
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveNaiveWeightedDegreeLeakageNoGo.lean"
     },
     {
       "exists": false,
@@ -63308,6 +63482,38 @@
     {
       "exists": false,
       "name": "D0.archive_weighted_hodge_dirac_owner",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Geometry.ArchiveWeightedHodgeDirac.cubicalWeightedHodgeDirac_application",
+      "source_path": null
+    },
+    {
+      "exists": true,
+      "module": "D0.Geometry.ArchiveWeightedHodgeDirac",
+      "name": "D0.Geometry.cubicalWeightedHodgeDirac_application",
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveWeightedHodgeDirac.lean"
+    },
+    {
+      "exists": false,
+      "name": "D0.cubicalWeightedHodgeDirac_application",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Geometry.ArchiveWeightedHodgeDirac.cubicalWeightedHodgeDirac_positive_profile_application",
+      "source_path": null
+    },
+    {
+      "exists": true,
+      "module": "D0.Geometry.ArchiveWeightedHodgeDirac",
+      "name": "D0.Geometry.cubicalWeightedHodgeDirac_positive_profile_application",
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveWeightedHodgeDirac.lean"
+    },
+    {
+      "exists": false,
+      "name": "D0.cubicalWeightedHodgeDirac_positive_profile_application",
       "source_path": null
     },
     {

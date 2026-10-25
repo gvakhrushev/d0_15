@@ -2740,3 +2740,48 @@ updated proof-architecture test SHA-256 is
 `03f1fc5fd21e18efcf0be84b44533d54bbb121afde34b7f8c30eacdbd352fd62`.
 This replay verifies retrieval and pin routing; source-to-claim semantic
 acceptance and physical endpoint binding remain separate.
+
+### Current-source refresh of compiled claim and assembly crosswalks (25 October 2026)
+
+The all-result crosswalk was regenerated after the Julia Lean source changed.
+It now records snapshot `5c1d07ab4a743eefcf6d42b9f9c47c6f53ccb50d`
+(`worktree_dirty=true`), current Lean source digest
+`8cdcca1b292a651ef95a36a9ff64971c8e4b0a0b2c93da556dc208beac7a7231`,
+generated module collector SHA-256
+`5e9074769ba45eb74e6ade808f9aaac82dd09454e14941d6aea6c7885051b0f1`, and
+proof-detail collector SHA-256
+`1899bd10c2928a66d4b961f5b4d12a884b6d721f30bcc187ffcfe02c0f07830a`.
+The machine-readable artifact remains at
+`sources/d0_proof_architecture_formalization_2026-10-24/assembly_result_declaration_crosswalk.json`
+with SHA-256
+`bb7365ef7a8a5617a159e7760c8b0b6d2a945f73c8c15364cf2ab7b532d71f7b`.
+It retains 54 result rows and 191 source records: 182 verified pins, eight
+unavailable pinned blobs, and one immutable SHA mismatch. There are 15 exact
+section locators and 151 unreviewed heading candidates across 37 results;
+39 result-to-unit mappings remain incomplete. The refreshed view continues
+to label these as source/declaration candidates, with no inferred semantic
+acceptance. `gr_assembly.py check` passes for the 54 active-result limit with
+`scientific_promotion=false`.
+
+The all-claims resolution was also rerun against this same public `D0.All`
+source digest and current claims registry. The current artifact is
+`sources/d0_proof_architecture_formalization_2026-10-24/claim_candidate_resolution_current.json`,
+SHA-256
+`cbde9036d60167ebfd4f2904e627372c24736ba9683c5d79ace6ed7ff2df90f2`. It
+records 889 claim rows and 2,747 theorem-locator atoms expanded to 8,317
+ordered unique exact names; 2,506 names resolve in the compiled environment
+and 5,811 do not. At the atom level, 2,547 have at least one exact name
+match, four are ambiguous, 200 have no match, and 176 have no candidate
+name. At the claim-row level, 708 rows have at least one matched locator and
+181 have none. The current claims registry SHA-256 is
+`8ba9bfbac99a5fe0d8e8f2b6ef8d69f3190f8c1073051eca9f005e5a93b578cf`; the
+Lean collector SHA-256 is
+`2ceba4405c8b46ac0cc924318d33955e59b7a3296be9a88afb57dfb8f4451818`, and
+the toolchain is `leanprover/lean4:v4.30.0`.
+
+These are current exact-name availability measurements, not mathematical
+coverage: resolution does not validate a declaration's domain against its
+claim or prove an application edge. The crosswalk's source records likewise
+do not establish the frozen C0 denominator or independent acceptance. The
+updated locators improve current-state reproducibility while C0 classification,
+semantic review, and the remaining mathematical migrations stay open.

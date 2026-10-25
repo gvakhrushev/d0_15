@@ -1,5 +1,5 @@
 {
-  "snapshot_commit": "136e47add98e4ccc6b4d1f3eaa9401b648d0f66f",
+  "snapshot_commit": "5c1d07ab4a743eefcf6d42b9f9c47c6f53ccb50d",
   "worktree_dirty": true,
   "source_digests": {
     "02_REGISTRY/claims.csv": "8ba9bfbac99a5fe0d8e8f2b6ef8d69f3190f8c1073051eca9f005e5a93b578cf",
@@ -12,7 +12,7 @@
   },
   "tool_source_digests": {
     "tools/proof_architecture.py": "85c988a03ee9ec7c4a0cbf7b4c57a8ffe4f546d61a8820300f7f25d435f02f03",
-    "tools/lean_declaration_inventory.py": "d0e9f62697184c2969cb5d082d8b6c58ce088fc330c6f177264605327fd6d1ac"
+    "tools/lean_declaration_inventory.py": "d2f177774f3cd95c28066b4052d0c712e43abe1f8a79ccaaa03cbb5a4abaf943"
   },
   "public_import_root": "D0.All",
   "enumerated_current_modules": [
@@ -29,7 +29,7 @@
   ],
   "collector_sha256": "5e9074769ba45eb74e6ade808f9aaac82dd09454e14941d6aea6c7885051b0f1",
   "proof_detail_collector_sha256": "1899bd10c2928a66d4b961f5b4d12a884b6d721f30bcc187ffcfe02c0f07830a",
-  "lean_source_digest": "6ff55724920a14097e3a4078050c6e8f1f2b15ba6e98aca48623d6691a6e7c40",
+  "lean_source_digest": "8cdcca1b292a651ef95a36a9ff64971c8e4b0a0b2c93da556dc208beac7a7231",
   "interpretation": "This generated crosswalk is retrieval and review evidence. It does not infer a semantic application, mathematical coverage, or independent acceptance.",
   "source_locator_interpretation": "A source:<commit>:<path> key is emitted only after the immutable commit:path blob matches its recorded SHA-256; the current checkout may be missing or changed. Only explicit section metadata yields exact section-key candidates. When it is absent, ranked headings from verified pinned Markdown may be shown as lexical candidates; all section candidates require review and none is accepted by this view.",
   "result_count": 54,
@@ -233,7 +233,7 @@
       "semantic_relation_status": "unresolved",
       "acceptance_inferred": false,
       "collector_sha256": "5e9074769ba45eb74e6ade808f9aaac82dd09454e14941d6aea6c7885051b0f1",
-      "lean_source_digest": "6ff55724920a14097e3a4078050c6e8f1f2b15ba6e98aca48623d6691a6e7c40",
+      "lean_source_digest": "8cdcca1b292a651ef95a36a9ff64971c8e4b0a0b2c93da556dc208beac7a7231",
       "public_import_root": "D0.All",
       "proof_detail_collector_sha256": "1899bd10c2928a66d4b961f5b4d12a884b6d721f30bcc187ffcfe02c0f07830a",
       "interpretation": "Pinned source bytes, compiled declarations, exact claim-name locators, and formal-support module locators are displayed as separate evidence. Explicit declaration names are checked against their pinned current module and elaborated environment, but do not establish semantic scope, an application edge, or review acceptance. Co-location and inferred exact-name matches remain candidates only."
@@ -13457,7 +13457,7 @@
       "semantic_relation_status": "unresolved",
       "acceptance_inferred": false,
       "collector_sha256": "5e9074769ba45eb74e6ade808f9aaac82dd09454e14941d6aea6c7885051b0f1",
-      "lean_source_digest": "6ff55724920a14097e3a4078050c6e8f1f2b15ba6e98aca48623d6691a6e7c40",
+      "lean_source_digest": "8cdcca1b292a651ef95a36a9ff64971c8e4b0a0b2c93da556dc208beac7a7231",
       "public_import_root": "D0.All",
       "proof_detail_collector_sha256": "1899bd10c2928a66d4b961f5b4d12a884b6d721f30bcc187ffcfe02c0f07830a",
       "interpretation": "Pinned source bytes, compiled declarations, exact claim-name locators, and formal-support module locators are displayed as separate evidence. Explicit declaration names are checked against their pinned current module and elaborated environment, but do not establish semantic scope, an application edge, or review acceptance. Co-location and inferred exact-name matches remain candidates only."
@@ -13632,7 +13632,7 @@
       "semantic_relation_status": "unresolved",
       "acceptance_inferred": false,
       "collector_sha256": "5e9074769ba45eb74e6ade808f9aaac82dd09454e14941d6aea6c7885051b0f1",
-      "lean_source_digest": "6ff55724920a14097e3a4078050c6e8f1f2b15ba6e98aca48623d6691a6e7c40",
+      "lean_source_digest": "8cdcca1b292a651ef95a36a9ff64971c8e4b0a0b2c93da556dc208beac7a7231",
       "public_import_root": "D0.All",
       "proof_detail_collector_sha256": "1899bd10c2928a66d4b961f5b4d12a884b6d721f30bcc187ffcfe02c0f07830a",
       "interpretation": "Pinned source bytes, compiled declarations, exact claim-name locators, and formal-support module locators are displayed as separate evidence. Explicit declaration names are checked against their pinned current module and elaborated environment, but do not establish semantic scope, an application edge, or review acceptance. Co-location and inferred exact-name matches remain candidates only."
@@ -13787,7 +13787,7 @@
       "semantic_relation_status": "unresolved",
       "acceptance_inferred": false,
       "collector_sha256": "5e9074769ba45eb74e6ade808f9aaac82dd09454e14941d6aea6c7885051b0f1",
-      "lean_source_digest": "6ff55724920a14097e3a4078050c6e8f1f2b15ba6e98aca48623d6691a6e7c40",
+      "lean_source_digest": "8cdcca1b292a651ef95a36a9ff64971c8e4b0a0b2c93da556dc208beac7a7231",
       "public_import_root": "D0.All",
       "proof_detail_collector_sha256": "1899bd10c2928a66d4b961f5b4d12a884b6d721f30bcc187ffcfe02c0f07830a",
       "interpretation": "Pinned source bytes, compiled declarations, exact claim-name locators, and formal-support module locators are displayed as separate evidence. Explicit declaration names are checked against their pinned current module and elaborated environment, but do not establish semantic scope, an application edge, or review acceptance. Co-location and inferred exact-name matches remain candidates only."
@@ -14024,7 +14024,7 @@
       "semantic_relation_status": "unresolved",
       "acceptance_inferred": false,
       "collector_sha256": "5e9074769ba45eb74e6ade808f9aaac82dd09454e14941d6aea6c7885051b0f1",
-      "lean_source_digest": "6ff55724920a14097e3a4078050c6e8f1f2b15ba6e98aca48623d6691a6e7c40",
+      "lean_source_digest": "8cdcca1b292a651ef95a36a9ff64971c8e4b0a0b2c93da556dc208beac7a7231",
       "public_import_root": "D0.All",
       "proof_detail_collector_sha256": "1899bd10c2928a66d4b961f5b4d12a884b6d721f30bcc187ffcfe02c0f07830a",
       "interpretation": "Pinned source bytes, compiled declarations, exact claim-name locators, and formal-support module locators are displayed as separate evidence. Explicit declaration names are checked against their pinned current module and elaborated environment, but do not establish semantic scope, an application edge, or review acceptance. Co-location and inferred exact-name matches remain candidates only."
@@ -14240,7 +14240,7 @@
       "semantic_relation_status": "unresolved",
       "acceptance_inferred": false,
       "collector_sha256": "5e9074769ba45eb74e6ade808f9aaac82dd09454e14941d6aea6c7885051b0f1",
-      "lean_source_digest": "6ff55724920a14097e3a4078050c6e8f1f2b15ba6e98aca48623d6691a6e7c40",
+      "lean_source_digest": "8cdcca1b292a651ef95a36a9ff64971c8e4b0a0b2c93da556dc208beac7a7231",
       "public_import_root": "D0.All",
       "proof_detail_collector_sha256": "1899bd10c2928a66d4b961f5b4d12a884b6d721f30bcc187ffcfe02c0f07830a",
       "interpretation": "Pinned source bytes, compiled declarations, exact claim-name locators, and formal-support module locators are displayed as separate evidence. Explicit declaration names are checked against their pinned current module and elaborated environment, but do not establish semantic scope, an application edge, or review acceptance. Co-location and inferred exact-name matches remain candidates only."
@@ -14518,7 +14518,7 @@
       "semantic_relation_status": "unresolved",
       "acceptance_inferred": false,
       "collector_sha256": "5e9074769ba45eb74e6ade808f9aaac82dd09454e14941d6aea6c7885051b0f1",
-      "lean_source_digest": "6ff55724920a14097e3a4078050c6e8f1f2b15ba6e98aca48623d6691a6e7c40",
+      "lean_source_digest": "8cdcca1b292a651ef95a36a9ff64971c8e4b0a0b2c93da556dc208beac7a7231",
       "public_import_root": "D0.All",
       "proof_detail_collector_sha256": "1899bd10c2928a66d4b961f5b4d12a884b6d721f30bcc187ffcfe02c0f07830a",
       "interpretation": "Pinned source bytes, compiled declarations, exact claim-name locators, and formal-support module locators are displayed as separate evidence. Explicit declaration names are checked against their pinned current module and elaborated environment, but do not establish semantic scope, an application edge, or review acceptance. Co-location and inferred exact-name matches remain candidates only."
@@ -14708,7 +14708,7 @@
       "semantic_relation_status": "unresolved",
       "acceptance_inferred": false,
       "collector_sha256": "5e9074769ba45eb74e6ade808f9aaac82dd09454e14941d6aea6c7885051b0f1",
-      "lean_source_digest": "6ff55724920a14097e3a4078050c6e8f1f2b15ba6e98aca48623d6691a6e7c40",
+      "lean_source_digest": "8cdcca1b292a651ef95a36a9ff64971c8e4b0a0b2c93da556dc208beac7a7231",
       "public_import_root": "D0.All",
       "proof_detail_collector_sha256": "1899bd10c2928a66d4b961f5b4d12a884b6d721f30bcc187ffcfe02c0f07830a",
       "interpretation": "Pinned source bytes, compiled declarations, exact claim-name locators, and formal-support module locators are displayed as separate evidence. Explicit declaration names are checked against their pinned current module and elaborated environment, but do not establish semantic scope, an application edge, or review acceptance. Co-location and inferred exact-name matches remain candidates only."
@@ -15213,7 +15213,7 @@
       "semantic_relation_status": "unresolved",
       "acceptance_inferred": false,
       "collector_sha256": "5e9074769ba45eb74e6ade808f9aaac82dd09454e14941d6aea6c7885051b0f1",
-      "lean_source_digest": "6ff55724920a14097e3a4078050c6e8f1f2b15ba6e98aca48623d6691a6e7c40",
+      "lean_source_digest": "8cdcca1b292a651ef95a36a9ff64971c8e4b0a0b2c93da556dc208beac7a7231",
       "public_import_root": "D0.All",
       "proof_detail_collector_sha256": "1899bd10c2928a66d4b961f5b4d12a884b6d721f30bcc187ffcfe02c0f07830a",
       "interpretation": "Pinned source bytes, compiled declarations, exact claim-name locators, and formal-support module locators are displayed as separate evidence. Explicit declaration names are checked against their pinned current module and elaborated environment, but do not establish semantic scope, an application edge, or review acceptance. Co-location and inferred exact-name matches remain candidates only."
@@ -15506,7 +15506,7 @@
       "semantic_relation_status": "unresolved",
       "acceptance_inferred": false,
       "collector_sha256": "5e9074769ba45eb74e6ade808f9aaac82dd09454e14941d6aea6c7885051b0f1",
-      "lean_source_digest": "6ff55724920a14097e3a4078050c6e8f1f2b15ba6e98aca48623d6691a6e7c40",
+      "lean_source_digest": "8cdcca1b292a651ef95a36a9ff64971c8e4b0a0b2c93da556dc208beac7a7231",
       "public_import_root": "D0.All",
       "proof_detail_collector_sha256": "1899bd10c2928a66d4b961f5b4d12a884b6d721f30bcc187ffcfe02c0f07830a",
       "interpretation": "Pinned source bytes, compiled declarations, exact claim-name locators, and formal-support module locators are displayed as separate evidence. Explicit declaration names are checked against their pinned current module and elaborated environment, but do not establish semantic scope, an application edge, or review acceptance. Co-location and inferred exact-name matches remain candidates only."
@@ -15727,7 +15727,7 @@
       "semantic_relation_status": "unresolved",
       "acceptance_inferred": false,
       "collector_sha256": "5e9074769ba45eb74e6ade808f9aaac82dd09454e14941d6aea6c7885051b0f1",
-      "lean_source_digest": "6ff55724920a14097e3a4078050c6e8f1f2b15ba6e98aca48623d6691a6e7c40",
+      "lean_source_digest": "8cdcca1b292a651ef95a36a9ff64971c8e4b0a0b2c93da556dc208beac7a7231",
       "public_import_root": "D0.All",
       "proof_detail_collector_sha256": "1899bd10c2928a66d4b961f5b4d12a884b6d721f30bcc187ffcfe02c0f07830a",
       "interpretation": "Pinned source bytes, compiled declarations, exact claim-name locators, and formal-support module locators are displayed as separate evidence. Explicit declaration names are checked against their pinned current module and elaborated environment, but do not establish semantic scope, an application edge, or review acceptance. Co-location and inferred exact-name matches remain candidates only."
@@ -16012,7 +16012,7 @@
       "semantic_relation_status": "unresolved",
       "acceptance_inferred": false,
       "collector_sha256": "5e9074769ba45eb74e6ade808f9aaac82dd09454e14941d6aea6c7885051b0f1",
-      "lean_source_digest": "6ff55724920a14097e3a4078050c6e8f1f2b15ba6e98aca48623d6691a6e7c40",
+      "lean_source_digest": "8cdcca1b292a651ef95a36a9ff64971c8e4b0a0b2c93da556dc208beac7a7231",
       "public_import_root": "D0.All",
       "proof_detail_collector_sha256": "1899bd10c2928a66d4b961f5b4d12a884b6d721f30bcc187ffcfe02c0f07830a",
       "interpretation": "Pinned source bytes, compiled declarations, exact claim-name locators, and formal-support module locators are displayed as separate evidence. Explicit declaration names are checked against their pinned current module and elaborated environment, but do not establish semantic scope, an application edge, or review acceptance. Co-location and inferred exact-name matches remain candidates only."
@@ -16290,7 +16290,7 @@
       "semantic_relation_status": "unresolved",
       "acceptance_inferred": false,
       "collector_sha256": "5e9074769ba45eb74e6ade808f9aaac82dd09454e14941d6aea6c7885051b0f1",
-      "lean_source_digest": "6ff55724920a14097e3a4078050c6e8f1f2b15ba6e98aca48623d6691a6e7c40",
+      "lean_source_digest": "8cdcca1b292a651ef95a36a9ff64971c8e4b0a0b2c93da556dc208beac7a7231",
       "public_import_root": "D0.All",
       "proof_detail_collector_sha256": "1899bd10c2928a66d4b961f5b4d12a884b6d721f30bcc187ffcfe02c0f07830a",
       "interpretation": "Pinned source bytes, compiled declarations, exact claim-name locators, and formal-support module locators are displayed as separate evidence. Explicit declaration names are checked against their pinned current module and elaborated environment, but do not establish semantic scope, an application edge, or review acceptance. Co-location and inferred exact-name matches remain candidates only."
@@ -16885,7 +16885,7 @@
       "semantic_relation_status": "unresolved",
       "acceptance_inferred": false,
       "collector_sha256": "5e9074769ba45eb74e6ade808f9aaac82dd09454e14941d6aea6c7885051b0f1",
-      "lean_source_digest": "6ff55724920a14097e3a4078050c6e8f1f2b15ba6e98aca48623d6691a6e7c40",
+      "lean_source_digest": "8cdcca1b292a651ef95a36a9ff64971c8e4b0a0b2c93da556dc208beac7a7231",
       "public_import_root": "D0.All",
       "proof_detail_collector_sha256": "1899bd10c2928a66d4b961f5b4d12a884b6d721f30bcc187ffcfe02c0f07830a",
       "interpretation": "Pinned source bytes, compiled declarations, exact claim-name locators, and formal-support module locators are displayed as separate evidence. Explicit declaration names are checked against their pinned current module and elaborated environment, but do not establish semantic scope, an application edge, or review acceptance. Co-location and inferred exact-name matches remain candidates only."
@@ -17336,7 +17336,7 @@
       "semantic_relation_status": "unresolved",
       "acceptance_inferred": false,
       "collector_sha256": "5e9074769ba45eb74e6ade808f9aaac82dd09454e14941d6aea6c7885051b0f1",
-      "lean_source_digest": "6ff55724920a14097e3a4078050c6e8f1f2b15ba6e98aca48623d6691a6e7c40",
+      "lean_source_digest": "8cdcca1b292a651ef95a36a9ff64971c8e4b0a0b2c93da556dc208beac7a7231",
       "public_import_root": "D0.All",
       "proof_detail_collector_sha256": "1899bd10c2928a66d4b961f5b4d12a884b6d721f30bcc187ffcfe02c0f07830a",
       "interpretation": "Pinned source bytes, compiled declarations, exact claim-name locators, and formal-support module locators are displayed as separate evidence. Explicit declaration names are checked against their pinned current module and elaborated environment, but do not establish semantic scope, an application edge, or review acceptance. Co-location and inferred exact-name matches remain candidates only."
@@ -17688,7 +17688,7 @@
       "semantic_relation_status": "unresolved",
       "acceptance_inferred": false,
       "collector_sha256": "5e9074769ba45eb74e6ade808f9aaac82dd09454e14941d6aea6c7885051b0f1",
-      "lean_source_digest": "6ff55724920a14097e3a4078050c6e8f1f2b15ba6e98aca48623d6691a6e7c40",
+      "lean_source_digest": "8cdcca1b292a651ef95a36a9ff64971c8e4b0a0b2c93da556dc208beac7a7231",
       "public_import_root": "D0.All",
       "proof_detail_collector_sha256": "1899bd10c2928a66d4b961f5b4d12a884b6d721f30bcc187ffcfe02c0f07830a",
       "interpretation": "Pinned source bytes, compiled declarations, exact claim-name locators, and formal-support module locators are displayed as separate evidence. Explicit declaration names are checked against their pinned current module and elaborated environment, but do not establish semantic scope, an application edge, or review acceptance. Co-location and inferred exact-name matches remain candidates only."
@@ -18032,7 +18032,7 @@
       "semantic_relation_status": "unresolved",
       "acceptance_inferred": false,
       "collector_sha256": "5e9074769ba45eb74e6ade808f9aaac82dd09454e14941d6aea6c7885051b0f1",
-      "lean_source_digest": "6ff55724920a14097e3a4078050c6e8f1f2b15ba6e98aca48623d6691a6e7c40",
+      "lean_source_digest": "8cdcca1b292a651ef95a36a9ff64971c8e4b0a0b2c93da556dc208beac7a7231",
       "public_import_root": "D0.All",
       "proof_detail_collector_sha256": "1899bd10c2928a66d4b961f5b4d12a884b6d721f30bcc187ffcfe02c0f07830a",
       "interpretation": "Pinned source bytes, compiled declarations, exact claim-name locators, and formal-support module locators are displayed as separate evidence. Explicit declaration names are checked against their pinned current module and elaborated environment, but do not establish semantic scope, an application edge, or review acceptance. Co-location and inferred exact-name matches remain candidates only."
@@ -18252,7 +18252,7 @@
       "semantic_relation_status": "unresolved",
       "acceptance_inferred": false,
       "collector_sha256": "5e9074769ba45eb74e6ade808f9aaac82dd09454e14941d6aea6c7885051b0f1",
-      "lean_source_digest": "6ff55724920a14097e3a4078050c6e8f1f2b15ba6e98aca48623d6691a6e7c40",
+      "lean_source_digest": "8cdcca1b292a651ef95a36a9ff64971c8e4b0a0b2c93da556dc208beac7a7231",
       "public_import_root": "D0.All",
       "proof_detail_collector_sha256": "1899bd10c2928a66d4b961f5b4d12a884b6d721f30bcc187ffcfe02c0f07830a",
       "interpretation": "Pinned source bytes, compiled declarations, exact claim-name locators, and formal-support module locators are displayed as separate evidence. Explicit declaration names are checked against their pinned current module and elaborated environment, but do not establish semantic scope, an application edge, or review acceptance. Co-location and inferred exact-name matches remain candidates only."
@@ -18503,7 +18503,7 @@
       "semantic_relation_status": "unresolved",
       "acceptance_inferred": false,
       "collector_sha256": "5e9074769ba45eb74e6ade808f9aaac82dd09454e14941d6aea6c7885051b0f1",
-      "lean_source_digest": "6ff55724920a14097e3a4078050c6e8f1f2b15ba6e98aca48623d6691a6e7c40",
+      "lean_source_digest": "8cdcca1b292a651ef95a36a9ff64971c8e4b0a0b2c93da556dc208beac7a7231",
       "public_import_root": "D0.All",
       "proof_detail_collector_sha256": "1899bd10c2928a66d4b961f5b4d12a884b6d721f30bcc187ffcfe02c0f07830a",
       "interpretation": "Pinned source bytes, compiled declarations, exact claim-name locators, and formal-support module locators are displayed as separate evidence. Explicit declaration names are checked against their pinned current module and elaborated environment, but do not establish semantic scope, an application edge, or review acceptance. Co-location and inferred exact-name matches remain candidates only."
@@ -18783,7 +18783,7 @@
       "semantic_relation_status": "unresolved",
       "acceptance_inferred": false,
       "collector_sha256": "5e9074769ba45eb74e6ade808f9aaac82dd09454e14941d6aea6c7885051b0f1",
-      "lean_source_digest": "6ff55724920a14097e3a4078050c6e8f1f2b15ba6e98aca48623d6691a6e7c40",
+      "lean_source_digest": "8cdcca1b292a651ef95a36a9ff64971c8e4b0a0b2c93da556dc208beac7a7231",
       "public_import_root": "D0.All",
       "proof_detail_collector_sha256": "1899bd10c2928a66d4b961f5b4d12a884b6d721f30bcc187ffcfe02c0f07830a",
       "interpretation": "Pinned source bytes, compiled declarations, exact claim-name locators, and formal-support module locators are displayed as separate evidence. Explicit declaration names are checked against their pinned current module and elaborated environment, but do not establish semantic scope, an application edge, or review acceptance. Co-location and inferred exact-name matches remain candidates only."
@@ -19036,7 +19036,7 @@
       "semantic_relation_status": "unresolved",
       "acceptance_inferred": false,
       "collector_sha256": "5e9074769ba45eb74e6ade808f9aaac82dd09454e14941d6aea6c7885051b0f1",
-      "lean_source_digest": "6ff55724920a14097e3a4078050c6e8f1f2b15ba6e98aca48623d6691a6e7c40",
+      "lean_source_digest": "8cdcca1b292a651ef95a36a9ff64971c8e4b0a0b2c93da556dc208beac7a7231",
       "public_import_root": "D0.All",
       "proof_detail_collector_sha256": "1899bd10c2928a66d4b961f5b4d12a884b6d721f30bcc187ffcfe02c0f07830a",
       "interpretation": "Pinned source bytes, compiled declarations, exact claim-name locators, and formal-support module locators are displayed as separate evidence. Explicit declaration names are checked against their pinned current module and elaborated environment, but do not establish semantic scope, an application edge, or review acceptance. Co-location and inferred exact-name matches remain candidates only."
@@ -19346,7 +19346,7 @@
       "semantic_relation_status": "unresolved",
       "acceptance_inferred": false,
       "collector_sha256": "5e9074769ba45eb74e6ade808f9aaac82dd09454e14941d6aea6c7885051b0f1",
-      "lean_source_digest": "6ff55724920a14097e3a4078050c6e8f1f2b15ba6e98aca48623d6691a6e7c40",
+      "lean_source_digest": "8cdcca1b292a651ef95a36a9ff64971c8e4b0a0b2c93da556dc208beac7a7231",
       "public_import_root": "D0.All",
       "proof_detail_collector_sha256": "1899bd10c2928a66d4b961f5b4d12a884b6d721f30bcc187ffcfe02c0f07830a",
       "interpretation": "Pinned source bytes, compiled declarations, exact claim-name locators, and formal-support module locators are displayed as separate evidence. Explicit declaration names are checked against their pinned current module and elaborated environment, but do not establish semantic scope, an application edge, or review acceptance. Co-location and inferred exact-name matches remain candidates only."
@@ -19731,7 +19731,7 @@
       "semantic_relation_status": "unresolved",
       "acceptance_inferred": false,
       "collector_sha256": "5e9074769ba45eb74e6ade808f9aaac82dd09454e14941d6aea6c7885051b0f1",
-      "lean_source_digest": "6ff55724920a14097e3a4078050c6e8f1f2b15ba6e98aca48623d6691a6e7c40",
+      "lean_source_digest": "8cdcca1b292a651ef95a36a9ff64971c8e4b0a0b2c93da556dc208beac7a7231",
       "public_import_root": "D0.All",
       "proof_detail_collector_sha256": "1899bd10c2928a66d4b961f5b4d12a884b6d721f30bcc187ffcfe02c0f07830a",
       "interpretation": "Pinned source bytes, compiled declarations, exact claim-name locators, and formal-support module locators are displayed as separate evidence. Explicit declaration names are checked against their pinned current module and elaborated environment, but do not establish semantic scope, an application edge, or review acceptance. Co-location and inferred exact-name matches remain candidates only."
@@ -20014,7 +20014,7 @@
       "semantic_relation_status": "unresolved",
       "acceptance_inferred": false,
       "collector_sha256": "5e9074769ba45eb74e6ade808f9aaac82dd09454e14941d6aea6c7885051b0f1",
-      "lean_source_digest": "6ff55724920a14097e3a4078050c6e8f1f2b15ba6e98aca48623d6691a6e7c40",
+      "lean_source_digest": "8cdcca1b292a651ef95a36a9ff64971c8e4b0a0b2c93da556dc208beac7a7231",
       "public_import_root": "D0.All",
       "proof_detail_collector_sha256": "1899bd10c2928a66d4b961f5b4d12a884b6d721f30bcc187ffcfe02c0f07830a",
       "interpretation": "Pinned source bytes, compiled declarations, exact claim-name locators, and formal-support module locators are displayed as separate evidence. Explicit declaration names are checked against their pinned current module and elaborated environment, but do not establish semantic scope, an application edge, or review acceptance. Co-location and inferred exact-name matches remain candidates only."
@@ -20303,7 +20303,7 @@
       "semantic_relation_status": "unresolved",
       "acceptance_inferred": false,
       "collector_sha256": "5e9074769ba45eb74e6ade808f9aaac82dd09454e14941d6aea6c7885051b0f1",
-      "lean_source_digest": "6ff55724920a14097e3a4078050c6e8f1f2b15ba6e98aca48623d6691a6e7c40",
+      "lean_source_digest": "8cdcca1b292a651ef95a36a9ff64971c8e4b0a0b2c93da556dc208beac7a7231",
       "public_import_root": "D0.All",
       "proof_detail_collector_sha256": "1899bd10c2928a66d4b961f5b4d12a884b6d721f30bcc187ffcfe02c0f07830a",
       "interpretation": "Pinned source bytes, compiled declarations, exact claim-name locators, and formal-support module locators are displayed as separate evidence. Explicit declaration names are checked against their pinned current module and elaborated environment, but do not establish semantic scope, an application edge, or review acceptance. Co-location and inferred exact-name matches remain candidates only."
@@ -20568,7 +20568,7 @@
       "semantic_relation_status": "unresolved",
       "acceptance_inferred": false,
       "collector_sha256": "5e9074769ba45eb74e6ade808f9aaac82dd09454e14941d6aea6c7885051b0f1",
-      "lean_source_digest": "6ff55724920a14097e3a4078050c6e8f1f2b15ba6e98aca48623d6691a6e7c40",
+      "lean_source_digest": "8cdcca1b292a651ef95a36a9ff64971c8e4b0a0b2c93da556dc208beac7a7231",
       "public_import_root": "D0.All",
       "proof_detail_collector_sha256": "1899bd10c2928a66d4b961f5b4d12a884b6d721f30bcc187ffcfe02c0f07830a",
       "interpretation": "Pinned source bytes, compiled declarations, exact claim-name locators, and formal-support module locators are displayed as separate evidence. Explicit declaration names are checked against their pinned current module and elaborated environment, but do not establish semantic scope, an application edge, or review acceptance. Co-location and inferred exact-name matches remain candidates only."
@@ -20763,7 +20763,7 @@
       "semantic_relation_status": "unresolved",
       "acceptance_inferred": false,
       "collector_sha256": "5e9074769ba45eb74e6ade808f9aaac82dd09454e14941d6aea6c7885051b0f1",
-      "lean_source_digest": "6ff55724920a14097e3a4078050c6e8f1f2b15ba6e98aca48623d6691a6e7c40",
+      "lean_source_digest": "8cdcca1b292a651ef95a36a9ff64971c8e4b0a0b2c93da556dc208beac7a7231",
       "public_import_root": "D0.All",
       "proof_detail_collector_sha256": "1899bd10c2928a66d4b961f5b4d12a884b6d721f30bcc187ffcfe02c0f07830a",
       "interpretation": "Pinned source bytes, compiled declarations, exact claim-name locators, and formal-support module locators are displayed as separate evidence. Explicit declaration names are checked against their pinned current module and elaborated environment, but do not establish semantic scope, an application edge, or review acceptance. Co-location and inferred exact-name matches remain candidates only."
@@ -21061,7 +21061,7 @@
       "semantic_relation_status": "unresolved",
       "acceptance_inferred": false,
       "collector_sha256": "5e9074769ba45eb74e6ade808f9aaac82dd09454e14941d6aea6c7885051b0f1",
-      "lean_source_digest": "6ff55724920a14097e3a4078050c6e8f1f2b15ba6e98aca48623d6691a6e7c40",
+      "lean_source_digest": "8cdcca1b292a651ef95a36a9ff64971c8e4b0a0b2c93da556dc208beac7a7231",
       "public_import_root": "D0.All",
       "proof_detail_collector_sha256": "1899bd10c2928a66d4b961f5b4d12a884b6d721f30bcc187ffcfe02c0f07830a",
       "interpretation": "Pinned source bytes, compiled declarations, exact claim-name locators, and formal-support module locators are displayed as separate evidence. Explicit declaration names are checked against their pinned current module and elaborated environment, but do not establish semantic scope, an application edge, or review acceptance. Co-location and inferred exact-name matches remain candidates only."
@@ -21217,7 +21217,7 @@
       "semantic_relation_status": "unresolved",
       "acceptance_inferred": false,
       "collector_sha256": "5e9074769ba45eb74e6ade808f9aaac82dd09454e14941d6aea6c7885051b0f1",
-      "lean_source_digest": "6ff55724920a14097e3a4078050c6e8f1f2b15ba6e98aca48623d6691a6e7c40",
+      "lean_source_digest": "8cdcca1b292a651ef95a36a9ff64971c8e4b0a0b2c93da556dc208beac7a7231",
       "public_import_root": "D0.All",
       "proof_detail_collector_sha256": "1899bd10c2928a66d4b961f5b4d12a884b6d721f30bcc187ffcfe02c0f07830a",
       "interpretation": "Pinned source bytes, compiled declarations, exact claim-name locators, and formal-support module locators are displayed as separate evidence. Explicit declaration names are checked against their pinned current module and elaborated environment, but do not establish semantic scope, an application edge, or review acceptance. Co-location and inferred exact-name matches remain candidates only."
@@ -21518,7 +21518,7 @@
       "semantic_relation_status": "unresolved",
       "acceptance_inferred": false,
       "collector_sha256": "5e9074769ba45eb74e6ade808f9aaac82dd09454e14941d6aea6c7885051b0f1",
-      "lean_source_digest": "6ff55724920a14097e3a4078050c6e8f1f2b15ba6e98aca48623d6691a6e7c40",
+      "lean_source_digest": "8cdcca1b292a651ef95a36a9ff64971c8e4b0a0b2c93da556dc208beac7a7231",
       "public_import_root": "D0.All",
       "proof_detail_collector_sha256": "1899bd10c2928a66d4b961f5b4d12a884b6d721f30bcc187ffcfe02c0f07830a",
       "interpretation": "Pinned source bytes, compiled declarations, exact claim-name locators, and formal-support module locators are displayed as separate evidence. Explicit declaration names are checked against their pinned current module and elaborated environment, but do not establish semantic scope, an application edge, or review acceptance. Co-location and inferred exact-name matches remain candidates only."
@@ -21855,7 +21855,7 @@
       "semantic_relation_status": "unresolved",
       "acceptance_inferred": false,
       "collector_sha256": "5e9074769ba45eb74e6ade808f9aaac82dd09454e14941d6aea6c7885051b0f1",
-      "lean_source_digest": "6ff55724920a14097e3a4078050c6e8f1f2b15ba6e98aca48623d6691a6e7c40",
+      "lean_source_digest": "8cdcca1b292a651ef95a36a9ff64971c8e4b0a0b2c93da556dc208beac7a7231",
       "public_import_root": "D0.All",
       "proof_detail_collector_sha256": "1899bd10c2928a66d4b961f5b4d12a884b6d721f30bcc187ffcfe02c0f07830a",
       "interpretation": "Pinned source bytes, compiled declarations, exact claim-name locators, and formal-support module locators are displayed as separate evidence. Explicit declaration names are checked against their pinned current module and elaborated environment, but do not establish semantic scope, an application edge, or review acceptance. Co-location and inferred exact-name matches remain candidates only."
@@ -22432,7 +22432,7 @@
       "semantic_relation_status": "unresolved",
       "acceptance_inferred": false,
       "collector_sha256": "5e9074769ba45eb74e6ade808f9aaac82dd09454e14941d6aea6c7885051b0f1",
-      "lean_source_digest": "6ff55724920a14097e3a4078050c6e8f1f2b15ba6e98aca48623d6691a6e7c40",
+      "lean_source_digest": "8cdcca1b292a651ef95a36a9ff64971c8e4b0a0b2c93da556dc208beac7a7231",
       "public_import_root": "D0.All",
       "proof_detail_collector_sha256": "1899bd10c2928a66d4b961f5b4d12a884b6d721f30bcc187ffcfe02c0f07830a",
       "interpretation": "Pinned source bytes, compiled declarations, exact claim-name locators, and formal-support module locators are displayed as separate evidence. Explicit declaration names are checked against their pinned current module and elaborated environment, but do not establish semantic scope, an application edge, or review acceptance. Co-location and inferred exact-name matches remain candidates only."
@@ -22865,7 +22865,7 @@
       "semantic_relation_status": "unresolved",
       "acceptance_inferred": false,
       "collector_sha256": "5e9074769ba45eb74e6ade808f9aaac82dd09454e14941d6aea6c7885051b0f1",
-      "lean_source_digest": "6ff55724920a14097e3a4078050c6e8f1f2b15ba6e98aca48623d6691a6e7c40",
+      "lean_source_digest": "8cdcca1b292a651ef95a36a9ff64971c8e4b0a0b2c93da556dc208beac7a7231",
       "public_import_root": "D0.All",
       "proof_detail_collector_sha256": "1899bd10c2928a66d4b961f5b4d12a884b6d721f30bcc187ffcfe02c0f07830a",
       "interpretation": "Pinned source bytes, compiled declarations, exact claim-name locators, and formal-support module locators are displayed as separate evidence. Explicit declaration names are checked against their pinned current module and elaborated environment, but do not establish semantic scope, an application edge, or review acceptance. Co-location and inferred exact-name matches remain candidates only."
@@ -46960,7 +46960,7 @@
       "semantic_relation_status": "unresolved",
       "acceptance_inferred": false,
       "collector_sha256": "5e9074769ba45eb74e6ade808f9aaac82dd09454e14941d6aea6c7885051b0f1",
-      "lean_source_digest": "6ff55724920a14097e3a4078050c6e8f1f2b15ba6e98aca48623d6691a6e7c40",
+      "lean_source_digest": "8cdcca1b292a651ef95a36a9ff64971c8e4b0a0b2c93da556dc208beac7a7231",
       "public_import_root": "D0.All",
       "proof_detail_collector_sha256": "1899bd10c2928a66d4b961f5b4d12a884b6d721f30bcc187ffcfe02c0f07830a",
       "interpretation": "Pinned source bytes, compiled declarations, exact claim-name locators, and formal-support module locators are displayed as separate evidence. Explicit declaration names are checked against their pinned current module and elaborated environment, but do not establish semantic scope, an application edge, or review acceptance. Co-location and inferred exact-name matches remain candidates only."
@@ -47241,7 +47241,7 @@
       "semantic_relation_status": "unresolved",
       "acceptance_inferred": false,
       "collector_sha256": "5e9074769ba45eb74e6ade808f9aaac82dd09454e14941d6aea6c7885051b0f1",
-      "lean_source_digest": "6ff55724920a14097e3a4078050c6e8f1f2b15ba6e98aca48623d6691a6e7c40",
+      "lean_source_digest": "8cdcca1b292a651ef95a36a9ff64971c8e4b0a0b2c93da556dc208beac7a7231",
       "public_import_root": "D0.All",
       "proof_detail_collector_sha256": "1899bd10c2928a66d4b961f5b4d12a884b6d721f30bcc187ffcfe02c0f07830a",
       "interpretation": "Pinned source bytes, compiled declarations, exact claim-name locators, and formal-support module locators are displayed as separate evidence. Explicit declaration names are checked against their pinned current module and elaborated environment, but do not establish semantic scope, an application edge, or review acceptance. Co-location and inferred exact-name matches remain candidates only."
@@ -47506,7 +47506,7 @@
       "semantic_relation_status": "unresolved",
       "acceptance_inferred": false,
       "collector_sha256": "5e9074769ba45eb74e6ade808f9aaac82dd09454e14941d6aea6c7885051b0f1",
-      "lean_source_digest": "6ff55724920a14097e3a4078050c6e8f1f2b15ba6e98aca48623d6691a6e7c40",
+      "lean_source_digest": "8cdcca1b292a651ef95a36a9ff64971c8e4b0a0b2c93da556dc208beac7a7231",
       "public_import_root": "D0.All",
       "proof_detail_collector_sha256": "1899bd10c2928a66d4b961f5b4d12a884b6d721f30bcc187ffcfe02c0f07830a",
       "interpretation": "Pinned source bytes, compiled declarations, exact claim-name locators, and formal-support module locators are displayed as separate evidence. Explicit declaration names are checked against their pinned current module and elaborated environment, but do not establish semantic scope, an application edge, or review acceptance. Co-location and inferred exact-name matches remain candidates only."
@@ -47761,7 +47761,7 @@
       "semantic_relation_status": "unresolved",
       "acceptance_inferred": false,
       "collector_sha256": "5e9074769ba45eb74e6ade808f9aaac82dd09454e14941d6aea6c7885051b0f1",
-      "lean_source_digest": "6ff55724920a14097e3a4078050c6e8f1f2b15ba6e98aca48623d6691a6e7c40",
+      "lean_source_digest": "8cdcca1b292a651ef95a36a9ff64971c8e4b0a0b2c93da556dc208beac7a7231",
       "public_import_root": "D0.All",
       "proof_detail_collector_sha256": "1899bd10c2928a66d4b961f5b4d12a884b6d721f30bcc187ffcfe02c0f07830a",
       "interpretation": "Pinned source bytes, compiled declarations, exact claim-name locators, and formal-support module locators are displayed as separate evidence. Explicit declaration names are checked against their pinned current module and elaborated environment, but do not establish semantic scope, an application edge, or review acceptance. Co-location and inferred exact-name matches remain candidates only."
@@ -48017,7 +48017,7 @@
       "semantic_relation_status": "unresolved",
       "acceptance_inferred": false,
       "collector_sha256": "5e9074769ba45eb74e6ade808f9aaac82dd09454e14941d6aea6c7885051b0f1",
-      "lean_source_digest": "6ff55724920a14097e3a4078050c6e8f1f2b15ba6e98aca48623d6691a6e7c40",
+      "lean_source_digest": "8cdcca1b292a651ef95a36a9ff64971c8e4b0a0b2c93da556dc208beac7a7231",
       "public_import_root": "D0.All",
       "proof_detail_collector_sha256": "1899bd10c2928a66d4b961f5b4d12a884b6d721f30bcc187ffcfe02c0f07830a",
       "interpretation": "Pinned source bytes, compiled declarations, exact claim-name locators, and formal-support module locators are displayed as separate evidence. Explicit declaration names are checked against their pinned current module and elaborated environment, but do not establish semantic scope, an application edge, or review acceptance. Co-location and inferred exact-name matches remain candidates only."
@@ -48275,7 +48275,7 @@
       "semantic_relation_status": "unresolved",
       "acceptance_inferred": false,
       "collector_sha256": "5e9074769ba45eb74e6ade808f9aaac82dd09454e14941d6aea6c7885051b0f1",
-      "lean_source_digest": "6ff55724920a14097e3a4078050c6e8f1f2b15ba6e98aca48623d6691a6e7c40",
+      "lean_source_digest": "8cdcca1b292a651ef95a36a9ff64971c8e4b0a0b2c93da556dc208beac7a7231",
       "public_import_root": "D0.All",
       "proof_detail_collector_sha256": "1899bd10c2928a66d4b961f5b4d12a884b6d721f30bcc187ffcfe02c0f07830a",
       "interpretation": "Pinned source bytes, compiled declarations, exact claim-name locators, and formal-support module locators are displayed as separate evidence. Explicit declaration names are checked against their pinned current module and elaborated environment, but do not establish semantic scope, an application edge, or review acceptance. Co-location and inferred exact-name matches remain candidates only."
@@ -48533,7 +48533,7 @@
       "semantic_relation_status": "unresolved",
       "acceptance_inferred": false,
       "collector_sha256": "5e9074769ba45eb74e6ade808f9aaac82dd09454e14941d6aea6c7885051b0f1",
-      "lean_source_digest": "6ff55724920a14097e3a4078050c6e8f1f2b15ba6e98aca48623d6691a6e7c40",
+      "lean_source_digest": "8cdcca1b292a651ef95a36a9ff64971c8e4b0a0b2c93da556dc208beac7a7231",
       "public_import_root": "D0.All",
       "proof_detail_collector_sha256": "1899bd10c2928a66d4b961f5b4d12a884b6d721f30bcc187ffcfe02c0f07830a",
       "interpretation": "Pinned source bytes, compiled declarations, exact claim-name locators, and formal-support module locators are displayed as separate evidence. Explicit declaration names are checked against their pinned current module and elaborated environment, but do not establish semantic scope, an application edge, or review acceptance. Co-location and inferred exact-name matches remain candidates only."
@@ -48719,7 +48719,7 @@
       "semantic_relation_status": "unresolved",
       "acceptance_inferred": false,
       "collector_sha256": "5e9074769ba45eb74e6ade808f9aaac82dd09454e14941d6aea6c7885051b0f1",
-      "lean_source_digest": "6ff55724920a14097e3a4078050c6e8f1f2b15ba6e98aca48623d6691a6e7c40",
+      "lean_source_digest": "8cdcca1b292a651ef95a36a9ff64971c8e4b0a0b2c93da556dc208beac7a7231",
       "public_import_root": "D0.All",
       "proof_detail_collector_sha256": "1899bd10c2928a66d4b961f5b4d12a884b6d721f30bcc187ffcfe02c0f07830a",
       "interpretation": "Pinned source bytes, compiled declarations, exact claim-name locators, and formal-support module locators are displayed as separate evidence. Explicit declaration names are checked against their pinned current module and elaborated environment, but do not establish semantic scope, an application edge, or review acceptance. Co-location and inferred exact-name matches remain candidates only."
@@ -49012,7 +49012,7 @@
       "semantic_relation_status": "unresolved",
       "acceptance_inferred": false,
       "collector_sha256": "5e9074769ba45eb74e6ade808f9aaac82dd09454e14941d6aea6c7885051b0f1",
-      "lean_source_digest": "6ff55724920a14097e3a4078050c6e8f1f2b15ba6e98aca48623d6691a6e7c40",
+      "lean_source_digest": "8cdcca1b292a651ef95a36a9ff64971c8e4b0a0b2c93da556dc208beac7a7231",
       "public_import_root": "D0.All",
       "proof_detail_collector_sha256": "1899bd10c2928a66d4b961f5b4d12a884b6d721f30bcc187ffcfe02c0f07830a",
       "interpretation": "Pinned source bytes, compiled declarations, exact claim-name locators, and formal-support module locators are displayed as separate evidence. Explicit declaration names are checked against their pinned current module and elaborated environment, but do not establish semantic scope, an application edge, or review acceptance. Co-location and inferred exact-name matches remain candidates only."
@@ -49319,7 +49319,7 @@
       "semantic_relation_status": "unresolved",
       "acceptance_inferred": false,
       "collector_sha256": "5e9074769ba45eb74e6ade808f9aaac82dd09454e14941d6aea6c7885051b0f1",
-      "lean_source_digest": "6ff55724920a14097e3a4078050c6e8f1f2b15ba6e98aca48623d6691a6e7c40",
+      "lean_source_digest": "8cdcca1b292a651ef95a36a9ff64971c8e4b0a0b2c93da556dc208beac7a7231",
       "public_import_root": "D0.All",
       "proof_detail_collector_sha256": "1899bd10c2928a66d4b961f5b4d12a884b6d721f30bcc187ffcfe02c0f07830a",
       "interpretation": "Pinned source bytes, compiled declarations, exact claim-name locators, and formal-support module locators are displayed as separate evidence. Explicit declaration names are checked against their pinned current module and elaborated environment, but do not establish semantic scope, an application edge, or review acceptance. Co-location and inferred exact-name matches remain candidates only."
@@ -49623,7 +49623,7 @@
       "semantic_relation_status": "unresolved",
       "acceptance_inferred": false,
       "collector_sha256": "5e9074769ba45eb74e6ade808f9aaac82dd09454e14941d6aea6c7885051b0f1",
-      "lean_source_digest": "6ff55724920a14097e3a4078050c6e8f1f2b15ba6e98aca48623d6691a6e7c40",
+      "lean_source_digest": "8cdcca1b292a651ef95a36a9ff64971c8e4b0a0b2c93da556dc208beac7a7231",
       "public_import_root": "D0.All",
       "proof_detail_collector_sha256": "1899bd10c2928a66d4b961f5b4d12a884b6d721f30bcc187ffcfe02c0f07830a",
       "interpretation": "Pinned source bytes, compiled declarations, exact claim-name locators, and formal-support module locators are displayed as separate evidence. Explicit declaration names are checked against their pinned current module and elaborated environment, but do not establish semantic scope, an application edge, or review acceptance. Co-location and inferred exact-name matches remain candidates only."
@@ -49984,7 +49984,7 @@
       "semantic_relation_status": "unresolved",
       "acceptance_inferred": false,
       "collector_sha256": "5e9074769ba45eb74e6ade808f9aaac82dd09454e14941d6aea6c7885051b0f1",
-      "lean_source_digest": "6ff55724920a14097e3a4078050c6e8f1f2b15ba6e98aca48623d6691a6e7c40",
+      "lean_source_digest": "8cdcca1b292a651ef95a36a9ff64971c8e4b0a0b2c93da556dc208beac7a7231",
       "public_import_root": "D0.All",
       "proof_detail_collector_sha256": "1899bd10c2928a66d4b961f5b4d12a884b6d721f30bcc187ffcfe02c0f07830a",
       "interpretation": "Pinned source bytes, compiled declarations, exact claim-name locators, and formal-support module locators are displayed as separate evidence. Explicit declaration names are checked against their pinned current module and elaborated environment, but do not establish semantic scope, an application edge, or review acceptance. Co-location and inferred exact-name matches remain candidates only."
@@ -55114,7 +55114,7 @@
       "semantic_relation_status": "unresolved",
       "acceptance_inferred": false,
       "collector_sha256": "5e9074769ba45eb74e6ade808f9aaac82dd09454e14941d6aea6c7885051b0f1",
-      "lean_source_digest": "6ff55724920a14097e3a4078050c6e8f1f2b15ba6e98aca48623d6691a6e7c40",
+      "lean_source_digest": "8cdcca1b292a651ef95a36a9ff64971c8e4b0a0b2c93da556dc208beac7a7231",
       "public_import_root": "D0.All",
       "proof_detail_collector_sha256": "1899bd10c2928a66d4b961f5b4d12a884b6d721f30bcc187ffcfe02c0f07830a",
       "interpretation": "Pinned source bytes, compiled declarations, exact claim-name locators, and formal-support module locators are displayed as separate evidence. Explicit declaration names are checked against their pinned current module and elaborated environment, but do not establish semantic scope, an application edge, or review acceptance. Co-location and inferred exact-name matches remain candidates only."
@@ -55473,7 +55473,7 @@
       "semantic_relation_status": "unresolved",
       "acceptance_inferred": false,
       "collector_sha256": "5e9074769ba45eb74e6ade808f9aaac82dd09454e14941d6aea6c7885051b0f1",
-      "lean_source_digest": "6ff55724920a14097e3a4078050c6e8f1f2b15ba6e98aca48623d6691a6e7c40",
+      "lean_source_digest": "8cdcca1b292a651ef95a36a9ff64971c8e4b0a0b2c93da556dc208beac7a7231",
       "public_import_root": "D0.All",
       "proof_detail_collector_sha256": "1899bd10c2928a66d4b961f5b4d12a884b6d721f30bcc187ffcfe02c0f07830a",
       "interpretation": "Pinned source bytes, compiled declarations, exact claim-name locators, and formal-support module locators are displayed as separate evidence. Explicit declaration names are checked against their pinned current module and elaborated environment, but do not establish semantic scope, an application edge, or review acceptance. Co-location and inferred exact-name matches remain candidates only."
@@ -55794,7 +55794,7 @@
       "semantic_relation_status": "unresolved",
       "acceptance_inferred": false,
       "collector_sha256": "5e9074769ba45eb74e6ade808f9aaac82dd09454e14941d6aea6c7885051b0f1",
-      "lean_source_digest": "6ff55724920a14097e3a4078050c6e8f1f2b15ba6e98aca48623d6691a6e7c40",
+      "lean_source_digest": "8cdcca1b292a651ef95a36a9ff64971c8e4b0a0b2c93da556dc208beac7a7231",
       "public_import_root": "D0.All",
       "proof_detail_collector_sha256": "1899bd10c2928a66d4b961f5b4d12a884b6d721f30bcc187ffcfe02c0f07830a",
       "interpretation": "Pinned source bytes, compiled declarations, exact claim-name locators, and formal-support module locators are displayed as separate evidence. Explicit declaration names are checked against their pinned current module and elaborated environment, but do not establish semantic scope, an application edge, or review acceptance. Co-location and inferred exact-name matches remain candidates only."
@@ -56314,7 +56314,7 @@
       "semantic_relation_status": "unresolved",
       "acceptance_inferred": false,
       "collector_sha256": "5e9074769ba45eb74e6ade808f9aaac82dd09454e14941d6aea6c7885051b0f1",
-      "lean_source_digest": "6ff55724920a14097e3a4078050c6e8f1f2b15ba6e98aca48623d6691a6e7c40",
+      "lean_source_digest": "8cdcca1b292a651ef95a36a9ff64971c8e4b0a0b2c93da556dc208beac7a7231",
       "public_import_root": "D0.All",
       "proof_detail_collector_sha256": "1899bd10c2928a66d4b961f5b4d12a884b6d721f30bcc187ffcfe02c0f07830a",
       "interpretation": "Pinned source bytes, compiled declarations, exact claim-name locators, and formal-support module locators are displayed as separate evidence. Explicit declaration names are checked against their pinned current module and elaborated environment, but do not establish semantic scope, an application edge, or review acceptance. Co-location and inferred exact-name matches remain candidates only."
@@ -56759,7 +56759,7 @@
       "semantic_relation_status": "unresolved",
       "acceptance_inferred": false,
       "collector_sha256": "5e9074769ba45eb74e6ade808f9aaac82dd09454e14941d6aea6c7885051b0f1",
-      "lean_source_digest": "6ff55724920a14097e3a4078050c6e8f1f2b15ba6e98aca48623d6691a6e7c40",
+      "lean_source_digest": "8cdcca1b292a651ef95a36a9ff64971c8e4b0a0b2c93da556dc208beac7a7231",
       "public_import_root": "D0.All",
       "proof_detail_collector_sha256": "1899bd10c2928a66d4b961f5b4d12a884b6d721f30bcc187ffcfe02c0f07830a",
       "interpretation": "Pinned source bytes, compiled declarations, exact claim-name locators, and formal-support module locators are displayed as separate evidence. Explicit declaration names are checked against their pinned current module and elaborated environment, but do not establish semantic scope, an application edge, or review acceptance. Co-location and inferred exact-name matches remain candidates only."
@@ -70515,7 +70515,7 @@
       "semantic_relation_status": "unresolved",
       "acceptance_inferred": false,
       "collector_sha256": "5e9074769ba45eb74e6ade808f9aaac82dd09454e14941d6aea6c7885051b0f1",
-      "lean_source_digest": "6ff55724920a14097e3a4078050c6e8f1f2b15ba6e98aca48623d6691a6e7c40",
+      "lean_source_digest": "8cdcca1b292a651ef95a36a9ff64971c8e4b0a0b2c93da556dc208beac7a7231",
       "public_import_root": "D0.All",
       "proof_detail_collector_sha256": "1899bd10c2928a66d4b961f5b4d12a884b6d721f30bcc187ffcfe02c0f07830a",
       "interpretation": "Pinned source bytes, compiled declarations, exact claim-name locators, and formal-support module locators are displayed as separate evidence. Explicit declaration names are checked against their pinned current module and elaborated environment, but do not establish semantic scope, an application edge, or review acceptance. Co-location and inferred exact-name matches remain candidates only."
@@ -98463,7 +98463,7 @@
       "semantic_relation_status": "unresolved",
       "acceptance_inferred": false,
       "collector_sha256": "5e9074769ba45eb74e6ade808f9aaac82dd09454e14941d6aea6c7885051b0f1",
-      "lean_source_digest": "6ff55724920a14097e3a4078050c6e8f1f2b15ba6e98aca48623d6691a6e7c40",
+      "lean_source_digest": "8cdcca1b292a651ef95a36a9ff64971c8e4b0a0b2c93da556dc208beac7a7231",
       "public_import_root": "D0.All",
       "proof_detail_collector_sha256": "1899bd10c2928a66d4b961f5b4d12a884b6d721f30bcc187ffcfe02c0f07830a",
       "interpretation": "Pinned source bytes, compiled declarations, exact claim-name locators, and formal-support module locators are displayed as separate evidence. Explicit declaration names are checked against their pinned current module and elaborated environment, but do not establish semantic scope, an application edge, or review acceptance. Co-location and inferred exact-name matches remain candidates only."
@@ -117348,7 +117348,7 @@
       "semantic_relation_status": "unresolved",
       "acceptance_inferred": false,
       "collector_sha256": "5e9074769ba45eb74e6ade808f9aaac82dd09454e14941d6aea6c7885051b0f1",
-      "lean_source_digest": "6ff55724920a14097e3a4078050c6e8f1f2b15ba6e98aca48623d6691a6e7c40",
+      "lean_source_digest": "8cdcca1b292a651ef95a36a9ff64971c8e4b0a0b2c93da556dc208beac7a7231",
       "public_import_root": "D0.All",
       "proof_detail_collector_sha256": "1899bd10c2928a66d4b961f5b4d12a884b6d721f30bcc187ffcfe02c0f07830a",
       "interpretation": "Pinned source bytes, compiled declarations, exact claim-name locators, and formal-support module locators are displayed as separate evidence. Explicit declaration names are checked against their pinned current module and elaborated environment, but do not establish semantic scope, an application edge, or review acceptance. Co-location and inferred exact-name matches remain candidates only."
@@ -152720,7 +152720,7 @@
       "semantic_relation_status": "unresolved",
       "acceptance_inferred": false,
       "collector_sha256": "5e9074769ba45eb74e6ade808f9aaac82dd09454e14941d6aea6c7885051b0f1",
-      "lean_source_digest": "6ff55724920a14097e3a4078050c6e8f1f2b15ba6e98aca48623d6691a6e7c40",
+      "lean_source_digest": "8cdcca1b292a651ef95a36a9ff64971c8e4b0a0b2c93da556dc208beac7a7231",
       "public_import_root": "D0.All",
       "proof_detail_collector_sha256": "1899bd10c2928a66d4b961f5b4d12a884b6d721f30bcc187ffcfe02c0f07830a",
       "interpretation": "Pinned source bytes, compiled declarations, exact claim-name locators, and formal-support module locators are displayed as separate evidence. Explicit declaration names are checked against their pinned current module and elaborated environment, but do not establish semantic scope, an application edge, or review acceptance. Co-location and inferred exact-name matches remain candidates only."
