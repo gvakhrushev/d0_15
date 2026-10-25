@@ -6681,3 +6681,24 @@ are current, the formalization-debt count remains five against its five-item
 baseline, and `git diff --check` is clean. This is a finite algebra/library
 slice. C0 freeze and independent acceptance, remaining mathematical
 migrations, and the physical GR premises remain open.
+
+### Clean cold-start replay for the source-preparation tensor slice (25 October 2026)
+
+The full bilingual cold-start runner completed on clean snapshot
+`e85c64c6e8a6f135b928679f213860c9cad5bb2f` (`worktree_dirty=false`). All
+**20/20** scenarios found every required source, and the **21/21** benchmark
+checks passed, including exact-source versus unrelated-prose impact. The run
+used the updated `formal_support.csv` digest
+`1edc5ddf0e53d46d72c7533beb0e7285dcb25b0d3cca0243d2f3d2c646899e1a`; its
+complete authority digests and per-query evidence are preserved in
+`sources/d0_proof_architecture_formalization_2026-10-24/proof_architecture_cold_start_summary_2026-10-25_e85c64c6.json`,
+SHA-256 `9078db77bf2524844795e2449dd528916f784f64be7067f18360e4392e86be04`.
+The runner and search engine are pinned by SHA-256
+`7da9ed4eec1fc1f0c6a1ec217cd89e9d09bfc05ae176384e364e0d5bdbe73285` and
+`aaed4194af38484de97db60c821374955f90dc5cc290d20a6fb8e53f94624262`,
+respectively. Semantic scope review remains manual.
+
+GitHub `D0 Lean build` run **3183** and `D0 guards` run **5221** both succeeded
+on `e85c64c6`. These checks and retrieval results verify this engineering
+checkpoint only; they do not freeze C0, accept claim semantics, or close the
+remaining mathematical, physical, and independent-review obligations.
