@@ -1,8 +1,8 @@
 {
   "schema": "d0-lean-declaration-inventory-v1",
-  "snapshot_commit": "2b605d0592cce7a5518b704fe1da16328f049694",
+  "snapshot_commit": "524397d6ac89d90e5c07df73f9a3a675759e384d",
   "worktree_dirty": true,
-  "lean_source_digest": "33e3042c75f5b7f94140dd3eb7cf43735ce90477d3142d0cd4b8865531bf86ef",
+  "lean_source_digest": "06113c1f8fef43734facd63ccce691f892feb314faf68fb8d2f9e8bc79f72040",
   "collector_sha256": "25f0569099c3e7421ca0ef146e23890b66095c5e43b96a1b007684af9608b068",
   "toolchain": "leanprover/lean4:v4.30.0",
   "public_import_root": "D0.All",
@@ -276,21 +276,21 @@
         "declaration": {
           "end": {
             "column": 68,
-            "line": 331
+            "line": 379
           },
           "start": {
             "column": 0,
-            "line": 320
+            "line": 368
           }
         },
         "selection": {
           "end": {
             "column": 37,
-            "line": 320
+            "line": 368
           },
           "start": {
             "column": 8,
-            "line": 320
+            "line": 368
           }
         }
       },
@@ -417,21 +417,21 @@
         "declaration": {
           "end": {
             "column": 50,
-            "line": 298
+            "line": 346
           },
           "start": {
             "column": 0,
-            "line": 297
+            "line": 345
           }
         },
         "selection": {
           "end": {
             "column": 23,
-            "line": 297
+            "line": 345
           },
           "start": {
             "column": 8,
-            "line": 297
+            "line": 345
           }
         }
       },
@@ -539,21 +539,21 @@
         "declaration": {
           "end": {
             "column": 60,
-            "line": 381
+            "line": 429
           },
           "start": {
             "column": 0,
-            "line": 369
+            "line": 417
           }
         },
         "selection": {
           "end": {
             "column": 38,
-            "line": 369
+            "line": 417
           },
           "start": {
             "column": 8,
-            "line": 369
+            "line": 417
           }
         }
       },
@@ -715,21 +715,21 @@
         "declaration": {
           "end": {
             "column": 29,
-            "line": 367
+            "line": 415
           },
           "start": {
             "column": 0,
-            "line": 350
+            "line": 398
           }
         },
         "selection": {
           "end": {
             "column": 33,
-            "line": 352
+            "line": 400
           },
           "start": {
             "column": 8,
-            "line": 352
+            "line": 400
           }
         }
       },
@@ -2687,6 +2687,152 @@
       ],
       "binders": [
         {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "i",
+          "type": "Type"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Research.NativeWeightedDiracBoundary.2176025417._hygCtx._hyg.3",
+          "type": "Fintype i"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Research.NativeWeightedDiracBoundary.2176025417._hygCtx._hyg.6",
+          "type": "(a b : i) → Decidable (a = b)"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "T",
+          "type": "i → i → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "G",
+          "type": "i → i → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hadj",
+          "type": "T.transpose * G = G * T"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "x",
+          "type": "i → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "y",
+          "type": "i → ℝ"
+        }
+      ],
+      "conclusion_whnf": "T.mulVec x ⬝ᵥ G.mulVec y = x ⬝ᵥ G.mulVec (T.mulVec y)",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 31,
+            "line": 316
+          },
+          "start": {
+            "column": 0,
+            "line": 297
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 30,
+            "line": 299
+          },
+          "start": {
+            "column": 8,
+            "line": 299
+          }
+        }
+      },
+      "elaborated_type": "∀ {i : Type} [inst : Fintype i] [DecidableEq i] (T G : Matrix i i ℝ),\n  T.transpose * G = G * T → ∀ (x y : i → ℝ), T.mulVec x ⬝ᵥ G.mulVec y = x ⬝ᵥ G.mulVec (T.mulVec y)",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Research.NativeWeightedDiracBoundary",
+      "name": "D0.Research.NativeWeightedDiracBoundary.matrix_adjoint_pairing",
+      "proof_dependencies": [
+        "DecidableEq",
+        "Distrib.toMul",
+        "Eq",
+        "Eq.mpr",
+        "Eq.refl",
+        "Eq.symm",
+        "Fintype",
+        "HMul.hMul",
+        "Matrix",
+        "Matrix.dotProduct_transpose_mulVec",
+        "Matrix.instHMulOfFintypeOfMulOfAddCommMonoid",
+        "Matrix.mulVec",
+        "Matrix.mulVec_mulVec",
+        "Matrix.transpose",
+        "NonUnitalCommRing.toNonUnitalCommSemiring",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalCommSemiring.toNonUnitalSemiring",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocCommSemiring",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocCommSemiring.toCommMagma",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "NonUnitalNonAssocSemiring.toDistrib",
+        "NonUnitalNormedCommRing.toNonUnitalCommRing",
+        "NonUnitalSemiring.toNonUnitalNonAssocSemiring",
+        "NormedCommRing.toNonUnitalNormedCommRing",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.instMul",
+        "Real.normedCommRing",
+        "Trans.trans",
+        "congrArg",
+        "dotProduct",
+        "dotProduct_comm",
+        "id",
+        "instTransEq"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "DecidableEq",
+        "Eq",
+        "Fintype",
+        "HMul.hMul",
+        "Matrix",
+        "Matrix.instHMulOfFintypeOfMulOfAddCommMonoid",
+        "Matrix.mulVec",
+        "Matrix.transpose",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNormedCommRing.toNonUnitalCommRing",
+        "NormedCommRing.toNonUnitalNormedCommRing",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.instMul",
+        "Real.normedCommRing",
+        "dotProduct"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Research/NativeWeightedDiracBoundary.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
           "binder_info": "Lean.BinderInfo.default",
           "is_proposition": false,
           "name": "t",
@@ -2729,21 +2875,21 @@
         "declaration": {
           "end": {
             "column": 18,
-            "line": 308
+            "line": 356
           },
           "start": {
             "column": 0,
-            "line": 300
+            "line": 348
           }
         },
         "selection": {
           "end": {
             "column": 29,
-            "line": 302
+            "line": 350
           },
           "start": {
             "column": 8,
-            "line": 302
+            "line": 350
           }
         }
       },
@@ -3047,21 +3193,21 @@
         "declaration": {
           "end": {
             "column": 40,
-            "line": 397
+            "line": 445
           },
           "start": {
             "column": 0,
-            "line": 383
+            "line": 431
           }
         },
         "selection": {
           "end": {
             "column": 33,
-            "line": 385
+            "line": 433
           },
           "start": {
             "column": 8,
-            "line": 385
+            "line": 433
           }
         }
       },
@@ -3225,21 +3371,21 @@
         "declaration": {
           "end": {
             "column": 7,
-            "line": 406
+            "line": 454
           },
           "start": {
             "column": 0,
-            "line": 399
+            "line": 447
           }
         },
         "selection": {
           "end": {
             "column": 39,
-            "line": 399
+            "line": 447
           },
           "start": {
             "column": 8,
-            "line": 399
+            "line": 447
           }
         }
       },
@@ -3544,6 +3690,368 @@
       ],
       "binders": [
         {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "i",
+          "type": "Type"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Research.NativeWeightedDiracBoundary.481215682._hygCtx._hyg.3",
+          "type": "Fintype i"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Research.NativeWeightedDiracBoundary.481215682._hygCtx._hyg.6",
+          "type": "(a b : i) → Decidable (a = b)"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "L",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hL",
+          "type": "L = 0 → False"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "T",
+          "type": "i → i → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "G",
+          "type": "i → i → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "u",
+          "type": "i → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "v",
+          "type": "i → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hu",
+          "type": "u = 0 → False"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hv",
+          "type": "v = 0 → False"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hpos",
+          "type": "∀ (x : i → ℝ), x ≠ 0 → 0 < x ⬝ᵥ G.mulVec x"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hadj",
+          "type": "T.transpose * G = G * T"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hTu",
+          "type": "T.mulVec u = -(2 * L) • v"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hTv",
+          "type": "T.mulVec v = (2 * L) • u"
+        }
+      ],
+      "conclusion_whnf": "False",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 10,
+            "line": 343
+          },
+          "start": {
+            "column": 0,
+            "line": 318
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 63,
+            "line": 322
+          },
+          "start": {
+            "column": 8,
+            "line": 322
+          }
+        }
+      },
+      "elaborated_type": "∀ {i : Type} [inst : Fintype i] [DecidableEq i] (L : ℝ),\n  L ≠ 0 →\n    ∀ (T G : Matrix i i ℝ) (u v : i → ℝ),\n      u ≠ 0 →\n        v ≠ 0 →\n          (∀ (x : i → ℝ), x ≠ 0 → 0 < x ⬝ᵥ G.mulVec x) →\n            T.transpose * G = G * T → T.mulVec u = -(2 * L) • v → T.mulVec v = (2 * L) • u → False",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Research.NativeWeightedDiracBoundary",
+      "name": "D0.Research.NativeWeightedDiracBoundary.positive_selfadjoint_spatial_invariant_block_impossible",
+      "proof_dependencies": [
+        "AddCommGroup.toDivisionAddCommMonoid",
+        "AddCommMonoid.toAddMonoid",
+        "AddCommMonoidWithOne.toAddMonoidWithOne",
+        "AddGroup.toSubNegMonoid",
+        "AddGroupWithOne.toAddGroup",
+        "AddGroupWithOne.toAddMonoidWithOne",
+        "AddMonoid.toAddSemigroup",
+        "AddMonoid.toAddZeroClass",
+        "AddMonoidWithOne.toNatCast",
+        "AddSemigroup.toAdd",
+        "AddZero.toZero",
+        "AddZeroClass.toAddZero",
+        "Algebra.id",
+        "Algebra.to_smulCommClass",
+        "Bool",
+        "Bool.false",
+        "CommRing.toRing",
+        "CommSemiring.toSemiring",
+        "D0.Research.NativeWeightedDiracBoundary.matrix_adjoint_pairing",
+        "DecidableEq",
+        "Distrib.toAdd",
+        "Distrib.toMul",
+        "DistribLattice.toLattice",
+        "DistribSMul.toSMulZeroClass",
+        "Eq",
+        "Eq.mp",
+        "Eq.mpr",
+        "Eq.refl",
+        "Eq.symm",
+        "Eq.trans",
+        "False",
+        "False.elim",
+        "Fintype",
+        "Function.hasSMul",
+        "HAdd.hAdd",
+        "HMul.hMul",
+        "HPow.hPow",
+        "HSMul.hSMul",
+        "HSub.hSub",
+        "Iff.mp",
+        "Iff.mpr",
+        "Int",
+        "Int.negOfNat",
+        "Int.ofNat",
+        "Int.rawCast",
+        "IsScalarTower.right",
+        "LT.lt",
+        "Lattice.toSemilatticeInf",
+        "Mathlib.Meta.NormNum.IsInt.of_raw",
+        "Mathlib.Meta.NormNum.IsInt.to_isNat",
+        "Mathlib.Meta.NormNum.IsInt.to_raw_eq",
+        "Mathlib.Meta.NormNum.IsNat.of_raw",
+        "Mathlib.Meta.NormNum.IsNat.to_isInt",
+        "Mathlib.Meta.NormNum.IsNat.to_raw_eq",
+        "Mathlib.Meta.NormNum.instAddMonoidWithOne",
+        "Mathlib.Meta.NormNum.instAtLeastTwo",
+        "Mathlib.Meta.NormNum.isInt_add",
+        "Mathlib.Meta.NormNum.isInt_mul",
+        "Mathlib.Meta.NormNum.isInt_neg",
+        "Mathlib.Meta.NormNum.isNat_eq_false",
+        "Mathlib.Meta.NormNum.isNat_mul",
+        "Mathlib.Meta.NormNum.isNat_ofNat",
+        "Mathlib.Tactic.Linarith.add_neg",
+        "Mathlib.Tactic.Linarith.eq_of_not_lt_of_not_gt",
+        "Mathlib.Tactic.Linarith.lt_irrefl",
+        "Mathlib.Tactic.Linarith.lt_of_eq_of_lt",
+        "Mathlib.Tactic.Linarith.lt_of_lt_of_eq",
+        "Mathlib.Tactic.Linarith.sub_neg_of_lt",
+        "Mathlib.Tactic.Ring.Common.add_congr",
+        "Mathlib.Tactic.Ring.Common.add_mul",
+        "Mathlib.Tactic.Ring.Common.add_overlap_pf_zero",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_gt",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_lt",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_overlap_zero",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_zero",
+        "Mathlib.Tactic.Ring.Common.add_pf_zero_add",
+        "Mathlib.Tactic.Ring.Common.atom_pf",
+        "Mathlib.Tactic.Ring.Common.mul_add",
+        "Mathlib.Tactic.Ring.Common.mul_congr",
+        "Mathlib.Tactic.Ring.Common.mul_pf_left",
+        "Mathlib.Tactic.Ring.Common.mul_pf_right",
+        "Mathlib.Tactic.Ring.Common.mul_zero",
+        "Mathlib.Tactic.Ring.Common.neg_add",
+        "Mathlib.Tactic.Ring.Common.neg_congr",
+        "Mathlib.Tactic.Ring.Common.neg_mul",
+        "Mathlib.Tactic.Ring.Common.neg_zero",
+        "Mathlib.Tactic.Ring.Common.sub_congr",
+        "Mathlib.Tactic.Ring.Common.sub_pf",
+        "Mathlib.Tactic.Ring.Common.zero_mul",
+        "Mathlib.Tactic.Ring.cast_pos",
+        "Mathlib.Tactic.Ring.cast_zero",
+        "Mathlib.Tactic.Ring.of_eq",
+        "Matrix",
+        "Matrix.instHMulOfFintypeOfMulOfAddCommMonoid",
+        "Matrix.mulVec",
+        "Matrix.mulVec_smul",
+        "Matrix.transpose",
+        "Monoid.toPow",
+        "MulZeroClass.toMul",
+        "MulZeroClass.toZero",
+        "Nat",
+        "Nat.cast_zero",
+        "Nat.instAtLeastTwoHAddOfNat",
+        "Nat.instCommSemiring",
+        "Nat.instNeZeroSucc",
+        "Nat.rawCast",
+        "Ne",
+        "Neg.neg",
+        "NegZeroClass.toNeg",
+        "NegZeroClass.toZero",
+        "NonAssocSemiring.toAddCommMonoidWithOne",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "NonUnitalNormedCommRing.toNonUnitalCommRing",
+        "NormMulClass.toNoZeroDivisors",
+        "NormedCommRing.toNonUnitalNormedCommRing",
+        "NormedCommRing.toNormedRing",
+        "NormedDivisionRing.toNormMulClass",
+        "NormedField.toNormedDivisionRing",
+        "Not.intro",
+        "OfNat.ofNat",
+        "Or",
+        "Or.resolve_left",
+        "PartialOrder.toPreorder",
+        "Pi.instZero",
+        "Preorder.toLT",
+        "RCLike.charZero_rclike",
+        "Real",
+        "Real.commRing",
+        "Real.instAdd",
+        "Real.instAddCommGroup",
+        "Real.instAddCommMonoid",
+        "Real.instAddGroup",
+        "Real.instAddMonoid",
+        "Real.instCommSemiring",
+        "Real.instIsOrderedRing",
+        "Real.instIsStrictOrderedRing",
+        "Real.instLT",
+        "Real.instMul",
+        "Real.instNatCast",
+        "Real.instNeg",
+        "Real.instPreorder",
+        "Real.instRCLike",
+        "Real.instRing",
+        "Real.instZero",
+        "Real.linearOrder",
+        "Real.normedCommRing",
+        "Real.normedField",
+        "Real.partialOrder",
+        "Real.semiring",
+        "Ring",
+        "Ring.toAddCommGroup",
+        "Ring.toAddGroupWithOne",
+        "Ring.toSemiring",
+        "SMulZeroClass.toSMul",
+        "SemilatticeInf.toPartialOrder",
+        "Semiring.toMonoid",
+        "Semiring.toNonAssocSemiring",
+        "SubNegMonoid.toSub",
+        "SubNegZeroMonoid.toNegZeroClass",
+        "SubtractionCommMonoid.toSubtractionMonoid",
+        "SubtractionMonoid.toSubNegZeroMonoid",
+        "Zero.toOfNat0",
+        "congr",
+        "congrArg",
+        "dotProduct",
+        "dotProduct_smul",
+        "id",
+        "inferInstance",
+        "instDistribLatticeOfLinearOrder",
+        "instDistribOfSemiring",
+        "instDistribSMul",
+        "instHAdd",
+        "instHMul",
+        "instHPow",
+        "instHSMul",
+        "instHSub",
+        "instMulZeroClassOfSemiring",
+        "instOfNatAtLeastTwo",
+        "instOfNatNat",
+        "instSMulOfMul",
+        "mul_eq_zero",
+        "mul_ne_zero",
+        "neg_eq_zero",
+        "rfl",
+        "smul_dotProduct",
+        "sub_eq_zero_of_eq"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "DecidableEq",
+        "Eq",
+        "False",
+        "Fintype",
+        "Function.hasSMul",
+        "HMul.hMul",
+        "HSMul.hSMul",
+        "LT.lt",
+        "Matrix",
+        "Matrix.instHMulOfFintypeOfMulOfAddCommMonoid",
+        "Matrix.mulVec",
+        "Matrix.transpose",
+        "Nat",
+        "Nat.instAtLeastTwoHAddOfNat",
+        "Nat.instNeZeroSucc",
+        "Ne",
+        "Neg.neg",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNormedCommRing.toNonUnitalCommRing",
+        "NormedCommRing.toNonUnitalNormedCommRing",
+        "OfNat.ofNat",
+        "Pi.instZero",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.instLT",
+        "Real.instMul",
+        "Real.instNatCast",
+        "Real.instNeg",
+        "Real.instZero",
+        "Real.normedCommRing",
+        "Zero.toOfNat0",
+        "dotProduct",
+        "instHMul",
+        "instHSMul",
+        "instOfNatAtLeastTwo",
+        "instOfNatNat",
+        "instSMulOfMul"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Research/NativeWeightedDiracBoundary.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
           "binder_info": "Lean.BinderInfo.default",
           "is_proposition": false,
           "name": "L",
@@ -3759,21 +4267,21 @@
         "declaration": {
           "end": {
             "column": 7,
-            "line": 341
+            "line": 389
           },
           "start": {
             "column": 0,
-            "line": 333
+            "line": 381
           }
         },
         "selection": {
           "end": {
             "column": 27,
-            "line": 333
+            "line": 381
           },
           "start": {
             "column": 8,
-            "line": 333
+            "line": 381
           }
         }
       },
@@ -3924,21 +4432,21 @@
         "declaration": {
           "end": {
             "column": 17,
-            "line": 318
+            "line": 366
           },
           "start": {
             "column": 0,
-            "line": 310
+            "line": 358
           }
         },
         "selection": {
           "end": {
             "column": 28,
-            "line": 310
+            "line": 358
           },
           "start": {
             "column": 8,
-            "line": 310
+            "line": 358
           }
         }
       },
@@ -4697,21 +5205,21 @@
         "declaration": {
           "end": {
             "column": 5,
-            "line": 348
+            "line": 396
           },
           "start": {
             "column": 0,
-            "line": 343
+            "line": 391
           }
         },
         "selection": {
           "end": {
             "column": 31,
-            "line": 343
+            "line": 391
           },
           "start": {
             "column": 8,
-            "line": 343
+            "line": 391
           }
         }
       },

@@ -3932,7 +3932,7 @@ capsule at the same commit has SHA-256
 | `Finite mixed spectral moments: a quantitative contrast obstruction (generic identities and annihilator)` | **Finite-degree identities and their generic application represented.** The capsule binds the actual trace, scalar trace homogeneity, and coefficient-independent annihilator/error-bound lemmas. The companion module now proves the arbitrary-p binomial annihilator, reciprocal-weight normalization, and total variation, then applies the capsule's annihilator to every real coefficient family independent of the scale index. It still does not instantiate the physical fibers/probes or the refinement error bound. |
 | `Finite mixed spectral moments: a quantitative contrast obstruction (physical contrast, Eq. 3c)` | **Conditional finite-probe estimate formalized; physical application remains partial.** `eq3c_finite_probe_error_bound` cancels any scale-independent inverse-scale polynomial of fixed degree, applies the owned weighted-error inequality, and returns the stated lower-bound constant under explicit base-action, weighted-remainder, per-scale-profile, and smallness hypotheses. It does not construct the two curved fibers/probes or derive those physical/source hypotheses. |
 | `4. Direct flat Lorentz binding on the owned carrier (Eqs. 4–5)` | **Not represented as a full result.** The capsule has CAR/nilpotency facts and an identity-weight specialization, but not the full signed `W_eta` and site/Fock binding, Fourier symbol/dispersion, all-size spectrum, or all-role-order intertwiners. |
-| `4. Direct flat Lorentz binding on the owned carrier (Eq. 6, spatial block)` | **Isolated block lemma represented; full application partial.** `rotationBlock`, its square, and `spatial_block_has_no_positive_metric` prove the 2×2 obstruction for nonzero `L`, assuming positive diagonal entries and `DᵀG = GD`. The capsule does not prove this is an invariant restriction of the actual full Lorentz operator. |
+| `4. Direct flat Lorentz binding on the owned carrier (Eq. 6, spatial block)` | **Full-space implication formalized conditionally; actual application partial.** In addition to the isolated 2×2 obstruction, `matrix_adjoint_pairing` and `positive_selfadjoint_spatial_invariant_block_impossible` show that a positive full-carrier pairing and a self-adjoint full matrix are incompatible with any two nonzero vectors on which the operator acts as the Eq. (6) block. The exact CAR operator, its two vectors, and both invariant-action equations are still not represented or instantiated in Lean. |
 | `5. Complete constant-metric null-mode classification (Eq. 7)` | **Generic implication represented; actual classification not represented.** The kernel/range and half-dimension lemmas assume `D² = 0` and a supplied contraction `DK + KD = I`. The capsule does not construct the Fourier contraction on actual null modes, prove the dispersion classification/counts, or show refinement persistence. |
 | `6. Fixed-positive-time heat trace cannot supply the claimed refinement (Eq. 8)` | **Conditional inequality represented; spectral application not represented.** The exponential lower bound and its consequence compile from a supplied heat-trace lower bound. The capsule does not define the actual `H_L`, prove its minimum eigenvalue, or derive divergence from the Lorentz spectrum. |
 
@@ -4054,3 +4054,40 @@ findings, and `git diff --check` passed. The supporting source is pinned to §3 
 `2de670c0e2f9a53104be8105a3554cdd9aaa85e7`. Independent theorem review and
 application acceptance have not occurred. The PR remains Draft and the task
 remains `IN_PROGRESS`.
+
+### Conditional full-carrier transfer of the Eq. (6) spatial-block obstruction (25 October 2026)
+
+The source-pinned capsule now adds `matrix_adjoint_pairing`, deriving the
+vector bilinear identity from the full matrix equation `TᵀG=GT`, and
+`positive_selfadjoint_spatial_invariant_block_impossible`. The latter takes a
+positive quadratic pairing on the finite carrier, full-matrix self-adjointness,
+and two nonzero vectors `u,v` with `Tu=-2L v` and `Tv=2L u` for `L≠0`; it
+derives a zero sum of their positive diagonal pairings and closes the
+contradiction. The existing isolated `spatial_block_has_no_positive_metric`
+lemma remains as the explicit 2×2 matrix proof; the new theorem makes the
+full-carrier restriction argument available without assuming the pairing is
+diagonal or the full carrier is two-dimensional.
+
+This closes only the conditional linear-algebra transfer in source §4, Eq.
+(6). It does not define the selected full Lorentz CAR matrix, construct the
+empty/B-singleton vectors on its complete carrier, prove the two action
+equations for that operator, or establish positivity/self-adjointness from a
+physical source. Therefore the actual §4 application remains partial, with no
+physical matter selection or GR closure inferred.
+
+The rebuilt narrow target is `D0.Research.NativeWeightedDiracBoundary` (2,997
+Lake jobs). Its refreshed public-import inventory records 49 declarations
+(45 theorems, 4 definitions; 40 source-ranged and 9 generated auxiliaries),
+including the two additions above. Both have only
+`Classical.choice`, `Quot.sound`, and `propext` in their transitive axiom
+closures; neither introduces a computation axiom or `sorryAx`. The inventory
+was generated at pre-commit snapshot `524397d6ac89d90e5c07df73f9a3a675759e384d`
+with `worktree_dirty=true`. Its whole-Lean-source digest
+`06113c1f8fef43734facd63ccce691f892feb314faf68fb8d2f9e8bc79f72040` was
+recomputed independently from the current formalization tree. Inventory
+SHA-256 is `4cdef1c106efb55a9c976b4d7883147a8be49ea334b56347e6b7bad3880c2c21`,
+Lean capsule SHA-256 is `960b0fb2ff4cf0d8fc7f22d99dfa620617b8fc997189d2e00d59aad8d17b0906`,
+and collector SHA-256 is
+`25f0569099c3e7421ca0ef146e23890b66095c5e43b96a1b007684af9608b068`.
+The inventory's public import root is `D0.All`. This is a supporting
+mathematical result, not an independent acceptance of the source application.
