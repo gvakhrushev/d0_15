@@ -304,6 +304,14 @@ D_Y[-\log p^{(n)}_\emptyset][v]
 \]
 For each finite n this is an identity of all field variables on the specified smooth chart. The source of the complete *physical Book action* also contains real full-clock heat, the work/initial-archive price, active-cut edits, any separately priced fine history Info and the generated state/control adjoints. (23) does NOT claim those terms are zero or that the full clock's thermal trace decomposes as a sum of independent per-tick clocks. The actual occupied archive flags are never copied backward or erased to make (22) work.
 
+**CRITICAL COMPULSORY BOOK CLOCK CUT:** Theorem (22) is the surprisal of ONE actual joint "all fresh archive records empty" event on the **sequentially \(\zeta\)-weakened** instrument, so its per-tick \(J(F_t)\) sum is exact. This is **NOT** an identity with the single original Book determinant of the total monodromy \(U_{\rm total}=U_n\cdots U_1\), with its one global cut P and original \(\zeta\) applied ONCE:
+\[
+J_{\rm total}^{\rm one-cut}
+=-\ln\det[I-\zeta(I-(A_n\cdots A_1)^\dagger(A_n\cdots A_1))]
+\quad\ne\quad\sum_t J(F_t)
+\]
+in general. Even at \(d=1,n=2,F_t=f\in(0,1)\), the sequential survival is \((1-\zeta f)^2\), while the one-global-cut determinant is \(1-\zeta[1-(1-\zeta f)^2]\), a different scalar. The companion exact rational checker verifies this NO-GO on two genuine NONCOMMUTING \(F_t\). Which active-cut timing — one global return or repeated complete fresh-record survival — the ORIGINAL Book03 complete physical execution chooses must be derived from its actual P/Q/clock and retained history, not assumed because both use the same symbol \(\zeta\). This preserves the old Chapter-03 direct-bootstrap source boundary.
+
 **Literal exact negative control:** if later \(U_t\) is allowed to access OLD \(Q_i\) and return occupied particles into active P, its active-to-active compression includes extra \(Q_i\to P\) paths; it need not equal \(A_t\cdots A_1\). In that case (22) cannot be asserted from only the individual \(F_t\). This is why M1 closure plus true retained-record causality is load-bearing, not cosmetic.
 
 **Exact native-relevant four-to-six-mode witness:** The companion `sources/d0_feedback_closed_loop_duality_2026-10-25/check_two_tick_no_reset.py` builds two distinct noncommuting \(F_1,F_2\), each with the REAL original \(\zeta=2^{-20}\), on a common active two-mode carrier and two internal archive two-mode blocks. Its two full SO(6) one-particle tick matrices preserve older archive columns. On the **entire** 15-outcome \(\Lambda^2\mathbb C^6\) pure fermionic family, direct minors check exact probability normalization and (22) with no reset. This is a mathematically closed finite process; translating it to original G/CX/CAR16 hardware and its full actual clock/Price remains OPEN.
