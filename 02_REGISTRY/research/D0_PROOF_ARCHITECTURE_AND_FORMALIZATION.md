@@ -6398,3 +6398,40 @@ code-fence exclusion and snapshot-key gating. Independent read-only review
 found no remaining issue in the mention mapping or its candidate-only scope.
 This is a source-retrieval improvement, not semantic coverage, independent C0
 acceptance, or physical closure.
+
+### CAR/Hodge cold-start consumes the v3 claim-source view (25 October 2026)
+
+The existing `car-scaffolds-vs-hodge-operator-claims` cold-start case now
+queries and requires the v3 claim-source view. For each of the four OPEN CAR
+rows—zero mode, hopping square, spectrum amplification, and heat-trace
+multiplicity—the regression reads the corresponding view row and confirms:
+the declared Book locator remains unresolved, there is no exact-heading
+candidate, and no literal claim-ID occurrence was found in the scanned book
+files. This is a bounded textual-source result; it does not establish that no
+semantically relevant prose exists or accept a C0 source disposition. All four
+claims remain OPEN, and the separate Hodge results keep their own carrier and
+status.
+
+The clean replay at snapshot
+`4745618b020811b777acb4250761356b3b242355` found all required sources in
+**20/20** cases and passed the **21/21** benchmark, including the
+exact-source-versus-unrelated-prose impact control. The CAR/Hodge case now
+finds **28/28** required references. Its query
+`D0-ARCHIVE-CAR-ZERO-MODE-OWNER-001 literal claim ID source candidate view`
+returns `claim_source_candidates_current.json` as direct content at rank 1;
+the result's source SHA-256 is
+`e30de22bf507c0f65f752f08b6f98c74941ff8ecd17670b4330e89f1ce083a21`.
+The compact replay record is
+`sources/d0_proof_architecture_formalization_2026-10-24/proof_architecture_cold_start_summary_2026-10-25_4745618b.json`,
+SHA-256
+`ca83c1f9049ed9f1750b65d78c530bf0fd58f8351bc04b41560751501caf5dce`.
+It pins cold-start runner SHA-256
+`762a3664ced0012ea56810836e7cc93c556d32778f4b96e2f2ae5018fadcfef0` and
+search-engine SHA-256
+`aaed4194af38484de97db60c821374955f90dc5cc290d20a6fb8e53f94624262`.
+
+The full proof-architecture suite passes **48/48** with the new cold-start
+control. An independent read-only review found no issue in the query,
+candidate-only wording, or four-row status guard. This closes a retrieval
+consumer for the new source view only; it does not resolve the missing
+Book 06 source unit, accept a claim, freeze C0, or change any physical owner.
