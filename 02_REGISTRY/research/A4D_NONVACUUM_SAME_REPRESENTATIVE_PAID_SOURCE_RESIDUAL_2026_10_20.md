@@ -6606,6 +6606,226 @@ and exact native u-gap arithmetic. Reproduce from repository root:
     python3 02_REGISTRY/research/sources/d0_native_clock_rayleigh_source_2026-10-25/check_clock_rayleigh_source.py --output /tmp/native_clock_rayleigh_source.json
 
 
+## 7aa. Feedback first: complete original-query Book source and an exact sourced family
+
+**25 October positive direct-Book composition.** A different missing
+application can now be completed: use the ORIGINAL two-tick Golden query
+as the whole return monodromy, rather than7w's heat-matching holonomy.
+Its actual complementary determinant is already J2. Compute its WHOLE
+clock heat, including the unmatched scene columns, and consume the
+existing common-null all40+2 theorem. The result is an exact curved
+nonvacuum family of THIS complete H+J operator chart, with its coupling
+derived from the action and controlled recovery to the original family.
+It is not a physically selected native X_N or a closure of independent
+off-dictionary control equations.
+
+The [full proof](sources/d0_query_feedback_first_book_2026-10-25/PROOF.md)
+and [bounded source checker](sources/d0_query_feedback_first_book_2026-10-25/check_query_book.py)
+consume the actual query/cut of
+[the original local LEFT-controlled source](A4D_LOCAL_LEFT_CODED_CAR_NULL_MATTER_EINSTEIN_2026_10_18.md),
+the [full all40 arbitrary-Brinkmann reduction](../gr_assembly/sources/d0_double_null_quadratic_cartan_2026-10-19/arbitrary_brinkmann_all40.md)
+and [midpoint recovery](A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md).
+No new geometric action, density, root search, detector, entropy assignment
+or fitted coefficient is used.
+
+### One full query carrier, rather than a selected output law
+
+For each actual old LEFT/regular/reference copy retain the original
+four-tail by22976-scene carrier. It has Q=528 matched scene pairs,
+each carrying the FULL8 query, and d0=21920 unmatched scene columns,
+each still carrying the FULL4 tail. At a matched pair let
+
+\[
+ U_q=T_E^2\otimes G_s^2,\qquad
+ E=p^2(1+x),\quad s=p-p^2y,\quad x=\tau_h f,\quad y=\tau_h q,
+ \qquad p=\varphi^{-1},\quad\tau_h>0.                  (248)
+\]
+
+Here f,q are the original source-compatible star and two-real-CAR
+densities, including the exact inverse-PF map. Use ONE common fixed
+weakening scale tau_h per mesh. The old integer multiplicities c_i,
+including inactive addresses, are not replaced by measured probabilities;
+C=sum_i c_i is their actual positive integer total. Vary only the
+original active f_i,q_i. Inactive addresses keep f_i=q_i=0.
+
+The original rank2 cut is span{|0>,|2>} in each matched8 block and
+zero on unmatched scene directions. Thus its full feedback is exactly
+the owned J2, with its true528 and c_i factors. If b=s² and
+`L_E=4E(1-E)`, its two effect eigenvalues are
+`B=4b(1-b)` and `A=L_E+(1-L_E)B`, and
+`j=-log(1-zeta A)-log(1-zeta B)`, with the ORIGINAL zeta=2^-20.
+The cut rank is2QC, not the number of occupied prepared input states.
+That global rank need not be a power of two: implementing the actual
+scene/address predicate is distinct from naming a local blank-wire mask.
+
+Six CONFIGURED operator slots factor U_q: tail rotation, tail CX,
+scene rotation, repeated twice. The local8 common-null value has its
+four-G/two-CX word. A matched-only scene rotation on the complete scene
+is not automatically one global bare G/CX primitive. For the stated
+operator-clock chart, choose any even N>=6 by actual two-CX identity
+stages. A genuine global native compiler retains its full expanded N,
+all source/controller wires and its own admission. All heat formulas
+below depend on the endpoint and the TRUE clock length; they do not
+identify configured slots with an unproved primitive counter.
+Use the owned transported-prefix return cut: its only leakage is the
+closing wrap and its determinant is that same fixed-input-cut J2.
+The generated intermediate cut is not frozen during differentiation.
+
+Put theta_E=asin(sqrt(E)), theta_s=asin(s). The local8 eigenphases are
+`+/-2(theta_E+theta_s)`, `+/-2(theta_E-theta_s)`, and
+`+/-2theta_s` each twice. The unmatched4 phases are0,0,+/-2theta_E.
+The latter modes have zero feedback but a NONZERO geometric heat source.
+For the full paired clock define
+
+\[
+ K_N(t)=\sum_{k\bmod N}e^{-\beta[1-\cos((2\pi k+t)/N)]},
+\]
+\[
+ Z_8=4\{K_N[2(\theta_E+\theta_s)]
+        +K_N[2(\theta_E-\theta_s)]+2K_N(2\theta_s)\},
+ \quad Z_4=4\{K_N(0)+K_N(2\theta_E)\},
+\]
+\[
+ Z=\sum_i c_i[Q Z_{8,i}+d_0 Z_{4,i}],\quad
+ H=\beta^{-1}\log Z,\qquad J=Q\sum_i c_i j_i.          (249)
+\]
+
+Every `2N*4*22976*C` clock mode occurs. No output-only thermal trace,
+postselection or omitted unmatched/source sector is used. This is the
+declared four-tail continuation of the original query sector. Any
+additional AF/frame/implementation complement in a larger physical
+execution needs its actual operator and source; it is not made a
+field-independent identity by calling it work. Likewise extra spin or
+reference dimensions have their true cut ranks and thermal factors.
+
+### The complete first source on the positive common-null family
+
+On Sigma, f_i=q_i=0 at every active address, so theta_E=theta_s=theta
+with sin(theta)=p. Define
+
+\[
+ R_0=1-\zeta+\zeta p^{12},\qquad Q_0=1-\zeta+\zeta p^6,
+ \quad a_0={4\zeta p^{11}\over R_0}>0,
+ \quad b_0=-8\zeta p^6\left({p^6\over R_0}+{1\over Q_0}\right).
+\]
+
+These are the ORIGINAL j_x,j_y; lambda_minus=b0/a0 is the already
+owned exact finite-zeta coefficient. Let Z_Sigma denote the FULL(249)
+partition at this same point, including all C copies. Since K_N'(0)=0,
+the per-copy heat coefficients in the x,y source are exactly
+
+\[
+ h_x={4\sqrt p[QK_N'(4\theta)+d_0K_N'(2\theta)]\over\beta Z_\Sigma},
+ \quad
+ h_y={-8p^{3/2}Q[K_N'(4\theta)+2K_N'(2\theta)]\over\beta Z_\Sigma}.
+\]
+\[
+ a_N=Qa_0+h_x,\qquad b_N=Qb_0+h_y,
+ \quad\lambda_N={b_N\over a_N},\qquad
+ D(H+J)|_\Sigma=\tau_h\sum_i c_i(a_NDf_i+b_NDq_i).     (250)
+\]
+
+This identity is on EVERY ambient field direction before using the
+Brinkmann ansatz. The global log partition is not silently made a sum
+of local heats: its actual GLOBAL denominator Z_Sigma is retained.
+In particular h_x,h_y have one inverse C, while J has its extensive
+copy count. Omitting the21920 unmatched tails changes h_x and the
+derived lambda_N. Arbitrary fixed true nonuniform LEFT counts preserve
+the common coefficients and use the owned inverse-PF density identity;
+arbitrary site-dependent tau_i would require its own corrected dictionary.
+
+At fixed beta and N, independent preparation-state variations have no
+source in this bare operator functional. Changes of a causal factorization
+preserving the ENTIRE monodromy, cut and N likewise preserve H and J.
+Preserving just an effect, prepared mean or reduced query channel does
+not suffice. A field-dependent preparation prefix inside the actual
+clock changes the endpoint to U_q P_field and can change both(249) and
+the true corner; its source must be computed rather than removed.
+
+### Nonzero source gain and exact recovery schedule
+
+The owned all-phase speed bound applies to all modes. Under a homogeneous
+x or y variation on this original chart,
+`||U_x||<=sqrt(p)` and `||U_y||<=2p^(3/2)`. Hence, for ANY fixed beta>0,
+
+\[
+ |h_x|\le{\sqrt p\over CN},\qquad
+ |h_y|\le{2p^{3/2}\over CN}.                            (251)
+\]
+
+If CNQa0>=2, then a_N>Qa0/2 and its operator-chart field-source gain is
+nonzero. The actual ratio, rather than an independently chosen matter
+term, satisfies the conservative uniform bound
+
+\[
+ |\lambda_N-\lambda_-|
+       <{52\over C Q a_0 N}.                            (252)
+\]
+
+The exact rational inequalities309/500<p<619/1000 give
+`|lambda_minus|<24`, `a0>4 zeta(309/500)^11`, and
+`52/[528*4 zeta(309/500)^11]<2^23`. They prove the gain and recovery
+bounds without relying on floating heat values or a tiny source fit.
+
+Now CONSUME the original all40+2 reduction with its source coefficient
+replaced by the DERIVED lambda_N. It gives, exactly at each finite mesh,
+
+\[
+ \Delta_h^\perp H(u_{j+1},x,y)=-4\lambda_N E_j,
+ \qquad E_j=\|D_u^+\Psi_j\|^2,
+\]
+\[
+ H(u_j,x,y)=-\lambda_N E_{j-1}(x^2+y^2)+W_{h,j}(x,y),
+ \qquad \Delta_h^\perp W_{h,j}=0,                       (253)
+\]
+
+with the SAME original advanced Cartan links. All16 coframe,24 proper
+link and two independent real material Euler rows of THIS H+J chart
+are zero. The field is curved and nonvacuum for nonzero allowed Psi
+and the original wave profiles. The supporting theorem allows arbitrary
+constant lambda and therefore needs no fresh gravity-root search.
+The finite collars must match THIS lambda_N; old fixed lambda_minus
+collars are not reused as if the metrics were equal.
+
+For h=1/L choose actual even clock lengths
+
+\[
+ N_h\ge2^{23}L^2.
+ \quad\Longrightarrow\quad
+ a_{N_h}>Qa_0/2,\qquad|\lambda_{N_h}-\lambda_-|<h^2.    (254)
+\]
+
+The six-slot operator chart can use equality in this schedule through
+its explicit identity padding. A real native body can be longer; use
+an even common N_h at least both this bound and its actual body length
+plus4, with the owned2/5-CX padding. The source bound only improves.
+This is a resource bound, not free padding or an unproved efficient
+global compiler. The old midpoint construction and harmonic correction
+then give the SAME O(h²) metric/curvature/matter recovery to the fixed
+continuum Einstein-null-scalar solution with lambda_minus. At finite
+h these exact metrics use lambda_N, rather than being one identical
+continuum metric sampled on every grid.
+
+**Precise substitution and remaining physical map.** The formerly
+uncomputed whole original-query heat source is now evaluated and used
+in a positive exact all-field solution and its recovery. This extends
+the original J2-only solution to the complete direct Book H+J on the
+declared full query operator carrier. It does not transfer the strict
+unpadded CQ interval root, which belongs to another scalar price.
+
+The missing arrow is still admission/selection of this smooth query
+chart and its field/control/cut tangents as the actual physical X_N.
+The constant Golden word on Sigma proves its value, not its nonzero
+transverse source. Hardwired all-column native catalogues can approximate
+values and finite source secants with actual error/gain/stencil budgets;
+their countable word domain does not itself supply a continuous native
+Euler equation or an exact stationary finite-code execution. Genuine
+birth-to-field preparation, off-dictionary controls, moving cut, clock/
+fugacity/observer and other selected stack equations remain explicit.
+No physical selector, arbitrary matrix tangent, reset, new action or
+GR_closed/raw216 promotion is inferred from this positive operator result.
+
+
 ## 8. Reproduction
 
 Run from this directory:

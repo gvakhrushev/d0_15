@@ -9278,3 +9278,78 @@ packet is unchanged. No old42-check or expensive mathematical replay.
 Reproduce the changed application from repository root:
 
     python3 02_REGISTRY/research/sources/d0_native_clock_rayleigh_source_2026-10-25/check_clock_rayleigh_source.py --output /tmp/native_clock_rayleigh_source.json
+
+### 25 October: feedback-first original query and derived Einstein coupling
+
+Phase: native realization/conditional final composition, same PR and owner.
+Consume original two-tick U_q=T_E² tensor G_m², its actual rank2 cut,
+full scene inventory528 matched pairs plus21920 unmatched columns,
+the exact all40+2 common-null Brinkmann theorem and the owned all-clock
+phase-speed bound. This changes the mathematical input from7w's
+heat-first holonomy to the ORIGINAL query monodromy. No new geometric
+root search, fitted action, determinant detector or Cost tariff.
+
+Named parent premise: evaluate the COMPLETE original-query clock heat
+and true feedback on one common field map. On f_j=q_j=0, every query
+block has the same spectrum. All full heat derivatives therefore retain
+the original two-density source form, with coefficients a_N,b_N.
+The Einstein coefficient lambda_N=b_N/a_N is derived from that price.
+Unmatched scene columns still carry T_E² and have an f-source; they
+cannot be discarded as spectator heat. Fixed true trace multiplicities
+and the already owned inverse-PF/source convention are retained.
+
+Carrier/source convention: full4tail×22976scene per actual LEFT/right
+trace-copy; six configured OPERATOR slots plus even identity padding
+to statedN. The local8 block has its exact G/CX word at common-null;
+a global matched-scene slot is not thereby one bare G/CX primitive.
+A genuine global compiler retains its expandedN and all its modes.
+Whole paired clock2ND, rank2 per matched
+pair, no projection onto prepared thermal columns. This is an explicit
+smooth original-query OPERATOR chart, not yet the physically selected
+X_N or a continuous selector of finite G/CX words. A real birth/field
+preparation prefix must preserve the WHOLE monodromy/cut or retain its
+extra source; prepared-effect or channel agreement alone is insufficient.
+
+Exact intended substitution: original all40+2 source reduction applies
+with derived lambda_N, giving the exact common-null field family and
+compatible collars of THIS H+J chart. A quantitative heat bound supplies
+lambda_N→lambda_minus and an actual padding schedule preserving O(h²)
+midpoint recovery. The old fixed lambda_minus collar is not silently
+reused and the old unpadded CQ interval root is a DIFFERENT functional.
+
+Write paths: primary7aa, this brief and
+sources/d0_query_feedback_first_book_2026-10-25/ only. Bounded assistants
+write disjoint proof/helper/checker paths. Smallest decisive check: full
+original8D and unmatched4D spectra, true fixed-rank feedback, ALL clock
+roots and full inventory, complete field coefficients on common-null,
+their derived ratio/sign and exact source-recovery padding bound.
+No large root/Hessian/full128/Lean replay is required.
+
+Remaining physical application: source/control/coframe/CAR-to-query
+admission, actual complete initial-state and programme/cut domain,
+all independently permitted off-dictionary variations and other selected
+stack sources. Hardwired finite native catalogues supply controlled
+secants, not continuous physical Euler stationarity by themselves.
+No GR_closed/raw216 or public-claim promotion is authorized.
+
+Final positive application7aa:10399bytes/SHA256
+54f03da5735446b9c395c601e6b7e48e0a09b5f9b201a038c42cd9e049098fcf.
+PROOF.md15203bytes/SHA256
+6a75a07256d0796e40c3daaf4f8ce8bf0e86ee2892e0ea2c1219159a1d1ab12e.
+query_book.py3123bytes/SHA256
+ec1b836db231790f5c258c52970a4e65274a219f076426f3b45cad9e1bc0d02d.
+check_query_book.py10121bytes/SHA256
+e8dd5a3a9d1426d8805edf316ca64bdb4e8c15a917df13d6456b6b157bff3bb5.
+Actualfinalreceipt11114bytes/SHA256
+2568dbc9d901bbf491fff6f4938105e7209a5e2e0e2740b368b46150d8e8118e.
+Rootfinalrunexit0/PASS54; stdout=savedreceipt and all10inputpins
+verified. Independent mathematical and final pinned-source review
+ACCEPT, including fullscene/AF scope, corrected query compression,
+commonτ, realcounter and physicaladmission boundaries. ALL42 root
+and midpoint recovery are exact analytical consumers of the owned
+theorems, not a repeated large source/root computation. Removing7aa
+recovers the4b837b8e primary; every old packet is preserved unchanged.
+
+Reproduce only the changed calculation from repository root:
+
+    python3 02_REGISTRY/research/sources/d0_query_feedback_first_book_2026-10-25/check_query_book.py --output /tmp/query_feedback_first_book.json
