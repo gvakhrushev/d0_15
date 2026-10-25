@@ -266,3 +266,60 @@ The result is completion-independent on the prepared filled input because the en
 It is NOT yet proved that native D0 physically admits U(d) as a gauge symmetry on the entire \(\operatorname{ran}P\) or that the active d-dimensional carrier must be newly treated as a one-particle fermionic mode space. The actual original CAR16 is a four-mode system with a 16-dimensional many-particle state space. Claiming the above conditional top-wedge uniqueness as unconditionally M1-forced would cross precisely the physical representation boundary we are trying to solve. The correct next step is to consume original future-test equivalence and actual multi-copy native pricing to verify WHETHER the full antisymmetric input is the shortest all-mode no-return self-test.
 
 The mathematical simplification nevertheless matters decisively: **the unknown is not an additional external archive Hilbert space, a free sign or a continuum action oracle. The entire proposed no-return response is fixed by original \(P,Q,U,\zeta\)**; only admission of its internally prepared full-memory Born tester and selection of the original complete task/price remain.
+
+
+## 9. THEOREM H — EXACT multi-tick no-reset closed-memory history: Book self-information adds even for noncommuting native return operators
+
+The closed-system interpretation becomes stronger when the previous physical memory is NOT ERASED before the next operation. Fix finite active \(H_P\) of dimension d and n genuine fresh internal archive destination blocks \(Q_1,\ldots,Q_n\), all belonging to **one final closed Hilbert space**
+\[
+H_{\rm whole}=H_P\oplus Q_1\oplus\cdots\oplus Q_n.
+\]
+The word "fresh" means those blocks are truly provided/prepared **within the same closed initial inventory** and charged, not that the entire active DATA is independently re-prepared every tick. Let \(U_t\) be a genuine full unitary, identity on already written \(Q_1,\ldots,Q_{t-1}\), with a prepared active-to-active block \(A_t=(I-\zeta F_t)^{1/2}\) and archive leg \(\sqrt\zeta K_t\), \(F_t=K_t^\dagger K_t\). Construct each tick using THEOREM G's original \(P\to Q_t\) prepared isometry and an arbitrary full unitary completion *on the allowed new block*, retaining the actual price of such a completion if executed.
+
+Let \(\Omega=\wedge^dH_P\) be the same basis-free fully occupied Slater input, and run the **WHOLE** fermionic unitary
+\[
+\Lambda^d U_n\cdots\Lambda^d U_1
+=\Lambda^d(U_n\cdots U_1).
+\]
+All archives and all failure occupancy sectors remain present until the final test. Because tick t never reads an earlier \(Q_i\), the COMPLETE active-to-active block of the product is \(A_nA_{n-1}\cdots A_1\) (not a reset of DATA). The all-archive-empty Born amplitude is its determinant, so
+\[
+\boxed{
+\begin{aligned}
+p^{(n)}_{\emptyset}
+&=\left|\det(A_nA_{n-1}\cdots A_1)\right|^2\\
+&=\prod_{t=1}^n\det(I-\zeta F_t),\\
+-\ln p^{(n)}_{\emptyset}
+&=\sum_{t=1}^n J(F_t).
+\end{aligned}}\tag{22}
+\]
+No \([F_t,F_s]=0\) or iid Born history assumption is used; **the fields and CAR/geometry at distinct times may generate NONCOMMUTING return matrices**. Only finite linear algebra, the original closed archive and honest one-way stored-record boundary are used. This is a genuine self-composition property of the price of the same tested **ALL-SILENT event**, rather than an invented additive source on arbitrary endpoint states.
+
+All source jets transfer EXACTLY, without commuting assumptions:
+\[
+\boxed{
+D_Y[-\log p^{(n)}_\emptyset][v]
+=\sum_{t=1}^n\zeta\operatorname{Tr}
+[(I-\zeta F_t(Y))^{-1}D_YF_t(Y)[v]].
+}\tag{23}
+\]
+For each finite n this is an identity of all field variables on the specified smooth chart. The source of the complete *physical Book action* also contains real full-clock heat, the work/initial-archive price, active-cut edits, any separately priced fine history Info and the generated state/control adjoints. (23) does NOT claim those terms are zero or that the full clock's thermal trace decomposes as a sum of independent per-tick clocks. The actual occupied archive flags are never copied backward or erased to make (22) work.
+
+**Literal exact negative control:** if later \(U_t\) is allowed to access OLD \(Q_i\) and return occupied particles into active P, its active-to-active compression includes extra \(Q_i\to P\) paths; it need not equal \(A_t\cdots A_1\). In that case (22) cannot be asserted from only the individual \(F_t\). This is why M1 closure plus true retained-record causality is load-bearing, not cosmetic.
+
+**Exact native-relevant four-to-six-mode witness:** The companion `sources/d0_feedback_closed_loop_duality_2026-10-25/check_two_tick_no_reset.py` builds two distinct noncommuting \(F_1,F_2\), each with the REAL original \(\zeta=2^{-20}\), on a common active two-mode carrier and two internal archive two-mode blocks. Its two full SO(6) one-particle tick matrices preserve older archive columns. On the **entire** 15-outcome \(\Lambda^2\mathbb C^6\) pure fermionic family, direct minors check exact probability normalization and (22) with no reset. This is a mathematically closed finite process; translating it to original G/CX/CAR16 hardware and its full actual clock/Price remains OPEN.
+
+### Specific original full128 application (a concrete available next compiler target)
+
+Take the ORIGINAL genuine full128 Stinespring instrument and its protected first fine blank amplitude \(K_0(Y)\). Let \(K_{\ne0}(Y)\) be the block column of ALL other 127 genuine original Kraus, including actual dark zeros and the true oldRIGHT factors when protected. Its unitary-column identity gives
+\[
+K_{\ne0}^\dagger K_{\ne0}
+=I-K_0^\dagger K_0=F_{\rm pre}(Y).
+\]
+At the original full128 strict chart this is the positive feedback already owned in the original Golden/Halmos weld. THEOREM G constructs the **exact same-P/Q mathematical weak future probe**
+\[
+A_\zeta(Y)=\sqrt{I-\zeta F_{\rm pre}(Y)},
+\quad \sqrt\zeta\,K_{\ne0}(Y)
+\]
+with EVERY original complement amplitude present; all 127 conditional row orientations survive if probed, rather than replacing them by one \(\sqrt{E_{\rm NB}}\). THEOREM H then gives the multi-tick no-reset full Slater-event **price and source** through the same moving native \(\Delta(Y),W_j(Y)\), once the genuine fresh copy archive is included and paid. Its all-silent scalar event does NOT replace the entire original fine128 history distribution — that would be the exact false reconciliation forbidden by the previously owned three-tick future algebra.
+
+This is a positive single-source **operator target** for proving Book03's physical return may be realized by an actual closed native record process; it is not an externally supplied Book-price functional. Whether D0's originally compelled finite task/observer uses this filled multi-copy no-return self-test and its actual Price−Info/clock is still the unproved **M1/canonicity** link. No universe-wide Einstein action, compulsory full128 native gate, raw216 claim or `GR_closed` flag is promoted.
