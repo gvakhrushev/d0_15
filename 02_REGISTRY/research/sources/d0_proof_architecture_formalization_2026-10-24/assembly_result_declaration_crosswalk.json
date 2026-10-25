@@ -1,12 +1,12 @@
 {
-  "snapshot_commit": "7114f99052963f00ed9a78510a75ce38a4e9665e",
+  "snapshot_commit": "0fdf2537a5c78d5d43a1fed42c253f1928b10577",
   "worktree_dirty": false,
   "source_digests": {
     "02_REGISTRY/claims.csv": "8ba9bfbac99a5fe0d8e8f2b6ef8d69f3190f8c1073051eca9f005e5a93b578cf",
     "02_REGISTRY/assumptions.csv": "2bc9f8c040a776d784fdbfdf62569b72e4f70ff0a182fc66d0ced31cb5f13a36",
     "02_REGISTRY/formal_support.csv": "ae7d19fea7750aa1f03b1706992c1fe1adef45e6bfdb29838dfe771b393835d6",
     "02_REGISTRY/aliases.csv": "8cda9e7ebfa26a01a04a4d51b56eb6b93425816a5fe073aa74cbae94041f672f",
-    "02_REGISTRY/gr_assembly/applications.json": "a493c0161b2f39ec14925e38131f7c2d240cd07bd2e27404a35098bc96eb0dc8",
+    "02_REGISTRY/gr_assembly/applications.json": "9d73f377ee03670d39055da7d53f4893d2ae32260a96633e50bf0c5f3fb73ff0",
     "02_REGISTRY/gr_assembly/contract.json": "72fb3bbbc320b4af217cbe7c09580b44556b354e9668cbd11e76933fa8209ba6",
     "02_REGISTRY/presupposition_edges.json": "7ff9d1e4ac3447f321afd603eab66554468644bb5fddb33551fdfa22e3e2585d"
   },
@@ -46,10 +46,10 @@
       "changed_since_pin": 2,
       "unverified_pin": 6
     },
-    "section_locator_count": 0,
-    "ranked_section_candidate_count": 178,
-    "results_with_ranked_section_candidates": 50,
-    "results_with_incomplete_section_mapping": 54,
+    "section_locator_count": 1,
+    "ranked_section_candidate_count": 177,
+    "results_with_ranked_section_candidates": 49,
+    "results_with_incomplete_section_mapping": 53,
     "interpretation": "Counts describe source pins and recorded section locators, not accepted C0 units or semantic result-to-source relations."
   },
   "results": [
@@ -661,33 +661,14 @@
         {
           "locator": {
             "source_file_key": "source:77d3ab6059bd1a3ce48637b97b9f30aa8825fc5f:02_REGISTRY/research/A4D_RESONANCE_DIVISOR_RANK_LAW.md",
-            "exact_unit_key_candidates": [],
-            "section_refs": [],
-            "ranked_section_candidates": [
-              {
-                "candidate_source_unit_key": "source:77d3ab6059bd1a3ce48637b97b9f30aa8825fc5f:02_REGISTRY/research/A4D_RESONANCE_DIVISOR_RANK_LAW.md#L1: A4D resonance divisor: the phase-count nullity rule is false",
-                "section_ref": "L1: A4D resonance divisor: the phase-count nullity rule is false",
-                "heading": "A4D resonance divisor: the phase-count nullity rule is false",
-                "heading_line": 1,
-                "matched_terms": [
-                  "22",
-                  "character",
-                  "count",
-                  "exact",
-                  "hessian",
-                  "nullity",
-                  "phase",
-                  "predicts",
-                  "proposed",
-                  "rank",
-                  "rule"
-                ],
-                "query_term_count": 12,
-                "overlap_fraction": 0.9167,
-                "review_status": "unreviewed_lexical_candidate"
-              }
+            "exact_unit_key_candidates": [
+              "source:77d3ab6059bd1a3ce48637b97b9f30aa8825fc5f:02_REGISTRY/research/A4D_RESONANCE_DIVISOR_RANK_LAW.md#L1: A4D resonance divisor: the phase-count nullity rule is false"
             ],
-            "unit_locator_status": "ranked_heading_candidates_need_review",
+            "section_refs": [
+              "L1: A4D resonance divisor: the phase-count nullity rule is false"
+            ],
+            "ranked_section_candidates": [],
+            "unit_locator_status": "candidate_section_keys_need_review",
             "pin_status": "verified",
             "current_source_status": "matches_pin",
             "snapshot_path": null
@@ -723,7 +704,8 @@
             {
               "ref": "77d3ab6059bd1a3ce48637b97b9f30aa8825fc5f",
               "path": "02_REGISTRY/research/A4D_RESONANCE_DIVISOR_RANK_LAW.md",
-              "sha256": "2a688da86de46be7c2220b8a1fe00e13d8e9b5535805ed59c9052823db5cfd8e"
+              "sha256": "2a688da86de46be7c2220b8a1fe00e13d8e9b5535805ed59c9052823db5cfd8e",
+              "section_ref": "L1: A4D resonance divisor: the phase-count nullity rule is false"
             }
           ],
           "reported_state": "Exact finite counterexample on main; full divisor classification remains open."

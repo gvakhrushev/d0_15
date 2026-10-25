@@ -802,9 +802,14 @@ missing or changed in the current checkout; an unavailable blob or digest mismat
 key. This is a provenance locator, not a C0 mathematical unit.
 
 Of the 190 source pins, 181 verify and receive file keys; eight pinned blobs are unavailable and
-one recorded SHA-256 mismatches its commit/path blob. No evidence row records section metadata,
-so the crosswalk has zero source-unit keys. All 54 result-to-unit section mappings remain
-incomplete. Current checkout status is 70 matches, 112 missing files, two changed files under
+one recorded SHA-256 mismatches its commit/path blob. The `phase-count-counterexample` evidence
+now records `section_ref: "L1: A4D resonance divisor: the phase-count nullity rule is false"`.
+It resolves to the sole heading in its pinned source at commit
+`77d3ab6059bd1a3ce48637b97b9f30aa8825fc5f`; that section contains the stated witness
+`(-1,-1,i,i)`, rank 22, nullity 2, and predicted value 4. An independent reviewer confirmed this
+is an exact source locator. It remains a section-key candidate pending semantic C0 review. The
+current crosswalk has one explicit section-key candidate and 53 incomplete result-to-unit
+mappings. Current checkout status is 70 matches, 112 missing files, two changed files under
 verified historical pins, and six files whose pin is unverified. The digest mismatch is retained
 as recorded for `orthogonal-exit-conditional-gram-einstein-source-ratio`, path
 `02_REGISTRY/research/A4D_NATIVE_ORTHOGONAL_EXIT_DOUBLE_CLOCK_EINSTEIN_SOURCE_2026_10_17.md`;
@@ -814,21 +819,26 @@ objects are also listed individually there. No expected hash was rewritten.
 For each verified pinned Markdown source without an explicit section locator, the view now ranks
 up to three heading candidates by lexical overlap with the assembly-result statement. The candidate
 records include matched terms, overlap fraction, and the exact pinned line/heading coordinate; each
-is labeled `unreviewed_lexical_candidate`. This yields 178 review candidates across 50 result rows;
-four rows have no ranked section candidate. For example, `phase-count-counterexample` ranks the
-pinned heading `A4D resonance divisor: the phase-count nullity rule is false` at line 1 with 11 of
-12 query terms matched. These are retrieval leads only: all 54 section mappings remain incomplete,
-no C0 unit key is accepted, and all 54 semantic result relations stay unresolved.
+is labeled `unreviewed_lexical_candidate`. With the explicit locator above, the current output
+contains 177 ranked suggestions across 49 result rows; five rows have no ranked suggestion. For
+example, `double-null-continuum-fourth-order-ricci-jet` ranks the pinned
+`scope.md` heading `Crossed-null continuum Ricci jet through fourth amplitude order` at line 1,
+matching 22 of 24 query terms. These are retrieval leads only: 53 mappings remain incomplete,
+the single explicit section key still needs semantic C0 review, and all 54 semantic result
+relations stay unresolved.
 
-An independent read-only review checked all 178 emitted candidates against 59 unique pinned Git
-blobs. It confirmed the commit/path pins, expected SHA-256 values, and heading line coordinates;
-it found no locator or summary defect. This review validates candidate provenance only. It does not
-accept any candidate as a mathematical unit or result application, and it leaves C0 unfrozen.
+Independent read-only review checked all 178 ranked candidates before the explicit locator was
+recorded, confirming their commit/path pins, expected SHA-256 values, and heading line coordinates
+against 59 unique pinned Git blobs. The current 177 ranked candidates are a subset of that reviewed
+set. A separate review confirmed the new exact phase-count source locator and recomputed the
+current 54-result/190-evidence summary. These reviews validate locator provenance and output
+integrity; they accept no candidate as a mathematical unit or result application and leave C0
+unfrozen.
 
 The regenerated artifact
 `sources/d0_proof_architecture_formalization_2026-10-24/assembly_result_declaration_crosswalk.json`
-was built at snapshot `7114f99052963f00ed9a78510a75ce38a4e9665e` with a clean worktree and SHA-256
-`b1cbbc923dc02907d817e5288729713cdfc9e68cfe4f1972594768bb3f6aa920`. Its `D0.All` pass enumerates
+was built at snapshot `0fdf2537a5c78d5d43a1fed42c253f1928b10577` with a clean worktree and SHA-256
+`b70246d61ff1d450c9d61db5e4adf7f23a600050031f56c1380b2609088e3ada`. Its `D0.All` pass enumerates
 899 co-located declarations in nine current modules; Lean source digest
 `e2d01817a8f7a3c11b64f0e84a9a44aa58e82304715793c0fb95ddffcbae4dae` and collector digests are
 recorded in the file. `acceptance_inferred` is false for every result. C0 remains unfrozen and
