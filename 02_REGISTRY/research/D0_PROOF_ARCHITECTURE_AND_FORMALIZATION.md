@@ -7802,3 +7802,45 @@ checks **133** required references and passes the source-change versus
 unrelated-prose impact control. This is a typed finite-matrix equivalence and
 its Lorentz adapter; it creates no assembly acceptance edge and leaves the
 selected physical action, source transport and C0 disposition open.
+
+### Frame-invariance adapter without endpoint-frame invertibility (26 October 2026)
+
+The geometric `a4dDressedLink_frame_invariant` wrapper carried an unused
+`IsUnit Θy.det` premise even though the generic two-sided frame identity needs
+invertibility only for the Lorentz frame changes. That premise is now removed
+from the adapter and its complete-orbit application. This narrows the theorem
+to the actual algebraic hypotheses. The converse equality characterization
+still needs both endpoint-frame determinant units, and endpoint metric
+compatibility still needs the transported-to frame to be nondegenerate.
+
+Lean source commit `532654db2e194911ec6839aa90a77c73fd73eca5` pins
+`FiniteGramTangent.lean` SHA-256
+`c4240ee271a4cbe2f67afc949ac7d21ad82099a870def67798c7ba21db980a2b` and
+`A4DStarFiniteLorentzQuotient.lean` SHA-256
+`d28affcf721822cc5c7a0132b0c842841aa3a9317b5d2d0b2b3152a1440e19cc`.
+The geometry module passed **3,215/3,215** jobs and final `D0.All` passed
+**4,581/4,581**.
+
+Eight declaration inventories use Lean-source digest
+`fb964f0d5ff8ce4c7ccabd955752cd1999896737aa125a740ec86c37ea353621`, were
+captured at that clean commit, and record `worktree_dirty=false`:
+
+| Compiled inventory | Resolved | SHA-256 |
+|---|---:|---|
+| `nonvacuum_brinkmann_stencil_declarations_2026-10-26_frame_domain.json` | 15/15 | `d8ce89f0340c77d7235ca52f4fd02a5435469c59115f4dd8de19ae7dd1dd2f0a` |
+| `car_hodge_diagonal_transpose_current_declaration_inventory_2026-10-26_frame_domain.json` | 36/36 | `cc6b61960528ba9ab66f3123f2f32f4048f1ac5fb52aac8bdd8940106c46caa5` |
+| `finite_matrix_partial_trace_current_declarations_2026-10-26_frame_domain.json` | 9/9 | `5dca9a5dea3c365c85dc0db64e4795f7c190f16eabcae93d2974d7e0e634bb1e` |
+| `archive_shift_topology_current_declarations_2026-10-26_frame_domain.json` | 26/26 | `ff2683d67e1159ebbd3ac0efa33ce3600d7243976fbfe10b13c29035c109c18d` |
+| `source_port_preparation_tensor_inventory_2026-10-26_frame_domain.json` | 73/73 | `db0a417a6200fa288cc227df8a1ab31e91b66508a462c6c99f594b099498275d` |
+| `flat_tensor_shared_api_declarations_2026-10-26_frame_domain.json` | 4/4 | `4ccfb00dc39f5748157bedf81ae5580ab30d32534c00634a94d545c3003c3d1c` |
+| `proper_role_lorentz_orbit_declarations_2026-10-26_frame_domain.json` | 5/5 | `a1a73f5189b24b92cf0bed97fd2fa6d9eb6c8177192f392953dda36e36dda75c` |
+| `finite_gram_orbit_shared_api_declarations_2026-10-26_frame_domain.json` | 17/17 | `4061bef2a5dd1535bf6f58ac7ec91f5f9571a81dce897631f99b519521b10d3a` |
+
+The cold-start receipt is
+`proof_architecture_cold_start_summary_2026-10-26_frame_domain.json`,
+SHA-256 `3818e507e91bbaaff37671a5c981ae7041aca6f73f6e0ac43b9b8259cfb265eb`.
+Its replay finds all sources in **22/22** cases, passes the **23-case**
+benchmark, checks **133** required-source references, and passes the
+source-change versus unrelated-prose control. This is a finite matrix domain
+refinement and typed Lean reuse edge; it adds no physical selection or C0
+acceptance.

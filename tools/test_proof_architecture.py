@@ -1281,7 +1281,7 @@ class ProofArchitectureTests(unittest.TestCase):
         inventory_path = (
             proof.ROOT
             / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
-            / "nonvacuum_brinkmann_stencil_declarations_2026-10-26_dressed_equivalence.json"
+            / "nonvacuum_brinkmann_stencil_declarations_2026-10-26_frame_domain.json"
         )
         inventory = json.loads(inventory_path.read_text(encoding="utf-8"))
         self.assertEqual(inventory["schema"], "d0-lean-declaration-inventory-v1")
@@ -1351,7 +1351,7 @@ class ProofArchitectureTests(unittest.TestCase):
         ), "shared Gram-orbit query must surface its algebra API directly")
         self.assertTrue(any(
             hit.get("source") ==
-                "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/finite_gram_orbit_shared_api_declarations_2026-10-26_dressed_equivalence.json"
+                "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/finite_gram_orbit_shared_api_declarations_2026-10-26_frame_domain.json"
             and hit.get("direct_content")
             for hit in exact_hits
         ), "dressed-transport query must surface its compiled application inventory")
@@ -1361,7 +1361,7 @@ class ProofArchitectureTests(unittest.TestCase):
         inventory_path = (
             proof.ROOT
             / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
-            / "finite_gram_orbit_shared_api_declarations_2026-10-26_dressed_equivalence.json"
+            / "finite_gram_orbit_shared_api_declarations_2026-10-26_frame_domain.json"
         )
         inventory = json.loads(inventory_path.read_text(encoding="utf-8"))
         self.assertEqual(inventory["schema"], "d0-lean-declaration-inventory-v1")
@@ -1424,7 +1424,7 @@ class ProofArchitectureTests(unittest.TestCase):
         frame_specialization = declarations[
             "D0.Geometry.a4dDressedLink_frame_invariant"
         ]
-        self.assertIn("IsUnit Θy.det", frame_specialization["elaborated_type"])
+        self.assertNotIn("IsUnit Θy.det", frame_specialization["elaborated_type"])
         self.assertIn(
             "D0.Algebra.finiteMatrix_dressed_transport_frame_invariant",
             frame_specialization["proof_dependencies"],
@@ -1550,7 +1550,7 @@ class ProofArchitectureTests(unittest.TestCase):
         summary_path = (
             proof.ROOT
             / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
-            / "proof_architecture_cold_start_summary_2026-10-26_dressed_equivalence.json"
+            / "proof_architecture_cold_start_summary_2026-10-26_frame_domain.json"
         )
         summary = json.loads(summary_path.read_text(encoding="utf-8"))
         self.assertEqual(summary["schema"], "d0-proof-architecture-cold-start-summary-v2")
@@ -1855,7 +1855,7 @@ class ProofArchitectureTests(unittest.TestCase):
             }
 
         current_inventory = declarations(
-            "car_hodge_diagonal_transpose_current_declaration_inventory_2026-10-26_dressed_equivalence.json",
+            "car_hodge_diagonal_transpose_current_declaration_inventory_2026-10-26_frame_domain.json",
             require_current=True,
         )
 
@@ -2125,7 +2125,7 @@ class ProofArchitectureTests(unittest.TestCase):
         inventory_path = (
             proof.ROOT
             / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
-            / "car_hodge_diagonal_transpose_current_declaration_inventory_2026-10-26_dressed_equivalence.json"
+            / "car_hodge_diagonal_transpose_current_declaration_inventory_2026-10-26_frame_domain.json"
         )
         inventory_bytes = inventory_path.read_bytes()
         inventory = json.loads(inventory_bytes)
@@ -2183,7 +2183,7 @@ class ProofArchitectureTests(unittest.TestCase):
         inventory_path = (
             proof.ROOT
             / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
-            / "car_hodge_diagonal_transpose_current_declaration_inventory_2026-10-26_dressed_equivalence.json"
+            / "car_hodge_diagonal_transpose_current_declaration_inventory_2026-10-26_frame_domain.json"
         )
         inventory = json.loads(inventory_path.read_text(encoding="utf-8"))
         self.assertEqual(inventory["lean_source_digest"], lean_task_build.source_digest())
@@ -2257,7 +2257,7 @@ class ProofArchitectureTests(unittest.TestCase):
         inventory_path = (
             proof.ROOT
             / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
-            / "finite_matrix_partial_trace_current_declarations_2026-10-26_dressed_equivalence.json"
+            / "finite_matrix_partial_trace_current_declarations_2026-10-26_frame_domain.json"
         )
         inventory = json.loads(inventory_path.read_text(encoding="utf-8"))
         self.assertFalse(inventory["worktree_dirty"])
@@ -2337,7 +2337,7 @@ class ProofArchitectureTests(unittest.TestCase):
         inventory_path = (
             proof.ROOT
             / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
-            / "archive_shift_topology_current_declarations_2026-10-26_dressed_equivalence.json"
+            / "archive_shift_topology_current_declarations_2026-10-26_frame_domain.json"
         )
         inventory = json.loads(inventory_path.read_text(encoding="utf-8"))
         self.assertFalse(inventory["worktree_dirty"])
@@ -2536,7 +2536,7 @@ class ProofArchitectureTests(unittest.TestCase):
         inventory_path = (
             proof.ROOT
             / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
-            / "source_port_preparation_tensor_inventory_2026-10-26_dressed_equivalence.json"
+            / "source_port_preparation_tensor_inventory_2026-10-26_frame_domain.json"
         )
         inventory = json.loads(inventory_path.read_text(encoding="utf-8"))
         self.assertRegex(inventory["snapshot_commit"], r"^[0-9a-f]{40}$")
@@ -2616,7 +2616,7 @@ class ProofArchitectureTests(unittest.TestCase):
         inventory_path = (
             proof.ROOT
             / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
-            / "flat_tensor_shared_api_declarations_2026-10-26_dressed_equivalence.json"
+            / "flat_tensor_shared_api_declarations_2026-10-26_frame_domain.json"
         )
         inventory = json.loads(inventory_path.read_text(encoding="utf-8"))
         self.assertEqual(inventory["lean_source_digest"], lean_task_build.source_digest())
