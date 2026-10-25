@@ -820,6 +820,11 @@ pinned heading `A4D resonance divisor: the phase-count nullity rule is false` at
 12 query terms matched. These are retrieval leads only: all 54 section mappings remain incomplete,
 no C0 unit key is accepted, and all 54 semantic result relations stay unresolved.
 
+An independent read-only review checked all 178 emitted candidates against 59 unique pinned Git
+blobs. It confirmed the commit/path pins, expected SHA-256 values, and heading line coordinates;
+it found no locator or summary defect. This review validates candidate provenance only. It does not
+accept any candidate as a mathematical unit or result application, and it leaves C0 unfrozen.
+
 The regenerated artifact
 `sources/d0_proof_architecture_formalization_2026-10-24/assembly_result_declaration_crosswalk.json`
 was built at snapshot `7114f99052963f00ed9a78510a75ce38a4e9665e` with a clean worktree and SHA-256
