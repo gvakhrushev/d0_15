@@ -192,9 +192,11 @@ CASES: list[dict[str, Any]] = [
         ),
     },
     {
-        "id": "car-hopping-vs-hodge-operator-claims",
+        "id": "car-scaffolds-vs-hodge-operator-claims",
         "queries": [
             "D0-ARCHIVE-CAR-ZERO-MODE-OWNER-001 D0-ARCHIVE-CAR-DIRAC-SQUARE-001 actual carDirac hoppingCarDirac",
+            "D0-ARCHIVE-CAR-SPECTRUM-AMPLIFICATION-001 D0-ARCHIVE-DIRAC-HEATTRACE-MULTIPLICITY-001 arithmetic spinor decomposition heat trace",
+            "car_amplification_times_spinor_eq_sixteen diracHeatTraceMultiplicity_eq_fock_dim",
             "hodgeCarDirac_sq cochainDifferenceLaplacian_eq_backward_forward Hodge square four roles",
             "hodge_difference_diagonal_double_metric_at_l2 oriented graph Laplacian double count",
             "hodgeCarDirac_kernel_finrank constant Fock fibre 16",
@@ -203,6 +205,8 @@ CASES: list[dict[str, Any]] = [
             "car zero mode claim declarations 2026 10 25",
             "hodge car dirac kernel declaration 2026 10 25",
             "car dirac square claim declarations 2026 10 25",
+            "car spectrum amplification claim declarations 2026 10 25",
+            "dirac heattrace multiplicity claim declarations 2026 10 25",
             "hodge car dirac square declaration 2026 10 25",
             "hodge square backward forward declaration 2026 10 25",
             "hodge car dirac l2 normalization declaration 2026 10 25",
@@ -225,6 +229,8 @@ CASES: list[dict[str, Any]] = [
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/car_zero_mode_claim_declarations_2026-10-25.json",
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/hodge_car_dirac_kernel_declaration_2026-10-25.json",
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/car_dirac_square_claim_declarations_2026-10-25.json",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/car_spectrum_amplification_claim_declarations_2026-10-25.json",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/dirac_heattrace_multiplicity_claim_declarations_2026-10-25.json",
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/hodge_car_dirac_square_declaration_2026-10-25.json",
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/hodge_square_backward_forward_declaration_2026-10-25.json",
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/hodge_car_dirac_l2_normalization_declaration_2026-10-25.json",
@@ -233,9 +239,12 @@ CASES: list[dict[str, Any]] = [
             "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/hodge_shell_rank_l2_control_declaration_2026-10-25.json",
         ],
         "scope_review": (
-            "D0-ARCHIVE-CAR-ZERO-MODE-OWNER-001 and D0-ARCHIVE-CAR-DIRAC-SQUARE-001 "
-            "remain OPEN: their mapped ArchiveCARDirac declarations prove arithmetic "
-            "constants, not the kernel or square of carDirac/hoppingCarDirac. Separate "
+            "D0-ARCHIVE-CAR-ZERO-MODE-OWNER-001, D0-ARCHIVE-CAR-DIRAC-SQUARE-001, "
+            "D0-ARCHIVE-CAR-SPECTRUM-AMPLIFICATION-001, and "
+            "D0-ARCHIVE-DIRAC-HEATTRACE-MULTIPLICITY-001 remain OPEN: their mapped "
+            "ArchiveCARDirac declarations prove arithmetic constants, not the kernel, "
+            "square, spinor decomposition, continuum modes, or heat trace of the "
+            "registered operators. Separate "
             "Hodge-cochain results already prove hodgeCarDirac_sq, its four-role oriented "
             "difference formula, the 16-dimensional Hodge kernel, and the L=2 factor-two "
             "graph-diagonal comparison. The spatial shell has rank 96 and square-energy "

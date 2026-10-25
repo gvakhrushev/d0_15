@@ -1,0 +1,215 @@
+{
+  "schema": "d0-lean-declaration-inventory-v1",
+  "snapshot_commit": "6b41ccc5566d3b7a7e69c5591e3cb5c6fdfbc678",
+  "worktree_dirty": true,
+  "claim_registry_sha256": "e2fcba29050a9017aa6d1e7501f192e6209d2f6c04d8e9b791930c4e54c6cbf5",
+  "lean_source_digest": "ae5f197c7d5043800c867a916c8fd6b1bb5e885e64e1b7b40047ddd1818158db",
+  "collector_sha256": "94dee4f0cb4f31024c3e27090bfecac7cf16338a4745e41ebe8c93f2f012e73e",
+  "toolchain": "leanprover/lean4:v4.30.0",
+  "public_import_root": "D0.Geometry.ArchiveCARDirac",
+  "resolution_only": false,
+  "request": {
+    "claim_id": "D0-ARCHIVE-DIRAC-HEATTRACE-MULTIPLICITY-001",
+    "mappings": [
+      {
+        "claim_id": "D0-ARCHIVE-DIRAC-HEATTRACE-MULTIPLICITY-001",
+        "module_locator": "D0.Geometry.ArchiveCARDirac",
+        "theorem_atom": "diracHeatTraceMultiplicity_eq_fock_dim",
+        "candidate_names": [
+          "D0.Geometry.ArchiveCARDirac.diracHeatTraceMultiplicity_eq_fock_dim",
+          "D0.Geometry.diracHeatTraceMultiplicity_eq_fock_dim",
+          "D0.diracHeatTraceMultiplicity_eq_fock_dim"
+        ]
+      },
+      {
+        "claim_id": "D0-ARCHIVE-DIRAC-HEATTRACE-MULTIPLICITY-001",
+        "module_locator": "D0.Geometry.ArchiveCARDirac",
+        "theorem_atom": "archive_dirac_heattrace_multiplicity_owner",
+        "candidate_names": [
+          "D0.Geometry.ArchiveCARDirac.archive_dirac_heattrace_multiplicity_owner",
+          "D0.Geometry.archive_dirac_heattrace_multiplicity_owner",
+          "D0.archive_dirac_heattrace_multiplicity_owner"
+        ]
+      }
+    ]
+  },
+  "declarations": [
+    {
+      "exists": false,
+      "name": "D0.Geometry.ArchiveCARDirac.diracHeatTraceMultiplicity_eq_fock_dim",
+      "source_path": null
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [],
+      "conclusion_whnf": "D0.Geometry.diracHeatTraceMultiplicity = Fintype.card D0.Geometry.ArchiveFockState",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 5,
+            "line": 543
+          },
+          "start": {
+            "column": 0,
+            "line": 540
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 46,
+            "line": 540
+          },
+          "start": {
+            "column": 8,
+            "line": 540
+          }
+        }
+      },
+      "elaborated_type": "D0.Geometry.diracHeatTraceMultiplicity = Fintype.card D0.Geometry.ArchiveFockState",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveCARDirac",
+      "name": "D0.Geometry.diracHeatTraceMultiplicity_eq_fock_dim",
+      "proof_dependencies": [
+        "Bool",
+        "Bool.fintype",
+        "D0.Dyad",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.card_archive_fock_state",
+        "D0.Geometry.diracHeatTraceMultiplicity",
+        "D0.Role",
+        "Eq",
+        "Eq.mpr",
+        "Eq.refl",
+        "Fin.fintype",
+        "Fintype.card",
+        "Nat",
+        "OfNat.ofNat",
+        "Pi.instFintype",
+        "congrArg",
+        "id",
+        "instDecidableEqFin",
+        "instDecidableEqProd",
+        "instFintypeProd",
+        "instOfNatNat"
+      ],
+      "type_dependencies": [
+        "Bool",
+        "Bool.fintype",
+        "D0.Dyad",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.diracHeatTraceMultiplicity",
+        "D0.Role",
+        "Eq",
+        "Fin.fintype",
+        "Fintype.card",
+        "Nat",
+        "OfNat.ofNat",
+        "Pi.instFintype",
+        "instDecidableEqFin",
+        "instDecidableEqProd",
+        "instFintypeProd",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveCARDirac.lean"
+    },
+    {
+      "exists": false,
+      "name": "D0.diracHeatTraceMultiplicity_eq_fock_dim",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Geometry.ArchiveCARDirac.archive_dirac_heattrace_multiplicity_owner",
+      "source_path": null
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [],
+      "conclusion_whnf": "D0.Geometry.diracHeatTraceMultiplicity = 16 ∧ Fintype.card D0.Geometry.ArchiveFockState = 16",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 32,
+            "line": 548
+          },
+          "start": {
+            "column": 0,
+            "line": 545
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 50,
+            "line": 545
+          },
+          "start": {
+            "column": 8,
+            "line": 545
+          }
+        }
+      },
+      "elaborated_type": "D0.Geometry.diracHeatTraceMultiplicity = 16 ∧ Fintype.card D0.Geometry.ArchiveFockState = 16",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveCARDirac",
+      "name": "D0.Geometry.archive_dirac_heattrace_multiplicity_owner",
+      "proof_dependencies": [
+        "And.intro",
+        "Bool",
+        "Bool.fintype",
+        "D0.Dyad",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.card_archive_fock_state",
+        "D0.Geometry.diracHeatTraceMultiplicity",
+        "D0.Role",
+        "Eq",
+        "Fin.fintype",
+        "Fintype.card",
+        "Nat",
+        "OfNat.ofNat",
+        "Pi.instFintype",
+        "instDecidableEqFin",
+        "instDecidableEqProd",
+        "instFintypeProd",
+        "instOfNatNat",
+        "rfl"
+      ],
+      "type_dependencies": [
+        "And",
+        "Bool",
+        "Bool.fintype",
+        "D0.Dyad",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.diracHeatTraceMultiplicity",
+        "D0.Role",
+        "Eq",
+        "Fin.fintype",
+        "Fintype.card",
+        "Nat",
+        "OfNat.ofNat",
+        "Pi.instFintype",
+        "instDecidableEqFin",
+        "instDecidableEqProd",
+        "instFintypeProd",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveCARDirac.lean"
+    },
+    {
+      "exists": false,
+      "name": "D0.archive_dirac_heattrace_multiplicity_owner",
+      "source_path": null
+    }
+  ]
+}

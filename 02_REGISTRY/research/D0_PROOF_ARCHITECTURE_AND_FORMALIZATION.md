@@ -5316,14 +5316,14 @@ SHA-256 `cd4d6a4bf092088bf0d6a554c2d38f7ab6516fa7bcaaddbee4a87ffada2a0dbb`.
 Each inventory builds and imports only its named owner module; neither invokes
 the full `D0.All` Ready replay.
 
-Cold-start case `car-hopping-vs-hodge-operator-claims` retrieves both CAR
-claims, the CAR and Hodge operator modules, `ClaimMap`, the source crosswalk,
-and the narrow compiled inventories in the bounded search window. Its focused
-test separately reads `formal_support.csv` as structured data and confirms
-that support is recorded for the Hodge square, kernel, and shell modules, but
-not `ArchiveCARDirac`; it also checks the two OPEN CAR statuses and the
-independently LEAN_PROVED shell status. This is a retrieval negative control,
-not an automatic semantic acceptance; the focused case passes.
+Cold-start case `car-scaffolds-vs-hodge-operator-claims` retrieves the four
+open CAR claims, the CAR and Hodge operator modules, `ClaimMap`, the source
+crosswalk, and the narrow compiled inventories in the bounded search window.
+Its focused test separately reads `formal_support.csv` as structured data and
+confirms that support is recorded for the Hodge square, kernel, and shell
+modules, but not `ArchiveCARDirac`; it also checks the four OPEN CAR statuses
+and the independently LEAN_PROVED shell status. This is a retrieval negative
+control, not an automatic semantic acceptance; the focused case passes.
 
 The claimed Book locator `BOOK_06 / 06.spectral kernel dimension of the actual
 CAR Dirac operator` has no exact heading match in the source-candidate view;
@@ -5434,4 +5434,42 @@ scope. The original source-unit/normalization reconciliation and any typed
 transport to the intended registered operator remain to be supplied before
 the square target can be accepted. No claim row, `formal_support` row,
 operator definition, or physical interpretation is changed here; this closes
+no C0 or GR obligation.
+
+### Candidate C0 source-unit reconciliation: CAR spectrum amplification and heat trace (25 October 2026)
+
+This adjacent crosswalk uses the same exact source pins as the preceding CAR
+square section; only the claim rows and compiled declaration records below are
+new. In the source snapshot `6b41ccc5566d3b7a7e69c5591e3cb5c6fdfbc678`,
+`D0-ARCHIVE-CAR-SPECTRUM-AMPLIFICATION-001` is OPEN at claims row 818 and
+`D0-ARCHIVE-DIRAC-HEATTRACE-MULTIPLICITY-001` is OPEN at row 819. The generated
+`ClaimMap` resolves them to `car_amplification_times_spinor_eq_sixteen` /
+`archive_car_spectrum_amplification_owner` and
+`diracHeatTraceMultiplicity_eq_fock_dim` /
+`archive_dirac_heattrace_multiplicity_owner` in `ArchiveCARDirac.lean`.
+`formal_support.csv` has no `ArchiveCARDirac` row.
+
+The narrow compiled queries use public import
+`D0.Geometry.ArchiveCARDirac`, Lean 4.30.0, and the unchanged source digest
+`ae5f197c7d5043800c867a916c8fd6b1bb5e885e64e1b7b40047ddd1818158db`:
+
+| Inventory | Compiled declaration scope | SHA-256 |
+|---|---|---|
+| `car_spectrum_amplification_claim_declarations_2026-10-25.json` | `car_amplification_times_spinor_eq_sixteen` states only `carDiracAmplificationFactor * 4 = Fintype.card ArchiveFockState`; the owner states the factor is 4 and its product is 16. It does not state an operator decomposition or a mode limit. The arithmetic owner has no axioms; the equality-to-card theorem has `Classical.choice`, `Quot.sound`, and `propext`. | `6f6feef0d0255d59bf715fea675411e7a2e913f032acfe9b8a0b44d1497b60aa` |
+| `dirac_heattrace_multiplicity_claim_declarations_2026-10-25.json` | `diracHeatTraceMultiplicity_eq_fock_dim` equates the declared integer to the Fock cardinality; the owner states both are 16. No trace, exponential, or spectral sum occurs in either type. Both have `Classical.choice`, `Quot.sound`, and `propext` in their axiom closures. | `b0d1298429f95c1680a0a8ca6fa0a906023065c183448c71692599c0ddc50abc` |
+
+The spectrum-amplification row still requires an explicit invariant
+decomposition/intertwiner into four spinor copies and analytic convergence of
+the finite eigenvalues to the stated continuum modes. The heat-trace row still
+requires definitions of the finite traces and a trace identity derived from
+an accepted square or decomposition. These are separate remaining premises;
+the cardinality equalities do not imply either one. The inventories were
+generated sequentially from the same clean source snapshot: the first records
+`worktree_dirty=false`, and the second `worktree_dirty=true` because the first
+JSON was present. Neither query changes a Lean module or invokes `D0.All`.
+
+**Disposition:** retain both claims OPEN. The existing Hodge and finite CAR
+parity results remain at their own scopes and supply neither a spinor
+decomposition nor a heat-trace definition/equality. This crosswalk changes no
+claim, support row, source convention, or physical interpretation and closes
 no C0 or GR obligation.

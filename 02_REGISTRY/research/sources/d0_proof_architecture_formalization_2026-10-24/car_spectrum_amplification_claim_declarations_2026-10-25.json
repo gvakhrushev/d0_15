@@ -1,0 +1,200 @@
+{
+  "schema": "d0-lean-declaration-inventory-v1",
+  "snapshot_commit": "6b41ccc5566d3b7a7e69c5591e3cb5c6fdfbc678",
+  "worktree_dirty": false,
+  "claim_registry_sha256": "e2fcba29050a9017aa6d1e7501f192e6209d2f6c04d8e9b791930c4e54c6cbf5",
+  "lean_source_digest": "ae5f197c7d5043800c867a916c8fd6b1bb5e885e64e1b7b40047ddd1818158db",
+  "collector_sha256": "af4bb36ec3a07464348919b3448e8a4f2d8eb1d80c6b87589bebde59b938db97",
+  "toolchain": "leanprover/lean4:v4.30.0",
+  "public_import_root": "D0.Geometry.ArchiveCARDirac",
+  "resolution_only": false,
+  "request": {
+    "claim_id": "D0-ARCHIVE-CAR-SPECTRUM-AMPLIFICATION-001",
+    "mappings": [
+      {
+        "claim_id": "D0-ARCHIVE-CAR-SPECTRUM-AMPLIFICATION-001",
+        "module_locator": "D0.Geometry.ArchiveCARDirac",
+        "theorem_atom": "car_amplification_times_spinor_eq_sixteen",
+        "candidate_names": [
+          "D0.Geometry.ArchiveCARDirac.car_amplification_times_spinor_eq_sixteen",
+          "D0.Geometry.car_amplification_times_spinor_eq_sixteen",
+          "D0.car_amplification_times_spinor_eq_sixteen"
+        ]
+      },
+      {
+        "claim_id": "D0-ARCHIVE-CAR-SPECTRUM-AMPLIFICATION-001",
+        "module_locator": "D0.Geometry.ArchiveCARDirac",
+        "theorem_atom": "archive_car_spectrum_amplification_owner",
+        "candidate_names": [
+          "D0.Geometry.ArchiveCARDirac.archive_car_spectrum_amplification_owner",
+          "D0.Geometry.archive_car_spectrum_amplification_owner",
+          "D0.archive_car_spectrum_amplification_owner"
+        ]
+      }
+    ]
+  },
+  "declarations": [
+    {
+      "exists": false,
+      "name": "D0.Geometry.ArchiveCARDirac.car_amplification_times_spinor_eq_sixteen",
+      "source_path": null
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [],
+      "conclusion_whnf": "D0.Geometry.carDiracAmplificationFactor * 4 = Fintype.card D0.Geometry.ArchiveFockState",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 5,
+            "line": 530
+          },
+          "start": {
+            "column": 0,
+            "line": 527
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 49,
+            "line": 527
+          },
+          "start": {
+            "column": 8,
+            "line": 527
+          }
+        }
+      },
+      "elaborated_type": "D0.Geometry.carDiracAmplificationFactor * 4 = Fintype.card D0.Geometry.ArchiveFockState",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveCARDirac",
+      "name": "D0.Geometry.car_amplification_times_spinor_eq_sixteen",
+      "proof_dependencies": [
+        "Bool",
+        "Bool.fintype",
+        "D0.Dyad",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.carDiracAmplificationFactor",
+        "D0.Geometry.card_archive_fock_state",
+        "D0.Role",
+        "Eq",
+        "Eq.mpr",
+        "Eq.refl",
+        "Fin.fintype",
+        "Fintype.card",
+        "HMul.hMul",
+        "Nat",
+        "OfNat.ofNat",
+        "Pi.instFintype",
+        "congrArg",
+        "id",
+        "instDecidableEqFin",
+        "instDecidableEqProd",
+        "instFintypeProd",
+        "instHMul",
+        "instMulNat",
+        "instOfNatNat"
+      ],
+      "type_dependencies": [
+        "Bool",
+        "Bool.fintype",
+        "D0.Dyad",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.carDiracAmplificationFactor",
+        "D0.Role",
+        "Eq",
+        "Fin.fintype",
+        "Fintype.card",
+        "HMul.hMul",
+        "Nat",
+        "OfNat.ofNat",
+        "Pi.instFintype",
+        "instDecidableEqFin",
+        "instDecidableEqProd",
+        "instFintypeProd",
+        "instHMul",
+        "instMulNat",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveCARDirac.lean"
+    },
+    {
+      "exists": false,
+      "name": "D0.car_amplification_times_spinor_eq_sixteen",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Geometry.ArchiveCARDirac.archive_car_spectrum_amplification_owner",
+      "source_path": null
+    },
+    {
+      "axioms": [],
+      "binders": [],
+      "conclusion_whnf": "D0.Geometry.carDiracAmplificationFactor = 4 ∧ D0.Geometry.carDiracAmplificationFactor * 4 = 16",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 12,
+            "line": 535
+          },
+          "start": {
+            "column": 0,
+            "line": 532
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 48,
+            "line": 532
+          },
+          "start": {
+            "column": 8,
+            "line": 532
+          }
+        }
+      },
+      "elaborated_type": "D0.Geometry.carDiracAmplificationFactor = 4 ∧ D0.Geometry.carDiracAmplificationFactor * 4 = 16",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveCARDirac",
+      "name": "D0.Geometry.archive_car_spectrum_amplification_owner",
+      "proof_dependencies": [
+        "And.intro",
+        "D0.Geometry.carDiracAmplificationFactor",
+        "Eq",
+        "HMul.hMul",
+        "Nat",
+        "OfNat.ofNat",
+        "instHMul",
+        "instMulNat",
+        "instOfNatNat",
+        "rfl"
+      ],
+      "type_dependencies": [
+        "And",
+        "D0.Geometry.carDiracAmplificationFactor",
+        "Eq",
+        "HMul.hMul",
+        "Nat",
+        "OfNat.ofNat",
+        "instHMul",
+        "instMulNat",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveCARDirac.lean"
+    },
+    {
+      "exists": false,
+      "name": "D0.archive_car_spectrum_amplification_owner",
+      "source_path": null
+    }
+  ]
+}

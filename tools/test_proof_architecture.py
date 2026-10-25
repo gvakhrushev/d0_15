@@ -1372,7 +1372,7 @@ class ProofArchitectureTests(unittest.TestCase):
     def test_car_hodge_cold_start_keeps_distinct_operator_claims(self) -> None:
         case = next(
             item for item in cold_start.CASES
-            if item["id"] == "car-hopping-vs-hodge-operator-claims"
+            if item["id"] == "car-scaffolds-vs-hodge-operator-claims"
         )
         hits_by_query = proof.full_text_search_many(
             proof.ROOT, case["queries"], limit=18
@@ -1393,6 +1393,8 @@ class ProofArchitectureTests(unittest.TestCase):
         for claim_id in (
             "D0-ARCHIVE-CAR-ZERO-MODE-OWNER-001",
             "D0-ARCHIVE-CAR-DIRAC-SQUARE-001",
+            "D0-ARCHIVE-CAR-SPECTRUM-AMPLIFICATION-001",
+            "D0-ARCHIVE-DIRAC-HEATTRACE-MULTIPLICITY-001",
         ):
             self.assertEqual(claims[claim_id]["lean_status"], "OPEN")
         self.assertEqual(
@@ -1405,6 +1407,10 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertIn("no exact heading", case["scope_review"])
         self.assertIn("L=2 shell rank is 48", case["scope_review"])
         self.assertTrue(any("actual" in query and "carDirac" in query
+                            for query in case["queries"]))
+        self.assertTrue(any("car_amplification_times_spinor_eq_sixteen" in query
+                            for query in case["queries"]))
+        self.assertTrue(any("diracHeatTraceMultiplicity_eq_fock_dim" in query
                             for query in case["queries"]))
         self.assertTrue(any("hodgeCarDirac_sq" in query for query in case["queries"]))
         self.assertTrue(any("hodgeCarDirac_kernel_finrank" in query
