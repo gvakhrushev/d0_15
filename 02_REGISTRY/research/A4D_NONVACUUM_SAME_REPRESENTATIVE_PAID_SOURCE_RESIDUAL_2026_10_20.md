@@ -14609,6 +14609,406 @@ another record/curvature census. A new source law must come from its
 actual native coupling and cut; no physical closure is inferred.
 
 
+
+## 7bd. An oriented full-record Book price has the Lorentz Palatini source
+
+25 October2026; SAME PR334 / constitutive/native-programme-v1,
+input5ee0dc63. This is the application of7bb to the EXISTING directed
+CAR16/Golden plaquette tester, not to the positive spatial Hodge
+spectrum. It substitutes the missing measurement-to-whole-price map
+in [the actual-plaquette owner](A4D_REAL_PLAQUETTE_CAYLEY_BOOK_MARKED_EVENT_SELECTION_GATE_2026_10_20.md#2-new-actual-plaquette-measurement-a-positive-reversal-odd-reference-log-odds-reads-cayley-curvature).
+The tester, its Cayley source, original star convention and all16
+exterior identities are reused. The new result is a positive ABSOLUTE
+Book operator price for the FINITE oriented comparison, with a fixed
+nonzero coefficient and bounds on the complete geometric covector.
+It does not assert that this programme or its joint variation graph is
+compulsory. Matter, independent apparatus rows and raw216 remain open.
+
+### The actual geometric operands, before any scalar price
+
+Use the original p=phi^(-1), zeta=2^-20, a=1-zeta and the actual
+protected free input multiplicity q of7bb. On one based face let P
+be the actual ordered proper-Lorentz plaquette, and X_B=(*B)eta the
+EXISTING complement-coframe area generator. No curvature is inserted
+as a test operand. Set A=h^2 X_B and Y=log(P) on a common near-identity
+chart. The h is the stated geometric mesh, not primitive duration N.
+The area-to-probe map A is part of this configured programme; its
+native physical necessity is not inferred from dimensional analysis.
+
+For U in this chart the original one-Golden Julia/Choi tester has
+
+    m(U)=p^2 det(I_4+U)^2/256,
+    t(U)=p det(I_4+U)/16>0,  m=t^2.                  (462)
+
+This is the UNCONDITIONAL joint good-and-mark event, with every
+unmarked-good and failure label retained. Use U_+=exp(A)P and
+U_-=exp(A)P^(-1); these are genuine ordered geometric inputs. The
+strict chart p exp(4r)<1, ||A||+||Y||<=r, suffices for both complete
+CAR16 Julia contractions. The actual moving observer Gram and dual
+Choi reference are the old covariant ones; their source is retained.
+This is the constructed one-Golden tester, not an identification with
+the original one-round full128 instrument whose ports were frozen.
+Replacing it by r_c sequential Golden contractions changes the true
+base mark to p^(2r_c); the coefficient below must then change too.
+
+### Complete prepared-column realization and fixed native middle
+
+Let v(U)=(t(U),r(U)) be the tester's COMPLETE real normalized prepared
+column in a smooth orthonormal frame with first basis vector e0 the
+joint mark. All CAR16, reference16, flags and named failed records are
+present in r; ||r||^2=1-t^2. They are coherent output-record labels,
+not an automatically immutable append archive. The protected action
+is v(U) tensor I_protected and H(v) tensor I_protected: oldRIGHT is
+never used as scratch. Choi reference16/flags are prepared work. Any
+incoming correlated matter span required to remain free must be
+included in the actual protected input, hence in q. Choose a fixed
+carrier of dimension M and
+retain every other input column as well. With
+
+    w=(v+e0)/sqrt(2(1+t)), H(v)=2ww^T-I_M,             (463)
+
+H(v)e0=v, H(v)^2=I, and its signs are one plus and M-1 minus.
+This completion preserves the original tester's WHOLE prepared output
+column, not merely its success probability. It is a NEW completion
+on unprepared columns, so its heat is not the old tester's heat.
+
+An exact native middle is needed: a rank-one sign is not silently
+called SourceI^2. Add ONE actual blank padding bit and extend H(v) by
+diag(-1,I_(M-1)) on its other M-dimensional sector. The resulting
+2M-dimensional involution has M plus and M minus eigenvalues, exactly
+the existing SourceI^2 port-sign multiplicities. If
+K=w e0^T-e0 w^T, O=I+K+K^2/(1+w_0), then O e0=w and O is in SO(M).
+A fixed signed permutation maps the reference balanced diagonal to
+the native port sign; its determinant can be corrected inside an
+eigenspace. Thus a smooth full SO(2M) conjugator exists. Compile THAT
+conjugator using the already-owned all-column finite-word compiler,
+with the exact native middle unchanged. No new controlled phase gate
+is assumed. The padding input stays blank: it doubles whole heat
+space but does NOT double feedback rank or q. Any genuinely free
+auxiliary spin DOES multiply q, exactly as in7bb.
+
+The reciprocal arm uses its own actual tester column (t,r), with
+
+    Q=a+zeta t^2,
+    t_-=sqrt(a)*sqrt(1-t^2)/sqrt(Q),
+    r_-=t r/[sqrt(Q)*sqrt(1-t^2)].                    (464)
+
+The column (t_-,r_-) is normalized. Every old failure-direction ratio
+is preserved; their probabilities change and are explicitly part of
+this NEW arm. On the strict chart t and 1-t^2 have positive margins.
+Apply463 and the same padding to this column too. Both arms have the
+same complete spectrum. No failed record, oldRIGHT input or padding
+mode is removed. These formulas specify a new complete programme;
+they do not show that the original tester already implements464.
+
+The geometric operands are intrinsically recoverable from these
+complete columns, rather than from a separately written geometry
+bank. If u=t_-^2, the reciprocal inverse is
+m=a(1-u)/(a+zeta u); recover t>0 and then the original r from464.
+The full coherent good Choi block reconstructs p Lambda(X) by
+vectorization, and its grade-one block gives the original X in the
+stated transported frame. For X_+=exp(A)P and X_-=exp(A)P^-1,
+X_-^-1 X_+=P^2, so the near-identity principal root gives P and
+exp(A)=X_+P^-1. This is an exact operator-readout inverse, not a
+free tomographic experiment or proof that its physical cost vanishes.
+
+### One positive determinant, not a reported difference of prices
+
+Use the true direct sum of the positive arm at U_+ and reciprocal
+arm at U_-, with both arm labels free in the active input. The input
+rank is2q, whereas the complete paired fibre has dimension4Mq before
+additional genuine work/scene factors. With j(m)=-q log(a+zeta m),
+the original Book determinant and its whole fixed-clock heat give
+
+    B_face=H_ref(N,whole carrier)-q log(a)+F(A,Y),
+    F(A,Y)=j(m(exp(A)exp(Y)))-j(m(exp(A)exp(-Y))).      (465)
+
+The determinant part is nonnegative by7bb450, with its absolute
+anchor kept. Each endpoint remains an exact involution even when its
+conjugator is a finite compiled word. Hence the complete clock and
+homogeneous33-scene heat are constant on this common-layout family,
+including unprepared modes. This is NOT equality with original spatial
+H+R or arbitrary additional Cost-Info charges. A blank/coherent arm
+selector would produce a different determinant and cannot replace
+this free active direct sum.
+
+The price in465 is a finite actual operator price; it is not the
+auxiliary derivative of a price evaluated only at A=0. In particular,
+F(0,Y)=0 alone would have no geometric field source.
+
+### Noncommutative identity and full nonlinear source estimate
+
+The exact inversion and cyclic identities m(U^-1)=m(U) and
+m(VW)=m(WV) imply
+
+    F(-A,Y)=-F(A,Y), F(A,-Y)=-F(A,Y).
+
+Thus ALL total cubic terms vanish, including noncommuting ones.
+Consume the old CAR16 joint-mark identity
+D_s D_t log m(exp(sX)exp(tZ))|0=Tr(XZ)/2. Set
+
+    kappa0=2q zeta p^2/(1-zeta+zeta p^2)>0,
+    L_star(A,exp(Y))=-Tr(A sinh(Y))/2.
+    F(A,Y)=kappa0 L_star(A,exp(Y))+R(A,Y).            (466)
+
+Here L_star(A,P)=h^2 L_star(B,P) is literally the original six-face
+star convention with curvature (P-P^-1)/2, not a fitted action.
+The coefficient is fixed by the actual detector and Book rule. The
+boost/rotation signs are opposite because Tr(K_i^2)=2 and
+Tr(J_i^2)=-2. No Euclidean spectral sign is analytically continued.
+
+For explicit bounds use operator norm and x=||A||, y=||Y||,
+x+y<=r as above. Put
+
+    mu=p^2 exp(8r), theta=zeta mu/a,
+    M4=2q*8^4*(theta+7theta^2+12theta^3+6theta^4),
+    C=M4+kappa0 exp(r).
+    |R| <= C*x*y*(x^2+y^2),
+    |D_A R[H]| <= C*y*(x^2+y^2)||H||,
+    |D_Y R[H]| <= C*x*(x^2+y^2)||H||.                (467)
+
+Proof: the FULL exterior trace gives ||D^k m||<=8^k mu for k<=4
+in the sum norm on (A,Y). Differentiating log yields the stated
+fourth-derivative bound M4. The mixed Hessian of F is even separately
+in A,Y, hence its first jet at zero vanishes. Twice integrating its
+variation gives the value and two derivative estimates with M4.
+Finally ||sinh Y-Y||<=exp(r)y^3/6 and its derivative is bounded by
+exp(r)y^2/2. Together with |Tr Z|<=4||Z|| these give467. This proves
+bounds on a whole chart, not only on a chosen solution family.
+
+An exact finite-source check connects this to the older Cayley owner:
+with T=(P-I)(P+I)^(-1) and m0=m(P),
+
+    d/ds F(sX_B,log P)|0
+      =[2q zeta m0/(a+zeta m0)]*(-Tr(X_B T)).         (468)
+
+The finite difference between this Cayley density and the old star
+density is retained in466-467. Neither its field-dependent multiplier
+nor the change of variables is frozen while differentiating.
+
+### Sum all faces and vary all coframe/link coordinates
+
+Keep the actual orientation epsilon_f. For epsilon_f=-1 exchange
+U_+ and U_- as OPERANDS, keeping the positive and reciprocal roles
+fixed. Swapping finished direct-sum blocks alone would not change
+the determinant. No negative Book term is inserted. Sum by a
+FREE direct sum of face sectors, keeping all their physical ranks.
+Assume N_f(h)<=C_f h^-4, ||A_h||<=C_A h^2 and ||Y_h||<=C_Y h^2 on
+a fixed bounded nondegenerate coframe chart. Define explicitly
+
+    I_star,h=h^2 sum_f epsilon_f L_star(B_f,P_f).
+    B_h=K_paid,h+kappa0 I_star,h+R_h.                 (469)
+
+K_paid,h contains the actual full heat and N_f reciprocal anchors;
+it can grow with h, carrier and true primitive duration, and is only
+field-constant within the stipulated fixed-rank common-clock chart.
+Any other normalization of the old action must be transported
+explicitly; it is not silently identified with I_star,h.
+
+For fixed q,467 gives |R_h|=O(h^4). For smooth physical variations with
+D A_h,D Y_h=O(h^2), the entire first-source error is O(h^4).
+For ALL independent raw-link variations of coordinate-l-infinity
+norm<=1, D Y_h=O(1), the DUAL covector norm is O(h^2), after the
+actual face count. Explicitly, if all four link factors and their
+inverses have norm<=B0 and ||P-I||<=rho<1, then
+||D log P[delta U]||<=4B0^5/(1-rho)||delta U||_infinity.
+For unscaled coframe e, D_e A_h=O(h^2), so its dual error is O(h^4).
+If the chosen raw coordinate is integrated w=h e, D_w A_h=O(h)
+and that error is O(h^3). These are coordinate statements, not a
+claim of the stronger raw h^-2 link norm: there the displayed error
+is only O(1). Nor is a uniform Hessian or exact finite root inferred.
+All estimates divided by the actual kappa0 retain their real gain;
+if q=q_h varies, the absolute estimates are O(q_h h^k) with the
+corresponding displayed exponent k. Since both C and kappa0 scale
+linearly with q_h, the gain-normalized estimates remain O(h^k).
+
+For native finite-word realizations let every complete conjugator,
+including its action on blank work columns, approximate its ideal
+extension in operator norm by epsilon_h. The genuine rank2q N_f
+and7bb454 give
+
+    |Bhat_h-B_h| <= E_h=8q zeta N_f epsilon_h/(1-zeta).
+    stencil error <= E_h sum_j |c_j|.                (470)
+
+A central first secant with step delta has error E_h/delta;
+a forward one has2E_h/delta. Thus source-normalized convergence
+requires E_h/(kappa0 delta)->0, along with the actual ideal-stencil
+error. For example N_f=O(h^-4) requires epsilon_h=o(delta h^4)
+for that compiler term alone. The true compiler/routing durations
+are paid and equalized by the already-owned7ay construction, not
+assigned to h. This is an actual finite-catalogue approximation;
+it does not manufacture a continuously differentiable native-word
+selector from a value error.
+
+### What this removes, and what the native execution still must do
+
+This substitutes a positive whole-Book price for the old directed
+geometric readout, supplies its fixed Lorentz coefficient, and controls
+its all-coframe/all-link source on the stated norms. Moving observer
+and failure-direction sources vanish along THIS complete constructed
+graph because m is observer-free and whole heat is constant. This
+is stronger than discarding an observer-dependent normalization.
+It does not declare arbitrary independent apparatus normals zero.
+
+The original spatial-spectrum comparison of7bb cannot alone do this:
+on the owned time/space shear probes, the reference with zero stored
+connection has nonzero torsion, but that torsion AND the positive
+metric are still interchanged by the same coordinate permutation.
+Both spectral arms remain isospectral. Here the additional ORIGINAL
+oriented area operand transforms the actual relational observation;
+the proof is466, not a purported Lorentz interpretation of Hodge heat.
+
+Incoming7bc supplies a literal append-reader but proves that its
+one-sided sealed return changes the old source. It remains unchanged:
+output labels in463 are not silently identified with that append
+programme, and its failed source transport is not a prerequisite for
+this distinct oriented price graph.
+
+The next parent application is the actual native area/probe and
+forward/reverse-arm admission law, with the full initial task,
+preparation/readback and independent field/apparatus equations. An
+independent change of one arm's return t has derivative
+-2q zeta t/(a+zeta t^2), generally nonzero while its heat stays
+constant. This is a concrete surviving normal, not a negligible
+compiler error. Mandatory joint binding, compatible material source,
+refining solutions and the stronger original terminal are NOT proved.
+Direct Book03 finite stationarity can consume a proved binding;
+prospective D_min optimality is not a prerequisite for that route.
+The original D_min instead compares descriptions of one fixed
+empirical object; same-task histories and Book price ordering need
+the additional bridges stated in the three-paid-word owner.
+
+**Parent substitution:** measurement-to-positive-whole-price/source
+for the existing oriented plaquette programme, with full failure
+records, original fixed zeta, absolute heat and anchor. Physical
+selection and its independent equations remain open. GR_closed=false.
+
+### New bounded composition check
+
+The following checker tests only this new composition: exact
+noncommuting CAR16 trace/Cayley source, missing cubic terms,
+boost/rotation signs, full-record completion and balanced native
+middle, reciprocal inverse and geometric operand identity, plus
+wrong-cut control. Its M4 reflection fixture checks the dimension-
+independent completion algebra; it is not a new emitted CAR16 native
+word. A 70-digit diagnostic separately checks the proved h^8 value
+and h^6 raw-source orders on a noncommuting family; it is not a
+replacement for463--467's analytic bounds. The constant q=128 here
+is the fixture's stated protected rank, not a license to omit an
+extra physical free spin in a future implementation.
+
+Python3.11.9/SymPy1.12.1: exit0. Final value ratios on mesh halving
+254.913048,255.931901,255.995743; raw-source ratios63.583009,
+63.973861,63.998366. Actual original-zeta gain0.0000932534756792492.
+No unchanged GR/root/Lean/full128 certificate replay.
+
+```python
+import sympy as S
+from itertools import combinations
+p=(S.sqrt(5)-1)/2
+z=S.Rational(1,2**20); a=1-z; q=S.Integer(128)
+eta=S.diag(1,-1,-1,-1); I=S.eye(4)
+G=[]
+for i in range(1,4):
+    X=S.zeros(4); X[0,i]=X[i,0]=1; G.append(X)
+for i,j in [(2,3),(3,1),(1,2)]:
+    X=S.zeros(4); X[i,j]=1; X[j,i]=-1; G.append(X)
+X=G[0]+2*G[3]+G[5]; Y=G[1]+G[3]-G[4]
+assert X*Y!=Y*X
+for Z in G: assert Z.T*eta+eta*Z==S.zeros(4)
+# Exact noncommuting rational Lorentz input; entire CAR trace, not grade one.
+def cayley(Z,t):return (I+t*Z)*(I-t*Z).inv()
+P=cayley(G[0],S.Rational(1,20))*cayley(G[3],S.Rational(1,13))*cayley(G[1],S.Rational(1,17))
+assert P.T*eta*P==eta and P.det()==1
+T=(P-I)*(P+I).inv(); R=(P-P.inv())/2
+assert (R-2*T*(I-T*T).inv()).applyfunc(S.cancel)==S.zeros(4)
+m=p*p*(I+P).det()**2/256
+assert S.simplify(m-p*p*(I+P.inv()).det()**2/256)==0
+kap=2*q*z*m/(a+z*m); kap0=2*q*z*p*p/(a+z*p*p)
+for Z in G:
+    # d log m(e^{sZ}P), as calculated directly by determinant differentiation.
+    dm=2*((I+P).inv()*Z*P).trace()
+    assert S.cancel(dm-(Z*T).trace())==0
+    assert S.simplify(-2*q*z*m*dm/(a+z*m)-kap*(-(Z*T).trace()))==0
+V=cayley(X,S.Rational(1,40)); Xp=V*P; Xm0=V*P.inv()
+assert (Xm0.inv()*Xp-P*P).applyfunc(S.cancel)==S.zeros(4)
+# Full CAR16 exterior trace agrees with determinant at this genuinely noncommuting P.
+tr=0
+for k in range(5):
+    for ids in combinations(range(4),k):tr+=P.extract(ids,ids).det()
+assert S.cancel(tr-(I+P).det())==0
+# Symbolic total jets through degree 3. t represents BOTH true small area and curvature.
+t=S.symbols('t')
+def exp3(Z):return I+t*Z+t*t*Z*Z/2+t**3*Z**3/6
+def trunc(v,n=4):return S.series(v,t,0,n).removeO().expand()
+def mark3(Z,W):
+    E=exp3(Z)*exp3(W)
+    det=trunc((I+E).det())
+    return trunc(p*p*det*det/256)
+def j3(mark):
+    d=trunc((z*(mark-p*p))/(a+z*p*p))
+    return trunc(-q*(d-d*d/2+d**3/3))
+for Z,W in [(X,Y),(G[0],G[0]),(G[3],G[3])]:
+    f=trunc(j3(mark3(Z,W))-j3(mark3(Z,-W)))
+    target=-kap0*t*t*(Z*W).trace()/2
+    assert S.simplify(f-target)==0
+assert S.simplify(-kap0*(G[0]*G[0]).trace()/2)<0
+assert S.simplify(-kap0*(G[3]*G[3]).trace()/2)>0
+# Full-record completion in M=4; two distinct failure labels retained, no normalized postselection.
+c=S.Rational(3,5); rr=S.Matrix([S.Rational(8,15),S.Rational(4,15),S.Rational(8,15)])
+assert (rr.T*rr)[0]==1-c*c
+v=S.Matrix([c,*rr]); e=S.Matrix([1,0,0,0]); w=(v+e)/S.sqrt(2*(1+c))
+U=2*w*w.T-S.eye(4)
+assert (U*e-v).applyfunc(S.simplify)==S.zeros(4,1)
+assert (U*U-S.eye(4)).applyfunc(S.simplify)==S.zeros(4)
+assert U.trace()==-2
+pad=S.diag(-1,1,1,1)
+Uext=S.diag(U,pad)
+assert Uext.trace()==0 and (Uext*Uext-S.eye(8)).applyfunc(S.simplify)==S.zeros(8)
+K=w*e.T-e*w.T; O=S.eye(4)+K+K*K/(1+w[0])
+assert (O*e-w).applyfunc(S.simplify)==S.zeros(4,1)
+assert (O*O.T-S.eye(4)).applyfunc(S.simplify)==S.zeros(4)
+assert S.simplify(O.det())==1
+assert (O*(2*e*e.T-S.eye(4))*O.T-U).applyfunc(S.simplify)==S.zeros(4)
+Q=a+z*c*c
+cm=S.sqrt(a*(1-c*c)/Q); rm=c*rr/S.sqrt(Q*(1-c*c))
+vm=S.Matrix([cm,*rm]); wm=(vm+e)/S.sqrt(2*(1+cm)); Um=2*wm*wm.T-S.eye(4)
+assert S.simplify((vm.T*vm)[0]-1)==0
+assert (Um*e-vm).applyfunc(S.simplify)==S.zeros(4,1)
+assert S.simplify(a+z*cm*cm-a/Q)==0
+assert S.simplify(a*(1-cm*cm)/(a+z*cm*cm)-c*c)==0
+# Different original failure records stay present, with the same conditional relative amplitudes.
+for i in range(3): assert S.simplify(rm[i]/rm[0]-rr[i]/rr[0])==0
+# Wrong active-arm blank/mixture fails even at matched mark.
+paired=(a+z*c*c)*(a+z*cm*cm)
+wrong=(a+z*(c+cm)**2/4)**2
+assert S.simplify(paired-a)==0
+assert abs(float(S.N(wrong-paired,25)))>1e-9
+# Refinement check of the NEW finite price, including a raw-link-like Y perturbation.
+import mpmath as mp
+mp.mp.dps=70
+mm=lambda Z:mp.matrix([[mp.mpf(str(Z[i,j])) for j in range(4)] for i in range(4)])
+Xm,Ym,Gm=mm(X),mm(Y),mm(G[3]); Im=mp.eye(4)
+pm=(mp.sqrt(5)-1)/2; zm=mp.mpf(2)**-20; am=1-zm; qm=128
+km=2*qm*zm*pm**2/(am+zm*pm**2)
+def mn(V):return pm**2*mp.det(Im+V)**2/256
+def residual(A,B):
+    ep=mp.expm(B); em=mp.expm(-B); ea=mp.expm(A)
+    f=-qm*mp.log(am+zm*mn(ea*ep))+qm*mp.log(am+zm*mn(ea*em))
+    ls=-sum((A*(ep-em))[i,i] for i in range(4))/4
+    return f-km*ls
+rv=[];rd=[]
+for h in [mp.mpf(1)/4,mp.mpf(1)/8,mp.mpf(1)/16,mp.mpf(1)/32]:
+    A=h*h*Xm; B=h*h*Ym
+    rv.append(abs(residual(A,B)))
+    rd.append(abs(mp.diff(lambda u:residual(A,B+u*Gm),0)))
+assert all(220 < rv[i]/rv[i+1] < 290 for i in range(3))
+assert all(55 < rd[i]/rd[i+1] < 72 for i in range(3))
+print('refinement ratios value/raw-source',[float(rv[i]/rv[i+1]) for i in range(3)],[float(rd[i]/rd[i+1]) for i in range(3)])
+print('PASS noncommuting all16 mark/Cayley source; odd cubic cancellation; boost/rotation signs; full-record reflections; reciprocal determinant and wrong-cut control')
+print('gain',S.N(kap0,18),'python SymPy',S.__version__)
+```
+
 ## 8. Reproduction
 
 Run from this directory:

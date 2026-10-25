@@ -11787,3 +11787,108 @@ one-sided source and the qualified461. No edits or duplicate runs.
 Final integrated structural gates refreshed PASS on06b18715 with the
 same889/31/58/183/918 counts, warnings0 and unchanged assembly budget.
 No physical acceptance or registry promotion is inferred.
+
+### 25 October: the oriented full-record price supplies the Lorentz source
+
+Phase: native realization / composed source application; same PR334,
+constitutive/native-programme-v1, input5ee0dc63. Existing primary7bd
+462--470 consumes7bb's positive reciprocal payment, the original
+CAR16/Golden directed-plaquette/Cayley owner and7ay's finite native
+compiler. No new task, geometry search, action-germ fitting or registry
+promotion. The actual geometric inputs are exp(h^2 X_B)P and
+exp(h^2 X_B)P^-1, with original star area X_B and ordered plaquetteP.
+
+Exact parent substitution: the old positive directed geometric
+READOUT now has one positive ABSOLUTE full-Book determinant with
+its true whole-clock heat. Its original-zeta coefficient is
+kappa0=2q*zeta*p^2/(1-zeta+zeta*p^2)>0. In the explicit normalization
+I_star,h=h^2 sum epsilon_f L_star(B_f,P_f), the constructed price is
+K_paid,h+kappa0 I_star,h+R_h. Both the actual heat and reciprocal
+anchor stay in K_paid,h; no previous spatial HJR equality is asserted.
+
+Positive-arm Householder completion preserves the entire prepared
+Choi column, all unmarked-good and failure amplitudes included.
+Reciprocal arm has an explicit new full column, preserving conditional
+failure ratios while changing probabilities. One actual blank padding
+bit makes both spectra balanced and hence compilable as conjugates
+of existing exact SourceI^2. OldRIGHT is an identity-protected input;
+Choi reference/flags/padding are actual work and their whole heat is
+retained. A free auxiliary spin or incoming correlated protected span
+changes q and the physical gain. The geometric operands themselves
+are reconstructable from these columns, rather than independently
+written into a terminal geometry bank.
+
+The oriented price is separately odd in area A and log-plaquette Y.
+The original full16 mark identity gives its Lorentz signed quadratic
+term, and exact fourth-derivative bounds prove the entire discrepancy
+O(||A||||Y||(||A||^2+||Y||^2)). With both operands O(h^2), each cell
+has O(h^8) value error. After the true O(h^-4) face sum, fixed-q
+errors are O(h^4) for action and smooth-field first source, O(h^2)
+for the complete independent raw-link covector, and O(h^4) in
+unscaled coframe or O(h^3) in integrated w=h e coordinates. Variable
+q_h multiplies these absolute bounds; gain-normalized bounds retain
+the stated powers. The raw h^-2 link norm is NOT closed (only O(1)
+there), nor is a uniform Hessian or exact finite critical root.
+
+Native finite words retain all columns and actual shared duration.
+The compiler error E_h=8q*zeta*N_faces*epsilon_h/(1-zeta) enters a
+stencil as E_h sum|c_j|, hence a central first-source comparison as
+E_h/(kappa0*delta). No C1 physical word selector is inferred from
+endpoint approximation. The complete positive fixture is a new
+programme, not the original chronological Choi instrument or its
+old heat. Other stack/Info/work prices are not normalized away.
+
+Remaining physical application: native task and admission of the
+area/probe map, chosen preparation/readback, jointly controlled
+forward/reverse arms and compatible material source. An independent
+one-arm return variation still has nonzero first source while heat is
+constant. Mandatory joint binding and all independent apparatus Euler
+rows therefore remain OPEN. Direct Book03 stationarity can consume
+a proved binding without first proving prospective D_min optimality.
+Original Can compares descriptions of ONE empirical object; the
+three-paid-word/code-order route retains its separate hypotheses.
+
+The concurrently published7bc true append-reader is preserved BYTE
+EXACT, including its negative source-transport result. Coherent output
+labels in7bd are not relabelled immutable append history. Its failed
+seal transport is not a prerequisite for this different oriented price.
+The incoming literal equal-code native-word checker is unchanged.
+
+Frozen proof before embedded check:14225 UTF-8 bytes,
+SHA256 e4a87a7782e3f14ccf1d11bf4718cd5e3b3b2a6c76c1495724bfc2da0d93d27c.
+Final embedded checker:4789 UTF-8 bytes,
+SHA256 10648c2c0516c2486c22dd5caf21daa5afc1cd3b7dbd9e7044477fb7bb960735.
+New decisive test only: exact noncommuting all16 mark/source, cubic
+cancellation, opposite boost/rotation signs, full-record/padded
+reflection, reciprocal/operand inverse and wrong-cut control. A
+70-digit refinement diagnostic gives value halving ratios
+254.913048,255.931901,255.995743 and raw-source ratios63.583009,
+63.973861,63.998366. Exit0 Python3.11.9/SymPy1.12.1. The M4 reflection
+fixture checks a dimension-independent interface; it is NOT a newly
+emitted full CAR native word. An initial fixture-vector norm typo was
+corrected before the final run; neither the statement nor the expected
+source was weakened. No unchanged GR/Lean/root/128 replay.
+
+Source-only physical_query_binding ACCEPTS the final14225-byte pin:
+complete-record formula, balanced native middle, exact Lorentz gain,
+fourth-derivative bounds, operand/role orientation and variable-q
+normalization. Reviewer did not repeat the numerical checks.
+Source-only native_continuation_map and native_valuation_map likewise
+ACCEPT the same final pin, retaining the protected tensor identity,
+new completion, exact intrinsic operand inverse and physical boundary.
+No reviewer edited files or repeated checks.
+
+Affected structural checks PASS: work, agent protocol, gravity assembly
+(valid=true;54 active/98 results/5 discharged/22 obligations;
+scientific_promotion=false), repository(889 claims/31 assumptions/
+58 aliases/183 formal_support/918 Lean closure;warnings0), whitespace.
+The later incoming51dcd6bb adds only the independent closed-loop/
+reciprocal-duality research file and changes neither checked input.
+It is preserved without being asserted as a new physical admission
+premise. No repeat of unchanged mathematical checks was required.
+Removing only7bd plus its embedded check restores incoming5ee0dc63/
+51dcd6bb primary BYTE EXACT; the incoming brief is an exact prefix.
+Combined insertion20023bytes, SHA256
+27eaac6c8ccc1fd21eda5eb484fac051bb8035c2e8304f934526f62b0d90baa0.
+These are local source/structural checks, not remote CI, an accepted
+physical GR claim or completion of the scientific goal.
