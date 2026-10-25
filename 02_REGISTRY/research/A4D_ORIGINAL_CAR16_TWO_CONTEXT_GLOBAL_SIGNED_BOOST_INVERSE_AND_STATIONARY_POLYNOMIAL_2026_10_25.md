@@ -178,3 +178,46 @@ The original self-prepared \(\rho_*\) is one native no-reset quantum history res
 [Exact rational and ORIGINAL CAR16 numerical native replay](sources/d0_original_car16_two_mode_book_2026-10-25/check_signed_two_context_inverse.py) verifies (3),(5),(7)–(17) with symbolic polynomial identities, exact rational derivative signs/intervals and original full128 K1 probabilities at positive, zero and negative boosts. It also runs a deliberately different signed boost pair and checks that the two inputs have their OWN legitimate source-state condition. Independent local analytic calculations gave the closed forms (9),(10),(17) and monotonicity bounds; finite samples alone are not relied on to infer globality.
 
 **Scientific status:** new exact original field/measurement-identifiability theorem; not a new claim registry admission, CI certificate of all original D0 assumptions, or \`GR_closed\` promotion.
+
+
+## 7. THEOREM F — complete first source of the ORIGINAL prepared Book J descends through the SAME two physical K1 outcome jets, at r=0 as well
+
+The exact native operational inverse of §3 is not only a parameter lookup. Its differential is globally nonsingular on every positive-\(\nu\) signed chart. Put \(q=q_{\rm stat}>0\), \(v=q_{\rm vac}>0\), \(R=v/q\), and \(R'(r)>12800/59049\). The complete differential of the two actually measurable original one-tick outcome laws gives
+\[
+\boxed{
+Dr[Y]=\frac{q\,Dv[Y]-v\,Dq[Y]}{q^2 R'(r)},
+}\tag{18}
+\]
+\[
+\boxed{
+\frac{D\nu[Y]}{\nu}
+=\frac14\left[
+\frac{Dq[Y]}q
+-\left(\frac{B'(r)}{B(r)}+\frac{4r}{1-r^2}\right)Dr[Y]
+\right].
+}\tag{19}
+\]
+No \(1/r\), discriminant square root or singular eigenvector derivative appears. These formulas are valid for every genuine native tangent Y in the signed \((r,\nu)\) carrier, INCLUDING \(r=0\); the only physical-source inflation is the honest inverse rare-event probability \(1/q\sim\nu^{-4}\) if the amplitude vanishes. The raw original Kraus/source part of \(Dq,Dv\) is
+\[
+\begin{aligned}
+Dq[Y]&=\operatorname{Tr}[D\rho_*[Y]K_1^\dagger K_1]
++2\,\Re\operatorname{Tr}[\rho_*K_1^\dagger DK_1[Y]],\\
+Dv[Y]&=2\,\Re\langle0|K_1^\dagger DK_1[Y]|0\rangle,
+\end{aligned}\tag{20}
+\]
+with the COMPLETE moving state \(D\rho_*\) from (3). Thus the two native **physical source jets** retain the real Poisson/self-preparation response; a frozen \(\rho_*\) would fail this theorem.
+
+Finally insert the reconstructed \(r,\nu\) into the PREEXISTING original \(\mathfrak d(s,t)\) and use only its genuine derivatives:
+\[
+\boxed{
+DJ_{\rm pre}[Y]
+=\partial_rJ_{\rm pre}\,Dr[Y]
++\partial_\nu J_{\rm pre}\,D\nu[Y],\quad
+J_{\rm pre}=-8\log\mathfrak d(s(r,\nu),t(r,\nu)).
+}\tag{21}
+\]
+This is a globally valid two-context original-Born → exact original-PRE-Book-source factorization, not a new physical Price−Info rule, not a fitted \(J\), and not a source identity in additional 40 metric/Lorentz rows outside the two-parameter family. It bypasses the mathematical need for a separate filled-Slater archive detector on this actual native chart.
+
+**Physical validation test:** to claim these source jets are empirically readable, use the original already-owned finite response/future-test and source-secant protocols with PAID separate initializations \(\rho_*\) and vacuum, and keep their true finite statistics and moving-generator comparison costs. Neither (18) nor (21) asserts an exactly measured real source from one finite sample. Original 128 fine histories and the complete future algebra still remain on the full unitary carrier.
+
+An exact symbolic Jacobian of (18)–(21) combined with moving original K1 finite-source checks is part of the companion verifier. On any actual chart with \(q\ge q_{\min}>0\), \(|R'|>\kappa\), and finite \(\partial_rJ,\partial_\nu J\), the source/readout map has an explicit finite Lipschitz budget. At \(\nu=0\), K1 has zero probability and this observation interface is NOT injective: no unearned uniform zero-amplitude limit is claimed.
