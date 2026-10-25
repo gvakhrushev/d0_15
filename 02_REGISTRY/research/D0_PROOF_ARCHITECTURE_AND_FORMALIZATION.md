@@ -7752,3 +7752,53 @@ This remains a finite algebra refactor and typed Lorentz application. The
 metric-provenance crosswalk remains pinned to its earlier clean snapshot; this
 refactor adds no assembly acceptance edge. The selected physical action,
 source transport, time orientation and independent C0 disposition remain open.
+
+### Shared dressed-transport equality characterization (26 October 2026)
+
+The converse orbit-coordinate proof also contained a generic matrix argument:
+with invertible endpoint frames and frame changes, equality of two dressed
+transports is equivalent to the exact two-sided change of the underlying link.
+`D0.Algebra.finiteMatrix_dressed_transport_eq_iff_frame_action` now states and
+proves
+
+`(Theta_x * Lambda_x) * L' * (Theta_y * Lambda_y)⁻¹ =
+ Theta_x * L * Theta_y⁻¹ ↔ L' = Lambda_x⁻¹ * L * Lambda_y`.
+
+It requires determinant units for both endpoint frames and both frame changes.
+Its reverse direction reuses the generic frame-invariance theorem. The geometric
+`a4dDressedLink_eq_iff_rightAction` now specializes this iff using the existing
+Lorentz determinant-unit lemmas; the complete proof is no longer duplicated
+inside the geometry module. The specialization retains its existing hypotheses.
+
+Lean source commit `ea1a5bb6fda1c9c349b40c0333109ae75ca3c6bc` pins
+`FiniteGramTangent.lean` SHA-256
+`c4240ee271a4cbe2f67afc949ac7d21ad82099a870def67798c7ba21db980a2b` and
+`A4DStarFiniteLorentzQuotient.lean` SHA-256
+`4946ed415186ee07fb2432985b384819377a5b7ed7aee4357aaa4562ef134141`. The
+algebra module built at **2,946/2,946**, the geometry module at **3,215/3,215**,
+and final public `D0.All` at **4,581/4,581**. GitHub `lean-build` and `guards`
+both pass for this Lean commit.
+
+The eight current inventories use Lean-source digest
+`a5b07327c5f42c238b5d006a26d6c16c998213102758819cafa9e6f7d28d5f08` and were
+captured with `worktree_dirty=false`:
+
+| Compiled inventory | Resolved | SHA-256 |
+|---|---:|---|
+| `nonvacuum_brinkmann_stencil_declarations_2026-10-26_dressed_equivalence.json` | 15/15 | `6f69c12a49f6f5eb16e815f877e5170f625f16877a4c83856a55c9aa0b851c0c` |
+| `car_hodge_diagonal_transpose_current_declaration_inventory_2026-10-26_dressed_equivalence.json` | 36/36 | `568d69511866395366a51f92811a4c6cf7fdeeb0c6c5f163e55305b4433b41cf` |
+| `finite_matrix_partial_trace_current_declarations_2026-10-26_dressed_equivalence.json` | 9/9 | `6e6d71c53b8c5c50eec989b9d71ac1ea86f742e15678fec457bd04815e1ca1af` |
+| `archive_shift_topology_current_declarations_2026-10-26_dressed_equivalence.json` | 26/26 | `69fb766f4fad89c3a64f95be0f3807ac75c41898c8760a6d13499c4dfba4879c` |
+| `source_port_preparation_tensor_inventory_2026-10-26_dressed_equivalence.json` | 73/73 | `fb8a9ca0d2f5064897f1c805247edadf362e4086f7d69a74eb12e8956eb36390` |
+| `flat_tensor_shared_api_declarations_2026-10-26_dressed_equivalence.json` | 4/4 | `4ec7e5b60637e2525d09e66d372cc038e4686d73c46e79e6149097dbd40010b7` |
+| `proper_role_lorentz_orbit_declarations_2026-10-26_dressed_equivalence.json` | 5/5 | `befb4bcc7effd6c6e80ac65e59c5dbefe81c5a523b8c5751b5d071b7e677b5e6` |
+| `finite_gram_orbit_shared_api_declarations_2026-10-26_dressed_equivalence.json` | 17/17 | `1530db68589fb073883c56d12d2973d3f138ad953ba5ed98e42722670b0e7a2b` |
+
+The updated cold-start receipt is
+`proof_architecture_cold_start_summary_2026-10-26_dressed_equivalence.json`,
+SHA-256 `0afc560d0849b67f3d7b8312c8e0ae2d6eed6ee6f65794f4d8ac42ef3ecb9ba5`.
+It finds every source in **22/22** cases, passes the **23-case** benchmark,
+checks **133** required references and passes the source-change versus
+unrelated-prose impact control. This is a typed finite-matrix equivalence and
+its Lorentz adapter; it creates no assembly acceptance edge and leaves the
+selected physical action, source transport and C0 disposition open.
