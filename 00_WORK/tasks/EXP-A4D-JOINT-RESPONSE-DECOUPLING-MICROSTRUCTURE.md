@@ -12856,3 +12856,101 @@ formula; no code/mathchangeorreplay. Removing7bnrestoresincoming
 04bc6b2fprimaryBYTEEXACT SHA2565b089257ebccab1f24ea931ff6ae8cb2438b0c2ab8f80830cf771ce1b06f06fb;
 incomingbrief843961bytes isexactprefix. Onlythetwoownedpathschanged.
 Thesearelocalstructural/sourcechecks,notremoteCI/physicalGRacceptance.
+
+### 26 October2026 — complete original flat SELECT, native two-App return and source interface
+
+Same#334/constitutive/native-programme-v1; basebc1cf8b7. Phase:native
+realization. Existingprimary7bo549--555 consumes7bn's named next
+label/Jordan/outer-reflection application; no new scientific task/slot,
+acceptedGRclaim,action,selector or admission rule. Primary:
+02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md.
+
+Exactstatement:UNCHANGEDnu3/5originalflatfull128utility has a finite
+ordinary-WORK G/CX/SourceI approximation with all original phases,
+Jordanorder(0,2,3,1),all unpreparedcolumns and full33-scene completion.
+Exactfalse-labelidentity549; fourhighbits SELECT and lowduplicate
+spectator; all5Walsh and7middle controls. Exactinverse550 usesowned
+rawleafinverse,notimperfectreflectionreusedasitsadjoint. Thefour
+positivepowerparameters areh1268877112054,kR11811681778,kZ55092493150,
+kM386084894451. Integeroutwarddyadic/isqrtcertificate551 proves
+combinedoperatorerror<1e-10; actualupperabout3.6532e-11. No per-angle
+1e-12claim. Real*normisometry544 retainsSpin4/oppositesectors/oldRIGHT.
+
+Carrier:CAR16 onordinaryWORK,SEPARATEprotectedSpin4,App128 percall,
+sourcephysicalP0; trueoldRIGHT128untouched. Onecallflag0labels1..5c6,
+DATArolewires(10,9,8,7),Spin11,12; secondfreshAppflag13labels14..18c19,
+oldplaceholder20. App1ACTIVEuntildeferredterminalreading; this isnot
+permissiontoaddresssealedfirst-Apparchive. All128^2finehistoriesremain.
+Bothforward/inverseApp2flagrotationsparkedthroughphysicalP,allrawG
+physicalP andsamecomplementidentityon31scenemodes. Thiscosts12extraCX
+forcall2vs1. No rawinverseassumedvalidonfull33fromanunparkedGwork.
+
+ActualrawstageN:call1=1173577565332560;call2=1173577565332572;
+two=2347155130665132. TotalsG449028838057076,CX28448,
+SourceI1898126292579608. Theseareliteralfiniteexpansioncounts,not
+materializedhugetuples/hardwareruntime/clockefficiency. Conservative
+Word constructors areNOTnewnativeASTprimitives. Uniqueleafvalidation
+plusstructuralinductionprovesliteralexpansionmembershipwithEXPLICIT
+Nbound;26/44leavesforone/two. AllSourceI(0,11,12);noSpinG/CX/oldaction.
+
+CompleteKraus552 usesROW R_a=Qhat_(0,a),sumR_aR_adag=I;
+T=R_data0(128kMtheta)-I. NativeBhatmaybenonHermitian; two-callcold
+C=Bhat²,CdagC=(Bhatdag)²Bhat²>=p^12I. ActualBook553
+J2=-4q_oldTr16log((1-zeta)I+zetaCdagC),q_old128; bothsourcelegsDC
+retained. OneSHAREDhelper/rankr8192ononeandtwoAppblankcut. Active
+one/twodimensions1048576/134217728;physical33twodimension2214592512.
+Allotherclock/recordmodesretainedwhenpriceformed;rawNcountsnotclosing.
+
+OriginalrealacceptedmapsonCARcode(0,12):K27K19=alphaP0,K91K19=alphaP1,
+alpha81p³/16000>1/1000. Two-callcolumnerror<=2epsilon impliesnormalized
+GOODinstrumenttraceerror<1/2000000,forarbitraryexternalcomplex
+CODE/helper/oldRIGHTinputs. No unknown-complexDATAencoder/postselect
+primitive/freeFAILdiscarding. FixedutilitySOURCE548consumption555:
+Bookvalueerrors<=2r*zeta*epsilon/a (one),4r*zeta*epsilon/a(two);
+cut-first-sourceerrors<=8r*zeta*epsilon*||DV||/a²(one),16r*(...)(two).
+Valueboundsabout5.709e-13/1.142e-12 areNOTnormalizedfull42native1e-22
+sourcegate. Actualgate-fieldjets/independentnormals/fullH/Rnotbounded.
+N*epsilon notsmallclaim;2.35e15clockcannotbedropped.
+
+Preciseparentsubstitution:supplytheflatnativefull128utility/return
+premiseafter544;553--555typeitsactualcut/sourceandreadoutconsumer.
+Remainingapplication:openproper-Lorentzfield/preparation/writermap,
+actualwholecompiledchronologicalH+J+R/work/clock/Info/closingand
+independentupstreamEulerwithsameinitial/futuretests/cut,gain/norm.
+Aflatapproximation/deferredinstrumentdoesnotselectphysicalstationarity,
+fulfiltheunpaddedfull42budgetorcloserefinedGR. GR_closed=false;
+positive_gr/raw216open. OriginalN1roots/Lean/oldclocknotreplayed.
+
+Frozen7boINCLUDINGnext-headingseparator:49410bytes,
+SHA256e360f3fa5d94593e41d6c32dc3f67b2548cbeae5dcfec094a596a911035398d9.
+Embeddedcodeexcludingclosingnewline:33418bytes,
+SHA2561255c4d7a7804b2b7726b94d9cc3ec3a86ee4985f7a6437a47caccc938e2a31f.
+Inputs:neblob9a32a3fa2e594c087d24b9d5dec497c4c5e03f44;
+originalsourceconstructoree8de4635d24c668949ac9a0186616ab7d59f2ed.
+Source-onlyreview/finalfrozenexecution/affectedstructuralintegrationfollow.
+
+Finalsource-onlyACCEPT49410/e360f3fa5d94593e41d6c32dc3f67b2548cbeae5dcfec094a596a911035398d9:
+native_source_application,stationary_root_transfer,price_geometry_bridge.
+AllreadtheFULLfrozenproof/codeandfinalparked-forward-G33completion;
+nowrites/mathreplays. Embedded33418/1255c4d7 unchanged.
+
+FinalcodeEXTRACTEDfromactualprimaryfence,exacthashverified,executed
+exit0 withordinaryassertionsON:PASS23newliteralFourier/phase/H/inverse/
+supportfixtures;exactdyadicangle/chordbound551;new8signedJuliablock
+identities;completeROW/Kraus/readerdiagnostics;finalone/twoinventory
+and44uniqueleaves;allrawGphysicalP,SourceI(0,11,12),IoldRIGHT.
+Python3.9.6/SymPy1.14.0/NumPy2.0.2/mpmath1.3.0. Numericcontractions
+useexplicitNumPy einsum,notBLAS;no warnings,scientifictargetorbound
+weakened. Floatdiagnosticsremainseparatefromtheintegercertificate.
+Nohugeword/fieldroot/Lean/oldGRorclockreplay.
+
+AffectedfinalintegrationPASS:workvalidation,agentprotocol,gravity
+assembly(validtrue;54active/98results/5discharged/22obligations;
+scientific_promotionfalse),repository(889claims/31assumptions/58aliases/
+183formal_support/918Leanclosure;warnings0),whitespace/provenance.
+Removing7bo restoresincomingbc1cf8b7primaryBYTEEXACT SHA256
+1dfe73808bb3ea7e1656840f4e69d146e4ac366131009446d1d7d2bde7a00a1c;
+incomingbrief849309bytes isexactprefix SHA256
+961dd8d1a208b59fd3bc337c6a7e7b777885fcfae163fa7930c8768915d3cf29.
+Onlytwoownedpathschanged. Thesearelocalproof/structuralchecks,
+notremoteCI/physicalGRacceptance;parent#334remainsDraftandunmerged.

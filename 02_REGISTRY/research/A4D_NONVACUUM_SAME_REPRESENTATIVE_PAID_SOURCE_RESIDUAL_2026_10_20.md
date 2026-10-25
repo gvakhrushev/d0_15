@@ -19538,6 +19538,1085 @@ print('exact inequality upper*2000 < 2^256:',eps[1]*2000<D)
 print('PASS protected-Spin obstruction; nonintegral original beta; SAME originalJulia factorization; literal native code/inverse inventory; full-column symbolic routing; interval precision; ordinary-work encodedG/reader; realification and source-blank statistics')
 ```
 
+## 7bo. Compile the complete ORIGINAL flat SELECT and its two-call Book return on ordinary WORK
+
+26 October2026. SAME #334 / constitutive / native-programme-v1, inputbc1cf8b7.
+Phase: native realization. Parent substitution:7bn's next label-controlled
+SELECT/Jordan/outer-reflection premise. We give one finite native word for the
+UNCHANGED original flat nu=3/5 full128 utility, an all-column error certificate,
+and the actual complete return/source interface of two such calls. The input
+is the ordinary-WORK CAR16 with SEPARATE protected phase Spin4 of544, not the
+excluded identification of CAR with protected Spin in543. No action, selector,
+postselection primitive, compulsory preparation or physical admission rule is
+added. Addressed ordinary WORK and the selective source-I profile remain the
+inherited7t physical interface. This fixed flat utility does not yet supply
+an open proper-Lorentz field writer or a selected Einstein source.
+
+Inputs:7bn544--548; original signed Julia/full128 factorization
+[paid-writer13.1](A4D_PAID_MOMENT_FIELD_WRITER_2026_10_21.md#131-keep-the-actual-row-of-q-including-every-unprepared-column);
+[original uniform source constructor](sources/d0_book_uniform_source_2026-10-21/check_uniform_book_source.py),
+Gitblobee8de4635d24c668949ac9a0186616ab7d59f2ed; and7t's
+[literal domain](sources/d0_native_execution_domain_2026-10-24/native_execution.py),
+Gitblob9a32a3fa2e594c087d24b9d5dec497c4c5e03f44. The code below is a
+CONSERVATIVE finite-word constructor and checker, not a new native AST schema.
+Only its literal expansion contains native Gate objects. All clocks below
+count raw G/CX/SourceI stages; terminal recording, closing, stopping and their
+prices are not declared free or silently included in those counts.
+
+### An exact false-label identity, including the physical port as a control
+
+Put p=phi^-1, a=sqrt(p), theta=atan2(p,a), G=exp(theta J),
+J=[[0,-1],[1,0]]. SourceI supplies S=diag(1,i) in the represented sense544;
+Z=S^2 and ZGZ=G^-1. For K distinct control wires, pattern xi, target t,
+q=2^K and positive integer k, set C_s=product_(j in s) CX(j,t). Then
+
+    R_(xi,t)(k)=product_(s subset controls) C_s G_t^((-1)^(xi.s) k) C_s
+               =exp(q k theta Pi_xi tensor J_t).                 (549)
+
+Conjugated generators commute, and the Boolean Fourier sum is q at xi and
+zero elsewhere. Thus EVERY false label is EXACT identity, independently of
+angle accuracy. Negative powers in this NEW word are literally Z G^k Z,
+not a negative-time primitive. Park the target on physical P once around the
+whole Fourier block: SWAP(P,t), remapped body, SWAP(P,t). If P was itself a
+logical control, remap that control to t and keep its same bit in xi. This is
+an address permutation, not a frozen value or a dropped unknown input. A
+Fourier block has qk G, Kq+6 CX when t differs from P (Kq when equal), and
+4n_minus SourceI, where n_minus=0 for xi=0 and q/2 otherwise. All G in these
+parked blocks are on physical P. The exact reverse of an ALREADY specified
+raw word instead reverses all leaves and uses the owned leaf inverse, with
+all repetitions charged; it is not shortened by cancelling phases.
+
+Use Hhat=G^h Z, an EXACT involution at every integer h. The exact two-wire
+CZ is the chronological word S_a;S_b;CX(a,b);S_b^-1;CX(a,b), with phases
+implemented by544. For role r, the original creator order is (0,2,3,1).
+Let D_r=S_c^t product_(j preceding r) CZ(c,mode_j), where i^t is the
+actual original phase. Let E=CX(c,mode_r). The two factors are
+
+    planehat=E R_((xi,0),c)(k_R) E,
+    Xhat_xi=Hhat_c R_((xi,1),mode_r)(k_Z) Hhat_c,
+    Jhat_xi=Xhat_xi D_r planehat D_r^dagger,
+    J_r=X_c D_r R_(00,11)(asin(3/5)) D_r^dagger.                  (550)
+
+The chronological word is D_r^dagger;planehat;D_r;Xhat_xi. D_r need not be
+controlled: it cancels EXACTLY with its inverse on every false label.
+Xhat is also exactly identity there because Hhat^2=I. On the true label,
+32k_Z theta approximates pi and 32k_R theta approximates asin(3/5).
+Do not treat the imperfect pi block as an exact reflection when reversing
+an adjoint tuple: the ACTUAL native inverse is used.
+
+Original labels are j=8r+2u+d, r,u in0..3, duplicate d in0..1. The FOUR
+high bits select xi=4r+u; the low duplicate bit is an exact SELECT spectator.
+The phase is (i,i,-1,-i)_r for u0,1 and1 for u2,3. Use the adjoint for
+u1,3 and the exact minus sign for u2,3, supplied by Z on the tuple high
+bit (the THIRD high label bit). These are all original phases and Jordan
+signs. The16 controlled blocks have disjoint label support, so their norm
+error is their MAXIMUM; it is not16 or32 times the block error.
+
+The original Q=(H_32 tensor I) SELECT (H_32 tensor I) uses ALL FIVE Walsh
+bits. With Qhat using Hhat on those bits, the complete target and compiler are
+
+    U=Q^dagger G_f^dagger Mref G_f Q,
+    Uhat=Qhat^dagger G_f^dagger Mhat G_f Qhat,
+    Mhat=exp(128 k_M theta Pi_(labels=0,c=0,f=1) tensor J_data0),
+    epsilon=24e_H+2e_Z+2e_R+e_M < 1e-10,
+    ||Uhat-U||_op <= epsilon.                                    (551)
+
+Here data0 is an ordinary computational CAR bit, with NO Jordan sign. At
+angle pi its rotation is -I on that bit, so it is exactly the desired
+selective minus sign tensored with I_DATA, with no fitted global phase.
+Use h=1268877112054, k_R=11811681778, k_Z=55092493150 and k_M=386084894451.
+e_H,e_R,e_Z,e_M are the EXACT dyadic chord upper bounds in the checker for
+h theta,32k_R theta,32k_Z theta,128k_M theta against their stated targets.
+The checker uses outward integer arithmetic and isqrt at denominator2^256;
+continued fractions/mpmath only propose the integers. Its combined upper
+bound is about3.6532e-11. We claim the proved COMBINED bound in551, not a
+separate1e-12 bound for every angle. In particular R/Z/M have larger errors.
+The tensor Walsh bound is5e_H on each side of SELECT, the Julia bound is
+2e_H+e_Z+e_R, and the final Q/Qdagger/middle triangle gives551. The represented
+norm isometry544 makes this the same bound with the entire phase helper,
+its opposite complex sectors, arbitrary oldRIGHT and every unprepared column.
+
+### The finite clock, exact wire layout and all33 physical scene modes
+
+One call: P=f=0, labels1..5 in MSB order, c=6, CAR mode wires (10,9,8,7)
+for roles0..3, Spin=(11,12), oldRIGHT placeholder13. The low duplicate bit is
+label5; the sign wire is label3. Seven App inputs0..6 are supplied blanks;
+CAR, helper and oldRIGHT are arbitrary. The placeholder old dimension2 is
+only for the syntactic layout: tensor the identity to the true oldRIGHT128.
+No G/CX touches either Spin wire; SourceI always uses exactly(0,11,12).
+
+Two calls: keep the same P/CAR/Spin, take fresh App2 flag13, labels14..18,
+c=19, and external immutable oldRIGHT placeholder20. App1 is ACTIVE and
+unmeasured until the terminal readout of both Apps. Parking the physical
+P=App1 flag during call2 is allowed on this declared layout and restores it
+on ALL columns at completed macros. This does not authorize addressing an
+already sealed first-App archive. There is no reset or outcome feedback;
+all128^2 fine histories, including failure histories, remain. Equality of
+this deferred terminal instrument does not identify its price/timing with
+an earlier programme requiring an intermediate physical report.
+
+The forward G on App2's flag is ALSO parked on physical P; its actual inverse
+is reversed from that parked word. Every raw G in the FINAL complete schedule
+is therefore on physical P. This matters beyond the two-port model: an
+unparked ordinary G on flag13 would act outside the active source plane while
+its port-routed inverse would be identity there. That asymmetric extension
+would not prove identity on the other31 scene modes. With the present routing,
+physical port gates extend by identity on those31 modes, false Fourier
+branches cancel in pairs, and each completed parked/phase/Julia macro has
+identity complementary block. The final physical33 target is identity outside
+P_active plus the represented active utility. Its error551 is global on that
+completion. All31 modes remain in the actual thermal trace and its variations.
+
+| Actual raw component | G | CX | SourceI | N |
+|---|---:|---:|---:|---:|
+| SELECT | 74859005148864 | 6598 | 149718010302962 | 224577015458424 |
+| Q | 87547776269404 | 6658 | 149718010302982 | 237265786579044 |
+| Actual Q inverse | 87547776269404 | 6658 | 799345135986562 | 886892912262624 |
+| Middle Fourier block | 49418866489728 | 902 | 256 | 49418866490886 |
+| Call1 | 224514419028538 | 14218 | 949063146289804 | 1173577565332560 |
+| Call2, fresh App | 224514419028538 | 14230 | 949063146289804 | 1173577565332572 |
+| Two calls | 449028838057076 | 28448 | 1898126292579608 | 2347155130665132 |
+
+Call2 costs12 extra CX relative to call1, for its forward AND inverse flag
+routing. These are finite positive integers, not feasible hardware-runtime
+claims or an efficient synthesis. No macro is charged one clock tick. The
+constructor validates its finite syntax and26/44 unique raw leaves for
+one/two calls through the owned validator; induction then proves its literal
+finite expansion belongs to the domain with the EXPLICIT stage budget N.
+It does not claim that ne parsed a compressed AST or that a literal tuple of
+2.35e15 gates was materialized/executed. The bounded literal fixtures separately
+check the constructor against owned matrices and the exact owned inverse.
+A smaller fixed clock cap would exclude this particular implementation.
+
+The phase Spin4 is shared ONCE. With true old dimension q_old=128, active
+one-call dimension is4*128*16*128=1048576, active two-call dimension is
+4*128^2*16*128=134217728, and replacing the physical source plane2 by33 gives
+two-call full dimension2214592512. Clock sites and record/storage modes are
+additional factors when the full chronological Hodge/price is formed. The
+App-blank Book cut has rank r=4*16*q_old=8192 for BOTH one and two calls.
+There is no second copy of the helper and no factor128 from an input App
+that is fixed0. This is not permission to remove its unprepared columns
+from U or its modes from the heat.
+
+### Complete native Kraus rows, non-Hermitian cold return and genuine Book source
+
+Let a_row range over64 label/coefficient states, and set R_a=<0_A|Qhat|a_A>,
+v_0=p,v_1=sqrt(p), T=R_data0(128k_M theta)-I16. Then EXACTLY
+
+    sum_a R_a R_a^dagger=I16,
+    Uhat_(ab,cd)=delta_ac delta_bd I+v_b v_d R_a^dagger T R_c,
+    Khat_(a,0)=delta_a0 I+p^2 R_a^dagger T R_0,
+    Khat_(a,1)=sqrt(p) p R_a^dagger T R_0,
+    sum_(a,b) Khat_(a,b)^dagger Khat_(a,b)=I16.                   (552)
+
+This is the ROW of Qhat, not its column. Indeed L_(a,b)=v_b R_a^dagger
+is an isometry and Uhat=I+L T L^dagger; T+Tdagger+Tdagger T=0 proves
+completeness. There is no assumption that sum R_a^dagger R_a=I, and T is
+not replaced by Tdagger. Unlike the ideal scalar beta I with
+beta=1-9p^2/320, Bhat=Khat_(0,0) need not be Hermitian. Each call has
+||Bhat||<=1 and sigma_min(Bhat)>=1-2p^2=p^3. Two call blank returns are
+C=Bhat_2 Bhat_1=Bhat^2 for these identical semantic blocks. In particular
+Cdagger C=(Bhatdagger)^2 Bhat^2, NOT Bhat^4 without a Hermiticity proof;
+Cdagger C>=p^12 I.
+
+For zeta=2^-20, a0=1-zeta, the ACTUAL raw two-call cut feedback and its
+first source are
+
+    J2=-4q_old Tr16 log(a0 I+zeta Cdagger C),
+    DJ2=-8q_old zeta ReTr16[(a0 I+zeta Cdagger C)^-1 Cdagger DC],
+    DC=(DBhat_2)Bhat_1+Bhat_2(DBhat_1).                            (553)
+
+Equivalently the full physical trace gives -2zeta ReTr on the actual
+rank-r cut; the displayed factor4 counts Spin exactly once. Both call
+source legs remain. Fixed word coefficients do not manufacture DB/dy:
+the actual field/preparation/cut map must provide it. The cut fixes both
+Apps to0 and leaves DATA/helper/oldRIGHT free; it is not a GOOD-only cut.
+The actual heat is still the chronological heat of ALL expanded gates and
+33 scene modes, not a function of C alone. Nor does547 multiply the entire
+H+J+R price by4. Native whole Info/work/clock and independent input equations
+are retained obligations.
+
+The original REAL target GOOD maps on C_I=(CAR masks0,12) are
+K27 K19=alpha P0 and K91 K19=alpha P1, alpha=81p^3/16000. The correct placement
+makes their represented target alpha P_b tensor I_helper. Hence the following
+instrument bound holds for arbitrary external-complex CODE/helper/oldRIGHT
+inputs; it needs no forbidden unknown-complex-data encoder. The two-call
+operator error is at most2epsilon, including all unprepared App columns.
+Compressing just those TWO terminal accepted histories gives a joint column
+error at most2epsilon. With eta=4alpha epsilon+4epsilon^2,
+
+    ||sigmahat_GOOD-sigma_GOOD||_1<=eta,
+    |Prhat(GOOD)-alpha^2|<=eta,
+    D_trace(rhohat_GOOD,rho_GOOD)<=eta/(alpha^2-eta)<1/2000000.     (554)
+
+The bound includes the classical outcome register and untouched ancillas.
+The exact checker uses p>3/5, hence alpha>2187/2000000>1/1000; its conservative
+normalized bound is about1.462e-7. This removes the protected-Spin relative
+readout obstruction543 on the DIFFERENT ordinary-WORK carrier. It does not
+turn normalization into a free physical step, delete any failure history,
+or validate the full represented unknown-complex FAIL channel as an encoder.
+The reported numerical small-matrix diagnostics are not the error certificate.
+
+Finally548 applies to this FIXED utility on a supplied smooth rank-r cut V_y.
+Writing J1/J2 for full raw-cut Book values and comparing the compiled utility
+with the original target at the same V_y gives
+
+    |Delta J1|<=2r zeta epsilon/a0,
+    |Delta J2|<=4r zeta epsilon/a0,
+    |D Delta J1[v]|<=8r zeta epsilon ||DV_y[v]||/a0^2,
+    |D Delta J2[v]|<=16r zeta epsilon ||DV_y[v]||/a0^2.             (555)
+
+At r8192 the value upper bounds are about5.709e-13 and1.142e-12. These are
+bounds in the displayed raw trace convention, not gain-normalized full42
+Book03 residuals, and they do not establish the unpadded1e-22 physical gate.
+They control the moving SOURCE/cut with FIXED utility only. Endpoint551 gives
+no actual gate-field derivative, smooth integer-word selector, independent
+apparatus normal or full H/R difference. In particular N*epsilon is not
+claimed small, and a two-call endpoint estimate cannot erase2.35e15 raw stages.
+
+### Parent substitution, exact reproduction and remaining physical application
+
+The parent7bn request for a full flat label-controlled original utility is
+now supplied by549--552 with a finite explicit native expansion, all original
+signs/phases, a strict global error, one shared helper, all fine histories and
+a true two-call cold return.553--555 give its actual cut/source interface and
+an instrument-level consumer. The old protected-Spin construction is not
+revived; this consumes its proved obstruction by using the already admitted
+ordinary-WORK carrier. Existing finite GR roots are not re-searched.
+
+The next parent application is the ACTUAL open-field writer/return-source
+map and complete compiled chronological H+J+R/work/clock under the same
+preparation/future tests/cut, including independent upstream variations.
+It must either transport to the owned positive GR/source interface with its
+actual gain/norm, or exhibit the concrete incompatible/non-small term and
+change only that scoped route. Neither flat operator approximation,555,
+syntax membership, a known blank nor a deferred-reader equality selects a
+physical stationarity law or closes refinement. GR_closed=false;
+positive_gr/raw216 remain open.
+
+Run the following SINGLE fenced program from the repository root with the
+pinned native-execution import available. It contains the complete finite
+constructor, exact angle/error certificate, new small semantic/owned-leaf
+fixtures and the final layouts/inventory. No large matrix, huge gate tuple,
+old GR certificate, old Lean module or corpus replay is requested. The raw
+constructor's inverse is the owned raw inverse leaf-by-leaf, including its
+true multiplicities. mpmath/float diagnostics never decide551 or membership.
+
+```python
+"""Conservative finite-word constructors, not additional native primitives.
+
+Only iter_raw()/execution() produce the owned G/CX/SourceI vocabulary.  Park
+permutes ordinary wire addresses and always leaves SourceI on its physical
+port.  Inv reverses and expands EACH RAW leaf exactly as the owned compiler;
+it never silently shortens a previously specified word.  No test runs on
+import.  This scratch module does not establish physical addressability.
+"""
+import sys
+sys.dont_write_bytecode = True
+from dataclasses import dataclass
+from pathlib import Path
+
+_OWNER = Path('02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24').resolve()
+if str(_OWNER) not in sys.path:
+    sys.path.insert(0, str(_OWNER))
+import native_execution as ne
+
+
+@dataclass(frozen=True)
+class Word:
+    kind: str
+    args: tuple = ()
+
+
+@dataclass(frozen=True)
+class Counts:
+    g: int = 0
+    cx: int = 0
+    source_i: int = 0
+    g_port: int = 0
+
+    @property
+    def g_off(self):
+        return self.g - self.g_port
+
+    @property
+    def n(self):
+        return self.g + self.cx + self.source_i
+
+    def __add__(self, other):
+        return Counts(self.g + other.g, self.cx + other.cx,
+                      self.source_i + other.source_i,
+                      self.g_port + other.g_port)
+
+    def scale(self, n):
+        return Counts(self.g*n, self.cx*n, self.source_i*n, self.g_port*n)
+
+    def as_dict(self):
+        return {'G': self.g, 'CX': self.cx, 'SourceI': self.source_i,
+                'N': self.n, 'g_port': self.g_port, 'g_off': self.g_off}
+
+    def __getitem__(self, key):
+        return self.as_dict()[key]
+
+
+class Compiler:
+    def __init__(self, qubits, physical_port, spin, old=()):
+        self.qubits = self._nat(qubits, 'qubits')
+        self.physical_port = physical_port
+        self.spin = tuple(spin)
+        self.old = tuple(old)
+        # This validates the frame without adding an arbitrary matrix capability.
+        self._empty = ne.Execution(qubits, (), self.old, (), ne.G_CX_SOURCE_I,
+                                   physical_port, self.spin, ())
+        ne.validate_execution(self._empty, max_qubits=qubits, max_expanded_stages=0)
+
+    @staticmethod
+    def _nat(n, name):
+        if type(n) is not int or n < 0:
+            raise ne.DomainError(name + ' must be a nonnegative integer')
+        return n
+
+    def _work(self, q):
+        self._nat(q, 'wire')
+        if q >= self.qubits or q in self.spin or q in self.old:
+            raise ne.DomainError('ordinary WORK wire is out of range/protected')
+        return q
+
+    @staticmethod
+    def _word(w):
+        if type(w) is not Word:
+            raise ne.DomainError('expected a finite Word constructor')
+        return w
+
+    def _check_tree(self, word):
+        """Reject malformed constructor objects, including cycles, without expansion."""
+        stack = [(self._word(word), False)]
+        active, done = set(), set()
+        while stack:
+            w, closing = stack.pop()
+            ident = id(w)
+            if closing:
+                active.remove(ident); done.add(ident)
+                continue
+            if ident in done:
+                continue
+            if ident in active:
+                raise ne.DomainError('cyclic Word object')
+            if type(w) is not Word or type(w.kind) is not str or type(w.args) is not tuple:
+                raise ne.DomainError('malformed Word constructor')
+            k, args = w.kind, w.args
+            children = ()
+            if k == 'seq':
+                children = args
+            elif k == 'repeat' and len(args) == 2:
+                children = (args[0],); self._nat(args[1], 'repeat count')
+            elif k == 'g' and len(args) == 2:
+                self._work(args[0])
+                if type(args[1]) is not int:
+                    raise ne.DomainError('signed G power must be an integer')
+            elif k == 'cx' and len(args) == 2:
+                self._work(args[0]); self._work(args[1])
+                if args[0] == args[1]:
+                    raise ne.DomainError('CX needs distinct wires')
+            elif k == 'si' and len(args) == 1:
+                self._nat(args[0], 'SourceI count')
+            elif k == 'phase' and len(args) == 2:
+                self._work(args[0])
+                if type(args[1]) is not int or not 0 <= args[1] < 4:
+                    raise ne.DomainError('phase constructor is not canonical')
+            elif k == 'park' and len(args) == 2:
+                self._work(args[0]); children = (args[1],)
+            elif k == 'inv' and len(args) == 1:
+                children = args
+            else:
+                raise ne.DomainError('unknown or malformed Word constructor')
+            for child in children:
+                self._word(child)
+            active.add(ident); stack.append((w, True))
+            stack.extend((child, False) for child in reversed(children))
+
+    def seq(self, *words):
+        return Word('seq', tuple(self._word(w) for w in words))
+
+    def repeat(self, word, n):
+        return Word('repeat', (self._word(word), self._nat(n, 'repeat count')))
+
+    def g(self, q, k=1):
+        self._work(q)
+        if type(k) is not int:
+            raise ne.DomainError('signed G power must be an integer')
+        return Word('g', (q, k))
+
+    def cx(self, a, b):
+        self._work(a); self._work(b)
+        if a == b:
+            raise ne.DomainError('CX needs two distinct wires')
+        return Word('cx', (a, b))
+
+    def source_i(self, k=1):
+        return Word('si', (self._nat(k, 'SourceI count'),))
+
+    def phase(self, q, t=1):
+        self._work(q)
+        if type(t) is not int:
+            raise ne.DomainError('phase exponent must be an integer')
+        # This chooses a NEW finite implementation of S^t.  inv() never uses
+        # this reduction on an already specified raw word.
+        return Word('phase', (q, t % 4))
+
+    def park(self, target, body):
+        self._work(target)
+        return Word('park', (target, self._word(body)))
+
+    def inv(self, word):
+        return Word('inv', (self._word(word),))
+
+    def h_tilde(self, q, h):
+        self._nat(h, 'H Golden exponent')
+        # Chronology Z;G^h gives G^h Z, an EXACT involution at every h.
+        return self.park(q, self.seq(self.phase(q, 2), self.g(q, h)))
+
+    def cz(self, a, b):
+        self._work(a); self._work(b)
+        if a == b:
+            raise ne.DomainError('CZ needs two distinct wires')
+        return self.seq(self.phase(a), self.phase(b), self.cx(a, b),
+                        self.phase(b, -1), self.cx(a, b))
+
+    def _pattern(self, controls, xi, target):
+        controls = tuple(controls)
+        for q in controls:
+            self._work(q)
+        self._work(target)
+        if len(set(controls)) != len(controls) or target in controls:
+            raise ne.DomainError('controls must be distinct and exclude target')
+        if type(xi) is int:
+            if not 0 <= xi < (1 << len(controls)):
+                raise ne.DomainError('pattern integer outside its finite cube')
+            xi = tuple((xi >> (len(controls)-1-j)) & 1
+                       for j in range(len(controls)))
+        else:
+            xi = tuple(xi)
+        if len(xi) != len(controls) or any(type(x) is not int or x not in (0, 1) for x in xi):
+            raise ne.DomainError('pattern must be a finite 0/1 tuple')
+        return controls, xi
+
+    def fourier(self, controls, xi, target, k, park=True):
+        controls, xi = self._pattern(controls, xi, target)
+        self._nat(k, 'Fourier Golden exponent')
+        cells = []
+        K = len(controls)
+        for subset in range(1 << K):
+            included = tuple(j for j in range(K)
+                             if (subset >> (K-1-j)) & 1)
+            cs = self.seq(*(self.cx(controls[j], target) for j in included))
+            sign = -1 if sum(xi[j] for j in included) % 2 else 1
+            cells.append(self.seq(cs, self.g(target, sign*k), cs))
+        body = self.seq(*cells)
+        return self.park(target, body) if park else body
+
+    def mcz(self, controls, xi, target, k):
+        # Requested pi is a TARGET accuracy choice; this is literally the same
+        # finite Fourier word, not an exact selective-phase primitive.
+        return self.fourier(controls, xi, target, k)
+
+    def julia_label(self, labels, xi, coefficient, mode, prior_modes,
+                    phase_exponent, k_rotation, h, k_z, adjoint=False):
+        labels, bits = self._pattern(labels, xi, coefficient)
+        self._work(mode)
+        if mode in labels or mode == coefficient:
+            raise ne.DomainError('Julia mode must be separate from label/coefficient')
+        prior = tuple(prior_modes)
+        if len(set(prior)) != len(prior) or any(q in labels or q in (mode, coefficient) for q in prior):
+            raise ne.DomainError('Jordan prior modes have overlapping roles')
+        for q in prior:
+            self._work(q)
+        D = self.seq(self.phase(coefficient, phase_exponent),
+                     *(self.cz(coefficient, q) for q in prior))
+        E = self.cx(coefficient, mode)
+        plane = self.seq(E, self.fourier(labels+(mode,), bits+(0,),
+                                         coefficient, k_rotation), E)
+        H = self.h_tilde(coefficient, h)
+        xhat = self.seq(H, self.mcz(labels+(coefficient,), bits+(1,), mode, k_z), H)
+        block = self.seq(self.inv(D), plane, D, xhat)
+        return self.inv(block) if adjoint else block
+
+    def select(self, blocks, sign_wire):
+        self._work(sign_wire)
+        return self.seq(*tuple(blocks), self.phase(sign_wire, 2))
+
+    def walsh(self, labels, h):
+        return self.seq(*(self.h_tilde(q, h) for q in tuple(labels)))
+
+    def q_word(self, labels, selected, h):
+        H = self.walsh(labels, h)
+        return self.seq(H, selected, H)
+
+    def full_reflection(self, labels, coefficient, flag, target, selected,
+                        h, k_middle):
+        # U chronological Q;Gflag;Mref;Gflag^-1;Q^-1.  All values remain
+        # ordinary words.  The exact supplied target uses labels=0,c=0,flag=1.
+        labels = tuple(labels)
+        Q = self.q_word(labels, selected, h)
+        Gf = self.park(flag, self.g(flag))
+        M = self.mcz(labels+(coefficient, flag), (0,)*len(labels)+(0, 1),
+                     target, k_middle)
+        return self.seq(Q, Gf, M, self.inv(Gf), self.inv(Q))
+
+    def _swap(self, a, b):
+        return (ne.Gate('CX', (a, b)), ne.Gate('CX', (b, a)), ne.Gate('CX', (a, b)))
+
+    def _source(self):
+        return ne.Gate('SourceI', (self.physical_port, *self.spin))
+
+    def _inverse_leaf(self, gate):
+        if gate.op == 'CX':
+            return (gate,)
+        S = self._source()
+        if gate.op == 'SourceI':
+            return (S, S, S)
+        q = gate.wires[0]
+        routing = () if q == self.physical_port else self._swap(q, self.physical_port)
+        return routing+(S, S, ne.Gate('G', (self.physical_port,)), S, S)+routing
+
+    def _iter(self, w, env, reverse=False):
+        k, args = w.kind, w.args
+        if k == 'seq':
+            for child in (reversed(args) if reverse else args):
+                yield from self._iter(child, env, reverse)
+        elif k == 'repeat':
+            child, n = args
+            for _ in range(n):
+                yield from self._iter(child, env, reverse)
+        elif k == 'cx':
+            yield ne.Gate('CX', (env[args[0]], env[args[1]]))
+        elif k == 'si':
+            for _ in range(args[0]):
+                yield self._source()
+        elif k == 'g':
+            q, power = env[args[0]], args[1]
+            if power >= 0:
+                for _ in range(power):
+                    yield ne.Gate('G', (q,))
+            else:
+                S = self._source()
+                routing = () if q == self.physical_port else self._swap(self.physical_port, q)
+                # This whole raw block is a palindrome.  In particular do NOT
+                # allocate a tuple of length |power| merely to start iter_raw.
+                yield from routing
+                yield S; yield S
+                for _ in range(-power):
+                    yield ne.Gate('G', (self.physical_port,))
+                yield S; yield S
+                yield from routing
+        elif k == 'phase':
+            q, power = env[args[0]], args[1]
+            if power:
+                routing = () if q == self.physical_port else self._swap(self.physical_port, q)
+                chunks = (routing, (self._source(),)*power, routing)
+                for chunk in (reversed(chunks) if reverse else chunks):
+                    yield from (reversed(chunk) if reverse else chunk)
+        elif k == 'park':
+            target, body = args
+            q = env[target]
+            routing = () if q == self.physical_port else self._swap(self.physical_port, q)
+            next_env = tuple(q if v == self.physical_port else
+                             self.physical_port if v == q else v for v in env)
+            yield from (reversed(routing) if reverse else routing)
+            yield from self._iter(body, next_env, reverse)
+            yield from (reversed(routing) if reverse else routing)
+        elif k == 'inv':
+            # Reverse of inv(raw(child)) traverses child FORWARDS and each
+            # native inverse block BACKWARDS.  No full expansion is allocated.
+            for g in self._iter(args[0], env, not reverse):
+                block = self._inverse_leaf(g)
+                yield from (reversed(block) if reverse else block)
+        else:
+            raise ne.DomainError('unknown Word constructor')
+
+    def iter_raw(self, word):
+        self._check_tree(word)
+        return self._iter(word, tuple(range(self.qubits)))
+
+    def _counts(self, w, env):
+        k, args = w.kind, w.args
+        if k == 'seq':
+            ans = Counts()
+            for child in args:
+                ans += self._counts(child, env)
+            return ans
+        if k == 'repeat':
+            return self._counts(args[0], env).scale(args[1])
+        if k == 'cx':
+            return Counts(cx=1)
+        if k == 'si':
+            return Counts(source_i=args[0])
+        if k == 'g':
+            q, power = env[args[0]], args[1]
+            if power >= 0:
+                return Counts(g=power, g_port=power if q == self.physical_port else 0)
+            return Counts(g=-power, cx=0 if q == self.physical_port else 6,
+                          source_i=4, g_port=-power)
+        if k == 'phase':
+            return Counts(cx=6 if args[1] and env[args[0]] != self.physical_port else 0,
+                          source_i=args[1])
+        if k == 'park':
+            q = env[args[0]]
+            next_env = tuple(q if v == self.physical_port else
+                             self.physical_port if v == q else v for v in env)
+            return self._counts(args[1], next_env)+Counts(cx=0 if q == self.physical_port else 6)
+        if k == 'inv':
+            c = self._counts(args[0], env)
+            return Counts(g=c.g, cx=c.cx+6*c.g_off,
+                          source_i=4*c.g+3*c.source_i, g_port=c.g)
+        raise ne.DomainError('unknown Word constructor')
+
+    def counts(self, word):
+        self._check_tree(word)
+        return self._counts(word, tuple(range(self.qubits)))
+
+    def _leaves(self, w, env):
+        k, args = w.kind, w.args
+        if k == 'seq':
+            ans = set()
+            for child in args:
+                ans.update(self._leaves(child, env))
+            return ans
+        if k == 'repeat':
+            return self._leaves(args[0], env) if args[1] else set()
+        if k == 'inv':
+            return {g for leaf in self._leaves(args[0], env)
+                    for g in self._inverse_leaf(leaf)}
+        if k == 'park':
+            q = env[args[0]]
+            next_env = tuple(q if v == self.physical_port else
+                             self.physical_port if v == q else v for v in env)
+            return self._leaves(args[1], next_env) | set(() if q == self.physical_port else self._swap(self.physical_port, q))
+        if k == 'g':
+            q, power = env[args[0]], args[1]
+            if power >= 0:
+                return {ne.Gate('G', (q,))} if power else set()
+            return (set(() if q == self.physical_port else self._swap(self.physical_port, q)) |
+                    {self._source(), ne.Gate('G', (self.physical_port,))})
+        if k == 'phase':
+            if not args[1]:
+                return set()
+            q = env[args[0]]
+            return {self._source()} | set(() if q == self.physical_port else self._swap(self.physical_port, q))
+        if k == 'cx':
+            return {ne.Gate('CX', (env[args[0]], env[args[1]]))}
+        if k == 'si':
+            return {self._source()} if args[0] else set()
+        raise ne.DomainError('unknown Word constructor')
+
+    def validate(self, word, max_expanded_stages=None):
+        """Validate the finite constructor and its UNIQUE RAW LEAVES.
+
+        This is not native_execution parsing an AST.  Structural induction
+        reduces literal expansion membership to its finite set of raw leaves.
+        """
+        count = self.counts(word)
+        if max_expanded_stages is not None:
+            self._nat(max_expanded_stages, 'stage bound')
+            if count.n > max_expanded_stages:
+                raise ne.DomainError('literal expanded-stage bound exceeded')
+        leaves = tuple(sorted(self._leaves(word, tuple(range(self.qubits))),
+                              key=lambda g: (g.op, g.wires)))
+        probe = ne.Execution(self.qubits, (), self.old, leaves,
+                             ne.G_CX_SOURCE_I, self.physical_port, self.spin, ())
+        ne.validate_execution(probe, max_qubits=self.qubits,
+                              max_expanded_stages=len(leaves))
+        return {'counts': count.as_dict(), 'unique_raw_leaves': len(leaves),
+                'literal_expansion_membership': True,
+                'ast_is_native_primitive': False}
+
+    def execution(self, word, blank_wires=(), report_bits=(),
+                  max_expanded_stages=None, expansion_limit=1000000):
+        self.validate(word, max_expanded_stages)
+        self._nat(expansion_limit, 'literal expansion limit')
+        if self.counts(word).n > expansion_limit:
+            raise ne.DomainError('refuse huge materialization; use finite constructor proof')
+        gates = tuple(self.iter_raw(word))
+        out = ne.Execution(self.qubits, tuple(blank_wires), self.old, gates,
+                           ne.G_CX_SOURCE_I, self.physical_port, self.spin,
+                           tuple(report_bits))
+        ne.validate_execution(out, max_qubits=self.qubits,
+                              max_expanded_stages=len(gates))
+        return out
+
+
+def run_tests():
+    """Only new bounded fixtures; no SELECT-sized expansion or old suite."""
+    import sympy as sp
+    c = Compiler(6, 0, (4, 5))
+    passed = []
+
+    def matrix(w):
+        e = c.execution(w)
+        return ne.word_matrix(e, max_qubits=6, max_expanded_stages=len(e.gates))
+
+    def target_controlled(controls, xi, t, exponent):
+        bits = tuple((xi >> (len(controls)-1-j)) & 1 for j in range(len(controls)))
+        R = ne.G_LOCAL**exponent
+        out = sp.zeros(64)
+        for col in range(64):
+            if all(((col >> (5-q)) & 1) == b for q, b in zip(controls, bits)):
+                v = (col >> (5-t)) & 1
+                for u in (0, 1):
+                    row = (col & ~(1 << (5-t))) | (u << (5-t))
+                    out[row, col] = R[u, v]
+            else:
+                out[col, col] = 1
+        return out
+
+    # P can be an unknown spectator, a control, or the target.  All false
+    # branches and the complete dirty phase helper are checked, not selected.
+    for controls, t in (((1,), 2), ((0,), 1), ((0, 1), 2), ((1, 2), 0)):
+        for xi in range(1 << len(controls)):
+            w = c.fourier(controls, xi, t, 1)
+            assert ne.exact_matrix_equal(matrix(w), target_controlled(controls, xi, t, 1 << len(controls)))
+            count = c.counts(w)
+            q = 1 << len(controls); neg = 0 if xi == 0 else q//2
+            assert count.as_dict() == {'G': q, 'CX': len(controls)*q+(0 if t == 0 else 6),
+                                       'SourceI': 4*neg, 'N': q+len(controls)*q+4*neg+(0 if t == 0 else 6),
+                                       'g_port': q, 'g_off': 0}
+            assert len(tuple(c.iter_raw(w))) == count.n
+            passed.append('Fourier exact '+str((controls, xi, t)))
+
+    for q in (0, 1):
+        H = matrix(c.h_tilde(q, 1))
+        assert ne.exact_matrix_equal(H*H, sp.eye(64))
+        E = sp.zeros(64)
+        R = ne.G_LOCAL*sp.diag(1, -1)
+        for col in range(64):
+            for u in (0, 1):
+                row = (col & ~(1 << (5-q))) | (u << (5-q))
+                E[row, col] = R[u, (col >> (5-q)) & 1]
+        assert ne.exact_matrix_equal(H, E)
+        passed.append('H involution '+str(q))
+
+    P = c.phase(1)
+    alt = ne.Execution(6, (), (), (ne.Gate('SourceI', (1, 4, 5)),),
+                       ne.G_CX_SOURCE_I, 1, (4, 5), ())
+    desired = ne.word_matrix(alt, max_qubits=6)
+    assert ne.exact_matrix_equal(matrix(P), desired)
+    passed.append('routed S all columns')
+    CZ = matrix(c.cz(1, 2))
+    expected = sp.diag(*(-1 if ((m >> 4) & 1) and ((m >> 3) & 1) else 1 for m in range(64)))
+    assert ne.exact_matrix_equal(CZ, expected)
+    passed.append('CZ all columns')
+
+    for w in (c.fourier((0, 1), (1, 0), 2, 1), c.g(2, 2), c.phase(1)):
+        e = c.execution(w)
+        wanted = ne.inverse_word(e, max_qubits=6, max_expanded_stages=10000)
+        got = tuple(c.iter_raw(c.inv(w)))
+        assert got == wanted
+        assert len(got) == c.counts(c.inv(w)).n
+        passed.append('owned raw inverse exact '+str(len(got)))
+    # Invalid role overlaps/protected addresses fail before expansion.
+    for f in (lambda: c.fourier((1, 1), (0, 1), 2, 1),
+              lambda: c.fourier((1,), (0,), 1, 1),
+              lambda: c.g(4), lambda: c.g(True)):
+        try:
+            f()
+        except ne.DomainError:
+            passed.append('rejected malformed support')
+        else:
+            raise AssertionError('invalid support accepted')
+    print('PASS', len(passed), 'new literal Fourier/phase/H/inverse/support fixtures')
+    return passed
+
+"""Actual full flat SELECT/U compiler: exact power certificates, complete native rows."""
+from pathlib import Path
+from fractions import Fraction
+import sys, math, json, hashlib
+import sympy as s
+import numpy as np
+import mpmath as mp
+sys.path.insert(0, str(Path('02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24').resolve()))
+import native_execution as ne
+
+def mm(a, b):
+    return np.einsum('ij,jk->ik', a, b, optimize=False)
+DY = 1 << 256
+ceil_div = lambda x: (x + DY - 1) // DY
+di_add = lambda x, y: (x[0] + y[0], x[1] + y[1])
+di_sub = lambda x, y: (x[0] - y[1], x[1] - y[0])
+
+def di_mul(x, y):
+    v = [a * b for a in x for b in y]
+    return (min(v) // DY, ceil_div(max(v)))
+
+def di_root(x):
+    assert x[0] >= 0
+    return (math.isqrt(x[0] * DY), math.isqrt(x[1] * DY) + 1)
+
+def di_sq(x):
+    lo = 0 if x[0] <= 0 <= x[1] else min(x[0] * x[0], x[1] * x[1]) // DY
+    return (lo, ceil_div(max(x[0] * x[0], x[1] * x[1])))
+
+def di_rat(n, d):
+    return (n * DY // d, (n * DY + d - 1) // d)
+sq5 = di_root((5 * DY, 5 * DY))
+diff = di_sub(sq5, (DY, DY))
+DP = (diff[0] // 2, (diff[1] + 1) // 2)
+DA = di_root(DP)
+
+def rotmul(u, v):
+    return (di_sub(di_mul(u[0], v[0]), di_mul(u[1], v[1])), di_add(di_mul(u[1], v[0]), di_mul(u[0], v[1])))
+
+def rot_power(n):
+    sign = 1 if n >= 0 else -1
+    n = abs(n)
+    out = ((DY, DY), (0, 0))
+    base = (DA, DP)
+    while n:
+        if n & 1:
+            out = rotmul(out, base)
+        base = rotmul(base, base)
+        n //= 2
+    return out if sign == 1 else (out[0], (-out[1][1], -out[1][0]))
+
+def chord(u, v):
+    return di_root(di_add(di_sq(di_sub(u[0], v[0])), di_sq(di_sub(u[1], v[1]))))
+RHALF = di_root(di_rat(1, 2))
+TARGETS = {'H': (RHALF, RHALF), 'R': (di_rat(4, 5), di_rat(3, 5)), 'Z': ((-DY, -DY), (0, 0)), 'M': ((-DY, -DY), (0, 0))}
+mp.mp.dps = 100
+point_p = (mp.sqrt(5) - 1) / 2
+point_theta = mp.atan2(point_p, mp.sqrt(point_p))
+
+def propose(K, beta, min_den):
+    x = mp.fmod((1 << K) * point_theta / (2 * mp.pi), 1)
+    y = beta / (2 * mp.pi)
+    (hm2, hm1) = (0, 1)
+    (qm2, qm1) = (1, 0)
+    for _ in range(100):
+        z = int(mp.floor(x))
+        h = z * hm1 + hm2
+        q = z * qm1 + qm2
+        (hm2, hm1) = (hm1, h)
+        (qm2, qm1) = (qm1, q)
+        if q > min_den:
+            j = int(mp.nint(q * y)) % q
+            k = j * pow(h, -1, q) % q
+            assert k > 0
+            return (k, q)
+        x = 1 / (x - z)
+    raise ArithmeticError('proposal did not terminate')
+SPECS = {'H': (0, mp.pi / 4, 10 ** 12), 'R': (5, mp.asin(mp.mpf(3) / 5), 10 ** 11), 'Z': (5, mp.pi, 10 ** 11), 'M': (7, mp.pi, 10 ** 11)}
+angles = {}
+bounds = {}
+rots = {}
+certificates = {}
+for (name, (K, beta, min_den)) in SPECS.items():
+    (k, q) = propose(K, beta, min_den)
+    rr = rot_power((1 << K) * k)
+    err = chord(rr, TARGETS[name])
+    upper = Fraction(err[1], DY)
+    angles[name] = k
+    bounds[name] = upper
+    rots[name] = rr
+    certificates[name] = {'K': K, 'k': k, 'convergent_denominator': q, 'error_numerator': err[1], 'error_denominator': DY}
+assert angles == {'H': 1268877112054, 'R': 11811681778, 'Z': 55092493150, 'M': 386084894451}
+e_select = 2 * bounds['H'] + bounds['Z'] + bounds['R']
+eQ = 10 * bounds['H'] + e_select
+eU = 2 * eQ + bounds['M']
+assert eU < Fraction(1, 10 ** 10)
+alpha_lower = Fraction(1, 1000)
+assert Fraction(DP[0],DY)>Fraction(3,5)
+assert Fraction(81,16000)*Fraction(3,5)**3>alpha_lower
+ratio = 4 * (eU / alpha_lower) + 4 * (eU / alpha_lower) ** 2
+conditional_trace_bound = ratio / (1 - ratio)
+assert conditional_trace_bound < Fraction(1, 2000000)
+zeta = Fraction(1, 2 ** 20)
+abar = 1 - zeta
+rphysical = 8192
+book_one_bound = 2 * rphysical * zeta * eU / abar
+book_two_bound = 2 * book_one_bound
+Id = s.eye(16)
+Zero = s.zeros(16)
+order = (0, 2, 3, 1)
+creators = []
+for role in range(4):
+    cc = s.zeros(16)
+    for mask in range(16):
+        if not mask >> role & 1:
+            cc[mask | 1 << role, mask] = (-1) ** sum((mask >> j & 1 for j in order[:order.index(role)]))
+    creators.append(cc)
+
+def original_block(role, phase):
+    c = creators[role]
+    n = c * c.H
+    x = s.Rational(3, 5) * phase * c
+    return x.row_join(Id - n / 5).col_join((4 * Id / 5 + n / 5).row_join(-x.H))
+
+def exact_D(role, phase):
+    before = order[:order.index(role)]
+    v = [phase * (-1) ** sum((mask >> j & 1 for j in before)) for mask in range(16)]
+    return s.diag(*[1] * 16 + v)
+
+def exact_plane(role):
+    out = s.eye(32)
+    for mask in range(16):
+        if not mask >> role & 1:
+            i = mask
+            j = 16 + (mask | 1 << role)
+            out[i, i] = out[j, j] = s.Rational(4, 5)
+            out[i, j] = -s.Rational(3, 5)
+            out[j, i] = s.Rational(3, 5)
+    return out
+Xcoef = s.kronecker_product(s.Matrix([[0, 1], [1, 0]]), Id)
+phases = (s.I, s.I, -1, -s.I)
+for role in range(4):
+    for phase in (phases[role], s.Integer(1)):
+        Dr = exact_D(role, phase)
+        assert Xcoef * Dr * exact_plane(role) * Dr.H == original_block(role, phase)
+
+def midpoint(x):
+    return float(Fraction(x[0] + x[1], 2 * DY))
+
+def pair_float(name):
+    return tuple((midpoint(x) for x in rots[name]))
+(cH, sH) = pair_float('H')
+(cR, sR) = pair_float('R')
+(cZ, sZ) = pair_float('Z')
+(cM, sM) = pair_float('M')
+Hhat = np.array([[cH, sH], [sH, -cH]], complex)
+
+def onebit(role, c, sin):
+    out = np.zeros((16, 16), complex)
+    for mask in range(16):
+        if not mask >> role & 1:
+            j = mask | 1 << role
+            out[mask, mask] = out[j, j] = c
+            out[mask, j] = -sin
+            out[j, mask] = sin
+    return out
+
+def native_block(role, phase):
+    Hc = np.kron(Hhat, np.eye(16))
+    MCZ = np.zeros((32, 32), complex)
+    MCZ[:16, :16] = np.eye(16)
+    MCZ[16:, 16:] = onebit(role, cZ, sZ)
+    Xhat = mm(mm(Hc, MCZ), Hc)
+    Rhat = np.eye(32, dtype=complex)
+    for mask in range(16):
+        if not mask >> role & 1:
+            i = mask
+            j = 16 + (mask | 1 << role)
+            Rhat[i, i] = Rhat[j, j] = cR
+            Rhat[i, j] = -sR
+            Rhat[j, i] = sR
+    Dnum = np.asarray(exact_D(role, phase)).astype(complex)
+    return mm(mm(mm(Xhat, Dnum), Rhat), Dnum.conj().T)
+idealblocks = []
+nativeblocks = []
+for lab in range(32):
+    role = lab // 8
+    which = lab % 8 // 2
+    phase = phases[role] if which < 2 else s.Integer(1)
+    ib = original_block(role, phase)
+    nb = native_block(role, phase)
+    if which & 1:
+        ib = ib.H
+        nb = nb.conj().T
+    if which >= 2:
+        ib = -ib
+        nb = -nb
+    idealblocks.append(ib)
+    nativeblocks.append(nb)
+    assert np.linalg.norm(nb - np.asarray(ib).astype(complex), 2) < float(e_select) + 1e-13
+HH = np.array([[1]], complex)
+for _ in range(5):
+    HH = np.kron(HH, Hhat)
+rows = []
+for lab in range(32):
+    for b in (0, 1):
+        rows.append(sum((HH[0, j] * HH[j, lab] * nativeblocks[j][:16, 16 * b:16 * (b + 1)] for j in range(32)), np.zeros((16, 16), complex)))
+assert np.linalg.norm(sum((mm(N, N.conj().T) for N in rows), np.zeros((16, 16), complex)) - np.eye(16), 2) < 2e-13
+pp = float(ne.P)
+aa = float(ne.A)
+T = onebit(0, cM, sM) - np.eye(16)
+ks = []
+for (j, N) in enumerate(rows):
+    V = mm(mm(N.conj().T, T), rows[0])
+    ks.extend(((np.eye(16) if j == 0 else np.zeros((16, 16))) + pp * pp * V, aa * pp * V))
+assert np.linalg.norm(sum((mm(K.conj().T, K) for K in ks), np.zeros((16, 16), complex)) - np.eye(16), 2) < 5e-13
+beta = 1 - Fraction(9, 320) * pp * pp
+assert np.linalg.norm(ks[0] - beta * np.eye(16), 2) < float(eU) + 5e-13
+CI = np.zeros((16, 2), complex)
+CI[0, 0] = CI[12, 1] = 1
+alpha = Fraction(81, 16000) * pp ** 3
+target0 = mm(alpha * CI, np.diag([1, 0]))
+target1 = mm(alpha * CI, np.diag([0, 1]))
+good0 = mm(mm(ks[27], ks[19]), CI)
+good1 = mm(mm(ks[91], ks[19]), CI)
+actual_good_error = np.linalg.norm(np.vstack((good0 - target0, good1 - target1)), 2)
+assert actual_good_error < 2 * float(eU) + 1e-12
+cold = mm(ks[0], ks[0])
+assert np.linalg.eigvalsh(mm(cold.conj().T, cold)).min() > pp ** 12 - 1e-12
+
+def print_math_result():
+    print('ANGLE_CERTIFICATES', json.dumps(certificates, sort_keys=True))
+    print('EXACT_ERROR_BOUND', {'numerator': eU.numerator, 'denominator': eU.denominator, 'below_1e-10': eU < Fraction(1, 10 ** 10)})
+    print('SOURCE_BOUNDS', {'reader_trace_bound_upper': float(conditional_trace_bound), 'one_call_Book_bound': float(book_one_bound), 'two_call_Book_bound': float(book_two_bound), 'r_raw': rphysical})
+    print('NUMERICAL_DIAGNOSTIC_ONLY', {'good_column_error': actual_good_error, 'Bhat_nonHermitian_norm': np.linalg.norm(ks[0] - ks[0].conj().T, 2), 'Qrow_bistochastic_defect': np.linalg.norm(sum((mm(N.conj().T, N) for N in rows), np.zeros((16, 16), complex)) - np.eye(16), 2)})
+
+# App placements: physical source port stays0; data are ordinary WORK.
+DATA=(10,9,8,7)
+PHASE_EXP=(1,1,2,3)
+ROLE_ORDER=(0,2,3,1)
+def call_word(c,flag,labels,coefficient):
+    high=tuple(labels[:4]);blocks=[]
+    for role in range(4):
+        prior=tuple(DATA[j] for j in ROLE_ORDER[:ROLE_ORDER.index(role)])
+        for which in range(4):
+            blocks.append(c.julia_label(high,4*role+which,coefficient,DATA[role],prior,
+                PHASE_EXP[role] if which<2 else 0,
+                angles['R'],angles['H'],angles['Z'],adjoint=bool(which&1)))
+    selected=c.select(blocks,sign_wire=labels[2])
+    whole=c.full_reflection(labels,coefficient,flag,DATA[0],selected,angles['H'],angles['M'])
+    return whole,selected,c.q_word(labels,selected,angles['H'])
+
+def inventory():
+    one=Compiler(14,0,(11,12),(13,))
+    w,selected,Q=call_word(one,0,(1,2,3,4,5),6)
+    v1=one.validate(w)
+    two=Compiler(21,0,(11,12),(20,))
+    first,_,_=call_word(two,0,(1,2,3,4,5),6)
+    second,_,_=call_word(two,13,(14,15,16,17,18),19)
+    combined=two.seq(first,second)
+    v2=two.validate(combined)
+    count1=one.counts(w);countA=two.counts(first);countB=two.counts(second)
+    assert countA==count1
+    assert two.counts(combined)==countA+countB
+    assert count1.n>0 and countB.n>0
+    # No helper G/CX or oldRIGHT addressing can be hidden in unique leaves.
+    for c,word in ((one,w),(two,combined)):
+        leaves=c._leaves(word,tuple(range(c.qubits)))
+        assert all(set(g.wires).isdisjoint(c.old) for g in leaves)
+        assert all(set(g.wires).isdisjoint(c.spin) for g in leaves if g.op!='SourceI')
+        assert all(g.wires==(0,11,12) for g in leaves if g.op=='SourceI')
+        assert all(g.wires==(0,) for g in leaves if g.op=='G')
+        assert next(c.iter_raw(word)).op in ('G','CX','SourceI')
+    out={'SELECT':one.counts(selected).as_dict(),'Q':one.counts(Q).as_dict(),
+        'call1':count1.as_dict(),'call2_fresh_App':countB.as_dict(),
+        'two_calls':two.counts(combined).as_dict(),
+        'one_validation':v1,'two_validation':v2,
+        'oldRIGHT_dimension':128,'cut_rank_shared_helper':4*16*128,
+        'one_active_dimension':4*128*16*128,
+        'two_active_dimension':4*128**2*16*128,
+        'two_full33_dimension':33*2**(21-1)*64}
+    assert out['two_full33_dimension']==out['two_active_dimension']*33//2
+    print('EXACT_FINITE_WORD_INVENTORY',json.dumps(out,sort_keys=True))
+    return out
+
+if __name__=='__main__':
+    run_tests()
+    print_math_result()
+    inventory()
+```
+
 ## 8. Reproduction
 
 Run from this directory:
