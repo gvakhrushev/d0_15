@@ -10184,3 +10184,96 @@ Exact replay/charge scope, actualrecording and inherited source pins:
 02_REGISTRY/research/sources/d0_known_port_complete_record_price_2026-10-25/INTEGRATION_REVIEW.md.
 Inputprimaryc8c85ef1, oldbrief and all priorpackets preserved. No physical
 Cost/Info selection, native stationary attainment or GR status promoted.
+
+### 25 October: consume the off-null source on the full moving-density chart
+
+Phase: native realization / final equation-class composition. SAME PR334,
+constitutive/native-programme-v1; input49b78ad87365a2b62b99439781b2c244e7fac51f.
+The exact parent substitution is primary7ai(ST6), whose source identification
+is only the primary P5/C8 first jet. Consume the already owned7k(121)-(129)
+off-null original-operand compiler, positive partition factory, exact-native
+all-input READY amplifier and7ai's effect-agnostic known-port/fork interface.
+A positive actual reserve tag with fixed Omegabar>sup sum(mu rho), exact
+baseline r0 and all preprepared node rows removes7k's constant-total-density
+restriction. Preserve the original decoded rho, coframe, connection, scalar
+calibration, sigma-minus report and its derived a0/lambda_minus. This is an
+explicitly changed configured reporter, not physical selection of that branch.
+
+Primary7al329-330 prove the full covector approximation with every moving tag
+row, no inverse-strength operand/tag error, and actual V_h dual norm. The
+exact dummy constant is necessary; its independently approximate value would
+leave e0 Dpi0/tau. The smallest decisive negative control is f=rho=1+t in
+one cell: old normalization has zero source, while the reserve report recovers
+the nonzero volume row. All coefficient failures, source resources, actual
+amplifier/middle/inverses and full clock/carrier remain paid.
+
+Equations331-335 compose that source with actual SAME-INITIAL finite native
+coordinate forks and the one cumulative Book determinant. The noncritical
+finite-price estimate retains the previously absent divided-gain times DQ
+term. Its node budget is local eta/(Delta gbar), justified uniformly in the
+entire prior/future return product; it is not divided by a future tinyGamma.
+Freeze each level's actual source words, full +/- catalogue and matched clock
+before execution. Repeat each finite level at leastceil(2/gbar) times, so the
+positive denominator A_M diverges and every finite old structured error is
+retained with vanishing relative weight. The actual gain is Gamma_M=w_M A_M
+with protected rank4*r_old ONCE. No primary critical variance/rate, constant
+absolute coupling, or smooth native word selector is imported.
+
+Carrier/source convention: the existing exact inverse-coframe/Cayley/material
+chart, original EPS_PLUS orientation and full42 variations, genuine quadrature
+mu=c_quad h^4, sampled C3-test norm and uniform regular C3-to-C2 continuum
+hypotheses of7k129. The resulting actual finite-price cofield converges to
+DI_PC on the open chart, rather than merely vanishing on the Brinkmann family.
+Native stationary applicability/attainment and any actual extra selected
+source remain hypotheses. A nonzero continuum Euler source remains nonzero
+after normalization even when the absolute closing gain tends tozero.
+
+For the original direct Book03 H+J bootstrap, a separate Cost-Info identity
+is not an extra premise. If another full valuation is selected, retain its
+same-execution binding and residual relative to the TRUEGamma. In particular
+7ak's fixed old additive Info/work source is not a structured report error;
+the new averaging theorem does not suppress it. The remaining physical parent
+application is the original X_N stationary-law map into these admitted field
+comparisons and compatible regular refinement, with all independent controls.
+The global vacuum consumer covers the whole Ricci-flat equation class; its
+matter conclusion keeps the original constrained two-scalar current/volume
+conditions. No GR_closed/raw216, acceptance, task or lifecycle status changes.
+
+Write paths: primary7al and this existing brief only. Read-only bounded
+assistants review the positive-factory/source bound and the full noncritical
+cofield/append-only consumer. No new research packet or independent task.
+Validation scope: exact symbolic reduction of the ORIGINAL report over
+p^2+p-1, baseline and both first coefficients, full moving-density first
+coefficient, one-cell negative control, dummy-error reaction, and the exact
+all-history divided-slope identity; SymPy1.12.1 reports PASS. The analytic
+norm/Taylor/weighted-mean proof is recorded in7al and reviewed separately;
+this check does not certify native stationary existence. No old128, geometric
+root, critical-bank, Lean or expensive mathematical corpus replay is required.
+
+Independent review retained the actual moment-decoder/chord error as well:
+7al332a rectifies the coordinate-price cofield by the inverse matrix of
+ACTUAL observed chords and the actual decoded-centre sampling map. Its
+finite inverse/calibration/h-dependent norms enter334, including C3 control
+of the actual centre interpolation. The choice of native point accuracy
+is tightened prospectively; no old executed word is revised. Thus335
+uses the observed-field cofield, with three explicit local error budgets.
+
+Original-law application: Book02 permits frozen finite matrix derivatives;
+Book03 already supplies primitive finite stationarity.7al336-337 explicitly
+places the same generated source/cuts in its actual paired incidence/Dirac
+carrier and recovers all fields from marked prefix blocks. The paired
+extraction constant2sqrt(2)ell is derived on this carrier, not borrowed from
+7k's scene-clock normalization. This removes a smooth-native-word-selector
+demand from the direct operator pullback. It does not equate X_run with X_N,
+make all matrix normals physical, or prove complete stationary solutions
+exist in this configured sector. Full-domain/stack compatibility remains.
+
+Global off-shell checkpoint: final primary7al18516bytes/SHA256
+3fbb1b910d38794ca90b05ef55090f28f400a36cfeba6a6f67ab97a069d1a68a.
+Two read-only reviewers accepted this EXACT final slice: the global-source/
+cofield consumer and the paired-carrier/original-law application. A separate
+source reviewer checked the positive reserve/READY/normalization core.
+Root exact symbolic check used Python3.11.9/SymPy1.12.1; work, agent-protocol,
+assembly and repository validators pass, git diff --check clean. Removing
+7al restores input49b78ad8 primary byte-for-byte; the input brief is an exact
+prefix. All prior calculation packets and acceptance states are unchanged.
