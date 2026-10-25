@@ -180,3 +180,55 @@ This is a strong source-specific bridge between closed memory, CAR superselectio
 The checker \`sources/d0_original_car16_two_mode_book_2026-10-25/check_two_mode_original.py\` rebuilds the ORIGINAL 32 duplicated Walsh row0 through the CAR creators, exact proper Lorentz boost \(U_r\) (not an imported quadratic model), and canonical 16D graded basis. It compares original 16D \(\Delta=a^\dagger a\) with (3)/(4) at several exact rational \(r,\nu\), checks both spectator CAR commutators, the 2×2 odd-block characteristic polynomial against BOTH rational functions (5), parity-switch \(\Gamma_2\), strict 16D 8+8 determinant/trace multiplicity, the radical-free Book source and its ORIGINAL first \(\theta\)-jet at \(r=1/9,\nu=3/5\).
 
 Analytic §1–5 supplies the all-parameter proof; finite samples are regression controls, not the sole proof for the infinite family. No actual original 128 fine history or field-direction not in this proper-boost chart is erased/claimed covered.
+
+
+## 7. THEOREM F — original prepared Book alone has a STRICT proper-boost source on the whole canonical positive interval
+
+The radical-free formula (9)–(11) permits an exact sign theorem, with NO numerical eigenvector tracking or Newton root finder. Keep the original fixed phases, \(p=\varphi^{-1}\), \(\zeta=2^{-20}\), and the compact physical test chart
+\[
+\boxed{0\le r\le1/9,\qquad 0<\nu\le3/5.}\tag{17}
+\]
+Here \(s,t>0\) and the CAR contraction is strictly positive; the original \(r=1/9,\nu=3/5\) sits at its endpoint. The two rational invariants of (5) obey EXACTLY
+\[
+\boxed{
+\begin{aligned}
+\partial_rs&=\frac{\nu^2(1+r^2)(r^2+4r-1)}
+{64(1-r^2)^3}<0,\\
+\partial_rt&=\frac{2\nu^4(3r^4+14r^3-6r^2+18r-5)}
+{16384(1-r^2)^3}<0.
+\end{aligned}}\tag{18}
+\]
+The inequalities have elementary *rational interval proofs*: \(r^2+4r-1\le1/81+4/9-1<0\), and the second numerator bracket is at most \(3/6561+14/729+2-5<0\) after deleting the nonpositive \(-6r^2\). The invariants themselves satisfy
+\(0<s<1/4\) and \(0<t<1\) throughout the chart, since
+\[
+s\le\frac{(9/25)\,6}{64(80/81)^2}
+=\frac{177147}{5120000}<\frac14,\quad
+t\le\frac{(81/625)\,26}{16384(80/81)^2}
+=\frac{6908733}{32768000000}<1.
+\tag{19}
+\]
+Put \(u=4\zeta p^2,v=4\zeta p^4\). The exact survival polynomial has derivatives
+\[
+\partial_s\mathfrak d=-u+2vs-uvt<0,\qquad
+\partial_t\mathfrak d=-2v+u^2-uvs+2v^2t<0.
+\tag{20}
+\]
+Indeed \(2vs=2up^2s<u/2\); moreover
+\(\partial_t\mathfrak d\le v(-2+4\zeta+2v)<0\)
+because \(v<4\zeta\) and \(12\zeta<2\).
+Therefore
+\[
+\boxed{
+\partial_r\mathfrak d
+=(\partial_s\mathfrak d)(\partial_rs)
++(\partial_t\mathfrak d)(\partial_rt)>0,
+\quad
+D_\theta J_{\rm pre}
+=-4(1-r^2)\frac{\partial_r\mathfrak d}{\mathfrak d}<0.
+}\tag{21}
+\]
+Every inequality is strict for \(\nu>0\); at \(r=0\) all formulas have a regular one-sided derivative. This is a precise non-perturbative, all-boost **NO-GO for stationarity of the ISOLATED prepared full128 Book feedback** when this Lorentz direction is physically admitted. Neither a numerical fixture, a Dirac eigengap, the field source's sign, nor a scalar row fit is needed.
+
+**Physical reading:** the authentic original closed memory's positive Book return gives a genuine source. To obtain an admissible D0→Einstein stationary action on a physical chart that permits this boost, other ACTUAL paid terms or derived physical constraints must account for that source. A matching-reference second arm MAY supply an opposite source, but doing so from a supplied reference choice is not yet forced by M1; genuine independent arm/controller rows must still close. Conversely, if the physical task does not admit this boost as an independent variation, (21) is not a failure of its own stationarity. It is a sharp guard against promoting the nice Slater no-return representation itself to the WHOLE selected D0 action.
+
+The checker below verifies the exact analytic derivatives (18), rational bounds (19) and original source sign on multiple rational points. Its finite tests are supporting controls; the proof above covers the continuum interval.
