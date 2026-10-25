@@ -119,6 +119,48 @@ check(S.cancel(dn_from_r)==0 and
       S.cancel(dn_from_nu-1/nu)==0,
       "two native Born SOURCE jets EXACTLY recover moving dnu/nu")
 
+# Exact SIGNED signed-boost COLLISION of the older two-stationary-outcome
+# q0,q1 route: Rspec=t/s² folds across r=0. A second paid vacuum
+# context is truly needed if the task must distinguish both native signs.
+Rspec=S.factor(B*(1-r*r)**2/(4*A*A))
+HH=8*r**7+25*r**6+32*r**5-15*r**4-56*r**3+39*r*r+15
+check(S.cancel(S.diff(Rspec,r)+r*(1-r*r)*HH/(2*A**3))==0,
+      "exact signed spectral-fold derivative with original CAR polynomial")
+check(15-S.Rational(8,9**7)-S.Rational(32,9**5)-
+      S.Rational(15,9**4)-S.Rational(56,9**3)>14,
+      "exact H(r)>14 on both signed boost branches")
+f_spec=S.factor(A/(1-r*r)**2)
+r_plus=S.Rational(1,20)
+nu_plus=S.Rational(3,5)
+check(Rspec.subs(r,-S.Rational(1,9))<
+      Rspec.subs(r,r_plus)<S.Rational(1,4),
+      "exact rational IVT: unique distinct negative signed CAR collision")
+from scipy.optimize import brentq
+r_minus=brentq(lambda xx:float(Rspec.subs(r,xx)-
+                                 Rspec.subs(r,r_plus)),
+               -1/9,0,xtol=1e-14)
+nu_minus=float(nu_plus)*math.sqrt(
+    float(f_spec.subs(r,r_plus))/float(f_spec.subs(r,r_minus)))
+check(-1/9<r_minus<0 and 0<nu_minus<float(nu_plus),
+      "same spectral action but DIFFERENT regular native signed parameters")
+Kplus,_=native(2*math.atanh(float(r_plus)),float(nu_plus),(1j,1j,-1.,-1j))
+Kminus,_=native(2*math.atanh(r_minus),nu_minus,(1j,1j,-1.,-1j))
+def selfprepared_probs(ks):
+    dl=(I16-ks[0])/(2*pnum*pnum)
+    rho=np.linalg.inv(dl)
+    rho/=np.trace(rho)
+    return [float(np.trace(rho@ks[i].conj().T@ks[i]).real)
+            for i in (0,1)]
+pplus=selfprepared_probs(Kplus)
+pminus=selfprepared_probs(Kminus)
+near(max(abs(x-y) for x,y in zip(pplus,pminus)),0,2e-12,
+     "TWO original self-prepared native fine probabilities EXACTLY COLLIDE")
+vp=float(np.vdot(Kplus[1][:,0],Kplus[1][:,0]).real)
+vm=float(np.vdot(Kminus[1][:,0],Kminus[1][:,0]).real)
+check(vp>vm and vp-vm>7e-6,
+      "SAME original K1 on canonical CAR vacuum DISTINGUISHES signed collision")
+
+
 # Original whole 16x16 native CAR/Julia/Walsh constructor, including
 # every one of the 128 fine outcomes and all dark operators.
 I16=np.eye(16,dtype=np.complex128)
@@ -220,6 +262,12 @@ print(json.dumps({
     "one_label_two_distinct_preparations":True,
     "physically_admitted_and_paid_two_context_experiment":False,
     "signed_born_ratio_results":results,
+    "stationary_same_q0_q1_signed_collision":{
+        "r_plus":str(r_plus),"r_minus_numeric":r_minus,
+        "nu_plus":str(nu_plus),"nu_minus_numeric":nu_minus,
+        "native_q0_q1_plus":pplus,"native_q0_q1_minus":pminus,
+        "original_vacuum_K1_strict_gap":vp-vm},
+    "source_jets_globally_signed_invertible":True,
     "physical_two_context_task_selected_by_M1":False,
     "full42_GR_closed":False
 },indent=2,sort_keys=True))
