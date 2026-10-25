@@ -11676,3 +11676,114 @@ no input of the checked reciprocal calculation changed. No old
 mathematical replay was needed. This is local validation, not remote
 CI or accepted physical GR. Removing only the7bb insertion restores
 the incoming primary exactly; the incoming brief is an exact prefix.
+
+### 25 October: a true append archive changes the whole return source
+
+Phase: native realization / exact attempted physical record application.
+SAME PR334, constitutive/native-programme-v1, input06b18715.
+Consume7ba's missing literal birth-record reader,7j native inverses,
+7t code/clock and7ad/7az full-heat involution theorem. The original
+D_min three-paid-word fork is preserved with its same-task/code-order
+premises. No new task, claim, registry, action or source selector.
+
+Existing primary7bc458--461 executes ONE concrete operation omitted
+from the old source model: retain every birth CX copy outside its outer
+inverse. The actual h output now has the complete source birth effects
+EXACTLY on all inputs; the fixed bit-reader and later append commute.
+This supplies the literal archive/reader map that weak signed-response
+tomography alone could not provide. Physical source-port availability
+and original X_N admission remain the same explicit implementation
+premises; code membership does not establish physical actuation.
+
+The new WHOLE return kernel is one-sided K_A Pi0. Its ideal scalar
+corner is(1-df(0))p0 with p0 the all-zero-history probability, so its
+actual feedback source is -2w_seal Dlog p0. It is not the old wa Dq.
+Compiled Boolean errors give the explicit operator remainder2Delta_Q.
+At fixed query the entire new heat is S-conjugacy neutral, but its
+new monodromy and all record columns are retained. Query-heat neutrality
+is not assumed away from the proved case.
+
+The decisive new native comparison is four exact N36/D64/r4 words,
+all G6/SI14/CX16 including true inverse routing and actual identity
+pairs BEFORE birth. They use S1=Gx Gy^2 versus S2=Gx^2 Gy. Both have
+sealedcorner p^7, while their old balancedcorners p^3 and1-8p^3 have
+different squaredreturn. Within each pair the full heat is equal;
+old versus sealed absolute heat keeps its distinct multiplicities.
+No lower-Book-price/shorter-D_min inference or same-task equivalence
+is asserted for these differently prepared histories.
+
+A second NEW native example includes a genuinely paid identity query
+SI^4 and its expanded SI^12 inverse, giving G2/SI22/CX1,N25,D16,r4.
+At this actual native point the endpoint is an involution, hence full
+paired-heat first source is zero. A stated smooth finite-operator query
+tangent preserves the exact h-law yet gives DJ=4w sqrt(p)>0. It is
+not an assertion of native Golden-angle retuning or original admission
+of that comparison. The missing inverse CX changes the price operator,
+so old7ba's two-sided truth-defect theorem does not apply to it.
+
+Smallest decisive replay: the integrator executed ONLY these NEW five
+literal native words via the owned parser/inverse/algebraic evaluator,
+checking every column, full h-effects, counts, sourcecontrast and the
+query row. Exit0/PASS on Python3.9.6/SymPy1.14.0. No old math/root,
+source-factory, READY,128, full-clock eigensolver or Lean replay.
+Full fixed-clock heat uses the owned analytic phase theorem with all
+actual Hodge modes. The checked code was unchanged after a physical-
+availability scope clarification.
+
+Frozen7bc INCLUDING next-heading separator:15596 bytes,
+SHA256 5a8ef9d5243eeb0b09fc2c14a5837c7308460b96e6f58145b812eab6edaaff66.
+Extracted code excluding closingnewline:3403 bytes,
+SHA256 4b872f3e3dbddecb30b24ecabff8018dc39ea59f0c642a360753ae441eac1414.
+New test dependency: native_execution.py Git blob 9a32a3fa2e594c087d24b9d5dec497c4c5e03f44,
+SHA256 222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c.
+Write paths: existing primary7bc and this existing brief only.
+
+Parent outcome: actual append is constructed, but source transport of
+this simplest genuine seal FAILS. It cannot be used to remove the
+native GR-source premise or the independent query normal. The route
+now requires a justified intrinsic spatial/matter/return-cut coupling
+or another actually selected full-price map. More terminal geometry
+storage or a supplied action germ cannot provide that binding. The
+owned spatial inverse alone is blind to appended matter readouts;
+SourcePortPreparation proves an interaction, not their update law.
+Original admission, constitutive selection, independent normals and
+general-refinement remain. No GR_closed/positive_gr/raw216 promotion.
+
+Final source-only native_source_application and stationary_root_transfer
+reviews ACCEPTED7bc15596/5a8ef9d5243eeb0b and unchanged checkedcode
+3403/4b872f3e3dbddecb. The latter requested the now-explicit461 scope:
+SOURCE variations along the fixed ideal Boolean A,d,f,kappa0 family;
+query variations leaving it need not satisfy461, and movingkappa0
+keeps its real extra derivative. This changes no calculation/code.
+Reviewers made no edits and performed no duplicate mathematical runs.
+
+Preservation PASS: removing only7bc and its separator restores the
+incoming06b18715 primary BYTE EXACT, SHA256
+faaf7716bcb4b124b7398de019a459dbbf3e4f47ed9c0b111765730e16917dc0.
+The old brief remains a byte-exact prefix, including prior accepted
+proofs. The concurrent D_min fork/memo/verifier remain unchanged.
+Affected final structural checks PASS: validate_work,
+validate_agent_protocol, gr_assembly check and validate_repo:
+889claims,31assumptions,58aliases,183formal_support,918lean_closure;
+warnings0. Assembly unchanged54active/98totalresults,5discharged,
+22obligations, scientific_promotion=false. Whitespace PASS. No remote
+CI, original physical availability/acceptance or positiveGR promotion.
+
+Concurrent integration06b18715 adds the intrinsic spatial reference
+construction7bb448--457 and the literal equal-code D_min control.
+They remain BYTE EXACT. This proof is renumbered7bc458--461; its
+native controlcode and dependency are BYTE IDENTICAL, so no math
+replay. The only added scientific prose states the distinct scopes:
+this failed seal-transport is not a new prerequisite or a refutation
+of the intrinsic two-arm source. Structural gates are refreshed on
+the final integrated input.
+
+All three source-only reviewers(native_source_application,
+price_geometry_bridge,stationary_root_transfer) ACCEPTED the final
+rebased15596/5a8ef9d5243eeb0b proof and unchanged3403/4b872f3e3dbddecb
+code. They checked incoming intrinsic-reference compatibility, literal
+native inventories, protected rank, complete thermal multiplicities,
+one-sided source and the qualified461. No edits or duplicate runs.
+Final integrated structural gates refreshed PASS on06b18715 with the
+same889/31/58/183/918 counts, warnings0 and unchanged assembly budget.
+No physical acceptance or registry promotion is inferred.

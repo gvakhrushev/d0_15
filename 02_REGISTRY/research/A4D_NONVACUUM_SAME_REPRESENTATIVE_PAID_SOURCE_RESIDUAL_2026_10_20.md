@@ -14306,6 +14306,309 @@ print('mixed source',S.N(mixed_plus,14),'independent normal',S.N(normal,14))
 print(sys.version.split()[0],S.__version__)
 ```
 
+## 7bc. A true append archive changes the full return source
+
+25 October2026; SAME PR334 / constitutive/native-programme-v1,
+input06b18715. Consume7ba's exact remaining birth-record application,
+the owned native inverse7j, actual code/clock map7t, and the full heat
+involution lemma7ad/7az. Instead of declaring active copies immutable,
+execute one concrete native modification: leave their orthogonal code
+outside the inverse. This supplies the actual append/reader map. Its
+complete source is different, so it does NOT discharge the old native
+GR-source premise by identifying two different record processes.
+
+Incoming7bb448--457 independently supplies an intrinsic spatial
+matched-reference price with its own positive two-arm determinant.
+That construction is preserved. This section concerns the old report/
+blank-cut seal; it is not a new prerequisite for the reference map,
+a refutation of its signed source or a cancellation of its remaining
+independent arm/field rows. Its constitutive/matter binding is still
+its own next application.
+
+### Execute the birth record and keep it, with its actual cut
+
+Let S be the real source prefix, C=product_a CX(x_a,h_a) copy every
+logical SIGN/coin input into fresh blank h, A the actual Boolean query
+suffix excluding h, and M its original fixed report-controlled middle.
+All later actual native inverse/routing/helper addresses also exclude
+h. Execute chronologically
+
+    S; C; A; M; A_native^dagger; S_native^dagger,
+    U_seal=S^dagger A^dagger M A C S.                 (458)
+
+Only the inverse C has been omitted from the balanced echo. Keep the
+SAME initial/closing blank cut, including every h=0, and the same
+protected input multiplicity. The letters use7j's DECLARED source-port
+interface; physical availability is not inferred from code membership
+or matrix closure. Original X_N admission remains an application.
+A fresh blank is not relabelled a free
+protected history input. No history is traced out or physically pinched.
+
+For every complete label z, let Pi_h,z and Pi_x,z be its orthogonal
+computational projectors on h and on the copied logical inputs. If i
+initializes the real source work and h blanks, then EXACTLY
+
+    i^dagger U_seal^dagger Pi_h,z U_seal i
+           =i^dagger S^dagger Pi_x,z S i=:e_z.        (459)
+
+This is an all-input effect identity, including entangled references.
+Every operation after C commutes with Pi_h,z. A fixed computational
+reader thus recovers the actual registered outcome code; no signed
+weak-response inverse is being used as a single-history decoder.
+Later private cohorts append their new record and preserve this code.
+The concrete history reader can now be composed with the owned
+SigmaWitness.query_append_retains theorem. This proves the append law
+for THIS execution, not a ban on all possible physical controller edits.
+
+The price changes. Let Theta be the actual report projector and
+K_A=A^dagger(I-dTheta)A on the query/work interface, where the old main
+target has its real blank compression I-dTheta. Compressing h=0 gives
+
+    C_ret=i^dagger S^dagger K_A Pi_x,0 S i.
+
+The projector appears on ONE SIDE. It is not the old Hermitian
+expectation or7ba's K_A D_P formula. For the ideal Boolean suffix A_*,
+with f(x) in{0,1}, correct fresh scratch/report initialization gives
+K_* Pi_x,0=(1-d f(0))Pi_x,0 on that interface. Therefore
+
+    C_ret,*=kappa0 e_0,  kappa0=1-d f(0),
+    ||A-A_*||<=Delta_Q =>
+          ||C_ret-kappa0 e_0||<=2Delta_Q.             (460)
+
+The bound follows from ||I-dTheta||<=1 and unitary telescoping.
+No exact native Boolean permutation is assumed. It compares the SAME
+actual source and copied inputs, not an ideal replacement of them.
+
+Along SOURCE variations of the ideal Boolean family, keep A=A_*,d,f
+and therefore kappa0 FIXED. Its scalar protected corner is c=kappa0 p0,
+p0=<Pi_x,0>; take p0>0,kappa0!=0 on a fixed collar. The genuine whole
+feedback, for one cohort, is -r log(1-zeta+zeta c^2), and
+
+    w_seal=r zeta c^2/(1-zeta+zeta c^2),
+    D J_seal=-2w_seal D log p0.                       (461)
+
+For several private scalar cohorts use the ACTUAL product of their
+c_j^2 and sum Dlog p0,j; do not average branch prices. This is the
+all-zero-history source, not the old wa Dq. A query tangent leaving
+that correct family need not satisfy461, even at its ideal base;
+a permitted moving kappa0 would also keep -2w_seal Dlog|kappa0|.
+At p0=0 the original gain comparison is unavailable; no division
+through that zero is asserted.
+For independent split SIGN sources and individual Golden coins,
+p0=p^(N_coin) product_(i,a)(1-sigma_a mu_a)/2. With owned sigma=-1,
+D_mu_a log p0=n/(1+mu_a) on its strict interior chart. Old criticality
+of the report expectation q_h does not remove this new covector.
+These product formulas concern that declared ideal independent source;
+the actual native e_0 and its compiled source errors remain460.
+
+### Keep the entire new heat, including every history column
+
+The actual raw duration is
+L(S)+K+L(A)+L(M)+L(A_native^dagger)+L(S_native^dagger),
+not2L(S)+2L(A) unless those symbols already have matched inverse costs.
+There are K new blank wires, full fibre dimension2^K times the original
+one, unchanged input rank and no added weak meters. Relative to the
+same balanced-copy echo the actual omission saves exactly K CX.
+All history columns remain in the whole counting heat.
+
+For fixed A,C,M the endpoint is S^dagger V S with
+V=A^dagger M A C. Thus the full fixed-clock heat is EXACTLY constant
+along S/source variations, without requiring [A,C]=0. It is the heat
+of this NEW V. For query A variations a sufficient isospectral
+condition is [A,C]=0 throughout that family, since then
+U_seal=(AS)^dagger MC(AS). Otherwise retain its real heat source.
+No old absolute heat or field normalization is silently substituted.
+
+### Two literal native word contrasts show loss of the report source
+
+Use six wires(x,y,hx,hy,Spin0,Spin1), source port x and original Q8
+spin4. The first four wires are actual blanks; Spin is a genuinely free
+input, so D=64 and r=4. In the owned native alphabet put
+
+    a=sqrt(p), G=[[a,-p],[p,a]],
+    M=SourceI_x^2=Z_x tensor I_Spin,   A=I,
+    C=CX(x,hx)CX(y,hy),
+    S1=G_x G_y^2,      S2=G_x^2 G_y.
+
+All columns, including arbitrary Spin input, are present. Exact7j
+inverse words give G^dagger=SourceI^2 G SourceI^2 on the source port,
+with two three-CX SWAPs for y. Add three actual CX(x,y)^2 identity
+pairs BEFORE birth to the S2 word. Balanced words have both C copies;
+sealed words have C once and one additional CX(x,y)^2 BEFORE birth.
+Every one of these FOUR actual words then has
+
+    G6, SourceI14, CX16; N36; D64; r4.
+
+Their source and record distributions have
+p00=cos^2(theta_G)cos^2(2theta_G)=p^7 for BOTH. But the unsealed
+x-report means are q1=p^2 and q2=4p^3. Hence
+
+    c_old,1=p^3,   c_old,2=1-8p^3,
+    c_old,2^2-c_old,1^2=4(83-134p)>0,
+    c_seal,1=c_seal,2=p^7.
+
+The old complete price contrast is nonzero, while the sealed complete
+price contrast is ZERO. Within each pair the whole fixed-N heat is
+identical by endpoint conjugacy. This is a literal finite-word
+contrast, not an assumed smooth native actuator. It refutes automatic
+source-preserving seal transport; it does not claim these different
+field/source alternatives solve the same fixed-output D_min task.
+
+Old and sealed ABSOLUTE heat are different quantities: M has full
+multiplicities(+32,-32), MC has(+40,-24). If
+K_N(theta)=sum_(k<N)exp[-beta(1-cos((theta+2pi k)/N))], their paired
+heat partitions at N36 are respectively
+2[32K_N(0)+32K_N(pi)] and2[40K_N(0)+24K_N(pi)]. Each counts ALL4608
+Hodge modes. Feedback is counted once with actual rank4, without a
+fictitious N multiplier. No entropy or code-length equality is inferred.
+
+### Even exact archive retention does not annul the new query row
+
+A smaller native instance makes the complete-source failure local and
+explicit. Use x,h,Spin2, source S=G_x, C=CX(x,h), M=SourceI_x^2=Z_x.
+Insert a PAID identity query A0=SourceI_x^4 and its actual expanded
+inverse SourceI_x^12. Together with the actual five-letter inverse of S,
+458 has G2,SourceI22,CX1: N25,D16,r4. At its native base the endpoint
+U0=S^dagger Z_x C S is an involution, with multiplicities(+12,-4).
+Its whole paired heat has800 modes. By the owned fixed-clock
+involution lemma7ad its first source is zero for EVERY primitive-edge
+unitary comparison tangent, including generated inverse variations.
+
+Consider the DECLARED smooth finite-operator query comparison
+A(t)=exp(tJ_x), J=[[0,-1],[1,0]], on the existing identity query cell,
+with the corresponding inverse varied as well. This is not retuning a
+fundamental Golden constant or asserting that such a tangent belongs
+to original X_N. The native base and its paid clock are fixed.
+Every post-copy factor excludes h for all t, so its all-input record
+law459 is exactly constant. Direct complete return gives
+
+    c(t)=p cos(2t)-ap sin(2t),
+    c(0)=p,       c'(0)=-2ap,
+    w=4zeta p^2/(1-zeta+zeta p^2),
+    D_t(H+J)|0=4w sqrt(p)>0.
+
+The actual history0 probability is p, whereas the COMPLETE return
+probability is p^2. They cannot be interchanged. Even the intermediate
+report mean has derivative0 at this point. The positive source comes
+from the asymmetric return kernel, not erasure of the history. The
+heat cannot cancel it here: U0 is a full-carrier involution.
+
+This does not contradict7ba444. That estimate applied to its original
+two-sided echo and actual weak-meter D_P. Removing inverse C changes
+the physical operator. Exact record preservation and zero ideal truth
+defect do not transfer that old price theorem to the new operator.
+
+### Parent route change and next constitutive application
+
+A genuine append archive has now been constructed from actual native
+letters, its fixed-reader map proved, and its changed WHOLE price
+computed. Thus a request for the missing earlier record cannot be
+answered by relabelling active coherent copies or a noisy weak meter.
+The simple true-append completion458 also cannot preserve the original
+Palatini/CAR cofield. Its extra native source is neither a precision
+error nor a removable constant.
+
+The correct next application is a justified joint spatial/matter/
+return-cut coupling or another ACTUALLY selected complete native price
+with the required source identity. The corrected spatial D_sp inverse
+alone is blind to the separately appended matter readouts; the owned
+SourcePortPreparation interaction does not choose their update law.
+Those missing intrinsic couplings cannot be supplied by another neutral
+terminal geometry record or the universal fitted action germ7az.
+
+The concurrent three-paid-word D_min/Euler fork remains intact with
+its genuine Book/code-order and same-task premises. The present
+contrasts do not establish that lower Book price means shorter canonical
+code, and dropping a required record does not produce a same-task
+competitor. No new optimality, Info, action or physical selector is
+introduced. This is a scoped failed seal-source application, not a
+no-go for other cut choices, a ban on controlled reading or GR itself.
+Original admission, constitutive selection, independent normal rows
+and general-refinement obligations remain. GR_closed=false.
+
+### New exact native controls
+
+Run from the repository root. The checker executes only the NEW four
+N36 native words and the NEW N25 word, using the already-owned parser,
+exact inverse expansion and algebraic matrix evaluator. It checks all
+columns and keeps every history/Spin mode; no prior certificate replay.
+The query tangent is an exact matrix control at that native point,
+not an emitted family of new native primitives. Full-clock heat claims
+use the existing analytic phase/involution theorem, not an eigensolver
+extrapolation from an endpoint heat compression.
+
+```python
+from pathlib import Path
+import sys,sympy as S
+sys.path.insert(0,str(Path('02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24').resolve()))
+import native_execution as ne
+p,a=ne.P,ne.A
+Gate=ne.Gate
+def ex(gs,n=6):return ne.Execution(n,tuple(range(n-2)),(),tuple(gs),ne.G_CX_SOURCE_I,0,(n-2,n-1))
+def inv(gs,n=6):return ne.inverse_word(ex(gs,n),max_qubits=n,max_expanded_stages=500)
+def wm(gs,n=6):return ne.word_matrix(ex(gs,n),max_qubits=n,max_expanded_stages=500)
+def eq(x,y):return ne.exact_matrix_equal(S.Matrix(x),S.Matrix(y))
+SI=Gate('SourceI',(0,4,5));M=(SI,SI)
+C=(Gate('CX',(0,2)),Gate('CX',(1,3)));pair=(Gate('CX',(0,1)),)*2
+sources=[(Gate('G',(0,)),Gate('G',(1,)),Gate('G',(1,))),
+         (Gate('G',(0,)),Gate('G',(0,)),Gate('G',(1,)))]
+cs={};Us={};eye=S.eye(64);i=ne.input_isometry(ex(()))
+for j,source in enumerate(sources):
+    pad=pair*(3*j)
+    for sealed in (False,True):
+        gates=pad+(pair if sealed else ())+source+C+M+(() if sealed else C)+inv(source)
+        e=ex(gates);v=ne.inventory(e,max_qubits=6,max_expanded_stages=500)
+        assert (v.g_count,v.source_i_count,v.cx_count,v.gate_count,v.full_dimension,v.cut_rank)==(6,14,16,36,64,4)
+        U=ne.word_matrix(e);Us[j,sealed]=U
+        assert eq(U.T*U,eye) and eq(U*U,eye)
+        corner=i.T*U*i;expected=p**7 if sealed else (p**3 if j==0 else 1-8*p**3)
+        assert eq(corner,expected*S.eye(4));cs[j,sealed]=expected
+        if sealed:
+            Src=wm(source)
+            # All logical x,y and Spin inputs remain free for this reader test.
+            ii=eye[:,[32*x+16*y+k for x in range(2) for y in range(2) for k in range(4)]]
+            for z in range(4):
+                Ph=S.diag(*[int((((r>>3)&1)*2+((r>>2)&1))==z) for r in range(64)])
+                Px=S.diag(*[int(((r>>4)&3)==z) for r in range(64)])
+                assert eq(ii.T*U.T*Ph*U*ii,ii.T*Src.T*Px*Src*ii)
+        assert S.simplify(S.trace(U))==(16 if sealed else 0)
+assert S.simplify(cs[0,True]-cs[1,True])==0
+assert S.simplify(cs[1,False]**2-cs[0,False]**2-4*(83-134*p))==0
+assert S.simplify(83-134*p)>0
+# Paid native identity query: SI^4, with its true SI^12 inverse.
+si=Gate('SourceI',(0,2,3));src=(Gate('G',(0,)),);query=(si,)*4
+copy=(Gate('CX',(0,1)),);middle=(si,)*2
+gates=src+copy+query+middle+inv(query,4)+inv(src,4)
+e=ex(gates,4);v=ne.inventory(e,max_qubits=4,max_expanded_stages=500)
+assert (v.g_count,v.source_i_count,v.cx_count,v.gate_count,v.full_dimension,v.cut_rank)==(2,22,1,25,16,4)
+U=ne.word_matrix(e,max_qubits=4);ii=ne.input_isometry(e,max_qubits=4)
+assert eq(U.T,U) and eq(U*U,S.eye(16)) and S.simplify(S.trace(U))==8
+assert eq(ii.T*U*ii,p*S.eye(4))
+Src=wm(src,4);CC=wm(copy,4);Z=wm(middle,4)
+H=S.kronecker_product(S.Matrix([[0,-1],[1,0]]),S.eye(8))
+dU=Src.T*(Z*H-H*Z)*CC*Src
+assert eq(U.T*dU+dU.T*U,S.zeros(16))
+assert eq(ii.T*dU*ii,-2*a*p*S.eye(4))
+for sign in (-1,1):assert S.simplify(S.trace((S.eye(16)+sign*U)*dU))==0
+Ph=S.diag(*[(r>>2)&1 for r in range(16)]);Px=S.diag(*[(r>>3)&1 for r in range(16)])
+assert H*Ph==Ph*H
+assert eq(ii.T*U.T*Ph*U*ii,ii.T*Src.T*Px*Src*ii)
+Jcopy=CC*Src*ii
+assert eq(Jcopy.T*(Px*H-H*Px)*Jcopy,S.zeros(4))
+z=S.symbols('z',positive=True);w=4*z*p**2/(1-z+z*p**2)
+assert S.simplify(-2*w*(-2*a*p)/p-4*w*a)==0
+print('PASS four literal N36/D64 words, true archive effects, changed complete return, and paid N25/D16 query-source counter')
+print(sys.version.split()[0],S.__version__)
+```
+
+**Parent substitution.** The actual fixed-reader append bridge is
+supplied for458--459. Its price/source transport to the old family
+FAILS by460--461 and by the literal native contrasts and independent
+query row above. This changes that physical route rather than opening
+another record/curvature census. A new source law must come from its
+actual native coupling and cut; no physical closure is inferred.
+
+
 ## 8. Reproduction
 
 Run from this directory:
