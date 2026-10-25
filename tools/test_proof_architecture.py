@@ -1316,7 +1316,34 @@ class ProofArchitectureTests(unittest.TestCase):
         )
         self.assertIn("h ≠ 0", sourced["elaborated_type"])
 
-    def test_published_cold_start_summary_is_compact_and_source_pinned(self) -> None:
+    def test_proper_lorentz_orbit_is_discoverable_from_pinned_owner_and_lean(self) -> None:
+        case = next(
+            item for item in cold_start.CASES
+            if item["id"] == "proper-lorentz-same-orientation-orbit"
+        )
+        hits_by_query = proof.full_text_search_many(
+            proof.ROOT, case["queries"], limit=18
+        )
+        query_pairs = list(zip(case["queries"], hits_by_query))
+        for path in case["required_refs"]:
+            status = cold_start._required_source_status(query_pairs, {"path": path})
+            self.assertTrue(status["found"], f"cold-start search missed {path}")
+        for source in case["required_sources"]:
+            status = cold_start._required_source_status(query_pairs, source)
+            self.assertTrue(status["found"], f"cold-start missed pinned owner: {status}")
+        module = "03_FORMALIZATION/D0/Geometry/A4DStarFiniteLorentzQuotient.lean"
+        exact_query = next(
+            query for query in case["queries"]
+            if "a4d_complete_proper_orbit_coordinates" in query
+        )
+        exact_hits = hits_by_query[case["queries"].index(exact_query)]
+        self.assertTrue(any(
+            hit.get("source") == module and hit.get("direct_content")
+            for hit in exact_hits
+        ), "exact proper-orbit query must surface its Lean source directly")
+        self.assertIn("time orientation", case["scope_review"])
+
+    def test_historical_cold_start_summary_preserves_original_denominator(self) -> None:
         summary_path = (
             proof.ROOT
             / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
@@ -1343,10 +1370,6 @@ class ProofArchitectureTests(unittest.TestCase):
                 (proof.ROOT / "02_REGISTRY/formal_support.csv").read_bytes()
             ).hexdigest(),
         )
-        self.assertEqual(
-            [row["id"] for row in summary["cases"]],
-            [case["id"] for case in cold_start.CASES],
-        )
         self.assertTrue(all(
             row["all_required_sources_found"] and not row["missing_paths"]
             for row in summary["cases"]
@@ -1363,6 +1386,63 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertRegex(replay["full_output_sha256"], r"^[0-9a-f]{64}$")
         self.assertEqual(
             replay["runner_sha256"],
+            "67362b36a94a7ec338af265637ce814c482199ab9b2c682fd7b906750e40daf9",
+        )
+        self.assertEqual(
+            replay["search_engine_sha256"],
+            "aaed4194af38484de97db60c821374955f90dc5cc290d20a6fb8e53f94624262",
+        )
+
+    def test_current_cold_start_summary_covers_proper_lorentz_orbit_case(self) -> None:
+        summary_path = (
+            proof.ROOT
+            / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
+            / "proof_architecture_cold_start_summary_2026-10-26_orbit.json"
+        )
+        payload = summary_path.read_bytes()
+        self.assertEqual(
+            hashlib.sha256(payload).hexdigest(),
+            "a1113299cff33c49984cfaecdf46f5a92c9db804dbddb106f97743252261df13",
+        )
+        summary = json.loads(payload)
+        self.assertEqual(summary["snapshot_commit"],
+                         "d9322d203d6cc0ea60f07feb56356dce7eba87c1")
+        self.assertTrue(summary["worktree_dirty"])
+        self.assertEqual(summary["search_cases_found_all_sources"], 22)
+        self.assertEqual(summary["search_cases_total"], 22)
+        self.assertEqual(summary["benchmark_cases_total"], 23)
+        self.assertEqual(
+            [row["id"] for row in summary["cases"]],
+            [case["id"] for case in cold_start.CASES],
+        )
+        self.assertTrue(all(
+            row["all_required_sources_found"] and not row["missing_paths"]
+            for row in summary["cases"]
+        ))
+        self.assertEqual(
+            sum(row["required_source_count"] for row in summary["cases"]), 131
+        )
+        proper = next(
+            row for row in summary["cases"]
+            if row["id"] == "proper-lorentz-same-orientation-orbit"
+        )
+        self.assertEqual(proper["query_count"], 3)
+        self.assertEqual(proper["required_source_count"], 4)
+        self.assertTrue(summary["change_impact_regression"]["status"] == "pass")
+        self.assertTrue(summary["semantic_scope_review_is_manual"])
+        for path, digest in summary["authority_source_digests"].items():
+            self.assertEqual(
+                hashlib.sha256((proof.ROOT / path).read_bytes()).hexdigest(),
+                digest,
+                f"cold-start summary has stale authority digest for {path}",
+            )
+        replay = summary["replay"]
+        self.assertEqual(replay["source_commit"], summary["snapshot_commit"])
+        self.assertEqual(
+            replay["command"], "python3 tools/proof_architecture_cold_start.py"
+        )
+        self.assertEqual(
+            replay["runner_sha256"],
             hashlib.sha256(
                 (proof.ROOT / "tools/proof_architecture_cold_start.py").read_bytes()
             ).hexdigest(),
@@ -1373,6 +1453,7 @@ class ProofArchitectureTests(unittest.TestCase):
                 (proof.ROOT / "tools/proof_architecture.py").read_bytes()
             ).hexdigest(),
         )
+        self.assertRegex(replay["full_output_sha256"], r"^[0-9a-f]{64}$")
 
     def test_julia_cold_start_tracks_nonzero_chart_composition_boundary(self) -> None:
         case = next(

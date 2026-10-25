@@ -84,6 +84,34 @@ CASES: list[dict[str, Any]] = [
         ),
     },
     {
+        "id": "proper-lorentz-same-orientation-orbit",
+        "queries": [
+            "proper Lorentz same determinant orientation complete coframe link orbit coordinates",
+            "det=1 same orientation Lorentz orbit русская ориентация",
+            "a4d_complete_proper_orbit_coordinates a4dRightProperLorentz_gram_complete",
+        ],
+        "required_refs": [
+            "02_REGISTRY/research/MEMO_A4D_NONLINEAR_EINSTEIN_J2_BRIDGE.md",
+            "03_FORMALIZATION/D0/Geometry/A4DStarFiniteLorentzQuotient.lean",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/proper_role_lorentz_orbit_declarations_2026-10-26.json",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/metric_provenance_crosswalk_2026-10-26_46328dbe.json",
+        ],
+        "required_sources": [
+            {
+                "path": "02_REGISTRY/research/MEMO_A4D_NONLINEAR_EINSTEIN_J2_BRIDGE.md",
+                "commit": "77d3ab6059bd1a3ce48637b97b9f30aa8825fc5f",
+                "blob": "e5e31819492d670c81fc4a2871e1ef8cfa205c08",
+                "scope_query_indexes": [0],
+            },
+        ],
+        "scope_review": (
+            "The finite field theorem recovers a site-dependent determinant-one Lorentz "
+            "frame from equal site Grams, dressed links, and same determinant orientation "
+            "on a nondegenerate reference solder field. It leaves time orientation, the "
+            "selected-action map, physical source selection, and independent acceptance open."
+        ),
+    },
+    {
         "id": "golden-step-vs-internal-ratio",
         "queries": ["Golden physical metric step internal Perron scale ratio native HJR countercontrol"],
         "required_refs": [

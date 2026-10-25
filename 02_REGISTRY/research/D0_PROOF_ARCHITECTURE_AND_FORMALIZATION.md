@@ -7536,3 +7536,30 @@ results and source-location evidence only. The selected-action-to-Lean-carrier
 map, time orientation, global connection elimination, physical metric/source
 selection, semantic relation to the pinned source, exact claim locator, and
 independent C0 acceptance remain open; no physical GR closure is inferred.
+
+### Proper-orbit cold-start retrieval (26 October 2026)
+
+The reusable search regression now has a dedicated proper-Lorentz orbit case.
+Its English query, mixed Russian/English component query, and exact Lean-name
+query all retrieve the pinned J2 source, the Lean module, and the compiled
+crosswalk/inventory. The source pin is commit
+`77d3ab6059bd1a3ce48637b97b9f30aa8825fc5f`, Git blob
+`e5e31819492d670c81fc4a2871e1ef8cfa205c08`; the exact field-orbit Lean query
+returns the owning module as direct content. The case's scope review explicitly
+keeps time orientation, selected-action transport, physical source selection,
+and independent acceptance open.
+
+The full cold-start replay found every source in **22/22** cases and passed the
+**23-case** benchmark, including the source-change/unrelated-prose impact
+control. It checked **131** required-source references. Compact receipt:
+`sources/d0_proof_architecture_formalization_2026-10-24/proof_architecture_cold_start_summary_2026-10-26_orbit.json`,
+SHA-256 `a1113299cff33c49984cfaecdf46f5a92c9db804dbddb106f97743252261df13`.
+The replay records snapshot `d9322d203d6cc0ea60f07feb56356dce7eba87c1`,
+`worktree_dirty=true`, runner SHA-256
+`878b534450eed2f05757d256f20d793beac6b50e3b2da33f8a49dc6863f846b3`,
+search-engine SHA-256
+`aaed4194af38484de97db60c821374955f90dc5cc290d20a6fb8e53f94624262`, and
+full-output SHA-256
+`2f33d9e53a292a1d76f73d90c3450c92d90f1ab2053cb257e10834eb217cbd03`.
+The recorded dirty flag covers the in-progress runner/test/artifact checkpoint;
+the authority digests and exact source pins are recorded in the receipt.
