@@ -16473,6 +16473,340 @@ physical binding and raw-normal obligations instead of reporting them
 closed from density.
 
 
+
+## 7bh. Compose the original return source with the full scene-stage heat before imposing the native Euler law
+
+25 October 2026. Existing #334 / same native-realization and final-composition owner. Read source pin1393a45a (preserving the incoming source theorem at71b4752a81d576e828c9eaffa5f6dc305efa123b), including [the incoming original-CAR16 two-context source theorem](A4D_ORIGINAL_CAR16_TWO_CONTEXT_GLOBAL_SIGNED_BOOST_INVERSE_AND_STATIONARY_POLYNOMIAL_2026_10_25.md). This application consumes that theorem, the original global-time flag/Gram construction,7bf and the recorded-clock Hodge owner. It does not reselect the action, introduce compulsory Slater hardware, or promote physical GR. The exact positive nonvacuum family and its40+2 equations remain unchanged.
+
+### A. The attachment supplies an original source; Slater admission is not a new prerequisite for the Book bootstrap
+
+For the ACTUAL input isometry j, cut P=jj*, complementary test Q and whole unitary U, set K=QUj, F=K*K and M=I-zeta F. The original global-time flag construction identifies M as the quiet-column Gram of that same U. Thus the native Book term is both minus log det M and minus log of that Gram volume squared. This is an operator identity; it does not require physically occupying a new exterior power of CAR16. If the flag/Slater experiment is actually run, its new preparation, registers, inverse and clock enter ITS full heat and price. Equality of its return determinant does not identify two complete Book actions.
+
+The actual future algebra M8 direct-sum M8 requires both parity sectors. The filled-Slater uniqueness theorem additionally assumes a pure invariant ray in an exterior representation of those16 one-particle modes. It does not classify all pure internal DATA/RIGHT preparations. For example the existing pure Choi preparation retains every future effect E_gamma as E_gamma-transpose/16 on RIGHT while its quiet Born probability is Tr M/16, not det M. This is not a competing same-task minimum or a claim of free Choi preparation. It specifies why future sufficiency alone must not silently add an all-mode conjunctive task. The existing Slater and closed-feedback owners already retain that boundary.
+
+More strongly, consume the NEW original-CAR16 signed two-context owner, section7: on its actual fixed-phase (r,nu) chart, two original K1 probabilities q=q_stat and v=q_vac give
+
+\[
+ Dr=\frac{q\,Dv-v\,Dq}{q^2 R_{obs}'(r)},\qquad
+ \frac{D\nu}{\nu}=\frac14\left[\frac{Dq}{q}
+ -\left(\frac{B'(r)}{B(r)}+\frac{4r}{1-r^2}\right)Dr\right],
+ \qquad DJ_{pre}=J_rDr+J_\nu D\nu.                 \tag{499}
+\]
+
+Here R_obs'>12800/59049, q>0, and the stationary-state derivative in Dq is retained. This is regular at r=0; the rare-event cost as nu tends to0 remains. Its exact polynomial resolvent and J_pre=-8 log mathfrak-d(s,t) are already proved, so there is no new spectral/eigenvector calculation here. These are two DISTINCT probe density preparations INSIDE the same original full-DATA cut P_pre=blankApp tensor I16, not two substitute Book cuts. J_pre is per16 block; only a genuine free oldRIGHT rank supplies a multiplier. The exact stationary input is a mixing-limit preparation: if the two contexts are executed, their actual initialization/mixing/readout words, clocks, finite errors and statistical costs must be included.499 can instead be used simply as an operator-coordinate identity for that fixed original F_pre; it does not append a free measurement programme to the price. They do not identify all40 geometric directions, replace full128 future memory, supply a field writer, or measure an exact real derivative from one finite sample.
+
+Book02 master bootstrap and Book03 section03.25 already specify the finite functional H+J and its stationary law. Consequently the direct bootstrap application can use499 without first proving that D0 must run the optional Slater audit. Deriving that physical stationary law itself from D_min is a STRONGER remaining upstream obligation: the three-paid-word owner still needs same-task admissibility and actual code/Book-order control. An event self-information does not establish that control. Do not double-charge an independent entropy, gate fee or R unless it is genuinely selected by the same execution.
+
+### B. A complete same-scene finite Hodge map, with the normalization typed explicitly
+
+The heat transport in7bf is the owned homogeneous scene tensor clock tensor internal interface. The actual RawZone primitive need not satisfy that hypothesis. On the three collective scene coordinates, the degree weight C_S=diag(1/26,1/24,1/22) and the genuine signal projector of SourcePortPreparation give the EXACT obstruction
+
+\[
+ [C_S,R_{port}]_{01}
+ =\left(\frac1{26}-\frac1{24}\right)\frac{143}{355}
+ =-\frac{11}{8520}\ne0.                         \tag{500}
+\]
+
+For X=(I-R_port) tensor I+R_port tensor L_i, the corresponding block is -11(L_i-I)/8520. The real port-to-record copy has the same issue. This is not noncommutation of the TWO scene weights, which7bf already allows: it is noncommutation of a paid gate with a scene weight. Endpoint involution/ispectrality and equal clock/inventory therefore do not authorize the homogeneous heat formula on this placement. The old recorded-clock section8 already owns the general hostile example;500 is its application to the actual source primitives.
+
+Here is an explicit positive replacement calculation on a DECLARED graph, not a claim that D0 has already selected this graph. Let S=K(9,11,13), with33 vertices,359 edges and D_S=diag(24,22,20) by zone. Take the actual paid cyclic word g_0,...,g_(N-1), N>=3, acting on the SAME scene times a d-dimensional retained fibre. Whiten the actual RawZone metric W=diag(9,11,13) on the collective quotient before using Euclidean adjoints. Let b_S*b_S=D_S-A_S, T=sum_t |t+1><t| tensor g_t, and
+
+\[
+ d_{raw}\chi=(b_S\chi_t,\;\chi_{t+1}-g_t\chi_t),\quad
+ R=(D_S+2I)^{-1/2},\quad d=d_{raw}R,
+\]
+\[
+ \Delta_0=d^*d=I-B-R(T+T^*)R,\quad B=RA_SR,
+ \qquad \Delta_1=dd^*.                         \tag{501}
+\]
+
+Scene factors are repeated at every stage and fibre. The raw temporal rows use the ACTUAL native g_t on chi. Normalized cochain coordinates obey chi=R psi: do not simultaneously claim that d psi=0 imposes psi_(t+1)=g_t psi_t. The raw diagonal D_S+2I fixes the stated degree normalization; no fitted coefficient enters501. The quadratic form, L_S<=2D_S and (I-T)*(I-T)<=4I prove0<=Delta_0<=2I. This works without commuting gates and does not require a terminal-only heat factorization.
+
+This is a two-term finite cochain realization inside the Book02 grammar. Its selected-physics premise is precise: the execution's geometric test is the direct sum of its scene-edge discrepancy tests and its paid inter-stage discrepancy tests with this normalization. Book03's default scene normalized Laplacian and FiniteProtocolClock alone do NOT assert that premise. Any selected higher-degree cells or a different paid graph require their own heat. This is not a replacement of the original unspecified Delta_N by notation.
+
+Book03 defaults to the degree-zero scene operator. We report BOTH the degree-zero heat H0 and the explicitly declared H0+H1 choice on this two-term complex; pricing both grades is not inferred from that default. Here n0=33Nd, n1=392Nd. For the two-grade choice keep BOTH Hodge spaces and all their zero modes. Singular-value pairing gives exactly, including rank changes,
+
+\[
+ Z_{01}=2\operatorname{Tr}_{C^0}e^{-\beta\Delta_0}+359Nd,
+ \quad H_{01}=\beta^{-1}\log Z_{01},
+ \quad \rho_0=\frac{2e^{-\beta\Delta_0}}{Z_{01}}.
+                                                        \tag{502}
+\]
+
+Here beta=2p^2, as in the incidence owner. The index term lies INSIDE the logarithm and its derivative denominator. It cannot be discarded as a source-neutral additive action. rho0 is the effective C0 heat cotangent representing BOTH Hodge grades; the actual C0 block of the graded thermal state is exp(-beta Delta0)/Z01. Neither is a physically prepared input.
+
+A common-carrier operator completion is explicit: on C0 take the whole paid-cycle return U_hist=T^N, and on C1 take identity. Put the protected cut at stage0 tensor the actual input cut, with zero support on C1. Its feedback compression is the original endpoint corner. All other clock and one-cochain columns remain in the heat. This mathematical completion requires no second clock, but its physical admission and the choice to price both grades remain declared premises; an identity extension is not a free apparatus construction.
+
+### C. The full heat source is distributed over paid stages; add it to the existing Book adjoint
+
+At fixed scene, ranks, N and beta, differentiation of the full counting trace gives
+
+\[
+ DH_{01}=2\operatorname{Re}\operatorname{Tr}(R\rho_0R\,DT)
+ =2\operatorname{Re}\sum_t\operatorname{Tr}
+       [(R\rho_0R)_{t,t+1}\,Dg_t].                \tag{503}
+\]
+
+There is no assumption that H depends only on U=g_(N-1)...g_0. For the ACTUAL Book corner and cut of part A,
+
+\[
+ DJ=2\zeta\operatorname{Re}\operatorname{Tr}(M^{-1}K^*DK),
+ \qquad DK=(DQ)Uj+Q(DU)j+QU(Dj),\quad
+ DU=\sum_t U_{>t}(Dg_t)U_{<t}.                 \tag{504}
+\]
+
+The product derivative in504 is for the endpoint fibre. On the common full carrier use D(T^N)=sum_(k=0)^(N-1) T^k(DT)T^(N-1-k), with zero C1 derivative; stage0 compression recovers the displayed endpoint formula. Arbitrarily moving full-carrier cuts must use that full derivative, not an endpoint-only substitute.499 feeds504 when U,j are identified with ITS original full128 prepared operator; it does not automatically describe the distinct RawZone example below.
+
+Equations503+504 are the complete FIRST source of this one H01+J realization. They give an explicit stagewise heat covector plus the existing feedback prefix/suffix adjoint. They retain genuine upstream preparation, reverse-word, record and cut motion. Scene variations add the derivative of B and BOTH occurrences of R in501; beta/selected extra terms have their own sources. Changing N is a comparison of two full finite prices, not a continuous derivative on this fixed carrier. An independently selectable cut cannot be frozen by appealing to the pure-input experiment.
+
+A useful uniform budget, derived from Z01>=2n0 exp(-2beta), is
+
+\[
+ |D_tH_{01}|\le
+ \frac{2e^{2\beta}\|R\|^2}{N}\,\|Dg_t\|_{op},
+ \qquad \|R\|^2=1/22.                         \tag{505}
+\]
+
+For S paid SOURCE stages, the dual of maximum per-stage operator norm is consequently bounded by2 exp(2beta) S/(22N). This is a stage-count bound, NOT the homogeneous winding-tail bound. It does not vanish merely because endpoint eigenphases are0 or pi. On the full source support S=N it is order one, and it must still be divided by the ACTUAL geometric gain before comparison with7bf. Adding uncharged idle time or excluding the new clock/controller rows is not an allowed suppression argument.
+
+The concurrently integrated7bg(491)--(498) is preserved: it realizes the complete QUERY target in positive G/CX, retains the paid amplified SOURCE factory and bounds noninvolutive heat on the declared homogeneous placement. No new density or selective-gate claim is needed. The present calculation tests the remaining placement transport; it does not invalidate that compiler result.
+
+This is the exact parent correction to applying7bf or7bg on RawZone: retain its proved complete DJ/SOURCE estimate and ADD503. 7bf’s DH=0 statement and7bg’s noninvolutive heat bound remain valid on their declared homogeneous placements. In particular the finite-readiness no-root argument that consumed the homogeneous formula cannot exclude a compensating raw-scene DH. No cancellation is asserted in the absence of that complete calculation.
+
+### D. One actual equal-endpoint-spectrum comparison tests precisely this transfer
+
+Use the existing native source G, X, record C, Z=X^2 and actual forward inverse words G*=XXGXX, X*=XXX. Put V1=GX, V2=XG and Uj=C Vj* Z Vj C. The chronological words are
+
+    C X G X X X X G X X X X X C
+    C G X X X X X X X X G X X C
+
+Each pays2G+10X+2C, N=14, on full33 scene times spin4 times record2. Since [C,X]=0 and U1=X*U2X, their complete spectra agree: +1 has multiplicity256 and -1 multiplicity8. With the SAME input-port times freeSpin4 times blankRecord cut, both cold corners equal p^3 I4, so
+
+\[
+ J_1=J_2=-4\log(1-4\zeta p^3).                 \tag{506}
+\]
+
+This is equality of that Book return and full endpoint spectrum, not equality of the complete output instruments, intermediate records or canonical task codes. The archived spin can differ. Thus it is NOT a D_min cheaper-competitor counterexample.
+
+For501, use all collective modes and the dark-zone multiplicities8,10,12. The bright block is336 dimensional; dark modes contribute3360 dimensions. Here n0=3696, n1=43904 and n1-n0=40208. The dark contribution and all40208 excess one-cochain zero modes remain in502. The exact primitive words preserve this bright/dark split; arbitrary address-dependent operations would require a new proof of that reduction.
+
+An outward interval Taylor computation at beta=2p^2 gives the safe strict enclosures
+
+\[
+ 1.14474270420046004092\,10^{-11}
+ < H_{0,1}-H_{0,2}
+ <1.14474270420046004094\,10^{-11},
+\]
+\[
+ 9.14598434881116458511\,10^{-13}
+ < (H_{01}+J)_1-(H_{01}+J)_2
+ <9.14598434881116458521\,10^{-13}.              \tag{507}
+\]
+
+The second contrast equals the two-grade heat contrast by506. Its strict sign is not inferred from double-precision subtraction. Diagonalizing L_i (eigenvalues +/-i, each twice) and the record bit-flip (eigenvalues +/-1) reduces the proof to four42-dimensional Hermitian blocks; conjugation identifies the opposite spin phases. The order28 exponential Taylor polynomial is evaluated with outward interval arithmetic. Since ||I-Delta0||<=1 and0<beta<1, the TOTAL bright remainder is at most336/29! for EACH word. The dark spectrum is exp[-beta(1-2cos(2pi k/N)/(d_z+2))], with the original multiplicities and both grades retained. The companion checker encloses the input radicals and this tail as intervals. It does not numerically discard dark modes or cancel the40208 baseline outside the logarithm.
+
+The homogeneous separate-scene/internal control has EXACTLY equal heat because the endpoint spectra coincide. That is explicitly a different placement and carrier.507 proves that its equality cannot be transported to501 merely from the same endpoint spectrum, primitive inventory or equal506. It is a comparison for this declared incidence realization, NOT the as-yet-unidentified selected original Book heat.
+
+### E. Parent substitution and the next joint application
+
+The new incoming two-context inverse removes optional Slater preparation from the task of identifying the ORIGINAL prepared J source on its genuine chart.501–504 supply a concrete full finite heat-and-return source for actual scene primitives on a stated execution graph.500 and506 prevent transferring a zero heat source merely from a conjugate endpoint. These results compose into an actual source calculation; they do not turn source reconstruction into a selected equation.
+
+The remaining physical substitution is the SAME execution's selected geometric test501 (or its actual replacement), cut, preparation/clock and admissible field/control map, followed by its native stationary/constraint law. Pull503+504 back through that map before using the existing full geometric/Euler and nonvacuum consumers. The native two-context r,nu chart is not the primary42-field chart; transport between them remains explicit. For a derivation of stationarity from D_min, use the owned three-word finite fork with the actual complete prices, same-task predicate and code-order error, including505; no Slater-surprise identity supplies that missing order by itself. Neither full D0 selection, exact new finite GR roots, nor generic Einstein universality is claimed. GR_closed=false; positive_gr=false.
+
+
+### F. Reproduction and review of the changed application
+
+Proof pin:15937 UTF8 bytes, SHA256 165b053c51985f06fa35adb77dc0129aa4e5f5546d00281088aaf2c108960bc3. The independent source/type review accepts the full graded cotangent, carrier completion and stage bound; the valuation review accepts the fixed Book cut and mixing/probe boundary. The interval author verifies the literal-word reduction and directed strict bounds. These are scoped research reviews, not a new physical claim acceptance.
+
+The changed checker below uses Python3.11.9/mpmath1.3.0. Save it to a Python file and run it; it writes its directed interval receipt alongside itself. All its arithmetic and original words are included. Source4888bytes, SHA2563a93dcaf458864958beabf290d07692b01340de2f0828b795fa6627f38f4e375. Final receipt2605bytes, SHA256db4eaedf7cb1567f3c01f6b7d585cd70ae7d0655ef8169b5add426db2bae7bb2.
+
+```python
+from pathlib import Path
+from fractions import Fraction as F
+import json, math, time
+from decimal import Decimal, localcontext, ROUND_FLOOR, ROUND_CEILING
+import mpmath as mp
+mp.mp.dps=70
+iv=mp.iv; iv.dps=45
+N=14; n=42; M=28
+I0=iv.mpf(0);I1=iv.mpf(1);CI0=iv.mpc(0);CI1=iv.mpc(1)
+def cx(z): return z if hasattr(z,'_mpci_') else iv.mpc(z,0)
+def rat(x):
+    x=F(x); return iv.mpf(x.numerator)/x.denominator
+def mat(a): return [[rat(v) for v in row] for row in a]
+def eye(d): return [[I1 if i==j else I0 for j in range(d)] for i in range(d)]
+def mul(a,b):
+    return [[sum((a[i][k]*b[k][j] for k in range(len(b))),I0) for j in range(len(b[0]))] for i in range(len(a))]
+def add(a,b): return [[a[i][j]+b[i][j] for j in range(len(a[0]))] for i in range(len(a))]
+def scale(s,a): return [[s*v for v in row] for row in a]
+def tr(a): return sum((a[i][i] for i in range(len(a))),I0)
+def directed_endpoint(t,lower):
+    sign,man,exponent,bitcount=t
+    numerator=-man if sign else man
+    denominator=1
+    if exponent>=0: numerator <<= exponent
+    else: denominator <<= -exponent
+    with localcontext() as ctx:
+        ctx.prec=65
+        ctx.rounding=ROUND_FLOOR if lower else ROUND_CEILING
+        return str(Decimal(numerator)/Decimal(denominator))
+def encode(x):
+    return {'lo':directed_endpoint(x._mpi_[0],True),'hi':directed_endpoint(x._mpi_[1],False)}
+I3=eye(3)
+D=mat([[24,0,0],[0,22,0],[0,0,20]])
+A=mat([[0,11,13],[9,0,13],[9,11,0]])
+K=add(mul(D,A),scale(-1,mul(A,D)))
+Pa=scale(rat(F(-1,2840)),mul(K,K))
+P0=add(I3,scale(-1,Pa))
+R=scale(rat(F(710,567)),mul(mul(Pa,mat([[1,0,0],[0,0,0],[0,0,0]])),Pa))
+p=(iv.sqrt(5)-1)/2; beta=2*p*p
+G=add(add(P0,scale(iv.sqrt(p),Pa)),scale(p/iv.sqrt(2840),K))
+ws=[iv.sqrt(x) for x in [9,11,13]]
+def whiten(a): return [[ws[i]*a[i][j]/ws[j] for j in range(3)] for i in range(3)]
+G=whiten(G); R=whiten(R); A=whiten(A)
+r=[1/iv.sqrt(x) for x in [26,24,22]]
+B=[[r[i]*A[i][j]*r[j] for j in range(3)] for i in range(3)]
+X=add(I3,scale(iv.mpc(-1,1),R)) # I+(i-1)R; conjugate phase gives equal real heat
+words=[list('CXGXXXXGXXXXXC'),list('CGXXXXXXXXGXXC')]
+assert all(len(w)==N for w in words)
+assert all(w.count('G')==2 and w.count('X')==10 and w.count('C')==2 for w in words)
+n0=33*8*N; n1=(359+33)*8*N; hodge_index=n1-n0
+assert (n0,n1,hodge_index)==(3696,43904,40208)
+
+def trace_taylor(word,rec):
+    C=I3 if rec==1 else add(I3,scale(-2,R))
+    gates={'G':G,'X':X,'C':C}
+    hs=[{} for _ in range(n)]
+    def put(i,j,v): hs[i][j]=hs[i].get(j,CI0)+v
+    for t in range(N):
+        for i in range(3):
+            for j in range(3):
+                if i!=j: put(3*t+i,3*t+j,iv.mpc(B[i][j]))
+        s=(t+1)%N; g=gates[word[t]]
+        for i in range(3):
+            for j in range(3):
+                v=cx(r[i]*g[i][j]*r[j])
+                put(3*s+i,3*t+j,v)
+                put(3*t+j,3*s+i,iv.mpc(v.real,-v.imag))
+    rows=[list(v.items()) for v in hs]
+    powh=[[CI1 if i==j else CI0 for j in range(n)] for i in range(n)]
+    total=iv.mpf(n); coeff=I1
+    for k in range(1,M+1):
+        nxt=[]
+        for row in rows:
+            nr=[]
+            for j in range(n):
+                acc=CI0
+                for ell,h in row: acc=acc+h*powh[ell][j]
+                nr.append(acc)
+            nxt.append(nr)
+        powh=nxt
+        coeff=coeff*beta/k
+        trace=sum((powh[j][j].real for j in range(n)),I0)
+        total=total+coeff*trace
+    return iv.exp(-beta)*total
+
+started=time.time(); bright=[]
+for j,w in enumerate(words):
+    z=I0
+    for rec in [1,-1]:
+        v=trace_taylor(w,rec)
+        z=z+4*v
+        print('completed',j,rec,'seconds',round(time.time()-started,2),flush=True)
+    tail=F(336,math.factorial(M+1))
+    z=z+iv.mpf([-1,1])*rat(tail)
+    bright.append(z)
+dark=I0
+for nz,d in [(9,24),(11,22),(13,20)]:
+    for k in range(N):
+        dark=dark+8*(nz-1)*iv.exp(-beta*(1-2*iv.cos(2*iv.pi*k/N)/(d+2)))
+z0=[z+dark for z in bright]
+zp=[2*z+hodge_index for z in z0]
+contrast0=iv.log(z0[0]/z0[1])/beta
+contrastp=iv.log(zp[0]/zp[1])/beta
+out={'method':'outward mpmath.iv interval Taylor powers on4 Hermitian42 blocks, conjugate spin multiplicity4; no eigensolver',
+ 'interval_dps':iv.dps,'mpmath':mp.__version__,'M':M,
+ 'tail_each_Zbright_bound_rational':str(F(336,math.factorial(M+1))),
+ 'tail_justification':'0<=Delta<=2 => ||I-Delta||<=1; beta<1; e^-beta Taylor trace tail <=336/(M+1)!',
+ 'beta':encode(beta),'Zbright':[encode(z) for z in bright],'Zdark':encode(dark),
+ 'Z0':[encode(z) for z in z0],'Zpair':[encode(z) for z in zp],
+ 'delta_Z0_word1_minus_word2':encode(z0[0]-z0[1]),
+ 'delta_H0_word1_minus_word2':encode(contrast0),
+ 'delta_Hpair_word1_minus_word2':encode(contrastp),
+ 'positive_sign':bool(contrastp.a>0),'n0':n0,'n1':n1,'index':hodge_index,'seconds':time.time()-started}
+print(json.dumps(out,indent=2),flush=True)
+Path(__file__).with_suffix('.json').write_text(json.dumps(out,indent=2),encoding='utf8')
+assert contrastp.a>0
+```
+
+Final directed receipt (elapsed runtime is not a proof input):
+
+```json
+{
+  "method": "outward mpmath.iv interval Taylor powers on4 Hermitian42 blocks, conjugate spin multiplicity4; no eigensolver",
+  "interval_dps": 45,
+  "mpmath": "1.3.0",
+  "M": 28,
+  "tail_each_Zbright_bound_rational": "1/26314767838511017721856000000",
+  "tail_justification": "0<=Delta<=2 => ||I-Delta||<=1; beta<1; e^-beta Taylor trace tail <=336/(M+1)!",
+  "beta": {
+    "lo": "0.76393202250021030359082633126872376455938164018587675721720649515",
+    "hi": "0.76393202250021030359082633126872376455938164071136368133901289675"
+  },
+  "Zbright": [
+    {
+      "lo": "178.85618090746007979563056538252853385059751682136036611039816345",
+      "hi": "178.85618090746007979563056538260453680119444635700575487196838148"
+    },
+    {
+      "lo": "178.85618089219389512455039162216403321343406687094974784815099957",
+      "hi": "178.85618089219389512455039162224003616403099642901591203891829074"
+    }
+  ],
+  "Zdark": {
+    "lo": "1566.8369866899834096923396579070832414363218685134514609331590694",
+    "hi": "1566.8369866899834096923396579070832414363218738944375639404566218"
+  },
+  "Z0": [
+    {
+      "lo": "1745.6931675974434894879702232896117752869193853348118270435572329",
+      "hi": "1745.6931675974434894879702232896877782375163204083887468168045153"
+    },
+    {
+      "lo": "1745.6931675821773048168900495292472746497559352498765562061276302",
+      "hi": "1745.6931675821773048168900495293232776003528703234534759793749126"
+    }
+  ],
+  "Zpair": [
+    {
+      "lo": "43699.386335194886978975940446579223550573838768517229212884195444",
+      "hi": "43699.386335194886978975940446579375556475032640816777493633609031"
+    },
+    {
+      "lo": "43699.386335164354609633780099058494549299511865836231823139264048",
+      "hi": "43699.386335164354609633780099058646555200705743875498613763128357"
+    }
+  ],
+  "delta_Z0_word1_minus_word2": {
+    "lo": "1.5266184671080173760288497686566515011358351064182320371228772991E-8",
+    "hi": "1.5266184671080173760440503587760385158512190610676884997498596443E-8"
+  },
+  "delta_H0_word1_minus_word2": {
+    "lo": "1.1447427042004600409233245230454412478219127844878703599573996235E-11",
+    "hi": "1.1447427042004600409347227636757104767448038542313369131608792605E-11"
+  },
+  "delta_Hpair_word1_minus_word2": {
+    "lo": "9.1459843488111645851148958439979340676911364691878391215005243079E-13",
+    "hi": "9.1459843488111645852059627099634562517574002807927942565751562803E-13"
+  },
+  "positive_sign": true,
+  "n0": 3696,
+  "n1": 43904,
+  "index": 40208,
+  "seconds": 52.74743461608887
+}
+```
+
 ## 8. Reproduction
 
 Run from this directory:

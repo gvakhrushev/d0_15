@@ -12249,3 +12249,27 @@ proof and both code pins, including QUERY-boundary/terminal separation.
 All three reviews therefore cover the final scientific text. No new runs.
 The further disjoint original-context/minimal-readout intake545d3e28
 is also preserved; it does not change this calculation's inputs.
+
+
+## 25 October checkpoint: original return source and the paid scene-stage heat must be composed on one carrier
+
+Same existing Draft PR334 / constitutive/native-programme-v1; native realization and final composition. Input1393a45a preserves the concurrent7bg positive G/CX QUERY realization and all new original-CAR16 signed two-context results. Primary artifact: existing paid-source residual7bh, equations499--507. No new task, claim, governance or assembly edge; no changed positive_gr/GR_closed status.
+
+Exact parent application: the incoming two-context theorem provides DJ_pre through original K1 Born jets, including moving rho*, on its signed r,nu chart. It bypasses the optional Slater detector for READING the original Book source. It does not prepare rho* exactly in finite time, change P_pre, identify canonical code length with event surprise or replace all42 field directions. Both probe densities lie inside the same full-DATA Book cut. Any actual probe programme pays its actual mixing/readout clock and finite errors.
+
+7bh constructs the full finite Hodge and stagewise heat covector of one declared SAME-scene execution graph directly from actual gates. Unlike homogeneous placement, its gates do not commute with scene degree weights: exact [C_S,R_port]_01=-11/8520. Its d=d_raw R uses native chi in the raw stage discrepancies, followed by the specified normalization; no unnoticed native-coordinate identification. On fixed scene, DH=2Re sum Tr[(R rho_eff R)_(t,t+1) Dg_t], plus the genuine feedback/cut/source adjoint. Source weights and true clock remain. The 1/N per-stage bound sums to O(1) over all stages and gives no automatic normalized vanishing.
+
+Both grade0 heat and a declared two-grade H0+H1 are recorded. The latter has Z01=2Z0+n1-n0, with the excess harmonic modes INSIDE the logarithm. A common-carrier completion T^N on C0 and identity on C1, with the actual cut at stage0, fixes the mathematical feedback extension. Grade choice, selected geometric test, physical admission of this completion and field/control map remain explicit; Book03's default scene Laplacian is not silently replaced.
+
+Smallest decisive application uses existing literal words with2G+10X+2C, N14. Full endpoint spectra and rank4 return determinant agree, but both complete declared heat prices differ. Outward interval arithmetic gives
+9.14598434881116458511e-13 < (H01+J)_1-(H01+J)_2 <9.14598434881116458521e-13.
+All3696 zero-cochain and43904 one-cochain modes are included, including the40208 index term and8/10/12 dark multiplicities. Four42-dimensional interval Taylor blocks and the exact336/29! tail certify the sign; no double-precision sign inference. The full retained output instruments may differ, so this is not a same-task D_min counterexample. The homogeneous placement's exact zero contrast remains valid on ITS carrier.
+
+This replaces an unsupported endpoint-only heat transfer with an explicit full source calculation and preserves7bf/7bg's valid homogeneous SOURCE bounds. It does not prove a compensating heat cancellation, selected field equation, new finite GR root or source transport from this RawZone fixture to the original CAR2/primary42-field carrier. Next parent substitution: identify the actual execution's geometric test and admissible field/control map, then apply its native stationary/constraint law to the FULL source. Deriving that law from D_min still uses the existing three-word same-task/code-order theorem, not a new compulsory Slater premise.
+
+Final proof15937 UTF8bytes, SHA256165b053c51985f06fa35adb77dc0129aa4e5f5546d00281088aaf2c108960bc3.
+Changed interval checker4888bytes, SHA2563a93dcaf458864958beabf290d07692b01340de2f0828b795fa6627f38f4e375.
+Directed receipt2605bytes, SHA256db4eaedf7cb1567f3c01f6b7d585cd70ae7d0655ef8169b5add426db2bae7bb2.
+Python3.11.9/mpmath1.3.0; final changed calculation PASS. Earlier nearest-rounded tail/receipt endpoints were corrected to exact-rational interval radius and directed Decimal serialization BEFORE freezing this evidence. No old GR, all40, Lean, SOURCE-amplifier or incoming two-context replay was repeated. Source/type and valuation reviews are pinned separately in the primary receipt. Validation/publication evidence follows after final integration.
+
+Affected integration on1393a45a plus this insertion PASS: validate_work; validate_agent_protocol; gr_assembly check(valid=true,54active/98results/5discharged/22obligations,scientific_promotion=false); validate_repo(889claims/31assumptions/58aliases/183formal_support/918Lean closure,warnings0); git diff --check. Final source/type and interval reviewers ACCEPT15937-byte proof pin165b053c; valuation accepted15897-byte pin742c26f, whose later changes are equation cross-references and the7bf/7bg heat-scope sentence, checked by the integrator. The actual mathematical checker is unchanged. Removing only the insertion restores the incoming primary exactly; incoming brief remains an exact prefix. No prior result or limitation was retired. Remote publication must be verified separately from these local checks.
