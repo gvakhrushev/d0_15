@@ -3778,3 +3778,80 @@ assembly contract
 `72fb3bbbc320b4af217cbe7c09580b44556b354e9668cbd11e76933fa8209ba6`, and
 presupposition edges
 `7ff9d1e4ac3447f321afd603eab66554468644bb5fddb33551fdfa22e3e2585d`.
+
+## Positive supplied-profile standard-Hilbert representative (25 October 2026)
+
+The generic finite weighted-adjoint API now proves the square-root change of
+coordinates explicitly. For every finite real coordinate carrier and every
+caller-supplied pointwise-positive profile, the weighted pairing is the
+standard finite Hermitian pairing after coordinate scaling by `sqrt(w)`. If
+an operator is self-adjoint for that weighted pairing, its conjugate
+`S_w A S_w⁻¹` is self-adjoint for the standard pairing
+(`finiteWeightedConjugate_self_adjoint`). This is an algebraic result for a
+given positive profile; it does not construct or select one.
+
+The concrete cubical application
+`cubicalWeightedHodgeDirac_standard_representative_application` applies this
+theorem to the registered finite cubical coboundary and its weighted adjoint,
+for every supplied positive profile and every refinement. `claims.csv` records
+the exact compiled locator. Its existing `LEAN_PROVED` and `CORE-FORMALIZED`
+fields remain unchanged. The standard-Hermitian representative is conditional
+on the supplied profile and is not a construction of the Lorentz-induced
+Hodge weight or a physical selection.
+
+The focused narrow build compiled
+`D0.Geometry.ArchiveWeightedHodgeDirac` (2,989 jobs), including the changed
+`D0.Algebra.FiniteWeightedAdjoint` dependency. The generated-view check passed
+with `stale=0`. The current claim-reuse replay through public import `D0.All`
+resolves all four listed declarations; for the new concrete representative
+application it reports `Classical.choice`, `Quot.sound`, and `propext`, with no
+`native_decide` dependency. Exact types, dependencies, source digest, and
+collector output are pinned in
+`sources/d0_proof_architecture_formalization_2026-10-24/weighted_cubical_hodge_standard_representative_claim_reuse_2026-10-25.json`
+(SHA-256 `0024c82cbc7edf1ccc8c1f90798b4d15f735df447f426195bfb4caa3f3c71a88`,
+Lean-source digest `297b6755258b7496bcb272b141a4e047e69e4384c4634b28110d45005e19280a`,
+collector SHA-256
+`9a8bf7be063ac36db542055fb8a4f4de877cadd32546b8126a7463f65798f95c`,
+snapshot `566aeca2eb3a06f6d2d38e5a01b77541d9a571a4`,
+`worktree_dirty=true`).
+
+### Independent source-locator review for the registered weighted-Hodge claim
+
+An independent source-locator review checked the canonical tracked
+`BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md` at current snapshot
+`566aeca2eb3a06f6d2d38e5a01b77541d9a571a4` and at the claim-introduction
+commit `76c5e0255ee8e184d4dbdab23cbd947549e58a7e`. Neither version contains a
+`06.spectral` section or a Hodge/Dirac passage. The claim row was introduced
+without a corresponding Book 06 source change. Its original Lean owner had
+only finite counts and the legacy Boolean degree-preservation flag; the
+accompanying Python certificate is a floating-point 4×4 two-site example.
+The current Lean module itself explicitly leaves geometric `W` and the
+Lorentz-induced profile outside its results.
+
+The review verdict is that the `BOOK_06 §06.spectral` source locator cannot be
+accepted and the registered canonical claim remains unresolved pending
+primary-source recovery. The reviewed current Book 06 hash is
+`592bbbb1dae9cc599df2eef9cabf117b19f8566d755ad072b77beb04624271d7`; its
+introduction-commit hash is
+`4adeb0338484ea9ea698ad04751a2c846152c69409ef26f70878c856f8603cb3`. The
+claim-introduction `claims.csv` hash is
+`5b4c06f9e1af0b46814a9dbbfad30c8dcdb5f53c165da20ed176d36f500f2f45`, the
+initial Lean module hash is
+`cbb1563817e81f686962be2337b1eec52646a5c342c0348da3bacbf5e5dc1296`, and the
+certificate hash at the reviewed current snapshot is
+`381038f64926f3a37602975bc72475a5c515608ea526dd5ca9fb999a7f33e75a`.
+This review records a locator/source mismatch only. It does not correct claim
+status, decide C0 membership, or accept the broader canonical construction.
+The broader C0 freeze and independent package acceptance remain open.
+
+The same independent reviewer separately accepted the exact positive-profile
+standard-representative slice above after checking its statement and proof
+chain. The review verified that the square-root pairing identity, supplied
+weighted self-adjointness, and uniqueness of the Hermitian adjoint are the
+only mathematical steps. It found no `sorry` or introduced `axiom`; it did not
+rerun the build. The reviewed Lean source hashes are
+`f982a15b6b56d934fa9fbccdae1d5c9df4c3ecc92139d25f87248e9e39eb2e7d` for
+`FiniteWeightedAdjoint.lean` and
+`a33d2395336ba949244f0725a1b08bef34f0602e4865be2fc47e7a2a095aff2e` for
+`ArchiveWeightedHodgeDirac.lean`. Acceptance is limited to this conditional
+algebraic slice; the geometric profile and canonical C0 claim remain open.

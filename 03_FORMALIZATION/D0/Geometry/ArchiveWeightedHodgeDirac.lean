@@ -232,6 +232,24 @@ theorem cubicalWeightedHodgeDirac_positive_profile_application :
     exact cubicalWeightedHodgeDirac_pairing_self_adjoint N w
       (fun p => ne_of_gt (hw p)) ψ φ
 
+/-- For every caller-supplied positive cubical profile, the weighted
+self-adjoint Hodge--Dirac has a standard-Hilbert self-adjoint representative
+given by square-root conjugation. This is conditional algebraic transport;
+the profile is not the Lorentz-induced Hodge weight and is not selected here. -/
+theorem cubicalWeightedHodgeDirac_standard_representative_application :
+    ∀ N (w : ArchiveCochainBasis N → ℝ), (∀ p, 0 < w p) →
+      D0.Algebra.finiteHermitianAdjoint
+        (D0.Algebra.finiteWeightedConjugate w
+          (cubicalWeightedHodgeDiracₗ N w)) =
+        D0.Algebra.finiteWeightedConjugate w
+          (cubicalWeightedHodgeDiracₗ N w) := by
+  intro N w hw
+  apply D0.Algebra.finiteWeightedConjugate_self_adjoint w hw
+  intro ψ φ
+  simpa [cubicalWeightedHodgeDirac] using
+    cubicalWeightedHodgeDirac_pairing_self_adjoint N w
+      (fun p => ne_of_gt (hw p)) ψ φ
+
 /-- Its square is the anticommutator `d d†_w + d†_w d`, using the actual
 nilpotency theorem for the normalized cubical coboundary. -/
 theorem cubicalWeightedHodgeDirac_square (N : ℕ)

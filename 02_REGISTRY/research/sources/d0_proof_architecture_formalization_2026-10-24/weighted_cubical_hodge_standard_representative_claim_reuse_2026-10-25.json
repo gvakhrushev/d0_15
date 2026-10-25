@@ -1,0 +1,1244 @@
+{
+  "key": "D0-ARCHIVE-WEIGHTED-HODGE-DIRAC-001",
+  "matches": [
+    {
+      "item": {
+        "kind": "claim-metadata",
+        "key": "D0-ARCHIVE-WEIGHTED-HODGE-DIRAC-001",
+        "label": "BOOK_06 §06.spectral Form-degree-preserving self-adjoint weighted Hodge Dirac operator",
+        "source": "02_REGISTRY/claims.csv",
+        "record": {
+          "claim_id": "D0-ARCHIVE-WEIGHTED-HODGE-DIRAC-001",
+          "book": "BOOK_06",
+          "section": "06.spectral Form-degree-preserving self-adjoint weighted Hodge Dirac operator",
+          "lean_module": "D0.Geometry.ArchiveWeightedHodgeDirac",
+          "lean_theorem": "archive_weighted_hodge_dirac_owner;cubicalWeightedHodgeDirac_application;cubicalWeightedHodgeDirac_positive_profile_application;cubicalWeightedHodgeDirac_standard_representative_application",
+          "lean_status": "LEAN_PROVED",
+          "uses_bridge_assumptions": "False",
+          "assumption_ids": "",
+          "python_cert": "",
+          "release_status": "CORE-FORMALIZED",
+          "notes": "Registered claim text: construction of the canonical weighted Hodge Dirac operator. The compiled locators are archive_weighted_hodge_dirac_owner, cubicalWeightedHodgeDirac_application, cubicalWeightedHodgeDirac_positive_profile_application, and cubicalWeightedHodgeDirac_standard_representative_application. The conditional cubical applications construct d + d†_w from the registered coboundary for caller-supplied diagonal profiles. For a strictly positive comparison profile, the new application proves positive definiteness and self-adjointness for that pairing; this profile is not the Lorentz-induced Hodge weight (whose finite exterior pairing has signature (8,8)) and is neither geometrically derived nor physically selected. The signed-profile application also proves the Hodge anticommutator square and degree preservation. For every caller-supplied positive profile, cubicalWeightedHodgeDirac_standard_representative_application proves standard-Hermitian self-adjointness after square-root conjugation; it does not identify the profile with the Lorentz-induced weight. The existing LEAN_PROVED and CORE-FORMALIZED labels are preserved; these locator strings and conditional results do not independently accept the registered canonical or physical properties or C0 membership."
+        },
+        "search_terms": [
+          "D0-ARCHIVE-WEIGHTED-HODGE-DIRAC-001",
+          "BOOK_06",
+          "06.spectral Form-degree-preserving self-adjoint weighted Hodge Dirac operator",
+          "D0.Geometry.ArchiveWeightedHodgeDirac",
+          "archive_weighted_hodge_dirac_owner",
+          "cubicalWeightedHodgeDirac_application",
+          "cubicalWeightedHodgeDirac_positive_profile_application",
+          "cubicalWeightedHodgeDirac_standard_representative_application",
+          "Registered claim text: construction of the canonical weighted Hodge Dirac operator. The compiled locators are archive_weighted_hodge_dirac_owner, cubicalWeightedHodgeDirac_application, cubicalWeightedHodgeDirac_positive_profile_application, and cubicalWeightedHodgeDirac_standard_representative_application. The conditional cubical applications construct d + d†_w from the registered coboundary for caller-supplied diagonal profiles. For a strictly positive comparison profile, the new application proves positive definiteness and self-adjointness for that pairing; this profile is not the Lorentz-induced Hodge weight (whose finite exterior pairing has signature (8,8)) and is neither geometrically derived nor physically selected. The signed-profile application also proves the Hodge anticommutator square and degree preservation. For every caller-supplied positive profile, cubicalWeightedHodgeDirac_standard_representative_application proves standard-Hermitian self-adjointness after square-root conjugation; it does not identify the profile with the Lorentz-induced weight. The existing LEAN_PROVED and CORE-FORMALIZED labels are preserved; these locator strings and conditional results do not independently accept the registered canonical or physical properties or C0 membership."
+        ]
+      },
+      "declared_applications": [],
+      "declared_result": null,
+      "target_obligation": null,
+      "target_interface": null,
+      "registered_assumptions": [],
+      "scoped_attempts": [
+        {
+          "id": "phase-count-shortcut",
+          "result": "phase-count-counterexample",
+          "interface": "resonance-divisor-v1",
+          "work_key": "phase-count-nullity-shortcut",
+          "scope": "The proposed nullity=2 max(n_+i,n_-i) rule is false already at (-1,-1,i,i).",
+          "reopen_when": "The formula or its domain changes explicitly and no longer includes the certified counterexample. Full divisor classification is a different task.",
+          "review": {
+            "state": "proposed"
+          },
+          "question_digest": "801c1b633ff8ca9e7bdb105091df64d28ea606631ab153af3a0c99281fdb13c8",
+          "question": {
+            "statement": "For every z in (C*)^4, nullity A(z)=2 max(n_+i,n_-i).",
+            "assumes": []
+          }
+        },
+        {
+          "id": "dmin-canonicality-source-bound-inference",
+          "result": "dmin-canonicality-source-bound-countermodel",
+          "interface": "complete-history-code-source-v1",
+          "work_key": "dmin-same-object-competitive-source",
+          "scope": "The literal-comparison countermodel only: canonicality, injectivity and golden word counts do not supply a Delta-equivalent same-object universal decoder or the first-source bound.",
+          "reopen_when": "A pinned construction in actual D0 proves Pair(decoder_N,U_N(X_N)) is Delta-equivalent to Enc(X_N) on the same complete history, establishes an admitted injective decoder and a cost-capacity-matched competitive bound, and controls the same moving law/Fisher source. A changed interface needs a new typed question.",
+          "question_digest": "b894222b378feb118a9e514e6fbaf9c9a27d7da296b4cc9c384f0aa0a0207c13",
+          "question": {
+            "statement": "Do the Book 01 canonicality definition, injectivity, and golden F/R word counts alone imply a same-object competitive decoder and the normalized complete-history code-minus-entropy first-source bound?",
+            "assumes": [
+              "D_min=Can(Enc(X)) is minimal only within the actual Delta-equivalence class.",
+              "No Delta-equivalence between Pair(decoder_N,U_N(X_N)) and Enc(X_N) is assumed unless proved.",
+              "The physical code-cost unit and complete moving probability law are fixed by the native programme."
+            ]
+          },
+          "review": {
+            "state": "proposed"
+          }
+        },
+        {
+          "id": "affine-scalar-perron-pressure-palatiniaction-shortcut",
+          "result": "original-book-triangle-odds-960-affine-pressure-no-go",
+          "interface": "original-scene-book-triangle-odds-pressure-boundary-v1",
+          "work_key": "affine-scalar-perron-pressure-palatiniaction-shortcut",
+          "scope": "Only the affine edge-price plus scalar positive Perron-pressure route as the entire Palatini action. This says nothing about nonlinear prices or the original complete H+J+R/CAR/memory/measurement/preparation/work/clock action.",
+          "reopen_when": "A physically admitted non-affine field-to-edge price map or an independently derived additional same-history action term changes the exact action family; record that new interface and compare its full Hessian/source rather than relabeling this pressure-only route.",
+          "review": {
+            "state": "proposed"
+          },
+          "question_digest": "ed681305328568ac87e9a07cbad484f3a377e397936e3f8cb7d8202f63676968",
+          "question": {
+            "statement": "Can the entire original 24-link Palatini quadratic action be derived from positive scalar Perron pressure after an affine map from the Lorentz coordinates to the original directed-edge prices?",
+            "assumes": [
+              "The complete field-to-edge-price map is affine on the 24 independent original Lorentz directions.",
+              "The candidate action is only positive scalar Perron pressure; no additional Cost-Info, H+J+R, CAR/memory, measurement, preparation, clock or work terms contribute.",
+              "The same original 24-direction Palatini Hessian of inertia (12,12) is the target."
+            ]
+          }
+        },
+        {
+          "id": "double-null-degree5-ward-selected-rref",
+          "result": "double-null-degree5-selected-rref-ward-obstruction",
+          "interface": "double-null-degree5-coframe-gradient-ward-v1",
+          "work_key": "double-null-selected-rref-degree5-ward-extension",
+          "scope": "The exact selected lower-order representative stated in the question; the nonzero fifth-order Ward projection rules out any fifth-amplitude correction for that representative.",
+          "reopen_when": "Vary the remaining joint cubic/mixed-quartic or asymmetric-quartic homogeneous modes, change the finite carrier/action, or enlarge the physical question. Any such result needs its own pinned interface and must not be inferred from this selected-representative obstruction.",
+          "review": {
+            "state": "proposed"
+          },
+          "question_digest": "c22c3c32995ca430f378c98ea32ba1b6b20bb200772179da035d8110ec0029cb",
+          "question": {
+            "statement": "Does the exact selected lower-order RREF representative of the perpendicular H=a*x, J=b*y branch at h=1 admit any fifth-amplitude extension, after allowing arbitrary fifth-degree corrections to the Lorentz links and coframe?",
+            "assumes": [
+              "The original six-plaquette Lorentz-star action and its all-40 Euler variations are fixed.",
+              "The lower-order fields are exactly the mixed-quartic and asymmetric-quartic RREF representatives pinned by the cited checkers, with their remaining homogeneous modes set to zero.",
+              "The fifth-order Lorentz exponential includes all terms through degree five."
+            ]
+          }
+        }
+      ],
+      "conceptual_presupposition_edges": [],
+      "warning": "Declared metadata links are not Lean type-checking or independent scientific acceptance."
+    }
+  ],
+  "snapshot_commit": "566aeca2eb3a06f6d2d38e5a01b77541d9a571a4",
+  "source_digests": {
+    "02_REGISTRY/claims.csv": "e2fcba29050a9017aa6d1e7501f192e6209d2f6c04d8e9b791930c4e54c6cbf5",
+    "02_REGISTRY/assumptions.csv": "2bc9f8c040a776d784fdbfdf62569b72e4f70ff0a182fc66d0ced31cb5f13a36",
+    "02_REGISTRY/formal_support.csv": "852690a586e3b3f504dd9d78ccdfd622a38933aa448d093e920b48a52872dd54",
+    "02_REGISTRY/aliases.csv": "8cda9e7ebfa26a01a04a4d51b56eb6b93425816a5fe073aa74cbae94041f672f",
+    "02_REGISTRY/gr_assembly/applications.json": "d841fe9ccbb5e578836740b46d436147f74d9eb9c92413bbc924b942be6ee511",
+    "02_REGISTRY/gr_assembly/contract.json": "72fb3bbbc320b4af217cbe7c09580b44556b354e9668cbd11e76933fa8209ba6",
+    "02_REGISTRY/presupposition_edges.json": "7ff9d1e4ac3447f321afd603eab66554468644bb5fddb33551fdfa22e3e2585d"
+  },
+  "compiled_claim_reuse": [
+    {
+      "claim_id": "D0-ARCHIVE-WEIGHTED-HODGE-DIRAC-001",
+      "claim_locator_mappings": [
+        {
+          "claim_id": "D0-ARCHIVE-WEIGHTED-HODGE-DIRAC-001",
+          "module_locator": "D0.Geometry.ArchiveWeightedHodgeDirac",
+          "theorem_atom": "archive_weighted_hodge_dirac_owner",
+          "candidate_names": [
+            "D0.Geometry.ArchiveWeightedHodgeDirac.archive_weighted_hodge_dirac_owner",
+            "D0.Geometry.archive_weighted_hodge_dirac_owner",
+            "D0.archive_weighted_hodge_dirac_owner"
+          ],
+          "resolution_status": "resolved",
+          "resolved_declarations": [
+            {
+              "axioms": [
+                "Classical.choice",
+                "D0.Geometry.car_create_anticommutator_int._native.native_decide.ax_1_1",
+                "D0.Geometry.car_mixed_anticommutator_int._native.native_decide.ax_1_1",
+                "Quot.sound",
+                "propext"
+              ],
+              "binders": [],
+              "conclusion_whnf": "D0.Geometry.formDegreeCount4D = 5 ∧\n  Fintype.card D0.Geometry.CubicalCellType = 16 ∧\n    D0.Geometry.DegreePreservingLaplacian true ∧\n      Fintype.card D0.Role = 4 ∧\n        (∀ (N : ℕ) (ψ : D0.Geometry.ArchiveCochain N),\n            D0.Geometry.cubicalCoboundary N (D0.Geometry.cubicalCoboundary N ψ) = 0) ∧\n          (∀ (N k : ℕ) (ψ : D0.Geometry.ArchiveCochain N),\n              D0.Geometry.HomogeneousCochain N k ψ →\n                D0.Geometry.HomogeneousCochain N k (D0.Geometry.hodgeCarDirac N (D0.Geometry.hodgeCarDirac N ψ))) ∧\n            (∀ (N : ℕ) (ψ φ : D0.Geometry.ArchiveCochain N),\n                D0.Geometry.cochainPairing N (D0.Geometry.hodgeCarDirac N ψ) φ =\n                  D0.Geometry.cochainPairing N ψ (D0.Geometry.hodgeCarDirac N φ)) ∧\n              (∀ (N : ℕ) (w : D0.Geometry.ArchiveCochainBasis N → ℝ) (ψ φ : D0.Geometry.ArchiveCochain N),\n                  (∀ (p : D0.Geometry.ArchiveCochainBasis N), w p ≠ 0) →\n                    D0.Algebra.finiteWeightedPairing w (D0.Geometry.hodgeCarDirac N ψ) φ =\n                      D0.Algebra.finiteWeightedPairing w ψ ((D0.Geometry.hodgeCarDiracDiagonalAdjoint N w) φ)) ∧\n                ∀ (N : ℕ) (w : D0.Geometry.ArchiveCochainBasis N → ℝ),\n                  (∀ (p : D0.Geometry.ArchiveCochainBasis N), w p ≠ 0) →\n                    D0.Algebra.finiteWeightedAdjoint w (D0.Geometry.hodgeCarDiracₗ N ∘ₗ D0.Geometry.hodgeCarDiracₗ N) =\n                      D0.Geometry.hodgeCarDiracDiagonalAdjoint N w ∘ₗ D0.Geometry.hodgeCarDiracDiagonalAdjoint N w",
+              "declaration_kind": "theorem",
+              "declaration_ranges": {
+                "declaration": {
+                  "end": {
+                    "column": 61,
+                    "line": 359
+                  },
+                  "start": {
+                    "column": 0,
+                    "line": 319
+                  }
+                },
+                "selection": {
+                  "end": {
+                    "column": 42,
+                    "line": 326
+                  },
+                  "start": {
+                    "column": 8,
+                    "line": 326
+                  }
+                }
+              },
+              "elaborated_type": "D0.Geometry.formDegreeCount4D = 5 ∧\n  Fintype.card D0.Geometry.CubicalCellType = 16 ∧\n    D0.Geometry.DegreePreservingLaplacian true ∧\n      Fintype.card D0.Role = 4 ∧\n        (∀ (N : ℕ) (ψ : D0.Geometry.ArchiveCochain N),\n            D0.Geometry.cubicalCoboundary N (D0.Geometry.cubicalCoboundary N ψ) = 0) ∧\n          (∀ (N k : ℕ) (ψ : D0.Geometry.ArchiveCochain N),\n              D0.Geometry.HomogeneousCochain N k ψ →\n                D0.Geometry.HomogeneousCochain N k (D0.Geometry.hodgeCarDirac N (D0.Geometry.hodgeCarDirac N ψ))) ∧\n            (∀ (N : ℕ) (ψ φ : D0.Geometry.ArchiveCochain N),\n                D0.Geometry.cochainPairing N (D0.Geometry.hodgeCarDirac N ψ) φ =\n                  D0.Geometry.cochainPairing N ψ (D0.Geometry.hodgeCarDirac N φ)) ∧\n              (∀ (N : ℕ) (w : D0.Geometry.ArchiveCochainBasis N → ℝ) (ψ φ : D0.Geometry.ArchiveCochain N),\n                  (∀ (p : D0.Geometry.ArchiveCochainBasis N), w p ≠ 0) →\n                    D0.Algebra.finiteWeightedPairing w (D0.Geometry.hodgeCarDirac N ψ) φ =\n                      D0.Algebra.finiteWeightedPairing w ψ ((D0.Geometry.hodgeCarDiracDiagonalAdjoint N w) φ)) ∧\n                ∀ (N : ℕ) (w : D0.Geometry.ArchiveCochainBasis N → ℝ),\n                  (∀ (p : D0.Geometry.ArchiveCochainBasis N), w p ≠ 0) →\n                    D0.Algebra.finiteWeightedAdjoint w (D0.Geometry.hodgeCarDiracₗ N ∘ₗ D0.Geometry.hodgeCarDiracₗ N) =\n                      D0.Geometry.hodgeCarDiracDiagonalAdjoint N w ∘ₗ D0.Geometry.hodgeCarDiracDiagonalAdjoint N w",
+              "exists": true,
+              "internal_name": false,
+              "module": "D0.Geometry.ArchiveWeightedHodgeDirac",
+              "name": "D0.Geometry.archive_weighted_hodge_dirac_owner",
+              "proof_dependencies": [
+                "And",
+                "And.intro",
+                "Bool",
+                "Bool.fintype",
+                "Bool.true",
+                "CommRing.toNonUnitalCommRing",
+                "D0.Algebra.finiteWeightedAdjoint",
+                "D0.Algebra.finiteWeightedPairing",
+                "D0.Dyad",
+                "D0.Geometry.ArchiveCochain",
+                "D0.Geometry.ArchiveCochainBasis",
+                "D0.Geometry.ArchiveFockState",
+                "D0.Geometry.ArchiveRolePhaseGroup",
+                "D0.Geometry.CubicalCellType",
+                "D0.Geometry.DegreePreservingLaplacian",
+                "D0.Geometry.HomogeneousCochain",
+                "D0.Geometry.card_archive_fock_state",
+                "D0.Geometry.cochainPairing",
+                "D0.Geometry.cubicalCoboundary",
+                "D0.Geometry.d_squared_eq_zero",
+                "D0.Geometry.formDegreeCount4D",
+                "D0.Geometry.formDegreeCount4D_eq_five",
+                "D0.Geometry.hodgeCarDirac",
+                "D0.Geometry.hodgeCarDiracDiagonalAdjoint",
+                "D0.Geometry.hodgeCarDirac_diagonal_weight_adjoint",
+                "D0.Geometry.hodgeCarDirac_self_adjoint",
+                "D0.Geometry.hodgeCarDirac_square_diagonal_weight_adjoint",
+                "D0.Geometry.hodgeCarDiracₗ",
+                "D0.Geometry.instNeZeroArchiveFibers",
+                "D0.Geometry.unweightedHodgeSquare_degree_preserving",
+                "D0.Role",
+                "D0.archiveFibers",
+                {
+                  "_omitted_items": 43
+                }
+              ],
+              "type_dependencies": [
+                "And",
+                "Bool",
+                "Bool.fintype",
+                "Bool.true",
+                "CommRing.toNonUnitalCommRing",
+                "D0.Algebra.finiteWeightedAdjoint",
+                "D0.Algebra.finiteWeightedPairing",
+                "D0.Dyad",
+                "D0.Geometry.ArchiveCochain",
+                "D0.Geometry.ArchiveCochainBasis",
+                "D0.Geometry.ArchiveFockState",
+                "D0.Geometry.ArchiveRolePhaseGroup",
+                "D0.Geometry.CubicalCellType",
+                "D0.Geometry.DegreePreservingLaplacian",
+                "D0.Geometry.HomogeneousCochain",
+                "D0.Geometry.cochainPairing",
+                "D0.Geometry.cubicalCoboundary",
+                "D0.Geometry.formDegreeCount4D",
+                "D0.Geometry.hodgeCarDirac",
+                "D0.Geometry.hodgeCarDiracDiagonalAdjoint",
+                "D0.Geometry.hodgeCarDiracₗ",
+                "D0.Geometry.instNeZeroArchiveFibers",
+                "D0.Role",
+                "D0.archiveFibers",
+                "DFunLike.coe",
+                "DivisionSemiring.toSemiring",
+                "Eq",
+                "Field.toCommRing",
+                "Field.toSemifield",
+                "Fin.fintype",
+                "Fintype.card",
+                "Fintype.decidablePiFintype",
+                {
+                  "_omitted_items": 33
+                }
+              ],
+              "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveWeightedHodgeDirac.lean"
+            }
+          ]
+        },
+        {
+          "claim_id": "D0-ARCHIVE-WEIGHTED-HODGE-DIRAC-001",
+          "module_locator": "D0.Geometry.ArchiveWeightedHodgeDirac",
+          "theorem_atom": "cubicalWeightedHodgeDirac_application",
+          "candidate_names": [
+            "D0.Geometry.ArchiveWeightedHodgeDirac.cubicalWeightedHodgeDirac_application",
+            "D0.Geometry.cubicalWeightedHodgeDirac_application",
+            "D0.cubicalWeightedHodgeDirac_application"
+          ],
+          "resolution_status": "resolved",
+          "resolved_declarations": [
+            {
+              "axioms": [
+                "Classical.choice",
+                "D0.Geometry.carCreateInt_degree_raise._native.native_decide.ax_1_1",
+                "D0.Geometry.car_create_anticommutator_int._native.native_decide.ax_1_1",
+                "Quot.sound",
+                "propext"
+              ],
+              "binders": [],
+              "conclusion_whnf": "(∀ (N : ℕ) (w : D0.Geometry.ArchiveCochainBasis N → ℝ),\n    (∀ (p : D0.Geometry.ArchiveCochainBasis N), w p ≠ 0) →\n      ∀ (ψ : D0.Geometry.ArchiveCochain N) (φ : D0.Geometry.ArchiveCochainBasis N → ℝ),\n        D0.Algebra.finiteWeightedPairing w (D0.Geometry.cubicalWeightedHodgeDirac N w ψ) φ =\n          D0.Algebra.finiteWeightedPairing w ψ (D0.Geometry.cubicalWeightedHodgeDirac N w φ)) ∧\n  (∀ (N : ℕ) (w : D0.Geometry.ArchiveCochainBasis N → ℝ),\n      (∀ (p : D0.Geometry.ArchiveCochainBasis N), w p ≠ 0) →\n        D0.Geometry.cubicalWeightedHodgeDiracₗ N w ∘ₗ D0.Geometry.cubicalWeightedHodgeDiracₗ N w =\n          D0.Geometry.cubicalCoboundaryₗ N ∘ₗ D0.Geometry.cubicalCodifferentialDiagonalAdjoint N w +\n            D0.Geometry.cubicalCodifferentialDiagonalAdjoint N w ∘ₗ D0.Geometry.cubicalCoboundaryₗ N) ∧\n    ∀ (N k : ℕ) (w : D0.Geometry.ArchiveCochainBasis N → ℝ) (ψ : D0.Geometry.ArchiveCochain N),\n      (∀ (p : D0.Geometry.ArchiveCochainBasis N), w p ≠ 0) →\n        D0.Geometry.HomogeneousCochain N k ψ →\n          D0.Geometry.HomogeneousCochain N k\n            (D0.Geometry.cubicalWeightedHodgeDirac N w (D0.Geometry.cubicalWeightedHodgeDirac N w ψ))",
+              "declaration_kind": "theorem",
+              "declaration_ranges": {
+                "declaration": {
+                  "end": {
+                    "column": 74,
+                    "line": 317
+                  },
+                  "start": {
+                    "column": 0,
+                    "line": 294
+                  }
+                },
+                "selection": {
+                  "end": {
+                    "column": 45,
+                    "line": 298
+                  },
+                  "start": {
+                    "column": 8,
+                    "line": 298
+                  }
+                }
+              },
+              "elaborated_type": "(∀ (N : ℕ) (w : D0.Geometry.ArchiveCochainBasis N → ℝ),\n    (∀ (p : D0.Geometry.ArchiveCochainBasis N), w p ≠ 0) →\n      ∀ (ψ : D0.Geometry.ArchiveCochain N) (φ : D0.Geometry.ArchiveCochainBasis N → ℝ),\n        D0.Algebra.finiteWeightedPairing w (D0.Geometry.cubicalWeightedHodgeDirac N w ψ) φ =\n          D0.Algebra.finiteWeightedPairing w ψ (D0.Geometry.cubicalWeightedHodgeDirac N w φ)) ∧\n  (∀ (N : ℕ) (w : D0.Geometry.ArchiveCochainBasis N → ℝ),\n      (∀ (p : D0.Geometry.ArchiveCochainBasis N), w p ≠ 0) →\n        D0.Geometry.cubicalWeightedHodgeDiracₗ N w ∘ₗ D0.Geometry.cubicalWeightedHodgeDiracₗ N w =\n          D0.Geometry.cubicalCoboundaryₗ N ∘ₗ D0.Geometry.cubicalCodifferentialDiagonalAdjoint N w +\n            D0.Geometry.cubicalCodifferentialDiagonalAdjoint N w ∘ₗ D0.Geometry.cubicalCoboundaryₗ N) ∧\n    ∀ (N k : ℕ) (w : D0.Geometry.ArchiveCochainBasis N → ℝ) (ψ : D0.Geometry.ArchiveCochain N),\n      (∀ (p : D0.Geometry.ArchiveCochainBasis N), w p ≠ 0) →\n        D0.Geometry.HomogeneousCochain N k ψ →\n          D0.Geometry.HomogeneousCochain N k\n            (D0.Geometry.cubicalWeightedHodgeDirac N w (D0.Geometry.cubicalWeightedHodgeDirac N w ψ))",
+              "exists": true,
+              "internal_name": false,
+              "module": "D0.Geometry.ArchiveWeightedHodgeDirac",
+              "name": "D0.Geometry.cubicalWeightedHodgeDirac_application",
+              "proof_dependencies": [
+                "And",
+                "And.intro",
+                "Bool",
+                "Bool.fintype",
+                "D0.Algebra.finiteWeightedPairing",
+                "D0.Dyad",
+                "D0.Geometry.ArchiveCochain",
+                "D0.Geometry.ArchiveCochainBasis",
+                "D0.Geometry.ArchiveFockState",
+                "D0.Geometry.ArchiveRolePhaseGroup",
+                "D0.Geometry.HomogeneousCochain",
+                "D0.Geometry.cubicalCoboundaryₗ",
+                "D0.Geometry.cubicalCodifferentialDiagonalAdjoint",
+                "D0.Geometry.cubicalWeightedHodgeDirac",
+                "D0.Geometry.cubicalWeightedHodgeDirac_pairing_self_adjoint",
+                "D0.Geometry.cubicalWeightedHodgeDirac_square",
+                "D0.Geometry.cubicalWeightedHodgeDirac_square_degree_preserving",
+                "D0.Geometry.cubicalWeightedHodgeDiracₗ",
+                "D0.Geometry.instNeZeroArchiveFibers",
+                "D0.Role",
+                "D0.archiveFibers",
+                "Eq",
+                "Fin.fintype",
+                "HAdd.hAdd",
+                "LinearMap",
+                "LinearMap.comp",
+                "LinearMap.instAdd",
+                "Nat",
+                "Ne",
+                "OfNat.ofNat",
+                "Pi.Function.module",
+                "Pi.addCommMonoid",
+                {
+                  "_omitted_items": 18
+                }
+              ],
+              "type_dependencies": [
+                "And",
+                "Bool",
+                "Bool.fintype",
+                "D0.Algebra.finiteWeightedPairing",
+                "D0.Dyad",
+                "D0.Geometry.ArchiveCochain",
+                "D0.Geometry.ArchiveCochainBasis",
+                "D0.Geometry.ArchiveFockState",
+                "D0.Geometry.ArchiveRolePhaseGroup",
+                "D0.Geometry.HomogeneousCochain",
+                "D0.Geometry.cubicalCoboundaryₗ",
+                "D0.Geometry.cubicalCodifferentialDiagonalAdjoint",
+                "D0.Geometry.cubicalWeightedHodgeDirac",
+                "D0.Geometry.cubicalWeightedHodgeDiracₗ",
+                "D0.Geometry.instNeZeroArchiveFibers",
+                "D0.Role",
+                "D0.archiveFibers",
+                "Eq",
+                "Fin.fintype",
+                "HAdd.hAdd",
+                "LinearMap",
+                "LinearMap.comp",
+                "LinearMap.instAdd",
+                "Nat",
+                "Ne",
+                "OfNat.ofNat",
+                "Pi.Function.module",
+                "Pi.addCommMonoid",
+                "Pi.instFintype",
+                "Real",
+                "Real.instAddCommMonoid",
+                "Real.instField",
+                {
+                  "_omitted_items": 14
+                }
+              ],
+              "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveWeightedHodgeDirac.lean"
+            }
+          ]
+        },
+        {
+          "claim_id": "D0-ARCHIVE-WEIGHTED-HODGE-DIRAC-001",
+          "module_locator": "D0.Geometry.ArchiveWeightedHodgeDirac",
+          "theorem_atom": "cubicalWeightedHodgeDirac_positive_profile_application",
+          "candidate_names": [
+            "D0.Geometry.ArchiveWeightedHodgeDirac.cubicalWeightedHodgeDirac_positive_profile_application",
+            "D0.Geometry.cubicalWeightedHodgeDirac_positive_profile_application",
+            "D0.cubicalWeightedHodgeDirac_positive_profile_application"
+          ],
+          "resolution_status": "resolved",
+          "resolved_declarations": [
+            {
+              "axioms": [
+                "Classical.choice",
+                "Quot.sound",
+                "propext"
+              ],
+              "binders": [],
+              "conclusion_whnf": "(∀ (N : ℕ) (w : D0.Geometry.ArchiveCochainBasis N → ℝ),\n    (∀ (p : D0.Geometry.ArchiveCochainBasis N), 0 < w p) →\n      ∀ (ψ : D0.Geometry.ArchiveCochainBasis N → ℝ), ψ ≠ 0 → 0 < D0.Algebra.finiteWeightedPairing w ψ ψ) ∧\n  ∀ (N : ℕ) (w : D0.Geometry.ArchiveCochainBasis N → ℝ),\n    (∀ (p : D0.Geometry.ArchiveCochainBasis N), 0 < w p) →\n      ∀ (ψ : D0.Geometry.ArchiveCochain N) (φ : D0.Geometry.ArchiveCochainBasis N → ℝ),\n        D0.Algebra.finiteWeightedPairing w (D0.Geometry.cubicalWeightedHodgeDirac N w ψ) φ =\n          D0.Algebra.finiteWeightedPairing w ψ (D0.Geometry.cubicalWeightedHodgeDirac N w φ)",
+              "declaration_kind": "theorem",
+              "declaration_ranges": {
+                "declaration": {
+                  "end": {
+                    "column": 36,
+                    "line": 233
+                  },
+                  "start": {
+                    "column": 0,
+                    "line": 216
+                  }
+                },
+                "selection": {
+                  "end": {
+                    "column": 62,
+                    "line": 220
+                  },
+                  "start": {
+                    "column": 8,
+                    "line": 220
+                  }
+                }
+              },
+              "elaborated_type": "(∀ (N : ℕ) (w : D0.Geometry.ArchiveCochainBasis N → ℝ),\n    (∀ (p : D0.Geometry.ArchiveCochainBasis N), 0 < w p) →\n      ∀ (ψ : D0.Geometry.ArchiveCochainBasis N → ℝ), ψ ≠ 0 → 0 < D0.Algebra.finiteWeightedPairing w ψ ψ) ∧\n  ∀ (N : ℕ) (w : D0.Geometry.ArchiveCochainBasis N → ℝ),\n    (∀ (p : D0.Geometry.ArchiveCochainBasis N), 0 < w p) →\n      ∀ (ψ : D0.Geometry.ArchiveCochain N) (φ : D0.Geometry.ArchiveCochainBasis N → ℝ),\n        D0.Algebra.finiteWeightedPairing w (D0.Geometry.cubicalWeightedHodgeDirac N w ψ) φ =\n          D0.Algebra.finiteWeightedPairing w ψ (D0.Geometry.cubicalWeightedHodgeDirac N w φ)",
+              "exists": true,
+              "internal_name": false,
+              "module": "D0.Geometry.ArchiveWeightedHodgeDirac",
+              "name": "D0.Geometry.cubicalWeightedHodgeDirac_positive_profile_application",
+              "proof_dependencies": [
+                "And.intro",
+                "Bool",
+                "Bool.fintype",
+                "D0.Algebra.finiteWeightedPairing",
+                "D0.Algebra.finiteWeightedPairing_pos_def",
+                "D0.Dyad",
+                "D0.Geometry.ArchiveCochain",
+                "D0.Geometry.ArchiveCochainBasis",
+                "D0.Geometry.ArchiveFockState",
+                "D0.Geometry.ArchiveRolePhaseGroup",
+                "D0.Geometry.cubicalWeightedHodgeDirac",
+                "D0.Geometry.cubicalWeightedHodgeDirac_pairing_self_adjoint",
+                "D0.Geometry.instNeZeroArchiveFibers",
+                "D0.Role",
+                "D0.archiveFibers",
+                "Eq",
+                "Fin.fintype",
+                "LT.lt",
+                "Nat",
+                "Ne",
+                "OfNat.ofNat",
+                "Pi.instFintype",
+                "Pi.instZero",
+                "Real",
+                "Real.instField",
+                "Real.instLT",
+                "Real.instPreorder",
+                "Real.instZero",
+                "ZMod",
+                "ZMod.fintype",
+                "Zero.toOfNat0",
+                "instDecidableEqFin",
+                {
+                  "_omitted_items": 4
+                }
+              ],
+              "type_dependencies": [
+                "And",
+                "Bool",
+                "Bool.fintype",
+                "D0.Algebra.finiteWeightedPairing",
+                "D0.Dyad",
+                "D0.Geometry.ArchiveCochain",
+                "D0.Geometry.ArchiveCochainBasis",
+                "D0.Geometry.ArchiveFockState",
+                "D0.Geometry.ArchiveRolePhaseGroup",
+                "D0.Geometry.cubicalWeightedHodgeDirac",
+                "D0.Geometry.instNeZeroArchiveFibers",
+                "D0.Role",
+                "D0.archiveFibers",
+                "Eq",
+                "Fin.fintype",
+                "LT.lt",
+                "Nat",
+                "Ne",
+                "OfNat.ofNat",
+                "Pi.instFintype",
+                "Pi.instZero",
+                "Real",
+                "Real.instField",
+                "Real.instLT",
+                "Real.instZero",
+                "ZMod",
+                "ZMod.fintype",
+                "Zero.toOfNat0",
+                "instDecidableEqFin",
+                "instDecidableEqProd",
+                "instFintypeProd",
+                "instOfNatNat"
+              ],
+              "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveWeightedHodgeDirac.lean"
+            }
+          ]
+        },
+        {
+          "claim_id": "D0-ARCHIVE-WEIGHTED-HODGE-DIRAC-001",
+          "module_locator": "D0.Geometry.ArchiveWeightedHodgeDirac",
+          "theorem_atom": "cubicalWeightedHodgeDirac_standard_representative_application",
+          "candidate_names": [
+            "D0.Geometry.ArchiveWeightedHodgeDirac.cubicalWeightedHodgeDirac_standard_representative_application",
+            "D0.Geometry.cubicalWeightedHodgeDirac_standard_representative_application",
+            "D0.cubicalWeightedHodgeDirac_standard_representative_application"
+          ],
+          "resolution_status": "resolved",
+          "resolved_declarations": [
+            {
+              "axioms": [
+                "Classical.choice",
+                "Quot.sound",
+                "propext"
+              ],
+              "binders": [
+                {
+                  "binder_info": "Lean.BinderInfo.default",
+                  "is_proposition": false,
+                  "name": "N",
+                  "type": "ℕ"
+                },
+                {
+                  "binder_info": "Lean.BinderInfo.default",
+                  "is_proposition": false,
+                  "name": "w",
+                  "type": "D0.Geometry.ArchiveCochainBasis N → ℝ"
+                },
+                {
+                  "binder_info": "Lean.BinderInfo.default",
+                  "is_proposition": true,
+                  "name": "a._@._internal._hyg.0",
+                  "type": "∀ (p : D0.Geometry.ArchiveCochainBasis N), 0 < w p"
+                }
+              ],
+              "conclusion_whnf": "D0.Algebra.finiteHermitianAdjoint (D0.Algebra.finiteWeightedConjugate w (D0.Geometry.cubicalWeightedHodgeDiracₗ N w)) =\n  D0.Algebra.finiteWeightedConjugate w (D0.Geometry.cubicalWeightedHodgeDiracₗ N w)",
+              "declaration_kind": "theorem",
+              "declaration_ranges": {
+                "declaration": {
+                  "end": {
+                    "column": 36,
+                    "line": 251
+                  },
+                  "start": {
+                    "column": 0,
+                    "line": 235
+                  }
+                },
+                "selection": {
+                  "end": {
+                    "column": 69,
+                    "line": 239
+                  },
+                  "start": {
+                    "column": 8,
+                    "line": 239
+                  }
+                }
+              },
+              "elaborated_type": "∀ (N : ℕ) (w : D0.Geometry.ArchiveCochainBasis N → ℝ),\n  (∀ (p : D0.Geometry.ArchiveCochainBasis N), 0 < w p) →\n    D0.Algebra.finiteHermitianAdjoint\n        (D0.Algebra.finiteWeightedConjugate w (D0.Geometry.cubicalWeightedHodgeDiracₗ N w)) =\n      D0.Algebra.finiteWeightedConjugate w (D0.Geometry.cubicalWeightedHodgeDiracₗ N w)",
+              "exists": true,
+              "internal_name": false,
+              "module": "D0.Geometry.ArchiveWeightedHodgeDirac",
+              "name": "D0.Geometry.cubicalWeightedHodgeDirac_standard_representative_application",
+              "proof_dependencies": [
+                "Bool",
+                "Bool.fintype",
+                "D0.Algebra.finiteWeightedConjugate_self_adjoint",
+                "D0.Dyad",
+                "D0.Geometry.ArchiveCochainBasis",
+                "D0.Geometry.ArchiveFockState",
+                "D0.Geometry.ArchiveRolePhaseGroup",
+                "D0.Geometry.cubicalWeightedHodgeDirac_pairing_self_adjoint",
+                "D0.Geometry.cubicalWeightedHodgeDiracₗ",
+                "D0.Geometry.instNeZeroArchiveFibers",
+                "D0.Role",
+                "D0.archiveFibers",
+                "Fin.fintype",
+                "Fintype.decidablePiFintype",
+                "LT.lt",
+                "Nat",
+                "OfNat.ofNat",
+                "Pi.instFintype",
+                "Real",
+                "Real.instLT",
+                "Real.instPreorder",
+                "Real.instZero",
+                "ZMod",
+                "ZMod.decidableEq",
+                "ZMod.fintype",
+                "Zero.toOfNat0",
+                "instDecidableEqBool",
+                "instDecidableEqFin",
+                "instDecidableEqProd",
+                "instFintypeProd",
+                "instOfNatNat",
+                "ne_of_gt"
+              ],
+              "type_dependencies": [
+                "Bool",
+                "Bool.fintype",
+                "CommRing.toNonUnitalCommRing",
+                "D0.Algebra.finiteHermitianAdjoint",
+                "D0.Algebra.finiteWeightedConjugate",
+                "D0.Dyad",
+                "D0.Geometry.ArchiveCochainBasis",
+                "D0.Geometry.ArchiveFockState",
+                "D0.Geometry.ArchiveRolePhaseGroup",
+                "D0.Geometry.cubicalWeightedHodgeDiracₗ",
+                "D0.Geometry.instNeZeroArchiveFibers",
+                "D0.Role",
+                "D0.archiveFibers",
+                "DivisionSemiring.toSemiring",
+                "Eq",
+                "Field.toCommRing",
+                "Field.toSemifield",
+                "Fin.fintype",
+                "Fintype.decidablePiFintype",
+                "LT.lt",
+                "LinearMap",
+                "Nat",
+                "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+                "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+                "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+                "NonUnitalNonAssocSemiring.toAddCommMonoid",
+                "OfNat.ofNat",
+                "Pi.Function.module",
+                "Pi.addCommMonoid",
+                "Pi.instFintype",
+                "Real",
+                "Real.instField",
+                {
+                  "_omitted_items": 16
+                }
+              ],
+              "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveWeightedHodgeDirac.lean"
+            }
+          ]
+        }
+      ],
+      "compiled_declarations": [
+        {
+          "axioms": [
+            "Classical.choice",
+            "D0.Geometry.car_create_anticommutator_int._native.native_decide.ax_1_1",
+            "D0.Geometry.car_mixed_anticommutator_int._native.native_decide.ax_1_1",
+            "Quot.sound",
+            "propext"
+          ],
+          "binders": [],
+          "conclusion_whnf": "D0.Geometry.formDegreeCount4D = 5 ∧\n  Fintype.card D0.Geometry.CubicalCellType = 16 ∧\n    D0.Geometry.DegreePreservingLaplacian true ∧\n      Fintype.card D0.Role = 4 ∧\n        (∀ (N : ℕ) (ψ : D0.Geometry.ArchiveCochain N),\n            D0.Geometry.cubicalCoboundary N (D0.Geometry.cubicalCoboundary N ψ) = 0) ∧\n          (∀ (N k : ℕ) (ψ : D0.Geometry.ArchiveCochain N),\n              D0.Geometry.HomogeneousCochain N k ψ →\n                D0.Geometry.HomogeneousCochain N k (D0.Geometry.hodgeCarDirac N (D0.Geometry.hodgeCarDirac N ψ))) ∧\n            (∀ (N : ℕ) (ψ φ : D0.Geometry.ArchiveCochain N),\n                D0.Geometry.cochainPairing N (D0.Geometry.hodgeCarDirac N ψ) φ =\n                  D0.Geometry.cochainPairing N ψ (D0.Geometry.hodgeCarDirac N φ)) ∧\n              (∀ (N : ℕ) (w : D0.Geometry.ArchiveCochainBasis N → ℝ) (ψ φ : D0.Geometry.ArchiveCochain N),\n                  (∀ (p : D0.Geometry.ArchiveCochainBasis N), w p ≠ 0) →\n                    D0.Algebra.finiteWeightedPairing w (D0.Geometry.hodgeCarDirac N ψ) φ =\n                      D0.Algebra.finiteWeightedPairing w ψ ((D0.Geometry.hodgeCarDiracDiagonalAdjoint N w) φ)) ∧\n                ∀ (N : ℕ) (w : D0.Geometry.ArchiveCochainBasis N → ℝ),\n                  (∀ (p : D0.Geometry.ArchiveCochainBasis N), w p ≠ 0) →\n                    D0.Algebra.finiteWeightedAdjoint w (D0.Geometry.hodgeCarDiracₗ N ∘ₗ D0.Geometry.hodgeCarDiracₗ N) =\n                      D0.Geometry.hodgeCarDiracDiagonalAdjoint N w ∘ₗ D0.Geometry.hodgeCarDiracDiagonalAdjoint N w",
+          "declaration_kind": "theorem",
+          "declaration_ranges": {
+            "declaration": {
+              "end": {
+                "column": 61,
+                "line": 359
+              },
+              "start": {
+                "column": 0,
+                "line": 319
+              }
+            },
+            "selection": {
+              "end": {
+                "column": 42,
+                "line": 326
+              },
+              "start": {
+                "column": 8,
+                "line": 326
+              }
+            }
+          },
+          "elaborated_type": "D0.Geometry.formDegreeCount4D = 5 ∧\n  Fintype.card D0.Geometry.CubicalCellType = 16 ∧\n    D0.Geometry.DegreePreservingLaplacian true ∧\n      Fintype.card D0.Role = 4 ∧\n        (∀ (N : ℕ) (ψ : D0.Geometry.ArchiveCochain N),\n            D0.Geometry.cubicalCoboundary N (D0.Geometry.cubicalCoboundary N ψ) = 0) ∧\n          (∀ (N k : ℕ) (ψ : D0.Geometry.ArchiveCochain N),\n              D0.Geometry.HomogeneousCochain N k ψ →\n                D0.Geometry.HomogeneousCochain N k (D0.Geometry.hodgeCarDirac N (D0.Geometry.hodgeCarDirac N ψ))) ∧\n            (∀ (N : ℕ) (ψ φ : D0.Geometry.ArchiveCochain N),\n                D0.Geometry.cochainPairing N (D0.Geometry.hodgeCarDirac N ψ) φ =\n                  D0.Geometry.cochainPairing N ψ (D0.Geometry.hodgeCarDirac N φ)) ∧\n              (∀ (N : ℕ) (w : D0.Geometry.ArchiveCochainBasis N → ℝ) (ψ φ : D0.Geometry.ArchiveCochain N),\n                  (∀ (p : D0.Geometry.ArchiveCochainBasis N), w p ≠ 0) →\n                    D0.Algebra.finiteWeightedPairing w (D0.Geometry.hodgeCarDirac N ψ) φ =\n                      D0.Algebra.finiteWeightedPairing w ψ ((D0.Geometry.hodgeCarDiracDiagonalAdjoint N w) φ)) ∧\n                ∀ (N : ℕ) (w : D0.Geometry.ArchiveCochainBasis N → ℝ),\n                  (∀ (p : D0.Geometry.ArchiveCochainBasis N), w p ≠ 0) →\n                    D0.Algebra.finiteWeightedAdjoint w (D0.Geometry.hodgeCarDiracₗ N ∘ₗ D0.Geometry.hodgeCarDiracₗ N) =\n                      D0.Geometry.hodgeCarDiracDiagonalAdjoint N w ∘ₗ D0.Geometry.hodgeCarDiracDiagonalAdjoint N w",
+          "exists": true,
+          "internal_name": false,
+          "module": "D0.Geometry.ArchiveWeightedHodgeDirac",
+          "name": "D0.Geometry.archive_weighted_hodge_dirac_owner",
+          "proof_dependencies": [
+            "And",
+            "And.intro",
+            "Bool",
+            "Bool.fintype",
+            "Bool.true",
+            "CommRing.toNonUnitalCommRing",
+            "D0.Algebra.finiteWeightedAdjoint",
+            "D0.Algebra.finiteWeightedPairing",
+            "D0.Dyad",
+            "D0.Geometry.ArchiveCochain",
+            "D0.Geometry.ArchiveCochainBasis",
+            "D0.Geometry.ArchiveFockState",
+            "D0.Geometry.ArchiveRolePhaseGroup",
+            "D0.Geometry.CubicalCellType",
+            "D0.Geometry.DegreePreservingLaplacian",
+            "D0.Geometry.HomogeneousCochain",
+            "D0.Geometry.card_archive_fock_state",
+            "D0.Geometry.cochainPairing",
+            "D0.Geometry.cubicalCoboundary",
+            "D0.Geometry.d_squared_eq_zero",
+            "D0.Geometry.formDegreeCount4D",
+            "D0.Geometry.formDegreeCount4D_eq_five",
+            "D0.Geometry.hodgeCarDirac",
+            "D0.Geometry.hodgeCarDiracDiagonalAdjoint",
+            "D0.Geometry.hodgeCarDirac_diagonal_weight_adjoint",
+            "D0.Geometry.hodgeCarDirac_self_adjoint",
+            "D0.Geometry.hodgeCarDirac_square_diagonal_weight_adjoint",
+            "D0.Geometry.hodgeCarDiracₗ",
+            "D0.Geometry.instNeZeroArchiveFibers",
+            "D0.Geometry.unweightedHodgeSquare_degree_preserving",
+            "D0.Role",
+            "D0.archiveFibers",
+            {
+              "_omitted_items": 43
+            }
+          ],
+          "type_dependencies": [
+            "And",
+            "Bool",
+            "Bool.fintype",
+            "Bool.true",
+            "CommRing.toNonUnitalCommRing",
+            "D0.Algebra.finiteWeightedAdjoint",
+            "D0.Algebra.finiteWeightedPairing",
+            "D0.Dyad",
+            "D0.Geometry.ArchiveCochain",
+            "D0.Geometry.ArchiveCochainBasis",
+            "D0.Geometry.ArchiveFockState",
+            "D0.Geometry.ArchiveRolePhaseGroup",
+            "D0.Geometry.CubicalCellType",
+            "D0.Geometry.DegreePreservingLaplacian",
+            "D0.Geometry.HomogeneousCochain",
+            "D0.Geometry.cochainPairing",
+            "D0.Geometry.cubicalCoboundary",
+            "D0.Geometry.formDegreeCount4D",
+            "D0.Geometry.hodgeCarDirac",
+            "D0.Geometry.hodgeCarDiracDiagonalAdjoint",
+            "D0.Geometry.hodgeCarDiracₗ",
+            "D0.Geometry.instNeZeroArchiveFibers",
+            "D0.Role",
+            "D0.archiveFibers",
+            "DFunLike.coe",
+            "DivisionSemiring.toSemiring",
+            "Eq",
+            "Field.toCommRing",
+            "Field.toSemifield",
+            "Fin.fintype",
+            "Fintype.card",
+            "Fintype.decidablePiFintype",
+            {
+              "_omitted_items": 33
+            }
+          ],
+          "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveWeightedHodgeDirac.lean"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "D0.Geometry.carCreateInt_degree_raise._native.native_decide.ax_1_1",
+            "D0.Geometry.car_create_anticommutator_int._native.native_decide.ax_1_1",
+            "Quot.sound",
+            "propext"
+          ],
+          "binders": [],
+          "conclusion_whnf": "(∀ (N : ℕ) (w : D0.Geometry.ArchiveCochainBasis N → ℝ),\n    (∀ (p : D0.Geometry.ArchiveCochainBasis N), w p ≠ 0) →\n      ∀ (ψ : D0.Geometry.ArchiveCochain N) (φ : D0.Geometry.ArchiveCochainBasis N → ℝ),\n        D0.Algebra.finiteWeightedPairing w (D0.Geometry.cubicalWeightedHodgeDirac N w ψ) φ =\n          D0.Algebra.finiteWeightedPairing w ψ (D0.Geometry.cubicalWeightedHodgeDirac N w φ)) ∧\n  (∀ (N : ℕ) (w : D0.Geometry.ArchiveCochainBasis N → ℝ),\n      (∀ (p : D0.Geometry.ArchiveCochainBasis N), w p ≠ 0) →\n        D0.Geometry.cubicalWeightedHodgeDiracₗ N w ∘ₗ D0.Geometry.cubicalWeightedHodgeDiracₗ N w =\n          D0.Geometry.cubicalCoboundaryₗ N ∘ₗ D0.Geometry.cubicalCodifferentialDiagonalAdjoint N w +\n            D0.Geometry.cubicalCodifferentialDiagonalAdjoint N w ∘ₗ D0.Geometry.cubicalCoboundaryₗ N) ∧\n    ∀ (N k : ℕ) (w : D0.Geometry.ArchiveCochainBasis N → ℝ) (ψ : D0.Geometry.ArchiveCochain N),\n      (∀ (p : D0.Geometry.ArchiveCochainBasis N), w p ≠ 0) →\n        D0.Geometry.HomogeneousCochain N k ψ →\n          D0.Geometry.HomogeneousCochain N k\n            (D0.Geometry.cubicalWeightedHodgeDirac N w (D0.Geometry.cubicalWeightedHodgeDirac N w ψ))",
+          "declaration_kind": "theorem",
+          "declaration_ranges": {
+            "declaration": {
+              "end": {
+                "column": 74,
+                "line": 317
+              },
+              "start": {
+                "column": 0,
+                "line": 294
+              }
+            },
+            "selection": {
+              "end": {
+                "column": 45,
+                "line": 298
+              },
+              "start": {
+                "column": 8,
+                "line": 298
+              }
+            }
+          },
+          "elaborated_type": "(∀ (N : ℕ) (w : D0.Geometry.ArchiveCochainBasis N → ℝ),\n    (∀ (p : D0.Geometry.ArchiveCochainBasis N), w p ≠ 0) →\n      ∀ (ψ : D0.Geometry.ArchiveCochain N) (φ : D0.Geometry.ArchiveCochainBasis N → ℝ),\n        D0.Algebra.finiteWeightedPairing w (D0.Geometry.cubicalWeightedHodgeDirac N w ψ) φ =\n          D0.Algebra.finiteWeightedPairing w ψ (D0.Geometry.cubicalWeightedHodgeDirac N w φ)) ∧\n  (∀ (N : ℕ) (w : D0.Geometry.ArchiveCochainBasis N → ℝ),\n      (∀ (p : D0.Geometry.ArchiveCochainBasis N), w p ≠ 0) →\n        D0.Geometry.cubicalWeightedHodgeDiracₗ N w ∘ₗ D0.Geometry.cubicalWeightedHodgeDiracₗ N w =\n          D0.Geometry.cubicalCoboundaryₗ N ∘ₗ D0.Geometry.cubicalCodifferentialDiagonalAdjoint N w +\n            D0.Geometry.cubicalCodifferentialDiagonalAdjoint N w ∘ₗ D0.Geometry.cubicalCoboundaryₗ N) ∧\n    ∀ (N k : ℕ) (w : D0.Geometry.ArchiveCochainBasis N → ℝ) (ψ : D0.Geometry.ArchiveCochain N),\n      (∀ (p : D0.Geometry.ArchiveCochainBasis N), w p ≠ 0) →\n        D0.Geometry.HomogeneousCochain N k ψ →\n          D0.Geometry.HomogeneousCochain N k\n            (D0.Geometry.cubicalWeightedHodgeDirac N w (D0.Geometry.cubicalWeightedHodgeDirac N w ψ))",
+          "exists": true,
+          "internal_name": false,
+          "module": "D0.Geometry.ArchiveWeightedHodgeDirac",
+          "name": "D0.Geometry.cubicalWeightedHodgeDirac_application",
+          "proof_dependencies": [
+            "And",
+            "And.intro",
+            "Bool",
+            "Bool.fintype",
+            "D0.Algebra.finiteWeightedPairing",
+            "D0.Dyad",
+            "D0.Geometry.ArchiveCochain",
+            "D0.Geometry.ArchiveCochainBasis",
+            "D0.Geometry.ArchiveFockState",
+            "D0.Geometry.ArchiveRolePhaseGroup",
+            "D0.Geometry.HomogeneousCochain",
+            "D0.Geometry.cubicalCoboundaryₗ",
+            "D0.Geometry.cubicalCodifferentialDiagonalAdjoint",
+            "D0.Geometry.cubicalWeightedHodgeDirac",
+            "D0.Geometry.cubicalWeightedHodgeDirac_pairing_self_adjoint",
+            "D0.Geometry.cubicalWeightedHodgeDirac_square",
+            "D0.Geometry.cubicalWeightedHodgeDirac_square_degree_preserving",
+            "D0.Geometry.cubicalWeightedHodgeDiracₗ",
+            "D0.Geometry.instNeZeroArchiveFibers",
+            "D0.Role",
+            "D0.archiveFibers",
+            "Eq",
+            "Fin.fintype",
+            "HAdd.hAdd",
+            "LinearMap",
+            "LinearMap.comp",
+            "LinearMap.instAdd",
+            "Nat",
+            "Ne",
+            "OfNat.ofNat",
+            "Pi.Function.module",
+            "Pi.addCommMonoid",
+            {
+              "_omitted_items": 18
+            }
+          ],
+          "type_dependencies": [
+            "And",
+            "Bool",
+            "Bool.fintype",
+            "D0.Algebra.finiteWeightedPairing",
+            "D0.Dyad",
+            "D0.Geometry.ArchiveCochain",
+            "D0.Geometry.ArchiveCochainBasis",
+            "D0.Geometry.ArchiveFockState",
+            "D0.Geometry.ArchiveRolePhaseGroup",
+            "D0.Geometry.HomogeneousCochain",
+            "D0.Geometry.cubicalCoboundaryₗ",
+            "D0.Geometry.cubicalCodifferentialDiagonalAdjoint",
+            "D0.Geometry.cubicalWeightedHodgeDirac",
+            "D0.Geometry.cubicalWeightedHodgeDiracₗ",
+            "D0.Geometry.instNeZeroArchiveFibers",
+            "D0.Role",
+            "D0.archiveFibers",
+            "Eq",
+            "Fin.fintype",
+            "HAdd.hAdd",
+            "LinearMap",
+            "LinearMap.comp",
+            "LinearMap.instAdd",
+            "Nat",
+            "Ne",
+            "OfNat.ofNat",
+            "Pi.Function.module",
+            "Pi.addCommMonoid",
+            "Pi.instFintype",
+            "Real",
+            "Real.instAddCommMonoid",
+            "Real.instField",
+            {
+              "_omitted_items": 14
+            }
+          ],
+          "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveWeightedHodgeDirac.lean"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "binders": [],
+          "conclusion_whnf": "(∀ (N : ℕ) (w : D0.Geometry.ArchiveCochainBasis N → ℝ),\n    (∀ (p : D0.Geometry.ArchiveCochainBasis N), 0 < w p) →\n      ∀ (ψ : D0.Geometry.ArchiveCochainBasis N → ℝ), ψ ≠ 0 → 0 < D0.Algebra.finiteWeightedPairing w ψ ψ) ∧\n  ∀ (N : ℕ) (w : D0.Geometry.ArchiveCochainBasis N → ℝ),\n    (∀ (p : D0.Geometry.ArchiveCochainBasis N), 0 < w p) →\n      ∀ (ψ : D0.Geometry.ArchiveCochain N) (φ : D0.Geometry.ArchiveCochainBasis N → ℝ),\n        D0.Algebra.finiteWeightedPairing w (D0.Geometry.cubicalWeightedHodgeDirac N w ψ) φ =\n          D0.Algebra.finiteWeightedPairing w ψ (D0.Geometry.cubicalWeightedHodgeDirac N w φ)",
+          "declaration_kind": "theorem",
+          "declaration_ranges": {
+            "declaration": {
+              "end": {
+                "column": 36,
+                "line": 233
+              },
+              "start": {
+                "column": 0,
+                "line": 216
+              }
+            },
+            "selection": {
+              "end": {
+                "column": 62,
+                "line": 220
+              },
+              "start": {
+                "column": 8,
+                "line": 220
+              }
+            }
+          },
+          "elaborated_type": "(∀ (N : ℕ) (w : D0.Geometry.ArchiveCochainBasis N → ℝ),\n    (∀ (p : D0.Geometry.ArchiveCochainBasis N), 0 < w p) →\n      ∀ (ψ : D0.Geometry.ArchiveCochainBasis N → ℝ), ψ ≠ 0 → 0 < D0.Algebra.finiteWeightedPairing w ψ ψ) ∧\n  ∀ (N : ℕ) (w : D0.Geometry.ArchiveCochainBasis N → ℝ),\n    (∀ (p : D0.Geometry.ArchiveCochainBasis N), 0 < w p) →\n      ∀ (ψ : D0.Geometry.ArchiveCochain N) (φ : D0.Geometry.ArchiveCochainBasis N → ℝ),\n        D0.Algebra.finiteWeightedPairing w (D0.Geometry.cubicalWeightedHodgeDirac N w ψ) φ =\n          D0.Algebra.finiteWeightedPairing w ψ (D0.Geometry.cubicalWeightedHodgeDirac N w φ)",
+          "exists": true,
+          "internal_name": false,
+          "module": "D0.Geometry.ArchiveWeightedHodgeDirac",
+          "name": "D0.Geometry.cubicalWeightedHodgeDirac_positive_profile_application",
+          "proof_dependencies": [
+            "And.intro",
+            "Bool",
+            "Bool.fintype",
+            "D0.Algebra.finiteWeightedPairing",
+            "D0.Algebra.finiteWeightedPairing_pos_def",
+            "D0.Dyad",
+            "D0.Geometry.ArchiveCochain",
+            "D0.Geometry.ArchiveCochainBasis",
+            "D0.Geometry.ArchiveFockState",
+            "D0.Geometry.ArchiveRolePhaseGroup",
+            "D0.Geometry.cubicalWeightedHodgeDirac",
+            "D0.Geometry.cubicalWeightedHodgeDirac_pairing_self_adjoint",
+            "D0.Geometry.instNeZeroArchiveFibers",
+            "D0.Role",
+            "D0.archiveFibers",
+            "Eq",
+            "Fin.fintype",
+            "LT.lt",
+            "Nat",
+            "Ne",
+            "OfNat.ofNat",
+            "Pi.instFintype",
+            "Pi.instZero",
+            "Real",
+            "Real.instField",
+            "Real.instLT",
+            "Real.instPreorder",
+            "Real.instZero",
+            "ZMod",
+            "ZMod.fintype",
+            "Zero.toOfNat0",
+            "instDecidableEqFin",
+            {
+              "_omitted_items": 4
+            }
+          ],
+          "type_dependencies": [
+            "And",
+            "Bool",
+            "Bool.fintype",
+            "D0.Algebra.finiteWeightedPairing",
+            "D0.Dyad",
+            "D0.Geometry.ArchiveCochain",
+            "D0.Geometry.ArchiveCochainBasis",
+            "D0.Geometry.ArchiveFockState",
+            "D0.Geometry.ArchiveRolePhaseGroup",
+            "D0.Geometry.cubicalWeightedHodgeDirac",
+            "D0.Geometry.instNeZeroArchiveFibers",
+            "D0.Role",
+            "D0.archiveFibers",
+            "Eq",
+            "Fin.fintype",
+            "LT.lt",
+            "Nat",
+            "Ne",
+            "OfNat.ofNat",
+            "Pi.instFintype",
+            "Pi.instZero",
+            "Real",
+            "Real.instField",
+            "Real.instLT",
+            "Real.instZero",
+            "ZMod",
+            "ZMod.fintype",
+            "Zero.toOfNat0",
+            "instDecidableEqFin",
+            "instDecidableEqProd",
+            "instFintypeProd",
+            "instOfNatNat"
+          ],
+          "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveWeightedHodgeDirac.lean"
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "binders": [
+            {
+              "binder_info": "Lean.BinderInfo.default",
+              "is_proposition": false,
+              "name": "N",
+              "type": "ℕ"
+            },
+            {
+              "binder_info": "Lean.BinderInfo.default",
+              "is_proposition": false,
+              "name": "w",
+              "type": "D0.Geometry.ArchiveCochainBasis N → ℝ"
+            },
+            {
+              "binder_info": "Lean.BinderInfo.default",
+              "is_proposition": true,
+              "name": "a._@._internal._hyg.0",
+              "type": "∀ (p : D0.Geometry.ArchiveCochainBasis N), 0 < w p"
+            }
+          ],
+          "conclusion_whnf": "D0.Algebra.finiteHermitianAdjoint (D0.Algebra.finiteWeightedConjugate w (D0.Geometry.cubicalWeightedHodgeDiracₗ N w)) =\n  D0.Algebra.finiteWeightedConjugate w (D0.Geometry.cubicalWeightedHodgeDiracₗ N w)",
+          "declaration_kind": "theorem",
+          "declaration_ranges": {
+            "declaration": {
+              "end": {
+                "column": 36,
+                "line": 251
+              },
+              "start": {
+                "column": 0,
+                "line": 235
+              }
+            },
+            "selection": {
+              "end": {
+                "column": 69,
+                "line": 239
+              },
+              "start": {
+                "column": 8,
+                "line": 239
+              }
+            }
+          },
+          "elaborated_type": "∀ (N : ℕ) (w : D0.Geometry.ArchiveCochainBasis N → ℝ),\n  (∀ (p : D0.Geometry.ArchiveCochainBasis N), 0 < w p) →\n    D0.Algebra.finiteHermitianAdjoint\n        (D0.Algebra.finiteWeightedConjugate w (D0.Geometry.cubicalWeightedHodgeDiracₗ N w)) =\n      D0.Algebra.finiteWeightedConjugate w (D0.Geometry.cubicalWeightedHodgeDiracₗ N w)",
+          "exists": true,
+          "internal_name": false,
+          "module": "D0.Geometry.ArchiveWeightedHodgeDirac",
+          "name": "D0.Geometry.cubicalWeightedHodgeDirac_standard_representative_application",
+          "proof_dependencies": [
+            "Bool",
+            "Bool.fintype",
+            "D0.Algebra.finiteWeightedConjugate_self_adjoint",
+            "D0.Dyad",
+            "D0.Geometry.ArchiveCochainBasis",
+            "D0.Geometry.ArchiveFockState",
+            "D0.Geometry.ArchiveRolePhaseGroup",
+            "D0.Geometry.cubicalWeightedHodgeDirac_pairing_self_adjoint",
+            "D0.Geometry.cubicalWeightedHodgeDiracₗ",
+            "D0.Geometry.instNeZeroArchiveFibers",
+            "D0.Role",
+            "D0.archiveFibers",
+            "Fin.fintype",
+            "Fintype.decidablePiFintype",
+            "LT.lt",
+            "Nat",
+            "OfNat.ofNat",
+            "Pi.instFintype",
+            "Real",
+            "Real.instLT",
+            "Real.instPreorder",
+            "Real.instZero",
+            "ZMod",
+            "ZMod.decidableEq",
+            "ZMod.fintype",
+            "Zero.toOfNat0",
+            "instDecidableEqBool",
+            "instDecidableEqFin",
+            "instDecidableEqProd",
+            "instFintypeProd",
+            "instOfNatNat",
+            "ne_of_gt"
+          ],
+          "type_dependencies": [
+            "Bool",
+            "Bool.fintype",
+            "CommRing.toNonUnitalCommRing",
+            "D0.Algebra.finiteHermitianAdjoint",
+            "D0.Algebra.finiteWeightedConjugate",
+            "D0.Dyad",
+            "D0.Geometry.ArchiveCochainBasis",
+            "D0.Geometry.ArchiveFockState",
+            "D0.Geometry.ArchiveRolePhaseGroup",
+            "D0.Geometry.cubicalWeightedHodgeDiracₗ",
+            "D0.Geometry.instNeZeroArchiveFibers",
+            "D0.Role",
+            "D0.archiveFibers",
+            "DivisionSemiring.toSemiring",
+            "Eq",
+            "Field.toCommRing",
+            "Field.toSemifield",
+            "Fin.fintype",
+            "Fintype.decidablePiFintype",
+            "LT.lt",
+            "LinearMap",
+            "Nat",
+            "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+            "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+            "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+            "NonUnitalNonAssocSemiring.toAddCommMonoid",
+            "OfNat.ofNat",
+            "Pi.Function.module",
+            "Pi.addCommMonoid",
+            "Pi.instFintype",
+            "Real",
+            "Real.instField",
+            {
+              "_omitted_items": 16
+            }
+          ],
+          "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveWeightedHodgeDirac.lean"
+        }
+      ],
+      "compiled_dependency_claim_links": [
+        {
+          "source_claim_id": "D0-ARCHIVE-WEIGHTED-HODGE-DIRAC-001",
+          "source_declaration": "D0.Geometry.archive_weighted_hodge_dirac_owner",
+          "dependency_declaration": "D0.Geometry.card_archive_fock_state",
+          "target_claim_locators": [
+            {
+              "claim_id": "D0-ARCHIVE-CAR-FOCK-CARRIER-001",
+              "theorem_atom": "card_archive_fock_state",
+              "module_locator": "D0.Geometry.ArchiveCARFockCarrier"
+            }
+          ],
+          "relation": "compiled-proof-dependency-to-claim-locator"
+        },
+        {
+          "source_claim_id": "D0-ARCHIVE-WEIGHTED-HODGE-DIRAC-001",
+          "source_declaration": "D0.Geometry.archive_weighted_hodge_dirac_owner",
+          "dependency_declaration": "D0.Geometry.d_squared_eq_zero",
+          "target_claim_locators": [
+            {
+              "claim_id": "D0-ARCHIVE-CUBICAL-COBOUNDARY-001",
+              "theorem_atom": "d_squared_eq_zero",
+              "module_locator": "D0.Geometry.ArchiveCubicalCoboundary"
+            }
+          ],
+          "relation": "compiled-proof-dependency-to-claim-locator"
+        }
+      ],
+      "declared_metadata_relations": {
+        "declared_applications": [],
+        "declared_result": null,
+        "target_obligation": null,
+        "target_interface": null,
+        "registered_assumptions": [],
+        "scoped_attempts": [
+          {
+            "id": "phase-count-shortcut",
+            "result": "phase-count-counterexample",
+            "interface": "resonance-divisor-v1",
+            "work_key": "phase-count-nullity-shortcut",
+            "scope": "The proposed nullity=2 max(n_+i,n_-i) rule is false already at (-1,-1,i,i).",
+            "reopen_when": "The formula or its domain changes explicitly and no longer includes the certified counterexample. Full divisor classification is a different task.",
+            "review": {
+              "state": "proposed"
+            },
+            "question_digest": "801c1b633ff8ca9e7bdb105091df64d28ea606631ab153af3a0c99281fdb13c8",
+            "question": {
+              "statement": "For every z in (C*)^4, nullity A(z)=2 max(n_+i,n_-i).",
+              "assumes": []
+            }
+          },
+          {
+            "id": "dmin-canonicality-source-bound-inference",
+            "result": "dmin-canonicality-source-bound-countermodel",
+            "interface": "complete-history-code-source-v1",
+            "work_key": "dmin-same-object-competitive-source",
+            "scope": "The literal-comparison countermodel only: canonicality, injectivity and golden word counts do not supply a Delta-equivalent same-object universal decoder or the first-source bound.",
+            "reopen_when": "A pinned construction in actual D0 proves Pair(decoder_N,U_N(X_N)) is Delta-equivalent to Enc(X_N) on the same complete history, establishes an admitted injective decoder and a cost-capacity-matched competitive bound, and controls the same moving law/Fisher source. A changed interface needs a new typed question.",
+            "question_digest": "b894222b378feb118a9e514e6fbaf9c9a27d7da296b4cc9c384f0aa0a0207c13",
+            "question": {
+              "statement": "Do the Book 01 canonicality definition, injectivity, and golden F/R word counts alone imply a same-object competitive decoder and the normalized complete-history code-minus-entropy first-source bound?",
+              "assumes": [
+                "D_min=Can(Enc(X)) is minimal only within the actual Delta-equivalence class.",
+                "No Delta-equivalence between Pair(decoder_N,U_N(X_N)) and Enc(X_N) is assumed unless proved.",
+                "The physical code-cost unit and complete moving probability law are fixed by the native programme."
+              ]
+            },
+            "review": {
+              "state": "proposed"
+            }
+          },
+          {
+            "id": "affine-scalar-perron-pressure-palatiniaction-shortcut",
+            "result": "original-book-triangle-odds-960-affine-pressure-no-go",
+            "interface": "original-scene-book-triangle-odds-pressure-boundary-v1",
+            "work_key": "affine-scalar-perron-pressure-palatiniaction-shortcut",
+            "scope": "Only the affine edge-price plus scalar positive Perron-pressure route as the entire Palatini action. This says nothing about nonlinear prices or the original complete H+J+R/CAR/memory/measurement/preparation/work/clock action.",
+            "reopen_when": "A physically admitted non-affine field-to-edge price map or an independently derived additional same-history action term changes the exact action family; record that new interface and compare its full Hessian/source rather than relabeling this pressure-only route.",
+            "review": {
+              "state": "proposed"
+            },
+            "question_digest": "ed681305328568ac87e9a07cbad484f3a377e397936e3f8cb7d8202f63676968",
+            "question": {
+              "statement": "Can the entire original 24-link Palatini quadratic action be derived from positive scalar Perron pressure after an affine map from the Lorentz coordinates to the original directed-edge prices?",
+              "assumes": [
+                "The complete field-to-edge-price map is affine on the 24 independent original Lorentz directions.",
+                "The candidate action is only positive scalar Perron pressure; no additional Cost-Info, H+J+R, CAR/memory, measurement, preparation, clock or work terms contribute.",
+                "The same original 24-direction Palatini Hessian of inertia (12,12) is the target."
+              ]
+            }
+          },
+          {
+            "id": "double-null-degree5-ward-selected-rref",
+            "result": "double-null-degree5-selected-rref-ward-obstruction",
+            "interface": "double-null-degree5-coframe-gradient-ward-v1",
+            "work_key": "double-null-selected-rref-degree5-ward-extension",
+            "scope": "The exact selected lower-order representative stated in the question; the nonzero fifth-order Ward projection rules out any fifth-amplitude correction for that representative.",
+            "reopen_when": "Vary the remaining joint cubic/mixed-quartic or asymmetric-quartic homogeneous modes, change the finite carrier/action, or enlarge the physical question. Any such result needs its own pinned interface and must not be inferred from this selected-representative obstruction.",
+            "review": {
+              "state": "proposed"
+            },
+            "question_digest": "c22c3c32995ca430f378c98ea32ba1b6b20bb200772179da035d8110ec0029cb",
+            "question": {
+              "statement": "Does the exact selected lower-order RREF representative of the perpendicular H=a*x, J=b*y branch at h=1 admit any fifth-amplitude extension, after allowing arbitrary fifth-degree corrections to the Lorentz links and coframe?",
+              "assumes": [
+                "The original six-plaquette Lorentz-star action and its all-40 Euler variations are fixed.",
+                "The lower-order fields are exactly the mixed-quartic and asymmetric-quartic RREF representatives pinned by the cited checkers, with their remaining homogeneous modes set to zero.",
+                "The fifth-order Lorentz exponential includes all terms through degree five."
+              ]
+            }
+          }
+        ],
+        "conceptual_presupposition_edges": [],
+        "warning": "Declared metadata links are not Lean type-checking or independent scientific acceptance."
+      },
+      "collector_sha256": "9a8bf7be063ac36db542055fb8a4f4de877cadd32546b8126a7463f65798f95c",
+      "lean_source_digest": "297b6755258b7496bcb272b141a4e047e69e4384c4634b28110d45005e19280a",
+      "public_import_root": "D0.All",
+      "interpretation": "Claim theorem strings are candidate-name locators. Compiled declaration presence and reported Lean proof dependencies are separate evidence. A dependency joined to another claim locator is a candidate crosswalk only; registry application links, conceptual edges, and semantic claim acceptance are not inferred from name matches."
+    }
+  ],
+  "compiled_claim_alias_reuse": [],
+  "worktree_dirty": true
+}

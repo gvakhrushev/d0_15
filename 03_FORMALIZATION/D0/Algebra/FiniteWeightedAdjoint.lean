@@ -209,6 +209,118 @@ theorem finiteWeightedPairing_pos_def (w x : ι → ℝ)
 
 end PositivePairing
 
+section PositiveWeightConjugation
+
+variable {ι : Type*} [Fintype ι] [DecidableEq ι]
+
+/-- Coordinate multiplication by the square root of a supplied positive
+diagonal profile. This is an algebraic change of Hilbert-space coordinates;
+it does not derive or select the profile. -/
+noncomputable def finiteWeightSquareRoot (w : ι → ℝ) :
+    (ι → ℝ) →ₗ[ℝ] (ι → ℝ) where
+  toFun x i := Real.sqrt (w i) * x i
+  map_add' x y := by
+    funext i
+    simp only [Pi.add_apply]
+    ring
+  map_smul' c x := by
+    funext i
+    simp only [Pi.smul_apply, smul_eq_mul, RingHom.id_apply]
+    ring
+
+/-- The inverse coordinate scaling for a positive diagonal profile. -/
+noncomputable def finiteWeightInvSquareRoot (w : ι → ℝ) :
+    (ι → ℝ) →ₗ[ℝ] (ι → ℝ) where
+  toFun x i := (Real.sqrt (w i))⁻¹ * x i
+  map_add' x y := by
+    funext i
+    simp only [Pi.add_apply]
+    ring
+  map_smul' c x := by
+    funext i
+    simp only [Pi.smul_apply, smul_eq_mul, RingHom.id_apply]
+    ring
+
+omit [Fintype ι] [DecidableEq ι] in
+private theorem finiteWeightSquareRoot_inv_apply (w x : ι → ℝ)
+    (hw : ∀ i, 0 < w i) :
+    finiteWeightSquareRoot w (finiteWeightInvSquareRoot w x) = x := by
+  funext i
+  have hroot : Real.sqrt (w i) ≠ 0 :=
+    ne_of_gt (Real.sqrt_pos.mpr (hw i))
+  change Real.sqrt (w i) * ((Real.sqrt (w i))⁻¹ * x i) = x i
+  field_simp [hroot]
+
+omit [DecidableEq ι] in
+/-- The weighted real pairing is the standard finite Hermitian pairing after
+the positive square-root coordinate change. -/
+theorem finiteHermitianPairing_weightSquareRoot (w x y : ι → ℝ)
+    (hw : ∀ i, 0 < w i) :
+    finiteHermitianPairing (finiteWeightSquareRoot w x)
+        (finiteWeightSquareRoot w y) =
+      finiteWeightedPairing w x y := by
+  unfold finiteHermitianPairing finiteWeightedPairing
+  apply Finset.sum_congr rfl
+  intro i hi
+  have hsq : Real.sqrt (w i) * Real.sqrt (w i) = w i := by
+    simpa [pow_two] using (Real.sq_sqrt (le_of_lt (hw i)))
+  simp only [finiteWeightSquareRoot, LinearMap.coe_mk, AddHom.coe_mk,
+    star_trivial]
+  calc
+    (Real.sqrt (w i) * x i) * (Real.sqrt (w i) * y i) =
+        (Real.sqrt (w i) * Real.sqrt (w i)) * x i * y i := by ring
+    _ = w i * x i * y i := by rw [hsq]
+
+/-- Conjugate a weighted operator into the standard finite Hilbert-space
+coordinates using the caller's positive diagonal profile. -/
+noncomputable def finiteWeightedConjugate (w : ι → ℝ)
+    (A : (ι → ℝ) →ₗ[ℝ] (ι → ℝ)) :
+    (ι → ℝ) →ₗ[ℝ] (ι → ℝ) :=
+  (finiteWeightSquareRoot w).comp
+    (A.comp (finiteWeightInvSquareRoot w))
+
+/-- If a real operator is self-adjoint for a caller-supplied positive
+diagonal pairing, its square-root conjugate is self-adjoint for the standard
+finite Hermitian pairing. This proves the algebraic representative only; it
+does not construct a geometric weight or select one physically. -/
+theorem finiteWeightedConjugate_self_adjoint (w : ι → ℝ)
+    (hw : ∀ i, 0 < w i) (A : (ι → ℝ) →ₗ[ℝ] (ι → ℝ))
+    (hA : ∀ x y, finiteWeightedPairing w (A x) y =
+      finiteWeightedPairing w x (A y)) :
+    finiteHermitianAdjoint (finiteWeightedConjugate w A) =
+      finiteWeightedConjugate w A := by
+  apply finiteHermitianAdjoint_unique
+  intro x y
+  change finiteHermitianPairing
+      (finiteWeightSquareRoot w (A (finiteWeightInvSquareRoot w x))) y =
+    finiteHermitianPairing x
+      (finiteWeightSquareRoot w (A (finiteWeightInvSquareRoot w y)))
+  calc
+    finiteHermitianPairing
+        (finiteWeightSquareRoot w (A (finiteWeightInvSquareRoot w x))) y =
+      finiteHermitianPairing
+        (finiteWeightSquareRoot w (A (finiteWeightInvSquareRoot w x)))
+        (finiteWeightSquareRoot w (finiteWeightInvSquareRoot w y)) := by
+          rw [finiteWeightSquareRoot_inv_apply w y hw]
+    _ = finiteWeightedPairing w
+        (A (finiteWeightInvSquareRoot w x))
+        (finiteWeightInvSquareRoot w y) :=
+          finiteHermitianPairing_weightSquareRoot w _ _ hw
+    _ = finiteWeightedPairing w
+        (finiteWeightInvSquareRoot w x)
+        (A (finiteWeightInvSquareRoot w y)) :=
+          hA _ _
+    _ = finiteHermitianPairing
+        (finiteWeightSquareRoot w (finiteWeightInvSquareRoot w x))
+        (finiteWeightSquareRoot w
+          (A (finiteWeightInvSquareRoot w y))) :=
+          (finiteHermitianPairing_weightSquareRoot w _ _ hw).symm
+    _ = finiteHermitianPairing x
+        (finiteWeightSquareRoot w (A (finiteWeightInvSquareRoot w y))) := by
+          rw [finiteWeightSquareRoot_inv_apply w x hw]
+
+end PositiveWeightConjugation
+
 section
 
 variable {ι K : Type*} [Fintype ι] [DecidableEq ι] [Field K]
