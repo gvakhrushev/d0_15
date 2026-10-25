@@ -7,37 +7,41 @@ open scoped BigOperators
 
 namespace D0.Topology
 
-structure GradedCellComplex where
+structure GradedCellComplexOver (R : Type) [CommSemiring R] where
   V : Type
   E : Type
   F : Type
   fintypeV : Fintype V
   fintypeE : Fintype E
   fintypeF : Fintype F
-  boundary1 : Matrix E V Real
-  boundary2 : Matrix F E Real
+  boundary1 : Matrix E V R
+  boundary2 : Matrix F E R
   boundary_nilpotency :
     forall f : F, forall v : V,
       (Finset.univ.sum fun e => boundary2 f e * boundary1 e v) = 0
 
-attribute [instance] GradedCellComplex.fintypeV
-attribute [instance] GradedCellComplex.fintypeE
-attribute [instance] GradedCellComplex.fintypeF
+attribute [instance] GradedCellComplexOver.fintypeV
+attribute [instance] GradedCellComplexOver.fintypeE
+attribute [instance] GradedCellComplexOver.fintypeF
 
-noncomputable def d0 (C : GradedCellComplex) (A : C.V -> Real) :
-    C.E -> Real :=
+abbrev GradedCellComplex := GradedCellComplexOver Real
+
+variable {R : Type} [CommSemiring R]
+
+noncomputable def d0 (C : GradedCellComplexOver R) (A : C.V -> R) :
+    C.E -> R :=
   fun e => Finset.univ.sum fun v => C.boundary1 e v * A v
 
-noncomputable def d1 (C : GradedCellComplex) (B : C.E -> Real) :
-    C.F -> Real :=
+noncomputable def d1 (C : GradedCellComplexOver R) (B : C.E -> R) :
+    C.F -> R :=
   fun f => Finset.univ.sum fun e => C.boundary2 f e * B e
 
-theorem graded_nilpotency (C : GradedCellComplex) (f : C.F) (v : C.V) :
+theorem graded_nilpotency (C : GradedCellComplexOver R) (f : C.F) (v : C.V) :
     (Finset.univ.sum fun e => C.boundary2 f e * C.boundary1 e v) = 0 := by
   exact C.boundary_nilpotency f v
 
 theorem discrete_exact_bianchi
-    (C : GradedCellComplex) (A : C.V -> Real) (f : C.F) :
+    (C : GradedCellComplexOver R) (A : C.V -> R) (f : C.F) :
     d1 C (d0 C A) f = 0 := by
   unfold d1 d0
   calc
@@ -69,17 +73,20 @@ theorem discrete_exact_bianchi
     _ = 0 := by
           simp
 
-structure GradedCellComplex3 extends GradedCellComplex where
+structure GradedCellComplex3Over (R : Type) [CommSemiring R]
+    extends GradedCellComplexOver R where
   C3 : Type
   fintypeC3 : Fintype C3
-  boundary3 : Matrix C3 F Real
+  boundary3 : Matrix C3 F R
   boundary_nilpotency2 :
     forall c : C3, forall e : E,
       (Finset.univ.sum fun f => boundary3 c f * boundary2 f e) = 0
 
-attribute [instance] GradedCellComplex3.fintypeC3
+attribute [instance] GradedCellComplex3Over.fintypeC3
 
-theorem graded_bianchi_exact (C : GradedCellComplex3) (c : C.C3) (e : C.E) :
+abbrev GradedCellComplex3 := GradedCellComplex3Over Real
+
+theorem graded_bianchi_exact (C : GradedCellComplex3Over R) (c : C.C3) (e : C.E) :
     (Finset.univ.sum fun f => C.boundary3 c f * C.boundary2 f e) = 0 := by
   exact C.boundary_nilpotency2 c e
 
