@@ -6821,8 +6821,24 @@ SHA-256 values are `cfcc5264e70fb2e707825a02fd351c51db518c468f0102956f0912664b87
 
 Repository validation passes with 889 claims, 31 assumptions, 58 aliases, 201
 formal-support rows and closure 933; generated Lean views remain current, and
-formalization-debt findings remain five against the five-finding baseline. A
-full cold-start replay against the updated formal-support digest is the
-remaining check for this retrieval checkpoint. This slice does not freeze or
-accept C0, change claim owners/status, select a physical source, or close any
-physical GR premise.
+formalization-debt findings remain five against the five-finding baseline.
+The cold-start replay on clean snapshot
+`cc5f4e9280493c9ab5a18143b39a006b35e1e6f5` found all required sources in
+**20/20** cases and passed **21/21** benchmark checks. It found all **123**
+source records and passed exact-source versus unrelated-prose impact with the
+updated `formal_support.csv` SHA-256
+`2684e49cdcc731a7839dc0686cd193155237de9d90188c964070c3ed3474f997`. Its
+compact case-level report is
+`sources/d0_proof_architecture_formalization_2026-10-24/proof_architecture_cold_start_summary_2026-10-25_cc5f4e92.json`,
+SHA-256 `aa30a259f8607da68af1f5378feba28ee39cf60286ca2dd375d659e9a90f07c9`;
+the full 6,879,199-byte replay output has SHA-256
+`6a6f39955a95c35ff4d9d5287fc5523e2911cb9a34ad2d6514b4aa71cfc26846`. The
+runner and search-engine hashes are
+`7da9ed4eec1fc1f0c6a1ec217cd89e9d09bfc05ae176384e364e0d5bdbe73285` and
+`aaed4194af38484de97db60c821374955f90dc5cc290d20a6fb8e53f94624262`.
+The affected proof-architecture tests pass **54/54**, declaration-inventory
+tests **16/16**, and generated-view tests **27/27**. Repository validation
+passes with zero warnings, generated views have zero stale entries, and
+formalization-debt findings remain five against the five-finding baseline.
+This slice does not freeze or accept C0, change claim owners/status, select a
+physical source, or close any physical GR premise.
