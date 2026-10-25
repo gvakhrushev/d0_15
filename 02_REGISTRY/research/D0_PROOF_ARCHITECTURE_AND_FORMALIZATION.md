@@ -4582,24 +4582,76 @@ collector SHA-256
 records the module under public import root `D0.All`, toolchain Lean 4.30.0,
 and the new `archiveLorentzianCARDirac_square_fourier_mode` declaration.
 
-The full cold-start replay found every required source in 19/19 cases and
-passed its 20th exact-source/unrelated-prose impact control. The new exact-name
-query ranked the Lean module first and its compiled declaration inventory
-second; all seven required sources in the native weighted-Dirac case were
-found. A compact target record is
-`02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/archive_lorentzian_car_dirac_cold_start_2026-10-25.json`
+The cold-start replay after integrating the claim-source resolver found every
+required source in 19/19 cases and passed its 20th exact-source/unrelated-prose
+impact control. The new exact-name query ranked the Lean module first, the
+previous compact cold-start record second, and the compiled declaration
+inventory third; all seven required sources in the native weighted-Dirac case
+were found. The merged-input target record is
+`02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/archive_lorentzian_car_dirac_cold_start_merged_2026-10-25.json`
 (SHA-256
-`8798d7e3eca7b2d6deb120bf096c5873a1194cbcbef5ac2d93e573090e9f0e62`). Its
-input snapshot is `84b32c7189bb3793032622dab1b990bb59307929` with a dirty
+`9beadb7007f2caebb88f21a3a158d70b0687e21e198c52350dace4e59ddd29ab`). Its
+input snapshot is `48bc48a149473702eae9d6b2bf9445057a685a2c` with a dirty
 worktree; the cold-start runner SHA-256 is
-`904ca43814330d6ce8bd669774f0f4284ee165c461ec105b483e4d880a58fd56`.
+`904ca43814330d6ce8bd669774f0f4284ee165c461ec105b483e4d880a58fd56` and the
+integrated `proof_architecture.py` SHA-256 is
+`a6114ed772f36251a54953f13531694cac1734020f5ce128cafae0ae4eb8053b`.
 Semantic scope review remains manual; retrieval is not physical acceptance.
 
-The final integrated `D0.All` build passed all 4,576 jobs. The focused
-proof-architecture suite passed 41/41 tests (test SHA-256
-`2fcb6789bede122d75e4e82dae94a1de739d715bb5c300b87f47ab832f879dc2`).
+The final integrated `D0.All` build passed all 4,576 jobs. After combining
+both PR lines, the focused proof-architecture suite passed 43/43 tests (test
+SHA-256
+`88ee84d5f43a0875843dfa161b53a5e43a35f21736f89e79865ff71e571770e5`).
 Repository validation reports 889 claims, 31 assumptions, 58 aliases, 195
 formal-support rows, 928 Lean-closure rows, and zero warnings. Claim-map
 coverage, work validation, agent-protocol validation, gravity-assembly check,
 generated-view check, core sorry guard, and the CRLF-aware diff check passed.
 The PR remains Draft and WRK-401 remains in progress.
+
+### Exact claim BOOK/section source-key candidate pass (25 October 2026)
+
+The generated `claim-sources` view resolves the existing `claims.csv`
+`book/section` fields against Markdown ATX headings in the ten `01_BOOKS`
+files. It expands conservative `BOOK_01/02` shorthand, pairs equal-length
+composite book/section lists, and permits one book to carry several explicit
+sections. It leaves mismatched multi-book lists unresolved, ignores body text
+and fenced-code headings, and reports duplicate exact headings as ambiguous.
+No source locator, claim statement, release status, or owner is rewritten.
+
+At source snapshot `84b32c7189bb3793032622dab1b990bb59307929`, the view
+contains all 889 claim rows and all 731 parseable source pairs. There are 94
+rows with only unique exact heading matches, four partially resolved rows,
+zero ambiguous rows, 611 rows with no exact heading match, 170 malformed rows
+whose composite BOOK and section counts do not pair, and ten non-BOOK source
+rows. The pair-level counts are 116 unique and 615 unresolved. The row
+categories are disjoint. All ten current book files match their Git blobs at
+the snapshot; the current `claims.csv` SHA-256 also equals its snapshot blob.
+
+The fully resolved `D0-TOP-HODGE-INVERSE-SPECTRAL-RIGIDITY-001` example now
+has exact candidate source keys at Book 01 §01.8.1 (line 1111) and Book 02
+§02.34 (line 2121). Four partial rows remain explicit: the intrinsic-quotient
+claim has no exact Book 04 §04.11 heading; the automorphism/Hodge claim has no
+heading for the literal §08.12.5-6 range; two cascade-floor claims have no
+Book 01 headings for their literal §03.23.2 and §03.23.4 references. The
+resolver does not split ranges or move a section to another book to force a
+match.
+
+The complete derived view is
+`sources/d0_proof_architecture_formalization_2026-10-24/claim_source_candidates_current.json`
+(608,420 bytes; SHA-256
+`b7372d8eab69b9f1b2f40a833f5057846d6bb651c928b53c9f902073a7750fb7`). It
+records the `claims.csv` digest `e2fcba29050a9017aa6d1e7501f192e6209d2f6c04d8e9b791930c4e54c6cbf5`
+and resolver SHA-256
+`a6114ed772f36251a54953f13531694cac1734020f5ce128cafae0ae4eb8053b`;
+re-running the CLI produced byte-identical output. Exact unique headings carry
+candidate source keys of the form
+`source:<snapshot>:<path>#L<line>: <heading>`. This is source-location
+evidence only; no C0 semantic disposition, coverage figure, or acceptance is
+inferred.
+
+The focused proof-architecture suite passes 43/43. Its new cases check paired
+and one-to-many locators, duplicate headings, body/fenced-code false matches,
+non-BOOK sources, malformed composite pairs, and UTF-8 CLI output on a legacy
+Windows code page. C0 remains unfrozen and unaccepted; existing scientific
+owners, physical premises, and the 54 unresolved assembly semantic relations
+remain unchanged.

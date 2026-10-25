@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import pathlib
 import hashlib
+import io
 import json
 import subprocess
 import tempfile
@@ -53,6 +54,14 @@ def dataset(root: pathlib.Path | None = None) -> dict:
 
 
 class ProofArchitectureTests(unittest.TestCase):
+    def test_cli_stdout_uses_utf8_for_non_ascii_json(self) -> None:
+        sink = io.BytesIO()
+        stream = io.TextIOWrapper(sink, encoding="cp1251")
+        proof._configure_stdout_utf8(stream)
+        stream.write("φ — доказательство")
+        stream.flush()
+        self.assertEqual(sink.getvalue(), "φ — доказательство".encode("utf-8"))
+
     def test_all_current_crosswalk_render_preserves_complete_result_arrays(self) -> None:
         rows = [{"id": f"result-{index}"} for index in range(40)]
 
@@ -423,20 +432,18 @@ class ProofArchitectureTests(unittest.TestCase):
             research_rel = "02_REGISTRY/research/reuse.md"
             research_source = root / research_rel
             research_source.parent.mkdir(parents=True)
-            research_source.write_text("## Theorem 1\nA pinned result.\n", encoding="utf-8")
+            research_source.write_bytes(b"## Theorem 1\nA pinned result.\n")
             historical_rel = "02_REGISTRY/research/historical.md"
             historical_source = root / historical_rel
-            historical_source.write_text(
-                "# Exact vector reconstruction\n\n"
-                "Pinned historical evidence for exact vector reconstruction.\n",
-                encoding="utf-8",
+            historical_source.write_bytes(
+                b"# Exact vector reconstruction\n\n"
+                b"Pinned historical evidence for exact vector reconstruction.\n"
             )
             candidate_rel = "02_REGISTRY/research/candidate.md"
             candidate_source = root / candidate_rel
-            candidate_source.write_text(
-                "# Exact vector reconstruction\n\n"
-                "This section records the exact vector reconstruction result.\n",
-                encoding="utf-8",
+            candidate_source.write_bytes(
+                b"# Exact vector reconstruction\n\n"
+                b"This section records the exact vector reconstruction result.\n"
             )
             subprocess.run(["git", "init", "-q"], cwd=root, check=True)
             subprocess.run([
@@ -1274,6 +1281,63 @@ class ProofArchitectureTests(unittest.TestCase):
                             for query in case["queries"]))
         self.assertTrue(any("archiveRoleFourierInversion" in query
                             for query in case["queries"]))
+
+    def test_claim_source_candidates_use_exact_headings_and_preserve_ambiguity(self) -> None:
+        with tempfile.TemporaryDirectory() as temp:
+            root = pathlib.Path(temp)
+            books = root / "01_BOOKS"
+            books.mkdir()
+            (books / "BOOK_01_TEST.md").write_bytes(
+                b"### 01.8.1 Main source\n## 01.20 First section\n## 01.24 Second section\n"
+            )
+            (books / "BOOK_02_TEST.md").write_bytes(b"## 02.34 Master section\n")
+            (books / "BOOK_03_TEST.md").write_bytes(
+                b"## 03.1 First copy\n## 03.1 Second copy\n"
+            )
+            (books / "BOOK_04_TEST.md").write_bytes(
+                b"# Intro\nThe body mentions 04.7 but does not define it.\n"
+                b"```markdown\n## 04.7 Example in a code fence\n```\n"
+                b"### 04.7.1 Child only\n"
+            )
+            data = dataset(root)
+            data["snapshot_commit"] = "source-snapshot"
+            data["worktree_dirty"] = False
+            data["claims"] = [
+                {"claim_id": "PAIR", "book": "BOOK_01/02",
+                 "section": "01.8.1 / 02.34"},
+                {"claim_id": "ONE-TO-MANY", "book": "BOOK_01",
+                 "section": "01.20/01.24"},
+                {"claim_id": "AMBIGUOUS", "book": "BOOK_03", "section": "03.1"},
+                {"claim_id": "BODY-ONLY", "book": "BOOK_04", "section": "04.7"},
+                {"claim_id": "NON-BOOK", "book": "METROLOGY", "section": "scope"},
+                {"claim_id": "MISMATCH", "book": "BOOK_01/02", "section": "01.8.1"},
+            ]
+
+            view = proof.claim_source_candidate_view(data)
+            by_id = {row["claim_id"]: row for row in view["rows"]}
+
+        self.assertEqual(by_id["PAIR"]["resolution_status"], "unique")
+        self.assertEqual([x["book_locator"] for x in by_id["PAIR"]["locator_pairs"]],
+                         ["BOOK_01", "BOOK_02"])
+        self.assertIsNone(
+            by_id["PAIR"]["locator_pairs"][0]["candidates"][0][
+                "candidate_source_unit_key"
+            ]
+        )
+        self.assertEqual(by_id["ONE-TO-MANY"]["resolution_status"], "unique")
+        self.assertEqual(len(by_id["ONE-TO-MANY"]["locator_pairs"]), 2)
+        self.assertEqual(by_id["AMBIGUOUS"]["resolution_status"], "ambiguous")
+        self.assertEqual(len(by_id["AMBIGUOUS"]["locator_pairs"][0]["candidates"]), 2)
+        self.assertEqual(by_id["BODY-ONLY"]["resolution_status"], "unresolved")
+        self.assertEqual(by_id["BODY-ONLY"]["locator_pairs"][0]["candidates"], [])
+        self.assertEqual(by_id["NON-BOOK"]["resolution_status"], "non_book_locator")
+        self.assertEqual(by_id["MISMATCH"]["resolution_status"], "malformed_locator")
+        self.assertEqual(view["counts"]["fully_unique_claim_rows"], 2)
+        self.assertEqual(view["counts"]["ambiguous_claim_rows"], 1)
+        self.assertEqual(view["counts"]["non_book_claim_rows"], 1)
+        self.assertEqual(view["counts"]["malformed_claim_rows"], 1)
+        self.assertEqual(view["counts"]["unresolved_claim_rows"], 1)
+        self.assertIn("do not accept the claim statement", view["interpretation"])
 
 
 if __name__ == "__main__":
