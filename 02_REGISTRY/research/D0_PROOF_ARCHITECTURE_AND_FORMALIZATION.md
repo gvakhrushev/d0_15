@@ -6282,3 +6282,50 @@ current. An independent read-only review found no actionable issue in the
 multi-book boundary. This is a source-locator checkpoint only. It does not
 accept any C0 unit or replace the remaining source reconciliation and final
 Ready checks.
+
+### Shared finite linear-map coordinate action in both adjoint proofs (25 October 2026)
+
+The pairing-independent module `D0.Algebra.FiniteCoordinateBasis` now also
+owns `finiteLinearMap_apply_eq_sum_single`: for any finite coordinate space
+over a semiring, each coordinate of `A x` is the finite sum of the matching
+coordinate of each basis image, weighted by the corresponding coordinate of
+`x`. The theorem is derived from `finiteCoordinate_eq_sum_single` and does
+not assume an inner product, weight profile, or nonzero-weight condition.
+
+The ordinary and diagonal-weighted adjoint identities now call this shared
+coordinate-action theorem directly. Their duplicated local derivations of
+`A x = sum_i x_i A(Pi.single i 1)` and its pointwise form are removed. The
+actual adjoint statements, carriers, pairing definitions, and weight
+assumptions are unchanged. The compiled dependency chain is
+`finiteHermitianPairing_adjoint` and `finiteWeightedPairing_adjoint` ->
+`finiteLinearMap_apply_eq_sum_single` -> `finiteCoordinate_eq_sum_single`.
+The helper and both consumers retain exactly
+`{Classical.choice, Quot.sound, propext}`; the weighted adjoint continues to
+retain its only proposition input `hw : ∀ i, w i ≠ 0`.
+
+The refreshed inventory remains at
+`sources/d0_proof_architecture_formalization_2026-10-24/car_hodge_diagonal_transpose_current_declaration_inventory_2026-10-25.json`.
+It contains 29 declarations, was produced by compiling public import `D0.All`,
+and records clean snapshot
+`5818c7dbc8a630c4156ac7cdec4c98614e68f372`,
+`worktree_dirty=false`, Lean 4.30.0, Lean-source digest
+`61626928b804f4e4c14f2c763e9f9ef303693b44a1b320dc9277e076cf8f3743`, and
+collector SHA-256
+`2a41ca981b50bd5131a022d1315e5fca68b0f696651ff6b441f4f80016e434b7`.
+Inventory SHA-256 is
+`bc7f6ab766fea7e2dc1760335a9775feda21b85e8b412f8e1b230457e4167cf7`.
+The new helper source SHA-256 is
+`c4eb95a0e97acc43ef5f747f6430b83b0adbd56b8200438db9cae967f1bb0689`; the
+unchanged consumers are pinned at `6acb7a145d69736801f835ed655b6e1e89c2120fc565eee0fd6130a1202c06ef` and
+`a8360a1f30ce55a5320fed025d8c35cea2c9983e55d8d381c87665ef8cae87d0`.
+The preceding 28-declaration inventory remains recoverable at commit
+`3126540dc7afb80c25682a12e47c37e8ec7d062f`, same path, SHA-256
+`0e71add500f8db5d4b3548d639536f68813043b9f0f9ef86c9e90d05c803e8d9`.
+
+Validation passed: narrow `D0.Algebra.FiniteWeightedAdjoint` build (2,948
+Lake jobs), the public-import inventory build of `D0.All`, proof-architecture
+tests **47/47**, declaration-inventory tests **16/16**, ClaimMap coverage
+tests **25/25**, generated Lean-view check, and EOL-aware diff check. An
+independent read-only API review found no actionable scope or dependency
+issue. This is reusable finite algebra only; it does not select a weight
+profile or physical pairing, accept a C0 unit, or change any physical status.
