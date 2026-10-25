@@ -3072,6 +3072,71 @@ assembly contract
 presupposition edges
 `7ff9d1e4ac3447f321afd603eab66554468644bb5fddb33551fdfa22e3e2585d`.
 
+### Complex twisted-CAR Hodge adapter and square (25 October 2026)
+
+The existing complex `dTwisted` on the actual site × Fock carrier now has a
+compiled linear-map nilpotency adapter that consumes its existing
+anticommutation proof. Under the retained assumption
+`∀ r, star (H r) * H r = 1`, the existing explicit `dTwistedAdjoint` is
+identified with `finiteHermitianAdjoint (dTwistedLinear N H)`. This yields a
+linear Hermitian Hodge--Dirac adapter equal pointwise to the existing
+`hodgeCarDiracTwisted` function. The generic self-adjointness theorem and
+Hodge anticommutator formula are then applied to that same finite operator;
+the pointwise square keeps the explicit unitary-holonomy condition required
+for the native adjoint formula.
+
+Five exact-declaration inventories record the linear nilpotency adapter, the
+operator bridge, self-adjointness, the linear square, and the pointwise square:
+
+- `sources/d0_proof_architecture_formalization_2026-10-24/twisted_car_differential_nilpotency_adapter_2026-10-25.json`, SHA-256 `d9f2572dbff91f2ac9272237fc95f8774a01c92fd79004c842e16b0489fa6d22`, collector `65b136c13e60e36a5e06c20913ef988bb3cab53b2bc997b3c43dad9541a9fc74`;
+- `sources/d0_proof_architecture_formalization_2026-10-24/twisted_hodge_hermitian_operator_adapter_2026-10-25.json`, SHA-256 `b5df7761a5cdebbc03bab5825af283ec271b00cacd9c5068f5c3612ebb3ace99`, collector `c3554173a54aa30b0a9434cdb5662c093177fa00e552276093b89ccc511fe40d`;
+- `sources/d0_proof_architecture_formalization_2026-10-24/twisted_hodge_hermitian_self_adjoint_2026-10-25.json`, SHA-256 `a4c40b3db2885cfff0c0f1e0e82a0d308a30e5fc06e662d2008ba787811dcbd4`, collector `1df218b77662ba1bd497fc3c2712e37c985987dc6c944de090e766f292b3bfa2`;
+- `sources/d0_proof_architecture_formalization_2026-10-24/twisted_hodge_hermitian_linear_square_2026-10-25.json`, SHA-256 `2c7f58c022520690657dc95042383283fc0de00eadcaa7f158d8cb9f444a1789`, collector `9fe2e9291c7bc7d2ace94d1d16463b33c354b68b8139955e2deec12e18098bd7`;
+- `sources/d0_proof_architecture_formalization_2026-10-24/twisted_hodge_hermitian_pointwise_square_2026-10-25.json`, SHA-256 `3babb5cac31cfd53c73434faf5ee5640e471e523ba92a394467cb55e706e5eb4`, collector `b488f669079a9c7bddf2d633e22ac234914ee620bacd73a74485c4492961649b`.
+
+All use public import root `D0.Geometry.ArchiveTwistedHodgeDirac`, snapshot
+`613fb03906632ef36a2ea269fa5b4170b06d1b32`, `worktree_dirty=true`, source
+digest `22f535222b7fbf4f1c95b56f706125fb262b278972988ec6f96233e5fe8815fb`, and
+Lean 4.30.0. The selected square/nilpotency declarations retain the existing
+`D0.Geometry.car_create_anticommutator_int._native.native_decide.ax_1_1`
+trust boundary in addition to `Classical.choice`, `Quot.sound`, and `propext`;
+the adapter does not hide or enlarge it. The narrow build of
+`D0.Geometry.ArchiveTwistedHodgeDirac` passes 2,985 jobs. No physical holonomy,
+action, source, or GR application is selected.
+
+### Cold-start replay after complex twisted-CAR Hodge adapter (25 October 2026)
+
+The `finite-hermitian-adjoint-twisted-car-application` case now asks seven
+exact-name queries covering the actual twisted differential's linear-map
+nilpotency, its Hermitian Hodge operator adapter, self-adjointness, and both
+linear and pointwise square statements. All eight required sources were found
+as direct content. The full suite found all sources in 18/18 cases; its 19/19
+benchmark passed, including the exact-source-versus-unrelated-prose impact
+control. Semantic scope review remains manual.
+
+Replay used candidate limit 18 at snapshot `613fb03906632ef36a2ea269fa5b4170b06d1b32`
+with `worktree_dirty=true`. The runner SHA-256 was
+`5949c4b444cab840615922d1c9fbec8031bf83dcb7d4ee9a4417a419ce92b319`; the
+primary artifact at replay time had SHA-256
+`c23c649244176fdfb945a38daa7451025d9acf32c7405927557eeef0ba10b415`. The
+seven authority digests were: `claims.csv`
+`e64c1223d0e69c79374b592d4a289d341e64b976337ba8129fb9ab804812f718`,
+`assumptions.csv`
+`2bc9f8c040a776d784fdbfdf62569b72e4f70ff0a182fc66d0ced31cb5f13a36`,
+`formal_support.csv`
+`aa783fa732b9a5a6e5fa351e064cb2013c394848d6e1e43f273efbeb5c3289c2`,
+`aliases.csv`
+`8cda9e7ebfa26a01a04a4d51b56eb6b93425816a5fe073aa74cbae94041f672f`,
+assembly applications
+`d841fe9ccbb5e578836740b46d436147f74d9eb9c92413bbc924b942be6ee511`,
+assembly contract
+`72fb3bbbc320b4af217cbe7c09580b44556b354e9668cbd11e76933fa8209ba6`, and
+presupposition edges
+`7ff9d1e4ac3447f321afd603eab66554468644bb5fddb33551fdfa22e3e2585d`.
+
+This verifies source rediscovery, not physical holonomy/action/source
+selection, semantic acceptance, C0 freeze, or GR closure.
+
 ### Hermitian Hodge square and cubical anticommutator application (25 October 2026)
 
 The generic finite Hermitian API now also proves that adjoints reverse

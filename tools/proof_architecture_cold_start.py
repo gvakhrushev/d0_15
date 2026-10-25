@@ -306,16 +306,27 @@ CASES: list[dict[str, Any]] = [
         "queries": [
             "finiteHermitianAdjoint_unique coordinate finite Hermitian pairing conjugate transpose",
             "dTwistedAdjoint_eq_finiteHermitianAdjoint unit holonomy CAR annihilation formula",
+            "dTwistedLinear_comp_self_eq_zero actual twisted exterior differential",
+            "hodgeCarDiracTwisted_eq_finiteHermitianHodgeDirac",
+            "hodgeCarDiracTwisted_finiteHermitian_self_adjoint",
+            "hodgeCarDiracTwistedLinear_square anticommutator",
+            "hodgeCarDiracTwisted_finiteHermitian_square unitary holonomy",
         ],
         "required_refs": [
             "03_FORMALIZATION/D0/Algebra/FiniteHermitianAdjoint.lean",
             "03_FORMALIZATION/D0/Geometry/ArchiveTwistedHodgeDirac.lean",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/twisted_car_differential_nilpotency_adapter_2026-10-25.json",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/twisted_hodge_hermitian_operator_adapter_2026-10-25.json",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/twisted_hodge_hermitian_self_adjoint_2026-10-25.json",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/twisted_hodge_hermitian_linear_square_2026-10-25.json",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/twisted_hodge_hermitian_pointwise_square_2026-10-25.json",
             "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
         ],
         "scope_review": (
-            "The generic finite-coordinate adjoint is applied to the actual site×Fock twisted CAR differential "
-            "under the explicit unit-holonomy premise. Retrieval does not select a weighted or physical inner product, "
-            "the holonomy, an action, or a physical Hodge/GR application."
+            "The actual site×Fock twisted differential is embedded as a compiled finite linear map, its explicit "
+            "annihilation formula is identified with the generic Hermitian adjoint, and the generic Hodge self-adjoint "
+            "and square laws are applied under the explicit unitary-holonomy premise. Retrieval does not select a "
+            "physical holonomy, action, source, or GR application."
         ),
     },
     {

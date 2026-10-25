@@ -759,6 +759,15 @@ def dTwistedLinear (N : ℕ) (H : Role → ℂ) :
   map_add' := dTwisted_add N H
   map_smul' := dTwisted_smul N H
 
+/-- The finite linear-map adapter preserves the owned nilpotency theorem for
+the actual twisted exterior differential. -/
+theorem dTwistedLinear_comp_self_eq_zero (N : ℕ) (H : Role → ℂ) :
+    (dTwistedLinear N H).comp (dTwistedLinear N H) = 0 := by
+  apply LinearMap.ext
+  intro ψ
+  change dTwisted N H (dTwisted N H ψ) = 0
+  exact dTwisted_sq N H ψ
+
 theorem dTwistedAdjoint_add (N : ℕ) (H : Role → ℂ) (ψ φ : ArchiveCochainC N) :
     dTwistedAdjoint N H (ψ + φ) = dTwistedAdjoint N H ψ + dTwistedAdjoint N H φ := by
   unfold dTwistedAdjoint
@@ -956,6 +965,66 @@ theorem dTwistedAdjoint_eq_finiteHermitianAdjoint (N : ℕ) (H : Role → ℂ)
   have hcoord := (hgeneric (Pi.single p (1 : ℂ))).symm.trans
     (hexplicit (Pi.single p (1 : ℂ)))
   simpa only [D0.Algebra.finiteHermitianPairing_single_left] using hcoord.symm
+
+/-- The actual complex twisted Hodge--Dirac as a finite linear operator,
+formed from the canonical Hermitian adjoint of the registered differential. -/
+noncomputable def hodgeCarDiracTwistedLinear (N : ℕ) (H : Role → ℂ) :
+    ArchiveCochainC N →ₗ[ℂ] ArchiveCochainC N :=
+  D0.Algebra.finiteHermitianHodgeDirac (dTwistedLinear N H)
+
+/-- Under the supplied unit-holonomy condition, the existing site × Fock
+Hodge--Dirac function is the pointwise form of the generic finite Hermitian
+Hodge--Dirac linear map. -/
+theorem hodgeCarDiracTwisted_eq_finiteHermitianHodgeDirac
+    (N : ℕ) (H : Role → ℂ) (hunit : ∀ r, star (H r) * H r = 1)
+    (ψ : ArchiveCochainC N) :
+    hodgeCarDiracTwisted N H ψ = hodgeCarDiracTwistedLinear N H ψ := by
+  change dTwisted N H ψ + dTwistedAdjoint N H ψ =
+    dTwisted N H ψ +
+      D0.Algebra.finiteHermitianAdjoint (dTwistedLinear N H) ψ
+  rw [dTwistedAdjoint_eq_finiteHermitianAdjoint N H hunit ψ]
+
+/-- The existing complex twisted Hodge--Dirac is self-adjoint under the
+standard finite Hermitian pairing on its actual site × Fock carrier. The only
+extra condition is the explicit unitary scalar holonomy premise. -/
+theorem hodgeCarDiracTwisted_finiteHermitian_self_adjoint
+    (N : ℕ) (H : Role → ℂ) (hunit : ∀ r, star (H r) * H r = 1)
+    (ψ φ : ArchiveCochainC N) :
+    D0.Algebra.finiteHermitianPairing (hodgeCarDiracTwisted N H ψ) φ =
+      D0.Algebra.finiteHermitianPairing ψ (hodgeCarDiracTwisted N H φ) := by
+  rw [hodgeCarDiracTwisted_eq_finiteHermitianHodgeDirac N H hunit ψ,
+    hodgeCarDiracTwisted_eq_finiteHermitianHodgeDirac N H hunit φ]
+  exact D0.Algebra.finiteHermitianHodgeDirac_pairing_self_adjoint
+    (dTwistedLinear N H) ψ φ
+
+/-- The square of the generic linear Hodge--Dirac adapter is the anticommutator
+of the actual twisted differential and its canonical Hermitian adjoint. -/
+theorem hodgeCarDiracTwistedLinear_square (N : ℕ) (H : Role → ℂ) :
+    (hodgeCarDiracTwistedLinear N H).comp (hodgeCarDiracTwistedLinear N H) =
+      (dTwistedLinear N H).comp
+          (D0.Algebra.finiteHermitianAdjoint (dTwistedLinear N H)) +
+        (D0.Algebra.finiteHermitianAdjoint (dTwistedLinear N H)).comp
+          (dTwistedLinear N H) := by
+  unfold hodgeCarDiracTwistedLinear
+  exact D0.Algebra.finiteHermitianHodgeDirac_square (dTwistedLinear N H)
+    (dTwistedLinear_comp_self_eq_zero N H)
+
+/-- Pointwise square of the existing unitary-holonomy twisted Hodge--Dirac on
+the actual finite site × Fock carrier. -/
+theorem hodgeCarDiracTwisted_finiteHermitian_square
+    (N : ℕ) (H : Role → ℂ) (hunit : ∀ r, star (H r) * H r = 1)
+    (ψ : ArchiveCochainC N) :
+    hodgeCarDiracTwisted N H (hodgeCarDiracTwisted N H ψ) =
+      ((dTwistedLinear N H).comp
+          (D0.Algebra.finiteHermitianAdjoint (dTwistedLinear N H)) +
+        (D0.Algebra.finiteHermitianAdjoint (dTwistedLinear N H)).comp
+          (dTwistedLinear N H)) ψ := by
+  rw [hodgeCarDiracTwisted_eq_finiteHermitianHodgeDirac N H hunit
+    (hodgeCarDiracTwisted N H ψ)]
+  rw [hodgeCarDiracTwisted_eq_finiteHermitianHodgeDirac N H hunit ψ]
+  have h := congrArg (fun L : ArchiveCochainC N →ₗ[ℂ] ArchiveCochainC N => L ψ)
+    (hodgeCarDiracTwistedLinear_square N H)
+  simpa [LinearMap.comp_apply, LinearMap.add_apply] using h
 
 theorem dTwistedAdjoint_adjoint (N : ℕ) (H : Role → ℂ)
     (hunit : ∀ r, star (H r) * H r = 1) (ψ φ : ArchiveCochainC N) :
