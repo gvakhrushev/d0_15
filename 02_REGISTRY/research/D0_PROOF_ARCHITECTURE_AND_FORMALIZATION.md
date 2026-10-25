@@ -5152,6 +5152,14 @@ toolchain `leanprover/lean4:v4.30.0`, and public import `D0.All`. It contains
 `Classical.choice`, `Quot.sound`, `propext`, and the three existing CAR
 anticommutator `native_decide` leaves; `sorryAx` is absent.
 
+The elaborated proof dependencies expose the actual composition: the diagonal
+null-fibre classification and distinct-momentum injectivity feed the finite
+Fourier-mode sum; the zero-fibre theorem supplies its 16-dimensional summand,
+and `LinearMap.finrank_le_finrank_of_injective` transfers the resulting family
+to the full cochain kernel. The exact inventory also retains the private
+`archiveFourierFockMode_sum_fourier_projection` helper in this dependency
+chain.
+
 The exact-name lookup has no claim ID and creates no semantic claim edge. The
 theorem remains conditional on the declared finite-carrier operator and role
 signs; the exact null-root count, gauge quotient, physical source selection,
