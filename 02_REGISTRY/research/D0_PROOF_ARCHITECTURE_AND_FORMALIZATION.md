@@ -7603,3 +7603,39 @@ The result is finite matrix orbit algebra and a typed Lean reuse edge. It does
 not establish that the selected physical action maps to this carrier, choose
 time orientation, select a physical metric/source, or close an independent C0
 disposition.
+
+### Clean compiled-inventory refresh for the shared orbit API (26 October 2026)
+
+The updated exact-declaration inventories and `metric-provenance` crosswalk
+were generated from the public `D0.All` environment at clean snapshot
+`32d9281e3f22d2d1bb5c7b919c8578f7599aef46`; all use Lean-source digest
+`dabf250dc4288c227cfc51c8f6b2352dae221b14717d78c8b08d705445db19de` and
+record `worktree_dirty=false`.
+
+| Compiled inventory | Resolved | SHA-256 |
+|---|---:|---|
+| `nonvacuum_brinkmann_stencil_declarations_2026-10-26_orbit.json` | 15/15 | `a0ef0e4a1821f1f83ded1cb97f3e296aac4391a94651b05808c8b97e1152941b` |
+| `car_hodge_diagonal_transpose_current_declaration_inventory_2026-10-26_orbit.json` | 36/36 | `000e19f2dfa9235b3e1beb49f6356bbb38a47d469cdd21261d3cc58fd3d0f1ff` |
+| `finite_matrix_partial_trace_current_declarations_2026-10-26_orbit.json` | 9/9 | `e6fb442274c7931f6fb49719a1153edc4881216434a3baaf17e25b172cf7d902` |
+| `archive_shift_topology_current_declarations_2026-10-26_orbit.json` | 26/26 | `279fccaa9fd01daafd9f2f3a6395a761208c8e42b6262b7c5e1bc07257a50cf7` |
+| `source_port_preparation_tensor_inventory_2026-10-26_orbit.json` | 73/73 | `7e18997e5d3829278a8fc7fd7405cdb90713739ef4b55f9ed3fc4699e43fed6b` |
+| `flat_tensor_shared_api_declarations_2026-10-26_orbit.json` | 4/4 | `7b37aa7facb6899db454ef3c6b7cf189da15ebe8fb7fd1126cdf7048dbb02aba` |
+| `proper_role_lorentz_orbit_declarations_2026-10-26.json` | 5/5 | `545b234b620aebf5dfff59f632045e9b00b8d25a5ab8f6bcb585eea5b6f18656` |
+| `finite_gram_orbit_shared_api_declarations_2026-10-26.json` | 11/11 | `9596c54f6add4fd3738ad77aae81cc5ff2a5366343821ff80892f3aed2604282` |
+
+The new 11-name inventory includes the generic Gram theorem and its direct
+Lorentz specialization. Its elaborated declarations record the theorem types,
+source ranges, proof dependencies, and axiom closures. The current application
+crosswalk is
+`metric_provenance_crosswalk_2026-10-26_b1e59692.json`, SHA-256
+`97af44cbbaeebedf1784df87e6d1f49d44152a76ab843df4232391df050b5b67`. It
+resolves all displayed explicit Lean locators and retains the unresolved claim
+locator and semantic source relation with `acceptance_inferred=false`.
+
+The current cold-start receipt is
+`proof_architecture_cold_start_summary_2026-10-26_gram_api.json`. The replay
+covers 22/22 search cases and the 23-case benchmark, checks 133 required-source
+references, and finds all six sources for the shared-Gram/Lorentz case. Its
+source-change versus unrelated-prose impact control passes. This is retrieval
+and compiled-API reuse evidence; the independent C0 disposition and selected
+physical-action map remain open.
