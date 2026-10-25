@@ -10347,6 +10347,88 @@ controller obligations are recorded in
 No physical price, independentvariation or GR status promoted.
 GR_closed=false.
 
+### 25 October: close the internal request source and compose the joint task graph
+
+Phase: native realization / final composition. SAME PR334 and existing
+constitutive/native-programme-v1 owner; input95b3d38a684e0508ad47f75ce7885085b75e2c15.
+Named parent:7ai314 leaves independent decoder/request/preparation and
+implementation equations;7al336-337 supplies the original finite operator
+stationarity law but not a complete stationary domain. Consume NR5's actual
+read-only native request compiler, the exact constant primary report RC2/RC4,
+7ai's full entangled-bank score, and TM17-18/7s182-184 full-effect fidelity.
+The changed input is ONE internally G-born coherent request from blank0,
+with two actual source branches on the owned exact primary family and
+the SAME fixed processor/collar data. Coincident targets give an explicit
+valid construction; distinct same-boundary primary roots are not asserted. Its price
+is evaluated before any branch conditioning. Apply the full bank variance
+identity, retaining all key/bank entanglement and every old contribution.
+
+Proved scoped parent substitution: remove a supplied sharp request value from this
+finite configured process and prove normalized joint source convergence on
+its COMPLETE supplied-task graph of arbitrary source preparations and all
+response-preserving encoders. Do not constrain source preparations to the
+canonical field section. Keep the real whole-state norm, actual cumulative
+Gamma, marked conditional readout and all-column protected factorization.
+The physical premise that this supplied unnormalized query/fixed clock/middle/
+cut is the actual Book X_N task is retained, as are any extra selected source
+and the transport to an unweighted paired-Dirac norm. Different externally
+stored programme labels do not share the same COMPLETE initial state.
+
+Write paths: primary7an and this existing brief only. Read-only same-owner
+assistants check the generated request/whole price and the full normal source.
+No independent task, new selector, spectral scan, geometry root or Lean module.
+Smallest decisive checks: exact two-branch variance decomposition; feedback
+on a coherent key is j(sum w q), not sum w j(q); common q0 removes key normals
+while each branch keeps all42 field rows; exact effect fidelity removes every
+implementation tangent; approximate source errors retain their actual norm.
+Then replay only affected structural gates. Physical GR remains open.
+
+Joint supplied-task checkpoint: primary7an15499UTF-8bytes/SHA256
+2ab0697835ea2ca51a8d964ae78ca27fe34370024d6229eebc0eb2ab78914b7d.
+Equations347-351 supply the actual internal request, true whole price,
+compressed key effect and full-key/bank variance;352-354 compose exact
+implementation neutrality with arbitrary entangled preparation sources.
+The complete general source price352a uses the expectation of the product
+kernel, not the product of expectations away from its product base.
+The initial key is blank physically but FREE in the logical READY interface:
+protected rank is unchanged and its complete thermal columns remain paid.
+
+Exact SymPy1.12.1 check: variance equals mean conditional variance plus
+variance of branch means; unequal means retain w(1-w)(q0-q1)^2; equal
+means cancel exactly; p+p^2=1; full price curvature is
+2*r*c^2*z*(z*(1-c*q)^2-(1-z))/(1-z+z*(1-c*q)^2)^2, ruling out averaging
+branch prices; joint product-score variance retains its cross term v0*v1.
+The proof itself records the actual state-error bound2Var+2eta^2 and the
+old full-score/cofinal theorem application. No old nativecompiler,128,
+Cartan, critical-overlap, sourcefork or Lean replay was required.
+
+Both independent read-only reviewers accepted the exact final primary
+slice after correction of the common-processor frozen-collar condition.
+Actual vs ideal decoder, coherent vs sealed record, arbitrary entangled
+source vs product base, and weighted source norm vs full Dirac norm remain
+explicit. Complete-initial-controller semantics of the earlier externally
+supplied forks is clarified; they are not retroactively reidentified with
+this new coherent process. The original X_N query/admission, extra-source
+and true norm/refinement applications remain open. No lifecycle or physical
+GR acceptance change is made.
+
+Concurrent integration parentbe53b7a7 preserves the entire published Golden
+code-completion section7am and its packet. Our previously reviewed7am
+14427bytes/a5eb1b1b669a2007b169ea36dd27ea011fe799924009bfa162df4dba6324db99
+is renumbered7an347-354 and gains an explicit compatibility paragraph:
+retained post-process code and unsealed internal echo request have different
+return operators/controller rows. No controlled-G clean-gate claim is made.
+The previously published global-source7al and all concurrent sources are
+preserved byte-for-byte. Symbolic and structural checks are retained at
+that unchanged scientific input scope; final assembly is checked separately.
+
+Final integration checks on parentbe53b7a7 plus this slice: work validator,
+agent-protocol validator, gravity assembly check and repository validator
+all PASS (repository warnings0); git diff --check clean. Removing7an
+restores the complete published primary byte-for-byte, and removing the
+new brief tail restores the published brief. The7am-to7an renumber is
+exactly reversible after removing its explicit compatibility paragraph.
+
 ### 25 October: solve the fixed Golden node reaction and extend the actual stationary chart
 
 Phase: native realization / same-execution stationary composition. SAME
@@ -10360,7 +10442,7 @@ The exact missing application is the constraint reaction for this NEW
 fixed generated coin and its full-source stationary extension, not a
 new action or a requirement that a structural constant be freely varied.
 
-Prove in primary7an that c=(p²+p−1,a²−p,u_G−p²) has invertible Jacobian;
+Prove in primary7ao that c=(p²+p−1,a²−p,u_G−p²) has invertible Jacobian;
 the complete ambient Book coefficient covector has a uniquely derived
 conormal reaction, leaving all actual field/upstream sources intact.
 Only the original fixed primitive and GIVEN fresh blank are constrained;
@@ -10381,7 +10463,7 @@ the actual NEW gain, including all observed-chord/readout errors.
 The derived effective zeta retains its absolute anchor and is only an
 algebraic single-prefix identity, not a new physical coupling.
 
-Write paths: this brief and primary7an only; no packet/registry/claim/
+Write paths: this brief and primary7ao only; no packet/registry/claim/
 workflow changes. Read-only bounded assistants supply original primitive
 constraint provenance, exact stationary extension and cofield transport.
 The smallest decisive check is exact symbolic conormal reaction, full
@@ -10392,3 +10474,51 @@ replaying its gates. Record reproducible symbolic check in the primary.
 No oldroot/rank/READY/full128/Lean/corpus replay. This supplies the fixed
 NEW-node stationary application, not physical selection of all X_N or
 independent source-control stationarity/refinement. GR_closed=false.
+
+Concurrent c1cce8cc integration: its internally generated request and
+complete source/fidelity graph remain exactly preserved as7an. Our
+fixed-Golden reaction/extension is7ao355-364;355-363 are a reversible
+renumber of local1786d97c, and364 explicitly consumes the incoming
+whole-source graph with the new gain. All old entangled-source and
+response-preserving implementation directions remain free; only the
+new prescribed primitive/blank/generated nodes are constrained. The
+physical X_N/task and unweighted Dirac norm obligations remain open.
+
+Final fixed-node/joint-source checkpoint: primary7ao14949UTF-8bytes/SHA256
+6e1eab91b624c16eeb539f0cc62e8f424813acd81df4613fb030b6e5105524d3
+(excluding the next-heading separator). Root executed the embedded9
+symbolic reaction/source controls: exit0/PASS9, Python3.9.6/SymPy1.14.0.
+CodeSHA256e1b1b5d3394982ed611dfef2a03158096396449cdd740cb438915ff145d69bae
+is byte-identical after the reference correction, mechanical renumber
+and explicit whole-task application364; no mathematical rerun for those
+prose/integration changes. The full reaction, source/Hessian identities,
+noncritical divided-slope and freely prepared incoming-coin hostile
+control are stated/reproducible in the primary itself.
+
+Three read-only assistants accepted the pre-integration proof and all9
+symbolic assertions, requesting the corrected7am342-345 reference.
+An independent final source review accepted exact7ao above, including364
+on the entire OLD supplied-task graph with its actual source norm/gain.
+No free old entangled-source/response-preserving encoder tangent was
+removed. Additional new-input/encoder and physicalX_N/Dirac-norm premises
+remain explicit. This is research source review, not physical acceptance.
+The incoming7an INCLUDING separator remains15499bytes/SHA256
+2ab0697835ea2ca51a8d964ae78ca27fe34370024d6229eebc0eb2ab78914b7d,
+matchingc1cce8cc. Removing ONLY7ao restores its entire primary byte-for-
+byte; its oldbrief is an exactprefix. Removing the explicit364 subsection
+and inverting7an-to7ao/+8 numbers recovers local1786d97c exactly.
+All20 inherited source and7section pins from the frozen7am receipt
+remain unchanged; its native16-column/135-stage calculation is reused,
+not rerun. No oldroot/rank/READY/full128/Lean/corpus replay. No action,
+physical selector, claim, lifecycle or acceptance status is changed.
+
+All THREE final independent source reviews ACCEPT the exact7ao pin,
+including364, freely entangled old preparation directions, fixed-node
+reaction, moving-input hostile control and physical/norm boundaries.
+No assistant reran mathematics or changed files. Final work/protocol/
+assembly/repository validators PASS, repository warnings0; staged diff
+check clean. Counts remain claims889, assumptions31, aliases58,
+formal_support183, Lean closure918; assembly54active/98results/
+5discharged/22obligations, scientific_promotion=false. These local
+structural results do not claim remote CI or physical GR acceptance.
+Final change againstc1cce8cc is only this brief and primary7ao.
