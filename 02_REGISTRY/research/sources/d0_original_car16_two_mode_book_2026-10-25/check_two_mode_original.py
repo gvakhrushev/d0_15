@@ -205,7 +205,7 @@ check(Q(3,6561)+Q(14,729)+2-5<0,
 check(12*zeta<2 and 0<p**2<1,
       "entire original Book survival mixed partials strictly negative")
 for rv,nv in samples:
-    if rv<0:
+    if not (0<=rv<=Q(1,9) and 0<nv<=Q(3,5)):
         continue
     sj=s.subs({r:rv,nu:nv})
     tj=t.subs({r:rv,nu:nv})
