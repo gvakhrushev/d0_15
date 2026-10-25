@@ -425,6 +425,34 @@ theorem j2DetectorMetricPath_symmetric_solder_adapter (N : ℕ)
   · intro x t
     exact solderMetricMatrix_constant_j2DetectorMetricPath N H t x
 
+section J2SolderFullDerivative
+
+local notation "RoleMat" => Matrix Role Role ℝ
+
+local instance : NormedRing RoleMat := Matrix.frobeniusNormedRing
+local instance : NormedAlgebra ℝ RoleMat := Matrix.frobeniusNormedAlgebra
+
+/-- The actual finite solder readout has the same full derivative in the
+constant-coframe coordinates `H ↦ Hη`. This is the constant-frame sector;
+it does not assert a derivative over arbitrary sitewise coframe fields. -/
+theorem solderMetricMatrix_constant_frame_hasFDerivAt
+    (N : ℕ) (x : ArchiveRolePhaseGroup N) :
+    HasFDerivAt
+      (fun H : RoleMat =>
+        solderMetricMatrix N (fun _ r a => (H * roleLorentzMetric) r a) x)
+      j2DetectorMetricPath_tangent 0 := by
+  have hpath :
+      (fun H : RoleMat =>
+        solderMetricMatrix N (fun _ r a => (H * roleLorentzMetric) r a) x) =
+        j2DetectorMetricPath := by
+    funext H
+    have h := solderMetricMatrix_constant_j2DetectorMetricPath N H 1 x
+    simpa using h
+  rw [hpath]
+  exact j2DetectorMetricPath_hasFDerivAt_flat
+
+end J2SolderFullDerivative
+
 theorem solderMetric_forwardGauge_flat_tangent (N : ℕ) (xi : LocalRoleVector N)
     (t : ℝ) (x : ArchiveRolePhaseGroup N) :
     solderMetricMatrix N (t • forwardGaugeCoframe N xi) x - roleLorentzMetric =
