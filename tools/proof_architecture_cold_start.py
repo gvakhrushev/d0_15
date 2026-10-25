@@ -55,13 +55,33 @@ CASES: list[dict[str, Any]] = [
     {
         "id": "positive-nonvacuum-recovery",
         "queries": [
-            "exact positive nonvacuum 16+24+2 midpoint recovery",
-            "точное положительное невакуумное восстановление 16 24 midpoint",
+            "positive nonvacuum harmonic cubic fixed nonlinear Brinkmann metric",
+            "transverseFivePoint_nonvacuumBrinkmannProfile_eq_source harmonicBrinkmannCubic radial quadratic",
+            "nonvacuumProfile_source_eq_finiteMidpointMatterNorm finiteMatterForwardGradient_midpointStep twoComponentMatterNormSq",
+            "native finite matter midpoint exact energy five point source same interval",
         ],
         "required_refs": [
-            "A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md",
+            "02_REGISTRY/research/A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md",
+            "03_FORMALIZATION/D0/Geometry/NonvacuumBrinkmannStencil.lean",
+            "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/nonvacuum_brinkmann_stencil_declarations_2026-10-25.json",
         ],
-        "scope_review": "Exact finite recovery and physical native Book selection remain separate.",
+        "required_sources": [
+            {
+                "path": "02_REGISTRY/research/A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md",
+                "commit": "8b94198c8dfbdf5983ad0b350b058fb30bb68a54",
+                "blob": "63c36b18af67fc1f113f9e33deb13cf43ddf4556",
+                "sections": ["7.1", "7.2"],
+                "scope_query_indexes": [0, 3],
+                "scope_query_sections": {"0": ["7.1"], "3": ["7.2"]},
+            },
+        ],
+        "scope_review": (
+            "The compiled NonvacuumBrinkmannStencil result proves the exact five-point "
+            "harmonic/radial readout and binds its source norm to the same finite midpoint "
+            "matter record. This is only the pointwise stencil/source fragment: the original "
+            "CAR construction, 40-to-3-to-1 substitution, all 16+24+2 Euler rows, refinement "
+            "estimate, and physical native Book/clock/source selection remain separate and open."
+        ),
     },
     {
         "id": "golden-step-vs-internal-ratio",

@@ -1171,6 +1171,79 @@ class ProofArchitectureTests(unittest.TestCase):
 
         self.assertEqual(search.call_args.args[2], 18)
 
+    def test_nonvacuum_stencil_cold_start_retrieves_the_compiled_application(self) -> None:
+        case = next(
+            item for item in cold_start.CASES
+            if item["id"] == "positive-nonvacuum-recovery"
+        )
+        module = "03_FORMALIZATION/D0/Geometry/NonvacuumBrinkmannStencil.lean"
+        support_rows = proof.load_dataset()["formal_support"]
+        self.assertTrue(any(row["lean_file"] == module.removeprefix("03_FORMALIZATION/")
+                            for row in support_rows))
+        self.assertTrue(any("transverseFivePoint_nonvacuumBrinkmannProfile_eq_source" in query
+                            for query in case["queries"]))
+        self.assertTrue(any("nonvacuumProfile_source_eq_finiteMidpointMatterNorm" in query
+                            for query in case["queries"]))
+        self.assertIn(module, case["required_refs"])
+        self.assertIn("all 16+24+2 Euler rows", case["scope_review"])
+        self.assertIn("physical native Book/clock/source selection remain separate and open",
+                      case["scope_review"])
+
+        hits_by_query = proof.full_text_search_many(
+            proof.ROOT, case["queries"], limit=18
+        )
+        query_pairs = list(zip(case["queries"], hits_by_query))
+        for path in case["required_refs"]:
+            status = cold_start._required_source_status(query_pairs, {"path": path})
+            self.assertTrue(status["found"], f"cold-start search missed {path}")
+        module_hits = [hit for hits in hits_by_query for hit in hits
+                       if hit.get("source") == module and hit.get("direct_content")]
+        self.assertTrue(module_hits, "cold-start result must surface the Lean module itself")
+
+        source = case["required_sources"][0]
+        source_status = cold_start._required_source_status(query_pairs, source)
+        self.assertTrue(source_status["found"], f"cold-start missed pinned §§7.1–7.2: {source_status}")
+
+        inventory_path = (
+            proof.ROOT
+            / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24"
+            / "nonvacuum_brinkmann_stencil_declarations_2026-10-25.json"
+        )
+        inventory = json.loads(inventory_path.read_text(encoding="utf-8"))
+        self.assertEqual(inventory["schema"], "d0-lean-declaration-inventory-v1")
+        self.assertEqual(inventory["public_import_root"], "D0.All")
+        self.assertEqual(inventory["lean_source_digest"], lean_task_build.source_digest())
+        declarations = {row["name"]: row for row in inventory["declarations"]}
+        module_name = "D0.Geometry.NonvacuumBrinkmannStencil"
+        required_theorems = {
+            "D0.Geometry.transverseFivePoint_harmonicBrinkmannCubic_eq_zero",
+            "D0.Geometry.transverseFivePoint_radialQuadratic_eq_four",
+            "D0.Geometry.transverseFivePoint_nonvacuumBrinkmannProfile_eq_source",
+            "D0.Geometry.finiteMatterForwardGradient_midpointStep",
+            "D0.Geometry.twoComponentMatterNormSq_midpointGradient_eq_rate",
+            "D0.Geometry.nonvacuumProfile_source_eq_finiteMidpointMatterNorm",
+        }
+        self.assertTrue(required_theorems.issubset(declarations))
+        standard_axioms = {"Classical.choice", "Quot.sound", "propext"}
+        for name in required_theorems:
+            row = declarations[name]
+            self.assertEqual(row["module"], module_name)
+            self.assertEqual(set(row["axioms"]), standard_axioms)
+            self.assertEqual(row["source_path"], module)
+            self.assertGreater(row["declaration_ranges"]["declaration"]["start"]["line"], 0)
+        sourced = declarations[
+            "D0.Geometry.nonvacuumProfile_source_eq_finiteMidpointMatterNorm"
+        ]
+        self.assertIn(
+            "D0.Geometry.transverseFivePoint_nonvacuumBrinkmannProfile_eq_source",
+            sourced["proof_dependencies"],
+        )
+        self.assertIn(
+            "D0.Geometry.twoComponentMatterNormSq_midpointGradient_eq_rate",
+            sourced["proof_dependencies"],
+        )
+        self.assertIn("h ≠ 0", sourced["elaborated_type"])
+
     def test_julia_cold_start_tracks_nonzero_chart_composition_boundary(self) -> None:
         case = next(
             item for item in cold_start.CASES
