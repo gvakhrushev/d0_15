@@ -68,7 +68,8 @@
         {
           "ref": "77d3ab6059bd1a3ce48637b97b9f30aa8825fc5f",
           "path": "02_REGISTRY/research/A4D_RESONANCE_DIVISOR_RANK_LAW.md",
-          "sha256": "2a688da86de46be7c2220b8a1fe00e13d8e9b5535805ed59c9052823db5cfd8e"
+          "sha256": "2a688da86de46be7c2220b8a1fe00e13d8e9b5535805ed59c9052823db5cfd8e",
+          "section_ref": "L1: A4D resonance divisor: the phase-count nullity rule is false"
         }
       ],
       "reported_state": "Exact finite counterexample on main; full divisor classification remains open."
