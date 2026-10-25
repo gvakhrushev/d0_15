@@ -13943,6 +13943,369 @@ promotion based on tomography, a supplied acceptance test or a small
 absolute derivative.
 
 
+
+## 7bb. The original spatial feedback cocycle is one positive whole-Book determinant
+
+25 October2026; SAME PR334 / constitutive/native-programme-v1,
+input6fca6e84. This consumes the ORIGINAL full-Lorentz spatial
+operator and its complete stopped feedback, the TRIZ matched-reference
+source,7k's intrinsic operator readout and7az's involution/whole-clock
+mechanism. It does NOT encode a requested Palatini action or choose
+information from its desired field equation. The new map is fixed by
+the original feedback and its existing zeta. It realizes their signed
+reference contrast as the first source of ONE nonnegative Book
+determinant, keeping its absolute anchor and complete new heat.
+
+The exact parent substitution is the operator/payment part of the
+[TRIZ matched-reference application](sources/d0_native_triz_reference_2026-10-20/TRIZ_MATCHED_LOOP_VOID_SOURCE.md#3-two-equally-real-positive-arms-one-signed-relative-source-no-vacuum-counterterm).
+The old likelihood ratio alone was not a physical Book price. Here a
+specific two-sector Book operator has that ratio's complete feedback
+source. Its native finite approximation is given below. Compulsory
+selection of this programme, its admitted joint variations and the
+remaining original spatial/matter/stack sources are NOT discharged.
+
+### Use the spatial operator itself, including its zero modes
+
+On the original strict full-Lorentz chart retain EVERY site and all16
+CAR grades, the real whitened selfadjoint D, actual h and
+alpha=p^2 h^2/128, p+p^2=1. Put d=dim DATA, n>=1, m=2n,
+B=I-alpha D^2>0, and a=1-zeta with the ORIGINAL zeta=2^-20.
+The owner's Julia window gives B>p^3 I. Set
+
+    C=B^n, F=I-B^(2n), Q=I-zeta F,
+    L=alpha sum_(j=0)^(2n-1) B^j,
+    S=D sqrt(L).                                      (448)
+
+All products in448 commute because they are functions of the SAME
+D. L is strictly positive, S is selfadjoint, S^2=F and C^2+S^2=I.
+In particular S is a SIGNED smooth square root through Dirac-zero
+crossings. Replacing it by |D| sqrt(L) would unnecessarily lose
+smoothness there. All derivatives in the actual coframe/link,
+observer/Gram and density chart follow from the already owned
+Sylvester and moving-frame maps; none are held fixed silently.
+
+For either one of the actual and reference spatial fields define
+
+    C_plus=C,             S_plus=S,
+    C_minus=sqrt(a) S Q^(-1/2),
+    S_minus=C Q^(-1/2),
+    U_±=[[C_±,S_±],[S_±,-C_±]],  P_±=diag(I_d,0).      (449)
+
+These are smooth real orthogonal selfadjoint operators. Each has
+d positive and d negative eigenvalues. Indeed their block pairs
+commute and C_±^2+S_±^2=I. In the minus arm,
+C_minus^2=T=a F(I-zeta F)^(-1), and
+I-T=C^2 Q^(-1)>0. No eigenvector catalogue, Dirac gap or deleted
+thermal mode is needed. This is an intrinsic D-to-operator map;
+the formula is not a function of an independently written terminal
+geometry bank.
+
+The underlying scalar transform is especially simple:
+
+    T=a F(I-zeta F)^(-1),
+    aI+zeta T=a(I-zeta F)^(-1).                        (450)
+
+It is fixed once the original zeta and original F are given. It
+does not introduce a fitted negative coefficient or an Einstein
+counterterm. Although T is positive, the new RETURN grows with F;
+its leakage decreases. This reverses the original feedback source.
+
+### One absolute positive price, with the actual input sectors
+
+Let q denote the ACTUAL protected input multiplicity external to
+DATA. It includes oldRIGHT and every genuinely free source-spin
+input; blank helper/work dimensions do not enter q. The old source
+has q=128. If an implementation needs an additional independent
+free spin of rank s, its q becomes128s and its source is s times
+that old source. This factor must be retained, not identified with
+oldRIGHT or normalized away.
+
+Use a real direct sum of the two arms, not a probabilistic mixture:
+
+    U_pair=U_plus(D_A) direct_sum U_minus(D_B),
+    P_pair=P_plus direct_sum P_minus,
+    J_q(F)=-q Tr_d log(I-zeta F).
+
+The arm label is a free ACTIVE input; both arms' input blocks occur
+in the determinant. The feedback cut rank is2dq, while the minimal
+complete two-arm fibre has dimension4dq, before all genuine blank
+work and scene factors. Direct evaluation of the ORIGINAL Book
+rule F_return=I-C_return^dagger C_return gives
+
+    J_pair=-qd log(a)+J_q(F_A)-J_q(F_B) >=0,
+    B_pair=H_ref(N,full carrier)-qd log(a)
+                         +J_q(F_A)-J_q(F_B).          (451)
+
+The absolute constant is positive and stays in the price.
+Nonnegativity also follows from 0<=J_q(F)<=-qd log(a). The field
+source can be signed about this positive anchor; the action has
+not been identified with a proper divergence having its minimum
+on the matched diagonal.
+
+At the same TRUE fixed primitive duration N, the endpoint is an
+involution with fixed multiplicities. Thus the full paired-clock
+heat is exactly H_ref, using the actual full carrier and all its
+unprepared modes. This also holds for the owned homogeneous
+33-scene clock: its complete heat is a sum of its actual phase0
+and phase-pi characters with these fixed multiplicities. No old
+spatial Tr B^m is substituted for that clock trace. Additional
+work, inverse and routing columns change this absolute H_ref.
+
+The cut can equivalently be the owner's transported coherent cut
+at every raw clock stage. Its closing leakage is the displayed
+return, and its other leakage blocks vanish. If a scene factor is
+also protected at feedback, its actual rank multiplies q; all33
+scene modes stay in heat regardless. Choosing a rank-one scene
+input and choosing the whole scene as input are different cuts.
+
+A single blank selector or a coherent probabilistic split does not
+give451. It yields a compressed mixture and then one nonlinear
+logdet. Both the increased free-input rank and the absolute heat
+are indispensable parts of the present construction.
+
+### The matched full source, and the original mixed kernel
+
+Take D_A=D(e,U) and D_B=D(e,U_0) through the SAME original
+coframe, density, observer and calibration maps, with U_0 the
+actually co-transported reference. The based path unit is the
+owned possible reference; its actual implementation is still paid.
+At U=U_0,451 is constant in every shared e direction, so ALL pure
+coframe jets vanish. At an independently held U_0 the full actual
+and mixed link sources are
+
+    D_U B_pair=D_U J_q(F(e,U)),
+    D_e D_U B_pair
+      =q zeta Tr(Q^(-1) F_eU)
+       +q zeta^2 Tr(Q^(-1) F_e Q^(-1) F_U).           (452)
+
+This holds for noncommuting field jets. It consumes, rather than
+re-proves or replaces, the TRIZ mixed-source formula. Genuine moving
+reference, observer, calibration and preparation terms remain by
+the chain rule. A moving zeta differentiates the anchor as well.
+
+Thus the exact cancellation operates on the entire finite spatial
+feedback and its open field chart, not only a pp-wave solution or a
+single curvature coefficient. The already owned metric reconstruction
+from the original Julia blocks and the density convention remain its
+geometrical input. This new price does not prove that452 equals the
+Lorentz-star Palatini source: the original mixed-source and tensor
+signature tests must still be met. In particular the existing
+positive-Hodge/time-versus-space obstruction must not be discarded
+by calling a spectral reference contrast Einstein gravity.
+
+### Actual finite native words keep the whole heat, without inventing a smooth selector
+
+The reflection must be implemented by conjugating an EXACT native
+middle, not merely by approximating its matrix entrywise.
+For either pair in449, I+C_±>0 on this finite strict chart. Define
+
+    A_±=sqrt((I+C_±)/2), T_±=S_±(2A_±)^(-1),
+    O_±=[[A_±,-T_±],[T_±,A_±]],
+    U_±=O_± diag(I,-I) O_±^dagger.                    (453)
+
+O_± is real special orthogonal. The original SourceI^2 realizes
+the fixed port sign diag(I,-I), with its full source-spin action
+restored. Use the existing7aq/7at compiler for the direct-sum
+conjugator, excluding oldRIGHT from its addressed wires. Its
+actual raw inverse uses the existing inverse/routing construction.
+All helpers and source spin, including dirty columns during raw
+prefixes, remain in the complete operator. Their completed identity
+action and their true protected-versus-blank status are retained.
+
+For an actual compiled Ohat with ||Ohat-O||<=epsilon in full
+operator norm on the ENTIRE common enlarged active carrier
+(the target includes identity on actual helper/work factors), the full endpoint Ohat Z Ohat^dagger is EXACTLY an
+involution. Its new full heat is therefore constant even at finite
+compiler error. Its operator error is at most2epsilon. At the
+same cut, ||Fhat-F_pair||<=4epsilon and the finite feedback error is
+
+    |Jhat-J_pair| <= (2dq) zeta/(1-zeta) 4epsilon.     (454)
+
+Here epsilon and the input dimension refer to the actual enlarged
+construction. Identity spectators fixed in actual blank input states
+do not enlarge feedback rank; genuinely free identity spectators
+multiply q as above. Since all effects are contractions, the logdet bound follows
+by integrating its resolvent derivative along their convex segment.
+A compiled arm mixing error does not justify dropping a block;454
+compares the complete rank2dq determinant.
+
+Write E_err for the right side of454. A finite stencil with weights
+c_j has additional error at most E_err sum_j |c_j|. Thus a CENTRAL
+first secant at plus/minus delta has error E_err/delta; a forward
+secant of interval delta has2 E_err/delta. A four-corner central
+mixed stencil for452 has E_err/(delta_e delta_U). Retain the actual
+field/source norm and Jacobian in each case. Consume7ay's paid
+common-length/inventory construction for a finite catalogue. At
+each fixed finite mesh choose the native precision AFTER its real
+delta, norm, ranks and calibration margins. This provides genuine
+native-word comparisons approaching451 and452. It does not supply
+a continuously variable finite Golden word or a C1 physical actuator
+merely from a smooth formula. No old constant-gain error estimate
+is transported without this budget.
+
+For simultaneous refinement all finite conditioning constants,
+d,q,n,h and the actual source normalization remain. Taking an
+effective diagonal precision sequence can control the displayed
+finite secant errors when these data and the requisite admission
+maps are supplied; no uniform n or h bound follows from448--453.
+
+### A finite-return version has an explicit positive residual
+
+The reciprocal transform admits the exact positive series
+T=a sum_(k>=0) zeta^k F^(k+1). On the finite cap L_c>=1 take
+
+    T_cap=a sum_(k=0)^(L_c-1) zeta^k F^(k+1).
+    J_minus(T_cap)=-qd log(a)-J_q(F)+R_cap,
+    R_cap=-q Tr log[I-zeta^(L_c+1) F^(L_c+1)] >=0.    (455)
+
+Indeed aI+zeta T_cap
+=a[I-zeta^(L_c+1)F^(L_c+1)](I-zeta F)^(-1).
+The actual remainder is not normalized away. For any H=DF[V],
+
+    0<=R_cap<=-qd log[1-zeta^(L_c+1)],
+    |DR_cap[V]|<=qd (L_c+1) zeta^(L_c+1)
+                     /(1-zeta^(L_c+1)) ||H||.        (456)
+
+A nonzero trace norm can sharpen these bounds, but does not replace
+the stated full source norm. On the spatial chart the cap also has
+a smooth signed square root D times a positive function of D^2,
+by448 and the finite polynomial in F. A reflection of this cap can
+therefore be constructed by453 with its real resources.
+
+The series is an algebraic positive EFFECT representation. It is
+not a licence to iterate a free Lueders sqrt(F) instrument instead
+of the original full128 process. Real geometric stopping, its flags,
+all retained histories and the complete cold compression require a
+separate actual execution if that interpretation is claimed. The
+finite operator/conjugator construction above needs no such claim.
+
+### Why this supplies payment but does not yet supply physical stationarity
+
+At a matched field both branches are still independently observable
+operators. On one positive eigenmode let C_plus=c, S_plus=s,
+0<c<1, c^2+s^2=1. An independent real rotation of that arm gives
+C(t)=c cos(t)+s sin(t) while the endpoint remains an involution.
+Its full heat derivative is zero, but
+
+    J'(0)=-2q zeta c s/(1-zeta+zeta c^2) !=0.         (457)
+
+The reference arm does not cancel this genuine independent row.
+The owned native finite-word comparisons can approximate the same
+one-arm endpoint changes; programme realizability does not force
+co-transport. Likewise separate preparer, inverse, clock, rank and
+cut edits retain their actual rows. No full field minimum or
+full-native stationary point has been inferred from matched
+cancellation. This respects the existing field-minimum exclusion.
+
+The signed-D pair preserves the original spatial RETURN and its
+entire feedback, not the original full128 fine outcome amplitudes
+or all unprepared original columns. If those prepared records must
+also be retained, write the actual original word's full isometry
+as (C,R), with C=B^n>0 and R^dagger R=I-C^2, on its actual input
+plus failure space. The smooth reflection
+
+    U_rec=[[C,R^dagger],[R,-sqrt(I-R R^dagger)]]
+
+preserves this complete prepared column exactly; its complement,
+dimension and multiplicities stay. This does not make it the
+original whole word on unprepared inputs. Changing the completion
+changes the physical programme and its actual heat. Using the
+general Hermitian off-diagonal dilation of a rectangular R in the
+negative arm doubles its nonconstant determinant contribution;
+the corresponding positive copies and dimensions must also be
+doubled. Such a variant is not silently substituted for451.
+
+**Parent substitution.** A positive Book determinant is no longer
+merely an abstract likelihood witness for the original matched
+spectral cocycle:448--454 give its explicit smooth intrinsic spatial
+map, one absolute price, a native finite-word realization budget
+and its full feedback jets;455--456 retain a finite-return remainder.
+This is a concrete available comparison programme, not a proof
+that Book03 compels it. The next physical application is its
+same-execution arm/field/variation binding and the surviving
+original mixed source, including the remaining selected sectors.
+The old spatial heat, Rayleigh or paid-port R, CQ Info and
+controller/work terms have NOT been equated with H_ref or canceled.
+The primary nonlinear solutions and Golden/Lovelock consumers keep
+their hypotheses. GR_closed=false; positive_gr and raw216 remain open.
+
+
+### New bounded matrix/source check
+
+This exact interface fixture tests the new reciprocal construction,
+noncommuting derivatives, a Dirac zero mode and both adverse controls.
+It is not an original CAR field solution or an emitted native word.
+The decimal output only displays already checked exact expressions.
+
+```python
+import sys,sympy as S
+R=S.Rational
+I=S.eye(2); z=R(1,2**20); a=1-z
+p=(S.sqrt(5)-1)/2
+O=S.Matrix([[R(3,5),-R(4,5)],[R(4,5),R(3,5)]])
+D0=O*S.diag(0,R(3,5))*O.T
+# D0 is sqrt(alpha)*D, alpha=p**2/128 at h=1.
+# This is a finite matrix/interface control, not a new CAR field witness.
+B=I-D0**2; n=2; C=B**n; F=I-C**2; Q=I-z*F
+assert B.eigenvals()=={S.Integer(1):1,R(16,25):1}
+assert R(16,25)>p**3
+sv=S.sqrt(1-R(16,25)**(2*n))
+Sig=O*S.diag(0,sv)*O.T
+Qmh=O*S.diag(1,1/S.sqrt(1-z*sv**2))*O.T
+Cp=C; Sp=Sig
+Cm=S.sqrt(a)*Sig*Qmh; Sm=C*Qmh
+def zero(M): return all(S.simplify(v)==0 for v in M)
+def reflection(c,s): return c.row_join(s).col_join(s.row_join(-c))
+Up=reflection(Cp,Sp); Um=reflection(Cm,Sm)
+assert zero(Sp**2-F) and zero(Up**2-S.eye(4))
+assert zero(Um**2-S.eye(4)) and S.simplify(S.trace(Um))==0
+T=a*F*Q.inv()
+assert zero(Cm**2-T)
+assert zero(a*I+z*T-a*Q.inv())
+# ONE direct-sum price: each cold block has rank2.
+Cpair=S.diag(Cp,Cm); Mpair=a*S.eye(4)+z*Cpair.T*Cpair
+assert S.simplify(Mpair.det()-a**2)==0
+# Original noncommuting mixed jets from one changing selfadjoint Dirac.
+e,u=S.symbols('e u',real=True)
+E=S.Matrix([[R(1,7),R(2,9)],[R(2,9),-R(1,5)]])
+U=S.Matrix([[R(2,11),-R(1,6)],[-R(1,6),R(1,8)]])
+V=S.Matrix([[R(1,13),0],[0,-R(1,17)]])
+Dt=D0+e*E+u*U+e*u*V
+Ft=I-(I-Dt**2)**(2*n)
+at0=lambda M:M.subs({e:0,u:0})
+Fe=at0(Ft.diff(e)); Fu=at0(Ft.diff(u)); Feu=at0(Ft.diff(e,u))
+assert Fe*Fu!=Fu*Fe
+Ri=Q.inv()
+Te=a*Ri*Fe*Ri; Tu=a*Ri*Fu*Ri
+Teu=a*(Ri*Feu*Ri+z*Ri*Fu*Ri*Fe*Ri+z*Ri*Fe*Ri*Fu*Ri)
+Mi=(a*I+z*T).inv()
+mixed_plus=z*S.trace(Ri*Feu)+z**2*S.trace(Ri*Fe*Ri*Fu)
+mixed_minus=-z*S.trace(Mi*Teu)+z**2*S.trace(Mi*Te*Mi*Tu)
+assert mixed_plus!=0 and S.cancel(mixed_plus+mixed_minus)==0
+assert S.cancel(-z*S.trace(Mi*Tu)+z*S.trace(Ri*Fu))==0
+# Finite cap keeps its exact positive leftover determinant.
+for cap in (1,2,3):
+    Tc=a*sum((z**k*F**(k+1) for k in range(cap)),S.zeros(2))
+    rem=I-z**(cap+1)*F**(cap+1)
+    assert a*I+z*Tc==a*rem*Ri
+    assert (a*I+z*Tc).det()*Q.det()==a**2*rem.det()
+# Equal-arm cancellation does not kill an independent physical query row.
+c=R(3,5);s=R(4,5)
+Ur=S.Matrix([[c,s],[s,-c]]); Jr=S.Matrix([[0,1],[-1,0]])
+dUr=Jr*Ur
+assert Ur**2==I and dUr*Ur+Ur*dUr==S.zeros(2)
+normal=-2*z*c*s/(a+z*c*c)
+assert normal<0
+# A rank-one coherently prepared arm selector is NOT the required direct sum.
+# At F=0 the two correct corners are I and0. Mixing gives I/2.
+# Correct determinant a**2 differs exactly from the rank2 mixed cut.
+wrong_zero=(a+z/4)**2
+assert wrong_zero!=a**2
+print('PASS signed spatial zero-mode reflections, positive complete paired determinant, noncommuting mixed source, exact capped residual, independent-arm normal and wrong-cut control')
+print('mixed source',S.N(mixed_plus,14),'independent normal',S.N(normal,14))
+print(sys.version.split()[0],S.__version__)
+```
+
 ## 8. Reproduction
 
 Run from this directory:

@@ -11579,3 +11579,100 @@ and validate_repo (889claims,31assumptions,58aliases,183formal_support,
 No remote CI or physical acceptance is inferred. This is supporting
 native source composition with its retained physical application,
 not an independent accepted discharge of original X_N or constitutive.
+
+### 25 October: intrinsic spatial reciprocal feedback as one positive Book price
+
+Phase: native realization / source composition. SAME PR334,
+constitutive/native-programme-v1; source6fca6e84. Primary7bb448--457
+consumes original full-Lorentz D/B/feedback, the TRIZ matched cocycle,
+7k's full-operator geometry readout,7aq/7at native conjugator compiler,
+7ay's finite whole-price secants and7az's full involution-clock source.
+
+Exact parent substitution: the TRIZ reference contrast now has an
+explicit positive Book operator/payment realization on a declared
+two-sector input task. This is supporting constitutive work, not an
+independently accepted discharge of compulsory native selection.
+No new task, registry, CORE claim, original action change or GR
+promotion; write paths are the existing primary and this brief only.
+
+On the original full spatial carrier B=I-alpha D^2, m=2n, the
+signed smooth root S=D sqrt(alpha sum B^j) obeys S^2=I-B^(2n),
+including Dirac-zero crossings. The fixed original zeta determines
+the reciprocal return T=(1-zeta)F(I-zeta F)^(-1).
+Its actual reflection has feedback -qd log(1-zeta)-J_q(F).
+With the original positive return in a second ACTIVE direct-sum
+input sector, the ONE complete determinant is
+-qd log(1-zeta)+J_q(F_actual)-J_q(F_reference), nonnegative.
+The absolute anchor, increased cut rank, actual protected q and
+full thermal carrier remain. A blank/coherent selector does not
+produce this determinant and is an explicit negative control.
+
+All pure shared-coframe jets cancel on matched arms, while the
+original noncommuting mixed kernel is retained exactly. This does
+not manufacture a Palatini coefficient or repair the existing
+positive-Hodge Lorentz-signature boundary. The parent comparator
+still needs its actual same-source application. The intrinsic
+map uses D itself, not an independently written geometry bank.
+
+Actual native conjugation of the exact SourceI^2 sign middle keeps
+the endpoint an involution even at compiler error. Its true-N,
+full-carrier clock heat is constant on that generated chart.
+For all-column conjugator error epsilon the complete feedback
+error is at most8dq*zeta*epsilon/(1-zeta). Full stencil weights
+carry this error into first and mixed sources; no C1 selector of
+finite words is asserted. Free source-spin inputs multiply q;
+blank helpers only enlarge the full heat. OldRIGHT is not scratch.
+
+A finite positive-return cap has EXACT residual
+R_cap=-q Tr log[I-zeta^(L_c+1)F^(L_c+1)] with explicit value/source
+bounds456. It is not free native Lueders recycling or permission
+to replace the full128 history by a different channel.
+The positive arm can preserve the original prepared full-record
+column using the displayed actual-leakage reflection, but its
+unprepared completion remains a different programme.
+
+Decisive retained boundary: an independent one-arm rotation has
+J'=-2q*zeta*c*s/(1-zeta+zeta*c^2) !=0 while full heat first source
+is zero. Hence the matched payment realization is not full-native
+stationarity. Same-execution arm/field admission, independent
+preparation/query/clock/cut rows, remaining selected stack sectors
+and true refinement/source normalization stay open. Neither the
+old spatial heat nor Rayleigh/port R nor CQ Info/work was canceled.
+
+Final proof before embedded check:14357 UTF-8 bytes,
+SHA2561a14b607fd55426477f9c395b566b5e20cde87c16c6e310999516d8a167c1882.
+Independent source-only physical_query_binding and
+native_valuation_map reviews ACCEPT this final pin; native_continuation_map
+accepted the preceding13975-byte pin, with no algebra/source objection.
+The final changes strengthen full operator norm, spectator-rank
+wording and the first/mixed stencil error. No reviewer ran old tests.
+
+NEW exact matrix/interface check only: signed zero-mode reflections,
+one positive whole determinant, noncommuting mixed jets from one
+selfadjoint D(e,u), exact finite-cap remainder, independent-arm normal
+and an exact wrong-cut control. The fixture is NOT a new CAR field
+solution or emitted native word. Exit0/PASS, Python3.11.9/SymPy1.12.1.
+Mixed source2.9688595875142e-7; independent normal
+-9.1552790254389e-7 (display decimals after exact rational checks).
+Final embedded code2801bytes,
+SHA256f0f673fa6a9acdb6f0b1b6f325fa6c614094890fa6454b69bffaea4bdb5db292.
+An initial tool timeout reset the orchestration session; the check
+was recovered without changing its mathematical target. The final
+wrong-cut test uses exact rational inequality instead of the earlier
+high-precision diagnostic. No unchanged GR/root/Lean/128 replay.
+
+Concurrent intake2916a0a1 adds the independent D_min three-paid-word
+Euler fork and its checker. Those two files are preserved unchanged.
+It supplies a conditional code/Book-order consumer, not the missing
+order identification or matched arm constraint;451 is not declared
+a canonical code by that intake. Original7ba remains byte exact.
+
+Affected structural checks PASS: work, agent protocol, gravity assembly
+(valid=true;54 active/98 results/5 discharged/22 obligations;
+scientific_promotion=false), repository(889claims/31assumptions/58aliases/
+183formal_support/918Lean closure;warnings0) and whitespace.
+The concurrent intake changes only two new independent research files;
+no input of the checked reciprocal calculation changed. No old
+mathematical replay was needed. This is local validation, not remote
+CI or accepted physical GR. Removing only the7bb insertion restores
+the incoming primary exactly; the incoming brief is an exact prefix.
