@@ -6337,3 +6337,15 @@ Its output SHA-256 is
 `39848e8d9170d51f3e9945c270036a1b5d4cde08ce4c10fefc9536a06ec92533`; the
 runner SHA-256 is
 `abe71f0a30054c8ba7e41d6a0d2e329f87d7e136e0c8f161223c9f55ae96fd5d`.
+
+The adjoint cold-start case now includes the exact query
+`finiteLinearMap_apply_eq_sum_single finite coordinate basis action` and
+requires the canonical `FiniteCoordinateBasis.lean` source. On the resulting
+clean published snapshot `cb5cf7d0045865a6e25bd8800eb03dba9cb64986`, the
+updated runner again found all required sources in **20/20** cases and passed
+the **21/21** benchmark; the new query returned the helper module as direct
+content. Output SHA-256:
+`87782b0df347ff9da99405b9778f53f099342d4de1ec8138a6349dca8aba18df`;
+updated runner SHA-256:
+`b157636922aec4ed3dc1a448513afa7db2b64f28fa15db3d52c5af579ba0434e`.
+The added retrieval regression brings the proof-architecture suite to **48/48**.
